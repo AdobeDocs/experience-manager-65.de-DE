@@ -3,10 +3,10 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 0288aa12-8d9d-4cec-9a91-7a4194dd280a
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: d31fef1fe7023dfa5129bb8d136550b43ef197d1
 workflow-type: tm+mt
-source-wordcount: '3281'
-ht-degree: 41%
+source-wordcount: '3302'
+ht-degree: 40%
 
 ---
 
@@ -53,7 +53,7 @@ ht-degree: 41%
 
 >[!NOTE]
 >
->Smart Content Services stehen neuen On-Premise-Kunden von Experience Manager Assets ab dem 1. September 2022 nicht mehr zur Verfügung. Keine Auswirkungen auf bestehende On-Premise- und Adobe Managed Services-Kunden, für die diese Funktion bereits aktiviert ist.
+>Smart Content Services stehen neuen On-Premise-Kunden von Experience Manager Assets ab dem 1. September 2022 nicht mehr zur Verfügung. Keine Auswirkungen auf bestehende On-Premise- und Adobe Managed Services-Kunden, die diese Funktion bereits aktiviert haben.
 
 ### [!DNL Dynamic Media] {#dynamic-media-6514}
 
@@ -93,28 +93,28 @@ ht-degree: 41%
 -->
 
 * Wenn eine Datei an ein adaptives Formular mit mehreren Bereichen angehängt und ein Entwurf des adaptiven Formulars gespeichert wird, tritt ein Fehler auf. (NPR-38978)
-* Wenn ein RGB-Profil mithilfe der Java-API createPDF2 mit AdobePDF-Einstellungen in ein CMYK-Profil konvertiert wird, funktioniert die Option nicht mit der Java-API. Die Option funktioniert problemlos mit der eigenständigen DistillerClient-Anwendung. (NPR-38858, CQ-4346181)
+* Wenn ein RGB-Profil mithilfe der Java™-API createPDF2 mit AdobePDF-Einstellungen in ein CMYK-Profil konvertiert wird, funktioniert die Option nicht mit der Java™-API. Die Option funktioniert problemlos mit der eigenständigen DistillerClient-Anwendung. (NPR-38858, CQ-4346181)
 * Nach der Installation von AEM 6.5 Forms Service Pack 12 (6.5.12.0) sind alle Optionen außer zum Schließen der Aufgabe im Schritt &quot;Aufgabe zuweisen&quot;von AEM Workflows nicht mehr verfügbar. (NPR-38743)
 * In Datensatzdokumenten (DoR) werden einige Werte in einer Tabelle abgeschnitten. (NPR-38657)
 * Bei der Vorschau von FormSet mit Daten-XML werden bei XDP-Dateien mit schwebenden Feldern bei der Vorschau eines Formularsatzes keine Daten angezeigt, aber bei Verwendung der Option Vorschau-PDF werden Daten angezeigt.
 * In Adaptive Forms befinden sich Optionsfelder und Kontrollkästchen nicht in der Tab-Reihenfolge. (NPR-38645)
 * Wenn Sie `Summary Step` zum Generieren des Datensatzdokuments (DoR) für ein übersetztes adaptives Formular nach der Übermittlung wird nicht in die lokalisierte Sprache übersetzt. (NPR-38567)
 * Die Option Neuversuch deaktivieren in AEM Workflow-Schritten funktioniert nicht erwartungsgemäß. Das Problem tritt gelegentlich auf. (NPR-38547)
-* Wenn das adaptive Formular mit dem Feld Rich-Text gesendet wird, wird die `an Internal Error while Submitting a Form` Fehler auftreten. Wenn der Benutzer den Fokus auf das Rich-Text-Feld legt, tritt der Fehler nicht vor der Übermittlung des Formulars auf. (NPR-38542)
+* Wenn das adaptive Formular mit dem Feld Rich-Text gesendet wird, wird die `an Internal Error while Submitting a Form` Fehler auftritt. Wenn der Benutzer den Fokus auf das Rich-Text-Feld legt, tritt der Fehler nicht vor der Übermittlung des Formulars auf. (NPR-38542)
 * Fehler `sling-default-3-AdobeSignRefreshTokenScheduleJob com.adobe.forms.foundation.oauth.model.OAuthConfigSlingModel Refresh Token not present for: /conf/gws-eform/cashlite/settings/cloudconfigs/fdm/cashlite/jcr:content occurs` wird protokolliert. (NPR-38541)
 * Wenn ein Benutzer eine PDF in ein adaptives Formular hochlädt, reagiert der AEM Forms-Server nicht mehr. (NPR-38398)
 * Wenn Sie auf einem AEM Forms on OSGi-Server die Document Service-API zum Zertifizieren von PDF verwenden, schlägt der Fehler fehl: com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311. (CQ-4346252)
 * Bei der Übermittlung der Briefentwürfe muss die `Could not upload asset from xml input` Fehler auftritt. Dies hat keine Auswirkungen auf die Funktionalität. Wenn Sie einen Entwurf öffnen, wird der Brief korrekt gerendert. (CQ-4345979, CQ-4344418)
 * Wenn ein Datum im deutschen Format eingegeben wird und die Variable `Preview with Data` für einen Brief verwendet wird, wird das Datumsfeld nicht gerendert. (CQ-4345783)
 * Beim Erstellen eines Webportals und Generieren der datenbasierten Barcodes werden einige Barcodes nicht korrekt dekodiert. (CQ-4345743)
-* Die Postscript-Konvertierung in die PDF gibt kein Ausgabedokument mit erwarteten Farben wieder. (CQ-4345074)
+* Die Postscript-Konvertierung in die PDF rendert das Ausgabedokument nicht mit den erwarteten Farben. (CQ-4345074)
 * Der Ressourcen-Resolver verursacht zeitweise Fehler bei der Übermittlung und führt dazu, dass dieselbe Stacktrace mehrmals für eine einzelne Übermittlung angezeigt wird. (CQ-4344764)
-* Benutzer können die geänderten Entwurfsbriefe, die die `cmDataUrl` Parameter. Die Entwürfe werden zum ersten Mal in Ordnung gebracht. Die Probleme treten in nachfolgenden Versuchen auf. (CQ-4344418)
+* Benutzer können die geänderten Entwurfsbriefe, die die `cmDataUrl` Parameter. Der Entwurf öffnet zum ersten Mal eine Geldbuße. Die Probleme treten bei nachfolgenden Versuchen auf. (CQ-4344418)
 * Wenn der Benutzer `&` -Symbol in einer interaktiven Kommunikation (IC), kann der Entwurf der entsprechenden IC nicht geladen werden. (CQ-4343969)
 * Wenn Sie Stiloptionen in AEM Forms Designer zum Generieren von PCL-Dateien verwenden, wird der angegebene Stil nicht auf die generierten Dateien angewendet. (CQ-4339573)
 * Wenn die Seitenzahl größer als 15 ist, schlägt die automatische Konvertierung dynamischer XDP-Formulare in adaptive Formulare fehl. Dies funktioniert einwandfrei, wenn die Seitenzahl kleiner als 15 ist. (NPR-35337)
 * Wenn die Option Zu Favoriten hinzufügen verwendet wird, zeigt sie nicht den Status des Umschalters zur Bildschirmlesehilfe an. (NPR-37137)
-* Im Formulardatenmodell werden die Werte nach der Dezimalzahl im datenbankgestützten Formulardatenmodell für Geld und Kleingeld gekürzt. . (CQDOC-19509)
+* Im Formulardatenmodell werden die Werte nach der Dezimalzahl im datenbankgestützten Formulardatenmodell für Geld und Kleingeld gekürzt. (CQDOC-19509)
 * Wenn Sie einen Navigationslink für einen Workflow in HTML Workspace auswählen, wird nicht angegeben, dass der Navigationslink ausgewählt ist. (NPR-37138)
 * Die Funktion für Scribble-Signaturen ist nicht mit den Richtlinien für Barrierefreiheit kompatibel. (NPR-37596)
 * AEM Forms verwendet log4j 1.x. Die Unterstützung für log4j 1.x wurde eingestellt. (NPR-38273)
@@ -122,8 +122,8 @@ ht-degree: 41%
 * Wenn in Forms 6.5 Designer ein mit Forms 6.1 Designer erstelltes Formular geöffnet und ein Textfeld bearbeitet wird, überschreitet der Absatzabstand den angegebenen Abstand. Alle früheren Einstellungen für den Abstand werden entfernt und das Textfeld muss manuell neu formatiert werden. (CQ-4341899)
 * Für den Barcode SSCC-18 wird ein falscher Wert angezeigt. Auf Forms-Servern wird der Wert im rechten Teil des Barcodes weggelassen. (CQ-4342400)
 * Bei statischen PDF-Formularen, die mit Forms 6.5 Designer erstellt wurden, schlägt die Barrierefreiheit von PDF mit dem Fehler `Tab order entry in page with annotations not set to "S"` fehl. (CQ-4343117)
-* Es wurde die Möglichkeit hinzugefügt, in Forms Designer „Screen Reader für Hyperlinks“ festzulegen.(NPR-36221)
-* Wenn Sie einem adaptiven Formular ohne XFA wiederholbare Bereiche hinzufügen und die Anzahl der wiederholbaren Bereiche in einem Nicht-XFA-Formular mehr als 15 beträgt, kann das Hinzufügen einer neuen Instanz bis zu 7-8 Sekunden dauern. (NPR-37346)
+* Es wurde die Möglichkeit hinzugefügt, in Forms Designer „Screen Reader für Hyperlinks“ festzulegen. (NPR-36221)
+* Wenn Sie einem adaptiven Formular ohne XFA wiederholbare Bereiche hinzufügen und die Anzahl der wiederholbaren Bereiche in einem Nicht-XFA-Formular mehr als 15 beträgt, kann das Hinzufügen einer Instanz bis zu 7-8 Sekunden dauern. (NPR-37346)
 
 ## Integrationen {#integrations-6514}
 
@@ -206,9 +206,9 @@ ht-degree: 41%
 * Der Download des Service Packs ist über die Adobe [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) verfügbar.
 * Bei einer Bereitstellung mit MongoDB und mehreren Instanzen installieren Sie [!DNL Experience Manager] 6.5.14.0 mit dem Package Manager auf einer der Authoreninstanzen.<!-- UPDATE FOR EACH NEW RELEASE -->
 
->[!NOTE]
+>[!IMPORTANT]
 >
->Adobe rät davon ab, das [!DNL Experience Manager] 6.5.14.0-Paket zu entfernen oder zu deinstallieren. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Adobe rät davon ab, die [!DNL Experience Manager] 6.5.14.0-Paket. Daher sollten Sie vor der Installation des Service Packs eine Sicherung der `crx-repository` für den Fall, dass Sie es zurücksetzen müssen. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ### Installieren des Service Packs auf [!DNL Experience Manager] 6.5 {#install-service-pack}
 
@@ -284,7 +284,7 @@ Das UberJar für [!DNL Experience Manager] 6.5.13.0 ist im [Maven Central Reposi
 
 >[!NOTE]
 >
->Beachten Sie in Experience Manager 6.5.14.0, dass die UberJar-Version (6.5.13.0) mit der vorherigen Version identisch bleibt.
+>In Experience Manager 6.5.14.0 bleibt die UberJar-Version (6.5.13.0) mit der vorherigen Version identisch.
 
 Um UberJar in einem Maven-Projekt zu verwenden, lesen Sie bitte [Verwendung von UberJar](/help/sites-developing/ht-projects-maven.md) und nehmen Sie die folgende Abhängigkeit in Ihr Projekt-POM auf: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 

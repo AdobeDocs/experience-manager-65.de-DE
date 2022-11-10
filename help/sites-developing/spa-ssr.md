@@ -1,7 +1,7 @@
 ---
 title: Single Page Applications (SPAs) und Server-seitiges Rendering
 seo-title: SPA and Server-Side Rendering
-description: '"Single Page Applications (SPAs) und Server-seitiges Rendering"'
+description: Single Page Applications (SPAs) und Server-seitiges Rendering
 seo-description: null
 uuid: 27e26e3f-65d4-4069-b570-58b8b9e2a1ae
 contentOwner: bohnert
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 844e5c96-2a18-4869-b4c8-2fb9efe0332a
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: eeb4c7f6a80d6bad5cd1b540dfacfc7bc5071664
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '1756'
-ht-degree: 85%
+source-wordcount: '1754'
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 85%
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendering auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 >[!NOTE]
 >
->AEM Version 6.5.1.0 oder höher ist erforderlich, um die in diesem Dokument beschriebenen SPA serverseitigen Rendering-Funktionen zu verwenden.
+>AEM 6.5.1.0 oder höher ist erforderlich, um die in diesem Dokument beschriebenen Server-seitigen SPA-Rendering-Funktionen zu verwenden.
 
 ## Übersicht {#overview}
 
@@ -88,7 +88,7 @@ Folgende Felder stehen für die Konfiguration zur Verfügung:
 >
 >Unabhängig davon, ob Sie den [AEM-gesteuerten Kommunikationsfluss](#aem-driven-communication-flow) oder den [Adobe I/O Runtime-gesteuerten Fluss implementieren](#adobe-i-o-runtime-driven-communication-flow) möchten, müssen Sie eine Remote Content Renderer-Konfiguration definieren.
 >
->Diese Konfiguration muss ebenfalls definiert werden, wenn Sie [einen benutzerdefinierten Node.js-Server verwenden.](#using-node-js)
+>Diese Konfiguration muss ebenfalls definiert werden, wenn Sie [einen benutzerdefinierten Node.js-Server verwenden](#using-node-js).
 
 >[!NOTE]
 >
@@ -151,7 +151,7 @@ Beide Modelle sind gültig und werden von AEM unterstützt. Vor der Einführung 
  </tbody>
 </table>
 
-## Planung für SSR {#planning-for-ssr}
+## Planen für SSR {#planning-for-ssr}
 
 Im Allgemeinen muss nur ein Teil einer Anwendung Server-seitig gerendert werden. Das häufigste Beispiel ist, dass der Inhalt, der beim anfänglichen Laden der Seite über der Kante angezeigt wird, Server-seitig gerendert wird. Das spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit der SPA interagiert, wird der zusätzliche Inhalt vom Client gerendert.
 
@@ -172,29 +172,29 @@ So wie AEM die SPA-Frameworks Angular und React standardmäßig unterstützt, wi
 * React: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 
-Ein einfaches Beispiel finden Sie im Abschnitt [We.Retail Journal-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Es wird die gesamte Anwendungsserverseite gerendert. Dies ist zwar kein reales Beispiel, zeigt aber, was zur Umsetzung der SSR erforderlich ist.
+Ein einfaches Beispiel finden Sie im Abschnitt [We.Retail Journal-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal). Es rendert die gesamte Anwendungs-Server-Seite. Dies ist zwar kein reales Beispiel, es zeigt aber, was zur SSR-Implementierung erforderlich ist.
 
 >[!CAUTION]
 >
->Die [We.Retail Journal-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) dient nur zu Demonstrationszwecken und verwendet daher Node.js als einfaches Beispiel anstelle der empfohlenen Adobe I/O Runtime. Dieses Beispiel sollte für keine Projektarbeit verwendet werden.
+>Die [We.Retail Journal-App](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) dient nur zu Demonstrationszwecken und verwendet daher statt der empfohlenen Adobe I/O Runtime Node.js als einfaches Beispiel. Dieses Beispiel sollte nicht für Projektaufgaben verwendet werden.
 
 >[!NOTE]
 >
->Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
+>Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
 
 ## Verwenden von Node.js {#using-node-js}
 
-Adobe I/O Runtime ist die empfohlene Lösung für die Implementierung von SSR für SPA in AEM.
+Adobe I/O Runtime ist die empfohlene Lösung für die Implementierung von SSR für SPAs in AEM.
 
-Bei On-Premesis-AEM-Instanzen ist es auch möglich, SSR mit einer benutzerdefinierten Node.js-Instanz wie oben beschrieben zu implementieren. Obwohl dies von Adobe unterstützt wird, wird dies nicht empfohlen.
-
->[!NOTE]
->
->Node.js wird für Adobe-gehostete AEM nicht unterstützt.
+Bei lokalen AEM-Instanzen ist es auch möglich, SSR mit einer benutzerdefinierten Node.js-Instanz zu implementieren, wie oben beschrieben. Dies wird zwar von Adobe unterstützt, wird aber nicht empfohlen.
 
 >[!NOTE]
 >
->Wenn SSR über Node.js implementiert werden muss, empfiehlt Adobe für jede AEM Umgebung (Autor, Veröffentlichung, Staging usw.) eine separate Node.js-Instanz.
+>Node.js wird für von Adobe gehostete AEM-Instanzen nicht unterstützt.
+
+>[!NOTE]
+>
+>Wenn SSR über Node.js implementiert werden muss, empfiehlt Adobe für jede AEM-Umgebung (Autor, Veröffentlichung, Staging usw.) eine separate Node.js-Instanz.
 
 ## Remote Content Renderer {#remote-content-renderer}
 

@@ -1,21 +1,21 @@
 ---
-title: AEM 6.5-Funktionen-Benutzerhandbuch
+title: Benutzerhandbuch zu den Leistungsmerkmalen von AEM 6.5
 seo-title: AEM 6.5 Capabilities User Guide
 description: Überblick über die wichtigsten Funktionen von AEM 6.5
 seo-description: An overview of the essential capabilities of AEM 6.5
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '145'
-ht-degree: 68%
+source-wordcount: '143'
+ht-degree: 100%
 
 ---
 
-# Benutzerhandbücher zu AEM 6.5 Funktionen {#aem-65-capabilities-user-guides}
+# Benutzerhandbücher zu den Funktionen von AEM 6.5 {#aem-65-capabilities-user-guides}
 
 ## AEM Foundation {#aem-foundation}
 
-[Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.5.](/help/sites-deploying/home.md), einschließlich der Adobe Managed Services-Cloud-Implementierung.
+[Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.5, einschließlich der Adobe Managed Services-Cloud-Implementierung.](/help/sites-deploying/home.md)
 
 [Erfahren Sie, wie Sie ein AEM-Projekt verwalten können](/help/managing/home.md).
 
@@ -39,7 +39,7 @@ ht-degree: 68%
 
 ## AEM Commerce {#aem-commerce}
 
-[Erfahren Sie mehr über AEM Commerce.](/help/commerce/home.md)
+[Weitere Informationen zu AEM Commerce.](/help/commerce/home.md)
 
 ## AEM Communities {#aem-communities}
 
@@ -47,8 +47,8 @@ ht-degree: 68%
 
 ## AEM Livefyre {#aem-livefyre}
 
-[Geben Sie benutzergenerierte Inhalte für AEM Livefyre frei.](https://docs.adobe.com/content/help/de/livefyre/using/home.html)
+[Geben Sie benutzergenerierte Inhalte mit AEM Livefyre frei.](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=de)
 
-## AEM  Mobile {#aem-mobile}
+## AEM Mobile {#aem-mobile}
 
 [Erstellen und verwalten Sie Inhalte für Mobile Apps.](/help/mobile/home.md)

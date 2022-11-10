@@ -8,10 +8,10 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '4703'
-ht-degree: 89%
+source-wordcount: '4689'
+ht-degree: 88%
 
 ---
 
@@ -88,7 +88,7 @@ Dieser Abschnitt enthält Informationen zur Installation des Demopakets.
    1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
    2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Tippen Sie auf den Paketnamen **we-gov-forms.pkg.all-&lt;version>.zip**, wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
-1. Öffnen Sie [Package Manager](https://docs.adobe.com/content/help/de-DE/experience-manager-65/administering/contentmanagement/package-manager.html) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
+1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
 
    ![WeGov-Formularpaket](assets/wegov_forms_package.jpg)
@@ -225,7 +225,7 @@ Dieser Abschnitt enthält Details und Anweisungen zur MS Dynamics-Cloud-Konfigur
 
 **Verweise:**
 
-1. [Microsoft Dynamics OData-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html?lang=de)
+1. [Microsoft Dynamics OData-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/ms-dynamics-odata-configuration.html)
 1. [Konfigurieren von Microsoft Dynamics für AEM Forms](https://helpx.adobe.com/de/experience-manager/kt/forms/using/config-dynamics-for-aem-forms.html)
 
 #### MS Dynamics OData-Cloud-Service {#ms-dynamics-odata-cloud-service}
@@ -472,7 +472,7 @@ Um AEM Forms mit dem Adobe Forms-Konvertierungs-Tool zu installieren und zu konf
 
 Bitte gehen Sie die folgenden Punkte durch, bevor Sie weitere Anweisungen lesen:
 
-* [Dienst zur automatischen Formularkonvertierung konfigurieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=de)
+* [Dienst zur automatischen Formularkonvertierung konfigurieren](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html)
 
 #### Erstellen einer IMS-Konfiguration, Teil 1 {#creating-ims-config}
 
@@ -569,7 +569,7 @@ Sobald die IMS-Konfiguration abgeschlossen ist, können wir die Cloud-Konfigurat
 
 1. Für diese Konfiguration haben wir die beiden Kontrollkästchenwerte leer gelassen.
 
-   * Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren von Cloud Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html?lang=de#configure-the-cloud-service).
+   * Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren von Cloud Service](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Konfigurieren der Cloud-Konfiguration (We.Finance AFC Production) {#configure-cloud-configuration-wefinance}
 
@@ -599,7 +599,7 @@ Sobald die IMS-Konfiguration abgeschlossen ist, können wir mit der Erstellung d
 
 1. Für diese Konfiguration haben wir die beiden Kontrollkästchenwerte leer gelassen.
 
-   * Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren des Cloud-Services](https://docs.adobe.com/content/help/en/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
+   * Weitere Informationen zu diesen Optionen finden Sie unter [Konfigurieren des Cloud-Services](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/configure-service.html#configure-the-cloud-service).
 
 #### Testen der Formularkonvertierung (We.Gov-Registrierungsprogramm) {#test-forms-conversion}
 
@@ -639,7 +639,7 @@ Nach dem Einrichten der Konfiguration können Benutzer sie testen, indem sie ein
 
 #### Bekannte Probleme und Hinweise {#known-issues-notes}
 
-Zum Service der automatischen Formularkonvertierung gehören bestimmte [Best Practices, bekannte komplexe Muster](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html?lang=de) und [bekannte Probleme](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html?lang=de). Lesen Sie diese zuerst, bevor Sie mit der Verwendung des Services der automatischen Formularkonvertierung von AEM Forms beginnen.
+Zum Service der automatischen Formularkonvertierung gehören bestimmte [Best Practices, bekannte komplexe Muster](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/styles-and-pattern-considerations-and-best-practices.html) und [bekannte Probleme](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/using/known-issues.html). Lesen Sie diese zuerst, bevor Sie mit der Verwendung des Services der automatischen Formularkonvertierung von AEM Forms beginnen.
 
 1. Erzeugen Sie das Formular mit aktivierter Option „Adaptive(s) Formular(e) ohne Datenbindung generieren“, wenn Sie das Formular nach der Konvertierung an einen FDM binden möchten.
 

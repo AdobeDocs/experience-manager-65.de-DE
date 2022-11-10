@@ -1,28 +1,28 @@
 ---
 title: Konfigurieren Sie den Rich-Text-Editor, um Inhalte in Adobe Experience Manager zu erstellen.
-description: Erfahren Sie, wie Sie den Adobe Experience Manager Rich-Text-Editor konfigurieren, um Inhalte in Adobe Experience Manager zu erstellen.
+description: Erfahren Sie, wie Sie den Rich-Text-Editor von Adobe Experience Manager konfigurieren, um Inhalte in Adobe Experience Manager zu erstellen.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '3022'
-ht-degree: 80%
+source-wordcount: '3020'
+ht-degree: 99%
 
 ---
 
 # Konfigurieren des Rich-Text-Editors {#configure-the-rich-text-editor}
 
-Der Rich-Text-Editor (RTE) bietet Autoren eine große Bandbreite an Funktionen zum Bearbeiten von Textinhalten. Symbole, Auswahlfelder, Symbolleiste und Menüs werden für eine WYSIWYG-Textbearbeitung bereitgestellt.
+Der Rich-Text-Editor (RTE) bietet Autoren eine große Bandbreite an Funktionen zum Bearbeiten von Textinhalten. Symbole, Auswahlfelder, Symbolleisten und Menüs werden für eine WYSIWYG-Textbearbeitung bereitgestellt.
 
-Informationen zur Verwendung der Authoring-Funktionen des RTE finden Sie unter [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-authoring/rich-text-editor.md). Der RTE kann konfiguriert werden, um die in den Authoring-Komponenten verfügbaren Funktionen zu aktivieren, zu deaktivieren und zu erweitern. Der folgende Workflow zeigt die empfohlene Reihenfolge zum Abschließen der RTE-Konfigurationsaufgaben in Experience Manager.
+Informationen zur Verwendung der Authoring-Funktionen des RTE finden Sie unter [Verwenden des Rich-Text-Editors für das Authoring](/help/sites-authoring/rich-text-editor.md). Der RTE kann konfiguriert werden, um die in den Authoring-Komponenten verfügbaren Funktionen zu aktivieren, zu deaktivieren und zu erweitern. Der folgende Workflow veranschaulicht die empfohlene Reihenfolge für die RTE-Konfigurationsaufgaben in Experience Manager.
 
-![Sequenz von Schritten zum Konfigurieren des RTE](assets/rte_workflow_v1.png)
+![Sequenz von Schritten, um das Konfigurieren des RTE zu erlernen](assets/rte_workflow_v1.png)
 
-*Abbildung: Sequenz von Schritten zum Konfigurieren des RTE*
+*Abbildung: Sequenz von Schritten, um das Konfigurieren des RTE zu erlernen*
 
 ## Grundlegendes zur Touch-optimierten und klassischen Benutzeroberfläche {#understand-touch-enabled-ui-and-classic-ui}
 
-Die Touch-optimierte Benutzeroberfläche ist die Standard-Benutzeroberfläche für Experience Manager. Mit der Adobe wurde die Touch-optimierte Benutzeroberfläche mit [responsives Design](/help/sites-authoring/responsive-layout.md) für die Authoring-Umgebung. Die Touch-optimierte Benutzeroberfläche wurde für Touch- und Desktop-Geräte entwickelt. Die Benutzeroberfläche unterscheidet sich erheblich von der ursprünglichen klassischen Benutzeroberfläche.
+Die Touch-optimierte Benutzeroberfläche ist die Standard-Benutzeroberfläche für Experience Manager. Adobe hat die Touch-optimierte Benutzeroberfläche mit [responsivem Design](/help/sites-authoring/responsive-layout.md) für die Authoring-Umgebung eingeführt. Die Touch-optimierte Benutzeroberfläche wurde für Touch- und Desktop-Geräte entwickelt. Diese Benutzeroberfläche unterscheidet sich deutlich von der ursprünglichen klassischen Benutzeroberfläche.
 
 ![Rich-Text-Editor-Symbolleiste in der Touch-optimierten Benutzeroberfläche](assets/chlimage_1-35.png)
 
@@ -35,9 +35,9 @@ Die Touch-optimierte Benutzeroberfläche ist die Standard-Benutzeroberfläche f�
 >[!MORELIKETHIS]
 >
 >* [Empfehlungen für die Benutzeroberfläche](/help/sites-deploying/ui-recommendations.md).
->* Informationen zur Einstellung der klassischen Benutzeroberfläche finden Sie unter [Experience Manager 6.5 - Versionshinweise](/help/release-notes/deprecated-removed-features.md)
->* Informationen zu den Unterschieden zwischen den Benutzeroberflächen finden Sie unter [Touch-Benutzeroberfläche und klassische Benutzeroberfläche](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
->* Detaillierte Informationen zur Touch-optimierten Benutzeroberfläche finden Sie unter [Konzepte der Touch-Benutzeroberfläche von Experience Manager](/help/sites-developing/touch-ui-concepts.md)
+>* Informationen zur eingestellten Unterstützung für die klassische Benutzeroberfläche finden Sie in den [Versionshinweisen für Experience Manager 6.5](/help/release-notes/deprecated-removed-features.md).
+>* Informationen zu den Unterschieden zwischen den Benutzeroberflächen finden Sie unter [Touch-optimierte und klassische Benutzeroberfläche](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/).
+>* Details zur Touch-optimierten Benutzeroberfläche finden Sie unter [Konzepte der Touch-optimierten Experience Manager-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md).
 
 
 ## Verschiedene Bearbeitungsmodi {#editingmodes}
@@ -53,7 +53,7 @@ Autoren können Textinhalte in Experience Manager mithilfe der verschiedenen Kom
 
 >[!NOTE]
 >
->Die Quellbearbeitungsfunktion ist im Inline-Bearbeitungsmodus in der Touch-optimierten Benutzeroberfläche nicht verfügbar. Im Vollbildmodus können Sie Bilder nicht per Drag-and-Drop verschieben. Alle anderen Funktionen sind in allen Modi verfügbar.
+>In der Touch-optimierten Benutzeroberfläche ist die Quellbearbeitungsfunktion im Inline-Bearbeitungsmodus nicht verfügbar. Im Vollbildmodus können Sie Bilder nicht per Drag-and-Drop verschieben. Alle anderen Funktionen sind in allen Modi verfügbar.
 
 ### Inline-Bearbeitung {#inline-editing}
 
@@ -67,7 +67,7 @@ In der klassischen Benutzeroberfläche ermöglicht ein langsamer Doppelklick auf
 
 ### Bearbeitung im Vollbildmodus {#full-screen-editing}
 
-Experience Manager-Komponenten können im Vollbildmodus geöffnet werden. Dabei wird der Seiteninhalt ausgeblendet und der gesamte Bildschirm ausgefüllt. Die Bearbeitung im Vollbildmodus ist quasi eine detaillierte Version der Inline-Bearbeitung, da sie die meisten Bearbeitungsmöglichkeiten bietet. Wenn Sie sich im Inline-Bearbeitungsmodus befinden, kann sie durch Klicken auf ![rte_fullscreen](assets/rte_fullscreen.png) in der kompakten Symbolleiste geöffnet werden.
+Experience Manager-Komponenten können im Vollbildmodus geöffnet werden. Dabei wird der Seiteninhalt überdeckt und der gesamte Bildschirm ausgefüllt. Die Bearbeitung im Vollbildmodus ist quasi eine detaillierte Version der Inline-Bearbeitung, da sie die meisten Bearbeitungsmöglichkeiten bietet. Wenn Sie sich im Inline-Bearbeitungsmodus befinden, kann sie durch Klicken auf ![rte_fullscreen](assets/rte_fullscreen.png) in der kompakten Symbolleiste geöffnet werden.
 
 Im Dialogfeld-Vollbildmodus stehen neben einer detaillierten RTE-Symbolleiste auch die in einem Dialogfeld verfügbaren Optionen und Komponenten zur Verfügung. Dies gilt nur für ein Dialogfeld, das neben anderen Komponenten einen RTE enthält.
 
@@ -81,17 +81,17 @@ Wenn Sie auf eine Komponente doppelklicken, öffnet sich ein Dialogfeld zur Bear
 
 ![Dialogfeld-Bearbeitungsmodus in Touch-optimierter Benutzeroberfläche](assets/dialog_editing_modetouchui.png)
 
-*Abbildung: Dialogbearbeitungsmodus in der Touch-optimierten Benutzeroberfläche*
+*Abbildung: Dialogfeld-Bearbeitungsmodus in Touch-optimierter Benutzeroberfläche*
 
 ![Dialogfeld in der klassischen Benutzeroberfläche mit einer Symbolleiste zur Bearbeitung](assets/chlimage_1-38.png)
 
-*Abbildung: Dialogfeld in der klassischen Benutzeroberfläche mit detaillierter Symbolleiste zur Bearbeitung*
+*Abbildung: Dialogfeld in der klassischen Benutzeroberfläche mit einer Symbolleiste zur Bearbeitung*
 
 ## Wissenswertes über RTE-Plug-ins und die zugehörigen Funktionen {#aboutplugins}
 
 Die Funktionen werden über eine Reihe von Plug-ins zur Verfügung gestellt, jeweils mit:
 
-* A `features` Eigenschaft:
+* einer `features`-Eigenschaft:
 
    * zur Aktivierung oder Deaktivierung der grundlegenden Funktionalität des jeweiligen Plug-ins verwendet werden kann
    * die über ein standardisiertes Verfahren konfiguriert werden kann;
@@ -126,7 +126,7 @@ In der folgenden Tabelle sind die aktuellen Plug-ins und Folgendes aufgeführt:
 
 >[!NOTE]
 >
->Das Plug-in für den Vollbildmodus wird im Dialogfeldmodus nicht unterstützt. Verwendung der `dialogFullScreen` -Einstellung, um die Symbolleiste für den Vollbildmodus zu konfigurieren.
+>Das Plug-in für den Vollbildmodus wird im Dialogfeldmodus nicht unterstützt. Konfigurieren Sie die Symbolleiste für den Vollbildmodus mithilfe der Einstellung `dialogFullScreen`.
 
 ## Grundlegendes zu den Konfigurationspfaden und -speicherorten {#understand-the-configuration-paths-and-locations}
 
@@ -162,12 +162,12 @@ Konfigurieren Sie die folgenden Eigenschaften, die nur im Dialogfeld-Bearbeitung
 
 Wenn der RTE im Touch-optimierten Dialogfeld verwendet wird, muss die Eigenschaft `useFixedInlineToolbar` auf „true“ gesetzt werden, um Probleme zu vermeiden.
 
-## Bearbeitung im Kontext anpassen {#customizing-in-place-editing}
+## Anpassen der Bearbeitung im Kontext {#customizing-in-place-editing}
 
-Sie können festlegen, mit welchem HTML-Selektor der Texteditor beginnt, indem Sie die folgenden Eigenschaften konfigurieren:
+Sie können festlegen, mit welchem HTML-Selektor der Text-Editor beginnt, indem Sie die folgenden Eigenschaften konfigurieren:
 
-* **`editElementQuery`** - Definiert in `cq:InplaceEditingConfig`festgelegt ist, wird diese Eigenschaft verwendet, um einen Selektor des HTML-Elements anzugeben, mit dem die Inline-Bearbeitung für die Textkomponente gestartet wird. Wenn nichts angegeben ist, wird die Inline-Bearbeitung direkt auf der HTML Textkomponente gestartet.
-* **`textPropertyName`** - Definiert in `cq:InplaceEditingConfig`festgelegt ist, wird diese Eigenschaft verwendet, um den Namen der Eigenschaft anzugeben, die auf dem Inhaltsknoten gespeichert wird, in dem der HTML-Wert der Textkomponente nach der Inline-Bearbeitung beibehalten wird.
+* **`editElementQuery`**: Wird in `cq:InplaceEditingConfig` definiert. Diese Eigenschaft wird verwendet, um einen Selektor des HTML-Elements anzugeben, mit dem die Inline-Bearbeitung für die Textkomponente gestartet wird. Wenn sie nicht angegeben ist, wird die Inline-Bearbeitung direkt im HTML-Code der Textkomponente gestartet.
+* **`textPropertyName`**: Wird in `cq:InplaceEditingConfig` definiert. Diese Eigenschaft wird verwendet, um den Namen der Eigenschaft anzugeben, die auf dem Inhaltsknoten gespeichert wird, auf dem der HTML-Wert der Textkomponente nach der Inline-Bearbeitung beibehalten wird.
 
 Die entsprechende Eigenschaft für den Dialogfeldmodus lautet `name`.
 
@@ -177,13 +177,13 @@ RTE-Funktionen werden über eine Reihe von Plug-ins mit jeweils einer Eigenschaf
 
 Ausführliche Konfigurationen des RTE-Plug-ins finden Sie unter [Aktivieren und Konfigurieren von RTE-Plug-ins](/help/sites-administering/configure-rich-text-editor-plug-ins.md).
 
-**Beispiel**: Download [Diese Beispielkonfiguration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) , das die Konfiguration des RTE veranschaulicht. In diesem Paket sind alle Funktionen aktiviert.
+**Beispiel**: Laden Sie [diese Beispielkonfiguration](/help/sites-administering/assets/rte-sample-all-features-enabled-10.zip) herunter, die die Konfiguration des RTE veranschaulicht. In diesem Paket sind alle Funktionen aktiviert.
 
 >[!NOTE]
 >
->Die [Text-Kernkomponente](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) gestattet es Bearbeitern von Vorlagen, viele RTE-Plug-ins in einer grafischen Benutzeroberfläche als Inhaltsrichtlinien zu konfigurieren, sodass keine technische Konfiguration mehr erforderlich ist. Content-Richtlinien können mit RTE-Benutzeroberflächenkonfigurationen verwendet werden, wie in diesem Dokument beschrieben ist.
+>Die [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) gestattet es Bearbeitern von Vorlagen, viele RTE-Plug-ins in einer grafischen Benutzeroberfläche als Content-Richtlinien zu konfigurieren, sodass keine technische Konfiguration mehr erforderlich ist. Content-Richtlinien können mit RTE-Benutzeroberflächenkonfigurationen verwendet werden, wie in diesem Dokument beschrieben ist.
 >
->Weitere Informationen finden Sie im Abschnitt [RTE-Benutzeroberflächeneinstellungen und Inhaltsrichtlinien](/help/sites-administering/rich-text-editor.md) dieses Dokuments sowie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) und in der [Dokumentation für Entwickler von Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/developing.html).
+>Weitere Informationen finden Sie im Abschnitt [RTE-Benutzeroberflächeneinstellungen und Inhaltsrichtlinien](/help/sites-administering/rich-text-editor.md) dieses Dokuments sowie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) und in der [Dokumentation für Entwickler von Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=de).
 
 >[!NOTE]
 >
@@ -241,11 +241,11 @@ Um die Symbolleiste für `dialogFullScreen` zu konfigurieren, verwenden Sie die 
 
 Für den Inline-Modus und den Vollbildmodus werden verschiedene Benutzeroberflächen-Einstellungen verwendet. Die Symbolleisten-Eigenschaft wird verwendet, um die Schaltflächen der Symbolleiste festzulegen.
 
-Wenn die Schaltfläche selbst beispielsweise eine Funktion ist (z. B. `Bold`), wird er als `PluginName#FeatureName` (z. B. `links#modifylink`).
+Wenn die Schaltfläche selbst eine Funktion aufweist (z. B. `Bold`), wird sie als `PluginName#FeatureName` angegeben (z. B. `links#modifylink`).
 
-Wenn es sich bei der Schaltfläche um ein Popover handelt (sie enthält einige Funktionen eines Plug-ins), wird sie wie folgt angegeben: `#PluginName` (z. B. `#format`).
+Wenn es sich bei der Schaltfläche um ein Popover handelt (sie also einige Funktionen eines Plug-ins aufweist), wird sie als `#PluginName` angegeben (z. B. `#format`).
 
-Trennzeichen (`|`) zwischen einer Gruppe von Schaltflächen angegeben werden können. `-`.
+Trennzeichen (`|`) zwischen einer Gruppe von Schaltflächen können mit `-` angegeben werden.
 
 Der Knoten „pop-up“ im Inline- oder Vollbildmodus enthält eine Liste der verwendeten Popovers. Jeder untergeordnete Knoten unter dem Knoten „popovers“ wird nach dem Plug-in benannt (z. B. „format“). Er verfügt über eine Eigenschaft „items“, die eine Liste der Funktionen des Plug-ins beinhaltet (z. B. „format#bold“).
 
@@ -294,7 +294,7 @@ Unten finden Sie einen Beispielausschnitt zur Zuordnung des Befehls „Bold“ (
 
 ## Wechseln zum CoralUI 2-Rich-Text-Editor {#switch-to-coralui-rich-text-editor}
 
-Auf einer Seite können Sie entweder CoralUI 2 RTE clientlib oder die CoralUI 3 RTE clientlib einbeziehen. Standardmäßig beinhaltet der Rich-Text-Editor die CoralUI 3-RTE-Client-Bibliothek. Führen Sie für den Wechsel zum CoralUI 2-RTE die folgenden Schritte aus.
+Sie können auf einer Seite entweder die CoralUI 2-RTE-Client-Bibliothek oder die CoralUI 3-RTE-Client-Bibliothek einbeziehen. Standardmäßig beinhaltet der Rich-Text-Editor die CoralUI 3-RTE-Client-Bibliothek. Führen Sie für den Wechsel zum CoralUI 2-RTE die folgenden Schritte aus.
 
 >[!NOTE]
 >
@@ -303,19 +303,19 @@ Auf einer Seite können Sie entweder CoralUI 2 RTE clientlib oder die CoralUI 3 
 >Wenn Sie benutzerdefinierte Plug-ins für den RTE von CoralUI3 nutzen, verwenden Sie die Bibliothek `rte.coralui3`.
 
 
-1. Knoten überlagern `/libs/cq/gui/components/authoring/editors/clientlibs/core` under `/apps`und führen Sie folgende Schritte aus:
+1. Überlagern Sie den Knoten `/libs/cq/gui/components/authoring/editors/clientlibs/core` unter `/apps` und führen Sie folgende Schritte aus:
 
-   * Ersetzen `rte.coralui3` mit `rte.coralui2` für die Eigenschaft &quot;dependencies&quot;.
-   * Ersetzen `cq.authoring.editor.core.inlineediting.rte.coralui3` mit `cq.authoring.editor.core.inlineediting.rte.coralui2` für die Eigenschaft &quot;embed&quot;.
-   * Ersetzen `cq.authoring.rte.coralui3` mit `cq.authoring.rte.coralui2` für die Eigenschaft &quot;embed&quot;.
+   * Ersetzen Sie `rte.coralui3` durch `rte.coralui2` für die Eigenschaft „dependencies“.
+   * Ersetzen Sie `cq.authoring.editor.core.inlineediting.rte.coralui3` durch `cq.authoring.editor.core.inlineediting.rte.coralui2` für die Eigenschaft „embed“.
+   * Ersetzen Sie `cq.authoring.rte.coralui3` durch `cq.authoring.rte.coralui2` für die Eigenschaft „embed“.
 
-1. Knoten überlagern `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` und `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2` under `/apps`.
+1. Überlagern Sie die Knoten `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` und `/libs/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2` unter `/apps`.
 
-   Kategorie entfernen `cq.authoring.dialog` von `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` und fügen Sie ihn zu `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2`.
+   Entfernen Sie die Kategorie `cq.authoring.dialog` aus `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui3` und fügen Sie sie zu `/apps/cq/gui/components/authoring/dialog/richtext/clientlibs/rte/coralui2` hinzu.
 
-1. Ändern Sie alle weiteren Abhängigkeiten, die auf der Seite aufgenommen werden, von `rte.coralui3` in `rte.coralui2`. Beispiel: Nach dem Überlagern des Knotens `/libs/mcm/campaign/components/touch-ui/clientlibs/rte` under `/apps`, ändern Sie alle Abhängigkeiten davon von `rte.coralui3` nach `rte.coralui2`.
+1. Ändern Sie alle weiteren Abhängigkeiten, die auf der Seite aufgenommen werden, von `rte.coralui3` in `rte.coralui2`. Ändern Sie beispielsweise nach dem Überlagern des Knotens `/libs/mcm/campaign/components/touch-ui/clientlibs/rte` unter `/apps` jegliche damit verbundenen Abhängigkeiten von `rte.coralui3` in `rte.coralui2`.
 
-1. Knoten überlagern `cq/ui/widgets` under `/apps`. Abhängigkeit ersetzen `cq.rte` im Knoten `/apps/cq/ui/widgets` mit `cq.coralui2.rte`.
+1. Überlagern Sie den Knoten `cq/ui/widgets` unter `/apps`. Ersetzen Sie die Abhängigkeit `cq.rte` im Knoten `/apps/cq/ui/widgets` mit `cq.coralui2.rte`.
 
 >[!NOTE]
 >
@@ -323,11 +323,11 @@ Auf einer Seite können Sie entweder CoralUI 2 RTE clientlib oder die CoralUI 3 
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen zum Konfigurieren des RTE finden Sie im [AEM Widget API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText)-Referenzhandbuch.
+Weitere Informationen zum Konfigurieren des RTE finden Sie im [AEM Widget API](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText)-Referenzhandbuch.
 
 Wenn Sie vor allem die verfügbaren Plug-ins und zugehörigen Optionen sehen wollen:
 
-* Die [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)-Komponente stellt ein Formularfeld zum Bearbeiten von formatierten Textinformationen zur Verfügung (Rich Text). Informationen zu allen verfügbaren Parametern für das Rich-Text-Formular finden Sie in den Konfigurationsoptionen.
+* Die [CQ.form.RichText](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)-Komponente stellt ein Formularfeld zum Bearbeiten von formatierten Textinformationen zur Verfügung (Rich Text). Informationen zu allen verfügbaren Parametern für das Rich-Text-Formular finden Sie in den Konfigurationsoptionen.
 * Die RichText-Komponente bietet zahlreiche Funktionen mithilfe der Plug-ins, die unter [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) aufgeführt sind. Für jedes Plug-in gilt dabei Folgendes:
 
    * Weitere Informationen zu den Funktionen, die aktiviert (oder deaktiviert) werden können, finden Sie unter „Funktionen“.
@@ -351,7 +351,7 @@ Für die AEM RTE-Funktion gelten folgende Einschränkungen:
 
 ## Best Practices und Tipps {#best-practices-and-tips}
 
-* Aktivieren Sie nur die Plug-ins ohne Popup-Fenster für ein unverankertes Dialogfeld. Plug-ins ohne Popup-Fenster sind kleiner und eignen sich am besten für unverankerte Dialogfelder.
+* Aktivieren Sie nur Plug-ins ohne Popup-Fenster für unverankerte Dialogfelder. Plug-ins ohne Popup-Fenster sind kleiner und eignen sich am besten für unverankerte Dialogfelder.
 * Aktivieren Sie die Plug-ins mit einem größeren Popup-Fenster, beispielsweise das `Paste`-Plug-in, nur im Vollbildschirm-Dialogfeldmodus oder im Vollbildmodus. Plug-ins mit einem größeren Popup-Fenster beanspruchen mehr Platz auf dem Bildschirm, um ein gutes Authoring-Erlebnis zu ermöglichen.
 * Wenn Sie benutzerdefinierte Plug-ins für den RTE von CoralUI3 nutzen, verwenden Sie die Bibliothek `rte.coralui3`.
 
@@ -359,7 +359,7 @@ Für die AEM RTE-Funktion gelten folgende Einschränkungen:
 
 **Wie lassen sich mehrere Tabellenzellen auswählen?**
 
-Um mehrere Zellen in einer Tabelle auszuwählen, drücken Sie die `Ctrl` oder `Cmd` und klicken Sie dann nacheinander auf die Tabellenzellen.
+Um mehrere Zellen in einer Tabelle auszuwählen, drücken Sie `Ctrl` oder `Cmd` und klicken Sie dann nacheinander auf die Tabellenzellen.
 
 Führen Sie nun eine Aktion für die Auswahl durch. Legen Sie beispielsweise die Eigenschaften für die ausgewählten Zellen fest.
 
@@ -379,7 +379,7 @@ Um sicherzustellen, dass der eingefügte HTML-Inhalt gespeichert wird, überprü
 
 Falls der HTML-Inhalt nicht gespeichert wurde, hat der RTE ihn wahrscheinlich entfernt, da er nicht den RTE-Regeln entsprochen hat.
 
-Wenn sie in CRXDE gespeichert, aber nicht auf der Seite gerendert werden (um das Rendering zu überprüfen, lesen Sie den Abschnitt [Vorschau](/help/sites-authoring/editing-content.md#preview-mode), wird sie durch AEM XSS-Regeln entfernt.
+Falls der Inhalt in CRXDE gespeichert wurde, jedoch nicht auf der Seite gerendert wird (zeigen Sie zum Überprüfen des Renderings die [Vorschau](/help/sites-authoring/editing-content.md#preview-mode) der Seite an), wurde er aufgrund der XSS-Regeln von AEM entfernt.
 
 **Mehrfeld-Komponente funktioniert nicht erwartungsgemäß**
 
@@ -387,9 +387,9 @@ Verwenden Sie zum Erstellen einer Mehrfeld-Komponente ausschließlich CoralUI 3
 
 Überprüfen Sie außerdem, ob der Code und die Knotenstruktur für die Mehrfeld-Implementierung korrekt sind.
 
-**Für Administratoren verfügbare Konfigurationen stehen Autoren nicht zur Verfügung**
+**Für Admins verfügbare Konfigurationen stehen Autoren nicht zur Verfügung**
 
-Wenn Aktualisierungen an Benutzeroberflächenkonfigurationen für Administrator-, jedoch nicht für Autorenkonten übernommen werden, stellen Sie sicher, dass der Konfigurationsknoten nicht mit `config` benannt wurde. Verwenden Sie die [`configPath` property](/help/sites-developing/components-basics.md#cq-inplaceediting).
+Wenn Aktualisierungen an Benutzeroberflächenkonfigurationen für Administrator-, jedoch nicht für Autorenkonten übernommen werden, stellen Sie sicher, dass der Konfigurationsknoten nicht mit `config` benannt wurde. Verwenden Sie die Eigenschaft [`configPath`](/help/sites-developing/components-basics.md#cq-inplaceediting).
 
 >[!MORELIKETHIS]
 >

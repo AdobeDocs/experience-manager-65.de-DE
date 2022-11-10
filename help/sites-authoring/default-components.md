@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 92%
+source-wordcount: '427'
+ht-degree: 100%
 
 ---
 
@@ -57,11 +57,11 @@ Die [Komponentenkonsole](/help/sites-authoring/default-components-console.md) bi
 
 Die folgenden Seiten enthalten Links zu einigen zusätzlichen, wichtigen Informationen zu Komponenten:
 
-* [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) – Die Kernkomponenten bieten flexible und vielseitige Authoring-Funktionen, die wichtige Inhaltstypen zur Erstellung von Seiten bereitstellen. 
+* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) – Die Kernkomponenten bieten flexible und vielseitige Authoring-Funktionen, die wichtige Inhaltstypen zur Erstellung von Seiten bereitstellen. 
 
-* [Communities](/help/communities/author-communities.md) – Komponenten bieten interaktive Funktionen für eine Website, z. B. Foren und Kommentare. Viele dieser Komponenten sind enthalten, wenn eine [Community-Site](/help/communities/overview.md) erstellt.
+* [Communities](/help/communities/author-communities.md) – Komponenten bieten interaktive Funktionen für eine Website, z. B. Foren und Kommentare. Viele dieser Komponenten sind enthalten, wenn Sie eine [Community-Site](/help/communities/overview.md) erstellen.
 
-* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - Die eCommerce-Funktion in AEM umfasst auch eine Reihe von Komponenten. Die tatsächliche Verwendung kann von der verwendeten Commerce-Engine abhängen.
+* [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md) - Die eCommerce-Funktion in AEM umfasst ebenfalls mehrere Komponenten. Die tatsächliche Nutzung kann von der verwendeten Commerce-Engine abhängig sein.
 
 ### Konfigurieren von Komponenten {#configuring-components}
 

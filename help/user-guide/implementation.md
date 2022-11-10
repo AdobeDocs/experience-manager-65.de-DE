@@ -1,13 +1,13 @@
 ---
-title: Benutzerhandbuch zur AEM 6.5-Implementierung
+title: Benutzerhandbuch zur Implementierung von AEM 6.5
 seo-title: AEM 6.5 Implementation User Guide
 description: Eine Übersicht über die Implementierung von AEM 6.5
 seo-description: An overview of how to implement AEM 6.5
 exl-id: 33404f0d-c04c-4720-8a24-ded6738ec7d4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '108'
-ht-degree: 44%
+source-wordcount: '100'
+ht-degree: 88%
 
 ---
 
@@ -15,20 +15,20 @@ ht-degree: 44%
 
 ## Entwickeln für AEM {#developing-on-aem}
 
-Bist du AEM Entwickler? [Beginnen Sie mit der Entwicklung auf AEM.](/help/sites-developing/home.md)
+Sind Sie AEM-Entwickler? [Erste Schritte mit der Entwicklung für AEM.](/help/sites-developing/home.md)
 
 ## Kernkomponenten für AEM {#core-components-for-aem}
 
-[Nutzen Sie die erweiterbaren Hauptkomponenten, damit Autoren mühelos Inhalte erstellen können.](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html)
+[Nutzen Sie die erweiterbaren Hauptkomponenten, damit Autoren mühelos Inhalte erstellen können.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
 ## HTL (HTML-Vorlagensprache) für AEM {#htl-for-aem}
 
-[Verwenden Sie HTML Template Language , um für AEM zu entwickeln.](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html)
+[Verwenden Sie die HTML-Vorlagensprache für die Entwicklung für AEM.](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 
 ## Cloud Manager für AEM {#cloud-manager-for-aem}
 
-[Erfahren Sie, wie Sie Cloud Manager mit AEM verwenden.](https://docs.adobe.com/content/help/de/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
+[Erfahren Sie, wie Sie Cloud Manager mit AEM verwenden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
 
 ## Dispatcher-Konfiguration {#dispatcher-configuration}
 
-[Dispatcher mit AEM konfigurieren](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/dispatcher.html)
+[Dispatcher mit AEM konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)

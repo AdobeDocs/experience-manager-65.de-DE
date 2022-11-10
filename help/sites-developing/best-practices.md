@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '467'
-ht-degree: 79%
+source-wordcount: '463'
+ht-degree: 98%
 
 ---
 
@@ -32,7 +32,7 @@ Bevor Sie mit Ihrem AEM-Entwicklungsprojekt beginnen, machen Sie sich zunächst 
 * [Fallstricke beim Programmieren](/help/sites-developing/code-pitfalls.md)
 * [JCR-Interaktion](/help/sites-developing/jcr-integration.md)
 * [OSGi-Bundles](/help/sites-developing/osgi-bundles.md)
-* [Best Practices für Java-API](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
+* [Best Practices für die Java-API](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/understand-java-api-best-practices.html?lang=de)
 
 ### Weitere Informationen zu Best Practices {#additional-best-practices-information}
 
@@ -87,8 +87,8 @@ Einige Best Practices für Communities sind hier beschrieben:
 
 |  |  |  |
 |---|---|---|
-| Best Practices für die Arbeit mit benutzergenerierten Inhalten (UGC) | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, tragbarem Code für die [Social-Komponenten-Framework](/help/communities/scf.md) (SCF). |
-| Beispielverwendung von Communities-Komponenten | [Handbuch der Community-Komponenten](/help/communities/components-guide.md) | Ein interaktives Entwicklungstool. |
+| Best Practices für die Arbeit mit benutzergenerierten Inhalten | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, portablem Code für das [Social Component Framework](/help/communities/scf.md) (SCF). |
+| Beispielverwendung von Community-Komponenten | [Handbuch der Community-Komponenten](/help/communities/components-guide.md) | Ein interaktives Entwicklungswerkzeug. |
 
 ## Tools/HTL {#tooling-htl}
 
@@ -96,10 +96,10 @@ HTML Template Language (HTL) ist ein neues HTML-Vorlagensystem, das mit AEM 6.0
 
 |  |  |  |
 |---|---|---|
-| HTL-Überblick | [HTL-Überblick und -Syntax](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html) | In diesem Dokument wird beschrieben, was HTL ist und wie der Umstieg auf HTL gelingt. Es enthält Beispiele eines Projekts, Syntax, Ausdrücke und Aussagen. |
-| Verwenden von APIs in Java | [HTL-Java-Anwendungs-API](https://helpx.adobe.com/experience-manager/htl/using/use-api.html) | Mit der Java-Anwendungs-API von HTL kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen. |
+| HTL-Übersicht | [HTL-Überblick und -Syntax](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | In diesem Dokument wird beschrieben, was HTL ist und wie der Umstieg auf HTL gelingt. Es enthält Beispiele eines Projekts, Syntax, Ausdrücke und Aussagen. |
+| Verwenden von APIs in Java | [HTL-Java-Anwendungs-API](https://experienceleague.adobe.com/docs/experience-manager-htl/using/htl/use-api-java.html?lang=de) | Mit der Java-Anwendungs-API von HTL kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen. |
 
 >[!NOTE]
 >
->Das Befolgen eines mehrteiligen Tutorials kann für die Best Practice zum Einrichten eines neuen AEM-Projekts interessant sein, in dem die Kernkomponenten, bearbeitbaren Vorlagen, Client-Bibliotheken und die Komponentenentwicklung detailliert beschrieben werden:
->[Erste Schritte mit AEM Sites - WKND-Tutorial](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>Das mehrteilige Tutorial kann im Hinblick auf Best Practices für die Einrichtung eines neuen AEM-Projekts hilfreich sein. Es bietet umfassende Informationen zu den Kernkomponenten, bearbeitbaren Vorlagen, Client-Bibliotheken und zur Komponentenentwicklung:
+>[Erste Schritte mit AEM Sites - WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)

@@ -2,10 +2,10 @@
 title: Adobe Content Package Maven-Plug-in
 description: Verwenden Sie das Content Package Maven-Plug-in, um AEM-Anwendungen bereitzustellen.
 exl-id: 002c00ba-eda1-4481-bc35-1f4d972e4073
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '163'
-ht-degree: 52%
+source-wordcount: '159'
+ht-degree: 100%
 
 ---
 
@@ -17,10 +17,10 @@ Die Bereitstellung der erstellten Pakete in AEM wird vom Adobe Content Package M
 
 >[!TIP]
 >
->Weitere Informationen finden Sie unter:
+>Weiterführende Ressourcen:
 >
->* Die [Adobe Content Package Maven-Plug-in](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developer-tools/maven-plugin.html?lang=en#developer-tools) in der AEM as a Cloud Service Dokumentation für die Bereitstellung AEM Anwendungen.
->* Die [AEM Projektstruktur](https://docs.adobe.com/content/help/de-DE/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html) in der AEM as a Cloud Service Dokumentation für die Strukturierung moderner AEM.
->* Die [AEM Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) Dokumentation zum Starten eines neuen AEM mit dem Archetyp.
+>* Informationen zur Bereitstellung von AEM-Anwendungen im Artikel zum [Adobe Content Package Maven-Plug-in](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developer-tools/maven-plugin.html?lang=de) in der Dokumentation zu AEM as a Cloud Service.
+>* Informationen zur Strukturierung moderner AEM-Projekte im Artikel zur [AEM-Projektstruktur](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/implementing/developing/aem-project-content-package-structure.html?lang=de) in der Dokumentation zu AEM as a Cloud Service.
+>* Informationen zum Starten eines neuen AEM-Projekts mit dem Archetyp in der Dokumentation zum [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de).
 >
->Alle drei Dokumente gelten für AEM 6.5.
+>Alle drei Dokumente beziehen sich auf AEM 6.5.

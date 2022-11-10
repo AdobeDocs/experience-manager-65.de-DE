@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 82%
+source-wordcount: '535'
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 
 1. Wenn Sie die Leiste in der Komponentenkonsole öffnen, können Sie nach einer bestimmten Komponentengruppe filtern. Die Kernkomponenten befinden sich an den folgenden Stellen:
 
-   * `.core-wcm`: Die Standard-Kernkomponenten
+   * `.core-wcm`: Die standardmäßigen Kernkomponenten
    * `.core-wcm-form`: Die Kernkomponenten für die Formularübermittlung
 
    Choose `.core-wcm`.
@@ -39,7 +39,7 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 1. Beachten Sie, dass alle Kernkomponenten mit **v1** benannt sind, was bedeutet, dass dies die erste Version dieser Kernkomponente ist. Künftig werden regelmäßig Versionen veröffentlicht, die mit AEM kompatibel sind und ein einfaches Upgrade ermöglichen, sodass Sie die neuesten Funktionen nutzen können.
 1. Klicken Sie auf **Text (v1)**.
 
-   Beachten Sie, dass **Ressourcentyp** der Komponente `/apps/core/wcm/components/text/v1/text`. Kernkomponenten finden Sie unter `/apps/core/wcm/components` und werden pro Komponente versioniert.
+   Hier können Sie sehen, dass der **Ressourcentyp** der Komponente `/apps/core/wcm/components/text/v1/text` lautet. Kernkomponenten befinden sich unter `/apps/core/wcm/components` und werden pro Komponente versioniert.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -48,11 +48,11 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
 1. Wechseln Sie zur Komponentenkonsole zurück. Filtern Sie nach der Gruppe **We.Retail** und wählen Sie die **Textkomponente** aus.
-1. Beachten Sie, dass **Ressourcentyp** auf eine Komponente verweist, wie unter `/apps/weretail` aber die **Resource Super Type** verweist zurück zur Kernkomponente `/apps/core/wcm/components/text/v1/text`.
+1. Hier können Sie sehen, dass der **Ressourcentyp** auf eine Komponente verweist, wie unter `/apps/weretail` erwartet, aber der **Ressourcen-Supertyp** zurück auf die Kernkomponente `/apps/core/wcm/components/text/v1/text` verweist.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Klicken Sie auf **Live-Nutzung** Registerkarte, um zu sehen, auf welchen Seiten diese Komponente derzeit verwendet wird. Klicken Sie auf die erste **Dankeseite**, um die Seite zu bearbeiten.
+1. Klicken Sie auf die Registerkarte **Live-Nutzung**, um anzuzeigen, auf welchen Seiten diese Komponente aktuell verwendet wird. Klicken Sie auf die erste **Dankeseite**, um die Seite zu bearbeiten.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
@@ -66,7 +66,7 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Wenn die Vererbung abgebrochen ist und Sie die Textkomponenten auswählen, stehen Ihnen viele weitere Optionen zur Verfügung. Klicken Sie auf &quot;Bearbeiten&quot;.
+1. Wenn die Vererbung abgebrochen ist und Sie die Textkomponenten auswählen, stehen Ihnen viele weitere Optionen zur Verfügung. Klicken Sie auf **Bearbeiten**.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -87,6 +87,6 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html) für Autoren. Dies enthält einen Überblick über die Kernkomponenten. Im Dokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.
+Weitere Informationen zu den Kernkomponenten finden Sie im Dokument [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) für Autoren. Dies enthält einen Überblick über die Kernkomponenten. Im Dokument [Entwickeln von Kernkomponenten](https://helpx.adobe.com/de/experience-manager/core-components/using/developing.html) für Entwickler finden Sie einen technischen Überblick.
 
-Sie können sich darüber hinaus eingehender mit [bearbeitbaren Vorlagen](/help/sites-developing/we-retail-editable-templates.md) befassen. Siehe Authoring-Dokument . [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) oder der Seite mit dem Entwicklerdokument [Vorlagen - bearbeitbar](/help/sites-developing/page-templates-editable.md) für vollständige Details zu bearbeitbaren Vorlagen.
+Sie können sich darüber hinaus eingehender mit [bearbeitbaren Vorlagen](/help/sites-developing/we-retail-editable-templates.md) befassen. Umfassende Informationen zu bearbeitbaren Vorlagen finden Sie im Dokument [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) für Autoren oder im Dokument [Bearbeitbare Seitenvorlagen](/help/sites-developing/page-templates-editable.md) für Entwickler.

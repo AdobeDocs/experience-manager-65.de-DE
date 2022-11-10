@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2617'
+source-wordcount: '2615'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Der Entwicklungsprozess AEM Mobile Apps erkennt, dass Benutzer mit unterschiedlichem Know-how zur Entwicklung von Mobile Apps beitragen. Die folgende Prozesszuordnung zeigt die allgemeine Reihenfolge, in der Inhaltsautoren und Anwendungsentwickler Aufgaben ausführen.
 
@@ -80,7 +80,7 @@ Sie können auch eine Bilddatei bereitstellen, die als Anwendungsminiaturansicht
 Es gibt zusätzliche (und optionale) Registerkarten für den Build-Cloud-Service und die Integration des Adobe Mobile Services SDK-Plug-ins in Ihre App.
 
 * Build: Klicken Sie hier auf Konfigurationen verwalten und richten Sie Ihren Build-Dienst build.phonegap.com ein. Wählen Sie dann aus der Dropdown-Liste den neu erstellten PhoneGap Build-Cloud-Service aus.
-* Analytics: Klicken Sie auf Konfigurationen verwalten und richten Sie [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/home.html) Cloud Service. Wählen Sie dann aus der Dropdown-Liste den neu erstellten Mobile Service aus, der in Ihre Mobile App integriert werden soll.
+* Analytics: Klicken Sie auf Konfigurationen verwalten und richten Sie [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) Cloud Service. Wählen Sie dann aus der Dropdown-Liste den neu erstellten Mobile Service aus, der in Ihre Mobile App integriert werden soll.
 
 >[!NOTE]
 >

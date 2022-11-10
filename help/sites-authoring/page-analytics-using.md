@@ -12,10 +12,10 @@ discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '440'
-ht-degree: 86%
+source-wordcount: '438'
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und gibt au�
 >
 >Zum Ändern des Aktualisierungszeitraums [konfigurieren Sie das Importintervall](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Öffnen Sie die **Sites** Konsole; Beispiel [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
+1. Öffnen Sie die **Sites**-Konsole, z. B. [ https://localhost:4502/sites.html/content ](https://localhost:4502/sites.html/content).
 1. Klicken oder tippen Sie ganz rechts oben in der Symbolleiste auf das Symbol, um **Listenansicht** auszuwählen. (Das angezeigte Symbol ist von der [aktuellen Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) abhängig.)
 
 1. Klicken oder tippen Sie wieder ganz rechts oben in der Symbolleiste auf das Symbol und wählen Sie dann **Anzeigeeinstellungen** aus. Das Dialogfeld **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
@@ -50,7 +50,7 @@ Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und gibt au�
 
 Wählen Sie den Berichtszeitraum aus, für den Analysedaten in der Konsole „Sites“ angezeigt werden:
 
-* Daten der  Daten
+* Daten der letzten 30   Tage
 * Daten der letzten 90 Tage
 * Daten aus diesem Jahr
 
@@ -66,7 +66,7 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 >
 >Wenn eine Struktur von Seiten untergeordnete Elemente enthält, die mit verschiedenen Adobe Analytics-Cloudkonfigurationen verbunden sind, können Sie die verfügbaren Datenspalten für die Seiten nicht konfigurieren.
 
-1. Verwenden Sie in der Listenansicht die Ansichtsauswahl (rechts neben der Symbolleiste) und wählen Sie **Anzeigeeinstellungen** und dann **Hinzufügen benutzerdefinierter Analytics-Daten**.
+1. Verwenden Sie in der Listenansicht die Ansichtsselektoren (rechts neben der Symbolleiste) und wählen Sie **Anzeigeeinstellungen** und anschließend **Benutzerdefinierte Analysedaten hinzufügen** aus.
 
    ![spad-03](assets/spad-03.png)
 
@@ -78,7 +78,7 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 
 ### Öffnen von Inhaltseinblicken mithilfe von Sites {#opening-content-insights-from-sites}
 
-Öffnen [Content Insight](/help/sites-authoring/content-insights.md) über die Sites-Konsole, um die Seiteneffektivität weiter zu untersuchen.
+Öffnen Sie [Inhaltseinsicht](/help/sites-authoring/content-insights.md) von der Konsole „Sites“ aus, um die Seiteneffektivität weiter zu untersuchen.
 
 1. Wählen Sie in der Konsole „Sites“ die Seite aus, für die Sie Inhaltseinblicke sehen möchten.
 1. Klicken Sie in der Symbolleiste auf das Symbol „Analyse und Empfehlungen“.
@@ -91,4 +91,4 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 >
 >Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden.
 >
->Die [Von Adobe Analytics bereitgestelltes ActivityMap-Plugin](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de#activity-map) verwendet werden.
+>Ab jetzt sollte das [über Adobe Analytics bereitgestellte Activity Map-Plug-in](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de) verwendet werden.

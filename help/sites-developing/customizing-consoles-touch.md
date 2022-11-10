@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '699'
-ht-degree: 77%
+source-wordcount: '670'
+ht-degree: 100%
 
 ---
 
@@ -26,9 +26,10 @@ ht-degree: 77%
 
 AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearbeitungsfunktionen](/help/sites-developing/customizing-page-authoring-touch.md)) Ihrer Autoreninstanz.
 
-* Clientbibliotheken Mit Clientbibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden weiterhin verwenden. Bei der Anpassung können Sie Ihre eigene clientlib unter erstellen. `/apps.` Beispielsweise kann er den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
+* Clientbibliotheken Mit Clientbibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden weiterhin verwenden. Bei der Anpassung können Sie unter `/apps.` Ihre eigene Clientbibliothek erstellen. Beispielsweise kann sie den Code enthalten, der für Ihre benutzerdefinierte Komponente erforderlich ist.
 
-* Überlagerungen Überlagerungen basieren auf Knotendefinitionen und ermöglichen die Überlagerung der Standardfunktionen (in `/libs`) mit Ihrer eigenen benutzerdefinierten Funktionalität (in `/apps`). Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
+* Überlagerungen
+Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die Sling-Ressourcenzusammenführung das Vererben zulässt.
 
 Überlagerungen können vielseitig zum Erweitern von AEM-Konsolen verwendet werden. Einige davon sind nachstehend (allgemein) beschrieben.
 
@@ -40,7 +41,8 @@ AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearb
 >* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)
 >
->Dieses Thema wird auch in der [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html)-Sitzung [Anpassung der Benutzeroberfläche für AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html) behandelt.
+
+
 
 >[!CAUTION]
 >
@@ -48,16 +50,16 @@ AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearb
 >
 >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
->Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
+>Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h. wie es in vorhanden ist) neu. `/libs`) unter `/apps`
+>1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
 >
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 >
 
 
-Beispielsweise die folgende Position innerhalb der `/libs` -Struktur kann überlagert werden:
+Beispielsweise können die folgenden Speicherorte innerhalb der `/libs`-Struktur überlagert werden:
 
 * Konsolen (alle Konsolen basierend auf Seiten der Granite-Benutzeroberfläche); zum Beispiel:
 
@@ -65,7 +67,7 @@ Beispielsweise die folgende Position innerhalb der `/libs` -Struktur kann überl
 
 >[!NOTE]
 >
->Weitere Tipps und Informationen zu Tools finden Sie im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
+>Weitere Tipps und Informationen zu Tools finden Sie im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
 
 ## Anpassen der Standardansicht für eine Konsole {#customizing-the-default-view-for-a-console}
 
@@ -127,13 +129,13 @@ Sie können die Standardansicht (Spalte, Karte, Liste) für eine Konsole anpasse
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Mithilfe der Eigenschaften dieses Knotens können Sie die `groups` die spezifische Aktion ausführen dürfen; Beispiel: `administrators`
+   Mithilfe von Eigenschaften auf diesem Knoten können Sie die `groups` definieren, die die spezifische Aktion ausführen dürfen, beispielsweise `administrators`.
 
 ### Anpassen von Spalten in der Listenansicht {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->Diese Funktion ist für Spalten von Textfeldern optimiert. Bei anderen Datentypen ist es möglich, Überlagerungen vorzunehmen `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Diese Funktion ist für Spalten mit Textfeldern optimiert. Für andere Datentypen können Sie `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps` überlagern.
 
 Anpassen von Spalten in der Listenansicht:
 
@@ -150,8 +152,8 @@ Anpassen von Spalten in der Listenansicht:
 
 1. Optional:
 
-   * Wenn Sie zusätzliche Daten einbinden möchten, müssen Sie eine [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit
-      `pageInfoProviderType`.
+   * Falls Sie zusätzliche Daten hinzufügen möchten, müssen Sie einen [PageInforProvider](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit einer
+      `pageInfoProviderType`-Eigenschaft schreiben.
 
    Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.
 

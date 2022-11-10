@@ -11,10 +11,10 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 92%
+source-wordcount: '784'
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
      <li>Aktion „Seite bearbeiten“ konfigurieren, um den Seiteneditor der klassischen Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Festlegen der Benutzeroberfläche</a>.</li>
     </ol> <p>Anschließend:</p>
     <ol>
-     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt die Verwendung der <a href="/help/sites-developing/modernization-tools.md">AEM Modernisierungs-Tools</a> , um die Komponenten zu aktualisieren.</li>
+     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt, die <a href="/help/sites-developing/modernization-tools.md">AEM-Modernisierungs-Tools</a> zu nutzen, um die Komponenten zu aktualisieren.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -83,7 +83,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
      <li>Aktion „Seite bearbeiten“ konfigurieren, um den Seiteneditor der klassischen Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Festlegen der Benutzeroberfläche</a>.</li>
     </ol> <p>Anschließend:</p>
     <ol>
-     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt die Verwendung der <a href="/help/sites-developing/modernization-tools.md">AEM Modernisierungs-Tools</a> , um die Komponenten zu aktualisieren.</li>
+     <li>Komponentendialoge aktualisieren, um das Coral 3-Dialogformat zu verwenden. Adobe empfiehlt, die <a href="/help/sites-developing/modernization-tools.md">AEM-Modernisierungs-Tools</a> zu nutzen, um die Komponenten zu aktualisieren.</li>
      <li>Konfigurieren Sie ContextHub (ersetzt ClientContext) und aktualisieren Sie die Seitenvorlagen für die Anwendung von ContextHub. Hinweis: ContextHub verfügt über einen Kompatibilitätsmodus, mit dem benutzerdefinierter ClientContext-Speicher geladen werden kann.</li>
     </ol> </td>
   </tr>
@@ -96,7 +96,7 @@ Nachfolgend finden Sie eine Liste mit Empfehlungen der Produktmanagement-Abteilu
 
 ### Häufig gestellte Fragen (FAQ) {#faq}
 
-Weitere Einzelheiten finden Sie im Knowledge Base-Artikel [Seitenbearbeitung mit der Touch-optimierten Benutzeroberfläche – Häufig gestellte Fragen (FAQ)](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), darunter Informationen zur geplanten Entfernung der klassischen Benutzeroberfläche.
+Weitere Einzelheiten finden Sie im Knowledge Base-Artikel [Seitenbearbeitung mit der Touch-optimierten Benutzeroberfläche – Häufig gestellte Fragen (FAQ)](https://helpx.adobe.com/de/experience-manager/kb/index/touchui_faq.html), darunter Informationen zur geplanten Entfernung der klassischen Benutzeroberfläche.
 
 ### Festlegen der Benutzeroberfläche {#selecting-your-ui}
 
@@ -117,13 +117,12 @@ Für Hintergrundinformationen über den grundsätzlichen Umgang:
 Für detaillierte Entwicklungsinformationen:
 
 * [Design der Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md).
-* Verwenden Sie die [AEM Modernisierungs-Tools](/help/sites-developing/modernization-tools.md) zum Konvertieren von Dialogfeldern zur Komponentenbearbeitung von der klassischen Benutzeroberfläche in die Touch-optimierte Benutzeroberfläche.
+* Verwenden Sie die [AEM-Modernisierungs-Tools](/help/sites-developing/modernization-tools.md), um die Dialogfelder für die Komponentenbearbeitung von der klassischen Benutzeroberfläche in die Touch-optimierte Benutzeroberfläche zu konvertieren.
 
 * [Struktur der Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-structure.md).
 
-* [Anpassen von Konsolen in der Touch-optimierten Benutzeroberfläche](/help/sites-developing/customizing-consoles-touch.md) (einschließlich Beispielcode).
+* [Anpassen von Konsolen in der Touch-optimierten Benutzeroberfläche](/help/sites-developing/customizing-consoles-touch.md) (einschließlich Beispiel-Code).
 
-* [Anpassen der Seitenbearbeitung in der Touch-optimierten Benutzeroberfläche](/help/sites-developing/customizing-page-authoring-touch.md) (einschließlich Beispielcode).
+* [Anpassen der Seitenbearbeitung in der Touch-optimierten Benutzeroberfläche](/help/sites-developing/customizing-page-authoring-touch.md) (einschließlich Beispiel-Code).
 
-* [AEM GEM Session zur Anpassung in der Touch-optimierten Benutzeroberfläche](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html)
 * [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)

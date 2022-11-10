@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '5355'
-ht-degree: 95%
+source-wordcount: '5349'
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Verfassen von zielgerichteten Inhalten im Targeting-Modus von AEM. Im Targeting-
 * Simulieren Sie Benutzererlebnisse.
 * Für weitere Anpassungsmöglichkeiten muss zunächst die Target-Komponente konfiguriert werden.
 
-Als Targeting-Engine können Sie entweder AEM oder Adobe Target einsetzen (möchten Sie Adobe Target nutzen, benötigen Sie ein aktives Adobe Target-Konto). Wenn Sie Adobe Target verwenden, müssen Sie zunächst die Integration konfigurieren. Siehe [Integrationsanweisungen in Adobe Target](/help/sites-administering/target.md).
+Als Targeting-Engine können Sie entweder AEM oder Adobe Target einsetzen (möchten Sie Adobe Target nutzen, benötigen Sie ein aktives Adobe Target-Konto). Wenn Sie Adobe Target verwenden, müssen Sie zunächst die Integration konfigurieren. Informationen hierzu finden Sie unter [Anleitung für die Integration mit Adobe Target](/help/sites-administering/target.md).
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -73,7 +73,7 @@ Verwenden Sie den Targeting-Modus, um einer Marke eine Aktivität hinzuzufügen.
 
 Außerdem haben Sie die Möglichkeit, Adobe Target-Aktivitäten mit AEM zu erstellen und zu verwalten, indem Sie die entsprechende Targeting-Engine (AEM oder Adobe Target) und den Aktivitätstyp (Erlebnis-Targeting oder A/B-Test) auswählen.
 
-Darüber hinaus können Sie Ziele und Metriken aller Adobe Target-Aktivitäten sowie Ihre Adobe Target-Zielgruppen verwalten. Zu guter Letzt steht Ihnen auch die Aktivitätsberichterstellung von Adobe Target zur Verfügung, die unter anderem auch die Konvertierung der im A/B-Test am besten abschneidenden Erlebnisse umfasst.
+Darüber hinaus können Sie Ziele und Metriken aller Adobe Target-Aktivitäten sowie Ihre Adobe Target-Zielgruppen verwalten. Zu guter Letzt steht Ihnen auch das Aktivitäts-Reporting von Adobe Target zur Verfügung, die unter anderem auch die Konvertierung der im A/B-Test am besten abschneidenden Erlebnisse umfasst.
 
 Fügen Sie eine Aktivität hinzu, erscheint diese auch in der [Aktivitätskonsole](/help/sites-authoring/activitylib.md).
 
@@ -101,7 +101,7 @@ So fügen Sie eine Aktivität hinzu:
 
    * Wenn Sie **Adobe Target** auswählen, können Sie eine Konfiguration (standardmäßig ist die Konfiguration festgelegt, die Sie bei der [Konfiguration des Kontos](/help/sites-administering/opt-in.md) angelegt haben) und einen Aktivitätstyp auswählen.
 
-   * Sollten Sie mit der Integration von AEM und Adobe Campaign arbeiten und zielgerichtete Inhalte (Newsletter) versenden, wählen Sie **Adobe Campaign** aus. Weitere Informationen finden Sie unter [Integration mit Adobe Campaign](/help/sites-administering/campaign.md).
+   * Sollten Sie mit der Integration von AEM und Adobe Campaign arbeiten und zielgerichtete Inhalte (Newsletter) versenden, wählen Sie **Adobe Campaign** aus. Weitere Informationen finden Sie unter [Integrieren von mit Adobe Campaign ](/help/sites-administering/campaign.md).
 
 1. Wählen Sie im Aktivitätsmenü entweder **Erlebnis-Targeting** oder **A/B-Test** aus.
 
@@ -295,8 +295,8 @@ Möchten Sie Targeting-Inhalte bearbeiten, müssen Sie zunächst auf **Targeting
    >Sollte diese Einstellung vom Administrator gefordert werden, müssen Sie den Ort möglicherweise genau angeben.
    >
    >
-   >Administratoren können unter **festlegen, ob diese Einstellung zwingend vorgenommen werden muss.https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
-   Wenn Sie von Benutzern verlangen möchten, einen Ort einzugeben, aktivieren Sie das Kontrollkästchen &quot;Ortsangabe erzwingen&quot;.
+   >Administratoren können unter **festlegen, ob diese Einstellung zwingend vorgenommen werden muss.https://&lt;Host>:&lt;Port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   Um Benutzer zur Eingabe eines Pfads aufzufordern, aktivieren Sie das Kontrollkästchen **Ortsangabe erzwingen**.
 
 1. Wählen Sie das Erlebnis aus, für das ein Angebot erstellt werden soll.
 1. So erstellen Sie das Angebot:
@@ -464,18 +464,18 @@ Es sind folgende Erfolgsmetriken verfügbar (nur für die Veröffentlichung eins
    <td><strong>Konversion</strong></td>
    <td><p>Die Prozentzahl der Besucher, die auf einen beliebigen Teil des getesteten Erlebnisses geklickt haben. Eine Konversion kann entweder einmal pro Besucher oder jedes Mal, wenn ein Besucher eine Umrechnung durchführt, gezählt werden. Die Konversionsmetrik ist auf einen der folgenden Werte eingestellt:</p>
     <ul>
-     <li><strong>Seite anzeigen</strong> - Sie können festlegen, welche Seite die Zielgruppe angezeigt hat, indem Sie entweder <strong>URL ist</strong> und dann die URL oder mehrere URLs definieren, oder indem Sie <strong>URL enthält</strong> und fügen Sie dann einen Pfad oder ein Keyword hinzu.</li>
+     <li><strong>Seite angesehen</strong>: Sie können festlegen, welche Seite die Zielgruppe angesehen haben muss, indem Sie entweder <strong>URL lautet</strong> auswählen und eine oder mehrere ZielURLs eingeben oder <strong>URL enthält</strong> auswählen und einen Pfad oder ein Keyword hinzufügen.</li>
      <li><strong>Mbox angezeigt</strong> – Sie können festlegen, welche Mbox Ihre Zielgruppe angezeigt haben muss, indem Sie deren Namen eingeben. Durch Klicken auf <strong>Mbox hinzufügen</strong> können Sie mehrere Mboxes bestimmen.</li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Umsatz</strong></td>
-   <td><p>Durch den Besuch generierter Umsatz. Sie können aus den folgenden Umsatzmetriken auswählen:</p>
+   <td><p>Durch den Besuch generierter Umsatz. Sie können aus den aufgelisteten Umsatzmetriken auswählen:</p>
     <ul>
      <li>Umsatz pro Besucher (RPV)</li>
      <li>Durchschnittlicher Bestellwert</li>
      <li>Gesamtverkäufe </li>
-     <li>Aufträge</li>
+     <li>Bestellungen</li>
     </ul> <p>Sie können bei all diesen Optionen bestimmen, ob das Anzeigen einer Mbox bedeutet, dass das Ziel erreicht wurde. Es können eine oder mehrere Mboxes festgelegt werden.</p> </td>
   </tr>
   <tr>
@@ -504,18 +504,18 @@ Verwenden Sie die erweiterten Optionen, um festzulegen, was geschehen soll, **we
    <td><strong>Anzahl erhöhen und Benutzer in Aktivität belassen</strong></td>
    <td>Geben Sie an, wie die Anzahl erhöht wird:
     <ul>
-     <li>Einmal pro Teilnehmer</li>
-     <li>Bei jeder Impression, außer Seitenaktualisierungen</li>
+     <li>Einmal pro Eintritt</li>
+     <li>Bei jeder Impression, außer bei Seitenaktualisierungen</li>
      <li>Bei jeder Impression</li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Anzahl erhöhen, Benutzer freigeben und Wiedereintritt erlauben</strong></td>
-   <td>Wählen Sie das Erlebnis aus, das dem Besucher angezeigt wird, wenn er die Aktivität erneut aufruft:
+   <td>Wählen Sie das Erlebnis aus, das dem Besucher angezeigt wird, wenn er erneut in die Aktivität eintritt.
     <ul>
      <li>Gleiches Erlebnis</li>
-     <li>Zufälliges Erlebnis</li>
-     <li>Unsichtbares Erlebnis</li>
+     <li>Zufallserlebnis</li>
+     <li>Neues Erlebnis</li>
     </ul> </td>
   </tr>
   <tr>
@@ -529,7 +529,7 @@ Verwenden Sie die erweiterten Optionen, um festzulegen, was geschehen soll, **we
  </tbody>
 </table>
 
-Weitere Informationen zu Erfolgsmetriken finden Sie in der [Adobe Target-Dokumentation](https://docs.adobe.com/content/help/de-DE/target/using/activities/success-metrics/success-metrics.html).
+Weitere Informationen zu Erfolgsmetriken finden Sie in der [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de).
 
 ### Konfigurieren von Einstellungen (AEM Targeting) {#configuring-settings-aem-targeting}
 
@@ -568,13 +568,13 @@ So konfigurieren Sie bei Verwendung von Adobe Target Ziele und Einstellungen:
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. Wählen Sie im Bereich **Zielmetrik** unter **Mein Hauptziel** die Erfolgsmetrik, die Sie verfolgen möchten – Umrechnung, Umsatz, Interaktion – und geben Sie an, wie diese Metrik gemessen wird (oder welche Aktion die Zielgruppe durchführt, um anzuzeigen, dass ein Ziel erreicht wurde). Siehe Definition der Zielmetriken in der vorherigen Tabelle und siehe [Adobe Target-Dokumentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) zu Erfolgsmetriken.
+1. Wählen Sie im Bereich **Zielmetrik** unter **Mein Hauptziel** die Erfolgsmetrik, die Sie verfolgen möchten – Umrechnung, Umsatz, Interaktion – und geben Sie an, wie diese Metrik gemessen wird (oder welche Aktion die Zielgruppe durchführt, um anzuzeigen, dass ein Ziel erreicht wurde). Siehe Definition der Zielmetriken in der vorherigen Tabelle und siehe [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html) zu Erfolgsmetriken.
 
    Sie können das Ziel umbenennen, indem Sie auf die drei Punkte oben rechts klicken und **Umbenennen** auswählen.
 
    Möchten Sie die Inhalte aller Felder löschen, klicken Sie auf die drei Punkte oben rechts und wählen Sie **Alle Felder löschen** aus.
 
-   Sämtliche Metriken verfügen zudem über von Ihnen festlegbare erweiterte Einstellungen. Diese finden Sie unter der Option **Erweiterte Einstellungen**. Weitere Informationen dazu, wie die Erfolgsmetriken in der oben stehenden Tabelle gemessen werden, finden Sie in der [Adobe Target-Dokumentation](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
+   Sämtliche Metriken verfügen zudem über von Ihnen festlegbare erweiterte Einstellungen. Diese finden Sie unter der Option **Erweiterte Einstellungen**. Weitere Informationen dazu, wie die Erfolgsmetriken in der oben stehenden Tabelle gemessen werden, finden Sie in der [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    Sie müssen mindestens eine Zielmetrik definieren.
@@ -665,7 +665,7 @@ Sie können die Komponente „Target“ anpassen, indem Sie auf eine von zwei m�
   </tr>
   <tr>
    <td><strong>Engine</strong></td>
-   <td>Wählen Sie zwischen <strong>Clientseitige Regeln (ohne Tracking), Adobe Target, ContextHub, </strong>und<strong> Adobe Campaign </strong>abhängig von der zu verwendenden Engine.</td>
+   <td>Wählen Sie abhängig von der gewünschten Engine <strong>Client-seitige Regeln (ohne Tracking), Adobe Target, ContextHub </strong>und<strong> Adobe Campaign</strong> aus.</td>
   </tr>
  </tbody>
 </table>
@@ -682,7 +682,7 @@ Wenn Sie Adobe Target als Engine auswählen:
   </tr>
   <tr>
    <td><strong>Präzise Zielgruppenerfassung</strong></td>
-   <td><p>Durch Aktivierung der genauen Verfolgung wird der Komponente mitgeteilt, auf verfügbare Client Context- oder Context-Hub-Daten zu warten, bevor eine Anfrage an Adobe Target gesendet wird. Dies kann die Ladezeit verlängern. Beim Verfassen ist stets die präzise Zielgruppenerfassung aktiviert.</p> <p>Wenn Sie das Kontrollkästchen <strong>Präzise Zielgruppenerfassung</strong> aktivieren, führt die Mbox zunächst <code>mboxDefine</code> und anschließend <code>mboxUpdate</code> durch, was bei Verfügbarkeit der Daten zu einer Ajax-Anfrage führt.</p> <p>Wenn Sie die <strong>Präzise Zielgruppenbestimmung</strong> aktivieren, führt die Mbox eine <code>mboxCreate</code> unmittelbar zu einer synchronen Anfrage führt (in diesem Fall sind möglicherweise noch nicht alle Kontextdaten verfügbar).</p> <p><strong>Hinweis:</strong> Das Aktivieren und Deaktivieren der präzisen Zielgruppenerfassung einer Komponente wirkt sich nicht auf globale Einstellungen aus. Globale Einstellungen lassen sich jederzeit außer Kraft setzen, indem Sie die präzise Zielgruppenerfassung in der Komponente aktivieren.</p> </td>
+   <td><p>Durch Aktivierung der genauen Verfolgung wird der Komponente mitgeteilt, auf verfügbare Client Context- oder Context-Hub-Daten zu warten, bevor eine Anfrage an Adobe Target gesendet wird. Dies kann die Ladezeit verlängern. Beim Verfassen ist stets die präzise Zielgruppenerfassung aktiviert.</p> <p>Wenn Sie das Kontrollkästchen <strong>Präzise Zielgruppenerfassung</strong> aktivieren, führt die Mbox zunächst <code>mboxDefine</code> und anschließend <code>mboxUpdate</code> durch, was bei Verfügbarkeit der Daten zu einer Ajax-Anfrage führt.</p> <p>Wurde das Kontrollkästchen <strong>Präzise Zielgruppenerfassung</strong> nicht ausgewählt, wird von der Mbox zunächst ein <code>mboxCreate</code> ausgeführt, was zu einer sofortigen, zeitgleichen Anfrage führt (in diesem Fall stehen möglicherweise noch nicht alle Kontextdaten zur Verfügung).</p> <p><strong>Hinweis:</strong> Das Aktivieren und Deaktivieren der präzisen Zielgruppenerfassung einer Komponente wirkt sich nicht auf globale Einstellungen aus. Globale Einstellungen lassen sich jederzeit außer Kraft setzen, indem Sie die präzise Zielgruppenerfassung in der Komponente aktivieren.</p> </td>
   </tr>
   <tr>
    <td><strong>Einschließen gelöster Segmente</strong></td>
@@ -694,11 +694,11 @@ Wenn Sie Adobe Target als Engine auswählen:
   </tr>
   <tr>
    <td><strong>Kontextparameter</strong></td>
-   <td>Klicken oder tippen Sie auf <strong>Feld hinzufügen</strong> um zusätzliche Kontextparameter zu konfigurieren (identisch mit den verfügbaren Parametern im Target-Framework). Kontextparameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn Kontextparameter direkt dem Framework hinzugefügt würden.</td>
+   <td>Klicken oder tippen Sie auf <strong>Feld hinzufügen</strong>, um zusätzliche Parameter zu konfigurieren (es stehen die gleichen Optionen wie im Target-Framework zur Verfügung). Kontextparameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn Kontextparameter direkt dem Framework hinzugefügt würden.</td>
   </tr>
   <tr>
    <td><strong>Statische Parameter</strong></td>
-   <td>Klicken oder tippen Sie auf <strong>Feld hinzufügen</strong> um zusätzliche statische Parameter zu konfigurieren (entspricht den verfügbaren Parametern im Target-Framework). Es gelten die statischen Parameter, die zur Komponente hinzugefügt werden <i>only</i> der Komponente und nicht der anderen Komponente hinzufügen, wie es der Fall wäre, wenn Sie statische Parameter direkt zum Framework hinzufügen würden. Statische Parameter stammen nicht aus dem Kontext (Client Context des ContentHub).</td>
+   <td>Klicken oder tippen Sie auf <strong>Feld hinzufügen</strong>, um zusätzliche statische Parameter zu konfigurieren (hierfür stehen die gleichen Optionen wie im Target-Framework zur Verfügung). Statische Parameter, die der Komponente hinzugefügt wurden, gelten <i>nur</i> für die gewählte Komponente, nicht für andere Komponenten, wie dies der Fall wäre, wenn statische Parameter direkt dem Framework hinzugefügt würden. Statische Parameter stammen nicht aus dem Kontext (Client Context des ContentHub).</td>
   </tr>
  </tbody>
 </table>
@@ -722,12 +722,12 @@ Wenn Sie Client Context (Client-Seite) als Engine auswählen:
     <ul>
      <li><strong>Erste(r)</strong>: das laut Sortierung der Kampagne an erster Stelle stehende Erlebnis.</li>
      <li><strong>Zufällig</strong>: Es wird ein beliebiges Erlebnis verwendet.</li>
-     <li><strong>Clickstream-Ergebnis</strong>: Die Tags und zugehörigen Tag-Treffer, die im ClientContext verfolgt werden, werden verwendet. Die Trefferraten für Tags, die auf der Teaser-Seite definiert sind, werden verglichen.</li>
+     <li><strong>Clickstream-Wert</strong>: Trefferraten für im Kontext des Client überwachte Tags und zugehörige Tags werden verwendet. Die Trefferraten für Tags, die auf der Teaser-Seite definiert sind, werden verglichen.</li>
     </ul> </td>
   </tr>
  </tbody>
 </table>
 
-Wählen Sie **Adobe Campaign** als Engine aus, wenn Sie AEM mit Adobe Campaign integrieren. Weitere Informationen finden Sie unter [Integration von AEM mit Adobe Campaign](/help/sites-administering/campaign.md).
+Wählen Sie **Adobe Campaign** als Engine aus, wenn Sie AEM mit Adobe Campaign integrieren. Weitere Informationen finden Sie unter [Integrieren von AEM mit Adobe Campaign ](/help/sites-administering/campaign.md).
 
 Wählen Sie **ContextHub** als Engine aus, wenn Sie ContextHub für das Targeting verwenden. Weitere Informationen finden Sie unter [Konfigurieren von ContextHub.](/help/sites-developing/ch-configuring.md)

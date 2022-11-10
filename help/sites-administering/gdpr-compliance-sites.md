@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '836'
-ht-degree: 100%
+source-wordcount: '832'
+ht-degree: 99%
 
 ---
 
@@ -51,7 +51,7 @@ AEM bietet einen [Service zum Deaktivieren von Cookies](/help/sites-developing/c
 
 AEM Sites bietet eine optionale Integration mit Enhanced Insights by Analytics, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
-Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Analytics finden Sie unter [Adobe Analytics und die DSGVO](https://docs.adobe.com/content/help/de/analytics/admin/data-governance/an-gdpr-overview.html).
+Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Analytics finden Sie unter [Adobe Analytics und die DSGVO](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
 
 ## Verbesserte Personalisierung durch Target {#enhanced-personalization-by-target}
 

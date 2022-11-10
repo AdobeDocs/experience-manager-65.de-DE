@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1314'
-ht-degree: 98%
+source-wordcount: '1312'
+ht-degree: 100%
 
 ---
 
@@ -63,7 +63,7 @@ Das folgende Diagramm veranschaulicht die Architektur des Stilsystems.
 
 ## Verwenden Sie {#use}
 
-Zur Veranschaulichung der Funktion werden wir die [WKND](https://docs.adobe.com/content/help/de-DE/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html)-Implementierung der Komponente [Titel](https://www.adobe.com/go/aem_cmp_title_v2_de) der Kernkomponente als Beispiel verwenden.
+Zur Veranschaulichung der Funktion werden wir die [WKND](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)-Implementierung der Komponente [Titel](https://www.adobe.com/go/aem_cmp_title_v2_de) der Kernkomponente als Beispiel verwenden.
 
 In den folgenden Abschnitten [Als Inhaltsautor](#as-a-content-author) und [Als Vorlagenautor](#as-a-template-author) wird beschrieben, wie Sie die Funktionalität des Stilsystems mit dem WKND-Stilsystem testen können.
 
@@ -130,7 +130,7 @@ Ist die Komponente entsprechend konfiguriert, fügt AEM die von den Seitenautore
 
 ### Aktivieren der Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ {#enable-styles-tab-edit}
 
-Ab AEM Version 6.5.3.0 ist jetzt eine optionale Registerkarte &quot;Stile&quot;im Dialogfeld &quot;Bearbeiten&quot;verfügbar. Im Gegensatz zur Registerkarte im Dialogfeld „Design“ ist die Registerkarte im Dialogfeld „Bearbeiten“ für die Funktion des Stilsystems nicht unbedingt erforderlich. Sie stellt jedoch eine optionale alternative Oberfläche dar, über die ein Inhaltsautor Stile festlegen kann.
+Ab AEM-Version 6.5.3.0 ist jetzt eine optionale Registerkarte „Stile“ im Dialogfeld „Bearbeiten“ verfügbar. Im Gegensatz zur Registerkarte im Dialogfeld „Design“ ist die Registerkarte im Dialogfeld „Bearbeiten“ für die Funktion des Stilsystems nicht unbedingt erforderlich. Sie stellt jedoch eine optionale alternative Oberfläche dar, über die ein Inhaltsautor Stile festlegen kann.
 
 Die Registerkarte für das Bearbeitungsdialogfeld kann auf ähnliche Weise wie die Registerkarte für das Dialogfeld „Design“ eingebunden werden:
 

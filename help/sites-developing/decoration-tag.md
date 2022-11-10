@@ -2,10 +2,10 @@
 title: Decoration-Tag
 description: Wenn eine Komponente einer Web-Seite gerendert wird, kann ein HTML-Element generiert werden, das die gerenderte Komponente in sich einschließt. Für Entwickler bietet AEM eine klare und einfache Logik für die Steuerung von Decoration-Tags, die enthaltene Komponenten einschließen.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
 workflow-type: tm+mt
-source-wordcount: '878'
-ht-degree: 93%
+source-wordcount: '876'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Die folgenden Eigenschaften und Knoten können auf Komponenten angewendet werden
 
 ## Skript-Steuerung {#script-controls}
 
-Das Wrapper-Verhalten unterscheidet sich jedoch je nachdem, ob [HTL](/help/sites-developing/decoration-tag.md#htl) oder [JSP](/help/sites-developing/decoration-tag.md#jsp) wird verwendet, um das Element einzuschließen.
+Das Wrapper-Verhalten unterscheidet sich jedoch, abhängig davon, ob [HTL](/help/sites-developing/decoration-tag.md#htl) oder [JSP](/help/sites-developing/decoration-tag.md#jsp) zum Einfügen des Elements verwendet wird.
 
 ### HTL {#htl}
 
@@ -62,7 +62,7 @@ Das Verhalten des Wrappers kann auch vollständig kontrolliert werden.
 
 Sie können das Verhalten der Wrapper-Tags von HTL-Skripten und der zugehörigen Logik vollständig kontrollieren.
 
-Weitere Informationen zur Entwicklung in HTL finden Sie in der [HTL-Dokumentation](https://docs.adobe.com/content/help/de-DE/experience-manager-htl/using/overview.html).
+Weitere Informationen zur Entwicklung in HTL finden Sie in der [HTL-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
 
 #### Entscheidungsbaum {#decision-tree}
 
@@ -139,13 +139,13 @@ Dies ergibt die Ausgabe auf `/content/test.html`:
 
 ## JSP {#jsp}
 
-Wenn Sie eine Komponente mit `cq:includ`e oder `sling:include`festgelegt ist, besteht das Standardverhalten in AEM darin, ein DIV zum Umschließen des Elements zu verwenden. Sie können dieses Verhalten jedoch auf zwei Arten anpassen:
+Wenn Sie eine Komponente mithilfe von `cq:includ`e oder `sling:include` einfügen, verwendet AEM standardmäßig ein DIV, um das Element einzuschließen. Sie können dieses Verhalten jedoch auf zwei Arten anpassen:
 
 * Geben Sie mit `cq:noDecoration` explizit an, dass AEM die Komponente nicht einschließen soll.
-* Verwenden Sie ein benutzerdefiniertes HTML-Tag, um die Komponente mit `cq:htmlTag`/ `cq:tagName` oder `decorationTagName`.
+* Schließen Sie mit `cq:htmlTag`/ `cq:tagName` oder `decorationTagName` die Komponente mit einem eigenen HTML-Tag ein.
 
 ### Entscheidungsbaum {#decision-tree-1}
 
-Die folgende Entscheidungsstruktur zeigt, wie `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`und `decorationTagName` das Verhalten des Wrappers beeinflussen.
+Der folgende Entscheidungsbaum veranschaulicht, wie `cq:noDecoration`, `cq:htmlTag`, `cq:tagName` und `decorationTagName` das Wrapper-Verhalten beeinflussen.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)

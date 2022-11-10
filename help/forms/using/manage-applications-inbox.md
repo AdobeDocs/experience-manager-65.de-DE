@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1111'
-ht-degree: 100%
+source-wordcount: '1107'
+ht-degree: 99%
 
 ---
 
@@ -151,8 +151,8 @@ Dem Eigentümer eines Workflow-Modells können die Elemente eines AEM-Workflows 
       .property("allowExplicitSharing", "allowExplicitSharing").type(TYPENAME_BOOLEAN).propertyIndex()
    ```
 
-1. [Erstellen Sie einen Eigenschaftsindex und weisen Sie ihm „true“ zu](https://docs.adobe.com/content/help/de/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
+1. [Erstellen Sie einen Eigenschaftsindex und weisen Sie ihm „true“ zu](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html#the-property-index).
 
 1. Nachdem Sie Indizes in CRX DE konfiguriert oder über ein Paket bereitgestellt haben, indizieren Sie das Repository [erneut.](https://helpx.adobe.com/de/experience-manager/kb/HowToCheckLuceneIndex.html#Completelyrebuildtheindex)
 
-https://docs.adobe.com/content/help/de-DE/experience-manager-65/deploying/deploying/queries-and-indexing.html
+https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/queries-and-indexing.html

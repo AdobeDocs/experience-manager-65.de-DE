@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9584392a-d8a3-45a4-9cdf-fd211c8e6091
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '2074'
-ht-degree: 86%
+source-wordcount: '2072'
+ht-degree: 99%
 
 ---
 
@@ -26,16 +26,16 @@ Dieser Artikel behandelt wichtige Aspekte, die zu beachten sind, wenn ein Fronte
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendering auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 ## SPA-Entwicklungsgrundsätze für AEM {#spa-development-principles-for-aem}
 
 Bei der Entwicklung von Single Page Applications in AEM wird davon ausgegangen, dass sich der Frontend-Entwickler beim Erstellen einer SPA an die üblichen Best Practices hält. Wenn Sie als Frontend-Entwickler diese allgemeinen Best Practices sowie einige AEM-spezifische Prinzipien befolgen, wird Ihre SPA mit [AEM und seinen Inhaltsverfassungsfunktionen](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa) zusammenarbeiten.
 
-* **[Portabilität](/help/sites-developing/spa-architecture.md#portability) -** Wie bei allen Komponenten sollten die Komponenten so portabel wie möglich gestaltet werden. Die SPA sollte aus portablen und wiederverwendbaren Komponenten bestehen.
+* **[Portabilität](/help/sites-developing/spa-architecture.md#portability):** Wie alle anderen Komponenten auch sollten die Komponenten so portabel wie möglich gestaltet werden. Die SPA sollte aus portablen und wiederverwendbaren Komponenten bestehen.
 * **[AEM verwaltet die Site-Struktur](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**: Der Frontend-Entwickler erstellt Komponenten und ist für deren interne Struktur verantwortlich, verlässt sich bei der Definition der Inhaltsstruktur der Site jedoch auf AEM.
 * **[Dynamisches Rendering](/help/sites-developing/spa-architecture.md#dynamic-rendering)**: Alle Rendering-Vorgänge sollten dynamisch sein.
-* **[Dynamisches Routing](#dynamic-routing) -** Der SPA ist für das Routing verantwortlich, überwacht AEM und ruft auf dieser Basis ab. Jegliches Routing sollte ebenfalls dynamisch sein.
+* **[Dynamisches Routing**](#dynamic-routing): Die SPA ist für das Routing verantwortlich. AEM überwacht sie und ruft darauf basierend Inhalte ab. Jegliches Routing sollte ebenfalls dynamisch sein.
 
 Wenn Sie sich bei der Entwicklung Ihrer SPA an diese Grundsätze halten, wird diese so flexibel und zukunftssicher wie möglich sein sowie die Nutzung aller unterstützten AEM Authoring-Funktionen ermöglichen.
 
@@ -67,7 +67,7 @@ Jedes statische Routing verstößt gegen den [Grundsatz der Portabilität](/help
 
 ## AEM-Projektarchetyp {#aem-project-archetype}
 
-Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/developing/archetype/overview.html) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
+Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
 
 ## SPA-Design-Modelle {#spa-design-models}
 
@@ -115,14 +115,14 @@ Führen Sie die folgenden Schritte aus, um Ihre bestehende SPA für die Zusammen
    Gestalten Sie sie so, dass sie in beliebiger Reihenfolge, Position und Größe gerendert werden können.
 1. **Verwenden Sie die von unserem SDK bereitgestellten Container, um Ihre Komponenten auf dem Bildschirm zu platzieren.**
 
-   AEM stellt eine Seiten- und Absatzsystemkomponente bereit, die Sie verwenden können.
+   AEM bietet eine Seiten- und Absatzsystemkomponente, die Sie verwenden können.
 1. **Erstellen Sie für jede JS-Komponente eine AEM-Komponente.**
 
    Die AEM-Komponenten definieren den Dialog und die JSON-Ausgabe.
 
 ## Anweisungen für Frontend-Entwickler {#instructions-for-front-end-developers}
 
-Die Hauptaufgabe bei der Erstellung eines SPA für AEM durch einen Frontend-Entwickler besteht darin, sich auf die Komponenten und ihre JSON-Modelle zu einigen.
+Wenn Frontend-Entwicklerinnen und -Entwickler damit beauftragt werden, eine SPA für AEM zu erstellen, besteht die wichtigste Aufgabe darin, sich auf die Komponenten und ihre JSON-Modelle zu einigen.
 
 Im Folgenden werden die Schritte erläutert, die ein Frontend-Entwickler bei der Entwicklung einer SPA für AEM erledigen muss.
 
@@ -138,7 +138,7 @@ Im Folgenden werden die Schritte erläutert, die ein Frontend-Entwickler bei der
 
 1. **Implementieren Sie die `render()`-Methode der Komponente**
 
-   Der Frontend-Entwickler implementiert die `render()` -Methode, wie er es für richtig hält, und kann die Felder des `cqModel` -Eigenschaft. Dadurch werden das DOM und die HTML-Fragmente ausgegeben, die in die Seite eingefügt werden. Dabei handelt es sich um die Standardmethode zur Erstellung einer App in React.
+   Frontend-Entwicklerinnen und -Entwickler implementieren die `render()`-Methode nach Belieben und können die Felder der `cqModel`-Eigenschaft verwenden. Dadurch werden das DOM und die HTML-Fragmente ausgegeben, die in die Seite eingefügt werden. Dabei handelt es sich um die Standardmethode zur Erstellung einer App in React.
 
 1. **Ordnen Sie die Komponente dem AEM-Ressourcentyp zu via`MapTo()`**
 
@@ -166,7 +166,7 @@ Im Folgenden werden die Schritte erläutert, die ein Frontend-Entwickler bei der
 
 ## AEM-Agnostik {#aem-agnostic}
 
-Diese Codeblöcke veranschaulichen, wie Ihre React- und Angular-Komponenten keine Adobe oder AEM spezifische Elemente benötigen.
+Diese Code-Blöcke veranschaulichen, dass Ihre React- und Angular-Komponenten nichts Spezifisches für Adobe oder AEM benötigen.
 
 * Alles, was sich in der JavaScript-Komponente befindet, ist AEM-agnostisch.
 * AEM-spezifisch jedoch ist, dass die JS-Komponente mit dem MapTo-Hilfsprogramm einer AEM-Komponente zugeordnet werden muss.
@@ -180,8 +180,8 @@ Die `MapTo` Helper ist der &quot;Kleber&quot;, der es ermöglicht, die Back-End-
 
 Weitere Informationen zum Verwenden von `MapTo` und Erstellen von SPAs für AEM im Allgemeinen finden Sie im Handbuch „Erste Schritte“ für Ihr ausgewähltes Framework.
 
-* [Erste Schritte mit SPA in AEM - React](/help/sites-developing/spa-getting-started-react.md)
-* [Erste Schritte mit SPA in AEM - Angular](/help/sites-developing/spa-getting-started-angular.md)
+* [Erste Schritte mit SPAs in AEM – React](/help/sites-developing/spa-getting-started-react.md)
+* [Erste Schritte mit SPAs in AEM – Angular](/help/sites-developing/spa-getting-started-angular.md)
 
 ## AEM-Architektur und SPAs {#aem-architecture-and-spas}
 
@@ -227,8 +227,8 @@ Die allgemeine Architektur von AEM einschließlich Umgebungen für Entwicklung, 
 
 Einen Überblick darüber, wie eine einfache SPA in AEM strukturiert ist und wie sie funktioniert, finden Sie im Erste-Schritte-Handbuch für [React](/help/sites-developing/spa-getting-started-react.md) und [Angular](/help/sites-developing/spa-getting-started-angular.md).
 
-Eine schrittweise Anleitung zum Erstellen Ihrer eigenen SPA finden Sie im Abschnitt [Erste Schritte mit dem AEM-SPA-Editor - WKND-Events-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de).
+Eine schrittweise Anleitung zum Erstellen einer eigenen SPA finden Sie unter [Erste Schritte mit dem AEM-SPA-Editor – WKND-Events-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de).
 
-Weitere Informationen zum dynamischen Modell für die Komponentenzuordnung und dazu, wie es in SPA in AEM funktioniert, finden Sie im Artikel [Dynamisches Modell für die Komponentenzuordnung für SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Weitere Informationen zum dynamischen Modell für die Komponentenzuordnung und dazu, wie es mit SPAs in AEM funktioniert, finden Sie im Artikel [Dynamisches Modell für die Komponentenzuordnung bei SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Wenn Sie SPA in AEM für ein anderes Framework als React oder Angular implementieren möchten oder einfach nur tief in die Funktionsweise des SPA SDK für AEM eintauchen möchten, lesen Sie den Abschnitt [SPA Blueprint](/help/sites-developing/spa-blueprint.md) Artikel.
+Wenn Sie SPAs in AEM für ein anderes Framework als React oder Angular implementieren oder einfach nur tief in die Funktionsweise des SPA-SDK für AEM eintauchen möchten, lesen Sie den Artikel [SPA Blueprint](/help/sites-developing/spa-blueprint.md).

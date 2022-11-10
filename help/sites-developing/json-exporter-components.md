@@ -10,10 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '540'
-ht-degree: 98%
+source-wordcount: '536'
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Zunächst muss ein Sling-Modell für die Komponente definiert werden.
 
 >[!NOTE]
 >
->Ein Beispiel für die Verwendung von Sling-Modellen finden Sie im Artikel [Entwickeln von Sling Model Exportern in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
+>Ein Beispiel für die Verwendung von Sling-Modellen finden Sie im Artikel [Entwickeln von Sling Model Exportern in AEM](https://helpx.adobe.com/de/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
 
 Die Implementierungsklasse des Sling-Modells muss wie folgt kommentiert werden:
 
@@ -60,7 +60,7 @@ Außerdem kann die Sling-Modell-Klasse dadurch in der `ComponentExporter`-Oberfl
 
 ### Verwenden mehrerer Selektoren {#multiple-selectors}
 
-Obwohl dies kein Standardanwendungsfall ist, können zusätzlich zum `model`-Selektor mehrere Selektoren konfiguriert werden.
+Obwohl dies kein Standardnutzungsszenario ist, können zusätzlich zum `model`-Selektor mehrere Selektoren konfiguriert werden.
 
 ```
 https://<server>:<port>/content/page.model.selector1.selector2.json
@@ -78,7 +78,7 @@ Es müssen die richtigen Anmerkungen für die Modell-Oberfläche angewendet werd
 
 ## Beispiel {#example}
 
-Die Kernkomponenten unterstützen den JSON-Export seit der Version [1.1.0 der Kernkomponenten](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/introduction.html). Sie können als Referenz verwendet werden.
+Die Kernkomponenten unterstützen den JSON-Export seit der Version [1.1.0 der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). Sie können als Referenz verwendet werden.
 
 Ein Beispiel ist die Sling-Modell-Implementierung der Bild-Kernkomponente und deren kommentierte Oberfläche.
 
@@ -93,9 +93,9 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 Weitere Informationen finden Sie unter:
 
-* Das [Thema „Inhaltsfragmente“·im Assets-Benutzerhandbuch](https://helpx.adobe.com/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* Das [Thema „Inhaltsfragmente“·im Assets-Benutzerhandbuch](https://helpx.adobe.com/de/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-Exporter für Content Services](/help/sites-developing/json-exporter.md)
-* [Kernkomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de)

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '1220'
+source-wordcount: '1216'
 ht-degree: 100%
 
 ---
@@ -27,15 +27,15 @@ ht-degree: 100%
 >6.5.3.0:
 >
 >* **Externalizer-Domains** können jetzt ausgewählt werden.
->  **Hinweis:** Externalizer-Domains sind nur für den Inhalt des Experience Fragments, das an Target gesendet wird, relevant und nicht Metadaten wie Inhalte zum Anzeigen von Angeboten.
+   >  **Hinweis:** Externalizer-Domains sind nur für den Inhalt des Experience Fragments, das an Target gesendet wird, relevant und nicht Metadaten wie Inhalte zum Anzeigen von Angeboten.
 >
 >6.5.2.0:
 >
 >* Experience Fragments können in Folgendes exportiert werden:
->
->   * den Standardarbeitsbereich
->   * einen benannten Arbeitsbereich, der in der Cloud-Konfiguration angegeben ist.
->   * **Hinweis:** Für den Export in bestimmte Arbeitsbereiche ist Adobe Target Premium erforderlich.
+   >
+   >   * den Standardarbeitsbereich
+   >   * einen benannten Arbeitsbereich, der in der Cloud-Konfiguration angegeben ist.
+   >   * **Hinweis:** Für den Export in bestimmte Arbeitsbereiche ist Adobe Target Premium erforderlich.
 >
 >* AEM muss [mit Adobe Target über IMS integriert](/help/sites-administering/integration-target-ims.md) sein.
 >
@@ -68,7 +68,7 @@ AEM Experience Fragments können in den Standardarbeitsbereich in Adobe Target o
 >Weitere Informationen finden Sie auch unter:
 >
 >* [Adobe Target-Entwicklung](https://www.adobe.io/apis/experiencecloud/target.html)
->* [Kernkomponenten – Experience Fragments](https://docs.adobe.com/content/help/de/experience-manager-core-components/using/components/experience-fragment.html)
+>* [Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=de)
 >
 
 
@@ -118,7 +118,7 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
    >
    >Beachten Sie die Kernkomponente:
    >
-   >[Kernkomponenten – Experience Fragments](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/experience-fragment.html)
+   >[Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
 
    Wählen Sie unter **Adobe Target** Folgendes aus:
 

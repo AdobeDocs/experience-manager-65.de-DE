@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
 workflow-type: tm+mt
-source-wordcount: '481'
-ht-degree: 75%
+source-wordcount: '479'
+ht-degree: 98%
 
 ---
 
@@ -38,7 +38,7 @@ Felder müssen einzeln konfiguriert werden, wenn eine Änderung erforderlich ist
    * Name: `cq:showOnCreate`
    * Typ: `Boolean`
 
-* Seiteneigenschaft, die in der Bearbeitungsansicht verfügbar sein soll (z. B. **Ansicht**/**Bearbeiten**) **Eigenschaften** -Option):
+* Seiteneigenschaft, die in der Bearbeitungsansicht verfügbar sein soll (z. B. die Option **Anzeigen**/**Bearbeiten**) von **Eigenschaften**):
 
    * Name: `cq:hideOnEdit`
    * Typ: `Boolean`
@@ -51,7 +51,7 @@ Sehen Sie als Beispiel die Einstellungen für Felder, die unter **Weitere Titel 
 
 >[!TIP]
 >
->Siehe [Tutorial zum Erweitern der Seiteneigenschaften](https://docs.adobe.com/content/help/en/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html) für eine Anleitung zum Anpassen der Seiteneigenschaften.
+>Eine Anleitung zum Anpassen der Seiteneigenschaften finden Sie im [Tutorial zum Erweitern der Seiteneigenschaften](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html).
 
 ## Konfiguration von Seiteneigenschaften {#configuring-your-page-properties}
 
@@ -60,7 +60,7 @@ Sie können diese Felder auch konfigurieren, indem Sie das Dialogfeld Ihrer Seit
 Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pages.md#creating-a-new-page) zeigt standardmäßig die Felder an, die unter **Weitere Titel und Beschreibungen** gruppiert sind. Um diese auszublenden, nehmen Sie folgende Konfiguration vor:
 
 1. Erstellen Sie Ihre Seitenkomponente unter `/apps`.
-1. Erstellen Sie eine Überschreibung (mithilfe von *dialog diff* von [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md)) für die `basic` -Abschnitt Ihrer Seitenkomponente; Beispiel:
+1. Erstellen Sie eine Überschreibung (mit *dialog diff*, das von [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md) bereitgestellt wird) für den Abschnitt `basic` der Seitenkomponente. Beispiel:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -71,20 +71,20 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pa
    >Siehe als Referenz:
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
-   Sie ***must*** ändert nichts in der `/libs` Pfad.
+   Sie dürfen jedoch ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
    da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
-   Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
-   1. Erstellen Sie das erforderliche Element (d. h. wie es in vorhanden ist) neu. `/libs`) unter `/apps`
+   Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
+   1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
    1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 
-1. Legen Sie die `path` Eigenschaft auf `basic` , um auf die Außerkraftsetzung der Registerkarte &quot;Standard&quot;zu verweisen (siehe auch den nächsten Schritt). Beispiel:
+1. Legen Sie die Eigenschaft `path` auf `basic` fest, um auf die Überschreibung der Registerkarte „Standard“ zu verweisen (siehe auch den nächsten Schritt). Beispiel:
 
    ```xml
    /apps/demos/components/page/tabs/basic
    ```
 
-1. Erstellen Sie eine Überschreibung der `basic` - `moretitles` Abschnitt am entsprechenden Pfad; Beispiel:
+1. Erstellen Sie eine Überschreibung des Abschnitts `basic` - `moretitles` am entsprechenden Pfad; Beispiel:
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -103,10 +103,10 @@ Wenn Sie Seiteneigenschaften für die Verwendung mit Live Copies konfigurieren, 
 
 ## Beispielkonfiguration von Seiteneigenschaften {#sample-configuration-of-page-properties}
 
-Dieses Beispiel zeigt die „dialog diff“-Technik von [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md), einschließlich der Verwendung von [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Außerdem wird die Verwendung beider `cq:showOnCreate` und `cq:hideOnEdit`.
+Dieses Beispiel zeigt die „dialog diff“-Technik von [Sling Resource Merger](/help/sites-developing/sling-resource-merger.md), einschließlich der Verwendung von [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Es zeigt auch die Verwendung von `cq:showOnCreate` und `cq:hideOnEdit`.
 
 CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
-* [Öffnen Sie das Projekt aem-authoring-extension-page-dialog auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)
+* [Öffnen Sie das Projekt aem-authoring-extension-page-dialog in GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-page-dialog)

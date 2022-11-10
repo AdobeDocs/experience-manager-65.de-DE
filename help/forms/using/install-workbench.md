@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2244'
+source-wordcount: '2242'
 ht-degree: 98%
 
 ---
@@ -190,7 +190,7 @@ Um Workbench zu verwenden, muss eine Instanz von AEM Forms laufen, normalerweise
 
 ### Konfigurieren von Zeitlimiteinstellungen {#configuring-timeout-settings}
 
-Standardmäßig beträgt das Zeitlimit von Workbench, unabhängig von Aktivität bzw. Inaktivität, zwei Stunden. Informationen zum Bearbeiten der Zeitlimiteinstellung finden Sie unter &quot;Konfigurieren von User Management > Erweiterte Systemattribute konfigurieren&quot;in der <a href="https://docs.adobe.com/content/help/de/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Administration Console-Hilfe</a>.
+Standardmäßig beträgt das Zeitlimit von Workbench, unabhängig von Aktivität bzw. Inaktivität, zwei Stunden. Informationen zum Bearbeiten der Zeitlimiteinstellung finden Sie unter &quot;Konfigurieren von User Management > Erweiterte Systemattribute konfigurieren&quot;in der <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Administration Console-Hilfe</a>.
 
 ### Konfigurieren von Workbench, um eine Verbindung über HTTPS herzustellen {#configuring-workbench-to-connect-over-HTTPS}
 

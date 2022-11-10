@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 440aa5a2f4a020a16104f11eaf484a2cf7291e1f
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '2969'
-ht-degree: 95%
+source-wordcount: '2967'
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ ht-degree: 95%
 
 Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Berührungen – Tippen, Berühren und Halten sowie Wischen – mit der Software zu interagieren. Im Gegensatz dazu werden auf herkömmlichen Desktop-Benutzeroberflächen Mausaktionen verwendet, wie z. B. Klicken, Doppelklicken, mit der rechten Maustaste klicken und Bewegen der Maus über ein Objekt.
 
-Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie auf Ihren Touchgeräten (z. B. einem Smartphone oder Tablet) Touchgesten und auf einem traditionellen Desktopgerät Mausaktionen nutzen.
+Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie auf Ihren Touch-Geräten (z. B. einem Smartphone oder Tablet) Touch-Gesten und auf einem traditionellen Desktop-Gerät Mausaktionen nutzen.
 
 ### Erste Schritte {#first-steps}
 
@@ -80,7 +80,7 @@ Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
 
 ### Navigationsfenster {#navigation-panel}
 
-Das Bedienfeld Navigation bietet Zugriff auf die AEM Konsolen:
+Das Navigationsfenster bietet Zugriff auf die AEM-Konsolen:
 
 ![bh-01](assets/bh-01.png)
 
@@ -103,19 +103,19 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
    <td>In dieser Konsole können Sie <a href="/help/communities/sites-console.md">Community-Sites</a> für die <a href="/help/communities/overview.md#engagement-community">Interaktion</a> und <a href="/help/communities/overview.md#enablement-community">Aktivierung</a> erstellen und verwalten.</td>
   </tr>
   <tr>
-   <td>Commerce </td>
+   <td>Commerce</td>
    <td>Damit können Sie Produkte, Produktkataloge und Bestellungen verwalten, die im Zusammenhang mit Ihren <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a>-Websites stehen.</td>
   </tr>
   <tr>
-   <td>Experience Fragments </td>
+   <td>Experience Fragments</td>
    <td>Bei einem <a href="/help/sites-authoring/experience-fragments.md">Experience Fragment</a> handelt es sich um ein einzelnes Erlebnis, das kanalübergreifend wiederverwendet werden kann und Variationen aufweist. So erübrigt sich das wiederholte Kopieren und Einfügen von Erlebnissen oder Teilen von Erlebnissen.</td>
   </tr>
   <tr>
-   <td>Forms</td>
+   <td>Formulare</td>
    <td>In dieser Konsole können Sie <a href="/help/forms/home.md">Formulare und Dokumente</a> erstellen, verwalten und verarbeiten.</td>
   </tr>
   <tr>
-   <td>Personalisierung   </td>
+   <td>Personalisierung</td>
    <td>Diese Konsole bietet ein <a href="/help/sites-authoring/personalization.md">Framework aus Tools für die Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse</a>.</td>
   </tr>
   <tr>
@@ -124,7 +124,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
   </tr>
   <tr>
    <td>Screens</td>
-   <td>Mit <a href="https://docs.adobe.com/content/help/de-DE/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Screens </a>können Sie alle an Kunden gerichteten Bildschirme aller Größenordnungen und an jedem Ort verwalten.</td>
+   <td>Mit <a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=de">Screens </a>können Sie alle an Kunden gerichteten Bildschirme aller Größenordnungen und an jedem Ort verwalten.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -183,11 +183,11 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![](do-not-localize/screen_shot_2018-03-23at103943.png)
 
-   Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Timeline, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+   Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
    ![screen_shot_2018-03-23at104029](assets/screen_shot_2018-03-23at104029.png)
 
-* Breadcrumb
+* Breadcrumbs
 
    ![bh-05](assets/bh-05.png)
 
@@ -201,7 +201,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
 
-   Diese Option ist nur in der Listenansicht verfügbar. Siehe [Listenansicht](#list-view) für weitere Informationen.
+   Diese Option ist nur in der Listenansicht verfügbar. Weitere Informationen dazu finden Sie unter [Listenansicht](#list-view).
 
 * Schaltfläche **Erstellen**
 
@@ -221,9 +221,9 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
 * Navigation über die Tastatur
 
-   Sie haben die Möglichkeit, auf einer Website nur mit der Tastatur zu navigieren. Hierbei wird die standardmäßige Browserfunktionalität der **TAB** key (oder **OPT+TAB**), um zwischen den Elementen auf der Seite zu wechseln, die *fokussierbar*.
+   Sie haben die Möglichkeit, auf einer Website nur mit der Tastatur zu navigieren. Dabei wird die Standard-Browser-Funktionalität der **TAB**-Taste (oder **WAHL+TAB**) verwendet, um zwischen *fokussierbaren* Elementen auf der Seite zu wechseln.
 
-   In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Dies wird bei Ihnen sichtbar *tab* durch die Kopfzeilenoptionen navigieren und die Navigation beschleunigen, indem Sie die Standardelemente in der (Produkt-)Symbolleiste überspringen und direkt zum Hauptinhalt wechseln können.
+   In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Diese wird sichtbar, wenn Sie mit *TAB* durch die Kopfzeilenoptionen blättern, und beschleunigt Ihre Navigation, indem Sie die Standardelemente in der Symbolleiste (des Produkts) überspringen und direkt zum Hauptinhalt wechseln.
 
    ![bh-30](assets/bh-30.png)
 
@@ -341,7 +341,7 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
    <td>Kartenansicht<br /> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Bewegen Sie den Mauszeiger und verwenden Sie dann die Schnellaktion mit Häkchen .</li>
+     <li>Desktop:<br /> Bewegen Sie den Mauszeiger und verwenden Sie dann die Häkchen-Schnellaktion</li>
      <li>Mobilgerät: <br /> Tippen und halten Sie die Karte</li>
     </ul> </td>
    <td>
@@ -442,10 +442,10 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
 * In der Kartenansicht werden Informationskarten für jedes Element auf der aktuellen Ebene angezeigt. Diese bieten u. a. folgende Informationen:
 
-   * eine visuelle Darstellung des Seiteninhalts.
-   * den Seitentitel.
-   * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht).
-   * ob die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist.
+   * eine visuelle Darstellung des Seiteninhalts
+   * den Seitentitel
+   * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht)
+   * ob die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist
    * wann Sie im Zuge eines Workflows eine Aktion ausführen müssen (sofern zutreffend)
 
       * Markierungen, die auf erforderliche Aktionen hinweisen, können mit Einträgen in Ihrem [Posteingang](/help/sites-authoring/inbox.md) verknüpft werden.
@@ -540,9 +540,9 @@ Mit dem seitlichen Bedienfeld der Inhaltsstruktur und einer Listen- oder Kartena
 
 ### Zeitleiste {#timeline}
 
-Die Timeline kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. Öffnen Sie die Zeitleisten-Spalte über die Schienenauswahl:
+Die Zeitleiste kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. So öffnen Sie die Zeitleistenspalte mithilfe der Schienenauswahl:
 
-Die Zeitleisten-Spalte bietet folgende Möglichkeiten:
+Die Zeitleistenspalte bietet folgende Möglichkeiten:
 
 * [Anzeigen verschiedener Ereignisse im Zusammenhang mit einem ausgewählten Element](#timelineviewevents)
 

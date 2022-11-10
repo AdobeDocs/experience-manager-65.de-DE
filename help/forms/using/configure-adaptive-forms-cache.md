@@ -1,7 +1,7 @@
 ---
 title: Cache für adaptive Formulare konfigurieren
 seo-title: Configure adaptive forms cache
-description: 'Der Cache für adaptive Formulare wurde speziell für adaptive Formulare und Dokumente entworfen. Adaptive Formulare und adaptive Dokumente werden zwischengespeichert, um die Zeit zu minimieren, die zum Rendern eines adaptiven Formulars oder Dokuments auf dem Client notwendig ist. '
+description: Der Cache für adaptive Formulare wurde speziell für adaptive Formulare und Dokumente entworfen. Adaptive Formulare und adaptive Dokumente werden zwischengespeichert, um die Zeit zu minimieren, die zum Rendern eines adaptiven Formulars oder Dokuments auf dem Client notwendig ist.
 seo-description: The adaptive forms cache is designed specifically for adaptive forms and documents. It caches adaptive forms and adaptive documents with the objective of reducing the time required to render an adaptive form or document on the client.
 uuid: ba8f79fd-d8dc-4863-bc0d-7c642c45505c
 content-type: reference
@@ -11,10 +11,10 @@ discoiquuid: 9fa6f761-58ca-4cd0-8992-b9337dc1a279
 docset: aem65
 role: Admin
 exl-id: 153986f0-b6ff-4278-8bb6-70c320a4e539
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '893'
-ht-degree: 100%
+source-wordcount: '883'
+ht-degree: 96%
 
 ---
 
@@ -62,10 +62,10 @@ Um die Leistung zu verbessern, können Sie die Dispatcher-Caching-Funktion für 
 
 Führen Sie die folgenden Schritte aus, um den Dispatcher-Cache für adaptive Formulare zu aktivieren und zu konfigurieren:
 
-1. Öffnen Sie die folgende URL für jede Veröffentlichungsinstanz Ihrer Umgebung und [Aktivieren Sie den Flush-Agent für Veröffentlichungsinstanzen Ihrer Umgebung](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
+1. Öffnen Sie die folgende URL für jede Veröffentlichungsinstanz Ihrer Umgebung und [Aktivieren Sie den Flush-Agent für Veröffentlichungsinstanzen Ihrer Umgebung](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance):
    `http://[server]:[port]]/etc/replication/agents.publish/flush.html`
 
-1. [Fügen Sie folgende Zeilen in Ihre Datei dispatcher.any ein](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
+1. [Fügen Sie folgende Zeilen in Ihre Datei dispatcher.any ein](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#automatically-invalidating-cached-files):
 
    ```JSON
       /invalidate
@@ -94,7 +94,7 @@ Führen Sie die folgenden Schritte aus, um den Dispatcher-Cache für adaptive Fo
    * Ein adaptives Formular bleibt im Cache, bis eine aktualisierte Version des Formulars veröffentlicht wird.
 
    * Bei Veröffentlichung einer neueren Version der Ressource, auf die in einem adaptiven Formular verwiesen wird, wird das betroffene adaptive Formular automatisch ungültig. Beim automatischen Verfall referenzierter Ressourcen bestehen jedoch einige Ausnahmen. Um zu erfahren, wie Sie diese Ausnahmen vermeiden können, lesen Sie den Abschnitt [Fehlerbehebung](#troubleshooting).
-1. [Fügen Sie die folgenden Regeln dispatcher.any oder einer benutzerdefinierten Regeldatei hinzu](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Die URLs ohne Cache-Unterstützung werden ausgeschlossen. So zum Beispiel URLs für interaktive Kommunikation.
+1. [Fügen Sie die folgenden Regeln dispatcher.any oder einer benutzerdefinierten Regeldatei hinzu](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#specifying-the-documents-to-cache). Die URLs ohne Cache-Unterstützung werden ausgeschlossen. So zum Beispiel URLs für interaktive Kommunikation.
 
    ```JSON
       /0000 {
@@ -118,7 +118,7 @@ Führen Sie die folgenden Schritte aus, um den Dispatcher-Cache für adaptive Fo
       }
    ```
 
-1. [Fügen Sie folgende Parameter der Liste „URL-Parameter ignorieren“ hinzu](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
+1. [Fügen Sie folgende Parameter der Liste „URL-Parameter ignorieren“ hinzu](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html#ignoring-url-parameters):
 
    ```JSON
       /ignoreUrlParams {
@@ -128,7 +128,7 @@ Führen Sie die folgenden Schritte aus, um den Dispatcher-Cache für adaptive Fo
       }
    ```
 
-Ihre AEM-Umgebung ist so konfiguriert, dass adaptive Formulare im Cache abgelegt werden. Es werden alle Arten von adaptiven Formularen gecached. Falls Sie vor Bereitstellung einer zwischengespeicherten Seite die Zugriffsberechtigungen für diese Seite überprüfen müssen, lesen Sie [Caching von geschütztem Inhalt](https://docs.adobe.com/content/help/de-DE/experience-manager-dispatcher/using/configuring/permissions-cache.html).
+Ihre AEM-Umgebung ist so konfiguriert, dass adaptive Formulare im Cache abgelegt werden. Es werden alle Arten von adaptiven Formularen gecached. Falls Sie vor Bereitstellung einer zwischengespeicherten Seite die Zugriffsberechtigungen für diese Seite überprüfen müssen, lesen Sie [Caching von geschütztem Inhalt](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/permissions-cache.html).
 
 ## Fehlerbehebung {#troubleshooting}
 

@@ -1,10 +1,10 @@
 ---
-title: Erstellen barrierefreier Inhalte für Adobe Experience Manager (in Übereinstimmung mit WCAG 2.1)
-description: Verwenden Sie AEM, um Web-Inhalte für Menschen mit Behinderungen barrierefrei und nutzbar zu machen.
+title: Erstellen barrierefrei zugänglicher Inhalte für Adobe Experience Manager (in Übereinstimmung mit den WCAG 2.1-Richtlinien)
+description: Verwenden Sie AEM, um Web-Inhalte für Personen mit Behinderungen zugänglich und nutzbar zu machen.
 exl-id: 2145d761-f51d-482b-a0e7-ef7500c4872f
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
-source-wordcount: '13956'
+source-wordcount: '13950'
 ht-degree: 99%
 
 ---
@@ -24,7 +24,7 @@ Zur Einführung bietet das Konsortium eine Reihe von Abschnitten und unterstütz
 Siehe auch:
 * [Kurzanleitung zu WCAG 2.1](/help/managing/qg-wcag.md)
 * [Konformitätsberichte zur Barrierefreiheit für Adobe-Lösungen](https://www.adobe.com/accessibility/compliance.html).
-* [Konfigurieren des Rich-Text-Editors für die Erstellung barrierefreier Inhalte](/help/sites-administering/rte-accessible-content.md)
+* [Konfigurieren des Rich-Text-Editors (RTE) für das Erstellen von barrierefrei zugänglichen Inhalten](/help/sites-administering/rte-accessible-content.md)
 
 Diese Richtlinien sind in drei Konformitäts-Level abgestuft: Level A (niedrigster), Level AA und Level AAA (höchster). Die Levels sind kurz definiert wie folgt:
 
@@ -66,11 +66,11 @@ Ein nützlicher weiterer Vorteil besteht darin, dass es durch Textalternativen m
 
 #### Erfüllen: Nichttextlicher Inhalt (1.1.1) {#how-to-meet-non-text-content}
 
-Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige Textalternative für die Grafik bereitzustellen. Dies kann im Feld **Alternativtext** erfolgen. Siehe zum Beispiel die Kernkomponente **[Bild](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/image.html)**.
+Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige Textalternative für die Grafik bereitzustellen. Dies kann im Feld **Alternativtext** erfolgen. Siehe zum Beispiel die Kernkomponente **[Bild](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de)**.
 
 >[!NOTE]
 >
->Einige vordefinierte Kernkomponenten, wie **[Karussell](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/carousel.html)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://docs.adobe.com/content/help/de-DE/experience-manager-core-components/using/components/carousel.html#accessibility-tab)**) für die gesamte Komponente gibt.
+>Einige vordefinierte Kernkomponenten, wie **[Karussell](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de)**, bieten kein Feld für den **Alternativtext** zum Hinzufügen von alternativen Textbeschreibungen zu einzelnen Bildern, obwohl es das Feld **Beschriftung** (Registerkarte **[Barrierefreiheit](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de#accessibility-tab)**) für die gesamte Komponente gibt.
 >
 >Wenn Sie Versionen davon für Ihre AEM-Instanz implementieren, muss Ihr Entwickler-Team diese Komponenten so konfigurieren, dass das `alt`-Attribut unterstützt wird, damit Autoren es dem Inhalt hinzufügen können (siehe [Hinzufügen von Support für weitere HTML-Elemente und -Attribute](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
@@ -333,7 +333,7 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
 
    >[!NOTE]
    >
-   >Diese Elemente und Attribute sind standardmäßig nicht direkt verfügbar, doch der Systemadministrator kann Support für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen (siehe [Hinzufügen von Support für zusätzliche HTML-Elemente und -Attribute](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
+   >Diese Elemente und Attribute sind standardmäßig nicht direkt verfügbar, doch die oder der Systemadmin kann Support für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen (siehe [Hinzufügen von Support für zusätzliche HTML-Elemente und -Attribute](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes).
 
    So öffnen Sie das Dialogfeld **Tabelle**, in dem Sie die Registerkarte **Tabelleneigenschaften** auswählen können:
 
@@ -793,7 +793,7 @@ Dieses Erfolgskriterium ist für alle Benutzer hilfreich - unabhängig von etwai
 
 #### Erfüllen - Seite mit Titel versehen (2.4.2) {#how-to-meet-page-titled}
 
-Wenn Sie im AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt und den Zweck der Seite (insbesondere alle einzigartigen Aspekte) so beschreibt, dass Besucher schnell feststellen können, ob der Inhalt für ihre Anforderungen relevant ist oder nicht.
+Wenn Sie in AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt und den Zweck der Seite (insbesondere alle einzigartigen Aspekte) so beschreibt, dass Besucher schnell feststellen können, ob der Inhalt für ihre Anforderungen relevant ist oder nicht.
 
 Sie können während der Bearbeitung einer Seite auch den Seitentitel ändern. Öffnen Sie dazu **Seiteninformationen** > **Eigenschaften**.
 
