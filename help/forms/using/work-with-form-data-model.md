@@ -10,10 +10,10 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
 workflow-type: tm+mt
-source-wordcount: '4128'
-ht-degree: 100%
+source-wordcount: '4165'
+ht-degree: 99%
 
 ---
 
@@ -50,6 +50,10 @@ Hinzufügen von Datenmodellobjekten und Services:
    ![selected-objects](assets/selected-objects.png)
 
    Ausgewählte Datenmodellobjekte und Services
+
+   >[!NOTE]
+   >
+   > Wenn Ihr Forms-Datenmodell ein Objekt enthält, das ein reserviertes Schlüsselwort für Ihre relationale Datenbank ist, kann dies zu Problemen beim Hinzufügen, Aktualisieren oder Abrufen von Daten führen. Vermeiden Sie daher die Verwendung solcher Objekte in Ihrem Formulardatenmodell.
 
    Auf der Registerkarte Modell wird eine grafische Darstellung aller Datenmodellobjekte und ihrer Eigenschaften angezeigt, die zum Formulardatenmodell hinzugefügt wurden. Jedes Datenmodellobjekt wird durch ein Feld im Formulardatenmodell dargestellt.
 
@@ -200,9 +204,9 @@ Verwenden Sie das Anforderungsattribut, um die verknüpften Eigenschaften aus de
    >[!NOTE]
    >
    >* Wenn Sie eine statische Vorlage verwenden, überlagern Sie head.jsp unter:
-   >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+      >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    >* Wenn Sie eine bearbeitbare Vorlage verwenden, überlagern Sie die Datei aftemplatedpage.jsp unter:
-   >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
+      >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 
 1. Legen Sie [!DNL paramMap] für das Anforderungsattribut fest. Fügen Sie beispielsweise folgenden Code in die JSP-Datei im Ordner „Apps“ ein:
