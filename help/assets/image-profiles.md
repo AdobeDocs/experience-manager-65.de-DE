@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 3b869153e0fdee08df2a4aaf73fe3ce9fbebaad7
+source-git-commit: 008a27c6a1c818a96a24dfcc7f5650409d31e7c2
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2835'
 ht-degree: 99%
 
 ---
@@ -23,16 +23,16 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 
 >[!IMPORTANT]
 >
->・ Smartes Zuschneiden ist nur im Modus Dynamic Media - Scene7 verfügbar.
+>• Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
 • Bildprofile können nicht auf PDF-, animierte GIF- oder INDD-Dateien (Adobe InDesign) angewendet werden.
 
 ## Optionen für das Zuschneiden {#crop-options}
 
 Wenn Sie smartes Zuschneiden für Bilder implementieren, empfiehlt Adobe die folgende Best Practice und erzwingt die folgende Beschränkung:
 
-| Begrenzungstyp | Best Practice | Grenzwert | Änderung des Grenzwerts am 31. Dezember 2022 |
-| --- | --- | --- | --- |
-| Anzahl der smarten Zuschnitte pro Bild | 5 | 100 | 20 |
+| Begrenzungstyp | Best Practice | Erzwungene Begrenzung |
+| --- | --- | --- |
+| Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |
 
 Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md).
 
@@ -160,7 +160,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 ## Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern eines einzelnen Bildes {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
-Smartes Zuschneiden ist nur im Modus Dynamic Media - Scene7 verfügbar.
+・ Smartes Zuschneiden ist nur im Modus Dynamic Media - Scene7 verfügbar.
 
 Sie können das Zuschnittsfenster eines Bildes manuell neu ausrichten oder die Größe ändern, um den Fokus präziser zu bestimmen.
 
@@ -188,6 +188,9 @@ Siehe auch [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern me
 1. Wählen Sie in der oberen rechten Ecke der Seite **[!UICONTROL Speichern]** und anschließend **[!UICONTROL Schließen]** aus, um zum Asset-Ordner zurückzukehren.
 
 ## Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern mehrerer Bilder {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+
+>[!IMPORTANT]
+・ Smartes Zuschneiden ist nur im Modus Dynamic Media - Scene7 verfügbar.
 
 Nachdem Sie ein Bildprofil (mit der Funktion „Smartes Zuschneiden“) auf einen Ordner angewendet haben, wird der Zuschnitt auf alle Bilder in diesem Ordner angewendet. Sie können das Zuschnittsfenster in mehreren Bildern *manuell* neu ausrichten oder die Größe verändern, um den Fokus präziser zu bestimmen.
 
