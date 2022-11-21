@@ -1,5 +1,5 @@
 ---
-title: '"Schulung: Formulardatenmodell erstellen "'
+title: "Schulung: Formulardatenmodell erstellen "
 seo-title: Create Form Data Model Tutorial
 description: Erstellen des Formulardatenmodells
 seo-description: Create form data model
@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c3178eefb5aca3afea2f3df8381b52461247d6f3
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 99%
+source-wordcount: '1518'
+ht-degree: 93%
 
 ---
 
@@ -57,6 +57,7 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
 1. Installieren Sie den JDBC-Treiber für die [!DNL MySQL]-Datenbank als OSGi-Bundle:
 
+   1. Download [[!DNL MySQL] OSGi Bundle des JDBC-Treibers](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
    1. Melden Sie sich bei der AEM [!DNL Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Web-Konsole-Bundles. Die Standard-URL lautet [http://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Tippen Sie auf **[!UICONTROL Installieren/Aktualisieren]**. Ein Dialogfeld [!UICONTROL Pakete hochladen/installieren] wird angezeigt.
@@ -73,8 +74,18 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
       * **Name der DataSource-Diensteigenschaft**: Geben Sie den Namen der Diensteigenschaft an, die den DataSource-Namen enthält. Er wird beim Registrieren der Datenquelleninstanz als OSGi-Dienst angegeben. Zum Beispiel: **datasource.name**.
       * **JDBC-Treiberklasse**: Geben Sie den Java-Klassennamen des JDBC-Treibers an. Geben Sie für die [!DNL MySQL]-Datenbank **com.mysql.jdbc.Driver** an.
       * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. Für eine [!DNL MySQL]-Datenbank, die auf Port 3306 und nach dem Schema WeRetail ausgeführt wird, lautet die URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+
+      >[!NOTE]
+      >
+      > Wenn die [!DNL MySQL] -Datenbank hinter einer Firewall befindet, ist der Datenbank-Hostname kein öffentliches DNS. Die IP-Adresse der Datenbank muss im */etc/hosts* -Datei des AEM-Hostcomputers.
+
       * **Benutzername:** Benutzername der Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
       * **Kennwort:** Kennwort für die Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
+
+      >[!NOTE]
+      >
+      >AEM Forms unterstützt keine NT-Authentifizierung für [!DNL MySQL]. Rufen Sie AEM Webkonsole auf unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen Sie nach &quot;Apache Sling Connection Pooled Data asource&quot;. Legen Sie für die Eigenschaft &quot;JDBC connection URI&quot; den Wert &quot;integratedSecurity&quot;auf &quot;False&quot;fest und verwenden Sie den erstellten Benutzernamen und das Kennwort für die Verbindung mit [!DNL MySQL] Datenbank.
+
       * **Test on Borrow**: Aktivieren Sie die Option **[!UICONTROL Test on Borrow]**.
       * **Test on Return:** Aktivieren Sie die Option **[!UICONTROL Test on Return.]**
       * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **select &#42; von Kundendetails**.
@@ -85,6 +96,8 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
          Eine Konfiguration ähnlich der folgenden wird erstellt.
 
          ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
+
+
 
 ## Schritt 2: Erstellen eines Formulardatenmodells {#create-fdm}
 
