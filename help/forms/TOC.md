@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: 55e9344c088a38bc4c9f916a13c310a029b3b2f4
+source-git-commit: 43a1cff0d7c2fe1d25e41cff3d02d1a55e6792c5
 workflow-type: tm+mt
-source-wordcount: '3819'
+source-wordcount: '3824'
 ht-degree: 95%
 
 ---
@@ -686,6 +686,7 @@ ht-degree: 95%
    + [Zusätzliche Schritte zum Abrufen einer E-Mail mit Anhang für die adaptive Forms on JEE-Version](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
    + [Konvertieren von Word- oder Excel-Dateien in PDF unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
    + [XFA-basierte PDF forms können nicht in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer oder Apple Safari geöffnet werden.](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
+   + [CRX-Repository kann nicht wiederhergestellt werden](/help/forms/using/restore-crx-repository.md)
 + Alte Dokumentation {#legacy-documentation}
    + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)
    + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](developing/compressing-decompressing-custom-dsc.md)
