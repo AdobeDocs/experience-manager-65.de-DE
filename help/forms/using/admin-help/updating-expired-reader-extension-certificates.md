@@ -2,9 +2,9 @@
 title: Ablauf und Auswirkung von Zertifikaten für Reader Extensions
 description: Ablauf und Auswirkung von Zertifikaten für Reader Extensions
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: bbc8fdf2eb7dd35600e2e2a87550e9de557f0eb0
+source-git-commit: f35a35577f06686558bb1277b0d9bb17f6f0b7bf
 workflow-type: tm+mt
-source-wordcount: '1109'
+source-wordcount: '1114'
 ht-degree: 4%
 
 ---
@@ -26,9 +26,8 @@ Alle vor dem 7. Januar 2023 erstellten PDF-Dokumente, einschließlich der von Ih
 
 A. Adobe Root CA ist die Zertifizierungsstelle, von der aus ein Acrobat Reader Extensions-Zertifikat ausgestellt wird. Am 7. Januar 2023 laufen die &quot;Adobe Root CA&quot;und alle von ihr ausgestellten Zertifikate ab.
 
-**F. Es gab eine frühere Mitteilung der Adobe über die Gültigkeit von Zertifikaten und die Auswirkungen auf die Verwendung/Öffnung von PDF? Sollte diese Mitteilung ignoriert werden?**
-A. Basierend auf einer Neubewertung der Lage werden alle PDF-Unterlagen, die mit Produktionszertifikaten ausgeweitet wurden, die vor dem 7. Januar 2023 vom alten &quot;Stammverzeichnis der Adobe&quot;ausgestellt wurden, nach dem 7. Januar 2023 unverändert weitergeführt. Wenn Sie Ihre PDF bereits aktualisiert haben, wird sich das Erlebnis nicht ändern
-
+**F. Es gab eine frühere Mitteilung der Adobe über den Ablauf von Zertifikaten und die Auswirkungen auf die Verwendung/das Öffnen von PDF-Dokumenten. Sollte diese Mitteilung ignoriert werden?**
+A. Basierend auf der Neubewertung der Lage werden alle PDF-Unterlagen, die mit Produktionsbescheinigungen ausgeweitet wurden, die vor dem 7. Januar 2023 vom alten &quot;Stammverzeichnis der Adobe&quot; ausgestellt wurden, nach dem 7. Januar 2023 unverändert weitergeführt. Wenn Sie Ihre PDF bereits aktualisiert haben, wird sich das Erlebnis nicht ändern
 
 **Frage: An wen kann ich mich wenden, wenn ich weitere Fragen habe?**
 
@@ -44,11 +43,11 @@ A. In der Beschreibung der neuen Acrobat Reader Extensions-Zertifikate werden di
 
 **F. Wie erhalte ich die neuesten Zertifikate?**
 
-A. Alle berechtigten Forms-Kunden (mit aktiver Lizenz) können die neuen Zertifikate (Zertifikate, die auf &quot;Adobe Root CA G2&quot;basieren) aus dem [Adobe Licensing-Website](https://licensing.adobe.com/). Wenn Sie das Zertifikat auf der Adobe Licensing-Website nicht finden können, wenden Sie sich an [Adobe-Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) oder ein Support-Ticket erstellen.
+A. Alle berechtigten Forms-Kunden (mit aktiver Lizenz) können die neuen Zertifikate (Zertifikate, die auf &quot;Adobe Root CA G2&quot;basieren) von der [Adobe Licensing-Website](https://licensing.adobe.com/). Wenn Sie das Zertifikat auf der Adobe Licensing-Website nicht finden können, wenden Sie sich an [Adobe-Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) oder ein Support-Ticket erstellen.
 
-**F. Funktionieren meine PDF-Dokumente, die mit Zertifikaten erweitert wurden, die von &quot;Adobe Root CA&quot; (alte Zertifizierungsstelle) ausgestellt wurden, nach dem 7. Januar 2023?**
+**F. Funktionieren meine PDF-Dokumente, die mit Zertifikaten aus der &quot;Adobe Root CA&quot; (der alten Zertifizierungsstelle) erweitert wurden, auch nach dem 7. Januar 2023?**
 
-A. Ja, alle PDF-Dokumente, die mit vor dem 7. Januar 2023 von der &quot;Adobe Root CA&quot; (alte Zertifizierungsstelle) ausgestellten Produktionsbescheinigungen erweitert wurden, funktionieren auch nach dem 7. Januar 2023 ohne Änderung. PDF-Dokumente, die mit Bewertungszertifikaten erweitert wurden, funktionieren nach dem Ablaufdatum nicht mehr.
+A. Ja, alle PDF-Dokumente, die mit vor dem 7. Januar 2023 von der &quot;Adobe Root CA&quot; (der alten Zertifizierungsstelle) ausgestellten Produktionszertifikaten erweitert wurden, funktionieren auch nach dem 7. Januar 2023 ohne Änderung. PDF-Dokumente, die mit Bewertungszertifikaten erweitert wurden, funktionieren nach dem Ablaufdatum nicht mehr.
 
 **F. Welche Version von Adobe Acrobat Reader ist erforderlich, um weiterhin PDF-Dokumente zu verwenden, die mit Zertifikaten erweitert wurden, die von der &quot;Adobe Root CA&quot; (der alten Zertifizierungsstelle) ausgestellt wurden?**
 
