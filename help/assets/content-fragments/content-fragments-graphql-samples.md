@@ -3,10 +3,10 @@ title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 1a3d5a6b3b4f7af67d6a62cdaab484daa536cb63
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '1416'
-ht-degree: 100%
+source-wordcount: '1530'
+ht-degree: 93%
 
 ---
 
@@ -48,7 +48,7 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 
 ### Beispielabfrage – Alle verfügbaren Schemata und Datentypen {#sample-all-schemes-datatypes}
 
-Dadurch werden alle `types` für alle verfügbaren Schemas zurückgegeben.
+Dadurch werden alle `types` für alle verfügbaren Schemata zurückgegeben.
 
 **Beispielabfrage**
 
@@ -348,6 +348,58 @@ Wenn Sie eine neue Variante mit dem Namen „Berlin Centre“ (`berlin_centre`) 
           "categories": [
             "city:capital",
             "city:emea"
+          ]
+        }
+      ]
+    }
+  }
+}
+```
+
+### Beispielabfrage – Namen aller Städte Als Stadtunterbrechungen markiert {#sample-names-all-cities-tagged-city-breaks}
+
+Wenn Sie:
+
+* eine Vielzahl von Tags erstellen, die `Tourism` : `Business`, `City Break`, `Holiday`
+* und weisen sie der Übergeordneten Variante verschiedener `City` Instanzen
+
+Anschließend können Sie eine Abfrage verwenden, um Details zur `name` und `tags`aller Einträge, die im `city`Schema.
+
+**Beispielabfrage**
+
+```xml
+query {
+  cityList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "tourism:city-break", _operator: CONTAINS}]}}
+  ){
+    items {
+      name,
+      _tags
+    }
+  }
+}
+```
+
+**Beispielergebnisse**
+
+```xml
+{
+  "data": {
+    "cityList": {
+      "items": [
+        {
+          "name": "Berlin",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
+          ]
+        },
+        {
+          "name": "Zurich",
+          "_tags": [
+            "tourism:city-break",
+            "tourism:business"
           ]
         }
       ]
@@ -1483,6 +1535,62 @@ Diese Abfrage untersucht:
 }
 ```
 
+### Beispielabfrage für mehrere Inhaltsfragmente und deren Varianten eines bestimmten Modells {#sample-wknd-multiple-fragment-variations-given-model}
+
+Diese Abfrage untersucht:
+
+* für Inhaltsfragmente vom Typ `article` und alle Varianten
+
+**Beispielabfrage**
+
+```xml
+query {
+  articleList(
+    includeVariations: true  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
+### Beispielabfrage für Inhaltsfragmentvarianten eines bestimmten Modells, an das ein bestimmtes Tag angehängt ist{#sample-wknd-fragment-variations-given-model-specific-tag}
+
+Diese Abfrage untersucht:
+
+* für Inhaltsfragmente vom Typ `article` mit einer oder mehreren Varianten mit dem Tag `WKND : Activity / Hiking`
+
+**Beispielabfrage**
+
+```xml
+{
+  articleList(
+    includeVariations: true,
+    filter: {_tags: {_expressions: [{value: "wknd:activity/hiking", _operator: CONTAINS}]}}
+  ){
+    items {
+      _variation
+      _path
+      _tags
+      _metadata {
+        stringArrayMetadata {
+          name
+          value
+        }
+      }
+    }
+  }
+}
+```
+
 ### Beispielabfrage für mehrere Inhaltsfragmente eines bestimmten Gebietsschemas {#sample-wknd-multiple-fragments-given-locale}
 
 Diese Abfrage untersucht:
@@ -1512,7 +1620,7 @@ Diese Abfrage untersucht:
 
 Die Abfragen basieren auf der folgenden Struktur, die Folgendes verwendet:
 
-* Ein oder mehrere [Beispielmodelle für Inhaltsfragmente](#sample-content-fragment-models-schemas) bilden die Grundlage für die GraphQL-Schemas
+* Ein oder mehrere [Beispielmodelle für Inhaltsfragmente](#sample-content-fragment-models-schemas) bilden die Grundlage für die GraphQL-Schemata
 
 * [Beispielinhaltsfragmente](#sample-content-fragments) basierend auf den oben genannten Modellen
 

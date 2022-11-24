@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie die Metadateneigenschaften für Inhaltsfragme
 feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 84%
+source-wordcount: '222'
+ht-degree: 77%
 
 ---
 
@@ -24,7 +24,6 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
 
    * Wählen Sie [**Eigenschaften anzeigen** aus, um das Dialogfeld zu öffnen](/help/assets/manage-assets.md#editing-properties). Sobald es zur Anzeige geöffnet wurde, können Sie auch Bearbeitungen vornehmen.
    * Öffnen Sie das Inhaltsfragment zum Bearbeiten und wählen Sie anschließend im seitlichen Bedienfeld **Metadaten** aus.
-
    ![Metadaten](assets/cfm-metadata-01.png)
 
 3. Auf der Registerkarte **Allgemein** können Sie die folgenden Optionen anzeigen oder bearbeiten:
@@ -36,5 +35,10 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
    * **Tags**
       * [Tags](/help/sites-authoring/tags.md) sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
 Beispielsweise können Sie relevante Fragmente als &quot;Weihnachtsstart&quot;taggen, um nur diese als Teilmenge durchsuchen zu können oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
-   * Erstellt (nur Anzeige)
+      >[!NOTE]
+      >
+      >**Tags** kann auch hinzugefügt werden, wenn [Erstellen von Varianteninhalten](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) und wann [Erstellen von Varianten](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+
+   * **Erstellt** (nur Anzeige)
+   Beispiel:
    ![Metadaten](assets/cfm-metadata-02.png)

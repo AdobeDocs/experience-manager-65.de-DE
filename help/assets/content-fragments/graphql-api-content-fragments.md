@@ -1,18 +1,18 @@
 ---
 title: AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten
-description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) mit der AEM GraphQL-API für die Bereitstellung Headless Content verwenden.
+description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 6f3f88ea0f07c97fa8d7ff3bdd1c89114d12a8a1
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '3986'
-ht-degree: 96%
+source-wordcount: '4089'
+ht-degree: 97%
 
 ---
 
 # AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten {#graphql-api-for-use-with-content-fragments}
 
-Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) mit der AEM GraphQL-API für die Bereitstellung Headless Content verwenden.
+Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) mit der AEM GraphQL-API für die Headless-Bereitstellung von Inhalten verwenden.
 
 Die mit Inhaltsfragmenten verwendete GraphQL-API von AEM basiert stark auf der standardmäßigen Open-Source-GraphQL-API.
 
@@ -24,7 +24,7 @@ Die Verwendung der GraphQL-API in AEM ermöglicht die effiziente Bereitstellung 
 
 >[!NOTE]
 >
->GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) verwendet:
+>GraphQL wird derzeit in zwei (separaten) Szenarios in Adobe Experience Manager (AEM) verwendet:
 >
 >* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce/cif/integrating/magento.md).
 >* AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen bereit.
@@ -78,15 +78,15 @@ GraphQL verwendet Folgendes:
 
 * **[Abfragen](https://graphql.org/learn/queries/)**
 
-* **[Schemas und Typen](https://graphql.org/learn/schema/)**:
+* **[Schemata und Typen](https://graphql.org/learn/schema/)**:
 
-   * Schemas werden von AEM basierend auf den Inhaltsfragmentmodellen generiert.
-   * GraphQL stellt mithilfe Ihrer Schemas die Typen und Vorgänge dar, die für die GraphQL-Implementierung für AEM zulässig sind.
+   * Schemata werden von AEM basierend auf den Inhaltsfragmentmodellen generiert.
+   * GraphQL stellt mithilfe Ihrer Schemata die Typen und Vorgänge dar, die für die GraphQL-Implementierung für AEM zulässig sind.
 
 * **[Felder](https://graphql.org/learn/queries/#fields)**
 
 * **[GraphQL-Endpunkt](#graphql-aem-endpoint)**
-   * Der Pfad in AEM, der auf GraphQL-Abfragen antwortet und Zugriff auf die GraphQL-Schemas bietet.
+   * Der Pfad in AEM, der auf GraphQL-Abfragen antwortet und Zugriff auf die GraphQL-Schemata bietet.
 
    * Weitere Informationen finden Sie unter [Aktivieren des GraphQL-Endpunkts](#enabling-graphql-endpoint).
 
@@ -215,11 +215,11 @@ Die GraphiQL-Schnittstelle kann mit einem dedizierten Paket auf AEM installiert 
 
 >[!NOTE]
 >
->Das verfügbare Paket ist vollständig mit AEM 6.5.10.0 und AEM as a Cloud Service.
+>Das verfügbare Paket ist vollständig mit AEM 6.5.10.0 und AEM as a Cloud Service kompatibel.
 
 ## Anwendungsfälle für Autoren- und Veröffentlichungsumgebungen {#use-cases-author-publish-environments}
 
-Die Anwendungsfälle können vom Typ AEM Umgebung abhängen:
+Die Anwendungsfälle können vom Typ der AEM-Umgebung abhängen:
 
 * Veröffentlichungsumgebung; wird verwendet, um:
    * Daten für das JS-Programm (Standardanwendungsfall) abzufragen
@@ -239,11 +239,11 @@ GraphQL ist eine stark typisierte API, was bedeutet, dass die Daten klar struktu
 
 Die GraphQL-Spezifikation enthält eine Reihe von Richtlinien zum Erstellen einer robusten API zum Abfragen von Daten in einer bestimmten Instanz. Dazu muss ein Client das [Schema](#schema-generation) abrufen, das alle für eine Abfrage erforderlichen Typen enthält.
 
-Bei Inhaltsfragmenten basieren die GraphQL-Schemas (Struktur und Typen) auf **aktivierten** [Inhaltsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) und deren Datentypen.
+Bei Inhaltsfragmenten basieren die GraphQL-Schemata (Struktur und Typen) auf **aktivierten** [Inhaltsfragmentmodellen](/help/assets/content-fragments/content-fragments-models.md) und deren Datentypen.
 
 >[!CAUTION]
 >
->Alle GraphQL-Schemas (abgeleitet von Inhaltsfragmentmodellen, die **aktiviert** wurden) können über den GraphQL-Endpunkt gelesen werden.
+>Alle GraphQL-Schemata (abgeleitet von Inhaltsfragmentmodellen, die **aktiviert** wurden) können über den GraphQL-Endpunkt gelesen werden.
 >
 >Das bedeutet, dass Sie sicherstellen müssen, dass keine vertraulichen Daten verfügbar sind, da sie auf diese Weise an die Öffentlichkeit gelangen könnten. Dazu gehören beispielsweise Informationen, die als Feldnamen in der Modelldefinition vorhanden sein könnten.
 
@@ -380,7 +380,7 @@ Da Metadaten über den Schema-Editor generiert werden und daher keine bestimmte 
 | `floatMetadata:[FloatMetadata]!` |
 | `floatArrayMetadata:[FloatArrayMetadata]!` |
 | `booleanMetadata:[BooleanMetadata]!` |
-| `booleanArrayMetadata:[booleanArrayMetadata]!`  |
+| `booleanArrayMetadata:[booleanArrayMetadata]!` |
 | `calendarMetadata:[CalendarMetadata]!` |
 | `calendarArrayMetadata:[CalendarArrayMetadata]!` |
 
@@ -435,7 +435,7 @@ Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit ein
 
 >[!NOTE]
 >
->Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden ist, wird die Übergeordnete Variante als (Fallback-)Standard zurückgegeben.
+>Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, wird standardmäßig die Master-Variante (als Fallback) zurückgegeben.
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -543,6 +543,11 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
    * Fügen Sie `List` zum Modellnamen hinzu, z. B. `cityList`
    * Siehe [Beispielabfrage – Alle Informationen zu allen Städten](#sample-all-information-all-cities)
 
+* Der Filter `includeVariations` ist im `List` Abfragetyp.  Um Inhaltsfragmentvarianten in den Abfrageergebnissen abzurufen, muss die `includeVariations` Filter muss auf `true`.
+
+   >[!CAUTION]
+   >Der Filter `includeVariations` kann nicht zusammen mit dem systemgenerierten Feld verwendet werden `_variation`.
+
 * Wenn Sie ein logisches ODER verwenden möchten:
    * Verwenden Sie ` _logOp: OR`
    * [Beispielabfrage – Alle Personen mit dem Namen „Jobs“ oder „Smith“](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-persons-jobs-smith)
@@ -570,9 +575,20 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
 
          >[!NOTE]
          >
-         >Wenn die angegebene Variante für ein Inhaltsfragment nicht vorhanden ist, wird die Übergeordnete Variante als (Fallback-)Standard zurückgegeben.
+         >Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, wird standardmäßig die Master-Variante (als Fallback) zurückgegeben.
+
+         >[!CAUTION]
+         >Das systemgenerierte Feld `_variation` kann nicht zusammen mit dem Filter verwendet werden `includeVariations`.
 
          * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
+      * `_tags` : um die IDs von Inhaltsfragmenten oder Varianten anzuzeigen, die Tags enthalten; Dies ist ein Array von `cq:tags` Kennungen.
+
+         * Siehe [Beispielabfrage - Namen aller Städte, die als Stadtumbrüche gekennzeichnet sind](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+         * Siehe [Beispielabfrage für Inhaltsfragmentvarianten eines bestimmten Modells, an das ein bestimmtes Tag angehängt ist](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+
+         >[!NOTE]
+         >
+         >Tags können auch durch Auflisten der Metadaten eines Inhaltsfragments abgefragt werden.
    * Und Operationen:
 
       * `_operator`: bestimmte Operatoren anwenden; `EQUALS`, `EQUALS_NOT`, `GREATER_EQUAL`, `LOWER`, `CONTAINS`, `STARTS_WITH`
@@ -582,6 +598,8 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
          * Siehe [Beispielabfrage – Filtern eines Arrays nach einem Element, das mindestens einmal vorkommen muss](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-array-item-occur-at-least-once)
       * `_ignoreCase`: Groß-/Kleinschreibung bei der Abfrage ignorieren
          * Siehe [Beispielabfrage – Alle Städte mit SAN im Namen, unabhängig von der Groß-/Kleinschreibung](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-all-cities-san-ignore-case)
+
+
 
 
 
@@ -915,7 +933,7 @@ Um beispielsweise Zugriff auf Anfragen mit dem Referrer `my.domain` zu gewähren
 
 >[!CAUTION]
 >
->Alle GraphQL-[Schemas](#schema-generation) (abgeleitet von Inhaltsfragmentmodellen, die **aktiviert** wurden) können über den GraphQL-Endpunkt gelesen werden.
+>Alle GraphQL-[Schemata](#schema-generation) (abgeleitet von Inhaltsfragmentmodellen, die **aktiviert** wurden) können über den GraphQL-Endpunkt gelesen werden.
 >
 >Das bedeutet, dass Sie sicherstellen müssen, dass keine vertraulichen Daten verfügbar sind, da sie auf diese Weise an die Öffentlichkeit gelangen könnten. Dazu gehören beispielsweise Informationen, die als Feldnamen in der Modelldefinition vorhanden sein könnten.
 

@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Varianten Ihre Headless-Inhalte in AEM noch flexi
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
+source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
-source-wordcount: '2256'
-ht-degree: 99%
+source-wordcount: '2426'
+ht-degree: 91%
 
 ---
 
@@ -20,7 +20,7 @@ In der Registerkarte **Varianten** haben Sie folgende Möglichkeiten:
 * [Eingeben des Inhalts](#authoring-your-content) für das Fragment,
 * [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts,
 
-Ausführen einer Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp; z. B.:
+Führen Sie je nach bearbeitetem Datentyp eine Reihe weiterer Aktionen durch. Beispiel:
 
 * [Einfügen von visuellen Assets in Ihr Fragment](#inserting-assets-into-your-fragment) (Bilder)
 
@@ -40,24 +40,39 @@ Ausführen einer Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp;
 
 ## Verfassen Ihres Inhalts {#authoring-your-content}
 
-Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **Varianten** standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält verschiedene Felder mit verschiedenen Datentypen, die im Inhaltsmodell definiert wurden.
+Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **Varianten** standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält verschiedene Felder verschiedener Datentypen, die im Inhaltsmodell definiert wurden.
 
 Beispiel:
 
 ![Vollbild-Editor](assets/cfm-variations-02.png)
+
+
+
 Sie haben folgende Möglichkeiten:
 
-* Nehmen Sie Ihre Änderungen direkt in der Registerkarte **Varianten** vor
+* Bearbeiten Sie Ihre Inhalte direkt im **Varianten** Registerkarte; Jeder Datentyp bietet verschiedene Bearbeitungsoptionen, z. B.:
 
-   * Jeder Datentyp bietet verschiedene Bearbeitungsoptionen.
+   * Für **mehrzeilige Textfelder** können Sie auch den [Vollbild-Editor](#full-screen-editor) öffnen, um:
 
-* Für **mehrzeilige Textfelder** können Sie auch den [Vollbild-Editor](#full-screen-editor) öffnen, um:
+      * das [Format](#formats) auszuwählen
+      * weitere Bearbeitungsoptionen anzuzeigen ([Rich-Text](#rich-text)-Format)
+      * auf eine Reihe von [Aktionen](#actions) zuzugreifen
+   * Für die Felder **Fragmentreferenz** kann je nach Modelldefinition die Option [Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment) verfügbar sein.
 
-   * das [Format](#formats) auszuwählen
-   * weitere Bearbeitungsoptionen anzuzeigen ([Rich-Text](#rich-text)-Format)
-   * auf eine Reihe von [Aktionen](#actions) zuzugreifen
 
-* Für die Felder **Fragmentreferenz** kann je nach Modelldefinition die Option **[Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment)** verfügbar sein.
+* Zuweisen **Tags** zur aktuellen Änderung; die Tags hinzugefügt, aktualisiert und entfernt werden können
+
+   * [Tags](/help/sites-authoring/tags.md) sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
+
+      * Bei der Suche nach einem Tag wird das Fragment zurückgegeben, wobei die getaggte Variante hervorgehoben ist.
+      * Varianten-Tags können auch verwendet werden, um Varianten für ein bestimmtes CDN-Profil (Content Delivery Network) (für CDN-Caching) zu gruppieren, anstatt den Variantennamen zu verwenden.
+
+      Beispielsweise können Sie relevante Fragmente als &quot;Weihnachtsstart&quot;taggen, um nur diese als Teilmenge durchsuchen zu können oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
+   >[!NOTE]
+   >
+   >**Tags** kann auch hinzugefügt werden (zum **Übergeordnet** -Variante) als Teil der [Metadaten](/help/assets/content-fragments/content-fragments-metadata.md)
+
+* [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts.
 
 ### Vollbild-Editor {#full-screen-editor}
 
@@ -328,7 +343,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 
    Nachdem Sie das gewünschte Asset gefunden haben, wählen Sie es aus, indem Sie auf die Miniatur klicken.
 
-1. Verwenden Sie **Auswahl**, um das Asset dem Absatzsystem Ihres Content Fragments am aktuellen Speicherort hinzuzufügen.
+1. Verwenden Sie **Auswahl**, um das Asset dem Absatzsystem Ihres Inhaltsfragments am aktuellen Speicherort hinzuzufügen.
 
    >[!CAUTION]
    Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
@@ -367,7 +382,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 1. Verwenden Sie **Auswahl**, um dem aktuellen Inhaltsfragment (an der aktuellen Position) eine Referenz zum ausgewählten Inhaltsfragment hinzuzufügen.
 
    >[!CAUTION]
-   Wenn Sie nach dem Hinzufügen einer Referenz zu einem anderem Fragment das Format ändern in:
+   Wenn Sie nach dem Hinzufügen eines Verweises zu einem anderen Fragment das Format ändern in:
    * **Klartext**: Die Referenz geht im Fragment vollständig verloren.
    * **Markdown**: Die Referenz bleibt bestehen.
 
@@ -388,6 +403,9 @@ So erstellen Sie eine neue Variante:
 
    >[!NOTE]
    Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
+
+   >[!NOTE]
+   Wenn Sie eine neue Variante erstellen, werden alle **Tags** derzeit zugewiesen ist **Übergeordnet** -Variante in Ihre neue Variante kopiert werden.
 
 ### Bearbeiten einer Variante {#editing-a-variation}
 
@@ -435,7 +453,7 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
 >[!CAUTION]
 Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
 Es wird nur das aktuelle Element der Variante synchronisiert.
-Die Synchronisierung funktioniert nur mit Datentypen mit **mehrzeiligem Text**.
+Die Synchronisierung funktioniert nur auf der **Mehrzeiliger Text** Datentyp.
 Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Version*** zu übertragen.
 
 <!-- needs new screenshot for synchronize effect -->
@@ -454,10 +472,10 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
 1. Primäre Version und Variante werden nebeneinander angezeigt:
 
-   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt wurde
+   * Grün zeigt an, dass Inhalt (zur Variante) hinzugefügt   wurde
    * Rot zeigt an, dass Inhalt entfernt wurde (aus der Variante)
    * Blau zeigt an, dass Text ersetzt wurde
 
    ![Mit primärer Version synchronisieren](assets/cfm-variations-11c.png)
 
-1. Wählen Sie **Synchronisieren**. Die Variante wird dann aktualisiert und angezeigt.
+1. Auswählen **Synchronisieren**, wird die Variante aktualisiert und angezeigt.
