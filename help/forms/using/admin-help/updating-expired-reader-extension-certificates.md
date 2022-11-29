@@ -2,9 +2,9 @@
 title: Ablauf und Auswirkung von Zertifikaten für Reader Extensions
 description: Ablauf und Auswirkung von Zertifikaten für Reader Extensions
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
-source-git-commit: bcbfdcd305b7319506a11677909895c38f92a6cf
+source-git-commit: 5f8061ebd2143f11567ac5b78162bdd02106d2e3
 workflow-type: tm+mt
-source-wordcount: '1114'
+source-wordcount: '1115'
 ht-degree: 4%
 
 ---
@@ -28,8 +28,7 @@ A. Adobe Root CA ist die Zertifizierungsstelle, von der aus ein Acrobat Reader E
 
 **F. Es gab eine frühere Mitteilung der Adobe über den Ablauf von Zertifikaten und die Auswirkungen auf die Verwendung/das Öffnen von PDF-Dokumenten. Sollte diese Mitteilung ignoriert werden?**
 
-A. Basierend auf der Neubewertung der Lage werden alle PDF-Unterlagen, die mit Produktionsbescheinigungen ausgeweitet wurden, die vor dem 7. Januar 2023 vom alten &quot;Stammverzeichnis der Adobe&quot; ausgestellt wurden, nach dem 7. Januar 2023 unverändert weitergeführt. Wenn Sie Ihre PDF bereits aktualisiert haben, ändert sich das Erlebnis nicht.
-
+A. Basierend auf der Neubewertung der Lage werden alle PDF-Unterlagen, die mit Produktionsbescheinigungen ausgeweitet wurden, die vor dem 7. Januar 2023 vom alten &quot;Stammverzeichnis der Adobe&quot; ausgestellt wurden, nach dem 7. Januar 2023 unverändert weitergeführt. Wenn Sie Ihre PDF-Dokumente bereits aktualisiert haben, ändert sich das Erlebnis nicht.
 
 **Frage: An wen kann ich mich wenden, wenn ich weitere Fragen habe?**
 
