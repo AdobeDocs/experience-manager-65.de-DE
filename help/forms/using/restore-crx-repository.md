@@ -1,10 +1,11 @@
 ---
 title: Das beschädigte CRX-Repository kann nicht wiederhergestellt werden, das auf den JEE-Cluster-Server anwendbar ist
 description: Schritte zum Wiederherstellen eines beschädigten CRX-Repositorys
-source-git-commit: a7d125503b0bd3c52cb3a959e2f0dde1a69cbe2b
+exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
+source-git-commit: cf034e8765317ee022aad4693ced37c3fa793ff2
 workflow-type: tm+mt
-source-wordcount: '185'
-ht-degree: 8%
+source-wordcount: '182'
+ht-degree: 7%
 
 ---
 
@@ -12,27 +13,26 @@ ht-degree: 8%
 
 ## Problem {#issue}
 
-Für AEM Forms, das auf JEE mit RDB-Persistenz bereitgestellt wird, ist es erforderlich, dass AEM Forms-Hostcomputer und Datenbankcomputer in absoluter Zeitsynchronisierung synchronisiert werden. Wenn die Uhren jedoch aus irgendeinem Grund nicht mehr synchronisiert werden, wird das CRX-Repository beschädigt und die URLs werden nicht mehr zugänglich. Der Fehler als `AuthenticationsupportService missing` tritt in Protokolldateien auf.
+Bei AEM Forms on JEE, das eine relationale Datenbank verwendet, sollte die Zeit auf dem Computer, auf dem AEM Forms und die relationale Datenbank gehostet werden, immer in absoluter Synchronisierung sein. Wenn die Zeit auf diesen Computern nicht mehr synchron ist, kann der Zugriff auf das CRX-Repository des AEM Forms on JEE-Servers nicht mehr möglich sein. Er kann beschädigt aussehen und über URL nicht mehr zugänglich sein. Die `AuthenticationsupportService missing` -Fehler protokolliert.
+
+## Voraussetzungen {#prerequisites}
+
+Führen Sie die Sicherung Ihres CRX-Repositorys durch, bevor Sie die unten genannten Schritte durchführen.
 
 ## Lösung {#solution}
 
 Führen Sie zur Behebung dieses Problems folgende Schritte durch:
-1. Navigieren Sie zu  [https://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+1. Rufen Sie `https://[AEM Forms Server]:[port]/system/console/bundles` auf.
 
 1. Suchen Sie die `oak-core` Bundle erstellen und überprüfen, ob es ausgeführt wird.
 
-1. Starten Sie den `oak-core` Bundle, wenn es nicht ausgeführt wird. Wenn die Schaltfläche &quot;Pause&quot;vor dem `oak-core` Bundle, dann zeigt es an, dass das Bundle im Ausführungsstatus ist.
+1. Starten Sie den `oak-core` Bundle, wenn es nicht ausgeführt wird. Wenn  ![Schaltfläche &quot;Pause&quot;](/help/forms/using/assets/stop.png) -Symbol vor dem `oak-core` Bundle, dann weist es darauf hin, dass das Bundle sich im Ausführungsstatus befindet.
 
-1. Wenn das Problem weiterhin nicht behoben ist, stellen Sie aus dem CRX-Repository aus der Sicherung wieder her oder erstellen Sie das CRX-Repository neu, wenn keine Sicherung verfügbar ist.
+1. Wenn das Problem weiterhin nicht behoben ist, stellen Sie aus dem CRX-Repository aus dem Backup wieder her oder erstellen Sie das CRX-Repository neu, wenn das Backup nicht verfügbar ist.
 
-   >[!NOTE]
-   >
-   >Führen Sie die Sicherung Ihres CRX-Repositorys durch, bevor Sie die oben genannten Schritte durchführen.
 
 ## Gilt für {#applies-to}
 
 Diese Lösung gilt für:
 
-* AEM Forms on JEE Cluster Server
-
-
+* AEM Forms on JEE Cluster-Umgebung
