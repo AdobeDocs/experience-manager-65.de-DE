@@ -2,9 +2,9 @@
 title: Das beschädigte CRX-Repository kann nicht wiederhergestellt werden, das auf den JEE-Cluster-Server anwendbar ist
 description: Schritte zum Wiederherstellen eines beschädigten CRX-Repositorys
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: cf034e8765317ee022aad4693ced37c3fa793ff2
+source-git-commit: c4f776b08cb8cc8c6eea78a3757735e063bec20c
 workflow-type: tm+mt
-source-wordcount: '182'
+source-wordcount: '179'
 ht-degree: 7%
 
 ---
@@ -26,7 +26,7 @@ Führen Sie zur Behebung dieses Problems folgende Schritte durch:
 
 1. Suchen Sie die `oak-core` Bundle erstellen und überprüfen, ob es ausgeführt wird.
 
-1. Starten Sie den `oak-core` Bundle, wenn es nicht ausgeführt wird. Wenn  ![Schaltfläche &quot;Pause&quot;](/help/forms/using/assets/stop.png) -Symbol vor dem `oak-core` Bundle, dann weist es darauf hin, dass das Bundle sich im Ausführungsstatus befindet.
+1. Starten Sie den `oak-core` Bundle, wenn es nicht ausgeführt wird. Wenn  ![Schaltfläche &quot;Pause&quot;](/help/forms/using/assets/stop.png) -Symbol vor dem `oak-core` Bundle, dann zeigt es an, dass das Bundle im Ausführungsstatus ist.
 
 1. Wenn das Problem weiterhin nicht behoben ist, stellen Sie aus dem CRX-Repository aus dem Backup wieder her oder erstellen Sie das CRX-Repository neu, wenn das Backup nicht verfügbar ist.
 
@@ -35,4 +35,4 @@ Führen Sie zur Behebung dieses Problems folgende Schritte durch:
 
 Diese Lösung gilt für:
 
-* AEM Forms on JEE Cluster-Umgebung
+* AEM Forms on JEE-Cluster
