@@ -11,10 +11,10 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3483'
-ht-degree: 100%
+source-wordcount: '3466'
+ht-degree: 98%
 
 ---
 
@@ -296,10 +296,10 @@ Beim Generieren eines Datensatzdokuments können Sie auf der Registerkarte „Da
 Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte für das Datensatzdokument eingeben, müssen Sie sicherstellen, dass das Gebietsschema des Browsers richtig eingestellt ist. Um die Branding-Informationen im Datensatzdokument anzupassen, gehen Sie wie folgt vor:
 
 1. Wählen Sie einen Bereich (Stammbereich) im Datensatzdokument aus und tippen Sie dann auf ![Konfigurieren](assets/configure.png).
-1. Tippen Sie auf ![dortab](assets/dortab.png). Die Registerkarte „Datensatzdokument“ wird angezeigt.
+1. Tippen Sie auf ![dortab](/help/forms/using/assets/dortab.png). Die Registerkarte „Datensatzdokument“ wird angezeigt.
 1. Wählen Sie entweder die Standardvorlage oder eine benutzerdefinierte Vorlage für das Rendern von Datensatzdokumenten aus. Wenn Sie die Standardvorlage auswählen, wird eine Miniaturvorschau des Datensatzdokuments in der Dropdown-Liste für Vorlagen angezeigt.
 
-   ![brandingtemplate](assets/brandingtemplate.png)
+   ![brandingtemplate](/help/forms/using/assets/brandingtemplate.png)
 
    Wenn Sie eine benutzerdefinierte Vorlage auswählen, navigieren zu einer XDP auf Ihrem AEM Forms-Server und wählen sie aus. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem AEM Forms-Server befindet, müssen Sie die XDP zuerst auf Ihren AEM-Server hochladen.
 
@@ -394,7 +394,7 @@ Informationen zum Anwenden von Seitenumbrüchen und zum Anwenden mehrerer Master
 **Einstellungen auf Formularebene**
 
 * **Ungebundene Felder in DoR einbeziehen:** Durch Festlegen dieser Eigenschaft werden ungebundenen Felder aus dem Schema-basierten adaptiven Formular im Datensatzdokument berücksichtigt. Diese Option ist standardmäßig aktiviert.
-* **Felder aus Datensatzdokument ausschließen, wenn sie ausgeblendet sind**: Wenn aktiviert, wird das Verhalten der auf Feldebene befindlichen Eigenschaft „Aus Datensatzdokument ausschließen“ überschrieben, wenn sie nicht den Wert „true“ hat. Wenn Felder zum Zeitpunkt der Formularübermittlung ausgeblendet sind, werden sie vom Datensatzdokument ausgeschlossen, wenn die Eigenschaft den Wert „true“ hat, vorausgesetzt, die Eigenschaft „Aus Datensatzdokument ausschließen“ ist nicht festgelegt.
+* **Schließen Sie Felder aus DoR aus, falls ausgeblendet:** Legen Sie die Eigenschaft fest, um die ausgeblendeten Felder auszuschließen von [!UICONTROL Datensatzdokument] beim Senden des Formulars. Wenn Sie [Auf dem Server erneut überprüfen](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)berechnet der Server die ausgeblendeten Felder neu, bevor diese Felder aus dem [!UICONTROL Datensatzdokument].
 
 ## Anwenden eines Seitenumbruchs in einem Datensatzdokument {#apply-page-breaks-in-dor}
 
@@ -402,13 +402,12 @@ Sie können Seitenumbrüche in einem Datensatzdokument mithilfe mehrerer Methode
 
 So wenden Sie einen Seitenumbruch auf ein Datensatzdokument an:
 
-1. Tippen Sie auf das Bedienfeld und wählen Sie ![Konfigurieren](assets/configure-icon.svg).
-
+1. Tippen Sie auf das Bedienfeld und wählen Sie ![Konfigurieren](/help/forms/using/assets/configure.png)
 1. Erweitern Sie das **[!UICONTROL Datensatzdokument]**, um die Eigenschaften anzuzeigen.
 
-1. Im Bereich **[!UICONTROL Paginierung]** tippen Sie auf ![Ordner](assets/folder-icon.svg) im Feld **[!UICONTROL Ort]**.
+1. Im Bereich **[!UICONTROL Paginierung]** tippen Sie auf ![Ordner](/help/forms/using/assets/folder-icon.png) im Feld **[!UICONTROL Ort]**.
 1. Tippen Sie auf **[!UICONTROL Anfang der nächsten Seite]** und dann auf **[!UICONTROL Auswählen]**. Sie können auch auf **[!UICONTROL Seitenanfang]** tippen, dann die Master-Seite auswählen und schließlich auf **[!UICONTROL Auswählen]** tippen, um den Seitenumbruch anzuwenden.
-1. Tippen Sie auf ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
+1. Tippen Sie auf ![Speichern](/help/forms/using/assets/save_icon.png), um die Eigenschaften zu speichern.
 
 Das ausgewählte Bedienfeld wechselt zur nächsten Seite.
 
@@ -423,13 +422,13 @@ Sie laden eine XDP-Vorlage, die vier Master-Seiten enthält, auf den [!DNL AEM F
 
 Führen Sie die folgenden Schritte aus, um die zweiten Master-Seiteneigenschaften auf ein Bedienfeld und die dritten Master- Seiteneigenschaften auf die nachfolgenden Bedienfelder anzuwenden:
 
-1. Tippen Sie auf das Bedienfeld, um die zweite Master-Seite anzuwenden, und wählen Sie ![Konfigurieren](assets/configure-icon.svg).
-1. Im Bereich **[!UICONTROL Paginierung]**, tippen Sie auf ![Ordner](assets/folder-icon.svg) im Feld **[!UICONTROL Ort]**.
+1. Tippen Sie auf das Bedienfeld, um die zweite Master-Seite anzuwenden, und wählen Sie ![Konfigurieren](assets/cmppr.png).
+1. Im Bereich **[!UICONTROL Paginierung]**, tippen Sie auf ![Ordner](/help/forms/using/assets/folder-icon.png) im Feld **[!UICONTROL Ort]**.
 1. Tippen Sie auf **[!UICONTROL Auf Seite]**, wählen Sie dann die zweite Master-Seite aus und tippen Sie auf **[!UICONTROL Auswählen]**.
 AEM Forms wendet die zweite Master-Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
-1. Tippen Sie im Bereich **[!UICONTROL Paginierung]** auf ![Ordner](assets/folder-icon.svg) im Feld **[!UICONTROL Nachher]**.
+1. Tippen Sie im Bereich **[!UICONTROL Paginierung]** auf ![Ordner](/help/forms/using/assets/folder-icon.png) im Feld **[!UICONTROL Nachher]**.
 1. Tippen Sie auf **[!UICONTROL Wechseln zu Seite]**, wählen Sie dann die dritte Master-Seite aus und tippen Sie auf **[!UICONTROL Auswählen]**.
-1. Tippen Sie auf ![Speichern](assets/save_icon.svg), um die Eigenschaften zu speichern.
+1. Tippen Sie auf ![Speichern](/help/forms/using/assets/save_icon.png), um die Eigenschaften zu speichern.
 AEM Forms wendet die dritte Master-Seite auf das Bedienfeld und alle nachfolgenden Bedienfelder im adaptiven Formular an.
 
 

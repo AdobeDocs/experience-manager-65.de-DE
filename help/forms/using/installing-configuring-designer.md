@@ -1,7 +1,7 @@
 ---
 title: Designer installieren und konfigurieren
 seo-title: Installing and configuring Designer
-description: 'Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBench erhältlich. Erfahren Sie, wie Sie Designer als eigenständige Anwendung installieren.  '
+description: Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBench erhältlich. Erfahren Sie, wie Sie Designer als eigenständige Anwendung installieren.
 seo-description: Designer is available as a stand-alone installer and is also bundled with Workbench. Learn how to install stand-alone Designer.
 uuid: c5b779d1-cb6a-48f4-87d6-48464753e516
 contentOwner: gtalwar
@@ -12,10 +12,10 @@ discoiquuid: f3a5b5ce-2262-4d5d-a8ae-d59a3a4229e7
 docset: aem65
 role: Admin
 exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
-source-git-commit: a3cf926bde4a4b3a0810058e84ac01012a4a3a57
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '280'
-ht-degree: 100%
+source-wordcount: '290'
+ht-degree: 73%
 
 ---
 
@@ -23,19 +23,20 @@ ht-degree: 100%
 
 ## Voraussetzungen {#pre-requisites}
 
-Für das AEM Forms Designer-Installationsprogramm ist die 32-Bit-Version von [Visual C++ Redistributable Runtime Package 2012](https://support.microsoft.com/de-de/topic/the-latest-supported-visual-c-downloads-2647da03-1eea-4433-9aff-95f26a218cc0) und [Visual C++ Redistributable Runtime Package 2013](https://support.microsoft.com/de-de/help/3179560/update-for-visual-c-2013-and-visual-c-redistributable-package) erforderlich. Stellen Sie sicher, dass die oben genannten Redistributable Runtime Packages vor Installationsbeginn installiert sind. 
-
-Sie benötigen Administratorrechte, um Designer zu installieren oder zu deinstallieren.
+* Installieren Sie die 32-Bit-Version von  [Visual C++ 2019 Redistributable (x86)](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170). Stellen Sie sicher, dass die oben genannten Redistributable Runtime Packages vor Installationsbeginn installiert sind. 
+* Ein Benutzer mit Administratorrechten zum Installieren oder Deinstallieren von Designer.
 
 ## Installieren von Designer {#install-designer}
 
 Designer ist als eigenständiges Installationsprogramm sowie als Teil von WorkBench erhältlich. Wenn Sie ein eigenständiges Installationsprogramm für Designer verwenden, führen Sie die folgenden Schritte aus:
 
-1. Laden Sie Designer von der Adobe [Lizenzierungs-Webseite](https://licensing.adobe.com/) herunter.
+1. Deinstallieren Sie die vorherige Version von AEM Forms Designer, falls sie bereits installiert ist.
+1. Designer herunterladen aus [Adobe Licensing-Website](https://licensing.adobe.com/).
 
    >[!NOTE]
    >
-   >Wenn Sie eine frühere Version von Designer installiert haben, deinstallieren Sie diese, bevor Sie fortfahren.
+   > * Ab Adobe Experience Manager 6.5 Forms Service Pack 15 (6.5.15.0) umfasst die Forms Designer-Version auch das Service Pack. Beispielsweise ist für Service Pack 15 die Versionsnummer 6.5.15.20221112.1.0. In diesem Beispiel ist 6.5.15 Service Pack-Version.
+
 
 1. Starten Sie das Designer-Installationsprogramm, indem Sie auf setup.exe doppelklicken.
 1. Fahren Sie fort und geben Sie Ihre Details und die Seriennummer im Bildschirm „Anpassung“ ein.
@@ -57,5 +58,3 @@ msiexec /i "<absolute path>\Designer.msi" /passive SERIALNUMBER=****-****-****-*
 ```shell
 msiexec /i "<absolute path>\Designer.msi" /quiet SERIALNUMBER=****-****-****-****-****-****
 ```
-
-

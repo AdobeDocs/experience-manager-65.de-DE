@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 937af2df46b93aab6c9010814175d72a9bd583db
+source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
-source-wordcount: '3176'
-ht-degree: 37%
+source-wordcount: '3853'
+ht-degree: 31%
 
 ---
 
@@ -105,9 +105,44 @@ ht-degree: 37%
 
 ## [!DNL Forms] {#forms-6515}
 
->[!NOTE]
->
->Fehlerbehebungen in [!DNL Experience Manager] Forms wird eine Woche nach der geplanten Bereitstellung über ein separates Add-On-Paket bereitgestellt [!DNL Experience Manager] Veröffentlichungsdatum des Service Packs. In diesem Fall werden die Add-On-Pakete am Donnerstag, dem 1. Dezember 2022 veröffentlicht. Darüber hinaus wird diesem Abschnitt eine Liste mit Fehlerbehebungen und Verbesserungen für Forms hinzugefügt.
+### Wichtigste Funktionen {#keyfeatures}
+
+* AEM Forms Designer ist jetzt im spanischen Gebietsschema verfügbar. (LC-3920051)
+* Sie können jetzt OAuth2 verwenden, um sich bei Microsoft Office 365-E-Mail-Serverprotokollen (SMTP und IMAP) zu authentifizieren. (NPR-35177)
+* Sie können [Auf dem Server erneut überprüfen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) -Eigenschaft auf &quot;true&quot;fest, um die ausgeblendeten Felder zum Ausschließen aus einem Datensatzdokument serverseitig zu identifizieren. (NPR-38149)
+* Für AEM Forms Designer ist eine 32-Bit-Version von Visual C++ 2019 Redistributable (x86) erforderlich.  (NPR-36690)
+
+### Fehlerkorrekturen {#fixes}
+
+* Wenn die data-disabled-Eigenschaft eines adaptiven Formulars umgeschaltet wird, ändert sich das Erscheinungsbild von Optionsfeld- und Kontrollkästchengruppen nicht. (NPR-39368)
+* Wenn ein adaptives Formular übersetzt wird, werden einige Übersetzungen verpasst und nicht richtig angezeigt. (NPR-39367)
+* Wenn die Eigenschaft einer Seite auf &quot;Ausgeblendet&quot;festgelegt ist, wird die Seite nicht aus dem Formularsatz entfernt. (NPR-39325)
+* In einem Datensatzdokument ist der Abschnitt mit dynamischen Fußnoten am Ende der Seite nicht vorhanden. (NPR-39322)
+* Wenn ein Datensatzdokument für ein adaptives Formular generiert wird, ist nur die vertikale Ausrichtung für Optionsfelder und Kontrollkästchen zulässig. Der Benutzer kann die horizontale Ausrichtung für Optionsfelder und Kontrollkästchen nicht festlegen. (NPR-39321)
+* Wenn mehrere Benutzer nach der Bereitstellung von Correspondence Management versuchen, auf ein Formular zuzugreifen, wird org.apache.sling.i18n.impl.JcrResourceBundle.loadPotentialLanguageRoots zum Engpass und ein Großteil der Threads wird angehalten. Verschiedene Formularseitenanfragen benötigten oft mehr als eine Minute, um jede einzelne zu laden, selbst wenn der Server eine sehr geringe Auslastung aufweist. (NPR-39176, CQ-4347710)
+* Wenn Sie in einem adaptiven Formular ein Rich-Text-Feld in einem verzögert geladenen adaptiven Formularfragment verwenden, treten einige der folgenden Fehler auf:
+   * Sie können den Inhalt nicht bearbeiten oder an das Feld &quot;Rich-Text&quot;anhängen.
+   * Das auf den Rich-Text angewendete Anzeigemuster wird nicht berücksichtigt. 
+   * Die Fehlermeldung für die minimale Feldlänge wird beim Senden des Formulars nicht angezeigt.
+   * Der Inhalt dieses Rich-Text-Felds wird mehrmals in die erzeugte Sende-XML aufgenommen. (NPR-39168)
+* Wenn die Option Datumsauswahl in einem adaptiven Formular verwendet wird, kann der Wert nicht in das richtige Format konvertiert werden. (NPR-39156)
+* Bei der Vorschau eines adaptiven Formulars als HTML wird es nicht ordnungsgemäß wiedergegeben, da sich einige der Unterformulare mit dem übergeordneten Formular überschneiden. (NPR-39046)
+* Wenn der Bereich eine ausgeblendete Tabelle aufweist und das adaptive Formular mithilfe der Tabellenansicht wiedergegeben wird, werden die Felder auf der ersten Registerkarte nicht korrekt angezeigt. (NPR-39025)
+* Die `Body` fehlt für die OOTB-Vorlage (Out-of-the-Box). (NPR-39022)
+* Das Datensatzdokument wird nicht in der Sprache des adaptiven Formulars generiert. Es wird immer in englischer Sprache generiert. (NPR-39020)
+* Wenn ein adaptives Formular mehrere Bedienfelder enthält und einige der Bedienfelder den vordefinierten **Dateianhang** -Komponente, die `Error occurred while draft saving` Fehler auftritt. (NPR-38978)
+* Wann `=` -Zeichen in den Kontrollkästchen, Dropdown-Listen oder Optionsfeldern eines adaptiven Formulars verwendet wird und das Datensatzdokument generiert wird, `=` -Zeichen im generierten Datensatzdokument nicht sichtbar ist.(NPR-38859)
+* Die Anzahl der Fehler bei der Stapelverarbeitung von Hinweisen ist nach der Aktualisierung des Service Packs 6.5.11.0 um das Vielfache gestiegen. (NPR-39636)
+* Wenn Sie keine Testdaten bereitstellen, können Correspondence Management-Briefe nicht in der Benutzeroberfläche für Agenten geladen werden. (CQ-4348702)
+* Wenn der Benutzer das mit IBM® WebSphere® bereitgestellte AEM Forms Service Pack 14 (SP14) von AEM Forms anwendet, schlägt das Bootstrapping bei der Initialisierung einer Datenbank und der `java.lang.NoClassDefFoundError:org/apache/log4j/Logger` Fehler auftritt.(NPR-39414)
+* Wenn Sie auf einem AEM-Formular auf einem OSGi-Server die Document Service-API zum Zertifizieren von PDF verwenden, schlägt der Fehler fehl: com.adobe.fd.signatures.truststore.errors.exception.CredentialRetrievalException: AEM-DSS-311-003. (NPR-38855)
+* Wenn der Benutzer versucht, den Wrapper-Dienst zum Rendern von Briefen mit AEM 6.3 Forms zu verwenden, wird die `java.lang.reflect.UndeclaredThrowableException` Fehler auftritt. (CQ-4347259)
+* Wenn eine XDP als HTML5-Formular wiedergegeben wird, wird der Inhalt der Übergeordneten Seite zuerst gerendert, unabhängig von der Platzierung der Objekte in einem adaptiven Formular. (CQ-4345218)
+* Die Konfiguration der Anwendung auf dem Zielserver ändert sich in die Einstellungen, die auf dem Quellserver definiert sind, auch wenn die **Konfiguration beim Abschluss des Imports überschreiben** zum Zeitpunkt des Anwendungsimports nicht aktiviert ist. (NPR-39044)
+* Wenn ein Benutzer versucht, die Connector-Konfiguration mithilfe von Configuration Manager zu aktualisieren, schlägt dies fehl.(CQ-4347077)
+* Wenn Benutzer versuchen, einen AEM Forms on JEE-Patch auszuführen, nachdem sie das Standardkennwort des Administratorbenutzers geändert haben, wird eine Ausnahme `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` auftritt. (CQ-4348277)
+* In AEM Designer werden Formularfelder ohne Beschriftungen in Tabellenzellen einschließlich Kontrollkästchen platziert.(LC-3920410)
+* Wenn der Benutzer versucht, die Hilfe in AEM Forms Designer zu öffnen, wird sie nicht ordnungsgemäß angezeigt. (CQ-4341996)
 
 ## [!DNL Sites] {#sites-6515}
 
