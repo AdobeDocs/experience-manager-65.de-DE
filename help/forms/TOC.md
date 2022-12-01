@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
 role: User
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3830'
+source-wordcount: '3827'
 ht-degree: 95%
 
 ---
@@ -371,7 +371,6 @@ ht-degree: 95%
    + [Siehe Reader Extending richtliniengeschützter PDF-Dokumente mit Portable Protection Library](using/reader-extending-policy-protected-pdf-documents-using-ppl.md)
    + [AEM aktivieren, um durch Document Security geschützte PDF-Dokumente zu durchsuchen](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Schützen von Dokumenten im Auftrag eines anderen Benutzers](using/protect-document-on-behalf-of-another-user.md)
-   + [oAuth2.0-Unterstützung für Microsoft Mail Service](/help/forms/using/oauth2-support-for-mail-service.md)
 + Forms Designer {#use-forms-designer}
    + [Hilfe zu Forms Designer](using/forms-designer-help.md)
    + [Verwenden von Designer](https://www.adobe.com/go/learn_aemforms_designer_65_de)
@@ -453,6 +452,7 @@ ht-degree: 95%
    + Verwalten von Endpunkten {#manage-endpoints}
       + [Endpunkte hinzufügen aktivieren, ändern oder entfernen](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [E-Mail-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-email-endpoints.md)
+      + [oAuth2.0-Authentifizierung konfigurieren](/help/forms/using/oauth2-support-for-mail-service.md)
       + [Remoting-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Endpunkte des Typs „Überwachter Ordner“ konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Task Manager-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)

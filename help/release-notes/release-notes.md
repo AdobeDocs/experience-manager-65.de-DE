@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 35595ffca9d2f6fd80bfe93bade247f5b4600469
 workflow-type: tm+mt
-source-wordcount: '3853'
-ht-degree: 31%
+source-wordcount: '3858'
+ht-degree: 32%
 
 ---
 
@@ -107,9 +107,9 @@ ht-degree: 31%
 
 ### Wichtigste Funktionen {#keyfeatures}
 
-* AEM Forms Designer ist jetzt im spanischen Gebietsschema verfügbar. (LC-3920051)
-* Sie können jetzt OAuth2 verwenden, um sich bei Microsoft Office 365-E-Mail-Serverprotokollen (SMTP und IMAP) zu authentifizieren. (NPR-35177)
-* Sie können [Auf dem Server erneut überprüfen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html?lang=en#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) -Eigenschaft auf &quot;true&quot;fest, um die ausgeblendeten Felder zum Ausschließen aus einem Datensatzdokument serverseitig zu identifizieren. (NPR-38149)
+* AEM Forms Designer ist jetzt in verfügbar [Spanisches Gebietsschema](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de). (LC-3920051)
+* Sie können jetzt [OAuth2 zum Authentifizieren mit Microsoft Office 365-E-Mail-Serverprotokollen (SMTP und IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* Sie können [Auf dem Server erneut überprüfen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) -Eigenschaft auf &quot;true&quot;fest, um die ausgeblendeten Felder zum Ausschließen aus einem Datensatzdokument serverseitig zu identifizieren. (NPR-38149)
 * Für AEM Forms Designer ist eine 32-Bit-Version von Visual C++ 2019 Redistributable (x86) erforderlich.  (NPR-36690)
 
 ### Fehlerkorrekturen {#fixes}
@@ -319,7 +319,7 @@ Im Folgenden finden Sie eine Liste der Funktionen, die ab [!DNL Experience Manag
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
  -->
 
-* [AEM Inhaltsfragment mit GraphQL-Indexpaket 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+* [AEM Inhaltsfragment mit GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
 Dieses Paket ist für Kunden erforderlich, die GraphQL verwenden. Dadurch können sie die erforderliche Indexdefinition hinzufügen, die auf den tatsächlich verwendeten Funktionen basiert.
 
 * Da [!DNL Microsoft® Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft® Windows Server 2019] keine Turnkey-Installationen für [!DNL AEM Forms 6.5.10.0].
