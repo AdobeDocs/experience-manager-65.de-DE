@@ -4,7 +4,7 @@ description: Machen Sie sich mit der Authentifizierung vertraut, die für Remote
 feature: Content Fragments,GraphQL API
 exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
 source-git-commit: 9278ba4fe85edca4ab5741f89c0fc0ef2cf2764d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '111'
 ht-degree: 100%
 
