@@ -2,8 +2,8 @@
 title: Grundlagen zur Inhaltsmodellierung
 description: Erfahren Sie mehr über die Grundlagen der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: c05941355abfed849e1876988aa2a9dc61812b8b
-workflow-type: tm+mt
+source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+workflow-type: ht
 source-wordcount: '905'
 ht-degree: 100%
 
