@@ -1,7 +1,7 @@
 ---
 title: Bearbeiten von Seiten (Authoring)
 seo-title: Authoring Pages
-description: Es gibt zwei Übersichten zum Authoring mit AEM. (1) Erste Schritte für Autoren - eine Einführung für neue Autoren und (2) Kurzanleitung zur Bearbeitung von Seiten - eine (allgemeine) Kurzanleitung zu den wichtigsten Aktionen.
+description: Es gibt zwei Übersichten zur Inhaltserstellung in AEM. (1) Erste Schritte für Autoren – eine Einführung für neue Autoren, und (2) Kurzanleitung zur Seitenbearbeitung (Authoring) – eine (allgemeine) Kurzanleitung zu den wichtigsten Aktionen.
 seo-description: There are two overviews to authoring with AEM. (1) First Steps for Authors - an introduction for new authors, and (2) Quick Guide to Authoring Pages - a quick guide (high-level) to the main actions.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
@@ -11,21 +11,21 @@ content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
 # Bearbeiten von Seiten (Authoring){#authoring-pages}
 
-Im Folgenden finden Sie eine Übersicht zum Authoring mit AEM:
+Im Folgenden finden Sie eine Übersicht zur Seitenbearbeitung in AEM:
 
 * [Erste Schritte für Autoren](/help/sites-classic-ui-authoring/classic-page-author-first-steps.md) – eine Einführung für neue Autoren
 
 >[!NOTE]
 >
->Dieser Abschnitt enthält die Aufgaben, die bei der Bearbeitung von Inhaltsseiten ausgeführt werden.<!-- There are many additional features closely related to page authoring, these are covered under [Site and Page Features](/sites-classic-ui-authoring/classic-feature.md). -->
+>Dieser Abschnitt enthält die Aufgaben, die bei der Bearbeitung von Inhaltsseiten ausgeführt werden. <!-- There are many additional features closely related to page authoring, these are covered under [Site and Page Features](/sites-classic-ui-authoring/classic-feature.md). -->
 
 ## Kurze Übersicht der Funktionen zur Seitenbearbeitung (Authoring) {#quick-overview-of-features-used-for-authoring-pages}
 
