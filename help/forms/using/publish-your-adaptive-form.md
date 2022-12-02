@@ -1,6 +1,6 @@
 ---
-title: '"Anleitung: Veröffentlichen Sie Ihr adaptives Formular"'
-seo-title: 'Tutorial: Publish your adaptive form'
+title: "Anleitung: Veröffentlichen Sie Ihr adaptives Formular"
+seo-title: "Tutorial: Publish your adaptive form"
 description: Veröffentlichen Sie das adaptive Formular als AEM-Seite, betten Sie es auf einer AEM Sites-Seite ein, oder betten Sie das adaptive Formular in eine externe Webseite ein
 seo-description: Publish the adaptive form as an AEM page, embed the form to an AEM Sites page, or embed the adaptive form in an external webpage
 uuid: 1b164376-e61a-40aa-9f16-c79d24a72e20
@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '936'
 ht-degree: 100%
 
