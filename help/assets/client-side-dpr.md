@@ -1,28 +1,28 @@
 ---
-title: Verwenden der intelligenten Bildbearbeitung mit dem Client-seitigen Gerätepixelverhältnis
-description: Erfahren Sie, wie Sie in Adobe Experience Manager as a Cloud Service das Client-seitige Gerätepixelverhältnis mit der intelligenten Bildbearbeitung mit Dynamic Media verwenden.
+title: Verwenden der intelligenten Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis (Device Pixel Ratio).
+description: Erfahren Sie, wie Sie das Client-seitige Gerätepixelverhältnis mit der intelligenten Bildbearbeitung in Adobe Experience Manager as a Cloud Service mit Dynamic Media verwenden.
 role: Admin,User
 exl-id: e38f522a-242a-4ea9-a866-d8d129950831
 source-git-commit: c8682118f15132063073df5cdc2b576b6e62a0c8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '323'
 ht-degree: 100%
 
 ---
 
-# Über die intelligente Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis (DPR) {#client-side-dpr}
+# Informationen zur intelligenten Bildbearbeitung mit Client-seitigem Gerätepixelverhältnis (Device Pixel Ratio, DPR). {#client-side-dpr}
 
 Die aktuelle Lösung für die intelligente Bildbearbeitung verwendet Benutzeragenten-Zeichenfolgen, um den verwendeten Gerätetyp (Desktop, Tablet, Mobilgerät usw.) zu bestimmen.
 
-Die Funktionen zur Geräteerkennung – wobei das Gerätepixelverhältnis auf Benutzeragenten-Zeichenfolgen basiert – sind häufig ungenau, insbesondere bei Apple-Geräten. Außerdem muss es jedes Mal, wenn ein neues Gerät gestartet wird, validiert werden.
+Die Funktionen zur Geräteerkennung – DPR auf Basis von Benutzeragenten-Zeichenfolgen – sind häufig ungenau, insbesondere bei Apple-Geräten. Außerdem muss jedes neue Gerät, das gestartet wird, validiert werden.
 
-Das Client-seitige Gerätepixelverhältnis liefert 100 % genaue Werte und funktioniert für jedes Gerät, unabhängig davon, ob es sich um ein Apple- oder ein anderes neues Gerät handelt, das gestartet wurde.
+Client-seitiges DPR liefert 100 % genaue Werte und funktioniert für jedes Gerät, das gestartet wird, unabhängig davon, ob es sich um Apple oder ein anderes neues Gerät handelt.
 
-## Verwenden des Client-seitigen Gerätepixelverhältnis-Codes
+## Verwenden des Client-seitigen DPR-Codes.
 
-**Server-seitig gerenderte Apps**
+**Server-seitig gerenderte Apps.**
 
-1. Laden Sie den Service Worker init (`srvinit.js`), indem Sie das folgende Skript in den Header-Bereich Ihrer HTML-Seite einfügen:
+1. Laden Sie „service worker init“ (`srvinit.js`), indem Sie das folgende Skript in den Header-Abschnitt Ihrer HTML-Seite einfügen:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
@@ -30,7 +30,7 @@ Das Client-seitige Gerätepixelverhältnis liefert 100 % genaue Werte und funkti
 
    Adobe empfiehlt, dieses Skript _vor_ allen anderen Skripten zu laden, damit der Service Worker sofort mit der Initialisierung beginnt.
 
-1. Fügen Sie den folgenden Gerätepixelverhältnis-Bild-Tag-Code oben im Hauptteil Ihrer HTML-Seite ein:
+1. Fügen Sie den folgenden DPR-Bild-Tag-Code oben im Body-Abschnitt Ihrer HTML-Seite ein:
 
    ```html
    <img src="aem_dm_dpr_1x.jpg" style="width:1px;height:1px;display:none"
@@ -41,31 +41,31 @@ Das Client-seitige Gerätepixelverhältnis liefert 100 % genaue Werte und funkti
        aem_dm_dpr_5x.jpg 5x">
    ```
 
-   Es ist zwingend erforderlich, dass Sie diesen Gerätepixelverhältnis-Bild-Tag-Code _vor_ allen statischen Bildern auf Ihrer HTML-Seite einfügen.
+   Sie müssen diesen DPR-Bild-Tag-Code _vor_ allen statischen Bildern auf Ihrer HTML-Seite einfügen.
 
-**Client-seitig gerenderte Apps**
+**Client-seitig gerenderte Apps.**
 
-1. Schließen Sie die folgenden Gerätepixelverhältnis-Skripte in den Header-Abschnitt Ihrer HTML-Seite ein:
+1. Schließen Sie die folgenden DPR-Skripte in den Header-Abschnitt Ihrer HTML-Seite ein:
 
    ```javascript
    <script type="text/javascript" src="srvinit.js"></script>
    <script type="text/javascript" src="dprImageInjection.js"></script>
    ```
 
-   Sie können beide Gerätepixelverhältnis-Skripte zu einem zusammenfassen, um mehrere Netzwerkanfragen zu vermeiden.
+   Sie können die beiden DPR-Skripte zusammenfassen, um mehrere Netzwerkanforderungen zu vermeiden.
 
    Adobe empfiehlt, diese Skripte _vor_ allen anderen Skripten auf der HTML-Seite zu laden.
-Adobe empfiehlt außerdem, dass Sie Ihre Anwendung unter einem diff-HTML-Tag und nicht unter einem body-Element bootstrappen. Der Grund dafür ist, dass `dprImageInjection.js` das Bild-Tag dynamisch am Anfang des body-Abschnitts der HTML-Seite einfügt.
+Adobe empfiehlt auch, Ihre App unter dem HTML-Tag „diff“ und nicht unter einem Body-Element zu laden. Der Grund dafür ist, dass `dprImageInjection.js` das Bild-Tag dynamisch am Anfang des Body-Abschnitts auf der HTML-Seite einfügt.
 
-## Herunterladen von JavaScript-Dateien {#client-side-dpr-script}
+## Herunterladen von JavaScript-Dateien. {#client-side-dpr-script}
 
-Die folgenden JavaScript-Dateien im Download werden Ihnen nur als Beispiel zur Verfügung gestellt. Wenn Sie diese Dateien in HTML-Seiten verwenden wollen, müssen Sie den Code der einzelnen Dateien an Ihre eigenen Anforderungen anpassen.
+Die folgenden JavaScript-Dateien im Download werden nur als Beispielreferenz bereitgestellt. Wenn Sie diese Dateien auf HTML-Seiten verwenden möchten, stellen Sie sicher, dass Sie den Code jeder Datei Ihren eigenen Anforderungen entsprechend bearbeiten.
 
 * `dprImageInjection.js`
 * `srvinit.js`
 * `srvwrk.js`
 
-[Herunterladen von JavaScript-Dateien](/help/assets/assets-dm/aem-dynamicmedia-smartimaging-dpr.zip)
+[Herunterladen von JavaScript-Dateien.](/help/assets/assets-dm/aem-dynamicmedia-smartimaging-dpr.zip)
 
 >[!MORELIKETHIS]
 >
