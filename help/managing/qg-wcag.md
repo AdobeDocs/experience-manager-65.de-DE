@@ -3,9 +3,9 @@ title: Kurzanleitung zu WCAG 2.1
 description: Kurzanleitung zu WCAG 2.1
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1770'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
