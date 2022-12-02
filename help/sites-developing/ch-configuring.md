@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1842'
 ht-degree: 100%
 
@@ -84,7 +84,7 @@ Fügen Sie einer Gruppe mit verwandten ContextHub-Modulen einen UI-Modus hinzu. 
 1. Geben Sie Werte für die folgenden Eigenschaften an:
 
    * UI-Modustitel: Der Titel, mit dem der UI-Modus identifiziert wird.
-   * Modussymbol: Die Auswahl für das zu verwendende [Coral-UI-Symbol](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons), z. B. `coral-Icon--user`.
+   * Modussymbol: Die Auswahl für das zu verwendende [Coral-UI-Symbol](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons), z. B. `coral-Icon--user`.
    * Aktiviert: Wählen Sie diese Option aus, um den UI-Modus in der ContextHub-Symbolleiste anzuzeigen.
 
 1. Klicken oder tippen Sie auf „Speichern“.
