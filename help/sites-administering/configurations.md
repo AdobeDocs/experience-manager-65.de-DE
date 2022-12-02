@@ -3,7 +3,7 @@ title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
 source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1496'
 ht-degree: 100%
 
