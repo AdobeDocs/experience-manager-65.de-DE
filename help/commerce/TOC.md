@@ -4,7 +4,7 @@ user-guide-title: AEM Content and Commerce
 breadcrumb-title: Commerce-Anleitung
 user-guide-description: Erfahren Sie, wie Sie Adobe Experience Manager Content and Commerce verwenden und verwalten.
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '123'
 ht-degree: 100%
 
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 # Commerce  {#commerce}
 
-+ [AEM Content und Commerce](/help/commerce/home.md)
++ [AEM Content and Commerce](/help/commerce/home.md)
 + [Wesentliche Änderungen an AEM Content and Commerce](cif/changes.md)
 + [Einführung und Übersicht](cif/introduction.md)
 + Integrationen {#integrations}
