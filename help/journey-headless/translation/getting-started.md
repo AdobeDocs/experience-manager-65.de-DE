@@ -3,7 +3,7 @@ title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1466'
 ht-degree: 100%
 
