@@ -1,19 +1,19 @@
 ---
-title: Adobe Experience Manager (AEM) und Richtlinien für barrierefreien Web-Zugang
-description: Einführung in Adobe Experience Manager (AEM) und Richtlinien für barrierefreien Web-Zugang
+title: Adobe Experience Manager (AEM) und Richtlinien für barrierefreies Webdesign
+description: Einführung in Adobe Experience Manager (AEM) und die Richtlinien für barrierefreies Webdesign
 exl-id: db8785b9-09eb-444a-addc-74c520e710a9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '415'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
-# AEM und Richtlinien für barrierefreien Webzugang{#aem-and-the-web-accessibility-guidelines}
+# AEM und Richtlinien für barrierefreies Webdesign{#aem-and-the-web-accessibility-guidelines}
 
-Es gibt eine Reihe sozialer, ökonomischer und rechtlicher Gründe dafür, sicherzustellen, dass Web-Inhalte für das Zielpublikum so barrierefrei wie möglich gestaltet werden, ungeachtet möglicher Behinderungen oder Einschränkungen des Zielpublikums. Die Barrierefreiheit über das Internet mit Adobe Experience Manager (AEM) ist daher ein zunehmend wichtiger Aspekt eines guten Webdesigns.
+Es gibt eine Reihe sozialer, ökonomischer und rechtlicher Gründe dafür, sicherzustellen, dass Web-Inhalte für das Zielpublikum so barrierefrei wie möglich gestaltet werden, ungeachtet möglicher Behinderungen oder Einschränkungen des Zielpublikums. Barrierefreiheit mit Adobe Experience Manager (AEM) ist daher ein zunehmend wichtiger Aspekt eines guten Webdesigns.
 
-Erstellung barrierefreier Websites und Inhalte mit AEM Auswirkungen:
+Das Erstellen barrierefreier Websites und Inhalte mit AEM wirkt sich auf folgende Personen aus:
 
 * Administratoren, die für die Konfiguration von AEM verantwortlich sind, um zu gewährleisten, dass die Funktionen für den barrierefreien Zugang aktiviert sind.
 
@@ -23,7 +23,7 @@ Erstellung barrierefreier Websites und Inhalte mit AEM Auswirkungen:
 
 * Entwickler von Vorlagen sollten sich ebenfalls dieser Thematiken bei der Umsetzung des Webdesigns bewusst sein.
 
-Adobe Experience Manager arbeitet mit dem [Richtlinien](#wcag-accessibility-guidelines) von [World Wide Web Consortium](#world-wide-web-consortium).
+Adobe Experience Manager arbeitet nach den [Richtlinien](#wcag-accessibility-guidelines) des [World Wide Web Consortium](#world-wide-web-consortium).
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ Die [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) veröffentlich
 
 Die WCAG 2.1 bietet [Richtlinien (mit entsprechenden Erfolgskriterien), die die verschiedenen Level der Barrierefreiheit abdecken und die Einhaltung dieser Level behandeln](https://www.w3.org/TR/WCAG/#conformance).
 
-## WCAG 2.1 und AEM {#wcag-aem}
+## WCAG 2.1 und AEM {#wcag-aem}
 
 Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber Web-Inhalte erstellen, die den Erfolgskriterien der WCAG 2.1 Level A und Level AA entsprechen:
 
@@ -47,7 +47,7 @@ Mit Adobe Experience Manager können Inhaltsautoren und/oder Website-Betreiber W
 
 * In [Erstellen barrierefreier Inhalte](/help/sites-authoring/creating-accessible-content.md) wird beschrieben, wie diese mit AEM zusammenhängen.
 
-* [Konfigurieren des Rich-Text-Editors für die Erstellung barrierefreier Websites](/help/sites-administering/rte-accessible-content.md) Richtlinien für Administratoren zur Konfiguration von AEM zur Produktion barrierefreier Inhalte.
+* [Konfigurieren des Rich-Text-Editors für die Erstellung barrierefreier Websites](/help/sites-administering/rte-accessible-content.md) Richtlinien für Admins zur Konfiguration von AEM zur Produktion barrierefreier Inhalte.
 
 * [Erstellung zugänglicher, anpassbarer Strukturen](/help/forms/using/creating-accessible-adaptive-forms.md) Adobe Experience Manager (AEM) umfasst eine Reihe Funktionen und Möglichkeiten zur verbesserten Nutzung anpassbarer Strukturen für Benutzer mit unterschiedlichen Fähigkeiten. Die Lösung unterstützt außerdem Verfasser von Strukturen bei der Erstellung anpassbarer Formulare.
 
