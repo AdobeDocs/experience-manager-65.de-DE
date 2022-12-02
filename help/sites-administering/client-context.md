@@ -22,7 +22,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in der entsprechenden Dokumentation für die [Konfiguration](ch-configuring.md) und für [Entwickler](/help/sites-developing/contexthub.md).
+>ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in der entsprechenden Dokumentation für die [Konfiguration]ch-configuring.md) und für [Entwickler](/help/sites-developing/contexthub.md).
 
 ClientContext ist ein Mechanismus, der Ihnen bestimmte Informationen zur aktuellen Seite und zum aktuellen Besucher liefert. Um ClientContext zu öffnen, drücken Sie die Tastenkombination **Strg+Alt+C** (Windows) oder **Ctrl+Wahl+C** (Mac):
 
