@@ -13,7 +13,7 @@ docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
 source-git-commit: efb4f9f8a97baf8d3d02160226e4f4d3f8f64c89
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1883'
 ht-degree: 100%
 
@@ -124,9 +124,9 @@ Die folgende Tabelle zeigt einige Beispiel-Tag-IDs, ihre Elemente und wie die Ta
   <tr>
    <td>sky</td>
    <td>default</td>
-   <td>Himmel</td>
+   <td>sky</td>
    <td>(keins)</td>
-   <td>Himmel</td>
+   <td>sky</td>
    <td>/content/cq:tags/default/sky</td>
   </tr>
   <tr>
@@ -141,8 +141,8 @@ Die folgende Tabelle zeigt einige Beispiel-Tag-IDs, ihre Elemente und wie die Ta
    <td>/content/cq:tags/category/car</td>
    <td>category</td>
    <td>car</td>
-   <td>Auto</td>
-   <td>Auto</td>
+   <td>car</td>
+   <td>car</td>
    <td>/content/cq:tags/category/car</td>
   </tr>
  </tbody>
