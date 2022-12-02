@@ -13,13 +13,13 @@ exl-id: 74242ee5-1036-498b-88ef-2310ba2643ce
 source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
 workflow-type: tm+mt
 source-wordcount: '112'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
 # Verwalten von Dynamic Media-Assets {#managing-assets}
 
-Die Verwaltung von Dynamic Media-Assets - Bildern, Videos und interaktiven Assets - nach dem Hochladen umfasst viele Aufgaben, darunter die Vorschau, das Herunterladen oder Veröffentlichen.
+Das Verwalten von Dynamic Media-Assets – Bildern, Videos und interaktiven Assets – nach dem Hochladen umfasst eine Vielzahl von Aufgaben, darunter das Anzeigen von Bildern in der Vorschau sowie das Herunterladen oder Veröffentlichen von Bildern.
 
 In der Vorschau können Sie auch Bildvorgaben (nur für Bilder) oder Viewer-Vorgaben (für Videos und Bilder) anwenden. Sie können aber nicht beide Vorgabetypen auf ein Asset anwenden. Siehe [Anwenden von Viewer-Vorgaben](/help/assets/viewer-presets.md) und [Anwenden von Bildvorgaben](/help/assets/image-sets.md).
 

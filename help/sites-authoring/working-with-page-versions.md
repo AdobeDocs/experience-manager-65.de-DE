@@ -14,7 +14,7 @@ exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 source-git-commit: b11a97b9b00e6f80fb0243e234ed1dc2c004ed3a
 workflow-type: tm+mt
 source-wordcount: '1491'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,14 +30,14 @@ Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem besti
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
-* über die [Timeline-Leiste](#creating-a-new-version-timeline)
+* über die [Zeitleiste](#creating-a-new-version-timeline)
 * mithilfe der Option [Erstellen](#creating-a-new-version-create-with-a-selected-resource) (wenn eine Ressource ausgewählt ist)
 
 ### Erstellen einer neuen Version – Zeitleiste {#creating-a-new-version-timeline}
 
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die Spalte **Timeline**.
+1. Öffnen Sie die Spalte **Zeitleiste**.
 1. Klicken/tippen Sie auf den Pfeil neben dem Kommentarfeld, um die Optionen anzuzeigen:
 
    ![screen-shot_2019-03-05at112335](assets/screen-shot_2019-03-05at112335.png)
@@ -203,7 +203,7 @@ Timewarp ist eine Funktion, die den *Veröffentlichungsstatus* einer Seite zu ei
 
 >[!TIP]
 >
->[Timewarp kann auch mit Launches verwendet werden, um eine Vorschau der Zukunft anzuzeigen](/help/sites-authoring/launches.md) bei Ausführung von AEM 6.5.10.0 oder höher.
+>[Timewarp kann auch mit Launches verwendet werden, um eine Vorschau der Zukunft anzuzeigen](/help/sites-authoring/launches.md), wenn AEM 6.5.10.0 oder höher ausgeführt wird.
 
 Da die Erstellung von Inhalten ein fortlaufender und kollaborativer Prozess ist, besteht der Zweck von Timewarp darin, den Autoren zu ermöglichen, die veröffentlichte Website im Laufe der Zeit zu verfolgen, um zu verstehen, wie sich der Inhalt verändert hat. Diese Funktion verwendet die Seitenversionen, um den Zustand der Veröffentlichungsumgebung zu bestimmen.
 
@@ -224,11 +224,11 @@ Timewarp ist ein [Modus](/help/sites-authoring/author-environment-tools.md#page-
 
 1. Legen Sie im Dialogfeld ein Datum und eine Uhrzeit fest und tippen/klicken Sie auf **Datum einstellen**. Wenn Sie keine Zeit auswählen, wird die aktuelle Zeit standardmäßig eingestellt.
 
-   ![www-02](assets/wwpv-02.png)
+   ![wwpv-02](assets/wwpv-02.png)
 
 1. Die Seite wird entsprechend dem eingestellten Datum angezeigt. Der Timewarp-Modus ist durch die blaue Statusleiste am oberen Fensterrand gekennzeichnet. Verwenden Sie die Links in der Statusleiste, um ein neues Datum auszuwählen oder den Timewarp-Modus zu beenden.
 
-   ![www-03](assets/wwpv-03.png)
+   ![wwpv-03](assets/wwpv-03.png)
 
 ### Timewarp-Beschränkungen {#timewarp-limitations}
 
@@ -244,4 +244,4 @@ Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Au
 
 >[!CAUTION]
 >
->Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihrer Inhalte zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde als Tool entwickelt, das Autoren beim Verstehen und Erstellen ihres Inhalts unterstützen kann. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.

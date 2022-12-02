@@ -1,5 +1,5 @@
 ---
-title: Fehlerbehebung bei Dynamic Media   – Scene7-Modus
+title: Fehlerbehebung bei Dynamic Media – Scene7-Modus
 description: Durchführen einer Fehlerbehebung bei Dynamic Media im Scene7-Modus.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
@@ -14,8 +14,8 @@ feature: Troubleshooting
 mini-toc-levels: 3
 source-git-commit: 9c3df2491f99fe31e4b64b47442dd583af06974e
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '1386'
+ht-degree: 100%
 
 ---
 

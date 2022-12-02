@@ -5,7 +5,7 @@ exl-id: 25236af4-405a-4152-8308-34d983977e9a
 source-git-commit: 237de641ba02705f8171b1526946a4dc1b60b6a3
 workflow-type: tm+mt
 source-wordcount: '2392'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -262,15 +262,15 @@ Es gibt eine Reihe von Anforderungen beim Hinzufügen von Komponenten für virtu
 
 Die Möglichkeit, Container hinzuzufügen, auch wenn der entsprechende Container noch nicht in AEM erstellt wurde, wird unterstützt. Konzept und Ansatz ähneln den [virtuellen Blattkomponenten.](#virtual-leaf-components)
 
-Der Front-End-Entwickler kann die Container-Komponenten an den entsprechenden Stellen innerhalb der SPA hinzufügen. Diese Komponenten zeigen Platzhalter an, wenn sie im Editor in AEM geöffnet werden. Der Autor kann dann Komponenten und deren Inhalte in den Container einfügen, wodurch die erforderlichen Knoten in der JCR-Struktur erstellt werden.
+Frontend-Entwicklerinnen und -Entwickler können die Container-Komponenten an geeigneten Stellen innerhalb des SPA hinzufügen. Diese Komponenten zeigen Platzhalter an, wenn sie im Editor in AEM geöffnet werden. Autorinnen und Autoren können dann Komponenten und deren Inhalt zum Container hinzufügen, wodurch die erforderlichen Knoten in der JCR-Struktur erstellt werden.
 
-Wenn zum Beispiel ein Container unter `/root/responsivegrid` bereits existiert und der Entwickler einen neuen untergeordneten Container hinzufügen möchte:
+Wenn beispielsweise ein Container bereits unter `/root/responsivegrid` vorhanden ist und die Entwicklerinnen und Entwickler einen neuen untergeordneten Container hinzufügen möchten:
 
 ![Container-Speicherort](assets/container-location.png)
 
 `newContainer` existiert noch nicht in AEM.
 
-Bei der Bearbeitung der Seite, die diese Komponente in AEM enthält, wird ein leerer Platzhalter für einen Container angezeigt, in den der Autor Inhalte hinzufügen kann.
+Wenn Sie in AEM die Seite bearbeiten, die diese Komponente enthält, wird ein leerer Platzhalter für einen Container angezeigt, dem Autorinnen und Autoren Inhalte hinzufügen können.
 
 ![Container-Platzhalter](assets/container-placeholder.png)
 
@@ -282,7 +282,7 @@ Sobald der Autor dem Container eine untergeordnete Komponente hinzufügt, wird d
 
 ![Container mit Inhalten in JCR](assets/container-with-content-jcr.png)
 
-Je nach Bedarf des Autors können nun weitere Komponenten und Inhalte in den Container eingefügt werden, und die Änderungen werden beibehalten.
+Je nach Bedarf der Autorin bzw. des Autors können nun weitere Komponenten und Inhalte in den Container eingefügt werden, und die Änderungen werden beibehalten.
 
 #### Anforderungen und Einschränkungen {#container-limitations}
 
@@ -334,7 +334,7 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 1. Identifizieren Sie die Ebene, die als Stamm in AEM fungieren würde.
 
-   * Für unser Beispiel betrachten wir Folgendes: `wknd-spa-react/us/en` als Stamm des SPA. Das bedeutet, dass alles vor diesem Pfad nur AEM-Seiten/-Inhalte sind.
+   * In unserem Beispiel ist `wknd-spa-react/us/en` der Stamm der SPA. Das bedeutet, dass alles vor diesem Pfad nur AEM-Seiten/-Inhalte sind.
 
 1. Erstellen Sie eine neue Seite auf der erforderlichen Ebene.
 

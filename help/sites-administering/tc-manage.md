@@ -14,7 +14,7 @@ exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3442'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -54,8 +54,8 @@ AEM erkennt, ob ein Übersetzungsprojekt zur Erstübersetzung des Inhalts oder z
 
 Beispiel: Der Sprach-Stamm /content/geometrixx/fr wurde für die französische Übersetzung der Mastersprache /content/geometrixx/en erstellt. Es gibt keine anderen Seiten in der französischen Sprachkopie.
 
-* Es wird ein Übersetzungsprojekt für die Seite /content/geometrixx/en/products und alle untergeordneten Seiten erstellt, das mit der französischen Sprachkopie verknüpft ist. Da die Sprachkopie nicht die Seite /content/geometrixx/fr/products enthält, kopiert AEM sofort die Seite /content/geometrixx/en/products und alle untergeordneten Seiten in die französische Sprachkopie. Die Kopien werden auch in das Übersetzungsprojekt eingefügt.
-* Für die Seite /content/geometrixx/en und alle untergeordneten Seiten wird ein Übersetzungsprojekt erstellt, das auf die französische Sprachkopie ausgerichtet ist. Da die Sprachkopie die Seite enthält, die der Seite /content/geometrixx/en (dem Sprachstamm) entspricht, kopiert AEM die Seite /content/geometrixx/en und alle untergeordneten Seiten und fügt sie einem Launch hinzu. Die Kopien werden auch in das Übersetzungsprojekt eingefügt.
+* Es wird ein Übersetzungsprojekt für die Seite /content/geometrixx/en/products und alle untergeordneten Seiten erstellt, das mit der französischen Sprachkopie verknüpft ist. Da die Sprachkopie die Seite /content/geometrixx/fr/products nicht enthält, kopiert AEM die Seite /content/geometrixx/en/products und alle untergeordneten Seiten sofort in die französische Sprachkopie. Die Kopien werden auch in das Übersetzungsprojekt eingefügt.
+* Es wird ein Übersetzungsprojekt für die Seite /content/geometrixx/en/ und alle untergeordneten Seiten erstellt, das als Ziel die französische Sprachkopie hat. Da die Sprachkopie die Seite enthält, die der Seite /content/geometrixx/en (dem Sprach-Stamm) entspricht, kopiert AEM die Seite /content/geometrixx/en und alle untergeordneten Seiten und fügt sie einem Launch hinzu. Die Kopien werden auch in das Übersetzungsprojekt eingefügt.
 
 ## Erstellen von Übersetzungsprojekten mithilfe des Bedienfelds „Verweise“ {#creating-translation-projects-using-the-references-panel}
 
@@ -204,7 +204,7 @@ Ihr Wörterbuch befindet sich nun in Ihrem Übersetzungsauftrag.
 
 >[!NOTE]
 >
->Weitere Informationen zu i18n-Wörterbüchern finden Sie unter [Verwenden von Übersetzern zum Verwalten von Wörterbüchern](/help/sites-developing/i18n-translator.md).
+>Weitere Informationen zu i18n-Wörterbüchern finden Sie im Abschnitt [Verwenden des Übersetzers zur Verwaltung von Wörterbüchern](/help/sites-developing/i18n-translator.md).
 
 ## Hinzufügen von Tags zu einem Übersetzungsauftrag {#adding-tags-to-a-translation-job}
 
@@ -252,8 +252,8 @@ Die folgende Tabelle beschreibt die einzelnen Status, die ein Auftrag oder ein E
 | Status | Beschreibung |
 |---|---|
 | Entwurf | Der Übersetzungsauftrag wurde noch nicht gestartet. Übersetzungsaufträge haben den Status ENTWURF, wenn sie erstellt werden. |
-| Übermittelt | Dateien im Übersetzungsauftrag erhalten diesen Status, wenn sie erfolgreich an den Übersetzungs-Service gesendet wurden. Dieser Status kann nach der Ausgabe des Befehls Anforderungsumfang oder des Befehls Start auftreten. |
-| Berechnung angefragt | Für den Workflow &quot;Menschliche Übersetzung&quot;wurden die Dateien im Auftrag zum Scoping an den Übersetzungsanbieter gesendet. Er wird nach Ausgabe des Befehls Berechnung anfordern angezeigt. |
+| Übermittelt | Dateien im Übersetzungsauftrag erhalten diesen Status, wenn sie erfolgreich an den Übersetzungs-Service gesendet wurden. Dieser Status kann nach dem Befehl „Request Scope“ oder dem Befehl „Start“ auftreten. |
+| Berechnung angefragt | Für den Workflow für die menschliche Übersetzung wurden die Dateien des Auftrags zum Berechnen des Umfangs an den Übersetzungsdienstleister gesendet. Er wird nach Ausgabe des Befehls Berechnung anfordern angezeigt. |
 | Berechnung abgeschlossen | Der Anbieter hat die Berechnung des Übersetzungsauftrag abgeschlossen. |
 | Übersetzung beauftragt | Der Projektinhaber hat die Berechnung akzeptiert. Dieser Status zeigt an, dass der Übersetzungsanbieter mit der Übersetzung der Dateien im Auftrag beginnen soll. |
 | Übersetzung läuft | Bei einem Auftrag ist die Übersetzung einer oder mehrerer Dateien im Auftrag noch nicht abgeschlossen. Hinsichtlich eines Elements im Auftrag besagt der Status, dass das Element übersetzt wird. |
@@ -307,7 +307,7 @@ Weitere Informationen zu den Umfangsberechnungsergebnissen erhalten Sie von Ihre
 >
 >Die Berechnung des Umfangs ist optional. Sie können einen Übersetzungsauftrag auch ohne Berechnung des Umfangs starten.
 
-Wenn Sie einen Übersetzungsauftrag erfassen, lautet der Status des Auftrags `Scope Requested`. Wenn der Übersetzungsanbieter den Umfang zurückgibt, wird der Status in `Scope Completed`. Ist die Berechnung des Umfangs abgeschlossen, können Sie den Befehl Berechnung anzeigen zur Überprüfung der Ergebnisse der Umfangsberechnung verwenden.
+Wenn Sie den Umfang eines Übersetzungsauftrags berechnen, lautet der Status des Auftrags `Scope Requested`. Wenn der Übersetzungsanbieter die Berechnung des Umfangs übermittelt, wechselt der Status zu `Scope Completed`. Ist die Berechnung des Umfangs abgeschlossen, können Sie den Befehl Berechnung anzeigen zur Überprüfung der Ergebnisse der Umfangsberechnung verwenden.
 
 Die Umfangsberechnung funktioniert nur dann richtig, wenn der Übersetzungsanbieter diese Funktion unterstützt.
 
@@ -335,7 +335,7 @@ Nachdem Sie den Übersetzungsauftrag gestartet haben, wird in der Kachel „Übe
 
 ## Abbrechen von Übersetzungsaufträgen {#canceling-a-translation-job}
 
-Brechen Sie einen Übersetzungsauftrag ab, um den Übersetzungsprozess anzuhalten und den Übersetzungsanbieter daran zu hindern, weitere Übersetzungen auszuführen. Sie können einen Auftrag abbrechen, wenn der Auftrag die `Committed For Translation` oder `Translation In Progress` Status.
+Brechen Sie einen Übersetzungsauftrag ab, um den Übersetzungsprozess anzuhalten und den Übersetzungsanbieter daran zu hindern, weitere Übersetzungen auszuführen. Sie können einen Auftrag abbrechen, wenn der Auftrag den Status `Committed For Translation` oder `Translation In Progress` hat.
 
 1. Öffnen Sie in der Projektekonsole das Übersetzungsprojekt.
 1. Klicken oder tippen Sie in der Kachel „Übersetzungsauftrag“ auf das Menü „Befehle“ und dann auf „Abbrechen“.
@@ -379,7 +379,7 @@ So vergleichen Sie Sprachkopien mit dem Sprach-Master:
 1. Navigieren Sie in der **Sites-Konsole** zur Sprachkopie, die Sie vergleichen wollen.
 1. Öffnen Sie das Bedienfeld **[Verweise](/help/sites-authoring/basic-handling.md#references)**.
 1. Wählen Sie unter der Überschrift **Kopien** die Option **Sprachkopien** aus.
-1. Wählen Sie Ihre spezifische Sprachkopie aus und klicken Sie dann entweder auf &quot;Mit Übergeordneten vergleichen&quot;oder auf &quot;Mit vorherigen vergleichen&quot;.
+1. Wählen Sie Ihre spezifische Sprachkopie aus und klicken Sie dann entweder auf **Mit Stamm vergleichen** oder auf **Mit vorherigen vergleichen**, falls zutreffend.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
@@ -410,7 +410,7 @@ Füllen Sie Ihre Sprachkopie so, dass sie Inhalte aus der Stammsprache enthält,
 
    ![chlimage_1-38](assets/chlimage_1-38.jpeg)
 
-1. Klicken bzw. tippen Sie auf Sprachkopien aktualisieren, um die Übersetzungstools anzuzeigen, und konfigurieren Sie die Eigenschaften:
+1. Klicken bzw. tippen Sie auf Sprachkopien aktualisieren, um die Übersetzungs-Tools anzuzeigen, und konfigurieren Sie die Eigenschaften:
 
    * Wählen Sie die Option „Alle Unterseiten auswählen“ aus.
    * Wählen Sie für das Projekt die Option Nur Struktur erstellen aus.

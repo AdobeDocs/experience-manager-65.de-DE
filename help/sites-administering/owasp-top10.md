@@ -14,7 +14,7 @@ feature: Security
 source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
 workflow-type: tm+mt
 source-wordcount: '496'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Diese sind unten aufgeführt – zusammen mit einer Erläuterung, wie CRX mit ih
 
 ## 2. Cross-Site Scripting (XSS) {#cross-site-scripting-xss}
 
-Die allgemeine Praxis zur Schadensbegrenzung besteht in der Codierung aller Ausgaben benutzergenerierter Inhalte mithilfe einer serverseitigen XSS-Schutzbibliothek, die auf dem [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) und [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) basiert.
+Die allgemeine Praxis zur Schadensbegrenzung besteht in der Codierung aller Ausgaben benutzergenerierter Inhalte mithilfe einer Server-seitigen XSS-Schutzbibliothek, die auf dem [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) und [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) basiert.
 
 XSS hat sowohl bei den Tests als auch bei der Entwicklung eine hohe Priorität und alle festgestellten Probleme werden (in der Regel) umgehend behoben.
 
@@ -46,9 +46,9 @@ Jeglicher Zugriff auf Datenobjekte wird durch ein Repository vermittelt und dahe
 
 ## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
-Die Cross-Site Request Forgery (CSRF) wird durch das automatische Einfügen eines kryptografischen Tokens in alle Formulare und AJAX Anforderungen sowie die Überprüfung dieses Tokens auf dem Server für jede POST verhindert.
+Auf das Risiko der Cross-Site Request Forgery (CSRF) wird durch die automatische Einschleusung eines kryptografischen Tokens in alle Formulare und AJAX-Anforderungen sowie durch die Verifizierung dieses Tokens auf dem Server bei jedem POST eingegangen.
 
-Darüber hinaus enthält AEM einen auf Referrer-Header basierenden Filter, der konfiguriert werden kann für *only* POST-Anfragen von bestimmten Hosts zulassen (in einer Liste definiert).
+Darüber hinaus ist AEM mit einem Referrer-Header-basierten Filter ausgestattet, der so konfiguriert werden kann, dass er *nur* POST-Anforderungen von bestimmten Hosts (in einer Liste definiert) zulässt.
 
 ## 6. Sicherheitsrelevante Fehlkonfiguration {#security-misconfiguration}
 
@@ -68,7 +68,7 @@ Das Repository ermöglicht die Einstellung von [feinabgestimmten Rechten (wie du
 
 ## 9. Unzureichende Transportschichtsicherheit {#insufficient-transport-layer-protection}
 
-Dieses Risiko wird durch die Serverkonfiguration gemindert (z. B. nur HTTPS).
+Dieses Risiko wird durch die Server-Konfiguration gemindert (z. B. nur HTTPS).
 
 ## 10. Ungeprüfte Um- und Weiterleitungen {#unvalidated-redirects-and-forwards}
 

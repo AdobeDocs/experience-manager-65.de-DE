@@ -9,15 +9,15 @@ exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
 workflow-type: tm+mt
 source-wordcount: '580'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Vorschau von 3D-Assets in Adobe Experience Manager  {#previewing-3d-assets-aem}
 
-| Version | Artikellink |
+| Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=en) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/previewing-3d-assets.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 Experience Manager unterstützt das Hochladen, Bereitstellen und interaktive Anzeigen einer Vorschau von 3D-Assets als Teil des Authoring-Prozesses.
@@ -30,7 +30,7 @@ Der interaktive 3D-Viewer ist auf der Seite „Asset-Details“ in Experience Ma
 
 Die interaktive 3D-Vorschau unterstützt die folgenden Dateiformate:
 
-| 3D-Dateierweiterung | Dateiformat | MIME-Typ | Hinweise |
+| 3D-Dateierweiterung | Dateiformat | MIME-Typ | Anmerkungen |
 |---|---|---|---|
 | GLB | Binäre GL-Übertragung | model/gltf-binary |  |
 | GLTF | GL-Übertragungsformat | model/gltf+json | Siehe **Hinweis** unten. |
@@ -60,7 +60,7 @@ Wenn Sie die Kamera interaktiv handhaben, muss darüber hinaus die Kapazität de
 
 1. Stellen Sie sicher, dass Sie 3D-Assets in Adobe Experience Manager hochgeladen haben.
 Siehe [Unterstützte Formate für die 3D-Vorschau](#supported-3d-previewing-assets) und [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
-1. Von Experience Manager aus auf der **[!UICONTROL Navigation]** Seite, wählen Sie **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
+1. Klicken Sie in Experience Manager auf der Seite **[!UICONTROL Navigation]** auf **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**.
 
    ![Navigationsseite](/help/assets/assets-dm/navigation-assets.png)
 

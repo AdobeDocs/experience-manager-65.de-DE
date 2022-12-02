@@ -54,7 +54,7 @@ Der Speicherort der standardmäßigen `global.jsp` ist:
 
 >[!NOTE]
 >
->Der Pfad `/libs/wcm/global.jsp` , der von den Versionen CQ 5.3 und früheren Versionen verwendet wurde, ist mittlerweile veraltet.
+>Der Pfad `/libs/wcm/global.jsp`, der von den Versionen CQ 5.3 und früheren Versionen verwendet wurde, ist mittlerweile veraltet.
 
 ### Funktion von global.jsp, verwendeten APIs und Taglibs {#function-of-global-jsp-used-apis-and-taglibs}
 
@@ -93,7 +93,7 @@ Es gibt drei Methoden für den Zugriff auf Inhalte in AEM WCM:
 
 * Über das in `global.jsp` eingeführte `currentPage`-Objekt:
 
-   Das `currentPage`-Objekt ist eine Instanz einer Seite (siehe [AEM-API](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). Die Seitenklasse bietet verschiedene Methoden, um auf Inhalte zuzugreifen.
+   Das `currentPage`-Objekt ist eine Instanz einer Seite (siehe [AEM-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). Die Seitenklasse bietet verschiedene Methoden, um auf Inhalte zuzugreifen.
 
    Beispiel: `String pageTitle = currentPage.getTitle();`
 
@@ -177,7 +177,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
    >Eine Komponente für:
    >
    >* Die Touch-optimierte Benutzeroberfläche verwendet [Granite](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)-Komponenten
-   >* Die klassische Benutzeroberfläche verwendet [ExtJS-Widgets](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
+   >* Die klassische Benutzeroberfläche verwendet [ExtJS-Widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
 
 
    >[!NOTE]

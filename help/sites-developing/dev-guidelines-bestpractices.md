@@ -13,7 +13,7 @@ exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1091'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Es wird empfohlen, wie folgt an diese Herausforderung heranzugehen:
 
 * Verwenden Sie eine vorhandene Vorlage wieder, um einen neuen Seitentyp zu erstellen. Die Vorlage definiert grob die Seitenstruktur (Navigation, Elemente, Fenster usw.), die vom Design (CSS, Grafiken) weiter verfeinert wird.
 * Verwenden Sie das Absatzsystem (parsys/iparsys) auf den neuen Seiten.
-* Definieren Sie Zugriffsberechtigungen für den Designmodus der Absatzsysteme, damit diese nur von berechtigten Personen (normalerweise der Administrator) geändert werden können.
+* Definieren Sie Zugriffsberechtigungen für den Design-Modus der Absatzsysteme, damit diese nur von berechtigten Personen (normalerweise der Administrator) geändert werden können.
 * Definieren Sie die Komponenten, die im angegebenen Absatzsystem zulässig sind, damit Editoren die erforderlichen Komponenten auf der Seite einfügen können. In unserem Fall könnte es sich um eine Listenkomponente handeln, die eine Unterstruktur von Seiten durchlaufen und die Informationen nach vordefinierten Regeln extrahieren kann.
 * Editoren fügen die zulässigen Komponenten auf den Seiten, für die sie zuständig sind, hinzu und konfigurieren diese, um die angeforderte Funktionalität (Informationen) für das Unternehmen bereitzustellen.
 
@@ -52,7 +52,7 @@ Die folgenden allgemeinen Regeln für Entwickler sind in der Mehrzahl gängiger 
 
 Wenn Sie eigene Komponenten erstellen oder eine vorhandene Komponente anpassen, ist es häufig am einfachsten (und sichersten), vorhandene Definitionen wiederzuverwenden. Dies gilt auch für andere Elemente in AEM, zum Beispiel für Fehler-Handler.
 
-Kopieren Sie dazu die vorhandene Definition und überlagern Sie sie, wie nachfolgend beschrieben: Das heißt, das Kopieren der Definition aus `/libs` nach `/apps/<your-project>`. Diese neue Definition in `/apps`, kann entsprechend Ihren Anforderungen aktualisiert werden.
+Kopieren Sie dazu die vorhandene Definition und überlagern Sie sie, wie nachfolgend beschrieben: Mit anderen Worten, kopieren Sie die Definition von `/libs` zu `/apps/<your-project>`. Sie können die neue Definition in `/apps` Anforderungen entsprechend aktualisieren.
 
 >[!NOTE]
 >
@@ -64,12 +64,12 @@ Beispiel:
 
    Dazu gehörte das Überlagern einer Komponentendefinition:
 
-   * Erstellen Sie einen neuen Komponentenordner in `/apps/<website-name>/components/<MyComponent>` durch Kopieren einer vorhandenen Komponente:
+   * Erstellen Siedurch Kopieren einer vorhandenen Komponente einen neuen Komponentenordner in `/apps/<website-name>/components/<MyComponent>`:
 
       * Um beispielsweise die Textkomponente anzupassen, kopieren Sie diese
 
          * von `/libs/foundation/components/text`
-         * in `/apps/myProject/components/text`
+         * nach `/apps/myProject/components/text`
 
 * [Anpassen der vom Fehler-Handler angezeigten Seiten](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
@@ -78,18 +78,18 @@ Beispiel:
    * Kopieren Sie im Repository das/die Standardskript(e):
 
       * von `/libs/sling/servlet/errorhandler/`
-      * in `/apps/sling/servlet/errorhandler/`
+      * nach `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
->Sie dürfen **** keinerlei Änderungen im Pfad `/libs` vornehmen.
+>Sie dürfen **keinerlei** Änderungen im Pfad `/libs` vornehmen.
 >
 >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
 >Für die Konfiguration und andere Änderungen:
 >
->1. Kopieren Sie das Element in `/libs` nach `/apps`
->1. Änderungen vornehmen in `/apps`
+>1. Kopieren Sie das Element von `/libs` nach `/apps`
+>1. Nehmen Sie Änderungen, falls erforderlich, in `/apps` vor.
 
 
 ## Verwenden von JCR-Abfragen {#when-to-use-jcr-queries-and-when-not-to-use-them}
@@ -99,13 +99,13 @@ JCR-Abfragen sind sehr wirksam, wenn sie richtig eingesetzt werden. Sie sind bes
 * echte Benutzerabfragen, wie die Volltextsuche in Inhalten.
 * die Suche nach strukturierten Inhalten in einem gesamten Repository.
 
-   Stellen Sie in solchen Fällen sicher, dass Abfragen nur dann ausgeführt werden, wenn dies unbedingt erforderlich ist, z. B. bei der Aktivierung einer Komponente oder der Cache-Invalidierung (im Gegensatz zu Workflows-Schritten, Event Handlers, der Trigger bei Inhaltsänderungen, Filtern usw.).
+   Stellen Sie in diesen Fällen sicher, dass Abfragen nur ausgeführt werden, wenn unbedingt notwendig, z. B. bei Aktivierung einer Komponente oder Ungültigmachen eines Cache (jedoch nicht bei Workflow-Schritten, bei durch Inhaltsänderungen ausgelösten Ereignis-Handlern, Filtern usw.).
 
 JCR-Abfragen sollten nicht für reine Rendering-Anforderungen verwendet werden. Beispielsweise sind JCR-Abfragen nicht geeignet für
 
 * das Rendern von Navigationselementen
 * das Erstellen einer Übersicht über die „10 aktuellsten Nachrichten“
-* Anzeigen der Anzahl der Inhaltselemente
+* das Anzeigen der Anzahl von Inhaltselementen
 
 Verwenden Sie für das Rendern von Inhalten anstelle einer JCR-Abfrage den Navigationszugriff auf die Inhaltsstruktur.
 
@@ -117,7 +117,7 @@ Verwenden Sie für das Rendern von Inhalten anstelle einer JCR-Abfrage den Navig
 
 >[!NOTE]
 >
->Es lohnt sich auch, auf die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md).
+>Es ist auch sinnvoll, die [Sicherheitsprüfliste](/help/sites-administering/security-checklist.md) zu Rate zu ziehen.
 
 ### JCR- bzw. Repository-Sitzungen {#jcr-repository-sessions}
 
@@ -133,17 +133,17 @@ Mit Cross-Site Scripting (XSS) können Angreifer Code in Webseiten einfügen, di
 
 AEM filtert prinzipiell sämtliche vom Benutzer bereitgestellten Inhalte bei der Ausgabe. Bei Entwicklung und Tests hat das Vermeiden von XSS höchste Priorität.
 
-Außerdem eine Webanwendungs-Firewall, z. B. [mod_security für Apache](https://modsecurity.org)kann eine zuverlässige, zentrale Kontrolle über die Sicherheit der Bereitstellungsumgebung bieten und vor zuvor nicht erkannten Cross-Site-Scripting-Angriffen schützen.
+Zusätzlich kann eine Firewall in der Web-Anwendung wie [mod_security für Apache](https://modsecurity.org) die Sicherheit einer Entwicklungsumgebung zuverlässig und zentral steuern und diese vor bisher unerkannten Cross-Site-Scripting-Angriffen schützen.
 
 >[!CAUTION]
 >
->Der in AEM bereitgestellte Beispielcode alleine bietet keinen Schutz vor Angriffen dieser Art, sondern muss durch die Anforderungsfilterung der Firewall in der Web-Anwendung ergänzt werden.
+>Der in AEM bereitgestellte Beispiel-Code alleine bietet keinen Schutz vor Angriffen dieser Art, sondern muss durch die Anforderungsfilterung der Firewall in der Web-Anwendung ergänzt werden.
 
 Der XSS-API-Spickzettel enthält Informationen, die Sie für das Verwenden der XSS-API und Sichern einer AEM-Anwendung benötigen. Sie können diesen hier herunterladen:
 
 Der XSSAPI-Spickzettel.
 
-[Datei herunterladen](assets/xss_cheat_sheet_2016.pdf)
+[Datei laden](assets/xss_cheat_sheet_2016.pdf)
 
 ### Sichere Kommunikation vertraulicher Informationen {#securing-communication-for-confidential-information}
 

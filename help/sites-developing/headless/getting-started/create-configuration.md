@@ -1,17 +1,17 @@
 ---
 title: 'Schnellstartanleitung für Headless: Erstellen einer Konfiguration'
-description: Erstellen Sie eine Konfiguration als ersten Schritt zu den ersten Schritten mit Headless in AEM 6.5.
-exl-id: 48801599-f279-4e55-8033-9c418d2af5bb
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+description: Erstellen Sie als ersten Schritt eine Konfiguration, um mit Headless in AEM 6.5 zu beginnen.
+exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Schnellstartanleitung für Headless: Erstellen einer Konfiguration {#creating-configuration}
 
-Als ersten Schritt zu den ersten Schritten mit Headless in AEM 6.5 müssen Sie eine Konfiguration erstellen.
+Als ersten Schritt für den Einstieg in Headless in AEM 6.5 müssen Sie eine Konfiguration erstellen.
 
 ## Was ist eine Konfiguration? {#what-is-a-configuration}
 
@@ -27,9 +27,9 @@ Stellen Sie sich im Kontext von Headless-Content-Management in AEM eine Konfigur
 
 Ein Administrator muss eine Konfiguration nur einmal oder sehr selten erstellen, wenn für die Organisation Ihrer Inhaltsmodelle ein neuer Arbeitsbereich erforderlich ist. Für die Zwecke dieser ersten Schritte müssen wir nur eine Konfiguration erstellen.
 
-1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü die Option **Tools -> Allgemein -> Konfigurationsbrowser**.
-1. Bereitstellung einer **Titel** für Ihre Konfiguration.
-   * Ein Name wird automatisch basierend auf dem Titel generiert und entsprechend [AEM Benennungskonventionen.](/help/sites-developing/naming-conventions.md). Sie wird zum Knotennamen im Repository.
+1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü **Tools > Allgemein > Konfigurationsbrowser** aus.
+1. Geben Sie einen **Titel** für Ihre Konfiguration ein.
+   * Der Name wird automatisch auf Grundlage des Titels generiert gemäß den [AEM-Benennungskonventionen](/help/sites-developing/naming-conventions.md). Er wird zum Knotennamen im Repository.
 1. Überprüfen Sie die folgenden Optionen:
    * **Inhaltsfragmentmodelle**
    * **Persistente GraphQL-Abfragen**

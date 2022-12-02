@@ -14,25 +14,25 @@ exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '500'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
 # Externalisieren von URLs{#externalizing-urls}
 
-In AEM **Externalizer** ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad (z. B. `/path/to/my/page`) in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`), indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird.
+In AEM ist der **Externalizer** ein OSGI-Service, der es Ihnen ermöglicht, einen Ressourcenpfad (z. B. `/path/to/my/page`) programmgesteuert in eine externe und absolute URL umzuwandeln (z. B. `https://www.mycompany.com/path/to/my/page`), indem der Pfad mit einem vorangestellten vorkonfigurieren DNS versehen wird.
 
-Da eine Instanz ihre extern sichtbare URL nicht kennen kann, wenn sie hinter einer Web-Ebene ausgeführt wird, und weil manchmal ein Link außerhalb des Anforderungsbereichs erstellt werden muss, bietet dieser Dienst einen zentralen Ort, um diese externen URLs zu konfigurieren und zu erstellen.
+Dieser Dienst bietet einen zentralen Ort für die Konfiguration und Erstellung von externen URLs, weil eine Instanz ihre extern sichtbare URL nicht kennen kann, wenn sie hinter einer Web-Layer läuft, und weil manchmal ein Link außerhalb des Anfrageumfangs erstellt werden muss.
 
 Auf dieser Seite wird beschrieben, wie Sie den **Externalizer**-Dienst konfigurieren und verwenden. Weitere Informationen finden Sie in den [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Konfigurieren des Externalizer-Diensts {#configuring-the-externalizer-service}
 
-Die **Externalizer** -Dienst ermöglicht es Ihnen, zentral mehrere Domänen zu definieren, die zum programmatischen Präfix von Ressourcenpfaden verwendet werden können. Alle Domänen werden anhand eines eindeutigen Namens zum programmgesteuerten Verweisen auf die Domäne identifiziert.
+Der **Externalizer**-Dienst ermöglicht es Ihnen, zentral mehrere Domains zu definieren, die für das programmgesteuerte Voranstellen von Präfixen für Ressourcenpfade verwendet werden können. Alle Domains werden anhand eines eindeutigen Namens zum programmgesteuerten Verweisen auf die Domain identifiziert.
 
-Definieren Sie eine Domänenzuordnung für den **Externalizer**-Service wie folgt:
+Definieren Sie eine Domain-Zuordnung für den **Externalizer**-Service wie folgt:
 
-1. Navigieren Sie zum Konfigurationsmanager über **Instrumente**, dann **Web-Konsole** oder geben Sie ein:
+1. Wechseln Sie zum Konfigurations-Manager über **Tools** > **Web-Konsole** oder geben Sie Folgendes ein:
 
    `https://<host>:<port>/system/console/configMgr`
 
@@ -44,19 +44,19 @@ Definieren Sie eine Domänenzuordnung für den **Externalizer**-Service wie folg
 
    ![aem-externalizer-01](assets/aem-externalizer-01.png)
 
-1. Definieren Sie eine **Domänen** mapping: Eine Zuordnung besteht aus einem eindeutigen Namen, der im Code verwendet werden kann, um auf die Domäne, ein Leerzeichen und die Domäne zu verweisen:
+1. Definieren einer **Domain**-Zuordnung: Eine Zuordnung besteht aus einem eindeutigen Namen, der im Code verwendet werden kann, um auf die Domain, ein Leerzeichen und die Domain zu verweisen:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
    Dabei gilt:
 
-   * **schema** ist normalerweise http oder https, kann aber auch ftp sein usw.
+   * **Schema** ist normalerweise „http“ oder „https“, kann aber auch z. B. „ftp“ sein.
 
       * Verwenden Sie bei Bedarf HTTPS, um HTTPS-Links zu erzwingen.
-      * wird verwendet, wenn der Client-Code das Schema bei der Anforderung der Externalisierung einer URL nicht außer Kraft setzt.
-   * **server** ist der Hostname (kann ein Domänenname oder eine IP-Adresse sein).
-   * **port** (optional) ist die Anschlussnummer.
-   * **contextpath** (optional) wird nur festgelegt, wenn AEM als Web-App unter einem anderen Kontextpfad installiert ist.
+      * Es wird verwendet, wenn der Client-Code das Schema nicht überschreibt, wenn er die Externalisierung einer URL anfordert.
+   * **Server** ist der Host-Name (kann ein Domain-Name oder eine IP-Adresse sein).
+   * **Port** (optional) ist die Portnummer.
+   * **Kontextpfad** (optional) wird nur festgelegt, wenn AEM als Web-App unter einem anderen Kontextpfad installiert wird.
 
    Beispiel: `production https://my.production.instance`
 
@@ -68,13 +68,13 @@ Definieren Sie eine Domänenzuordnung für den **Externalizer**-Service wie folg
 
    >[!NOTE]
    >
-   >Mit einer benutzerdefinierten Konfiguration können Sie eine neue Kategorie hinzufügen, z. B. `production`, `staging` oder sogar externe Nicht-AEM-Systeme wie `my-internal-webservice`. Es ist nützlich, die Hartkodierung solcher URLs an verschiedenen Stellen in der Codebasis eines Projekts zu vermeiden.
+   >Mit einer benutzerdefinierten Konfiguration können Sie eine neue Kategorie hinzufügen, z. B. `production`, `staging` oder sogar externe Nicht-AEM-Systeme wie `my-internal-webservice`. Es ist nützlich, die Hartkodierung solcher URLs an verschiedenen Stellen in der Code-Basis eines Projekts zu vermeiden.
 
 1. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
 >[!NOTE]
 >
->Adobe empfiehlt, dass Sie [die Konfiguration zum Repository hinzufügen](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository).
+>Adobe empfiehlt, dass Sie [die Konfiguration dem Repository hinzufügen](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository).
 
 ### Verwenden des Externalizer-Diensts {#using-the-externalizer-service}
 

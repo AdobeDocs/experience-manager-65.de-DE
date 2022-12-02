@@ -40,13 +40,13 @@ Es gibt drei Möglichkeiten, Livefyre in eine benutzerdefinierte AEM-Komponente 
 **Methode 1: Designer App-Implementierung**
 
 * **Was:** Einfachste und schnellste Möglichkeit zur Integration einer Livefyre-App. Sie können innerhalb von Minuten benutzerdefinierten JavaScript-Einbettungs-Code zur Integration einer Media Wall-App entwerfen, konfigurieren und generieren.
-* ****[Erstellen, Anzeigen, Veröffentlichen und Einbetten einer Media Wall-App](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
+* **Wie:** [Erstellen, Anzeigen, Veröffentlichen und Einbetten einer Media Wall-App](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
 * **Beispiel:** [https://codepen.io/dharafyre/pen/bvGrLo](https://codepen.io/dharafyre/pen/bvGrLo)
 
 **Methode 2: SDK-Implementierung**
 
-* **Was:**[Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) ist die Basisbibliotheksdatei für die Apps und Autorisierung auf einer Site. Sie definiert das globale *window.Livefyre*-Objekt und eine einzelne öffentliche Methode, *Livefyre.required*, die zum Laden anderer Livefyre-JavaScript-Bibliotheken verwendet werden kann. Diese sind beim Einbetten von Livefyre-Apps sowie zur Integration in Drittanbieter-Plattformen zur Benutzerauthentifizierung hilfreich.
+* **Was:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) ist die Basisbibliotheksdatei für die Apps und Autorisierung auf einer Site. Sie definiert das globale *window.Livefyre*-Objekt und eine einzelne öffentliche Methode, *Livefyre.required*, die zum Laden anderer Livefyre-JavaScript-Bibliotheken verwendet werden kann. Diese sind beim Einbetten von Livefyre-Apps sowie zur Integration in Drittanbieter-Plattformen zur Benutzerauthentifizierung hilfreich.
 
 * **Wie**: [Verwenden des Streamhub-Wall-Pakets des Livefyre JavaScript-SDK ](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-media-wall-integration.html)
 
@@ -105,20 +105,20 @@ Es gibt drei Möglichkeiten, die Livefyre Comments-App in eine benutzerdefiniert
 **Methode 1: Designer App-Implementierung**
 
 * **Was:** Einfachste und schnellste Möglichkeit zur Integration einer Livefyre-App. Sie können innerhalb von Minuten benutzerdefinierten JavaScript-Einbettungs-Code zur Integration einer Media Wall-App entwerfen, konfigurieren und generieren.
-* ****[Erstellen, Anzeigen, Veröffentlichen und Einbetten einer Comments-App](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
+* **Wie:** [Erstellen, Anzeigen, Veröffentlichen und Einbetten einer Comments-App](https://experienceleague.adobe.com/docs/livefyre/using/apps/c-create-an-app.html)
 
-* **Beispiel:**[https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
+* **Beispiel:** [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
 **Methode 2: SDK-Implementierung**
 
-* **Was:**[Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) ist die Basisbibliotheksdatei für die Apps und Autorisierung auf einer Site. Sie definiert das globale *window.Livefyre*-Objekt und eine einzelne öffentliche Methode, *Livefyre.required*, die zum Laden anderer Livefyre-JavaScript-Bibliotheken verwendet werden kann. Diese sind beim Einbetten von Livefyre-Apps sowie zur Integration in Drittanbieter-Plattformen zur Benutzerauthentifizierung hilfreich.
+* **Was:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) ist die Basisbibliotheksdatei für die Apps und Autorisierung auf einer Site. Sie definiert das globale *window.Livefyre*-Objekt und eine einzelne öffentliche Methode, *Livefyre.required*, die zum Laden anderer Livefyre-JavaScript-Bibliotheken verwendet werden kann. Diese sind beim Einbetten von Livefyre-Apps sowie zur Integration in Drittanbieter-Plattformen zur Benutzerauthentifizierung hilfreich.
 
 * **Wie:**
 
    * Erstellen Sie eine Sammlung/App mit dem [CollectionMeta-Token](https://experienceleague.adobe.com/docs/livefyre/implementation/getting-started/implementation-process/c-collectionmeta-tokent.html).
    * Integrieren Sie die [Comments-App](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/comments/c-comments-integration.html) mithilfe der Livefyre.js-Einbettungs-Code-Struktur in Sites.
 
-* **Beispiel:**[https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
+* **Beispiel:** [https://codepen.io/dharafyre/pen/oYoJdP](https://codepen.io/dharafyre/pen/oYoJdP)
 
 Informationen zu erweiterten Anpassungen mit dem SDK finden Sie unter [Streamhub-SDKs](https://github.com/Livefyre/streamhub-sdk).
 
@@ -171,14 +171,14 @@ Es gibt zwei Möglichkeiten, die Livefyre Reviews-App in eine benutzerdefinierte
 
 **Methode 1: SDK-Implementierung**
 
-* **Was:**[Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) ist die Basisbibliotheksdatei für die Apps und Autorisierung auf einer Site. Sie definiert das globale *window.Livefyre*-Objekt und eine einzelne öffentliche Methode, *Livefyre.required*, die zum Laden anderer Livefyre-JavaScript-Bibliotheken verwendet werden kann. Diese sind beim Einbetten von Livefyre-Apps sowie zur Integration in Drittanbieter-Plattformen zur Benutzerauthentifizierung hilfreich.
+* **Was:** [Livefyre.js](https://experienceleague.adobe.com/docs/livefyre/implementation/c-livefyre_js.html) ist die Basisbibliotheksdatei für die Apps und Autorisierung auf einer Site. Sie definiert das globale *window.Livefyre*-Objekt und eine einzelne öffentliche Methode, *Livefyre.required*, die zum Laden anderer Livefyre-JavaScript-Bibliotheken verwendet werden kann. Diese sind beim Einbetten von Livefyre-Apps sowie zur Integration in Drittanbieter-Plattformen zur Benutzerauthentifizierung hilfreich.
 
 * **Wie:**
 
    * Erstellen Sie das [CollectionMeta-Token](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html), um Metadaten anzugeben, die in der Reviews-Sammlung gespeichert werden sollen.
    * Integrieren Sie die [Reviews-App](https://experienceleague.adobe.com/docs/livefyre/implementation/app-integrations/c-reviews-integration.html) mithilfe der *Livefyre.js*-Einbettungs-Code-Struktur in Sites.
 
-* **Beispiel:**[https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
+* **Beispiel:** [https://codepen.io/dharafyre/pen/GXgvvd](https://codepen.io/dharafyre/pen/GXgvvd)
 
 Informationen zu erweiterten Anpassungen mit dem SDK finden Sie unter [Streamhub-SDKs](https://github.com/Livefyre/streamhub-sdk).
 

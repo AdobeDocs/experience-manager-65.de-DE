@@ -3,22 +3,22 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: AEM 6.5 Classic UI Authoring-Benutzerhandbuch
-user-guide-description: In diesem Handbuch werden die Konzepte des Authoring in AEM klassischen Benutzeroberfläche behandelt.
+user-guide-title: AEM 6.5 – Benutzerhandbuch zur Inhaltserstellung für die klassische Benutzeroberfläche
+user-guide-description: In diesem Handbuch werden die Authoring-Konzepte in AEM mit der klassischen Benutzeroberfläche erläutert.
 feature: Authoring
 role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '264'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 
-# AEM 6.5 Classic UI Authoring-Benutzerhandbuch {#classic-ui}
+# AEM 6.5 – Benutzerhandbuch zur Inhaltserstellung für die klassische Benutzeroberfläche {#classic-ui}
 
-+ [Übersicht über das Authoring-Handbuch für die klassische Benutzeroberfläche](home.md)
-+ Einführung in das Authoring mit der klassischen Benutzeroberfläche {#introduction}
++ [Benutzerhandbuch zur Inhaltserstellung für die klassische Benutzeroberfläche – Überblick](home.md)
++ Einführung in die Inhaltserstellung mit der klassischen Benutzeroberfläche {#introduction}
    + [Erste Schritte für Autoren](classic-page-author-first-steps.md)
    + [Bearbeiten in der klassischen Benutzeroberfläche](classicui.md)
    + [Arbeiten mit der Autorenumgebung](author-env.md)
@@ -59,7 +59,7 @@ ht-degree: 84%
    + [Erstellen von Launches](classic-launches-creating.md)
    + [Bearbeiten von Launches](classic-launches-editing.md)
    + [Weiterleiten von Launches](classic-launches-promoting.md)
-+ Personalisierung    {#personalization}
++ Personalisierung {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnenmanagement](classic-personalization-campaigns.md)
    + [Landing Pages](classic-personalization-campaigns-landingpage.md)
@@ -78,11 +78,11 @@ ht-degree: 84%
    + [Adobe Campaign-Komponenten](classic-personalization-ac-components.md)
    + [Targeting von Adobe Campaign](classic-personalization-ac-target.md)
    + [Erstellen von Adobe Campaign-Formularen in AEM](classic-personalization-ac-forms.md)
-+ Asset-Authoring in der klassischen Benutzeroberfläche {#assets}
++ Assets: Inhaltserstellung in der klassischen Benutzeroberfläche {#assets}
    + [Arbeiten mit Assets](classicui-assets.md)
    + [Bereitstellen von Dynamic Media-Assets](dynamic-media-assets-delivering.md)
    + [Hinzufügen von Dynamic Media-Assets zu Seiten](dynamic-media-assets-adding-to-page.md)
    + [Hinzufügen von Scene7-Features zu Ihrer Seite](manage-assets-classic-s7.md)
-   + [Video   ](manage-assets-classic-s7-video.md)
+   + [Video ](manage-assets-classic-s7-video.md)
    + [Arbeiten mit Dynamic Media](dynamic-media-assets.md)
    + [Benennungskonventionen für Assets-Tests](asset-naming-conventions.md)

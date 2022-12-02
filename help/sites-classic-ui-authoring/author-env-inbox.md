@@ -14,7 +14,7 @@ exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten, bei
 Diese Benachrichtigungen werden je nach Benachrichtigungstyp in zwei verschiedene Posteingänge zugestellt:
 
 * Ein Posteingang, in dem die Benachrichtigungen empfangen werden, die Sie im Rahmen von Abonnements erhalten. Dieser wird im folgenden Abschnitt beschrieben.
-* Ein spezieller Posteingang für Workflow-Elemente wird im Abschnitt [Teilnehmen an Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) Dokument.
+* Ein spezieller Posteingang für Workflow-Elemente wird im Dokument [Teilnehmen an Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) beschrieben.
 
 ## Anzeigen von Benachrichtigungen {#viewing-your-notifications}
 
@@ -95,7 +95,7 @@ Wenn eine Seite gelöscht oder verschoben wurde, wird das Löschen automatisch r
    * Klicken Sie auf die Tabellenzelle **Pfad**, und geben Sie den Pfad ein, z. B. `/content/docs`.
 
    * Um über alle Seiten in der Unter-Baumstruktur Benachrichtigungen zu erhalten, setzen Sie **Exakt?** auf **Nein**.
-Um über nur über die angegebene Seite Benachrichtigungen zu erhalten, setzen Sie**Exakt?** auf **Ja**.
+Um über nur über die angegebene Seite Benachrichtigungen zu erhalten, setzen Sie **Exakt?** auf **Ja**.
 
    * Um die Regel zu aktivieren, setzen Sie **Regel** auf **Zulassen**. Ist dieser Wert auf **Ablehnen** gesetzt, wird die Regel deaktiviert, aber nicht entfernt, und kann zu einem späteren Zeitpunkt aktiviert werden.
 

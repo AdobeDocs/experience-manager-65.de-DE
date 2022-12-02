@@ -12,7 +12,7 @@ exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
 source-git-commit: 8561eb8b4b5164188ebf387c8f0344b462b830ec
 workflow-type: tm+mt
 source-wordcount: '3467'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -28,11 +28,11 @@ Die Veröffentlichungseinstellungen von Dynamic Media sind für erfahrene Websit
 
 Auf der Seite „Veröffentlichungseinstellungen von Dynamic Media“ werden Standardeinstellungen festgelegt, die festlegen, wie Assets von Adobe Dynamic Media-Servern für Websites oder Programme bereitgestellt werden. Wenn keine Einstellung festgelegt ist, stellt der Adobe Dynamic Media-Server ein Asset gemäß einer Standardeinstellung bereit, die auf der Seite „Veröffentlichungseinstellungen von Dynamic Media“ konfiguriert wurde.
 
-Siehe auch [Optional - Einrichtung und Konfiguration von Dynamic Media - Einstellungen für den Scene7-Modus](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) für weitere optionale Konfigurationsaufgaben.
+Informationen zu weiteren optionalen Konfigurationsaufgaben finden Sie unter [Optional – Einrichtung und Konfiguration der Scene7-Modus-Einstellungen von Dynamic Media](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
 
 >[!NOTE]
 >
->Sie möchten ein Upgrade von Dynamic Media Classic auf Dynamic Media auf Adobe Experience Manager durchführen? Die Seite [Allgemeine Einstellungen](/help/assets/dm-general-settings.md) und die Seite zu Veröffentlichungseinstellungen in Dynamic Media werden vorab mit den Werten ausgefüllt, die von Ihrem Dynamic Media Classic-Konto übernommen werden. Die Ausnahmen sind alle Werte, die im Bereich **[!UICONTROL Standardmäßige Upload-Optionen]** auf der Seite „Allgemeine Einstellungen“ angezeigt werden. Diese Werte befinden sich bereits in Experience Manager. Alle Änderungen, die Sie unter **[!UICONTROL Standardmäßige Upload-Optionen]** auf einer der fünf Registerkarten in der Experience Manager-Benutzeroberfläche vornehmen, werden in Dynamic Media, nicht jedoch in Dynamic Media Classic angezeigt. Alle anderen Einstellungen und Werte in [Allgemeine Einstellungen](/help/assets/dm-general-settings.md) und die Seite zur Veröffentlichungseinstellungen zwischen Dynamic Media Classic und Dynamic Media in Experience Manager verwaltet.
+>Sie möchten ein Upgrade von Dynamic Media Classic auf Dynamic Media auf Adobe Experience Manager durchführen? Die Seite [Allgemeine Einstellungen](/help/assets/dm-general-settings.md) und die Seite zu Veröffentlichungseinstellungen in Dynamic Media werden vorab mit den Werten ausgefüllt, die von Ihrem Dynamic Media Classic-Konto übernommen werden. Die Ausnahmen sind alle Werte, die im Bereich **[!UICONTROL Standardmäßige Upload-Optionen]** auf der Seite „Allgemeine Einstellungen“ angezeigt werden. Diese Werte befinden sich bereits in Experience Manager. Alle Änderungen, die Sie unter **[!UICONTROL Standardmäßige Upload-Optionen]** auf einer der fünf Registerkarten in der Experience Manager-Benutzeroberfläche vornehmen, werden in Dynamic Media, nicht jedoch in Dynamic Media Classic angezeigt. Alle anderen Einstellungen und Werte auf der Seite [Allgemeine Einstellungen](/help/assets/dm-general-settings.md) und der Seite „Veröffentlichungseinstellungen“ werden von Dynamic Media Classic und Dynamic Media in Experience Manager verwaltet.
 
 **So konfigurieren Sie den Dynamic Media Publish Setup Image Server:**
 
@@ -65,7 +65,7 @@ Auf der Seite „Image-Server“ werden Standardeinstellungen für die Bereitste
 
 **[!UICONTROL Client-Adresse]**: Hier können Sie eine oder mehrere IP-Adressen oder IP-Adressbereiche angeben. Wenn diese Option angegeben ist, werden Anfragen an diesen Bildkatalog abgelehnt, wenn sie von einem Client stammen, der eine nicht aufgeführte IP-Adresse hat. Diese Regel gilt sowohl für die Bereitstellung von Bildern als auch für gerenderte Bilder.
 
-![Registerkarte Sicherheit ](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Die Registerkarte Sicherheit zeigt das Feld „IP zulassen“.*
+![Registerkarte „Sicherheit“](/help/assets/assets-dm/dm-ipallowlist.png)<br>*Die Registerkarte „Sicherheit“ zeigt das Feld „IP zulassen“.*
 
 ### Registerkarte „Katalogverwaltung“ {#catalog-management-tab}
 
@@ -131,7 +131,7 @@ Siehe auch [IccRenderIntent-Parameter](https://experienceleague.adobe.com/docs/d
 >
 >Im Allgemeinen ist es am besten, den standardmäßigen Rendering-Intent für die ausgewählte Farbeinstellung zu verwenden. Dieser wurde von Adobe auf die Einhaltung von Branchenstandards getestet. Wenn Sie beispielsweise eine Farbeinstellung für Nordamerika oder Europa auswählen, lautet der standardmäßige Rendering-Intent der Farbkonvertierung **[!UICONTROL Relativ farbmetrisch]**. Wenn Sie eine Farbeinstellung für Japan auswählen, lautet der standardmäßige Rendering-Intent der Farbkonvertierung **[!UICONTROL Wahrnehmungsoptimiert]**.
 
-| Einstellung | Eigenschaften |
+| Einstellung | Merkmale |
 | --- | --- |
 | **[!UICONTROL CMYK-Standardfarbraum]** | Gibt den Namen des ICC-Farbprofils an, das als Arbeitsprofil für CMYK-Daten verwendet werden soll. Wenn **[!UICONTROL Keine Angabe]** ausgewählt ist, wird das Farbmanagement für diesen Bildkatalog deaktiviert, wenn CMYK-Quellbilder verwendet werden. Alle CMYK-Arbeitsbereiche sind geräteabhängig, sie basieren also auf tatsächlichen Tinten- und Papierkombinationen. Die von Adobe bereitgestellten CMYK-Arbeitsbereiche basieren auf den üblichen kommerziellen Druckbedingungen.<br> Siehe auch [IccProfileCMYK-Parameter](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Graustufen-Standardfarbraum]** | Gibt den Namen des ICC-Farbprofils an, das als Arbeitsprofil für Graustufendaten verwendet werden soll. Wenn **[!UICONTROL Keine Angabe]** ausgewählt ist, wird das Farbmanagement für diesen Bildkatalog deaktiviert, wenn Quellbilder mit Graustufen verwendet werden.<br>Siehe auch [IccProfileGray-Parameter](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch. |

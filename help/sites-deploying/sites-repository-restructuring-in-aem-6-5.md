@@ -13,22 +13,22 @@ exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '1462'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
 # Repository-Neustrukturierung in AEM 6.5 {#sites-repository-restructuring-in-aem}
 
-Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) -Seite verwenden, sollten Kunden, die auf AEM 6.5 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen zu bewerten, die sich auf die AEM Sites-Lösung auswirken. Einige Änderungen erfordern während des Aktualisierungsprozesses von AEM 6.5 Arbeitsaufwand, während andere bis zu einer zukünftigen Aktualisierung verschoben werden können.
+Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollte Kundschaft, die auf AEM 6.5 aktualisiert, diese Seite nutzen, um den Arbeitsaufwand im Zusammenhang mit Repository-Neustrukturierungen abzuschätzen, die sich auf AEM Sites auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Upgrades auf AEM 6.5, während andere auf eine zukünftige Aktualisierung verschoben werden können.
 
 **Mit der Aktualisierung auf 6.5**
 
 * [ContextHub-Segmente](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#contexthub-segments)
 
-**Vor der künftigen Aktualisierung**
+**Vor einem künftigen Upgrade**
 
 * [Adobe Analytics-Client-Bibliotheken](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-analytics-client-libraries)
-* [Vom klassischen Microsoft Word zu Webseiten-Designs](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#classic-microsoft-word-to-web-page-designs)
+* [Vom klassischen Microsoft Word zu Web-Seiten-Designs](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#classic-microsoft-word-to-web-page-designs)
 * [Konfigurationen für den Mobilgeräte-Emulator](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#mobile-device-emulator-configurations)
 * [Blueprint-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-blueprint-configurations)
 * [Rollout-Konfigurationen für den Multi-Site-Manager](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#multi-site-manager-rollout-configurations)
@@ -59,16 +59,16 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
    <td><p>Wenn alle neuen oder modifizierten ContextHub-Segmente für die Bearbeitung in der Versionsverwaltung und nicht in AEM vorgesehen sind, müssen Sie an den neuen Speicherort migriert werden:</p>
     <ol>
-     <li>Kopieren Sie alle neuen oder modifizierten ContextHub-Segmente vom vorherigen Speicherort an den entsprechenden neuen Speicherort (/<code>apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>)</li>
-     <li>Aktualisieren Sie Verweise auf ContextHub-Segmente am vorherigen Speicherort auf die migrierten ContextHub-Segmente an den neuen Speicherorten (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
+     <li>Kopieren Sie alle neuen oder geänderten ContextHub-Segmente vom vorherigen Speicherort an den neuen Speicherort (/<code>apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>).</li>
+     <li>Aktualisieren Sie die Verweise auf ContextHub-Segmente am vorherigen Speicherort auf die migrierten ContextHub-Segmente an den neuen Speicherorten (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
     </ol> <p>Die folgende Abfrage mit QueryBuilder findet alle Verweise auf ContextHub-Segmente in den vorherigen Speicherorten.<br /> <br /> <code class="code">path=/content
        property=cq:segments
        property.operation=like
-       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Dies kann über <a href="/help/sites-developing/querybuilder-api.md" target="_blank">Benutzeroberfläche von QueryBuilder Debugger AEM</a>. Beachten Sie, dass es sich hierbei um eine durchgehende Abfrage handelt. Führen Sie sie daher nicht gegen die Produktion aus und stellen Sie sicher, dass die Traversal-Beschränkungen nach Bedarf angepasst werden.</p> </td>
+       property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Dies kann über die <a href="/help/sites-developing/querybuilder-api.md" target="_blank">Benutzeroberfläche von QueryBuilder Debugger AEM</a> geschehen. Beachten Sie, dass es sich um eine traversierende Abfrage handelt, führen Sie sie also nicht gegen die Produktion aus und stellen Sie sicher, dass die Traversalgrenzen bei Bedarf angepasst werden.</p> </td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td><p>ContextHub-Segmente, die am vorherigen Speicherort erhalten bleiben, werden unter <strong>AEM &gt; Personalisierung &gt; Zielgruppen</strong> als schreibgeschützt angezeigt.</p> <p>Wenn ContextHub-Segmente in AEM bearbeitbar sein sollen, müssen sie an den neuen Speicherort (<code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>). Alle neuen Segmente von ContentHub, die in AEM erstellt wurden, bleiben am neuen Speicherort (<code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>).</p> <p>Die Seiteneigenschaften von AEM Sites erlauben nur den vorherigen Speicherort (<code>/etc</code>) oder einem einzelnen neuen Speicherort (<code>/apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>) ausgewählt werden, sodass ContextHub-Segmente entsprechend migriert werden müssen.</p> <p>Alle ungenutzten ContextHub-Segmente von AEM-Referenz-Sites können entfernt werden und müssen und nicht an den neuen Speicherort migriert werden:</p>
+   <td><p>ContextHub-Segmente, die am vorherigen Speicherort erhalten bleiben, werden unter <strong>AEM &gt; Personalisierung &gt; Zielgruppen</strong> als schreibgeschützt angezeigt.</p> <p>Wenn ContextHub-Segmente in AEM bearbeitbar sein sollen, müssen sie an den neuen Speicherort (<code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>) migriert werden. Alle neuen ContentHub-Segmente, die in AEM erstellt werden, bleiben am neuen Speicherort (<code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>) erhalten.</p> <p>Die Seiteneigenschaften von AEM Sites erlauben lediglich die Auswahl des vorherigen Speicherorts (<code>/etc</code>) oder eines einzelnen neuen Speicherorts (<code>/apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>), daher müssen ContextHub-Segmente entsprechend migriert werden.</p> <p>Alle ungenutzten ContextHub-Segmente von AEM-Referenz-Sites können entfernt werden und müssen und nicht an den neuen Speicherort migriert werden:</p>
     <ul>
      <li>/etc/segmentation/geometrixx/</li>
      <li>/etc/segmentation/geometrixx-outdoors</li>
@@ -77,7 +77,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
  </tbody>
 </table>
 
-## Vor der künftigen Aktualisierung {#prior-to-upgrade}
+## Vor einem künftigen Upgrade {#prior-to-upgrade}
 
 ### Adobe Analytics-Client-Bibliotheken {#adobe-analytics-client-libraries}
 
@@ -120,7 +120,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
  </tbody>
 </table>
 
-### Vom klassischen Microsoft Word zu Webseiten-Designs {#classic-microsoft-word-to-web-page-designs}
+### Vom klassischen Microsoft Word zu Web-Seiten-Designs {#classic-microsoft-word-to-web-page-designs}
 
 <table>
  <tbody>
@@ -139,8 +139,8 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
      <li>Kopieren Sie die Designs vom bisherigen Speicherort an den neuen Speicherort (<code>/apps</code>).</li>
      <li>Wandeln Sie die gesamten CSS-, JavaScript- und statischen Ressourcen im Design in eine <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Client-Bibliothek</a> mit <code>allowProxy = true</code> um.</li>
      <li>Aktualisieren Sie Verweise auf den vorherigen Speicherort in der Eigenschaft cq:designPath.</li>
-     <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, sodass sie die neue Kategorie der Client-Bibliothek verwenden (dies erfordert auf der Seite eine Aktualisierung des Implementierungscodes).</li>
-     <li>Aktualisieren AEM Dispatcher-Regeln, um die Bereitstellung von Client-Bibliotheken über die <code>/etc.clientlibs/</code> Proxy-Servlet.</li>
+     <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, sodass sie die neue Kategorie der Client-Bibliothek verwenden (dies erfordert auf der Seite eine Aktualisierung des Implementierungs-Codes).</li>
+     <li>Aktualisieren Sie AEM Dispatcher-Regeln, um die Unterstützung für Client-Bibliotheken über das Proxy-Servlet <code>/etc.clientlibs/</code> zuzulassen.</li>
     </ol> <p>Für alle Designs, die NICHT in SCM verwaltet werden und die über Design-Dialogfelder zur Laufzeit angepasst werden:</p>
     <ul>
      <li>Entfernen Sie keine bearbeitbaren Designs aus <code>/etc</code>.</li>
@@ -170,23 +170,23 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
    <td>Alle neuen Konfigurationen für den Mobilgeräte-Emulator müssen an den neuen Speicherort migriert werden.
     <ol>
      <li>Kopieren Sie alle neuen Konfigurationen für den Mobilgeräte-Emulator vom vorherigen Speicherort an den neuen Speicherort (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>
-     <li>Aktualisieren Sie für alle AEM Sites-Seiten, die von diesen Konfigurationen für den Mobilgeräte-Emulator abhängen, die Seite <span class="code">
+     <li>Aktualisieren Sie für alle AEM Sites-Seiten, die von diesen Konfigurationen für den Mobilgeräte-Emulator abhängen, den Knoten <span class="code">
        <code>
         jcr
        </code>
        <code>
         :content
-       </code></span> node: <br /> <span class="code">[cq:Page]/jcr:content@cq:
+       </code></span> der Seite: <br /> <span class="code">[cq:Page]/jcr:content@cq:
        <code>
         deviceGroups
        </code> = String[ mobile/groups/responsive ]</span></li>
-     <li>Aktualisieren Sie für alle bearbeitbaren Vorlagen, die von diesen Konfigurationen für den Mobilgeräte-Emulator abhängen, die bearbeitbaren Vorlagen, indem Sie auf die <span class="code">
+     <li>Aktualisieren Sie die bearbeitbaren Vorlagen für alle bearbeitbaren Vorlagen, die von diesen Konfigurationen für den Mobilgeräte-Emulator abhängen, indem Sie <span class="code">
        <code>
         cq
        </code>:
        <code>
         deviceGroups
-       </code></span> zum neuen Speicherort.</li>
+       </code></span> auf den neuen Speicherort verweisen.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -213,11 +213,11 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Neuer Speicherort</strong></td>
-   <td><p><code>/apps/msm</code> (Kunden-Blueprint-Konfigurationen)</p> <p><code>/libs/msm</code> (Standardmäßige Blueprint-Konfigurationen für Screens, Commerce)</p> </td>
+   <td><p><code>/apps/msm</code> (Kunden-Blueprint-Konfigurationen)</p> <p><code>/libs/msm</code> (Gebrauchsfertige Blueprint-Konfigurationen für Screens, Commerce)</p> </td>
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Alle neuen oder modifizierten Blueprint-Konfigurationen für den Multi-Site-Manager müssen an den neuen Speicherort (<code>/apps</code>).</p>
+   <td><p>Alle neuen oder geänderten Blueprint-Konfigurationen für den Multi-Site-Manager müssen an den neuen Speicherort (<code>/apps</code>) migriert werden.</p>
     <ol>
      <li>Kopieren Sie alle neuen oder modifizierten Blueprint-Konfigurationen für den Multi-Site-Manager vom vorherigen an den neuen Speicherort (<code>/apps</code>).</li>
      <li>Entfernen Sie alle migrierten Blueprint-Konfigurationen für den Multi-Site-Manager vom vorherigen Speicherort.</li>
@@ -225,7 +225,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td><p>Alle AEM bereitgestellten Blueprint-Konfigurationen für den Multi-Site-Manager sind am neuen Speicherort unter <code>/libs</code>.</p> <p>Inhalt verweist nicht auf die Blueprint-Konfigurationen für den Multi-Site-Manager, daher müssen keine Inhaltsverweise angepasst werden.</p> </td>
+   <td><p>Alle von AEM bereitgestellten Blueprint-Konfigurationen für den Multi-Site-Manager sind am neuen Speicherort unter <code>/libs</code> verfügbar.</p> <p>Inhalt verweist nicht auf die Blueprint-Konfigurationen für den Multi-Site-Manager, daher müssen keine Inhaltsverweise angepasst werden.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -247,7 +247,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
    <td><p>Alle neuen oder modifizierten Rollout-Konfigurationen für den Multi-Site-Manager müssen an den neuen Speicherort migriert werden.</p>
     <ol>
      <li>Kopieren Sie alle neuen oder modifizierten Rollout-Konfigurationen für den Multi-Site-Manager vom vorherigen an den neuen Speicherort (<code>/apps</code>).</li>
-     <li>Aktualisieren Sie alle Verweise auf AEM Seiten auf Rollout-Konfigurationen für den Multi-Site-Manager am vorherigen Speicherort, um auf ihre Gegenstücke an den neuen Speicherorten zu verweisen (<code>/libs</code> oder <code>/apps</code>).</li>
+     <li>Aktualisieren Sie alle Verweise auf AEM-Seiten auf Rollout-Konfigurationen für den Multi-Site-Manager am vorherigen Speicherort, um auf ihre Gegenstücke an den neuen Speicherorten zu verweisen (<code>/libs</code> oder <code>/apps</code>).</li>
     </ol> <p>Entfernen Sie alle migrierten Rollout-Konfigurationen für den Multi-Site-Manager vom vorherigen Speicherort.</p> </td>
   </tr>
   <tr>
@@ -280,7 +280,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td><p>Alle neuen oder modifizierten E-Mail-Vorlagen für Seitenereignis-Benachrichtigungen müssen an den neuen Speicherort unter migriert werden <code>/apps</code>:</p>
+   <td><p>Alle neuen oder geänderten E-Mail-Vorlagen für die Seitenereignis-Benachrichtigung müssen an den neuen Speicherort unter <code>/apps</code> migriert werden:</p>
     <ol>
      <li>Kopieren Sie alle neuen oder modifizierten E-Mail-Vorlagen für die Seitenereignis-Benachrichtigung vom vorherigen Speicherort an den neuen Speicherort (<code>/apps</code>).</li>
      <li>Entfernen Sie alle migrierten E-Mail-Vorlagen für die Seitenereignis-Benachrichtigung vom vorherigen Speicherort.</li>
@@ -309,7 +309,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td>Stukturvorlagen, die im vorherigen Speicherort erstellt wurden, verwenden das alte Strukturvorlagen-Framework und können nicht in den neuen Speicherort migriert werden. Zur Anpassung an den neuen Speicherort muss jede alte Strukturvorlage mithilfe des unterstützen Strukturvorlagen-Frameworks neu entwickelt werden.</td>
+   <td>Strukturvorlagen, die im vorherigen Speicherort erstellt wurden, verwenden das alte Strukturvorlagen-Framework und können nicht in den neuen Speicherort migriert werden. Zur Anpassung an den neuen Speicherort muss jede alte Strukturvorlage mithilfe des unterstützen Strukturvorlagen-Frameworks neu entwickelt werden.</td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
@@ -339,7 +339,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td>Verweis auf eine nicht vorhandene <code>grid_base.less</code> Datei führt dazu, dass der Layoutmodus des Seiten- und Vorlageneditors nicht funktioniert und verursacht eine Unterbrechung des Seitenlayouts.</td>
+   <td>Verweis auf eine nicht vorhandene <code>grid_base.less</code> Datei führt dazu, dass der Layout-Modus des Seiten- und Vorlageneditors nicht funktioniert und verursacht eine Unterbrechung des Seiten-Layouts.</td>
   </tr>
  </tbody>
 </table>
@@ -362,9 +362,9 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
     <ol>
      <li>Kopieren Sie die Designs vom bisherigen Speicherort an den neuen Speicherort (<code>/apps</code>).</li>
      <li>Wandeln Sie die gesamten CSS-, JavaScript- und statischen Ressourcen im Design in eine <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Client-Bibliothek</a> mit <code>allowProxy = true</code> um.</li>
-     <li>Aktualisieren Sie die Verweise auf den vorherigen Speicherort in der Eigenschaft <code>cq:designPath</code> über <strong>AEM &gt;  Sites &gt; Seiten für benutzerdefinierte Site &gt; Seiteneigenschaften &gt; Erweitert &gt; Design</strong>.</li>
-     <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, sodass sie die neue Kategorie der Client-Bibliothek verwenden (dies erfordert auf der Seite eine Aktualisierung des Implementierungscodes).</li>
-     <li>Aktualisieren AEM Dispatcher-Regeln, um die Bereitstellung von Client-Bibliotheken über die <code>/etc.clientlibs/</code> Proxy-Servlet.</li>
+     <li>Aktualisieren Sie die Verweise auf den vorherigen Speicherort in der Eigenschaft <code>cq:designPath</code> über <strong>AEM &gt; Sites &gt; Seiten für benutzerdefinierte Site &gt; Seiteneigenschaften &gt; Erweitert &gt; Design</strong>.</li>
+     <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, sodass sie die neue Kategorie der Client-Bibliothek verwenden (dies erfordert auf der Seite eine Aktualisierung des Implementierungs-Codes).</li>
+     <li>Aktualisieren Sie AEM Dispatcher-Regeln, um die Unterstützung für Client-Bibliotheken über das Proxy-Servlet <code>/etc.clientlibs/</code> zuzulassen.</li>
     </ol> <p>Für alle Designs, die NICHT in SCM verwaltet werden und die über Design-Dialogfelder zur Laufzeit angepasst werden:</p>
     <ul>
      <li>Entfernen Sie keine bearbeitbaren Designs aus <code>/etc</code>.</li>

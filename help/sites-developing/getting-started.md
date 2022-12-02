@@ -46,4 +46,4 @@ Wir empfehlen Ihnen, das Tutorial durchzugehen, bevor Sie sich mit diesen Konzep
 
 ## Nächste Schritte {#next-steps}
 
-Nachdem Sie das [Tutorial](https://helpx.adobe.com/de/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) abgeschlossen haben, sollten Sie das Dokument [Grundlegende AEM-Konzepte](/help/sites-developing/the-basics.md) lesen, um einige zugrunde liegende Technologien und Entwicklungsparadigmen von AEM besser zu verstehen.
+Nachdem Sie das [Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) abgeschlossen haben, sollten Sie das Dokument [Grundlegende AEM-Konzepte](/help/sites-developing/the-basics.md) lesen, um einige zugrunde liegende Technologien und Entwicklungsparadigmen von AEM besser zu verstehen.

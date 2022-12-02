@@ -13,7 +13,7 @@ exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1140'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -47,7 +47,7 @@ Sie erhalten diese Benachrichtigung in Ihrem eigenen Posteingang, in dem Sie die
 >* [Projekte](/help/sites-authoring/touch-ui-managing-projects.md)
 >* [Projekte – Arbeiten mit Aufgaben](/help/sites-authoring/task-content.md)
 >* [Workflows](/help/sites-authoring/workflows.md)
->* [Forms](/help/forms/home.md)
+>* [Formulare](/help/forms/home.md)
 >
 
 
@@ -68,7 +68,7 @@ AEM beinhaltet vier vorgefertigte Aufgaben, die standardmäßig der Administrato
 * [Analysen und Targeting konfigurieren](/help/sites-administering/opt-in.md)
 * [AEM-Sicherheitsprüfliste anwenden](/help/sites-administering/security-checklist.md)
 * Aggregierte Sammlung von Nutzungsstatistiken aktivieren
-* [HTTPS konfigurieren](/help/sites-administering/ssl-by-default.md)
+* [Konfigurieren von HTTPS](/help/sites-administering/ssl-by-default.md)
 
 ## Öffnen des Posteingangs {#opening-the-inbox}
 
@@ -101,7 +101,7 @@ In dieser Ansicht werden die Elemente nach Kalenderdatum und entsprechend der vo
 
 Sie haben folgende Möglichkeiten:
 
-* eine bestimmte Ansicht auswählen (**Timeline**,**Spalte** oder **Liste**)
+* eine bestimmte Ansicht auswählen (**Zeitleiste**,**Spalte** oder **Liste**)
 
 * die Aufgaben festlegen, die gemäß **Plan** angezeigt werden sollen (**Alle**, **Geplant**, **In Bearbeitung**, **Bald fällig** oder **Überfällig**)
 
@@ -110,7 +110,7 @@ Sie haben folgende Möglichkeiten:
 
 ![wf-91](assets/wf-91.png)
 
-### Posteingang - Einstellungen {#inbox-view-settings}
+### Posteingang – Einstellungen {#inbox-view-settings}
 
 Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
@@ -133,34 +133,34 @@ Sie können für beide Ansichten (Liste und Kalender) Einstellungen festlegen:
 
    ![wf-83](assets/inbox-settings.png)
 
-### Posteingang - Admin Control {#inbox-admin-control}
+### Posteingang – Admin-Kontrolle {#inbox-admin-control}
 
-Die Option Admin Control ermöglicht Administratoren Folgendes:
+Die Option „Admin-Kontrolle“ ermöglicht Admins Folgendes:
 
-* Anpassen der Spalten AEM Posteingangs
+* Anpassen der Spalten des AEM-Posteingangs
 
 * Anpassen von Kopfzeilentext und Logo
 
-* Steuern der Anzeige von Navigationslinks in der Kopfzeile
+* Steuern der Anzeige von Navigations-Links in der Kopfzeile
 
-Die Option &quot;Admin-Kontrolle&quot;ist nur für die Mitglieder der `administrators` oder `workflow-administrators` hinzugefügt.
+Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `administrators` oder `workflow-administrators` sichtbar.
 
-* **Spaltenanpassung**: Passen Sie einen AEM Posteingang an, um den Standardtitel einer Spalte zu ändern, die Position einer Spalte neu anzuordnen und zusätzliche Spalten basierend auf den Daten eines Workflows anzuzeigen.
-   * **Spalte hinzufügen**: Wählen Sie eine Spalte aus, die AEM Posteingang hinzugefügt werden soll.
-   * **Spalte bearbeiten**: Bewegen Sie den Mauszeiger über den Spaltentitel und tippen Sie auf ![edit](assets/edit.svg) -Symbol, um einen Anzeigenamen der Spalte einzugeben.
-   * **Spalte löschen**: Tippen Sie auf ![delete](assets/delete_updated.svg) -Symbol, um die Spalte aus AEM Posteingang zu löschen.
-   * **Spalte verschieben**: Ziehen Sie die ![Verschieben](assets/move_updated.svg) -Symbol, um eine Spalte in AEM Posteingang an eine neue Position zu verschieben.
+* **Spaltenanpassung**: Passen Sie einen AEM-Posteingang an, indem Sie den Standardtitel einer Spalte ändern, eine Spalte neu anordnen und zusätzliche Spalten basierend auf den Daten eines Workflows anzeigen.
+   * **Spalte hinzufügen**: Wählen Sie eine Spalte aus, die dem AEM-Posteingang hinzugefügt werden soll.
+   * **Spalte bearbeiten**: Bewegen Sie den Mauszeiger über den Spaltentitel und tippen Sie auf das Symbol ![Bearbeiten](assets/edit.svg), um einen Anzeigenamen für die Spalte einzugeben.
+   * **Spalte löschen**: Tippen Sie auf das Symbol ![Löschen](assets/delete_updated.svg), um die Spalte aus dem AEM-Posteingang zu löschen.
+   * **Spalte verschieben**: Ziehen Sie das Symbol ![Verschieben](assets/move_updated.svg), um eine Spalte im AEM-Posteingang an eine neue Position zu verschieben.
 
-   ![admin-control](assets/admin-control-column-customize.png)
+   ![Admin-Kontrolle](assets/admin-control-column-customize.png)
 
 * **Branding-Anpassung**
 
-   * **Anpassen des Kopfzeilentextes:** Geben Sie den Text an, der in der Kopfzeile angezeigt werden soll, um den Standardtext zu ersetzen **Adobe Experience Manager** Text.
+   * **Anpassen des Kopfzeilentextes:** Geben Sie den Text an, der in der Kopfzeile anstelle des Standardtextes **Adobe Experience Manager** angezeigt werden soll.
 
-   * **Logo anpassen:** Geben Sie das in der Kopfzeile anzuzeigende Bild als Logo an. Laden Sie ein Bild in Digital Asset Management (DAM) hoch und verweisen Sie im Feld auf dieses Bild.
+   * **Logo anpassen:** Geben Sie das Bild an, das in der Kopfzeile als Logo angezeigt werden soll. Laden Sie ein Bild in Digital Asset Management (DAM) hoch und verweisen Sie im Feld auf dieses Bild.
 
 * **Benutzernavigation**
-   * **Navigationsoptionen ausblenden:** Wählen Sie diese Option, um die in der Kopfzeile verfügbaren Navigationsoptionen auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, Hilfe-Link und die Bearbeitungsoptionen, die beim Tippen auf Adobe Experience Manager-Logo oder -Text verfügbar sind.
+   * **Navigationsoptionen ausblenden:** Wählen Sie diese Option aus, um die Navigationsoptionen in der Kopfzeile auszublenden. Zu den Navigationsoptionen gehören Links zu anderen Lösungen, ein Hilfe-Link und die Bearbeitungsoptionen, die beim Tippen auf das Logo oder den Text „Adobe Experience Manager“ verfügbar sind.
 * **Speichern:** Tippen/klicken Sie auf diese Option, um die Einstellungen zu speichern.
 
 ## Anwenden von Aktionen auf ein Element {#taking-action-on-an-item}
@@ -176,7 +176,7 @@ Die Option &quot;Admin-Kontrolle&quot;ist nur für die Mitglieder der `administr
 
    Die entsprechend dem ausgewählten Element verfügbaren Aktionen können Folgendes umfassen:
 
-   * **Abschließen** einer Aktion; z. B. eine Aufgabe oder ein Workflow-Element.
+   * **Abschließen** einer Aktion, z. B. einer Aufgabe oder eines Workflow-Elements
    * **Neu zuweisen**/**Delegieren** eines Elements
    * **Öffnen** eines Elements; je nach Elementtyp bewirkt diese Aktion Folgendes:
 
@@ -223,7 +223,7 @@ Sie können vom Posteingang aus Aufgaben erstellen:
       * **Titel**
       * **Projekt**
       * **Bevollmächtigter**
-      * **Inhalt**; dies dient, ähnlich wie bei der Nutzlast, als Verweis von der Aufgabe auf eine Position im Repository.
+      * **Inhalt**; dies dient, ähnlich wie bei der Payload, als Verweis von der Aufgabe auf eine Position im Repository.
       * **Beschreibung**
       * **Aufgabenpriorität**
       * **Startdatum**

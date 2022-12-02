@@ -13,7 +13,7 @@ exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1194'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Die Hauptkonsolen sind:
   </tr>
   <tr>
    <td><strong>Launches</strong></td>
-   <td>Hier können Sie Ihre <a href="/help/sites-classic-ui-authoring/classic-launches.md">Launches</a> verwalten. Damit können Sie Inhalte für eine künftige Version einer oder mehrerer aktivierter Webseiten entwickeln.<br /> <i>Hinweis: In der Touch-optimierten Benutzeroberfläche ist ein Großteil der gleichen Funktionalität in der Sites-Konsole verfügbar, zusammen mit der Leiste Verweise .</i><i>Bei Bedarf ist diese Konsole über die Konsole „Tools“ erreichbar. Wählen Sie „Vorgänge“ gefolgt von „Launches“.</i></td>
+   <td>Hier können Sie Ihre <a href="/help/sites-classic-ui-authoring/classic-launches.md">Launches</a> verwalten. Damit können Sie Inhalte für eine künftige Version einer oder mehrerer aktivierter Webseiten entwickeln.<br /> <i>Hinweis: In der Touch-optimierten Benutzeroberfläche sind die meisten der Funktionen in der Sites-Konsole verfügbar ebenso wie die Leiste „Verweise“.</i> <i>Bei Bedarf ist diese Konsole über die Konsole „Tools“ erreichbar. Wählen Sie „Vorgänge“ gefolgt von „Launches“.</i></td>
   </tr>
   <tr>
    <td><strong>Posteingang </strong></td>
@@ -89,13 +89,13 @@ Die Konsole **Websites** enthält zwei Bereiche, in denen Sie Ihre Seiten verwal
 
 * Linker Bereich
 
-   Dies zeigt die Baumstruktur Ihrer Websites und die Seiten innerhalb dieser Websites.
+   Zeigt die Baumstruktur Ihrer Websites und die darin enthaltenen Seiten.
 
    Er enthält außerdem Informationen zu anderen Optionen in AEM, einschließlich Projekten, Blueprints und Assets.
 
 * Rechter Bereich
 
-   Dies zeigt die Seiten (an der im linken Bereich ausgewählten Stelle) an und kann für Aktionen verwendet werden.
+   Zeigt die Seiten (an der im linken Bereich gewählten Position) und kann für die Durchführung von Aktionen genutzt werden.
 
 Hier können Sie [Ihre Seiten verwalten](/help/sites-authoring/managing-pages.md). Dabei können Sie die Symbolleiste oder ein Kontextmenü verwenden oder eine Seite für weitere Aktionen öffnen.
 
@@ -105,7 +105,7 @@ Hier können Sie [Ihre Seiten verwalten](/help/sites-authoring/managing-pages.md
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
-## Aufrufen der Hilfe   {#accessing-help}
+## Zugreifen auf die Hilfe {#accessing-help}
 
 In verschiedenen Konsolen (z. B. „Websites“) finden Sie auch die Schaltfläche **Hilfe**, mit der Sie entweder Package Share oder die Dokumentations-Website öffnen können.
 
@@ -128,7 +128,7 @@ In der **Websites**-Konsole werden die Inhaltsseiten im linken Fenster in einer 
 
 >[!NOTE]
 >
->Der Standardwert (`30`) kann konsolenweise in den anwendungsspezifischen Konfigurationen des SiteAdmin-Widgets geändert werden:
+>Der Standardwert (`30`) kann konsolenweise in den programmspezifischen Konfigurationen des SiteAdmin-Widgets geändert werden:
 >
 >Führen Sie im SiteAdmin-Knoten folgende Aktionen durch:
 >

@@ -5,7 +5,7 @@ exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '2174'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Für Übersetzungsprojekt-Manager ist es oft erforderlich, bestimmte Inhalte, di
 1. Gehen Sie zu **Navigation** > **Projekte**.
 1. Tippen oder klicken Sie auf **Erstellen** > **Ordner**, um einen Ordner für Ihre Projekte zu erstellen.
    * Dies ist optional, aber hilfreich, um Ihre Übersetzungsarbeit zu organisieren.
-1. Im **Ordner erstellen** ein Fenster, fügen Sie eine **Titel** für den Ordner und tippen oder klicken Sie dann auf **Erstellen**.
+1. Fügen Sie im Fenster **Ordner erstellen** einen **Titel** für den Ordner hinzu und tippen oder klicken Sie dann auf **Erstellen**.
 
    ![Erstellen von Projektordnern](assets/create-project-folder.png)
 
@@ -217,7 +217,7 @@ Ziel des Projekts ist es, alle Ressourcen, die mit einer Übersetzung verbunden 
 /content/dam/wknd/es
 ```
 
-Wenn Sie über zu diesem Ordner navigieren **Navigation** -> **Assets** -> **Dateien**, sehen Sie den übersetzten Inhalt.
+Wenn Sie über **Navigation** -> **Assets** -> **Dateien** zu diesem Ordner navigieren, sehen Sie die übersetzten Inhalte.
 
 ![Struktur von Ordnern mit übersetzten Inhalten](assets/translated-file-content.png)
 

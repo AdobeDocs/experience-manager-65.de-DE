@@ -13,7 +13,7 @@ exl-id: 6cda0a68-0df9-44e7-ae4f-9951411af6dd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '711'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 86%
 
 >[!NOTE]
 >
->Adobe plant nicht, das Tracking geöffneter/Bounce-E-Mails, die von AEM SMTP-Dienst gesendet werden, weiter zu verbessern.
+>Adobe plant nicht, die Verfolgung von über den AEM-SMTP-Dienst gesendeten offenen/zurückgesendeten E-Mails weiter auszubauen.
 >
->Die Empfehlung lautet: [Nutzung von Adobe Campaign und seiner AEM](/help/sites-administering/campaign.md).
+>Die Empfehlung lautet, [Adobe Campaign und die AEM-Integration zu nutzen](/help/sites-administering/campaign.md).
 
 Wenn Sie einen Newsletter an viele Benutzer senden, sind in der Liste im Allgemeinen einige ungültige E-Mail-Adressen enthalten. Newsletter, die an diese Adressen gesendet werden, können nicht zugestellt werden. AEM kann diese nicht zugestellten E-Mails verwalten und den Versand von Newslettern an diese Adressen einstellen, wenn die festgelegte Anzahl nicht erfolgreicher Zustellversuche überschritten wird. Der Standardwert für fehlgeschlagene Zustellversuche beträgt 3, er kann jedoch angepasst werden.
 
-Wenn Sie AEM so einrichten möchten, dass nicht zugestellte E-Mails nachverfolgt werden, müssen Sie festlegen, dass AEM vorhandene Postfächer abfragt, an die E-Mails nicht zugestellt werden können (im Allgemeinen handelt es sich dabei um die E-Mail-Adresse, die Sie für den Versand des Newsletters angegeben haben). AEM fragt diesen Posteingang ab und importiert alle E-Mails in das in den Abrufeinstellungen festgelegte Verzeichnis. Anschließend wird ein Workflow ausgelöst, der innerhalb der Benutzer nach den nicht zugestellten E-Mail-Adressen sucht und den Wert der Eigenschaft &quot;bounceCounter&quot;des Benutzers entsprechend aktualisiert. Wenn der festgelegte Maximalwert für fehlgeschlagene Zustellversuche überschritten wird, wird der Benutzer aus der Newsletter-Liste gelöscht.
+Wenn Sie AEM so einrichten möchten, dass nicht zugestellte E-Mails nachverfolgt werden, müssen Sie festlegen, dass AEM vorhandene Postfächer abfragt, an die E-Mails nicht zugestellt werden können (im Allgemeinen handelt es sich dabei um die E-Mail-Adresse, die Sie für den Versand des Newsletters angegeben haben). AEM fragt diesen Posteingang ab und importiert alle E-Mails in das in den Abrufeinstellungen festgelegte Verzeichnis. Dann wird ein Workflow gestartet, bei dem in den Benutzern nach den E-Mail-Adressen gesucht wird, an die keine Zustellung erfolgen konnte, und der Eigenschaftswert „bounceCounter“ des Benutzers entsprechend aktualisiert wird. Wenn der festgelegte Maximalwert für fehlgeschlagene Zustellversuche überschritten wird, wird der Benutzer aus der Newsletter-Liste gelöscht.
 
 ## Konfigurieren des Feed Importers {#configuring-the-feed-importer}
 
@@ -53,7 +53,7 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
    **Eigenschaften der POP3-Konfiguration:**
 
-   `pop3.leave.on.server`: Definiert, ob Nachrichten auf dem Server bleiben sollen oder nicht. Wählen Sie „true“, wenn Nachrichten auf dem Server bleiben sollen, bzw. „false“, wenn dies nicht der Fall sein soll. Standardwert ist „true“.
+   `pop3.leave.on.server`: Legt fest, ob Nachrichten auf dem Server bleiben. Wählen Sie „true“, wenn Nachrichten auf dem Server bleiben sollen, bzw. „false“, wenn dies nicht der Fall sein soll. Standardwert ist „true“.
 
    **POP3-Beispiele:**
 
@@ -65,9 +65,9 @@ So konfigurieren Sie den Feed Importer für das Nachverfolgen nicht zugestellter
 
    Bietet Ihnen die Möglichkeit, Kennzeichnungen zu setzen, nach denen Sie suchen können. 
 
-   `imap.flag.SEEN`:Wählen Sie „false“ für eine neue/nicht gelesene Nachricht und „true“ für bereits gelesene Nachrichten
+   `imap.flag.SEEN`: Wählen Sie „false“ für eine neue/nicht gelesene Nachricht und „true“ für bereits gelesene Nachrichten aus.
 
-   Siehe [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html) für die vollständige Liste der Flaggen.
+   Die komplette Liste der Kennzeichnungen finden Sie unter [https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html](https://java.sun.com/products/javamail/javadocs/javax/mail/Flags.Flag.html).
 
    **IMAP-Beispiele:**
 
@@ -84,7 +84,7 @@ Nachdem Sie den Feed Importer konfiguriert haben, müssen Sie die Absenderadress
 
 So konfigurieren Sie den Newsletter-Dienst:
 
-1. In der OSGi-Konsole unter `<host>:<port>/system/console/configMgr` und navigieren Sie zu **MCM-Newsletter**.
+1. Navigieren Sie in der OSGi-Konsole unter `<host>:<port>/system/console/configMgr` zu **MCM-Newsletter**.
 
 1. Konfigurieren Sie den Dienst und speichern Sie anschließend die Änderungen.
 

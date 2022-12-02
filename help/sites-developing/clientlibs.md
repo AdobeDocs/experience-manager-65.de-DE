@@ -1,7 +1,7 @@
 ---
-title: Verwendung Client-seitiger Bibliotheken
+title: Verwenden Client-seitiger Bibliotheken
 seo-title: Using Client-Side Libraries
-description: AEM stellt clientseitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren clientseitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll.
+description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Code-Kategorie dem Client bereitgestellt werden soll.
 seo-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
 uuid: f12b13cc-6651-4c9a-9c52-19a22bb82b28
 contentOwner: msm-service
@@ -14,19 +14,19 @@ exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
 source-git-commit: 7ceee6819618d785f04029b9ac1c6f763995b3ac
 workflow-type: tm+mt
 source-wordcount: '2861'
-ht-degree: 75%
+ht-degree: 98%
 
 ---
 
-# Verwendung Client-seitiger Bibliotheken{#using-client-side-libraries}
+# Verwenden Client-seitiger Bibliotheken{#using-client-side-libraries}
 
-Moderne Websites beruhen in hohem Maße auf der clientseitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein.
+Moderne Websites beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein.
 
-Um Abhilfe zu schaffen, stellt AEM **clientseitige Bibliotheksordner** zur Verfügung, mit denen Sie Ihren clientseitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das clientseitige Bibliotheksystem übernimmt dann das Erstellen der korrekten Links in der endgültigen Webseite, um den korrekten Code zu laden.
+Um Abhilfe zu schaffen, stellt AEM **Client-seitige Bibliotheksordner** zur Verfügung, mit denen Sie Ihren Client-seitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Code-Kategorie dem Client bereitgestellt werden soll. Das Client-seitige Bibliothekssystem übernimmt dann das Erstellen der korrekten Links in der endgültigen Web-Seite, um den korrekten Code zu laden.
 
-## Funktionsweise clientseitiger Bibliotheken in AEM {#how-client-side-libraries-work-in-aem}
+## Funktionsweise Client-seitiger Bibliotheken in AEM {#how-client-side-libraries-work-in-aem}
 
-Die standardmäßige Möglichkeit, eine clientseitige Bibliothek (d. h. eine JS- oder CSS-Datei) in die HTML einer Seite einzuschließen, besteht darin, einfach eine `<script>` oder `<link>` -Tag in der JSP für diese Seite, das den Pfad zur betreffenden Datei enthält. Beispiel:
+Client-seitige Bibliotheken (also JS- oder CSS-Dateien) werden meist in den HTML-Code einer Seite integriert, indem ein `<script>`- oder `<link>`-Tag in die JSP der Seite eingefügt wird, die den Pfad zur Datei enthält. Beispiel:
 
 ```xml
 ...
@@ -38,7 +38,7 @@ Die standardmäßige Möglichkeit, eine clientseitige Bibliothek (d. h. eine JS-
 ...
 ```
 
-Obwohl diese Vorgehensweise in AEM funktioniert, kann sie zu Problemen führen, wenn die Seiten und die darin enthaltenen Komponenten zu komplex werden. Dann besteht die Gefahr, dass mehrere Kopien derselben JS-Bibliothek in der endgültigen HTML-Ausgabe enthalten sind. Um dies zu vermeiden und einen logischen Aufbau clientseitiger Bibliotheken zu ermöglichen, verwendet AEM **clientseitige Bibliotheksordner**.
+Obwohl diese Vorgehensweise in AEM funktioniert, kann sie zu Problemen führen, wenn die Seiten und die darin enthaltenen Komponenten zu komplex werden. Dann besteht die Gefahr, dass mehrere Kopien derselben JS-Bibliothek in der endgültigen HTML-Ausgabe enthalten sind. Um dies zu vermeiden und einen logischen Aufbau Client-seitiger Bibliotheken zu ermöglichen, verwendet AEM **Client-seitige Bibliotheksordner**.
 
 Ein Client-seitiger Bibliotheksordner ist ein Repository-Knoten des Typs `cq:ClientLibraryFolder`. Seine Definition in [CND-Notation](https://jackrabbit.apache.org/node-type-notation.html) ist
 
@@ -50,43 +50,43 @@ Ein Client-seitiger Bibliotheksordner ist ein Repository-Knoten des Typs `cq:Cli
   - channels (string) multiple
 ```
 
-Standardmäßig `cq:ClientLibraryFolder` -Knoten können an einer beliebigen Stelle innerhalb der `/apps`, `/libs` und `/etc` Unterstrukturen des Repositorys (diese Standardeinstellungen und andere Einstellungen können über die **Adobe Granite HTML Library Manager** -Bedienfeld der [Systemkonsole](https://localhost:4502/system/console/configMgr)).
+Standardmäßig können `cq:ClientLibraryFolder`-Knoten überall in den Unterbaumstrukturen `/apps`, `/libs` und `/etc` des Repositorys platziert werden (Sie können diese Standardeinstellungen sowie andere Einstellungen im Bedienfeld **Adobe Granite HTML Library Manager** der [Systemkonsole](https://localhost:4502/system/console/configMgr) ändern).
 
-Jeder `cq:ClientLibraryFolder` wird mit einer Reihe von JS- und/oder CSS-Dateien sowie mehreren unterstützenden Dateien vorab gefüllt (siehe unten). Die Eigenschaften der `cq:ClientLibraryFolder` werden wie folgt konfiguriert:
+Jeder `cq:ClientLibraryFolder` wird mit einer Reihe von JS- und/oder CSS-Dateien sowie mehreren unterstützenden Dateien vorab gefüllt (siehe unten). Die Eigenschaften von `cq:ClientLibraryFolder` sind wie folgt konfiguriert:
 
 * `categories`: Gibt die Kategorien der Gruppe von JS- und/oder CSS-Dateien in diesem `cq:ClientLibraryFolder` an. Da die `categories`-Eigenschaft ggf. mehrere Werte aufweist, kann ein Bibliotheksordner zu mehreren Kategorien gehören (weiter unten sehen Sie, warum dies nützlich sein kann).
 
 * `dependencies`: Eine Liste anderer Client-Bibliothekskategorien, von denen dieser Bibliotheksordner abhängt. Beispiel: Wenn bei zwei `cq:ClientLibraryFolder`-Knoten `F` und `G` eine Datei in `F` eine andere Datei in `G` benötigt, muss mindestens eine der `categories` von `G` in den `dependencies` von `F` aufgeführt sein, um eine ordnungsgemäße Funktionsweise sicherzustellen.
 
-* `embed`: Wird zum Einbetten von Code aus anderen Bibliotheken verwendet. Wenn der Knoten F die Knoten G und H einbettet, ist die resultierende HTML eine Inhaltskonzentration der Knoten G und H.
-* `allowProxy`: Wenn sich eine Client-Bibliothek unter `/apps`, ermöglicht diese Eigenschaft den Zugriff darauf über das Proxy-Servlet. Siehe [Finden eines Client-Bibliotheksordners und Verwendung des Proxy-Servlets für Client-Bibliotheken](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) weiter unten.
+* `embed`: Wird zum Einbetten von Code aus anderen Bibliotheken verwendet. Wenn der Knoten F die Knoten G und H einbettet, enthält die resultierende HTML-Ausgabe Inhalte aus den Knoten G und H.
+* `allowProxy`: Wenn eine Client-Bibliothek unter `/apps` abgelegt ist, ermöglicht diese Eigenschaft den Zugriff darauf durch ein Proxy-Servlet. Siehe [Finden eines Client-Bibliotheksordners und Verwenden des Proxy-Servlets für Client-Bibliotheken](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) weiter unten.
 
-## Referenzieren von clientseitigen Bibliotheken {#referencing-client-side-libraries}
+## Referenzieren von Client-seitigen Bibliotheken {#referencing-client-side-libraries}
 
-Da HTL die bevorzugte Technologie zur Entwicklung von AEM Sites ist, sollte HTL verwendet werden, um clientseitige Bibliotheken in AEM einzuschließen. Sie können jedoch auch JSP verwenden.
+Da HTL die bevorzugte Technologie zur Entwicklung von AEM Sites ist, sollte HTL verwendet werden, um Client-seitige Bibliotheken in AEM einzuschließen. Sie können jedoch auch JSP verwenden.
 
 ### Verwendung von HTL {#using-htl}
 
-In HTL werden Client-Bibliotheken über eine durch AEM bereitgestellte Hilfsvorlage geladen, auf die über [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use) zugegriffen werden kann. In dieser Datei sind drei Vorlagen verfügbar, die über [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call) abgerufen werden können:
+In HTL werden Client-Bibliotheken über eine durch AEM bereitgestellte Hilfsvorlage geladen, auf die über [`data-sly-use`](https://helpx.adobe.com/de/experience-manager/htl/using/block-statements.html#use) zugegriffen werden kann. In dieser Datei sind drei Vorlagen verfügbar, die über [`data-sly-call`](https://helpx.adobe.com/de/experience-manager/htl/using/block-statements.html#template-call) abgerufen werden können:
 
-* **css** - Lädt nur die CSS-Dateien der referenzierten Client-Bibliotheken.
-* **js** - Lädt nur die JavaScript-Dateien der referenzierten Client-Bibliotheken.
-* **all** - Lädt alle Dateien der referenzierten Client-Bibliotheken (CSS und JavaScript).
+* **css** – Lädt nur die CSS-Dateien der referenzierten Client-Bibliotheken.
+* **js** – Lädt nur die JavaScript-Dateien der referenzierten Client-Bibliotheken.
+* **all** – Lädt alle Dateien der referenzierten Client-Bibliotheken (CSS und JavaScript).
 
 Jede Hilfsvorlage erwartet eine `categories`-Option für das Referenzieren der gewünschten Client-Bibliotheken. Bei dieser Option kann es sich um einen Zeichenfolgenwertbereich handeln oder um eine Zeichenfolge, die eine CSV-Liste enthält.
 
-Weitere Informationen und Anwendungsbeispiele finden Sie im Dokument [Erste Schritte mit der HTML-Vorlagensprache](https://helpx.adobe.com/experience-manager/htl/using/getting-started.html#loading-client-libraries).
+Weitere Informationen und Nutzungsbeispiele finden Sie im Dokument [Erste Schritte mit der HTML-Vorlagensprache](https://helpx.adobe.com/de/experience-manager/htl/using/getting-started.html#loading-client-libraries).
 
-### Verwendung von JSP {#using-jsp}
+### Verwenden von JSP {#using-jsp}
 
-Hinzufügen einer `ui:includeClientLib` -Tag zu Ihrem JSP-Code hinzufügen, um einen Link zu Client-Bibliotheken auf der generierten HTML-Seite hinzuzufügen. Um auf die Bibliotheken zu verweisen, verwenden Sie den Wert der `categories` -Eigenschaft der `ui:includeClientLib` Knoten.
+Fügen Sie Ihrem JSP-Code ein `ui:includeClientLib`-Tag hinzu, um der generierten HTML-Seite einen Link zu Client-Bibliotheken hinzuzufügen. Nutzen Sie den Wert der `categories`-Eigenschaft des `ui:includeClientLib`-Knotens, um die Bibliotheken zu referenzieren.
 
 ```
 <%@taglib prefix="ui" uri="https://www.adobe.com/taglibs/granite/ui/1.0" %>
 <ui:includeClientLib categories="<%= categories %>" />
 ```
 
-Beispiel: die `/etc/clientlibs/foundation/jquery` node is type `cq:ClientLibraryFolder` mit einer categories-Eigenschaft value `cq.jquery`. Der folgende Code in einer JSP-Datei referenziert die Bibliotheken:
+Beispiel: Der `/etc/clientlibs/foundation/jquery`-Knoten hat den Typ `cq:ClientLibraryFolder` mit dem Wert `cq.jquery` für die Eigenschaft „categories“. Der folgende Code in einer JSP-Datei referenziert die Bibliotheken:
 
 ```xml
 <ui:includeClientLib categories="cq.jquery"/>
@@ -102,7 +102,7 @@ Ausführliche Informationen wie Attribute zum Filtern von JS, CSS oder Themenbib
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, die früher häufig zum Einschließen von Client-Bibliotheken verwendet wurde, wird seit AEM 5.6 nicht mehr unterstützt. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) stattdessen wie oben beschrieben verwendet werden.
+>`<cq:includeClientLib>` wurde früher häufig zum Einschließen von Client-Bibliotheken verwendet, wird aber seit AEM 5.6 nicht mehr unterstützt. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) sollte stattdessen wie oben beschrieben verwendet werden.
 
 ## Erstellen von Client-Bibliotheksordnern {#creating-client-library-folders}
 
@@ -116,29 +116,29 @@ Client-Bibliotheksordner enthalten die folgenden Elemente:
 * Ressourcen, die CSS-Styles unterstützen, z. B. Bilddateien.
 
    **Hinweis:** Sie können Quelldateien mit Unterordnern organisieren.
-* Eine Datei `js.txt` und/oder `css.txt`, die die Quelldateien angibt, die in die generierten JS- und/oder CSS Dateien zusammengeführt werden sollen.
+* Eine `js.txt`- und/oder `css.txt`-Datei, die die Quelldateien angibt, die in die generierten JS- und/oder CSS Dateien zusammengeführt werden sollen.
 
 ![clientlibarch](assets/clientlibarch.png)
 
-Weitere Informationen zu Anforderungen speziell für Client-Bibliotheken für Widgets finden Sie unter [Verwendung und Erweiterung von Widgets](/help/sites-developing/widgets.md).
+Weitere Informationen zu Anforderungen speziell für Client-Bibliotheken für Widgets finden Sie unter [Verwenden und Erweitern von Widgets](/help/sites-developing/widgets.md).
 
-Der Webclient benötigt eine Zugriffsberechtigung auf den Knoten `cq:ClientLibraryFolder`. Sie können auch Bibliotheken aus geschützten Bereichen des Repositorys bereitstellen (siehe „Einbetten von Code aus anderen Bibliotheken“ unten).
+Der Webclient benötigt eine Zugriffsberechtigung für den Knoten `cq:ClientLibraryFolder`. Sie können auch Bibliotheken aus geschützten Bereichen des Repositorys bereitstellen (siehe „Einbetten von Code aus anderen Bibliotheken“ unten).
 
 ### Überschreiben von Bibliotheken in /lib {#overriding-libraries-in-lib}
 
-Unten befindliche Client-Bibliotheksordner `/apps` Vorrang vor Ordnern mit demselben Namen haben, die sich in `/libs`. Beispiel: `/apps/cq/ui/widgets` Vorrang vor `/libs/cq/ui/widgets`. Wenn diese Bibliotheken zur gleichen Kategorie gehören, wird die Bibliothek unten `/apps` verwendet.
+Die Client-Bibliotheksordner, die sich unter `/apps` befinden, haben Vorrang vor gleichnamigen Ordnern, die sich entsprechend in `/libs` befinden. Beispiel: `/apps/cq/ui/widgets` hat Vorrang vor `/libs/cq/ui/widgets`. Wenn diese Bibliotheken derselben Kategorie angehören, wird die Bibliothek unter `/apps` verwendet.
 
-### Finden eines Client-Bibliotheksordners und Verwendung des Proxy-Servlets für Client-Bibliotheken {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
+### Finden eines Client-Bibliotheksordners und Verwenden des Proxy-Servlets für Client-Bibliotheken {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
-In früheren Versionen befanden sich die Client-Bibliotheksordner unter `/etc/clientlibs` im Repository. Dies wird weiterhin unterstützt, es wird jedoch empfohlen, dass Client-Bibliotheken jetzt unter `/apps`. Dies dient dazu, die Client-Bibliotheken in der Nähe der anderen Skripte zu finden, die im Allgemeinen unten zu finden sind. `/apps` und `/libs`.
-
->[!NOTE]
->
->Statische Ressourcen unter dem Client-Bibliotheksordner müssen sich in einem Ordner befinden, der *resources*. Wenn Sie nicht über die statischen Ressourcen, z. B. Bilder, im Ordner verfügen *resources* kann nicht auf einer Veröffentlichungsinstanz referenziert werden. Im Folgenden finden Sie ein Beispiel: https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
+In früheren Versionen befanden sich Client-Bibliotheksordner unter `/etc/clientlibs` im Repository. Dies wird weiterhin unterstützt, aber wir empfehlen, die Client-Bibliotheken jetzt unter `/apps` zu platzieren. So befinden sich die Client-Bibliotheken nahe der anderen Skripte, die in der Regel unter `/apps` und `/libs` zu finden sind.
 
 >[!NOTE]
 >
->Um Code besser von Inhalt und Konfiguration zu isolieren, wird empfohlen, Client-Bibliotheken unter `/apps` und stellen sie über `/etc.clientlibs` durch Nutzung der `allowProxy` -Eigenschaft.
+>Statische Ressourcen unter dem Client-Bibliotheksordner müssen sich im Ordner *resources* befinden. Wenn sich die statischen Ressourcen, z. B. Bilder, nicht im Ordner *resources* befinden, können sie nicht auf einer Veröffentlichungsinstanz referenziert werden. Im Folgenden finden Sie ein Beispiel: https://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
+
+>[!NOTE]
+>
+>Um Code besser von Inhalt und Konfiguration zu isolieren, empfiehlt es sich, Client-Bibliotheken unter `/apps` zu platzieren und über `/etc.clientlibs` mithilfe der `allowProxy`-Eigenschaft freizugeben.
 
 Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Servlet verwendet. Die ACLs werden weiterhin im Client-Bibliotheksordner erzwungen, aber das Servlet ermöglicht, dass der Content über `/etc.clientlibs/` gelesen wird, wenn die `allowProxy`-Eigenschaft auf `true` gesetzt ist.
 
@@ -149,22 +149,22 @@ Beispiel:
 * Sie verfügen über eine Client-seitige Bibliothek unter `/apps/myproject/clientlibs/foo`.
 * Sie verfügen über ein statisches Bild unter `/apps/myprojects/clientlibs/foo/resources/icon.png`.
 
-Anschließend legen Sie die `allowProxy` Eigenschaft auf `foo` auf &quot;true&quot;.
+Sie legen die Eigenschaft `allowProxy` für `foo` auf „true“ fest.
 
-* Sie können dann `/etc.clientlibs/myprojects/clientlibs/foo.js`
-* Sie können dann über `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png`
-
->[!CAUTION]
->
->Bei Verwendung von Proxyclient-Bibliotheken erfordert die AEM Dispatcher-Konfiguration möglicherweise ein Update, um sicherzustellen, dass die URIs mit den Erweiterungs-Client-Bibliotheken zulässig sind.
+* Anschließend können Sie `/etc.clientlibs/myprojects/clientlibs/foo.js` abfragen.
+* Sie können außerdem das Bild über `/etc.clientlibs/myprojects/clientlibs/foo/resources/icon.png` referenzieren.
 
 >[!CAUTION]
 >
->Adobe empfiehlt, Client-Bibliotheken unter `/apps` und stellen sie mithilfe des Proxy-Servlets zur Verfügung. Beachten Sie jedoch, dass die Best Practice weiterhin erfordert, dass öffentliche Sites nie etwas enthalten, das direkt über eine `/apps` oder `/libs` Pfad.
+>Wenn Sie Client-Bibliotheken über Proxys verwenden, benötigt die AEM-Dispatcher-Konfiguration möglicherweise ein Update, damit URIs mit der Erweiterung „clientlibs“ zulässig sind.
+
+>[!CAUTION]
+>
+>Adobe empfiehlt, Client-Bibliotheken unter `/apps` zu platzieren und mit dem Proxy-Servlet freizugeben. Beachten Sie jedoch, dass gemäß der Best Practice öffentliche Websites keine Inhalte enthalten sollten, die direkt über einen `/apps`- oder `/libs`-Pfad bereitgestellt werden.
 
 ### Erstellen eines Client-Bibliotheksordners {#create-a-client-library-folder}
 
-1. Öffnen Sie die CRXDE Lite in einem Webbrowser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
+1. Öffnen Sie CRXDE Lite in einem Webbrowser ([https://localhost:4502/crx/de](https://localhost:4502/crx/de)).
 1. Wählen Sie den Ordner aus, in dem Sie den Client-Bibliotheksordner platzieren möchten, und klicken Sie auf **Erstellen > Knoten erstellen**.
 1. Geben Sie einen Namen für die Bibliotheksdatei ein und wählen Sie in der Typenliste `cq:ClientLibraryFolder` aus. Klicken Sie auf **OK** und dann auf **Alle speichern**.
 1. Um die Kategorien festzulegen, zu denen die Bibliothek gehört, wählen Sie den `cq:ClientLibraryFolder`-Knoten aus, fügen Sie die folgende Eigenschaft hinzu und klicken Sie auf **Alle speichern**:
@@ -188,7 +188,7 @@ Anschließend legen Sie die `allowProxy` Eigenschaft auf `foo` auf &quot;true&qu
 
    `#base=*[root]*`
 
-   Ersetzen * `[root]`* mit dem Pfad zum Ordner, der die Quelldateien enthält, relativ zur TXT-Datei. Verwenden Sie beispielsweise den folgenden Text, wenn sich die Quelldateien im selben Ordner wie die TXT-Datei befinden:
+   Ersetzen Sie *`[root]`* durch den Pfad zum Ordner, der die Quelldateien enthält, relativ zur TXT-Datei. Verwenden Sie beispielsweise den folgenden Text, wenn sich die Quelldateien im selben Ordner wie die TXT-Datei befinden:
 
    `#base=.`
 
@@ -209,7 +209,7 @@ Die Abhängigkeiten müssen ein anderer `cq:ClientLibraryFolder` sein. Fügen Si
 * **Typ:** String[]
 * **Werte:** Der Wert der categories-Eigenschaft des cq:ClientLibraryFolder-Knotens, von dem der aktuelle Bibliotheksordner abhängig ist.
 
-Beispiel: / `etc/clientlibs/myclientlibs/publicmain` weist eine Abhängigkeit von der `cq.jquery` -Bibliothek. Die JSP, die die Haupt-Client-Bibliothek referenziert, erzeugt HTML-Code, der den folgenden Code enthält:
+Beispielsweise weist /`etc/clientlibs/myclientlibs/publicmain` eine Abhängigkeit von der `cq.jquery`-Bibliothek auf. Die JSP, die die Haupt-Client-Bibliothek referenziert, erzeugt HTML-Code, der den folgenden Code enthält:
 
 ```xml
 <script src="/etc/clientlibs/foundation/cq.jquery.js" type="text/javascript">
@@ -234,7 +234,7 @@ Legen Sie mit der categories-Eigenschaft den Client-Bibliotheksordner fest, den 
 
 #### Minimieren von Anfragen durch Einbetten {#using-embedding-to-minimize-requests}
 
-In einigen Fällen enthält die endgültige HTML, die von Ihrer Veröffentlichungsinstanz für eine typische Seite generiert wurde, eine relativ große Anzahl von `<script>` -Elemente, insbesondere dann, wenn Ihre Site Client-Kontextinformationen für Analysen oder Targeting verwendet. In einem nicht optimierten Projekt kann beispielsweise die folgende Reihe von `<script>` -Elemente in der HTML für eine Seite:
+In einigen Fällen enthält der endgültige HTML-Code, den Ihre Veröffentlichungsinstanz für eine typische Seite generiert, möglicherweise eine recht große Anzahl an `<script>`-Elementen, insbesondere dann, wenn Ihre Site Client-Kontextinformationen für Analyse oder Targeting verwendet. Beispiel: In einem nicht optimierten Projekt kann die folgende Reihe von `<script>`-Elementen im HTML-Code einer Seite vorkommen:
 
 ```xml
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery.js"></script>
@@ -300,13 +300,13 @@ body {
 
 Verwenden Sie die Eigenschaft `channels` eines Client-Bibliotheksordners, um die Mobile-Gruppe zu identifizieren, die die Bibliothek verwendet. Die Eigenschaft `channels` ist hilfreich, wenn Bibliotheken derselben Kategorie für verschiedene Geräte entwickelt wurden.
 
-Um einen Client-Bibliotheksordner mit einer Gerätegruppe zu verknüpfen, fügen Sie Ihrer `cq:ClientLibraryFolder` Knoten mit den folgenden Attributen:
+Um einen Client-Bibliotheksordner mit einer Gerätegruppe zu verknüpfen, fügen Sie Ihrem `cq:ClientLibraryFolder`-Knoten eine Eigenschaft mit den folgenden Attributen hinzu:
 
 * **Name:** channels
 * **Typ:** String[]
-* **Werte:** Der Name der mobilen Gruppe. Um den Bibliotheksordner aus einer Gruppe auszuschließen, setzen Sie ein Ausrufezeichen („!“) vor den Namen.
+* **Werte:** Der Name der Mobile-Gruppe. Um den Bibliotheksordner aus einer Gruppe auszuschließen, setzen Sie ein Ausrufezeichen („!“) vor den Namen.
 
-In der folgenden Tabelle wird beispielsweise der Wert der Variablen `channels` -Eigenschaft für jeden Client-Bibliotheksordner des `cq.widgets` category:
+Beispiel: Die folgende Tabelle listet den Wert der Eigenschaft `channels` für jeden Client-Bibliotheksordner der Kategorie `cq.widgets` auf:
 
 | Client-Bibliotheksordner | Wert der Eigenschaft „channels“ |
 |---|---|
@@ -394,7 +394,7 @@ Weitere Informationen zu GCC-Optionen finden Sie in der [GCC-Dokumentation](http
 
 YUI ist in AEM der Standardminimierer. Um stattdessen GCC festzulegen, führen Sie die folgenden Schritte aus.
 
-1. Wechseln Sie zum Apache Felix Config Manager unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+1. Rufen Sie Apache Felix Config Manager unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) auf.
 1. Suchen und bearbeiten Sie den **Adobe Granite HTML Library Manager**.
 1. Aktivieren Sie die Option **Minimieren** (wenn nicht bereits aktiviert).
 1. Setzen Sie den Wert **JS-Prozessor-Standardkonfigurationen** auf `min:gcc`.
@@ -453,7 +453,7 @@ Die Komponente `dumplibs` enthält einen Test-Selektor, der den für `ui:include
 
 1. Um die Ausgabe einer Kategorie anzuzeigen, geben Sie den Wert der `categories`-Eigenschaft der Client-Bibliothek ein und klicken Sie auf **Abfrage senden**.
 
-## Konfiguration des Umgangs mit Bibliotheken für Entwicklung und Produktion {#configuring-library-handling-for-development-and-production}
+## Konfigurieren des Umgangs mit Bibliotheken für Entwicklung und Produktion {#configuring-library-handling-for-development-and-production}
 
 Der HTML Library Manager-Service verarbeitet `cq:ClientLibraryFolder`-Tags und generiert die Bibliotheken zur Laufzeit. Vom Typ der Umgebung (Entwicklung oder Produktion) hängt ab, wie Sie den Dienst konfigurieren sollten:
 

@@ -14,7 +14,7 @@ exl-id: 309d256b-c67c-4df9-8851-b1ee3faa55ed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '203'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 91%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 AEM bietet verschiedene Tools, mit denen Sie Websites für Mobilgeräte entwickeln und Inhalte in mobile Anwendungen integrieren können.
 
@@ -30,7 +30,7 @@ Diese Seite sollte zusammen mit der [Mobilseite für Autoren](/help/sites-author
 
 ## Entwickeln von Websites für mobile Endgeräte {#developing-web-sites-for-mobile}
 
-Entwickeln Sie Seitenvorlagen und -komponenten, die für die Anzeige auf mobilen Geräten optimiert sind. Entwickeln Sie Seiten, die responsive Layouts verwenden, die sich verschiedenen Bildschirmgrößen anpassen, oder entwickeln Sie Seiten, die für eine bestimmte Bildschirmgröße optimiert sind. Verwenden Sie die Geräteemulatoren, die Ihre eigenen Emulatoren für die WSYWIG-Bearbeitung und -Vorschau bereitstellen AEM oder erstellen:
+Entwickeln Sie Seitenvorlagen und -komponenten, die für die Anzeige auf mobilen Geräten optimiert sind. Entwickeln Sie Seiten, die responsive Layouts verwenden, die sich verschiedenen Bildschirmgrößen anpassen, oder entwickeln Sie Seiten, die für eine bestimmte Bildschirmgröße optimiert sind. Verwenden Sie die von AEM bereitgestellten Geräteemulatoren oder erstellen Sie Ihre eigenen Emulatoren für WSYWIG-Bearbeitung und -Vorschauanzeige:
 
 * [Erstellen von Gerätegruppenfiltern](/help/sites-developing/groupfilters.md)
 * [Responsives Design für Webseiten](/help/sites-developing/responsive.md)

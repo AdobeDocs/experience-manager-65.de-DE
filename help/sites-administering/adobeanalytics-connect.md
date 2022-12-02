@@ -175,7 +175,7 @@ Untergeordnete Elemente der Seite übernehmen die Verknüpfung mit dem Framework
 
 1. Wählen Sie in der **Sites-Konsole** die Seite aus, die Sie mit diesem Tracking einrichten möchten.
 1. Öffnen Sie die **[Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md)** entweder direkt über die Konsole oder über den Seiteneditor.
-1. Öffnen Sie die Registerkarte „Cloud-Services“.
+1. Öffnen Sie die Registerkarte **Cloud-Services**.
 
 1. Verwenden Sie das Dropdown **Konfiguration hinzufügen** und wählen Sie **Adobe Analytics** aus den verfügbaren Optionen aus. Wenn Vererbung verwendet wird, müssen Sie dies deaktivieren, bevor die Auswahl zur Verfügung gestellt wird.
 

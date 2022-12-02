@@ -13,7 +13,7 @@ exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '539'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Die Granite-Benutzeroberfläche bietet eine Reihe von Komponenten für die Verwe
 
 >[!NOTE]
 >
->Vollständige Informationen zu Feldern finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
+>Vollständige Informationen zu Feldern finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html).
 
 Verwenden Sie das Foundation-Framework der Granite-Benutzeroberfläche zum Entwickeln bzw. Erweitern von Granite-Komponenten. Dieses umfasst zwei Elemente:
 
@@ -51,13 +51,13 @@ Die generische Komponente `field` der Granite-Benutzeroberfläche beinhaltet zwe
 * `init.jsp`: Übernimmt die generische Verarbeitung sowie Beschriftung und Beschreibung und liefert den für das Rendern des Felds erforderlichen Formularwert.
 * `render.jsp`: Übernimmt das tatsächliche Rendern des Felds und muss für das benutzerdefinierte Feld überschrieben werden; ist in `init.jsp` enthalten.
 
-Weitere Informationen finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche im Abschnitt zu Feldern](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
+Weitere Informationen finden Sie in der [Dokumentation zur Granite-Benutzeroberfläche im Abschnitt zu Feldern](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html).
 
 Beispiele finden Sie hier:
 
 * `cqgems/customizingfield/components/colorpicker`
 
-   * im Abschnitt [Codebeispiele](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * im Abschnitt [Codebeispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 * `granite/ui/components/foundation/form`
 
@@ -65,7 +65,7 @@ Beispiele finden Sie hier:
 >
 >Da dieser Mechanismus JSP verwendet, werden i18n und XSS nicht vorgefertigt bereitgestellt. Daher müssen Sie die Zeichenfolgen internationalisieren und durch Anführungszeichen schützen. Das folgende Verzeichnis enthält die generischen Felder aus einer Standardinstanz, die Sie als Referenz verwenden können:
 >
->`/libs/granite/ui/components/foundation/form`.
+>`/libs/granite/ui/components/foundation/form`-Verzeichnis
 
 ## Erstellen des serverseitigen Skripts für die Komponente {#creating-the-server-side-script-for-the-component}
 
@@ -89,7 +89,7 @@ Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, w
    vm.get("value, String.class");
    ```
 
-   Weitere Informationen finden Sie in der Implementierung von nativen Feldern der Granite-Benutzeroberfläche. Beispiel: `/libs/granite/ui/components/foundation/form/textfield`.
+   Weitere Informationen finden Sie im Abschnitt zur Implementierung von vorkonfigurierten Feldern der Granite-Benutzeroberfläche, beispielsweise `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >
@@ -97,12 +97,12 @@ Das benutzerdefinierte Feld sollte das `render.jsp`-Skript nur überschreiben, w
 
 ## Erstellen der Client-Bibliothek für die Komponente {#creating-the-client-library-for-the-component}
 
-Gehen Sie wie folgt vor, um der Komponente ein bestimmtes clientseitiges Verhalten hinzuzufügen:
+Gehen Sie wie folgt vor, um der Komponente ein bestimmtes Client-seitiges Verhalten hinzuzufügen:
 
 1. Erstellen Sie eine Client-Bibliothek der Kategorie `cq.authoring.dialog`.
-1. Erstellen einer clientlib der Kategorie `cq.authoring.dialog` und definieren Sie `JS`/ `CSS` darin.
+1. Erstellen Sie eine Client-Bibliothek der Kategorie `cq.authoring.dialog` und definieren Sie darin Ihr `JS`/ `CSS` darin.
 
-   Definieren Sie Ihre `JS`/ `CSS` in die clientlib.
+   Definieren Sie Ihr `JS`/ `CSS` in der Client-Bibliothek.
 
    >[!NOTE]
    >

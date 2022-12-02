@@ -1,6 +1,6 @@
 ---
-title: '"[!DNL Assets] HTTP-API."'
-description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in [!DNL Adobe Experience Manager Assets].
+title: '[!DNL Assets] HTTP-API.'
+description: Erstellen, lesen, aktualisieren, löschen, verwalten Sie digitale Assets mit der HTTP-API in  [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
@@ -8,17 +8,17 @@ exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '1758'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # [!DNL Assets]-HTTP-API {#assets-http-api}
 
-| Version | Artikellink |
+| Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=en) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/mac-api-assets.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html?lang=en) |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/extending/mac-api-assets.html?lang=de) |
 
 ## Übersicht {#overview}
 
@@ -35,7 +35,7 @@ Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellunge
 
 >[!CAUTION]
 >
->[Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc` Namespace.
+>[Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr`-Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc`-Namespace.
 
 ## Inhaltsfragmente {#content-fragments}
 
@@ -58,7 +58,7 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 **Eigenschaften**:
 
 * `name` ist der Name des Ordners. Dies entspricht dem letzten Segment im URL-Pfad ohne die Erweiterung.
-* `title` Ist ein optionaler Titel des Ordners, der anstelle des Namens angezeigt werden kann
+* `title` Ist ein optionaler Titel des Ordners, der anstelle des Namens angezeigt werden kann.
 
 >[!NOTE]
 >
@@ -72,10 +72,10 @@ Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie ste
 
 ### Assets {#assets}
 
-Experience Managers ein Asset die folgenden Elemente enthält:
+In Experience Manager enthalten Assets die folgenden Elemente:
 
 * Die Eigenschaften und Metadaten des Assets.
-* Mehrere Ausgabedarstellungen, z. B. die ursprüngliche Ausgabedarstellung (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Ausgabedarstellungen. Zusätzliche Ausgabedarstellungen können Bilder unterschiedlicher Größe, verschiedene Videokodierungen oder aus PDF extrahierte Seiten sein oder [!DNL Adobe InDesign] Dateien.
+* Mehrere Ausgabedarstellungen, z. B. die ursprüngliche Ausgabedarstellung (das ursprünglich hochgeladene Asset), eine Miniaturansicht und viele andere Ausgabedarstellungen. Bei den zusätzlichen Ausgabedarstellungen kann es sich um Bilder unterschiedlicher Größe, unterschiedliche Videokodierungen oder aus PDF- oder [!DNL Adobe InDesign]-Dateien extrahierte Seiten handeln.
 * Optionale Kommentare.
 
 Weitere Informationen über Elemente in Inhaltsfragmenten finden Sie unter [Unterstützung von Inhaltsfragmenten in der Experience Manager Assets-HTTP-API](/help/assets/assets-api-content-fragments.md#content-fragments).
@@ -108,7 +108,7 @@ Die [!DNL Assets]-HTTP-API bietet die folgenden Funktionen:
 
 * Greife Sie auf `https://[aem_server]:[port]/system/console/configMgr` zu.
 * Navigieren Sie zu **[!UICONTROL Adobe Granite CSRF-Filter]**.
-* Stellen Sie sicher, dass die Eigenschaft **[!UICONTROL Filtermethoden]** umfasst: `POST`, `PUT`, `DELETE`.
+* Stellen Sie sicher, dass die Eigenschaft **[!UICONTROL Filtermethoden]** Folgendes umfasst: `POST`, `PUT`, `DELETE`.
 
 ## Abrufen von Ordnerauflistungen {#retrieve-a-folder-listing}
 
@@ -146,7 +146,7 @@ Wenn der übergeordnete Knoten des angegebenen Pfades nicht vorhanden ist, schl�
 
 ## Erstellen von Assets {#create-an-asset}
 
-Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn eine `*` anstelle eines Knotennamens angegeben wird, verwendet das Servlet den Parameternamen oder den Dateinamen als Knotennamen.
+Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DAM-Repository zu erstellen. Wenn statt eines Knotennamens ein `*` angegeben wird, verwendet das Servlet den Parameter- oder Dateinamen als Knotennamen.
 
 **Parameter**: Die Parameter sind `name` für den Asset-Namen und `file` für die Dateireferenz.
 
@@ -157,14 +157,14 @@ Platzieren Sie die bereitgestellte Datei im angegebenen Pfad, um ein Asset im DA
 
 **Antwort-Codes**: Die Antwort-Codes sind:
 
-* 201 - ERSTELLT - wenn das Asset erfolgreich erstellt wurde.
-* 409 - KONFLIKT - wenn Asset bereits vorhanden ist.
+* 201 – ERSTELLT – wenn das Asset erfolgreich erstellt wurde.
+* 409 – KONFLIKT – wenn das Asset bereits existiert.
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
 ## Aktualisieren von Asset-Binärdateien {#update-asset-binary}
 
-Aktualisiert die Binärdatei eines Assets (Ausgabedarstellung mit dem ursprünglichen Namen). Bei einer Aktualisierung wird der standardmäßige Asset-Verarbeitungs-Workflow ausgeführt, sofern er konfiguriert ist.
+Aktualisiert eine Asset-Binärdatei (Ausgabedarstellung mit Originalnamen). Bei einer Aktualisierung wird der standardmäßige Asset-Verarbeitungs-Workflow ausgeführt, sofern er konfiguriert ist.
 
 **Anfrage**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
@@ -188,9 +188,9 @@ Aktualisiert die Asset-Metadateneigenschaften. Wenn Sie eine Eigenschaft im `dc:
 * 412 – VORBEDINGUNG FEHLGESCHLAGEN – wenn die Stammsammlung nicht gefunden oder nicht aufgerufen werden kann.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-### Metadaten-Update synchronisieren zwischen `dc` und `jcr` namespace {#sync-metadata-between-namespaces}
+### Synchronisieren von Metadaten-Updates zwischen dem `dc`- und dem `jcr`-Namespace {#sync-metadata-between-namespaces}
 
-Die API-Methode aktualisiert die Metadateneigenschaften im `jcr` Namespace. Die über die Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `dc` Namespace. So synchronisieren Sie die Metadatenwerte zwischen `dc` und `jcr` -Namespace erstellen, können Sie einen Workflow erstellen und Experience Manager konfigurieren, um den Workflow bei der Asset-Bearbeitung auszuführen. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
+Die API-Methode aktualisiert die Metadateneigenschaften im `jcr`-Namespace. Die über die Benutzeroberfläche vorgenommenen Aktualisierungen ändern die Metadateneigenschaften im `dc`-Namespace. Zum Synchronisieren der Metadatenwerte zwischen dem `dc`- und dem `jcr`-Namespace können Sie einen Workflow erstellen und Experience Manager so konfigurieren, dass der Workflow bei der Asset-Bearbeitung ausgeführt wird. Verwenden Sie ein ECMA-Skript zum Synchronisieren der erforderlichen Metadateneigenschaften. Das folgende Beispielskript synchronisiert die Titelzeichenfolge zwischen `dc:title` und `jcr:title`.
 
 ```javascript
 var workflowData = workItem.getWorkflowData();
@@ -286,7 +286,7 @@ Verschiebt einen Ordner oder ein Asset in dem angegebenen Pfad in ein neues Ziel
 
 **Anfrage**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-Nicht anwenden `/content/dam` in der URL. Ein Beispielbefehl zum Verschieben von Assets und zum Überschreiben vorhandener Assets:
+Verwenden Sie `/content/dam` nicht in der URL. Ein Beispielbefehl zum Verschieben von Assets und zum Überschreiben vorhandener Assets:
 
 ```shell
 curl -u admin:admin -X MOVE https://[aem_server]:[port]/api/assets/source/file.png -H "X-Destination: https://[aem_server]:[port]/api/assets/destination/file.png" -H "X-Overwrite: T"
@@ -317,6 +317,6 @@ Löscht eine Ressource(nstruktur) im angegebenen Pfad.
 
 ## Tipps und Einschränkungen {#tips-best-practices-limitations}
 
-* [Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr` Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc` Namespace.
+* [Die HTTP-API aktualisiert die Metadateneigenschaften](#update-asset-metadata) im `jcr`-Namespace. Die Experience Manager-Benutzeroberfläche aktualisiert jedoch die Metadateneigenschaften im `dc`-Namespace.
 
 * Die Assets-HTTP-API gibt nicht die vollständigen Metadaten zurück. Die Namespaces sind fest kodiert und nur diese Namespaces werden zurückgegeben. Vollständige Metadaten finden Sie im Asset-Pfad `/jcr_content/metadata.json`.

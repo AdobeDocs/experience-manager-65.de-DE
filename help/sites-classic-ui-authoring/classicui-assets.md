@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit Assets
 seo-title: Working with Assets
-description: Im Abschnitt „Erstellungsumgebung und Tools“ finden Sie weitere Informationen zur Nutzung des Content Finders zum Finden und Verwenden von Assets bei der Bearbeitung von Seiten. AEM Assets bietet andere Methoden zum Arbeiten mit Assets.
+description: Im Abschnitt Erstellungsumgebung und Tools finden Sie weitere Informationen zur Nutzung des Content Finders zum Finden und Verwenden von Assets bei der Bearbeitung von Seiten. AEM Assets bietet andere Methoden zum Arbeiten mit Assets.
 seo-description: The Author Environment and Tools section provides information about using Content Finder to find and use assets when editing pages. AEM Assets provides other methods for working with assets.
 uuid: 65d1e593-9957-45b7-8831-45055aa41a1d
 contentOwner: Chris Bohnert
@@ -13,13 +13,13 @@ exl-id: daf5c934-8a98-4891-94a1-029056d87931
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '80'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
 # Arbeiten mit Assets{#working-with-assets}
 
-Im Abschnitt [Erstellungsumgebung und Tools](/help/sites-authoring/author-environment-tools.md) finden Sie weitere Informationen zur Nutzung des Content Finders zum Finden und Verwenden von Assets bei der Bearbeitung von Seiten.  AEM Assets bietet andere Methoden zum Arbeiten mit Assets:
+Im Abschnitt [Erstellungsumgebung und Tools](/help/sites-authoring/author-environment-tools.md) finden Sie weitere Informationen zur Nutzung des [!UICONTROL Content Finders] zum Finden und Verwenden von Assets bei der Bearbeitung von Seiten. AEM Assets bietet andere Methoden zum Arbeiten mit Assets:
 
 * [Hinzufügen von Dynamic Media Classic-Funktionen zu Ihrer Seite](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Arbeiten mit Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)

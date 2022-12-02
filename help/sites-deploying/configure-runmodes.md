@@ -14,7 +14,7 @@ exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '747'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -45,9 +45,9 @@ Installations-Ausführungsmodi sind vordefiniert:
 
 Jeweils zwei Paare von Ausführungsmodi schließen einander gegenseitig aus. Sie können beispielsweise:
 
-* definieren `author` oder `publish`nicht beides gleichzeitig
+* entweder `author` oder `publish` definieren, aber nicht beide gleichzeitig;
 
-* kombinieren `author` mit `samplecontent` oder `nosamplecontent` (aber nicht beides)
+* `author` mit `samplecontent` oder `nosamplecontent` (aber nicht beiden) kombinieren.
 
 >[!CAUTION]
 >
@@ -89,15 +89,15 @@ Der Ausführungsmodus ist durch ein Suffix im Ordnernamen gekennzeichnet. Dadurc
 
 * `config`
 
-   Anwendbar für alle Ausführungsmodi
+   Wird für alle Ausführungsmodi verwendet
 
 * `config.author`
 
-   Wird für den Autorenausführungsmodus verwendet
+   Wird für den author-Ausführungsmodus verwendet
 
 * `config.publish`
 
-   Wird für den Veröffentlichungsausführungsmodus verwendet
+   Wird für den publish-Ausführungsmodus verwendet
 
 * `config.<run-mode>`
 
@@ -111,7 +111,7 @@ Siehe [OSGi-Konfiguration im Repository](/help/sites-deploying/configuring-osgi.
 
 ## Definieren von zusätzlichen für einen Ausführungsmodus zu installierenden Bundles {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
-Zusätzliche Bundles, die für einen bestimmten Ausführungsmodus installiert werden sollen, können ebenfalls angegeben werden. Für diese Definitionen werden Installationsordner verwendet, um die Bundles zu speichern. Auch hier ist der Ausführungsmodus durch ein Präfix gekennzeichnet:
+Zusätzliche Bundles, die für einen bestimmten Ausführungsmodus installiert werden sollen, können ebenfalls angegeben werden. Für diese Definitionen werden Installationsordner verwendet, die die Bundles enthalten. Auch hier ist der Ausführungsmodus durch ein Präfix gekennzeichnet:
 
 * `install.author`
 * `install.publish`
@@ -138,13 +138,13 @@ Mit der Datei `sling.properties` können Sie den erforderlichen Ausführungsmodu
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 
-1. Fügen Sie die folgenden Eigenschaften hinzu: Das folgende Beispiel richtet sich an den Autor:
+1. Fügen Sie die folgenden Eigenschaften hinzu; dies ist ein Beispiel für „author“:
 
    `sling.run.modes=author`
 
 ### Verwenden der -r-Option {#using-the-r-option}
 
-Ein benutzerdefinierter Ausführungsmodus kann mithilfe der `-r` beim Start des Schnellstarts. Verwenden Sie beispielsweise den folgenden Befehl, um eine AEM Instanz mit dem Ausführungsmodus &quot;dev&quot;zu starten. &quot;
+Beim Ausführen des Schnellstarts können Sie mit der `-r`-Option einen benutzerdefinierten Ausführungsmodus aktivieren. Beispielsweise können Sie folgenden Befehl verwenden, um eine AEM-Instanz mit dem dev-Ausführungsmodus zu starten. ``
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
@@ -154,13 +154,13 @@ java -jar cq-56-p4545.jar -r dev
 
 Mit einer Systemeigenschaft im Startskript kann der Ausführungsmodus spezifiziert werden.
 
-* Verwenden Sie beispielsweise Folgendes, um eine Instanz als Produktionsveröffentlichungsinstanz in den USA zu starten:
+* Beispielsweise können Sie Folgendes verwenden, um eine Instanz als Produktionsveröffentlichungsinstanz zu starten, die sich in den USA befindet:
 
    `-Dsling.run.modes=publish,prod,us`
 
 ### Erkennen von Dateinamen – Umbenennen der JAR-Datei {#filename-detection-renaming-the-jar-file}
 
-Die folgenden beiden Ausführungsmodi der Installation können vor der Installation durch Umbenennen der JAR-Datei der Installation aktiviert werden:
+Die folgenden beiden Installations-Ausführungsmodi können durch die Umbenennung der Installations-JAR-Datei vor der Installation aktiviert werden:
 
 * publish
 * author

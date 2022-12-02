@@ -13,7 +13,7 @@ exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1910'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit Adobe Experience Manager (AE
 >
 >Ihr Konto muss über die [erforderlichen Zugriffsrechte](/help/sites-administering/security.md) und [Brechtigungen](/help/sites-administering/security.md#permissions) verfügen, damit Sie Aktionen auf Seiten durchführen können, wie das Erstellen, Kopieren, Verschieben, Bearbeiten oder Löschen.
 >
->Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an den Systemadministrator zu wenden.
+>Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die bzw. den Systemadmin zu wenden.
 
 ## Website-Organisation {#organizing-your-website}
 
@@ -38,17 +38,17 @@ Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) org
 
 Die Struktur einer Website kann als *Baumstruktur* gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
 
-Nachstehend finden Sie einen Auszug aus der Geometrixx. wobei beispielsweise die `Triangle` wird aufgerufen:
+Der folgende Auszug stammt aus der Geometrixx-Website, über die z. B. die `Triangle`-Seite aufgerufen wird.
 
 * Autorenumgebung
 
    `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
-* Veröffentlichungsumgebung
+* Publishing-Umgebung
 
    `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Je nach Konfiguration Ihrer Instanz verwenden Sie `/content` kann in der Veröffentlichungsumgebung optional sein.
+   Abhängig von der Konfiguration Ihrer Instanz kann die Verwendung von `/content` in der Veröffentlichungsumgebung optional sein.
 
 ```xml
   /content
@@ -70,7 +70,7 @@ Nachstehend finden Sie einen Auszug aus der Geometrixx. wobei beispielsweise die
     /...
 ```
 
-Diese Struktur kann über die Websites-Konsole angezeigt werden, mit der Sie [durch die Baumstruktur navigieren](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
+Diese Struktur kann über die Websites-Konsole angezeigt werden, die Sie verwenden können, um [durch die Baumstruktur zu navigieren](/help/sites-classic-ui-authoring/author-env-basic-handling.md#main-pars-text-15).
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
@@ -88,9 +88,9 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
    * Mit diesem Wert wird der URI generiert.
    * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
 
-Beim Erstellen einer neuen Seite AEM [den Seitennamen gemäß den Konventionen validieren](/help/sites-developing/naming-conventions.md) von AEM und JCR auferlegt.
+Wenn Sie eine neue Seite erstellen, validiert AEM [den Seitennamen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
 
-Die Implementierung und die Liste der zulässigen Zeichen unterscheiden sich je nach Benutzeroberfläche geringfügig (sie ist für die Touch-optimierte Benutzeroberfläche umfassender). Es ist jedoch mindestens Folgendes zulässig:
+Die Implementierung und die Liste von zulässigen Zeichen variieren entsprechend der Benutzeroberfläche (umfangreicher für die Touch-optimierte Benutzeroberfläche). Das zulässige Minimum ist:
 
 * „a“ bis „z“
 * „A“ bis „Z“
@@ -102,7 +102,7 @@ Verwenden Sie nur diese Zeichen, wenn Sie sicher sein möchten, dass sie akzepti
 
 #### Titel {#title}
 
-Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen von AEM und JCR. ](/help/sites-developing/naming-conventions.md) In beiden Benutzeroberflächen werden ungültige Zeichen im Feld **Titel** akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
+Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR. In beiden Benutzeroberflächen werden ungültige Zeichen im Feld **Titel** akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -113,14 +113,14 @@ Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den
 
 Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen von AEM und JCR](/help/sites-developing/naming-conventions.md).
 
-In der klassischen Benutzeroberfläche **kann keine ungültigen Zeichen eingeben** im **Name** -Feld.
+In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig.
 
 >[!NOTE]
->In der Touch-optimierten Benutzeroberfläche **kann keine ungültigen Zeichen senden** im **Name** -Feld. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
+>In der Touch-optimierten Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die auf zu entfernende/ersetzende Zeichen verweist.
 
 >[!NOTE]
 >
->Sie sollten die Verwendung eines zweistelligen Codes gemäß ISO-639-1 vermeiden, es sei denn, es handelt sich um eine Sprachwurzel.
+>Sie sollten die Verwendung eines zweistelligen Codes gemäß ISO-639-1 vermeiden, es sei denn, es handelt sich um einen Sprachstamm.
 >
 >Weitere Informationen finden Sie unter [Vorbereiten von Inhalten für die Übersetzung](/help/sites-administering/tc-prep.md).
 
@@ -148,10 +148,10 @@ Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie best
 * Text
 * Bild
 * Diashow
-* Video   
+* Video
 * viele weitere
 
-Nachdem Sie eine Seite erstellt und geöffnet haben, können Sie [Inhalt mithilfe der Komponenten hinzufügen](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph), verfügbar über [Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick).
+Sobald Sie eine Seite erstellt und geöffnet haben, können Sie mithilfe der Komponenten, die im [Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick) verfügbar sind, [Inhalt hinzufügen](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#insertinganewparagraph).
 
 ## Verwalten von Seiten {#managing-pages}
 
@@ -174,7 +174,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
    * Angabe eines **Titels**, der für den Benutzer angezeigt wird.
    * Angabe eines **Namens**, der für die Erzeugung des URI verwendet wird. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
 
-      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM[ den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
+      * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM [den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
       * In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig.
    * Klicken Sie auf die Vorlage, die für die Erstellung der neuen Seite verwendet werden soll.
 
@@ -189,7 +189,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
 
    >[!NOTE]
    >
-   >Wenn Sie in den URLs Unicode-Zeichen verwenden möchten, richten Sie die Eigenschaft „Alias“`sling:alias`() ) ein ([Seiteneigenschaften](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)).
+   >Wenn Sie in den URLs Unicode-Zeichen verwenden möchten, richten Sie die Eigenschaft „Alias“(`sling:alias`) ein ([Seiteneigenschaften](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)).
 
 1. Klicken Sie auf **Erstellen**, um die Seite zu erstellen. Dann kehren Sie zur Konsole **Websites** zurück, wo Sie den Eintrag für die neue Seite sehen können.
 
@@ -197,7 +197,7 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
 
    >[!NOTE]
    >
-   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Verwenden Sie die Option &quot;Untergeordnete Seite erstellen&quot;aus dem **Seite** im Sidekick eine neue Seite direkt unter der Seite erstellen, die bearbeitet wird.
+   >Sie können auch eine Seite erstellen, wenn Sie eine vorhandene Seite bearbeiten. Mit **Untergeordnete Seite erstellen** auf der Registerkarte **Seite** im Sidekick erstellen Sie eine neue Seite direkt unter der Seite, die Sie bearbeiten.
 
 ### Öffnen einer Seite zur Bearbeitung {#opening-a-page-for-editing}
 
@@ -205,7 +205,7 @@ Sie haben verschiedene Möglichkeiten, um eine Seite zur [Bearbeitung](/help/sit
 
 * Sie können in der Konsole **Websites** auf den Titel der Seite **doppelklicken**, um sie für die Bearbeitung zu öffnen.
 
-* In der **Websites**-Konsole können Sie mit der **rechten Maustaste** (Kontextmenü) auf das Seitenelement klicken und dann im Kontextmenü die Option **Öffnen** wählen.
+* In der **Websites**-Konsole können Sie mit der **rechten Maustaste** (Kontextmenü) auf das Seitenelement klicken und dann im Kontextmenü die Option **Öffnen** auswählen.
 
 * Nachdem Sie eine Seite geöffnet haben, können Sie zu anderen Seiten innerhalb der Website navigieren, um sie zu bearbeiten, indem Sie auf die zugehörigen Hyperlinks klicken.
 
@@ -257,7 +257,7 @@ So verschieben Sie eine Seite oder benennen sie um:
 
 1. Es gibt verschiedene Methoden, eine Verschiebung auszulösen:
 
-   * Klicken Sie in der **Websites**-Konsole auf die gewünschte Seite und wählen Sie **Verschieben...**.
+   * Klicken Sie in der **Websites**-Konsole auf die gewünschte Seite und wählen Sie **Verschieben...** aus.
    * In der Konsole **Websites** können Sie auch das Seitenelement auswählen, dann **mit der rechten Maustaste klicken** und **Verschieben...** auswählen.
    * Beim Bearbeiten einer Seite können Sie im Sidekick auf der Registerkarte **Seite** die Option **Seite verschieben** auswählen.
 
@@ -277,7 +277,7 @@ So verschieben Sie eine Seite oder benennen sie um:
 
    * **Verschieben**
 
-      Geben Sie die zu verschiebende Seite an - dieses Feld ist in der Regel bereits ausgefüllt, je nachdem, wie Sie den Verschiebevorgang gestartet haben.
+      Geben Sie die zu verschiebende Seite an. Dieses Feld ist in der Regel bereits ausgefüllt, je nachdem, wie Sie den Verschiebevorgang gestartet haben.
 
    * **Umbenennen in**
 
@@ -331,9 +331,9 @@ Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Sei
 >Für Ordner gelten ebenfalls die [Benennungskonventionen für Seiten](#page-naming-conventions), wenn der neue Ordnername angegeben wird.
 
 1. Öffnen Sie die Konsole **Sites** und navigieren Sie zum gewünschten Ort.
-1. Klicken Sie im Menü **Neu...** (auf den Pfeil neben **Neu...** klicken) auf **Neuer Ordner...**
+1. Klicken Sie im Menü **Neu...** (klicken Sie auf den Pfeil neben **Neu...**) auf **Neuer Ordner...**
 1. Das Dialogfeld **Ordner erstellen** wird geöffnet. Hier können Sie den **Namen** und den **Titel** eingeben:
 
    ![chlimage_1-152](assets/chlimage_1-152.png)
 
-1. Wählen Sie **Erstellen**, um den Ordner zu erstellen.
+1. Wählen Sie **Erstellen** aus, um den Ordner zu erstellen.

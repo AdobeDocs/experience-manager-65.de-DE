@@ -5,7 +5,7 @@ exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1234'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -77,7 +77,7 @@ Die Dokumentations-Touren sollen in AEM bestehende technische Dokumentationen un
 | Dokumentations-Tour | Eine Tour definiert, wie AEM ein allgemeines Geschäftsproblem mittels einer Erzählung lösen kann, die den Leser durch komplexe, miteinander verbundene Prozesse und Funktionen führt. Sie veranschaulicht, wie mehrere Funktionen zusammenarbeiten, um eine Geschäftsanforderung in bewährter Weise zu erfüllen. | Leser, die neu in AEM sind | Allgemeine Vertrautheit mit CMS | Detaillierte Optionen und Konfiguration | Text | ca. 1 Stunde |
 | Technische Dokumente | Technische Dokumente konzentrieren sich auf einzelne Funktionen, in denen die technischen Einzelheiten der Funktion und alle dem Benutzer zur Verfügung stehenden Optionen ausführlich beschrieben werden. | Erfahrene AEM-Anwender | Erfahrung mit AEM | Kontext und Hintergrund | Text | Variabel |
 | Tutorial | Ein Tutorial ist eine ausführliche Einführung in ein Thema, in der einem Entwickler oder Administrator Schritt für Schritt gezeigt wird, wie ein technisches Ziel (im Allgemeinen Programmierung oder Systemkonfiguration) erreicht werden kann, mit konkreten Beispielen und Beispielcode, wobei in der Regel eine begrenzte Anzahl von Funktionen genutzt wird. | AEM-Entwickler oder -Administratoren | Erfahrung mit AEM | Hintergrund und Theorie | Video | >1 Stunde |
-| Erste Schritte | Ein Erste-Schritte-Handbuch ist eine blitzschnelle Einführung in eine bestimmte neue AEM-Funktion. Es bietet einen schnellen Überblick über eine einzelne Funktion, die den Benutzer durch die wichtigen (aber nicht alle) Schritte zur Konfiguration und Verwendung eines einfachen Anwendungsfalls führt. | AEM-Administratoren | Erfahrung mit AEM | Hintergrund, Theorie, detaillierte Optionen | Text | &lt;1 Stunde |
+| Erste-Schritte-Handbuch | Ein Erste-Schritte-Handbuch ist eine blitzschnelle Einführung in eine bestimmte neue AEM-Funktion. Es bietet einen schnellen Überblick über eine einzelne Funktion, die den Benutzer durch die wichtigen (aber nicht alle) Schritte zur Konfiguration und Verwendung eines einfachen Anwendungsfalls führt. | AEM-Administratoren | Erfahrung mit AEM | Hintergrund, Theorie, detaillierte Optionen | Text | &lt;1 Stunde |
 
 ## Welche Touren gibt es? {#journeys}
 
@@ -87,7 +87,7 @@ Es stehen Ihnen bereits eine Reihe von Dokumentations-Touren zur Verfügung. Da 
 |---|---|
 | [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | Beginnen Sie hier, um zu sehen, wie AEM Headless-Entwicklungsmodelle unterstützt und wie Sie Ihr Projekt von der Planung über die Implementierung bis hin zum Go-Live in Angriff nehmen können. |
 | [Headless-Authoring-Tour](/help/journey-headless/author/overview.md) | Diese angeleitete Tour bietet Ihnen eine Einführung zu den leistungsstarken und flexiblen Headless-Funktionen von AEM und deren Möglichkeiten. Sie veranschaulicht, wie Sie sie bei Ihrem ersten Headless-Projekt Inhalte modellieren können. |
-| [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) | Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen, Headless-Funktionen von Adobe Experience Manager und wie Sie Inhalte für Ihr Projekt modellieren können. |
+| [Headless-Architekten-Tour](/help/journey-headless/architect/overview.md) | Beginnen Sie hier mit einer Einführung in die leistungsstarken, flexiblen, Headless-Funktionen von Adobe Experience Manager und erfahren Sie, wie Sie Inhalte für Ihr Projekt modellieren können. |
 | [Headless-Übersetzungs-Tour](/help/journey-headless/translation/overview.md) | Hier erfahren Sie, wie Sie Ihre Headless-Übersetzungsprojekte in AEM einrichten und verwalten. |
 
 <!--

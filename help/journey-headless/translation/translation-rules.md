@@ -5,7 +5,7 @@ exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '872'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch 
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie die Übersetzungsregeln von AEM zur Identifizierung Ihres Übersetzungsinhalts nutzen. Nach Lesen dieses Dokuments sollten Sie Folgendes können:
+In diesem Dokument erfahren Sie, wie Sie die Übersetzungsregeln von AEM zur Identifizierung Ihres Übersetzungsinhalts nutzen. Nach Lesen dieses Dokuments sollten Sie:
 
 * Verstehen, was die Übersetzungsregeln bewirken.
 * Eigene Übersetzungsregeln definieren können.
@@ -96,6 +96,6 @@ Bauen Sie auf diesem Wissen auf und setzen Sie die AEM Headless-Übersetzungs-To
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird empfohlen, zum nächsten Teil der Headless-Übersetzungs-Journey zu wechseln, indem Sie das Dokument lesen [Inhalt übersetzen](translate-content.md)Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einen tieferen Einblick in einige der in diesem Dokument erwähnten Konzepte bieten, aber nicht auf dem Headless-Journey weiterarbeiten müssen.
+Es wird empfohlen, mit dem nächsten Teil der Headless-Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Inhalte übersetzen](translate-content.md) lesen. Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einige in diesem Dokument erwähnte Konzepte vertiefen. Sie sind jedoch nicht erforderlich, um mit der Headless-Tour fortzufahren.
 
 * [Ermitteln von zu übersetzenden Inhalten](/help/sites-administering/tc-rules.md): Erfahren Sie, wie Übersetzungsregeln Inhalte ermitteln, die übersetzt werden müssen.

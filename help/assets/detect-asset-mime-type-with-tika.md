@@ -1,6 +1,6 @@
 ---
-title: Erkennen des MIME-Typs von Assets mit Apache Tika
-description: Aktivieren Sie Apache Tika, um zu helfen [!DNL Experience Manager Assets] den MIME-Typ von Assets aus dem Inhalts-Stream während des Upload-Vorgangs anstelle der Dateierweiterung erkennen.
+title: MIME-Typ von Assets erkennen mit Apache Tika
+description: Aktivieren Sie Apache Tika, damit  [!DNL Experience Manager Assets]  beim Upload-Vorgang den MIME-Typ von Assets aus dem Inhalts-Stream anstelle der Dateierweiterung erkennen kann.
 contentOwner: AG
 role: Admin, Architect
 feature: Metadata,Developer Tools,Asset Management
@@ -8,27 +8,27 @@ exl-id: a312466d-8d84-4c94-af85-1549afc61aed
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
 workflow-type: tm+mt
 source-wordcount: '165'
-ht-degree: 11%
+ht-degree: 100%
 
 ---
 
-# Erkennen des MIME-Typs von Assets mit [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
+# MIME-Typ von Assets erkennen mit [!DNL Apache Tika] {#detecting-mime-type-of-assets-using-apache-tika}
 
-Normalerweise [!DNL Adobe Experience Manager Assets] erkennt den MIME-Typ der Assets, die Sie von ihrer Dateierweiterung hochladen.
+Normalerweise erkennt [!DNL Adobe Experience Manager Assets] den MIME-Typ der von Ihnen hochgeladenen Assets anhand der Dateierweiterung.
 
-Wenn Sie [!DNL Apache Tika] Assets hochladen, [!DNL Assets] erkennt ihren MIME-Typ während des Upload-Vorgangs aus dem Inhalts-Stream anstelle der Dateierweiterung.
+Wenn Sie [!DNL Apache Tika]verwenden, um Assets hochzuladen, erkennt [!DNL Assets] deren MIME-Typ anhand des Inhalts-Streams während des Upload-Vorgangs statt anhand der Dateierweiterung. 
 
-Diese Funktion ist standardmäßig deaktiviert.  Um die Funktion zu aktivieren, konfigurieren Sie die **[!UICONTROL Day CQ DAM Mime Type]** Dienst von [!UICONTROL Configuration Manager].
+Diese Funktion ist standardmäßig deaktiviert.  Um die Funktion zu aktivieren, konfigurieren Sie in [!UICONTROL Configuration Manager] den Dienst **[!UICONTROL Day CQ DAM Mime Type]**.
 
 >[!NOTE]
 >
->MIME-Typerkennung mit [!DNL Apache Tika] -Bibliothek ist ein ressourcenintensiver Vorgang.
+>Die Erkennung des MIME-Typs mithilfe der [!DNL Apache Tika]-Bibliothek ist ein ressourcenintensiver Vorgang. 
 
-1. Um die Web-Konsole &quot;Configuration Manager&quot;zu öffnen, greifen Sie auf `https://[aem_server]:[port]/system/console/configMgr`.
+1. Um die Web-Konsole „Configuration Manager“ zu öffnen, verwenden Sie `https://[aem_server]:[port]/system/console/configMgr`.
 
-1. Suchen Sie in der Liste der Dienste nach **[!UICONTROL Day CQ DAM Mime Type Service]** und klicken Sie auf **[!UICONTROL Bearbeiten]**.
+1. Suchen Sie in der Liste der Dienste nach **[!UICONTROL Day CQ DAM Mime Type Service]**, und klicken Sie auf **[!UICONTROL Edit]**.
 
-1. Wählen Sie die **[!UICONTROL MIME aus Inhalt erkennen]** -Option zum Parsen hochgeladener Assets aktivieren, um ihren MIME-Typ zu bestimmen, während Dateierweiterungen ignoriert werden. Standardmäßig ist diese Option deaktiviert. 
+1. Aktivieren Sie die Option **[!UICONTROL Detect MIME from content]**, um das Analysieren hochgeladener Assets zu aktivieren und so den zugehörigen MIME-Typ ohne Beachtung der Dateierweiterungen zu bestimmen. Standardmäßig ist diese Option deaktiviert. 
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 

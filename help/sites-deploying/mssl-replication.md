@@ -14,7 +14,7 @@ exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ Sie müssen festlegen, mit welchem Benutzerkonto die Replikation ausgeführt wir
 Sie benötigen einen privaten Schlüssel und ein öffentliches Zertifikat für die Autoren- und Veröffentlichungsinstanz:
 
 * Private Schlüssel müssen im PKCS#12- oder JKS-Format vorliegen.
-* Zertifikate müssen im PKCS#12- oder JKS-Format enthalten sein. Zertifikate im CER-Format können ebenfalls zu Granite Truststore hinzugefügt werden.
+* Zertifikate müssen im PKCS#12- oder JKS-Format vorliegen. Zertifikate im CER-Format können ebenfalls zu Granite Truststore hinzugefügt werden.
 * Zertifikate können von einer anerkannten Zertifizierungsstelle (Certification Authority, CA) selbst signiert oder signiert werden.
 
 ### JKS-Format {#jks-format}
@@ -217,10 +217,10 @@ In der folgenden Tabelle sind die OSGi-Eigenschaften aufgeführt, die Sie konfig
 
 | Eigenschaftsname in der Web-Konsole | OSGi-Eigenschaftsname | Wert |
 |---|---|---|
-| HTTPS aktivieren | org.apache.felix.https.enable | Ja |
-| Aktivieren Sie HTTPS zur Verwendung von Granite KeyStore. | org.apache.felix.https.use.granite.keystore | Ja |
-| HTTPS-Port | org.osgi.service.http.port.secure | 8443 (oder anderer gewünschter Anschluss) |
-| Client-Zertifikat | org.apache.felix.https.clientcertificate | &quot;Client-Zertifikat gewünscht&quot; |
+| Aktivieren von HTTPS | org.apache.felix.https.enable | true |
+| Aktivieren von HTTPS zur Verwendung von Granite KeyStore | org.apache.felix.https.use.granite.keystore | true |
+| HTTPS-Port | org.osgi.service.http.port.secure | 8443 (oder anderer gewünschter Port) |
+| Client-Zertifikat | org.apache.felix.https.clientcertificate | „Client-Zertifikat gewünscht“ |
 
 ## Konfigurieren des Replikationsagenten auf der Autoreninstanz {#configure-the-replication-agent-on-author}
 
@@ -243,7 +243,7 @@ Um MSSL zu aktivieren, konfigurieren Sie die Eigenschaften auf der Registerkarte
    <td>Kein Wert</td>
   </tr>
   <tr>
-   <td>Kennwort</td>
+   <td>Passwort</td>
    <td>Kein Wert</td>
   </tr>
   <tr>

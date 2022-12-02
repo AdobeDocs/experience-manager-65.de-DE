@@ -1,22 +1,22 @@
 ---
 title: Konfigurieren Sie den RTE für mehrere Editoren für Bearbeitung im Kontext.
-description: Erstellen Sie mehrere integrierte Editoren in Adobe Experience Manager, indem Sie den Rich-Text-Editor konfigurieren.
+description: Erstellen Sie in Adobe Experience Manager mehrere Editoren für Bearbeitung im Kontext, indem Sie den Rich-Text-Editor konfigurieren.
 contentOwner: AG
 exl-id: 03030317-8b7d-408a-bdfd-619824d7260c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '445'
-ht-degree: 26%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren mehrerer Editoren für Bearbeitung im Kontext {#configure-multiple-in-place-editors}
 
-Sie können den Rich-Text-Editor in Adobe Experience Manager so konfigurieren, dass er über mehrere integrierte Editoren verfügt. Nach der Konfiguration können Sie den entsprechenden Inhalt auswählen und den passenden Editor öffnen.
+Sie können den Rich-Text-Editor in Adobe Experience Manager so konfigurieren, dass er über mehrere Editoren für Bearbeitung im Kontext verfügt. Nach der Konfiguration können Sie den entsprechenden Inhalt auswählen und den passenden Editor öffnen.
 
 ![Ein bestimmter Editor für Bearbeitung im Kontext](assets/rte-inplace-editor.png)
 
-## Mehrere Editoren konfigurieren {#configure-multiple-editors}
+## Konfigurieren mehrerer Editoren {#configure-multiple-editors}
 
 Um die Verwendung mehrerer Editoren für Bearbeitung in Kontext zu ermöglichen, wurde die Struktur des Knotentyps `cq:InplaceEditingConfig` um die Definition des Knotentyps `cq:ChildEditorConfig` erweitert.
 
@@ -55,7 +55,7 @@ Beispiel:
 
 Gehen Sie wie folgt vor, um mehrere Editoren zu konfigurieren:
 
-1. Auf dem Knoten `cq:inplaceEditing` (vom Typ `cq:InplaceEditingConfig`) definieren die folgenden Eigenschaften:
+1. Definieren Sie im Knoten `cq:inplaceEditing` (vom Typ `cq:InplaceEditingConfig`) die folgenden Eigenschaften:
 
    * Name:`editorType`
    * Typ: `String`
@@ -66,26 +66,26 @@ Gehen Sie wie folgt vor, um mehrere Editoren zu konfigurieren:
    * Name: `cq:ChildEditors`
    * Typ: `nt:unstructured`
 
-1. under `cq:childEditors` erstellen Sie für jeden Editor im Kontext einen Knoten:
+1. Erstellen Sie unter dem Knoten `cq:childEditors` für jeden Editor für Bearbeitung in Kontext einen Knoten:
 
-   * Name: Der Name jedes Knotens ist der Name der Eigenschaft, die er darstellt, wie bei Ablagezielen. Zum Beispiel `image` und `text`.
+   * Name: Der Name jedes Knotens sollte wie bei Ablagezielen dem Namen der Eigenschaft entsprechen, die er repräsentiert. Zum Beispiel `image` und `text`.
    * Typ: `cq:ChildEditorConfig`
 
    >[!NOTE]
    >
-   >Es besteht eine Korrelation zwischen den definierten Ablagezielen und den untergeordneten Editoren. Der Name der `cq:ChildEditorConfig` -Knoten wird als Ablageziel-ID betrachtet, die als Parameter für den ausgewählten untergeordneten Editor verwendet werden kann. Wenn der bearbeitbare Unterbereich keine Ablagezielgruppe hat, z. B. in einer Textkomponente, wird der Name des untergeordneten Editors weiterhin als ID zur Identifizierung des entsprechenden bearbeitbaren Bereichs betrachtet.
+   >Es besteht eine Korrelation zwischen den definierten Ablagezielen und den untergeordneten Editoren. Der Name des Knotens `cq:ChildEditorConfig` gilt als ID des Ablageziels und dient als Parameter für den ausgewählten untergeordneten Editor. Wenn der bearbeitbare Unterbereich kein Ablageziel hat (z. B. bei einer Textkomponente), dient der Name des untergeordneten Editors dennoch als ID zur Identifizierung des entsprechenden bearbeitbaren Bereichs.
 
-1. Auf jedem dieser Knoten (`cq:ChildEditorConfig`) definieren die Eigenschaften:
+1. Definieren Sie auf jedem dieser Knoten (`cq:ChildEditorConfig`) die folgenden Eigenschaften:
 
    * Name: `type`.
-   * Wert: den Namen des registrierten Bearbeiters; Beispiel: `image` und `text`.
+   * Wert: Durch Name des registrierten Editors für Bearbeitung in Kontext, beispielsweise `image` und `text`.
 
    * Name: `title`.
    * Wert: Der Titel, der in der Komponentenauswahlliste der verfügbaren Editoren angezeigt wird. Zum Beispiel `Image` und `Text`.
 
 ### Zusätzliche Konfiguration für Rich-Text-Editoren {#additional-configuration-for-rich-text-editors}
 
-Die Konfiguration mehrerer Rich-Text-Editoren unterscheidet sich etwas vom zuvor beschriebenen Verfahren, da Sie jede einzelne RTE-Instanz separat konfigurieren können. Weitere Informationen finden Sie unter [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md). Um mehrere RTE zu verwenden, erstellen Sie eine Konfiguration für jeden integrierten RTE. Adobe empfiehlt die Erstellung des neuen Konfigurationsknotens unter `cq:InplaceEditingConfig` da jeder einzelne RTE eine andere Konfiguration haben kann. Erstellen Sie unter dem neuen Knoten jede einzelne RTE-Konfiguration.
+Die Konfiguration mehrerer Rich-Text-Editoren unterscheidet sich etwas vom zuvor beschriebenen Verfahren, da Sie jede einzelne RTE-Instanz separat konfigurieren können. Weitere Informationen finden Sie unter [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md). Um mehrere RTEs verwenden zu können, benötigen Sie eine Konfiguration für jeden Rich-Text-Editor für Bearbeitung in Kontext. Adobe empfiehlt die Erstellung des neuen Konfigurationsknotens unter `cq:InplaceEditingConfig`, da jeder einzelne RTE eine andere Konfiguration haben kann. Legen Sie unter dem neuen Knoten die einzelnen RTE-Konfigurationen an.
 
 ```xml
     texttext
@@ -102,19 +102,19 @@ Die Konfiguration mehrerer Rich-Text-Editoren unterscheidet sich etwas vom zuvor
 
 >[!NOTE]
 >
->Für Rich-Text-Editoren wird jedoch die Eigenschaft `configPath` unterstützt, wenn es nur eine Instanz des Text-Editors (bearbeitbarer Unterbereich) in der Komponente gibt. Diese Verwendung von `configPath` wird bereitgestellt, um die Abwärtskompatibilität mit älteren Dialogfeldern der Benutzeroberfläche der Komponente zu unterstützen.
+>Für Rich-Text-Editoren wird jedoch die Eigenschaft `configPath` unterstützt, wenn es nur eine Instanz des Text-Editors (bearbeitbarer Unterbereich) in der Komponente gibt. Diese Verwendung von `configPath` dient der Abwärtskompatibilität mit Dialogfeldern für ältere Benutzeroberflächen der Komponente.
 
 >[!CAUTION]
 >
->Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Andernfalls sind die RTE-Konfigurationen nur für die Administratoren und nicht für die Benutzer in der Gruppe verfügbar `content-author`.
+>Benennen Sie den RTE-Konfigurationsknoten nicht mit `config`. Andernfalls sind die RTE-Konfigurationen nur für die Admins und nicht für die Benutzenden in der Gruppe `content-author` verfügbar.
 
-## Codebeispiele {#code-samples}
+## Code-Beispiele {#code-samples}
 
-Den Code dieser Seite finden Sie unter [Projekt aem-authoring-hybrideditors auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Sie können das gesamte Projekt als [ein ZIP-Archiv](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
+Den Code dieser Seite finden Sie unter [Projekt aem-authoring-hybrideditors auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors). Sie können das gesamte Projekt als [ZIP-Archiv](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip) herunterladen.
 
 ## Hinzufügen eines Editors für Bearbeitung im Kontext {#add-an-in-place-editor}
 
-Allgemeine Informationen zum Hinzufügen eines Editors für Bearbeitung im Kontext finden Sie im Dokument [Anpassen der Seitenbearbeitung](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
+Allgemeine Informationen zum Hinzufügen eines Editors für Bearbeitung in Kontext finden Sie im Dokument [Anpassen der Seitenbearbeitung](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
 
 >[!MORELIKETHIS]
 >

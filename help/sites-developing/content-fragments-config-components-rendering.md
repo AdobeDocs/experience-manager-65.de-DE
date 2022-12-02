@@ -13,7 +13,7 @@ exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Dies erfolgt durch die Konfiguration von [OSGi-Service – Konfiguration der Inh
 >
 >Sie können eine Komponente von Grund auf neu schreiben, die nur die Inhaltsfragmente-API verwendet, ohne die erweiterten Services zu nutzen. In einem solchen Fall müssen Sie Ihre Komponente jedoch so entwickeln, dass sie die entsprechende Verarbeitung übernimmt.
 >
->Daher wird die Verwendung der Kernkomponenten empfohlen.
+>Es wird daher empfohlen, die Kernkomponenten zu verwenden.
 
 ## Definition erweiterter Services, die konfiguriert werden müssen {#definition-of-advanced-services-that-need-configuration}
 
@@ -48,7 +48,7 @@ Die Services, die die Registrierung einer Komponente erfordern:
 * Dispatcher-Flush für referenzierte Fragmente (wenn eine Seite, die ein Fragment enthält, erneut veröffentlicht wird),
 * verwenden absatzbasiertes Rendering.
 
-Wenn Sie eine oder mehrere dieser Funktionen benötigen, ist es (in der Regel) einfacher, die vordefinierte Funktion zu verwenden, anstatt sie von Grund auf neu zu entwickeln.
+Wenn Sie eine oder mehrere dieser Funktionen benötigen, ist es (in der Regel) einfacher, die vordefinierte Funktionalität zu verwenden, anstatt sie von Grund auf neu zu entwickeln.
 
 ## OSGi-Service – Konfiguration der Inhaltsfragment-Komponente {#osgi-service-content-fragment-component-configuration}
 
@@ -58,7 +58,7 @@ Die Konfiguration muss an den OSGi-Service **Konfiguration der Inhaltsfragment-K
 
 >[!NOTE]
 >
->Siehe [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md) für weitere Informationen.
+>Weitere Informationen hierzu finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Beispiel:
 
@@ -96,7 +96,7 @@ Die OSGi-Konfiguration lautet:
  </tbody>
 </table>
 
-Für einige Funktionen (z. B. um nur einen Absatzbereich zu rendern) müssen Sie einige Konventionen einhalten:
+Für einige Funktionen (z. B. um nur einen Absatzbereich zu rendern) müssen Sie einige Konventionen einhalten:
 
 <table>
  <tbody>
@@ -129,7 +129,7 @@ Für einige Funktionen (z. B. um nur einen Absatzbereich zu rendern) müssen Sie
 
 >[!CAUTION]
 >
->Dies kann sich in späteren 6,5 Meilensteinen ändern.
+>Dies kann sich in späteren Meilensteinen von Version 6.5 ändern.
 
 ## Beispiel {#example}
 

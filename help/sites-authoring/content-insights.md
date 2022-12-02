@@ -1,7 +1,7 @@
 ---
-title: 'Inhaltseinblick '
+title: Inhalterkenntnisse
 seo-title: Content Insight
-description: Content Insight bietet Informationen zur Seitenleistung mithilfe von Webanalysen und SEO-Empfehlungen.
+description: Inhaltserkenntnisse bieten Informationen über die Leistung der Seite mithilfe von Webanalyse und SEO-Empfehlungen
 seo-description: Content Insight provides information about page performance using web analytics and SEO recommendation
 uuid: 32f5b37c-2a82-462a-9f0a-c19bed46e198
 contentOwner: Guillaume Carlino
@@ -13,21 +13,21 @@ exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Inhaltseinblick{#content-insight}
+# Inhalterkenntnisse{#content-insight}
 
-Inhaltseinblicke bieten Informationen über die Leistung der Seite mithilfe von Webanalyse und SEO-Empfehlungen. Verwenden Sie Inhaltseinblicke, um Entscheidungen darüber zu treffen, wie Sie Seiten ändern, oder um zu erfahren, wie frühere Entscheidungen die Leistung geändert haben. Für jede Seite, die Sie bearbeiten, können Sie Inhaltseinblicke öffnen, um die Seite zu analysieren.
+Inhaltserkenntnisse bieten Informationen über die Leistung der Seite mithilfe von Web-Analyse und SEO-Empfehlungen. Verwenden Sie Inhaltserkenntnisse, um Entscheidungen darüber zu treffen, wie Sie Seiten ändern, oder um zu erfahren, wie frühere Entscheidungen die Leistung geändert haben. Für jede Seite, die Sie bearbeiten, können Sie Inhaltserkenntnisse öffnen, um die Seite zu analysieren.
 
 ![chlimage_1-311](assets/chlimage_1-311.png)
 
-Das Layout der Inhaltseinblick-Seite ändert sich je nach Bildschirmabmessungen und Ausrichtung des Geräts, das Sie verwenden.
+Das Layout der Seite „Inhaltserkenntnisse“ ändert sich je nach Bildschirmabmessungen und Ausrichtung des Geräts, das Sie verwenden.
 
 ## Berichtsdaten
 
-Die Inhaltseinblick-Seite enthält Berichte, die Adobe SiteCatalyst-, Adobe Target-, Adobe Social- und BrightEdge-Daten verwenden:
+Die Seite „Inhaltserkenntnisse“ enthält Berichte, die Adobe SiteCatalyst-, Adobe Target-, Adobe Social- und BrightEdge-Daten verwenden:
 
 * SiteCatalyst: Berichte für die folgenden Metriken sind verfügbar:
 
@@ -50,7 +50,7 @@ Weitere Informationen finden Sie unter [Ändern des Berichtszeitraums](/help/sit
 
 >[!NOTE]
 >
->Für Inhaltseinblick-Berichte muss Ihr Administrator AEM mit SiteCatalyst, Target und BrightEdge integriert haben. Siehe [Integration mit SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integration mit Adobe Target](/help/sites-administering/target.md)und [Integration mit BrightEdge](/help/sites-administering/brightedge.md).
+>Für Berichte des Typs „Inhaltserkenntnisse“ muss Ihre bzw. Ihr Admin AEM mit SiteCatalyst, Target und BrightEdge integriert haben. Weitere Informationen finden Sie unter [Integration mit SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integration mit Adobe Target](/help/sites-administering/target.md) und [Integration mit BrightEdge](/help/sites-administering/brightedge.md).
 
 ## Der Ansichtsbericht {#the-views-report}
 
@@ -87,7 +87,7 @@ Der Absprungbericht umfasst eine Grafik, die die Anzahl der Absprünge anzeigt, 
 
 ## Der Kampagnenaktivitätsbericht {#the-campaign-activity-report}
 
-Für jede Kampagne, für die die Seite aktiv ist, wird ein Bericht namens *Kampagnennamenaktivität* angezeigt. Der Bericht zeigt Seitenimpressionen und Konversionen für jedes Segment an, für das ein Angebot bereitgestellt wird.
+Für jede Kampagne, für die die Seite aktiv ist, wird ein Bericht namens *Kampagnennamenaktivität* angezeigt. Der Bericht zeigt Seitenimpressionen und Konversionen für jedes Segment, für das ein Angebot bereitgestellt wird.
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 

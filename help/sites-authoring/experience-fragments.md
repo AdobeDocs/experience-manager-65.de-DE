@@ -1,7 +1,7 @@
 ---
-title: 'Experience Fragments '
+title: Experience Fragments
 seo-title: Experience Fragments
-description: 'Experience Fragments '
+description: Experience Fragments
 seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
@@ -14,7 +14,7 @@ exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
 source-git-commit: ab6fd8ca02d2a24e5973b5d78bc75288b5cc26c0
 workflow-type: tm+mt
 source-wordcount: '1440'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -130,7 +130,7 @@ Dies ist die empfohlene Methode zur Angabe der **zulässigen Vorlagen**, da die 
    >[!NOTE]
    Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
-1. Wählen Sie **Speichern und schließen** aus.
+1. Klicken Sie auf **Speichern und schließen**.
 
 ### Konfigurieren zulässiger Vorlagen für Ihre Instanz {#configure-allowed-templates-instance}
 
@@ -161,7 +161,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
    ![xf-01](assets/xf-01.png)
 
-1. Navigieren Sie zum gewünschten Ordner und wählen Sie **Erstellen**.
+1. Gehen Sie zum gewünschten Ordner und klicken Sie auf **Erstellen**.
 
    ![xf-02](assets/xf-02.png)
 
@@ -183,7 +183,7 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
 1. Klicken Sie auf **Erstellen**.
 
-   Daraufhin wird eine Meldung angezeigt. Wählen Sie nun eine der folgenden Optionen aus:
+   Daraufhin wird eine Meldung angezeigt. Auswählen:
 
    * **Fertig**, um zur Konsole zurückzukehren
 
@@ -241,7 +241,7 @@ Jetzt können Sie das Experience Fragment auf Ihren Seiten verwenden:
 
 1. Öffnen Sie eine beliebige Seite, um sie zu bearbeiten.
 
-   Beispiel: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
+   Zum Beispiel: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
 1. Erstellen Sie eine Instanz der Experience-Fragment-Komponente, indem Sie die Komponente aus dem Komponenten-Browser auf das Seitenabsatzsystem ziehen:
 
@@ -299,7 +299,7 @@ Sie können den Baustein wie bei jeder anderen Komponente auch in das Absatzsyst
 
 Details zu Ihrem Fragment können wie folgt angezeigt werden:
 
-1. Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt. Dabei enthält die **Listenansicht**[ Details eines Exports nach Target](/help/sites-administering/experience-fragments-target.md):
+1. Details werden in allen Ansichten der Konsole **Experience Fragments** angezeigt. Dabei enthält die **Listenansicht** Details eines [Exports nach Target](/help/sites-administering/experience-fragments-target.md):
 
    ![ef-03](assets/ef-03.png)
 
@@ -324,7 +324,7 @@ Details zu Ihrem Fragment können wie folgt angezeigt werden:
       * **Gesamtanzahl der Varianten** – nur zur Information
 
       * **Anzahl der Web-Varianten** – nur zur Information
-      * **Anzahl der Nicht-Webvarianten** – nur zur Information ****
+      * **Anzahl der Nicht-Webvarianten** – nur zur **Information**
 
       * **Anzahl der Seiten, auf denen dieses Fragment verwendet wird** – nur zur Information
    * **Cloud Services**

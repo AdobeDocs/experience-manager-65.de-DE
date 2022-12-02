@@ -1,5 +1,5 @@
 ---
-title: 'Die Tools-Konsolen '
+title: Die Tools-Konsolen
 seo-title: Tools Consoles
 description: Informieren Sie sich über die unterschiedlichen Tools-Konsolen von AEM.
 seo-description: Learn about the different tools consoles throughout AEM.
@@ -14,7 +14,7 @@ exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '609'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -135,7 +135,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Überwachung</td>
+   <td>Monitoring</td>
   </tr>
   <tr>
    <td> </td>
@@ -171,11 +171,11 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td> </td>
-   <td>Ordner-Metadatenschemas<br /> </td>
+   <td>Ordner-Metadatenschemata<br /> </td>
   </tr>
   <tr>
    <td> </td>
-   <td>Metadatenschemas</td>
+   <td>Metadatenschemata</td>
   </tr>
   <tr>
    <td> </td>
@@ -398,7 +398,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td>Dashboards</td>
-   <td>Ermöglicht die Erstellung von Berichterstellungsdashboards. Diese bieten eine anpassbare Möglichkeit zur Festlegung von Seiten, die konsolidierte Daten anzeigen.</td>
+   <td>Ermöglicht die Erstellung von Reporting-Dashboards. Diese bieten eine anpassbare Möglichkeit zur Festlegung von Seiten, die konsolidierte Daten anzeigen.</td>
   </tr>
   <tr>
    <td>Angepasste Dokumentation</td>
@@ -413,7 +413,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Enthält die Liste der erhaltenen Formulareinsendungen</td>
   </tr>
   <tr>
-   <td>Importtools </td>
+   <td>Import-Tools </td>
    <td>Bietet Zugriff auf verschiedene Optionen.</td>
   </tr>
   <tr>
@@ -446,7 +446,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td>Segmentierung</td>
-   <td>Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing. Die Segmentierung unterstützt Sie durch die Analyse und Charakterisierung der Benutzerdetails dabei.<br /> </td>
+   <td>Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing. Die Segmentierung hilft dabei, die Details eines Besuchers zu analysieren und zu charakterisieren.<br /> </td>
   </tr>
   <tr>
    <td>Mandanten</td>

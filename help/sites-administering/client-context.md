@@ -14,7 +14,7 @@ exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1878'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -22,9 +22,9 @@ ht-degree: 78%
 
 >[!NOTE]
 >
->ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in der zugehörigen [Konfiguration]ch-configuring.md) und [Entwickler](/help/sites-developing/contexthub.md) Dokumentation.
+>ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in der entsprechenden Dokumentation für die [Konfiguration](ch-configuring.md) und für [Entwickler](/help/sites-developing/contexthub.md).
 
-ClientContext ist ein Mechanismus, der Ihnen bestimmte Informationen über die aktuelle Seite und den aktuellen Besucher bereitstellt. Er kann mit **Strg+Alt+C** (Fenster) oder **control-option-c** (Mac):
+ClientContext ist ein Mechanismus, der Ihnen bestimmte Informationen zur aktuellen Seite und zum aktuellen Besucher liefert. Um ClientContext zu öffnen, drücken Sie die Tastenkombination **Strg+Alt+C** (Windows) oder **Ctrl+Wahl+C** (Mac):
 
 ![](assets/clientcontext_alisonparker.png)
 
@@ -40,45 +40,48 @@ In der [Veröffentlichungs- und in der Autorenumgebung werden Informationen zu F
 
 ![](do-not-localize/clientcontext_icons.png)
 
-* **Bearbeiten** Eine neue Seite wird geöffnet. Dort können Sie [Profileigenschaften bearbeiten, hinzufügen oder entfernen](#editingprofiledetails).
+* **Bearbeiten**
+Eine neue Seite wird geöffnet. Dort können Sie [Profileigenschaften bearbeiten, hinzufügen oder entfernen](#editingprofiledetails).
 
-* **Laden** Sie können [aus einer Liste von Profilen wählen und das Profil laden](#loading-a-new-user-profile), das getestet werden soll.
+* **Laden**
+Sie können [aus einer Liste von Profilen auswählen und das Profil laden](#loading-a-new-user-profile), das getestet werden soll.
 
-* **Zurücksetzen** Sie können [das Profil auf den aktuellen Benutzer zurücksetzen](#resetting-the-profile-to-the-current-user).
+* **Zurücksetzen**
+Sie können [das Profil auf den aktuellen Benutzer zurücksetzen](#resetting-the-profile-to-the-current-user).
 
 ## Verfügbare ClientContext-Komponenten {#available-client-context-components}
 
 ClientContext kann die folgenden Eigenschaften anzeigen ([abhängig von der mit „Bearbeiten“ getroffenen Auswahl](#adding-a-property-component)):
 
-**Surfer-Informationen** Zeigt die folgenden clientseitigen Informationen an:
+**Surfer-Informationen**: Zeigt die folgenden Client-seitigen Informationen an:
 
 * die **IP-Adresse**
-* **Schlüsselwörter** wird für Suchmaschinenreferenz verwendet
-* die **browser** verwendet werden
-* die **BS** (Betriebssystem) verwendet wird
-* den Bildschirm **resolution**
-* die **Maus X** position
-* die **Maus Y** position
+* **Schlüsselwörter** als Suchmaschinenreferenz
+* die verwendeten **Browser**
+* das verwendete **Betriebssystem**
+* die **Auflösung** des Bildschirms
+* die **X**-Position der Maus
+* die **Y**-Position der Maus
 
-**Aktivitäts-Stream** Hier erhalten Sie Informationen zur sozialen Aktivität des Benutzers auf verschiedenen Plattformen. z. B. die AEM Foren, Blogs, Bewertungen usw.
+**Aktivitäts-Stream**: Liefert Informationen zu sozialen Aktivitäten des Benutzers auf verschiedenen Plattformen, z. B. AEM-Foren, Blogs und Bewertungen.
 
-**Kampagne** Ermöglicht es Autoren, ein bestimmtes Erlebnis für eine Kampagne zu simulieren. Diese Komponente setzt die normale Kampagnenauflösung und Erlebnisauswahl außer Kraft, um verschiedene Permutationen testen zu können.
+**Kampagne**: Ermöglicht es Autoren, ein bestimmtes Erlebnis für eine Kampagne zu simulieren. Diese Komponente setzt die normale Kampagnenauflösung und Erlebnisauswahl außer Kraft, um verschiedene Permutationen testen zu können.
 
-Die Kampagnenauflösung basiert normalerweise auf der Eigenschaft priority der Kampagne. Das Erlebnis wird im Regelfall auf Grundlage der Segmentierung ausgewählt.
+Die Kampagnenauflösung basiert normalerweise auf der Prioritätseigenschaft der Kampagne. Das Erlebnis wird im Regelfall auf Grundlage der Segmentierung ausgewählt.
 
-**Warenkorb** Zeigt Informationen zum Warenkorb an, einschließlich Produkteinträgen (Titel, Menge, PreisFormatiert usw.), aufgelösten Promotions (Titel, Nachricht usw.) und Gutscheine (Code, Beschreibung usw.).
+**Warenkorb**: Zeigt Informationen zum Warenkorb an, darunter Produkteinträge (Titel, Menge, Preisformatierung usw.), aufgelöste Promotions (Titel, Nachricht usw.) und Gutscheine (Code, Beschreibung usw.).
 
 Der Warenkorbsitzungsstore benachrichtigt mit dem ClientContextCartServlet zudem den Server über aufgelöste Promotionsänderungen (basierend auf Segmentierungsänderungen).
 
-**Allgemeiner Store** ist eine generische Komponente, die den Inhalt eines Stores anzeigt. Es handelt sich um eine untergeordnete Version der Komponente „Generische Store-Eigenschaften“.
+**Generischer Store**: Eine generische Komponente, die den Inhalt eines Stores angezeigt. Es handelt sich um eine untergeordnete Version der Komponente „Generische Store-Eigenschaften“.
 
 Der generische Store muss mit einem JS-Renderer konfiguriert werden, der die Daten benutzerdefiniert anzeigt.
 
-**Allgemeine Store-Eigenschaften** ist eine generische Komponente, die den Inhalt eines Stores anzeigt. Es handelt sich um eine übergeordnete Version der Komponente „Generischer Store“.
+**Generische Store-Eigenschaften**: Eine generische Komponente, die den Inhalt eines Stores angezeigt. Es handelt sich um eine übergeordnete Version der Komponente „Generischer Store“.
 
 Die Komponente „Generische Store-Eigenschaften“ beinhaltet einen Standardrenderer, der die konfigurierten Eigenschaften (mit einer Miniatur) auflistet.
 
-**Geolocation** Zeigt den Breiten- und Längengrad des Clients an. Über die HTML5-Geolocation-API wird der aktuelle Standort vom Browser abgefragt. Dabei wird eine Popup-Meldung angezeigt, über die der Besucher gebeten wird, seine Standortdaten freizugeben.
+**Geolocation**: Zeigt den Breiten- und Längengrad des Kundenstandorts an. Über die HTML5-Geolocation-API wird der aktuelle Standort vom Browser abgefragt. Dabei wird eine Popup-Meldung angezeigt, über die der Besucher gebeten wird, seine Standortdaten freizugeben.
 
 Bei Anzeige in der Kontext-Cloud nutzt die Komponente eine Google-API, um eine Karte als Miniatur darzustellen. Die Komponente unterliegt den [Nutzungsbeschränkungen](https://developers.google.com/maps/documentation/staticmaps/intro#Limits) der Google-API.
 
@@ -86,38 +89,38 @@ Bei Anzeige in der Kontext-Cloud nutzt die Komponente eine Google-API, um eine K
 >
 >In AEM 6.1 bietet der Geolocation-Store nicht länger die Reverse Geocoding-Funktion. Deshalb ruf der Geolocation-Store nicht mehr Details zum aktuellen Standort ab, etwa Ortsnamen oder Ländercodes. Segmente, die diesen Store verwenden, funktionieren nicht ordnungsgemäß. Der Geolocation-Store enthält nur den Breiten- und Längengrad eines Standorts.
 
-**JSONP Store** Eine Komponente, die Inhalte anzeigt, die von Ihrer Installation abhängig sind.
+**JSONP-Store**: Eine Komponente, die Inhalt anzeigt, der abhängig von Ihrer Installation ist.
 
-Der JSON-Standard ist eine JSON-Ergänzung, mit der dieselbe ursprüngliche Richtlinie umgangen werden kann (sodass eine Web-App mit Servern in einer anderen Domäne kommunizieren kann). Er besteht darin, das JSON-Objekt in einen Funktionsaufruf zu verpacken, um es als `<script>` von der anderen Domäne aus (was eine zulässige Ausnahme von derselben Ursprungsrichtlinie ist).
+Der JSON-Standard ist eine JSON-Ergänzung, mit der dieselbe ursprüngliche Richtlinie umgangen werden kann (sodass eine Web-Anwendung mit Servern in einer anderen Domain kommunizieren kann). Er besteht in der Verpackung des JSON-Objekts in einem Funktionsaufruf, sodass dieses als `<script>` aus der anderen Domain geladen werden kann (bei der es sich um eine erlaubte Ausnahme von derselben ursprünglichen Richtlinie handelt).
 
-Der JSONP-Store ist zwar wie jeder andere Store, er lädt allerdings Informationen aus einer anderen Domäne, ohne dass für diese Informationen ein Proxy in der aktuellen Domäne benötigt wird. Siehe hierzu das Beispiel unter [Speichern von Daten in ClientContext über JSON](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
+Der JSONP-Store ist zwar wie jeder andere Store, er lädt allerdings Informationen aus einer anderen Domain, ohne dass für diese Informationen ein Proxy in der aktuellen Domain benötigt wird. Siehe hierzu das Beispiel unter [Speichern von Daten in ClientContext über JSON](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 
 >[!NOTE]
 >
 >Der JSONP-Store speichert die Informationen nicht im Cookie zwischen, ruft aber die Daten bei jedem Seitenladevorgang ab.
 
-**Profildaten** Zeigt die im Benutzerprofil erfassten Informationen an. z. B. Geschlecht, Alter, E-Mail-Adresse usw.
+**Profildaten**: Zeigt im Benutzerprofil erfasste Informationen an, z. B. Geschlecht, Alter und E-Mail-Adresse.
 
-**Gelöste Segmente** Zeigt, welche Segmente derzeit aufgelöst werden (häufig abhängig von anderen im ClientContext angezeigten Informationen). Dies ist beim Konfigurieren von Kampagnen von Interesse.
+**Aufgelöste Segmente**: Gibt an, welche Segmente aktuell aufgelöst werden (häufig von anderen in ClientContext angezeigten Informationen abhängig). Dies ist beim Konfigurieren von Kampagnen von Interesse.
 
-Beispiel: die Frage, ob sich die Maus aktuell im linken oder rechten Fensterbereich befindet. Dieses Segment wird hauptsächlich zum Testen verwendet, da Änderungen sofort sichtbar sind.
+Beispiel: die Frage, ob sich die Maus aktuell im linken oder rechten Fensterbereich befindet. Dieses Segment dient in erster Linie für Tests, da Änderungen sofort zu sehen sind.
 
-**Sozialdiagramm** Zeigt das soziale Diagramm der Freunde und Follower des Benutzers an.
+**Soziales Diagramm**: Zeigt das soziale Diagramm von Freunden und Followern des Benutzers an.
 
 >[!NOTE]
 >
->Dieses Feature ist derzeit als Demofunktion verfügbar und auf vorkonfigurierte Datensätze im Profilknoten unserer Demobenutzer angewiesen. Beispiel:
+>Dieses Feature ist derzeit als Demofunktion verfügbar und auf vorkonfigurierte Datensätze im Profilknoten unserer Demobenutzer angewiesen. Ein Beispiel finden Sie unter:
 >
->`/home/users/geometrixx/aparker@geometrixx.info/profile` => Eigenschaft &quot;Freunde&quot;
+>`/home/users/geometrixx/aparker@geometrixx.info/profile` => Eigenschaft „Freunde“
 
-**Tag Cloud** Zeigt Tags an, die auf der aktuellen Seite gesetzt wurden, sowie Tags, die beim Surfen auf der Site erfasst wurden. Wenn Sie mit der Maus auf ein Tag zeigen, sehen Sie, wie oft der aktuelle Benutzer auf Seiten mit diesem bestimmten Tag zugegriffen hat.
+**Tag-Cloud**: Zeigt die auf der aktuellen Seite gesetzten und beim Navigieren auf der Site gesammelten Tags an. Wenn Sie mit der Maus auf ein Tag zeigen, sehen Sie, wie oft der aktuelle Benutzer auf Seiten mit diesem bestimmten Tag zugegriffen hat.
 
 >[!NOTE]
 Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden nicht gezählt.
 
-**Technografik-Store** Diese Komponente hängt von Ihrer Installation ab.
+**Technografie-Store**: Diese Komponente hängt von Ihrer Installation ab.
 
-**ViewedProducts** Verfolgt die vom Kunden angezeigten Produkte. Es kann das zuletzt angesehene Produkt oder das zuletzt angesehene Produkt, das sich nicht bereits im Warenkorb befindet, abgerufen werden.
+**ViewedProducts**: Verfolgt die vom Einkäufer angesehenen Produkte. Es kann das zuletzt angesehene Produkt oder das zuletzt angesehene Produkt, das sich nicht bereits im Warenkorb befindet, abgerufen werden.
 
 Dieser Sitzungsstore verfügt über keine standardmäßige ClientContext-Komponente.
 
@@ -200,13 +203,13 @@ Mittels ClientContext-Bearbeitung können die Werte bestimmter Eigenschaften fes
 
 ### Bearbeiten von Eigenschaftsdetails {#editing-property-details}
 
-Mittels ClientContext-Bearbeitung können die Werte bestimmter Eigenschaften festgelegt (zurückgesetzt) werden. Auf diese Weise können Sie bestimmte Szenarien testen (besonders nützlich für [Segmentierung](/help/sites-administering/campaign-segmentation.md) und [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
+Mittels ClientContext-Bearbeitung können die Werte bestimmter Eigenschaften festgelegt (zurückgesetzt) werden. So können Sie bestimmte Szenarien testen. (Dies ist besonders nützlich bei [Segmentierungen](/help/sites-administering/campaign-segmentation.md) und [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).)
 
 ![](assets/clientcontext_alisonparker_edit.png)
 
 ### Hinzufügen von Eigenschaftskomponenten {#adding-a-property-component}
 
-Nachdem Sie die **ClientContext-Designseite** können Sie auch **Hinzufügen** eine vollständig neue Eigenschaft mit den verfügbaren Komponenten (die Komponenten werden sowohl im Sidekick als auch aus dem **Neue Komponente einfügen** Dialogfeld, das nach einem Doppelklick auf die **Komponenten oder Assets hierher ziehen** -Feld):
+Nach dem Öffnen der **ClientContext-Designseite** können Sie auch eine vollkommen neue Eigenschaft mithilfe der verfügbaren Komponenten **hinzufügen**. (Diese Komponenten werden sowohl im Sidekick als auch im Dialogfeld **Neue Komponente einfügen** aufgeführt. Letzteres rufen Sie per Doppelklick im Feld **Komponenten oder Assets hierhin ziehen** auf.)
 
 ![](assets/clientcontext_alisonparker_new.png)
 
@@ -225,7 +228,7 @@ In diesem Beispiel wird die Beispiel-Website Geometrixx Outdoors verwendet, um a
 Fügen Sie die Komponente „JSONP-Store“ zu ClientContext hinzu und nutzen Sie diese zum Abrufen und Speichern von Geolocation-Informationen zum Webclient.
 
 1. Öffnen Sie die englische Homepage der Geometrixx Outdoors-Site in der AEM-Autoreninstanz. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
-1. Um ClientContext zu öffnen, drücken Sie Strg-Alt-c (Windows) oder Strg-Wahltaste-c (Mac).
+1. Drücken Sie zum Öffnen von ClientContext die Tastenkombination Strg+Alt+C (Windows) oder Ctrl+Wahl+C (Mac).
 1. Klicken Sie oben im ClientContext-Bereich auf das Bearbeitungssymbol, um ClientContext-Designer zu öffnen.
 
    ![](do-not-localize/chlimage_1.png)

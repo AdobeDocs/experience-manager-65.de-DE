@@ -14,7 +14,7 @@ exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '2220'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -139,8 +139,8 @@ In der Symbolleiste des Asset-Browsers können Sie Assets nach folgenden Kriteri
 
 * Name
 * Pfad
-* Asset-Typ (d. h. Bilder, Manuskripte, Dokumente, Videos, Seiten, Absätze oder Produkte)
-* Asset-Eigenschaften wie Ausrichtung (Hochformat, Querformat, Quadrat) und Stil (Farbe, Schwarzweiß, Graustufen)
+* Asset-Typ, z. B. Bilder, Manuskripte, Dokumente, Videos, Seiten, Absätze oder Produkte
+* Asset-Merkmale, z. B. Ausrichtung (Hochformat, Querformat, quadratisch) und Stil (farbig, monochrom, Graustufen)
 
    * Nur für bestimmte Asset-Typen verfügbar
 
@@ -148,7 +148,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 >[!NOTE]
 >
->Ein Mobilgerät wird erkannt, wenn die Breite geringer als 1.024 Pixel ist, d. h. auch bei einem kleinen Desktop-Fenster.
+>Ein Mobilgerät wird erkannt, wenn die Breite geringer als 1.024 Pixel ist, d. h. auch bei einem kleinen Desktop-Fenster.
 
 * **Mobilgerät, z. B. iPad**
 
@@ -260,7 +260,7 @@ Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets a
 
 ![ateat-15](assets/ateat-15.png)
 
-[Wählen Sie die gewünschte Ressource ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)und danach entweder **Alle anzeigen** oder **Aktivitäten** aus, um die auf die ausgewählten Ressourcen zuletzt ausgeführten Aktionen aufzulisten:
+[Wählen Sie die gewünschte Ressource ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)und danach entweder **Alle anzeigen** oder **Aktivitäten** aus, um die mit den ausgewählten Ressourcen zuletzt ausgeführten Aktionen aufzulisten:
 
 ![ateat-16](assets/ateat-16.png)
 
@@ -285,7 +285,7 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 Beispielsweise stehen unter **Seiteninformationen** ggf. auch folgende Optionen zur Verfügung:
 
 * [Launch bewerben](/help/sites-authoring/launches-promoting.md), wenn die Seite ein Launch ist.
-* [In klassischer Benutzeroberfläche öffnen](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) ob diese Optionen [von einem Administrator aktiviert](/help/sites-administering/enable-classic-ui-editor.md)
+* [In klassischer Benutzeroberfläche öffnen](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page), wenn diese Option [von einer bzw. einem Admin aktiviert](/help/sites-administering/enable-classic-ui-editor.md) wurde.
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
 
@@ -297,12 +297,12 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 * [Layout](/help/sites-authoring/responsive-layout.md): Ermöglicht es Ihnen, Ihr responsives Layout gerätespezifisch zu erstellen und zu bearbeiten (wenn die Seite auf einem Layout-Container basiert).
 
 * [Strukturvorlage:](/help/sites-authoring/scaffolding.md) Hilft Ihnen bei der Erstellung einer großen Anzahl von Seiten, die unterschiedliche Inhalte, aber eine einheitliche Struktur aufweisen sollen.
-* [Entwickler](/help/sites-developing/developer-mode.md): Ermöglicht die Durchführung verschiedener Aktionen (Berechtigungen erforderlich), zu denen die Untersuchung der technischen Details einer Seite und von deren Komponenten gehört.
+* [Entwickler:](/help/sites-developing/developer-mode.md) Ermöglicht die Durchführung verschiedener Aktionen (Berechtigungen erforderlich), zu denen die Untersuchung der technischen Details einer Seite und von deren Komponenten gehört.
 
 * [Design](/help/sites-authoring/default-components-designmode.md): Hierüber können Sie Komponenten auf einer Seite aktivieren bzw. deaktivieren und das Design der auf der Seite verwendeten Komponenten konfigurieren (wenn die Seite auf einer [statischen Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert).
 
 * [Zielsetzung:](/help/sites-authoring/content-targeting-touch.md) Steigerung der Inhaltsrelevanz durch Zielsetzung und Messung über alle Kanäle hinweg.
-* [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - zeigt Analytics-Daten für die Seite an.
+* [Activity Map:](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) Zeigt Analytics-Daten für die Seite an.
 
 * [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp): Ermöglicht es, eine Seite in dem Zustand anzuzeigen, den sie zu einem früheren Zeitpunkt aufgewiesen hat.
 * [Live Copy-Status:](/help/sites-authoring/editing-content.md#live-copy-status) Für einen schnellen Überblick über den Live Copy-Status und darüber, welche Komponenten übernommen oder nicht übernommen wurden.
@@ -333,7 +333,7 @@ Im vorliegenden Beispiel wird zur Verdeutlichung die Bildkomponente verwendet. W
 
 Die Pfad-Felder bieten jetzt auch automatisches Ausfüllen und Vorausschau auf Eingaben, um die Suche nach einer Ressource zu vereinfachen.
 
-Durch Klicken auf die Schaltfläche **Auswahl-Dialogfeld öffnen** auf dem Pfadfeld wird das Dialogfeld [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) geöffnet, in dem Optionen für eine präzisere Auswahl zur Verfügung stehen.
+Durch Klicken auf die Schaltfläche **Auswahl-Dialogfeld öffnen** im Pfadfeld wird das Dialogfeld [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) geöffnet, in dem Optionen für eine präzisere Auswahl zur Verfügung stehen.
 
 ![](do-not-localize/screen_shot_2018-03-22at154427.png)
 
@@ -341,7 +341,7 @@ Alternativ können Sie etwas in das Pfadfeld eingeben und AEM schlägt Ihrer Ein
 
 ![ateat-19](assets/ateat-19.png)
 
-### Pfad   Browser {#path-browser}
+### Pfad-Browser {#path-browser}
 
 Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-authoring/basic-handling.md#column-view) der Sites-Konsole aufgebaut und ermöglicht eine präzisere Auswahl der Ressourcen.
 

@@ -15,13 +15,13 @@ exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '621'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
 # RDBMS-Unterstützung in AEM 6.4{#rdbms-support-in-aem}
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Die Unterstützung für RDBMS-Persistenz in AEM wird mithilfe des Document-Mikrokernels implementiert. Der Document-Mikrokernel bildet die Grundlage, die auch für die Implementierung der MongoDB-Persistenz verwendet wird.
 
@@ -49,7 +49,7 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 
 1. Stellen Sie sicher, dass der Datenbank-Daemon gestartet ist und eine aktive Datenbank für die Verwendung mit AEM vorhanden ist.
 1. Kopieren Sie die AEM 6.3-JAR-Datei in das Installationsverzeichnis.
-1. Erstellen Sie einen Ordner mit dem Namen `crx-quickstart\install` im Installationsverzeichnis.
+1. Erstellen Sie im Installationsverzeichnis einen Ordner namens `crx-quickstart\install`.
 1. Konfigurieren Sie den Document-Knotenspeicher, indem Sie eine Konfigurationsdatei mit dem folgenden Namen im Verzeichnis `crx-quickstart\install` erstellen:
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
@@ -63,11 +63,11 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 
 1. Bereiten Sie dann die JDBC-OSGi-Bundles für die Verwendung mit AEM vor:
 
-   1. Im `crx-quickstart/install` Ordner erstellen, Ordner mit dem Namen `9`.
+   1. Erstellen Sie im Ordner `crx-quickstart/install` einen Ordner namens `9`.
 
    1. Platzieren Sie die JDBC-JAR-Datei im neuen Ordner.
 
-1. Beginnen Sie AEM schließlich mit der `crx3` und `crx3rdb` runmodes:
+1. Starten Sie abschließend AEM mit den Ausführungsmodi `crx3` und `crx3rdb`:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -103,7 +103,7 @@ Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenf
 * `jdbc:db2://localhost:port/databasename` für DB2;
 * `jdbc:oracle:thin:localhost:port:SID` für Oracle;
 * `jdbc:mysql://localhost:3306/databasename` für MySQL und MariaDB (experimentell)
-* `jdbc:sqlserver://localhost:1453;databaseName=name` für Microsoft SQL Server (experimentell).
+* `jdbc:sqlserver://localhost:1453;databaseName=name` für Microsoft SQL Server (experimentell)
 
 ## Bekannte Einschränkungen {#known-limitations}
 

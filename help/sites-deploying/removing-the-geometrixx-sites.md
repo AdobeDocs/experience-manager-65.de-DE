@@ -18,7 +18,7 @@ ht-degree: 100%
 
 # Entfernen der Geometrixx-Websites{#removing-the-geometrixx-sites}
 
-AEM enthält standardmäßig eine Auswahl an Geometrixx-Beispielwebsites. Sie können diese Beispielinhalte über den **Paketmanager** entfernen.
+AEM enthält standardmäßig eine Auswahl an Geometrixx-Beispielwebsites. Sie können diese Beispielinhalte über den **Paket-Manager** entfernen.
 
 Die einzelnen Geometrixx-bezogenen Pakete sind:
 
@@ -38,7 +38,7 @@ Darüber hinaus gibt es noch ein Gesamtpaket:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Dieses Paket enthält sämtliche oben genannten Einzelpakete. Sie können sämtliche Geometrixx-bezogenen Inhalte auf einmal entfernen, indem Sie bei diesem Paket auf **Deinstallieren** klicken. Das Gesamtpaket wechselt in den Zustand „Deinstalliert“ und alle Einzelpakete verschwinden aus der Paketmanageransicht.
+Dieses Paket enthält sämtliche oben genannten Einzelpakete. Sie können sämtliche Geometrixx-bezogenen Inhalte auf einmal entfernen, indem Sie bei diesem Paket auf **Deinstallieren** klicken. Das Gesamtpaket wechselt in den Zustand „Deinstalliert“ und alle Einzelpakete verschwinden aus der Paket-Manager-Ansicht.
 
 Sie verfügen nun über eine leere AEM-Instanz ohne jegliche Beispielwebsites.
 

@@ -14,7 +14,7 @@ exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2124'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -30,9 +30,9 @@ Konfigurationen sind für zahlreiche Aspekte von AEM möglich:
 
 Abhängig von der jeweiligen Konfiguration können diese Änderungen mithilfe einer der folgenden Optionen durchgeführt werden:
 
-* **Adobe CQ Web Console**
+* **Adobe CQ Web-Konsole**
 
-   Dies ist ein Standardspeicherort für die Konfiguration von OSGi-Bundles und -Diensten.
+   Dies ist ein Standardspeicherort für die Konfiguration von OSGi-Bundles und -Services.
 
    Weitere Informationen und empfohlene Vorgehensweisen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
@@ -44,11 +44,11 @@ Abhängig von der jeweiligen Konfiguration können diese Änderungen mithilfe ei
 
 * **Dateisystem**
 
-   Einige Konfigurationsdateien befinden sich im Dateisystem.
+   Einige wenige Konfigurationsdateien befinden sich im Dateisystem.
 
 * **AEM-WCM**
 
-   Verschiedene Aspekte können in AEM WCM selbst konfiguriert werden, wobei viele die [Instrumente](/help/sites-administering/tools-consoles.md) Konsole; z. B. Replikationsagenten.
+   Diverse Aspekte können auch im AEM-WCM selbst konfiguriert werden. Häufig wird hierfür die [Tools](/help/sites-administering/tools-consoles.md)-Konsole verwendet, z. B. Replikationsagenten.
 
 >[!NOTE]
 >
@@ -95,19 +95,19 @@ Wenn eine IP-Adresse angegeben werden muss, können Sie (je nach Bedarf) aus den
 
 * eine IPv6-Adresse
 
-   Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
+   zum Beispiel `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * eine IPv4-Adresse
 
-   Beispiel `https://123.1.1.4:4502`
+   zum Beispiel `https://123.1.1.4:4502`
 
-* einen Servernamen
+* einen Server-Namen
 
-   Beispiel: `https://www.yourserver.com:4502`
+   zum Beispiel `https://www.yourserver.com:4502`
 
-* Standardfall von `localhost` wird sowohl für IPv4- als auch für IPv6-Netzwerkinstallationen interpretiert
+* der Standardfall von `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen interpretiert
 
-   Beispiel: `http://localhost:4502`
+   zum Beispiel `http://localhost:4502`
 
 ### Versionsbereinigung {#version-purging}
 
@@ -123,7 +123,7 @@ Mit AEM können Sie Folgendes konfigurieren:
 
 * Globale Parameter für den zentralen Protokollierungsdienst
 * Anforderung einer Datenprotokollierung; eine spezielle Protokollierungskonfiguration zum Anfordern von Informationen
-* Spezifische Einstellungen für die einzelnen Dienste; Beispiel: eine einzelne Protokolldatei und das Format für die Protokollmeldungen
+* Spezifische Einstellungen für die einzelnen Dienste; zum Beispiel eine einzelne Protokolldatei und das Format für die Protokollmeldungen
 
 Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md). 
 
@@ -166,11 +166,11 @@ Weitere Informationen finden Sie unter [Replikation](/help/sites-deploying/repli
 
 ### OSGi-Konfigurationseinstellungen {#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) ist ein grundlegendes Element im Technologiestapel von AEM. OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet.
+[OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von AEM. OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet.
 
 Eine Liste der verschiedenen Bundles, die für die Projektimplementierung relevant sind (nach Bundle aufgelistet), finden Sie unter [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md). Nicht alle aufgeführten Einstellungen müssen angepasst werden. Einige werden nur zum besseren Verständnis von AEM erwähnt.
 
-Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Services. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+Bei AEM können Sie die Konfigurationseinstellungen für Dienste dieser Art auf unterschiedliche Weise vornehmen. Informationen zur empfohlenen Vorgehensweise finden Sie unter [Konfigurieren von OSGi.](/help/sites-deploying/configuring-osgi.md).
 
 ### Konfigurieren von LDAP {#configuring-ldap}
 
@@ -188,7 +188,7 @@ Weitere Informationen zur Konfiguration finden Sie unter [Dispatcher](https://he
 
 ### Konfigurieren von AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Mit der Veröffentlichung von AEM Doc Services und AEM Doc Security haben wir jetzt die Möglichkeit, mithilfe der LiveCycle Doc Services ein XFA-Formular zu erstellen, ein Dokument in das PDF-Format umzuwandeln und ein Dokument durch eine Richtlinie zu schützen. Bitte lesen [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) für weitere Details.
+Mit der Veröffentlichung von AEM Doc Services und AEM Doc Security haben wir jetzt die Möglichkeit, mithilfe der LiveCycle Doc Services ein XFA-Formular zu erstellen, ein Dokument in das PDF-Format umzuwandeln und ein Dokument durch eine Richtlinie zu schützen. Weitere Informationen hierzu finden Sie unter [AEM LiveCycle Connector](https://helpx.adobe.com/de/livecycle/help/aem/aem-livecycle-connector.html).
 
 ### Auftragsabladung und Topologieverwaltung {#job-offloading-and-topology-administration}
 
@@ -216,7 +216,7 @@ Scaling a CQ installation correctly depends greatly on the details of your parti
 
 ### Freigegebener Datenspeicher {#shared-data-store}
 
-Der Repository-Datenspeicher wird verwendet, um den Speicher großer Binärdateien aus dem Repository selbst in einen separaten Bereich zu laden, sodass mehrere Instanzen derselben Binärdatei (z. B. ein Bild) innerhalb der Repository-Struktur nur einmal gespeichert werden.
+Der Datenspeicher des Repositorys wird verwendet, um gespeicherte Daten großer Binärdateien aus dem Repository in einen separaten Bereich abzuladen. Dadurch werden mehrere Instanzen derselben Binärdatei (z. B. eines Bildes) innerhalb der Repository-Struktur nur einmal gespeichert.
 
 Die Funktion zum einmaligen Speichern, aber mehrfachen Referenzieren kann erweitert werden, sodass nicht nur ein einziger Repository-Baum bedient wird, sondern getrennte Repositorys. Der Datenspeicher eines jeden Repositorys wird dabei so konfiguriert, dass er auf denselben gemeinsamen Dateisystem-Speicherort verweist.
 
@@ -236,7 +236,7 @@ Weitere Informationen finden Sie unter [Aktivieren von HTTP über SSL](/help/sit
 
 Ein Portal ist eine Webanwendung, die Personalisierung, Single Sign-On und Inhaltsintegration aus verschiedenen Quellen ermöglicht und die Präsentationsebene von Informationssystemen hostet. Mit der Portlet-Komponente können Sie zudem ein Portlet auf der Seite einbetten. Um auf von CQ5 WCM bereitgestellten Inhalt zuzugreifen, kann der Portalserver mit dem CQ5 Portal Director Portlet ausgestattet werden. Installieren Sie zu diesem Zweck das Portlet, konfigurieren Sie es und fügen Sie es zur Portalseite hinzu.
 
-Siehe [Portal und Portlets](/help/sites-administering/aem-as-portal.md) für weitere Informationen.
+Weitere Einzelheiten finden Sie unter [Portal und Portlets](/help/sites-administering/aem-as-portal.md).
 
 ### Ablauf statischer Objekte {#expiration-of-static-objects}
 
@@ -244,11 +244,11 @@ Statische Objekte (wie Symbole) ändern sich nicht. Daher sollte das System so k
 
 Weitere Informationen finden Sie unter [Ablaufen von statischen Objekten](/help/sites-deploying/expiration-static-objects.md).
 
-### Öffnen von Dateien im Java-Prozess {#open-files-in-the-java-process}
+### Geöffnete Dateien im Java-Prozess {#open-files-in-the-java-process}
 
 Bei jedem Java-Prozess kann auf Dateien zugegriffen werden. Dieser Vorgang verbraucht Systemressourcen. Aus diesem Grund wird ein oberes Limit definiert, das angibt, auf wie viele Dateien in jedem Prozess gleichzeitig zugegriffen werden darf. Wenn dieses Limit überschritten wird, kann ein Ausnahmefehler auftreten.
 
-Wenn der AEM-Prozess diesen Maximalwert überschreitet, wird die Meldung &quot; `too many open files`&quot; wird in `error.log`.
+Wenn der AEM-Prozess dieses obere Limit überschreitet, wird die Nachricht „`too many open files`“ in `error.log` angezeigt.
 
 Um solche Ausnahmen zu vermeiden, gehen Sie folgendermaßen vor:
 
@@ -265,7 +265,7 @@ Um solche Ausnahmen zu vermeiden, gehen Sie folgendermaßen vor:
 
    Der neue Wert sollte sowohl für die aktuellen Anforderungen als auch für etwaige künftige Spitzen ausreichend sein. Deshalb ist es ratsam, den Wert für die aktuellen Anforderungen zu verdoppeln.
 
-   Standardmäßig `serverctl` konfiguriert `CQ_MAX_OPEN_FILES` nach `8192`; Dies sollte für die meisten Szenarien ausreichen.
+   Standardmäßig konfiguriert `serverctl` `CQ_MAX_OPEN_FILES` mit `8192`. Dies sollte für die meisten Szenarien ausreichend sein.
 
 ### Konfigurieren des Rich-Text-Editors {#configuring-the-rich-text-editor}
 
@@ -273,7 +273,7 @@ Der **Rich-Text-Editor** (**RTE**) bietet Autoren umfassende [Funktionen](/help/
 
 Weitere Informationen finden Sie unter [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md).
 
-### Konfigurieren von „Rückgängig machen“ zur Bearbeitung von Seiten {#configuring-undo-for-page-editing}
+### Konfigurieren von Rückgängig-Vorgängen zur Seitenbearbeitung {#configuring-undo-for-page-editing}
 
 Es gibt mehrere Eigenschaften, mit denen das Verhalten der Befehle „Rückgängig machen“ und „Wiederholen“ zur Bearbeitung von Seiten gesteuert werden kann. Diese können konfiguriert werden. Weitere Informationen finden Sie unter [Konfigurieren von „Rückgängig machen“ zur Bearbeitung von Seiten](/help/sites-administering/config-undo.md).
 
@@ -309,7 +309,7 @@ Seitenimpressionen werden in der klassischen Benutzeroberfläche der Siteadmin-K
 
 * In der Autoreninstanz:
 
-   * [Adobe Page Impressions Tracke](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Adobe Page Impressions Tracker](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >

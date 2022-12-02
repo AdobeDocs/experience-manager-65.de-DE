@@ -13,7 +13,7 @@ exl-id: d6745baa-44da-45dd-b5d5-a9b218e7e8cf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '518'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,14 +23,14 @@ AEM enthält einen Standard-Fehler-Handler für die Verarbeitung von HTTP-Fehler
 
 ![chlimage_1-67](assets/chlimage_1-67a.png)
 
-Systembereitgestellte Skripte sind vorhanden (unter `/libs/sling/servlet/errorhandler`), um auf Fehler-Codes zu reagieren, sind in einer Standard-CQ-Instanz standardmäßig die folgenden verfügbar:
+Das System stellt Skripte (unter `/libs/sling/servlet/errorhandler`) bereit, um auf Fehler-Codes zu reagieren. Standardmäßig sind folgende Skripte mit einer Standard-CQ-Instanz verfügbar:
 
 * 403.jsp
 * 404.jsp
 
 >[!NOTE]
 >
->AEM basiert auf Apache Sling, siehe [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) für detaillierte Informationen zur Sling-Fehlerbehandlung.
+>AEM basiert auf Apache Sling. Sie finden unter [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) also genaue Informationen zur Sling-Fehlerbehandlung.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Systembereitgestellte Skripte sind vorhanden (unter `/libs/sling/servlet/errorha
 
 ## Anpassung der vom Fehler-Handler angezeigten Seiten {#how-to-customize-pages-shown-by-the-error-handler}
 
-Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fehler-Handler anzeigt, wenn ein Fehler auftritt. Ihre angepassten Seiten werden unter `/apps` und überlagern die Standardseiten (die unter `/libs`).
+Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fehler-Handler anzeigt, wenn ein Fehler auftritt. Die angepassten Seiten werden unter `/apps` erstellt und überlagern die Standardseiten (die unter `/libs` zu finden sind).
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fe
 1. Kopieren Sie im Repository das/die Standardskript(e):
 
    * von `/libs/sling/servlet/errorhandler/`
-   * in `/apps/sling/servlet/errorhandler/`
+   * nach `/apps/sling/servlet/errorhandler/`
 
    Da der Zielpfad standardmäßig nicht vorhanden ist, müssen Sie ihn erstellen, wenn Sie diesen Vorgang zum ersten Mal durchführen.
 
@@ -68,16 +68,16 @@ Sie können Ihre eigenen Skripte erstellen, um die Seiten anzupassen, die der Fe
 
 ### Anpassung der Reaktion auf HTTP 500-Fehler {#customizing-the-response-to-http-errors}
 
-HTTP 500-Fehler werden von serverseitigen Ausnahmefehlern verursacht.
+HTTP 500-Fehler werden von Server-seitigen Ausnahmefehlern verursacht.
 
 * **[500 Interner Serverfehler](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)** Der Server hat einen unerwarteten Zustand entdeckt und kann daher die Anfrage nicht erfüllen.
 
-Wenn die Anforderungsverarbeitung zu einer Ausnahme führt, wird das Apache Sling-Framework (auf dem AEM aufbaut):
+Wenn die Bearbeitung einer Anfrage zu einem Ausnahmefehler führt, führt das Apache Sling-Framework (auf dem AEM basiert) folgende Schritte durch:
 
 * Protokollierung des Ausnahmefehlers
 * Folgendes wird zurückgegeben:
 
-   * der HTTP-Antwortcode 500
+   * der HTTP-Antwort-Code 500
    * Der Stacktrace des Ausnahmefehlers
 
    im Haupttext der Antwort.
@@ -86,7 +86,7 @@ Indem Sie [die Seiten anpassen, die der Fehler-Handler zeigt](#how-to-customize-
 
 Andernfalls wird der Antwort-Code auf „500“ gesetzt, aber das `500.jsp`-Skript wird nicht ausgeführt.
 
-Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts identisch mit der Ausnahmeklasse (oder der übergeordneten Klasse) sein. Um alle diese Ausnahmen zu handhaben, können Sie ein Skript erstellen `/apps/sling/servlet/errorhandler/Throwable.js`p oder `/apps/sling/servlet/errorhandler/Exception.jsp`.
+Um 500-Fehler zu verarbeiten, muss der Dateiname des Fehler-Handler-Skripts identisch mit der Ausnahmeklasse (oder der übergeordneten Klasse) sein. Um alle derartigen Ausnahmen zu bearbeiten, können Sie ein `/apps/sling/servlet/errorhandler/Throwable.js`- oder `/apps/sling/servlet/errorhandler/Exception.jsp`-Skript erstellen.
 
 >[!CAUTION]
 >

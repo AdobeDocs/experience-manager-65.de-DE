@@ -13,7 +13,7 @@ exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1108'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Sie können Newsletter in E-Mail-Diensten wie ExactTarget und Silverpop Engage v
 
 >[!NOTE]
 >
->Sie müssen den Dienstanbieter zunächst konfigurieren, bevor Sie E-Mails verfassen und veröffentlichen können. Siehe [Konfigurieren von ExactTarget](/help/sites-administering/exacttarget.md) und [Konfigurieren von Silverpop Engage](/help/sites-administering/silverpop.md) für weitere Informationen.
+>Sie müssen den Dienstanbieter zunächst konfigurieren, bevor Sie E-Mails verfassen und veröffentlichen können. Weitere Informationen finden Sie unter [Konfigurieren von ExactTarget](/help/sites-administering/exacttarget.md) und [Konfigurieren von Silverpop Engage](/help/sites-administering/silverpop.md).
 
 Zur Veröffentlichung einer Mail bei Ihrem E-Mail-Dienstanbieter müssen Sie Folgendes tun:
 
@@ -37,16 +37,16 @@ Zur Veröffentlichung einer Mail bei Ihrem E-Mail-Dienstanbieter müssen Sie Fol
 
 ## Erstellen von E-Mails {#creating-an-email}
 
-Eine E-Mail oder ein Newsletter, die/der Sie in einem E-Mail-Dienst veröffentlichen möchten, kann im Rahmen einer Kampagne mit dem **Geometrixx Newsletter** Vorlage. Alternativ können Sie auch die Vorlage **Geometrixx Outdoors-E-Mail** verwenden. Beispiel-E-Mail/Newsletter basierend auf der **Geometrixx Outdoors E-Mail** Vorlage verfügbar unter `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
+Sie können eine E-Mail oder einen Newsletter, die oder den Sie in einem E-Mail-Dienst veröffentlichen möchten, in Kampagnen mithilfe der Vorlage **Geometrixx-Newsletter** erstellen. Alternativ können Sie auch die Vorlage **Geometrixx Outdoors-E-Mail** verwenden. Beispiel-E-Mails oder -Newsletter, die auf der Vorlage **Geometrixx Outdoors-E-Mail** basieren, finden Sie unter `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
 So erstellen Sie eine neue E-Mail, die im konfigurierten E-Mail-Dienst veröffentlicht wird:
 
-1. Navigieren Sie zu **Websites** und dann **Kampagnen**. Wählen Sie eine Kampagne.
+1. Gehen Sie zu **Websites** und dann zu **Kampagnen**. Wählen Sie eine Kampagne.
 1. Wählen Sie **Neu**, um das Fenster **Seite erstellen** zu öffnen.
 1. Geben Sie den Titel und den Namen ein und wählen Sie in der Liste der verfügbaren Vorlagen **Geometrixx-Newsletter**.
 1. Klicken Sie auf **Erstellen**.
 1. Öffnen Sie die erstellte E-Mail.
-1. Wechseln Sie zum Designmodus und wählen Sie die Komponenten, die Sie im Sidekick anzeigen möchten.
+1. Wechseln Sie zum Designmodus und wählen Sie die Komponenten aus, die Sie im Sidekick anzeigen möchten.
 1. Wechseln Sie in den Bearbeitungsmodus und beginnen Sie damit, Ihrer E-Mail Inhalte (Text, Bilder, [E-Mail-Tools](#adding-exacttarget-email-tools-to-your-email), [Personalisierungsvariablen](#adding-text-and-personalization-tool-to-your-e-mail) usw.) hinzuzufügen.
 
 ### Hinzufügen von Exact Target-E-Mail-Tools zu E-Mails {#adding-exacttarget-email-tools-to-your-email}
@@ -88,7 +88,7 @@ Mit der Komponente **E-Mail-Tools** für ExactTarget können Sie Ihrer E-Mail/Ih
   </tr>
   <tr>
    <td>Abonnementzentrum</td>
-   <td>Ein Abonnement-Center ist eine Webseite, auf der ein Abonnent die von Ihrem Unternehmen empfangenen Nachrichten steuern kann.</td>
+   <td>Ein Abonnementzentrum ist eine Web-Seite, auf der ein Abonnent festlegen kann, welche Mitteilungen er von Ihrem Unternehmen erhalten möchte.</td>
   </tr>
   <tr>
    <td>Öffnen der E-Mail verfolgen</td>
@@ -99,7 +99,7 @@ Mit der Komponente **E-Mail-Tools** für ExactTarget können Sie Ihrer E-Mail/Ih
 
 >[!NOTE]
 >
->Das Dropdown-Menü **Optionen** enthält nur dann Einträge, wenn eine ExactTarget-Konfiguration auf die E-Mail angewendet wurde. Siehe [Anwenden der E-Mail-Dienstkonfiguration auf E-Mail-Einstellungen](#applying-e-mail-service-configuration-to-e-mail-settings) für weitere Informationen.
+>Das Dropdown-Menü **Optionen** enthält nur dann Einträge, wenn eine ExactTarget-Konfiguration auf die E-Mail angewendet wurde. Weitere Informationen finden Sie unter [Anwenden von E-Mail-Dienstkonfigurationen auf E-Mail-Einstellungen](#applying-e-mail-service-configuration-to-e-mail-settings).
 
 1. Veröffentlichen Sie die E-Mail in ExactTarget.
 
@@ -107,7 +107,7 @@ Mit der Komponente **E-Mail-Tools** für ExactTarget können Sie Ihrer E-Mail/Ih
 
 >[!NOTE]
 >
->* Die URLs innerhalb der E-Mail-Tools werden (in der empfangenen E-Mail) nur dann durch ihre tatsächlichen Werte ersetzt, wenn eine E-Mail mit **Einfacher Versand** oder **Geführter Versand** aber nicht **Testversand**.
+>* Die URLs innerhalb der E-Mail-Tools werden (in der empfangenen E-Mail) nur dann durch die eigentlichen Werte ersetzt, wenn die E-Mail über **einfachen** oder **geführten Versand** versendet wird, nicht jedoch beim **Testversand**.
 >
 >* Zwei der E-Mail-Tools sind erforderlich: **Postanschrift (Erforderlich)** und **Profilzentrum (Erforderlich)**. Diese beiden E-Mail-Tools werden bei der Veröffentlichung der E-Mail in ExactTarget standardmäßig am Ende jeder E-Mail hinzugefügt.
 >
@@ -118,8 +118,8 @@ Mit der Komponente **E-Mail-Tools** für ExactTarget können Sie Ihrer E-Mail/Ih
 Durch Hinzufügen der Komponente **Text und Personalisierung** zu Ihrer Seite können Sie E-Mails um benutzerdefinierte Felder erweitern:
 
 1. Öffnen Sie die E-Mail, die auf dem E-Mail-Dienst veröffentlicht werden soll.
-1. Möchten Sie in Ihrem E-Mail-Dienst benutzerdefinierte Felder freischalten, fügen Sie bei dessen Einrichtung die Framework-Konfiguration hinzu. Siehe [Konfigurieren von Silverpop Engage](/help/sites-administering/silverpop.md) und [Konfigurieren von ExactTarget](/help/sites-administering/exacttarget.md) für weitere Informationen.
-1. Komponente hinzufügen **Text und Personalisierung** aus dem Sidekick. Diese Komponente ist Teil der Newslettergruppe. Öffnen Sie die Komponente im Bearbeitungsmodus.
+1. Möchten Sie in Ihrem E-Mail-Dienst benutzerdefinierte Felder freischalten, fügen Sie bei dessen Einrichtung die Framework-Konfiguration hinzu. Weitere Informationen finden Sie unter [Konfigurieren von Silverpop Engage](/help/sites-administering/silverpop.md) und [Konfigurieren von ExactTarget](/help/sites-administering/exacttarget.md).
+1. Fügen Sie die Komponente **Text und Personalisierung** aus dem Sidekick hinzu. Diese Komponente ist Teil der Newslettergruppe. Öffnen Sie die Komponente im Bearbeitungsmodus.
 
    ![chlimage_1-110](assets/chlimage_1-110a.png)
 
@@ -132,7 +132,7 @@ So wenden Sie E-Mail-Dienstkonfigurationen auf Newsletter an:
 
 1. Erstellen Sie eine Konfiguration des Typs „E-Mail-Dienst“.
 1. Öffnen Sie die E-Mail/den Newsletter.
-1. Öffnen Sie die E-Mail-/Newsletter-Einstellungen durch Klicken auf **Einstellungen** oder durch Klicken auf **Seiteneigenschaften in** den Sidekick.
+1. Öffnen Sie die E-Mail-/Newsletter-Einstellungen, indem Sie entweder auf **Einstellungen** oder im Sidekick auf **Seiteneigenschaften** klicken.
 1. Klicken Sie auf der Registerkarte **Cloud-Services** auf **Service hinzufügen**. Die Liste der Dienste wird angezeigt. Wählen Sie die gewünschte Konfiguration (**ExactTarget** oder **Silverpop**) aus der Dropdown-Liste aus.
 
    ![chlimage_1-5](assets/chlimage_1-5a.jpeg)
@@ -153,7 +153,7 @@ So veröffentlichen Sie E-Mails/Newsletter im E-Mail-Dienst:
 
    Wenn der Vorgang erfolgreich war, erhalten Sie in AEM eine Meldung, dass Sie die E-Mail in ExactTarget oder Silverpop Engage anzeigen können.
 
-   Im Fall von ExactTarget kann die veröffentlichte E-Mail durch Klicken auf **Veröffentlichte E-Mail anzeigen**. Dadurch gelangen Sie direkt zum veröffentlichten Newsletter in ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
+   Bei ExactTarget kann die veröffentlichte E-Mail durch einen Klick auf **Veröffentlichte E-Mail anzeigen** angezeigt werden. Sie werden direkt zum veröffentlichten Newsletter in ExactTarget weitergeleitet ([https://members.exacttarget.com/](https://members.exacttarget.com/)).
 
 >[!NOTE]
 >
@@ -163,13 +163,13 @@ So veröffentlichen Sie E-Mails/Newsletter im E-Mail-Dienst:
 
 ### Aktualisieren von veröffentlichten E-Mails {#updating-a-published-e-mail}
 
-Die **Aktualisieren** im Dialogfeld Veröffentlichen können Sie einen bereits in einem E-Mail-Dienstleister veröffentlichten Newsletter aktualisieren. Sollten Sie bei einem noch nicht veröffentlichten Newsletter auf **Aktualisieren** klicken, erscheint die Nachricht, dass der **Newsletter noch nicht veröffentlicht** wurde.
+Mit der Schaltfläche **Aktualisieren** im Dialogfeld „Veröffentlichen“ können Sie einen bereits beim E-Mail-Dienstanbieter veröffentlichten Newsletter aktualisieren. Falls der Newsletter noch nicht veröffentlicht wurde und Sie auf die Schaltfläche **Aktualisieren** klicken, wird die Meldung **Newsletter wurde nicht veröffentlicht** angezeigt.
 
 So aktualisieren Sie eine veröffentlichte E-Mail:
 
-1. Öffnen Sie die E-Mail/den Newsletter, die oder der bereits in einem E-Mail-Dienst veröffentlicht wurde und die oder der nach vorgenommenen Änderungen erneut veröffentlicht werden soll.
-1. Klicken Sie auf **Veröffentlichen**. Die **Newsletter an Email Service Provider veröffentlichen** angezeigt. Klicken Sie auf **Aktualisieren**.
+1. Öffnen Sie die E-Mail/den Newsletter, die oder der bereits in einem E-Mail-Dienstanbieter veröffentlicht wurde und die oder der nach vorgenommenen Änderungen erneut veröffentlicht werden soll.
+1. Klicken Sie auf **Veröffentlichen**. Das Fenster **Newsletter bei E-Mail-Dienstanbieter veröffentlichen** wird geöffnet. Klicken Sie auf **Aktualisieren**.
 
-   Um zu überprüfen, ob die E-Mail/der Newsletter in ExactTarget aktualisiert wurde, klicken Sie auf **Veröffentlichte E-Mail anzeigen**. Sie werden zur veröffentlichten E-Mail in ExactTarget weitergeleitet.
+   Prüfen Sie, ob die E-Mail/der Newsletter in ExactTarget aktualisiert wurde, indem Sie auf die Schaltfläche **Veröffentlichte E-Mail anzeigen** klicken. Sie werden zur veröffentlichten E-Mail in ExactTarget weitergeleitet.
 
    Möchten Sie prüfen, ob die E-Mail/der Newsletter im Silverpop-E-Mail-Dienst aktualisiert wurde, rufen Sie die Silverpop-Engage-Site auf.

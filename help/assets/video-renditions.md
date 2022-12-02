@@ -9,13 +9,13 @@ exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '221'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Videoausgabeformate {#video-renditions}
 
-Adobe Experience Manager Assets generiert Videoausgabeformate für Video-Assets verschiedener Formate wie OGG, FLV usw.
+Adobe Experience Manager Assets erstellt Videoausgabeformate für Video-Assets verschiedener Formate, einschließlich OGG, FLV usw.
 
 Experience Manager Assets unterstützt statische und dynamische Ausgabeformate (DM-kodierte Ausgabeformate) für Medien-Assets.
 
@@ -23,13 +23,13 @@ Statische Ausgabeformate werden nativ mit FFMPEG (im Systempfad installiert und 
 
 Die DM-kodierten Ausgabeformate werden im Proxyserver gespeichert und zur Laufzeit bereitgestellt.
 
-Experience Manager Assets unterstützt die Wiedergabe dieser Ausgabedarstellungen clientseitig.
+Experience Manager Assets bietet Wiedergabeunterstützung für diese Ausgabeformate auf der Client-Seite.
 
-Um die Ausgabeformate eines bestimmten Video-Assets anzuzeigen, öffnen Sie die Asset-Seite und wählen Sie das Symbol Globale Navigation aus. Wählen Sie dann **[!UICONTROL Ausgabeformate]** aus der Liste aus.
+Um die Ausgabeformate eines bestimmten Video-Assets anzuzeigen, öffnen Sie die entsprechende Asset-Seite und klicken oder wählen Sie das GlobalNav-Symbol. Wählen Sie dann **[!UICONTROL Ausgabeformate]** aus der Liste aus.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-Die Liste der Videoausgabeformate wird im **[!UICONTROL Ausgabeformate]** Bereich.
+Die Liste mit Videoausgabeformate wird im Bereich **[!UICONTROL Wiedergaben]** angezeigt.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
@@ -41,6 +41,6 @@ Nachdem Sie den Proxyserver konfiguriert und Videoprofile erstellt haben, könne
 
 >[!NOTE]
 >
->Die Audiowiedergabe funktioniert nicht für OGG- und WAV-Dateien in Microsoft® Internet Explorer 11. Fehler `Invalid Source` wird auf der Seite mit den Asset-Details für Assets mit der Erweiterung OGG oder WAV angezeigt.
+>Die Audiowiedergabe funktioniert nicht für OGG- und WAV-Dateien in Microsoft® Internet Explorer 11. Auf der Seite mit den Asset-Details wird für Assets mit der Erweiterung OGG oder WAV der Fehler `Invalid Source` angezeigt.
 >
->Unter MS® Edge und iPad werden OGG-Dateien nicht abgespielt und es wird ein nicht unterstützter Formatfehler ausgegeben.
+>In MS® Edge und auf dem iPad werden die OGG-Dateien nicht abgespielt und lösen den Fehler „Format nicht unterstützt“ aus.

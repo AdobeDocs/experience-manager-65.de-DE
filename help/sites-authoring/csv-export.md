@@ -14,7 +14,7 @@ exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '191'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Die resultierende Datei `export.csv` kann in Excel (oder einer anderen kompatibl
 
 ![etc-01](assets/etc-01.png)
 
-Die Erstellung **CSV-Bericht** ist beim Durchsuchen der **Sites** Konsole (in der Listenansicht): ist eine Option der **Erstellen** Dropdown-Menü:
+Die Option **CSV-Bericht erstellen** ist in der **Sites-Konsole** (in der Listenansicht) verfügbar: Sie finden die Option im Dropdown-Menü **Erstellen**:
 
 ![etc-02](assets/etc-02.png)
 

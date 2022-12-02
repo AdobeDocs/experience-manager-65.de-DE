@@ -13,7 +13,7 @@ exl-id: 5a16be40-eede-4a47-b03b-3993e285232e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '274'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -24,29 +24,29 @@ Unterschiedliche Rollen können bei Tests und den verschiedenen Phasen der Proje
 <table>
  <tbody>
   <tr>
-   <td>Testteam</td>
-   <td>Verantwortlich für ... </td>
+   <td>Test-Team</td>
+   <td>Verantwortlich für... </td>
    <td>Wenn...</td>
   </tr>
   <tr>
-   <td>Entwicklungsteam</td>
-   <td>Das Entwicklungsteam ist für Ihre Komponententests und einige Integrationstests verantwortlich.</td>
+   <td>Entwicklungs-Team</td>
+   <td>Das Entwicklungs-Team ist für die Komponententests und einige Integrationstests verantwortlich.</td>
    <td>Diese Tests stehen am Anfang der Projektentwicklung, werden allerdings in weiteren Phasen wiederholt/ausgedehnt.</td>
   </tr>
   <tr>
-   <td>Qualitätssicherungsteam</td>
-   <td><p>Für Funktionstests und Leistungstests benötigen Sie ein Qualitätssicherungsteam (in welcher Größe auch immer).</p> <p>Dabei sollte es sich um neutrale, dedizierte Tester handeln. Eine goldene Regel der Software-Entwicklung besagt, dass ein Entwickler nie seine eigene Arbeit testen sollte.</p> <p>Die Mitglieder dieses Teams können aus dem Day-Projektteam, dem Partner- und/oder dem Kundenteam stammen.</p> </td>
+   <td>Qualitätssicherungs-Team</td>
+   <td><p>Für Funktionstests und Leistungstests benötigen Sie ein Qualitätssicherungs-Team (in passender Größe).</p> <p>Dabei sollte es sich um neutrale, dedizierte Tester handeln. Eine goldene Regel der Software-Entwicklung besagt, dass ein Entwickler nie seine eigene Arbeit testen sollte.</p> <p>Die Mitglieder dieses Teams können aus dem Day-Projekt-Team, dem Partner- und/oder dem Kunden-Team stammen.</p> </td>
    <td><p>Den Testern sollte die erste Version einer Funktion/Software zur Verfügung gestellt werden (sobald es realistischerweise möglich ist). Eine frühe Zwischenversion kann zwar viele Bugs zur Folge haben, bietet aber frühe Rückmeldungen zu kritischen Problemen.</p> </td>
   </tr>
   <tr>
-   <td>Kundentestteam</td>
-   <td><p>Je nach ausgewähltem Projektmodell können Mitglieder des Kundenteams an Tests beteiligt sein, insbesondere Autoren von der Kunden-Site.</p> <p>Das ist vorteilhaft, da es:</p>
+   <td>Kundentest-Team</td>
+   <td><p>Je nach ausgewähltem Projektmodell können Mitglieder des Kunden-Teams an Tests beteiligt sein, insbesondere Autoren von der Kundenseite.</p> <p>Das bietet folgende Vorteile:</p>
     <ul>
-     <li><p>Bietet dem Kunden Erfahrung mit dem Projekt, das entwickelt wird.</p> </li>
-     <li><p>Bietet frühzeitiges Feedback vom Kunden.</p> </li>
-     <li><p>Benutzer drücken ihre Anforderungen häufig aus, wenn sie über Erfahrungen der Vergangenheit verfügen; Die frühestmögliche Einbeziehung der Kunden in Tests steigert ihre Erfahrung mit dem neuen Projekt im Hinblick auf <i>Handon</i> Erlebnis.</p> </li>
+     <li><p>Der Kunde sammelt schon während der Entwicklung Erfahrung mit dem Projekt.</p> </li>
+     <li><p>Der Kunde kann frühzeitig Feedback geben.</p> </li>
+     <li><p>Anwender drücken ihre Anforderungen oft in Form früherer Erfahrungen aus. Wenn sie möglichst früh in Tests eingebunden werden, sammeln sie <i>praktische</i> Erfahrungen mit dem neuen Projekt.</p> </li>
     </ul> </td>
-   <td><p>Auch hier ist eine frühzeitige Einbindung gut, obwohl jede Version, die die Kunden verwenden, stabil und mit angemessener Funktionalität sein sollte.</p> <p>Erste Impressionen sind immer wichtig.</p> </td>
+   <td><p>Die frühzeitige Einbeziehung ist vorteilhaft. Dennoch sollte darauf geachtet werden, dass die Version, die der Kunde testet, stabil läuft und funktioniert.</p> <p>Der erste Eindruck ist immer wichtig.</p> </td>
   </tr>
  </tbody>
 </table>

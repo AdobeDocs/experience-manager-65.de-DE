@@ -11,7 +11,7 @@ feature: Configuration,Rulesets
 source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
 source-wordcount: '760'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ In Dynamic Media haben Sie die Möglichkeit, Regelsätze anzuwenden, um URLs zu 
 * Hinzufügen eines Suffix vom MIME-Typ. Viele Services und Websites benötigen Bildsuffixe. So wird beispielsweise an eine URL das Suffix `.jpg` angefügt.
 * Erstellen eines Ordnerpfads zur URL für SEO (Search Engine Optimization)-Zwecke
 
-   Siehe [So unterstützt Adobe Dynamic Media Classic SEO](/help/assets/assets/s7_seo.pdf).
+   Weitere Informationen finden Sie unter [Unterstützung von SEO durch Adobe Dynamic Media Classic](/help/assets/assets/s7_seo.pdf).
 
 * Hinzufügen von Metadaten zur URL für SEO (Search Engine Optimization)
 
-   Siehe [So unterstützt Adobe Dynamic Media Classic SEO](/help/assets/assets/s7_seo.pdf).
+   Weitere Informationen finden Sie unter [Unterstützung von SEO durch Adobe Dynamic Media Classic](/help/assets/assets/s7_seo.pdf).
 
 * Einstellen der Content-Disposition zum Auslösen eines Downloads
 * Vereinfachen der URLs für Vorlagen zur Bildbearbeitung für die Personalisierung. Ändern Sie beispielsweise `rgb{XX,YY,ZZ}` in die RTF-fähige `\redXX\greenYY\blueZZ`
@@ -56,11 +56,11 @@ Informationen zum Anmelden finden Sie unter dem [Adobe Dynamic Media Classic-Des
 * **EMEA staging environment** login page: [https://s7sps3-staging.scene7.com/IpsWeb/](https://s7sps3-staging.scene7.com/IpsWeb/)
 * **JAPAC staging environment** login page: [https://s7sps5-staging.scene7.com/IpsWeb/](https://s7sps5-staging.scene7.com/IpsWeb/) -->
 
-Siehe auch [Verwenden Sie in einem Regelsatz &quot;Asset&quot;anstelle von &quot;is&quot;-Bild.](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
+Siehe auch [Verwenden von „Asset“ anstelle von „is“-Bild in einem Regelsatz](https://helpx.adobe.com/de/experience-manager/scene7/kb/base/scene7-rulesets/ruleset-asset-instead-image.html).
 
 **So stellen Sie XML-Regelsätze bereit:**
 
-1. Melden Sie sich bei Ihrer [Dynamic Media Classic-Desktop-Applikation](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app).
+1. Melden Sie sich bei Ihrem [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#sign-in-dmc-app) an.
 
    Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie nicht über diese Informationen verfügen, wenden Sie sich an den Support von Adobe.
 
@@ -71,11 +71,11 @@ Siehe auch [Verwenden Sie in einem Regelsatz &quot;Asset&quot;anstelle von &quot
    * Navigieren Sie im Dialogfeld **[!UICONTROL Öffnen]** zu Ihrer Regelsatzdatei (XML).
    * Wählen Sie die Datei und dann **[!UICONTROL Öffnen]** aus.
    * Wählen Sie rechts auf der Seite **[!UICONTROL Hochladen]** einen Zielordner für die Regelsatzdatei aus.
-   * Stellen Sie sicher, dass Sie unten auf der Seite **[!UICONTROL Nach dem Hochladen veröffentlichen]** aktiviert ist.
+   * Stellen Sie sicher, dass die Option **[!UICONTROL Nach Hochladen veröffentlichen]** am unteren Rand der Seite markiert ist.
    * Wählen Sie in der rechten unteren Ecke der Seite **[!UICONTROL Upload starten]** aus.
    * Wählen Sie in der globalen Navigationsleiste **[!UICONTROL Aufträge]** aus, um den Status der Upload-Aufträge zu prüfen. Wenn in der Spalte **[!UICONTROL Status]** auf der Seite **[!UICONTROL Auftrag]** der Status „Hochladen abgeschlossen“ angezeigt wird, fahren Sie mit den nächsten Schritten fort.
 
-1. Wählen Sie in der Navigationsleiste im oberen Seitenbereich die Option **[!UICONTROL Einrichtung]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinstellungen]** > **[!UICONTROL Image-Server]**.
+1. Klicken Sie in der Navigationsleiste im oberen Teil der Seite auf **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Veröffentlichungseinrichtung]** > **[!UICONTROL Image-Server]**.
 1. Suchen Sie auf der Seite **[!UICONTROL Veröffentlichung zum Image-Server]** in der Gruppe **[!UICONTROL Katalogverwaltung]** den Pfad **[!UICONTROL Dateipfad für Regeldefinitionen]** und wählen Sie **[!UICONTROL Auswählen]** aus.
 1. Wählen Sie auf der Seite **[!UICONTROL Regeldefinitionsdatei (XML) auswählen]** die Regelsatzdatei und dann in der rechten unteren Ecke der Seite **[!UICONTROL Auswählen]** aus.
 1. Wählen Sie in der rechten unteren Ecke der Seite „Einstellungen“ **[!UICONTROL Schließen]** aus.

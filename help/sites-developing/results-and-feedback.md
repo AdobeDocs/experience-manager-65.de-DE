@@ -27,7 +27,7 @@ Unabhängig von der Methode oder dem Tool, die/das Sie verwenden, sollten die ge
 
    * Auf das Tracking des Testfalls und dessen Ergebnisse beschränkt. Dadurch wird eine einfache Wartung gewährleistet und das Dokument bietet einen klaren Überblick über den Testverlauf.
    * Als einzelne Kopie geführt, die für alle relevanten Mitglieder des Projekt-Teams verfügbar ist.
-   * Neutral und auf die Testergebnisse beschränkt. Es ist Aufgabe des Projektmanagers, nach Erhalt der Testergebnisse über die angemessenen Schritte zu entscheiden.
+   * Neutral und auf die Testergebnisse beschränkt. Es ist Aufgabe des Projekt-Managers, nach Erhalt der Testergebnisse über die angemessenen Schritte zu entscheiden.
 
 * folgende Eigenschaften nicht aufweisen:
 

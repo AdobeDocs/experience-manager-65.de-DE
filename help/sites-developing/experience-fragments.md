@@ -85,7 +85,7 @@ Komponenten, die diese Konvention nicht verwenden, werden nicht berücksichtigt.
 
 >[!CAUTION]
 >
->Für Experience Fragments werden ***nur***[ bearbeitbare Vorlagen unterstützt.](/help/sites-developing/page-templates-editable.md)
+>Für Experience Fragments werden ***nur*** [bearbeitbare Vorlagen unterstützt.](/help/sites-developing/page-templates-editable.md)
 
 Beim Entwickeln einer neuen Vorlage für Experience Fragments folgen Sie den Standardverfahren für eine [bearbeitbare Vorlage](/help/sites-developing/page-templates-editable.md).
 

@@ -10,7 +10,7 @@ exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -18,17 +18,17 @@ ht-degree: 71%
 
 >[!IMPORTANT]
 >
->Die DSGVO wird in den folgenden Abschnitten als Beispiel verwendet, die betroffenen Informationen gelten jedoch für alle Datenschutz- und Datenschutzbestimmungen. wie DSGVO, CCPA usw.
+>Die DSGVO dient in den folgenden Abschnitten als Beispiel, die jeweiligen Informationen gelten jedoch für alle Datenschutzvorschriften und -bestimmungen. wie DSGVO, CCPA usw.
 
-## AEM DSGVO-Unterstützung von Foundation {#aem-foundation-gdpr-support}
+## AEM Foundation – DSGVO-Unterstützung {#aem-foundation-gdpr-support}
 
-Auf AEM Foundation-Ebene sind die gespeicherten personenbezogenen Daten das Benutzerprofil. Dementsprechend wird in diesem Artikel in erster Linie erläutert, wie der Zugriff auf und das Löschen von Benutzerprofilen erfolgt, um DSGVO-bezogene Anfragen zum Datenzugriff bzw. zur Datenlöschung handzuhaben.
+Auf AEM Foundation-Ebene werden personenbezogene Daten im Benutzerprofil gespeichert. Dementsprechend wird in diesem Artikel in erster Linie erläutert, wie der Zugriff auf und das Löschen von Benutzerprofilen erfolgt, um DSGVO-bezogene Anfragen zum Datenzugriff bzw. zur Datenlöschung handzuhaben.
 
 ## Zugreifen auf Benutzerprofile {#accessing-a-user-profile}
 
 ### Manuelle Schritte {#manual-steps}
 
-1. Öffnen Sie die Konsole Benutzerverwaltung , indem Sie zu **[!UICONTROL Einstellungen - Sicherheit - Benutzer]** oder direkt zu `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Öffnen Sie die Konsole für die Benutzerverwaltung, indem Sie zu **[!UICONTROL Einstellungen > Sicherheit > Benutzer]** navigieren oder die Seite `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html` direkt aufrufen.
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -40,7 +40,7 @@ Auf AEM Foundation-Ebene sind die gespeicherten personenbezogenen Daten das Benu
 
    ![userprofile_small](assets/userprofile_small.png)
 
-### -HTTP-API {#http-api}
+### HTTP-API {#http-api}
 
 Wie bereits ausgeführt, bietet Adobe APIs, mit denen der Zugriff auf Benutzerdaten automatisiert werden kann. Es stehen verschiedene Arten von APIs zur Verfügung:
 
@@ -86,28 +86,28 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   In der Benutzeroberfläche wird dann angezeigt, dass der Benutzer deaktiviert wurde, indem er ausgegraut wurde und der Profilkarte eine Sperre hinzufügt:
+   Der Benutzer wird nun ausgegraut angezeigt und die Profilkarte mit einem Schloss-Symbol versehen, was bedeutet, dass der Benutzer deaktiviert wurde:
 
    ![disableduser](assets/disableduser.png)
 
 ### Löschen von Benutzerprofilinformationen {#delete-user-profile-information}
 
-1. Melden Sie sich bei CRXDE Lite an und suchen Sie dann nach der `[!UICONTROL userId]`:
+1. Melden Sie sich bei CRXDE Lite an und suchen Sie nach `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Öffnen Sie den Benutzerknoten, der sich unter `[!UICONTROL /home/users]` standardmäßig:
+1. Öffnen Sie den Benutzerknoten. Dieser befindet sich standardmäßig unter `[!UICONTROL /home/users]`:
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
 1. Löschen Sie die Profilknoten und die ihnen zugehörigen untergeordneten Elemente. Abhängig von der AEM-Version liegen die Profilknoten in zwei unterschiedlichen Formaten vor:
 
    1. Das private Standardprofil unter `[!UICONTROL /profile]`
-   1. `[!UICONTROL /profiles]`, für neue Profile, die mit AEM 6.5 erstellt wurden.
+   1. `[!UICONTROL /profiles]` für neue Profile, die mit AEM 6.5 erstellt werden
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
-### -HTTP-API {#http-api-1}
+### HTTP-API {#http-api-1}
 
 Die folgenden Verfahren verwenden das Befehlszeilen-Tool `curl`, um zu veranschaulichen, wie die Benutzerin mit der `userId` **[!UICONTROL cavery]** deaktiviert und ihre Profile am Standardspeicherort gelöscht werden können.
 

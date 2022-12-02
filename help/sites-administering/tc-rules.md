@@ -14,7 +14,7 @@ exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1150'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Die Datei gilt für alle Übersetzungsprojekte.
 
 >[!NOTE]
 >
->Nach einer Aktualisierung auf 6.4 wird empfohlen, die Datei aus /etc zu verschieben. Siehe [Allgemeine Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules) für weitere Details.
+>Nach einer Aktualisierung auf 6.4 wird empfohlen, die Datei aus /etc zu verschieben. Weitere Informationen finden Sie unter [Repository-Neustrukturierung für alle Lösungen in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules).
 
 Die Regeln umfassen die folgenden Informationen:
 
@@ -163,7 +163,7 @@ So können Sie darauf zugreifen:
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-Von hier aus können Sie **Kontext hinzufügen**. Dies ermöglicht Ihnen das Hinzufügen eines Pfads.
+Von hier aus können Sie **Kontext hinzufügen**. Dies ermöglicht Ihnen das Hinzufügen eines Pfads.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
@@ -173,11 +173,11 @@ Anschließend müssen Sie Ihren Kontext auswählen und dann auf **Bearbeiten** 
 
 Es gibt vier Attribute, die Sie über die Benutzeroberfläche ändern können: `isDeep`, `inherit`, `translate` und `updateDestinationLanguage`.
 
-**isDeep** Dieses Attribut gilt für Knotenfilter und ist standardmäßig &quot;true&quot;. Es prüft, ob der Knoten oder seine Vorgängerelemente die Eigenschaft mit dem im Filter angegebenen Eigenschaftswert enthalten. Bei „false“ wird die Überprüfung nur für den aktuellen Knoten durchgeführt.
+**isDeep** Dieses Attribut lässt sich auf Knotenfilter anwenden und ist standardmäßig auf „true“ eingestellt. Es prüft, ob der Knoten oder seine Vorgängerelemente die Eigenschaft mit dem im Filter angegebenen Eigenschaftswert enthalten. Bei „false“ wird die Überprüfung nur für den aktuellen Knoten durchgeführt.
 
-Beispielsweise werden untergeordnete Knoten zu einem Übersetzungsauftrag hinzugefügt, selbst wenn der übergeordnete Knoten über eine Eigenschaft verfügt `draftOnly` auf &quot;true&quot;gesetzt, um Entwurfsinhalte zu kennzeichnen. Hier kommt `isDeep` ins Spiel, prüft, ob bei den übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, und schließt diese untergeordneten Knoten aus.
+Beispielsweise werden untergeordnete Knoten einem Übersetzungsauftrag selbst dann hinzugefügt, wenn beim übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, um Entwurfsinhalte zu kennzeichnen. Hier kommt `isDeep` ins Spiel, prüft, ob bei den übergeordneten Knoten die Eigenschaft `draftOnly` auf „true“ eingestellt ist, und schließt diese untergeordneten Knoten aus.
 
-Im Editor können Sie **Is Deep** im **Filter** Registerkarte.
+Im Editor können Sie **Is Deep** auf der Registerkarte **Filter** aktivieren/deaktivieren.
 
 ![chlimage_1-59](assets/chlimage_1-59.jpeg)
 
@@ -189,19 +189,19 @@ Im folgenden Beispiel ist die xml dargestellt, die generiert wird, wenn **Is Dee
 </filter>
 ```
 
-**inherit** Dies gilt für Eigenschaften. Standardmäßig werden alle Eigenschaften übernommen. Sollten Sie jedoch wünschen, dass manche Eigenschaften nicht für das untergeordnete Element übernommen werden, können Sie diese Eigenschaft als „false“ markieren, sodass sie nur auf diesen spezifischen Knoten angewendet wird.
+**inherit** Dies lässt sich auf Eigenschaften anwenden. Standardmäßig werden alle Eigenschaften übernommen. Sollten Sie jedoch wünschen, dass manche Eigenschaften nicht für das untergeordnete Element übernommen werden, können Sie diese Eigenschaft als „false“ markieren, sodass sie nur auf diesen spezifischen Knoten angewendet wird.
 
 In der Benutzeroberfläche können Sie **Übernehmen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
 ![chlimage_1-60](assets/chlimage_1-60.jpeg)
 
-**translate** Das Attribut translate wird einfach verwendet, um anzugeben, ob eine Eigenschaft übersetzt werden soll oder nicht.
+**translate** Das Attribut „translate“ wird einfach verwendet, um anzugeben, ob eine Eigenschaft zu übersetzen ist oder nicht.
 
 In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren.
 
-**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprachcodes enthalten, z. B. jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
+**updateDestinationLanguage** Dieses Attribut wird für Eigenschaften verwendet, die keinen Text, sondern Sprach-Codes enthalten, wie zum Beispiel jcr:language. Der Benutzer übersetzt keinen Text, sondern das Sprachschema von der Quelle ins Ziel. Solche Eigenschaften werden nicht zur Übersetzung versendet.
 
-In der Benutzeroberfläche können Sie **Übersetzen** im **Eigenschaften** für die spezifischen Eigenschaften, die Sprachcodes als Wert aufweisen.
+In der Benutzeroberfläche können Sie **Übersetzen** auf der Registerkarte **Eigenschaften** aktivieren/deaktivieren, außer bei den spezifischen Eigenschaften mit Sprach-Codes als Wert.
 
 Der Unterschied zwischen `updateDestinationLanguage` und `translate` lässt sich hier anhand eines einfachen Beispiels für einen Kontext mit zwei Regeln veranschaulichen:
 

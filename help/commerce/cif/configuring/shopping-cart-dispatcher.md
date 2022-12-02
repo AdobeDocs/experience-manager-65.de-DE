@@ -4,7 +4,7 @@ description: Einrichtung von Warenkorb und Dispatcher
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '141'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 

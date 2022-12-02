@@ -13,7 +13,7 @@ exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
 source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
 source-wordcount: '2483'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -39,29 +39,29 @@ Das globale Objekt deklariert zudem die [Sling-Bibliothek](/help/sites-developin
 
 ### &lt;ui:includeClientLib> {#ui-includeclientlib}
 
-Die `<ui:includeClientLib>` tag Enthält eine AEM HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Für mehrere Einschlüsse verschiedener Typen, z. B. js und css, muss dieses Tag mehrmals in der JSP verwendet werden. Dieses Tag ist ein praktischer Wrapper für die Dienstschnittstelle ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
+Das Tag `<ui:includeClientLib>` enthält eine AEM-HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Wenn mehrere verschiedene Typen enthalten sind, wie etwa JS und CSS, verwenden Sie dieses Tag mehrere Male in JSP. Dieses Tag ist ein praktischer Wrapper für die Service-Schnittstelle ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)`.
 
 Es weist folgende Attribute auf:
 
-**categories** - Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
+**categories**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
 
 Entspricht: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**Design** - Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies beinhaltet alle designbezogenen Bibliotheken (CSS und JS) für die entsprechenden Kategorien. Der Designname wird aus der Abfrage extrahiert.
+**theme**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies beinhaltet alle designbezogenen Bibliotheken (CSS und JS) für die entsprechenden Kategorien. Der Designname wird aus der Abfrage extrahiert.
 
 Entspricht: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
-**js** - Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Bibliotheken für die betreffenden Kategorien mit ein.
+**js**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies bezieht alle Javascript-Bibliotheken für die betreffenden Kategorien mit ein.
 
 Entspricht: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
-**css** - Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle CSS-Bibliotheken für die betreffenden Kategorien mit ein.
+**css**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies bezieht alle CSS-Bibliotheken für die betreffenden Kategorien mit ein.
 
 Entspricht: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
-**themed** - Eine Markierung, die anzeigt, dass nur thematische oder nicht thematische Bibliotheken eingeschlossen werden sollen. Wenn ausgelassen, sind beide Sätze enthalten. Gilt nur, wenn nur JS oder nur CSS enthalten ist (nicht wenn Kategorien oder Designs enthalten sind).
+**themed**: Ein Flag, das angibt, ob nur designbezogene oder nicht designbezogene Bibliotheken enthalten sein sollen. Wenn ausgelassen, sind beide Sätze enthalten. Gilt nur, wenn nur JS oder nur CSS enthalten ist (nicht wenn Kategorien oder Designs enthalten sind).
 
-Die `<ui:includeClientLib>` -Tag kann wie folgt in einer JSP verwendet werden:
+Das Tag `<ui:includeClientLib>` kann in einem JSP-Code wie folgt verwendet werden:
 
 ```xml
 <%-- all: js + theme (theme-js + css) --%>
@@ -89,7 +89,7 @@ Das Skript muss mit dem folgenden Code beginnen, damit Sie die Tag-Bibliothek vo
 
 >[!NOTE]
 >
->Wenn die `/libs/foundation/global.jsp` im Skript enthalten ist, wird die Tag-Bibliothek automatisch deklariert.
+>Wenn die Datei `/libs/foundation/global.jsp` im Skript enthalten ist, wird die Tag-Bibliothek automatisch deklariert.
 
 Wenn Sie das JSP-Skript einer AEM-Komponente entwickeln, sollten Sie folgenden Code am Anfang des Skripts einfügen:
 
@@ -97,37 +97,37 @@ Wenn Sie das JSP-Skript einer AEM-Komponente entwickeln, sollten Sie folgenden C
 <%@include file="/libs/foundation/global.jsp"%>
 ```
 
-Sie deklariert die Sling-, CQ- und JSTL-Taglibs und stellt die regelmäßig verwendeten Skriptobjekte bereit, die von der [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects) -Tag. Dies verkürzt und vereinfacht den JSP-Code der Komponente.
+Er deklariert die Tag-Bibliotheken Sling, CQ und JSTL und macht die regelmäßig genutzten Skriptobjekte verfügbar, die durch das Tag [ `<cq:defineObjects />`](#amp-lt-cq-defineobjects) definiert sind. Dies verkürzt und vereinfacht den JSP-Code der Komponente.
 
 ### &lt;cq:text> {#cq-text}
 
-Die `<cq:text>` -Tag ist ein praktisches Tag, das Komponententext in einer JSP ausgibt.
+Bei dem Tag `<cq:text>` handelt es sich um ein Hilfe-Tag, das Komponententext in JSP ausgibt.
 
 Es weist die folgenden optionalen Attribute auf:
 
-**property** - Name der zu verwendenden Eigenschaft. Der Name steht im Bezug zur aktuellen Ressource.
+**property**: Name der zu verwendenden Eigenschaft. Der Name steht im Bezug zur aktuellen Ressource.
 
-**value** - Für die Ausgabe zu verwendender Wert. Falls dieses Attribut vorhanden ist, wird die Nutzung des Attributs property außer Kraft gesetzt.
+**value**: Der für die Ausgabe zu verwendende Wert. Falls dieses Attribut vorhanden ist, wird die Nutzung des Attributs „property“ außer Kraft gesetzt.
 
-**oldValue** - Wert, der für die Vergleichsausgabe verwendet werden soll. Falls dieses Attribut vorhanden ist, wird die Nutzung des Attributs property außer Kraft gesetzt.
+**oldValue**: Der für die diff-Ausgabe zu verwendende Wert. Falls dieses Attribut vorhanden ist, wird die Nutzung des Attributs „property“ außer Kraft gesetzt.
 
-**escapeXml** - Definiert, ob die Zeichen &lt;, >, &amp;, &#39; und &quot; in der resultierenden Zeichenfolge in die entsprechenden Zeichenentitätscodes konvertiert werden sollen. Der Standardwert lautet false. Beachten Sie, dass der Escapevorgang nach der optionalen Formatierung angewendet wird.
+**escapeXml**: Definiert, ob die Zeichen &lt;, >, &amp;, &#39; und &quot; in der daraus entstehenden Zeichenfolge in ihre entsprechenden Zeichenentitäts-Codes umgewandelt werden sollen. Der Standardwert lautet „false“. Beachten Sie, dass der Escape-Vorgang nach der optionalen Formatierung angewendet wird.
 
-**format** - Optionales java.text.Format zur Formatierung des Texts.
+**format**: Optionales java.text.Format für die Formatierung des Texts.
 
-**noDiff** - Unterdrückt die Berechnung einer diff-Ausgabe, auch wenn eine diff -Information vorhanden ist.
+**noDiff**: Unterdrückt die Berechnung einer diff-Ausgabe, auch wenn eine diff-Information vorhanden ist.
 
-**tagClass** - CSS-Klassenname eines Elements, das eine nicht leere Ausgabe umgibt. Wenn leer, wird kein Element hinzugefügt.
+**tagClass**: CSS-Klassenname eines Elements, das eine nicht leere Ausgabe umgibt. Wenn leer, wird kein Element hinzugefügt.
 
-**tagName** - Name des Elements, das eine nicht leere Ausgabe umgibt. Standardmäßig ist DIV eingestellt.
+**tagName**: Name des Elements, das eine nicht leere Ausgabe umgibt. Standardmäßig ist DIV eingestellt.
 
-**Platzhalter** - Standardwert, der für null oder leeren Text im Bearbeitungsmodus, d. h. den Platzhalter, verwendet wird. Beachten Sie, dass nach der optionalen Formatierung und dem Escapevorgang die standardmäßige Prüfung ausgeführt wird, d. h. er wird im vorliegenden Format in die Ausgabe geschrieben. Standardwert ist:
+**placeholder**: Standardwert, der im Bearbeitungsmodus für null oder leeren Text verwendet wird, z. B. der Platzhalter. Beachten Sie, dass nach der optionalen Formatierung und dem Escapevorgang die standardmäßige Prüfung ausgeführt wird, d. h. er wird im vorliegenden Format in die Ausgabe geschrieben. Standardwert ist:
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
-**default** - Standardwert für null oder leeren Text. Beachten Sie, dass nach der optionalen Formatierung und dem Escapevorgang die standardmäßige Prüfung ausgeführt wird, d. h. er wird im vorliegenden Format in die Ausgabe geschrieben.
+**default**: Zu verwendender Standardwert für null oder leeren Text. Beachten Sie, dass nach der optionalen Formatierung und dem Escape-Vorgang die standardmäßige Prüfung ausgeführt wird, d. h. er wird im vorliegenden Format in die Ausgabe geschrieben.
 
-Einige Beispiele zeigen, wie die `<cq:text>` -Tag kann in einer JSP verwendet werden:
+Beispiele einer möglichen Verwendung des Tags `<cq:text>` in JSP:
 
 ```xml
 <cq:text property="jcr:title" tagName="h2"/>
@@ -159,34 +159,34 @@ Einige Beispiele zeigen, wie die `<cq:text>` -Tag kann in einer JSP verwendet we
 
 ### &lt;cq:setContentBundle> {#cq-setcontentbundle}
 
-Die `<cq:setContentBundle>` -Tag erstellt einen i18n-Lokalisierungskontext und speichert ihn im `javax.servlet.jsp.jstl.fmt.localizationContext` Konfigurationsvariable.
+Das Tag `<cq:setContentBundle>` erstellt einen i18n-Lokalisierungskontext und speichert ihn in der Konfigurationsvariablen `javax.servlet.jsp.jstl.fmt.localizationContext`.
 
 Es weist folgende Attribute auf:
 
-**language** - Die Sprache des Gebietsschemas, für das das Ressourcen-Bundle abgerufen werden soll.
+**language**: Die Sprache des Gebietsschemas, für das das Ressourcenpaket abgerufen werden soll.
 
-**source** - Die Quelle, aus der das Gebietsschema entnommen werden soll. Sie können sie auf einen der folgenden Werte einstellen:
+**source**: Die Quelle, aus der das Gebietsschema übernommen werden soll. Sie können sie auf einen der folgenden Werte einstellen:
 
-* **statisch** - das Gebietsschema aus dem `language` -Attribut, falls verfügbar, andernfalls über das Standardgebietsschema des Servers.
+* **static**: Das Gebietsschema wird vom Attribut `language` übernommen, falls verfügbar, andernfalls vom standardmäßigen Server-Gebietsschema.
 
-* **page** - das Gebietsschema wird aus der Sprache der aktuellen Seite oder Ressource übernommen, sofern verfügbar, andernfalls aus dem `language` -Attribut, falls verfügbar, andernfalls über das Standardgebietsschema des Servers.
+* **page**: Das Gebietsschema wird von der Sprache der aktuellen Seite oder Ressource übernommen, falls verfügbar, andernfalls vom Attribut `language`, falls verfügbar, oder andernfalls vom standardmäßigen Server-Gebietsschema.
 
-* **Anfrage** - Das Gebietsschema wird aus dem Gebietsschema der Anforderung übernommen ( `request.getLocale()`).
+* **request**: Das Gebietsschema wird vom angeforderten Gebietsschema (`request.getLocale()`) übernommen.
 
-* **auto** - das Gebietsschema aus dem `language` Attribut , falls verfügbar, andernfalls aus der Sprache der aktuellen Seite oder Ressource, falls verfügbar, aus der Anforderung.
+* **auto**: Das Gebietsschema wird vom Attribut `language` übernommen, falls verfügbar, andernfalls von der Sprache der aktuellen Seite oder Ressource, falls verfügbar, andernfalls von der Anfrage.
 
-Falls das `source`-Attribut nicht festgelegt ist:
+Falls das Attribut `source` nicht festgelegt ist:
 
-* Wenn die Variable `language` festgelegt ist, wird die `source` -Attribut standardmäßig auf &quot; `static`.
+* Falls das Attribut `language` festgelegt ist, ist für das Attribut `source` standardmäßig `static` eingestellt.
 
-* Wenn die Variable `language` nicht festgelegt ist, wird die `source` -Attribut standardmäßig `auto`.
+* Falls das Attribut `language` nicht festgelegt ist, ist für das Attribut `source` standardmäßig `auto` eingestellt.
 
-Das &quot;Inhaltspaket&quot;kann einfach von Standard-JSTL verwendet werden `<fmt:message>` Tags. Die Suche von Nachrichten anhand von Schlüsselwörtern hat zwei Aspekte:
+Das „Inhaltspaket“ kann einfach mit standardmäßigen JSTL-`<fmt:message>`-Tags verwendet werden. Die Suche von Nachrichten anhand von Schlüsselwörtern hat zwei Aspekte:
 
 1. Zunächst werden die JCR-Eigenschaften der zugrunde liegenden Ressource, die derzeit wiedergegeben wird, nach Übersetzungen durchsucht. Auf diese Weise können Sie ein einfaches Komponentendialogfeld definieren, um diese Werte zu bearbeiten.
-1. Wenn der Knoten keine Eigenschaft mit dem exakt gleichen Namen wie das Schlüsselwort enthält, wird ein Ressourcenpaket aus der Sling-Anforderung (`SlingHttpServletRequest.getResourceBundle(Locale)`) )) geladen. Die Sprache oder das Gebietsschema für dieses Bundle wird durch die Sprach- und Quellattribute der `<cq:setContentBundle>` -Tag.
+1. Wenn der Knoten keine Eigenschaft mit dem exakt gleichen Namen wie das Schlüsselwort enthält, wird ein Ressourcenpaket aus der Sling-Anforderung (`SlingHttpServletRequest.getResourceBundle(Locale)`) geladen. Die Sprache oder das Gebietsschema für dieses Paket wird von den Sprach- und Quellattributen des Tags `<cq:setContentBundle>` definiert.
 
-Die `<cq:setContentBundle>` -Tag kann wie folgt in einer JSP verwendet werden.
+Das Tag `<cq:setContentBundle>` kann in einem JSP-Code wie folgt verwendet werden.
 
 Für Seiten, die ihre Sprache definieren:
 
@@ -206,7 +206,7 @@ Für von Benutzern personalisierte Seiten:
 
 ### &lt;cq:include> {#cq-include}
 
-Die `<cq:include>` -Tag eine Ressource in die aktuelle Seite ein.
+Das Tag `<cq:include>` fügt eine Ressource in die aktuelle Seite ein.
 
 Es weist folgende Attribute auf:
 
@@ -216,17 +216,17 @@ Es weist folgende Attribute auf:
 
 **path**
 
-* Der Pfad zum Ressourcenobjekt, das in die aktuelle Anforderungsverarbeitung eingefügt werden soll. Ein relativer Pfad wird an den Pfad der aktuellen Ressource angehängt, deren Skript die angegebene Ressource enthält. path und resourceType oder script müssen angegeben sein.
+* Der Pfad zum Ressourcenobjekt, das in die aktuelle Anforderungsverarbeitung eingefügt werden soll. Ein relativer Pfad wird an den Pfad der aktuellen Ressource angehängt, deren Skript die angegebene Ressource enthält. „path“ und „resourceType“ oder „script“ müssen angegeben sein.
 
 **resourceType**
 
 * Der Ressourcentypen der Ressource, die hinzugefügt werden soll. Wenn der Ressourcentyp festgelegt ist, muss der Pfad der genaue Pfad zu einem Ressourcenobjekt sein: in diesem Fall wird das Hinzufügen von Parametern, Selektoren und Erweiterungen zum Pfad nicht unterstützt.
 * Falls die einzufügende Ressource mit dem path-Attribut angegeben ist, das nicht in eine Ressource aufgelöst werden kann, erstellt das Tag möglicherweise ein synthetisches Ressourcenobjekt aus dem Pfad und diesem Ressourcentyp.
-* path und resourceType oder script müssen angegeben sein.
+* „path“ und „resourceType“ oder „script“ müssen angegeben sein.
 
 **script**
 
-* Das JSP-Skript, das einbezogen werden soll. path und resourceType oder script müssen angegeben sein.
+* Das JSP-Skript, das einbezogen werden soll. „path“ und „resourceType“ oder „script“ müssen angegeben sein.
 
 **ignoreComponentHierarchy**
 
@@ -244,12 +244,12 @@ Es weist folgende Attribute auf:
 </div>
 ```
 
-Sollten Sie `<%@ include file="myScript.jsp" %>` oder `<cq:include script="myScript.jsp" %>` um ein Skript einzubeziehen?
+Verwenden Sie `<%@ include file="myScript.jsp" %>` oder `<cq:include script="myScript.jsp" %>`, um ein Skript einzufügen?
 
-* Die `<%@ include file="myScript.jsp" %>` weist den JSP-Compiler an, eine vollständige Datei in die aktuelle Datei aufzunehmen. Es ist, als ob die Inhalte der enthaltenen Datei direkt in die Originaldatei eingefügt würden.
-* Mit dem `<cq:include script="myScript.jsp">` -Tag, wird die Datei zur Laufzeit eingeschlossen.
+* Die Richtlinie `<%@ include file="myScript.jsp" %>` informiert den JSP-Compiler, dass er eine vollständige Datei in die aktuelle Datei einfügen soll. Es ist, als ob die Inhalte der enthaltenen Datei direkt in die Originaldatei eingefügt würden.
+* Mit dem Tag `<cq:include script="myScript.jsp">` wird die Datei zur Laufzeit eingebunden.
 
-Sollten Sie `<cq:include>` oder `<sling:include>`?
+Sollten Sie `<cq:include>` oder `<sling:include>` verwenden?
 
 * Bei der Entwicklung von AEM-Komponenten empfiehlt Adobe die Verwendung von `<cq:include>`.
 * `<cq:include>` ermöglicht das direkte Einfügen von Skriptdateien anhand ihres Namens, wenn Sie das script-Attribut verwenden. Dabei werden Komponenten- und Ressourcentypvererbung berücksichtigt. Diese ist häufig einfacher als die strikte Einhaltung der Skriptauflösung von Sling mithilfe von Selektoren und Erweiterungen.
@@ -258,31 +258,31 @@ Sollten Sie `<cq:include>` oder `<sling:include>`?
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` ist seit AEM 5.6 veraltet. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) verwendet werden.
+>`<cq:includeClientLib>` ist seit AEM 5.6 veraltet. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) muss stattdessen verwendet werden.
 
-Die `<cq:includeClientLib>` tag Enthält eine AEM HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Für mehrere Einschlüsse verschiedener Typen, z. B. js und css, muss dieses Tag mehrmals in der JSP verwendet werden. Dieses Tag ist ein praktischer Wrapper für die Dienstschnittstelle `com.day.cq.widget.HtmlLibraryManager`.
+Das Tag `<cq:includeClientLib>` enthält eine AEM-HTML-Client-Bibliothek, bei der es sich um eine JS-, CSS- oder Design-Bibliothek handeln kann. Wenn mehrere verschiedene Typen enthalten sind, wie etwa JS und CSS, verwenden Sie dieses Tag mehrere Male in JSP. Dieses Tag ist ein praktischer Wrapper für die Service-Schnittstelle `com.day.cq.widget.HtmlLibraryManager`.
 
 Es weist folgende Attribute auf:
 
-**categories** - Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
+**categories**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
 
 Entspricht: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**Design** - Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies beinhaltet alle designbezogenen Bibliotheken (CSS und JS) für die entsprechenden Kategorien. Der Designname wird aus der Abfrage extrahiert.
+**theme**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies beinhaltet alle designbezogenen Bibliotheken (CSS und JS) für die entsprechenden Kategorien. Der Designname wird aus der Abfrage extrahiert.
 
 Entspricht: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
-**js** - Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Bibliotheken für die betreffenden Kategorien mit ein.
+**js**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies bezieht alle Javascript-Bibliotheken für die betreffenden Kategorien mit ein.
 
 Entspricht: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
-**css** - Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle CSS-Bibliotheken für die betreffenden Kategorien mit ein.
+**css**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies bezieht alle CSS-Bibliotheken für die betreffenden Kategorien mit ein.
 
 Entspricht: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
-**themed** - Eine Markierung, die anzeigt, dass nur thematische oder nicht thematische Bibliotheken eingeschlossen werden sollen. Wenn ausgelassen, sind beide Sätze enthalten. Gilt nur, wenn nur JS oder nur CSS enthalten ist (nicht wenn Kategorien oder Designs enthalten sind).
+**themed**: Ein Flag, das angibt, ob nur designbezogene oder nicht designbezogene Bibliotheken enthalten sein sollen. Wenn ausgelassen, sind beide Sätze enthalten. Gilt nur, wenn nur JS oder nur CSS enthalten ist (nicht wenn Kategorien oder Designs enthalten sind).
 
-Die `<cq:includeClientLib>` -Tag kann wie folgt in einer JSP verwendet werden:
+Das Tag `<cq:includeClientLib>` kann in einem JSP-Code wie folgt verwendet werden:
 
 ```xml
 <%-- all: js + theme (theme-js + css) --%>
@@ -300,7 +300,7 @@ Die `<cq:includeClientLib>` -Tag kann wie folgt in einer JSP verwendet werden:
 
 ### &lt;cq:defineObjects> {#cq-defineobjects}
 
-Die `<cq:defineObjects>` -Tag stellt die folgenden, regelmäßig verwendeten Skriptobjekte bereit, auf die der Entwickler verweisen kann. Außerdem werden die Objekte bereitgestellt, die durch die [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects) -Tag.
+Das Tag `<cq:defineObjects>` macht die folgenden, regelmäßig verwendeten Skriptobjekte verfügbar, auf die der Entwickler verweisen kann. Darüber hinaus werden die Objekte verfügbar gemacht, die durch das Tag [ `<sling:defineObjects>`](#amp-lt-sling-defineobjects) definiert sind.
 
 **componentContext**
 
@@ -332,7 +332,7 @@ Die `<cq:defineObjects>` -Tag stellt die folgenden, regelmäßig verwendeten Skr
 
 **pageManager**
 
-* das Seitenmanager-Objekt für Vorgänge auf Seitenebene (com.day.cq.wcm.api.PageManager-Schnittstelle).
+* das Seiten-Manager-Objekt für Vorgänge auf Seitenebene (com.day.cq.wcm.api.PageManager-Schnittstelle).
 
 **pageProperties**
 
@@ -438,19 +438,19 @@ Die `<cq:defineObjects>` -Tag stellt die folgenden, regelmäßig verwendeten Skr
 
 >[!NOTE]
 >
->Wenn die `/libs/foundation/global.jsp` im Skript enthalten ist, wird die `<cq:defineObjects />` -Tag automatisch eingeschlossen.
+>Wenn die Datei `/libs/foundation/global.jsp` im Skript enthalten ist, wird das Tag `<cq:defineObjects />` automatisch eingefügt.
 
 ### &lt;cq:requestURL> {#cq-requesturl}
 
-Die `<cq:requestURL>` -Tag schreibt die aktuelle Anfrage-URL in den JspWriter. Die beiden Tags [ `<cq:addParam>`](#amp-lt-cq-addparam) und [ `<cq:removeParam>`](#amp-lt-cq-removeparam) und kann innerhalb des Hauptteils dieses Tags verwendet werden, um die aktuelle Anfrage-URL zu ändern, bevor sie geschrieben wird.
+Das Tag `<cq:requestURL>` schreibt die aktuelle Anforderungs-URL in JspWriter. Die beiden Tags [ `<cq:addParam>`](#amp-lt-cq-addparam) und [ `<cq:removeParam>`](#amp-lt-cq-removeparam) können innerhalb dieses Tags verwendet werden, um die aktuelle Anforderungs-URL zu bearbeiten, bevor sie geschrieben wird.
 
 Sie können Links zur aktuellen Seite mit variierenden Parametern erstellen. Beispielsweise können Sie die Anforderung umwandeln:
 
 `mypage.html?mode=view&query=something` in `mypage.html?query=something`.
 
-Die Verwendung von `addParam` oder `removeParam` nur das Vorkommen des angegebenen Parameters ändert, sind alle anderen Parameter nicht betroffen.
+Mit `addParam` oder `removeParam` wird nur das Auftreten des angegebenen Parameters verändert, alle anderen Parameter sind nicht betroffen.
 
-`<cq:requestURL>` hat kein -Attribut.
+`<cq:requestURL>` weist kein Attribut auf.
 
 Beispiele:
 
@@ -464,7 +464,7 @@ Beispiele:
 
 ### &lt;cq:addParam> {#cq-addparam}
 
-Die `<cq:addParam>` -Tag fügt einen Anforderungsparameter mit dem angegebenen Namen und Wert zum einschließenden [ `<cq:requestURL>`](#amp-lt-cq-requesturl) -Tag.
+Das Tag `<cq:addParam>` fügt einen Anforderungsparameter mit dem angegebenen Namen und Wert zum umschließenden Tag [ `<cq:requestURL>`](#amp-lt-cq-requesturl) hinzu.
 
 Es weist folgende Attribute auf:
 
@@ -484,7 +484,7 @@ Es weist folgende Attribute auf:
 
 ### &lt;cq:removeParam> {#cq-removeparam}
 
-Die `<cq:removeParam>` -Tag entfernt einen Anforderungsparameter mit dem angegebenen Namen und Wert aus dem einschließenden [ `<cq:requestURL>`](#amp-lt-cq-requesturl) -Tag. Wenn kein Wert angegeben wird, werden alle Parameter mit dem jeweiligen Namen entfernt.
+Das Tag `<cq:removeParam>` entfernt einen Anforderungsparameter mit dem angegebenen Namen und Wert aus dem umschließenden Tag [ `<cq:requestURL>`](#amp-lt-cq-requesturl). Wenn kein Wert angegeben wird, werden alle Parameter mit dem jeweiligen Namen entfernt.
 
 Es weist folgende Attribute auf:
 
@@ -510,11 +510,11 @@ Wenn Sie die Tag-Bibliothek von Sling in Ihrem Skript verwenden, muss das Skript
 
 >[!NOTE]
 >
->Wenn die `/libs/foundation/global.jsp` im Skript enthalten ist, wird die Sling-Tag-Bibliothek automatisch deklariert.
+>Wenn die Datei `/libs/foundation/global.jsp` im Skript enthalten ist, wird die Tag-Bibliothek von Sling automatisch deklariert.
 
 ### &lt;sling:include> {#sling-include}
 
-Die `<sling:include>` -Tag eine Ressource in die aktuelle Seite ein.
+Das Tag `<sling:include>` fügt eine Ressource in die aktuelle Seite ein.
 
 Es weist folgende Attribute auf:
 
@@ -549,7 +549,7 @@ Es weist folgende Attribute auf:
 
 >[!NOTE]
 >
->Die Auflösung der Ressource und des Skripts, die im `<sling:include>` -Tag entspricht der normalen Sling-URL-Auflösung. Standardmäßig werden die Selektoren, die Erweiterung usw. der aktuellen Anforderung auch für das enthaltene Skript verwendet. Sie können über die Tag-Attribute geändert werden: Beispiel `replaceSelectors="foo.bar"` ermöglicht es Ihnen, die Selektoren zu überschreiben.
+>Die Auflösung der Ressource und des Skripts, das im Tag `<sling:include>` enthalten ist, ist dieselbe wie bei einer normalen URL-Auflösung in Sling. Standardmäßig werden die Selektoren, die Erweiterung usw. der aktuellen Anforderung auch für das enthaltene Skript verwendet. Sie können durch die Tag-Attribute geändert werden: Beispielsweise ermöglicht Ihnen `replaceSelectors="foo.bar"` das Überschreiben der Selektoren.
 
 Beispiele:
 
@@ -579,7 +579,7 @@ Beispiele:
 
 ### &lt;sling:defineObjects> {#sling-defineobjects}
 
-Die `<sling:defineObjects>` -Tag stellt die folgenden, regelmäßig verwendeten Skriptobjekte bereit, auf die der Entwickler verweisen kann:
+Das Tag `<sling:defineObjects>` macht die folgenden, regelmäßig verwendeten Skriptobjekte verfügbar, auf die der Entwickler verweisen kann:
 
 **slingRequest**
 
@@ -597,7 +597,7 @@ Die `<sling:defineObjects>` -Tag stellt die folgenden, regelmäßig verwendeten 
 
 .**sling**
 
-* ein SlingScriptHelper-Objekt, das komfortable Methoden für Skripte enthält, hauptsächlich sling.include(&#39;/some/other/resource&#39;) zum Einfügen der Antworten anderer Ressourcen innerhalb dieser Antwort (z. B. Einbetten von Kopfzeilen-HTML-Snippets) und sling.getService(foo.bar.Service.class) zum Abrufen der verfügbaren OSGi-Dienste in Sling (Klassennotation abhängig von Skriptingsprache).
+* ein SlingScriptHelper-Objekt, das komfortable Methoden für Skripte enthält, hauptsächlich sling.include(&#39;/some/other/resource&#39;) zum Einfügen der Antworten anderer Ressourcen innerhalb dieser Antwort (z. B. Einbetten von Kopfzeilen-HTML-Ausschnitt) und sling.getService(foo.bar.Service.class) zum Abrufen der verfügbaren OSGi-Dienste in Sling (Klassennotation abhängig von Skriptsprache).
 
 **resource**
 
@@ -634,7 +634,7 @@ l **ogName resourceResolverName**
 
 ## Tag-Bibliothek von JSTL {#jstl-tag-library}
 
-Die [JavaServer-Seiten Standard-Tag-Bibliothek](https://www.oracle.com/technetwork/java/index-jsp-135995.html) enthält viele nützliche und standardmäßige Tags. Die Taglibs für Kern, Formatierung und Funktionen werden durch die Variable `/libs/foundation/global.jsp` wie im folgenden Snippet gezeigt.
+Die [standardmäßige Tag-Bibliothek JavaServer Pages](https://www.oracle.com/technetwork/java/index-jsp-135995.html) enthält viele hilfreiche und standardmäßige Tags. Die Tag-Bibliotheken für Kern, Formatierung und Funktionen werden anhand von `/libs/foundation/global.jsp` wie im folgenden Ausschnitt gezeigt definiert.
 
 ### Auszug aus /libs/foundation/global.jsp {#extract-of-libs-foundation-global-jsp}
 
@@ -644,4 +644,4 @@ Die [JavaServer-Seiten Standard-Tag-Bibliothek](https://www.oracle.com/technetwo
 <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions" %>
 ```
 
-Nach dem Import der `/libs/foundation/global.jsp` wie zuvor beschrieben, können Sie die `c`, `fmt` und `fn` -Präfixe für den Zugriff auf diese Taglibs. Die offizielle Dokumentation der JSTL ist verfügbar unter [Das Java EE 5-Tutorial – standardmäßige Tag-Bibliothek JavaServer-Seiten](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).
+Nach dem Importieren der Datei `/libs/foundation/global.jsp` wie zuvor beschrieben können Sie die Präfixe `c`, `fmt` und `fn` verwenden, um auf diese Tag-Bibliotheken zuzugreifen. Die offizielle Dokumentation der JSTL ist verfügbar unter [Das Java EE 5-Tutorial – standardmäßige Tag-Bibliothek JavaServer Pages](https://docs.oracle.com/javaee/5/tutorial/doc/bnakc.html).

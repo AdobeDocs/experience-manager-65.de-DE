@@ -15,7 +15,7 @@ exl-id: 8d8a7237-8e87-4730-be90-2a18144fc65a
 source-git-commit: d6c875e85d553b8ef557b811c9fa43f46824f297
 workflow-type: tm+mt
 source-wordcount: '263'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Adobe Experience Manager (AEM) stellt mehrere APIs zum Entwickeln von Applikatio
 * [Coral-UI-Handbuch](https://www.adobe.io/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 * [Dokumentation zur Widgets-API (klassische Benutzeroberfläche)](https://www.adobe.io/experience-manager/reference-materials/6-5/widgets-api/index.html)
 * [JavaScript-API-Referenz zum UI-Test-Framework](https://www.adobe.io/experience-manager/reference-materials/6-5/test-api/index.html)
-* [Referenz zur JavaScript-API für den Editor](https://www.adobe.io/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
+* [JavaScript-API-Referenz zum Editor](https://www.adobe.io/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html)
 
 AEM Single-Page Application (SPA) Editor – SDK-Framework-JavaScript-API-Referenzen:
 

@@ -14,7 +14,7 @@ exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
 source-git-commit: 6dea3a23c70fdb5f07bdf724547e799776002c61
 workflow-type: tm+mt
 source-wordcount: '1553'
-ht-degree: 78%
+ht-degree: 99%
 
 ---
 
@@ -93,7 +93,7 @@ Die Website-Eigenschaften steuern, wie die Übersetzung von Seiteninhalten durch
   </tr>
   <tr>
    <td>Übersetzungs-Workflow</td>
-   <td><p>Wählen Sie die Übersetzungsmethode aus, die das Framework für den Site-Inhalt durchführt:</p>
+   <td><p>Wählen Sie die Übersetzungsmethode aus, die das Framework für den Website-Inhalt durchführt:</p>
     <ul>
      <li>Maschinelle Übersetzung: Der Übersetzungsanbieter führt die Übersetzung mithilfe der maschinellen Übersetzung in Echtzeit durch.</li>
      <li>Menschliche Übersetzung: Der Übersetzungsdienstleister bekommt die Inhalte zugesendet und lässt sie durch Übersetzer übersetzen. </li>
@@ -102,7 +102,7 @@ Die Website-Eigenschaften steuern, wie die Übersetzung von Seiteninhalten durch
   </tr>
   <tr>
    <td>Übersetzungsanbieter</td>
-   <td>Wählen Sie den Übersetzungsanbieter aus, um die Übersetzung durchzuführen. Ein Anbieter wird in der Liste angezeigt, wenn sein entsprechender Connector installiert ist.</td>
+   <td>Wählen Sie den Übersetzungsanbieter aus, der die Übersetzung durchzuführen soll. Ein Anbieter wird in der Liste angezeigt, wenn sein entsprechender Connector installiert ist.</td>
   </tr>
   <tr>
    <td>Inhaltskategorie</td>
@@ -114,7 +114,7 @@ Die Website-Eigenschaften steuern, wie die Übersetzung von Seiteninhalten durch
   </tr>
   <tr>
    <td>Seiten-Assets übersetzen</td>
-   <td><p>Wählen Sie aus, wie Assets übersetzt werden sollen, die Komponenten aus dem Dateisystem hinzugefügt oder aus Assets referenziert werden:</p>
+   <td><p>Wählen Sie aus, wie Assets übersetzt werden sollen, die aus dem Dateisystem zu Komponenten hinzugefügt werden oder auf die in Assets verwiesen wird:</p>
     <ul>
      <li>Nicht übersetzen: Seiten-Assets werden nicht übersetzt.</li>
      <li>Workflow für Sites-Übersetzung verwenden: Assets werden entsprechend der Konfigurationseigenschaften auf der Registerkarte „Sites“ bearbeitet.</li>
@@ -123,7 +123,7 @@ Die Website-Eigenschaften steuern, wie die Übersetzung von Seiteninhalten durch
   </tr>
   <tr>
    <td>Übersetzung automatisch durchführen</td>
-   <td>Wählen Sie diese Option, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen und seinen Umfang zu ermitteln.</td>
+   <td>Wählen Sie diese Option aus, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen und seinen Umfang zu ermitteln.</td>
   </tr>
  </tbody>
 </table>
@@ -134,9 +134,9 @@ Die Communities-Eigenschaften steuern, wie die Übersetzung von benutzergenerier
 
 | Eigenschaft | Beschreibung |
 |---|---|
-| Übersetzungsanbieter | Wählen Sie den Übersetzungsanbieter aus, um die Übersetzung durchzuführen. Die Anbieter, für die Cloudkonfigurationen erstellt wurden, werden in der Liste angezeigt. |
+| Übersetzungsanbieter | Wählen Sie den Übersetzungsanbieter aus, der die Übersetzung durchzuführen soll. Die Anbieter, für die Cloudkonfigurationen erstellt wurden, werden in der Liste angezeigt. |
 | Inhaltskategorie | Eine Kategorie, die den zu übersetzenden Inhalt beschreibt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden. |
-| Auswählen eines Gebietsschemas zur Verwendung als globaler Freigabespeicher | (Optional) Wenn Sie ein Gebietsschema zum Speichern von benutzergenerierten Inhalten auswählen, werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) für die Website. Wenn Sie Kein gemeinsamer Speicher auswählen, wird die globale Übersetzung deaktiviert. Standardmäßig ist die globale Übersetzung deaktiviert. |
+| Auswählen eines Gebietsschemas zur Verwendung als globaler Freigabespeicher | (Optional) Wenn Sie ein Gebietsschema zum Speichern von benutzergenerierten Inhalten auswählen, werden Beiträge aus allen Sprachkopien in einer globalen Konversation angezeigt. Standardmäßig wählen Sie das Gebietsschema für die [Basissprache](/help/communities/sites-console.md#translation) für die Website. Die Auswahl von „Kein gemeinsamer Speicher“ deaktiviert die globale Übersetzung. Standardmäßig ist die globale Übersetzung deaktiviert. |
 
 ### Assets-Konfigurationseigenschaften {#assets-configuration-properties}
 
@@ -154,12 +154,12 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Information
     <ul>
      <li>Maschinelle Übersetzung: Der Übersetzungsanbieter führt die Übersetzung mithilfe der maschinellen Übersetzung sofort durch.</li>
      <li>Menschliche Übersetzung: Der Übersetzungsdienstleister bekommt die Inhalte automatisch zugesendet und lässt sie durch Übersetzer übersetzen. </li>
-     <li>Nicht übersetzen: Assets werden nicht zur Übersetzung gesendet.</li>
+     <li>Nicht übersetzen: Assets werden nicht zur Übersetzung versendet.</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Übersetzungsanbieter</td>
-   <td>Wählen Sie den Übersetzungsanbieter aus, um die Übersetzung durchzuführen. Ein Anbieter wird in der Liste angezeigt, wenn sein entsprechender Connector installiert ist.</td>
+   <td>Wählen Sie den Übersetzungsanbieter aus, der die Übersetzung durchzuführen soll. Ein Anbieter wird in der Liste angezeigt, wenn sein entsprechender Connector installiert ist.</td>
   </tr>
   <tr>
    <td>Inhaltskategorie</td>
@@ -171,7 +171,7 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Information
   </tr>
   <tr>
    <td>Metadaten übersetzen</td>
-   <td>Wählen Sie aus, um Asset-Metadaten zu übersetzen.</td>
+   <td>Wählen Sie diese Option aus, um Asset-Metadaten zu übersetzen.</td>
   </tr>
   <tr>
    <td>Tags übersetzen</td>
@@ -179,7 +179,7 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Information
   </tr>
   <tr>
    <td>Übersetzung automatisch durchführen</td>
-   <td>Wählen Sie diese Option, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen oder seinen Umfang zu ermitteln.</td>
+   <td>Wählen Sie diese Option aus, um Übersetzungsaufträge nach der Erstellung von Übersetzungsprojekten automatisch auszuführen. Bei dieser Option haben Sie keine Möglichkeit, den Übersetzungsauftrag zu prüfen oder seinen Umfang zu ermitteln.</td>
   </tr>
  </tbody>
 </table>
@@ -202,11 +202,11 @@ Um die Übersetzung Ihrer Quellseiten in andere Sprachen zu konfigurieren, verkn
 
 Beachten Sie, dass die Cloud-Konfiguration des Frameworks für die Übersetzungsintegration festlegt, mit welcher Cloud-Konfiguration die Verbindung mit dem Dienstleister hergestellt wird. Wenn Sie eine Quellseite mit der Cloud-Konfiguration eines Frameworks verknüpfen, muss die Seite mit der Cloud-Konfiguration des Dienstleisters verknüpft sein, die die Cloud-Konfiguration des Frameworks nutzt.
 
-Wenn Sie eine Seite mit einer Cloud-Konfiguration verknüpfen, erben die untergeordneten Elemente der Seite diese Verknüpfung. Wenn Sie beispielsweise die Seite /content/geometrixx/en/products mit einem Übersetzungsintegrations-Framework verknüpfen, werden die Seite Produkte und alle darunter liegenden Seiten gemäß dem Framework übersetzt.
+Wenn Sie eine Seite mit einer Cloud-Konfiguration verknüpfen, erben die untergeordneten Elemente der Seite diese Verknüpfung. Wenn Sie z. B. die Seite /content/geometrixx/en/products mit einem Framework für die Übersetzungsintegration verknüpfen, werden die Produktseite und alle untergeordneten Seiten entsprechend diesem Framework übersetzt.
 
 Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite überschreiben. Beispiel: Die Inhalte einer Website drehen sich größtenteils um das Thema Bekleidung. Ein Zweig an Seiten beschreibt dagegen das Unternehmen. Die Stammseite der Website ist mit einem Framework für die Übersetzungsintegration verknüpft, das vorgibt, dass maschinelle Übersetzung mit der Kategorie „Bekleidung“ angewendet werden soll. Der Zweig, der das Unternehmen beschreibt, nutzt dagegen ein Framework, bei dem maschinelle Übersetzung mit der Kategorie „Allgemein“ angewendet wird.
 
-Für alle Gemeinden [SCF-Komponenten](/help/communities/scf.md) Auf den Seiten bietet der benutzergenerierte Inhalt (UGC) Benutzern die Möglichkeit, Inhalte zu übersetzen. Weitere Informationen finden Sie unter [Übersetzung benutzergenerierter Inhalte](/help/communities/translate-ugc.md).
+Darüber hinaus steht bei allen [SCF-Komponenten](/help/communities/scf.md) von Communities auf den Seiten für benutzergenerierte Inhalte die Möglichkeit zur Verfügung, dass Benutzer Inhalte übersetzen können. Weitere Informationen finden Sie unter [Übersetzen von benutzergenerierten Inhalten](/help/communities/translate-ugc.md).
 
 ### Verknüpfen einer Seite mit einem Übersetzungsdienstleister {#associating-a-page-with-a-translation-provider}
 

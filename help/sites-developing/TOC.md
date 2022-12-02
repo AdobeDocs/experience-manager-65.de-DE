@@ -153,7 +153,7 @@ ht-degree: 100%
    + [SPA-Editor – Übersicht](spa-overview.md)
    + [SPA-Blueprint](spa-blueprint.md)
    + [SPA-Seitenkomponente](spa-page-component.md)
-   + [Dynamisches Modell für die Komponentenzuordnung   für SPA](spa-dynamic-model-to-component-mapping.md)
+   + [Dynamisches Modell für die Komponentenzuordnung für SPA](spa-dynamic-model-to-component-mapping.md)
    + [SPA-Modell-Routing](spa-routing.md)
    + [Die RemotePage-Komponente](spa-remote-page.md)
    + [Bearbeiten einer externen SPA in AEM](spa-edit-external.md)
@@ -243,7 +243,7 @@ ht-degree: 100%
    + [Testen der Benutzeroberfläche](https://experienceleague.adobe.com/docs/experience-manager-65/developing/components/hobbes.html?lang=de)
 + Best Practices{#bestpractices}
    + [Überblick über Best Practices](best-practices.md)
-   + [AEMEntwicklung – Richtlinien und Best Practices](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html?lang=de)
+   + [AEM Entwicklung – Richtlinien und Best Practices](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/dev-guidelines-bestpractices.html?lang=de)
    + [Best Practices für die Entwicklung](development-practices.md)
    + [Inhaltsarchitektur](content-architecture.md)
    + [Software-Architektur](software-architecture.md)

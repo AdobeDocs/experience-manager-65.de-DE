@@ -11,7 +11,7 @@ feature: Configuration
 source-git-commit: 8353e6fcc76dd63a0816babbe593f474abbc4508
 workflow-type: tm+mt
 source-wordcount: '260'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -21,17 +21,17 @@ Mithilfe von [Dynamic Media](https://business.adobe.com/de/products/experience-m
 
 >[!NOTE]
 >
->In dieser Dokumentation werden Dynamic Media-Funktionen beschrieben, die direkt in Adobe Experience Manager integriert sind. Wenn Sie Dynamic Media Classic in Experience Manager integriert verwenden, lesen Sie [Dokumentation zur Dynamic Media Classic-Integration](/help/sites-administering/scene7.md).
+>In dieser Dokumentation werden Dynamic Media-Funktionen beschrieben, die direkt in Adobe Experience Manager integriert sind. Bei einer Dynamic Media Classic-Integration in Experience Manager finden Sie weitere Informationen in der [Dokumentation zur Dynamic Media Classic-Integration](/help/sites-administering/scene7.md).
 >
->Siehe [Szenario für die doppelte Verwendung](/help/sites-administering/scene7.md#dual-use-scenario) für Fälle, in denen Sie Experience Manager verwenden möchten, das in Dynamic Media Classic gemeinsam mit Dynamic Media integriert ist.
+>Im [Szenario einer Doppelnutzung](/help/sites-administering/scene7.md#dual-use-scenario) sind Fälle beschrieben, in denen Sie die Verwendung einer Experience Manager-Version in Betracht ziehen sollten, die in Dynamic Media Classic und in Dynamic Media integriert ist.
 
 Wenn Sie Dynamic Media verwalten, sind für Sie die folgenden Themen interessant:
 
-* [Konfigurieren des Dynamic Media-/Scene7-Modus](config-dms7.md) - Verwenden Sie diese Konfiguration, wenn Sie ein neuer Dynamic Media-Kunde sind.
-* [Konfigurieren von Dynamic Media - Hybridmodus](config-dynamic.md) - Verwenden Sie diese Konfiguration, wenn Sie bereits ein Dynamic Media-Kunde sind und Experience Manager zum Aktualisieren sind.
+* [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md): Verwenden Sie diese Konfiguration, wenn Sie ein neuer Dynamic Media-Kunde sind.
+* [Konfigurieren von Dynamic Media - Hybridmodus](config-dynamic.md) - Verwenden Sie diese Konfiguration, wenn Sie bereits Dynamic Media-Kunde sind und auf Experience Manager aktualisieren.
 * [Verwalten von Bildvorgaben](managing-image-presets.md)
 * [Verwalten von Viewer-Vorgaben](managing-viewer-presets.md)
-* [Fehlerbehebung bei Dynamic Media - Scene7-Modus](troubleshoot-dms7.md)
+* [Problembehandlung in Dynamic Media – Scene7-Modus](troubleshoot-dms7.md)
 
 Weitere Informationen finden Sie in den folgenden Themen:
 
@@ -42,7 +42,7 @@ Weitere Informationen finden Sie in den folgenden Themen:
 >
 >**Beachten Sie Folgendes, wenn Sie ein Upgrade durchführen:**
 >
->* Sobald Sie Experience Manager eingerichtet haben und verwenden, ist Dynamic Media für jedes Asset, das Sie hochladen, automatisch aktiviert (sofern nicht ausdrücklich vom Systemadministrator deaktiviert). Wenn Sie sich auf einer aktualisierten Instanz von Experience Manager befinden und Dynamic Media noch nicht kennen, müssen Sie Ihre Assets erneut verarbeiten, damit sie für Dynamic Media aktiviert sind.
+>* Sobald Sie Experience Manager eingerichtet haben und verwenden, ist Dynamic Media für jedes Asset, das Sie hochladen, automatisch aktiviert (sofern nicht ausdrücklich vom Systemadministrator deaktiviert). Wenn Sie sich in einer aktualisierten Experience Manager-Instanz befinden und Dynamic Media noch nicht verwendet haben, müssen Sie die Assets erneut verarbeiten, um Dynamic Media für sie verwenden zu können.
 
 
 

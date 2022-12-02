@@ -14,7 +14,7 @@ exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
 source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
 workflow-type: tm+mt
 source-wordcount: '217'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -34,7 +34,7 @@ Die folgenden Seiten bieten schnellen Zugriff auf die Hauptbereiche des Content 
 
 * [Komponenten für die Seitenbearbeitung](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Komponenten, die zum Erstellen von Standardseiteninhalten verwendet werden, sind hauptsächlich in Gruppen enthalten **Allgemein**, **Spalten** und **Forms**.
+   Komponenten für die Erstellung von Standardseiteninhalt sind hauptsächlich in den Gruppen **Allgemein**, **Spalten** und **Formulare** enthalten.
 
 * [E-Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
 

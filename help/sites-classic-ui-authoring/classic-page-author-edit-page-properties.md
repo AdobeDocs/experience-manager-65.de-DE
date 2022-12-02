@@ -13,7 +13,7 @@ exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '763'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
    Ermöglicht die Eingabe einer Vanity-URL für diese Seite. Dadurch können Sie eine kürzere, ausdrucksstärkere URL verwenden.
 
-   Wenn die Vanity-URL beispielsweise auf w `elcome`zur Seite, die durch den Pfad identifiziert wird / `v1.0/startpage`für die Website h `ttp://example.com,` dann h `ttp://example.com/welcome`wäre die Vanity-URL von h `ttp://example.com/content/v1.0/startpage`
+   Beispiel: Wenn die Vanity-URL w`elcome` für die Seite mit dem Pfad /`v1.0/startpage` auf der Website h`ttp://example.com,` verwendet wird, wäre h`ttp://example.com/welcome` die Vanity-URL von h`ttp://example.com/content/v1.0/startpage`.
 
    >[!CAUTION]
    >
@@ -147,13 +147,13 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
       Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
 
-### Cloud Services {#cloud-services}
+### Cloud-Services {#cloud-services}
 
 * **Cloud Services**
 
    Legen Sie Eigenschaften für [Cloud-Services](/help/sites-developing/extending-cloud-config.md) fest.
 
-### Personalisierung    {#personalization}
+### Personalisierung  {#personalization}
 
 * **Personalisierung**
 
@@ -189,7 +189,7 @@ Durch Seiteneigenschaften werden verschiedene Parameter einer Seite festgelegt, 
 
 1. Öffnen Sie die zu bearbeitende Seite.
 
-1. Öffnen Sie im Sidekick die Registerkarte **Seite** und wählen Sie anschließend **Seiteneigenschaften...**
+1. Öffnen Sie im Sidekick die Registerkarte **Seite** und wählen Sie anschließend **Seiteneigenschaften...** aus.
 
    Ein Dialogfeld mit mehreren Registerkarten wird geöffnet.
 

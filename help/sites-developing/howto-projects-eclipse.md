@@ -13,7 +13,7 @@ exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '435'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -48,7 +48,7 @@ Installieren Sie Eclipse anhand der [Installationsanweisungen](https://wiki.ecli
 
 ## Einrichten Ihres AEM-Projekts auf Grundlage von Maven {#set-up-your-aem-project-based-on-maven}
 
-Richten Sie Ihr Projekt dann wie in beschrieben mit Maven ein. [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Richten Sie Ihr Projekt anschließend wie in [So erstellen Sie AEM-Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md) beschrieben mit Maven ein.
 
 ## Vorbereiten der JSP-Unterstützung für Eclipse {#prepare-jsp-support-for-eclipse}
 
@@ -59,12 +59,12 @@ Eclipse bietet darüber hinaus Unterstützung für die Arbeit mit JSP, z. B.
 
 Damit das funktioniert:
 
-1. Befolgen Sie die Anweisungen unter [Arbeiten mit JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
+1. Folgen Sie den Anweisungen im Abschnitt [So arbeiten Sie mit JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [So erstellen Sie AEM-Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
 1. Fügen Sie Folgendes zum &lt;build />-Abschnitt im POM Ihres Inhaltsmoduls hinzu.
 
    Das Eclipse-Plug-in zur Unterstützung von Maven, m2e, bietet keine Unterstützung für das Plug-in maven-jspc und diese Konfiguration weist m2e an, das Plug-in und die zugehörige Aufgabe zur Bereinigung der temporären Kompilierungsergebnisse zu ignorieren.
 
-   Dies ist kein Problem: wie angegeben [Arbeiten mit JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps), wird das maven-jspc-Plug-in in diesem Setup nur verwendet, um zu überprüfen, ob JSPs im Rahmen des Build-Prozesses kompiliert werden. Eclipse meldet sämtliche Probleme in JSPs bereits und ist dazu nicht von diesem Maven-Plug-in abhängig.
+   Dies stellt kein Problem dar, denn wie in [So arbeiten Sie mit JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) beschrieben, wird das maven-jspc-Plug-in bei dieser Konfiguration nur verwendet, um zu überprüfen, dass JSPs im Zuge des Build-Prozesses kompiliert werden. Eclipse meldet sämtliche Probleme in JSPs bereits und ist dazu nicht von diesem Maven-Plug-in abhängig.
 
    **myproject/content/pom.xml**
 
@@ -133,4 +133,4 @@ Damit das funktioniert:
 
    >[!NOTE]
    >
-   >Wenn Sie `/libs/foundation/global.jsp` oder anderen JSPs in `/libs`müssen Sie dies in Ihr Projekt kopieren, damit Eclipse die Einbindung auflösen kann. Zudem müssen Sie darauf achten, dass sie nicht von Maven in Ihr Inhaltspaket mit eingeschlossen werden. Wie Sie dies erreichen, wird unter [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
+   >Wenn Sie `/libs/foundation/global.jsp` oder andere JSPs in `/libs` einschließen, müssen Sie diese in Ihr Projekt kopieren, damit Eclipse sie auflösen kann. Zudem müssen Sie darauf achten, dass sie nicht von Maven in Ihr Inhaltspaket mit eingeschlossen werden. Weitere Informationen finden Sie unter [So erstellen Sie AEM-Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).

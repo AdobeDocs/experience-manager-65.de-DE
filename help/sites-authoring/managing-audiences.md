@@ -66,7 +66,7 @@ Arbeiten Sie mit mehr als einer Regel, werden diese Regeln durch den booleschen 
 
 >[!NOTE]
 >
->Wird die Option „Target-Zielgruppe erstellen“ im Menü **Erstellen** nicht angezeigt, verfügen Sie nicht über die nötigen Berechtigungen zum Erstellung von Zielgruppen. Sie müssen unter **/etc/segmentation** über Schreibrechte verfügen, um Zielgruppen erstellen zu können. Inhaltsautoren der Gruppe verfügen standardmäßig über Schreibrechte.
+>Wird die Option **Target-Zielgruppe erstellen** im Menü **Erstellen** nicht angezeigt, verfügen Sie nicht über die nötigen Berechtigungen zum Erstellung von Zielgruppen. Sie müssen unter **/etc/segmentation** über Schreibrechte verfügen, um Zielgruppen erstellen zu können. Inhaltsautoren der Gruppe verfügen standardmäßig über Schreibrechte.
 
 So erstellen Sie eine Adobe Target-Zielgruppe:
 
@@ -74,7 +74,7 @@ So erstellen Sie eine Adobe Target-Zielgruppe:
 
    ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. Klicken oder tippen Sie in der Konsole „Zielgruppen“ auf **Erstellen** und anschließend auf „Target-Zielgruppe erstellen“.
+1. Klicken oder tippen Sie in der Konsole „Zielgruppen“ auf **Erstellen** und anschließend auf **Target-Zielgruppe erstellen**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 

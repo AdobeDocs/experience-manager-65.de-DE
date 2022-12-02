@@ -13,7 +13,7 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1782'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Je nach Projekt kann der Layout-Container als standardmäßiges Absatzsystem fü
 
 >[!NOTE]
 >
->Die Verwendung des obigen Mechanismus wird durch die Konfiguration der Vorlage aktiviert. Siehe [Konfigurieren des responsiven Layouts](/help/sites-administering/configuring-responsive-layout.md) für weitere Informationen.
+>Die Verwendung des obigen Mechanismus wird durch die Konfiguration der Vorlage aktiviert. Weitere Informationen finden Sie unter [Konfigurieren des responsiven Layouts](/help/sites-administering/configuring-responsive-layout.md).
 
 ## Layout-Definitionen, Geräteemulation und Breakpoints {#layout-definitions-device-emulation-and-breakpoints}
 
@@ -133,7 +133,7 @@ Wenn Sie z. B. das Gerät **iPhone 6 Plus** für die Emulation und das Layout au
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
-   * Die gepunktete blaue Linie stellt den *Falz* für das ausgewählte Gerät dar (in diesem Fall ein **iPhone 6**).
+   * Die gepunktete blaue Linie stellt den *Falz* für das ausgewählte Gerät dar (in diesem Fall ein **iPhone 6**).
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
@@ -153,7 +153,7 @@ Ein **Layout-Container** ist ein Absatzsystem mit folgenden Eigenschaften:
 
 >[!NOTE]
 >
->Falls er noch nicht verfügbar ist, muss der **Layout-Container** explizit [für ein Absatzsystem/eine Seite aktiviert werden](/help/sites-administering/configuring-responsive-layout.md) (z. B. über den [**Designmodus**](/help/sites-authoring/default-components-designmode.md)).
+>Falls er noch nicht verfügbar ist, muss der **Layout-Container** explizit [für ein Absatzsystem/eine Seite aktiviert werden](/help/sites-administering/configuring-responsive-layout.md) (z. B. über den [**Design**-Modus](/help/sites-authoring/default-components-designmode.md)).
 
 1. Der **Layout-Container** ist als Standardkomponente im [Komponentenbrowser](/help/sites-authoring/author-environment-tools.md#components-browser) verfügbar. Von hier können Sie ihn an die gewünschte Position auf der Seite ziehen, nach der der Platzhalter **Komponenten hierher ziehen** angezeigt wird.
 1. Anschließend können Sie Komponenten zum Layout-Container hinzufügen. Diese Komponenten enthalten dann den eigentlichen Inhalt:
@@ -222,13 +222,13 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
 
 * Wenn Sie auf eine Inhaltskomponente klicken/tippen, bietet Ihnen die Symbolleiste folgende Möglichkeiten:
 
-   * **Übergeordnet**
+   * **Übergeordnetes Element**
 
-      Ermöglicht die Auswahl der gesamten Layout-Container-Komponente, damit Sie insgesamt Aktionen durchführen können.
+      Ermöglicht die Auswahl der gesamten Layout-Container-Komponente, um diese insgesamt zu bearbeiten.
 
-   * **Gleitkommawert in neue Zeile**
+   * **In neue Zeile verschieben**
 
-      Die Komponente wird in eine neue Zeile verschoben, abhängig vom im Raster verfügbaren Platz.
+      Die Komponente wird abhängig von dem innerhalb des Rasters verfügbaren Platz in eine neue Zeile verschoben.
 
    * **Komponente ausblenden**
 
@@ -243,7 +243,7 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster durchführen:
 
    ![](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Verborgene Komponenten anzeigen** - Alle oder einzelne Komponenten einblenden. Die Zahl gibt an, wie viele ausgeblendete Komponenten es derzeit gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
+   * **Ausgeblendete Komponenten anzeigen**: Blendet alle oder einzelne Komponenten ein. Die Zahl gibt an, wie viele ausgeblendete Komponenten es derzeit gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
 
    ![](do-not-localize/screen_shot_2018-03-23at091007.png)
 
@@ -268,8 +268,8 @@ Wählen Sie die übergeordneten Komponenten aus, um die Aktionssymbolleiste mit 
 Option **Ausgeblendete Komponenten anzeigen** anzuzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
    ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
-   Bei Auswahl der Option **Verborgene Komponenten einblenden** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.
+   Bei Auswahl der Option **Ausgeblendete Komponenten anzeigen** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.
 
    ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
 
-   Bei Auswahl der Option **Alle wiederherstellen** werden alle verborgenen Komponenten eingeblendet.
+   Bei Auswahl der Option **Alle wiederherstellen** werden alle ausgeblendeten Komponenten eingeblendet.

@@ -14,7 +14,7 @@ exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '432'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 79%
 
 Analysen können Ihnen wichtige und interessante Informationen darüber liefern, wie Ihre Website verwendet wird.
 
-Zur Integration mit dem entsprechenden Dienst stehen verschiedene vordefinierte Konfigurationen zur Verfügung, z. B.:
+Verschiedene vordefinierte Konfigurationen stehen Ihnen zur Integration in den entsprechenden Dienst zur Verfügung, zum Beispiel:
 
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
@@ -56,9 +56,9 @@ Diese Snippets ermöglichen die Erfassung von Daten und Generierung von Berichte
 
 >[!CAUTION]
 >
->Die Demosite &quot;Geometrixx-Outdoors&quot;ist so konfiguriert, dass die in den Seiteneigenschaften angegebenen Attribute an den HTML-Quellcode angehängt werden (direkt über dem `</html>` endtag) in der entsprechenden `js` Skript.
+>Die Demo-Site von Geometrixx-Outdoors ist so konfiguriert, dass die in den Seiteneigenschaften bereitgestellten Attribute dem HTML-Quell-Code (direkt über dem `</html>`-End-Tag) im entsprechenden `js`-Skript angehängt werden.
 >
->Wenn Ihre `/apps` nicht von der standardmäßigen Seitenkomponente übernehmen ( `/libs/foundation/components/page`) müssen Sie (oder Ihre Entwickler) sicherstellen, dass die entsprechenden `js` -Skripte enthalten sind, z. B. durch `cq/cloudserviceconfigs/components/servicescomponents`oder einen ähnlichen Mechanismus verwenden.
+>Wenn der eigene Ordner `/apps` nicht von der Standardseitenkomponente (`/libs/foundation/components/page`) übernommen wird, müssen Sie (oder Ihre Entwickler) sicherstellen, dass die entsprechenden `js`-Skripte enthalten sind, z. B. indem Sie `cq/cloudserviceconfigs/components/servicescomponents` einschließen oder einen ähnlichen Mechanismus verwenden.
 >
 >Ohne diese Komponente funktioniert keiner der Dienste (generisch, Analytics, Target usw.).
 
@@ -93,7 +93,7 @@ Nach der Erstellung der Dienstkonfiguration müssen Sie nun die erforderlichen S
    ![](assets/analytics_selectservice.png)
 
 1. Klicken Sie zum Speichern auf **OK**.
-1. Sie werden zur Registerkarte **Cloud-Services** zurückgeleitet. Die **Generisches Analytics-Snippet** wird jetzt mit der Meldung aufgeführt `Configuration reference missing`. Wählen Sie in der Dropdown-Liste die spezifische Dienstinstanz aus, zum Beispiel Google Analytics:
+1. Sie werden zur Registerkarte **Cloud-Services** zurückgeleitet. Der Dienst **Generisches Analyse-Snippet** wird nun mit der Meldung `Configuration reference missing` angezeigt. Wählen Sie in der Dropdown-Liste die spezifische Dienstinstanz aus, zum Beispiel Google Analytics:
 
    ![](assets/analytics_selectspecificservice.png)
 

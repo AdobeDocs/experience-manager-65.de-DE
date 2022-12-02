@@ -11,12 +11,12 @@ role: Architect
 source-git-commit: f29612ee633d2a62144b770f3c225fc82b9174f8
 workflow-type: tm+mt
 source-wordcount: '327'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
-# AEM 6.5 Bereitstellen des Benutzerhandbuchs {#deploying}
+# AEM 6.5-Bereitstellungshandbuch für Benutzer {#deploying}
 
 + [Bereitstellungshandbuch für Benutzer](home.md)
 + Einführung in die AEM-Plattform {#introduction}
@@ -53,10 +53,10 @@ ht-degree: 92%
    + [Ablauf statischer Objekte](expiration-static-objects.md)
    + [Versionsbereinigung](version-purging.md)
    + [Überwachung und Wartung der AEM-Instanz](monitoring-and-maintaining.md)
-   + [Abladung von Aufträgen](offloading.md)
+   + [Abladen von Aufträgen](offloading.md)
    + [Single Sign-On](single-sign-on.md)
    + [Ressourcenzuordnung](resource-mapping.md)
-   + [Aktivieren von HTTP über SSL](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ssl-by-default.html)
+   + [Aktivieren von HTTP über SSL](https://experienceleague.adobe.com/docs/experience-manager-65/administering/security/ssl-by-default.html?lang=de)
    + [Konsistenz- und Ausnahmeprüfungen](consistency-check.md)
    + [Leistungsrichtlinien](performance-guidelines.md)
    + [Leistungsoptimierung](configuring-performance.md)
@@ -72,7 +72,7 @@ ht-degree: 92%
    + [Durchführen einer In-Place-Aktualisierung](in-place-upgrade.md)
    + [Verwenden der Offline-Neuindizierung, um Ausfallzeiten während eines Upgrades zu reduzieren](upgrade-offline-reindexing.md)
    + [Lazy-Content-Migration](lazy-content-migration.md)
-   + [Verwendung des CRX2Oak-Migrationstools](using-crx2oak.md)
+   + [Verwendung des CRX2Oak-Migrations-Tools](using-crx2oak.md)
    + [Wartungsaufgaben vor einer Aktualisierung](pre-upgrade-maintenance-tasks.md)
    + [Prüfungen und Fehlerbehebung nach einer Aktualisierung](post-upgrade-checks-and-troubleshooting.md)
    + [Aktualisieren von benutzerdefinierten Suchformularen](upgrading-custom-search-forms.md)

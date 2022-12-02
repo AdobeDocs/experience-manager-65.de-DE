@@ -13,7 +13,7 @@ feature: Publishing,Configuration
 source-git-commit: a78de999992d4ab2fc63b5f7e796aa0d5527cb26
 workflow-type: tm+mt
 source-wordcount: '732'
-ht-degree: 60%
+ht-degree: 98%
 
 ---
 
@@ -35,7 +35,7 @@ Auf der folgenden Website werden HTTP/2 und seine Vorteile kurz und einfach besc
 
 ## Was sind die wichtigsten Vorteile der Umstellung auf die Bereitstellung von Inhalt über HTTP/2? {#what-are-the-key-benefits-of-moving-to-http-for-content-delivery}
 
-Die Leistungsverbesserung kann stark variieren. Er basiert auf vielen Faktoren, wie dem Code Ihrer Website, der Verwendung von Dynamic Media, dem Gerät, dem Bildschirm und dem Standort des Verbrauchers.
+Die Leistungsverbesserung kann stark variieren. Sie basiert auf vielen Faktoren, wie dem Code Ihrer Website, der Verwendung von Dynamic Media, dem Gerät, dem Bildschirm und dem Standort des Verbrauchers.
 
 Von Adobe durchgeführte Prüfungen führten zu folgenden Ergebnissen:
 
@@ -52,41 +52,41 @@ Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfül
 
 * Sie verwenden sicheres HTTPS für Ihre Rich Media-Anforderungen.
 * Sie verwenden das von Adobe gebündelte CDN (Content Delivery Network) als Teil Ihrer Dynamic Media-Lizenz.
-* Sie verwenden eine dedizierte (non- company-h.assetsadobe#.com) Domäne.
+* Sie verwenden eine dedizierte (non- company-h.assetsadobe#.com) Domain.
 
-   Wenn Sie bereits über eine dedizierte Domäne verfügen, können Sie sich über den Adobe-Support anmelden.
+   Wenn Sie bereits über eine dedizierte Domain verfügen, können Sie sich über den Kunden-Support von Adobe anmelden.
 
-   Wenn Sie nicht über eine dedizierte Domäne verfügen, plant Adobe, den Übergang zu HTTP/2 für 2018 zu planen.
+   Wenn Sie nicht über eine dedizierte Domain verfügen, wird Adobe Ihre Umstellung auf HTTP/2 für 2018 einplanen.
 
 ## Wie verläuft der Prozess für die Aktivierung von HTTP/2 für mein Dynamic Media-Konto? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
-Sie initiieren die Anfrage zum Umschalten auf HTTP/2. wird nicht automatisch für Sie durchgeführt.
+Sie müssen den Wechsel auf HTTP/2 beantragen, da er nicht automatisch erfolgt.
 
-1. Um zu HTTP/2 zu wechseln, starten Sie eine Anfrage an den Adobe-Support. Siehe [Support-Ticket öffnen](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
+1. Um zu HTTP/2 zu wechseln, starten Sie eine Anfrage an den Kunden-Support von Adobe. Siehe [Support-Ticket öffnen](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
 
    1. In der Anfrage geben Sie folgende Informationen an:
 
       1. Name des Hauptansprechpartners, E-Mail, Telefon.
-      1. Alle Domänen, die auf HTTP/2 umgestellt werden sollen.
-      1. Stellen Sie sicher, dass Sie sichere HTTPS für Rich-Media-Anforderungen verwenden.
-      1. Vergewissern Sie sich, dass Sie das CDN über Adobe verwenden und nicht mit einer direkten Beziehung verwaltet werden.
-      1. Stellen Sie sicher, dass Sie eine dedizierte Domäne verwenden. Wenn Sie Dynamic Media verwenden, verwenden Sie eine dedizierte Domäne.
-   1. Der Support fügt Sie zur HTTP/2-Kundenwarteschlange hinzu, die auf der Reihenfolge basiert, in der die Anfragen gesendet wurden.
+      1. Alle Domains, die auf HTTP/2 umgestellt werden sollen.
+      1. Vergewissern Sie sich, dass Sie sicheres HTTPS für Rich-Media-Anforderungen verwenden.
+      1. Stellen Sie sicher, dass Sie das CDN über Adobe und nicht über eine direkte Beziehung verwenden.
+      1. Stellen Sie sicher, dass Sie eine dedizierte Domain verwenden. Wenn Sie Dynamic Media verwenden, verfügen Sie bereits über eine dedizierte Domain.
+   1. Der Kunden-Support fügt Sie entsprechend der Reihenfolge der eingegangenen Anfragen der HTTP/2-Kundenwarteschlange hinzu.
    1. Wenn Adobe für die Bearbeitung Ihrer Anfrage bereit ist, setzt sich der Support mit Ihnen in Verbindung, um die Umstellung zu koordinieren und ein Zieldatum festzulegen.
-   1. Sie werden nach Abschluss benachrichtigt und können den erfolgreichen Übergang zu HTTP2 überprüfen.
+   1. Nach Abschluss werden Sie benachrichtigt, wonach Sie prüfen können, ob die Umstellung auf HTTP/2 erfolgreich durchgeführt wurde.
 
       Da der Browser nicht auf diese Tatsache hinweist, muss eine Erweiterung heruntergeladen werden.
 
-      Für Firefox und Chrome gibt es eine Erweiterung namens &quot;HTTP/2 and SPDY Indicator&quot;. Da Browser HTTP/2 nur bei sicheren Verbindungen unterstützen, muss für die Verifizierung eine URL mit https aufgerufen werden. Wenn http/2 unterstützt wird, wird dies durch die Erweiterung in Form eines blauen Flash-Symbols und der Kopfzeile &quot;X-Firefox-Spdy&quot;angezeigt: &quot;h2&quot;.
+      Für Firefox und Chrome gibt es eine Erweiterung namens „HTTP/2 and SPDY Indicator“. Da Browser HTTP/2 nur bei sicheren Verbindungen unterstützen, muss für die Verifizierung eine URL mit https aufgerufen werden. Wenn HTTP/2 unterstützt wird, wird dies durch die Erweiterung in Form eines blauen Flash-Symbols und die Kopfzeile „X-Firefox-Spdy“ : „h2“ angezeigt.
 
 
 ## Wann kann ich mit der Umstellung auf HTTP/2 rechnen? {#when-can-i-expect-to-be-transitioned-over-to-http}
 
-Anfragen werden in der Reihenfolge verarbeitet, in der sie beim Support eingehen.
+Anfragen werden in der Reihenfolge verarbeitet, in der sie beim Kunden-Support eingehen.
 
 >[!NOTE]
 >
->Es kann eine lange Vorlaufzeit geben, da beim Übergang zu HTTP/2 der Cache geleert werden muss. Es können daher nur wenige Umstellungen zugleich durchgeführt werden.
+>Die Vorlaufzeit kann lang sein, da die Umstellung auf HTTP/2 die Löschung des Cache erfordert. Es können daher nur wenige Umstellungen zugleich durchgeführt werden.
 
 ## Welche Risiken sind mit der Umstellung auf HTTP/2 verbunden? {#what-are-the-risks-with-moving-to-http}
 
@@ -98,4 +98,4 @@ Der nicht zwischengespeicherte Inhalt wird direkt an die ursprünglichen Server 
 
 Da der Browser nicht auf diese Tatsache hinweist, muss eine Erweiterung heruntergeladen werden.
 
-Für Firefox und Chrome gibt es eine Erweiterung namens &quot;HTTP/2 and SPDY Indicator&quot;. Da Browser HTTP/2 nur bei sicheren Verbindungen unterstützen, muss für die Verifizierung eine URL mit https aufgerufen werden. Wenn http/2 unterstützt wird, wird dies durch die Erweiterung in Form eines blauen Flash-Symbols und einer Kopfzeile angezeigt `X-Firefox-Spdy` : `h2`.
+Für Firefox und Chrome gibt es eine Erweiterung namens „HTTP/2 and SPDY Indicator“. Da Browser HTTP/2 nur bei sicheren Verbindungen unterstützen, muss für die Verifizierung eine URL mit https aufgerufen werden. Wenn HTTP/2 unterstützt wird, wird dies durch die Erweiterung in Form eines blauen Flash-Symbols und die Kopfzeile `X-Firefox-Spdy` : `h2` angezeigt.

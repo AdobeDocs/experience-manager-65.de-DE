@@ -6,15 +6,15 @@ exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
 source-wordcount: '1957'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API {#content-fragments-support-in-aem-assets-http-api}
 
-| Version | Artikellink |
+| Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=en) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/assets-api-content-fragments.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 
@@ -33,7 +33,7 @@ Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-H
 
 Die [Assets-REST-API](/help/assets/mac-api-assets.md) ermöglicht Entwicklern von Adobe Experience Manager den direkten Zugriff auf (in AEM gespeicherte) Inhalte über die HTTP-API über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen).
 
-Mit der API können Sie Adobe Experience Manager als Headless-CMS (Content Management System) betreiben, indem Sie Content Services für eine JavaScript-Frontend-Anwendung bereitstellen. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann.
+Die API ermöglicht es Ihnen, Adobe Experience Manager als Headless-CMS (Content-Management-System) auszuführen, indem Sie einem JavaScript-Frontend-Programm Inhalts-Services bereitstellen. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann.
 
 Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPA), die über die HTTP-API bereitgestellten Inhalte häufig im JSON-Format.
 
@@ -152,7 +152,7 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >Weitere Informationen finden Sie unter:
 >
 >* [Erklärung: CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de)
->* [Video: Entwicklung für CORS mit AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html)
+>* [Video: Entwicklung für CORS mit AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=de)
 >
 
 
@@ -202,7 +202,7 @@ Die Antwort enthält Paging-Informationen im Bereich `properties` der SIREN-Ausg
 
 ### Ordner {#folders}
 
-Ordner dienen als Container für Assets und andere Ordner. Ihre Struktur entspricht den Inhaltsrepositorys von AEM.
+Ordner dienen als Container für Assets und andere Ordner. Ihre Struktur entspricht den Inhalts-Repositorys von AEM.
 
 Die Assets-REST-API gewährt Zugriff auf die Eigenschaften eines Ordners, z. B. Name, Titel, usw. Assets werden als untergeordnete Entitäten von Ordnern und Unterordnern bereitgestellt.
 
@@ -256,11 +256,11 @@ Die Verwendung unterscheidet sich je nachdem, ob Sie eine AEM-Autoren- oder Ver�
 
 >[!CAUTION]
 >
->Die Dispatcher-Konfiguration auf AEM Instanzen blockiert möglicherweise den Zugriff auf `/api`.
+>Die Dispatcher-Konfiguration auf AEM-Instanzen blockiert möglicherweise den Zugriff auf `/api`.
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie in der [API-Referenz](/help/assets/assets-api-content-fragments.md#api-reference). Besonders interessant: [Adobe Experience Manager Assets API – Inhaltsfragmente](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
+>Weitere Informationen finden Sie in der [API-Referenz](/help/assets/assets-api-content-fragments.md#api-reference). Besonders interessant: [Adobe Experience Manager Assets API – Inhaltsfragmente](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/assets-api-content-fragments/index.html).
 
 ### Lesen/Bereitstellen {#read-delivery}
 
@@ -327,6 +327,8 @@ Wird zurückgegeben, wenn:
    * ein Inhaltsfragment per `POST` erstellt wurde
 
 * **404** (Nicht gefunden)
+
+
 Wird zurückgegeben, wenn:
 
    * das angeforderte Inhaltsfragment nicht vorhanden ist

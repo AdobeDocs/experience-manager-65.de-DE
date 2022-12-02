@@ -14,7 +14,7 @@ exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1758'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 96%
 >[!NOTE]
 >
 >Adobe plant nicht, die E-Mail-Verfolgung von über den AEM-SMTP-Dienst gesendeten offenen/zurückgesendeten (nicht zustellbaren) Nachrichten weiter auszubauen.
-> Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
 E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus bestehendem AEM-Inhalt erstellen und neue für die Newsletter spezifische Inhalte hinzufügen.
 
@@ -72,19 +72,26 @@ In diesem Dokument werden die Grundlagen der Newslettererstellung in AEM erläut
 
    ![mcm_newnewsletterdialog](assets/mcm_newnewsletterdialog.png)
 
-   * **Absendername** Der Name, der als Absender des Newsletters angezeigt werden soll.
+   * **Absendername**
+Der Name, der als Absender des Newsletters angezeigt werden soll.
 
-   * **Absenderadresse** Die E-Mail-Adresse, die als Absender des Newsletters angezeigt werden soll.
+   * **Absenderadresse**
+Die E-Mail-Adresse, die als Absender des Newsletters angezeigt werden soll.
 
-   * **Betreff** Der Betreff des Newsletters.
+   * **Betreff**
+Der Betreff des Newsletters.
 
-   * **Antwort an** Die E-Mail-Adresse, an die Antworten auf den gesendeten Newsletter gerichtet werden sollen.
+   * **Antwort an**
+Die E-Mail-Adresse, an die Antworten auf den gesendeten Newsletter gerichtet werden sollen.
 
-   * **Beschreibung** Beschreibung des Newsletters.
+   * **Beschreibung**
+Beschreibung des Newsletters.
 
-   * **Einschaltzeit** Die Einschaltzeit für den Versand des Newsletters.
+   * **Einschaltzeit**
+Die Einschaltzeit für den Versand des Newsletters.
 
-   * **Standard-Empfängerliste** Standardliste der Empfänger, die den Newsletter erhalten sollen.
+   * **Standard-Empfängerliste**
+Standardliste der Empfänger, die den Newsletter erhalten sollen.
    Sie können in größerem Umfang im Dialogfeld **Eigenschaften...** aktualisiert werden.
 
 1. Klicken Sie zum Speichern auf **OK**.
@@ -95,7 +102,7 @@ Sie können Ihrem Newsletter wie bei jeder anderen AEM-Komponente Inhalt hinzuf�
 
 1. Klicken Sie im MCM auf die Registerkarte **Kampagnen** und doppelklicken Sie dann auf den Newsletter, dem Sie Inhalt hinzufügen möchten oder dessen Inhalt Sie bearbeiten möchten. Der Newsletter wird geöffnet.
 
-1. Wenn keine Komponenten sichtbar sind, gehen Sie zur Designansicht und aktivieren Sie die erforderlichen Komponenten (z.&amp;nbsp;B. die Newsletter-Komponente), bevor Sie mit der Bearbeitung beginnen.
+1. Wenn keine Komponenten sichtbar sind, gehen Sie zur Designansicht und aktivieren Sie die erforderlichen Komponenten (z. B. die Newsletter-Komponente), bevor Sie mit der Bearbeitung beginnen.
 1. Geben Sie wie erforderlich neuen Text, neue Bilder oder andere Komponenten ein. Im Geometrixx-Beispiel stehen 4 Komponenten zur Verfügung: „Text“, „Bild“, „Überschrift“ und „2 Spalten“. Ihr Newsletter kann mehr oder weniger Komponenten enthalten, je nachdem wie Sie ihn eingerichtet haben.
 
    >[!NOTE]
@@ -132,7 +139,7 @@ So personalisieren Sie einen Newsletter und simulieren das Erscheinungsbild:
 
 >[!NOTE]
 >
->Prüfen Sie vor dem Versand von Newslettern die OSGi-Konfiguration für Day CQ Link Externalizer unter `https://localhost:4502/system/console/configMgr`.
+>Prüfen Sie vor dem Versenden eines Newsletters die OSGi-Konfiguration für Day CQ Link Externalizer unter `https://localhost:4502/system/console/configMgr`.
 >
 >Der Wert des Parameters ist standardmäßig `localhost:4502` und der Vorgang kann nicht abgeschlossen werden, wenn der Port für die aktive Instanz geändert wird.
 
@@ -164,7 +171,7 @@ Um zwischen den Clients zu wechseln und den Newsletter in einem anderen E-Mail-C
 Auch wenn nur berechtigte Benutzer einen Newsletter versenden können, sollten Sie Folgendes anpassen:
 
 * Den Betreff, damit Benutzer auch geneigt sind, Ihre E-Mail zu öffnen und um sicherzustellen, dass Ihr Newsletter nicht als Spam markiert wird.
-* Die Von-Adresse, z.&amp;nbsp;B. noreply@geometrixx.com, damit Benutzer die E-Mail von einer bestimmten Adresse erhalten.
+* Die Von-Adresse, z. B. noreply@geometrixx.com, damit Benutzer die E-Mail von einer bestimmten Adresse erhalten.
 
 So passen Sie die Newsletter-Einstellungen an:
 
@@ -214,13 +221,13 @@ So führen Sie einen Testlauf für Newsletter durch:
 >[!NOTE]
 >
 >Adobe plant nicht, die E-Mail-Verfolgung von über den AEM-SMTP-Dienst gesendeten offenen/zurückgesendeten (nicht zustellbaren) Nachrichten weiter auszubauen.
-> Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
 Sie können einen Newsletter entweder aus dem Newsletter selbst oder aus der Liste versenden. Beide Methoden werden im Folgenden beschrieben.
 
 >[!NOTE]
 >
->Prüfen Sie vor dem Versand von Newslettern die OSGi-Konfiguration für Day CQ Link Externalizer unter `https://localhost:4502/system/console/configMgr`.
+>Prüfen Sie vor dem Versenden eines Newsletters die OSGi-Konfiguration für Day CQ Link Externalizer unter `https://localhost:4502/system/console/configMgr`.
 >
 >Der Wert des Parameters ist standardmäßig `localhost:4502` und der Vorgang kann nicht abgeschlossen werden, wenn der Port für die aktive Instanz geändert wird.
 
@@ -236,7 +243,7 @@ So versenden Sie einen Newsletter aus einer Kampagne:
 
    >[!NOTE]
    >
-   >Stellen Sie vor dem Senden sicher, dass Sie den Betreff und die Absender-E-Mail-Adresse durch [Anpassung der Einstellungen](#customizing-newsletter-settings) personalisiert haben.
+   >Stellen Sie vor dem Senden sicher, dass Sie den Betreff und die Absender-E-Mail-Adresse durch [Anpassen der Einstellungen](#customizing-newsletter-settings) personalisiert haben.
    >
    >
    >Vor dem Versenden des Newsletters wird ein [Newsletter-Testlauf](#flight-testing-newsletters) empfohlen.
@@ -263,7 +270,7 @@ So versenden Sie einen Newsletter aus einer Liste:
 
    >[!NOTE]
    >
-   >Stellen Sie vor dem Senden sicher, dass Sie den Betreff und die Absender-E-Mail-Adresse durch [Anpassung der Einstellungen](#customizing-newsletter-settings) personalisiert haben. Sie können einen Newsletter nicht testen, wenn Sie ihn aus der Liste versenden. Sie können nur dann einen [Testlauf](#flight-testing-newsletters) durchführen, wenn Sie ihn aus dem Newsletter versenden.
+   >Stellen Sie vor dem Senden sicher, dass Sie den Betreff und die Absender-E-Mail-Adresse durch [Anpassen der Einstellungen](#customizing-newsletter-settings) personalisiert haben. Sie können einen Newsletter nicht testen, wenn Sie ihn aus der Liste versenden. Sie können nur dann einen [Testlauf](#flight-testing-newsletters) durchführen, wenn Sie ihn aus dem Newsletter versenden.
 
 1. Aktivieren Sie das Kontrollkästchen neben der Liste der Leads, an die Sie den Newsletter senden möchten.
 

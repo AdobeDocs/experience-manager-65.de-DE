@@ -209,7 +209,7 @@ Die Ausführung von Adobe Experience Manager in einer virtuellen Maschine in Clo
 
 Für eine Cloud-native Umgebung sollten Sie sich das neueste Angebot aus der AEM-Produktlinie ansehen: Adobe Experience Manager as a Cloud Service. Weitere Informationen finden Sie in der [Dokumentation zu Adobe Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=de).
 
-Adobe bietet auch Adobe Managed Services an, um AEM auf Azure oder AWS bereitzustellen. Adobe Managed Services liefert die Erfahrung und Kenntnisse, die Experten zur Bereitstellung und Ausführung von AEM in diesen Cloud-Computing-Umgebungen benötigen. Siehe [Zusätzliche Dokumentation zu Adobe Managed Services](https://business.adobe.com/de/products/experience-manager/managed-services.html?aemClk=t).
+Adobe bietet auch Adobe Managed Services an, um AEM auf Azure oder AWS bereitzustellen. Adobe Managed Services liefert die Erfahrung und Kenntnisse, die Experten zur Bereitstellung und Ausführung von AEM in diesen Cloud-Computing-Umgebungen benötigen. Siehe [Zusätzliche Dokumentation zu Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 
 In allen anderen Fällen, in denen AEM auf Azure, AWS oder in einer anderen Cloud-Computing-Umgebung bereitgestellt wird, beschränkt sich die Unterstützung von Adobe auf die virtuelle Computing-Umgebung im Einklang mit den auf dieser Seite genannten technischen Anforderungen. Für die Ausführung von AEM in einer dieser Cloud-Umgebungen gemeldete Probleme müssen unabhängig von einem für diese Cloud-Computing-Umgebung spezifischen Cloud-Service reproduzierbar sein, es sei denn, der Cloud-Service wird explizit als Teil der auf dieser Seite genannten technischen Anforderungen unterstützt, beispielsweise Azure Blob Storage oder AWS S3.
 
@@ -217,7 +217,7 @@ Für die Bereitstellung von AEM auf Azure oder AWS ohne Adobe Managed Services w
 
 ### Dispatcher-Plattformen (Webserver) {#dispatcher-platforms-web-servers}
 
-Beim Dispatcher handelt es sich um eine Zwischenspeicherungs- und Lastenausgleichskomponente. [Laden Sie die neueste Dispatcher-Version herunter](https://helpx.adobe.com/de/experience-manager/dispatcher/release-notes.html). Für Experience Manager 6.5 ist die Dispatcher-Version 4.3.2 oder höher erforderlich.
+Beim Dispatcher handelt es sich um eine Zwischenspeicherungs- und Lastenausgleichskomponente. [Laden Sie die neueste Dispatcher-Version herunter](https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html). Für Experience Manager 6.5 ist die Dispatcher-Version 4.3.2 oder höher erforderlich.
 
 Die folgenden Webserver werden für die Verwendung mit der Dispatcher-Version 4.3.2 unterstützt:
 
@@ -303,7 +303,7 @@ Die AEM-Benutzeroberfläche ist für die Verwendung auf größeren Bildschirmen 
  </tbody>
 </table>
 
-1. Erweiterte Supportversion von Firefox: [Weitere Informationen darüber finden Sie auf mozilla.org](https://www.mozilla.org/en-US/firefox/organizations/faq/)
+1. Erweiterte Supportversion von Firefox: [Weitere Informationen darüber finden Sie auf mozilla.org](https://www.mozilla.org/de-DE/firefox/organizations/faq/)
 1. Unterstützung für Apple iPad 
 
 ### Unterstützte Browser für Websites {#supported-browsers-for-websites}
@@ -345,7 +345,8 @@ zum Beispiel `https://123.1.1.4:4502`
 * einem Servernamen,
 zum Beispiel `https://www.yourserver.com:4502`
 
-* Der Standardfall von `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen interpretiert, zum Beispiel `https://localhost:4502`.
+* Der Standardfall von `localhost` wird für IPv4- und IPv6-Netzwerkinstallationen interpretiert,
+zum Beispiel `https://localhost:4502`.
 
 ### Anforderungen für das Add-on AEM Dynamic Media {#requirements-for-aem-dynamic-media-add-on}
 
@@ -357,7 +358,7 @@ Wenn Dynamic Media aktiviert ist, gelten die folgenden zusätzlichen technischen
 >
 >Diese **Systemanforderungen** gelten, wenn Sie den Modus „Dynamic Media –Hybrid“ verwenden. Der Modus „Dynamic Media –Hybrid“ verfügt über einen eingebetteten Bildserver, der nur für bestimmte Betriebssysteme zertifiziert ist.
 >
->Für Dynamic Media-Kunden, die den Modus „Dynamic Media - Scene7“ ausführen (d. h. Ausführungsmodus **dynamicmedia_scene7**) gelten keine weiteren Systemanforderungen. Es gelten dieselben Systemanforderungen wie für AEM. Die Architektur des Dynamic Media Scene 7-Modus verwendet den Cloud-basierten Bilddienst und nicht den in AEM eingebetteten Dienst.
+>Für Dynamic Media-Kunden, die den Modus „Dynamic Media - Scene7“ ausführen (d. h. Ausführungsmodus **dynamicmedia_scene7**) gelten keine weiteren Systemanforderungen. Es gelten dieselben Systemanforderungen wie für AEM. Die Architektur des Dynamic Media Scene7-Modus verwendet den Cloud-basierten Bilddienst und nicht den in AEM eingebetteten Dienst.
 
 #### Hardware {#hardware}
 
@@ -518,7 +519,7 @@ Windows x86:
 * Acrobat Pro DC, Acrobat Standard DC oder Adobe Acrobat Reader DC.
 * Administratorrechte für die Installation von Designer.
 
-### Anforderungen für das Zurückschreiben von XMP-Metadaten der AEM-Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
+### Anforderungen für das Zurückschreiben von XMP-Metadaten der AEM Assets {#requirements-for-aem-assets-xmp-metadata-write-back}
 
 Die XMP-Zurückschreibung wird für die folgenden Plattformen und Dateiformate unterstützt und aktiviert:
 

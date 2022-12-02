@@ -5,13 +5,13 @@ exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Authoring für Headless mit AEM – Einführung {#author-headless-introduction}
 
-In diesem Teil des [AEM Headless Content Author-Journey](overview.md)können Sie sich mit den (grundlegenden) Konzepten und der Terminologie vertraut machen, die zum Verständnis des Authoring-Inhalts für die Headless Content-Bereitstellung mit Adobe Experience Manager (AEM) erforderlich sind.
+In diesem Teil der [AEM Headless-Inhaltsautoren-Tour](overview.md) können Sie sich mit den (grundlegenden) Konzepten und der erforderlichen Terminologie vertraut machen, um die Erstellung von Inhalten für die Headless-Inhaltsbereitstellung mit Adobe Experience Manager (AEM) zu verstehen..
 
 ## Ziel {#objective}
 
@@ -59,7 +59,7 @@ Das bedeutet, dass Ihre Inhalte eine breite Palette von Geräten in einer Vielza
 
 Die Inhaltsmodellierung (auch als Datenmodellierung bezeichnet) ist ein weiterer technischer Begriff. Warum sollte sie Sie als Autor interessieren?
 
-Damit die Headless-Anwendungen auf Ihre Inhalte zugreifen und etwas damit anfangen können, muss Ihr Inhalt wirklich über eine vordefinierte Struktur verfügen. Es wäre möglich, Ihre Inhalte in freier Form zu gestalten, aber das würde das Leben für die Anwendungen *sehr* kompliziert machen.
+Damit die Headless-Anwendungen auf Ihre Inhalte zugreifen und etwas damit anfangen können, muss Ihr Inhalt wirklich über eine vordefinierte Struktur verfügen. Es wäre möglich, Ihre Inhalte frei zu gestalten, aber das würde das Leben für die Anwendungen *sehr* kompliziert machen.
 
 Grundsätzlich umfasst der Prozess der Definition der Struktur für Ihre Inhalte das Entwerfen eines Modells – das als Datenmodellierung bezeichnet wird.
 
@@ -76,7 +76,7 @@ Jetzt, da Sie die Konzepte und Terminologie gelernt haben, lautet der nächste S
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * AEM Headless-Entwickler-Tour
-   * [Weitere Infos zur CMS-Headless-Entwicklung](/help/journey-headless/developer/learn-about.md)
+   * [Grundlegendes zur CMS-Headless-Entwicklung](/help/journey-headless/developer/learn-about.md)
 
 * [AEM Headless-Inhaltsarchitekten-Tour](/help/journey-headless/architect/overview.md)
 

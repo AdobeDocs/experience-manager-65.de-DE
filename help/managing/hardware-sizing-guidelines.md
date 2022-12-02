@@ -14,15 +14,15 @@ exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2816'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
 # Hardware-Skalierungsrichtlinien{#hardware-sizing-guidelines}
 
-Diese Skalierungsrichtlinien bieten eine Annäherung an die Hardware-Erfordernisse, die für die Implementierung eines AEM-Projekts erforderlich sind. Die Größenschätzungen hängen von der Architektur des Projekts, der Komplexität der Lösung, dem erwarteten Traffic und den Projektanforderungen ab. Dieser Leitfaden hilft Ihnen, den Hardwarebedarf für eine bestimmte Lösung zu ermitteln oder eine obere und untere Schätzung für die Hardwareanforderungen zu finden.
+Diese Skalierungsrichtlinien bieten eine Annäherung an die Hardware-Erfordernisse, die für die Implementierung eines AEM-Projekts erforderlich sind. Die Schätzung der Größe hängt von der Architektur des Projekts, der Komplexität der Lösung, dem erwarteten Traffic-Volumen und den Projektanforderungen ab. Dieser Leitfaden hilft Ihnen, den Hardwarebedarf für eine bestimmte Lösung zu ermitteln oder eine obere und untere Schätzung für die Hardwareanforderungen zu finden.
 
-Zu berücksichtigende Grundfaktoren sind (in dieser Reihenfolge):
+Grundlegende Faktoren sind (in dieser Reihenfolge):
 
 * **Netzwerkgeschwindigkeit**
 
@@ -52,14 +52,14 @@ Zu berücksichtigende Grundfaktoren sind (in dieser Reihenfolge):
 
 ## Architektur {#architecture}
 
-Ein typisches AEM-Setup besteht aus einer Autoren- und einer Veröffentlichungsumgebung. Diese Umgebungen haben unterschiedliche Anforderungen bezüglich der zugrunde liegenden Hardwaregröße und der Systemkonfiguration. Detaillierte Überlegungen zu beiden Umgebungen finden Sie im Abschnitt [Autorenumgebung](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) und [Veröffentlichungsumgebung](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) Abschnitte.
+Ein typisches AEM-Setup besteht aus einer Autoren- und einer Veröffentlichungsumgebung. Diese Umgebungen haben unterschiedliche Anforderungen bezüglich der zugrunde liegenden Hardwaregröße und der Systemkonfiguration. Detaillierte Überlegungen zu beiden Umgebungen finden sich in den Abschnitten [Autorenumgebung](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) und [Veröffentlichungsumgebung](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations).
 
 In einem typischen Projekt-Setup stehen Ihnen mehrere Umgebungen zur Verfügung, in denen Sie Projektphasen inszenieren können:
 
-* **Entwicklungsumgebung** Um neue Funktionen zu entwickeln oder wesentliche Änderungen vorzunehmen. Best Practice ist, mit einer Entwicklungsumgebung pro Entwickler zu arbeiten (normalerweise lokale Installationen auf ihren persönlichen Systemen).
+* **Entwicklungsumgebung** Um neue Funktionen zu entwickeln oder wesentliche Änderungen vorzunehmen. Am besten arbeitet man mit einer Entwicklungsumgebung pro Entwickler (in der Regel lokale Installationen auf dem individuellen System).
 
-* **Autorentestumgebung**
-Um Änderungen zu überprüfen. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
+* **Autoren-Testumgebung**
+Um Änderungen zu verifizieren. Die Anzahl der Testumgebungen kann je nach Projektanforderungen variieren (z. B. getrennt für QA, Integrationstests oder Benutzerakzeptanztests).
 
 * **Veröffentlichungs-Testumgebung** Hauptsächlich zum Testen von Anwendungsfällen der Zusammenarbeit in sozialen Netzwerken und/oder der Interaktion zwischen Autor und mehreren Veröffentlichungsinstanzen.
 
@@ -77,7 +77,7 @@ Performance-Optimierung ist eine grundlegende Aufgabe, die durchgeführt werden 
 
 Hardware-Skalierung für fortgeschrittene Anwendungsfälle sollte auf einer detaillierten Leistungsbewertung des Projekts basieren. Zu den Merkmalen fortgeschrittener Anwendungsfälle, die außergewöhnliche Hardware-Ressourcen erfordern, gehören Kombinationen von:
 
-* hohe Nutzlast/Durchsatzleistung
+* hohe Payload/Durchsatzleistung
 * umfangreicher Einsatz von kundenspezifischem Code, eigenen Workflows oder Softwarebibliotheken von Drittanbietern
 * Integration mit nicht unterstützten externen Systemen
 
@@ -110,12 +110,12 @@ Eine ausfallsichere Website wird auf mindestens zwei getrennten Systemen eingese
 
 **Skalierbarkeit der Systemressourcen**
 
-Während alle Systeme laufen, steht eine erhöhte Rechenleistung zur Verfügung. Diese zusätzliche Leistung ist nicht unbedingt linear mit der Anzahl der Clusterknoten, da die Beziehung in hohem Maße von der technischen Umgebung abhängig ist. siehe [Clusterdokumentation](/help/sites-deploying/recommended-deploys.md) für weitere Informationen.
+Während alle Systeme laufen, steht eine erhöhte Rechenleistung zur Verfügung. Diese zusätzliche Leistung entspricht nicht unbedingt linear der Anzahl der Cluster-Knoten, da die Beziehung stark von der technischen Umgebung abhängt; weitere Informationen finden Sie in der [Cluster-Dokumentation](/help/sites-deploying/recommended-deploys.md).
 
 Die Abschätzung, wie viele Cluster-Knoten notwendig sind, basiert auf den grundlegenden Anforderungen und spezifischen Anwendungsfällen des jeweiligen Webprojektes:
 
 * Aus Sicht der Ausfallsicherheit ist es notwendig, für alle Umgebungen zu bestimmen, wie kritisch ein Ausfall ist und wie lange es dauert, bis ein Clusterknoten wiederhergestellt ist.
-* Für den Aspekt der Skalierbarkeit ist die Anzahl der Schreiboperationen grundsätzlich der wichtigste Faktor; siehe [Paralleles Arbeiten von Autoren](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) für die Autorenumgebung, und [Zusammenarbeit in sozialen Netzwerken](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) für die Veröffentlichungsumgebung. Der Lastausgleich kann für Operationen eingerichtet werden, die nur auf das System zugreifen, um Lesevorgänge zu verarbeiten; siehe [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) für Details.
+* Für den Aspekt der Skalierbarkeit ist die Anzahl der Schreiboperationen grundsätzlich der wichtigste Faktor; siehe [Paralleles Arbeiten von Autoren](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) für die Autorenumgebung, und [Zusammenarbeit in sozialen Netzwerken](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) für die Veröffentlichungsumgebung. Der Lastausgleich kann für Operationen eingerichtet werden, die nur auf das System zugreifen, um Lesevorgänge zu verarbeiten; siehe [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/user-guide.html) für Details.
 
 ## Spezielle Berechnungen für die Autorenumgebung {#author-environment-specific-calculations}
 
@@ -150,9 +150,9 @@ Für solche Szenarien führte Adobe Benchmarktests auf einem Shared-Nothing-Clus
    * **Ergebnis** Der maximale Durchsatz für eine einfache Seitenerstellung wie oben beschrieben (als eine Transaktion betrachtet) liegt bei 2016 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 16 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmarktest.
 
 * **Benchmarktest 2b**
-Mit einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen berechnen Sie den maximalen Durchsatz, wenn das Lastprofil eine Mischung aus neuer Seitenerstellung (10 %), Änderung vorhandener Seiten (80 %) und Erstellung und Änderung einer Seite nacheinander (10 %) aufweist. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit derselben Komplexität wie im Benchmarktest 1 durchgeführt.
+Bei einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen wird der maximale Durchsatz berechnet, wenn das Lastprofil einen Mix aus frischer Seitenerstellung (10 %), Änderung einer bestehenden Seite (80 %) und Erstellung und Änderung einer Seite in Folge (10 %) aufweist. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit derselben Komplexität wie im Benchmarktest 1 durchgeführt.
 
-   * **Ergebnis** Der maximale Durchsatz für ein solches Mischbetriebsszenario lag bei 6288 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 93 % im Vergleich zu einer eigenständigen Autoreninstanz für denselben Benchmarktest.
+   * **Ergebnis** Der maximale Durchsatz für ein solches Mischbetriebsszenario lag bei 6288 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 93 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmarktest.
 
 >[!NOTE]
 >
@@ -163,19 +163,19 @@ Die beiden oben genannten Tests zeigen deutlich, dass AEM für Autoren, die grun
 
 Auf einer typischen Website geschieht das meiste Authoring während der Projektphase. Nach dem Start der Website sinkt die Anzahl der parallel arbeitenden Autoren in der Regel auf einen niedrigeren (Regelbetriebs-)Durchschnitt.
 
-Sie können die Anzahl der Computer (oder CPUs), die für die Autorenumgebung erforderlich sind, wie folgt berechnen:
+Sie können die Anzahl der Computer (oder CPUs), die für die Autorenumgebung benötigt werden, wie folgt berechnen:
 
 `n = numberOfParallelAuthors / 30`
 
 Diese Formel kann als allgemeine Richtlinie für die Skalierung von CPUs dienen, wenn Autoren grundlegende Operationen mit AEM durchführen. Es wird davon ausgegangen, dass das System und die Anwendung optimiert sind. Die Formel gilt jedoch nicht für erweiterte Funktionen wie MSM oder Assets (siehe unten).
 
-Weitere Informationen finden Sie unter [Parallelisierung](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) und [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
+Beachten Sie auch die zusätzlichen Kommentare zur [Parallelisierung](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) und [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md).
 
 ### Hardware-Empfehlungen {#hardware-recommendations}
 
 Normalerweise können Sie für Ihre Autorenumgebung die gleiche Hardware verwenden, die für Ihre Veröffentlichungsumgebung empfohlen wird. Normalerweise ist der Website-Traffic auf Autorensystemen viel geringer, aber auch die Cache-Effizienz ist geringer. Entscheidend ist jedoch die Anzahl der parallel arbeitenden Autoren und die Art der Aktionen, die am System vorgenommen werden. Im Allgemeinen ist AEM-Clustering (der Autorenumgebung) am effektivsten bei der Skalierung von Leseoperationen; mit anderen Worten, ein AEM-Cluster skaliert gut mit Autoren, die grundlegende Bearbeitungsoperationen durchführen.
 
-Die Benchmarktests an Adobe wurden mit dem Betriebssystem RedHat 5.5 durchgeführt, das auf einer Hewlett-Packard ProLiant DL380 G5-Hardwareplattform mit folgender Konfiguration ausgeführt wird:
+Die Benchmarktests bei Adobe wurden mit dem Betriebssystem RedHat 5.5 durchgeführt, das auf einer Hewlett-Packard ProLiant DL380 G5 Hardwareplattform mit folgender Konfiguration läuft:
 
 * Zwei Quad-Core Intel Xeon X5450 CPUs mit 3,00 GHz
 * 8 GB RAM
@@ -192,14 +192,14 @@ AEM-Instanzen liefen mit einer minimalen Heap-Größe von 256M und einer maximal
 
 Die Effizienz der Zwischenspeicherung ist entscheidend für die Geschwindigkeit der Website. Die folgende Tabelle zeigt, wie viele Seiten pro Sekunde ein optimiertes AEM-System mit einem Reverse-Proxy wie dem Dispatcher verarbeiten kann:
 
-| Cache-Verhältnis | Seiten/s (Spitzenwert) | Millionen Seiten/Tag (Durchschnitt) |
+| Cache-Verhältnis | Seiten/Sek (Spitzenwert) | Millionen Seiten/Tag (Durchschnitt) |
 |---|---|---|
-| 100% | 1000-2000 | 35-70 |
-| 99% | 910 | 32 |
-| 95% | 690 | 25 |
+| 100 % | 1000–2000 | 35–70 |
+| 99 % | 910 | 32 |
+| 95 % | 690 | 25 |
 | 90 % | 520 | 18 |
-| 60% | 220 | 8 |
-| 0% | 100 | 3.5 |
+| 60 % | 220 | 8 |
+| 0 % | 100 | 3,5 |
 
 >[!CAUTION]
 >
@@ -213,11 +213,11 @@ Wenn Sie komplexe Vorlagen verwenden, benötigt AEM mehr Zeit, um eine Seite zu 
 
 ### Formel {#formula}
 
-Mithilfe der folgenden Formel können Sie eine Schätzung der Gesamtkomplexität Ihrer AEM berechnen:
+Mit der folgenden Formel können Sie eine Schätzung der Gesamtkomplexität Ihrer AEM-Lösung berechnen:
 
 `complexity = applicationComplexity + ((1-cacheRatio) * templateComplexity)`
 
-Basierend auf der Komplexität können Sie die Anzahl der Server (oder CPU-Kerne), die Sie für die Veröffentlichungsumgebung benötigen, wie folgt bestimmen:
+Aufgrund der Komplexität können Sie die Anzahl der Server (oder CPU-Kerne), die Sie für die Veröffentlichungsumgebung benötigen, wie folgt bestimmen:
 
 `n = (traffic * complexity / 1000 ) * activations`
 
@@ -226,18 +226,18 @@ Die Variablen in der Gleichung lauten wie folgt:
 <table>
  <tbody>
   <tr>
-   <td>traffic</td>
+   <td>Traffic</td>
    <td>Der erwartete Spitzentraffic pro Sekunde. Man kann dies als die Anzahl der Seitenaufrufe pro Tag, geteilt durch 35.000, schätzen.</td>
   </tr>
   <tr>
    <td>applicationComplexity</td>
    <td><p>Verwenden Sie 1 für eine einfache Anwendung, 2 für eine komplexe Anwendung oder einen Wert dazwischen:</p>
     <ul>
-     <li>1 - eine vollständig anonyme, inhaltsorientierte Site</li>
-     <li>1.1 - eine vollständig anonyme, inhaltsorientierte Site mit Client-seitiger/Target-Personalisierung</li>
-     <li>1.5 - eine inhaltsorientierte Site mit sowohl anonymen als auch angemeldeten Abschnitten, Client-seitig/Target-Personalisierung</li>
-     <li>1.7 - für eine inhaltsorientierte Site mit sowohl anonymen als auch angemeldeten Abschnitten, Client-seitige/Target-Personalisierung und einigen benutzergenerierten Inhalten</li>
-     <li>2 - wo sich die gesamte Site anmelden muss, mit umfangreichem Einsatz benutzergenerierter Inhalte und einer Vielzahl von Personalisierungstechniken</li>
+     <li>1 – eine vollständig anonyme, inhaltsorientierte Website</li>
+     <li>1,1 – eine vollständig anonyme, inhaltsorientierte Website mit Client-seitiger/Target-Personalisierung</li>
+     <li>1,5 – eine inhaltsorientierte Website mit sowohl anonymen als auch angemeldeten Abschnitten, Client-seitiger/Target-Personalisierung</li>
+     <li>1,7 – für eine inhaltsorientierte Website mit sowohl anonymen als auch angemeldeten Abschnitten, Client-seitiger/Target-Personalisierung und einigen nutzergenerierten Inhalten</li>
+     <li>2 – wo die gesamte Website eine Anmeldung verlangt, mit umfangreichem Einsatz nutzergenerierter Inhalte und einer Vielzahl von Personalisierungstechniken</li>
     </ul> </td>
   </tr>
   <tr>
@@ -246,29 +246,32 @@ Die Variablen in der Gleichung lauten wie folgt:
   </tr>
   <tr>
    <td>templateComplexity</td>
-   <td>Verwenden Sie einen Wert zwischen 1 und 10, um die Komplexität Ihrer Vorlagen anzugeben. Höhere Zahlen zeigen komplexere Vorlagen an, wobei der Wert 1 für Sites mit durchschnittlich 10 Komponenten pro Seite, der Wert 5 für einen Seitendurchschnitt von 40 Komponenten und 10 für einen Durchschnitt von über 100 Komponenten verwendet wird.</td>
+   <td>Verwenden Sie einen Wert zwischen 1 und 10, um die Komplexität von Vorlagen anzugeben. Höhere Zahlen zeigen komplexere Vorlagen an, wobei der Wert 1 für Sites mit durchschnittlich 10 Komponenten pro Seite, der Wert 5 für einen Seitendurchschnitt von 40 Komponenten und 10 für einen Durchschnitt von über 100 Komponenten verwendet wird.</td>
   </tr>
   <tr>
-   <td>Aktivierungen</td>
-   <td>Anzahl der durchschnittlichen Aktivierungen (Replikation von durchschnittlich großen Seiten und Assets vom Autor zur Veröffentlichungsstufe) pro Stunde dividiert durch x, wobei x die Anzahl der Aktivierungen ist, die auf einem System durchgeführt werden, ohne dass sich dies auf die Leistung auswirkt, die auf andere vom System verarbeitete Aufgaben entfällt. Sie können einen pessimistischen Anfangswert wie x = 100 vordefinieren.<br /> </td>
+   <td>activations</td>
+   <td>Anzahl der durchschnittlichen Aktivierungen (Replikation von Seiten und Assets durchschnittlicher Größe von der Autoren- zur Veröffentlichungsebene) pro Stunde geteilt durch x, wobei x die Anzahl der Aktivierungen ist, die auf einem System ohne Leistungseinbußen auf andere vom System verarbeitete Aufgaben durchgeführt werden. Sie können einen pessimistischen Anfangswert wie x = 100 vordefinieren.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 Wenn Sie eine komplexere Website haben, benötigen Sie auch leistungsfähigere Webserver, damit AEM eine Anfrage in akzeptabler Zeit beantworten kann.
 
-* Komplexität unter 4: ・ 1024 MB JVM RAM&#42;
-・ Geringe bis mittlere CPU-Leistung
+* Komplexität unter 4:
+• 1024 MB JVM RAM&#42;
+• Niedrige bis mittlere CPU-Leistung
 
-* Komplexität zwischen 4 und 8: ・ 2048 MB JVM RAM&#42;
-・ Mid to high-performance CPU
+* Komplexität zwischen 4 und 8:
+• 2048 MB JVM RAM&#42;
+• Mittlere bis hohe CPU-Leistung
 
-* Komplexität über 8: ・ 4096 MB JVM RAM&#42;
-・ Hohe bis High-End-CPU-Leistung
+* Komplexität über 8:
+• 4096 MB JVM RAM&#42;
+• Hohe bis extrem hohe CPU-Leistung
 
 >[!NOTE]
 >
->&#42; Reservieren Sie zusätzlich zum für Ihre JVM benötigten Speicher genügend RAM für Ihr Betriebssystem.
+>&#42; Reservieren Sie genügend RAM für Ihr Betriebssystem zusätzlich zu dem für Ihre JVM benötigten Arbeitsspeicher.
 
 ## Zusätzliche anwendungsspezifische Berechnungen {#additional-use-case-specific-calculations}
 
@@ -278,7 +281,7 @@ Neben der Berechnung für eine Standard-Webanwendung müssen Sie ggf. spezifisch
 
 Zur umfangreichen Verarbeitung digitaler Assets sind optimierte Hardwareressourcen erforderlich; die wichtigsten Faktoren hierbei sind die Bildgröße und der Spitzendurchsatz verarbeiteter Bilder.
 
-Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie die [!UICONTROL DAM-Update-Asset] Workflow zur Verwendung der [Camera Raw Package](/help/assets/camera-raw.md) für die Aufnahme von Rohbildern.
+Weisen Sie mindestens 16 GB Heap zu und konfigurieren Sie den Workflow [!UICONTROL DAM-Update-Asset] so, dass Rohbilder mit dem [Camera Raw-Paket](/help/assets/camera-raw.md) aufgenommen werden.
 
 >[!NOTE]
 >

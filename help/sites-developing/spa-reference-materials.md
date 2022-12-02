@@ -13,7 +13,7 @@ exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Im Folgenden finden Sie die verfügbaren JavaScript-API-Referenzen der NPM-Modul
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendering auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 * [Komponentenzuordnung](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Seitenmodell-Manager](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)

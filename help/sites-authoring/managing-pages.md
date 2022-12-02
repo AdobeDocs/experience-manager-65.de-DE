@@ -5,7 +5,7 @@ exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2523'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -27,22 +27,22 @@ In diesem Abschnitt wird beschrieben, wie Sie mit Adobe Experience Manager (AE
 
 Als Autor müssen Sie Ihre Website in AEM organisieren. Aus diesem Grund müssen Sie Ihre Inhaltsseiten entsprechend folgenden Richtlinien erstellen und benennen:
 
-* Sie müssen leicht in der Autorenumgebung auffindbar sein.
+* Sie müssen leicht in der Authoring-Umgebung auffindbar sein.
 * Besucher der Website müssen sie einfach in der Veröffentlichungsumgebung durchsuchen können.
 
 Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) organisieren.
 
 Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
 
-Im Folgenden sehen Sie ein Beispiel von der Site &quot;We.Retail&quot;, bei der eine Seite mit Kurzwürfen ( `desert-sky-shorts`) aufgerufen wird:
+Im Folgenden sehen Sie ein Beispiel von der Website We.Retail, auf der eine Seite mit Cargo-Shorts (`desert-sky-shorts`) aufgerufen wird:
 
-* Autorenumgebung
+* Authoring-Umgebung
    `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-* Veröffentlichungsumgebung
+* Publishing-Umgebung
    `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
-Je nach Konfiguration Ihrer Instanz verwenden Sie `/content` kann in der Veröffentlichungsumgebung optional sein.
+Je nach Konfiguration Ihrer Instanz kann die Verwendung von `/content` in der Publishing-Umgebung optional sein.
 
 ```xml
  /content
@@ -118,7 +118,7 @@ Umfassende Informationen zu allen zulässigen Zeichen finden Sie in den [Benennu
 
 >[!NOTE]
 >
->Wenn AEM auf einer [MongoMK-Persistenzmanager-Bereitstellung](/help/sites-deploying/recommended-deploys.md) ausgeführt wird, sind Seitennamen auf 150 Zeichen beschränkt.
+>Wenn AEM auf einer [MongoMK-Persistenz-Manager-Bereitstellung](/help/sites-deploying/recommended-deploys.md) ausgeführt wird, sind Seitennamen auf 150 Zeichen beschränkt.
 
 #### Titel {#title}
 
@@ -164,12 +164,12 @@ Eine Liste von Vorlagen, die für das Erstellen neuer Seiten verwendet werden k�
 
 ### Komponenten {#components}
 
-Komponenten sind die von AEM bereitgestellten Elemente, sodass Sie bestimmte Inhaltstypen hinzufügen können. AEM enthält eine Reihe von [vordefinierte Komponenten](/help/sites-authoring/default-components-console.md) , die eine umfassende Funktionalität bieten. Dazu gehören:
+Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie bestimmte Inhaltstypen hinzufügen können. AEM ist mit [einsatzbereiten Komponenten](/help/sites-authoring/default-components-console.md) ausgestattet, die umfangreiche Funktionen bieten. Dazu gehören unter anderem:
 
 * Text
 * Bild
 * Diashow
-* Video   
+* Video
 * Und viele weitere
 
 Nachdem Sie eine Seite erstellt und geöffnet haben, können Sie mithilfe der im [Komponenten-Browser](/help/sites-authoring/editing-content.md#insertinganewparagraph) verfügbaren Komponenten [Inhalte hinzufügen](/help/sites-authoring/author-environment-tools.md#componentbrowser).
@@ -184,7 +184,7 @@ Nachdem Sie eine Seite erstellt und geöffnet haben, können Sie mithilfe der im
 
 Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem Einfügen von Inhalten zunächst eine Seite erstellen:
 
-1. Öffnen Sie die Sites-Konsole (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
+1. Öffnen Sie die Sites-Konsole, (z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).).
 1. Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.
 1. Öffnen Sie das Dropdown-Menü über **Erstellen** in der Symbolleiste und wählen Sie in der Liste **Seite** aus:
 
@@ -392,11 +392,11 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 
 >[!NOTE]
 >
->Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Begrenzung für Seitenverschiebungs-/Umbenennungsaktionen finden Sie in der [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md) im Administrations-Benutzerhandbuch.
+>Weitere Informationen zur asynchronen Auftragsverarbeitung und zum Konfigurieren der Grenzwerte für Seitenverschiebungs-/-umbenennungsaktionen finden Sie im Dokument [Asynchrone Aufträge](/help/sites-administering/asynchronous-jobs.md) im Benutzerhandbuch für Administration.
 
 >[!NOTE]
 >
->Für die asynchrone Seitenverschiebung ist AEM 6.5.3.0 oder höher erforderlich.
+>Für die asynchrone Seitenverschiebung ist AEM 6.5.3.0 oder höher erforderlich.
 
 ### Löschen einer Seite {#deleting-a-page}
 

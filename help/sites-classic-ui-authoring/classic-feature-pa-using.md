@@ -13,7 +13,7 @@ docset: aem65
 source-git-commit: bcb1840d23ae538c183eecb0678b6a75d346aa50
 workflow-type: tm+mt
 source-wordcount: '90'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -32,4 +32,4 @@ Seitenanalysedaten werden in der Sites-Konsole angezeigt. Wenn Websites im Liste
 
 >[!NOTE]
 >
->Die Anzeige der Site-Analysedaten direkt in der Konsole ist nur in der Touch-optimierten Benutzeroberfläche möglich. Siehe [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-using.md) in der Standarddokumentation für die Bearbeitung .
+>Die Anzeige der Site-Analysedaten direkt in der Konsole ist nur in der Touch-optimierten Benutzeroberfläche möglich. Weitere Informationen finden Sie in der Standarddokumentation zur Bearbeitung unter [Anzeigen von Seitenanalysedaten](/help/sites-authoring/page-analytics-using.md).

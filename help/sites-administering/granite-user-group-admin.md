@@ -14,7 +14,7 @@ feature: Security
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
 workflow-type: tm+mt
 source-wordcount: '923'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 84%
 
 Da Granite die CRX-Repository-Implementierung der JCR-API-Spezifikation umfasst, verfügt es über eine eigene Benutzer- und Gruppenverwaltung.
 
-Diese Konten bilden die Grundlage der [AEM](/help/sites-administering/security.md) und alle Kontoänderungen, die mit der Granite-Verwaltung vorgenommen werden, werden angezeigt, wenn/wenn der Zugriff auf die Konten über die [AEM-Benutzerkonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (z. B. `http://localhost:4502/useradmin`). Über die AEM-Benutzerkonsole können Sie auch Rechte und andere AEM-Eigenschaften verwalten.
+Diese Konten bilden die Grundlage der [AEM-Konten](/help/sites-administering/security.md). Sämtliche in der Granite-Verwaltung durchgeführten Kontoänderungen werden widergespiegelt, falls/wenn auf die Konten über die [AEM-Benutzerkonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (z.B. `http://localhost:4502/useradmin`) zugegriffen wird. Über die AEM-Benutzerkonsole können Sie auch Rechte und andere AEM-Eigenschaften verwalten.
 
 Die Konsolen für die Benutzer- und Gruppenverwaltung sind jeweils über die **[Tools-Konsole](/help/sites-administering/tools-consoles.md)** der Touch-optimierten Benutzeroberfläche verfügbar:
 
@@ -71,11 +71,11 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
    * **E-Mail-Adresse**
    * **Kennwort**
 
-      Ein Kennwort ist obligatorisch.
+      Ein Kennwort muss angegeben werden.
 
    * **Kennwortwdh.**
 
-      Dies ist obligatorisch, da dies für die Bestätigung des Kennworts erforderlich ist.
+      Diese zur Bestätigung des Kennworts erforderliche Angabe ist obligatorisch.
 
    * **Vorname**
    * **Nachname**
@@ -94,10 +94,10 @@ Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die en
 
       * **Status**
 Sie können das Konto als 
-**active** oder **inactive**.
+**aktiv** oder **inaktiv** markieren.
    * **Foto**
 
-      Hier können Sie ein Foto hochladen, um es als Avatar zu verwenden.
+      Hier können Sie ein Foto für einen Avatar hochladen.
 
       Akzeptierte Dateitypen: `.jpg .png .tif .gif`
 
@@ -105,11 +105,11 @@ Sie können das Konto als
 
    * **Benutzer zu Gruppen hinzufügen**
 
-      Verwenden Sie das Dropdown-Menü Auswahl , um Gruppen auszuwählen, denen der Benutzer angehören soll. Vor dem Speichern können Sie ggf. eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
+      Wählen Sie über die Auswahl-Dropdown-Liste die Gruppen aus, denen der Benutzer als Mitglied angehören soll. Vor dem Speichern können Sie ggf. eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
 
    * **Gruppen**
 
-      Eine Liste der Gruppen, denen der Benutzer derzeit angehört. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
+      Eine Liste der Gruppen, in denen der Benutzer derzeit Mitglied ist. Vor dem Speichern können Sie eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
 
 
 1. Wählen Sie eine der folgenden Optionen aus, nachdem Sie das Benutzerkonto definiert haben:
@@ -196,7 +196,7 @@ Sie können das Konto als
 
    * **Mitglieder zu Gruppe hinzufügen**
 
-      Verwenden Sie das Dropdown-Menü Auswahl , um Benutzer auszuwählen, die der Gruppe hinzugefügt werden sollen. Vor dem Speichern können Sie ggf. eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
+      Wählen Sie über die Auswahl-Dropdown-Liste die Benutzer aus, die der Gruppe hinzugefügt werden sollen. Vor dem Speichern können Sie ggf. eine getroffene Auswahl mit dem **X** neben dem Namen aufheben.
 
    * **Gruppenmitglieder**
 
@@ -222,7 +222,7 @@ Sie können das Konto als
 
 1. Das Formular **Gruppeneinstellungen bearbeiten** wird geöffnet.
 
-   Die Gruppen-ID entspricht der ursprünglichen, jedoch mit dem Präfix `Copy of`. Sie müssen die Kennung bearbeiten, da IDs keine Leerzeichen enthalten dürfen. Alle anderen Angaben bleiben gegenüber dem Original unverändert.
+   Die Gruppenkennung entspricht der ursprünglichen, vorangestellt ist allerdings der Hinweis `Copy of`. Sie müssen die Kennung bearbeiten, da IDs keine Leerzeichen enthalten dürfen. Alle anderen Angaben bleiben gegenüber dem Original unverändert.
 
    Sie können nun die Details wie unter [Hinzufügen neuer Gruppen](#adding-a-new-group) bearbeiten.
 

@@ -13,7 +13,7 @@ exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '316'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Feste Hintergrundbilder werden beim Scrollen nicht als fest angezeigt, weil sie 
 
 100 % Höhe wird im Hauptteilelement einer Seite nicht unterstützt.
 
-* Eine Umgehung ist möglich, um einen Vollbildtext zu implementieren, indem das Hauptteilelement wie folgt &quot;gestreckt&quot;wird:
+* Dieses Problem kann umgangen werden, um einen Vollbildhauptteil zu implementieren, indem das Hauptteilelement wie folgt gestreckt wird:
 
 ```xml
 body {

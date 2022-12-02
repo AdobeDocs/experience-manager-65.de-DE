@@ -1,21 +1,21 @@
 ---
 title: Wesentliche Änderungen des CIF-Add-ons (Commerce Integration Framework)
-description: Wesentliche Änderungen des Commerce Integration Framework (CIF)-Add-ons im Vergleich zu alten CIF-Versionen.
-exl-id: 5a526960-96a1-421e-9fb0-0825e7df8f32
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
+description: Wesentliche Änderungen des CIF-Add-ons (Commerce Integration Framework) im Vergleich zu alten CIF-Versionen.
+exl-id: 41dee21a-9ae2-4067-a32a-2d4633323fc4
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '321'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
-# Wesentliche Änderungen am CIF-Add-on (Commerce Integration Framework){#notable-changes}
+# Wesentliche Änderungen des CIF-Add-ons (Commerce Integration Framework){#notable-changes}
 
 In diesem Dokument werden die wichtigen Unterschiede zwischen dem CIF-Add-on und alten CIF-Versionen, hauptsächlich bekannt als CIF Classic (Schnellstart) und CIF Open-Source, erläutert.
 
 ## Installation und Updates
 
-Das AEM CIF-Add-On-Paket wird installiert und mit AEM Package Manager aktualisiert.
+Das AEM CIF-Add-On-Paket wird mit AEM Package Manager installiert und aktualisiert.
 
 **Vorherige CIF-Versionen**
 
@@ -33,7 +33,7 @@ Der Endpunkt wird über die OSGi-Konsole konfiguriert.
 
 ## Implementierung des CIF-Venia-Projekts
 
-Projekt verfügbar unter [GitHub-AEM - CIF Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) und Bereitstellung über AEM Package Manager.
+Projekt verfügbar unter [GitHub – AEM Guides – CIF Venia-Projekt](https://github.com/adobe/aem-cif-guides-venia) und Bereitstellung über AEM Package Manager.
 
 **Vorherige CIF-Versionen**
 
@@ -57,4 +57,4 @@ AEM rendert Produktkatalog-Erlebnisse direkt mithilfe von AEM-Katalogvorlagen, d
 
 >[!NOTE]
 >
->Weitere Informationen zur Verwendung von CIF mit AEM Managed Service oder AEM On-Premise finden Sie unter [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html)
+>Weitere Dokumentationen zur Verwendung von CIF mit AEM Managed Service oder AEM On-Premise finden Sie unter [Commerce Integration Framework](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html).

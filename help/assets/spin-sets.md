@@ -14,7 +14,7 @@ exl-id: 758ad754-15de-4e72-9b7d-ab49c51d7d4f
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1952'
-ht-degree: 86%
+ht-degree: 99%
 
 ---
 
@@ -32,13 +32,13 @@ Rotationssets werden durch ein Banner mit dem Wort **[!UICONTROL SPINSET]** geke
 >
 >Informationen zur Assets-Benutzeroberfläche finden Sie unter [Verwalten von Assets](/help/assets/manage-assets.md).
 
-Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
+Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Begrenzung:
 
-| Begrenzungstyp | Best Practice | Begrenzung auferlegt |
+| Begrenzungstyp | Best Practice | Erzwungene Begrenzung |
 | --- | --- | --- |
-| Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
+| Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1.000 |
 
-Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
+Siehe auch [Dynamic Media-Beschränkungen](/help/assets/limitations.md).
 
 ## Schnellstart: Rotationssets {#quick-start-spin-sets}
 
@@ -50,9 +50,9 @@ Führen Sie die folgenden Schritte aus, um sich schnell mit der Arbeit mit Rotat
 
    Unter [Dynamic Media – Unterstützte Rasterbildformate](/help/assets/assets-formats.md#supported-raster-image-formats-dynamic-media) finden Sie eine Liste der Formate, die von Rotationssets unterstützt werden.
 
-1. [Erstellen eines Rotationssets](#creating-spin-sets).
+1. [Erstellen Sie ein Rotationsset](#creating-spin-sets).
 
-   Zum Erstellen eines Rotationssets wählen Sie **[!UICONTROL Erstellen > Rotationsset]** und benennen Sie das Set, wählen Sie die Assets und wählen Sie die Reihenfolge der Bilder.
+   Zum Erstellen eines Rotationssets wählen Sie **[!UICONTROL Erstellen > Rotationsset]** und benennen Sie das Set, wählen Sie die Assets und dann die Reihenfolge der Bilder aus.
 
    Siehe [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md).
 
@@ -64,23 +64,23 @@ Führen Sie die folgenden Schritte aus, um sich schnell mit der Arbeit mit Rotat
 
    Administratoren können Rotationsset-Viewer-Voreinstellungen erstellen oder ändern. Um das Rotationsset mit einer Viewer-Vorgabe anzuzeigen, wählen Sie das Rotationsset aus und Sie wählen im Dropdown-Menü der linken Seitenleiste die Option **Viewer**.
 
-   Siehe **[!UICONTROL Instrumente]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer-Vorgaben]** , wenn Sie Viewer-Vorgaben erstellen oder bearbeiten möchten.
+   Wenn Sie Viewer-Vorgaben erstellen oder bearbeiten möchten, wählen Sie **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Viewer-Vorgaben]** aus.
 
    Siehe [Hinzufügen und Bearbeiten von Viewer-Vorgaben](/help/assets/managing-viewer-presets.md).
 
-1. [Anzeigen eines Rotationssets](#viewing-spin-sets).
+1. [Zeigen Sie ein Rotationsset an](#viewing-spin-sets).
 
    Es gibt drei verschiedene Arten, über Stapelsatzvorgaben erstellte Sätze anzuzeigen und darauf zuzugreifen. (In der Benutzeroberfläche werden *keine* mit Stapelsatzvorgaben erstellten Sets angezeigt.)
 
-1. [Vorschau eines Rotationssets](/help/assets/previewing-assets.md).
+1. [Zeigen Sie eine Vorschau eines Rotationssets an](/help/assets/previewing-assets.md).
 
    Wählen Sie das Rotationsset aus, um dessen Vorschau anzuzeigen. Drehen Sie das Rotationsset. Sie können verschiedene Viewer aus dem Menü **[!UICONTROL Viewer]** wählen, das Sie links in der Leiste über die Dropdown-Liste aufrufen können.
 
-1. [Veröffentlichen eines Rotationssets](/help/assets/publishing-dynamicmedia-assets.md).
+1. [Veröffentlichen Sie ein Rotationsset](/help/assets/publishing-dynamicmedia-assets.md).
 
    Beim Veröffentlichen eines Rotationssets wird die URL- und Integrationszeichenfolge aktiviert. Außerdem müssen Sie [die Viewer-Vorgabe veröffentlichen](/help/assets/managing-viewer-presets.md).
 
-1. [Verknüpfen von URLs mit einer Webanwendung](/help/assets/linking-urls-to-yourwebapplication.md) oder [Video- oder Bild-Viewer einbetten](/help/assets/embed-code.md).
+1. [Verknüpfen Sie URLs mit einer Web-Anwendung](/help/assets/linking-urls-to-yourwebapplication.md) oder [betten Sie den Video- oder Bild-Viewer ein](/help/assets/embed-code.md).
 
    Adobe Experience Manager Assets erstellt URL-Aufrufe für Rotationssets und aktiviert diese, nachdem Sie die Rotationssets veröffentlicht haben. Sie können diese URLs während der Asset-Vorschau kopieren. Alternativ dazu können Sie sie in Ihre Website einbetten.
 
@@ -88,7 +88,7 @@ Führen Sie die folgenden Schritte aus, um sich schnell mit der Arbeit mit Rotat
 
    Siehe [Verknüpfen von Rotationssets mit Web-Seiten](/help/assets/linking-urls-to-yourwebapplication.md) und [Einbetten des Video- oder Bild-Viewers](/help/assets/embed-code.md).
 
-Bei Bedarf können Sie [Bearbeiten eines Rotationssets](#editing-spin-sets). Darüber hinaus können Sie die [Eigenschaften von Rotationssets](/help/assets/manage-assets.md#editing-properties) anzeigen und ändern.
+Bei Bedarf können Sie ein [Rotationsset bearbeiten](#editing-spin-sets). Darüber hinaus können Sie die [Eigenschaften von Rotationssets](/help/assets/manage-assets.md#editing-properties) anzeigen und ändern.
 
 ## Hochladen von Assets für ein Rotationsset {#uploading-assets-for-spin-sets}
 
@@ -110,29 +110,29 @@ Im Folgenden finden Sie einige Best Practices für Rotationsset-Bilder. Im Allge
 
 ## Erstellen eines Rotationssets {#creating-spin-sets}
 
-In diesem Abschnitt wird beschrieben, wie Sie ein Rotationsset in Experience Manager erstellen.
+In diesem Abschnitt wird beschrieben, wie Sie in Experience Manager ein Rotationsset erstellen.
 
 >[!NOTE]
 >
 >Sie können Rotationssets auch automatisch über [Stapelsatzvorgaben](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) erstellen. **Wichtig:** Stapelsätze werden vom IPS (Image Production System) im Rahmen der Asset-Aufnahme erstellt und sind nur im Scene7-Modus von Dynamic Media verfügbar.
 >
->Siehe &quot;Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotationssets&quot;in [Konfigurieren des Dynamic Media-/Scene7-Modus](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+>Siehe „Erstellen von Stapelsatzvorgaben zum automatischen Erzeugen von Bild- und Rotationssets“ in [Konfigurieren von Dynamic Media – Scene7-Modus](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 >[!NOTE]
 >
 >Die Reihenfolge der Bilder in einem Rotationsset ist wichtig. Achten Sie darauf, sie so anzuordnen, dass die Rotation eine gleichmäßige 360-Grad-Ansicht ergibt.
 
-Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Beschränkung:
+Beim Erstellen eines Rotationssets empfiehlt Adobe die folgenden Best Practices und erzwingt die folgende Begrenzung:
 
-| Begrenzungstyp | Best Practice | Eingerichtet |
+| Begrenzungstyp | Best Practice | Erzwungene Begrenzung |
 | --- | --- | --- |
-| Maximale Anzahl von Zeilen/Spalten pro 2D-Satz | 12-18 Bilder pro Set | 1000 |
+| Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1.000 |
 
-Siehe auch [Einschränkungen bei Dynamic Media](/help/assets/limitations.md).
+Siehe auch [Dynamic Media-Beschränkungen](/help/assets/limitations.md).
 
 **So erstellen Sie ein Rotationsset:**
 
-1. Navigieren Sie in Assets an die Stelle, an der Sie ein Rotationsset erstellen möchten, und wählen Sie **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Rotationsset]**. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält. Der Rotationsset-Editor wird angezeigt.
+1. Navigieren Sie in Assets an die Stelle, an der Sie ein Rotationsset erstellen möchten, wählen Sie **[!UICONTROL Erstellen]** und anschließend **[!UICONTROL Rotationsset]** aus. Sie können das Set auch in einem Ordner erstellen, der die gewünschten Assets enthält. Der Rotationsset-Editor wird angezeigt.
 
    ![6_5_spinset-createpulldownmenu](assets/6_5_spinset-createpulldownmenu.png)
 
@@ -181,9 +181,9 @@ Sie können Rotationssets in der Benutzeroberfläche oder automatisch über [Sta
 >
 >Sets können auch über die Benutzeroberfläche angezeigt werden, wie unter [Bearbeiten von Rotationssets](#editing-spin-sets) beschrieben.
 
-**So zeigen Sie ein Rotationsset an:**
+**So zeigen Sie ein Rotationsset an**:
 
-1. Beim Öffnen der Eigenschaften eines einzelnen Assets. Die Eigenschaften zeigen an, zu welchen Sets das ausgewählte Asset gehört (unter **[!UICONTROL Mitglied von Sets]**). Wählen Sie den Namen des Sets aus, damit Sie den gesamten Satz sehen können.
+1. Beim Öffnen der Eigenschaften eines einzelnen Assets. Die Eigenschaften zeigen an, zu welchen Sets das ausgewählte Asset gehört (unter **[!UICONTROL Mitglied von Sets]**). Wählen Sie den Namen des Sets aus, damit Sie das gesamte Set sehen können.
 
    ![chlimage_1-156](assets/chlimage_1-384.png)
 
@@ -214,7 +214,7 @@ Sie können mehrere Bearbeitungsaufgaben für Rotationssets ausführen, z. B. d
    * Zeigen Sie mit der Maus auf ein Rotationsset-Asset und wählen Sie **[!UICONTROL Bearbeiten]** (Stiftsymbol) aus.
    * Zeigen Sie mit der Maus auf ein Rotationsset-Asset und wählen Sie in der Symbolleiste **[!UICONTROL Auswählen]** (Häkchensymbol) aus und dann **[!UICONTROL Bearbeiten]**.
 
-   * Wählen Sie ein Rotationsset-Asset aus und wählen Sie dann **[!UICONTROL Bearbeiten]** (Bleistiftsymbol) in der Symbolleiste.
+   * Wählen Sie ein Rotationsset-Asset und dann in der Symbolleiste **[!UICONTROL Bearbeiten]** (Bleistiftsymbol) aus.
 
 1. Führen Sie zum Bearbeiten des Rotationssets einen der folgenden Schritte aus:
 
@@ -232,7 +232,7 @@ Wenn Sie das in Experience Manager als Miniatur verwendete Bild löschen und dur
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**, wenn Sie mit der Bearbeitung fertig sind.
 
-## Vorschau eines Rotationssets {#previewing-spin-sets}
+## Anzeigen der Vorschau eines Rotationssets {#previewing-spin-sets}
 
 Siehe [Anzeigen von Assets in der Vorschau](/help/assets/previewing-assets.md).
 

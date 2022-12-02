@@ -9,7 +9,7 @@ exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '4514'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -41,9 +41,9 @@ Das heißt:
 
 >[!CAUTION]
 >
->Das [eCommerce-Integrationsframework](https://www.adobe.com/solutions/web-experience-management/commerce.html) ist ein Add-on von AEM.
+>Das [eCommerce-Integrationsframework](https://www.adobe.com/de/solutions/web-experience-management/commerce.html) ist ein Add-on von AEM.
 >
->Umfassende Informationen hierzu, passend zur entsprechenden Engine, erhalten Sie von dem für Sie zuständigen Vertriebsmitarbeiter.
+>Umfassende Informationen hierzu, passend zur entsprechenden Engine, erhalten Sie von Ihrer Ansprechperson im Vertrieb.
 
 >[!CAUTION]
 >
@@ -82,7 +82,7 @@ Um den Betrieb zu optimieren, konzentrieren sich AEM und die eCommerce-Engine au
       * Auftragsverwaltung
       * Enterprise Resource Planning (ERP)
       * Suche in den Produktdaten
-   * verarbeiten:
+   * Prozess:
 
       * Warenkorb
       * Kasse
@@ -93,7 +93,7 @@ Um den Betrieb zu optimieren, konzentrieren sich AEM und die eCommerce-Engine au
 >
 >Die genauen Details hängen von der eCommerce-Engine und der Projektimplementierung ab.
 
-Für die Verwendung der Integrationsschicht stehen eine Reihe vordefinierter AEM zur Verfügung. Aktuell gehören dazu folgende:
+Eine Reihe vorkonfigurierter AEM-Komponenten wird zur Verwendung der Integrationsebene bereitgestellt. Aktuell gehören dazu folgende:
 
 * Produktangaben
 * Warenkorb
@@ -151,18 +151,18 @@ Dennoch müssen Sie für ein Projekt in der Regel einen eigenen, angepassten Com
 >
 >Die Geometrixx-Importtools nutzen CSV-Dateien. In den Kommentaren über ihre Implementierung finden Sie eine Beschreibung des akzeptierten Schemas (samt der zulässigen benutzerdefinierten Eigenschaften).
 
-Der [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) verwaltet (über [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) eine Liste der Implementierungen der [ProductImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)- und [CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)-Schnittstelle. Diese werden im **Importer/Commerce-Anbieter** Dropdown-Feld des Importtool-Assistenten (mit dem `commerceProvider` -Eigenschaft als Namen).
+Der [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) verwaltet (über [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) eine Liste der Implementierungen der [ProductImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html)- und [CatalogBlueprintImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html)-Schnittstelle. Diese sind im Import-Tool-Assistenten im Dropdown-Feld **Import-Tool/Commerce-Anbieter** aufgeführt (mit der Eigenschaft `commerceProvider` als Name).
 
-Wenn ein bestimmtes Importtool/ein bestimmter Commerce-Anbieter im Dropdown-Feld verfügbar ist, müssen Sie alle weiteren benötigten Daten (je nach Art des Importtools) definieren, unter einem der folgenden Pfade:
+Wenn ein bestimmtes Import-Tool/ein bestimmter Commerce-Anbieter im Dropdown-Feld verfügbar ist, müssen Sie alle weiteren benötigten Daten (je nach Art des Import-Tools) unter einem der folgenden Pfade definieren:
 
 * `/apps/commerce/gui/content/catalogs/importblueprintswizard/importers`
 * `/apps/commerce/gui/content/products/importproductswizard/importers`
 
-Der Ordner unter dem entsprechenden `importers` -Ordner muss mit dem Importtool-Namen übereinstimmen; Beispiel:
+Der Ordner unter dem entsprechenden `importers`-Ordner muss mit dem Namen des Import-Tools übereinstimmen, z. B.:
 
 * `.../importproductswizard/importers/geometrixx/.content.xml`
 
-Das Format der Quell-Importdatei wird vom Importtool definiert. Oder der Importeur stellt eine Verbindung (z. B. WebDAV oder http) zur Commerce-Engine her.
+Das Format der Quell-Importdatei wird vom Import-Tool definiert. Alternativ kann das Import-Tool eine Verbindung (z. B. WebDAV oder HTTP) zur Commerce-Engine herstellen.
 
 ## Rollen {#roles}
 
@@ -180,7 +180,7 @@ Das integrierte System unterstützt die folgenden Rollen, um die Daten zu verwal
    * Marketinginhalte für alle Kanäle
    * Promotions.
    * Gutscheine.
-   * Kampagnen
+   * Kampagnen.
 
 * Surfer/Käufer, die:
 
@@ -201,15 +201,15 @@ Der tatsächliche Ort kann je nach Implementierung unterschiedlich ausfallen (z.
 
 Durch die Unterscheidung der folgenden beiden Kategorien können Sie deutliche URLs mit bedeutungsvoller Struktur erstellen (Bäume von `cq:Page`-Knoten und daher sehr ähnlich der klassischen Inhaltsverwaltung in AEM):
 
-* *Struktur *Kategorien
+* *Strukturelle *Kategorien
 
-   Kategoriestruktur, die *Was ist ein Produkt*; Beispiel:
+   Kategoriestruktur, die definiert, *was ein Produkt ist*; Beispiel:
 
    `/products/mens/shoes/sneakers`
 
-* *Marketing* categories
+* *Marketing*-Kategorien
 
-   Alle anderen Kategorien a *-Produkt kann*; Beispiel:
+   Alle anderen Kategorien, zu denen ein *Produkt gehören kann*; Beispiel:
 
    `/special-offers/christmas/shoes`)
 
@@ -222,7 +222,7 @@ Produktdaten können:
 * direkt in AEM verwaltet werden (allgemein)
 * in der eCommerce-Engine verwaltet und in AEM bereitgestellt werden
 
-   Je nach Datentyp ist es [synchronisiert](#catalog-maintenance-data-synchronization) gegebenenfalls oder direkt aufgerufen werden; Beispielsweise werden bei jeder Seitenanforderung hochgradig flüchtige und wichtige Daten wie Produktpreise von der eCommerce-Engine abgerufen, um sicherzustellen, dass sie immer auf dem neuesten Stand sind.
+   Je nach Datentyp sind die Daten [synchronisiert](#catalog-maintenance-data-synchronization), wenn erforderlich, oder direkt zugänglich. Höchst volatile und wichtige Daten wie Produktdaten werden beispielsweise bei jeder Seitenabfrage von der E-Commerce-Engine abgerufen, damit sie jederzeit aktuell sind.
 
 In jedem Fall können Sie die Produktdaten nach der Eingabe bzw. dem Import in AEM über die **Produktekonsole** einsehen. Hier finden Sie in der Karten- und der Listenansicht eines Produkts u. a. folgende Informationen:
 
@@ -252,11 +252,11 @@ Welche individuellen Attribute zu jedem Produkt gespeichert werden, hängt mögl
 
 * **Beschreibung**
 
-   Eine Textbeschreibung des Produkts.
+   Ein beschreibender Text zum Produkt.
 
 * **Tags**
 
-   Tags, die zum Gruppieren verwandter Produkte verwendet werden.
+   Tags, mit denen ähnliche Produkte gruppiert werden
 
 * **Standard-Asset-Kategorie**
 
@@ -264,11 +264,11 @@ Welche individuellen Attribute zu jedem Produkt gespeichert werden, hängt mögl
 
 * **ERP-Daten**
 
-   Informationen zur Enterprise Resource Planning (ERP).
+   Informationen zum Enterprise Resource Planning (ERP).
 
    * **SKU**
 
-      Informationen zur Lagereinheit (SKU).
+      SKU-Daten
 
    * **Farbe**
    * **Größe**
@@ -296,7 +296,7 @@ In einem Katalog werden Produktdaten zusammengestellt, um die Verwaltung zu vere
 
 #### Kataloge in mehreren Sprachen {#catalogs-in-multiple-languages}
 
-AEM unterstützt Produktinhalte in mehreren Sprachen. Beim Anfordern von Daten ruft das Integrations-Framework die Sprache vom aktuellen Baum ab (z. B. `en_US` für Seiten unter `/content/geometrixx-outdoors/en_US`).
+AEM unterstützt Produktinhalte in mehreren Sprachen. Beim Abfragen von Daten ruft das Integrations-Framework die Sprache vom aktuellen Baum ab (z. B. `en_US` für Seiten unter `/content/geometrixx-outdoors/en_US`).
 
 Bei einem mehrsprachigen Speicher können Sie Ihren Katalog für jeden Sprachbaum einzeln importieren (oder ihn mit [MSM](/help/sites-administering/msm.md) kopieren).
 
@@ -359,13 +359,13 @@ Diese Buckets werden in Form von Phantomordnern in die Katalogstruktur eingefüh
 
 Dieses Szenario sieht vor, dass zwei Autoreninstanzen eingerichtet werden:
 
-1. Übergeordnete Autoreninstanz
+1. Primäre Autoreninstanz
 
-   Importiert Produktdaten aus PIM, bei denen die Nachbearbeitung für die Asset-Pfade deaktiviert ist.
+   Importiert Produktdaten vom PIM, auf dem die Nachbearbeitung für Asset-Pfade deaktiviert ist.
 
 1. Dedizierte DAM-Autoreninstanz
 
-   Importiert Produkt-Assets aus dem PIM und verarbeitet sie anschließend nach und repliziert sie zur Verwendung zurück in die Übergeordnete Autoreninstanz.
+   Importiert Produkt-Assets aus dem PIM, bearbeitet sie nach und repliziert sie zur Nutzung zurück zur primären Autoreninstanz.
 
 ![Architekturdiagramm](/help/sites-administering/assets/chlimage_1-8.png)
 
@@ -381,15 +381,15 @@ Leistungstests müssen bei AEM eCommerce-Implementierungen in Erwägung gezogen 
 
 * Autorenumgebung:
 
-   Die Hintergrundaktivität (z. B. der Import) kann gleichzeitig mit der normalen Benutzeraktivität (z. B. Seitenbearbeitung) auftreten. Selbst wenn die Frontend-Leistung (im Allgemeinen) eine höhere Priorität hat, kann eine von Online-Autoren erkannte schlechte Leistung zu Frustration führen, die eine Go-Live-Entscheidung blockieren kann.
+   Eine Hintergrundaktivität (z. B. ein Importvorgang) kann gleichzeitig mit einer normalen Benutzeraktivität (z. B. Seitenbearbeitung) ausgeführt werden. Selbst wenn der Frontend-Leistung (im Allgemeinen) eine höhere Priorität zugeschrieben wird, kann eine mangelhafte Leistung, die Online-Autoren erleben, demotivieren und sogar eine Go-Live-Entscheidung hemmen.
 
 * Veröffentlichungsumgebung:
 
-   Die Replikation ist ein wichtiger Prozess, um sicherzustellen, dass der Inhalt schnell und zuverlässig veröffentlicht wird. Dies kann dadurch beeinflusst werden, wie der Autor die Inhalte gruppiert, die veröffentlicht werden sollen.
+   Die Replikation ist wichtig, um sicherzustellen, dass die Inhalte schnell und zuverlässig veröffentlicht werden. Dies kann dadurch beeinflusst werden, wie der Autor die Inhalte gruppiert, die veröffentlicht werden sollen.
 
-* Front-End:
+* Frontend:
 
-   Die Kombination aus Frontend- und Cache-Invalidierungen kann zu Leistungseinbußen führen. Durch Tests können diese Probleme verhindert werden.
+   Kombination aus Frontend- und Cache-Invalidierung kann zu Leistungseinbußen führen. Durch Tests können diese Probleme verhindert werden.
 
 Beachten Sie, dass für diesen Leistungstest Kenntnisse und Analysen des Ziels erforderlich sind:
 
@@ -422,11 +422,11 @@ Beachten Sie bei allen Implementierungen die folgenden Punkte:
 * Vermeiden Sie Duplikate, so gut es geht (siehe Lokalisierung), und berücksichtigen Sie, wenn sich Duplikate nicht umgehen lassen, zu wie vielen Knoten die Duplizierung führen wird.
 * Versuchen Sie, Ihre Inhalte so oft wie möglich mit Tags zu kennzeichnen, um die Abfrage zu optimieren.
 
-   Beispiel:
+   Zum Beispiel:
 
    `/content/products/france/fr/shoe/reebok/pump/46 SKU`
 
-   sollte ein Tag pro Inhaltsebene haben (d. h. Land, Sprache, Kategorie, Marke, Produkt). Suchen nach
+   sollte es ein Tag pro Inhaltsebene geben (d. h. Land, Sprache, Kategorie, Marke, Produkt). Die Suche nach
 
    `//element(*,my:Sku)[@country=’france’ and @language=’fr’`
 
@@ -472,7 +472,7 @@ Anhand dieser Daten kann der Käufer folgende Optionen auswählen, wenn er einen
 * Farb- und Größenvarianten
 * Menge
 
-#### Produkt-Landing-Pages {#product-landing-pages}
+#### Produkt-Landingpages {#product-landing-pages}
 
 Dabei handelt es sich um AEM-Seiten, die in erster Linie statische Informationen anzeigen, beispielsweise eine Einleitung und eine Übersicht mit Links zu den dazugehörigen Produktseiten.
 
@@ -488,7 +488,7 @@ Mit Proxyseiten können Sie die Struktur des Repositorys vereinfachen und den Sp
 
 Beim Erstellen eines Katalogs werden zehn Knoten pro Produkt eingesetzt, um individuelle Komponenten für jedes Produkt bereitzustellen, die Sie in AEM aktualisieren und anpassen können. Diese große Anzahl an Knoten kann problematisch werden, wenn Ihr Katalog mehrere hundert oder gar tausend Produkte enthält. Um diese Schwierigkeiten zu vermeiden, können Sie bei der Erstellung Ihres Katalogs Proxyseiten verwenden.
 
-Proxy-Seiten verwenden eine Zwei-Knoten-Struktur ( `cq:Page` und `jcr:content`), die keinen der tatsächlichen Produktinhalte enthält. Der Inhalt wird zur Anforderungszeit durch Referenzierung der Produktdaten und der Vorlagenseite generiert.
+Proxy-Seiten nutzen eine Struktur mit zwei Knoten (`jcr:content` und `cq:Page`), die keine Produktinhalte enthalten. Die Inhalte werden zur Abfragezeit durch Verweise auf die Produktdaten und die Vorlagenseite generiert.
 
 Dabei gilt allerdings: Sie können die Produktdaten nicht in AEM anpassen. Eine Standardvorlage (für Ihre Website definiert) wird verwendet.
 
@@ -539,7 +539,7 @@ Mit Promotions können Sie, in Verbindung mit Gutscheinen, Szenarien wie folgend
 
 Promotions werden in der Regel nicht von Produktinformationsmanagern, sondern von Marketingmanagern verwaltet:
 
-* Eine Promotion ist eine seitenbasierte Komponente, die mit der Websites-Konsole erstellt und bearbeitet wird. &quot;
+* Eine Promotion ist eine seitenbasierte Komponente, die mit der Websites-Konsole erstellt und bearbeitet wird. ``
 * Promotions umfassen:
 
    * eine Priorität
@@ -566,21 +566,21 @@ Eine Promotion kann entweder in einem Erlebnis oder direkt in der Kampagne erfas
 
    `/content/campaigns/geometrixx-outdoors/big-spender/ordervalueover100/free-shipping`
 
-   sich in einem Erlebnis befindet, wird also immer dann automatisch ausgelöst, wenn das Segment ( `ordervalueover100`) aufgelöst.
+   befindet sich in einem Erlebnis, wird also immer dann automatisch ausgelöst, wenn das Segment ( `ordervalueover100`) aufgelöst wird.
 
-* Wenn eine Promotion nicht in einem Erlebnis angezeigt wird (also nur in der Kampagne), kann sie nicht automatisch auf eine Zielgruppe angewendet werden. Es kann jedoch trotzdem ausgelöst werden, wenn der Käufer einen Gutschein in seinen Warenkorb eingibt und dieser Gutschein auf die Promotion verweist.
+* Wenn eine Promotion nicht in einem Erlebnis angezeigt wird (also nur in der Kampagne), kann sie nicht automatisch auf eine Zielgruppe angewendet werden. Sie kann jedoch dennoch ausgelöst werden, wenn ein Käufer einen Gutschein im Warenkorb eingibt und dieser Gutschein auf die Promotion verweist.
 
-   Beispielsweise die Promotion:
+   Zum Beispiel gilt für die Promotion:
 
    `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-   sich außerhalb eines Erlebnisses befindet und daher nie automatisch ausgelöst wird (d. h.: basierend auf der Segmentierung). Sie wird jedoch durch die Gutscheine referenziert, die in mehreren Erlebnissen innerhalb der Artikelkampagne enthalten sind. Wenn Sie diese Gutscheincodes in den Warenkorb eingeben, wird die Promotion ausgelöst.
+   sie befindet sich außerhalb eines Erlebnisses und wird daher nie automatisch ausgelöst wird (d. h.: basierend auf der Segmentierung). Es verweisen jedoch Gutscheine, die sich in mehreren Erlebnissen der Artikelkampagne befinden, auf diese Promotion. Werden diese Gutschein-Codes im Warenkorb eingegeben, wird die Promotion ausgelöst.
 
 >[!NOTE]
 >
 >[hybris promotions](https://www.hybris.com/modules/promotion) und [hybris vouchers](https://www.hybris.com/en/modules/voucher) decken alle Aspekte ab, die sich auf den Warenkorb auswirken und mit der Preisfestlegung in Verbindung stehen. Promotionspezifische Marketinginhalte (wie Banner) sind nicht Teil der hybris-Promotion.
 
-## Personalisierung    {#personalization}
+## Personalisierung  {#personalization}
 
 ### Kundenregistrierung und -konten {#customer-registration-and-accounts}
 
@@ -635,7 +635,7 @@ Single Sign-On wird bereitgestellt, damit Benutzer beim AEM- und beim eCommerce-
 
 Transaktionsdaten von der eCommerce-Engine werden mit personenbezogenen Daten zum Käufer kombiniert. AEM nutzt einige dieser Daten als Profildaten. Eine Formularaktion in AEM schreibt Daten zurück in die eCommerce-Engine.
 
-Es gibt eine Seite, auf der Sie Ihre Kontoinformationen einfach verwalten können. Sie können darauf zugreifen, indem Sie auf **Mein Konto** oben auf einer Geometrixx-Seite oder durch Navigieren zu `/content/geometrixx-outdoors/en/user/account.html`.
+Es gibt eine Seite, auf der Sie Ihre Kontodaten leicht verwalten können. Um die Seite anzuzeigen, klicken Sie oben auf der Geometrixx-Seite auf **Mein Konto** oder gehen Sie zu `/content/geometrixx-outdoors/en/user/account.html`.
 
 ![chlimage_1-13](/help/sites-administering/assets/chlimage_1-13.png)
 
@@ -651,7 +651,7 @@ Mit der Adressbuch-Komponente können Sie:
 
 Sie können auswählen, welche Adresse Sie als Standard festlegen möchten.
 
-Die Adressbuchkomponente ist über die **Mein Konto** Seite durch Klicken auf **Adressbuch** oder navigieren Sie zu `/content/geometrixx-outdoors/en/user/account/address-book.html`.
+Die Adressbuch-Komponente finden Sie auf der Seite **Mein Konto** durch Klicken auf **Adressbuch** oder indem Sie zu `/content/geometrixx-outdoors/en/user/account/address-book.html` gehen.
 
 ![chlimage_1-14](/help/sites-administering/assets/chlimage_1-14.png)
 
@@ -665,10 +665,10 @@ Das Adressbuch kommt zum Einsatz, wenn Sie den Warenkorb bezahlen:
 
 ![chlimage_1-15](/help/sites-administering/assets/chlimage_1-15.png)
 
-Adressen werden unten beibehalten `user_home/profile/addresses`.
-Für Alison Parker wäre dies beispielsweise unter /home/users/geometrixx/aparker@geometrixx.info/profile/addresses
+Adressen werden unter `user_home/profile/addresses` aufbewahrt.
+Die Adresse von Alison Parker befindet sich beispielsweise unter /home/users/geometrixx/aparker@geometrixx.info/profile/addresses.
 
-Sie können auswählen, welche Adresse Sie als Standard festlegen möchten. Diese Information wird im Käuferprofil gespeichert, nicht zusammen mit der Anschrift. Die Profileigenschaft `address.default` wird mit dem Pfad der ausgewählten Adresse für den Wert festgelegt.
+Sie können auswählen, welche Adresse Sie als Standard festlegen möchten. Diese Information wird im Käuferprofil gespeichert, nicht zusammen mit der Anschrift. Als Wert für die Profileigenschaft `address.default` wird der Pfad der ausgewählten Adresse festgelegt.
 
 ### Kundenspezifische Preisfestlegung {#customer-specific-pricing}
 
@@ -720,12 +720,12 @@ Der Warenkorb wird je nach verwendeter Engine gespeichert:
 
 In jedem Fall bleiben die Artikel im Warenkorb (und können wiederhergestellt werden), wenn sich der Käufer ab- und wieder anmeldet (allerdings nur auf demselben Rechner/im selben Browser). Beispiel:
 
-* Durchsuchen als `anonymous` und Produkte zum Warenkorb hinzufügen
-* anmelden als `Allison Parker` - ihr Warenkorb leer ist
+* Surfen Sie `anonymous` und fügen Sie Produkte zum Warenkorb hinzu.
+* Melden Sie sich als `Allison Parker` an. Ihr Warenkorb ist leer.
 * Fügen Sie Produkte zu ihrem Warenkorb hinzu.
-* Abmelden - der Warenkorb zeigt die Produkte für `anonymous`
+* Melden Sie sich ab. Der Warenkorb zeigt die Produkte für `anonymous` an.
 
-* Melden Sie sich erneut an als `Allison Parker` - ihre Erzeugnisse wiederhergestellt werden
+* Melden Sie sich erneut als `Allison Parker` an. Ihre Produkte werden wiederhergestellt.
 
 >[!NOTE]
 >
@@ -733,7 +733,7 @@ In jedem Fall bleiben die Artikel im Warenkorb (und können wiederhergestellt we
 
 >[!NOTE]
 >
->Es wird nicht empfohlen, die Wiederherstellung des Warenkorbinhalts mit dem `admin` -Konto, da dies mit dem `admin` Konto der eCommerce-Engine (z. B. hybris).
+>Wir raten dazu, die Wiederherstellung der Warenkorbinhalte nicht mit dem `admin`-Konto zu testen, da dabei ein Konflikt mit dem `admin`-Konto der E-Commerce-Engine (z. B. hybris) auftreten kann.
 
 >[!NOTE]
 >
@@ -773,15 +773,15 @@ Es werden unterschiedliche Daten gespeichert, beispielsweise:
 
 * **Steuer**
 
-   Der Betrag aller Steuern, die auf die Bestellung fällig werden.
+   Der für die Bestellung anfallende Steuerbetrag.
 
 * **Versand**
 
    Versandkosten.
 
-* **Insgesamt**
+* **Gesamtbetrag**
 
-   Gesamtwert der Bestellung; Bestellungen, Steuern und Versand.
+   Der Gesamtbetrag der Bestellung (bestellte Artikel, Steuer, Versand).
 
 * **Rechnungsadresse**
 
@@ -797,23 +797,23 @@ Es werden unterschiedliche Daten gespeichert, beispielsweise:
 
 * **Lieferadresse**
 
-   Die Anschrift, an die die Waren versandt werden sollen.
+   Die Adresse, an die die Waren geliefert werden sollen.
 
 * **Versandart**
 
-   die Versandart; z. B. Land, Meer oder Luft.
+   Die Versandart, z. B. Post, Luftfracht, Seefracht.
 
-* **Nachverfolgungsnummer**
+* **Tracking-Nummer**
 
-   Jede von der Schifffahrtsgesellschaft verwendete Trackingnummer.
+   Eine Tracking-Nummer des Versandunternehmens für die Sendungsnachverfolgung
 
-* **Nachverfolgungslink**
+* **Tracking-Link**
 
-   Der Link, der zum Tracking der Bestellung während des Versands verwendet wird.
+   Der Link, der während des Versands zur Sendungsnachverfolgung genutzt wird.
 
 >[!NOTE]
 >
->Welche Felder im Assistenten „Auftrag erstellen“ verwendet werden, hängt davon ab, ob für den Ort eine Touch-optimierte Strukturvorlage definiert ist. Im generischen Beispiel ist dies zu finden unter:
+>Welche Felder im Assistenten „Auftrag erstellen“ verwendet werden, hängt davon ab, ob für den Ort eine Touch-optimierte Strukturvorlage definiert ist. Im generischen Beispiel findet sich diese unter:
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 Wenn eine Bestellung in AEM gespeichert wird, zeigt die Bestellungs-Konsole Folgendes für jede Bestellung an:
@@ -835,7 +835,7 @@ Nachdem sie eine Bestellung aufgegeben haben, kehren Käufer häufig zurück, um
 
 Nach dem Erhalt der Lieferung möchten Käufer möglicherweise die Bestellungen einsehen, die sie in einem bestimmten Zeitraum aufgegeben haben.
 
-Die Erfüllung und die Nachverfolgung von Bestellungen werden in der Regel von der eCommerce-Engine verwaltet. Informationen können AEM über die Komponente Auftragsverlauf angezeigt werden, die alle relevanten Details einschließlich der angewendeten Gutscheine und Promotions anzeigt. Beispiel:
+Die Erfüllung und die Nachverfolgung von Bestellungen werden in der Regel von der eCommerce-Engine verwaltet. Informationen können über die Bestellverlauf-Komponente in AEM angezeigt werden, die alle relevanten Details aufführt, einschließlich der angewendeten Gutscheine und Promotions. Beispiel:
 
 ![chlimage_1-17](/help/sites-administering/assets/chlimage_1-17.png)
 
@@ -849,7 +849,7 @@ Das eCommerce-System verwaltet dann den Bezahlvorgang mit Daten aus den AEM-Form
 
 Zahlungsdaten, einschließlich Kreditkartendaten, werden häufig von der eCommerce-Engine verwaltet. AEM leitet solche Transaktionsdaten an die Engine weiter (von wo aus sie dann zu einem Zahlungsdienstleister weitergeleitet werden).
 
-Die Einhaltung von PCI-Richtlinien (Payment Card Industry) kann erreicht werden.
+Die Einhaltung des Payment Card Industry (PCI)-Standards kann erzielt werden.
 
 ### Bestellbestätigung {#confirmation-of-order}
 
@@ -866,4 +866,4 @@ Wenn Sie eine tiefergreifende Implementierung benötigen, können Sie:
 * die Standard-Such-Komponente um die benötigten Funktionen erweitern oder
 * die Suchmethode im `CommerceService` implementieren und dann die eCommerce-Such-Komponente auf der Suchseite nutzen
 
-Bei Verwendung einer eCommerce-Engine kann die eCommerce-Such-API vollständig in die eCommerce-Engine-Lösung implementiert werden, sodass Sie die vordefinierte eCommerce-Suchkomponente verwenden können. Mit der Facettensuche können Sie JCR und/oder die Engine durchsuchen:
+Bei Nutzung einer E-Commerce-Engine kann die E-Commerce-Such-API vollständig in die E-Commerce-Engine-Lösung implementiert werden, sodass Sie die vorkonfigurierte E-Commerce-Such-Komponente nutzen können. Mit der Facettensuche können Sie JCR und/oder die Engine durchsuchen:

@@ -13,7 +13,7 @@ exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 81%
+ht-degree: 97%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 81%
 
 Senden Sie zum Abrufen von Seiteninformationen eine Anforderung an das PageInfo-Servlet, um die Seitenmetadaten im JSON-Format zu erhalten.
 
-Das PageInfo-Servlet gibt Informationen zu Ressourcen im Repository zurück. Das Servlet ist an die URL gebunden `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` und verwendet die `path` Parameter zur Identifizierung der Ressource. Die folgende Beispiel-URL gibt Informationen zum `/content/we-retail/us/en` node:
+Das PageInfo-Servlet gibt Informationen über Ressourcen im Repository zurück. Das Servlet ist an die URL `https://<server>:<port>/libs/wcm/core/content/pageinfo.json` gebunden und verwendet den Parameter `path`, um die Ressource zu identifizieren. Die folgende Beispiel-URL gibt Informationen zum Knoten `/content/we-retail/us/en` zurück:
 
 ```shell
 http://localhost:4502/libs/wcm/core/content/pageinfo.json?path=/content/we-retail/us/en
@@ -50,21 +50,21 @@ Seitenkomponenten können einem oder mehreren `com.day.cq.wcm.api.PageInfoProvid
 
 >[!NOTE]
 >
->Ähnlich wie PageInfoProvider-Dienste verwenden Sie ListInfoProvider-Dienste, um Listen von Informationen im JSON-Format zu aktualisieren. (Siehe [Anpassen der Website-Administrationskonsole](/help/sites-developing/customizing-siteadmin.md).)
+>Ähnlich wie PageInfoProviders-Dienste verwenden Sie ListInfoProviders-Dienste, um Listen von Informationen im JSON-Format zu aktualisieren. (Siehe [Anpassen der Website-Administrationskonsole](/help/sites-developing/customizing-siteadmin.md).)
 
 ## Standardmäßige PageInfoProvider-Dienste {#default-page-information-providers}
 
-Die `/libs/foundation/components/page` -Komponente mit den folgenden PageInfoProvider-Diensten verknüpft ist:
+Die `/libs/foundation/components/page`-Komponente ist den folgenden PageInfoProvider-Diensten zugeordnet:
 
-* **DefaultPageStatusProvider-Dienst**: Informationen zum Seitenstatus, beispielsweise ob die Seite gesperrt ist, die Nutzlast eines aktiven Workflows ist oder welche Workflows für die Seite zur Verfügung stehen.
-* **LiveRelationshipInfoProvider-Dienst**: Informationen zum Multi-Site Management (MSM), beispielsweise ob die Seite Teil eines Blueprints ist und ob es sich um eine Live Copy handelt.
-* **ContentLanguageServlet-Dienst**: Die Sprache der aktuellen Seite und Informationen zu jeder Sprache, in der die Seite verfügbar ist.
-* **WorkflowStatusProvider-Dienst**: Statusinformationen zum ausgeführten Workflow, der die Seite als Nutzlast aufweist.
-* **WorkflowPackageInfoProvider-Dienst**: Informationen zu jedem Workflow-Paket, das im Repository gespeichert ist, und dazu, ob die einzelnen Pakete die aktuelle Ressource enthalten.
-* **EmulatorInfoProvider-Dienst**: Informationen zu den für diese Ressource verfügbaren Emulatoren für mobile Geräte. Wenn die Seitenkomponente keine mobilen Seiten rendert, sind keine Emulatoren verfügbar.
-* **AnnotationsInfoProvider-Dienst**: Informationen über Anmerkungen, die sich auf der Seite befinden.
+* **Default Page Status Provider-Dienst**: Informationen zum Seitenstatus, beispielsweise ob die Seite gesperrt ist, die Payload eines aktiven Workflows ist oder welche Workflows für die Seite zur Verfügung stehen.
+* **Live Relationship Info Provider-Dienst**: Informationen zum Multi-Site Management (MSM), beispielsweise ob die Seite Teil einer Blueprint ist und ob es sich um eine Live Copy handelt.
+* **Content Language Servlet-Dienst**: Die Sprache der aktuellen Seite und Informationen zu jeder Sprache, in der die Seite verfügbar ist.
+* **Workflow Status Provider-Dienst**: Statusinformationen zum ausgeführten Workflow, der die Seite als Payload aufweist.
+* **Workflow Package Info Provider-Dienst**: Informationen zu jedem Workflow-Paket, das im Repository gespeichert ist, und dazu, ob die einzelnen Pakete die aktuelle Ressource enthalten.
+* **Emulator Info Provider-Dienst**: Informationen zu den für diese Ressource verfügbaren Emulatoren für mobile Geräte. Wenn die Seitenkomponente keine mobilen Seiten rendert, sind keine Emulatoren verfügbar.
+* **Annotations Info Provider-Dienst**: Informationen über Anmerkungen, die sich auf der Seite befinden.
 
-Beispielsweise gibt das PageInfo-Servlet die folgende JSON-Antwort für die `/content/we-retail/us/en` node:
+Beispielsweise gibt das PageInfo-Servlet die folgende JSON-Antwort für den Knoten `/content/we-retail/us/en` zurück:
 
 ```
 {
@@ -471,7 +471,7 @@ Beispielsweise gibt das PageInfo-Servlet die folgende JSON-Antwort für die `/co
 
 ## Filtern von Informationen zu Workflow-Paketen {#filtering-workflow-package-information}
 
-Konfigurieren Sie den Dienst Day CQ WCM Workflow Package Info Provider so, dass er nur Informationen zu den Workflow-Paketen zurückgibt, an denen Sie interessiert sind. Standardmäßig gibt der Workflow Package Info Provider-Dienst Informationen zu jedem Workflow-Paket im Repository zurück. Die Serverressourcen werden weniger beansprucht, wenn nur ein Teil der Workflow-Pakete durchlaufen wird.
+Konfigurieren Sie den Day CQ WCM Workflow Package Info Provider-Dienst so, dass er ausschließlich Informationen zu den für Sie relevanten Workflow-Paketen zurückgibt. Standardmäßig gibt der Workflow Package Info Provider-Dienst Informationen zu allen Workflow-Paketen im Repository zurück. Die Serverressourcen werden weniger beansprucht, wenn nur ein Teil der Workflow-Pakete durchlaufen wird.
 
 >[!NOTE]
 >
@@ -494,7 +494,7 @@ Der Dienst wendet das kumulierte Ergebnis aller Filter an. Beispielsweise werden
 
 >[!NOTE]
 >
->Beim Arbeiten mit AEM gibt es mehrere Möglichkeiten, die Konfigurationseinstellungen für solche Dienste zu verwalten. Weitere Informationen hierzu finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+>Beim Arbeiten mit AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für diese Dienste. Siehe [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md) für ausführliche Informationen.
 
 Gehen Sie beispielsweise zum Konfigurieren des Diensts mithilfe von CRXDE Lite wie folgt vor:
 
@@ -516,7 +516,7 @@ Gehen Sie wie folgt vor, um den Dienst in Ihrer Projektquelle zu konfigurieren:
 
 1. Suchen oder erstellen Sie den Konfigurationsordner für Ihre AEM-Anwendung in Ihrer Projektquelle.
 
-   Wenn Sie beispielsweise den Archetyp multimodule des Inhaltspaket-Maven-Plug-ins zum Erstellen Ihres Projekts verwendet haben, lautet der Ordnerpfad . `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   Wenn Sie beispielsweise den Archetyp „multimodule“ des Content Package Maven-Plug-ins zum Erstellen Ihres Projekts verwenden, lautet der Ordnerpfad `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Erstellen Sie im Ordner „config“ eine Textdatei mit dem Namen com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml.
 1. Kopieren Sie den folgenden Text in die Datei:
 
@@ -528,7 +528,7 @@ Gehen Sie wie folgt vor, um den Dienst in Ihrer Projektquelle zu konfigurieren:
     workflowpackageinfoprovider.filter="[]"/>
    ```
 
-1. Innerhalb der Klammern (`[]`), die die `workflowpackageinfoprovider.filter` -Eigenschaft, geben Sie eine kommagetrennte Liste mit Filterwerten ein, die dem folgenden Beispiel ähnelt:
+1. Geben Sie innerhalb der Klammern (`[]`), die die Eigenschaft `workflowpackageinfoprovider.filter` umgeben, eine kommagetrennte Liste von Filterwerten ähnlich dem folgenden Beispiel ein:
 
    `workflowpackageinfoprovider.filter="[-/etc/workflow/packages(/.*)?,+/etc/workflow/packages/Editions(/.*)?]"/>`
 
@@ -540,9 +540,9 @@ Erstellen Sie einen benutzerdefinierten PageInfoProvider-Dienst, um Seitenmetada
 
 1. Implementieren Sie die Schnittstelle `com.day.cq.wcm.api.PageInfoProvider`.
 1. Bündeln Sie die Klasse und stellen Sie sie als OSGi-Dienst bereit.
-1. Erstellen Sie eine Seitenkomponente in Ihrer Anwendung. Verwendung `foundation/components/page` als Wert der `sling:resourceSuperType` -Eigenschaft.
+1. Erstellen Sie eine Seitenkomponente in Ihrer Anwendung. Verwenden Sie `foundation/components/page` als Wert der `sling:resourceSuperType`-Eigenschaft.
 
-1. Fügen Sie einen Knoten unter dem Komponentenknoten mit dem Namen `cq:infoProviders`.
+1. Fügen Sie unter dem Komponentenknoten `cq:infoProviders` einen Knoten hinzu.
 1. Fügen Sie unter dem Knoten `cq:infoProviders` einen Knoten für Ihren PageInfoProvider-Dienst hinzu. Sie können einen beliebigen Namen für den Knoten angeben.
 1. Fügen Sie die folgende Eigenschaft zu Ihrem PageInfoProvider-Knoten hinzu:
 
@@ -605,7 +605,7 @@ Das folgende Beispiel in CRXDE Lite zeigt die Seitenkomponente, die für die Ver
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
-Der PageUrlInfoProvider-Dienst gibt die folgenden Daten für die `/content/we-retail/us/en` node:
+Der PageUrlInfoProvider-Dienst gibt die folgenden Daten für den Knoten `/content/we-retail/us/en` zurück:
 
 ```xml
 "URLs": {

@@ -1,11 +1,11 @@
 ---
 title: Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implementierung
 description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
-exl-id: 9a156a17-8403-40fc-9bd0-dd82fb7b2235
-source-git-commit: 40922b222e15aa3ef12b54d65addff32b679d36e
+exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '379'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Asset-Ordner werden verwendet, um [herkömmliche Inhalts-Assets](/help/assets/ma
 
 Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Erstellung zu organisieren. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur einen Ordner erstellen.
 
-1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü die Option **Navigation -> Assets -> Dateien**.
+1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü **Tools > Assets > Dateien** aus.
 1. Tippen oder klicken Sie auf **Erstellen > Ordner**.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihren Ordner an.
    * Der **Titel** sollte beschreibend sein.

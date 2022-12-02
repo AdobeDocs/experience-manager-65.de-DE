@@ -10,13 +10,13 @@ exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1801'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 # Rich-Text-Editor {#rich-text-editor}
 
-Der Rich-Text-Editor ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Im Editor können die folgenden Komponenten erstellt werden:
+Der Rich-Text-Editor ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Sie können verschiedene Komponenten erstellen, einschließlich:
 
 * Text
 * Textbild
@@ -30,7 +30,7 @@ Das Editor-Dialogfeld arbeitet nach dem WYSIWYG-Prinzip und bietet eine Vielzahl
 
 >[!NOTE]
 >
->Welche Features verfügbar sind, richtet sich nach dem jeweiligen Projekt, Ihre spezielle Installation kann also Abweichungen aufweisen.
+>Welche Funktionen verfügbar sind, richtet sich nach dem jeweiligen Projekt. Ihre spezielle Installation kann also Abweichungen aufweisen.
 
 ## Bearbeiten im Kontext {#in-place-editing}
 
@@ -56,7 +56,7 @@ Derzeit ist die Bearbeitung im Kontext für Seitenelemente möglich, die durch d
 
 ## Funktionen des Rich-Text-Editors {#features-of-the-rich-text-editor}
 
-Der Rich-Text-Editor bietet eine Reihe von Funktionen, diese [von der Konfiguration abhängig](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
+Der Rich-Text-Editor bietet verschiedene Funktionen, die [von der Konfiguration](/help/sites-administering/rich-text-editor.md) der einzelnen Komponente abhängen. Die Funktionen sind sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche verfügbar.
 
 ### Grundlegende Zeichenformate {#basic-character-formats}
 
@@ -84,7 +84,7 @@ Ein Stil kann auf eine bestimmte Zeichenfolge angewendet werden (ein Stil ist CS
 
 ![cq55_rte_styles_use](assets/cq55_rte_styles_use.png)
 
-Ein Format hingegen wird auf einen gesamt Textabsatz angewendet (Format sind HTML-basiert):
+Ein Format hingegen wird auf einen gesamten Textabsatz angewendet (Formate sind HTML-basiert):
 
 ![cq55_rte_paragraph_use](assets/cq55_rte_paragraph_use.png)
 
@@ -104,11 +104,12 @@ Die Standardfunktionen **[!UICONTROL Ausschneiden]** und **[!UICONTROL Kopieren]
 
 * Ausschneiden (Strg+X)
 * Kopieren (Strg-C)
-* Einfügen Dies ist der standardmäßige Einfügemechanismus (Strg+V) für die Komponente. bei der nativen Installation ist dies so konfiguriert, dass [!UICONTROL Aus Word einfügen].
+* Einfügen
+Dies ist das Standard-Einfügeverfahren (Strg+V) für die Komponente. Für Standardinstallationen ist [!UICONTROL Aus Word einfügen] festgelegt.
 
-* Als Text einfügen: Entfernt alle Stile und Formatierungen, um nur den Nur-Text einzufügen.
+* Als Text einfügen: Hierbei werden alle Stile und Formatierungen entfernt und der Inhalt wird als reiner Text eingefügt.
 
-* Aus Word einfügen: Dadurch wird der Inhalt als HTML eingefügt (mit einigen erforderlichen Neuformatierungen).
+* Aus Word einfügen: Hierbei wird der Inhalt im HTML-Format (mit einigen erforderlichen Umformatierungen) eingefügt.
 
 ### Rückgängig/Wiederholen {#undo-redo}
 
@@ -156,7 +157,7 @@ Der Stil der Liste kann einfach dadurch geändert werden, dass Sie den Cursor in
 
 ![](do-not-localize/cq55_rte_links.png)
 
-Ein Link zu einer URL (entweder innerhalb Ihrer Website oder an einer externen Position) wird durch Hervorhebung des erforderlichen Texts und anschließendes Klicken auf das Hyperlink-Symbol generiert:
+Ein Link zu einer URL (entweder innerhalb der Website oder zu einer externen Adresse) wird dadurch erstellt, dass Sie den gewünschten Text markieren und dann auf das Hyperlink-Symbol klicken:
 
 ![](do-not-localize/chlimage_1-9.png)
 
@@ -166,17 +167,17 @@ Daraufhin wird ein Dialogfeld angezeigt, in dem Sie die Ziel-URL angeben können
 
 Sie haben folgende Möglichkeiten:
 
-* Direktes Eingeben eines URI
-* Verwenden Sie die Sitemap, um eine Seite innerhalb Ihrer Website auszuwählen.
-* Geben Sie den URI ein und hängen Sie dann den Zielanker an. z. B. `www.TargetUri.org#AnchorName`
-* Geben Sie nur einen Anker ein (um auf &quot;die aktuelle Seite&quot;zu verweisen). Beispiel: `#anchor`
-* Suchen Sie im Content Finder nach einer Seite und ziehen Sie dann das Seitensymbol in das Dialogfeld &quot;Hyperlink&quot;.
+* Direkte Eingabe eines URI
+* Verwendung der Sitemap zur Auswahl einer Seite innerhalb der Website
+* Eingabe des URI, dann Anfügen des Ziel-Ankers, z. B. `www.TargetUri.org#AnchorName`
+* Eingabe eines reinen Ankers (zum Verweis auf die aktuelle Seite), z. B. `#anchor`
+* Suche nach einer Seite im Content Finder, deren Seitensymbol dann per Drag-and-Drop in das Dialogfeld „Hyperlink“ gezogen wird
 
 >[!NOTE]
 >
->Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. In einer Standardinstallation sind dies `https://`, `ftp://`und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
+>Der URI kann jedes der Protokolle vorangestellt werden, die für die jeweilige Installation konfiguriert sind. Bei einer Standardinstallation sind dies `https://`, `ftp://` und `mailto:`. Protokolle, die nicht für die jeweilige Installation konfiguriert sind, werden zurückgewiesen und als ungültig markiert.
 
-Um den Hyperlink zu entfernen, klicken Sie auf eine beliebige Stelle innerhalb des Link-Texts und klicken Sie auf das Symbol[!UICONTROL Verknüpfung aufheben]:
+Um den Hyperlink zu entfernen, klicken Sie auf eine beliebige Stelle innerhalb des Link-Texts und klicken Sie auf das Symbol [!UICONTROL Verknüpfung aufheben]:
 
 ![](do-not-localize/chlimage_1-10.png)
 
@@ -248,7 +249,7 @@ Tabellen können auf zwei Arten eingefügt werden:
 
    >[!NOTE]
    >
-   >Obwohl Tabellen im RTE verfügbar sind, wird empfohlen, die Variable **Verzeichnis** -Komponente beim Erstellen von Tabellen.
+   >Obwohl im RTE keine Tabellen verfügbar sind, empfiehlt es sich, beim Erstellen von Tabellen die Komponente **Tabelle** zu verwenden.
 
 Sowohl in der Komponente **Text** als auch in der Komponente **Tabelle** sind die Tabellenoptionen über das Kontextmenü verfügbar, das in der Regel durch Klicken mit der rechten Maustaste auf die Tabelle aufgerufen wird. Beispiel:
 
@@ -261,7 +262,7 @@ Sowohl in der Komponente **Text** als auch in der Komponente **Tabelle** sind di
 Dies sind die tabellenspezifischen Funktionen:
 
 * [Tabelleneigenschaften](#table-properties)
-* [Zellen-Eigenschaften](#cell-properties)
+* [Zelleneigenschaften](#cell-properties)
 * [Zeilen hinzufügen oder löschen](#add-or-delete-rows)
 * [Spalten hinzufügen oder löschen](#add-or-delete-columns)
 * [Ganze Zeilen oder Spalten auswählen](#selecting-entire-rows-or-columns)
@@ -282,11 +283,11 @@ Sie können die grundlegenden Eigenschaften der Tabelle angeben und dann auf **O
 
 * **Höhe**: Die Gesamthöhe der Tabelle.
 
-* **Rahmen**: Die Größe des Tabellenrahmens.
+* **Rahmen**: Die Rahmenbreite der Tabelle.
 
-* **Zellauffüllung**: Dadurch wird der Leerraum zwischen dem Zelleninhalt und den Rändern definiert.
+* **Textabstand**: Die Breite des Leerraums zwischen Zelleninhalt und Rahmen.
 
-* **Zellenabstand**: Dies definiert den Abstand zwischen den Zellen.
+* **Zellenabstand**: Der Abstand zwischen den Zellen.
 
 >[!NOTE]
 >
@@ -294,9 +295,9 @@ Sie können die grundlegenden Eigenschaften der Tabelle angeben und dann auf **O
 
 >[!CAUTION]
 >
->Adobe empfiehlt, eine Tabellenbreite zu definieren.
+>Adobe empfiehlt, eine Breite für die Tabelle anzugeben.
 
-#### Zellen-Eigenschaften {#cell-properties}
+#### Zelleneigenschaften {#cell-properties}
 
 ![cq55_rte_cellproperties_icon](assets/cq55_rte_cellproperties_icon.png)
 
@@ -306,10 +307,10 @@ Die Eigenschaften einer Zelle bzw. einer Reihe von Zellen können konfiguriert w
 
 * **Breite**
 * **Höhe**
-* **Horizontale Ausrichtung** - links, zentriert oder rechts
-* **Vertikale Ausrichtung** - Oben, Mitte, Unten oder Grundlinie
-* **Zellentyp**- Daten oder Kopfzeile
-* **Anwenden auf:** Einzelne Zelle, gesamte Zeile, gesamte Spalte
+* **Horizontale Ausrichtung**: Links, Mitte oder rechts
+* **Vertikale Ausrichtung**: Oben, Mitte, unten oder Grundlinie
+* **Zellentyp**: Daten oder Kopfzeile
+* **Anwenden auf**: Einzelne Zelle, gesamte Zeile, gesamte Spalte
 
 #### Zeilen hinzufügen oder löschen {#add-or-delete-rows}
 
@@ -367,7 +368,7 @@ Durch Erstellen einer verschachtelten Tabelle wird eine neue separate Tabelle in
 
 ![cq55_rte_removtable](assets/cq55_rte_removetable.png)
 
-Verwenden Sie die Option , um die Tabelle aus dem **[!UICONTROL Text]** -Komponente.
+Verwenden Sie die Option, um die Tabelle aus der Komponente **[!UICONTROL Text]** zu entfernen.
 
 ### Sonderzeichen {#special-characters}
 
@@ -389,7 +390,7 @@ Betrachten Sie z. B. folgenden Text:
 
 ![cq55_rte_sourcemode_1](assets/cq55_rte_sourcemode_1.png)
 
-Im Quellmodus hat nimmt dieser Text folgende Gestalt an (oft ist der HTML-Quelltext wesentlich länger und Sie müssen einen Bildlauf durchführen):
+Im Quellmodus hat dieser Text folgende Gestalt (oft ist der HTML-Quelltext wesentlich länger und Sie müssen einen Bildlauf durchführen):
 
 ![cq55_rte_sourcemode_2](assets/cq55_rte_sourcemode_2.png)
 

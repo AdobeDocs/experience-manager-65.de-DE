@@ -13,7 +13,7 @@ exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
 source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
 source-wordcount: '322'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Mit AEM können Sie standardmäßig eine Integration in die folgenden Adobe-frem
 * Twitter – Social Networking
 * YouTube – Videofreigabe
 
-Darüber hinaus können Sie AEM in die [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+Darüber hinaus können Sie AEM mit [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) integrieren.
 
 ## Integration mit Salesforce {#integrating-with-salesforce}
 
@@ -61,7 +61,7 @@ Informationen zur Integration Ihrer AEM-Site in ExactTarget finden Sie unter [Ko
 
 Facebook und Twitter sind beliebte Social-Networking-Dienste. Die Integration von AEM in Facebook und Twitter ermöglicht Unternehmen die Bereitstellung einer Facebook- oder Twitter-Anmeldeoption zu eigenen digitalen Präsenzen und die anschließende Personalisierung des Benutzererlebnisses auf Grundlage der Profilinformationen. Marketingexperten können Profilinformationen mit Daten aus zusätzlichen Quellen wie einem CRM-System oder Websiteprofil kombinieren, um eine einheitliche Sicht auf den Kunden zu ermöglichen.
 
-Siehe [Anmeldung über soziale Netzwerke](/help/communities/social-login.md) für weitere Informationen.
+Siehe [Social-Media-Anmeldungen](/help/communities/social-login.md).
 
 ## Integrieren mit sonstigen Anbietern {#integrating-with-other-providers}
 

@@ -14,7 +14,7 @@ exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
 workflow-type: tm+mt
 source-wordcount: '899'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Es gibt einen separaten Seiteneditor in der klassischen Benutzeroberfläche, der
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
-## Aufrufen der Hilfe   {#accessing-help}
+## Aufrufen der Hilfe {#accessing-help}
 
 Verschiedene **Hilfequellen** können direkt aus AEM aufgerufen werden:
 
@@ -102,7 +102,7 @@ In dieser Registerkarte werden sämtliche Produkte aufgeführt. Nachdem Sie eine
 
 ### Suchen nach Seiten {#finding-pages}
 
-Auf dieser Registerkarte werden alle Seiten angezeigt. Doppelklicken Sie auf eine beliebige Seite, um sie zur Bearbeitung zu öffnen.
+Auf dieser Registerkarte werden alle Seiten aufgelistet. Doppelklicken Sie auf eine beliebige Seite, um diese zur Bearbeitung zu öffnen.
 
 ![chlimage_1-115](assets/chlimage_1-115.png)
 
@@ -134,9 +134,9 @@ entspricht einem einzelnen Zeichen.
 
 >[!NOTE]
 >
->Es gibt eine Pseudoeigenschaft „name“, die für Platzhalter-Suchen verwendet werden muss.
+>Es gibt eine Pseudoeigenschaft „name“, die für eine Platzhalter-Suche verwendet werden muss.
 
-Wenn beispielsweise ein Bild mit dem Namen verfügbar ist:
+Wenn z. B. ein Bild mit folgendem Namen verfügbar ist:
 
 `ad-nmvtis.jpg`
 
@@ -147,11 +147,11 @@ wird dies mit dem folgenden Suchmuster gefunden (und ebenso alle anderen Bilder,
 beim Zeichenabgleich wird *nicht* zwischen Groß- und Kleinschreibung unterschieden.
 
 * `name:ad?nm??is.*`
-können Sie eine beliebige Anzahl von Platzhaltern in einer Abfrage verwenden.
+Sie können in einer Suchabfrage eine beliebige Anzahl an Platzhaltern verwenden.
 
 >[!NOTE]
 >
->Sie können auch [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html) suchen.
+>Sie können auch die [SQL2](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/commons/query/sql2/package-summary.html)-Suche verwenden.
 
 ## Anzeigen von Verweisen {#showing-references}
 
@@ -163,7 +163,7 @@ So zeigen Sie direkte Seitenverweise an:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. Auswählen **Verweise anzeigen...** AEM öffnet das Fenster Verweise und zeigt an, welche Seiten auf die ausgewählte Seite verweisen, einschließlich der Pfade.
+1. Wählen Sie **Verweise einblenden...** aus. AEM öffnet das Fenster „Verweise“ und zeigt an, welche Seiten auf die ausgewählte Seite verweisen, einschließlich deren Pfadangaben.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
@@ -184,7 +184,7 @@ Das **Auditprotokoll** kann über die Registerkarte **Informationen** im Sidekic
 
 ## Seiteninformationen {#page-information}
 
-Die Website-Konsole [liefert Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) wie Veröffentlichung, Änderung, gesperrt, Live Copy usw.
+Die Website-Konsole enthält auch [Informationen zum aktuellen Status der Seite](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console), wie zum Beispiel Veröffentlichung, Bearbeitung, gesperrt und Live Copy.
 
 ## Seitenmodi {#page-modes}
 
@@ -210,7 +210,7 @@ In diesem Modus können Sie das Design der Seite bearbeiten, indem Sie die verf�
 >* [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md)
 >* [ClientContext](/help/sites-administering/client-context.md)
 >* Websites - öffnet die Konsole „Websites“.
->* Neu laden - aktualisiert die Seite.
+>* Neu laden – aktualisiert die Seite.
 
 
 ## Tastaturbefehle {#keyboard-shortcuts}

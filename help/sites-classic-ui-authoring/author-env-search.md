@@ -14,7 +14,7 @@ exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Um den Suchbereich aufzurufen, klicken Sie in der jeweiligen Konsole im linken B
 
 ![chlimage_1-101](assets/chlimage_1-101.png)
 
-Über das Suchfeld können Sie alle Seiten Ihrer Website durchsuchen. Es enthält Felder und Widgets für Folgendes:
+Im Suchbereich können Sie alle Seiten Ihrer Website durchsuchen. Er enthält Felder und Widgets für folgende Zwecke:
 
 * **Volltext**: Suche nach dem angegebenen Text
 * **Geändert nach/vor**: Suche nur nach den Seiten, die zwischen bestimmten Datumsangaben geändert wurden
@@ -77,7 +77,7 @@ In der Konsole **Websites** ermöglicht Ihnen die Menüoption **Suchen und Erset
    * Angabe, ob Groß -und Kleinschreibung beachtet werden sollen
    * Angabe, ob nur ganze Wörter gefunden werden sollen (andernfalls werden auch Wortteile von der Suche erfasst)
 
-   Klicken **Vorschau** listet auf, wo der Begriff gefunden wurde. Sie können bestimmte Instanzen auswählen/löschen, die ersetzt werden sollen:
+   Durch Klicken auf **Vorschau** werden die Stellen aufgelistet, an denen der Begriff gefunden wurde. Sie können bestimmte Instanzen markieren bzw. deren Markierung aufheben:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
@@ -90,7 +90,7 @@ Der Standardbereich für das Servlet „Suchen und Ersetzen“ deckt die folgend
 * `jcr:text`
 * `text`
 
-Der Umfang kann mithilfe der Apache Felix Web Management Console geändert werden (z. B. unter `https://localhost:4502/system/console/configMgr`). Auswählen `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` und konfigurieren Sie den Umfang nach Bedarf.
+Dieser Bereich kann mithilfe der Apache Felix Web Management Console geändert werden (z. B. unter`https://localhost:4502/system/console/configMgr`). Wählen Sie `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` aus und konfigurieren Sie den Bereich nach Bedarf.
 
 >[!NOTE]
 >

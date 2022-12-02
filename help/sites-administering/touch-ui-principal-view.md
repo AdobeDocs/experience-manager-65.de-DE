@@ -14,7 +14,7 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '699'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -66,7 +66,7 @@ Hier wählen wir einen Pfad aus, in dem wir eine Berechtigung für **dam-users**
 
 ![](assets/sase-1.png)
 
-Nachdem der Pfad ausgewählt wurde, kehrt der Workflow zu diesem Bildschirm zurück, wo der Benutzer dann eine oder mehrere Berechtigungen aus den verfügbaren Namespaces auswählen kann (z. B. `jcr`, `rep` oder `crx`), wie unten dargestellt.
+Nachdem der Pfad ausgewählt wurde, wechselt der Workflow zurück zu diesem Bildschirm, wobei der Benutzer dann eine oder mehrere Berechtigungen aus den verfügbaren Namespaces (z. B. `jcr`, `rep` oder `crx`) auswählen kann, wie weiter unten dargestellt.
 
 Berechtigungen können hinzugefügt werden, indem Sie mit dem Textfeld suchen und dann aus der Liste auswählen.
 
@@ -88,13 +88,13 @@ Zusätzlich zur Liste der Berechtigungen und dem Berechtigungstyp für einen bes
 
 >[!NOTE]
 >
->Weitere Informationen zu den einzelnen Beschränkungen finden Sie unter [Jackrabbit Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Weitere Informationen zu den einzelnen Beschränkungen finden Sie in der [Jackrabbit Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 Einschränkungen können wie unten dargestellt hinzugefügt werden, indem Sie den Einschränkungstyp auswählen, den Wert eingeben und auf das **Pluszeichen** klicken.
 
 ![](assets/sapte-1.png) ![](assets/opt-1.png)
 
-Der neue ACE wird wie unten dargestellt in der Zugriffsteuerungsliste angezeigt. Beachten Sie Folgendes: `jcr:write` ist eine aggregierte Berechtigung, die Folgendes umfasst: `jcr:removeNode` das oben hinzugefügt wurde, aber unten nicht angezeigt wird, da es unter `jcr:write`.
+Der neue ACE wird wie unten dargestellt in der Zugriffsteuerungsliste angezeigt. Beachten Sie, dass `jcr:write` eine aggregierte Berechtigung ist, die `jcr:removeNode` enthält. Diese Berechtigung wurde oben hinzugefügt, wird aber unten nicht angezeigt, da sie unter `jcr:write` aufgeführt wird.
 
 ### Bearbeiten von ACEs {#editing-aces}
 
@@ -112,7 +112,7 @@ Hier fügen wir die Berechtigung `addChildNodes` für **dam-users** im angegeben
 
 ![](assets/image2019-3-21_0-45-35.png)
 
-Änderungen können gespeichert werden, indem Sie auf **Speichern** oben rechts und die Änderungen werden in den neuen Berechtigungen für &quot;dam-users&quot;übernommen, wie unten dargestellt:
+Änderungen können gespeichert werden, indem Sie oben rechts auf die Schaltfläche **Speichern** klicken. Die geänderten Berechtigungen für **dam-users** werden wie unten dargestellt übernommen:
 
 ![](assets/zece-1.png)
 

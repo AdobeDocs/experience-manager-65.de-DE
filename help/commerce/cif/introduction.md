@@ -6,7 +6,7 @@ exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
 workflow-type: tm+mt
 source-wordcount: '870'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ Mit Adobe Experience Manager Content and Commerce können Marken schneller skali
 
 ## So bringt Content and Commerce Kunden auf Erfolgskurs
 
-Angesichts der stetig steigenden Kundenerwartungen an Erlebnisse im Online-Handel sind Marken gezwungen, differenzierte Erlebnisse zu bieten und schneller mehr Inhalte bereitzustellen. Die Implementierung einer Content-Management-Plattform ist jedoch häufig mit einem hohen zeitlichen Aufwand und Investitionen in die Entwicklung grundlegender Elemente wie anwenderdefinierter Komponenten und Authoring-Tools sowie Verwaltung- und Upgrade-Kosten verbunden. Experience Manager Sites bietet Content and Commerce als Add-On-Modul für Experience Manager , das vordefinierte Commerce-Kernkomponenten, Authoring-Tools und eine Referenz-Storefront bereitstellt, um Veröffentlichungen zu beschleunigen, die nahtlose Zusammenarbeit von Teams zu ermöglichen und die Conversion Rates zu steigern.
+Angesichts der stetig steigenden Kundenerwartungen an Erlebnisse im Online-Handel sind Marken gezwungen, differenzierte Erlebnisse zu bieten und schneller mehr Inhalte bereitzustellen. Die Implementierung einer Content-Management-Plattform ist jedoch häufig mit einem hohen zeitlichen Aufwand und Investitionen in die Entwicklung grundlegender Elemente wie anwenderdefinierter Komponenten und Authoring-Tools sowie Verwaltung- und Upgrade-Kosten verbunden. Experience Manager Sites bietet Content and Commerce als Add-On-Modul für Experience Manager, das vordefinierte Commerce-Kernkomponenten, Authoring-Tools und eine Referenz-Storefront bereitstellt, um Veröffentlichungen zu beschleunigen, die nahtlose Zusammenarbeit von Teams zu ermöglichen und die Conversion Rates zu steigern.
 
 Marken können Experience Manager mit Adobe Commerce, das Teil von Adobe Experience Cloud ist, sowie mit jeder beliebigen Commerce-Engine integrieren. Mit Experience Manager Content and Commerce profitieren Marken von den folgenden Vorteilen:
 
@@ -28,7 +28,7 @@ Marken können Experience Manager mit Adobe Commerce, das Teil von Adobe Experie
 
 ## Einführung in AEM Commerce Integration Framework (CIF) {#cif-intro}
 
-Diese Projekte müssen die Komplexität der Integration einer Commerce-Lösung bewältigen. Eine Commerce-Lösung kann eine beliebige Lösung sein, von einer kommerziellen Lösung wie Adobe Commerce bis hin zu einer Reihe von benutzerdefinierten Commerce-Services. Die Integration hängt in hohem Maße von den Nutzungsszenarios und dem Ökosystem ab. Sie wirkt sich in der Regel auf verschiedene Bereiche aus und kann in unterschiedlichster Formen erfolgen:
+Diese Projekte müssen die Komplexität der Integration einer Commerce-Lösung bewältigen. Eine Commerce-Lösung kann eine beliebige Lösung sein, von einer Lösung für den Handel wie Adobe Commerce bis hin zu einer Reihe von anwenderdefinierten Commerce-Services. Die Integration hängt in hohem Maße von den Nutzungsszenarios und dem Ökosystem ab. Sie wirkt sich in der Regel auf verschiedene Bereiche aus und kann in unterschiedlichster Formen erfolgen:
 
 * Integration eines komplexen und dynamischen Ökosystems (Beispiel: Produktkataloge)
 * Notwendigkeit für Unternehmen, Produktinhalte mit eigenem Lebenszyklus effizient und kanalübergreifend zu verwalten
@@ -58,7 +58,7 @@ Effektive CIF-Tools in AEM ermöglichen es Inhaltserstellern, schnell umfassende
 
 ### Time-To-Value (TTV)
 
-Beschleunigt die Projektentwicklung mit [AEM Kernkomponenten](https://www.aemcomponents.dev/), [Venia-Referenz-Storefront AEM](https://github.com/adobe/aem-cif-guides-venia), [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de), und Integrationsmuster für PWA (Headless Content and Commerce).
+Beschleunigt die Projektentwicklung mit [AEM-Kernkomponenten](https://www.aemcomponents.dev/), [AEM-Venia-Referenz-Storefront](https://github.com/adobe/aem-cif-guides-venia), [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) und Integrationsmustern für PWA (Headless-Content and Commerce).
 
 CIF ist für kontinuierliche Innovation mit einem stets aktuellen Add-on konzipiert, das es Kunden ermöglicht, auf neue und verbesserte Funktionen zuzugreifen.
 

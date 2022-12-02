@@ -14,7 +14,7 @@ exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '362'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -30,18 +30,18 @@ In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePo
 |---|---|
 | annogen | [Apache](#apache) |
 | axiom-api | [Apache](#apache) |
-| Axiom-dom | [Apache](#apache) |
+| axiom-dom | [Apache](#apache) |
 | axiom-impl | [Apache](#apache) |
 | axis2-adb | [Apache](#apache) |
 | axis2-kernel | [Apache](#apache) |
-| Backport-util-concurrent | Öffentlicher Bereich |
+| Backport-util-concurrent | Öffentlich zugänglich |
 | commons-codec | [Apache](#apache) |
 | commons-collections | [Apache](#apache) |
 | commons-fileupload | [Apache](#apache) |
 | commons-httpclient | [Apache](#apache) |
 | commons-io | [Apache](#apache) |
 | commons-lang | [Apache](#apache) |
-| parallel | [Gleichzeitig](#concurrent) (Öffentlicher Bereich) |
+| concurrent | [Concurrent](#concurrent) (öffentlich zugänglich) |
 | geronimo-activation_1.1_spec | [Apache](#apache) |
 | geronimo-stax-api_1.0_spec | [Apache](#apache) |
 | httpcore | [Apache](#apache) |
@@ -60,7 +60,7 @@ In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePo
 | wstx-asl | [Apache](#apache) |
 | xalan | [Apache](#apache) |
 | xbean | [Apache](#apache) |
-| xml-apis | [Apache](#apache) (enthält Teile, die von Public Domain- und W3C-Softwarelizenzen abgedeckt werden) |
+| xml-apis | [Apache](#apache) (enthält Teile, die von öffentlich zugänglichen und W3C-Software-Lizenzen abgedeckt sind) |
 | XmlSchema | [Apache](#apache) |
 
 ## Überblick über die Bibliotheken von CRX-Drittanbietern {#overview-of-crx-rd-party-libraries}
@@ -98,7 +98,7 @@ In der folgenden Tabelle sind die in CRX verwendeten Drittanbieter-Bibliotheken 
   </tr>
   <tr>
    <td>concurrent-1.3.4.jar</td>
-   <td><a href="#concurrent">Gleichzeitig</a></td>
+   <td><a href="#concurrent">Concurrent</a></td>
   </tr>
   <tr>
    <td>derby-10.1.2.1.jar</td>

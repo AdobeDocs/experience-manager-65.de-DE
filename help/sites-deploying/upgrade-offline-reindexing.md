@@ -18,7 +18,7 @@ ht-degree: 99%
 
 ## Einführung {#introduction}
 
-Eine der Hauptschwierigkeiten beim Upgrade von Adobe Experience Manager ist die Ausfallzeit der Autorenumgebung bei einem In-Place-Upgrade. Inhaltsautoren können während eines Upgrades nicht auf die Umgebung zugreifen. Daher ist es wünschenswert, die für die Durchführung des Upgrades benötigte Zeit zu minimieren Bei großen Repositorys, insbesondere bei AEM Assets-Projekten, die in der Regel über große Datenspeicher und eine hohe Anzahl von Asset-Uploads pro Stunde verfügen, dauert die Neuindizierung von Oak-Indizes einen erheblichen Prozentsatz der Upgrade-Zeit.
+Eine der Hauptschwierigkeiten beim Upgrade von Adobe Experience Manager ist die Ausfallzeit der Autorenumgebung bei einem In-Place-Upgrade. Inhaltsautoren können während eines Upgrades nicht auf die Umgebung zugreifen. Daher ist es wünschenswert, die für die Durchführung des Upgrades benötigte Zeit zu minimieren. Bei großen Repositorys, insbesondere bei AEM Assets-Projekten, die in der Regel über große Datenspeicher und eine hohe Anzahl von Asset-Uploads pro Stunde verfügen, dauert die Neuindizierung von Oak-Indizes einen erheblichen Prozentsatz der Upgrade-Zeit.
 
 In diesem Abschnitt wird beschrieben, wie Sie mit dem Oak-run-Tool das Repository **vor** der Durchführung des Upgrades neu indizieren und so die Ausfallzeit während des eigentlichen Upgrades reduzieren können. Die angezeigten Schritte können auf [Lucene](https://jackrabbit.apache.org/oak/docs/query/lucene.html)-Indizes für Versionen AEM 6.4 und höher angewendet werden.
 

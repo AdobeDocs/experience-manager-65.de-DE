@@ -15,7 +15,7 @@ exl-id: 946c7c2a-806b-4461-a38b-9c2e5ef1e958
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '694'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 89%
 
 Aus Gründen der Abwärtskompatibilität werden Content und Konfigurationen in **/etc** und **/content** ab AEM 6.3 bei der Aktualisierung nicht sofort behandelt oder konvertiert. Damit wird sichergestellt, dass Abhängigkeiten in Kundenanwendungen von diesen Strukturen intakt bleiben. Die Funktionalität in Bezug auf diese Inhaltsstrukturen ist immer noch die gleiche, auch wenn der Inhalt in AEM 6.5 standardmäßig an anderer Stelle gehostet wird.
 
-Auch wenn nicht alle dieser Standorte automatisch umgewandelt werden können, gibt es einige Verzögerungen `CodeUpgradeTasks` auch als &quot;Lazy Content Migration&quot;bezeichnet. Kunden können diese automatischen Umwandlungen auslösen, indem sie die Instanz mit der folgenden Systemeigenschaft neu starten:
+Möglicherweise können nicht alle Speicherorte automatisch umgewandelt werden. Es gibt aber auch einige verzögerte `CodeUpgradeTasks`, die auch als Lazy-Content-Migration bezeichnet werden. Kunden können diese automatischen Umwandlungen auslösen, indem sie die Instanz mit der folgenden Systemeigenschaft neu starten:
 
 ```shell
 -Dcom.adobe.upgrade.forcemigration=true
@@ -37,7 +37,7 @@ Da hierbei in der Regel auch die Anwendung angepasst werden muss, sollte diese A
 
 Nachfolgend finden Sie eine vollständige Liste aller in Version 6.5 eingeführten `CodeUpgradeTasks`:
 
-| **Name** | **Relevant** **für AEM-Versionen vor**  | **Migrationstyp******  | **Details** |
+| **Name** | **Relevant** **für AEM-Versionen vor**  | **Migrationstyp** ** ** | **Details** |
 |---|---|---|---|
 | `Cq561ProjectContentUpgrade` | &lt; 5.6.1 | Unmittelbar |  |
 | `Cq60MSMContentUpgrade` | &lt; 6.0 | Unmittelbar | Ermittelt alle `LiveRelationShips` aus `VersionStorage`, die gelöscht wurden, und fügt die Ausschlusseigenschaft zum übergeordneten Element hinzu. |
@@ -60,6 +60,6 @@ Nachfolgend finden Sie eine vollständige Liste aller in Version 6.5 eingeführt
 | `CQ64CommunitiesConfigsCleanupTask` | &lt; 6,3 | Verzögert | Verschiebt SRP-Cloudkonfigurationen, Community-Schlagwortkonfigurationen, bereinigt **/etc/social** und **/etc/enablement** (alle Verweise und Daten müssen angepasst werden, wenn die Lazy-Migration ausgeführt wird – es dürfen keine Anwendungsteile weiterhin von dieser Struktur abhängig sein). |
 | `CQ64LegacyCloudSettingsCleanupTask` | &lt; 6.4 | Verzögert | Bereinigt **/etc/cloudsettings** (enthält die ContextHub-Konfiguration). Die Konfiguration wird beim ersten Zugriff automatisch migriert. Für den Fall, dass die Lazy-Content-Migration zusammen mit der Aktualisierung gestartet wird, muss vor der Aktualisierung der Inhalt in **/etc/cloudsettings** über ein Paket gesichert und dann erneut installiert werden, damit die implizite Umwandlung stattfindet und das Paket nach Abschluss deinstalliert wird. |
 | `CQ64UsersTitleFixTask` | &lt; 6,4 | Verzögert | Passt die alte Titelstruktur an den Titel im Benutzerprofilknoten an. |
-| `CQ64CommerceMigrationTask` | &lt; 6,4 | Verzögert | Migrieren von Commerce-Inhalten aus **/etc/commerce** nach **/var/commerce**. Während der Migration werden Inhalte verschoben und Verweise auf verschobene Inhalte werden aktualisiert, um den neuen Speicherort widerzuspiegeln. |
-| `CQ65DMMigrationTask` | &lt; 6.5 | Verzögert | Migrieren Sie alte Katalogeinstellungen und Dynamic Media Cloud Services-Einstellungen aus **/etc** nach **/conf** |
-| `CQ65LegacyClientlibsCleanupTask` | &lt; 6,5 | Verzögert | Vorhandene Client-Bibliotheken unter bereinigen **/etc/clientlibs** |
+| `CQ64CommerceMigrationTask` | &lt; 6,4 | Verzögert | Migrieren von Commerce-Inhalten aus **/etc/commerce** nach **/var/commerce**. Während der Migration werden Inhalte verschoben und Verweise auf verschobene Inhalte aktualisiert, um den neuen Speicherort widerzuspiegeln. |
+| `CQ65DMMigrationTask` | &lt; 6.5 | Verzögert | Migrieren von alten Katalogeinstellungen und Dynamic Media Cloud Services-Einstellungen aus **/etc** nach **/conf** |
+| `CQ65LegacyClientlibsCleanupTask` | &lt; 6,5 | Verzögert | Bereinigen vorhandener Client-Bibliotheken unter **/etc/clientlibs** |

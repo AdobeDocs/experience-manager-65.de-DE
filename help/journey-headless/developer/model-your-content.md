@@ -5,7 +5,7 @@ exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1826'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Zu Beginn wurde in [Erfahren Sie mehr über CMS-Headless-Bereitstellung](learn-about.md) die Headless-Bereitstellung von Inhalten behandelt und erläutert, warum diese eingesetzt werden sollte. Dann [Erste Schritte mit AEM Headless](getting-started.md) beschrieben AEM Headless im Kontext Ihres eigenen Projekts.
+Zu Beginn wurde in [Erfahren Sie mehr über CMS-Headless-Bereitstellung](learn-about.md) die Headless-Bereitstellung von Inhalten behandelt und erläutert, warum diese eingesetzt werden sollte. Dann wurde in [Erste Schritte mit AEM Headless](getting-started.md) AEM Headless im Kontext Ihres eigenen Projekts beschrieben.
 
 Im vorherigen Dokument der AEM Headless-Tour, [Der Weg zu Ihrem ersten Erlebnis mit AEM Headless](path-to-first-experience.md) haben Sie dann die Schritte kennengelernt, die zur Implementierung Ihres ersten Projekts erforderlich sind. Nach dem Lesen sollten Sie:
 
@@ -145,7 +145,7 @@ Die Struktur Ihres Inhaltsmodells wird:
 
 >[!NOTE]
 >
->Die Inhaltsfragmentmodelle werden auch als Grundlage für die AEM-GraphQL-Schemas verwendet, die zum Abrufen Ihres Inhalts verwendet werden – mehr dazu in einer späteren Sitzung.
+>Die Inhaltsfragmentmodelle werden auch als Grundlage für die AEM-GraphQL-Schemata verwendet, die zum Abrufen Ihres Inhalts verwendet werden – mehr dazu in einer späteren Sitzung.
 
 Anfragen für Ihre Inhalte werden mit der AEM-GraphQL-API gestellt, einer angepassten Implementierung der standardmäßigen GraphQL-API. Mit der AEM-GraphQL-API können Sie (komplexe) Abfragen für Ihre Inhaltsfragmente durchführen, wobei jede Abfrage einem bestimmten Modelltyp entspricht.
 
@@ -274,7 +274,7 @@ Nachdem Sie nun gelernt haben, wie Sie Ihre Struktur modellieren und abhängig d
    * [Inhaltsfragmente im Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) – Aktivieren der Funktion „Inhaltsfragment“ im Konfigurations-Browser
    * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) – Erstellen und Bearbeiten von Inhaltsfragmentmodellen
    * [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md) – Erstellen und Bearbeiten von Inhaltsfragmenten. Diese Seite führt Sie zu anderen detaillierten Abschnitten
-* [AEM-GraphQL-Schemas](access-your-content.md) – So setzt GraphQL Modelle um
+* [AEM-GraphQL-Schemata](access-your-content.md) – So setzt GraphQL Modelle um
 * [Beispielstruktur für Inhaltsfragmente](/help/assets/content-fragments/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) – Eine kurze Video-Tutorial-Reihe, die einen Überblick über die Verwendung von AEM Headless-Funktionen bietet, einschließlich Inhaltsmodellierung und GraphQL
    * [Grundlagen der GraphQL-Modellierung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=de) –- Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) für die Verwendung mit GraphQL definieren und verwenden.

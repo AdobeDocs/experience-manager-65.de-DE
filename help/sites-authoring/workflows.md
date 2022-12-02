@@ -21,7 +21,7 @@ ht-degree: 100%
 
 AEM-Workflows ermöglichen es Ihnen, eine Reihe von Schritten zu automatisieren, die an Seiten und/oder Assets ausgeführt werden.
 
-Beispielsweise muss beim Veröffentlichen ein Editor den Inhalt überprüfen, bevor ein Site-Administrator die Seite aktiviert. Ein Workflow, der dieses Beispiel automatisiert, benachrichtigt jeden Teilnehmer, wenn es Zeit ist, die erforderlichen Arbeiten auszuführen:
+Beispielsweise muss beim Veröffentlichen ein Editor den Inhalt überprüfen, bevor eine oder ein Site-Admindie Seite aktiviert. Ein Workflow, der dieses Beispiel automatisiert, benachrichtigt jeden Teilnehmer, wenn es Zeit ist, die erforderlichen Arbeiten auszuführen:
 
 1. Der Autor wendet den Workflow auf der Seite an.
 1. Der Editor erhält ein Arbeitselement, das angibt, dass er den Seiteninhalt überprüfen muss. Wenn er fertig ist, wird angegeben, dass sein Arbeitselement abgeschlossen ist.

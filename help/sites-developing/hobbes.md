@@ -14,7 +14,7 @@ exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -22,26 +22,26 @@ ht-degree: 73%
 
 >[!NOTE]
 >
->Ab AEM 6.5 wird das UI-Test-Framework hobbes.js nicht mehr unterstützt. Adobe plant keine weiteren Verbesserungen und empfiehlt Kunden die Verwendung der Selenium-Automatisierung.
+>Ab AEM 6.5 wird das Framework für Benutzeroberflächentests hobbes.js als veraltet gekennzeichnet. Adobe plant keine weiteren Verbesserungen und empfiehlt Kunden die Verwendung der Selenium-Automatisierung.
 >
->Siehe [Eingestellte und entfernte Funktionen](/help/release-notes/deprecated-removed-features.md).
+>Siehe [Veraltete und entfernte Funktionen](/help/release-notes/deprecated-removed-features.md).
 
-AEM stellt ein Framework bereit, mit dem Sie das Testen Ihrer AEM-Benutzeroberfläche automatisieren können. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework stellt eine JavaScript-API zum Erstellen von Tests bereit.
+AEM stellt ein Framework bereit, mit dem Sie das Testen Ihrer AEM-Benutzeroberfläche automatisieren können. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework umfasst eine JavaScript-API für das Erstellen von Tests.
 
-Das AEM-Test-Framework verwendet Hobbes.js, eine in JavaScript geschriebene Testbibliothek. Das Hobbes.js-Framework wurde für AEM-Tests als Teil des Entwicklungsprozesses entwickelt. Das Framework steht jetzt zur allgemeinen Verwendung zum Testen Ihrer AEM-Anwendungen zur Verfügung.
+Das AEM-Test-Framework nutzt Hobbes.js, eine Testbibliothek, die in JavaScript geschrieben wurde. Das Hobbes.js-Framework wurde für AEM-Tests als Teil des Entwicklungsprozesses entwickelt. Das Framework steht jetzt zur allgemeinen Verwendung zum Testen Ihrer AEM-Anwendungen zur Verfügung.
 
 >[!NOTE]
 >
->Siehe Hobbes.js [Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) für ausführliche Informationen zur API.
+>Detaillierte Angaben zur API finden Sie in der [Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) zu Hobbes.js.
 
 ## Die Struktur von Tests {#structure-of-tests}
 
 Wenn Sie automatisierte Tests in AEM verwenden, sollten Sie die folgenden Begriffe kennen:
 
-| Aktion | Ein **Aktion** ist eine bestimmte Aktivität auf einer Webseite, z. B. das Klicken auf einen Link oder eine Schaltfläche. |
+| Aktion | Eine **Aktion** ist eine bestimmte Aktivität auf einer Web-Seite, z. B. das Klicken auf einen Link oder eine Schaltfläche. |
 |---|---|
-| Testfall | A **Testfall** ist eine bestimmte Situation, die aus einer oder mehreren **Aktionen**. |
-| Testsuite | A **Test Suite** ist eine Gruppe verwandter **Testfälle** die zusammen einen bestimmten Anwendungsfall testen. |
+| Testfall | Ein **Testfall** ist eine bestimmte Situation, die aus einer oder mehreren **Aktionen** bestehen kann. |
+| Testsuite | Eine **Test-Suite** ist eine Gruppe verwandter **Testfälle**, die zusammen einen bestimmten Anwendungsfall testen. |
 
 ## Ausführen von Tests {#executing-tests}
 
@@ -97,19 +97,19 @@ Test-Suites werden nacheinander in der Reihenfolge ausgeführt, in der sie in de
 
    ![](do-not-localize/chlimage_1-5.png)
 
-1. Um die Ergebnisse jedes Testfalls anzuzeigen, tippen oder klicken Sie auf den Titel des Testfalls. Tippen oder klicken Sie auf den Namen Ihres Tests im **Ergebnis** -Bedienfeld werden alle Details angezeigt.
+1. Um die Ergebnisse jedes Testfalls anzuzeigen, tippen oder klicken Sie auf den Titel des Testfalls. Wenn Sie im Bedienfeld **Ergebnis** auf den Namen des Tests tippen oder klicken, werden alle Details angezeigt.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
 ## Erstellen und Verwenden einer einfachen Test-Suite {#creating-and-using-a-simple-test-suite}
 
-Das folgende Verfahren führt Sie durch die Erstellung und Ausführung einer Test Suite mithilfe von [We.Retail-Inhalt](/help/sites-developing/we-retail.md), Sie können den Test jedoch einfach ändern, um eine andere Webseite zu verwenden.
+Die folgenden Schritte erläutern die Erstellung und Ausführung einer Test-Suite mit [We.Retail-Inhalten](/help/sites-developing/we-retail.md). Sie können den Test jedoch auch einfach für eine andere Web-Seite anpassen.
 
 Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der [Dokumentation zur Hobbes.js-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
 
 1. Öffnen Sie CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
-1. Klicken Sie mit der rechten Maustaste auf die `/etc/clientlibs` Ordner und klicken Sie auf **Erstellen > Ordner erstellen**. Geben Sie als Namen `myTests` ein und klicken Sie auf **OK**.
-1. Klicken Sie mit der rechten Maustaste auf die `/etc/clientlibs/myTests` Ordner und klicken Sie auf **Erstellen > Knoten erstellen**. Geben Sie die folgenden Eigenschaftswerte ein und klicken Sie dann auf **OK**:
+1. Klicken Sie mit der rechten Maustaste auf den Ordner `/etc/clientlibs` und klicken Sie auf **Erstellen > Ordner erstellen**. Geben Sie als Namen `myTests` ein und klicken Sie auf **OK**.
+1. Klicken Sie mit der rechten Maustaste auf den Ordner `/etc/clientlibs/myTests` und klicken Sie auf **Erstellen > Knoten erstellen**. Geben Sie die folgenden Eigenschaftswerte ein und klicken Sie dann auf **OK**:
 
    * Name: `myFirstTest`
    * Typ: `cq:ClientLibraryFolder`
@@ -129,7 +129,7 @@ Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der 
    >Um adaptive Formulare zu testen, fügen Sie die folgenden Werte den Kategorien (categories) und Abhängigkeiten (dependencies) hinzu. Beispiel:
    >
    >
-   >**categories**: `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
+   >**categories:**: `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`
    >
    >
    >**dependencies**: `granite.testing.hobbes.testrunner, granite.testing.hobbes.af`

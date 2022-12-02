@@ -2,7 +2,7 @@
 title: Grundlagen zur Inhaltsmodellierung
 description: Erfahren Sie mehr über die Grundlagen der Modellierung von Inhalten für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: c05941355abfed849e1876988aa2a9dc61812b8b
 workflow-type: tm+mt
 source-wordcount: '905'
 ht-degree: 100%
@@ -43,7 +43,7 @@ Die Struktur Ihres Inhaltsmodells wird:
 
 >[!NOTE]
 >
->Die Inhaltsfragmentmodelle werden auch als Grundlage für die AEM-GraphQL-Schemas verwendet, die zum Abrufen Ihrer Inhalte verwendet werden – mehr dazu in der Entwickler-Tour.
+>Die Inhaltsfragmentmodelle werden auch als Grundlage für die AEM-GraphQL-Schemata verwendet, die zum Abrufen Ihrer Inhalte verwendet werden – mehr dazu in der Entwickler-Tour.
 
 Anfragen für Ihre Inhalte werden mit der AEM-GraphQL-API gestellt, einer angepassten Implementierung der standardmäßigen GraphQL-API. Mit der AEM-GraphQL-API können Anwendungen (komplexe) Abfragen für Inhaltsfragmente durchführen, wobei jede Abfrage einem bestimmten Modelltyp entspricht.
 

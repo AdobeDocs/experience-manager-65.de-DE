@@ -25,4 +25,4 @@ Dieses Whitepaper beschreibt, wie Skalierbarkeitsoptionen zusammen mit überdurc
 
 Eine flexible, skalierbare Plattform für technische Agilität, hohe Leistungsfähigkeit und robuste Notfallwiederherstellung.
 
-[Datei herunterladen](assets/aem_scalability_whitepaperfinal-06122015je.pdf)
+[Datei laden](assets/aem_scalability_whitepaperfinal-06122015je.pdf)

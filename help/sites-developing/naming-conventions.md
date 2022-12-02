@@ -26,7 +26,7 @@ Knoten im Repository unterliegen den Benennungskonventionen des [Java Content Re
 Diese Benennungskonventionen werden auf verschiedenen Ebenen implementiert:
 
 * JcrUtil: die AEM-Implementierung der [JCR-Service-Programme](#jcr-utilities).
-* PageManager: der [Seitenmanager](#page-manager) stellt Methoden für Operationen auf Seitenebene bereit.
+* PageManager: der [Seiten-Manager](#page-manager) stellt Methoden für Operationen auf Seitenebene bereit.
 * Je nach verwendeter Benutzeroberfläche:
 
    * [Touch-optimierte Standard-Benutzeroberfläche](#standard-ui)
@@ -34,7 +34,7 @@ Diese Benennungskonventionen werden auf verschiedenen Ebenen implementiert:
 
 ### JCR-Service-Programme {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) ist die AEM-Implementierung der JCR-Service-Programme. Bei der Namensvalidierung sind die Zeichenzuordnungen, die diese Implementierung steuert, und die folgenden Validierungen von besonderem Interesse:
+[JcrUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) ist die AEM-Implementierung der JCR-Service-Programme. Bei der Namensvalidierung sind die Zeichenzuordnungen, die diese Implementierung steuert, und die folgenden Validierungen von besonderem Interesse:
 
 * `isValidName`
 
@@ -48,7 +48,7 @@ Diese Benennungskonventionen werden auf verschiedenen Ebenen implementiert:
 
 ### Seiten-Manager {#page-manager}
 
-[PageManager](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) stellt basierend auf [JCRUtil](#jcr-utilities) Methoden für Vorgänge auf Seitenebene bereit.
+[PageManager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageManager.html) stellt basierend auf [JCRUtil](#jcr-utilities) Methoden für Vorgänge auf Seitenebene bereit.
 
 ### Standard-Benutzeroberfläche {#standard-ui}
 

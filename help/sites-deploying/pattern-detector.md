@@ -1,5 +1,5 @@
 ---
-title: 'Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor '
+title: Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor
 seo-title: Assessing the Upgrade Complexity with the Pattern Detector
 description: Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität der Aktualisierung bewerten können.
 seo-description: Learn how to use the Pattern Detector to assess the complexity of your upgrade.
@@ -15,13 +15,13 @@ exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '522'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Bewertung der Komplexität der Aktualisierung mit dem Musterdetektor 
 
-## Übersicht {#overview}
+## Überblick {#overview}
 
 Mit dieser Funktion können Sie prüfen, ob vorhandene AEM-Instanzen aktualisiert werden können, indem Sie verwendete Muster ermitteln, die:
 
@@ -32,7 +32,7 @@ Dies kann als Bewertungsgrundlage für den erforderlichen Entwicklungsaufwand be
 
 ## Einrichtung {#how-to-set-up}
 
-Der Musterdetektor wird als separates [Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) veröffentlicht, das mit allen Quell-AEM-Versionen von 6.1 bis 6.5 funktioniert, die auf AEM 6.5 aktualisiert werden sollen. Er kann mit dem [Package Manager](/help/sites-administering/package-manager.md) installiert werden.
+Der Musterdetektor wird als separates [Paket](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq650/compatpack/pd-all-aem65) veröffentlicht, das mit allen Quell-AEM-Versionen von 6.1 bis 6.5 funktioniert, die auf AEM 6.5 aktualisiert werden sollen. Er kann mit dem [Package Manager](/help/sites-administering/package-manager.md) installiert werden.
 
 ## Verwendung {#how-to-use}
 
@@ -49,13 +49,13 @@ Sie haben verschiedene Möglichkeiten, das Ergebnis des Musterdetektors zu prüf
 
 * **Über die Felix Inventory-Konsole:** 
 
-1. Navigieren Sie zur AEM Web-Konsole , indem Sie zu *https://serveraddress:serverport/system/console/configMgr*
+1. Navigieren Sie unter *https://Server-Adresse:Serverport/system/console/configMgr* zur AEM-Web-Konsole.
 1. Wählen Sie **Status - Musterdetektor** aus, wie im Bild unten dargestellt:
 
    ![screen-shot-2018-2-5pattern-detektor](assets/screenshot-2018-2-5pattern-detector.png)
 
 * **Über eine auf reaktivem Text basierende oder die reguläre JSON-Schnittstelle** 
-* **Über eine reaktive JSON-Zeilen-Oberfläche generiert **das in jeder Zeile ein separates JSON-Dokument.
+* **Über eine reaktive JSON-Zeilen-Schnittstelle**, die in jeder Zeile ein separates JSON-Dokument erstellt.
 
 Beide Methoden werden im Folgenden erläutert:
 

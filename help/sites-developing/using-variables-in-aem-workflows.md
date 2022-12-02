@@ -1,7 +1,7 @@
 ---
 title: Variablen in AEM-Workflows
 seo-title: Variables in AEM Workflows
-description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in den Workflow-Schritten "ODER-Teilung"und "Gehe zu AEM".
+description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in den Workflow-Schritten „ODER-Aufspaltung“ und „Goto“ von AEM.
 seo-description: Create a variable, set a value for the variable, and use it in OR Split and  Goto AEM workflow steps.
 uuid: cc62ff11-51d4-4db4-9c6d-5dc2caa1da52
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -13,7 +13,7 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2057'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ In AEM-Workflow-Modellen haben Sie folgende Möglichkeiten:
 
 * [Erstellen Sie eine Variable](/help/sites-developing/using-variables-in-aem-workflows.md#create-a-variable) eines Datentyps basierend auf dem Typ von Information, die Sie darin speichern möchten.
 * [Legen Sie einen Wert für die Variable fest](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable), indem Sie den Workflow-Schritt „Variable festlegen“ verwenden.
-* [Variable verwenden](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) in ODER-Teilung und AEM Workflow-Schritte zum Definieren eines Ausdrucks für Routing-Entscheidungen. Sie können auch Variablen in allen AEM Forms-Workflow-Schritten verwenden.
+* [Verwenden Sie die Variable](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) in den Workflow-Schritten „ODER-Aufspaltung“ und „Goto“ von AEM zum Definieren eines Ausdrucks für Routing-Entscheidungen. In allen AEM Forms-Workflow-Schritten können Sie auch Variablen verwenden.
 
 Das folgende Video zeigt, wie Sie Variablen in AEM-Workflow-Modellen erstellen, festlegen und verwenden können:
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/usevariables_example.mp4)
 
-Variablen sind eine Erweiterung der Variablen [MetaDataMap](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) -Schnittstelle. Sie können [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript verwenden, um auf Metadaten zuzugreifen, die mithilfe von Variablen gespeichert wurden.
+Variablen sind eine Erweiterung der [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)-Schnittstelle. Sie können [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript verwenden, um auf Metadaten zuzugreifen, die mithilfe von Variablen gespeichert wurden.
 
 ## Erstellen einer Variablen {#create-a-variable}
 
@@ -48,7 +48,7 @@ Weitere komplexe Datentypen, die in AEM Forms-Workflows verfügbar sind, finden 
 
 Führen Sie die folgenden Schritte aus, um eine Variable zu erstellen:
 
-1. Navigieren Sie in einer AEM-Instanz zu „Tools“  > „Workflows“ > „Modelle“.
+1. Navigieren Sie in einer AEM-Instanz zu „Tools“ > „Workflows“ > „Modelle“.
 1. Tippen Sie auf **[!UICONTROL Erstellen]** und geben Sie den Titel und einen optionalen Namen für das Workflow-Modell an. Wählen Sie das Modell aus und tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf das Variablensymbol im Sidekick des Workflow-Modells und tippen Sie dann auf **[!UICONTROL Variable hinzufügen]**.
 
@@ -95,7 +95,7 @@ Führen Sie die folgenden Schritte aus, um die Zuordnung zwischen Variablen hinz
 1. Ziehen Sie den Schritt **Variable festlegen** in den Workflow-Editor, tippen Sie auf den Schritt und wählen Sie ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Konfigurieren) aus.
 1. Wählen Sie im Dialogfeld „Variable festlegen“ die Option **[!UICONTROL Zuordnung]** > **[!UICONTROL Zuordnung hinzufügen]** aus.
 1. Wählen Sie im Abschnitt **Variable zuordnen** die Variable aus, in der Daten gespeichert werden sollen, wählen Sie den Zuordnungsmodus aus und geben Sie einen Wert an, der in der Variablen gespeichert werden soll. Die Zuordnungsmodi variieren je nach Variablentyp.
-1. Ordnen Sie weitere Variablen zu, um einen aussagekräftigen Ausdruck zu erstellen. Tippen ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) , um die Änderungen zu speichern.
+1. Ordnen Sie weitere Variablen zu, um einen aussagekräftigen Ausdruck zu erstellen. Tippen Sie auf ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png), um die Änderungen zu speichern.
 
 ### Beispiel 1: Abfragen einer XML-Variablen, um den Wert für eine Zeichenfolgenvariable festzulegen {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
@@ -196,7 +196,7 @@ Verwenden Sie die folgenden APIs im ECMA-Skript, um Werte für vorhandene Variab
 | XML | Packages.org.w3c.dom.Document xmlObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.org.w3c.dom.Document.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Informationen zu APIs für zusätzliche komplexe Variablendaten, die in AEM Forms-Workflows verfügbar sind, finden Sie unter [Variablen in AEM Forms-Workflows](/help/forms/using/variable-in-aem-workflows.md).
+Informationen zu APIs für zusätzliche komplexe Variablendatentypen, die in AEM Forms-Workflows verfügbar sind, finden Sie unter [Variablen in AEM Forms-Workflows](/help/forms/using/variable-in-aem-workflows.md).
 
 **Beispiel**
 
@@ -257,4 +257,4 @@ Führen Sie die folgenden Schritte aus, um eine Variable zu löschen:
 
 1. Tippen Sie auf der Seite „Workflow bearbeiten“ auf das Symbol „Variablen“ im Sidekick des Workflow-Modells. Im Abschnitt „Variablen“ im linken Bereich werden alle vorhandenen Variablen angezeigt.
 1. Tippen Sie auf das Symbol „Löschen“ neben dem Namen der Variablen, die Sie löschen möchten.
-1. Tippen ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) , um die Variable zu bestätigen und zu löschen.
+1. Tippen Sie auf ![](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png), um zu bestätigen, dass die Variable gelöscht werden soll.

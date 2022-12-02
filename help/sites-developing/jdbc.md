@@ -13,7 +13,7 @@ exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '948'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -86,13 +86,13 @@ Entscheiden Sie anhand Ihrer Kenntnis des Quellcodes, welche Lösung geeignet is
 
 Die folgenden Links öffnen die Downloadseiten für einige gängige Datenbankprodukte:
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
+* [Microsoft SQL Server](https://www.microsoft.com/de-de/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
 ### Konfiguration des JDBC Connections Pool-Dienstes {#configuring-the-jdbc-connection-pool-service}
 
-Fügen Sie eine Konfiguration für den JDBC Connections Pool-Dienst hinzu, der mithilfe des JDBC-Treibers Datenquellenobjekte erstellt. Ihr Anwendungscode verwendet diesen Dienst, um das Objekt abzurufen und eine Verbindung zur Datenbank herzustellen.
+Fügen Sie eine Konfiguration für den JDBC Connections Pool-Dienst hinzu. Dieser Dienst verwendet den JDBC-Treiber, um Datenquellenobjekte zu erstellen. Ihr Anwendungs-Code verwendet diesen Dienst, um das Objekt abzurufen und eine Verbindung zur Datenbank herzustellen.
 
 JDBC Connections Pool (`com.day.commons.datasource.jdbcpool.JdbcPoolService`) ist ein Factory Service. Wenn Sie Verbindungen benötigen, die unterschiedliche Eigenschaften verwenden, zum Beispiel schreibgeschützten oder Lese-/Schreibzugriff, erstellen Sie mehrere Konfigurationen.
 
@@ -102,13 +102,13 @@ Die folgenden Eigenschaften sind bei der Konfiguration eines Pool-Verbindungsdie
 
 * JDBC Driver Class (`jdbc.driver.class`): Die zu verwendende Java-Klasse, die die java.sql.Driver-Schnittstelle implementiert. Beispiel: `org.hsqldb.jdbc.JDBCDriver`. Der Datentyp ist `String`.
 
-* JDBC-Verbindungs-URI ( `jdbc.connection.uri`): Die URL der Datenbank, die zum Erstellen der Verbindung verwendet werden soll, z. B. `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. Das Format der URL muss mit der getConnection-Methode der java.sql.DriverManager-Klasse verwendbar sein. Der Datentyp ist `String`.
+* JDBC Connection URI (`jdbc.connection.uri`): Die URL der für die Verbindungsherstellung zu verwendenden Datenbank. Beispiel: `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. Das Format der URL muss mit der getConnection-Methode der java.sql.DriverManager-Klasse verwendbar sein. Der Datentyp ist `String`.
 
 * Username (`jdbc.username`): Der zur Authentifizierung beim Datenbankserver zu verwendende Benutzername. Der Datentyp ist `String`.
 
 * Password (`jdbc.password`): Das für die Authentifizierung des Benutzers zu verwendende Kennwort. Der Datentyp ist `String`.
 
-* Überprüfungsabfrage ( `jdbc.validation.query`): Die SQL-Anweisung, die zum Überprüfen der erfolgreichen Verbindung verwendet werden soll, z. B. `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Der Datentyp ist `String`.
+* Validation Query (`jdbc.validation.query`): Das SQL-Statement, mit dem die erfolgreiche Verbindung bestätigt werden soll, z. B. `select 1 from INFORMATION_SCHEMA.SYSTEM_USERS`. Der Datentyp ist `String`.
 
 * Readonly By Default (default.readonly): Wählen Sie diese Option aus, wenn die Verbindung nur Lesezugriff gewähren soll. Der Datentyp ist `Boolean`.
 * Autocommit By Default (`default.autocommit`): Wählen Sie diese Option aus, um für jeden SQL-Befehl, der an die Datenbank gesendet wird, eine separate Transaktion zu erstellen. Jede Transaktion wird automatisch übergeben. Wählen Sie diese Option nicht aus, wenn Sie Transaktionen in Ihrem Code explizit übergeben. Der Datentyp ist `Boolean`.
@@ -121,13 +121,13 @@ Die folgenden Eigenschaften sind bei der Konfiguration eines Pool-Verbindungsdie
 
 * Additional Service Properties (`datasource.svc.properties`): Eine Gruppe von Name/Wert-Paaren, die Sie an die Verbindungs-URL anhängen möchten. Der Datentyp ist `String[]`.
 
-Der JDBC Connections Pool-Dienst ist eine Factory. Wenn Sie daher eine `sling:OsgiConfig` -Knoten, um den Verbindungsdienst zu konfigurieren, muss der Name des Knotens die Factory-Service-PID enthalten, gefolgt von *`-alias`*. Der Alias, den Sie verwenden, muss unter allen Konfigurationsknoten für diese PID eindeutig sein. Ein Beispiel für einen Knotennamen ist `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+Der JDBC Connections Pool-Dienst ist eine Factory. Wenn Sie also einen `sling:OsgiConfig`-Knoten verwenden, um den Verbindungsdienst zu konfigurieren, muss der Name des Knotens die Factory-Dienst-PID gefolgt von *`-alias`* enthalten. Der Alias, den Sie verwenden, muss unter allen Konfigurationsknoten für diese PID eindeutig sein. Ein Beispiel für einen Knotennamen ist `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
 ### Verbindung zur Datenbank aufbauen {#connecting-to-the-database}
 
-In Ihrem Java-Code verwenden Sie den DataSourcePool-Dienst, um ein `javax.sql.DataSource`-Objekt für die Konfiguration, die Sie erstellt haben, zu erhalten. Der DataSourcePool-Dienst stellt die Methode `getDataSource`   bereit, die ein `DataSource`-Objekt für einen angegebenen Datenquellennamen zurückgibt. Verwenden Sie als Argument der Methode den Wert der Datenquellennamen-Eigenschaft (oder `datasource.name`), den Sie für die JDBC Connections Pool-Konfiguration angegeben haben.
+In Ihrem Java-Code verwenden Sie den DataSourcePool-Dienst, um ein `javax.sql.DataSource`-Objekt für die Konfiguration, die Sie erstellt haben, zu erhalten. Der DataSourcePool-Dienst stellt die Methode `getDataSource` bereit, die ein `DataSource`-Objekt für einen angegebenen Datenquellennamen zurückgibt. Verwenden Sie als Argument der Methode den Wert der Datenquellennamen-Eigenschaft (oder `datasource.name`), den Sie für die JDBC Connections Pool-Konfiguration angegeben haben.
 
 Das folgende JSP-Codebeispiel ruft eine Instanz der hsqldbds Datenquelle ab, führt eine einfache SQL-Abfrage durch und zeigt die Anzahl der Ergebnisse an, die zurückgegeben werden.
 
@@ -173,4 +173,4 @@ Das folgende JSP-Codebeispiel ruft eine Instanz der hsqldbds Datenquelle ab, fü
 
 >[!NOTE]
 >
->In [Einfügen eines DataSourcePool-Dienstes in ein Adobe Experience Manager-OSGi-Bundle](https://helpx.adobe.com/experience-manager/using/datasourcepool.html) erfahren Sie, wie Sie einen DataSourcePool in ein OSGi-Bundle einfügen.
+>In [Einfügen eines DataSourcePool-Dienstes in ein Adobe Experience Manager-OSGi-Bundle](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk) erfahren Sie, wie Sie einen DataSourcePool in ein OSGi-Bundle einfügen.

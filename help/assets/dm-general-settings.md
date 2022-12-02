@@ -12,7 +12,7 @@ exl-id: 55cc7c57-87a0-4bfb-b226-36d01d36849a
 source-git-commit: 9c548dbc0157607adda5ed76cab8ef970588e1e9
 workflow-type: tm+mt
 source-wordcount: '2498'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -30,11 +30,11 @@ Bei der Kontoerstellung stellt Adobe Dynamic Media automatisch die zugeordneten
 
 Auf der Seite „Veröffentlichungseinstellungen von Dynamic Media“ werden Standardeinstellungen festgelegt, die festlegen, wie Assets von Adobe Dynamic Media-Servern für Websites oder Programme bereitgestellt werden. Wenn keine Einstellung festgelegt ist, stellt der Adobe Dynamic Media-Server ein Asset gemäß einer Standardeinstellung bereit, die auf der Seite „Veröffentlichungseinstellungen von Dynamic Media“ konfiguriert wurde.
 
-Siehe auch [Optional - Einrichtung und Konfiguration von Dynamic Media - Einstellungen für den Scene7-Modus](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings) für weitere optionale Konfigurationsaufgaben.
+Informationen zu weiteren optionalen Konfigurationsaufgaben finden Sie unter [Optional – Einrichtung und Konfiguration der Scene7-Modus-Einstellungen von Dynamic Media](/help/assets/config-dms7.md#optional-setup-and-configuration-of-dynamic-media-scene7-mode-settings).
 
 >[!NOTE]
 >
->Sie möchten ein Upgrade von Dynamic Media Classic auf Dynamic Media auf Adobe Experience Manager durchführen? Die Seiten „Allgemeine Einstellungen“ und [Veröffentlichungseinstellungen](/help/assets/dm-publish-settings.md) in Dynamic Media werden vorab mit den Werten ausgefüllt, die von Ihrem Dynamic Media Classic-Konto übernommen werden. Die Ausnahmen sind alle Werte, die unter dem Bereich **[!UICONTROL Standardmäßige Upload-Optionen]** auf der Seite „Allgemeine Einstellungen“ angezeigt werden. Diese Werte befinden sich bereits in Experience Manager. Alle Änderungen, die Sie unter **[!UICONTROL Standardmäßige Upload-Optionen]** auf einer der fünf Registerkarten in der Experience Manager-Benutzeroberfläche vornehmen, werden in Dynamic Media, nicht jedoch in Dynamic Media Classic angezeigt. Alle anderen Einstellungen und Werte auf der Seite „Allgemeine Einstellungen“ und der Seite [Veröffentlichungseinstellungen](/help/assets/dm-publish-settings.md) werden von Dynamic Media Classic und Dynamic Media in Experience Manager verwaltet.
+>Sie möchten ein Upgrade von Dynamic Media Classic auf Dynamic Media auf Adobe Experience Manager durchführen? Die Seiten „Allgemeine Einstellungen“ und [Veröffentlichungseinstellungen](/help/assets/dm-publish-settings.md) in Dynamic Media werden vorab mit den Werten ausgefüllt, die von Ihrem Dynamic Media Classic-Konto übernommen werden. Die Ausnahmen sind alle Werte, die im Bereich **[!UICONTROL Standardmäßige Upload-Optionen]** auf der Seite „Allgemeine Einstellungen“ angezeigt werden. Diese Werte befinden sich bereits in Experience Manager. Alle Änderungen, die Sie unter **[!UICONTROL Standardmäßige Upload-Optionen]** auf einer der fünf Registerkarten in der Experience Manager-Benutzeroberfläche vornehmen, werden in Dynamic Media, nicht jedoch in Dynamic Media Classic angezeigt. Alle anderen Einstellungen und Werte auf der Seite „Allgemeine Einstellungen“ und der Seite [Veröffentlichungseinstellungen](/help/assets/dm-publish-settings.md) werden von Dynamic Media Classic und Dynamic Media in Experience Manager verwaltet.
 
 **So konfigurieren Sie „Allgemeine Dynamic Media-Einstellungen“:**
 
@@ -116,7 +116,7 @@ Wenn Sie PostScript (EPS)-Bilddateien hochladen, können Sie diese auf verschied
 | --- | --- |
 | **[!UICONTROL Verarbeitung]** | Wählen Sie „Rastern“, um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
 | **[!UICONTROL Transparenten Hintergrund in gerenderten Bildern beibehalten]** | Zur Beibehaltung der Hintergrundtransparenz der Datei. |
-| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung. Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
+| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
 | **[!UICONTROL Farbraum]** | • **[!UICONTROL Automatisch erkennen]**: Behält den Farbraum der Datei bei.<br>• **[!UICONTROL Immer RGB]**: Konvertiert in den RGB-Farbraum.<br>• **[!UICONTROL Immer CMYK]**: Konvertiert in den CMYK-Farbraum.<br>• **[!UICONTROL Immer Graustufen]**: Konvertiert in den Graustufen-Farbraum. |
 
 ### Registerkarte „Photoshop“ {#photoshop-tab}
@@ -140,7 +140,7 @@ Sie können die Dateien rastern, Suchbegriffe und Links extrahieren, die Auflös
 | --- | --- |
 | **[!UICONTROL Verarbeitung]** | • **[!UICONTROL Keine]**: Die PDF wird nicht verarbeitet.<br>• **[!UICONTROL Miniatur]**: Teilt die PDF-Datei in einzelne Seite auf und konvertiert diese in ein Miniaturbild.<br> • **[!UICONTROL Rastern]**: Teilt die PDF-Datei in einzelne Seiten auf und konvertiert Vektorgrafiken in Bitmap-Bilder. Wählen Sie diese Option, um einen E-Katalog zu erstellen. |
 | **[!UICONTROL Extrahieren]** | • **[!UICONTROL Keine]**: Es werden keine Suchbegriffe oder Links aus der PDF-Datei extrahiert.<br>• **[!UICONTROL Suchbegriffe]**: Extrahiert Suchbegriffe aus der PDF-Datei, damit die Datei in einem E-Katalog-Viewer nach einem Schlüsselwort durchsucht werden kann.<br>• **[!UICONTROL Links]**: Extrahiert Links aus den PDF-Dateien und konvertiert die PDF-Dateien in Imagemaps, die in einem E-Katalog-Viewer verwendet werden.<br>• **[!UICONTROL Suchbegriffe und Links]**: Extrahiert Suchbegriffe und Links zur Verwendung in einem E-Katalog-Viewer. |
-| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zum Festlegen der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Der Standardwert ist 150. |
+| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Der Standardwert ist 150. |
 | **[!UICONTROL Farbraum]** | • **[!UICONTROL Automatisch erkennen]**: Behält den Farbraum der PDF-Datei bei.<br>• **[!UICONTROL Immer RGB]**: Konvertiert in den RGB-Farbraum.<br>• **[!UICONTROL Immer CMYK]**: Konvertiert in den CMYK-Farbraum.<br>• **[!UICONTROL Immer Graustufen]**: Konvertiert in den Graustufen-Farbraum. |
 
 ### Registerkarte „Illustrator“ {#illustrator-tab}
@@ -156,5 +156,5 @@ Wenn Sie Illustrator (AI)-Bilddateien hochladen, können Sie diese auf verschied
 | --- | --- |
 | **[!UICONTROL Verarbeitung]** | Wählen Sie „Rastern“, um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
 | **[!UICONTROL Transparenten Hintergrund in gerenderten Bildern beibehalten]** | Zur Beibehaltung der Hintergrundtransparenz der Datei. |
-| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung. Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
+| **[!UICONTROL Auflösung (Pixel/Zoll)]** | Zur Einstellung der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
 | **[!UICONTROL Farbraum]** | • **[!UICONTROL Automatisch erkennen]**: Behält den Farbraum der Datei bei.<br>• **[!UICONTROL Immer RGB]**: Konvertiert in den RGB-Farbraum.<br>• **[!UICONTROL Immer CMYK]**: Konvertiert in den CMYK-Farbraum.<br>• **[!UICONTROL Immer Graustufen]**: Konvertiert in den Graustufen-Farbraum. |

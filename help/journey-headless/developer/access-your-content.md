@@ -5,7 +5,7 @@ exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1342'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Sie haben all diese Inhalte, sauber strukturiert (in Inhaltsfragmenten) und möc
 
 Sie benötigen eine Möglichkeit, bestimmte Inhalte gezielt anzusprechen, auszuwählen, was Sie benötigen, und sie zur weiteren Verarbeitung an Ihr Programm zurückzugeben.
 
-Mit Adobe Experience Manager (AEM) können Sie mithilfe der AEM GraphQL-API selektiv auf Ihre Inhaltsfragmente zugreifen, um nur die benötigten Inhalte zurückzugeben. Dies bedeutet, dass Sie die Headless-Bereitstellung von strukturierten Inhalten zur Verwendung in Ihren Programmen umsetzen können.
+Mit Adobe Experience Manager (AEM) können Sie mithilfe der AEM-GraphQL-API selektiv auf Ihre Inhaltsfragmente zugreifen, um nur die benötigten Inhalte zurückzugeben. Dies bedeutet, dass Sie die Headless-Bereitstellung von strukturierten Inhalten zur Verwendung in Ihren Programmen umsetzen können.
 
 >[!NOTE]
 >
@@ -49,7 +49,7 @@ GraphQL ist eine Open-Source-Spezifikation, mit der Ihnen Folgendes zur Verfügu
 * eine Abfragesprache, mit der Sie bestimmte Inhalte aus strukturierten Objekten auswählen können,
 * eine Laufzeit, um diese Abfragen mit Ihren strukturierten Inhalten auszuführen.
 
-GraphQL ist eine *stark* typisierte API. Das bedeutet, dass *alle* Inhalte klar strukturiert und nach Typ organisiert sein müssen, damit GraphQL *versteht*, auf was zugegriffen wird und wie. Die Datenfelder werden in GraphQL-Schemas definiert, die die Struktur Ihrer Inhaltsobjekte definieren.
+GraphQL ist eine *stark* typisierte API. Das bedeutet, dass *alle* Inhalte klar strukturiert und nach Typ organisiert sein müssen, damit GraphQL *versteht*, auf was zugegriffen wird und wie. Die Datenfelder werden in GraphQL-Schemata definiert, die die Struktur Ihrer Inhaltsobjekte definieren.
 
 GraphQL-Endpunkte geben dann die Pfade an, die GraphQL-Abfragen ausführen.
 
@@ -85,13 +85,13 @@ Inhaltsfragmente werden verwendet, da der Inhalt nach Inhaltsfragmentmodellen st
 
 * Ein Inhaltsfragmentmodell besteht aus einem oder mehreren Feldern.
    * Jedes Feld wird anhand eines Datentyps definiert.
-* Inhaltsfragmentmodelle werden verwendet, um die entsprechenden AEM-GraphQL-Schemas zu generieren.
+* Inhaltsfragmentmodelle werden verwendet, um die entsprechenden AEM-GraphQL-Schemata zu generieren.
 
 Für den Zugriff auf GraphQL für AEM (und die Inhalte) wird ein Endpunkt verwendet, um den Zugriffspfad bereitzustellen.
 
 Die über die AEM-GraphQL-API zurückgegebenen Inhalte können dann von Ihren Programmen verwendet werden.
 
-Um Ihnen beim direkten Eingeben und Testen von Abfragen zu helfen, ist auch eine Implementierung der standardmäßigen GraphiQL-Schnittstelle für die Verwendung mit AEM-GraphQL verfügbar (kann mit AEM installiert werden). Dies bietet Funktionen wie Syntaxhervorhebung, automatische Vervollständigung, automatische Vorschläge sowie einen Verlauf und eine Online-Dokumentation.
+Um Ihnen beim direkten Eingeben und Testen von Abfragen zu helfen, ist auch eine Implementierung der standardmäßigen GraphQL-Schnittstelle für die Verwendung mit AEM-GraphQL verfügbar (kann mit AEM installiert werden). Dies bietet Funktionen wie Syntaxhervorhebung, automatische Vervollständigung, automatische Vorschläge sowie einen Verlauf und eine Online-Dokumentation.
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ The use cases for the AEM GraphQL API can depend on the type of AEMenvironment:
 
 ## Inhaltsfragmente zur Verwendung mit der AEM-GraphQL-API {#content-fragments-use-with-aem-graphql-api}
 
-Inhaltsfragmente können als Grundlage für GraphQL-Abfragen für AEM-Schemas verwendet werden:
+Inhaltsfragmente können als Grundlage für GraphQL-Abfragen für AEM-Schemata verwendet werden:
 
 * Sie ermöglichen es Ihnen, seitenunabhängige Inhalte zu entwerfen, zu erstellen, zu kuratieren und zu veröffentlichen, die sich für die Headless-Bereitstellung eignen.
 * Sie basieren auf einem Inhaltsfragmentmodell, das die Struktur für das daraus entstehende Fragment mithilfe einer Auswahl von Datentypen vordefiniert.
@@ -123,7 +123,7 @@ Inhaltsfragmente können als Grundlage für GraphQL-Abfragen für AEM-Schemas ve
 
 Diese Inhaltsfragmentmodelle:
 
-* werden verwendet, um die Schemas zu erzeugen, sobald sie **aktiviert** sind.
+* werden verwendet, um die Schemata zu erzeugen, sobald sie **aktiviert** sind.
 * stellen die für GraphQL erforderlichen Datentypen und Felder bereit. Sie stellen sicher, dass Ihr Programm nur das anfordert, was möglich ist, und das erhält, was erwartet wird.
 * Der Datentyp **Fragmentreferenzen** kann in Ihrem Modell verwendet werden, um auf ein anderes Inhaltsfragment zu verweisen und so zusätzliche Strukturebenen einzuführen.
 
@@ -266,7 +266,7 @@ Wie Sie sehen können, verweisen die Felder für CEO und Mitarbeiter auf die Per
 Die Fragmentmodelle werden in folgenden Fällen verwendet:
 
 * beim Erstellen von Inhalten im Inhaltsfragment-Editor
-* für die Generierung der von Ihnen abgefragten GraphQL-Schemas
+* für die Generierung der von Ihnen abgefragten GraphQL-Schemata
 
 ### Testen von Abfragen {#where-to-test-your-queries}
 
@@ -359,7 +359,7 @@ Nachdem Sie nun erfahren haben, wie Sie mit der AEM-GraphQL-API auf Ihren Headle
 ## Zusätzliche Ressourcen {#additional-resources}
 
 * [GraphQL.org](https://graphql.org)
-   * [Schemas](https://graphql.org/learn/schema/)
+   * [Schemata](https://graphql.org/learn/schema/)
    * [Variablen](https://graphql.org/learn/queries/#variables)
    * [GraphQL-Java-Bibliotheken](https://graphql.org/code/#java)
 * [GraphiQL](https://graphql.org/learn/serving-over-http/#graphiql)

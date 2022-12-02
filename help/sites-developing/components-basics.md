@@ -325,7 +325,7 @@ Eine Komponente ist ein Knoten des Typs `cq:Component` mit den folgenden Eigensc
   <tr>
    <td><code>cq:editConfig</code></td>
    <td><code>cq:EditConfig</code></td>
-   <td><a href="#edit-behavior">Bearbeitungskonfiguration der Komponente</a><br /> </td>
+   <td><a href="#edit-behavior">Bearbeitungskonfiguration der Komponente</a>.<br /> </td>
   </tr>
   <tr>
    <td><code>cq:htmlTag</code></td>
@@ -568,7 +568,7 @@ Um das Bearbeitungsverhalten einer Komponente zu konfigurieren, fügen Sie einen
    * `dialogLayout` (String): legt fest, wie das Dialogfeld geöffnet werden soll
 
 
-* [`cq:editConfig`Untergeordnete -Knoten](#configuring-with-cq-editconfig-child-nodes):
+* [`cq:editConfig` Untergeordnete -Knoten](#configuring-with-cq-editconfig-child-nodes):
 
    * `cq:dropTargets` (Knotentyp `nt:unstructured`): definiert eine Liste von Ablagezielen, die eine Ablage von einem Asset aus dem Content Finder annehmen können.
 
@@ -602,7 +602,7 @@ Es gibt zahlreiche vorhandene Konfigurationen im Repository. Sie können einfach
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* Um einen untergeordneten Knoten von `cq:editConfig` zu suchen, z. B. nach `cq:dropTargets` mit dem Typ `cq:DropTargetConfig`, können Sie das Abfrage-Tool in ** CRXDE Lite** nutzen und mit der folgenden XPath-Abfragezeichenfolge suchen:
+* Um einen untergeordneten Knoten von `cq:editConfig` zu suchen, z. B. nach `cq:dropTargets` mit dem Typ `cq:DropTargetConfig`, können Sie das Abfrage-Tool in **CRXDE Lite** nutzen und mit der folgenden XPath-Abfragezeichenfolge suchen:
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -1043,7 +1043,7 @@ Das folgende Beispiel entspricht der `REFRESH_INSERTED`-Konfiguration:
 
 >[!NOTE]
 >
->Im Abschnitt „Ereignisse“ für `before<action>` und `after<action>` der Dokumentation zu den Widgets [`CQ.wcm.EditBar`](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) und [`CQ.wcm.EditRollover`](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) können Sie sehen, welche Parameter in der klassischen Benutzeroberfläche in den Handlern genutzt werden.
+>Im Abschnitt „Ereignisse“ für `before<action>` und `after<action>` der Dokumentation zu den Widgets [`CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) und [`CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) können Sie sehen, welche Parameter in der klassischen Benutzeroberfläche in den Handlern genutzt werden.
 
 Mit der folgenden Konfiguration wird die Seite aktualisiert, nachdem die Komponente gelöscht, bearbeitet, eingefügt oder verschoben wurde:
 

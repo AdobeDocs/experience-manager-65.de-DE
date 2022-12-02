@@ -75,7 +75,7 @@ Die Kernkomponenten sind moderne, flexible Komponenten, die sich problemlos erwe
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
 1. Wählen Sie aus dem Menü **Seiteninformationen** die Option **Vorlage bearbeiten** aus.
-1. Klicken Sie im Vorlagen-Editor der Seite auf das Richtlinien-Symbol **** der Textkomponente im **Layout-Container** der Seite.
+1. Klicken Sie im Vorlagen-Editor der Seite auf das **Richtlinien**-Symbol der Textkomponente im **Layout-Container** der Seite.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 

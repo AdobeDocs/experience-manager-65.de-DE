@@ -1,7 +1,7 @@
 ---
 title: Dynamic Media-Newsletter-Archiv
-description: 'Der archivierte Dynamic Media Newsletter nach Experience League war ein monatlicher Newsletter. Es wurde entwickelt, um Ihnen dabei zu helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, damit Sie sofort Wert erzielen können. Die archivierten Newsletter enthalten wertvolle Ressourcen zur Wissensbildung, die in diesem inzwischen ausgesetzten One-Stopp-Shop-Newsletter verfügbar waren. Archivierte Newsletter enthalten Anleitungsvideos und Lösungsübersichten. Außerdem werden wichtige Funktionen und Möglichkeiten wie Bildvorgaben, Viewer-Vorgaben und Videoprofile vorgestellt. '
-keywords: Dynamic Media; Newsletter; Produktupdates; Tipps und Tricks; Ereignisse; Kundenerfolg; Blog; Blogs; Bilder; Videos; Funktionen; Funktionen
+description: Der archivierte Dynamic Media Newsletter von Experience League war ein monatlicher Newsletter. Er sollte Ihnen helfen, sich mit Dynamic Media und Dynamic Media Classic vertraut zu machen, sodass Sie sofort Nutzen daraus ziehen können. Die archivierten Newsletter enthalten wertvolle Ressourcen zur Wissensbildung, die in diesem inzwischen eingestellten One-Stop-Shop-Newsletter verfügbar waren. Archivierte Newsletter enthalten Anleitungsvideos und Lösungsübersichten. Außerdem werden wichtige Funktionen und Möglichkeiten wie Bildvorgaben, Viewer-Vorgaben und Videoprofile vorgestellt.
+keywords: Dynamic Media;Newsletter;Produkt-Updates;Tipps und Tricks;Ereignisse;Kundenerfolg;Blog;Blogs;Bilder;Videos; Features; Funktionen
 contentOwner: Rick Brough
 solution: Experience Manager, Dynamic Media Classic
 role: User, Admin
@@ -10,7 +10,7 @@ feature: Collaboration,Dynamic Media Classic
 source-git-commit: cdf6a22e8a0fd2e73cd4d25074e0c7162c047d92
 workflow-type: tm+mt
 source-wordcount: '1076'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 

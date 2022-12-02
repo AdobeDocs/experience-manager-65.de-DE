@@ -19,7 +19,7 @@ Staging-Produktdaten beinhalten zukünftig jede Mutation wie neue Kategorien, Pr
 
 >[!NOTE]
 >
->Der Begriff „Produktkatalog“ ist mit „Handels-Shop“, „Shop-Ansicht“ und ähnlichen Ausdrücken austauschbar.
+>Der Begriff „Produktkatalog“ ist gleichbedeutend mit „Handels-Shop“, „Store-Ansicht“ und ähnlichen Ausdrücken.
 
 ## Konfiguration {#configuration}
 
@@ -79,6 +79,6 @@ Die Registerkarten „Allgemein“ und „Varianten“ zeigen vordefinierte Comm
 
 ### AEM-Inhaltsregisterkarten {#content-tabs}
 
-Diese Registerkarten, gruppiert nach AEM Inhaltstypen (Erlebnisfragmente, Inhaltsfragmente, zugehörige Assets), zeigen AEM-Inhalte an, die mit dem Commerce-Objekt verknüpft sind. Durch die Aktion „Details anzeigen“ wird eine neue Browser-Registerkarte mit dem ausgewählten Inhalt geöffnet.
+Diese Registerkarten, gruppiert nach AEM Inhaltstypen (Experience Fragments, Inhaltsfragmente, zugehörige Assets), zeigen AEM-Inhalte an, die mit dem Commerce-Objekt verknüpft sind. Durch die Aktion „Details anzeigen“ wird eine neue Browser-Registerkarte mit dem ausgewählten Inhalt geöffnet.
 
 ![Inhaltseigenschaften](/help/commerce/cif/assets/content-properties.png)

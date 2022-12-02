@@ -1,19 +1,19 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten
-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Headless-Bereitstellung eignen.
+description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) seitenunabhängige Inhalte für die Headless-Bereitstellung entwerfen, erstellen, kuratieren und verwenden können.
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
 source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
 workflow-type: tm+mt
 source-wordcount: '1989'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
 
-Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente entwerfen, erstellen, kuratieren und [seitenunabhängige Inhalte veröffentlichen](/help/sites-authoring/content-fragments.md) Sie ermöglichen es Ihnen, Inhalte für die Verwendung an mehreren Orten/über mehrere Kanäle vorzubereiten, die sich ideal für die Headless-Bereitstellung eignen.
+Mit Adobe Experience Manager (AEM) können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte veröffentlichen](/help/sites-authoring/content-fragments.md), entwerfen, erstellen und kuratieren. Diese ermöglichen Ihnen die Vorbereitung von Inhalten, die an mehreren Stellen / über mehrere Kanäle hinweg verwendet werden können und ideal für die Headless-Bereitstellung sind.
 
 Inhaltsfragmente enthalten strukturierten Inhalt:
 
@@ -38,7 +38,7 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 
 * [Aktivieren der Funktionen für Inhaltsfragmente für Ihre Instanz](/help/assets/content-fragments/content-fragments-configuration-browser.md)
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) – Aktivieren, Erstellen und Definieren Ihrer Modelle
-* [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)  – Erstellen Sie Ihre Inhaltsfragmente; anschließend können Sie sie bearbeiten, veröffentlichen und Verweise erstellen
+* [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md)    – Erstellen Sie Ihre Inhaltsfragmente; anschließend können Sie sie bearbeiten, veröffentlichen und Verweise erstellen
 * [Varianten – Erstellen von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-variations.md) – Erstellen Sie das Inhaltsfragment und erstellen Sie Varianten der Vorlage
 * [Markdown](/help/assets/content-fragments/content-fragments-markdown.md) – Verwendung der Markdown-Syntax für Ihr Fragment
 * [Verwenden verknüpfter Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md) – Hinzufügen verknüpfter Inhalte
@@ -86,7 +86,7 @@ Diese Inhaltsfragmente können dann zusammengestellt werden, um Erlebnisse über
 
 >[!NOTE]
 >
->Vor AEM 6.3 wurden Inhaltsfragmente mit Vorlagen anstelle von Modellen erstellt. Vorlagen sind nicht mehr zum Erstellen neuer Fragmente verfügbar, aber alle mit einer solchen Vorlage erstellten Fragmente werden weiterhin unterstützt.
+>Vor AEM 6.3 wurden Inhaltsfragmente mit Hilfe von Vorlagen anstelle von Modellen erstellt. Vorlagen sind nicht mehr für das Erstellen neuer Fragmente verfügbar, aber Fragmente, die mit einer solchen Vorlage erstellt wurden, werden weiterhin unterstützt.
 
 ## Inhaltsfragmente und Content Services {#content-fragments-and-content-services}
 

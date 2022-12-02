@@ -1,7 +1,7 @@
 ---
-title: Ausprobieren von responsivem Layout in We.Retail
+title: Testen von responsivem Layout in We.Retail
 seo-title: Trying out Responsive Layout in We.Retail
-description: Ausprobieren von responsivem Layout in We.Retail
+description: Testen von responsivem Layout in We.Retail
 seo-description: null
 uuid: d9613655-f54e-458f-9175-d07bb868f58b
 contentOwner: User
@@ -13,13 +13,13 @@ exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '247'
-ht-degree: 74%
+ht-degree: 100%
 
 ---
 
-# Ausprobieren von responsivem Layout in We.Retail{#trying-out-responsive-layout-in-we-retail}
+# Testen von responsivem Layout in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Alle We.Retail-Seiten verwenden die Komponente Layout-Container , um responsives Design zu implementieren. Der Layout-Container bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit der **Layout** -Modus im Seiteneditor verwenden, mit dem Sie Ihr responsives Layout geräteabhängig erstellen und bearbeiten können.
+Alle We.Retail-Seiten verwenden die Layout-Container-Komponente, um responsives Design zu implementieren. Der Layout-Container bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können. Dieses Raster kann das Layout abhängig von der Größe des Geräts/Fensters und des Formats neu anordnen. Die Komponente wird zusammen mit dem **Layout**-Modus im Seiteneditor verwendet, mit dem Sie das responsive Layout je nach Gerät erstellen und bearbeiten können.
 
 ## Testen {#trying-it-out}
 
@@ -47,4 +47,4 @@ Alle We.Retail-Seiten verwenden die Komponente Layout-Container , um responsives
 
 ## Weiterführende Informationen {#further-information}
 
-Weiterführende Informationen finden Sie im Authoring-Dokument . [Responsives Layout](/help/sites-authoring/responsive-layout.md) oder das Administratordokument [Konfigurieren des Layout-Containers und des Layout-Modus](/help/sites-administering/configuring-responsive-layout.md) für vollständige technische Details.
+Weitere Informationen und umfassende technische Details finden Sie im Dokument [Responsives Layout](/help/sites-authoring/responsive-layout.md) oder im Administrator-Dokument [Konfigurieren von Layout-Container und Layout-Modus](/help/sites-administering/configuring-responsive-layout.md).

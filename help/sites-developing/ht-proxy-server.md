@@ -1,5 +1,5 @@
 ---
-title: Verwendung des Proxyservertools
+title: Verwendung des Proxy-Server-Tools
 seo-title: How to use the Proxy Server Tool
 description: Ein Proxyserver fungiert als zwischengeschalteter Server, der Anfragen zwischen einem Client und einem Server weiterreicht.
 seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
@@ -13,11 +13,11 @@ exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '943'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Verwendung des Proxyservertools{#how-to-use-the-proxy-server-tool}
+# Verwendung des Proxy-Server-Tools{#how-to-use-the-proxy-server-tool}
 
 Ein Proxyserver fungiert als zwischengeschalteter Server, der Anfragen zwischen einem Client und einem Server weiterreicht. Der Proxyserver speichert alle Interaktionen zwischen Client und Server und erstellt ein Protokoll der gesamten TCP-Kommunikation. So können Sie sämtliche Aktivitäten genau überwachen und müssen nicht auf den Hauptserver zugreifen.
 
@@ -32,7 +32,7 @@ Sie können den Proxyserver verwenden, um alle Interaktionen zwischen Client und
 * SMTP für E-Mail-Nachrichten
 * LDAP für die Benutzerverwaltung
 
-Sie können den Proxyserver zum Beispiel zwischen zwei Anwendungen schalten, die über ein TCP/IP-Netzwerk kommunizieren, etwa einem Webbrowser und AEM. So können Sie genau überprüfen, was passiert, wenn Sie eine CQ-Seite anfordern.
+Sie können den Proxyserver zum Beispiel zwischen zwei Anwendungen schalten, die über ein TCP/IP-Netzwerk kommunizieren, etwa einem Webbrowser und AEM. So können Sie genau überprüfen, was passiert, wenn Sie eine CQ-Seite anfragen.
 
 ## Starten des Proxyservertools {#starting-the-proxy-server-tool}
 
@@ -64,17 +64,17 @@ Die Ausgabe wird nicht in das Konsolenfenster geschrieben. Verwenden Sie die Opt
 
 Aktivieren Sie den binären Modus, wenn Sie nach bestimmten Bytekombinationen im Datenverkehr suchen. Die Ausgabe enthält anschließend die Hexadezimal- und Zeichenausgabe.
 
-`-t` (Zeitstempelprotokolleinträge)
+`-t` (Zeitstempel für Protokolleinträge)
 
 Fügt jedem Eintrag im Protokoll einen Zeitstempel hinzu. Der Zeitstempel wird in Sekunden angegeben, weshalb er möglicherweise nicht zur Prüfung einzelner Anfragen geeignet ist. Verwenden Sie die Option, um Ereignisse ausfindig zu machen, die zu einem bestimmten Zeitpunkt erfolgt sind, wenn Sie den Proxyserver über einen längeren Zeitraum nutzen.
 
-`-logfile <filename>`(Schreiben in Protokolldatei)
+`-logfile <filename>` (Schreiben in Protokolldatei)
 
 Schreibt die Interaktionen zwischen Client und Server in eine Protokolldatei. Dieser Parameter kann auch im stillen Modus genutzt werden.
 
-**`-i <numIndentions>`**(Einzug hinzufügen)
+**`-i <numIndentions>`** (Einzug hinzufügen)
 
-Die einzelnen Verbindungen werden für eine bessere Lesbarkeit eingezogen. Der Standardwert beträgt 16 Ebenen. Diese Funktion wurde mit `proxy.jar version 1.16`.
+Die einzelnen Verbindungen werden für eine bessere Lesbarkeit eingezogen. Der Standardwert beträgt 16 Ebenen. Diese Funktion wurde mit `proxy.jar version 1.16` eingeführt.
 
 ### Protokollformat {#log-format}
 
@@ -82,14 +82,14 @@ Die von proxy-2.1.jar erstellten Protokolleinträge haben das folgende Format:
 
 `[timestamp (optional)] [Client|Server]-[ConnectionNumber]-[BytePosition] ->[Character Stream]`
 
-So kann eine Webseitenanforderung zum Beispiel wie folgt aussehen:
+So kann eine Web-Seitenanfrage zum Beispiel wie folgt aussehen:
 
 `C-0-#000000 -> [GET /author/prox.html?CFC_cK=1102938422341 HTTP/1.1 ]`
 
-* „C“ gibt an, dass dieser Eintrag vom Client stammt (es handelt sich dabei um die Anforderung einer Webseite).
+* „C“ gibt an, dass dieser Eintrag vom Client stammt (es handelt sich dabei um die Anfrage einer Web-Seite).
 * „0“ ist die Verbindungsnummer (der Verbindungszähler startet bei 0).
 * # 00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
-* `[GET <?>]` ist der Inhalt der Anfrage, im Beispiel einer der HTTP-Header (URL).
+* `[GET <?>]` ist der Inhalt der Anfrage, im Beispiel eine der HTTP-Kopfzeilen (URL).
 
 Wenn eine Verbindung geschlossen wird, werden die folgenden Informationen protokolliert:
 
@@ -102,7 +102,7 @@ Hier werden die Anzahl der Bytes, die zwischen dem Client (`C`) und dem Server (
 
 **Beispiel für eine Protokollausgabe**
 
-Stellen Sie sich als Beispiel eine Seite vor, die bei einer Anforderung den folgenden Code ausgibt:
+Stellen Sie sich als Beispiel eine Seite vor, die bei einer Anfrage den folgenden Code ausgibt:
 
 ### Beispiel {#example}
 
@@ -128,11 +128,11 @@ Der Inhalt von `test.html` ist:
 </html>
 ```
 
-Angenommen, die AEM-Instanz läuft auf `localhost:4502` starten wir den Proxy wie folgt:
+Wenn wir davon ausgehen, dass die AEM-Instanz auf `localhost:4502` ausgeführt wird, starten wir den Proxy wie folgt:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Die CQ-/CRX-Instanz kann jetzt über den Proxy unter `localhost:4444` und die gesamte Kommunikation über diesen Port bei `test.log`.
+Auf die CQ-/CRX-Instanz kann nun über den Proxy unter `localhost:4444` zugegriffen werden und sämtliche Kommunikation über diesen Port wird im Protokoll `test.log` erfasst.
 
 Wenn Sie sich nun die Ausgabe des Proxys ansehen, können Sie die Interaktion zwischen dem Browser und der AEM-Instanz beobachten.
 
@@ -147,7 +147,7 @@ Wenn Sie anschließend einen Browser öffnen und auf die Testseite unter
 
 `http://localhost:4444/content/test.html`
 
-und wir sehen, dass der Browser eine `GET` -Anfrage für die Seite:
+zugreifen, sehen Sie, dass der Browser eine `GET`-Anfrage für die folgende Seite tätigt:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -208,27 +208,27 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 
 **Überprüfen der Funktionsfähigkeit von Keep-Alive**
 
-Keep-Alive ist eine Funktion von HTTP, die es einem Client ermöglicht, eine TCP-Verbindung zum Server wiederzuverwenden, um mehrere Anforderungen zu tätigen (für Seitencode, Bilder, Stylesheets usw.). Ohne Keep-Alive muss der Client für jede Anforderung eine neue Verbindung aufbauen.
+Keep-Alive ist eine Funktion von HTTP, die es einem Client ermöglicht, eine TCP-Verbindung zum Server wiederzuverwenden, um mehrere Anfragen zu tätigen (für Seiten-Code, Bilder, Stylesheets usw.). Ohne Keep-Alive muss der Client für jede Anfrage eine neue Verbindung aufbauen.
 
 So überprüfen Sie, ob Keep-Alive funktioniert:
 
 * Starten Sie den Proxyserver.
-* Fordern Sie eine Seite an.
+* Fragen Sie eine Seite an.
 * Falls Keep-Alive funktioniert, sollte der Verbindungszähler immer nur auf einen Wert zwischen 5–10 Verbindungen ansteigen.
 * Sollte Keep-Alive nicht funktionieren, erhöht sich dieser Wert sehr schnell.
 
-**Finden verlorener Anforderungen**
+**Finden verlorener Anfragen**
 
-Sollten Anforderungen in einer komplexen Serverumgebung, zum Beispiel einer mit Firewall und Dispatcher, verloren gehen, können Sie den Proxyserver verwenden, um herauszufinden, wo die Anforderung verloren ging. In Fällen mit Firewall:
+Sollten Anfragen in einer komplexen Serverumgebung, zum Beispiel einer mit Firewall und Dispatcher, verloren gehen, können Sie den Proxyserver verwenden, um herauszufinden, wo die Anfrage verloren ging. In Fällen mit Firewall:
 
 * Starten Sie einen Proxy vor der Firewall.
 * Starten Sie einen weiteren Proxy hinter der Firewall.
-* Verwenden Sie die Proxys, um herauszufinden, wie weit die Anforderungen kommen.
+* Verwenden Sie die Proxys, um herauszufinden, wie weit die Anfragen kommen.
 
-**Hängende Anforderungen**
+**Hängende Anfragen**
 
-Gehen Sie wie folgt vor, wenn gelegentlich hängende Anforderungen auftreten:
+Gehen Sie wie folgt vor, wenn gelegentlich hängende Anfragen auftreten:
 
 * Starten Sie den Proxy.
 * Warten Sie oder schreiben Sie das Zugriffsprotokoll in eine Datei, in der jeder Eintrag einen Zeitstempel aufweist.
-* Wenn hängende Anforderungen auftreten, können Sie sehen, wie viele Verbindungen offen waren und welche Anforderung dafür verantwortlich ist.
+* Wenn hängende Anfragen auftreten, können Sie sehen, wie viele Verbindungen offen waren und welche Anfrage dafür verantwortlich ist.

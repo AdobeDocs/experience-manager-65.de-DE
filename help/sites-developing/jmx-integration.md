@@ -9,7 +9,7 @@ exl-id: fe727406-09cb-4516-8278-806fd78cfc12
 source-git-commit: a2e5a5ae7585299de869dbf8744d7be4b86c5bf8
 workflow-type: tm+mt
 source-wordcount: '1659'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ Weitere Informationen zur Nutzung der JMX-Konsole finden Sie unter [Überwachen 
 
 ## Das JMX-Framework bei Felix und CQ5 {#the-jmx-framework-in-felix-and-cq}
 
-Auf der Apache Felix-Plattform stellen Sie MBeans als OSGi-Dienste bereit. Wenn ein MBean-Dienst in der OSGi Service Registry registriert ist, registriert das Aries JMX Whiteboard-Modul das MBean automatisch beim MBean-Server. Das MBean ist dann für die JMX-Konsole verfügbar, die die öffentlichen Attribute und Vorgänge veröffentlicht.
+Auf der Apache Felix-Plattform stellen Sie MBeans als OSGi-Dienste bereit. Wenn ein MBean-Dienst in der OSGi-Dienst-Registrierung registriert wird, registriert das Aries JMX Whiteboard-Modul das MBean automatisch beim MBean-Server. Das MBean ist dann für die JMX-Konsole verfügbar, die die öffentlichen Attribute und Vorgänge veröffentlicht.
 
 ![jmxwhiteboard](assets/jmxwhiteboard.png)
 
 ## Erstellen von MBeans für CQ5 und CRX {#creating-mbeans-for-cq-and-crx}
 
-MBeans, die Sie für die Verwaltung von CQ5- oder CRX-Ressourcen erstellen, basieren auf der Schnittstelle javax.management.DynamicMBean . Um sie zu erstellen, halten Sie sich an die gängigen Entwicklungsmuster, die in der JMX-Spezifikation festgelegt sind:
+MBeans, die Sie für die Verwaltung von CQ5- oder CRX-Ressourcen erstellen, basieren auf der Schnittstelle javax.management.DynamicMBean. Um sie zu erstellen, halten Sie sich an die gängigen Entwicklungsmuster, die in der JMX-Spezifikation festgelegt sind:
 
 * Erstellen Sie die Verwaltungsschnittstelle, einschließlich Get-, Set- und Is-Methoden zur Definition von Attributen und anderen Methoden zur Definition von Vorgängen.
 * Erstellen Sie die Implementierungsklasse. Die Klasse muss DynamicMBean implementieren oder eine Implementierungsklasse von DynamicMBean erweitern.
@@ -44,7 +44,7 @@ Das Paket [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-
 Fügen Sie Anmerkungen zur Verwaltungsschnittstelle hinzu, um MBean-Metadaten anzugeben. Diese Daten werden in der JMX-Konsole für jede bereitgestellte Implementierungsklasse angezeigt. Folgende Anmerkungen sind verfügbar (vollständige Informationen finden Sie in den [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
 
 * **Description:** Eine Beschreibung der MBean-Klasse oder -Methode. Wenn diese Anmerkung bei der Deklaration der Klasse genutzt wird, wird die Beschreibung für das MBean auf der JMX-Konsolenseite angezeigt. Wenn sie bei einer Methode verwendet wird, wird die Beschreibung als Mouseover-Text für das entsprechende Attribut bzw. den entsprechenden Vorgang angezeigt.
-* **Impact:** Die Auswirkung einer Methode. Gültige Parameterwerte sind die von [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
+* **Impact:** Die Auswirkung einer Methode. Gültige Parameterwerte sind die Felder, die von [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html) definiert werden.
 
 * **Name:** Legt den anzuzeigenden Namen für einen Vorgangsparameter fest. Mit dieser Anmerkung können Sie den tatsächlichen Namen des Methodenparameters überschreiben, der in der Oberfläche genutzt wird.
 * **OpenTypeInfo:** Legt die Klasse fest, die für die Anzeige der zusammengefassten Daten oder Tabellendaten in der JMX-Konsole genutzt werden soll. Zur Nutzung mit Open MBeans.
@@ -55,7 +55,7 @@ Fügen Sie Anmerkungen zur Verwaltungsschnittstelle hinzu, um MBean-Metadaten an
 Klassen werden für die Erstellung von Dynamic MBeans bereitgestellt, die die Anmerkungen nutzen, die Sie zu ihren Schnittstellen hinzufügen:
 
 * **AnnotatedStandardMBean:** eine Unterklasse der Klasse javax.management.StandardMBean, die der JMX-Konsole die Anmerkungs-Metadaten automatisch bereitstellt.
-* **OpenAnnotatedStandardMBean:** Eine Unterklasse der AnnotatedStandardMBean-Klasse zum Erstellen von Open MBeans, die die OpenTypeInfo-Ankündigung nutzen.
+* **OpenAnnotatedStandardMBean:** eine Unterklasse der Klasse AnnotatedStandardMBean für die Erstellung von Open MBeans, die die OpenTypeInfo-Anmerkung nutzen.
 
 ### Entwickeln von MBeans {#developing-mbeans}
 
@@ -134,15 +134,15 @@ Wenn Sie MBeans als OSGi-Dienst registrieren, werden sie automatisch beim MBean-
 
 Neben den zu OSGi gehörenden Metadaten müssen Sie auch die Metadaten angeben, die das Aries JMX Whiteboard-Modul für die Registrierung des MBean beim MBean-Server benötigt:
 
-* **Der Name der DynamicMBean-Schnittstelle:** Deklarieren Sie, dass der MBean-Dienst die `javax.management.DynamicMBea`n -Schnittstelle. Diese Deklaration informiert das Aries JMX Whiteboard-Modul darüber, dass es sich bei dem Dienst um einen MBean-Dienst handelt.
+* **Name der DynamicMBean-Schnittstelle:** Deklarieren Sie, dass der MBean-Dienst die Schnittstelle `javax.management.DynamicMBea`n implementiert. Diese Deklaration informiert das Aries JMX Whiteboard-Modul darüber, dass es sich bei dem Dienst um einen MBean-Dienst handelt.
 
-* **Die MBean-Domäne und die wichtigsten Eigenschaften:** Auf Felix geben Sie diese Informationen als Eigenschaft des OSGi-Dienstes des MBean an. Dabei handelt es sich um dieselben Daten, die Sie für gewöhnlich dem MBean-Server in einem `javax.management.ObjectName`-Objekt bereitstellen.
+* **MBean-Domain und wichtige Eigenschaften:** Bei Felix geben Sie diese Daten als Eigenschaft des OSGi-Dienstes des MBean an. Dabei handelt es sich um dieselben Daten, die Sie für gewöhnlich dem MBean-Server in einem `javax.management.ObjectName`-Objekt bereitstellen.
 
 Wenn Ihr MBean das Abbild eines einzelnen Dienstes ist, ist nur eine einzige Instanz des MBean-Dienstes erforderlich. In diesem Fall können Sie, wenn Sie das Felix SCR Maven-Plug-in verwenden, mit den Apache Felix Service Component Runtime (SCR)-Anmerkungen auf der MBean-Implementierungsklasse die JMX-Metadaten festlegen. Um mehrere MBean-Instanzen zu initiieren, könnten Sie eine weitere Klasse erstellen, die die Registrierung des OSGi-Dienstes des MBean durchführt. In diesem Fall werden die JMX-Metadaten bei Laufzeit erzeugt.
 
 **Einzelnes MBean**
 
-MBeans, für die Sie alle Attribute und Vorgänge bei der Entwicklung definieren können, können Sie mit SCR-Anmerkungen in der MBean-Implementierungsklasse bereitstellen. Im folgenden Beispiel deklariert das Attribut `value` der Anmerkung `Service`, dass der Dienst die Schnittstelle `DynamicMBean` implementiert. Das Attribut `name` der Anmerkung `Property` legt die JMX-Domäne und die wichtigsten Eigenschaften fest.
+MBeans, für die Sie alle Attribute und Vorgänge bei der Entwicklung definieren können, können Sie mit SCR-Anmerkungen in der MBean-Implementierungsklasse bereitstellen. Im folgenden Beispiel deklariert das Attribut `value` der Anmerkung `Service`, dass der Dienst die Schnittstelle `DynamicMBean` implementiert. Das Attribut `name` der Anmerkung `Property` legt die JMX-Domain und die wichtigsten Eigenschaften fest.
 
 #### MBean-Implementierungsklasse mit SCR-Anmerkungen {#mbean-implementation-class-with-scr-annotations}
 
@@ -213,16 +213,16 @@ In diesem Beispiel stellt das MBean Daten zu den CQ5-Workflow-Modellen bereit, d
 * WorkflowMBeanManager: die Schnittstelle der MBean-Managerklasse
 * WorkflowMBeanManagerImpl: die Implementierungsklasse des MBean-Managers
 
-**Hinweis:** Um das Beispiel zu vereinfachen, führt der Beispielcode keine Protokollierungsaufgaben durch und reagiert nicht auf gemeldete Ausnahmen.
+**Hinweis:** Um das Beispiel zu vereinfachen, führt der Beispiel-Code keine Protokollierungsaufgaben durch und reagiert nicht auf gemeldete Ausnahmen.
 
 WorkflowMBeanManagerImpl enthält eine Komponenten-Aktivierungsmethode. Wenn die Komponente aktiviert wird, führt die Methode die folgenden Aufgaben durch:
 
 * Sie ruft einen BundleContext für das Bundle ab.
 * Sie fragt beim Repository die Pfade der vorhandenen Workflow-Modelle ab.
-* Erstellt MBeans für jedes Workflow-Modell.
+* Sie erstellt MBeans für jedes Workflow-Modell.
 * Sie registriert die MBeans in der OSGi-Dienst-Registrierung.
 
-Die MBean-Metadaten werden in der JMX-Konsole mit der Domäne com.adobe.example und dem workflow_model-Typ angezeigt. Als Eigenschaft ist der Pfad des Workflow-Modellkonfigurationsknotens angegeben.
+Die MBean-Metadaten werden in der JMX-Konsole mit der Domain com.adobe.example und dem workflow_model-Typ angezeigt. Als Eigenschaft ist der Pfad des Workflow-Modellkonfigurationsknotens angegeben.
 
 ![jmxworkflowmbean](assets/jmxworkflowmbean.png)
 

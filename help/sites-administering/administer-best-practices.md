@@ -1,7 +1,7 @@
 ---
 title: Best Practices
 seo-title: Best Practices
-description: Erhalten Sie Informationen zu Best Practices, die von den Entwicklungs- und Beratungsteams von Adobe zusammengestellt wurden, um Administratoren einen schnellen Einstieg zu ermöglichen.
+description: Erhalten Sie Informationen zu Best Practices, die von den Entwicklungs- und Beratungs-Teams von Adobe zusammengestellt wurden, um Admins einen schnellen Einstieg zu ermöglichen.
 seo-description: Find best practices compiled by Adobe engineering and consulting teams to help administrators get up and running.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
@@ -13,7 +13,7 @@ exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '524'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -30,13 +30,13 @@ Best Practices für die Bearbeitung, Bereitstellung, Pflege und Entwicklung find
 
 * [Best Practices für die Inhaltserstellung](/help/sites-authoring/best-practices.md)
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
-* [Best Practices für die Bereitstellung ](/help/sites-deploying/best-practices.md)
+* [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
 
 Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
 
 ## Assets {#assets}
 
-Best Practices rund um Assets, einschließlich der Dynamic Media-Funktion und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
+Best Practices rund um Assets, einschließlich der Dynamic Media-Funktionen und der Dynamic Media Classic-Integration, werden in den folgenden Themen beschrieben:
 
 <table>
  <tbody>
@@ -61,9 +61,9 @@ Best Practices rund um Assets, einschließlich der Dynamic Media-Funktion und de
    <td>In diesen Themen wird als Bestandteil der Dokumentation über das <a href="/help/assets/managing-image-presets.md">Verwalten von Bildvorgaben</a> beschrieben, was Bildvorgaben sind. Zudem enthalten sie Best Practices hinsichtlich der Auswahl von Bildvorgabenoptionen.</td>
   </tr>
   <tr>
-   <td>Dynamische Medien im Vergleich zur direkten Integration in Scene7</td>
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7-/AEM-Integration im Vergleich zu Dynamische Medien</a></td>
-   <td>Beschreibt, wann sich die Verwendung der Lösung „Dynamische Medien“ am ehesten empfiehlt, wann S7 in AEM integriert wird und wann beide Lösungen verwendet werden.</td>
+   <td>Dynamic Media im Vergleich zur direkten Integration in Scene7</td>
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7-/AEM-Integration im Vergleich zu Dynamic Media</a></td>
+   <td>Beschreibt, wann sich die Verwendung der Lösung „Dynamic Media“ am ehesten empfiehlt, wann S7 in AEM integriert wird und wann beide Lösungen verwendet werden.</td>
   </tr>
  </tbody>
 </table>
@@ -97,7 +97,7 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
   <tr>
    <td>Benutzerverwaltung</td>
    <td><a href="/help/sites-administering/security.md#best-practices">Best Practices zu Berechtigungen und Rechten</a></td>
-   <td>Beschreibt Best Practices beim Arbeiten mit Berechtigungen und Berechtigungen </td>
+   <td>Hier sind die Best Practices für die Arbeit mit Berechtigungen und Rechten beschrieben. </td>
   </tr>
   <tr>
    <td>Workflows</td>

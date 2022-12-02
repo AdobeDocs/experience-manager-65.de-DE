@@ -13,7 +13,7 @@ exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '416'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ In diesem Abschnitt finden Sie einen Überblick über die wichtigsten Funktionen
 
 Er deckt folgende Themen ab:
 
-* [Erste Schritte](#getting-started): Details zur grundlegenden Ereignisabfolge, die Sie zum Erstellen und Veröffentlichen Ihrer ersten Seite benötigen.
+* [Erste Schritte](#getting-started): Details zur grundlegenden Ereignisabfolge, die Sie für das Erstellen und Veröffentlichen der ersten Seite benötigen.
 
-* [Weitere Maßnahmen](#further-actions): Im Anschluss an die vielen anderen Aktionen, die Sie beim Authoring verwenden können.
+* [Weitere Aktionen](#further-actions): Viele weitere Aktionen, die Sie bei der Bearbeitung von Inhalten verwenden können.
 
 ## Erste Schritte {#getting-started}
 

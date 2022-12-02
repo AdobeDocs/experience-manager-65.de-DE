@@ -13,7 +13,7 @@ exl-id: 10dde29b-5dc7-4d4e-80ae-3d4fd0397f7e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '156'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -33,9 +33,9 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Ausführen einer Konsistenzüberprüfung {#perform-a-consistency-check}
 
-Um eine Konsistenzprüfung durchzuführen, navigieren Sie zur Administrationsseite für das JMX Mbean** com.adobe.granite (Repository)**. Wechseln Sie auf dem AEM-Hauptbildschirm zu:
+Navigieren Sie zum Ausführen einer Konsistenzüberprüfung zur Verwaltungsseite für das JMX MBean **com.adobe.granite (Repository)**. Wechseln Sie auf dem AEM-Hauptbildschirm zu:
 
-**Tools > Web-Konsole > Haupt(in Menüleiste) > JMX > com.adobe.granite (Repository)**
+**Tools > Webkonsole > Haupt (auf der Menüleiste) > JMX > com.adobe.granite (Repository)**
 
 In einer Standardinstallation befindet er sich hier: **[|Anzeigen|](http://localhost:4502/system/console/jmx/com.adobe.granite%3Atype%3DRepository)**
 

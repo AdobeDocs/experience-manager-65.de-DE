@@ -14,7 +14,7 @@ exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
 source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
 workflow-type: tm+mt
 source-wordcount: '730'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -24,15 +24,15 @@ In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendering auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
 Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über die JSP- oder HTL-Datei und Ressourcenobjekte bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten wird als JSON-Datenstruktur (d. h. das Modell) abgerufen. Die SPA-Komponenten werden dann gemäß dem angegebenen JSON-Modell zur Seite hinzugefügt. Somit unterscheidet sich die anfängliche Textzusammensetzung der Seitenkomponente von den im Vorab gerenderten HTML-Entsprechungen.
 
-## Seitenmodellverwaltung  {#page-model-management}
+## Seitenmodellverwaltung {#page-model-management}
 
-Die Auflösung und Verwaltung des Seitenmodells wird an ein bereitgestelltes [-Modul delegiert. `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) Die SPA muss mit dem `PageModelManager`-Modul interagieren, wenn es initialisiert wird, um das anfängliche Seitenmodell abzurufen und sich für Modellaktualisierungen zu registrieren – die meistens auftreten, wenn der Autor die Seite über den Seiteneditor bearbeitet. Der `PageModelManager` ist für das SPA-Projekt als NPM-Paket zugänglich. Als Dolmetscher zwischen AEM und der SPA soll der `PageModelManager` die SPA begleiten.
+Die Auflösung und Verwaltung des Seitenmodells wird an ein bereitgestelltes [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager)-Modul delegiert. Die SPA muss mit dem `PageModelManager`-Modul interagieren, wenn es initialisiert wird, um das anfängliche Seitenmodell abzurufen und sich für Modellaktualisierungen zu registrieren – die meistens auftreten, wenn der Autor die Seite über den Seiteneditor bearbeitet. Der `PageModelManager` ist für das SPA-Projekt als NPM-Paket zugänglich. Als Dolmetscher zwischen AEM und der SPA soll der `PageModelManager` die SPA begleiten.
 
 Damit die Seite erstellt werden kann, muss eine Client-Bibliothek mit dem Namen `cq.authoring.pagemodel.messaging` hinzugefügt werden, um einen Kommunikationskanal zwischen der SPA und dem Seiteneditor bereitzustellen. Wenn die SPA-Seitenkomponente von der page wcm/core-Komponente erbt, gibt es folgende Optionen, um die Kategorie der `cq.authoring.pagemodel.messaging`-Client-Bibliothek verfügbar zu machen:
 
@@ -91,9 +91,9 @@ Die Meta-Ressourceneigenschaften, die den SPA-Inhalt beschreiben:
 
 >[!CAUTION]
 >
->In diesem Dokument wird die App &quot;We.Retail Journal&quot;nur zu Demonstrationszwecken verwendet. Sie sollte nicht für Projektaufgaben verwendet werden.
+>In diesem Dokument dient die We.Retail Journal-App ausschließlich zu Demonstrationszwecken. Sie sollte nicht für Projektaufgaben verwendet werden.
 >
->Jedes AEM Projekt sollte [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de), SPA Projekte mit React oder Angular unterstützt und das SPA SDK nutzt. Alle SPA Projekte auf AEM sollten auf dem Maven-Archetyp für SPA Starter Kit basieren.
+>Jedes AEM-Projekt sollte den [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) verwenden, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt. Alle SPA-Projekte in AEM sollten auf dem Maven-Archetyp für das SPA-Starter-Kit basieren.
 
 ## Synchronisation von Seiteneditor-Überlagerungen {#page-editor-overlay-synchronization}
 
@@ -106,4 +106,4 @@ Wenn Routing-Funktionen aktiviert sind, wird angenommen, dass der JSON-Export de
 * `structureDepth`: Zahl, die die Tiefe der exportierten Baumstruktur angibt
 * `structurePatterns`: Regex oder Array aus Regexes, die der zu exportierenden Seite entsprechen
 
-Dies kann im SPA Beispielinhalt unter `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.
+Dies kann im SPA-Beispielinhalt in `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root` angezeigt werden.

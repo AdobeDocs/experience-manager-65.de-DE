@@ -13,7 +13,7 @@ exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '476'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -48,9 +48,9 @@ Konfigurieren Sie, wie xgettext-maven-plugin Zeichenfolgen für Ihr Projekt extr
 | Abschnitt | Beschreibung |
 |---|---|
 | /filter | Identifiziert die analysierten Dateien. |
-| /parsers/vaultxml | Konfiguriert das Parsen von Vault-Dateien. Gibt die JCR-Knoten an, die externalisierte Zeichenfolgen und Lokalisierungshinweise enthalten. Gibt außerdem JCR-Knoten an, die ignoriert werden sollen. |
-| /parsers/javascript | Identifiziert die JavaScript-Funktionen, die Zeichenfolgen externalisieren. Sie müssen diesen Abschnitt nicht ändern. |
-| /parsers/regexp | Konfiguriert das Parsen von Java-, JSP- und ExtJS-Vorlagendateien. Sie müssen diesen Abschnitt nicht ändern. |
+| /parsers/vaultxml | Konfiguriert das Analysieren von Vault-Dateien. Gibt die JCR-Knoten an, die externalisierte Zeichenfolgen und Lokalisierungshinweise enthalten. Gibt außerdem JCR-Knoten an, die ignoriert werden sollen. |
+| /parsers/javascript | Identifiziert die Javascript-Funktionen, die Zeichenfolgen externalisieren. Sie müssen diesen Abschnitt nicht ändern. |
+| /parsers/regexp | Konfiguriert das Parsing von Java-, JSP- und ExtJS-Vorlagedateien. Sie müssen diesen Abschnitt nicht ändern. |
 | /potentials | Die Formel zur Erkennung von Zeichenfolgen, die internationalisiert werden sollen. |
 
 ### Bestimmung der zu parsenden Dateien {#identifying-the-files-to-parse}
@@ -67,10 +67,10 @@ Das Muster einer Regel wird verwendet, um die Namen der Dateien abzugleichen, di
 | Präfix | Ergebnis |
 |---|---|
 | / | Gibt einen JCR-Pfad an. Daher gleicht dieses Präfix Dateien unter dem Verzeichnis jcr_root ab. |
-| * | Gibt eine reguläre Datei im Dateisystem an. |
-| keine | Kein Präfix oder ein Muster, das mit einem Ordner oder Dateinamen beginnt, zeigt eine reguläre Datei im Dateisystem an. |
+| &amp;ast; | Gibt eine reguläre Datei im Dateisystem an. |
+| none | Kein Präfix oder ein Muster, das mit einem Ordner oder einem Dateinamen beginnt, gibt eine reguläre Datei im Dateisystem an. |
 
-Bei Verwendung in einem Muster zeigt das Zeichen / ein Unterverzeichnis und den &amp;ast an. entspricht allen Zeichen. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
+In einem Muster steht das Zeichen / für ein Unterverzeichnis und das Zeichen &amp;ast; ist ein Platzhalter für eine beliebige Zeichenfolge. In der folgenden Tabelle sind einige Beispielregeln aufgeführt.
 
 <table>
  <tbody>
@@ -80,21 +80,21 @@ Bei Verwendung in einem Muster zeigt das Zeichen / ein Unterverzeichnis und den 
   </tr>
   <tr>
    <td><code>{ /include "*" }</code></td>
-   <td>Schließen Sie alle Dateien ein.</td>
+   <td>Einschließen aller Dateien.</td>
   </tr>
   <tr>
    <td><code>{ /exclude "*.pdf" }</code></td>
-   <td>Schließen Sie alle PDF-Dateien aus.</td>
+   <td>Ausschließen aller PDF-Dateien.</td>
   </tr>
   <tr>
    <td><code> { /exclude "*/pom.xml" }</code></td>
-   <td>Ausschluss von POM-Dateien.</td>
+   <td>Ausschließen von POM-Dateien.</td>
   </tr>
   <tr>
    <td><code class="code">{ /exclude "/content/*" }
       { /include "/content/catalogs/geometrixx/templatepages" }
       { /include "/content/catalogs/geometrixx/templatepages/*" }</code></td>
-   <td><p>Schließen Sie alle Dateien unter dem Knoten /content aus.</p> <p>Schließen Sie den Knoten /content/catalogs/geometrixx/templatepages ein.</p> <p>Schließen Sie alle untergeordneten Knoten von /content/catalogs/geometrixx/templatepages ein.</p> </td>
+   <td><p>Ausschließen aller Dateien unter dem Knoten /content.</p> <p>Den Knoten /content/catalogs/geometrixx/templatepages einbeziehen.</p> <p>Einschließen aller untergeordneten Knoten von /content/catalogs/geometrixx/templatepages.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -136,9 +136,9 @@ mvn xgettext:extract
 ### Ausgabedateien {#output-files}
 
 * `raw.xliff`: extrahierte Zeichenfolgen
-* `warn.log`: Warnungen (falls vorhanden), wenn `CQ.I18n.getMessage()` API wird falsch verwendet. In diesen Fällen ist immer eine Fehlerbehebung und anschließend eine Wiederholung erforderlich.
+* `warn.log`: Warnmeldungen (falls vorhanden), wenn die `CQ.I18n.getMessage()`-API falsch verwendet wird. In diesen Fällen ist immer eine Fehlerbehebung und anschließend eine Wiederholung erforderlich.
 
 * `parserwarn.log`: Parser-Warnungen (falls vorhanden), z. B. js-Parserprobleme
 * `potentials.xliff`: „potenzielle“ Kandidaten, die nicht extrahiert werden, aber möglicherweise von Menschen lesbare Zeichenfolgen sind, die übersetzt werden müssen (kann ignoriert werden, da es noch eine große Menge an falsch positiven Ergebnissen findet)
 * `strings.xliff`: Zusammengefasste xliff-Datei für den Import in ALF
-* `backrefs.txt`: ermöglicht ein schnelles Nachschlagen der Position bestimmter Zeichenfolgen im Quellcode
+* `backrefs.txt`: ermöglicht ein schnelles Nachschlagen der Position bestimmter Zeichenfolgen im Quell-Code

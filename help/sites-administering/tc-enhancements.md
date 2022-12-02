@@ -13,7 +13,7 @@ exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
 source-git-commit: 1be3d394283493f7c282ea4c3d794458d88e1ac3
 workflow-type: tm+mt
 source-wordcount: '681'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Es ist möglich, mehrere Zielsprachen in einem Übersetzungsprojekt zu konfiguri
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Wechseln Sie zur Registerkarte **Erweitert**. Sie können unter mehrere Sprachen hinzufügen. **Zielsprache**.
+1. Wechseln Sie zur Registerkarte **Erweitert**. Sie können unter **Zielsprache** mehrere Sprachen hinzufügen.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
@@ -63,30 +63,30 @@ Es ist möglich, mehrere Zielsprachen in einem Übersetzungsprojekt zu konfiguri
 
 ## Translation-Memory-Aktualisierungen {#translation-memory-updates}
 
-Manuelle Bearbeitungen übersetzter Inhalte können wieder mit dem Translation Management System (TMS) synchronisiert werden, um das Translation Memory zu trainieren.
+Für manuelle Bearbeitungen von übersetzten Inhalten kann eine Synchronisierung mit dem Translation Management System (TMS) durchgeführt werden, um das Translation Memory zu trainieren.
 
-1. Wählen Sie in der Sites-Konsole nach der Aktualisierung des Textinhalts auf einer übersetzten Seite die Option **Translation Memory aktualisieren**.
+1. Wählen Sie in der Sites-Konsole nach dem Aktualisieren des Textinhalts auf einer übersetzten Seite die Option **Translation Memory aktualisieren** aus.
 
    ![screen_shot_2018-04-22at234430](assets/screen_shot_2018-04-22at234430.jpg)
 
-1. In einer Listenansicht werden die Quelle und die Übersetzung für jede bearbeitete Textkomponente nebeneinander verglichen. Wählen Sie aus, welche Übersetzungsaktualisierungen mit dem Translation Memory synchronisiert werden sollen, und wählen Sie **Speicher aktualisieren**.
+1. In einer Listenansicht werden die Quelle und die Übersetzung für jede bearbeitete Textkomponente nebeneinander verglichen. Wählen Sie aus, welche Übersetzungsaktualisierungen mit der Translation Memory synchronisiert werden sollen, und wählen Sie die Option **Speicher aktualisieren** aus.
 
    ![screen_shot_2018-04-22at235024](assets/screen_shot_2018-04-22at235024.jpg)
 
 AEM aktualisiert die Übersetzung der vorhandenen Zeichenfolgen im Translation Memory des konfigurierten TMS.
 
 * Die Aktion aktualisiert die Übersetzung vorhandener Zeichenfolgen im Translation Memory des konfigurierten TMS.
-* Es werden keine neuen Übersetzungsaufträge erstellt.
-* Die Übersetzungen werden über AEM Übersetzungs-API an das TMS zurückgesendet (siehe unten).
+* Es werden keine neuen Übersetzungsvorgänge erstellt.
+* Die Übersetzungen werden über die AEM-Übersetzungs-API an das TMS zurückgesendet (siehe unten).
 
 So verwenden Sie diese Funktion:
 
 * Ein TMS muss für die Verwendung mit AEM konfiguriert werden.
-* Der Connector muss die -Methode implementieren [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html).
-   * Der Code innerhalb dieser Methode bestimmt, was mit der Aktualisierungsanforderung für das Translation Memory geschieht.
-   * Das AEM Übersetzungs-Framework sendet die Zeichenfolgenwertpaare (ursprüngliche und aktualisierte Übersetzung) über diese Methodenimplementierung zurück an das TMS.
+* Der Connector muss die Methode [`storeTranslation`](https://developer.adobe.com/experience-manager/reference-materials/cloud-service/javadoc/com/adobe/granite/translation/api/TranslationService.html) implementieren.
+   * Der Code innerhalb dieser Methode bestimmt, was mit der Aktualisierungsanfrage für das Translation Memory geschieht.
+   * Das AEM-Übersetzungs-Framework sendet die Zeichenfolgenwertpaare (ursprüngliche und aktualisierte Übersetzung) über diese Methodenimplementierung zurück an das TMS.
 
-Die Translation Memory-Aktualisierungen können abgefangen und an ein benutzerdefiniertes Ziel gesendet werden, wenn ein proprietäres Translation Memory verwendet wird.
+Die Aktualisierungen des Translation Memory können auch umgeleitet und an ein benutzerdefiniertes Ziel gesendet werden, wenn ein proprietäres Translation Memory verwendet wird.
 
 ## Sprachkopien auf mehreren Ebenen {#language-copies-on-multiple-levels}
 

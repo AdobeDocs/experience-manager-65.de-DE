@@ -6,7 +6,7 @@ user-guide-description: Erfahren Sie, wie Sie Adobe Experience Manager Content a
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
 source-wordcount: '123'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -14,7 +14,7 @@ ht-degree: 86%
 # Commerce  {#commerce}
 
 + [AEM Content und Commerce](/help/commerce/home.md)
-+ [Wesentliche Änderungen an AEM Content und Commerce](cif/changes.md)
++ [Wesentliche Änderungen an AEM Content and Commerce](cif/changes.md)
 + [Einführung und Übersicht](cif/introduction.md)
 + Integrationen {#integrations}
    + [Adobe Commerce](cif/integrating/magento.md)
@@ -53,7 +53,7 @@ ht-degree: 86%
    + Verwalten {#administering}
       + [E-Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
       + [Konzepte](/help/commerce/cif-classic/administering/concepts.md)
-      + [Verwalten des generischen eCommerce](/help/commerce/cif-classic/administering/generic.md)
+      + [Verwalten von generischem E-Commerce](/help/commerce/cif-classic/administering/generic.md)
       + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
    + Entwickeln {#developing}
       + [E-Commerce](/help/commerce/cif-classic/developing/ecommerce.md)

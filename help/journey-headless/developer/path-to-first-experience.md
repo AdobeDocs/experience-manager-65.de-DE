@@ -5,7 +5,7 @@ exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1982'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument zur AEM Headless-Entwickler-Tour, [Erste Schritte mit AEM ](getting-started.md), haben Sie sich mit den Grundlagen zu Headless-CMS-Lösungen vertraut gemacht. Nun verfügen Sie über folgenden Voraussetzungen:
+Im vorherigen Dokument zur AEM Headless-Tour, [Erste Schritte mit AEM Headless](getting-started.md), haben Sie sich mit den Grundlagen zu Headless-CMS-Lösungen vertraut gemacht. Nun verfügen Sie über folgenden Voraussetzungen:
 
 * die Grundlagen der Headless-Funktionen von AEM verstehen,
 * die Voraussetzungen für die Verwendung der Headless-Funktionen von AEM kennen,
@@ -35,7 +35,7 @@ In diesem Dokument erfahren Sie, welche Schritte zur Implementierung Ihres erste
 
 ## Voraussetzungen {#requirements}
 
-Bevor Sie mit diesem Dokument fortfahren, vergewissern Sie sich, dass Sie das vorherige Dokument zur AEM Headless-Entwickler-Tour, [Erste Schritte mit AEM ](getting-started.md) gelesen haben. So stellen Sie Folgendes sicher:
+Bevor Sie mit diesem Dokument fortfahren, vergewissern Sie sich, dass Sie das vorherige Dokument zur AEM Headless-Entwickler-Tour, [Erste Schritte mit AEM](getting-started.md) gelesen haben. So stellen Sie Folgendes sicher:
 
 * Sie erfüllen die aufgelisteten Anforderungen.
 * Sie haben Ihre eigene Projektdefinition einschließlich Umfang, Rollen und Leistung berücksichtigt.
@@ -44,7 +44,7 @@ Bevor Sie mit diesem Dokument fortfahren, vergewissern Sie sich, dass Sie das vo
 
 Um Ihr erstes AEM Headless-Projekt zu starten, müssen Sie sicherstellen, dass Sie über ein Inhaltsmodell verfügen, das die Personalisierung und Aktualisierungen unterstützt, die Sie über alle Kanäle hinweg vornehmen möchten.
 
-Zusätzlich zu AEM möchten Sie auch sicherstellen, dass Sie eine geeignete Entwicklungsumgebung eingerichtet haben, wenn Sie eine clientseitige Anwendung erstellen, damit Sie Ihren Client anhand von API-Aufrufen an AEM testen können.
+Unabhängig von AEM sollten Sie auch sicherstellen, dass Sie eine geeignete Entwicklungsumgebung eingerichtet haben, wenn Sie ein Client-seitiges Programm erstellen, damit Sie Ihren Client mit API-Aufrufen an AEM testen können.
 
 ### Definieren von Inhaltsmodellen und APIs {#defining-models}
 
@@ -143,7 +143,7 @@ Egal, welcher Lernstil Ihnen liegt: Adobe möchte, dass Sie erfolgreich sind, we
 Sie können wie empfohlen mit dem nächsten Teil der AEM Headless-Entwickler-Tour fortfahren, indem Sie das Dokument [Modellieren Ihres Inhalts](model-your-content.md) lesen. Im Folgenden finden Sie jedoch noch zusätzliche optionale Ressourcen, die auf einige der in diesem Dokument erwähnten Konzepte eingehen. Diese sind jedoch nicht erforderlich, um mit Ihrer AEM Headless-Entwickler-Tour fortzufahren.
 
 * [AEM Headless Übersetzungs-Tour](/help/journey-headless/translation/overview.md) – Diese Dokumentations-Tour vermittelt Ihnen ein umfassendes Verständnis der Headless-Technologie sowie davon, wie AEM Headless Inhalte bereitstellt und wie Sie sie übersetzen können.
-* [Headless-Entwicklung für AEM Sites ](/help/sites-developing/headless/introduction.md) – eine kurze Einführung in die erforderlichen Funktionen, die AEM Headless-Entwicklern eine Orientierungshilfe bietet.
+* [Headless-Entwicklung für AEM Sites](/help/sites-developing/headless/introduction.md) – eine kurze Einführung in die erforderlichen Funktionen, die AEM Headless-Entwicklern eine Orientierungshilfe bietet.
 * [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de): Nutzen Sie diese praxisnahen Tutorials, um herauszufinden, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an Headless-Endpunkte mit AEM verwenden können, und wählen Sie aus, was für Sie am besten geeignet ist.
 * [Headless Content Management mit GraphQL-APIs](https://experienceleague.adobe.com/?Solution=Experience+Manager&amp;Solution=Experience+Manager+Sites&amp;Solution=Experience+Manager+Forms&amp;Solution=Experience+Manager+Screens&amp;launch=ExperienceManager-D-1-2020.1.headless#courses): In diesem Kurs erhalten Sie einen Überblick über die in AEM implementierte GraphQL-API. Eine Authentifizierung über Adobe ID ist erforderlich.
 * [AEM-Handbuch zu WKND – GraphQL](https://github.com/adobe/aem-guides-wknd-graphql): Dieses GitHub-Projekt enthält Beispielprogramme zu den AEM-GraphQL-APIs.

@@ -65,7 +65,7 @@ Diese Einstellungen gewährleisten, dass normale Benutzer keinen Zugriff auf die
 
 ## Konfigurieren des AEM-Link-Externalizer {#configuring-the-aem-link-externalizer}
 
-Beim Bearbeiten einer Aktivität in Adobe Target verweist die URL auf **localhost**, außer Sie ändern die URL auf dem AEM-Autorenknoten. Sie können den AEM-Link-Externalizer konfigurieren, wenn der exportierte Inhalt auf eine bestimmte *Veröffentlichungs*-Domain verweisen soll
+Beim Bearbeiten einer Aktivität in Adobe Target verweist die URL auf **localhost**, außer Sie ändern die URL auf dem AEM-Autorenknoten. Sie können den AEM-Link-Externalizer konfigurieren, wenn der exportierte Inhalt auf eine bestimmte *Veröffentlichungs*-Domain verweisen soll.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Konfigurieren Sie den AEM-Externalizer wie folgt:
 >
 >Weitere Informationen finden Sie unter [Externalisieren von URLs](/help/sites-developing/externalizer.md).
 
-1. Navigieren Sie zur OSGi-Web-Konsole unter **&lt;server>:&lt;port>/system/console/configMgr**.
+1. Navigieren Sie zur OSGi-Web-Konsole unter **https://&lt;server>:&lt;port>/system/console/configMgr**.
 1. Suchen Sie nach **Day CQ Link Externalizer** und geben Sie die Domain des Autorenknotens an.
 
    ![chlimage_1-120](assets/aem-externalizer-01.png)

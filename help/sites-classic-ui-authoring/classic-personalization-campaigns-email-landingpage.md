@@ -14,7 +14,7 @@ exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '613'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -32,11 +32,11 @@ Gehen Sie folgendermaßen vor, um eine effektive Startseite zu erstellen:
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktionen (Lead- und Listenverwaltung) weiter auszubauen.
->Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
 ## Erstellen einer Liste für einen Newsletter {#creating-a-list-for-the-newsletter}
 
-Erstellen Sie in MCM eine Liste, z. B. **Geometrixx Newsletter**, für den Newsletter, den die Benutzer abonnieren sollten. Informationen zum Erstellen von Listen finden Sie unter [Listen erstellen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists).
+Erstellen Sie in MCM eine Liste, z. B. **Geometrixx Newsletter**, für den Newsletter, den die Benutzer abonnieren sollten. Das Erstellen von Listen wird unter [Erstellen von Listen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists) beschrieben.
 
 Nachfolgend sehen Sie ein Beispiel für eine Liste:
 
@@ -50,17 +50,17 @@ Informationen dazu, wie Sie ein eigenes Newsletterformular erstellen, finden Sie
 
 Die ausgeblendeten Felder in dem folgenden Beispiel enthalten die minimal erforderlichen Informationen (E-Mail); zusätzlich hierzu können Sie später weitere Felder hinzufügen, was jedoch Auswirkungen auf die Konversionsrate hat.
 
-Das folgende Beispiel ist ein Formular, das unter https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html erstellt wurde.
+Das folgende Beispiel ist ein Formular, das unter „https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html“ erstellt wurde.
 
 1. Erstellen Sie das Formular.
 
    ![mcm_newsletterpage](assets/mcm_newsletterpage.png)
 
-1. Klicken Sie in der Formular-Komponente auf **Bearbeiten**, um das Formular so zu konfigurieren, dass der Besucher auf eine Dankeseite (siehe [Erstellen von Dankeseiten](#creating-a-thank-you-page)) geleitet wird.
+1. Klicken Sie in der Formularkomponente auf **Bearbeiten**, um das Formular so zu konfigurieren, dass der Besucher auf eine Dankeseite (siehe [Erstellen von Dankeseiten](#creating-a-thank-you-page)) geleitet wird.
 
    ![dc_formstart_thankyou](assets/dc_formstart_thankyou.png)
 
-1. Legen Sie die Formularaktion (die Aktion, die ausgeführt wird, wenn Sie das Formular übermitteln) fest und konfigurieren Sie die Gruppe so, dass registrierte Benutzer der zuvor erstellten Liste (z. B. geometrixx-newsletter) zugewiesen werden.
+1. Legen Sie die Formularaktion (die Aktion, die ausgeführt wird, wenn Sie das Formular übermitteln) fest und konfigurieren Sie die Gruppe so, dass registrierte Benutzer der zuvor erstellten Liste (z. B. geometrixx-newsletter) zugewiesen werden.
 
    ![dc_formstart_thankyouadvanced](assets/dc_formstart_thankyouadvanced.png)
 
@@ -86,7 +86,7 @@ Gehen Sie folgendermaßen vor, um Teaser für eine effektive Newsletter-Startsei
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-1. Erstellen Sie eine Kampagne mit zwei Teasern; kennzeichnen Sie einen Teaser als &quot;geschäftlich&quot; und belassen Sie den anderen ohne Kennzeichnung.
+1. Erstellen Sie eine Kampagne mit zwei Teasern; kennzeichnen Sie einen Teaser als „geschäftlich“ und belassen Sie den anderen ohne Kennzeichnung.
 
 ### Push-Übertragung von Inhalt an Abonnenten {#pushing-content-to-subscribers}
 

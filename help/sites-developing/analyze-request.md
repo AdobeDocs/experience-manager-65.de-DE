@@ -13,7 +13,7 @@ exl-id: e14a9cda-890f-46b7-9433-1b52eb91eae3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '171'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
@@ -21,23 +21,23 @@ ht-degree: 39%
 
 ## Download {#download}
 
-Dieses Skript erleichtert die Analyse der `access.log` -Dateien, die einen lesbaren Bericht für die spätere Verarbeitung erzeugen.
+Dieses Skript vereinfacht die Analyse der `access.log`-Dateien und erzeugt einen lesbaren Bericht für die spätere Verarbeitung.
 
-[Datei herunterladen](assets/analyse-access.sh)
+[Datei laden](assets/analyse-access.sh)
 
 ## Beschreibung {#description}
 
-Dieses Skript erleichtert die Analyse der `access.log` -Dateien, die einen lesbaren Bericht für die spätere Verarbeitung erzeugen.
+Dieses Skript vereinfacht die Analyse der `access.log`-Dateien und erzeugt einen lesbaren Bericht für die spätere Verarbeitung.
 
-Es liefert die Gesamtzahl an Anfragen, einen Vergleich zwischen GET und POST, die Anfrageverteilung über einen Zeitraum hinweg usw.
+Es liefert die Gesamtzahl der Anfragen, einen Vergleich zwischen GET und POST, die Anfrageverteilung über einen Zeitraum hinweg usw.
 
-Die Ausgabe erfolgt in Markdown-Syntax. Daher ist es einfacher, sie mit Tools wie Pandoc in PDF zu konvertieren oder in einem Browser mit Plug-ins wie Markdown-Viewer anzuzeigen.
+Die Ausgabe erfolgt in Markdown-Syntax. Somit lässt sie sich einfacher mit Tools wie Pandoc in PDF-Dateien umwandeln oder mit einem Plug-in wie Markdown Viewer in einem Browser anzeigen.
 
-Sie kann einen benutzerdefinierten Pfad analysieren, der in der Befehlszeile angegeben ist.
+Das Skript kann auch einen benutzerdefinierten Pfad analysieren, der in der Befehlszeile angegeben wird.
 
-Ausgehend von dem Kommentar in der Datei, der angibt, wie Sie sie ausführen:
+Im Kommentar in der Datei finden Sie Angaben zur Ausführung:
 
-Analysieren von CQ `access.log` Hochladen verschiedener Informationen und Generieren einer Markdown-Ausgabe auf `stdout`.
+Analysieren Sie die Datei `access.log` von CQ. Dabei werden verschiedene Daten extrapoliert und eine Markdown-Ausgabe wird auf `stdout` erstellt.
 
 ## Nutzung {#usage}
 

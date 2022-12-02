@@ -14,7 +14,7 @@ exl-id: 3013adc3-bec6-4ecc-aefd-f8df2b86dfef
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -33,8 +33,8 @@ Führen Sie beim Bearbeiten der weiterzuleitenden Launch-Seite die folgenden Sch
 1. Klicken Sie im Sidekick auf der Registerkarte **Seite** auf **Launch bewerben**.
 1. Geben Sie die Seiten an, die weitergeleitet werden sollen:
 
-   * (Standard) Um nur die aktuelle Seite weiterzuleiten, wählen Sie **Weiterleiten von Seitenänderungen an die Produktionsversion**.
-   * Um auch die untergeordneten Seiten der aktuellen Seite weiterzuleiten, wählen Sie **Unterseiten einschließen**.
+   * (Standard) Um nur die aktuelle Seite weiterzuleiten, wählen Sie **Änderungen an der Seite in Produktionsversion weiterleiten** aus.
+   * Um auch die untergeordneten Seiten der aktuellen Seite weiterzuleiten, wählen Sie **Unterseiten einschließen** aus.
    * Um alle Seiten im Launch weiterzuleiten, wählen Sie **Vollständigen Launch in Produktionsversion weiterleiten**.
 
 1. Um die Produktionsseiten einem Workflow-Paket hinzuzufügen, wählen Sie zunächst **Zu Workflow-Paket hinzufügen** und wählen Sie dann das Workflow-Paket.

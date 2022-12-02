@@ -1,6 +1,6 @@
 ---
 title: Aktivieren des Hotlink-Schutzes in Dynamic Media
-description: Informationen zur Aktivierung des Hot Link-Schutzes in Dynamic Media.
+description: Informationen zum Aktivieren des Hotlink-Schutzes in Dynamic Media.
 uuid: 5f93bc27-5edd-4143-8701-87896c52f0af
 contentOwner: Rick Brough
 topic-tags: dynamic-media
@@ -13,16 +13,16 @@ feature: Configuration
 source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
 workflow-type: tm+mt
 source-wordcount: '201'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
-# Aktivieren des Hotlink-Schutzes in Dynamic Media {#activating-hotlink-protection-in-dynamic-media}
+# Hotlink-Schutz in Dynamic Media aktivieren {#activating-hotlink-protection-in-dynamic-media}
 
-Von Hotlinking spricht man, wenn eine Drittanbieter-Website HTML-Code verwendet, um ein Bild von Ihrer Website anzuzeigen. Sie beanspruchen bei jedem Aufruf des Bildes Ihre Bandbreite, da der Browser des Besuchers direkt über Ihren Server darauf zugreift. Hotlink *Schutz* ist eine Methode, um zu verhindern, dass andere Websites direkt auf Bilder, CSS oder JavaScript auf Ihren Webseiten verlinken. Dadurch können Sie unnötige Bandbreitennutzung in Ihrem Dynamic Media-Konto reduzieren.
+Von Hotlinking spricht man, wenn eine Drittanbieter-Website HTML-Code verwendet, um ein Bild von Ihrer Website anzuzeigen. Sie beanspruchen bei jedem Aufruf des Bildes Ihre Bandbreite, da der Browser des Besuchers direkt über Ihren Server darauf zugreift. Der Hotlink-*Schutz* ist eine Methode, um zu verhindern, dass andere Websites direkte Links auf Bilder, CSS oder JavaScript auf Ihren Webseiten erstellen. Dadurch können Sie unnötige Bandbreitennutzung in Ihrem Dynamic Media-Konto reduzieren.
 
-[Experience Manager-Kundensupport](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home&amp;lang=de#support) kann einen Referrer-Filter auf CDN-Ebene (Content Delivery Network) konfigurieren, sodass Dynamic Media-Inhalte nur für Websites bereitgestellt werden, die auf Ihrer Liste der zulässigen Websites für die Domäne stehen.
+[Der Experience Manager-Kunden-Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home&amp;lang=de#support) kann einen Filter für Verweise auf CDN-Ebene (Content Delivery Network) konfigurieren, sodass Dynamic Media-Inhalte nur für Websites übermittelt werden, die auf der Liste der zulässigen Websites für die Domain stehen.
 
 >[!NOTE]
 >
->Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager Dynamic Media enthaltene vorkonfigurierte CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt. Um den Hotlink-Schutz zu aktivieren, muss ein Administrator ein Adobe-Support-Ticket erstellen, um die Konfigurationsänderung an Ihr Dynamic Media-Konto anzufordern. Mit der Aktivierung des Hotlink-Schutzes sind keine zusätzlichen Kosten verbunden.
+>Für diese Funktion müssen Sie das im Lieferumfang von Adobe Experience Manager Dynamic Media enthaltene vorkonfigurierte CDN verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt. Zum Aktivieren des Hotlink-Schutzes muss eine bzw. ein Admin ein Support-Ticket für den Adobe-Kunden-Support erstellen, um die Konfigurationsänderung an Ihrem Dynamic Media-Konto anzufordern. Mit der Aktivierung des Hotlink-Schutzes sind keine zusätzlichen Kosten verbunden.

@@ -135,7 +135,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum   </td>
+   <td>Datum </td>
    <td>Reglerbasierte Suche nach Assets basierend auf einer Datumseigenschaft.</td>
    <td>
     <ul>
@@ -145,7 +145,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Datum   Bereich </td>
+   <td>Datum Bereich </td>
    <td>Suche nach Assets, die innerhalb eines angegebenen Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie das Start- und das Enddatum angeben.</td>
    <td>
     <ul>
@@ -179,7 +179,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Ausgeblendet   Filter</td>
+   <td>Ausgeblendet Filter</td>
    <td>Ein Filter für Eigenschaft und Wert, der für den Benutzer nicht sichtbar ist.</td>
    <td>
     <ul>
@@ -214,7 +214,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
     </ul> </td>
   </tr>
   <tr>
-   <td>Seite   Status </td>
+   <td>Seite Status </td>
    <td>Suche nach Seiten basierend auf ihrem Status.</td>
    <td>
     <ul>
@@ -329,11 +329,11 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 >[!NOTE]
 >
 >* Die allgemeinen Suchprädikate sind hier definiert:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >* Sucheigenschaften, die nur mit siteadmin (klassische Benutzeroberfläche) verbunden sind, befinden sich unter:
->  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
->   * Sie sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
+   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+   >   * Sie sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
 >
 >Diese Angaben dienen nur als Referenz. Sie dürfen `/libs` nicht verändern.
 
@@ -548,7 +548,7 @@ In der folgenden Tabelle sind die Berechtigungen aufgeführt, die Benutzer benö
   </tr>
   <tr>
    <td>Vorschau</td>
-   <td>Lese-, Schreib- und Löschberechtigungen für den Knoten <code>/var/dam/content</code>.<br />Lese- und Schreibberechtigungen für den Knoten <code>/apps</code>.</td>
+   <td>Lese-, Schreib- und Löschberechtigungen für den Knoten <code>/var/dam/content</code>.<br /> Lese- und Schreibberechtigungen für den Knoten <code>/apps</code>.</td>
   </tr>
  </tbody>
 </table>

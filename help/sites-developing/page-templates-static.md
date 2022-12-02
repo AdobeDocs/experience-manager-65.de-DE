@@ -14,7 +14,7 @@ exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1626'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Jede Vorlage stellt Ihnen eine Auswahl an Komponenten bereit, die Sie verwenden 
 
 >[!NOTE]
 >
->[Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md) sind auch verfügbar und sind der empfohlene Typ von Vorlagen für die größte Flexibilität und die neuesten Funktionen.
+>[Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md) sind ebenfalls verfügbar und sind der empfohlene Typ von Vorlagen für die größte Flexibilität und die neuesten Funktionen.
 
 ## Eigenschaften und untergeordnete Knoten einer Vorlage {#properties-and-child-nodes-of-a-template}
 
@@ -50,12 +50,12 @@ Eine Vorlage ist ein Knoten des Typs cq:Template mit den folgenden Eigenschaften
   <tr>
    <td> allowedChildren </td>
    <td> Zeichenfolge[]</td>
-   <td>Pfad einer Vorlage, die dieser Vorlage untergeordnet sein darf.<br /> </td>
+   <td>Pfad einer Vorlage, die ein untergeordnetes Element dieser Vorlage sein kann.<br /> </td>
   </tr>
   <tr>
    <td> allowedParents</td>
    <td> Zeichenfolge[]</td>
-   <td>Pfad einer Vorlage, die dieser Vorlage übergeordnet sein darf.<br /> </td>
+   <td>Pfad einer Vorlage, die ein übergeordnetes Element dieser Vorlage sein kann.<br /> </td>
   </tr>
   <tr>
    <td> allowedPaths</td>
@@ -65,7 +65,7 @@ Eine Vorlage ist ein Knoten des Typs cq:Template mit den folgenden Eigenschaften
   <tr>
    <td> jcr:created</td>
    <td> Datum</td>
-   <td>Erstellungsdatum der Vorlage.<br /> </td>
+   <td>Datum der Erstellung der Vorlage.<br /> </td>
   </tr>
   <tr>
    <td> jcr:description</td>
@@ -78,7 +78,7 @@ Eine Vorlage ist ein Knoten des Typs cq:Template mit den folgenden Eigenschaften
    <td>Titel der Vorlage.<br /> </td>
   </tr>
   <tr>
-   <td> Ranking</td>
+   <td> Rangfolge</td>
    <td> Long</td>
    <td>Rang der Vorlage. Wird verwendet, um die Vorlage in der Benutzeroberfläche anzuzeigen<br /> </td>
   </tr>
@@ -102,7 +102,7 @@ Eine Vorlage ist ein Knoten des Typs cq:Template mit den folgenden Eigenschaften
 
 Eine Vorlage ist die Basis einer Seite.
 
-Um eine Seite zu erstellen, muss die Vorlage kopiert werden (Knotenbaum `/apps/<myapp>/template/<mytemplate>`) an die entsprechende Position im Site-Baum: Dies geschieht, wenn eine Seite mit dem **Websites** Registerkarte.
+Um eine Seite zu erstellen, müssen Sie die Vorlage (Knotenbaumstruktur `/apps/<myapp>/template/<mytemplate>`) an die entsprechende Stelle in der Website-Baumstruktur kopieren: Dies geschieht, wenn eine Seite über die Registerkarte **Websites** erstellt wird.
 
 Über diesen Kopiervorgang erhält die Seite auch ihren anfänglichen Inhalt (in der Regel nur den Inhalt der obersten Ebene) und die Eigenschaft sling:resourceType, den Pfad zur Seitenkomponente, die zum Rendern der Seite genutzt wird (alles im untergeordneten Knoten jcr:content).
 
@@ -134,7 +134,7 @@ Mit dieser Komponente wird die Struktur und das Design des Inhalts definiert, we
 
 ### Der von einer Vorlage erstellte Inhalt {#the-content-produced-by-a-template}
 
-Mit Vorlagen werden Seiten des Typs `cq:Page` erstellt (wie bereits erwähnt, ist eine Seite eine besondere Art der Komponente). Jede AEM Seite hat einen strukturierten Knoten `jcr:content`. Dies:
+Mit Vorlagen werden Seiten des Typs `cq:Page` erstellt (wie bereits erwähnt, ist eine Seite eine besondere Art der Komponente). Jede AEM-Seite weist den strukturierten Knoten `jcr:content` auf. Dies:
 
 * ist vom Typ cq:PageContent
 * ist ein strukturierter Knotentyp, der eine festgelegte Inhaltsdefinition enthält
@@ -146,7 +146,7 @@ AEM bietet eine Reihe von Standardvorlagen, die standardmäßig verfügbar sind.
 
 AEM enthält beispielsweise verschiedene Vorlagen, darunter eine Inhaltsseite und eine Homepage.
 
-| **Titel** | **Component** | **Speicherort** | **Zweck** |
+| **Titel** | **Komponente** | **Speicherort** | **Zweck** |
 |---|---|---|---|
 | Startseite | homepage | geometrixx | Die Vorlage für die Geometrixx-Homepage. |
 | Inhalts-Seite | contentpage | geometrixx | Die Vorlage für die Geometrixx-Inhaltsseite. |
@@ -160,56 +160,56 @@ Eine Liste aller Vorlagen im Repository können Sie mit dem folgenden Verfahren 
 1. In der Registerkarte „Abfrage“
 1. Wählen Sie als **Typ** die Option **XPath**.
 
-1. Im **Abfrage** Eingabefeld, geben Sie folgende Zeichenfolge ein: //element(&#42;, cq:Template)
+1. Geben Sie in das Eingabefeld **Abfrage** diese Zeichenfolge ein: //element(&#42;, cq:Template)
 
 1. Klicken Sie auf **Ausführen**. Die Liste wird im Ergebnisfeld angezeigt.
 
 In den meisten Fällen können Sie eine vorhandene Vorlage verwenden und auf dieser Basis eine neue Vorlage zur eigenen Verwendung entwickeln. Weitere Informationen finden Sie unter [Entwickeln von Seitenvorlagen](#developing-page-templates).
 
-Um eine vorhandene Vorlage für Ihre Website zu aktivieren und sie im **Seite erstellen** Dialogfeld beim Erstellen einer Seite direkt unter **Websites** von **Websites** -Konsole, setzen Sie die Eigenschaft allowedPaths des Vorlagenknotens auf: **/content(/.&#42;)?**
+Damit eine vorhandene Vorlage für Ihre Website aktiviert und im Dialogfeld **Seite erstellen** angezeigt wird, wenn Sie eine Seite direkt unter **Websites** in der **Websites**-Konsole erstellen, legen Sie für die Eigenschaft „allowedPaths“ des Vorlagenknotens folgenden Wert fest: **/content(/.&#42;)?**
 
 ## Anwenden von Vorlagendesigns {#how-template-designs-are-applied}
 
-Wenn Stile in der Benutzeroberfläche definiert werden mithilfe von [Designmodus](/help/sites-authoring/default-components-designmode.md), wird das Design am genauen Pfad des Inhaltsknotens persistiert, für den der Stil definiert wird.
+Wenn Stile in der Benutzeroberfläche im [Designmodus](/help/sites-authoring/default-components-designmode.md) definiert werden, wird das Design am genauen Pfad des Inhaltsknotens, für den der Stil definiert wird, beibehalten.
 
 >[!CAUTION]
 >
->Adobe empfiehlt nur die Anwendung von Designs durch [Designmodus](/help/sites-authoring/default-components-designmode.md).
+>Adobe empfiehlt nur die Anwendung von Designs durch den [Designmodus](/help/sites-authoring/default-components-designmode.md).
 >
 >Das Ändern von Designs in CRX DE ist beispielsweise nicht ratsam und die Anwendung derartiger Designs kann von erwarteten Verhaltensweisen abweichen.
 
-Wenn Designs nur im Designmodus angewendet werden, dann folgen die folgenden Abschnitte: [Designpfad-Auflösung](/help/sites-developing/page-templates-static.md#design-path-resolution), [Entscheidungsbaum](/help/sites-developing/page-templates-static.md#decision-tree)und die [Beispiel](/help/sites-developing/page-templates-static.md#example) nicht anwendbar sind.
+Wenn Entwürfe nur im Designmodus angewendet werden, sind die folgenden Abschnitte, [Auflösung des Designpfads](/help/sites-developing/page-templates-static.md#design-path-resolution), [Entscheidungsbaum](/help/sites-developing/page-templates-static.md#decision-tree) und das [Beispiel](/help/sites-developing/page-templates-static.md#example), nicht anwendbar.
 
-### Designpfad-Auflösung {#design-path-resolution}
+### Auflösung des Designpfads {#design-path-resolution}
 
 Beim Rendern von Inhalten, die auf einer statischen Vorlage basieren, versucht AEM, das relevanteste Design und die relevantesten Stile auf den Inhalt anzuwenden, basierend auf einer Umkehrung der Inhaltshierarchie.
 
 AEM bestimmt den relevantesten Stil für einen Inhaltsknoten in der folgenden Reihenfolge:
 
-* Wenn ein Design für den vollständigen und genauen Pfad des Inhaltsknotens vorhanden ist (wie bei der Definition des Designs im Designmodus), verwenden Sie diesen Entwurf.
-* Wenn ein Design für den Inhaltsknoten des übergeordneten Elements vorhanden ist, verwenden Sie diesen Entwurf.
-* Wenn sich ein Design für einen Knoten im Pfad des Inhaltsknotens befindet, verwenden Sie diesen Entwurf.
+* Wenn ein Design für den vollständigen und genauen Pfad des Inhaltsknotens vorhanden ist (wie bei der Definition des Designs im Designmodus), verwende dieses Design.
+* Wenn ein Design für den Inhaltsknoten des übergeordneten Elements vorhanden ist, verwenden dieses Design.
+* Wenn sich ein Design für einen Knoten im Pfad des Inhaltsknotens befindet, verwende dieses Design.
 
-Wenn es in den letzten beiden Fällen mehr als einen geeigneten Entwurf gibt, verwenden Sie den Entwurf, der dem Inhaltsknoten am nächsten ist.
+Wenn es in den letzten beiden Fällen mehr als ein geeignetes Design gibt, verwende das Design, das dem Inhaltsknoten am nächsten ist.
 
 ### Entscheidungsbaum {#decision-tree}
 
-Dies ist eine grafische Darstellung der [Designpfad-Auflösung](/help/sites-developing/page-templates-static.md#design-path-resolution) Logik.
+Dies ist eine grafische Darstellung der Logik der [Auflösung des Designpfads](/help/sites-developing/page-templates-static.md#design-path-resolution).
 
 ![design_path_resolution](assets/design_path_resolution.png)
 
 ### Beispiel {#example}
 
-Betrachten Sie eine einfache Inhaltsstruktur wie folgt, bei der ein Design auf einen der Knoten angewendet werden könnte:
+Denken Sie an eine einfache Inhaltsstruktur wie die folgende, bei der ein Design auf jeden der Knoten angewendet werden könnte:
 
 `/root/branch/leaf`
 
-In der folgenden Tabelle wird beschrieben, wie AEM einen Entwurf auswählen.
+In der folgenden Tabelle wird beschrieben, wie AEM ein Design auswählt.
 
 <table>
  <tbody>
   <tr>
-   <td><strong>Suchen nach Design für<br /> </strong></td>
+   <td><strong>Suchen nach einem Design für<br /> </strong></td>
    <td><strong>Designs vorhanden für<br /> </strong></td>
    <td><strong>Ausgewähltes Design<br /> </strong></td>
    <td><strong>Kommentar</strong></td>
@@ -219,13 +219,13 @@ In der folgenden Tabelle wird beschrieben, wie AEM einen Entwurf auswählen.
       </code></td>
    <td><p><code>root</code></p> <p><code>branch</code></p> <p><code>leaf</code></p> </td>
    <td><code>leaf</code></td>
-   <td>Die genaueste Übereinstimmung wird immer gewählt.<br /> </td>
+   <td>Es wird immer die genaueste Übereinstimmung gewählt.<br /> </td>
   </tr>
   <tr>
    <td><code>leaf</code></td>
    <td><p><code>root</code></p> <p><code>branch</code></p> </td>
    <td><code>branch</code></td>
-   <td>Kehren Sie zurück zum nächstgelegenen Spiel unten im Baum.</td>
+   <td>Fallen Sie zurück auf die nächstgelegene Übereinstimmung weiter unten in der Baumstruktur.</td>
   </tr>
   <tr>
    <td><code>leaf</code></td>
@@ -258,7 +258,7 @@ In der folgenden Tabelle wird beschrieben, wie AEM einen Entwurf auswählen.
    <td><p><code>root</code></p> <p><code class="code">leaf
        </code></p> </td>
    <td><code>root</code></td>
-   <td><p>Wenn es keine exakte Übereinstimmung gibt, nehmen Sie die untere im Baum.</p> <p>Es wird davon ausgegangen, dass dies immer anwendbar sein wird, aber weiter oben im Baum kann der Baum zu spezifisch sein.<br /> </p> </td>
+   <td><p>Wenn es keine exakte Übereinstimmung gibt, nehmen Sie das Design ganz unten in der Baumstruktur.</p> <p>Es wird davon ausgegangen, dass dieses immer anwendbar ist, aber weiter oben im Baum zu spezifisch sein kann.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -275,7 +275,7 @@ So erstellen Sie eine neue Vorlage (basierend auf einer vorhandenen Vorlage):
 
 1. Kopieren Sie eine vorhandene Vorlage (vorzugsweise mit einer Definition, die der von Ihnen gewünschten Definition möglichst ähnlich ist) zu einem neuen Knoten.
 
-   Vorlagen sind in der Regel im Verzeichnis **/apps/&lt;Website-Name>/templates/&lt;Vorlagenname>** gespeichert.
+   Vorlagen sind in der Regel im Verzeichnis **/apps/&lt;website-name>/templates/&lt;template-name>** gespeichert.
 
    >[!NOTE]
    >
@@ -291,7 +291,7 @@ So erstellen Sie eine neue Vorlage (basierend auf einer vorhandenen Vorlage):
 
 1. Kopieren Sie die Komponente, auf der die Vorlage basiert (sie ist an der Eigenschaft **sling:resourceType** des Knotens **jcr:content** in der Vorlage zu erkennen), um eine neue Instanz zu erstellen.
 
-   Komponenten sind in der Regel im Verzeichnis **/apps/&lt;Website-Name>/components/&lt;Komponentenname>** gespeichert.
+   Komponenten sind in der Regel im Verzeichnis **/apps/&lt;website-name>/components/&lt;component-name>** gespeichert.
 
 1. Aktualisieren Sie die **jcr:title** und **jcr:description** der neuen Komponente.
 1. Ersetzen Sie die Datei thumbnail.png, wenn Sie möchten, dass eine neue Miniaturansicht in der Vorlagen-Auswahlliste angezeigt wird (Größe: 128x98 Pixel).
@@ -300,8 +300,8 @@ So erstellen Sie eine neue Vorlage (basierend auf einer vorhandenen Vorlage):
 
    >[!NOTE]
    >
-   >Änderungen, die am Knoten **/apps/&lt;Website>/templates/&lt;Vorlagenname>** vorgenommen werden, wirken sich auf die Vorlageninstanz aus (wie in der Auswahlliste).
-   Änderungen, die am Knoten **/apps/&lt;Website>/components/&lt;Komponentenname>** vorgenommen werden, wirken sich auf die Inhaltsseite aus, die mit der Vorlage erstellt wird.
+   >Änderungen, die am Knoten **/apps/&lt;website>/templates/&lt;template-name>** vorgenommen werden, wirken sich auf die Vorlageninstanz aus (wie in der Auswahlliste).
+   Änderungen, die am Knoten **/apps/&lt;website>/components/&lt;component-name>** vorgenommen werden, wirken sich auf die Inhaltsseite aus, die mit der Vorlage erstellt wird.
 
    Sie können jetzt eine Seite Ihrer Website mit der neuen Vorlage erstellen.
 
@@ -312,9 +312,9 @@ Weitere Informationen finden Sie unter [Verwendung Client-seitiger Bibliotheken]
 
 ## Bereitstellen einer vorhandenen Vorlage {#making-an-existing-template-available}
 
-Dieses Beispiel erklärt, wie Sie zulassen können, dass eine Vorlage für bestimmte Inhaltspfade genutzt werden kann. Die Vorlagen, die dem Seitenautor beim Erstellen neuer Seiten zur Verfügung stehen, werden durch die Logik bestimmt, die in [Formularverfügbarkeit](/help/sites-developing/templates.md#template-availability).
+Dieses Beispiel erklärt, wie Sie zulassen können, dass eine Vorlage für bestimmte Inhaltspfade genutzt werden kann. Die Vorlagen, die Autoren bei der Erstellung neuer Seiten zur Verfügung stehen, werden durch die in [Vorlagenverfügbarkeit](/help/sites-developing/templates.md#template-availability) definierten Logik bestimmt.
 
 1. Navigieren Sie in CRXDE Lite zu der Vorlage, die Sie für Ihre Seite verwenden möchten, z. B. zur Newsletter-Vorlage.
-1. Ändern Sie die Eigenschaft `allowedPaths` und andere Eigenschaften, die für die [Vorlagenverfügbarkeit](/help/sites-developing/templates.md#template-availability) genutzt werden. Beispiel: `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` bedeutet, dass diese Vorlage in jedem Pfad unter `/content/geometrixx-outdoors`.
+1. Ändern Sie die Eigenschaft `allowedPaths` und andere Eigenschaften, die für die [Vorlagenverfügbarkeit](/help/sites-developing/templates.md#template-availability) genutzt werden.  Beispielsweise `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` bedeutet, dass diese Vorlage in jedem Pfad unter `/content/geometrixx-outdoors` zulässig ist.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)

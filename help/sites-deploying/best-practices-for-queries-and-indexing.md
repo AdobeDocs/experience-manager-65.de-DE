@@ -146,7 +146,7 @@ Folgende Werte werden empfohlen:
 
 In AEM 6.3 sind die beiden oben stehenden Parameter vorkonfigurierte OOTB-Kategorien, die über die OSGi QueryEngineSettings beibehalten werden können.
 
-Weitere Informationen finden Sie unter: [ https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
+Weitere Informationen finden Sie unter: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
 ## Tipps zum Erstellen effizienter Indizes {#tips-for-creating-efficient-indexes}
 
@@ -398,7 +398,7 @@ Im Folgenden finden Sie Details zu möglichen Problemen sowie entsprechende Lös
 #### Neuindizieren von Lucene-Eigenschaftenindizes {#re-indexing-lucene-property-indexes}
 
 * Verwenden Sie [oak-run.jar](/help/sites-deploying/oak-run-indexing-usecases.md#usecase3reindexing), um den Lucene-Eigenschaftenindex neu zu indizieren.
-* Stellen Sie im    Lucene-Eigenschaftsindex
+* Stellen Sie im Lucene-Eigenschaftsindex
 
    * `[oak:queryIndexDefinition]@reindex-async=true`
 

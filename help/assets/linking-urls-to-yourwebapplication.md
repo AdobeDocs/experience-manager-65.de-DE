@@ -13,7 +13,7 @@ feature: Configuration
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
 workflow-type: tm+mt
 source-wordcount: '1276'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Sie können URL-Zeichenfolgen auf verschiedene Arten abrufen. Im Folgenden wird 
 
       ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. Wählen Sie den Text aus und kopieren Sie ihn in Ihren Webbrowser, damit Sie eine Vorschau des Assets anzeigen oder es zu Ihrer Web-Inhaltsseite hinzufügen können.
+1. Markieren Sie den Text und kopieren Sie ihn in den Webbrowser, um eine Vorschau des Assets anzuzeigen oder es der Web-Inhaltsseite hinzuzufügen.
 
    Um das URL-Fenster zu verlassen, klicken Sie auf das **[!UICONTROL X]** oder auf **[!UICONTROL Schließen]**.
 
@@ -127,28 +127,28 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 1. Scrollen Sie auf der Seite **[!UICONTROL Cloud Services]** nach unten zur Überschrift **[!UICONTROL Dynamic Media Cloud Services]** und klicken Sie dann auf **[!UICONTROL Konfigurationen anzeigen]**.
 1. Wählen Sie unter **[!UICONTROL Verfügbare Konfigurationen]** den Namen der gewünschten Konfiguration.
 
-1. Kopieren Sie auf der Seite **[!UICONTROL Cloud-Einstellungen für Dynamic Media]** unter **[!UICONTROL Videodienst-URL]** den gesamten URL-Pfad. Sie müssen den kopierten URL-Pfad später in den Schritten ausführen.
+1. Kopieren Sie auf der Seite **[!UICONTROL Cloud-Einstellungen für Dynamic Media]** unter **[!UICONTROL Videodienst-URL]** den gesamten URL-Pfad. Der kopierte URL-Pfad wird in nachfolgenden Schritten benötigt.
 
    Der URL-Pfad kann zum Beispiel folgendermaßen aussehen:
 
    `https://s7athens.macromedia.com:9090/DMGateway/`
 
-   (Der obige Pfad ist nur ein Beispiel. es ist nicht der tatsächliche Pfad, den Sie kopieren.)
+   (Der oben angegebene Pfad dient nur zur Veranschaulichung. Es handelt sich nicht um den Pfad, den Sie kopieren.)
 
 1. Kopieren Sie unter **[!UICONTROL Registrierungs-ID]** den Kundennamen im letzten Teil der ID.
 
    Beispiel: Für die Registrierungs-ID `87654321|MyCompany` lautet der Name des Kunden `MyCompany`.
 
-1. Wählen Sie links oben auf der Seite die Option **[!UICONTROL Cloud Services]**, wählen Sie dann das Experience Manager-Logo aus und navigieren Sie zu **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
+1. Wählen Sie links oben auf der Seite **[!UICONTROL Cloud Services]** und dann das Adobe Experience Manager-Logo aus. Gehen Sie anschließend zu **[!UICONTROL Allgemein]** > **[!UICONTROL CRXDE Lite]**.
 1. Kopieren Sie den gesamten Pfad für die Videoausgabedarstellung aus dem JCR (Java™ Content Repository).
 
    Der Pfad für die Videoausgabedarstellung kann zum Beispiel folgendermaßen aussehen:
 
    `/_renditions_/0bd/0bd28743-a616-4fe6-92aa-6eae7c2112f/avs/Momentum_1080-0x720-2600k.mp4`
 
-   (Der obige Pfad ist nur ein Beispiel. es ist nicht der tatsächliche Pfad, den Sie kopieren.)
+   (Der oben angegebene Pfad dient nur zur Veranschaulichung. Es handelt sich nicht um den Pfad, den Sie kopieren.)
 
-1. Ordnen Sie die kopierten Informationen in der folgenden Reihenfolge an, sodass sie einen vollständigen URL-Pfad bilden:
+1. Ordnen Sie die kopierten Informationen in der folgenden Reihenfolge an, um einen vollständigen URL-Pfad anzulegen:
 
    `<Video_Service_URL>/public/<Customer_name_from_Registration_ID>/<Video_rendition_path>`
 
@@ -169,7 +169,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    `https://gateway-na.assetsadobe.com/DMGateway/`
 
-   (Der obige Pfad ist nur ein Beispiel. es ist nicht der tatsächliche Pfad, den Sie kopieren.)
+   (Der oben angegebene Pfad dient nur zur Veranschaulichung. Es handelt sich nicht um den Pfad, den Sie kopieren.)
 
    * Kopieren Sie unter **[!UICONTROL Registrierungs-ID]** den Kundennamen im letzten Teil der ID. Sie benötigen den kopierten Kundennamen später bei diesen Schritten.
 
@@ -180,7 +180,7 @@ Dynamic Media unterstützt die Bereitstellung von statischen Assets, bei denen e
 
    | Von Ihnen verwendetes Videobereitstellungsprotokoll | Zu verwendender Protokollselektor |
    |---|---|
-   | HTTP <br> Wenn Sie HTTP (nicht sichere Videobereitstellung) verwenden, stellen Sie sicher, dass Sie in der Videodienst-URL, die Sie zuvor kopiert haben, HTTPS in HTTP ändern. | `public/` |
+   | HTTP   <br> Wenn Sie HTTP (unsichere Videobereitstellung) verwenden, müssen Sie in der Videodienst-URL, die Sie zuvor kopiert haben, „https“ in „http“ ändern. | `public/` |
    | HTTPS | `public-ssl/` |
 
 1. Kopieren Sie den vollständigen Video-Asset-Pfad in Adobe Experience Manager, wie mit Dynamic Media verarbeitet. Der kopierte Video-Asset-Pfad wird in den nachfolgenden Schritten benötigt.

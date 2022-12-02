@@ -1,5 +1,5 @@
 ---
-title: Konzeption einer Kampagne
+title: Einrichten einer Kampagne
 seo-title: Setting up your campaign
 description: Zum Einrichten einer neuen Kampagne muss zuerst eine Marke für die Kampagnen und dann eine Kampagne für die Erlebnisse geschaffen werden – und zu guter Letzt müssen die Eigenschaften dieser neuen Kampagne festgelegt werden.
 seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
@@ -14,11 +14,11 @@ exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
 source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
 workflow-type: tm+mt
 source-wordcount: '2257'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Konzeption einer Kampagne{#setting-up-your-campaign}
+# Einrichten einer Kampagne{#setting-up-your-campaign}
 
 Das Einrichten einer neuen Kampagne umfasst die folgenden (allgemeinen) Schritte:
 
@@ -99,9 +99,9 @@ Konfigurieren Sie Kampagneneigenschaften, die das Verhalten beeinflussen:
 
 * **Adobe Target:** Mit diesen Eigenschaften werden Kampagnen konfiguriert, die in Adobe Target integriert wurden. (Weitere Informationen finden Sie unter [Integration mit Adobe Target](/help/sites-administering/target.md).)
 
-1. Wählen Sie unter **Kampagnen** Ihre Marke aus. Wählen Sie im rechten Bereich Ihre Kampagne aus und klicken Sie auf **Eigenschaften**.
+1. Wählen Sie unter **Kampagnen** Ihre Marke aus. Aktivieren Sie im rechten Bereich Ihre Kampagne und klicken Sie auf **Eigenschaften**.
 
-   Sie können verschiedene Eigenschaften eingeben, unter anderem **Titel**, **Beschreibung** und sämtliche gewünschten **Cloud-Services**.
+   Sie können verschiedene Eigenschaften eingeben, darunter **Titel**, **Beschreibung** und sämtliche gewünschten **Cloud-Services**.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
@@ -158,9 +158,9 @@ Wenn Sie über vorhandene Erlebnisse verfügen, können Sie einen Touchpoint dir
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktion (Lead-Verwaltung) weiter auszubauen.
-> Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
-In AEM MCM können Sie Leads ordnen und hinzufügen, indem Sie sie manuell eingeben oder indem Sie eine kommagetrennte Liste importieren, z. B. eine Mailing-Liste. Sie können Leads auch anhand von Newsletter- oder Community-Anmeldungen generieren. (Wenn dies konfiguriert wurde, kann nach einer Anmeldung ein Workflow ausgelöst werden, aus dem Leads hervorgehen.)
+In AEM MCM können Sie Leads ordnen und hinzufügen, indem Sie sie manuell eingeben oder indem Sie eine kommagetrennte Liste importieren, z. B. eine Mailing-Liste. Sie können Leads auch anhand von Newsletter- oder Community-Anmeldungen generieren. (Wenn dies konfiguriert wurde, kann nach einer Anmeldung ein Workflow ausgelöst werden, aus dem Leads hervorgehen.)
 
 Leads werden im Allgemeinen in Kategorien eingeteilt und in Listen gruppiert, sodass Sie zu einem späteren Zeitpunkt Aktionen für die gesamte Liste ausführen können, z. B. eine E-Mail an eine bestimmte Liste senden.
 
@@ -199,7 +199,7 @@ Durch Aktivieren des Leads können Sie dessen Aktivitäten auf der Veröffentlic
 
 So aktivieren oder deaktivieren Sie Leads:
 
-1. Navigieren Sie in AEM zum MCM und klicken Sie auf **Leads**.
+1. Navigieren Sie in AEM zu MCM und klicken Sie auf **Leads**.
 
 1. Wählen Sie die Leads aus, die Sie aktivieren oder deaktivieren möchten, und klicken Sie auf **Aktivieren** oder **Deaktivieren**.
 
@@ -215,7 +215,7 @@ Wenn Sie neue Leads importieren, können Sie sie automatisch einer bereits vorha
 
 So importieren Sie Leads aus einer kommagetrennten Liste:
 
-1. Navigieren Sie in AEM zum MCM und klicken Sie auf **Leads**.
+1. Navigieren Sie in AEM zu MCM und klicken Sie auf **Leads**.
 
    >[!NOTE]
    >
@@ -234,7 +234,7 @@ So importieren Sie Leads aus einer kommagetrennten Liste:
    >Bei der ersten Zeile in der CSV-Liste handelt es sich um vordefinierte Etiketten, die genau wie im Beispiel angegeben geschrieben werden müssen:
    >
    >
-   >`email,givenName,familyName` - wenn es `givenname`beispielsweise erkennt das System dies nicht.
+   >`email,givenName,familyName` – wenn Sie z. B. `givenname` schreiben, erkennt das System dies nicht.
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
@@ -258,7 +258,7 @@ So fügen Sie schon bestehenden Listen Leads hinzu:
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. Wählen Sie aus dem Menü **Tools** die Option **Zu Liste hinzufügen...**. Das Fenster **Zu Liste hinzufügen** wird geöffnet.
+1. Wählen Sie aus dem Menü **Tools** die Option **Zu Liste hinzufügen...** aus. Das Fenster **Zu Liste hinzufügen** wird geöffnet.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -305,13 +305,13 @@ Wählen Sie zum Löschen von bestehenden Leads im MCM das Kontrollkästchen nebe
 >[!NOTE]
 >
 >Adobe plant nicht, diese Funktion (Listenverwaltung) weiter auszubauen.
-> Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+>Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
 Mithilfe von Listen können Sie Ihre Leads in Gruppen organisieren. Mit Listen können Sie Marketing-Kampagnen gezielt für eine bestimmte Personengruppe erstellen, z. B. können Sie einen speziellen Newsletter an eine bestimmte Liste senden. Auf die Listen können Sie im MCM über das Dashboard oder durch Klicken auf **Listen** zugreifen. Bei beiden Methoden werden Ihnen der Name der Liste sowie die Mitgliederanzahl angezeigt.
 
 ![screen_shot_2012-02-21at125021pm](assets/screen_shot_2012-02-21at125021pm.png)
 
-Wenn Sie auf **Listen** klicken, können Sie auch sehen, ob die Liste Mitglied einer anderen Liste ist und Sie können eine Beschreibung anzeigen.
+Wenn Sie auf **Listen** klicken, können Sie auch sehen, ob die Liste Mitglied einer anderen Liste ist, und Sie können eine Beschreibung anzeigen.
 
 ![screen_shot_2012-02-21at124828pm](assets/screen_shot_2012-02-21at124828pm.png)
 
@@ -401,4 +401,4 @@ So zeigen Sie Leads an, die einer Liste angehören:
 
    ![screen_shot_2012-02-21at10828pm](assets/screen_shot_2012-02-21at10828pm.png)
 
-1. Klicken Sie auf **Schließen**, um zum MCM zurückzukehren.
+1. Klicken Sie auf **Schließen**, um zu MCM zurückzukehren.

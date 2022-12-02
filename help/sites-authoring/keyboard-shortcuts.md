@@ -13,7 +13,7 @@ exl-id: c58981a0-cdde-4593-b633-7f6898f8f5f5
 source-git-commit: ad8f98d22c2f2095ee92741331170be996103d95
 workflow-type: tm+mt
 source-wordcount: '378'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -67,7 +67,7 @@ Die für die Tastaturbefehle verwendeten Zusatztasten variieren je nach dem vom 
 
 AEM vermeidet gängige Tastaturbefehle von Standardbrowsern. Jedoch wird das standardmäßige Browserverhalten nicht durch AEM-Tastaturbefehle außer Kraft gesetzt.
 
-Außerdem sind die Tastaturbefehle für alle Gebietsschemas und Tastatur-Layouts identisch.
+Außerdem sind die Tastaturbefehle für alle Gebietsschemata und Tastatur-Layouts identisch.
 
 >[!NOTE]
 >

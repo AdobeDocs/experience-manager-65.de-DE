@@ -62,7 +62,7 @@ Sie können die folgenden Optionen konfigurieren:
 
 * `repository.home`: Pfad zum Repository-Stammverzeichnis, in dem Repository-bezogene Daten gespeichert werden. Standardmäßig werden Segmentdateien im Verzeichnis `crx-quickstart/segmentstore` gespeichert.
 
-* `tarmk.size` : Maximale Größe eines Segments in MB. Der standardmäßige Maximalwert lautet 256 MB.
+* `tarmk.size`: Maximale Größe eines Segments in MB. Der standardmäßige Maximalwert lautet 256 MB.
 * `customBlobStore`: Boolescher Wert, der angibt, dass ein benutzerdefinierter Datenspeicher verwendet wird. Der Standardwert ist „true“ für AEM 6.3 und höhere Versionen. Vor AEM 6.3 war die Standardeinstellung „false“.
 
 Es folgt eine Beispieldatei für `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
@@ -84,7 +84,7 @@ Der Knotenspeicher „Dokument“ ist die Basis der AEM-MongoMK-Implementierung.
 
 * `mongouri`: Die für die Verbindung zur Mongo-Datenbank erforderliche [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/). Standard: `mongodb://localhost:27017`
 
-* `db` : Name der Mongo-Datenbank. Der Standardwert ist **Oak** ``. However, new AEM 6 installations use **aem-author** `` als standardmäßigen Datenbanknamen.
+* `db`: Name der Mongo-Datenbank. Der Standardwert ist **Oak** ``. However, new AEM 6 installations use **aem-author** `` als standardmäßigen Datenbanknamen.
 
 * `cache`: Cache-Größe in MB. Dieser Wert verteilt sich auf die verschiedenen in DocumentNodeStore verwendeten Caches. Standard: `256`
 
@@ -117,7 +117,7 @@ Die verschiedenen Datenspeicher und Konfigurationen werden nachfolgend beschrieb
 
 >[!NOTE]
 >
->Um benutzerdefinierte Datenspeicher verwenden zu können, müssen Sie `customBlobStore` in der entsprechenden Knotenspeicher-Konfigurationsdatei (`true`Knotenspeicher „Segment“ oder [Knotenspeicher „Dokument“](/help/sites-deploying/data-store-config.md#segment-node-store)) auf [](/help/sites-deploying/data-store-config.md#document-node-store) einstellen.
+>Um benutzerdefinierte Datenspeicher verwenden zu können, müssen Sie `customBlobStore` in `true` der entsprechenden Knotenspeicher-Konfigurationsdatei ([Knotenspeicher „Segment“](/help/sites-deploying/data-store-config.md#segment-node-store) oder [Knotenspeicher „Dokument“](/help/sites-deploying/data-store-config.md#document-node-store)) auf  einstellen.
 
 ### Dateidatenspeicher {#file-data-store}
 
@@ -161,7 +161,7 @@ Nach dem Download können Sie den S3-Connector wie folgt installieren und konfig
 
    Kopieren Sie alle Inhalte vom oben genannten Speicherort nach `<aem-install>/crx-quickstart/install.`
 
-1. Wenn AEM bereits für Tar- oder MongoDB-Speicher konfiguriert ist, entfernen Sie etwaig vorhandene Konfigurationsdateien aus dem Ordner ***&lt;aem-install>*/crx-quickstart*/*install*, bevor Sie fortfahren. Die folgenden Dateien müssen entfernt werden:
+1. Wenn AEM bereits für Tar- oder MongoDB-Speicher konfiguriert ist, entfernen Sie etwaig vorhandene Konfigurationsdateien aus dem Ordner ***&lt;aem-install>***/*crx-quickstart*/*install*, bevor Sie fortfahren. Die folgenden Dateien müssen entfernt werden:
 
    * `For MongoMK: org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
    * `For TarMK: org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
@@ -232,24 +232,24 @@ Sie können die Konfigurationsdatei mit den unten beschriebenen Optionen verwend
 | --- | --- | --- | --- |
 | accessKey | Greifen Sie auf die Schlüssel-ID für den IAM-Benutzer zu, der Zugriff auf den Bucket hat. |  | Ja, wenn keine IAM-Rollen verwendet werden. |
 | secretKey | Geheimer Zugriffsschlüssel für den IAM-Benutzer mit Zugriff auf den Bucket. |  | Ja, wenn keine IAM-Rollen verwendet werden. |
-| cacheSize | Die Größe (in Byte) des lokalen Caches. | 64 GB | Nein. |
-| connectionTimeout | Legen Sie die Wartezeit (in Millisekunden) vor dem Timeout beim erstmaligen Herstellen einer Verbindung fest. | 10000 | Nein. |
-| maxCachedBinarySize | Binärdateien mit einer Größe, die kleiner oder gleich diesem Wert ist (in Byte), werden im Arbeitsspeicher-Cache gespeichert. | 17408 (17 KB) | Nein. |
-| maxConnections | Legen Sie die maximale Anzahl der zulässigen offenen HTTP-Verbindungen fest. | 50 | Nein. |
-| maxErrorRetry | Legen Sie die maximale Anzahl von Wiederholungsversuchen für fehlgeschlagene (wiederholbare) Anforderungen fest. | 3 | Nein. |
-| minRecordLength | Die Mindestgröße eines Objekts (in Byte), das im Datenspeicher gespeichert werden soll. | 16384 | Nein. |
-| path | Der lokale Pfad des AEM-Datenspeichers. | `crx-quickstart/repository/datastore` | Nein. |
-| proxyHost | Legen Sie den optionalen Proxyhost fest, über den der Client eine Verbindung herstellen soll. |  | Nein. |
-| proxyPort | Legen Sie den optionalen Proxy-Port fest, über den der Client eine Verbindung herstellen soll. |  | Nein. |
+| cacheSize | Die Größe (in Byte) des lokalen Caches. | 64 GB | Anzahl  |
+| connectionTimeout | Legen Sie die Wartezeit (in Millisekunden) vor dem Timeout beim erstmaligen Herstellen einer Verbindung fest. | 10000 | Anzahl  |
+| maxCachedBinarySize | Binärdateien mit einer Größe, die kleiner oder gleich diesem Wert ist (in Byte), werden im Arbeitsspeicher-Cache gespeichert. | 17408 (17 KB) | Anzahl  |
+| maxConnections | Legen Sie die maximale Anzahl der zulässigen offenen HTTP-Verbindungen fest. | 50 | Anzahl  |
+| maxErrorRetry | Legen Sie die maximale Anzahl von Wiederholungsversuchen für fehlgeschlagene (wiederholbare) Anforderungen fest. | 3 | Anzahl  |
+| minRecordLength | Die Mindestgröße eines Objekts (in Byte), das im Datenspeicher gespeichert werden soll. | 16384 | Anzahl  |
+| path | Der lokale Pfad des AEM-Datenspeichers. | `crx-quickstart/repository/datastore` | Anzahl  |
+| proxyHost | Legen Sie den optionalen Proxyhost fest, über den der Client eine Verbindung herstellen soll. |  | Anzahl  |
+| proxyPort | Legen Sie den optionalen Proxy-Port fest, über den der Client eine Verbindung herstellen soll. |  | Anzahl  |
 | s3Bucket | Name des S3-Buckets. |  | Ja |
-| s3EndPoint | S3 REST API-Endpunkt. |  | Nein. |
-| s3Region | Region, in der sich der Behälter befindet. Siehe dies [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) für weitere Details. | Region, in der die AWS-Instanz ausgeführt wird. | Nein. |
-| socketTimeout | Legen Sie die Wartezeit (in Millisekunden) für Daten fest, die über eine eingerichtete, offene Verbindung übertragen werden sollen, bevor die Verbindung unterbrochen und geschlossen wird. | 50000 | Nein. |
-| stagingPurgeInterval | Das Intervall (in Sekunden) zum Bereinigen der fertigen Uploads aus dem Staging-Cache. | 300 | Nein. |
-| stagingRetryInterval | Das Intervall (in Sekunden) zum Wiederholen fehlgeschlagener Uploads. | 600 | Nein. |
-| stagingSplitPercentage | Der Prozentsatz von `cacheSize` zur Verwendung für das Staging asynchroner Uploads. | 10 | Nein. |
-| uploadThreads | Die Anzahl der Upload-Threads, die für asynchrone Uploads verwendet werden. | 10 | Nein. |
-| writeThreads | Die Anzahl der parallelen Threads, die zum Schreiben über S3 Transfer Manager verwendet werden. | 10 | Nein. |
+| s3EndPoint | S3 REST API-Endpunkt. |  | Anzahl  |
+| s3Region | Region, in der sich der Behälter befindet. Siehe dies [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) für weitere Details. | Region, in der die AWS-Instanz ausgeführt wird. | Anzahl  |
+| socketTimeout | Legen Sie die Wartezeit (in Millisekunden) für Daten fest, die über eine eingerichtete, offene Verbindung übertragen werden sollen, bevor die Verbindung unterbrochen und geschlossen wird. | 50000 | Anzahl  |
+| stagingPurgeInterval | Das Intervall (in Sekunden) zum Bereinigen der fertigen Uploads aus dem Staging-Cache. | 300 | Anzahl  |
+| stagingRetryInterval | Das Intervall (in Sekunden) zum Wiederholen fehlgeschlagener Uploads. | 600 | Anzahl  |
+| stagingSplitPercentage | Der Prozentsatz von `cacheSize` zur Verwendung für das Staging asynchroner Uploads. | 10 | Anzahl  |
+| uploadThreads | Die Anzahl der Upload-Threads, die für asynchrone Uploads verwendet werden. | 10 | Anzahl  |
+| writeThreads | Die Anzahl der parallelen Threads, die zum Schreiben über S3 Transfer Manager verwendet werden. | 10 | Anzahl  |
 
 <!---
 ### Bucket region options {#bucket-region-options}
@@ -437,10 +437,10 @@ Nach dem Download können Sie den Azure-Connector wie folgt installieren und kon
 
 Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 
-* azureSas=&quot;&quot;: In der Connector-Version 1.6.3 wurde Unterstützung für Azure Shared Access Signature (SAS) hinzugefügt. **Wenn in der Konfigurationsdatei sowohl SAS als auch Speicheranmeldeinformationen vorhanden sind, hat SAS Priorität.** Weitere Informationen zu SAS finden Sie in der [offiziellen Dokumentation](https://docs.microsoft.com/en-us/azure/storage/common/storage-dotnet-shared-access-signature-part-1). Stellen Sie sicher, dass &#39;=&#39; wie folgt mit Escapezeichen versehen ist &#39;\=&#39;.
+* azureSas=&quot;&quot;: In der Connector-Version 1.6.3 wurde Unterstützung für Azure Shared Access Signature (SAS) hinzugefügt. **Wenn in der Konfigurationsdatei sowohl SAS als auch Speicheranmeldeinformationen vorhanden sind, hat SAS Priorität.** Weitere Informationen zu SAS finden Sie in der [offiziellen Dokumentation](https://docs.microsoft.com/de-de/azure/storage/common/storage-dotnet-shared-access-signature-part-1). Stellen Sie sicher, dass &#39;=&#39; wie folgt mit Escapezeichen versehen ist &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: Der Azure-Blob-Endpunkt, z. B. https://&lt;Speicherkonto>.blob.core.windows.net.
-* accessKey=&quot;&quot;: Der Speicherkontoname. Weitere Informationen zu den von Microsoft Azure-Anmeldeinformationen für die Authentifizierung finden Sie in der [offiziellen Dokumentation](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: Der Speicherkontoname. Weitere Informationen zu den von Microsoft Azure-Anmeldeinformationen für die Authentifizierung finden Sie in der [offiziellen Dokumentation](https://azure.microsoft.com/de-de/documentation/articles/storage-create-storage-account).
 
 * secretKey=&quot;&quot;: Der Speicherzugriffsschlüssel. Stellen Sie sicher, dass &#39;=&#39; wie folgt mit Escapezeichen versehen ist &#39;\=&#39;.
 * container=&quot;&quot;: Der Name des Blob-Speichercontainers von Microsoft Azure. Der Container stellt eine Gruppierung mehrerer Blobs dar. Zusätzliche Details finden Sie in der [offiziellen Dokumentation](https://msdn.microsoft.com/en-us/library/dd135715.aspx).
@@ -475,7 +475,7 @@ Im Rahmen der automatischen Datenspeicherbereinigung werden nicht verwendete Dat
 
 Sie können die automatische Datenspeicherbereinigung wie folgt ausführen:
 
-1. Rufen Sie die JMX-Konsole unter der folgenden Adresse auf: *http://&lt;Server-Adresse:Port>/system/console/jmx*
+1. Rufen Sie die JMX-Konsole unter der folgenden Adresse auf: *https://&lt;Server-Adresse:Port>/system/console/jmx*
 1. Suchen Sie nach **RepositoryManagement.** Wenn Sie das MBean „Repository Manager“ gefunden haben, klicken Sie darauf, um die verfügbaren Optionen aufzurufen.
 1. Führen Sie einen Bildlauf bis zum Ende der Seite durch und klicken Sie auf den Link **startDataStoreGC(boolean markOnly)**.
 1. Geben Sie im folgenden Dialogfeld für den Parameter `false` den Wert `markOnly` ein und klicken Sie auf **Invoke**:

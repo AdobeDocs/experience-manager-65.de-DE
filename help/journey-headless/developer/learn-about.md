@@ -1,15 +1,15 @@
 ---
-title: Weitere Infos zur CMS-Headless-Entwicklung
+title: Grundlegendes zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1595'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Weitere Infos zur CMS-Headless-Entwicklung {#learn-about}
+# Grundlegendes zur CMS-Headless-Entwicklung {#learn-about}
 
 In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 
@@ -120,10 +120,10 @@ Danke für Ihren Einstieg in die AEM Headless-Tour! Nachdem Sie dieses Dokument 
 * verstehen, warum und wann Headless erforderlich ist,
 * grundsätzlich wissen, wie Headless-Konzepte verwendet werden und wie sie miteinander zusammenhängen.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Tour fort, indem Sie als Nächstes das Dokument [Erste Schritte mit AEM Headless ](getting-started.md) lesen, in dem Sie erfahren, wie Sie die erforderlichen Tools einrichten und wie Sie damit beginnen können, darüber nachzudenken, wie AEM an die Headless-Inhaltsbereitstellung herangeht und welche Voraussetzungen dafür erforderlich sind.
+Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Tour fort, indem Sie als Nächstes das Dokument [Erste Schritte mit AEM Headless](getting-started.md) lesen, in dem Sie erfahren, wie Sie die erforderlichen Tools einrichten und wie Sie damit beginnen können, darüber nachzudenken, wie AEM an die Headless-Inhaltsbereitstellung herangeht und welche Voraussetzungen dafür erforderlich sind.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-Es wird empfohlen, zum nächsten Teil der Headless-Development-Journey zu wechseln, indem Sie das Dokument lesen [Erste Schritte mit AEM Headless](getting-started.md)Im Folgenden finden Sie einige zusätzliche optionale Ressourcen, die einen tieferen Einblick in einige der in diesem Dokument erwähnten Konzepte bieten, aber nicht auf dem Headless-Journey weiterarbeiten müssen.
+Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Entwickler-Tour fortzufahren, indem Sie das Dokument [Erste Schritte mit AEM Headless](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Headless-Entwickler-Tour fortzufahren.
 
 * [AEM Headless-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de): Nutzen Sie diese praxisnahen Tutorials, um herauszufinden, wie Sie die verschiedenen Optionen für die Bereitstellung von Inhalten an Headless-Endpunkte mit AEM verwenden können, und wählen Sie aus, was für Sie am besten geeignet ist.

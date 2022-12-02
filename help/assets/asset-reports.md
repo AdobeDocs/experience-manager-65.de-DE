@@ -1,6 +1,6 @@
 ---
 title: Berichte zur Verwendung und Freigabe von Assets
-description: Berichte zu Ihren Assets in [!DNL Adobe Experience Manager Assets] , die Ihnen dabei helfen, Nutzung, Aktivität und Freigabe Ihrer digitalen Assets zu verstehen.
+description: Berichte zu Ihren Assets in [!DNL Adobe Experience Manager Assets] zum besseren Verständnis von Nutzung, Aktivität und Freigabe Ihrer digitalen Assets.
 contentOwner: AG
 role: User, Admin
 feature: Asset Reports,Asset Management
@@ -8,23 +8,23 @@ exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
 workflow-type: tm+mt
 source-wordcount: '1174'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Asset-Berichte {#asset-reports}
 
-| Version | Artikellink |
+| Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=en) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/asset-reports.html?lang=en) |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/asset-reports.html?lang=de) |
 
 Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Implementierung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzer mit Assets interagieren, und die Frage, welche Assets heruntergeladen und freigegeben werden.
 
 Verwenden Sie die Informationen aus den Berichten, um wesentliche Erfolgsmetriken abzuleiten und so festzustellen, wie gut [!DNL Assets] innerhalb Ihrer Organisation und von Ihren Kunden angenommen wird.
 
-Das [!DNL Assets]-Berichterstellungs-Framework nutzt [!DNL Sling]-Aufträge, um Berichtsanfragen auf überschaubare Art asynchron zu verarbeiten. Es ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung steigert die Effizienz und Geschwindigkeit der Berichtsgenerierung.
+Das [!DNL Assets]-Reporting-Framework nutzt [!DNL Sling]-Aufträge, um Berichtsanfragen auf überschaubare Art asynchron zu verarbeiten. Es ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung steigert die Effizienz und Geschwindigkeit der Berichtsgenerierung.
 
 Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
 
@@ -34,10 +34,10 @@ Wenn ein Bericht generiert wird, werden Sie mit einer E-Mail (optional) und eine
 
 Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
-* Aktivieren [!UICONTROL Day CQ DAM Event Recorder] Dienst von **[!UICONTROL Instrumente]** > **[!UICONTROL Aktivitäten]** > **[!UICONTROL Web-Konsole]**.
-* Wählen Sie die Aktivitäten oder Ereignisse aus, für die Sie Berichte erstellen möchten. Um beispielsweise einen Bericht zu heruntergeladenen Assets zu generieren, wählen Sie [!UICONTROL Asset heruntergeladen (HERUNTERGELADEN)].
+* Aktivieren Sie den Dienst [!UICONTROL Day CQ DAM Event Recorder] über **[!UICONTROL Werkzeuge]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
+* Wählen Sie die Aktivitäten oder Ereignisse aus, für die Sie Berichte erstellen möchten. Um beispielsweise einen Bericht zu heruntergeladenen Assets zu generieren, wählen Sie [!UICONTROL Asset heruntergeladen (HERUNTERGELADEN)] aus.
 
-![Aktivieren der Asset-Berichterstellung in der Web-Konsole](assets/reports-config-day-cq-dam-event-recorder.png)
+![Aktivieren des Asset-Reportings in der Web-Konsole](assets/reports-config-day-cq-dam-event-recorder.png)
 
 ## Erzeugen von Berichten {#generate-reports}
 
@@ -49,7 +49,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 * Änderung
 * Veröffentlichung
 * [!DNL Brand Portal]-Veröffentlichung
-* Festplattenauslastung
+* Speichernutzung
 * Dateien
 * Link-Freigabe
 
@@ -106,14 +106,14 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
 1. Auf der Seite **[!UICONTROL Spalten konfigurieren]** sind einige Spalten standardmäßig für den Bericht ausgewählt. Sie können zusätzliche Spalten auswählen. Heben Sie die Auswahl einer Spalte auf, um sie im Bericht auszuschließen.
 
-   ![Auswahl der Berichtsspalten auswählen oder abbrechen](assets/configure_columns.png)
+   ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/configure_columns.png)
 
    Um einen benutzerdefinierten Spaltennamen oder Eigenschaftspfad anzuzeigen, konfigurieren Sie die Eigenschaften für die Asset-Binärdatei im `jcr:content`-Knoten in CRX. Alternativ können Sie sie über die Auswahl für den Eigenschaftspfad hinzufügen.
 
-   ![Auswahl der Berichtsspalten auswählen oder abbrechen](assets/custom_columns.png)
+   ![Auswählen oder Aufheben der Auswahl von Berichtsspalten](assets/custom_columns.png)
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Erstellen]**. Eine Meldung benachrichtigt Sie darüber, dass die Berichtserstellung startet.
-1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der angezeigte Berichterstellungsstatus auf dem aktuellen Status des Berichtauftrags, zum Beispiel [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange] oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
+1. Auf der Seite [!UICONTROL Asset-Berichte] basiert der angezeigte Reporting-Status auf dem aktuellen Status des Berichtauftrags, zum Beispiel [!UICONTROL Erfolg], [!UICONTROL Fehlgeschlagen], [!UICONTROL In Warteschlange] oder [!UICONTROL Geplant]. Derselbe Status wird auch im Benachrichtigungseingang angezeigt. Klicken Sie zur Ansicht der Berichtsseite auf den Berichts-Link. Alternativ wählen Sie den Bericht aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Anzeigen]**.
 
    ![Ein generierter Bericht](assets/report_page.png)
 
@@ -162,8 +162,8 @@ Um nicht mehr benötigte Berichte zu entfernen, konfigurieren Sie den Bereinigun
 
 ## Informationen zur Fehlerbehebung, Tipps und Einschränkungen {#best-practices-and-limitations}
 
-* Wenn einige Berichte oder Zahlen in den Berichten nicht verfügbar oder wie erwartet sind, stellen Sie sicher, dass [!UICONTROL Day CQ DAM Event Recorder] -Dienst aktiviert ist.
+* Wenn einige Berichte oder Zahlen in den Berichten nicht verfügbar oder nicht wie erwartet sind, stellen Sie sicher, dass der Dienst [!UICONTROL Day CQ DAM Event Recorder] aktiviert ist.
 
-* Entfernen Sie nicht mehr benötigte Berichte. Verwenden Sie die Konfigurationsoptionen im DAM Report Purge-Dienst, um die Kriterien zum Bereinigen von Berichten zu konfigurieren.
+* Entfernen Sie nicht mehr benötigte Berichte. Verwenden Sie die Konfigurationsoptionen im Dienst DAM Report Purge, um die Kriterien zum Bereinigen von Berichten zu konfigurieren.
 
 * Wenn der Bericht zur Speichernutzung nicht generiert wird und Sie [!DNL Dynamic Media] verwenden, stellen Sie sicher, dass alle Assets ordnungsgemäß verarbeitet werden. Verarbeiten Sie zur Behebung die Assets erneut und erstellen Sie dann den Bericht erneut.

@@ -13,7 +13,7 @@ exl-id: bce6c586-9962-4217-82cb-c837e479abc0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '530'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Sie müssen Folgendes installiert haben:
 * Adobe Experience Manager
 * Adobe Campaign Classic
 
-Siehe [AEM in Adobe Campaign Classic integrieren](/help/sites-administering/campaignonpremise.md) für weitere Informationen.
+Weitere Informationen finden Sie unter [Integrieren von AEM mit Adobe Campaign Classic](/help/sites-administering/campaignonpremise.md).
 
 ## Erstellen benutzerdefinierter Formularzuordnungen {#creating-custom-form-mappings-2}
 
@@ -45,7 +45,7 @@ Zur Erstellung benutzerdefinierter Formularzuordnungen führen Sie die folgenden
 
 ### Erstellen der benutzerdefinierten Tabelle in Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
-Beginner Sie mit der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign. In diesem Beispiel verwenden wir die folgende Definition, um eine Ereignistabelle zu erstellen:
+Beginner Sie mit der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign. In diesem Beispiel verwenden wir die folgende Definition zur Erstellung einer Ereignistabelle:
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
@@ -64,7 +64,7 @@ Klicken/tippen Sie in Adobe Campaign auf **Hinzufügen**, um eine neue Erweiter
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
-Verwenden Sie nun die Felder aus dem **event** -Tabelle zum Erweitern der **Saatgut** table:
+Verwenden Sie nun die Felder der **Ereignistabelle** zur Erweiterung der **Seed**-Tabelle:
 
 ```xml
 <element label="Event" name="custom_cus_event">

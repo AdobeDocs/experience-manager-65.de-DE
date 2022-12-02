@@ -14,7 +14,7 @@ exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1755'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Der Inhalt wird mit mithilfe von (zum Inhaltstyp passenden) [Komponenten](/help/
 >
 >Damit Sie Seiten bearbeiten können, muss Ihr Konto über die [entsprechenden Zugriffsrechte](/help/sites-administering/security.md) und [Berechtigungen](/help/sites-administering/security.md#permissions) verfügen. Z. B. damit Sie Komponenten hinzufügen, bearbeiten oder löschen, kommentieren, entsperren können.
 >
->Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an den Systemadministrator zu wenden.
+>Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die bzw. den Systemadmin zu wenden.
 
 ## Sidekick {#sidekick}
 
@@ -56,11 +56,11 @@ Diese bieten Zugriff auf eine Vielzahl von Funktionen, zu denen unter anderem fo
 * [Umschalten zwischen Modi](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes)
 * [Erstellen](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#creating-a-new-version), [Wiederherstellen](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick) und [Vergleichen](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#comparing-with-a-previous-version) von Versionen
 
-* [Veröffentlichen einer Seite](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page), [Veröffentlichen rückgängig machen](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page)
+* [Veröffentlichen einer Seite](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#publishing-a-page), [Rückgängigmachen der Veröffentlichung](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page)
 
 * [Bearbeiten der Seiteneigenschaften](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)
 
-* [scaffolding](/help/sites-authoring/scaffolding.md)
+* [Strukturvorlagen](/help/sites-authoring/scaffolding.md)
 
 * [ClientContext](/help/sites-administering/client-context.md)
 
@@ -91,14 +91,14 @@ So fügen Sie eine neue Komponente ein:
 
 Sie können eine neue Komponente zur Seite hinzufügen, indem Sie ein Asset aus dem [Content Finder](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder) ziehen. Dadurch wird automatisch eine neue Komponente des entsprechenden Typs erstellt, die das Asset enthält.
 
-Dies gilt für folgende Asset-Typen (einige sind von der Seite/dem Absatzsystem abhängig):
+Dies gilt für folgende Asset-Typen (einige sind vom Seiten-/Absatzsystem abhängig):
 
 | Asset-Typ | Resultierender Komponententyp |
 |---|---|
 | Bild | Bild |
 | Dokument | Download |
 | Produkt | Produkt |
-| Video    | Flash   |
+| Video  | Flash |
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ So verschieben Sie einen Absatz:
 >
 >Sie können eine Komponente auch durch [Ausschneiden und Einfügen](#cut-copy-paste-a-component) verschieben.
 
-1. Wählen Sie den Absatz, den Sie verschieben möchten:
+1. Wählen Sie den Absatz aus, den Sie verschieben möchten:
 
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
@@ -160,7 +160,7 @@ So löschen Sie einen Absatz:
 
 ## Ausschneiden/Kopieren/Einfügen einer Komponente {#cut-copy-paste-a-component}
 
-Wie beim [Löschen einer Komponente](#deleting-a-component) können Sie das Kontextmenü nutzen, um eine Komponente zu kopieren, auszuschneiden und/oder einzufügen
+Wie beim [Löschen einer Komponente](#deleting-a-component) können Sie das Kontextmenü nutzen, um eine Komponente zu kopieren, auszuschneiden und/oder einzufügen.
 
 >[!NOTE]
 >
@@ -170,7 +170,7 @@ Wie beim [Löschen einer Komponente](#deleting-a-component) können Sie das Kont
 
 >[!NOTE]
 >
->Das Ausschneiden, Kopieren und Einfügen von Inhalt wird nur innerhalb derselben Seite unterstützt. 
+>Das Ausschneiden, Kopieren und Einfügen von Inhalt wird nur innerhalb derselben Seite unterstützt.
 
 ## Vererbte Komponenten {#inherited-components}
 
@@ -179,7 +179,7 @@ Vererbte Komponenten können sich aus diversen Szenarien ergeben, wie:
 * [Multi-Site-Management](/help/sites-administering/msm.md); auch in Verbindung mit [Strukturvorlagen](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance)
 
 * [Launch](/help/sites-classic-ui-authoring/classic-launches.md) (wenn er auf Live Copy basiert).
-* Spezifische Komponenten, z. B. das Vererbungs-Absatzsystem in Geometrixx.
+* Spezifische Komponenten, z. B. das Vererbungs-Absatzsystem in Geometrixx.
 
 Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig von der Komponente ist dies wie folgt verfügbar:
 
@@ -243,7 +243,7 @@ So sperren Sie eine Seite:
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Eine Nachricht über die Sperrung der Seite für andere Benutzer wird angezeigt. Darüber hinaus wird die Seite im rechten Fenster der Konsole **Websites** von AEM WCM als gesperrt angezeigt. Daneben wird auch der Benutzer angegeben, der die Seite gesperrt hat.
+   Eine Meldung über die Sperrung der Seite für andere Benutzer wird angezeigt. Darüber hinaus wird die Seite im rechten Fenster der Konsole **Websites** von AEM WCM als gesperrt angezeigt. Daneben wird auch der Benutzer angegeben, der die Seite gesperrt hat.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
@@ -259,20 +259,20 @@ So entsperren Sie eine Seite:
 
 Verwenden Sie die folgenden Tastaturbefehle, während der Inhalts-Frame der Seite den Fokus hat:
 
-* Rückgängig: Strg+Z (Windows) bzw. Befehl+Z (Mac) 
-* Wiederholen: Strg+Y (Windows) bzw. Befehl+Y (Mac) 
+* Rückgängig: Strg+Z (Windows) bzw. Befehl+Z (Mac)
+* Wiederholen: Strg+Y (Windows) bzw. Befehl+Y (Mac)
 
 Wenn Sie das Entfernen, Hinzufügen oder Verschieben von Absätzen rückgängig machen bzw. wiederholen, werden die betroffenen Absätze (standardmäßig) durch Markierungen hervorgehoben.
 
 >[!NOTE]
 >
->Siehe [Rückgängigmachen und Wiederholen von Seitenbearbeitungen - Die Theorie](#undoing-and-redoing-page-edits-the-theory); dort erfahren Sie, was beim Rückgängigmachen und Wiederholen von Seitenbearbeitungen möglich ist.
+>Siehe [Rückgängigmachen und Wiederholen von Seitenbearbeitungen – Die Theorie](#undoing-and-redoing-page-edits-the-theory); dort erfahren Sie, was beim Rückgängigmachen und Wiederholen von Seitenbearbeitungen möglich ist.
 
 ## Rückgängigmachen und Wiederholen von Seitenbearbeitungen - Die Theorie {#undoing-and-redoing-page-edits-the-theory}
 
 >[!NOTE]
 >
->Ihr Systemadministrator kann [verschiedene Aspekte der Funktionen zum Rückgängig machen/Wiederholen](/help/sites-administering/config-undo.md) den Anforderungen Ihrer Instanz entsprechend konfigurieren.
+>Ihre bzw. Ihr Systemadmin kann [verschiedene Aspekte der Funktionen zum Rückgängigmachen/Wiederholen](/help/sites-administering/config-undo.md) den Anforderungen Ihrer Instanz entsprechend konfigurieren.
 
 AEM speichert einen Verlauf der Aktionen, die Sie ausführen, sowie die Reihenfolge der Ausführung. Sie können also mehrere Aktionen in der umgekehrten Reihenfolge ihrer Ausführung rückgängig machen. Dann können Sie den Befehl zum Wiederholen verwenden, um eine oder mehrere Aktionen zu wiederholen. 
 
@@ -295,7 +295,7 @@ Die können die folgenden Arten von Seitenbearbeitungen rückgängig machen bzw.
 * Hinzufügen, Bearbeiten, Entfernen und Verschieben von Absätzen
 * Bearbeitung von Absatzinhalten im Kontext
 * Kopieren, Ausschneiden und Einfügen von Elementen innerhalb einer Seite
-* Kopieren, Ausschneiden und Einfügen von Elementen auf Seiten
+* Seitenübergreifendes Kopieren, Ausschneiden und Einfügen von Elementen
 * Hinzufügen, Entfernen und Ändern von Bildern
 * Hinzufügen, Entfernen und Ändern von Anmerkungen und Zeichnungen
 * Änderungen an Grundlage
@@ -306,4 +306,4 @@ Für Formularfelder, die durch Formular-Komponenten erzeugt werden, dürfen beim
 
 >[!NOTE]
 >
->Spezielle Berechtigungen sind erforderlich, um Änderungen rückgängig zu machen bzw. wiederherzustellen, die an Dateien und Bildern vorgenommen wurden. Außerdem kann das Rückgängigmachen Änderungen an Dateien und Bildern nur einige Stunden garantiert werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Der zuständige Administrator kann Berechtigungen erteilen und die Standarddauer von zehn Stunden ändern.
+>Spezielle Berechtigungen sind erforderlich, um Änderungen rückgängig zu machen bzw. wiederherzustellen, die an Dateien und Bildern vorgenommen wurden. Außerdem kann das Rückgängigmachen Änderungen an Dateien und Bildern nur einige Stunden garantiert werden. Bei länger zurückliegenden Änderungen ist dies unter Umständen nicht mehr möglich. Der bzw. die zuständige Admin kann Berechtigungen erteilen und die Standarddauer von zehn Stunden ändern.

@@ -1,7 +1,7 @@
 ---
 title: Benennungskonventionen für Assets-Tests
 seo-title: Naming conventions for assets
-description: Knoten im Repository unterliegen Benennungskonventionen des Java Content Repository. Adobe Experience Manager schreibt aber weitere Konventionen für den Namen von Asset-Knoten vor.
+description: Knoten im Repository unterliegen den Benennungskonventionen des Java Content Repository. Adobe Experience Manager schreibt aber weitere Konventionen für den Namen von Asset-Knoten vor.
 seo-description: Nodes in the repository are subject to naming conventions of the Java Content Repository. However, Adobe Experience Manager imposes further conventions for the name of asset nodes.
 uuid: 6b622a60-90e8-461e-9b67-42c11c7038f9
 contentOwner: Chris Bohnert
@@ -13,11 +13,11 @@ exl-id: bb6a5913-0871-47c7-8641-936e98920ec0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Benennungskonventionen für Assets testing{#naming-conventions-for-assets-testing}
+# Benennungskonventionen für Assets-Tests{#naming-conventions-for-assets-testing}
 
 Knoten im Repository unterliegen den Benennungskonventionen des [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Adobe Experience Manager schreibt aber weitere Konventionen für den Namen von Asset-Knoten vor.
 

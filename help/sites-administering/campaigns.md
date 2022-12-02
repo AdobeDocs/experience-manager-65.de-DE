@@ -30,5 +30,5 @@ Wenn Sie Kampagnen (einschließlich Einstiegsseiten) verwalten, müssen Sie ggf.
 Siehe folgende Seiten:
 
 * [Konfigurieren der Segmentierung](/help/sites-administering/campaign-segmentation.md)
-* [Erweitern und Konfigurieren des Design-Importtools für Einstiegsseiten](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
+* [Erweitern und Konfigurieren des Design-Import-Tools für Einstiegsseiten](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 * [Integrieren von Einstiegsseiten in Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)

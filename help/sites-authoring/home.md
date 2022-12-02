@@ -13,7 +13,7 @@ ht-degree: 96%
 
 # AEM 6.5 Authoring-Benutzeranleitung
 
-Erfahren Sie mehr über die wichtigsten Konzepte zuInhalten und Authoring in AEM 6.5. Außerdem finden Sie hier Informationen zur Verwendung von Tags, Vorlagen und anderen Seitenfunktionen.
+Erfahren Sie mehr über die wichtigsten Konzepte zu Inhalten und Authoring in AEM 6.5. Außerdem finden Sie hier Informationen zur Verwendung von Tags, Vorlagen und anderen Seitenfunktionen.
 
 ## Wichtige AEM-Artikel
 

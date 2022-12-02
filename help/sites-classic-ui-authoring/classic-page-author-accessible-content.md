@@ -1,7 +1,7 @@
 ---
 title: Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien)
 seo-title: Creating Accessible Content (WCAG 2.0 Conformance)
-description: WCAG 2.0 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind.
+description: WCAG 2.0 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind.
 seo-description: WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 page-status-flag: de-activated
 uuid: c2c0cac0-2a9f-478d-8261-e8cc894aae34
@@ -14,24 +14,24 @@ exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '9211'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
-# Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien){#creating-accessible-content-wcag-conformance}
+# Erstellen barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.0-Richtlinien){#creating-accessible-content-wcag-conformance}
 
 >[!CAUTION]
 >
->Da die klassische Benutzeroberfläche in AEM 6.4 nicht mehr unterstützt wird, wurde der Inhalt auf dieser Seite nicht für WCAG 2.1 aktualisiert.
+>Da die klassische Benutzeroberfläche in AEM 6.4 nicht mehr unterstützt wird, wurde der Inhalt auf dieser Seite nicht für WCAG 2.1 aktualisiert.
 >
->Auf den folgenden Seiten finden Sie Details zu AEM und WCAG 2.1:
+>Auf den folgenden Seiten finden Sie Details zu AEM und WCAG 2.1:
 >
->* [AEM und Richtlinien für barrierefreien Webzugang](/help/managing/web-accessibility.md)
+>* [AEM und die Richtlinien für barrierefreies Webdesign](/help/managing/web-accessibility.md)
 >* [Kurzanleitung zu WCAG 2.1](/help/managing/qg-wcag.md)
->* [Erstellung barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien)](/help/sites-authoring/creating-accessible-content.md)
+>* [Erstellen barrierefrei zugänglicher Inhalte (in Übereinstimmung mit den WCAG 2.1-Richtlinien)](/help/sites-authoring/creating-accessible-content.md)
 
 
-WCAG 2.0 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind.
+WCAG 2.0 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind.
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Diese sind in drei Konformitätslevel abgestuft: Level A (niedrigstes), Level AA
 
 Bei der Erstellung der Site sollten Sie festlegen, welchen Level Ihre Site insgesamt erfüllen soll.
 
-Im folgenden Abschnitt finden Sie die [WCAG 2.0-Richtlinien](https://www.w3.org/TR/WCAG20/#guidelines) mit den entsprechenden Erfolgskriterien für die [Konformitäts-Level](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html) Level A und Level AA.
+Im folgenden Abschnitt finden Sie die [WCAG 2.0-Richtlinien](https://www.w3.org/TR/WCAG20/#guidelines) mit den entsprechenden Erfolgskriterien für die [Konformitäts-Level](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html) Level A und Level AA.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ Bei statischen Grafiken besteht die Grundanforderung darin, eine gleichwertige T
 
 >[!NOTE]
 >
->Einige integrierte Komponenten wie **Karussell** und **Dia-Show** bieten keine Möglichkeit zum Hinzufügen von alternativen Textbeschreibungen zu Bildern. Wenn Sie Versionen davon für Ihre AEM-Instanz implementieren, muss Ihr Entwickler-Team diese Komponenten so konfigurieren, dass das `alt`-Attribut unterstützt wird, damit Autoren es dem Inhalt hinzufügen können (siehe [Hinzufügen von Support für weitere HTML-Elemente und -Attribute](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+>Einige integrierte Komponenten wie **Karussell** und **Dia-Show** bieten keine Möglichkeit zum Hinzufügen von alternativen Textbeschreibungen zu Bildern. Wenn Sie Versionen davon für Ihre AEM-Instanz implementieren, muss Ihr Entwicklungs-Team diese Komponenten so konfigurieren, dass das `alt`-Attribut unterstützt wird, damit Autoren es dem Inhalt hinzufügen können (siehe [Hinzufügen von Support für weitere HTML-Elemente und -Attribute](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 Das Feld **ALT-Text** ist im Komponentendialogfeld **Bild** auf der Registerkarte **Erweitert** verfügbar:
 
@@ -99,21 +99,21 @@ Das Feld **ALT-Text** ist im Komponentendialogfeld **Bild** auf der Registerkart
 
 AEM fügt Ihren Bildern standardmäßig einen **ALT-Text** hinzu. Bei der klassischen Benutzeroberfläche gibt es zwei verschiedene Szenarien zur Methode der Erstellung des Standardattributs (obwohl der Standardwert als Alternative möglicherweise nicht ausreicht und höchstwahrscheinlich auf der Registerkarte **Erweitert** für die Bildeigenschaften bearbeitet werden muss):
 
-* File:
+* Datei:
 
-   Ein Bild wird von der Festplatte des Benutzers hochgeladen. Wenn Sie eine Bildkomponente zu einer Seite hinzufügen und dann ein Bild von Ihrer Festplatte oder aus einer anderen Quelle auswählen, ist der Standardwert für **Alternativtext** is `file`. Dies muss auf der Registerkarte **Erweitert** für die Bildeigenschaften geändert werden. Dieser Wert wird wiederum nicht im Feld **ALT-Text** angezeigt, doch wenn der Wert geändert wird, ist der neue Wert im Feld zu sehen.
+   Ein Bild wird von der Festplatte des Benutzers hochgeladen. Wenn Sie einer Seite eine Bildkomponente hinzufügen und dann ein Bild von Ihrer Festplatte oder einer anderen Quelle auswählen, lautet der Standardwert für **ALT-Text** `file`. Dies muss auf der Registerkarte **Erweitert** für die Bildeigenschaften geändert werden. Dieser Wert wird wiederum nicht im Feld **ALT-Text** angezeigt, doch wenn der Wert geändert wird, ist der neue Wert im Feld zu sehen.
 
 * Asset:
 
-   Ein Bild wird vom digitalen Asset-Repository hinzugefügt. Wenn Sie ein Bild vom digitalen Asset-Repository zu einer Webseite ziehen, dann werden die Werte **Titel** und **ALT-Text** für dieses Bild den Metadaten für dieses Bild entnommen.
+   Ein Bild wird aus dem digitalen Asset-Repository hinzugefügt. Wenn Sie ein Bild vom digitalen Asset-Repository zu einer Webseite ziehen, dann werden die Werte **Titel** und **ALT-Text** für dieses Bild den Metadaten für dieses Bild entnommen.
 
 >[!NOTE]
 >
->In beiden oben genannten Szenarien wird die Standardeinstellung **Alternativtext** -Wert nicht im **Erweiterte Bildeigenschaften** Registerkarte. Um den Standardwert zu ändern, geben Sie einfach einen neuen Wert in die **Alternativtext** -Feld.
+>In beiden oben genannten Szenarien ist der Wert **ALT-Text** nicht auf der Registerkarte **Erweiterte Bildeigenschaften** sichtbar. Geben Sie zur Änderung des Standardwerts im Feld **ALT-Text** einfach einen neuen Wert ein.
 
 >[!NOTE]
 >
->Wenn Ihr Bild nur Dekorationszwecken dient (siehe [Erstellen guter Textalternativen](#creating-good-text-alternatives)), dann können Sie im Feld **ALT-Text** durch Drücken der Leertaste ein Leerzeichen einfügen. Dadurch wird ein leeres `alt` -Attribut erstellt, wodurch ein Bildschirmleser das Bild ignoriert.
+>Wenn Ihr Bild nur Dekorationszwecken dient (siehe [Erstellen guter Textalternativen](#creating-good-text-alternatives)), dann können Sie im Feld **ALT-Text** durch Drücken der Leertaste ein Leerzeichen einfügen. Dadurch wird ein leeres `alt`-Attribut erstellt, wodurch ein Bildschirmleser das Bild ignoriert.
 
 #### Erstellen guter Textalternativen {#creating-good-text-alternatives}
 
@@ -136,19 +136,19 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 
 * Veranschaulichende Fotos:
 
-   Das sind Bilder von Menschen, Objekten oder Orten. Denken Sie an die Rolle des Fotos auf der Seite. ein angemessenes Textäquivalent wahrscheinlich *Foto von [Objekt]*, kann jedoch vom umliegenden Text abhängen.
+   Hierbei handelt es sich um Bilder von Menschen, Objekten oder Orten. Denken Sie an die Rolle des Fotos auf der Seite. Eine angemessene Textentsprechung lautet dann wahrscheinlich *Foto von [Objekt]*, kann jedoch vom Text neben dem Bild abhängen.
 
 * Symbole:
 
-   Dies sind kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative haben, es sei denn, dass dadurch eine unnötige Verdoppelung von bereits vorhandenem Text erzeugt würde.
+   Hierbei handelt es sich um kleine Piktogramme (Grafiken), die bestimmte Informationen vermitteln. Sie müssen durchgängig auf einer Seite und Site verwendet werden. Alle Instanzen des Symbols auf einer Seite oder Site sollten dieselbe kurze und knappe Textalternative haben, es sei denn, dass dadurch eine unnötige Verdoppelung von bereits vorhandenem Text erzeugt würde.
 
 * Diagramme:
 
-   Diese stellen normalerweise numerische Daten dar. So könnte als eine Möglichkeit zur Bereitstellung von Alternativtext eine kurze Zusammenfassung der im Diagramm gezeigten Haupttrends eingefügt werden. Geben Sie bei Bedarf auch mithilfe der **Beschreibung** im Feld **Erweitert** Registerkarte &quot;Bildeigenschaften&quot;. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
+   Diese stellen normalerweise numerische Daten dar. So könnte als eine Möglichkeit zur Bereitstellung von Alternativtext eine kurze Zusammenfassung der im Diagramm gezeigten Haupttrends eingefügt werden. Fall nötig, können Sie eine detailliertere Beschreibung im Text im Feld **Beschreibung** auf der Registerkarte **Erweiterte Bildeigenschaften** einfügen. Außerdem könnten Sie die Quelldaten an anderer Stelle auf der Seite oder Site als Tabelle zur Verfügung stellen.
 
-   ![Beispiel eines Diagramms: Nachfolgend sehen Sie einen bewährten Ansatz zur Bereitstellung einer Alternative.](assets/chlimage_1-2a.jpeg)
+   ![Beispiel eines Diagramms. Nachfolgend sehen Sie einen bewährten Ansatz zur Bereitstellung einer Alternative.](assets/chlimage_1-2a.jpeg)
 
-   Zur Bereitstellung einer Alternative für dieses Beispieldiagramm können Sie dem Bild selbst einen knappen `alt` -Text hinzufügen und dann dem Bild eine vollständige Textalternative folgen lassen.
+   Zur Bereitstellung einer Alternative für dieses Beispieldiagramm können Sie dem Bild selbst einen knappen `alt`-Text hinzufügen und dann dem Bild eine vollständige Textalternative folgen lassen.
 
    ```xml
    <p><img src="figure1.gif" alt="Figure 1" ></p>
@@ -158,19 +158,19 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 
    >[!NOTE]
    >
-   >Der obige Ausschnitt dient nur zur Veranschaulichung der Reihenfolge. Es wird empfohlen, die Komponente **Bild** (statt des oben verwendeten `img src` -Verweises) zu verwenden.
+   >Der obige Ausschnitt dient nur zur Veranschaulichung der Reihenfolge. Es wird empfohlen, die Komponente **Bild** (statt des oben verwendeten `img src`-Verweises) zu verwenden.
 
    In AEM können Sie dies anhand einer Kombination der Felder **ALT-Text** und **Beschreibung** im Konfigurationsdialogfeld des Bildes erreichen, wie in [Erfüllen: Nichttextlicher Inhalt (1.1.1)](#how-to-meet-non-text-content).
 
 * Karten, Diagramme, Flussdiagramme:
 
-   Für Grafiken mit räumlichen Daten (z. B. um Beziehungen zwischen Objekten oder einem Prozess zu beschreiben), stellen Sie sicher, dass die Schlüsselmeldung im Textformat bereitgestellt wird. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht praktikabel, aber wenn die Karte bereitgestellt wird, um den Weg zu einer bestimmten Position zu erleichtern, kann der Alternativtext des Kartenbildes kurz *Karte von X* angeben und dann Anweisungen für diese Position im Text an einer anderen Stelle auf der Seite oder über das Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** geben.
+   Für Grafiken mit räumlichen Daten (z. B. um Beziehungen zwischen Objekten oder einem Prozess zu beschreiben), stellen Sie sicher, dass die Schlüsselmeldung im Textformat bereitgestellt wird. Bei Karten ist die Bereitstellung eines Volltextäquivalents wahrscheinlich nicht praktikabel, aber wenn die Karte bereitgestellt wird, um den Weg zu einer bestimmten Position zu erleichtern, kann der Alternativtext des Kartenbildes kurz *Karte von X* angeben und dann eine Wegbeschreibung zu dieser Position im Text an einer anderen Stelle auf der Seite oder über das Feld **Beschreibung** auf der Registerkarte **Erweitert** der Komponente **Bild** angeben.
 
 * CAPTCHAs:
 
    Ein CAPTCHA ist ein *vollautomatischer öffentlicher Turing-Test zur Unterscheidung von Computern und Menschen*. Es handelt sich um eine Sicherheitsprüfung auf Webseiten, um Menschen von schädlicher Software zu unterscheiden, die allerdings die Barrierefreiheit einschränken kann. Sie bestehen aus Bildern, bei denen Benutzer beschreiben sollen, was sie sehen, um einen Sicherheitstest zu bestehen. Die Bereitstellung einer Textalternative für das Bild ist offensichtlich nicht möglich, daher müssen Sie stattdessen alternative nichtgrafische Lösungen in Betracht ziehen.
 
-   Das W3C bietet eine Reihe von Vorschlägen wie: Diese Ansätze haben jedoch sowohl Vor- als auch Nachteile.
+   Das W3C bietet eine Reihe von Vorschlägen. Diese Ansätze haben jedoch sowohl Vor- als auch Nachteile.
 
    * Logik-Puzzles
    * Audio statt Bilder
@@ -178,7 +178,7 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 
 * Hintergrundbilder:
 
-   Diese werden mithilfe von Cascading Style Sheets (CSS) anstelle von HTML erreicht. Dies bedeutet, dass es nicht möglich ist, einen Wert für Alternativtext anzugeben. Daher sollten Hintergrundbilder keine wichtigen textlichen Informationen enthalten. Wenn sie dies tun, müssen diese Informationen auch im Text der Seite angegeben werden.
+   Diese werden anhand von Cascading Style Sheets (CSS) statt HTML erstellt. Dies bedeutet, dass es nicht möglich ist, einen Wert für Alternativtext anzugeben. Daher sollten Hintergrundbilder keine wichtigen textlichen Informationen angeben. Falls sie es doch tun, müssen diese Informationen auch im Text der Seite vorhanden sein.
 
    Es ist jedoch wichtig, dass ein alternativer Hintergrund angezeigt wird, wenn das Bild nicht angezeigt werden kann.
 
@@ -197,9 +197,9 @@ Bestimmte Arten von nichttextlichem Inhalt, für den Textalternativen erforderli
 
 [Richtlinie 1.2 Zeitbasierte Medien: Bereitstellung von Alternativen für zeitbasierte Medien.](https://www.w3.org/TR/WCAG20/#text-equiv)
 
-Diese Richtlinie behandelt Webinhalte, die *zeitbasiert* sind. Es handelt sich um Inhalte, die der Benutzer abspielen kann (wie Video, Audio und animierte Inhalte) und die entweder vorher aufgezeichnet wurden oder als Live-Stream verfügbar sind.
+Diese Richtlinie behandelt Web-Inhalte, die *zeitbasiert* sind. Es handelt sich um Inhalte, die der Benutzer abspielen kann (wie Video, Audio und animierte Inhalte) und die entweder vorher aufgezeichnet wurden oder als Live-Stream verfügbar sind.
 
-### Nur-Audio und Nur-Video (aufgezeichnet) (1.2.1)     {#audio-only-and-video-only-pre-recorded}
+### Nur-Audio und Nur-Video (aufgezeichnet) (1.2.1) {#audio-only-and-video-only-pre-recorded}
 
 * Erfolgskriterium 1.2.1
 * Stufe A
@@ -224,9 +224,9 @@ Wenn diese Informationen in einem anderen Format bereitgestellt werden, wie zum 
 
 * Wenn es sich bei dem Inhalt um aufgezeichnetes Audio ohne Video (wie zum Beispiel einen Podcast) handelt:
 
-   * Stellen Sie direkt vor oder nach dem Inhalt einen Link zu einem Text-Transkript des Audioinhalts bereit.
+   * Stellen Sie direkt vor oder nach dem Inhalt einen Link zu einem Texttranskript des Audioinhalts bereit.
 
-      Das Transkript sollte eine HTML-Seite mit einer Textentsprechung aller gesprochenen und wichtigen nicht gesprochenen Inhalte sein und den Sprecher, eine Beschreibung der Szenerie, Gesänge und eine Beschreibung anderer wichtiger Audioinhalte angeben.
+      Das Transkript sollte eine HTML-Seite mit einer Textentsprechung aller gesprochenen und wichtigen nicht gesprochenen Inhalte sein und den Sprecher, eine Beschreibung der Szenerie, sprachliche Ausdrücke und eine Beschreibung anderer wichtiger Audioinhalte angeben.
 
 * Wenn es sich bei dem Inhalt um eine Animation oder ein aufgezeichnetes Video ohne Audio handelt:
 
@@ -256,7 +256,7 @@ Das Einfügen von Multimedia wie Flash-Inhalten auf Ihren AEM-Webseiten entspric
 
 #### Zweck: Untertitel (aufgezeichnet) (1.2.2)     {#purpose-captions-pre-recorded}
 
-Gehörlose oder schwerhörige Menschen können Audioinhalte gar nicht oder nur schwer verstehen. Untertitel sind Textentsprechungen für gesprochene und nicht gesprochene Audioinhalte; sie werden im Video zum richtigen Zeitpunkt auf dem Bildschirm angezeigt. Sie ermöglichen es Menschen, die das Audio nicht hören können, zu verstehen, was vor sich geht.
+Gehörlose oder schwerhörige Menschen können Audioinhalte gar nicht oder nur schwer verstehen. Untertitel sind Textentsprechungen für gesprochene und nicht gesprochene Audioinhalte; sie werden im Video zum richtigen Zeitpunkt auf dem Bildschirm angezeigt und ermöglichen es Menschen, die das Audio nicht hören können, zu verstehen, was vor sich geht.
 
 >[!NOTE]
 >
@@ -308,13 +308,13 @@ Es gibt zwei Ansätze zur Erfüllung dieses Erfolgskriteriums. Beide sind akzept
 
 1. Stellen Sie ein Text-Transkript bereit, das eine angemessene Textentsprechung der Audio- und Bildelemente des Videos oder der Animation ist. Es sollte möglichst den Sprecher, eine Beschreibung der Szenerie und den sprachlichen Ausdruck angeben. Abhängig von der Länge können Sie das Transkript auf derselben Seite wie das Video oder die Animation einfügen, oder auch auf einer separaten Seite. In diesem Fall müssen Sie einen Link zu dem Transkript neben dem Video oder der Animation bereitstellen.
 
-Genaue Details zur Erstellung von Audiobeschreibungen für Video würden den Rahmen dieses Leitfadens sprengen. Die Erstellung von Audiobeschreibungen können zeitaufwendig sein, doch andere Adobe-Produkte helfen Ihnen bei diesen Aufgaben. Wenn Sie Inhalte in Adobe Flash Professional erstellen, sollten Sie auch ein Skript erstellen, um den Benutzer aufzufordern, das entsprechende Plug-in herunterzuladen. Zudem sollten Sie eine Textalternative anhand des Elements `<noscript>` bereitstellen.
+Genaue Details zur Erstellung von Audiobeschreibungen für Video würden den Rahmen dieses Leitfadens sprengen. Die Erstellung von Audiobeschreibungen kann zeitaufwendig sein, doch andere Adobe-Produkte helfen Ihnen bei diesen Aufgaben. Wenn Sie Inhalte in Adobe Flash Professional erstellen, sollten Sie auch ein Skript erstellen, um den Benutzer aufzufordern, das entsprechende Plug-in herunterzuladen. Zudem sollten Sie eine Textalternative anhand des Elements `<noscript>` bereitstellen.
 
 #### Weitere Informationen: Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
 * [Erfolgskriterien 1.2.3 verstehen](https://www.w3.org/TR/UNDERSTANDING-WCAG20/media-equiv-audio-desc.html):
 * [Erfolgskriterien 1.2.3 erfüllen](https://www.w3.org/WAI/WCAG20/quickref/#qr-media-equiv-audio-desc)
-* [Adobe Encore CS5](https://www.adobe.com/products/premiere/encore/)
+* [Adobe Encore CS5](https://www.adobe.com/de/products/premiere/encore/)
 
 ### Untertitel (live) (1.2.4)          {#captions-live}
 
@@ -387,13 +387,13 @@ AEM erleichtert den Aufbau von Web-Seiten mit den entsprechenden HTML-Elementen.
 
 Das folgende Bild zeigt einen Text, der als Absatztext gestylt wurde. Der verwendete Quellcode zeigt die korrekten Anfangs- und End-Tags &lt;p> und &lt;/p>.
 
-![Ein Beispiel des Absatz-Elements im Modus zur Bearbeitung des Quellcodes (klassische Benutzeroberfläche).](assets/chlimage_1-18a.png)
+![Ein Beispiel des Absatz-Elements im Modus zur Bearbeitung des Quell-Codes (klassische Benutzeroberfläche).](assets/chlimage_1-18a.png)
 
 Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechende Struktur erhalten:
 
-* **Verwendung von Überschriften:**
+* **Verwendung von Überschriften:**  
 
-   Solange die Barrierefreiheitsfunktionen des RTE aktiviert sind (siehe [AEM und Zugänglichkeit](/help/sites-administering/rte-accessible-content.md)), bietet AEM drei Ebenen für Seitenüberschriften. Sie können diese verwenden, um Abschnitte und Unterabschnitte des Inhalts zu identifizieren. Überschrift 1 ist die höchste Überschriftenebene, Überschrift 3 die niedrigste. Der Systemadministrator kann das System so konfigurieren, dass mehr Überschriftenebenen verwendet werden können.
+   Sofern Sie die Funktionen für Barrierefreiheit des RTE aktiviert haben (siehe [AEM und Barrierefreiheit](/help/sites-administering/rte-accessible-content.md)), bietet AEM drei Ebenen für Seitenüberschriften. Sie können diese verwenden, um Abschnitte und Unterabschnitte im Inhalt zu kennzeichnen. Überschrift 1 ist die oberste Ebene der Überschrift und Überschrift 3 die unterste. Die bzw. der Systemadmin kann das System so konfigurieren, dass die Verwendung von weiteren Überschriftenebenen zulässig ist.
 
    Im folgenden Bild ist ein Beispiel der verschiedenen Überschriftentypen zu sehen.
 
@@ -404,11 +404,11 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
    Verwenden Sie das Element &lt;strong> oder &lt;em>, um eine Hervorhebung anzugeben. Verwenden Sie keine Überschriften zum Hervorheben von Text in Absätzen.
 
    * Markieren Sie den Text, den Sie hervorheben möchten.
-   * Klicken Sie auf **B** Symbol (für &lt;strong>) oder der **I** Symbol (für &lt;em>) innerhalb der **Eigenschaften** -Bedienfeld (stellen Sie sicher, dass HTML ausgewählt ist).
+   * Klicken Sie auf das Symbol **B** (für &lt;strong>) oder das Symbol **I** (für &lt;em>), die im Bedienfeld **Eigenschaften** angezeigt werden (vergewissern Sie sich, dass HTML ausgewählt ist).
 
    >[!NOTE]
    >
-   >RTE ist in einer Standardinstallation von AEM mit den folgenden Symbolen eingerichtet:
+   >RTE ist in einer Standardinstallation von AEM wie folgt eingerichtet:
    >
    >* &lt;b> für &lt;strong>
    * &lt;i> für &lt;em>
@@ -417,9 +417,9 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
 * **Listen verwenden**: Mit HTML können Sie drei verschiedene Arten von Listen angeben:
 
-   * Die `<ul>` -Element wird verwendet für *unordered* Listen (mit Aufzählungszeichen). Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
+   * Das Element `<ul>` wird für *nicht geordnete* Listen (Aufzählungslisten) verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
 
-      Verwenden Sie im RTE die **Aufzählungsliste** Symbol.
+      Verwenden Sie in RTE das Symbol **Aufzählung**.
 
    * Das Element `<ol>` wird für *nummerierte* Listen verwendet. Einzelne Listenelemente werden mit dem Element `<li>` gekennzeichnet.
 
@@ -457,13 +457,13 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 
    ![Dialogfeld „Tabelleneigenschaften“](assets/chlimage_1-20a.png)
 
-   Anschließend können Sie die **Zellen-Eigenschaften** , um festzulegen, ob es sich bei der Zelle um eine Daten- oder Kopfzeilenzelle handelt, und, falls es sich um eine Kopfzeilenzelle handelt, ob sie sich auf eine Zeile, Spalte oder beides bezieht:
+   Anschließend können Sie im Dialogfeld **Zelleneigenschaften** auswählen, ob die Zelle eine Daten- oder Überschriftzelle ist und ob im Fall einer Überschriftzelle sich diese auf eine Zeile oder Spalte oder beides bezieht:
 
    ![Dialogfeld „Zelleneigenschaften“; Festlegen einer Zeile (normalerweise die erste Zeile) als Überschriftzeile.](assets/chlimage_1-21a.png)
 
 * **Komplexe Datentabellen:**
 
-   In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Überschriftebenen vorhanden sind, reicht das normale Dialogfeld „Tabelleneigenschaften“ nicht aus, um alle benötigten Strukturinformationen anzugeben. Für diese Arten von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und deren dazugehörigen Zellen erstellt werden. Zu diesem Zweck werden die Attribute **Überschrift** und **ID** verwendet. Beispielsweise werden in der Tabelle unten Überschriften und IDs zugeordnet, um eine programmatische Verbindung für Benutzer von Hilfstechnologien herzustellen.
+   In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Überschriftenebenen vorhanden sind, reicht das normale Dialogfeld „Tabelleneigenschaften“ nicht aus, um alle benötigten Strukturinformationen anzugeben. Für diese Arten von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und deren dazugehörigen Zellen erstellt werden. Zu diesem Zweck werden die Attribute **Überschrift** und **ID** verwendet. Beispielsweise werden in der Tabelle unten Überschriften und IDs zugeordnet, um eine programmgesteuerte Verbindung für Benutzer von Hilfstechnologien herzustellen.
 
    >[!NOTE]
    Das ID-Attribut ist in Standardinstallationen nicht verfügbar. Es kann durch Konfigurieren von HTML-Regeln und des Serialisierungsprogramms im RTE aktiviert werden.
@@ -563,7 +563,7 @@ Außerdem können Menschen, die einen reinen Textbrowser, monochrome Anzeigen od
 
 Immer wenn Farbe verwendet wird, um Informationen zu vermitteln, müssen Sie sicherstellen, dass die verfügbaren Informationen auch verfügbar sind, wenn die Farbe nicht sichtbar ist.
 
-Stellen Sie z. B. sicher, dass die durch die Farbe vermittelte Information auch explizit im Text enthalten ist. Die folgende Abbildung zeigt, wie sowohl die Farbe als auch der Text die Verfügbarkeit von Sitzplätzen für eine Vorstellung anzeigen:
+Stellen Sie z. B. sicher, dass die durch die Farbe vermittelte Information auch explizit im Text enthalten ist. Die folgende Abbildung zeigt, wie sowohl die Farbe als auch der Text die Verfügbarkeit von Sitzplätzen für eine Vorstellung anzeigen:
 
 <table>
  <tbody>
@@ -586,7 +586,7 @@ Stellen Sie z. B. sicher, dass die durch die Farbe vermittelte Information auch 
  </tbody>
 </table>
 
-Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen zusätzlichen visuellen Hinweis sorgen, z. B. durch Ändern des Stils (z. B. fett, kursiv) oder der Schriftart. So können auch Personen mit Seh- oder Farbschwäche die Informationen erkennen. Man darf sich jedoch nicht vollständig auf diese Maßnahmen verlassen, da sie für Menschen, die die Seite überhaupt nicht sehen können, keine Hilfe bieten.
+Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen zusätzlichen visuellen Hinweis sorgen, z. B. durch Ändern des Stils (z. B. fett, kursiv) oder der Schriftart. So können auch Personen mit Seh- oder Farbschwäche die Informationen erkennen. Sie dürfen sich jedoch nicht vollständig auf diese Maßnahmen verlassen, da sie für Menschen, die die Seite überhaupt nicht sehen können, keine Hilfe bieten.
 
 #### Weitere Informationen – Verwendung von Farbe (1.4.1) {#more-information-use-of-color}
 
@@ -738,9 +738,9 @@ Dieses Erfolgskriterium ist für alle Benutzer hilfreich - unabhängig von etwai
 
 #### Erfüllen - Seite mit Titel versehen (2.4.2) {#how-to-meet-page-titled}
 
-Wenn Sie im AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt der Seite so beschreibt, dass Besucher schnell feststellen können, ob der Inhalt für ihre Anforderungen relevant ist oder nicht.
+Wenn Sie in AEM eine neue HTML-Seite erstellen, können Sie den Seitentitel angeben. Stellen Sie sicher, dass der Titel den Inhalt der Seite so beschreibt, dass Besucher schnell feststellen können, ob der Inhalt für ihre Anforderungen relevant ist oder nicht.
 
-Sie können den Seitentitel auch beim Bearbeiten einer Seite bearbeiten, auf die Sie zugreifen können: **Sidekick** - **Seite** tab - **Seiteneigenschaften...**
+Sie können den Seitentitel auch gemeinsam mit der Seite bearbeiten, indem Sie **Sidekick** > Registerkarte **Seite** > **Seiteneigenschaften...** auswählen.
 
 #### Weitere Informationen – Seite mit Titel versehen (2.4.2) {#more-information-page-titled}
 
@@ -922,11 +922,11 @@ Für einige Komponenten können Beschriftungen auch über das Kontrollkästchen 
 
 Wenn Bild-Schaltflächen verwendet werden (z. B. die Komponente **Bild-Schaltfläche**) liefert das Feld **Titel** auf der Registerkarte **Titel und Text** des Bearbeitungsdialogfelds den Alt-Text für das Bild und nicht die Beschriftung. Im folgenden Beispiel wurde daher für das Bild mit dem Text `Submit` im Bearbeitungsdialogfeld der Alt-Text `Submit` über das Feld **Titel** hinzugefügt.
 
-![Bild-Schaltfläche mit im Titel-Feld festgelegtem Alt-Text (Dialogfeld „Bearbeiten“).](assets/chlimage_1-23a.png)
+![Schaltfläche „Bild“ mit im Feld „Titel“ festgelegtem Alt-Text (Dialogfeld „Bearbeiten“).](assets/chlimage_1-23a.png)
 
 #### Gruppen von Formularfeldern {#groups-of-form-fields}
 
-Bei einer Gruppe miteinander verbundener Steuerelemente, z. B. **Optionsfeldgruppe**, kann ein Titel für die Gruppe sowie einzelne Steuerelemente erforderlich sein. Wenn Sie im AEM ein Set Optionsschaltflächen hinzufügen, enthält das Feld **Titel** diesen Gruppentitel, während die Titel der einzelnen Schaltflächen beim Erstellen der Optionsschaltflächen (**Elemente**) angegeben werden.
+Bei einer Gruppe miteinander verbundener Steuerelemente, z. B. **Optionsfeldgruppe**, kann ein Titel für die Gruppe sowie einzelne Steuerelemente erforderlich sein. Wenn Sie einen Satz Optionsfelder in AEM hinzufügen, wird dieser Gruppentitel im Feld **Titel** bereitgestellt, während einzelne Titel als Optionsschaltflächen (**Elemente**) angegeben werden.
 
 ![Hinzufügen von Elementen zur Optionsfeldgruppe. Der Gruppentitel lautet „Contact me by“ - im Titel-Feld definiert.](assets/chlimage_1-24a.png)
 
@@ -946,9 +946,9 @@ Auch die Positionierung von Beschriftungen ist wichtig, da sie das Auffinden der
 
    Beschriftungen werden direkt rechts neben dem Feld positioniert.
 
-* Alle anderen Formularkomponenten (z. B. Textfelder, Kombinationsfelder):
+* Alle anderen Formularkomponenten (z. B. Textfelder, Kombinationsfelder):
 
-   Beschriftungen werden entweder direkt über dem Feld oder direkt links vom Feld positioniert.
+   Beschriftungen werden entweder direkt über dem Feld oder direkt links vom Feld platziert.
 
 In einfachen Formularen mit wenigen Funktionen kann die Beschriftung einer Schaltfläche mit `Submit` als Beschriftung für das angrenzende Feld dienen (z. B. `Search`). Dies ist in Situationen nützlich, in denen wenig Platz für die Beschriftung vorhanden ist.
 

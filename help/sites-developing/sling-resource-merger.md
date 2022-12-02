@@ -1,5 +1,5 @@
 ---
-title: 'Verwenden des Sling Resource Merger in AEM  '
+title: Verwenden des Sling Resource Merger in AEM
 seo-title: Using the Sling Resource Merger in AEM
 description: Der Sling Resource Merger bietet Dienste für den Zugriff auf Ressourcen und für das Zusammenführen von Ressourcen.
 seo-description: The Sling Resource Merger provides services to access and merge resources
@@ -13,11 +13,11 @@ exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
 source-git-commit: c07fa148054b69b0da7bb402ef96a50d0895abfa
 workflow-type: tm+mt
 source-wordcount: '1254'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Verwenden des Sling Resource Merger in AEM  {#using-the-sling-resource-merger-in-aem}
+# Verwenden des Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Zweck {#purpose}
 
@@ -35,7 +35,7 @@ Mit dem Sling Resource Merger werden die Überlagerungs-/Überschreibungsressour
 
 >[!CAUTION]
 >
->Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Dies bedeutet auch, dass sie nur für die standardmäßige Touch-optimierte Benutzeroberfläche geeignet ist. Insbesondere auf diese Weise definierte Überschreibungen gelten nur für das Touch-optimierte Dialogfeld einer Komponente.
+>Der Sling Resource Merger und zugehörige Methoden können nur mit [Granite](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) verwendet werden. Das bedeutet auch, dass er nur für die standardmäßige Touch-optimierte Benutzeroberfläche geeignet ist: Insbesondere auf diese Art und Weise definierte Überschreibungen sind nur für das Touch-fähige Dialogfeld einer Komponente geeignet.
 >
 >Überlagerungen/Überschreibungen für andere Bereiche (einschließlich anderer Aspekte einer Touch-fähigen Komponente oder der klassischen Benutzeroberfläche) umfassen das Kopieren des entsprechenden Knotens und der entsprechenden Struktur aus dem Original dahin, wo die Anpassung definiert wird.
 
@@ -60,9 +60,9 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >
 >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
 >
->Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
+>Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
 >
->1. Erstellen Sie das erforderliche Element (d. h. wie es in vorhanden ist) neu. `/libs`) unter `/apps`
+>1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
 >
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 

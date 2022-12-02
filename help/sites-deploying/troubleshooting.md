@@ -13,7 +13,7 @@ exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1167'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ AEM speichert detaillierte Protokolle, die Sie konfigurieren können, um Install
 
 ## Verwenden der Option „verbose“ (ausführlich) {#using-the-verbose-option}
 
-Wenn Sie AEM WCM starten, können Sie die Option -v (verbose) wie folgt zur Befehlszeile hinzufügen: java -jar cq-wcm-quickstart-&lt;version>.jar -v.
+Wenn Sie AEM WCM starten, können Sie die Option „-v“ für „verbose“ zur Befehlszeile hinzufügen. Beispiel: java -jar cq-wcm-quickstart-&lt;Version>.jar -v.
 
 Die Option „verbose“ zeigt einen Teil der Ausgabe des Schnellstartprotokolls in der Konsole an und kann somit für die Fehlerbehebung verwendet werden.
 
@@ -49,7 +49,7 @@ Im folgenden Abschnitt werden einige Installationsprobleme und zugehörige Lösu
 
 ### Beim Doppelklicken auf die JAR-Datei für den Schnellstart passiert entweder gar nichts oder die Datei wird mit einem anderen Programm (z. B. der Archivverwaltung) geöffnet {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
-Dies weist normalerweise auf ein Problem mit der Konfiguration der Desktop-Umgebung Ihres Betriebssystems zum Öffnen von Dateien mit der Erweiterung .jar hin. Abgesehen davon kann es ein Hinweis darauf sein, dass Java nicht installiert ist oder dass Sie eine nicht unterstützte Version von Java verwenden.
+Dieses Verhalten weist in der Regel darauf hin, dass ein Problem mit der Konfiguration der Desktop-Umgebung Ihres Betriebssystems im Hinblick auf das Öffnen von Dateien mit der Erweiterung JAR vorliegt. Abgesehen davon kann es ein Hinweis darauf sein, dass Java nicht installiert ist oder dass Sie eine nicht unterstützte Version von Java verwenden.
 
 Da JAR-Dateien das weit verbreitete ZIP-Format nutzen, wird der Desktop von manchen Archivierungsprogrammen automatisch so konfiguriert, dass JAR-Dateien als Archive geöffnet werden.
 
@@ -68,18 +68,18 @@ Beheben Sie dieses Problem wie folgt:
 
 >[!NOTE]
 >
->Siehe [Analysieren von Arbeitsspeicherproblemen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html).
+>Siehe [Analysieren von Arbeitsspeicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
 
 
 CRX selbst benötigt sehr wenig Arbeitsspeicher. Wenn die Anwendung, die in CRX ausgeführt wird, größere Mengen Arbeitsspeicher benötigt oder Vorgänge anfordert, die viel Arbeitsspeicher belegen, etwa große Transaktionen, muss die JVM-Instanz, in der CRX ausgeführt wird, mit entsprechenden Speichereinstellungen gestartet werden.
 
-Verwenden Sie Java-Befehlsoptionen, um die Speichereinstellungen der JVM zu definieren (z. B. java -Xmx512m -jar crx&amp;ast;.jar , um heapsize auf 512 MB festzulegen).
+Verwenden Sie Java-Befehlsoptionen, um die Speichereinstellungen der JVM zu definieren, etwa „java -Xmx512m -jar crx&amp;ast;.jar“, um die Heap-Größe auf 512 MB festzulegen.
 
 Legen Sie die Option für die Speichereinstellung fest, wenn AEM WCM über die Befehlszeile gestartet wird. Die Start-/Stoppskripts für AEM WCM oder benutzerdefinierte Skripts zur Verwaltung des Starts von AEM WCM können ebenfalls geändert werden, um die erforderlichen Speichereinstellungen zu definieren.
 
-Wenn Sie die Heapgröße bereits auf 512 MB festgelegt haben, können Sie das Speicherproblem näher untersuchen, indem Sie ein Heapabbild erstellen:
+Wenn Sie die Heap-Größe bereits auf 512 MB festgelegt haben, können Sie das Speicherproblem näher untersuchen, indem Sie ein Heap-Abbild erstellen:
 
-Verwenden Sie den folgenden Befehl, um automatisch ein Heapabbild zu erstellen, wenn nicht genügend Arbeitsspeicher verfügbar ist:
+Verwenden Sie den folgenden Befehl, um automatisch ein Heap-Abbild zu erstellen, wenn nicht genügend Arbeitsspeicher verfügbar ist:
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
@@ -99,16 +99,16 @@ Sollte das Problem durch keinen der Vorschläge gelöst werden können, überpr�
 
 ### Die Website wird nicht geladen oder schlägt mit Java 11 gelegentlich fehl {#the-website-does-not-load-or-fails-intermittently-with-java11}
 
-Es gibt ein bekanntes Problem, bei dem AEM 6.5 auf Java 11 ausgeführt wird, bei dem die Website möglicherweise nicht zeitweise geladen wird oder fehlschlägt.
+Es gibt ein bekanntes Problem bei der Ausführung von AEM 6.5 auf Java 11, bei dem die Website möglicherweise nicht geladen wird oder zeitweise fehlschlägt.
 
 In diesem Fall folgen Sie der folgenden Problemumgehung:
 
-1. Öffnen Sie die `sling.properties` Datei unter `crx-quickstart/conf/` Ordner
+1. Öffnen Sie die `sling.properties`-Datei unter dem Ordner `crx-quickstart/conf/`.
 1. Suchen Sie die folgende Zeile:
 
    `org.osgi.framework.bootdelegation=sun.,com.sun.`
 
-1. Ersetzen Sie sie durch Folgendes:
+1. Ersetzen Sie sie durch die Folgende:
 
    `org.osgi.framework.bootdelegation=sun.,com.sun.,jdk.internal.reflect,jdk.internal.reflect.*`
 
@@ -122,7 +122,7 @@ In diesem Fall folgen Sie der folgenden Problemumgehung:
 
 Wenn eine englische Geometrixx Outdoors-Seite einen 404-Fehler (Seite nicht gefunden) zurückgibt, sollten Sie sich noch einmal vergewissern, dass Sie die zusätzliche „sling“-Eigenschaft in der Datei „sling.properties“ festgelegt haben, die für diese speziellen Applikationsserver erforderlich ist.
 
-Weitere Informationen finden Sie in *AEM-Webapplikation bereitstellen*.
+Weitere Informationen finden Sie unter *Bereitstellen der AEM-Web-Anwendung*.
 
 ### Antwortkopfzeile kann größer als 4 KB sein {#response-header-size-can-be-greater-than-kb}
 
@@ -138,11 +138,10 @@ Falls beständiger Speicher in das Installationsverzeichnis integriert ist, beis
 
 >[!NOTE]
 >
->Adobe empfiehlt dringend, Ihr Repository zu sichern, bevor Sie AEM löschen. Wenn Sie das gesamte CQ-Installationsverzeichnis löschen, wird dabei auch das Repository gelöscht. Sichern Sie die Repository-Daten vor dem Löschen, indem Sie den Ordner „&lt;CQ-Installationsverzeichnis>/crx-quickstart/repository“ an einen anderen Speicherort verschieben oder kopieren, bevor Sie die anderen Ordner löschen.
+>Adobe empfiehlt dringend, Ihr Repository zu sichern, bevor Sie AEM löschen. Wenn Sie das gesamte &lt;CQ-Installationsverzeichnis> löschen, wird dabei auch das Repository gelöscht. Sichern Sie die Repository-Daten vor dem Löschen, indem Sie den Ordner „&lt;cq-installation-directory>/crx-quickstart/repository“ an einen anderen Speicherort verschieben oder kopieren, bevor Sie die anderen Ordner löschen.
 
 Falls Ihre AEM-Installation externen Speicher nutzt, etwa einen Datenbankserver, werden beim Entfernen der Ordner nicht automatisch auch die Daten entfernt. Allerdings wird dabei die Speicherkonfiguration entfernt, wodurch die Wiederherstellung der JCR-Inhalte schwierig wird.
 
 ### JSP-Dateien werden von JBoss nicht kompiliert {#jsp-files-are-not-compiled-on-jboss}
 
-Wenn Sie JSP-Dateien über JBoss im Experience Manager installieren oder aktualisieren und die entsprechenden Servlets nicht kompiliert werden, überprüfen Sie, ob der JBoss-JSP-Compiler richtig konfiguriert ist. Weitere Informationen finden Sie unter
-[JSP-Kompilierungsprobleme in JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) Artikel.
+Wenn Sie JSP-Dateien über JBoss im Experience Manager installieren oder aktualisieren und die entsprechenden Servlets nicht kompiliert werden, überprüfen Sie, ob der JBoss-JSP-Compiler richtig konfiguriert ist. Weitere Informationen finden Sie im Artikel [JSP-Kompilierungsprobleme in JBoss](https://helpx.adobe.com/de/experience-manager/kb/jsps-dont-compile-jboss.html).

@@ -1,7 +1,7 @@
 ---
 title: Welche Testumgebungen sind erforderlich?
 seo-title: Which Test Environments are needed?
-description: Mehrere Umgebungen sollten als Teil von Tests betrachtet werden
+description: Bei Tests sollten mehrere Umgebungen berücksichtigt werden.
 seo-description: Several environments should be considered as part of testing
 uuid: bb725e50-edae-4c20-8107-d1c8df2e60e2
 contentOwner: Guillaume Carlino
@@ -13,30 +13,30 @@ exl-id: 05f7a513-5ee7-4870-a691-4a0602e0cbb2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '180'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 # Welche Testumgebungen sind erforderlich?{#which-test-environments-will-be-needed}
 
-Um zu bestimmen, welche Konfigurationen getestet werden sollen, sollten Sie Folgendes beachten:
+Beim Definieren der Konfigurationen für Tests sollten Sie Folgendes beachten:
 
-**Entwicklung** - für Einheiten und bestimmte Integrationstests.
+**Entwicklung**: Für Komponententests und bestimmte Integrationstests.
 
-**Test** - Für die Mehrzahl der Tests.
+**Test**: Für die Mehrzahl der Tests.
 
-**Live** - für Leistungs- und Belastungstests. Auch für Akzeptanztests mit dem Kunden.
+**Live**: Für abschließende Leistungs- und Belastungstests. Auch für Akzeptanztests mit dem Kunden.
 
 Sie müssen auch entscheiden, welche Instanzen wo erforderlich sind (in der Regel mindestens eine für jede Teststufe):
 
-**Autor** - Diese Instanz ermöglicht es Autoren, Inhalte einzugeben und zu veröffentlichen.
+**Author**: In dieser Instanz können Autoren Inhalte eingeben und veröffentlichen.
 
-**Veröffentlichen** - Diese Instanz präsentiert die Website in ihrer veröffentlichten Form für den Zugriff durch Besucher.
+**Publish**: Diese Instanz stellt die Website in veröffentlichter Form dar, auf die Besucher zugreifen können.
 
 Sollte in Verbindung mit dem Dispatcher getestet werden.
 
 Als Letztes müssen Sie die verwendete Hardware berücksichtigen. Leistungstests sollten auf einem System ausgeführt werden, das möglichst ähnlich wie die endgültige Live-Umgebung konfiguriert ist. Daher wird empfohlen, den Projektstart wie folgt zu unterteilen:
 
-**Soft Launch** - reduzierte Verfügbarkeit; die Zeit für Leistungstests, Optimierung und Optimierung unter realistischen Bedingungen in der Produktionsumgebung lässt.
+**Soft Launch**: Reduzierte Verfügbarkeit, sodass Zeit für Leistungstests, Anpassungen und Optimierungen unter realistischen Bedingungen in der Produktionsumgebung bleibt.
 
-**Hard Launch** - Vollständige Verfügbarkeit.
+**Hard Launch**: Vollständige Verfügbarkeit.

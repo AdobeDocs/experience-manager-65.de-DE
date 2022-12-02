@@ -13,7 +13,7 @@ exl-id: 170474c1-c7f4-446c-bda4-84768d44a078
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '295'
-ht-degree: 87%
+ht-degree: 92%
 
 ---
 
@@ -29,8 +29,8 @@ Es ist immer schneller, das Repository zu durchsuchen, um Daten abzurufen, als e
 
 ## Schränken Sie die JCR-Überwachung ein {#restrict-the-scope-of-jcr-observation}
 
-Beim Lauschen auf Ereignisse im Repository ist es wichtig, den Umfang so weit wie möglich einzuschränken. Es ist beispielsweise viel besser, auf ein Ereignis zu warten unter `/etc/mycompany` als `/etc`. Lauschen Sie niemals auf Ereignisse am Repository-Stamm. Stellen Sie außerdem sicher, dass die Callback-Methoden so schnell wie möglich ausgeführt werden, wenn für sie nichts zu tun ist.
+Beim Lauschen auf Ereignisse im Repository ist es wichtig, den Umfang so weit wie möglich einzuschränken. Zum Beispiel ist es viel besser, `/etc/mycompany` auf ein Ereignis zu überwachen als `/etc`. Lauschen Sie niemals auf Ereignisse am Repository-Stamm. Stellen Sie außerdem sicher, dass die Callback-Methoden so schnell wie möglich ausgeführt werden, wenn für sie nichts zu tun ist.
 
 ## Beseitigen Sie den JCR-Administratorzugriff {#eliminate-use-of-jcr-admin-access}
 
-Ab AEM 6 ist die Anmeldung als Administrator veraltet, da eine Verwaltungssitzung von ResourceResolverFactory abgerufen wird. Stattdessen sollten Dienstkonten für die Back-Office-Vorgänge erstellt werden, die diese Art des Zugriffs erfordern, und mit der ResourceResolverFactory kann ein ResourceResolver für dieses Konto abgerufen werden.
+Ab AEM 6 ist die Anmeldung als Admin veraltet, da eine Verwaltungssitzung von ResourceResolverFactory abgerufen wird. Stattdessen sollten Dienstkonten für die Back-Office-Vorgänge erstellt werden, die diese Art des Zugriffs erfordern, und mit der ResourceResolverFactory kann ein ResourceResolver für dieses Konto abgerufen werden.

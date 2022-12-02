@@ -14,7 +14,7 @@ exl-id: 8540e1f0-22d7-4f48-85d9-7c44eb7185df
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '100'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Gehen Sie wie folgt vor, um im Menü **Seiteninformationen** die Option **In kla
 
    ` [https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](https://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui)`
 
-1. Erstellen Sie eine Überlagerung mit der **Überlagerungsknoten** Option; Beispiel:
+1. Erstellen Sie eine Überlagerung mit der Option **Überlagerungsknoten**. Beispiel:
 
    * **Pfad**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Pfad für Überlagerung**: `/apps/`

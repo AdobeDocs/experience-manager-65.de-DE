@@ -26,7 +26,7 @@ Die grundlegende Struktur eines Formulars sieht wie folgt aus:
 * Formularelemente
 * Ende des Formulars
 
-All diese Teile werden mit einer Reihe standardmäßiger [Formularkomponenten ](/help/sites-authoring/default-components.md#form) realisiert, die in einer Standard-AEM-Installation verfügbar sind.
+All diese Teile werden mit einer Reihe standardmäßiger [Formularkomponenten](/help/sites-authoring/default-components.md#form) realisiert, die in einer Standard-AEM-Installation verfügbar sind.
 
 Neben der [Entwicklung neuer Komponenten](/help/sites-developing/developing-components-samples.md) für Ihre Formulare ist auch Folgendes möglich:
 
@@ -320,7 +320,7 @@ Wenn die Einblenden/Ausblenden-Konfiguration ungültig ist, wird die Konfigurati
 
 ### Entwicklung von Skripten zur Verwendung mit Formularen {#developing-scripts-for-use-with-forms}
 
-Weitere Informationen über die API-Elemente, die Sie zur Erstellung von Skripten verwenden können, finden Sie in den [javadocs zu Formularen](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
+Weitere Informationen über die API-Elemente, die Sie zur Erstellung von Skripten verwenden können, finden Sie in den [javadocs zu Formularen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/forms/package-summary.html).
 
 Sie können dies z. B. verwenden, um einen Dienst aufzurufen, bevor das Formular übermittelt wird, und den Dienst abbrechen, wenn es fehlschlägt:
 

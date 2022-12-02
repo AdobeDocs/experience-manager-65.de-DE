@@ -1,5 +1,5 @@
 ---
-title: Zusammengesetzte Komponenten in SPA
+title: Zusammengesetzte Komponenten in SPAs
 description: Erfahren Sie, wie Sie eigene zusammengesetzte Komponenten erstellen. Das sind Komponenten aus anderen Komponenten, die mit dem AEM-SPA-Editor funktionieren.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
@@ -9,7 +9,7 @@ ht-degree: 100%
 
 ---
 
-# Zusammengesetzte Komponenten in SPA {#composite-components-in-spas}
+# Zusammengesetzte Komponenten in SPAs {#composite-components-in-spas}
 
 Zusammengesetzte Komponenten nutzen den modularen Charakter von AEM-Komponenten, indem sie mehrere Basiskomponenten zu einer einzelnen Komponente kombinieren. Ein gängiges Anwendungsbeispiel für zusammengesetzte Komponenten ist die Kartenkomponente, die aus einer Kombination aus Bild- und Textkomponenten besteht.
 
@@ -19,7 +19,7 @@ In diesem Artikel wird gezeigt, wie Sie Ihrer Single Page Application eine zusam
 
 ## Nutzungsszenario {#use-case}
 
-In diesem Artikel wird die typische Kartenkomponente als Anwendungsbeispiel verwendet. Karten sind ein gängiges Element in Benutzerobeflächen für viele digitale Erlebnisse und bestehen in der Regel aus einem Bild und einem zugehörigen Text oder einer Beschriftung. Ein Autor möchte die gesamte Karte per Drag-and-Drop verschieben, aber in der Lage sein, sowohl das Kartenbild individuell zu bearbeiten als auch den zugehörigen Text anzupassen.
+In diesem Artikel wird die typische Kartenkomponente als Anwendungsbeispiel verwendet. Karten sind ein gängiges Element in Benutzeroberflächen für viele digitale Erlebnisse und bestehen in der Regel aus einem Bild und einem zugehörigen Text oder einer Beschriftung. Ein Autor möchte die gesamte Karte per Drag-and-Drop verschieben, aber in der Lage sein, sowohl das Kartenbild individuell zu bearbeiten als auch den zugehörigen Text anzupassen.
 
 ## Voraussetzungen {#prerequisites}
 

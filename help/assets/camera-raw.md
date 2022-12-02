@@ -1,6 +1,6 @@
 ---
-title: '"[!DNL Adobe Camera Raw] Unterstützung für die Verarbeitung digitaler Assets"'
-description: Erfahren Sie, wie Sie [!DNL Adobe Camera Raw] Unterstützung in [!DNL Adobe Experience Manager Assets]
+title: „[!DNL Adobe Camera Raw]-Unterstützung für die Verarbeitung digitaler Assets“
+description: Erfahren Sie, wie Sie die  [!DNL Adobe Camera Raw] -Unterstützung in [!DNL Adobe Experience Manager Assets] aktivieren
 contentOwner: AG
 role: Admin
 feature: Developer Tools
@@ -8,36 +8,36 @@ exl-id: 7159a908-4c36-42b4-bbb4-d7fb1be4ee1b
 source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
-# Bilder verarbeiten mit [!DNL Adobe Camera Raw] {#camera-raw-support}
+# Bildverarbeitung mit [!DNL Adobe Camera Raw] {#camera-raw-support}
 
-Sie können die [!DNL Adobe Camera Raw] Unterstützung für die Verarbeitung von Rohdateiformaten wie CR2, NEF und RAF sowie das Rendern der Bilder im JPEG-Format. Die Funktion wird in [!DNL Adobe Experience Manager Assets] mithilfe der [Camera Raw Package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) über Softwareverteilung verfügbar.
+Sie können die [!DNL Adobe Camera Raw]-Unterstützung für die Verarbeitung von Rohdatenformaten wie CR2, NEF und RAF sowie das Rendern der Bilder im JPEG-Format aktivieren. Die Funktion wird in [!DNL Adobe Experience Manager Assets] mithilfe des [Camera RAW-Pakets](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) unterstützt, das über Software Distribution verfügbar ist.
 
 >[!NOTE]
 >
->Die Funktion unterstützt nur JPEG-Darstellungen. Es wird unter Windows 64 Bit, Mac OS und RHEL 7.x unterstützt.
+>Die Funktion unterstützt nur JPEG-Darstellungen. Sie wird unter Windows 64-Bit, macOS und RHEL 7.x unterstützt.
 
-Aktivieren [!DNL Camera Raw] Unterstützung in [!DNL Experience Manager Assets]führen Sie die folgenden Schritte aus:
+Gehen Sie zum Aktivieren der [!DNL Camera Raw]-Unterstützung in [!DNL Experience Manager Assets] folgendermaßen vor:
 
-1. Laden Sie die [[!DNL Camera Raw] package](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) von [!DNL Software Distribution].
-1. Greife Sie auf `https://[aem_server]:[port]/workflow` zu. Öffnen Sie die **[!UICONTROL DAM-Update-Asset]** Arbeitsablauf.
-1. Bearbeiten Sie die **[!UICONTROL Prozessminiaturansichten]** Schritt.
-1. Stellen Sie die folgende Konfiguration in der **[!UICONTROL Miniaturen]** tab:
+1. Laden Sie das [[!DNL Camera Raw] Paket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-cameraraw-pkg-1.4.8.zip) von [!DNL Software Distribution] herunter.
+1. Greife Sie auf `https://[aem_server]:[port]/workflow` zu. Öffnen Sie den Workflow **[!UICONTROL DAM-Update-Asset]**.
+1. Bearbeiten Sie den Schritt **[!UICONTROL Miniaturen verarbeiten]**.
+1. Legen Sie auf der Registerkarte **[!UICONTROL Miniaturansichten]** folgende Konfiguration fest:
 
-   * **[!UICONTROL Miniaturen]**: `140:100:false, 48:48:false, 319:319:false`
+   * **[!UICONTROL Miniaturansichten]**: `140:100:false, 48:48:false, 319:319:false`
    * **[!UICONTROL MIME-Typen überspringen]**: `skip:image/dng, skip:image/x-raw-(.*)`
 
    ![chlimage_1-128](assets/chlimage_1-334.png)
 
-1. Im **[!UICONTROL Webfähiges Bild]** im **[!UICONTROL Liste überspringen]** Feld, geben Sie `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Webfähiges Bild]** im Feld **[!UICONTROL Liste überspringen]** `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)` an.
 
    ![chlimage_1-129](assets/chlimage_1-335.png)
 
-1. Fügen Sie im seitlichen Bedienfeld die **[!UICONTROL Camera Raw/DNG Handler]** Schritt unter dem **[!UICONTROL Prozessminiaturansichten]** Schritt.
-1. Im **[!UICONTROL Camera Raw/DNG Handler]** Fügen Sie im Schritt die folgende Konfiguration hinzu. **[!UICONTROL Argumente]** tab:
+1. Fügen Sie im seitlichen Bedienfeld den Schritt **[!UICONTROL Camera Raw/DNG Handler]** unter dem Schritt **[!UICONTROL Miniaturen verarbeiten]** hinzu.
+1. Fügen Sie im Schritt **[!UICONTROL Camera Raw/DNG Handler]** auf der Registerkarte **[!UICONTROL Argumente]** die folgende Konfiguration hinzu:
 
    * **[!UICONTROL MIME-Typen]**: `image/dng` und `image/x-raw-(.*)`
    * **[!UICONTROL Befehl]**:
@@ -53,19 +53,19 @@ Aktivieren [!DNL Camera Raw] Unterstützung in [!DNL Experience Manager Assets]f
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass die oben aufgeführte Konfiguration mit der Konfiguration **** Beispiel-DAM-Update-Asset mit Schritt für Camera RAW- und DNG-Handling übereinstimmt.
+>Stellen Sie sicher, dass die oben aufgeführte Konfiguration mit der Konfiguration **[!UICONTROL Beispiel-DAM-Update-Asset mit Schritt für Camera RAW- und DNG-Handling]** übereinstimmt.
 
-Nun können Sie Camera Raw-Dateien in  Assets importieren. Nachdem Sie das Camera Raw Paket installiert und den erforderlichen Workflow konfiguriert haben, **[!UICONTROL Bildanpassung]** in der Liste der Seitenfenster angezeigt.
+Nun können Sie Camera Raw-Dateien in Assets importieren. Nach der Installation des Camera RAW-Pakets und der Konfiguration des erforderlichen Workflows wird die Option **[!UICONTROL Bildanpassung]** in der Liste der seitlichen Bedienfelder angezeigt.
 
 ![chlimage_1-131](assets/chlimage_1-337.png)
 
-*Abbildung: Optionen im Seitenbereich.*
+*Abbildung: Optionen im seitlichen Bedienfeld.*
 
 ![chlimage_1-132](assets/chlimage_1-338.png)
 
-*Abbildung: Verwenden Sie die Option , um Ihre Bilder geringfügig zu bearbeiten.*
+*Abbildung: Verwenden Sie die Option, um Ihre Bilder geringfügig zu bearbeiten.*
 
-Nach dem Speichern der Änderungen in einer [!DNL Camera Raw] Bild, eine neue Ausgabedarstellung `AdjustedPreview.jpg` wird für das Bild generiert. Für andere Bildtypen außer [!DNL Camera Raw], werden die Änderungen in allen Ausgabedarstellungen übernommen.
+Nach Speichern der Änderungen in einem [!DNL Camera Raw]-Bild wird die neue Ausgabedarstellung `AdjustedPreview.jpg` für das Bild erstellt. Für andere Bildtypen als [!DNL Camera Raw] werden die Änderungen in allen Ausgabedarstellungen übernommen.
 
 ## Best Practices, bekannte Probleme und Einschränkungen {#best-practices}
 
@@ -73,4 +73,4 @@ Für die Funktionalität gelten folgende Einschränkungen:
 
 * Die Funktion unterstützt nur JPEG-Darstellungen. Sie wird unter 64-Bit Windows, macOS und RHEL 7.x unterstützt.
 * Metadaten-Writeback wird für RAW- und DNG-Formate nicht unterstützt.
-* Die [!DNL Camera Raw] -Bibliothek hat Einschränkungen hinsichtlich der Gesamtanzahl der Pixel, die gleichzeitig verarbeitet werden können. Derzeit kann es eine maximale Größe von 65000 Pixel auf der langen Seite einer Datei oder 512 MP verarbeiten, je nachdem, welches Kriterium zuerst erfüllt wird.
+* Für die [!DNL Camera Raw]-Bibliothek gelten Beschränkungen bei der gleichzeitig verarbeiteten Gesamtanzahl von Pixeln. Derzeit kann sie eine maximale Größe von 65.000 Pixel auf der langen Seite einer Datei oder 512 MP verarbeiten, je nachdem, welches Kriterium zuerst erfüllt wird.

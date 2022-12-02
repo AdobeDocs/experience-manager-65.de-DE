@@ -13,7 +13,7 @@ exl-id: 20a19ee5-7113-4aca-934a-a42c415a8d93
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '564'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -31,8 +31,8 @@ Die Prinzipien, die bei der Entwicklung von Konfigurationen zum Einsatz kommen, 
 * Konfigurationen (z. B. Eigenschaften/Absätze) werden von den übergeordneten Elementen geerbt.
 * Die Verweise erfolgen von Analyseknoten nach Pfad.
 * Sie sind einfach erweiterbar.
-* verfügt über die Flexibilität, komplexere Konfigurationen zu berücksichtigen, z. B. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Unterstützung für Abhängigkeiten (z. B. [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) -Plug-ins benötigen [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) Konfiguration).
+* Sie können auch komplexere Konfigurationen unterstützen, z. B. [Adobe Analytics ](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
+* Unterstützung für Abhängigkeiten (z. B. benötigen [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-Plug-ins eine [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)-Konfiguration).
 
 ## Struktur {#structure}
 
@@ -42,9 +42,9 @@ Der Basispfad von Konfigurationen ist:
 
 Für jeden Konfigurationstyp werden eine Vorlage und eine Komponente bereitgestellt. Auf diese Weise können Konfigurationsvorlagen nach der Anpassung die meisten Anforderungen erfüllen.
 
-Um eine Konfiguration für neue Dienste bereitzustellen, müssen Sie Folgendes tun:
+Um eine Konfiguration für einen neuen Dienste bereitzustellen, müssen Sie:
 
-* Erstellen Sie eine Service-Seite in
+* eine Dienstseite erstellen, und zwar unter
 
    `/etc/cloudservices`
 
@@ -108,9 +108,9 @@ Nach dem Einrichten der Vorlage und der Komponente können Sie Ihre Konfiguratio
 
 `/etc/cloudservices/<service-name>`
 
-### Inhaltsmodelle {#content-model}
+### Inhaltsmodell {#content-model}
 
-Das Inhaltsmodell wird gespeichert als `cq:Page` unter:
+Das Inhaltsmodell wird als `cq:Page` in folgendem Verzeichnis gespeichert:
 
 `/etc/cloudservices/<service-name>(/*)`
 
@@ -121,7 +121,7 @@ Das Inhaltsmodell wird gespeichert als `cq:Page` unter:
 /etc/cloudservices/service-name/config/inherited-config
 ```
 
-Die Konfigurationen werden unter dem Unterknoten gespeichert. `jcr:content`.
+Die Konfigurationen werden unter dem untergeordneten Knoten `jcr:content` gespeichert.
 
 * Feste Eigenschaften, die in einem Dialogfeld definiert wurden, sollten direkt auf dem Knoten `jcr:node` gespeichert werden.
 * Dynamische Elemente (die `parsys` oder `iparsys` nutzen) speichern die Komponentendaten auf einem untergeordneten Knoten.
@@ -141,7 +141,7 @@ Die Referenzdokumentation zur API finden Sie unter [com.day.cq.wcm.webservicesup
 
 ### AEM-Integration {#aem-integration}
 
-Die verfügbaren Dienste sind im Abschnitt **Cloud Services** des **Seiteneigenschaften** Dialogfeld (von jeder Seite, die von `foundation/components/page` oder `wcm/mobile/components/page`).
+Verfügbare Dienste sind auf der Registerkarte **Cloud-Services** des Dialogfelds **Seiteneigenschaften** aufgeführt (bei jeder Seite, die von `foundation/components/page` oder `wcm/mobile/components/page` erbt).
 
 Die Registerkarte bietet zusätzlich:
 
@@ -152,7 +152,7 @@ Die Registerkarte bietet zusätzlich:
 
 Beim Speichern der Anmeldedaten der Benutzer für den Dienst sollten alle Kennwörter verschlüsselt werden.
 
-Zu diesem Zweck können Sie ein ausgeblendetes Formularfeld hinzufügen. Dieses Feld sollte eine Anmerkung enthalten. `@Encrypted` im Eigenschaftsnamen; d. h. für die `password` -Feld würde der Name wie folgt geschrieben:
+Zu diesem Zweck können Sie ein ausgeblendetes Formularfeld hinzufügen. Dieses Feld sollte im Eigenschaftsnamen die Anmerkung `@Encrypted` enthalten; d. h. im Feld `password` würde der Name wie folgt geschrieben:
 
 `password@Encrypted`
 
@@ -164,7 +164,7 @@ Diese Eigenschaft wird dann automatisch (mit dem `CryptoSupport`-Dienst) durch d
 
 >[!NOTE]
 >
->Standardmäßig wird die `EcryptionPostProcessor` nur verschlüsselt `POST` Anfragen an `/etc/cloudservices`.
+>Standardmäßig verschlüsselt der `EcryptionPostProcessor` nur `POST`-Anfragen an `/etc/cloudservices`.
 
 #### Zusätzliche Eigenschaften für die jcr:content-Knoten der Dienstseite {#additional-properties-for-service-page-jcr-content-nodes}
 
@@ -176,7 +176,7 @@ Diese Eigenschaft wird dann automatisch (mit dem `CryptoSupport`-Dienst) durch d
   </tr>
   <tr>
    <td>componentReference</td>
-   <td>Referenzpfad zu einer Komponente, die automatisch in die Seite aufgenommen werden soll.<br /> Dies wird für zusätzliche Funktionen und JS-Einschlüsse genutzt.<br /> Dazu gehört die Komponente auf der Seite, auf der<br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> enthalten ist (normalerweise vor dem <code>body</code> -Tag).<br /> Bei Analytics und Target schließen wir damit zusätzliche Funktionen ein, z. B. JavaScript-Aufrufe, um das Verhalten der Besucher nachzuverfolgen.</td>
+   <td>Referenzpfad zu einer Komponente, die automatisch in die Seite aufgenommen werden soll.<br /> Dies wird für zusätzliche Funktionen und JS-Einschlüsse genutzt.<br /> Dazu gehört die Komponente auf der Seite, auf der <br /> <code> cq/cloudserviceconfigs/components/servicecomponents</code><br /> enthalten ist (normalerweise vor dem <code>body</code>-Tag).<br /> Bei Analytics und Target schließen wir damit zusätzliche Funktionen ein, z. B. JavaScript-Aufrufe, um das Verhalten der Besucher nachzuverfolgen.</td>
   </tr>
   <tr>
    <td>description</td>
@@ -187,16 +187,16 @@ Diese Eigenschaft wird dann automatisch (mit dem `CryptoSupport`-Dienst) durch d
    <td>Erweiterte Beschreibung des Dienstes.</td>
   </tr>
   <tr>
-   <td>Ranking</td>
-   <td>Dienstrang zur Verwendung in Listen.</td>
+   <td>ranking</td>
+   <td>Position des Dienstes in der Rangfolge zur Verwendung in Listen.</td>
   </tr>
   <tr>
-   <td>selzableChildren</td>
-   <td>Filter für die Anzeige von Konfigurationen im Dialogfeld "Seiteneigenschaften".</td>
+   <td>selectableChildren</td>
+   <td>Filter zum Anzeigen von Konfigurationen im Dialogfeld „Seiteneigenschaften“</td>
   </tr>
   <tr>
    <td>serviceUrl</td>
-   <td>URL zur Service-Website.</td>
+   <td>URL zur Website des Dienstes.</td>
   </tr>
   <tr>
    <td>serviceUrlLabel</td>
@@ -208,7 +208,7 @@ Diese Eigenschaft wird dann automatisch (mit dem `CryptoSupport`-Dienst) durch d
   </tr>
   <tr>
    <td>visible</td>
-   <td>Sichtbarkeit im Dialogfeld "Seiteneigenschaften"; standardmäßig sichtbar (optional)</td>
+   <td>Sichtbarkeit im Dialogfeld „Seiteneigenschaften“, standardmäßig sichtbar (optional)</td>
   </tr>
  </tbody>
 </table>

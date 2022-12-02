@@ -1,7 +1,7 @@
 ---
 title: E-Commerce
 seo-title: eCommerce
-description: Das Integrations-Framework enthält eine Integrationsebene mit einer API.
+description: Das Integrations-Framework enthält eine Integrationsebene mit einer API
 seo-description: The integration framework includes an integration layer with an API
 uuid: 48e01bbb-8f9e-489c-bbe4-24563e84ff35
 contentOwner: Guillaume Carlino
@@ -13,7 +13,7 @@ exl-id: da63c576-34cd-40ce-81de-d7391a331364
 source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
 workflow-type: tm+mt
 source-wordcount: '140'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -31,11 +31,11 @@ Weitere Informationen finden Sie unter:
 
 >[!NOTE]
 >
->Da das eCommerce-Framework mit jeder eCommerce-Lösung verwendet werden kann, lesen Sie [Entwicklung (generisch)](/help/commerce/cif-classic/developing/generic.md) für weitere Informationen zur Entwicklung von Möglichkeiten.
+>Das E-Commerce-Framework kann mit jeder E-Commerce-Lösung verwendet werden. Weitere Informationen zur Entwicklung finden Sie unter [Entwicklung (generisch)](/help/commerce/cif-classic/developing/generic.md).
 
 >[!NOTE]
 >
->Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. Weitere Informationen finden Sie unter [Bereitstellen von eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
+>Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. Weitere Informationen finden Sie unter [Bereitstellen von E-Commerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
 >Weitere Informationen zu den Konzepten und zur Verwaltung von eCommerce-Implementierungen finden Sie unter [Verwaltung von eCommerce](/help/commerce/cif-classic/administering/ecommerce.md).
 

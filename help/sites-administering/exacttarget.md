@@ -14,13 +14,13 @@ exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '455'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
 # Integration mit ExactTarget{#integrating-with-exacttarget}
 
-Durch die Integration von AEM in Exact Target können Sie in AEM erstellten E-Mails verwalten und senden. Außerdem können Sie die Lead-Management-Funktionen von ExactTarget über AEM Formulare auf AEM Seiten verwenden.
+Durch die Integration mit ExactTarget können Sie in AEM erstellte E-Mails über ExactTarget verwalten und versenden. Außerdem können Sie die Lead-Management-Funktionen von ExactTarget über AEM-Formulare auf AEM-Seiten verwenden.
 
 Mit der Integration verfügen Sie über die folgenden Funktionen:
 
@@ -37,8 +37,8 @@ Sie können ExactTarget-Konfigurationen über Cloud-Services oder über die Tool
 
 So erstellen Sie eine ExactTarget-Konfiguration über Cloud-Services:
 
-1. Klicken Sie auf der Willkommensseite auf **Cloud-Services**. (Oder direkt auf unter `https://<hostname>:<port>/etc/cloudservices.html`.
-1. Klicken **ExactTarget** und dann **Konfigurieren**. Das ExactTarget-Konfigurationsfenster wird geöffnet.
+1. Klicken Sie auf der Willkommensseite auf **Cloud-Services**. (Oder gehen Sie direkt zu `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. Klicken Sie auf **ExactTarget** und dann auf **Konfigurieren**. Das ExactTarget-Konfigurationsfenster wird geöffnet.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -53,7 +53,7 @@ So erstellen Sie eine ExactTarget-Konfiguration über Cloud-Services:
 
 1. Wählen Sie ein Konto aus, falls verfügbar. Das Konto ist für Enterprise 2.0-Kunden. Klicken Sie auf **OK**.
 
-   ExactTarget wurde konfiguriert. Sie können die Konfiguration bearbeiten, indem Sie auf **Bearbeiten** klicken. Sie können ExactTarget aufrufen, indem Sie auf **Zu ExactTarget wechseln**.
+   ExactTarget wurde konfiguriert. Sie können die Konfiguration bearbeiten, indem Sie auf **Bearbeiten** klicken. Sie können auf ExactTarget zugreifen, indem Sie auf **Wechseln zu ExactTarget** klicken.
 
 1. AEM bietet jetzt eine Datenerweiterungsfunktion. Sie können ExactTarget-Datenerweiterungsspalten importieren. Klicken Sie zur Konfiguration auf das Pluszeichen (+), das neben der erfolgreich erstellten ExactTarget-Konfiguration angezeigt wird. Aus der Dropdown-Liste können Sie jede vorhandene Datenerweiterung auswählen. Weitere Informationen zur Konfiguration von Datenerweiterungen finden Sie in der [ExactTarget-Dokumentation](https://help.exacttarget.com/en/documentation/exacttarget/subscribers/data_extensions_and_data_relationships).
 
@@ -65,9 +65,9 @@ So erstellen Sie eine ExactTarget-Konfiguration über Cloud-Services:
 
 So erstellen Sie eine ExactTarget-Konfiguration über die Tools:
 
-1. Klicken Sie auf der Willkommensseite auf **Tools**. Oder navigieren Sie direkt dorthin, indem Sie `https://<hostname>:<port>/misadmin#/etc`.
+1. Klicken Sie auf der Willkommensseite auf **Tools**. Oder navigieren Sie über `https://<hostname>:<port>/misadmin#/etc` direkt dorthin.
 1. Wählen Sie **Tools** > **Cloud Service-Konfigurationen** > **ExactTarget** aus.
-1. Klicken **Neu** , um das Fenster &quot;Seite erstellen&quot;zu öffnen.
+1. Klicken Sie auf **Neu**, um das Fenster **Seite erstellen** zu öffnen.
 
    ![chlimage_1-34](assets/chlimage_1-3.jpeg)
 
@@ -78,5 +78,5 @@ So erstellen Sie eine ExactTarget-Konfiguration über die Tools:
 
 So fügen Sie mehrere Konfigurationen hinzu:
 
-1. Klicken Sie auf der Willkommensseite auf **Cloud-Services** und dann auf **ExactTarget**. Klicken Sie auf **Konfigurationen anzeigen** -Schaltfläche, die angezeigt wird, wenn eine oder mehrere ExactTarget-Konfigurationen verfügbar sind. Alle verfügbaren Konfigurationen werden aufgeführt.
+1. Klicken Sie auf der Willkommensseite auf **Cloud-Services** und dann auf **ExactTarget**. Klicken Sie auf die Schaltfläche **Konfigurationen anzeigen**, die angezeigt wird, wenn mindestens eine ExactTarget-Konfiguration verfügbar ist. Alle verfügbaren Konfigurationen werden aufgeführt.
 1. Klicken Sie auf das Pluszeichen (**+**) neben „Verfügbare Konfigurationen“. Das Fenster **Konfiguration erstellen** wird geöffnet. Führen Sie die Schritte des vorherigen Konfigurationsverfahrens aus, um eine neue Konfiguration zu erstellen.

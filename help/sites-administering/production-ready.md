@@ -13,13 +13,13 @@ exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '383'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
 # Ausführung von AEM im produktionsbereiten Modus{#running-aem-in-production-ready-mode}
 
-Mit AEM 6.1 führt Adobe die neue `"nosamplecontent"` Ausführungsmodus, der darauf abzielt, die Schritte zu automatisieren, die zur Vorbereitung einer AEM Instanz für die Bereitstellung in einer Produktionsumgebung erforderlich sind.
+Mit AEM 6.1 hat Adobe den neuen `"nosamplecontent"`-Ausführungsmodus eingeführt, der der Automatisierung der für die Vorbereitung einer AEM-Instanz zur Bereitstellung einer Produktionsumgebung erforderlichen Schritte dient.
 
 Der neue Ausführungsmodus konfiguriert nicht nur automatisch die Instanz, um die in der Sicherheitsprüfliste beschriebenen Best Practices für die Sicherheit einzuhalten, sondern entfernt darüber hinaus alle Geometrixx-Beispielsanwendungen und -konfigurationen innerhalb des Prozesses.
 
@@ -31,7 +31,7 @@ Der neue Ausführungsmodus konfiguriert nicht nur automatisch die Instanz, um di
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-Um AEM im produktionsbereiten Modus auszuführen, müssen Sie lediglich die `nosamplecontent` über die `-r` runmode wechseln zu Ihren vorhandenen Startargumenten:
+Für die Ausführung von AEM im produktionsbereiten Modus müssen Sie nur `nosamplecontent` über den Ausführungsmodus-Schalter `-r` zu Ihren vorhandenen Startargumenten hinzufügen:
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -52,26 +52,26 @@ Genauer gesagt werden die folgenden Konfigurationsveränderungen durchgeführt, 
 1. Das Bundle **Apache Sling Simple WebDAV Access to repositories** (`org.apache.sling.jcr.webdav`) ist nur für **Autoreninstanzen** verfügbar.
 
 1. Neu erstellte Benutzer müssen das Passwort bei der ersten Anmeldung ändern. Dies gilt nicht für den Admin-Benutzer.
-1. **Debug-Informationen generieren** ist für die **Apache Sling Java Script Handler**.
+1. Die Funktion zum **** Erzeugen von Debug-Informationen ist für den **Apache Sling Java Script Handler** deaktiviert.
 
 1. **Die Funktionen zum zugeordneten Inhalt** und **zum Erzeugen von Debug-Informationen** sind für den **Apache Sling Jsp Script Handler** deaktiviert.
 
 1. Der **Day CQ WCM-Filter** ist auf `edit` bei der **Autoreninstanz** und auf `disabled` bei der **Veröffentlichungsinstanz** eingestellt.
 
-1. Die **Adobe Granite HTML Library Manager** wird mit den folgenden Einstellungen konfiguriert:
+1. Der **Adobe Granite HTML Library Manager** wird mit den folgenden Einstellungen konfiguriert:
 
    1. **Minify:** `enabled`
    1. **Debug:** `disabled`
    1. **Gzip:** `enabled`
-   1. **Zeit:** `disabled`
+   1. **Timing:** `disabled`
 
 1. Das **Apache Sling Get Servlet** ist so eingestellt, dass es sichere Konfigurationen standardmäßig unterstützt, so zum Beispiel wie folgt:
 
 | **Konfiguration** | **Autor** | **Veröffentlichen** |
 |---|---|---|
-| TXT-Ausgabe | disabled | disabled |
+| TXT-Ausgabedarstellung | disabled | disabled |
 | HTML-Ausgabedarstellung | disabled | disabled |
-| JSON-Ausgabe | enabled | enabled |
-| XML-Ausgabe | disabled | disabled |
+| JSON-Ausgabedarstellung | enabled | enabled |
+| XML-Ausgabedarstellung | disabled | disabled |
 | json.maximumresults | 1000 | 100 |
-| Auto-Index | disabled | disabled |
+| Auto Index | disabled | disabled |

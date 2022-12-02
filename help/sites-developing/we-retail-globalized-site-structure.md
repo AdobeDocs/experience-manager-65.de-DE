@@ -13,7 +13,7 @@ exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '421'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -24,7 +24,7 @@ We.Retail verfügt über eine globalisierte Site-Struktur, die Sprach-Master auf
 ## Testen {#trying-it-out}
 
 1. Öffnen Sie die Sites-Konsole unter **Globale Navigation > Sites**.
-1. Wechseln Sie zur Spaltenansicht (falls diese nicht bereits aktiviert ist) und wählen Sie „We.Retail“ aus. Beachten Sie die Beispiellandstruktur mit der Schweiz, den Vereinigten Staaten, Frankreich usw. neben den Sprach-Mastern.
+1. Wechseln Sie zur Spaltenansicht (falls diese nicht bereits aktiviert ist) und wählen Sie „We.Retail“ aus. Beachten Sie die Beispiel-Landesstruktur inklusive Schweiz, USA, Frankreich usw. sowie die Sprach-Master.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
@@ -72,4 +72,4 @@ We.Retail verfügt über eine globalisierte Site-Struktur, die Sprach-Master auf
 
 ## Weiterführende Informationen {#further-information}
 
-Weiterführende Informationen finden Sie im Authoring-Dokument . [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) für vollständige technische Details.
+Weitere Informationen sowie vollständige technische Details finden Sie im Dokument [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md).

@@ -1,11 +1,11 @@
 ---
 title: Schnellstartanleitung zum Erstellen von Inhaltsfragmentmodellen per Headless-Implementierung
 description: Definieren Sie die Struktur des Inhalts, den Sie mithilfe von AEM Headless-Funktionen mit Inhaltsfragmentmodellen erstellen und bereitstellen möchten.
-exl-id: 8e3e4d00-34d3-4d4f-bc3a-43b8a322b986
-source-git-commit: a5cb385aa369a5e59889e77597119358b77b55be
+exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '492'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Inhaltsfragmentmodelle definieren die Struktur der Daten und Inhalte, die Sie in
 
 Ein Informationsarchitekt würde diese Aufgaben nur sporadisch durchführen, da neue Modelle erforderlich sind. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur ein Modell erstellen.
 
-1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü die Option **Tools -> Assets -> Inhaltsfragmentmodelle**.
+1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü **Tools > Assets > Inhaltsfragmentmodelle** aus.
 1. Tippen oder klicken Sie auf den Ordner, der durch Erstellung Ihrer Konfiguration erstellt wurde.
 
    ![Der Ordner „Modelle“](../assets/models-folder.png)

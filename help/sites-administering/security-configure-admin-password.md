@@ -13,7 +13,7 @@ exl-id: b55ff9d5-8139-4ecf-ba09-5cf88207c5c4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '305'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -51,7 +51,7 @@ Wenn Sie die Instanz über die Befehlszeile ausführen, haben Sie während des I
 
 ## Verwenden des Flags „-nointeractive“ {#using-the-nointeractive-flag}
 
-Das Kennwort kann auch über eine Eigenschaftendatei angegeben werden. Dies geschieht mithilfe der `-nointeractive` Markierung kombiniert mit`-Dadmin.password.file` Systemeigenschaft.
+Das Kennwort kann auch über eine Eigenschaftendatei angegeben werden. Dies geschieht mithilfe der `-nointeractive`-Markierung kombiniert mit der Systemeigenschaft `-Dadmin.password.file`.
 
 Beispiel:
 
@@ -67,4 +67,4 @@ admin.password = 12345678
 
 >[!NOTE]
 >
->Wenn Sie einfach die `-nointeractive` -Parameter ohne die `-Dadmin.password.file` -Systemeigenschaft verwenden AEM das standardmäßige Administratorkennwort, ohne dass Sie dazu aufgefordert werden, es zu ändern. Dies entspricht im Wesentlichen dem Verhalten früherer Versionen. Dieser nicht interaktive Modus kann für automatische Installationen unter Verwendung der Befehlszeile in einem Installationsskript verwendet werden.
+>Wenn Sie den Parameter `-nointeractive`- ohne die Systemeigenschaft `-Dadmin.password.file` verwenden, verwendet AEM das standardmäßige Administratorkennwort und fordert Sie nicht zur Änderung des Kennworts auf, was im Wesentlichen dem Verhalten älterer Versionen entspricht. Dieser nicht interaktive Modus kann für automatische Installationen unter Verwendung der Befehlszeile in einem Installationsskript verwendet werden.

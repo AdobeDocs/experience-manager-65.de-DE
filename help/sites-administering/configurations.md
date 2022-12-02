@@ -72,7 +72,7 @@ Es ist sehr einfach, mithilfe des Konfigurations-Browsers eine neue Konfiguratio
 1. Tippen oder klicken Sie auf **Erstellen**.
 1. Geben Sie einen **Titel** und einen **Namen** für Ihre Konfiguration an.
 
-   ![Konfiguration erstellen](assets/configuration-create.png)
+   ![Erstellen einer Konfiguration](assets/configuration-create.png)
 
    * Der **Titel** sollte beschreibend sein.
    * Der **Name** wird zum Knotennamen im Repository.

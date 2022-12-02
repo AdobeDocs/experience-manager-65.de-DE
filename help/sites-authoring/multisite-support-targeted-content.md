@@ -25,7 +25,7 @@ Möchten Sie zielgerichtete Inhalte wie beispielsweise Aktivitäten, Erlebnisse 
 >
 >Bei der Multisite-Unterstützung für zielgerichtete Inhalte handelt es sich um eine erweiterte Funktion. Damit Sie diese Funktion verwenden können, sollten Sie sich mit [Site-Manager](/help/sites-administering/msm.md) und der [Adobe Target-Integration](/help/sites-administering/target.md) in AEM vertraut machen.
 
-In diesem Dokument wird Folgendes beschrieben:
+Dieses Dokument beschäftigt sich mit den folgenden Themen:
 
 * Kurze Übersicht über die Multisite-Unterstützung für zielgerichtete Inhalte von AEM.
 * Darstellung einiger möglicher Anwendungsfälle zur Verknüpfung von Sites (einer Marke).
@@ -46,15 +46,15 @@ Die Multisite-Unterstützung für zielgerichtete Inhalte ist als einsatzbereite 
 
 Diese Funktion wird in einem **Gebiet** verwaltet. Bereiche trennen zielgerichteten Content (Aktivitäten, Erlebnisse und Angebote), der auf verschiedenen Sites eingesetzt wird, und ermöglichen durch einen MSM-basierten Mechanismus das Erstellen und Verwalten der Vererbung zielgerichteter Inhalte sowie der Site-Vererbung. So wird verhindert, dass Sie zielgerichtete Inhalte in vererbten Seiten erneut erstellen müssen, wie das in AEM vor Version 6.2 der Fall war.
 
-Innerhalb eines Gebiets können nur Aktivitäten, die mit diesem Gebiet verknüpft sind, an Live Copys gepusht werden. Standardmäßig ist das primäre Gebiet ausgewählt. Nach der Erstellung weiterer Gebiete lassen sich diese mit Ihren Sites oder Seiten verknüpfen, wodurch bestimmt wird, welche zielgerichteten Inhalte gepusht werden.
+Innerhalb eines Gebiets können nur Aktivitäten, die mit diesem Gebiet verknüpft sind, an Live Copies gepusht werden. Standardmäßig ist das primäre Gebiet ausgewählt. Nach der Erstellung weiterer Gebiete lassen sich diese mit Ihren Sites oder Seiten verknüpfen, wodurch bestimmt wird, welche zielgerichteten Inhalte gepusht werden.
 
-Eine Site oder Live Copy verweist auf ein Gebiet, das die Aktivitäten enthält, die auf dieser Site oder Live Copy zur Verfügung gestellt werden müssen. Standardmäßig ist die Site oder Live Copy mit dem Mastergebiet verknüpft, es können jedoch auch andere Gebiete zugewiesen werden.
+Eine Site oder Live Copy verweist auf ein Gebiet, das die Aktivitäten enthält, die auf dieser Site oder Live Copy zur Verfügung gestellt werden müssen. Standardmäßig ist die Site oder Live Copy mit dem primären Gebiet verknüpft, es können jedoch auch andere Gebiete zugewiesen werden.
 
 >[!NOTE]
 >
 >Beachten Sie bei der Arbeit mit Multisite-Unterstützung für zielgerichtete Inhalte Folgendes:
 >
->* Wenn Sie Rollouts oder Live Copys verwenden, ist eine MSM-Lizenz erforderlich.
+>* Wenn Sie Rollouts oder Live Copies verwenden, ist eine MSM-Lizenz erforderlich.
 >* Wenn Sie die Synchronisierung mit Adobe Target verwenden, ist eine Adobe Target-Lizenz erforderlich.
 >
 
@@ -97,14 +97,14 @@ Mithilfe der Multisite-Unterstützung für zielgerichtete Inhalte können Sie pe
 Abhängig von geografischen Daten gibt es für die gleiche Site vier verschiedene Versionen:
 
 * Die Site für die **Vereinigten Staaten** befindet sich oben links und dient als primäre Site. In diesem Beispiel wurde sie im Targeting-Modus geöffnet.
-* Die drei übrigen Versionen sind diejenigen für **Kanada**, **Großbritannien** und **Australien**, wobei es sich bei diesen um Live Copys handelt. Diese Sites wurden im Vorschaumodus geöffnet.
+* Die drei übrigen Versionen sind diejenigen für **Kanada**, **Großbritannien** und **Australien**, wobei es sich bei diesen um Live Copies handelt. Diese Sites wurden im Vorschaumodus geöffnet.
 
 ![chlimage_1-271](assets/chlimage_1-271.png)
 
 Alle Seiten teilen sich die personalisierten Inhalte der unterschiedlichen Regionen:
 
 * Für Kanada wird das gleiche primäre Gebiet wie für die Vereinigten Staaten verwendet.
-* Die Site für Großbritannien wurde mit Europa verknüpft und übernimmt die Inhalte des europäischen Mastergebietes.
+* Die Site für Großbritannien wurde mit Europa verknüpft und übernimmt die Inhalte des primären europäischen Gebiets.
 * Australien verfügt über eigene personalisierte Inhalte, da es sich auf der Südhalbkugel befindet und saisonal bedingte Produkte nicht mit Produkten für die anderen Länder übereinstimmen.
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
@@ -175,9 +175,9 @@ So erstellen Sie ein neues Gebiet:
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-## Erstellen neuer Gebiete als Live Copys {#creating-areas-as-live-copies}
+## Erstellen neuer Gebiete als Live Copies {#creating-areas-as-live-copies}
 
-Gebiete werden als Live Copys erstellt, damit diese über Site-Strukturen hinweg zielgerichtete Inhalte übernehmen können.
+Gebiete werden als Live Copies erstellt, damit diese über Site-Strukturen hinweg zielgerichtete Inhalte übernehmen können.
 
 So erstellen Sie ein Gebiet als Live Copy:
 
@@ -198,7 +198,7 @@ So erstellen Sie ein Gebiet als Live Copy:
 
    Beschreibungen der verschiedenen Optionen finden Sie unter [Installierte Rollout-Konfigurationen](/help/sites-administering/msm-sync.md#installed-rollout-configurations).
 
-   Weitere Informationen zu Live Copys finden Sie unter [Erstellen und Synchronisieren von Live Copys](/help/sites-administering/msm-livecopy.md).
+   Weitere Informationen zu Live Copies finden Sie unter [Erstellen und Synchronisieren von Live Copies](/help/sites-administering/msm-livecopy.md).
 
    >[!NOTE]
    >
@@ -245,8 +245,8 @@ Eine Aktivität, die Daten von einer anderen Site erbt, weist neben ihrem Namen 
 
 >[!NOTE]
 >
->* Sie können Live Copys nur in einer Aktivität aussetzen oder deaktivieren.
->* Live Copys müssen nicht ausgesetzt oder getrennt werden, um eine geerbte Aktivität zu erweitern. Sie können jederzeit **neue** lokale Erlebnisse und Angebote für die Aktivität erstellen. Möchten Sie eine bestehende Aktivität bearbeiten, müssen Sie die Vererbung aussetzen.
+>* Sie können Live Copies nur in einer Aktivität aussetzen oder deaktivieren.
+>* Live Copies müssen nicht ausgesetzt oder getrennt werden, um eine geerbte Aktivität zu erweitern. Sie können jederzeit **neue** lokale Erlebnisse und Angebote für die Aktivität erstellen. Möchten Sie eine bestehende Aktivität bearbeiten, müssen Sie die Vererbung aussetzen.
 >
 
 

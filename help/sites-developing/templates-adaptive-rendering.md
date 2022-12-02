@@ -13,7 +13,7 @@ exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '486'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -44,7 +44,7 @@ Selektoren für das adaptive Rendering können Sie für vorhandene Gerätegruppe
 
 Bei diesem Beispiel konfigurieren wir die vorhandene Gerätegruppe **Smartphones** so, dass sie einen Selektor für das adaptive Rendering als Teil der Vorlage **Erlebnisseite** in We.Retail aufweisen.
 
-1. Bearbeiten Sie die Gerätegruppe, für die eine adaptive Auswahl erforderlich ist in `http://localhost:4502/miscadmin#/etc/mobile/groups`
+1. Bearbeiten Sie die Gerätegruppe, für die ein adaptiver Selektor benötigt wird, unter `http://localhost:4502/miscadmin#/etc/mobile/groups`.
 
    Aktivieren Sie die Option **Emulator deaktivieren** und speichern Sie diese Einstellung.
 
@@ -64,7 +64,7 @@ Bei diesem Beispiel konfigurieren wir die vorhandene Gerätegruppe **Smartphones
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. Lassen Sie mithilfe von CRX DE Lite zu, dass die Gerätegruppe auf Ihrer Site verwendet wird, indem Sie sie zur String-Eigenschaft mit mehreren Werten hinzufügen `cq:deviceGroups` auf der Struktur Ihrer Site.
+1. Lassen Sie über CRXDE Lite zu, dass die Gerätegruppe auf Ihrer Website genutzt wird. Fügen Sie dazu diese Gruppe zu der String-Eigenschaft mit mehreren Werten `cq:deviceGroups` in der Struktur der Website hinzu.
 
    `/content/<your-site>/jcr:content`
 
@@ -76,7 +76,7 @@ Bei diesem Beispiel konfigurieren wir die vorhandene Gerätegruppe **Smartphones
 
 Wenn Sie nun den [Emulator](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) im Seiten-Editor verwenden (z. B. beim [Bearbeiten des Layouts](/help/sites-authoring/responsive-layout.md)) und ein Gerät der konfigurierten Gerätegruppe auswählen, wird die Seite mit einem Selektor als Teil der URL gerendert.
 
-In unserem Beispiel, wenn Sie eine Seite bearbeiten, die auf der **Erlebnisseite** und bei Auswahl von iPhone 4 im Emulator wird die Seite gerendert, einschließlich des Selektors als `arctic-surfing-in-lofoten.smart.html` anstelle von `arctic-surfing-in-lofoten.html`
+Wenn Sie in unserem Beispiel eine Seite bearbeiten, die auf der Vorlage **Erlebnisseite** basiert, und im Emulator „iPhone 4“ auswählen, wird die Seite so gerendert, dass der Selektor als `arctic-surfing-in-lofoten.smart.html` statt als `arctic-surfing-in-lofoten.html` enthalten ist.
 
 Die Seite lässt sich auch direkt über diesen Selektor auswählen.
 

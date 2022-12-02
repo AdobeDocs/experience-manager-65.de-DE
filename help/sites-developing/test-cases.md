@@ -14,7 +14,7 @@ exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '529'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
@@ -49,17 +49,18 @@ Die Automatisierung von Testfällen ist jedoch eine erhebliche Investition, dahe
 * Nur tatsächlich praktikabel für große Projekte.
 * Gut, wenn mehrere Versionen entweder zum Testen oder im langfristigen Freigabeplan generiert werden.
 
-## Spezifische Aspekte testen {#testing-specific-aspects}
+## Testen von spezifischen Aspekten {#testing-specific-aspects}
 
-Beim Testen AEM einige spezifische Details von besonderem Interesse sind:
+Beim Testen von AEM sind einige spezifische Details von besonderem Interesse:
 
 **Autor- und Veröffentlichungsumgebung**
 
-Obwohl unter [Umgebungen](/help/sites-developing/the-basics.md#environments) Es ist angebracht, einen entscheidenden AEM in Bezug auf die Tests hervorzuheben.
+Auch wenn dies unter [Umgebungen](/help/sites-developing/the-basics.md#environments) erläutert wird, lohnt es sich, einen entscheidenden Faktor von AEM in Bezug auf Tests noch einmal hervorzuheben.
 
 Sie müssen AEM als zwei Anwendungen betrachten:
 
-* die *Autor* Umgebung Diese Instanz ermöglicht es Autoren, Inhalte einzugeben und zu veröffentlichen.
+* die *Autorenumgebung*
+Diese Instanz ermöglicht es Autoren, Inhalte einzugeben und zu veröffentlichen.
 Sie hat einen klein(er)en, vorhersehbaren Benutzerkreis, für den spezielle Funktionen und Leistung äußerst wichtig sind.
 
 * die *Veröffentlichungsumgebung*
@@ -89,16 +90,16 @@ Bei den meisten Projekte installieren Sie den Dispatcher für Caching und Lasten
 Das Testen ist schwierig (Caching tritt auf unterschiedlichen Ebenen und in verschiedenen Orten auf) und muss auf Blackboxbasis vorgenommen werden. Die zu prüfenden Hauptaspekte sind:
 
 * **Genauigkeit**
-stellen sicher, dass der Besucher der Website Inhaltsaktualisierungen sieht.
+Stellen Sie sicher, dass dem Website-Besucher Inhaltsaktualisierungen angezeigt werden.
 
 * **Kontinuität**
-Stellen Sie sicher, dass die Website weiterhin verfügbar ist, wenn ein Server heruntergefahren wird.
+Stellen Sie sicher, dass die Website auch dann noch verfügbar ist, wenn ein Server abgeschaltet ist.
 
 * **Cluster**
 Cluster werden verwendet, um Folgendes bereitzustellen:
 
    * **Failover**
-Wenn ein Server fehlschlägt, übernehmen andere Server im Cluster die Verarbeitung.
+Wenn ein Server ausfällt, übernehmen andere Server im Cluster die Verarbeitung.
 
    * **Leistung**
 Lastenausgleich mit vollständigem Failover erhöht die Leistung eines Clusters.
@@ -106,6 +107,6 @@ Wenn dies für ein Kundenprojekt verwendet wird, muss der Cluster getestet werde
 
 ## Testen von Software von Drittanbietern {#testing-third-party-software}
 
-Jede Software von Drittanbietern, die mit AEM verbunden ist, wird in den detaillierten Anforderungsspezifikationen referenziert.
+Jede Software von Drittanbietern, die mit AEM verbunden ist, wird in den detaillierten Anforderungsspezifikationen aufgeführt.
 
 Sämtliche erforderlichen Tests (abhängig vom definierten Umfang) müssen analysiert werden und als sauber getestet werden.

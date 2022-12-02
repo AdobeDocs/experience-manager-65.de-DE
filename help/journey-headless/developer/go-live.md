@@ -1,17 +1,17 @@
 ---
 title: Live-Schalten Ihres Headless-Programms
-description: In diesem Teil der AEM Headless-Entwickler-Journey erfahren Sie, wie Sie eine Headless-Anwendung live bereitstellen.
+description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie eine Headless-Anwendung live schalten.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1903'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 # Live-Schalten Ihres Headless-Programms {#go-live}
 
-In diesem Teil des [AEM Headless-Entwickler-Journey](overview.md), erfahren Sie, wie Sie eine Headless-Anwendung live bereitstellen.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie eine Headless-Anwendung live schalten.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -56,7 +56,7 @@ Git wird für die Quell-Code-Verwaltung verwendet sowie um Änderungen in Cloud 
 
 AEM verwendet Apache Maven zum Erstellen von Projekten, die aus dem AEM-Maven-Projektarchetyp generiert wurden. Alle wichtigen IDEs bieten Integrationsunterstützung für Maven.
 
-Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Frontend-Assets des Unterprojekts `ui.frontend` eines AEM-Projekts verwendet wird. Node.js wird mit npm bereitgestellt, dem de facto-Paketmanager von Node.js, der zur Verwaltung von JavaScript-Abhängigkeiten verwendet wird.
+Node.js ist eine JavaScript-Laufzeitumgebung, die zum Arbeiten mit den Frontend-Assets des Unterprojekts `ui.frontend` eines AEM-Projekts verwendet wird. Node.js wird mit npm verteilt, dem De-facto-Paket-Manager von Node.js, der zur Verwaltung von JavaScript-Abhängigkeiten verwendet wird.
 
 ## Komponenten eines AEM-Systems auf einen Blick {#components-of-an-aem-system-at-a-glance}
 
@@ -66,7 +66,7 @@ Eine vollständige AEM-Umgebung besteht aus einer Autoren-, Veröffentlichungs- 
 
 * **Der Autoren-Service**, mit dem interne Anwender Inhalte erstellen, verwalten und in der Vorschau anzeigen.
 
-* **Der Veröffentlichungs-Service** fungiert als „Live-Umgebung“ und ist in der Regel der Bereich, mit die Endanwender interagieren. Nach der Bearbeitung und Genehmigung im Autorendienst werden Inhalte an den Veröffentlichungsdienst verteilt (repliziert). Das häufigste Bereitstellungsmuster bei AEM Headless-Programmen besteht darin, die Produktionsversion des Programms mit dem Veröffentlichungs-Service von AEM zu verbinden.
+* **Der Veröffentlichungs-Service** fungiert als „Live-Umgebung“ und ist in der Regel der Bereich, mit die Endanwender interagieren. Inhalte werden nach der Bearbeitung und Genehmigung im Autoren-Service an den Veröffentlichungs-Service weitergeleitet (repliziert). Das häufigste Bereitstellungsmuster bei AEM Headless-Programmen besteht darin, die Produktionsversion des Programms mit dem Veröffentlichungs-Service von AEM zu verbinden.
 
 * **Der Dispatcher** ist ein statischer Webserver, der durch das AEM Dispatcher-Modul erweitert wird. Er speichert durch die Veröffentlichungsinstanz generierte Web-Seiten zwischen, um die Leistung zu verbessern.
 
@@ -102,9 +102,9 @@ Weitere Informationen zum Einrichten einer lokalen Entwicklungsumgebung und alle
 
 Jetzt sollten Sie Ihr AEM Headless-Programm für den Launch vorbereiten, indem Sie die nachfolgend beschriebenen Best Practices umsetzen.
 
-### Sichern der Headless-Anwendung vor Launch {#secure-and-scale-before-launch}
+### Sichern Ihres Headless-Programms vor dem Launch {#secure-and-scale-before-launch}
 
-1. Vorbereiten [Authentifizierung](/help/assets/content-fragments/graphql-authentication-content-fragments.md) für Ihre GraphQL-Anforderungen
+1. Vorbereiten der [Authentifizierung](/help/assets/content-fragments/graphql-authentication-content-fragments.md) für Ihre GraphQL-Anfragen
 
 ### Modellstruktur und GraphQL-Ausgabe im Vergleich {#structure-vs-output}
 
@@ -123,7 +123,7 @@ Jetzt sollten Sie Ihr AEM Headless-Programm für den Launch vorbereiten, indem S
 
 >[!NOTE]
 >
->Siehe [Zusätzliche Ressourcen](#additional-resources) Weitere Informationen zu CDN und Caching.
+>Weitere Informationen über CDN und Caching finden Sie unter [Zusätzliche Ressourcen](#additional-resources).
 
 ### Verkürzen der Download-Zeit für Headless-Content {#improve-download-time}
 
@@ -137,15 +137,15 @@ Jetzt sollten Sie Ihr AEM Headless-Programm für den Launch vorbereiten, indem S
 
 ## Bereitstellung für Produktion {#deploy-to-production}
 
-Die Bereitstellung in der Produktion kann davon abhängen, ob Sie über eine *traditionell* AEM -Instanz, die mithilfe von Maven bereitgestellt wird oder sich in Adobe Managed Services (AMS) befindet und daher Cloud Manager verwendet.
+Die Bereitstellung in der Produktion kann davon abhängen, ob Sie über eine *traditionelle* AEM-Instanz verfügen, die mithilfe von Maven bereitgestellt wird oder ob Sie sich in Adobe Managed Services (AMS) befinden und daher Cloud Manager verwenden.
 
 ## Bereitstellen in der Produktion mit Maven {#deploy-to-production-maven}
 
-Für *traditionell* -Implementierung (Nicht-AMS) mithilfe von Maven können Sie die [WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=en#build) für einen Überblick.
+Für eine *traditionelle* Implementierung (außer AMS) mithilfe von Maven können Sie sich das [WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/project-setup.html?lang=de#build) ansehen, um einen Überblick zu bekommen.
 
 ## Bereitstellen in der Produktion mit Cloud Manager {#deploy-to-production-cloud-manager}
 
-Wenn Sie ein AMS-Kunde sind und Cloud Manager verwenden, können Sie, sobald Sie sicherstellen, dass alles getestet wurde und ordnungsgemäß funktioniert, Codeaktualisierungen an eine [zentralisiertes Git-Repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=de).
+Wenn Sie ein AMS-Kunde sind und Cloud Manager verwenden, können Sie, sobald Sie sicherstellen, dass alles getestet wurde und ordnungsgemäß funktioniert, Codeaktualisierungen an ein [zentralisiertes Git-Repository in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/managing-code/setup-cloud-manager-git-integration.html?lang=de) pushen.
 
 Nachdem die Aktualisierungen in Cloud Manager hochgeladen wurden, können sie mit der [CI/CD-Pipeline von Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/using/how-to-use/deploying-code.html?lang=de) in AEM bereitgestellt werden.
 
@@ -214,7 +214,7 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [AEM-Entwicklerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=en)
+* [AEM-Entwicklerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=de)
 
 * [WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)
 
@@ -222,6 +222,6 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
 
 * CDN-Cache
 
-   * [Steuern eines CDN-Cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
+   * [Steuern eines CDN-Cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#controlling-a-cdn-cache)
 
-   * Konfigurieren der [CDN Rewriter](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*Suchen nach CDN Rewriter*)
+   * Konfigurieren des [CDN Rewriters](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=de) (*suchen Sie nach CDN Rewriter*)

@@ -14,7 +14,7 @@ exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '604'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -45,15 +45,15 @@ Beim folgenden Verfahren wird die Touch-optimierte Benutzeroberfläche verwendet
 
 ## Beispielkonfigurationen für Microsoft Translator-Cloud-Service {#sample-microsoft-translator-cloud-service-configurations}
 
-Die folgenden Konfigurationen für den Microsoft Translator-Cloud-Service werden mit den Geometrixx-Beispielen installiert. Einige Beispielkonfigurationen verwenden ein Microsoft Translation-Testkonto, das maximal 2.000.000 kostenlose übersetzte Zeichen pro Monat ermöglicht.
+Die folgenden Konfigurationen für den Microsoft Translator-Cloud-Service werden mit den Geometrixx-Beispielen installiert. Für einige Beispielkonfigurationen wird ein Microsoft Translation-Testkonto verwendet, mit dem pro Monat kostenlos maximal 2.000.000 Zeichen übersetzt werden können.
 
 ### Microsoft Translator-Testlizenz {#microsoft-translator-trial-license}
 
-Die Konfiguration „Microsoft Translator-Testlizenz“ ist eine Beispielkonfiguration, die mit dem Geometrixx Outdoors-Beispielpaket installiert wird. Diese Konfiguration verwendet ein Microsoft Translator-Konto mit einem kostenlosen Abonnement, das 2.000.000 übersetzten Zeichen pro Monat ermöglicht.
+Die Konfiguration „Microsoft Translator-Testlizenz“ ist eine Beispielkonfiguration, die mit dem Geometrixx Outdoors-Beispielpaket installiert wird. Bei dieser Konfiguration wird ein Microsoft Translator-Konto mit einem kostenlosen Abonnement verwendet, mit dem pro Monat 2.000.000 Zeichen übersetzt werden können.
 
 ### Microsoft Translator-Testlizenz – Geometrixx-Outdoors {#microsoft-translator-trial-license-geometrixx-outdoors}
 
-Die Konfiguration „Microsoft Translator-Testlizenz – Geometrixx-Outdoors“ ist eine Beispielkonfiguration, die mit Geometrixx Outdoors installiert wird. Bei dieser Konfiguration wird dasselbe kostenlose Microsoft Translator-Konto wie für die Konfiguration „Microsoft Translator-Testlizenz“ verwendet. Das Konto verfügt über ein kostenloses Abonnement, das 2.000.000 übersetzte Zeichen pro Monat erlaubt.
+Die Konfiguration „Microsoft Translator-Testlizenz – Geometrixx-Outdoors“ ist eine Beispielkonfiguration, die mit Geometrixx Outdoors installiert wird. Bei dieser Konfiguration wird dasselbe kostenlose Microsoft Translator-Konto wie für die Konfiguration „Microsoft Translator-Testlizenz“ verwendet. Das Konto verfügt über ein kostenloses Abonnement, mit dem pro Monat 2.000.000 Zeichen übersetzt werden können.
 
 Diese Microsoft Translator-Konfiguration ist für die Verwendung mit den Inhaltstypen optimiert, die auf der Geometrixx Outdoors-Beispiel-Website vorkommen.
 
@@ -80,7 +80,7 @@ Die Seiten der Microsoft Translation-Konfiguration enthalten einen direkten Link
 
 ## Aktivieren der Übersetzungs-Service-Konfigurationen {#activating-the-translator-service-configurations}
 
-Sie müssen Ihre Cloud Service-Konfigurationen aktivieren, um übersetzte Inhalte zu unterstützen, die auf der Veröffentlichungsinstanz repliziert werden. Verwenden Sie die Methode [Aktivieren eines vollständigen Abschnitts (Baum)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree) , um die Repository-Knoten zu aktivieren, die die Microsoft Translator- oder Cloud Service-Konfigurationen von Drittanbietern speichern. Die Knoten befinden sich unter den folgenden übergeordneten Knoten:
+Sie müssen Ihre Cloud Service-Konfigurationen aktivieren, um übersetzte Inhalte zu unterstützen, die auf der Veröffentlichungsinstanz repliziert werden. Verwenden Sie Methode zum [Aktivieren eines gesamten Abschnitts (Baumstruktur)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree), um die Repository-Knoten zu aktivieren, auf denen die Microsoft Translator-Konfiguration oder die Cloud Service-Konfigurationen von Drittanbietern gespeichert werden. Die Knoten befinden sich unter den folgenden übergeordneten Knoten:
 
 * Microsoft Translation Service: /libs/settings/cloudconfigs/translation/msft-translation
-* Übersetzung von Drittanbietern: /etc/cloudservices/machine-translation
+* Drittanbieterübersetzungen: /etc/cloudservices/machine-translation

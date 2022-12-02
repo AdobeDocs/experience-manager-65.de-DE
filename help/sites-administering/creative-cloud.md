@@ -13,7 +13,7 @@ docset: aem65
 source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
 workflow-type: tm+mt
 source-wordcount: '66'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 75%
 
 >[!CAUTION]
 >
->Die Ordnerfreigabe von AEM in Creative Cloud wird nicht mehr unterstützt. Kunden wird dringend empfohlen, neuere Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [AEM Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de). Weitere Informationen finden Sie unter [Best Practices für die Integration von AEM und Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>Die Ordnerfreigabe von AEM in Creative Cloud wird nicht mehr unterstützt. Kunden wird dringend empfohlen, auf [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder die [AEM Desktop App](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html) zurückzugreifen, da diese aktuelle Funktionen bieten. Weitere Informationen finden Sie unter [Best Practices für die Integration von AEM und Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

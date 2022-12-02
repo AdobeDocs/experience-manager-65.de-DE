@@ -30,7 +30,7 @@ In diesem Dokument erfahren Sie, wie Sie mit der Übersetzung von Headless-Inhal
 * verstehen, wie AEM Headless-Inhalte speichert.
 * mit den Übersetzungs-Tools von AEM vertraut sein.
 
-## Anforderungen und Voraussetzungen {#requirements-prerequisites}
+## Anforderungen und Vorbedingungen {#requirements-prerequisites}
 
 Bevor Sie mit der Übersetzung Ihrer Headless-AEM-Inhalte beginnen, müssen Sie eine Reihe von Anforderungen erfüllen.
 
@@ -93,7 +93,7 @@ Notieren Sie sich den **Eigenschaftsnamen** des Feldes für alle Felder, die üb
 
 >[!TIP]
 >
->Im Allgemeinen stellt der Inhaltsarchitekt dem Übersetzungsspezialisten die **Eigenschaftsname** n für alle für die Übersetzung erforderlichen Felder zur Verfügung. Diese Feldnamen werden für einen späteren Zeitpunkt in der Tour benötigt. Die vorangegangenen Schritte sind für das Verständnis des Übersetzungsspezialisten vorgesehen.
+>Im Allgemeinen stellt der Inhaltsarchitekt dem Übersetzungsspezialisten die **Eigenschaftsnamen** für alle für die Übersetzung erforderlichen Felder zur Verfügung. Diese Feldnamen werden für einen späteren Zeitpunkt in der Tour benötigt. Die vorangegangenen Schritte sind für das Verständnis des Übersetzungsspezialisten vorgesehen.
 
 ### Inhaltsfragmente {#content-fragments}
 

@@ -14,7 +14,7 @@ exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1362'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -36,9 +36,9 @@ So erstellen Sie die neue Version einer Seite:
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
 1. Geben Sie einen **Kommentar** ein (optional).
-1. Um einen Titel für die Version festzulegen (optional), klicken Sie auf die **Mehr >** und legen Sie die **Titel** , um die Version zu benennen. Wenn der Titel nicht festgelegt ist, ist die Version eine automatisch inkrementierte Zahl.
-1. Klicken **Version erstellen**. Auf der Seite wird eine grau hinterlegte Nachricht eingeblendet, z. B.:
-Version 1.2 erstellt für: Hemden.
+1. Um eine Bezeichnung für die Version anzugeben (optional), klicken Sie auf die Schaltfläche **Mehr >>** und geben Sie unter **Bezeichnung** einen Namen für die Version ein. Wird keine Bezeichnung festgelegt, wird die Version automatisch nummeriert.
+1. Klicken Sie auf **Version erstellen**. Auf der Seite wird eine grau hinterlegte Meldung eingeblendet, z. B.:
+Version 1.2 erstellt für: Hemden.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ So stellen Sie die frühere Version einer Seite wieder her:
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
-1. Wählen Sie die Version, die Sie wiederherstellen möchten, und wählen Sie **Wiederherstellen**.
+1. Wählen Sie die Version aus, die Sie wiederherstellen möchten, und wählen Sie **Wiederherstellen** aus.
 
 ## Wiederherstellen einer Seitenversion über die Konsole {#restoring-a-page-version-from-the-console}
 
@@ -87,12 +87,12 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
 
 1. Öffnen Sie im Browser die Seite, die mit einer früheren Version verglichen werden soll.
-1. Wählen Sie im Sidekick die **Versionierung** Registerkarte, dann die **Version wiederherstellen** auf einer Unterregisterkarte.
+1. Wählen Sie im Sidekick die Registerkarte **Versionierung** und dann die Unterregisterkarte **Version wiederherstellen** aus.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
 1. Markieren Sie die Version, die Sie vergleichen möchten, und klicken Sie auf die Schaltfläche **Differenz**.
-1. Die Unterschiede zwischen der aktuellen Version und der ausgewählten Version werden wie folgt angezeigt:
+1. Die Unterschiede zwischen der aktuellen Version und der ausgewählten Version werden wie folgt dargestellt:
 
    * Gelöschter Text wird rot und durchgestrichen angezeigt.
    * Hinzugefügter Text wird grün und hervorgehoben angezeigt.
@@ -135,7 +135,7 @@ Die Kalenderversion wird verwendet, wenn Sie einen bestimmten Tag anzeigen möch
 
    >[!NOTE]
    >
-   >Timewarp funktioniert nur dann vollständig, wenn Sie die Seite zuvor veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Autorenumgebung.
+   >Timewarp funktioniert nur dann vollständig, wenn Sie die Seite zuvor veröffentlicht haben. Andernfalls zeigt Timewarp die aktuelle Seite in der Autorenumgebung an.
 
    >[!NOTE]
    >
@@ -148,27 +148,27 @@ Die Kalenderversion wird verwendet, wenn Sie einen bestimmten Tag anzeigen möch
 1. Wenn Sie die Seite wieder verlassen möchten, klicken Sie auf eine der folgenden Optionen:
 
    * Mit **Timewarp beenden** verlassen Sie Timewarp und kehren zur aktuellen Autorenseite zurück.
-   * [Timeline anzeigen](#using-the-timewarp-timeline), um die Timeline anzuzeigen.
+   * Mit [Zeitleiste anzeigen](#using-the-timewarp-timeline) zeigen Sie die Zeitleiste an.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
-### Verwenden der Timewarp-Timeline {#using-the-timewarp-timeline}
+### Verwenden der Timewarp-Zeitleiste {#using-the-timewarp-timeline}
 
-Die Timeline-Version wird verwendet, wenn Sie eine Übersicht über die Veröffentlichungsaktivitäten auf der Seite anzeigen möchten.
+Die Zeitleistenversion wird verwendet, wenn Sie eine Übersicht über die Veröffentlichungsaktivitäten auf der Seite anzeigen möchten.
 
-Wenn Sie die Timeline im Dokument anzeigen möchten:
+Wenn Sie die Zeitleiste im Dokument anzeigen möchten:
 
-1. Sie können die Timeline wie folgt anzeigen:
+1. Sie können die Zeitleiste wie folgt anzeigen:
 
    1. Öffnen Sie die Registerkarte **Versionierung** und klicken Sie auf **Timewarp** (unten im Sidekick).
 
-   1. Über das Sidekick-Dialogfeld, das nach [der Verwendung des Timewarp-Kalenders angezeigt wird](#using-the-timewarp-calendar).
+   1. Verwenden Sie das Sidekick-Dialogfeld, das nach [der Verwendung des Timewarp-Kalenders angezeigt wird](#using-the-timewarp-calendar).
 
-1. Klicken Sie auf **Timeline anzeigen**, die Timeline des Dokuments wird angezeigt. Beispiel:
+1. Klicken Sie auf **Zeitleiste anzeigen**, die Zeitleiste des Dokuments wird angezeigt. Beispiel:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-1. Wählen und verschieben Sie (durch Gedrückthalten und Ziehen) die Timeline, um sich durch die Timeline des Dokuments zu bewegen.
+1. Wählen Sie (durch Gedrückthalten und Ziehen) die Zeitleiste aus und verschieben Sie sie, um sich durch die Zeitleiste des Dokuments zu bewegen.
 
    * Jede Linie steht für eine veröffentlichte Version.
 Wenn eine Seite aktiviert wird, beginnt eine neue Linie. Jedes Mal, wenn das Dokument bearbeitet wird, wird eine neue Farbe angezeigt.
@@ -195,4 +195,4 @@ Timewarp versucht, eine Seite zu einem bestimmten Zeitpunkt zu reproduzieren. Au
 
 >[!CAUTION]
 >
->Timewarp wurde als Tool entwickelt, um Autoren beim Verstehen und Erstellen ihrer Inhalte zu unterstützen. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.
+>Timewarp wurde als Tool entwickelt, das Autoren beim Verstehen und Erstellen ihres Inhalts unterstützen kann. Es ist nicht als Prüfprotokoll oder zu rechtlichen Zwecken gedacht.

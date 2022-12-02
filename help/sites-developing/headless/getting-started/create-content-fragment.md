@@ -1,11 +1,11 @@
 ---
 title: Schnellstartanleitung zum Erstellen von Inhaltsfragmenten per Headless-Implementierung
 description: Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhalte für die Headless-Bereitstellung entwerfen, erstellen, kuratieren und verwenden können.
-exl-id: a227ae2c-f710-4968-8a00-bfe48aa66145
-source-git-commit: 8ab774b8d21dd16e4873cd39ef0175ead3f2da23
+exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
 workflow-type: tm+mt
 source-wordcount: '387'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -25,8 +25,8 @@ Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bere
 
 Inhaltsersteller können eine beliebige Anzahl von Inhaltsfragmenten für ihre Inhalte erstellen. Das die zentrale Aufgabe, die sie in AEM ausführen. Für die Zwecke dieser Anleitung für den Einstieg müssen wir nur ein Fragment erstellen.
 
-1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü die Option **Navigation -> Assets**.
-1. Navigieren Sie zum [Ordner, den Sie zuvor erstellt haben.](create-assets-folder.md)
+1. Melden Sie sich bei AEM an und wählen Sie im Hauptmenü **Tools > Assets** aus.
+1. Navigieren Sie zu dem [zuvor erstellten Ordner](create-assets-folder.md).
 1. Tippen oder klicken Sie auf **Erstellen > Inhaltsfragment**.
 1. Die Erstellung eines Inhaltsfragments erfolgt mithilfe eines Assistenten in zwei Schritten. Wählen Sie zuerst das Modell aus, das Sie zum Erstellen des Inhaltsfragments verwenden möchten, und tippen oder klicken Sie dann auf **Weiter**.
    * Die verfügbaren Modelle hängen von der [**Cloud-Konfiguration** ab, die Sie für den Asset-Ordner](create-assets-folder.md) definiert haben, in dem Sie das Inhaltsfragment erstellen.

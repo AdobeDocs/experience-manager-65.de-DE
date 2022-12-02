@@ -13,13 +13,13 @@ exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1920'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
 # Best Practices für Workflows{#workflow-best-practices}
 
-Workflows ermöglichen die Automatisierung von Aktivitäten in Adobe Experience Manager (AEM).
+Workflows ermöglichen die Automatisierung von Adobe Experience Manager (AEM)-Aktivitäten.
 
 Da sie häufig einen Großteil der Verarbeitung in einer AEM-Umgebung ausmachen, kann es sich negativ auf das System auswirken, wenn benutzerdefinierte Workflow-Schritte nicht unter Berücksichtigung der Best Practices erstellt oder vorgefertigte Workflows nicht so konfiguriert werden, dass eine möglichst effiziente Ausführung gewährleistet ist.
 
@@ -58,17 +58,17 @@ Wenn die Systemressourcen durch die ausgeführten Workflows stark beansprucht we
 
 Zur Behandlung dieses Problems empfiehlt Adobe, die **** maximale Anzahl paralleler Aufträge auf einen Wert festzulegen, der zwischen der Hälfte und drei Vierteln der Anzahl der Prozessorkerne des Systems liegt. Dadurch sollte dem System genügend Kapazität zur Verfügung stehen, damit solche Workflows ohne Beeinträchtigung der Reaktionsfähigkeit verarbeitet werden können.
 
-So konfigurieren Sie **Maximale Anzahl paralleler Aufträge** können Sie Folgendes tun:
+Die **maximale Anzahl paralleler Aufträge** kann wie folgt konfiguriert werden:
 
-* Konfigurieren Sie die **[OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)** über die AEM Web-Konsole; für **Warteschlange: Granite-Workflow-Warteschlange** (ein **Apache Sling Job Queue-Konfiguration**).
+* Konfigurieren Sie die **[OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md)** über die AEM-Web-Konsole für **Warteschlange: Granite Workflow-Warteschlange** (eine **Warteschlangenkonfiguration für Apache Sling-Aufträge**).
 
-* Die Warteschlange kann über die **Sling-Aufträge** Option der AEM Web-Konsole; für **Auftragswarteschlangenkonfiguration: Granite-Workflow-Warteschlange**, um `http://localhost:4502/system/console/slingevent`.
+* Konfigurieren Sie die Warteschlange über die Option **Sling-Aufträge** der AEM-Web-Konsole für **Auftragswarteschlange-Konfiguration: Granite Workflow-Warteschlange** unter `http://localhost:4502/system/console/slingevent`.
 
-Darüber hinaus gibt es eine separate Konfiguration für die **Warteschlange für externe Prozessaufträge im Granite-Workflow**. Diese Konfiguration wird für Workflow-Prozesse verwendet, die externe Binärdateien starten (beispielsweise **InDesign Server** oder **Image Magick**).
+Darüber hinaus gibt es eine separate Konfiguration für die **Granite-Workflow-Warteschlange für externe Verarbeitungsaufträge**. Diese Konfiguration wird für Workflow-Prozesse verwendet, die externe Binärdateien starten (beispielsweise **InDesign Server** oder **Image Magick**).
 
 ### Konfigurieren individueller Auftragswarteschlangen {#configure-individual-job-queues}
 
-Manchmal ist es hilfreich, individuelle Auftragswarteschlangen zur Steuerung paralleler Threads oder andere Warteschlangenoptionen für individuelle Aufträge zu konfigurieren. Über die Web-Konsole können Sie eine individuelle Warteschlange über die Factory **Warteschlangenkonfiguration für Apache Sling-Aufträge** hinzufügen und konfigurieren. Um das entsprechende Thema aufzulisten, führen Sie das Modell Ihres Workflows aus und suchen Sie im **Sling-Aufträge** Konsole; z. B. bei `http://localhost:4502/system/console/slingevent`.
+Manchmal ist es hilfreich, individuelle Auftragswarteschlangen zur Steuerung paralleler Threads oder andere Warteschlangenoptionen für individuelle Aufträge zu konfigurieren. Über die Web-Konsole können Sie eine individuelle Warteschlange über die Factory **Warteschlangenkonfiguration für Apache Sling-Aufträge** hinzufügen und konfigurieren. Führen Sie zum Ermitteln des aufzulistenden Themas das Modell Ihres Workflows aus und suchen Sie in der Konsole **Sling-Aufträge** danach (beispielsweise unter `http://localhost:4502/system/console/slingevent`).
 
 Individuelle Auftragswarteschlangen können auch für Verlaufs-Workflows hinzugefügt werden.
 
@@ -86,7 +86,7 @@ Ausführlichere Informationen zu Wartungsaufgaben in AEM finden Sie im [Vorgangs
 
 Beim Erstellen benutzerdefinierter Workflow-Prozesse sind einige Punkte zu beachten.
 
-### Standorte {#locations}
+### Speicherorte {#locations}
 
 Definitionen von Workflow-Modellen, -Startern, -Skripten und -Benachrichtigungen werden im entsprechenden Repository für den jeweiligen Typ gespeichert (also beispielsweise in „out-of-the-box“ oder in „custom“).
 
@@ -107,7 +107,7 @@ Workflow-Modelle werden im Repository auf der Grundlage ihres Typs gespeichert:
    >Beachten Sie Folgendes:
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Modelle.
-   >* Bearbeiten von Elementen in `/libs`
+   >* Lassen Sie alles in `/libs` unverändert.
 
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
@@ -143,7 +143,7 @@ Definitionen für Workflow-Starter werden im Repository ebenfalls auf der Grundl
    >Beachten Sie Folgendes:
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Starter.
-   >* Bearbeiten von Elementen in `/libs`
+   >* Lassen Sie alles in `/libs` unverändert.
 
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
@@ -175,7 +175,7 @@ Workflow-Skripte werden im Repository ebenfalls auf der Grundlage ihres Typs ges
    >Beachten Sie Folgendes:
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Skripte.
-   >* Bearbeiten von Elementen in `/libs`
+   >* Lassen Sie alles in `/libs` unverändert.
 
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
@@ -203,7 +203,7 @@ Workflow-Benachrichtigungen werden im Repository ebenfalls auf der Grundlage ihr
    >Beachten Sie Folgendes:
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Benachrichtigungsdefinitionen.
-   >* Bearbeiten von Elementen in `/libs`
+   >* Lassen Sie alles in `/libs` unverändert.
 
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
@@ -289,15 +289,15 @@ Durch die Objekterstellung im Speicher sowie durch die Knotenüberwachung im Rep
 
 Ein Beispiel wäre etwa ein Workflow, der einen Geschäftsprozess für eine Gruppe von Inhalten implementiert und die Inhalte anschließend aktiviert. Es ist besser, einen benutzerdefinierten Workflow-Prozess zu erstellen, der jeden dieser Knoten aktiviert, anstatt für jeden der zu veröffentlichenden Inhaltsknoten ein Modell vom Typ **Inhalt aktivieren** zu starten. Dieser Ansatz führt zwar zu einem höheren Entwicklungsaufwand, ist aber effizienter als für jede Aktivierung eine separate Workflow-Instanz zu starten.
 
-Ein weiteres Beispiel wäre ein Workflow, der eine Reihe von Knoten verarbeitet, ein Workflow-Paket erstellt und dieses Paket anschließend aktiviert. Anstatt das Paket zu erstellen und anschließend einen separaten Workflow mit dem Paket als Nutzlast zu erstellen, können Sie im Paketerstellungsschritt die Nutzlast Ihres Workflows ändern und dann den Paketaktivierungsschritt innerhalb desselben Workflow-Modells aufrufen.
+Ein weiteres Beispiel wäre ein Workflow, der eine Reihe von Knoten verarbeitet, ein Workflow-Paket erstellt und dieses Paket anschließend aktiviert. Anstatt das Paket zu erstellen und anschließend einen separaten Workflow mit dem Paket als Payload zu erstellen, können Sie im Paketerstellungsschritt die Payload Ihres Workflows ändern und dann den Paketaktivierungsschritt innerhalb desselben Workflow-Modells aufrufen.
 
-### Handler-Modus {#handler-advance}
+### Handler-Fortschritt {#handler-advance}
 
-Wenn Sie ein Workflow-Modell entwerfen, können Sie den Handler-Modus für Ihre Workflow-Schritte aktivieren. Alternativ können Sie Ihrem Workflow-Schritt Code hinzufügen, um den als Nächstes auszuführenden Schritt zu bestimmen und auszuführen.
+Wenn Sie ein Workflow-Modell entwerfen, können Sie den Handler-Fortschritt für Ihre Workflow-Schritte aktivieren. Alternativ können Sie Ihrem Workflow-Schritt Code hinzufügen, um den als Nächstes auszuführenden Schritt zu bestimmen und auszuführen.
 
-Es wird empfohlen, den Handler-Modus zu verwenden, da sich dadurch die Leistung verbessert.
+Es wird empfohlen, den Handler-Fortschritt zu verwenden, da sich dadurch die Leistung verbessert.
 
-### Workflow-Statuswerte {#workflow-stages}
+### Workflow-Phasen {#workflow-stages}
 
 Sie können [Workflow-Statuswerte](/help/sites-developing/workflows.md#workflow-stages) definieren und Aufgaben/Schritte einem bestimmten Workflow-Status zuweisen.
 
@@ -324,7 +324,7 @@ Wichtige Punkte bei Upgrades für Ihre Instanz:
 
 ## Systemtools {#system-tools}
 
-Für die Workflow-Überwachung, -Verwaltung und -Problembehandlung stehen zahlreiche Systemtools zur Verfügung. Alle Beispiel-URLs unten verwenden `localhost:4502`, sollte jedoch in jeder Autoreninstanz verfügbar sein ( `<hostname>:<port>`).
+Für die Workflow-Überwachung, -Verwaltung und -Problembehandlung stehen zahlreiche Systemtools zur Verfügung. In den folgenden Beispiel-URLs wird zwar `localhost:4502` verwendet, sie sollten aber in jeder Autoreninstanz (`<hostname>:<port>`) verfügbar sein.
 
 ### Konsole zur Behandlung von Sling-Aufträgen {#sling-job-handling-console}
 
@@ -333,7 +333,7 @@ Für die Workflow-Überwachung, -Verwaltung und -Problembehandlung stehen zahlre
 In der Konsole zur Behandlung von Sling-Aufträgen wird Folgendes angezeigt:
 
 * Statistik zum Zustand von Aufträgen im System seit dem letzten Neustart
-* Konfigurationen für alle Auftragswarteschlangen sowie ein Tastaturbefehl für die Bearbeitung im Konfigurationsmanager
+* Konfigurationen für alle Auftragswarteschlangen sowie ein Tastaturbefehl für die Bearbeitung im Konfigurations-Manager
 
 ### Workflow-Berichtstool {#workflow-report-tool}
 
