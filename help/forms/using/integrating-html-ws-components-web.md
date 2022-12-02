@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 exl-id: bb4a500d-c34f-4586-83f0-ad7ef69b4fb1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '344'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Sie können die AEM Forms Workspace [Komponenten](/help/forms/using/description-
 1. Kopieren Sie CSS, Bilder, js/libs, js/runtime und js/registry.js
 
    * von `/libs/ws`
-   * in `/apps/sampleApplication/wscomponents`.
+   * nach `/apps/sampleApplication/wscomponents`.
 
 1. Erstellen Sie im Ordner /apps/sampleApplication/wscomponents/js eine Datei mit dem Namen demomain.js. Kopieren Sie Code aus /libs/ws/js/main.js in demomain.js.
 1. Entfernen Sie in demomain.js den Code zum Initialisieren des Routers und fügen Sie folgenden Code hinzu:
