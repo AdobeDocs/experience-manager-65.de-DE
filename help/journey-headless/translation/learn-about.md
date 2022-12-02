@@ -3,7 +3,7 @@ title: Erfahren Sie mehr über Headless-Inhalte und wie Sie sie in AEM übersetz
 description: Lernen Sie die Headless-Konzepte, ihre Zuordnung zu AEM und die Theorie der Übersetzung in AEM kennen.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '727'
 ht-degree: 100%
 
