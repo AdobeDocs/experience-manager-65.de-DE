@@ -3,9 +3,9 @@ title: Die RemotePage-Komponente
 description: Die RemotePage-Komponente ist eine benutzerdefinierte Seitenkomponente zur Bearbeitung von Remote-React-SPAs in AEM.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 source-git-commit: a92358d187aa78e05dd9b5a7bd4ae14bf0972f62
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '354'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -28,14 +28,14 @@ Weitere Informationen zu bearbeitbaren externen SPAs in AEM finden Sie im Artike
 * CORS in der Entwicklung aktivieren
 * Remote-URL in den Seiteneigenschaften konfigurieren
 * SPA in AEM rendern
-* Die Webanwendung muss ein Bundler-Asset-Manifest wie eines der folgenden verwenden und eine Datei &quot;asset-manifest.json&quot;im Domänenstamm bereitstellen, in der in einer Einstiegspunkteigenschaft alle zu ladenden CSS- und JS-Dateien aufgelistet sind:
+* Die Web-Anwendung muss ein Bundler-Asset-Manifest wie eines der folgenden verwenden und eine asset-manifest.json-Datei im Domain-Stamm bereitstellen, die in einer entrypoints-Eigenschaft alle zu ladenden CSS- und JS-Dateien auflistet:
    * https://github.com/shellscape/webpack-manifest-plugin
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
 
    ![Einstiegspunkte](assets/asset-manifest-entrypoints.png)
 
-* Die Anwendung muss in der Lage sein, in einer `<div id="root"></div>` unter dem Textelement. Wenn für die Instanziierung der App ein anderes Markup erwartet wird, muss dies in den HTL-Skripten der Proxy-Komponente mit dem Wert `sling:resourceSuperType="spa-project-core/components/remotepage` entsprechend angepasst werden.
+* Die Anwendung muss in einem `<div id="root"></div>`-Element unter dem Body-Element initialisiert werden können. Wenn für die Instanziierung der App ein anderes Markup erwartet wird, muss dies in den HTL-Skripten der Proxy-Komponente mit dem Wert `sling:resourceSuperType="spa-project-core/components/remotepage` entsprechend angepasst werden.
 
 ## Beschränkungen {#limitations}
 
