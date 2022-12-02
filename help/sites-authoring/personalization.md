@@ -11,9 +11,9 @@ topic-tags: personalization
 discoiquuid: 850da0da-f7c3-4dd7-bb06-404c14a2a791
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '519'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ AEM stellt eine Reihe von Tools zur Bearbeitung von Inhalten für eine bestimmte
 
 Mit Aktivitäten lassen sich Ihre Marketingprojekte definieren und organisieren. Teil der Aktivitäten sind die gewünschten Zielgruppen sowie der Zeitraum, in dem das Targeting durchgeführt wird.
 
-Beispielsweise enthält der Produktkatalog &quot;We.Retail&quot;Teaser, die die Aufmerksamkeit auf saisonale Produkte lenken. In der Aktivität „Sommersport“ sind die Marketing-Segmente definiert, die während der Sommermonate gezielt angesprochen werden sollen.
+So enthält der We.Retail-Produktkatalog beispielsweise Teaser, die die Aufmerksamkeit auf Produkte der aktuellen Saison lenken sollen. In der Aktivität „Sommersport“ sind die Marketing-Segmente definiert, die während der Sommermonate gezielt angesprochen werden sollen.
 
 Mit Aktivitäten wird zudem auch die [Targeting-Engine](/help/sites-authoring/personalization.md#targeting-engine) bestimmt, die Ihre Seiten verwenden.
 
@@ -43,7 +43,7 @@ Legen Sie für jede Aktivität ein oder mehr Erlebnisse fest, in denen die gewü
 
 Zielgruppen basieren auf Marketingsegmenten, die entweder in AEM oder Adobe Target erstellt werden. Öffnet ein Besucher eine Web-Seite, bestimmt die Seitenlogik die Zielgruppe, in die er fällt, und zeigt die für diese Zielgruppe erstellten Inhalte an.
 
-Mit einer Aktivität können beispielsweise Erlebnisse für zwei verschiedene Zielgruppen festgelegt werden: Frauen über 30 und Frauen unter 30. Auf der Damenseite der Website &quot;We.Retail&quot;werden für jedes Erlebnis unterschiedliche Produkte angezeigt.
+Mit einer Aktivität können beispielsweise Erlebnisse für zwei verschiedene Zielgruppen festgelegt werden: Frauen über 30 und Frauen unter 30. Die Damenabteilung der We.Retail-Website zeigt für die beiden Erlebnisse unterschiedliche Inhalte an.
 
 Die Erlebnisse der Aktivitäten werden von Ihnen festgelegt. Sie können hierzu die [Aktivitätskonsole](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) oder den [Targeting-Modus](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) verwenden und Aktivitäten Erlebnisse hinzufügen.
 
@@ -51,7 +51,7 @@ Die Erlebnisse der Aktivitäten werden von Ihnen festgelegt. Sie können hierzu 
 
 Angebote sind Inhalte, die an einem Ort auf einer Seite angezeigt werden, die für ein Erlebnis festgelegt wurde. Verwenden Sie für verschiedene Erlebnisse verschiedene Angebote, um Inhalte optimal auf Ihre Zielgruppen zuzuschneiden.
 
-Beispielsweise kann die Damenseite der Beispiel-Website &quot;We.Retail&quot;Angebote als Teaser-Bild verwenden, das oben auf der Seite angezeigt wird. Für Erlebnisse für Frauen über 30 werden andere Angebote eingesetzt als für Frauen unter 30.
+Beispielsweise könnte die Damenabteilung einer We.Retail-Beispiel-Website Angebote als das Teaser-Bild verwenden, das oben auf der Seite eingeblendet wird. Für Erlebnisse für Frauen über 30 werden andere Angebote eingesetzt als für Frauen unter 30.
 
 Mit der [Angebotskonsole](/help/sites-authoring/offerlib.md) lassen sich Angebote erstellen, die für mehrere Erlebnisse eingesetzt werden sollen. Erstellen Sie Einmal-Angebote oder fügen Sie Angebote aus einer Angebotsbibliothek hinzu, wenn Sie [zielgerichtete Inhalte erstellen](/help/sites-authoring/content-targeting-touch.md).
 
@@ -70,4 +70,4 @@ Mit der Adobe Target-Targeting-Engine werden von Seitenbesuchen gesammelte Info
 * Bei der Verwendung dieser Targeting-Engine setzen Sie Segmente ein, die Sie aus Adobe Target importieren und die die Zielgruppen Ihrer Erlebnisse bestimmen.
 * Aktivitäten, die mit der Adobe Target-Engine bereitgestellt werden, werden [mit Target synchronisiert](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
-Sie können diese Engine verwenden, wenn Sie [integriert mit Adobe Target](/help/sites-administering/opt-in.md).
+Sie können diese Engine verwenden, wenn Sie über eine [Integration mit Adobe Target](/help/sites-administering/opt-in.md) verfügen.
