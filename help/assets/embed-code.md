@@ -1,6 +1,6 @@
 ---
 title: Einbetten des Dynamic Media-Video-, Bild- oder Dimensional-Viewers auf einer Web-Seite
-description: Erfahren Sie, wie Sie Dynamic Media-Videos, -Bilder oder -3D-Bilder auf einer Web-Seite einbetten.
+description: Erfahren Sie, wie Sie Dynamic Media-Videos, -Bilder oder -3D-Bilder in eine Web-Seite einbetten.
 uuid: 6f786521-eb6c-4c80-8c15-9bf97b56818f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ feature: Viewers
 role: User, Admin
 exl-id: 203ea349-ef4c-421c-b4b6-76ee9d46ec34
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Betten Sie URLs nur dann ein, wenn Sie Adobe Experience Manager *nicht* als Ihr 
 
 Siehe [Verknüpfen von URLs mit einer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
-Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsive-site.md).
+Siehe [Bereitstellen optimierter Bilder für eine responsive Website](responsive-site.md).
 
 >[!NOTE]
 >
@@ -37,11 +37,11 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 >
 >Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-**So betten Sie den Dynamic Media-Video-, Bild- oder Dimensional-Viewer auf einer Web-Seite ein:**
+**Gehen Sie zum Einbetten des Dynamic Media-Video-, -Bild- oder Dimensional-Viewers in eine Web-Seite folgendermaßen vor:**
 
 1. Navigieren Sie zum *veröffentlichten* Video- oder Bild-Asset, dessen Einbettungs-Code Sie kopieren möchten.
 
-   Denken Sie daran, dass der Einbettungscode nur *nach* der ersten *Veröffentlichung* der Assets kopiert werden können. Darüber hinaus müssen die Viewer-Vorgabe oder die Bildvorgabe ebenfalls veröffentlicht werden.
+   Denken Sie daran, dass der Einbettungs-Code nur *nach* der ersten *Veröffentlichung* der Assets kopiert werden können. Darüber hinaus müssen die Viewer-Vorgabe oder die Bildvorgabe ebenfalls veröffentlicht werden.
 
    Siehe [Veröffentlichen von Assets](publishing-dynamicmedia-assets.md).
 
@@ -49,7 +49,7 @@ Siehe [Bereitstellen von optimierten Bildern für eine responsive Site](responsi
 
    Siehe [Veröffentlichen von Bildvorgaben](managing-image-presets.md#publishing-image-presets).
 
-1. Wählen Sie in der linken Leiste das Dropdown-Menü aus und wählen Sie **[!UICONTROL Viewer]**.
+1. Wählen Sie in der linken Leiste im Dropdown-Menü **[!UICONTROL Viewer]** aus.
 1. Wählen Sie in der linken Leiste den Namen einer Viewer-Vorgabe aus. Die Viewer-Vorgabe wird auf das Asset angewendet.
 1. Klicken Sie auf **[!UICONTROL Einbetten]**.
 1. Kopieren Sie im Dialogfeld **[!UICONTROL Einbettungs-Code]** den gesamten Code in die Zwischenablage und klicken Sie dann auf **[!UICONTROL Schließen]**.
