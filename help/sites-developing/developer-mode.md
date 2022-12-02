@@ -12,9 +12,9 @@ discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -49,7 +49,7 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >Falls nötig, kann der Modus konfiguriert werden für die Verwendung:
 >
->* auf einer Autoreninstanz im Ausführungsmodus nosamplecontent
+>* auf einer Autoreninstanz mit dem Ausführungsmodus „nosamplecontent“
 >* auf einer Veröffentlichungsinstanz
 >
 >Der Modus sollte nach der Verwendung wieder deaktiviert werden.
@@ -58,8 +58,8 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >Weitere Tipps und Informationen zu Tools finden Sie:
 >
->* im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
->* in der AEM-Gems-Sitzung zum [AEM 6.0-Entwicklermodus](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
+>* im Knowledge-Base-Artikel [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-aem-touchui-issues.html).
+>* in der AEM-Gems-Sitzung zum [AEM 6.0-Entwicklermodus](https://docs.adobe.com/content/ddc/de/gems/aem-6-0-developer-mode.html).
 >
 
 
@@ -120,7 +120,7 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
 
 >[!CAUTION]
 >
->Einige Links zeigen auf das Skript unter `/libs`. Diese dienen jedoch nur als Referenz. **darf nicht** Alles bearbeiten unter `/libs`, da alle Änderungen, die Sie vornehmen, verloren gehen können. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps`, siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
+>Einige Links zeigen auf das Skript unter `/libs`. Diese sind allerdings nur für Referenzzwecke bestimmt. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da von Ihnen gemachte Änderungen möglicherweise verloren gehen. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps` erfolgen. Weitere Informationen hierzu finden Sie in [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
 
 ### Fehler {#errors}
 
@@ -143,4 +143,4 @@ Der Komponenteneintrag in der Struktur auf der Registerkarte „Komponenten“ w
 >
 >In AEM 6.2 wurden die Testfunktionen für den Entwicklermodus neu als eigenständige Toolanwendung implementiert.
 >
->Ausführliche Informationen finden Sie unter [Testen der Benutzeroberfläche](/help/sites-developing/hobbes.md).
+>Ausführliche Informationen finden Sie in [Testen der Benutzeroberfläche](/help/sites-developing/hobbes.md).
