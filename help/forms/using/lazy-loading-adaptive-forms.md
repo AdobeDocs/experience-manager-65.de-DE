@@ -1,5 +1,5 @@
 ---
-title: 'Verbessern der Performance umfangreicher Formulare durch verzögertes Laden '
+title: Verbessern der Performance umfangreicher Formulare durch verzögertes Laden
 seo-title: Improve performance of large forms with lazy loading
 description: Verzögertes Laden verbessert die Leistung von großen und komplexen adaptiven Formularen erheblich, weil Formularfragmente erst initialisiert und geladen werden, wenn sie sichtbar sind.
 seo-description: Lazy loading significantly improves the performance of large and complex adaptive forms by deferring initialization and loading of form fragments until they are visible.
@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1011'
 ht-degree: 100%
 
