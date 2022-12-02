@@ -6,13 +6,13 @@ user-guide-description: AEM Fluid Experiences bietet basierend auf den leistungs
 index: n
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '38'
 ht-degree: 100%
 
 ---
 
 
-# AEM Erlebnisse {#aem-fluid-experiences}
+# AEM Fluid Experiences {#aem-fluid-experiences}
 
 + [Funktionsliste](/help/fluid-experiences/feature-list.md)
