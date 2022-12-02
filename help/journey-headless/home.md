@@ -1,11 +1,11 @@
 ---
 title: AEM Headless-Touren
-description: Eine Sammlung von Journey, die die Verwendung von Adobe Experience Manager as a Headless CMS beschreiben.
+description: Eine Sammlung von Dokumentations-Touren, die die Verwendung von Adobe Experience Manager als Headless-CMS beschreiben.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '459'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
