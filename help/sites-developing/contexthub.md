@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 exl-id: 3fd50655-7461-4900-a3b8-c01b04c7ba7a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -27,9 +27,9 @@ ContextHub ist ein Framework zum Speichern, Ändern und Darstellen von Kontextda
 
 >[!CAUTION]
 >
->Der Pfad, der die von der [We.Retail-Referenzimplementierung](/help/sites-developing/we-retail.md) ( `/libs/settings/cloudsettings/legacy`) sollte nur als Referenz zum Erstellen Ihrer eigenen Konfiguration verwendet werden.
+>Der Pfad, der die ContextHub-Beispielkonfiguration enthält, die von der [We.Retail-Referenzimplementierung](/help/sites-developing/we-retail.md) verwendet wird (`/libs/settings/cloudsettings/legacy`), sollte nur als Referenz zum Erstellen einer eigenen Konfiguration verwendet werden.
 >
->Sie sollte nicht in einem Projekt als eigene ContextHub-Konfiguration verwendet werden.
+>Es sollte nicht in einem Projekt als eigene ContextHub-Konfiguration verwendet werden.
 
 ## Persistenz {#persistence}
 
