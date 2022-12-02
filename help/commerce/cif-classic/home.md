@@ -3,7 +3,7 @@ title: AEM CIF Classic
 description: AEM CIF Classic – Selbsthilfe-Ressourcen und Links zur Dokumentation
 exl-id: ae0823b3-d847-42b6-ba92-e4e949da1799
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '52'
 ht-degree: 100%
 
