@@ -3,7 +3,7 @@ title: Produkt-Cockpit
 description: Arbeiten mit dem Produkt-Cockpit
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '424'
 ht-degree: 100%
 
