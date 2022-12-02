@@ -10,7 +10,7 @@ discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1949'
 ht-degree: 100%
 
@@ -76,7 +76,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
+   <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#exportPDF2-com.adobe.aemfd.docmanager.Document-java.lang.String-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">exportPDF3</a></td>
    <td>Konvertiert Adobe PDF in unterstützte Dateitypen. </td>
    <td>Verarbeitete Dokumente<br /> </td>
    <td> </td>
@@ -196,7 +196,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
    <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/OutputService.html#generatePrintedOutputBatch-java.util.Map-java.util.Map-com.adobe.fd.output.api.PrintedOutputOptions-com.adobe.fd.output.api.BatchOptions-" target="_blank">generatePrintedOutputBatch</a></td>
    <td>Konvertiert einen Satz von XDP- und PDF-Dokumenten in die Formate PostScript (PS), Printer Command Language (PCL) und ZPL. </td>
    <td>Verarbeitete Dokumente</td>
-   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Datensatz und generiert eine PDF-Datei. Wenn Sie einen Datensatz-Batch verarbeiten, zählt der Transaktionsberichts-Service jeden Datensatz als separate PDF-Ausgabedarstellung. <br> Sie können das Flag <a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> verwenden, um mehrere Ausgabedarstellungen zu einer einzigen PDF-Datei zu kombinieren. Unabhängig vom Status des Flags zählt der Service jeden Datensatz als separate PDF-Ausgabedarstellung. </td>
+   <td> Die generatePDFOutputBatch-API kombiniert eine Formularvorlage mit einem Datensatz und generiert eine PDF-Datei. Wenn Sie einen Datensatz-Batch verarbeiten, zählt der Transaktionsberichts-Service jeden Datensatz als separate PDF-Ausgabedarstellung. <br> Sie können das Flag <a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/output/api/BatchOptions.html#getGenerateManyFiles--">getGenerateManyFiles</a> verwenden, um mehrere Ausgabedarstellungen zu einer einzigen PDF-Datei zu kombinieren. Unabhängig vom Status des Flags zählt der Service jeden Datensatz als separate PDF-Ausgabedarstellung. </td>
   </tr>
  </tbody>
 </table>
@@ -243,7 +243,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
    <td> </td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td>
+   <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage-com.adobe.aemfd.docmanager.Document-com.adobe.fd.cpdf.api.ToImageOptionsSpec-" target="_blank">toPS</a></td>
    <td>Konvertiert eine einfache PDF-Datei in das PostScript-Format mithilfe der in der Optionsbeschreibung angegebenen Optionen.</td>
    <td>Verarbeitete Dokumente</td>
    <td> </td>
@@ -292,7 +292,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
   </tr>
   <tr>
    <td><a href="https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/com/adobe/fd/assembler/service/AssemblerService.html#invoke-com.adobe.aemfd.docmanager.Document-java.util.Map-com.adobe.fd.assembler.client.AssemblerOptionSpec-" target="_blank">invoke</a></td>
-   <td>Führt das angegebene DDX-Dokument aus und gibt ein <a href="https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a>-Objekt zurück, das die resultierenden Dokumente enthält. </td>
+   <td>Führt das angegebene DDX-Dokument aus und gibt ein <a href="https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/assembler/client/AssemblerResult.html">AssemblerResult</a>-Objekt zurück, das die resultierenden Dokumente enthält. </td>
    <td>Verarbeitete Dokumente</td>
    <td>Der Assembler-Service unterstützt alle Eingabedateiformate, die von PDF Generator, Forms und Ausgabe-Services unterstützt werden, als Ausgabedateiformate. </td>
   </tr>
