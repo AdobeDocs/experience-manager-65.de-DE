@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
 source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '597'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
 
 # Arbeiten mit Aufgaben {#working-with-tasks}
 
-Aufgaben stellen Aufgaben dar, die inhaltlich zu erledigen sind. Wenn Ihnen eine Aufgabe zugewiesen wird, wird diese in Ihrem Workflow-Posteingang angezeigt. Aufgabenelemente können von Workflow-Elementen durch den Wert der **Typ** Spalte.
+Aufgaben stellen inhaltlich zu erledigende Arbeiten dar. Wenn Ihnen eine Aufgabe zugewiesen wird, wird diese in Ihrem Workflow-Posteingang angezeigt. Aufgabenelemente können von Workflow-Elementen durch den Wert der Spalte **Typ** unterschieden werden.
 
 Aufgaben werden auch in Projekten verwendet, um den Grad der Vollständigkeit des Projekts zu bestimmen.
 
@@ -28,21 +28,21 @@ Aufgaben werden auch in Projekten verwendet, um den Grad der Vollständigkeit de
 
 Sie können den Projektfortschritt verfolgen, indem Sie die aktiven/abgeschlossenen Aufgaben in einem Projekt betrachten, die auf der Kachel **Aufgaben** dargestellt werden. Der Projektfortschritt kann bestimmt werden durch:
 
-* **Aufgabenkachel:** Der Gesamtfortschritt des Projekts wird in der Aufgabenkachel dargestellt, die auf der Seite mit den Projektdetails verfügbar ist.
+* **Aufgabenkachel:** Ein Gesamtfortschritt des Projekts wird in der Aufgabenkachel dargestellt, die auf der Seite „Projektdetails“ zu sehen ist.
 
-* **Aufgabenliste:** Beim Klicken auf die Aufgabenkachel wird eine Liste der Aufgaben angezeigt. Diese Liste enthält detaillierte Informationen zu allen Aufgaben in Zusammenhang mit dem Projekt.
+* **Aufgabenliste:** Beim Klicken auf die Aufgabenkachel wird eine Liste von Aufgaben angezeigt. Diese Liste enthält detaillierte Informationen zu allen Aufgaben in Zusammenhang mit dem Projekt.
 
-Beide Optionen listen Workflow-Aufgaben sowie Aufgaben auf, die Sie direkt in der Aufgabenkachel erstellen.
+Beide Optionen listen sowohl Workflow-Aufgaben als auch Aufgaben, die Sie direkt in der Aufgabenkachel erstellen, auf.
 
 ### Aufgabenkachel {#task-tile}
 
-Wenn ein Projekt verwandte Aufgaben hat, wird innerhalb des Projekts eine Aufgabenkachel angezeigt. Die Aufgabenkachel zeigt den aktuellen Status des Projekts an. Die Anzeige basiert auf den vorhandenen Aufgaben innerhalb des Workflows und beinhaltet keine Aufgaben, die in der Zukunft erzeugt werden, während der Workflow fortgesetzt wird. Die folgenden Informationen sind in der Aufgabenkachel sichtbar:
+Wenn ein Projekt zugehörige Aufgaben hat, wird eine Aufgabenkachel innerhalb des Projekts angezeigt. Die Aufgabenkachel zeigt den aktuellen Status des Projekts an. Die Anzeige basiert auf den vorhandenen Aufgaben innerhalb des Workflows und beinhaltet keine Aufgaben, die in der Zukunft erzeugt werden, während der Workflow fortgesetzt wird. Die folgenden Informationen sind in der Aufgabenkachel sichtbar:
 
 * Prozentsatz der abgeschlossenen Aufgaben
 * Prozentsatz der aktiven Aufgaben
 * Prozentsatz der überfälligen Aufgaben
 
-![Aufgabenkachel](assets/project-tile-tasks.png)
+![Aufgabenkachel](assets/project-tile-tasks.png) 
 
 ### Anzeigen oder Ändern von Aufgaben in einem Projekt {#viewing-or-modifying-the-tasks-in-a-project}
 
@@ -56,16 +56,16 @@ Klicken Sie unten rechts in der Aufgabenkachel auf die Schaltfläche mit Auslass
 
 #### Aufgabendetails {#task-details}
 
-Um weitere Informationen zu einer bestimmten Aufgabe zu erhalten, tippen oder klicken Sie im Posteingang auf die Aufgabe, um sie auszuwählen, und tippen oder klicken Sie auf **Öffnen** in der Symbolleiste.
+Um weitere Informationen zu einer bestimmten Aufgabe zu erhalten, tippen oder klicken Sie im Posteingang auf die Aufgabe, um sie auszuwählen, oder tippen oder klicken Sie auf **Öffnen** in der Symbolleiste.
 
 ![Aufgabendetails](assets/project-task-detail.png)
 
 Über verschiedene Registerkarten können Sie Details der Aufgabe anzeigen, bearbeiten oder hinzufügen.
 
-* **Aufgabe** - Allgemeine Aufgabeninformationen
-* **Projektinformationen** - Zusammenfassung des Projekts, mit dem die Aufgabe verknüpft ist
-* **Workflow-Info** - Zusammenfassung des Workflows, mit dem die Aufgabe verknüpft ist (falls zutreffend)
-* **Kommentare** - Allgemeine Bemerkungen zur Aufgabe selbst
+* **Aufgabe**: Allgemeine Informationen zu Aufgaben
+* **Projektinformationen**:Zusammenfassung des Projekts, mit dem die Aufgabe verknüpft ist
+* **Workflow-Info**:- Zusammenfassung des Workflows, mit dem die Aufgabe verknüpft ist (falls zutreffend)
+* **Kommentare**: Allgemeine Anmerkungen zur Aufgabe selbst
 
 ### Hinzufügen von Aufgaben {#adding-tasks}
 
@@ -73,13 +73,13 @@ Sie können neue Aufgaben zu Projekten hinzufügen. Diese Aufgaben werden dann i
 
 So fügen Sie eine Aufgabe hinzu:
 
-1. Suchen Sie im Projekt die **Aufgaben** tile
-1. Tippen oder klicken Sie auf den nach unten gerichteten Pfeil oben rechts in der Kachel und wählen Sie **Aufgabe erstellen**.
-1. Im **Aufgabe hinzufügen** -Fenster, geben Sie Aufgabendetails wie Priorität, Bevollmächtigten und Fälligkeitsdatum an.
+1. Suchen Sie im Projekt die Kachel **Aufgaben**.
+1. Tippen oder klicken Sie auf den nach unten gerichteten Pfeil oben rechts in der Kachel und klicken Sie auf **Aufgabe erstellen**.
+1. Geben Sie im Fester **Aufgabe hinzufügen** Aufgabendetails wie Priorität, Beauftragter und Fälligkeitsdatum an.
 
    ![Hinzufügen einer Aufgabe](assets/project-add-task.png)
 
-1. Tippen oder klicken Sie auf **Einsenden**.
+1. Tippen oder Klicken Sie auf **Absenden**.
 
 ## Arbeiten mit Aufgaben im Posteingang {#working-with-tasks-in-the-inbox}
 
@@ -89,4 +89,4 @@ Im Posteingang können Sie die Aufgaben öffnen und den Aufgabenstatus festlegen
 
 ![Posteingang](assets/project-inbox.png)
 
-Um eine Aufgabe abzuschließen, wählen Sie die Aufgabe aus und klicken Sie auf **Fertig** in der Symbolleiste. Fügen Sie Informationen zur Aufgabe hinzu und klicken Sie dann auf **Fertig**. In [Ihrem Posteingang](/help/sites-authoring/inbox.md) finden Sie weitere Informationen.
+Um eine Aufgabe abzuschließen, wählen Sie die Aufgabe aus und klicken Sie in der Symbolleiste auf **Abschließen**. Fügen Sie Informationen zur Aufgabe hinzu und klicken Sie dann auf **Fertig**. In [Ihrem Posteingang](/help/sites-authoring/inbox.md) finden Sie weitere Informationen.
