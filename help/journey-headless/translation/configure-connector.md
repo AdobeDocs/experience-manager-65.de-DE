@@ -3,7 +3,7 @@ title: Konfigurieren des Übersetzungs-Connectors
 description: Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1164'
 ht-degree: 100%
 
