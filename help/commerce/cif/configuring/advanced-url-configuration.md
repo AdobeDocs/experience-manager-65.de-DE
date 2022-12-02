@@ -10,7 +10,7 @@ kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '910'
 ht-degree: 100%
 
@@ -60,7 +60,7 @@ Mit den obigen Beispieldaten sieht eine mit dem Standard-URL-Format formatierte 
 
 Dies konfiguriert die URLs der Kategorieseiten und unterstützt die folgenden Optionen:
 
-* `{{page}}.html/{{url_path}}.html` (Standard)
+* `{{page}}.html/{{url_path}}.html` (default)
 * `{{page}}.html/{{url_key}}.html`
 
 Im Fall des [Venia Referenz-Shops](https://github.com/adobe/aem-cif-guides-venia):
