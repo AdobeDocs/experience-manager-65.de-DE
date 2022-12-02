@@ -12,9 +12,9 @@ discoiquuid: ef2321a3-cd51-4298-8782-e1a2ca721868
 docset: aem65
 exl-id: f510ca08-977d-45d5-86af-c4b7634b01ba
 source-git-commit: 084e5d561e25dcbaee4489b65f423fc9166832be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2000'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine bestehende Aktivität,
 * **Targeting-Engine:** Entweder [AEM](/help/sites-authoring/personalization.md#aem) oder [Adobe Target](/help/sites-authoring/personalization.md#adobe-target) als Engine für zielgerichtete Inhalte.
 
 * **Auswählen einer Target-Konfiguration:** (Nur Adobe Target) Die Cloud-Konfiguration, mit der diese Aktivität eine Verbindung zu Adobe Target herstellen soll. Diese Option wird nur angezeigt, wenn Adobe Target für die Targeting-Engine ausgewählt wurde.
-* **Aktivitätstyp: **Der Aktivitätstyp - A/B-Test oder Erlebnis-Targeting
+* **Aktivitätstyp:** Der Aktivitätstyp – A/B-Test oder Erlebnis-Targeting.
 * **Ziele:** (Optional) Eine Beschreibung der Aktivität.
 * **Erlebnisse:** Zuordnungen zwischen Zielgruppennamen und den Marketingsegmenten, die Sie als Ziel auswählen.
 * **Traffic-Anteile**: wurde A/B-Test ausgewählt, können Sie festlegen, welcher Anteil des Traffics (in Prozent) an die verschiedenen Erlebnisse weitergeleitet wird.
@@ -97,7 +97,7 @@ Fügen Sie eine Aktivität hinzu oder bearbeiten Sie eine bestehende Aktivität,
 
 So fügen Sie eine Aktivität hinzu:
 
-1. Klicken oder tippen Sie auf die Marke, für die Sie die Aktivität erstellen, klicken oder tippen Sie auf **Erstellen** und dann **Aktivität erstellen**. Wenn Sie die Aktivität bearbeiten, wählen Sie sie aus und klicken oder tippen Sie auf **Bearbeiten**.
+1. Klicken oder tippen Sie auf die Marke, für die Sie eine Aktivität erstellen möchten, klicken oder tippen Sie auf **Erstellen** und dann auf **Aktivität erstellen**. Wenn Sie die Aktivität bearbeiten möchten, wählen Sie sie aus und klicken oder tippen Sie auf **Bearbeiten**.
 1. Machen Sie folgende Angaben und klicken oder tippen Sie dann auf **Weiter**:
 
    * Der Name der Aktivität.
@@ -109,7 +109,7 @@ So fügen Sie eine Aktivität hinzu:
 1. Fügen Sie der Aktivität mindestens ein Erlebnis hinzu. Tippen/Klicken Sie auf **Erlebnis hinzufügen**.
 1. Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden:
 
-   1. Klicken oder tippen Sie auf &quot;Zielgruppe auswählen&quot;und wählen Sie das Segment aus, auf das Ihr Erlebnis ausgerichtet ist.
+   1. Klicken oder tippen Sie auf **Zielgruppe wählen** und wählen Sie das Segment aus, auf das Ihr Erlebnis abgestimmt ist.
    1. Klicken oder tippen Sie auf **Erlebnis hinzufügen**, geben Sie einen Namen ein und klicken oder tippen Sie auf **OK**.
 
    1. Klicken oder tippen Sie auf **Weiter**.
@@ -229,7 +229,7 @@ Möchten Sie Probleme bei der Synchronisierung vermeiden, geben Sie Aktivitäten
 
 >[!NOTE]
 >
->Wenn Sie eine Kampagne in Adobe Target erstellen, wird eine Eigenschaft mit dem Namen `thirdPartyId t`für jede Kampagne. Wenn Sie die Kampagne in Adobe Target löschen, wird `thirdPartyId` nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (A/B, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Möchten Sie dieses Problem umgehen, geben Sie jeder Kampagne einen eindeutigen Namen. Kampagnennamen lassen sich somit nicht für verschiedene Kampagnentypen wiederverwenden.
+>Wenn Sie eine Kampagne in Adobe Target erstellen, wird jeder Kampagne eine Eigenschaft mit dem Namen `thirdPartyId t` hinzugefügt. Wenn Sie die Kampagne in Adobe Target löschen, wird `thirdPartyId` nicht gelöscht. Die `thirdPartyId` kann nicht für Kampagnen unterschiedlicher Typen (A/B, XT) wiederverwendet werden und lässt sich nicht manuell löschen. Möchten Sie dieses Problem umgehen, geben Sie jeder Kampagne einen eindeutigen Namen. Kampagnennamen lassen sich somit nicht für verschiedene Kampagnentypen wiederverwenden.
 >
 >Wenn Sie denselben Namen im selben Kampagnentyp verwenden, wird die vorhandene Kampagne überschrieben.
 >
