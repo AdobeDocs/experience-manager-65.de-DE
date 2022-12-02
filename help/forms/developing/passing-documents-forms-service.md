@@ -1,7 +1,7 @@
 ---
 title: Übergeben von Dokumenten an den Forms-Service
 seo-title: Passing Documents to the FormsService
-description: 'Übergeben Sie ein com.adobe.idp.Document-Objekt, das den Formularentwurf enthält, an den Forms-Service. Der Forms-Service gibt den Formularentwurf wieder, der sich im com.adobe.idp.Document-Objekt befindet. '
+description: Übergeben Sie ein com.adobe.idp.Document-Objekt, das den Formularentwurf enthält, an den Forms-Service. Der Forms-Service gibt den Formularentwurf wieder, der sich im com.adobe.idp.Document-Objekt befindet.
 seo-description: Pass a com.adobe.idp.Document object that contains the form design to the Forms service. The Forms service renders the form design located in the com.adobe.idp.Document object.
 uuid: 841e97f3-ebb8-4340-81a9-b6db11f0ec82
 contentOwner: admin
@@ -13,7 +13,7 @@ discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 role: Developer
 exl-id: 29c7ebda-407a-464b-a9db-054163f5b737
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1684'
 ht-degree: 100%
 
