@@ -12,9 +12,9 @@ discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '718'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -36,7 +36,7 @@ Die Web-Konsole umfasst eine Reihe von Registerkarten für die Verwaltung der OS
 
 Alle vorgenommenen Änderungen werden sofort auf das laufende System angewendet. Ein Neustart ist nicht erforderlich.
 
-Der Zugriff auf die Konsole ist über `../system/console`; Beispiel:
+Der Zugriff auf die Konsole ist über `../system/console` möglich, z. B.:
 
 `http://localhost:4502/system/console/components`
 
@@ -50,11 +50,11 @@ Die Registerkarte **Konfiguration** dient zur Konfiguration der OSGi-Bundles und
 
 Sie können mit einer der beiden folgenden Methoden auf die Registerkarte **Konfiguration** zugreifen:
 
-* Dropdown-Menü:
+* über das Dropdown-Menü:
 
    **OSGi >**
 
-* die URL; Beispiel:
+* Die URL; Beispiel:
 
    `http://localhost:4502/system/console/configMgr`
 
@@ -81,61 +81,61 @@ Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgen
 
 * **Speichern**
 
-   Speichern Sie die vorgenommenen Änderungen.
+   Speichert die vorgenommenen Änderungen.
 
     Für eine Factory-Konfiguration wird hierdurch eine neue Instanz mit einer Persistent Identity erstellt. Die neue Instanz wird dann unter „Konfigurationen“ aufgelistet.
 
 * **Zurücksetzen**
 
-   Setzen Sie die auf dem Bildschirm angezeigten Parameter auf die zuletzt gespeicherten zurück.
+   Setzt die auf dem Bildschirm gezeigten Parameter auf die zuletzt gespeicherten zurück.
 
 * **Löschen**
 
-   Löschen Sie die aktuelle Konfiguration. Bei einer Standardinstanz werden die Parameter auf die Standardeinstellungen zurückgesetzt. Basiert die Instanz auf einer Factory-Konfiguration, wird die spezifische Instanz gelöscht.
+   Löscht die aktuelle Konfiguration. Bei einer Standardinstanz werden die Parameter auf die Standardeinstellungen zurückgesetzt. Basiert die Instanz auf einer Factory-Konfiguration, wird die spezifische Instanz gelöscht.
 
 * **Bindung aufheben**
 
-   Heben Sie die Bindung der aktuellen Konfiguration aus dem Bundle auf.
+   Hebt die Bindung zwischen der aktuellen Konfiguration und dem Bundle auf.
 
 * **Abbrechen**
 
-   Abbrechen aktueller Änderungen.
+   Verwirft alle aktuellen Änderungen.
 
 ## Bundles {#bundles}
 
-Die **Bundles** tab ist der Mechanismus zum Installieren der für AEM erforderlichen OSGi-Pakete. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+Die Registerkarte **Pakete** stellt den Mechanismus zum Installieren der für AEM erforderlichen OSGi-Pakete dar. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
-* Dropdown-Menü:
+* über das Dropdown-Menü:
 
    **OSGi >**
 
-* die URL; Beispiel:
+* Die URL; Beispiel:
 
    `http://localhost:4502/system/console/bundles`
 
-Eine Liste mit Bundles wird angezeigt:
+Eine Liste mit Paketen wird angezeigt:
 
 ![screen_shot_2012-02-15at44740pm](assets/screen_shot_2012-02-15at44740pm.png)
 
 Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
-* **Installieren oder Aktualisieren**
+* **Installieren oder aktualisieren**
 
-   Sie können **Durchsuchen** , um die Datei zu suchen, die Ihr Bundle enthält, und anzugeben, ob sie **Starten** unmittelbar und **Startstufe**.
+   Hiermit können Sie nach der Datei mit Ihrem Bundle **suchen** und festlegen, ob dieses sofort **gestartet** werden soll, und mit welcher **Startebene**.
 
 * **Neu laden**
 
    Aktualisiert die angezeigte Liste.
 
-* **Aktualisieren von Paketen**
+* **Pakete aktualisieren**
 
-   Dadurch werden die Referenzen aller Pakete überprüft und bei Bedarf aktualisiert.
+   Diese Option prüft die Verweise aller Pakete und aktualisiert sie ggf.
 
     So werden möglicherweise nach einer Aktualisierung die alte und die neue Version aufgrund vorheriger Verweise weiter ausgeführt, Diese Option prüft und transferiert alle Verweise auf die neue Version, sodass die alte Version beendet werden kann.
 
 * **Starten**
 
-   Startet ein Bundle entsprechend der angegebenen Startebene.
+   Startet ein Bundle gemäß der angegebenen Startebene.
 
 * **Anhalten**
 
@@ -147,7 +147,7 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 * **Status anzeigen**
 
-   Die Liste gibt den aktuellen Status des Bundles an. Klicken Sie auf den Namen eines bestimmten Bundles mit weiteren Informationen.
+   Die Liste gibt den aktuellen Status des Bundles an. Klicken Sie auf den Namen eines bestimmten Bundles, um weitere Informationen anzuzeigen.
 
 >[!NOTE]
 >
@@ -155,13 +155,13 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 ## Komponenten {#components}
 
-Die **Komponenten** können Sie die verschiedenen Komponenten aktivieren bzw. deaktivieren. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+Auf der Registerkarte **Komponenten** können die verschiedenen Komponenten aktiviert und/oder deaktiviert werden. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
-* Dropdown-Menü:
+* über das Dropdown-Menü:
 
    **Main >**
 
-* die URL; Beispiel:
+* Die URL; Beispiel:
 
    `http://localhost:4502/system/console/components`
 
