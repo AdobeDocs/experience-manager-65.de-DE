@@ -12,9 +12,9 @@ discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '631'
-ht-degree: 65%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 65%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Mit Adobe Experience Manager (AEM) können Autoren eine Seite in einem Emulator anzeigen, der die Umgebung simuliert, in der ein Benutzer die Seite aufruft, z. B. auf einem mobilen Gerät oder in einem E-Mail-Client.
 
@@ -108,26 +108,26 @@ So kann die vollständige Darstellung des Emulators durch die Verwendung von CSS
 Die vorhandenen mobilen Emulatoren:
 
 * befinden sich unter /libs/wcm/mobile/components/emulators.
-* sind über das JSON-Servlet verfügbar unter:
+* sind über dasJSON-Servlet verfügbar unter:
 
    http://localhost:4502/bin/wcm/mobile/emulators.json
 
-Wenn sich die Seitenkomponente auf die mobile Seitenkomponente ( `/libs/wcm/mobile/components/page`), wird die Emulatorfunktion automatisch über den folgenden Mechanismus in die Seite integriert:
+Wenn die Seitenkomponente auf die mobile Seitenkomponente (`/libs/wcm/mobile/components/page`) angewiesen ist, ist die Emulatorfunktion automatisch durch folgenden Mechanismus in die Seite integriert:
 
 * Die mobile Seitenkomponente `head.jsp` beinhaltet die der Gerätegruppe zugeordnete Initialisierungskomponente des Emulators (nur im author-Modus) und Rendering-CSS durch:
 
    `deviceGroup.drawHead(pageContext);`
 
-* Die Methode `DeviceGroup.drawHead(pageContext)` enthält die Init-Komponente des Emulators, d. h. ruft die `init.html.jsp` der Emulator-Komponente. Wenn die Emulatorkomponente nicht über eine eigene verfügt `init.html.jsp` und basiert auf dem mobilen Basis-Emulator ( `wcm/mobile/components/emulators/base)`, wird das Init-Skript des mobilen Basis-Emulators ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
+* Die Methode `DeviceGroup.drawHead(pageContext)` enthält die Inititialisierungskomponente des Emulators, d. h., sie ruft die `init.html.jsp` der Emulatorkomponente auf. Falls die Emulatorkomponente nicht über eine eigene `init.html.jsp` verfügt, sondern auf den mobilen Basisemulator (`wcm/mobile/components/emulators/base)`) angewiesen ist, wird das Initialisierungsskript des mobilen Basisemulators (`/libs/wcm/mobile/components/emulators/base/init.html.jsp`) aufgerufen.
 
-* Das Init-Skript des mobilen Basis-Emulators definiert über JavaScript:
+* Das Initialisierungsskript des mobilen Basisemulators definiert über JavaScript Folgendes:
 
    * Die Konfiguration für alle Emulatoren, die für die Seite definiert sind (emulatorConfigs)
-   * Der Emulator-Manager, der die Funktionalität des Emulators in die Seite integriert durch:
+   * Der Emulator-Manager, der die Funktionalität des Emulators in die Seite über Folgendes integriert:
 
       `emulatorMgr.launch(config)`;
 
-      Der Emulator-Manager wird folgendermaßen definiert:
+      Der Emulator-Manager wird durch Folgenders definiert:
 
       `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
@@ -135,21 +135,21 @@ Wenn sich die Seitenkomponente auf die mobile Seitenkomponente ( `/libs/wcm/mobi
 
 Gehen Sie zum Erstellen eines benutzerdefinierten mobilen Emulators wie folgt vor:
 
-1. Unter `/apps/myapp/components/emulators` Erstellen der Komponente `myemulator` (Knotentyp: `cq:Component`).
+1. Erstellen Sie unterhalb von `/apps/myapp/components/emulators` die Komponente `myemulator` (Knotentyp: `cq:Component`).
 
-1. Legen Sie die `sling:resourceSuperType` Eigenschaft auf `/libs/wcm/mobile/components/emulators/base`
+1. Legen Sie die `sling:resourceSuperType`-Eigenschaft auf `/libs/wcm/mobile/components/emulators/base` fest.
 
-1. CSS-Client-Bibliothek mit Kategorie definieren `cq.wcm.mobile.emulator` für das Emulator-Erscheinungsbild: name = `css`, node type = `cq:ClientLibrary`
+1. Definieren Sie eine CSS-Client-Bibliothek mit der Kategorie `cq.wcm.mobile.emulator` für das Erscheinungsbild des Emulators: Name = `css`, Knotentyp = `cq:ClientLibrary`.
 
-   Beispielsweise können Sie auf den Knoten verweisen `/libs/wcm/mobile/components/emulators/iPhone/css`
+   Beispielsweise können Sie auf den Knoten `/libs/wcm/mobile/components/emulators/iPhone/css` verweisen.
 
-1. Definieren Sie bei Bedarf eine JS-Client-Bibliothek, um beispielsweise ein bestimmtes Plug-in zu definieren: name = js, node type = cq:ClientLibrary
+1. Definieren Sie bei Bedarf eine JS-Client-Bibliothek, um beispielsweise ein bestimmtes Plug-in zu definieren: Name = js, Knotentyp = cq:ClientLibrary.
 
-   Beispielsweise können Sie auf den Knoten verweisen `/libs/wcm/mobile/components/emulators/base/js`
+   Beispielsweise können Sie auf den Knoten `/libs/wcm/mobile/components/emulators/base/js` verweisen.
 
-1. Wenn der Emulator bestimmte durch Plug-ins definierte Funktionen unterstützt (z. B. Touch-Scrollen), erstellen Sie einen Konfigurationsknoten unter dem Emulator: name = `cq:emulatorConfig`, node type = `nt:unstructured` und fügen Sie die Eigenschaft hinzu, die das Plug-in definiert:
+1. Wenn der Emulator bestimmte, durch Plug-ins definierte Funktionen unterstützt (z. B. Touch-Scrolling), erstellen Sie einen Konfigurationsknoten unterhalb des Emulators: Name = `cq:emulatorConfig`, Knotentyp = `nt:unstructured` und fügen Sie die Eigenschaft hinzu, die das Plug-in definiert:
 
-   * Name = `canRotate`, Typ = `Boolean`, Wert = `true`: , um die Rotationsfunktion einzuschließen.
+   * Name = `canRotate`, Typ = `Boolean`, Wert = `true`: um die Rotationsfunktion einzuschließen.
 
-   * Name = `touchScrolling`, Typ = `Boolean`, Wert = `true`: , um die Funktion zum Touch-Scrollen einzuschließen.
+   * Name = `touchScrolling`, Typ = `Boolean`, Wrt = `true`: fum die Funktion „Touch-Scrolling“ einzuschließen.
    Sie können weitere Funktionen hinzufügen, indem Sie eigene Plug-ins definieren.
