@@ -1,11 +1,11 @@
 ---
 title: 'Schnellstartanleitung für Headless: Abrufen und Bereitstellen von Inhaltsfragmenten'
 description: Erfahren Sie, wie Sie die AEM Assets-REST-API zum Verwalten von Inhaltsfragmenten und die GraphQL-API für die Headless-Bereitstellung von Inhalten der Inhaltsfragmente verwenden.
-exl-id: 2b72f222-2ba5-4a21-86e4-40c763679c32
-source-git-commit: 6c75af3957c319c38177cd62c90e781a982ba91b
-workflow-type: tm+mt
+exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
+source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bere
 
 Informationsarchitekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um Inhalte bereitzustellen. Diese Abfragen müssen in der Regel nur einmal pro Endpunkt und Modell berücksichtigt werden. Für die Zwecke dieser ersten Schritte müssen wir nur eine erstellen.
 
-1. Melden Sie sich bei AEM an und greifen Sie auf die Benutzeroberfläche GraphiQL zu:
+1. Melden Sie sich bei AEM an und rufen Sie die GraphiQL-Oberfläche auf:
    * Beispiel: `https://<host>:<port>/content/graphiql.html`.
 
 1. GraphiQL ist ein In-Browser-Abfrage-Editor für GraphQL. Sie können damit Abfragen zum Abrufen von Inhaltsfragmenten erstellen, um diese als JSON-Datei direkt bereitzustellen.
@@ -59,8 +59,8 @@ Informationsarchitekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um 
    ![GraphiQL-Ergebnisse](../assets/graphiql-results.png)
 
 1. Klicken Sie auf:
-   * **Dokumente** oben rechts auf der Seite, um kontextbezogene Dokumentation anzuzeigen, mit deren Hilfe Sie Abfragen erstellen können, die sich an Ihre eigenen Modelle anpassen.
-   * **Geschichte** in der oberen Symbolleiste, um frühere Abfragen anzuzeigen.
+   * **Dokumente** oben rechts auf der Seite, um eine kontextbezogene Dokumentation anzuzeigen, die Sie bei der Erstellung Ihrer Abfragen unterstützt und sich an Ihre eigenen Modelle anpasst.
+   * **Verlauf** in der oberen Symbolleiste, um frühere Abfragen anzuzeigen.
       ![GraphiQL-Dokumentation](../assets/graphiql-documentation.png)
 
 GraphQL ermöglicht strukturierte Abfragen, die nicht nur auf bestimmte Datensätze oder einzelne Datenobjekte abzielen, sondern auch bestimmte Elemente der Objekte und verschachtelte Ergebnisse bereitstellen, Unterstützung für Abfragevariablen bieten und vieles mehr.
