@@ -6,7 +6,7 @@ feature: Commerce Integration Framework
 thumbnail: 37843.jpg
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '770'
 ht-degree: 100%
 
