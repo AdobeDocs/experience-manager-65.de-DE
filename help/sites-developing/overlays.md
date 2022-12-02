@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 0470b74c-2c34-4327-afed-b95eefb1d521
 exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '606'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ AEM (und zuvor CQ) nutzt seit Langem Überlagerungen, um die [Konsolen](/help/si
 
 Der Begriff „Überlagerung“ kann in unterschiedlichen Zusammenhängen verwendet werden. In diesem Zusammenhang (der Erweiterung von AEM) ist damit die Übernahme der vordefinierten Funktionen und das Anwenden eigener Definitionen (zum Anpassen der Standardfunktionen) gemeint.
 
-In einer Standardinstanz befindet sich die vordefinierte Funktion unter `/libs` Es wird empfohlen, Ihre Überlagerung (Anpassungen) unter der `/apps` -Verzweigung. AEM verwendet einen Suchpfad, um eine Ressource zu finden, wobei zuerst die `/apps` und dann `/libs` -Verzweigung [Suchpfad kann konfiguriert werden](#configuring-the-search-paths)). Durch diesen Mechanismus hat Ihre Überlagerung  (und die dort definierten Anpassungen) Priorität.
+In einer Standardinstanz befindet sich die vordefinierte Funktion unter `/libs` und es empfiehlt sich, die Überlagerung (Anpassungen) unter der Verzweigung `/apps` zu definieren. AEM verwendet einen Suchpfad, um eine Ressource zu finden, wobei zuerst die Verzweigung `/apps` und dann die Verzweigung `/libs` durchsucht wird ([der Suchpfad kann konfiguriert werden](#configuring-the-search-paths)). Durch diesen Mechanismus hat Ihre Überlagerung (und die dort definierten Anpassungen) Priorität.
 
 Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwendung von Überlagerungen vorgenommen:
 
@@ -46,14 +46,14 @@ Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwe
 
    * Methode
 
-      * Inhalt kopieren aus `/libs` nach `/apps`
+      * Kopieren der Inhalte von `/libs` nach `/apps`
 
          Sie müssen die gesamte Unterverzweigung einschließlich der Eigenschaften kopieren.
 
       * Nehmen Sie beliebige Änderungen unter `/apps` vor.
    * Nachteile
 
-      * Auch wenn Ihre Änderungen nicht verloren gehen, wenn sich etwas unter ändert `/libs`müssen Sie möglicherweise bestimmte Änderungen neu erstellen, die in Ihrer Überlagerung unter `/apps`.
+      * Obwohl Ihre Änderungen nicht verloren gehen, wenn sich etwas unter `/libs` ändert, müssen Sie möglicherweise bestimmte Änderungen in Ihrer Überlagerung unter `/apps` neu erstellen.
 
 
 >[!CAUTION]
@@ -64,7 +64,7 @@ Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwe
 
 Überlagerungen empfehlen sich für viele Änderungen, beispielsweise das [Konfigurieren von Konsolen](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) oder [Erstellen der Auswahlkategorie für den Asset-Browser im seitlichen Bedienfeld](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (wird bei der Seitenbearbeitung verwendet). Sie sind aus folgenden Gründen erforderlich:
 
-* You ***darf nicht* Änderungen in `/libs` Verzweigung **Alle Änderungen, die Sie vornehmen, können verloren gehen, da sich diese Verzweigung ändern kann, wenn Sie:
+* Sie dürfen ***keine* Änderungen in der Verzweigung `/libs` vornehmen.**Jegliche Änderungen, die Sie vornehmen, können verloren gehen, da diese Verzweigung in den folgenden Fällen Änderungen unterliegt:
 
    * Bei Upgrades auf Ihrer Instanz
    * Beim Anwenden eines Hotfix
@@ -76,13 +76,13 @@ Seit Einführung von AEM 6.0 wurden Änderungen an der Implementierung und Verwe
 
 Bei Überlagerungen ist die bereitgestellte Ressource ein Aggregat der abgerufenen Ressourcen und Eigenschaften, abhängig von den definierbaren Suchpfaden:
 
-* Der **Suchpfad des Ressourcen-Resolvers** wie in der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) für die **Apache Sling-ResourceResolverFactory** definiert
+* Der **Suchpfad des Ressourcen-Resolvers** wie in der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) für die **Apache Sling-Resource Resolver Factory** definiert
 
    * Die Reihenfolge der Suchpfade von oben nach unten gibt die jeweiligen Prioritäten an.
-   * In einer Standardinstallation sind die primären Standardwerte `/apps`, `/libs` - der Inhalt der `/apps` hat eine höhere Priorität als die von `/libs` (d. h. es *Overlays* ).
+   * In einer Standardinstallation sind die primären Standardwerte `/apps`, `/libs` – der Inhalt von `/apps` hat also eine höhere Priorität als der von `/libs`, (d. h. er *überlagert* diesen).
 
-* Zwei Dienstbenutzer benötigen JCR:READ-Zugriff auf den Speicherort der Skripte. Diese Benutzer sind: components-search-service (verwendet von den com.day.cq.wcm.coreto access/cache-Komponenten) und sling-scripting (verwendet von org.apache.sling.servlets.resolver, um Servlets zu finden).
-* Die folgende Konfiguration muss auch entsprechend der Stelle konfiguriert werden, an der Sie Ihre Skripte platzieren (in diesem Beispiel unter /etc, /libs oder /apps).
+* Zwei Dienstbenutzer benötigen JCR:READ-Zugriff auf den Speicherort der Skripte. Diese Benutzer sind: „components-search-service“ (verwendet von den com.day.cq.wcm.coreto access/cache-Komponenten) und „sling-scripting“ (verwendet von „org.apache.sling.servlets.resolver“, um Servlets zu finden).
+* Die folgende Konfiguration muss außerdem so konfiguriert werden, dass sie dem Speicherort für Ihre Skripte entspricht (in diesem Beispiel unter /etc, /libs oder /apps).
 
    ```
    PID = org.apache.sling.jcr.resource.internal.JcrResourceResolverFactoryImpl
@@ -90,7 +90,7 @@ Bei Überlagerungen ist die bereitgestellte Ressource ein Aggregat der abgerufen
    resource.resolver.vanitypath.whitelist=["/etc/","/apps/","/libs/","/content/"]
    ```
 
-* Schließlich muss auch der Servlet-Resolver konfiguriert werden (in diesem Beispiel auch um /etc hinzuzufügen).
+* Schließlich muss noch der Servlet Resolver konfiguriert werden (in diesem Beispiel auch, um /etc hinzuzufügen).
 
    ```
    PID = org.apache.sling.servlets.resolver.SlingServletResolver
