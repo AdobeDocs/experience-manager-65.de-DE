@@ -6,7 +6,7 @@ role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
 source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1424'
 ht-degree: 100%
 
@@ -140,8 +140,8 @@ Die folgenden Optionen sind auf der Symbolleiste, in der linken Leiste und in de
 
 >[!MORELIKETHIS]
 >
->* [Verwenden des Adobe Experience Manager-Desktop-Programms](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
->* [Konfigurieren von Desktop-Aktionen in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
+>* [Verwenden des Adobe Experience Manager-Desktop-Programms](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de)
+>* [Konfigurieren von Desktop-Aktionen in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#desktopactions-v2)
 >* [Erstellen von verknüpften Smart-Objekten in Adobe Photoshop](https://helpx.adobe.com/de/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Platzieren von Grafiken in Adobe InDesign](https://helpx.adobe.com/de/indesign/using/placing-graphics.html)
 
