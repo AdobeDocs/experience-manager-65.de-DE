@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '488'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Bei Single Page Applications in AEM ist die App für das Routing verantwortlich.
 
 >[!NOTE]
 >
->Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
+>Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendering auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
 
 ## Projekt-Routing {#project-routing}
 
@@ -43,7 +43,7 @@ Eine ausführliche Beschreibung finden Sie im Abschnitt [PageModelManager](/help
 
 >[!NOTE]
 >
->Derzeit veranschaulicht das Beispiel-React-Projekt &quot;We.Retail Journal&quot;den automatisierten Ansatz, während das Angular-Projekt das manuelle Projekt veranschaulicht. Ein halbautomatisierter Ansatz wäre auch ein gültiger Anwendungsfall.
+>Derzeit veranschaulicht das Beispiel-React-Projekt „We.Retail Journal“ den automatisierten Ansatz, während das Angular-Projekt den manuellen Ansatz veranschaulicht. Ein halbautomatisierter Ansatz wäre auch ein gültiger Anwendungsfall.
 
 >[!CAUTION]
 >
