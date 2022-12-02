@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
 exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '201'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -25,4 +25,4 @@ Das Arbeiten mit Dynamic Media ist in der klassischen Benutzeroberfläche nicht 
 
 >[!NOTE]
 >
->Wenn Sie Dynamic Media verwenden, können Sie keine automatischen Uploads verwenden, die verfügbar sind, wenn [Dynamic Media Classic in Adobe Experience Manager integrieren](/help/sites-administering/scene7.md). Siehe [Dynamic Media aktivieren](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media ist standardmäßig deaktiviert.
+>Wenn Sie Dynamic Media verwenden, können Sie keine automatischen Uploads verwenden, die verfügbar sind, wenn [Dynamic Media Classic in Adobe Experience Manager integriert wird](/help/sites-administering/scene7.md). Weitere Informationen finden Sie unter [Aktivieren von Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media ist standardmäßig deaktiviert.
