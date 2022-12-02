@@ -6,19 +6,19 @@ role: User
 feature: Asset Management
 exl-id: 544ef73c-4e4b-433f-a173-fdf1c8f45d8e
 source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '460'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Ein- und Auschecken von Dateien im DAM von [!DNL Experience Manager] {#check-in-and-check-out-files-in-assets}
 
-| Version | Artikellink |
+| Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=en) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/check-out-and-submit-assets.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/check-out-and-submit-assets.html?lang=en) |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/check-out-and-submit-assets.html?lang=de) |
 
 Mit [!DNL Adobe Experience Manager Assets] können Sie Assets zum Bearbeiten auschecken und dann wieder einchecken, wenn Sie keine weiteren Änderungen vornehmen möchten. Wenn Sie ein Asset ausgecheckt haben, können nur Sie das Asset bearbeiten, mit Anmerkungen versehen, veröffentlichen, verschieben oder löschen. Beim Auschecken eines Assets wird das Asset gesperrt. Andere Benutzer können diese Vorgänge erst dann für das Asset ausführen, wenn Sie das Asset wieder in [!DNL Assets] eingecheckt haben. Allerdings können Sie nach wie vor die Metadaten für das gesperrte Asset ändern.
 
@@ -30,7 +30,7 @@ Mithilfe dieser Funktion können Sie verhindern, dass Benutzer die von einem Aut
 
 1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche das Asset aus, das ausgecheckt werden soll. Sie können auch mehrere Assets zum Auschecken auswählen.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Auschecken]**. Die Option **[!UICONTROL Auschecken]** wird zu **[!UICONTROL Einchecken]** umgeschaltet.
-Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeiten können, melden Sie sich unter einem anderen Benutzernamen an. Auf der Miniaturansicht des Assets, das Sie ausgecheckt haben, wird ein Sperrsymbol angezeigt.
+Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeiten können, melden Sie sich unter einem anderen Benutzernamen an. Ein Schlosssymbol wird auf der Miniatur des Assets angezeigt, das Sie ausgecheckt haben.
 
    ![chlimage_1-471](assets/chlimage_1-471.png)
 
@@ -54,9 +54,9 @@ Um zu überprüfen, ob andere Benutzer das von Ihnen ausgecheckte Asset bearbeit
 
 ## Erzwungenes Einchecken {#forced-check-in}
 
-Administratoren können von anderen Benutzern ausgecheckte Assets einchecken.
+Admins können von anderen Benutzern ausgecheckte Assets einchecken.
 
-1. Melden Sie sich bei [!DNL Assets] als Administrator an.
+1. Melden Sie sich bei [!DNL Assets] als Admin an.
 1. Wählen Sie in der [!DNL Assets]-Benutzeroberfläche ein bzw. mehrere Assets, das bzw. die von anderen Benutzern ausgecheckt wurde(n).
 
    ![chlimage_1-476](assets/chlimage_1-476.png)
