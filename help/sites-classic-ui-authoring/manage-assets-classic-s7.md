@@ -331,9 +331,9 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt Experience Manager stand
 >* Bei [aktivierter sicherer Vorschau](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) werden die auf Dynamic Media Classic (Scene7) veröffentlichten und nicht veröffentlichten Assets im Dynamic Media Classic (Scene7)-Inhaltsbrowser angezeigt.
 >* Wenn **[!UICONTROL Dynamic Media Classic (Scene7)]** oder das Symbol **[!UICONTROL S7]** nicht als Option im Inhaltsbrowser angezeigt wird, müssen Sie [Dynamic Media Classic (Scene7) für die Verwendung mit Experience Manager konfigurieren](/help/sites-administering/scene7.md).
 >* Für Videos unterstützt der Dynamic Media Classic (Scene7)-Inhaltsbrowser Folgendes:
-   >   * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
-   >   * Einzelnes MP4-Video
-   >   * Einzelnes F4V-Video
+>   * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
+>   * Einzelnes MP4-Video
+>   * Einzelnes F4V-Video
 
 
 ### Durchsuchen von Inhalten {#browsing-content-in-the-classic-ui}

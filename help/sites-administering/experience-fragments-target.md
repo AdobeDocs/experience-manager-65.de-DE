@@ -27,15 +27,15 @@ ht-degree: 100%
 >6.5.3.0:
 >
 >* **Externalizer-Domains** können jetzt ausgewählt werden.
-   >  **Hinweis:** Externalizer-Domains sind nur für den Inhalt des Experience Fragments, das an Target gesendet wird, relevant und nicht Metadaten wie Inhalte zum Anzeigen von Angeboten.
+>  **Hinweis:** Externalizer-Domains sind nur für den Inhalt des Experience Fragments, das an Target gesendet wird, relevant und nicht Metadaten wie Inhalte zum Anzeigen von Angeboten.
 >
 >6.5.2.0:
 >
 >* Experience Fragments können in Folgendes exportiert werden:
-   >
-   >   * den Standardarbeitsbereich
-   >   * einen benannten Arbeitsbereich, der in der Cloud-Konfiguration angegeben ist.
-   >   * **Hinweis:** Für den Export in bestimmte Arbeitsbereiche ist Adobe Target Premium erforderlich.
+>
+>   * den Standardarbeitsbereich
+>   * einen benannten Arbeitsbereich, der in der Cloud-Konfiguration angegeben ist.
+>   * **Hinweis:** Für den Export in bestimmte Arbeitsbereiche ist Adobe Target Premium erforderlich.
 >
 >* AEM muss [mit Adobe Target über IMS integriert](/help/sites-administering/integration-target-ims.md) sein.
 >

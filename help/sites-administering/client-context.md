@@ -116,7 +116,7 @@ Beispiel: die Frage, ob sich die Maus aktuell im linken oder rechten Fensterbere
 **Tag-Cloud**: Zeigt die auf der aktuellen Seite gesetzten und beim Navigieren auf der Site gesammelten Tags an. Wenn Sie mit der Maus auf ein Tag zeigen, sehen Sie, wie oft der aktuelle Benutzer auf Seiten mit diesem bestimmten Tag zugegriffen hat.
 
 >[!NOTE]
-Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden nicht gezählt.
+>Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden nicht gezählt.
 
 **Technografie-Store**: Diese Komponente hängt von Ihrer Installation ab.
 
@@ -127,7 +127,7 @@ Dieser Sitzungsstore verfügt über keine standardmäßige ClientContext-Kompone
 Weitere Informationen finden Sie unter [ClientContext im Detail](/help/sites-developing/client-context.md).
 
 >[!NOTE]
-Die Seitendaten sind keine Standardkomponenten in ClientContext mehr. Sie können sie ggf. hinzufügen, indem Sie ClientContext bearbeiten, die Komponente **Generische Store-Eigenschaften** hinzufügen und dann eine entsprechende Konfiguration durchführen, um den **Store** als `pagedata` zu definieren.
+>Die Seitendaten sind keine Standardkomponenten in ClientContext mehr. Sie können sie ggf. hinzufügen, indem Sie ClientContext bearbeiten, die Komponente **Generische Store-Eigenschaften** hinzufügen und dann eine entsprechende Konfiguration durchführen, um den **Store** als `pagedata` zu definieren.
 
 ## Ändern des ClientContext-Profils {#changing-the-client-context-profile}
 
