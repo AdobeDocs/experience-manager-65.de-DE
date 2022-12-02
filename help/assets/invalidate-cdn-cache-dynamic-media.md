@@ -9,7 +9,7 @@ role: User, Admin
 feature: CDN Cache
 exl-id: 23d3c274-0736-49f7-8d44-a56a55cfd06d
 source-git-commit: b61157b0e9afa49ef72150ae0c1703a959d154be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1349'
 ht-degree: 100%
 
