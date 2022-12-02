@@ -1,32 +1,32 @@
 ---
-title: Erkennung Asset-Duplikaten aktivieren
-description: Erfahren Sie, wie Sie die Erkennung doppelter Assets in Experience Manager aktivieren.
+title: Erkennung von Asset-Duplikaten aktivieren
+description: Erfahren Sie, wie Sie die Erkennung von Asset-Duplikaten in Experience Manager aktivieren.
 contentOwner: AG
 role: User, Admin
 feature: Asset Management,Asset Reports
 exl-id: a403d60e-2193-4835-8f37-4a40f2d01819
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '157'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
-# Erkennung Asset-Duplikaten aktivieren {#enable-detection-of-duplicate-assets}
+# Erkennung von Asset-Duplikaten aktivieren {#enable-detection-of-duplicate-assets}
 
-Wenn Sie versuchen, ein Asset hochzuladen, das in [!DNL Adobe Experience Manager Assets], identifiziert die Funktion zur Duplikatserkennung sie als Duplikat. Die Duplikatserkennung ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um die Funktion zu aktivieren:
+Beim Versuch, ein Asset hochzuladen, das in [!DNL Adobe Experience Manager Assets] vorhanden ist, wird es von der Funktion zur Duplikatserkennung als Duplikat identifiziert. Die Duplikatserkennung ist standardmäßig deaktiviert. Gehen Sie wie folgt vor, um die Funktion zu aktivieren:
 
-1. Öffnen Sie die [!DNL Experience Manager] Web-Konsolenkonfigurationsseite durch Zugriff auf `https://[aem_server]:[port]/system/console/configMgr`.
-1. Bearbeiten der Konfiguration für das Servlet **[!UICONTROL Day CQ DAM Create Asset]**.
-1. Wählen Sie die **[!UICONTROL Duplikat erkennen]** und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Öffnen Sie die Seite [!DNL Experience Manager]-Web-Konsolen-Konfiguration über `https://[aem_server]:[port]/system/console/configMgr`.
+1. Bearbeiten Sie die Konfiguration für das Servlet **[!UICONTROL Day CQ DAM Create Asset]**.
+1. Aktivieren Sie die Option **[!UICONTROL Duplikat erkennen]**, und klicken Sie auf **[!UICONTROL Speichern]**.
 
    ![Auswahl der Option „Duplikat erkennen“ im Servlet](assets/chlimage_1-377.png)
 
-   *Abbildung: Wählen Sie die Option Duplikat erkennen im Servlet aus.*
+   *Abbildung: Auswahl der Option „Duplikat erkennen“ im Servlet.*
 
-Die Funktion zur Duplikatserkennung ist jetzt in aktiviert. [!DNL Assets]. Wenn ein Benutzer versucht, ein Asset hochzuladen, das in [!DNL Experience Manager], prüft das System auf Konflikte und zeigt sie an. Die Assets werden mit dem SHA-1-Hash identifiziert, der unter `jcr:content/metadata/dam:sha1`, d. h. doppelte Assets werden unabhängig von den Dateinamen erkannt.
+Die Funktion zur Duplikatserkennung ist nun in [!DNL Assets] aktiviert. Wenn ein Benutzer versucht, ein Asset hochzuladen, das in [!DNL Experience Manager] vorhanden ist, prüft das System auf Konflikte und zeigt diese an. Die Elemente werden mit dem unter `jcr:content/metadata/dam:sha1` gespeicherten SHA-1-Hash identifiziert, d. h. doppelte Assets werden unabhängig von den Dateinamen erkannt.
 
 >[!MORELIKETHIS]
 >
->* [Duplizieren von Assets in einem vorhandenen Repository (ein Tutorial von einem Community-Mitglied)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
+>* [Duplizieren von Assets im vorhandenen Repository (Tutorial eines Community-Mitglieds)](https://experience-aem.blogspot.com/2019/06/aem-65-find-duplicate-assets-binaries-in-existing-repository.html)
 
