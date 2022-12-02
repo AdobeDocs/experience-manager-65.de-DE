@@ -1,7 +1,7 @@
 ---
 title: Application Manager Client JavaAPI Quick Start(SOAP)
 seo-title: Application Manager Client JavaAPI Quick Start(SOAP)
-description: Application Manager Client JavaAPI-Schnellstart (SOAP)
+description: Application Manager Client JavaAPI Quick Start(SOAP)
 uuid: 043f1c08-c7de-4e2d-88ca-b46428b1b551
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,13 @@ discoiquuid: 2ec2a75e-4191-4660-a6f2-26cc667720b3
 role: Developer
 exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '438'
 ht-degree: 100%
 
 ---
 
-# Schnellstart für Anwendungs-Manager Client JavaAPI (SOAP) {#application-manager-client-javaapi-quick-start-soap}
+# Application Manager Client JavaAPI Quick Start (SOAP) {#application-manager-client-javaapi-quick-start-soap}
 
 Der folgende Java API Quick Start(SOAP) ist für den Application Manager-Client verfügbar.
 
