@@ -12,17 +12,17 @@ discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 feature: Multi Site Manager
 exl-id: e145e79a-c363-4a33-b9f9-99502ed20563
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '910'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
 # MSM-Rollout-Konflikte{#msm-rollout-conflicts}
 
-Konflikte können auftreten, wenn neue Seiten mit demselben Seitennamen sowohl in der Blueprint-Verzweigung als auch in einer abhängigen Live Copy-Verzweigung erstellt werden.
+Konflikte sind möglich, wenn neue Seiten mit demselben Seitennamen im Blueprint-Zweig und in einer abhängigen Live Copy-Verzweigung erstellt werden.
 
-Solche Konflikte müssen nach dem Rollout gehandhabt und aufgelöst werden.
+Solche Konflikte müssen beim Rollout gehandhabt und aufgelöst werden.
 
 ## Konfliktbehandlung {#conflict-handling}
 
@@ -44,11 +44,11 @@ In den folgenden Abschnitten werden wir zum Veranschaulichen der verschiedenen V
 
 * Blueprint: `/b`
 
-   eine Übergeordnete Seite; mit einer untergeordneten Seite, bp-level-1.
+   Primäre Seite mit 1 untergeordneten Seite, bp-level-1.
 
-* Live Copy: `/b`
+* Live Copy: `/b`
 
-   Eine manuell im Live Copy-Zweig erstellte Seite; mit einer untergeordneten Seite, `lc-level-1`.
+   Eine im Live Copy-Zweig manuell erstellte Seite mit 1 untergeordneten Seite, `lc-level-1`.
 
    * Bei Veröffentlichung als `/b` aktiviert, zusammen mit der untergeordneten Seite.
 
@@ -57,19 +57,19 @@ In den folgenden Abschnitten werden wir zum Veranschaulichen der verschiedenen V
 <table>
  <tbody>
   <tr>
-   <td><strong>Blueprint vor Rollout</strong></td>
-   <td><strong>Live Copy vor Rollout</strong></td>
-   <td><strong>vor dem Rollout veröffentlichen</strong></td>
+   <td><strong>Blueprint vor dem Rollout</strong></td>
+   <td><strong>Live Copy vor dem Rollout</strong></td>
+   <td><strong>Vor dem Rollout veröffentlichen</strong></td>
   </tr>
   <tr>
-   <td><code>b</code> <br /> (erstellt in Blueprint-Verzweigung, bereit für Rollout)<br /> </td>
-   <td><code>b</code> <br /> (manuell im Live Copy-Zweig erstellt)<br /> </td>
-   <td><code>b</code> <br /> (enthält den Inhalt der Seite b, die manuell im Live Copy-Zweig erstellt wurde)</td>
+   <td><code>b</code> <br /> (In der Blueprint-Verzweigung erstellt, bereit für den Rollout)<br /> </td>
+   <td><code>b</code> <br /> (Manuell in der Live Copy-Verzweigung erstellt)<br /> </td>
+   <td><code>b</code> <br /> (Enthält den Inhalt der Seite b, die in der Live Copy-Verzweigung manuell erstellt wurde)</td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
-   <td><code> /lc-level-1</code> <br /> (manuell im Live Copy-Zweig erstellt)<br /> </td>
-   <td><code> /lc-level-1</code> <br /> (enthält den Inhalt der Seite<br /> untergeordnete Ebene 1, die manuell im Live Copy-Zweig erstellt wurde)</td>
+   <td><code> /lc-level-1</code> <br /> (Manuell in der Live Copy-Verzweigung erstellt)<br /> </td>
+   <td><code> /lc-level-1</code> <br /> (Enthält den Inhalt der Seite<br /> „child-level-1“, die in der Live Copy-Verzweigung manuell erstellt wurde)</td>
   </tr>
  </tbody>
 </table>
@@ -80,17 +80,17 @@ Mit dem Rollout-Manager können Sie das Konflikt-Management aktivieren oder deak
 
 Dies erfolgt mithilfe der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) von **Day CQ WCM Rollout Manager**:
 
-* **Konflikt mit manuell erstellten Seiten beheben**:
+* **So können Sie einen Konflikt mit manuell erstellten Seiten beheben**:
 
-   ( `rolloutmgr.conflicthandling.enabled`)
+   (`rolloutmgr.conflicthandling.enabled`)
 
-   Setzen Sie dies auf &quot;true&quot;, wenn der Rollout-Manager Konflikte von einer Seite handhaben soll, die in der Live Copy mit einem Namen erstellt wurde, der im Blueprint vorhanden ist.
+   Legen Sie auf „true“ fest, wenn der Rollout-Manager Konflikte von einer Seite bewältigen soll, die in der Live Copy mit einem in der Blueprint vorhandenen Namen erstellt wurde.
 
 AEM verfügt über ein [vordefiniertes Verhalten, wenn das Konflikt-Management deaktiviert wurde](#behavior-when-conflict-handling-deactivated).
 
 ## Konflikt-Handler {#conflict-handlers}
 
-AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einem Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist ein (das übliche) Verfahren zum Beheben derartiger Konflikte. Mehrere Konflikt-Handler können aktiv sein, um eine Reihe verschiedener Verhaltensweisen zu ermöglichen.
+AEM nutzt Konflikt-Handler zum Lösen von Seitenkonflikten, die beim Rollout von Inhalten von einer Blueprint zu einer Live Copy vorliegen. Das Umbenennen von Seiten ist ein (das übliche) Verfahren zum Beheben derartiger Konflikte. Mehrere Konflikt-Handler können aktiv sein, um eine Reihe verschiedener Verhaltensweisen zu ermöglichen.
 
 AEM stellt Folgendes bereit:
 
@@ -105,22 +105,22 @@ AEM stellt Folgendes bereit:
 
 Der Standard-Konflikt-Handler:
 
-* Wird aufgerufen `ResourceNameRolloutConflictHandler`
+* Heißt `ResourceNameRolloutConflictHandler`
 
 * Mit diesem Handler hat die Blueprint-Seite Vorrang.
-* Der Service-Rang für diesen Handler ist niedrig (&quot;d. h. unter dem Standardwert für `service.ranking` -Eigenschaft), da davon ausgegangen wird, dass benutzerdefinierte Handler einen höheren Rang benötigen. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
+* Das Service-Ranking für diesen Handler wurde als niedrig festgelegt (d. h. unterhalb des Standardwerts für die Eigenschaft `service.ranking`), da davon ausgegangen wird, dass benutzerdefinierte Handler ein höheres Ranking benötigen. Allerdings ist das Ranking nicht das absolute Minimum, um bei Bedarf Flexibilität zu gewährleisten.
 
-Dieser Konflikt-Handler gibt dem Blueprint Vorrang. Die Live Copy-Seite `/b` wird (innerhalb des Live Copy-Zweigs) nach `/b_msm_moved`.
+Dieser Konflikt-Handler gibt dem Blueprint Vorrang. Die Live Copy-Seite `/b` wird (innerhalb der Live Copy-Verzweigung) nach `/b_msm_moved` verschoben.
 
-* Live Copy: `/b`
+* Live Copy: `/b`
 
-   wird (innerhalb der Live Copy) nach `/b_msm_moved`. Dies dient als Sicherung und stellt sicher, dass keine Inhalte verloren gehen.
+   Wird (innerhalb der Live Copy) nach `/b_msm_moved` verschoben. Dies dient als Sicherung und stellt sicher, dass keine Inhalte verloren gehen.
 
    * `lc-level-1` wird nicht verschoben.
 
 * Blueprint: `/b`
 
-   Wird auf die Live Copy-Seite übertragen `/b`.
+   Wird beim Rollout auf die Live Copy-Seite `/b` verschoben.
 
    * `bp-level-1` wird beim Rollout auf die Live Copy-Seite verschoben.
 
@@ -129,25 +129,25 @@ Dieser Konflikt-Handler gibt dem Blueprint Vorrang. Die Live Copy-Seite `/b` wir
 <table>
  <tbody>
   <tr>
-   <td><strong>Blueprint nach Rollout</strong></td>
-   <td><strong>Live Copy nach Rollout</strong><br /> </td>
+   <td><strong>Blueprint nach dem Rollout</strong></td>
+   <td><strong>Live Copy nach dem Rollout</strong><br /> </td>
    <td></td>
-   <td><strong>Live Copy nach Rollout</strong><br /> <br /> <br /> </td>
-   <td><strong>nach dem Rollout veröffentlichen</strong><br /> <br /> </td>
+   <td><strong>Live Copy nach dem Rollout</strong><br /> <br /> <br /> </td>
+   <td><strong>Nach dem Rollout veröffentlichen</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (hat den Inhalt der Blueprint-Seite b, die bereitgestellt wurde)<br /> </td>
+   <td><code>b</code> <br /> (Enthält den Inhalt der Blueprint-Seite b, die beim Rollout verschoben wurde)<br /> </td>
    <td></td>
-   <td><code>b_msm_moved</code> <br /> (weist den Inhalt der Seite b auf, die manuell im Live Copy-Zweig erstellt wurde)</td>
-   <td><code>b</code> <br /> (keine Änderung; enthält den Inhalt der Originalseite b , die manuell im Live Copy-Zweig erstellt wurde und jetzt als b_msm_moved bezeichnet wird)<br /> </td>
+   <td><code>b_msm_moved</code> <br /> (Enthält den Inhalt der Seite b, die in der Live Copy-Verzweigung manuell erstellt wurde)</td>
+   <td><code>b</code> <br /> (Keine Änderung, enthält den Inhalt der Originalseite b, die manuell in der Live Copy-Verzweigung erstellt wurde und jetzt b_msm_moved heißt)<br /> </td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code></td>
    <td><code class="code"> /bp-level-1</code></td>
-   <td><code> /lc-level-1</code> <br /> (keine Änderung)</td>
+   <td><code> /lc-level-1</code> <br /> (Keine Änderung)</td>
    <td><code> </code></td>
-   <td><code> /lc-level-1</code> <br /> (keine Änderung)</td>
+   <td><code> /lc-level-1</code> <br /> (Keine Änderung)</td>
   </tr>
  </tbody>
 </table>
@@ -164,7 +164,7 @@ Benutzerdefinierte Konflikt-Handler können:
 
    * **Dienstpriorität**:
 
-      Definiert die Reihenfolge für andere Konflikt-Handler ( `service.ranking`).
+      Bestimmt die Reihenfolge in Bezug auf andere Konflikt-Handler (`service.ranking`).
 
       Der Standardwert ist 0.
 
@@ -182,7 +182,7 @@ In diesem Fall hat die Live Copy effektiv Vorrang. Die Blueprint-Seite `/b` wird
 
    wird überhaupt nicht kopiert, sondern ignoriert.
 
-* Live Copy: `/b`
+* Live Copy: `/b`
 
    Bleibt gleich.
 
@@ -192,19 +192,19 @@ In diesem Fall hat die Live Copy effektiv Vorrang. Die Blueprint-Seite `/b` wird
  </caption>
  <tbody>
   <tr>
-   <td><strong>Blueprint nach Rollout</strong></td>
-   <td><strong>Live Copy nach Rollout</strong><br /> <br /> <br /> </td>
-   <td><strong>nach dem Rollout veröffentlichen</strong><br /> <br /> </td>
+   <td><strong>Blueprint nach dem Rollout</strong></td>
+   <td><strong>Live Copy nach dem Rollout</strong><br /> <br /> <br /> </td>
+   <td><strong>Nach dem Rollout veröffentlichen</strong><br /> <br /> </td>
   </tr>
   <tr>
    <td><code>b</code></td>
-   <td><code>b</code> <br /> (keine Änderung; den Inhalt der Seite b hat, die manuell im Live Copy-Zweig erstellt wurde)</td>
-   <td><code>b</code> <br /> (keine Änderung; enthält den Inhalt der Seite b , die manuell im Live Copy-Zweig erstellt wurde)<br /> </td>
+   <td><code>b</code> <br /> (keine Änderung; enthält den Inhalt der Seite b, die in der Verzweigung der Live Copy manuell erstellt wurde)</td>
+   <td><code>b</code> <br /> (keine Änderung; enthält den Inhalt der Seite b, die manuell in der Verzweigung der Live Copy erstellt wurde)<br /> </td>
   </tr>
   <tr>
    <td><code> /bp-level-1</code> </td>
-   <td><code> /lc-level-1</code> <br /> (keine Änderung)</td>
-   <td><code> /lc-level-1</code> <br /> (keine Änderung)</td>
+   <td><code> /lc-level-1</code> <br /> (Keine Änderung)</td>
+   <td><code> /lc-level-1</code> <br /> (Keine Änderung)</td>
   </tr>
  </tbody>
 </table>
