@@ -11,9 +11,9 @@ feature: Asset Management
 role: User, Admin
 exl-id: 753d806f-5f44-4d73-a3a3-a2a0fc3e154b
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '334'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Verwenden Sie diese Funktion, wenn sich Ihre Website auf einem Drittanbieter-WCM
 
 Informationen hierzu finden Sie unter [Einbetten des Video-Viewers auf einer Web-Seite](embed-code.md).
 
-Siehe auch [Verknüpfen von URLs mit einer Webanwendung](linking-urls-to-yourwebapplication.md).
+Siehe auch [Verknüpfen von URLs mit Ihrer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
 **So stellen Sie optimierte Bilder für eine responsive Website bereit:**
 
@@ -41,16 +41,16 @@ Siehe auch [Verknüpfen von URLs mit einer Webanwendung](linking-urls-to-yourweb
    >
    >Das ausgewählte Asset *und* die ausgewählte Bildvorgabe oder Viewer-Vorgabe müssen veröffentlicht werden, um die Schaltfläche **[!UICONTROL URL]** oder **[!UICONTROL RESS]** verfügbar zu machen.
    >
-   >Für den Hybridmodus von Dynamic Media müssen Sie Bildvorgaben veröffentlichen. Im Modus Dynamic Media - Scene7 werden Bildvorgaben automatisch veröffentlicht.
+   >Wenn Sie Dynamic Media im Hybridmodus ausführen, müssen Sie Bildvorgaben manuell veröffentlichen. Im Scene7-Modus von Dynamic Media werden Bildvorgaben automatisch veröffentlicht.
 
 1. Wählen Sie **[!UICONTROL RESS]** aus.
 
    ![chlimage_1-410](assets/chlimage_1-410.png)
 
 1. Wählen Sie im Dialogfeld **[!UICONTROL Responsive Bilder einbetten]** den responsiven Code-Text aus und fügen Sie ihn in Ihre Website ein, um auf das responsive Asset zuzugreifen.
-1. Bearbeiten Sie die Standard-Haltepunkte im Einbettungscode so, dass sie mit den Haltepunkten der responsiven Website direkt im Code übereinstimmen. Testen Sie außerdem die verschiedenen Bildauflösungen bei verschiedenen Seiten-Breakpoints.
+1. Bearbeiten Sie die Standard-Breakpoints im Embed-Code direkt im Code so, dass sie denen der responsiven Website entsprechen. Testen Sie außerdem die verschiedenen Bildauflösungen bei verschiedenen Seiten-Breakpoints.
 
-## Bereitstellen von Dynamic Media-Assets über HTTP/2 {#using-http-to-delivery-your-dynamic-media-assets}
+## Bereitstellen von Dynamic Media-Assets mit HTTP/2 {#using-http-to-delivery-your-dynamic-media-assets}
 
 HTTP/2 ist das neue, aktualisierte Web-Protokoll, das die Kommunikation zwischen Browser und Servern verbessert. Es beschleunigt die Übertragung von Informationen und reduziert die erforderliche Prozessorleistung. Die Bereitstellung von Dynamic Media-Assets kann über HTTP/2 erfolgen, das schnellere Antwort- und Ladezeiten bietet.
 
