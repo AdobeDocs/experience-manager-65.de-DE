@@ -12,9 +12,9 @@ discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '963'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -43,7 +43,7 @@ AEM bietet jetzt zwei grundlegende Arten von Vorlagen zum Erstellen von Seiten a
 
 ### Bearbeitbare Vorlagen {#editable-templates}
 
-Bearbeitbare Vorlagen werden jetzt als Best Practices für die Entwicklung mit AEM betrachtet.
+Bearbeitbare Vorlagen gelten nun als Best Practices für die Entwicklung mit AEM.
 
 Die Vorteile von bearbeitbaren Vorlagen:
 
@@ -57,12 +57,12 @@ Die Vorteile von bearbeitbaren Vorlagen:
 
 * Nachdem die neue Seite erstellt wurde, wird eine dynamische Verbindung zwischen der Seite und der Vorlage aufrechterhalten. Das bedeutet, dass Änderungen an der Vorlagenstruktur auf allen mit dieser Vorlage erstellten Seiten wiedergegeben werden (Änderungen am ursprünglichen Inhalt werden nicht berücksichtigt).
 * Verwendet Inhaltsrichtlinien (die im Vorlageneditor bearbeitet wurden), um die Designeigenschaften beizubehalten (verwendet den Designmodus im Seiteneditor nicht).
-* werden gespeichert unter `/conf`
+* Werden gespeichert unter `/conf`
 * Siehe [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md) für weitere Informationen.
 
 >[!NOTE]
 >
->Es steht ein AEM Community-Artikel zur Verfügung, der erklärt, wie eine Experience Manager-Site mit bearbeitbaren Vorlagen erstellt wird, siehe [Erstellen einer Adobe Experience Manager 6.5-Website mithilfe bearbeitbarer Vorlagen](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
+>In einem AEM-Community-Artikel wird erläutert, wie Sie eine Experience Manager-Website mit bearbeitbaren Vorlagen erstellen, siehe [Erstellen einer Adobe Experience Manager 6.5-Website mit bearbeitbaren Vorlagen](https://helpx.adobe.com/experience-manager/using/first_aem64_website.html).
 
 ### Statische Vorlagen {#static-templates}
 
@@ -73,14 +73,14 @@ Statische Vorlagen:
 * Eine statische Vorlage ist eine Hierarchie von Knoten, die dieselbe Struktur wie die zu erstellende Seite, jedoch keinen tatsächlichen Inhalt aufweist.
 * Werden kopiert, um die neue Seite zu erstellen, danach besteht keine dynamische Verbindung mehr.
 * Verwenden den [Designmodus](/help/sites-authoring/default-components-designmode.md), um Designeigenschaften beizubehalten.
-* werden gespeichert unter `/apps`
+* Werden gespeichert unter `/apps`
 * Siehe [Statische Vorlagen](/help/sites-developing/page-templates-static.md) für weitere Informationen.
 
 >[!NOTE]
 >
->Ab AEM 6.5 gilt die Verwendung statischer Vorlagen nicht mehr als bewährtes Verfahren. Verwenden Sie stattdessen bearbeitbare Vorlagen.
+>Ab AEM 6.5 gilt die Verwendung statischer Vorlagen nicht mehr als Best Practice. Verwenden Sie stattdessen bearbeitbare Vorlagen.
 >
->[AEM Modernisierung](modernization-tools.md) -Tools können Ihnen bei der Migration von statischen zu bearbeitbaren Vorlagen helfen.
+>[AEM-Modernisierung](modernization-tools.md)-Tools können Ihnen bei der Migration von statischen zu bearbeitbaren Vorlagen helfen.
 
 ### Verfügbarkeit von Vorlagen {#template-availability}
 
@@ -94,7 +94,7 @@ Statische Vorlagen:
 >
 >* nur im Site-Stamm
 >
->Ein Beispiel finden Sie unter We.Retail: `/content/we-retail/jcr:content`
+>Ein Beispiel finden Sie unter „We.Retail“: `/content/we-retail/jcr:content`
 >
 >Außerdem können die Eigenschaften `allowedPaths`, `allowedParents` und `allowedChildren` in den Vorlagen platziert werden, um komplexere Regeln zu definieren. Es ist jedoch nach Möglichkeit *deutlich* einfacher, in Unterabschnitten der Site weitere `cq:allowedTemplates`-Eigenschaften zu definieren, wenn die zulässigen Vorlagen weiter eingeschränkt werden sollen.
 >
