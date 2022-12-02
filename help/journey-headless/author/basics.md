@@ -3,7 +3,7 @@ title: Grundlagen zum Authoring
 description: Erfahren Sie mehr über die Konzepte und Mechanismen sw Authoring für Ihr Headless-CMS mithilfe von Inhaltsfragmenten.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1693'
 ht-degree: 100%
 
