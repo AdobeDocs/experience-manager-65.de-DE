@@ -7,21 +7,21 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3401'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# Wiederverwenden von mit MSM für Assets[!DNL Assets] {#reuse-assets-using-msm-for-assets}
+# Wiederverwenden von Assets mit MSM für [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
-| Version | Artikellink |
+| Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=en) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/reuse-assets-using-msm.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/reuse-assets-using-msm.html?lang=en) |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/reuse-assets-using-msm.html?lang=de) |
 
-Funktionen für Multi-Site-Manager (MSM) in [!DNL Adobe Experience Manager] ermöglicht Benutzern die Wiederverwendung von einmalig erstellten und über mehrere Webspeicherorte hinweg wiederverwendeten Inhalten. Dasselbe gilt für digitale Assets wie MSM für [!DNL Assets] Funktionalität. Mit MSM für [!DNL Assets] können Sie:
+Mit der Funktion „Multi Site Manager“ (MSM) in [!DNL Adobe Experience Manager] können Benutzer einmal erstellte Inhalte in mehreren Web-Speicherorten wiederverwenden. Für digitale Assets steht dieselbe Funktion zur Verfügung wie MSM für [!DNL Assets]. Mit MSM für [!DNL Assets] können Sie:
 
 * Einmal Assets anlegen und dann Kopien dieser Assets erstellen, um sie in anderen Bereichen der Site wiederzuverwenden.
 * Mehrere Kopien synchron halten und die ursprüngliche primäre Kopie einmal aktualisieren, um die Änderungen an die untergeordneten Kopien zu übertragen.
@@ -29,7 +29,7 @@ Funktionen für Multi-Site-Manager (MSM) in [!DNL Adobe Experience Manager] erm�
 
 ## Voraussetzungen {#prereq}
 
-Verwenden von MSM für [!DNL Assets], installieren Sie mindestens [!DNL Experience Manager] 6.5 Service Pack 1. Weitere Informationen finden Sie unter [Versionshinweise zum neuesten Service Pack](/help/release-notes/release-notes.md).
+Um MSM für [!DNL Assets] zu verwenden, müssen Sie mindestens [!DNL Experience Manager] 6.5 Service Pack 1 installieren. Weitere Informationen finden Sie in den [Versionshinweisen zum neuesten Service Pack](/help/release-notes/release-notes.md).
 
 ## Wissenswertes über Vorteile und Konzepte {#concepts}
 
@@ -288,12 +288,12 @@ Wenn mehrere Assets in einem Live Copy-Ordner vorhanden sind, kann das Initiier
 
    *Abbildung: Einfaches Aktualisieren vieler Assets in Live Copy-Ordnern über die Konsole [!UICONTROL Live Copy-Übersicht].*
 
-## MSM erweitern für [!DNL Assets] {#extend-api}
+## Erweitern von MSM für [!DNL Assets] {#extend-api}
 
-[!DNL Experience Manager] ermöglicht es, die Funktionalität mithilfe der MSM-Java-APIs zu erweitern. Für [!DNL Assets], funktioniert die Erweiterung genauso wie MSM für [!DNL Sites]. Weitere Details finden Sie unter [Erweitern von MSM](/help/sites-developing/extending-msm.md) sowie Informationen zu bestimmten Aufgaben in den folgenden Abschnitten:
+[!DNL Experience Manager] ermöglicht es, die Funktionalität mithilfe der MSM-Java-APIs zu erweitern. Bei [!DNL Assets] funktioniert die Erweiterung genauso wie bei MSM für [!DNL Sites]. Weitere Details finden Sie unter [Erweitern von MSM](/help/sites-developing/extending-msm.md) sowie in den Informationen zu bestimmten Aufgaben in den folgenden Abschnitten:
 
 * [Übersicht über APIs](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [Synchronisierungsaktion erstellen](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
+* [Erstellen einer Synchronisierungsaktion](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
 * [Erstellen einer Rollout-Konfiguration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
 * [Erstellen und Verwenden einer einfachen LiveActionFactory-Klasse](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
 
@@ -301,7 +301,7 @@ Wenn mehrere Assets in einem Live Copy-Ordner vorhanden sind, kann das Initiier
 >
 >* Blueprints in MSM für [!DNL Sites] werden in MSM für [!DNL Assets] als Live Copy-Quellen bezeichnet.
 >* Das Entfernen des Schritts „Kapitel“ im Assistenten zum Erstellen von Websites wird in MSM für [!DNL Assets] nicht unterstützt.
->* Die Konfiguration von MSM-Sperren in den Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) wird in MSM nicht unterstützt für [!DNL Assets].
+>* Das Konfigurieren von MSM-Sperren in den Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) wird in MSM für [!DNL Assets] nicht unterstützt.
 
 
 ## Auswirkungen von Asset-Management-Aufgaben auf Live Copies {#manage-assets}
@@ -324,7 +324,7 @@ In weiteren Szenarien entspricht das Verhalten von MSM für [!DNL Assets] dem vo
 * Live Copys können in [!DNL Assets] nicht bearbeitet werden.
 * Websites verfügen normalerweise über untergeordnete Elemente, [!DNL Assets] jedoch nicht. Die Option zum Ein- oder Ausschließen von untergeordneten Elementen ist beim Erstellen von Live Copies einzelner Assets nicht vorhanden.
 * Das Entfernen des Schritts „Kapitel“ im Assistenten zum Erstellen von Websites wird in MSM für [!DNL Assets] nicht unterstützt.
-* Die Konfiguration von MSM-Sperren für Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) wird in MSM nicht unterstützt für [!DNL Assets].
+* Das Konfigurieren von MSM-Sperren in Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) wird in MSM für [!DNL Assets] nicht unterstützt.
 * Verwenden Sie für MSM für [!DNL Assets] nur die **[!UICONTROL standardmäßige Rollout-Konfiguration]**. Die anderen Rollout-Konfigurationen sind für MSM für [!DNL Assets] nicht verfügbar.
 
 ## Best Practices {#best-practices}
@@ -337,6 +337,6 @@ Zu Best Practices für MSM gehören:
 
 Folgende Beschränkung besteht für MSM für [!DNL Assets].
 
-* Inhaltsfragmente werden für das Nutzungsszenario nicht unterstützt. Wenn Sie versuchen, deren Live Copies zu erstellen, werden die Inhaltsfragmente wie vorliegend und ohne Beziehung kopiert. Die kopierten Inhaltsfragmente sind Momentaufnahmen und werden nicht aktualisiert, wenn die ursprünglichen Inhaltsfragmente aktualisiert werden.
+* Inhaltsfragmente werden für das Nutzungsszenario nicht unterstützt. Wenn Sie versuchen, deren Live Copies zu erstellen, werden die Inhaltsfragmente wie vorliegend und ohne Beziehung kopiert. Die kopierten Inhaltsfragmente sind eine Momentaufnahme und werden nicht zusammen mit den ursprünglichen Inhaltsfragmenten aktualisiert.
 
 * MSM funktioniert nicht mit aktiviertem Metadaten-Writeback. Beim Zurückschreiben wird die Vererbung unterbrochen.
