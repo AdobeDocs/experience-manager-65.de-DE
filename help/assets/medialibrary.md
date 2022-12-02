@@ -1,31 +1,31 @@
 ---
-title: Media Library für grundlegende Verwaltung von digitalen Assets verwenden
-description: '"[!DNL Experience Manager Assets] und Media Library für das Asset-Management."'
+title: Verwenden von Media Library für grundlegendes Asset-Management
+description: "[!DNL Experience Manager Assets] und Media Library für das Asset-Management."
 contentOwner: AG
 role: Architect, Leader
 feature: Asset Management
 exl-id: e10d632d-1d90-4f28-8617-95ee41602997
 source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '586'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
 
 # Verwenden von Media Library für grundlegendes Asset-Management {#manage-assets-using-media-library}
 
-| Version | Artikellink |
+| Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=en) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/medialibrary.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/medialibrary.html?lang=de) |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/medialibrary.html?lang=de) |
 
 Die [!DNL Adobe Experience Manager]-Plattform bietet verschiedene Funktionen zum Verwalten von Assets. Mit Media Library können Benutzer eine kleine Anzahl von Assets in das Repository hochladen, diese auf den Web-Seiten suchen und verwenden und einfache Asset-Management-Aufgaben für die Assets ausführen.
 
 Media Library ist eine einfache DAM-Lösung (Digital Asset Management), die im Lieferumfang einer [!DNL Adobe Experience Manager Sites]-Lizenz enthalten ist. [!DNL Sites] ist ein WCM-Angebot (Web Content Management). Media Library arbeitet mit allen Funktionen von Experience Manager.
 
-Die [!DNL Adobe Experience Manager Assets]-Lizenz kann separat erworben werden. [!DNL Experience Manager Assets] ermöglicht eine robuste Handhabung von Assets über Anwendungsfälle für Unternehmen, Anpassungen für Metadaten, Schemas, Suchen und die Benutzeroberfläche sowie viele andere Funktionen, die über die von Media Library bereitgestellten hinausgehen.
+Die [!DNL Adobe Experience Manager Assets]-Lizenz kann separat erworben werden. [!DNL Experience Manager Assets] ermöglicht eine robuste Handhabung von Assets über Nutzungsszenarien für Unternehmen, Anpassungen für Metadaten, Schemata, Suchen und die Benutzeroberfläche sowie viele andere Funktionen, die über die von Media Library bereitgestellten hinausgehen.
 
 ## Lizenzanforderungen {#avail-media-library-license}
 
@@ -41,9 +41,9 @@ Wenn Sie eine unbeabsichtigte Verwendung von nicht lizenzierten [!DNL Assets]-Fu
 
 ## Verwenden von Media Library {#use-media-library}
 
-Media Library bietet grundlegende DAM-Funktionen für die folgenden Anwendungsfälle:
+Media Library bietet grundlegende DAM-Funktionen für die folgenden Nutzungsszenarien:
 
-* Mit [!DNL Adobe Experience Manager Sites].
+* Web-Seiten, die mit [!DNL Adobe Experience Manager Sites] erstellt wurden.
 * Adaptive Formulare und Kommunikationen, die mit [!DNL Adobe Experience Manager Forms] erstellt wurden.
 * Mit [!DNL Adobe Experience Manager Screens] erstellte digitale Bildschirmerlebnisse.
 * [!DNL Assets]-HTTP-REST-APIs für Headless-Vorgänge.
@@ -85,7 +85,7 @@ As per PM, we must avoid stating such a list, as we don't have a list that makes
 
 >[!IMPORTANT]
 >
->Viele erweiterte DAM-Anwendungsfälle werden von [!DNL Experience Manager Assets] erfüllt. Die Media Library-Lizenz berechtigt Sie nur dazu, die aufgelisteten Anwendungsfälle mit Media Library zu erfüllen. Wenn ein Anwendungsfall nicht aufgeführt ist, wenden Sie ihn nicht mit der Media Library-Lizenz an. Wenden Sie sich bei Fragen an den Support von Adobe.
+>Viele erweiterte DAM-Nutzungsszenarien werden von [!DNL Experience Manager Assets] erfüllt. Die Media Library-Lizenz berechtigt Sie nur dazu, die aufgelisteten Nutzungsszenarien mit Media Library zu erfüllen. Wenn ein Nutzungsszenario nicht aufgeführt ist, wenden Sie ihn nicht mit der Media Library-Lizenz an. Bei Fragen wenden Sie sich an den Support von Adobe.
 
 Beachten Sie, dass Sie ohne [!DNL Assets]-Lizenz keine Smart Tags, [!DNL Asset]-Link, [!DNL Asset]-Auswahl, Bulk-Tagging, modifizierte Asset-Workflows oder die Standard-[!DNL Adobe Experience Manager]-Benutzeroberfläche verwenden können, um auf die Medienbibliothek zuzugreifen.
 
@@ -94,6 +94,6 @@ Beachten Sie, dass Sie ohne [!DNL Assets]-Lizenz keine Smart Tags, [!DNL Asset]-
 >[!MORELIKETHIS]
 >
 >* [DAM-Funktionen in  [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-65/assets/home.html?lang=de)
->* [[!DNL Experience Manager] 6.5 Managed Services - Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html)
->* [[!DNL Experience Manager] 6.5 On-Premise-Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html)
+>* [[!DNL Experience Manager] 6.5 Managed Services – Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html)
+>* [[!DNL Experience Manager] 6.5 On-Premise – Produktbeschreibung](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html)
 
