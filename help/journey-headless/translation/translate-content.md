@@ -3,7 +3,7 @@ title: Übersetzen von Inhalten
 description: Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Headless-Inhalte zu übersetzen.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2174'
 ht-degree: 100%
 
