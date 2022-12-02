@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
 source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '798'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
@@ -23,9 +23,9 @@ ht-degree: 62%
 Folgende Projekt-Workflows sind im Lieferumfang enthalten:
 
 * **Workflow für Projektbestätigung** - Dieser Workflow ermöglicht es Ihnen, Inhalte einem Benutzer zuzuweisen, sie zu prüfen und dann zu bestätigen.
-* **Launch anfordern** - Ein Workflow, der einen Launch anfordert.
-* **Einstiegsseite anfordern** - Dieser Workflow fordert eine Landingpage an.
-* **E-Mail anfordern** - Workflow zum Anfordern einer E-Mail.
+* **Launch anfragen** - Ein Workflow, der einen Launch anfordert.
+* **Einstiegsseite anfragen** - Dieser Workflow fragt eine Landingpage an.
+* **E-Mail anfragen** - Workflow zum Anfragen einer E-Mail.
 * **Produkt-Fotoshooting und Produkt-Fotoshooting (Commerce)** - Ordnet Assets Produkten zu
 * **DAM-Kopie erstellen und übersetzen und DAM-Sprachkopie erstellen** - Erstellt übersetzte Binärdateien, Metadaten und Tags für Assets und Ordner.
 
@@ -33,13 +33,13 @@ Je nachdem, welche Projektvorlage Sie auswählen, sind bestimmte Workflows verf�
 
 |  | **Einfaches Projekt** | **Medienprojekt** | **Projekt für Produkt-Fotoshooting** | **Übersetzungsprojekt** |
 |---|:-:|:-:|:-:|:-:|
-| Kopie anfordern |  | x |  |  |
+| Kopie anfragen |  | x |  |  |
 | Produkt-Fotoshooting |  | x | x |  |
-| Produkt-Fotoshooting (Commerce) |  |  | x |  |
+| Produkt-Fotoshooting   (Commerce) |  |  | x |  |
 | Projekt-Genehmigung | x |  |  |  |
-| Launch anfordern | x |  |  |  |
-| Einstiegsseite anfordern | x |  |  |  |
-| E-Mail anfordern | x |  |  |  |
+| Launch anfragen | x |  |  |  |
+| Einstiegsseite anfragen | x |  |  |  |
+| E-Mail anfragen | x |  |  |  |
 | DAM-Sprachkopie erstellen&amp;ast; |  |  |  | x |
 | DAM-Sprachkopie erstellen und übersetzen&amp;ast; |  |  |  | x |
 
@@ -51,7 +51,7 @@ Das Starten und Abschließen eines Workflows ist unabhängig vom gewählten Work
 
 Sie starten einen Workflow direkt in Projekten (mit Ausnahme von „DAM-Sprachkopie erstellen“ bzw. „DAM-Sprachkopie erstellen und übersetzen“). Informationen über alle ausstehenden Aufgaben in einem Projekt werden in der Kachel **Aufgaben** aufgeführt. Benachrichtigungen für Aufgaben, die ausgeführt werden müssen, werden neben dem Benutzersymbol angezeigt.
 
-Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie in den folgenden Dokumenten:
+Weitere Informationen zur Arbeit mit Workflows in AEM finden Sie in den folgenden Dokumenten:
 
 * [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md)
 * [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md)
@@ -59,80 +59,80 @@ Weitere Informationen zum Arbeiten mit Workflows in AEM finden Sie in den folgen
 
 Dieser Abschnitt beschreibt die Workflows, die für Projekte verfügbar sind.
 
-## Workflow &quot;Kopie anfordern&quot; {#request-copy-workflow}
+## Workflow „Kopie anfragen“ {#request-copy-workflow}
 
-Mit diesem Workflow können Sie ein Manuskript von einem Benutzer anfordern und es dann genehmigen. So starten Sie den Workflow „Kopie anfordern“:
+Mit diesem Workflow können Sie ein Manuskript von einem Benutzer anfragen und es dann genehmigen. So starten Sie den Workflow „Kopie anfragen“:
 
-1. Tippen oder klicken Sie in einem Medienprojekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
-1. Wählen Sie im Workflow-Assistenten die Option **Kopie anfordern** und klicken Sie auf **Nächste**.
-1. Geben Sie einen Manuskripttitel und eine kurze Zusammenfassung dazu ein, was Sie anfordern. Geben Sie bei Bedarf eine Zielwortanzahl, eine Aufgabenpriorität und ein Fälligkeitsdatum ein.
+1. Tippen oder klicken Sie in einem Medienprojekt auf den abwärts gerichteten Pfeil oben rechts in der Kachel **Workflows** und wählen Sie **Workflow starten**.
+1. Wählen Sie im Workflow-Assistenten die Option **Kopie anfragen** und klicken Sie auf **Weiter**.
+1. Geben Sie einen Manuskripttitel und eine kurze Zusammenfassung dazu ein, was Sie anfragen. Geben Sie bei Bedarf eine Zielwortanzahl, eine Aufgabenpriorität und ein Fälligkeitsdatum ein.
 
-   ![Workflow „Kopie anfordern“](assets/project-request-copy-workflow.png)
+   ![Workflow „Kopie anfragen“](assets/project-request-copy-workflow.png)
 
 1. Klicken Sie auf **Senden**.
 
-Der Workflow startet. Die Aufgabe wird auf der **Aufgaben** Karte.
+Der Workflow startet. Die Aufgabe erscheint auf der Karte **Aufgaben**.
 
 ## Workflow „Produkt-Fotoshooting“ {#product-photo-shoot-workflow}
 
-Die **Produkt-Fotoshooting** Workflows (sowohl Commerce als auch ohne Commerce) werden im Dokument ausführlich behandelt [Kreative Projekte](/help/sites-authoring/managing-product-information.md)
+Die Workflows **Produkt-Fotoshooting** (mit oder ohne Commerce) werden im Dokument [Kreative Projekte](/help/sites-authoring/managing-product-information.md) im Detail behandelt.
 
 ## Workflow für Projektbestätigung {#project-approval-workflow}
 
-Im **Projektvalidierung** -Arbeitsablauf, können Sie einem Benutzer Inhalte zuweisen, diese überprüfen und dann genehmigen.
+Im Workflow für **Projektbestätigung** weisen Sie Inhalte einem Benutzer zu, überprüfen diese und genehmigen sie dann.
 
-1. Tippen oder klicken Sie in einem einfachen Projekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
-1. Wählen Sie im Workflow-Assistenten die Option **Workflow für Projektbestätigung** und klicken Sie auf **Nächste**.
+1. Tippen oder klicken Sie in einem einfachen Projekt auf den abwärts gerichteten Pfeil oben rechts in der Kachel **Workflows** und wählen Sie **Workflow starten**.
+1. Wählen Sie im Workflow-Assistenten die Option **Workflow für Projektbestätigung** und klicken Sie auf **Weiter**.
 1. Geben Sie einen Titel ein und wählen Sie aus, wem Sie ihn zuweisen möchten. Geben Sie bei Bedarf eine Beschreibung, einen Inhaltspfad, eine Aufgabenpriorität und ein Fälligkeitsdatum ein.
 
-   ![Workflow für Projektgenehmigung](assets/project-approval-workflow.png)
+   ![Workflow für Projektbestätigung](assets/project-approval-workflow.png)
 
 1. Klicken Sie auf **Senden**.
 
-Der Workflow startet. Die Aufgabe wird auf der **Aufgaben** Karte.
+Der Workflow startet. Die Aufgabe erscheint auf der Karte **Aufgaben**.
 
-## Workflow &quot;Launch anfordern&quot; {#request-launch-workflow}
+## Workflow „Launch anfragen“ {#request-launch-workflow}
 
-Mit diesem Workflow können Sie einen Launch anfordern.
+Mit diesem Workflow können Sie einen Launch anfragen.
 
-1. Tippen oder klicken Sie in einem einfachen Projekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
-1. Wählen Sie im Workflow-Assistenten die Option **Workflow &quot;Launch anfordern&quot;** und klicken Sie auf **Nächste**.
+1. Tippen oder klicken Sie in einem einfachen Projekt auf den abwärts gerichteten Pfeil oben rechts in der Kachel **Workflows** und wählen Sie **Workflow starten**.
+1. Wählen Sie im Workflow-Assistenten die Option **Workflow „Launch anfragen“** und klicken Sie auf **Weiter**.
 1. Geben Sie einen Titel für den Launch ein und geben Sie den Launch-Quellpfad an. Sie können bei Bedarf auch eine Beschreibung und ein Live-Datum hinzufügen. Wählen Sie „Quellseiten-Live-Daten erben“ oder „Unterseiten ausschließen“ aus, je nachdem, wie der Launch sich verhalten soll.
 
-   ![Workflow zum Anfordern eines Launches](assets/project-request-launch-workflow.png)
+   ![Workflow „Launch anfragen“](assets/project-request-launch-workflow.png)
 
 1. Klicken Sie auf **Senden**.
 
-Der Workflow startet. Der Workflow wird im **Workflows** Liste.
+Der Workflow startet. Der Workflow erscheint in der Liste **Workflows**.
 
-## Workflow &quot;Einstiegsseite anfordern&quot; {#request-landing-page-workflow}
+## Workflow „Landingpage anfragen“ {#request-landing-page-workflow}
 
-Mit diesem Workflow können Sie eine Einstiegsseite anfordern.
+Mit diesem Workflow können Sie eine Landingpage anfragen.
 
-1. Tippen oder klicken Sie in einem einfachen Projekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
-1. Wählen Sie im Workflow-Assistenten die Option **Einstiegsseite anfordern** und klicken Sie auf **Nächste**.
+1. Tippen oder klicken Sie in einem einfachen Projekt auf den abwärts gerichteten Pfeil oben rechts in der Kachel **Workflows** und wählen Sie **Workflow starten**.
+1. Wählen Sie im Workflow-Assistenten die Option **Landingpage anfragen** und klicken Sie auf **Weiter**.
 1. Geben Sie einen Titel für Ihre Einstiegsseite und den übergeordneten Pfad ein. Geben Sie bei Bedarf ein Live-Datum ein oder wählen Sie eine Datei für Ihre Einstiegsseite aus.
 
-   ![Workflow &quot;Landingpage anfordern&quot;](assets/project-request-landing-page-workflow.png)
+   ![Workflow „Landingpage anfragen“](assets/project-request-landing-page-workflow.png)
 
 1. Klicken Sie auf **Senden**.
 
-Der Workflow startet. Die Aufgabe wird auf der **Aufgaben** Karte.
+Der Workflow startet. Die Aufgabe erscheint auf der Karte **Aufgaben**.
 
-## Workflow „E-Mail anfordern“ {#request-email-workflow}
+## Workflow „E-Mail anfragen“ {#request-email-workflow}
 
-Mit diesem Workflow können Sie eine E-Mail anfordern. Es ist der derselbe Workflow, der in der Kachel **E-Mails** angezeigt wird.
+Mit diesem Workflow können Sie eine E-Mail anfragen. Es ist der derselbe Workflow, der in der Kachel **E-Mails** angezeigt wird.
 
-1. Tippen oder klicken Sie in einem einfachen Projekt oben rechts im **Workflows** Kachel und wählen Sie **Workflow starten**.
-1. Wählen Sie im Workflow-Assistenten die Option **Email anfordern** und klicken Sie auf **Nächste**.
+1. Tippen oder klicken Sie in einem einfachen Projekt auf den abwärts gerichteten Pfeil oben rechts in der Kachel **Workflows** und wählen Sie **Workflow starten**.
+1. Wählen Sie im Workflow-Assistenten die Option **E-Mail anfragen** und klicken Sie auf **Weiter**.
 1. Geben Sie einen E-Mail-Titel sowie den Kampagnen- und den Vorlagenpfad ein. Darüber hinaus können Sie einen Namen, eine Beschreibung und ein Live-Datum angeben.
 
-   ![E-Mail-Workflow anfordern](assets/project-request-email-workflow.png)
+   ![Workflow „E-Mail anfragen“](assets/project-request-email-workflow.png)
 
 1. Klicken Sie auf **Senden**.
 
-Der Workflow startet. Die Aufgabe wird auf der **Aufgaben** Karte.
+Der Workflow startet. Die Aufgabe erscheint auf der Karte **Aufgaben**.
 
 ## Workflow „Sprachkopie erstellen (und übersetzen)“ für Assets {#create-and-translate-language-copy-workflow-for-assets}
 
-Die **Sprachkopie erstellen** und **Sprachkopie erstellen und übersetzen** Workflows werden im Dokument ausführlich beschrieben. [Erstellen von Sprachkopien für Assets.](/help/assets/translation-projects.md)
+Die Workflows **Sprachkopie erstellen** und **Sprachkopie erstellen und übersetzen** werden im Dokument [Erstellen von Sprachkopien für Assets](/help/assets/translation-projects.md) genauer erläutert.
