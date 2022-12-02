@@ -5,15 +5,15 @@ feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
 source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '687'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
 # Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente zusammen mit der AEM GraphQL-API (einer angepassten Implementierung, die auf GraphQL basiert) verwenden, um Headless strukturierte Inhalte für die Verwendung in Ihren Anwendungen bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/benötigen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
+Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente zusammen mit der AEM-GraphQL-API (eine auf GraphQL basierende benutzerdefinierte Implementierung) verwenden, um strukturierte Inhalte für Ihre Programme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/benötigen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
 
 <!--
 >[!NOTE]
@@ -23,7 +23,7 @@ Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente zusammen mit der
 
 >[!NOTE]
 >
->GraphQL wird derzeit in zwei (separaten) Szenarien in Adobe Experience Manager (AEM) verwendet:
+>GraphQL wird derzeit in zwei (separaten) Szenarios in Adobe Experience Manager (AEM) verwendet:
 >
 >* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce/cif/integrating/magento.md).
 >* [AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen](/help/assets/content-fragments/graphql-api-content-fragments.md) bereit.
@@ -55,7 +55,7 @@ Mit der [AEM-GraphQL-API](#aem-graphql-api) können Sie (komplexe) Abfragen für
 
 ## AEM-GraphQL-API {#aem-graphql-api}
 
-Für Adobe Experience wurde eine angepasste Implementierung der standardmäßigen GraphQL-API entwickelt. Weitere Informationen finden Sie unter [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md).
+Für Adobe Experience Manager wurde eine benutzerdefinierte Implementierung der Standard-GraphQL-API entwickelt. Weitere Informationen finden Sie unter [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/assets/content-fragments/graphql-api-content-fragments.md).
 
 Die Implementierung der AEM-GraphQL-API basiert auf den [GraphQL-Java-Bibliotheken](https://graphql.org/code/#java).
 
@@ -81,7 +81,7 @@ Inhaltsfragmente:
 
 Diese [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md):
 
-* werden verwendet, um die [Schemas](https://graphql.org/learn/schema/) zu erzeugen, sobald sie **aktiviert** sind.
+* werden verwendet, um die [Schemata](https://graphql.org/learn/schema/) zu erzeugen, sobald sie **aktiviert** sind.
 
 * stellen die für GraphQL erforderlichen Datentypen und Felder bereit. Sie stellen sicher, dass Ihr Programm nur das anfordert, was möglich ist, und das erhält, was erwartet wird.
 
@@ -105,7 +105,7 @@ Die **[Fragmentreferenz](/help/assets/content-fragments/content-fragments-models
 
 Als Hilfe beim Entwerfen und Entwickeln Ihrer Inhaltsfragmentmodelle können Sie eine Vorschau der [JSON-Ausgabe](/help/assets/content-fragments/content-fragments-json-preview.md) anzeigen.
 
-## Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
+## Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
 Eine Einführung in die Verwendung der AEM GraphQL-API finden Sie unter [Verwendung von GraphQL mit AEM – Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md).
 
