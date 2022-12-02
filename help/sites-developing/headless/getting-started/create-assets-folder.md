@@ -3,7 +3,7 @@ title: Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implem
 description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
 source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '379'
 ht-degree: 100%
 
