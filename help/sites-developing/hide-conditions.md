@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 104d1c64-b9b3-40f5-8f9b-fe92d9daaa1f
 exl-id: 65f5d5e1-ac11-4a3c-8a51-ce06a741c264
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '626'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Beachten Sie beim Definieren Ihrer Bedingung zum Ausblenden Folgendes:
 
 ## Beispiel {#example}
 
-Beispiele für Bedingungen zum Ausblenden finden sich überall in AEM und insbesondere in den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). etwa der [Listenkernkomponente](https://helpx.adobe.com/experience-manager/core-components/using/list.html).
+Beispiele für Bedingungen zum Ausblenden finden sich überall in AEM und insbesondere in den [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). etwa der [Listenkernkomponente](https://helpx.adobe.com/de/experience-manager/core-components/using/list.html).
 
 [Mit dem Vorlageneditor](/help/sites-authoring/templates.md) kann der Vorlagenautor im Design-Dialogfeld festlegen, welche Optionen der Listenkomponente dem Seitenautor zur Verfügung stehen. Optionen wie die, ob die Liste eine statische Liste, eine Liste mit untergeordneten Seiten, eine Liste getaggter Seiten usw. sein darf, können aktiviert oder deaktiviert werden.
 
