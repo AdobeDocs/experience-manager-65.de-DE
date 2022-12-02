@@ -13,9 +13,9 @@ docset: aem65
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '214'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Der Assistent „Sprachkopie erstellen“ führt Sie durch die Erstellung und Ve
 
 >[!NOTE]
 >
->Der Benutzer muss Mitglied der Gruppe &quot;project-administrators&quot;sein, um die Sprachkopie einer Site zu erstellen.
+>Anwendende müssen Mitglieder der Gruppe „Projekt-Admins“ sein, um eine Sprachkopie einer Seite zu erstellen.
 
 Sie können wie folgt auf diesen Assistenten zugreifen:
 
@@ -41,7 +41,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
-1. Die **Nächste** -Schaltfläche zum **Konfigurieren** Schritt des Assistenten. Hier können Sie Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen.
+1. Über die Schaltfläche **Weiter** gelangen Sie zum Schritt **Konfigurieren** des Assistenten. Hier können Sie Sprachen hinzufügen/entfernen und die Übersetzungsmethode auswählen.
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
 
@@ -49,7 +49,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
    >
    >Standardmäßig gibt es nur eine Übersetzungs-Einstellung. Um die Auswahl anderer Einstellungen zu ermöglichen, müssen Sie zuerst die Cloud-Einstellungen konfigurieren. Siehe [Konfigurieren des Übersetzungsintegrations-Frameworks](/help/sites-administering/tc-tic.md).
 
-1. Die **Nächste** -Schaltfläche zum **Übersetzen** Schritt des Assistenten. Hier können Sie auswählen, ob nur die Struktur oder ein neues Übersetzungsprojekt erstellt werden soll oder ob einem vorhandenen Übersetzungsprojekt etwas hinzugefügt werden soll.
+1. Über die Schaltfläche **Weiter** gelangen Sie zum Schritt **Übersetzen** des Assistenten. Hier können Sie auswählen, ob nur die Struktur oder ein neues Übersetzungsprojekt erstellt werden soll oder ob einem vorhandenen Übersetzungsprojekt etwas hinzugefügt werden soll.
 
    >[!NOTE]
    >
