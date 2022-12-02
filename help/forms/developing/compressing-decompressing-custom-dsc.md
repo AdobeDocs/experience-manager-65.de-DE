@@ -3,7 +3,7 @@ title: Wie übergebe ich Informationen zu Berechtigungen mithilfe von WS-Securit
 description: Erfahren Sie, wie Sie Berechtigungen mithilfe von WS-Security-Headern übergeben.
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '473'
 ht-degree: 100%
 
