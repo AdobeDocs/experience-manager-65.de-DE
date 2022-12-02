@@ -6,7 +6,7 @@ user-guide-description: Dokumentation-Touren bieten eine erzählerische Struktur
 feature: Developer Tools
 role: Developer, Architect
 source-git-commit: 0b8b517607f305ad82caf6ba766cad5a46021439
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '529'
 ht-degree: 100%
 
@@ -55,10 +55,10 @@ Please note that all links to other guides need to be absolute references with l
       + [Lernen Sie die Grundlagen der Inhaltsmodellierung für Headless mit AEM kennen.](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/basics.html?lang=de)
       + [Erfahren Sie mehr über das Erstellen von Inhaltsfragmentmodellen in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/architect/model-structure.html?lang=de)
    + Headless-Übersetzungs-Tour {#translation}
-      + [Grundlegendes zur Headless-Übersetzung in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/overview.html)
-      + [Erste Schritte mit der Headless-Übersetzung in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/getting-started.html)
-      + [Erfahren Sie mehr über Headless-Inhalte und wie Sie sie in AEM übersetzen können.](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/learn-about.html)
-      + [Konfigurieren des Übersetzungs-Connectors](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/configure-connector.html)
-      + [Konfigurieren von Übersetzungsregeln](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translation-rules.html)
-      + [Übersetzen von Inhalten](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translate-content.html)
-      + [Veröffentlichen übersetzter Inhalte](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/publish-content.html)
+      + [Grundlegendes zur Headless-Übersetzung in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/overview.html?lang=de)
+      + [Erste Schritte mit der Headless-Übersetzung in AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/getting-started.html?lang=de)
+      + [Erfahren Sie mehr über Headless-Inhalte und wie Sie sie in AEM übersetzen können.](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/learn-about.html?lang=de)
+      + [Konfigurieren des Übersetzungs-Connectors](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/configure-connector.html?lang=de)
+      + [Konfigurieren von Übersetzungsregeln](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translation-rules.html?lang=de)
+      + [Übersetzen von Inhalten](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translate-content.html?lang=de)
+      + [Veröffentlichen übersetzter Inhalte](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/publish-content.html?lang=de)
