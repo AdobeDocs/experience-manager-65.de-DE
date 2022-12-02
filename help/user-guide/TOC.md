@@ -7,7 +7,7 @@ user-guide-description: Eine Übersicht über alle wichtigen Ressourcen zum Vers
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '60'
 ht-degree: 100%
 
