@@ -11,9 +11,9 @@ feature: Viewer Presets
 role: User, Admin
 exl-id: daa1ffdd-de5c-470e-8875-84144b7d327f
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Wenn Sie Administrator sind und Viewer-Vorgaben verwalten, erstellen, sortieren 
 Siehe auch [Veröffentlichen von Viewer-Vorgaben](managing-viewer-presets.md#publishing-viewer-presets).
 
 Je nach Veröffentlichungsmodus müssen Sie möglicherweise keine Viewer-Vorgaben veröffentlichen.
-Alle Probleme mit Viewer-Vorgaben finden Sie unter [Fehlerbehebung bei Dynamic Media - Scene7](troubleshoot-dms7.md#viewers).
+Informationen zu Problemen mit Viewer-Vorgaben finden Sie unter [Problembehandlung in Dynamic Media – Scene7](troubleshoot-dms7.md#viewers).
 
 ## Anwenden von Dynamic Media-Viewer-Vorgaben auf ein Asset {#applying-a-viewer-preset-to-an-asset}
 
@@ -41,4 +41,4 @@ Alle Probleme mit Viewer-Vorgaben finden Sie unter [Fehlerbehebung bei Dynamic M
 
 ## Abrufen von Viewer-Vorgaben-URLs {#obtaining-viewer-preset-urls}
 
-Informationen zum Abrufen der URLs für Viewer-Vorgaben finden Sie unter [Verknüpfen von URLs mit einer Webanwendung](linking-urls-to-yourwebapplication.md).
+Informationen zum Abrufen der URLs für Viewer-Vorgaben finden Sie unter [Verknüpfen von URLs mit Ihrer Web-Anwendung](linking-urls-to-yourwebapplication.md).
