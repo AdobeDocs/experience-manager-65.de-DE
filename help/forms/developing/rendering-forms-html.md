@@ -13,7 +13,7 @@ discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4150'
 ht-degree: 100%
 
@@ -94,7 +94,7 @@ Achten Sie beim Rendern von HTML-Formularen, die sowohl Seitennavigationsfunktio
 Formularskripte, die sich im form:ready-Ereignis befinden, werden nur einmal während der ersten Wiedergabe des Formulars ausgeführt und nicht für nachfolgende Seitenabrufe. Im Gegensatz dazu wird das form:calculate-Ereignis für jede Seitennavigation ausgeführt, in der das Formular wiedergegeben wird.
 
 >[!NOTE]
->In einem mehrseitigen Formular werden Änderungen, die von JavaScript an einer Seite vorgenommen werden, nicht beibehalten, wenn Sie zu einer anderen Seite wechseln.
+In einem mehrseitigen Formular werden Änderungen, die von JavaScript an einer Seite vorgenommen werden, nicht beibehalten, wenn Sie zu einer anderen Seite wechseln.
 
 Sie können benutzerdefinierte Skripte vor dem Senden eines Formulars aufrufen. Diese Funktion funktioniert in allen verfügbaren Browsern. Sie kann jedoch nur verwendet werden, wenn Benutzer das HTML-Formular wiedergeben, dessen `Output Type`-Eigenschaft auf `Form Body` gesetzt ist. Dies wird nicht funktionieren, wenn `Output Type` `Full HTML` ist. Die Schritte zur Konfiguration dieser Funktion finden Sie unter Konfigurieren von Formularen in der Administrationshilfe.
 
@@ -122,7 +122,7 @@ var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature
 
 Beim Erstellen von Formularentwürfen, die als HTML wiedergegeben werden sollen, müssen Sie die Skripterstellung auf die XFA-Untergruppe für Skripte in JavaScript beschränken.
 
-Skripte, die auf dem Client oder sowohl auf dem Client als auch auf dem Server ausgeführt werden, müssen in die XFA-Teilmenge geschrieben werden. Skripte, die auf dem Server ausgeführt werden, können das vollständige XFA-Skriptmodell verwenden und auch FormCalc verwenden. Informationen zur Verwendung von JavaScript finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+Skripte, die auf dem Client oder sowohl auf dem Client als auch auf dem Server ausgeführt werden, müssen in die XFA-Teilmenge geschrieben werden. Skripte, die auf dem Server ausgeführt werden, können das vollständige XFA-Skriptmodell verwenden und auch FormCalc verwenden. Informationen zur Verwendung von JavaScript finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_de).
 
 Beim Ausführen von Skripten auf dem Client kann nur das aktuelle Bedienfeld, das angezeigt wird, das Skript verwenden. Sie können beispielsweise kein Skript für Felder erstellen, die sich im Bereich A befinden, wenn Bereich B angezeigt wird. Beim Ausführen von Skripten auf dem Server können alle Bedienfelder aufgerufen werden.
 
@@ -139,11 +139,11 @@ Forms, das in einem Webbrowser angezeigt wird (im Gegensatz zu Adobe Reader oder
 * Wenn der Null-Test einen Fehler erzeugt und Sie ein Feld verlassen, ohne einen Wert anzugeben, wird ein Meldungsfeld angezeigt und Sie werden nach dem Klicken auf OK zum Feld neu positioniert.
 * Wenn ein Null-Test eine Warnung erzeugt und Sie ein Feld verlassen, ohne einen Wert anzugeben, werden Sie aufgefordert, entweder auf OK oder auf Abbrechen zu klicken. Dort haben Sie die Möglichkeit, den Vorgang fortzusetzen, ohne einen Wert anzugeben, oder zum Feld zurückzukehren, um einen Wert einzugeben.
 
-Weitere Informationen zu einem Null-Test finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+Weitere Informationen zu einem Null-Test finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_de).
 
 ## Formularschaltflächen {#form-buttons}
 
-Wenn Sie auf eine Senden-Schaltfläche klicken, werden Formulardaten an den Forms-Dienst gesendet und stellen das Ende der Formularverarbeitung dar. Das Ereignis `preSubmit` kann auf dem Client oder dem Server ausgeführt werden. Das Ereignis `preSubmit` wird vor dem Absenden des Formulars ausgeführt, wenn es so konfiguriert ist, dass es auf dem Client ausgeführt wird. Andernfalls wird das Ereignis `preSubmit` auf dem Server während der Übermittlung des Formulars ausgeführt. Weitere Informationen zum `preSubmit`-Ereignis finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+Wenn Sie auf eine Senden-Schaltfläche klicken, werden Formulardaten an den Forms-Dienst gesendet und stellen das Ende der Formularverarbeitung dar. Das Ereignis `preSubmit` kann auf dem Client oder dem Server ausgeführt werden. Das Ereignis `preSubmit` wird vor dem Absenden des Formulars ausgeführt, wenn es so konfiguriert ist, dass es auf dem Client ausgeführt wird. Andernfalls wird das Ereignis `preSubmit` auf dem Server während der Übermittlung des Formulars ausgeführt. Weitere Informationen zum `preSubmit`-Ereignis finden Sie unter [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63_de).
 
 Wenn einer Schaltfläche kein clientseitiges Skript zugeordnet ist, werden die Daten an den Server übermittelt, die Berechnungen werden auf dem Server durchgeführt und das HTML-Formular wird neu generiert. Wenn eine Schaltfläche ein clientseitiges Skript enthält, werden keine Daten an den Server gesendet und das clientseitige Skript wird im Webbrowser ausgeführt.
 
@@ -167,7 +167,7 @@ Das folgende Skript erhält die `fillColor` eines Feldes auf der Grundlage des W
 ```
 
 >[!NOTE]
->Statische Objekte werden nicht in einem wiedergegebenen HTML-Formular angezeigt, wenn sie in einer Tabellenzelle verschachtelt sind. Beispielsweise werden ein in einer Tabellenzelle verschachtelter Kreis und Rechteck nicht in einem Render-HTML-Formular angezeigt. Dieselben statischen Objekte werden jedoch korrekt angezeigt, wenn sie sich außerhalb der Tabelle befinden.
+Statische Objekte werden nicht in einem wiedergegebenen HTML-Formular angezeigt, wenn sie in einer Tabellenzelle verschachtelt sind. Beispielsweise werden ein in einer Tabellenzelle verschachtelter Kreis und Rechteck nicht in einem Render-HTML-Formular angezeigt. Dieselben statischen Objekte werden jedoch korrekt angezeigt, wenn sie sich außerhalb der Tabelle befinden.
 
 ## HTML-Formulare digital signieren {#digitally-signing-html-forms}
 
@@ -189,7 +189,7 @@ Sie können ein vollständiges HTML-Formular wiedergeben, das den Richtlinien f�
 Es wird empfohlen, die Verwendung von Validierungsregeln für Formularfelder bei der Wiedergabe des Formulars als HTML-Formular zu beschränken. Einige Validierungsregeln werden für HTML-Formulare möglicherweise nicht unterstützt. Wenn beispielsweise ein Validierungsmuster MM-TT-JJJJ auf ein `Date/Time`-Feld angewendet wird, das sich in einem Formularentwurf befindet, der als HTML-Formular wiedergegeben wird, funktioniert es nicht richtig, selbst wenn das Datum richtig eingegeben wird. Bei Formularen, die im PDF-Format dargestellt werden, funktioniert dieses Validierungsmuster jedoch ordnungsgemäß.
 
 >[!NOTE]
->Weitere Informationen über den Forms-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Weitere Informationen über den Forms-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -224,10 +224,10 @@ Wenn Sie ein Formular als HTML wiedergeben, können Sie einen User-Agent-Wert an
 HTTP-URLs, an die Formulardaten gesendet werden, können durch Festlegen der Ziel-URL mithilfe der Forms Service Client-API angegeben werden oder in der im XDP-Formularentwurf enthaltenen Senden-Schaltfläche angegeben werden. Wenn die Ziel-URL im Formularentwurf angegeben ist, legen Sie einen Wert nicht mithilfe der Forms Service Client-API fest.
 
 >[!NOTE]
->Das Rendern eines HTML-Formulars mit einer Symbolleiste ist optional.
+Das Rendern eines HTML-Formulars mit einer Symbolleiste ist optional.
 
 >[!NOTE]
->Wenn Sie ein AHTML-Formular rendern, wird empfohlen, keine Symbolleiste zum Formular hinzuzufügen.
+Wenn Sie ein AHTML-Formular rendern, wird empfohlen, keine Symbolleiste zum Formular hinzuzufügen.
 
 **Rendern eines HTML-Formulars**
 
@@ -278,7 +278,7 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Java):
    * Um das HTML-Formular innerhalb vollständiger HTML-Tags zu rendern, rufen Sie die Methode `setOutputType` des `HTMLRenderSpec`-Objekts auf und übergeben `OutputType.FullHTMLTags`. (Diese Einstellung ist optional.)
 
    >[!NOTE]
-   >Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Programm-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `FormsServiceClient` des `(Deprecated) renderHTMLForm`-Objekts übergeben wird). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
+   Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Programm-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `FormsServiceClient` des `(Deprecated) renderHTMLForm`-Objekts übergeben wird). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
 
 1. Rendern Sie ein HTML-Formular
 
@@ -335,7 +335,7 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Webservice):
    * Um das HTML-Formular innerhalb vollständiger HTML-Tags zu rendern, rufen Sie die Methode `setOutputType` des `HTMLRenderSpec`-Objekts auf und übergeben `OutputType.FullHTMLTags`.
 
    >[!NOTE]
-   >Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Programm-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `(Deprecated) renderHTMLForm` des `FormsServiceClient`-Objekts übergeben wird). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
+   Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Programm-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `(Deprecated) renderHTMLForm` des `FormsServiceClient`-Objekts übergeben wird). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
 
 1. Rendern Sie ein HTML-Formular
 
