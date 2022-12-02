@@ -3,7 +3,7 @@ title: Integration mit Adobe Analytics mithilfe von IMS
 description: Erfahren Sie mehr über die Integration von AEM mit Adobe Analytics mithilfe von IMS.
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1040'
 ht-degree: 100%
 
