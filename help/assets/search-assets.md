@@ -7,19 +7,19 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5605'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Suchen nach Assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
-| Version | Artikellink |
+| Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=en) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/search-assets.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/search-assets.html?lang=de) |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/using/search-assets.html?lang=de) |
 
 [!DNL Adobe Experience Manager Assets] bietet stabile Methoden zur Asset-Erkennung, mit denen Sie eine höhere Inhaltsgeschwindigkeit erzielen können. Ihre Teams können die Time-to-Market mit einem nahtlosen, intelligenten Sucherlebnis durch vordefinierte Funktionen und benutzerdefinierte Methoden verkürzen. Die Suche nach Assets spielt bei der Nutzung eines Digital-Asset-Management-Systems eine zentrale Rolle – sowohl für eine weitere Verwendung durch Kreativprofis als auch für eine robuste Verwaltung von Assets durch Geschäftsbenutzer und Marketing-Experten oder für die Verwaltung durch DAM-Administratoren. Einfache, erweiterte und benutzerdefinierte Suchen, die Sie über die Benutzeroberfläche von [!DNL Assets] oder andere Programme und Oberflächen durchführen können, helfen beim Bewältigen dieser Anwendungsfälle.
 
@@ -28,7 +28,7 @@ ht-degree: 88%
 | Suchen nach Assets | Konfigurieren und Verwalten der Suchfunktion | Arbeiten mit Suchergebnissen |
 |---|---|---|
 | [Einfache Suchvorgänge](#searchbasics) | [Suchindex](#searchindex) | [Ergebnisse sortieren](#sort) |
-| [Benutzeroberfläche für Suchen](#searchui) | [Visuelle oder Ähnlichkeitssuche](#configvisualsearch) | [Eigenschaften und Metadaten eines Assets überprüfen](#checkinfo) |
+| [Benutzeroberfläche für Suchen](#searchui) | [Visuelle Suche oder Ähnlichkeitssuche](#configvisualsearch) | [Eigenschaften und Metadaten eines Assets überprüfen](#checkinfo) |
 | [Suchvorschläge](#searchsuggestions) | [Obligatorische Metadaten](#mandatorymetadata) | [Download](#download) |
 | [Suchergebnisse und -verhalten verstehen](#searchbehavior) | [Suchfacetten ändern](#searchfacets) | [Massenaktualisierung von Metadaten](#metadataupdates) |
 | [Such-Ranking und -Optimierung](#searchrank) | [Textextraktion](#extracttextupload) | [Smart-Sammlungen](#collections) |
@@ -80,22 +80,22 @@ Manchmal werden in den Suchergebnissen auch unerwartete Assets angezeigt. Weiter
 
 ### Ergebnisse mit und ohne erweiterte Smart-Tags {#withsmarttags}
 
-Standardmäßig [!DNL Experience Manager] Suche kombiniert die Suchbegriffe mit einer UND-Klausel. Suchen Sie beispielsweise nach Suchbegriffen, die Frau läuft. Standardmäßig werden in den Suchergebnissen nur die Assets angezeigt, die sowohl weibliche als auch laufende Keywords enthalten. Das gleiche Verhalten wird beibehalten, wenn für die Keywords Sonderzeichen (Punkte, Unterstriche oder Gedankenstriche) verwendet werden. Die folgenden Suchabfragen geben dieselben Ergebnisse zurück:
+Die [!DNL Experience Manager]-Suche kombiniert die Suchbegriffe standardmäßig mit einer UND-Klausel. Beispiel: Sie suchen nach den Keywords „woman“ und „running“. Standardmäßig werden in den Suchergebnissen nur die Assets angezeigt, die die Keywords „woman“ und „running“ enthalten. Das gleiche Verhalten gilt, wenn mit den Keywords Sonderzeichen (Punkte, Unterstriche oder Gedankenstriche) verwendet werden. Die folgenden Suchanfragen geben dieselben Ergebnisse zurück:
 
 * `woman running`
 * `woman.running`
 * `woman-running`
 
-Die Abfrage `woman -running` gibt Assets ohne zurück `running` in ihren Metadaten.
-Durch die Verwendung von Smart-Tags wird ein zusätzliches `OR` -Klausel, um einen der Suchbegriffe als die angewendeten Smart-Tags zu finden. Ein Asset, das mit `woman` oder `running` Die Verwendung von Smart-Tags wird auch in einer solchen Suchabfrage angezeigt. Die Suchergebnisse sind also eine Kombination aus
+Die Anfrage `woman -running` gibt jedoch Assets ohne `running` in den Metadaten zurück.
+Durch die Verwendung von Smart-Tags wird eine zusätzliche `OR`-Klausel hinzugefügt. Damit wird jeder Suchbegriff gefunden, der den angewendeten Smart-Tags entspricht. Ein Asset, das über Smart-Tags mit `woman` oder `running` getaggt wurde, wird in einer solchen Suchanfrage auch angezeigt. Die Suchergebnisse sind also eine Kombination aus
 
-* Assets mit `woman` und `running` Suchbegriffe in den Metadaten (Standardverhalten).
+* Assets mit den Keywords `woman` und `running` in den Metadaten (Standardverhalten).
 
 * Assets, die mit einem der Keywords getaggt wurden (Smart-Tags-Verhalten).
 
 ### Suchvorschläge bei der Eingabe {#searchsuggestions}
 
-Wenn Sie mit der Eingabe von Keywords beginnen, [!DNL Experience Manager] schlägt die möglichen Suchbegriffe oder -sätze vor. Die Vorschläge basieren auf den Metadaten der vorhandenen Assets. [!DNL Experience Manager] indiziert alle Metadatenfelder, um die Suche zu erleichtern. Zur Bereitstellung von Suchvorschlägen verwendet das System die Werte der folgenden Metadatenfelder. Um Suchvorschläge zu erhalten, können Sie die folgenden Felder mit geeigneten Keywords ausfüllen:
+Wenn Sie mit der Eingabe eines Keywords beginnen, schlägt [!DNL Experience Manager] mögliche Suchbegriffe oder Phrasen vor. Die Vorschläge basieren auf den Metadaten der vorhandenen Assets. [!DNL Experience Manager] indiziert alle Metadatenfelder, um die Suche zu erleichtern. Zur Bereitstellung von Suchvorschlägen verwendet das System die Werte der folgenden Metadatenfelder. Um Suchvorschläge zu erhalten, können Sie die folgenden Felder mit geeigneten Keywords ausfüllen:
 
 * Asset-Tags. (Zuordnung zu `jcr:content/metadata/cq:tags`)
 * Asset-Titel. (Zuordnung zu `jcr:content/metadata/dc:title`)
@@ -103,11 +103,11 @@ Wenn Sie mit der Eingabe von Keywords beginnen, [!DNL Experience Manager] schlä
 * Titel im JCR-Repository. Der Wert wird ggf. dem Asset-Titel zugeordnet. (Zuordnung zu `jcr:content/jcr:title`)
 * Beschreibung im JCR-Repository. Der Wert wird ggf. der Asset-Beschreibung zugeordnet. (Zuordnung zu `jcr:content/jcr:description`)
 
-Um Vorschläge für mehr als einen Suchbegriff zu erhalten, geben Sie weiterhin alle Suchbegriffe ein, ohne einen Vorschlag für einen einzelnen Suchbegriff auszuwählen.
+Um Vorschläge für mehr als einen Suchbegriff zu erhalten, geben Sie weiterhin alle Keywords ein, ohne einen Vorschlag für ein einzelnes Keyword auszuwählen.
 
-![Geben Sie mehrere Suchbegriffe ein, um Vorschläge anzuzeigen, die allen entsprechen](assets/search_suggestionsmanykeywords.gif)
+![Geben Sie mehrere Keywords ein, um Vorschläge anzuzeigen, die zu allen passen](assets/search_suggestionsmanykeywords.gif)
 
-*Abbildung: Geben Sie mehrere Suchbegriffe ein, um Vorschläge anzuzeigen, die zu allen passen.*
+*Abbildung: Geben Sie mehrere Keywords ein, um Vorschläge anzuzeigen, die zu allen passen.*
 
 ### Such-Ranking und -Optimierung {#searchrank}
 
@@ -194,7 +194,7 @@ Das Keyword für eine von einem Benutzer erstellte Eigenschaft ist ihre Feldbesc
 
 Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen:
 
-* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (wie: title=John Doe und creator tool = Adobe Photoshop): `title:"John Doe" creatortool:Adobe*`
+* So zeigen Sie alle Assets mit mehreren Facettenfeldern an (wie: title=John Doe und creator tool = Adobe Photoshop):   `title:"John Doe" creatortool:Adobe*`
 * So zeigen Sie alle Assets an, wenn der Facettenwert nicht ein einzelnes Wort, sondern ein Satz ist (wie: title=Scott Reynolds): `title:"Scott Reynolds"`
 * So zeigen Sie alle Assets mit mehreren Werten für eine einzelne Eigenschaft an (wie: title=Scott Reynolds oder John Doe): `title:"Scott Reynolds" OR "John Doe"`
 * So zeigen Sie Assets an, deren Eigenschaftswerte mit einer bestimmten Zeichenfolge beginnen (wie: title ist Scott Reynolds): `title:Scott*`
@@ -248,7 +248,7 @@ Sie können die folgenden Anfrageparameter in einer URL übergeben, um den Asset
 
 | Name | Werte | Beispiel | Zweck |
 |---|---|---|---|
-| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL: [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Zum Starten des Asset-Wählers mit einem bestimmten Ordner, z. B. mit ausgewähltem Ordner `/content/dam/we-retail/en/activities`, sollte die URL wie folgt aussehen: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Wenn beim Starten des Asset-Wählers ein bestimmter Ordner ausgewählt sein soll, können Sie ihn als Ressourcensuffix übergeben. |
+| resource suffix (B) | Ordnerpfad als Ressourcensuffix in der URL:   [https://localhost:4502/aem/assetpicker.html/&lt;folder_path>](https://localhost:4502/aem/assetpicker.html) | Zum Starten des Asset-Wählers mit einem bestimmten Ordner, z. B. mit ausgewähltem Ordner `/content/dam/we-retail/en/activities`, sollte die URL wie folgt aussehen: `https://localhost:4502/aem/assetpicker.html/content/dam/we-retail/en/activities?assettype=images` | Wenn beim Starten des Asset-Wählers ein bestimmter Ordner ausgewählt sein soll, können Sie ihn als Ressourcensuffix übergeben. |
 | `mode` | single, multiple | <ul><li>`https://localhost:4502/aem/assetpicker.html?mode=single`</li><li>`https://localhost:4502/aem/assetpicker.html?mode=multiple`</li></ul> | Im Modus „multiple“ können Sie mit dem Asset-Wähler mehrere Assets gleichzeitig auswählen. |
 | `dialog` | true, false | [https://localhost:4502/aem/assetpicker.html?dialog=true](https://localhost:4502/aem/assetpicker.html?dialog=true) | Verwenden Sie diese Parameter, um den Asset-Wähler als Granite-Dialogfeld zu öffnen. Diese Option ist nur relevant, wenn Sie den Asset-Wähler per Granite-Pfadfeld starten und als pickerSrc-URL konfigurieren. |
 | `root` | &lt;folder_path> | `https://localhost:4502/aem/assetpicker.html?assettype=images&root=/content/dam/we-retail/en/activities` | Verwenden Sie diese Option, um den Stammordner für den Asset-Wähler anzugeben. In diesem Fall können Sie mit dem Asset-Wähler nur untergeordnete Assets (direkt/indirekt) unter dem Stammordner auswählen. |
@@ -295,7 +295,7 @@ Die Suchfunktion kann in den folgenden Szenarien Leistungseinschränkungen aufwe
 
 * **Indizierung**: In den Suchergebnissen werden nur indizierte Metadaten und Assets zurückgegeben. Um eine bessere Abdeckung und Leistung zu erzielen, stellen Sie eine ordnungsgemäße Indizierung sicher und befolgen Sie die Best Practices. Siehe [Indizierung](#searchindex).
 
-* Um bestimmte Assets aus Suchergebnissen auszuschließen, verwenden Sie `excludedPath` -Eigenschaft im Lucene-Index.
+* Um bestimmte Assets aus Suchergebnissen auszuschließen, verwenden Sie die Eigenschaft `excludedPath` im Lucene-Index.
 
 ## Einige Beispiele zur Illustration der Suche {#samples}
 
@@ -338,55 +338,55 @@ Verwenden Sie doppelte Anführungszeichen um Keywords, um Assets zu finden, die 
 
 ### Suchindexkonfigurationen {#searchindex}
 
-Die Asset-Erkennung beruht auf der Indizierung von DAM-Inhalten, einschließlich der Metadaten. Die schnellere und präzise Asset-Erkennung beruht auf einer optimierten Indizierung und geeigneten Konfigurationen. Siehe [Suchindex](/help/assets/performance-tuning-guidelines.md#search-indexes), [Oak-Abfragen und Indizierung](/help/sites-deploying/queries-and-indexing.md)und [Best Practices](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
+Die Asset-Erkennung beruht auf der Indizierung von DAM-Inhalten, einschließlich der Metadaten. Die schnellere und präzise Asset-Erkennung beruht auf einer optimierten Indizierung und geeigneten Konfigurationen. Siehe [Suchindex](/help/assets/performance-tuning-guidelines.md#search-indexes), [Oak-Abfragen und Indizierung](/help/sites-deploying/queries-and-indexing.md) und [Best Practices](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
-Um bestimmte Assets aus Suchergebnissen auszuschließen, verwenden Sie `excludedPath` -Eigenschaft im Lucene-Index.
+Um bestimmte Assets aus Suchergebnissen auszuschließen, verwenden Sie die Eigenschaft `excludedPath` im Lucene-Index.
 
-### Visuelle oder Ähnlichkeitssuche {#configvisualsearch}
+### Visuelle Suche oder Ähnlichkeitssuche {#configvisualsearch}
 
 Die visuelle Suche verwendet Smart-Tags. Führen Sie nach dem Konfigurieren der Smart-Tagging-Funktion die folgenden Schritte aus.
 
-1. In [!DNL Experience Manager] CRXDE, in `/oak:index/lucene` -Knoten, fügen Sie die folgenden Eigenschaften und Werte hinzu und speichern Sie die Änderungen.
+1. Fügen Sie in [!DNL Experience Manager] CRXDE im Knoten `/oak:index/lucene` die folgenden Eigenschaften und Werte hinzu und speichern Sie die Änderungen.
 
-   * `costPerEntry` Eigenschaft des Typs `Double` mit dem Wert `10`.
-   * `costPerExecution` Eigenschaft des Typs `Double` mit dem Wert `2`.
-   * `refresh` Eigenschaft des Typs `Boolean` mit dem Wert `true`.
+   * Eigenschaft `costPerEntry` des Typs `Double` mit dem Wert `10`.
+   * Eigenschaft `costPerExecution` des Typs `Double` mit dem Wert `2`.
+   * Eigenschaft `refresh` des Typs `Boolean` mit dem Wert `true`.
 
-   Diese Konfiguration ermöglicht die Suche nach dem entsprechenden Index.
+   Diese Konfiguration ermöglicht die Suche über den entsprechenden Index.
 
-1. Um einen Lucene-Index in CRXDE zu erstellen, klicken Sie auf `/oak:index/damAssetLucene/indexRules/dam:Asset/properties`, erstellen Sie den Knoten namens `imageFeatures` des Typs `nt-unstructured`. In `imageFeatures` Knoten,
+1. Um einen Lucene-Index in CRXDE zu erstellen, erstellen Sie unter `/oak:index/damAssetLucene/indexRules/dam:Asset/properties` den Knoten `imageFeatures` des Typs `nt-unstructured`. Im Knoten `imageFeatures`:
 
-   * Hinzufügen `name` Eigenschaft des Typs `String` mit dem Wert `jcr:content/metadata/imageFeatures/haystack0`.
-   * Hinzufügen `nodeScopeIndex` Eigenschaft des Typs `Boolean` mit dem Wert von `true`.
-   * Hinzufügen `propertyIndex` Eigenschaft des Typs `Boolean` mit dem Wert von `true`.
-   * Hinzufügen `useInSimilarity` Eigenschaft des Typs `Boolean` mit dem Wert `true`.
+   * Fügen Sie die Eigenschaft `name` des Typs `String` mit dem Wert `jcr:content/metadata/imageFeatures/haystack0` hinzu.
+   * Fügen Sie die Eigenschaft `nodeScopeIndex` des Typs `Boolean` mit dem Wert `true` hinzu.
+   * Fügen Sie die Eigenschaft `propertyIndex` des Typs `Boolean` mit dem Wert `true` hinzu.
+   * Fügen Sie die Eigenschaft `useInSimilarity` des Typs `Boolean` mit dem Wert `true` hinzu.
 
    Speichern Sie die Änderungen.
 
-1. Zugriff `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` und hinzufügen `similarityTags` Eigenschaft des Typs `Boolean` mit dem Wert von `true`.
-1. Anwenden von Smart-Tags auf die Assets in Ihren [!DNL Experience Manager] Repository. Siehe [Konfigurieren von Smart-Tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html#configuring).
-1. In CRXDE in `/oak-index/damAssetLucene` -Knoten, legen Sie die `reindex` Eigenschaft auf `true`. Speichern Sie die Änderungen.
-1. (Optional) Wenn Sie ein angepasstes Suchformular erstellt haben, kopieren Sie die `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` Knoten zu `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Speichern Sie die Änderungen.
+1. Greifen Sie auf `/oak:index/damAssetLucene/indexRules/dam:Asset/properties/predictedTags` zu und fügen Sie die Eigenschaft `similarityTags` des Typs `Boolean` mit dem Wert `true` hinzu.
+1. Wenden Sie Smart-Tags auf die Assets in Ihrem Repository [!DNL Experience Manager] an. Siehe [Konfigurieren von Smart-Tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/configuring/tagging.html?lang=de#configuring).
+1. Legen Sie in CRXDE im Knoten `/oak-index/damAssetLucene` die Eigenschaft `reindex` auf `true` fest. Speichern Sie die Änderungen.
+1. (Optional) Wenn Sie ein Suchformular angepasst haben, kopieren Sie den Knoten `/libs/settings/dam/search/facets/assets/jcr%3Acontent/items/similaritysearch` in `/conf/global/settings/dam/search/facets/assets/jcr:content/items`. Speichern Sie die Änderungen.
 
-Weitere Informationen finden Sie unter [Smart-Tags in Experience Manager verstehen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html) und [Verwalten von Smart-Tags](/help/assets/enhanced-smart-tags.md).
+Weitere Informationen finden Sie unter [Grundlegendes zu Smart-Tags in Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=de) und [Verwalten von Smart-Tags](/help/assets/enhanced-smart-tags.md).
 
 >[!CAUTION]
 >
->Wenn die Lucene-Indizierung aus [!DNL Adobe Experience Manager], dann funktioniert die Suche, die auf Smart-Tags basiert, nicht wie erwartet.
+>Wenn die Lucene-Indizierung über [!DNL Adobe Experience Manager] durchgeführt wird, dann funktioniert die Suche basierend auf Smart-Tags nicht wie erwartet.
 
 ### Obligatorische Metadaten {#mandatorymetadata}
 
-Geschäftsbenutzer, Administratoren oder DAM-Bibliothekare können einige Metadaten als obligatorische Metadaten definieren, die für die Funktionsweise der Geschäftsprozesse unbedingt erforderlich sind. Aus verschiedenen Gründen fehlen bei einigen Assets möglicherweise diese Metadaten, z. B. ältere Assets oder Assets, die stapelweise migriert wurden. Assets mit fehlenden oder ungültigen Metadaten werden anhand der Eigenschaft &quot;Indizierte Metadaten&quot;erkannt und gemeldet. Informationen zur Konfiguration finden Sie unter [Obligatorische Metadaten](/help/assets/metadata-schemas.md#define-mandatory-metadata).
+Business-Anwendende, Admins oder DAM-Bibliothekinnen und -Bibliothekare können einige Metadaten als obligatorische Metadaten definieren, die für die Funktionsweise der Geschäftsprozesse unbedingt erforderlich sind. Aus verschiedenen Gründen fehlen bei einigen Assets möglicherweise diese Metadaten, z. B. bei älteren Assets oder bei Assets, die stapelweise migriert wurden. Assets mit fehlenden oder ungültigen Metadaten werden anhand der indizierten Metadateneigenschaften erkannt und gemeldet. Informationen zur Konfiguration finden Sie unter [Obligatorische Metadaten](/help/assets/metadata-schemas.md#define-mandatory-metadata).
 
-### Suchfacetten ändern {#searchfacets}
+### Ändern von Suchfacetten {#searchfacets}
 
-Verbesserung der Entdeckungsgeschwindigkeit, [!DNL Experience Manager Assets] bietet Suchfacetten, mit denen Sie die Suchergebnisse filtern können. Der Bereich Filter enthält standardmäßig einige Standardfacetten. Administratoren können das Bedienfeld Filter anpassen, um die Standardfacetten mithilfe der integrierten Eigenschaften zu ändern. [!DNL Experience Manager] bietet eine gute Sammlung von integrierten Eigenschaften und einen Editor zum Anpassen der Facetten. Siehe [Suchfacetten](/help/assets/search-facets.md).
+Zur Verbesserung der Erkennungsgeschwindigkeit bietet [!DNL Experience Manager Assets] Suchfacetten, mit denen Sie die Suchergebnisse filtern können. Das Bedienfeld „Filter“ enthält standardmäßig einige Standardsuchfacetten. Admins können das Bedienfeld „Filter“ anpassen, um die Standardfacetten mithilfe der integrierten Prädikate zu ändern. [!DNL Experience Manager] bietet eine gute Sammlung von integrierten Prädikaten und einen Editor zum Anpassen der Facetten. Siehe [Suchfacetten](/help/assets/search-facets.md).
 
 ### Extrahieren von Text beim Hochladen von Assets {#extracttextupload}
 
-Sie können [!DNL Experience Manager] , um den Text aus den Assets zu extrahieren, wenn Benutzer Assets wie PSD- oder PDF-Dateien hochladen. [!DNL Experience Manager] indiziert den extrahierten Text und hilft Benutzern, diese Assets basierend auf dem extrahierten Text zu suchen. Siehe [Upload von Assets](/help/assets/manage-assets.md#uploading-assets).
+Sie können [!DNL Experience Manager] so konfigurieren, dass der Text aus den Assets extrahiert wird, wenn Benutzer Assets wie PSD- oder PDF-Dateien hochladen. [!DNL Experience Manager] indiziert den extrahierten Text und hilft Benutzern, diese Assets basierend auf dem extrahierten Text zu suchen. Siehe [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
 
-Wenn die Textextraktion für Ihre Bereitstellung zu ressourcenintensiv wird, sollten Sie [Deaktivieren der Textextraktion](https://helpx.adobe.com/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
+Wenn die Textextraktion für Ihre Implementierung zu ressourcenintensiv wird, sollten Sie [die Textextraktion deaktivieren](https://helpx.adobe.com/de/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
 
 ### Benutzerdefinierte Prädikate zum Filtern von Suchergebnissen {#custompredicates}
 
@@ -476,6 +476,6 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 >[!MORELIKETHIS]
 >
 >* [[!DNL Experience Manager] Handbuch zur Suchimplementierung](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/search-tutorial-develop.html?lang=de)
->* [Fortgeschrittene Konfiguration zur Optimierung der Suchergebnisse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html)
+>* [Fortgeschrittene Konfiguration zur Optimierung der Suchergebnisse](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/search-and-discovery/search-boost.html?lang=de)
 >* [Konfigurieren der intelligenten Übersetzungssuche](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/translation/smart-translation-search-technical-video-setup.html?lang=de)
 
