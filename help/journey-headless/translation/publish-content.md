@@ -3,9 +3,9 @@ title: Veröffentlichen übersetzter Inhalte
 description: Erfahren Sie, wie Sie Ihre übersetzten Inhalte veröffentlichen und die Übersetzungen aktualisieren, wenn die Inhalte sich ändern.
 exl-id: 32c387fe-fa1b-499b-861f-b4822f5e139e
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1378'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Bevor Sie Ihre Inhalte veröffentlichen, sollten Sie das Author-Publish-Modell v
 
 AEM ist daher physisch in zwei Instanzen unterteilt.
 
-1. Die **Autoreninstanz** ist das System, in dem Inhaltsautoren und Administratoren Inhalte erstellen und verwalten.
+1. Die **Autoreninstanz** ist das System, in dem Inhaltsautorinnen und -autoren und Admins Inhalte erstellen und verwalten.
 1. Die **Veröffentlichungsinstanz** ist das System, das die Inhalte für die Verbraucher bereitstellt.
 
 Sobald Inhalte in der Autoreninstanz erstellt wurden, müssen sie in die Veröffentlichungsinstanz übertragen werden, damit sie zur Nutzung verfügbar sind. Der Prozess der Übertragung von der Autoren- zur Veröffentlichungsinstanz wird als **Veröffentlichung** bezeichnet.
@@ -71,7 +71,7 @@ Unter diesem Pfad befinden sich Unterordner für jede Übersetzungssprache und S
    ![Veröffentlichungsoptionen verwalten](assets/manage-publication-options.png)
 1. Bestätigen Sie im nächsten Fenster, **Veröffentlichung verwalten**, dass die richtigen Pfade ausgewählt sind. Tippen oder klicken Sie auf **Veröffentlichen**.
    ![Umfang der Veröffentlichung verwalten](assets/manage-publication-scope.png)
-1. AEM bestätigt die Veröffentlichungsaktion mit einer Popup-Meldung am oberen Bildschirmrand.
+1. AEM bestätigt die Veröffentlichungsaktion mit einer Popup-Meldung am unteren Bildschirmrand.
    ![Banner „Ressourcen veröffentlicht“](assets/resources-published-message.png)
 
 Ihre übersetzten Headless-Inhalte sind jetzt veröffentlicht! Sie können jetzt von Ihren Headless-Services darauf zugreifen und sie nutzen.
