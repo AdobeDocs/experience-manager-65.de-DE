@@ -11,7 +11,7 @@ role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '419'
 ht-degree: 100%
 
