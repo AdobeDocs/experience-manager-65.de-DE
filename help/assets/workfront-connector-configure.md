@@ -5,31 +5,31 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1749'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 # Konfigurieren von [!DNL Workfront for Experience Manager enhanced connector] {#assets-integration-overview}
 
-| Version | Artikellink |
+| Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-configure.html?lang=en) |
+| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/integrations/workfront-connector-configure.html?lang=de) |
 
-Ein Benutzer mit Administratorzugriff in [!DNL Adobe Experience Manager]  konfiguriert den erweiterten Connector nach der Installation. Anweisungen zur Installation finden Sie unter [Installieren des Connectors](/help/assets/workfront-integrations.md).
+Ein Benutzer mit Adminzugriff in [!DNL Adobe Experience Manager] konfiguriert den erweiterten Connector nach der Installation. Anweisungen zur Installation finden Sie unter [Installieren des Connectors](/help/assets/workfront-integrations.md).
 
 >[!IMPORTANT]
 >
->* Adobe fordert, dass die Bereitstellung und Konfiguration des [!DNL Adobe Workfront for Experience Manager enhanced connector] nur über zertifizierte Partner oder [!DNL Adobe Professional Services] durchgeführt wird. Wird diese ohne zertifizierten Partner oder [!DNL Adobe Professional Services] bereitgestellt oder konfiguriert, wird sie von Adobe nicht unterstützt.
+>* Adobe erfordert die Implementierung und Konfiguration des [!DNL Adobe Workfront for Experience Manager enhanced connector] nur über zertifizierte Partner oder [!DNL Adobe Professional Services] Wird diese ohne zertifizierten Partner oder [!DNL Adobe Professional Services] bereitgestellt oder konfiguriert, wird sie von Adobe nicht unterstützt.
 >
 >* Adobe veröffentlicht möglicherweise Aktualisierungen für [!DNL Adobe Workfront] und [!DNL Adobe Experience Manager], die diesen Connector redundant machen. In diesem Fall kann es erforderlich sein, dass Kunden diesen Connector nicht mehr verwenden.
 >
->* Adobe unterstützt erweiterte Connector-Versionen 1.7.4 und höher. Frühere Vorabversionen und benutzerdefinierte Versionen werden nicht unterstützt. Navigieren Sie zur erweiterten Connector-Version, um sie zu überprüfen. `digital.hoodoo` im linken Bereich in [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de).
+>* Adobe unterstützt die Versionen 1.7.4 und höher des erweiterten Connectors. Frühere Vorabversionen und benutzerdefinierte Versionen werden nicht unterstützt. Um die Version des erweiterten Connectors zu überprüfen, gehen Sie zu der Gruppe `digital.hoodoo`, die im linken Fensterbereich des [Package Managers](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) verfügbar ist.
 >
->* Siehe [Partnerzertifizierungsprüfung für den erweiterten Connector von Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Informationen zur Prüfung finden Sie unter [Prüfungsleitfaden](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
+>* Siehe [Partnerzertifizierungsprüfung für den erweiterten Connector von Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Informationen zur Prüfung finden Sie im [Prüfungshandbuch](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
 
 ## Konfigurieren von Ereignisabonnements {#event-subscriptions}
