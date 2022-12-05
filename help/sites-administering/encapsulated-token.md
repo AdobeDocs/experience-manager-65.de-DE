@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 32e2a30d9f3327d26b81a07730ace04e4e68b0d1
+source-git-commit: f8d249f5d3fac243b4989c3eca4be2730dcf16ec
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '801'
 ht-degree: 100%
 
 ---
@@ -68,16 +68,12 @@ Bei der Konfiguration des Encapsulated Tokens müssen Sie einige Aspekte berück
 
 ### Replizieren des HMAC-Schlüssels {#replicating-the-hmac-key}
 
-Der HMAC-Schlüssel liegt als binäre Eigenschaft von `/etc/key` im Repository vor. Sie können ihn separat herunterladen. Klicken Sie dazu auf den Link **Anzeigen** neben der Eigenschaft:
-
-![chlimage_1-35](assets/chlimage_1-35a.png)
-
 Um den Schlüssel auf weitere Instanzen zu replizieren, führen Sie die folgenden Schritte durch:
 
 1. Greifen Sie auf die AEM-Instanz zu, auf der sich die zu kopierenden Schlüsseldaten befinden. In der Regel handelt es sich dabei um eine Autoreninstanz.
 1. Suchen Sie im lokalen Dateisystem das Bundle `com.adobe.granite.crypto.file`. Es kann sich z. B. unter diesem Pfad befinden:
 
-   * &lt;author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
    Die Datei `bundle.info` in jedem Ordner identifiziert den Bundle-Namen.
 
