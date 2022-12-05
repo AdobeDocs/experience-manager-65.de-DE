@@ -120,13 +120,11 @@ Sie können Marketingmaterial sofort nach dem Erstellen bearbeiten. Alternativ h
    >
    >* Bilder sind nicht in die zugrunde liegende [!DNL InDesign]-Vorlage eingebettet.
    >* Bilder verfügen über Verknüpfungen mit dem lokalen Dateisystem.
-
    >
    >Gehen Sie wie folgt vor, um für [!DNL Experience Manager] das Auflösen von Bildern zu ermöglichen:
    >
    >* Betten Sie Bilder ein, während Sie [!DNL InDesign]-Vorlagen erstellen (siehe [Informationen zu Links und eingebetteten Grafiken](https://helpx.adobe.com/de/indesign/using/graphics-links.html)).
    >* Stellen Sie [!DNL Experience Manager] in Ihrem lokalen Dateisystem bereit und ordnen Sie anschließend fehlende Symbole den vorhandenen Assets in [!DNL Experience Manager] zu.
-
    >
    >Weitere Informationen zum Arbeiten mit [!DNL InDesign]-Dokumenten finden Sie in den [Best Practices für die Arbeit mit InDesign-Dokumenten in Experience Manager](https://helpx.adobe.com/de/experience-manager/kb/best-practices-idd-docs-aem.html).
 

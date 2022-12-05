@@ -65,7 +65,6 @@ Die Ziele der Verwendung des Sling Resource Merger in AEM lauten wie folgt:
 >1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
 >
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
-
 >
 
 
