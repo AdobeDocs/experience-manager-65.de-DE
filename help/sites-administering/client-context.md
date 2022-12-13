@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 02afc4eb78acaacc40d3ba1830ccb1e9c3907d0f
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1877'
 ht-degree: 100%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in der entsprechenden Dokumentation für die [Konfiguration]ch-configuring.md) und für [Entwickler](/help/sites-developing/contexthub.md).
+>ClientContext wurde durch ContextHub abgelöst. Weitere Informationen finden Sie in der entsprechenden [Konfigurations-](/help/sites-developing/ch-configuring.md) und [Entwicklerdokumentation](/help/sites-developing/contexthub.md).
 
 ClientContext ist ein Mechanismus, der Ihnen bestimmte Informationen zur aktuellen Seite und zum aktuellen Besucher liefert. Um ClientContext zu öffnen, drücken Sie die Tastenkombination **Strg+Alt+C** (Windows) oder **Ctrl+Wahl+C** (Mac):
 
@@ -116,7 +116,7 @@ Beispiel: die Frage, ob sich die Maus aktuell im linken oder rechten Fensterbere
 **Tag-Cloud**: Zeigt die auf der aktuellen Seite gesetzten und beim Navigieren auf der Site gesammelten Tags an. Wenn Sie mit der Maus auf ein Tag zeigen, sehen Sie, wie oft der aktuelle Benutzer auf Seiten mit diesem bestimmten Tag zugegriffen hat.
 
 >[!NOTE]
->Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden nicht gezählt.
+Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden nicht gezählt.
 
 **Technografie-Store**: Diese Komponente hängt von Ihrer Installation ab.
 
@@ -127,7 +127,7 @@ Dieser Sitzungsstore verfügt über keine standardmäßige ClientContext-Kompone
 Weitere Informationen finden Sie unter [ClientContext im Detail](/help/sites-developing/client-context.md).
 
 >[!NOTE]
->Die Seitendaten sind keine Standardkomponenten in ClientContext mehr. Sie können sie ggf. hinzufügen, indem Sie ClientContext bearbeiten, die Komponente **Generische Store-Eigenschaften** hinzufügen und dann eine entsprechende Konfiguration durchführen, um den **Store** als `pagedata` zu definieren.
+Die Seitendaten sind keine Standardkomponenten in ClientContext mehr. Sie können sie ggf. hinzufügen, indem Sie ClientContext bearbeiten, die Komponente **Generische Store-Eigenschaften** hinzufügen und dann eine entsprechende Konfiguration durchführen, um den **Store** als `pagedata` zu definieren.
 
 ## Ändern des ClientContext-Profils {#changing-the-client-context-profile}
 
