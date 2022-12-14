@@ -1,8 +1,8 @@
 ---
 title: Revisionsbereinigung
 seo-title: Revision Cleanup
-description: Erfahren Sie, wie Sie die Revisionsbereinigungsfunktion in AEM 6.3 verwenden.
-seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.3.
+description: Erfahren Sie, wie Sie die Revisionsbereinigungsfunktion in AEM 6.5 verwenden.
+seo-description: Learn how to use the Revision Cleanup functionality in AEM 6.5.
 uuid: 321f5038-44b0-4f1e-a1aa-2d29074eed70
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 550e7993f88367ec4b5c1d024dc742c087c1a9eb
+source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
 workflow-type: tm+mt
-source-wordcount: '5912'
-ht-degree: 97%
+source-wordcount: '5918'
+ht-degree: 96%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 97%
 
 Bei jeder Repository-Aktualisierung wird eine neue Inhaltsrevision erstellt. Daher wächst das Repository nach jeder Aktualisierung. Um ein unkontrolliertes Repository-Wachstum zu vermeiden, müssen alte Revisionen bereinigt werden, um Festplattenressourcen freizugeben. Diese Wartungsfunktionalität wird als Revisionsbereinigung bezeichnet. und ist ab AEM 6.0 als Offlineprogramm verfügbar.
 
-Mit AEM 6.3 wurde eine Onlineversion dieser Funktionalität namens Online-Revisionsbereinigung eingeführt. Verglichen mit der Offline-Revisionsbereinigung, bei der die AEM-Instanz beendet werden muss, kann die Online-Revisionsbereinigung ausgeführt werden, wenn die AEM-Instanz online ist. Die Online-Revisionsbereinigung ist standardmäßig aktiviert und wird als Methode für die Revisionsbereinigung empfohlen.
+Mit AEM 6.3 und höher wurde eine Online-Version dieser Funktion namens Online-Revisionsbereinigung eingeführt. Verglichen mit der Offline-Revisionsbereinigung, bei der die AEM-Instanz beendet werden muss, kann die Online-Revisionsbereinigung ausgeführt werden, wenn die AEM-Instanz online ist. Die Online-Revisionsbereinigung ist standardmäßig aktiviert und wird als Methode für die Revisionsbereinigung empfohlen.
 
 **Hinweis**: [Im Video](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) finden Sie eine Einführung in die Verwendung der Online-Revisionsbereinigung.
 
@@ -162,7 +162,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Wird das vorherige TAR-Format weiterhin unterstützt?</strong></td>
-   <td>AEM 6.3 unterstützt nur das neue Oak-Segment-TAR.</td>
+   <td>Nur der neue Oak-Segment-Tar wird mit AEM 6.3 oder höher unterstützt.</td>
    <td> </td>
   </tr>
   <tr>
@@ -171,7 +171,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Kann ich auf 6.3 aktualisieren und die Migration später durchführen (um z. B. ein anderes Wartungsfenster zu nutzen)? </strong></td>
+   <td><strong>Kann ich auf 6.3 oder höher aktualisieren und die Migration später durchführen (z. B. mithilfe eines anderen Wartungsfensters)?</strong></td>
    <td>Nein, wie oben beschrieben, ist die Migration obligatorisch.</td>
    <td> </td>
   </tr>
@@ -249,7 +249,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Müssen vor dem Ausführen der Online-Revisionsbereinigung irgendwelche Voraussetzungen erfüllt sein?</strong></td>
-   <td><p>Die Online-Revisionsbereinigung ist nur in AEM 6.3 und höheren Versionen verfügbar. Wenn Sie daher eine ältere Version von AEM verwenden, müssen Sie zum neuen <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak-Segment-Tar</a> migrieren.</p> </td>
+   <td><p>Die Online-Revisionsbereinigung ist nur mit AEM 6.3 und höheren Versionen verfügbar. Wenn Sie daher eine ältere Version von AEM verwenden, müssen Sie zum neuen <a href="/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar">Oak-Segment-Tar</a> migrieren.</p> </td>
    <td> </td>
   </tr>
   <tr>
