@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 2801ef5ec5ed7b01f4eb046baa439f6d5de56b75
+source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
 workflow-type: tm+mt
-source-wordcount: '3249'
-ht-degree: 100%
+source-wordcount: '3252'
+ht-degree: 99%
 
 ---
 
@@ -435,7 +435,7 @@ Wenn Sie eine Vorlage erstellt haben, die als Grundlage für andere Vorlagen die
 1. Erstellen Sie eine Vorlage wie andere bearbeitbare Vorlagen auch, [wie hier dokumentiert](/help/sites-authoring/templates.md#creating-a-new-template-template-author). Diese dient dann als Grundlage für Ihren Vorlagentyp.
 1. Kopieren Sie mit CRXDE Lite die neu erstellte Vorlage aus dem Knoten `templates` in den Knoten `template-types` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Löschen Sie die Vorlage aus dem Knoten `templates` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
-1. Löschen Sie in der Kopie der Vorlage, die sich unter dem Knoten `template-types` befindet, alle `cq:template`-, `cq:templateType`- und `jcr:content`-Eigenschaften.
+1. In der Kopie der Vorlage, die sich unter der `template-types` Knoten, alle löschen `cq:template` und `cq:templateType` Eigenschaften aus allen `jcr:content` Knoten.
 
 Sie können auch Ihren eigenen Vorlagentyp entwickeln, indem Sie eine bearbeitbare Beispielvorlage von GitHub als Grundlage verwenden.
 
