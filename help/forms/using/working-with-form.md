@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 8a5e038e-b39a-41de-88a0-47642e5bd5bf
 exl-id: adff5339-e026-4924-a401-f249f37fc6e6
-source-git-commit: 3c691a9e8673f3229368abbd550982d207eb8ac6
+source-git-commit: eb71119474f03a969a721c792b6f1ac330f9dbf3
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 82%
@@ -32,7 +32,7 @@ Um mehrere Formulare zu synchronisieren, wählen Sie in der Autoreninstanz mehre
 
 Wenn die Synchronisierung der Android-App für AFA (AEM Form Application) fehlschlägt, führen Sie die folgenden Schritte aus, um das Synchronisierungsproblem zu beheben:
 
-1. Navigieren Sie zu **https://&#39;[server]:[port]&quot;system/console/configMgr**.
+1. Navigieren Sie zu **https://[server]:[port]/system/console/configMgr**.
 1. Suchen Sie nach **[!UICONTROL Adobe Granite Token Authentication Handler]** und klicken Sie auf **[!UICONTROL Bearbeiten]**.
 1. Wählen Sie die **[!UICONTROL Keines]** -Option aus dem Dropdown-Menü für **[!UICONTROL SameSite-Attribut für das Anmelde-Token-Cookie]** -Attribut.
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
