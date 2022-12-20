@@ -1,7 +1,7 @@
 ---
 title: CRX/Bundle- und Start-Seitendienst nicht verfügbare Fehler, sobald das neueste Service Pack 6.5.15.0 installiert ist
 description: CRX/Bundle- und Start-Seitendienst nicht verfügbare Fehler, sobald das neueste Service Pack 6.5.15.0 installiert ist
-source-git-commit: 4e4dca8ae8ed49c5b81934f22572c84938f4f676
+source-git-commit: be7a9cfc226537ab4b360064220fa03bf2045310
 workflow-type: tm+mt
 source-wordcount: '312'
 ht-degree: 16%
@@ -31,9 +31,9 @@ Nach der Installation [AEM 6.5.15.0 Service Pack](https://experience.adobe.com/#
 1. Suchen Sie die `bundle.info` -Datei.
 1. Öffnen Sie die `bundle.info` -Datei im Texteditor und suchen Sie nach dem Bundle-Namen als `org.apache.felix.http.bridge`.
 
->[!NOTE]
->
->In diesem Fall `bundle.info` under `bundle52` enthält nicht die `org.apache.felix.http.bridge` Bundle, überprüfen Sie die Bundle-Nummer in eckiger Klammer neben `org.apache.felix.http.bridge`. Navigieren Sie dann zu [AEM-Forms-Stamm]\crx-repository\launchpad\felix\bundle[x] und führen Sie die nächsten Schritte an dieser Stelle aus.
+   >[!NOTE]
+   >
+   >In diesem Fall `bundle.info` under `bundle52` enthält nicht die `org.apache.felix.http.bridge` Bundle, überprüfen Sie die Bundle-Nummer in eckiger Klammer neben `org.apache.felix.http.bridge`. Navigieren Sie dann zu [AEM-Forms-Stamm]\crx-repository\launchpad\felix\bundle[x] und führen Sie die nächsten Schritte an dieser Stelle aus.
 
 1. zu URL navigieren: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Suchen Sie nach `bundle.jar` und benennen Sie die `bundle.jar` nach `bundle.jar.bak`.
