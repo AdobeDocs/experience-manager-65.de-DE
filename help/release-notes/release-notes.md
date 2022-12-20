@@ -3,10 +3,10 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: a0e9bfd4bcbf7091d5537c6d88025ef4d6046b4d
+source-git-commit: 214c5e27567a515837c0ab52601f3491a9144120
 workflow-type: tm+mt
-source-wordcount: '3989'
-ht-degree: 32%
+source-wordcount: '3946'
+ht-degree: 30%
 
 ---
 
@@ -109,7 +109,7 @@ ht-degree: 32%
 ### Wichtigste Funktionen {#keyfeatures}
 
 * AEM Forms Designer ist jetzt in verfügbar [Spanisches Gebietsschema](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de). (LC-3920051)
-* Sie können jetzt [OAuth2 zum Authentifizieren mit Microsoft Office 365-E-Mail-Serverprotokollen (SMTP und IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
+* Sie können jetzt [OAuth2 zum Authentifizieren mit Microsoft® Office 365-E-Mail-Serverprotokollen (SMTP und IMAP)](/help/forms/using/oauth2-support-for-mail-service.md). (NPR-35177)
 * Sie können [Auf dem Server erneut überprüfen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-an-adaptive-form/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html#enabling-server-side-validation-br) -Eigenschaft auf &quot;true&quot;fest, um die ausgeblendeten Felder zum Ausschließen aus einem Datensatzdokument serverseitig zu identifizieren. (NPR-38149)
 * Für AEM Forms Designer ist eine 32-Bit-Version von Visual C++ 2019 Redistributable (x86) erforderlich.  (NPR-36690)
 
@@ -141,7 +141,7 @@ ht-degree: 32%
 * Wenn eine XDP als HTML5-Formular wiedergegeben wird, wird der Inhalt der Übergeordneten Seite zuerst gerendert, unabhängig von der Platzierung der Objekte in einem adaptiven Formular. (CQ-4345218)
 * Die Konfiguration der Anwendung auf dem Zielserver ändert sich in die Einstellungen, die auf dem Quellserver definiert sind, auch wenn die **Konfiguration beim Abschluss des Imports überschreiben** zum Zeitpunkt des Anwendungsimports nicht aktiviert ist. (NPR-39044)
 * Wenn ein Benutzer versucht, die Connector-Konfiguration mithilfe von Configuration Manager zu aktualisieren, schlägt dies fehl.(CQ-4347077)
-* Wenn Benutzer versuchen, einen AEM Forms on JEE-Patch auszuführen, nachdem sie das Standardkennwort des Administratorbenutzers geändert haben, wird eine Ausnahme `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` auftritt. (CQ-4348277)
+* Wenn der Benutzer versucht, einen AEM Form on JEE-Patch auszuführen, nachdem er das Standardkennwort des Administratorbenutzers geändert hat, wird eine Ausnahme `com.adobe.livecycle.lcm.core.LCMException[ALC-LCM-200-003]: Failed to whitelist the classes` auftritt. (CQ-4348277)
 * In AEM Designer werden Formularfelder ohne Beschriftungen in Tabellenzellen einschließlich Kontrollkästchen platziert.(LC-3920410)
 * Wenn der Benutzer versucht, die Hilfe in AEM Forms Designer zu öffnen, wird sie nicht ordnungsgemäß angezeigt. (CQ-4341996)
 
@@ -221,15 +221,6 @@ ht-degree: 32%
 
 ### Installieren des Service Packs auf [!DNL Experience Manager] 6.5 {#install-service-pack}
 
->[!NOTE]
->
-> Vor der Installation der neuesten [AEM 6.5.15.0 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)führen Sie die folgenden Schritte aus:
-> 1. Installieren Sie die [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) Servlet-Fragment.
-> 1. Warten Sie, bis sich der Anwendungsserver stabilisiert hat.
-> 1. Installieren [AEM 6.5.15.0 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip).
-
-
-
 1. Starten Sie die Instanz vor der Installation neu, wenn sich die Instanz im Update-Modus befindet (wenn die Instanz von einer früheren Version aktualisiert wurde). Adobe empfiehlt einen Neustart, wenn die aktuelle Betriebszeit für eine Instanz hoch ist.
 
 1. Erstellen Sie vor der Installation eine Momentaufnahme oder ein neues Backup Ihrer [!DNL Experience Manager]-Instanz.
@@ -269,7 +260,7 @@ Informationen zu den Plattformen, die für diese Version zertifiziert sind, find
 
 >[!NOTE]
 >
->Wenn Sie die neueste Version installieren [AEM Service Pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), zeigen CRX/Bundle und die Startseite Fehler an, die nicht verfügbar sind, [Hier klicken](/help/forms/using/aem-service-pack-installation-solution.md).
+>Wenn Sie die neueste Version installieren [AEM Service Pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), zeigen CRX/Bundle und die Startseite Fehler an, die nicht verfügbar sind, [Hier klicken](/help/forms/using/aem-service-pack-installation-solution.md) um die Schritte zur Fehlerbehebung zu erfahren.
 
 
 ### Installieren des [!DNL Experience Manager] Forms Add-On-Pakets {#install-aem-forms-add-on-package}
@@ -293,11 +284,13 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
 >
 >Überspringen Sie diesen Schritt, wenn Sie AEM Forms JEE nicht verwenden. Fehlerbehebungen in [!DNL Experience Manager] Forms on JEE werden über ein separates Installationsprogramm bereitgestellt.
 
-Informationen zum Installieren des kumulativen Installationsprogramms für [!DNL Experience Manager] Forms on JEE und zur Konfiguration nach der Implementierung finden Sie in den [Versionshinweisen ](jee-patch-installer-65.md).
+Führen Sie die folgenden Schritte für alle AEM Forms on JEE-Umgebungen aus, die andere Anwendungsserver als JBoss EAP 7.4.0 verwenden.
 
->[!NOTE]
->
->Nach der Installation des kumulativen Installationsprogramms für [!DNL Experience Manager] Forms on JEE, installieren Sie das neueste Service Pack. Nachdem Sie das Service Pack erfolgreich installiert haben, installieren Sie das neueste Add-On-Paket für Forms und löschen Sie das Add-On-Paket für Forms aus dem `crx-repository\install` und starten Sie den Server neu.
+1. Installieren Sie das kumulative Installationsprogramm für [!DNL Experience Manager] Informationen zur Konfiguration von Forms on JEE und nach der Bereitstellung finden Sie unter [Versionshinweise](jee-patch-installer-65.md).
+
+1. Installieren Sie die [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://jira.corp.adobe.com/secure/attachment/9396977/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) Servlet-Fragment und warten, bis sich der Anwendungsserver stabilisiert.
+1. Installieren [AEM 6.5.15.0 Service Pack](#install-service-pack).
+1. Installieren Sie die [neuestes Forms Add-On-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de), löschen Sie das Add-On-Paket für Forms aus dem `crx-repository\install` und starten Sie den Server neu.
 
 ### UberJar {#uber-jar}
 
@@ -334,7 +327,7 @@ Im Folgenden finden Sie eine Liste der Funktionen, die ab [!DNL Experience Manag
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
  -->
 
-* [AEM Inhaltsfragment mit GraphQL-Indexpaket 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+* [AEM Inhaltsfragment mit GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
 Dieses Paket ist für Kunden erforderlich, die GraphQL verwenden. Dadurch können sie die erforderliche Indexdefinition hinzufügen, die auf den tatsächlich verwendeten Funktionen basiert.
 
 * Da [!DNL Microsoft® Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft® Windows Server 2019] keine Turnkey-Installationen für [!DNL AEM Forms 6.5.10.0].
