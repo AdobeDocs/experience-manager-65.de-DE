@@ -3,9 +3,9 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: 3e0380e85c300305cbb97e4d0a0918a60542610b
+source-git-commit: b383f9c55e1066666254f9fa788fd19fe23a4d41
 workflow-type: tm+mt
-source-wordcount: '3970'
+source-wordcount: '3974'
 ht-degree: 30%
 
 ---
@@ -283,12 +283,12 @@ Führen Sie die folgenden Schritte für alle AEM Forms on JEE-Umgebungen aus, di
 
 1. Installieren Sie das kumulative Installationsprogramm für [!DNL Experience Manager] Informationen zur Konfiguration von Forms on JEE und nach der Bereitstellung finden Sie unter [Versionshinweise](jee-patch-installer-65.md).
 
-1. Installieren Sie die [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) Servlet-Fragment und warten, bis sich der Anwendungsserver stabilisiert.
+1. Installieren Sie die [Fragment für AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) Servlet-Fragment und warten, bis sich der Anwendungsserver stabilisiert.
 1. Installieren [AEM 6.5.15.0 Service Pack](#install-service-pack).
 
    >[!NOTE]
    >
-   >Wenn Sie die neueste Version installieren [AEM Service Pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)vor dem Fragment-Servlet `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` in der JEE-Umgebung zeigen CRX/Bundle und die Startseite Fehler, die nicht verfügbar sind, an, [Hier klicken](/help/forms/using/aem-service-pack-installation-solution.md) um die Schritte zur Fehlerbehebung zu erfahren.
+   >Wenn Sie die neueste Version installieren [AEM Service Pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip), bevor `Fragment for AEM 6.5 Forms on JEE Service Pack 15` in der JEE-Umgebung zeigen CRX/Bundle und die Startseite Fehler, die nicht verfügbar sind, an, [Hier klicken](/help/forms/using/aem-service-pack-installation-solution.md) um die Schritte zur Fehlerbehebung zu erfahren.
 
 1. Installieren Sie die [neuestes Forms Add-On-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de), löschen Sie das Add-On-Paket für Forms aus dem `crx-repository\install` und starten Sie den Server neu.
 
@@ -327,7 +327,7 @@ Im Folgenden finden Sie eine Liste der Funktionen, die ab [!DNL Experience Manag
 <!-- THESE KNOWN ISSUES CARRY OVER EACH RELEASE. THE "PRODUCT UPDATES TEAM" IS SUPPOSED TO VERIFY EACH ISSUE AND LET YOU KNOW IF ANYTHING NEEDS TO BE ADDED, DELETED, OR CHANGED IN THIS LIST.
  -->
 
-* [AEM Inhaltsfragment mit GraphQL-Indexpaket 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
+* [AEM Inhaltsfragment mit GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
 Dieses Paket ist für Kunden erforderlich, die GraphQL verwenden. Dadurch können sie die erforderliche Indexdefinition hinzufügen, die auf den tatsächlich verwendeten Funktionen basiert.
 
 * Da [!DNL Microsoft® Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft® Windows Server 2019] keine Turnkey-Installationen für [!DNL AEM Forms 6.5.10.0].

@@ -1,15 +1,15 @@
 ---
 title: CRX/Bundle- und Start-Seitendienst nicht verfügbare Fehler, sobald das neueste Service Pack 6.5.15.0 installiert ist
 description: CRX/Bundle- und Start-Seitendienst nicht verfügbare Fehler, sobald das neueste Service Pack 6.5.15.0 installiert ist
-source-git-commit: 3c04322ef2801246044f9b316962d4d37b972213
+source-git-commit: cae425c7dbf315d0fb51ebc745b047d894328d5b
 workflow-type: tm+mt
-source-wordcount: '342'
+source-wordcount: '347'
 ht-degree: 16%
 
 ---
 
 
-# Service unavailable errors after install AEM (6.5.15.0) service pack {#steps-to-resolve-error-after-installing-service-pack}
+# Service unavailable error after install AEM (6.5.15.0) service pack {#steps-to-resolve-error-after-installing-service-pack}
 
 ## Problem {#issue}
 
@@ -42,9 +42,9 @@ Nach der Installation [AEM 6.5.15.0 Service Pack](https://experience.adobe.com/#
 
 1. zu URL navigieren: `[aem-forms root]\crx-repository\launchpad\felix\bundle[x]\version0.1`.
 1. Suchen Sie nach `bundle.jar` und benennen Sie die `bundle.jar` nach `bundle.jar.bak`.
-1. Kopieren `bundle.jar` an dieser Stelle aus dem [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
+1. Kopieren `Bundle for AEM 6.5 Forms on JEE Service Pack 15` an dieser Stelle aus dem [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
 1. Starten Sie den Anwendungsserver, warten Sie, bis sich die Protokolle stabilisieren, und überprüfen Sie den Bundle-Status.
-1. Sobald sich alle Pakete im aktiven Status befinden, installieren Sie die [org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) Servlet-Fragment aus `system/console/bundles` und warten Sie, bis sich der Anwendungsserver stabilisiert.
+1. Sobald sich alle Pakete im aktiven Status befinden, installieren Sie die [Fragment für AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) von `system/console/bundles` und warten Sie, bis sich der Anwendungsserver stabilisiert.
 1. Beenden Sie den Anwendungsserver.
 1. Navigieren Sie zu `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1` und löschen Sie die `bundle.jar`.
 1. Benennen Sie die `bundle.jar.bak` der `bundle.jar`.
