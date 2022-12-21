@@ -1,7 +1,7 @@
 ---
 title: CRX/Bundle- und Start-Seitendienst nicht verfügbare Fehler, sobald das neueste Service Pack 6.5.15.0 installiert ist
 description: CRX/Bundle- und Start-Seitendienst nicht verfügbare Fehler, sobald das neueste Service Pack 6.5.15.0 installiert ist
-source-git-commit: f5bf33e0a2ff73b8884a55bbe77e87ee991aeef9
+source-git-commit: 813d8ffc53dc1928674367c9568b6269642cecb7
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 16%
@@ -17,6 +17,11 @@ Nach der Installation der [AEM 6.5.15.0 Service Pack](https://experience.adobe.c
 * FEHLER [FelixDispatchQueue] org.apache.sling.scripting.console FrameworkEvent-FEHLER (org.osgi.framework.BundleException: org.apache.sling.scripting.console kann nicht aufgelöst werden
 
 Nach der Installation von AEM 6.5.15.0 Service Pack zeigen das CRX/Bundle und die Startseite unverfügbare Fehler an.
+
+## Gilt für {#applies-to}
+
+Diese Lösung gilt für:
+* AEM Forms auf allen JEE-Servern mit Ausnahme der JBoss EAP 7.4.0
 
 ## Lösung {#solution}
 
@@ -39,13 +44,8 @@ Nach der Installation [AEM 6.5.15.0 Service Pack](https://experience.adobe.com/#
 1. Suchen Sie nach `bundle.jar` und benennen Sie die `bundle.jar` nach `bundle.jar.bak`.
 1. Kopieren `bundle.jar` an dieser Stelle aus dem [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/bundle.jar).
 1. Starten Sie den Anwendungsserver, warten Sie, bis sich die Protokolle stabilisieren, und überprüfen Sie den Bundle-Status.
-1. Sobald alle Pakete aktiviert sind, installieren Sie die `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` Servlet-Fragment aus `system/console/bundles` heruntergeladen von [Softwareverteilung.](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) und warten Sie, bis sich der Anwendungsserver stabilisiert.
+1. Sobald alle Pakete aktiviert sind, installieren Sie die `org.apache.felix.http.servlet-api-1.2.0_fragment-full.jar` Servlet-Fragment aus `system/console/bundles` heruntergeladen von [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) und warten Sie, bis sich der Anwendungsserver stabilisiert.
 1. Beenden Sie den Anwendungsserver.
 1. Navigieren Sie zu `[aem-forms root]\crx-repository\launchpad\felix\bundle52\version0.1` und löschen Sie die `bundle.jar`.
 1. Benennen Sie die `bundle.jar.bak` der `bundle.jar`.
 1. Starten Sie den Anwendungsserver.
-
-## Gilt für {#applies-to}
-
-Diese Lösung gilt für:
-* AEM Forms auf allen JEE-Servern mit Ausnahme der JBoss EAP 7.4.0
