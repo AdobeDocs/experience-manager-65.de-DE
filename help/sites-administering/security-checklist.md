@@ -12,7 +12,7 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 58c89e0b96da0f36d233cb8c14e259cc595ddda7
+source-git-commit: 66e9e8e1d9f43faa3d0e4fe61e8206bdab1348f6
 workflow-type: tm+mt
 source-wordcount: '2859'
 ht-degree: 100%
@@ -51,7 +51,7 @@ Stellen Sie sicher, dass die neuesten, [von Adobe bereitgestellten Sicherheits-H
 
 ### Änderung von Standardkennwörtern für die Admin-Konten von AEM und der OSGi-Konsole {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe empfiehlt dringend, dass Sie das Passwort für die mit allen Berechtigungen ausgestatteten [****`admin`-Konten von AEM](#changing-the-aem-admin-password) nach der Installation ändern (in allen Instanzen).
+Adobe empfiehlt dringend, dass Sie das Passwort für die mit allen Berechtigungen ausgestatteten [**`admin`-Konten von AEM**](#changing-the-aem-admin-password) nach der Installation ändern (in allen Instanzen).
 
 Diese Konten beinhalten:
 
@@ -106,11 +106,11 @@ Adobe empfiehlt die Definition von benutzerdefinierten Fehler-Handler-Seiten, in
 
 >[!NOTE]
 >
->Weitere Details finden Sie im Knowledgebase-Artikel [Erstellen von benutzerdefinierten Skripten oder Fehler-Handlern](https://helpx.adobe.com/de/experience-manager/kb/CustomErrorHandling.html).
+>Weitere Details finden Sie im Knowledgebase-Artikel [Erstellen von benutzerdefinierten Skripten oder Fehler-Handlern](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html).
 
 ### Durchgehen der Dispatcher-Sicherheitscheckliste {#complete-dispatcher-security-checklist}
 
-Der AEM-Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt dringend, dass Sie die [Dispatcher-Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=de#getting-started) durchgehen.
+Der AEM-Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt dringend, dass Sie die [Dispatcher-Sicherheitscheckliste](https://helpx.adobe.com/de/experience-manager/dispatcher/using/security-checklist.html) durchgehen.
 
 >[!CAUTION]
 >
@@ -409,18 +409,18 @@ Genauer gesagt, müssen Sie Folgendes tun:
 1. Greifen Sie auf die AEM-Instanz zu, auf der sich die zu kopierenden Schlüsseldaten befinden. In der Regel handelt es sich dabei um eine Autoreninstanz.
 1. Suchen Sie im lokalen Dateisystem das Bundle com.adobe.granite.crypto.file. Es kann sich z. B. unter diesem Pfad befinden:
 
-   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
    Die Datei `bundle.info` in jedem Ordner identifiziert den Bundle-Namen.
 
 1. Navigieren Sie zum Ordner „data“. Beispiel:
 
-   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Kopieren Sie die HMAC- und die Master-Dateien.
 1. Navigieren Sie dann zur Zielinstanz, auf der Sie den HMAC-Schlüssel duplizieren möchten, und dann zum Ordner „data“. Beispiel:
 
-   * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
+   * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Fügen Sie die beiden zuvor kopierten Dateien ein.
 1. [Aktualisieren Sie das Crypto-Bundle](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle), wenn die Zielinstanz bereits ausgeführt wird.

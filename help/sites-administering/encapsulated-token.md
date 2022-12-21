@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: f8d249f5d3fac243b4989c3eca4be2730dcf16ec
+source-git-commit: ed2cb35593780cd627c15f493e58d3b68c55519b
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 100%
@@ -73,18 +73,18 @@ Um den Schlüssel auf weitere Instanzen zu replizieren, führen Sie die folgende
 1. Greifen Sie auf die AEM-Instanz zu, auf der sich die zu kopierenden Schlüsseldaten befinden. In der Regel handelt es sich dabei um eine Autoreninstanz.
 1. Suchen Sie im lokalen Dateisystem das Bundle `com.adobe.granite.crypto.file`. Es kann sich z. B. unter diesem Pfad befinden:
 
-   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25`
 
    Die Datei `bundle.info` in jedem Ordner identifiziert den Bundle-Namen.
 
 1. Navigieren Sie zum Ordner „data“. Beispiel:
 
-   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+   * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. Kopieren Sie die HMAC- und die Master-Dateien.
 1. Navigieren Sie dann zur Zielinstanz, auf der Sie den HMAC-Schlüssel duplizieren möchten, und dann zum Ordner „data“. Beispiel:
 
-   * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+   * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
 1. Fügen Sie die beiden zuvor kopierten Dateien ein.
 1. [Aktualisieren Sie das Crypto-Bundle](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle), wenn die Zielinstanz bereits ausgeführt wird.
