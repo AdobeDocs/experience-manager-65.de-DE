@@ -3,7 +3,7 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: e73a65569963a5f60f7a4670998ada29deeb26b8
+source-git-commit: a27e460a19d3f986ee87b33263b8db1e45897497
 workflow-type: tm+mt
 source-wordcount: '4036'
 ht-degree: 30%
@@ -288,6 +288,7 @@ Führen Sie die folgenden Schritte für alle AEM Forms on JEE-Umgebungen aus, di
    >[!NOTE]
    >
    >Wenn Sie die neueste Version installieren [AEM Service Pack (6.5.15.0)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip)vor der Installation der [Fragment für AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) In Ihrer AEM 6.5 Forms on JEE-Umgebung funktionieren CRX/Bundle und die Startseite möglicherweise nicht mehr, und der Fehler &quot;Dienst nicht verfügbar&quot;tritt auf. Um das Problem zu beheben, führen Sie die Aktionen aus [hier aufgeführt](/help/forms/using/aem-service-pack-installation-solution.md).
+
 1. Installieren Sie die [neuestes Forms Add-On-Paket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de), löschen Sie das Add-On-Paket für Forms aus dem `crx-repository\install` und starten Sie den Server neu.
 
 ### UberJar {#uber-jar}
