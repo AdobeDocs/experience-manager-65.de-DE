@@ -3,9 +3,9 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Suchen Sie nach Versionsinformationen, Neuigkeiten, Installationsanleitungen und einer detaillierten Änderungsliste für [!DNL Adobe Experience Manager] 6.5.
 mini-toc-levels: 3
 exl-id: 38227a66-f2a9-4909-9297-1eced4ed6e8c
-source-git-commit: b383f9c55e1066666254f9fa788fd19fe23a4d41
+source-git-commit: c98ca7cafd559aaf0b0b889f8f03690de880e944
 workflow-type: tm+mt
-source-wordcount: '3974'
+source-wordcount: '3975'
 ht-degree: 30%
 
 ---
@@ -284,7 +284,7 @@ Führen Sie die folgenden Schritte für alle AEM Forms on JEE-Umgebungen aus, di
 1. Installieren Sie das kumulative Installationsprogramm für [!DNL Experience Manager] Informationen zur Konfiguration von Forms on JEE und nach der Bereitstellung finden Sie unter [Versionshinweise](jee-patch-installer-65.md).
 
 1. Installieren Sie die [Fragment für AEM 6.5 Forms on JEE Service Pack 15](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/featurepack/org.apache.felix.http.servlet-api-1.2.0_fragment_full.jar) Servlet-Fragment und warten, bis sich der Anwendungsserver stabilisiert.
-1. Installieren [AEM 6.5.15.0 Service Pack](#install-service-pack).
+1. Installieren Sie die [AEM 6.5.15.0 Service Pack](#install-service-pack).
 
    >[!NOTE]
    >
