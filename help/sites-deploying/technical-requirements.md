@@ -6,10 +6,10 @@ seo-description: A list of the supported client and server platforms for AEM.
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 33b8cf60e2a6ae13c103040d96b0e2db487ddd99
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3452'
-ht-degree: 97%
+source-wordcount: '3488'
+ht-degree: 96%
 
 ---
 
@@ -455,10 +455,6 @@ Windows x86:
    <td>WP, WPD</td>
   </tr>
   <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
-  </tr>
-  <tr>
    <td>Microsoft® Office Visio 2016 (nicht mehr unterstützt)<br /> </td>
    <td>VSD, VSDX</td>
   </tr>
@@ -469,10 +465,6 @@ Windows x86:
   <tr>
    <td>Microsoft® Publisher 2016 (nicht mehr unterstützt)<br /> </td>
    <td>PUB</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Project 2019<br /> </td>
-   <td>MPP</td>
   </tr>
   <tr>
    <td>Microsoft® Project 2016 (nicht mehr unterstützt)<br /> </td>
@@ -503,6 +495,8 @@ Windows x86:
 >* Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
 >* Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 >* Der PDF Generator-Dienst unterstützt nicht Microsoft Windows 10.
+>* PDF Generator kann Dateien mit Microsoft Visio 2019 nicht konvertieren. Sie können Microsoft Visio 2016 weiterhin verwenden, um .VSD- und .VSDX-Dateien zu konvertieren.
+>* PDF Generator kann Dateien mit Microsoft Project 2019 nicht konvertieren. Sie können Microsoft Project 2016 weiterhin verwenden, um .VSD- und .VSDX-Dateien zu konvertieren.
 >
 
 

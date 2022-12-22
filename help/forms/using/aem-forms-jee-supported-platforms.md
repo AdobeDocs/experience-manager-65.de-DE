@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: e8026cb0c7de3b1c903bf95dc31e567076e837eb
 workflow-type: tm+mt
-source-wordcount: '3684'
-ht-degree: 91%
+source-wordcount: '3721'
+ht-degree: 90%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 91%
 
 Adobe hat eine [Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) mit AEM 6.5 Forms Service Pack 12 (6.5.12.0) auf JEE zusammen mit den Patch-Installationsprogrammen. Das vollständige Installationsprogramm unterstützt neue Plattformen, während das Patch-Installationsprogramm nur Fehlerkorrekturen enthält.
 
-Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms on JEE-Umgebung planen, empfiehlt Adobe die Verwendung von [AEM 6.5.12.0 Forms on JEE-Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) veröffentlicht am 03. März 2022 anstelle von AEM 6.5 Forms Installationsprogramm veröffentlicht am 08. April 2019.
+Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms on JEE-Umgebung planen, empfiehlt Adobe die Verwendung von [AEM 6.5.12.0 Forms on JEE-Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) veröffentlicht am 03. März 2022 anstelle von AEM 6.5 Forms Installationsprogramm veröffentlicht am 08. April 2019.
 
 </div>
 
@@ -462,11 +462,11 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
    <th><p><strong>Unterstützte Formate für die Konvertierung ins PDF-Format </strong></p> </th>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Klassischer Modus von Acrobat 2020</a> neueste Version</td>
+   <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Klassischer Modus von Acrobat 2020</a> neueste Version</td>
    <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Klassischer Modus von Acrobat 2017</a> neueste Version (nicht mehr unterstützt)</td>
+   <td><a href="https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html">Klassischer Modus von Acrobat 2017</a> neueste Version (nicht mehr unterstützt)</td>
    <td>XPS, Bildformate (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF und DWF</td>
   </tr>
   <tr>
@@ -480,10 +480,6 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
   <tr>
    <td>WordPerfect 2020<br /> </td>
    <td>WP, WPD</td>
-  </tr>
-  <tr>
-   <td>Microsoft® Office Visio 2019<br /> </td>
-   <td>VSD, VSDX</td>
   </tr>
   <tr>
    <td>Microsoft® Office Visio 2016 (nicht mehr unterstützt)<br /> </td>
@@ -530,6 +526,9 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 >- Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
 >
 >- Der PDF Generator-Dienst unterstützt nicht Microsoft Windows 10.
+>- PDF Generator kann Dateien mit Microsoft Visio 2019 nicht konvertieren. Sie können Microsoft Visio 2016 weiterhin verwenden, um .VSD- und .VSDX-Dateien zu konvertieren.
+>- PDF Generator kann Dateien mit Microsoft Project 2019 nicht konvertieren. Sie können Microsoft Project 2016 weiterhin verwenden, um .MPP-Dateien zu konvertieren.
+>
 
 
 ### Ausnahmen der Barrierefreiheit {#exceptions-to-accessibility-support}
@@ -801,7 +800,7 @@ Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.10.0 vom 7. Septe
 
 >[!NOTE]
 >
->Die Plattformen, die als [veraltet auf AEM Forms 6.5.12.0 und 6.5.10.0 bleibt bis AEM Forms 6.5 Service Pack 18 (6.5.18.0) verfügbar](https://helpx.adobe.com/support/programs/eol-matrix.html).
+>Die Plattformen, die als [veraltet auf AEM Forms 6.5.12.0 und 6.5.10.0 bleibt bis AEM Forms 6.5 Service Pack 18 (6.5.18.0) verfügbar](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
 
 ## Revisionsverlauf {#revision-history}
 
