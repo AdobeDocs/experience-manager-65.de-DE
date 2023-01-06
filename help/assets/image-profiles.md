@@ -78,7 +78,7 @@ In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar
 | Radius | Bestimmt die Anzahl der Pixel um die Kantenpixel, auf die sich die Scharfzeichnung auswirkt. Bei hochauflösenden Bildern geben Sie einen Wert zwischen 1 und 2 ein. Bei einem niedrigen Wert werden lediglich die Kantenpixel scharfgezeichnet, bei einem hohen Wert werden mehr Pixel scharfgezeichnet. Der korrekte Wert hängt von der Bildgröße ab. Der Standardwert ist 0,2.    Bereich: 0-250. |
 | Schwelle | Bestimmt den Kontrastbereich, der bei der Anwendung des Filters „Unschärfemaske“ ignoriert werden soll. In anderen Worten: Die Option bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und scharfgezeichnet werden. Um Rauschen zu vermeiden, experimentieren Sie mit Werten zwischen 0 und 255. |
 
-Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/assets/_sharpening_images.pdf) beschrieben.
+Das Scharfzeichnen wird unter [Scharfzeichnen von Bildern](/help/assets/assets/sharpening_images.pdf) beschrieben.
 
 ## Erstellen von Dynamic Media-Bildprofilen {#creating-image-profiles}
 
