@@ -3,7 +3,7 @@ cloud: Experience Cloud
 product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
-user-guide-title: AEM 6.5 Authoring-Benutzeranleitung
+user-guide-title: Benutzerhandbuch zur Inhaltserstellung in AEM 6.5
 breadcrumb-title: Authoring-Handbuch
 user-guide-description: Erfahren Sie mehr über die wichtigsten Konzepte zum Erstellen von Inhalten und Authoring in AEM.
 feature: Authoring
@@ -11,15 +11,15 @@ role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
 
-# AEM 6.5 Authoring-Benutzeranleitung {#authoring}
+# Benutzerhandbuch zur Inhaltserstellung in AEM 6.5 {#authoring}
 
-+ [Authoring-Benutzerhandbuch - Übersicht](home.md)
-+ Wesentliche Aufgaben, Tools und Konzepte für die AEM {#essentials}
++ [Benutzerhandbuch zur Inhaltserstellung – Übersicht](home.md)
++ Wesentliche Aufgaben, Tools und Konzepte für die Inhaltserstellung in AEM {#essentials}
    + [Erste Schritte für Autoren](first-steps.md)
    + [Bearbeiten von Seiten](page-authoring.md)
    + [Kurzanleitung zur Seitenbearbeitung (Authoring)](qg-page-authoring.md)
@@ -75,13 +75,13 @@ ht-degree: 87%
    + [Arbeiten mit Workflows](workflows.md)
    + [Anwenden von Workflows auf Seiten](workflows-applying.md)
    + [Teilnehmen an Workflows](workflows-participating.md)
-   + [Arbeiten mit Projekt-Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html)
+   + [Arbeiten mit Projekt-Workflows](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/projects/projects-with-workflows.html?lang=de)
 + Seitenleistung {#page-performance}
-   + [Inhaltseinblick ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html)
+   + [Inhaltseinblick ](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/content-insights.html?lang=de)
    + [Analysieren der Seitenleistung](ci-analyze.md)
    + [Anzeigen von Seitenanalysedaten](pa-using.md)
-+ Personalisierung    {#personalization}
-   + [Personalisierung   ](personalization.md)
++ Personalisierung {#personalization}
+   + [Personalisierung ](personalization.md)
    + [Vorschau von Seiten mit ContextHub-Daten](ch-previewing.md)
    + [Verfassen zielgerichteter Inhalte im Targeting-Modus](content-targeting-touch.md)
    + [Verwenden zielgerichteter Inhalte in Multisites](multisite-support-targeted-content.md)

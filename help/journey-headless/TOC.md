@@ -6,7 +6,7 @@ user-guide-description: Dieser Leitfaden bietet Ihnen eine Einführung zu den ef
 feature: Developer Tools
 role: Developer, Architect
 source-git-commit: 2523d9dcdbbfd9107e43ca53e2bb586452be1cb8
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '225'
 ht-degree: 100%
 
