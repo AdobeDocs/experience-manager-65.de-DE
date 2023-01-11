@@ -17,7 +17,7 @@ ht-degree: 100%
 # Assets-Anleitung {#assets}
 
 + [[!DNL Assets]-Benutzerhandbuch](home.md)
-+ Versionshinweise zu [[!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=de)
++ [Versionshinweise zu [!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=de)
 + [Über DAM](assets.md)
 + [Best Practices für Assets](best-practices-for-assets.md)
 + [Barrierefreiheit in  [!DNL Assets]](accessibility.md)
