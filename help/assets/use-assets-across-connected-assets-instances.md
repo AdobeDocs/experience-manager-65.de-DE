@@ -6,18 +6,18 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: 0df4bce6651517c6049578d0a1434726ab04e240
+source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
 workflow-type: tm+mt
-source-wordcount: '3837'
-ht-degree: 88%
+source-wordcount: '3877'
+ht-degree: 95%
 
 ---
 
 # Verwenden von Connected Assets zum Freigeben von DAM-Assets in [!DNL Experience Manager Sites] {#use-connected-assets-to-share-dam-assets-in-aem-sites}
 
-| Version | Artikellink |
+| Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klicken Sie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=en) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 
@@ -31,7 +31,7 @@ Die Funktion „Connected Assets“ unterstützt die oben genannten Anwendungsf�
 
 ## Überblick über Connected Assets {#overview-of-connected-assets}
 
-Beim Bearbeiten von Seiten als Ziel im [!UICONTROL Seiteneditor] können die Autoren nahtlos Assets aus einer anderen [!DNL Assets]-Bereitstellung, die als Asset-Quelle dient, suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites]-Funktion mit einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets]-Funktion. Site-Autoren können über Connected Assets auch Dynamic Media-Bilder auf den Webseiten ihrer Website verwenden und die Dynamic Media-Funktionen wie smartes Zuschneiden und Bildvorgaben nutzen.
+Beim Bearbeiten von Seiten als Ziel im [!UICONTROL Seiteneditor] können die Autoren nahtlos Assets aus einer anderen [!DNL Assets]-Bereitstellung, die als Asset-Quelle dient, suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites]-Funktion mit einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets]-Funktion. Website-Autoren können Dynamic Media-Bilder auch über Connected Assets auf den Webseiten Ihrer Site verwenden und die Dynamic Media-Funktionen wie intelligentes Zuschneiden und Bildvorgaben nutzen.
 
 Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und den Zugriff auf Remote-Assets im Site-Editor. Für alle anderen Anwendungsfälle, bei denen möglicherweise die vollständige Asset-Korpusform auf Sites verfügbar sein muss, sollten Sie die Assets stapelweise migrieren, anstatt Connected Assets zu verwenden. Siehe [Migrationshandbuch für Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
@@ -40,7 +40,7 @@ Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale
 Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sicher:
 
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Implementierung.
-* Bei Implementierungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6,5 [!DNL Assets] arbeitet mit [!DNL Experience Manager] as a Cloud Service. Weitere Informationen zur Funktionsweise dieser Funktion finden Sie unter [!DNL Experience Manager] as a [!DNL Cloud Service], siehe [Verbundene Assets in Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
+* Bei Implementierungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6,5 [!DNL Assets] arbeitet mit [!DNL Experience Manager] as a Cloud Service zusammen. Weitere Informationen zur Funktionsweise dieser Funktion in [!DNL Experience Manager] as a [!DNL Cloud Service] finden Sie unter [Connected Assets in Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
@@ -139,7 +139,9 @@ Gehen Sie wie folgt vor, um die Verbindung zwischen Connected Assets und lokalen
 Sie können die Verbindung zwischen konfigurierten [!DNL Sites]-Bereitstellungen und der [!DNL Assets]-Bereitstellung überprüfen.
 
 ![Verbindungstest für konfigurierte Connected Assets [!DNL Sites]](assets/connected-assets-multiple-config.png)
-*Abbildung: Verbindungstest für konfigurierte Connected Assets [!DNL Sites].*
+
+
+*Abbildung: Verbindungstest bei für [!DNL Sites] konfigurierte Connected Assets.*
 
 ## Verwenden von Dynamic Media-Assets {#dynamic-media-assets}
 
@@ -160,10 +162,10 @@ Verwenden von [!DNL Dynamic Media] mit Connected Assets:
 
 So konfigurieren Sie [!DNL Dynamic Media] in [!DNL Assets]- und [!DNL Sites]-Implementierungen:
 
-1. Aktivieren und Konfigurieren [!DNL Dynamic Media] als globale Konfiguration auf Remote-Zugriff [!DNL Assets] Autorenbereitstellung. Informationen zum Konfigurieren von Dynamic Media finden Sie unter [Konfigurieren von Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
+1. Aktivieren und konfigurieren Sie [!DNL Dynamic Media] als globale Konfiguration auf der Remote-Implementierung der Autoreninstanz [!DNL Assets]. Informationen zum Konfigurieren von Dynamic Media finden Sie unter [Konfigurieren von Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
 Wählen Sie in der Remote-Bereitstellung von [!DNL Assets] im [!UICONTROL Modus Dynamic Media-Synchronisation] die Option **[!UICONTROL Standardmäßig aktiviert]** aus.
 
-1. Erstellen Sie die Konfiguration Connected Assets wie unter [Konfigurieren der Verbindung zwischen Sites- und Asset-Bereitstellungen](#configure-a-connection-between-sites-and-assets-deployments). Wählen Sie außerdem **[!UICONTROL Abrufen der ursprünglichen Ausgabe für mit Dynamic Media verbundene Assets]** -Option.
+1. Erstellen Sie die Konfiguration für Connected Assets wie unter [Konfigurieren der Verbindung zwischen Websites und Asset-Bereitstellungen](#configure-a-connection-between-sites-and-assets-deployments) beschrieben. Wählen Sie außerdem die Option **[!UICONTROL Abrufen der ursprünglichen Ausgabedarstellung für Dynamic Media Connected Assets]**.
 
 1. Konfigurieren Sie [!DNL Dynamic Media] in lokalen [!DNL Sites]- und Remote-[!DNL Assets]-Bereitstellungen. Befolgen Sie die Anweisungen zum [Konfigurieren [!DNL Dynamic Media]](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
 
@@ -238,19 +240,19 @@ Gehen Sie wie folgt vor, um Referenzen auf die [!DNL Assets]-Bereitstellung anzu
 
 ### Verwalten von Aktualisierungen von Assets im Remote-DAM {#manage-updates-in-remote-dam}
 
-Nachher [Verbindung konfigurieren](#configure-a-connection-between-sites-and-assets-deployments) zwischen Remote-DAM und [!DNL Sites] -Implementierungen werden die Assets auf Remote-DAM auf der [!DNL Sites] Implementierung. Anschließend können Sie Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch auf der [!DNL Sites] Implementierung. Darüber hinaus, wenn ein Asset auf Remote-DAM auf einem lokalen [!DNL Experience Manager Sites] Seite, werden die Aktualisierungen des Assets auf Remote-DAM auf der Seite [!DNL Sites] Seite.
+Nach dem [Konfigurieren einer Verbindung](#configure-a-connection-between-sites-and-assets-deployments) zwischen Remote-DAM- und [!DNL Sites]-Implementierungen werden die Assets im Remote-DAM in der [!DNL Sites]-Implementierung verfügbar gemacht. Anschließend können Sie Vorgänge zum Aktualisieren, Löschen, Umbenennen und Verschieben von Remote-DAM-Assets oder -Ordnern durchführen. Die Aktualisierungen sind mit einiger Verzögerung automatisch in der [!DNL Sites]-Implementierung verfügbar. Wenn ein Asset auf dem Remote-DAM auf einer lokalen [!DNL Experience Manager Sites]-Seite verwendet wird, werden außerdem die Aktualisierungen des Assets auf Remote-DAM auf der [!DNL Sites]-Seite angezeigt.
 
-Stellen Sie beim Verschieben eines Assets von einem Speicherort an einen anderen sicher, dass Sie [Verweise anpassen](/help/assets/manage-assets.md) sodass das Asset auf der [!DNL Sites] Seite. Wenn Sie ein Asset an einen Speicherort verschieben, auf den nicht über die lokale [!DNL Sites] -Implementierung kann das Asset nicht in der Sites-Bereitstellung angezeigt werden.
+Stellen Sie beim Verschieben eines Assets von einem Speicherort an einen anderen sicher, dass Sie [Verweise anpassen](/help/assets/manage-assets.md), sodass das Asset auf der [!DNL Sites]-Seite angezeigt wird. Wenn Sie ein Asset an einen Speicherort verschieben, auf den nicht über die lokale [!DNL Sites]-Implementierung zugegriffen werden kann, wird das Asset nicht in der Sites-Implementierung angezeigt.
 
-Sie können auch die Metadateneigenschaften für ein Asset auf Remote-DAM aktualisieren und die Änderungen sind auf lokaler Ebene verfügbar [!DNL Sites] Implementierung.
+Sie können auch die Metadateneigenschaften für ein Asset auf dem Remote-DAM aktualisieren. Die Änderungen sind dann in der lokalen [!DNL Sites]-Implementierung verfügbar.
 
-[!DNL Sites] -Autoren können eine Vorschau der verfügbaren Updates auf der [!DNL Sites] -Implementierung bereitstellen und dann die Änderungen erneut veröffentlichen, um sie im [!DNL Experience Manager] Veröffentlichungsinstanz.
+[!DNL Sites]-Autoren können eine Vorschau der verfügbaren Aktualisierungen in der [!DNL Sites]-Implementierung anzeigen und dann die Änderungen erneut veröffentlichen, um sie in der [!DNL Experience Manager]-Veröffentlichungsinstanz verfügbar zu machen.
 
-[!DNL Experience Manager] zeigt eine abgelaufene Statusanzeige für Assets in an `Remote Assets Content Finder` , damit Website-Autoren das Asset nicht in einer [!DNL Sites] Seite. Wenn Sie ein Asset mit einem abgelaufenen Status auf einem [!DNL Sites] Seite, kann das Asset nicht auf der Seite [!DNL Experience Manager] Veröffentlichungsinstanz.
+[!DNL Experience Manager] zeigt die Statusanzeige für Assets in `Remote Assets Content Finder` an, um Website-Autoren daran zu hindern, das Asset auf einer [!DNL Sites]-Seite zu verwenden. Wenn Sie ein Asset mit dem Status „Abgelaufen“ auf einer [!DNL Sites]-Seite verwenden, kann das Asset nicht in der [!DNL Experience Manager]-Veröffentlichungsinstanz angezeigt werden.
 
 >[!NOTE]
 >
->Die Aktualisierungen an Assets im Remote-DAM werden für die [!DNL Sites] Bereitstellung nur bei Remote-DAM und [!DNL Sites] -Implementierungen befinden sich auf [!DNL Experience Manager].
+>Die Aktualisierungen an Assets im Remote-DAM werden nur dann für die [!DNL Sites]-Implementierung verfügbar gemacht, wenn Remote-DAM- und [!DNL Sites]-Implementierungen in [!DNL Experience Manager] sind.
 
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 
@@ -323,7 +325,7 @@ Sie können der [!DNL Sites]-Implementierung Assets hinzufügen, diese Assets k�
 * Lokale Assets sind schreibgeschützte Kopien. [!DNL Experience Manager]-Komponenten nehmen zerstörungsfreie Änderungen an Assets vor. Sonstige Änderungen sind nicht zulässig.
 * Lokal abgerufene Assets sind nur für Autoren verfügbar. Asset-Update-Workflows können nicht angewendet werden und Metadaten können nicht bearbeitet werden.
 * Es werden nur Bilder und die aufgelisteten Dokumentenformate unterstützt. [!DNL Content Fragments] und [!DNL Experience Fragments] werden nicht unterstützt.
-* [!DNL Experience Manager] ruft die Metadatenschemas nicht ab. Das bedeutet, dass möglicherweise nicht alle abgerufenen Metadaten angezeigt werden. Wenn die Schemata bei der [!DNL Sites]-Bereitstellung separat aktualisiert werden, werden alle Metadateneigenschaften angezeigt.
+* [!DNL Experience Manager] ruft die Metadatenschemata nicht ab. Das bedeutet, dass möglicherweise nicht alle abgerufenen Metadaten angezeigt werden. Wenn die Schemata bei der [!DNL Sites]-Bereitstellung separat aktualisiert werden, werden alle Metadateneigenschaften angezeigt.
 * Alle [!DNL Sites]-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Implemetierung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
 * Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Implementierung verfügbar machen möchten, sollten Sie die Assets migrieren. Weitere Informationen finden Sie im [Handbuch zur Assets-Migration](assets-migration-guide.md).
@@ -356,6 +358,13 @@ Führen Sie die folgenden Schritte aus, um häufig auftretende Fehler zu beheben
 * Wenn Sie über die lokale [!DNL Sites]-Implementierung nicht auf die Remote-DAM-Bereitstellung zugreifen können, stellen Sie sicher, dass Website-übergreifende Cookies zulässig sind und [Cookie-Unterstützung für dieselbe Website](/help/sites-administering/same-site-cookie-support.md) konfiguriert ist. Wenn Website-übergreifende Cookies blockiert werden, werden die Bereitstellungen von [!DNL Experience Manager] möglicherweise nicht authentifiziert. Beispielsweise kann [!DNL Google Chrome] im Inkognito-Modus Cookies von Drittanbietern blockieren. Um Cookies im [!DNL Chrome]-Browser zuzulassen, klicken Sie auf das Augensymbol in der Adressleiste, gehen Sie zu **Site funktioniert nicht** > **Blockiert**, wählen Sie die Remote-DAM-URL aus und lassen Sie das Anmelde-Token-Cookie zu. Alternativ finden Sie Informationen hierzu in [Aktivieren von Cookies von Drittanbietern](https://support.google.com/chrome/answer/95647).
 
    ![Cookie-Fehler im Browser Chrome im Inkognito-Modus](assets/chrome-cookies-incognito-dialog.png)
+
+* Wenn Sie nicht auf die Remote-DAM-Bereitstellung von Adobe Managed Services über die Bereitstellung von Experience Manager Sites as a Cloud Service Sites zugreifen können, aktualisieren Sie die `aem_author.vhost` Datei verfügbar unter `"/etc/httpd/conf.d/available_vhosts`, damit Remote-DAM die folgenden Header in die Dispatcher-Konfiguration einbezieht:
+
+   ```xml
+   Header Set Access-Control-Allow-Origin <Local Sites instance host>
+   Header Set Access-Control-Allow-Credentials true
+   ```
 
 * Wenn keine Remote-Referenzen abgerufen werden und eine Fehlermeldung angezeigt wird, überprüfen Sie, ob die [!DNL Sites]-Bereitstellung verfügbar ist und ob es Probleme mit der Netzwerkverbindung gibt. Versuchen Sie es später erneut. Bei der [!DNL Assets]-Bereitstellung wird zweimal versucht, eine Verbindung zur [!DNL Sites]-Bereitstellung herzustellen. Anschließend wird ein Fehler ausgegeben.
 
