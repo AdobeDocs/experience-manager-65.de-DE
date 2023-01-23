@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d4152b4d-531b-4b62-8807-a5bc5afe94c6
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 88763b318e25efb16f61bc16530082877392c588
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 100%
+source-wordcount: '1553'
+ht-degree: 78%
 
 ---
 
@@ -27,15 +27,15 @@ ht-degree: 100%
 >6.5.3.0:
 >
 >* **Externalizer-Domains** können jetzt ausgewählt werden.
->  **Hinweis:** Externalizer-Domains sind nur für den Inhalt des Experience Fragments, das an Target gesendet wird, relevant und nicht Metadaten wie Inhalte zum Anzeigen von Angeboten.
+   >  **Hinweis:** Externalizer-Domains sind nur für den Inhalt des Experience Fragments, das an Target gesendet wird, relevant und nicht Metadaten wie Inhalte zum Anzeigen von Angeboten.
 >
 >6.5.2.0:
 >
 >* Experience Fragments können in Folgendes exportiert werden:
->
->   * den Standardarbeitsbereich
->   * einen benannten Arbeitsbereich, der in der Cloud-Konfiguration angegeben ist.
->   * **Hinweis:** Für den Export in bestimmte Arbeitsbereiche ist Adobe Target Premium erforderlich.
+   >
+   >   * den Standardarbeitsbereich
+   >   * einen benannten Arbeitsbereich, der in der Cloud-Konfiguration angegeben ist.
+   >   * **Hinweis:** Für den Export in bestimmte Arbeitsbereiche ist Adobe Target Premium erforderlich.
 >
 >* AEM muss [mit Adobe Target über IMS integriert](/help/sites-administering/integration-target-ims.md) sein.
 >
@@ -118,7 +118,7 @@ Die erforderlichen Optionen können in den **Seiteneigenschaften** des erforderl
    >
    >Beachten Sie die Kernkomponente:
    >
-   >[Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html)
+   >[Kernkomponenten – Experience Fragments](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/experience-fragment.html?lang=de)
 
    Wählen Sie unter **Adobe Target** Folgendes aus:
 
@@ -210,3 +210,85 @@ So vermeiden Sie solche Situationen:
       * Das Angebot wird wahrscheinlich noch gerendert, da das Experience Fragment-HTML nach Target verschoben wurde
       * Verweise im Experience Fragment funktionieren möglicherweise nicht ordnungsgemäß, wenn referenzierte Assets auch in AEM gelöscht wurden.
    * Natürlich sind keine weiteren Änderungen am Experience Fragment möglich, da es nicht mehr in AEM vorhanden ist.
+
+
+
+## Entfernen von ClientLibs aus in Target exportierten Experience Fragments {#removing-clientlibs-from-fragments-exported-target}
+
+Experience Fragments enthalten vollständige HTML-Tags und alle erforderlichen Client-Bibliotheken (CSS/JS), um das Fragment genau so wiederzugeben, wie es vom Experience Fragment-Inhaltsautor erstellt wurde. Dies ist ein Nebeneinander.
+
+Wenn Sie ein Experience Fragment-Angebot mit Adobe Target auf einer Seite verwenden, die von AEM bereitgestellt wird, enthält die Zielseite bereits alle erforderlichen Client-Bibliotheken. Darüber hinaus ist auch der irrelevante HTML-Code im Experience Fragment-Angebot nicht erforderlich (siehe [Überlegungen](#considerations)).
+
+Im Folgenden finden Sie ein Pseudobeispiel für HTML in einem Experience Fragment-Angebot:
+
+```html
+<!DOCTYPE>
+<html>
+   <head>
+      <title>…</title>
+      <!-- all of the client libraries (css/js) -->
+      …
+   </head>
+   <body>
+        <!--/* Actual XF Offer content would appear here... */-->
+   </body>
+</html>
+```
+
+Auf hoher Ebene werden beim AEM eines Experience Fragment nach Adobe Target mehrere zusätzliche Sling-Selektoren verwendet. Beispielsweise könnte die URL für das exportierte Experience Fragment wie folgt aussehen (Hinweis `nocloudconfigs.atoffer`):
+
+* http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
+
+Die `nocloudconfigs` Der Selektor wird mithilfe von HTL definiert und kann überlagert werden, indem er aus folgenden Quellen kopiert wird:
+
+* /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
+
+Die `atoffer` Selektor wird tatsächlich nach der Verarbeitung mit [Sling Rewriter](/help/sites-developing/experience-fragments.md#the-experience-fragment-link-rewriter-provider-html). Sie können beide zum Entfernen der Client-Bibliotheken verwenden.
+
+### Beispiel {#example}
+
+Zu diesem Zweck werden wir hier erläutern, wie dies mit `nocloudconfigs`.
+
+>[!NOTE]
+>
+>Siehe [Bearbeitbare Vorlagen](/help/sites-developing/templates.md#editable-templates) für weitere Informationen.
+
+#### Überlagerungen {#overlays}
+
+In diesem Beispiel wird die [Overlays](/help/sites-developing/overlays.md) , das eingeschlossen ist, entfernt die Client-Bibliotheken *und* das irrelevante HTML. Es wird davon ausgegangen, dass Sie den Experience Fragment-Vorlagentyp bereits erstellt haben. Die erforderlichen Dateien, aus denen kopiert werden muss `/libs/cq/experience-fragments/components/xfpage/` include:
+
+* `nocloudconfigs.html`
+* `head.nocloudconfigs.html`
+* `body.nocloudconfigs.html`
+
+#### Überlagerungen vom Typ &quot;Vorlage&quot; {#template-type-overlays}
+
+Für dieses Beispiel verwenden wir die folgende Struktur:
+
+![Überlagerungen vom Typ &quot;Vorlage&quot;](assets/xf-target-integration-02.png "Überlagerungen vom Typ &quot;Vorlage&quot;")
+
+Diese Dateien enthalten folgende Inhalte:
+
+* `body.nocloudconfigs.html`
+
+   ![body.nocloudconfigs.html](assets/xf-target-integration-03.png "body.nocloudconfigs.html")
+
+* `head.nocloudconfigs.html`
+
+   ![head.nocloudconfigs.html](assets/xf-target-integration-04.png "head.nocloudconfigs.html")
+
+* `nocloudconfigs.html`
+
+   ![nocloudconfigs.html](assets/xf-target-integration-05.png "nocloudconfigs.html")
+
+>[!NOTE]
+>
+>Verwendung `data-sly-unwrap` zum Entfernen des benötigten Body-Tags `nocloudconfigs.html`.
+
+### Zu beachten {#considerations}
+
+Wenn Sie mit Experience Fragment-Angeboten in Adobe Target sowohl AEM als auch Nicht-AEM-Sites unterstützen müssen, müssen Sie zwei Experience Fragments (zwei verschiedene Vorlagentypen) erstellen:
+
+* Eins mit der Überlagerung zum Entfernen von clientlibs/extra HTML
+
+* Eine, die nicht über die Überlagerung verfügt und daher die erforderlichen clientlibs enthält
