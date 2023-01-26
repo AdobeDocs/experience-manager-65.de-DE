@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: d30bfb9e67d0a2a0e870ee0841ed14060def7756
+source-git-commit: ae56ffafff38fe60530a8850732de58ba8c8f8f9
 workflow-type: tm+mt
 source-wordcount: '3252'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -539,7 +539,7 @@ Wenn Sie [eine Vorlage bearbeiten, können Sie das Layout definieren](/help/site
 
 ### Inhaltsrichtlinien {#content-policies}
 
-Die Richtlinien für Inhalt (oder Design) definieren die Entwurfseigenschaften einer Komponente. Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden). Inhaltsrichtlinien können mit dem Vorlageneditor erstellt und ausgewählt werden.
+Die Inhalts- (oder Design-)Richtlinien definieren die Designeigenschaften einer Komponente, z. B. die Verfügbarkeit der Komponente oder minimale/maximale Dimensionen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden). Inhaltsrichtlinien können mit dem Vorlageneditor erstellt und ausgewählt werden.
 
 * Die Eigenschaft `cq:policy` im Knoten `root`
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`

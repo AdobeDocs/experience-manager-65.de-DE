@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: e48cc0ed-688c-44c8-b6d6-5f3c8593a295
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 85a0c578a2cf57e2b4d65123cffe3816624211c8
 workflow-type: tm+mt
 source-wordcount: '1802'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -82,7 +82,7 @@ Auf dieser Grundlage bietet AEM einige Funktionen auf Anwendungsebene für die V
 * **Communities**
 * **Online-Handel**
 
-Benutzer können diese Bausteine auf Infrastruktur- und Anwendungsebene schließlich dazu verwenden, um angepasste Lösungen zu erstellen, indem sie ihre eigenen Anwendungen erstellen.
+Schließlich können Kunden diese Bausteine auf Infrastruktur- und Anwendungsebene verwenden, um benutzerdefinierte Lösungen zu erstellen, indem sie eigene Anwendungen erstellen.
 
 Der AEM-Server ist **Java-basiert** und kann auf den meisten Betriebssystemen ausgeführt werden, die diese Plattform unterstützen. Die gesamte Client-Interaktion mit AEM erfolgt über einen **Webbrowser**.
 
@@ -127,7 +127,7 @@ Mit AEM Managed Services können Kunden die folgenden Vorteile nutzen:
 
 **Cloud Manager**: Cloud Manager, Teil von Adobe Experience Manager Managed Services, bietet ein Selbstbedienungsportal, das es Organisationen besser ermöglicht, Adobe Experience Manager in der Cloud selbst zu verwalten. Es enthält eine moderne kontinuierliche Integration und eine kontinuierliche Bereitstellungs-Pipeline (CI/CD), die IT-Teams und Implementierungspartner dazu nutzen können, die Geschwindigkeit der Lieferung von Personalisierungen oder Aktualisierungen zu erhöhen, ohne bei der Leistung oder Sicherheit Abstriche zu machen. Cloud Manager ist nur für Adobe Managed Service-Kunden verfügbar.
 
-Weitere Informationen zu Cloud Manager und den zugehörigen Ressourcen finden Sie im [**Benutzerhandbuch zu Cloud Manager**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html).
+Weitere Informationen zu Cloud Manager und den zugehörigen Ressourcen finden Sie im [**Benutzerhandbuch zu Cloud Manager**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de).
 
 ## Erste Schritte {#getting-started}
 
@@ -137,7 +137,7 @@ Während Produktionsinstanzen für gewöhnlich auf dedizierten Computern ausgef�
 
 Um sich mit AEM vertraut zu machen bzw. um die Entwicklung auf AEM vorzunehmen, wird häufig eine auf Ihrem lokalen Computer installierte Instanz verwendet, auf der Apple OS X oder Desktopcomputerversionen von Microsoft Windows oder Linux ausgeführt werden.
 
-Auf der Clientseite funktioniert AEM mit allen modernen Browsern (**Microsoft Edge**, **Internet Explorer** 11, **Chrome **51+****, **Firefox **47+, **Safari** 8+) auf Desktopcomputer- und Tablet-Betriebssystemen. Details finden Sie unter [Unterstützte Clientplattformen](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
+Auf der Clientseite funktioniert AEM mit allen modernen Browsern (**Microsoft Edge**, **Internet Explorer 11**, **Chrome 51+**,** Firefox 47+**, **Safari 8+**) auf Desktopcomputer- und Tablet-Betriebssystemen. Details finden Sie unter [Unterstützte Clientplattformen](/help/sites-deploying/technical-requirements.md#supported-client-platforms).
 
 ### Abrufen der Software {#getting-the-software}
 
@@ -165,7 +165,7 @@ Im folgenden Abschnitt wird die **eigenständige Installation** beschrieben. Det
 
    *Beachten Sie, dass der Pfad des Dateiverzeichnisses nur aus US ASCII-Zeichen bestehen darf.*
 
-1. Platzieren Sie die **JAR**- und **Lizenz**-Dateien in diesem Verzeichnis:
+1. Platzieren Sie die **jar** und **Lizenz** Dateien in diesem Verzeichnis:
 
    ```shell
    <aem-install>/
@@ -313,4 +313,4 @@ Im obigen Abschnitt sollten Sie ein solides Verständnis der Grundlagen der AEM-
 * [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md)
 * [Leistungsrichtlinien](/help/sites-deploying/performance-guidelines.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Was ist AEM Screens? ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
+* [Was ist AEM Screens? ](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=de)
