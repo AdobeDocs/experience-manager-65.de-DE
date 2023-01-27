@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '488'
-ht-degree: 100%
+source-git-commit: 509ea0945e6c80e50f6f5bffd4c68282d586504a
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 96%
 
 ---
 
@@ -43,7 +43,7 @@ Eine ausführliche Beschreibung finden Sie im Abschnitt [PageModelManager](/help
 
 >[!NOTE]
 >
->Derzeit veranschaulicht das Beispiel-React-Projekt „We.Retail Journal“ den automatisierten Ansatz, während das Angular-Projekt den manuellen Ansatz veranschaulicht. Ein halbautomatisierter Ansatz wäre auch ein gültiger Anwendungsfall.
+>Die [We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) Beispiel-React-Projekt veranschaulicht den automatisierten Ansatz, während das Angular-Projekt den manuellen Ansatz veranschaulicht. Ein halbautomatisierter Ansatz wäre auch ein gültiger Anwendungsfall.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ Die aktuelle Implementierung basiert auf der Annahme, dass das SPA-Projekt die H
 Standardmäßig ist dieses Verhalten automatisch aktiviert. Um es zu deaktivieren, sollte die SPA die folgende Meta-Eigenschaft rendern:
 
 ```
-<meta property="cq:pagemodel_router" content="disable"\>
+<meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
 Beachten Sie, das jede Route der SPA einer vorhandenen Seite in AEM entsprechen sollte (z. B. `/content/mysite/mypage"`), da der `PageModelManager` automatisch versucht, das entsprechende Seitenmodell zu laden, wenn die Route ausgewählt wird. Bei Bedarf kann die SPA jedoch auch eine Blockierungsliste mit Routen definieren, die der `PageModelManager` ignorieren soll:

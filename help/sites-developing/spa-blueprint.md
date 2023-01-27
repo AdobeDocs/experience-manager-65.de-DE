@@ -10,8 +10,8 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: e13953bed73481738832a00a7563a07149c2d3bd
-workflow-type: ht
+source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
+workflow-type: tm+mt
 source-wordcount: '2079'
 ht-degree: 100%
 
@@ -150,7 +150,7 @@ Jede Komponente muss mit einer Funktion erweitert werden, die das äußere HTML-
 
 Ein Container ist eine Komponente, die untergeordnete Komponenten enthält und rendert. Dazu durchläuft der Container die `:itemsOrder`-, `:items`- und `:children`-Eigenschaften seines Modells.
 
-Der Container ruft die untergeordneten Komponenten dynamisch aus dem Speicher der ` [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping)`-Bibliothek ab. Der Container erweitert dann die untergeordnete Komponente mit den Modellanbieterfunktionen und instanziiert sie schließlich.
+Der Container ruft die untergeordneten Komponenten dynamisch aus dem Speicher der [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping)-Bibliothek ab. Der Container erweitert dann die untergeordnete Komponente mit den Modellanbieterfunktionen und instanziiert sie schließlich.
 
 ### Seite {#page}
 
@@ -235,7 +235,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 ## Vertrag mit dem Seiteneditor {#contract-with-the-page-editor}
 
-Die Projektkomponenten müssen die folgenden Datenattribute generieren, damit der Editor mit ihnen interagieren kann.
+Die Projektkomponenten müssen mindestens die folgenden Datenattribute generieren, damit der Editor mit ihnen interagieren kann.
 
 * `data-cq-data-path`: Relativer Pfad der Komponente, der von `PageModel` angegeben wird (z. B. `"root/responsivegrid/image"`). Dieses Attribut sollte nicht zu Seiten hinzugefügt werden.
 
