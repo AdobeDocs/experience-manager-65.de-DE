@@ -11,10 +11,10 @@ discoiquuid: f777865e-d4a8-40ef-87b0-130c19eb1b91
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: b2c8cf2fbc4db1d9f1b013fb93d71ed5c08eab59
+source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
 workflow-type: tm+mt
-source-wordcount: '3718'
-ht-degree: 90%
+source-wordcount: '3700'
+ht-degree: 87%
 
 ---
 
@@ -377,10 +377,10 @@ Außerdem sollten Sie die folgenden Punkte beachten, wenn Sie die Software für 
 - AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zu der angegebenen Haupt- oder Nebenversion der unterstützten Software. Das Update auf die nächste Haupt- oder Nebenversion wird jedoch nur unterstützt, wenn entsprechend angegeben.
 - Clusterbasierte Installationen unterstützen keine TarMK-Persistenz. Weitere Informationen zur unterstützten Persistenz finden Sie unter [Auswählen eines Persistenztyps für eine AEM Forms-Installation](/help/forms/using/choosing-persistence-type-for-aem-forms.md).
 - AEM Forms on JEE unterstützt die Software verschiedener Drittanbieter gemäß der [Richtlinie zur Unterstützung der Software von Drittanbietern](../../forms/using/aem-forms-jee-supported-platforms.md#p-third-party-patch-support-policy-p).
-- AEM Forms on JEE unterstützt Plattformen in Abhängigkeit der Unterstützung durch Drittanbieter. Einige Kombinationen sind durch Drittanbieter möglicherweise nicht zulässig. Zum Beispiel haben viele Anbieter ihre Anwendungsserver nicht mit Oracle zertifiziert. Daher unterstützt AEM Forms on JEE diese Kombinationen ebenfalls nicht. Um sicherzugehen, dass Sie die unterstützten Softwareversionen auswählen, sollten Sie auch die Supportmatrix dieser Drittanbieter überprüfen.
+- AEM Forms on JEE unterstützt Plattformen in Abhängigkeit der Unterstützung durch Drittanbieter. Einige Kombinationen sind durch Drittanbieter möglicherweise nicht zulässig. Zum Beispiel haben viele Anbieter ihre Anwendungsserver nicht mit Oracle zertifiziert. Daher unterstützt AEM Forms on JEE diese Kombinationen auch nicht. Um sicherzugehen, dass Sie die unterstützten Softwareversionen auswählen, sollten Sie auch die Supportmatrix dieser Drittanbieter überprüfen.
 - AEM Forms on JEE unterstützt keine TarMK Cold Standby.
 - AEM Forms on JEE unterstützt kein vertikales Clustering.
-- AEM Forms on JEE unterstützt nicht MySQL-Datenbank in Cluster-Umgbungen.
+- AEM Forms on JEE unterstützt keine MySQL-Datenbank in einer Clusterumgebung.
 - Eine Liste der entfernten bzw. der aktualisierten Plattformen finden Sie in dem Dokument [AEM 6.5 Forms - Übersicht über die neuen Funktionen](../../forms/using/whats-new.md).
 
 ### LDAP-Server (optional) {#ldap-servers-optional}
@@ -509,21 +509,17 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 </table>
 
 >[!NOTE]
->
->PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
->
->Zusätzlich gilt Folgendes:
->
->- PDF Generator erfordert die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder der Acrobat 2017-Version 17.011.30078, um die Konvertierung durchzuführen.
->- PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft Office Professional Plus und andere für die Konvertierung erforderliche Software.
->- PDF Generator unterstützt nicht Microsoft Office 365.
->- PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt.
->- Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
->- Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
->
->- Der PDF Generator-Dienst unterstützt nicht Microsoft Windows 10.
->- PDF Generator kann Dateien mit Microsoft Visio 2019 nicht konvertieren. Sie können Microsoft Visio 2016 weiterhin verwenden, um .VSD- und .VSDX-Dateien zu konvertieren.
->- PDF Generator kann Dateien mit Microsoft Project 2019 nicht konvertieren. Sie können Microsoft Project 2016 weiterhin verwenden, um .MPP-Dateien zu konvertieren.
+PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
+Zusätzlich gilt Folgendes:
+- PDF Generator erfordert die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder der Acrobat 2017-Version 17.011.30078, um die Konvertierung durchzuführen.
+- PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft Office Professional Plus und andere für die Konvertierung erforderliche Software.
+- PDF Generator unterstützt nicht Microsoft Office 365.
+- PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt.
+- Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
+- Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))&quot;
+- Der PDF Generator-Dienst unterstützt nicht Microsoft Windows 10.
+- PDF Generator kann Dateien mit Microsoft Visio 2019 nicht konvertieren. Sie können Microsoft Visio 2016 weiterhin verwenden, um .VSD- und .VSDX-Dateien zu konvertieren.
+- PDF Generator kann Dateien mit Microsoft Project 2019 nicht konvertieren. Sie können Microsoft Project 2016 weiterhin verwenden, um .MPP-Dateien zu konvertieren.
 >
 
 
@@ -637,8 +633,7 @@ Für zusätzliche Anforderungen siehe:
 </table>
 
 >[!NOTE]
->
->Die Acrobat DC-Produktfamilie führt zwei Spuren für Acrobat und Reader ein, die im Wesentlichen unterschiedliche Produkte sind: &quot;Classic&quot;und &quot;Kontinuierlich&quot;. Details und einen Vergleich der beiden Modi finden Sie unter [https://www.adobe.com/go/acrobatdctracks_de](https://www.adobe.com/go/acrobatdctracks_de).
+Die Acrobat DC-Produktfamilie führt zwei Spuren für Acrobat und Reader ein, die im Wesentlichen unterschiedliche Produkte sind: &quot;Classic&quot;und &quot;Kontinuierlich&quot;. Details und einen Vergleich der beiden Modi finden Sie unter [https://www.adobe.com/go/acrobatdctracks_de](https://www.adobe.com/go/acrobatdctracks_de).
 
 ### Browser {#browsers}
 
@@ -672,17 +667,7 @@ Für zusätzliche Anforderungen siehe:
    <td>Alle Updates</td>
   </tr>
   <tr>
-   <td>Google Chrome und Firefox unter Mac OS X</td>
-   <td>A: Unterstützt<br /> <br /> </td>
-   <td>Alle Updates</td>
-  </tr>
-  <tr>
-   <td>Apple Safari 11.x</td>
-   <td>A: Unterstützt</td>
-   <td>Alle Updates</td>
-  </tr>
-  <tr>
-   <td>Apple Safari 12.x<br /> <br /> </td>
+   <td>Apple Safari auf macOS</td>
    <td>A: Unterstützt</td>
    <td>Alle Updates</td>
   </tr>
@@ -690,14 +675,12 @@ Für zusätzliche Anforderungen siehe:
 </table>
 
 >[!NOTE]
->
->Für Desktops gelten die folgenden Browser-bedingten Ausnahmen:
->
->- Safari wird nur unter Mac OS X unterstützt.
->- Workspace unterstützt Safari 5.1 unter Macintosh OS X 10.6 und 10.7 mit Acrobat DC oder höheren Versionen. Weitere Informationen zur Kompatibilität von Safari 5.1 mit Adobe Acrobat Reader finden Sie unter [https://helpx.adobe.com/de/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/de/x-productkb/multi/safari-5-1-incompatible-reader.html).
->- Administration Console wird in Safari nicht unterstützt.
->- Correspondence Management unterstützt nicht Windows® Internet Explorer 9.0 für AEM 6.1-Formulare.
->- Forms Portal unterstützt die JAWS 14.0-Bildschirmlesehilfe-Software in Internet Explorer 11 für einen leichteren Zugriff.
+Für Desktops gelten die folgenden Browser-bedingten Ausnahmen:
+- Safari wird nur unter Mac OS X unterstützt.
+- Workspace unterstützt Safari 5.1 unter Macintosh OS X 10.6 und 10.7 mit Acrobat DC oder höheren Versionen. Weitere Informationen zur Kompatibilität von Safari 5.1 mit Adobe Acrobat Reader finden Sie unter [https://helpx.adobe.com/de/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/de/x-productkb/multi/safari-5-1-incompatible-reader.html).
+- Administration Console wird in Safari nicht unterstützt.
+- Correspondence Management unterstützt nicht Windows® Internet Explorer 9.0 für AEM 6.1-Formulare.
+- Forms Portal unterstützt die JAWS 14.0-Bildschirmlesehilfe-Software in Internet Explorer 11 für einen leichteren Zugriff.
 
 
 #### Mobile Clients {#mobile-clients}
@@ -721,15 +704,14 @@ Für zusätzliche Anforderungen siehe:
    <td>Alle Updates<br /> </td>
   </tr>
   <tr>
-   <td>Nativer Android-Browser  on Android™ 4.4 und höher</td>
+   <td>Nativer Android-Browser unter Android™ 4.4 und höher</td>
    <td>Alle Updates</td>
   </tr>
  </tbody>
 </table>
 
 >[!NOTE]
->
->- Forms Portal wird nur auf einem iPad nur in Safari unterstützt.
+- Forms Portal wird nur auf einem iPad nur in Safari unterstützt.
 
 
 ### AEM Forms-App {#aem-forms-workspace-app}
@@ -756,13 +738,13 @@ AEM Forms on JEE unterstützt Updates, Patches und Fix Packs zusätzlich zu der 
 
 Die Softwareanforderungen von Drittanbietern für AEM Forms on JEE werden im Abschnitt &quot;Systemanforderungen&quot;der jeweiligen Produktdokumente beschrieben. Die gesamte Dokumentation ist unter [https://adobe.com/go/learn_aemforms_documentation_65_de](https://adobe.com/go/learn_aemforms_documentation_65_de) verfügbar. 
 
-Die für AEM Forms on JEE verwendeten Referenzplattformen von Drittanbietern stellen ein spezifisches Patchlevel für die Infrastruktur von Drittanbietern dar, das während der Entwicklung und Veröffentlichung der jeweiligen Versionen von AEM Forms on JEE aktuell war, und bilden das Mindest-Patchlevel oder Service Pack-Level der Infrastruktur, die von dieser Version von AEM Forms on JEE unterstützt wird.
+Die Referenzplattformen von AEM Forms on JEE von Drittanbietern geben das spezifische Patch-Level der Drittanbieterinfrastruktur an, das während der Entwicklung und Veröffentlichung von AEM Forms on JEE aktuell war, sowie die Mindestanforderungen an die Patch-/Service Pack-Ebene der Infrastruktur, die von dieser Version von AEM Forms on JEE unterstützt wird.
 
 Adobe unterstützt dringende oder empfohlene Patches von Drittanbietern und geht bei deren Veröffentlichung davon aus, dass Drittanbieter die Abwärtskompatibilität mit den Versionen gewährleisten, die AEM Forms on JEE unterstützt. Adobe unterstützt nur Patches, die nach dem in der Dokumentation von AEM Forms on JEE angegebenen Mindest-Patchlevel veröffentlicht wurden.
 
 In einigen Fällen unterstützt Adobe keine Updates von Drittanbietern, die Hauptfunktionen verändern und dadurch keine vollständige Abwärtskompatibilität gewährleisten. Einzelheiten zu den unterstützten Updates finden Sie unter [Unterstützte Patch-Definitionen](https://helpx.adobe.com/de/aem-forms/aem-forms-third-party-software-patch.html) für bestimmte Herstellerprodukte und die von Adobe unterstützten Arten von Patches.
 
-Unter gewissen Voraussetzungen, auf die Adobe keinen Einfluss hat, können sich Patches von Drittanbietern, die Abwärtskompatibilität garantieren, möglicherweise negativ auf die Adobe-Produkte oder Kundenumgebungen auswirken. In diesen Fällen empfiehlt Adobe Kunden, die Auswirkungen dringender Drittanbieter-Patches vor ihrer Anwendung in kritischen Systemen zuerst zu prüfen. Adobe wird mit Drittanbietern die entsprechenden geschäftlichen Anstrengungen unternehmen, um solche Probleme zu beheben, entweder durch die üblichen Adobe-Supportprogramme oder, indem Drittanbieter das Problem in ihrem Patch beheben. Dies ist keine Garantie dafür, dass ein neu veröffentlichtes Drittanbieter-Patch, das von Adobe unterstützt wird, wie in der Dokumentation des Anbieters funktioniert oder mit AEM Forms on JEE kompatibel ist.
+Unter Umständen, auf die die Adobe keinen Einfluss hat, können sich Patches von Drittanbietern, die die Abwärtskompatibilität beanspruchen, negativ auf die Adobe-Produkte oder Kundenumgebungen auswirken. In diesen Fällen empfiehlt Adobe Kunden, die Auswirkungen dringender Drittanbieter-Patches vor ihrer Anwendung in kritischen Systemen zuerst zu prüfen. Adobe wird mit Drittanbietern die entsprechenden geschäftlichen Anstrengungen unternehmen, um solche Probleme zu beheben, entweder durch die üblichen Adobe-Supportprogramme oder, indem Drittanbieter das Problem in ihrem Patch beheben. Dies ist keine Garantie dafür, dass ein neu veröffentlichtes Drittanbieter-Patch, das von Adobe unterstützt wird, wie in der Dokumentation des Anbieters funktioniert oder mit AEM Forms on JEE kompatibel ist.
 
 Adobe behält sich das Recht vor, die von einer Version von AEM Forms on JEE unterstützten Referenzplattformen von Drittanbietern und deren unterstützte Patch-Definitionen jederzeit zu ändern.
 
@@ -795,8 +777,7 @@ Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.10.0 vom 7. Septe
 - OpenOffice 4.1.2
 
 >[!NOTE]
->
->Die Plattformen, die als [veraltet auf AEM Forms 6.5.12.0 und 6.5.10.0 bleibt bis AEM Forms 6.5 Service Pack 18 (6.5.18.0) verfügbar](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+Die Plattformen, die als [veraltet auf AEM Forms 6.5.12.0 und 6.5.10.0 bleibt bis AEM Forms 6.5 Service Pack 18 (6.5.18.0) verfügbar](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
 
 ## Revisionsverlauf {#revision-history}
 
