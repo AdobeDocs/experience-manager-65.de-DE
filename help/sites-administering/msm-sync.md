@@ -12,10 +12,10 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
 workflow-type: tm+mt
-source-wordcount: '2697'
-ht-degree: 89%
+source-wordcount: '2696'
+ht-degree: 99%
 
 ---
 
@@ -32,7 +32,7 @@ In diesem Abschnitt finden Sie Informationen zu den installierten Rollout-Konfig
 
 >[!CAUTION]
 >
->Die Aktualisierung oder Änderung einer vordefinierten (installierten) Rollout-Konfiguration **not** empfohlen. Wenn eine benutzerdefinierte Live-Aktion erforderlich ist, sollte sie in einer benutzerdefinierten Rollout-Konfiguration hinzugefügt werden.
+>Die Aktualisierung oder Änderung einer vordefinierten (installierten) Rollout-Konfiguration wird **nicht** empfohlen. Wenn eine benutzerdefinierte Live-Aktion erforderlich ist, sollte sie in einer benutzerdefinierten Rollout-Konfiguration hinzugefügt werden.
 
 ### Rollout-Auslöser {#rollout-triggers}
 
@@ -48,7 +48,7 @@ Jede Rollout-Konfiguration nutzt einen Rollout-Auslöser, der den Rollout auslö
 
 >[!NOTE]
 >
->Die Verwendung des Auslösers Bei Modifizierung kann die Leistung beeinträchtigen. Weitere Informationen finden Sie in den [Best Practices für MSM](/help/sites-administering/msm-best-practices.md#onmodify).
+>Die Verwendung des Auslösers „Bei Modifizierung“ kann die Leistung beeinträchtigen. Weitere Informationen finden Sie in den [Best Practices für MSM](/help/sites-administering/msm-best-practices.md#onmodify).
 
 ### Installierte Rollout-Konfigurationen {#installed-rollout-configurations}
 
@@ -60,7 +60,7 @@ In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die mit A
    <th>Name</th>
    <th>Beschreibung</th>
    <th>Auslöser</th>
-   <th>Synchronisierungsaktionen<br /><br />  siehe <a href="#installed-synchronization-actions">Installierte Synchronisierungsaktionen</a></th>
+   <th>Synchronisierungsaktionen<br /><br /> siehe <a href="#installed-synchronization-actions">Installierte Synchronisierungsaktionen</a></th>
   </tr>
   <tr>
    <td>Standard-Rollout-Konfiguration</td>
@@ -106,7 +106,7 @@ In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die mit A
   </tr>
   <tr>
    <td>Rollout-Konfiguration für Aktualisierung der Katalogseite</td>
-   <td>Wendet die Zieleigenschaften eines Katalog-Blueprints an. Muss nach „Rollout-Konfiguration für Inhalt der Katalogseite“ ausgeführt werden.</td>
+   <td>Wendet die Zieleigenschaften einer Katalog-Blueprint an. Muss nach „Rollout-Konfiguration für Inhalt der Katalogseite“ ausgeführt werden.</td>
    <td>Bei Rollout</td>
    <td>catalogRolloutHooks</td>
   </tr>
@@ -127,7 +127,7 @@ In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die mit A
 
 ### Installierte Synchronisierungsaktionen {#installed-synchronization-actions}
 
-In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit AEM installiert werden. Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie [Erstellen einer neuen Synchronisierungsaktion](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
+In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit AEM installiert werden. Wenn die installierten Aktionen Ihre Anforderungen nicht erfüllen, können Sie [eine neue Synchronisierungsaktion erstellen](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action).
 
 <table>
  <tbody>
@@ -143,7 +143,7 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
   </tr>
   <tr>
    <td>contentDelete</td>
-   <td><p>Löscht Knoten der Live Copy, die nicht in der Quelle vorhanden sind. <a href="#excluding-properties-and-node-types-from-synchronization">Konfigurieren Sie den Service CQ MSM Content Delete Action</a>, um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. </p> </td>
+   <td><p>Löscht Knoten der Live Copy, die in der Quelle nicht vorhanden sind. <a href="#excluding-properties-and-node-types-from-synchronization">Konfigurieren Sie den Service CQ MSM Content Delete Action</a>, um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -153,10 +153,10 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
   </tr>
   <tr>
    <td>editProperties</td>
-   <td><p>Bearbeitet die Eigenschaften der Live Copy. Die editMap-Eigenschaft bestimmt, welche Eigenschaften bearbeitet werden, und legt ihren Wert fest. Der Wert der editMap-Eigenschaft muss das folgende Format verwenden:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>Die <code>current_value</code> und <code>new_value</code> -Elemente sind reguläre Ausdrücke. <br /> </p> <p>Betrachten Sie beispielsweise den folgenden Wert für editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Dieser Wert bearbeitet die Eigenschaften der Live Copy-Knoten wie folgt:</p>
+   <td><p>Bearbeitet die Eigenschaften der Live Copy. Die editMap-Eigenschaft bestimmt, welche Eigenschaften bearbeitet werden, und legt ihren Wert fest. Der Wert der editMap-Eigenschaft muss das folgende Format verwenden:</p> <p><code>[property_name_1]#[current_value]#</code>[neuer_Wert],<br /> <code>[property_name_2]#[current_value]#</code>[neuer_Wert],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[neuer_Wert]</p> <p>Die Elemente <code>current_value</code> und <code>new_value</code> sind reguläre Ausdrücke. <br /> </p> <p>Betrachten Sie beispielsweise den folgenden Wert für editMap:</p> <p><code>sling:resourceType#/</code>(contentpage|homepage)#/<br /> mobilecontentpage,<br /> cq:template#/contentpage#/mobilecontentpage</p> <p>Dieser Wert bearbeitet die Eigenschaften der Live Copy-Knoten wie folgt:</p>
     <ul>
-     <li>Die <code>sling:resourceType</code> Eigenschaften, die entweder auf <code>contentpage</code> oder <code>homepage</code> auf <code>mobilecontentpage.</code></li>
-     <li>Die <code>cq:template</code> Eigenschaften, die auf <code>contentpage</code> auf <code>mobilecontentpage.</code></li>
+     <li>Die Eigenschaften <code>sling:resourceType</code>, die entweder auf <code>contentpage</code> oder <code>homepage</code> eingestellt sind, werden eingestellt auf <code>mobilecontentpage.</code></li>
+     <li>Die <code>cq:template</code>-Eigenschaften, die auf <code>contentpage</code> eingestellt sind, werden eingestellt auf <code>mobilecontentpage.</code></li>
     </ul> </td>
    <td><p> </p> <p>editMap: (String) Identifiziert die Eigenschaft, den aktuellen Wert und den neuen Wert. Weitere Informationen finden Sie in der Beschreibung.<br /> </p> </td>
   </tr>
@@ -167,12 +167,12 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
   </tr>
   <tr>
    <td>orderChildren</td>
-   <td>Auf der Live Copy werden die untergeordneten Elemente (Knoten) basierend auf der Reihenfolge im Blueprint sortiert<br /> </td>
+   <td>Auf der Live Copy werden die untergeordneten Elemente (Knoten) basierend auf der Reihenfolge in der Blueprint sortiert<br /> </td>
    <td> </td>
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Auf der Live Copy  aktualisiert diese Synchronisationsaktion Referenzen wie Links.<br />Sie sucht in den Live Copy-Seiten Pfade, die auf eine Ressource im Blueprint verweisen. Wenn sie solch einen Pfad gefunden hat, wird er so aktualisiert, dass er auf die zugehörige Ressource in der Live Copy (statt im Blueprint) verweist. Verweise, die Ziele außerhalb des Blueprints aufweisen, werden nicht geändert.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Konfigurieren Sie den Service CQ MSM References Update Action</a>, um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. </p> </td>
+   <td><p>Auf der Live Copy aktualisiert diese Synchronisierungsaktion Verweise wie Links.<br /> Sie sucht in den Live Copy-Seiten Pfade, die auf eine Ressource in der Blueprint verweisen. Wenn sie solch einen Pfad gefunden hat, wird er so aktualisiert, dass er auf die zugehörige Ressource in der Live Copy (statt in der Blueprint) verweist. Verweise, die Ziele außerhalb der Blueprints aufweisen, werden nicht geändert.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Konfigurieren Sie den Service CQ MSM References Update Action</a>, um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -191,8 +191,8 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
    <td> </td>
   </tr>
   <tr>
-   <td> Workflow</td>
-   <td><p>Startet den Workflow, der durch die Zieleigenschaft definiert ist (nur für Seiten), und nutzt die Live Copy als Nutzlast.</p> <p>Der Zielpfad ist der Pfad des Modellknotens.</p> </td>
+   <td>Workflow</td>
+   <td><p>Startet den Workflow, der durch die Zieleigenschaft definiert ist (nur für Seiten), und nutzt die Live Copy als Payload.</p> <p>Der Zielpfad ist der Pfad des Modellknotens.</p> </td>
    <td>target: (String) Der Pfad zum Workflow-Modell.<br /> </td>
   </tr>
   <tr>
@@ -221,12 +221,12 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
   </tr>
   <tr>
    <td>VersionCopyAction</td>
-   <td>Wenn der Blueprint/die Quellseite mindestens einmal veröffentlicht wurde, wird eine Live Copy-Seite basierend auf der veröffentlichten Version erstellt. Anmerkung: Diese Aktion ist nur für das Erstellen einer Live Copy-Seite auf der Grundlage einer veröffentlichten Quellseite verfügbar, nicht für das Aktualisieren einer vorhandenen Live Copy-Seite. </td>
+   <td>Wenn die Blueprint/Quellseite mindestens einmal veröffentlicht wurde, wird eine Live Copy-Seite basierend auf der veröffentlichten Version erstellt. Anmerkung: Diese Aktion ist nur für das Erstellen einer Live Copy-Seite auf der Grundlage einer veröffentlichten Quellseite verfügbar, nicht für das Aktualisieren einer vorhandenen Live Copy-Seite. </td>
    <td> </td>
   </tr>
   <tr>
    <td>PageMoveAction</td>
-   <td><p>PageMoveAction gilt, wenn eine Seite in den Blueprint verschoben wurde.</p> <p>Die Aktion kopiert (nicht: verschiebt) die zugehörige Live Copy-Seite vom Ort vor dem Verschieben zum Ort nach dem Verschieben.</p> <p>Die Aktion PageMoveAction ändert dabei die Live Copy-Seite am Ort vor dem Verschieben nicht. Für die nachfolgenden Rollout-Konfigurationen weist diese Seite daher den Status der Live-Beziehung ohne Blueprint auf.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Konfigurieren Sie den Service CQ MSM Page Move Action</a>, um die Knotentypen, Absatzelemente und Seiteneigenschaften festzulegen, die ausgeschlossen werden sollen. </p> <p>Diese Aktion muss die einzige Synchronisierungsaktion in einer Rollout-Konfiguration sein.</p> </td>
+   <td><p>PageMoveAction gilt, wenn eine Seite in die Blueprint verschoben wurde.</p> <p>Die Aktion kopiert (nicht: verschiebt) die zugehörige Live Copy-Seite vom Ort vor dem Verschieben zum Ort nach dem Verschieben.</p> <p>Die Aktion PageMoveAction ändert dabei die Live Copy-Seite am Ort vor dem Verschieben nicht. Für die nachfolgenden Rollout-Konfigurationen weist diese Seite daher den Status der Live-Beziehung ohne Blueprint auf.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Konfigurieren Sie den Service CQ MSM Page Move Action</a>, um die Knotentypen, Absatzelemente und Seiteneigenschaften festzulegen, die ausgeschlossen werden sollen. </p> <p>Diese Aktion muss die einzige Synchronisierungsaktion in einer Rollout-Konfiguration sein.</p> </td>
    <td><p>prop_referenceUpdate: (boolescher Wert) Aktualisiert bei „true“ die Verweise. Der Standardwert ist „true“.</p> <p> </p> </td>
   </tr>
   <tr>
@@ -263,13 +263,13 @@ Sie können [eine Rollout-Konfiguration erstellen](/help/sites-developing/extend
 * [Erstellen Sie die Rollout-Konfiguration.](/help/sites-developing/extending-msm.md#create-the-rollout-configuration)
 * [Fügen Sie Synchronisierungsaktionen zur Rollout-Konfiguration hinzu](/help/sites-developing/extending-msm.md#add-synchronization-actions-to-the-rollout-configuration).
 
-Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-Konfigurationen auf einem Blueprint oder einer Live Copy-Seite festlegen.
+Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-Konfigurationen auf einer Blueprint oder einer Live Copy-Seite festlegen.
 
 ### Ausschließen von Eigenschaften und Knotentypen von der Synchronisierung {#excluding-properties-and-node-types-from-synchronization}
 
 Sie können mehrere OSGi-Services konfigurieren, die die entsprechenden Synchronisierungsaktionen unterstützen, sodass sie sich nicht auf bestimmte Knotentypen und Eigenschaften auswirken. So sollten beispielsweise viele Eigenschaften und Unterknoten, die mit der internen Funktionstüchtigkeit von AEM zusammenhängen, nicht in einer Live Copy enthalten sein. Nur Inhalte, die für Benutzer der Seite relevant sind, sollten kopiert werden.
 
-Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Services. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+Beim Arbeiten mit AEM sind mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Dienste verfügbar. Weitere Informationen und empfohlene Verfahren finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, von denen Sie Knoten ausschließen können. Die Tabelle führt die Namen der Services an, die mit der Web-Konsole und der PID mit Repository-Knoten konfiguriert werden.
 
@@ -294,7 +294,7 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die Sie konfiguri
    <td>Ein regulärer Ausdruck, der die Knotentypen abgleicht, die von der Synchronisierungsaktion ausgeschlossen werden sollen.</td>
   </tr>
   <tr>
-   <td><p>Ausgeschlossene Absatzelemente</p> <p>cq.wcm.msm.action.excludedparagraphitems</p> </td>
+   <td><p>Ausgeschlossene Absatzelemente</p> <p>cq.wcm.msm.action.excludedparagraph.items</p> </td>
    <td>Ein regulärer Ausdruck, der die Absatzelemente abgleicht, die von der Synchronisierungsaktion ausgeschlossen werden sollen.</td>
   </tr>
   <tr>
@@ -303,7 +303,7 @@ In der folgenden Tabelle werden die Eigenschaften beschrieben, die Sie konfiguri
   </tr>
   <tr>
    <td><p>Ignorierte Mixin-Knotentypen</p> <p>cq.wcm.msm.action.ignoredMixin</p> </td>
-   <td>Nur für CQ MSM Content Update Action verfügbar. Ein regulärer Ausdruck, der die Namen von Mixin-Knotentypen abgleicht, die von der Synchronisierungsaktion ausgeschlossen werden sollen.</td>
+   <td>Nur für die Aktion CQ MSM zum Aktualisieren von Inhalten verfügbar. Ein regulärer Ausdruck, der die Namen von Mixin-Knotentypen abgleicht, die von der Synchronisierungsaktion ausgeschlossen werden sollen.</td>
   </tr>
  </tbody>
 </table>
@@ -334,7 +334,7 @@ Wenn Sie beispielsweise möchten, dass die Seite **Title** bei den Änderungen e
 
 Sie können mehrere OSGi-Services konfigurieren, die die entsprechenden Synchronisierungsaktionen im Zusammenhang mit der Aktualisierung von Verweisen unterstützen.
 
-Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Services. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+Beim Arbeiten mit AEM sind mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Dienste verfügbar. Weitere Informationen und empfohlene Verfahren finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, für die Sie die Verweisaktualisierung festlegen können. Die Tabelle führt die Namen der Services an, die mit der Web-Konsole und der PID mit Repository-Knoten konfiguriert werden.
 
@@ -346,11 +346,11 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, für di
   </tr>
   <tr>
    <td><p>Referenz über verschachtelte Live Copies aktualisieren</p> <p>cq.wcm.msm.impl.action.referencesupdate.prop_updateNested</p> </td>
-   <td>Nur verfügbar für die Aktualisierungsaktion "CQ MSM References". Wählen Sie diese Option (Web-Konsole) oder legen Sie diese boolesche Eigenschaft auf "true"(Repository-Konfiguration) fest, um Verweise zu ersetzen, die auf eine Ressource abzielen, die sich im Zweig der obersten Live Copy befindet.</td>
+   <td>Nur für die Aktion CQ MSM zum Aktualisieren von Verweisen verfügbar. Wählen Sie diese Option aus (Web-Konsole) oder legen Sie diese boolesche Eigenschaft auf „true“ fest (Repository-Konfiguration), um Verweise zu ersetzen, die auf eine Ressource verweisen, die sich in der Verzweigung der höchsten Live Copy befindet.</td>
   </tr>
   <tr>
    <td><p>Verweisende Seiten aktualisieren</p> <p>cq.wcm.msm.impl.actions.pagemove.prop_referenceUpdate</p> </td>
-   <td>Nur für CQ MSM Page Move Action verfügbar. Wählen Sie diese Option (Web-Konsole) oder legen Sie diese boolesche Eigenschaft auf <code>true</code> (Repository-Konfiguration), um alle Verweise zu aktualisieren, sodass die Originalseite verwendet wird, um stattdessen auf die LiveCopy-Seite zu verweisen.</td>
+   <td>Nur für die Aktion CQ MSM zum Verschieben von Seiten verfügbar. Wählen Sie diese Option aus (Web-Konsole) oder legen Sie diese boolesche Eigenschaft auf <code>true</code> fest (Repository-Konfiguration), um alle Verweise so zu aktualisieren, dass sie die Originalseite nutzen, anstatt auf die Live Copy-Seite zu verweisen.</td>
   </tr>
  </tbody>
 </table>
@@ -362,15 +362,15 @@ Bei MSM können Sie Sätze von Rollout-Konfigurationen festlegen, die allgemein 
 Die folgende Liste der Orte, unter denen Sie die zu verwendenden Rollout-Konfigurationen festlegen können, beschreibt, wie MSM bestimmt, welche Rollout-Konfigurationen für eine Live Copy genutzt werden:
 
 * **[Eigenschaften der Live Copy-Seite](/help/sites-administering/msm-sync.md#setting-the-rollout-configurations-for-a-live-copy-page):** Wenn eine Live Copy-Seite so konfiguriert ist, dass sie mindestens eine Rollout-Konfiguration verwenden soll, nutzt MSM diese Rollout-Konfigurationen.
-* **[Eigenschaften der Blueprint-Seiten](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):** Wenn eine Live Copy auf einem Blueprint basiert und die Live Copy-Seite nicht mit einer Rollout-Konfiguration konfiguriert ist, wird die Rollout-Konfiguration genutzt, die mit der Blueprint-Quellseite verknüpft ist.
-* **Eigenschaften der übergeordneten Live Copy-Seite:** Wenn weder die Live Copy-Seite noch die Blueprint-Quellseite mit einer Rollout-Konfiguration konfiguriert sind, wird die Rollout-Konfiguration verwendet, die für die übergeordnete Seite der Live Copy-Seite gilt.
-* **[Systemstandard](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** Wenn die Rollout-Konfiguration der übergeordneten Seite der Live Copy nicht ermittelt werden kann, wird die standardmäßige Rollout-Konfiguration des Systems verwendet.
+* **[Eigenschaften der Blueprint-Seiten](/help/sites-administering/msm-sync.md#setting-the-rollout-configuration-for-a-blueprint-page):** Wenn eine Live Copy auf einer Blueprint basiert und die Live Copy-Seite nicht mit einer Rollout-Konfiguration konfiguriert ist, wird die Rollout-Konfiguration genutzt, die mit der Blueprint-Quellseite verknüpft ist.
+* **Eigenschaften der übergeordneten Live Copy-Seite:** Wenn weder die Live Copy-Seite noch die Blueprint-Quellseite mit einer Rollout-Konfiguration konfiguriert ist, wird die Rollout-Konfiguration genutzt, die für die übergeordnete Live Copy-Seite gilt.
+* **[Systemstandard](/help/sites-administering/msm-sync.md#setting-the-system-default-rollout-configuration):** Wenn die Rollout-Konfiguration der übergeordneten Live Copy-Seite nicht ermittelt werden kann, wird die standardmäßige Rollout-Konfiguration verwendet.
 
-Beispielsweise nutzt ein Blueprint die We.Retail-Referenzwebsite als Quellinhalt. Aus dem Blueprint wird eine Website erstellt. Jedes Element der folgenden Liste beschreibt ein anderes Szenario hinsichtlich der Nutzung von Rollout-Konfigurationen:
+Beispielsweise nutzt eine Blueprint die We.Retail-Referenzwebsite als Quellinhalt. Aus der Blueprint wird eine Website erstellt. Jedes Element der folgenden Liste beschreibt ein anderes Szenario hinsichtlich der Nutzung von Rollout-Konfigurationen:
 
 * Keine Blueprint-Seiten oder Live Copy-Seiten sind für eine Rollout-Konfiguration konfiguriert. MSM nutzt die standardmäßige Rollout-Konfiguration für alle Live Copy-Seiten.
 * Die Stammseite der We.Retail-Referenzwebsite ist für mehrere Rollout-Konfigurationen konfiguriert. MSM nutzt diese Rollout-Konfigurationen für alle Live Copy-Seiten.
-* Die Stammseite der Referenz-Site &quot;We.Retail&quot;ist mit mehreren Rollout-Konfigurationen konfiguriert und die Stammseite der Live Copy-Site wird mit einem anderen Satz von Rollout-Konfigurationen konfiguriert. MSM nutzt die Rollout-Konfigurationen, die auf der Stammseite der Live Copy-Website konfiguriert sind.
+* Die Stammseite der We.Retail-Referenz-Website ist für mehrere Rollout-Konfigurationen konfiguriert und die Stammseite der Live Copy-Website ist für einen anderen Satz an Rollout-Konfigurationen konfiguriert. MSM nutzt die Rollout-Konfigurationen, die auf der Stammseite der Live Copy-Website konfiguriert sind.
 
 ### Festlegen der Rollout-Konfigurationen für eine Live Copy-Seite {#setting-the-rollout-configurations-for-a-live-copy-page}
 
@@ -402,7 +402,7 @@ Konfigurieren Sie eine Blueprint-Seite mit den Rollout-Konfigurationen, die beim
 
 Beachten Sie, dass die untergeordneten Seiten der Blueprint-Seite die Konfiguration erben. Wenn Sie die zu verwendende Rollout-Konfiguration konfigurieren, überschreiben Sie die Konfiguration, die die Seite von der übergeordneten Seite erbt.
 
-1. Wählen Sie über die **Sites-Konsole** die Stammseite des Blueprints aus.
+1. Wählen Sie über die **Sites-Konsole** die Stammseite der Blueprint aus.
 1. Wählen Sie in der Symbolleiste **Eigenschaften** aus.
 1. Öffnen Sie die Registerkarte **Blueprint**.
 1. Wählen Sie mit dem Dropdown-Selektor mindestens eine **Rollout-Konfigurationen** aus.
@@ -412,7 +412,7 @@ Beachten Sie, dass die untergeordneten Seiten der Blueprint-Seite die Konfigurat
 
 Legen Sie eine Rollout-Konfiguration fest, die als Systemstandard genutzt werden soll. Um die Standardkonfiguration festzulegen, konfigurieren Sie den OSGi-Dienst:
 
-* **Day CQ WCM Live Relationship Manager**  Die Dienst-PID ist . 
+* **Day CQ WCM Live Relationship Manager** Die Dienst-PID ist 
 `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Konfigurieren Sie den Dienst entweder über die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder einen [Repository-Knoten](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
