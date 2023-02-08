@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
+source-git-commit: 1759b6b2a0360b6fc173e711aaf88484c554eae8
 workflow-type: tm+mt
-source-wordcount: '3005'
+source-wordcount: '3000'
 ht-degree: 94%
 
 ---
@@ -55,7 +55,7 @@ Es stehen zwei Optionen für das Zuschneiden zur Auswahl. Sie können auch die E
 
 >[!IMPORTANT]
 • Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
-・ Das CMYK-Bildformat wird bei smartem Zuschneiden nicht unterstützt.
+• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
 
 | Option | Wann ist sie einzusetzen? | Beschreibung |
 | --- | --- | --- |
