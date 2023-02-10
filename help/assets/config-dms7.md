@@ -10,7 +10,7 @@ role: User, Admin
 mini-toc-levels: 4
 exl-id: badd0f5c-2eb7-430d-ad77-fa79c4ff025a
 feature: Configuration,Scene7 Mode
-source-git-commit: d3045e1a68d05eb257a6444f75a30faae4950db1
+source-git-commit: a8db862b4a90ee6679de44df9508caf75a4c3eec
 workflow-type: tm+mt
 source-wordcount: '6489'
 ht-degree: 95%
@@ -56,7 +56,7 @@ Mit der neuen Architektur ist Experience Manager für Assets aus Primärquellen 
 
 Um Dynamic Media zu aktivieren, starten Sie Experience Manager im `dynamicmedia_scene7`-Ausführungsmodus über die Befehlszeile, indem Sie Folgendes in ein Terminal-Fenster eingeben (als Beispiel wird der Port 4502 verwendet):
 
-```shell
+```shell {.line-numbers}
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.5.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
@@ -121,7 +121,7 @@ Weitere Informationen finden Sie unter [Installieren des Feature Pack 18912 für
 
    * **[!UICONTROL Unternehmen]** – der Name des Dynamic Media-Kontos.
       >[!IMPORTANT]
-      In einer Instanz von Experience Manager wird nur eine Dynamic Media-Konfiguration in Cloud Services unterstützt. nicht mehr als eine Konfiguration hinzufügen. Mehrere Dynamic Media-Konfigurationen auf einer Experience Manager-Instanz sind _not_ unterstützt oder von Adobe empfohlen wird.
+      In einer Instanz von Experience Manager wird nur eine Dynamic Media-Konfiguration in Cloud Services unterstützt. nicht mehr als eine Konfiguration hinzufügen. Mehrere Dynamic Media-Konfigurationen auf einer Experience Manager-Instanz werden von Adobe _nicht_ unterstützt oder empfohlen.
 
       <!-- CQDOC-19579 and CQDOC-19612 -->
 
@@ -247,7 +247,7 @@ Im Dynamic Media-Scene7-Modus beträgt die standardmäßige Maximalgröße für 
 Wenn Sie diese Funktion verwenden möchten, beachten Sie die folgenden Voraussetzungen und Punkte:
 
 * Im Dynamic Media-Scene7-Modus müssen Sie Experience Manager 6.5 mit Service Pack 6.5.4.0 oder höher ausführen.
-* Diese Funktion zum Hochladen großer Dateien wird nur für [*Managed Services*](https://business.adobe.com/products/experience-manager/managed-services.html)-Kunden unterstützt.
+* Diese Funktion zum Hochladen großer Dateien wird nur für [*Managed Services*](https://business.adobe.com/de/products/experience-manager/managed-services.html)-Kunden unterstützt.
 * Stellen Sie sicher, dass Ihre Experience Manager-Instanz mit Amazon S3 oder Microsoft® Azure Blob Storage konfiguriert ist.
 
    >[!NOTE]
@@ -468,7 +468,7 @@ Zwei Elemente sind zur Definition verfügbar: Übereinstimmung und Basisname. Mi
 
    Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie nicht über diese Informationen verfügen, wenden Sie sich an den Support von Adobe.
 
-1. Klicken Sie in der Navigationsleiste im oberen Seitenbereich auf **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinrichtung]** > **[!UICONTROL Stapelsatzvorgaben]**> **[!UICONTROL Standardbenennung]**.
+1. Klicken Sie in der Navigationsleiste im oberen Seitenbereich auf **[!UICONTROL Setup]** > **[!UICONTROL Anwendungseinrichtung]** > **[!UICONTROL Stapelsatzvorgaben]** > **[!UICONTROL Standardbenennung]**.
 1. Wählen Sie **[!UICONTROL Formular anzeigen]** oder **[!UICONTROL Code anzeigen]**, um die gewünschte Ansicht festzulegen, und geben Sie Informationen zu den einzelnen Elementen ein.
 
    Sie können das Kontrollkästchen **[!UICONTROL Code anzeigen]** aktivieren, um die Erstellung des regelmäßigen Ausdruckswerts neben Ihren Formularauswahlen anzuzeigen. Sie können diese Werte nach Bedarf eingeben oder ändern. Dies hilft Ihnen bei der Definition der Elemente der Benennungsdefinition, falls Sie aus irgendeinem Grund durch die Formularansicht eingeschränkt werden. Falls Ihre Werte in der Formularansicht nicht analysiert werden können, werden die Formularfelder inaktiv.
@@ -497,7 +497,7 @@ Sie können zum Definieren einer Stapelsatzvorgabe entweder die Formularfeldmeth
 
 **So erstellen Sie eine Stapelsatzvorgabe:**
 
-1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich bei Ihrem Konto an.
+1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an.
 
    Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie nicht über diese Informationen verfügen, wenden Sie sich an den Support von Adobe.
 
@@ -533,7 +533,7 @@ Sie können den Stapelsatztyp **[!UICONTROL Multiachsen-Rotationsset]** verwende
 
 Beispiel: Sie möchten ein Multiachsen-Rotationsset mit dem Namen `spin-2dspin` erstellen. Sie haben einen Satz von Rotationsset-Bildern, die drei Zeilen mit 12 Bildern pro Zeile enthalten. Die Bilder haben die folgenden Namen:
 
-```
+```xml {.line-numbers}
 spin-01-01
  spin-01-02
  …
@@ -553,7 +553,7 @@ Wenn das Rotationsset hochgeladen und veröffentlicht wird, aktivieren Sie den N
 
 **So erstellen Sie eine Stapelsatzvorgabe für die automatische Erstellung eines 2D-Rotations-Sets:**
 
-1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) und melden Sie sich bei Ihrem Konto an.
+1. Öffnen Sie das [Dynamic Media Classic-Desktop-Programm](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Konto an.
 
    Ihre Benutzer- und Anmeldedaten haben Sie zum Zeitpunkt der Bereitstellung von Adobe erhalten. Wenn Sie nicht über diese Informationen verfügen, wenden Sie sich an den Support von Adobe.
 

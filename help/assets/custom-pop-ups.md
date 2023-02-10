@@ -1,9 +1,6 @@
 ---
 title: Erstellen eines benutzerdefinierten Popup-Fensters mithilfe einer Schnellansicht
-seo-title: Use Quickview to create custom pop-ups
 description: Die standardmäßige Schnellansicht wird in E-Commerce-Erlebnissen eingesetzt, in denen ein Popup-Fenster mit Produktinformationen angezeigt wird, um eine Kaufentscheidung zu fördern. Sie können benutzerdefinierte Inhalte auslösen, die in Popups angezeigt werden.
-seo-description: The default Quickview is used in ecommerce experiences whereby a pop-up is displayed with product information to drive a purchase. You can trigger custom content to display in the pop-ups.
-uuid: b906cfff-ac44-4989-b6da-8a9bbf02af03
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
@@ -12,9 +9,9 @@ discoiquuid: 4bcab3f4-500f-432e-b16b-cdc26b9bab4d
 feature: Viewers
 role: User, Admin
 exl-id: 4e7f17ea-6985-4644-b91c-2c1299d01321
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: ht
-source-wordcount: '1051'
+source-git-commit: 05af34f8be6a4e32c3488ec05bc0133154caff7f
+workflow-type: tm+mt
+source-wordcount: '1052'
 ht-degree: 100%
 
 ---
@@ -35,7 +32,7 @@ Auch wenn die Funktionalität der Viewer unterschiedlich ist, ist der Prozess zu
 
 1. Erstellen Sie eine Schnellansicht für ein hochgeladenes Asset.
 
-   In der Regel erstellen Sie eine Schnellansicht, wenn Sie ein Asset zur Verwendung mit dem Viewer bearbeiten, den Sie benutzen.
+   In der Regel erstellen Sie eine Schnellansicht, wenn Sie ein Asset zur Verwendung mit dem Viewer, den Sie gerade benutzen, bearbeiten.
 
    <table>
     <tbody>
