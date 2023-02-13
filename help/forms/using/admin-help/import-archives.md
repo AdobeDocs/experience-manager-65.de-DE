@@ -1,5 +1,5 @@
 ---
-title: Archive importieren und verwalten
+title: Importieren und Verwalten von Archiven
 seo-title: Import and manage archives
 description: Erfahren Sie, wie Sie Archive importieren und verwalten.
 seo-description: Learn how to import and manage archives.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1454'
 ht-degree: 100%
 
 ---
 
-# Archive importieren und verwalten {#import-and-manage-archives}
+# Importieren und Verwalten von Archiven {#import-and-manage-archives}
 
 Verwenden Sie die Registerkarte „Archive“, um LCAs, die in Workbench erstellt wurden, zu importieren und zu verwalten.
 
