@@ -1,5 +1,5 @@
 ---
-title: Erstellen einer effektiven Einstiegsseite für Newsletter
+title: Erstellen einer effektiven Landingpage für Newsletter
 seo-title: Creating an Effective Newsletter Landing Page
 description: Eine effektive Startseite für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen, die Sie anhand der Registrierungen für Ihren Newsletter erfassen, verwenden, um Leads zu erhalten.
 seo-description: An effective newsletter landing page helps you get as many people as possible to sign up for your newsletter (or other email marketing campaign). You can use the information you gather from your newsletter sign ups to get leads.
@@ -12,13 +12,13 @@ discoiquuid: b41de64a-7d27-4633-a8d5-ac91d47eb1bb
 docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '613'
 ht-degree: 100%
 
 ---
 
-# Erstellen einer effektiven Einstiegsseite für Newsletter{#creating-an-effective-newsletter-landing-page}
+# Erstellen einer effektiven Landingpage für Newsletter{#creating-an-effective-newsletter-landing-page}
 
 Eine effektive Startseite für Ihren Newsletter hilft Ihnen dabei, so viele Personen wie möglich dazu zu animieren, sich für Ihren Newsletter (oder eine andere E-Mail-Marketing-Kampagne) zu registrieren. Sie können die Informationen, die Sie anhand der Registrierungen für Ihren Newsletter erfassen, verwenden, um Leads zu erhalten.
 
