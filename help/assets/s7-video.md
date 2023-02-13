@@ -12,7 +12,7 @@ mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
 source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1563'
 ht-degree: 100%
 
@@ -161,7 +161,7 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorgabe
 
    | Eigenschaft | Beschreibung |
    |---|---|
-   | Scene7-Cloud-Konfiguration | Die Cloud-Konfiguration, die für die Kodierungsvorlagen verwendet werden soll |
+   | Scene7-Cloud-Konfiguration | Die Cloud-Konfiguration, die für die Codierungsvorlagen verwendet werden soll |
    | Scene7-Kodierungsvorlage | Die Kodierungsvorlage, die diesem Videoprofil zugeordnet werden soll |
    | HTML5-Videotyp | Mit dieser Eigenschaft können Sie den Wert der Typeigenschaft des HTML5-Videoquellelements festlegen. Diese Information wird nicht von den S7-Kodierungsvorlagen bereitgestellt, sie ist jedoch erforderlich, um die Videos anhand des HTML5-Videoelements richtig zu rendern. Eine Liste für gängige Formate wird bereitgestellt, kann jedoch für andere Formate überschrieben werden. |
 
