@@ -13,9 +13,9 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '639'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Sie können mit Mobile Forms benutzerdefinierte Widgets einsetzen. Sie können m
 
 ![Beispiel für ein standardmäßiges und benutzerdefiniertes Widget](assets/custom-widgets.jpg)
 
-Beispiel für ein standardmäßiges und benutzerdefiniertes Widget
+Beispiel für ein standardmäßiges und ein benutzerdefiniertes Widget
 
 ## Integrieren benutzerdefinierter Widgets mit HTML5-Formularen {#integrating-custom-widgets-with-html-forms}
 
@@ -101,7 +101,7 @@ Die Widget-Konfiguration wird als JSON-Objekt bereitgestellt (eine Sammlung von 
 }*
 ```
 
-wobei &quot;identifier&quot;ein jQuery-CSS-Selektor ist, der ein bestimmtes Feld, eine Reihe von Feldern eines bestimmten Typs oder alle Felder darstellt. Im Folgenden ist der Wert des Bezeichners in verschiedenen Fällen aufgeführt:
+wobei „Kennung“ eine jQuery-CSS-Auswahl ist, die ein bestimmtes Feld, eine Gruppe von Feldern eines bestimmten Typs oder alle Felder darstellt. Im Folgenden ist der Wert des Bezeichners in verschiedenen Fällen aufgeführt:
 
 | Typ des Bezeichners | ID | Beschreibung |
 |---|---|---|
