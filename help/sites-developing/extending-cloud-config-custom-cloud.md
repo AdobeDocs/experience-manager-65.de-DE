@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines individuellen Cloud-Service
+title: Erstellen eines individuellen Cloud-Services
 seo-title: Creating a Custom Cloud Service
 description: Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services erweitert werden
 seo-description: The default set of Cloud Services can be extended with custom Cloud Service types
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '418'
-ht-degree: 62%
+ht-degree: 100%
 
 ---
 
-# Erstellen eines individuellen Cloud-Service{#creating-a-custom-cloud-service}
+# Erstellen eines individuellen Cloud-Services{#creating-a-custom-cloud-service}
 
 Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services erweitert werden. So können Sie auf strukturierte Weise eigenes Markup in die Seite einfügen. Diese Funktion ist hauptsächlich für externe Analyseanbieter hilfreich, z. B. Google Analytics, Chartbeat usw. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf jeder Ebene unterbrochen werden.
 
@@ -35,36 +35,36 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
    * **Name**: `analytics`
    * **Typ**: `sling:Folder`
 
-1. Erstellen Sie 2 neue Knoten unter `/apps/acs/analytics`:
+1. Erstellen Sie zwei neue Knoten unter `/apps/acs/analytics`:
 
-   * **Name**: Komponenten
+   * **Name**: components
    * **Typ**: `sling:Folder`
 
    und
 
-   * **Name**: templates
+   * **Name**: templates
    * **Typ**: `sling:Folder`
 
 
-1. Rechtsklick `/apps/acs/analytics/components`. Wählen Sie **Erstellen...** und dann **Komponente erstellen...** aus. Im Dialogfeld, das sich öffnet, können Sie Folgendes angeben:
+1. Klicken Sie mit der rechten Maustaste auf `/apps/acs/analytics/components`. Wählen Sie **Erstellen...** und dann **Komponente erstellen...** aus. Im Dialogfeld, das sich öffnet, können Sie Folgendes angeben:
 
-   * **Titel**: `googleanalyticspage`
+   * **Bezeichnung**: `googleanalyticspage`
    * **Titel**: `Google Analytics Page`
    * **Supertyp**: `cq/cloudserviceconfigs/components/configpage`
    * **Gruppe**: `.hidden`
 
-1. Klicken **Nächste** und geben Sie Folgendes an:
+1. Klicken Sie zweimal auf **Weiter** und geben Sie Folgendes an:
 
    * **Zugelassene übergeordnete Elemente:** `acs/analytics/templates/googleanalytics`
 
-   Klicken **Nächste** zweimal klicken und **OK**.
+   Klicken Sie zweimal auf **Weiter** und anschließend auf **OK**.
 
-1. Hinzufügen einer Eigenschaft zu `googleanalyticspage`:
+1. Fügen Sie `googleanalyticspage` eine Eigenschaft hinzu:
 
    * **Name:** `cq:defaultView`
    * **Wert:** `html`
 
-1. Erstellen Sie eine neue Datei mit dem Namen `content.jsp` under `/apps/acs/analytics/components/googleanalyticspage`mit folgendem Inhalt:
+1. Erstellen Sie eine neue Datei mit dem Namen `content.jsp` unter `/apps/acs/analytics/components/googleanalyticspage` mit dem folgenden Inhalt:
 
    ```xml
    <%@page contentType="text/html"
@@ -141,18 +141,18 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
       * **Typ**: `String`
       * **Wert**: `textfield`
 
-1. Kopieren `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` nach `/apps/acs/analytics/components/googleanalyticspage/body.jsp` und ändern `libs` nach `apps` in Zeile 34 und machen Sie die Skriptreferenz in Zeile 79 zu einem vollqualifizierten Pfad.
+1. Kopieren Sie `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` nach `/apps/acs/analytics/components/googleanalyticspage/body.jsp`, ändern Sie `libs` in Zeile 34 in `apps` und ändern Sie die Skriptreferenz in Zeile 79 in einen vollständig qualifizierten Pfad.
 1. Erstellen Sie eine neue Vorlage unter `/apps/acs/analytics/templates/`:
 
-   * mit **Ressourcentyp** = `acs/analytics/components/googleanalyticspage`
-   * mit **Titel** = `googleanalytics`
-   * mit **Titel**= `Google Analytics Configuration`
-   * mit **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
-   * mit **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
-   * mit **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (im Vorlagenknoten, nicht im Knoten jcr:content )
-   * mit **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (auf jcr:content)
+   * **Ressourcentyp** = `acs/analytics/components/googleanalyticspage`
+   * **Titel** = `googleanalytics`
+   * **Titel**= `Google Analytics Configuration`
+   * **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
+   * **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
+   * **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (im Vorlagenknoten, nicht im jcr:content-Knoten)
+   * **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (in jcr:content)
 
-1. Neue Komponente erstellen: `/apps/acs/analytics/components/googleanalytics`.
+1. Erstellen Sie eine neue Komponente: `/apps/acs/analytics/components/googleanalytics`.
 
    Fügen Sie den folgenden Inhalt zu `googleanalytics.jsp` hinzu:
 
@@ -200,14 +200,14 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
    * **Titel**: `Google Analytics`
    * **Name**: `googleanalytics`
 
-   Gehen Sie zurück in die CRXDE Lite und unter `/etc/cloudservices/googleanalytics`, fügen Sie die folgende Eigenschaft zu `jcr:content`:
+   Gehen Sie in CRXDE Lite zurück und fügen Sie unter `/etc/cloudservices/googleanalytics` folgende Eigenschaft zu `jcr:content` hinzu:
 
    * **Name**: `componentReference`
    * **Typ**: `String`
    * **Wert**: `acs/analytics/components/googleanalytics`
 
 
-1. Navigieren Sie zur neu erstellten Dienstseite ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) und klicken Sie auf die **+** , um eine neue Konfiguration zu erstellen:
+1. Navigieren Sie zur neu erstellten Service-Seite (`http://localhost:4502/etc/cloudservices/googleanalytics.html`) und klicken Sie auf **+**, um eine neue Konfiguration zu erstellen:
 
    * **Übergeordnete Konfiguration**: `/etc/cloudservices/googleanalytics`
    * **Titel:**  `My First GA Config`
