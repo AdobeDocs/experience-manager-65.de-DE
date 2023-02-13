@@ -1,5 +1,5 @@
 ---
-title: Einführung zur Anpassung des AEM Forms Workspace
+title: Einführung zur Anpassung von AEM Forms Workspace
 seo-title: Introduction to Customizing AEM form workspace
 description: Eine kurze Einführung mit konzeptuellen und technischen Informationen zur Anpassung von LiveCycle AEM Forms Workspace für die Prozessverwaltung.
 seo-description: A quick introduction, with conceptual and technical information, to customize LiveCycle AEM Forms workspace for process management.
@@ -12,13 +12,13 @@ discoiquuid: 021c6606-8cd3-472c-a80b-b1bcace7e87f
 docset: aem65
 exl-id: b183d42f-343c-4acb-bc73-f80ad72e54df
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1763'
 ht-degree: 100%
 
 ---
 
-# Einführung zur Anpassung des AEM Forms Workspace{#introduction-to-customizing-aem-form-workspace}
+# Einführung zur Anpassung von AEM Forms Workspace{#introduction-to-customizing-aem-form-workspace}
 
 AEM Forms Workspace bietet Funktionen zum Ändern der Darstellung und der Funktionen der Benutzeroberfläche. Die Anpassungen zum Ändern des Stils, des Layouts, der Formatierung, des Branding und der Kernfunktion werden unten beschrieben.
 
@@ -354,7 +354,7 @@ mvn clean -P Dev-Installation auf Client-Paket
       * initializer - Enthält initializer.js und modelcontrollerpath.js.
       * models - Enthält Modelle aller Komponenten in AEM Forms Workspace.
       * routes – Enthält JavaScript-Dateien und HTML-Dateien, die den Startvorgang, Aufgaben, Verfolgung und Einstellungen in AEM Forms Workspace laden.
-      * services - Enthält in AEM Forms Workspace verwendete service.js.
+      * services - Enthält die in AEM Forms Workspace verwendete service.js.
       * templates - Enthält alle Vorlagen, d. h. HTML-Dateien aller Komponenten in AEM Forms Workspace.
       * util - Enthält alle in AEM Forms Workspace verwendeten Dienstprogrammdateien (javascript).
       * views - Enthält Ansichten aller Komponenten in AEM Forms Workspace.
