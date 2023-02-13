@@ -12,7 +12,7 @@ discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
 ht-degree: 100%
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 Wenn die AEM-Instanz direkt installiert wird, steht im Sidekick umgehend eine Auswahl von Komponenten zur Verfügung.
 
-Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mit dem [Designmodus](#enabledisablecomponentsusingdesignmode) können Sie diese Komponenten aktivieren/deaktivieren. Wenn Sie den Designmodus aktivieren und sich auf der Seite befinden, können Sie damit [Aspekte des Komponentendesigns konfigurieren](#configuringcomponentsusingdesignmode), indem Sie die Attributparameter bearbeiten.
+Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mit dem [Design-Modus](#enabledisablecomponentsusingdesignmode) können Sie diese Komponenten aktivieren/deaktivieren. Wenn Sie den Design-Modus aktivieren und sich auf der Seite befinden, können Sie damit [Aspekte des Komponenten-Designs konfigurieren](#configuringcomponentsusingdesignmode), indem Sie die Attributparameter bearbeiten.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Im Designmodus ist der Sidekick minimiert dargestellt und Sie haben die Möglich
 
    ![](do-not-localize/sidekick-collapsed.png)
 
-## Konfigurieren des Entwurfs einer Komponente {#configuring-the-design-of-a-component}
+## Konfigurieren des Designs einer Komponente {#configuring-the-design-of-a-component}
 
 Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigurieren. Jede Komponente verfügt über eigene Parameter. Im folgenden Beispiel wird die **Bildkomponente** gezeigt:
 
