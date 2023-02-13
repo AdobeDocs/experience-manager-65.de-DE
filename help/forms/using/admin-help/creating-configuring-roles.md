@@ -1,5 +1,5 @@
 ---
-title: Rollen erstellen und konfigurieren
+title: Erstellen und Konfigurieren von Rollen
 seo-title: Creating and configuring roles
 description: Erfahren Sie, wie Sie Benutzer und Gruppen Rollen zuweisen, die bereits Teil der User Management-Datenbank sind. Sie können auch Rollen erstellen, bearbeiten und löschen.
 seo-description: Learn how to associate users and groups with roles that are already part of the User Management database. You can also create, edit, and delete roles.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2526'
 ht-degree: 100%
 
 ---
 
-# Rollen erstellen und konfigurieren{#creating-and-configuring-roles}
+# Erstellen und Konfigurieren von Rollen{#creating-and-configuring-roles}
 
 Auf den Webseiten von User Management können Sie Benutzer und Gruppen Rollen zuordnen, die bereits Teil der User Management-Datenbank sind. Sie können auch Rollen erstellen, bearbeiten und löschen.
 
@@ -97,7 +97,7 @@ Je nach den installierten AEM Forms-Komponenten können die folgenden zusätzlic
 
 >[!NOTE]
 >
->Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
+>Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
 
 ## Rollen erstellen {#create-a-role}
 
@@ -113,7 +113,7 @@ Je nach den installierten AEM Forms-Komponenten können die folgenden zusätzlic
 1. Weisen Sie diese Rolle Benutzern und Gruppen zu:
 
    * Klicken Sie auf „Benutzer/Gruppen suchen“.
-   * Geben Sie die gewünschten Suchkriterien in das Feld Suchen ein.
+   * Geben Sie die gewünschten Suchkriterien in das Feld „Suchen“ ein.
    * Wählen Sie „Name“, „E-Mail“ oder „Benutzer-ID“ sowie „Benutzer“, „Gruppen“ oder „Benutzer und Gruppen“ aus.
    * Wählen Sie die Domain und die Anzahl der anzuzeigenden Suchergebnisse aus und klicken Sie auf „Suchen“.
    * Aktivieren Sie die Kontrollkästchen für die Benutzer und Gruppen, die Sie dieser Rolle zuweisen möchten, und klicken Sie auf „OK“.
@@ -150,7 +150,7 @@ Sie können alle von Ihnen erstellten Rollen löschen, jedoch nicht die AEM Form
 
 ## Rollen Benutzern und Gruppen zuweisen {#assign-a-role-to-users-and-groups}
 
-1. Klicken Sie in Administration Console auf Einstellungen > Benutzerverwaltung > Benutzer und Gruppen.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Benutzer und Gruppen“.
 1. Geben Sie Informationen zum Eingrenzen der Suche ein und klicken Sie auf „Suchen“. Die Suchergebnisse werden im unteren Seitenbereich angezeigt. Sie können die Liste durch Klicken auf die Spaltenüberschriften sortieren.
 1. Aktivieren Sie die Kontrollkästchen der Benutzer und Gruppen, die Sie mit dieser Rolle verknüpfen möchten, und klicken Sie auf „Rolle zuweisen“.
 1. Wählen Sie die Rolle aus, die Sie dem Benutzer bzw. der Gruppe zuweisen möchten, und klicken Sie auf „OK“.
