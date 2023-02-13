@@ -1,5 +1,5 @@
 ---
-title: Zeitlimitwerte zur Verwendung mit Acrobat Reader DC Extensions festlegen
+title: Festlegen von Timeout-Werten für die Verwendung mit Acrobat Reader DC Extensions
 seo-title: Setting timeout values for use with Acrobat Reader DC extensions
 description: Erfahren Sie, wie Sie Timeout-Werte für die Verwendung mit Acrobat Reader DC-Erweiterungen festlegen.
 seo-description: Learn how to set timeout values for use with Acrobat Reader DC extensions.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a9aeeb89-45e9-4d5d-aa25-8145c89b64f2
 exl-id: 0a55aab3-14a3-41ad-8533-dc2cd116a848
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '172'
 ht-degree: 100%
 
 ---
 
-# Zeitlimitwerte zur Verwendung mit Acrobat Reader DC Extensions festlegen  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
+# Festlegen von Timeout-Werten für die Verwendung mit Acrobat Reader DC Extensions  {#setting-timeout-values-for-use-with-acrobat-reader-dc-extensions}
 
 Beim Arbeiten mit einer großen Anzahl von PDF-Dateien in Acrobat Reader DC Extensions sollten Sie sicherstellen, dass die folgenden Zeitlimitwerte entsprechend festgelegt sind, damit es bei Aufträgen nicht zu Zeitüberschreitungen und somit zu Fehlern kommt:
 
