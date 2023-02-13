@@ -11,9 +11,9 @@ docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
 source-git-commit: 1a6881b29024799c44b2068ea82750c983a012e5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3867'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Wählen Sie den Brief für die Vorschau wie folgt aus:
 
 Füllen Sie auf der Registerkarte „Daten“ die verfügbaren Layout-Felder und Platzhalter aus.
 
-1. Geben Sie die Daten und Inhaltsvariablen wie benötigt in den Feldern ein. Füllen Sie alle Pflichtfelder aus, die mit einem Sternchen (&#42;), um die **Einsenden** Schaltfläche.
+1. Geben Sie die Daten und Inhaltsvariablen wie benötigt in den Feldern ein. Füllen Sie alle mit einem Sternchen (&#42;) gekennzeichneten Pflichtfelder aus, um die Schaltfläche **Senden** zu aktivieren.
 
    Tippen Sie auf einen Datenfeldwert in der HTML-Briefvorschau, um das entsprechende Datenfeld in der Registerkarte „Daten“ zu markieren.
 
@@ -113,7 +113,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 
    >[!NOTE]
    >
-   >Die Formatierung des eingefügten Textes hat jedoch einige[ Einschränkungen](https://helpx.adobe.com/de/aem-forms/kb/cm-copy-paste-text-limitations.html).
+   >Die Formatierung des eingefügten Textes hat jedoch einige [Einschränkungen](https://helpx.adobe.com/de/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
    Sie können den Text und die Zahlen im Brief mithilfe der Tabulatortaste einziehen. Beispielsweise können Sie die Tabulatortaste verwenden, um mehrere Textspalten in einer Liste in einem tabellarischen Format auszurichten.
 
@@ -129,7 +129,7 @@ In der Registerkarte verwalten Sie den Inhalt, z. B. Dokumentfragmente und die 
 
    * Währungssymbole wie €,￥ und £
    * Mathematische Symbole wie ∑, √, ∂ und ^
-   * Satzzeichen wie ‟ und &quot;
+   * Satzzeichen wie „ und “
 
    ![specialcharacters](assets/specialcharacters.png)
 
@@ -245,7 +245,7 @@ Sie können Ihren Zwecken entsprechende Änderungen an Layout und Inhalt des Bri
 
    >[!NOTE]
    >
-   >Da -Mobile Forms Seitenumbrüche nicht unterstützen, werden Kopf- und Fußzeilen nur einmal angezeigt. Es ist allerdings möglich, Kopf- und Fußzeilen explizit im Layout (pro Seite) festzulegen, sodass sie in der Mobile Forms-Vorschau angezeigt werden. Auch leere Seiten im Brief (falls vorhanden) werden nicht in der Vorschau für Mobile Forms angezeigt.
+   >Da Formulare auf Mobilgeräten Seitenumbrüche nicht unterstützen, werden Kopf- und Fußzeilen nur einmal angezeigt. Es ist allerdings möglich, Kopf- und Fußzeilen explizit im Layout (pro Seite) festzulegen, sodass sie in der Mobile Forms-Vorschau angezeigt werden. Auch leere Seiten im Brief (falls vorhanden) werden nicht in der Vorschau für Mobile Forms angezeigt.
 
    ![Expliziter Seitenumbruch](assets/8_pagebreak.png)
 
@@ -289,29 +289,29 @@ Solche Instanzen können nur gespeichert werden, wenn der Brief in der öffentli
 1. Suchen Sie nach **[!UICONTROL Correspondence Management-Konfigurationen]** und klicken Sie darauf.
 1. Überprüfen Sie die Konfiguration **[!UICONTROL Briefinstanzen im Veröffentlichungsmodus verwalten]** und klicken Sie dann auf **[!UICONTROL Speichern]**.
 
-### Funktion zum Speichern von Entwürfen aktivieren {#enable-save-draft-feature}
+### Aktivieren der Funktion „Speichern von Entwürfen“ {#enable-save-draft-feature}
 
-Führen Sie vor dem Veröffentlichen von Briefen oder Speichern von Entwürfen in der Veröffentlichungsinstanz die folgenden Schritte in der Autoren- und Veröffentlichungsinstanz aus, um die Funktion Als Entwurf speichern zu aktivieren:
+Bevor Sie Briefe veröffentlichen oder Entwürfe in der Veröffentlichungsinstanz speichern, führen Sie die folgenden Schritte in der Autoren- und Veröffentlichungsinstanz durch, um die Funktion „Als Entwurf speichern“ zu aktivieren:
 
-Die *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* -Eigenschaften werden nicht standardmäßig in die Veröffentlichungsinstanz übertragen. Übertragung *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* Eigenschaften für die Veröffentlichungsinstanz, deaktivieren Sie die [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] -Komponente. So deaktivieren Sie die Komponente:
+Die Eigenschaften *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* werden standardmäßig nicht in die Veröffentlichungsinstanz übernommen. Um die Eigenschaften *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* in die Veröffentlichungsinstanz zu übernehmen, deaktivieren Sie die Komponente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. So deaktivieren Sie die Komponente:
 
-1. Öffnen Sie in der Autoreninstanz die Adobe Experience Manager Web Console Components Console-Konsole. Die Standardeinstellung ist `http://author-server:port/system/console/components`
+1. Öffnen Sie in der Autoreninstanz die Konsole „Adobe Experience Manager Web Console Components“. Die Standardeinstellung ist `http://author-server:port/system/console/components`
 
-1. Suchen Sie nach **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]** -Komponente.
+1. Suchen Sie nach der Komponente **[!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]**.
 
-1. Klicken ![Schaltfläche deaktivieren](/help/forms/using/assets/enablebutton.png) Symbol zum Deaktivieren des [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] -Komponente.
+1. Klicken Sie auf das Symbol ![Schaltfläche deaktivieren](/help/forms/using/assets/enablebutton.png), um die Komponente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] zu deaktivieren.
 
 ![Autoreninstanz](/help/forms/using/assets/replicationproperties.png)
 
-Um die Funktion &quot;Als Entwurf speichern&quot;zu aktivieren, ersetzen Sie die vorhandene URL unter [!UICONTROL Autoren-URL für VersionRestoreManager] mit der URL Ihrer Autoreninstanz. So ersetzen Sie die URL:
+Um die Funktion „Als Entwurf speichern“ zu aktivieren, ersetzen Sie die vorhandene URL unter [!UICONTROL VersionRestoreManager Author URL] durch die URL Ihrer Authoreninstanz. So ersetzen Sie die URL:
 
-1. Öffnen Sie in der Veröffentlichungsinstanz [!UICONTROL Konfiguration der Adobe Manager-Web-Konsole]. Die Standardeinstellung ist `https://publish-server:port/system/console/configMgr`
+1. Öffnen Sie auf der Veröffentlichungsinstanz die [!UICONTROL Adobe Experience Manager Web Console-Konfiguration]. Die Standard-URL ist `https://publish-server:port/system/console/configMgr`
 
-1. Suchen und öffnen Sie die **[!UICONTROL Correspondence Management - Konfigurationen der Versionswiederherstellung der Autoreninstanz]** -Komponente.
+1. Suchen und öffnen Sie die Komponente **[!UICONTROL Correspondence Management – Autoreninstanz Version Konfigurationen wiederherstellen]**.
 
-1. Suchen Sie die **[!UICONTROL Autoren-URL für VersionRestoreManager]** und geben Sie die URL für die Autoreninstanz an.
+1. Suchen Sie das Feld **[!UICONTROL VersionRestoreManager Autor URL]** und geben Sie die URL für die Autoreninstanz an.
 
-1. Klicken Sie auf Speichern.
+1. Klicken Sie auf „Speichern“.
 
 ![Veröffentlichungsinstanz](/help/forms/using/assets/correspondencemanagement.png)
 
@@ -379,7 +379,7 @@ Weitere Informationen zur Skriptunterstützung in HTML5-Formularen finden Sie un
 
 In der Benutzeroberfläche „Korrespondenz erstellen“ wird standardmäßig HTML oder Mobile Forms zum Rendern der Briefvorschau verwendet. Die Mobile Forms-Vorschau kann in beliebigen Browsern problemlos gerendert werden, da sie das native Plugin des Browsers verwendet und daher keine zusätzlichen Plugins benötigt werden. Sie können zum Briefvorschaumodus PDF wechseln. Allerdings können aufgrund von Browserbeschränkungen Probleme bei verschiedenen Funktionen der interaktiven PDF-Vorschau des Briefs auftreten.
 
-Weitere Informationen zur Browserkompatibilität bei der Briefvorschau finden Sie unter [Auslauf der Unterstützung für das NPAPI-Browser-Plugin und Auswirkungen](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
+Weitere Informationen zur Browserkompatibilität bei der Briefvorschau finden Sie unter [Auslauf der Unterstützung für das NPAPI-Browser-Plugin und Auswirkungen](https://helpx.adobe.com/de/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html).
 
 Um den Vorschaumodus des Briefs zu ändern, führen Sie die folgenden Schritte aus:
 
