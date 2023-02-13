@@ -1,5 +1,5 @@
 ---
-title: Aktivieren der aggregierten Sammlung von Nutzungsstatistiken
+title: Zustimmung zur Sammlung aggregierter Nutzungsstatistiken
 seo-title: Opting Into Aggregated Usage Statistics Collection
 description: Hier erfahren Sie, wie Sie die aggregierte Sammlung von Nutzungsstatistiken aktivieren können.
 seo-description: Learn how to opt into aggregated usage statistics.
@@ -12,7 +12,7 @@ discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
 ht-degree: 100%
 
