@@ -1,5 +1,5 @@
 ---
-title: Speicherorte für Forms konfigurieren
+title: Konfigurieren der Speicherorte für Forms
 seo-title: Configuring locations for Forms
 description: Erfahren Sie, wie Sie einen Speicherort für Forms konfigurieren.
 seo-description: Learn how to configure location for Forms.
@@ -11,17 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3d2b7cfb-228c-4cc2-8fcd-d500f0010010
 exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '804'
 ht-degree: 100%
 
 ---
 
-# Speicherorte für Forms konfigurieren {#configuring-locations-for-forms}
+# Konfigurieren der Speicherorte für Forms {#configuring-locations-for-forms}
 
 Sie können die URL-, URI- und Dateispeicherorte von Attributen wie dem Webstamm sowie den Speicherort der abzurufenden Formulare und die bei PDF-Transformationen verwendete Seed-PDF-Datei und den Cache-Speicherort angeben.
 
-1. Klicken Sie in der Administration-Console auf Services > Forms.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Formulare“.
 1. Geben Sie unter „Speicherorte“ die entsprechenden Optionen an. Die Optionen sind im Folgenden beschrieben.
 1. Klicken Sie auf Speichern.
 
@@ -77,7 +77,7 @@ Im Folgenden finden Sie ein Beispiel für einen Eintrag in der Schriftartzuordnu
 
 **Seed-PDF-Datei:** Die anfängliche PDF-Datei, die bei einer PDFForm-Transformation zur Optimierung der Übermittlung verwendet wird. Die Seed-PDF-Datei ist eine angepasste PDF-Datei (die nur XFA-Stream-, Bild- und Schriftartressourcen enthält), die dem Formularentwurf und den Formulardaten angehängt wird. Das Formular wird in Acrobat 7 oder höher wiedergegeben und findet bei der PDFForm-Transformation Anwendung. 
 
- Der Standardwert ist eine leere Zeichenfolge.
+Der Standardwert ist eine leere Zeichenfolge.
 
 **Cache-Speicherort:** Gibt den Speicherort des Forms-Datenträger-Cache an. Nachdem Sie diese Einstellung geändert haben, werden alle vorhandenen Zwischenspeicherinformationen am aktuellen Speicherort zurückgesetzt und es wird ein neuer Zwischenspeicher am neuen Speicherort erstellt. Wählen Sie eine der folgenden Optionen aus:
 
