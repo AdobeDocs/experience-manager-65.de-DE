@@ -1,5 +1,5 @@
 ---
-title: Zertifikatbasierte Authentifizierung konfigurieren
+title: Konfigurieren einer zertifikatbasierten Authentifizierung
 seo-title: Configuring certificate-based authentication
 description: Importieren Sie eine Zertifizierungsstelle (Certificate Authority, CA) in den Trust Store und erstellen Sie dann eine Zertifikatzuordnung für zertifikatbasierte Authentifizierung.
 seo-description: Import a Certificate Authority (CA) certificate into the Trust Store and create a certificate mapping for certificate-based authentication.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
 exl-id: 9cbea8c8-4d42-446b-b98d-c090709624d7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '726'
 ht-degree: 100%
 
 ---
 
-# Zertifikatbasierte Authentifizierung konfigurieren {#configuring-certificate-based-authentication}
+# Konfigurieren einer zertifikatbasierten Authentifizierung {#configuring-certificate-based-authentication}
 
 User Management führt in der Regel die Authentifizierung mithilfe eines Benutzernamens und eines Kennworts aus. User Management unterstützt auch die zertifikatbasierte Authentifizierung, die Sie zum Authentifizieren von Benutzern über Acrobat oder zum programmgesteuerten Authentifizieren von Benutzern verwenden können. Ausführliche Informationen zum programmgesteuerten Authentifizieren von Benutzern finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).
 
