@@ -13,7 +13,7 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 2f574c98-550c-4b84-be1e-46a2700e7277
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '626'
 ht-degree: 100%
 
@@ -195,7 +195,7 @@ Standardmäßig werden alle Daten der Datei „error.log“ im Ordner „/crx-re
 
 Speicherort und Namen der Protokolldatei ändern:
 
-1. Melden Sie sich bei Configuration Manager als Administrator an. Die Standard-URL von Configuration Manager lautet `https://'[server]:[port]'/system/console/configMgr`.
+1. Melden Sie sich bei Configuration Manager als Admin an. Die Standard-URL von Configuration Manager lautet `https://'[server]:[port]'/system/console/configMgr`.
 1. Klicken Sie auf **Apache Sling Logging Logger-Konfiguration**. Folgendes Dialogfeld wird angezeigt.
 
    ![logconfig-1](assets/logconfig-1.png)
