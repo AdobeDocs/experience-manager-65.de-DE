@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -25,4 +25,4 @@ Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dess
 
 >[!NOTE]
 >
->Es gibt zwar eine Strukturvorlage [mode](/help/sites-authoring/author-environment-tools.md#page-modes) verfügbar sind, erfolgt die Pflege und Erstellung von Gerüsten sowie die Erstellung neuer Seiten aus Gerüsten in der klassischen Benutzeroberfläche. Weitere Informationen finden Sie unter [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in der Dokumentation für die Bearbeitung in der klassischen Benutzeroberfläche.
+>Obwohl ein [Strukturvorlagenmodus](/help/sites-authoring/author-environment-tools.md#page-modes) verfügbar ist, wird die Verwaltung und Erstellung von Strukturvorlagen sowie die Erstellung neuer Seiten in der klassischen Benutzeroberfläche durchgeführt. Weitere Informationen finden Sie unter [Strukturvorlage](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in der Dokumentation für die Bearbeitung in der klassischen Benutzeroberfläche.
