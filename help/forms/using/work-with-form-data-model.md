@@ -11,9 +11,9 @@ docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
 source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4165'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Hinzufügen von Datenmodellobjekten und Services:
 
    >[!NOTE]
    >
-   > Wenn Ihr Forms-Datenmodell ein Objekt enthält, das ein reserviertes Schlüsselwort für Ihre relationale Datenbank ist, kann dies zu Problemen beim Hinzufügen, Aktualisieren oder Abrufen von Daten führen. Vermeiden Sie daher die Verwendung solcher Objekte in Ihrem Formulardatenmodell.
+   > Wenn Ihr Datenmodell in Forms ein Objekt enthält, das ein reserviertes Keyword für Ihre relationale Datenbank ist, kann dies zu Problemen beim Hinzufügen, Aktualisieren oder Abrufen von Daten führen. Vermeiden Sie daher die Verwendung solcher Objekte in Ihrem Formulardatenmodell.
 
    Auf der Registerkarte Modell wird eine grafische Darstellung aller Datenmodellobjekte und ihrer Eigenschaften angezeigt, die zum Formulardatenmodell hinzugefügt wurden. Jedes Datenmodellobjekt wird durch ein Feld im Formulardatenmodell dargestellt.
 
