@@ -13,7 +13,7 @@ docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3425'
 ht-degree: 100%
 
@@ -434,7 +434,6 @@ Zum Konfigurieren der Replikation von Inhalten für eine weitere Veröffentlichu
    * Führen Sie auf der Registerkarte **Transport** folgende Schritte aus:
 
       * Geben Sie die erforderliche URI für die neue Veröffentlichungsinstanz ein, z. B.
-
          `https://localhost:4504/bin/receive` möglich.
 
       * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.
@@ -456,6 +455,7 @@ Falls Probleme auftreten, können Sie die Protokolle der Autoreninstanz überpr�
 >1. Konfigurieren Sie einen Replikationsagenten für die Replikation auf dieser Veröffentlichungsumgebung.
 >1. Konfigurieren Sie ein Benutzerkonto mit den nötigen Zugriffsrechten zum Lesen der Inhalte, die auf der spezifischen Veröffentlichungsumgebung repliziert werden.
 >1. Weisen Sie das Benutzerkonto als **Agenten-Benutzer-ID** für den Replikationsagenten zu.
+
 >
 
 
@@ -479,7 +479,6 @@ Die Installation umfasst Standardagenten. Es müssen jedoch trotzdem gewisse Kon
    * Führen Sie auf der Registerkarte **Transport** folgende Schritte aus:
 
       * Geben Sie die erforderliche URI für die neue Veröffentlichungsinstanz ein, z. B.
-
          `https://localhost:80/dispatcher/invalidate.cache` möglich.
 
       * Geben Sie das Site-spezifische Benutzerkonto für die Replikation ein.
