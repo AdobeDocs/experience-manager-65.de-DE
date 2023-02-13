@@ -10,7 +10,7 @@ topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
 exl-id: ed10ef8c-7b9c-43cf-bea8-7cf9742a8cac
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '276'
 ht-degree: 100%
 
@@ -39,7 +39,7 @@ Um die Speicherung von Benutzerdaten anzupassen, müssen Sie die Dienste für [E
 
 Um die Speicherung von Benutzerentwurfsdaten anzupassen, müssen Sie die Implementierung für alle Methoden der `DraftAFDataService`-Schnittstelle bereitstellen.
 
-Eine Beschreibung der Methoden und deren Argumente finden Sie im folgenden Codebeispiel der Schnittstelle:
+Eine Beschreibung der Methoden und deren Argumente finden Sie im folgenden Code-Beispiel der Schnittstelle:
 
 ```java
 public interface DraftAFDataService {
