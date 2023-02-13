@@ -1,5 +1,5 @@
 ---
-title: Konsistenz- und Ausnahmeprüfungen
+title: Konsistenz- und Durchlaufprüfungen
 seo-title: Consistency and Traversal Checks
 description: Erfahren Sie, wie Sie Konsistenz- und Ausnahmeprüfungen durchführen.
 seo-description: Learn how to perform consistency and traversal checks.
@@ -11,13 +11,13 @@ discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 feature: Configuring
 exl-id: 10dde29b-5dc7-4d4e-80ae-3d4fd0397f7e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '156'
 ht-degree: 100%
 
 ---
 
-# Konsistenz- und Ausnahmeprüfungen{#consistency-and-traversal-checks}
+# Konsistenz- und Durchlaufprüfungen{#consistency-and-traversal-checks}
 
 Beim Aktualisieren können aufgrund von Arbeitsbereichsinkonsistenzen Probleme auftreten. Sie können eine Testaktualisierung ausführen, um anzuzeigen, ob dies ein Problem darstellt, oder Konsistenzüberprüfungen als Präventivmaßnahme ausführen.
 
