@@ -1,20 +1,20 @@
 ---
 title: Integrieren von AEM Forms mit Adobe Analytics
-description: AEM Forms kann mit Adobe Analytics integriert werden, um Leistungsmetriken für Ihre veröffentlichten Formulare zu erfassen und zu verfolgen.
+description: AEM Forms lässt sich mit Adobe Analytics integrieren, um Leistungsdaten für Ihre veröffentlichten Formulare zu erfassen und zu verfolgen.
 docset: aem65
-source-git-commit: 503e579a00c9e029393b0a8a580faba2231c7589
-workflow-type: tm+mt
+exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
+source-git-commit: 45ca98ffb68e1e31e2f45f352e86f5aa1b6f0f00
+workflow-type: ht
 source-wordcount: '1806'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-
 # Analytics mit [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
-AEM Forms ermöglicht die Integration mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de), damit Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und verfolgen können. Ziel der Analyse dieser Metriken ist es, Geschäftsanwendern Einblicke in das Verhalten der Endbenutzer zu geben und das Erlebnis der Datenerfassung zu optimieren. Sie können das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für adaptive Formulare erfassen und verfolgen.
+AEM Forms lässt sich mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de) integrieren, damit Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und verfolgen können. Ziel der Analyse dieser Metriken ist es, Geschäftsanwendern Einblicke in das Verhalten der Endbenutzer zu geben und das Erlebnis der Datenerfassung zu optimieren. Sie können das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für adaptive Formulare erfassen und verfolgen.
 
-Sie können auch Analysen mithilfe des Cloud Service Framework durchführen. Weitere Informationen zur Integration von AEM Forms in Cloud Service Framework finden Sie unter [Analytics mithilfe von Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md). Der Hauptvorteil der Verwendung von Adobe Launch im Vergleich zu Analytics mithilfe des Cloud Service Framework besteht darin, dass Sie zusätzlich zu diesen vordefinierten Ereignissen auch benutzerdefinierte Ereignisse definieren können. Die angepassten Ereignisse werden mithilfe des Regeleditors oder von Client-Bibliotheken definiert und Ereignissen in [!DNL Adobe Analytics].
+Sie können auch Analysen mithilfe des Cloud Service-Frameworks durchführen. Weitere Informationen über die Integration von AEM Forms mit Cloud Service Framework finden Sie unter [Analytics mit Cloud Service-Framework](/help/forms/using/configure-analytics-forms-documents.md). Der Hauptvorteil von Adobe Launch gegenüber Analytics mit dem Cloud Service-Framework ist, dass Sie zusätzlich zu den Standardereignissen auch vorkonfigurierte Ereignisse definieren können. Die benutzerdefinierten Ereignisse werden mit dem Regeleditor oder den Kunden-Clientlibs definiert und den Ereignissen in [!DNL Adobe Analytics] zugeordnet.
 
 Nachdem Sie die in diesem Artikel erwähnten Aktionen ausgeführt haben, können Sie Berichte konfigurieren und in [!DNL Adobe Analytics] anzeigen, wie im folgenden Video gezeigt:
 
@@ -208,7 +208,7 @@ Führen Sie die folgenden Schritte aus, um eine Adobe Launch-Konfiguration zu er
 
 1. Geben Sie im Feld **[!UICONTROL Titel]** einen Titel für die Konfiguration an.
 
-1. Wählen Sie die [zugehörige Adobe IMS-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html) aus.
+1. Wählen Sie die [zugehörige Adobe IMS-Konfiguration](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/connect-aem-launch-adobe-io.html?lang=de) aus.
 
 1. Wählen Sie den Namen des Unternehmens, der bei der [Konfiguration von Adobe Analytics](#Configure-adobe-analytics) verwendet wurde.
 
@@ -231,7 +231,7 @@ Verwenden der [!DNL Adobe Launch]-Konfiguration in einem vorhandenen adaptiven F
 Nachdem Sie [!DNL Adobe Analytics] für ein adaptives Formular aktiviert haben, können Sie [überprüfen](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=de#validate-the-page-view-beacon), ob ein geeigneter Datenereignisfluss zwischen AEM Forms und [!DNL Adobe Analytics] vorhanden ist. Die Integration von AEM Forms mit Adobe Analytics ist nun abgeschlossen. Sie können jetzt [Berichte in Adobe Analytics konfigurieren und anzeigen](#view-reports-adobe-analytics).
 
 >[!NOTE]
->Wenn beide [Analytics mithilfe von Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) und **Analytics mit Adobe Launch** Funktionen gleichzeitig aktiviert sind, **Analytics mit Adobe Launch** hat Vorrang.
+>Wenn beide Funktionen [Analytics mit Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) und **Analytics mit Adobe Launch** gleichzeitig aktiviert sind, hat **Analytics mit Adobe Launch** Vorrang.
 
 ### Erstellen von Regeln zur Erfassung benutzerdefinierter Ereignisse (optional) {#capture-custom-events}
 
@@ -284,4 +284,4 @@ Nachdem Sie ein adaptives Formular zum Senden von Ereignisdaten an [!DNL Adobe A
 
 1. Drücken Sie die Tasten Strg+S und geben Sie einen Namen an, um das Projekt zu speichern.
 
-Detaillierte Informationen zum Anzeigen von Formularanalyseberichten finden Sie unter [Anzeigen und Verstehen der Analyseberichte in AEM Forms](../../forms/using/view-understand-aem-forms-analytics-reports.md).
+Ausführliche Informationen zur Anzeige von Formularanalyseberichten finden Sie unter [Anzeigen und Verstehen von AEM Forms-Analyseberichten](../../forms/using/view-understand-aem-forms-analytics-reports.md).
