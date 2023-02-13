@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '943'
 ht-degree: 100%
 
@@ -88,7 +88,7 @@ So kann eine Web-Seitenanfrage zum Beispiel wie folgt aussehen:
 
 * „C“ gibt an, dass dieser Eintrag vom Client stammt (es handelt sich dabei um die Anfrage einer Web-Seite).
 * „0“ ist die Verbindungsnummer (der Verbindungszähler startet bei 0).
-* &#x200B;# 00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
+* 00000 ist der Versatz im Bytestream. Hierbei handelt es sich um den ersten Eintrag, weshalb der Versatz bei 0 ist.
 * `[GET <?>]` ist der Inhalt der Anfrage, im Beispiel eine der HTTP-Kopfzeilen (URL).
 
 Wenn eine Verbindung geschlossen wird, werden die folgenden Informationen protokolliert:
