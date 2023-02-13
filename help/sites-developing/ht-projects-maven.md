@@ -3,7 +3,7 @@ title: Erstellen von AEM-Projekten mit Apache Maven
 description: In diesem Dokument wird beschrieben, wie Sie ein AEM-Projekt einrichten, das auf Apache Maven basiert
 exl-id: 451913bf-bb1e-4444-aee5-968ac30b5c9d
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
 ht-degree: 100%
 
