@@ -11,7 +11,7 @@ discoiquuid: 9f1beb89-8eb1-4e37-a5e8-19752b21374a
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1041'
 ht-degree: 100%
 
@@ -52,7 +52,7 @@ Mit der Komponente „Search &amp; Lister“ können Sie Formulare aus dem Formu
 
 ### Entwürfe und Einsendungen {#drafts-amp-submissions}
 
-Während die Komponente „Search &amp; Lister“ Formulare anzeigt, die vom Formularautor veröffentlicht wurden, zeigt die Komponente „Drafts &amp; Submissions“ Formulare, die für den späteren Abschluss als Entwurf gespeichert wurden, sowie gesendete Formulare an. Diese Komponente bietet jedem angemeldeten Benutzer eine personalisierte Nutzung.
+Während die Komponente „Suche und Auflister“ Formulare anzeigt, die vom Formularautor veröffentlicht wurden, zeigt die Komponente „Entwürfe und Sendungen“ Formulare, die für den späteren Abschluss als Entwurf gespeichert wurden, sowie gesendete Formulare an. Diese Komponente bietet jedem angemeldeten Benutzer eine personalisierte Nutzung.
 
 ### Verknüpfung {#link}
 
