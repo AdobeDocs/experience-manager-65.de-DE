@@ -11,7 +11,7 @@ topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1167'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ Beheben Sie dieses Problem wie folgt:
 * Manchmal hilft es auch, die unterstützte Java-Version neu zu installieren, um die richtigen Zuordnungen wiederherzustellen.
 * Sie haben jederzeit die Möglichkeit, CRX über eine Befehlszeile oder Start-/Stoppskripts wie zuvor in diesem Dokument beschrieben auszuführen.
 
-### Über CRX ausgeführte Anwendung erzeugt Fehler wegen unzureichendem Arbeitsspeicher {#my-application-running-on-crx-throws-out-of-memory-errors}
+### Meine über CRX ausgeführte Anwendung erzeugt Fehler wegen unzureichendem Arbeitsspeicher {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
