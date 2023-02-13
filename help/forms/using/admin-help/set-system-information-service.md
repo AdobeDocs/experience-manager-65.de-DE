@@ -1,5 +1,5 @@
 ---
-title: Systeminformationsdienst einrichten
+title: Einrichten des Systeminformationsdienstes
 seo-title: Set up the System information service
 description: Erfahren Sie, wie Sie den Systeminformationsdienst einrichten.
 seo-description: Learn how to set up the System information service.
@@ -11,17 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 14de0652-717d-4c84-b7b4-b7b78f325baa
 exl-id: 734ed463-2441-49fc-bacb-deb40851af42
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '102'
 ht-degree: 100%
 
 ---
 
-# Systeminformationsdienst einrichten {#set-up-the-system-information-service}
+# Einrichten des Systeminformationsdienstes {#set-up-the-system-information-service}
 
 Der Systeminformationsdienst stellt REST-APIs zum Abrufen von Informationen bereit. Um den Systeminformationsdienst zu verwenden, aktivieren Sie den REST-Endpunkt in Administration Console. Führen Sie zum Aktivieren des REST-Endpunktes folgende Schritte durch:
 
-1. Melden Sie sich bei Administration Console an. Die Standard-URL von Administration Console lautet `https://[hostname]:'port'/adminui.`
+1. Melden Sie sich bei der Administration-Console an. Die Standard-URL von Administration Console lautet `https://[hostname]:'port'/adminui.`
 1. Wechseln Sie zu Dienste > Anwendungen und Dienste > Dienstverwaltung.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den Dienst **SystemInfo**.
 1. Wählen Sie auf der Registerkarte „Endpunkte“ REST und klicken Sie auf **Hinzufügen**.
