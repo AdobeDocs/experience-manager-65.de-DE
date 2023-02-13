@@ -1,5 +1,5 @@
 ---
-title: Sicherheitseinstellungen angeben
+title: Angeben der Sicherheitseinstellungen
 seo-title: Specifying security settings
 description: Erfahren Sie, wie Sie Sicherheitseinstellungen angeben.
 seo-description: Learn how to specify security settings.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 36a7e16f-d09d-4cc5-babd-1ccadba76e16
 exl-id: 004b8a2f-66a0-43a4-be56-7e42b703ebb2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '73'
 ht-degree: 100%
 
 ---
 
-# Sicherheitseinstellungen angeben {#specifying-security-settings}
+# Angeben der Sicherheitseinstellungen {#specifying-security-settings}
 
 Mit Forms können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst werden. Standardmäßig werden sie aufgelöst, jedoch können Sie dieses Verhalten ändern, um die Sicherheit Ihres AEM Forms-Systems zu erhöhen.
 
