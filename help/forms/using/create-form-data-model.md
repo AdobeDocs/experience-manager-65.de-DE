@@ -10,9 +10,9 @@ discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 source-git-commit: c3178eefb5aca3afea2f3df8381b52461247d6f3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1518'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Mit dem AEM [!DNL Forms]-Datenintegrationsmodul können Sie ein Formulardatenmod
 
 Weitere Informationen zum Formulardatenmodell und zur Formulardatenintegration finden Sie unter [Datenintegration für AEM Forms](../../forms/using/data-integration.md).
 
-Diese Schulung führt Sie durch die Schritte zum Vorbereiten, Erstellen, Konfigurieren und Zuordnen eines Formulardatenmodells mit einem adaptiven Formular. Am Ende dieser Schulung können Sie Folgendes:
+Diese Schulung führt Sie durch die Schritte zum Vorbereiten, Erstellen, Konfigurieren und Zuordnen eines Formulardatenmodells mit einem adaptiven Formular. Am Ende dieses Tutorials können Sie Folgendes:
 
 * [Konfigurieren der MySQL-Datenbank als Datenquelle](#config-database)
 * [Erstellen eines Formulardatenmodells mit der MySQL-Datenbank](#create-fdm)
@@ -57,7 +57,7 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
 1. Installieren Sie den JDBC-Treiber für die [!DNL MySQL]-Datenbank als OSGi-Bundle:
 
-   1. Download [[!DNL MySQL] OSGi Bundle des JDBC-Treibers](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html).
+   1. Laden Sie das [[!DNL MySQL] JDBC-Treiber-OSGi-Bundle](http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html) herunter.
    1. Melden Sie sich bei der AEM [!DNL Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Web-Konsole-Bundles. Die Standard-URL lautet [http://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Tippen Sie auf **[!UICONTROL Installieren/Aktualisieren]**. Ein Dialogfeld [!UICONTROL Pakete hochladen/installieren] wird angezeigt.
@@ -77,18 +77,18 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
       >[!NOTE]
       >
-      > Wenn die [!DNL MySQL] -Datenbank hinter einer Firewall befindet, ist der Datenbank-Hostname kein öffentliches DNS. Die IP-Adresse der Datenbank muss im */etc/hosts* -Datei des AEM-Hostcomputers.
+      > Wenn sich die [!DNL MySQL]-Datenbank hinter einer Firewall befindet, ist der Datenbank-Host-Name kein öffentliches DNS. Die IP-Adresse der Datenbank muss der */etc/hosts*-Datei des AEM-Host-Computers hinzugefügt werden.
 
       * **Benutzername:** Benutzername der Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
       * **Kennwort:** Kennwort für die Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
 
       >[!NOTE]
       >
-      >AEM Forms unterstützt keine NT-Authentifizierung für [!DNL MySQL]. Rufen Sie AEM Webkonsole auf unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen Sie nach &quot;Apache Sling Connection Pooled Data asource&quot;. Legen Sie für die Eigenschaft &quot;JDBC connection URI&quot; den Wert &quot;integratedSecurity&quot;auf &quot;False&quot;fest und verwenden Sie den erstellten Benutzernamen und das Kennwort für die Verbindung mit [!DNL MySQL] Datenbank.
+      >AEM Forms unterstützt keine NT-Authentifizierung für [!DNL MySQL]. Wechseln Sie zur AEM-Web-Konsole unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen Sie nach „Apache Sling Connection Pooled Datasource“. Legen Sie für die Eigenschaft „JDBC connection URI“ den Wert „integratedSecurity“ auf „False“ fest und verwenden Sie den erstellten Benutzernamen und das Kennwort, um eine Verbindung mit der [!DNL MySQL]-Datenbank herzustellen.
 
       * **Test on Borrow**: Aktivieren Sie die Option **[!UICONTROL Test on Borrow]**.
       * **Test on Return:** Aktivieren Sie die Option **[!UICONTROL Test on Return.]**
-      * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **select &#42; von Kundendetails**.
+      * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Zum Beispiel **select &#42; from customerdetails**.
       * **Transaktions-Isolierung**: Setzen Sie den Wert auf **READ_COMMITTED**.
 
          Belassen Sie die anderen Eigenschaften auf den [Standardwerten](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) und tippen Sie auf **[!UICONTROL Speichern]**.
@@ -206,7 +206,7 @@ Gehen Sie folgendermaßen vor, um das Formulardatenmodell zu konfigurieren:
 
       * **Eingabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 
-         customerdetail-Schema
+         customerdetail schema
 
       * **Ausgabetyp**: Wählen Sie **BOOLEAN**.
 
