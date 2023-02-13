@@ -1,5 +1,5 @@
 ---
-title: Die Checkliste - Weitere Referenzen
+title: Die Checkliste – Weitere Referenzen
 seo-title: The Checklist - Further Reference
 description: Informieren Sie sich über weitere Details, die die Dokumente und Prinzipien der Checkliste „Verwalten von Projekten - Checkliste mit Best Practices“ erläutern und/oder ergänzen.
 seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3755'
 ht-degree: 100%
 
 ---
 
-# Die Checkliste - Weitere Referenzen{#the-checklist-further-reference}
+# Die Checkliste – Weitere Referenzen{#the-checklist-further-reference}
 
 Auf dieser Seite finden Sie weitere Details, um die Dokumente und Prinzipien von [Verwalten von Projekten - Checkliste mit Best Practices](/help/managing/best-practices.md) auszuarbeiten bzw. zu ergänzen.
 
@@ -235,7 +235,7 @@ Dieser Abschnitt kann in Verbindung mit dem Abschnitt [Leistungsoptimierung](/he
 
 #### Antwortzeiten für einzelne Seiten {#response-times-for-individual-pages}
 
-Ein wichtiger Faktor ist die Zeit, die Ihre Website benötigt, um auf Anforderungen durch Besucher zu reagieren.
+Ein wichtiger Faktor ist die Zeit, die Ihre Website benötigt, um auf Anforderungen durch Besuchende zu reagieren.
 
 Obwohl dieser Wert für jede Anforderung anders ist, kann ein durchschnittlicher Zielwert definiert werden. Sobald sich gezeigt hat, dass dieser Wert längerfristig erreichbar ist, kann er verwendet werden, um die Leistung der Website zu überwachen und auf potenzielle Probleme hinzuweisen
 
