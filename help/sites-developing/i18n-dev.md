@@ -11,7 +11,7 @@ topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1100'
 ht-degree: 100%
 
