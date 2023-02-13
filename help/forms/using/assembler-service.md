@@ -1,5 +1,5 @@
 ---
-title: Assembler-Dienst verwenden
+title: Verwenden des Assembler-Dienstes
 seo-title: Using Assembler Service
 description: Mit dem Assembler-Dienst können Sie PDF- und XDP-Dokumente kombinieren, neu anordnen und erweitern sowie Informationen zu PDF-Dokumenten erhalten.
 seo-description: The Assembler service lets you combine, rearrange, and augment PDF and XDP documents and obtain information about PDF documents.
@@ -11,19 +11,19 @@ discoiquuid: 6a99042f-79c7-494b-bca0-73f2b5725b58
 docset: aem65
 exl-id: 2acd6b19-0fe8-4994-b0f4-c9d5b9f3fdf1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2121'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Assembler-Dienst verwenden{#using-assembler-service}
+# Verwenden des Assembler-Dienstes{#using-assembler-service}
 
 Mit dem Assembler-Dienst können Sie PDF- und XDP-Dokumente kombinieren, neu anordnen und erweitern sowie Informationen zu PDF-Dokumenten erhalten. Jeder an den Assembler-Dienst übermittelte Auftrag umfasst ein DDX-Dokument (Document Description XML), Quelldokumente und externe Ressourcen (Zeichenfolgen und Grafiken). Weitere Informationen zum Assembler-Dienst finden Sie unter[ Übersicht über den Assembler-Dienst](../../forms/using/overview-aem-document-services.md#p-assembler-service-p).
 
 Sie können den Assembler-Dienst für die folgenden Vorgänge verwenden:
 
-## Zusammenführen von PDF-Dokumenten {#assemble-pdf-documents}
+## Zusammenstellen von PDF-Dokumenten {#assemble-pdf-documents}
 
 Mithilfe des Assembler-Dienstes können Sie mindestens zwei PDF-Dokumente in ein einziges PDF-Dokument oder PDF-Portfolio zusammenführen. Sie können dem PDF-Dokument auch Funktionen hinzufügen, die Navigation unterstützen oder die Sicherheit erhöhen. Im Folgenden finden Sie einige Möglichkeiten, wie Sie PDF-Dokumente zusammenführen können:
 
@@ -33,7 +33,7 @@ Die folgende Abbildung zeigt, wie drei Quelldokumente zu einem einzelnen Zieldok
 
 ![Assemblieren eines einzelnen PDF-Dokuments aus mehreren PDF-Dokumenten](assets/as_document_assembly.png)
 
-Assemblieren eines einzelnen PDF-Dokuments aus mehreren PDF-Dokumenten
+Zusammenstellen eines einzelnen PDF-Dokuments aus mehreren PDF-Dokumenten
 
 Das folgende Beispiel stellt ein einfaches DDX-Dokument dar, das zum Zusammenführen des Dokuments verwendet wird. Er gibt den Namen der Quelldokumente, mit deren Hilfe das Zieldokument generiert werden soll, sowie den Namen des Zieldokuments an.
 
@@ -74,7 +74,7 @@ Wenn der Assembler-Dienst das folgende DDX-Dokument interpretiert, führt er ein
 </DDX>
 ```
 
-### Zusammenführen von verschlüsselten Dokumenten {#assemble-encrypted-documents}
+### Zusammenstellen von verschlüsselten Dokumenten {#assemble-encrypted-documents}
 
 Beim Zusammenführen eines Dokuments kann das PDF-Dokument auch mit einem Kennwort verschlüsselt werden. Nachdem ein PDF-Dokument mit einem Kennwort verschlüsselt wurde, muss ein Benutzer das Kennwort angeben, damit das Dokument in Adobe Reader oder Acrobat angezeigt werden kann. Zum Verschlüsseln eines PDF-Dokuments mit einem Kennwort muss das DDX-Dokument encryption-Elementwerte enthalten, die für die Verschlüsselung eines PDF-Dokuments erforderlich sind.
 
@@ -82,7 +82,7 @@ Der Encryption-Dienst muss nicht Bestandteil Ihrer LiveCycle-Installation sein, 
 
 Wenn mindestens eines der Eingabedokumente verschlüsselt ist, geben Sie zum Öffnen des Dokuments als Teil des DDX-Dokuments ein Kennwort an.
 
-### Zusammenführen von Dokumenten mithilfe der Bates-Nummerierung {#assemble-documents-using-bates-numbering}
+### Zusammenstellen von Dokumenten mithilfe der Bates-Nummerierung {#assemble-documents-using-bates-numbering}
 
 Beim Zusammenführen eines Dokuments können Sie die Bates-Nummerierung verwenden, um für jede Seite einen eindeutigen Seitenbezeichner zu vergeben. Bei Verwendung der Bates-Nummerierung wird jeder Seite im Dokument (bzw. im Dokumentensatz) eine Zahl zugewiesen, die diese Seite eindeutig identifiziert. Beispielsweise Produktionsdokumente, die Materialaufstellungsinformationen enthalten und der Herstellung einer Baugruppe zugeordnet sind, können einen Bezeichner enthalten. Eine Bates-Nummer enthält einen sequenziell erhöhten numerischen Wert sowie ein optionales Präfix und Suffix. Die Abfolge „Präfix + numerischer Wert + Suffix“ wird als Bates-Musterbezeichnet.
 
@@ -92,7 +92,7 @@ Die folgende Illustration zeigt ein PDF-Dokument, das einen eindeutigen Bezeichn
 
 Ein PDF-Dokument, das einen eindeutigen Bezeichner enthält, der sich in der Kopfzeile des Dokuments befindet
 
-### Reduzieren und Zusammenführen von Dokumenten {#flatten-and-assemble-documents}
+### Reduzieren und Zusammenstellen von Dokumenten {#flatten-and-assemble-documents}
 
 Mit dem Assembler-Dienst können Sie interaktive PDF-Dokumente (z. B. Formulare) in nicht interaktive PDF-Dokumente umwandeln. Interaktive PDF-Dokumente ermöglichen dem Benutzer, Daten in die PDF-Dokumentfelder einzugeben bzw. darin zu ändern. Der Prozess der Umwandlung eines interaktiven PDF-Dokuments in ein nicht interaktives PDF-Dokument wird als Reduzieren bezeichnet. Beim Reduzieren eines PDF-Dokuments behalten Formularfelder ihr grafisches Aussehen, sind aber nicht mehr interaktiv. Dies kann ein Grund dafür sein, PDF-Dokumente zu reduzieren. Darüber hinaus funktionieren den Feldern zugeordnete Skripte nicht mehr.
 
@@ -114,7 +114,7 @@ Die folgende Abbildung zeigt, wie drei XDP-Quelldokumente zu einem einzelnen XDP
 
 ![Assemblieren eines einzelnen XDP-Dokuments aus mehreren XDP-Dokumenten](assets/as_assembler_xdpassembly.png)
 
-Assemblieren eines einzelnen XDP-Dokuments aus mehreren XDP-Dokumenten
+Zusammenstellen eines einzelnen XDP-Dokuments aus mehreren XDP-Dokumenten
 
 Nachfolgend finden Sie ein DDX-Dokument, das das oben gezeigte Ergebnis erzeugt.
 
@@ -149,7 +149,7 @@ Sie können festlegen, wie der Assembler-Dienst die Bilder, auf die in den Quell
    <td>Bettet alle referenzierten Bilder im Quell-XDP-Dokument ein.</td> 
   </tr> 
   <tr> 
-   <td>relative</td> 
+   <td>relativ</td> 
    <td>Bettet alle Bilder, die durch relative Verweise referenziert werden, im Quell-XDP-<br />Dokument ein.</td> 
   </tr> 
   <tr> 
@@ -282,7 +282,7 @@ Das folgende Beispiel stellt ein DDX-Dokument dar, das zum Aufteilen des Dokumen
 
 ### Aufteilen eines Quelldokuments basierend auf Lesezeichen {#divide-a-source-document-based-on-bookmarks}
 
-In der folgenden Abbildung ist DocA in mehrere Zieldokumente unterteilt. Das Lesezeichen der ersten Ebene 1 auf einer Seite identifiziert den Beginn eines neuen Zieldokuments.
+In der folgenden Abbildung ist DocA in mehrere Zieldokumente unterteilt. Das Lesezeichen der Stufe 1 auf einer Seite gibt den Beginn eines neuen resultierenden Dokuments an.
 
 ![Aufteilen eines Quelldokuments in mehrere Dokumente basierend auf Lesezeichen](assets/as_intro_pdfsfrombookmarks.png)
 
