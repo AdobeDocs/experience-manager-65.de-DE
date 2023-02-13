@@ -12,7 +12,7 @@ discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2826'
 ht-degree: 100%
 
@@ -36,11 +36,11 @@ Wenn Sie eine E-Mail oder einen Newsletter öffnen, der oder die für die Integr
 
 * Überschrift (Kampagne)
 * Bild (Kampagne)
-* Link (Kampagne)
+* Link (Campaign)
 * Scene7-Bildvorlage (Kampagne)
 * Zielgerichteter Verweis (Kampagne)
 * Text und Bild (Kampagne)
-* Text und Personalisierung (Kampagne)
+* Text und Personalisierung (Campaign)
 
 Eine Beschreibung dieser Komponenten finden Sie im folgenden Abschnitt.
 
@@ -278,10 +278,10 @@ Wenn Sie ein Formular öffnen, das für die Integration mit Adobe Campaign konf
 * „Datumsfeld (Kampagne)“ und „Datumsfeld/HTML 5 (Kampagne)“
 * Verschlüsselter Primärschlüssel (Kampagne)
 * Fehleranzeige (Kampagne)
-* Ausgeblendeter Abstimmschlüssel (Kampagne)
+* Ausgeblendeter Abstimmschlüssel (Campaign)
 * Numerisches Feld (Kampagne)
 * Optionsfeld (Kampagne)
-* Abonnement-Checkliste (Kampagne)
+* Abonnement-Checkliste (Campaign)
 * Textfeld (Kampagne)
 
 Die Komponenten werden wie folgt angezeigt:
@@ -335,9 +335,7 @@ Die Adobe Campaign-Komponenten verfügen über Einstellungen, die von allen Kom
 
 Für die meisten Komponenten können Sie Folgendes konfigurieren:
 
-#### Titel und Text
-
- {#title-and-text}
+#### Titel und Text {#title-and-text}
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -389,7 +387,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Kontrollkästchen (Kampag
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-### „Datumsfeld (Kampagne)“ und „Datumsfeld/HTML 5 (Kampagne)“ {#date-field-campaign-and-date-field-html-campaign}
+### „Datumsfeld (Campaign)“ und „Datumsfeld/HTML 5 (Campaign)“ {#date-field-campaign-and-date-field-html-campaign}
 
 Verwenden Sie das Datumsfeld, damit Empfänger ein Datum (beispielsweise das Geburtsdatum) angeben können. Das Datumsformat entspricht dem Format, das in Ihrer Adobe Campaign-Instanz verwendet wird.
 
