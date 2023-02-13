@@ -12,7 +12,7 @@ docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1641'
 ht-degree: 100%
 
@@ -150,7 +150,7 @@ Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurations
   </tr>
   <tr>
    <td> </td>
-   <td>Custom Style Path (Pfad für benutzerdefinierten Stil)</td>
+   <td>Pfad für benutzerdefinierten Stil</td>
    <td>Wenn Sie als „Style Type“ (Stiltyp) „Custom“ (Benutzerdefiniert) ausgewählt haben, geben Sie den Pfad zum benutzerdefinierten CSS an, oder wählen Sie ansonsten „Default“ (Standard).</td>
   </tr>
  </tbody>
