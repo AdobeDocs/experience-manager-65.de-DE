@@ -1,5 +1,5 @@
 ---
-title: Überwachen von Serverressourcen mit der JMX-Konsole
+title: Überwachen von Server-Ressourcen mit der JMX-Konsole
 seo-title: Monitoring Server Resources Using the JMX Console
 description: Erfahren Sie, wie Sie mit der JMX-Konsole Serverressourcen überwachen.
 seo-description: Learn how to monitor server resources using the JMX console.
@@ -12,13 +12,13 @@ discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4957'
 ht-degree: 100%
 
 ---
 
-# Überwachen von Serverressourcen mit der JMX-Konsole{#monitoring-server-resources-using-the-jmx-console}
+# Überwachen von Server-Ressourcen mit der JMX-Konsole{#monitoring-server-resources-using-the-jmx-console}
 
 Mit der JMX-Konsole können Sie Dienste auf dem CRX-Server überwachen und verwalten. In den folgenden Abschnitten werden die Attribute und Vorgänge zusammengefasst, die über das JMX-Framework verfügbar sind.
 
@@ -71,12 +71,12 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 * Zurückgegebener Wert: Tabellendaten mit den folgenden Spalten:
 
    * Topic Name
-   * Durchschnittliche Verarbeitungszeit
-   * Durchschnittliche Wartezeit
-   * Abgebrochene Aufträge
-   * Fehlgeschlagene Aufträge
-   * Abgeschlossene Aufträge
-   * Verarbeitete Aufträge
+   * Average Processing Time
+   * Average Waiting Time
+   * Cancelled Jobs
+   * Failed Jobs
+   * Finished Jobs
+   * Processed Jobs
 
 **returnFailedWorkflowCount**: Führt die Anzahl an fehlgeschlagenen Workflow-Instanzen auf. Sie können ein Workflow-Modell für die Abfrage angeben oder Informationen für alle Workflow-Modelle abrufen.
 
@@ -126,7 +126,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
    * Initiator
    * InstanceId
    * ModelId
-   * Nutzlast
+   * Payload
    * StartComment
    * WorkflowTitle
 
@@ -134,7 +134,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 * Argumente:
 
-   * Model: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+   * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Number of days since workflow started: das Alter der zu bereinigenden Workflow-Instanzen in Tagen.
@@ -145,7 +145,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
    * Initiator
    * InstanceId
    * ModelId
-   * Nutzlast
+   * Payload
    * StartComment
    * WorkflowTitle
 
@@ -153,7 +153,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 * Argumente:
 
-   * Model: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+   * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
@@ -163,7 +163,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 * Argumente:
 
-   * Model: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die veralteten Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+   * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die veralteten Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
@@ -199,7 +199,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 * Argumente:
 
-   * Model: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
+   * Modell: (optional) Die ID des Modells, auf das der Vorgang angewendet wird. Um den Vorgang auf die Workflow-Instanzen aller Workflow-Modelle anzuwenden, legen Sie kein Modell fest. Die ID ist der Pfad zum Modellknoten, z. B.:
 
       `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
    * Number of days since workflow has been completed: die Anzahl an Tagen, seit denen sich die Workflow-Instanzen im abgeschlossenen Status befinden.
@@ -210,7 +210,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
    * Initiator
    * InstanceId
    * ModelId
-   * Nutzlast
+   * Payload
    * StartComment
    * WorkflowTitle
 
@@ -660,7 +660,7 @@ Die folgenden Attribute werden für jeden Statistiktyp bereitgestellt, der gemel
 
 Statistische Informationen zu Repository-Abfragen.
 
-* Domäne: com.adobe.granite
+* Domain: com.adobe.granite
 * Typ: QueryStat
 
 ### Attribute {#attributes-2}
