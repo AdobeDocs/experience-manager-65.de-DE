@@ -1,5 +1,5 @@
 ---
-title: Zugreifbare adaptive Formulare erstellen
+title: Erstellen barrierefreier adaptiver Formulare
 seo-title: Creating accessible adaptive forms
 description: AEM Forms bietet Werkzeuge zum Erstellen barrierefreier adaptiver Formulare und vereinfacht die Einhaltung von Barrierefreiheitsstandards.
 seo-description: AEM Forms provides you tools and to create accessible adaptive forms and helps comply with accessibility standards.
@@ -11,9 +11,9 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2055'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgende
 
 ### 2. Angabe von angemessenen Beschriftungen für Formularsteuerelemente {#provide-proper-labels-for-form-controls}
 
-Die Beschriftung oder der Titel einer Komponente gibt an, was die Formularkomponente darstellt. Beispielsweise teilt der Text &quot;Vorname&quot;Benutzern mit, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit die Beschriftung von Bildschirmlesegeräten erkannt werden kann, wird sie programmgesteuert mit einer Formularkomponente verknüpft. Alternativ dazu kann das Formularsteuerelement mit zusätzlichen Barrierefreiheitsinformationen konfiguriert werden.
+Die Beschriftung oder der Titel einer Komponente gibt an, was die Formularkomponente darstellt. Der Text „Vorname“ weist Benutzende zum Beispiel darauf hin, dass sie ihren Vornamen in ein Textfeld eingeben müssen. Damit die Beschriftung von Bildschirmlesegeräten erkannt werden kann, wird sie programmgesteuert mit einer Formularkomponente verknüpft. Alternativ dazu kann das Formularsteuerelement mit zusätzlichen Barrierefreiheitsinformationen konfiguriert werden.
 
 Die Beschriftung, die von Bildschirmlesegeräten erkannt wird, muss nicht unbedingt mit der visuellen Beschriftung identisch sein. In einigen Fällen möchten Sie den Zweck des Steuerelements möglicherweise genauer angeben. Für jedes Feldobjekt in einem Formular können die Barrierefreiheitsoptionen verwendet werden, um anzugeben, wie das Bildschirmlesegerät das entsprechende Formularfeld identifiziert.
 
@@ -171,7 +171,7 @@ Für die Datumsauswahl-Komponente in adaptiven Formularen stehen die folgenden T
 |---|---|
 | <ul><li>Anzeigen der Optionen für die Datumsauswahl-Komponente, wenn der Fokus auf dem Kalendersymbol liegt</li><li>Ausführen des Klick-Ereignisses, wenn der Fokus auf einer Option liegt</li> | Leertaste oder Eingabetaste |
 | Ausblenden der Optionen für die Datumsauswahl-Komponente | Esc |
-| <ul><li>Vorwärtsbewegen des Cursors durch die Optionen, die in der Komponente „Datumsauswahl“ verfügbar sind</li><li>Festlegen des Fokus auf das Kalendersymbol, wenn das Datumseingabefeld aktiv ist</li> | Registerkarte |
+| <ul><li>Vorwärtsbewegen des Cursors durch die Optionen, die in der Komponente „Datumsauswahl“ verfügbar sind</li><li>Festlegen des Fokus auf das Kalendersymbol, wenn das Datumseingabefeld aktiv ist</li> | Tab |
 | Rückwärtsbewegen des Cursors durch die Optionen, die in der Komponente „Datumsauswahl“ verfügbar sind | Umsch+Tab |
 | <ul><li>Anzeigen der Optionen für die Datumsauswahl-Komponente, wenn der Fokus auf dem Eingabefeld für ein Datum liegt</li><li>Abwärtsbewegen des Cursors in dem Kalender, der in der Datumsauswahl-Komponente verfügbar ist</li> | Nach-unten-Taste |
 | Aufwärtsbewegen des Cursors in dem Kalender, der in der Datumsauswahl-Komponente verfügbar ist | Nach-oben-Taste |
