@@ -1,5 +1,5 @@
 ---
-title: Mit Aufgaben arbeiten
+title: Arbeiten mit Aufgaben
 seo-title: Working with tasks
 description: Verwenden Sie die Seite „Aufgabensuche“ für die Suche nach Aufgaben anhand von Benutzername oder Aufgaben-ID. Erfahren Sie mehr über die Arbeit mit Aufgaben.
 seo-description: Use the Task Search page to search for tasks by user name or task ID. Learn more about working with tasks.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
 exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '840'
 ht-degree: 100%
 
 ---
 
-# Mit Aufgaben arbeiten {#working-with-tasks}
+# Arbeiten mit Aufgaben {#working-with-tasks}
 
 Verwenden Sie die Seite „Aufgabensuche“ für die Suche nach Aufgaben anhand von Benutzername oder Aufgaben-ID. Die Suchergebnisse werden auf der Seite „Aufgabenliste“ angezeigt. Hier können Sie den Verlauf von Aufgaben aufrufen. Sie können Aufgaben auch neu zuweisen, z. B., wenn einem Benutzer zu viele Aufgaben zugewiesen wurden oder wenn ein Benutzer eine Aufgabenzuweisung fälschlicherweise erhalten hat.
 
