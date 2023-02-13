@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
 source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -34,11 +34,11 @@ Sie können die Metadaten (Eigenschaften) für das Inhaltsfragment anzeigen und 
    * **Beschreibung**
    * **Tags**
       * [Tags](/help/sites-authoring/tags.md) sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
-Beispielsweise können Sie relevante Fragmente als &quot;Weihnachtsstart&quot;taggen, um nur diese als Teilmenge durchsuchen zu können oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
+Beispielsweise können Sie relevante Fragmente als „Weihnachts-Launch“ taggen, um nur diese als Teilmenge zu durchsuchen oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
       >[!NOTE]
       >
-      >**Tags** kann auch hinzugefügt werden, wenn [Erstellen von Varianteninhalten](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) und wann [Erstellen von Varianten](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation).
+      >**Tags** können auch beim [Erstellen von Varianteninhalten](/help/assets/content-fragments/content-fragments-variations.md#authoring-your-content) und beim [Erstellen von Varianten](/help/assets/content-fragments/content-fragments-variations.md#creating-a-variation) hinzugefügt werden.
 
-   * **Erstellt** (nur Anzeige)
+   * **Erstellt** (nur Anzeigen)
    Beispiel:
    ![Metadaten](assets/cfm-metadata-02.png)
