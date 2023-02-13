@@ -1,5 +1,5 @@
 ---
-title: Den Zeichensatz ändern
+title: Ändern des Zeichensatzes
 seo-title: Change the character set
 description: Sie können den Zeichensatz angeben, mit dem der Ausgabe-Stream kodiert wird. Erfahren Sie, wie Sie den Zeichensatz ändern können.
 seo-description: You can specify the character set used to encode the output stream. Learn how you can change the character set.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 811b31f8-5465-4fb2-b1f9-513936041771
 exl-id: 9ff75d98-54ad-425d-912f-d5a7501bf564
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '130'
 ht-degree: 100%
 
 ---
 
-# Den Zeichensatz ändern {#change-the-character-set}
+# Ändern des Zeichensatzes {#change-the-character-set}
 
 Sie können den Zeichensatz angeben, mit dem der Ausgabe-Stream kodiert wird.
 
