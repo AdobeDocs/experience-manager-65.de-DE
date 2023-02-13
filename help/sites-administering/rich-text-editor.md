@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie den Rich-Text-Editor von Adobe Experience Man
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3020'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +181,7 @@ Ausführliche Konfigurationen des RTE-Plug-ins finden Sie unter [Aktivieren und 
 
 >[!NOTE]
 >
->Die [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) gestattet es Bearbeitern von Vorlagen, viele RTE-Plug-ins in einer grafischen Benutzeroberfläche als Content-Richtlinien zu konfigurieren, sodass keine technische Konfiguration mehr erforderlich ist. Content-Richtlinien können mit RTE-Benutzeroberflächenkonfigurationen verwendet werden, wie in diesem Dokument beschrieben ist.
+>Die [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=de#the-text-component-and-the-rich-text-editor) gestattet es Bearbeitern von Vorlagen, viele RTE-Plug-ins in einer grafischen Benutzeroberfläche als Content-Richtlinien zu konfigurieren, sodass keine technische Konfiguration mehr erforderlich ist. Content-Richtlinien können mit RTE-Benutzeroberflächenkonfigurationen verwendet werden, wie in diesem Dokument beschrieben ist.
 >
 >Weitere Informationen finden Sie im Abschnitt [RTE-Benutzeroberflächeneinstellungen und Inhaltsrichtlinien](/help/sites-administering/rich-text-editor.md) dieses Dokuments sowie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md) und in der [Dokumentation für Entwickler von Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html?lang=de).
 
@@ -259,7 +259,7 @@ Die verfügbaren Optionen im RTE werden von der Benutzeroberflächenkonfiguratio
 * Wenn die Benutzeroberflächenkonfiguration des RTE entfernt oder ein Element nicht aktiviert wird, kann die Content-Richtlinie sie nicht konfigurieren.
 * Ein Autor hat nur auf die Funktionen Zugriff, die durch die Benutzeroberflächen-Konfigurationen und Content-Richtlinien zur Verfügung gestellt werden.
 
-Beispielsweise können Sie die [Dokumentation zur Text-Kernkomponente](https://docs.adobe.com/help/de-DE/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) sehen.
+Beispielsweise können Sie die [Dokumentation zur Text-Kernkomponente](https://docs.adobe.com/help/de/experience-manager-core-components/using/components/text.html#the-text-component-and-the-rich-text-editor) sehen.
 
 ## Anpassen der Zuordnung zwischen Symbolleistenelementen und Befehlen {#iconstoolbar}
 
@@ -323,11 +323,11 @@ Sie können auf einer Seite entweder die CoralUI 2-RTE-Client-Bibliothek oder d
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen zum Konfigurieren des RTE finden Sie im [AEM Widget API](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText)-Referenzhandbuch.
+Weitere Informationen zum Konfigurieren des RTE finden Sie im [AEM Widget API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText)-Referenzhandbuch.
 
 Wenn Sie vor allem die verfügbaren Plug-ins und zugehörigen Optionen sehen wollen:
 
-* Die [CQ.form.RichText](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)-Komponente stellt ein Formularfeld zum Bearbeiten von formatierten Textinformationen zur Verfügung (Rich Text). Informationen zu allen verfügbaren Parametern für das Rich-Text-Formular finden Sie in den Konfigurationsoptionen.
+* Die [CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin)-Komponente stellt ein Formularfeld zum Bearbeiten von formatierten Textinformationen zur Verfügung (Rich Text). Informationen zu allen verfügbaren Parametern für das Rich-Text-Formular finden Sie in den Konfigurationsoptionen.
 * Die RichText-Komponente bietet zahlreiche Funktionen mithilfe der Plug-ins, die unter [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin) aufgeführt sind. Für jedes Plug-in gilt dabei Folgendes:
 
    * Weitere Informationen zu den Funktionen, die aktiviert (oder deaktiviert) werden können, finden Sie unter „Funktionen“.
