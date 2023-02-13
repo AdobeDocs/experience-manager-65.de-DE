@@ -1,5 +1,5 @@
 ---
-title: Gültige und abgelaufene Zertifikate in PDF-Dokumenten erkennen
+title: Erkennen von gültigen und abgelaufenen Zertifikaten in PDF-Dokumenten
 seo-title: Recognizing valid and expired certificates in PDF documents
 description: Erfahren Sie, wie Sie gültige und abgelaufene Zertifikate in PDF-Dokumenten erkennen.
 seo-description: Learn how to recognize valid and expired certificates in PDF documents.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4559218a-65ba-4577-ad26-7721e28971bc
 exl-id: dfe2823a-3a0d-4e45-8765-f618529e22dd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '198'
 ht-degree: 100%
 
 ---
 
-# Gültige und abgelaufene Zertifikate in PDF-Dokumenten erkennen {#recognizing-valid-and-expired-certificates-in-pdf-documents}
+# Erkennen von gültigen und abgelaufenen Zertifikaten in PDF-Dokumenten {#recognizing-valid-and-expired-certificates-in-pdf-documents}
 
 Wird ein PDF-Dokument, dem über Reader Extensions Verwendungsrechte zugewiesen wurden, in Adobe Reader geöffnet, wird eine Statusleiste mit den spezifischen Verwendungsrechten angezeigt, die im PDF-Dokument aktiviert sind.
 
