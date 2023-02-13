@@ -11,9 +11,9 @@ docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2477'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -228,7 +228,7 @@ Optional können Sie auch auf der Registerkarte „Erweitert“ die gewünschten
 
 ![textbackgroundcolor-2](assets/textbackgroundcolor-2.png)
 
-### Formatierten Text einfügen {#paste}
+### Einfügen von formatiertem Text {#paste}
 
 Um einen anderen Textabsatz wiederzuverwenden, der in einer anderen Anwendung, z. B. auf Microsoft® Word oder HTML-Seiten vorhanden ist, kopieren Sie den Text in den Texteditor. Die Formatierung des kopierten Textes wird im Texteditor beibehalten.
 
@@ -250,7 +250,7 @@ Fügen Sie ggf. Sonderzeichen in das Dokumentfragment ein. Beispielsweise könne
 
 * Währungssymbole wie €,￥ und £
 * Mathematische Symbole wie ∑, √, ∂ und ^
-* Satzzeichen wie ‟ und &quot;
+* Satzzeichen wie „ und “
 
 ![specialcharacters-2](assets/specialcharacters-2.png)
 
