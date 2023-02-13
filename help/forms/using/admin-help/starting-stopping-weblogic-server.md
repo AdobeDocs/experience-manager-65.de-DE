@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '601'
 ht-degree: 100%
 
@@ -64,7 +64,7 @@ In mehreren Verfahren müssen Sie die Instanz von WebLogic Server, auf der Sie A
 
 1. Starten Sie WebLogic Server Administration-Console, indem Sie in die URL-Zeile eines Webbrowsers `https://[host name]:7001/console` eingeben.
 1. Melden Sie sich an, indem Sie den Benutzernamen und das Kennwort für diese WebLogic-Konfiguration eingeben und auf „Log In“ klicken.
-1. Klicken Sie unter „Change Center“ auf Lock &amp; Edit.
+1. Klicken Sie im Change Center auf „Sperren und bearbeiten“.
 1. Klicken Sie im Bereich „Domain Structure“ auf „Environment“ > „Servers“.
 1. Klicken Sie auf „AdminServer“ und dann im Bereich „Settings for AdminServer“ auf die Registerkarte „Control“.
 1. Stellen Sie sicher, dass „AdminServer“ in der Tabelle „Server Status“ ausgewählt ist, und klicken Sie auf „Shutdown“.
