@@ -8,7 +8,7 @@ user-guide-description: In diesem Handbuch werden die Authoring-Konzepte in AEM 
 feature: Authoring
 role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '264'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ ht-degree: 100%
 + Personalisierung {#personalization}
    + [Grundlegendes zur Segmentierung](classic-personalization-campaigns-segmentation.md)
    + [Kampagnenmanagement](classic-personalization-campaigns.md)
-   + [Landing Pages](classic-personalization-campaigns-landingpage.md)
+   + [Landing-Pages](classic-personalization-campaigns-landingpage.md)
    + [Adobe Target-Angebote](classic-personalization-campaigns-target-offers.md)
    + [E-Mail-Marketing](classic-personalization-campaigns-email.md)
    + [Nachverfolgen nicht zugestellter E-Mails](classic-personalization-campaigns-email-tracking-bounces.md)
