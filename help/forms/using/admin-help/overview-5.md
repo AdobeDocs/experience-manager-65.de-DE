@@ -13,7 +13,7 @@ docset: aem65
 feature: PDF Generator
 exl-id: 08e2381e-c7e8-4690-9cbf-6934064a04f8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '134'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 # Einführung in das Arbeiten mit PDF Generator {#introduction-to-working-with-pdf-generator}
 
-PDF Generator konvertiert Dateien mit unterschiedlichen Formaten in PDF-Dateien. Es kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren. Eine Liste der unterstützten Dateiformate finden Sie unter [Software-Unterstützung für PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
+PDF Generator konvertiert Dateien mit unterschiedlichen Formaten in PDF-Dateien. Er kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren. Eine Liste der unterstützten Dateiformate finden Sie unter [Software-Unterstützung für PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
 **Dateien zur Verarbeitung in PDF Generator senden**
 
