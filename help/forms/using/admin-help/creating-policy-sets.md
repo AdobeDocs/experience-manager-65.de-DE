@@ -1,5 +1,5 @@
 ---
-title: Richtliniensätzen erstellen und verwalten
+title: Erstellen und Verwalten von Richtliniensätzen
 seo-title: Creating and managing policy sets
 description: Richtliniensätze dienen zum Gruppieren von Richtlinien mit einem gemeinsamen Zweck. Sie können Richtlinien in einem Richtliniensatz erstellen, bearbeiten und löschen.
 seo-description: Policy sets are used to group policies that have a common business purpose. You can create, edit and delete policies in a policy set.
@@ -12,13 +12,13 @@ discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1295'
 ht-degree: 100%
 
 ---
 
-# Richtliniensätzen erstellen und verwalten {#creating-and-managing-policy-sets}
+# Erstellen und Verwalten von Richtliniensätzen {#creating-and-managing-policy-sets}
 
 Richtliniensätze dienen zum Gruppieren von Richtlinien mit einem gemeinsamen Zweck. Richtliniensätze können einer Untermenge der Benutzer im System zur Verfügung gestellt werden.
 
@@ -44,7 +44,7 @@ Beim Erstellen von Richtliniensätzen weisen Sie Benutzern die Rolle des Dokumen
 
 Bei der Installation von Document Security wird standardmäßig ein so genannter *globaler Richtliniensatz* erstellt. Dieser Richtliniensatz wird von dem Administrator, der die Software installiert hat, oder dem für diesen Richtliniensatz festgelegten Richtliniensatzkoordinator verwaltet.
 
-## Erstellen Sie einen Richtliniensatz {#create-a-policy-set}
+## Erstellen eines Richtliniensatzes {#create-a-policy-set}
 
 Der Richtliniensatz „Global“ ist der einzige Standardrichtliniensatz, der bei der Installation erstellt wird. Sie können weitere Richtliniensätze erstellen und dabei Richtlinien, Benutzer, Richtliniensatzkoordinatoren und Dokumentherausgeber hinzufügen. Nach Erstellen eines Richtliniensatzes können Sie Richtlinien im Satz erstellen.
 
