@@ -12,7 +12,7 @@ discoiquuid: 56849775-3ac7-44a2-ab17-a707b001470e
 docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '362'
 ht-degree: 100%
 
@@ -426,7 +426,7 @@ In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten 
      limitations under the License.
 ```
 
-## Gleichzeitig {#concurrent}
+## Concurrent {#concurrent}
 
 ```xml
      All classes are released to the public domain and may be used for any
