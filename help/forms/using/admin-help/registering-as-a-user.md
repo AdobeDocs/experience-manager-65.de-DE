@@ -1,5 +1,5 @@
 ---
-title: Benutzer registrieren
+title: Registrieren als Benutzer
 seo-title: Registering as a User
 description: Sie können richtliniengeschützte Dokumente, die Sie von einem Document Security-Benutzer erhalten, verwenden, selbst wenn Sie nicht zur Firma dieses Benutzers gehören.
 seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
@@ -11,13 +11,13 @@ discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '700'
 ht-degree: 100%
 
 ---
 
-# Benutzer registrieren {#registering-as-a-user}
+# Registrieren als Benutzer {#registering-as-a-user}
 
 Sie können richtliniengeschützte Dokumente, die Sie von einem Document Security-Benutzer erhalten, verwenden, selbst wenn Sie nicht zur Firma dieses Benutzers gehören. Für die Verwendung richtliniengeschützter Dokumente ist die Registrierung bei Document Security erforderlich. Falls Sie noch nicht zur Registrierung eingeladen wurden, startet Document Security den Registrierungsprozess, wenn folgende Ereignisse eintreten:
 
