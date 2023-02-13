@@ -12,9 +12,9 @@ discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
 source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3505'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Für jedes Formularfeld, das vorab ausgefüllt werden soll, muss ein XML-Element
 
 Wenn Sie ein Formular vorab ausfüllen, das bereits Daten enthält, müssen Sie die Daten angeben, die bereits in der XML-Datenquelle angezeigt werden. Angenommen, ein Formular mit 10 Feldern enthält in vier Feldern Daten. Nehmen wir weiter an, dass Sie die restlichen sechs Felder vorab ausfüllen möchten. In diesem Fall müssen Sie in der XML-Datenquelle, die zum Vorausfüllen des Formulars verwendet wird, 10 XML-Elemente angeben. Wenn Sie nur sechs Elemente angeben, sind die ursprünglichen vier Felder leer.
 
-Sie können beispielsweise ein Formular wie das Beispielbestätigungsformular im Vorhinein ausfüllen. (Siehe &quot;Bestätigungsformular&quot;in [Rendern interaktiver PDF forms](/help/forms/developing/rendering-interactive-pdf-forms.md).
+Sie können beispielsweise ein Formular wie das Beispielbestätigungsformular im Vorhinein ausfüllen. (Siehe „Bestätigungsformular“ in [Rendern interaktiver PDF-Formulare](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 
 Um das Beispielbestätigungsformular im Voraus auszufüllen, müssen Sie eine XML-Datenquelle mit drei XML-Elementen erstellen, die den drei Feldern im Formular entsprechen. Dieses Formular enthält die folgenden drei Felder: `FirstName`, `LastName` und `Amount`. Der erste Schritt besteht in der Erstellung einer XML-Datenquelle, die XML-Elemente enthält, die den Feldern im Formularentwurf entsprechen. Der nächste Schritt besteht darin, den XML-Elementen Datenwerte zuzuweisen, wie im folgenden XML-Code dargestellt.
 
