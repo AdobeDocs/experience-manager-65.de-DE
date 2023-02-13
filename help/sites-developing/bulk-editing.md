@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren Sie Ihre Seite für die Massenbearbeitung von Seiteneigenschaften
+title: Konfigurieren Ihrer Seite für die Massenbearbeitung von Seiteneigenschaften
 seo-title: Configuring your Page for Bulk Editing of Page Properties
 description: Durch die Massenbearbeitung von Seiteneigenschaften können Sie die Eigenschaften mehrerer Seiten gleichzeitig bearbeiten
 seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
 ht-degree: 100%
 
 ---
 
-# Konfigurieren Sie Ihre Seite für die Massenbearbeitung von Seiteneigenschaften {#configuring-your-page-for-bulk-editing-of-page-properties}
+# Konfigurieren Ihrer Seite für die Massenbearbeitung von Seiteneigenschaften {#configuring-your-page-for-bulk-editing-of-page-properties}
 
 Durch die [Massenbearbeitung von Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md#from-the-sites-console-multiple-pages) können Sie die Eigenschaften mehrerer Seiten gleichzeitig bearbeiten.
 
