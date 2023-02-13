@@ -1,7 +1,7 @@
 ---
 title: Einführung in HTML5-Formulare
 seo-title: Introduction to HTML5 forms
-description: '„HTML5-Formulare“ ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die das Anzeigen von XFA-Formularvorlagen im HTML5-Format ermöglicht. '
+description: „HTML5-Formulare“ ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die das Anzeigen von XFA-Formularvorlagen im HTML5-Format ermöglicht.
 seo-description: HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AEM 6.0) software that offers rendering of XFA form templates in HTML5 format.
 uuid: 63a2f000-c4c5-40e8-ab3f-c7c44c79ec09
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,7 +11,7 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '414'
 ht-degree: 100%
 
