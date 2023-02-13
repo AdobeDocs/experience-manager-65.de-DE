@@ -12,9 +12,9 @@ discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '403'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -25,10 +25,10 @@ In diesem Abschnitt finden Sie einen Überblick über die wichtigsten Funktionen
 Er deckt folgende Themen ab:
 
 * [Erste Schritte](#getting-started)\
-   Details zur grundlegenden Ereignisabfolge, die Sie zum Erstellen und Veröffentlichen Ihrer ersten Seite benötigen.
+   Details zur grundlegenden Ereignisabfolge, die Sie für das Erstellen und Veröffentlichen Ihrer ersten Seite benötigen.
 
 * [Weitere Aktionen](#further-actions)\
-   Im Anschluss an die vielen anderen Aktionen, die Sie beim Authoring verwenden können.
+   Viele weitere Aktionen, die Sie bei der Bearbeitung von Inhalten verwenden können.
 
 ## Erste Schritte {#getting-started}
 
