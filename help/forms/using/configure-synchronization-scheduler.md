@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren des Synchronisierungs-Scheduler
+title: Konfigurieren der Synchronisierungsplanung
 seo-title: Configuring the synchronization scheduler
 description: Erfahren Sie mehr dazu, wie Sie Elemente migrieren und synchronisieren, Synchronisierungs-Scheduler konfigurieren und Ordner zum Anordnen von Elementen verwenden können.
 seo-description: Learn how to migrate and sync assets, configure sync scheduler, and use folders to arrange assets.
@@ -12,13 +12,13 @@ docset: aem65
 role: Admin
 exl-id: 34db1f76-ee40-4612-85da-22041e7560fb
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '286'
 ht-degree: 100%
 
 ---
 
-# Konfigurieren des Synchronisierungs-Scheduler {#configuring-the-synchronization-scheduler}
+# Konfigurieren der Synchronisierungsplanung {#configuring-the-synchronization-scheduler}
 
 Standardmäßig wird der Synchronisierungs-Scheduler alle 3 Minuten ausgeführt, um alle geänderten und aktualisierten Elemente im Repository über LiveCycle Workbench 11 zu synchronisieren. Anwendungen, die Formulare und Ressourcen enthalten, sind in der AEM Forms-Benutzeroberfläche sichtbar, sobald der Synchronisierungsprozess abgeschlossen ist.
 
