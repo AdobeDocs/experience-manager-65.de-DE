@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierter Speicher für Komponenten „Drafts and Submissions (Entwurf und Übermittlung)“
+title: Benutzerdefinierter Speicher für die Komponente „Entwürfe und Sendungen“
 seo-title: Custom storage for drafts and submissions component
 description: Erfahren Sie, wie Sie die Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen können.
 seo-description: See how to customize the storage of user data for drafts and submissions.
@@ -11,7 +11,7 @@ discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '335'
 ht-degree: 100%
 
@@ -103,7 +103,7 @@ public interface DraftDataService {
 
 ## Übermittlungsdatendienst {#submission-data-service}
 
-Um das Speichern der Benutzerdaten für Übermittlungen anzupassen, müssen Sie alle Methoden der `SubmitDataService`-Schnittstelle implementieren. Im Folgenden Beispielcode werden die Methoden und die Argumente beschrieben.
+Um das Speichern der Benutzerdaten für Übermittlungen anzupassen, müssen Sie alle Methoden der `SubmitDataService`-Schnittstelle implementieren. Im Folgenden Beispiel-Code werden die Methoden und die Argumente beschrieben.
 
 ```java
 /**
