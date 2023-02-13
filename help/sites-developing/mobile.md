@@ -13,7 +13,7 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3840'
 ht-degree: 100%
 
@@ -105,7 +105,7 @@ Die **We.Retail Mobile-Demo-Website** verwendet die folgenden Mobile-Komponenten
   </tr>
   <tr>
    <td>mobilelogo</td>
-   <td>ausgeblendet</td>
+   <td>hidden</td>
    <td>- basierend auf der „logo foundation“-Komponente<br /> – rendert ein Bild, wenn das Gerät dazu imstande ist<br /> </td>
   </tr>
   <tr>
@@ -120,7 +120,7 @@ Die **We.Retail Mobile-Demo-Website** verwendet die folgenden Mobile-Komponenten
   </tr>
   <tr>
    <td>mobiletopnav</td>
-   <td>ausgeblendet</td>
+   <td>hidden</td>
    <td><p>- basierend auf der „topnav foundation“-Komponente</p> <p>- nur Text wird gerendert</p> </td>
   </tr>
  </tbody>
