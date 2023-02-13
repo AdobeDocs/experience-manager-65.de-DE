@@ -11,9 +11,9 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
 source-git-commit: 02fc145d5ec1458d1f71a2f353b56b944a267f3e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '694'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -71,7 +71,7 @@ Neu in AEM ist der [Musterdetektor](/help/sites-deploying/pattern-detector.md), 
 Einzelheiten zu weiteren Änderungen in den neuen AEM-Versionen finden Sie in den vollständigen Versionshinweisen:
 
 * [Allgemeine Versionshinweise zu Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/release-notes.html?lang=de)
-* [Versionshinweise zum Adobe Experience Manager 6.5 neuesten Service Pack](/help/release-notes/release-notes.md)
+* [Versionshinweise zum neuesten Service Pack von Adobe Experience Manager 6.5](/help/release-notes/release-notes.md)
 
 ## Überblick über das Upgrade {#upgrade-overview}
 
