@@ -1,5 +1,5 @@
 ---
-title: Texteditor anpassen
+title: Anpassen des Texteditors
 seo-title: Customize text editor
 description: Erfahren Sie, wie Sie den Texteditor anpassen.
 seo-description: Learn how to customize text editor.
@@ -12,7 +12,7 @@ docset: aem65
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '605'
 ht-degree: 100%
 
@@ -36,7 +36,7 @@ Wenn Sie so verfahren, müssen Sie folgende Schritte durchführen:
 1. [Anpassen von Schriftarten, indem Sie die Datei „tbxeditor-config.xml“ in CRX bearbeiten ](#customizefonts)
 1. [Fügen Sie dem Clientcomputer benutzerdefinierte Schriftarten hinzu](#addcustomfonts)
 
-## Anpassen von Schriftarten, indem Sie die Datei „tbxeditor-config.xml“ in CRX bearbeiten  {#customizefonts}
+## Anpassen von Schriftarten durch Bearbeiten der Datei „tbxeditor-config.xml“ in CRX {#customizefonts}
 
 Anpassen von Schriften durch Bearbeiten der Datei  tbxeditor-config.xml führen Sie folgende Schritte durch:
 
@@ -175,7 +175,7 @@ Anpassen von Schriften durch Bearbeiten der Datei  tbxeditor-config.xml führen 
    1. Klicken Sie auf **Alle speichern**.
 
 
-## Fügen Sie dem Clientcomputer benutzerdefinierte Schriftarten hinzu {#addcustomfonts}
+## Fügen Sie dem Client-Computer benutzerdefinierte Schriftarten hinzu {#addcustomfonts}
 
 Wenn Sie auf eine Schriftart im Correspondence Management-Texteditor zugreifen, muss sie auf dem Client-Computer vorhanden sein, den Sie für den Zugriff auf Correspondence Management verwenden. Um eine benutzerdefinierte Schriftart im Texteditor verwenden zu können, müssen Sie diese zunächst auf dem Clientcomputer installieren.
 
