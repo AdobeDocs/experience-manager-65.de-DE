@@ -1,5 +1,5 @@
 ---
-title: FOIA-Anleitung zur We.Gov-Referenzwebsite
+title: FOIA-Anleitung zur Referenz-Website von We.Gov
 seo-title: We.Gov reference site FOIA walkthrough
 description: Mithilfe der Anleitung für die We.Gov-Referenzwebsite lernen Sie, wie AEM Forms Behörden dabei hilft, Informationen zu erhalten und auf Antrag gemäß des Freedom of Information Act an Einzelne herauszugeben.
 seo-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments receive and impart information requested by individuals under the Freedom of Information Act.
@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cef8f597-7935-4d98-aacf-9981470ab620
 exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '834'
 ht-degree: 100%
 
