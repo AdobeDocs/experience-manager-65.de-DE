@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
 exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '676'
 ht-degree: 100%
 
@@ -89,7 +89,7 @@ Sie können nach Abschluss der Installation von AEM Forms den Speicherort des gl
 1. Geben Sie in das Feld „Ordner des globalen Dokumentenspeichers“ den vollständigen Pfad des neuen Ordners des globalen Dokumentenspeichers ein und klicken Sie auf OK.
 1. Fahren Sie sofort den Anwendungsserver herunter.
 1. Verschieben Sie alle Dateien aus dem alten Ordner des globalen Dokumentenspeichers unter Beibehaltung der internen Ordnerstruktur an den neuen Speicherort.
-1. Starten Sie den Anwendungsserver neu.
+1. Starten Sie den Anwendungs-Server neu.
 
 ## Informationen zu Bereitstellungsdateien {#about-deployment-files}
 
