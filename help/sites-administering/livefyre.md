@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 exl-id: 6327b571-4c7f-4a5e-ba93-45d0a064aa1f
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -38,7 +38,7 @@ In AEM 6.5 ist das Livefyre-Feature Pack 1.2.6 vorinstalliert. Dieses Paket bein
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Laden Sie das Livefyre-Paket von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html) herunter.
+1. Laden Sie das Livefyre-Paket von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) herunter.
 
 1. Installieren Sie im Package Manager das heruntergeladene Paket. Weitere Informationen zur Verwendung von Software Distribution und Paketen in AEM finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 
@@ -141,7 +141,7 @@ Sie können benutzergenerierten Twitter- und Instagram-Inhalt mit dem Importtool
 
 >[!NOTE]
 >
->Bevor Sie mit Assets benutzergenerierten Inhalt importieren können, müssen Sie in Livefyre Studio Konten für Social Media und zur Anforderung von Rechten einrichten. Weitere Informationen finden Sie unter [Einrichten: Anforderungen von Rechten](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html).
+>Bevor Sie mit Assets benutzergenerierten Inhalt importieren können, müssen Sie in Livefyre Studio Konten für Social Media und zur Anforderung von Rechten einrichten. Weitere Informationen finden Sie unter [Einrichten: Anforderungen von Rechten](https://experienceleague.adobe.com/docs/livefyre/using/rights-requests/c-how-requesting-rights-works.html?lang=de).
 
 So importieren Sie benutzergenerierten Inhalt in AEM Assets:
 
