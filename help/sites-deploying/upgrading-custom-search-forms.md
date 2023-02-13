@@ -12,7 +12,7 @@ discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1685'
 ht-degree: 100%
 
@@ -42,7 +42,7 @@ Sie können die Eigenschaft ändern, indem Sie folgende Schritte ausführen:
 
 1. Öffnen von CRXDE Lite über `https://server:port/crx/de/index.jsp`
 1. Navigieren Sie zum Speicherort des Knotens, der angepasst werden muss, wie in der Liste mit [benutzerdefinierten Suchformularen](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) unten angegeben.
-1. Klicken Sie auf den Knoten . Klicken Sie im rechten Eigenschaftenfenster auf die Eigenschaft **sling:resourceType** und ändern Sie diese.
+1. Klicken Sie auf den Knoten. Klicken Sie im rechten Eigenschaftenfenster auf die Eigenschaft **sling:resourceType** und ändern Sie diese.
 1. Speichern Sie dann die Änderungen und klicken Sie auf die Schaltfläche **Alle speichern**.
 
 ## Liste der benutzerdefinierten Suchformulare {#list-of-custom-search-forms}
@@ -120,7 +120,7 @@ In AEM 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. 
  <tbody>
   <tr>
    <td>Knoten im Standard-Suchformular in 6.1<br /> <br /> </td>
-   <td>tags</td>
+   <td>Tags</td>
   </tr>
   <tr>
    <td><p>Ressourcentyp in 6.1</p> </td>
@@ -379,7 +379,7 @@ In 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. In V
 
 **Aktion:** Entfernen Sie den oben genannten Knoten.
 
-### Pfadbrowser-Eigenschaften {#path-browser-predicates-1}
+### Pfad-Browser-Eigenschaften {#path-browser-predicates-1}
 
 | Knoten im Standard-Suchformular in 6.1 | pathbrowser |
 |---|---|
