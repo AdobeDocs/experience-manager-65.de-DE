@@ -1,5 +1,5 @@
 ---
-title: Wasserzeichen in der PDF-Briefvorschau
+title: Benutzerdefiniertes Wasserzeichen in der PDF-Briefvorschau
 seo-title: Custom watermark in letter PDF preview
 description: Erfahren Sie, wie Sie benutzerdefinierte Wasserzeichen in der PDF-Briefvorschau erstellen.
 seo-description: Learn how to create custom watermark in letter PDF preview.
@@ -12,13 +12,13 @@ docset: aem65
 feature: Correspondence Management
 exl-id: 7d90fade-1ca4-41d8-bbf9-45490465784a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
 ht-degree: 100%
 
 ---
 
-# Wasserzeichen in der PDF-Briefvorschau{#custom-watermark-in-letter-pdf-preview}
+# Benutzerdefiniertes Wasserzeichen in der PDF-Briefvorschau{#custom-watermark-in-letter-pdf-preview}
 
 ## Übersicht {#overview}
 
