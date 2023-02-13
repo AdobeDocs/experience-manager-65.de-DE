@@ -8,9 +8,9 @@ content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1341'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -178,7 +178,7 @@ Es wird empfohlen, das Produktionssystem zu klonen und den Offline-Index mithilf
 
 ### Vorbereiten eines Runbooks und Testlauf {#prepare-a-runbook-and-trial-run}
 
-Es wird empfohlen, ein [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html#building-the-upgrade-and-rollback-runbook) vorzubereiten und einige Testläufe durchzuführen, bevor das Upgrade in der Produktion ausgeführt wird.
+Es wird empfohlen, ein [Runbook](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/upgrading/upgrade-planning.html?lang=de#building-the-upgrade-and-rollback-runbook) vorzubereiten und einige Testläufe durchzuführen, bevor das Upgrade in der Produktion ausgeführt wird.
 
 ### doc-traversal-mode mit Offline-Indizierung {#doc-traversal-mode-with-offline-indexing}
 
