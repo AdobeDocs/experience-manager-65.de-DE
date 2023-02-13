@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '861'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -166,6 +166,6 @@ Je nach verfügbarem Platz werden die Komponenten-Symbolleisten in der oberen od
 
 ## Weiterführende Informationen {#further-information}
 
-Weitere Informationen zu den Konzepten der Touch-optimierten Benutzeroberfläche finden Sie im Artikel [Konzepte der AEM Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md).
+Weitere Informationen zu den Konzepten der Touch-optimierten Benutzeroberfläche finden Sie im Artikel [Konzepte der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-concepts.md).
 
-Weitere technische Informationen finden Sie unter [JS-Dokumentationssatz](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) für den Touch-optimierten Seiteneditor.
+Weitere technische Informationen finden Sie im [JS-Dokumentationssatz](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) für den Touch-optimierten Seiteneditor.
