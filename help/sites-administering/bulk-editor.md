@@ -12,9 +12,9 @@ discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1143'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ Der Bulk Editor ermöglicht eine äußerst effiziente Bearbeitung, wenn der visu
 * Inhalte von mehreren Seiten suchen (und anzeigen); dazu wird GQL (Google Query Language) genutzt
 * diese Inhalte direkt im Bulk Editor bearbeiten
 * die Änderungen speichern (in den Originalseiten)
-* diese Inhalte in eine TSV-Datei exportieren
+* diese Inhalte in eine tabulatorgetrennte Tabellendatei (.tsv) exportieren
 
 >[!NOTE]
 >
@@ -77,15 +77,15 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
   </tr>
   <tr>
    <td>Stammverzeichnis</td>
-   <td>Gibt den Stammpfad an, den der Bulk Editor durchsucht.<br /> Beispiel, <code>/content/geometrixx/en</code>. Der Bulk Editor durchsucht alle untergeordneten Knoten.</td>
+   <td>Gibt das Stammverzeichnis an, das der Bulk Editor durchsucht.<br /> Beispiel, <code>/content/geometrixx/en</code>. Der Bulk Editor durchsucht alle untergeordneten Knoten.</td>
   </tr>
   <tr>
-   <td>Abfrage-Parameter</td>
-   <td>Geben Sie mithilfe von GQL-Parametern die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll. Beispiel: <code>type:Page</code> sucht nach allen Seiten im Stammpfad, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td>
+   <td>Abfrageparameter</td>
+   <td>Geben Sie mithilfe von GQL-Parametern die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll. Beispiel: Mit <code>type:Page</code> wird nach allen Seiten im Stammverzeichnis gesucht, mit <code>text:professional</code> wird nach allen Seiten gesucht, die das Wort „professional“ enthalten, und mit <code>"jcr:title":English</code> wird nach allen Seiten, die „English“ als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td>
   </tr>
   <tr>
-   <td>Kontrollkästchen "Inhaltsmodus"</td>
-   <td>Aktivieren Sie dieses Kontrollkästchen, um die Eigenschaften in <code>jcr:content</code> untergeordneten Knoten der Suchergebnisse, sofern vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td>
+   <td>Kontrollkästchen „Inhaltsmodus“</td>
+   <td>Aktivieren Sie dieses Kontrollkästchen, um die Eigenschaften im Unterknoten <code>jcr:content</code> der Suchergebnisse zu lesen, sofern vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Eigenschaften/Spalten</td>
@@ -93,7 +93,7 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
   </tr>
   <tr>
    <td>Benutzerdefinierte Eigenschaften/Spalten</td>
-   <td>Geben Sie alle anderen Eigenschaften ein, die nicht im <strong>Eigenschaften/Spalten</strong> -Feld. Diese benutzerdefinierten Eigenschaften werden im Ergebnisbereich angezeigt. Sie können mehrere Eigenschaften hinzufügen, indem Sie sie mit Kommas voneinander trennen. <i>Hinweis:</i> Wenn Sie eine benutzerdefinierte Eigenschaft hinzufügen, die noch nicht vorhanden ist, zeigt AEM WCM eine leere Zelle an. Wenn Sie die leere Zelle bearbeiten und speichern, wird die Eigenschaft zum Knoten hinzugefügt. Die neu erstellte Eigenschaft muss die Einschränkungen des Knotentyps und Eigenschafts-Namespaces einhalten.</td>
+   <td>Geben Sie alle anderen Eigenschaften ein, die nicht im Feld <strong>Eigenschaften/Spalten</strong> aufgeführt sind. Diese benutzerdefinierten Eigenschaften werden im Ergebnisbereich angezeigt. Sie können mehrere Eigenschaften hinzufügen, indem Sie sie mit Kommas voneinander trennen. <i>Hinweis:</i> Wenn Sie eine benutzerdefinierte Eigenschaft hinzufügen, die noch nicht vorhanden ist, zeigt AEM WCM eine leere Zelle an. Wenn Sie die leere Zelle bearbeiten und speichern, wird die Eigenschaft zum Knoten hinzugefügt. Die neu erstellte Eigenschaft muss die Einschränkungen des Knotentyps und Eigenschafts-Namespaces einhalten.</td>
   </tr>
  </tbody>
 </table>
@@ -111,7 +111,7 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 
    ![](assets/srchresultedit.png)
 
-1. Klicken Sie auf **Speichern**, um die Änderungen zu speichern. (Die Schaltfläche **Speichern** wird aktiviert, sobald Sie eine Zelle bearbeitet haben).
+1. Klicken Sie auf **Speichern**, um die Änderungen zu speichern. (Die Schaltfläche **Speichern** wird aktiviert, sobald Sie eine Zelle bearbeitet haben.)
 
    >[!CAUTION]
    >
@@ -119,10 +119,10 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 
 #### Weitere GQL-Abfrageparameter {#additional-gql-query-parameters}
 
-* **path:** Suchknoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix festlegen, wird nur der letzte berücksichtigt.
-* **Typ:** gibt nur Knoten der angegebenen Knotentypen zurück. Das schließt primäre und Mixin-Typen ein. Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen. GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
-* **order:** ordnen Sie das Ergebnis anhand der angegebenen Eigenschaften an. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen. Um das Ergebnis in absteigender Reihenfolge zu sortieren, stellen Sie dem Eigenschaftsnamen ein Minuszeichen voran. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
-* **limit:** begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20 Bitte beachten Sie, dass das Intervall auf null basiert, der Beginn inklusiv ist und das Ende exklusiv ist. Sie können auch ein Öffnungsintervall angeben:limit:10. oder limit:..20 Wenn die Punkte weggelassen werden und nur ein Wert angegeben ist, gibt GQL höchstens diese Anzahl an Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten 10 Ergebnisse zurück)
+* **path:** Durchsucht nur Knoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix festlegen, wird nur der letzte berücksichtigt.
+* **type:** Gibt nur Knoten der angegebenen Knotentypen zurück. Das schließt primäre und Mixin-Typen ein. Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen. GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
+* **order:** Sortiert das Ergebnis nach den bestimmten Eigenschaften. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen. Um das Ergebnis in absteigender Reihenfolge zu sortieren, stellen Sie dem Eigenschaftsnamen ein Minuszeichen voran. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
+* **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20 – Beachten Sie, dass das Intervall auf 0 basiert. Der Startwert wird ein-, der Endwert ausgeschlossen. Sie können auch ein offenes Intervall festlegen: :limit:10.. oder limit:..20. Wenn Sie die Punkte weglassen und nur einen Wert angeben, gibt GQL höchstens diese Anzahl an Ergebnissen zurück. Beispiel: limit:10 (Gibt die ersten zehn Ergebnisse zurück.)
 
 ### Exportieren von Inhalten {#exporting-content}
 
@@ -135,7 +135,7 @@ So exportieren Sie Inhalte:
 
    >[!NOTE]
    >
-   >Standardmäßig sind die Änderungen in [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (auch als CP-1252 bekannt) kodiert. Sie könnten UTF-8 auswählen, um die Änderungen in UTF-8 zu exportieren.
+   >Standardmäßig sind die Änderungen in [Windows-1252](https://de.wikipedia.org/wiki/Windows-1252) (auch als CP-1252 bekannt) kodiert. Sie könnten UTF-8 auswählen, um die Änderungen in UTF-8 zu exportieren.
 
    ![](assets/srchrsesultexport.png)
 
@@ -146,7 +146,7 @@ So exportieren Sie Inhalte:
 
 ### Importieren von Inhalten {#importing-content}
 
-Standardmäßig ist die Importfunktion ausgeblendet, wenn Sie den Bulk Editor öffnen. Wenn Sie den Parameter `hib=false` zur URL hinzufügen, wird die Schaltfläche **Importieren** auf der Bulk Editor-Seite angezeigt. Sie können Inhalte aus einem beliebigen Tabulator ( `.tsv`). Damit der Importvorgang ordnungsgemäß funktioniert, müssen die Spaltenüberschriften (die erste Reihe an Zellen) mit den Spaltenüberschriften der zu importierenden Tabelle übereinstimmen.
+Standardmäßig ist die Importfunktion ausgeblendet, wenn Sie den Bulk Editor öffnen. Wenn Sie den Parameter `hib=false` zur URL hinzufügen, wird die Schaltfläche **Importieren** auf der Bulk Editor-Seite angezeigt. Sie können Inhalte aus jeder tabulatorgetrennten Datei (`.tsv`) importieren. Damit der Importvorgang ordnungsgemäß funktioniert, müssen die Spaltenüberschriften (die erste Reihe an Zellen) mit den Spaltenüberschriften der zu importierenden Tabelle übereinstimmen.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ Standardmäßig ist die Importfunktion ausgeblendet, wenn Sie den Bulk Editor ö
 So importieren Sie Inhalte:
 
 1. Öffnen Sie den Bulk Editor.
-1. Hinzufügen `?hib=false` zur URL, z. B.:
+1. Fügen Sie `?hib=false` zur URL hinzu, z. B.:
    `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
-1. Wählen Sie **Importieren**.
-1. Wählen Sie die `.tsv` -Datei. Die Daten werden in das Repository importiert.
+1. Wählen Sie **Importieren** aus.
+1. Wählen Sie die `.tsv`-Datei aus. Die Daten werden in das Repository importiert.
