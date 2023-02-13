@@ -13,9 +13,9 @@ docset: aem65
 feature: Document Security
 exl-id: d00ae232-b018-44e5-b04b-376d4cd9c6eb
 source-git-commit: 18c180a491af10b41393ad841f2fa74d02ec9cd9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1205'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Sie können Dokumente durch Richtlinien schützen. Die Vertraulichkeitseinstellu
 
 Die Richtlinien werden zwar auf dem Document Security-Server gespeichert, Sie wenden sie jedoch über Ihre Client-Anwendung auf Dokumente an. Wenn Sie eine Richtlinie auf ein Dokument anwenden, werden die in der Datei enthaltenen Informationen durch die in der Richtlinie angegebenen Vertraulichkeitseinstellungen geschützt. Sie können das richtliniengeschützte Dokument an Empfänger verteilen, die durch die Richtlinie autorisiert sind.
 
-Die folgende Abbildung zeigt die typische Architektur für AEM Forms Document Security:
+Die folgende Abbildung zeigt die typische Architektur für die Dokumentensicherheit in AEM Forms:
 
 ![Document Security - Empfohlene Architektur](do-not-localize/document_security_architecture.png)
 
@@ -49,11 +49,11 @@ AEM Forms Document Security bietet verschiedene Werkzeuge, um Sicherheitsrichtli
 
 Sie können Document Security SDK, Adobe Acrobat, Document Security Extension für Microsoft Office oder Portable Protection Library verwendne, um die Sicherheitsrichtlinien anzuwenden und nachzuverfolgen:
 
-* **Document Security SDK:** SDK ist ein Client mit vielen Funktionen. Sie können Document Security SDK verwenden, um auf Document Server-Funktion zuzugreifen, richtliniengeschützte Dokumente zu öffnen und benutzerdefinierte Erweiterungen, Plug-Ins oder Anwendungen zu entwickeln. Beispielsweise können Sie Erweiterungen erstellen, um benutzerdefinierte Dateiformate zu schützen oder SDK mit Data Loss Prevention(DLP)-Lösungen zu integrieren. Erweiterungen, Anwendungen und Plug-Ins, die mit Document Security SDK entwickelt wurden, senden Dokumente an bestimmte AEM Forms-Server und die Richtlinien werden auf den Server angewendet. Beachten Sie außerdem, dass der AEM Forms Document Security Client SDK (CSDK) die mit der Portable Protection Library (PPL) geschützten Dokumente nicht aufheben kann und umgekehrt.
+* **Document Security SDK:** SDK ist ein Client mit vielen Funktionen. Sie können das Document Security SDK verwenden, um auf Document Server-Funktionen zuzugreifen, richtliniengeschützte Dokumente zu öffnen und benutzerdefinierte Erweiterungen, Plug-ins oder Anwendungen zu entwickeln. Beispielsweise können Sie Erweiterungen erstellen, um benutzerdefinierte Dateiformate zu schützen oder SDK mit Data Loss Prevention(DLP)-Lösungen zu integrieren. Erweiterungen, Anwendungen und Plug-Ins, die mit Document Security SDK entwickelt wurden, senden Dokumente an bestimmte AEM Forms-Server und die Richtlinien werden auf den Server angewendet. Beachten Sie außerdem, dass der AEM Forms Document Security Client SDK (CSDK) die mit der Portable Protection Library (PPL) geschützten Dokumente nicht aufheben kann und umgekehrt.
 
    Das Document Security SDK ist für Java und C++ verfügbar. Java SDK ist in AEM Forms Document Security enthalten und wird bei der Bereitstellung von AEM Forms on JEE installiert. Sie können das [AEM-Support-Team](https://helpx.adobe.com/de/marketing-cloud/contact-support.html) kontaktieren, um C++ SDK zu erhalten. Das C++ SDK kann mit Microsoft Visual Studio 2013 kompiliert werden. Sie können die Seite [Document Security API-Dokumentation](https://help.adobe.com/de_DE/livecycle/11.0/Services/WS92d06802c76abadb76c48dfe12dbeb3e281-7ff0.2.html) aufrufen, um mehr über die Funktionen des SDK zu erfahren.
 
-* **Adobe Acrobat:** Sie können Adobe Acrobat verwenden, um Sicherheitsrichtlinien auf PDF-Dokumente anzuwenden, die mit gängigen Desktop-Applikationen wie Microsoft Office, Webbrowsern oder beliebigen Applikationen erstellt wurden, die das Drucken im PDF-Format unterstützen.
+* **Adobe Acrobat**: Sie können Adobe Acrobat verwenden, um Sicherheitsrichtlinien auf PDF-Dokumente anzuwenden, die mit gängigen Desktop-Anwendungen wie Microsoft Office, Webbrowsern oder anderen Anwendungen, die den Druck im PDF-Format unterstützen, erstellt wurden.
 
    Sie können Adobe Acrobat von der [Adobe-Website erwerben und herunterladen](https://acrobat.adobe.com/de/de/free-trial-download.html). Im Adobe Acrobat-Artikel [Sicherheitsrichtlinien für PDF-Dateien einrichten](https://helpx.adobe.com/de/acrobat/using/setting-security-policies-pdfs.html) finden Sie ausführliche Informationen zum Erstellen und Anwenden von Richtlinien in Adobe Acrobat.
 
@@ -65,13 +65,13 @@ Sie können Document Security SDK, Adobe Acrobat, Document Security Extension f�
 
    Zusammen mit den oben genannten Funktionen, hat die Portable Protection Library alle Funktionen des Document Security SDK. Sie können Document Security SDK verwenden, um auf Document Server-Funktion zuzugreifen, richtliniengeschützte Dokumente zu öffnen und benutzerdefinierte Erweiterungen, Plug-Ins oder Anwendungen zu entwickeln. Beachten Sie außerdem, dass der AEM Forms Document Security Client SDK (CSDK) die mit der Portable Protection Library (PPL) geschützten Dokumente nicht aufheben kann und umgekehrt.
 
-   Die Portable Protection Library ist für Java- und C++-Sprachen in 32-Bit- und 64-Bit-Versionen verfügbar.  Sie ist auch als OSGi-Bundle für AEM Forms unter OSGi verfügbar. Das C++ PPL kann mit Microsoft Visual Studio 2013 kompiliert werden. Wenn Sie AEM Forms Document Security-Add-On lizenziert haben, können Sie das Support-Team von [AEM Document Security](https://helpx.adobe.com/marketing-cloud/contact-support.html) kontaktieren, um die Portable Protection Library zu erhalten. Anschließend können Sie die Portable Protection Library-Hilfe (in einem Paket mit der Bibliothek) verwenden, um Portable Protection Library zu installieren und zu verwenden.
+   Die Portable Protection Library ist für Java- und C++-Sprachen in 32-Bit- und 64-Bit-Versionen verfügbar.  Sie ist auch als OSGi-Bundle für AEM Forms unter OSGi verfügbar. Das C++ PPL kann mit Microsoft Visual Studio 2013 kompiliert werden. Wenn Sie AEM Forms Document Security-Add-On lizenziert haben, können Sie das Support-Team von [AEM Document Security](https://helpx.adobe.com/de/marketing-cloud/contact-support.html) kontaktieren, um die Portable Protection Library zu erhalten. Anschließend können Sie die Portable Protection Library-Hilfe (in einem Paket mit der Bibliothek) verwenden, um Portable Protection Library zu installieren und zu verwenden.
 
 ### Anzeigen oder Bearbeiten von geschützten Dokumenten {#view-or-edit-protected-documents}
 
 * Für **PDF-Dokumente** können Sie Adobe Acrobat DC, Acrobat Reader und Acrobat Reader Mobile verwenden, um geschützte PDF-Dokumente anzuzeigen. Die meisten Benutzer haben bereits Acrobat Reader auf ihren Geräten installiert, sodass sie keine zusätzliche Software erwerben müssen, um geschützte Dokumente anzuzeigen. Sie können Acrobat Reader von der [Acrobat Reader-Downloadwebsite](https://get.adobe.com/de/reader/) herunterladen.
 
-* Für **Microsoft Office-Dokumente** benötigen Sie Microsoft Office- und AEM Forms Document Security-Erweiterungen für Microsoft Office. Die Document Security-Erweiterung ist als Microsoft Office-Plug-In verfügbar. Sie können die Erweiterung von der Adobe-Website herunterladen.
+* Für **Microsoft Office-Dokumente** benötigen Sie Microsoft Office- und AEM Forms Document Security-Erweiterungen für Microsoft Office. Die Document Security-Erweiterung ist als Plug-in für Microsoft Office verfügbar. Sie können die Erweiterung von der Adobe-Website herunterladen.
 
 ### Indexgeschützte Dokumente {#index-protected-documents}
 
