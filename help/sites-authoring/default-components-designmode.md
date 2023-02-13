@@ -1,7 +1,7 @@
 ---
-title: Konfigurieren von Komponenten im Designmodus
+title: Konfigurieren von Komponenten im Design-Modus
 seo-title: Configuring Components in Design Mode
-description: Konfigurieren von Komponenten im Designmodus
+description: Konfigurieren von Komponenten im Design-Modus
 seo-description: null
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
@@ -11,17 +11,17 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '905'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# Konfigurieren von Komponenten im Designmodus{#configuring-components-in-design-mode}
+# Konfigurieren von Komponenten im Design-Modus{#configuring-components-in-design-mode}
 
 Wenn die AEM-Instanz direkt installiert wird, ist im Komponenten-Browser sofort eine Auswahl von Komponenten verfügbar.
 
-Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mithilfe des [Designmodus](#enable-disable-components) können Sie diese Komponenten aktivieren bzw. deaktivieren. Wenn Sie den Designmodus aktivieren und sich auf der Seite befinden, können Sie damit [Aspekte des Komponentendesigns konfigurieren](#configuring-the-design-of-a-component), indem Sie die Attributparameter bearbeiten.
+Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mithilfe des [Design-Modus](#enable-disable-components) können Sie diese Komponenten aktivieren bzw. deaktivieren. Wenn Sie den Design-Modus aktivieren und sich auf der Seite befinden, können Sie damit [Aspekte des Komponenten-Designs konfigurieren](#configuring-the-design-of-a-component), indem Sie die Attributparameter bearbeiten.
 
 >[!NOTE]
 >
@@ -29,13 +29,13 @@ Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mithilfe 
 
 >[!NOTE]
 >
->Der Designmodus steht nur für statische Vorlagen zur Verfügung. Vorlagen, die mit bearbeitbaren Vorlagen erstellt werden, sollten mithilfe des [Vorlagen-Editors](/help/sites-authoring/templates.md) bearbeitet werden.
+>Der Design-Modus steht nur für statische Vorlagen zur Verfügung. Vorlagen, die mit bearbeitbaren Vorlagen erstellt werden, sollten mithilfe des [Vorlagen-Editors](/help/sites-authoring/templates.md) bearbeitet werden.
 
 >[!NOTE]
 >
->Der Designmodus ist nur für Designkonfigurationen verfügbar, die als Inhalt unter ( `/etc`).
+>Der Design-Modus ist nur für Design-Konfigurationen verfügbar, die als Inhalt unter ( `/etc`) gespeichert sind.
 >
->Ab AEM 6.4 wird empfohlen, Designs als Konfigurationsdaten unter `/apps` zur Unterstützung kontinuierlicher Bereitstellungsszenarien. Geschmacksmuster, gespeichert unter `/apps` zur Laufzeit nicht bearbeitbar sind und der Designmodus für solche Vorlagen für Benutzer ohne Administratorrechte nicht verfügbar ist.
+>Ab AEM 6.4 wird empfohlen, Designs als Konfigurationsdaten unter `/apps` zu speichern, um kontinuierliche Bereitstellungsszenarien zu unterstützen. Unter `/apps` gespeicherte Designs können nicht zur Laufzeit bearbeitet werden. Außerdem steht der Design-Modus in Bezug auf diese Vorlagen ausschließlich Admins zur Verfügung.
 
 Dazu müssen die zulässigen Komponenten im Absatzsystem für die Seite hinzugefügt oder entfernt werden. Das Absatzsystem (`parsys`) ist eine zusammengesetzte Komponente, die alle anderen Absatzkomponenten enthält. Mit dem Absatzsystem können Autoren Komponenten unterschiedlicher Typen zu einer Seite hinzufügen, da es alle anderen Absatzkomponenten enthält. Jeder Absatztyp wird als eine Komponente dargestellt.
 
@@ -52,7 +52,7 @@ Der Inhalt einer Produktseite kann beispielsweise ein Absatzsystem mit Folgendem
 
 >[!CAUTION]
 >
->Bearbeiten des Designs im Designmodus wie in diesem Artikel beschrieben ist die empfohlene Vorgehensweise zum Definieren von Designs statischer Vorlagen
+>Bearbeiten des Designs im Design-Modus wie in diesem Artikel beschrieben ist die empfohlene Vorgehensweise zum Definieren von Designs statischer Vorlagen
 >
 >Das Ändern von Designs in CRX DE ist beispielsweise nicht ratsam und die Anwendung derartiger Designs kann von erwarteten Verhaltensweisen abweichen. Weitere Informationen finden Sie im Entwicklerdokument [Seitenvorlagen – statisch](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied).
 
@@ -60,7 +60,7 @@ Der Inhalt einer Produktseite kann beispielsweise ein Absatzsystem mit Folgendem
 
 So aktivieren oder deaktivieren Sie eine Komponente:
 
-1. Wechseln Sie in den **Designmodus**.
+1. Wechseln Sie in den **Design-Modus**.
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
@@ -68,7 +68,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Klicken oder tippen Sie auf **Übergeordnet** Symbol.
+1. Klicken oder tippen Sie auf das Symbol **Übergeordnetes Element**.
 
    ![](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -91,7 +91,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    **Zugelassene Komponenten**
 
-   Im **Zugelassene Komponenten** definieren, legen Sie fest, welche Komponenten für die Parsys verfügbar sind.
+   Auf der Registerkarte **Zugelassene Komponenten** legen Sie fest, welche Komponenten für das ParSys verfügbar sein sollen.
 
    * Die Komponenten werden anhand ihrer Komponentengruppen gruppiert, die sich ein- und ausblenden lassen.
    * Eine gesamte Gruppe kann durch Aktivieren des Gruppennamens ausgewählt werden und die Auswahl kann durch Deaktivieren aufgehoben werden.
@@ -113,7 +113,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
 ## Konfigurieren des Entwurfs einer Komponente {#configuring-the-design-of-a-component}
 
-1. Wechseln Sie in den **Designmodus**.
+1. Wechseln Sie in den **Design-Modus**.
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
@@ -125,7 +125,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
-   Im Dialogfeld &quot;Design&quot;können Sie die Komponente entsprechend den verfügbaren Designparametern konfigurieren.
+   Im Dialogfeld für den Entwurf können Sie die Komponente entsprechend den verfügbaren Designparametern konfigurieren.
 
    ![screen_shot_2018-03-22at103530](assets/screen_shot_2018-03-22at103530.png)
 
@@ -153,7 +153,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Verwenden Sie das Symbol &quot;Löschen&quot;, um einen Eintrag aus einer Dialogfeldliste mit mehreren Einträgen zu entfernen.
+   Verwenden Sie das Symbol **Löschen**, um einen Eintrag aus einer Dialogfeldliste mit mehreren Einträgen zu entfernen.
 
    ![](do-not-localize/screen_shot_2018-03-22at103809.png)
 
