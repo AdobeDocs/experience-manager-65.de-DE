@@ -1,5 +1,5 @@
 ---
-title: '"Tutorial: Interaktive Kommunikation planen"'
+title: "Tutorial: Interaktive Kommunikation planen"
 seo-title: Plan your Interactive Communication
 description: Planen Sie Ihre interaktive Kommunikation
 seo-description: Plan the anatomy for your Interactive Communication
@@ -10,13 +10,13 @@ discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '654'
 ht-degree: 100%
 
 ---
 
-# Tutorial: Interaktive Kommunikation planen {#tutorial-plan-the-interactive-communication}
+# Tutorial: Planen einer interaktiven Kommunikation {#tutorial-plan-the-interactive-communication}
 
 Planen Sie Ihre interaktive Kommunikation
 
@@ -75,7 +75,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Rechnungsdatum</li>
      <li>Rechnungszeitraum</li>
     </ul> <p> </p> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Kundendetails</td>
@@ -94,7 +94,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Status-Code</li>
      <li>Anzahl von Verbindungen</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Rechnungszusammenfassung</td>
@@ -108,7 +108,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>Fälliger Betrag</li>
      <li>Fälligkeitsdatum</li>
     </ul> </td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Zusammenfassung der Gebühren</td>
@@ -126,7 +126,7 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
      <li>GESAMT ZAHLBAR (Feld für berechnete Nutzungsgebühren)</li>
     </ul> <p>Tabelle - Rechnungen</p> </td>
    <td>Keine Felder</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Einzeln aufgeführte Anrufe - Ausgehend</td>
@@ -140,20 +140,20 @@ Die folgende Tabelle zeigt die Datenquelle für jedes Feld in der Anatomie der i
     </ul> </td>
    <td><p>Alle Werte</p> <p>Tabelle - Anrufe</p> </td>
    <td>Keine Felder</td>
-   <td>—</td>
+   <td>--</td>
   </tr>
   <tr>
    <td>Jetzt zahlen</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>PayNow</td>
   </tr>
   <tr>
    <td>Mehrwert - Service</td>
-   <td>—</td>
-   <td>—</td>
-   <td>—</td>
+   <td>--</td>
+   <td>--</td>
+   <td>--</td>
    <td>Mehrwert - Service</td>
   </tr>
  </tbody>
