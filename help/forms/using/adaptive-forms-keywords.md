@@ -1,5 +1,5 @@
 ---
-title: Adaptive Formulare Suchbegriffe
+title: Adaptive Formulare – Suchbegriffe
 seo-title: Adaptive forms keywords
 description: Sie können diese reservierten Wörter nicht als Bezeichner in Ihren adaptiven Formularen verwenden.
 seo-description: You cannnot use these reserved words as identifiers in your adaptive forms.
@@ -10,13 +10,13 @@ discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
 exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '208'
 ht-degree: 100%
 
 ---
 
-# Adaptive Formulare Suchbegriffe {#adaptive-forms-keywords}
+# Adaptive Formulare – Suchbegriffe {#adaptive-forms-keywords}
 
 Adaptive Formularsuchbegriffe sind vordefinierte, reservierte Bezeichner, welche eine besondere Bedeutung für adaptive Formulare haben. Sie können diese Schlüsselwörter nicht als Bezeichner in Ihren adaptiven Formularen verwenden. In der folgenden Tabelle sind alle Schlüsselwörter, die reservierte ID für adaptive Formulare sind, finden.
 
