@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1245'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ Sie können Suchvorlagendefinitionen und globale Einstellungen für Workspace im
 
 >[!NOTE]
 >
->Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
+>Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
 
 So können Sie beispielsweise von einer Entwicklungsumgebung zu einer Produktionsumgebung wechseln, indem Sie die Suchvorlagendefinitionen und globalen Einstellungen aus der einen Umgebung exportieren und in die andere Umgebung importieren.
 
@@ -67,7 +67,7 @@ Sie können die Datei mit den globalen Einstellungen ändern, sollten jedoch nur
 
 >[!NOTE]
 >
->Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
+>Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
 
 Die Datei mit den globalen Einstellungen für Workspace enthält folgende Einstellungen:
 
