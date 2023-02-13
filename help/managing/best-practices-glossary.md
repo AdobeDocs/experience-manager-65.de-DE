@@ -12,9 +12,9 @@ discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7036'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -207,7 +207,8 @@ Geschäfts-KPIs definieren messbare Werte, die aufzeigen, wie effektiv ein Unter
 
 Ein Geschäftsanforderungsdokument beschreibt die Geschäftslösung für ein Projekt und liefert eine klare Präzisierung der Geschäftsanforderungen und -erwartungen des Kunden. Es unterscheidet auch zwischen der geschäftlichen und der technischen Lösung.
 
-Bei der Prüfung der Geschäftslösung sollte die BRD die Frage beantworten: &quot;Was will das Unternehmen tun?&quot;
+Bei der Prüfung der Unternehmenslösung sollte das Geschäftsanforderungsdokument (BRD) die Frage beantworten:
+„Was will das Unternehmen erreichen?“
 
 ### Genehmigung durch die Geschäftsführung bei allen erforderlichen Anpassungen der Lösung oder Architektur entsprechend den ermittelten ROI- und KPI-Erwartungen {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -221,7 +222,7 @@ Die Cachingstrategie beschreibt, was für Endanwender zwischengespeichert wird. 
 
 Beispielsweise können Elemente wie Bilder, JavaScript und andere Serverdateien zwischengespeichert werden, um die Leistung einer Lösung zu verbessern.
 
-### Kodierungsrichtlinien  {#coding-guidelines}
+### Codierungsrichtlinien  {#coding-guidelines}
 
 Die Kodierungsrichtlinien definieren Grundprinzipien, an die sich die Entwickler bei der Entwicklung der Lösung halten müssen. Dazu zählen u. a.:
 
@@ -1024,7 +1025,7 @@ Detaillierte Spezifizierung der für die neue Anwendung erforderlichen Rollen- u
 
 * Rollen
 * Gruppen
-* Benutzer
+* Benutzende
 * Berechtigungen
 * Benutzerverwaltung und -bereitstellung
 
