@@ -1,5 +1,5 @@
 ---
-title: Leistung von Systemüberwachung optimieren
+title: Optimieren der Leistung bei der Systemüberwachung
 seo-title: Fine-tuning Health Monitor performance
 description: Erfahren Sie, wie Sie die Leistung der Systemüberwachung optimieren.
 seo-description: Learn how to fine-tune Health Monitor performance
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
 ht-degree: 100%
 
 ---
 
-# Leistung von Systemüberwachung optimieren{#fine-tuning-health-monitor-performance}
+# Optimieren der Leistung bei der Systemüberwachung{#fine-tuning-health-monitor-performance}
 
 Das Sammeln der Systemstatistiken, die in Health Monitor angegeben werden, hat Auswirkungen auf die Leistung Ihrer AEM Forms-Umgebung. Diese Auswirkungen können durch Festlegen der unten aufgeführten Java-Optionen in Ihrem Anwendungsserver kontrolliert werden.
 
@@ -74,9 +74,9 @@ Das Sammeln der Systemstatistiken, die in Health Monitor angegeben werden, hat A
 1. Starten Sie die WebLogic-Administration-Console, indem Sie „https://[Hostname]:&#39;port&#39;/console“ in die Adresszeile eines Webbrowsers eingeben.
 1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Server-Domain ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
 1. Klicken Sie unter „Domain Structure“ auf Environment > Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
-1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.
+1. Klicken Sie im nächsten Bildschirm auf die Registerkarten „Konfiguration“ > „Server-Start“.
 1. Fügen Sie im Feld „Arguments“ die erforderlichen Informationen am Ende des aktuellen Inhalts hinzu. Wenn Sie beispielsweise „‑ `Dadobe.healthmonitor.enabled=false`“ hinzufügen, wird Health Monitor deaktiviert.
-1. Klicken Sie auf Save und dann auf Activate Changes.
+1. Klicken Sie auf „Speichern“ und dann auf „Änderungen aktivieren“.
 1. Starten Sie WebLogic Managed Server neu.
 
 ## Java-Optionen zu WebSphere hinzufügen {#add-java-options-to-websphere}
