@@ -1,5 +1,5 @@
 ---
-title: Starten Sie Document Services-APIs aus dem AEM-Arbeitsablauf
+title: Starten von Document Services-APIs aus dem AEM-Workflow
 seo-title: Initiate Document Services APIs from AEM Workflow
 description: Erfahren Sie, wie Sie AEM Document Services auf DDX aufrufen. Siehe auch „Konvertieren von PDF in PDF/A“
 seo-description: Learn how to invoke AEM Document services on DDX or supplied inputs. Also see hwo to convert PDF to PDF/A
@@ -10,7 +10,7 @@ topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 exl-id: 123087a2-9d09-4579-9185-2ccd7d25bf8d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1171'
 ht-degree: 100%
 
