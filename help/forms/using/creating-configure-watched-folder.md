@@ -1,5 +1,5 @@
 ---
-title: Erstellen oder konfigurieren Sie einen überwachten Ordner
+title: Erstellen oder Konfigurieren eines überwachten Ordners
 seo-title: Create or Configure a watched folder
 description: Erfahren Sie, wie Sie einen überwachten Ordner erstellen oder löschen oder die Eigenschaften eines vorhandenen überwachten Ordner ändern.
 seo-description: Learn how to create or delete a watched folder, or modify the properties of an existing watched folder.
@@ -10,7 +10,7 @@ topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
 exl-id: b15d8d3b-5e47-4c33-95fe-440fcf96be83
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1820'
 ht-degree: 100%
 
