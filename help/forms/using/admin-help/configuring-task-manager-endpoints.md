@@ -1,5 +1,5 @@
 ---
-title: Task Manager-Endpunkte konfigurieren
+title: Konfigurieren der Task Manager-Endpunkte
 seo-title: Configuring Task Manager endpoints
 description: Erfahren Sie, wie Sie Task Manager-Endpunkte konfigurieren.
 seo-description: Learn how to configure Task Manager endpoints.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9c55feb9-23d8-4798-a3c5-70ec736df3ad
 exl-id: 8495a3d7-6ac9-41f5-b1f9-31decaba118a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '232'
 ht-degree: 100%
 
 ---
 
-# Task Manager-Endpunkte konfigurieren {#configuring-task-manager-endpoints}
+# Konfigurieren der Task Manager-Endpunkte {#configuring-task-manager-endpoints}
 
 Task Manager-Endpunkte ermöglichen es einem Workspace-Benutzer, den Dienst aufzurufen.
 
