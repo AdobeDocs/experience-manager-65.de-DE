@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
 source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2664'
 ht-degree: 100%
 
@@ -413,7 +413,7 @@ Sie können auch [eine Live Copy von ihrer Blueprint trennen](/help/sites-admin
 >
 >Die Trennung ist dauerhaft und kann nicht rückgängig gemacht werden.
 
-Beim Trennen wird die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite dauerhaft entfernt. Alle MSM-bezogenen Eigenschaften werden aus der Live Copy entfernt und die Live Copy-Seiten werden zu einer eigenständigen Kopie.
+Beim Trennen wird die Live-Beziehung zwischen einer Live Copy und der zugehörigen Blueprint-Seite dauerhaft entfernt. Alle MSM-bezogenen Eigenschaften werden aus der Live Copy entfernt, und die Live Copy-Seiten werden zu einer eigenständigen Kopie.
 
 >[!NOTE]
 >
