@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 3db623a4-f1ad-4b7f-97e8-0be138aa8b26
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1129'
 ht-degree: 100%
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Mit Adobe Experience Manager (AEM) können Sie benutzerfreundliche adaptive Formulare erstellen, den Endbenutzern eine dynamische Erfahrung bietet. Mit dem Formular-Layout wird gesteuert, wie Elemente bzw. Komponenten auf einem adaptiven Formular angezeigt werden.
 
-## Vorausgesetztes Wissen {#prerequisite-knowledge}
+## Vorausgesetzte Kenntnisse {#prerequisite-knowledge}
 
 Bevor Sie die verschiedenen Layoutfunktionen adaptiver Formulare kennenlernen, lesen Sie die folgenden Artikel, um mehr über adaptive Formulare zu erfahren.
 
@@ -71,7 +71,7 @@ So sieht ein Formular mit einem responsiven Layout auf einem kleinen Bildschirm 
 
 ![Formular mit einem reaktionsfähigem Layout auf einem großen Bildschirm](assets/responsive_layout_seen_on_large_screen.png)
 
-Formular mit einem reaktionsfähigem Layout auf einem großen Bildschirm
+Formular mit einem responsiven Layout auf einem großen Bildschirm
 
 ### Assistent – ein Mehrstufenformular, bei dem jeder einzelne Schritt genau angezeigt wird {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
