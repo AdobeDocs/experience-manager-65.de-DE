@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1049'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -genkey -v -alias ads-credentials -keyalg RSA -keystore "ads-credentials.jks" -validity 3650 -storepass P@ssw0rd -keypass P@ssw0rd -dname "CN=wasnode01, OU=LC, O=Adobe, L=Noida, S=UP,C=91
    ```
 
-   Die Custom Identity Keystore-Datei mit dem Namen &quot;ads-credentials.jks&quot;wird im [appserverdomain]/adobe/[Servername] Verzeichnis.
+   Die benutzerdefinierte Identitäts-Keystore-Datei „ads-credentials.jks“ wird im Verzeichnis [appserverdomain]/adobe/[Server-Name] erstellt.
 
 1. Extrahieren Sie das Zertifikat aus dem Keystore „ads-credentials“, indem Sie den folgenden Befehl eingeben:
 
@@ -141,7 +141,7 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
-   Die Zertifikatdatei &quot;ads-ca.cer&quot;wird im [appserverdomain]/adobe/[*Servername*] Verzeichnis.
+   Die Zertifikatsdatei mit dem Namen „ads-ca.cer“ wird im Verzeichnis [appserverdomain]/adobe/[*Server-Name*] erstellt.
 
 1. Kopieren Sie die Datei „ads-ca.cer“ auf alle Hostcomputer, für die eine sichere Kommunikation mit dem Anwendungsserver erforderlich ist.
 1. Fügen Sie das Zertifikat mit dem folgenden Befehl in eine neue Keystore-Datei ein (d. h. in den benutzerdefinierten Trust-Keystore):
@@ -181,7 +181,7 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
 
    **Bennitzerdefinierter Identitäts-Keystore**: *[appserverdomain]*/adobe/*[Server-Nname]*/ads-credentials.jks, wobei *[appserverdomain] *der aktuelle Pfad und *[Server-Name]* der Name des Anwendungs-Servers ist.
 
-   **Custom Identity Keystore Type**: JKS
+   **Art des benutzerdefinierten Identitäts-Keystores**: JKS
 
    **Custom Identity Keystore Passphrase**: *mypassword*  (Custom Identity Keystore Password)
 
@@ -189,7 +189,7 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
 
    **Benutzerdefinierter Trust-Keystore-Dateiname**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, wobei `*[appserverdomain]*` der tatsächliche Pfad ist
 
-   **Custom Trust Keystore Type**: JKS
+   **Art des benutzerdefinierten Trust-Keystores**: JKS
 
    **Custom Trust Keystore Pass Phrase**: *mypassword*  (Custom Trust Key Password)
 
@@ -211,5 +211,5 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
    Wenn die Überprüfung des Hostnamens nicht deaktiviert wird, muss unter „Common Name (CN)“ der Hostname des Servers angegeben werden.
 
 1. Klicken Sie unter „Change Center“ auf „Lock &amp; Edit“, um Auswahlen und Werte zu ändern.
-1. Starten Sie den Anwendungsserver neu.
+1. Starten Sie den Anwendungs-Server neu.
 
