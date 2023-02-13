@@ -12,7 +12,7 @@ discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '737'
 ht-degree: 100%
 
@@ -105,7 +105,7 @@ Test-Suites werden nacheinander in der Reihenfolge ausgeführt, in der sie in de
 
 Die folgenden Schritte erläutern die Erstellung und Ausführung einer Test-Suite mit [We.Retail-Inhalten](/help/sites-developing/we-retail.md). Sie können den Test jedoch auch einfach für eine andere Web-Seite anpassen.
 
-Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der [Dokumentation zur Hobbes.js-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
+Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der [Dokumentation zur Hobbes.js-API](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
 
 1. Öffnen Sie CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/etc/clientlibs` und klicken Sie auf **Erstellen > Ordner erstellen**. Geben Sie als Namen `myTests` ein und klicken Sie auf **OK**.
