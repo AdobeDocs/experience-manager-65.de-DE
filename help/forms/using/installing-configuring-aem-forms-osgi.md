@@ -1,5 +1,5 @@
 ---
-title: Installieren und konfigurieren Sie Datenerfassungsfunktionen
+title: Installieren und Konfigurieren von Datenerfassungsfunktionen
 seo-title: Install and configure data capture capabilities
 description: Installieren und konfigurieren Sie adaptive Formulare, PDF-Formulare und HTML5-Formulare. Konfigurieren Sie Adobe Analytics und Adobe Target für adaptive Formulare, um die Verwendung von Formularen und Zielbenutzern anhand ihres Profils zu analysieren.
 seo-description: Install and configure adaptive forms, PDF Forms, and HTML5 Forms. Configure Adobe Analytics and Adobe Target for adaptive forms to analyze usage of forms and target users based on their profile.
@@ -11,9 +11,9 @@ docset: aem65
 role: Admin
 exl-id: 19b5765e-50bc-4fed-8af5-f6bb464516c8
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1882'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ AEM Forms bietet eine Reihe von Formularen, um Daten vom Endbenutzer zu erhalten
 
 **HTML5-Forms** sind die browserfreundliche Version von PDF-Formularen. HTML5-Forms eignen sich für Umgebungen, in denen PDF-Plug-Ins nicht unterstützt werden. HTML5-Forms ermöglichen das Anzeigen von Formularen auf mobilen Geräten und Desktop-Browsern, auf denen XFA-basierte PDF nicht unterstützt werden. Diese Formulare sind für Tablets und Desktops am besten geeignet.
 
-AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse und die Datenerfassung (adaptive Formulare, PDF-Formulare und HTML5-Formulare) ist nur eine der Möglichkeiten von AEM Forms. Eine vollständige Liste der Funktionen finden Sie unter [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse und die Datenerfassung (adaptive Formulare, PDF-Formulare und HTML5-Formulare) ist nur eine der Möglichkeiten von AEM Forms. Eine vollständige Liste der Funktionen finden Sie in der [Einführung in AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Bereitstellungstopologie {#deployment-topology}
 
@@ -105,7 +105,7 @@ Bevor Sie mit der Installation und Konfiguration der Datenerfassungsfunktion von
 
    * libicu
 
-* Installieren [Microsoft Visual Studio 2019 - 32-Bit-Redistributable](https://learn.microsoft.com/en-us/cpp/windows/latest-supported-vc-redist?view=msvc-170).
+* Installieren Sie [Microsoft Visual Studio 2019 – 32-Bit-Redistributable](https://learn.microsoft.com/de-de/cpp/windows/latest-supported-vc-redist?view=msvc-170).
 
 
 ## Installieren des AEM Forms-Add-on-Pakets {#install-aem-forms-add-on-package}
@@ -127,7 +127,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 
 ### (Nur Windows) Automatische Installation von verteilbaren Visual Studio-Dateien {#automatic-installation-visual-studio-redistributables}
 
-Wenn Sie eine AEM-Instanz im erhöhten Modus installieren, werden die 32-Bit-Visual Studio-Redistributables während der Installation des AEM Forms Add-On-Pakets automatisch installiert.
+Wenn Sie eine AEM-Instanz im erhöhten Modus installieren, werden die verteilbaren 32-Bit-Dateien von Visual Studio während der Installation des Add-on-Pakets von AEM Forms automatisch installiert.
 
 Um zu prüfen, ob die verteilbaren Visual Studio-Dateien automatisch installiert wurden, öffnen Sie die Datei `error.log` im Verzeichnis `/crx-repository/logs/`. Die Protokolle enthalten die folgende Meldung:
 
@@ -188,7 +188,7 @@ Der Dispatcher ist das Werkzeug für das Caching und/oder den Lastenausgleich vo
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Speichern und schließen Sie die Datei. Ausführliche Informationen zu Filtern finden Sie in der [Dispatcher-Dokumentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Speichern und schließen Sie die Datei. Ausführliche Informationen zu Filtern finden Sie in der [Dispatcher-Dokumentation](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Konfigurieren des Referrer-Filterservice:
 
@@ -198,7 +198,7 @@ Der Dispatcher ist das Werkzeug für das Caching und/oder den Lastenausgleich vo
 
 Caching ist ein Vorgang, um Datenzugriffszeiten zu verkürzen, die Wartezeit zu reduzieren, und die Geschwindigkeit von Eingabe/Ausgabe (I/A) zu verbessern. Cache für adaptive Formulare speichert nur HTML-Inhalte und JSON-Strukturen eines adaptiven Formulars, ohne die vorausgefüllten Daten zu speichern. Die Zeit, die benötigt wird, um ein adaptives Formular oder ein Dokument auf dem Client zu rendern, wird reduziert.
 
-* Wenn Sie den Cache für adaptive Formulare verwenden, nutzen Sie den [AEM-Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html), um Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars oder Dokuments zwischenzuspeichern.
+* Wenn Sie den Cache für adaptive Formulare verwenden, nutzen Sie den [AEM-Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html), um Client-Bibliotheken (CSS und JavaScript) eines adaptiven Formulars oder Dokuments zwischenzuspeichern.
 * Beim Entwickeln der benutzerdefinierten Komponenten muss auf dem für die Entwicklung verwendeten Server der Cache für adaptive Formulare deaktiviert bleiben.
 
 Führen Sie die folgenden Schritte aus, um den Cache für adaptive Formulare zu konfigurieren:
@@ -241,5 +241,5 @@ AEM forms kann mit der Adobe Marketing Cloud-Lösung Adobe Target integriert wer
 Sie haben eine Umgebung für die Verwendung der AEM Forms-Datenerfassungsfunktionen konfiguriert. Die nächsten Schritte zur Verwendung der Funktionen, sind Folgende:
 
 * [Erstellen Sie Ihr erstes adaptives Formular](/help/forms/using/create-your-first-adaptive-form.md)
-* [Erstellen Sie Ihr erstes PDF Formular](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+* [Erstellen Sie Ihr erstes PDF Formular](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
 * [Einführung in HTML5-Formulare](/help/forms/using/introduction.md)
