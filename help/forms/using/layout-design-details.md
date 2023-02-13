@@ -12,9 +12,9 @@ docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2170'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Eine XDP wird mit Adobe Forms Designer entwickelt. In diesem Artikel finden Sie 
 
 ## Erstellen eines Layouts für Briefe oder für den Druckkanal von interaktiver Kommunikation {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
 
-Ein Layout bestimmt das grafische Layout eines Briefs/Druckkanals einer interaktiven Kommunikation. Das Layout kann typische Formularfelder wie &quot;Adresse&quot;und &quot;Referenz&quot;enthalten. Es enthält auch leere Unterformulare, die Zielbereiche darstellen. Erstellen Sie das Layout im Formulardesigner. Danach lädt es der Anwendungsspezialist auf den AEM-Server. Von dort können Sie das Layout bei der Erstellung einer Korrespondenzvorlage oder eines Druckkanals einer interaktiven Kommunikation auswählen.
+Ein Layout bestimmt das grafische Layout eines Briefs/Druckkanals einer interaktiven Kommunikation. Das Layout kann typische Formularfelder wie „Adresse“ und „Referenznummer“ enthalten. Es enthält auch leere Unterformulare, die Zielbereiche darstellen. Erstellen Sie das Layout im Formulardesigner. Danach lädt es der Anwendungsspezialist auf den AEM-Server. Von dort können Sie das Layout bei der Erstellung einer Korrespondenzvorlage oder eines Druckkanals einer interaktiven Kommunikation auswählen.
 
 ![Designer: Layout erstellen](assets/claimsubrogationlayout.png)
 
@@ -147,7 +147,7 @@ Führen Sie die folgenden Schritte aus, um in der XDP-Vorlage die Tabellenkompon
 
    1. Tippen Sie auf **Speichern**.
 
-### Laden Sie die XDP-Vorlagen auf den AEM Forms Server hoch {#uploadxdptemplate}
+### Hochladen der XDP-Vorlagen auf den AEM Forms Server {#uploadxdptemplate}
 
 Nachdem Sie eine XDP-Vorlage mit dem Forms-Designer erstellt haben, müssen Sie sie auf den AEM Forms-Server hochladen, damit die Vorlage beim Erstellen der interaktiven Kommunikation verwendet werden kann.
 
