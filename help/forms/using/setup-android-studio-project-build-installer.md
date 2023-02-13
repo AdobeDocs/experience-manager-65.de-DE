@@ -1,5 +1,5 @@
 ---
-title: Richten Sie das Android-Studioprojekt ein und erstellen Sie eine Android-App
+title: Einrichten des Android Studio-Projekts und Erstellen der Android-App
 seo-title: Set up the Android studio project and build the Android app
 description: Schritte zum Einrichten des Android Studio-Projekts und Erstellen des Installationsprogramms für die AEM Forms-App
 seo-description: Steps to set up the Android Studio project and build the installer for the AEM Forms app
@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
 ht-degree: 100%
 
