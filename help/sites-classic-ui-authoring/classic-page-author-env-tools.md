@@ -1,5 +1,5 @@
 ---
-title: 'Bearbeiten: Umgebung und Tools'
+title: Bearbeiten– Umgebung und Tools
 seo-title: Authoring - the Environment and Tools
 description: Die Websites-Konsole ermöglicht es Ihnen, Ihre Website zu verwalten und darin zu navigieren. Sie besteht aus zwei Bereichen, durch die Sie die Struktur der Website erweitern und die entsprechenden Elemente bearbeiten können.
 seo-description: The Websites console allows you to manage and navigate your website. Using two panes, the structure of your website can be expanded and actions taken on the required elements.
@@ -12,13 +12,13 @@ discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
 source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '899'
 ht-degree: 100%
 
 ---
 
-# Bearbeiten: Umgebung und Tools {#authoring-the-environment-and-tools}
+# Bearbeiten– Umgebung und Tools {#authoring-the-environment-and-tools}
 
 Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten. Die verfügbaren Tools können über verschiedene Konsolen und Seiteneditoren aufgerufen werden.
 
