@@ -6,9 +6,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 source-git-commit: 83e9ab570fac686fd53c9c2594cbfb2c05a89a0c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2262'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -18,9 +18,9 @@ Bevor Sie mit dem Tagging Ihrer Assets mit dem Smart Content Services beginnen k
 
 >[!NOTE]
 >
->* Smart Content Services ist nicht mehr für neue [!DNL Experience Manager Assets] On-Premise-Kunden. Vorhandene On-Premise-Kunden, für die diese Funktion bereits aktiviert ist, können weiterhin Smart Content Services verwenden.
->* Smart Content Services ist für bestehende verfügbar [!DNL Experience Manager Assets] Managed Services-Kunden, für die diese Funktion bereits aktiviert ist.
->* Neu [!DNL Experience Manager Assets] Managed Services-Kunden können die in diesem Artikel beschriebenen Anweisungen zum Einrichten von Smart Content Services befolgen.
+>* Smart Content Services ist nicht mehr für neue Kunden von [!DNL Experience Manager Assets] On-Premise verfügbar. Bestehende On-Premise-Kunden, die diese Funktion bereits aktiviert haben, können Smart Content Services weiterhin nutzen.
+>* Smart Content Services ist für bestehende Kunden von [!DNL Experience Manager Assets] Managed Services verfügbar, für die diese Funktion bereits aktiviert ist.
+>* Neue Kunden von [!DNL Experience Manager Assets] Managed Services können die in diesem Artikel beschriebenen Anweisungen zum Einrichten von Smart Content Services befolgen.
 
 
 Bevor Sie den Smart Content Service verwenden, führen Sie Folgendes aus:
@@ -60,11 +60,11 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
    **[!UICONTROL Service-URL]**: `https://smartcontent.adobe.io/<region where your Experience Manager author instance is hosted>`
 
-   Beispiel: `https://smartcontent.adobe.io/apac`. Sie können `na`, `emea`oder `apac` als die Regionen, in denen Ihre Experience Manager-Autoreninstanz gehostet wird.
+   Beispiel: `https://smartcontent.adobe.io/apac`. Sie können `na`, `emea` oder `apac` als die Regionen angeben, in denen Ihre Experience Manager-Autoreninstanz gehostet wird.
 
    >[!NOTE]
    >
-   >Wenn der Experience Manager Managed Service vor dem 1. September 2022 bereitgestellt wurde, verwenden Sie die folgende Dienst-URL:
+   >Wenn der Experience Manager Managed Service vor dem 1. September 2022 bereitgestellt wurde, verwenden Sie die folgende Service-URL:
    >`https://mc.adobe.io/marketingcloud/smartcontent`
 
    **[!UICONTROL Autorisierungsserver]**: `https://ims-na1.adobelogin.com`
