@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
 source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1897'
 ht-degree: 100%
 
@@ -148,7 +148,7 @@ Im Anschluss an die Leistungstests der Autoreninstanz müssen alle festgestellte
 * Überprüfen Sie das Fehlerprotokoll auf Fehler oder Warnungen. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md)
 * Überwachen Sie die Hardwareressourcen des Systems wie den Arbeitsspeicher und die CPU oder I/O-Vorgänge von Festplatte bzw. Netzwerk. Diese Ressourcen sind häufig die Ursache für Leistungsengpässe.
 * Optimieren Sie die Architektur der Seiten und ihre Adressierung, um die Nutzung von URL-Parametern zu minimieren, damit ein Höchstmaß an Caching ermöglicht wird.
-* Folgen Sie der Dokumentation zur [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) und den [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+* Folgen Sie der Dokumentation zur [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) und den [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
 
 * Wenn es Probleme beim Bearbeiten bestimmter Seiten oder Komponenten in Autoreninstanzen gibt, sehen Sie sich die fragliche Seite mithilfe des Entwicklermodus der Touch-optimierten Benutzeroberfläche an. Dabei wird jeder Inhaltsbereich auf der Seite samt Ladezeit aufgeschlüsselt.
 * Führen Sie eine vollständige JS- und CSS-Minimierung auf der Website durch. Weitere Informationen dazu finden Sie in diesem [Blogpost](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
