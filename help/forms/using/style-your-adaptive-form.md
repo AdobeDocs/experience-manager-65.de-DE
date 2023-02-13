@@ -1,7 +1,7 @@
 ---
-title: 'Adaptive Formulare gestalten '
+title: Adaptive Formulare gestalten
 seo-title: Style your adaptive form
-description: 'Erfahren Sie, wie Sie ein benutzerdefiniertes Design erstellen, einzelne Komponenten formatieren und Webfonts in einem Design verwenden '
+description: Erfahren Sie, wie Sie ein benutzerdefiniertes Design erstellen, einzelne Komponenten formatieren und Webfonts in einem Design verwenden
 seo-description: Learn to create a custom theme, style individual components, and use web fonts in a theme
 page-status-flag: de-activated
 uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
@@ -10,7 +10,7 @@ discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2037'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Laden Sie die unten abgebildeten kopfzeilenartigen und Logo-Bilder auf Ihrem lok
 
 Der Adaptive Forms Editor bietet mehrere Standarddesigns. Wenn Sie beabsichtigen, keinen benutzerdefinierten Stil für Ihr adaptives Formular zu verwenden, können Sie Ihre adaptiven Formulare auch mit einem Standarddesign veröffentlichen. Designs sind unabhängig von adaptiven Formularen. Sie können dasselbe Design auf mehrere adaptive Formulare anwenden. So wenden Sie ein Design auf ein adaptives Formular an:
 
-1. Öffnen Sie Ihr adaptives Formular zum Bearbeiten.
+1. Öffnen Sie das adaptive Formular zum Bearbeiten.
 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
@@ -283,7 +283,7 @@ Sie können ein benutzerdefiniertes Design verwenden, um allen Schaltflächen de
      <tr> 
       <td>Text</td> 
       <td>Schriftgrad</td> 
-      <td>18 px</td> 
+      <td>18px</td> 
      </tr> 
     </tbody> 
    </table>
@@ -387,7 +387,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Solche Komponenten werde
      <tr> 
       <td>Text</td> 
       <td>Schriftgrad</td> 
-      <td>18 px</td> 
+      <td>18px</td> 
      </tr> 
      <tr> 
       <td>Text</td> 
