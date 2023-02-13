@@ -1,5 +1,5 @@
 ---
-title: Zwischenspeicherung für Forms konfigurieren
+title: Konfigurieren der Zwischenspeicherung für Forms
 seo-title: Configuring caching for Forms
 description: Erfahren Sie, wie Sie Cacheeinstellungen konfigurieren und wie Sie Überlegungen zum Cache gruppieren.
 seo-description: Learn how to configure cache settings and how to cluster considerations for caches.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8a07dddf-1281-45ac-a55e-4333b860a261
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1608'
 ht-degree: 100%
 
 ---
 
-# Zwischenspeicherung für Forms konfigurieren{#configuring-caching-for-forms}
+# Konfigurieren der Zwischenspeicherung für Forms{#configuring-caching-for-forms}
 
 Der Forms-Dienst nimmt Formularentwürfe, die in Designer erstellt wurden, und gibt sie in verschiedenen Formaten wieder.
 
@@ -53,7 +53,7 @@ Dieser Cache-Modus gewährleistet, dass die neuesten Ressourcen verwendet werden
 
 **Nicht konditionale Zwischenspeicherung angeben**
 
-1. Klicken Sie in der Administration-Console auf Services > Forms.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Formulare“.
 1. Wählen Sie unter „Einstellungen für die Forms-Cache-Steuerung“ die Option „Bedingungslos“ aus und klicken Sie auf „Speichern“.
 
 ### Den Cacheprüfpunkt verwenden {#use-the-cache-check-point}
@@ -69,14 +69,14 @@ Verwenden Sie diesen Cache-Modus in Produktionsumgebungen mit hoher Leistung, in
 
 **Die Cacheprüfpunkt-Zeit zurücksetzen**
 
-1. Klicken Sie in der Administration-Console auf Services > Forms.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Formulare“.
 1. Klicken Sie unter „Einstellungen für die Forms-Cache-Steuerung“ auf die Option „Cacheprüfpunkt“.
 
 **Den Inhalt des Zwischenspeichers zurücksetzen**
 
 Sie können den Inhalt des Zwischenspeichers jederzeit löschen. Nach dem Zurücksetzen des Zwischenspeichers ist die erste Anforderung für jedes Formular langsamer, da der Forms-Dienst eine vollständige Wiedergabe ausführt und neue Inhalte für den Zwischenspeicher erstellt.
 
-1. Klicken Sie in der Administration-Console auf Services > Forms.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Formulare“.
 1. Klicken Sie unter „Einstellungen für die Formularcache-Steuerung“ auf die Option „Cache zurücksetzen“.
 
 ## Cache-Einstellungen konfigurieren {#configuring-cache-settings}
@@ -99,7 +99,7 @@ Die Einstellungen im Bereich **Globale Cache-Einstellungen** wirken sich auf all
 
 ### Formularentwürfe zwischenspeichern {#caching-form-designs}
 
-Wenn der Forms-Dienst eine Wiedergabeanforderung erhält, werden die Formularentwürfe aus dem Repository abgerufen und zwischengespeichert. Diese Zwischenspeicherung verbessert die Leistung, da der Forms-Dienst für folgende Wiedergabeanforderungen die Formularentwürfe aus dem Zwischenspeicher und nicht aus dem Repository abruft.
+Wenn der Forms-Dienst eine Wiedergabeanforderung erhält, werden die Formularentwürfe aus dem Repository abgerufen und zwischengespeichert. Diese Zwischenspeicherung verbessert die Leistung, da der Forms-Service für folgende Wiedergabeanforderungen die Formularentwürfe aus dem Zwischenspeicher und nicht aus dem Repository abruft.
 
 Der Forms-Dienst speichert Formularentwürfe immer auf dem Datenträger zwischen. Wenn Formularentwürfe auf dem Server gespeichert werden, werden diese Dateien als Datenträgercache bezeichnet. Der Forms-Dienst speichert außerdem Formularentwürfe im Arbeitsspeicher zwischen, gemäß der Einstellung im Bereich **Arbeitsspeichercache für Vorlagenkonfiguration**. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Forms-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter [Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
