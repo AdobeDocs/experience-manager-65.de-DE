@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1920'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Best Practices für Workflows{#workflow-best-practices}
 
-Workflows ermöglichen die Automatisierung von Adobe Experience Manager (AEM)-Aktivitäten.
+Workflows ermöglichen die Automatisierung von Aktivitäten in Adobe Experience Manager (AEM).
 
 Da sie häufig einen Großteil der Verarbeitung in einer AEM-Umgebung ausmachen, kann es sich negativ auf das System auswirken, wenn benutzerdefinierte Workflow-Schritte nicht unter Berücksichtigung der Best Practices erstellt oder vorgefertigte Workflows nicht so konfiguriert werden, dass eine möglichst effiziente Ausführung gewährleistet ist.
 
@@ -108,6 +108,7 @@ Workflow-Modelle werden im Repository auf der Grundlage ihres Typs gespeichert:
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Modelle.
    >* Lassen Sie alles in `/libs` unverändert.
+
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
@@ -143,6 +144,7 @@ Definitionen für Workflow-Starter werden im Repository ebenfalls auf der Grundl
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Starter.
    >* Lassen Sie alles in `/libs` unverändert.
+
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
@@ -174,6 +176,7 @@ Workflow-Skripte werden im Repository ebenfalls auf der Grundlage ihres Typs ges
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Skripte.
    >* Lassen Sie alles in `/libs` unverändert.
+
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
@@ -201,6 +204,7 @@ Workflow-Benachrichtigungen werden im Repository ebenfalls auf der Grundlage ihr
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Benachrichtigungsdefinitionen.
    >* Lassen Sie alles in `/libs` unverändert.
+
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
@@ -293,7 +297,7 @@ Wenn Sie ein Workflow-Modell entwerfen, können Sie den Handler-Fortschritt für
 
 Es wird empfohlen, den Handler-Fortschritt zu verwenden, da sich dadurch die Leistung verbessert.
 
-### Workflow-Phasen {#workflow-stages}
+### Phasen eines Workflows {#workflow-stages}
 
 Sie können [Workflow-Statuswerte](/help/sites-developing/workflows.md#workflow-stages) definieren und Aufgaben/Schritte einem bestimmten Workflow-Status zuweisen.
 
