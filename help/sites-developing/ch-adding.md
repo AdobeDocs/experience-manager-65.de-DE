@@ -3,9 +3,9 @@ title: Hinzufügen von ContextHub zu Seiten und Zugreifen auf Speicher
 description: Fügen Sie Ihren Seiten ContextHub hinzu, um die ContextHub-Funktionen zu aktivieren und eine Verknüpfung mit den ContextHub-JavaScript-Bibliotheken herzustellen
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '927'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -103,11 +103,11 @@ Einzelne Datenelemente werden als Schlüssel-Wert-Paare gespeichert. Zum Speiche
 * [getItem](contexthub-api.md#getitem-key)
 * [setItem](contexthub-api.md#setitem-key-value-options)
 
-Beachten Sie, dass benutzerdefinierte Speicherkandidaten weitere Funktionen definieren können, die den Zugriff auf Store-Daten ermöglichen.
+Beachten Sie, dass benutzerdefinierte Speicherkandidaten weitere Funktionen definieren können, die den Zugriff auf Speicherdaten ermöglichen.
 
 >[!NOTE]
 >
->ContextHub kennt nicht standardmäßig die aktuell angemeldeten Benutzer, die auf Veröffentlichungs-Servern verwendet werden, und diese Benutzer werden von ContextHub als &quot;Anonym&quot;betrachtet.
+>Standardmäßig sind die derzeit bei Veröffentlichungs-Servern angemeldeten Benutzenden ContextHub nicht bekannt und werden von ContextHub als anonyme Benutzende betrachtet.
 >
 >Sie können ContextHub über angemeldete Benutzer informieren, indem Sie den Profil-Store laden. Den Beispiel-Code finden Sie [auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/blob/master/ui.apps/src/main/content/jcr_root/apps/weretail/components/structure/header/clientlib/js/utilities.js).
 
