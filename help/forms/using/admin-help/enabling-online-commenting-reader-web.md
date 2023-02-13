@@ -1,5 +1,5 @@
 ---
-title: Onlinekommentierung für Adobe Reader-Webbrowser-Plug-In aktivieren
+title: Aktivieren der Online-Kommentierung für das Adobe Reader-Plug-in für Webbrowser
 seo-title: Enabling online commenting for Adobe Reader web browser plug-in
 description: Erfahren Sie, wie Sie Online-Kommentare für Adobe Reader-Webbrowser-Plug-In aktivieren.
 seo-description: Learn how to enable online commenting for Adobe Reader web browser plug-in.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9c4f8e1e-c2f7-4648-9a2a-104bd540a47a
 exl-id: 6db1e998-f810-4715-b0b7-981e8d807cf8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '113'
 ht-degree: 100%
 
 ---
 
-# Onlinekommentierung für Adobe Reader-Webbrowser-Plug-In aktivieren {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
+# Aktivieren der Online-Kommentierung für das Adobe Reader-Plug-in für Webbrowser {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
 
 Zum Aktivieren der „Kommentieren und markieren“-Werkzeugleiste in einer PDF-Datei, die mithilfe des Adobe Reader-Webbrowser-Plug-Ins angezeigt wird, muss ein Back-End für die Zusammenarbeit vorhanden sein, wie z. B. ein Überarbeitungsserver. Steht kein Back-End für die Zusammenarbeit zur Verfügung, müssen Sie die PDF-Datei auf Ihrem Computer speichern, sie dort in Adobe Reader überarbeiten und markieren und sie anschließend an den Absender zurücksenden.
 
