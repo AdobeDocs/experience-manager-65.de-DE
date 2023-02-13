@@ -1,5 +1,5 @@
 ---
-title: Entwickeln von AEM-Komponenten – Codebeispiele
+title: Entwickeln von AEM-Komponenten – Code-Beispiele
 seo-title: Developing AEM Components - Code Samples
 description: In diesem Abschnitt sind einige Beispiele dazu aufgeführt, wie Sie eigene Komponenten für AEM erstellen können.
 seo-description: This section provides some examples on how to create your own components for AEM.
@@ -12,13 +12,13 @@ discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
 ht-degree: 100%
 
 ---
 
-# Entwickeln von AEM-Komponenten – Codebeispiele{#developing-aem-components-code-samples}
+# Entwickeln von AEM-Komponenten – Code-Beispiele{#developing-aem-components-code-samples}
 
 In diesem Abschnitt sind einige Beispiele dazu aufgeführt, wie Sie eigene Komponenten für AEM erstellen können.
 
