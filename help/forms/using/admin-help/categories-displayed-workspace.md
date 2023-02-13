@@ -1,5 +1,5 @@
 ---
-title: Die in Workspace angezeigten Kategorien verwalten
+title: Verwalten der in Workspace angezeigten Kategorien
 seo-title: Managing the categories displayed in Workspace
 description: In Workspace werden die Prozesse, die ein Benutzer starten kann, in Kategorien im linken Navigationsbereich angezeigt. Erfahren Sie, wie Sie diese Kategorien verwalten können, die im Arbeitsbereich angezeigt werden.
 seo-description: In Workspace, the processes that a user can start are displayed in categories in the left navigation pane. Learn how you can manage these categories displayed in Workspace.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0d1536a2-10ac-4031-bd7f-264b02d0d75f
 exl-id: 62621fe9-f69f-4bc0-aecc-d7bcc3064516
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '481'
 ht-degree: 100%
 
 ---
 
-# Die in Workspace angezeigten Kategorien verwalten {#managing-the-categories-displayed-in-workspace}
+# Verwalten der in Workspace angezeigten Kategorien {#managing-the-categories-displayed-in-workspace}
 
 In Workspace werden die Prozesse, die ein Benutzer starten kann, in Kategorien im linken Navigationsbereich angezeigt. Sie können die Kategorien in Administration Console einrichten oder Prozessdesigner können sie in Workbench einrichten. Wenn Prozessdesigner Prozesse erstellen, weisen sie diesen Kategorien zu.
 
