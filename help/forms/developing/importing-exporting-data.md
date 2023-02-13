@@ -12,9 +12,9 @@ discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
 source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2778'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -181,7 +181,7 @@ Importieren von Formulardaten mit der Form Data Integration-API (Java):
 
 1. Speichern Sie das Formular als PDF-Datei.
 
-   * Erstellen Sie eine `java.io.File` -Objekt ein und stellen Sie sicher, dass die Dateierweiterung &quot;.PDF&quot;lautet.
+   * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung „.PDF“ lautet.
    * Rufen Sie die `copyToFile`-Methode des `Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `importData`-Methode zurückgegeben wurde).
 
 **Siehe auch**
