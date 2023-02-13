@@ -11,7 +11,7 @@ discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1147'
 ht-degree: 100%
 
@@ -23,7 +23,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 ## Editor für adaptive Formulare {#adaptiveformeditor}
 
-| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter Mac OS** |
+| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter macOS** |
 |---|---|---|
 | Öffnen des Eigenschaften-Browsers für die ausgewählte Komponente eines adaptiven Formulars | Alt+Eingabe | Alt+Eingabe |
 | Eigenschaftenbrowser für die ausgewählte Komponente eines adaptiven Formulars schließen | Strg+Alt+W | Befehl+Alt+W |
@@ -38,7 +38,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 | Komponente(n) einfügen | Strg+V | Strg+V |
 | Ausgewählte Komponente(n) löschen | Strg+Entf | Strg+Entf |
 | Ausgewählte Komponente(n) löschen | Strg+Rücktaste | Strg+Rücktaste |
-| Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+B | Strg+B&amp;ast; |
+| Fettdruck von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschaumodus | Strg+B | Strg+B&amp;ast; |
 | Kursiv Formatieren von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschaumodus | Strg+I | Strg+I&amp;ast; |
 | Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+U | Strg+U&amp;ast; |
 
@@ -57,7 +57,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 ## Themen-Editor  {#themeeditor}
 
-| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter Mac OS** |
+| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter macOS** |
 |---|---|---|
 | Eigenschaftenbrowser für die ausgewählte Komponente in einem Design öffnen | Alt+Eingabe | Alt+Eingabe |
 | Eigenschaftenbrowser für die ausgewählte Komponente in einem Design schließen | Strg+Alt+W | Befehl+Alt+W |
@@ -71,7 +71,7 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 ## Inhaltsbrowser  {#contentbrowser}
 
-| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter Mac OS** |
+| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter macOS** |
 |---|---|---|
 | Alle Akkordeons in der Formularobjektstruktur anzeigen, wenn im Fokus | Strg+A, um alle Akkordeons auszuwählen, dann nach-rechts-Taste zum Erweitern | Befehl+A, um alle Akkordeons auszuwählen, dann nach-rechts-Taste zum Erweitern |
 | Alle Akkordeons in der Formularobjektstruktur ausblenden, wenn im Fokus | Strg+A, um alle Akkordeons auszuwählen, dann nach-links-Taste zum Ausblenden | Befehl+A, um alle Akkordeons auszuwählen, dann nach-links-Taste zum Ausblenden |
