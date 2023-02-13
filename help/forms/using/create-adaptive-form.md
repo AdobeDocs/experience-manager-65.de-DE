@@ -1,5 +1,5 @@
 ---
-title: '''Schulung: Erstellen eines adaptiven Formulars'''
+title: '„Tutorial: Erstellen eines adaptiven Formulars“'
 seo-title: Create an adaptive form
 description: Lernen Sie, ein adaptives Formular zu erstellen, zu gestalten und in der Vorschau anzuzeigen. Informieren Sie sich auch über das Konfigurieren von Sendeaktionen.
 seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
@@ -9,7 +9,7 @@ discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1376'
 ht-degree: 100%
 
