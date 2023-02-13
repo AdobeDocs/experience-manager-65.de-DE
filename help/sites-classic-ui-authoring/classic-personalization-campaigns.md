@@ -1,7 +1,7 @@
 ---
-title: Kampagnenmanagement
+title: Kampagnen-Management
 seo-title: Campaign Management
-description: Das Kampagnenmanagement bietet E-Marketing-Experten die Möglichkeit, personalisierte Inhalte bereitzustellen und so individuelle Erlebnisse für Besucher zu schaffen. Es bietet Ihnen die Möglichkeit, Marketing-Kampagnen für Internet, E-Mail und Mobilgeräte zu erstellen und so Benutzerinteraktionen auszulösen.
+description: Das Kampagnen-Management bietet E-Marketing-Fachleuten die Möglichkeit, personalisierte Inhalte bereitzustellen und so individuelle Erlebnisse für Besucher zu schaffen. Es bietet Ihnen die Möglichkeit, Marketing-Kampagnen für Internet, E-Mail und Mobilgeräte zu erstellen und so Benutzerinteraktionen auszulösen.
 seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
 uuid: 202d614b-a607-45de-8c24-1ee66b230315
 contentOwner: Chris Bohnert
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '628'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
-# Kampagnenmanagement{#campaign-management}
+# Kampagnen-Management{#campaign-management}
 
 Das Kampagnenmanagement bietet E-Marketing-Experten die Möglichkeit, personalisierte Inhalte bereitzustellen und so individuelle Erlebnisse für Besucher zu schaffen.
 
@@ -27,28 +27,28 @@ In diesem Dokument werden die verschiedenen Elemente beschrieben, aus denen Kamp
 
 * [Teaser und Strategien](/help/sites-classic-ui-authoring/classic-personalization-campaigns-teasers-strategy.md)
 * [E-Mail-Marketing](/help/sites-classic-ui-authoring/classic-personalization-campaigns-email.md)
-* [Landing Pages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
-* [Adobe Target-Angebote](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
+* [Landing-Pages](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md)
+* [Target-Angebote](/help/sites-classic-ui-authoring/classic-personalization-campaigns-target-offers.md)
 * [Arbeiten mit dem Marketing Campaign Manager](/help/sites-classic-ui-authoring/classic-personalization-campaigns-mktg-manager.md)
 * [Grundlegendes zur Segmentierung](/help/sites-classic-ui-authoring/classic-personalization-campaigns-segmentation.md)
-* [Konzeption einer Kampagne](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
+* [Einrichten einer Kampagne](/help/sites-classic-ui-authoring/classic-personalization-campaigns-setting-up-your.md)
 
 Das Kampagnenmanagement umfasst verschiedene Elemente:
 
 * **Marken**
-In AEM bilden Marken die oberste Ebene und bilden eine Sammlung von 
-**Kampagnen**.
+In AEM bilden Marken die höchste Ebene und stellen eine Sammlung von 
+**Kampagnen** dar.
 
 * **Kampagnen**
-Eine Kampagne ist eine Kollektion einzelner 
+Eine Kampagne ist eine Sammlung einzelner 
 **Erlebnisse**.
 
 * **Erlebnisse**
-Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher unter 
-**Touchpoints**. Es gibt verschiedene Erlebnistypen:
+Die zielgerichteten Inhalte bilden verschiedene Erlebnisse, die Besuchern an 
+**Touchpoints** präsentiert werden. Es gibt verschiedene Erlebnistypen:
 
    * **Teasers**
-      [Teaser-Seiten/-Absätze](#teasers) dienen dazu, bestimmte Besucher-**Segmente** zu Inhalten zu leiten, die auf ihre Interessen ausgerichtet sind.
+      [Teaser-Seiten/-Absätze](#teasers) dienen dazu, bestimmte **Besuchersegmente** zu Inhalten zu leiten, die auf ihre Interessen ausgerichtet sind.
 
       Teaser-Seiten bieten folgende Möglichkeiten:
 
@@ -59,11 +59,11 @@ Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher unt
 
    * **Newsletter**
 
-      [E-Mail-Kommunikation](#emailmarketing) werden verwendet, um Benutzer zu binden und sie zu ermutigen, Ihre Website zu besuchen. Im Allgemeinen haben sie die Form eines Newsletters, der an die **Leads** gesendet wird (die im Allgemeinen in **Listen** unterteilt sind). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.  Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+      [E-Mail-Nachrichten](#emailmarketing) werden verwendet, um Benutzer einzubinden und sie zum Besuchen der Website anzuregen. Im Allgemeinen haben sie die Form eines Newsletters, der an die **Leads** gesendet wird (die im Allgemeinen in **Listen** unterteilt sind). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen. Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
-       Dies ermöglicht die Integration in Adobe Target (ehemals Test&amp;Target), das Marketing-Experten für die Konversion ein Website-Optimierungs-Tool mit den erforderlichen Möglichkeiten bietet, um Online-Inhalte und -Angebote für Kunden relevanter zu machen und so höhere Konversionswerte zu erzielen. Adobe Target bietet eine intuitive Benutzeroberfläche für das Entwickeln und Ausführen von Tests, das Erstellen von Zielgruppensegmenten sowie das Targeting von Inhalten – und das alles in einer einzigen Anwendung.
+       Dies ermöglicht die Integration mit Adobe Target (ehemals Test&amp;Target), das Marketingexperten für die Konversion ein Website-Optimierungs-Tool mit den erforderlichen Funktionen bietet, um Online-Inhalte und -Angebote für Kunden relevanter zu machen und so höhere Konversionswerte zu erzielen. Adobe Target bietet eine intuitive Benutzeroberfläche für das Entwickeln und Ausführen von Tests, das Erstellen von Zielgruppensegmenten sowie das Targeting von Inhalten – und das alles in einer einzigen Anwendung.
 
 
 * **Touchpoints**
@@ -76,13 +76,13 @@ Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher unt
 
    Die Informationen, die Sie über Ihre Besucher und die Kontaktaufnahme mit ihnen gesammelt haben, bildet die Grundlage für Ihre Leads. **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
 
-    Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+   Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
 * **Listen**
 
    Leads werden im Allgemeinen in Listen gruppiert, damit Sie kollektive Aktionen auf sie anwenden können. Hinweis: **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
 
-    Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+   Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
 * **Segmente**
 
