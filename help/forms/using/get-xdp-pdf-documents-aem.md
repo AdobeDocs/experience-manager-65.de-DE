@@ -1,5 +1,5 @@
 ---
-title: XDP- und PDF-Dokumente in AEM Forms übernehmen
+title: Übernehmen von XDP- und PDF-Dokumenten in AEM Forms
 seo-title: Getting XDP and PDF documents in AEM Forms
 description: Mit AEM Forms können Sie Formulare und unterstützte Assets hochladen, um sie mit adaptiven Formularen zu verwenden. Sie können Formulare und zugehörige Ressourcen im Stapel als ZIP-Datei hochladen.
 seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
@@ -12,13 +12,13 @@ docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '673'
 ht-degree: 100%
 
 ---
 
-# XDP- und PDF-Dokumente in AEM Forms übernehmen{#getting-xdp-and-pdf-documents-in-aem-forms}
+# Übernehmen von XDP- und PDF-Dokumenten in AEM Forms{#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Übersicht {#overview}
 
