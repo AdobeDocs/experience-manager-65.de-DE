@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e6e7e2fa-579d-4b36-8598-6ced469a94b1
 exl-id: 606e84f2-6728-47a9-a439-dbe2e55100ad
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '278'
 ht-degree: 100%
 
 ---
 
-# User Management für einen SSL-aktivierten LDAP-Server konfigurieren {#configure-user-management-for-an-ssl-enabled-ldap-server}
+# Konfigurieren der Benutzerverwaltung für einen SSL-aktivierten LDAP-Server {#configure-user-management-for-an-ssl-enabled-ldap-server}
 
 Damit die Synchronisierung ordnungsgemäß über LDAPS erfolgen kann, müssen die von einer Zertifizierungsstelle ausgestellten LDAP-Zertifikate in der JRE-Umgebung (Java Runtime Environment) des Anwendungsservers vorhanden sein. Importieren Sie das Zertifikat in die Datei „cacerts“ des Anwendungsservers, die sich in der Regel im Ordner „*[JAVA_HOME]*/jre/lib/security/cacerts“ befindet.
 
