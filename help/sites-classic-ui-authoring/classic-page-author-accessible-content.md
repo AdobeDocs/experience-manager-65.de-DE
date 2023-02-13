@@ -12,9 +12,9 @@ content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9211'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -202,7 +202,7 @@ Diese Richtlinie behandelt Web-Inhalte, die *zeitbasiert* sind. Es handelt sich 
 ### Nur-Audio und Nur-Video (aufgezeichnet) (1.2.1) {#audio-only-and-video-only-pre-recorded}
 
 * Erfolgskriterium 1.2.1
-* Stufe A
+* Level A
 * Nur-Audio und Nur-Video (aufgezeichnet): Für aufgezeichnete Nur-Audio und Nur-Video-Medien gilt Folgendes, außer wenn das Audio oder Video eine Medienalternative für Text und als solche ausdrücklich gekennzeichnet ist:
 
    * Aufgezeichnetes Nur-Audio: Eine Alternative für zeitbasierte Medien wird bereitgestellt, die gleichwertige Informationen für aufgezeichnete Nur-Audio-Inhalte darstellt.
@@ -251,7 +251,7 @@ Das Einfügen von Multimedia wie Flash-Inhalten auf Ihren AEM-Webseiten entspric
 ### Untertitel (aufgezeichnet) (1.2.2)     {#captions-pre-recorded}
 
 * Erfolgskriterium 1.2.2
-* Stufe A
+* Level A
 * Untertitel (aufgezeichnet): Untertitel werden für alle aufgezeichneten Audioinhalte in synchronisierten Medien bereitgestellt, außer wenn das Medium eine Medienalternative für Text und als solche ausdrücklich gekennzeichnet ist.
 
 #### Zweck: Untertitel (aufgezeichnet) (1.2.2)     {#purpose-captions-pre-recorded}
@@ -285,7 +285,7 @@ Wenn Sie offene Untertitel verwenden müssen, betten Sie den Text im Videotrack�
 ### Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3)     {#audio-description-or-media-alternative-pre-recorded}
 
 * Erfolgskriterium 1.2.3
-* Stufe A
+* Level A
 * Audiobeschreibung oder Medienalternative (aufgezeichnet): Eine Alternative für zeitbasierte Medien oder eine Audiobeschreibung des aufgezeichneten Videoinhalts wird für synchronisierte Medien bereitgestellt, außer wenn das Medium eine Medienalternative für Text und als solche ausdrücklich gekennzeichnet ist.
 
 #### Zweck: Audiobeschreibung oder Medienalternative (aufgezeichnet) (1.2.3)     {#purpose-audio-description-or-media-alternative-pre-recorded}
@@ -372,7 +372,7 @@ Diese Richtlinie behandelt die Anforderungen zur Unterstützung folgender Person
 ### Informationen und Beziehungen (1.3.1)              {#info-and-relationships}
 
 * Erfolgskriterium 1.3.1
-* Stufe A
+* Level A
 * Informationen und Beziehungen: Informationen, Struktur und Beziehungen, die durch die Präsentation vermittelt werden, können programmatisch festgelegt werden oder sind im Text verfügbar.
 
 #### Zweck: Informationen und Beziehungen (1.3.1) {#purpose-info-and-relationships}
@@ -511,7 +511,7 @@ Sie können folgendermaßen sicherstellen, dass Ihre Web-Seiten die entsprechend
 ### Sensorische Eigenschaften (1.3.3)          {#sensory-characteristics}
 
 * Erfolgskriterium 1.3.3
-* Stufe A
+* Level A
 * Sensorische Eigenschaften: Anweisungen, die zum Verstehen und Bedienen von Inhalt verfügbar sind, beziehen sich nicht nur auf sensorische Eigenschaften der Komponenten wie Form, Größe, visuelle Position, Ausrichtung oder Klang.
 
 #### Zweck: Sensorische Eigenschaften (1.3.3) {#purpose-sensory-characteristics}
@@ -545,7 +545,7 @@ Die Verwendung beschreibender Begriffe ist dann akzeptabel, wenn diese auch in e
 ### Verwendung von Farbe (1.4.1)  {#use-of-color}
 
 * Erfolgskriterium 1.4.1
-* Stufe A
+* Level A
 * Verwendung von Farbe: Farbe wird nicht als einziges visuelles Mittel eingesetzt, um Informationen zu vermitteln, eine Aktion zu kennzeichnen, eine Antwort einzuholen oder ein visuelles Element zu unterscheiden.
 
 >[!NOTE]
@@ -592,7 +592,7 @@ Wenn Farbe als Hinweis für Informationen verwendet wird, sollten Sie für einen
 
 * [Erfolgskriterien 1.4.1 verstehen](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 * [Erfolgskriterien 1.4.1 erfüllen](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
-* [Anleitung zum Erzielen eines Kontrastverhältnisses von 3:1 mit einer Liste Web-sicherer Farben](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
+* [Anleitung für das Erzielen eines Kontrastverhältnisses von 3:1 mit einer Liste Web-sicherer Farben](https://www.w3.org/TR/2008/NOTE-WCAG20-TECHS-20081211/working-examples/G183/link-contrast.html)
 
 ### Kontrast (Minimum) (1.4.3) {#contrast-minimum}
 
@@ -665,7 +665,7 @@ Wenn Bilder von Text verwendet werden müssen, nutzen Sie CSS, um die Bilder von
 ### Pausieren, Beenden, Ausblenden (2.2.2)          {#pause-stop-hide}
 
 * Erfolgskriterium 2.2.2
-* Stufe A
+* Level A
 * Pausieren, Beenden, Ausblenden: Für sich bewegende, blinkende, scrollende oder sich automatisch aktualisierende Informationen gelten folgenden Regeln:
 
    * Sich bewegend, blinkend, scrollend: Für alle sich bewegenden, blinkenden oder scrollenden Informationen, die (a) automatisch starten, (b) länger als 5 Sekunden dauern und (c) parallel zu anderen Inhalten dargestellt werden, muss es einen Mechanismus für den Benutzer geben, um diese zu pausieren, zu beenden oder auszublenden, sofern die Bewegung, das Blinken oder das Scrollen nicht Teil einer Aktivität ist, bei der dies erforderlich ist.
@@ -704,7 +704,7 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit 
 ### Grenzwert von maximal dreimaligem Blitzen (2.3.1)     {#three-flashes-or-below-threshold}
 
 * Erfolgskriterium 2.3.1
-* Stufe A
+* Level A
 * Grenzwert von maximal dreimaligem Blitzen: Web-Seiten dürfen nichts enthalten, das in einem Zeitraum von einer Sekunde öfter als dreimal blitzt oder dessen Blitz unterhalb der allgemeinen Grenzwerte für Blitze und rote Blitze liegt.
 
 >[!NOTE]
@@ -729,7 +729,7 @@ Stellen Sie sicher, dass die folgenden Techniken zur Anwendung kommen:
 ### Seite mit Titel versehen (2.4.2)          {#page-titled}
 
 * Erfolgskriterium 2.4.2
-* Stufe A
+* Level A
 * Seite mit Titel versehen: Web-Seiten haben einen Titel, der das Thema oder den Zweck beschreibt
 
 #### Zweck - Seite mit Titel versehen (2.4.2) {#purpose-page-titled}
@@ -750,7 +750,7 @@ Sie können den Seitentitel auch gemeinsam mit der Seite bearbeiten, indem Sie *
 ### Link-Zweck (im Kontext) (2.4.4)          {#link-purpose-in-context}
 
 * Erfolgskriterium 2.4.4
-* Stufe A
+* Level A
 * Link-Zweck (im Kontext): Der Zweck jedes Links kann allein durch den Link-Text oder durch den Link-Text zusammen mit dem programmatisch festgelegten Link-Kontext bestimmt werden. Ausgenommen sind Fälle, in denen der Zweck des Links für Benutzer generell mehrdeutig ist.
 
 #### Zweck - Link-Zweck (im Kontext) (2.4.4) {#purpose-link-purpose-in-context}
@@ -824,7 +824,7 @@ Alternativ können Skripts verwendet werden. Dabei wird im Link selbst ein minim
 ### Sprache der Seite (3.1.1) {#language-of-page}
 
 * Erfolgskriterium 3.1.1
-* Stufe A
+* Level A
 * Sprache der Seite: Die voreingestellte menschliche Sprache einer Web-Seite kann programmatisch bestimmt werden.
 
 #### Zweck - Sprache der Seite (3.1.1) {#purpose-language-of-page}
@@ -869,7 +869,7 @@ Seiten, die dieses Erfolgskriterium erfüllen, bieten folgende Möglichkeiten:
 
 #### Erfüllen - Sprache von Teilen (3.1.2) {#how-to-meet-language-of-parts}
 
-Mit dem Attribut `lang` können Änderungen der Sprache des Inhalts ermittelt werden. Beispielsweise kann ein deutschsprachiges Zitat (ISO 639-1-Code &quot;de&quot;) wie folgt angezeigt werden:
+Mit dem Attribut `lang` können Änderungen der Sprache des Inhalts ermittelt werden. Ein deutschsprachiges Zitat (ISO 639-1 Code „de“) kann z. B. wie folgt angezeigt werden:
 
 ```xml
 <blockquote cite = "John F. Kennedy" lang = "de">
@@ -903,7 +903,7 @@ Um ein span-Element mit der entsprechenden Sprache hinzuzufügen, können Sie Ih
 ### Beschriftungen oder Anweisungen (3.3.2)     {#labels-or-instructions}
 
 * Erfolgskriterium 3.3.2
-* Stufe A
+* Level A
 * Beschriftungen oder Anweisungen: Wenn der Inhalt eine Eingabe durch den Benutzer erfordert, werden Beschriftungen oder Anweisungen bereitgestellt.
 
 #### Zweck - Beschriftungen oder Anweisungen (3.3.2) {#purpose-labels-or-instructions}
@@ -926,7 +926,7 @@ Wenn Bild-Schaltflächen verwendet werden (z. B. die Komponente **Bild-Schaltfl�
 
 #### Gruppen von Formularfeldern {#groups-of-form-fields}
 
-Bei einer Gruppe miteinander verbundener Steuerelemente, z. B. **Optionsfeldgruppe**, kann ein Titel für die Gruppe sowie einzelne Steuerelemente erforderlich sein. Wenn Sie einen Satz Optionsfelder in AEM hinzufügen, wird dieser Gruppentitel im Feld **Titel** bereitgestellt, während einzelne Titel als Optionsschaltflächen (**Elemente**) angegeben werden.
+Bei einer Gruppe miteinander verbundener Steuerelemente, z. B. **Optionsfeldgruppe**, kann ein Titel für die Gruppe sowie einzelne Steuerelemente erforderlich sein. Wenn Sie einen Satz Optionsfelder in AEM hinzufügen, gibt das Feld **Titel** diesen Gruppentitel an, während die einzelnen Titel beim Erstellen der Optionsfelder (**Elemente**) angegeben werden.
 
 ![Hinzufügen von Elementen zur Optionsfeldgruppe. Der Gruppentitel lautet „Contact me by“ - im Titel-Feld definiert.](assets/chlimage_1-24a.png)
 
