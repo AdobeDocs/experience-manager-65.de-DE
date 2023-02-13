@@ -10,15 +10,15 @@ discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '260'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
 # Verwenden des Rich-Text-Editors zum Erstellen von Inhalten {#use-rich-text-editor-to-author-content}
 
-Der Rich-Text-Editor (RTE) ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Im Editor können verschiedene Komponenten erstellt werden., einschließlich:
+Der Rich-Text-Editor (RTE) ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Sie können verschiedene Komponenten erstellen, einschließlich:
 
 * Text
 * Textbild
@@ -46,9 +46,9 @@ Diese Symbolleiste beinhaltet die folgenden Optionen:
 
 ## Bearbeiten im Vollbildmodus {#full-screen-editing}
 
-Tippen Sie bei textbasierten Komponenten in der Symbolleiste auf den Vollbildmodus. ![](do-not-localize/screen_shot_2018-03-21at163236.png) öffnet den Rich-Text-Editor und blendet den Rest des Seiteninhalts aus.
+Wenn für textbasierte Komponenten der Vollbildmodus in der Symbolleiste ![](do-not-localize/screen_shot_2018-03-21at163236.png) ausgewählt wird, öffnet sich der Rich-Text-Editor und der restliche Seiteninhalt wird ausgeblendet.
 
-Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie für die Bearbeitung verwenden können. Die Verfügbarkeit bietet Optionen [hängt von der Konfiguration ab](/help/sites-administering/rich-text-editor.md).
+Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Bearbeiten verwenden können. Die Verfügbarkeit der Optionen [hängt von der Konfiguration ab](/help/sites-administering/rich-text-editor.md).
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
