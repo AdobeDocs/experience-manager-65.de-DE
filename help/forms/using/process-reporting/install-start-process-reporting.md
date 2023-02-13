@@ -11,7 +11,7 @@ discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1710'
 ht-degree: 100%
 
@@ -86,7 +86,7 @@ Um den Veröffentlichungsplan zu ändern, führen Sie folgende Schritte durch:
 1. Neustarten der AEM Forms-Server-Instanz.
 1. Beenden der AEM Forms-Server-Instanz.
 1. Melden Sie sich bei Administration Console an. Die Standardadresse von WebLogic Administration Console lautet `https://[hostname]:[port]/console`.
-1. Klicken Sie unter „Change Center“ auf **Lock &amp; Edit**.
+1. Klicken Sie im Change Center auf **Sperren und bearbeiten**.
 1. Klicken Sie unter „Domain Structure“ auf **Environment** > **Servers** und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarten **Configuration** > **Server Start**.
 1. Fügen Sie im Feld „Arguments“ das JVM-Argument `-Dreporting.publisher.cron = <expression>` hinzu.
