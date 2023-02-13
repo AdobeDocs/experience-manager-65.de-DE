@@ -1,5 +1,5 @@
 ---
-title: Konfigurationsdatei importieren und exportieren
+title: Importieren und Exportieren der Konfigurationsdatei
 seo-title: Importing and exporting the configuration file
 description: Erfahren Sie, wie Sie die Konfigurationsdatei importieren und exportieren, damit Sie Serverpräferenzen bearbeiten oder eine andere AEM Forms-Produktinstanz konfigurieren können.
 seo-description: Learn how to import and export the configuration file in order to edit server preferences or configure another AEM forms product instance.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c1636537-f7dc-48d8-a3f0-9052bcd28b62
 exl-id: 225dbeb5-a21c-4338-98c7-e10c32973721
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '254'
 ht-degree: 100%
 
 ---
 
-# Konfigurationsdatei importieren und exportieren {#importing-and-exporting-the-configuration-file}
+# Importieren und Exportieren der Konfigurationsdatei {#importing-and-exporting-the-configuration-file}
 
 Auf der Seite „Manuelle Konfiguration“ können Sie eine Kopie der Konfigurationseinstellungen im XML-Format herunterladen. Die Einstellungen in dieser Datei steuern sämtliche Servervoreinstellungen. Sie können die Datei dann bearbeiten und wieder auf den Server hochladen. Sie können die Datei auch zum Konfigurieren einer weiteren AEM Forms-Produktinstanz verwenden.
 
