@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '997'
 ht-degree: 100%
 
@@ -145,7 +145,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>consult</td>
    <td>ProcessManagementTaskService</td>
-   <td>konsultieren</td>
+   <td>consult</td>
    <td>Bespricht eine Aufgabe mit einem anderen Benutzer.</td>
   </tr>
   <tr>
@@ -175,7 +175,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>abandon</td>
    <td>ProcessManagementTaskService</td>
-   <td>Abbruch</td>
+   <td>abandon</td>
    <td>Löscht eine Aufgabe.</td>
   </tr>
   <tr>
@@ -223,7 +223,7 @@ Die folgenden APIs werden in AEM FormsWorkspace verwendet.
   <tr>
    <td>revokeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
-   <td>cancelQueueAccess</td>
+   <td>revokeQueueAccess</td>
    <td>Entfernt einen Benutzer aus der Liste der Benutzer, die Zugriff auf die Warteschlange des angemeldeten Benutzers haben.</td>
   </tr>
   <tr>
