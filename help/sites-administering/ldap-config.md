@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1648'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Die Verwendung solcher Konten ist für Ihre Benutzer transparent. Sie erkennen k
 
 In AEM 6 umfasst die LDAP-Unterstützung eine neue Implementierung, für die im Vergleich zu früheren Versionen ein anderer Konfigurationstyp erforderlich ist.
 
-Alle LDAP-Konfigurationen sind jetzt als OSGi-Konfigurationen verfügbar. Sie können über die Web-Management-Konsole konfiguriert werden unter:
+Alle LDAP-Konfigurationen sind jetzt als OSGi-Konfigurationen verfügbar. Sie können über die folgende Webverwaltungskonsole konfiguriert werden:
 `https://serveraddress:4502/system/console/configMgr`
 
 Damit LDAP mit AEM verwendet werden kann, müssen Sie drei OSGi-Konfigurationen erstellen:
@@ -44,7 +44,7 @@ Damit LDAP mit AEM verwendet werden kann, müssen Sie drei OSGi-Konfigurationen 
 >
 >Sehen Sie sich das Tutorial [Oak&#39;s External Login Module – Authenticating with LDAP and Beyond](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) an, um sich ausführlich über externe Anmeldemodule zu informieren.
 >
->Weitere Informationen zum Konfigurieren von Experience Manager mit Apache DS finden Sie unter [Konfigurieren von Adobe Experience Manager 6.5 für Apache Directory Service](https://helpx.adobe.com/de/experience-manager/using/configuring-aem64-apache-directory-service.html).
+>Weitere Informationen zum Konfigurieren von Experience Manager mit Apache DS finden Sie unter [Konfigurieren von Adobe Experience Manager 6.5 für Apache Directory Service](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html).
 
 ## Konfigurieren des LDAP-Identitäts-Providers {#configuring-the-ldap-identity-provider}
 
@@ -57,8 +57,8 @@ Die folgenden Konfigurationsoptionen sind für den LDAP-Identitäts-Provider ver
 <table>
  <tbody>
   <tr>
-   <td><strong>LDAP-Anbietername</strong></td>
-   <td>Name dieser LDAP-Provider-Konfiguration.</td>
+   <td><strong>LDAP-Provider-Name</strong></td>
+   <td>Name dieser LDAP-Provider-Konfiguration</td>
   </tr>
   <tr>
    <td><strong>LDAP-Server-Hostname</strong><br /> </td>
@@ -66,14 +66,14 @@ Die folgenden Konfigurationsoptionen sind für den LDAP-Identitäts-Provider ver
   </tr>
   <tr>
    <td><strong>LDAP-Server-Anschluss</strong></td>
-   <td>Anschluss des LDAP-Servers</td>
+   <td>Die Anschlussnummer des LDAP-Servers</td>
   </tr>
   <tr>
    <td><strong>SSL verwenden</strong></td>
    <td>Gibt an, ob eine SSL-Verbindung (LDAPs) verwendet werden soll.</td>
   </tr>
   <tr>
-   <td><strong>Verwenden von TLS</strong></td>
+   <td><strong>TLS verwenden</strong></td>
    <td>Gibt an, ob TLS bei Verbindungen gestartet werden soll.</td>
   </tr>
   <tr>
@@ -85,8 +85,8 @@ Die folgenden Konfigurationsoptionen sind für den LDAP-Identitäts-Provider ver
    <td>DN des Benutzers für die Authentifizierung. Ohne Angabe erfolgt eine anonyme Bindung.</td>
   </tr>
   <tr>
-   <td><strong>Bindungskennwort</strong></td>
-   <td>Kennwort des Benutzers für die Authentifizierung</td>
+   <td><strong>Bindungspasswort</strong></td>
+   <td>Passwort des Benutzers für die Authentifizierung</td>
   </tr>
   <tr>
    <td><strong>Zeitüberschreitung der Suche</strong></td>
@@ -97,11 +97,11 @@ Die folgenden Konfigurationsoptionen sind für den LDAP-Identitäts-Provider ver
    <td>Die maximale aktive Größe des Admin-Verbindungspools.</td>
   </tr>
   <tr>
-   <td><strong>Maximale Anzahl aktiver Benutzer-Pool</strong></td>
+   <td><strong>Maximale Anzahl aktiver Benutzerpools</strong></td>
    <td>Die maximale aktive Größe des Benutzerverbindungspools.</td>
   </tr>
   <tr>
-   <td><strong>Benutzerdefinierter DN</strong></td>
+   <td><strong>Benutzerbasis-DN</strong></td>
    <td>Der DN für Benutzersuchen</td>
   </tr>
   <tr>
@@ -113,15 +113,15 @@ Die folgenden Konfigurationsoptionen sind für den LDAP-Identitäts-Provider ver
    <td>Name des Attributs, das die Benutzer-ID enthält.</td>
   </tr>
   <tr>
-   <td><strong>Zusätzlicher Filter für Benutzer</strong></td>
-   <td>Zusätzlicher LDAP-Filter zur Verwendung bei der Suche nach Benutzern. Der endgültige Filter ist wie folgt formatiert: '(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)' (user.extraFilter)</td>
+   <td><strong>Zusätzlicher Filter für Benutzerinnen und Benutzer</strong></td>
+   <td>Zusätzlicher LDAP-Filter zur Verwendung bei der Suche nach Benutzerinnen und Benutzern. Der endgültige Filter ist wie folgt formatiert: '(&amp;(&lt;idAttr&gt;=&lt;userId&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)' (user.extraFilter)</td>
   </tr>
   <tr>
    <td><strong>Benutzer-DN-Pfade</strong></td>
    <td>Steuert, ob der DN zur Berechnung eines Teils des Zwischenpfads verwendet werden soll.</td>
   </tr>
   <tr>
-   <td><strong>Group base DN</strong></td>
+   <td><strong>Gruppenbasis-DN</strong></td>
    <td>Der Basis-DN für Gruppensuchen.</td>
   </tr>
   <tr>
@@ -129,19 +129,19 @@ Die folgenden Konfigurationsoptionen sind für den LDAP-Identitäts-Provider ver
    <td>Die Liste der Objektklassen, die ein Gruppeneintrag enthalten muss.</td>
   </tr>
   <tr>
-   <td><strong>Group name attribute</strong></td>
+   <td><strong>Gruppennamenattribut</strong></td>
    <td>Name des Attributs, das den Gruppennamen enthält.</td>
   </tr>
   <tr>
-   <td><strong>Zusätzlichen Filter gruppieren</strong></td>
-   <td>Zusätzlicher LDAP-Filter zur Verwendung bei der Suche nach Gruppen. Der endgültige Filter ist wie folgt formatiert: '(&amp;(&lt;nameattr&gt;=&lt;groupname&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'</td>
+   <td><strong>Zusätzlicher Filter für Gruppen</strong></td>
+   <td>Zusätzlicher LDAP-Filter zur Verwendung bei der Suche nach Gruppen. Der endgültige Filter ist wie folgt formatiert: '(&amp;(&lt;nameAttr&gt;=&lt;groupName&gt;)(objectclass=&lt;objectclass&gt;)&lt;extraFilter&gt;)'</td>
   </tr>
   <tr>
    <td><strong>Gruppen-DN-Pfade</strong></td>
    <td>Steuert, ob der DN zur Berechnung eines Teils des Zwischenpfads verwendet werden soll.</td>
   </tr>
   <tr>
-   <td><strong>Group member attribute</strong></td>
+   <td><strong>Gruppenmitgliedsattribut</strong></td>
    <td>Gruppenattribut, das die Mitglieder einer Gruppe enthält.</td>
   </tr>
  </tbody>
@@ -163,22 +163,22 @@ Die folgenden Konfigurationsoptionen sind für den Synchronisierungshandler verf
   </tr>
   <tr>
    <td><strong>User Expiration Time</strong></td>
-   <td>Dauer, bis ein synchronisierter Benutzer abgelaufen ist.</td>
+   <td>Dauer, bis synchronisierte Benutzerinnen und Benutzer abgelaufen sind.</td>
   </tr>
   <tr>
-   <td><strong>Automatische Benutzermitgliedschaft</strong></td>
-   <td>Liste der Gruppen, denen ein synchronisierter Benutzer automatisch hinzugefügt wird.</td>
+   <td><strong>User auto membership</strong></td>
+   <td>Liste der Gruppen, denen synchronisierte Benutzerinnen und Benutzer automatisch hinzugefügt werden.</td>
   </tr>
   <tr>
    <td><strong>User property mapping</strong></td>
    <td>Definition des Listen-Mappings für lokale Eigenschaften von externen.</td>
   </tr>
   <tr>
-   <td><strong>Benutzerpfadpräfix</strong></td>
-   <td>Das beim Erstellen neuer Benutzer verwendete Pfadpräfix.</td>
+   <td><strong>User Path Prefix</strong></td>
+   <td>Das beim Erstellen neuer Benutzerinnen und Benutzer verwendete Pfadpräfix.</td>
   </tr>
   <tr>
-   <td><strong>Ablauf der Benutzermitgliedschaft</strong></td>
+   <td><strong>User Membership Expiration</strong></td>
    <td>Zeitraum, nach dem die Mitgliedschaft abläuft.<br /> </td>
   </tr>
   <tr>
@@ -190,11 +190,11 @@ Die folgenden Konfigurationsoptionen sind für den Synchronisierungshandler verf
    <td>Dauer, bis eine synchronisierte Gruppe abläuft.</td>
   </tr>
   <tr>
-   <td><strong>Gruppenauto-Mitgliedschaft</strong></td>
-   <td>Liste der Gruppen, denen automatisch eine synchronisierte Gruppe hinzugefügt wird.</td>
+   <td><strong>Group auto membership</strong></td>
+   <td>Liste der Gruppen, denen eine synchronisierte Gruppe automatisch hinzugefügt wird.</td>
   </tr>
   <tr>
-   <td><strong>Gruppeneigenschaftszuordnung</strong></td>
+   <td><strong>Group property mapping</strong></td>
    <td>Definition des Listen-Mappings für lokale Eigenschaften von externen.</td>
   </tr>
   <tr>
@@ -214,12 +214,12 @@ Sie finden das externe Anmeldemodul in der Verwaltungskonsole unter dem Namen **
 
 Seine Aufgabe besteht in der Definition des zu verwendenden Identitäts-Providers und Synchronisierungshandlers, wodurch die beiden Module miteinander verbunden werden.
 
-Die folgenden Konfigurationsoptionen sind verfügbar:
+Folgende Konfigurationsoptionen sind verfügbar:
 
-| **JAAS Ranking** | Angabe des Rangs (d. h. der Sortierreihenfolge) dieses Anmeldemoduleintrags. Die Einträge sind in absteigender Reihenfolge sortiert (d. h., höher bewertete Konfigurationen werden zuerst aufgeführt). |
+| **JAAS Ranking** | Angabe des Rangs (d. h. der Sortierreihenfolge) dieses Anmeldemoduleintrags. Die Einträge sind in absteigender Reihenfolge sortiert (d. h., höher bewertete Konfigurationen werden zuerst aufgeführt). |
 |---|---|
-| **JAAS Control Flag** | Eigenschaft, die angibt, ob ein LoginModule erforderlich, REQUISITE, SUFFICIENT oder OPTIONAL ist. Weitere Informationen zur Bedeutung dieser Flags finden Sie in der JAAS-Konfigurationsdokumentation. |
-| **JAAS Realm** | Der Bereichsname (oder Anwendungsname), mit dem das LoginModule registriert wird. Ohne Angabe eines Bereichsnamens wird das Anmeldemodul mit einem Standardbereich registriert, wie in der Felix JAAS-Konfiguration konfiguriert. |
+| **JAAS Control Flag** | Eigenschaft, die angibt, ob ein Anmeldemodul REQUIRED, REQUISITE, SUFFICIENT oder OPTIONAL ist. Weitere Informationen zur Bedeutung dieser Kennzeichnungen finden Sie in der JAAS-Konfigurationsdokumentation. |
+| **JAAS Realm** | Der Bereichsname (oder Anwendungsname), mit dem das Anmeldemodul registriert wird. Ohne Angabe eines Bereichsnamens wird das Anmeldemodul mit einem Standardbereich registriert, wie in der Felix JAAS-Konfiguration konfiguriert. |
 | **Identity Provider Name** | Name des Identitäts-Providers. |
 | **Sync Handler Name** | Name des Synchronisierungs-Handlers. |
 
@@ -245,7 +245,7 @@ AEM 6 kann so konfiguriert werden, dass eine LDAP-Authentifizierung über SSL e
 
 1. Vergewissern Sie sich, dass eine funktionstüchtige SSL-Bibliothek installiert ist. Bei dieser Vorgehensweise wird beispielhaft OpenSSL verwendet.
 
-1. Erstellen Sie eine benutzerdefinierte OpenSSL-Konfigurationsdatei (.cnf). Kopieren Sie dazu die standardmäßige Konfigurationsdatei **openssl.cnf**und passen Sie sie an. Auf UNIX-Systemen befindet er sich normalerweise unter `/usr/lib/ssl/openssl.cnf`
+1. Erstellen Sie eine benutzerdefinierte OpenSSL-Konfigurationsdatei (.cnf). Kopieren Sie hierzu die standardmäßige Konfigurationsdatei **openssl.cnf** und passen Sie diese an. Auf UNIX-Systemen befindet sie sich im Normallfall unter `/usr/lib/ssl/openssl.cnf`.
 
 1. Erstellen Sie dann den Zertifizierungsstellen-Stammschlüssel, indem Sie den nachfolgenden Befehl an einem Terminal ausführen:
 
@@ -281,12 +281,12 @@ Zum Aktivieren der Debug-Protokollierung gehen Sie wie folgt vor:
 
 * Protokollebene: Debug
 * Protokolldatei: logs/ldap.log
-* Nachrichtenmuster: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Meldungsmuster: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.security.authentication.ldap
 
 * Protokollebene: Debug
 * Protokolldatei: logs/external.log
-* Nachrichtenmuster: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
+* Meldungsmuster: {0,date,dd.MM.yyyy HH:mm:ss.SSS} &amp;ast;{4}&amp;ast; {2} {3} {5}
 * Logger: org.apache.jackrabbit.oak.spi.security.authentication.external
 
 ## Hinweis zur Gruppenzuordnung {#a-word-on-group-affiliation}
