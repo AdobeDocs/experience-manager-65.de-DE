@@ -1,5 +1,5 @@
 ---
-title: Zwischenspeicherung für Output konfigurieren
+title: Konfigurieren der Zwischenspeicherung für die Ausgabe
 seo-title: Configuring caching for Output
 description: Der Ausgabe-Dienst speichert Formulardesigns, -fragmente und Bilder. Erfahren Sie, wie Sie die Zwischenspeicherung für die Ausgabe konfigurieren.
 seo-description: The Output service caches the form designs, fragments and images. Learn how to configure the caching for output.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5398abd-f62c-485d-9f4b-a316c0de2b6b
 exl-id: 1015f5c9-6ab8-4656-a5c8-40f82b9938b9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1440'
 ht-degree: 100%
 
 ---
 
-# Zwischenspeicherung für Output konfigurieren  {#configuring-caching-for-output}
+# Konfigurieren der Zwischenspeicherung für die Ausgabe  {#configuring-caching-for-output}
 
 Der Output-Dienst führt XML-Formulardaten mit einem in Designer erstellten Formularentwurf zusammen, um einen Dokumentausgabestream in einer Vielzahl von Formaten zu erstellen.
 
@@ -52,7 +52,7 @@ Dieser Cache-Modus gewährleistet, dass die neuesten Ressourcen verwendet werden
 
 **Nicht konditionale Zwischenspeicherung angeben**
 
-1. Klicken Sie in der Administration-Console auf Services > Ausgabe.
+1. Klicken Sie in der Administration-Console auf „Services“ > „Ausgabe“.
 1. Wählen Sie unter „Einstellungen für die Ausgabecache-Steuerung“ die Option „Bedingungslos“ aus und klicken Sie auf „Speichern“.
 
 ### Den Cacheprüfpunkt verwenden {#use-the-cache-check-point}
@@ -68,14 +68,14 @@ Verwenden Sie diesen Cache-Modus in Produktionsumgebungen mit hoher Leistung, in
 
 **Die Cacheprüfpunkt-Zeit zurücksetzen**
 
-1. Klicken Sie in der Administration-Console auf Services > Ausgabe.
+1. Klicken Sie in der Administration-Console auf „Services“ > „Ausgabe“.
 1. Klicken Sie unter „Einstellungen für die Ausgabecache-Steuerung“ auf die Option „Cacheprüfpunkt“.
 
 ### Den Inhalt des Zwischenspeichers zurücksetzen {#reset-the-cache-contents}
 
 Sie können den Inhalt des Zwischenspeichers jederzeit löschen. Nach dem Zurücksetzen des Zwischenspeichers ist die erste Anforderung für jedes Formular langsamer, da der Output-Dienst eine vollständige Wiedergabe ausführt und neue Inhalte für den Zwischenspeicher erstellt.
 
-1. Klicken Sie in der Administration-Console auf Services > Ausgabe.
+1. Klicken Sie in der Administration-Console auf „Services“ > „Ausgabe“.
 1. Klicken Sie unter „Einstellungen für die Ausgabecache-Steuerung“ auf die Option „Cache zurücksetzen“.
 
 ## Cache-Einstellungen konfigurieren {#configuring-cache-settings}
@@ -98,7 +98,7 @@ Die Einstellungen im Bereich **Globale Cache-Einstellungen** wirken sich auf all
 
 ### Formularentwürfe zwischenspeichern {#caching-form-designs}
 
-Wenn der Output-Dienst eine Wiedergabeanforderung erhält, werden die Formularentwürfe aus dem Repository oder aus einer HTTP-Quelle abgerufen und zwischengespeichert. Diese Zwischenspeicherung verbessert die Leistung, da der Output-Dienst für folgende Wiedergabeanforderungen die Formularentwürfe aus dem Zwischenspeicher und nicht aus dem Repository abruft.
+Wenn der Output-Dienst eine Wiedergabeanforderung erhält, werden die Formularentwürfe aus dem Repository oder aus einer HTTP-Quelle abgerufen und zwischengespeichert. Diese Zwischenspeicherung verbessert die Leistung, da der Ausgabe-Service für folgende Wiedergabeanforderungen die Formularentwürfe aus dem Zwischenspeicher und nicht aus dem Repository abruft.
 
 Der Output-Dienst speichert Formularentwürfe immer auf dem Datenträger zwischen. Wenn Formularentwürfe auf dem Server gespeichert werden, werden diese Dateien als Datenträgercache bezeichnet. Der Output-Dienst speichert außerdem Formularentwürfe im Arbeitsspeicher zwischen, gemäß der Einstellung im Bereich **Arbeitsspeichercache für Vorlagenkonfiguration**. Wenn Sie eine dieser Einstellungen ändern, starten Sie den Output-Dienst neu, damit die Änderung wirksam wird. Verwenden Sie zum Neustart dieses Dienstes entweder Workbench, oder folgen Sie den Anweisungen unter [Dienste starten oder beenden, die AEM Forms-Modulen zugeordnet sind](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules).
 
