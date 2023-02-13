@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3138'
 ht-degree: 100%
 
@@ -307,7 +307,7 @@ Weitere Informationen zum optimalen Arbeiten mit adaptiven Formularen finden Sie
 
 ### Seitensymbolleiste {#page-toolbar}
 
-Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des Formulars anzeigen, Formulareigenschaften ändern und das Formularlayout bearbeiten können. Sie können beim Authoring eine Vorschau des Formulars anzeigen und die gewünschten Änderungen vornehmen. In der Seitensymbolleiste wird Folgendes angezeigt:
+Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des Formulars anzeigen, Formulareigenschaften ändern und das Formularlayout bearbeiten können. Sie können beim Authoring eine Vorschau des Formulars anzeigen und die gewünschten Änderungen vornehmen. In der Symbolleiste der Seite wird Folgendes angezeigt:
 
 * **Seitliches Bedienfeld ein/aus** ![toggle-side-panel](assets/toggle-side-panel.png): Hiermit können Sie die Seitenleiste ein- oder ausblenden.
 
@@ -323,7 +323,7 @@ Die Seitensymbolleiste oben bietet Optionen, mit denen Sie eine Vorschau des For
    * **Entwickler**: Hier haben Entwickler folgende Möglichkeiten:
 
       * Ermitteln der Bestandteile von Formularen.
-      * Debugging der am Formular durchgeführten Aktionen zur Behebung von Fehlern.
+      * Debuggen Sie, was wo und wann passiert, was wiederum hilft, Probleme zu lösen.
    * **Design**: Hier können Sie benutzerdefinierte Komponenten oder auch nicht in der Seitenleiste aufgelistete vordefinierte Komponenten aktivieren oder deaktivieren.
 
 
