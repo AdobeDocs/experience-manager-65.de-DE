@@ -12,9 +12,9 @@ discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
 source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9905'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -724,7 +724,7 @@ In dieser Diskussion geht es um die Verwendung von MTOM, um den folgenden kurzle
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
 Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
@@ -838,7 +838,7 @@ Hier geht es um den Aufruf des folgenden kurzlebigen Forms-Prozesses namens `MyA
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
 Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
@@ -923,7 +923,7 @@ Sie können AEM Forms-Dienste über Webdienste aufrufen und BLOB-Daten über HTT
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Codebeispiel zu folgen, erstellen Sie einen Prozess mit dem Namen `MyApplication/EncryptDocument` in Workbench. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
 Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
@@ -1037,7 +1037,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 1. Ruft das ungesicherte PDF-Dokument ab, das an den Prozess übergeben wird. Diese Aktion basiert auf dem Vorgang `SetValue`. Der Eingangsparameter für diesen Prozess ist eine `document`-Prozessvariable mit dem Namen `inDoc`.
 1. Sie verschlüsselt das PDF-Dokument mit einem Kennwort. Diese Aktion basiert auf dem Vorgang `PasswordEncryptPDF`. Das kennwortverschlüsselte PDF-Dokument wird in einer Prozessvariablen namens `outDoc` zurückgegeben.
 
-Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um den Code-Beispielen folgen zu können, erstellen Sie mithilfe von Workbench einen Prozess mit dem Namen `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um den Code-Beispielen folgen zu können, erstellen Sie mithilfe von Workbench einen Prozess mit dem Namen `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
 >[!NOTE]
 >
@@ -1072,7 +1072,7 @@ Nachdem Sie einen Web-Verweis erstellt haben, stehen Ihnen die beiden folgenden 
 
 >[!NOTE]
 >
->Bevor Sie einen Web-Verweis für den Forms-Service erstellen, vergewissern Sie sich, dass Sie in Ihrem Projekt auf Web Services Enhancements 2.0 verweisen. (Siehe &quot;Web Services-Verbesserungen installieren 2.0&quot;.)
+>Bevor Sie einen Web-Verweis für den Forms-Service erstellen, vergewissern Sie sich, dass Sie in Ihrem Projekt auf Web Services Enhancements 2.0 verweisen. (Siehe „Installation von Web Services Enhancements 2.0“.)
 
 **Referenzieren der WSE-Bibliothek**
 
