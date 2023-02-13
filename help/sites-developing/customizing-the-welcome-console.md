@@ -1,5 +1,5 @@
 ---
-title: Anpassung der Willkommens-Konsole (klassische Benutzeroberfläche)
+title: Anpassen der Willkommens-Konsole (klassische Benutzeroberfläche)
 seo-title: Customizing the Welcome Console (Classic UI)
 description: Die Willkommens-Konsole bietet eine Liste mit Links zu den unterschiedlichen Konsolen und Funktionen innerhalb von AEM
 seo-description: The Welcome console provides a list of links to the various consoles and functionality within AEM
@@ -11,19 +11,19 @@ content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 exl-id: 9e171b62-8efb-4143-a202-ba6555658d4b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '464'
-ht-degree: 78%
+ht-degree: 100%
 
 ---
 
-# Anpassung der Willkommens-Konsole (klassische Benutzeroberfläche){#customizing-the-welcome-console-classic-ui}
+# Anpassen der Willkommens-Konsole (klassische Benutzeroberfläche){#customizing-the-welcome-console-classic-ui}
 
 >[!CAUTION]
 >
 >Diese Seite behandelt die klassische Benutzeroberfläche.
 >
->Unter [Anpassung der Konsolen ](/help/sites-developing/customizing-consoles-touch.md) finden Sie genauere Informationen zur standardmäßigen Touch-optimierten Benutzeroberfläche.
+>Unter [Anpassung der Konsolen](/help/sites-developing/customizing-consoles-touch.md) finden Sie genauere Informationen zur standardmäßigen Touch-optimierten Benutzeroberfläche.
 
 Die Willkommens-Konsole bietet eine Liste mit Links zu den unterschiedlichen Konsolen und Funktionen innerhalb von AEM.
 
@@ -62,7 +62,7 @@ Berechtigungen auf Knotenebene legen fest, ob der Link sichtbar ist. Die betreff
 
 Beispiel:
 
-* So beschränken Sie den Zugriff auf **Instrumente**, den Lesezugriff aus
+* Um den Zugriff auf **Tools** einzuschränken, entfernen Sie den Lesezugriff von
 
    `/libs/wcm/core/content/misc`
 
@@ -163,25 +163,25 @@ Drei Abschnitte werden standardmäßig bereitgestellt (leicht getrennt):
 
 Sie können einen Link für bestimmte Benutzer oder Gruppen ausblenden, indem Sie den Lesezugriff auf die Knoten entfernen, die diesen Link repräsentieren.
 
-* Ressourcen - Entfernen des Zugriffs auf:
+* Ressourcen – Entfernen des Zugriffs auf:
 
    `/libs/cq/core/content/welcome/resources/<link-target>`
 
-* Dokumente - Entfernen Sie den Zugriff auf:
+* Dokumente – Entfernen des Zugriffs auf:
 
    `/libs/cq/core/content/welcome/docs/<link-target>`
 
-* Funktionen - Entfernen Sie den Zugriff auf:
+* Funktionen – Entfernen des Zugriffs auf:
 
    `/libs/cq/core/content/welcome/features/<link-target>`
 
 Beispiel:
 
-* So entfernen Sie den Link zu **Berichte**, den Lesezugriff aus
+* Um den Link auf **Berichte** zu entfernen, entfernen Sie den Lesezugriff von
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* So entfernen Sie den Link zu **Pakete**, den Lesezugriff aus
+* Um den Link auf **Pakete** zu entfernen, entfernen Sie den Lesezugriff von
 
    `/libs/cq/core/content/welcome/features/packages`
 
@@ -189,9 +189,9 @@ Im [Abschnitt „Sicherheit“](/help/sites-administering/security.md) finden Si
 
 ### Link-Auswahlmechanismus {#link-selection-mechanism}
 
-In `/libs/cq/core/components/welcome/welcome.jsp` Verwendung von [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), wodurch eine Abfrage für Knoten mit der Eigenschaft ausgeführt wird:
+In `/libs/cq/core/components/welcome/welcome.jsp` wird [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html) genutzt, das eine Abfrage auf Knoten mit folgender Eigenschaft durchführt:
 
-* `jcr:mixinTypes` durch den Wert: `cq:Console`
+* `jcr:mixinTypes` mit dem Wert: `cq:Console`
 
 >[!NOTE]
 >
@@ -207,6 +207,6 @@ Wenn ein Benutzer oder eine Gruppe keine Leseberechtigungen für einen Knoten mi
 
 Mit dem [Link-Auswahlmechanismus](#link-selection-mechanism) können Sie Ihr selbst definiertes Element zur Linkliste hinzufügen.
 
-Fügen Sie Ihr benutzerdefiniertes Element zur Liste hinzu, indem Sie die `cq:Console` Mixin mit Ihrem Widget oder Ihrer Ressource. Definieren Sie dazu die Eigenschaft:
+Fügen Sie Ihr benutzerdefiniertes Element zur Liste hinzu, indem Sie das Mixin `cq:Console` zu Ihrem Widget oder Ihrer Ressource hinzufügen. Definieren Sie dazu die Eigenschaft:
 
-* `jcr:mixinTypes` durch den Wert: `cq:Console`
+* `jcr:mixinTypes` mit dem Wert: `cq:Console`
