@@ -1,7 +1,7 @@
 ---
 title: Hardware-Skalierungsrichtlinien
 seo-title: Hardware Sizing Guidelines
-description: Diese Skalierungsrichtlinien bieten eine Annäherung an die Hardware-Erfordernisse, die für die Implementierung eines AEM-Projekts erforderlich sind.
+description: Diese Skalierungsrichtlinien bieten eine ungefähre Einschätzung der Hardware-Ressourcen, die für die Implementierung eines AEM-Projekts erforderlich sind.
 seo-description: These sizing guidelines offer an approximation of the hardware resources required to deploy an AEM project.
 uuid: 395f9869-17c4-4b9b-99f8-d35a44dd6256
 contentOwner: msm-service
@@ -12,7 +12,7 @@ discoiquuid: 8893306f-4bc0-48eb-8448-36d0214caddf
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2816'
 ht-degree: 100%
 
@@ -152,7 +152,7 @@ Für solche Szenarien führte Adobe Benchmarktests auf einem Shared-Nothing-Clus
 * **Benchmarktest 2b**
 Bei einem aktiv-aktiven Shared-Nothing-Cluster von 2 Autoreninstanzen wird der maximale Durchsatz berechnet, wenn das Lastprofil einen Mix aus frischer Seitenerstellung (10 %), Änderung einer bestehenden Seite (80 %) und Erstellung und Änderung einer Seite in Folge (10 %) aufweist. Die Komplexität der Seite bleibt gleich wie im Profil des Benchmarktests 1. Die grundlegende Änderung der Seite erfolgt durch Hinzufügen eines Bildes und Ändern des Textinhalts. Auch hier wurde die Übung auf einer Grundlast von 300 Seiten mit derselben Komplexität wie im Benchmarktest 1 durchgeführt.
 
-   * **Ergebnis** Der maximale Durchsatz für ein solches Mischbetriebsszenario lag bei 6288 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 93 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmarktest.
+   * **Ergebnis** Der maximale Durchsatz für ein solches Mischbetriebsszenario lag bei 6288 Transaktionen/Stunde. Dies ist eine Steigerung von ca. 93 % im Vergleich zu einer eigenständigen Autoreninstanz für den gleichen Benchmark-Test.
 
 >[!NOTE]
 >
