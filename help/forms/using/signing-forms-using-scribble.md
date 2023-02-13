@@ -1,5 +1,5 @@
 ---
-title: 'Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur '
+title: Anwenden elektronischer Signaturen auf ein Formular mithilfe der Freihandsignatur
 seo-title: Apply electronic signatures to a form using scribble signatures
 description: Signieren von Formularen mit Freihandsignaturen
 seo-description: Signing forms using scribble
@@ -11,9 +11,9 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
 source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '638'
-ht-degree: 73%
+ht-degree: 100%
 
 ---
 
@@ -23,21 +23,21 @@ Sie können die Komponente **Freihandsignatur** und die Komponente **Signatursch
 
 ![Dialogfeld für Freihandsignatur](/help/forms/using/assets/scribble-signature.png)
 
-## Verschiedene Optionen im Signaturfenster verfügbar
+## Verfügbare Optionen im Signaturfenster
 
-* **A:** Klicken Sie auf **Pinsel** -Symbol, um Ihre Signatur auf der Arbeitsfläche zu zeichnen.
-* **B:** Klicken Sie auf **Löschen** -Symbol, um die Signatur auf der Arbeitsfläche zu löschen.
-* **C:** Klicken Sie auf **Geolocation** -Symbol, um die Geolocation zusammen mit der Signatur hinzuzufügen.
-* **D:** Klicken Sie auf **Tastatur** -Symbol, um Ihren Namen auf der Arbeitsfläche einzugeben.
+* **A:** Klicken Sie auf das **Pinselsymbol**, um Ihre Signatur auf der Arbeitsfläche zu zeichnen.
+* **B:** Klicken Sie auf das Symbol **Löschen**, um die Signatur auf der Arbeitsfläche zu löschen.
+* **C:** Klicken Sie auf das Symbol **Geolocation**, um die Geolocation zusammen mit der Signatur hinzuzufügen.
+* **D:** Klicken Sie auf das **Tastatursymbol**, um Ihren Namen auf der Arbeitsfläche einzugeben.
 
-Sobald Sie auf Fertig tippen![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) im Scribble-Signaturfenster angezeigt, können Sie die Signatur nicht bearbeiten. Wenn Sie die Signatur bearbeiten möchten, müssen Sie die aktuelle Signatur ignorieren und mit der obigen Option &quot;Paint Brush/Keyboard&quot;erneut signieren.
+Sobald Sie auf das Symbol „Fertig“![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) im Freihandsignaturfenster tippen, können Sie die Signatur nicht mehr bearbeiten. Wenn Sie die Signatur bearbeiten möchten, müssen Sie die aktuelle Signatur ignorieren und mit der obigen Option „Pinsel“/„Tastatur“ erneut signieren.
 
-Sie können auf die **Konfigurieren** ![konfigurieren](assets/configure.png) -Symbol, um das Seitenverhältnis der Arbeitsfläche für Scribble-Signaturen festzulegen.
-* Wenn das Seitenverhältnis der Arbeitsfläche für Scribble-Signaturen kleiner als 1 ist, werden die Geolocation-Informationen am unteren Rand der Arbeitsfläche für Scribble-Signatur hinzugefügt.
+Sie können auf das Symbol **Konfigurieren** ![configure](assets/configure.png) tippen, um das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen festzulegen.
+* Wenn das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen kleiner als 1 ist, werden die Geolocation-Informationen am unteren Rand der Arbeitsfläche für die Freihandsignatur hinzugefügt.
 
-* Wenn das Seitenverhältnis der Arbeitsfläche für Scribble-Signaturen größer als 1 ist, werden die Geolocation-Informationen auf der rechten Seite der Arbeitsfläche für Scribble-Signaturen hinzugefügt.
+* Wenn das Seitenverhältnis der Arbeitsfläche für Freihandsignaturen größer als 1 ist, werden die Geolocation-Informationen auf der rechten Seite der Arbeitsfläche für Freihandsignaturen hinzugefügt.
 
-![Scribble signature-bottom](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
+![scribble signature-bottom](/help/forms/using/assets/scribble-signature-aspectratio.PNG)
 
 
 >[!NOTE]
