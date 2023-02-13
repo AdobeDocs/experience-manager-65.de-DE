@@ -1,7 +1,7 @@
 ---
-title: Brief erstellen
+title: Erstellen eines Briefes
 seo-title: Create Letter
-description: 'In diesem Thema werden die Schritte erläutert, die Sie zum Erstellen eines Briefes und zum Hinzufügen von Datenmodulen und Anhängen an diesen Brief und einer Vorschau des Briefes in der Korrespondenzverwaltung benötigen. '
+description: In diesem Thema werden die Schritte erläutert, die Sie zum Erstellen eines Briefes und zum Hinzufügen von Datenmodulen und Anhängen an diesen Brief und einer Vorschau des Briefes in der Korrespondenzverwaltung benötigen.
 seo-description: This topic gives you the steps to create a letter, add data modules and attachments to it, and preview it in Correspondence Management.
 uuid: b5cdbf01-db85-4ff8-9fda-1489542bffef
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,13 @@ discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3982'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Brief erstellen {#create-letter}
+# Erstellen eines Briefes {#create-letter}
 
 ## Ablauf der Korrespondenzverwaltung {#correspondence-management-workflow}
 
@@ -47,7 +47,7 @@ Die einzelnen Workflow-Schritte:
 
 #### Verwenden der im Lieferumfang von Correspondence Management enthaltenen Briefvorlagen {#using-letter-templates-provided-with-correspondence-management}
 
-Anstatt eine völlig neue Layoutvorlage zu erstellen, können Sie die von Correspondence Management bereitgestellten Vorlagen ändern und wiederverwenden. Sie können in Designer rasch das Branding und die Daten- und Inhaltsfelder in den Vorlagen ändern wie für die Zwecke Ihres Unternehmens benötigt. Weitere Informationen finden Sie unter [Referenzieren von Briefvorlagen](/help/forms/using/reference-cm-layout-templates.md).
+Anstatt eine völlig neue Layoutvorlage zu erstellen, können Sie die von Correspondence Management bereitgestellten Vorlagen ändern und wiederverwenden. Sie können in Designer rasch das Branding und die Daten- und Inhaltsfelder in den Vorlagen ändern wie für die Zwecke Ihres Unternehmens benötigt. Weitere Informationen zu Correspondence Management-Vorlagen finden Sie unter [Referenzieren von Briefvorlagen](/help/forms/using/reference-cm-layout-templates.md).
 
 ### Dokumentfragmenterstellung {#document-fragment-creation}
 
@@ -69,7 +69,7 @@ Mit Hilfe von Bedingungen können Sie festlegen, welche Inhalte zum Zeitpunkt de
 
 #### Layout-Fragment {#layout-fragment}
 
-Unter einem Layout-Fragment versteht man ein Layout, das mit einem oder mehreren Briefen verwendet werden kann. Mit einem Layout-Fragment werden wiederholbare Muster, insbesondere dynamische Tabellen erstellt. Das Layout kann typische Formularfelder wie &quot;Adresse&quot;und &quot;Referenz&quot;enthalten. Es enthält auch leere Unterformulare, die Zielbereiche kennzeichnen. Die Layouts (XDP-Dateien) werden in Designer erstellt und können dann [in Formulare und Dokumente hochgeladen werden](/help/forms/using/get-xdp-pdf-documents-aem.md).
+Unter einem Layout-Fragment versteht man ein Layout, das mit einem oder mehreren Briefen verwendet werden kann. Mit einem Layout-Fragment werden wiederholbare Muster, insbesondere dynamische Tabellen erstellt. Das Layout kann typische Formularfelder wie „Adresse“ und „Referenznummer“ enthalten. Es enthält auch leere Unterformulare, die Zielbereiche kennzeichnen. Die Layouts (XDP-Dateien) werden in Designer erstellt und können dann [in Formulare und Dokumente hochgeladen werden](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
 ### Brieferstellung {#letter-creation}
 
