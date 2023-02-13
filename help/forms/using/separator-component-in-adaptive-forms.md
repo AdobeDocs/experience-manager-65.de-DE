@@ -1,5 +1,5 @@
 ---
-title: Trennzeichenkomponenten in adaptiven Formularen
+title: Trennzeichenkomponente in adaptiven Formularen
 seo-title: Separator component in adaptive forms
 description: Sie können die Trennzeichenkomponente verwenden, um Abschnitte eines Formulars visuell zu trennen.
 seo-description: You can use the separator component to visually segregate sections of a form.
@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 11cbf865-c8e2-4833-b0b8-a3cb5e42f5cd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '297'
 ht-degree: 100%
 
