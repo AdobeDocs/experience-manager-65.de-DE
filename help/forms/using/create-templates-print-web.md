@@ -1,5 +1,5 @@
 ---
-title: '"Tutorial: Erstellen Sie Vorlagen"'
+title: "Tutorial: Erstellen Sie Vorlagen"
 seo-title: Create Print and Web templates for Interactive Communication
 description: Erstellen Sie Druck- und Webvorlagen für die interaktive Kommunikation
 seo-description: Create Print and Web templates for Interactive Communication
@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1796'
 ht-degree: 100%
 
@@ -29,7 +29,7 @@ Die Vorlagen für den Druckkanal werden in Adobe Forms Designer erstellt und auf
 
 Die Vorlagen für den Webkanal werden in AEM erstellt. Vorlagenautoren und Administratoren können Webvorlagen erstellen, bearbeiten und aktivieren. Nachdem sie erstellt und aktiviert wurden, stehen diese Vorlagen zur Verfügung, während Sie eine interaktive Kommunikation erstellen.
 
-In diesem Tutorial werden Sie durch die Schritte zum Erstellen von Vorlagen für Druck- und Webkanäle geführt, sodass sie beim Erstellen von interaktiver Kommunikation verfügbar sind. Am Ende dieser Schulung können Sie Folgendes:
+In diesem Tutorial werden Sie durch die Schritte zum Erstellen von Vorlagen für Druck- und Webkanäle geführt, sodass sie beim Erstellen von interaktiver Kommunikation verfügbar sind. Am Ende dieses Tutorials können Sie Folgendes:
 
 * Erstellen Sie XDP-Vorlagen für den Druckkanal mit Adobe Forms Designer
 * Laden Sie die XDP-Vorlagen auf den AEM Forms Server hoch
@@ -113,7 +113,7 @@ Führen Sie die folgenden Schritte aus, um eine XDP-Vorlage für den Druckkanal 
 
    1. Tippen Sie auf **Speichern**.
 
-### Laden Sie die XDP-Vorlagen auf den AEM Forms Server hoch {#upload-xdp-template-to-the-aem-forms-server}
+### Hochladen einer XDP-Vorlage auf den AEM Forms-Server {#upload-xdp-template-to-the-aem-forms-server}
 
 Nachdem Sie eine XDP-Vorlage mit dem Forms-Designer erstellt haben, müssen Sie sie auf den AEM Forms-Server hochladen, damit die Vorlage beim Erstellen der interaktiven Kommunikation verwendet werden kann.
 
@@ -122,7 +122,7 @@ Nachdem Sie eine XDP-Vorlage mit dem Forms-Designer erstellt haben, müssen Sie 
 
    Navigieren Sie zur Vorlage **create_first_ic_print_template** (XDP) und wählen Sie sie aus. Tippen Sie auf **Öffnen**, um die XDP-Vorlage auf den AEM Forms-Server zu importieren.
 
-### XDP-Vorlage für Layoutfragmente erstellen {#create-xdp-template-for-layout-fragments}
+### Erstellen einer XDP-Vorlage für Layout-Fragmente {#create-xdp-template-for-layout-fragments}
 
 Um ein Layoutfragment für den Druckkanal der interaktiven Kommunikation zu erstellen, erstellen Sie ein XDP mit Forms Designer und laden Sie es auf den AEM Forms-Server hoch.
 
@@ -131,7 +131,7 @@ Um ein Layoutfragment für den Druckkanal der interaktiven Kommunikation zu erst
    Stellen Sie sicher, dass die **Objektbibliothek** und die Option **Objekt** im Menü **Fenster** ausgewählt werden.
 
 1. Ziehen Sie die Komponente **Tabelle** per Drag-and-Drop aus der **Objektbibliothek** auf das Formular.
-1. Im Dialogfeld Tabelle einfügen:
+1. Im Dialogfeld „Tabelle einfügen“:
 
    1. Geben Sie die Anzahl der Spalten als **5** an.
    1. Spezifizieren Sie die Anzahl von Zeilen im Hauptteil als **1**.
@@ -173,7 +173,7 @@ Erstellen und verwalten Sie eine Vorlage für den Webkanal von interaktiver Komm
 * [Vorlage aktivieren](../../forms/using/create-templates-print-web.md#enable-the-template)
 * [Aktivieren von Schaltflächen in interaktiven Kommunikationen](../../forms/using/create-templates-print-web.md#enabling-buttons-in-interactive-communications)
 
-### Ordner für Vorlagen erstellen {#create-folder-for-templates}
+### Erstellen eines Ordners für Vorlagen {#create-folder-for-templates}
 
 Um eine Webkanal-Vorlage zu erstellen, definieren Sie einen Ordner, in dem Sie die erstellten Vorlagen speichern können. Sobald Sie eine Vorlage in einem Ordner erstellt haben, müssen Sie die Vorlage aktivieren, damit die Formularbenutzer den Webkanal einer interaktiven Kommunikation basierend auf der Vorlage erstellen können.
 
@@ -250,7 +250,7 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im Ord
 
    ![Inhaltsstruktur für alle Bedienfelder](assets/content_tree_all_panels_new.png)
 
-### Vorlage aktivieren {#enable-the-template}
+### Aktivieren der Vorlage {#enable-the-template}
 
 Nachdem Sie die Webvorlage erstellt haben, müssen Sie sie zur Erstellung der interaktiven Kommunikation aktivieren.
 
