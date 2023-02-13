@@ -11,7 +11,7 @@ discoiquuid: d388acef-7313-4e68-9395-270aef6ef2c6
 docset: aem65
 exl-id: 770e257a-9ffd-46a4-9703-ff017ce9caed
 source-git-commit: 8a24ca02762e7902b7d0033b36560629ee711de1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1713'
 ht-degree: 100%
 
@@ -168,7 +168,7 @@ Nehmen Sie nach Erstellen der Projektvorlage bei Bedarf die folgenden Änderunge
 
    * Die Vorlagendatei bietet Beispielimplementierung für verschiedene Methoden. Entfernen Sie Methoden, die nicht erweitert werden sollen.
 
-### Erstellen Sie eine Client-Bibliothek {#create-a-client-library}
+### Erstellen einer Client-Bibliothek {#create-a-client-library}
 
 Das durch den Maven-Archetyp generierte Beispielprojekt erstellt automatisch erforderliche Client-Bibliotheken und legt sie in eine Client-Bibliothek mit der Kategorie `af.customwidgets` ab. Die in`af.customwidgets` verfügbaren JavaScript- und CSS-Dateien werden zur Laufzeit automatisch eingefügt.
 
