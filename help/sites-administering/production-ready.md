@@ -1,5 +1,5 @@
 ---
-title: Ausführung von AEM im produktionsbereiten Modus
+title: Ausführen von AEM im produktionsbereiten Modus
 seo-title: Running AEM in Production Ready Mode
 description: Erfahren Sie, wie Sie AEM im produktionsbereiten Modus ausführen.
 seo-description: Learn how to run AEM in Production Ready Mode.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '383'
 ht-degree: 100%
 
 ---
 
-# Ausführung von AEM im produktionsbereiten Modus{#running-aem-in-production-ready-mode}
+# Ausführen von AEM im produktionsbereiten Modus{#running-aem-in-production-ready-mode}
 
 Mit AEM 6.1 hat Adobe den neuen `"nosamplecontent"`-Ausführungsmodus eingeführt, der der Automatisierung der für die Vorbereitung einer AEM-Instanz zur Bereitstellung einer Produktionsumgebung erforderlichen Schritte dient.
 
