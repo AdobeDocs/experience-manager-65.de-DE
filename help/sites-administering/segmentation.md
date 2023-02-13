@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1787'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,11 +37,11 @@ Die [Zielgruppen-Konsole](/help/sites-authoring/managing-audiences.md) wird verw
 
 Um auf Ihre Segmente zuzugreifen, müssen Sie Ihre Konfiguration auswählen. Wählen Sie in der globalen Navigation **Navigation > Personalisierung > Zielgruppen**. Ihnen werden die verfügbaren Konfigurationen angezeigt:
 
-![Zielgruppen - Konfigurationen](assets/segmentation-access-confs.png)
+![Zielgruppen – Konfigurationen](assets/segmentation-access-confs.png)
 
-Wählen Sie Ihre Konfiguration aus, um die Segmente anzuzeigen, z. B. WKND Site:
+Wählen Sie Ihre Konfiguration aus, um die Segmente anzuzeigen, z. B. WKND-Site:
 
-![Zielgruppen - Segmente](assets/segmentation-access-segments.png)
+![Zielgruppen – Segmente](assets/segmentation-access-segments.png)
 
 ## Segmenteditor {#segment-editor}
 
@@ -134,7 +134,7 @@ Die folgenden Verweise sind standardmäßig für die direkte Verknüpfung eines 
 
 Festlegen eines neuen Segments
 
-1. Nachher [Zugriff auf Segmente](/help/sites-administering/segmentation.md#accessing-segments), [Navigieren zum Ordner](#organizing-segments) wo Sie das Segment erstellen möchten.
+1. Nachdem Sie [auf die Segmente zugegriffen haben](/help/sites-administering/segmentation.md#accessing-segments), [navigieren Sie zum Ordner](#organizing-segments), in dem Sie das Segment erstellen möchten.
 
 1. Klicken oder tippen Sie auf die Schaltfläche „Erstellen“ und wählen Sie **ContextHub-Segment erstellen** aus.
 
