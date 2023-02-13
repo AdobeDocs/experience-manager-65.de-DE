@@ -1,5 +1,5 @@
 ---
-title: Schriften bereitstellen
+title: Bereitstellen von Schriften
 seo-title: Make fonts available
 description: Stellen Sie sicher, dass Schriften, die in einem Formular verwendet werden, zur Verwendung auf dem J2EE-Anwendungsserver, der als Host für AEM Forms dient, zur Verfügung stehen.
 seo-description: Ensure that the fonts used within a form are available for use on the J2EE application server hosting AEM forms.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9f58a6c4-3190-49d4-800c-4a55dca7c296
 exl-id: e9eae896-b1e4-4caa-b466-ac8c9e7416a4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '219'
 ht-degree: 100%
 
 ---
 
-# Schriften bereitstellen {#make-fonts-available}
+# Bereitstellen von Schriften {#make-fonts-available}
 
 Stellen Sie sicher, dass Schriften, die in einem Formular verwendet werden, zur Verwendung auf dem J2EE-Anwendungsserver, der als Host für AEM Forms dient, zur Verfügung stehen. Betrachten Sie beispielsweise das folgende Szenario. Ein Formularentwickler fügt dem Schriftartenordner, das von Designer verwendet wird, eine Schrift hinzu und erstellt ein Formular, das diese Schrift verwendet, auf einem separaten Computer. Damit der Output-Dienst diese Schrift verwenden kann, legen Sie sie im „Verzeichnis für Kundenschriftarten“ ab. Wenn der Ordner für Kundenschriftarten nicht vorhanden ist, erstellen Sie einen Ordner auf dem J2EE-Anwendungsserver, der als Host für AEM Forms dient.
 
