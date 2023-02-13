@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '629'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 93%
 
 ## Arbeit anhand einer Definition von „Fertig“ {#work-according-to-a-definition-of-done}
 
-Jedes Team hat eine andere Definition, was &quot;getan&quot;bedeutet, aber es ist wichtig, eine zu haben und sicherzustellen, dass eine Geschichte die definierten Kriterien erfüllt, bevor sie akzeptiert wird.
+Jedes Team hat sein eigenes Verständnis davon, was „fertig“ bedeutet, aber es ist wichtig, eines zu haben und sicherzustellen, dass eine Story die definierten Kriterien erfüllt, bevor sie akzeptiert wird.
 
 Einige häufig von Teams angegebene Kriterien sind:
 
@@ -40,9 +40,9 @@ Dinge wie Einzüge und Leerräume erscheinen möglicherweise nicht wichtig, aber
 
 ### Auf hohe Testabdeckung abzielen  {#aim-for-high-test-coverage}
 
-Je größer eine Projektimplementierung, desto mehr Zeit ist auch erforderlich, um sie zu testen. Ohne entsprechende Testabdeckung kann das Testteam nicht skalieren und die Entwickler kommen irgendwann vor lauter Bugs nicht mehr hinterher.
+Je größer eine Projektimplementierung, desto mehr Zeit ist auch erforderlich, um sie zu testen. Ohne entsprechende Testabdeckung kann das Test-Team nicht skalieren und die Entwicklerinnen und Entwickler kommen irgendwann vor lauter Bugs nicht mehr hinterher.
 
-Entwickler sollten TDD praktizieren und fehlschlagende Einheitstests vor dem Produktionscode schreiben, der ihre Anforderungen erfüllt. Die Qualitätssicherung sollte einen automatisierten Satz von Abnahmeprüfungen erstellen, um sicherzustellen, dass das System von einer hohen Ebene aus wie erwartet funktioniert.
+Entwickler sollten TDD praktizieren und fehlschlagende Einheitstests vor dem Produktions-Code schreiben, der ihre Anforderungen erfüllt. Die Qualitätssicherung sollte einen automatisierten Satz von Abnahmeprüfungen erstellen, um sicherzustellen, dass das System von einer hohen Ebene aus wie erwartet funktioniert.
 
 Es gibt benutzerdefinierte Frameworks, z. B. Jackalope und Prosper, um die Imitation von JCR-APIs zu vereinfachen und so die Produktivität der Entwickler beim Schreiben von Einheitstests zu gewährleisten.
 
@@ -52,7 +52,7 @@ Das System sollte am Ende jeder Iteration für Demos im Unternehmen zur Verfügu
 
 ### Kontinuierliche Integrationsumgebung implementieren und verwenden {#implement-a-continuous-integration-environment-and-use-it}
 
-Das Implementieren einer kontinuierlichen Integrationsumgebung ermöglicht das einfache und wiederholte Durchführen von Einheits- und Integrationstests. Außerdem werden so Bereitstellungen vom Entwicklungsteam entkoppelt, was andere Teile des Teams effizienter und Bereitstellungen stabiler sowie vorhersehbarer macht.
+Das Implementieren einer kontinuierlichen Integrationsumgebung ermöglicht das einfache und wiederholte Durchführen von Einheits- und Integrationstests. Außerdem werden so Bereitstellungen vom Entwicklungs-Team entkoppelt, was andere Teile des Teams effizienter und Bereitstellungen stabiler sowie vorhersehbarer macht.
 
 ### Entwicklungszyklus durch niedrige Erstellungszeiten beschleunigen {#keep-the-development-cycle-fast-by-keeping-build-times-low}
 
@@ -60,11 +60,11 @@ Wenn Einheitstests zu viel Zeit beanspruchen, lassen Entwickler sie aus, wodurch
 
 ### „Sonar“ sowie andere statische Codeanalysewerkzeuge optimieren und ihre Berichte verwerten {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
-Codeanalysewerkzeuge haben nur dann einen Wert, wenn ihre Berichte vom Entwicklerteam verwertet werden. Ohne die Optimierung der Analysen, die diese Tools bieten, sind die generierten Empfehlungen nicht relevant und verlieren ihren Wert.
+Code-Analysewerkzeuge haben nur dann einen Wert, wenn ihre Berichte vom Entwickler-Team verwertet werden. Ohne die Optimierung der Analysen, die diese Tools bieten, sind die generierten Empfehlungen nicht relevant und verlieren ihren Wert.
 
 ### Der Pfadfinderregel folgen {#follow-the-boy-scout-rule}
 
-Für die Scouts &quot;Boy&quot;gilt eine Regel: &quot;Lass es besser, als du es gefunden hast.&quot; Sofern sich alle Mitglieder des Entwicklerteams an diese Regel halten und eine Verbesserung vornehmen, wenn sie einen Fehler sehen, wird der Code konstant verbessert.
+Pfadfinder haben eine Regel: „Hinterlass es besser, als du es vorgefunden hast.“ Sofern sich alle Mitglieder des Entwickler-Teams an diese Regel halten und eine Verbesserung vornehmen, wenn sie einen Fehler sehen, wird der Code konstant verbessert.
 
 ### Implementierung von YAGNI-Funktionen vermeiden {#avoid-implementing-yagni-features}
 
