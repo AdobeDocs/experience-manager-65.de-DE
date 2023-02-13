@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
 exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '474'
 ht-degree: 100%
 
@@ -55,4 +55,4 @@ Benutzer mit bestimmten Arten von Administratorberechtigungen dürfen aus Sicher
 
 >[!NOTE]
 >
->Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
+>Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
