@@ -10,7 +10,7 @@ kt: 3456
 thumbnail: 3456-style-cif.jpg
 exl-id: 04d553be-c67d-4ecb-a23f-2694c2adfc2b
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2551'
 ht-degree: 100%
 
@@ -482,4 +482,4 @@ Verwenden Sie das [AEM-Stilsystem](/help/sites-authoring/style-system.md), um zw
 * [Lokale AEM-Entwicklungsumgebung einrichten](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/local-development-environment-set-up/overview.html?lang=de)
 * [Client-seitige Bibliotheken](/help/sites-developing/clientlibs.md)
 * [Erste Schritte mit AEM Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)
-* [Entwickeln mit dem Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html)
+* [Entwickeln mit dem Stilsystem](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/project-archetype/style-system.html?lang=de)
