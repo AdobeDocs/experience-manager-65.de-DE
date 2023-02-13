@@ -13,7 +13,7 @@ docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2148'
 ht-degree: 100%
 
@@ -196,7 +196,7 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
   </tr>
   <tr>
    <td><code>runPreUpgradeTask(preUpgradeTaskName)</code></td>
-   <td>AKTION</td>
+   <td>ACTION</td>
    <td>Führt die Wartungsaufgabe vor dem Upgrade mit dem als Parameter angegebenen Namen aus.</td>
   </tr>
   <tr>
@@ -211,22 +211,22 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
   </tr>
   <tr>
    <td><code>getPreUpgradeTaskLastRunTime(preUpgradeTaskName)</code></td>
-   <td>AKTION</td>
+   <td>ACTION</td>
    <td>Gibt die genaue Ausführungszeit der Wartungsaufgaben vor dem Upgrade mit dem Namen als Parameter an.</td>
   </tr>
   <tr>
    <td><code>getPreUpgradeTaskLastRunState(preUpgradeTaskName)</code></td>
-   <td>AKTION</td>
+   <td>ACTION</td>
    <td>Gibt den letzten Ausführungsstatus der Wartungsaufgabe vor dem Upgrade mit dem Namen als Parameter an.</td>
   </tr>
   <tr>
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td>
-   <td>AKTION</td>
+   <td>ACTION</td>
    <td><p>Führt alle Konsistenzprüfungen vor der Aktualisierung aus und speichert deren Status in der Datei <code>preUpgradeHCStatus.properties</code>, die im Sling-Stammpfad gespeichert ist. Wenn der Parameter <code>shutDownOnSuccess</code> auf <code>true</code> gesetzt ist, wird die AEM-Instanz heruntergefahren, allerdings nur, wenn der Status für alle Konsistenzprüfungen vor einem Upgrade „OK“ lautet.</p> <p>Die Eigenschaftendatei wird als Vorbedingung für zukünftige Upgrades verwendet<br /> und der Upgrade-Vorgang wird angehalten, wenn die Konsistenzprüfungen vor eines Upgrades<br /> fehlgeschlagen sind. Wenn Sie das Ergebnis der Konsistenzprüfungen <br />vor einem Upgrade ignorieren und das Upgrade trotzdem starten möchten, können Sie die Datei löschen.</p> </td>
   </tr>
   <tr>
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td>
-   <td>AKTION</td>
+   <td>ACTION</td>
    <td>Listet alle importierten Pakete auf, die nach dem<br /> Upgrade auf eine bestimmte AEM-Version nicht mehr kompatibel sind. Die AEM-Zielversion muss<br /> als Parameter angegeben werden.</td>
   </tr>
  </tbody>
