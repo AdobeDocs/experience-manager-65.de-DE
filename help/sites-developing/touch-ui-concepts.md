@@ -12,7 +12,7 @@ discoiquuid: df3aaed1-97b5-4a4a-af74-cb887462475b
 docset: aem65
 exl-id: f13ac6c2-16ab-422d-9005-ab0b49172271
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2176'
 ht-degree: 100%
 
@@ -257,7 +257,7 @@ Die folgende Liste enthält eine nützliche Übersicht über ExtJS-xtype- und -K
 
 ### Granite-Benutzeroberfläche – Verwaltungskomponenten {#granite-ui-administration-components}
 
-Die [Verwaltungskomponenten der Granite-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) stellen die Foundation-Komponenten für die Bereitstellung von generischen Bausteinen dar, die von allen Verwaltungsanwendungen implementiert werden können. Dies sind beispielsweise:
+Die [Verwaltungskomponenten der Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) stellen die Foundation-Komponenten für die Bereitstellung von generischen Bausteinen dar, die von allen Verwaltungsanwendungen implementiert werden können. Dies sind beispielsweise:
 
 * Globale Navigationsleiste
 * Leiste (Skelett)
