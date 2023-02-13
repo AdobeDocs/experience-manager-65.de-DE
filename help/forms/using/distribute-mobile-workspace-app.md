@@ -10,13 +10,13 @@ topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '243'
 ht-degree: 100%
 
 ---
 
-# Bereitstellen der AEM Forms-App {#distribute-aem-forms-app}
+# Verteilen der AEM Forms-App {#distribute-aem-forms-app}
 
 Mobile Device Management (MDM) ermöglicht die Bereitstellung von Apps für mobile Geräte im großen Stil.
 
