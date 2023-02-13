@@ -12,7 +12,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: a1a2b277-3133-404b-a7fc-337cedddb12c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '318'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ AEM Forms ermöglicht es Ihnen, den Zugriff auf den Regel-Editor anhand der Roll
 
 ## Angeben von Benutzergruppen für Zugriff auf Regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
-1. Melden Sie sich bei AEM Forms als Administrator an.
+1. Melden Sie sich bei AEM Forms als Admin an.
 1. Klicken Sie in der Autoreninstanz auf ![adobeexperiencemanager](assets/adobeexperiencemanager.png)„Adobe Experience Manager“ > „Tools“ ![hammer](assets/hammer.png) > „Vorgänge“ > „Web-Konsole“. Die Webkonsole wird in einem neuen Fenster geöffnet.
 
    ![1–2](assets/1-2.png)
