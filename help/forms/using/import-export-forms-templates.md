@@ -12,7 +12,7 @@ docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2516'
 ht-degree: 100%
 
@@ -248,7 +248,7 @@ Wenn Sie nach Assets suchen, zeigt AEM Forms den Seitenbereich an. Sie können a
 
 ![Seitenbereich - Filter](assets/search_sidepanel.png)
 
-Seitenbereich - Filter
+Seitenbereich – Filter
 
 Auf der Seitenleiste können Sie die folgenden Funktionen verwenden, um Ihre Suchergebnisse einzugrenzen:
 
