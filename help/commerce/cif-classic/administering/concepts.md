@@ -7,7 +7,7 @@ content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
 source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4514'
 ht-degree: 100%
 
@@ -355,7 +355,7 @@ Wenn ein JCR-Knoten über viele direkte untergeordnete Knoten (z. B. mind. 1.00
 
 Diese Buckets werden in Form von Phantomordnern in die Katalogstruktur eingeführt. Sie können sie aber so konfigurieren, dass sie in den öffentlichen URLs nicht sichtbar sind.
 
-#### Abladen der Asset-Nachbearbeitung auf einer dedizierten Instanz {#offload-asset-post-processing-to-a-dedicated-instance}
+#### Auslagern der Asset-Nachbearbeitung auf eine dedizierte Instanz {#offload-asset-post-processing-to-a-dedicated-instance}
 
 Dieses Szenario sieht vor, dass zwei Autoreninstanzen eingerichtet werden:
 
@@ -482,7 +482,7 @@ Die **Produkt**-Komponente können Sie zu jeder Seite mit einer übergeordneten 
 
 Sie können die **Produkt**-Komponente auch an Ihre individuellen Anforderungen anpassen.
 
-### Proxyseiten {#proxy-pages}
+### Proxy-Seiten {#proxy-pages}
 
 Mit Proxyseiten können Sie die Struktur des Repositorys vereinfachen und den Speicher für große Kataloge optimieren.
 
