@@ -1,5 +1,5 @@
 ---
-title: Aktivierung des Zugriffs auf die klassische Benutzeroberfläche
+title: Aktivieren des Zugriffs auf die klassische Benutzeroberfläche
 seo-title: Enabling Access to Classic UI
 description: Erfahren Sie, wie Sie auf die klassische Benutzeroberfläche zugreifen können
 seo-description: Lear how to enable access to Classic UI.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: f3683696-663d-4de5-a388-1709f44d58c1
 exl-id: e25f0b7f-5f12-4363-b302-e51c81035c7d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '86'
 ht-degree: 100%
 
 ---
 
-# Aktivierung des Zugriffs auf die klassische Benutzeroberfläche{#enabling-access-to-classic-ui}
+# Aktivieren des Zugriffs auf die klassische Benutzeroberfläche{#enabling-access-to-classic-ui}
 
 Aufgrund der Touch-aktivierten Funktionen, die der klassischen Benutzeroberfläche gleichkommen oder diese tatsächlich sogar in vielen Bereichen von AEM übertreffen, ist der Zugriff auf die klassische Benutzeroberfläche über die Touch-aktivierte Benutzeroberfläche jetzt standardmäßig deaktiviert. Die folgenden Seiten erläutern, wie dieser Zugriff bei Bedarf erneut aktiviert werden kann.
 
