@@ -3,7 +3,7 @@ title: Authoring von Commerce-Erlebnissen
 description: Arbeiten mit Commerce-Erlebnissen
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '703'
 ht-degree: 100%
 
@@ -71,7 +71,7 @@ CIF-Produktkatalogseiten sind virtuelle Seiten, die dynamisch gerendert werden. 
 
     >[!NOTE]
     >
-    > Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt verwendet.
+    >Wenn sowohl Kategorie als auch Produkt ausgewählt werden, wird das Produkt verwendet.
 
 Dadurch wird ein Platzhalter-Link erstellt, der beim Rendern der Seite durch einen echten Link ersetzt wird.
 
@@ -101,4 +101,4 @@ Das Ergebnis wird nach Typ gruppiert.
 
     >[!NOTE]
     >
-    > Volltextsuche in Omnisearch unterstützt keine verknüpften Inhaltsfragmente. Verwenden Sie SKU oder UID, um verknüpfte Inhaltsfragmente zu finden.
+    >Volltextsuche in Omnisearch unterstützt keine verknüpften Inhaltsfragmente. Verwenden Sie SKU oder UID, um verknüpfte Inhaltsfragmente zu finden.
