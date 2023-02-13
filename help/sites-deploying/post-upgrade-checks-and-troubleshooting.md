@@ -13,7 +13,7 @@ docset: aem65
 feature: Upgrading
 exl-id: ceac2b52-6885-496d-9517-5fc7291ad070
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1813'
 ht-degree: 100%
 
@@ -111,7 +111,7 @@ Wenn Sie einen Dateidatenspeicher verwenden, stellen Sie sicher, dass die Aufgab
 >
 >Die Aufgabe wird nicht für benutzerdefinierte S3-Datenspeicherinstallationen empfohlen oder wenn ein freigegebener Datenspeicher verwendet wird.
 
-#### Aktivieren Sie die Online-Revisionsbereinigung {#enable-online-revision-cleanup}
+#### Aktivieren der Online-Revisionsbereinigung {#enable-online-revision-cleanup}
 
 Wenn Sie MongoMK oder das neue TarMK-Segmentformat verwenden, stellen Sie sicher, dass die Aufgabe „Revisionsbereinigung“ aktiviert ist und zur Liste für die tägliche Wartung hinzugefügt wurde. Anweisungen hierzu finden Sie [hier](/help/sites-deploying/revision-cleanup.md).
 
