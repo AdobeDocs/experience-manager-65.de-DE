@@ -1,5 +1,5 @@
 ---
-title: Überwachung und Wartung der AEM-Instanz
+title: Überwachen und Warten Ihrer AEM-Instanz
 seo-title: Monitoring and Maintaining Your AEM instance
 description: Wie Sie AEM überwachen.
 seo-description: Learn how to monitor AEM.
@@ -13,19 +13,19 @@ docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5972'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
-# Überwachung und Wartung der AEM-Instanz{#monitoring-and-maintaining-your-aem-instance}
+# Überwachen und Warten Ihrer AEM-Instanz{#monitoring-and-maintaining-your-aem-instance}
 
 Nach der Bereitstellung der AEM-Instanzen sind bestimmte Aufgaben erforderlich, um Betrieb, Leistung und Integrität zu überwachen und aufrechtzuerhalten.
 
 Um potenzielle Probleme erkennen zu können, müssen Sie unbedingt wissen, wie Ihre Systeme unter normalen Bedingungen aussehen und sich verhalten. Dazu sollten Sie das System überwachen und über einen Zeitraum hinweg Daten erfassen.
 
-| Überprüfen Sie Folgendes | Zu beachten | Kommentar/Aktionen |
+| Überprüfen | Zu beachten | Kommentar/Aktionen |
 |---|---|---|
 | Backup-Plan. |  | Gehen Sie wie folgt vor, um [ein Backup für Ihre Instanz zu erstellen](/help/sites-deploying/monitoring-and-maintaining.md#backups). |
 | Plan für die Notfallwiederherstellung | Richtlinien Ihres Unternehmens für die Notfallwiederherstellung. |  |
@@ -100,70 +100,70 @@ In diesem Abschnitt werden die Wartungsaufgaben im Zusammenhang mit der Versions
 
 ### Überblick {#overview}
 
-Die **Versionen bereinigen** -Tool ist als wöchentliche Wartungsaufgabe verfügbar. Vor der erstmaligen Verwendung muss sie hinzugefügt und dann konfiguriert werden. Danach kann er auf Anfrage oder wöchentlich ausgeführt werden.
+Das Tool **Versionen bereinigen** ist als wöchentliche Wartungsaufgabe verfügbar. Vor der erstmaligen Verwendung muss die Aufgabe hinzugefügt und dann konfiguriert werden. Danach kann sie auf Anfrage oder wöchentlich ausgeführt werden.
 
 ### Bereinigen von Versionen einer Website {#purging-versions-of-a-web-site}
 
 Um Versionen einer Website zu löschen, gehen Sie folgendermaßen vor:
 
-1. Navigieren Sie zum **[Instrumente](/help/sites-administering/tools-consoles.md)** **console** auswählen **Vorgang**, **Wartung**, dann **Wöchentliches Wartungsfenster**.
+1. Navigieren Sie zur **[Tools](/help/sites-administering/tools-consoles.md)**-**Konsole** und wählen Sie **Vorgang** > **Wartung** und dann **Wöchentliches Wartungsfenster** aus.
 
-1. Auswählen **+ Hinzufügen** aus der oberen Symbolleiste.
+1. Wählen Sie **+ Hinzufügen** aus der oberen Symbolleiste aus.
 
    ![Versionsbereinigung hinzufügen](assets/version-purge-add.png)
 
-1. Auswählen **Versionsbereinigung** aus der Dropdown-Liste im **Neue Aufgabe hinzufügen** angezeigt. Dann **Speichern**.
+1. Wählen Sie **Versionsbereinigung** aus der Dropdown-Liste im Dialogfeld **Neue Aufgabe hinzufügen** aus. Klicken Sie dann auf **Speichern**.
 
    ![Versionsbereinigung hinzufügen](assets/version-purge-add-new-task.png)
 
-1. Die **Versionsbereinigung** -Aufgabe hinzugefügt. Verwenden Sie die Kartenaktionen, um:
-   * Auswählen - zeigt zusätzliche Aktionen in der oberen Symbolleiste an
-   * Ausführen - um die konfigurierte Bereinigung sofort auszuführen
-   * Konfigurieren - zum Konfigurieren der wöchentlichen Bereinigungsaufgabe
+1. Die Aufgabe **Versionsbereinigung** wird hinzugefügt. Verwenden Sie die Kartenaktionen für folgende Aufgaben:
+   * Auswählen – zeigt zusätzliche Aktionen in der oberen Symbolleiste an
+   * Ausführen – führt die konfigurierte Bereinigung sofort aus
+   * Konfigurieren – konfiguriert die wöchentliche Bereinigungsaufgabe
 
    ![Aktionen zur Versionsbereinigung](assets/version-purge-actions.png)
 
-1. Wählen Sie die **Konfigurieren** Aktion zum Öffnen der Web-Konsole für **Day CQ WCM-Versionsbereinigungsaufgabe**, wo Sie Folgendes konfigurieren können:
+1. Wählen Sie die Aktion **Konfigurieren** zum Öffnen der Web-Konsole für **Day CQ WCM Version Purge Task** aus. Hier können Sie Folgendes konfigurieren:
 
    ![Konfiguration der Versionsbereinigung](assets/version-purge-configuration.png)
 
-   * **Pfade bereinigen**
-Legen Sie den Startpfad des zu löschenden Inhalts fest. Beispiel: 
-`/content/wknd` möglich.
+   * **Bereinigungspfade**
+Legen Sie den Startpfad des zu löschenden Inhalts fest, zum Beispiel: 
+`/content/wknd`.
 
       >[!CAUTION]
       >
-      >Es wird dringend empfohlen, für jede Ihrer Websites mehrere Pfade zu definieren.
+      >Es wird dringend empfohlen, mehrere Pfade zu definieren, einen für jede Ihrer Websites.
       >
-      >Wenn Sie einen Pfad mit zu vielen untergeordneten Elementen definieren, kann die für die Durchführung der Bereinigung benötigte Zeit erheblich verlängert werden.
+      >Wenn Sie einen Pfad mit zu vielen untergeordneten Elementen definieren, kann die Bereinigung erheblich mehr Zeit in Anspruch nehmen.
 
    * **Versionen rekursiv bereinigen**
 
-      * Heben Sie die Auswahl auf, wenn Sie nur den durch Ihren Pfad definierten Knoten bereinigen möchten.
-      * Wählen Sie aus, ob Sie den durch Ihren Pfad und dessen untergeordnete Elemente definierten Knoten bereinigen möchten.
-   * **Maximale Versionsanzahl**
+      * Deaktivieren Sie diese Option, wenn Sie nur den durch den Pfad definierten Knoten löschen möchten.
+      * Wählen Sie aus, ob Sie den durch Ihren Pfad und seine untergeordneten Pfade definierten Knoten löschen möchten.
+   * **Maximale Anzahl von Versionen**
 Legen Sie die maximale Anzahl von Versionen (für jeden Knoten) fest, die Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
 
-   * **Mindestanzahl Versionen**
+   * **Mindestanzahl von Versionen**
 Legen Sie die Mindestanzahl von Versionen (für jeden Knoten) fest, die Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
 
    * **Maximales Versionsalter**
-Legen Sie das maximale Versionsalter in Tagen fest (für jeden Knoten, den Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
+Legen Sie das maximale Versionsalter in Tagen (für jeden Knoten) fest, den Sie beibehalten möchten. Lassen Sie das Feld frei, falls diese Einstellung nicht verwendet werden soll.
    Dann **Speichern**.
 
-1. Navigieren Sie zum **Wöchentliches Wartungsfenster** Fenster und wählen Sie **Ausführen** , um den Prozess sofort zu starten.
+1. Navigieren/kehren Sie zurück zum Fenster **Wöchentliches Wartungsfenster** und klicken Sie auf **Ausführen**, um den Prozess sofort zu starten.
 
 >[!CAUTION]
 >
->Sie können das Dialogfeld &quot;Klassische Benutzeroberfläche&quot;verwenden, um eine [Trockenlauf](#analyzing-the-console) Ihrer Konfiguration:
+>Sie können das Dialogfeld der klassischen Benutzeroberfläche verwenden, um einen [Probelauf](#analyzing-the-console) Ihrer Konfiguration durchzuführen:
 >
 >* http://localhost:4502/etc/versioning/purge.html
 >
 >Bereinigte Knoten können ohne Wiederherstellung des Repository nicht zurückgesetzt werden. Da eine fehlerfreie Konfiguration sehr wichtig ist, empfiehlt es sich, vor einer Bereinigung immer einen Probelauf durchzuführen.
 
-#### Trockenlauf - Analyse der Konsole {#analyzing-the-console}
+#### Probelauf – Analyse der Konsole {#analyzing-the-console}
 
-Die klassische Benutzeroberfläche bietet eine **Trockenlauf** Option aus:
+Die klassische Benutzeroberfläche bietet eine **Probelauf**-Option von:
 
 * http://localhost:4502/etc/versioning/purge.html
 
@@ -614,7 +614,7 @@ Einige von diesen sind von Ihrem Betriebssystem abhängig.
   <tr>
    <td>Heap-Dumps</td>
    <td>Probleme mit dem Speicher, die zu Leistungsverlusten führen.</td>
-   <td><p>Fügen Sie die Option <br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> beim Java-Auruf für AEM hinzu.</p> <p>Siehe <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/prepapp002.html#CEGBHDFH">Optionen/Flags für JVM-Seite zur Fehlerbehebung</a>.</p> </td>
+   <td><p>Fügen Sie die Option <br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> beim Java-Auruf für AEM hinzu.</p> <p>Siehe die Seite <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/prepapp002.html#CEGBHDFH">Optionen/Flags zur Fehlerbehebung für JVM</a>.</p> </td>
   </tr>
   <tr>
    <td>Systemaufrufe</td>
@@ -649,12 +649,12 @@ Einige von diesen sind von Ihrem Betriebssystem abhängig.
   <tr>
    <td>JConsole</td>
    <td>Beobachten Sie JVM-Metriken und -Threads.</td>
-   <td><p>Verwendungszweck: jconsole</p> <p>Siehe <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">jconsole</a> und <a href="#monitoring-performance-using-jconsole">Leistungsüberwachung mit JConsole</a>.</p> <p><strong>Hinweis:</strong> Bei JDK 1.8 ist JConsole durch Plug-ins erweiterbar; z. B. Top oder TDA (Thread Dump Analyzer).</p> </td>
+   <td><p>Verwendungszweck: jconsole</p> <p>Siehe <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/management/jconsole.html">JConsole</a> und <a href="#monitoring-performance-using-jconsole">Leistungsüberwachung mit JConsole</a>.</p> <p><strong>Hinweis:</strong> Bei JDK 1.8 ist JConsole durch Plug-ins erweiterbar; z. B. Top oder TDA (Thread Dump Analyzer).</p> </td>
   </tr>
   <tr>
    <td>Java VisualVM</td>
    <td>Beobachten Sie JVM-Metriken, Threads, Arbeitsspeicher und Profiling.</td>
-   <td><p>Verwendung: visualvm oder visualvm<br /> </p> <p>Siehe <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> und <a href="#monitoring-performance-using-j-visualvm">Überwachen der Leistung mit (J)VisualVM</a>.</p> <p><strong>Hinweis:</strong> Bei JDK 1.8 ist VisualVM durch Plug-ins erweiterbar. VisualVM wird nach JDK 9 beendet. Verwenden Sie stattdessen den Java-Flugschreiber.</p> </td>
+   <td><p>Verwendungszweck: visualvm oder visualvm<br /> </p> <p>Siehe <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/visualvm/">visualvm</a> und <a href="#monitoring-performance-using-j-visualvm">Leistungsüberwachung mit (J)VisualVM</a>.</p> <p><strong>Hinweis</strong>: Bei JDK 1.8 ist VisualVM durch Plug-ins erweiterbar. VisualVM wird nach JDK 9 eingestellt. Verwenden Sie stattdessen den Java Flight Recorder.</p> </td>
   </tr>
   <tr>
    <td>truss/strace, Isof</td>
@@ -669,7 +669,7 @@ Einige von diesen sind von Ihrem Betriebssystem abhängig.
   <tr>
    <td>CPU- und Speicher-Profiling-Tool<br /> </td>
    <td><a href="#interpreting-the-request-log">Wird für die Analyse langsamer Anfragen während der Entwicklung verwendet</a>.</td>
-   <td>Zum Beispiel <a href="https://www.yourkit.com/">YourKit</a>. oder <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">Java Flight Recorder</a>.</td>
+   <td>Zum Beispiel <a href="https://www.yourkit.com/">YourKit</a>. oder der <a href="https://docs.oracle.com/javase/8/docs/technotes/guides/troubleshoot/tooldescr004.html#BABJJEEE">Java Flight Recorder</a>.</td>
   </tr>
   <tr>
    <td><a href="#information-collection">Informationserfassung</a></td>
@@ -681,7 +681,7 @@ Einige von diesen sind von Ihrem Betriebssystem abhängig.
 
 ### Interpretieren von request.log {#interpreting-the-request-log}
 
-In dieser Datei werden grundlegende Informationen zu allen Anforderungen an AEM registriert. Daraus lassen sich wertvolle Schlussfolgerungen ziehen.
+In dieser Datei werden grundlegende Informationen zu allen Anforderungen an AEM registriert. Sie können wertvolle Schlüsse daraus ziehen.
 
 `request.log` ist eine integrierte Möglichkeit herauszufinden, wie lange Anforderungen brauchen. Zu Entwicklungszwecken ist es hilfreich, den Befehl `tail -f` auf `request.log` anzuwenden und nach langen Systemreaktionen zu suchen. Für das Analysieren einer größeren `request.log` empfiehlt sich die [Verwendung von `rlog.jar`, damit Sie nach Systemreaktionszeiten filtern und diese sortieren können](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
@@ -696,7 +696,7 @@ Im Anforderungsprotokoll werden alle Anfragen zusammen mit der jeweiligen Antwor
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Indem Sie alle Einträge innerhalb bestimmter Zeiträume (z. B. über verschiedene Zeiträume von 24 Stunden) auflisten, können Sie Aussagen zum durchschnittlichen Traffic auf Ihrer Website machen.
+Durch Addieren aller GET-Einträge innerhalb bestimmter Zeiträume (z. B. über mehrere 24-Stunden-Zeiträume) erhalten Sie aussagekräftige Informationen zum durchschnittlichen Traffic auf Ihrer Website.
 
 #### Überwachung der Antwortzeiten mit request.log {#monitoring-response-times-with-the-request-log}
 
@@ -726,7 +726,7 @@ Dieses Protokoll enthält eine Zeile pro Anforderung oder Antwort mit:
 
 * Bei Antworten enthält die Zeile: 
 
-   * Status-Code (200 bedeutet &quot;Erfolg&quot;, 404 bedeutet &quot;Seite nicht gefunden&quot;
+   * den Status-Code (200 steht für „Erfolg“, 404 steht für „Seite nicht gefunden“);
    * den MIME-Typ;
    * die Antwortzeit.
 
@@ -926,7 +926,7 @@ Der Tool-Befehl `jconsole` ist bei JDK verfügbar.
 
 ### Leistungsüberwachung mit (J)VisualVM {#monitoring-performance-using-j-visualvm}
 
-Für JDK 6-8 der Tool-Befehl `visualvm` ist verfügbar. Nachdem Sie ein JDK installiert haben, können Sie Folgendes tun:
+Ab JDK 6 ist der Tool-Befehl `visualvm` verfügbar. Nachdem Sie JDK installiert haben, können Sie folgende Schritte ausführen:
 
 1. Starten Sie Ihre AEM-Instanz.
 
@@ -1110,9 +1110,9 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 
 Wenn die CPU-Auslastung des Systems ständig bei 100 % liegt, sehen Sie in folgender Dokumentation nach:
 
-* Wissensdatenbank:
+* Die Wissensdatenbank:
 
-   * [Analysieren langsamer und blockierter Prozesse](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+   * [Analysieren langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 
 ### Unzureichender Speicher {#out-of-memory}
 
@@ -1125,7 +1125,7 @@ Falls das System nicht genügend Speicher hat, kann sich dies auf verschiedene W
 In diesen Fällen müssen Sie Folgendes überprüfen:
 
 * Die zum [Starten von AEM](/help/sites-deploying/deploy.md#getting-started) verwendeten JVM-Einstellungen
-* Wissensdatenbank:
+* Die Wissensdatenbank:
 
    * [Analysieren von Speicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html) 
 
@@ -1153,7 +1153,7 @@ Falls das System keine Festplattenkapazität mehr hat oder Sie Festplatten-Trash
 Falls Sie nach jedem Neustart (ggf. eine Woche oder mehr nach dem Neustart) eine Leistungsverschlechterung der Instanz bemerken, können Sie Folgendes überprüfen:
 
 * [Unzureichender Speicher](#outofmemory)
-* Wissensdatenbank:
+* Die Wissensdatenbank:
 
    * [Nicht beendete Sitzungen](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeUnclosedSessions.html) 
 
