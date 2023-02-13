@@ -1,5 +1,5 @@
 ---
-title: Druckkanal und Webkanal
+title: Druckkanal und Web-Kanal
 seo-title: Print channel and web channel
 description: Importieren von Druckkanalvorlagen und Erstellen und Aktivieren von Webkanalvorlagen
 seo-description: Importing print channel templates and creating and enabling web channel templates
@@ -11,13 +11,13 @@ docset: aem65
 feature: Interactive Communication
 exl-id: cd7dbdac-dc76-4a1f-b850-0a9f47ae08de
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '696'
 ht-degree: 100%
 
 ---
 
-# Druckkanal und Webkanal{#print-channel-and-web-channel}
+# Druckkanal und Web-Kanal{#print-channel-and-web-channel}
 
 Interaktive Kommunikation kann über zwei Kanäle erfolgen: Druck und Web. Der Druckkanal wird zum Erstellen von PDFs und Papierkommunikationen verwendet, z. B. ein gedruckter Brief zur Erinnerung an die Versicherungsprämienzahlung, während der Webkanal für Online-Projekte wie eine Kreditkartenabrechnung auf einer Website verwendet wird.
 
