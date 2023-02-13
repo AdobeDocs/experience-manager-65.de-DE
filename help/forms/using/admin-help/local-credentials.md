@@ -1,5 +1,5 @@
 ---
-title: Lokale Berechtigungen verwalten
+title: Verwalten lokaler Anmeldeinformationen
 seo-title: Managing local credentials
 description: Erfahren Sie, wie Sie lokale Berechtigungen verwalten.
 seo-description: Learn how to manage local credentials.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 598a9a03-3773-4620-8867-1f754d8ca031
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '501'
 ht-degree: 100%
 
 ---
 
-# Lokale Berechtigungen verwalten {#managing-local-credentials}
+# Verwalten lokaler Anmeldeinformationen {#managing-local-credentials}
 
 Lokale Berechtigungen sind auf privaten Schlüsseln basierende Berechtigungen, für welche die Trust Store-Verwaltung als Host dient. Eine *lokale Berechtigung* gibt an, wo die DES-Berechtigung eines Benutzers gespeichert wird. Über die Trust Store-Verwaltung können Sie Ihre lokalen Berechtigungen importieren und verwalten, indem Sie beispielsweise vorhandene PFX-Dateien verwenden, sodass Sie lokale Berechtigungen importieren, bearbeiten und löschen können.
 
