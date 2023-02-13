@@ -1,5 +1,5 @@
 ---
-title: Debuggings von HTML5-Formularen
+title: Debugging von HTML5-Formularen
 seo-title: Debugging HTML5 forms
 description: Das Dokument listet Schritte zur Behebung verschiedener bekannter Probleme auf.
 seo-description: The document list steps to troubleshoot various known issues.
@@ -12,13 +12,13 @@ discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: Mobile Forms
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '818'
 ht-degree: 100%
 
 ---
 
-# Debuggings von HTML5-Formularen {#debugging-html-forms}
+# Debugging von HTML5-Formularen {#debugging-html-forms}
 
 Dieses Dokument umfasst mehrere Fehlerbehebungsszenarien. Für jedes Beispiel werden einige Schritte beschrieben, um das Problem zu beheben. Führen Sie diese Schritte aus und, falls das Problem weiterhin besteht, konfigurieren Sie die Protokollfunktion, um Protokolle zu erhalten und auf Fehler/Warnungen zu überprüfen. Weitere Informationen zu Protokollen für HTML5 finden Sie unter [Generieren von Protokollen für HTML5-Formulare](/help/forms/using/enable-logs.md).
 
