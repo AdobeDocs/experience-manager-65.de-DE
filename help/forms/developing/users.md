@@ -12,9 +12,9 @@ discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
 source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6228'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -833,7 +833,7 @@ Authentifizieren Sie einen Benutzer mit der Authentication Manager Service API (
 1. Schließen Sie Projektdateien ein.
 
    * Erstellen Sie eine Microsoft .NET-Client-Assembly, welche die Authentication Manager-WSDL verwendet. (Weitere Informationen finden Sie unter [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Referenzieren Sie die Microsoft .NET-Client-Assembly. (Siehe &quot;Verweisen auf die .NET-Clientassembly&quot;in [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
+   * Referenzieren Sie die Microsoft .NET-Client-Assembly. (Siehe „Verweisen auf die .NET-Client-Assembly“ in [Aufrufen von AEM Forms über Base64-Codierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)).
 
 1. Erstellen Sie einen AuthenticationManagerService-Client.
 
