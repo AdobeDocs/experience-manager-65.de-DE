@@ -12,9 +12,9 @@ discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 source-git-commit: c4045313200ffecbf05abfacd67aabc80ad67e7f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3892'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -188,7 +188,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   </tr>
   <tr>
    <td><code>name</code></td>
-   <td>Ein Bezeichner, der verwendet wird, um dieses Element in Skriptausdrücken eindeutig zu kennzeichnen.</td>
+   <td>Eine Kennung, die verwendet wird, um dieses Element in Skriptausdrücken eindeutig zu kennzeichnen.</td>
    <td>HTML5-Formulare lassen die Eigenschaft für Einstellungsnamen für Objekte nicht zu. Dies ist eine schreibgeschützte Eigenschaft für HTML5-Formulare.</td>
   </tr>
   <tr>
@@ -461,7 +461,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   </tr>
   <tr>
    <td>name</td>
-   <td>Ein Bezeichner, der verwendet wird, um dieses Element in Skriptausdrücken eindeutig zu kennzeichnen.</td>
+   <td>Eine Kennung, die verwendet wird, um dieses Element in Skriptausdrücken eindeutig zu kennzeichnen.</td>
    <td>Ohne</td>
   </tr>
   <tr>
@@ -503,7 +503,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <th>Ausnahme</th>
   </tr>
   <tr>
-   <td>nodes</td>
+   <td>Knoten</td>
    <td>Gibt eine Liste aller untergeordneten Objekte des aktuellen Objekts zurück.</td>
    <td>
     <ul>
@@ -572,7 +572,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>Farbe</td>
    <td>Die Eigenschaft „Farbe“ beschreibt eine eindeutige Farbe für das pattern-Objekt.</td>
    <td>
     <ul>
@@ -593,7 +593,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>Farbe</td>
    <td>Die Eigenschaft „Farbe“ legt eine eindeutige Füllfarbe fest.</td>
    <td>
     <ul>
@@ -614,7 +614,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>Farbe</td>
    <td>Die Eigenschaft „Farbe“ beschreibt eine eindeutige Farbe für einen linearen Füllverlauf auf einem Formular.</td>
    <td>
     <ul>
@@ -652,7 +652,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>Farbe</td>
    <td>Die Eigenschaft „Farbe“ beschreibt eine eindeutige Farbe für das pattern-Objekt. </td>
    <td>
     <ul>
@@ -673,7 +673,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>Farbe</td>
    <td>Die Eigenschaft „Farbe“ beschreibt eine eindeutige Farbe für das radial-Objekt.</td>
    <td>
     <ul>
@@ -694,7 +694,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>Farbe</td>
    <td>Die Eigenschaft „Farbe“ beschreibt eine eindeutige Farbe für das stipple-Objekt.</td>
    <td>
     <ul>
@@ -752,7 +752,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
    <td><strong>Ausnahme</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>Farbe</td>
    <td>Die Eigenschaft „Farbe“ beschreibt eine eindeutige Farbe für das corner-Objekt.</td>
    <td>
     <ul>
@@ -819,7 +819,7 @@ Die folgenden JavaScript, FormCalc-Eigenschaften und Methoden werden in HTML5-Fo
   </tr>
   <tr>
    <td>name<br /> </td>
-   <td>Ein Bezeichner, der verwendet wird, um dieses Element in Skriptausdrücken eindeutig zu kennzeichnen.</td>
+   <td>Eine Kennung, die verwendet wird, um dieses Element in Skriptausdrücken eindeutig zu kennzeichnen.</td>
    <td>Ohne</td>
   </tr>
  </tbody>
@@ -1220,7 +1220,7 @@ FormCalc ist eine XFA-spezifische Sprache zum Erstellen von E-Formular-orientier
 
 1. **Logikfunktionen**
 
-   1. Wählen Sie eine der folgenden Optionen()
+   1. Choose()
    1. if()
    1. Oneof()
    1. Within()
@@ -1344,7 +1344,7 @@ Folgende clientseitige XFA-Ereignisse werden unterstützt:
 
 * Initialisieren
 * Validieren
-* Calculate
+* Berechnen
 * Klicken Sie auf
 * Geben Sie ein
 * Beenden
@@ -1353,4 +1353,4 @@ Folgende clientseitige XFA-Ereignisse werden unterstützt:
 
 >[!NOTE]
 >
->HTML5-Formulare werden clientseitig (im Browser) wiedergegeben. Es wird empfohlen, clientseitig zu verwenden **validate** und **calculate** Skripten anstelle von serverseitigen Skripten.
+>HTML5-Formulare werden clientseitig (im Browser) wiedergegeben. Es wird empfohlen, Client-seitige **Validierungs**- und **Berechnungs**-Skripte anstelle Server-seitiger Skripte zu verwenden.
