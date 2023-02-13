@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '518'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -38,15 +38,15 @@ Die Standardintegration zwischen AEM und Campaign basiert auf JSON und JSSP (Jav
 
 >[!NOTE]
 >
->[Für dieses Beispiel lesen Sie bitte Geometrixx](/help/sites-developing/we-retail.md), der in Package Share verfügbar ist.
+>[Für dieses Beispiel verwenden SIe Geometrixx](/help/sites-developing/we-retail.md), das bei Package Share erhältlich ist.
 
 In diesem Beispiel erstellen wir eine neue benutzerdefinierte JSSP-Datei und rufen diese in AEM ab, um das Ergebnis zu erhalten. So können Sie beispielsweise Daten von Adobe Campaign abrufen oder Daten in Adobe Campaign speichern.
 
-1. Um in Adobe Campaign eine neue JSSP-Datei zu erstellen, klicken Sie auf das **Neu** Symbol.
+1. Klicken Sie in Adobe Campaign zum Erstellen einer neuen JSSP-Datei auf das Symbol **Neu**.
 
    ![](do-not-localize/chlimage_1-4a.png)
 
-1. Geben Sie den Namen dieser JSSP-Datei ein. In diesem Beispiel verwenden wir **cus:custom.jssp** (d. h., es wird im **cus** Namespace).
+1. Geben Sie den Namen dieser JSSP-Datei ein. In diesem Beispiel verwenden wir **cus:custom.jssp** (was bedeutet, dass es sich im Namespace **cus** befindet).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -65,7 +65,7 @@ In diesem Beispiel erstellen wir eine neue benutzerdefinierte JSSP-Datei und ruf
    * Sie haben eine funktionierende Verbindung zwischen AEM und Campaign
    * Der Campaign-Cloud-Service ist auf **/content/geometrixx-outdoor** konfiguriert
 
-   Das wichtigste Objekt in diesem Beispiel ist die **GenericCampaignConnector**, mit dem Sie JSSP-Dateien auf Adobe Campaign-Seite aufrufen (abrufen und posten) können.
+   Das wichtigste Objekt in diesem Beispiel ist **GenericCampaignConnector**, welches es Ihnen erlaubt, jssp-Dateien in Adobe Campaign aufzurufen (GET und POST).
 
    Es folgt ein kleines Code-Snippet:
 
@@ -170,9 +170,9 @@ AEM bietet betriebsbereite APIs zum Abrufen der Objekte, die in der siteadmin-Ex
 
 >[!NOTE]
 >
->[Für dieses Beispiel lesen Sie bitte Geometrixx](/help/sites-developing/we-retail.md), der in Package Share verfügbar ist.
+>[Für dieses Beispiel verwenden SIe Geometrixx](/help/sites-developing/we-retail.md), das bei Package Share erhältlich ist.
 
-Für jeden Knoten im Explorer gibt es eine API, die mit ihm verknüpft ist. Beispiel für den Knoten :
+Für jeden Knoten im Explorer gibt es eine API, die damit verknüpft ist. Beispielsweise für den Knoten:
 
 * [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
