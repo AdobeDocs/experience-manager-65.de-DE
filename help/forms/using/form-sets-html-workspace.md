@@ -1,5 +1,5 @@
 ---
-title: Das Arbeiten mit Formularsätzen in AEM Forms Workspace
+title: Arbeiten mit Formularsätzen in AEM Forms Workspace
 seo-title: Working with Formsets in AEM Forms workspace
 description: Ein Formularsatz ist eine Sammlung von HTML5-Formularen, die gruppiert sind und als einzelner Formularsatz dem Endbenutzern präsentiert wird. Erfahren Sie, wie Sie mit Formularsätzen in AEM Forms Workspace arbeiten können.
 seo-description: A formset is a collection of HTML5 forms grouped and presented as a single set of forms to end users. Learn how you can work with formsets in AEM Forms workspace.
@@ -12,13 +12,13 @@ discoiquuid: f550b747-2def-4317-9ef7-dc6c1e7bb404
 docset: aem65
 exl-id: 76a8f93f-eb8a-4e68-8626-efa6dc67668f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
 ht-degree: 100%
 
 ---
 
-# Das Arbeiten mit Formularsätzen in AEM Forms Workspace{#working-with-formsets-in-aem-forms-workspace}
+# Arbeiten mit Formularsätzen in AEM Forms Workspace{#working-with-formsets-in-aem-forms-workspace}
 
 Ein Formularsatz ist eine Sammlung von HTML5-Formularen, die gruppiert sind und als einzelner Formularsatz dem Endbenutzern präsentiert wird. Wenn der Benutzer einen Formularsatz ausfüllt, werden diese Informationen von einem Formular auf ein anderes übertragen. Der Formularsatz kann dann mit nur einem Klick gesendet werden. Weitere Informationen zu Formularsätzen und dazu, wie sie eingerichtet werden, finden Sie unter [Formularsätze in AEM Forms](../../forms/using/formset-in-aem-forms.md).
 
