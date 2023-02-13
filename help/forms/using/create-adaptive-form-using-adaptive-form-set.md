@@ -1,7 +1,7 @@
 ---
-title: Erstellen eines adaptiven Formulars mit einem Satz adaptiver Formulare
+title: Erstellen eines adaptiven Formulars mithilfe eines Satzes adaptiver Formulare
 seo-title: Create an adaptive form using a set of adaptive forms
-description: 'Mit AEM Forms können Sie adaptive Formulare zu einem einzigen großen adaptiven Formular vereinen, und seine Funktionen verstehen. '
+description: Mit AEM Forms können Sie adaptive Formulare zu einem einzigen großen adaptiven Formular vereinen, und seine Funktionen verstehen.
 seo-description: With AEM Forms, bring adaptive forms together to author a single large adaptive form, and understand its features.
 uuid: e52e4f90-8821-49ec-89ff-fbf07db69bd2
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,7 +11,7 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '569'
 ht-degree: 100%
 
