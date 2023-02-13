@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1520'
 ht-degree: 100%
 
@@ -74,7 +74,7 @@ Sie können die einmalige Anmeldung auch über HTTP-Kopfzeilen aktivieren. (Sieh
    * Fügen Sie Kerberos als Authentifizierungsanbieter hinzu. Geben Sie auf der Seite „Neu“ oder „Authentifizierung bearbeiten“ für Kerberos die folgenden Informationen ein:
 
       * **Authentifizierungsanbieter:** Kerberos
-      * **DNS-IP:** Die DNS-IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird. Sie können diese IP-Adresse bestimmen, indem Sie `ipconfig/all` in die Befehlszeile eingeben.
+      * **DNS-IP**: Die DNS-IP-Adresse des Servers, auf dem AEM Forms ausgeführt wird. Sie können diese IP-Adresse bestimmen, indem Sie `ipconfig/all` in die Befehlszeile eingeben.
       * **KDC-Host:** Der voll qualifizierte Hostname bzw. die IP-Adresse des für die Authentifizierung verwendeten Active Directory-Servers.
       * **Dienstbenutzer:** Der an das Tool KtPass übergebene Dienstprinzipalname. In dem zuvor verwendeten Beispiel ist der Dienstbenutzer `HTTP/lcserver.um.lc.com`.
       * **Dienstbereich:** Der Domanin-Name für Active Directory. In dem zuvor verwendeten Beispiel ist der Domain-Name `UM.LC.COM.`
