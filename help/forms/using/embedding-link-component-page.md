@@ -1,5 +1,5 @@
 ---
-title: Einbetten einer Komponente „Link“ in eine Seite
+title: Einbetten einer Link-Komponente in eine Seite
 seo-title: Embedding link component in a page
 description: Mithilfe der Komponente „Link“ können Sie Links zu adaptiven Dokumenten oder Formularen von beliebigen Seiten aus erstellen.
 seo-description: You can use the link component to link an adaptive document or an adaptive form from any page.
@@ -11,13 +11,13 @@ discoiquuid: 9d63152d-41ca-4c7c-bb20-af16c7bdec13
 docset: aem65
 exl-id: eb45adf2-d0f3-4de6-92ac-fb146953e989
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '408'
 ht-degree: 100%
 
 ---
 
-# Einbetten einer Komponente „Link“ in eine Seite{#embedding-link-component-in-a-page}
+# Einbetten einer Link-Komponente in eine Seite{#embedding-link-component-in-a-page}
 
 ## Voraussetzungen {#prerequisites}
 
