@@ -14,9 +14,9 @@ docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1743'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -45,7 +45,7 @@ Dann müssen Sie die Assets und Dokumente aktualisieren, indem Sie das [Migratio
 
 **Bei nicht ersetzender Installation**
 
-Bevor Sie die Assets und Dokumente verwenden können, müssen Sie das [AEMFD-Kompatibilitätspaket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) (einschließlich des Correspondence Management-Kompatibilitätspakets) installieren, wenn es sich um eine dezentrale (neue) Installation handelt.
+Bevor Sie die Assets und Dokumente verwenden können, müssen Sie das [AEMFD-Kompatibilitätspaket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) (einschließlich des Correspondence Management-Kompatibilitätspakets) installieren, wenn es sich um eine dezentrale (neue) Installation handelt.
 
 Dann müssen Sie Ihr Asset-Paket (zip oder cmp) in das neue Setup importieren und dann die Assets und Dokumente aktualisieren, indem Sie das [Migrationsprogramm ausführen](#runningmigrationutility). Adobe empfiehlt, neue Assets auf der neuen Installation erst nach Ausführung des Migrationsprogramms zu erstellen.
 
@@ -105,7 +105,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
    >[!NOTE]
    >
-   >Während der Migration von Assets werden möglicherweise Warnmeldungen wie &quot;Konflikt gefunden für ...&quot;angezeigt. Solche Benachrichtigungen bedeuten, dass Regeln für einige Komponenten in adaptiven Formularen nicht migriert werden konnten. Beispiel: Wenn bei einer Komponente ein Ereignis auftritt, das sowohl Regeln als auch Skripten umfasst und wenn die Regeln nach einem Skript angewendet werden, wird keine der Regeln für die Komponente migriert. Sie können [migrieren Sie diese Regeln, indem Sie den Regeleditor öffnen.](#migrate-rules) im Authoring adaptiver Formulare.
+   >Während der Asset-Migration treten möglicherweise Warnungen ähnlich der folgenden auf: „Konflikt aufgetreten bei …“. Solche Benachrichtigungen bedeuten, dass Regeln für einige Komponenten in adaptiven Formularen nicht migriert werden konnten. Beispiel: Wenn bei einer Komponente ein Ereignis auftritt, das sowohl Regeln als auch Skripte umfasst und wenn die Regeln nach einem Skript angewendet werden, wird keine der Regeln für die Komponente migriert. Allerdings können Sie [diese Regeln migrieren, indem Sie den Regeleditor für das Authoring von adaptiven Formularen öffnen](#migrate-rules).
 
    * Um benutzerdefinierte Komponenten für adaptive Formulare zu migrieren, tippen Sie auf **Migration benutzerdefinierter Komponenten für adaptive Formulare** und auf der Seite „Migration von benutzerdefinierten Komponenten“ auf **Migration beginnen**. Die folgenden Elemente werden migriert:
 
@@ -113,12 +113,12 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
       * Komponentenüberlagerungen, falls vorhanden.
    * Um Vorlagen für adaptive Formulare zu migrieren, tippen Sie auf **Migration von Vorlagen für adaptive Formulare** und auf der Seite „Migration von benutzerdefinierten Komponenten“ auf **Migration beginnen**. Die folgenden Elemente werden migriert:
 
-      * Adaptive Formularvorlagen, erstellt unter `/apps` oder `/conf` mit AEM Vorlagen-Editor.
-   * Migrieren Sie AEM Forms Cloud Configuration Services, um das neue kontextabhängige Cloud Service-Paradigma zu nutzen, das die Touch-optimierte Benutzeroberfläche enthält (unter `/conf`). Wenn Sie AEM Forms Cloud Configuration Services migrieren, werden die Cloud-Services in `/etc` werden nach `/conf`. Wenn Sie über keine Cloud Services-Anpassungen verfügen, die von den veralteten Pfaden (`/etc`), wird empfohlen, das Migrationsdienstprogramm direkt nach dem Upgrade auf 6.5 auszuführen und die Touch-optimierte Cloud-Konfiguration für alle weiteren Arbeiten zu verwenden. Wenn Sie bereits über Anpassungen der Cloud-Services verfügen, verwenden Sie die klassische Benutzeroberfläche bei der aktualisierten Einrichtung weiter, bis die Anpassungen entsprechend den migrierten Pfaden aktualisiert werden (`/conf`) und führen Sie dann das Migrationsdienstprogramm aus.
+      * Adaptive Formularvorlagen, die unter `/apps` oder `/conf` mit dem AEM-Vorlageneditor erstellt wurden.
+   * Migrieren Sie die AEM Forms Cloud-Konfigurations-Services, um das neue kontextbezogene Cloud-Service-Paradigma zu nutzen, das die Benutzeroberfläche mit Touch-Funktion (unter `/conf`) umfasst. Wenn Sie Services der Cloud-Konfiguration von AEM Forms migrieren, werden die Cloud-Services in `/etc` nach `/conf` verschoben. Wenn Sie keine Anpassungen von Cloud-Services haben, die von den veralteten Pfaden (`/etc`) abhängen, wird empfohlen, dass Sie das Migrationsdienstprogramm direkt nach dem Upgrade auf 6.5 ausführen und für alle weiteren Arbeiten die Cloud-Konfigurations-Benutzeroberfläche mit Touch-Funktion verwenden. Wenn Sie über Anpassungen für die bereits vorhandenen Cloud-Services verfügen, setzen Sie die Verwendung der klassischen Benutzeroberfläche bei der Aktualisierung fort, bis die Anpassungen für die migrierten Pfade (`/conf`) abgeschlossen sind, und führen Sie erst dann das Migrationsdienstprogramm aus.
 
    Um **AEM Forms-Cloud-Dienste** zu migrieren, die Folgendes umfassen, tippen Sie auf „AEM Forms-Cloud-Konfigurationsmigration“ (die Cloud-Konfigurationsmigration ist unabhängig vom AEMFD-Kompatibilitätspaket) und dann auf der Seite „Konfigurationsmigration“ auf **Migration starten**:
 
-   * Cloud-Dienste für Formulardatenmodell
+   * Cloud-Services für das Formulardatenmodell
 
       * Quellpfad: `/etc/cloudservices/fdm`
       * Zielpfad: `/conf/global/settings/cloudconfigs/fdm`
@@ -130,7 +130,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
       * Quellpfad: `/etc/cloudservices/echosign`
       * Zielpfad: `/conf/global/settings/cloudconfigs/echosign`
-   * Cloud-Dienste für Typekit
+   * Cloud-Services für Typekit
 
       * Quellpfad: `/etc/cloudservices/typekit`
       * Zielpfad: `/conf/global/settings/cloudconfigs/typekit`
@@ -142,7 +142,7 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
    Wenn ausgeführt, geht das Migrationsdienstprogramm wie folgt vor: 
 
-   * **Fügt die Tags zu den Assets hinzu**: Fügt das Tag &quot;Correspondence Management: Migrierte Assets&quot;/ &quot;Adaptive Forms : Migrierte Assets&quot;. den migrierten Assets hinzu, damit Benutzer migrierte Inhalte ermitteln können. Wenn Sie das Migrationsdienstprogramm ausführen, werden alle im System vorhandenen Assets mit „Migriert“ markiert. 
+   * **Fügt den Assets die Tags hinzu**: Fügt das Tag „Correspondence Management: Migrierte Assets“/„Adaptive Formulare: Migrierte Assets“ zu den migrierten Assets hinzu, damit Benutzende die migrierten Assets ermitteln können. Wenn Sie das Migrationsdienstprogramm ausführen, werden alle im System vorhandenen Assets mit „Migriert“ markiert. 
    * **Erstellt Tags**: Die Kategorien und Unterkategorien, die im Vorgängersystem vorhanden sind, werden als Tags erstellt, und dann werden diese Tags den entsprechenden Correspondence Management-Assets in AEM zugeordnet. So werden beispielsweise eine Kategorie (Schadensmeldungen) sowie eine Unterkategorie (Schadensmeldungen) einer Briefvorlage als Tags generiert.
 
 
@@ -154,11 +154,11 @@ Wenn Sie das Migrationsdienstprogramm zum ersten Mal ausführen, wird ein Protok
 
 
 
-1. Nach der Ausführung des Migrationsdienstprogramms fahren Sie mit den [Systemverwaltungsaufgaben](#housekeepingtasks) fort.
+1. Fahren Sie nach der Ausführung des Migrationsdienstprogramms mit den [Systemverwaltungsaufgaben](#housekeepingtasks) fort.
 
 #### Migrieren von Regeln mithilfe des Regeleditors {#migrate-rules}
 
-Diese Komponenten können migriert werden, indem sie im Regel-Editor im Editor für adaptive Formulare geöffnet werden.
+Diese Komponenten können migriert werden, indem sie im Regeleditor im Editor für adaptive Formulare geöffnet werden.
 
 * Um Regeln und Skripte (für die Aktualisierung von 6.3 nicht erforderlich) in benutzerdefinierten Komponenten zu migrieren, tippen Sie auf „Migration von benutzerdefinierten Adaptive Forms-Komponenten“ und auf dem nächsten Bildschirm auf „Migration beginnen“. Die folgenden Elemente werden migriert:
 
