@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2072'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -56,7 +56,7 @@ Der Speicherort des globalen Dokumentenspeichers muss ggf. während einer Wieder
 
 Sie können mithilfe von Administration Console in der AEM Forms-Datenbank AEM Forms-Dokumentenspeicher aktivieren. Obwohl bei dieser Option alle permanenten Dokumente in der Datenbank erhalten bleiben, erfordert AEM Forms den dateisystembasierten GDS-Ordner, da dieser zum Speichern permanenter und temporärer Dateien und Ressourcen, die mit AEM Forms-Sitzungen und -Aufrufen zusammenhängen, verwendet wird.
 
-Wenn Sie in den Core-Systemeinstellungen der Administration Console die Option &quot;Dokumentenspeicher in der Datenbank aktivieren&quot;auswählen oder Configuration Manager verwenden, sind AEM Forms nicht für den Snapshot-Sicherungsmodus und den kontinuierlichen Sicherungsmodus geeignet. Daher ist keine Verwaltung von Sicherungsmodi erforderlich, wenn Sie AEM Forms verwenden. Wenn Sie diese Option verwenden, sollten Sie den globalen Dokumentenspeicher nur sichern, nachdem Sie die Option aktiviert haben. Wenn Sie AEM Forms aus einer Sicherung wiederherstellen, müssen Sie den Sicherungsordner für den GDS nicht umbenennen oder wiederherzustellen.
+Wenn Sie die Option „Dokumentenspeicherung in der Datenbank aktivieren“ in den Kernsystemeinstellungen in der Administration-Console oder mithilfe von Configuration Manager auswählen, lässt AEM Forms den Snapshot-Sicherungsmodus und den kontinuierlichen Sicherungsmodus nicht zu. Daher ist keine Verwaltung von Sicherungsmodi erforderlich, wenn Sie AEM Forms verwenden. Wenn Sie diese Option verwenden, sollten Sie den globalen Dokumentenspeicher nur sichern, nachdem Sie die Option aktiviert haben. Wenn Sie AEM Forms aus einer Sicherung wiederherstellen, müssen Sie den Sicherungsordner für den GDS nicht umbenennen oder wiederherzustellen.
 
 ## AEM-Repository {#aem-repository}
 
@@ -72,13 +72,13 @@ Zu einem einfachen Setup der Correspondence Management Solution gehört eine Aut
 
 Forms Manager optimiert den Prozess zur Aktualisierung, Verwaltung und Zurücknahme von Formularen.
 
-### Arbeitsablauf in AEM Forms {#html-workspace}
+### AEM Forms Workspace {#html-workspace}
 
 AEM Forms Workspace entspricht dem Funktionsumfang von Flex Workspace (für AEM Forms on JEE nicht mehr unterstützt). Es verfügt zusätzlich über neue Funktionen zur Erweiterung und Integration von Workspace und macht die Anwendung so benutzerfreundlicher.
 
 >[!NOTE]
 >
->Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
+>Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
 
 Dies ermöglicht die Aufgabenverwaltung auf Clients ohne Flash Player und Adobe Reader. So wird die Wiedergabe von HTML-Formularen zusätzlich zu PDF- und Flex-Formularen erleichtert.
 
