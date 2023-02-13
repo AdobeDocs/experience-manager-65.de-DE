@@ -1,5 +1,5 @@
 ---
-title: Dateispeicherorte für Output angeben
+title: Angeben der Dateispeicherorte für die Ausgabe
 seo-title: Specify file locations for Output
 description: Erfahren Sie, wie Sie Dateispeicherorte für die Ausgabe angegeben.
 seo-description: Learn how to specify file locations for Output.
@@ -11,17 +11,17 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
 exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '314'
 ht-degree: 100%
 
 ---
 
-# Dateispeicherorte für Output angeben {#specify-file-locations-for-output}
+# Angeben der Dateispeicherorte für die Ausgabe {#specify-file-locations-for-output}
 
 Sie können die Speicherorte angeben, an denen Output nach bestimmten Typen von erforderlichen Dateien suchen soll.
 
-1. Klicken Sie in der Administration-Console auf Services > Ausgabe.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Ausgabe“.
 1. Geben Sie unter „Speicherorte“ die entsprechenden Optionen an.
 1. Klicken Sie auf Speichern.
 
