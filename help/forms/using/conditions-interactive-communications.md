@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1497'
 ht-degree: 100%
 
@@ -169,7 +169,7 @@ Beim Erstellen oder Bearbeiten einer Regel in einer Bedingung können Sie auf ![
 
 Tippen Sie erneut auf „Größe ändern“, um zum regulären Dialogfeld „Regel erstellen/Regel bearbeiten“ zurückzukehren.
 
-### Variablen erstellen {#create-variables}
+### Erstellen von Variablen {#create-variables}
 
 1. Beim Erstellen oder Bearbeiten einer Regel in einer Bedingung können Sie auf ![icon_resize](assets/icon_resize.png) (Größe ändern) tippen, um das Dialogfeld „Regel erstellen/Regel bearbeiten“ zu erweitern.
 
