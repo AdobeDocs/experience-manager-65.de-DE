@@ -1,5 +1,5 @@
 ---
-title: Richtlinien erstellen und verwalten
+title: Erstellen und Verwalten von Richtlinien
 seo-title: Creating and managing policies
 description: Eine Richtlinie definiert einen Satz von Vertraulichkeitseinstellungen und Benutzern, die auf ein Dokument zugreifen dürfen, für das die Richtlinie gilt. Sie können verschiedene Arten von Richtlinien mit AEM Forms erstellen und verwalten.
 seo-description: A policy is a set of confidentiality settings and users who can access a document to which the policy is applied. You can create and manage various types of policies using AEM forms.
@@ -12,13 +12,13 @@ discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4718'
 ht-degree: 100%
 
 ---
 
-# Richtlinien erstellen und verwalten {#creating-and-managing-policies}
+# Erstellen und Verwalten von Richtlinien {#creating-and-managing-policies}
 
 Eine *Richtlinie* definiert einen Satz von Vertraulichkeitseinstellungen und Benutzern, die auf ein Dokument zugreifen dürfen, für das die Richtlinie gilt. Ein *Richtliniensatz* dient zum Gruppieren verschiedener Richtlinien mit einem gemeinsamen Zweck. Diese Richtliniensätze werden meist einer Teilmenge der Benutzer im System zur Verfügung gestellt. Einzelheiten zu den Richtlinien finden Sie unter [Informationen zu Richtlinien und richtliniengeschützte Dokumente](/help/forms/using/admin-help/document-security.md#policies-and-policy-protected-documents).
 
