@@ -1,5 +1,5 @@
 ---
-title: Überblick über den Ausgabedienst
+title: Überblick über den Ausgabe-Service
 seo-title: Overview of output service
 description: 'Mit Output können Sie XML-Daten mit einem in Designer erstellten Formularentwurf zusammenführen und einen Dokumentausgabestream in einer Vielzahl von Formaten erstellen: '
 seo-description: Output lets you merge XML form data with a form design created in Designer to create a document output stream in various formats.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5a96f5ea-6fe3-44b1-b314-14097b9e9c01
 exl-id: e99b72d0-fbd5-4150-a225-1a91ad4c5867
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '265'
 ht-degree: 100%
 
 ---
 
-# Überblick über den Ausgabedienst {#overview-of-output-service}
+# Überblick über den Ausgabe-Service {#overview-of-output-service}
 
 Mit Output können Sie XML-Daten mit einem in Designer erstellten Formularentwurf zusammenführen und einen Dokumentausgabestream in einer Vielzahl von Formaten erstellen: Der Ausgabestream kann an einen Netzwerkdrucker, einen lokalen Drucker oder in eine Datei auf einem Datenträger gesendet werden
 
@@ -31,8 +31,8 @@ Sie können auf den Output-Seiten in Administration Console mehrere Aufgaben dur
 * Absolute und relative Pfade für URLs, URIs, XCIs und Dateispeicherorte angeben. (Siehe [Dateispeicherorte für Output angeben](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output).)
 * Cachegrößen und -richtlinien konfigurieren (Siehe [Cachemodus angeben](/help/forms/using/admin-help/configuring-caching-output.md#specifying-the-cache-mode) und [Cache-Einstellungen konfigurieren](/help/forms/using/admin-help/configuring-caching-output.md#configuring-cache-settings).)
 * Schriften auf dem Anwendungsserver bereitstellen. (Siehe [Schriftarten zur Verfügung stellen](/help/forms/using/admin-help/make-fonts-available.md#make-fonts-available).)
-* Einzubettende Schriften angeben. (Siehe [Einzubettende Schriften angeben](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed).)
-* XCI-Konfigurationsoptionen angeben. (Siehe [XCI-Konfigurationsoptionen angeben](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options).)
-* Sicherheitseinstellungen angeben. (Siehe [Sicherheitseinstellungen angeben](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings).)
+* Geben Sie die einzubettenden Schriften an. (Siehe [Einzubettende Schriften angeben](/help/forms/using/admin-help/specify-fonts-embed.md#specify-fonts-to-embed).)
+* Geben Sie die XCI-Konfigurationsoptionen an. (Siehe [XCI-Konfigurationsoptionen angeben](/help/forms/using/admin-help/specify-xci-configuration-options.md#specify-xci-configuration-options).)
+* Geben Sie die Sicherheitseinstellungen an. (Siehe [Sicherheitseinstellungen angeben](/help/forms/using/admin-help/specify-security-settings.md#specify-security-settings).)
 
 Klicken Sie nach dem Ändern der Einstellungen auf „Speichern“, um sie auf Output anzuwenden. Der Server muss nicht neu gestartet werden, um die Änderungen zu übernehmen. Sie müssen jedoch ggf. den Output-Dienst neu starten, wenn Sie Cacheeinstellungen konfigurieren.
