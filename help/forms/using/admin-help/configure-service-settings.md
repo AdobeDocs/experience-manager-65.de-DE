@@ -1,5 +1,5 @@
 ---
-title: Diensteinstellungen konfigurieren
+title: Konfigurieren von Diensteinstellungen
 seo-title: Configure service settings
 description: Erfahren Sie, wie Sie die Diensteinstellungen konfigurieren.
 seo-description: Learn how to configure service settings.
@@ -11,24 +11,24 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
 source-git-commit: 3e6eba85dbd9e98ac29fed55c1787e5633bafc04
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '10683'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Diensteinstellungen konfigurieren {#configure-service-settings}
+# Konfigurieren von Diensteinstellungen {#configure-service-settings}
 
 Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden der Dienste zu konfigurieren, die Bestandteil von AEM Forms sind. Die verfügbaren Einstellungen sind vom zu konfigurierenden Dienst abhängig.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Beenden Sie den Dienst, bevor Sie ihn ändern. (Siehe [Starten und Beenden von Diensten](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
 1. Klicken Sie auf den Namen des Dienstes, der konfiguriert werden soll.
 1. Wenn der Dienst über eine Registerkarte „Konfiguration“ verfügt, ändern Sie dort seine Einstellungen. Weitere Informationen finden Sie in der Linkliste unten.
 
    >[!NOTE]
    >
-   >Nicht alle Dienste, die auf der Seite „Dienstverwaltung“ aufgelistet sind, verfügen über die Registerkarte „Konfiguration“. Für von Ihnen erstellte Prozesse wird die Registerkarte „Konfiguration“ nur angezeigt, wenn Sie dem Prozess in Workbench einen Konfigurationsparameter hinzugefügt haben. (Siehe &quot;Konfigurationsparameter&quot;im [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de) .
+   >Nicht alle Dienste, die auf der Seite „Dienstverwaltung“ aufgelistet sind, verfügen über die Registerkarte „Konfiguration“. Für von Ihnen erstellte Prozesse wird die Registerkarte „Konfiguration“ nur angezeigt, wenn Sie dem Prozess in Workbench einen Konfigurationsparameter hinzugefügt haben. (Siehe „Konfigurationsparameter“ in der [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
 
 1. Klicken Sie auf die Registerkarte „Sicherheit“ und legen Sie die Sicherheitseinstellungen für den Dienst fest. Siehe [Ändern von Sicherheitseinstellungen für einen Dienst](configure-service-settings.md#modifying-security-settings-for-a-service).
@@ -39,7 +39,7 @@ Sie können die Dienstverwaltungsseite verwenden, um Einstellungen für jeden de
 
 ## Einstellungen des Audit Workflow-Dienstes {#audit-workflow-service-settings}
 
-Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und anschließend wiederzugeben, um das Verhalten des Prozesses zu untersuchen. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63).) Zum Einsparen von Speicherplatz auf dem Dateisystem des Formularservers können Sie die Menge der zu speichernden Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
+Workbench gibt Ihnen die Möglichkeit, Prozessinstanzen während der Ausführung zur Laufzeit aufzuzeichnen und anschließend wiederzugeben, um das Verhalten des Prozesses zu untersuchen. (Siehe [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_63_de).) Zum Einsparen von Speicherplatz auf dem Dateisystem des Formularservers können Sie die Menge der zu speichernden Prozessaufzeichnungsdaten begrenzen. Sie können die folgenden Eigenschaften des Audit Workflow-Dienstes (`AuditWorkflowService`) konfigurieren:
 
 **maxNumberOfRecordingInstances**: Die maximale Anzahl von zu speichernden Aufzeichnungen. Wenn die maximale Anzahl gespeichert ist, wird beim Erstellen einer neuen Aufzeichnung die älteste Aufzeichnung aus dem Dateisystem gelöscht. Diese Eigenschaft ist nützlich, wenn Sie dazu neigen, viele Aufzeichnungen zu erstellen, und alte Aufzeichnungen automatisch löschen möchten. Der Standardwert ist 50.
 
@@ -123,7 +123,7 @@ Folgende Einstellungen sind für den Convert PDF-Dienst verfügbar:
 
 **Transaktionszeitlimit (in Sek.)**: Die Anzahl der Sekunden, die ein zugrunde liegender Transaktionsanbieter wartet, bevor eine Transaktion rückgängig gemacht wird, die diesen Vorgang beinhaltet. Dieser Wert wird ignoriert, wenn ein vorhandener Transaktionskontext weitergegeben wird. Der Standardwert ist 180.
 
-**Schwellenwert-Auflösung für Glättung (in dpi):** Die Bildauflösung, unter der die Ausgleichung (oder Anti-Aliasing) auf Text, Strichgrafiken und Bilder angewendet wird, wenn Sie für diese Elemente die Option &quot;Ausgleichung anwenden auf&quot;ausgewählt haben.
+**Schwellenwert-Auflösung für Glättung (in dpi)**: Die Bildauflösung, unterhalb derer die Glättung (bzw. Anti-Aliasing) auf Text, Strichgrafiken und Bilder angewendet wird, wenn Sie die Optionen „Glättung anwenden auf“ für diese Elemente ausgewählt haben.
 
 **Glätten auf Text anwenden**: Steuert das Anti-Aliasing von Text. Um die Glättung von Text zu deaktivieren und Text schärfer und mit einer Vergrößerungssoftware leichter lesbar zu machen, deaktivieren Sie dieses Kontrollkästchen.
 
@@ -526,7 +526,7 @@ Folgende Einstellungen sind für den Remoting-Dienst verfügbar:
 
 ## Einstellungen des Repository-Dienstes {#repository-service-settings}
 
-Der Repository-Dienst (`RepositoryService`) stellt Dienste für die Ressourcenspeicherung und -verwaltung in AEM Forms bereit. Wenn ein Entwickler eine Anwendung erstellt, kann er die Elemente im Repository statt in einem Dateisystem bereitstellen. Die Elemente können alle Typen von Zusätzen umfassen, darunter XML-Formulare, PDF-Formulare (einschließlich Acrobat-Formularen), Formularfragmente, Bilder, Profile, Richtlinien, SWF-Dateien, DDX-Dateien, XML-Schemas, WSDL-Dateien und Testdaten.
+Der Repository-Dienst (`RepositoryService`) stellt Dienste für die Ressourcenspeicherung und -verwaltung in AEM Forms bereit. Wenn ein Entwickler eine Anwendung erstellt, kann er die Elemente im Repository statt in einem Dateisystem bereitstellen. Die Elemente können alle Typen von Zusätzen umfassen, darunter XML-Formulare, PDF-Formulare (einschließlich Acrobat-Formularen), Formularfragmente, Bilder, Profile, Richtlinien, SWF-Dateien, DDX-Dateien, XML-Schemata, WSDL-Dateien und Testdaten.
 
 Sie können das in AEM Forms enthaltene Standard-Repository oder das Repository eines Drittanbieters (EMC Documentum Content Server, IBM FileNet Content Manager oder IBM Content Manager) verwenden.
 
@@ -793,7 +793,7 @@ Standardsicherheitsprofile, die installiert sind, können Sie so konfigurieren, 
 
 ### Sicherheitseinstellungen für einen Dienst ändern {#modify-security-settings-for-a-service}
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den zu konfigurierenden Dienst.
 1. Klicken Sie auf die Registerkarte Sicherheit.
 1. Wählen Sie in der Liste „Authentifizierung von Aufrufern erforderlich“ entweder „Ja“ oder „Nein“, um anzugeben, ob der Dienst mit oder ohne Anmeldeinformationen aufgerufen werden darf.
@@ -849,7 +849,7 @@ Jeder Dienst kann die Poolingfunktionen zum Verarbeiten eingehender Aufrufanford
 
 ### Pooling aktivieren {#enable-pooling}
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den zu konfigurierenden Dienst.
 1. Klicken Sie auf die Registerkarte „Pooling“.
 1. Wählen Sie in der Liste „Strategie für Anforderungsverarbeitung“ den Eintrag „Instanzenpools für alle Anforderungen“.
@@ -861,7 +861,7 @@ Jeder Dienst kann die Poolingfunktionen zum Verarbeiten eingehender Aufrufanford
 
 ### Pooling entfernen {#remove-pooling}
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den zu konfigurierenden Dienst.
 1. Klicken Sie auf die Registerkarte „Pooling“.
 1. Wählen Sie in der Liste „Strategie für Anforderungsverarbeitung“ entweder den Eintrag „Neue Instanz für jede Anforderung“ oder den Eintrag „Einzelinstanz für alle Anforderungen“ aus.
