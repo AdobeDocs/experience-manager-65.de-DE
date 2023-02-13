@@ -12,9 +12,9 @@ discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
 source-git-commit: e961ce67e5b1a71e3af6dded304d99cd9e6896bc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4033'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -102,7 +102,7 @@ Wenn Sie eine Aufgabe von einer Gruppenliste oder freigegebenen Liste anfordern,
    * Um eine Aufgabe aus einer Gruppenaufgabenliste bzw. einer freigegebenen Aufgabenliste anzufordern, ohne sie zu öffnen, klicken Sie auf **Anfordern**, indem Sie den Zeiger über der Aufgabe bewegen. Wenn die Aufgabe geöffnet ist, ist alternativ die Schaltfläche „Anfordern“ in der Aktionsleiste unter dem Aufgabenfenster verfügbar. Beim Anfordern wird eine Aufgabe aus der Gruppenaufgabenliste bzw. freigegebenen Aufgabenliste in Ihre Liste verschoben.
    * Um eine Aufgabe aus einer Gruppenaufgabenliste bzw. einer freigegebenen Aufgabenliste anzufordern und zu öffnen, klicken Sie auf **Anfordern und öffnen**.
 
-## Mit Aufgaben arbeiten {#working-with-tasks}
+## Arbeiten mit Aufgaben {#working-with-tasks}
 
 Nach dem Öffnen einer Aufgabe hängt es von der Aufgabe ab, welche Registerkarten im Hauptbereich angezeigt werden und welche Werkzeuge Ihnen zur Verfügung stehen. Die entsprechenden Registerkarten werden unten beschrieben:
 
@@ -283,7 +283,7 @@ Die E-Mail-Nachrichten können einen Link enthalten, über den die Aufgabe in AE
 >
 >* Informationen zum Konfigurieren des Arbeitsbereichs für die Verwendung der entsprechenden E-Mail-Vorlagen finden Sie im [Administratorhandbuch zu AEM Forms JEE](https://help.adobe.com/de-DE/AEMForms/6.1/AdminHelp/).
 >
->* Wenn Entwürfe nach dem Senden der Aufgabe im AEM Forms-Arbeitsbereich weitergeleitet werden, werden E-Mail-Benachrichtigungen gesendet. Wenn Entwürfe vom Startpunkt des AEM Forms Workspace weitergeleitet werden, werden keine E-Mail-Benachrichtigungen gesendet.
+>* Wenn Entwürfe nach dem Senden der Aufgabe im AEM Forms-Arbeitsbereich weitergeleitet werden, werden E-Mail-Benachrichtigungen gesendet. Wenn Entwürfe vom Startpunkt des AEM Forms-Arbeitsbereichs weitergeleitet werden, werden keine E-Mail-Benachrichtigungen gesendet.
 
 
 Wenn Sie eine Aufgabe per E-Mail abschließen, wird die Aufgabe aus Ihrer Aufgabenliste in AEM Forms Workspace entfernt.
