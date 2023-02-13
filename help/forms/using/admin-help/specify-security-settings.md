@@ -1,5 +1,5 @@
 ---
-title: Sicherheitseinstellungen angeben
+title: Angeben der Sicherheitseinstellungen
 seo-title: Specify security settings
 description: Erfahren Sie, wie Sie Sicherheitseinstellungen angeben.
 seo-description: Learn how to specify security settings.
@@ -11,18 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3c017f9a-aa7f-4d12-ba8b-9fd92c029157
 exl-id: 1f544485-5a01-4a4a-ab0f-dcee67e1a38b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '73'
 ht-degree: 100%
 
 ---
 
-# Sicherheitseinstellungen angeben {#specify-security-settings}
+# Angeben der Sicherheitseinstellungen {#specify-security-settings}
 
 Mit Output können Sie steuern, ob externe Entitäten in XML-Eingaben aufgelöst werden. Standardmäßig werden sie aufgelöst, jedoch können Sie dieses Verhalten ändern, um die Sicherheit Ihres AEM Forms-Systems zu erhöhen.
 
 **Die Verarbeitung von XML-Datendateien mit Verweisen auf externe Entitäten verhindern**
 
-1. Klicken Sie in der Administration-Console auf Services > Ausgabe.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Ausgabe“.
 1. Deaktivieren Sie das Kontrollkästchen „Externe Entitäten auflösen“.
 1. Klicken Sie auf Speichern.
