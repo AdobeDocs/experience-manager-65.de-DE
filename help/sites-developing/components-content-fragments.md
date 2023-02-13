@@ -13,9 +13,9 @@ docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
 source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '962'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -121,7 +121,7 @@ Intern wird der Sling Rewriter für dieses Rendering verwendet. Die entsprechend
 >
 >* `/libs/dam/config/rewriter/cfm`
 >
->dann die `serializerType` **must** aktualisiert auf:
+>dann **muss** der `serializerType` aktualisiert werden auf:
 >
 >* `serializerType="html5-serializer"`
 
@@ -133,4 +133,4 @@ Die Standardkonfiguration verwendet folgende Transformatoren:
 * `transformer-cfm-parfilter` – filtert unerwünschte Absätze heraus, wenn ein Absatzbereich angegeben wurde (wie bei der Inhaltsfragmentkomponente möglich)
 * `transformer-cfm-assetprocessor` – wird intern zum Abrufen einer Liste der Assets verwendet, die im Fragment eingebettet sind
 
-Der Rendervorgang wird über [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) verfügbar gemacht und kann bei Bedarf (zum Beispiel) von benutzerdefinierten Komponenten genutzt werden.
+Der Rendervorgang wird über [`com.adobe.cq.dam.cfm.content.FragmentRenderService`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html) verfügbar gemacht und kann bei Bedarf (zum Beispiel) von benutzerdefinierten Komponenten genutzt werden.
