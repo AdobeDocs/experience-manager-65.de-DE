@@ -1,5 +1,5 @@
 ---
-title: Ersatzschriftarten konfigurieren
+title: Konfigurieren von Ersatzschriftarten
 seo-title: Configuring fallback fonts
 description: Erfahren Sie, wie Sie Ersatzschriftarten konfigurieren.
 seo-description: Learn how to configure fallback fonts.
@@ -12,13 +12,13 @@ discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 feature: PDF Generator
 exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '247'
 ht-degree: 100%
 
 ---
 
-# Ersatzschriftarten konfigurieren {#configuring-fallback-fonts}
+# Konfigurieren von Ersatzschriftarten {#configuring-fallback-fonts}
 
 Sie können die Datei „FontManagerResources.properties“ zum Zuordnen der AEM Forms-Standardschriftarten zu Ersatzschriftarten manuell konfigurieren, falls die Standardschriftarten auf dem Server nicht verfügbar sind. Diese Eigenschaftendatei ist in der Datei „adobe-fontmanager.jar“ enthalten.
 
