@@ -1,5 +1,5 @@
 ---
-title: Erstellen Sie die AEM Forms Android-App
+title: Aufbauen der AEM Forms Android-App
 seo-title: Build the AEM Forms Android app
 description: Schritte zum Einrichten des Android Studio-Projekts und Erstellen der .apk-Datei für die AEM Forms-App für Android
 seo-description: Steps to set up the Android Studio project and build the .apk file for the AEM Forms app for Android
@@ -10,7 +10,7 @@ topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '721'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ Das folgende Bild zeigt die Struktur des Ordners `adobe-lc-mobileworkspace-src-<
 
 ![zip_android_folder_structure](assets/zip_android_folder_structure.png)
 
-## Legen Sie die Umgebungsvariable fest. {#set-environment-variable-android}
+## Festlegen der Umgebungsvariablen {#set-environment-variable-android}
 
 Legen Sie die folgenden Umgebungsvariablen fest, bevor Sie den Erstellungsprozess für die AEM Forms-App starten:
 
@@ -60,7 +60,7 @@ Nachdem Sie die Datei adobe-lc-mobileworkspace-src-&lt;version>.zip im lokalen D
 * [Erstellen Sie die AEM Forms-App mit Android Studio](#using-android-studio)
 * [Generieren Sie die .apk-Datei mit Android Studio](#generate-apk-android-studio)
 
-### Erstellen Sie die AEM Forms-App mit Android Studio {#using-android-studio}
+### Aufbauen der AEM Forms-App mit Android Studio {#using-android-studio}
 
 Erstellen Sie die AEM Forms-App mit Android Studio über folgende Schritte:
 
@@ -83,7 +83,7 @@ Erstellen Sie die AEM Forms-App mit Android Studio über folgende Schritte:
 
    Nach dem Anwenden entsprechender Anpassungen auf Ihre App können Sie die .apk-Datei für die Verteilung generieren.
 
-### Generieren Sie die .apk-Datei mit Android Studio {#generate-apk-android-studio}
+### Generieren der .apk-Datei mit Android Studio {#generate-apk-android-studio}
 
 Führen Sie die folgenden Schritte aus, um die APK-Datei mit Android Studio zu generieren:
 
