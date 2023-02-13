@@ -1,5 +1,5 @@
 ---
-title: AEM aktivieren, um durch Document Security geschützte PDF-Dokumente zu durchsuchen
+title: Aktivieren von AEM, um durch Document Security geschützte PDF-Dokumente zu durchsuchen
 seo-title: Enable AEM to search document security protected PDF and Microsoft Office documents
 description: Erfahren Sie, wie Sie die native AEM-Suche aktivieren, um eine Volltextsuche in DRM-geschützten PDF-Dokumenten durchzuführen.
 seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
@@ -12,7 +12,7 @@ noindex: true
 feature: Document Security
 exl-id: 91cbd1f1-d53d-455b-8d2c-6918b521db81
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '643'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Eine sichere Verbindung ermöglicht einen  nahtlosen Informationsfluss zwischen 
 * Konfigurieren des AEM Forms Client SDK Bundle mit AEM Forms on JEE-Administratorberechtigungen
 * Konfigurieren von AEM Forms Client SDK Bundle mit gegenseitiger Authentifizierung 
 
-### Konfigurieren des AEM Forms Client SDK Bundle mit AEM Forms on JEE-Administratorberechtigungen {#configure-aem-forms-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
+### Konfigurieren des AEM Forms Client SDK Bundle mit Administratorberechtigungen für AEM Forms on JEE {#configure-aem-forms-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
 1. Öffnen Sie AEM Configuration Manager und melden Sie sich als Administrator an. Die Standard-URL lautet https://&lt;serverName>:&lt;port>/lc/system/console/configMgr.
 1. Öffnen Sie das AEM Forms Client SDK Bundle. Geben Sie Werte für die folgenden Eigenschaften an:
@@ -61,7 +61,7 @@ Eine sichere Verbindung ermöglicht einen  nahtlosen Informationsfluss zwischen 
    * **TrustStore-Datei-URL**: Geben Sie die URL für die TrustStore-Datei an.
    * **KeyStore-Kennwort**: Geben Sie das Kennwort für die KeyStore-Datei an.
    * **TrustStorePassword**: Geben Sie das Kennwort für die TrustStore-Datei an.
-   * **Dienstname**: Fügen Sie den RightsManagementService zur Liste der angegebenen Dienste hinzu.
+   * **Service-Name**: Fügen Sie den RightsManagementService zur Liste der angegebenen Services hinzu.
 
    Klicken Sie auf **Speichern**. AEM ist aktiviert, um PDF- und Microsoft Office-Dokumente, die durch Document Security geschützt sind zu durchsuchen.
 
