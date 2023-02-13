@@ -1,5 +1,5 @@
 ---
-title: Adaptives Formular automatisch speichern
+title: Automatisches Speichern eines adaptiven Formulars
 seo-title: Auto-save an adaptive form
 description: Sie können ein adaptives Formular so konfigurieren, dass Inhalt basierend auf einem Ereignis oder einem vordefinierten Zeitintervall automatisch gespeichert wird.
 seo-description: You can configure an adaptive form to automatically start saving the content based on an event or a pre-defined time-interval
@@ -10,7 +10,7 @@ discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 feature: Adaptive Forms
 exl-id: 948b2c12-895d-49e3-a943-d8fe87174fc4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '688'
 ht-degree: 100%
 
