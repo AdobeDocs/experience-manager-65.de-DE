@@ -1,6 +1,6 @@
 ---
 title: Package Manager
-description: Erfahren Sie mehr über die Grundlagen der AEM Paketverwaltung mit Package Manager.
+description: Lernen Sie die Grundlagen der AEM-Paketverwaltung mit Package Manager kennen.
 feature: Administering
 role: Admin
 uuid: cba76a5f-5d75-4d63-a0f4-44c13fa1baf2
@@ -11,16 +11,16 @@ discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
 source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3573'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
 
 # Package Manager {#working-with-packages}
 
-Pakete bieten Ihnen die Möglichkeit, Repository-Inhalte zu importieren und zu exportieren. Sie können Pakete verwenden, um neue Inhalte zu installieren, neue Funktionen zu installieren, Inhalte zwischen Instanzen zu übertragen und Repository-Inhalte zu sichern.
+Pakete bieten Ihnen die Möglichkeit, Repository-Inhalte zu importieren und zu exportieren. Sie können Pakete verwenden, um neue Inhalte zu installieren, neue Funktionen zu installieren, Inhalte zwischen Instanzen auszutauschen und Repository-Inhalte zu sichern.
 
 Mithilfe von Package Manager können Sie Pakete zu Entwicklungszwecken zwischen Ihrer AEM-Instanz und Ihrem lokalen Dateisystem übertragen.
 
@@ -132,23 +132,23 @@ Das Dialogfeld **Paketeinstellungen** ist über die Schaltfläche **Bearbeiten**
 | Beschreibung | Eine kurze Beschreibung des Pakets, das HTML-Markup zum Formatieren ermöglicht |
 | Miniaturansicht | Das Symbol, das mit der Paketliste angezeigt wird |
 
-#### Paketminiaturen {#thumbnails}
+#### Miniaturansichten von Paketen {#thumbnails}
 
-Eine Miniaturansicht bietet eine schnelle visuelle Darstellung dessen, was das Paket enthält. Dies wird dann in der Paketliste angezeigt und kann dazu beitragen, das Paket oder die Paketklasse leicht zu identifizieren.
+Eine Miniaturansicht bietet eine schnelle visuelle Darstellung dessen, was das Paket enthält. Dieses wird dann in der Liste der Pakete angezeigt und ermöglicht Ihnen, das Paket oder die Klasse des Pakets auf einfache Weise zu erkennen.
 
-Die folgenden Konventionen werden für offizielle Pakete verwendet:
+Unter anderem die folgenden Konventionen werden für offizielle Pakete verwendet:
 
 Offizielles Hotfix
 
-![Offizielles Hotfix-Miniaturbild](assets/official-hotfix.png)
+![Miniaturansicht für offizielles Hotfix](assets/official-hotfix.png)
 
-Offizielle AEM Installation der Erweiterung
+Offizielle AEM-Installation der Erweiterung
 
-![Offizielles AEM oder Erweiterungsminiaturbild](assets/official-installation.png)
+![Miniaturansicht für offizielles AEM-Installations- oder -Erweiterungspaket](assets/official-installation.png)
 
 Offizielles Service Pack
 
-![Symbol für Offizielles AEM](assets/official-service-pack.png)
+![Symbol für Offizielles AEM Service Pack](assets/official-service-pack.png)
 
 Verwenden Sie ein eindeutiges Symbol für Ihr Paket. Verwenden Sie kein von Adobe verwendetes Symbol erneut.
 
@@ -325,7 +325,7 @@ Nach dem Aufbau eines Pakets können Sie dessen Inhalt anzeigen.
 
 ### Freigeben eines Pakets {#share}
 
-Package Share war ein zentralisierter öffentlicher Dienst zur Verteilung von Inhaltspaketen. Package Share wurde durch [Softwareverteilung](#software-distribution) und diese Schaltfläche funktioniert nicht mehr.
+Package Share war ein zentralisierter öffentlicher Dienst zur Verteilung von Inhaltspaketen. Package Share wurde durch [Softwareverteilung](#software-distribution) abgelöst. Diese Schaltfläche funktioniert nicht mehr.
 
 ### Hochladen von Paketen vom Dateisystem {#uploading-packages-from-your-file-system}
 
@@ -364,7 +364,7 @@ Package Manager kann die folgenden Validierungen durchführen:
 
 Diese Validierung prüft das Paket auf JAR-Dateien (OSGi-Bundles), extrahiert deren `manifest.xml`-Datei (die die versionierten Abhängigkeiten enthält, die für das OSGi-Bundle erforderlich sind) und stellt sicher, dass die AEM-Instanz die Abhängigkeiten mit den richtigen Versionen exportiert.
 
-**Berichterstellung**
+**Reporting**
 
 Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt werden können, werden im Aktivitätsprotokoll von Package Manager aufgeführt.
 
@@ -406,7 +406,7 @@ Zur Behebung dieses Problems muss der Verantwortliche für die Überlagerungsdat
 
 Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie diese verarbeitet werden (zusammenführen/ersetzen) und ob sie sich auf aktuelle Berechtigungen auswirken.
 
-**Berichterstellung**
+**Reporting**
 
 Die Berechtigungen werden im Aktivitätsprotokoll von Package Manager beschrieben.
 
@@ -559,7 +559,7 @@ Beim Löschen eines Pakets werden nur dessen Details aus Package Manager gelösc
 
 1. Öffnen Sie die Paketdetails des Pakets, das Sie aus der Paketliste löschen möchten, indem Sie auf den Paketnamen klicken.
 
-1. Package Manager fordert Sie zur Bestätigung auf, dass Sie das Paket löschen möchten. Klicken Sie auf **OK**, um den Löschvorgang zu bestätigen.
+1. Daraufhin werden Sie von Package Manager aufgefordert zu bestätigen, dass Sie das Paket löschen möchten. Klicken Sie auf **OK**, um den Löschvorgang zu bestätigen.
 
 1. Die Paketinformationen werden gelöscht und die Details im Aktivitätsprotokoll aufgeführt.
 
@@ -575,14 +575,14 @@ Replizieren Sie den Inhalt eines Pakets, um es auf der Veröffentlichungsinstanz
 
 1. Das Paket wird repliziert und Details im Aktivitätsprotokoll aufgeführt.
 
-## Software-Verteilung {#software-distribution}
+## Software Distribution {#software-distribution}
 
-AEM Pakete können verwendet werden, um Inhalte in AEM Umgebungen zu erstellen und freizugeben.
+AEM-Pakete können verwendet werden, um Inhalte über AEM-Umgebungen hinweg zu erstellen und freizugeben.
 
 [Softwareverteilung](https://downloads.experiencecloud.adobe.com) ist ein zentralisierter Dienst, der die Suche und den Download AEM Packages vereinfacht.
 
-Weitere Informationen finden Sie im Abschnitt [Dokumentation zur Softwareverteilung.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de)
+Weitere Informationen finden Sie im Abschnitt [Dokumentation zur Softwareverteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de).
 
 >[!NOTE]
 >
->Package Manager ist derzeit nicht in Software Distribution integriert, da es mit dem früheren Package Share-Dienst verwendet wurde. Daher funktionieren die Freigabeschaltflächen und andere Links zur Paketfreigabe in Package Manager nicht mehr. Die Lösung besteht darin, Pakete auf Ihre lokale Festplatte herunterzuladen.
+>Package Manager ist derzeit nicht in die Softwareverteilung integriert, da es mit dem früheren Package Share-Dienst verwendet wurde. Daher funktionieren die Freigabeschaltflächen und andere Links zu Package Share in Package Manager nicht mehr. Die Lösung besteht darin, Pakete auf Ihre lokale Festplatte herunterzuladen.
