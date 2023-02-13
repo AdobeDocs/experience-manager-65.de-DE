@@ -1,5 +1,5 @@
 ---
-title: Dateien mithilfe von PDF Generator konvertieren
+title: Konvertieren von Dateien mit PDF Generator
 seo-title: Converting files using PDF Generator
 description: Erfahren Sie, wie Sie Dateien mithilfe von PDF Generator konvertieren.
 seo-description: Learn how to convert files using PDF Generator.
@@ -12,13 +12,13 @@ discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
 exl-id: 0e2c12b5-24c8-4aca-8826-cb661051ce4f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1167'
 ht-degree: 100%
 
 ---
 
-# Dateien mithilfe von PDF Generator konvertieren{#converting-files-using-pdf-generator}
+# Konvertieren von Dateien mit PDF Generator{#converting-files-using-pdf-generator}
 
 Sie können die PDF Generator-Webseiten verwenden, um Dateien zu konvertieren.
 
