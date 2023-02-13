@@ -10,9 +10,9 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1870'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -33,7 +33,7 @@ Die folgenden Übermittlungsaktionen stehen in adaptiven Formularen standardmä�
 * An REST-Endpunkt übermitteln
 * E-Mail senden
 * PDF mittels E-Mail senden
-* Workflow für Formulare aufrufen
+* Aufrufen eines Formular-Workflows
 * Senden mit Formulardatenmodell
 * Übermittlungsaktion für Forms Portal
 * Aufrufen eines AEM-Workflows
@@ -129,13 +129,13 @@ Weitere Informationen zur Übermittlungsaktion für Forms Portal finden Sie unte
 
 ## AEM-Workflow aufrufen {#invoke-an-aem-workflow}
 
-Die Übermittlungsaktion **[!UICONTROL AEM-Workflow aufrufen]** verknüpft ein adaptives Formular mit einem [AEM-Workflow](/help/sites-developing/workflows-models.md). Wenn ein Formular gesendet wird, startet der verknüpfte Workflow automatisch auf der Autoreninstanz. Sie können die Datendatei, die Anhänge und das Datensatzdokument in dem Ordner relativ oder unter der Payload des Workflows oder in einer Variablen speichern. Wenn der Workflow für die externe Datenspeicherung markiert ist, ist die Variablenoption verfügbar und nicht die Nutzlastoption. Sie können aus der Liste der für das Workflow-Modell verfügbaren Variablen auswählen. Wenn der Workflow für die externe Datenspeicherung zu einem späteren Zeitpunkt und nicht zum Zeitpunkt der Workflow-Erstellung markiert ist, stellen Sie sicher, dass die erforderlichen Variablenkonfigurationen vorhanden sind.
+Die Übermittlungsaktion **[!UICONTROL AEM-Workflow aufrufen]** verknüpft ein adaptives Formular mit einem [AEM-Workflow](/help/sites-developing/workflows-models.md). Wenn ein Formular gesendet wird, startet der verknüpfte Workflow automatisch auf der Autoreninstanz. Sie können die Datendatei, die Anhänge und das Datensatzdokument am Payload-Speicherort des Workflows, in einem entsprechenden relativen Ordner oder in einer Variablen speichern. Wenn der Workflow für die externe Datenspeicherung markiert ist, ist die Variablenoption verfügbar und nicht die Payload-Option. Sie können aus der Liste der für das Workflow-Modell verfügbaren Variablen auswählen. Wenn der Workflow für die externe Datenspeicherung zu einem späteren Zeitpunkt und nicht zum Zeitpunkt der Workflow-Erstellung markiert ist, stellen Sie sicher, dass die erforderlichen Variablenkonfigurationen vorhanden sind.
 
 Bevor Sie die Übermittlungsaktion **AEM-Workflow aufrufen** verwenden, [konfigurieren Sie die DS-Einstellungen von Experience Manager](../../forms/using/configuring-the-processing-server-url-.md). Weitere Informationen zum Erstellen eines AEM-Workflow finden Sie unter [Formularorientierte Workflows auf OSGi](../../forms/using/aem-forms-workflow.md).
 
-Die Übermittlungsaktion platziert Folgendes am Payload-Speicherort des Workflows. Beachten Sie jedoch, dass nur die Option Variable angezeigt wird, wenn das Workflow-Modell für die externe Datenspeicherung markiert ist, und nicht die Payload-Option.
+Die Übermittlungsaktion platziert Folgendes am Payload-Speicherort des Workflows. Beachten Sie jedoch, dass nur die Option „Variable“ angezeigt wird, wenn das Workflow-Modell für die externe Datenspeicherung markiert ist, und nicht die Payload-Option.
 
-* **Datendatei**: Sie enthält Daten, die an das adaptive Formular gesendet werden. Mit der Option **[!UICONTROL Datendateipfad]** können Sie den Dateinamen und den Dateipfad relativ zur Payload angeben. Beispielsweise erstellt der Pfad `/addresschange/data.xml` einen Ordner mit dem Namen `addresschange` und platziert ihn relativ zur Payload. Sie können auch nur `data.xml` angeben, um nur die übermittelten Daten zu senden, ohne die Erstellung einer Ordnerhierarchie. Verwenden Sie die Variablenoption und wählen Sie die Variable aus der Liste der für das Workflow-Modell verfügbaren Variablen aus.
+* **Datendatei**: Sie enthält Daten, die an das adaptive Formular gesendet werden. Mit der Option **[!UICONTROL Datendateipfad]** können Sie den Dateinamen und den Dateipfad relativ zur Payload angeben. Beispielsweise erstellt der Pfad `/addresschange/data.xml` einen Ordner mit dem Namen `addresschange` und platziert ihn relativ zur Payload. Sie können auch nur `data.xml` angeben, um nur die übermittelten Daten zu senden, ohne die Erstellung einer Ordnerhierarchie. Verwenden Sie die Option „Variable“ und wählen Sie die Variable aus der Liste der für das Workflow-Modell verfügbaren Variablen aus.
 
 >[!NOTE]
 Variablen können unabhängig davon verwendet werden, ob das Workflow-Modell für die externe Datenspeicherung markiert ist oder nicht.
