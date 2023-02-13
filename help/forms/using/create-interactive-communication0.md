@@ -1,5 +1,5 @@
 ---
-title: '"Tutorial: Erstellen einer interaktiven Kommunikation "'
+title: "Tutorial: Erstellen einer interaktiven Kommunikation "
 seo-title: Create an Interactive Communication for Print and Web
 description: Erstellen Sie eine interaktive Kommunikation mit allen Bausteinen
 seo-description: Create an Interactive Communication using all building blocks
@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: aaacee66-6bbe-498b-91b1-3a9545ff1aeb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2004'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Nachdem Sie alle Bausteine &#x200B;&#x200B;wie Formulardatenmodell, Dokumentfrag
 
 Interaktive Kommunikation kann über zwei Kanäle erfolgen: Druck und Web. Sie können auch eine interaktive Kommunikation mit dem Druckkanal als Master erstellen. Druck als Master-Option für Webkanal stellt sicher, dass Inhalt, Vererbung und Datenbindung des Webkanals vom Druckkanal abgeleitet werden. Außerdem wird sichergestellt, dass die im Druckkanal vorgenommenen Änderungen im Webkanal synchronisiert werden. Die Autoren der interaktiven Kommunikation dürfen jedoch ggf. die Vererbung für bestimmte Komponenten im Webkanal aufheben.
 
-In diesem Tutorial werden Sie durch die Schritte zum Erstellen interaktiver Kommunikationen für Druck- und Webkanäle geführt. Am Ende dieser Schulung können Sie Folgendes:
+In diesem Tutorial werden Sie durch die Schritte zum Erstellen interaktiver Kommunikationen für Druck- und Webkanäle geführt. Am Ende dieses Tutorials können Sie Folgendes:
 
 * Erstellen Sie interaktive Kommunikation für den Druckkanal
 * Erstellen Sie interaktive Kommunikation für den Webkanal
@@ -95,7 +95,7 @@ Im Folgenden finden Sie eine Liste der Ressourcen, die bereits in diesem Tutoria
 1. Tippen Sie auf die Bildkomponente und wählen Sie ![configure_icon](assets/configure_icon.png) (Konfigurieren) aus. Die Bildeigenschaften werden im linken Bereich angezeigt:
 
    1. Geben Sie **PayNow** als Namen des Bildes im Feld **Name** ein.
-   1. Tippen Sie auf **Hochladen**, wählen Sie das im lokalen Dateisystem gespeicherte Bild   aus und tippen Sie auf **Öffnen**.
+   1. Tippen Sie auf **Hochladen**, wählen Sie das im lokalen Dateisystem gespeicherte Bild aus und tippen Sie auf **Öffnen**.
    1. Zum Speichern der Bildeigenschaften tippen Sie auf ![done_icon](assets/done_icon.png).
 
 1. Um das Bild **ValueAddedServices** dem Zielbereich **ValueAddedServices** hinzuzufügen, wiederholen Sie die Schritte 13 und 14.
