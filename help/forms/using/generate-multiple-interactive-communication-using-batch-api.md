@@ -8,9 +8,9 @@ topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2228'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -79,7 +79,7 @@ Sie kombinieren einen Datensatz mit einer Vorlage für interaktive Kommunikation
 
 So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer JSON-Datei gespeichert sind:
 
-1. Erstellen Sie einen [überwachten Ordner](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) und konfigurieren Sie ihn für die Verwendung der Batch-API:
+1. Erstellen Sie einen [überwachten Ordner](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html?lang=de) und konfigurieren Sie ihn für die Verwendung der Batch-API:
    1. Melden Sie sich bei der AEM Forms-Autoreninstanz an.
    1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Formulare]** > **[!UICONTROL Überwachten Ordner konfigurieren]**. Tippen Sie auf **[!UICONTROL Neu]**.
    1. Geben Sie die den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`.
@@ -109,7 +109,7 @@ So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer J
 
 #### Verwenden Sie Eingabedaten, die in einer externen Datenquelle gespeichert sind und über das Formulardatenmodell aufgerufen werden, um eine interaktive Kommunikation zu erstellen. {#use-fdm-as-data-source}
 
-Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) mit einer interaktiven Kommunikationsvorlage, um eine interaktive Kommunikation zu erzeugen. Wenn Sie eine interaktive Kommunikation erstellen, verbinden Sie sie über ein Formulardatenmodell (FDM) mit einer externen Datenquelle, um auf Daten zuzugreifen. Sie können den Batch-Prozess-Service für überwachte Ordner konfigurieren, um Daten mit demselben Formulardatenmodell aus einer externen Datenquelle abzurufen. So [Erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer externen Datenquelle gespeichert sind](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html):
+Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) mit einer interaktiven Kommunikationsvorlage, um eine interaktive Kommunikation zu erzeugen. Wenn Sie eine interaktive Kommunikation erstellen, verbinden Sie sie über ein Formulardatenmodell (FDM) mit einer externen Datenquelle, um auf Daten zuzugreifen. Sie können den Batch-Prozess-Service für überwachte Ordner konfigurieren, um Daten mit demselben Formulardatenmodell aus einer externen Datenquelle abzurufen. So [Erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer externen Datenquelle gespeichert sind](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html?lang=de):
 
 1. So konfigurieren Sie das Formulardatenmodell der Vorlage:
    1. Öffnen Sie das Formulardatenmodell, das mit der Vorlage für interaktive Kommunikation verknüpft ist.
@@ -141,13 +141,13 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
 
    1. Speichern und schließen Sie die Datei.
 
-1. Erstellen Sie einen [überwachten Ordner](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html) und konfigurieren Sie ihn für die Verwendung des Batch-API-Services:
+1. Erstellen Sie einen [überwachten Ordner](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html?lang=de) und konfigurieren Sie ihn für die Verwendung des Batch-API-Services:
    1. Melden Sie sich bei der AEM Forms-Autoreninstanz an.
    1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Formulare]** > **[!UICONTROL Überwachten Ordner konfigurieren]**. Tippen Sie auf **[!UICONTROL Neu]**.
    1. Geben Sie die den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`.
    1. Wählen Sie die Option **[!UICONTROL Service]** im Feld **[!UICONTROL Datei verarbeiten mit]**.
    1. Wählen Sie den Service **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** im Feld **[!UICONTROL Service-Name]**.
-   1. Geben Sie ein **[!UICONTROL Ausgabedateimuster]** an. Beispiel: %F/ [pattern](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) gibt an, dass der überwachte Ordner Eingabedateien in einem Unterordner des Ordners „Watched Folder\input“ finden kann.
+   1. Geben Sie ein **[!UICONTROL Ausgabedateimuster]** an. Beispiel: %F/ [pattern](https://helpx.adobe.com/de/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) gibt an, dass der überwachte Ordner Eingabedateien in einem Unterordner des Ordners „Watched Folder\input“ finden kann.
 1. So konfigurieren Sie die erweiterten Parameter:
    1. Öffnen Sie die Registerkarte **[!UICONTROL Erweitert]** und fügen Sie die folgenden benutzerdefinierten Eigenschaften hinzu:
 
