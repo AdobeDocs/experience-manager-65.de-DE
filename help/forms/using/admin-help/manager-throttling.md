@@ -1,5 +1,5 @@
 ---
-title: Work Manager und Einschränkungen
+title: Work Manager und Drosselung
 seo-title: Work Manager and throttling
 description: Dieses Dokument stellt Hintergrundinformationen über Work Manager und Anweisungen zum Konfigurieren von Einschränkungsoptionen für Work Manager bereit.
 seo-description: This document provides background information on Work Manager, and provides instructions on configuring Work Manager throttling options.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9a8b4e3a-f416-4dc6-a90a-9018df5c844e
 exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1023'
 ht-degree: 100%
 
 ---
 
-# Work Manager und Einschränkungen{#work-manager-and-throttling}
+# Work Manager und Drosselung{#work-manager-and-throttling}
 
 AEM Forms (und frühere Versionen) verwendeten JMS-Warteschlangen, um Vorgänge asynchron auszuführen. In AEM Forms wurden JMS-Warteschlangen durch Work Manager ersetzt. Dieses Dokument stellt Hintergrundinformationen über Work Manager und Anweisungen zum Konfigurieren von Einschränkungsoptionen für Work Manager bereit.
 
@@ -89,12 +89,12 @@ Sie können die Einschränkungen für Work Manager so konfigurieren, dass Arbeit
 1. Starten Sie WebLogic-Administrationskonsole, indem Sie `https://[host name]:[port]/console` in einen Webbrowser eingeben.
 1. Geben Sie den von Ihnen erstellten Benutzernamen und das Kennwort für die WebLogic-Server-Domain ein und klicken Sie unter „Change Center“ auf „Log“ und dann auf „Lock &amp; Edit“.
 1. Klicken Sie unter „Domain Structure“ auf Environment > Servers und anschließend im rechten Bereich auf den Namen des verwalteten Servers.
-1. Klicken Sie im nächsten Bildschirm auf die Registerkarten Configuration > Server Start.
+1. Klicken Sie im nächsten Bildschirm auf die Registerkarten „Configuration“ > „Server-Start“.
 1. Fügen Sie im Feld „Arguments“ die erforderlichen Informationen am Ende des aktuellen Inhalts hinzu. Zum Deaktivieren von Health Monitor fügen Sie beispielsweise Folgendes hinzu:
 
    `-Dadobe.healthmonitor.enabled=false` deaktiviert den Health Monitor.
 
-1. Klicken Sie auf Save und dann auf Activate Changes.
+1. Klicken Sie auf „Speichern“ und dann auf „Änderungen aktivieren“.
 1. Starten Sie WebLogic Managed Server neu.
 
 **Java-Optionen zu WebSphere hinzufügen**
