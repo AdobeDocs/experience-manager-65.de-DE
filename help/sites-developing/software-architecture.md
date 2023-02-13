@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Dadurch lässt sich das Erscheinungsbild der Website vereinheitlichen und die Co
 
 ### Gestalten von Vorlagen-Designs {#design-template-designs}
 
-Indem Sie die Komponenten definieren, die in den einzelnen Absatzsystemen auf der Seite enthalten sein können, können Sie Einfluss darauf nehmen, dass das Erscheinungsbild der Seite einheitlich ist. Durch die Beschränkung des Zugriffs auf das Design auf Seiten können &quot;Superautoren&quot;die zulässigen Komponenten pro Seite ändern, ohne dass die Entwickler eingreifen, und gleichzeitig sicherstellen, dass die anderen Autoren die Unternehmensstandards einhalten.
+Indem Sie die Komponenten definieren, die in den einzelnen Absatzsystemen auf der Seite enthalten sein können, können Sie Einfluss darauf nehmen, dass das Erscheinungsbild der Seite einheitlich ist. Durch das Beschränken des Zugriffs auf das Design auf Seiten können „Superautoren“ die zulässigen Komponenten je Seite ohne Unterstützung eines Entwicklers ändern und gleichzeitig sicherstellen, dass die anderen Autoren die Unternehmensstandards einhalten.
 
 ### Entwickeln von SOLID-Architekturen {#develop-a-solid-architecture}
 
