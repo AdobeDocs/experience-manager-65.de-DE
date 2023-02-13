@@ -1,5 +1,5 @@
 ---
-title: Übersicht über den Arbeitsbereich
+title: Übersicht über Workspace
 seo-title: Overview of Workspace
 description: Mithilfe von Workspace können Benutzer Geschäftsprozesse starten, daran teilnehmen und sie verfolgen. Erfahren Sie mehr über Workspace.
 seo-description: The workspace lets users start, participate in, and track business processes. Let us learn more about the workspace.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2d6f90bb-62f7-4805-9250-1b913fe7d2b3
 exl-id: da1224e4-566a-402f-9d8b-27fda5f3101b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
 ht-degree: 100%
 
 ---
 
-# Übersicht über den Arbeitsbereich {#overview-of-workspace}
+# Übersicht über Workspace {#overview-of-workspace}
 
 Mithilfe von Workspace können Benutzer Geschäftsprozesse starten, daran teilnehmen und sie verfolgen.
 
@@ -29,7 +29,7 @@ Sie können auf den Workspace -Seiten in Administration Console folgende Aufgabe
 
 >[!NOTE]
 >
->Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
+>Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
 
 >[!NOTE]
 >
