@@ -5,9 +5,9 @@ description: Eine Übersicht über die Implementierung von AEM 6.5
 seo-description: An overview of how to implement AEM 6.5
 exl-id: 33404f0d-c04c-4720-8a24-ded6738ec7d4
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '100'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -23,11 +23,11 @@ Sind Sie AEM-Entwickler? [Erste Schritte mit der Entwicklung für AEM.](/help/si
 
 ## HTL (HTML-Vorlagensprache) für AEM {#htl-for-aem}
 
-[Verwenden Sie die HTML-Vorlagensprache für die Entwicklung für AEM.](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+[Verwenden Sie die HTML-Vorlagensprache für die Entwicklung für AEM.](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de)
 
 ## Cloud Manager für AEM {#cloud-manager-for-aem}
 
-[Erfahren Sie, wie Sie Cloud Manager mit AEM verwenden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+[Erfahren Sie, wie Sie Cloud Manager mit AEM verwenden.](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de)
 
 ## Dispatcher-Konfiguration {#dispatcher-configuration}
 
