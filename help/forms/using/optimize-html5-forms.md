@@ -11,7 +11,7 @@ discoiquuid: bdb9edc2-6a37-4d3f-97d5-0fc5664316be
 feature: Mobile Forms
 exl-id: 14309ebd-8d00-4ca5-b4ab-44d80d97d066
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '283'
 ht-degree: 100%
 
@@ -67,7 +67,7 @@ Apache kann mit JBoss mithilfe des HTTP- oder AJP-Protokolls kommunizieren.
 
 1. Aktivieren Sie die Komprimierung.
 
-   Fügen Sie in die Datei *APACHE_HOME/conf/httpd.conf* folgende Konfiguration ein.
+   Fügen Sie in die Konfigurationsdatei *APACHE_HOME/conf/httpd.conf* folgende Konfiguration ein.
 
    ```xml
    <Location /content/xfaforms>
