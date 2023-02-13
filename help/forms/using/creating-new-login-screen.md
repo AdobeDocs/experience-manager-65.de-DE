@@ -11,7 +11,7 @@ discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
 ht-degree: 100%
 
@@ -51,7 +51,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 1. Kopieren Sie den Ordner `i18n`:
 
    * von `/libs/livecycle/core/components/login`
-   * in `/apps/livecycle/core/components/login`
+   * nach `/apps/livecycle/core/components/login`
 
 1. Löschen Sie alle Ordner in `i18n` bis auf einem, beispielsweise `en`.
 
@@ -67,7 +67,7 @@ Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den
 1. Kopieren `login.jsp`:
 
    * von `/libs/livecycle/core/components/login`
-   * in `/apps/livecycle/core/components/login`
+   * nach `/apps/livecycle/core/components/login`
 
 1. Ändern Sie das folgende Code-Fragment für `/apps/livecycle/core/components/login/login.jsp`:
 
@@ -153,7 +153,7 @@ String browserLocale = "en";
     }
 ```
 
-nach
+To
 
 ```jsp
 String browserLocale = "en";
@@ -200,7 +200,7 @@ String browserLocale = "en";
 1. Kopieren Sie den Ordner `i18n`:
 
    * von `/libs/livecycle/core/components/login`
-   * in `/apps/livecycle/core/components/login`
+   * nach `/apps/livecycle/core/components/login`
 
 1. Ändern Sie nun den Wert der Eigenschaft `sling:message` des Knotens (unter dem Codeordner des gewünschten Gebietsschemas) für den Sie den Text ändern möchten. Die Übersetzung wird mit dem Schlüssel durchgeführt, der im Wert der Eigenschaft `sling:key` des Knotens aufgeführt ist.
 
@@ -211,7 +211,7 @@ String browserLocale = "en";
 
       * von `/libs/livecycle/core/components/login`
 
-      * in `/apps/livecycle/core/components/login`
+      * nach `/apps/livecycle/core/components/login`
    1. Ändern Sie `/apps/livecycle/core/components/login/login.jsp`, um den neu hinzugefügten Text einzubinden.
 
    ![Hinzufügen eines neuen Schlüssel-Wert-Paares](assets/capture_new.png)
@@ -225,7 +225,7 @@ String browserLocale = "en";
                        <% if (loginFailed) {%>
    ```
 
-   nach
+   To
 
    ```jsp
    div class="loginContent">
@@ -242,7 +242,7 @@ String browserLocale = "en";
 1. Kopieren Sie den Knoten `login`:
 
    * von `/libs/livecycle/core/content`
-   * in `/apps/livecycle/core/content`
+   * nach `/apps/livecycle/core/content`
 
 1. Löschen Sie die Dateien `login.js` und `jquery-1.8.0.min.js` vom Knoten `/apps/livecycle/core/content/login.`
 1. Ändern Sie die Stile in der CSS-Datei.
@@ -253,7 +253,7 @@ String browserLocale = "en";
 
       * von `/libs/livecycle/core/components/login`
 
-      * in `/apps/livecycle/core/components/login`
+      * nach `/apps/livecycle/core/components/login`
    1. Ändern Sie `/apps/livecycle/core/components/login/login.jsp`, um die neu hinzugefügten Stile einzubinden.
 
 
@@ -276,7 +276,7 @@ css.newLoginContentArea {
    <div class="loginContentArea">
    ```
 
-   nach
+   To
 
    ```jsp
    <div class="newLoginContentArea">
@@ -319,7 +319,7 @@ Beispiel:
 <div class="loginContainerBkg">
 ```
 
-nach
+To
 
 ```jsp
 <div class="newLginContainerBkg">
