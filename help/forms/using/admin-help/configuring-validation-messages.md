@@ -1,5 +1,5 @@
 ---
-title: Überprüfungsmeldungen konfigurieren
+title: Konfigurieren der Überprüfungsmeldungen
 seo-title: Configuring validation messages
 description: Erfahren Sie, wie Sie angeben, wie die Validierungsnachrichten und deren Position relativ zum im Webbrowser zurückgegebenen Formular angezeigt werden.
 seo-description: Learn how to specify how validation messages are displayed and their location relative to the form returned in the web browser.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 exl-id: 14314383-5228-4904-98c1-586f48a1142c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '350'
 ht-degree: 100%
 
 ---
 
-# Überprüfungsmeldungen konfigurieren {#configuring-validation-messages}
+# Konfigurieren der Überprüfungsmeldungen {#configuring-validation-messages}
 
 Für Formulare, die als HTML wiedergegeben werden, werden Formular-Überprüfungsfehler für den Benutzer angezeigt. Sie können die Darstellung von Überprüfungsmeldungen anpassen. In Abhängigkeit davon, wo die Überprüfungsmeldungen angezeigt werden, können Sie auch die Position der Meldung im Formular sowie die Rahmenstärke steuern.
 
