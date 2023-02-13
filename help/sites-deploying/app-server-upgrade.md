@@ -1,36 +1,36 @@
 ---
-title: Schritte zur Aktualisierung von Installationen auf Anwendungsservern
+title: Schritte zur Aktualisierung von Installationen auf Anwendungs-Servern
 description: Erfahren Sie, wie Sie Instanzen von AEM aktualisieren, die über Anwendungsserver bereitgestellt werden.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
 source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '452'
-ht-degree: 67%
+ht-degree: 100%
 
 ---
 
-# Schritte zur Aktualisierung von Installationen auf Anwendungsservern{#upgrade-steps-for-application-server-installations}
+# Schritte zur Aktualisierung von Installationen auf Anwendungs-Servern{#upgrade-steps-for-application-server-installations}
 
 In diesem Abschnitt wird die Vorgehensweise zum Aktualisieren von AEM für Anwendungsserverinstallationen beschrieben.
 
-In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungsserver verwendet, was bedeutet, dass Sie bereits über eine funktionierende Version von AEM verfügen. In dieser Anleitung wird die Aktualisierung von Version **AEM 6.4 auf 6.5** beschrieben.
+In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwendet. Zudem wird vorausgesetzt, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von **AEM 6.4 auf 6.5** beschrieben.
 
-1. Beginne zuerst TomCat. In den meisten Fällen können Sie dies tun, indem Sie die `./catalina.sh` Starten Sie das Startskript, indem Sie diesen Befehl über das Terminal ausführen:
+1. Starten Sie zunächst TomCat. In den meisten Fällen können Sie hierzu das Startskript `./catalina.sh` über den folgenden Befehl am Terminal ausführen.
 
    ```shell
    $CATALINA_HOME/bin/catalina.sh start
    ```
 
-1. Wenn AEM 6.4 bereits bereitgestellt ist, überprüfen Sie, ob die Bundles ordnungsgemäß funktionieren, indem Sie auf Folgendes zugreifen:
+1. Wenn AEM 6.4 bereits installiert ist, müssen Sie sicherstellen, dass die Bundles ordnungsgemäß funktionieren, indem Sie Folgendes aufrufen:
 
    ```shell
    https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Lösen Sie als Nächstes AEM 6.4 die Bereitstellung auf. Dies kann über den TomCat App Manager (`http://serveraddress:serverport/manager/html`)
+1. Heben Sie als Nächstes über TomCat App Manager (`http://serveraddress:serverport/manager/html`) die Bereitstellung von AEM 6.4 auf.
 
-1. Migrieren Sie das Repository nun mithilfe des crx2oak-Migrationstools. Laden Sie dazu die neueste Version von crx2oak herunter von [dieser Speicherort](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
+1. Migrieren Sie das Repository nun mithilfe des crx2oak-Migrations-Tools. Laden Sie dazu die neueste Version von crx2oak von [diesem Speicherort](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/) herunter.
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
@@ -38,7 +38,7 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungsserver verwend
 
 1. Löschen Sie die erforderlichen Eigenschaften in der Datei sling.properties folgendermaßen:
 
-   1. Öffnen Sie die Datei unter `crx-quickstart/launchpad/sling.properties`
+   1. Öffnen Sie die unter `crx-quickstart/launchpad/sling.properties` gespeicherte Datei.
    1. Entfernen Sie die folgenden Eigenschaften und speichern Sie die Datei:
 
       1. `sling.installer.dir`
@@ -65,7 +65,7 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungsserver verwend
 
    * Die Datei **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
-   * Entfernen **sling.options.file** durch Ausführen: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
+   * Entfernen Sie die Datei **sling.options.file**, indem Sie folgenden Befehl ausführen: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
 1. Erstellen Sie nun die Knotenspeicher und Datenspeicher, die mit AEM 6.5 verwendet werden. Sie können zu diesem Zweck zwei Dateien mit den folgenden Namen unter `crx-quickstart\install` erstellen:
 
@@ -76,30 +76,30 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungsserver verwend
 
 1. Bearbeiten Sie die Konfigurationsdateien, damit sie einsatzbereit sind. Gehen Sie dazu folgendermaßen vor:
 
-   * Fügen Sie die folgende Zeile zu `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`:
+   * Fügen Sie die folgende Zeile zu `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` hinzu:
 
       `customBlobStore=true`
 
-   * Fügen Sie dann die folgenden Zeilen zu `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config`:
+   * Fügen Sie dann die folgenden Zeilen zu `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` hinzu:
 
       ```
       path=./crx-quickstart/repository/datastore
       minRecordLength=4096
       ```
 
-1. Ändern Sie nun die Ausführungsmodi in der WAR-Datei für AEM 6.5. Erstellen Sie dafür zunächst einen temporären Ordner, in dem die WAR-Datei für AEM 6.5 gespeichert wird. Der Name des Ordners in diesem Beispiel lautet `temp`. Extrahieren Sie nach dem Kopieren der WAR-Datei deren Inhalte im Ordner temp:
+1. Ändern Sie nun die Ausführungsmodi in der WAR-Datei für AEM 6.5. Erstellen Sie dafür zunächst einen temporären Ordner, in dem die WAR-Datei für AEM 6.5 gespeichert wird. Der Name des Ordners in diesem Beispiel lautet `temp`. Extrahieren Sie nach dem Kopieren der WAR-Datei deren Inhalte im temporären Ordner:
 
    ```
    jar xvf aem-quickstart-6.5.0.war
    ```
 
-1. Wechseln Sie nach dem Extrahieren der Inhalte zum Ordner **WEB-INF** und bearbeiten Sie die Datei web.xml, um die Ausführungsmodi zu ändern. Suchen Sie nach der Zeichenfolge `sling.run.modes`, um ihre Position in der XML-Datei zu bestimmen. Wenn Sie sie gefunden haben, ändern Sie die Ausführungsmodi in der nächsten Codezeile, die standardmäßig auf author gesetzt ist:
+1. Wechseln Sie nach dem Extrahieren der Inhalte zum Ordner **WEB-INF** und bearbeiten Sie die Datei web.xml, um die Ausführungsmodi zu ändern. Suchen Sie nach der Zeichenfolge `sling.run.modes`, um ihre Position in der XML-Datei zu bestimmen. Wenn Sie sie gefunden haben, ändern Sie die Ausführungsmodi in der nächsten Code-Zeile, die standardmäßig auf author gesetzt ist:
 
    ```bash
    <param-value >author</param-value>
    ```
 
-1. Ändern Sie den obigen Autorenwert und legen Sie die Ausführungsmodi auf Folgendes fest: `author,crx3,crx3tar`. Der endgültige Codeblock sollte wie folgt aussehen:
+1. Ändern Sie den oben genannten „author“-Wert und legen Sie die Ausführungsmodi folgendermaßen fest: `author,crx3,crx3tar`. Der endgültige Code-Block sollte wie folgt aussehen:
 
    ```
    <init-param>
@@ -116,4 +116,4 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungsserver verwend
    jar cvf aem65.war
    ```
 
-1. Stellen Sie schließlich die neue War-Datei in TomCat bereit.
+1. Stellen Sie schließlich die neue war-Datei in TomCat bereit.
