@@ -11,7 +11,7 @@ topic-tags: forms-app
 discoiquuid: f6440a36-719a-4f89-b7db-1af918a3469a
 exl-id: 9333705b-9944-4a74-a30f-7d9ec85fd824
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '886'
 ht-degree: 100%
 
@@ -53,7 +53,7 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 
 1. Erstellen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator.
 
-#### Android {#for-android}
+#### Für Android {#for-android}
 
 1. Benennen Sie die Anwendungssymboldateien folgendermaßen:
 
@@ -102,7 +102,7 @@ Führen Sie die folgenden Schritte durch, um das Standardsymbol der App und das 
 
    Weitere Informationen zum Erstellen der App für iOS finden Sie unter [Einrichten des Xcode-Projekts und Erstellen der iOS-App](/help/forms/using/setup-xcode-project-build-installer.md).
 
-### Android {#for-android-1}
+### Für Android {#for-android-1}
 
 1. Öffnen Sie die folgende XML-Datei in einem Text- oder XML-Editor:
 
@@ -159,7 +159,7 @@ Stellen Sie sicher, dass Sie die folgenden Bilder haben:
 1. Navigieren Sie zum Ordner `www/wsmobile/images`. 
 1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `LC-logo.png` durch die benutzerdefinierte Datei `LC-logo.png`.
 1. Um den Hintergrund zu ändern, ersetzen Sie die standardmäßige Datei `Landing_bg.jpeg` mit der benutzerdefinierten Datei `Landing_bg.jpeg`.
-1. Erstellen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator.
+1. Bauen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator auf und führen Sie sie aus.
 
 ### So passen Sie Bilder auf der Anmeldeseite mit Eclipse an {#to-customize-images-on-the-login-pages-using-eclipse}
 
@@ -177,7 +177,7 @@ Stellen Sie sicher, dass Sie die folgenden Bilder haben:
 1. Navigieren Sie zum Ordner `MWSWindows\www\wsmobile\images`. 
 1. Um das Logo zu ändern, ersetzen Sie die Standarddatei `LC-logo.png` durch die benutzerdefinierte Datei `LC-logo.png`.
 1. Um den Hintergrund zu ändern, ersetzen Sie die standardmäßige Datei `Landing_bg.jpeg` mit der benutzerdefinierten Datei `Landing_bg.jpeg`.
-1. Erstellen und wählen Sie „AEM Forms App“ auf dem Windows-Gerät.
+1. Bauen Sie die AEM Forms-App auf einem Windows-Gerät auf und führen Sie sie aus.
 
 ## Anpassen des Logos im Appmenü {#customizing_images_on_the_login_page-1}
 
@@ -208,7 +208,7 @@ Stellen Sie sicher, dass Sie das folgende Bild haben:
 
 1. Navigieren Sie zum Ordner `www/wsmobile/images`. 
 1. Um das Logo zu ändern, ersetzen Sie die standardmäßige Datei `aem_icon.png` durch die benutzerdefinierte Datei `aem_icon.png`.
-1. Erstellen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator.
+1. Bauen Sie die AEM Forms-App auf einem iOS-Gerät oder einem iOS-Simulator auf und führen Sie sie aus.
 
 ### So passen Sie Bilder auf der Anmeldeseite mit Eclipse an {#to-customize-images-on-the-login-pages-using-eclipse-1}
 
