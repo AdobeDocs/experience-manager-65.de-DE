@@ -13,9 +13,9 @@ docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6872'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -661,7 +661,7 @@ Die folgenden beiden OSGi-Komponenten wurden hinzugefügt, um Authentifizierungs
 
 Die Teile der CUG-Umschreibung, die für Authentifizierung relevant sind, umfassen nur eine einzelne Konfigurationsoption, die „Adobe Granite Authentication Requirement and Login Path Handler“ zugehörig ist:
 
-**&quot;Authentication Requirement and Login Path Handler&quot;**
+**„Authentication Requirement and Login Path Handler“**
 
 <table>
  <tbody>
@@ -682,11 +682,11 @@ Die Teile der CUG-Umschreibung, die für Authentifizierung relevant sind, umfass
 
 ## Standardkonfiguration seit Einführung von AEM 6.3 {#default-configuration-since-aem}
 
-Neue Installationen von AEM verwenden standardmäßig die neuen Implementierungen für die autorisierungs- und authentifizierungsrelevanten Teile des CUG-Features. Die alte Implementierung &quot;Adobe Granite Closed User Group (CUG) Support&quot; ist veraltet und wird standardmäßig in allen AEM Installationen deaktiviert. Stattdessen werden die neuen Implementierungen wie folgt aktiviert:
+Neue Installationen von AEM verwenden standardmäßig die neuen Implementierungen für die autorisierungs- und authentifizierungsrelevanten Teile des CUG-Features. Die alte Implementierung „Adobe Granite Closed User Group (CUG) Support“ ist veraltet und wird standardmäßig in allen Installationen von AEM deaktiviert. Stattdessen werden die neuen Implementierungen wie folgt aktiviert:
 
 ### Autoreninstanzen {#author-instances}
 
-| **&quot;Apache Jackrabbit Oak CUG Configuration&quot;** | **Erklärung** |
+| **„Apache Jackrabbit Oak CUG Configuration“** | **Erklärung** |
 |---|---|
 | Unterstützte Pfade: `/content` | Die Zugriffssteuerungsverwaltung für „CUGpolicies“ ist aktiviert. |
 | CUG-Prüfung aktiviert: FALSE | Die Berechtigungsprüfung ist deaktiviert. CUG-Richtlinien sind nicht wirksam. |
@@ -698,17 +698,17 @@ Neue Installationen von AEM verwenden standardmäßig die neuen Implementierung
 
 ### Veröffentlichungsinstanzen {#publish-instances}
 
-| **&quot;Apache Jackrabbit Oak CUG Configuration&quot;** | **Erklärung** |
+| **„Apache Jackrabbit Oak CUG Configuration“** | **Erklärung** |
 |---|---|
 | Unterstützte Pfade: `/content` | Die Zugriffssteuerungsverwaltung für CUG-Richtlinien wird in den konfigurierten Pfaden aktiviert. |
 | CUG-Prüfung aktiviert: TRUE | Die Berechtigungsprüfung wird in den konfigurierten Pfaden aktiviert. CUG-Richtlinien werden wirksam bei `Session.save()`. |
 | Ranking | 200 | Siehe Oak-Dokumentation. |
 
-| **&quot;Apache Jackrabbit Oak CUG Exclude List&quot;** | **Erklärung** |
+| **„Apache Jackrabbit Oak CUG Exclude List“** | **Erklärung** |
 |---|---|
 | Prinzipalnamen: Admins | Schließt den Administratorprinzipal aus der CUG-Prüfung aus. |
 
-| **&quot;Adobe Granite Authentication Requirement and Login Path Handler&quot;** | **Erklärung** |
+| **„Adobe Granite Authentication Requirement and Login Path Handler“** | **Erklärung** |
 |---|---|
 | Unterstützte Pfade: `/content` | Authentifizierungspflichten, die im Repository mithilfe des Mixin-Typs `granite:AuthenticationRequired` definiert wurden, werden in `/content` bei `Session.save()` wirksam. Sling Authenticator wird aktualisiert. Wird der Mixin-Typ außerhalb der unterstützten Pfade hinzugefügt, so wird dies ignoriert. |
 
@@ -761,7 +761,7 @@ Dies wurde angepasst, um den Verweis auf `CugSupport` optional zu machen, um die
 
 >[!NOTE]
 >
->Standardmäßig wird die **Adobe Granite HTTP Header Authentication Handler** wird nur im Veröffentlichungsausführungsmodus mit &quot;Anmeldeseite deaktivieren&quot;konfiguriert ( `auth.http.nologin`) aktiviert ist.
+>Standardmäßig ist der **Adobe Granite HTTP Header Authentication Handler** nur im Veröffentlichungsausführungsmodus mit aktivierter Option „Anmeldeseite deaktivieren“ (`auth.http.nologin`) konfiguriert.
 
 ### AEM Live Copy {#aem-livecopy}
 
