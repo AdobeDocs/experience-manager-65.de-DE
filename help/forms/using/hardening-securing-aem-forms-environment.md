@@ -1,5 +1,5 @@
 ---
-title: Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen
+title: Härten (Absichern) und Schützen von AEM-Formularen in OSGi-Umgebungen
 seo-title: Hardening and Securing AEM forms on OSGi environment
 description: Hier finden Sie Empfehlungen und Best Practices zum Schutz von AEM Forms auf einem OSGi-Server.
 seo-description: Learn recommendations and best practices for securing AEM Forms on OSGi server.
@@ -9,13 +9,13 @@ discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1443'
 ht-degree: 100%
 
 ---
 
-# Härten (Absichern) und Schutz von AEM Forms in OSGi-Umgebungen {#hardening-and-securing-aem-forms-on-osgi-environment}
+# Härten (Absichern) und Schützen von AEM-Formularen in OSGi-Umgebungen {#hardening-and-securing-aem-forms-on-osgi-environment}
 
 Hier finden Sie Empfehlungen und Best Practices zum Schutz von AEM Forms auf einem OSGi-Server.
 
@@ -145,7 +145,7 @@ Standardmäßig speichert die Übermittlungsaktion für Forms Portal in adaptive
 
 Sie können den Speicherdienst so konfigurieren, dass er über das Netzwerk an den Verarbeitungscluster sendet, ohne dass Daten lokal auf dem Veröffentlichungsknoten gespeichert werden. Der Verarbeitungscluster befindet sich in einer sicheren Zone hinter der privaten Firewall und die Daten bleiben sicher.
 
-Verwenden Sie die Anmeldedaten des Verarbeitungsservers für den AEM DS-Einstellungsdienst, um Daten vom Veröffentlichungsknoten an den Verarbeitungsserver zu senden. Es wird empfohlen, die Anmeldedaten eines Benutzers mit eingeschränkten Rechten, der kein Administrator ist und über Lese- und Schreibzugriff auf das Repository des Verarbeitungsservers verfügt, zu verwenden. Weitere Informationen finden Sie unter [Konfigurieren von Speicher-Services für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
+Verwenden Sie die Anmeldedaten des Verarbeitungsservers für den AEM DS-Einstellungsdienst, um Daten vom Veröffentlichungsknoten an den Verarbeitungsserver zu senden. Es wird empfohlen, die Anmeldedaten eines Benutzers mit eingeschränkten Rechten, der kein Administrator ist und über Lese- und Schreibzugriff auf das Repository des Verarbeitungsservers verfügt, zu verwenden. Weitere Informationen finden Sie unter [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Durch das Formulardatenmodell (FDM) verarbeitete Daten sichern {#secure-data-handled-by-form-data-model-fdm}
 
