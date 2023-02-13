@@ -12,9 +12,9 @@ discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2392'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das
 >
 >Auch wenn die HTML Template Language (HTL) und JSP beide für die Entwicklung von Komponenten für die klassische Benutzeroberfläche verwendet werden können, ist auf dieser Seite nur die Entwicklung mit JSP abgebildet. Dies liegt einzig an der Historie der Verwendung von JSP für die klassische Benutzeroberfläche.
 >
->HTL ist jetzt die empfohlene Skriptsprache für AEM. Unter [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) und unter [Entwickeln von AEM-Komponenten](/help/sites-developing/developing-components.md) können Sie die Methoden vergleichen.
+>HTL ist jetzt die empfohlene Skriptsprache für AEM. Unter [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) und unter [Entwickeln von AEM-Komponenten](/help/sites-developing/developing-components.md) können Sie die Methoden vergleichen.
 
 ## Struktur {#structure}
 
@@ -141,7 +141,7 @@ Weitere Details finden Sie unter [Verwenden von xtypes](/help/sites-developing/x
 
 Dieser Abschnitt beschreibt, wie Sie Ihre eigenen Komponenten erstellen und diese dem Absatzsystem hinzufügen.
 
-Eine schnelle Möglichkeit für den Einstieg ist das Kopieren einer vorhandenen Komponente und das anschließende Vornehmen der gewünschten Änderungen.
+Eine schnelle Möglichkeit für den Einstieg ist das Kopieren einer vorhandenen Komponente, um anschließend die gewünschten Änderungen vorzunehmen.
 
 Ein Beispiel für die Entwicklung einer Komponente wird detailliert unter [Erweitern der Text- und Bildkomponente – ein Beispiel](#extending-the-text-and-image-component-an-example) beschrieben.
 
@@ -221,7 +221,7 @@ Nach dem Entwickeln der Komponente fügen Sie sie dem Absatzsystem hinzu. Autore
 
    Sie befinden sich jetzt im Design-Modus und können das Absatzsystem bearbeiten.
 
-1. Klicken Sie auf Bearbeiten.
+1. Klicken Sie auf „Bearbeiten“.
 
    Eine Liste von Komponenten, die zum Absatzsystem gehören, wird angezeigt. Ihre neue Komponente ist jetzt auch aufgeführt.
 
