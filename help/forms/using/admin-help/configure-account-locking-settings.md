@@ -1,5 +1,5 @@
 ---
-title: Einstellungen für die Kontosperrung konfigurieren
+title: Konfigurieren der Einstellungen für die Kontosperrung
 seo-title: Configure account-locking settings
 description: Verwenden Sie die Option „Kontosperrung aktivieren“, um Benutzerkonten nach einer bestimmten Anzahl aufeinanderfolgender Authentifizierungsfehler zu sperren.
 seo-description: Use the Enable Account Locking option to lock user accounts after a specified number of consecutive authentication failures.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d4409c6b-f4ef-499c-8daa-e93a163ff8ab
 exl-id: eb8c748d-51d9-4684-97c5-e982ad84ba9f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '194'
 ht-degree: 100%
 
 ---
 
-# Einstellungen für die Kontosperrung konfigurieren {#configure-account-locking-settings}
+# Konfigurieren der Einstellungen für die Kontosperrung {#configure-account-locking-settings}
 
 Wenn Sie eine Domain hinzufügen, geben Sie an, ob die Kontosperrung aktiviert werden soll. Wenn die Option „Kontosperrung aktivieren“ aktiviert ist, werden Benutzerkonten nach einer bestimmten Anzahl aufeinander folgender Authentifizierungsfehler gesperrt. Nach einem bestimmten Zeitraum kann der Benutzer eine erneute Authentifizierung versuchen. Dies verhindert, dass Benutzer verschiedene Berechtigungskombinationen für den Systemzugriff zu verwenden versuchen.
 
