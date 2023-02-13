@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1600'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -141,7 +141,7 @@ s.linkTrackVars= 'prop4';
 
 ## Beispielhafte Konfiguration der Link-Überwachung {#example-link-tracking-configuration}
 
-Gehen Sie wie folgt vor, um sich mit dem Verhalten bei der Link-Überwachung der Adobe Analytics-Integration vertraut zu machen. Die Vorgehensweisen enthalten Ergebnisse von [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html).
+Gehen Sie wie folgt vor, um sich mit dem Verhalten bei der Link-Überwachung der Adobe Analytics-Integration vertraut zu machen. Die Vorgehensweisen enthalten Ergebnisse von [Adobe Marketing Cloud Debugger](https://experienceleague.adobe.com/docs/debugger/using/experience-cloud-debugger.html?lang=de).
 
 ### Allgemeine Konfiguration {#general-configuration}
 
