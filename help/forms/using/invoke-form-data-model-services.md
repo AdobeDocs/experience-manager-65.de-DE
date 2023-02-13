@@ -1,5 +1,5 @@
 ---
-title: API zum Aufrufen von Formulardatenmodelldiensten aus adaptiven Formularen
+title: API zum Aufrufen des Formulardatenmodell-Service aus adaptiven Formularen
 seo-title: API to invoke form data model service from adaptive forms
 description: Hier wird die invokeWebServices-API beschrieben, mit deren Hilfe Sie Webdienste aufrufen können, die in einem Feld eines adaptiven Formulars in WSDL geschrieben wurden.
 seo-description: Explains the invokeWebServices API that you can use to invoke web services written in WSDL from within an adaptive form field.
@@ -10,7 +10,7 @@ discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 feature: Adaptive Forms
 exl-id: cf037174-3153-486f-85b1-c974cd5a1ace
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '482'
 ht-degree: 100%
 
