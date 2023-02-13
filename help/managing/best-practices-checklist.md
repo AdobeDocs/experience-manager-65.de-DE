@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 exl-id: 16851d65-df55-471a-8848-c73c28db8ac0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
-ht-degree: 80%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Checklisten sind für jede am Projekt beteiligte Rolle vorhanden. Sie enthalten 
 
 ## Download {#download}
 
-Checkliste für AEM Best Practices für das Projekt v2
+Checkliste (Version 2): Best Practices für AEM-Projekte
 
-[Datei herunterladen](assets/aem_project_bp_checklistv2-65.xlsx)
+[Datei laden](assets/aem_project_bp_checklistv2-65.xlsx)
 
 ## Arbeitsblätter {#worksheets}
 
@@ -39,7 +39,7 @@ Die Tabelle bietet folgende Arbeitsblätter:
 * **[Status nach Rolle](/help/managing/best-practices.md#status-by-role)**
 * Eine Reihe von Checklisten nach [Rolle](/help/managing/best-practices.md#persona), [Phase und Milestone](/help/managing/best-practices.md#phases-and-milestones)
 * **Glossar**
-   * Das Glossar listet Details zu allen lieferbaren Dokumenten aus der Projekt-Checkliste auf.
+   * Das Glossar listet Details aller lieferbaren Dokumente aus der Projektcheckliste auf.
    * Das [Glossar](/help/managing/best-practices-glossary.md) ist ebenfalls als Teil der Dokumentation verfügbar.
 * **[Definition von Rollen](/help/managing/best-practices.md#persona)**
 
@@ -47,8 +47,8 @@ Die Tabelle bietet folgende Arbeitsblätter:
 
 Um ein qualitativ hochwertiges Projekt erfolgreich bereitzustellen, müssen Sie alle Punkte der Checkliste abschließen, vorzugsweise in der entsprechenden Reihenfolge:
 
-1. Die Checklisten werden entsprechend der Variablen **[Persona](/help/managing/best-practices.md#persona)** (Rolle) beteiligt. Jede Person sollte die ihrer Rolle im Projekt entsprechende Checkliste verwenden.
-1. Die Checklisten decken die **[Erforderliche Dokumente](/help/managing/best-practices.md#required-documents)** und **[Lieferziele](/help/managing/best-practices.md#deliverables)** für jeden Meilenstein - die jeweilige Rolle muss die Status- und Qualitätsfelder entsprechend festlegen.
+1. Die Checklisten werden nach beteiligter **[Rolle](/help/managing/best-practices.md#persona)** definiert. Jede Person sollte die ihrer Rolle in diesem Projekt entsprechende Checkliste verwenden.
+1. Die Checklisten decken die **[erforderlichen Dokumente](/help/managing/best-practices.md#required-documents)** und **[Ergebnisse](/help/managing/best-practices.md#deliverables)** für jeden Meilenstein ab. Die jeweilige Rolle muss die Status- und Qualitätsfelder entsprechend einstellen.
 
    >[!NOTE]
    >
