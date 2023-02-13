@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
 source-git-commit: b60278940f48731ee9085635c0d4a3d7da24ebc8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4664'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -25,13 +25,13 @@ In diesem Artikel wird beschrieben, wann Indizes zu erstellen sind und wann auf 
 
 Darüber hinaus sollten Sie die [Oak-Dokumentation zum Erstellen von Abfragen und Indizes](/help/sites-deploying/queries-and-indexing.md) lesen. Außer den als neues Konzept in AEM 6 eingeführten Indizes gibt es syntaktische Unterschiede in Oak-Abfragen, die beim Migrieren von Code aus früheren AEM-Installationen berücksichtigt werden müssen.
 
-## Verwenden von Abfragen {#when-to-use-queries}
+## Wann Abfragen verwendet werden sollten {#when-to-use-queries}
 
 ### Repository- und Taxonomiedesign {#repository-and-taxonomy-design}
 
 Beim Entwerfen der Taxonomie für ein Repository müssen verschiedene Faktoren berücksichtigt werden. Hierzu gehören u. a. die Zugriffssteuerung, Lokalisierung, Vererbung von Komponenten- und Seiteneigenschaften.
 
-In einem Taxonomie-Design, in dem diese Punkte berücksichtigt werden, muss zudem auch die „Durchlauffähigkeit“ des Index-Designs beachtet werden. In diesem Kontext bezeichnet dieser Begriff die Fähigkeit einer Taxonomie zuzulassen, dass auf Inhalt, basierend auf seinem Pfad, planbar zugegriffen werden kann. Dies ermöglicht ein leistungsfähigeres System, das einfacher unterhalten werden kann als ein System, für das eine Vielzahl von Abfragen ausgeführt werden muss.
+Beim Entwerfen einer Taxonomie, die diese Bedenken berücksichtigt, muss zudem auch die „Durchlauffähigkeit“ des Index-Designs beachtet werden. In diesem Kontext bezeichnet dieser Begriff die Fähigkeit einer Taxonomie zuzulassen, dass auf Inhalt, basierend auf seinem Pfad, planbar zugegriffen werden kann. Dies ermöglicht ein leistungsfähigeres System, das einfacher unterhalten werden kann als ein System, für das eine Vielzahl von Abfragen ausgeführt werden muss.
 
 Darüber hinaus muss beim Entwerfen einer Taxonomie bedacht werden, ob eine Sortierung wichtig ist. Wenn auf eine explizite Sortierung verzichtet werden kann und eine große Anzahl gleichgeordneter Knoten erwartet wird, sind unsortierte Knotentypen wie `sling:Folder` oder `oak:Unstructured` vorzuziehen. Ist eine Sortierung erforderlich, wären `nt:unstructured` und `sling:OrderedFolder` besser geeignet.
 
@@ -121,7 +121,7 @@ Sie können die Indizes Ihres Systems auch im JSON-Format extrahieren. Hierzu m�
 
 **Während der Entwicklung**
 
-Setzen Sie niedrige Schwellenwerte für `oak.queryLimitInMemory` (z. B. 10.000) und oak. `queryLimitReads` (z. B. 5000) und optimieren Sie die teure Abfrage, wenn Sie eine UnsupportedOperationException -Ausnahme mit der Meldung &quot;The query read more than x nodes...&quot;erreichen.
+Setzen Sie niedrige Schwellenwerte für `oak.queryLimitInMemory` (z. B. 10.000) und oak. `queryLimitReads` (z. B. 5000) und optimieren Sie die ressourcenintensive Abfrage, wenn die UnsupportedOperationException „The query read more than x nodes...“ auftritt.
 
 Dies trägt zur Vermeidung ressourcenintensiver Abfragen bei (d. h. keine Sicherung durch einen Index oder Sicherung durch einen weniger abdeckenden Index). Beispielsweise führt eine Abfrage, die 1 Million Knoten liest, zu einer I/O-Steigerung – mit negativen Folgen für die Gesamtleistung der Anwendung. Jede Abfrage, die aufgrund eines überschrittenen Limits fehlschlägt, sollte analysiert und optimiert werden.
 
@@ -176,7 +176,7 @@ Solr-Indizes können so konfiguriert werden, dass sie eingebettet auf dem AEM-Se
 
 >[!NOTE]
 >
->Der integrierte Solr-Suchansatz ermöglicht es, die Indizierung auf den Solr-Server abzuladen. Wenn die fortschrittlicheren Funktionen des Solr-Servers über einen Crawler-basierten Ansatz verwendet werden, sind zusätzliche Konfigurationsvorgänge erforderlich.
+>Der integrierte Solr-Suchansatz ermöglicht es, die Indizierung auf einen Solr-Server auszulagern. Wenn die erweiterten Funktionen des Solr-Servers über einen Crawler-basierten Ansatz verwendet werden, sind zusätzliche Konfigurationsvorgänge erforderlich.
 
 Der Nachteil dieses Ansatzes: AEM-Abfragen berücksichtigen zwar standardmäßig ACLs, sodass die Ergebnisse ausgeblendet werden, auf die ein Benutzer keinen Zugriff hat, aber beim Externalisieren von Suchvorgängen auf einen Solr-Server wird diese Funktion nicht unterstützt. Wenn Suchvorgänge auf eine solche Art und Weise externalisiert werden sollen, muss besonders vorsichtig vorgegangen werden, um sicherzustellen, dass für Benutzer nur die für sie vorgesehenen Ergebnisse angezeigt werden.
 
