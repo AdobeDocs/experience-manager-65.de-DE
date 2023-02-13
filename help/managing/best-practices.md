@@ -1,5 +1,5 @@
 ---
-title: Verwalten von Projekten - Checkliste mit Best Practices
+title: Verwalten von Projekten – Checkliste mit Best Practices
 seo-title: Managing Projects - Best Practices Checklist
 description: Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Know-how. Die Checklisten für Projekte bieten eine Zusammenstellung der Best Practices für die Projektabwicklung. Sie führen Sie durch alle Phasen des Projektlebenszyklus und bieten eine Überwachung des derzeitigen Status auf hohem Niveau.
 seo-description: Managing a project to implement Adobe Experience Manager (AEM) requires planning and understanding. The Project Checklists are intended as a set of best practices for project delivery. They guide you through all phases of the project life cycle and provide high level monitoring of your current status.
@@ -12,13 +12,13 @@ discoiquuid: 2bfa287a-aad0-4681-9f9c-d48e8179684c
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
 source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3262'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Verwalten von Projekten - Checkliste mit Best Practices{#managing-projects-best-practices-checklist}
+# Verwalten von Projekten – Checkliste mit Best Practices{#managing-projects-best-practices-checklist}
 
 Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Know-how, um sicherzustellen, dass Sie sich der Probleme und Entscheidungen bewusst sind, die Sie sowohl vor als auch während der Implementierung des Projekts treffen müssen.
 
@@ -429,7 +429,7 @@ Der Rollout einer neuen Anwendung bedarf sorgfältiger Planung, um einen reibung
 
    Führen Sie bestimmte Penetrationstests gemeinsam mit einem breiten Spektrum an Sicherheitstests durch, um die Sicherheit der Lösung zu gewährleisten.
 
-   Weitere Informationen finden Sie unter [Sicherheitscheckliste](/help/sites-administering/security-checklist.md).
+   Weitere Informationen finden Sie in der [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md).
 
 ### Live-Schaltung {#go-live}
 
@@ -629,7 +629,7 @@ Zusätzlich sind die folgenden Abschnitte der AEM-Dokumentation von besonderem I
 
       * [Entwickeln – Grundlagen](/help/sites-developing/the-basics.md)
       * [MSM-Konzepte](/help/sites-administering/msm.md)
-      * [HTML-Vorlagensprache (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+      * [HTML-Vorlagensprache (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de)
 
 * Verwandte Dokumentation
 
