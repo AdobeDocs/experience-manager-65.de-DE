@@ -13,9 +13,9 @@ docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
 source-git-commit: 002b9035f37a1379556378686b64d26bbbc30288
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2445'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -47,13 +47,13 @@ Eine Benutzersynchronisierung mit Sling Distribution weist im Vergleich zur herk
 
 >[!NOTE]
 >
->Wenn Sitzungen erforderlich sind, wird empfohlen, entweder eine SSO-Lösung zu verwenden oder eine fixierbare Sitzung zu verwenden und Kunden dazu zu bewegen, sich anzumelden, wenn sie zu einer anderen Veröffentlichungsinstanz wechseln.
+>Wenn Sitzungen erforderlich sind, wird empfohlen, entweder eine SSO-Lösung oder Sticky-Sitzungen zu verwenden und Kundinnen und Kunden sich anmelden zu lassen, wenn sie zu einer anderen Veröffentlichungsinstanz umgeschaltet werden.
 
 >[!CAUTION]
 >
 >Die Synchronisierung der **Administratorgruppe** wird nicht unterstützt, auch nicht bei aktivierter Benutzersynchronisierung. Stattdessen wird ein Fehler beim Diff-Import in das Fehlerprotokoll geschrieben.
 >
->Wenn es sich bei der Bereitstellung um eine Veröffentlichungsfarm handelt, wird daher ein Benutzer zum **Administratoren** -Gruppe, muss die Änderung manuell für jede Veröffentlichungsinstanz vorgenommen werden.
+>Wenn es sich bei der Bereitstellung um eine Veröffentlichungsfarm handelt, muss daher beim Hinzufügen oder Entfernen von Benutzenden aus der **Administratorgruppe** die Änderung manuell für jede Veröffentlichungsinstanz durchgeführt werden.
 
 ## Aktivieren der Benutzersynchronisierung {#enable-user-sync}
 
@@ -71,9 +71,9 @@ Im Folgenden finden Sie eine Beschreibung der Schritte, die zum Aktivieren der B
 
 ### Voraussetzungen {#prerequisites}
 
-1. Wenn Benutzer und Benutzergruppen bereits in einer Veröffentlichungsinstanz erstellt wurden, wird empfohlen, [Manuelle Synchronisierung](#manually-syncing-users-and-user-groups) die Benutzerdaten an alle Veröffentlichungsinstanzen vor dem Konfigurieren und Aktivieren der Benutzersynchronisierung.
+1. Wenn Benutzende und Benutzergruppen bereits auf einer Veröffentlichungsinstanz erstellt wurden, empfiehlt es sich, die Benutzerdaten für alle Veröffentlichungsinstanzen [manuell zu synchronisieren](#manually-syncing-users-and-user-groups), bevor Sie die Benutzersynchronisierung konfigurieren und aktivieren.
 
-Sobald die Benutzersynchronisierung aktiviert ist, werden nur neu erstellte Benutzer und Gruppen synchronisiert.
+Sobald die Benutzersynchronisierung aktiviert wurde, werden nur neu erstellte Benutzende und Gruppen synchronisiert.
 
 1. Vergewissern Sie sich, dass der neueste Code installiert wurde:
 
@@ -84,7 +84,7 @@ Sobald die Benutzersynchronisierung aktiviert ist, werden nur neu erstellte Benu
 
 **Aktivieren der Benutzersynchronisierung**
 
-* **In der Autoreninstanz**
+* **in der Autoreninstanz**
 
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
@@ -106,7 +106,7 @@ Sobald die Benutzersynchronisierung aktiviert ist, werden nur neu erstellte Benu
 **Konfigurieren von Berechtigungen**
 Dieser autorisierte Benutzer wird in Schritt 3 zum Konfigurieren einer Sling Distribution in Autoreninstanzen verwendet.
 
-* **In jeder Veröffentlichungsinstanz**
+* **in jeder Veröffentlichungsinstanz**
 
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Sicherheitskonsole](/help/sites-administering/security.md) auf.
@@ -162,7 +162,7 @@ Siehe auch
 
 Wenn ein autorisierter Benutzer, ein Mitglied der Benutzergruppe **`administrators`**, in allen Veröffentlichungsinstanzen erstellt wurde, muss dieser autorisierte Benutzer in der Autoreninstanz als ein Benutzer identifiziert werden, der zum Synchronisieren von Benutzerdaten zwischen Autoren- und Veröffentlichungsinstanzen berechtigt ist.
 
-* **In der Autoreninstanz**
+* **in der Autoreninstanz**
 
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
@@ -196,7 +196,7 @@ Wenn ein autorisierter Benutzer, ein Mitglied der Benutzergruppe **`administrato
 
       * Aktivieren Sie das Kontrollkästchen `Enabled`.
       * Wählen Sie `Save` aus.
-   * **Wiederholen** Sie den Vorgang für jede Veröffentlichungsinstanz.
+   * **wiederholen** Sie den Vorgang für jede Veröffentlichungsinstanz
 
 
 
@@ -230,7 +230,7 @@ Wenn ein autorisierter Benutzer, ein Mitglied der Benutzergruppe **`administrato
 
 Standardmäßig ruft der Autor Änderungen alle 30 Sekunden ab. So ändern Sie dieses Intervall:
 
-* **In der Autoreninstanz**
+* **in der Autoreninstanz**
 
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
@@ -256,7 +256,7 @@ Die Standardkonfiguration ist für eine einzelne Veröffentlichungsinstanz vorge
 
 **Hinzufügen von Veröffentlichungsinstanzen:**
 
-* **In der Autoreninstanz**
+* **in der Autoreninstanz**
 
    * Melden Sie sich mit Administratorrechten an.
    * Rufen Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md) auf.
@@ -270,14 +270,14 @@ Die Standardkonfiguration ist für eine einzelne Veröffentlichungsinstanz vorge
 
 ![](assets/chlimage_1-25.png)
 
-* **Exporter Endpoints**
-Für jede Veröffentlichungsinstanz sollte ein Exporter-Endpunkt vorhanden sein. Wenn es beispielsweise 2 Veröffentlichungsinstanzen gibt, localhost:4503 und 4504, sollte es 2 Einträge geben:
+* **Exporter-Endpunkte**
+Es sollte für jede Veröffentlichungsinstanz einen Exporter-Endpunkt geben. Beispielsweise sollten bei zwei Veröffentlichungsinstanzen, localhost:4503 und 4504, zwei Einträge vorhanden sein:
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
-* **Importer Endpoints**
-Für jede Veröffentlichungsinstanz sollte ein Importer-Endpunkt vorhanden sein. Wenn es beispielsweise 2 Veröffentlichungsinstanzen gibt, localhost:4503 und 4504, sollte es 2 Einträge geben:
+* **Importer-Endpunkte**
+Es sollte für jede Veröffentlichungsinstanz einen Importer-Endpunkt geben. Beispielsweise sollten bei zwei Veröffentlichungsinstanzen, localhost:4503 und 4504, zwei Einträge vorhanden sein:
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
@@ -405,7 +405,7 @@ Damit Updates ordnungsgemäß synchronisiert werden, muss der Vault-Paket-Builde
 
 Per Design werden in der Veröffentlichungsumgebung erstellte Benutzer und Profile (Selbstregistrierung) nicht in der Autorenumgebung angezeigt.
 
-Wenn die Topologie eine [Veröffentlichungsfarm](/help/sites-deploying/recommended-deploys.md#tarmk-farm) und die Benutzersynchronisierung korrekt konfiguriert wurde, wird die *Benutzer* und *Benutzerprofil* wird über die Veröffentlichungsfarm hinweg mithilfe der Sling-Verteilung synchronisiert.
+Wenn es sich bei der Topologie um eine [Veröffentlichungsfarm](/help/sites-deploying/recommended-deploys.md#tarmk-farm) handelt und die Benutzersynchronisierung korrekt konfiguriert wurde, werden *Benutzende* und *Benutzerprofil* über die Veröffentlichungsfarm hinweg mittels Sling Distribution synchronisiert.
 
 ### Erstellung von Benutzern oder Benutzergruppen über die Sicherheitskonsole {#users-or-user-groups-are-created-using-security-console}
 
@@ -417,7 +417,7 @@ Wenn in der Veröffentlichungsumgebung neue Benutzer über die Konsole [Benutzer
 
 ### Offlineschalten der Benutzersynchronisierung {#how-to-take-user-sync-offline}
 
-So führen Sie die Benutzersynchronisierung offline durch, um [Entfernen einer Veröffentlichungsinstanz](#how-to-remove-a-publish-instance) oder [Daten manuell synchronisieren](#manually-syncing-users-and-user-groups), muss die Verteilungswarteschlange leer und ruhig sein.
+Um die Benutzersynchronisierung zwecks [Entfernung einer Veröffentlichungsinstanz](#how-to-remove-a-publish-instance) oder [manueller Datensynchronisierung](#manually-syncing-users-and-user-groups) offline zu schalten, muss die Verteilungswarteschlange leer und störungsfrei sein.
 
 So prüfen Sie den Status der Verteilungswarteschlange:
 
@@ -460,7 +460,7 @@ Folgendes wird angezeigt, wenn die Benutzersynchronisierung nicht aktiviert wurd
 
 ![](assets/chlimage_1-28.png)
 
-#### Ausführen von Diagnosen für Veröffentlichungsinstanzen {#how-to-run-diagnostics-for-publish-instances}
+#### Ausführen der Diagnose für Veröffentlichungsinstanzen {#how-to-run-diagnostics-for-publish-instances}
 
 Wenn die Diagnose in der Autorenumgebung ausgeführt wird, umfassen die Ergebnisse „Bestanden“/„Fehlgeschlagen“ einen [INFO]-Abschnitt mit einer Liste der konfigurierten Veröffentlichungsinstanzen zur Bestätigung.
 
@@ -525,7 +525,7 @@ Als Mitglied der Gruppe `administrators` sollten für den autorisierten Benutzer
 | /etc/packages/sling/distribution |  |  | X |
 | /libs/sling/distribution |  | X |  |
 | /var |  |  | X |
-| /var/Vielseitigkeit |  | X | X |
+| /var/eventing |  | X | X |
 | /var/sling/distribution |  | X | X |
 
 ### Fehlgeschlagene Benutzergruppensynchronisierung {#user-group-sync-failed}
@@ -536,7 +536,7 @@ Siehe Abschnitt [9. Eindeutige Sling-ID](#unique-sling-id)
 
 ### Manuelles Synchronisieren von Benutzern und Benutzergruppen {#manually-syncing-users-and-user-groups}
 
-* auf Veröffentlichungsinstanzen, auf denen Benutzer und Benutzergruppen vorhanden sind:
+* Bei Veröffentlichungsinstanzen mit vorhandenen Benutzenden und Benutzergruppen:
 
    * [Deaktivieren Sie ggf. die Benutzersynchronisierung.](#how-to-take-user-sync-offline)
    * [Erstellen Sie ein Paket](/help/sites-administering/package-manager.md#creating-a-new-package) von `/home`.
@@ -554,13 +554,13 @@ Siehe Abschnitt [9. Eindeutige Sling-ID](#unique-sling-id)
 
 Zum Konfigurieren oder Aktivieren der Benutzersynchronisierung gehen Sie zu Schritt 1: [Apache Sling Distribution Agent – Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory).
 
-### Wenn eine Veröffentlichungsinstanz nicht verfügbar wird {#when-a-publish-instance-becomes-unavailable}
+### Bei Nichtverfügbarkeit einer Veröffentlichungsinstanz {#when-a-publish-instance-becomes-unavailable}
 
-Wenn eine Veröffentlichungsinstanz nicht mehr verfügbar ist, sollte sie nicht entfernt werden, sofern sie zukünftig wieder online geschaltet wird. Änderungen werden für die Veröffentlichungsinstanz in die Warteschlange gestellt und sobald sie wieder online sind, werden die Änderungen verarbeitet.
+Wenn eine Veröffentlichungsinstanz nicht mehr verfügbar ist, sollte sie nicht entfernt werden, sofern sie zukünftig wieder online geschaltet werden soll. Die Änderungen werden in die Warteschlange der Veröffentlichungsinstanz gestellt, und sobald diese wieder online ist, werden die Änderungen verarbeitet.
 
 Wenn die Veröffentlichungsinstanz nicht wieder online geschaltet wird, also dauerhaft offline ist, muss sie entfernt werden, weil durch das Auffüllen der Warteschlangen der Speicherplatz in der Autorenumgebung spürbar beansprucht wird.
 
-Wenn eine Veröffentlichungsinstanz ausfällt, enthält das Autorenprotokoll ähnliche Ausnahmen wie:
+Wenn eine Veröffentlichungsinstanz ausgefallen ist, werden im Autorenprotokoll Ausnahmen wie diese angezeigt:
 
 ```
 28.01.2016 15:57:48.475 ERROR
@@ -572,12 +572,12 @@ Wenn eine Veröffentlichungsinstanz ausfällt, enthält das Autorenprotokoll äh
 
 ### Entfernen einer Veröffentlichungsinstanz {#how-to-remove-a-publish-instance}
 
-So entfernen Sie eine Veröffentlichungsinstanz aus dem [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory), muss die Verteilungswarteschlange leer und ruhig sein.
+Um eine Veröffentlichungsinstanz aus der [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory) zu entfernen, muss die Verteilerwarteschlange leer und störungsfrei sein.
 
 * In der Autoreninstanz:
 
    * [Schalten Sie die Benutzersynchronisierung offline.](#how-to-take-user-sync-offline)
-   * folgen [Schritt 7](#apache-sling-distribution-agent-sync-agents-factory) , um die Veröffentlichungsinstanz aus beiden Serverlisten zu entfernen:
+   * Folgen Sie [Schritt 7](#apache-sling-distribution-agent-sync-agents-factory), um die Veröffentlichungsinstanz aus beiden Server-Listen zu entfernen:
 
       * `Exporter Endpoints`
       * `Importer Endpoints`
