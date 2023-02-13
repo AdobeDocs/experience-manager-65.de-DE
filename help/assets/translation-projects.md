@@ -1,29 +1,29 @@
 ---
 title: Erstellen von Übersetzungsprojekten
-description: Erfahren Sie, wie Sie Übersetzungsprojekte in erstellen [!DNL Adobe Experience Manager].
+description: Erfahren Sie, wie Sie in  [!DNL Adobe Experience Manager] Übersetzungsprojekte erstellen können.
 contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
 source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1874'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Erstellen von Übersetzungsprojekten {#creating-translation-projects}
 
-Um eine Sprachkopie zu erstellen, führen Sie einen der folgenden Sprachkopie-Workflows aus, die in der Leiste &quot;Verweise&quot;in der [!DNL Experience Manager] -Benutzeroberfläche.
+Lösen Sie zum Erstellen einer Sprachkopie einen der folgenden Sprachkopie-Workflows aus, die in der Leiste „Verweise“ der Benutzeroberfläche von [!DNL Experience Manager] verfügbar sind.
 
-* **Erstellen und übersetzen**: In diesem Workflow werden zu übersetzende Assets in den Sprachstamm der Sprache kopiert, in die Sie übersetzen möchten. Darüber hinaus wird je nach gewählten Optionen ein Übersetzungsprojekt für die Assets in der Projektekonsole erstellt. Je nach Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald es erstellt wurde.
+* **Erstellen und Übersetzen**: Bei diesem Workflow werden die zu übersetzenden Assets in den Sprachstamm der Sprache kopiert, in die übersetzt werden soll. Darüber hinaus wird je nach gewählten Optionen ein Übersetzungsprojekt für die Assets in der Projektekonsole erstellt. Je nach Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald es erstellt wurde.
 
-* **Sprachkopien aktualisieren**: Führen Sie diesen Workflow aus, um eine zusätzliche Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema einzuschließen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält.
+* **Sprachlopien aktualisieren**: Diesen Workflow führen Sie aus, um eine weitere Gruppe von Assets zu übersetzen und in eine Sprachkopie für ein bestimmtes Gebietsschema aufzunehmen. In diesem Fall werden die übersetzten Assets zu dem Zielordner hinzugefügt, der bereits zuvor übersetzte Assets enthält.
 
 >[!PREREQUISITES]
 >
 >* Benutzer, die Übersetzungsprojekte erstellen, sind Mitglieder der Gruppe `projects-administrators`.
->* Der Übersetzungsanbieter unterstützt die Übersetzung von Binärdateien.
+>* Der Übersetzungsdienstleister unterstützt die Übersetzung von Binärdateien.
 
 
 ## Workflow für das Erstellen und Übersetzen {#create-and-translate-workflow}
@@ -38,13 +38,13 @@ Den Workflow für das Erstellen und Übersetzen verwenden Sie, um erstmals Sprac
 
 Verwenden Sie die Option **[!UICONTROL Nur Struktur erstellen]**, um eine Zielordnerhierarchie im Zielsprachenstamm zu erstellen und die Hierarchie des Quellordners im Ausgangssprachenstamm widerzuspiegeln. In diesem Fall werden Quellelemente in den Zielordner kopiert. Es wird jedoch kein Übersetzungsprojekt generiert.
 
-1. Im [!DNL Assets] -Schnittstelle den Quellordner auswählen, für den Sie eine Struktur im Zielsprachenstamm erstellen möchten.
+1. Wählen Sie in der Benutzeroberfläche von [!DNL Assets] den Ordner, für den Sie eine Struktur im Zielsprachenstamm erstellen möchten.
 
-1. Öffnen Sie die **[!UICONTROL Verweise]** Bereich und klicken Sie auf **[!UICONTROL Sprachkopien]** under **[!UICONTROL Kopien]**.
+1. Öffnen Sie den Fensterbereich **[!UICONTROL Verweise]** und klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**.
 
    ![Sprachkopien](assets/translation-language-copies.png)
 
-1. Klicken **[!UICONTROL Erstellen und übersetzen]**. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache, für die Sie eine Ordnerstruktur erstellen möchten.
+1. Klicken Sie auf **[!UICONTROL Erstellen und Übersetzen]**. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache, für die Sie eine Ordnerstruktur erstellen möchten.
 
 1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Nur Struktur erstellen]**.
 
@@ -52,7 +52,7 @@ Verwenden Sie die Option **[!UICONTROL Nur Struktur erstellen]**, um eine Zielor
 
    ![Sprachkopien](assets/lang-copy2.png)
 
-1. Klicken Sie auf die Struktur aus der Liste und klicken Sie dann auf **[!UICONTROL In Assets einblenden]** , um zur Ordnerstruktur in der Zielsprache zu navigieren.
+1. Klicken Sie auf die Struktur aus der Liste und dann auf **[!UICONTROL In Assets einblenden]**, um zur Ordnerstruktur in der Zielsprache zu navigieren.
 
    ![Einblenden von Assets](assets/reveal-in-assets.png)
 
@@ -60,12 +60,12 @@ Verwenden Sie die Option **[!UICONTROL Nur Struktur erstellen]**, um eine Zielor
 
 Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Sprachstamm der Sprache kopiert, in die übersetzt werden soll. Je nach gewählten Optionen wird ein Übersetzungsprojekt für die Assets in der Projektekonsole erstellt. Abhängig von den Einstellungen kann das Übersetzungsprojekt manuell gestartet oder automatisch ausgeführt werden, sobald es erstellt wird.
 
-1. Im [!DNL Assets] -Benutzeroberfläche den Quellordner auswählen, für den Sie eine Sprachkopie erstellen möchten.
-1. Öffnen Sie die **[!UICONTROL Verweise]** Bereich und klicken Sie auf **[!UICONTROL Sprachkopien]** under **[!UICONTROL Kopien]**.
+1. Wählen Sie in der Benutzeroberfläche von [!DNL Assets] den Ordner, für den Sie eine Sprachkopie erstellen möchten.
+1. Wechseln Sie zum Fensterbereich **[!UICONTROL Verweise]** und klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
-1. Klicken **[!UICONTROL Erstellen und übersetzen]** unten.
+1. Klicken Sie unten auf **[!UICONTROL Erstellen und Übersetzen]**.
 
 1. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache(n), für die Sie eine Ordnerstruktur erstellen möchten.
 
@@ -73,7 +73,7 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
 1. Geben Sie im Feld **[!UICONTROL Projekttitel]** einen Namen für das Projekt ein.
 
-1. Klicken Sie auf **[!UICONTROL Erstellen]**. [!DNL Assets] aus dem Quellordner werden in die Zielordner für die Gebietsschemas kopiert, die Sie in Schritt 4 gewählt haben.
+1. Klicken Sie auf **[!UICONTROL Erstellen]**. [!DNL Assets] aus dem Quellordner werden in die Zielordner für die Gebietsschemata kopiert, die Sie in Schritt 4 gewählt haben.
 
    ![Sprachkopien](assets/lang-copy2.png)
 
@@ -81,7 +81,7 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
    ![Einblenden von Assets](assets/reveal-in-assets.png)
 
-1. Navigieren Sie zur Projektekonsole. Der Übersetzungsordner wird in die Projektekonsole kopiert.
+1. Gehen Sie zur Projektekonsole. Der Übersetzungsordner wird in die Projektekonsole kopiert.
 
    ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -89,7 +89,7 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
    ![chlimage_1-71](assets/chlimage_1-71.png)
 
-1. Klicken Sie auf das Projekt, um die Detailseite zu öffnen.
+1. Klicken Sie auf das Projekt, um die Seite mit den Details zu öffnen.
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
@@ -99,11 +99,11 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
    Weitere Informationen zum Auftragsstatus finden Sie unter [Überwachen des Status eines Übersetzungsauftrags](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Navigieren Sie zum [!DNL Assets] und öffnen Sie die [!UICONTROL Eigenschaften] für jedes der übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
+1. Gehen Sie zur Benutzeroberfläche von [!DNL Assets] und öffnen Sie die Seite mit den [!UICONTROL Eigenschaften] für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
-   ![Anzeigen der übersetzten Metadaten auf der Seite &quot;Asset-Eigenschaften&quot;](assets/translated-metadata-asset-properties.png)
+   ![Anzeigen der übersetzten Metadaten auf der Seite „Asset-Eigenschaften“](assets/translated-metadata-asset-properties.png)
 
-   *Abbildung: Übersetzte Metadaten auf der Asset-Eigenschaftsseite.*
+   *Abbildung: Übersetzte Metadaten auf der Seite „Asset-Eigenschaften“.*
 
    >[!NOTE]
    >
@@ -113,10 +113,10 @@ Wenn Sie diese Option verwenden, werden die zu übersetzenden Assets in den Spra
 
 Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets ausgeführt, die Sie zum Quellordner hinzufügen, nachdem bereits ein Übersetzungs-Workflow ausgeführt wurde. Nur die neu hinzugefügten Assets werden in den Zielordner kopiert, der zuvor übersetzte Assets enthält. In diesem Fall wird kein neues Übersetzungsprojekt erstellt.
 
-1. Im [!DNL Assets] Navigieren Sie in der Benutzeroberfläche zum Quellordner, der nicht übersetzte Assets enthält.
+1. Navigieren Sie in der Benutzeroberfläche von [!DNL Assets] zu dem Ordner, der nicht übersetzte Assets enthält.
 1. Wählen Sie ein Asset, das Sie übersetzen möchten, und wechseln Sie zum Bereich **[!UICONTROL Verweise]**. Im Abschnitt **[!UICONTROL Sprachkopien]** wird die Anzahl der Übersetzungskopien angezeigt, die momentan verfügbar sind.
-1. Klicken **[!UICONTROL Sprachkopien]** under **[!UICONTROL Kopien]**. Eine Liste der verfügbaren Übersetzungskopien wird angezeigt.
-1. Klicken **[!UICONTROL Erstellen und übersetzen]** unten.
+1. Klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**. Eine Liste der verfügbaren Übersetzungskopien wird angezeigt.
+1. Klicken Sie unten auf **[!UICONTROL Erstellen und Übersetzen]**.
 
 1. Wählen Sie aus der Liste **[!UICONTROL Zielsprachen]** die Sprache(n), für die Sie eine Ordnerstruktur erstellen möchten.
 
@@ -132,12 +132,12 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
-1. Navigieren Sie zur Projektkonsole und öffnen Sie das vorhandene Übersetzungsprojekt, dem Sie Assets hinzugefügt haben.
+1. Gehen Sie zur Projektkonsole und öffnen Sie das vorhandene Übersetzungsprojekt, dem Sie Assets hinzugefügt haben.
 1. Klicken Sie auf das Übersetzungsprojekt, um die Seite mit den Projektdetails anzuzeigen.
 
    ![chlimage_1-80](assets/chlimage_1-80.png)
 
-1. Klicken Sie unten im **Übersetzungsauftrag** -Kachel, um die Assets im Übersetzungs-Workflow anzuzeigen. In der Übersetzungsauftragsliste werden auch Einträge für Asset-Metadaten und -Tags aufgeführt. Diese Einträge geben an, dass die Metadaten und Tags für die Assets ebenfalls übersetzt werden.
+1. Klicken Sie unten auf der Kachel **Übersetzungsauftrag** auf das Auslassungszeichen, um die Assets im Übersetzungs-Workflow anzuzeigen. In der Übersetzungsauftragsliste werden auch Einträge für Asset-Metadaten und -Tags aufgeführt. Diese Einträge geben an, dass die Metadaten und Tags für die Assets ebenfalls übersetzt werden.
 
    >[!NOTE]
    >
@@ -159,7 +159,7 @@ Wenn Sie diese Option verwenden, wird der Übersetzungs-Workflow für Assets aus
 
    Weitere Informationen finden Sie unter [Überwachen des Status eines Übersetzungsauftrags](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Nach Abschluss des Übersetzungsvorgangs ändert sich der Status in „Bereit für Überprüfung“. Navigieren Sie zum [!DNL Assets] -Benutzeroberfläche und öffnen Sie die Seite Eigenschaften für jedes der übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
+1. Nach Abschluss des Übersetzungsvorgangs ändert sich der Status in „Bereit für Überprüfung“. Gehen Sie zur Benutzeroberfläche von [!DNL Assets] und öffnen Sie die Seite mit den Eigenschaften für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
 ## Aktualisieren von Sprachkopien {#update-language-copies}
 
@@ -170,22 +170,22 @@ Führen Sie diesen Workflow aus, um eine weitere Gruppe von Assets zu übersetze
 
 ### Erstellen eines neuen Übersetzungsprojekts {#create-a-new-translation-project-1}
 
-Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für den Satz von Assets erstellt, für den Sie eine Sprachkopie aktualisieren möchten.
+Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für die Gruppe von Assets erstellt, für die Sie eine Sprachkopie aktualisieren möchten.
 
-1. Aus dem [!DNL Assets] Wählen Sie in der Benutzeroberfläche den Quellordner aus, in dem Sie ein Asset hinzugefügt haben.
-1. Öffnen Sie die **[!UICONTROL Verweise]** und klicken Sie auf **[!UICONTROL Sprachkopien]** under **[!UICONTROL Kopien]** , um die Liste der Sprachkopien anzuzeigen.
+1. Wählen Sie in der Benutzeroberfläche von [!DNL Assets] den Quellordner, dem Sie ein Asset hinzugefügt haben.
+1. Öffnen Sie den Fensterbereich **[!UICONTROL Verweise]** und klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**, um die Liste der Sprachkopien anzuzeigen.
 1. Aktivieren Sie das Kontrollkästchen vor **[!UICONTROL Sprachkopien]** und wählen Sie dann den Zielordner aus, der dem entsprechenden Gebietsschema entspricht.
 
    ![Sprachkopie auswählen](assets/lang-copy1.png)
 
-1. Klicken **[!UICONTROL Sprachkopien aktualisieren]** unten.
+1. Klicken Sie am unteren Rand auf **[!UICONTROL Sprachkopien aktualisieren]**.
 
 1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Neues Übersetzungsprojekt erstellen]**.
 
 1. Geben Sie im Feld **[!UICONTROL Projekttitel]** einen Namen für das Projekt ein.
 
 1. Klicken Sie auf **[!UICONTROL Starten]**.
-1. Navigieren Sie zur Projektekonsole. Der Übersetzungsordner wird in die Projektekonsole kopiert.
+1. Gehen Sie zur Projektekonsole. Der Übersetzungsordner wird in die Projektekonsole kopiert.
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
@@ -193,7 +193,7 @@ Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für den Satz von
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
-1. Klicken Sie auf das Projekt, um die Detailseite zu öffnen.
+1. Klicken Sie auf das Projekt, um die Seite mit den Details zu öffnen.
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
@@ -209,22 +209,22 @@ Wenn Sie diese Option verwenden, wird ein Übersetzungsprojekt für den Satz von
 
    Weitere Informationen zum Auftragsstatus finden Sie unter [Überwachen des Status eines Übersetzungsauftrags](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Navigieren Sie zum [!DNL Assets] -Benutzeroberfläche und öffnen Sie die Seite Eigenschaften für jedes der übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
+1. Gehen Sie zur Benutzeroberfläche von [!DNL Assets] und öffnen Sie die Seite mit den Eigenschaften für die einzelnen übersetzten Assets, um die übersetzten Metadaten anzuzeigen.
 
 ### Hinzufügen zu einem vorhandenen Übersetzungsprojekt {#add-to-existing-translation-project-1}
 
 Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen Übersetzungsprojekt hinzugefügt, um die Sprachkopien für das von Ihnen gewählte Gebietsschema zu aktualisieren.
 
-1. Aus dem [!DNL Assets] Wählen Sie in der Benutzeroberfläche den Quellordner aus, dem Sie einen Asset-Ordner hinzugefügt haben.
-1. Öffnen Sie die **[!UICONTROL Verweisbereich]** und klicken Sie auf **[!UICONTROL Sprachkopien]** under **[!UICONTROL Kopien]** , um die Liste der Sprachkopien anzuzeigen.
+1. Wählen Sie in der Benutzeroberfläche von [!DNL Assets] den Quellordner, dem Sie einen Asset-Ordner hinzugefügt haben.
+1. Öffnen Sie den Fensterbereich **[!UICONTROL Verweise]** und klicken Sie unter **[!UICONTROL Kopien]** auf **[!UICONTROL Sprachkopien]**, um die Liste der Sprachkopien anzuzeigen.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Sprachkopien]**, um alle Sprachkopien auszuwählen. Heben Sie die Auswahl anderer Kopien auf. Nur die Sprachkopien, die den gewünschten Gebietsschemas entsprechen, sollten ausgewählt bleiben.
+1. Aktivieren Sie das Kontrollkästchen **[!UICONTROL Sprachkopien]**, um alle Sprachkopien auszuwählen. Heben Sie die Auswahl anderer Kopien auf. Nur die Sprachkopien, die den gewünschten Gebietsschemata entsprechen, sollten ausgewählt bleiben.
 
    ![Sprachkopie auswählen](assets/lang-copy1.png)
 
-1. Klicken **[!UICONTROL Sprachkopien aktualisieren]** unten.
+1. Klicken Sie am unteren Rand auf **[!UICONTROL Sprachkopien aktualisieren]**.
 
 1. Wählen Sie aus der Liste **[!UICONTROL Projekt]** die Option **[!UICONTROL Zu vorhandenem Übersetzungsprojekt hinzufügen]**.
 
@@ -237,29 +237,29 @@ Wenn Sie diese Option verwenden, wird die Gruppe der Assets zu einem vorhandenen
 
 Wenn Sie einen Übersetzungs-Workflow ausführen, um eine Sprachkopie mit bearbeiteten Versionen der ursprünglichen Assets zu aktualisieren, wird die vorhandene Sprachkopie beibehalten, bis Sie die übersetzten Assets genehmigen. [!DNL Adobe Experience Manager Assets] speichert die neu übersetzten Assets an einem temporären Speicherort und aktualisiert die vorhandene Sprachkopie, nachdem Sie die Assets genehmigt haben. Wenn Sie die Assets ablehnen, bleibt die Sprachkopie unverändert.
 
-1. Klicken Sie auf den Quellstammordner unter **[!UICONTROL Sprachkopien]** für die Sie bereits eine Sprachkopie erstellt haben, und klicken Sie dann auf **[!UICONTROL In Assets einblenden]** , um den Ordner in [!DNL Experience Manager Assets].
+1. Klicken Sie auf den Quellstammordner unter **[!UICONTROL Sprachkopien]**, für den Sie bereits eine Sprachkopie erstellt haben, und klicken Sie anschließend auf **[!UICONTROL In Assets einblenden]**, um den Ordner in [!DNL Experience Manager Assets] zu öffnen.
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-1. Aus dem [!DNL Assets] -Benutzeroberfläche verwenden, wählen Sie ein bereits übersetztes Asset aus und klicken Sie auf **[!UICONTROL Bearbeiten]** über die Symbolleiste, um das Asset im Bearbeitungsmodus zu öffnen.
+1. Wählen Sie in der Benutzeroberfläche von [!DNL Assets] ein bereits übersetztes Asset und tippenklicken Sie in der Symbolleiste auf **[!UICONTROL Bearbeiten]**, um das Asset im Bearbeitungsmodus zu öffnen.
 1. Bearbeiten Sie das Asset und speichern Sie die Änderungen.
 1. Führen Sie Schritt 2 bis 14 des Verfahrens [Zu vorhandenem Übersetzungsprojekt hinzufügen](#add-to-existing-translation-project) aus, um die Sprachkopie zu aktualisieren.
-1. Klicken Sie unten im **[!UICONTROL Übersetzungsauftrag]** Kachel. Der Liste der Assets auf der Seite **[!UICONTROL Übersetzungsauftrag]** können Sie den temporären Speicherort der übersetzten Version des Assets entnehmen.
+1. Klicken Sie unten auf der Kachel **[!UICONTROL Übersetzungsauftrag]** auf das Auslassungszeichen. Der Liste der Assets auf der Seite **[!UICONTROL Übersetzungsauftrag]** können Sie den temporären Speicherort der übersetzten Version des Assets entnehmen.
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Aktivieren Sie das Kontrollkästchen neben **[!UICONTROL Titel]**.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Übersetzung akzeptieren]** ![Übersetzung akzeptieren](assets/do-not-localize/thumb-up.png) und klicken Sie anschließend auf **[!UICONTROL Accept]** im Dialogfeld, um das übersetzte Asset im Zielordner mit der übersetzten Version des bearbeiteten Assets zu überschreiben.
+1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Übersetzung annehmen]** ![Übersetzung annehmen](assets/do-not-localize/thumb-up.png) und dann im Dialogfeld auf **[!UICONTROL Annehmen]**, um das übersetzte Asset im Zielordner mit der übersetzten Version des bearbeiteten Assets zu überschreiben.
 
    >[!NOTE]
    >
    >Damit der Übersetzungs-Workflow die Ziel-Assets aktualisieren kann, akzeptieren Sie sowohl das Asset als auch die Metadaten.
 
-   Klicken **[!UICONTROL Übersetzung ablehnen]** ![Übersetzung ablehnen](assets/do-not-localize/thumb-down.png) , um die ursprünglich übersetzte Version des Assets im Zielgebietsschemastamm beizubehalten und die bearbeitete Version abzulehnen.
+   Klicken Sie auf **[!UICONTROL Übersetzung ablehnen]** ![Übersetzung ablehnen](assets/do-not-localize/thumb-down.png), um die ursprünglich übersetzte Version des Assets im Zielgebietsschema-Stamm beizubehalten und die bearbeitete Version abzulehnen.
 
-1. Um die übersetzten Metadaten anzuzeigen, navigieren Sie zum [!DNL Assets] und öffnen Sie die [!UICONTROL Eigenschaften] für jedes der übersetzten Assets.
+1. Um die übersetzten Metadaten anzuzeigen, gehen Sie zur [!DNL Assets]-Konsole und öffnen Sie die Seite [!UICONTROL Eigenschaften] für jedes der übersetzten Assets.
 
 ## Tipps und Einschränkungen {#tips-limitations}
 
-* Wenn Sie einen Übersetzungs-Workflow für komplexe Assets starten, z. B. PDF und [!DNL Adobe InDesign] -Dateien, deren Teil-Assets oder Ausgabeformate (sofern vorhanden) nicht zur Übersetzung übermittelt werden.
+* Wenn Sie einen Übersetzungs-Workflow für komplexe Assets wie PDF- und [!DNL Adobe InDesign]-Dateien starten, werden ihre Teil-Assets oder Ausgabeformate (sofern vorhanden) nicht zur Übersetzung übermittelt.
 * Wenn Sie maschinelle Übersetzung verwenden, werden die Asset-Binärdateien nicht übersetzt.
