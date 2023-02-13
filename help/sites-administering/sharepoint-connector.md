@@ -1,7 +1,7 @@
 ---
 title: SharePoint-Connector
 seo-title: SharePoint Connector
-description: Day JCR Connector for Microsoft Sharepoint 2010 und Microsoft SharePoint 2013, Version 4.0.
+description: Day JCR Connector for Microsoft SharePoint 2010 und Microsoft SharePoint 2013, Version 4.0.
 seo-description: Learn about the Sharepoint Connector in AEM.
 uuid: df650476-4e2a-486f-a007-b5ac437ff99f
 contentOwner: User
@@ -12,15 +12,15 @@ discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1562'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
 # SharePoint-Connector{#sharepoint-connector}
 
-Dieser Artikel enthält Details zur Adobe JCR Connector für Microsoft SharePoint 2010 und Microsoft SharePoint 2013, Version 4.0.
+Dieser Artikel enthält Details zum Adobe JCR-Connector für Microsoft SharePoint 2010 und Microsoft SharePoint 2013, Version 4.0.
 
 Der SharePoint-Connector unterstützt folgende grundlegenden Funktionen:
 
@@ -34,16 +34,16 @@ Bei der Implementierung aller Funktionen werden die nativen SharePoint-Webdienst
 
 >[!NOTE]
 >
->Der SharePoint-Connector wird auch mit AEM 6.1 Service Pack 2 unterstützt. Die Einbindung virtueller Repositorys wird vom Connector nicht mehr unterstützt, weshalb keine Einbindung möglich ist. Wenn Sie mithilfe von Java-APIs auf das Sharepoint-Repository zugreifen möchten, verwenden Sie die JCR-Repository-Implementierung des SharePoint-Connectors in Ihrem Projekt.
+>Der SharePoint-Connector wird auch mit AEM 6.1 Service Pack 2 unterstützt. Die Einbindung virtueller Repositorys wird vom Connector nicht mehr unterstützt, weshalb keine Einbindung möglich ist. Wenn Sie über Java-APIs auf das SharePoint-Repository zugreifen möchten, verwenden Sie in Ihrem Projekt die JCR-Repository-Implementierung des SharePoint-Connectors.
 >
->Installation, Konfiguration, Verwaltung und IT-Vorgänge der SharePoint Server-Instanz und der dazugehörigen IT-Infrastruktur werden in diesem Dokument nicht behandelt. Siehe Dokumentation zu Anbietern [SharePoint](https://www.microsoft.com/sharepoint) für Informationen zu diesen Themen. Diese Infrastrukturkomponenten müssen ordnungsgemäß installiert, konfiguriert und betrieben werden, damit der Connector verwendet werden kann.
+>Installation, Konfiguration, Verwaltung und IT-Vorgänge der SharePoint-Server-Instanz und der dazugehörigen IT-Infrastruktur werden in diesem Dokument nicht behandelt. Informationen zu diesen Themen finden Sie in der [SharePoint-Dokumentation](https://www.microsoft.com/sharepoint) des Anbieters. Diese Infrastrukturkomponenten müssen ordnungsgemäß installiert, konfiguriert und betrieben werden, damit der Connector verwendet werden kann.
 
 ## Erste Schritte {#getting-started}
 
 Gehen Sie zur Vorbereitung der Connector-Verwendung wie folgt vor:
 
 * Vergewissern Sie sich, dass bei Ihnen mindestens Java 7 installiert ist.
-* Laden Sie die Verteilungsdatei des Connector-Pakets von Software Distribution herunter.
+* Laden Sie die Paketverteilungsdatei für den Connector von Software Distribution herunter.
 * Kopieren Sie eine gültige Datei vom Typ *license.properties* in das Verzeichnis, das die Datei *cq-quickstart-6.4.0.jar* enthält.
 
 * Doppelklicken/-tippen Sie auf die JAR-Datei, um AEM zu starten, oder starten Sie AEM über die Befehlszeile.
@@ -52,7 +52,7 @@ Gehen Sie zur Vorbereitung der Connector-Verwendung wie folgt vor:
 
 ## Installieren des SharePoint-Connectors {#installing-sharepoint-connector}
 
-Der Connector liegt als Inhaltspaket vor und lässt sich ganz einfach installieren. Installieren Sie das Paket mit Package Manager und legen Sie dann die SharePoint-Server-URL und andere Konfigurationsoptionen fest. Der SharePoint-Inhalt steht im AEM-Repository zur Verfügung.
+Der Connector liegt als Inhaltspaket vor und lässt sich ganz einfach installieren. Installieren Sie das Paket über Package Manager und legen Sie anschließend die SharePoint-Server-URL und andere Konfigurationsoptionen fest. Der SharePoint-Inhalt steht im AEM-Repository zur Verfügung.
 
 ### Installationsanforderungen {#installation-requirements}
 
@@ -60,11 +60,11 @@ Für den Connector ist Folgendes erforderlich:
 
 * Java Runtime Environment 1.7 oder höher
 * SharePoint-Webdienste (verfügbar über das Netzwerk)
-* SharePoint Server-URL
+* SharePoint-Server-URL
 * Benutzeranmeldeinformationen und -berechtigungen für CRX- und SharePoint-Repositorys
 * [Unterstützte Plattformen](#supported-platforms)
 
-Der SharePoint-Connector kann über heruntergeladen werden. [Softwareverteilung](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
+Der SharePoint-Connector steht unter [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673) zum Download bereit.
 
 ### Unterstützte Plattformen {#supported-platforms}
 
@@ -83,11 +83,11 @@ Der Connector unterstützt Folgendes:
 
 >[!NOTE]
 >
->Der Connector unterstützt nur Konfigurationen, die offiziell von Microsoft unterstützt werden. Weitere Informationen finden Sie in den Systemanforderungen für [MOSS 2010](https://technet.microsoft.com/en-us/library/cc262485(office.14).aspx) und [MOSS 2013](https://technet.microsoft.com/en-us/library/cc262485.aspx).
+>Der Connector unterstützt nur Konfigurationen, die offiziell von Microsoft unterstützt werden. Weitere Informationen finden Sie in den Systemanforderungen für [MOSS 2010](https://technet.microsoft.com/de-de/library/cc262485(office.14).aspx) und [MOSS 2013](https://technet.microsoft.com/en-us/library/cc262485.aspx).
 
 ### Standardinstallation {#standard-installation}
 
-Softwareverteilung wird verwendet, um Produktfunktionen, Beispiele und Hotfixes zu verteilen. Weitere Informationen finden Sie unter [Dokumentation zur Softwareverteilung](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html#software-distribution).
+Produktfeatures, Beispiele und Hotfixes werden über Software Distribution verteilt. Weitere Informationen finden Sie unter [Dokumentation zu Software Distribution](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html?lang=de#software-distribution).
 
 
 #### Integrieren mit AEM {#integrating-with-aem}
@@ -96,12 +96,12 @@ Gehen Sie zum Installieren des Connector-Inhaltspakets wie folgt vor:
 
 1. Erstellen Sie ein Adobe-Supportticket, um das Connector-Featurepaket anzufordern.
 1. Laden Sie das Paket herunter, wenn es verfügbar ist, und öffnen Sie Package Manager für Ihre AEM-Instanz.
-1. Tippen/klicken **Installieren** von der Paketbeschreibungsseite aus.
-1. Aus dem **Installationspaket** dialog, tippen/klicken **Installieren**.
+1. Tippen/klicken Sie auf der Seite mit der Paketbeschreibung auf **Installieren**.
+1. Tippen/klicken Sie im Dialogfeld **Paket installieren** auf **Installieren**.
 
-   **Hinweis:** Vergewissern Sie sich, dass Sie als Administrator angemeldet sind.
+   **Hinweis:** Vergewissern Sie sich, dass Sie als Admin angemeldet sind.
 
-1. Tippen/klicken Sie bei der Installation des Pakets auf **Schließen**.
+1. Tippen/klicken Sie nach Abschluss der Paketinstallation auf **Schließen**.
 
 ## Konfigurieren des SharePoint-Connectors {#configuring-sharepoint-connector}
 
@@ -111,13 +111,13 @@ Legen Sie die SharePoint Server-URL fest, um Ihr SharePoint-Repository JCR-konf
 
 ### Konfigurieren der Verbindung mit der SharePoint Server-Instanz {#configuring-the-connection-with-the-sharepoint-server}
 
-Führen Sie die folgenden Schritte aus, um die URL der SharePoint Server-Instanz sowie erweiterte Optionen festzulegen:
+Führen Sie die folgenden Schritte aus, um die URL der SharePoint-Server-Instanz sowie erweiterte Optionen festzulegen:
 
 1. Navigieren Sie zur OSGi-Verwaltungskonsole: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
-1. Suchen Sie nach **Day JCR Connector für Microsoft Sharepoint** Bundle.
+1. Suchen Sie nach dem Bundle **Day JCR Connector for Microsoft Sharepoint**.
 1. Bearbeiten der Konfigurationswerte.
 1. Legen Sie den Wert von **Workspaces** auf die SharePoint Server-URL fest.
-1. Tippen/Klicken Sie auf **Speichern**.
+1. Tippen oder klicken Sie auf **Speichern**.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -125,20 +125,18 @@ Parameter „Workspaces“ und „Name des Standard-Workspace“:
 
 Standardmäßig macht der Connector einen einzelnen JCR-Workspace verfügbar. Die SharePoint Server-Instanz, die durch diesen Workspace verfügbar gemacht wird, wird mithilfe des Konfigurationsparameters „SharePoint Server-URL“ festgelegt.
 
-Der Connector kann auch für mehrere Workspaces konfiguriert werden. In diesem Fall werden die einzelnen Workspaces jeweils der URL der SharePoint Server-Instanz zugeordnet, die über den Workspace verfügbar gemacht wird. Einen Workspace können Sie hinzufügen, indem Sie dem Parameter „Workspaces“ eine Workspace-Definition hinzufügen. Eine Workspace-Definition weist folgendes Format auf:
-`<name>`= `<url>` where
-`<name>` ist der Name des JCR-Arbeitsbereichs und
-`<url>` ist die URL des SharePoint-Servers für diesen Arbeitsbereich.
+Der Connector kann auch für mehrere Workspaces konfiguriert werden. In diesem Fall werden die einzelnen Workspaces jeweils der URL der SharePoint Server-Instanz zugeordnet, die über den Workspace verfügbar gemacht wird. Einen Workspace können Sie hinzufügen, indem Sie dem Parameter „Workspaces“ eine Workspace-Definition hinzufügen. Eine Workspace-Definition hat folgendes Format:
+`<name>`= `<url>`. `<name>` ist der Name des JCR-Workspace. `<url>` ist die URL der SharePoint-Server-Instanz für diesen Workspace.
 
-Führen Sie in AEM neben den obigen Konfigurationsschritten noch einen weiteren Schritt aus. Zulassungsliste der **com.day.cq.dam.cq-dam-jcr-connectors**&quot; Bundle.
+Führen Sie in AEM neben den obigen Konfigurationsschritten noch einen weiteren Schritt aus. Zulassungsliste des Bundles **com.day.cq.dam.cq-dam-jcr-connectors**.
 
-Führen Sie die folgenden Schritte aus, um Bundles in AEM Zulassungsliste:
+Gehen Sie wie folgt vor, um in AEM Bundles der Liste hinzuzufügen:
 
-1. Navigieren Sie zur OSGi-Verwaltungskonsole: http://localhost:4502/system/console/configMgr
-1. Suchen Sie nach dem Dienst &quot;Apache Sling Login Admin Whitelist&quot;.
-1. Auswählen **Whitelist umgehen**.
-1. Hinzufügen `com.day.cq.dam.cq-dam-jcr-connectors` in Whitelist Bundles Standard
-1. Klicken Sie auf Speichern.
+1. Navigieren Sie zur OSGi-Verwaltungskonsole: http://localhost:4502/system/console/configMgr.
+1. Suchen Sie nach dem Dienst „Apache Sling Login Admin Whitelist“.
+1. Aktivieren Sie das Kontrollkästchen zur **Umgehung der Whitelist**.
+1. Fügen Sie `com.day.cq.dam.cq-dam-jcr-connectors` unter „Whitelist-Bundles (Standard)“ hinzu.
+1. Klicken Sie auf „Speichern“.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
 
@@ -164,11 +162,11 @@ Gehen Sie wie folgt vor, um die SharePoint-Assets mit AEM zu synchronisieren:
 1. Suchen Sie nach dem Dienst „Default DAMAssetSynchronization“.
 1. Bearbeiten der Konfigurationswerte.
 1. Legen Sie den Benutzernamen und das dazugehörige Kennwort des Benutzers fest, der Zugriff auf die SharePoint-Website hat.
-1. Klicken Sie auf Speichern.
+1. Klicken Sie auf „Speichern“.
 
 Aktivieren des standardmäßig deaktivierten DAM-Synchronisierungsdiensts:
 
-1. Navigieren Sie zu den OSGi Web Console-Komponenten: [http://localhost:4502/system/console/components](http://localhost:4502/system/console/components)
+1. Navigieren Sie zu den Komponenten der OSGi-Web-Konsole: [http://localhost:4502/system/console/component](http://localhost:4502/system/console/components)
 1. Suchen Sie nach „com.day.cq.dam.jcrconnectors.impl.AssetSynchronizationService“.
 1. Klicken Sie auf „Aktivieren“.
 
@@ -178,7 +176,7 @@ Optional: Sie können auch die Synchronisierungsverzögerung zwischen verschiede
 1. Suchen Sie nach „DAY CQ DAM JCR Connector Asset Synchronization Service“.
 1. Bearbeiten der Konfigurationswerte.
 1. Legen Sie den Wert des Synchronisierungszeitraums (in Sekunden) fest.
-1. Klicken Sie auf Speichern.
+1. Klicken Sie auf „Speichern“.
 
 ### Konfigurieren der Authentifizierung {#configuring-authentication}
 
@@ -194,73 +192,73 @@ Somit stehen folgende Authentifizierungsarten zur Verfügung:
 * Anspruchsbasiert/Standard
 * Anspruchs-/formularbasiert
 
-Der AEM JCR Connector für Microsoft SharePoint 2010 und Microsoft SharePoint 2013, Version 4.0. unterstützt eine anspruchsbasierte Authentifizierung (die von Microsoft empfohlen wird), die in folgenden Modi ausgeführt wird:
+Der JCR-Connector für Microsoft SharePoint 2010 und Microsoft SharePoint 2013, Version 4.0, von AEM unterstützt eine anspruchsbasierte Authentifizierung (wie von Microsoft empfohlen), die in folgenden Modi ausgeführt wird:
 
 * **Standard-/NTLM-Authentifizierung:** Der Connector versucht zunächst, unter Verwendung der Standardauthentifizierung eine Verbindung herzustellen. Steht diese Option nicht zur Verfügung, wird die NTLM-basierte Authentifizierung verwendet.
-* **Forms-basierte Authentifizierung**: Sharepoint überprüft Benutzer anhand von Anmeldeinformationen, die Benutzer in ein Anmeldeformular eingeben (normalerweise eine Webseite). Das System gibt für authentifizierte Anforderungen ein Token aus, das einen Schlüssel zur Identitätsfeststellung bei Folgeanforderungen enthält.
+* **Formularbasierte Authentifizierung:** SharePoint validiert Benutzende auf der Grundlage von Anmeldeinformationen, die sie in ein Anmeldeformular (üblicherweise eine Webseite) eingeben. Das System gibt für authentifizierte Anforderungen ein Token aus, das einen Schlüssel zur Identitätsfeststellung bei Folgeanforderungen enthält.
 
 **Konfigurieren der formularbasierten Authentifizierung**
 
-Gehen Sie zu: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
+Navigieren Sie zu: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 
 1. Klicken Sie auf „OSGi“ > „Konfiguration“.
-1. Suchen Sie nach &quot;Day JCR Connector for Microsoft Sharepoint&quot;.
-1. Klicken Sie auf &quot;Konfigurationswerte bearbeiten&quot;.
-1. Legen Sie den Wert von „SharePoint-Verbindungsfactory“ auf „com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory“ fest.
+1. Suchen Sie nach „Day JCR Connector for Microsoft Sharepoint“
+1. Klicken Sie auf „Konfigurationswerte bearbeiten“
+1. Legen Sie den Wert von „SharePoint-Verbindungs-Factory“ auf „com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory“ fest.
 1. Klicken Sie auf **Speichern**.
 
-**Konfigurieren der einfachen Authentifizierung (Windows)**
+**Konfigurieren der Standardauthentifizierung (Windows)**
 
-1. [Deaktivieren Sie die Tokenauthentifizierung.](#disable-token-authentication)
-1. Navigieren Sie zu [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+1. [Deaktivieren Sie die Token-Authentifizierung](#disable-token-authentication).
+1. Navigieren Sie zu: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 1. Klicken Sie auf „OSGi“ > „Konfiguration“.
 1. Suchen Sie nach **Day JCR Connector for Microsoft Sharepoint**.
 1. Klicken Sie auf `Edit the configuration values`.
-1. Legen Sie den Wert für die SharePoint-Verbindungsfactory auf `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory` fest.
+1. Legen Sie den Wert für die SharePoint-Verbindungs-Factory auf `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory` fest.
 1. Klicken Sie auf **Speichern**.
 
 Nur Benutzer, die sowohl in AEM als auch in SharePoint authentifiziert sind, können über den Connector auf den SharePoint-Inhalt zugreifen.
 
 Sie können auch die Connector-Erweiterung zur Authentifizierung verwenden, um ein benutzerdefiniertes Authentifizierungsmodul zu erstellen, das beispielsweise den Zugriff durch AEM-Benutzer bestimmten SharePoint-Benutzern zuordnet. Erstellen Sie AEM-Benutzer, die SharePoint-Benutzern entsprechen (Übereinstimmung von Benutzername und Kennwort), um SharePoint-Inhalt anzeigen zu können, der der Connector-Instanz zugeordnet ist.
 
-So erstellen Sie einen Benutzer in AEM:
+Erstellen von Benutzenden in AEM
 
-1. Melden Sie sich unter http://localhost:9502/ als Administratorbenutzer an.
+1. Melden Sie sich unter http://localhost:9502/ als Admin an.
 1. Klicken Sie auf „Tools“.
 1. Klicken Sie auf „Sicherheit“.
 1. Klicken Sie auf „Benutzer“.
 1. Klicken Sie auf **Benutzer erstellen**.
-1. Geben Sie die Benutzer-ID ein (Benutzername, der Zugriff auf SharePoint hat).
-1. Geben Sie das entsprechende Kennwort an.
-1. Klicken Sie auf das grüne Häkchen-Symbol, um den Benutzer zu erstellen.
+1. Geben Sie die Benutzer-ID (Benutzername einer Benutzerin oder eines Benutzers mit Zugriff auf SharePoint) an.
+1. Geben Sie das entsprechende Passwort an.
+1. Klicken Sie auf das grüne Häkchen, um die Benutzerin oder den Benutzer zu erstellen.
 
 So fügen Sie den Benutzer der Administratorgruppe hinzu:
 
 1. Navigieren Sie zur Gruppenverwaltung..
-1. Klicken Sie auf den Knoten &quot;a&quot;.
-1. Klicken Sie auf &quot;Administratoren&quot;.
-1. Geben Sie die oben erstellte Benutzer-ID in das Textfeld ein, bevor Sie **Durchsuchen** Schaltfläche.
-1. Klicken Sie auf das grüne Häkchen-Symbol, um den Benutzer der Administratorgruppe hinzuzufügen.
+1. Klicken Sie auf den Knoten „a“.
+1. Klicken Sie auf „Administratoren“.
+1. Geben Sie die weiter oben erstellte Benutzer-ID in das Textfeld vor der Schaltfläche **Durchsuchen** ein.
+1. Klicken Sie auf das grüne Häkchen, um die Benutzerin oder den Benutzer der Administratorgruppe hinzuzufügen.
 
-### Deaktivieren der Tokenauthentifizierung {#disable-token-authentication}
+### Deaktivieren der Token-Authentifizierung {#disable-token-authentication}
 
-1. Herunterladen und Installieren des Pakets `basic auth`. `zip` von Softwareverteilung.
+1. Laden Sie das Paket `basic auth`. `zip` aus Software Distribution.
 
 1. Schließen Sie den Schnellstart.
 1. Öffnen Sie die Datei *\crx-quickstart\repository\repository.xml*.
-1. Tag suchen `<LoginModule class="com.day.crx.core.CRXLoginModule"> ... </LoginModule>.`
-1. Tag einfügen `<param name="disableTokenAuth" value="true"/>` innerhalb des in Schritt 4 erwähnten Tags.
+1. Suchen Sie das Tag `<LoginModule class="com.day.crx.core.CRXLoginModule"> ... </LoginModule>.`.
+1. Fügen Sie das Tag `<param name="disableTokenAuth" value="true"/>` in das in Schritt 4 erwähnte Tag ein.
 1. Speichern und schließen Sie die XML-Datei.
-1. Starten Sie QuickStart neu und melden Sie sich mit Ihren Anmeldedaten an.
+1. Starten Sie den Schnellstart neu und melden Sie sich mit Ihren Anmeldeinformationen an.
 
 #### Unterstützen verschiedener Authentifizierungsmethoden der SharePoint Server-Instanz {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-In der Standardversion unterstützt der Connector die **Windows**-IIS-Standardauthentifizierung sowie die formularbasierte Authentifizierung (tokenbasiert). Die [anderen Authentifizierungsmethoden](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) können über den Erweiterbarkeitsmechanismus unterstützt werden.
+In der Standardversion unterstützt der Connector die **Windows**-IIS-Standardauthentifizierung sowie die formularbasierte Authentifizierung (Token-basiert). Die [anderen Authentifizierungsmethoden](https://technet.microsoft.com/de-de/library/cc262350.aspx#section2) können über den Erweiterbarkeitsmechanismus unterstützt werden.
 
 Die folgenden Schritte bieten Richtlinien für die Erweiterung der Standardauthentifizierung, um verschiedene Authentifizierungsmethoden der SharePoint Server-Instanz zu unterstützen:
 
-1. Implementieren Sie `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory` für die Clientseite Ihres spezifischen Authentifizierungsprozesses.
-1. Installieren Sie die `SharepointConnectionFactory` Implementierung als Fragment-Bundle mit Fragmenthost `com.day.crx.spi.crx2sharepoint-bundle`.
+1. Implementieren Sie `com.day.crx.spi.sharepoint.security.SharepointConnectionFactory` für die Client-Seite Ihres spezifischen Authentifizierungsprozesses.
+1. Installieren Sie die Implementierung `SharepointConnectionFactory` als Fragment-Bundle mit dem Fragment-Host `com.day.crx.spi.crx2sharepoint-bundle`.
 
    Passen Sie bei Verwendung von Maven die folgende Konfiguration von `maven-bundle-plugin` an die Anforderungen Ihres Projekts an:
 
@@ -283,6 +281,6 @@ Die folgenden Schritte bieten Richtlinien für die Erweiterung der Standardauthe
               </plugin>
    ```
 
-1. Registrieren Sie die Implementierung `SharepointConnectionFactory` in der Connector-Konfiguration. Klicken Sie im Konfigurationsfenster des Connectors auf **Erweiterte Optionen**. Im für **SharePoint-Verbindungsfactory** -Feld den Namen der Implementierung angeben `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory`.
+1. Registrieren Sie die Implementierung `SharepointConnectionFactory` in der Connector-Konfiguration. Klicken Sie im Konfigurationsfenster des Connectors auf **Erweiterte Optionen**. Geben Sie im Feld **SharePoint-Verbindungs-Factory** den Namen der Implementierung `com.day.crx.spi.sharepoint.auth.CustomConnectionFactory` an.
 
 1. Starten Sie den Connector neu.
