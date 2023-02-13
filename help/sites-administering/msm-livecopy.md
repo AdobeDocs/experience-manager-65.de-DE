@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren kö
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
 source-git-commit: 05dc73448d6902ccdbc92782fff39ef1a6339056
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4171'
 ht-degree: 100%
 
@@ -288,7 +288,7 @@ Synchronisieren Sie eine Live Copy-Seite, um Änderungen von der Quelle per Pul
 
 #### Synchronisieren von Live Copies über Seiteneigenschaften {#synchronize-a-live-copy-from-page-properties}
 
-Synchronisieren Sie eine Live Copy, um Änderungen von der Quelle per Pull auf die Live Copy zu übertragen.
+Synchronisieren Sie eine Live-Kopie, um Änderungen aus der Quelle in die Live-Kopie zu übernehmen.
 
 >[!NOTE]
 >
