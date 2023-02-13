@@ -1,5 +1,5 @@
 ---
-title: SSL unter Windows Vista konfigurieren
+title: Konfigurieren von SSL unter Windows Vista
 seo-title: Configuring SSL on Windows Vista
 description: Erfahren Sie, wie Sie SSL unter Windows Vista konfigurieren.
 seo-description: Learn how to configure SSL on Windows Vista.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 667645a0-53d0-4f9b-a0ba-cc7e366a23a1
 exl-id: 36c4300d-7a44-41f4-b294-06f32bb01686
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '155'
 ht-degree: 100%
 
 ---
 
-# SSL unter Windows Vista konfigurieren {#configuring-ssl-on-windows-vista}
+# Konfigurieren von SSL unter Windows Vista {#configuring-ssl-on-windows-vista}
 
 Zum Konfigurieren von SSL unter Windows Vista™ benötigen Sie ein SSL-Zertifikat mit RSA-Schlüsseln zur Authentifizierung. Sie können das Java-Keytool zum Erstellen des Zertifikats verwenden.
 
