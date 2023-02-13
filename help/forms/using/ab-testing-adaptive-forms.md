@@ -1,5 +1,5 @@
 ---
-title: Erstellen und Verwalten von A/B-Test für adaptive Formulare
+title: Erstellen und Verwalten von A/B-Tests für adaptive Formulare
 seo-title: Create and manage A/B test for adaptive forms
 description: AEM Forms kann mit Adobe Target integriert werden. Dies ermöglicht die Durchführung von A/B-Tests für adaptive Formulare, um das Kundenerlebnis und die Konvertierungsrate zu verbessern.
 seo-description: AEM Forms integrates with Adobe Target that allows running A/B tests for adaptive forms to enhance customer experience and improve conversion rates.
@@ -9,8 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
-workflow-type: tm+mt
+exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
+source-git-commit: 45ca98ffb68e1e31e2f45f352e86f5aa1b6f0f00
+workflow-type: ht
 source-wordcount: '1544'
 ht-degree: 100%
 
@@ -51,7 +52,7 @@ Bei der Erstkonfiguration von Target klicken Sie auf **Jetzt konfigurieren**.
 1. Geben Sie Ihre Target-Kontodetails wie Clientcode, E-Mail und Kennwort an.
 1. Wählen Sie **Rest** aus der Dropdownliste „API-Typ“ aus.
 
-1. Klicken Sie auf **Mit Adobe Target verbinden**, um die Verbindung mit Target zu initialisieren. Wenn die Verbindungsherstellung erfolgreich war, wird die Meldung Die Verbindung wurde hergestellt angezeigt. Klicken Sie auf **OK** und dann auf **OK**. Das Target-Konto wird konfiguriert.
+1. Klicken Sie auf **Mit Adobe Target verbinden**, um die Verbindung mit Target zu initialisieren. Wenn die Verbindung erfolgreich hergestellt wurde, wird die Meldung „Verbindung erfolgreich“ angezeigt. Klicken Sie auf **OK** und dann auf **OK**. Das Target-Konto wird konfiguriert.
 
 1. Erstellen Sie ein Target-Framework, wie beschrieben in [Framework hinzufügen](/help/sites-administering/target.md).
 
