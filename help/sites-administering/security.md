@@ -13,9 +13,9 @@ docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
 source-git-commit: 97b0cec1c8091bbc5736bd68bdee257ca423f93e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5454'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -73,13 +73,13 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
   </tr>
   <tr>
    <td><p>anonymous</p> <p> </p> </td>
-   <td>Benutzer</td>
+   <td>User</td>
    <td><p>Konto mit Standardrechten für nicht authentifizierten Zugriff auf eine Instanz. Dieses Konto umfasst standardmäßig minimale Zugriffsrechte.</p> <p>Wenn Sie dieses Konto versehentlich löschen, wird es beim Start neu erstellt. Das Konto kann zwar nicht dauerhaft gelöscht, aber deaktiviert werden.</p> </td>
    <td>Vermeiden Sie es, dieses Konto zu löschen oder zu deaktivieren, da dies die Funktionalität von Autoreninstanzen beeinträchtigen kann. Falls Sie aufgrund von Sicherheitsanforderungen zum Löschen des Kontos gezwungen sind, sollten Sie die Auswirkungen auf Ihr System zunächst ordnungsgemäß testen.</td>
   </tr>
   <tr>
    <td><p>author</p> <p>Standardkennwort: author</p> </td>
-   <td>Benutzer</td>
+   <td>User</td>
    <td><p>Ein Autorenkonto, das zu Schreibvorgängen unter /content berechtigt ist. Es umfasst die Berechtigungen von Mitwirkenden und Surfern.</p> <p>Eine Verwendung als Webmaster ist möglich, da auf die gesamte /content-Struktur zugegriffen werden kann.</p> <p>Hierbei handelt es sich nicht um einen integrierten Benutzer, sondern einen weiteren Geometrixx-Demobenutzer.</p> </td>
    <td><p>Adobe empfiehlt, entweder das Konto vollständig zu löschen oder das Standardkennwort zu ändern.</p> <p>Vorzugsweise sollte dies bei der Installation geschehen, es ist aber auch später möglich.</p> </td>
   </tr>
@@ -87,7 +87,7 @@ In der folgenden Tabelle finden Sie eine Aufstellung der einzelnen Elemente zusa
    <td>administrators</td>
    <td>Gruppe</td>
    <td><p>Gruppe, die allen Mitgliedern Administratorrechte verleiht. Nur das Konto „admin“ ist zum Bearbeiten dieser Gruppe berechtigt.</p> <p>Hat volle Zugriffsrechte.</p> </td>
-   <td>Selbst wenn Sie einen "deny-everyone"auf einem Knoten festlegen, können die Administratoren weiterhin auf den Knoten zugreifen</td>
+   <td>Auch wenn Sie für einen Knoten „Jedem verweigern“ einstellen, können die Admins immer noch auf den Knoten zugreifen</td>
   </tr>
   <tr>
    <td>content-authors</td>
@@ -220,12 +220,12 @@ Zugriffssteuerungslisten setzen sich aus einzelnen Berechtigungen zusammen und d
 >* `/etc/cloudservices`
 >* `/home/users/we-retail`
 >
->Ihr benutzerdefiniertes Programm kann den Zugriff für andere Beziehungen festlegen, z. B.:
+>Ihre benutzerdefinierte Anwendung kann den Zugriff für andere Beziehungen festlegen, z. B.:
 >
 >* `*/social/relationships/friend/*`
 >* oder `*/social/relationships/pending-following/*`.
 >
->Wenn Sie bestimmte ACLs für Communities erstellen, können Mitgliedern, die diesen Communities beitreten, zusätzliche Berechtigungen erteilt werden. Dies kann beispielsweise der Fall sein, wenn Benutzer den Communities unter folgenden Adressen beitreten: `/content/we-retail/us/en/community`
+>Wenn Sie bestimmte ACLs für Communities erstellen, können Mitgliedern, die diesen Communities beitreten, zusätzliche Berechtigungen erteilt werden. Dies könnte z. B. der Fall sein, wenn Benutzende den Communities unter `/content/we-retail/us/en/community` beitreten.
 
 ### Berechtigungsstatus {#permission-states}
 
