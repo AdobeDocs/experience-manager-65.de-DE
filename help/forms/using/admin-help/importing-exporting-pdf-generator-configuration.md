@@ -1,5 +1,5 @@
 ---
-title: PDF Generator-Konfigurationsdateien importieren und exportieren
+title: Importieren und Exportieren der PDF Generator-Konfigurationsdateien
 seo-title: Importing and exporting PDF Generator configuration files
 description: Erfahren Sie, wie Sie PDF Generator-Konfigurationsdateien importieren und exportieren.
 seo-description: Learn how to import and export PDF Generator configuration files.
@@ -12,19 +12,19 @@ discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 feature: PDF Generator
 exl-id: b363b23a-29bb-4ea4-a8f2-5ba9fe3c7b27
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '378'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# PDF Generator-Konfigurationsdateien importieren und exportieren {#importing-and-exporting-pdf-generator-configuration-files}
+# Importieren und Exportieren der PDF Generator-Konfigurationsdateien {#importing-and-exporting-pdf-generator-configuration-files}
 
 Die Konfigurationsdatei enthält die PDF Generator-Konvertierungsinformationen, einschließlich der PDF-, Dateityp- und Sicherheitseinstellungen.
 
 >[!NOTE]
 >
->Sie können die Zeitlimiteinstellung für PDF Generator nicht durch Importieren einer benutzerdefinierten Datei „native2pdfconfig.xml“ ändern. Die Zeitlimiteinstellung in dieser Datei dient nur zu Informationszwecken und zeigt die aktuelle Einstellung in PDF Generator an. Informationen zum Ändern der Zeitlimiteinstellung finden Sie unter &quot;Festlegen von Leistungsparametern für PDF Generator&quot;unter [Installieren und Bereitstellen von AEM](https://www.adobe.com/go/learn_aemforms_installJBoss_63_de).
+>Sie können die Zeitlimiteinstellung für PDF Generator nicht durch Importieren einer benutzerdefinierten Datei „native2pdfconfig.xml“ ändern. Die Zeitlimiteinstellung in dieser Datei dient nur zu Informationszwecken und zeigt die aktuelle Einstellung in PDF Generator an. Informationen zum Ändern der Zeitlimiteinstellung finden Sie unter „Festlegen von Leistungsparametern in PDF Generator“ unter [Installieren und Bereitstellen von AEM Forms](https://www.adobe.com/go/learn_aemforms_installJBoss_63_de).
 
 ## Eine aktuelle Konfigurationsdatei exportieren {#export-your-current-configuration-file}
 
@@ -38,7 +38,7 @@ Die Konfigurationsdatei enthält die PDF Generator-Konvertierungsinformationen,
 
 1. Klicken Sie auf „Herunterladen“ und speichern Sie die XML-Datei am gewünschten Speicherort.
 
-## Eine Konfigurationsdatei importieren {#import-a-configuration-file}
+## Importieren einer Konfigurationsdatei {#import-a-configuration-file}
 
 >[!NOTE]
 >
