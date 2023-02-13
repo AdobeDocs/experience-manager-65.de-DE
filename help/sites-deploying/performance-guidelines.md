@@ -1,7 +1,7 @@
 ---
 title: Leistungsrichtlinien
 seo-title: Performance Guidelines
-description: Dieser Artikel erhält allgemeine Richtlinien zur Optimierung der Leistung Ihrer AEM-Installation.
+description: Dieser Artikel erhält allgemeine Richtlinien zur Optimierung der Leistung Ihrer AEM-Bereitstellung.
 seo-description: This article provides general guidelines on how to optimize the performance of your AEM deployment.
 uuid: 38cf8044-9ff9-48df-a843-43f74b0c0133
 contentOwner: User
@@ -12,22 +12,22 @@ discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2976'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Leistungsrichtlinien{#performance-guidelines}
 
-Diese Seite erhält allgemeine Richtlinien zur Optimierung der Leistung Ihrer AEM-Installation. Wenn Sie ein neuer AEM-Benutzer sind, gehen Sie die folgenden Seiten durch, bevor Sie diese Leistungsrichtlinien lesen:
+Diese Seite erhält allgemeine Richtlinien zur Optimierung der Leistung Ihrer AEM-Bereitstellung. Wenn Sie ein neuer AEM-Benutzer sind, gehen Sie die folgenden Seiten durch, bevor Sie diese Leistungsrichtlinien lesen:
 
 * [AEM – Grundkonzepte](/help/sites-deploying/deploy.md#basic-concepts)
 * [Überblick über Speicher in AEM](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md)
 * [Technische Anforderungen](/help/sites-deploying/technical-requirements.md)
 
-Nachfolgend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt (Bildlauf zur Ansicht aller Optionen):
+Nachstehend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt (führen Sie einen Bildlauf durch, um alle Optionen anzuzeigen):
 
 <table>
  <tbody>
@@ -83,12 +83,12 @@ Nachfolgend sind die verfügbaren Bereitstellungsoptionen für AEM dargestellt (
    <td><p>RDB/Oracle</p> </td>
    <td><p>S3/Azure</p> </td>
    <td><p>Solr</p> </td>
-   <td><p>iPlamet</p> </td>
+   <td><p>iPlanet</p> </td>
    <td><p>Firefox</p> </td>
    <td><p>Campaign</p> </td>
   </tr>
   <tr>
-   <td><p>Forms</p> </td>
+   <td><p>Formulare</p> </td>
    <td><p>Autor – Abladung</p> </td>
    <td><p>HP-UX</p> </td>
    <td><p>Tomcat </p> </td>
@@ -272,7 +272,7 @@ Die Leistungsrichtlinien sollten in den folgenden Situationen Einsatz finden:
 * **Hinzufügen weiterer Autorknoten**: Wenn die empfohlene TarMK-Topologie die Leistungsanforderungen nicht erfüllt und durch Upsizing des Autorknotens die maximal verfügbare Kapazität erreicht wurde, müssen Sie wissen, welche Leistungsunterschiede im Vergleich zur Nutzung von MongoMK mit drei oder mehr Autorknoten bestehen. Beispielsweise beim Bereitstellen von MongoMK anstatt TarMK.
 * **Hinzufügen weiterer Inhalte**: Wenn die empfohlene Datenspeicherarchitektur Ihre Anforderungen nicht erfüllt, müssen Sie wissen, welche Leistungsunterschiede im Vergleich zu anderen Datenspeicheroptionen bestehen. Beispielsweise bei Verwendung des Amazon S3- oder Microsoft Azure-Datenspeichers anstatt eines Dateidatenspeichers.
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
 Dieses Kapitel gibt einen allgemeinen Überblick über die AEM-Architektur und ihre wichtigsten Komponenten. Darüber hinaus werden Entwicklungsrichtlinien bereitgestellt und Testszenarien beschrieben, die für die TarMK- und MongoMK-Benchmarktests genutzt wurden.
 
@@ -282,17 +282,17 @@ Die AEM-Plattform besteht aus folgenden Komponenten:
 
 ![chlimage_1](assets/chlimage_1a.png)
 
-Weitere Informationen zur AEM finden Sie unter [Was ist AEM](/help/sites-deploying/deploy.md#what-is-aem).
+Weitere Informationen zur AEM-Plattform finden Sie unter [Was ist AEM?](/help/sites-deploying/deploy.md#what-is-aem).
 
 ### Die AEM-Architektur {#the-aem-architecture}
 
-Eine AEM-Bereitstellung umfasst drei wichtige Bausteine. Die **Autoreninstanz**, die von Inhaltsautoren, Redakteuren und Genehmigungsberechtigten zum Erstellen und Überprüfen von Inhalten verwendet wird. Wenn Inhalte genehmigt werden, werden sie auf einem zweiten Instanztyp, der **Veröffentlichungsinstanz** veröffentlicht, über die Endbenutzer auf die Inhalte zugreifen können. Der dritte Baustein ist die **Dispatcher** ist ein Modul, das die Zwischenspeicherung und URL-Filterung verarbeitet und auf dem Webserver installiert ist. Weitere Informationen zur AEM-Architektur finden Sie unter [Typische Bereitstellungsszenarien](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
+Eine AEM-Bereitstellung umfasst drei wichtige Bausteine. Die **Autoreninstanz**, die von Inhaltsautoren, Redakteuren und Genehmigungsberechtigten zum Erstellen und Überprüfen von Inhalten verwendet wird. Wenn Inhalte genehmigt werden, werden sie auf einem zweiten Instanztyp, der **Veröffentlichungsinstanz** veröffentlicht, über die Endbenutzer auf die Inhalte zugreifen können. Der dritte Baustein ist der **Dispatcher**. Dies ist ein Modul für das Caching und die URL-Filterung, das auf dem Webserver installiert ist. Weitere Informationen zur AEM-Architektur finden Sie unter [Typische Bereitstellungsszenarien](/help/sites-deploying/deploy.md#typical-deployment-scenarios).
 
 ![chlimage_1-1](assets/chlimage_1-1a.png)
 
 ### Mikrokernels {#micro-kernels}
 
-Mikrokernels fungieren als Persistenzmanager in AEM. Es gibt drei Arten von Mikrokernels, die mit AEM verwendet werden: TarMK, MongoDB und relationale Datenbank (unter eingeschränkter Unterstützung). Welcher Mikrokernel Ihre Anforderungen erfüllt, hängt vom Zweck Ihrer Instanz und dem Bereitstellungstyp ab. Weitere Informationen zu Mikrokernels finden Sie im [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md) Seite.
+Mikrokernels fungieren als Persistenzmanager in AEM. In AEM werden drei Arten von Mikrokernels verwendet: TarMK, MongoDB und relationale Datenbank (mit eingeschränkter Unterstützung). Welcher Mikrokernel Ihre Anforderungen erfüllt, hängt vom Zweck Ihrer Instanz und dem Bereitstellungstyp ab. Weitere Informationen zu Mikrokernels finden Sie auf der Seite [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
@@ -314,15 +314,15 @@ In AEM können Binärdaten unabhängig von Inhaltsknoten gespeichert werden. Der
 
 Muss eine große Anzahl von Binärdateien verarbeitet werden, wird empfohlen, statt der Standard-Knotenspeicher einen externen Datenspeicher zu verwenden, um die Leistung zu maximieren. Wenn für Ihr Projekt z. B. eine große Anzahl von Medien-Assets erforderlich ist, wird ein schnellerer Zugriff ermöglicht, wenn Sie die Assets im Datei- oder Azure-/S3-Datenspeicher und nicht direkt in einer MongoDB speichern.
 
-Weitere Informationen zu den verfügbaren Konfigurationsoptionen finden Sie unter [Konfigurieren von Knoten und Datenspeichern](/help/sites-deploying/data-store-config.md).
+Weitere Einzelheiten zu den verfügbaren Konfigurationsoptionen finden Sie unter [Konfigurieren von Knotenspeichern und Datenspeichern](/help/sites-deploying/data-store-config.md).
 
 >[!NOTE]
 >
->Adobe empfiehlt folgende Bereitstellungsoption: AEM auf Azure oder Amazon Web Services (AWS) mit Adobe Managed Services. Dadurch profitieren Kunden vom Zugang zu einem Expertenteam, das Erfahrung mit der Bereitstellung und dem Betrieb von AEM in diesen Cloud-Computing-Umgebungen hat. Bitte sehen Sie sich unsere [Zusätzliche Dokumentation zu Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+>Adobe empfiehlt folgende Bereitstellungsoption: AEM auf Azure oder Amazon Web Services (AWS) mit Adobe Managed Services. Dadurch profitieren Kunden vom Zugang zu einem Experten-Team, das Erfahrung mit der Bereitstellung und dem Betrieb von AEM in diesen Cloud-Computing-Umgebungen hat. Weitere Informationen finden Sie in der [zusätzlichen Dokumentation zu Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 >
 >Für die Bereitstellung von AEM auf Azure oder AWS ohne Adobe Managed Services wird dringend empfohlen, direkt mit dem Cloud-Anbieter oder einem unserer Partner, der die Bereitstellung von AEM in der gewünschten Cloud-Umgebung unterstützt, zusammenzuarbeiten. Der ausgewählte Cloud-Anbieter oder Partner ist für die Größenspezifikation, das Design und die Implementierung der von ihm unterstützten Architektur verantwortlich, um Ihre spezifischen Anforderungen an Leistung, Last, Skalierbarkeit und Sicherheit zu erfüllen.
 >
->Weitere Informationen finden Sie unter [technische Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms) Seite.
+>Weitere Informationen finden Sie auch auf der Seite mit den [technischen Anforderungen](/help/sites-deploying/technical-requirements.md#supported-platforms).
 
 ### Suchen {#search-features}
 
@@ -371,7 +371,7 @@ Weitere Einzelheiten zur Entwicklung in AEM finden Sie unter [Entwicklung – G
 >
 >Alle auf dieser Seite gezeigten Benchmarktests wurden in einer Lab-Umgebung durchgeführt.
 
-Die unten beschriebenen Testszenarien werden für die Abschnitte mit den Benchmarktests der Kapitel „TarMK“, „MongoMK“ und „TarMK im Vergleich zu MongoMK“ verwendet. Um zu sehen, welches Szenario für einen bestimmten Benchmarktest verwendet wurde, lesen Sie das Feld Szenario aus dem [Technische Spezifikationen](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) Tabelle.
+Die unten beschriebenen Testszenarien werden für die Abschnitte mit den Benchmarktests der Kapitel „TarMK“, „MongoMK“ und „TarMK im Vergleich zu MongoMK“ verwendet. Um festzustellen, welches Szenario für einen bestimmten Benchmarktest verwendet wurde, sehen Sie im Feld „Szenario“ der Tabelle [Technische Spezifikationen](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) nach.
 
 **Einzelprodukt-Szenario**
 
@@ -392,7 +392,7 @@ AEM Sites und Assets:
 
 Medien:
 
-* Artikelseite lesen (27,4 %), Seite lesen (10,9 %), Sitzung erstellen (2,6 %), Inhaltsseite aktivieren (1,7 %), Inhaltsseite erstellen (0,4 %), Absatz erstellen (4,3 %), Absatz bearbeiten (0,9 %), Bildkomponente (0,9 %), Assets durchsuchen (20 %), Asset-Metadaten lesen (8,5 %), Asset herunterladen (4,2 %), Nach Asset suchen (0, 2 %), Asset-Metadaten aktualisieren (2,4 %), Asset hochladen (1,2 %), Projekt durchsuchen (4,9 %), Projekt lesen (6,6 %), Asset zu Projekt hinzufügen (1,2 %), Site zu Projekt hinzufügen (1,2 %), Projekt erstellen (0,1 %), Autorensuche (0,4 %)
+* Artikelseite lesen (27,4 %), Seite lesen (10,9 %), Sitzung erstellen (2,6 %), Inhaltsseite aktivieren (1,7 %), Inhaltsseite erstellen (0,4 %), Absatz erstellen (4,3 %), Absatz bearbeiten (0,9 %), Bildkomponente (0,9 %), Assets durchsuchen (20 %), Asset-Metadaten lesen (8,5 %), Asset herunterladen (4,2 %), Nach Asset suchen (0,2 %), Asset-Metadaten aktualisieren (2,4 %), Asset hochladen (1,2 %), Projekt durchsuchen (4,9 %), Projekt lesen (6,6 %), Asset zu Projekt hinzufügen (1,2 %), Site zu Projekt hinzufügen (1,2 %), Projekt erstellen (0,1 %), Autorensuche (0,4 %)
 * Ausführungsmodus: gleichzeitige Benutzer, gemischte Interaktion pro Benutzer
 
 ## TarMK {#tarmk}
@@ -401,13 +401,13 @@ Dieses Kapitel enthält allgemeine Leistungsrichtlinien für TarMK sowie die Min
 
 Adobe empfiehlt Kunden, TarMK als Standard-Persistenztechnologie in allen Bereitstellungsszenarien zu verwenden, sowohl für die Autoren- als auch die Veröffentlichungsinstanz von AEM.
 
-Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarien](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) und [Tar-Speicher](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
+Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarien](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) und [TAR-Speicher](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
 
 ### Mindestarchitektur für TarMK – Richtlinien {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
 >
->Die unten angegebenen Richtlinien zur Mindestarchitektur gelten für Produktionsumgebungen und Sites mit einem hohen Traffic-Volumen. Diese **not** die [Mindestanforderungen](/help/sites-deploying/technical-requirements.md#prerequisites) benötigt, um AEM auszuführen.
+>Die unten angegebenen Richtlinien zur Mindestarchitektur gelten für Produktionsumgebungen und Sites mit einem hohen Traffic-Volumen. Es handelt sich hierbei **nicht** um die [Mindestanforderungen](/help/sites-deploying/technical-requirements.md#prerequisites) für die Ausführung von AEM.
 
 Um bei Verwendung von TarMK eine optimale Leistung zu erzielen, sollten Sie als Ausgangspunkt eine Architektur mit folgenden Komponenten nutzen:
 
@@ -431,14 +431,14 @@ Nachfolgend sind die Architekturrichtlinien für AEM Sites und AEM Assets beschr
 
 ### TarMK-Einstellungen – Richtlinien {#tarmk-settings-guideline}
 
-Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie unter [diese Seite anzeigen](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
+Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Weitere Anweisungen zum Ändern der Einstellungen [finden Sie auf dieser Seite](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
 
 <table>
  <tbody>
   <tr>
    <td><strong>Einstellung</strong></td>
    <td><strong>Parameter</strong></td>
-   <td><strong>Wert</strong></td>
+   <td><strong>Wert </strong></td>
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
@@ -496,15 +496,15 @@ Die Benchmarktests wurden für die folgenden Spezifikationen durchgeführt:
 |---|---|
 | Server | Hardware für Bare Metal (HP) |
 | Betriebssystem | RedHat Linux |
-| CPU/Kerne | Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 Kerne |
+| CPU/Kerne | Intel(R) Xeon(R) CPU E5-2407 mit 2,40 GHz, 8 Kerne |
 | RAM | 32 GB |
 | Festplatte | Magnetisch |
 | Java | Oracle JRE Version 8 |
 | JVM-Heap | 16 GB |
 | Produkt | AEM 6.2 |
 | Knotenspeicher | TarMK |
-| Datenspeicher  | Datei DS |
-| Szenario | Einzelprodukt: Assets/30 gleichzeitige Threads |
+| Datenspeicher  | Datei-DS |
+| Szenario | Einzelprodukt: Assets / 30 gleichzeitige Threads |
 
 #### Ergebnisse der Leistungsbenchmarktests {#performance-benchmark-results}
 
@@ -541,14 +541,14 @@ Um bei Verwendung von MongoMK eine optimale Leistung zu erzielen, sollten Sie al
 
 ### MongoMK-Einstellungen – Richtlinien {#mongomk-settings-guidelines}
 
-Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Anweisungen zum Ändern der Einstellungen finden Sie unter [diese Seite anzeigen](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+Um eine optimale Leistung zu erzielen, sollten Sie die nachfolgenden Einstellungsrichtlinien befolgen. Weitere Anweisungen zum Ändern der Einstellungen [finden Sie auf dieser Seite](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
 
 <table>
  <tbody>
   <tr>
    <td><strong>Einstellung</strong></td>
    <td><strong>Parameter</strong></td>
-   <td><strong>Wert (default)</strong></td>
+   <td><strong>Wert (Standard) </strong></td>
    <td><strong>Beschreibung</strong></td>
   </tr>
   <tr>
@@ -606,15 +606,15 @@ Die Benchmarktests wurden für die folgenden Spezifikationen durchgeführt:
 |---|---|---|
 | Server | Hardware für Bare Metal (HP) | Hardware für Bare Metal (HP) |
 | Betriebssystem | RedHat Linux | RedHat Linux |
-| CPU/Kerne | Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 Kerne | Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 Kerne |
+| CPU/Kerne | Intel(R) Xeon(R) CPU E5-2407 mit 2,40 GHz, 8 Kerne | Intel(R) Xeon(R) CPU E5-2407 mit 2,40 GHz, 8 Kerne |
 | RAM | 32 GB | 32 GB |
-| Festplatte | Magnesium - > 1 k IOPS | Magnesium - > 1 k IOPS |
+| Festplatte | Magnetisch – >1k IOPS | Magnetisch – >1k IOPS |
 | Java | Oracle JRE Version 8 | Nicht zutreffend |
 | JVM-Heap | 16 GB | Nicht zutreffend |
 | Produkt | AEM 6.2 | MongoDB 3.2 WiredTiger |
 | Knotenspeicher | MongoMK | Nicht zutreffend |
-| Datenspeicher  | Datei DS | Nicht zutreffend |
-| Szenario | Einzelprodukt: Assets/30 gleichzeitige Threads | Einzelprodukt: Assets/30 gleichzeitige Threads |
+| Datenspeicher  | Datei-DS | Nicht zutreffend |
+| Szenario | Einzelprodukt: Assets / 30 gleichzeitige Threads | Einzelprodukt: Assets / 30 gleichzeitige Threads |
 
 ### Ergebnisse der Leistungsbenchmarktests {#performance-benchmark-results-1}
 
@@ -638,7 +638,7 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
 
 * Wurde speziell für Content-Management-Anwendungen entwickelt
 * Dateien sind immer konsistent und können mit einem beliebigen dateibasierten Sicherungstool gesichert werden
-* Stellt einen Failover-Mechanismus bereit - siehe [Cold Standby](/help/sites-deploying/tarmk-cold-standby.md) für weitere Details
+* Stellt einen Failover-Mechanismus bereit – weitere Einzelheiten finden Sie unter [Cold Standby](/help/sites-deploying/tarmk-cold-standby.md)
 * Bietet hohe Leistung und zuverlässige Datenspeicherung bei minimalem Betriebsaufwand
 * Niedrige Gesamtbetriebskosten
 
@@ -680,8 +680,8 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   </tr>
   <tr>
    <td>CPU/Kerne</td>
-   <td>Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 Kerne</td>
-   <td>Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 Kerne</td>
+   <td>Intel(R) Xeon(R) CPU E5-2407 mit 2,40 GHz, 8 Kerne</td>
+   <td>Intel(R) Xeon(R) CPU E5-2407 mit 2,40 GHz, 8 Kerne</td>
    <td> </td>
   </tr>
   <tr>
@@ -692,8 +692,8 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   </tr>
   <tr>
    <td>Festplatte</td>
-   <td>Magnesium - &gt; 1 k IOPS</td>
-   <td>Magnesium - &gt; 1 k IOPS</td>
+   <td>Magnetisch – &gt;1k IOPS</td>
+   <td>Magnetisch – &gt;1k IOPS</td>
    <td> </td>
   </tr>
   <tr>
@@ -703,7 +703,7 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
    <td> </td>
   </tr>
   <tr>
-   <td>JVM Heap16GB</td>
+   <td>JVM-Heap 16 GB</td>
    <td>16 GB</td>
    <td>Nicht zutreffend</td>
    <td> </td>
@@ -722,13 +722,13 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   </tr>
   <tr>
    <td>Datenspeicher </td>
-   <td>Datei DS </td>
+   <td>Datei-DS </td>
    <td>Nicht zutreffend</td>
    <td> </td>
   </tr>
   <tr>
    <td>Szenario</td>
-   <td><p><br /> Einzelprodukt: Assets/30 gleichzeitige Threads pro Ausführung</p> </td>
+   <td><p><br /> Einzelprodukt: Assets / 30 gleichzeitige Threads pro Ausführung</p> </td>
    <td> </td>
    <td> </td>
   </tr>
@@ -749,8 +749,8 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
  <tbody>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>Autor-TarMK-Knoten</strong></td>
-   <td><strong>Autorenknoten MongoMK</strong></td>
+   <td><strong>Autoren-TarMK-Knoten</strong></td>
+   <td><strong>Autoren-MongoMK-Knoten</strong></td>
    <td><strong>MongoDB-Knoten</strong></td>
   </tr>
   <tr>
@@ -779,9 +779,9 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   </tr>
   <tr>
    <td>Festplatte</td>
-   <td>SSD - 10.000 IOPS</td>
-   <td>SSD - 10.000 IOPS</td>
-   <td>SSD - 10.000 IOPS</td>
+   <td>SSD – 10.000 IOPS</td>
+   <td>SSD – 10.000 IOPS</td>
+   <td>SSD – 10.000 IOPS</td>
   </tr>
   <tr>
    <td>Java</td>
@@ -790,7 +790,7 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
    <td>Nicht zutreffend</td>
   </tr>
   <tr>
-   <td>JVM Heap16GB</td>
+   <td>JVM-Heap 16 GB</td>
    <td>30 GB</td>
    <td>30 GB</td>
    <td>Nicht zutreffend</td>
@@ -809,13 +809,13 @@ Weitere Einzelheiten zu den Unterschieden zwischen TarMK und MongoMK finden Sie 
   </tr>
   <tr>
    <td>Datenspeicher </td>
-   <td>Datei DS </td>
-   <td><br /> Datei DS</td>
+   <td>Datei-DS </td>
+   <td><br /> Datei-DS</td>
    <td><br /> Nicht zutreffend</td>
   </tr>
   <tr>
    <td>Szenario</td>
-   <td><p><br /> <br /> Vertikaler Anwendungsfall: Gleichzeitige Medien/2000-Threads</p> </td>
+   <td><p><br /> <br /> Vertikaler Anwendungsfall: Medien / 2000 gleichzeitige Threads</p> </td>
    <td></td>
    <td></td>
   </tr>
@@ -845,7 +845,7 @@ Die auf dieser Seite beschriebenen Richtlinien können wie folgt zusammengefasst
    * Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation aktiviert sein
 
 * Der **Knotenspeicher** sollte auf der lokalen Festplatte und nicht auf einem NAS (Network Attached Storage) gespeichert werden
-* Bei Verwendung von **Amazon S3**:
+* Wenn **Amazon S3** verwendet wird:
 
    * Der Amazon S3-Datenspeicher wird von der Autoren- und Veröffentlichungsschicht gemeinsam verwendet
    * Die Binärdatei-lose Replikation muss aktiviert sein
@@ -855,6 +855,6 @@ Die auf dieser Seite beschriebenen Richtlinien können wie folgt zusammengefasst
 
    * Für die benutzerdefinierten Indizes sollten Lucene-Indizes verwendet werden
 
-* **Die Anpassung des Workflows kann die Leistung erheblich verbessern**, beispielsweise das Entfernen des Videoschritts im Workflow &quot;Asset aktualisieren&quot;, das Deaktivieren von nicht verwendeten Listenern usw.
+* **Durch die Anpassung von Workflows kann die Leistung erheblich gesteigert werden**, z. B. durch Entfernen des Videoschrittes im Workflow „Asset aktualisieren“, Deaktivieren von nicht verwendeten Listenern usw.
 
-Weitere Einzelheiten finden Sie auch auf der Seite [Empfohlen Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
+Weitere Einzelheiten finden Sie auch auf der Seite [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
