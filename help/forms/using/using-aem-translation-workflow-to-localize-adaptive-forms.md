@@ -1,5 +1,5 @@
 ---
-title: Verwenden von AEM-Übersetzungs-Workflow zum Lokalisieren von adaptiven Formularen und DoR
+title: Verwenden des Übersetzungs-Workflows von AEM zum Lokalisieren von adaptiven Formularen und Datensatzdokumenten
 seo-title: Using AEM translation workflow to localize adaptive forms and document of record
 description: Erfahren Sie, wie Sie AEM-Übersetzungs-Workflows zum Lokalisieren von adaptiven Formularen und DoR verwenden.
 seo-description: Learn to use AEM translation workflows to localize adaptive forms and document of record.
@@ -11,7 +11,7 @@ noindex: true
 feature: Adaptive Forms
 exl-id: ebec03a3-67a0-4ecd-84bb-8580388e048a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '753'
 ht-degree: 100%
 
