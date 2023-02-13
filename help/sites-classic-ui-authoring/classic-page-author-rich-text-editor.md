@@ -8,7 +8,7 @@ discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1801'
 ht-degree: 100%
 
@@ -320,7 +320,7 @@ Zeilen können entweder über oder unter der aktuellen Zeile eingefügt werden.
 
 Die aktuelle Zeile kann außerdem gelöscht werden.
 
-#### Spalten hinzufügen oder löschen {#add-or-delete-columns}
+#### Hinzufügen oder Löschen von Spalten {#add-or-delete-columns}
 
 ![cq55_rte_columns](assets/cq55_rte_columns.png)
 
@@ -328,20 +328,20 @@ Spalten können entweder links oder rechts von der aktuellen Spalte eingefügt w
 
 Die aktuelle Spalte kann außerdem gelöscht werden.
 
-#### Ganze Zeilen oder Spalten auswählen {#selecting-entire-rows-or-columns}
+#### Auswählen ganzer Zeilen oder Spalten {#selecting-entire-rows-or-columns}
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
 Dadurch wird die gesamte Zeile bzw. Spalte ausgewählt. Dann sind bestimmte Aktionen (z. B. „Zusammenführen“) verfügbar.
 
-#### Zellen verbinden {#merge-cells}
+#### Zusammenführen von Zellen {#merge-cells}
 
 ![cq55_rte_cellmerge](assets/cq55_rte_cellmerge.png) ![cq55_rte_cellmerge-1](assets/cq55_rte_cellmerge-1.png)
 
 * Wenn Sie eine Gruppe von Zellen ausgewählt haben, können Sie sie zu einer einzigen Zelle zusammenführen.
 * Wenn Sie nur eine Zelle ausgewählt haben, können Sie diese Zelle mit der Zelle rechts davon oder der Zelle unterhalb davon zusammenführen.
 
-#### Zellen teilen {#split-cells}
+#### Teilen von Zellen {#split-cells}
 
 ![cq55_rte_cellsplit](assets/cq55_rte_cellsplit.png)
 
