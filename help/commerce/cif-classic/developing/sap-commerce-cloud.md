@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2308'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -40,9 +40,9 @@ Eine Reihe vorkonfigurierter AEM-Komponenten wird zur Verwendung der Integration
 * Warenkorb
 * Kasse
 
-Für die Suche wird ein Integrations-Hook bereitgestellt, mit dem Sie die AEM, die Suche nach dem E-Commerce-System, eine Suche nach einem Drittanbieter oder eine Kombination daraus verwenden können.
+Für die Suche ist ein Integrations-Hook verfügbar, mit dem Sie die Suchfunktion von AEM, des eCommerce-Systems oder eines Drittanbieters separat oder in Kombination verwenden können.
 
-## Auswählen der eCommerce-Engine {#ecommerce-engine-selection}
+## Auswahl der eCommerce-Engine {#ecommerce-engine-selection}
 
 Das eCommerce-Framework kann mit einer beliebigen eCommerce-Lösung verwendet werden, allerdings muss die verwendete Engine von AEM identifizierbar sein:
 
