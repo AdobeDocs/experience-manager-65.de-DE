@@ -1,5 +1,5 @@
 ---
-title: Designanpassung
+title: Design-Anpassung
 seo-title: Theme Customization
 description: Anpassen des Themas an Ihre AEM Forms-App.
 seo-description: How to customize the theme of your AEM Forms app.
@@ -11,13 +11,13 @@ topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
 source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '223'
 ht-degree: 100%
 
 ---
 
-# Designanpassung {#theme-customization}
+# Design-Anpassung {#theme-customization}
 
 Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein unverwechselbares, organisationsspezifisches Erscheinungsbild zu geben. Sie können beispielsweise die Hintergrundfarbe und die Höhe von Aufgaben bzw. Startpunkten ändern. Folgendes Beispiel enthält hierzu Anweisungen:
 
