@@ -12,9 +12,9 @@ discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '781'
-ht-degree: 63%
+ht-degree: 100%
 
 ---
 
@@ -115,13 +115,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 
 ### Testen neuer Dienste {#testing-the-new-service}
 
-Wenn Sie die Website-Administrationskonsole öffnen und durch Ihre Website navigieren, gibt der Browser einen AJAX-Aufruf aus, um das JSON-Objekt zu erhalten, das zum Erstellen der Konsole verwendet wird. Wenn Sie beispielsweise zum `/content/geometrixx` -Ordner, wird die folgende Anfrage an den AEM-Server gesendet, um die Konsole zu erstellen:
+Wenn Sie die Website-Administrationskonsole öffnen und durch Ihre Website navigieren, gibt der Browser einen AJAX-Aufruf aus, um das JSON-Objekt zu erhalten, das zum Erstellen der Konsole verwendet wird. Wenn Sie beispielsweise zum Ordner `/content/geometrixx` navigieren, wird die folgende Anforderung an den AEM-Server gesendet, um die Konsole zu erstellen:
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Gehen Sie wie folgt vor, um sicherzustellen, dass der neue Dienst nach der Bereitstellung des Bundles, das ihn enthält, ausgeführt wird:
 
-1. Zeigen Sie Ihren Browser auf die folgende URL:
+1. Lassen Sie Ihren Browser auf die folgende URL verweisen:
    [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. Die Antwort sollte die neuen Eigenschaften wie folgt anzeigen:
@@ -130,43 +130,43 @@ Gehen Sie wie folgt vor, um sicherzustellen, dass der neue Dienst nach der Berei
 
 ### Anzeigen neuer Spalten {#displaying-the-new-column}
 
-Der letzte Schritt besteht darin, die Knotenstruktur der Websites-Administrationskonsole so anzupassen, dass die neue Eigenschaft für alle Geometrixx durch Überlagern angezeigt wird. `/libs/wcm/core/content/siteadmin`. Gehen Sie wie folgt vor:
+Der letzte Schritt besteht darin, die Knotenstruktur der Websites-Administrationskonsole so anzupassen, dass die neue Eigenschaft für alle Geometrixx-Seiten durch Überlagerung von `/libs/wcm/core/content/siteadmin` angezeigt wird. Gehen Sie wie folgt vor:
 
-1. Erstellen Sie in CRXDE Lite die Knotenstruktur. `/apps/wcm/core/content` mit Knoten des Typs `sling:Folder` um die Struktur widerzuspiegeln `/libs/wcm/core/content`.
+1. Erstellen Sie in CRXDE Lite die Knotenstruktur `/apps/wcm/core/content` mit Knoten des Typs `sling:Folder`, um die Struktur `/libs/wcm/core/content` widerzuspiegeln.
 
-1. Kopieren Sie den Knoten . `/libs/wcm/core/content/siteadmin` und fügen Sie sie unten ein `/apps/wcm/core/content`.
+1. Kopieren Sie den Knoten `/libs/wcm/core/content/siteadmin` und fügen Sie ihn unter `/apps/wcm/core/content` ein.
 
-1. Kopieren Sie den Knoten . `/apps/wcm/core/content/siteadmin/grid/assets` nach `/apps/wcm/core/content/siteadmin/grid/geometrixx` und ändert seine Eigenschaften:
+1. Kopieren Sie den Knoten `/apps/wcm/core/content/siteadmin/grid/assets` nach `/apps/wcm/core/content/siteadmin/grid/geometrixx` und ändert seine Eigenschaften:
 
    * Entfernen Sie **pageText**.
 
-   * Satz **pathRegex** nach `/content/geometrixx(/.*)?`
-Dadurch wird die Rasterkonfiguration für alle Geometrixx-Websites aktiv.
+   * Legen Sie **pathRegex** auf `/content/geometrixx(/.*)?` fest
+Dadurch wird die Rasterkonfiguration für alle Geometrixx-Websites aktiviert.
 
-   * Satz **storeProxySuffix** nach `.pages.json`
+   * Legen Sie **storeProxySuffix** auf `.pages.json` fest
 
    * Bearbeiten Sie die mehrwertige Eigenschaft **storeReaderFields** und fügen Sie den Wert `starred` hinzu.
 
-   * Um die MSM-Funktion zu aktivieren, fügen Sie die folgenden MSM-Parameter zur Eigenschaft &quot;multiString&quot;hinzu **storeReaderFields**:
+   * Um die MSM-Funktion zu aktivieren, fügen Sie die folgenden MSM-Parameter zu der aus mehreren Zeichenfolgen bestehenden Eigenschaft **storeReaderFields** hinzu:
 
       * **msm:isSource**
       * **msm:isInBlueprint**
       * **msm:isLiveCopy**
 
-1. Hinzufügen einer `starred` node (of type **nt:unstructured**) unten `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` mit den folgenden Eigenschaften:
+1. Fügen Sie einen Knoten `starred` (des Typs **nt:unstructured**) unter `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` mit den folgenden Eigenschaften hinzu:
 
-   * **dataIndex**: `starred` vom Typ String
+   * **dataIndex**: `starred` des Typs „String“
 
-   * **header**: `Starred` vom Typ String
+   * **header**: `Starred` des Typs „String“
 
-   * **xtype**: `gridcolumn` vom Typ String
+   * **xtype**: `gridcolumn` des Typs „String“
 
-1. (optional) Legen Sie die Spalten ab, die nicht angezeigt werden sollen unter `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (optional) Verschieben Sie die Spalten, die Sie nicht anzeigen möchten, per Drag-and-Drop nach `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`.
 
-1. `/siteadmin` ist ein Vanity-Pfad, der standardmäßig auf `/libs/wcm/core/content/siteadmin`.
-So leiten Sie dies zu Ihrer Version von siteadmin auf `/apps/wcm/core/content/siteadmin` Eigenschaft definieren `sling:vanityOrder` , um einen höheren Wert als den für definierten zu haben. `/libs/wcm/core/content/siteadmin`. Der Standardwert lautet 300, also sind alle höheren Werte geeignet.
+1. `/siteadmin` ist ein Vanity-Pfad, der standardmäßig auf `/libs/wcm/core/content/siteadmin` verweist.
+Um diesen an Ihre WebsiteAdmin-Version auf `/apps/wcm/core/content/siteadmin` umzuleiten, definieren Sie die Eigenschaft `sling:vanityOrder` so, dass sie einen höheren Wert aufweist, als auf `/libs/wcm/core/content/siteadmin` definiert. Der Standardwert lautet 300, also sind alle höheren Werte geeignet.
 
-1. Navigieren Sie zur Websites-Administrationskonsole und navigieren Sie zur Geometrixx-Site:
+1. Wechseln Sie zu Websites-Administrationskonsole und navigieren Sie zur folgenden Geometrixx-Website:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
 
 1. Die neue Spalte **Starred** ist nun verfügbar und zeigt benutzerdefinierte Informationen wie folgt an:
@@ -179,4 +179,4 @@ So leiten Sie dies zu Ihrer Version von siteadmin auf `/apps/wcm/core/content/si
 
 ### Beispielpaket {#sample-package}
 
-Das Ergebnis dieses Tutorials finden Sie im Abschnitt [Anpassen der Websites-Administrationskonsole](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) Paket auf Package Share.
+Das Ergebnis dieses Tutorials ist im Paket [Anpassen der Website-Administrationskonsole](https://localhost:4502/crx/packageshare/index.html/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/helper/customizing-siteadmin) bei Package Share verfügbar.
