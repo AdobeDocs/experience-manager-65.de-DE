@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1760'
 ht-degree: 100%
 
@@ -66,7 +66,7 @@ Um Tags zu verwalten, teilen Sie sie in Namespaces ein, prüfen Sie vor der Erst
 
 So greifen Sie auf die Tagging-Konsole zu:
 
-* In der Autoreninstanz:
+* in der Autoreninstanz
 * Melden Sie sich mit Administratorrechten an.
 * Über die globale Navigation:
 
