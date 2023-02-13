@@ -12,7 +12,7 @@ discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
 ht-degree: 100%
 
@@ -166,7 +166,7 @@ Sie können das Konto als
 
    ![](do-not-localize/chlimage_1-3.png)
 
-1. Sie werden zum Bestätigen des Löschvorgangs aufgefordert. Daraufhin wird über eine Meldung bestätigt, dass der Löschvorgang tatsächlich durchgeführt wurde.
+1. Sie werden zum Bestätigen des Löschvorgangs aufgefordert. Daraufhin wird durch eine Meldung bestätigt, dass der Löschvorgang tatsächlich durchgeführt wurde.
 
 ## Gruppenverwaltung {#group-administration}
 
