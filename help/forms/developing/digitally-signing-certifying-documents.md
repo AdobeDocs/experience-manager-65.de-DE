@@ -12,9 +12,9 @@ discoiquuid: 42de04bf-25e4-4478-a411-38671ed871ae
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
 source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '17046'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -657,9 +657,9 @@ Sie können auch angeben, ob eine Sperrprüfung durchgeführt werden soll, mit d
 
 Um eine Sperrprüfung für ein Zertifikat durchzuführen, können Sie mithilfe eines `CRLOptionSpec`-Objekts eine URL zu einem Zertifikatsperrlisten-Server (CRL) angeben. Wenn Sie jedoch eine Sperrprüfung durchführen möchten und keine URL für einen Zertifikatsperrlisten-Server angeben, ruft der Signature-Service die URL aus dem Zertifikat ab.
 
-Anstelle eines CRL-Servers können Sie bei der Sperrprüfung einen OCSP-Server (Online Certificate Status Protocol) verwenden. Normalerweise wird bei Verwendung eines OCSP-Servers im Gegensatz zu einem CRL-Server die Sperrprüfung schneller durchgeführt. (Siehe &quot;Online Certificate Status Protocol&quot; unter [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).
+Anstelle eines CRL-Servers können Sie bei der Sperrprüfung einen OCSP-Server (Online Certificate Status Protocol) verwenden. Normalerweise wird bei Verwendung eines OCSP-Servers im Gegensatz zu einem CRL-Server die Sperrprüfung schneller durchgeführt. (Siehe „Online Certificate Status Protocol“ unter [https://tools.ietf.org/html/rfc2560](https://tools.ietf.org/html/rfc2560).)
 
-Sie können Adobe-Programme und -Services verwenden, um die Reihenfolge zwischen CRL- und OCSP-Server festzulegen, die der Signature-Service verwendet. Wenn beispielsweise in Adobe Programme und Services der OCSP-Server als erster festgelegt wird, wird erst der OCSP-Server überprüft, dann der CRL-Server. (Siehe &quot;Verwalten von Zertifikaten und Berechtigungen mithilfe des Trust Store&quot;in der AAC-Hilfe).
+Sie können Adobe-Programme und -Services verwenden, um die Reihenfolge zwischen CRL- und OCSP-Server festzulegen, die der Signature-Service verwendet. Wenn beispielsweise in Adobe Programme und Services der OCSP-Server als erster festgelegt wird, wird erst der OCSP-Server überprüft, dann der CRL-Server. (Siehe „Verwalten von Zertifikaten und Berechtigungen mithilfe des Trust Store“ in der AAC-Hilfe).
 
 Wenn Sie angeben, dass keine Sperrprüfung durchgeführt werden soll, prüft der Signature-Service nicht, ob das zum Signieren oder Zertifizieren eines Dokuments verwendete Zertifikat widerrufen wurde. Das heißt, die CRL- und OCSP-Serverinformationen werden ignoriert.
 
@@ -1064,7 +1064,7 @@ So signieren Sie mit der Forms- und Signatur-API (Web-Service) ein interaktives 
 Sie können ein PDF-Dokument absichern, indem Sie es mit einem bestimmten Signaturtyp (einer zertifizierten Signatur) zertifizieren. Eine zertifizierte Signatur entscheidet sich wie folgt von einer digitalen Signatur:
 
 * Sie muss die erste, auf das PDF-Dokument angewendete Signatur sein. Das heißt, zum Zeitpunkt, zu dem die zertifizierte Signatur angewendet wird, müssen alle anderen Signaturfelder im Dokument unsigniert sein. In einem PDF-Dokument ist nur eine zertifizierte Signatur zulässig. Wenn Sie ein PDF-Dokument signieren und zertifizieren möchten, müssen Sie es vor dem signieren zertifizieren. Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder digital signieren.
-* Der Autor oder Ersteller des Dokuments kann festlegen, dass das Dokument auf bestimmte Arten modifiziert werden kann, ohne dass die zertifizierte Signatur ungültig wird. Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren im Dokument kann zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, verhindert Acrobat, dass Benutzer das Dokument auf diese Weise ändern. Wenn solche Änderungen vorgenommen werden, etwa durch Verwenden einer anderen Anwendung, wird die zertifizierte Signatur ungültig und Acrobat gibt eine Warnung aus, wenn ein Benutzer das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
+* Der Autor oder Ersteller des Dokuments kann festlegen, dass das Dokument auf bestimmte Arten modifiziert werden kann, ohne dass die zertifizierte Signatur ungültig wird. Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren kann in dem Dokument zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, verhindert Acrobat, dass Benutzer das Dokument auf diese Weise ändern. Wenn solche Änderungen vorgenommen werden, etwa durch Verwenden einer anderen Anwendung, wird die zertifizierte Signatur ungültig und Acrobat gibt eine Warnung aus, wenn ein Benutzer das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
 * Zum Zeitpunkt des Signierens wird das Dokument auf bestimmte Typen von Inhalt überprüft, durch die die Inhalte eines Dokuments mehrdeutig oder irreführend werden könnten. Beispiel: Eine Anmerkung kann Text auf einer Seite verdecken, der für das Verständnis dessen, was zertifiziert wird, wichtig ist. Eine Erläuterung (gültige Beglaubigung) zu solchen Inhalten kann bereitgestellt werden.
 
 Sie können PDF-Dokumente programmgesteuert zertifizieren, indem Sie die Java-API des Signature-Services oder die Signature-Webservice-API verwenden. Beim Zertifizieren eines PDF-Dokuments müssen Sie auf eine Sicherheitsberechtigung verweisen, die im Berechtigungs-Service vorhanden ist. Informationen zu den Sicherheitsberechtigungen finden Sie im Handbuch zum *Installieren und Bereitstellen von AEM Forms* für Ihren Programm-Server.
