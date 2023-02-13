@@ -12,7 +12,7 @@ discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1367'
 ht-degree: 100%
 
@@ -28,7 +28,7 @@ Auf der Seite „Sicherheitseinstellungen“ können Sie die folgenden Aufgaben 
 
 Eine *Sicherheitseinstellung* steuert die Sicherheit und Berechtigungen für Dateien, die mit dieser Sicherheitseinstellung konvertiert werden.
 
-1. Klicken Sie in der Administration Console auf Services > PDF-Generator > Sicherheitseinstellungen.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „PDF Generator“ > „Sicherheitseinstellungen“.
 1. Klicken Sie auf „Neu“ oder auf den Namen einer Sicherheitseinstellung.
 1. Geben Sie auf der Seite „Sicherheitseinstellung“ im Bereich „Neu/Bearbeiten“ die erforderlichen Informationen für die Sicherheitseinstellung ein. (Siehe [Sicherheitseinstellungen](/help/forms/using/admin-help/configuring-file-type-settings.md#configuring-file-type-settings).)
 1. Klicken Sie auf „Speichern“, geben Sie in dem eingeblendeten Dialogfeld einen Namen für die Einstellung ein und klicken Sie auf „OK“.
