@@ -1,5 +1,5 @@
 ---
-title: Servereinstellungen konfigurieren
+title: Konfigurieren der Server-Einstellungen
 seo-title: Configuring Server Settings
 description: 'Auf der Seite „Servereinstellungen“ erhalten Sie Zugriff auf verschiedene Einstellungen für E-Mails, Aufgaben- und Administratorbenachrichtigungen:'
 seo-description: The Server Settings page provides access to email, task notification and administrator notification settings.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2625'
 ht-degree: 100%
 
 ---
 
-# Servereinstellungen konfigurieren {#configuring-server-settings}
+# Konfigurieren der Server-Einstellungen {#configuring-server-settings}
 
 Auf der Seite „Servereinstellungen“ erhalten Sie Zugriff auf verschiedene Einstellungen für den Arbeitsablauf für Formulare:
 
@@ -83,7 +83,7 @@ Um E-Mail-Benachrichtigungen für eine Gruppe zu generieren, müssen Sie in User
 
 >[!NOTE]
 >
->Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
+>Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
 
 ### Erinnerungen für Benutzer oder Gruppen konfigurieren {#configure-reminders-for-users-or-groups}
 
