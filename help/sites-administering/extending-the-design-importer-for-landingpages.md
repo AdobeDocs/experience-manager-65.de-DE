@@ -1,5 +1,5 @@
 ---
-title: Erweitern und Konfigurieren des Design-Import-Tools für Einstiegsseiten
+title: Erweitern und Konfigurieren des Design-Import-Tools für Landing-Pages
 seo-title: Extending and Configuring the Design Importer for Landing Pages
 description: Erfahren Sie, wie Sie den Design Importer für Einstiegsseiten konfigurieren.
 seo-description: Learn how to configure the Design Importer for landing pages.
@@ -12,13 +12,13 @@ discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3503'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# Erweitern und Konfigurieren des Design-Import-Tools für Einstiegsseiten{#extending-and-configuring-the-design-importer-for-landing-pages}
+# Erweitern und Konfigurieren des Design-Import-Tools für Landing-Pages{#extending-and-configuring-the-design-importer-for-landing-pages}
 
 In diesem Abschnitt wird beschrieben, wie Sie den Design Importer für Einstiegsseiten konfigurieren und bei Bedarf erweitern. Das Arbeiten mit Einstiegsseiten nach dem Import wird unter [Einstiegsseiten](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md) erläutert.
 
@@ -28,13 +28,13 @@ Nutzen Sie die folgenden logischen Schritte, um Ihre benutzerdefinierte Komponen
 
 1. Erstellen eines Taghandlers
 
-   * Ein Taghandler ist ein POJO, das HTML-Tags eines bestimmten Typs handelt. Die &quot;Art&quot;von HTML-Tags, die Ihr TagHandler verarbeiten kann, wird über die OSGi-Eigenschaft &quot;tagpattern.name&quot;von TagHandlerFactory definiert. Im Grunde handelt es sich bei der OSGi-Eigenschaft um einen RegEx, der dem Eingabe-HTML-Tag entsprechen sollte, das Sie handeln möchten. Alle verschachtelten Tags würden zum Handling an den Taghandler übergeben werden. Wenn Sie sich z. B. für ein div registrieren, das ein verschachteltes &lt;p>-Tag enthält, wird das &lt;p>-Tag ebenfalls an den Taghandler übermittelt und Sie können entscheiden, wie Sie damit umgehen möchten.
+   * Ein Taghandler ist ein POJO, das HTML-Tags eines bestimmten Typs handelt. Welche Arten von HTML-Tags Ihr TagHandler verarbeiten kann, wird über die OSGi-Eigenschaft „tagpattern.name“ in der TagHandlerFactory definiert. Im Grunde handelt es sich bei der OSGi-Eigenschaft um einen RegEx, der dem Eingabe-HTML-Tag entsprechen sollte, das Sie handeln möchten. Alle verschachtelten Tags würden zum Handling an den Taghandler übergeben werden. Wenn Sie sich z. B. für ein div registrieren, das ein verschachteltes &lt;p>-Tag enthält, wird das &lt;p>-Tag ebenfalls an den Taghandler übermittelt und Sie können entscheiden, wie Sie damit umgehen möchten.
    * Die Oberfläche des Taghandlers ähnelt der Oberfläche eines SAX-Inhaltshandlers. Sie erhält für jedes HTML-Tag SAX-Ereignisse. Als Anbieter eines Taghandlers müssen Sie bestimmte Lebenszyklusmethoden implementieren, die automatisch vom Design-Importer-Framework abgerufen werden.
 
 1. Erstellen Sie die entsprechende TagHandlerFactory.
 
    * Bei der TagHandlerFactory handelt es sich um eine OSGi-Komponente (Singleton), die dafür verantwortlich ist, Instanzen des Taghandlers zu erzeugen.
-   * Ihre Tag-Handler-Factory muss eine OSGi-Eigenschaft namens &quot;tagpattern.name&quot;verfügbar machen, deren Wert mit dem Eingabe-HTML-Tag übereinstimmt.
+   * Ihre TagHandlerFactory muss eine OSGi-Eigenschaft mit dem Namen „tagpattern.name“ bereitstellen, deren Wert mit dem Eingabe-HTML-Tag abgeglichen wird.
    * Wenn mehrere Taghandler mit dem Eingabe-HTML-Tag übereinstimmen, wird jener mit dem höheren Rang gewählt. Der Rang selbst wird in der OSGi-Eigenschaft **service.ranking** angegeben.
    * Die TagHandlerFactory ist eine OSGi-Komponente. Sämtliche Verweise auf den Taghandler müssen über diese Factory erfolgen.
 
@@ -245,7 +245,7 @@ Sie können einen Teil einer zu importierenden Einstiegsseite als „bearbeitbar
 
 #### Click Through-Link {#click-through-link}
 
-Diese CTA-Komponente kann dazu verwendet werden, der Einstiegsseite einen Textlink hinzuzufügen.
+Diese CTA-Komponente kann dazu verwendet werden, der Landingpage einen Text-Link hinzuzufügen.
 
 Unterstützte Eigenschaften
 
@@ -316,9 +316,7 @@ HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier verweist 
 >
 >mit einem verknüpften `css .hasbackground { background-image: pathtoimage }`
 
-### Lead-Formular
-
- {#lead-form}
+### Lead-Formular {#lead-form}
 
 Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen eines Besuchers/Leads zu sammeln. Diese Informationen können gespeichert und später dazu verwendet werden, anhand dieser Informationen effizientes Marketing durchzuführen. Die Informationen enthalten im Allgemeinen Titel, Namen, E-Mail, Geburtsdatum, Adresse, Interessen usw. Sie sind Teil der Gruppe „CTA-Lead-Formular“.
 
@@ -328,8 +326,8 @@ Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen e
 * Mithilfe dieser Komponenten kann der Autor ein eigenständiges Formular entwerfen. Diese Felder entsprechen den Lead-Formular-Feldern. In eigenständigen oder importierten Zip-Anwendungen kann der Benutzer mit den Formularfeldern „cq:form“ oder „cta lead“ weitere Felder hinzufügen und diese seinen Anforderungen entsprechend benennen und entwerfen.
 * Ordnen Sie Formularfelder mithilfe spezifischer vordefinierter Namen für CTA-Lead-Formulare zu, z. B. „firstName“ für den Vornamen in einem Lead-Formular usw.
 * Felder, die nicht dem Lead-Formular zugewiesen sind, werden cq:form-Komponenten zugewiesen: Text, Optionsschalter, Kontrollkästchen, Dropdown, Verborgen, Kennwort.
-* Der Benutzer kann den Titel mithilfe des Tags &quot;label&quot;angeben und die Formatierung mithilfe des Stilattributs &quot;class&quot;bereitstellen (nur für CTA-Lead-Formular-Komponenten verfügbar).
-* Die Dankeseite und die Abonnementliste können als ausgeblendeter Parameter des Formulars (in der index.htm) bereitgestellt oder über die Bearbeitungsleiste von &quot;Start des Lead-Formulars&quot;hinzugefügt/bearbeitet werden.
+* Benutzende können den Titel mit dem Tag „Beschriften“ und Stile mit dem Stilattribut „Klasse“ angeben (nur für CTA-Lead-Formular-Komponenten verfügbar).
+* Die Dankeseite und die Abonnement-Liste können als versteckte Parameter des Formulars (vorhanden in der Datei „index.htm“) bereitgestellt werden oder über die Bearbeitungsleiste von „Start des Lead-Formulars“ hinzugefügt oder bearbeitet werden.
 
    &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
 
@@ -472,7 +470,7 @@ Die Verwendung von CSS-Auswahlen, die den folgenden ähneln, wird bei der Verwen
 Dies liegt daran, dass dem generierten HTML nach dem Import zusätzliche HTML-Elemente wie das &lt;div>-Tag hinzugefügt werden.
 
 * Skripts, die auf einer ähnlichen Struktur basieren, werden ebenfalls nicht für die Verwendung mit Elementen empfohlen, die für die Konvertierung in AEM-Komponenten vorgesehen sind.
-* Verwendung von Stilen auf den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&amp;ast;&quot;> wird nicht empfohlen.
+* Die Verwendung von Stilen in den Markup-Tags für die Komponentenkonvertierung wie &lt;div data-cq-component=&quot;&amp;ast;&quot;> wird nicht empfohlen.
 * Beim Designlayout sollten die Best Practices für das HTML5-Boilerplate befolgt werden. Lesen Sie mehr unter [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
 ## Konfigurieren von OSGi-Modulen {#configuring-osgi-modules}
