@@ -10,7 +10,7 @@ discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3511'
 ht-degree: 100%
 
@@ -201,7 +201,7 @@ Sie können diese Konfigurationsoptionen festlegen, indem Sie eine Dynamic Media
 
 ### Zoom {#zoom}
 
-Die HTML5-Zoom-Komponente zeigt ein größeres Bild an, wenn Sie die Taste + drücken.
+Die HTML5-Zoom-Komponente zeigt ein größeres Bild an, wenn Sie die Taste „+“ drücken.
 
 Das Asset verfügt unten über Zoomwerkzeuge. Wählen Sie **[!UICONTROL +]** zum Vergrößern aus. Wählen Sie **[!UICONTROL -]** zum Verkleinern aus. Durch Auswählen von **[!UICONTROL x]** oder des Pfeils zum Zurücksetzen des Zooms wird das Bild auf die ursprüngliche Größe zurückgesetzt, wie es importiert wurde. Wählen Sie die diagonalen Pfeile aus, um den Vollbildmodus zu aktivieren. Wählen Sie **[!UICONTROL Bearbeiten]** aus, um die Komponente zu konfigurieren. Mit dieser Komponente können Sie die [für alle Dynamic Media Classic (Scene7)-Komponenten gemeinsamen Einstellungen](#settings-common-to-all-scene-components) konfigurieren.
 
@@ -331,9 +331,9 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt Experience Manager stand
 >* Bei [aktivierter sicherer Vorschau](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene) werden die auf Dynamic Media Classic (Scene7) veröffentlichten und nicht veröffentlichten Assets im Dynamic Media Classic (Scene7)-Inhaltsbrowser angezeigt.
 >* Wenn **[!UICONTROL Dynamic Media Classic (Scene7)]** oder das Symbol **[!UICONTROL S7]** nicht als Option im Inhaltsbrowser angezeigt wird, müssen Sie [Dynamic Media Classic (Scene7) für die Verwendung mit Experience Manager konfigurieren](/help/sites-administering/scene7.md).
 >* Für Videos unterstützt der Dynamic Media Classic (Scene7)-Inhaltsbrowser Folgendes:
->   * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
->   * Einzelnes MP4-Video
->   * Einzelnes F4V-Video
+   >   * Adaptive Videosets: Container von allen für die bildschirmübergreifende optimierte Wiedergabe erforderlichen Videoausgabeformaten
+   >   * Einzelnes MP4-Video
+   >   * Einzelnes F4V-Video
 
 
 ### Durchsuchen von Inhalten {#browsing-content-in-the-classic-ui}
