@@ -1,7 +1,7 @@
 ---
-title: Installieren und Konfiguration von Document Services
+title: Installieren und Konfiguration von Dokumentendiensten
 seo-title: Installing and configuring document services
-description: Installieren Sie AEM Forms Document Services, um PDF-Dokumente zu erstellen, zusammenzustellen, zu verteilen, zu archivieren, digitale Signaturen hinzuzufügen, um den Zugriff auf Dokumente zu beschränken, und dekodieren Sie Barcoded Forms.
+description: Installieren Sie AEM Forms-Dokumentendienste, um PDF-Dokumente zu erstellen, zusammenzustellen, zu verteilen, zu archivieren, digitale Signaturen zur Einschränkung des Zugriffs auf Dokumente hinzuzufügen und Formulare mit Barcode zu entschlüsseln..
 seo-description: Install AEM Forms document services to create, assemble, distribute, archive PDF documents, add digital signatures to limit access to documents, and decode barcoded forms.
 uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
@@ -9,16 +9,16 @@ discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
 source-git-commit: 420b7f83939aef548501b4676ddca1ec9fc2aa03
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5530'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
 
-# Installieren und Konfiguration von Document Services {#installing-and-configuring-document-services}
+# Installieren und Konfiguration von Dokumentendiensten {#installing-and-configuring-document-services}
 
-AEM Forms bietet eine Reihe von OSGi-Diensten zum Ausführen verschiedener Vorgänge auf Dokumentebene, z. B. Dienste zum Erstellen, Zusammenstellen, Verteilen und Archivieren von PDF-Dokumenten, Hinzufügen digitaler Signaturen zum Beschränken des Dokumentenzugriffs und Dekodieren von Barcoded Forms. Diese Dienste sind im AEM Forms Add-On-Paket enthalten. Insgesamt werden diese Dienste als Document Services bezeichnet. Die Liste der verfügbaren Document Services und ihre Hauptfunktionen finden Sie nachfolgend:
+AEM Forms bietet eine Reihe von OSGi-Diensten für verschiedene Vorgänge auf Dokumentebene, z. B. Services zum Erstellen, Zusammenstellen, Verteilen und Archivieren von PDF-Dokumenten, Hinzufügen digitaler Signaturen zur Einschränkung des Zugriffs auf Dokumente und Decodieren von Barcode-Formularen. Diese Dienste sind im AEM Forms Add-On-Paket enthalten. Insgesamt werden diese Dienste als Document Services bezeichnet. Die Liste der verfügbaren Document Services und ihre Hauptfunktionen finden Sie nachfolgend:
 
 * **Assembler-Service:** Damit können Sie PDF- und XDP-Dokumente kombinieren, neu anordnen und erweitern sowie Informationen zu PDF-Dokumenten abrufen. Außerdem können Sie damit PDF-Dokumente in PDF/A-Standard konvertieren und validieren sowie PDF-Formulare, XML-Formulare und PDF-Formulare in PDF/A-1b, PDF/A-2b und PDFA/A-3b umwandeln. Weitere Informationen finden Sie unter [Assembler-Service](/help/forms/using/assembler-service.md).
 
@@ -75,10 +75,10 @@ Bevor Sie AEM Forms Document Services installieren und konfigurieren, stellen Si
    * 15 GB temporärer Speicherplatz für Microsoft® Windows-basierte Installationen.
    * 6 GB temporärer Speicherplatz für UNIX-basierte Installationen.
 
-* Die für die Konvertierung von PDF Generator unter Microsoft® Windows und Linux® erforderliche Clientsoftware wird installiert:
+* Die Client-Software, die von PDF Generator für die Konvertierung unter Microsoft® Windows und Linux® benötigt wird, wird installiert:
 
-   * **Microsoft® Windows**: Installieren [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) oder [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator)
-   * **Linux®**: Installieren [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p)
+   * **Microsoft® Windows**: [Microsoft® Office](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) oder [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) installieren
+   * **Linuxx®**: [Apache OpenOffice](/help/forms/using/aem-forms-jee-supported-platforms.md#p-software-support-for-pdf-generator-p) installieren
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Bevor Sie AEM Forms Document Services installieren und konfigurieren, stellen Si
 
 ### Zusätzliche Anforderungen für UNIX-basierte Betriebssysteme {#extrarequirements}
 
-Wenn Sie ein UNIX-basiertes Betriebssystem verwenden, installieren Sie die folgenden 32-Bit-Pakete aus den Installationsmedien des jeweiligen Betriebssystems:
+Wenn Sie ein UNIX-basiertes Betriebssystem verwenden, installieren Sie die folgenden 32-Bit-Pakete über die Installationsmedien des jeweiligen Betriebssystems:
 <table>
  <tbody>
   <tr>
@@ -195,18 +195,18 @@ Konfigurationen, die im Abschnitt „Vorinstallationskonfigurationen“ aufgefü
 
 ### Installieren von Adobe Acrobat und Anwendungen von Drittanbietern {#install-adobe-acrobat-and-third-party-applications}
 
-Wenn Sie den PDF Generator-Dienst verwenden möchten, um native Dateiformate wie Microsoft® Word, Microsoft® Excel, Microsoft® PowerPoint, OpenOffice, WordPerfect X7 und Adobe Acrobat in PDF Documents zu konvertieren, stellen Sie sicher, dass diese Anwendungen auf dem AEM Forms-Server installiert sind.
+Wenn Sie den PDF Generator-Service verwenden, um native Dateiformate wie Microsoft® Word, Microsoft® Excel, Microsoft® PowerPoint, OpenOffice, WordPerfect X7 und Adobe Acrobat in PDF-Dokumente zu konvertieren, stellen Sie sicher, dass diese Programme auf dem AEM Forms-Server installiert sind.
 
 >[!NOTE]
 >
->* Wenn sich Ihr AEM Forms-Server in einer Offline- oder einer sicheren Umgebung befindet und das Internet nicht für die Aktivierung von Adobe Acrobat verfügbar ist, lesen Sie [Offline-Aktivierung](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en) Anweisungen zum Aktivieren solcher Instanzen von Adobe Acrobat.
->* Adobe Acrobat, Microsoft® Word, Excel und Powerpoint sind nur für Microsoft® Windows verfügbar. Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie OpenOffice, um Rich-Text-Dateien und unterstützte Microsoft® Office-Dateien in PDF-Dokumente zu konvertieren.
->* Schließen Sie alle Dialogfelder, die nach der Installation von Adobe Acrobat und Software von Drittanbietern für alle Benutzer angezeigt werden, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
+>* Wenn sich Ihr AEM Forms-Server in einer Offline- oder sicheren Umgebung befindet und das Internet nicht für die Aktivierung von Adobe Acrobat verfügbar ist, befolgen Sie die Anweisungen zum Aktivieren solcher Instanzen von Adobe Acrobat unter [Offline-Aktivierung](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=de).
+>* Adobe Acrobat, Microsoft® Word, Excel und PowerPoint sind nur für Microsoft® Windows verfügbar. Wenn Sie das UNIX-basierte Betriebssystem verwenden, installieren Sie OpenOffice, um Rich-Text-Dateien und unterstützte Microsoft® Office-Dateien in PDF-Dokumente zu konvertieren.
+>* Schließen Sie alle Dialogfelder, die nach der Installation von Adobe Acrobat und Software von Drittanbietern für alle diejenigen Benutzer angezeigt werden, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
 >* Starten Sie die installierte Software mindestens einmal. Schließen Sie alle Dialogfelder für alle Benutzer, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
->* [Überprüfen Sie das Ablaufdatum Ihrer Adobe Acrobat-Seriennummern.](https://helpx.adobe.com/enterprise/kb/volume-license-expiration-check.html) und ein Datum für die Aktualisierung der Lizenz festlegen oder [Ihre Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) auf der Grundlage des Verfallsdatums.
+>* [Überprüfen Sie das Ablaufdatum der Adobe Acrobat-Seriennummern](https://helpx.adobe.com/de/enterprise/kb/volume-license-expiration-check.html) und legen Sie ein Datum für das Aktualisieren der Lizenz fest oder [migrieren Sie die Seriennummer](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) auf der Grundlage des Ablaufdatums.
 
 
-Öffnen Sie nach der Installation von Acrobat Microsoft® Word. Klicken Sie auf der Registerkarte **Acrobat** auf **PDF erstellen** und konvertieren Sie eine auf dem Computer verfügbare .doc- oder .docx-Datei in ein PDF-Dokument. Wenn die Konvertierung erfolgreich war, ist AEM Forms für die Verwendung von Acrobat mit PDF Generator-Dienst bereit.
+Öffnen Sie Microsoft® Word, nachdem Sie Acrobat installiert haben. Klicken Sie auf der Registerkarte **Acrobat** auf **PDF erstellen** und konvertieren Sie eine auf dem Computer verfügbare .doc- oder .docx-Datei in ein PDF-Dokument. Wenn die Konvertierung erfolgreich war, ist AEM Forms für die Verwendung von Acrobat mit PDF Generator-Dienst bereit.
 
 ### Umgebungsvariablen einrichten {#setup-environment-variables}
 
@@ -247,19 +247,19 @@ Legen Sie Umgebungsvariablen für Java Development Kit (32 Bit und 64 Bit), An
 >* Bei allen Umgebungsvariablen und den jeweiligen Pfaden wird zwischen Groß- und Kleinschreibung unterschieden.
 >* JAVA_HOME, JAVA_HOME_32 und Acrobat_PATH (nur Windows) sind erforderliche Umgebungsvariablen.
 >* Die Umgebungsvariable OpenOffice_PATH wird auf den Installationsordner statt auf den Pfad der ausführbaren Datei festgelegt.
->* Richten Sie keine Umgebungsvariablen für Microsoft® Office-Anwendungen wie Word, PowerPoint, Excel und Project oder für AutoCAD ein. Wenn diese Anwendungen auf dem Server installiert sind, startet der Generate PDF-Dienst sie automatisch.
+>* Richten Sie für Microsoft® Office-Programme wie Word, PowerPoint, Excel und Project oder für AutoCAD keine Umgebungsvariablen ein. Wenn diese Anwendungen auf dem Server installiert sind, startet der Generate PDF-Dienst sie automatisch.
 >* Installieren Sie auf UNIX-basierten Plattformen OpenOffice unter dem Benutzer /root. Wenn OpenOffice nicht unter dem Benutzer /root installiert wird, kann der PDF Generator-Dienst OpenOffice-Dokumente nicht in PDF-Dokumente konvertieren. Falls Sie OpenOffice unter einem anderen Benutzer als /root installieren und ausführen müssen, gewähren Sie dem betreffenden Benutzer sudo-Rechte.
 >* Wenn Sie OpenOffice auf einer UNIX-basierten Plattform verwenden, führen Sie den folgenden Befehl aus, um die PATH-Variable festzulegen:
 >
 >  `export OpenOffice_PATH=/opt/openoffice.org4`
 
-### (Nur für IBM® WebSphere®) IBM® SSL-Socketanbieter konfigurieren {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
+### (Nur für IBM® WebSphere®) Konfigurieren des IBM® SSL-Socket-Anbieters {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
 
-Führen Sie die folgenden Schritte aus, um den IBM® SSL-Socketanbieter zu konfigurieren:
+Führen Sie die folgenden Schritte aus, um den IBM® SSL-Socket-Anbieter zu konfigurieren:
 
 1. Erstellen Sie eine Kopie der java.security-Datei. Der Standardspeicherort der Datei lautet `[WebSphere_installation_directory]\Appserver\java_[version]\jre\lib\security`.
-1. Öffnen Sie die kopierte java.security-Datei zur Bearbeitung.
-1. Ändern Sie die standardmäßigen SSL-Socketfabriken so, dass sie die JSSE2-Fabriken anstelle der standardmäßigen IBM® WebSphere®-Fabriken verwenden:
+1. Öffnen Sie die kopierte Datei „java.security“ zur Bearbeitung.
+1. Ändern Sie den Standardwert für SSL-Socket-Factories, um die JSSE2-Factories anstelle der standardmäßigen IBM® WebSphere®-Factories zu verwenden:
 
    **Standardinhalt:**
 
@@ -282,15 +282,15 @@ Führen Sie die folgenden Schritte aus, um den IBM® SSL-Socketanbieter zu konfi
    #ssl.ServerSocketFactory.provider=com.ibm.websphere.ssl.protocol.SSLServerSocketFactory
    ```
 
-1. Damit AEM Forms Server die aktualisierte java.security-Datei verwenden kann, fügen Sie beim Starten des AEM Forms-Servers das folgende Java-Argument hinzu:
+1. Damit der AEM Forms-Server die aktualisierte Datei „java.security“ verwenden kann, fügen Sie beim Starten des AEM Forms-Servers das folgende Java-Argument hinzu:
 
    `-Djava.security.properties= [path of newly created Java.security file].`
 
-### (Nur Windows) Konfigurieren Sie die Dateiblockeinstellungen für Microsoft® Office {#configure-the-file-block-settings-for-microsoft-office}
+### (Nur Windows) Konfigurieren der Dateiblockeinstellungen für Microsoft® Office {#configure-the-file-block-settings-for-microsoft-office}
 
-Ändern Sie die Einstellungen für das Microsoft® Office Trust Center, damit der PDF Generator-Dienst Dateien konvertieren kann, die mit älteren Versionen von Microsoft® Office erstellt wurden.
+Ändern Sie die Einstellungen für das Sicherheitscenter von Microsoft® Office, um den PDF Generator-Service für die Konvertierung von Dateien zu aktivieren, die mit älteren Versionen von Microsoft® Office erstellt wurden.
 
-1. Öffnen Sie eine Microsoft® Office-Anwendung. Zum Beispiel Microsoft® Word. Navigieren Sie zu **[!UICONTROL Datei]** > **[!UICONTROL Optionen]**. Das Dialogfeld „Optionen“ wird angezeigt.
+1. Öffnen Sie eine Microsoft® Office-Anwendung. Beispiel: Microsoft® Word. Navigieren Sie zu **[!UICONTROL Datei]** > **[!UICONTROL Optionen]**. Das Dialogfeld „Optionen“ wird angezeigt.
 
 1. Klicken Sie auf **[!UICONTROL Sicherheitscenter]** und anschließend auf **[!UICONTROL Einstellungen für das Sicherheitscenter]**.
 1. Klicken Sie in den **[!UICONTROL Einstellungen für das Sicherheitscenter]** auf **[!UICONTROL Einstellungen für den Zugriffsschutz]**.
@@ -319,8 +319,8 @@ Sie können Benutzern, die keine Administratoren sind, die Verwendung des PDF Ge
 1. Stellen Sie den Schieberegler auf Nie benachrichtigen ein. Schließen Sie nach Abschluss des Vorgangs das Befehlsfenster und das Fenster für die Systemkonfiguration.
 1. Überprüfen Sie, ob die Registrierungseinstellung für UAC auf 0 (Null) gesetzt ist. Führen Sie die folgenden Schritte zur Überprüfung durch:
 
-   1. Microsoft® empfiehlt, die Registrierung zu sichern, bevor Sie sie ändern. Detaillierte Informationen zu den Schritten erfahren Sie unter [Sichern und Wiederherstellen der Registrierung in Windows](https://support.microsoft.com/de-de/help/322756).
-   1. Öffnen Sie den Microsoft® Windows Registry-Editor. Um den Registrierungs-Editor zu öffnen, gehen Sie zu „Start“ > „Ausführen“, geben Sie regedit ein und klicken Sie auf „OK“.
+   1. Microsoft® empfiehlt, eine Sicherungskopie der Registrierung zu erstellen, bevor Sie sie ändern. Detaillierte Informationen zu den Schritten erfahren Sie unter [Sichern und Wiederherstellen der Registrierung in Windows](https://support.microsoft.com/de-de/help/322756).
+   1. Öffnen Sie den Microsoft® Windows Registrierungs-Editor. Um den Registrierungs-Editor zu öffnen, gehen Sie zu „Start“ > „Ausführen“, geben Sie „regedit“ ein und klicken Sie auf „OK“.
    1. Navigieren Sie zu `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Stellen Sie sicher, dass der Wert EnableLUA auf 0 (null) gesetzt ist. 
    1. Stellen Sie sicher, dass der Wert **EnableLUA** auf 0 (null) gesetzt ist. Wenn der Wert ungleich 0 ist, ändern Sie den Wert auf 0. Schließen Sie den Registrierungseditor.
 
@@ -328,7 +328,7 @@ Sie können Benutzern, die keine Administratoren sind, die Verwendung des PDF Ge
 
 ### (Nur Windows) Deaktivieren des Fehlerberichterstattungsdienstes {#disable-error-reporting-service}
 
-Beim Konvertieren eines Dokuments in eine PDF mithilfe des PDF Generator-Dienstes unter Windows Server meldet Windows Server gelegentlich, dass bei der ausführbaren Datei ein Problem aufgetreten ist und beendet werden muss. Das wirkt sich jedoch nicht auf die PDF-Konvertierung aus, da sie im Hintergrund läuft.
+Beim Konvertieren eines Dokuments in PDF mit dem PDF Generator-Service unter Windows Server zeigt Windows Server gelegentlich die Fehlermeldung an, dass in der ausführbaren Datei ein Problem aufgetreten ist und sie geschlossen werden muss. Das wirkt sich jedoch nicht auf die PDF-Konvertierung aus, da sie im Hintergrund läuft.
 
 Um diesen Fehler zu vermeiden, können Sie den Fehlerbericht deaktivieren. Weitere Informationen zum Deaktivieren der Fehlerberichterstattung finden Sie unter [https://technet.microsoft.com/en-us/library/cc754364.aspx](https://technet.microsoft.com/de-de/library/cc754364.aspx).
 
@@ -358,7 +358,7 @@ Kopieren Sie die Unicode-Schriftart in die folgenden Ordner, so wie es für Ihr 
 
 >[!NOTE]
 >
->* Unter Red Hat® Enterprise Linux® 6.x und höher sind die Schriften &quot;Courier&quot;nicht verfügbar. Laden Sie zum Installieren der Courier-Schriftarten das Archiv font-ibm-type1-1.0.3.zip herunter. Extrahieren Sie das Archiv unter /usr/share/fonts. Erstellen Sie eine symbolische Verknüpfung aus /usr/share/X11/fonts to /usr/share/fonts.
+>* Unter Red Hat® Enterprise Linux® 6.x sind die Courier-Schriftarten nicht verfügbar. Laden Sie zum Installieren der Courier-Schriftarten das Archiv font-ibm-type1-1.0.3.zip herunter. Extrahieren Sie das Archiv unter /usr/share/fonts. Erstellen Sie eine symbolische Verknüpfung aus /usr/share/X11/fonts to /usr/share/fonts.
 >* Löschen Sie alle .lst-Schriftartartencachedateien aus den Ordnern „Html2PdfSvc/bin“ und „/usr/share/fonts“. 
 >* Stellen Sie sicher, dass die Ordner /usr/lib/X11/fonts und /usr/share/fonts vorhanden sind. Wenn die Ordner nicht vorhanden sind, verwenden Sie den Befehl „ln“, um eine symbolische Verknüpfung vom Ordner /usr/share/X11/fonts auf /usr/lib/X11/fonts zu erstellen und eine andere symbolische Verknüpfung von /usr/share/fonts auf /usr/share/X11/fonts. Vergewissern Sie sich außerdem, dass die Courier-Schriftarten unter „/usr/lib/X11/fonts“ verfügbar sind..
 >* Stellen Sie sicher, dass alle Schriftarten (Unicode und Nicht-Unicode) im Ordner /usr/share/fonts or /usr/share/X11/fonts verfügbar sind.
@@ -382,7 +382,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 
    Sie können das Paket auch über den direkten Link herunterladen, der im Artikel [AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) aufgeführt ist.
 
-1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Halten Sie den Server nicht sofort an.** Warten Sie vor dem Beenden des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der `[AEM-Installation-Directory]/crx-quickstart/logs/error`.log und das Protokoll ist stabil.
+1. Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Halten Sie den Server nicht sofort an.** Bevor Sie den AEM Forms-Server stoppen, warten Sie, bis die Meldungen „ServiceEvent REGISTERED“ und „ServiceEvent UNREGISTERED“ nicht mehr in der Datei „`[AEM-Installation-Directory]/crx-quickstart/logs/error`.log“ angezeigt werden und das Protokoll stabil ist.
 
 ## Auf die Installation folgende Konfigurationen {#post-installation-configurations}
 
@@ -398,7 +398,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
    sling.bootdelegation.class.com.rsa.jsafe.provider.JsafeJCE=com.rsa.*
    ```
 
-1. (Nur AIX®) Fügen Sie der Datei sling.properties die folgenden Eigenschaften hinzu:
+1. (Nur AIX®) Fügen Sie die folgenden Eigenschaften zur Datei „sling.properties“ hinzu:
 
    ```shell
    sling.bootdelegation.xerces=org.apache.xerces.*
@@ -413,7 +413,7 @@ AEM Forms-Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. Das 
 
    >[!NOTE]
    >
-   >Die Rechte zur Verwendung von Schriften anderer Anbieter als Adobe unterliegen dem Lizenzvertrag dieser Anbieter von Schriftarten und werden nicht von der Lizenz für die Adobe-Software abgedeckt. Adobe empfiehlt, dass Sie alle Lizenzvereinbarungen, die nicht für die Adobe gelten, überprüfen und sicherstellen, dass Sie diese einhalten, bevor Sie Schriftarten, die nicht zur Adobe gehören, mit der Adobe-Software verwenden, insbesondere was die Verwendung von Schriftarten in einer Serverumgebung betrifft.
+   >Die Rechte zur Verwendung von Schriftarten anderer Anbieter als Adobe unterliegen dem Lizenzvertrag dieser Anbieter von Schriftarten und werden nicht von der Lizenz für die Adobe-Software abgedeckt. Adobe empfiehlt, dass Sie vor der Verwendung von Drittanbieter-Schriften in Verbindung mit Adobe-Software alle relevanten Lizenzverträge der Drittanbieter lesen und dafür sorgen, dass Sie diese Verträge einhalten. Dies gilt insbesondere für die Verwendung von Schriften in einer Server-Umgebung.
    >Starten Sie die AEM Forms-Instanz neu, wenn Sie neue Zeichensätze im Zeichensatzordner installieren.
 
 ### Konfigurieren Sie ein lokales Benutzerkonto zum Ausführen des PDF Generator-Dienstes  {#configure-a-local-user-account-to-run-the-pdf-generator-service}
@@ -422,7 +422,7 @@ Zum Ausführen des PDF Generator-Dienstes ist ein lokales Benutzerkonto erforder
 
 1. Öffnen Sie die Seite [Konfiguration von AEM Forms PDF Generator](http://localhost:4502/libs/fd/pdfg/config/ui.html).
 
-1. Geben Sie auf der Registerkarte **[!UICONTROL Benutzerkonten]** die Anmeldeinformationen für ein lokales Benutzerkonto ein und klicken Sie auf **[!UICONTROL Senden]**. Wenn Sie unter Microsoft® Windows aufgefordert werden, gewähren Sie dem Benutzer Zugriff. Nach erfolgreichem Hinzufügen wird der konfigurierte Benutzer unter dem Abschnitt **[!UICONTROL Ihre Benutzerkonten]** auf der Registerkarte **[!UICONTROL Benutzerkonten]** angezeigt.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Benutzerkonten]** die Anmeldeinformationen für ein lokales Benutzerkonto ein und klicken Sie auf **[!UICONTROL Senden]**. Wenn Microsoft® Windows Sie dazu auffordert, erlauben Sie dem Benutzer den Zugriff. Nach erfolgreichem Hinzufügen wird der konfigurierte Benutzer unter dem Abschnitt **[!UICONTROL Ihre Benutzerkonten]** auf der Registerkarte **[!UICONTROL Benutzerkonten]** angezeigt.
 
 ### Zeitlimiteinstellungen konfigurieren {#configure-the-time-out-settings}
 
@@ -432,7 +432,7 @@ Zum Ausführen des PDF Generator-Dienstes ist ein lokales Benutzerkonto erforder
 
    `jacorb.connection.client.pending_reply_timeout=600000`
 
-1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** >>**[!UICONTROL Werkzeuge]** > **[!UICONTROL Formulare]** > **[!UICONTROL PDF Generator konfigurieren]**. Die Standardeinstellung ist <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
+1. Melden Sie sich bei Ihrer AEM-Autoreninstanz an und navigieren Sie zu **[!UICONTROL Adobe Experience Manager]** >>**[!UICONTROL Werkzeuge]** > **[!UICONTROL Formulare]** > **[!UICONTROL PDF Generator konfigurieren]**. Die Standard-URL ist <http://localhost:4502/libs/fd/pdfg/config/ui.html>.
 
    Öffnen Sie die Registerkarte **[!UICONTROL Allgemeine Konfiguration]** und ändern Sie die Werte der folgenden Felder für Ihre Umgebung:
 
@@ -463,23 +463,23 @@ Zum Ausführen des PDF Generator-Dienstes ist ein lokales Benutzerkonto erforder
 
 ### (Nur Windows) Konfigurieren von Acrobat für den PDF Generator-Service {#configure-acrobat-for-the-pdf-generator-service}
 
-Unter Microsoft® Windows verwendet der PDF Generator-Dienst Adobe Acrobat, um unterstützte Dateiformate in ein PDF-Dokument zu konvertieren. Führen Sie die folgenden Schritte aus, um Adobe Acrobat für den PDF Generator-Dienst zu konfigurieren:
+Unter Microsoft® Windows verwendet der PDF Generator-Service Adobe Acrobat, um unterstützte Dateiformate in PDF-Dokumente zu konvertieren. Führen Sie die folgenden Schritte aus, um Adobe Acrobat für den PDF Generator-Dienst zu konfigurieren:
 
 1. Öffnen Sie Acrobat und wählen Sie **[!UICONTROL Bearbeiten]** > **[!UICONTROL Voreinstellungen]** > **[!UICONTROL Updater]**. Deaktivieren Sie unter „Nach Updates suchen“ die Option **[!UICONTROL Updates automatisch installieren]** und klicken Sie auf **[!UICONTROL OK]**. Schließen Sie Acrobat.
 1. Doppellklicken Sie auf Ihrem System auf ein PDF-Dokument. Beim ersten Start von Acrobat werden die Dialogfelder für Anmeldung, der Begrüßungsbildschirm und die Endbenutzerlizenzvereinbarung (EULA) angezeigt. Schließen Sie die Dialogfelder für alle Benutzer, die für die Verwendung des PDF Generator-Dienstes konfiguriert wurden.
 1. Führen Sie die Stapeldatei des PDF Generator-Dienstprogramms aus, um Acrobat für den PDF Generator-Dienst zu konfigurieren:
 
-   1. Öffnen [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) und laden Sie die `adobe-aemfd-pdfg-common-pkg-[version].zip` aus dem Package Manager.
+   1. Öffnen Sie [AEM Package Manager](http://localhost:4502/crx/packmgr/index.jsp) und laden Sie die Datei `adobe-aemfd-pdfg-common-pkg-[version].zip` aus dem Package Manager herunter.
    1. Entpacken Sie die heruntergeladene .zip-Datei. Öffnen Sie die Eingabeaufforderung mit Administratorrechten.
-   1. Navigieren Sie zum `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`
-   1. Entpacken Sie die `adobe-aemfd-pdfg-common-pkg-[version]`.
+   1. Navigieren Sie zu `[extracted-zip-file]\jcr_root\etc\packages\day\cq60\fd\adobe-aemds-common-pkg-[version]\jcr_root\etc\packages\day\cq60\fd\`.
+   1. Entpacken Sie die Datei `adobe-aemfd-pdfg-common-pkg-[version]`.
    1. Navigieren Sie zum Verzeichnis `[downloaded-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]`. Führen Sie die folgende Stapelverarbeitungsdatei aus:
 
       `Acrobat_for_PDFG_Configuration.bat`
 
       Acrobat ist konfiguriert, um mit dem PDF Generator-Dienst zu laufen.
 
-1. Ausführen [System Readiness Tool (SRT)](#SRT) , um die Installation von Acrobat zu überprüfen.
+1. Führen Sie das [Systembereitschafts-Tool (System Readiness Tool, SRT)](#SRT) aus, um die Installation von Acrobat zu validieren.
 
 ### (Nur Windows) Konfigurieren der primären Route für die Konvertierung von HTML zu PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
@@ -512,12 +512,12 @@ Stellen Sie vor dem Einrichten der Zertifikate Folgendes sicher:
 * Alias für privaten Schlüssel. Sie können den Java-Keytool-Befehl ausführen, um den Alias für den privaten Schlüssel anzuzeigen:
    `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
 
-* Kennwort für KeyStore-Datei. Wenn Sie das Adobe Reader Extensions-Zertifikat verwenden, ist das Keystore-Datei-Kennwort immer dasselbe wie das Kennwort für den privaten Schlüssel.
+* Kennwort für KeyStore-Datei. Wenn Sie das Adobe Reader Extensions-Zertifikat verwenden, ist das Kennwort der Keystore-Datei immer dasselbe wie das Kennwort für den privaten Schlüssel.
 
 Gehen Sie wie folgt vor, um die Zertifikate zu konfigurieren:
 
 1. Melden Sie sich bei der AEM-Autoreninstanz als Administrator an. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
-1. Klicken Sie auf das **[!UICONTROL Namensfeld]** des Benutzerkontos. Die Seite **[!UICONTROL Edit User Settings]** (Benutzereinstellungen bearbeiten) wird geöffnet. Auf der AEM-Authoring-Instanz residieren Zertifikate in einem KeyStore. Wenn Sie noch keinen KeyStore erstellt haben, klicken Sie auf **[!UICONTROL KeyStore erstellen]** und legen Sie ein neues Kennwort für den KeyStore fest. Wenn der Server bereits einen KeyStore enthält, überspringen Sie diesen Schritt.  Wenn Sie das Adobe Reader Extensions-Zertifikat verwenden, ist das Keystore-Datei-Kennwort immer dasselbe wie das Kennwort für den privaten Schlüssel.
+1. Klicken Sie auf das **[!UICONTROL Namensfeld]** des Benutzerkontos. Die Seite **[!UICONTROL Benutzereinstellungen bearbeiten]** wird geöffnet. Auf der AEM-Authoring-Instanz residieren Zertifikate in einem KeyStore. Wenn Sie noch keinen KeyStore erstellt haben, klicken Sie auf **[!UICONTROL KeyStore erstellen]** und legen Sie ein neues Kennwort für den KeyStore fest. Wenn der Server bereits einen KeyStore enthält, überspringen Sie diesen Schritt.  Wenn Sie das Adobe Reader Extensions-Zertifikat verwenden, ist das Keystore-Datei-Kennwort immer dasselbe wie das Kennwort für den privaten Schlüssel.
 1. Auf der Seite **[!UICONTROL Benutzereinstellungen bearbeiten]**, wählen Sie die Registerkarte **[!UICONTROL KeyStore]**. Blenden Sie die Option **[!UICONTROL Add Private Key from Key Store file]** (Privaten Schlüssel aus KeyStore-Datei hinzufügen) ein und geben Sie einen Aliasnamen an. Der Aliasname wird verwendet, um den Reader Extensions-Vorgang durchzuführen.
 1. Um die Zertifikatdatei hochzuladen, klicken Sie auf **[!UICONTROL Select Key Store File]** (KeyStore-Datei auswählen) und laden Sie eine &lt;Dateiname>.pfx-Datei hoch.
 
@@ -581,28 +581,28 @@ Der Assembler-Dienst hängt vom Reader Extension-Dienst, vom Signature-Dienst, v
 
 1. Installieren Sie die fehlenden Bibliotheken manuell.
 
-## System Readiness Tool (SRT) {#SRT}
+## Systembereitschafts-Tool (System Readiness Tool, SRT) {#SRT}
 
-Die [Systembereitschaftstool](#srt-configuration) überprüft, ob der Computer ordnungsgemäß für die Ausführung von PDF Generator-Konvertierungen konfiguriert ist. Das Tool generiert einen Bericht unter dem angegebenen Pfad. So führen Sie das Tool aus:
+Die [Systembereitschafts-Tool](#srt-configuration) überprüft, ob der Computer ordnungsgemäß für die Ausführung von PDF Generator-Konvertierungen konfiguriert ist. Das Tool generiert einen Bericht im angegebenen Pfad. So führen Sie das Tool aus:
 
-1. Öffnen Sie die Eingabeaufforderung und navigieren Sie zum Ordner `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`. 
+1. Öffnen Sie eine Eingabeaufforderung und navigieren Sie zum Ordner `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools`. 
 
 1. Führen Sie in der Eingabeaufforderung den folgenden Befehl aus:
 
    `java -jar forms-srt-[version].jar [Path_of_reports_folder] en`
 
-   Der Befehl generiert einen Bericht und erstellt auch die Datei &quot;srt_config.yaml&quot;. Sie können damit Optionen für das SRT-Tool konfigurieren. Es ist optional, Optionen für das SRT-Tool zu konfigurieren.
+   Der Befehl generiert einen Bericht und erstellt auch die Datei „srt_config.yaml“. Sie können damit Optionen für das SRT-Tool konfigurieren. Das Konfigurieren von Optionen für das SRT-Tool ist optional.
 
    >[!NOTE]
    >
-   >* Wenn das Systembereitschaftswerkzeug meldet, dass die pdfgen.api-Datei nicht im Acrobat-Plug-in-Ordner verfügbar ist, kopieren Sie die pdfgen.api-Datei aus dem Ordner `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` Verzeichnis in `[Acrobat_root]\Acrobat\plug_ins` Verzeichnis.
+   >* Wenn das Systembereitschafts-Tool meldet, dass die Datei „pdfgen.api“ nicht im Ordner der Acrobat-Plug-ins zur Verfügung steht, dann kopieren Sie die Datei „pdfgen.api“ aus dem Verzeichnis `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` in das Verzeichnis `[Acrobat_root]\Acrobat\plug_ins`.
 
 
 1. Navigieren Sie zu `[Path_of_reports_folder]`. Öffnen Sie die Datei SystemReadinessTool.html. Überprüfen Sie den Bericht und beheben Sie die erwähnten Probleme.
 
 ### Konfigurieren von Optionen für das SRT-Tool {#srt-configuration}
 
-Sie können die Datei srt_config.yaml verwenden, um verschiedene Einstellungen für das SRT-Tool zu konfigurieren. Das Format der Datei lautet:
+Sie können die Datei „srt_config.yaml“ verwenden, um verschiedene Einstellungen für das SRT-Tool zu konfigurieren. Die Datei hat folgendes Format:
 
 ```shell
    # =================================================================
@@ -629,25 +629,25 @@ Sie können die Datei srt_config.yaml verwenden, um verschiedene Einstellungen f
    outputDir:
 ```
 
-* **Gebietsschema:** Dies ist ein obligatorischer Parameter. Es unterstützt Englisch(en), Deutsch (de), Französisch (fr) und Japanisch(ja). Der Standardwert ist en. Dies hat keine Auswirkungen auf PDF Generator-Dienste, die auf AEM Forms unter OSGi ausgeführt werden.
-* **aemTempDir:** Dies ist ein optionaler Parameter. Sie gibt den temporären Speicherort von Adobe Experience Manager an.
-* **Benutzer:** Dies ist ein optionaler Parameter. Sie können einen Benutzer angeben, um zu überprüfen, ob der Benutzer über die erforderlichen Berechtigungen und Lese-/Schreibzugriff für Ordner verfügt, die zum Ausführen von PDF Generator erforderlich sind. Wenn kein Benutzer angegeben ist, werden benutzerspezifische Prüfungen übersprungen und im Bericht als fehlgeschlagen angezeigt.
-* **outputDir:** Geben Sie den Speicherort für den SRT-Bericht an. Der Standardspeicherort ist das aktuelle Arbeitsverzeichnis des SRT-Tools.
+* **Gebietsschema**: Dies ist ein obligatorischer Parameter. Unterstützt werden Englisch (en), Deutsch (de), Französisch (fr) und Japanisch (ja). Der Standardwert ist en. Dies wirkt sich nicht auf die PDF Generator-Services aus, die auf AEM Forms unter OSGi ausgeführt werden.
+* **aemTempDir**: Dies ist ein optionaler Parameter. Er gibt den temporären Speicherort von Adobe Experience Manager an.
+* **users**: Dies ist ein optionaler Parameter. Sie können einen Benutzer angeben, um zu überprüfen, ob der Benutzer über die erforderlichen Berechtigungen und Lese-/Schreibzugriff für Ordner verfügt, die zum Ausführen von PDF Generator erforderlich sind. Wenn kein Benutzer angegeben ist, werden benutzerspezifische Prüfungen übersprungen und im Bericht als fehlgeschlagen angezeigt.
+* **outputDir**: Geben Sie den Speicherort für den SRT-Bericht an. Der Standardspeicherort ist das aktuelle Arbeitsverzeichnis des SRT-Tools.
 
 ## Fehlerbehebung
 
-Wenn Probleme auftreten, auch wenn alle vom SRT-Tool gemeldeten Probleme behoben wurden, führen Sie die folgenden Prüfungen durch:
+Wenn Probleme auftreten, selbst nachdem alle vom SRT-Tool gemeldeten Probleme behoben wurden, führen Sie die folgenden Prüfungen durch:
 
-Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass [Systembereitschaftswerkzeug](#SRT) meldet keinen Fehler.
+Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Systembereitschafts-Tool](#SRT) keinen Fehler meldet.
 
 +++ Adobe Acrobat
 
-* Nur sicherstellen [unterstützte Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft® Office (32 Bit) und Adobe Acrobat installiert ist und das Öffnen von Dialogfeldern abgebrochen wird.
+* Stellen Sie sicher, dass nur [unterstützte Versionen](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft® Office (32 Bit) und Adobe Acrobat installiert sind und Dialogfelder, die sich öffnen, abgebrochen werden.
 * Stellen Sie sicher, dass der Adobe Acrobat Update Service deaktiviert ist.
-* Stellen Sie sicher, dass [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) Batch-Datei mit Administratorrechten ausgeführt wurde.
-* Stellen Sie sicher, dass in der PDF-Konfigurationsoberfläche ein PDF Generator-Benutzer hinzugefügt wird.
-* Stellen Sie sicher, dass [Ersetzen eines Tokens auf Prozessebene](#grant-the-replace-a-process-level-token-privilege) -Berechtigung für den PDF Generator-Benutzer hinzugefügt.
-* Stellen Sie sicher, dass Acrobat PDFMaker Office COM Add für Microsoft Office-Anwendungen aktiviert ist.
+* Stellen Sie sicher, dass die Batch-Datei [Acrobat_for_PDFG_Configuration.bat](#configure-acrobat-for-the-pdf-generator-service) mit Administratorrechten ausgeführt wurde.
+* Stellen Sie sicher, dass in der PDF-Konfigurationsoberfläche ein Benutzer von PDF Generator hinzugefügt wird.
+* Stellen Sie sicher, dass für den Benutzer von PDF-Generator die Berechtigung zum [Ersetzen eines Tokens auf Prozessebene](#grant-the-replace-a-process-level-token-privilege) hinzugefügt wurde.
+* Stellen Sie sicher, dass das Acrobat PDFMaker Office COM-Add-In für Microsoft® Office-Anwendungen aktiviert ist.
 
 +++
 
@@ -655,36 +655,36 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass [Systemb
 
 **Microsoft® Windows**
 
-* Stellen Sie sicher, dass 32-Bit [unterstützte Version ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft Office installiert ist und das Öffnen von Dialogfeldern für alle Anwendungen abgebrochen wird.
-* Stellen Sie sicher, dass in der PDF-Konfigurationsoberfläche ein PDF Generator-Benutzer hinzugefügt wird.
-* Stellen Sie sicher, dass der PDF Generator-Benutzer Mitglied der Administratorgruppe ist, und [Ersetzen eines Tokens auf Prozessebene](#grant-the-replace-a-process-level-token-privilege) -Berechtigung für den Benutzer festgelegt ist.
-* Stellen Sie sicher, dass der Benutzer in der Benutzeroberfläche von PDF Generator konfiguriert ist, und führen Sie die folgenden Aktionen aus:
+* Stellen Sie sicher, dass die [unterstützte 32-Bit-Version ](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von Microsoft® Office installiert ist und für keine der Anwendungen Dialogfelder offen sind.
+* Stellen Sie sicher, dass in der PDF-Konfigurationsoberfläche ein Benutzer von PDF Generator hinzugefügt wird.
+* Stellen Sie sicher, dass der PDF Generator-Benutzer Mitglied der Administratorgruppe ist und dass für den Benutzer die Berechtigung zum [Ersetzen eines Tokens auf Prozessebene](#grant-the-replace-a-process-level-token-privilege) besteht.
+* Stellen Sie sicher, dass der Benutzer in der Benutzeroberfläche von PDF Generator konfiguriert ist und die folgenden Aktionen ausführt:
    1. Melden Sie sich mit dem PDF Generator-Benutzer bei Microsoft® Windows an.
-   1. Öffnen Sie Microsoft® Office- oder OpenOffice-Anwendungen und brechen Sie alle Dialogfelder ab.
+   1. Öffnen Sie das Microsoft® Office- oder das OpenOffice-Programm und brechen Sie alle Dialoge ab.
    1. Legen Sie AdobePDF als Standarddrucker fest.
    1. Legen Sie Acrobat als Standardprogramm für PDF-Dateien fest.
-   1. Führen Sie eine manuelle Konvertierung mit den Optionen Datei > Drucken und Acrobat-Band in Microsoft Office-Anwendungen durch und brechen Sie alle Dialogfelder ab.
-   1. Beenden Sie alle Konvertierungsprozesse wie winword.exe, powerpoint.exe und excel.exe.
+   1. Führen Sie in Microsoft® Office-Programmen eine manuelle Konvertierung unter Verwendung der Optionen „Datei“ > „Drucken“ und des Acrobat-Menübands durch und schließen Sie alle Dialogfelder.
+   1. Beenden Sie alle mit der Konvertierung zusammenhängenden Prozesse wie winword.exe, powerpoint.exe und excel.exe.
    1. Starten Sie den AEM Forms-Server neu.
 
 **Linux®**
 
-* Installieren Sie die [unterstützte Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von OpenOffice. AEM Forms unterstützt sowohl 32-Bit- als auch 64-Bit-Versionen. Öffnen Sie nach der Installation alle OpenOffice-Anwendungen, brechen Sie alle Dialogfelder ab und schließen Sie die Anwendungen. Öffnen Sie die Anwendungen erneut und stellen Sie sicher, dass beim Öffnen einer OpenOffice-Anwendung kein Dialogfeld angezeigt wird.
+* Installieren Sie die [unterstützte Version](aem-forms-jee-supported-platforms.md#software-support-for-pdf-generator) von OpenOffice. AEM Forms unterstützt sowohl 32-Bit- als auch 64-Bit-Versionen. Öffnen Sie nach der Installation alle OpenOffice-Programme, schließen Sie alle Dialogfelder und schließen Sie die Programme wieder. Öffnen Sie die Programme erneut und stellen Sie sicher, dass beim Öffnen eines OpenOffice-Programms kein Dialogfeld angezeigt wird.
 
-* Umgebungsvariable erstellen `OpenOffice_PATH` und legen Sie sie so fest, dass sie auf die OpenOffice-Installation verweist. [console](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) oder das dt-Profil (Gerätestruktur).
-* Wenn bei der Installation von OpenOffice Probleme auftreten, stellen Sie sicher, dass [32-Bit-Bibliotheken](#extrarequirements) für die OpenOffice-Installation erforderlich sind, sind verfügbar.
+* Erstellen Sie eine Umgebungsvariable `OpenOffice_PATH` und legen Sie sie so fest, dass sie auf die OpenOffice-Installation verweist, die in der [Konsole](https://linuxize.com/post/how-to-set-and-list-environment-variables-in-linux/) oder dem dt-Profil (Device Tree, Gerätestrukturprofil) festgelegt ist.
+* Sollten bei der Installation von OpenOffice Probleme auftreten, stellen Sie sicher, dass die für die OpenOffice-Installation erforderlichen [32-Bit-Bibliotheken](#extrarequirements) zur Verfügung stehen.
 
 +++
 
-Konvertierungsprobleme beim +++ HTML in PDF
+ +++ Probleme bei der Konvertierung von HTML in PDF
 
 * Stellen Sie sicher, dass Schriftartenordner in der PDF Generator-Konfigurationsoberfläche hinzugefügt werden.
 
 **Linux und Solaris (PhantomJS-Konversionsroute)**
 
-* Stellen Sie sicher, dass die 32-Bit-Bibliothek (libicudata.so.42) für Webkit-basierte HTMLoPDF-Konvertierung und 64-Bit-Bibliotheken (libicudata.so.42 libs) für PhantomJS-basierte HTMLToPDF-Konvertierung verfügbar sind.
+* Stellen Sie sicher, dass die 32-Bit-Bibliothek (libicudata.so.42) für die Webkit-basierte HTMLToPDF-Konvertierung und die 64-Bit-Bibliotheken (libicudata.so.42) für die PhantomJS-basierte HTMLToPDF-Konvertierung verfügbar sind.
 
-* Führen Sie den folgenden Befehl aus, um fehlende Bibliotheken für phantomjs aufzulisten:
+* Um Bibliotheken aufzulisten, die für PhantomJS fehlen, führen Sie den folgenden Befehl aus:
 
    ```
    ldd phantomjs | grep not
@@ -694,7 +694,7 @@ Konvertierungsprobleme beim +++ HTML in PDF
 
 **Linux® und Solaris™ (WebKit-Konvertierungsroute)**
 
-* Stellen Sie sicher, dass die Ordner `/usr/lib/X11/fonts` und `/usr/share/fonts` existieren. Wenn die Verzeichnisse nicht vorhanden sind, erstellen Sie eine symbolische Verknüpfung aus `/usr/share/X11/fonts` nach `/usr/lib/X11/fonts` und eine andere symbolische Verknüpfung von `/usr/share/fonts` nach `/usr/share/X11/fonts`.
+* Stellen Sie sicher, dass die Verzeichnisse `/usr/lib/X11/fonts` und `/usr/share/fonts` existieren. Wenn die Verzeichnisse nicht vorhanden sind, erstellen Sie eine symbolische Verknüpfung von `/usr/share/X11/fonts` zu `/usr/lib/X11/fonts` und eine weitere symbolische Verknüpfung von `/usr/share/fonts` zu `/usr/share/X11/fonts`.
 
    ```
    ln -s /usr/share/fonts /usr/share/X11/fonts
@@ -702,14 +702,14 @@ Konvertierungsprobleme beim +++ HTML in PDF
    ln -s /usr/share/X11/fonts /usr/lib/X11/fonts
    ```
 
-* Stellen Sie sicher, dass IBM-Schriftarten unter &quot;usr/share/fonts&quot;kopiert werden.
-* Stellen Sie sicher, dass die Ghost-Sicherheitslücke glibc auf dem Computer behoben ist. Verwenden Sie Ihren Standard-Paketmanager, um auf die neueste Version von glibc zu aktualisieren. Es enthält eine Fehlerbehebung für Geister.
-* Stellen Sie sicher, dass die neuesten Versionen der 32-Bit-Bibliotheken &quot;curl&quot;, &quot;libcrypto&quot;und &quot;libssl&quot;auf dem System installiert sind. Erstellen von Symlinks `/usr/lib/libcurl.so` (oder libcurl.a für AIX®), `/usr/lib/libcrypto.so` (oder libcrypto.a für AIX®) und `/usr/lib/libssl.so` (oder libssl.a für AIX®), die auf die neuesten Versionen (32 Bit) der jeweiligen Bibliotheken verweist.
+* Stellen Sie sicher, dass IBM-Schriftarten unter „ usr/share/fonts“ kopiert werden.
+* Stellen Sie sicher, dass die Ghost-Schwachstellenbehebung glibc auf dem Rechner verfügbar ist. Verwenden Sie den standardmäßigen Package Manager, um auf die neueste Version von glibc zu aktualisieren. Er schließt eine Ghost-Schwachstellenbehebung ein.
+* Stellen Sie sicher, dass die neuesten Versionen der 32-Bit-Bibliotheken „curl“, „libcrypto“ und „libssl“ auf dem System installiert sind. Erstellen Sie auch Symlinks `/usr/lib/libcurl.so` (bzw. „libcurl.a“ für AIX®), `/usr/lib/libcrypto.so` (bzw. „libcrypto.a“ für AIX®) und `/usr/lib/libssl.so` (bzw. „libssl.a“ für AIX®), die auf die neuesten Versionen (32-Bit-Versionen) der jeweiligen Bibliotheken verweisen.
 
-* Führen Sie die folgenden Schritte für den IBM® SSL-Socket-Provider aus:
-   1. Kopieren Sie die Datei java.security aus `<WAS_Installed_JAVA>\jre\lib\security` an einen beliebigen Speicherort auf Ihrem AEM Forms-Server. Der Standardspeicherort ist Standardspeicherort = `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
+* Führen Sie für den IBM® SSL-Socket-Anbieter die folgenden Schritte aus:
+   1. Kopieren Sie die Datei „java.security“ aus `<WAS_Installed_JAVA>\jre\lib\security` an einen beliebigen Speicherort auf Ihrem AEM Forms-Server. Der Standardspeicherort lautet `<WAS_Installed>\Appserver\java_[version]\jre\lib\security`.
 
-   1. Bearbeiten Sie die Datei java.security am kopierten Speicherort und ändern Sie die standardmäßigen SSL-Socket-Factories mit JSSE2-Factories (verwenden Sie JSSE2-Factories anstelle von WebSphere®).
+   1. Bearbeiten Sie die Datei „java.security“ am kopierten Speicherort und ersetzen Sie die standardmäßigen SSL-Socket-Factories durch JSSE2-Factories (verwenden Sie JSSE2-Factories anstelle von WebSphere®).
 
       Ändern Sie die folgenden standardmäßigen JSSE-Socket-Factories:
 
@@ -735,68 +735,69 @@ Konvertierungsprobleme beim +++ HTML in PDF
 
 +++ PDF Generator (PDFG)-Benutzer kann nicht hinzugefügt werden
 
-* Stellen Sie sicher, dass Microsoft® Visual C++ 2012 x 86 und Microsoft® Visual C++ 2013 x 86 (32-Bit) Redistributable unter Windows installiert sind.
+* Stellen Sie sicher, dass Microsoft® Visual C++ 2012 x86 und Microsoft® Visual C++ 2013 x86 (32-Bit) Redistributable unter Windows installiert sind.
 
 +++
 
-+++Fehler bei Automatisierungstests
++++ Fehler beim Test der Automatisierung
 
-* Führen Sie für Microsoft® Office und OpenOffice mindestens eine manuelle Konvertierung (für jeden Benutzer) durch, um sicherzustellen, dass während der Konvertierung kein Dialogfeld angezeigt wird. Wenn ein Dialogfeld angezeigt wird, wurde es verworfen. Während der automatisierten Konvertierung sollte kein solches Dialogfeld angezeigt werden.
+* Führen Sie für Microsoft® Office und OpenOffice mindestens eine Konvertierung (für jeden Benutzer) manuell durch, um sicherzustellen, dass während der Konvertierung kein Dialogfeld eingeblendet wird. Wenn ein Dialog angezeigt wird, klicken Sie ihn weg. Während der automatisierten Konvertierung sollte kein solcher Dialog angezeigt werden.
 
-* Bevor Sie die Automatisierung in einer AEM Forms-OSGi-Umgebung ausführen, stellen Sie sicher, dass das Testpaket installiert und aktiv ist.
+* Bevor Sie die Automatisierung in einer AEM Forms on OSGi-Umgebung einsetzen, stellen Sie sicher, dass das Testpaket installiert und aktiv ist.
 
 +++
 
-+++ Mehrere Benutzerkonvertierungsfehler
++++ Fehler bei der Konvertierung mehrerer Benutzer
 
-* Überprüfen Sie die Serverprotokolle, um zu überprüfen, ob die Konvertierung für einen bestimmten Benutzer fehlschlägt.(Process Explorer kann Ihnen dabei helfen, den laufenden Prozess für verschiedene Benutzer zu überprüfen.)
+* Überprüfen Sie die Server-Protokolle, um festzustellen, ob die Konvertierung für einen bestimmten Benutzer fehlschlägt.(Process Explorer kann Ihnen dabei helfen, laufende Prozesse für verschiedene Benutzer zu überprüfen.)
 
 * Stellen Sie sicher, dass der für PDF Generator konfigurierte Benutzer über lokale Administratorrechte verfügt.
 
-* Stellen Sie sicher, dass PDF Generator-Benutzer Lese-, Schreib- und Ausführungsberechtigungen für LC-temporäre Benutzer und PDFG-temporäre Benutzer haben.
+* Stellen Sie sicher, dass Benutzer von PDF Generator Lese-, Schreib- und Ausführungsberechtigungen für temporäre LC- und PDFG-Benutzer haben.
 
-* Führen Sie für Microsoft® Office und OpenOffice mindestens eine manuelle Konvertierung (für jeden Benutzer) durch, um sicherzustellen, dass während der Konvertierung kein Dialogfeld angezeigt wird. Wenn ein Dialogfeld angezeigt wird, wurde es verworfen. Während der automatisierten Konvertierung sollte kein solches Dialogfeld angezeigt werden.
+* Führen Sie für Microsoft® Office und OpenOffice mindestens eine Konvertierung (für jeden Benutzer) manuell durch, um sicherzustellen, dass während der Konvertierung kein Dialogfeld eingeblendet wird. Wenn ein Dialog angezeigt wird, klicken Sie ihn weg. Während der automatisierten Konvertierung sollte kein solcher Dialog angezeigt werden.
 
 * Führen Sie eine Beispielkonvertierung durch.
 
 +++
 
-++ + Lizenz für Adobe Acrobat, die auf dem AEM Forms-Server installiert ist, läuft ab
++++Die auf dem AEM Forms-Server installierte Lizenz für Adobe Acrobat läuft ab
 
-* Wenn Sie bereits über eine Adobe Acrobat-Lizenz verfügen und diese abgelaufen ist, [Neueste Version von Adobe Application Manager herunterladen](https://helpx.adobe.com/in/creative-suite/kb/aam-troubleshoot-download-install.html), und migrieren Sie Ihre Seriennummer. Vorher [Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
+* Wenn Sie bereits über eine Adobe-Acrobat-Lizenz verfügen und diese abgelaufen ist, [laden Sie die neueste Version von Adobe Application Manager herunter](https://helpx.adobe.com/de/creative-suite/kb/aam-troubleshoot-download-install.html) und migrieren Sie Ihre Seriennummer. Bevor Sie [Ihre Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number).
 
-   * Verwenden Sie die folgenden Befehle, um prov.xml zu generieren und die vorhandene Installation mithilfe der Datei prov.xml erneut zu erialisieren, anstatt die in [Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) Zahlenartikel.
+   * Verwenden Sie die folgenden Befehle, um die Datei „prov.xml“ zu generieren und die vorhandene Installation mit deren Hilfe erneut zu serialisieren, anstatt der im Artikel [Seriennummer migrieren](https://www.adobe.com/devnet-docs/acrobatetk/tools/AdminGuide/licensing.html#migrating-your-serial-number) vorgeschlagenen Befehle.
 
-          &quot;
+          ```
           
-          adobe_prtk —tool=VolumeSerialize —generate —serial=&lt;serialnum> [—leid=&lt;leid>] [—regsuppress=ss] [—eulasuppress] [—locales=limited list von locales in xx_XX format oder ALL>] [—provfile=&lt;absolute path=&quot;&quot; to=&quot;&quot; prov.xml=&quot;&quot;>]
+          adobe_prtk --tool=VolumeSerialize --generate --serial=&lt;serialnum> [--leid=&lt;LEID>] [--regsuppress=ss] [--eulasuppress] [--locales=limited list of locales in xx_XX format or ALL>] [--provfile=&lt;Absolute path to prov.xml>]
           
-          &quot;
+          ```
       
-   * Serialisieren Sie das Paket mit Volume (Serialisieren Sie die vorhandene Installation mit der Datei prov.xml und der neuen Seriennummer erneut): Führen Sie den folgenden Befehl aus dem Installationsordner von PRTK als Administrator aus, um die bereitgestellten Pakete auf Clientcomputern zu serialisieren und zu aktivieren:
+   * Serialisieren Sie das Paket nach Volumen (serialisieren Sie die vorhandene Installation mit der Datei „prov.xml“ und der neuen Seriennummer erneut): Führen Sie den folgenden Befehl aus dem PRTK-Installationsordner als Administrator aus, um die bereitgestellten Pakete auf Client-Computern zu serialisieren und zu aktivieren:
 
-          &quot;
-          adobe_prtk —tool=VolumeSerialize —provfile=C:\prov.xml -stream
+          ```
+          adobe_prtk --tool=VolumeSerialize --provfile=C:\prov.xml –stream
           
-          &quot;
+          ```
       
-* Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html) , um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
+* Verwenden Sie für Großinstallationen den [Acrobat Customization Wizard](https://www.adobe.com/devnet-docs/acrobatetk/tools/Wizard/index.html), um frühere Versionen von Reader und Acrobat zu entfernen. Passen Sie das Installationsprogramm an und stellen Sie es auf allen Computern in Ihrem Unternehmen bereit.
 
 +++
 
-+++ Der AEM Forms-Server befindet sich in einer Offline- oder einer sicheren Umgebung und es ist kein Internet verfügbar, um Acrobat zu aktivieren.
++++ Der AEM Forms-Server befindet sich in einer Offline- oder einer sicheren Umgebung, und es ist kein Internet verfügbar, um Acrobat zu aktivieren.
 
-* Sie können innerhalb von 7 Tagen nach dem ersten Start Ihres Adobe-Produkts online gehen, um eine Online-Aktivierung und -Registrierung abzuschließen, oder Sie verwenden ein internetfähiges Gerät und die Seriennummer Ihres Produkts, um diesen Vorgang abzuschließen. Detaillierte Anweisungen finden Sie unter [Offline-Aktivierung](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=en).
+* Sie können innerhalb von 7 Tagen nach dem ersten Start Ihres Adobe-Produkts online gehen, um eine Online-Aktivierung und -Registrierung abzuschließen, oder Sie verwenden ein Internet-fähiges Gerät und die Seriennummer Ihres Produkts, um diesen Vorgang abzuschließen. Detaillierte Anweisungen finden Sie unter [Offline-Aktivierung](https://exception.licenses.adobe.com/aoes/aoes/v1/t1?locale=de).
 
 +++
 
-+++ Konvertieren von Word- oder Excel-Dateien in PDF unter Windows Server nicht möglich
++++ Konvertieren von Word- oder Excel-Dateien in PDF ist unter Windows Server nicht möglich
 
-Wenn der Benutzer versucht, Word- oder Excel-Dateien auf Microsoft Windows Server in PDF zu konvertieren, tritt folgender Fehler auf:
+Wenn der Benutzer versucht, Word- oder Excel-Dateien unter Microsoft Windows Server in PDF zu konvertieren, tritt folgender Fehler auf:
 
-*Fehlermeldung des primären Konverters: ALC-PDG-015-003-Das System kann die Eingabedatei nicht öffnen. Senden Sie Ihre Datei erneut oder kontaktieren Sie Ihren Systemadministrator.*
+*Fehlermeldung des primären Konverters:
+ALC-PDG-015-003-Das System kann die Eingabedatei nicht öffnen. Bitte übermitteln Sie Ihre Datei erneut oder kontaktieren Sie Ihren Systemadministrator.*
 
-Informationen zum Beheben des Problems finden Sie unter [Konvertieren von Word- oder Excel-Dateien in PDF unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+Informationen zum Beheben des Problems finden Sie unter [Konvertieren von Word- oder Excel-Dateien in PDF ist unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
 
 ## Nächste Schritte {#next-steps}
