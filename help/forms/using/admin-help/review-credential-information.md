@@ -1,5 +1,5 @@
 ---
-title: Informationen zur Verwendung der Berechtigung überprüfen
+title: Überprüfen der Informationen zur Verwendung von Anmeldedaten
 seo-title: Review credential use information
 description: Erfahren Sie, wie Sie die Informationen zur Verwendung der Berechtigung überprüfen.
 seo-description: Learn how to review credential use information.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: cdf61cff-768b-49f7-9926-400bc96b0708
 exl-id: a8e16cf8-f3c8-48ce-87da-2f0de0b10a6e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '180'
 ht-degree: 100%
 
 ---
 
-# Informationen zur Verwendung der Berechtigung überprüfen {#review-credential-use-information}
+# Überprüfen der Informationen zur Verwendung von Anmeldedaten {#review-credential-use-information}
 
 Die Berechtigung enthält Informationen zu ihrem vorgesehenen Zweck, auf die über die Acrobat Reader DC Extensions-Webanwendung für Endbenutzer zugegriffen werden kann. Anhand dieser Informationen können Sie den Typ der installierten Berechtigung (entweder Test oder Produktion) und die Gültigkeitsdauer bestimmen.
 
