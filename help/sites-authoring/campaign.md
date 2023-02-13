@@ -11,7 +11,7 @@ topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2758'
 ht-degree: 100%
 
@@ -176,6 +176,7 @@ So fügen Sie Personalisierung ein:
    >
    >* Die verfügbaren Kontextfelder entsprechen den **Profilen** der Targeting-Dimension in Adobe Campaign.
    >* Weitere Informationen finden Sie unter [Verknüpfen von AEM-Seiten mit Adobe Campaign-E-Mails](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
+
    >
    >**Adobe Campaign Classic:**
    >
@@ -234,7 +235,7 @@ Adobe Campaign Classic:
 ![chlimage_1-34](assets/chlimage_1-34a.png)
 
 >[!NOTE]
->Nicht genehmigte Inhalte können in Adobe Campaign mit einer Bereitstellung synchronisiert werden, diese Bereitstellung lässt sich jedoch nicht durchführen. Mit Campaign-Bereitstellungen lassen sich nur genehmigte Inhalte versenden.
+Nicht genehmigte Inhalte können in Adobe Campaign mit einer Bereitstellung synchronisiert werden, diese Bereitstellung lässt sich jedoch nicht durchführen. Mit Campaign-Bereitstellungen lassen sich nur genehmigte Inhalte versenden.
 
 ## Verknüpfen von AEM mit Adobe Campaign Standard und Adobe Campaign Classic {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
 
@@ -257,7 +258,7 @@ Diese Optionen ermöglichen die Bereitstellung von Inhalten. Aus dem auf der Sei
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
->Ist ein Newsletter mit mehreren Bereitstellungen verknüpft, wird die Anzahl der verknüpften Bereitstellungen (nicht jedoch jede ID) angezeigt.
+Ist ein Newsletter mit mehreren Bereitstellungen verknüpft, wird die Anzahl der verknüpften Bereitstellungen (nicht jedoch jede ID) angezeigt.
 
 So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
 
@@ -272,7 +273,7 @@ So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
 1. Wählen Sie **Mit Adobe Experience Manager-Inhalt verknüpfen** auf der Symbolleiste aus, um auf die Liste der in AEM verfügbaren Inhalte zuzugreifen.
 
    >[!NOTE]
-   >Wenn die Option **Mit Adobe Experience Manager-Inhalt verknüpfen** nicht in der Aktionsleiste angezeigt wird, prüfen Sie, ob der **Inhaltsbearbeitungsmodus** ordnungsgemäß konfiguriert und in den E-Mail-Einstellungen **Adobe Experience Manager** festgelegt wurde.
+   Wenn die Option **Mit Adobe Experience Manager-Inhalt verknüpfen** nicht in der Aktionsleiste angezeigt wird, prüfen Sie, ob der **Inhaltsbearbeitungsmodus** ordnungsgemäß konfiguriert und in den E-Mail-Einstellungen **Adobe Experience Manager** festgelegt wurde.
 
    ![chlimage_1-38](assets/chlimage_1-38a.png)
 
@@ -286,7 +287,7 @@ So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
    * Inhalte, die bereits mit einer Bereitstellung verknüpft wurden.
 
    >[!NOTE]
-   >Standardmäßig werden Inhalte, die bereits mit einer Bereitstellung synchronisiert wurden, ausgeblendet. Sie können diese jedoch einblenden und verwenden. Beispielsweise dann, wenn Sie den Inhalt als Vorlage für mehrere Bereitstellungen nutzen möchten.
+   Standardmäßig werden Inhalte, die bereits mit einer Bereitstellung synchronisiert wurden, ausgeblendet. Sie können diese jedoch einblenden und verwenden. Beispielsweise dann, wenn Sie den Inhalt als Vorlage für mehrere Bereitstellungen nutzen möchten.
 
    Wurde die E-Mail mit AEM-Inhalten verknüpft, können ihre Inhalte nicht in Adobe Campaign bearbeitet werden.
 
@@ -294,9 +295,9 @@ So verknüpfen Sie in AEM erstellte Seiten mit Adobe Campaign-E-Mails:
 1. Stellen Sie die E-Mail zu. Während der Bereitstellungsanalyse werden die aktuellsten AEM-Inhalte abgerufen.
 
    >[!NOTE]
-   >Werden Inhalte in AEM bearbeitet, während sie mit einer E-Mail verknüpft sind, werden die Inhalte während der Analyse automatisch in Adobe Campaign aktualisiert. Die Synchronisierung kann auch manuell mithilfe der Option **Adobe Experience Manager-Inhalt aktualisieren** in der Inhaltsaktionsleiste durchgeführt werden.
-   >Sie können die Verknüpfung einer E-Mail mit AEM-Inhalten löschen, indem Sie **Verknüpfung mit Adobe Experience Manager-Inhalt löschen** aus der Inhaltsaktionsleiste auswählen. Diese Schaltfläche steht nur zur Verfügung, wenn der Inhalt bereits mit der Bereitstellung verknüpft ist. Soll anderer Inhalt mit einer Bereitstellung verknüpft werden, müssen Sie zunächst den aktuellen Inhaltslink löschen, bevor Sie eine neue Verknüpfung erstellen.
-   >Ist die Verknüpfung gelöscht, werden lokale Inhalte beibehalten und diese können in Adobe Campaign bearbeitet werden. Wird der Inhalt nach vorgenommenen Änderungen wieder verknüpft, gehen sämtliche Änderungen verloren.
+   Werden Inhalte in AEM bearbeitet, während sie mit einer E-Mail verknüpft sind, werden die Inhalte während der Analyse automatisch in Adobe Campaign aktualisiert. Die Synchronisierung kann auch manuell mithilfe der Option **Adobe Experience Manager-Inhalt aktualisieren** in der Inhaltsaktionsleiste durchgeführt werden.
+   Sie können die Verknüpfung einer E-Mail mit AEM-Inhalten löschen, indem Sie **Verknüpfung mit Adobe Experience Manager-Inhalt löschen** aus der Inhaltsaktionsleiste auswählen. Diese Schaltfläche steht nur zur Verfügung, wenn der Inhalt bereits mit der Bereitstellung verknüpft ist. Soll anderer Inhalt mit einer Bereitstellung verknüpft werden, müssen Sie zunächst den aktuellen Inhaltslink löschen, bevor Sie eine neue Verknüpfung erstellen.
+   Ist die Verknüpfung gelöscht, werden lokale Inhalte beibehalten und diese können in Adobe Campaign bearbeitet werden. Wird der Inhalt nach vorgenommenen Änderungen wieder verknüpft, gehen sämtliche Änderungen verloren.
 
 ### Synchronisieren von in AEM erstelltem Inhalt mit einer Bereitstellung von Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
 
@@ -314,9 +315,9 @@ Ist ein Newsletter in AEM mit einer Bereitstellung verknüpft, wird der Bereitst
 ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
->Ist der Newsletter mit mehreren Bereitstellungen verknüpft, wird die Anzahl der verknüpften Bereitstellungen (nicht jedoch jede ID) angezeigt.
->[!NOTE]
->Der Arbeitsablaufschritt **In Adobe Campaign veröffentlichen** ist veraltet und ab AEM 6.1 nicht länger Teil des Arbeitsablaufs. In den Versionen AEM 6.0 und älter diente dieser Schritt der Integration mit Adobe Campaign, er wird in neueren Versionen nicht mehr benötigt.
+Ist der Newsletter mit mehreren Bereitstellungen verknüpft, wird die Anzahl der verknüpften Bereitstellungen (nicht jedoch jede ID) angezeigt.
+[!NOTE]
+Der Arbeitsablaufschritt **In Adobe Campaign veröffentlichen** ist veraltet und ab AEM 6.1 nicht länger Teil des Arbeitsablaufs. In den Versionen AEM 6.0 und älter diente dieser Schritt der Integration mit Adobe Campaign, er wird in neueren Versionen nicht mehr benötigt.
 
 So synchronisieren Sie in AEM erstellte Inhalte mit Bereitstellungen in Adobe Campaign:
 
@@ -327,7 +328,7 @@ So synchronisieren Sie in AEM erstellte Inhalte mit Bereitstellungen in Adobe C
 1. Wählen Sie **Synchronisieren** auf der Symbolleiste aus, um auf die Liste der in AEM verfügbaren Inhalte zuzugreifen.
 
    >[!NOTE]
-   >Sollte die Option **Synchronisieren** nicht in der Bereitstellungssymbolleiste angezeigt werden, prüfen Sie, ob das Feld **Inhaltsbearbeitungsmodus** in **AEM** richtig konfiguriert ist, indem Sie **Eigenschaften** > **Erweitert** auswählen.
+   Sollte die Option **Synchronisieren** nicht in der Bereitstellungssymbolleiste angezeigt werden, prüfen Sie, ob das Feld **Inhaltsbearbeitungsmodus** in **AEM** richtig konfiguriert ist, indem Sie **Eigenschaften** > **Erweitert** auswählen.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
 
@@ -341,7 +342,7 @@ So synchronisieren Sie in AEM erstellte Inhalte mit Bereitstellungen in Adobe C
    * Inhalte, die bereits mit einer Bereitstellung verknüpft wurden.
 
    >[!NOTE]
-   >Standardmäßig werden Inhalte, die bereits mit einer Bereitstellung synchronisiert wurden, ausgeblendet. Sie können diese jedoch einblenden und verwenden. Beispielsweise dann, wenn Sie den Inhalt als Vorlage für mehrere Bereitstellungen nutzen möchten.
+   Standardmäßig werden Inhalte, die bereits mit einer Bereitstellung synchronisiert wurden, ausgeblendet. Sie können diese jedoch einblenden und verwenden. Beispielsweise dann, wenn Sie den Inhalt als Vorlage für mehrere Bereitstellungen nutzen möchten.
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
 
@@ -350,9 +351,9 @@ So synchronisieren Sie in AEM erstellte Inhalte mit Bereitstellungen in Adobe C
 1. Stellen Sie die Inhalte bereit. Während der Bereitstellungsanalyse werden die aktuellsten AEM-Inhalte wiederhergestellt.
 
    >[!NOTE]
-   >* Nach der Synchronisierung von Bereitstellung und Inhalten können die Inhalte in Adobe Campaign nur noch gelesen werden. Betreff und Inhalt der E-Mail lassen sich nicht länger bearbeiten.
-   >* Wenn der Inhalt in AEM bearbeitet wird, während eine Verknüpfung mit einer Bereitstellung in Adobe Campaign besteht, wird dieser während der Analyse mit der Bereitstellung aktualisiert. Die Synchronisierung kann mithilfe der Schaltfläche **Inhalt jetzt aktualisieren** auch manuell durchgeführt werden.
-   >* Die Synchronisierung von Bereitstellung und AEM-Inhalten kann mithilfe der Schaltfläche **Synchronisierung aufheben** abgebrochen werden. Diese Schaltfläche steht nur zur Verfügung, wenn der Inhalt bereits mit der Bereitstellung synchronisiert wurde. Soll anderer Inhalt mit einer Bereitstellung synchronisiert werden, müssen Sie zunächst die aktuelle Synchronisierung abbrechen, bevor eine neue eingerichtet wird.
-   >* Wurde die Synchronisierung der Bereitstellung aufgehoben, werden die Inhalte lokal gespeichert und lassen sich in Adobe Campaign bearbeiten. Wird der Inhalt nach einer Bearbeitung wieder synchronisiert, gehen sämtliche Änderungen verloren.
-   >* Bei wiederholten oder permanenten Bereitstellungen wird die Synchronisierung mit AEM-Inhalten jeweils bei der Durchführung der Bereitstellung unterbrochen.
+   * Nach der Synchronisierung von Bereitstellung und Inhalten können die Inhalte in Adobe Campaign nur noch gelesen werden. Betreff und Inhalt der E-Mail lassen sich nicht länger bearbeiten.
+   * Wenn der Inhalt in AEM bearbeitet wird, während eine Verknüpfung mit einer Bereitstellung in Adobe Campaign besteht, wird dieser während der Analyse mit der Bereitstellung aktualisiert. Die Synchronisierung kann mithilfe der Schaltfläche **Inhalt jetzt aktualisieren** auch manuell durchgeführt werden.
+   * Die Synchronisierung von Bereitstellung und AEM-Inhalten kann mithilfe der Schaltfläche **Synchronisierung aufheben** abgebrochen werden. Diese Schaltfläche steht nur zur Verfügung, wenn der Inhalt bereits mit der Bereitstellung synchronisiert wurde. Soll anderer Inhalt mit einer Bereitstellung synchronisiert werden, müssen Sie zunächst die aktuelle Synchronisierung abbrechen, bevor eine neue eingerichtet wird.
+   * Wurde die Synchronisierung der Bereitstellung aufgehoben, werden die Inhalte lokal gespeichert und lassen sich in Adobe Campaign bearbeiten. Wird der Inhalt nach einer Bearbeitung wieder synchronisiert, gehen sämtliche Änderungen verloren.
+   * Bei wiederholten oder permanenten Bereitstellungen wird die Synchronisierung mit AEM-Inhalten jeweils bei der Durchführung der Bereitstellung unterbrochen.
 
