@@ -12,7 +12,7 @@ discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '19016'
 ht-degree: 100%
 
@@ -1809,7 +1809,7 @@ Nachdem der Ausgabe-Service einen Vorgang ausgeführt hat, werden XML-Daten zur�
 
 Erstellen Sie mehrere PDF-Dateien mithilfe der Ausgabe-API (Java):
 
-1. Schließen Sie Projektdateien ein&quot;
+1. Einschließen von Projektdateien&quot;
 
    Fügen Sie Client-JAR-Dateien wie „adobe-output-client.jar“ in den Klassenpfad Ihres Java-Projekts ein..
 
