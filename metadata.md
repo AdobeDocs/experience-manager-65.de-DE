@@ -8,9 +8,9 @@ version: 6.5
 type: Documentation
 index: y
 source-git-commit: ee6e408668a523464632e53a01ba11eddec103f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '134'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -24,14 +24,14 @@ Die metadata.md-Datei enthält Metadaten auf Repo-Ebene, die über die TOC.md-Da
 | solution-title | Wird in der Artikelkopfzeile als Link verwendet. |
 | solution-hub-url | Öffnet die Hub-Seite „Lernen und Support“. |
 | solution-icon | Zeigt das Lösungssymbol neben Lösungstitel an. Noch nicht implementiert. |
-| getting-started-url | Link zur Seite &quot;Erste Schritte&quot;. |
+| getting-started-url | Link zur Seite „Erste Schritte“. |
 | tutorials-url | Link zu Video-Tutorials. |
 | mini-toc-levels | Legt die Anzahl der Überschriftenebenen fest, die in der rechten Leiste angezeigt werden. Der Standardwert ist 2. |
 | git-repo | Gibt den Speicherort des primären Repositorys für die interne Verwendung an. |
 
 In der Datei TOC.md
 
-| Metadaten | Funktion |
+| metadata | Funktion |
 |--- |--- |
 | user-guide-title | Wird in der Artikelkopfzeile als Link verwendet. |
 | user-guide-url | Öffnet die Hub-Seite „Lernen und Support“. |
