@@ -1,7 +1,7 @@
 ---
-title: Codebeispiele
+title: Code-Beispiele
 seo-title: Code Samples
-description: Das Adobe Consulting Services Team hat eine Reihe von AEM-Codebeispielen erstellt.
+description: Das Beratungs-Team für Services von Adobe hat eine Reihe von AEM-Code-Beispielen erstellt.
 seo-description: The Adobe Consulting Services Team has generated a series of AEM code samples.
 uuid: 16f23fa6-5a3c-4697-87de-86db37b3ec1b
 contentOwner: User
@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 07bf0224-6744-42d4-861f-d656ccfad171
 exl-id: d77e9e39-6117-4d09-b34b-a97ab347397e
 source-git-commit: 317c0a50631a983469729d5eb37760d8a3c30e98
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '149'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ ht-degree: 100%
 
 # Codebeispiele{#code-samples}
 
-Das Adobe Consulting Services Team hat eine Reihe von AEM-Codebeispielen erstellt. Diese Beispiele sind ausführlich kommentierte Codeausschnitte, die AEM-Entwicklern helfen sollen, die zentralen Bestandteile von AEM zu verstehen. Sie finden die Beispiele hier: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
+Das Beratungs-Team für Services von Adobe hat eine Reihe von AEM-Code-Beispielen erstellt. Diese Beispiele sind ausführlich kommentierte Codeausschnitte, die AEM-Entwicklern helfen sollen, die zentralen Bestandteile von AEM zu verstehen. Sie finden die Beispiele hier: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
 Ein mehrteiliges Tutorial, das sich an neue AEM-Entwickler richtet und grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung behandelt: [Erste Schritte mit AEM Sites – WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)
 
