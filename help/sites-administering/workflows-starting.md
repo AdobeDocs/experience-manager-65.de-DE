@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
 source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '794'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -36,20 +36,20 @@ Bei der Verwaltung von Workflows können Sie sie mit unterschiedlichen Methoden 
 >
 >* [Anwenden von Workflows auf Seiten](/help/sites-authoring/workflows-applying.md)
 >* [Anwenden von Workflows auf DAM-Assets](/help/assets/assets-workflow.md)
->* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/de/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Übersetzungsprojekte](/help/sites-administering/tc-manage.md)
 >
 
 
 ## Workflow-Modelle {#workflow-models}
 
-Sie können einen Workflow [basierend auf einem der Modelle](/help/sites-administering/workflows.md#workflow-models-and-instances) starten, die in der Workflow-Modelle-Konsole aufgeführt sind. Die einzige erforderliche Angabe ist die Nutzlast. Sie können aber auch einen Titel und/oder einen Kommentar hinzufügen.
+Sie können einen Workflow [basierend auf einem der Modelle](/help/sites-administering/workflows.md#workflow-models-and-instances) starten, die in der Workflow-Modelle-Konsole aufgeführt sind. Die einzige erforderliche Angabe ist die Payload. Sie können aber auch einen Titel und/oder einen Kommentar hinzufügen.
 
 ## Workflow-Starter {#workflows-launchers}
 
 Der Workflow-Starter überwacht Änderungen im Inhalts-Repository, um Workflows abhängig vom Speicherort und Ressourcentyp des geänderten Knotens zu starten.
 
-Verwenden der **Starter** Sie können:
+Mit dem **Starter** können Sie:
 
 * die Workflows anzeigen, die bereits für spezifische Knoten gestartet wurden
 * einen Workflow auswählen, der gestartet werden soll, wenn ein bestimmter Knoten/Knotentyp erstellt, bearbeitet oder gelöscht wurde
@@ -58,7 +58,7 @@ Verwenden der **Starter** Sie können:
 Ein Starter kann für jeden beliebigen Knoten erstellt werden. Bei Änderungen an bestimmten Knoten werden jedoch keine Workflows gestartet. Änderungen an Knoten unter den folgenden Pfaden führen nicht zum Start von Workflows:
 
 * `/var/workflow/instances`
-* Jeder Workflow-Posteingangsknoten, der sich an einer beliebigen Stelle im `/home/users` Verzweigung
+* alle Workflow-Posteingangsknoten in der Verzweigung `/home/users`
 * `/tmp`
 * `/var/audit`
 * `/var/classes`
@@ -67,7 +67,7 @@ Ein Starter kann für jeden beliebigen Knoten erstellt werden. Bei Änderungen a
 * `/var/mobile`
 * `/var/statistics`
 
-   * Ausnahme: Änderungen an Knoten unter `/var/statistics/tracking` *do* Workflows starten.
+   * Ausnahme: Bei Änderungen an Knoten unter `/var/statistics/tracking` *werden* Workflows gestartet.
 
 In der Standardinstallation sind verschiedene Definitionen enthalten. Sie werden für Aufgaben aus den Bereichen Digital Asset Management und Social Collaboration verwendet:
 
@@ -75,7 +75,7 @@ In der Standardinstallation sind verschiedene Definitionen enthalten. Sie werden
 
 ## Workflow-Pakete für die Stapelverarbeitung {#workflow-packages-for-batch-processing}
 
-Workflow-Pakete sind Pakete, die als Nutzlast zur Verarbeitung an einen Workflow übergeben werden können. Auf diese Weise können mehrere Ressourcen verarbeitet werden.
+Workflow-Pakete sind Pakete, die als Payload zur Verarbeitung an einen Workflow übergeben werden können. Auf diese Weise können mehrere Ressourcen verarbeitet werden.
 
 Ein Workflow-Paket:
 
@@ -87,25 +87,25 @@ Ein Workflow-Paket:
 
 ## Starten eines Workflows über die Modelle-Konsole {#starting-a-workflow-from-the-models-console}
 
-1. Navigieren Sie zum **Modelle** Konsole verwenden **Instrumente**, **Workflow**, dann **Modelle**.
+1. Gehen Sie zur **Modelle-Konsole** (**Tools** > **Workflow** > **Modelle**).
 1. Wählen Sie den Workflow aus (entsprechend der Konsolenansicht). Bei Bedarf können Sie auch die Suche (links oben) verwenden:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >Die **[Übergangs](/help/sites-developing/workflows.md#transient-workflows)** zeigt Workflows an, für die der Workflow-Verlauf nicht beibehalten wird.
+   >Die Anzeige **[Übergang](/help/sites-developing/workflows.md#transient-workflows)** zeigt Workflows an, deren Workflow-Verlauf nicht aufbewahrt wird.
 
 1. Wählen Sie in der Symbolleiste **Workflow starten** aus.
 1. Das Dialogfeld „Workflow ausführen“ wird geöffnet. Darin können Sie Folgendes festlegen:
 
-   * **Nutzlast**
+   * **Payload**
 
-      Dabei kann es sich um eine Seite, einen Knoten, ein Asset, ein Paket usw. handeln.
+      Hierbei kann es sich um eine Seite, einen Knoten, ein Asset, ein Paket un andere handeln.
 
    * **Titel**
 
-      Ein optionaler Titel zur Identifizierung dieser Instanz.
+      Ein optionaler Titel, der die Identifizierung dieser Instanz unterstützt.
 
    * **Kommentar**
 
@@ -114,8 +114,8 @@ Ein Workflow-Paket:
 
 ## Erstellen einer Starter-Konfiguration {#creating-a-launcher-configuration}
 
-1. Navigieren Sie zum **Workflow-Starter** Konsole verwenden **Instrumente**, **Workflow**, dann **Starter**.
-1. Auswählen **Erstellen**, dann **Launcher hinzufügen** , um das Dialogfeld zu öffnen:
+1. Gehen Sie zur Konsole **Workflow-Starter** (**Tools** > **Workflow** > **Starter**).
+1. Wählen Sie **Erstellen** und anschließend **Starter hinzufügen**, um das Dialogfeld zu öffnen:
 
    ![wf-105](assets/wf-105.png)
 
@@ -128,52 +128,52 @@ Ein Workflow-Paket:
       * Entfernt
    * **Knotentyp**
 
-      Der Typ des Knotens, für den der Workflow-Starter gilt.
+      Der Knotentyp, für den der Workflow-Starter angewendet wird.
 
    * **Pfad**
 
       Der Pfad, auf den der Workflow-Starter angewendet wird.
 
-   * **Modus/Modi ausführen**
+   * **Ausführungs-Modus/Modi**
 
-      Der Servertyp, für den der Workflow-Starter gilt. Wählen Sie **Autor**, **Veröffentlichen** oder **Autor und Veröffentlichen** aus.
+      Die Art von Server, auf den der Workflow-Starter angewendet wird. Wählen Sie **Autor**, **Veröffentlichen** oder **Autor und Veröffentlichen** aus.
 
    * **Bedingungen**
 
-      Eine Liste der Bedingungen für Knotenwerte, die bei der Auswertung bestimmen, ob der Workflow gestartet wird. Beispielsweise führt die folgende Bedingung zum Start des Workflows, wenn für den Knoten als name-Eigenschaft der Wert „User“ festgelegt wurde:
+      Eine Liste der Bedingungen für Knotenwerte, die bewertet werden und so bestimmen, ob der Workflow gestartet wird. Beispielsweise führt die folgende Bedingung zum Start des Workflows, wenn für den Knoten als name-Eigenschaft der Wert „User“ festgelegt wurde:
 
       name==User
 
    * **Funktionen**
 
-      Eine Liste der zu aktivierenden Funktionen. Wählen Sie die benötigte(n) Funktion(en) über den Dropdown-Selektor aus.
+      Eine Liste der Funktionen, die aktiviert werden können/sollen. Wählen Sie die benötigte(n) Funktion(en) über den Dropdown-Selektor aus.
 
    * **Deaktivierte Funktionen**
 
-   Eine Liste der zu deaktivierenden Funktionen. Wählen Sie die benötigte(n) Funktion(en) über den Dropdown-Selektor aus.
+   Eine Liste der Funktionen, die deaktiviert werden können/sollen. Wählen Sie die benötigte(n) Funktion(en) über den Dropdown-Selektor aus.
 
    * **Workflow-Modell**
 
-      Der Workflow, der gestartet wird, wenn der Ereignistyp auf dem Knotentyp und/oder Pfad unter der definierten Bedingung auftritt.
+      Der Workflow, der gestartet werden soll, wenn der Ereignistyp bei dem Knotentyp und/oder unter dem Pfad entsprechend der definierten Bedingung auftritt.
 
    * **Beschreibung**
 
-      Ihr eigener Text zur Beschreibung und Identifizierung der Starter-Konfiguration.
+      Ihr eigener Text, der die Starter-Konfiguration beschreibt und identifiziert.
 
    * **Aktivieren**
 
-      Steuert, ob der Workflow-Starter aktiviert ist:
+      Kontrolliert, ob der Workflow-Starter aktiviert wird:
 
       * Wählen Sie **Aktivieren** aus, um Workflows zu starten, wenn die Konfigurationseigenschaften erfüllt sind.
       * Wählen Sie **Deaktivieren** aus, wenn der Workflow nicht ausgeführt werden soll (selbst dann nicht, wenn die Konfigurationseigenschaften erfüllt sind).
    * **Liste ausschließen**
 
-      Gibt alle JCR-Ereignisse an, die ausgeschlossen werden sollen (d. h. ignorieren), wenn bestimmt wird, ob ein Workflow ausgelöst werden soll.
+      Hier können Sie JCR-Ereignisse festlegen, die ausgeschlossen (d. h. ignoriert) werden sollen, wenn bestimmt wird, ob ein Workflow ausgelöst wird oder nicht.
 
       Bei dieser Startereigenschaft handelt es sich um eine Reihe von kommagetrennten Elementen: ``
 
       * `property-name` ignoriert alle `jcr`-Ereignisse, die beim festgelegten Eigenschaftsnamen ausgelöst werden. ``
-      * `event-user-data:<*someValue*>` ignoriert alle Ereignisse, die die `*<someValue*`> `user-data` über die [ `ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `event-user-data:<*someValue*>` ignoriert jedes Ereignis, das die über die [ `ObservationManager`-API festgelegten `*<someValue*`> `user-data` enthält](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
 
       Beispiel:
 
@@ -193,4 +193,4 @@ Ein Workflow-Paket:
 
 ## Verwalten einer Starter-Konfiguration {#managing-a-launcher-configuration}
 
-Nachdem Sie Ihre Starter-Konfiguration erstellt haben, können Sie dieselbe Konsole verwenden, um die Instanz auszuwählen, und dann **Eigenschaften anzeigen** (und bearbeiten Sie sie) oder **Löschen**.
+Nach der Erstellung der Starter-Konfiguration können Sie über dieselbe Konsole die Instanz auswählen und anschließend **Eigenschaften anzeigen**. Sie können diese dann „Bearbeiten“ oder **Löschen** auswählen.
