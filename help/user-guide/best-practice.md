@@ -5,7 +5,7 @@ description: Ressourcen für Best Practices, Problembehandlung und Schulungen f�
 seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '425'
 ht-degree: 100%
 
@@ -46,7 +46,7 @@ AEM wird vielseitig in Unternehmen eingesetzt und verfügt über vielfältige Fu
 * [Erste Schritte mit AEM Communities](/help/communities/getting-started.md)
 * [Erste Schritte mit AEM Livefyre](https://answers.livefyre.com/developers/getting-started/)
 
-Wir haben auch ein neues [WKND-Tutorial, eine schrittweise Anleitung für die Erstellung Ihrer ersten Website mit AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) sowie einen [Schritt-für-Schritt-Ratgeber für die Bereitstellung unserer Digital Foundation-Lösung](https://helpx.adobe.com/de/marketing-cloud/how-to/digital-foundation.html), für die AEM ein wichtiger Baustein ist.
+Wir haben auch ein neues [WKND-Tutorial, eine schrittweise Anleitung für die Erstellung Ihrer ersten Website mit AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) sowie einen [Schritt-für-Schritt-Ratgeber für die Bereitstellung unserer Digital Foundation-Lösung](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html), für die AEM ein wichtiger Baustein ist.
 
 ## Empfohlene Implementierungen für AEM {#deployments}
 
