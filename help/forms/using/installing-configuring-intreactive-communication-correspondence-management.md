@@ -1,7 +1,7 @@
 ---
-title: Installieren und konfigurieren Sie Interaktive Kommunikationen
+title: Installieren und Konfigurieren von interaktiven Kommunikationen
 seo-title: Install and configure Interactive Communications
-description: Installieren und konfigurieren Sie AEM Forms Interaktive Kommunikation, um Geschäftskorrespondenzen, Dokumente, Kontoauszüge, Mitteilungen über finanzielle Leistungen, Marketing-E-Mails, Rechnungen und Willkommenskits zu erstellen.
+description: Installieren und konfigurieren Sie interaktive Kommunikationen in AEM Forms, um Geschäftskorrespondenzen, Dokumente, Kontoauszüge, Mitteilungen über finanzielle Leistungen, Marketing-E-Mails, Rechnungen und Willkommens-Kits zu erstellen.
 seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
 uuid: 8acb7f68-0b52-4acd-97e2-af31c9408e8d
 topic-tags: installing
@@ -10,7 +10,7 @@ docset: aem65
 role: Admin
 exl-id: 37fcfad9-2f84-4f0c-aed8-e4a5a3303a06
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1383'
 ht-degree: 100%
 
@@ -20,13 +20,13 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-Mit AEM Form lässt sich die Generierung, Zusammenstellung, Verwaltung und Lieferung von sicheren und interaktiven Dokumenten wie Geschäftskorrespondenzen, Dokumenten, Kontoauszügen, Mitteilungen über finanzielle Leistungen, Marketing-Mails, Rechnungen und Willkommenspaketen zentralisieren. Diese Funktion wird als interaktive Kommunikation bezeichnet. Die Funktion ist im AEM Forms Add-On-Paket enthalten. Das Add-On-Paket wird auf einer Autor- oder Veröffentlichungsinstanz von AEM bereitgestellt.
+Mit AEM Form lässt sich die Generierung, Zusammenstellung, Verwaltung und Lieferung von sicheren und interaktiven Dokumenten wie Geschäftskorrespondenzen, Dokumenten, Kontoauszügen, Mitteilungen über finanzielle Leistungen, Marketing-Mails, Rechnungen und Willkommenspaketen zentralisieren. Diese Funktion wird als interaktive Kommunikation bezeichnet. Die Funktion ist im Add-on-Paket zu AEM Forms enthalten. Das Add-On-Paket wird auf einer Autor- oder Veröffentlichungsinstanz von AEM bereitgestellt.
 
 Sie können die interaktive Kommunikationsfunktion verwenden, um Kommunikation in mehreren Formaten zu erstellen. Zum Beispiel Web und PDF. Sie können interaktive Kommunikation mit AEM Workflow integrieren, um die zusammengestellte Kommunikation auf dem Kanal ihrer Wahl zu verarbeiten und an Kunden zu liefern. Zum Beispiel Senden einer Nachricht an Endbenutzer per E-Mail.
 
 Wenn Sie ein Upgrade von einer früheren Version durchführen und bereits in die Korrespondenzverwaltung investiert haben, können Sie das [Kompatibilitätspaket](../../forms/using/installing-configuring-intreactive-communication-correspondence-management.md#install-compatibility-package) installieren, um die Korrespondenzverwaltung weiterhin zu verwenden. Informationen zu den Unterschieden zwischen interaktiver Kommunikation und Korrespondenzverwaltung finden Sie unter [Übersicht über interaktive Kommunikation](/help/forms/using/interactive-communications-overview.md#interactive-communications-vs-correspondence-management).
 
-AEM Forms ist eine leistungsstarke Plattform der Enterprise-Klasse. Interaktive Kommunikation ist nur eine der Möglichkeiten von AEM Forms. Eine vollständige Liste der Funktionen finden Sie unter [Einführung in AEM Forms](../../forms/using/introduction-aem-forms.md).
+AEM Forms ist eine leistungsstarke Plattform der Unternehmensklasse. Interaktive Kommunikation ist nur eine der Möglichkeiten von AEM Forms. Eine vollständige Liste der Funktionen finden Sie unter [Einführung in AEM Forms](../../forms/using/introduction-aem-forms.md).
 
 ## Bereitstellungstopologie {#deployment-topology}
 
@@ -139,7 +139,7 @@ Führen Sie auf allen Autoren- und Veröffentlichungsinstanzen folgende Schritte
 
 ### Optionale Konfigurationen nach der Installation {#optional-post-installation-configurations}
 
-#### Installieren Sie das Kompatibilitäts-Paket {#install-compatibility-package}
+#### Installieren des Kompatibilitäts-Pakets {#install-compatibility-package}
 
 Interaktive Kommunikation ist der Standard und empfohlene Ansatz, um Kundenkommunikation in AEM 6.5 Forms zu erstellen. Wenn Sie ein Upgrade oder eine Migration von einer früheren Version durchgeführt haben und weiterhin Briefe (Correspondence Management) verwenden möchten, installieren Sie das [AEMFD-Kompatibilitätspaket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
@@ -160,7 +160,7 @@ Der Dispatcher ist das Werkzeug für das Caching und/oder den Lastenausgleich vo
 
    `/0025 { /type "allow" /glob "* /bin/xfaforms/submitaction*" } # to enable AEM Forms submission`
 
-   Speichern und schließen Sie die Datei. Ausführliche Informationen zu Filtern finden Sie in der [Dispatcher-Dokumentation](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html).
+   Speichern und schließen Sie die Datei. Ausführliche Informationen zu Filtern finden Sie in der [Dispatcher-Dokumentation](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html).
 
 1. Konfigurieren des Referrer-Filterservice:
 
