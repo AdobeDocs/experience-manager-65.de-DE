@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: b138f6d1-0870-4071-b96e-4a759ad9a76e
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3802'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Hinsichtlich URLs bestehen einige allgemein akzeptierte Best Practices.
 
 Wenn Sie URLs für Ihr AEM-Projekt bewerten, stellen Sie sich die folgenden Fragen:
 
-&quot;Wenn ein Benutzer diese URL und keinen Inhalt auf der Seite sehen würde, könnte er beschreiben, was diese Seite war?&quot;
+„Wäre ein Benutzer in der Lage zu beschreiben, worum es auf der Seite geht, wenn er nur die URL und nicht den Inhalt der Seite sähe?“
 
 Wenn die Antwort „ja“ lautet, ist es wahrscheinlich, dass die URL für Suchmaschinen gut funktioniert.
 
