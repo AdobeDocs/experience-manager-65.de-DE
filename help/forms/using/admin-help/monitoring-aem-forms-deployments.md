@@ -1,5 +1,5 @@
 ---
-title: Überwachung der AEM Forms-Bereitstellung
+title: Überwachen von AEM Forms-Bereitstellungen
 seo-title: Monitoring AEM forms deployments
 description: Sie können AEM Forms-Bereitstellungen sowohl auf Systemebene als auch auf interner Ebene überwachen. Erfahren Sie mehr über das Überwachen von AEM Forms-Bereitstellungen für dieses Dokument.
 seo-description: You can monitor AEM forms deployments from both a system level and an internal level. Learn more about monitoring AEM forms deployments from this document.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b3e7bca0-5aaf-4f28-bddb-fd7e8ed72ee8
 exl-id: 931e8095-5c7c-4c1f-b95b-75ac2827d4f3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '605'
 ht-degree: 100%
 
 ---
 
-# Überwachung der AEM Forms-Bereitstellung {#monitoring-aem-forms-deployments}
+# Überwachen von AEM Forms-Bereitstellungen {#monitoring-aem-forms-deployments}
 
 Sie können AEM Forms-Bereitstellungen sowohl auf Systemebene als auch auf interner Ebene überwachen. Hierzu können Sie spezielle Verwaltungswerkzeuge wie HP OpenView, IBM Tivoli oder CA UniCenter verwenden sowie einen JMX-Monitor eines anderen Anbieters mit dem Namen *JConsole*, der speziell für die Überwachung von Java-Aktivitäten gedacht ist. Die Implementierung einer Überwachungsstrategie verbessert die Verfügbarkeit, Zuverlässigkeit und Leistung Ihrer AEM Forms-Bereitstellungen.
 
