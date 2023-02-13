@@ -12,7 +12,7 @@ discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5006'
 ht-degree: 100%
 
