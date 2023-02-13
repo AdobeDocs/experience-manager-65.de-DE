@@ -3,9 +3,9 @@ title: Wie lassen sich Hashes in dynamischen PDF-Formularen erzeugen und verwend
 description: Erzeugen und Verwenden von Hashes in dynamischen PDF-Formularen
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1256'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ Gehen Sie wie folgt vor, um das zweite Beispiel auszuprobieren:
    1. Das Kennwort für den Mann lautet `bob`
    1. Das Kennwort für die Frau lautet `alice`
 1. Wenn Sie den Fokus aus den Kennwortfeldern verschieben oder die Eingabetaste drücken, wird automatisch der Hash-Wert des eingegebenen Kennworts generiert und im Hintergrund mit dem gespeicherten Hash-Wert des richtigen Kennworts verglichen. Die richtigen, in Hash-Werte umgewandelten Kennwörter werden in unsichtbaren Textfeldern mit der Beschriftung `passwd_man_hashed` und `passwd_woman_hashed` gespeichert. Wenn Sie das richtige Kennwort für den Mann eingeben, dann werden die Textfelder mit der Beschriftung `Man 1` und `Man 2` verfügbar, sodass Sie Text eingeben können. Dasselbe Verhalten gilt für die Felder für das Kennwort der Frau.
-1. Optional können Sie auf die Schaltfläche mit der Bezeichnung &quot;Kennwörter löschen&quot;klicken, um die Textfelder zu deaktivieren und ihren Rahmen zu ändern.
+1. Optional können Sie auf die Schaltfläche mit der Bezeichnung „Kennwörter löschen“ klicken, um die Textfelder zu deaktivieren und ihren Rahmen zu ändern.
 
 Der Code zum Vergleichen der beiden Hash-Werte und zum Aktivieren der Textfelder ist einfach:
 
@@ -118,7 +118,7 @@ Ich empfehle Ihnen, die beiden PDF-Beispieldateien weiter zu studieren.  Sie kö
 
 * [Ronald Rivest](https://de.wikipedia.org/wiki/Ronald_L._Rivest)
 * [NIST](https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines)
-* [Hash-Kollision](https://en.wikipedia.org/wiki/Hash_collision)
-* [Regenbogentabelle](https://en.wikipedia.org/wiki/Rainbow_table)
+* [Hash-Kollision](https://de.wikipedia.org/wiki/Hashkollision)
+* [Regenbogentabelle](https://de.wikipedia.org/wiki/Rainbow_Table)
 * [Startseite des JavaScript-MD5-Projekts](https://pajhome.org.uk/crypt/md5/)
 * [jsSHA2-Projekt-Startseite](https://anmar.eu.org/projects/jssha2/)
