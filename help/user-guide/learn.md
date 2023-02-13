@@ -5,9 +5,9 @@ description: Beschreibung der wesentlichen Funktionen von AEM 6.5
 seo-description: An description of the essential capabilities of AEM 6.5
 exl-id: dc3b8690-f664-4ffa-993b-7a8634e6fe6b
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 85%
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites ist ein Content-Management-System in Adobe Experience Manager, mit dem Sie digitale Erlebnisse über Websites, mobile Sites und On-site-Bildschirme hinweg erstellen, verwalten und bereitstellen können, um sie global zu gestalten, jedoch persönlich relevant und ansprechend. [Erfahren Sie mehr](https://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) oder [sehen Sie sich einige unserer Videoschulungen zu den neuen Funktionen an](https://helpx.adobe.com/de/experience-manager/kt/sites/index/aem-6-5-sites.html).
+AEM Sites ist ein Content-Management-System in Adobe Experience Manager, mit dem Sie digitale Erlebnisse für Websites, mobile Sites und lokale Bildschirme erstellen, verwalten und bereitstellen können, um sie mit globaler Reichweite und dennoch persönlich relevant und ansprechend zu gestalten. [Erfahren Sie mehr](https://www.adobe.com/de/marketing-cloud/enterprise-content-management/web-cms.html) oder [sehen Sie sich einige unserer Videoschulungen zu den neuen Funktionen an](https://helpx.adobe.com/de/experience-manager/kt/sites/index/aem-6-5-sites.html).
 
 ## AEM Assets {#aem-assets}
 
@@ -42,12 +42,12 @@ Screens ist eine Funktion von Adobe Experience Manager, mit der Sie dynamische u
 
 ## AEM Communities {#aem-communities}
 
-Communities ist eine Funktion von Adobe Experience Manager, mit der Sie Online-Community-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Social-Media-Funktionen erstellen können, die für Kunden, Mitarbeiter und Ihre Marke von Nutzen sind. [Weitere Informationen](https://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
+Communities ist eine Funktion von Adobe Experience Manager, mit der Sie Online-Community-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Social-Media-Funktionen erstellen können, die für Kunden, Mitarbeiter und Ihre Marke von Nutzen sind. [Weitere Informationen](https://www.adobe.com/de/marketing-cloud/enterprise-content-management/social-community-cms.html)
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre ist eine völlig neue Funktion von Adobe Experience Manager, mit der Sie alle im Internet freigegebenen Inhalte nutzen können, um einen konstanten Fluss von neuen und hochwertigen Inhalten auf Ihren eigenen Sites zu schaffen. [Erfahren Sie mehr](https://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) oder [gehen Sie direkt zu unseren Handbüchern.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre ist eine völlig neue Funktion von Adobe Experience Manager, mit der Sie alle im Internet freigegebenen Inhalte nutzen können, um einen konstanten Fluss von neuen und hochwertigen Inhalten auf Ihren eigenen Sites zu schaffen. [Erfahren Sie mehr](https://www.adobe.com/de/marketing-cloud/enterprise-content-management/ugc-content-platform.html) oder [gehen Sie direkt zu unseren Handbüchern.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
 ## AEM Foundation {#aem-foundation}
 
-Erfahren Sie mehr über die [Adobe Experience Manager 6.5 Foundation](/help/sites-deploying/home.md) und unser Managed-Services-Bereitstellungsmodell oder sehen Sie sich einige unserer [neuen Videoschulungen zu den Funktionen in dieser Version an](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-5-sites.html).
+Erfahren Sie mehr über die [Adobe Experience Manager 6.5 Foundation](/help/sites-deploying/home.md) und unser Managed-Services-Bereitstellungsmodell oder sehen Sie sich einige unserer [neuen Videoschulungen zu den Funktionen in dieser Version an](https://helpx.adobe.com/de/experience-manager/kt/sites/index/aem-6-5-sites.html).
