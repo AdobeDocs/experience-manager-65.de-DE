@@ -11,9 +11,9 @@ discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6158'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -86,7 +86,7 @@ Sie erstellen oder bearbeiten eine Dateitypeinstellung, um anzugeben, wie die An
 
 Die Unterstützung verschiedener Dateitypen kann angepasst werden. (Siehe [Hinzufügen der Unterstützung für weitere native Dateiformate](https://help.adobe.com/de_DE/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html) in [Programmieren mit AEM Forms).](https://www.adobe.com/go/learn_lc_programming_11_de)
 
-## Standardeinstellungen ändern {#change-the-default-settings}
+## Ändern der Standardeinstellungen {#change-the-default-settings}
 
 Sie können die Standardwerte für die Adobe PDF-, Sicherheits- und Dateitypeinstellungen ändern, die für neu erstellte Quellen gültig sind. Das Ändern der Standardwerte hat keine Auswirkung auf die Einstellungen vorhandener Quellen.
 
@@ -102,11 +102,11 @@ Sie können die Standardwerte für die Adobe PDF-, Sicherheits- und Dateitypeins
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
-## Einstellung „Dateityp löschen“ {#delete-a-file-type-setting}
+## Löschen einer Dateitypeinstellung {#delete-a-file-type-setting}
 
 Eine nicht mehr benötigte Dateitypeinstellung kann gelöscht werden.
 
-1. Klicken Sie in Administration Console auf **[!UICONTROL Dienste > PDF Generator > Dateitypeinstellungen]**.
+1. Klicken Sie in der Administration-Console auf **[!UICONTROL Dienste > PDF Generator > Dateitypeinstellungen]**.
 1. Aktivieren Sie das Kontrollkästchen neben der zu löschenden Einstellung. Sie können mehrere Quellen auswählen. Einstellungen ohne Kontrollkästchen werden in PDF Generator immer berücksichtigt und können nicht gelöscht werden.
 1. Klicken Sie auf der Seite „Löschbestätigung“ auf **[!UICONTROL Löschen]** und dann nochmals auf **[!UICONTROL Löschen]**.
 
@@ -257,7 +257,7 @@ Weitere Informationen zum Zugriff auf diese Einstellung finden Sie unter [Dateit
 
    >[!NOTE]
    >
-   >*Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, deren Untergruppen im Dokument eingebettet sind, setzen Sie das Symbol „+“ vor den Namen der Schriftart. Beispiel: &quot;+Helvetica&quot;.*
+   >*Wenn Sie die Einbettung für einige Schriftarten aufheben möchten, von denen Untergruppen im Dokument eingebettet sind, setzen Sie das Symbol „+“ vor den Namen der Schriftart. Beispiel: „+Helvetica“.*
 
 1. Wenn Sie lediglich die verwendeten Untergruppen der eingebetteten Schriftarten einbetten möchten, wählen Sie **Alle eingebetteten Schriftarten in Untergruppe zusammenfassen**.
 
@@ -444,7 +444,7 @@ Diese Optionen bestimmen, wie Microsoft PowerPoint-Dateien konvertiert werden: I
 
 **[!UICONTROL Dateinamenerweiterungen]**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Die Standardeinstellung ist ppt,pptx. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
-**[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Stichwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
+**[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Schlüsselwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
 
 **[!UICONTROL Lesezeichen zu Adobe PDF hinzufügen:]** Konvertiert PowerPoint-Arbeitsblattnamen in Lesezeichen. Standardmäßig ist diese Option aktiviert.
 
@@ -468,7 +468,7 @@ Diese Optionen bestimmen, wie Microsoft PowerPoint-Dateien konvertiert werden: I
 
 **[!UICONTROL Ausgeblendete Folien in PDF-Seiten konvertieren:]** Konvertiert ausgeblendete Folien.
 
-**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“. Einige PowerPoint-Funktionen werden beim Erstellen einer PDF-Datei nicht konvertiert. Wenn in für einen PowerPoint-Übergang kein entsprechender Übergang in Acrobat vorhanden ist, wird dieser durch einen ähnlichen Übergang ersetzt. Enthält eine Folie mehrere Animationseffekte, wird nur ein einziger Effekt verwendet. Seitenübergänge und eingeflogene Aufzählungszeichen werden konvertiert.
+**[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005 RGB“. Einige PowerPoint-Funktionen werden beim Erstellen einer PDF-Datei nicht konvertiert. Wenn in für einen PowerPoint-Übergang kein entsprechender Übergang in Acrobat vorhanden ist, wird dieser durch einen ähnlichen Übergang ersetzt. Enthält eine Folie mehrere Animationseffekte, wird nur ein einziger Effekt verwendet. Seitenübergänge und eingeflogene Aufzählungszeichen werden konvertiert.
 
 ## Microsoft Project-Einstellungen (nur Windows) {#microsoft-project-settings-windows-only}
 
@@ -476,7 +476,7 @@ Diese Optionen bestimmen, wie Microsoft Project-Dateien konvertiert werden. Info
 
 1. **[!UICONTROL Dateinamenerweiterungen]**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für dieses Programm akzeptiert werden. Der Standardwert lautet `mpp`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
-1. **[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Stichwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
+1. **[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Schlüsselwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
 1. **[!UICONTROL Quelldatei an Adobe PDF anfügen:]** Fügt die Quelldatei der PDF-Datei als Anlage hinzu.
 1. **[!UICONTROL PDF/A-1a-kompatible Datei erstellen]**: Erzwingt die Verwendung der Adobe PDF-Einstellung „PDF/A-1b:2005(RGB)“.
 1. **[!UICONTROL Makros automatisch ausführen]**: Führt vor dem Konvertieren des Dokuments alle Makros im Microsoft Project-Dokument aus (z. B. ein Makro, das die aktuelle Uhrzeit einfügt).
@@ -489,7 +489,7 @@ Diese Optionen bestimmen, wie Microsoft Word-Dateien konvertiert werden. Informa
 
 **[!UICONTROL Dateinamenerweiterungen]**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Der Standardwert lautet `doc,docx,rtf,txt`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
-**[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Stichwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
+**[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Schlüsselwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
 
 **[!UICONTROL Lesezeichen zu Adobe PDF hinzufügen:]** Konvertiert Überschriften in Lesezeichen. Standardmäßig ist diese Option aktiviert.
 
@@ -521,7 +521,7 @@ Diese Optionen bestimmen, wie Microsoft Word-Dateien konvertiert werden. Informa
 
 **styleName1=level1[,styleName2=level2...]**
 
-Wenn ein Microsoft Word-Stilname ein Komma (,) oder Gleichheitszeichen (=) enthält, müssen Sie den Sonderzeichen das Escape-Zeichen (&quot;\_) voranstellen. Geben Sie beispielsweise einen Stil mit dem Namen &quot;Überschrift, 1&quot;als Überschrift\, 1 an.
+Wenn ein Microsoft Word-Formatvorlagenname ein Komma (,) oder ein Gleichheitszeichen (=) enthält, stellen Sie den Sonderzeichen das Escape-Zeichen („\“) voran. So müssten Sie z. B. für einen Stil mit dem Namen „Überschrift, 1“ den Wert „Überschrift\, 1“ angeben.
 
 **Acrobat PDFMaker-Codierung:** Gibt den Codierungstyp der eingegebenen Textdateien für Acrobat PDFMaker an. Wenn Sie beispielsweise eine UTF-8-codierte Datei verwenden, wählen Sie UTF-8, um ein optimales Ergebnis zu erzielen.
 
@@ -557,7 +557,7 @@ Diese Optionen bestimmen, wie AutoCAD-Dateien konvertiert werden. Informationen 
 
 **[!UICONTROL Dateinamenerweiterungen]**: Legt die Dateinamenerweiterungen für Dateitypen fest (durch Kommas getrennt), die für diese Anwendung akzeptiert werden. Der Standardwert lautet `dwg`. Setzen Sie keinen Punkt vor und kein Leerzeichen zwischen die Erweiterungen.
 
-**[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Stichwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
+**[!UICONTROL Dokumentinformationen konvertieren]**: Fügt Dokumentinformationen aus dem Dialogfeld „Eigenschaften“ der Quelldatei hinzu, einschließlich Titel, Thema, Autor, Schlüsselwörtern, Manager, Unternehmen, Kategorie und Kommentaren. Standardmäßig ist diese Option aktiviert.
 
 **[!UICONTROL Lesezeichen zu Adobe PDF hinzufügen:]** Konvertiert Überschriften in Lesezeichen.
 
@@ -625,6 +625,6 @@ Sie können die Einstellungen für andere Anwendungen nicht mithilfe von Adminis
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-Die Unterstützung dieser Dateitypen muss ggf. angepasst werden. Weitere Informationen finden Sie unter &quot;Hinzufügen der Unterstützung für weitere native Dateiformate&quot;in [Programmieren mit AEM Formularen](https://www.adobe.com/go/learn_aemforms_programming_62).
+Die Unterstützung dieser Dateitypen muss ggf. angepasst werden. Weitere Informationen finden Sie unter „Hinzufügen von Unterstützung für zusätzliche native Dateiformate“ in [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_62).
 
-Wenn Sie Hilfe bei der Konfiguration eines PDFG-Netzdruckers benötigen, finden Sie weiter Informationen unter[ Einrichten eines PDFG-Netzdruckers (nur Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).
+Wenn Sie Hilfe bei der Konfiguration eines PDFG-Netzwerkdruckers benötigen, finden Sie weitere Informationen unter [Einrichten eines PDFG-Netzwerkdruckers (nur Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md).
