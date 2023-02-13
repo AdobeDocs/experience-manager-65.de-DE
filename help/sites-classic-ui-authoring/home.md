@@ -5,9 +5,9 @@ description: In diesem Handbuch werden die Authoring-Konzepte in AEM mit der kla
 seo-description: Covers the concepts of authoring in AEM in the classic UI.
 exl-id: 4ce591f1-a361-473a-b07d-a618f5c57f58
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '346'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -45,9 +45,9 @@ In diesem Handbuch werden die Authoring-Konzepte in AEM mit der klassischen Benu
 
 * [AEM-Tutorials](https://helpx.adobe.com/de/experience-manager/kt/index/aem-6-4-videos.html)
 * [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)
-* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de)
 * [Benutzerhandbuch zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=de#home)
 * [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)
