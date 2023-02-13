@@ -11,27 +11,27 @@ discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 feature: Upgrading
 exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1011'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
 # Repository-Neustrukturierung für AEM Communities in 6.5 {#repository-restructuring-for-aem-communities-in}
 
-Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 6.4](/help/sites-deploying/repository-restructuring.md) -Seite verwenden, sollten Kunden, die auf AEM 6.5 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen zu bewerten, die sich auf die AEM Communities-Lösung auswirken. Einige Änderungen erfordern während des Aktualisierungsprozesses von AEM 6.5 Arbeitsaufwand, während andere bis zu einer zukünftigen Aktualisierung verschoben werden können.
+Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die auf AEM 6.4 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Neustrukturierungen einzuschätzen, die sich auf AEM Communities auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während der Aktualisierung auf AEM 6.5, während andere bis zu einer zukünftigen Aktualisierung verschoben werden können.
 
 **Mit der Aktualisierung auf 6.5**
 
 * [Vorlagen für E-Mail-Benachrichtigungen](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#e-mail-notification-templates)
 * [Abonnement-Konfigurationen](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#subscription-configurations)
 
-**Vor der künftigen Aktualisierung**
+**Vor zukünftigen Aktualisierungen**
 
 * [Badging-Konfigurationen](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#badging-configurations)
 * [Klassische Konsolen-Designs für Communities](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#classic-communities-console-designs)
 * [Konfigurationen zur Anmeldung über Facebook](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#facebook-social-login-configurations)
-* [Sprachwahl-Konfigurationen](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#language-options-configurations)
+* [Konfigurationen zur Sprachwahl](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#language-options-configurations)
 
 * [Konfigurationen zur Anmeldung über Pinterest](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
 * [Bewertungskonfigurationen](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#scoring-configurations)
@@ -54,7 +54,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Manuelle Migration ist erforderlich, wenn Sie unter "<code>/apps/settings</code>". Sie können den Granite Configuration Manager verwenden, um die Migration durchführen.</p> <p>Sie können die Migration durchführen, indem Sie die -Eigenschaft festlegen <code>mergeList</code> nach <code>true</code> zu "<code>/libs/settings/community/subscriptions</code>" und fügen Sie einen <code>nt:unstructured</code> untergeordneten Knoten.</p> </td>
+   <td><p>Manuelle Migration wird benötigt, wenn Sie zu einem neuen Pfad unter „<code>/apps/settings</code>“ wechseln möchten. Sie können den Granite Configuration Manager verwenden, um die Migration durchzuführen.</p> <p>Sie können die Migration durchführen, indem Sie auf dem Knoten <code>/libs/settings/community/subscriptions</code> die Eigenschaft <code>mergeList</code> auf <code>true</code> festlegen und einen untergeordneten Knoten <code>nt:unstructured</code> hinzuzufügen.</p> </td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
@@ -77,7 +77,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Manuelle Migration ist erforderlich, wenn Sie unter "<code>/apps/settings</code>". Sie können den Granite Configuration Manager verwenden, um die Migration durchführen.</p> <p>Sie können die Migration durchführen, indem Sie die -Eigenschaft festlegen <code>mergeList</code> nach <code>true</code> zu "<code>/libs/settings/community/subscriptions</code>" und fügen Sie einen <code>nt:unstructured</code> untergeordneten Knoten.</p> </td>
+   <td><p>Manuelle Migration wird benötigt, wenn Sie zu einem neuen Pfad unter „<code>/apps/settings</code>“ wechseln möchten. Sie können den Granite Configuration Manager verwenden, um die Migration durchzuführen.</p> <p>Sie können die Migration durchführen, indem Sie auf dem Knoten <code>/libs/settings/community/subscriptions</code> die Eigenschaft <code>mergeList</code> auf <code>true</code> festlegen und einen untergeordneten Knoten <code>nt:unstructured</code> hinzuzufügen.</p> </td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
@@ -95,12 +95,12 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
    <td>/etc/watchwords</td>
   </tr>
   <tr>
-   <td><strong>Neuer Speicherort</strong></td>
+   <td><strong>Neue Speicherorte</strong></td>
    <td>/libs/community/watchwords</td>
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td>Eine Aufgabe zur verzögerten Migration steht zur Verfügung, um die Communities-Konfigurationen zu bereinigen.<br /> <p>Die Aufgabe verschiebt Schlagwörter von <code>/etc/watchwords</code> nach <code>/conf/global/settings/community/watchwords</code>.</p> <p>Wenn benutzerdefinierte Schlagwörter in SCM gespeichert sind, sollten sie in bereitgestellt werden. <code>/apps/settings/...</code> und Sie müssen sicherstellen, dass es keine Überlagerungen gibt <code>/conf/global/settings/...</code> -Konfiguration, die Vorrang haben würde.</p> <p>Migrationsaufgabe entfernt <code>/etc</code> Standorte.</p> </td>
+   <td>Eine Aufgabe zur verzögerten Migration steht zur Verfügung, um die Communities-Konfigurationen zu bereinigen.<br /> <p>Die Aufgabe verschiebt Schlagwörter von <code>/etc/watchwords</code> nach <code>/conf/global/settings/community/watchwords</code>.</p> <p>Wenn benutzerdefinierte Schlagwörter in SCM gespeichert werden, sollten sie anschließend in <code>/apps/settings/...</code> bereitgestellt werden, und Sie müssen sicherstellen, dass es keine Überlagerung mit einer <code>/conf/global/settings/...</code>-Konfiguration gibt, die Vorrang hätte.</p> <p>Migrationsaufgabe entfernt <code>/etc</code>-Speicherorte.</p> </td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
@@ -109,7 +109,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
  </tbody>
 </table>
 
-## Vor der künftigen Aktualisierung {#prior-to-upgrade}
+## Vor zukünftigen Aktualisierungen {#prior-to-upgrade}
 
 ### Badging-Konfigurationen {#badging-configurations}
 
@@ -120,7 +120,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
    <td><code>/etc/community/badging</code></td>
   </tr>
   <tr>
-   <td><strong>Neuer Speicherort</strong></td>
+   <td><strong>Neue Speicherorte</strong></td>
    <td><p><strong>Badge-Regeln:</strong></p> <p><code>/libs/settings/community/badging</code></p> <p><strong>Badge-Bilder: </strong></p> <p>Für Standardbilder: <code>/etc/community/badging/images are moved to /libs/community/badging/images</code></p> <p>Für benutzerdefinierte Bilder: <code>/content/community/badging/images</code></p> <p> </p> </td>
   </tr>
   <tr>
@@ -129,14 +129,14 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
     <ol>
      <li>Erstellen Sie mit dem <strong>Konfigurationsbrowser</strong> unter <strong>Tools</strong> einen Bucket für den Site-Kontext.</li>
      <li>Wechseln Sie zum Stammordner der Site.</li>
-     <li>Setzen Sie <code>cq:confproperty</code> auf den Pfad des Buckets, in dem Sie alle Ihre Einstellungen speichern wollen. Dasselbe kann über die Site <strong>Bearbeitungsassistent - Eingabe der Cloud-Konfiguration festlegen</strong> festgelegt werden.</li>
-     <li>Verschieben relevanter Badging-Regeln und Scoring-Regeln aus <code>/etc/community/*</code> zum im vorherigen Schritt erstellten Site-Kontext-Bucket.</li>
+     <li>Legen Sie <code>cq:confproperty</code> auf den Pfad des Buckets fest, in dem Sie alle Ihre Einstellungen speichern möchten. Dasselbe kann über die Site <strong>Bearbeitungsassistent - Eingabe der Cloud-Konfiguration festlegen</strong> festgelegt werden.</li>
+     <li>Verschieben Sie die relevanten Badging- und Bewertungsregeln von <code>/etc/community/*</code> in den im vorherigen Schritt erstellten Kontext-Bucket der Site.</li>
      <li>Passen Sie die Eigenschaften der Badging- und Bewertungsregeln im Stammverzeichnis der Site an, um relative Referenzen auf neue Speicherorte der Regeln zu haben.
       <ol>
-       <li>Wenn beispielsweise die -Eigenschaft für <code>cq:conf = /conf/we-retail</code>, dann <code>badgingRules [] = community/badging/rules</code> , wenn Regeln jetzt in diesen neuen Behälter verschoben werden.</li>
+       <li>Beispiel: Bei der Eigenschaft <code>cq:conf = /conf/we-retail</code> gilt <code>badgingRules [] = community/badging/rules</code>, wenn Regeln jetzt in diesen neuen Bucket verschoben werden.</li>
       </ol> </li>
-     <li>Passen Sie auf die gleiche Weise die Verweise auf Bewertungsregeln in einem Badging-Regel-Knoten an, um einen relativen Pfad zu erhalten.</li>
-    </ol> <p> </p> <p>Bereinigen Sie schließlich durch Entfernen der Ressource. <code>/etc/community/badging</code></p> </td>
+     <li>Passen Sie auf die gleiche Weise die Verweise auf Bewertungsregeln in einem Badging-Regelknoten an, um einen relativen Pfad zu erhalten.</li>
+    </ol> <p> </p> <p>Schließlich bereinigen Sie durch Entfernen der Ressource <code>/etc/community/badging</code></p> </td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
@@ -188,9 +188,9 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
      <li>Migrieren Sie vorhandene Konfigurationen im bisherigen Speicherort an den neuen Speicherort.
       <ol>
        <li>Erstellen Sie manuell neue Konfigurationen zur Anmeldung über Facebook über die AEM-Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud-Services &gt; Konfiguration zur Anmeldung über Facebook</strong>.<br /> oder <br /> </li>
-       <li>Kopieren Sie alle neuen Facebook Cloud-Konfigurationen vom vorherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Kopieren Sie alle neuen Facebook-Cloud-Konfigurationen vom bisherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Aktualisieren Sie jeden AEM Communities-Site-Stamm, um auf die neue Facebook Social-Anmeldekonfiguration zu verweisen, indem Sie die <code>[cq:Page]/jcr:content@cq:conf</code> -Eigenschaft auf den absoluten Pfad im neuen Speicherort.</li>
+     <li>Aktualisieren Sie jedes Stammverzeichnis der AEM Communities-Site, um auf die neue Konfiguration zur Anmeldung über Facebook zu verweisen, indem Sie die Eigenschaft <code>[cq:Page]/jcr:content@cq:conf</code> auf den absoluten Pfad des neuen Speicherorts festlegen.</li>
      <li>Trennen Sie den bestehenden Facebook Connect Cloud Service von sämtlichen Stammverzeichnissen der AEM Communities-Sites, die aktualisiert wurden, um auf den neuen Speicherort zu verweisen.</li>
     </ol> </td>
   </tr>
@@ -201,7 +201,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
  </tbody>
 </table>
 
-### Sprachwahl-Konfigurationen {#language-options-configurations}
+### Konfigurationen zur Sprachwahl {#language-options-configurations}
 
 <table>
  <tbody>
@@ -244,9 +244,9 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
      <li>Migrieren Sie vorhandene Konfigurationen im bisherigen Speicherort an den neuen Speicherort.
       <ol>
        <li>Erstellen Sie manuell neue Konfigurationen zur Anmeldung über Pinterest über die AEM-Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud-Services &gt; Konfiguration zur Anmeldung über Pinterest</strong>.<br /> oder</li>
-       <li>Kopieren Sie alle neuen Pinterest Cloud-Konfigurationen vom vorherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Kopieren Sie alle neuen Pinterest-Cloud-Konfigurationen vom bisherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Aktualisieren Sie jeden AEM Communities-Site-Stamm, um auf die neue Pinterest Social-Anmeldekonfiguration zu verweisen, indem Sie die Einstellungen unter <code>[cq:Page]/jcr:content@cq:conf</code> -Eigenschaft auf den absoluten Pfad im neuen Speicherort.</li>
+     <li>Aktualisieren Sie jedes Stammverzeichnis der AEM Communities-Site, um auf die neue Konfiguration zur Anmeldung über Pinterest zu verweisen, indem Sie die Eigenschaft <code>[cq:Page]/jcr:content@cq:conf</code> auf den absoluten Pfad des neuen Speicherorts festlegen.</li>
      <li>Trennen Sie den bestehenden Pinterest Connect Cloud Service von sämtlichen Stammverzeichnissen der AEM Communities-Sites, die aktualisiert wurden, um auf den neuen Speicherort zu verweisen.</li>
     </ol> </td>
   </tr>
@@ -271,17 +271,17 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Zur Anpassung an die neue Repository-Struktur können Scoring-Regeln in gespeichert werden. <code>/apps/settings/</code> oder /<code>conf/.../settings</code></p>
+   <td><p>Zur Anpassung an die neue Repository-Struktur können Bewertungsregeln gespeichert werden unter: <code>/apps/settings/</code> oder /<code>conf/.../settings</code></p>
     <ol>
-     <li>Für <code>/apps/settings</code>, würde dies als globale oder Standardregeln fungieren, die in SCM verwaltet werden.</li>
-    </ol> <p>Kontextabhängige Konfigurationen erstellen in <code>/conf/</code> durch Verwendung von CRXDELite:</p>
+     <li>Für <code>/apps/settings</code> würde dies als globale oder Standardregeln dienen, die in SCM verwaltet werden.</li>
+    </ol> <p>Erstellen Sie kontextbezogene Konfigurationen in <code>/conf/</code>, indem Sie CRXDELite verwenden:</p>
     <ol>
-     <li>Erstellen Sie die Konfigurationen in der gewünschten <code>/conf/.../settings</code> location<br /> </li>
-     <li>Die Communities-Site muss über Folgendes verfügen: <code>cq:conf </code>Eigenschaftseigenschaft festgelegt.
+     <li>Erstellen Sie die Aktionen im gewünschten Speicherort <code>/conf/.../settings</code>.<br /> </li>
+     <li>Für die Communities-Site muss die Eigenschaft <code>cq:conf </code> festgelegt sein.
       <ol>
-       <li>Wenn nicht <code>cq:conf</code> festgelegt ist, würden Scoring-Regeln direkt aus dem angegebenen Pfad für die Eigenschaft gelesen.<code>scoringRules</code>" auf dem Stammknoten der Site, z. B.: <code>/content/we-retail/us/en/community/jcr:content</code></li>
+       <li>Wenn <code>cq:conf</code> nicht festgelegt ist, würden die Bewertungsregeln direkt aus dem angegebenen Pfad für die Eigenschaft <code>scoringRules</code> auf dem Stammknoten der Site gelesen, z. B.: <code>/content/we-retail/us/en/community/jcr:content</code></li>
       </ol> </li>
-    </ol> <p>Bereinigung: Ressource entfernen <code>/etc/community/scoring</code></p> </td>
+    </ol> <p>Datenbereinigung: Entfernen Sie die Ressource <code>/etc/community/scoring</code></p> </td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
@@ -310,9 +310,9 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
      <li>Migrieren Sie vorhandene Konfigurationen im bisherigen Speicherort an den neuen Speicherort.
       <ol>
        <li>Erstellen Sie manuell neue Konfigurationen zur Anmeldung über Twitter über die AEM-Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud-Services &gt; Konfiguration zur Anmeldung über Twitter</strong>.<br /> oder <br /> </li>
-       <li>Kopieren Sie alle neuen Twitter Cloud-Konfigurationen vom vorherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Kopieren Sie alle neuen Twitter-Cloud-Konfigurationen vom bisherigen Speicherort an den entsprechenden neuen Speicherort unter <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Aktualisieren Sie jeden AEM Communities-Site-Stamm, um auf die neue Twitter Social-Anmeldekonfiguration zu verweisen, indem Sie die <code>[cq:Page]/jcr:content@cq:conf</code> -Eigenschaft auf den absoluten Pfad im neuen Speicherort.</li>
+     <li>Aktualisieren Sie jedes Stammverzeichnis der AEM Communities-Site, um auf die neue Konfiguration zur Anmeldung über Twitter zu verweisen, indem Sie die Eigenschaft <code>[cq:Page]/jcr:content@cq:conf</code> auf den absoluten Pfad des neuen Speicherorts festlegen.</li>
      <li>Trennen Sie den bestehenden Twitter Connect Cloud Service von sämtlichen Stammverzeichnissen der AEM Communities-Sites, die aktualisiert wurden, um auf den neuen Speicherort zu verweisen.</li>
     </ol> </td>
   </tr>
@@ -341,7 +341,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td>Die vorhandenen benutzerdefinierten Vorlagen werden zu <code>/conf/global/settings/community/template/&lt;groups/sites/functions&gt;</code></td>
+   <td>Die vorhandenen benutzerdefinierten Vorlagen werden verschoben nach <code>/conf/global/settings/community/template/&lt;groups/sites/functions&gt;</code></td>
   </tr>
  </tbody>
 </table>
