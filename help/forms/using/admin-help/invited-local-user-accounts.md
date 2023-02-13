@@ -1,5 +1,5 @@
 ---
-title: Konten eingeladener und lokaler Benutzer verwalten
+title: Verwalten der Konten eingeladener und lokaler Benutzer
 seo-title: Managing invited and local user accounts
 description: Unter Verwendung von Document Security können Sie nach eingeladenen und lokalen Benutzerkonten suchen, diese anzeigen, bearbeiten, sperren, entsperren und löschen.
 seo-description: Using document security, you can search for, view, edit, lock, unlock, and delete invited and local user accounts.
@@ -12,13 +12,13 @@ discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 feature: Document Security
 exl-id: 23f71b34-a0cb-4664-bb8b-a60f33dc70d8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1196'
 ht-degree: 100%
 
 ---
 
-# Konten eingeladener und lokaler Benutzer verwalten {#managing-invited-and-local-user-accounts}
+# Verwalten der Konten eingeladener und lokaler Benutzer {#managing-invited-and-local-user-accounts}
 
 Auf der Seite „Eingeladene und lokale Benutzer“ können Sie eingeladene und lokale Benutzer verwalten. Diese Seite wird nur angezeigt, wenn die folgenden Voraussetzungen erfüllt sind:
 
