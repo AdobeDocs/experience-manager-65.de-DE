@@ -13,9 +13,9 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
 source-git-commit: 99c9eddad7a2ec7eb23b3c374a1c0e65e141da20
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2005'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -98,13 +98,13 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
    Antwort: Wenn sich ein Text- oder Bildzeichnungselement an derselben Position befindet wie ein überlagertes Element (z. B. ein Rechteck), ist der Inhalt des Textzeichnungselements nicht sichtbar, wenn dieses in der Dokumentreihenfolge später kommt (in der Hierarchieansicht des AEM Forms Designer). PDF unterstützt eine transparente Überlagerung, HTML/Browser unterstützen jedoch keine transparente Überlagerung.
 
-1. Warum werden einige Schriften im HTML-Formular in anderer Form angezeigt als beim Entwerfen des Formulars?
+1. Warum werden einige Schriften im HTML-Formular in einer anderen Form angezeigt als beim Entwerfen des Formulars?
 
-   Antwort: HTML5 Forms lässt das Einbetten von Schriftarten nicht zu (im Gegensatz zu PDF forms, in die Schriftarten in das Formular eingebettet sind). Damit die HTML-Version eines Formulars erwartungsgemäß wiedergegeben werden kann, stellen Sie sicher, dass die Schriftarten im CRX-Repository (AEM Content Repository) Ihres AEM Forms-Servers und auf dem Computer verfügbar sind, auf dem AEM Designer installiert ist. Wenn die Schriftarten nicht im CRX-Repository Ihres AEM Forms-Servers oder an dem Speicherort verfügbar sind, an dem AEM Designer installiert ist, wird das Formular mit Fallback-Schriftarten wiedergegeben.
+   Antwort: HTML5-Formulare erlauben keine Einbettung von Schriftarten (im Gegensatz zu PDF-Formularen, bei denen Schriftarten innerhalb des Formulars eingebettet sind). Damit die HTML-Version eines Formulars wie erwartet gerendert wird, stellen Sie sicher, dass die Schriftarten im CRX-Repository (AEM Content-Repository) Ihres AEM Forms-Servers und auf dem Rechner, auf dem AEM Designer installiert ist, verfügbar sind. Wenn die Schriftarten im CRX-Repository Ihres AEM Forms-Servers oder an dem Ort, an dem AEM Designer installiert ist, nicht verfügbar sind, wird das Formular mit Ersatzschriftarten gerendert.
 
 1. Werden die Attribute „vAlign“ und „hAlign“ in HTML-Formularen unterstützt?
 
-   Antwort: Ja, die Attribute vAlign und hAlign werden unterstützt. Das Attribut „vAlign“ wird in Internet Explorer und mehrzeiligen Feldern nicht unterstützt.
+   Antwort: Ja, die Attribute „vAlign“ und „hAlign“ werden unterstützt. Das Attribut „vAlign“ wird in Internet Explorer und mehrzeiligen Feldern nicht unterstützt.
 
 1. Unterstützen HTML5-Formulare hebräische Zeichen?
 
@@ -116,7 +116,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Warum sind HTML-Formulare größer als PDF-Formulare?
 
-   Antwort: Eine Vielzahl von Zwischendatenstrukturen und -objekten wie Formular-DOM, Daten-DOM und Layout-DOM sind zum Rendern einer XDP in einem HTML-Formular erforderlich.
+   Antwort: Um ein XDP-Formular in ein HTML-Formular umzuwandeln, sind viele zwischengeschaltete Datenstrukturen und Objekte wie Formular-DOM, Daten-DOM und Layout-DOM erforderlich.
 
    Für PDF-Formulare verfügt Adobe Acrobat über eine integrierte XTG-Engine zum Erstellen von Daten-Zwischenstrukturen und Objekten. Acrobat übernimmt auch Layout und Skripte.
 
@@ -149,7 +149,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Wenn Sie den Mauszeiger über ein Feld bewegen, wird eine QuickInfo angezeigt. Wie deaktiviert man sie?
 
-   Antwort: Um die QuickInfo beim Bewegen des Mauszeigers zu deaktivieren, wählen Sie im Bereich &quot;Barrierefreiheit&quot;von Designer die Option &quot;Keine&quot;aus.
+   Antwort: Um den Tooltip beim Daraufzeigen zu deaktivieren, wählen Sie im Bedienfeld „Barrierefreiheit“ von Designer die Option „Keine“.
 
 1. In Designer kann ein Benutzer benutzerdefinierte Erscheinungsbildeigenschaften von Optionsfeldern und Kontrollkästchen konfigurieren. Berücksichtigen HTML5-Formulare beim Rendern von Formularen auch diese benutzerdefinierten Erscheinungsbildeigenschaften?
 
@@ -157,7 +157,7 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Wenn ein HTML5-Formular in einem unterstützten Browser geöffnet wird, wird der Rand der angrenzenden Felder nicht richtig ausgerichtet oder Teilformulare erscheinen überlappend. Wenn das gleiche HTML5-Formular im Forms Designer in der Vorschau angezeigt wird, erscheinen die Felder und das Layout nicht falsch ausgerichtet und die Teilformulare erscheinen an der richtigen Position. Wie behebt man das Problem?
 
-   Antwort: Wenn ein Teilformular auf Textfluss eingestellt ist und das Teilformular einen ausgeblendeten Rahmen hat, wird der Rand der angrenzenden Felder nicht richtig ausgerichtet oder Teilformulare werden überlagert. Um das Problem zu beheben, können Sie die versteckten &lt;border>-Elemente aus dem entsprechenden XDP entfernen oder mit Kommentaren versehen. Beispielsweise wird das folgende &lt;border>-Element als Kommentar markiert:
+   Antwort: Wenn ein Unterformular auf Flussinhalt eingestellt ist und das Unterformular ein ausgeblendetes Randelement hat, wird der Rand der nebeneinander platzierten Felder nicht richtig ausgerichtet oder die Unterformulare erscheinen überlappend. Um das Problem zu beheben, können Sie die versteckten &lt;border>-Elemente aus dem entsprechenden XDP entfernen oder mit Kommentaren versehen. Beispielsweise wird das folgende &lt;border>-Element als Kommentar markiert:
 
    ```xml
                <!--<border>
@@ -168,15 +168,15 @@ Es gibt einige häufig gestellte Fragen (FAQ) zu Layout, Skriptunterstützung un
 
 1. Warum funktionieren Bildschirmlesehilfen nicht ordnungsgemäß mit dem Datums-/Uhrzeitfeldobjekt?
 
-   Antwort: Bildschirmlesehilfen unterstützen keine Datums-/Uhrzeitfelder. Sie können jedoch manuell Datum/Uhrzeit in das Feld eingeben, damit die Bildschirmlesehilfe dies liest. Verwenden Sie eine QuickInfo oder Text der Bildschirmlesehilfe, um den Benutzer anzuweisen, Datum/Uhrzeit für das Feld manuell auszuwählen.
+   Antwort: Bildschirmlesehilfen unterstützen keine Datums-/Zeitfelder. Sie können jedoch manuell Datum/Uhrzeit in das Feld eingeben, damit die Bildschirmlesehilfe dies liest. Verwenden Sie eine QuickInfo oder Text der Bildschirmlesehilfe, um den Benutzer anzuweisen, Datum/Uhrzeit für das Feld manuell auszuwählen.
 
 1. Unterstützen HTML5-Formulare Anzeigemuster für schwebende Felder?
 
    Antwort: HTML5-Formulare unterstützen keine Anzeigemuster für schwebende Felder.
 
-1. Welches Format hat das Datumsfeld in HTML5 Forms?
+1. Welches Format hat das Datumsfeld in HTML5-Formularen?
 
-Antwort: Das Datumsfeld akzeptiert das ISO-Format JJJJ-MM-TT. Wenn Sie ein Datum in einem anderen Format angeben, übernimmt das Datumsfeld die Formatierung erst, wenn der Benutzer die Tabulatortaste zum Feld drückt.
+Antwort: Das Datumsfeld akzeptiert das ISO-Format JJJJ-MM-TT. Wenn Sie ein Datum in einem anderen Format angeben, übernimmt das Datumsfeld die Formatierung erst, wenn der Benutzer das Feld mit der Tabulatortaste verlässt.
 
 ### Skripterstellung {#scripting}
 
@@ -195,12 +195,12 @@ Antwort: Das Datumsfeld akzeptiert das ISO-Format JJJJ-MM-TT. Wenn Sie ein Datum
 1. Gibt es eine empfohlene Benennungskonvention und gibt es reservierte Schlüsselwörter, die vermieden werden sollten?
 
    Antwort:
-   * In AEM Forms Designer wird empfohlen, den Namen eines Objekts (z. B. eines Teilformulars oder eines Textfelds) nicht mit einem Unterstrich (_). Um Unterstriche am Anfang des Namens zu verwenden, fügen Sie nach dem Unterstrich ein Präfix hinzu._&lt;prefix>&lt;objectname>.
+   * In AEM Forms Designer wird empfohlen, den Namen eines Objekts (z. B. eines Unterformulars oder eines Textfelds) nicht mit einem Unterstrich (_) zu beginnen. Um einen Unterstrich am Anfang des Namens zu verwenden, fügen Sie ein Präfix nach dem Unterstrich hinzu,_&lt;prefix>&lt;objectname>.
    * Alle HTML5-Formular-APIs sind reservierte Schlüsselwörter. Bei benutzerdefinierten APIs/Funktionen müssen Sie einen Namen verwenden, der nicht mit den [HTML5 Forms APIs](/help/forms/using/scripting-support.md) identisch ist.
 
 1. Unterstützen HTML5-Formulare schwebende Felder?
 
-   Antwort: Ja, HTML5 Forms unterstützt schwebende Felder. Um schwebende Felder zu aktivieren, fügen Sie folgende Eigenschaften zum Renderprofil hinzu:
+   Antwort: Ja, HTML5-Forms unterstützen schwebende Felder. Um schwebende Felder zu aktivieren, fügen Sie folgende Eigenschaften zum Renderprofil hinzu:
 
    >[!NOTE]
    >
@@ -216,7 +216,7 @@ Antwort: Das Datumsfeld akzeptiert das ISO-Format JJJJ-MM-TT. Wenn Sie ein Datum
 
 1. Führt HTML5-Formulare das Initialisierungsskript und das Ereignis „Form Ready“ mehrmals aus?
 
-   Antwort: Ja, die Initialisierungsskripten und formularbereiten Ereignisse werden mehrmals ausgeführt, mindestens einmal auf dem Server und einmal auf der Clientseite. Es wird empfohlen, Skripte wie „initialize“ oder „form:ready“-Ereignisse basierend auf einer Geschäftslogik (Formular- oder Felddaten) zu schreiben, sodass die Aktion basierend auf dem Status der Daten und „idempotent“ (wenn die Daten gleich sind) ausgeführt wird.
+   Antwort: Ja, die Initialisierungsskripte und Formularbereitschaftsereignisse werden mehrfach ausgeführt, mindestens einmal auf dem Server und einmal auf der Client-Seite. Es wird empfohlen, Skripte wie „initialize“ oder „form:ready“-Ereignisse basierend auf einer Geschäftslogik (Formular- oder Felddaten) zu schreiben, sodass die Aktion basierend auf dem Status der Daten und „idempotent“ (wenn die Daten gleich sind) ausgeführt wird.
 
 ### XDP entwerfen {#designing-xdp}
 
