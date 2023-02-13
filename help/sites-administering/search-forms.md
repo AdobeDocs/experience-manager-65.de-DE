@@ -7,7 +7,7 @@ topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2042'
 ht-degree: 100%
 
@@ -329,11 +329,11 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 >[!NOTE]
 >
 >* Die allgemeinen Suchprädikate sind hier definiert:
->  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >* Sucheigenschaften, die nur mit siteadmin (klassische Benutzeroberfläche) verbunden sind, befinden sich unter:
->  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
->   * Sie sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
+   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+   >   * Sie sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
 >
 >Diese Angaben dienen nur als Referenz. Sie dürfen `/libs` nicht verändern.
 
