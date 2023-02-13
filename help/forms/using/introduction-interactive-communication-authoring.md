@@ -1,5 +1,5 @@
 ---
-title: Einführung in die Benutzeroberfläche für interaktive Kommunikationserstellung
+title: Einführung in die Benutzeroberfläche für Erstellung von interaktiven Kommunikationen
 seo-title: An introduction to the various user interface elements you can use to author Interactive Communication
 description: Eine Einführung in die verschiedenen Elemente der Benutzeroberfläche, mit denen Sie interaktive Kommunikation erstellen können
 seo-description: An introduction to the various user interface elements you can use to author Interactive Communication
@@ -12,7 +12,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1315'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ Wählen Sie eine Komponente, tippen Sie auf ![field-level](assets/field-level.pn
 
 * **Komponentenbrowser** Enthält Komponenten, mit denen Sie die Druck- und Webkanäle eines Dokuments erstellen können. Sie können Komponenten per Drag-und-Drop in die interaktive Kommunikation ziehen, um Elemente hinzuzufügen, und hinzugefügte Elemente gemäß den Anforderungen konfigurieren. In der folgenden Tabelle werden die im Komponentenbrowser aufgelisteten Komponenten für Druck- und Webkanäle beschrieben. 
 
-| **Komponente** | **Druckkanal** | **Webkanal** | **Funktion** |
+| **Komponente** | **Druckkanal** | **Web-Kanal** | **Funktion** |
 |---|---|---|---|
 | Diagramm | ✓ | ✓ | Fügt ein Diagramm hinzu, das Sie in interaktiver Kommunikation zur visuellen Darstellung von zweidimensionalen Daten verwenden können, die aus einem FDM-Sammlungselement abgerufen werden. |
 | Dokumentfragment | ✓ | ✓ | Ermöglicht das Hinzufügen einer wiederverwendbaren Komponente, eines Textes, einer Liste oder einer Bedingung zu einer interaktiven Kommunikation. Die wiederverwendbare Komponente, die Sie einer interaktiven Kommunikation hinzufügen, kann entweder formulardatenmodellbasiert sein oder ohne ein Formulardatenmodell sein. |
@@ -75,7 +75,7 @@ Wählen Sie eine Komponente, tippen Sie auf ![field-level](assets/field-level.pn
 
 &#42; Verwenden Sie Layout-Fragmente im Druckkanal, um Tabellen hinzuzufügen.
 
-&#42;&#42; Im Druckkanal sind Zielbereiche in der XDP/Druckvorlage vordefiniert. Sie können keine neuen Zielbereiche mithilfe der Autorenoberfläche für die interaktive Kommunikation hinzufügen.
+&#42;&#42; Im Druckkanal sind Zielbereiche in der XDP-/Druckvorlage vordefiniert. Sie können keine neuen Zielbereiche mithilfe der Autorenoberfläche für die interaktive Kommunikation hinzufügen.
 
 * **Datenquellenbrowser** Datenquellenbrowser zeigt die verfügbaren Datenquellen in dem Formulardatenmodell an, das Sie beim Erstellen der interaktiven Kommunikation ausgewählt haben.
 
