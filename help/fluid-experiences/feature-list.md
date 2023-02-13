@@ -5,9 +5,9 @@ index: n
 feature: Authoring
 exl-id: 3ac61645-4873-4602-b740-2236aba5bc5e
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '342'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -37,7 +37,7 @@ In den folgenden Tabellen sind die Funktionen von AEM Fluid Experiences mit eine
 | [Bildausgabedarstellungen](/help/assets/image-presets.md) |
 | [Metadaten und Tag-Management](/help/assets/metadata.md) |
 | [Suchen](/help/assets/manage-assets.md) |
-| [](/help/assets/manage-assets.md)Sammlungen und Lightbox[](/help/assets/light-box.md) |
+| [Sammlungen](/help/assets/manage-assets.md) und [Lightbox](/help/assets/light-box.md) |
 | [Profile](/help/assets/processing-profiles.md) |
 | [Versionskontrolle](/help/assets/manage-assets.md) |
 | [Duplikatserkennung](/help/assets/duplicate-detection.md) |
@@ -49,7 +49,7 @@ In den folgenden Tabellen sind die Funktionen von AEM Fluid Experiences mit eine
 |---|
 | [HTTP-API](/help/assets/mac-api-assets.md) |
 | [Strukturierte Inhaltsmodelle](/help/assets/content-fragments/content-fragments.md) |
-| [Content-Services](https://helpx.adobe.com/de/experience-manager/kt/sites/using/content-services-tutorial-use.html) |
+| [Content-Services](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de) |
 | [Experience Fragments](/help/sites-authoring/experience-fragments.md) |
 | HTTP-API für strukturierte Inhalte (lesen) |
 | HTTP-API für strukturierte Inhalte (CRUD) |
@@ -66,7 +66,7 @@ In den folgenden Tabellen sind die Funktionen von AEM Fluid Experiences mit eine
 | [Inhaltsübersetzung](/help/sites-administering/translation.md) |
 | [Überwachung](/help/sites-deploying/monitoring-and-maintaining.md) |
 | [Sicherung](/help/sites-administering/backup-and-restore.md) |
-| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html) |
+| [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de) |
 | [PIM-Integration](/help/sites-authoring/managing-product-information.md) |
 | [Projekte und Aufgaben](/help/sites-authoring/projects.md) |
 | [Workflows](/help/sites-administering/workflows-starting.md) |
@@ -85,7 +85,7 @@ In den folgenden Tabellen sind die Funktionen von AEM Fluid Experiences mit eine
 * [Fluid Experiences für Headless-Anwendungsfälle](https://helpx.adobe.com/de/experience-manager/kt/eseminars/gems/aem-headless-usecases.html)
 * [AEM Content Service: Was, Warum und Wie?](https://helpx.adobe.com/de/experience-manager/kt/eseminars/ask-the-expert/aem-content-services.html)
 * [Verwenden von Content-Services](https://helpx.adobe.com/de/experience-manager/kt/sites/using/structured-fragments-content-services-feature-video-use.html)
-* [Entwickeln einer Mobile App](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/developing/developing-content-services.html)
+* [Entwickeln einer Mobile App](https://experienceleague.adobe.com/docs/experience-manager-64/mobile/developing/developing-content-services.html?lang=de)
 * [Häufig gestellte Fragen zum Zugriff für Drittanbieter](https://helpx.adobe.com/de/experience-manager/kt/sites/using/content-services-tutorial-use/part7.html)
 * [Fluid Experiences überall](https://helpx.adobe.com/de/experience-manager/using/using-sling-apis.html)
-* [Verwenden von Sling-APIs](https://helpx.adobe.com/experience-manager/using/using-sling-apis.html)
+* [Verwenden von Sling-APIs](https://helpx.adobe.com/de/experience-manager/using/using-sling-apis.html)
