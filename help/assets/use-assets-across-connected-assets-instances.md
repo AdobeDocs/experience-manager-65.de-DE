@@ -9,7 +9,7 @@ exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
 workflow-type: tm+mt
 source-wordcount: '3877'
-ht-degree: 95%
+ht-degree: 98%
 
 ---
 
@@ -33,14 +33,14 @@ Die Funktion „Connected Assets“ unterstützt die oben genannten Anwendungsf�
 
 Beim Bearbeiten von Seiten als Ziel im [!UICONTROL Seiteneditor] können die Autoren nahtlos Assets aus einer anderen [!DNL Assets]-Bereitstellung, die als Asset-Quelle dient, suchen, durchsuchen und einbetten. Die Administratoren erstellen eine einmalige Integration einer Bereitstellung von [!DNL Experience Manager] mit [!DNL Sites]-Funktion mit einer anderen Bereitstellung von [!DNL Experience Manager] mit [!DNL Assets]-Funktion. Website-Autoren können Dynamic Media-Bilder auch über Connected Assets auf den Webseiten Ihrer Site verwenden und die Dynamic Media-Funktionen wie intelligentes Zuschneiden und Bildvorgaben nutzen.
 
-Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und den Zugriff auf Remote-Assets im Site-Editor. Für alle anderen Anwendungsfälle, bei denen möglicherweise die vollständige Asset-Korpusform auf Sites verfügbar sein muss, sollten Sie die Assets stapelweise migrieren, anstatt Connected Assets zu verwenden. Siehe [Migrationshandbuch für Experience Manager Assets](/help/assets/assets-migration-guide.md).
+Für [!DNL Sites]-Autoren stehen die Remote-Assets als schreibgeschützte lokale Assets zur Verfügung. Die Funktion unterstützt die nahtlose Suche und den Zugriff auf Remote-Assets im Site-Editor. Für alle anderen Anwendungsfälle, bei denen das gesamte Korpus der Assets auf den Sites verfügbar sein muss, sollten Sie in Erwägung ziehen, die Assets in großen Mengen zu migrieren, anstatt Connected Assets zu verwenden. Siehe [Migrationshandbuch für Experience Manager Assets](/help/assets/assets-migration-guide.md).
 
 ### Voraussetzungen und unterstützte Implementierungen {#prerequisites}
 
 Bevor Sie diese Funktion verwenden oder konfigurieren, stellen Sie Folgendes sicher:
 
 * Die Benutzer sind Teil von entsprechenden Benutzergruppen für jede Implementierung.
-* Bei Implementierungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6,5 [!DNL Assets] arbeitet mit [!DNL Experience Manager] as a Cloud Service zusammen. Weitere Informationen zur Funktionsweise dieser Funktion in [!DNL Experience Manager] as a [!DNL Cloud Service] finden Sie unter [Connected Assets in Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html).
+* Bei Implementierungstypen von [!DNL Adobe Experience Manager] ist eines der unterstützten Kriterien erfüllt. [!DNL Experience Manager] 6,5 [!DNL Assets] arbeitet mit [!DNL Experience Manager] as a Cloud Service zusammen. Weitere Informationen zur Funktionsweise dieser Funktion in [!DNL Experience Manager] as a [!DNL Cloud Service] finden Sie unter [Connected Assets in Experience Manager as a Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/use-assets-across-connected-assets-instances.html?lang=de).
 
    |  | [!DNL Sites] as a [!DNL Cloud Service] | [!DNL Experience Manager] 6.5 [!DNL Sites] auf AMS | [!DNL Experience Manager] 6.5 [!DNL Sites] On-Premise |
    |---|---|---|---|
@@ -70,9 +70,9 @@ Nachfolgend erfahren Sie mehr über die verschiedenen Rollen, die am Konfigurier
 
 ### Connected Assets-Architektur {#connected-assets-architecture}
 
-Mit Experience Manager können Sie eine Remote-DAM-Implementierung als Quelle mit mehreren Experience Manager [!DNL Sites]-Implementierungen verbinden. Sie können jedoch eine [!DNL Sites]-Implementierung nur mit einer Remote-DAM-Implementierung verbinden.
+Mit Experience Manager können Sie eine Remote-DAM-Implementierung als Quelle mit mehreren Experience Manager [!DNL Sites]-Implementierungen verbinden. Sie können jedoch eine [!DNL Sites]-Implementierung mit nur einer Remote-DAM-Implementierung verbinden.
 
-Bewerten Sie die optimale Anzahl von Sites-Instanzen für die Verbindung mit einer Remote-DAM-Bereitstellung. Adobe empfiehlt, schrittweise Sites-Instanzen mit der Bereitstellung zu verbinden und zu testen, ob es keine Leistungsbeeinträchtigungen auf dem Remote-DAM gibt, da jede verbundene Sites-Instanz zum Datenverkehr auf dem Remote-DAM beiträgt.
+Ermitteln Sie die optimale Anzahl von Sites-Instanzen für das Verbinden mit einer entfernten DAM-Implementierung. Adobe empfiehlt, Sites-Instanzen schrittweise in die Implementierung einzubinden und zu testen, dass es keine Auswirkungen auf die Leistung des Remote-DAM gibt, da jede verbundene Sites-Instanz zum Datenverkehr auf dem Remote-DAM beiträgt.
 
 Die folgenden Diagramme veranschaulichen die unterstützten Szenarien:
 
@@ -163,7 +163,7 @@ Verwenden von [!DNL Dynamic Media] mit Connected Assets:
 So konfigurieren Sie [!DNL Dynamic Media] in [!DNL Assets]- und [!DNL Sites]-Implementierungen:
 
 1. Aktivieren und konfigurieren Sie [!DNL Dynamic Media] als globale Konfiguration auf der Remote-Implementierung der Autoreninstanz [!DNL Assets]. Informationen zum Konfigurieren von Dynamic Media finden Sie unter [Konfigurieren von Dynamic Media](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services).
-Wählen Sie in der Remote-Bereitstellung von [!DNL Assets] im [!UICONTROL Modus Dynamic Media-Synchronisation] die Option **[!UICONTROL Standardmäßig aktiviert]** aus.
+Wählen Sie in der Remote-Bereitstellung von [!DNL Assets] im Modus [!UICONTROL Dynamic Media-Synchronisation] die Option **[!UICONTROL Standardmäßig aktiviert]** aus.
 
 1. Erstellen Sie die Konfiguration für Connected Assets wie unter [Konfigurieren der Verbindung zwischen Websites und Asset-Bereitstellungen](#configure-a-connection-between-sites-and-assets-deployments) beschrieben. Wählen Sie außerdem die Option **[!UICONTROL Abrufen der ursprünglichen Ausgabedarstellung für Dynamic Media Connected Assets]**.
 
@@ -268,9 +268,9 @@ Konfigurieren Sie die Funktion „Connected Assets“ nur, wenn Sie die in einer
 
 +++
 
-+++**Können mehrere [!DNL Sites] Bereitstellungen in einer Remote-DAM-Bereitstellung nach der Konfiguration von Connected Assets?**
++++**Kann man nach der Konfiguration von Connected Assets mehrere [!DNL Sites]-Implementierungen mit einer Remote-DAM-Implementierung verbinden?**
 
-Ja, Sie können mehrere [!DNL Sites] Bereitstellungen in einer Remote-DAM-Bereitstellung nach dem Konfigurieren von Connected Assets. Weitere Informationen finden Sie unter [Connected Assets-Architektur](#connected-assets-architecture).
+Ja, Sie können mehrere [!DNL Sites]-Implementierungen mit einer Remote-DAM-Implementierung verbinden, nachdem Sie Connected Assets konfiguriert haben. Weitere Informationen finden Sie unter [Connected Assets-Architektur](#connected-assets-architecture).
 
 +++
 

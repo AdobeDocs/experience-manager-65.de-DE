@@ -5,7 +5,7 @@ exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
 source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
 workflow-type: tm+mt
 source-wordcount: '374'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -43,15 +43,15 @@ Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 
 * [AEM-Tutorials](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html?lang=de)
 * [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)
-* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de)
 * [Benutzerhandbuch zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other)
+* [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other?lang=de)
 * [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=de)
 
 ## Copyright, Lizenzen und Haftungsausschlüsse {#copyright-licenses-and-disclaimers}
 
-Weitere Informationen finden Sie unter [https://www.adobe.com/legal/terms/enterprise-licensing.html](https://www.adobe.com/de/legal/terms/enterprise-licensing.html)
+Weitere Informationen finden Sie unter [https://www.adobe.com/de/legal/terms/enterprise-licensing.html](https://www.adobe.com/de/legal/terms/enterprise-licensing.html).
 
-Hinweis zu Drittlizenzen: [https://www.adobe.com/de/products/eula/third_party](https://www.adobe.com/products/eula/third_party.html)
+Hinweis zu Drittlizenzen: [https://www.adobe.com/de/products/eula/third_party](https://www.adobe.com/de/products/eula/third_party.html)

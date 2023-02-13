@@ -16,7 +16,7 @@ ht-degree: 100%
 ---
 
 
-# AEM 6.5-Entwickleranleitung {#developing}
+# AEM 6.5-Benutzerhandbuch für Entwickler {#developing}
 
 + [Benutzerhandbuch für Entwickler – Überblick](home.md)
 + Einführung für Entwickler{#introduction}

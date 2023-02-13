@@ -9,7 +9,7 @@ exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 source-git-commit: 461424de9158e14e251037004ea3590ed35bb4a0
 workflow-type: tm+mt
 source-wordcount: '3584'
-ht-degree: 90%
+ht-degree: 99%
 
 ---
 
@@ -226,26 +226,26 @@ Sie können die Konfigurationsdatei mit den unten beschriebenen Optionen verwend
 
 >[!NOTE]
 >
->Der S3-Connector unterstützt sowohl IAM-Benutzerauthentifizierung als auch IAM-Rollenauthentifizierung. Um die Authentifizierung der IAM-Rolle zu verwenden, lassen Sie die `accessKey` und `secretKey` Werte aus Ihrer Konfigurationsdatei. Der S3-Connector wird dann standardmäßig auf die [IAM-Rolle](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) der Instanz zugewiesen wurde.
+>Der S3-Connector unterstützt sowohl die IAM-Benutzerauthentifizierung als auch die IAM-Rollenauthentifizierung. Um die IAM-Rollenauthentifizierung zu verwenden, lassen Sie die Werte `accessKey` und `secretKey` aus Ihrer Konfigurationsdatei weg. Der S3-Connector wird dann standardmäßig auf die [IAM-Rolle](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/java-dg-roles.html) gesetzt, die der Instanz zugewiesen wurde.
 
 | Schlüssel | Beschreibung | Standard | Erforderlich |
 | --- | --- | --- | --- |
 | accessKey | Greifen Sie auf die Schlüssel-ID für den IAM-Benutzer zu, der Zugriff auf den Bucket hat. |  | Ja, wenn keine IAM-Rollen verwendet werden. |
 | secretKey | Geheimer Zugriffsschlüssel für den IAM-Benutzer mit Zugriff auf den Bucket. |  | Ja, wenn keine IAM-Rollen verwendet werden. |
 | cacheSize | Die Größe (in Byte) des lokalen Caches. | 64 GB | Anzahl  |
-| connectionTimeout | Legen Sie die Wartezeit (in Millisekunden) vor dem Timeout beim erstmaligen Herstellen einer Verbindung fest. | 10000 | Anzahl  |
-| maxCachedBinarySize | Binärdateien mit einer Größe, die kleiner oder gleich diesem Wert ist (in Byte), werden im Arbeitsspeicher-Cache gespeichert. | 17408 (17 KB) | Anzahl  |
+| connectionTimeout | Legen Sie die Wartezeit (in Millisekunden) bis zum Timeout beim erstmaligen Herstellen einer Verbindung fest. | 10000 | Anzahl  |
+| maxCachedBinarySize | Binärdateien mit einer Größe kleiner oder gleich diesem Wert (in Bytes) werden im Speichercache gespeichert. | 17408 (17 KB) | Anzahl  |
 | maxConnections | Legen Sie die maximale Anzahl der zulässigen offenen HTTP-Verbindungen fest. | 50 | Anzahl  |
-| maxErrorRetry | Legen Sie die maximale Anzahl von Wiederholungsversuchen für fehlgeschlagene (wiederholbare) Anforderungen fest. | 3 | Anzahl  |
-| minRecordLength | Die Mindestgröße eines Objekts (in Byte), das im Datenspeicher gespeichert werden soll. | 16384 | Anzahl  |
+| maxErrorRetry | Legen Sie die maximale Anzahl von Wiederholungsversuchen für fehlgeschlagene (wiederholbare) Anfragen fest. | 3 | Anzahl  |
+| minRecordLength | Die Mindestgröße eines Objekts (in Bytes), das im Datenspeicher gespeichert werden soll. | 16384 | Anzahl  |
 | path | Der lokale Pfad des AEM-Datenspeichers. | `crx-quickstart/repository/datastore` | Anzahl  |
-| proxyHost | Legen Sie den optionalen Proxyhost fest, über den der Client eine Verbindung herstellen soll. |  | Anzahl  |
+| proxyHost | Legen Sie den optionalen Proxy-Host fest, über den der Client eine Verbindung herstellen soll. |  | Anzahl  |
 | proxyPort | Legen Sie den optionalen Proxy-Port fest, über den der Client eine Verbindung herstellen soll. |  | Anzahl  |
 | s3Bucket | Name des S3-Buckets. |  | Ja |
-| s3EndPoint | S3 REST API-Endpunkt. |  | Anzahl  |
-| s3Region | Region, in der sich der Behälter befindet. Siehe dies [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) für weitere Details. | Region, in der die AWS-Instanz ausgeführt wird. | Anzahl  |
+| s3EndPoint | Endpunkt der S3 REST-API. |  | Anzahl  |
+| s3Region | Region, in der sich der Bucket befindet. Weitere Informationen finden Sie auf dieser [Seite](https://docs.aws.amazon.com/general/latest/gr/s3.html). | Region, in der die AWS-Instanz ausgeführt wird. | Anzahl  |
 | socketTimeout | Legen Sie die Wartezeit (in Millisekunden) für Daten fest, die über eine eingerichtete, offene Verbindung übertragen werden sollen, bevor die Verbindung unterbrochen und geschlossen wird. | 50000 | Anzahl  |
-| stagingPurgeInterval | Das Intervall (in Sekunden) zum Bereinigen der fertigen Uploads aus dem Staging-Cache. | 300 | Anzahl  |
+| stagingPurgeInterval | Das Intervall (in Sekunden) zum endgültigen Löschen fertiggestellter Uploads aus dem Staging-Cache. | 300 | Anzahl  |
 | stagingRetryInterval | Das Intervall (in Sekunden) zum Wiederholen fehlgeschlagener Uploads. | 600 | Anzahl  |
 | stagingSplitPercentage | Der Prozentsatz von `cacheSize` zur Verwendung für das Staging asynchroner Uploads. | 10 | Anzahl  |
 | uploadThreads | Die Anzahl der Upload-Threads, die für asynchrone Uploads verwendet werden. | 10 | Anzahl  |
@@ -306,7 +306,7 @@ Der Cache hat eine Größenbeschränkung und kann mithilfe des cacheSize-Paramet
 
 #### Downloads {#downloads}
 
-Der lokale Cache wird auf die Datei-/Blobanforderung geprüft, bevor ein Zugriff auf den Datenspeicher erfolgt. Wenn der Cache das konfigurierte Limit (siehe `cacheSize`-Parameter) überschreitet, während dem Cache eine Datei hinzugefügt wird, werden einige der Dateien entfernt, um Speicher freizugeben.
+Der lokale Cache wird auf die Datei-/Blob-Anforderung geprüft, bevor ein Zugriff auf den Datenspeicher erfolgt. Wenn der Cache das konfigurierte Limit (siehe `cacheSize`-Parameter) überschreitet, während dem Cache eine Datei hinzugefügt wird, werden einige der Dateien entfernt, um Speicher freizugeben.
 
 #### Asynchrone Uploads {#async-upload}
 

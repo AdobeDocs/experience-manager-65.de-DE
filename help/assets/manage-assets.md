@@ -301,9 +301,9 @@ Wählen Sie unter folgenden Optionen:
 | Auflösung |  | Zum Festlegen der Auflösung: Mit dieser Einstellung wird bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Der Standardwert ist 150. |
 | Farbraum |  | Wählen Sie das Farbraummenü und einen Farbraum für die PDF-Datei aus. Die meisten PDF-Dateien enthalten sowohl RGB- als auch CMYK-Farbbilder. Der RGB-Farbraum eignet sich besonders gut, um Dateien online anzuzeigen. |
 |  | Automatisch erkennen | Der Farbraum der PDF-Datei wird beibehalten. |
-|  | Immer RGB | Zur Konvertierung in den RGB-Farbraum. |
-|  | Immer CMYK | Zur Konvertierung in den CMYK-Farbraum. |
-|  | Immer Graustufen | Zur Konvertierung in den Graustufenfarbraum. |
+|  | Immer RGB | Konvertiert in den RGB-Farbraum. |
+|  | Immer CMYK | Konvertiert in den CMYK-Farbraum. |
+|  | Immer Graustufen | Konvertiert in den Graustufenfarbraum. |
 
 #### Festlegen von eVideo-Uploadoptionen {#setting-evideo-upload-options}
 
@@ -321,7 +321,7 @@ Zum Transkodieren einer Videodatei, indem Sie aus verschiedenen Videovorgaben au
 
 Wenn Sie automatisch ein Bild- oder Rotationsset aus den hochgeladenen Bildern erstellen möchten, klicken Sie auf die Spalte „Aktiv“ der Vorgabe, die Sie verwenden möchten. Sie können mehrere Vorgaben auswählen. 
 
-Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
+Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssätzen](/help/assets/config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).
 
 ### Gestreamte Uploads {#streamed-uploads}
 

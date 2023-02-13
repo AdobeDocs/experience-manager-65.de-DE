@@ -6,16 +6,16 @@ solution: Experience Manager, Experience Manager Forms
 audience: end-user
 user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
-user-guide-description: Digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren.
+user-guide-description: Erstellen, Verwalten, Veröffentlichen und Aktualisieren von digitalen Formularen.
 role: User
 source-git-commit: 29b283970f2c37782700b69302715e8404ce83ae
 workflow-type: tm+mt
 source-wordcount: '3835'
-ht-degree: 95%
+ht-degree: 99%
 
 ---
 
-# Adobe Experience Manager 6.5, Forms-Anleitung {#forms}
+# Handbuch zu Adobe Experience Manager 6.5 Forms {#forms}
 
 + [AEM 6.5 Forms-Handbuch](home.md)
 + Versionshinweise {#release-notes-new-features}
@@ -28,7 +28,7 @@ ht-degree: 95%
    + [Einführung in das Authoring adaptiver Formulare](using/introduction-forms-authoring.md)
    + [Einführung in interaktive Kommunikation](using/interactive-communications-overview.md)
    + [Einführung in das Verwalten von Formularen](using/introduction-managing-forms.md)
-   + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/introduction.html)
+   + [Einführung in den Automated Forms Conversion Service (AFCS)](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/introduction.html?lang=de)
    + Tutorial: Erstellen Ihres ersten adaptiven Formulars {#create-first-adaptive-form}
       + [Tutorial: Erstellen Sie Ihr erstes adaptives Formular](using/create-your-first-adaptive-form.md)
       + [Schulung: Erstellen eines adaptiven Formulars](using/create-adaptive-form.md)
@@ -62,7 +62,7 @@ ht-degree: 95%
       + [Installieren und konfigurieren Sie Datenerfassungsfunktionen](using/installing-configuring-aem-forms-osgi.md)
       + [Installieren und Konfigurieren eines formularzentrierten Workflows auf OSGi](using/installing-configuring-forms-centric-workflow-on-osgi.md)
       + [Installieren und konfigurieren Sie Interaktive Kommunikationen](using/installing-configuring-intreactive-communication-correspondence-management.md)
-      + [Installieren und Konfigurieren des Service für die automatische Formularkonvertierung](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/configure-service.html)
+      + [Installieren und Konfigurieren des Service für die automatische Formularkonvertierung](https://experienceleague.adobe.com/docs/aem-forms-automated-conversion-service/table-of-contents/configure-service.html?lang=de)
    + Installieren von AEM Forms on JEE {#jee-installation}
       + [Unterstützte Plattformen für AEM Forms on JEE](using/aem-forms-jee-supported-platforms.md)
       + [Installieren und Bereitstellen von AEM Forms on JEE mithilfe von JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_installTurnkey_65_de)
@@ -96,10 +96,10 @@ ht-degree: 95%
       + [Vorbereiten der Aktualisierung von AEM Forms](https://www.adobe.com/go/learn_aemforms_prepareupgrade_65_de)
       + [Adobe Experience Manager Forms on JEE – Checkliste für die Aktualisierung und Planung](https://www.adobe.com/go/learn_aemforms_upgrade_checklist_65_de)
       + [Aktualisieren auf AEM 6.5 Forms on JEE](using/upgrade-forms-jee.md)
-      + [Aktualisieren auf Adobe Experience Manager Forms on JEE für JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65)
-      + [Aktualisieren auf AEM Forms on JEE für JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65)
-      + [Aktualisieren auf Adobe Experience Manager Forms on JEE für WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65)
-      + [Aktualisieren auf Adobe Experience Manager Forms on JEE für WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65)
+      + [Aktualisieren auf Adobe Experience Manager Forms on JEE für JBoss](https://www.adobe.com/go/learn_aemforms_upgradeJBoss_65_de)
+      + [Aktualisieren auf AEM Forms on JEE für JBoss Turnkey](https://www.adobe.com/go/learn_aemforms_upgradeTurnkey_65_de)
+      + [Aktualisieren auf Adobe Experience Manager Forms on JEE für WebSphere](https://www.adobe.com/go/learn_aemforms_upgradeWebSphere_65_de)
+      + [Aktualisieren auf Adobe Experience Manager Forms on JEE für WebLogic](https://www.adobe.com/go/learn_aemforms_upgradeWebLogic_65_de)
 + Verwalten von AEM Forms {#manage-administer-aem-forms}
    + [AEM Forms für OSGi-Gruppen und -Berechtigungen](using/forms-groups-privileges-tasks.md)
    + [Erstellen neuer Ordner für die Formularkategorisierung](using/creating-new-folders-categorize-forms.md)
@@ -330,7 +330,7 @@ ht-degree: 95%
 + Integrieren von AEM Forms mit Experience Cloud-Lösungen {#integrate-aem-forms-with-experience-cloud-solutions}
    + [Erstellen zielgerichteter Erlebnisse in AEM Forms](/help/forms/using/experience-targeting-forms.md)
    + [Messen und Verbessern der Effektivität und Konvertierung von Formularen](using/measure-improve-performance-forms-documents.md)
-   + [Analytics mithilfe von Cloud Service Framework](using/configure-analytics-forms-documents.md)
+   + [Analytics mit dem Cloud Service-Framework](using/configure-analytics-forms-documents.md)
    + [Analytics mit Adobe Launch](using/integrate-aem-forms-with-adobe-analytics.md)
    + [Anzeigen und Verstehen der Analytics-Berichte in AEM Forms](using/view-understand-aem-forms-analytics-reports.md)
    + [Erstellen und Verwalten von A/B-Test für adaptive Formulare](using/ab-testing-adaptive-forms.md)
@@ -372,15 +372,15 @@ ht-degree: 95%
    + [AEM aktivieren, um durch Document Security geschützte PDF-Dokumente zu durchsuchen](using/enable-search-for-drm-protected-pdf-and-office-documents-in-aem.md)
    + [Schützen von Dokumenten im Auftrag eines anderen Benutzers](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
-   + [Hilfe zu Forms Designer](using/forms-designer-help.md)
+   + [Forms Designer-Hilfe](using/forms-designer-help.md)
    + [Verwenden von Designer](https://www.adobe.com/go/learn_aemforms_designer_65_de)
-   + [Quickstart-Lernprogramme für Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-   + [Beispiele für Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-   + [Skriptgrundlagen für Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-   + [Skriptreferenz für Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-   + [FormCalc-Referenz für Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65)
+   + [Quickstart-Lernprogramme für Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65_de)
+   + [Beispiele für Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65_de)
+   + [Skriptgrundlagen für Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65_de)
+   + [Skriptreferenz für Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65_de)
+   + [FormCalc-Referenz für Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65_de)
    + [Verwenden der Scribble-Signatur in HTML5-Formularen](using/scribble-signature.md)
-   + [Inhalt auf Seite Null in Designer ändern](using/changing-page-zero-content-designer.md)
+   + [Ändern des Inhalts auf Seite Null in Designer](using/changing-page-zero-content-designer.md)
 + Passen Sie AEM Forms an {#customize-aem-forms}
    + [Erscheinungsbild-Framework für adaptive und HTML5-Formulare](using/introduction-widgets.md)
    + [Erstellen einer benutzerdefinierten adaptiven Formularvorlage](using/custom-adaptive-forms-templates.md)
@@ -452,10 +452,10 @@ ht-degree: 95%
    + Verwalten von Endpunkten {#manage-endpoints}
       + [Endpunkte hinzufügen aktivieren, ändern oder entfernen](/help/forms/using/admin-help/adding-enabling-modifying-or-removing.md)
       + [E-Mail-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-email-endpoints.md)
-      + [oAuth2.0-Authentifizierung konfigurieren](/help/forms/using/oauth2-support-for-mail-service.md)
+      + [Konfigurieren der oAuth2.0-Authentifizierung](/help/forms/using/oauth2-support-for-mail-service.md)
       + [Remoting-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
       + [Endpunkte des Typs „Überwachter Ordner“ konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
-      + [Task Manager-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
+      + [Konfigurieren der Task Manager-Endpunkte](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Arten von Endpunkten](/help/forms/using/admin-help/types-endpoints.md)
    + Konfigurieren von Acrobat Reader DC Extensions {#configure-acrobat-reader-dc-extensions}
       + [Von Acrobat Reader DC Extensions verwendete Zertifikatstypen](/help/forms/using/admin-help/certificate-types-used-acrobat-reader.md)
@@ -473,7 +473,7 @@ ht-degree: 95%
       + [Adobe PDF-Einstellungen konfigurieren](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Sicherheitseinstellungen konfigurieren](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Dateitypeinstellungen konfigurieren](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [PDF Generator-Konfigurationsdateien importieren und exportieren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [Importieren und Exportieren der PDF Generator-Konfigurationsdateien](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [PDF/A-Unterstützung aktivieren](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Einrichten eines PDFG-Netzwerkdruckers (nur Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Ersatzschriftarten konfigurieren](/help/forms/using/admin-help/configuring-fallback-fonts.md)
@@ -579,14 +579,14 @@ ht-degree: 95%
    + [Ad-hoc-Abfragen beim Prozess-Reporting](/help/forms/using/process-reporting/adhoc-queries-in-process-reporting.md)
    + [Fehlerbehebung bei Process Reporting](/help/forms/using/process-reporting/troubleshooting-process-management.md)
 + Entwicklerreferenz {#developer-reference}
-   + [Entwicklergrundlagen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html)
-   + [HTML-Vorlagensprache](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+   + [Entwicklergrundlagen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/home.html?lang=de)
+   + [HTML-Vorlagensprache](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de)
    + [AEM-Plug-In, um adaptive Formulare zu debuggen](https://adobe-consulting-services.github.io/acs-aem-tools/aem-chrome-plugin/adaptive-form/)
    + [AEM Forms Java API-Referenz](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/index.html)
    + [AEM Forms on JEE Java API-Referenz](https://helpx.adobe.com/de/experience-manager/6-5/forms/programlc/javadoc/index.html)
    + [Form Bridge APIs für HTML5-Formulare](using/form-bridge-apis.md)
    + [Referenz für JavaScript-Bibliotheks-API für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/index.html)
-   + [Assembler Service und DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddxRef_65)
+   + [Assembler Service und DDX-Referenz](https://www.adobe.com/go/learn_aemforms_ddxRef_65_de)
    + [Workbench-Hilfe](https://www.adobe.com/go/learn_aemforms_workbench_65_de)
    + Programmieren mit AEM Forms für JEE {#programming-aem-forms-jee}
       + Einführung in die Programmierung mit AEM Forms für JEE {#introduction-programming-aem-forms-jee}
@@ -684,9 +684,9 @@ ht-degree: 95%
          + [Validieren eines DDX-Dokuments mithilfe der Webservice-API](developing/validate-ddx-document-using-web.md)
 + Fehlerbehebung {#troubleshooting}
    + [Einige Formularfunktionen können nicht mit bestimmten Versionen von Oracle JDK verwendet werden](using/unable-to-use-forms-features-with-certain-versions-of-oracle-jdk.md)
-   + [Zusätzliche Schritte zum Abrufen einer E-Mail mit Anhang für die adaptive Forms on JEE-Version](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
-   + [Konvertieren von Word- oder Excel-Dateien in PDF unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
-   + [XFA-basierte PDF forms können nicht in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer oder Apple Safari geöffnet werden.](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
+   + [Zusätzliche Schritte zum Abrufen einer E-Mail mit Anhang für die adaptive Formulare in der JEE-Version](/help/forms/using/additional-steps-to-use-email-with-attachments.md)
+   + [Konvertieren von Word- oder Excel-Dateien in PDF ist unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
+   + [XFA-basierte PDF-Formulare können in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer oder Apple Safari nicht geöffnet werden.](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
    + [CRX-Repository kann nicht wiederhergestellt werden](/help/forms/using/restore-crx-repository.md)
    + [Service unavailable errors after installation AEM 6.5.15.0 Service Pack](/help/forms/using/aem-service-pack-installation-solution.md)
 + Alte Dokumentation {#legacy-documentation}

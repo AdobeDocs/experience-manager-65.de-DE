@@ -11,11 +11,11 @@ role: Admin
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
 workflow-type: tm+mt
 source-wordcount: '630'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# AEM 6.5-Administratorenanleitung {#administering}
+# Benutzerhandbuch für AEM 6.5-Admins {#administering}
 
 + [Übersicht über die Administratorenanleitung](home.md)
 + Sites-Funktionen {#introduction}
@@ -99,7 +99,7 @@ ht-degree: 99%
    + [Content-Disposition-Filter](content-disposition-filter.md)
    + [Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5](/help/sites-administering/cug-mapping.md)
    + [Cookie-Unterstützung für dieselbe Website](same-site-cookie-support.md)
-+ Personalisierung    {#personalization}
++ Personalisierung {#personalization}
    + [Personalisierung ](personalization.md)
    + [Konfigurieren von ContextHub](https://experienceleague.adobe.com/docs/experience-manager-65/developing/personlization/ch-configuring.html?lang=de)
    + [ClientContext](client-context.md)
@@ -112,7 +112,7 @@ ht-degree: 99%
    + [Integrieren mit Services von Dritten](third-party-services.md)
    + [Integration mit Salesforce](salesforce.md)
    + [Integrieren mit Adobe Target](target.md)
-   + [Integration mit Adobe Learning Manager](adobe-learningmanager.md)
+   + [Integrieren mit Adobe Learning Manager](adobe-learningmanager.md)
    + [Integration mit Adobe Analytics](adobeanalytics.md)
    + [Herstellen einer Verbindung mit Adobe Analytics und Erstellen von Frameworks](adobeanalytics-connect.md)
    + [Konfigurieren des Linktrackings für Adobe Analytics](adobeanalytics-link.md)

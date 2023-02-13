@@ -13,7 +13,7 @@ feature: Configuration,Scene7 Mode
 source-git-commit: a8db862b4a90ee6679de44df9508caf75a4c3eec
 workflow-type: tm+mt
 source-wordcount: '6489'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -119,13 +119,13 @@ Weitere Informationen finden Sie unter [Installieren des Feature Pack 18912 für
 
 1. Nachdem die Verbindung erfolgreich hergestellt wurde, richten Sie Folgendes ein. Überschriften mit einem Sternchen (*) sind Pflichtfelder:
 
-   * **[!UICONTROL Unternehmen]** – der Name des Dynamic Media-Kontos.
+   * **[!UICONTROL Unternehmen]**: der Name des Dynamic Media-Kontos.
       >[!IMPORTANT]
-      In einer Instanz von Experience Manager wird nur eine Dynamic Media-Konfiguration in Cloud Services unterstützt. nicht mehr als eine Konfiguration hinzufügen. Mehrere Dynamic Media-Konfigurationen auf einer Experience Manager-Instanz werden von Adobe _nicht_ unterstützt oder empfohlen.
+      In einer Instanz von Experience Manager wird nur eine Dynamic Media-Konfiguration in Cloud Services unterstützt. Fügen Sie nicht mehr als eine Konfiguration hinzu. Mehrere Dynamic Media-Konfigurationen auf einer Experience Manager-Instanz werden _nicht_ unterstützt oder von Adobe empfohlen.
 
       <!-- CQDOC-19579 and CQDOC-19612 -->
 
-      Siehe auch [Dynamic Media-Firmenalias-Konto konfigurieren](/help/assets/dm-alias-account.md).
+      Siehe auch [Konfigurieren eines Firmen-Alias-Kontos in Dynamic Media](/help/assets/dm-alias-account.md).
 
    * **[!UICONTROL Pfad zum Stammordner des Unternehmens]**
 
@@ -154,9 +154,9 @@ Um einen ausgewählten Ordner zur Synchronisierung mit Dynamic Media zu markiere
    Wenn ein Asset aktiviert wurde, werden alle Aktualisierungen automatisch live in der S7-Bereitstellung übernommen.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
-1. Um Dynamic Media-Inhalte sicher in der Vorschau anzuzeigen, bevor sie veröffentlicht werden, verwendet die Experience Manager-Autoreninstanz eine Token-basierte Validierung und daher zeigt die Experience Manager-Autoreninstanz in der Vorschau standardmäßig Dynamic Media-Inhalte an. Sie können jedoch weitere IP-Adressen &quot;Zulassungslisten&quot;anlegen, um Benutzern Zugriff auf eine sichere Vorschau von Inhalten zu ermöglichen. Informationen zum Einrichten dieser Aktion in Experience Manager finden Sie unter [Konfigurieren von Dynamic Media-Veröffentlichungseinstellungen für Image-Server – Registerkarte „Sicherheit“](/help/assets/dm-publish-settings.md#security-tab).
+1. Um Dynamic Media-Inhalte sicher in der Vorschau anzuzeigen, bevor sie veröffentlicht werden, verwendet die Experience Manager-Autoreninstanz eine Token-basierte Validierung und daher zeigt die Experience Manager-Autoreninstanz in der Vorschau standardmäßig Dynamic Media-Inhalte an. Sie können jedoch auch weitere IP-Adressen auf die Zulassungsliste setzen, um Benutzenden Zugriff auf eine sichere Vorschau von Inhalten zu ermöglichen. Informationen zum Einrichten dieser Aktion in Experience Manager finden Sie unter [Konfigurieren von Dynamic Media-Veröffentlichungseinstellungen für Image-Server – Registerkarte „Sicherheit“](/help/assets/dm-publish-settings.md#security-tab).
 
-Wenn Sie Ihre Konfiguration weiter anpassen möchten, z. B. die Aktivierung von ACL (Access Control List)-Berechtigungen, können Sie optional eine der Aufgaben unter [(Optional) Konfigurieren Sie die erweiterten Einstellungen im Modus Dynamic Media - Scene7 .](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode).
+Wenn Sie Ihre Konfiguration weiter anpassen möchten, wie etwa Berechtigungen auf die Zugriffskontrollliste (ACL) aktivieren, können Sie auch eine der Aufgaben unter [(Optional) Konfigurieren der erweiterten Einstellungen in Dynamic Media – Scene7-Modus](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode) abschließen.
 
 <!-- 1. To securely preview Dynamic Media content before it gets published, Experience Manager uses token-based validation and hence Experience Manager Author previews Dynamic Media content by default. However, you can *allowlist* more IPs to provide users access to securely preview content. To set up this action in Experience Manager, see [Configure Dynamic Media Publish Setup for Image Server - Security tab](/help/assets/dm-publish-settings.md#security-tab).     * In Experience Manager Author mode, select the Experience Manager logo to access the global navigation console.
     * In the left rail, select the **[!UICONTROL Tools]** icon, then go to **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
@@ -183,10 +183,10 @@ Bei Bedarf können Sie die Schreibweise eines von Ihnen eingegebenen oder erneut
 
 Das geänderte Kennwort wird gespeichert, wenn Sie **[!UICONTROL Speichern]** oben rechts auf der Seite **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** auswählen.
 
-**So ändern Sie das Kennwort in Dynamic Media:**
+**Ändern des Kennworts für Dynamic Media:**
 
 1. Klicken Sie im Autorenmodus in Experience Manager auf das Experience Manager-Logo, um auf die Konsole für die globale Navigation zuzugreifen.
-1. Wählen Sie links in der Konsole das Symbol Tools und navigieren Sie zu **[!UICONTROL Cloud Services] > [!UICONTROL Dynamic Media-Konfiguration]**.
+1. Wählen Sie auf der linken Seite der Konsole das Werkzeug-Symbol und anschließend **[!UICONTROL Cloud Services] > [!UICONTROL Dynamic Media-Konfiguration]** aus.
 1. Wählen Sie im Browser für die Dynamic Media-Konfiguration im Bedienfeld links **[!UICONTROL global]**. Wählen Sie nicht das Ordnersymbol links neben **[!UICONTROL global]** aus. Wählen Sie dann **[!UICONTROL Bearbeiten]** aus.
 1. Wählen Sie auf der Seite **[!UICONTROL Dynamic Media-Konfiguration bearbeiten]** direkt unter dem Feld **[!UICONTROL Kennwort]** die Option **[!UICONTROL Kennwort ändern]** aus.
 1. Gehen Sie im Dialogfeld **[!UICONTROL Kennwort ändern]** wie folgt vor:
@@ -203,7 +203,7 @@ Das geänderte Kennwort wird gespeichert, wenn Sie **[!UICONTROL Speichern]** ob
 
 Wenn Sie die Konfiguration weiter anpassen und Dynamic Media – Scene7-Modus einrichten oder die Leistung optimieren möchten, können Sie eine oder mehrere der folgenden *optionalen* Aufgaben durchführen:
 
-* [(Optional) Aktivieren Sie ACL-Berechtigungen im Modus Dynamic Media - Scene7 .](#optional-enable-acl)
+* [(Optional) Aktivieren von ACL-Berechtigungen in Dynamic Media – Scene7-Modus](#optional-enable-acl)
 
 * [(Optional) Konfigurieren des Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB](#optional-config-dms7-assets-larger-than-2gb)
 
@@ -213,11 +213,11 @@ Wenn Sie die Konfiguration weiter anpassen und Dynamic Media – Scene7-Modus e
 
 * [(Optional) Filtern von Assets für die Replikation](#optional-filtering-assets-for-replication)
 
-### (Optional) Zugriffssteuerungslisten-Berechtigungen im Modus Dynamic Media - Scene7 aktivieren {#optional-enable-acl}
+### (Optional) Aktivieren von Zugriffskontrolllisten-Berechtigungen in Dynamic Media – Scene7-Modus {#optional-enable-acl}
 
-Wenn Sie den Dynamic Media-Scene7-Modus auf AEM ausführen, wird er derzeit weitergeleitet `/is/image` Anforderungen an die sichere Vorschau von Image Serving ohne Überprüfung der ACL (Access Control List)-Berechtigungen auf PlatformServerServlet. Sie können jedoch *enable* ACL-Berechtigungen. Weiterleiten der autorisierten `/is/image` -Anfragen. Wenn ein Benutzer nicht berechtigt ist, auf das Asset zuzugreifen, wird der Fehler &quot;403 - Verboten&quot;angezeigt.
+Wenn Sie den Scene7-Modus von Dynamic Media auf AEM ausführen, leitet er derzeit `/is/image`-Anforderungen an die sichere Vorschau der Bereitstellung von Bildern ohne Überprüfung der ACL-Berechtigungen (Zugriffskontrollliste) an das PlatformServerServlet weiter. Sie können jedoch ACL-Berechtigungen *aktivieren*. Dadurch werden die autorisierten `/is/image`-Anfragen weitergeleitet. Wenn ein Benutzer nicht berechtigt ist, auf das Asset zuzugreifen, wird der Fehler „403 – Forbidden“ angezeigt.
 
-**So aktivieren Sie ACL-Berechtigungen im Modus Dynamic Media - Scene7 :**
+**So aktivieren Sie ACL-Berechtigungen in Dynamic Media – Scene7-Modus:**
 
 1. Gehen Sie von Experience Manager aus zu **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 
@@ -229,16 +229,16 @@ Wenn Sie den Dynamic Media-Scene7-Modus auf AEM ausführen, wird er derzeit weit
 
 1. Scrollen Sie auf der Seite zum Namen *Adobe CQ Scene7 PlatformServer*.
 
-1. Wählen Sie rechts neben dem Namen das Stiftsymbol (**[!UICONTROL Konfigurationswerte bearbeiten]**).
+1. Klicken Sie rechts neben dem Namen auf das Beistiftsymbol (**[!UICONTROL Konfigurationswerte bearbeiten]**).
 
-1. Im **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** aktivieren Sie das Kontrollkästchen für die beiden folgenden Einstellungen:
+1. Aktivieren Sie auf der Seite **com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.name** das Kontrollkästchen für die beiden folgenden Einstellungen:
 
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name` - Wenn diese Einstellung aktiviert ist, werden die Berechtigungsergebnisse für zwei Minuten (Standard) zum Speichern zwischengespeichert.
-   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name` - Wenn diese Einstellung aktiviert ist, validiert sie den Zugriff eines Benutzers, während er Assets über Dynamic Media Image Server in der Vorschau anzeigt.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.cache.enable.name`: Wenn diese Einstellung aktiviert ist, werden die Berechtigungsergebnisse für zwei Minuten (Standard) zwischengespeichert.
+   * `com.adobe.cq.dam.s7imaging.impl.ps.PlatformServerServlet.validate.userAccess.name`: Wenn diese Einstellung aktiviert ist, wird der Zugriff eines Benutzers validiert, während Assets über den Bild-Server von Dynamic Media in der Vorschau angezeigt werden.
 
-   ![Aktivieren der Einstellungen der Zugriffssteuerungsliste im Modus Dynamic Media - Scene7](/help/assets/assets-dm/acl.png)
+   ![Aktivieren der Einstellungen der Zugriffskontrollliste in Dynamic Media – Scene7-Modus](/help/assets/assets-dm/acl.png)
 
-1. Wählen Sie rechts unten auf der Seite die Option **[!UICONTROL Speichern]**.
+1. Klicken Sie unten rechts auf der Seite auf **[!UICONTROL Speichern]**.
 
 ### (Optional) Konfigurieren des Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB {#optional-config-dms7-assets-larger-than-2gb}
 

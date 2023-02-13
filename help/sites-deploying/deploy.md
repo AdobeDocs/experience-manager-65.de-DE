@@ -177,7 +177,7 @@ Im folgenden Abschnitt wird die **eigenständige Installation** beschrieben. Det
 
 1. Doppelklicken Sie zum Starten der Instanz in einer GUI-Umgebung einfach auf die Datei **`cq-quickstart-6.5.0.jar`**.
 
-   Alternativ können Sie AEM an der Befehlszeile starten:
+   Alternativ können Sie AEM über die Befehlszeile starten:
 
    ```shell
        java -Xmx1024M -jar cq-quickstart-6.5.0.jar

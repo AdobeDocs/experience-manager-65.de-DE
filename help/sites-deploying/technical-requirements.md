@@ -9,7 +9,7 @@ exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
 source-git-commit: 26e71c5f09eb9fa3f3eda01deb871ac63e348a30
 workflow-type: tm+mt
 source-wordcount: '3529'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -91,14 +91,14 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen von Java Virtu
 
 | **Plattform** | **Unterstützungsebene** | **Verknüpfung** |
 |---|---|---|
-| Oracle Java SE 11 JDK - 64 Bit | A: Unterstützt `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/de/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
+| Oracle Java SE 11 JDK − 64 Bit | A: Unterstützt `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+11*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=24&lt;td>) |
 | Oracle Java SE 10 JDK | Z: Nicht unterstützt `[1]` |
 | Oracle Java SE 9 JDK | Z: Nicht unterstützt `[1]` |
-| Oracle Java SE 8 JDK - 64-Bit | A: Unterstützt `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/de/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
+| Oracle Java SE 8 JDK – 64 Bit | A: Unterstützt `[1]` | [Download](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | IBM J9 VM - Build 2.9, JRE 1.8.0 | A: Unterstützt `[2]` |
 | IBM J9 VM - Build 2.8, JRE 1.8.0 | A: Unterstützt `[2]` |
-| Azul Zulu OpenJDK 11 - 64 Bit | A: Unterstützt `[3]` |  |
-| Azul Zulu OpenJDK 8 - 64 Bit | A: Unterstützt `[3]` |  |
+| Azul Zulu OpenJDK 11 − 64 Bit | A: Unterstützt `[3]` |  |
+| Azul Zulu OpenJDK 8 − 64 Bit | A: Unterstützt `[3]` |  |
 
 1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java SE-Produkte umgestiegen. Java 9, Java 10 und Java 12 sind Nicht-LTS-Releases von Oracle (weitere Informationen finden Sie in der [Roadmap für Oracle Java SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in Produktionsumgebungen bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java. Der Support und die Bereitstellung von Oracle Java SE, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kunden unterstützt, die die Oracle Java SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
 
@@ -417,7 +417,7 @@ Wenn Sie Dynamic Media auf Linux verwenden, müssen die folgenden Voraussetzunge
 
 Um Dynamic Media unter Windows zu verwenden, müssen Sie verteilbare Microsoft Visual Studio 2010-, 2013- und 2015-Dateien für x64 und x86 installieren.
 
-Windows x64:
+Für Windows x64:
 
 * Abruf von Microsoft Visual Studio 2010 Redistributable unter [https://www.microsoft.com/de-de/download/details.aspx?id=13523](https://www.microsoft.com/de-de/download/details.aspx?id=13523)
 * Abruf von Microsoft Visual Studio 2013 Redistributable unter [https://www.microsoft.com/de-de/download/details.aspx?id=40784](https://www.microsoft.com/de-de/download/details.aspx?id=40784)
@@ -499,7 +499,7 @@ Windows x86:
 >
 >* PDF Generator erfordert die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder der Acrobat 2017-Version 17.011.30078, um die Konvertierung durchzuführen.
 >* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt.
->* PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft Office Professional Plus und andere Software, die für die Konvertierung unter Windows-Betriebssystemen erforderlich ist.
+>* PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft Office Professional Plus und andere für die Konvertierung unter einem Windows-Betriebssystem erforderliche Software.
 >* PDF Generator unterstützt die 32-Bit- und 64-Bit-Versionen von OpenOffice unter Linux.
 >* PDF Generator unterstützt nicht Microsoft Office 365.
 >* Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.

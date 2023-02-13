@@ -57,7 +57,7 @@ Adaptive Formulare repräsentieren eine neue Generation: ansprechend, interaktiv
 
 Ziele:
 
-* Erstellen Sie ein adaptives Formular, mit dem ein Kunde eine Versandadresse hinzufügen kann
+* Erstellen eines adaptiven Formulars, mit dem ein Kunde eine Versandadresse hinzufügen kann
 * Layout-Felder eines adaptiven Formulars zum Anzeigen und Akzeptieren von Informationen eines Kunden
 * Erstellen Sie eine Sendeaktion zum Senden einer E-Mail mit Formularinhalt
 * Anzeigen und Senden eines adaptiven Formulars in der Vorschau

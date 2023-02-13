@@ -14,7 +14,7 @@ exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
 workflow-type: tm+mt
 source-wordcount: '5918'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -396,15 +396,15 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
     <ul>
      <li>Die Online-Revisionsbereinigung wurde gestartet/beendet
       <ul>
-       <li>Die Online-Revisionsbereinigung umfasst drei Phasen: Schätzung, Komprimierung und Bereinigung. In der Schätzungsphase kann das Überspringen der Komprimierung und Bereinigung erzwungen werden, falls das Repository nicht ausreichend viele alte Daten enthält. In der neuesten Version von AEM wird die Meldung "<code>TarMK GC #{}: estimation started</code>" markiert den Beginn der Schätzung, "<code>TarMK GC #{}: compaction started, strategy={}</code>" markiert den Beginn der Komprimierung und "T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>" markiert den Beginn der Bereinigung.</li>
+       <li>Die Online-Revisionsbereinigung umfasst drei Phasen: Schätzung, Komprimierung und Bereinigung. In der Schätzungsphase kann das Überspringen der Komprimierung und Bereinigung erzwungen werden, falls das Repository nicht ausreichend viele alte Daten enthält. In der neuesten Version von AEM markiert die Meldung „<code>TarMK GC #{}: estimation started</code>“ den Beginn der Schätzung, „<code>TarMK GC #{}: compaction started, strategy={}</code>“ markiert den Beginn der Komprimierung und „T<code>arMK GC #{}: cleanup started. Current repository size is {} ({} bytes</code>“ markiert den Beginn der Bereinigung.</li>
       </ul> </li>
      <li>Durch die Revisionsbereinigung gewonnener Speicherplatz
       <ul>
-       <li>Der Speicherplatz wird erst nach Abschluss der Bereinigungsphase zurückgewonnen. Der Abschluss der Bereinigungsphase wird durch die Protokollmeldung „T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>“ markiert. Post cleanup size is {} ({} bytes) and space reclaimed {} ({} bytes). Die Gewichtung/Tiefe der Komprimierungszuordnung ist {}/{} ({} bytes/{}).".</li>
+       <li>Der Speicherplatz wird erst nach Abschluss der Bereinigungsphase zurückgewonnen. Der Abschluss der Bereinigungsphase wird durch die Protokollmeldung „T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>“ markiert. Größe nach der Bereinigung ist {} ({} Bytes) und zurückgewonnener Platz {} ({} Bytes). Gewicht/Tiefe der Verdichtungskarte ist {}/{} ({} Bytes/{}).".</li>
       </ul> </li>
      <li>Während der Revisionsbereinigung ist ein Problem aufgetreten
       <ul>
-       <li>Es gibt viele Fehlerbedingungen. Alle sind durch WARN- oder ERROR-Protokollmeldungen gekennzeichnet, die mit "TarMK GC"beginnen.</li>
+       <li>Es gibt viele Fehlerbedingungen. Alle sind durch WARN- oder ERROR-Protokollmeldungen gekennzeichnet, die mit „TarMK GC“ beginnen.</li>
       </ul> </li>
     </ul> <p>Siehe auch <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Fehlerbehebung basierend auf Fehlermeldungen</a> unten.</p> </td>
    <td> </td>
@@ -425,7 +425,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Wie kann ich feststellen, ob die Online-Revisionsbereinigung fehlgeschlagen ist, und welche Wiederherstellungsschritte sind erforderlich?</strong></td>
-   <td>Fehlerbedingungen werden durch WARN- oder ERROR-Protokollmeldungen gekennzeichnet, die mit "TarMK GC"beginnen. Siehe auch <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Fehlerbehebung basierend auf Fehlermeldungen</a> unten.</td>
+   <td>Fehlerbedingungen sind durch WARN- oder ERROR-Protokollmeldungen gekennzeichnet, die mit „TarMK GC“ beginnen. Siehe auch <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-based-on-error-messages">Fehlerbehebung basierend auf Fehlermeldungen</a> unten.</td>
    <td> </td>
   </tr>
   <tr>
@@ -549,22 +549,22 @@ Die error.log-Einträge sind ausführlich, falls es bei der Online-Revisionsbere
    <tr>
     <td>Nicht zutreffend</td>
     <td>TarMK GC #2: compaction cancelled: ${REASON}.</td>
-    <td>Die Komprimierungsphase wurde frühzeitig beendet. Beispiele für Ereignisse, die die Komprimierungsphase unterbrechen können: ungenügender Arbeitsspeicher oder Festplattenspeicher auf dem Host-System. Darüber hinaus kann die Komprimierung auch abgebrochen werden, indem das System heruntergefahren oder explizit über Verwaltungsschnittstellen wie das Wartungsfenster im Vorgangs-Dashboard abgebrochen wird.</td>
+    <td>Die Komprimierungsphase wurde frühzeitig beendet. Beispiele für Ereignisse, die die Komprimierungsphase unterbrechen können: ungenügender Arbeitsspeicher oder Festplattenspeicher auf dem Host-System. Eine Komprimierung kann auch abgebrochen werden, indem das System heruntergefahren wird oder indem sie explizit über administrative Schnittstellen wie das Wartungsfenster im Vorgangs-Dashboard abgebrochen wird.</td>
     <td>Hängt von der Ursache ab.</td>
   </td>
   </tr>
   <tr>
     <td>Nicht zutreffend</td>
-    <td>TarMK GC #2: compaction failed in 32.902 min (1974140 ms), after 5 cycles.</td>
+    <td>TarMK GC #2: Die Verdichtung scheiterte in 32.902 min (1974140 ms), nach 5 Zyklen.</td>
     <td>Diese Meldung besagt nicht, dass ein nicht behebbarer Fehler aufgetreten ist, sondern dass die Komprimierung nach einer gewissen Anzahl von Versuchen beendet wurde. Lesen Sie auch den <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">folgenden Absatz.</a></td>
-    <td>Lesen Sie die folgende <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak-Dokumentation</a> und die letzte Frage im Abschnitt Ausführen der Online-Revisionsbereinigung.</a></td>
+    <td>Lesen Sie die folgende <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html#how-does-compaction-works-with-concurrent-writes">Oak-Dokumentation</a> und die letzte Frage im Abschnitt „Ausführen der Online-Revisionsbereinigung“.</a></td>
   </td>
   </tr>
   <tr>
     <td>Bereinigen</td>
     <td>TarMK GC #2: cleanup interrupted.</td>
-    <td>Die Bereinigung wurde durch Herunterfahren des Repositorys abgebrochen. Es sind keinerlei Auswirkungen auf die Konsistenz zu erwarten. Außerdem wird der Speicherplatz höchstwahrscheinlich nicht vollständig zurückgewonnen. Dieser wird beim nächsten Revisionsbereinigungszyklus zurückgewonnen.</td>
-    <td>Untersuchen Sie, warum das Repository heruntergefahren wurde, und versuchen Sie in Zukunft, zu vermeiden, dass das Repository während des Wartungsfensters heruntergefahren wird.</td>
+    <td>Die Bereinigung wurde durch Herunterfahren des Repositorys abgebrochen. Es sind keinerlei Auswirkungen auf die Konsistenz zu erwarten. Außerdem wird wahrscheinlich nicht der gesamte Festplattenspeicher zurückgewonnen. Dieser wird beim nächsten Revisionsbereinigungszyklus zurückgewonnen.</td>
+    <td>Finden Sie heraus, warum das Repository heruntergefahren wurde, und versuchen Sie in Zukunft, das Repository nicht während eines Wartungsfensters herunterzufahren.</td>
   </td>
   </tr>
   </tbody>
@@ -626,7 +626,7 @@ Die Liste enthält einige Befehlszeilenparameter, wie im Folgenden beschrieben:
 
 * **-Dupdate.limit**. Definiert den Schwellenwert für das Löschen temporärer Transaktionen auf der Festplatte. Der Standardwert ist 10.000.
 
-* **-Dcompress-interval**. Anzahl der Komprimierungszuordnungseinträge, die bis zur Komprimierung der aktuellen Zuordnung beibehalten werden. Der Standardwert ist 1.000.000. Sie sollten für diesen Wert eine noch höhere Zahl festlegen, um einen schnelleren Durchsatz zu erzielen, falls nicht genügend Heap-Speicher vorhanden ist. **Dieser Parameter wurde in der Oak-Version 1.6 entfernt und hat keine Auswirkung.** 
+* **-Dcompress-interval**. Anzahl der Komprimierungszuordnungseinträge, die bis zur Komprimierung der aktuellen Zuordnung beibehalten werden. Der Standardwert ist 1.000.000. Sie sollten für diesen Wert eine noch höhere Zahl festlegen, um einen schnelleren Durchsatz zu erzielen, falls nicht genügend Heap-Speicher vorhanden ist. **Dieser Parameter wurde in der Oak-Version 1.6 entfernt und hat keine Auswirkung.**
 
 * **-Dcompaction-progress-log**. Die Anzahl der komprimierten Knoten, die protokolliert werden. Der Standardwert ist 150.000, d. h., die ersten 150.000 komprimierten Knoten werden bei einem Vorgang protokolliert. Verwenden Sie diese Option zusammen mit dem im Folgenden erläuterten Parameter.
 

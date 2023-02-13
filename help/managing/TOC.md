@@ -15,7 +15,7 @@ ht-degree: 100%
 ---
 
 
-# AEM 6.5-Verwaltungsanleitung {#managing}
+# Benutzerhandbuch für die Verwaltung von AEM 6.5 {#managing}
 
 + [Benutzerhandbuch Verwaltung](home.md)
 + Verwalten - Checkliste mit Best Practices {#managing-best-practices-checklist}

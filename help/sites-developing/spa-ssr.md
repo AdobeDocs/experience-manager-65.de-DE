@@ -49,14 +49,14 @@ Nur wenn mindestens eine dieser beiden Fragen für Ihr Projekt mit einem klaren 
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
-Wenn Sie davon [überzeugt sind, dass Ihr Projekt die Implementierung von SSR erfordert](/help/sites-developing/spa-ssr.md#when-to-use-ssr), empfiehlt Adobe die Verwendung von Adobe I/O Runtime.
+Wenn Sie [davon überzeugt sind, dass Ihr Projekt die Implementierung von SSR erfordert](/help/sites-developing/spa-ssr.md#when-to-use-ssr), empfiehlt Adobe die Verwendung von Adobe I/O Runtime.
 
 Weitere Informationen zu Adobe I/O Runtime finden Sie unter
 
 * [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) – Überblick über den Service
 * [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) – ausführliche Dokumentation der Plattform.
 
-In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime SSR für Ihre SPA in zwei verschiedenen Modellen implementieren können:
+In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime für Ihre SPA in zwei verschiedenen Modellen SSR implementieren können:
 
 * [AEM-gesteuerter Kommunikationsfluss](/help/sites-developing/spa-ssr.md#aem-driven-communication-flow)
 * [Adobe I/O Runtime-gesteuerter Kommunikationsfluss](/help/sites-developing/spa-ssr.md#adobe-i-o-runtime-driven-communication-flow)
@@ -65,7 +65,7 @@ In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime SSR 
 >
 >Adobe empfiehlt für jede Umgebung einen separaten Adobe I/O Runtime-Arbeitsbereich (Staging, Produktion, Tests usw.). Dies ermöglicht typische SDLC-Muster (System Development Life Cycle) mit verschiedenen Versionen einer einzelnen Anwendung, die in verschiedenen Umgebungen bereitgestellt werden. Weitere Informationen finden Sie im Dokument [CI/CD für Project Firefly-Anwendungen](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/guides/ci_cd_for_firefly_apps.md).
 >
->Pro Instanz (Autor, Publishing) ist kein separater Arbeitsbereich erforderlich, es sei denn, es gibt Unterschiede in der Laufzeitimplementierung pro Instanztyp.
+>Pro Instanz (Autor, Veröffentlichung) ist kein separater Arbeitsbereich erforderlich, es sei denn, es gibt Unterschiede in der Laufzeitimplementierung pro Instanztyp.
 
 ## Remote Renderer-Konfiguration {#remote-renderer-configuration}
 
