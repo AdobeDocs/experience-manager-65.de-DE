@@ -1,17 +1,17 @@
 ---
-title: Durchführen eines In-Place-Upgrades
+title: Durchführen einer ersetzenden Aktualisierung
 description: Erfahren Sie, wie Sie ein Upgrade durchführen.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
 source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1244'
 ht-degree: 100%
 
 ---
 
-# Durchführen eines In-Place-Upgrades{#performing-an-in-place-upgrade}
+# Durchführen einer ersetzenden Aktualisierung{#performing-an-in-place-upgrade}
 
 >[!NOTE]
 >
