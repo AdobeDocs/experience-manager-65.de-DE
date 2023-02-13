@@ -12,9 +12,9 @@ docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1089'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -59,7 +59,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 
 1. Kopieren Sie die URL im aktuellen Browser-Fenster in einen Texteditor. Es ist erforderlich, das Programm [!DNL Adobe Sign] mit AEM [!DNL Forms] zu konfigurieren.
 
-1. Im **[!UICONTROL Einstellungen]** Registerkarte, die **[!UICONTROL OAuth-URL]** enthält die Standard-URL. Das Format der URL ist:
+1. Auf der Registerkarte **[!UICONTROL Einstellungen]** enthält das Feld **[!UICONTROL OAuth URL]** die Standard-URL. Das Format der URL ist:
 
    `https://<shard>/public/oAuth/v2`
 
@@ -73,7 +73,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
    Wenn Sie eine weitere [!DNL Adobe Sign]-Konfiguration für eine Funktion oder Komponente von Adobe Experience Manager erstellen, vergewissern Sie sich, dass alle [!DNL Adobe Sign]-Cloud-Konfigurationen auf dieselbe Shard verweisen.
 
    >[!NOTE]
-   Behalten Sie die **Adobe Sign-Konfiguration erstellen** Seite öffnen. Mach es nicht zu. Sie können **Client-ID** und **Client Secret** nach dem Konfigurieren der OAuth-Einstellungen für die [!DNL Adobe Sign] wie in den nächsten Schritten beschrieben.
+   Lassen Sie die Seite **Adobe Sign-Konfiguration erstellen** geöffnet. Schließen Sie sie nicht. Nachdem Sie die OAuth-Einstellungen für die Anwendung [!DNL Adobe Sign] wie in den nächsten Schritten beschrieben konfiguriert haben, können Sie die **Client-ID** und den **geheimen Client-Schlüssel** abrufen.
 
 
 1. Konfigurieren Sie OAuth-Einstellungen für das [!DNL Adobe Sign]-Programm:
@@ -109,7 +109,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
    >[!NOTE]
    Stellen Sie sicher, dass die Konfigurationen der Autoren- und Veröffentlichungsinstanz auf dieselbe Shard verweisen. Wenn Sie mehrere Adobe Sign-Konfigurationen für eine Organisation erstellen, stellen Sie sicher, dass alle Konfigurationen dieselbe Shard verwenden.
 
-1. Kehren Sie zur Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** zurück. Im **[!UICONTROL Einstellungen]** Registerkarte, geben Sie die **Client-ID** (auch als Anwendungs-ID bezeichnet) und **Client Secret**. Verwenden Sie die [Client-ID und Client-Geheimnis der Adobe Sign-Anwendung](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret) erstellt für AEM Forms.
+1. Kehren Sie zur Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** zurück. Geben Sie auf der Registerkarte **[!UICONTROL Einstellungen]** die **Client-ID** (auch als Anwendungs-ID bezeichnet) und den **geheimen Client-Schlüssel** an. Verwenden Sie die [Client-ID und den geheimen Client-Schlüssel der Adobe Sign-Anwendung](https://opensource.adobe.com/acrobat-sign/developer_guide/helloworld.html#get-the-app-id-and-secret), den Sie für AEM Forms erstellt haben.
 
 1. Wählen Sie die Option **[!UICONTROL auch für Anhänge aktivieren]**, um Dateien, die an einem adaptiven Formular angehängt sind, an ein entsprechendes Adobe Sign-Dokument, das zum Signiren geschickt wurde, anzuhängen.[!DNL Adobe Sign]
 
@@ -121,7 +121,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 1. Öffnen Sie **[!UICONTROL Forms Common-Konfigurations-Service].**
 1. Wählen Sie im Feld **[!UICONTROL Zulassen]** **Alle Benutzer** – alle Benutzer, anonym oder angemeldet, können Anhänge in der Vorschau ansehen, Formulare überprüfen und unterzeichnen – und klicken Sie auf **[!UICONTROL Speichern].** Autoreninstanz ist konfiguriert, um [!DNL Adobe Sign] zu verwenden.
 1. Veröffentlichen Sie die Konfiguration.
-1. Verwenden Sie [Replikation](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html), um eine identische Konfiguration für die entsprechenden Veröffentlichungsinstanzen zu erstellen.
+1. Verwenden Sie [Replikation](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/replication.html?lang=de), um eine identische Konfiguration für die entsprechenden Veröffentlichungsinstanzen zu erstellen.
 
 Jetzt ist [!DNL Adobe Sign] mit AEM [!DNL Forms] integriert und kann in adaptiven Formularen verwendet werden. Um [Adobe Sign service in einem adaptiven Formular zu nutzen](../../forms/using/working-with-adobe-sign.md#configure-adobe-sign-for-an-adaptive-form), geben Sie den Konfigurationscontainer an, der oben in den Einstellungen für adaptive Formulare erstellt wurde.
 
