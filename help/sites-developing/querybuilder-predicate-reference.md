@@ -11,9 +11,9 @@ topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 source-git-commit: f97eb2e028263016131b0c86be5a0508ae4def9b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2371'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 98%
 
 >[!CAUTION]
 >
->Die Informationen auf dieser Seite sind nicht vollständig.
+>Die Informationen auf dieser Seite erheben keinen Anspruch auf Vollständigkeit.
 >
->Umfassende Informationen finden Sie in der Liste unter **Verfügbare Prädikate** in der Query Builder-Debugger-Konsole; Beispiel: unter:
+>Umfassende Informationen finden Sie in der Liste unter **Verfügbare Eigenschaften** in der Debugger-Konsole von Query Builder, zum Beispiel unter:
 >* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 >
 >Ein Beispiel finden Sie unter:
@@ -180,7 +180,7 @@ Facettenextraktion wird nicht unterstützt.
 
    Der relative Pfad, der in der Eigenschaft oder dem Teilknoten durchsucht werden soll. Diese Eigenschaft ist optional.
 
-### Gruppe {#group}
+### group {#group}
 
 Ermöglicht die Erstellung verschachtelter Bedingungen. Gruppen können verschachtelte Gruppen enthalten. Alles in einer querybuilder-Abfrage gehört zu einer root-Gruppe, die auch `p.or`- und `p.not`-Parameter aufweisen kann.
 
@@ -517,7 +517,7 @@ Filtern wird nicht unterstützt. Facettenextraktion wird nicht unterstützt.
 ein relativer Pfad zu einem untergeordneten Knoten oder 
 `.` für den aktuellen Knoten (optional, Standard ist „`.`“)
 
-### Tag {#tag}
+### tag {#tag}
 
 Sucht nach Inhalten mit Tags, indem Tag-Titelpfade angegeben werden.
 
