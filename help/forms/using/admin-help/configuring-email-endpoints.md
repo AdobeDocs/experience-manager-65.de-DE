@@ -1,5 +1,5 @@
 ---
-title: E-Mail-Endpunkte konfigurieren
+title: Konfigurieren von E-Mail-Endpunkten
 seo-title: Configuring email endpoints
 description: Erfahren Sie, wie Sie E-Mail-Endpunkte konfigurieren.
 seo-description: Learn how to configure email endpoints.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
 source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3757'
 ht-degree: 100%
 
 ---
 
-# E-Mail-Endpunkte konfigurieren {#configuring-email-endpoints}
+# Konfigurieren von E-Mail-Endpunkten {#configuring-email-endpoints}
 
 E-Mail-Endpunkte ermöglichen es einem Benutzer, einen Dienst durch Senden einer oder mehrerer Dokumente (als E-Mail-Anlage) an ein angegebenes E-Mail-Konto aufzurufen. Der E-Mail-Posteingang fungiert als Sammelpunkt für die Anlagen. Der Dienst überwacht den Posteingang und verarbeitet die Anlagen. Die Ergebnisse der Konvertierung werden an den Benutzer weitergeleitet, der im Endpunkt festgelegt ist.
 
@@ -66,7 +66,7 @@ Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutze
 
 ### Standardwerte für E-Mail-Endpunkte ändern {#change-the-default-values-for-email-endpoints}
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf „E-Mail: 1.0“ (die Komponenten-ID lautet „com.adobe.idp.dsc.provider.service.email.Email“).
 1. Geben Sie auf der Registerkarte „Konfiguration“ die Einstellungen für Standard-E-Mail-Endpunkte an und klicken Sie auf „Speichern“.
 
@@ -96,7 +96,7 @@ Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutze
 
 **Posteingang - Port:** Die Port-Nummer für den Posteingang, die vom E-Mail-Anbieter überprüft werden soll. Wenn der Wert 0 ist, wird der IMAP- oder POP3-Standard-Port verwendet.
 
-**Posteingang - Protokoll:** Das E-Mail-Protokoll, das vom E-Mail-Endpunkt zum Überprüfen des Posteingangs verwendet werden soll. Die Optionen sind IMAP und POP3. Der Hostmailserver des Posteingangs muss diese Protokolle unterstützen.
+**Posteingang - Protokoll:** Das E-Mail-Protokoll, das vom E-Mail-Endpunkt zum Überprüfen des Posteingangs verwendet werden soll. Die Optionen sind IMAP und POP3. Der Host-Mailserver des Posteingangs muss diese Protokolle unterstützen.
 
 **Posteingang - Zeitüberschreitung:** Gibt den Zeitraum an, den der Endpunkt beim Herstellen einer Verbindung mit dem Posteingang wartet, bevor der Vorgang abgebrochen wird. Wenn vor Erreichen des Zeitüberschreitungswerts keine Verbindung hergestellt werden konnte, wird der Posteingang nicht abgefragt.
 
@@ -178,7 +178,7 @@ Zum Deaktivieren dieser Einstellung lassen Sie sie unausgefüllt. Es kann Fälle
 
 **Posteingang - Port:** Der Port, der vom E-Mail-Server verwendet wird. Der Standardwert ist für POP3 „110“ und für IMAP „143“. Wenn SSL aktiviert ist, lautet der Standardwert für POP3 „995“ und für IMAP „993“.
 
-**Posteingang - Protokoll:** Das E-Mail-Protokoll, das vom E-Mail-Endpunkt zum Überprüfen des Posteingangs verwendet werden soll. Die Werte sind IMAP und POP3. Der Hostmailserver des Posteingangs muss diese Protokolle unterstützen.
+**Posteingang - Protokoll:** Das E-Mail-Protokoll, das vom E-Mail-Endpunkt zum Überprüfen des Posteingangs verwendet werden soll. Die Werte sind IMAP und POP3. Der Host-Mailserver des Posteingangs muss diese Protokolle unterstützen.
 
 **Posteingang - Zeitüberschreitung:** Das Zeitlimit in Sekunden, das der E-Mail-Anbieter auf Antworten des Posteingangs warten soll.
 
@@ -256,7 +256,7 @@ Die folgenden Werte sind verfügbar:
 
 Damit der Arbeitsablauf für Formulare eingehende E-Mail-Nachrichten von Benutzern empfängt und verarbeitet, müssen Sie einen E-Mail-Endpunkt für den CompleteTask-Dienst erstellen. 
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den Dienst „Complete Task“.
 1. Wählen Sie auf der Registerkarte „Endpunkte“ in der Dropdown-Liste „E-Mail“ aus und klicken Sie auf „Hinzufügen“.
 1. Geben Sie in das Feld „Posteingangshost“ den Hostnamen oder die IP-Adresse des E-Mail-Servers ein.
