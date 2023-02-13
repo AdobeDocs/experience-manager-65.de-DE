@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: d8da194f-f161-4ba7-b8cc-c2c282dc9c83
 exl-id: 30ac9a63-f9e6-4075-b67e-4524d11a0e29
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '107'
 ht-degree: 100%
 
@@ -24,7 +24,7 @@ Wie bereits erwähnt, sind [Akzeptanztests](/help/sites-developing/planning.md) 
 * Das Projekt erfüllt die Anforderungen des Kunden.
 * ob der Kunde das Projekt annimmt.
 
-Sie müssen vom Kunden und dem Projektmanager definiert werden. Sie haben eine besondere Bedeutung, da sie oft mit der endgültigen Rechnungsstellung zusammenhängen.
+Sie müssen vom Kunden und dem Projekt-Manager definiert werden. Sie haben eine besondere Bedeutung, da sie oft mit der endgültigen Rechnungsstellung zusammenhängen.
 
 Aus diesem Grund müssen sie:
 
