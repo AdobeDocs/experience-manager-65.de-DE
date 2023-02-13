@@ -1,5 +1,5 @@
 ---
-title: Prozessdaten bereinigen
+title: Bereinigen von Prozessdaten
 seo-title: Purging process data
 description: Prozessdaten, die beim Aufrufen eines Prozesses mit langer Lebensdauer generiert werden, können zu stark anwachsen, was zu einer Beeinträchtigung der Leistung von AEM Forms und zur Belegung von unnötigem Speicherplatz führt. Erfahren Sie, wie Sie Prozessdaten bereinigen können.
 seo-description: Process data that is generated when a long-lived process is invoked can become too large, resulting in lower AEM forms performance and the use of unnecessary disk space. See how you can purge process data.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 3157bb92-4b07-40f2-be4c-8f5807f9a380
 exl-id: 0da59dbe-f050-4ee5-b74c-4380b3543b97
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '194'
 ht-degree: 100%
 
 ---
 
-# Prozessdaten bereinigen {#purging-process-data}
+# Bereinigen von Prozessdaten {#purging-process-data}
 
 Prozessdaten, die beim Aufrufen eines Prozesses mit langer Lebensdauer generiert werden, können zu stark anwachsen, was zu einer Beeinträchtigung der Leistung von AEM Forms und zur Belegung von unnötigem Speicherplatz führt. Es empfiehlt sich, Prozessdaten zu bereinigen, wenn die Aufzeichnungen nicht mehr gebraucht werden. AEM Forms bietet mehrere Möglichkeiten, Prozessdaten zu bereinigen:
 
