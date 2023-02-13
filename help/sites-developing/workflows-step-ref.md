@@ -12,7 +12,7 @@ discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3284'
 ht-degree: 100%
 
@@ -228,7 +228,7 @@ Zum Konfigurieren der Teilung:
 
 ## Teilnehmer-Schritte und -Auswahl {#participant-steps-and-choosers}
 
-### Teilnehmer-Schritt {#participant-step}
+### Teilnehmerschritt {#participant-step}
 
 Mit der Option **Teilnehmer-Schritt** können Sie einer bestimmten Aktion Eigentümerrechte zuweisen. Der Workflow wird nur fortgesetzt, wenn der Benutzer diesen Schritt manuell bestätigt hat. Die Option wird verwendet, wenn Sie einer Person eine Aktion in einem Workflow zuweisen möchten, z. B. einen Bewertungsschritt.
 
@@ -373,7 +373,7 @@ Sie können Widget-Daten in der Workflow-Payload oder in den Metadaten des Arbei
 
    ![chlimage_1-70](assets/chlimage_1-70.png)
 
-### Dynamischer Teilnehmer – Schritt {#dynamic-participant-step}
+### Dynamischer Teilnehmerschritt {#dynamic-participant-step}
 
 Die Komponente **Dynamischer Teilnehmer – Schritt** ähnelt der Komponente **[Teilnehmer – Schritt](#participant-step)**, allerdings wird der Teilnehmer automatisch während der Laufzeit ausgewählt.
 
