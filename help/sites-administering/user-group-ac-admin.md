@@ -12,7 +12,7 @@ docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
 source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3120'
 ht-degree: 100%
 
@@ -247,7 +247,7 @@ Durch Klicken auf eine Gruppen-ID (falls verfügbar) wird die [Gruppenverwaltung
 
 **Darsteller**
 
-Mit der Funktion Stellvertretend agieren können Benutzende im Auftrag anderer Benutzenden arbeiten.
+Mit der Funktion „Stellvertretend agieren“ kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
 Dies bedeutet, dass über ein Benutzerkonto andere Konten (Benutzer oder Gruppe) festgelegt werden können, die mit ihrem Konto arbeiten können. Anders ausgedrückt: Wenn Benutzer B stellvertretend für Benutzer A agieren darf, kann Benutzer B Aktionen unter Verwendung aller Kontodetails des Benutzers A (einschließlich ID, Name und Zugriffsrechte) ausführen.
 
