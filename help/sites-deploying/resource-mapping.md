@@ -13,7 +13,7 @@ docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
 source-git-commit: 7c24379c01f247f5ad45e3ecd40f3edef4ac3cfb
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '519'
 ht-degree: 100%
 
@@ -112,7 +112,7 @@ Der Knotentyp ist für diese Zuordnungen bestimmt, seine Verwendung ist jedoch n
    * **Name** `localhost_any`
 
 1. Klicken Sie auf **Alle speichern**.
-1. **Fügen Sie** diesem Knoten die folgenden Eigenschaften hinzu:
+1. **Fügen Sie diesem Knoten die folgenden Eigenschaften hinzu:**
 
    * **Name** `sling:match`
 
