@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
 source-git-commit: 92092e1c050c9264c19e3cd9da9b240607af7bab
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6178'
 ht-degree: 100%
 
@@ -172,8 +172,8 @@ Tippen Sie auf das Dokumentfragment, auf das Symbol ![configure_icon](assets/con
    * [Hinzufügen und Konfigurieren von Diagrammen](/help/forms/using/chart-component-interactive-communications.md)
    * [Synchronisieren des Webkanals mit dem Druckkanal](../../forms/using/create-interactive-communication.md#synchronize)
 
-      * Autom. Synchronisierung
-      * Vererbung abbrechen
+      * Automatische Synchronisierung
+      * Abbrechen der Vererbung
       * Vererbung erneut aktivieren
       * Synchronisieren
    * [Anlagen und Bibliothekszugriff](../../forms/using/create-interactive-communication.md#attachmentslibrary)
@@ -540,7 +540,7 @@ Navigieren Sie zu **Datenquellen** > **Übergeordnete Inhalte**, um die Elemente
 
 ![Übergeordnete Inhalte](assets/master_content.png)
 
-### Vererbung abbrechen {#cancelinheritance}
+### Abbrechen der Vererbung {#cancelinheritance}
 
 Im Webkanal sind die Komponenten in den Zielbereichen eingebettet.
 
