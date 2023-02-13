@@ -1,5 +1,5 @@
 ---
-title: Einstellungen für die PDF-Exportkonvertierung ändern
+title: Ändern der Einstellungen für die PDF-Exportkonvertierung
 seo-title: Modifying the PDF Export conversion settings
 description: Erfahren Sie, wie Sie die PDF-Export-Konvertierungseinstellungen ändern.
 seo-description: Learn how to modify the PDF Export conversion settings.
@@ -12,13 +12,13 @@ discoiquuid: 982f7b7e-9ba9-437f-a337-76c355b328ac
 feature: PDF Generator
 exl-id: 48a5d992-4681-41a8-8d1d-4da6767134c2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '166'
 ht-degree: 100%
 
 ---
 
-# Einstellungen für die PDF-Exportkonvertierung ändern {#modifying-the-pdf-export-conversion-settings}
+# Ändern der Einstellungen für die PDF-Exportkonvertierung {#modifying-the-pdf-export-conversion-settings}
 
 Verwenden Sie das unten beschriebene Verfahren, um die Konvertierungseinstellungen für das Exportieren einer PDF-Datei in eine EPS-, DOC-, TXT-, RTF-, XML- oder HTML-Datei zu ändern. Standardmäßig werden für die PDF-Datei die in Adobe Acrobat Professional oder Acrobat Standard konfigurierten Standardeinstellungen für „Speichern unter“ verwendet. Die Standardeinstellungen für „Speichern unter“ in Acrobat für die Konvertierung einer PDF-Datei in eine EPS-Datei führen dazu, dass nur eine Seite in der PDF-Datei in EPS konvertiert wird.
 
