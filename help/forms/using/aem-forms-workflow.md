@@ -10,9 +10,9 @@ discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
 source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3681'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -275,29 +275,29 @@ Sie können die Schritte „Aufgabe zuweisen“ und „E-Mail senden“ von AEM-
 
 Da die Minimierung der Anzahl von Workflow-Instanzen die Leistung der Workflow-Engine steigert, sollten Sie regelmäßig abgeschlossene oder laufende Workflow-Instanzen aus dem Repository löschen. Ausführliche Informationen dazu finden Sie unter [Regelmäßiges Bereinigen von Workflow-Instanzen](/help/sites-administering/workflows-administering.md#regular)..
 
-## Passen Sie vertrauliche Daten an Workflow-Variablen an und speichern Sie sie in externen Datenspeichern. {#externalize-wf-variables}
+## Parametrisieren Sie vertrauliche Daten entsprechend den Workflow-Variablen und speichern Sie sie in externen Datenspeichern. {#externalize-wf-variables}
 
-Alle Daten, die von adaptiven Formularen an [!DNL Experience Manager] Workflows können personenbezogene Daten (PII) oder EPD (Sensible Personal Data) der Endbenutzer Ihres Unternehmens enthalten. Es ist jedoch nicht erforderlich, Ihre Daten in [!DNL Adobe Experience Manager] [JCR-Repository](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). Sie können die Speicherung von Endbenutzerdaten in Ihren verwalteten Datenspeicher (z. B. Azure-Blob-Speicher) externalisieren, indem Sie die Informationen parametrisieren in [Workflow-Variablen](/help/forms/using/variable-in-aem-workflows.md).
+Alle Daten, die von adaptiven Formularen an [!DNL Experience Manager]-Workflows übermittelt werden, können personenbezogene Daten (PII) oder vertrauliche personenbezogene Daten (SPD) der Endbenutzer Ihres Unternehmens enthalten. Es ist jedoch nicht erforderlich, Ihre Daten im [!DNL Adobe Experience Manager] [JCR-Repository](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html?lang=de) aufzubewahren. Sie können die Speicherung von Endbenutzerdaten in Ihren verwalteten Datenspeicher (z. B. Azure Blob-Speicher) externalisieren, indem Sie die Informationen in [Workflow-Variablen](/help/forms/using/variable-in-aem-workflows.md) parametrisieren.
 
-In einer [!DNL Adobe Experience Manager] Forms-Arbeitsablauf werden die Daten mithilfe von Workflow-Variablen verarbeitet und durch eine Reihe von Workflow-Schritten weitergeleitet. Diese Variablen sind benannte Eigenschaften oder Schlüssel-Wert-Paare, die im Metadatenknoten der Workflow-Instanzen gespeichert sind. Beispiel `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Diese Workflow-Variablen können in ein anderes Repository als JCR externalisiert und dann von [!DNL Adobe Experience Manager] Workflows. [!DNL Adobe Experience Manager] stellt API bereit `[!UICONTROL UserMetaDataPersistenceProvider]` , um die Workflow-Variablen in Ihrem verwalteten externen Speicher zu speichern. Weitere Informationen zur Verwendung von Workflow-Variablen für kundeneigene Datenspeicher in [!DNL Adobe Experience Manager], siehe [Verwalten von Workflow-Variablen für externe Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe] stellt Folgendes bereit [sample](https://github.com/adobe/workflow-variable-externalizer) zum Speichern von Variablen aus der Workflow-Metadatenzuordnung in Azure-Blob-Speicher mithilfe der API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). In ähnlichen Zeilen können Sie das Beispiel als Anleitung zur Verwendung von [UserMetaDataPersistenceProvider] API zum Externalisieren der Workflow-Variablen in jedem anderen Datenspeicher außerhalb von [!DNL Adobe Experience Manager] und verwalten Sie dasselbe.
+In einem [!DNL Adobe Experience Manager]-Formular-Workflow werden Daten durch eine Reihe von Workflow-Schritten mithilfe von Workflow-Variablen verarbeitet und weitergeleitet. Diese Variablen sind benannte Eigenschaften oder Schlüssel-Wert-Paare, die im Metadatenknoten der Workflow-Instanzen gespeichert sind, zum Beispiel `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Diese Workflow-Variablen können in ein anderes Repository als JCR externalisiert und dann durch [!DNL Adobe Experience Manager]-Workflows verarbeitet werden. [!DNL Adobe Experience Manager] stellt die API `[!UICONTROL UserMetaDataPersistenceProvider]` bereit, um die Workflow-Variablen in Ihrem verwalteten externen Speicher zu hinterlegen. Weitere Informationen zur Verwendung von Workflow-Variablen für kundeneigene Datenspeicher in [!DNL Adobe Experience Manager] finden Sie unter [Verwalten von Workflow-Variablen für externe Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe] stellt folgendes [Muster](https://github.com/adobe/workflow-variable-externalizer) bereit, um Variablen aus der Workflow-Metadatenzuordnung mithilfe der API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md) im Azure Blob-Speicher zu hinterlegen. Ähnlich können Sie das Beispiel als Anleitung zur Verwendung der API [UserMetaDataPersistenceProvider] nutzen, um die Workflow-Variablen in jeden anderen Datenspeicher außerhalb von [!DNL Adobe Experience Manager] zu externalisieren und ähnlich zu verwalten.
 
 >[!NOTE]
 >
->Wenn Sie Ihre Workflow-Variablen in einem externen Datenspeicher speichern, lesen Sie die Hinweise im Abschnitt [Richtlinien für die externe Datenspeicherung von Workflows](#guidelines-workflows-external-data-storage).
+>Wenn Sie Ihre Workflow-Variablen in einem externen Datenspeicher hinterlegen, lesen Sie die Hinweise in den [Richtlinien für die externe Datenspeicherung von Workflows](#guidelines-workflows-external-data-storage).
 
 ### Installieren der Beispielimplementierung der Workflow-API
 
 So speichern Sie Workflow-Variablen in Ihrem verwalteten Azure Blob-Speicher:
-1. Installieren Sie die [sample](https://github.com/adobe/workflow-variable-externalizer) Workflow-API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md) wie folgt:
+1. Installieren Sie die [Beispiel](https://github.com/adobe/workflow-variable-externalizer)-Workflow-API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md) wie folgt:
 
-   1. Führen Sie im Projektstammverzeichnis den `mvn clean install` Befehl mit Maven 3.
+   1. Führen Sie im Projektstammverzeichnis mit Maven 3 den Befehl `mvn clean install` aus.
 
-   1. Um das Bundle und das Inhaltspaket für die Autoreninstanz bereitzustellen, führen Sie `mvn clean install -PautoInstallPackage`.
+   1. Um das Bundle und das Inhaltspaket für den Autor bereitzustellen, führen Sie `mvn clean install -PautoInstallPackage` aus.
 
-   1. Um nur das Bundle für den Autor bereitzustellen, führen Sie `mvn clean install -PautoInstallBundle`.
+   1. Um nur das Bundle für den Autor bereitzustellen, führen Sie `mvn clean install -PautoInstallBundle` aus.
 
-1. Initialisieren Sie die folgenden Eigenschaften in der OSGi-Konfigurationsdatei des Externalizers im `ui.config` Inhaltspaket:
+1. Initialisieren Sie die folgenden Eigenschaften in der OSGi-Konfigurationsdatei des Externalizers im `ui.config`-Inhaltspaket:
 
    ```JQL
       accountKey=""
@@ -313,36 +313,36 @@ Im Folgenden finden Sie die Zwecke (und Beispiele) dieser Eigenschaften:
 
 * **accountName** ist das Azure-Konto, in dem Daten gespeichert werden müssen.
 
-* **endpointSuffix** beispielsweise `core.windows.net`.
+* **endpointSuffix**, beispielsweise `core.windows.net`.
 
-* **containerName** ist der Container im Konto, in dem die Daten gespeichert werden müssen. Im Beispiel wird davon ausgegangen, dass der Container vorhanden ist.
+* **containerName** ist der Container im Konto, in dem die Daten gespeichert werden müssen. Im Beispiel wird davon ausgegangen, dass der Container bereits vorhanden ist.
 
-* **protocol** beispielsweise `https` oder `http`.
+* **protocol**, beispielsweise `https` oder `http`.
 
 1. Konfigurieren Sie das Workflow-Modell in [!DNL Adobe Experience Manager]. Informationen zum Konfigurieren des Workflow-Modells für einen externen Speicher finden Sie unter [Konfigurieren des Workflow-Modells](#configure-aem-wf-model).
 
 ### Konfigurieren des Workflow-Modells in [!DNL Adobe Experience Manager] für externe Datenspeicherung {#configure-aem-wf-model}
 
-So konfigurieren Sie ein AEM Workflow-Modell für einen externen Datenspeicher:
+So konfigurieren Sie ein AEM-Workflow-Modell für die externe Datenspeicherung:
 
 1. Gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 
-1. Wählen Sie einen Modellnamen aus und wählen Sie **[!UICONTROL Bearbeiten]**.
+1. Wählen Sie einen Modellnamen aus und tippen Sie auf **[!UICONTROL Bearbeiten]**.
 
-1. Wählen Sie das Symbol Seiteninformationen aus und wählen Sie **[!UICONTROL Eigenschaften öffnen]**.
+1. Tippen Sie auf das Symbol für die Seiteninformationen und dann auf **[!UICONTROL Eigenschaften öffnen]**.
 
 1. Wählen Sie **[!UICONTROL Workflow für Datenspeicherung externalisieren]** aus.
 
-1. Auswählen **[!UICONTROL Speichern und schließen]** , um die Eigenschaften zu speichern.
+1. Klicken Sie zum Speichern der Eigenschaften auf **[!UICONTROL Speichern und schließen]**.
 
 ### Richtlinien für AEM-Workflows zur externen Datenspeicherung {#guidelines-workflows-external-data-storage}
 
-Im Folgenden finden Sie die Richtlinien zur Verwendung von [!DNL Adobe Experience Manager] Workflows und Speichern von Daten in externen Datenspeichern (z. B. Microsoft Azure Storage Server):
+Im Folgenden finden Sie die Richtlinien für die Verwendung von [!DNL Adobe Experience Manager]-Workflows und die Speicherung von Daten in externen Datenspeichern (beispielsweise Microsoft Azure-Speicher-Server):
 
-* Verwenden Sie Variablen zum Speichern von Daten beim Definieren von Eingabe- und Ausgabedatendateien und Anlagen in Workflow-Modellschritten. Wählen Sie nicht die Optionen **[!UICONTROL Relativ zur Payload]** und **[!UICONTROL Verfügbar unter einem absoluten Pfad]** aus. Die **[!UICONTROL Relativ zur Nutzlast]** und **[!UICONTROL Verfügbar unter einem absoluten Pfad]** Optionen werden nicht automatisch angezeigt, sobald Sie [konfigurieren Sie eine [!DNL Adobe Experience Manager] Workflow-Modell für die externe Datenspeicherung](#configure-aem-wf-model).
+* Verwenden Sie Variablen zum Speichern von Daten beim Definieren von Eingabe- und Ausgabedatendateien und Anlagen in Workflow-Modellschritten. Wählen Sie nicht die Optionen **[!UICONTROL Relativ zur Payload]** und **[!UICONTROL Verfügbar unter einem absoluten Pfad]** aus. Die Optionen **[!UICONTROL Relativ zur Payload]** und **[!UICONTROL Verfügbar unter einem absoluten Pfad]** werden beim [Konfigurieren eines  [!DNL Adobe Experience Manager] -Workflow-Modells für die externe Datenspeicherung](#configure-aem-wf-model) nicht automatisch angezeigt.
 
-* Verwenden Sie beim Senden eines adaptiven Formulars an einen AEM-Workflow Variablen zum Speichern von Datendateien und Anlagen. Nicht auswählen **[!UICONTROL Relativ zur Nutzlast]** Option beim Senden eines adaptiven Formulars an eine [!DNL Adobe Experience Manager] Arbeitsablauf. Die **[!UICONTROL Relativ zur Nutzlast]** wird nicht automatisch angezeigt, wenn Sie [konfigurieren Sie eine [!DNL Adobe Experience Manager] Workflow-Modell für die externe Datenspeicherung](#configure-aem-wf-model).
+* Verwenden Sie beim Senden eines adaptiven Formulars an einen AEM-Workflow Variablen zum Speichern von Datendateien und Anlagen. Wählen Sie beim Senden eines adaptiven Formulars an einen [!DNL Adobe Experience Manager]-Workflow nicht die Option **[!UICONTROL Relativ zur Payload]**. Die Option **[!UICONTROL Relativ zur Payload]** wird beim [Konfigurieren eines  [!DNL Adobe Experience Manager] -Workflow-Modells für die externe Datenspeicherung](#configure-aem-wf-model) nicht automatisch angezeigt.
 
-* Verwenden Sie keine benutzerdefinierten [!DNL Adobe Experience Manager] Workflow-Schritt in einem Workflow-Modell zum Speichern von Daten im [!UICONTROL CRX DE] Repository.
+* Verwenden Sie in einem Workflow-Modell keinen benutzerdefinierten [!DNL Adobe Experience Manager]-Workflow-Schritt, um Daten im Repository [!UICONTROL CRX DE] zu speichern.
 
-* Wenn Sie [konfigurieren Sie eine [!DNL Adobe Experience Manager] Workflow-Modell für die externe Datenspeicherung](#configure-aem-wf-model)erstellen Sie keine benutzerdefinierten Spalten für [!DNL Adobe Experience Manager] [!UICONTROL Posteingang] da die Werte der benutzerdefinierten Spalten nicht abgerufen werden, wenn das Arbeitselement im [!DNL Adobe Experience Manager] [!UICONTROL Posteingang] gehört zu einem Workflow, der für den externen Speicher markiert ist.
+* Wenn Sie ein [ [!DNL Adobe Experience Manager] -Workflow-Modell für die externe Datenspeicherung konfigurieren](#configure-aem-wf-model), erstellen Sie keine benutzerdefinierten Spalten für den [!DNL Adobe Experience Manager]-[!UICONTROL Posteingang], da die Werte der benutzerdefinierten Spalten nicht abgerufen werden, wenn das Arbeitselement im [!DNL Adobe Experience Manager]-[!UICONTROL Posteingang] zu einem Workflow gehört, der für die externe Datenspeicherung markiert ist.
