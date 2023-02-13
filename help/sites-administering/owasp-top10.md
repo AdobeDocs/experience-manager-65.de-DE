@@ -12,7 +12,7 @@ discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
 source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '496'
 ht-degree: 100%
 
