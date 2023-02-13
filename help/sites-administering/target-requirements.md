@@ -1,5 +1,5 @@
 ---
-title: Voraussetzungen für die Integration mit Adobe Target
+title: Voraussetzungen für das Integrieren mit Adobe Target
 seo-title: Prerequisites for Integrating with Adobe Target
 description: Hier finden Sie alle Informationen über die Voraussetzungen für die Integration mit Adobe Target.
 seo-description: Find out about the prerequisites for integrating with Adobe Target.
@@ -12,13 +12,13 @@ discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '555'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Voraussetzungen für die Integration mit Adobe Target{#prerequisites-for-integrating-with-adobe-target}
+# Voraussetzungen für das Integrieren mit Adobe Target{#prerequisites-for-integrating-with-adobe-target}
 
 Als Teil der [Integration von AEM und Adobe Target](/help/sites-administering/target.md) müssen Sie sich bei Adobe Target registrieren, den Replikationsagenten konfigurieren und Aktivitätseinstellungen auf dem Veröffentlichungsknoten sichern.
 
@@ -32,7 +32,7 @@ Der Clientcode identifiziert beim Aufrufen des Adobe Target-Servers das Adobe 
 >
 >Ihr Konto muss auch vom Target-Team aktiviert werden, damit die Integration genutzt werden kann.
 >
->Falls dies nicht der Fall ist, wenden Sie sich an die [Kundenunterstützung von Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
+>Falls dies nicht der Fall ist, wenden Sie sich an die [Kundenunterstützung von Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=de).
 
 ## Aktivieren des Target-Replikationsagenten {#enabling-the-target-replication-agent}
 
