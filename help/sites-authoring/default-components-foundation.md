@@ -14,9 +14,9 @@ legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/ed
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7272'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -65,7 +65,7 @@ Die allgemeinen Komponenten sind die grundlegenden Komponenten, mit denen Sie In
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Sie können einen Link mit Titel und Beschreibung definieren.
 
@@ -226,20 +226,20 @@ Die maximale Anzahl der Elemente, die Sie im Karussell verwenden möchten (optio
 
 >[!NOTE]
 >
->Sie können eine individuelle Karussell-Komponente für Adobe Experience Manager erstellen, in der die im AEM DAM vorhandenen digitalen Assets angezeigt werden. Weitere Informationen finden Sie im Beitrag zum [Erstellen von benutzerdefinierten Karussellkomponenten für Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html).
+>Sie können eine individuelle Karussell-Komponente für Adobe Experience Manager erstellen, in der die im AEM DAM vorhandenen digitalen Assets angezeigt werden. Weitere Informationen finden Sie im Beitrag zum [Erstellen von benutzerdefinierten Karussellkomponenten für Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk).
 
 ### Diagramm {#chart}
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Mit der Komponente „Diagramm“ können Sie ein Balken-, Linien- oder Tortendiagramm hinzufügen. AEM erstellt aus den von Ihnen zur Verfügung gestellten Daten ein Diagramm. Die Daten geben Sie direkt auf der Registerkarte „Daten“ ein oder fügen sie durch Kopieren aus einer Tabelle ein.
 
 * **Daten**
 
    * **Diagrammdaten**
-Geben Sie Ihre Diagrammdaten im CSV-Format ein. Das Format &quot;Kommagetrennte Werte&quot;verwendet Kommas (&quot;,&quot;) als Feldtrennzeichen.
+Geben Sie die Diagrammdaten im CSV-Format ein; das CSV-Format (kommagetrennte Werte) verwendet ein Komma (,) als Feldtrennzeichen.
 
 * **Erweitert**
 
@@ -261,7 +261,7 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 
 >[!NOTE]
 >
->Sie können eine benutzerdefinierte Diagrammsteuerung für AEM erstellen, in der Daten aus dem AEM JCR angezeigt werden. Weitere Informationen finden Sie im Beitrag zum [Anzeigen von Adobe Experience Manager-Daten in einem Diagramm](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html).
+>Sie können eine benutzerdefinierte Diagrammsteuerung für AEM erstellen, in der Daten aus dem AEM JCR angezeigt werden. Weitere Informationen finden Sie im Beitrag zum [Anzeigen von Adobe Experience Manager-Daten in einem Diagramm](https://helpx.adobe.com/de/experience-manager/using/displaying-experience-manager-data-chart.html).
 
 ### Inhaltsfragment {#content-fragment}
 
@@ -275,7 +275,7 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Mit dem Design-Importtool können Sie eine ZIP-Datei mit einem Designpaket hochladen.
 
@@ -283,7 +283,7 @@ Mit dem Design-Importtool können Sie eine ZIP-Datei mit einem Designpaket hochl
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Über die Download-Komponente wird auf der ausgewählten Webseite ein Link erstellt, über den eine spezifische Datei heruntergeladen werden kann. Sie können ein Asset entweder aus dem Content Finder ziehen oder eine Datei hochladen.
 
@@ -303,7 +303,7 @@ Das folgende Beispiel zeigt die Download-Komponente in Geometrixx:
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Die Komponente **Extern** ermöglicht es Ihnen, anhand von iframes externe Anwendungen in Ihre AEM-Seite einzubetten.
 
@@ -334,7 +334,7 @@ Die externe Anwendung wird in das Absatzsystem der AEM-Seite integriert. Beispie
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 >[!CAUTION]
 >
@@ -382,7 +382,7 @@ Mithilfe der Flash-Komponente können Sie einen Flash-Film laden. Sie können ei
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Bild“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Bild“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de). 
 
 Die Bild-Komponente zeigt ein Bild und begleitenden Text gemäß den festgelegten Parametern an.
 
@@ -468,7 +468,7 @@ Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in eine
 
 >[!NOTE]
 >
->Diese Komponente ist mit [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) implementiert.
+>Diese Komponente ist mit [HTML Template Language (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) implementiert.
 
 ### Liste {#list}
 
@@ -548,7 +548,7 @@ Das folgende Beispiel zeigt eine **Listen-Komponente** auf die Art und Weise, wi
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 >[!CAUTION]
 >
@@ -615,7 +615,7 @@ Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werd
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Fragment“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Fragment“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/content-fragment-component.html?lang=de). 
 
 Mit der Komponente **Verweis** können Sie auf Text in einem anderen Teil einer AEM-basierten Website (innerhalb der aktuellen Instanz) verweisen. Der Inhalt des referenzierten Absatzes wird dann so angezeigt, als wäre er auf der aktuellen Seite. Der Inhalt wird aktualisiert, wenn sich der Quellabsatz ändert (u. U. ist eine Seitenaktualisierung erforderlich).
 
@@ -649,7 +649,7 @@ Nach der Konfiguration wird der Inhalt exakt so angezeigt wie auf der Quellseite
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Schnellsuche“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/quick-search.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Schnellsuche“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/quick-search.html?lang=de). 
 
 Die Komponente „Suche“ stellt für Ihre Seite eine Suchfunktion zur Verfügung.
 
@@ -718,7 +718,7 @@ Das folgende Beispiel zeigt einen falsch geschriebenen und nicht verfügbaren Su
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten „Navigation“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html), [„Sprachnavigation“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/language-navigation.html) und [„Breadcrumb“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/breadcrumb.html).
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten „Navigation“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/navigation.html?lang=de), [„Sprachnavigation“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/language-navigation.html?lang=de) und [„Breadcrumb“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/breadcrumb.html?lang=de).
 
 Eine automatische Sitemap-Auflistung, in der (bei Standardeinstellungen) alle Seiten (als aktive Links) in der aktuellen Website aufgeführt werden: Ein Auszug zeigt zum Beispiel:
 
@@ -736,7 +736,7 @@ Sie können bei Bedarf Folgendes konfigurieren:
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Karussell“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/carousel.html?lang=de). 
 
 >[!CAUTION]
 >
@@ -770,7 +770,7 @@ Die Bildschirmpräsentation-Komponente zeigt dann wiederholt die einzelnen Fotos
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=de). 
 
 >[!NOTE]
 >
@@ -819,7 +819,7 @@ Weitere Informationen zur Verwendung von Tags finden Sie im Beitrag zum [Verwend
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Text“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=de). 
 
 >[!NOTE]
 >
@@ -848,7 +848,7 @@ Zusätzlich zu der Bearbeitung in Dialogfeldern durch den Rich-Text-Editor biete
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Bild“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html) und [„Text“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html).
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Bild“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/image.html?lang=de) und [„Text“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=de).
 
 Mit der Komponente „Text und Bild“ werden ein Textblock und ein Bild hinzugefügt. Außerdem können Sie Text und Bilder separat hinzufügen und bearbeiten. Einzelheiten hierzu finden Sie in den Beiträgen zu den Komponenten [Text](#text) und [Bild](#image).
 
@@ -896,7 +896,7 @@ Das folgende Beispiel zeigt eine Text-Bild-Komponente, die das Bild linksbündig
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Titel“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=en). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Titel“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/list.html?lang=de). 
 
 Für die Titel-Komponente gilt Folgendes:
 
@@ -925,7 +925,7 @@ Das folgende Beispiel zeigt eine angezeigte **Titel**-Komponente; das Design wir
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Komponente „Kernkomponenten einbetten“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html).
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Komponente „Kernkomponenten einbetten“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/embed.html?lang=de).
 
 >[!CAUTION]
 >
@@ -986,7 +986,7 @@ Mit der Spalten-Steuerung-Komponente können Benutzer auswählen, wie sie den In
 
 >[!CAUTION]
 >
->Der Foundation-Komponente aus Komponenten wird nicht mehr unterstützt. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Der Foundation-Komponente aus Komponenten wird nicht mehr unterstützt. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Mit Formular-Komponenten können Sie Formulare erstellen, damit Besucher Eingaben vornehmen können. Formulare und Formular-Komponenten können dazu genutzt werden, Informationen, einschließlich Benutzer-Feedback (z. B. ein Fragebogen zur Kundenzufriedenheit), und Benutzerinformationen (z. B. Benutzerregistrierung) zu sammeln.
 
@@ -1047,8 +1047,6 @@ Wenn Sie eine beliebige Formular-Komponente konfigurieren, sind im Dialogfeld di
 Diese Registerkarten stellen die erforderlichen Parameter bereit. Diese können vom Typ der einzelnen Komponenten abhängen, können jedoch Folgendes enthalten:
 
 * **Titel und Text**
-
-
 
    * **Elementname**
 
@@ -1120,7 +1118,7 @@ Zwischen dem Start und dem Ende eines Formulars können Sie Formular-Komponenten
 
 >[!NOTE]
 >
->Die Formular-Komponente der Foundation-Komponenten unterstützt nur die Verwendung anderer Formular-Komponenten von Foundation-Komponenten (Schaltflächen, Text, ausgeblendet usw.). Die Verwendung von [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in einem Foundation-Komponentenformular (und umgekehrt) wird nicht unterstützt.
+>Die Formular-Komponente der Foundation-Komponenten unterstützt nur die Verwendung anderer Formular-Komponenten von Foundation-Komponenten (Schaltflächen, Text, ausgeblendet usw.). Die Verwendung von [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) in einem Foundation-Komponentenformular (und umgekehrt) wird nicht unterstützt.
 
 #### Beginn des Formulars {#start-of-form}
 
@@ -1338,7 +1336,7 @@ Hiermit wird das Ende des Formulars gekennzeichnet. Sie können Folgendes konfig
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html?lang=de). 
 
 Hiermit kann der Benutzer einen Kontonamen eingeben:
 
@@ -1348,7 +1346,7 @@ Hiermit kann der Benutzer einen Kontonamen eingeben:
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html?lang=de). 
 
 Hiermit können Sie ein Feld für internationale Adressen im folgenden Format hinzufügen:
 
@@ -1360,7 +1358,7 @@ Die Komponente ist für den unmittelbaren Einsatz konfiguriert, Sie können die 
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 >[!CAUTION]
 >
@@ -1376,7 +1374,7 @@ Sie können verschiedene Parameter für diese Komponente konfigurieren, darunter
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html?lang=de). 
 
 Mit einem Kontrollkästchen können Sie eine Liste aus einem oder mehreren Kontrollkästchen erstellen, von denen mehrere gleichzeitig aktiviert werden können.
 
@@ -1394,7 +1392,7 @@ Sie können verschiedene Parameter festlegen wie einen Titel, eine Beschreibung 
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Hiermit können Sie Felder bereitstellen, in die Kreditkartendetails eingegeben werden können. Sie können die Typen der akzeptierten Kreditkarten und die benötigten Informationen konfigurieren (z. B. den Sicherheits-Code).
 
@@ -1404,7 +1402,7 @@ Hiermit können Sie Felder bereitstellen, in die Kreditkartendetails eingegeben 
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html?lang=de). 
 
 Eine Dropdown-Liste kann so konfiguriert werden, dass Sie eine Reihe von Werten zur Auswahl haben:
 
@@ -1422,7 +1420,7 @@ Sie können einen Titel und Elemente angeben, die in der Liste angezeigt werden.
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Die Komponente „Datei-Upload“ bietet Benutzern die Möglichkeit, eine Datei auszuwählen und hochzuladen.
 
@@ -1430,13 +1428,13 @@ Die Komponente „Datei-Upload“ bietet Benutzern die Möglichkeit, eine Datei 
 
 >[!NOTE]
 >
->Sie können eine individuelle Upload-Komponente erstellen, um Dateien in ein Sling Servlet hochzuladen. Weitere Informationen finden Sie unter [Hochladen von Dateien in Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/uploading-files-aem1.html).
+>Sie können eine individuelle Upload-Komponente erstellen, um Dateien in ein Sling Servlet hochzuladen. Weitere Informationen finden Sie unter [Hochladen von Dateien in Adobe Experience Manager](https://helpx.adobe.com/de/experience-manager/using/uploading-files-aem1.html).
 
 ### Ausgeblendetes Feld {#hidden-field}
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Ausgeblendetes Formular“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-hidden.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Ausgeblendetes Formular“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-hidden.html?lang=de). 
 
 Mit dieser Komponente können Sie ein verstecktes Feld erstellen. Dieses Feld kann zu unterschiedlichen Zwecken verwendet werden. Wenn Sie z. B. nach dem Senden des Formulars eine Aktion durchführen müssen oder wenn für die Nachverarbeitung ausgeblendete Daten benötigt werden.
 
@@ -1452,7 +1450,7 @@ Mit dieser Komponente können Sie ein verstecktes Feld erstellen. Dieses Feld ka
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html?lang=de). 
 
 Mit einer Bild-Schaltfläche können Sie eine Schaltfläche mit Ihrem eigenem Bild und Text erstellen:
 
@@ -1462,7 +1460,7 @@ Mit einer Bild-Schaltfläche können Sie eine Schaltfläche mit Ihrem eigenem Bi
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Die Bild-Upload-Komponente bietet Benutzern die Möglichkeit, eine Bilddatei auszuwählen und hochzuladen.
 
@@ -1472,7 +1470,7 @@ Die Bild-Upload-Komponente bietet Benutzern die Möglichkeit, eine Bilddatei aus
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Im Link-Feld können Benutzer eine URL angeben:
 
@@ -1484,7 +1482,7 @@ Dies wird am häufigsten für das Kalenderereignis-Formular verwendet, wo es fü
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Dieses Feld ermöglicht dem Benutzer die Eingabe seines Kennworts:
 
@@ -1494,7 +1492,7 @@ Dieses Feld ermöglicht dem Benutzer die Eingabe seines Kennworts:
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Diese Komponente bietet Benutzern zwei Felder für:
 
@@ -1509,7 +1507,7 @@ Die Standardeinstellungen der Komponente werden folgendermaßen angezeigt:
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularoptionen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-options.html?lang=de). 
 
 Eine Optionsfeldgruppe bietet Ihnen eine Liste mit einem oder mehreren Optionsschaltern, von denen nur jeweils einer ausgewählt werden kann.
 
@@ -1527,7 +1525,7 @@ Sie können den Elementnamen zusammen mit einem Titel und einer Beschreibung fes
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html?lang=de). 
 
 Mit dieser Komponente können Sie eine Schaltfläche „Übermitteln“ mit Standardtext erstellen:
 
@@ -1541,7 +1539,7 @@ Oder Sie können Ihren eigenen Text eingeben:
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). 
 
 Über dieses Feld können Sie Tags auswählen:
 
@@ -1568,7 +1566,7 @@ Sie können auf einer speziellen Registerkarte verschiedene Parameter angeben, d
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formulartext“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-text.html?lang=de). 
 
 Das Standardtextfeld kann an die erforderliche Größe angepasst werden und kann den eigenen Lead in der Nachricht enthalten:
 
@@ -1578,7 +1576,7 @@ Das Standardtextfeld kann an die erforderliche Größe angepasst werden und kann
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html). 
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt stattdessen die Verwendung der [Kernkomponente „Formularschaltfläche“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/forms/form-button.html?lang=de). 
 
 Damit können Sie eine Senden-Schaltfläche für die Verwendung in einem Workflow erstellen.
 
