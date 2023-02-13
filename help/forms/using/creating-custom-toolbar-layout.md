@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines benutzerdefinierten Symbolleistenlayouts
+title: Erstellen eines benutzerdefinierten Symbolleisten-Layouts
 seo-title: Creating custom toolbar layout
 description: Sie können ein Symbolleistenlayout für das Formular festlegen. Das Symbolleistenlayout definiert die Befehle und das Layout der Symbolleiste im Formular.
 seo-description: You can specify a toolbar layout for the form. The toolbar layout defines the commands and the layout of the toolbar on the form.
@@ -11,13 +11,13 @@ discoiquuid: 0d817a7e-2758-4308-abda-6194716c2d97
 docset: aem65
 exl-id: 44516956-00aa-41d5-a7e9-746c7618e5db
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '524'
 ht-degree: 100%
 
 ---
 
-# Erstellen eines benutzerdefinierten Symbolleistenlayouts{#creating-custom-toolbar-layout}
+# Erstellen eines benutzerdefinierten Symbolleisten-Layouts{#creating-custom-toolbar-layout}
 
 ## Symbolleistenlayouts {#layout}
 
@@ -27,13 +27,13 @@ Die Verwendungen des Symbolleistenlayouts hängen stark von der clientseitigen V
 
 ![Beispiellayout der Symbolleiste](assets/default_toolbar_layout.png)
 
-Beispiellayout der Symbolleiste
+Beispiel-Layout der Symbolleiste
 
 Adaptive Formulare enthalten einen standardmäßigen Satz mit Layouts:
 
 ![Standardmäßig verfügbare Symbolleistenlayouts ](assets/toolbar1.png)
 
-Standardmäßig verfügbare Symbolleistenlayouts
+Standardmäßig verfügbare Symbolleisten-Layouts
 
 Darüber hinaus können Sie ein benutzerdefiniertes Symbolleistenlayout erstellen.
 
@@ -78,7 +78,7 @@ Beispiel für ein benutzerdefiniertes Symbolleisten-Layout
 
    ![Liste der verfügbaren Symbolleistenlayouts](assets/toolbar4.png)
 
-   Liste der verfügbaren Symbolleistenlayouts
+   Liste der verfügbaren Symbolleisten-Layouts
 
    >[!NOTE]
    >
