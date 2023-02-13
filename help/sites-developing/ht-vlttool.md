@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2718'
 ht-degree: 100%
 
@@ -573,7 +573,7 @@ resolved -q|-R|--force <file1> [<file2> ...]
 
 ### Propget {#propget}
 
-Druckt den Wert einer Eigenschaft auf Dateien oder Verzeichnisse.
+Druckt den Wert einer Eigenschaft von Dateien oder Verzeichnissen.
 
 #### Syntax {#syntax-10}
 
