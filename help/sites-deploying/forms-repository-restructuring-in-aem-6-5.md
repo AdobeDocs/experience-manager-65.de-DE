@@ -11,21 +11,21 @@ discoiquuid: 1ce9a622-5968-407f-a74b-d325a2bff669
 feature: Upgrading
 exl-id: d555422e-dc97-4d45-9525-4299d22315e2
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
 # Forms-Repository-Neustrukturierung in AEM 6.5{#forms-repository-restructuring-in-aem}
 
-Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) -Seite verwenden, sollten Kunden, die auf AEM 6.5 aktualisieren, diese Seite verwenden, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen zu bewerten, die sich auf die AEM Forms-Lösung auswirken. Einige Änderungen erfordern während des Aktualisierungsprozesses von AEM 6.5 Arbeitsaufwand, während andere bis zu einer zukünftigen Aktualisierung verschoben werden können.
+Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/help/sites-deploying/repository-restructuring.md) beschrieben, sollten Kunden, die ein Upgrade auf AEM 6.5 durchführen, diese Seite nutzen, um den Arbeitsaufwand im Zusammenhang mit Repository-Änderungen abzuschätzen, die sich auf AEM Forms Solution auswirken. Einige Änderungen erfordern einen Arbeitsaufwand während des Upgrade-Prozesses auf AEM 6.5, während andere bis zu einem zukünftigen Upgrade verschoben werden können.
 
 **Mit der Aktualisierung auf 6.5**
 
 * [Verschiedenes](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#misc)
 
-**Vor der künftigen Aktualisierung**
+**Vor dem zukünftigen Upgrade**
 
 * [Echosign-Cloud-Service-Konfiguration](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#echosign-cloud-service-configuration)
 * [Recaptcha-Cloud-Service-Konfigurationen](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md#recaptcha-cloud-service-configurations)
@@ -39,7 +39,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
 | **Vorheriger Speicherort** | `/etc/clientlibs/fd/fp` |
 |---|---|
 | **Neuer Speicherort** | `/libs/fd/fp/components` |
-| **Leitfaden für die Neustrukturierung** | Alle expliziten Verweise im benutzerdefinierten Code auf den alten Speicherort müssen an den neuen Speicherort aktualisiert werden. |
+| **Leitfaden für die Neustrukturierung** | Alle expliziten Verweise im benutzerdefinierten Code auf den alten Speicherort müssen auf den neuen Speicherort aktualisiert werden. |
 | **Anmerkungen** | Diese Client-Bibliotheken sollten nicht modifiziert oder erweitert werden. |
 
 | **Vorheriger Speicherort** | `/etc/clientlibs/fd/rte` |
@@ -90,7 +90,7 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
 | **Leitfaden für die Neustrukturierung** | Das Ändern dieser Client-Bibliotheken wurde nie empfohlen oder unterstützt. Wenn Änderungen an diesen Client-Bibliotheken vorgenommen wurden, sollten diese auf den von AEM bereitgestellten Code zurückgesetzt werden. |
 | **Anmerkungen** | Nicht zutreffend |
 
-## Vor der künftigen Aktualisierung {#prior-to-upgrade}
+## Vor dem zukünftigen Upgrade {#prior-to-upgrade}
 
 ### Echosign-Cloud-Service-Konfiguration {#echosign-cloud-service-configuration}
 
@@ -127,5 +127,5 @@ Wie im übergeordneten Element beschrieben [Repository-Neustrukturierung in AEM 
 | **Vorheriger Speicherort** | `/etc/designs/fd/fp` |
 |---|---|
 | **Neuer Speicherort** | `/libs/fd/fp` |
-| **Leitfaden für die Neustrukturierung** | Alle Verweise auf die /etc-Vorlagen sollten schließlich aktualisiert werden, um auf ihre `/libs` Entsprechungen. |
+| **Leitfaden für die Neustrukturierung** | Alle Verweise auf die /etc-Vorlagen müssen schließlich so aktualisiert werden, dass sie auf ihre `/libs`-Gegenstücke verweisen. |
 | **Anmerkungen** | Nicht zutreffend |
