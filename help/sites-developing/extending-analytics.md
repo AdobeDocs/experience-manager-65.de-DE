@@ -1,7 +1,7 @@
 ---
 title: Erweitern der Ereignisverfolgung
 seo-title: Extending Event Tracking
-description: Mit AEM Analytics können Sie Benutzerinteraktionen auf Ihrer Website verfolgen.
+description: Mit AEM Analytics können Sie Benutzerinteraktionen auf Ihrer Website verfolgen
 seo-description: AEM Analytics allows you to track user interaction on your website
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
 contentOwner: User
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '487'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 52%
 
 Mit AEM Analytics können Sie Benutzerinteraktionen auf Ihrer Website verfolgen. Als Entwickler müssen Sie möglicherweise:
 
-* verfolgen, wie Besucher mit Ihren Komponenten interagieren. Dies kann mit [Benutzerdefinierte Ereignisse.](#custom-events)
-* [Auf Werte in ContextHub zugreifen](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
+* verfolgen, wie Besucher mit Ihren Komponenten interagieren. Hierfür können Sie [benutzerspezifische Ereignisse](#custom-events) verwenden.
+* [Zugriff auf Werte im ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
 * [Datensatzrückrufe hinzufügen](#adding-record-callbacks).
 
 >[!NOTE]
 >
->Diese Informationen sind im Wesentlichen allgemein, verwenden jedoch [Adobe Analytics](/help/sites-administering/adobeanalytics.md) für spezifische Beispiele.
+>Diese Informationen sind zwar größtenteils allgemeiner Art, [Adobe Analytics](/help/sites-administering/adobeanalytics.md) wird jedoch für spezifische Beispiele verwendet.
 >
 >[Allgemeine Informationen zum Entwickeln von Komponenten und Dialogfeldern finden Sie unter ](/help/sites-developing/components.md)Entwickeln von Komponenten.
 
@@ -37,13 +37,13 @@ Benutzerspezifische Ereignisse verfolgen alles, was von der Verfügbarkeit einer
 
 ### Verfolgen von benutzerspezifischen Ereignissen beim Laden einer Seite {#tracking-custom-events-on-page-load}
 
-Dies kann mithilfe des Pseudo-Attributs erfolgen `data-tracking` (Das ältere Datensatzattribut wird aus Gründen der Abwärtskompatibilität weiterhin unterstützt). Sie können dieses einem beliebigen HTML-Tag hinzufügen.
+Dies kann mit dem Pseudo-Attribut `data-tracking` erfolgen (das ältere Datensatzattribut wird weiter unterstützt, um die Abwärtskompatibilität sicherzustellen). Sie können dieses einem beliebigen HTML-Tag hinzufügen.
 
-Die Syntax für `data-tracking` is
+Die Syntax für `data-tracking` lautet
 
 * `data-tracking="{'event': ['eventName'], 'values': {'key': 'value', 'nextKey': 'nextValue'}, componentPath: 'myapp/component/mycomponent'}"`
 
-Sie können eine beliebige Anzahl von Schlüssel-Wert-Paaren als zweiten Parameter übergeben, der als Nutzlast bezeichnet wird.
+Sie können eine beliebige Anzahl von Schlüssel-Wert-Paaren als zweiten Parameter übergeben, der als Payload bezeichnet wird.
 
 Ein Beispiel kann wie folgt aussehen:
 
@@ -60,7 +60,7 @@ Ein Beispiel kann wie folgt aussehen:
 </span>
 ```
 
-Beim Laden der Seite werden alle `data-tracking` -Attribute werden erfasst und zum Ereignisspeicher von ContextHub hinzugefügt, wo sie Adobe Analytics-Ereignissen zugeordnet werden können. Ereignisse, die nicht zugeordnet sind, werden von Adobe Analytics nicht verfolgt. Siehe [Herstellen einer Verbindung zu Adobe Analytics](/help/sites-administering/adobeanalytics.md) für weitere Informationen zur Zuordnung von Ereignissen.
+Beim Laden der Seite werden alle `data-tracking`-Attribute erfasst und zum Ereignisabschnitt des ContextHub hinzugefügt, wo sie Adobe Analytics-Ereignissen zugeordnet werden können. Nicht zugeordnete Ereignisse werden von Adobe Analytics nicht verfolgt. Weitere Informationen zum Zuordnen von Ereignissen finden Sie unter [Verbinden mit Adobe Analytics](/help/sites-administering/adobeanalytics.md).
 
 ### Verfolgen von benutzerspezifischen Ereignissen nach dem Laden einer Seite {#tracking-custom-events-after-page-load}
 
@@ -74,9 +74,9 @@ Dabei gilt
 
 * `values` enthält alle zu verfolgenden Werte.
 * `collect` ist optional und gibt ein Array mit den Ereignis- und Objektdaten zurück.
-* `options` ist optional und enthält Linktracking-Optionen wie HTML-Element `obj` und ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
+* `options` ist optional und beinhaltet Optionen zur Linkverfolgung, z. B. die HTML-Elemente `obj` und ` [defaultLinkType](https://microsite.omniture.com/t2/help/en_US/sc/implement/index.html#linkType)`.
 
-* `componentPath` ist ein erforderliches Attribut und es wird empfohlen, `<%=resource.getResourceType()%>`
+* `componentPath` ist ein erforderliches Attribut; es wird empfohlen, es auf `<%=resource.getResourceType()%>` festzulegen.
 
 Beispielsweise verursacht bei folgender Definition das Klicken eines Benutzers auf den Link **Jump to top**, dass die beiden Ereignisse `jumptop` und `headlineclick` ausgelöst werden:
 
@@ -86,13 +86,13 @@ Beispielsweise verursacht bei folgender Definition das Klicken eines Benutzers a
 </h1>
 ```
 
-## Zugreifen auf Werte in ContextHub {#accessing-values-in-the-contexthub}
+## Zugreifen auf Werte im ContextHub {#accessing-values-in-the-contexthub}
 
-Die ContextHub-JavaScript-API verfügt über eine `getStore(name)` -Funktion, die den angegebenen Store zurückgibt, sofern verfügbar. Der Laden hat eine `getItem(key)` -Funktion, die den Wert des angegebenen Schlüssels zurückgibt, sofern verfügbar. Verwenden der `getKeys()` -Funktion ist es möglich, ein Array definierter Schlüssel für den spezifischen Store abzurufen.
+Die ContextHub-JavaScript-API verfügt über eine `getStore(name)`-Funktion, die ggfs. den angegebenen Speicherabschnitt zurückgibt. Jeder Speicherabschnitt beinhaltet eine Funktion `getItem(key)`, die ggfs. den Wert des angegebenen Schlüssels zurückgibt. Mit dieser Funktion `getKeys()` kann ein Array von definierten Schlüsseln für den jeweiligen Speicherabschnitt abgerufen werden.
 
-Sie können über Werteänderungen in einem Store benachrichtigt werden, indem Sie eine Funktion mithilfe der `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` -Funktion.
+Sie können über Wertänderungen in einem Speicherabschnitt benachrichtigt werden, indem Sie eine Funktion mit der Funktion `ContextHub.getStore(name).eventing.on(ContextHub.Constants.EVENT_STORE_UPDATED, handler, selector, triggerForPastEvents)` binden.
 
-Die beste Möglichkeit, über die anfängliche Verfügbarkeit von ContextHub informiert zu werden, besteht darin, die `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);` -Funktion.
+Die beste Möglichkeit, über die anfängliche Verfügbarkeit des ContextHub benachrichtigt zu werden, ist die Verwendung der Funktion `ContextHub.eventing.on(ContextHub.Constants.EVENT_ALL_STORES_READY, handler, selector, triggerForPastEvents);`.
 
 **Zusätzliche Ereignisse für ContextHub:**
 
@@ -106,11 +106,11 @@ Speicherspezifisch:
 
 >[!NOTE]
 >
->Sehen Sie sich auch das vollständige [ContextHub-API-Referenz](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference)
+>Sehen Sie sich auch die vollständige [ContextHub-API-Referenz](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/contexthub-api.html#ContextHubJavascriptAPIReference) an.
 
 ## Hinzufügen von Datensatzrückrufen {#adding-record-callbacks}
 
-Vor und nach der Registrierung von Rückrufen mithilfe der Funktionen `CQ_Analytics.registerBeforeCallback(callback,rank)` und `CQ_Analytics.registerAfterCallback(callback,rank)`.
+Rückrufe vor und nach dem Laden werden mit den Funktionen `CQ_Analytics.registerBeforeCallback(callback,rank)` und `CQ_Analytics.registerAfterCallback(callback,rank)` registriert.
 
 Bei beiden Funktionen wird als erstes Argument eine Funktion und als zweites Argument ein Rang verwendet, der die Reihenfolge der auszuführenden Rückrufe angibt.
 
