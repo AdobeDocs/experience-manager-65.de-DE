@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 89441336-babc-4d1f-9053-d1566cd42d22
 exl-id: f64efb06-815a-4608-ba1c-39e22f344ebb
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '408'
 ht-degree: 100%
 
@@ -35,4 +35,4 @@ Verwenden Sie einfache Variablentypen (z. B. String oder Int) und vermeiden Sie 
 
 Verwenden Sie den Stammordner des globalen Dokumentenspeichers (GDS) effizient. Der GDS-Stammordner auf dem Forms-Server wird unter anderem zum Speichern von Dateien, die an Dienste übergeben werden, die Teil von AEM Forms in Prozessen sind, verwendet. Zum Verbessern der Leistung werden kleinere Dokumente stattdessen im Arbeitsspeicher gespeichert und bleiben in der Datenbank erhalten.
 
-Administration Console stellt die Eigenschaft „Standardmäßige Maximalgröße für Inline-Dokumente“ zum Konfigurieren der Maximalgröße von Dokumenten bereit, die im Arbeitsspeicher gespeichert werden und in der Datenbank erhalten bleiben. (Siehe [Allgemeine AEM Forms-Einstellungen konfigurieren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Wenn Sie diese Eigenschaft auf einen niedrigen Wert festgelegt haben, bleiben die meisten Dokumente im GDS-Ordner und nicht in der Datenbank erhalten. Der Vorteil besteht darin, dass Sie die Dateien, wenn sie im GDS-Ordner gespeichert sind, leichter löschen können, wenn Sie sie nicht mehr benötigen.
+Administration Console stellt die Eigenschaft „Standardmäßige Maximalgröße für Inline-Dokumente“ zum Konfigurieren der Maximalgröße von Dokumenten bereit, die im Arbeitsspeicher gespeichert werden und in der Datenbank erhalten bleiben. (Siehe [Konfigurieren allgemeiner AEM Forms-Einstellungen](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).) Wenn Sie diese Eigenschaft auf einen niedrigen Wert festgelegt haben, bleiben die meisten Dokumente im GDS-Ordner und nicht in der Datenbank erhalten. Der Vorteil besteht darin, dass Sie die Dateien, wenn sie im GDS-Ordner gespeichert sind, leichter löschen können, wenn Sie sie nicht mehr benötigen.
