@@ -13,9 +13,9 @@ docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
 source-git-commit: dd8f24ce412a8ca6c44224a7602533dae0898e92
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6230'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -324,11 +324,11 @@ Die Aufgabe einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle
  </tbody>
 </table>
 
-### Konsistenzprüfungskonfiguration {#health-check-configuration}
+### Konfiguration der Konsistenzprüfung {#health-check-configuration}
 
-Standardmäßig werden bei einer vordefinierten AEM alle 60 Sekunden Konsistenzprüfungen ausgeführt.
+Standardmäßig werden bei einer vordefinierten AEM-Instanz alle 60 Sekunden Konsistenzprüfungen ausgeführt.
 
-Sie können die **Zeitraum** mit dem [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) **Konfiguration der Konsistenzprüfung der Abfrage** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics).
+Sie können den **Zeitraum** in der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) mit der **Konfiguration der Konsistenzprüfung von Anfragen** (com.adobe.granite.queries.impl.hc.QueryHealthCheckMetrics) festlegen.
 
 ## Überwachung mit Nagios {#monitoring-with-nagios}
 
@@ -520,7 +520,7 @@ Um auf ihn zuzugreifen, klicken Sie auf dem Begrüßungsbildschirm unter **Tools
 
 Darüber hinaus kann auf ihn direkt über diese URL zugegriffen werden: `https://serveraddress:port/libs/granite/operations/content/diagnosistools/indexManager.html`
 
-![index_manager](assets/index_manager.png)
+![Index-Manager](assets/index_manager.png)
 
 Über die Benutzeroberfläche können Sie Indizes filtern. Geben Sie dazu die Filterkriterien in das Suchfeld in der linken oberen Ecke des Bildschirms ein.
 
@@ -865,7 +865,7 @@ Sie können auch eine `JSON`-Datei herunterladen, in der alle Dashboard-Informat
    <td>Seite „Workflow-Fehler“</td>
   </tr>
   <tr>
-   <td>Sling-Aufträge</td>
+   <td>Sling Jobs</td>
    <td><p>Anzahl an Sling-Aufträgen – Anzahl an Aufträgen in einem bestimmten Status (falls vorhanden):</p>
     <ul>
      <li>fehlgeschlagen</li>
