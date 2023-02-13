@@ -11,9 +11,9 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2746'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -129,7 +129,7 @@ Der Zusammenfassungsausdruck wird in der Regel für das Wiederholen von untergeo
 
 **Rückgabetyp**: Der Ausdruck gibt eine Zeichenfolge zurück, die zum Titel des Akkordeons wird.
 
-**Beispiel:** &quot;Kontonummer : &quot; + textbox1.value
+**Beispiel:** „Kontonummer: “ + textbox1.value
 
 ### Ausdruck für die Überprüfung {#validate-expression}
 
@@ -259,7 +259,7 @@ Um GuideBridge nach Initialisierung des Formulars zu verwenden (das `bridgeIniti
 
 #### GuideBridge-Ereignisse {#guidebridge-events}
 
-GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. Ausführliche Informationen zu solchen Ereignissen finden Sie in der [JavaScript-Bibliotheks-API-Referenz für adaptive Formulare](https://helpx.adobe.com/aem-forms/6/javascript-api/GuideBridge.html).
+GuideBridge bietet auch bestimmte Ereignisse für externe Skripte auf der Seite, die als Host fungiert. Externe Skripte können diese Ereignisse überwachen und verschiedene Vorgänge durchführen. Beispiel: Sobald sich der Benutzername in einem Formular ändert, ändert sich der in der Kopfzeile der Seite angezeigte Name ebenfalls. Ausführliche Informationen zu solchen Ereignissen finden Sie in der [JavaScript-Bibliotheks-API-Referenz für adaptive Formulare](https://helpx.adobe.com/de/aem-forms/6/javascript-api/GuideBridge.html).
 
 Verwenden Sie folgenden Code zum Registrieren von Handlern:
 
@@ -277,7 +277,7 @@ Wie oben erwähnt lassen adaptive Formulare das Bereitstellen von Überprüfungs
 
 Führen Sie die folgenden Schritte durch, um ein benutzerspezifisches Muster für einen bestimmten Feldtyp zu erstellen und es dann für alle Felder desselben Typs wiederzuverwenden:
 
-1. Navigieren Sie auf Ihrer Authoring-Instanz zu CRXDE Lite.
+1. Navigieren Sie in Ihrer Autoreninstanz zu CRXDE Lite.
 1. Erstellen Sie einen Ordner zum Aufbewahren Ihrer benutzerdefinierten Muster. Erstellen Sie im Ordner „/apps“ einen Knoten des Typs „sling:folder“. Beispiel: Erstellen Sie einen Knoten mit dem Namen `customPatterns`. Erstellen Sie unter diesem Knoten einen weiteren Knoten des Typs `nt:unstructed` und geben Sie ihm den Namen `textboxpatterns`. Dieser Knoten enthält verschiedene benutzerdefinierte Muster, die Sie hinzufügen möchten.
 1. Öffnen Sie die Registerkarte „Eigenschaften“ des erstellten Knotens. Beispiel: Öffnen Sie die Registerkarte „Eigenschaften“ von `textboxpatterns`. Fügen Sie diesem Knoten die Eigenschaft `guideComponentType` hinzu und legen Sie ihren Wert auf *fd/af/components/formatter/guideTextBox* fest.
 
