@@ -12,7 +12,7 @@ discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
 source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '674'
 ht-degree: 100%
 
@@ -59,6 +59,7 @@ Die Rangfolge ist (in absteigender Reihenfolge) `/conf`, `/apps`, `/libs`.
 >1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
 >
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+
 >
 
 
