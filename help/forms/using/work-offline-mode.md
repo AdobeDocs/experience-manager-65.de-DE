@@ -1,5 +1,5 @@
 ---
-title: Arbeiten im Offlinemodus
+title: Arbeiten im Offline-Modus
 seo-title: Working in the offline mode
 description: Arbeiten Sie auf Ihrem Mobilgerät offline in der AEM Forms-App, wenn Sie sich außerhalb der Reichweite Ihres AEM Forms-Netzwerks oder vollständig im Offlinemodus befinden.
 seo-description: Take your mobile device offline outside your AEM Forms network range or in a completely offline mode and work on the AEM Forms app
@@ -10,13 +10,13 @@ topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
 exl-id: ba4ceef1-510d-41ef-94b8-4834fb7de804
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '532'
 ht-degree: 100%
 
 ---
 
-# Arbeiten im Offlinemodus {#working-in-the-offline-mode}
+# Arbeiten im Offline-Modus {#working-in-the-offline-mode}
 
 Der Offline-Modus der AEM Forms-Mobile-App ermöglicht es, die Arbeit nahtlos fortzusetzen, selbst wenn die Mobile App offline geht. Sie können ein Formular öffnen, aktualisieren und senden, ohne dass eine Netzwerkverbindung erforderlich ist.
 
