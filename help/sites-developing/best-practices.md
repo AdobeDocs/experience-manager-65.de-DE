@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '463'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -90,14 +90,14 @@ Einige Best Practices für Communities sind hier beschrieben:
 | Best Practices für die Arbeit mit benutzergenerierten Inhalten | [Kodierungsrichtlinien ](/help/communities/code-guide.md) | Richtlinien für die Entwicklung von flexiblem, portablem Code für das [Social Component Framework](/help/communities/scf.md) (SCF). |
 | Beispielverwendung von Community-Komponenten | [Handbuch der Community-Komponenten](/help/communities/components-guide.md) | Ein interaktives Entwicklungswerkzeug. |
 
-## Tools/HTL {#tooling-htl}
+## Tooling/HTL {#tooling-htl}
 
 HTML Template Language (HTL) ist ein neues HTML-Vorlagensystem, das mit AEM 6.0 eingeführt wurde. Es ersetzt JSP und ESP als bevorzugtes Vorlagensystem von AEM.
 
 |  |  |  |
 |---|---|---|
-| HTL-Übersicht | [HTL-Überblick und -Syntax](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) | In diesem Dokument wird beschrieben, was HTL ist und wie der Umstieg auf HTL gelingt. Es enthält Beispiele eines Projekts, Syntax, Ausdrücke und Aussagen. |
-| Verwenden von APIs in Java | [HTL-Java-Anwendungs-API](https://helpx.adobe.com/de/experience-manager/htl/using/use-api.html) | Mit der Java-Anwendungs-API von HTL kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen. |
+| HTL-Übersicht | [HTL-Überblick und -Syntax](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) | In diesem Dokument wird beschrieben, was HTL ist und wie der Umstieg auf HTL gelingt. Es enthält Beispiele eines Projekts, Syntax, Ausdrücke und Aussagen. |
+| Verwenden von APIs in Java | [HTL-Java-Anwendungs-API](https://helpx.adobe.com/de/experience-manager/htl/using/use-api.html) | Mit der HTL-Java-Anwendungs-API kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen. |
 
 >[!NOTE]
 >
