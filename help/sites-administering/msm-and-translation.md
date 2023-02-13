@@ -11,15 +11,15 @@ content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '341'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
 # Website-Administration{#website-administration}
 
-Die folgenden Administrationstools sind für die Verwaltung von Websites und Seiten verfügbar:
+Die folgenden Administrations-Tools sind für die Verwaltung von Websites und Seiten verfügbar:
 
 * Multi Site Manager (MSM) ermöglicht Ihnen die Verwendung derselben Website-Inhalte an mehreren Stellen und lässt gleichzeitig Varianten zu:
 
