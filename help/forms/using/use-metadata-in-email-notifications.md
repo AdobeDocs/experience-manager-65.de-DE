@@ -1,5 +1,5 @@
 ---
-title: 'Verwenden von Metadaten in einer E-Mail-Benachrichtigung '
+title: Verwenden von Metadaten in einer E-Mail-Benachrichtigung
 seo-title: Use metadata in an email notification
 description: Verwenden von Metadaten zum Ausfüllen von Informationen in einer Formular-Workflow-E-Mail-Benachrichtigung
 seo-description: Use metadata to populate information in a forms workflow email notification
@@ -9,9 +9,9 @@ discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '897'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Sie können Metadaten in einer E-Mail-Vorlage verwenden, um Informationen in ein
 
 ![Standard-E-Mail-Vorlage](assets/default_email_template_metadata_new.png)
 
-Metadaten werden in Schlüssel-Wert-Paaren gespeichert. Sie können den Schlüssel in der E-Mail-Vorlage angeben und er wird zur Laufzeit durch einen Wert ersetzt (wenn eine E-Mail-Benachrichtigung erstellt wird). Im folgenden Codebeispiel ist beispielsweise „$ {workitem_title}“ ein Schlüssel. Sie wird zur Laufzeit durch den Wert &quot;Loan-Request&quot;ersetzt.
+Metadaten werden in Schlüssel-Wert-Paaren gespeichert. Sie können den Schlüssel in der E-Mail-Vorlage angeben und er wird zur Laufzeit durch einen Wert ersetzt (wenn eine E-Mail-Benachrichtigung erstellt wird). Im folgenden Codebeispiel ist beispielsweise „$ {workitem_title}“ ein Schlüssel. Er wird zur Laufzeit durch den Wert „Loan-Request“ ersetzt.
 
 ```html
 subject=Task Assigned - ${workitem_title}
