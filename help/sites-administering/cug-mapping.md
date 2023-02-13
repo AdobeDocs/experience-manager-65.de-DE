@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '489'
 ht-degree: 100%
 
@@ -33,7 +33,7 @@ ht-degree: 100%
   <tr>
    <td><p>Eigenschaft: cq:cugEnabled</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
    <td><p>Autorisierung:</p> <p>Knoten: rep:cugPolicy des Knotentyps rep:CugPolicy</p> <p>Deklarierender Knotentyp: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentifizierung:</p> <p>Mixin-Typ: granite:AuthenticationRequired</p> </td>
-   <td><p>Um den Lesezugriff einzuschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur für die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:Cugpolicy und Typ rep:Cugpolicy sind geschützt und können nicht mit normalen JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen JCR-Zugangssteuerungsverwaltung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungspflicht auf einem Knoten durchzusetzen, genügt es, den Mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unter den konfigurierten unterstützten Pfaden berücksichtigt.</p> </td>
+   <td><p>Um den Lesezugriff einzuschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur für die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:Cugpolicy und Typ rep:Cugpolicy sind geschützt und können nicht mit normalen JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen JCR-Zugangssteuerungsverwaltung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungspflicht auf einem Knoten durchzusetzen, genügt es, den Mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unterhalb der konfigurierten unterstützten Pfade berücksichtigt.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschaft: cq:cugPrincipals</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
