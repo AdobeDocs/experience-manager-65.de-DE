@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1618'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -147,7 +147,7 @@ Das folgende Verfahren zeigt, wie Sie über das JavaScript-Feld das Adobe Analyt
 
 1. Fügen Sie Ihren JavaScript-Code in der Funktion **s_doPlugins** hinzu.
 
-Im folgenden Beispiel werden die auf einer Seite erfassten Daten in hierarchischer Reihenfolge mithilfe eines gemeinsamen Trennzeichens von &quot;|&quot;verkettet.
+Beim folgenden Beispiel werden die auf einer Seite erfassten Daten in hierarchischer Reihenfolge verbunden. Dabei wird das gemeinsame Trennzeichen „|“ genutzt.
 
 Ein Adobe Analytics-Framework weist die folgenden Konfigurationen auf:
 
