@@ -1,5 +1,5 @@
 ---
-title: Single Sign-On und Zeitüberschreitungshandler
+title: Single Sign-On und Zeitüberschreitungs-Handler
 seo-title: Single Sign On and timeout handlers
 description: Gehen Sie wie folgt vor, um einen Sitzungs-Timeout-Wert für AEM Forms festzulegen.
 seo-description: How-to set the session timeout value for AEM Forms workspace.
@@ -11,13 +11,13 @@ topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 exl-id: 4f824d80-f3f8-4010-9583-5a9ab1151a7b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '189'
 ht-degree: 100%
 
 ---
 
-# Single Sign-On und Zeitüberschreitungshandler {#single-sign-on-and-timeout-handlers}
+# Single Sign-On und Zeitüberschreitungs-Handler {#single-sign-on-and-timeout-handlers}
 
 AEM Forms Workspace ist SSO-fähig. Wenn sich ein Benutzer bei einer AEM Forms-Anwendung wie Forms Manager, der PDF Generator-Benutzeroberfläche oder AEM Forms-Arbeitsbereich angemeldet hat und in derselben Browsersitzung auf AEM Forms-Arbeitsbereich zugreift, wird der Benutzer bei AEM Forms-Arbeitsbereich angemeldet und umgekehrt.
 
