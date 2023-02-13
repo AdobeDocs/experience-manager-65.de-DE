@@ -1,5 +1,5 @@
 ---
-title: In Route-Aktionen verwendete Bilder anpassen
+title: Anpassen der in Route-Aktionen verwendeten Bilder
 seo-title: Customize images used in route actions
 description: Vorgehensweise zum Anpassen von Bildern, die in Route-Aktionen in LiveCycle AEM Forms Workspace verwendet werden.
 seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
@@ -10,13 +10,13 @@ topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '308'
 ht-degree: 100%
 
 ---
 
-# In Route-Aktionen verwendete Bilder anpassen {#customize-images-used-in-route-actions}
+# Anpassen der in Route-Aktionen verwendeten Bilder {#customize-images-used-in-route-actions}
 
 Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte in [Generische Schritte zur Anpassung](/help/forms/using/generic-steps-html-workspace-customization.md) und anschließend die Schritte in diesem Artikel durch.
 
