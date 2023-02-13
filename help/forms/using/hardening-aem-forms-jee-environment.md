@@ -11,9 +11,9 @@ discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
 source-git-commit: d2661ee6614261179b5e8d2d9ffb7c240ce676dc
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7665'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -95,7 +95,7 @@ In der folgenden Tabelle werden mögliche Ansätze zum Verringern von Sicherheit
  <tbody>
   <tr> 
    <td><p>Sicherheits-Patches</p></td> 
-   <td><p>Wenn vom Hersteller bereitgestellte Sicherheits-Patches und -Aktualisierungen nicht zeitnah installiert werden, besteht ein erhöhtes Risiko, dass nicht autorisierte Benutzer Zugriff auf den Anwendungsserver erlangen. Testen Sie Sicherheits-Patches, bevor Sie sie auf Produktionsserver anwenden.</p><p>Erstellen Sie zudem Richtlinien und Prozeduren, damit Patches regelmäßig gesucht und installiert werden.</p></td> 
+   <td><p>Wenn vom Hersteller bereitgestellte Sicherheits-Patches und -Aktualisierungen nicht zeitnah installiert werden, besteht ein erhöhtes Risiko, dass nicht autorisierte Benutzer Zugriff auf den Anwendungsserver erlangen. Testen Sie Sicherheits-Patches, bevor Sie sie auf Produktionsserver anwenden.</p><p>Erstellen Sie zudem Richtlinien und Prozeduren, damit regelmäßig Patches gesucht und installiert werden.</p></td> 
   </tr> 
   <tr> 
    <td><p>Virenschutzsoftware</p></td> 
@@ -108,7 +108,7 @@ In der folgenden Tabelle werden mögliche Ansätze zum Verringern von Sicherheit
  </tbody> 
 </table>
 
-Weitere Sicherheitsinformationen für Ihr Betriebssystem finden Sie unter [&quot;Informationen zur Betriebssystemsicherheit&quot;](https://helpx.adobe.com/de/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
+Weitere Informationen zur Sicherheit für Ihr Betriebssystem finden Sie unter [Informationen zur Betriebssystemsicherheit](https://helpx.adobe.com/de/aem-forms/6-1/hardening-security/general-security-considerations.html#operating_system_security_information).
 
 ## Installation {#installation}
 
@@ -172,7 +172,7 @@ Um den Anwendungsserver, auf dem AEM Forms on JEE bereitgestellt wird, mit einem
 1. Erstellen Sie in der Microsoft Management Console (MMC) einen lokalen Benutzer für den Formularserverdienst, der für die Anmeldung verwendet werden soll:
 
    * Wählen Sie **Benutzer kann Kennwort nicht ändern aus**.
-   * Stellen Sie sicher, dass auf der Registerkarte **Mitglied von** die Gruppe „Benutzer“ aufgeführt ist.****
+   * Stellen Sie sicher, dass auf der Registerkarte **Mitglied von** die Gruppe **Benutzer** aufgeführt ist.
 
    >[!NOTE]
    >
@@ -192,7 +192,7 @@ Um den Anwendungsserver, auf dem AEM Forms on JEE bereitgestellt wird, mit einem
    * **Verzeichnis des globalen Dokumentenspeichers (GDS)**: Der Speicherort des GDS-Verzeichnisses wird während der Installation von AEM Forms manuell konfiguriert. Wenn die Speicherorteinstellung bei der Installation leer bleibt, wird als Speicherort standardmäßig ein Verzeichnis unter dem Installationsverzeichnis des Anwendungsservers gewählt: `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **CRX-Repository-Verzeichnis**: Der Standardspeicherort lautet `[AEM-Forms-installation-location]\crx-repository`
    * **Temporäre Verzeichnisse von AEM Forms**:
-      * (Windows) TMP oder TEMP gemäß Einstellung in den Umgebungsvariablen
+      * (Windows) TMP- oder TEMP-Pfad gemäß Einstellung in den Umgebungsvariablen
       * (AIX, Linux oder Solaris) Basisordner des angemeldeten Benutzers
 
 Benutzer, die bei UNIX-basierten Systemen nicht als Root-Benutzer angemeldet sind, können den folgenden Ordner als temporären Ordner verwenden:
@@ -290,7 +290,7 @@ Beim Installieren von AEM Forms on JEE wird ein Standardbenutzerkonto für den B
 
    Der Standardanschluss lautet wie folgt:
 
-   **JBoss:** 8080
+   **JBoss**: 8080
 
    **WebLogic Server:** 7001
 
@@ -412,7 +412,7 @@ Als zusätzliche Sicherheitsmaßnahme sollten Sie überlegen, spezifische Werkze
 * PIN-Verschlüsselungsschlüssel für HSM-Geräte im Trust Store
 * Hashes für lokale Benutzerkennwörter
 
-Informationen zu herstellerspezifischen Tools finden Sie unter [&quot;Informationen zur Datenbanksicherheit&quot;](https://helpx.adobe.com/de/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
+Informationen zu herstellerspezifischen Tools finden Sie unter [Informationen zur Datenbanksicherheit](https://helpx.adobe.com/de/aem-forms/6-1/hardening-security/general-security-considerations.html#database_security_information).
 
 ### LDAP-Sicherheit {#ldap-security}
 
@@ -750,7 +750,7 @@ Fügen Sie das JAVA-Argument `-Dlc.um.csrffilter.disabled=true` in das Startskri
 
 Möglicherweise haben Sie benutzerdefinierte WAR-Dateien für die Verwendung mit AEM Forms on JEE speziell für Ihre Geschäftsanforderungen erstellt. Um die Referrer-Filterung bei benutzerdefinierten WAR-Dateien zu aktivieren, fügen Sie ***adobe-usermanager-client.jar*** in den Klassenpfad für die WAR-Datei ein und nehmen Sie in die Datei web.xml einen Filtereintrag mit den folgenden Parametern vor:
 
-**CSRF_CHECK_GETS** – steuert die Referrer-Prüfung bei GET-Anforderungen. Wenn dieser Parameter nicht definiert wird, wird für den Standardwert „false“ festgelegt. Fügen Sie diesen Parameter nur ein, wenn Sie Ihre GET-Anforderungen filtern möchten.
+**CSRF_CHECK_GETS** – steuert die Referrer-Prüfung bei GET-Anforderungen. Wenn dieser Parameter nicht definiert ist, wird für den Standardwert „false“ festgelegt. Fügen Sie diesen Parameter nur ein, wenn Sie Ihre GET-Anforderungen filtern möchten.
 
 **CSRF_ALLOWED_REFERER_EXCEPTIONS** – ist die ID der Liste „Zulässige Referrer – Ausnahmen“. Der Referrer-Filter verhindert, dass Anfragen, die von Referrern in der durch die Listen-ID identifizierten Liste stammen, Ressourcen auf dem Formularserver aufrufen.
 
@@ -958,7 +958,7 @@ Informationen zu WebSphere-Anschlüssen, die für AEM Forms auf JEE erforderlich
 
 Bezüglich der physischen Architektur, die im Abschnitt [Physische Architektur von AEM Forms auf JEE](hardening-aem-forms-jee-environment.md#aem-forms-on-jee-physical-architecture) beschrieben wird, sollten Sie SSL für alle Verbindungen konfigurieren, die Sie verwenden möchten. Besonders alle SOAP-Verbindungen müssen über SSL erfolgen, um die Offenlegung von Benutzerberechtigungen im Netzwerk zu verhindern.
 
-Anweisungen zum Konfigurieren von SSL unter JBoss, WebLogic und WebSphere finden Sie unter &quot;Konfigurieren von SSL&quot;in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_64_de).
+Anleitungen für die Konfiguration von SSL unter JBoss, WebLogic und WebSphere finden Sie unter „Konfigurieren von SSL“ in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_64_de).
 
 Anweisungen zum Importieren von Zertifikaten in JVM (Java Virtual Machine), die für einen AEM Forms-Server konfiguriert sind, finden Sie im Abschnitt „Gegenseitige Authentifizierung“ in der [Hilfe zu AEM Forms Workbench](http://www.adobe.com/go/learn_aemforms_workbench_65_de).
 
@@ -1016,7 +1016,7 @@ Bei der AEM Forms on JEE-Turnkey-Installation wird standardmäßig unter Verwend
    * **Verzeichnis des globalen Dokumentenspeichers (GDS)**: Der Speicherort des GDS-Verzeichnisses wird während der Installation von AEM Forms manuell konfiguriert. Wenn die Speicherorteinstellung bei der Installation leer bleibt, wird als Speicherort standardmäßig ein Verzeichnis unter dem Installationsverzeichnis des Anwendungsservers gewählt: `[JBoss root]/server/[type]/svcnative/DocumentStorage`
    * **CRX-Repository-Verzeichnis**: Der Standardspeicherort lautet `[AEM-Forms-installation-location]\crx-repository`
    * **Temporäre Verzeichnisse von AEM Forms**:
-      * (Windows) TMP oder TEMP gemäß Einstellung in den Umgebungsvariablen
+      * (Windows) TMP- oder TEMP-Pfad gemäß Einstellung in den Umgebungsvariablen
       * (AIX, Linux oder Solaris) Basisordner des angemeldeten Benutzers
 
 Benutzer, die bei UNIX-basierten Systemen nicht als Root-Benutzer angemeldet sind, können den folgenden Ordner als temporären Ordner verwenden:
