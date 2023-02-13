@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 8f94c22d-5f08-4a8b-8bb5-5ec757c44bc8
 exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '157'
-ht-degree: 35%
+ht-degree: 100%
 
 ---
 
@@ -23,16 +23,16 @@ Die folgende Checkliste zeigt einige der wichtigsten Probleme - für alle Einzel
 
 | Überprüfen Sie Folgendes | Antwort | Aktion | Inhaber | Fällig am |
 |---|---|---|---|---|
-| Wurde ein klarer, regelmäßiger Berichterstattungsmechanismus eingerichtet? |  |  |  |  |
-| Sind wichtige Akteure (aus dem Testteam) an den Statussitzungen beteiligt? |  |  |  |  |
+| Wurde ein klarer, regelmäßiger Reporting-Mechanismus eingerichtet? |  |  |  |  |
+| Sind wichtige Akteure (aus dem Test-Team) an den Statussitzungen beteiligt? |  |  |  |  |
 | Sind die Testaufgaben klar definiert (insbesondere für den Kunden)? |  |  |  |  |
 | Verfügt der Kunde über die nötige Erfahrung, um seine Testverpflichtungen zu erfüllen? |  |  |  |  |
-| Wurden alle Tools (Test und Tracking) ausgewählt? |  |  |  |  |
-| Wurden die oben genannten Tools installiert und Benutzer (in erster Linie das Projektteam) entsprechend geschult? |  |  |  |  |
+| Wurden alle Tools (Tests und Tracking) ausgewählt? |  |  |  |  |
+| Wurden die oben genannten Tools installiert und Benutzer (in erster Linie das Projekt-Team) entsprechend geschult? |  |  |  |  |
 | Wurde ein klarer, umfassender Testplan aufgestellt? |  |  |  |  |
 | Wurde der Testplan von den entsprechenden Parteien überprüft? |  |  |  |  |
-| Wurden die Abnahmeprüfungen klar definiert? |  |  |  |  |
-| Wurden die Annahmeprüfungen von allen Parteien offiziell akzeptiert? |  |  |  |  |
+| Wurden die Akzeptanztests klar definiert? |  |  |  |  |
+| Wurden die Akzeptanztests von allen Parteien offiziell akzeptiert? |  |  |  |  |
 
 >[!NOTE]
 >
