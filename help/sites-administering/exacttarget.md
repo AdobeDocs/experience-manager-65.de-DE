@@ -1,5 +1,5 @@
 ---
-title: Integration mit ExactTarget
+title: Integrieren mit ExactTarget
 seo-title: Integrating with ExactTarget
 description: Erfahren Sie, wie Sie AEM mit ExactTarget integrieren.
 seo-description: Learn how to integrate AEM with ExactTarget.
@@ -12,13 +12,13 @@ discoiquuid: 5b2f624d-e5b8-4484-a773-7784ebce58bd
 docset: aem65
 exl-id: 4183fe78-5055-4b77-8a54-55666e86a04e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '455'
 ht-degree: 100%
 
 ---
 
-# Integration mit ExactTarget{#integrating-with-exacttarget}
+# Integrieren mit ExactTarget{#integrating-with-exacttarget}
 
 Durch die Integration mit ExactTarget können Sie in AEM erstellte E-Mails über ExactTarget verwalten und versenden. Außerdem können Sie die Lead-Management-Funktionen von ExactTarget über AEM-Formulare auf AEM-Seiten verwenden.
 
@@ -47,7 +47,7 @@ So erstellen Sie eine ExactTarget-Konfiguration über Cloud-Services:
    ![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Geben Sie den Benutzernamen und das Kennwort ein und wählen Sie einen API-Endpunkt aus (z. B. **https://webservice.exacttarget.com/Service.asmx**).
-1. Klicken Sie auf **Mit ExactTarget verbinden.** Wenn die Verbindung erfolgreich hergestellt wurde, wird ein Dialogfeld mit dem entsprechenden Hinweis angezeigt. Klicken Sie auf **OK**, um das Fenster zu beenden.
+1. Klicken Sie auf **Mit ExactTarget verbinden.** Wenn die Verbindung erfolgreich hergestellt wurde, wird ein Dialogfeld mit dem entsprechenden Hinweis angezeigt. Klicken Sie auf **OK**, um das Fenster zu schließen.
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
