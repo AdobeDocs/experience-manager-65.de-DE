@@ -11,7 +11,7 @@ discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1083'
 ht-degree: 100%
 
@@ -52,7 +52,7 @@ Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation mithil
    >Mehrere AEM Forms-Container-Komponenten auf einer Seite werden nicht unterstützt.
 
 1. Tippen Sie auf die eingebettete AEM Forms-Container-Komponente in der Sites-Seite und tippen Sie dann auf ![settings_icon](assets/settings_icon.png) in der Aktionsleiste. Das Dialogfeld **[!UICONTROL AEM Forms-Container bearbeiten]** wird geöffnet.
-1. Geben Sie im Dialogfeld AEM Forms-Container bearbeiten Folgendes an.
+1. Geben Sie im Dialogfeld „AEM Forms-Container bearbeiten“ Folgendes an.
 
    * **Asset-Typ:** Wählen Sie den Typ des einzubettenden Assets. Die Optionen sind „Adaptives Formular“ und „Interaktive Kommunikation“
    * **Asset-Pfad**: Suchen Sie nach dem einzubettenden adaptiven Formular und wählen Sie es aus. Es wird automatisch ausgefüllt, wenn Sie es über den Assets-Browser eingefügt haben.
