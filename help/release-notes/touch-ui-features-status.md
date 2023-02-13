@@ -3,7 +3,7 @@ title: Status der Funktionen der Touch-optimierten Benutzeroberfläche
 description: Spezifische Versionshinweise für die Touch-optimierte Benutzeroberfläche von  [!DNL Adobe Experience Manager] .
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1063'
 ht-degree: 100%
 
