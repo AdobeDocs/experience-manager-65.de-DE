@@ -12,9 +12,9 @@ docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 source-git-commit: 879855af80ffdaa9c5f40e43f8b1543ed9305c13
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '329'
-ht-degree: 70%
+ht-degree: 100%
 
 ---
 
@@ -58,13 +58,13 @@ Eine Multihop-Aktualisierung ist möglich von:
 * AEM 6.1 Forms on JEE
 * AEM 6.2 Forms on JEE
 
-AEM 6.5.12.0 Forms on JEE bietet zwei Arten von Installationsprogrammen: [Vollständiges Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) und [Patch-Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en).
+AEM 6.5.12.0 Forms on JEE bietet zwei Arten von Installationsprogrammen: ein [Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) und ein [Patch-Installationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de).
 
-**Vollständiges Installationsprogramm**: Sie können das vollständige Installationsprogramm verwenden, um neue AEM Forms-Instanzen einzurichten oder Aktualisierungen von AEM 6.3 Forms on JEE, AEM 6.4 on JEE und eine nicht ersetzende Aktualisierung von AEM 6.5.x.x Forms on JEE auf AEM 6.5.12.0 Forms on JEE durchzuführen.
+**Vollinstallationsprogramm**: Sie können das Vollinstallationsprogramm verwenden, um neue AEM Forms-Instanzen einzurichten oder Aktualisierungen von AEM 6.3 Forms on JEE, AEM 6.4 on JEE und eine nicht ersetzende Aktualisierung von AEM 6.5.x.x Forms on JEE auf AEM 6.5.12.0 Forms on JEE durchzuführen.
 
-**Patch-Installationsprogramm**: Patch-Installationsprogramm ist für Kunden vorgesehen, die bereits AEM 6.5.x.x verwenden. Sie können das Patch-Installationsprogramm verwenden, um auf die neueste Version von AEM Forms zu aktualisieren.
+**Patch-Installationsprogramm**: Das Patch-Installationsprogramm ist für Kundinnen und Kunden vorgesehen, die bereits AEM 6.5.x.x verwenden. Mit dem Patch-Installationsprogramm können Sie eine Aktualisierung auf die neueste Version von AEM Forms durchführen.
 
-Die folgende Abbildung zeigt Szenarien für die Verwendung des Installers für vollständige Installationen und Patches.
+Die folgende Abbildung zeigt Szenarien für die Verwendung des vollständigen Installationsprogramms und des Patch-Installationsprogramms.
 
 ![](assets/full-and-patch-installer.png)
 
