@@ -1,7 +1,7 @@
 ---
-title: AEM zum Durchsuchen von durch Document Security geschützten PDF-Dokumenten aktivieren
+title: Aktivieren von AEM zum Durchsuchen von durch Dokumentensicherheit geschützten PDF-Dokumenten
 seo-title: Enable AEM to search document security protected PDF documents
-description: 'Erfahren Sie, wie Sie die native AEM-Suche aktivieren, um eine Volltextsuche in DRM-geschützten PDF-Dokumenten durchzuführen.  '
+description: Erfahren Sie, wie Sie die native AEM-Suche aktivieren, um eine Volltextsuche in DRM-geschützten PDF-Dokumenten durchzuführen.
 seo-description: Learn how to enable native AEM search to perform full-text search on DRM protected PDF documents.
 uuid: ec6e5d53-a74c-4958-a389-7937d073c083
 contentOwner: khsingh
@@ -13,7 +13,7 @@ docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '697'
 ht-degree: 100%
 
@@ -73,12 +73,12 @@ Sie können eine der folgenden Methoden verwenden, um die sichere Verbindung her
 1. Öffnen Sie das **Adobe LiveCycle Client SDK-** Paket. Geben Sie Werte für die folgenden Eigenschaften an:
 
    * **Server-URL:** Geben Sie die HTTPS-URL des AEM Forms on JEE-Servers an. Um die Kommunikation über HTTPS zu aktivieren, starten Sie den AEM-Server mit dem Parameter -Djavax.net.ssl.trustStore=&lt;Pfad der AEM Forms on JEE-Keystore-Datei> neu.
-   * **2-Weg-SSL aktivieren**: Aktivieren Sie die Option für 2-Weg-SSL.
+   * **2-Weg-SSL aktivieren**: Aktiviert die Option für 2-Weg-SSL.
    * **KeyStore-Datei-URL**: Geben Sie die URL der KeyStore-Datei an.
    * **TrustStore-Datei-URL**: Geben Sie die URL für die TrustStore-Datei an.
    * **KeyStore-Kennwort**: Geben Sie das Kennwort für die KeyStore-Datei an.
    * **TrustStorePassword**: Geben Sie das Kennwort für die TrustStore-Datei an.
-   * **Dienstname**: Fügen Sie den RightsManagementService zur Liste der angegebenen Dienste hinzu.
+   * **Dienstname**: Fügt den RightsManagementService zur Liste der angegebenen Dienste hinzu.
 
    Klicken Sie auf **Speichern**. AEM kann durch Document Security geschützte PDF-Dokumente durchsuchen.
 
