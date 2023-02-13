@@ -1,5 +1,5 @@
 ---
-title: Tracking von Ergebnissen und Bereitstellung von Feedback
+title: Tracking von Ergebnissen und Geben von Feedback
 seo-title: Tracking results and providing feedback
 description: Es liegt in Ihrem Ermessen, wie und wo Sie die Testfälle und den resultierenden Testplan definieren.
 seo-description: How and where you define the test cases, and the resulting test plan, is at your own discretion
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 2fff5f64-d330-4b32-a861-1f5315363b69
 exl-id: 270e66d1-a3f2-457a-90d1-28b9f3c8c218
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '159'
 ht-degree: 100%
 
 ---
 
-# Tracking von Ergebnissen und Bereitstellung von Feedback{#tracking-results-and-providing-feedback}
+# Tracking von Ergebnissen und Geben von Feedback{#tracking-results-and-providing-feedback}
 
 Es liegt in Ihrem Ermessen, wie und wo Sie die Testfälle und den resultierenden Testplan definieren. Dazu stehen viele Tools zur Verfügung.
 
