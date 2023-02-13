@@ -1,5 +1,5 @@
 ---
-title: Zugreifbare komplexe Tabellen in HTML5-Formularen erstellen
+title: Erstellen zugänglicher komplexer Tabellen in HTML5-Formularen
 seo-title: Create accessible complex tables in HTML5 forms
 description: Erfahren Sie, wie Sie zugreifbare Tabellen in den HTML5-Formularen erstellen.
 seo-description: Learn how to create accessible tables in HTML5 forms.
@@ -11,7 +11,7 @@ discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 feature: Mobile Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '273'
 ht-degree: 100%
 
