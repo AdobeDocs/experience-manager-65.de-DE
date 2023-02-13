@@ -1,5 +1,5 @@
 ---
-title: 'Benutzer hinzufügen und konfigurieren '
+title: Benutzer hinzufügen und konfigurieren
 seo-title: Adding and configuring users
 description: Mit den Benutzerverwaltungs-Einstellungen in der Administration Console können Sie Benutzer erstellen oder löschen sowie weitere Benutzereinstellungen konfigurieren.
 seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
@@ -9,13 +9,13 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1739'
 ht-degree: 100%
 
 ---
 
-# Benutzer hinzufügen und konfigurieren {#adding-and-configuring-users}
+# Hinzufügen und Konfigurieren von Benutzenden {#adding-and-configuring-users}
 
 Benutzer- und Gruppeninformationen werden in einem Speichersystem von Drittanbietern (z. B. einem LDAP-Ordner) verwaltet. User Management schreibt nicht in das Speichersystem von Drittanbietern. Statt dessen synchronisiert User Management die Benutzer- und Gruppeninformationen mit seiner Datenbank
 
@@ -98,7 +98,7 @@ Vermeiden Sie das Erstellen von Benutzernamen, die mit einem Nummernzeichen begi
 
 ## Details zu Benutzern anzeigen {#view-details-about-a-user}
 
-1. Klicken Sie in Administration Console auf Einstellungen > Benutzerverwaltung > Benutzer und Gruppen.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Benutzer und Gruppen“.
 1. Geben Sie Informationen zum Eingrenzen der Suche ein, wählen Sie in der Liste „in“ die Option „Benutzer“ aus und klicken Sie dann auf „Suchen“. Die Suchergebnisse werden im unteren Seitenbereich angezeigt. Sie können die Liste durch Klicken auf die Spaltenüberschriften sortieren.
 1. Klicken Sie auf den Namen des Benutzers, zu dem Details angezeigt werden sollen. Auf der Seite „Benutzer bearbeiten“ werden Details zum Benutzer wie die folgenden angezeigt:
 
