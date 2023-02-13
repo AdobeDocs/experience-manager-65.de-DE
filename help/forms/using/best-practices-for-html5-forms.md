@@ -13,7 +13,7 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1418'
 ht-degree: 100%
 
@@ -63,7 +63,7 @@ HTML5-Formulare können datenbasierte Felder enthalten (Tabellen und Unterformul
 * Verwenden Sie XFA-Skipt zur ausgelagerten Navigation, um dynamische datengesteuerte Felder anzuzeigen (Tabellen und Unterformulare). In ausgelagerter Navigation werden nur bestimmte Daten auf einer Seite angezeigt. Dadurch wird der Vorgang des Zeichnens im Browser auf die jeweils angezeigten Felder beschränkt und die Navigation in einem Formular erleichtert. Außerdem sind die Benutzer auf Mobilgeräten nur an einer Untergruppe von Daten interessiert. Damit wird größere Benutzerfreundlichkeit geboten und die Zeit zum Laden der benötigten Daten wird verkürzt. Das Ergebnis sind zwei Lösungen. Beachten Sie auch, dass ausgelagerte Navigation nicht vorkonfiguriert verfügbar ist. Sie können XFA-Skripterstellung verwenden, um die ausgelagerte Navigation zu entwickeln.
 
 * Bewerten Sie das Zusammenführen mehrerer schreibgeschützter Spalten zu einer einzelnen Spalte. Außerdem wird der Arbeitsspeicher, der benötigt wird, um das Formular anzuzeigen, reduziert. Vermeiden Sie es, die Spalten anzuzeigen, die keine Eingaben von den Benutzern erfordern.
-* Bewerten Sie das Teilen des datengesteuerten Formulars in einen [Formularsatz](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html), wenn die obigen Vorschläge nicht viele Verbesserungen bringen. Wenn beispielsweise eine Tabelle mehr als 1000 Zeilen aufweist, verschieben Sie jede 100. Zeile zu ein anderes Formular. Das würde die Ladezeit und die Leistung der Formulare verbessern. Beachten Sie auch, dass ein Formularsatz eine konsolidierte Übermittlungs-XML für alle Formulare erzeugt. Um Daten für jedes Formular zu unterscheiden, verwenden Sie verschiedene Datenstämme. Weitere Informationen finden Sie unter[ Formularsatz in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
+* Bewerten Sie das Teilen des datengesteuerten Formulars in einen [Formularsatz](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html), wenn die obigen Vorschläge nicht viele Verbesserungen bringen. Wenn beispielsweise eine Tabelle mehr als 1000 Zeilen aufweist, verschieben Sie jede 100. Zeile zu ein anderes Formular. Das würde die Ladezeit und die Leistung der Formulare verbessern. Beachten Sie auch, dass ein Formularsatz eine konsolidierte Übermittlungs-XML für alle Formulare erzeugt. Um Daten für jedes Formular zu unterscheiden, verwenden Sie verschiedene Datenstämme. Weitere Informationen finden Sie unter[ Formularsatz in AEM Forms](https://helpx.adobe.com/de/aem-forms/6-3/formset-in-aem-forms.html).
 
 ## Zweierpotenz für Datensatzdokument (DOR) {#power-of-two-for-document-of-record-dor}
 
