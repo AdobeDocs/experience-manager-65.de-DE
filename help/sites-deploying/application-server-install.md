@@ -1,5 +1,5 @@
 ---
-title: Anwendungsserver-Installation
+title: Installation des Anwendungs-Servers
 seo-title: Application Server Install
 description: Erfahren Sie, wie Sie AEM auf einem Anwendungsserver installieren können.
 seo-description: Learn how to install AEM with an application server.
@@ -11,13 +11,13 @@ topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1163'
 ht-degree: 100%
 
 ---
 
-# Anwendungsserver-Installation{#application-server-install}
+# Installation des Anwendungs-Servers{#application-server-install}
 
 >[!NOTE]
 >
@@ -118,7 +118,7 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
    * Entfernen Sie die Kommentarzeichen für den ursprünglichen Parameter „sling.home“ und legen Sie diesen Pfad nach Bedarf fest.
    * Packen Sie die Datei „web.xml“ erneut.
 
-* Stellen Sie die AEM-WAR-Datei bereit.
+* Bereitstellen der AEM-WAR-Datei
 
    * Wählen Sie einen Kontextstamm. (Wenn Sie den Parameter „sling.run.modes“ festlegen möchten, müssen Sie die ausführlichen Schritte des Bereitstellungsassistenten durchführen und dann den Parameter in Schritt 6 des Assistenten angeben.)
 
