@@ -1,5 +1,5 @@
 ---
-title: Extrahieren von Zeichenfolgen zur Übersetzung
+title: Extrahieren von Zeichenfolgen zum Übersetzen
 seo-title: Extracting Strings for Translating
 description: Verwenden Sie xgettext-maven-plugin, um Zeichenfolgen, die übersetzt werden müssen, aus Ihrem Quellcode zu extrahieren
 seo-description: Use xgettext-maven-plugin to extract strings from your source code that need translating
@@ -11,13 +11,13 @@ topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '476'
 ht-degree: 100%
 
 ---
 
-# Extrahieren von Zeichenfolgen zur Übersetzung{#extracting-strings-for-translating}
+# Extrahieren von Zeichenfolgen zum Übersetzen{#extracting-strings-for-translating}
 
 Verwenden Sie xgettext-maven-plugin, um Zeichenfolgen, die übersetzt werden müssen, aus Ihrem Quellcode zu extrahieren. Das Maven-Plug-in extrahiert Zeichenfolgen in eine XLIFF-Datei, die Sie zur Übersetzung senden. Zeichenfolgen werden aus den folgenden Quellen extrahiert:
 
