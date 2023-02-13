@@ -12,7 +12,7 @@ discoiquuid: cfd90e8f-9b9b-4d0b-be31-828469b961de
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1626'
 ht-degree: 100%
 
@@ -301,14 +301,14 @@ So erstellen Sie eine neue Vorlage (basierend auf einer vorhandenen Vorlage):
    >[!NOTE]
    >
    >Änderungen, die am Knoten **/apps/&lt;website>/templates/&lt;template-name>** vorgenommen werden, wirken sich auf die Vorlageninstanz aus (wie in der Auswahlliste).
-   >Änderungen, die am Knoten **/apps/&lt;website>/components/&lt;component-name>** vorgenommen werden, wirken sich auf die Inhaltsseite aus, die mit der Vorlage erstellt wird.
+   Änderungen, die am Knoten **/apps/&lt;website>/components/&lt;component-name>** vorgenommen werden, wirken sich auf die Inhaltsseite aus, die mit der Vorlage erstellt wird.
 
    Sie können jetzt eine Seite Ihrer Website mit der neuen Vorlage erstellen.
 
 >[!NOTE]
->Die Client-Bibliothek des Editors setzt voraus, dass der Namespace `cq.shared` in den Inhaltsseiten vorhanden ist. Wenn er nicht vorhanden ist, wird der JavaScript-Fehler `Uncaught TypeError: Cannot read property 'shared' of undefined` gemeldet.
->Alle Beispielinhaltsseiten enthalten `cq.shared`, sodass jeglicher darauf basierender Inhalt automatisch `cq.shared` umfasst. Wenn Sie sich jedoch ganz neue eigene Inhaltsseiten erstellen möchten, die nicht auf Beispielinhalt basieren, müssen Sie sicherstellen, dass Sie den Namespace `cq.shared` einbinden.
->Weitere Informationen finden Sie unter [Verwendung Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md).
+Die Client-Bibliothek des Editors setzt voraus, dass der Namespace `cq.shared` in den Inhaltsseiten vorhanden ist. Wenn er nicht vorhanden ist, wird der JavaScript-Fehler `Uncaught TypeError: Cannot read property 'shared' of undefined` gemeldet.
+Alle Beispielinhaltsseiten enthalten `cq.shared`, sodass jeglicher darauf basierender Inhalt automatisch `cq.shared` umfasst. Wenn Sie sich jedoch ganz neue eigene Inhaltsseiten erstellen möchten, die nicht auf Beispielinhalt basieren, müssen Sie sicherstellen, dass Sie den Namespace `cq.shared` einbinden.
+Weitere Informationen finden Sie unter [Verwendung Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md).
 
 ## Bereitstellen einer vorhandenen Vorlage {#making-an-existing-template-available}
 
