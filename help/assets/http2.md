@@ -11,9 +11,9 @@ role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
 source-git-commit: a78de999992d4ab2fc63b5f7e796aa0d5527cb26
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '732'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfül
 
 Sie müssen den Wechsel auf HTTP/2 beantragen, da er nicht automatisch erfolgt.
 
-1. Um zu HTTP/2 zu wechseln, starten Sie eine Anfrage an den Kunden-Support von Adobe. Siehe [Support-Ticket öffnen](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
+1. Um zu HTTP/2 zu wechseln, starten Sie eine Anfrage an den Kunden-Support von Adobe. Siehe [Öffnen eines Support-Tickets](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de&amp;support-tab=home#support).
 
    1. In der Anfrage geben Sie folgende Informationen an:
 
