@@ -11,7 +11,7 @@ docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1252'
 ht-degree: 100%
 
@@ -37,7 +37,7 @@ Ein Formulardatenmodell ist eine Erweiterung des JSON-Schemas, die Sie wie folgt
 * [Gesendete adaptive Formulardaten zurück in Datenquellen schreiben](#write-af)
 * [Dienste über Regeln für adaptive Formulare aufrufen](#invoke-services)
 
-## Adaptive Formulare und Fragmente erstellen {#create-af}
+## Erstellen adaptiver Formulare und Fragmente {#create-af}
 
 Sie können [adaptive Formulare](../../forms/using/creating-adaptive-form.md) und [adaptive Formularfragmente](../../forms/using/adaptive-form-fragments.md) anhand des Formulardatenmodells erstellen. Gehen Sie wie folgt vor, um ein Formulardatenmodell beim Erstellen eines adaptiven Formulars oder eines adaptiven Formularfragments zu verwenden:
 
