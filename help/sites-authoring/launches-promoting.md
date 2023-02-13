@@ -13,7 +13,7 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '756'
 ht-degree: 100%
 
@@ -62,7 +62,7 @@ Sie können Launches entweder über die Konsole **Sites** oder die Konsole **Lau
       1. Wählen Sie **Launches** aus (z. B. „Launches (1)“), um eine Liste der Launches anzuzeigen.
       1. Wählen Sie den gewünschten Launch aus, damit die verfügbaren Aktionen angezeigt werden.
       1. Wählen Sie **Launch bewerben** aus, um den Assistenten zu öffnen.
-   * in der **Launch-Konsole:**
+   * die **Launch**-Konsole:
 
       1. Wählen Sie den Launch aus (indem Sie auf die Miniatur tippen/klicken).
       1. Wählen Sie **Bewerben** aus.
