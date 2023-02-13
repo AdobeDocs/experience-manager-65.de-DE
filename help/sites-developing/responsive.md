@@ -12,13 +12,13 @@ discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 source-git-commit: 4472da2e9aa0b45e0d5f03bfdc53a2748d82cdb3
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5351'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Responsives Design für Webseiten{#responsive-design-for-web-pages}
+# Responsives Design für Web-Seiten{#responsive-design-for-web-pages}
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 99%
 
 >[!NOTE]
 >
->Verschiedene Beispiele basieren auf dem Geometrixx-Beispielinhalt, der nicht mehr mit AEM geliefert wird und durch We.Retail ersetzt wurde. Im Dokument [We.Retail-Referenzimplementierung](/help/sites-developing/we-retail.md#we-retail-geometrixx) finden Sie Informationen zum Herunterladen und Installieren von Geometrixx.
+>Dieses Beispiel beruht auf dem Geometrixx-Beispielinhalt, der nicht mehr im Lieferumfang von AEM enthalten ist und durch We.Retail ersetzt wurde. Im Dokument [We.Retail-Referenzimplementierung](/help/sites-developing/we-retail.md#we-retail-geometrixx) finden Sie Informationen zum Herunterladen und Installieren von Geometrixx.
 
 Gestalten Sie Ihre Webseiten so, dass sie sich dem Client-Darstellungsfeld anpassen, auf dem sie angezeigt werden. Responsives Design ermöglicht die effektive Darstellung derselben Web-Seiten auf verschiedenen Geräten in beiden Ausrichtungen. Die folgende Grafik zeigt eine Reihe von Möglichkeiten, wie eine Seite auf Änderungen der Fenstergröße reagieren kann:
 
