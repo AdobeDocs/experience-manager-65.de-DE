@@ -1,5 +1,5 @@
 ---
-title: AEM Document Services programmgesteuert verwenden
+title: Programmgesteuerte Verwendung der AEM-Dokumentendienste
 seo-title: Using AEM Document Services Programmatically
 description: Erfahren Sie, wie Sie Document Services-APIs zum digitalen Signieren, Verschlüsseln und Generieren von PDF-Dokumenten verwenden können.
 seo-description: Learn how to use Document Services APIs to Digitally sign, encrypt, and generate PDF documents.
@@ -10,13 +10,13 @@ topic-tags: document_services
 discoiquuid: 32118d3b-54d0-4283-b489-780bdcbfc8d2
 exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6430'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# AEM Document Services programmgesteuert verwenden  {#using-aem-document-services-programmatically}
+# Programmgesteuerte Verwendung der AEM-Dokumentendienste  {#using-aem-document-services-programmatically}
 
 Die Beispiele in diesem Dokument sind hilfreich für das Verständnis und die Verwendung von AEM Document Services in einer AEM Forms on OSGi-Umgebung. Beispiele für die AEM Forms on JEE-Umgebung finden Sie unter
 
@@ -30,7 +30,7 @@ Die Beispiele in diesem Dokument sind hilfreich für das Verständnis und die Ve
 
 * [Konfigurieren Sie den DocAssurance-Dienst](/help/forms/using/install-configure-document-services.md), bevor Sie die DocAssurance-Dienst-APIs verwenden.
 
-* Herunterladen und Konfigurieren des [AEM Forms Client-SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) für Ihr AEM Maven-Projekt. Die Client-Klassen, die zum Erstellen von Maven-Projekten mit AEM Document Services erforderlich sind, sind im [AEM Forms Client-SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) verfügbar
+* Herunterladen und Konfigurieren des [AEM Forms Client-SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) für Ihr AEM Maven-Projekt. Die Client-Klassen, die zum Erstellen von Maven-Projekten mit AEM Document Services erforderlich sind, sind im [AEM Forms Client-SDK](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) verfügbar
 
 * Erfahren Sie, wie Sie [Ihr AEM-Projekt mit Maven erstellen](/help/sites-developing/ht-projects-maven.md)
 
@@ -76,7 +76,7 @@ Sie können mithilfe des DocAssurance-Dienstes folgende Vorgänge durchführen:
 
 ### Unsichtbares Signaturfeld hinzufügen {#adding-an-invisible-signature-field}
 
-Digitale Signaturen werden in Signaturfeldern angezeigt, die eine grafische Darstellung der Signatur enthaltende Formularfelder sind. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichnende können ein bereits vorhandenes Signaturfeld verwenden, oder ein Signaturfeld kann programmgesteuert hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann. Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Signature-Dienst-Java-API oder die Signature-Webdienst-API verwenden. Sie können einem PDF-Dokument mehr als ein Signaturfeld hinzufügen. Jeder Signaturfeldname muss jedoch eindeutig sein.
+Digitale Signaturen werden in Signaturfeldern angezeigt, die eine grafische Darstellung der Signatur enthaltende Formularfelder sind. Signaturfelder können sichtbar oder unsichtbar sein. Unterzeichnende können ein bereits vorhandenes Signaturfeld verwenden, oder ein Signaturfeld kann programmgesteuert hinzugefügt werden. In beiden Fällen muss das Signaturfeld vorhanden sein, bevor ein PDF-Dokument signiert werden kann. Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Java-API des Signatur-Dienstes oder die Signatur-Webservice-API verwenden. Sie können mehr als ein Signaturfeld zu einem PDF-Dokument hinzufügen. Jeder Signaturfeldname muss jedoch eindeutig sein.
 
 **Syntax**: `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
@@ -238,7 +238,7 @@ public class AddInvisibleSignatureField {
 }
 ```
 
-Sie können auch [CAdES](https://de.wikipedia.org/wiki/CAdES)-Spezifikation für das Signieren von Dokumenten verwenden. Verwenden Sie den folgenden Beispielcode, um als Signaturformat [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) festzulegen.
+Sie können auch [CAdES](https://de.wikipedia.org/wiki/CAdES)-Spezifikation für das Signieren von Dokumenten verwenden. Verwenden Sie den folgenden Beispielcode, um als Signaturformat [CAdES](https://de.wikipedia.org/wiki/CAdES) festzulegen.
 
 ```java
 SigningFormat signingFormat = SigningFormat.CAdES;
@@ -248,7 +248,7 @@ signOptions.setSigAppearence(sigAppearence);
 
 ### Signaturfeld hinzufügen  {#adding-a-signature-field-nbsp}
 
-Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Signature-Dienst-Java-API oder die Signature-Webdienst-API verwenden. Sie können einem PDF-Dokument mehrere Signaturfelder hinzufügen. Jeder der Signaturfeldnamen muss jedoch eindeutig sein.
+Sie können ein Signaturfeld programmgesteuert hinzufügen, indem Sie die Java-API des Signatur-Dienstes oder die Signatur-Webservice-API verwenden. Sie können einem PDF-Dokument mehrere Signaturfelder hinzufügen. Jeder der Signaturfeldnamen muss jedoch eindeutig sein.
 
 **Syntax**:
 
@@ -275,11 +275,11 @@ public Document addSignatureField(Document inDoc,
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>Name des Signaturfelds. Dieser Parameter ist obligatorisch und darf keinen Nullwert akzeptieren.</td>
+   <td>Name des Signaturfelds. Dieser Parameter ist obligatorisch und kann keinen Nullwert akzeptieren.</td>
   </tr>
   <tr>
    <td><code>pageNumber</code></td>
-   <td>Die Seitenzahl, auf der das Signaturfeld hinzugefügt wird. Gültige Werte sind 1 bis zur Anzahl der Seiten im Dokument. Dieser Parameter ist obligatorisch und darf keinen Nullwert akzeptieren.<br /> </td>
+   <td>Die Seitenzahl, auf der das Signaturfeld hinzugefügt wird. Gültige Werte sind 1 bis zur Anzahl der Seiten im Dokument. Dieser Parameter ist obligatorisch und kann keinen Nullwert akzeptieren.<br /> </td>
   </tr>
   <tr>
    <td><code>positionRectangle</code></td>
@@ -426,9 +426,9 @@ public class AddSignatureField {
 }
 ```
 
-### Dokumenten-Zeitstempel anwenden {#apply-document-timestamp}
+### Anwenden des Dokument-Zeitstempels {#apply-document-timestamp}
 
-Sie können ein Dokument programmatisch mit einem Zeitstempel gemäß [PAdES 4](https://de.wikipedia.org/wiki/PAdES) -Spezifikationen versehen. Sie können auch [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)-Spezifikationen für transaktionsbezogene Dokumente verwenden.
+Sie können ein Dokument programmatisch mit einem Zeitstempel gemäß [PAdES 4](https://de.wikipedia.org/wiki/PAdES) -Spezifikationen versehen. Sie können auch [CAdES](https://de.wikipedia.org/wiki/CAdES)-Spezifikationen für transaktionsbezogene Dokumente verwenden.
 
 **Syntax**: `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
@@ -463,7 +463,7 @@ Sie können ein Dokument programmatisch mit einem Zeitstempel gemäß [PAdES 4](
  </tbody>
 </table>
 
-Die folgenden Codebeispiele fügen einem Dokument einen Zeitstempel gemäß [PAdES 4](https://en.wikipedia.org/wiki/PAdES) hinzu.
+Die folgenden Codebeispiele fügen einem Dokument einen Zeitstempel gemäß [PAdES 4](https://de.wikipedia.org/wiki/PAdES) hinzu.
 
 ```java
 package com.adobe.signatures.test;
@@ -876,7 +876,7 @@ public class GetSignatureFields {
 
 Sie können Signaturfelder in einem PDF-Dokument ändern. Das Ändern eines Signaturfelds umfasst das Manipulieren seiner Signaturfeldsperre- oder Seed-Wert-Lexikonwerte.
 
-Ein Feldsperre-Wörterbuch gibt eine Liste von Feldern an, die gesperrt werden, wenn das Signaturfeld signiert wird. Ein gesperrtes Feld verhindert, dass Benutzer das Feld bearbeiten. Ein Seed-Wert-Wörterbuch enthält Einschränkungsinformationen, die zum Zeitpunkt der Anwendung der Signatur verwendet werden. Beispiel: Sie können die Berechtigungen ändern, die Aktionen steuern, die auftreten können, ohne dass eine Signatur ungültig wird.
+Ein Feldsperre-Wörterbuch gibt eine Liste von Feldern an, die gesperrt werden, wenn das Signaturfeld signiert wird. Ein gesperrtes Feld verhindert, dass Benutzer das Feld bearbeiten. Ein Seed-Wert-Wörterbuch enthält Einschränkungsinformationen, die zum Zeitpunkt der Anwendung der Signatur verwendet werden. Beispiel: Sie können die Berechtigungen ändern, welche die Aktionen steuern, die auftreten können, ohne dass eine Signatur ungültig wird.
 
 Durch Ändern eines vorhandenen Signaturfelds können Sie das PDF-Dokument so bearbeiten, dass es die sich ändernden Geschäftsanforderungen anzeigt. Beispiel: Eine neue Geschäftsanforderung erfordert das Sperren aller Felder eines Dokuments nach dem es signiert wurde.
 
@@ -896,7 +896,7 @@ Durch Ändern eines vorhandenen Signaturfelds können Sie das PDF-Dokument so be
   </tr>
   <tr>
    <td><code>signatureFieldName</code></td>
-   <td>Der Name des Signaturfelds. Dieser Parameter ist obligatorisch und darf keinen Nullwert akzeptieren.<br /> </td>
+   <td>Der Name des Signaturfelds. Dieser Parameter ist obligatorisch und kann keinen Nullwert akzeptieren.<br /> </td>
   </tr>
   <tr>
    <td><code>pdfSignatureFieldProperties</code></td>
@@ -1043,7 +1043,7 @@ public class ModifySignatureField {
 
 Sie können ein PDF-Dokument absichern, indem Sie es mit einem bestimmten Signaturtyp (einer zertifizierten Signatur) zertifizieren. Eine zertifizierte Signatur entscheidet sich wie folgt von einer digitalen Signatur:
 
-* Es muss die erste Signatur sein, die auf das PDF-Dokument angewendet wird. Das heißt, wenn die zertifizierte Signatur angewendet wird, müssen die anderen Signaturfelder im Dokument unsigniert sein. In einem PDF-Dokument ist nur eine zertifizierte Signatur zulässig. Wenn Sie ein PDF-Dokument signieren und zertifizieren möchten, zertifizieren Sie es, bevor Sie es signieren. Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder digital signieren.
+* Es muss die erste Signatur sein, die auf das PDF-Dokument angewendet wird. Das heißt, wenn die zertifizierte Signatur angewendet wird, müssen die anderen Signaturfelder im Dokument unsigniert sein. In einem PDF-Dokument ist nur eine einzige zertifizierte Signatur zulässig. Wenn Sie ein PDF-Dokument signieren und zertifizieren möchten, zertifizieren Sie es, bevor Sie es signieren. Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder digital signieren.
 * Der Autor oder Ersteller des Dokuments kann festlegen, dass das Dokument auf bestimmte Arten modifiziert werden kann, ohne dass die zertifizierte Signatur ungültig wird. Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren im Dokument kann zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, verhindert Acrobat, dass Benutzer das Dokument auf diese Weise ändern. Wenn solche Änderungen durchgeführt werden, wird die zertifizierte Signatur ungültig. Außerdem gibt Acrobat eine Warnung aus, wenn ein Benutzer das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
 * Zum Zeitpunkt des Signierens wird das Dokument auf bestimmte Typen von Inhalt überprüft, durch die die Inhalte eines Dokuments mehrdeutig oder irreführend werden könnten. Beispiel: Eine Anmerkung kann Text auf einer Seite verdecken, der für das Verständnis dessen, was zertifiziert wird, wichtig ist. Eine Erläuterung (gültige Beglaubigung) zu solchen Inhalten kann bereitgestellt werden.
 
@@ -1360,7 +1360,7 @@ Verschiedene Empfänger können unterschiedliche Berechtigungen für das Dokumen
 
 Ein Algorithmus wird zum Generieren zweier großer Nummern, die als Schlüssel bezeichnet werden, verwendet, die die folgenden Eigenschaften haben:
 
-* Ein Schlüssel wird zum Verschlüsseln eines Satzes von Daten verwendet. Danach kann nur der andere Schlüssel zum Entschlüsseln der Daten verwendet werden.
+* Einer der Schlüssel wird zum Verschlüsseln eines Satzes von Daten verwendet. Danach kann nur der andere Schlüssel zum Entschlüsseln der Daten verwendet werden.
 * Es ist unmöglich, einen Schlüssel vom anderen zu unterscheiden.
 * Einer der Schlüssel agiert als der private Schlüssel eines Benutzers. Wichtig ist, dass nur der Benutzer Zugriff auf diesen Schlüssel hat.
 * Der andere Schlüssel ist der öffentliche Schlüssel des Benutzers, der mit Dritten gemeinsam genutzt werden kann.
@@ -1395,15 +1395,15 @@ Der öffentliche Schlüssel wird im Zertifikat eines Benutzers gespeichert, das 
 
 >[!NOTE]
 >
->AEM Forms unterstützt auch *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*-Spezifikationen für das digitale Signieren von PDF-Dokumenten.
+>AEM Forms unterstützt auch *[CAdES](https://de.wikipedia.org/wiki/CAdES)*-Spezifikationen für das digitale Signieren von PDF-Dokumenten.
 
-**PDF-Dokumente zertifizieren**
+**Zertifizieren von PDF-Dokumenten**
 
 Sie können ein PDF-Dokument absichern, indem Sie es mit einem bestimmten Signaturtyp (einer zertifizierten Signatur) zertifizieren. Eine zertifizierte Signatur entscheidet sich wie folgt von einer digitalen Signatur:
 
-Sie muss die erste, auf das PDF-Dokument angewendete Signatur sein. Das heißt, zum Zeitpunkt, zu dem die zertifizierte Signatur angewendet wird, müssen alle anderen Signaturfelder im Dokument unsigniert sein.
+Es muss die erste auf das PDF-Dokument angewendete Signatur sein. Das heißt, zum Zeitpunkt, zu dem die zertifizierte Signatur angewendet wird, müssen alle anderen Signaturfelder im Dokument noch unsigniert sein.
 
-In einem PDF-Dokument ist nur eine zertifizierte Signatur zulässig. Wenn Sie ein PDF-Dokument signieren und zertifizieren möchten, müssen Sie es vor dem signieren zertifizieren.
+In einem PDF-Dokument ist nur eine einzige zertifizierte Signatur zulässig. Wenn Sie ein PDF-Dokument signieren und zertifizieren möchten, müssen Sie es vor dem Signieren zertifizieren.
 
 Nach dem Zertifizieren eines PDF-Dokuments können Sie weitere Signaturfelder digital signieren.
 
@@ -1411,7 +1411,7 @@ Der Autor oder Ersteller des Dokuments kann festlegen, dass das Dokument auf bes
 
 Beispiel: Das Ausfüllen von Formularen oder Einfügen von Kommentaren im Dokument kann zulässig sein. Wenn der Autor festlegt, dass eine bestimmte Änderung nicht zulässig ist, 
 
-Acrobat verhindert, dass Benutzer das Dokument auf diese Weise ändern. Wenn solche Änderungen vorgenommen werden, etwa durch Verwenden einer anderen Anwendung, wird die zertifizierte Signatur ungültig und Acrobat gibt eine Warnung aus, wenn ein Benutzer das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
+Acrobat verhindert auf diese Weise, dass Benutzende das Dokument ändern. Wenn solche Änderungen vorgenommen werden, etwa durch Verwenden einer anderen Anwendung, wird die zertifizierte Signatur ungültig und Acrobat gibt eine Warnung aus, wenn ein Benutzer das Dokument öffnet. (Bei nicht zertifizierten Signaturen werden Änderungen nicht verhindert und Bearbeitungsvorgänge führen nicht dazu, dass die ursprüngliche Signatur ungültig wird.)
 
 Zum Zeitpunkt des Signierens wird das Dokument auf bestimmte Typen von Inhalt überprüft, durch die die Inhalte eines Dokuments mehrdeutig oder irreführend werden könnten.
 
@@ -3647,7 +3647,7 @@ Der Output-Dienst stellt APIs zum Wiedergeben einer XDP-Datei in den Formaten .p
 
 ### generatePDFOutput {#generatepdfoutput}
 
-Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf mit Daten zusammengeführt wird. Optional wird für jeden Datensatz eine Metadatendatei generiert oder es wird die Ausgabe in einer PDF-Datei gespeichert. Verwenden Sie die generatePDFOutput-API für die Formularentwürfe oder Daten, die auf einem Netzwerkspeicherort, einem lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeichert sind. Wenn der Formularentwurf und die XML-Daten in einer Anwendung gespeichert werden, verwenden Sie die [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)-API.
+Die generatePDFOutput-API generiert ein PDF-Dokument, indem ein Formularentwurf mit Daten zusammengeführt wird. Optional wird für jeden Datensatz eine Metadatendatei generiert, oder die Ausgabe wird in einer PDF-Datei gespeichert. Verwenden Sie die generatePDFOutput-API für die Formularentwürfe oder Daten, die auf einem Netzwerkspeicherort, einem lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeichert sind. Wenn der Formularentwurf und die XML-Daten in einer Anwendung gespeichert werden, verwenden Sie die [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)-API.
 
 **Syntax:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3864,7 +3864,7 @@ Im folgenden Java-Codebeispiel wird ein PDF-Dokument generiert, indem ein Formul
 
 ### generatePDFOutputBatch {#generatepdfoutputbatch}
 
-Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu erstellen. Optional wird für jeden Datensatz eine Metadatendatei generiert oder es wird die Ausgabe in einer PDF-Datei gespeichert. Verwenden Sie die generatePDFOutputBatch-API für die Formularentwürfe oder Daten, die auf einem Netzwerkspeicherort, einem lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeichert sind.
+Führt einen Formularentwurf mit Daten zusammen, um ein PDF-Dokument zu erstellen. Optional wird für jeden Datensatz eine Metadatendatei generiert, oder die Ausgabe wird in einer PDF-Datei gespeichert. Verwenden Sie die generatePDFOutputBatch-API für die Formularentwürfe oder Daten, die auf einem Netzwerkspeicherort, einem lokalen Dateisystem oder HTTP-Speicherort als Literalwerte gespeichert sind.
 
 **Syntax:** `BatchResult generatePDFOutputBatch(Map templates, Map data, PDFOutputOptions options, BatchOptions batchOptions);`
 
