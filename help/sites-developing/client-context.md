@@ -1,5 +1,5 @@
 ---
-title: ClientContext im Detail
+title: Client-Kontext im Detail
 seo-title: Client Context in Detail
 description: ClientContext ist eine dynamische Zusammenstellung von erfassten Benutzerdaten.
 seo-description: The Client Context represents a dynamically assembled collection of user data
@@ -13,13 +13,13 @@ docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3008'
 ht-degree: 100%
 
 ---
 
-# ClientContext im Detail{#client-context-in-detail}
+# Client-Kontext im Detail{#client-context-in-detail}
 
 >[!NOTE]
 >
@@ -515,7 +515,7 @@ Für die Kontextspeicherkomponente ist ein Bearbeitungsdialogfeld erforderlich. 
 
    * store
    * properties
-   * thumbnail
+   * Miniaturansicht
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` und klicken Sie auf „Erstellen“ > „Knoten erstellen“. Geben Sie folgende Eigenschaftswerte an und klicken Sie auf „OK“:
 
