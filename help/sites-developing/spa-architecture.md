@@ -12,9 +12,9 @@ discoiquuid: 9584392a-d8a3-45a4-9cdf-fd211c8e6091
 docset: aem65
 exl-id: c1429889-e2ed-4e2f-a45f-33f8a6a52745
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2072'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -173,7 +173,7 @@ Diese Code-Blöcke veranschaulichen, dass Ihre React- und Angular-Komponenten ni
 
 ![screen_shot_2018-12-11at144019](assets/screen_shot_2018-12-11at144019.png)
 
-Die `MapTo` Helper ist der &quot;Kleber&quot;, der es ermöglicht, die Back-End- und die Front-End-Komponenten miteinander abzugleichen:
+Das `MapTo`-Hilfsprogramm ist die Verbindung, die eine Abstimmung zwischen Backend- und Frontend-Komponenten ermöglicht:
 
 * Es teilt dem JS-Container (oder dem JS-Absatzsystem) mit, welche JS-Komponente für das Rendern der einzelnen Komponenten, die in der JSON vorhanden sind, verantwortlich ist.
 * Es wird ein HTML-Datenattribut zum HTML-Code hinzugefügt, das die JS-Komponente rendert, damit der SPA-Editor weiß, welches Dialogfeld dem Autor beim Bearbeiten der Komponente angezeigt werden soll.
