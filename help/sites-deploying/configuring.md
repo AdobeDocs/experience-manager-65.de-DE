@@ -12,7 +12,7 @@ discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2124'
 ht-degree: 100%
 
@@ -166,9 +166,9 @@ Weitere Informationen finden Sie unter [Replikation](/help/sites-deploying/repli
 
 ### OSGi-Konfigurationseinstellungen {#osgi-configuration-settings}
 
-[OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von AEM. OSGi wird zur Steuerung der AEM-Bundles und ihrer Konfiguration verwendet.
+[OSGi](https://www.osgi.org/) ist ein wesentlicher Bestandteil der Technologien von AEM. Es wird zur Steuerung der zusammengesetzten AEM-Bundles und ihrer Konfiguration verwendet.
 
-Eine Liste der verschiedenen Bundles, die für die Projektimplementierung relevant sind (nach Bundle aufgelistet), finden Sie unter [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md). Nicht alle aufgeführten Einstellungen müssen angepasst werden. Einige werden nur zum besseren Verständnis von AEM erwähnt.
+Eine Liste der verschiedenen Bundles, die für die Projektimplementierung relevant sind (nach Bundle aufgelistet), finden Sie unter [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md). Nicht alle aufgeführten Einstellungen müssen angepasst werden. Einige werden hier nur zum besseren Verständnis von AEM erwähnt.
 
 Bei AEM können Sie die Konfigurationseinstellungen für Dienste dieser Art auf unterschiedliche Weise vornehmen. Informationen zur empfohlenen Vorgehensweise finden Sie unter [Konfigurieren von OSGi.](/help/sites-deploying/configuring-osgi.md).
 
@@ -204,7 +204,7 @@ Die Willkommens-Konsole der klassischen Benutzeroberfläche bietet eine Liste mi
 
 Die sichtbaren Links können konfiguriert werden. Weitere Informationen dazu finden Sie unter [Konfigurieren der Willkommens-Konsole](/help/sites-developing/customizing-the-welcome-console.md).
 
-### Konfiguration zur Leistungsoptimierung {#configuring-for-performance}
+### Konfigurieren zur Leistungsoptimierung {#configuring-for-performance}
 
 Die [Leistung](/help/sites-deploying/configuring-performance.md) ist für Ihr Projekt ausschlaggebend. Bestimmte Aspekte von AEM (bzw. des zugrunde liegenden Repositorys) können so konfiguriert werden, dass die Leistung optimiert wird.
 
@@ -238,7 +238,7 @@ Ein Portal ist eine Webanwendung, die Personalisierung, Single Sign-On und Inhal
 
 Weitere Einzelheiten finden Sie unter [Portal und Portlets](/help/sites-administering/aem-as-portal.md).
 
-### Ablauf statischer Objekte {#expiration-of-static-objects}
+### Ablauf der Gültigkeit statischer Objekte {#expiration-of-static-objects}
 
 Statische Objekte (wie Symbole) ändern sich nicht. Daher sollte das System so konfiguriert werden, dass diese Objekte (über einen angemessenen Zeitraum) nicht ablaufen, damit unnötiger Traffic reduziert wird. 
 
