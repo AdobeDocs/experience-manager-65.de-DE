@@ -12,7 +12,7 @@ discoiquuid: 7f378b94-5233-4358-8d93-a7b3386df00b
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1200'
 ht-degree: 100%
 
@@ -185,7 +185,7 @@ die vor der Anwendung der entsprechenden Strategie berechnet werden:
    <td>C1 </td>
    <td>T6</td>
    <td>S6</td>
-   <td>Unternehmen</td>
+   <td>Business</td>
    <td>Ja</td>
    <td>100</td>
    <td>6 </td>
@@ -236,7 +236,7 @@ Wenn Sie Ihre Marke und Kampagne erstellt haben, können Sie Ihr Teaser-Erlebnis
 
 >[!NOTE]
 >
->Die Teaser-Komponente ist seit AEM 6.2 veraltet. Verwenden Sie stattdessen die [Target-Komponente](/help/sites-authoring/content-targeting-touch.md).
+>Die Teaser-Komponente ist seit AEM 6.2 veraltet. Bitte verwenden Sie stattdessen die [Target-Komponente](/help/sites-authoring/content-targeting-touch.md).
 
 1. Navigieren Sie zur Inhaltsseite, auf der Sie den Teaser-Absatz platzieren möchten, der zu Ihrer Kampagnenseite führt.
 1. Fügen Sie an der erforderlichen Position eine **Teaser**-Komponente (verfügbar im Bereich **Personalisierung** des Sidekicks) hinzu. Direkt nach dem Erstellen wird angezeigt, dass der Kampagnenpfad noch nicht konfiguriert wurde.
