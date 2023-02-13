@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1090'
 ht-degree: 100%
 
@@ -88,7 +88,7 @@ In der folgenden Tabelle wird die Dateiverarbeitung von fünf Beispieldateien (D
    <td><p>Datei1_out, Datei2_out, Datei4_out</p></td>
   </tr>
   <tr>
-   <td><p>Fehlgeschlagen</p></td>
+   <td><p>Failure</p></td>
    <td><p>leer</p></td>
    <td><p>leer</p></td>
    <td><p>leer</p></td>
@@ -116,7 +116,7 @@ Der folgende Text beschreibt die Dateiverarbeitung am jeweiligen Zeitpunkt:
 
 **T2:** Der Dienstvorgang verschiebt Datei1 in den Ordner „Stage“ zur Bearbeitung.
 
-**T3:** Der Dienstvorgang verschiebt Datei2 in den Ordner „Stage“ zur Bearbeitung. Die Ergebnisse für Datei1 werden in den Ordner „Output“ verschoben, und Datei1 wird in den Ordner „Preserve“ verschoben.
+**T3**: Der Dienstvorgang verschiebt Datei2 in den Bereitstellungsordner zur Bearbeitung. Die Ergebnisse für Datei1 werden in den Ordner „Output“ verschoben, und Datei1 wird in den Ordner „Preserve“ verschoben.
 
 **T4:** Der Dienstvorgang verschiebt Datei3 in den Ordner „Stage“ zur Bearbeitung. Die Ergebnisse für Datei2 werden in den Ordner „Output“ verschoben, und Datei2 wird in den Ordner „Preserve“ verschoben.
 
