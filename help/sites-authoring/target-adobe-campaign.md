@@ -1,5 +1,5 @@
 ---
-title: Targeting von Adobe Campaign
+title: Zielgruppenbestimmung für Adobe Campaign
 seo-title: Targeting your Adobe Campaign
 description: Sie können zielgerichtete Erlebnisse für Adobe Campaign erstellen, nachdem Sie die Segmentierung eingerichtet haben.
 seo-description: You can create targeted experiences for Adobe Campaign after setting up segmentation
@@ -11,13 +11,13 @@ topic-tags: personalization
 discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
 exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '811'
 ht-degree: 100%
 
 ---
 
-# Targeting von Adobe Campaign{#targeting-your-adobe-campaign}
+# Zielgruppenbestimmung für Adobe Campaign{#targeting-your-adobe-campaign}
 
 Um eine Zielgruppe für Ihren Adobe Campaign-Newsletter anzugeben, müssen Sie zuerst die Segmentierung einrichten, die nur in der klassischen Benutzeroberfläche (für Client Context) verfügbar ist. Anschließend können Sie Targeting-Erlebnisse für Adobe Campaign erstellen. Beide Schritte werden in diesem Abschnitt beschrieben.
 
@@ -25,7 +25,7 @@ Um eine Zielgruppe für Ihren Adobe Campaign-Newsletter anzugeben, müssen Sie z
 
 Möchten Sie die Segmentierung einrichten, müssen Sie mithilfe der klassischen Benutzeroberfläche Segmente erstellen. Die übrigen Schritte können in der Standard-Benutzeroberfläche durchgeführt werden.
 
-Im Rahmen der Einrichtung der Segmentierung werden Segmente erstellt sowie eine Marke, Kampagne und Erlebnisse eingerichtet.
+Im Rahmen des Einrichtens der Segmentierung werden Segmente erstellt sowie eine Marke, Kampagne und Erlebnisse erstellt.
 
 >[!NOTE]
 >
