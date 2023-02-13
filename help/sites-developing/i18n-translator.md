@@ -11,9 +11,9 @@ topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2325'
-ht-degree: 83%
+ht-degree: 100%
 
 ---
 
@@ -23,21 +23,21 @@ AEM stellt eine Konsole für die Verwaltung der verschiedenen Übersetzungen von
 
 `https://<hostname>:<port-number>/libs/cq/i18n/translator.html`
 
-Mithilfe des Übersetzertools können Sie englischsprachige Zeichenfolgen und die dazugehörigen Übersetzungen verwalten. Die Wörterbücher werden im Repository erstellt, z. B. /apps/myproject/i18n.
+Mithilfe des Übersetzer-Tools können Sie englischsprachige Zeichenfolgen und die dazugehörigen Übersetzungen verwalten. Die Wörterbücher werden im Repository erstellt (beispielsweise in /apps/myproject/i18n).
 
-Hinweis: Das Übersetzertool und die Wörterbücher, die Sie verwalten, dienen zur Darstellung der Komponentenbenutzeroberfläche in verschiedenen Sprachen. Informationen zum Übersetzen von Seiteninhalten oder benutzergenerierten Inhalten finden Sie in [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) bzw. in [Übersetzen von benutzergenerierten Inhalten](/help/communities/translate-ugc.md).
+Hinweis: Das Übersetzer-Tool und die Wörterbücher, die Sie verwalten, dienen zur Darstellung der Komponentenbenutzeroberfläche in verschiedenen Sprachen. Informationen zum Übersetzen von Seiteninhalten oder benutzergenerierten Inhalten finden Sie in [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md) bzw. in [Übersetzen von benutzergenerierten Inhalten](/help/communities/translate-ugc.md).
 
 >[!CAUTION]
 >
->Bearbeiten Sie nur Wörterbücher, die für Ihr Projekt erstellt wurden und sich unter `/apps`.
+>Bearbeiten Sie nur Wörterbücher, die für Ihr Projekt erstellt werden und sich unter `/apps` befinden.
 >
->In diesem Tool sind auch AEM-Systemwörterbücher verfügbar. Die AEM-Systemwörterbücher dürfen nicht geändert werden, da dies zu Problemen mit der AEM-Benutzeroberfläche führen kann. Änderungen können außerdem bei einem Upgrade verloren gehen. AEM Systemwörterbücher befinden sich unter `/libs`.
+>In diesem Tool sind auch AEM-Systemwörterbücher verfügbar. Die AEM-Systemwörterbücher dürfen nicht geändert werden, da dies zu Problemen mit der AEM-Benutzeroberfläche führen kann. Änderungen können außerdem bei einem Upgrade verloren gehen. AEM-Systemwörterbücher befinden sich unter `/libs`.
 
 >[!NOTE]
 >
->Obwohl das Übersetzer-Tool über eine klassische Benutzeroberfläche verfügt, wird es unabhängig von der Oberfläche, in der diese Ausdrücke gefunden werden, für die Übersetzung von Ausdrücken verwendet.
+>Das Übersetzer-Tool eignet sich ungeachtet seiner klassischen Benutzeroberfläche zur Übersetzung von Phrasen beliebiger Benutzeroberflächen.
 
-Das Übersetzertool zeigt die in AEM verwendeten Texte zusammen mit den verschiedenen Übersetzungen nebeneinander an:
+Das Übersetzer-Tool zeigt die in AEM verwendeten Texte zusammen mit den verschiedenen Übersetzungen nebeneinander an:
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
@@ -63,7 +63,7 @@ Sie können die englischen und übersetzten Texte durchsuchen, filtern und bearb
 
 ## Erstellen eines Wörterbuchs {#creating-a-dictionary}
 
-Erstellen Sie ein Wörterbuch zur Verwaltung Ihrer lokalisierten Zeichenfolgen für die Benutzeroberfläche. Nach der Erstellung kann das Wörterbuch mithilfe des Übersetzungstools verwaltet werden.
+Erstellen Sie ein Wörterbuch zur Verwaltung Ihrer lokalisierten Zeichenfolgen für die Benutzeroberfläche. Nach der Erstellung kann das Wörterbuch mithilfe des Übersetzungs-Tools verwaltet werden.
 
 1. Fügen Sie mithilfe von CRXDE Lite den Stammknoten (`sling:Folder`) für Ihr neues Wörterbuch als Struktur für die Sprachdefinitionen hinzu:
 
@@ -85,23 +85,23 @@ Erstellen Sie ein Wörterbuch zur Verwaltung Ihrer lokalisierten Zeichenfolgen f
    >
    >Dies ist die Struktur des [Sling-i18n-Moduls](https://sling.apache.org/site/internationalization-support.html).
 
-1. Laden Sie den Übersetzer und den Wörterbuchpfad neu (z. B. `/apps/myProject/i18n`) in der Dropdown-Auswahl in der Symbolleiste verfügbar. Wählen Sie diese aus, um mit dem Hinzufügen von Zeichenfolgen und deren Übersetzungen zu beginnen.
+1. Laden Sie den Übersetzer neu. Daraufhin steht der Wörterbuchpfad (beispielsweise `/apps/myProject/i18n`) in der Dropdown-Auswahl auf der Symbolleiste zur Verfügung. Wählen Sie diese aus, um mit dem Hinzufügen von Zeichenfolgen und deren Übersetzungen zu beginnen.
 
    >[!NOTE]
    >
-   >Der Übersetzer speichert nur Übersetzungen für Sprachen, die tatsächlich unter dem Pfad vorhanden sind (z. B. `/apps/myProject/i18n`).
+   >Der Übersetzer speichert Übersetzungen nur für Sprachen, die tatsächlich unter dem Pfad vorhanden sind (zum Beispiel `/apps/myProject/i18n`).
    >
    >Achten Sie darauf, dass diese den im Raster dargestellten Sprachen entsprechen.
 
 ## Verwalten von Wörterbuchzeichenfolgen {#managing-dictionary-strings}
 
-Verwenden Sie das Übersetzungstool, um die Zeichenfolgen in Ihren Wörterbüchern zu verwalten. Sie können englische Zeichenfolgen hinzufügen, ändern und entfernen sowie übersetzte Zeichenfolgen bereitstellen.
+Verwenden Sie das Übersetzungs-Tool, um die Zeichenfolgen in Ihren Wörterbüchern zu verwalten. Sie können englische Zeichenfolgen hinzufügen, ändern und entfernen sowie übersetzte Zeichenfolgen angeben.
 
 >[!CAUTION]
 >
->Bearbeiten Sie nur Wörterbücher, die für Ihr Projekt erstellt wurden und sich unter `/apps`.
+>Bearbeiten Sie nur Wörterbücher, die für Ihr Projekt erstellt werden und sich unter `/apps` befinden.
 >
->Die AEM-Systemwörterbücher dürfen nicht geändert werden, da dies zu Problemen mit der AEM-Benutzeroberfläche führen kann. Änderungen können außerdem bei einem Upgrade verloren gehen. AEM Systemwörterbücher befinden sich unter `/libs`.
+>Die AEM-Systemwörterbücher dürfen nicht geändert werden, da dies zu Problemen mit der AEM-Benutzeroberfläche führen kann. Änderungen können außerdem bei einem Upgrade verloren gehen. AEM-Systemwörterbücher befinden sich unter `/libs`.
 
 ### Hinzufügen, Ändern und Entfernen von Zeichenfolgen {#adding-changing-and-removing-strings}
 
@@ -111,7 +111,7 @@ Die Zeichenfolgen, die Sie einem Wörterbuch hinzufügen, müssen jeweils exakt 
 
 **Angeben von Übersetzungshinweisen**
 
-Verwenden Sie die Kommentareigenschaft der Wörterbuchzeichenfolge, um den Übersetzer mit Informationen zur Bedeutung der Zeichenfolge bei seiner Arbeit zu unterstützen. Benutzer können die Bedeutung mehrdeutiger Wörter in der Regel anhand der Benutzeroberfläche erschließen. Der Übersetzer sieht die Zeichenfolge allerdings nicht im Kontext der Benutzeroberfläche. Mit einem Übersetzungshinweis können mögliche Mehrdeutigkeiten beseitigt werden. Beispielsweise hilft ein Kommentar dem Übersetzer zu verstehen, dass das englische Wort &quot;Request&quot;als Substantiv und nicht als Verb verwendet wird.
+Verwenden Sie die Kommentareigenschaft der Wörterbuchzeichenfolge, um den Übersetzer mit Informationen zur Bedeutung der Zeichenfolge bei seiner Arbeit zu unterstützen. Benutzer können die Bedeutung mehrdeutiger Wörter in der Regel anhand der Benutzeroberfläche erschließen. Der Übersetzer sieht die Zeichenfolge allerdings nicht im Kontext der Benutzeroberfläche. Mit einem Übersetzungshinweis können mögliche Mehrdeutigkeiten beseitigt werden. So kann ein Übersetzer mithilfe eines Kommentars beispielsweise darauf hingewiesen werden, dass das englische Wort „Request“ nicht als Verb, sondern als Substantiv verwendet wird.
 
 Übersetzungshinweise ermöglichen auch die Unterscheidung identischer Zeichenfolgen mit unterschiedlicher Bedeutung. So kann beispielsweise das Wort „Search“ ein Verb oder ein Substantiv sein, weshalb das Wörterbuch zwei Einträge mit unterschiedlichen Übersetzungshinweisen enthalten muss. Der Übersetzungshinweis ist auch in dem Code enthalten, der die Zeichenfolge anfordert, sodass auf der Benutzeroberfläche die korrekte Zeichenfolge verwendet wird.
 
@@ -119,11 +119,11 @@ Verwenden Sie die Kommentareigenschaft der Wörterbuchzeichenfolge, um den Über
 
 Sie können Variablen in die lokalisierte Zeichenfolge einfügen, um dem Satz Kontextbedeutung zu geben. Ein Beispiel: Nach der Anmeldung bei einer Webanwendung wird auf der Homepage folgende Nachricht angezeigt: „Willkommen zurück, Administrator. Sie haben zwei Nachrichten in Ihrem Posteingang.“ Der Seitenkontext bestimmt den Benutzernamen und die Anzahl der Nachrichten.
 
-Um Variablen in die lokalisierte Zeichenfolge einzubeziehen, platzieren Sie in Klammern gesetzte Indizes an der Position der Variablen im ersten Argument der get -Methode. Beschreiben Sie die Werte in einem Übersetzungshinweis. Der Übersetzer muss die Bedeutung der Variablen kennen, da andere Sprachen ggf. eine andere Satzstruktur erfordern.
+Wenn Sie Variablen in die lokalisierte Zeichenfolge aufnehmen möchten, platzieren Sie in Klammern eingeschlossene Indizes an der Position der Variablen im ersten Argument der GET-Methode. Beschreiben Sie die Werte in einem Übersetzungshinweis. Der Übersetzer muss die Bedeutung der Variablen kennen, da andere Sprachen ggf. eine andere Satzstruktur erfordern.
 
 [Der Code, der die übersetzte Zeichenfolge anfordert](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences), gibt abhängig vom Kontext entsprechende Werte für die indizierten Variablen an.
 
-Wenn sich ein Benutzer also beispielsweise bei einer Website anmeldet, wird folgende Zeichenfolge angezeigt, und diese Zeichenfolge ist auch im Wörterbuch enthalten:
+Wenn sich ein Benutzer also beispielsweise bei einer Website anmeldet, wird folgende Zeichenfolge angezeigt und diese Zeichenfolge ist auch im Wörterbuch enthalten:
 
 `Welcome back {0}. You have {1} messages.`
 
@@ -143,8 +143,8 @@ Gehen Sie wie folgt vor, um eine Zeichenfolge hinzuzufügen:
    ![chlimage_1-209](assets/chlimage_1-209.png)
 
 1. Geben Sie im Feld „Zeichenfolge“ des Dialogfelds „Zeichenfolge hinzufügen“ die englische Zeichenfolge ein. Geben Sie bei Bedarf im Kommentarfeld einen Übersetzungshinweis für den Übersetzer ein.
-1. Klicken Sie auf OK.
-1. Klicken Sie auf Speichern.
+1. Klicken Sie auf „OK“.
+1. Klicken Sie auf „Speichern“.
 
    ![chlimage_1-210](assets/chlimage_1-210.png)
 
@@ -157,27 +157,27 @@ Gehen Sie wie folgt vor, um eine Zeichenfolge in einem Wörterbuch zu ändern:
    ![chlimage_1-211](assets/chlimage_1-211.png)
 
 1. Ändern Sie die Zeichenfolge oder den Kommentar und klicken Sie anschließend auf „OK“.
-1. Klicken Sie auf Speichern.
+1. Klicken Sie auf „Speichern“.
 
    ![chlimage_1-212](assets/chlimage_1-212.png)
 
 Gehen Sie wie folgt vor, um eine Zeichenfolge aus einem Wörterbuch zu entfernen:
 
 1. Wählen Sie im Dropdown-Menü „Wörterbücher“ das Wörterbuch aus, aus dem Sie eine Zeichenfolge entfernen möchten.
-1. Klicken Sie auf Entfernen.
+1. Klicken Sie auf „Entfernen“.
 
    ![chlimage_1-213](assets/chlimage_1-213.png)
 
-1. Klicken Sie auf Speichern.
+1. Klicken Sie auf „Speichern“.
 
    ![chlimage_1-214](assets/chlimage_1-214.png)
 
 ### Suchen nach Zeichenfolgen {#searching-for-strings}
 
-Die Suchleiste am unteren Rand des Übersetzertools bietet verschiedene Auswahloptionen für Zeichenfolgen:
+Die Suchleiste am unteren Rand des Übersetzer-Tools bietet verschiedene Auswahloptionen für Zeichenfolgen:
 
-* **Nach Text filtern:** Ein Muster, das mit der englischen Zeichenfolge, dem Kommentar oder den Übersetzungen übereinstimmt. Nur Elemente, die dem Muster ganz oder teilweise entsprechen, werden in der Tabelle angezeigt.
-* **Änderungen: Any, Modified, New, Deleted:** Zeigt Elemente an, die geändert und nicht gespeichert wurden.
+* **Nach Text filtern:** Ein Muster, das mit der englischen Zeichenfolge, mit dem Kommentar oder mit Übersetzungen abgeglichen wird. Nur Elemente, die dem Muster ganz oder teilweise entsprechen, werden in der Tabelle angezeigt.
+* **Änderungen: Beliebig, Geändert, Neu, Gelöscht:** Zeigt Elemente an, die geändert und nicht gespeichert wurden.
 
    * Beliebig: Zeigt Elemente an, die geändert, hinzugefügt oder entfernt wurden.
    * Geändert: Zeigt geänderte Elemente an.
@@ -204,9 +204,9 @@ Nachdem Sie die englische Zeichenfolge einem Wörterbuch hinzugefügt haben, kö
 
    >[!CAUTION]
    >
-   >Bearbeiten Sie nur Wörterbücher, die für Ihr Projekt erstellt wurden und sich unter `/apps`.
+   >Bearbeiten Sie nur Wörterbücher, die für Ihr Projekt erstellt werden und sich unter `/apps` befinden.
    >
-   >In diesem Tool sind auch AEM-Systemwörterbücher verfügbar. Die AEM-Systemwörterbücher dürfen nicht geändert werden, da dies zu Problemen mit der AEM-Benutzeroberfläche führen kann. Änderungen können außerdem bei einem Upgrade verloren gehen. AEM Systemwörterbücher befinden sich unter `/libs`.
+   >In diesem Tool sind auch AEM-Systemwörterbücher verfügbar. Die AEM-Systemwörterbücher dürfen nicht geändert werden, da dies zu Problemen mit der AEM-Benutzeroberfläche führen kann. Änderungen können außerdem bei einem Upgrade verloren gehen. AEM-Systemwörterbücher befinden sich unter `/libs`.
 
 1. Die übersetzten Texte für die Zeichenfolgen können wie folgt bearbeitet werden:
 
@@ -226,7 +226,7 @@ Nachdem Sie die englische Zeichenfolge einem Wörterbuch hinzugefügt haben, kö
 
 ## Verwenden externer Übersetzer {#using-third-party-translators}
 
-Mit dem Übersetzungstool können Sie Wörterbücher für externe Übersetzungsdienste exportieren und anschließend wieder importieren.
+Mit dem Übersetzungs-Tool können Sie Wörterbücher für externe Übersetzungsdienste exportieren und anschließend wieder importieren.
 
 ### Exportieren eines Wörterbuchs {#exporting-a-dictionary}
 
@@ -239,9 +239,9 @@ Wenn Sie eine XLIFF-Datei exportieren und eine Sprache einschließen, muss diese
 
 Gehen Sie wie folgt vor, um eine XLIFF-Datei für eine bestimmte Sprache zu exportieren:
 
-1. Öffnen Sie das Übersetzungstool `http://<host>:<port>/libs/cq/i18n/translator.html`
+1. Öffnen Sie das Übersetzungs-Tool `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Wählen Sie im Dropdown-Menü „Wörterbücher“ das Wörterbuch aus, das Sie exportieren möchten.
-1. Klicken Sie auf „Exportieren“ > „Vollständige XLIFF-Optionen für *XX* exportieren“, wobei *XX* der aus zwei Buchstaben bestehende Sprachcode (etwa „DE“ oder „FR“) ist.
+1. Klicken Sie auf „Exportieren“ > „Vollständige XLIFF-Optionen für *XX* exportieren“, wobei *XX* der aus zwei Buchstaben bestehende Sprach-Code (etwa „DE“ oder „FR“) ist.
 
    Die XLIFF-Datei wird auf einer neuen Registerkarte oder in einem neuen Fenster geöffnet.
 
@@ -249,7 +249,7 @@ Gehen Sie wie folgt vor, um eine XLIFF-Datei für eine bestimmte Sprache zu expo
 
 Gehen Sie wie folgt vor, um alle oder einige der englischen Zeichenfolgen zu exportieren:
 
-1. Öffnen Sie das Übersetzungstool.`http://<host>:<port>/libs/cq/i18n/translator.html`
+1. Öffnen Sie das Übersetzungs-Tool. `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Wählen Sie im Dropdown-Menü „Wörterbücher“ das Wörterbuch aus, das Sie exportieren möchten.
 1. Wenn Sie nur einen Teil der Zeichenfolgen exportieren möchten, wählen Sie die gewünschten Wörterbuchelemente aus. Sind keine Elemente ausgewählt, werden alle Elemente exportiert.
 1. Klicken Sie auf „Exportieren“ > „Auswahl als XLIFF exportieren (nur Zeichenfolgen)“.
@@ -259,17 +259,17 @@ Gehen Sie wie folgt vor, um alle oder einige der englischen Zeichenfolgen zu exp
 
 Importieren Sie eine XLIFF-Datei in ein Wörterbuch, um das Wörterbuch zu füllen. Falls im Wörterbuch eine Übersetzung für eine englische Zeichenfolge enthalten ist und die XLIFF-Datei eine andere Übersetzung für die gleiche Zeichenfolge enthält, wird die Übersetzung im Wörterbuch ersetzt.
 
-1. Öffnen Sie das Übersetzungstool `http://<host>:<port>/libs/cq/i18n/translator.html`
+1. Öffnen Sie das Übersetzungs-Tool `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Klicken Sie auf „Importieren“ > „XLIFF-Übersetzungen“.
 1. Wählen Sie die zu importierende Datei aus und klicken Sie auf „OK“.
 
 ## Verwalten unterstützter Sprachen {#managing-supported-lanuages}
 
-Fügen Sie vom Übersetzungstool unterstützte Sprachen hinzu, die Benutzern auf Ihren Webseiten angezeigt werden, oder entfernen Sie sie.
+Fügen Sie vom Übersetzungs-Tool unterstützte Sprachen hinzu, die Benutzern auf Ihren Webseiten angezeigt werden, oder entfernen Sie sie.
 
 ### Ändern der in der Wörterbuchtabelle aufgeführten Sprachen {#changing-languages-listed-in-the-dictionary-table}
 
-Das Übersetzer-Tool enthält die folgenden Sprachen in der Wörterbuchtabelle:
+Die Wörterbuchtabelle des Übersetzer-Tools umfasst folgende Sprachen:
 
 * de – Deutsch
 * fr – Französisch
@@ -298,23 +298,23 @@ Gehen Sie wie folgt vor, um Sprachen hinzuzufügen oder zu entfernen:
 
    >[!NOTE]
    >
-   >Die Sprachcodes müssen in Kleinbuchstaben geschrieben sein.
+   >Die Sprach-Codes müssen in Kleinbuchstaben geschrieben sein.
 
 1. Klicken Sie in CRXDE Lite auf **Alle speichern** und laden Sie den Übersetzer neu. Das Raster wird aktualisiert und zeigt nun die definierten Sprachen an.
 
    >[!NOTE]
    >
-   >Der Übersetzer speichert nur Übersetzungen für Sprachen, die tatsächlich [im Wörterbuch vorhanden](#creating-a-dictionary) (d. h. unter dem Wörterbuchpfad wie `/apps/myProject/i18n`).
+   >Der Übersetzer speichert nur Übersetzungen für Sprachen, die tatsächlich [im Wörterbuch vorhanden](#creating-a-dictionary) sind (sich also unter dem Wörterbuchpfad befinden; zum Beispiel `/apps/myProject/i18n`).
    >
    >Achten Sie darauf, dass diese den im Raster dargestellten Sprachen entsprechen.
 
 ### Verfügbarmachen von Sprachen für Autoren {#making-languages-available-to-authors}
 
-Nachdem Sie ein Wörterbuch für eine neue Sprache in Ihrer AEM-Instanz definiert haben, müssen Sie es den Autoren zur Auswahl zur Verfügung stellen (z. B. zur Verwendung in **Voreinstellungen**):
+Nachdem Sie ein Wörterbuch für eine neue Sprache in Ihrer AEM-Instanz definiert haben, müssen Sie sie für die Autoren verfügbar machen, damit diese sie auswählen können (zum Beispiel zur Nutzung in **Voreinstellungen**):
 
 1. Gehen Sie wie folgt vor, um die Liste mit den Sprachen zu ändern, die in der **Sicherheitskonsole** unter **Voreinstellungen** verfügbar sind:
 
-   1. Erstellen Sie eine Überlagerung in Ihrem Anwendungscode für:
+   1. Erstellen Sie eine Überlagerung in Ihrem Anwendungs-Code für:
 
       ```
               /libs/cq/security/widgets/source/widgets/security/Preferences.js
@@ -335,13 +335,13 @@ Nachdem Sie ein Wörterbuch für eine neue Sprache in Ihrer AEM-Instanz definier
 
 ### Ändern von Sprachennamen und Standardländern {#changing-language-names-and-default-countries}
 
-In vielen Ländern wird die gleiche Sprache gesprochen – beispielsweise Englisch in den USA, in Großbritannien und in Australien. Dies wird durch einen Code gekennzeichnet, der sowohl Sprache als auch Land angibt, z. B. `en_US`, `en_GB` und `en_AU`.
+In vielen Ländern wird die gleiche Sprache gesprochen – beispielsweise Englisch in den USA, in Großbritannien und in Australien. Dies wird durch einen Code angegeben, der sowohl die Sprache als auch das Land umfasst – beispielsweise `en_GB`, `en_US` und `en_AU`.
 
-Die Standardländer werden verwendet, wenn Flaggen angezeigt werden (etwa im Dialogfeld zum Kopieren einer Sprache) und dienen zum Auflösen des Landes für einen Sprachcode.
+Die Standardländer werden verwendet, wenn Flaggen angezeigt werden (etwa im Dialogfeld zum Kopieren einer Sprache) und dienen zum Auflösen des Landes für einen Sprach-Code.
 
 >[!NOTE]
 >
->Für Lokalisierungen, die wie beschrieben durch den Übersetzer verwaltet werden, funktioniert nur die genaue Sprache. Wenn die Dropdown-Liste mit den Spracheinstellungen `en_uk`, muss eine `en_uk` Wörterbuch im Repository.
+>Für Lokalisierungen, die wie beschrieben durch den Übersetzer verwaltet werden, funktioniert nur die genaue Sprache. Wenn im Dropdown-Menü mit den Spracheinstellungen `en_uk` verwendet wird, muss auch das Repository ein Wörterbuch für `en_uk` enthalten.
 
 So ändern Sie die Standarddefinitionen:
 
@@ -353,13 +353,13 @@ So ändern Sie die Standarddefinitionen:
 
    `/apps/wcm/core/resources/languages`
 
-   Ändern oder erweitern Sie die Liste dort. Die Eigenschaft `defaultCountry` auf einem Sprachknoten (z. B. `ja`) muss den vollständigen Code enthalten, z. B. `ja_jp`, die `jp` als Standardland für die Sprache `ja`.
+   Ändern oder erweitern Sie die Liste dort. Die Eigenschaft `defaultCountry` in einem Sprachknoten (zum Beispiel `ja`) muss den vollständigen Code enthalten – beispielsweise `ja_jp`, um `jp` als Standardland für die Sprache `ja` zu definieren.
 
 1. Aktualisieren Sie den **CQ WCM Language Manager**.
 
    * **Sprachliste**:
 
-      Der Pfad zur Sprachliste im Repository Legen Sie dies auf den Speicherort fest, der für die Überlagerung verwendet wird:
+      Der Pfad zur Sprachliste im Repository Legen Sie diese Option auf den Ort für die Überlagerung fest:
 
       ```
              /apps/wcm/core/resources/languages
@@ -377,12 +377,12 @@ Integrieren Sie Ihre Wörterbücher in die Releaseverwaltung Ihrer AEM-Anwendung
 * Wörterbücher sind für Komponenten in ihrer Veröffentlichungsumgebung verfügbar.
 * Änderungen an Zeichenfolgen der Komponentenbenutzeroberfläche werden zusammen mit den aktualisierten Übersetzungen bereitgestellt.
 
-Des Weiteren empfiehlt es sich, Wörterbuchzeichenfolgen im Rahmen des regulären Softwareentwicklungszyklus zu testen.
+Des Weiteren empfiehlt es sich, Wörterbuchzeichenfolgen im Rahmen des regulären Software-Entwicklungszyklus zu testen.
 
 >[!NOTE]
 >
->Regelmäßige Veröffentlichungsfunktionen oder Replikation sollten nicht für Wörterbücher verwendet werden. Stattdessen sollten Wörterbücher genauso behandelt werden wie Code und Konfiguration. Dazu gehört die Verwendung der Quell-Code-Kontrolle zur Verfolgung von Änderungen und die Verwendung von Inhaltspaketen zur Anwendung von Änderungen auf Autoren- und Veröffentlichungsinstanz.
+>Regelmäßige Veröffentlichungsfunktionen oder Replikation sollten nicht für Wörterbücher verwendet werden. Stattdessen sollten Wörterbücher genauso behandelt werden wie Code und Konfiguration. Dazu gehört die Verwendung der Quell-Code-Kontrolle zur Verfolgung von Änderungen und die Verwendung von Inhaltspaketen zur Anwendung von Änderungen auf die Autoren- und Veröffentlichungsinstanz.
 
 >[!NOTE]
 >
->Bei Verwendung von Dispatcher müssen Sie [zwischengespeicherte Seiten ungültig machen](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html), um neue Wörterbuchzeichenfolgen in gerenderte Komponenten-Zeichenfolgen einzuschließen.
+>Bei Verwendung von Dispatcher müssen Sie [zwischengespeicherte Seiten ungültig machen](https://helpx.adobe.com/de/experience-manager/dispatcher/using/page-invalidate.html), um neue Wörterbuchzeichenfolgen in gerenderte Komponenten-Zeichenfolgen einzuschließen.
