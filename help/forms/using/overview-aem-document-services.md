@@ -1,5 +1,5 @@
 ---
-title: Übersicht über AEM Document Services
+title: Übersicht über AEM-Dokumentendienste
 seo-title: Overview of AEM Document Services
 description: Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten.
 seo-description: AEM Document Services are a set of OSGi Services for creating, assembling, and securing PDF Documents.
@@ -11,13 +11,13 @@ discoiquuid: 10d406db-ac10-479b-b08b-d0735116a12b
 docset: aem65
 exl-id: 4c8a3877-1a3c-410d-ad1f-69c73ba4fcc1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1402'
 ht-degree: 100%
 
 ---
 
-# Übersicht über AEM Document Services{#overview-of-aem-document-services}
+# Übersicht über AEM-Dokumentendienste{#overview-of-aem-document-services}
 
 Bei AEM Document Services handelt es sich um einen Satz an OSGi-Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten. Document Services enthält die folgenden Dienste:
 
@@ -109,11 +109,11 @@ Der Signature-Dienst greift auf Zertifikate und Berechtigungen zu, die im Trust 
 
 ### Encryption-Service {#encryption-service}
 
-Der Encryption-Dienst ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Beim Verschlüsseln eines PDF-Dokuments können Sie das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alle Daten außer den Metadaten oder nur die Anlagen verschlüsseln. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mithilfe eines privaten Schlüssels (Zertifikat) entschlüsseln. Der private Schlüssel, der zum Entschlüsseln des PDF-Dokuments verwendet wird, muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wurde.
+Der Encryption-Dienst ermöglicht das Ver- und Entschlüsseln von Dokumenten. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Beim Verschlüsseln eines PDF-Dokuments können Sie das gesamte PDF-Dokument (einschließlich Inhalt, Metadaten und Anlagen), alle Daten außer den Metadaten oder nur die Anlagen verschlüsseln. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, müssen die Benutzenden das Kennwort zum Öffnen angeben, damit das Dokument in Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mithilfe eines privaten Schlüssels (Zertifikat) entschlüsseln. Der private Schlüssel, der zum Entschlüsseln des PDF-Dokuments verwendet wird, muss dem öffentlichen Schlüssel entsprechen, der zum Verschlüsseln verwendet wurde.
 
 ### Reader Extension-Dienst {#reader-extension-service}
 
-Der Reader Extensions-Dienst ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte. Der Reader Extensions-Dienst funktioniert mit Adobe Reader 7.0 und höher. Der Dienst fügt dem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzer benötigen keine zusätzliche Software oder Plug-Ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
+Der Reader Extensions-Dienst ermöglicht Unternehmen die einfache Freigabe interaktiver PDF-Dokumente durch Erweitern der Funktionalität von Adobe Reader durch zusätzliche Verwendungsrechte. Der Reader Extensions-Dienst funktioniert mit Adobe Reader 7.0 und höher. Der Dienst fügt dem PDF-Dokument Verwendungsrechte hinzu. Diese Aktion aktiviert Funktionen, die normalerweise nicht verfügbar sind, wenn ein PDF-Dokument in Adobe Reader geöffnet wird, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzende benötigen keine zusätzliche Software oder Plug-ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten.
 
 PDF-Dokumente, denen entsprechende Verwendungsrechte hinzugefügt wurden, ermöglichen Empfängern die folgenden Aktivitäten in Adobe Reader:
 
