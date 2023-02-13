@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1354'
 ht-degree: 100%
 
@@ -220,7 +220,7 @@ Den Code dieser Seite finden Sie auf GitHub.
 * [Öffnen Sie das Projekt aem-authoring-extension-inplace-editor in GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-inplace-editor/archive/master.zip) herunter.
 
-#### Konfigurieren mehrerer Editoren für Bearbeitung im Kontext {#configuring-multiple-in-place-editors}
+#### Konfigurieren mehrerer Editierender für Bearbeitung im Kontext {#configuring-multiple-in-place-editors}
 
 Es ist möglich, eine Komponente so zu konfigurieren, dass sie über mehrere Editoren für Bearbeitung im Kontext verfügt. Wenn mehrere Editoren für Bearbeitung im Kontext konfiguriert sind, können Sie den entsprechenden Inhalt auswählen und den entsprechenden Editor öffnen. In der Dokumentation zur [Konfigurieren mehrerer Editoren für Bearbeitung im Kontext](/help/sites-developing/multiple-inplace-editors.md) finden Sie weitere Informationen.
 
