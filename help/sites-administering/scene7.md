@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5484'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -577,7 +577,7 @@ Insbesondere konfigurieren Sie hier das vom MIME-Typ akzeptierte Dateiformat im 
    >
    >`process=MaintainLayers&layerNaming=AppendName&createTemplate=true`
    >
-   >Stellen Sie sicher, dass Ihre PSD-Datei &quot;Ebenen&quot;hat. Wenn es sich streng genommen um ein Bild oder ein Bild mit Maske handelt, wird es nur als Bild verarbeitet, da keine zu verarbeitenden Ebenen gibt.
+   >Stellen Sie sicher dass Ihre PSD-Datei über „Ebenen“ verfügt. Wenn es sich streng genommen um ein Bild oder ein Bild mit Maske handelt, wird es nur als Bild verarbeitet, da keine zu verarbeitenden Ebenen gibt.
 
 1. Wählen Sie in der oberen linken Ecke der Seite „CRXDE Lite“ die Option **[!UICONTROL Alle speichern]** aus.
 
