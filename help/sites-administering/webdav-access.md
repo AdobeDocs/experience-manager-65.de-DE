@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1144'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ http://localhost:4502
 
 Bei der Verbindung auf Betriebssystemebene bietet diese URL WebDAV-Zugriff auf den Standard-Workspace ( `crx.default`). Diese Methode ist zwar einfacher für den Benutzer, bietet aber nicht die zusätzliche Möglichkeit, Namen für Workspaces festzulegen, was durch die Verwendung zusätzlicher [WebDAV-URLs](/help/sites-administering/webdav-access.md#webdav-urls) möglich ist.
 
-AEM zeigt den Repository-Inhalt wie folgt an:
+AEM zeigt Repository-Inhalte wie folgt an:
 
 * Ein Knoten des Typs `nt:folder` wird als Ordner angezeigt. Knoten unterhalb des Knotens `nt:folder` werden als Ordnerinhalte angezeigt.
 
@@ -83,9 +83,9 @@ Die URL für den WebDAV-Server weist die folgende Struktur auf:
   <tr>
    <td><strong>Beschreibung</strong></td>
    <td>Host und Port, auf dem AEM ausgeführt wird</td>
-   <td>Pfad für die AEM Repository-Webapp</td>
+   <td>Pfad für die AEM Repository-Webanwendung</td>
    <td>Pfad, dem das WebDAV-Servlet zugeordnet ist</td>
-   <td>Name des Arbeitsbereichs</td>
+   <td>Names des Workspace</td>
   </tr>
  </tbody>
 </table>
@@ -98,7 +98,7 @@ http://localhost:4502/crx/repository/staging
 
 ## Verbinden über WebDAV {#connecting-via-webdav}
 
-[Wie oben erwähnt](/help/sites-administering/webdav-access.md#general)Um mithilfe des WebDAV-Protokolls eine Verbindung zu Ihrem Repository herzustellen, verweisen Sie Ihren WebDAV-Client auf Ihren Repository-Speicherort. Je nach Betriebssystem sind jedoch unterschiedliche Schritte zur Verbindung des Clients nötig; ggf. muss auch das Betriebssystem konfiguriert werden.
+[Wie bereits erwähnt](/help/sites-administering/webdav-access.md#general), lassen Sie den WebDAV-Client auf den Repository-Ort verweisen, um Ihr Repository über das WebDAV-Protokoll zu verbinden. Je nach Betriebssystem sind jedoch unterschiedliche Schritte zur Verbindung des Clients nötig; ggf. muss auch das Betriebssystem konfiguriert werden.
 
 In diesem Dokument finden Sie Anweisungen für die folgenden Betriebssysteme:
 
@@ -122,15 +122,15 @@ So aktualisieren Sie die Registrierung, um die grundlegende Authentifizierung ü
    HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Services\WebClient\Parameters
    ```
 
-1. Legen Sie die `BasicAuthLevel` Registrierungseintrag-Unterschlüssel auf einen Wert von `2` oder höher.
+1. Legen Sie den Registrierungs-Unterschlüssel `BasicAuthLevel` auf einen Wert von `2` oder höher fest.
 
    Wenn der Unterschlüssel nicht vorhanden ist, fügen Sie ihn hinzu.
 
 1. Sie müssen das System neu starten, damit die Änderung der Registrierung übernommen wird.
 
-Siehe [Microsoft-Support KB 841215](https://support.microsoft.com/default.aspx/kb/841215) für weitere Informationen zu dieser Registrierungsänderung.
+Weitere Informationen zu dieser Registrierungs-Änderung finden Sie unter [Microsoft-Support KB 841215](https://support.microsoft.com/default.aspx/kb/841215).
 
-Siehe [Microsoft-Support KB 2445570](https://support.microsoft.com/kb/2445570) für Informationen zur Verbesserung der Reaktionsfähigkeit des WebDav-Clients unter Windows.
+Unter [Microsoft-Support KB 2445570](https://support.microsoft.com/kb/2445570) erfahren Sie, wie Sie die Reaktionsfähigkeit des WebDAV-Clients unter Windows verbessern.
 
 >[!NOTE]
 >
@@ -140,7 +140,7 @@ Siehe [Microsoft-Support KB 2445570](https://support.microsoft.com/kb/2445570) f
 
 Auch bei Windows 8 müssen Sie den Registrierungs-Eintrag ändern, [wie für Windows 7 und höher beschrieben](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Zuvor müssen Sie jedoch die Desktop Experience aktivieren, um den Registrierungs-Eintrag sehen zu können.
 
-Um das Desktop-Erlebnis zu aktivieren, öffnen Sie **Server Manager**, dann **Funktionen**, dann **Funktionen hinzufügen**, dann **Desktop-Erlebnis**.
+Öffnen Sie dazu **Server-Manager** > **Funktionen** > **Funktionen hinzufügen** > **Desktop Experience**.
 
 Nach dem Neustart ist der Registrierungs-Eintrag (wie für Windows 7 beschrieben) verfügbar. Bearbeiten Sie ihn so, wie für Windows 7 oder höher beschrieben.
 
@@ -148,7 +148,7 @@ Nach dem Neustart ist der Registrierungs-Eintrag (wie für Windows 7 beschriebe
 
 So stellen Sie unter Windows eine Verbindung über WebDAV zu AEM her:
 
-1. Öffnen **Windows Explorer** oder **Datei-Explorer** und klicken Sie auf **Computer** oder **Dieser PC**.
+1. Öffnen Sie den **Windows-Explorer** oder den **Datei-Explorer** und klicken Sie auf **Computer** oder **Dieser PC**.
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
@@ -165,9 +165,9 @@ So stellen Sie unter Windows eine Verbindung über WebDAV zu AEM her:
 
    >[!NOTE]
    >
-   >Wenn sich AEM an einem anderen Port befindet, verwenden Sie diese Portnummer anstelle von 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
+   >Wenn sich AEM an einem anderen Port befindet, nutzen Sie diese Portnummer statt der 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
 
-1. Benutzernamen eingeben `admin` und Kennwort `admin`. Adobe empfiehlt, das vorkonfigurierte Admin-Konto zum Testen zu nutzen.
+1. Geben Sie den Benutzernamen `admin` und das Passwort `admin` ein. Adobe empfiehlt, das vorkonfigurierte Admin-Konto zum Testen zu nutzen.
 
    ![chlimage_1-114](assets/chlimage_1-114a.png)
 
@@ -187,9 +187,9 @@ Für eine Verbindung über WebDAV sind bei macOS keine Konfigurationsschritte er
    * `http://localhost:4502`
    >[!NOTE]
    >
-   >Wenn sich AEM an einem anderen Port befindet, verwenden Sie diese Portnummer anstelle von 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
+   >Wenn sich AEM an einem anderen Port befindet, nutzen Sie diese Portnummer statt der 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
 
-1. Wenn Sie zur Authentifizierung aufgefordert werden, geben Sie den Benutzernamen `admin` und das Kennwort `admin` ein. Adobe empfiehlt, das vorkonfigurierte Admin-Konto zum Testen zu nutzen.
+1. Wenn Sie zur Authentifizierung aufgefordert werden, geben Sie den Benutzernamen `admin` und das Kennwort `admin` ein. Adobe empfiehlt, zum Testen das vorkonfigurierte Admin-Konto zu nutzen.
 
 AEM wurde nun von macOS über WebDAV eingebunden und kann als Ordner genutzt werden.
 
@@ -204,35 +204,35 @@ So stellen Sie mit GNOME eine Verbindung zu AEM über WebDAV her:
 1. Wählen Sie in Nautilus (Dateimanager) **Orte** und dann **Mit Server verbinden** aus.
 1. Wählen Sie im Fenster **Mit Server verbinden** unter „Dienste-Typ“ die Option „WebDAV (HTTP)“ aus.
 
-1. In **Server**, eingeben `http://localhost:4502/crx/repository/crx.default`
+1. Geben Sie bei **Server** `http://localhost:4502/crx/repository/crx.default` ein.
 
    >[!NOTE]
    >
-   >Wenn sich AEM an einem anderen Port befindet, verwenden Sie diese Portnummer anstelle von 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
+   >Wenn sich AEM an einem anderen Port befindet, nutzen Sie diese Portnummer statt der 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
 
-1. In **Ordner**, eingeben `/dav`
-1. Benutzernamen eingeben `admin`. Adobe empfiehlt, das vorkonfigurierte Admin-Konto zum Testen zu nutzen.
+1. Unter **Ordner** geben Sie `/dav` ein.
+1. Geben Sie den Benutzernamen `admin` ein. Adobe empfiehlt, das vorkonfigurierte Admin-Konto zum Testen zu nutzen.
 1. Lassen Sie den Port leer und geben Sie einen Beliebigen Namen für die Verbindung ein.
-1. Klicken Sie auf „Verknüpfen“.**** AEM fordert Sie auf, Ihr Kennwort einzugeben.
+1. Klicken Sie auf **Verknüpfen**. AEM fordert Sie auf, Ihr Kennwort einzugeben.
 1. Geben Sie das Kennwort `admin` ein und klicken Sie auf **Verbinden**.
 
-GNOME hat jetzt AEM als Volume bereitgestellt und kann wie jedes andere Volume verwendet werden.
+AEM wurde nun von GNOME als Volume eingebunden und kann wie jedes andere Volume genutzt werden.
 
 #### KDE {#kde}
 
 1. Öffnen Sie den Assistenten „Netzwerkordner“.
 1. Wählen Sie **Webordner** aus und klicken Sie auf „Weiter“.
 1. Geben Sie unter **Name** den Verbindungsnamen ein.
-1. In **Benutzer**, eingeben `admin.` Adobe empfiehlt die Verwendung des vorkonfigurierten Administratorkontos.
-1. In **Server**, eingeben `http://localhost:4502/crx/repository/crx.default`
+1. Geben Sie bei **Benutzer** `admin.` ein. Adobe empfiehlt die Verwendung des vorkonfigurierten Administratorkontos.
+1. Geben Sie bei **Server** `http://localhost:4502/crx/repository/crx.default` ein.
 
    >[!NOTE]
    >
-   >Wenn sich AEM an einem anderen Port befindet, verwenden Sie diese Portnummer anstelle von 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
+   >Wenn sich AEM an einem anderen Port befindet, nutzen Sie diese Portnummer statt der 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
 
-1. In **Ordner**, eingeben `dav`
+1. Unter **Ordner** geben Sie `dav` ein.
 
 1. Klicken Sie auf **Speichern und Verbinden**.
 1. Wenn Sie nach dem Kennwort gefragt werden, geben Sie das Kennwort `admin` ein und klicken Sie auf **Verbinden**
 
-KDE hat jetzt AEM als Volume bereitgestellt und kann wie jedes andere Volume verwendet werden.
+AEM wurde nun von KDE als Volume eingebunden und kann wie jedes andere Volume genutzt werden.
