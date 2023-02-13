@@ -1,5 +1,5 @@
 ---
-title: Job Manager-Datenbank um Aufzeichnungen bereinigen
+title: Bereinigen von Datensätzen aus der Job Manager-Datenbank
 seo-title: Purge records from the Job Manager database
 description: Große Prozessdaten können zu niedrigerer AEM Forms-Leistung führen. Es empfiehlt sich, Prozessdaten zu bereinigen, wenn die Aufzeichnungen nicht mehr gebraucht werden.
 seo-description: Large process data can result in lower AEM forms performance. It is good practice to purge process data when records are no longer necessary.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
 exl-id: 5279f6c3-5954-472c-9ea0-18e8a7ec860e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '468'
 ht-degree: 100%
 
 ---
 
-# Job Manager-Datenbank um Aufzeichnungen bereinigen {#purge-records-from-the-job-manager-database}
+# Bereinigen von Datensätzen aus der Job Manager-Datenbank {#purge-records-from-the-job-manager-database}
 
 Prozessdaten, die beim Aufrufen eines Prozesses mit langer Lebensdauer generiert werden, können zu stark anwachsen, was zu einer Beeinträchtigung der Leistung von AEM Forms und zur Belegung von unnötigem Speicherplatz führt. Es empfiehlt sich, Prozessdaten zu bereinigen, wenn die Aufzeichnungen nicht mehr gebraucht werden.
 
