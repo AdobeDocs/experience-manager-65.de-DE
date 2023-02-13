@@ -1,5 +1,5 @@
 ---
-title: Benutzerdefinierte Standalone-Installation
+title: Benutzerdefinierte eigenständige Installation
 seo-title: Custom Standalone Install
 description: Erfahren Sie mehr über die verfügbaren Optionen beim Installieren einer AEM-Standalone-Instanz.
 seo-description: Learn about the options available when installing a standalone AEM instance.
@@ -7,13 +7,13 @@ content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
 source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1622'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Benutzerdefinierte Standalone-Installation{#custom-standalone-install}
+# Benutzerdefinierte eigenständige Installation{#custom-standalone-install}
 
 In diesem Abschnitt wird beschrieben, welche Optionen bei der Installation einer AEM-Standalone-Instanz verfügbar sind. Weitere Informationen zur Auswahl des Backend-Speichertyps nach erfolgter Neuinstallation von AEM 6 finden Sie unter [Speicherelemente](/help/sites-deploying/storage-elements-in-aem-6.md).
 
@@ -46,7 +46,7 @@ Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 
 ### Besonderheiten von Java 11 {#java-considerations}
 
-Wenn Sie Oracle Java 11 ausführen (oder generell Java-Versionen aktueller als 8), werden zusätzliche Parameter zu Ihrer Befehlszeile hinzugefügt, sobald AEM gestartet wird.
+Wenn Sie Oracle Java 11 (oder generell neuere Java-Versionen als 8) verwenden, müssen beim Starten von AEM zusätzliche Schalter zur Befehlszeile hinzugefügt werden.
 
 * Die folgenden `-add-opens`-Schalter müssen hinzugefügt werden, um entsprechende Reflexions-Warnmeldungen beim Zugriff auf `stdout.log` zu verhindern
 
@@ -108,7 +108,7 @@ So installieren und starten Sie AEM als Windows-Dienst:
 
    Dieser Befehl ruft das passende Skript auf, das den Windows-Service-Daemon in der 64-Bit-Version von Java statt der 32-Bit-Variante startet.
 
-1. Erhöhen Sie den PermGen-JVM-Parameter, um zu verhindern, dass der Prozess in mehrere Prozesse übergeht. Suchen Sie nach dem Befehl `set jvm_options` und legen Sie den Wert wie folgt fest:
+1. Erhöhen Sie den PermGen-JVM-Parameter, um zu verhindern, dass sich der Prozess in mehrere Prozesse aufspaltet. Suchen Sie nach dem Befehl `set jvm_options` und legen Sie den Wert wie folgt fest:
 
    `set jvm_options=-Xmx1792m`
 
