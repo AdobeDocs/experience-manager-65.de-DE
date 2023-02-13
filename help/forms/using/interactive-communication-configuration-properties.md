@@ -13,7 +13,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 09eeade6-e16d-4159-b26a-803c7201097a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
 ht-degree: 100%
 
@@ -57,7 +57,7 @@ Tippen Sie auf **Dokumentfragmente Konfiguration** auf der Seite **Konfiguration
      <li>numberGroupSeparator = ,</li> 
      <li>numberUseGroupSeparator = true</li> 
     </ul> </td> 
-   <td><p>—</p> </td> 
+   <td><p>--</p> </td> 
   </tr> 
   <tr> 
    <td>Einzug</td> 
@@ -68,7 +68,7 @@ Tippen Sie auf **Dokumentfragmente Konfiguration** auf der Seite **Konfiguration
   <tr> 
    <td>Mindestbreite von römischen Zahlen</td> 
    <td>Mindestbreite für das Aufzählungsfeld oder Zahlenfeld, wenn römische Zahlen in Listendokumentfragmenten verwendet werden. </td> 
-   <td>12.7 mm</td> 
+   <td>12.7mm</td> 
    <td>Zahl</td> 
   </tr> 
   <tr> 
@@ -80,7 +80,7 @@ Tippen Sie auf **Dokumentfragmente Konfiguration** auf der Seite **Konfiguration
  </tbody> 
 </table>
 
-## Korrespondenzkonfiguration erstellen {#create-correspondence-configuration}
+## Erstellen der Korrespondenzkonfiguration {#create-correspondence-configuration}
 
 Tippen Sie auf **Korrespondenz erstellen auf der Seite Konfiguration von Adobe Experience Manager Web Console** auf der Seite **Konfiguration von Adobe Experience Manager Web Console**, um die Konfigurationseigenschaften für Dokumentfragmente anzuzeigen.
 
@@ -113,7 +113,7 @@ Tippen Sie auf **Korrespondenz erstellen auf der Seite Konfiguration von Adobe E
  </tbody> 
 </table>
 
-## Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-configuration}
+## Konfiguration des Web-Kanals für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
 Tippen Sie auf der Seite **Webkanal-Konfiguration für adaptive Formulare und interaktive Kommunikation** auf **Konfiguration von Adobe Experience Manager Web Console**, um die Konfigurationseigenschaften für den Webkanal für adaptive Formulare und interaktive Kommunikation anzuzeigen. Die folgende Tabelle beschreibt die Eigenschaften, die sich auf die interaktive Kommunikation bezieht:
 
@@ -123,7 +123,7 @@ Tippen Sie auf der Seite **Webkanal-Konfiguration für adaptive Formulare und in
 | Maximale Cache-Einträge | Legen Sie die maximale Anzahl an adaptiven Formularen und interaktiver Kommunikation fest, die mithilfe des Cache-Speichers abgerufen werden können. | 100 | Zahl |
 | Dateinamen als eindeutig festlegen | Aktivieren Sie das Kontrollkästchen, um eindeutige Namen für Dateien zu erhalten, die als Anhänge in adaptiven Formularen und interaktiver Kommunikation enthalten sind. | Nicht ausgewählt | Nicht zutreffend |
 
-## Webkanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
+## Konfiguration der Web-Kanalthemen für adaptive Formulare und interaktive Kommunikation {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
 Tippen Sie auf der Seite **Konfiguration von Adobe Experience Manager Web Console** auf **Webkanalthemen-Konfiguration für adaptive Formulare und interaktive Kommunikation**, um die Konfigurationseigenschaften für die Webkanalthemen für adaptive Formulare und interaktive Kommunikation anzuzeigen.
 
