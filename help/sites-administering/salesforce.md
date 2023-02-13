@@ -1,5 +1,5 @@
 ---
-title: Integration mit Salesforce
+title: Integrieren mit Salesforce
 seo-title: Integrating with Salesforce
 description: Erfahren Sie mehr über die Integration von AEM mit Salesforce.
 seo-description: Learn about integrating AEM with Salesforce.
@@ -12,14 +12,14 @@ discoiquuid: bee7144e-4276-4e81-a3a0-5b7273af34fe
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
 source-git-commit: c7958efbc4557ab3e50732da59faabf4e36c3844
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1564'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
 
-# Integration mit Salesforce {#integrating-with-salesforce}
+# Integrieren mit Salesforce {#integrating-with-salesforce}
 
 Eine Integration von Salesforce mit AEM bietet Lead-Management-Funktionen und nutzt die von Salesforce direkt bereitgestellten, vorhandenen Funktionen. Sie können AEM so konfigurieren, dass Leads in Salesforce gepostet und Komponenten erstellt werden, welche direkt von Salesforce aus auf die Daten zugreifen.
 
