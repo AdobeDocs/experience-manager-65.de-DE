@@ -1,5 +1,5 @@
 ---
-title: Gruppen konfigurieren und erstellen
+title: Erstellen und Konfigurieren von Gruppen
 seo-title: Creating and configuring groups
 description: Erfahren Sie, wie Sie Gruppen manuell oder dynamisch erstellen, eine Gruppe bearbeiten, Details zu einer Gruppe anzeigen oder eine Gruppe löschen.
 seo-description: Learn how to create groups manually or dynamically, edit a group, view details about a group, or delete a group.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2058b501-65ce-4ad3-8e1b-b2eab896f70f
 exl-id: 72edd8d1-8573-4942-8ced-1a100af58d78
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1569'
 ht-degree: 100%
 
 ---
 
-# Gruppen konfigurieren und erstellen{#creating-and-configuring-groups}
+# Erstellen und Konfigurieren von Gruppen{#creating-and-configuring-groups}
 
 Wenn Sie Benutzergruppen erstellen, können Sie Rollen einer Gruppe anstatt einzelnen Benutzern zuzuweisen.
 
@@ -40,16 +40,16 @@ Wenn Sie Content Services (nicht mehr unterstützt) verwenden, können Sie auf d
 
 1. Um Benutzer und Gruppen zu dieser neuen Gruppe hinzuzufügen, klicken Sie auf „Benutzer/Gruppen suchen“ und führen folgende Schritte durch:
 
-   * Geben Sie die gewünschten Suchkriterien in das Feld Suchen ein.
+   * Geben Sie die gewünschten Suchkriterien in das Feld „Suchen“ ein.
    * Wählen Sie in der Liste „in“ entweder „Benutzer“, „Gruppen“ oder „Benutzer und Gruppen“ aus.
-   * Wählen Sie in der Liste Verwendet den Suchparameter Name, E-Mail oder Benutzer-ID aus.
+   * Wählen Sie in der Liste „Verwenden von“ Namen, E-Mail oder Benutzer-ID aus.
    * Wählen Sie die Domain und die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf „Suchen“.
    * Aktivieren Sie im Suchergebnis die Kontrollkästchen der Benutzer und Gruppen, die Sie dieser neuen Gruppe hinzufügen möchten, und klicken Sie auf „OK“.
 
 1. Klicken Sie auf Weiter.
 1. Um diese neue Gruppe zu anderen, bestehenden Gruppen hinzuzufügen, klicken Sie auf „Gruppen suchen“ und führen folgende Schritte durch:
 
-   * Geben Sie die gewünschten Suchkriterien in das Feld Suchen ein.
+   * Geben Sie die gewünschten Suchkriterien in das Feld „Suchen“ ein.
    * Wählen Sie die Domain und die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf „Suchen“.
    * Aktivieren Sie im Suchergebnis die Kontrollkästchen der Gruppen, zu denen die neue Gruppe gehören soll, und klicken Sie auf „OK“.
 
@@ -70,7 +70,7 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
 
 ### Dynamische Gruppen auf Basis von E-Mail-Domains automatisch erstellen {#automatically-create-dynamic-groups-based-on-email-domains}
 
-1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Konfiguration“ > „Erweiterte Systemattribute konfigurieren“.
 1. Aktivieren Sie unter „Automatische Erstellung einer dynamischen Gruppe“ das Kontrollkästchen.
 1. Geben Sie an, wann User Manager auf neue E-Mail-Domains prüfen soll. Diese Zeit sollte nach der Domain-Synchronisierungszeit liegen, da die Erstellung dynamischer Gruppen nur sinnvoll ist, wenn die Domain-Synchronisierung abgeschlossen ist.
 
@@ -104,7 +104,7 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
 1. Wenn bei dem Test die erwarteten Ergebnisse ausgegeben werden, klicken Sie auf „Weiter“. Bearbeiten Sie andernfalls die Kriterien der dynamischen Gruppe und führen Sie den Test erneut durch.
 1. Um die dynamische Gruppe zu einer übergeordneten Gruppe hinzuzufügen, klicken Sie auf „Gruppen suchen“ und führen folgende Schritte durch:
 
-   * Geben Sie die gewünschten Suchkriterien in das Feld Suchen ein.
+   * Geben Sie die gewünschten Suchkriterien in das Feld „Suchen“ ein.
    * Wählen Sie die Domain und die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf „Suchen“.
    * Aktivieren Sie im Suchergebnis die Kontrollkästchen der Gruppen, zu denen die dynamische Gruppe gehören soll, und klicken Sie auf „OK“.
 
@@ -114,7 +114,7 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
 
 ## Details zu einer Gruppe anzeigen {#view-details-about-a-group}
 
-1. Klicken Sie in Administration Console auf Einstellungen > Benutzerverwaltung > Benutzer und Gruppen.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Benutzerverwaltung“ > „Benutzer und Gruppen“.
 1. Wählen Sie in der Liste „In“ die Option „Gruppe“ aus und klicken Sie dann auf „Suchen“. Die Suchergebnisse werden im unteren Seitenbereich angezeigt. Sie können die Liste durch Klicken auf die Spaltenüberschriften sortieren.
 1. Klicken Sie auf den Namen der Gruppe, zu der Details angezeigt werden sollen. Die Seite „Gruppendetails“ wird angezeigt.
 1. Um direkte Mitglieder der Gruppe anzuzeigen, klicken Sie auf „Untergeordnete Prinzipale“.
@@ -124,7 +124,7 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
 1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Benutzer und Gruppen“.
 1. Führen Sie zum Suchen der zu bearbeitenden Gruppe die folgenden Schritte aus:
 
-   * Geben Sie die gewünschten Suchkriterien in das Feld Suchen ein.
+   * Geben Sie die gewünschten Suchkriterien in das Feld „Suchen“ ein.
    * Wählen Sie in der Liste „Verwendet“ den Suchparameter „Name“ oder „E-Mail“ aus.
    * Wählen Sie in der Liste „In“ den Eintrag „Gruppen“ aus.
    * Wählen Sie die Domain und die Anzahl der anzuzeigenden Elemente aus und klicken Sie auf „Suchen“.
@@ -146,7 +146,7 @@ Eine dynamische Gruppe enthält nur Benutzer. Sie kann keine anderen Gruppen ent
 1. Um die Rollenzuweisungen zu bearbeiten, klicken Sie auf die Registerkarte „Rollenzuweisungen“.
 
    * Um Rollen zu suchen, die der Gruppe zugewiesen werden sollen, klicken Sie auf „Rollen suchen“.
-   * Um eine Rolle hinzuzufügen, aktivieren Sie das Kontrollkästchen für die Rolle und klicken auf OK und anschließend auf Speichern.
+   * Um eine Rolle hinzuzufügen, aktivieren Sie das Kontrollkästchen für die Rolle und klicken auf „OK“ und anschließend auf „Speichern“.
    * Um die Zuweisung einer Rolle aufzuheben, aktivieren Sie das Kontrollkästchen für die Rolle und klicken auf „Zuweisung aufheben“ und anschließend auf „Speichern“.
 
 ## Eine Gruppe löschen {#delete-a-group}
