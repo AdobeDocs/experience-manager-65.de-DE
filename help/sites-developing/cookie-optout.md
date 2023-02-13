@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '554'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -34,13 +34,13 @@ Zum Konfigurieren des Dienstes können Sie die [Web-Konsole](/help/sites-deployi
 
 | Eigenschaftsname (Web-Konsole) | OSGi-Eigenschaftsname | Beschreibung |
 |---|---|---|
-| Opt-out-Cookies | optout.cookies | Die Namen von Cookies, die angeben, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat, sofern sie auf dem Gerät des Benutzers vorhanden sind. |
-| HTTP-Header für Opt-out | optout.headers | Die Namen von HTTP-Headern, die angeben, wenn vorhanden, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
-| Cookies auf der White-List | optout.whitelist.cookies | Eine Liste von Cookies, die für die Funktionsweise der Website unerlässlich sind und ohne Zustimmung des Benutzers verwendet werden können. |
+| Opt-out-Cookies | optout.cookies | Die Namen von Cookies, die, wenn sie auf dem Gerät des Benutzers vorhanden sind, anzeigen, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
+| HTTP-Header für Opt-out | optout.headers | Die Namen der HTTP-Header, die, wenn vorhanden, anzeigen, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
+| Cookies auf der Zulassungsliste | optout.whitelist.cookies | Eine Liste von Cookies, die für die Funktionalität der Website unerlässlich sind und ohne Zustimmung des Benutzers verwendet werden können. |
 
 ## Überprüfen der Verwendung von Cookies {#validating-cookie-usage}
 
-Verwenden Sie clientseitiges JavaScript, um den Adobe Granite Opt-Out Service aufzurufen und zu überprüfen, ob Sie Cookies verwenden können. Verwenden Sie das Granite.OptOutUtil-JavaScript-Objekt, um die folgenden Aufgaben auszuführen:
+Verwenden Sie Client-seitiges JavaScript, um den Adobe Granite Opt-Out Service aufzurufen und zu überprüfen, ob Sie Cookies verwenden können. Verwenden Sie das Granite.OptOutUtil-JavaScript-Objekt, um die folgenden Aufgaben auszuführen:
 
 * Abrufen einer Liste von Cookie-Namen, die darauf hinweisen, dass der Benutzer nicht damit einverstanden ist, Cookies zur Nachverfolgung zu verwenden
 * Abrufen einer Liste von Cookies, die verwendet werden können
@@ -114,4 +114,4 @@ Bestimmt, ob ein bestimmtes Cookie im Browser des Benutzers verwendet werden kan
 
 **Rückgabe**
 
-Ein boolescher Wert von `true` if `cookieName` kann verwendet werden oder ein Wert von `false` if `cookieName` kann nicht verwendet werden.
+Einen booleschen Wert, der `true` lautet, wenn `cookieName` verwendet werden kann, oder `false` lautet, wenn `cookieName` nicht verwendet werden kann.
