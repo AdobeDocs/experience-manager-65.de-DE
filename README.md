@@ -1,8 +1,8 @@
 ---
 source-git-commit: 41011e538104405c954761d9adc270e774e8a9a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '84'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 # Dokumentation zu Adobe Experience Manager 6.5
