@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Deploying User Guide
 description: Erfahren Sie mehr über die Installation und Bereitstellung von Adobe Experience Manager 6.5 und über die zugehörige Architektur sowie die Cloud-Implementierung mit Adobe Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '380'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -44,9 +44,9 @@ Dieses Handbuch behandelt alle Aufgaben rund um die Bereitstellung von AEM, z. 
 
 * [AEM-Tutorials](https://helpx.adobe.com/de/experience-manager/kt/index/aem-6-4-videos.html)
 * [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)
-* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de)
 * [Benutzerhandbuch zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=de#home)
 * [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)
