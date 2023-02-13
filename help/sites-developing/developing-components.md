@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3477'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -81,7 +81,7 @@ Ihre Komponente wird mit [HTML gerendert](https://www.w3schools.com/htmL/html_in
 
 ### Verwenden der HTML-Vorlagensprache {#using-the-html-template-language}
 
-Die [HTML Vorlagensprache (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), die mit AEM 6.0 eingeführt wurde, löst JSP (JavaServer Pages) als bevorzugtes und empfohlenes serverseitiges Vorlagensystem für HTML ab. Webentwicklern, die robuste Unternehmenswebsites erstellen müssen, hilft HTL, eine höhere Sicherheit und Entwicklungseffizienz zu erreichen.
+Die [HTML Vorlagensprache (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de), die mit AEM 6.0 eingeführt wurde, löst JSP (JavaServer Pages) als bevorzugtes und empfohlenes serverseitiges Vorlagensystem für HTML ab. Webentwicklern, die robuste Unternehmenswebsites erstellen müssen, hilft HTL, eine höhere Sicherheit und Entwicklungseffizienz zu erreichen.
 
 >[!NOTE]
 >
@@ -141,7 +141,7 @@ Ausführliche Informationen finden Sie hier:
 
    * Bietet eine konsistente Benutzeroberfläche für alle Cloud-Lösungen
    * [Konzepte der Touch-optimierten Benutzeroberfläche von AEM - Coral-Benutzeroberfläche](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Coral-Benutzeroberfläche - Handbuch](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
+   * [Coral-Benutzeroberfläche - Handbuch](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Granite-Benutzeroberfläche
 
@@ -237,7 +237,7 @@ Ein Beispiel finden Sie unter:
 
 * `cqgems/customizingfield/components/colorpicker/clientlibs`
 
-   * im Abschnitt [Codebeispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * gegeben durch das [Code-Beispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Erweiterung eines Felds (Vererbung) {#extending-inheriting-from-a-field}
 
@@ -269,13 +269,13 @@ Um Logik in Ihr Feld zu injizieren, sollten Sie Folgendes beachten:
 1. Lassen Sie Ihr Feld mit einer bestimmten CSS-Klasse (dem *Hook*) markieren.
 1. Definieren Sie in Ihrer Client-Bibliothek einen JS-Listener, der mit diesem CSS-Klassennamen verknüpft ist (dadurch wird sichergestellt, dass Ihre benutzerdefinierte Logik nur für Ihr Feld gilt und andere Felder desselben Typs nicht betroffen sind).
 
-Um dies zu erreichen, müssen Sie die zugrunde liegende Widget-Bibliothek kennen, mit der Sie interagieren möchten. Informationen darüber, auf welches Ereignis Sie reagieren möchten, finden Sie in der [Dokumentation zur Coral-Benutzeroberfläche](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html). Dies ist dem Prozess sehr ähnlich, den Sie in der Vergangenheit mit ExtJS durchführen mussten: Suchen Sie die Dokumentationsseite eines bestimmten Widgets und überprüfen Sie dann die Details seiner Event-API.
+Um dies zu erreichen, müssen Sie die zugrunde liegende Widget-Bibliothek kennen, mit der Sie interagieren möchten. Informationen darüber, auf welches Ereignis Sie reagieren möchten, finden Sie in der [Dokumentation zur Coral-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/index.html). Dies ist dem Prozess sehr ähnlich, den Sie in der Vergangenheit mit ExtJS durchführen mussten: Suchen Sie die Dokumentationsseite eines bestimmten Widgets und überprüfen Sie dann die Details seiner Event-API.
 
 Ein Beispiel finden Sie unter:
 
 * `cqgems/customizingfield/components/clientlibs/customizingfield`
 
-   * im Abschnitt [Codebeispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
+   * gegeben durch das [Code-Beispiel](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)
 
 #### Listener in der Inhaltsstruktur {#listeners-in-the-content-structure}
 
@@ -442,7 +442,7 @@ Die [AEM Brackets-Erweiterung](/help/sites-developing/aem-brackets.md) bietet ei
 Die Erweiterung:
 
 * Erleichtert die Synchronisierung (kein Maven oder File Vault erforderlich), um die Effizienz der Entwickler zu erhöhen, und hilft Frontend-Entwicklern mit begrenztem AEM-Wissen, an Projekten teilzunehmen.
-* Bietet [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)-Unterstützung, die Vorlagensprache, die entwickelt wurde, um die Komponentenentwicklung zu vereinfachen und die Sicherheit zu erhöhen.
+* Bietet [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de)-Unterstützung, die Vorlagensprache, die entwickelt wurde, um die Komponentenentwicklung zu vereinfachen und die Sicherheit zu erhöhen.
 
 >[!NOTE]
 >
@@ -454,7 +454,7 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
 
 * HTL
 
-   * Die Verwendung von [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) ist nicht obligatorisch, aber wenn Ihre Komponente aktualisiert werden muss, ist es ein idealer Zeitpunkt, eine [Migration von JSP zu HTL](/help/sites-developing/components-basics.md#htl-vs-jsp) in Betracht zu ziehen.
+   * Die Verwendung von [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) ist nicht obligatorisch, aber wenn Ihre Komponente aktualisiert werden muss, ist es ein idealer Zeitpunkt, eine [Migration von JSP zu HTL](/help/sites-developing/components-basics.md#htl-vs-jsp) in Betracht zu ziehen.
 
 * Komponenten
 
@@ -467,9 +467,9 @@ Wenn Sie eine Komponente, die für die Verwendung mit der klassischen Benutzerob
    * Sie müssen ein neues Dialogfeld zur Verwendung in der Touch-optimierten Benutzeroberfläche erstellen. Aus Kompatibilitätsgründen kann die Touch-optimierte Benutzeroberfläche jedoch die Definition eines Dialogfelds der klassischen Benutzeroberfläche verwenden, wenn für die Touch-optimierte Benutzeroberfläche kein Dialogfeld definiert wurde.
    * Die [AEM-Modernisierungs-Tools](/help/sites-developing/modernization-tools.md) werden bereitgestellt, um Unterstützung bei der Erweiterung vorhandener Komponenten zu bieten.
    * Das [Zuordnen von ExtJS zu Granite-UI-Komponenten](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) bietet einen praktischen Überblick über ExtJS-Xtypes und Knotentypen mit ihren entsprechenden Ressourcentypen in der Granite-Benutzeroberfläche.
-   * Weitere Informationen finden Sie in der AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+   * Weitere Informationen finden Sie in der AEM Gems-Sitzung zum [Anpassen von Dialogfeldern](https://docs.adobe.com/content/ddc/de/gems/customizing-dialog-fields-in-touch-ui.html).
    * Migrieren von vtypes zur [Überprüfung in der Granite-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Weitere Informationen zum Verwenden von JS-Listenern finden Sie unter [Umgang mit Feldereignissen](#handling-field-events) und in der AEM Gems-Sitzung zum [Anpassung von Dialogfeldern](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+   * Weitere Informationen zum Verwenden von JS-Listenern finden Sie unter [Umgang mit Feldereignissen](#handling-field-events) und in der AEM Gems-Sitzung zum [Anpassung von Dialogfeldern](https://docs.adobe.com/content/ddc/de/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ### Migrieren von cq:listener-Code {#migrating-cq-listener-code}
 
