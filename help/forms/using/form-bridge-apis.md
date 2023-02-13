@@ -10,7 +10,7 @@ topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '940'
 ht-degree: 100%
 
@@ -45,7 +45,7 @@ window.addEventListener("FormBridgeInitialized",
 
 Gibt die Versionsnummer der Skriptbibliothek zurück.
 
-* **Eingabe:** keine
+* **Eingabe**: keine
 * **Ausgabe**: Versionsnummer der Skriptbibliothek
 * **Fehler:** keine
 
@@ -73,7 +73,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
    * **options:** JavaScript-Objekt, das die folgenden Eigenschaften enthält:
 
       * **Error:** Fehlerhandler-Funktion
-      * **success:** Erfolgshandler-Funktion. Diese Funktion wird an ein Objekt übergeben, das XML in der *data*-Eigenschaft enthält.
+      * **success**: Erfolgshandler-Funktion. Diese Funktion wird an ein Objekt übergeben, das XML in der *data*-Eigenschaft enthält.
       * **context:** Das Objekt, auf das der Kontext (dies) der *success*-Funktion festgelegt wird.
       * **validationChecker**: Funktion, um die Validierungsfehler zu prüfen, die vom Server erhalten wurden. Der Überprüfungsfunktion wird ein Array von Fehlerstrings übergeben.
       * **formState**: Der JSON-Status des XFA-Formulars, für das XML-Daten zurückgegeben werden sollen. Wenn nicht anders angegeben, wird Daten-XML für das aktuell gerenderte Formular zurückgegeben.
@@ -147,7 +147,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
 
 **hideSubmitButtons()**: Blendet alle Senden-Schaltflächen im Formular aus
 
-* **Eingabe:** keine
+* **Eingabe**: keine
 * **Ausgabe:** keine
 * **Fehler:** Gibt einen Ausnahmefehler aus, wenn Formularstatus nicht initialisiert wurde.
 
