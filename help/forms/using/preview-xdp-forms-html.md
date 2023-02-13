@@ -1,5 +1,5 @@
 ---
-title: HTML5-Vorschau eines XDP-Formulars generieren
+title: Generieren einer HTML5-Vorschau eines XDP-Formulars
 seo-title: Generate HTML5 preview of an XDP form
 description: Auf der Registerkarte für die Vorschau im HTML-Format in LiveCycle Designer können Sie das Formular so darstellen, wie es in einem Browser angezeigt würde.
 seo-description: Preview HTML tab in LiveCycle Designer can be used to preview forms as they appear in a browser.
@@ -11,13 +11,13 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '834'
 ht-degree: 100%
 
 ---
 
-# HTML5-Vorschau eines XDP-Formulars generieren{#generate-html-preview-of-an-xdp-form}
+# Generieren einer HTML5-Vorschau eines XDP-Formulars{#generate-html-preview-of-an-xdp-form}
 
 Beim Erstellen eines Formulars in AEM Forms Designer können Sie nicht nur die PDF-Wiedergabe eines Formulars, sondern auch eine HTML5-Wiedergabe davon in der Vorschau anzeigen. Sie können die Registerkarte **HTML-Vorschau** verwenden, um ein Formular anzuzeigen, wie es im Browser angezeigt werden wird.
 
@@ -25,7 +25,7 @@ Beim Erstellen eines Formulars in AEM Forms Designer können Sie nicht nur die P
 
 Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivieren, müssen Sie folgende Konfigurationen durchführen:
 
-* Apache Sling Authentifizierungsdienst konfigurieren 
+* Konfigurieren des Apache Sling-Authentifizierungsdienstes 
 * Abgesicherten Modus deaktivieren
 * Details zum AEM Forms-Server bereitstellen
 
@@ -53,7 +53,7 @@ Um Designer für die Erstellung einer HTML-Vorschau für XDP-Formulare zu aktivi
 1. Geben Sie einen Benutzernamen und ein Kennwort für **[!UICONTROL Anonymer Benutzername]** und **[!UICONTROL Anonymes Benutzerkennwort]** ein. Die angegebenen Anmeldeinformationen werden verwendet, um anonyme Authentifizierung zu nutzen und Zugriff auf anonyme Benutzer zuzulassen.
 1. Klicken Sie auf **Speichern**, um die Konfiguration zu speichern.
 
-### Abgesicherten Modus deaktivieren {#disable-protected-mode}
+### Deaktivieren des abgesicherten Modus {#disable-protected-mode}
 
 Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist standardmäßig aktiviert. Behalten Sie dies in Produktionsumgebungen bei. Sie können ihn in Entwicklungsumgebungen deaktivieren, um eine HTML5-Vorschau in Designer anzuzeigen. Gehen Sie wie folgt vor, um ihn zu deaktivieren:
 
@@ -65,7 +65,7 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
 1. Öffnen Sie **[!UICONTROL Mobile Forms-Konfigurationen]** für die Bearbeitung.
 1. Wählen Sie die Option **[!UICONTROL Abgesicherter Modus]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
-### Details zum AEM Forms-Server bereitstellen {#provide-details-of-aem-forms-server}
+### Angeben von Details zum AEM Forms-Server {#provide-details-of-aem-forms-server}
 
 1. Navigieren Sie in Designer zu **Werkzeuge** > **Optionen**.
 1. Wählen Sie im Fenster „Optionen“ die Seite **Serveroptionen**, stellen Sie die folgenden Details bereit und klicken Sie auf **OK**.
@@ -80,7 +80,7 @@ Der[ abgesicherte Modus](../../forms/using/get-xdp-pdf-documents-aem.md) ist sta
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms on JEE)
    * **Forms Manager Context:** Kontextpfad, an dem die Forms Manager-Benutzeroberfläche bereitgestellt wird. Die Standardwerte lauten:
 
-      * `/aem/forms` (AEM Forms unter OSGi)
+      * `/aem/forms` (AEM Forms on OSGi)
       * `/lc/forms` (AEM Forms on JEE)
 
    >[!NOTE]
