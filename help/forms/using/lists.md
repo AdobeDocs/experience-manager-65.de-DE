@@ -11,9 +11,9 @@ docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6906'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,7 @@ Dokumentfragmente sind wiederverwendbare Teile/Komponenten einer Korrespondenz, 
 * **Text**: Ein Textelement ist eine Inhaltskomponente, die aus einem oder mehreren Textabsätzen besteht. Ein Absatz kann statisch oder dynamisch sein.
 * **Liste**: Eine Liste ist eine Gruppe von Dokumentfragmenten, einschließlich Text, Listen, Bedingungen und Bildern. Die Reihenfolge der Listenelemente kann festgelegt sein oder bearbeitet werden. Beim Erstellen eines Briefs können Sie einige oder alle Listenelemente verwenden, um ein wiederverwendbares Muster von Elementen zu replizieren.
 * **Bedingung**: Mithilfe von Bedingungen können Sie festlegen, welche Inhalte zum Zeitpunkt der Dokumenterstellung je nach den bereitgestellten Daten in das Schriftstück einbezogen werden sollen. Die Beschreibung der Bedingung beruht auf Steuerungsvariablen. Die Steuerungsvariable kann entweder ein Datenwörterbuchelement oder ein Platzhalter sein.
-* **Layout-Fragment**: Unter einem Layout-Fragment versteht man ein Layout, das mit einem oder mehreren Briefen verwendet werden kann. Mit einem Layout-Fragment werden wiederholbare Muster, insbesondere dynamische Tabellen erstellt. Das Layout kann typische Formularfelder wie &quot;Adresse&quot;und &quot;Referenz&quot;enthalten. Es enthält auch leere Unterformulare, die Zielbereiche kennzeichnen. Die Layouts (XDPs) werden in Designer erstellt und dann in AEM Forms hochgeladen.
+* **Layout-Fragment**: Unter einem Layout-Fragment versteht man ein Layout, das mit einem oder mehreren Briefen verwendet werden kann. Mit einem Layout-Fragment werden wiederholbare Muster, insbesondere dynamische Tabellen erstellt. Das Layout kann typische Formularfelder wie „Adresse“ und „Referenznummer“ enthalten. Es enthält auch leere Unterformulare, die Zielbereiche kennzeichnen. Die Layouts (XDPs) werden in Designer erstellt und dann in AEM Forms hochgeladen.
 
 ## Text {#text}
 
@@ -102,7 +102,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
    * Währungssymbole wie €,￥ und £
    * Mathematische Symbole wie ∑, √, ∂ und ^
-   * Satzzeichen wie ‟ und &quot;
+   * Satzzeichen wie „ und “
 
    ![specialcharacters-1](assets/specialcharacters-1.png)
 
@@ -120,7 +120,7 @@ Die Correspondence Management Solution unterstützt zwei Arten dynamischer Daten
 
 1. Ziehen Sie im Datenbereich Datenwörterbuchelemente und Platzhalterelemente in den Text.
 
-   To:
+   An:
 
    * Um ein Datenwörterbuchelement im Text einzufügen, wählen Sie ein Datenelement in der Liste aus und klicken Sie auf „Einfügen“ (![insert](assets/insert.png)). Wenn Sie Geschützt auswählen, ist das Datenlexikonelement schreibgeschützt und wird im Briefeditor, aber nicht in der Benutzeroberfläche „Korrespondenz erstellen“ oder in der Korrespondenzerstellung angezeigt.
    * Um ein Platzhalterelement im Text einzufügen, klicken Sie im Bereich „Datenelemente“ auf „Neu erstellen“. geben Sie die Details des neuen Datenelements ein und klicken Sie auf „Erstellen“, um das neue Element der Liste hinzuzufügen. Der neue Platzhalter kann in den Text auf dieselbe Weise wie ein Datenlexikonelement eingefügt werden. Um einen Platzhalter zu bearbeiten, wählen Sie einen Platzhalter aus und tippen Sie auf „Bearbeiten“.
@@ -160,7 +160,7 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebige
 
 1. Öffnen Sie das Textmodul im Texteditor.
 
-1. Tippen Sie auf Suchen und Ersetzen.
+1. Tippen Sie auf „Suchen und Ersetzen“.
 1. Geben Sie den zu suchenden Text in das Textfeld „Suchen“ ein und klicken Sie auf „Suchen“. Der gesuchte Text wird im Textmodul hervorgehoben.
 1. Um nach der nächsten Instanz des Texts zu suchen, klicken Sie erneut auf „Suchen“.
 
@@ -187,7 +187,7 @@ Mithilfe der Funktion „Suchen und Ersetzen“ können Sie nach jeder beliebige
 #### Suchen und Ersetzen von Text in einem Textmodul {#to-search-and-replace-text-in-a-text-module}
 
 1. Öffnen Sie das Textmodul im Texteditor.
-1. Tippen Sie auf Suchen und Ersetzen.
+1. Tippen Sie auf „Suchen und Ersetzen“.
 1. Geben Sie den zu suchenden Text in das Textfeld „Suchen“ ein und geben Sie den Text ein, der den gefundenen Text ersetzen soll. Klicken Sie auf „Ersetzen“.
 1. Wenn der zu suchende Text gefunden wird, wird der Text durch den Ersetzungstext ersetzt.
 
@@ -298,7 +298,9 @@ Basierend auf den von Ihnen gewählten Optionen wird entweder nur der erste Ausd
 
 Der Bedingungseditor verfügt über eine [Expression Builder](/help/forms/using/expression-builder.md)-Benutzeroberfläche, die das Erstellen von Ausdrücken mithilfe mehrerer Platzhalter und Datenwörterbuchelemente unterstützt. Sie können allgemeine Operanden und die lokalen oder globalen Funktionen in diesen Ausdrücken verwenden. Jedem Ausdruck kann ein Inhalt zugeordnet werden, und optional kann es einen Standardabschnitt geben, wenn keiner der Ausdrücke „true“ ergibt. Alle Ausdrücke werden in der Reihenfolge ausgewertet, in der sie definiert werden, und der erste Ausdruck, der „true“ zurückgibt, wird ausgewählt, und sein zugeordneter Inhalt wird von diesem Bedingungsmodul zurückgegeben.
 
-Wenn beispielsweise der Text für die Geschäftsbedingungen in einem Brief je nach Status des Kunden unterschiedlich ist und das Datenwörterbuch ein Element namens &quot;state&quot;enthält, können Sie die Bedingung wie folgt hinzufügen: ・ state = NY, select T&amp;C_NY text paragraph ・ state = NC, select T&amp;C_NC text paragraph
+Wenn sich beispielsweise der Text der Geschäftsbedingungen in einem Brief je nach Bundesland des Kunden unterscheidet und das Datenwörterbuch ein Element namens „state“ enthält, könnten Sie die Bedingung wie folgt hinzufügen:
+• state = NY, select T&amp;C_NY text paragraph
+• state = NC, select T&amp;C_NC text paragraph
 
 Im Bedingungseditor haben Sie die Möglichkeit, eine Standardbedingung anzugeben. Wenn der Wert der Steuerungsvariablen mit keiner der Bedingungen übereinstimmt, wird der mit der Standardbedingung verknüpfte Inhalt verwendet. Im Rahmen des oben genannten Beispiel ließe sich folgende Bedingungszeile hinzufügen:
 
@@ -321,7 +323,7 @@ Im Bedingungseditor haben Sie die Möglichkeit, eine Standardbedingung anzugeben
 1. Um ein Asset zur Bedingung hinzuzufügen, wählen Sie es auf der Seite „Assets auswählen“ aus und tippen Sie auf **Fertig**. Die Assets werden dem Bereich „Ausdruck“ hinzugefügt.
 1. Sie können mithilfe der folgenden Optionen festlegen, wie sich die Bedingung zur Laufzeit verhält:
 
-   * **Auswertung mehrerer Ergebnisse deaktivieren\Auswertung mehrerer Ergebnisse aktivieren**: Wenn diese Option aktiviert ist (angezeigt als &quot;Mehrere aktivieren..&quot;), werden alle Bedingungen ausgewertet und das Ergebnis ist die Summe aller tatsächlichen Bedingungen. Wenn diese Option deaktiviert ist (angezeigt als „Auswertung...deaktivieren“), wird nur die erste Bedingung, die „true“ ergibt, ausgewertet und wird zur Ausgabe der Bedingung.
+   * **Auswertung mehrerer Ergebnisse deaktivieren/Auswertung mehrerer Ergebnisse aktivieren**: Wenn diese Option aktiviert ist (angezeigt als „Auswertung...aktivieren”), werden alle Bedingungen ausgewertet, und das Ergebnis ist die Summe aller wahren Bedingungen. Wenn diese Option deaktiviert ist (angezeigt als „Auswertung...deaktivieren“), wird nur die erste Bedingung, die „true“ ergibt, ausgewertet und wird zur Ausgabe der Bedingung.
    * **Seitenumbruch**: Wählen Sie diese Option (![break](assets/break.png)), um zwischen den Modulen der Bedingungen einen Seitenumbruch hinzuzufügen. Wenn diese Option nicht ausgewählt ist (![nobreak](assets/nobreak.png)) und die Bedingung über die aktuelle Seite hinausreichen würde, wird die ganze Bedingung auf die nächste Seite verschoben, anstatt innerhalb der Bedingung einen Seitenumbruch einzufügen.
 
 1. Um die Reihenfolge der Assets innerhalb der Bedingung zu ändern, tippen Sie auf das Pfeilsymbol eines Assets (![dragndrop](assets/dragndrop.png)), halten Sie es gedrückt und verwenden Sie die Drag-and-Drop-Funktion. Wenn der Benutzer auf der Benutzeroberfläche „Korrespondenz erstellen“ eine Briefvorlage öffnet, wird der Inhalt in der hier festgelegten Reihenfolge zusammengestellt.
@@ -452,7 +454,7 @@ Wenn ein auf der Benutzeroberfläche „Korrespondenz erstellen“ erstellter Br
 
 #### Datumsformate in Designer und Asset Configuration Manager {#date-formats-in-designer-and-asset-configuration-manager}
 
-Stellen Sie beim Entwerfen eines Layouts in Designer sicher, dass die Formate für Datumsfelder mit den Datumsanzeigeformaten in den [Correspondence Management-Konfigurationseigenschaften](/help/forms/using/cm-configuration-properties.md) übereinstimmen. Weitere Informationen finden Sie unter &quot;Feldwerte formatieren und Muster verwenden&quot;in der Designer-Hilfe.
+Stellen Sie beim Entwerfen eines Layouts in Designer sicher, dass die Formate für Datumsfelder mit den Datumsanzeigeformaten in den [Correspondence Management-Konfigurationseigenschaften](/help/forms/using/cm-configuration-properties.md) übereinstimmen. Weitere Informationen finden Sie unter „Formatieren von Feldwerten und Verwenden von Mustern“ in der Designer-Hilfe.
 
 #### Datumsbereiche erfassen {#capturing-date-ranges}
 
