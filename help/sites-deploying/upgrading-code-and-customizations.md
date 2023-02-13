@@ -14,7 +14,7 @@ targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2192'
 ht-degree: 100%
 
