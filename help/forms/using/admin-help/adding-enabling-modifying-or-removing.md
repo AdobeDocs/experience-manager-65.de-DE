@@ -1,5 +1,5 @@
 ---
-title: Endpunkte hinzufügen aktivieren, ändern oder entfernen
+title: Hinzufügen, Aktivieren, Ändern oder Entfernen von Endpunkten
 seo-title: Adding, enabling, modifying, or removing endpoints
 description: Erfahren Sie, wie Sie Endpunkte hinzufügen, aktivieren, ändern und entfernen.
 seo-description: Learn how to add, enable, modify and remove endpoints.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '371'
 ht-degree: 100%
 
 ---
 
-# Endpunkte hinzufügen aktivieren, ändern oder entfernen {#adding-enabling-modifying-or-removing-endpoints}
+# Hinzufügen, Aktivieren, Ändern oder Entfernen von Endpunkten {#adding-enabling-modifying-or-removing-endpoints}
 
 ## Einen Endpunkt zu einem Dienst hinzufügen {#add-an-endpoint-to-a-service}
 
@@ -27,7 +27,7 @@ Endpunkte können nur Diensten hinzugefügt werden. Ein Endpunkt kann nicht selb
 >
 >Beim Hinzufügen von Endpunkten sollten Sie mit eindeutigen Namen arbeiten.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Anwendungen und Dienste“ > „Dienstverwaltung“.
 1. Klicken Sie auf der Seite „Dienstverwaltung“ auf den zu konfigurierenden Dienst.
 1. Wählen Sie auf der Registerkarte „Endpunkte“ in der Liste den hinzuzufügenden Endpunkttyp und klicken Sie auf „Hinzufügen“.
 1. Je nach Endpunkttyp müssen weitere Endpunkteinstellungen konfiguriert werden.
