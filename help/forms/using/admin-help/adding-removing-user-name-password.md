@@ -1,5 +1,5 @@
 ---
-title: Benutzernamen- und Kennwortberechtigungen hinzufügen und entfernen
+title: Hinzufügen und Entfernen von Anmeldeinformationen mit Benutzernamen und Kennwort
 seo-title: Adding and removing user name and password credentials
 description: Erfahren Sie, wie Sie Benutzernamen- und Kennwortberechtigungen hinzufügen und entfernen.
 seo-description: Learn how to add and remove user name and password credentials.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1fd28077-37a4-4cba-bbce-6d5b353f1e7d
 exl-id: 1e2b82d6-ca1f-4421-9a51-ec97fdc315d3
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '150'
 ht-degree: 100%
 
 ---
 
-# Benutzernamen- und Kennwortberechtigungen hinzufügen und entfernen {#adding-and-removing-user-name-and-password-credentials}
+# Hinzufügen und Entfernen von Anmeldeinformationen mit Benutzernamen und Kennwort {#adding-and-removing-user-name-and-password-credentials}
 
 Auf der Seite „Trust Store-Verwaltung“ können Sie Benutzer- und Kennwortberechtigungen hinzufügen bzw. entfernen, die der Forms-Dienst verwendet, wenn er eine Anforderung mit SOAP-Sicherheitsstufe empfängt.
 
