@@ -13,15 +13,15 @@ docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
 source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '308'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Prüfen von Benutzerverwaltungsvorgängen in AEM{#how-to-audit-user-management-operations-in-aem}
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
 AEM hat die Möglichkeit eingeführt, Berechtigungsänderungen zu protokollieren, damit sie zu einem späteren Zeitpunkt überprüft werden können.
 
@@ -37,7 +37,7 @@ Standardmäßig werden die Einträge in die Datei `error.log` geschrieben. Um di
 
 Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müssen Sie eine neue **Apache Sling Logging Logger**-Konfiguration erstellen. Im folgenden Beispiel verwenden wir `useraudit.log` als Namen dieser separaten Datei.
 
-1. Navigieren Sie zur Web-Konsole , indem Sie zu *https://serveraddress:serverport/system/console/configMgr*
+1. Navigieren Sie zur Web-Konsole unter *https://Server-Adresse:Serverport/system/console/configMgr*.
 1. Suchen Sie nach **Apache Sling Logging Logger Configuration**. Klicken Sie dann auf das Pluszeichen (+) auf der rechten Seite des Eintrags, um eine neue Werkskonfiguration zu erstellen.
 1. Erstellen Sie die folgende Konfiguration:
 
@@ -46,7 +46,7 @@ Um die Protokollierungsausgabe in eine separate Protokolldatei umzuleiten, müss
    * **Nachrichtenmuster:** Standardwert beibehalten
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Um beide Logger in das Feld **Logger** einzugeben, müssen Sie den Namen des ersten Loggers eingeben und dann ein weiteres Feld erstellen. Klicken Sie dazu die Schaltfläche „+“. Nun können Sie den Namen des zweiten Loggers eingeben.
+   Um beide Logger in das Feld **Logger** einzugeben, müssen Sie den Namen des ersten Loggers eingeben und dann ein weiteres Feld erstellen. Klicken Sie dazu auf die Schaltfläche „+“. Nun können Sie den Namen des zweiten Loggers eingeben.
 
 ## Beispielausgabe {#example-output}
 
