@@ -1,5 +1,5 @@
 ---
-title: '"Schulung: Formulardatenmodell erstellen"'
+title: "Schulung: Formulardatenmodell erstellen"
 seo-title: Create form data model for Interactive Communication
 description: Erstellen Sie ein Formulardatenmodell für interaktive Kommunikation
 seo-description: Create form data model for Interactive Communication
@@ -11,9 +11,9 @@ docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2733'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -29,7 +29,7 @@ Mit dem AEM Forms-Datenintegrationsmodul können Sie ein Formulardatenmodell aus
 
 Weitere Informationen zum Formulardatenmodell und zur Formulardatenintegration finden Sie unter [Datenintegration für AEM Forms](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/data-integration.html).
 
-Dieses Tutorial führt Sie durch die Schritte zum Vorbereiten, Erstellen, Konfigurieren und Zuordnen eines Formulardatenmodells mit einem adaptiven Formular. Am Ende dieser Schulung können Sie Folgendes:
+Dieses Tutorial führt Sie durch die Schritte zum Vorbereiten, Erstellen, Konfigurieren und Zuordnen eines Formulardatenmodells mit einem adaptiven Formular. Am Ende dieses Tutorials können Sie Folgendes:
 
 * [Einrichten der Datenbank](../../forms/using/create-form-data-model0.md#step-set-up-the-database)
 * [Konfigurieren der MySQL-Datenbank als Datenquelle](../../forms/using/create-form-data-model0.md#step-configure-mysql-database-as-data-source)
@@ -115,7 +115,7 @@ Die Tabelle **bills** enthält die Rechnungsdetails wie Rechnungsdatum, Rechnung
 
 ## Schritt 2: Konfigurieren der MySQL-Datenbank als Datenquelle {#step-configure-mysql-database-as-data-source}
 
-Sie können verschiedene Arten von Datenquellen konfigurieren, um ein Formulardatenmodell zu erstellen. Für dieses Tutorial werden wir die MySQL-Datenbank, die Sie konfiguriert und mit Beispieldaten befüllt haben, konfigurieren. Informationen zu anderen unterstützten Datenquellen und deren Konfiguration finden Sie unter [AEM Forms-Datenintegration](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
+Sie können verschiedene Arten von Datenquellen konfigurieren, um ein Formulardatenmodell zu erstellen. Für dieses Tutorial werden wir die MySQL-Datenbank, die Sie konfiguriert und mit Beispieldaten befüllt haben, konfigurieren. Informationen zu anderen unterstützten Datenquellen und deren Konfiguration finden Sie unter [AEM Forms-Datenintegration](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/data-integration.html).
 
 Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 
@@ -145,7 +145,7 @@ Gehen Sie folgendermaßen vor, um Ihre MySQL-Datenbank zu konfigurieren:
 
       * **Test on Return:** Aktivieren Sie die Option **Test on Return.**
 
-      * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Beispiel: **select &#42; vom Kunden**.
+      * **Validation Query:** Geben Sie eine SQL SELECT-Abfrage ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Zum Beispiel **select &#42; from customer**.
 
       * **Transaktions-Isolierung**: Setzen Sie den Wert auf **READ_COMMITTED**.
    Belassen Sie die anderen Eigenschaften auf den [Standardwerten](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) und tippen Sie auf **Speichern**.
@@ -266,7 +266,7 @@ Führen Sie die folgenden Schritte aus, um Verknüpfungen zwischen Datenmodellob
 
    * Wählen Sie **Anrufe** aus der Dropdown-Liste **Modellobjekt**.
 
-   * Wählen Sie **get** aus der Dropdown-Liste **Service.**
+   * Wählen Sie **get** aus der Dropdown-Liste **Service**.
 
    * Tippen Sie auf **Hinzufügen**, um das Datenmodellobjekt **customer** mit dem Datenmodellobjekt **calls** mithilfe einer Eigenschaft zu verknüpfen. Basierend auf dem Anwendungsfall muss das Datenmodellobjekt „call“ mit der Eigenschaft der Mobilfunknummer im Datenmodellobjekt „customer“ verknüpft sein. Das Dialogfeld **Argument hinzufügen** wird geöffnet.
 
