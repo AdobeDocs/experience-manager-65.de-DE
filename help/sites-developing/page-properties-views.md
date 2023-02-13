@@ -1,5 +1,5 @@
 ---
-title: Anpassen von Ansichten von Seiteneigenschaften
+title: Anpassen der Ansichten von Seiteneigenschaften
 seo-title: Customizing Views of Page Properties
 description: Jede Seite verfügt über eine Reihe von Eigenschaften, die Sie nach Bedarf bearbeiten können.
 seo-description: Every page has a set of properties that you can edit as required
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '479'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Anpassen von Ansichten von Seiteneigenschaften{#customizing-views-of-page-properties}
+# Anpassen der Ansichten von Seiteneigenschaften{#customizing-views-of-page-properties}
 
 Jede Seite hat eine Reihe von [Eigenschaften](/help/sites-authoring/editing-page-properties.md), die von Nutzern angezeigt und bearbeitet werden können. Einige sind erforderlich, wenn die Seite erstellt wird (Erstellungsansicht), andere können später angezeigt und bearbeitet werden (Bearbeitungsansicht). Diese Seiteneigenschaften werden über das Dialogfeld (`cq:dialog`) der entsprechenden Seitenkomponente definiert und bereitgestellt.
 
@@ -51,7 +51,7 @@ Sehen Sie als Beispiel die Einstellungen für Felder, die unter **Weitere Titel 
 
 >[!TIP]
 >
->Eine Anleitung zum Anpassen der Seiteneigenschaften finden Sie im [Tutorial zum Erweitern der Seiteneigenschaften](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html).
+>Eine Anleitung zum Anpassen der Seiteneigenschaften finden Sie im [Tutorial zum Erweitern der Seiteneigenschaften](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/developing/page-properties-technical-video-develop.html?lang=de).
 
 ## Konfiguration von Seiteneigenschaften {#configuring-your-page-properties}
 
