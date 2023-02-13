@@ -1,7 +1,7 @@
 ---
 title: Dialogfeldeditor
 seo-title: Dialog Editor
-description: Der Dialogfeldeditor bietet eine grafische Oberfläche zur einfachen Erstellung und Bearbeitung von Dialogfeldern und Gerüsten.
+description: Der Dialogfeldeditor bietet eine grafische Oberfläche zur einfachen Erstellung und Bearbeitung von Dialogfeldern und Strukturvorlagen.
 seo-description: The dialog editor provides a graphical interface for easily creating and editing dialog boxes and scaffolds
 uuid: 64d3fb12-8638-441b-8595-c590d48f3072
 contentOwner: Guillaume Carlino
@@ -11,17 +11,17 @@ content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 exl-id: 57303608-c3e1-4201-8054-1a1798613e2c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
 # Dialogfeldeditor{#dialog-editor}
 
-Der Dialogfeldeditor bietet eine grafische Oberfläche zur einfachen Erstellung und Bearbeitung von Dialogfeldern und Gerüsten.
+Der Dialogfeldeditor bietet eine grafische Oberfläche zur einfachen Erstellung und Bearbeitung von Dialogfeldern und Strukturvorlagen.
 
-Um zu sehen, wie es funktioniert, gehen Sie zu CRXDE Lite, öffnen Sie den Explorer-Baum zu `/libs/foundation/components/chart` und doppelklicken Sie auf den Knoten `dialog`:
+Sehen Sie sich die Funktionsweise genauer an, indem Sie CRXDE Lite aufrufen, in der Explorer-Struktur zu `/libs/foundation/components/chart` navigieren und auf den Knoten `dialog` doppelklicken:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
@@ -35,8 +35,8 @@ Die Oberfläche des Dialogfeldeditors besteht aus vier Bereichen:
 
 * **Palette** links oben In diesem Bereich befinden sich die zum Erstellen eines Dialogfelds erforderlichen Widgets, etwa Registerkartenfelder, Textfelder, Auswahllisten und Schaltflächen. Sie können die verschiedenen Kategorien in der Palette maximieren, indem Sie auf die gewünschte Trennleiste klicken.
 * **Struktur** links unten In diesem Bereich wird die hierarchische Struktur der Knoten angezeigt, aus der die Dialogfelddefinition besteht. Dieselbe Struktur können Sie sehen, wenn Sie den Dialogknoten in CRXDE Lite oder CRX Content Explorer maximieren.
-* Die **render** in der Mitte des Fensters. Darin ist zu sehen, wie die im Strukturfenster definierte Dialogfelddefinition als tatsächliches Dialogfeld gerendert wird.
-* **Eigenschaften** In diesem Bereich werden die Eigenschaften des aktuell im Bereich „Struktur“ markierten Knotens angezeigt.
+* Der Fensterbereich **Rendern** befindet sich in der Mitte des Fensters. Darin ist zu sehen, wie die im Strukturfenster definierte Dialogfelddefinition als tatsächliches Dialogfeld gerendert wird.
+* Der Fensterbereich **Eigenschaften**. In diesem Bereich werden die Eigenschaften des aktuell im Bereich „Struktur“ markierten Knotens angezeigt.
 
 ### Verwenden des Dialogfeldeditors {#using-the-dialog-editor}
 
@@ -54,10 +54,10 @@ Erstellen Sie ein neues Dialogfeld, indem Sie die erforderliche Komponente ausw�
 
 Geben Sie die erforderlichen Informationen ein und klicken Sie auf **Alle speichern**. Nun können Sie doppelt auf das Dialogfeld klicken, um es im Editor zu öffnen.
 
-### Verwenden des Dialogfeldeditors für Gerüste {#using-the-dialog-editor-for-scaffolds}
+### Verwenden des Dialogfeldeditors für Strukturvorlagen {#using-the-dialog-editor-for-scaffolds}
 
-Ein Gerüst ist eine spezielle Seite mit einem Formular, das in einem Schritt ausgefüllt und gesendet werden kann. Damit können Sie anhand der eingegebenen Inhalte sehr schnell eine Seite erstellen.
+Eine Strukturvorlage ist eine spezielle Seite mit einem Formular, das in einem Schritt ausgefüllt und gesendet werden kann. Damit können Sie anhand der eingegebenen Inhalte sehr schnell eine Seite erstellen.
 
-Das Formular, aus dem ein Gerüst besteht, wird durch eine Dialogfelddefinition definiert, im Grunde wie ein normales Dialogfeld, mit dem Unterschied, dass es auf der Gerüstseite in einer anderen Form erscheint. Da Dialogfelddefinitionen zum Definieren von Gerüsten verwendet werden, können Sie Gerüste mit dem Dialogfeldeditor entwerfen. Beachten Sie, dass bei dieser Verwendung des Dialogfeldeditors im Renderbereich die Dialogfelddefinition weiterhin in Form eines Dialogfelds angezeigt wird, nicht als Grundlage.
+Das Formular, aus dem eine Strukturvorlage besteht, wird durch eine Dialogfelddefinition definiert, im Grunde wie ein normales Dialogfeld, mit dem Unterschied, dass es auf der Strukturvorlagenseite in einer anderen Form erscheint. Da Dialogfelddefinitionen zum Definieren von Strukturvorlagen verwendet werden, können Sie Strukturvorlagen mit dem Dialogfeldeditor entwerfen. Beachten Sie, dass bei dieser Art der Verwendung des Dialogeditors der Fensterbereich „Rendern“ die Dialogdefinition immer noch in Form eines Dialogfelds und nicht als Strukturvorlage anzeigt.
 
-Weitere Informationen zum Erstellen von Gerüsten mithilfe des Dialogfeldeditors finden Sie in [Gerüste](/help/sites-authoring/scaffolding.md).
+Weitere Informationen zum Erstellen von Strukturvorlagen mithilfe des Dialogfeldeditors finden Sie in [Strukturvorlagen](/help/sites-authoring/scaffolding.md).
