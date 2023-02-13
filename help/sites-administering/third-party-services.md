@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
 exl-id: 50b70e47-a801-4f0a-be92-4427c4b2cad1
 source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '322'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Mit AEM können Sie standardmäßig eine Integration in die folgenden Adobe-frem
 
 Darüber hinaus können Sie AEM mit [Adobe Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) integrieren.
 
-## Integration mit Salesforce {#integrating-with-salesforce}
+## Integrieren mit Salesforce {#integrating-with-salesforce}
 
 Salesforce.com ist das führende Cloud-Computing-Unternehmen beim Wechsel hin zum Social Enterprise.
 
@@ -51,7 +51,7 @@ Silverpop Engage stellt Marketingautomatisierung, E-Mail, Mobile und Social bere
 
 Informationen zur Integration Ihrer AEM-Site in Silverpop Engage finden Sie unter [Integrieren in Silverpop Engage](/help/sites-administering/silverpop.md).
 
-## Integration mit ExactTarget {#integrating-with-exacttarget}
+## Integrieren mit ExactTarget {#integrating-with-exacttarget}
 
 Die E-Mail-Marketing-Lösungen von ExactTarget bieten Unternehmen aller Größen die Möglichkeit, zielgerichtete, missionskritische und vollintegrierte E-Mail-Kampagnen zu entwickeln und bereitzustellen.
 
