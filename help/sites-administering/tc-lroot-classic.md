@@ -1,5 +1,5 @@
 ---
-title: Erstellen eines Sprach-Stamms mithilfe der klassischen Benutzeroberfläche
+title: Erstellen eines Sprachstamms mithilfe der klassischen Benutzeroberfläche
 seo-title: Creating a Language Root Using the Classic UI
 description: Erfahren Sie, wie Sie einen Sprach-Stamm mithilfe der klassischen Benutzeroberfläche erstellen.
 seo-description: Learn how to create a language root using the Classic UI.
@@ -13,13 +13,13 @@ docset: aem65
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '316'
 ht-degree: 100%
 
 ---
 
-# Erstellen eines Sprach-Stamms mithilfe der klassischen Benutzeroberfläche{#creating-a-language-root-using-the-classic-ui}
+# Erstellen eines Sprachstamms mithilfe der klassischen Benutzeroberfläche{#creating-a-language-root-using-the-classic-ui}
 
 Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen eines Sprach-Stamms einer Website verwendet. Weitere Informationen hierzu finden Sie unter [Erstellen eines Sprach-Stamms](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
@@ -57,5 +57,5 @@ Im folgenden Verfahren wird die klassische Benutzeroberfläche zum Erstellen ein
    | `<language>+` (z. B. French+) | Kopiert die Seite und alle untergeordneten Elemente aus dieser Sprache |
    | `<language>` (z. B. French) | Kopiert nur die Seite aus dieser Sprache |
 
-1. Klicken Sie auf OK, um das Dialogfeld zu schließen.
+1. Klicken Sie auf „OK“, um das Dialogfeld zu schließen.
 1. Klicken Sie im nächsten Dialogfeld auf „Ja“, um die Kopie zu bestätigen.
