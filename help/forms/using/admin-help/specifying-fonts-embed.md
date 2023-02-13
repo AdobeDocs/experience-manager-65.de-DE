@@ -1,5 +1,5 @@
 ---
-title: Einzubettende Schriften angeben
+title: Angeben der einzubettenden Schriften
 seo-title: Specifying fonts to embed
 description: Hier erfahren Sie, wie Sie Schriftarten angeben, die Sie einbetten möchten.
 seo-description: Learn how to specify fonts to embed.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4c83694c-b00f-40be-9ac4-f5785cd60741
 exl-id: b2cbf5f3-ee13-47bf-bf7f-f6a1884cee66
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '250'
 ht-degree: 100%
 
 ---
 
-# Einzubettende Schriften angeben {#specifying-fonts-to-embed}
+# Angeben der einzubettenden Schriften {#specifying-fonts-to-embed}
 
 Sie können angeben, welche Schriften immer oder nie in Formulare eingebettet werden sollen, die vom Forms-Dienst erstellt werden. Das Einbetten von Schriften erhöht die Dateigröße von Formularen. Betten Sie ungewöhnliche Schriftarten ein, die die Benutzer nur selten auf ihren Systemen haben. Betten Sie keine allgemeinen Schriftarten ein, die sie normalerweise installiert haben.
 
