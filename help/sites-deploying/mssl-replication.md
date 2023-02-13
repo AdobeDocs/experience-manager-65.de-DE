@@ -1,5 +1,5 @@
 ---
-title: Replizieren mit MSSL
+title: Replizieren mit bidirektionaler SSL-Kommunikation
 seo-title: Replicating Using Mutual SSL
 description: Erfahren Sie, wie Sie AEM so konfigurieren, dass ein Replikationsagent auf der Autoreninstanz gegenseitiges SSL (MSSL) für die Verbindung mit der Veröffentlichungsinstanz verwendet. Bei MSSL verwenden der Replikationsagent und der HTTP-Dienst auf der Veröffentlichungsinstanz Zertifikate für die gegenseitige Authentifizierung.
 seo-description: Learn how to configure AEM so that a replication agent on the author instance uses mutual SSL (MSSL) to connect with the publish instance. Using MSSL, the replication agent and the HTTP service on the publish instance use certificates to authenticate each other.
@@ -12,13 +12,13 @@ discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1409'
 ht-degree: 100%
 
 ---
 
-# Replizieren mit MSSL{#replicating-using-mutual-ssl}
+# Replizieren mit bidirektionaler SSL-Kommunikation{#replicating-using-mutual-ssl}
 
 Konfigurieren Sie AEM so, dass ein Replikationsagent auf der Autoreninstanz gegenseitiges SSL (MSSL) für die Verbindung mit der Veröffentlichungsinstanz verwendet Bei MSSL verwenden der Replikationsagent und der HTTP-Dienst auf der Veröffentlichungsinstanz Zertifikate für die gegenseitige Authentifizierung.
 
@@ -194,7 +194,7 @@ Um die folgenden Schritte auszuführen, müssen Sie als Administrator der Veröf
 1. Klicken oder tippen Sie auf Ihren Benutzernamen, um die Eigenschaften Ihres Benutzerkontos zu öffnen.
 1. Wenn der Link „KeyStore erstellen“ im Bereich mit den Kontoeinstellungen angezeigt wird, klicken Sie auf diesen Link. Konfigurieren Sie ein Kennwort und klicken Sie auf „OK“.
 1. Klicken Sie im Bereich mit den Kontoeinstellungen auf „KeyStore verwalten“.
-1. Klicken Sie auf „Privaten Schlüssel aus KeyStore-Datei hinzufügen“.
+1. Klicken Sie auf „Privaten Schlüssel aus Schlüsselspeicherdatei hinzufügen“.
 1. Klicken Sie auf „KeyStore-Datei auswählen“. Suchen Sie dann nach der Datei „publish.keystore“ (oder nach der Datei „publish.pfx“ bei Verwendung von PKCS#12) und wählen Sie diese aus. Klicken Sie dann auf „Öffnen“.
 1. Geben Sie einen Alias und das Kennwort für den KeyStore ein. Geben Sie den Alias und das Kennwort für den privaten Schlüssel ein. Klicken Sie anschließend auf „Übermitteln“.
 1. Schließen Sie das Dialogfeld „KeyStore-Verwaltung“.
