@@ -1,5 +1,5 @@
 ---
-title: Integration mit BrightEdge Content Optimizer
+title: Integrieren mit BrightEdge Content Optimizer
 seo-title: Integrating with BrightEdge Content Optimizer
 description: Informieren Sie sich über die Integration von AEM mit BrightEdge Content Optimizer.
 seo-description: Learn about integrating AEM with BrightEdge Content Optimizer.
@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '495'
 ht-degree: 100%
 
 ---
 
-# Integration mit BrightEdge Content Optimizer{#integrating-with-brightedge-content-optimizer}
+# Integrieren mit BrightEdge Content Optimizer{#integrating-with-brightedge-content-optimizer}
 
 Erstellen Sie eine BrightEdge-Cloudkonfiguration, sodass AEM mit den Anmeldedaten Ihres BrightEdge-Kontos eine Verbindung herstellen kann. Sie können mehrere Konfigurationen erstellen, wenn Sie mehrere Konten nutzen.
 
