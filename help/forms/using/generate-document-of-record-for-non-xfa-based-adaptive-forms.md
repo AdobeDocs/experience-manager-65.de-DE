@@ -1,5 +1,5 @@
 ---
-title: Generierung eines Datensatzdokuments für adaptive Formulare
+title: Generieren eines Datensatzdokuments für adaptive Formulare
 seo-title: Generate Document of Record for adaptive forms
 description: Sie erfahren in diesem Artikel, wie Sie eine Vorlage für ein Datensatzdokument (DoR, Document of Record) für adaptive Formulare erstellen können.
 seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
@@ -12,9 +12,9 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3466'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -355,7 +355,7 @@ Felder in einem Bedienfeld, im Datensatzdokument im Tabellenlayout angeordnet
 
 ![Felder in einem Bedienfeld, im Datensatzdokument im Spaltenlayout angeordnet](assets/dorcolumnlayout.png)
 
-Felder in einem Bedienfeld, im Datensatzdokument im Spaltenlayout angeordnet
+Felder in einem Bedienfeld, im Datensatzdokument im Spalten-Layout angeordnet
 
 ## Einstellungen für Datensatzdokumente {#document-of-record-settings}
 
@@ -394,7 +394,7 @@ Informationen zum Anwenden von Seitenumbrüchen und zum Anwenden mehrerer Master
 **Einstellungen auf Formularebene**
 
 * **Ungebundene Felder in DoR einbeziehen:** Durch Festlegen dieser Eigenschaft werden ungebundenen Felder aus dem Schema-basierten adaptiven Formular im Datensatzdokument berücksichtigt. Diese Option ist standardmäßig aktiviert.
-* **Schließen Sie Felder aus DoR aus, falls ausgeblendet:** Legen Sie die Eigenschaft fest, um die ausgeblendeten Felder auszuschließen von [!UICONTROL Datensatzdokument] beim Senden des Formulars. Wenn Sie [Auf dem Server erneut überprüfen](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form)berechnet der Server die ausgeblendeten Felder neu, bevor diese Felder aus dem [!UICONTROL Datensatzdokument].
+* **Felder aus DoR ausschließen, falls ausgeblendet**: Legen Sie die Eigenschaft fest, um beim Senden des Formulars die ausgeblendeten Felder vom [!UICONTROL Datensatzdokument] auszuschließen. Wenn Sie [Auf dem Server erneut überprüfen](/help/forms/using/configuring-submit-actions.md#server-side-revalidation-in-adaptive-form-server-side-revalidation-in-adaptive-form) aktivieren, berechnet der Server die ausgeblendeten Felder neu, bevor er diese Felder aus dem [!UICONTROL Datensatzdokument] ausschließt.
 
 ## Anwenden eines Seitenumbruchs in einem Datensatzdokument {#apply-page-breaks-in-dor}
 
