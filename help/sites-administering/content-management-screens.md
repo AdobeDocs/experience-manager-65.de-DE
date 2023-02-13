@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 014b5fdd-6522-4394-87bb-fe264492ba34
 exl-id: 3354d650-532a-488b-8d8b-b6e1fc30c30f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '103'
-ht-degree: 81%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 81%
 
 Ein ***Content Manager*** für AEM Screens ist ein kreativer Profi, der eng mit dem Marketing zusammenarbeitet und die Kampagne, die Zielgruppe und den gewünschten Fokus kennt. Der Content Manager ist für die Erstellung und Orchestrierung des Endbenutzererlebnisses durch die Entwicklung verschiedener Kanäle und die Zuweisung von Sequenzen in einem getakteten Kanalerlebnis bereit.
 
-Content Manager für Screens-Designspeicherorte und -pläne, Wahrung der Kanalintegrität, Durchführung von Analysen und Berichten und Pflege von Videoprofilen.
+Content Manager für Screens gestalten Orte und Zeitpläne, erhalten die Kanalintegrität aufrecht, führen Analysen und Reporting durch und pflegen Videoprofile.
 
 Ein AEM Screens Content Manager ist für die folgenden Aufgaben verantwortlich:
 
