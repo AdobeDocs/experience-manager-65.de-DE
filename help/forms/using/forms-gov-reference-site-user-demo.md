@@ -9,9 +9,9 @@ discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2526'
-ht-degree: 85%
+ht-degree: 100%
 
 ---
 
@@ -200,8 +200,8 @@ Aya beantwortet einige Fragen, um ihre Eignung zu bestätigen, indem sie ein kur
    >
    >Wenn der Benutzer mehr als 200.000 USD pro Jahr verdient, ist er nicht berechtigt.
 
-1. Klicken Sie auf &quot;**Bin ich berechtigt?**&quot; Schaltfläche.
-1. Klicken Sie auf &quot;**Jetzt anwenden**&quot;, um fortzufahren.
+1. Klicken Sie auf die Schaltfläche „**Bin ich berechtigt?**“.
+1. Klicken Sie auf die Schaltfläche „**Jetzt anwenden**“, um fortzufahren.
 
    ![Jetzt anwenden](/help/forms/using/assets/apply_now_link.png)
 
@@ -246,8 +246,8 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag auf die Se
 **Benutzeranweisungen:**
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. Klicken Sie in der Navigationsleiste auf &quot;**Online-Dienste**&quot;.
-1. Wählen Sie im Bedienfeld &quot;Forms-Entwurf&quot;die vorhandene &quot;Registrierungsanwendung für Gesundheitsvorteile&quot;aus.
+1. Klicken Sie in der Navigationsleiste auf „**Online-Services**“.
+1. Wählen Sie im Bedienfeld „Formularentwürfe“ den vorhandenen „Registrierungsantrag für Gesundheitsleistungen“ aus.
 
    ![Registrierungsantrag für Gesundheitsleistungen](/help/forms/using/assets/enrollment_application.png)
 
@@ -280,8 +280,8 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag auf die Se
 
 **Benutzeranweisungen:**
 
-1. Überprüfen Sie die **Ich stimme zu**&quot;.
-1. Klicken Sie auf &quot;**Accept**&quot;.
+1. Aktivieren Sie das Kontrollkästchen „**Ich stimme zu**“.
+1. Klicken Sie auf „**Akzeptieren**“.
 1. Blättern Sie bis zum Ende des überprüften Dokuments.
 1. Klicken Sie auf die gelb markierte Registerkarte, um das Dokument zu unterzeichnen.
 
@@ -298,7 +298,7 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag auf die Se
 **Benutzeranweisungen:**
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Klicken Sie auf das Benutzersymbol (oben rechts) und verwenden Sie die **Abmelden**&quot; oder &quot;**Identität annehmen als**&quot;, wenn Sie derzeit mit einem Administrator angemeldet sind.
+1. Klicken Sie auf das Benutzersymbol (oben rechts) und verwenden Sie die Menüoption „**Abmelden**“ oder „**Stellvertretend agieren**“, wenn Sie derzeit als Benutzer mit Administratorrechten angemeldet sind.
 
    1. Anmelden mit:
 
@@ -306,14 +306,14 @@ Aya muss einige Dokumente zu Hause überprüfen, bevor sie den Antrag auf die Se
       1. **Kennwort:** password
    1. Oder stellvertretend agieren:
 
-      1. Typ &quot;**George**&quot; in der &quot;**Identität annehmen als**&quot;.
+      1. Geben Sie „**George**“ in das Feld „**Stellvertretend agieren**“ ein.
 
       1. Klicken Sie auf „OK“, um stellvertretend zu agieren.
 
 
 1. Klicken Sie oben rechts auf das Symbol „Benachrichtigung“ (Glocke).
-1. Klicken Sie auf &quot;**Alle anzeigen**&quot;, um zum Posteingang zu navigieren.
-1. Öffnen Sie im Posteingang die neueste **Antragsüberprüfung für gesundheitliche Vorteile**&quot;.
+1. Klicken Sie auf „**Alle anzeigen**“, um zum Posteingang zu navigieren.
+1. Öffnen Sie im Posteingang die neueste Aufgabe „**Überprüfung des Antrags auf Gesundheitsleistungen**“.
 
    ![Überprüfung des Antrags auf Gesundheitsleistungen](/help/forms/using/assets/health_benefits.png)
 
@@ -324,7 +324,7 @@ Dank der Datenintegration und der automatisierten Workflows wird der Antrag von 
 **Benutzeranweisungen:**
 
 1. Öffnen Sie das schreibgeschützte adaptive Formular und prüfen Sie es.
-1. Klicken Sie auf &quot;**Open MS Dynamics**&quot;-Schaltfläche, um den MS Dynamics-Datensatz in einem neuen Fenster zu öffnen.
+1. Klicken Sie auf die Schaltfläche „**MS Dynamics öffnen**“, um den MS Dynamics-Datensatz in einem neuen Fenster zu öffnen.
 1. Im CRM können Sie sehen, dass alle Informationen aktualisiert werden können
 
    1. Optional können Sie einige Prüfungsnotizen direkt in Dynamics hinzufügen.
@@ -339,7 +339,7 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
 
 **Benutzeranweisungen:**
 
-1. Navigieren Sie zur oberen linken Ecke und klicken Sie auf &quot;**Genehmigen**&quot;, um den Antrag zu genehmigen.
+1. Navigieren Sie zur linken oberen Ecke und klicken Sie auf „**Genehmigen**“, um den Antrag zu genehmigen.
 1. In dem Modal können Sie eine Nachricht für den CX-Lead hinterlassen.
 1. Klicken Sie auf Fertig.
 1. (Bürgerrolle) Öffnen Sie Ihren E-Mail-Client, um die an Aya gesendete E-Mail anzuzeigen.
@@ -357,7 +357,7 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
 **Benutzeranweisungen:**
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Klicken Sie auf das Benutzersymbol (oben rechts) und verwenden Sie die **Abmelden**&quot; oder &quot;**Identität annehmen als**&quot;, wenn Sie derzeit mit einem Administrator angemeldet sind.
+1. Klicken Sie auf das Benutzersymbol (oben rechts) und verwenden Sie die Menüoption „**Abmelden**“ oder „**Stellvertretend agieren**“, wenn Sie derzeit als Benutzer mit Administratorrechten angemeldet sind.
 
    1. Anmelden mit:
 
@@ -365,30 +365,30 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
       1. **Kennwort:** password
    1. Oder stellvertretend agieren:
 
-      1. Typ &quot;**Camila**&quot; in der &quot;**Identität annehmen als**&quot;.
+      1. Geben Sie „**Camila**“ in das Feld „**Stellvertretend agieren**“ ein.
 
       1. Klicken Sie auf „OK“, um stellvertretend zu agieren.
 
 
 1. Klicken Sie oben rechts auf das Symbol „Benachrichtigung“ (Glocke).
-1. Klicken Sie auf &quot;**Alle anzeigen**&quot;, um zum Posteingang zu navigieren.
-1. Öffnen Sie im Posteingang die neueste **Neue Kontaktgenehmigung**&quot;.
+1. Klicken Sie auf „**Alle anzeigen**“, um zum Posteingang zu navigieren.
+1. Öffnen Sie im Posteingang die letzte Aufgabe „**Neue Kontaktgenehmigung**“.
 
 ![Neue Kontaktgenehmigung](/help/forms/using/assets/new_contact_approval.png)
 
 **(Optional) Benutzeranweisungen:**
 
 1. Öffnen Sie das schreibgeschützte adaptive Formular und prüfen Sie es.
-1. Klicken Sie auf &quot;**Open MS Dynamics**&quot;-Schaltfläche, um den MS Dynamics-Datensatz in einem neuen Fenster zu öffnen.
+1. Klicken Sie auf die Schaltfläche „**MS Dynamics öffnen**“, um den MS Dynamics-Datensatz in einem neuen Fenster zu öffnen.
 1. Im CRM können Sie sehen, dass alle Informationen aktualisiert werden können
 
    1. Fügen Sie optional eine neue Aufruffaktivität direkt in Dynamics hinzu.
-   1. Öffnen Sie &quot;**Tätigkeiten**&quot;.
-   1. Klicken Sie auf &quot;**Neuer Telefonaufruf**&quot;.
+   1. Öffnen Sie den Abschnitt „**Aktivitäten**“.
+   1. Klicken Sie auf die Option „**Neuer Telefonanruf**“.
    1. Fügen Sie Telefonanrufdetails hinzu.
    1. Speichern und schließen Sie das Fenster.
 
-1. Navigieren Sie in AEM oberen linken Ecke zu und klicken Sie auf &quot;**Einsenden**&quot;, um den Antrag zu übermitteln.
+1. Zurück in AEM, navigieren Sie zur oberen linken Ecke und klicken Sie auf „**Senden**“, um den Antrag zu senden.
 1. Im Modal können Sie eine Nachricht hinterlassen.
 1. Klicken Sie auf Fertig.
 
@@ -405,7 +405,7 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
 1. Suchen und öffnen Sie die E-Mail mit dem Willkommenspaket.
 1. Scrollen Sie zur PDF-Anlage am Seitenende.
 1. Klicken Sie darauf, um die PDF-Anlage zu öffnen.
-1. Scrollen Sie in Ihrem E-Mail-Client nach oben und klicken Sie auf &quot;**Willkommenskit online anzeigen**&quot;.
+1. Scrollen Sie in Ihrem E-Mail-Client zurück nach oben und klicken Sie auf „**Willkommenspaket online anzeigen**“.
 
    1. Dadurch wird die Webkanalversion desselben Dokuments geöffnet.
 
@@ -429,7 +429,7 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
 
 1. Navigieren Sie zu Ihrem E-Mail-Client.
 1. Suchen und öffnen Sie die E-Mail mit der Verlängerungserinnerung.
-1. Klicken Sie auf &quot;**Neue Anwendung einreichen**&quot;, um das adaptive Formular zu öffnen.
+1. Klicken Sie auf die Schaltfläche „**Neuen Antrag einreichen**“, um das adaptive Formular zu öffnen.
 
    1. Dieser Abschnitt ist absichtlich leer gelassen, um die Datenvorerfassung in Phase 2 zu unterstützen.
 
@@ -486,8 +486,8 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
 ### Sites-Reporting mit Adobe Analytics (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/sites.html/content*
-1. Wählen Sie &quot;**AEM Forms We.Gov-Site**&quot;, um die Seiten der Site anzuzeigen.
-1. Wählen Sie eine der Seiten der Site aus (z. B. Startseite) und wählen Sie &quot;**Analytics und Recommendations**&quot;.
+1. Wählen Sie „**AEM Forms We.Gov-Site**“, um die Seiten der Site anzuzeigen.
+1. Wählen Sie eine der Seiten der Site aus (z. B. Startseite), und wählen Sie „**Analysen und Empfehlungen**“.
 
    ![Analysen und Empfehlungen](/help/forms/using/assets/analytics_recommendation.jpg)
 
@@ -495,16 +495,16 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
 
    ![Schlüsselmetriken von Adobe Analytics](/help/forms/using/assets/analytics_key_metrics.jpg)
 
-1. Zurück auf der Seitenansichtsseite (Zugriff in Schritt 3) können Sie die Seitenansichtsinformationen auch anzeigen, indem Sie die Anzeigeeinstellung ändern und Elemente in der **Listenansicht**&quot;.
-1. Suchen Sie nach &quot;**Ansicht**&quot;Dropdown-Menü und wählen Sie &quot;**Listenansicht**&quot;.
+1. Zurück auf der Seite „Seitenansicht“ (die Sie in Schritt 3. aufgerufen haben) können Sie die Informationen der Seitenansicht auch anzeigen, indem Sie die Anzeigeeinstellung so ändern, dass Elemente in der „**Listenansicht**“ angezeigt werden.
+1. Suchen Sie das Dropdown-Menü „**Ansicht**“ und wählen Sie „**Listenansicht**“ aus.
 
    ![Listenansicht im Dropdown-Menü „Ansicht“](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. Wählen Sie im selben Menü &quot;**Anzeigeeinstellung**&quot; und wählen Sie die Spalten aus, die Sie anzeigen möchten.**Analytics**&quot;.
+1. Wählen Sie im gleichen Menü die Option „**Ansichtseinstellung**“ und anschließend im Abschnitt „**Analysen**“ die Spalten, die angezeigt werden sollen, aus.
 
    ![Konfigurieren der Spaltenanzeige](/help/forms/using/assets/view_setting_analytics.jpg)
 
-1. Klicken Sie auf &quot;**Aktualisieren**&quot;, um die neuen Spalten verfügbar zu machen.
+1. Klicken Sie auf „**Aktualisieren**“, um die neuen Spalten verfügbar zu machen.
 
    ![Verfügbar machen neuer Spalten](/help/forms/using/assets/new_columns_available.jpg)
 
@@ -514,7 +514,7 @@ George genehmigt Ayas Antrag, und dank eines bestehenden automatisierten Workflo
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Wählen Sie &quot;**Registrierungsantrag für Gesundheitsleistungen**&quot;adaptives Formular&quot;und wählen Sie die **Analytics-Bericht**&quot;.
+1. Wählen Sie das adaptive Formular „**Registrierungsantrag für Gesundheitsleistungen**“ und klicken Sie auf die Option „**Analytics-Bericht**“.
 
    ![Registrierungsantrag für Gesundheitsleistungen](/help/forms/using/assets/analytics_report_benefits.jpg)
 
