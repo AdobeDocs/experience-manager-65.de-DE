@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Analytics und Berichten
+title: Konfigurieren von Analysen und Berichten
 seo-title: Configuring analytics and reports
 description: Erfahren Sie, wie Sie Adobe Analytics so konfigurieren, dass Sie Interaktionsmuster und Probleme von Benutzern beim Arbeiten mit adaptiven Formularen, adaptiven Dokumenten und HTML5-Formularen ermitteln können.
 seo-description: Learn how to configure Adobe Analytics to discover interaction patterns and problems users face while using adaptive forms, adaptive documents, and HTML5 forms.
@@ -11,13 +11,13 @@ discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
 source-git-commit: 66631fd0813f623f3321072fc00fd90f7fa33d21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1531'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
-# Analytics mithilfe von Cloud Service Framework {#analyticsusingcloudframework}
+# Analytics mit dem Cloud Service-Framework {#analyticsusingcloudframework}
 
 AEM Forms ermöglicht die Integration mit Analytics, sodass Sie Leistungsmetriken für Ihre veröffentlichten Formulare und Dokumente erfassen und verfolgen können. Ziel dieser Analyse ist es, informierte, auf Daten basierende Entscheidungen zu erforderlichen Formularänderungen treffen zu können, durch die Formulare oder Dokumente benutzerfreundlicher werden.
 
@@ -27,7 +27,7 @@ AEM Forms ermöglicht die Integration mit Analytics, sodass Sie Leistungsmetrike
 >
 >Zusätzlich zum Add-On-Paket benötigen Sie ein Adobe Analytics-Konto und Administratorrechte auf der AEM-Instanz. Informationen zur Lösung finden Sie unter [Adobe Analytics](https://www.adobe.com/de/solutions/digital-analytics.html).
 
-Sie können auch Analysen mit Adobe Launch durchführen. Weitere Informationen zur Integration von AEM Forms in Adobe Launch finden Sie unter [Analytics mit Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
+Sie können Analysen auch mit Adobe Launch durchführen. Weitere Informationen zur Integration von AEM Forms in Adobe Launch finden Sie unter [Analytics mit Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
 
 ## Übersicht {#overview}
 
