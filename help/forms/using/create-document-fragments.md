@@ -11,7 +11,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1670'
 ht-degree: 100%
 
@@ -29,10 +29,10 @@ Dokumentfragmente sind wiederverwendbare Komponenten einer Korrespondenz, die zu
 * Liste: Eine Liste ist eine Gruppe von Dokumentfragmenten, einschließlich Text, Listen, Bedingungen und Bildern.
 * Bedingung: Mithilfe von Bedingungen können Sie festlegen, welche Inhalte in die interaktive Kommunikation aufgenommen werden, und zwar basierend auf den Daten, die vom Formulardatenmodell empfangen werden.
 
-In diesem Tutorial werden Sie durch die einzelnen Schritte geführt, um mehrere Textdokumentfragmente zu erstellen, die auf der Anatomie im Abschnitt [Interaktive Kommunikation planen](/help/forms/using/planning-interactive-communications.md) basieren. Am Ende dieser Schulung können Sie Folgendes:
+In diesem Tutorial werden Sie durch die einzelnen Schritte geführt, um mehrere Textdokumentfragmente zu erstellen, die auf der Anatomie im Abschnitt [Interaktive Kommunikation planen](/help/forms/using/planning-interactive-communications.md) basieren. Am Ende dieses Tutorials können Sie Folgendes:
 
 * Erstellen Sie Dokumentfragmente
-* Variablen erstellen
+* Erstellen von Variablen
 * Regeln erstellen und anwenden
 
 ![text_document_fragments](assets/text_document_fragments.gif)
