@@ -1,5 +1,5 @@
 ---
-title: Freigegebene Warteschlangen konfigurieren
+title: Konfigurieren freigegebener Warteschlangen
 seo-title: Configuring Shared Queues
 description: Mithilfe von freigegebenen Warteschlangen können Sie Benutzerwarteschlangen effektiv konfigurieren und verwalten. Erfahren Sie, wie Sie geteilte Warteschlangen konfigurieren.
 seo-description: Shared Queues allow you to configure and manage user queues effectively. Learn how to configure shared queues.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
 exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '652'
 ht-degree: 100%
 
 ---
 
-# Freigegebene Warteschlangen konfigurieren{#configuring-shared-queues}
+# Konfigurieren freigegebener Warteschlangen{#configuring-shared-queues}
 
 Mithilfe von freigegebenen Warteschlangen können Sie Benutzerwarteschlangen effektiv konfigurieren und verwalten. Eine Benutzerwarteschlange sind alle einem Benutzer zugeordneten Aufgaben. Weitere Informationen finden Sie unter [Aufgabenlisten](https://help.adobe.com/de_DE/livecycle/11.0/WorkspaceHelp/WS92d06802c76abadb-2b6ab502126beb6ba2f-7ffc.2.html). Sie können Benutzerwarteschlangen entsprechend den Anforderungen Ihres Unternehmens zuordnen, die Zuordnungen aufheben oder erneut zuordnen. Sie können freigegebene Warteschlangen auf zwei Arten verwalten:
 
@@ -37,7 +37,7 @@ Nachdem diese Aufgaben freigegeben wurden, können Sie vom Benutzer, der Zugriff
 
 >[!NOTE]
 >
->Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
+>Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
 
 ### Zugriff auf ausgewählte Benutzerwarteschlangen konfigurieren {#configuring-access-to-a-selected-user-queue}
 
@@ -65,7 +65,7 @@ Nachdem diese Aufgaben zugewiesen wurden, können sie vom Benutzer, der Workspac
 
 >[!NOTE]
 >
->Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.
+>Der Flex-Workspace wird für die AEM Forms-Version nicht mehr unterstützt.
 
 ### Zugriff auf ausgewählte Benutzerwarteschlangen gewähren {#granting-access-to-a-selected-user-queue}
 
