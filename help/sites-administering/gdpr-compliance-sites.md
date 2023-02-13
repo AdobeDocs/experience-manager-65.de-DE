@@ -1,5 +1,5 @@
 ---
-title: AEM Sites – Einhaltung der Datenschutz-Grundverordnung
+title: AEM Sites – Einhaltung der DSGVO
 seo-title: AEM Sites - GDPR Readiness
 description: Hier erfahren Sie, wie AEM Sites die Anforderungen der Datenschutz-Grundverordnung erfüllt.
 seo-description: Learn about the details of GDPR Readiness for AEM Sites.
@@ -11,13 +11,13 @@ topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '832'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# AEM Sites – Einhaltung der Datenschutz-Grundverordnung{#aem-sites-gdpr-readiness}
+# AEM Sites – Einhaltung der DSGVO{#aem-sites-gdpr-readiness}
 
 >[!IMPORTANT]
 >
@@ -51,11 +51,11 @@ AEM bietet einen [Service zum Deaktivieren von Cookies](/help/sites-developing/c
 
 AEM Sites bietet eine optionale Integration mit Enhanced Insights by Analytics, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
 
-Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Analytics finden Sie unter [Adobe Analytics und die DSGVO](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html).
+Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Analytics finden Sie unter [Adobe Analytics und die DSGVO](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/an-gdpr-overview.html?lang=de).
 
 ## Verbesserte Personalisierung durch Target {#enhanced-personalization-by-target}
 
-AEM Sites bietet eine optionale Integration mit verbesserter Personalisierung durch Target, das Funktionen innerhalb des On-Demand-Service von Adobe Analytics verwendet.
+AEM Sites bietet eine optionale Integration mit verbesserter Personalisierung durch Target, das Funktionen innerhalb des On-Demand-Service von Adobe Target verwendet.
 
 Weitere Informationen zur Verwaltung von DSGVO-Anfragen von Datensubjekten in Adobe Target finden Sie unter [Adobe Target – Datenschutz und die DSGVO](https://experienceleague.adobe.com/docs/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html?lang=de).
 
