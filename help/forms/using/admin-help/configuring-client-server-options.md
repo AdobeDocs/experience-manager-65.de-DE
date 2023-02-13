@@ -1,5 +1,5 @@
 ---
-title: Client- und Serveroptionen konfigurieren
+title: Konfigurieren der Client- und Server-Optionen
 seo-title: Configuring client and server optionsn
 description: Erfahren Sie, wie Sie die verschiedenen Client- und Serveroptionen konfigurieren können, z. B. Einstellungen zur Serverkonfiguration, Document Security-Rollen und Ereignisrevidierung.
 seo-description: Learn how you can configure the various client and server options, such as server configuration settings, document security roles, and event auditing.
@@ -12,9 +12,9 @@ discoiquuid: 0f069fbc-10c2-403e-9419-5e9920035d75
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '10242'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -408,7 +408,7 @@ Zum Anzeigen der verfolgten Ereignisse können Sie den Filter „Dokumentereigni
 
 Diese Einstellungen steuern den Text in der Anmeldeaufforderung, die angezeigt wird, wenn sich ein Benutzer über eine Clientanwendung bei Document Security anmeldet.
 
-**Willkommenstext:** Der Begrüßungstext, z. B. &quot;Melden Sie sich mit Ihrem Benutzernamen und Kennwort an&quot;. Der Begrüßungstext sollte Informationen dazu enthalten, wie die Anmeldung bei Document Security erfolgen soll und wie ein Administrator oder anderer Support-Mitarbeiter in Ihrem Unternehmen kontaktiert werden kann, falls Hilfe benötigt wird. Externe Benutzer müssen ggf. einen Administrator kontaktieren, wenn sie ihr Kennwort vergessen haben oder Hilfe bei der Registrierung oder Anmeldung benötigen. Die maximale Länge des Begrüßungstexts ist 512 Zeichen.
+**Begrüßungstext**: Der Text der Begrüßungsnachricht, z. B. „Bitte melden Sie sich mit Ihrem Benutzernamen und Kennwort an“. Der Begrüßungstext sollte Informationen dazu enthalten, wie die Anmeldung bei Document Security erfolgen soll und wie ein Administrator oder anderer Support-Mitarbeiter in Ihrem Unternehmen kontaktiert werden kann, falls Hilfe benötigt wird. Externe Benutzer müssen ggf. einen Administrator kontaktieren, wenn sie ihr Kennwort vergessen haben oder Hilfe bei der Registrierung oder Anmeldung benötigen. Die maximale Länge des Begrüßungstexts ist 512 Zeichen.
 
 **Benutzernamentext:** Die Textbeschriftung für das Feld Benutzername.
 
@@ -447,7 +447,7 @@ Sie können dynamische Wasserzeichen mit mehreren Wasserzeichenelementen erstell
 
 Wenn Sie ein textbasiertes Wasserzeichen auswählen, können Sie mehrere Elemente innerhalb des Wasserzeichens mit mehreren Texteinträgen angeben und die Position jedes Elements festlegen. Ordnen Sie diesen Elementen aussagekräftige Namen zu, z. B. Kopf- und Fußzeilen usw.
 
-Wenn Sie beispielsweise unterschiedlichen Text in Kopf- und Fußzeilen, an den Rändern und im gesamten Dokument als Wasserzeichen angeben möchten, erstellen Sie mehrere Wasserzeichenelemente und legen Sie ihre Position fest. Wenn die Benutzer-ID des Benutzers und das aktuelle Datum des Zugriffs auf das Dokument in der Kopfzeile, der Richtlinienname am rechten Rand und ein benutzerdefinierter Text &quot;CONFIDENTIAL&quot;diagonal im Dokument angezeigt werden sollen, definieren Sie separate Wasserzeichenelemente mit Text als Typ und geben Sie die Formatierung und Positionierung an. Wenn das Wasserzeichen auf ein Dokument angewendet wird, werden alle Elemente im Wasserzeichen gleichzeitig auf das Dokument angewendet, und zwar in der Reihenfolge, in der sie dem Wasserzeichen hinzugefügt werden.
+Wenn Sie beispielsweise unterschiedlichen Text in Kopf- und Fußzeilen, an den Rändern und im gesamten Dokument als Wasserzeichen angeben möchten, erstellen Sie mehrere Wasserzeichenelemente und legen Sie ihre Position fest. Wenn Sie möchten, dass die Benutzer-ID des Benutzers und das aktuelle Datum des Zugriffs auf das Dokument in der Kopfzeile, der Name der Richtlinie am rechten Rand und ein benutzerdefinierter Text wie „VERTRAULICH“ diagonal über dem Dokument erscheinen, definieren Sie separate Wasserzeichenelemente mit Text als Typ und legen dessen Formatierung und Positionierung fest. Wenn das Wasserzeichen auf ein Dokument angewendet wird, werden alle Elemente im Wasserzeichen gleichzeitig auf das Dokument angewendet, und zwar in der Reihenfolge, in der sie dem Wasserzeichen hinzugefügt werden.
 
 In der Regel verwenden Sie PDF-basierte Wasserzeichen, damit grafische Inhalte wie Logos oder Sonderzeichen wie Copyright oder eingetragene Marke eingefügt werden können.
 
@@ -560,7 +560,7 @@ Document Security generiert automatisch eine Einladungs-E-Mail zur Registrierung
 
 Die Registrierungs-E-Mail enthält einen Hyperlink zu einer Registrierungsseite sowie Informationen zur Registrierung. Nachdem sich der eingeladene Benutzer registriert hat, sendet Document Security eine Aktivierungs-E-Mail mit einem Link zu einer Aktivierungsseite. Nach der Aktivierung bleibt das Konto gültig, bis es deaktiviert oder gelöscht wird.
 
-Durch Aktivieren von „Integrierte Registrierung“ geben Sie den SMTP-Server, die Details der Registrierungs-E-Mail, die Zugriffsmöglichkeiten und den Text der E-Mail-Nachricht zum Zurücksetzen des Kennworts nur einmal an. Bevor Sie die integrierte Registrierung aktivieren, stellen Sie sicher, dass Sie in User Management eine lokale Domäne erstellt haben, dass Sie den entsprechenden Benutzern und Gruppen in Ihrer Organisation die Rolle &quot;Document Security - Benutzer einladen&quot;zugewiesen haben. (Siehe [Lokale Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) und [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Wenn Sie „Integrierte Registrierung“ nicht verwenden, müssen Sie über ein eigenes mit dem AEM Forms-SDK erstelltes Benutzerregistrierungssystem verfügen. Weitere Informationen finden Sie in der Hilfe zum Entwickeln von SPIs für AEM Formulare in [Programmieren mit AEM Formularen](/help/forms/developing/introducing-java-api-soap-quick.md). Wenn Sie die Option „Integrierte Registrierung“ nicht verwenden, ist es ratsam, eine Meldung in der Aktivierungs-E-Mail sowie auf dem Clientanmeldebildschirm zu konfigurieren, um die Benutzer zu informieren, wie sie den Administrator für ein neues Kennwort oder andere Informationen kontaktieren können.
+Durch Aktivieren von „Integrierte Registrierung“ geben Sie den SMTP-Server, die Details der Registrierungs-E-Mail, die Zugriffsmöglichkeiten und den Text der E-Mail-Nachricht zum Zurücksetzen des Kennworts nur einmal an. Bevor Sie die integrierte Registrierung aktivieren, stellen Sie sicher, dass Sie in der Benutzerverwaltung eine lokale Domäne erstellt und den entsprechenden Benutzenden und Gruppen in Ihrem Unternehmen die Rolle „Dokumentensicherheit – Benutzer einladen“ zugewiesen haben. (Siehe [Lokale Domain hinzufügen](/help/forms/using/admin-help/adding-domains.md#add-a-local-domain) und [Rollen erstellen und konfigurieren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).) Wenn Sie „Integrierte Registrierung“ nicht verwenden, müssen Sie über ein eigenes mit dem AEM Forms-SDK erstelltes Benutzerregistrierungssystem verfügen. Siehe die Hilfe zu „Entwickeln von SPIs für AEM-Formulare“ in [Programmieren mit AEM Forms](/help/forms/developing/introducing-java-api-soap-quick.md). Wenn Sie die Option „Integrierte Registrierung“ nicht verwenden, ist es ratsam, eine Meldung in der Aktivierungs-E-Mail sowie auf dem Clientanmeldebildschirm zu konfigurieren, um die Benutzer zu informieren, wie sie den Administrator für ein neues Kennwort oder andere Informationen kontaktieren können.
 
 **Registrierung für eingeladene Benutzer aktivieren und deaktivieren**
 
@@ -579,7 +579,7 @@ Standardmäßig ist der Registrierungsprozess für eingeladene Benutzer deaktivi
 1. (Optional) Um „Integrierte Registrierung“ zu verwenden, wählen Sie „Ja“ aus. Wenn Sie „Integrierte Registrierung“ nicht aktivieren, müssen Sie ein eigenes Benutzerregistrierungssystem einrichten.
 1. Klicken Sie auf OK.
 
-### Externe Benutzer oder Benutzergruppen ein- oder ausschließen {#exclude-or-include-an-external-user-or-group}
+### Ein- oder Ausschließen von externen Benutzern oder Benutzergruppen {#exclude-or-include-an-external-user-or-group}
 
 Sie können die Registrierung bei Document Security auf bestimmte Benutzer oder Benutzergruppen beschränken. Diese Option ist hilfreich, wenn Sie beispielsweise einer bestimmten Benutzergruppe den Zugriff erlauben, jedoch bestimmte Gruppenmitglieder ausschließen möchten.
 
@@ -649,7 +649,7 @@ Die folgenden Einstellungen befinden sich im Bereich „E-Mail-Konfiguration“ 
 
 **Nachricht:** Der Text, der im Textkörper der Nachricht angezeigt wird und den Benutzer zur Registrierung einlädt.
 
-### Einstellungen für Aktivierungs-E-Mail {#activation-email-settings}
+### Einstellungen für die Aktivierungs-E-Mail {#activation-email-settings}
 
 Nach der Registrierung erhalten eingeladene Benutzer eine Aktivierungs-E-Mail von Document Security. Die Aktivierungs-E-Mail enthält einen Link zur Kontoaktivierungsseite, auf welcher der Benutzer sein Konto aktivieren kann. Nach der Aktivierung des Kontos können sich die Benutzer bei Document Security mit den Anmeldeinformationen (E-Mail-Adresse und Kennwort) anmelden, die sie bei der Registrierung angegeben haben.
 
@@ -669,7 +669,7 @@ Die folgenden Einstellungen befinden sich im Bereich „Konfiguration der Aktivi
 
 **Nachricht:** Der Text, der im Textkörper der Nachricht angezeigt wird und der angibt, dass das Benutzerkonto des Empfängers aktiviert werden muss. Sie können nach Wunsch weitere Informationen hinzufügen, z. B. wie der Administrator kontaktiert und ein neues Kennwort bezogen werden kann.
 
-### Eine E-Mail zum Zurücksetzen des Kennworts konfigurieren {#configure-a-password-reset-email}
+### Konfigurieren einer E-Mail zum Zurücksetzen des Kennworts {#configure-a-password-reset-email}
 
 Wenn Sie das Kennwort eines eingeladenen Benutzers zurücksetzen müssen, wird eine Bestätigungs-E-Mail generiert, die den Benutzer einlädt, ein neues Kennwort auszuwählen. Es gibt keine Möglichkeit, das Kennwort eines Benutzers zu ermitteln. Hat es der Benutzer vergessen, müssen Sie es zurücksetzen.
 
@@ -948,7 +948,7 @@ In diesem Beispiel werden alle Anforderungen von einer Microsoft PowerPoint 2007
  </node
 ```
 
-### Parameter der Wasserzeichenkonfiguration ändern {#change-the-watermark-configuration-parameters}
+### Ändern der Parameter der Wasserzeichenkonfiguration {#change-the-watermark-configuration-parameters}
 
 Standardmäßig können Sie maximal fünf Elemente in einem Wasserzeichen angeben. Die maximale Dateigröße des PDF-Dokuments, das Sie als Wasserzeichen verwenden möchten, ist auf 100 KB beschränkt ist. Sie können diese Parameter in der config.xml-Datei ändern.
 
@@ -969,7 +969,7 @@ Standardmäßig können Sie maximal fünf Elemente in einem Wasserzeichen angebe
 
 1. Importieren Sie eine Konfigurationsdatei. (Siehe [Manuelles Bearbeiten der Document Security-Konfigurationsdatei](configuring-client-server-options.md#manually-editing-the-document-security-configuration-file).)
 
-### Externe Verknüpfungen deaktivieren {#disabling-external-links}
+### Deaktivieren von externen Verknüpfungen {#disabling-external-links}
 
 Viele Document Security-Benutzer haben keinen Zugriff auf externe Verknüpfungen wie **www.adobe.com**, wenn sie die Rights Management-Benutzeroberflächen verwenden:
 
