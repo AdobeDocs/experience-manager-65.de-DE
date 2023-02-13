@@ -11,7 +11,7 @@ discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '578'
 ht-degree: 100%
 
@@ -25,7 +25,7 @@ Durch Verwenden der Benutzeroberfläche „Korrespondenz erstellen“ von Corres
 
 Correspondence Management bietet APIs, mit denen Sie die Listenschnittstelle erstellen können, um mit gesendeten Briefinstanzen oder Entwürfen zu arbeiten. Die APIs listen und öffnen gesendete und Entwurfsbriefinstanzen eines Agenten, damit der Agent weiterhin am Entwurf oder an der gesendeten Briefinstanz arbeiten kann.
 
-## Abrufen von Briefinstanzenf {#fetching-letter-instances}
+## Abrufen von Briefinstanzen {#fetching-letter-instances}
 
 Correspondence Management stellt APIs bereit, um  Briefinstanzen mithilfe von LetterInstanceService abzurufen.
 
