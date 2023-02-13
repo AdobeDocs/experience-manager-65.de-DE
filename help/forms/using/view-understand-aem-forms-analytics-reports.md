@@ -11,7 +11,7 @@ discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1050'
 ht-degree: 100%
 
@@ -105,7 +105,7 @@ Die Zusammenfassung auf Bereichsebene bietet die folgenden Informationen zu jede
 * **Aufgetretene Fehler**: Durchschnittliche Anzahl der Fehler, auf die die Benutzer in Feldern eines Bereichs gestoßen sind. „Aufgetretene Fehler“ wird berechnet, indem die Gesamtzahl der Fehler in einem Feld durch die Zahl der Ausgabedarstellungen des Formulars dividiert wird. 
 * **Zugriff auf Hilfe**: Durchschnittliche Anzahl der Aufrufe der kontextbezogenen Hilfe für die Felder im Bereich. „Zugriff auf Hilfe“ wird berechnet, indem die Gesamtzahl der Hilfe-Aufrufe eines Feldes durch die Zahl der Ausgabedarstellungen des Formulars dividiert wird.
 
-#### Detaillierter Bereichsbericht {#detailed-panel-report}
+#### Detaillierter Bedienfeldbericht {#detailed-panel-report}
 
 Sie können auch Details für jeden Bereich anzeigen, indem Sie auf den Namen des Bereichs im Bereichsbericht klicken.
 
