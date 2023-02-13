@@ -12,9 +12,9 @@ discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
 source-git-commit: a547b2e24205c63284a0e77f2e7f5678ae24968b
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1657'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -191,7 +191,7 @@ Weitere Informationen zur `editElementQuery`-Eigenschaft und zur Konfiguration d
 
 ### Beschränkungen {#limitations}
 
-Das AEM SPA Editor SDK wurde mit AEM 6.4 Service Pack 2 eingeführt. Sie wird von Adobe vollständig unterstützt und wird weiterhin verbessert und erweitert. Die folgenden AEM-Funktionen werden vom SPA-Editor noch nicht unterstützt:
+Das AEM SPA Editor SDK wurde mit AEM 6.4 Service Pack 2 eingeführt. Es wird von Adobe vollständig unterstützt und ständig verbessert und erweitert. Die folgenden AEM-Funktionen werden vom SPA-Editor noch nicht unterstützt:
 
 * Zielmodus
 * ContextHub
