@@ -1,5 +1,5 @@
 ---
-title: Interaktive Kommunikation mithilfe der Benutzeroberfläche für Agenten vorbereiten und senden
+title: Vorbereiten und Senden der interaktiven Kommunikation mithilfe der Agent-Benutzeroberfläche
 seo-title: Prepare and send Interactive Communication using the Agent UI
 description: Über die Benutzeroberfläche der Agenten können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
 seo-description: Prepare and send Interactive Communication using the Agent UI
@@ -10,13 +10,13 @@ discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2021'
 ht-degree: 100%
 
 ---
 
-# Interaktive Kommunikation mithilfe der Benutzeroberfläche für Agenten vorbereiten und senden {#prepare-and-send-interactive-communication-using-the-agent-ui}
+# Vorbereiten und Senden der interaktiven Kommunikation mithilfe der Agent-Benutzeroberfläche {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
 Über die Benutzeroberfläche der Agenten können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
 
@@ -121,7 +121,7 @@ Absatz-Symbolleiste
 
 ![Liste-Symbolleiste](do-not-localize/listtoolbar.png)
 
-Liste-Symbolleiste
+Listen-Symbolleiste
 
 ### Teile des Textes markieren/hervorheben {#highlightemphasize}
 
@@ -159,7 +159,7 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 
 * Bearbeiten (nur Textfragmente): Öffnen Sie den Rich-Text-Editor zum Bearbeiten des Textdokumentfragments. Weitere Informationen finden Sie unter [Text formatieren](#formattingtext).
 
-* Auswahl (Augensymbol): Schließt Dokumentfragmente in die interaktive Kommunikation ein/schließt sie daraus aus.
+* Auswahl (Augensymbol): Schließt Dokumentfragmente in die interaktive Kommunikation ein bzw. schließt sie daraus aus.
 * Nicht ausgefüllte Werte (Info): Gibt die Anzahl der nicht ausgefüllten Variablen im Dokumentfragment an.
 
 ### Listendokumentfragmente {#list-document-fragments}
