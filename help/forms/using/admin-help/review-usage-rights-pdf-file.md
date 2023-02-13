@@ -1,5 +1,5 @@
 ---
-title: Verwendungsrechte einer PDF-Datei überprüfen
+title: Überprüfen der Verwendungsrechte einer PDF-Datei
 seo-title: Review the usage rights of a PDF file
 description: Erfahren Sie, wie Sie die Verwendungsrechte einer PDF-Datei überprüfen.
 seo-description: Learn how to review the usage rights of a PDF file.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2777706c-d42b-4921-a8f4-720b7c0fa45e
 exl-id: 603edbd2-c012-4d25-99bf-c4f3dc147308
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '112'
 ht-degree: 100%
 
 ---
 
-# Verwendungsrechte einer PDF-Datei überprüfen {#review-the-usage-rights-of-a-pdf-file}
+# Überprüfen der Verwendungsrechte einer PDF-Datei {#review-the-usage-rights-of-a-pdf-file}
 
 Wenn Sie eine PDF-Datei in die Acrobat Reader DC Extensions-Webanwendung hochladen, können Sie diese Informationen anzeigen, um zu prüfen, ob Adobe Reader erweitert wurde, und um geltende Verwendungsrechte samt Ablaufdatum anzuzeigen.
 
