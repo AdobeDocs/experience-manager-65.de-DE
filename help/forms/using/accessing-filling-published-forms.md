@@ -11,7 +11,7 @@ discoiquuid: 88dc8ef2-95ce-4906-ac28-eecc3a32a64e
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '935'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ Die Komponente „Search &amp; Lister“ von Forms Portal zeigt die in der Verö
 
 ![Beispiel für die Forms Portal-Seite ](assets/forms-portal-page.png)
 
-Beispiel für die Forms Portal-Seite
+Beispiel für eine Forms Portal-Seite
 
 ### Search &amp; Lister {#search-and-lister}
 
@@ -88,7 +88,7 @@ Nach dem Ausfüllen des Formulars versenden Benutzer die Formulare, indem sie au
 
 ![Komponente „Drafts and Submissions“](assets/draft-submission.png)
 
-Komponente „Drafts and Submissions“
+Komponente „Entwürfe und Sendungen“
 
 ## Erstellen ein neues Formular mit den gesendeten Formulardaten {#start-a-new-form-using-submitted-form-data}
 
