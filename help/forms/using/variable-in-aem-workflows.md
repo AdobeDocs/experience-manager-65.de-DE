@@ -11,9 +11,9 @@ discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 source-git-commit: 3d0eb55eb35fcf5da1212b8be7c0aeee11307bb6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2208'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Das folgende Video zeigt, wie Sie Variablen in AEM-Workflow-Modellen erstellen, 
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
-Variablen sind eine Erweiterung der vorhandenen [MetaDataMap](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)-Schnittstelle. Sie können [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript verwenden, um auf Metadaten zuzugreifen, die mithilfe von Variablen gespeichert wurden.
+Variablen sind eine Erweiterung der vorhandenen [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html)-Schnittstelle. Sie können [MetaDataMap](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) in ECMAScript verwenden, um auf Metadaten zuzugreifen, die mithilfe von Variablen gespeichert wurden.
 
 ## Erstellen einer Variablen {#create-a-variable}
 
@@ -188,7 +188,7 @@ Alle AEM Forms-Workflow-Schritte unterstützen Variablen. Weitere Informationen 
 
 ### Workflow-Schritte ohne Unterstützung für Variablen {#workflow-steps-without-support-for-variables}
 
-Sie können die Schnittstelle [MetaDataMap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) verwenden, um auf Variablen in Workflow-Schritten zuzugreifen, die keine Variablen unterstützen.
+Sie können die Schnittstelle [MetaDataMap](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/metadata/MetaDataMap.html) verwenden, um auf Variablen in Workflow-Schritten zuzugreifen, die keine Variablen unterstützen.
 
 #### Abrufen des Variablenwerts {#retrieve-the-variable-value}
 
@@ -202,7 +202,7 @@ Verwenden Sie die folgenden APIs im ECMA-Skript, um Werte für vorhandene Variab
 | Formulardatenmodell | Packages.com.adobe.aem.dermis.api.FormDataModelInstance fdmObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.adobe.aem.dermis.api.FormDataModelInstance.class); |
 | JSON | Packages.com.google.gson.JsonObject jsonObject = workItem.getWorkflowData().getMetaDataMap().get(variableName, Packages.com.google.gson.JsonObject.class); |
 
-Sie benötigen das [AEM Forms Add-On-Paket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) für die Variablentypen „Dokument“ und „Formulardatenmodell“.
+Sie benötigen das [AEM Forms Add-On-Paket](https://helpx.adobe.com/de/aem-forms/kb/aem-forms-releases.html) für die Variablentypen „Dokument“ und „Formulardatenmodell“.
 
 **Beispiel**
 
@@ -232,7 +232,7 @@ Aktualisiert den Wert der Variablen **salary** (Gehalt) auf 50000.
 
 Sie können eine API verwenden, um Variablen festzulegen und sie dann zu übergeben, um Workflow-Instanzen aufzurufen.
 
-[workflowSession.startWorkflow](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) verwendet „model“, „wfData“ und „metaData“ als Argumente. Verwenden Sie MetaDataMap, um einen Wert für die Variable festzulegen.
+[workflowSession.startWorkflow](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) verwendet „model“, „wfData“ und „metaData“ als Argumente. Verwenden Sie MetaDataMap, um einen Wert für die Variable festzulegen.
 
 In dieser API wird die Variable **variableName** mithilfe von metaData.put(variableName, value) auf **value** festgelegt.
 
@@ -269,10 +269,10 @@ WorkflowModel model = workflowSession.getModel(modelId);
 workflowSession.startWorkflow(model, wfData, metaData);
 ```
 
-### Speichern vertraulicher Benutzerdaten außerhalb von JCR mithilfe von Workflow-Variablen {#jcr-independent-persistance}
+### Speichern sensibler Benutzerdaten außerhalb von JCR mit Hilfe von Workflow-Variablen {#jcr-independent-persistance}
 
-Daten, die mit dem Arbeitsablauf für Formulare verarbeitet werden, können vertrauliche Benutzerdaten wie personenbezogene Daten und vertrauliche personenbezogene Daten enthalten. Unternehmen können die Daten, die von verschiedenen Workflow-Schritten verarbeitet (und mithilfe von Workflow-Variablen weitergegeben werden), aus dem JCR-Speicher in einen externen Datenspeicher speichern, der ihnen gehört und von ihnen verwaltet wird. Weitere Informationen zum Beibehalten von Workflow-Daten in einem externen Speicher finden Sie unter [Verwenden von Workflow-Variablen für kundeneigene Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
-[!DNL Adobe Experience Manager] bietet Workflow-API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer) , um Workflow-Variablen in externen Azure-Blob-Speichern zu speichern. Weitere Informationen zur Verwendung der API finden Sie unter [Verwenden Sie Workflow-Variablen, um sensible Daten zu parametrisieren und in externen Datenspeichern zu speichern.](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
+Daten, die mit Hilfe von Forms-Workflows verarbeitet werden, können sensible Benutzerdaten enthalten, wie z. B. persönlich identifizierbare Informationen und sensible persönliche Informationen. Unternehmen können sich dafür entscheiden, die Daten, die von verschiedenen Workflow-Schritten verarbeitet (und mit Hilfe von Workflow-Variablen übergeben) werden, außerhalb des JCR-Speichers in einem externen Datenspeicher zu speichern, der ihnen gehört und von ihnen verwaltet wird. Weitere Informationen über die Speicherung von Workflow-Daten in einem externen Speicher finden Sie unter [Verwendung von Workflow-Variablen für kundeneigene Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+[!DNL Adobe Experience Manager] bietet die Workflow-API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer), um Workflow-Variablen in externen Azure-Blob-Speichern zu speichern. Für Details zur Verwendung der API siehe [Verwenden von Workflow-Variablen zum Parametrisieren sensibler Daten und Speichern in externen Datenspeichern](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Bearbeiten einer Variablen {#edit-a-variable}
 
