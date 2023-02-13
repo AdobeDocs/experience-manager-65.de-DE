@@ -1,5 +1,5 @@
 ---
-title: Systeminformationen anzeigen
+title: Anzeigen von Systeminformationen
 seo-title: View system information
 description: Erfahren Sie, wie Sie Diagramme zur Ressourcenüberwachung und Informationen über den Server anzeigen, der AEM Forms ausführt.
 seo-description: Learn how you can view resource monitoring charts and information about the server that is running AEM forms.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '540'
 ht-degree: 100%
 
 ---
 
-# Systeminformationen anzeigen {#view-system-information}
+# Anzeigen von Systeminformationen {#view-system-information}
 
 Auf der Registerkarte „System“ werden Diagramme zur Ressourcenüberwachung und Informationen über den Server angezeigt, der AEM Forms ausführt. Klicken Sie in Administration Console in der rechten oberen Ecke der Seite auf „Health Monitor“, um diese Informationen anzuzeigen. Wenn Sie AEM Forms in einer Clusterumgebung ausführen, gelten die angezeigten Informationen für den auf der Serverliste ausgewählten Knoten.
 
