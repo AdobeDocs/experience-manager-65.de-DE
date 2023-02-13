@@ -12,7 +12,7 @@ discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
 source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5398'
 ht-degree: 100%
 
@@ -52,12 +52,12 @@ Die Java-API unterstützt die folgenden Funktionen:
 
 [Erstellen einer Java-Web-Anwendung, die einen langlebigen, an Menschen orientierten Prozess aufruft](/help/forms/developing/invoking-human-centric-long-lived.md)
 
-## Einbeziehung von AEM Forms Java-Bibliotheksdateien {#including-aem-forms-java-library-files}
+## Einbeziehen von AEM Forms Java-Bibliotheksdateien {#including-aem-forms-java-library-files}
 
 Um einen AEM Forms-Dienst mithilfe der Java-API programmgesteuert aufzurufen, fügen Sie die erforderlichen Bibliotheksdateien (JAR-Dateien) in den Klassenpfad Ihres Java-Projekts ein. Die JAR-Dateien, die Sie in den Klassenpfad Ihrer Client-Anwendung aufnehmen, hängen von mehreren Faktoren ab:
 
 * Der aufzurufende AEM Forms-Dienst. Eine Client-Anwendung kann einen oder mehrere Dienste aufrufen.
-* Der Modus, in dem Sie einen AEM Forms-Dienst aufrufen möchten. Sie können den EJB- oder SOAP-Modus verwenden. (Siehe [Einstellung von Verbindungseigenschaften](invoking-aem-forms-using-java.md#setting-connection-properties).)
+* Der Modus, in dem Sie einen AEM Forms-Dienst aufrufen möchten. Sie können den EJB- oder SOAP-Modus verwenden. (Siehe [Einstellen von Verbindungseigenschaften](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
   <tr>
    <td><p>adobe-usermanager-client.jar</p></td>
    <td><p>Muss immer im Klassenpfad einer Java-Client-Anwendung enthalten sein.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-utilities.jar</p></td>
@@ -96,92 +96,92 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
   <tr>
    <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
    <td><p>Erforderlich, um den Application Manager-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-assembler-client.jar</p></td>
    <td><p>Erforderlich, um den Assembler-Dienst aufzurufen. </p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-backup-restore-client-sdk.jar</p></td>
    <td><p>Erforderlich zum Aufrufen der Backup- und Wiederherstellungsdienst-API.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-barcodedforms-client.jar</p></td>
    <td><p>Erforderlich, den Barcoded Forms-Dienst aufzurufen. </p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-convertpdf-client.jar</p></td>
    <td><p>Erforderlich, um den Convert PDF-Dienst aufzurufen. </p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-distiller-client.jar</p></td>
    <td><p>Erforderlich, um den Distiller-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-docconverter-client.jar</p></td>
    <td><p>Erforderlich, um den DocConverter-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-contentservices-client.jar</p></td>
    <td><p>Erforderlich, um den Document Management-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-encryption-client.jar</p></td>
    <td><p>Erforderlich, um den Verschlüsselungsdienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-forms-client.jar</p></td>
    <td><p>Erforderlich, um den Forms-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-formdataintegration-client.jar</p></td>
    <td><p>Erforderlich, um den Form Data Integration-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-generatepdf-client.jar</p></td>
    <td><p>Erforderlich, um den Generate PDF-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-generate3dpdf-client.jar</p></td>
    <td><p>Erforderlich, um den Generate 3D PDF-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-jobmanager-client-sdk.jar</p></td>
    <td><p>Erforderlich, um den Job Manager-Dienst aufzurufen. </p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-output-client.jar</p></td>
    <td><p>Erforderlich, um den Output-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-pdfutility-client.jar</p></td>
    <td><p>Erforderlich, um den PDF Utilities- oder XMP Utilities-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-reader-extensions-client.jar</p></td>
    <td><p>Erforderlich, um den Acrobat Reader DC Extensions-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
    <td><p>Erforderlich, um den Repository-Dienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p><p>&lt;<i>install directory</i>&gt;/sdk/client-libs\thirdparty</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p><p>&lt;<i>install directory</i>&gt;/sdk/client-libs\thirdparty</p></td>
   </tr>
   <tr>
    <td>
@@ -196,22 +196,22 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die zum Aufrufen von 
      <li><p>xsdlib.jar</p></li>
     </ul></td>
    <td><p>Erforderlich, um den Rights Management-Dienst aufzurufen.</p><p>Wenn AEM Forms auf JBoss bereitgestellt wird, schließen Sie alle diese Dateien ein. </p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p><p>JBoss-spezifisches lib-Verzeichnis</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p><p>JBoss-spezifisches lib-Verzeichnis</p></td>
   </tr>
   <tr>
    <td><p>adobe-signatures-client.jar</p></td>
    <td><p>Erforderlich, um den Signaturdienst aufzurufen.</p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-taskmanager-client-sdk.jar</p></td>
    <td><p>Erforderlich, um den Task Manager-Dienst aufzurufen. </p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
   <tr>
    <td><p>adobe-truststore-client.jar</p></td>
    <td><p>Erforderlich, um den Trust Store-Dienst aufzurufen. </p></td>
-   <td><p>&lt;<i>Installationsordner</i>&gt;/sdk/client-libs/common</p></td>
+   <td><p>&lt;<i>install directory</i>&gt;/sdk/client-libs/common</p></td>
   </tr>
  </tbody>
 </table>
@@ -223,7 +223,7 @@ In der folgenden Tabelle sind die JAR-Dateien aufgeführt, die vom Verbindungsmo
 <table>
  <thead>
   <tr>
-   <th><p>Datei</p> </th>
+   <th><p>File</p> </th>
    <th><p>Beschreibung</p> </th>
    <th><p>Ort</p> </th>
   </tr>
@@ -341,7 +341,7 @@ In der folgenden Tabelle werden die Aufrufszenarien angegeben und die zum erfolg
      <li><p>adobe-usermanager-client.jar</p> </li>
      <li><p>wlclient.jar</p> </li>
      <li><p>activation.jar</p> </li>
-     <li><p>axis.jar</p> </li>
+     <li><p>achse.jar</p> </li>
      <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collections-3.1.jar</p> </li>
      <li><p>commons-discovery.jar</p> </li>
@@ -370,7 +370,7 @@ In der folgenden Tabelle werden die Aufrufszenarien angegeben und die zum erfolg
      <li><p>adobe-usermanager-client.jar</p> </li>
      <li><p>wlclient.jar</p> </li>
      <li><p>activation.jar</p> </li>
-     <li><p>axis.jar</p> </li>
+     <li><p>achse.jar</p> </li>
      <li><p>commons-codec-1.3.jar</p> </li>
      <li><p>commons-collections-3.1.jar</p> </li>
      <li><p>commons-discovery.jar</p> </li>
@@ -414,7 +414,7 @@ Angenommen, dass Sie auf AEM Forms aktualisieren Um eine Java-Anwendung zu verwe
 
 [Aufrufen eines Dienstes mithilfe einer Java-Client-Bibliothek](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Verbindungseigenschaften festlegen {#setting-connection-properties}
+## Festlegen von Verbindungseigenschaften {#setting-connection-properties}
 
 Sie legen Verbindungseigenschaften fest, um AEM Forms bei Verwendung der Java-API aufzurufen. Geben Sie beim Festlegen von Verbindungseigenschaften an, ob Dienste remote oder lokal aufgerufen werden sollen, sowie den Verbindungsmodus und die Authentifizierungswerte. Authentifizierungswerte sind erforderlich, wenn die Dienstsicherheit aktiviert ist. Wenn die Servicesicherheit jedoch deaktiviert ist, müssen keine Authentifizierungswerte angegeben werden.
 
@@ -445,7 +445,7 @@ Um einen AEM Forms-Dienst erfolgreich aufzurufen, legen Sie die folgenden Verbin
    >Anstatt eine Zeichenfolge zu verwenden, um die `DSC_SERVER_TYPE` Verbindungseigenschaft zu setzen, können Sie ein statisches Mitglied der `ServiceClientFactoryProperties` Klasse verwenden. Die folgenden Werte können verwendet werden: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, oder `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:** Gibt den AEM Forms-Benutzernamen an. Damit ein Benutzer erfolgreich einen AEM Forms-Dienst aufrufen kann, benötigen Sie die Rolle „Dienstbenutzer“. Ein Benutzer kann auch eine andere Rolle haben, die die Berechtigung zum Service-Aufruf enthält. Andernfalls wird eine Ausnahme ausgelöst, wenn versucht wird, einen Dienst aufzurufen. Wenn die Servicesicherheit jedoch deaktiviert ist, müssen keine Authentifizierungswerte angegeben werden.
-* **DSC_CREDENTIAL_PASSWORD:** Gibt den entsprechenden Kennwortwert an. Wenn die Servicesicherheit jedoch deaktiviert ist, müssen keine Authentifizierungswerte angegeben werden.
+* **DSC_CREDENTIAL_PASSWORD:** Gibt den entsprechenden Kennwortwert an. Wenn die Service-Sicherheit jedoch deaktiviert ist, müssen keine Authentifizierungswerte angegeben werden.
 * **DSC_REQUEST_TIMEOUT:** Das Standardlimit für Anforderungszeitlimits für die SOAP-Anforderung beträgt 1200000 Millisekunden (20 Minuten). Manchmal kann eine Anfrage länger dauern, um den Vorgang abzuschließen. Beispielsweise kann eine SOAP-Anforderung, die eine große Menge von Datensätzen abruft, ein längeres Zeitlimit erfordern. Mit `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` können Sie das Zeitlimit für Anforderungsaufrufe für die SOAP-Anforderungen erhöhen.
 
    **Hinweis**: Nur SOAP-basierte Aufrufe unterstützen die DSC_REQUEST_TIMEOUT Eigenschaft.
@@ -960,7 +960,7 @@ Wenn Sie ein `Document`-Objekt nicht mehr benötigen, wird empfohlen, dass Sie e
 
 AEM Forms-Dienstvorgänge können mithilfe der stark typisierten API eines Diensts aufgerufen werden, die als Java-Clientbibliothek bezeichnet wird. Eine *Java-Client-Bibliothek* ist eine Reihe konkreter Klassen, die den Zugriff auf Dienste ermöglichen, die im Dienstcontainer bereitgestellt werden. Sie instanziieren ein Java-Objekt, das den Dienst zum Aufrufen darstellt, anstelle dass ein `InvocationRequest`-Objekt durch die Verwendung der Aufruf-API erstellt wird. Die Aufruf-API wird zum Aufrufen von Prozessen wie langlebigen Prozessen verwendet, die in Workbench erstellt wurden. (Siehe [An Menschen orientierte langlebige Prozesse aufrufen](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
-Rufen Sie zum Ausführen eines Dienstvorgangs eine Methode auf, die zu dem Java-Objekt gehört. Eine Java-Client-Bibliothek enthält Methoden, die in der Regel Eins-zu-Eins-Serviceoperationen zuordnen. Legen Sie bei Verwendung einer Java-Client-Bibliothek die erforderlichen Verbindungseigenschaften fest. (Siehe [Einstellung von Verbindungseigenschaften](invoking-aem-forms-using-java.md#setting-connection-properties).)
+Rufen Sie zum Ausführen eines Dienstvorgangs eine Methode auf, die zu dem Java-Objekt gehört. Eine Java-Client-Bibliothek enthält Methoden, die in der Regel Eins-zu-Eins-Serviceoperationen zuordnen. Legen Sie bei Verwendung einer Java-Client-Bibliothek die erforderlichen Verbindungseigenschaften fest. (Siehe [Festlegen von Verbindungseigenschaften](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 Nachdem Sie die Verbindungseigenschaften festgelegt haben, erstellen Sie ein `ServiceClientFactory`-Objekt, mit dem ein Java-Objekt instanziiert wird, mit dem Sie einen Service aufrufen können. Jeder Dienst, der über eine Java-Client-Bibliothek verfügt, verfügt über ein entsprechendes Client-Objekt. Um zum Beispiel den Repository-Dienst aufzurufen, erstellen Sie ein `ResourceRepositoryClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben. Das `ServiceClientFactory`-Objekt ist für die Verwaltung der Verbindungseinstellungen verantwortlich, die zum Aufrufen von AEM Forms-Diensten erforderlich sind.
 
@@ -974,7 +974,7 @@ Es gibt eine Benutzer-Manager-Einstellung, die die Lebensdauer der SAML-Assertio
 
 Sie können den Repository-Dienst mithilfe einer Java-Clientbibliothek aufrufen und die folgenden Schritte ausführen:
 
-1. Fügen Sie Client-JAR-Dateien wie „adobe-repository-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. Weitere Informationen über den Speicherort dieser Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+1. Fügen Sie Client-JAR-Dateien wie „adobe-repository-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. Weitere Informationen über den Speicherort dieser Dateien finden Sie unter [Einbeziehen von AEM Forms Java-Bibliotheksdateien](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Legen Sie die Verbindungseigenschaften fest, die zum Aufrufen eines Dienstes erforderlich sind.
 1. Erstellen Sie ein `ServiceClientFactory`-Objekt, indem Sie die statische `createInstance`-Methode des `ServiceClientFactory`-Objekts aufrufen und das `java.util.Properties`-Objekt übergeben, das die Verbindungseigenschaften enthält.
 1. Erstellen Sie ein `ResourceRepositoryClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben. Verwenden Sie das `ResourceRepositoryClient`-Objekt, um Repository-Dienstvorgänge aufzurufen.
@@ -1006,7 +1006,7 @@ Sie können den Repository-Dienst mithilfe einer Java-Clientbibliothek aufrufen 
 
 [Einbeziehung von AEM Forms Java-Bibliotheksdateien](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-## Aufruf eines kurzlebigen Prozesses mithilfe der Aufruf-API {#invoking-a-short-lived-process-using-the-invocation-api}
+## Aufrufen eines kurzlebigen Prozesses mithilfe der Aufruf-API {#invoking-a-short-lived-process-using-the-invocation-api}
 
 Sie können einen kurzlebigen Prozess mithilfe der Java Aufruf-API aufrufen. Wenn Sie einen kurzlebigen Prozess mit der Aufruf-API aufrufen, übergeben Sie die erforderlichen Parameterwerte mithilfe eines `java.util.HashMap`-Objekts. Für jeden Parameter, der an einen Dienst übergeben werden soll, rufen Sie die Methode `java.util.HashMap` des Objekts `put` auf und geben Sie das Namen-Wertpaar an, das durch den Dienst erforderlich ist, um den angegebenen Vorgang durchzuführen. Geben Sie den genauen Namen der Parameter an, die zu dem kurzlebigen Prozess gehören.
 
@@ -1029,7 +1029,7 @@ Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
 Rufen Sie den kurzlebigen Prozess `MyApplication/EncryptDocument` mithilfe der Java-Aufruf-API auf:
 
-1. Fügen Sie Client-JAR-Dateien wie „adobe-livecycle-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. (Siehe [Einbeziehung von AEM Forms Java-Bibliotheksdateien](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
+1. Fügen Sie Client-JAR-Dateien wie „adobe-livecycle-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. (Siehe [Einbeziehen von AEM Forms Java-Bibliotheksdateien](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 1. Erstellen Sie ein `ServiceClientFactory`-Objekt, das Verbindungseigenschaften enthält. (Siehe [Einstellung von Verbindungseigenschaften](invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Erstellen Sie ein `ServiceClient`-Objekt, indem Sie seinen Konstruktor verwenden und das `ServiceClientFactory`-Objekt übergeben. Mit einem `ServiceClient` -Objekt können Sie einen Dienstvorgang aufrufen. Es erledigt Aufgaben wie das Auffinden, Versenden und Weiterleiten von Aufrufanforderungen.
 1. Erstellen Sie ein Objekt `java.util.HashMap`, indem Sie den Konstruktor verwenden.
