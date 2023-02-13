@@ -11,9 +11,9 @@ discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7149'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -25,9 +25,9 @@ Ein Administrator kann einen Netzwerkordner konfigurieren, der als überwachter 
 
 Sie können überwachte Ordner im Dateisystem mit einer der folgenden Methoden erstellen:
 
-* Geben Sie beim Konfigurieren der Eigenschaften eines Konfigurationsknotens für den überwachten Ordner den vollständigen Pfad des übergeordneten Ordners in die Eigenschaft &quot;folderPath&quot;ein und hängen Sie den Namen des zu erstellenden überwachten Ordners an, wie im folgenden Beispiel gezeigt: `C:/MyPDFs/MyWatchedFolder`
-Die 
-`MyWatchedFolder`nicht vorhanden ist, versucht AEM Forms, den Ordner unter dem angegebenen Pfad zu erstellen.
+* Wenn Sie die Eigenschaften eines Konfigurationsknotens für einen überwachten Ordner konfigurieren, geben Sie den vollständigen Pfad des übergeordneten Verzeichnisses in die Eigenschaft „folderPath“ ein und fügen den Namen des zu erstellenden überwachten Ordners hinzu, wie im folgenden Beispiel gezeigt: `C:/MyPDFs/MyWatchedFolder`
+Wenn der 
+Ordner `MyWatchedFolder` nicht vorhanden ist, versucht AEM Forms, den Ordner unter dem angegebenen Pfad zu erstellen.
 
 * Erstellen Sie vor dem Konfigurieren eines Endpunkts des Typs „Überwachter Ordner“ einen Ordner im Dateisystem und geben Sie anschließend den vollständigen Pfad in die Eigenschaft „folderPath“ ein. Detaillierte Informationen zur Eigenschaft „folderPath“ finden Sie unter [Eigenschaften für überwachte Ordner](#watchedfolderproperties).
 
@@ -76,7 +76,7 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
 
    * author
 
-   * veröffentlichen
+   * publish
 
    * author, Veröffentlichungsinstanz
 
@@ -100,8 +100,8 @@ Sie können die folgenden Eigenschaften für überwachte Ordner konfigurieren.
 * **excludeFilePattern (Zeichenfolge)**: Eine durch Semikolon (;) getrennte Liste von Mustern, mit deren Hilfe in einem überwachten Ordner ermittelt wird, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Alle Dateien oder Ordner, die diesem Muster entsprechen, werden nicht für die Verarbeitung überprüft. Diese Einstellung ist hilfreich, wenn die Eingabe aus einem Ordner mit mehreren Dateien besteht. Der Inhalt des Ordners kann in einen Ordner mit einem Namen kopiert werden, der vom überwachten Ordner aufgenommen wird. Dies verhindert, dass der überwachte Ordner einen Ordner für die Verarbeitung aufnimmt, bevor dieser vollständig in den Eingabeordner kopiert ist. Der Standardwert ist Null.
 Sie können [Dateimuster](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) verwenden, um Folgendes auszuschließen:
 
-   * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
-   * Dateien mit bestimmten Namen; z. B. Daten&#42; würde Dateien und Ordner mit den Namen data1, data2 usw. ausschließen.
+   * Dateien mit bestimmten Dateinamenerweiterungen, z. B. &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+   * Dateien mit bestimmten Namen; durch „data&#42;“ würden beispielsweise Dateien und Ordner mit den Namen „data1“, „data2“ usw. ausgeschlossen.
    * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
       * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
@@ -110,9 +110,9 @@ Sie können [Dateimuster](../../forms/using/watched-folder-in-aem-forms.md#p-fil
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p).
 
-* **includeFilePattern (Zeichenfolge)**: Eine durch Semikolon (;) getrennte Liste von Mustern, mit deren Hilfe in einem überwachten Ordner ermittelt wird, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Wenn beispielsweise das IncludeFilePattern die Eingabe ist&#42;, alle Dateien und Ordner, die der Eingabe entsprechen&#42; abgeholt werden. Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw. Der Standardwert ist &#42; und zeigt alle Dateien und Ordner an. Sie können Dateimuster verwenden, um Folgendes einzuschließen:
+* **includeFilePattern (Zeichenfolge)**: Eine durch Semikolon (;) getrennte Liste von Mustern, mit deren Hilfe in einem überwachten Ordner ermittelt wird, welche Dateien und Ordner überprüft und aufgenommen werden sollen. Wenn zum Beispiel für IncludeFilePattern „input&#42;“ festgelegt wird, werden alle Dateien und Ordner aufgenommen, die „input&#42;“ enthalten Hierzu gehören auch Dateien und Ordner namens „input1“, „input2“ usw. Der Standardwert ist &#42; und bezieht sich auf alle Dateien und Ordner. Sie können Dateimuster verwenden, um Folgendes einzuschließen:
 
-   * Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+   * Dateien mit bestimmten Dateinamenerweiterungen, z. B. &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
    * Dateien mit bestimmten Namen, z. B. data.&#42; Hierzu gehören auch Dateien und Ordner namens data1, data2 usw.
 
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
@@ -120,11 +120,11 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
 
       * &#42;.[dD][Aa]&#39;port&#39;
-      * &#42;.[Xx][MM][Ll]
+      * &#42;.[Xx][Mm][Ll]
 
 Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](../../forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)
 
-* **waitTime (Lang)**: Die Zeit in Millisekunden, die gewartet wird, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0. Diese Einstellung ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und das Herunterladen der Datei zehn Minuten dauert, setzen Sie die Wartezeit auf 10&#42;60 &#42;1000 Millisekunden. Dies verhindert, dass der überwachte Ordner die Datei bereits vor Ablauf der zehn Minuten überprüft.
+* **waitTime (Lang)**: Die Zeit in Millisekunden, die gewartet wird, bevor ein Ordner oder eine Datei nach der Erstellung überprüft wird. Wenn die Wartezeit beispielsweise 3.600.000 Millisekunden (eine Stunde) beträgt und die Datei vor einer Minute erstellt wurde, wird diese Datei nach Ablauf von mindestens 59 Minuten abgerufen. Der Standardwert ist 0. Diese Einstellung ist nützlich, um sicherzustellen, dass eine Datei oder ein Ordner vollständig in den Eingabeordner kopiert wurde. Wenn Sie beispielsweise eine große Datei verarbeiten müssen und das Herunterladen der Datei 10 Minuten dauert, legen Sie die Wartezeit auf 10&#42;60 &#42;1000 Millisekunden fest. Dies verhindert, dass der überwachte Ordner die Datei bereits vor Ablauf der zehn Minuten überprüft.
 * **purgeDuration (Lang)**: Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Diese Einstellung hilft dafür zu sorgen, dass der Ergebnisordner nicht voll wird. Ein Wert von „-1“ Tage bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 * **resultFolderName (Zeichenfolge)**: Der Ordner, in dem die Ergebnisse gespeichert werden. Wenn die Ergebnisse nicht in diesem Ordner angezeigt werden, überprüfen Sie den Fehlerordner. Schreibgeschützte Dateien werden nicht verarbeitet und im Fehlerordner gespeichert. Dieser Wert kann ein absoluter oder relativer Pfad mit folgendem Dateimuster sein:
 
@@ -175,7 +175,7 @@ Informationen zu Dateimustern finden Sie unter [Grundlegendes zu Dateimustern](.
 * **enabled (Boolescher Wert)**: Deaktiviert und aktiviert die Überprüfung des überwachten Ordners. Legen Sie für „enabled“ den Wert „true“ fest, um die Überprüfung des überwachten Ordners zu starten. Der Standardwert lautet true.
 * **payloadMapperFilter:** Wenn ein Ordner als überwachter Ordner konfiguriert ist, wird im überwachten Ordner eine Ordnerstruktur erstellt. Die Struktur verfügt über Ordner, um Eingaben bereitzustellen, Ausgaben (Ergebnisse) zu empfangen, Daten für Fehler zu speichern, Daten für langlebige Prozesse zu bewahren und Daten für verschiedene Phasen zu speichern. Die Ordnerstruktur eines überwachten Ordners kann als eine Nutzlast für formularzentrierte Workflows dienen. Mit einem Payload-Mapper können Sie die Struktur einer Nutzlast definieren, die einen überwachten Ordner für Eingabe, Ausgabe und Verarbeitung verwendet. Wenn Sie beispielsweise den standardmäßigen Zuordner verwenden, ordnet er den Inhalt des überwachten Ordners dem Ordner [payload]\input und [payload]\output zu. Zwei Standard-Mapper-Implementierungen sind verfügbar. Wenn Sie keine[ benutzerdefinierte Implementierung](../../forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter) haben, verwenden Sie eine Standard-Implementierung:
 
-   * **Standard-Mapper:** Verwenden Sie den Standard-Payload-Mapper, um den Eingabe- und Ausgabe-Inhalt der überwachten Ordner in separaten Eingabe- und Ausgabeordnern in der Payload zu belassen. Verwenden Sie im Payload-Pfad eines Workflows außerdem die Pfade [payload]/input/ und [payload]/output, um Inhalte abzurufen und zu speichern.
+   * **Standard-Mapper**: Verwenden Sie den Standard-Payload-Mapper, um den Eingabe- und Ausgabe-Inhalt der überwachten Ordner in separaten Eingabe- und Ausgabeordnern in der Payload zu belassen. Verwenden Sie im Payload-Pfad eines Workflows außerdem die Pfade [payload]/input/ und [payload]/output, um Inhalte abzurufen und zu speichern.
 
    * **Einfacher dateibasierter Payload-Mapper:** Verwenden Sie den einfachen dateibasierten Payload-Mapper, um Eingabe- und Ausgabe-Inhalte direkt im Nutzdatenordner zu beizubehalten. Er erstellt keine zusätzliche Hierarchie, wie Standard-Mapper.
 
@@ -194,7 +194,7 @@ Diese Eigenschaften werden als unveränderliche Zuordnung des Typs „Map&lt;Str
 
 ![Beispiel: Konfigurationsknoten für überwachten Ordner mit obligatorischen Eigenschaften, einige optionalen Eigenschaften und einigen Konfigurationsparametern](assets/custom-configuration-parameters.png)
 
-Beispiel: Konfigurationsknoten für überwachten Ordner mit obligatorischen Eigenschaften, einige optionalen Eigenschaften und einigen Konfigurationsparametern.
+Beispiel: Konfigurationsknoten für überwachten Ordner mit obligatorischen Eigenschaften, einigen optionalen Eigenschaften und einigen Konfigurationsparametern.
 
 #### Veränderliche Variablen für Workflows {#mutable-variables-for-workflows}
 
@@ -563,13 +563,13 @@ Die Ausgabe der ersten Konvertierung wird an „\Pfad\result“ übergeben. Als 
 
 Administratoren können den Dateityp angeben, von dem ein Dienst aufgerufen werden kann. Für jeden überwachten Ordner können mehrere Dateimuster angegeben werden. Ein Dateimuster kann eine der folgenden Dateieigenschaften sein:
 
-* Dateien mit bestimmten Dateinamenerweiterungen; Beispiel: &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
+* Dateien mit bestimmten Dateinamenerweiterungen, z. B. &#42;.dat, &#42;.xml, .pdf, &#42;.&#42;
 * Dateien mit bestimmten Namen, z. B. data.&#42;
 * Dateien mit zusammengesetzten Ausdrücken in Name und Erweiterung, wie in den folgenden Beispielen:
 
    * Data[0-9][0-9][0-9].[dD][aA]&#39;port&#39;
    * &#42;.[dD][Aa]&#39;port&#39;
-   * &#42;.[Xx][MM][Ll]
+   * &#42;.[Xx][Mm][Ll]
 
 * Der Administrator kann das Dateimuster für den Ausgabeordner definieren, in dem die Ergebnisse gespeichert werden sollen. Für die Ausgabeordner (Ergebnis, Beibehalten und Fehler; „result“, „preserve“ und „failure“) kann der Administrator jedes der folgenden Dateimuster angeben:
 * %Y = Jahr (vollständig)
@@ -590,7 +590,7 @@ Der Pfad zum Ergebnisordner kann beispielsweise „C:\Adobe\Adobe LiveCycle ES4\
 * %F = Quelldateiname
 * %E = Quelldateinamenerweiterung
 
-Wenn das Zuordnungsmuster der Ausgabeparameter mit &quot;File.separator&quot;(dem Pfadtrennzeichen) endet, wird ein Ordner erstellt und der Inhalt in diesen Ordner kopiert. Wenn das Muster nicht mit &quot;File.separator&quot;endet, wird der Inhalt (Ergebnisdatei oder -ordner) mit diesem Namen erstellt.
+Wenn das Muster der Zuordnung von Ausgabeparametern mit „File.separator“ (dem Pfadtrennzeichen) endet, wird ein Ordner erstellt und der Inhalt in diesen Ordner kopiert. Endet das Muster nicht mit „File.separator“, wird der Inhalt (Ergebnisdatei oder -ordner) mit diesem Namen erstellt.
 
 ## Verwendung von PDF Generator für einen überwachten Ordner {#using-pdf-generator-with-a-watched-folder}
 
@@ -602,7 +602,7 @@ Führen Sie die folgenden Schritte aus, um einen überwachten Ordner mit PDF Gen
 1. [Workflow erstellen](../../forms/using/watched-folder-in-aem-forms.md#p-create-a-workflow-p)
 1. [Überwachten Ordner konfigurieren](../../forms/using/watched-folder-in-aem-forms.md#p-configure-the-watched-folder-p)
 
-### ECMAScript erstellen {#create-an-ecmascript}
+### Erstellen eines ECMAScript {#create-an-ecmascript}
 
 Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsoft Word-Dokumente (.docx) in PDF-Dokumente. Führen Sie die folgenden Schritte aus, um das Skript zu erstellen:
 
@@ -639,7 +639,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
 ### Workflow erstellen {#create-a-workflow}
 
-1. Öffnen Sie die AEM Workflow-Benutzeroberfläche in einem Browserfenster.
+1. Öffnen Sie die AEM Workflow-Benutzeroberfläche in einem Browser-Fenster.
    <https://[servername>]:&#39;port&#39;/workflow
 
 1. Klicken Sie in der Modellansicht auf **Neu**. Geben Sie im Dialogfeld „Neuer Workflow“ den **Titel** an und klicken Sie auf **OK**.
@@ -658,7 +658,7 @@ Das ECMAScript konvertiert mithilfe des createPDF-API von PDF Generator Microsof
 
    ![create-a-workflow3-pdf](assets/create-a-workflow3-pdf.png)
 
-### Überwachten Ordner konfigurieren {#configure-the-watched-folder}
+### Konfigurieren des überwachten Ordners {#configure-the-watched-folder}
 
 1. Öffnen Sie CRXDE Lite in einem Browserfenster. https://&#39;[server]:[port]&#39;/crx/de/
 
@@ -678,4 +678,4 @@ inputProcessorType (Zeichenfolge): Der Typ des zu startenden Prozesses. Geben Si
 
 ## Bekannte Probleme {#watched-folder-known-issues}
 
-Beim Starten von Forms on JEE AEM 6.5 werden Dateien verarbeitet, bevor JBoss vollständig gestartet wird und Dateien nicht verarbeitet werden können. Um dies zu vermeiden, löschen Sie vor dem Starten von JBoss alle überwachten Ordner.
+Beim Starten von AEM 6.5 Forms auf JEE werden Dateien verarbeitet, bevor JBoss vollständig gestartet wird, wodurch Dateien nicht verarbeitet werden können. Um dies zu vermeiden, löschen Sie vor dem Starten von JBoss alle überwachten Ordner.
