@@ -226,7 +226,6 @@ Jede Produktressource kann als `Product API` dargestellt werden. Die meisten Auf
 >1. `size`
 >
 >1. und eine zusätzliche Variante
-
 >
 >Diese zusätzliche Variante wird von der `variationAxis`-Eigenschaft des Produktverweises (in der Regel `color` für Geometrixx Outdoors) ausgewählt.
 
@@ -414,7 +413,7 @@ public class AxisFilter implements VariantFilter {
 * Der Warenkorb wird von `CommerceSession:` gesteuert:
 
    * `CommerceSession` führt Hinzufügen/Entfernen-Aktionen usw. durch.
-   * `CommerceSession` nimmt auch die diversen Berechnungen des Warenkorbs vor. ``
+   * `CommerceSession` nimmt auch die diversen Berechnungen des Warenkorbs vor. &grave;&grave;
 
 * Obwohl dies nicht direkt mit dem Warenkorb zusammenhängt, muss `CommerceSession` auch Katalogpreisinformationen angeben (da sie die Preise steuert).
 

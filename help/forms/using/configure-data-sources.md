@@ -51,7 +51,6 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
    >
    > 1. Wechseln Sie zu https://&#39;[server]:[port]&#39;/system/console/crypto.
    > 1. Geben Sie im Feld **[!UICONTROL Plain Text]** das Kennwort oder eine beliebige Zeichenfolge zum Verschlüsseln an und tippen Sie auf **[!UICONTROL Protect]**.
-
    >
    >Der verschlüsselte Text wird im Feld „Protected Text“ angezeigt, das Sie in der Konfiguration angeben können.
 
@@ -131,6 +130,7 @@ Gehen Sie wie folgt vor, um RESTful-Services zu konfigurieren:
       * Schema: Die von der REST-API verwendeten Übertragungsprotokolle. Die Anzahl der in der Dropdown-Liste angezeigten Schematypen hängt von den Schemas ab, die in der Swagger-Quelle definiert wurden.
       * Host: Der Domain-Name oder die IP-Adresse des Hosts, der die REST-API bereitstellt. Dies ist ein Pflichtfeld.
       * Basispfad: Das URL-Präfix für alle API-Pfade. Dies ist ein optionales Feld.\
+
          Bearbeiten Sie bei Bedarf die vorbefüllten Werte für diese Felder.
    * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0, Standardauthentifizierung, API-Schlüssel, benutzerdefinierte Authentifizierung oder gegenseitige Authentifizierung – für den Zugriff auf den RESTful-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
 

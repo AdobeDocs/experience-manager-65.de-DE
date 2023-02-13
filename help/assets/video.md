@@ -74,6 +74,7 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
    * Video-Assets vorab anzeigen und veröffentlichen
 
       * Zeigen Sie das Quellvideo und die kodierten Ausgabedarstellungen des Videos zusammen mit den zugehörigen Miniaturen an:
+
          [Vorschau von Videos anzeigen](managing-video-assets.md#upload-and-preview-video-assets) oder [Vorschau von Assets anzeigen](previewing-assets.md)
          [Videoausgabedarstellungen anzeigen](video-renditions.md)
          [Verwalten von Videoausgabedarstellungen](manage-assets.md#managing-renditions)
@@ -83,9 +84,11 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
    * Arbeiten mit Videometadaten
 
       * So zeigen Sie die Eigenschaften einer kodierten Videoausgabedarstellung (beispielsweise Framerate, Audio- und Video-Bitrate und Codec) an:
+
          [Anzeigen der Eigenschaften von Videoausgabedarstellungen](video-renditions.md)
 
       * So bearbeiten Sie die Eigenschaften von Videos, beispielsweise Titel, Beschreibung, Tags und benutzerdefinierte Metadatenfelder:
+
          [Bearbeiten von Videoeigenschaften](manage-assets.md#editing-properties)
 
       * [Verwalten von Metadaten für digitale Assets](metadata.md)
@@ -111,9 +114,11 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
    * Wenn Sie das Web-Content-Management-System eines Drittanbieters verwenden, können Sie Videos mit Web-Seiten verknüpfen oder darin einbetten.
 
       * Integrieren von Videos mithilfe der URL:
+
          [Verknüpfen von URLs mit Ihrer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
       * Integrieren von Videos mithilfe von Einbettungs-Code auf der Web-Seite:
+
          [Einbetten des Video-Viewer auf einer Web-Seite](embed-code.md).
    * [Veröffentlichen von Videos auf YouTube](#publishing-videos-to-youtube).
    * [Erzeugen von Videoberichten](#viewing-video-reports).
@@ -875,7 +880,6 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
    >    * Konfiguration der Warteschlange für Apache Sling-Aufträge
    >    * Handler für externe Prozessaufträge im Adobe Granite-Workflow
    >    * Granite-Workflow – Zeitlimit-Warteschlange
-
    >
    >In diesen Konfigurationen können Sie die Eigenschaften für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** anpassen.
 
@@ -910,7 +914,6 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
    >    * Konfiguration der Warteschlange für Apache Sling-Aufträge
    >    * Handler für externe Prozessaufträge im Adobe Granite-Workflow
    >    * Granite-Workflow – Zeitlimit-Warteschlange
-
    >
    >
    >In diesen Konfigurationen können Sie die Eigenschaften für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** anpassen.
@@ -1071,6 +1074,7 @@ Verwenden Sie das [Adobe Dynamic Media-Viewer-Referenzhandbuch](https://experien
       trackingManager.setCallback(appMeasurementBridge.track, 
        appMeasurementBridge);
       ```
+
    Das appMeasurementBridge-Objekt verfügt über eine integrierte Verfolgungsfunktion. Sie können aber auch Ihre eigene Funktion bereitstellen, um mehrere Tracking-Systeme oder anderen Funktionen zu unterstützen.
 
 <!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->

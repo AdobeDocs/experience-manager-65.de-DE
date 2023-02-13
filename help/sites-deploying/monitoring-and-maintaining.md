@@ -299,6 +299,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
       Beispiel: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Typ: `sling:OsgiConfig`
+
    >[!NOTE]
    >
    >Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<identifier>` einen eindeutigen Parameter zu verwenden.
@@ -393,6 +394,7 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
       Wie beim Logger wird `<identifier>` durch einen freien Text ersetzt, den Sie eingeben (müssen), um die Instanz zu identifizieren (diese Information darf nicht weggelassen werden). Beispiel: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Typ: `sling:OsgiConfig`
+
    >[!NOTE]
    >
    >Es gibt zwar keine spezifischen technischen Anforderungen, es ist jedoch ratsam, für `<identifier>` einen eindeutigen Parameter zu verwenden.
@@ -426,13 +428,11 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >
    >* eine maximalen Dateigröße
    >* einen Zeit-/Terminplan
-
    >
    >um anzugeben, wann eine neue Datei erstellt wird (und die vorhandene Datei gemäß dem Namensmuster umbenannt wird).
    >
    >* Eine Größenbeschränkung kann mit einer Zahl angegeben werden. Falls kein Größenindikator angegeben ist, gilt die Anzahl der Bytes oder Sie können einen der folgenden Indikatoren hinzufügen: `KB`, `MB` oder `GB` (Groß-/Kleinschreibung wird ignoriert).
    >* Sie können einen Zeit-/Terminplan nach dem `java.util.SimpleDateFormat`-Muster angeben. Dieser gibt den Zeitraum an, in dem die Datei rotiert wird, sowie das Suffix, das an die rotierte Datei angehängt wurde (zur einfachen Identifizierung).
-
    >
    >Der Standardwert lautet „.“jjjj-MM-tt (für die tägliche Protokollrotation).
    >
@@ -449,8 +449,8 @@ Unter bestimmten Umständen müssen Sie möglicherweise eine benutzerdefinierte 
    >Hinweis: Bei der Angabe einer Uhrzeit/eines Datums ist Folgendes zu beachten:
    >
    >1. Sie sollten wörtlichen Text innerhalb eines Paares einfacher Anführungszeichen (&#39; &#39;) „ausklammern“;
-      >
-      >    Dadurch wird verhindert, dass bestimmte Zeichen als Musterbuchstaben interpretiert werden.
+   >
+   >    Dadurch wird verhindert, dass bestimmte Zeichen als Musterbuchstaben interpretiert werden.
    >
    >1. Verwenden Sie nur Zeichen, die für einen gültigen Dateinamen im Optionsfeld zulässig sind.
 

@@ -108,7 +108,6 @@ Workflow-Modelle werden im Repository auf der Grundlage ihres Typs gespeichert:
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Modelle.
    >* Lassen Sie alles in `/libs` unverändert.
-
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
@@ -144,7 +143,6 @@ Definitionen für Workflow-Starter werden im Repository ebenfalls auf der Grundl
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Starter.
    >* Lassen Sie alles in `/libs` unverändert.
-
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
@@ -176,7 +174,6 @@ Workflow-Skripte werden im Repository ebenfalls auf der Grundlage ihres Typs ges
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Skripte.
    >* Lassen Sie alles in `/libs` unverändert.
-
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 
@@ -204,7 +201,6 @@ Workflow-Benachrichtigungen werden im Repository ebenfalls auf der Grundlage ihr
    >
    >* Platzieren Sie in diesem Ordner keine benutzerdefinierten Workflow-Benachrichtigungsdefinitionen.
    >* Lassen Sie alles in `/libs` unverändert.
-
    >
    >Vorgenommene Änderungen werden unter Umständen bei einem Upgrade oder beim Installieren von Hotfixes, Cumulative Fix Packs oder Service Packs überschrieben.
 

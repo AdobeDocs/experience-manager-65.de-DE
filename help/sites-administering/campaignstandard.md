@@ -198,7 +198,7 @@ Sie haben die Replikation zur AEM-Veröffentlichungsinstanz konfiguriert, damit 
 Sie haben den Externalizer konfiguriert, und Adobe Campaign kann nun auf Ihre Inhalte zugreifen.
 
 >[!NOTE]
-Die Veröffentlichungsinstanz muss vom Adobe Campaign-Server aus erreichbar sein. Wenn sie auf `localhost:4503` oder einen anderen Server verweist, den Adobe Campaign nicht erreichen kann, werden Ihre Bilder aus AEM in der Adobe Campaign-Konsole nicht angezeigt.
+>Die Veröffentlichungsinstanz muss vom Adobe Campaign-Server aus erreichbar sein. Wenn sie auf `localhost:4503` oder einen anderen Server verweist, den Adobe Campaign nicht erreichen kann, werden Ihre Bilder aus AEM in der Adobe Campaign-Konsole nicht angezeigt.
 
 ## Konfigurieren des Benutzers „campaign-remote“ in AEM {#campaign-remote-user}
 

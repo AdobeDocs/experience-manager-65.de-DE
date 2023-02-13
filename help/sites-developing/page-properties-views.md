@@ -71,11 +71,11 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pa
    >Siehe als Referenz:
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
-   Sie dürfen jedoch ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
-   da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
-   Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
-   1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
-   1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
+   >Sie dürfen jedoch ***keinerlei*** Änderungen im Pfad `/libs` vornehmen.
+   >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
+   >Die empfohlene Methode für Konfigurations- und sonstige Änderungen sieht wie folgt aus:
+   >1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
+   >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
 
 1. Legen Sie die Eigenschaft `path` auf `basic` fest, um auf die Überschreibung der Registerkarte „Standard“ zu verweisen (siehe auch den nächsten Schritt). Beispiel:
@@ -99,7 +99,7 @@ Beispiel: Der [**Seitenerstellungsassistent**](/help/sites-authoring/managing-pa
    Der Abschnitt **Weitere Titel und Beschreibungen** wird nicht mehr im **Seitenerstellungsassistenten** angezeigt.
 
 >[!NOTE]
-Wenn Sie Seiteneigenschaften für die Verwendung mit Live Copies konfigurieren, finden Sie weitere Details unter [Konfiguration von MSM-Sperren für Seiteneigenschaften](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui).
+>Wenn Sie Seiteneigenschaften für die Verwendung mit Live Copies konfigurieren, finden Sie weitere Details unter [Konfiguration von MSM-Sperren für Seiteneigenschaften](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui).
 
 ## Beispielkonfiguration von Seiteneigenschaften {#sample-configuration-of-page-properties}
 

@@ -296,7 +296,7 @@ Möchten Sie Targeting-Inhalte bearbeiten, müssen Sie zunächst auf **Targeting
    >
    >
    >Administratoren können unter **festlegen, ob diese Einstellung zwingend vorgenommen werden muss.https://&lt;Host>:&lt;Port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
-   Um Benutzer zur Eingabe eines Pfads aufzufordern, aktivieren Sie das Kontrollkästchen **Ortsangabe erzwingen**.
+   >Um Benutzer zur Eingabe eines Pfads aufzufordern, aktivieren Sie das Kontrollkästchen **Ortsangabe erzwingen**.
 
 1. Wählen Sie das Erlebnis aus, für das ein Angebot erstellt werden soll.
 1. So erstellen Sie das Angebot:
@@ -577,19 +577,19 @@ So konfigurieren Sie bei Verwendung von Adobe Target Ziele und Einstellungen:
    Sämtliche Metriken verfügen zudem über von Ihnen festlegbare erweiterte Einstellungen. Diese finden Sie unter der Option **Erweiterte Einstellungen**. Weitere Informationen dazu, wie die Erfolgsmetriken in der oben stehenden Tabelle gemessen werden, finden Sie in der [Adobe Target-Dokumentation](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html?lang=de).
 
    >[!NOTE]
-   Sie müssen mindestens eine Zielmetrik definieren.
+   >Sie müssen mindestens eine Zielmetrik definieren.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
-   Sollten Daten Ihrer Metrik fehlen, wird die zugehörige Metrik rot umrandet.
+   >Sollten Daten Ihrer Metrik fehlen, wird die zugehörige Metrik rot umrandet.
 
 1. Klicken Sie auf **Neue Metrik hinzufügen**, um weitere Erfolgsmetriken zu konfigurieren.
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
    >[!NOTE]
-   Sie können andere Ziele entfernen, indem Sie entweder auf die drei Punkte oder auf **Löschen** klicken oder tippen. In AEM muss mindestens eine Zielmetrik definiert werden.
+   >Sie können andere Ziele entfernen, indem Sie entweder auf die drei Punkte oder auf **Löschen** klicken oder tippen. In AEM muss mindestens eine Zielmetrik definiert werden.
 
 1. Möchten Sie weitere Steuermöglichkeiten für die Messung von Erfolgsmetriken nutzen, klicken oder tippen Sie auf **Erweiterte Einstellungen**.
 1. Klicken Sie auf **Speichern**.
@@ -611,7 +611,7 @@ Die folgenden Kriterien bestimmen den Inhalt, der bei der Simulation des Besuche
 Sollte auf der Seite unerwarteter Inhalt angezeigt werden, wenn Sie ein Profil laden, prüfen Sie die Konfiguration aller hier aufgeführter Elemente.
 
 >[!NOTE]
-Sollten Sie mit A/B-Tests arbeiten, basieren die Simulationen der Erlebnisse auf dem Traffic-Anteil. Dieser wird durch Adobe Target gesteuert, was für Autoren zu unerwarteten Ergebnissen führen kann. (Die Aktivität „_author“ wird mit bestimmten Eigenschaften synchronisiert, die während der Simulation eine Neubewertung ermöglichen.) Möglicherweise müssen Autoren die Seite aktualisieren, um andere auf Traffic-Einstellungen basierende Erlebnisse anzeigen zu können.
+>Sollten Sie mit A/B-Tests arbeiten, basieren die Simulationen der Erlebnisse auf dem Traffic-Anteil. Dieser wird durch Adobe Target gesteuert, was für Autoren zu unerwarteten Ergebnissen führen kann. (Die Aktivität „_author“ wird mit bestimmten Eigenschaften synchronisiert, die während der Simulation eine Neubewertung ermöglichen.) Möglicherweise müssen Autoren die Seite aktualisieren, um andere auf Traffic-Einstellungen basierende Erlebnisse anzeigen zu können.
 
 Mit den folgenden Werkzeugen lassen sich Besuchererlebnisse simulieren:
 
@@ -704,7 +704,7 @@ Wenn Sie Adobe Target als Engine auswählen:
 </table>
 
 >[!NOTE]
-Wählen Sie eine Komponente aus und ermöglichen Sie deren Targeting, wird die Komponente auch von AEM ersetzt und eine Adobe Target-Komponente eingebettet. (Die Adobe Target-Komponente wird nicht nur dann verwendet, wenn Sie sie manuell auf der Seite einfügen, sondern auch dann, wenn Sie das Targeting einer vorhandenen Komponente durchführen.)
+>Wählen Sie eine Komponente aus und ermöglichen Sie deren Targeting, wird die Komponente auch von AEM ersetzt und eine Adobe Target-Komponente eingebettet. (Die Adobe Target-Komponente wird nicht nur dann verwendet, wenn Sie sie manuell auf der Seite einfügen, sondern auch dann, wenn Sie das Targeting einer vorhandenen Komponente durchführen.)
 
 Wenn Sie Client Context (Client-Seite) als Engine auswählen:
 

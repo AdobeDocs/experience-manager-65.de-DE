@@ -90,7 +90,7 @@ In diesem Verfahren gilt:
 
    * Servercluster – `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. 
+1. &#x200B;
    * **Für Einzelserver** Fügen Sie in der Datei „lc_&lt;dbaname/tunkey>.xml“ Folgendes nach dem Abschnitt „&lt;security-realms>“ ein:
 
    ```xml

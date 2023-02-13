@@ -352,7 +352,6 @@ Sie können sicherstellen, dass Ihre Web-Seiten die geeignete Struktur erhalten,
       >
       >* `<b>` für `<strong>`
       >* `<i>` für `<em>`
-
       >
       >Sie haben die gleiche Wirkung, doch sollten `<strong>` und `<em>` bevorzugt werden, weil sie für HTML semantisch korrekt sind. Bei der Entwicklung Ihrer Projektinstanz kann das Entwicklungs-Team den RTE zur Verwendung von `<strong>` und `<em>` (anstelle von `<b>` und `<i>`) konfigurieren.
 

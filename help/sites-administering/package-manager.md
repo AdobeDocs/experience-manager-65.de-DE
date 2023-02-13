@@ -492,9 +492,9 @@ Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snaps
 >[!CAUTION]
 >
 >* Wenn Sie digitale Assets installieren, müssen Sie:
-   >  als Erstes den WorkflowLauncher deaktivieren.
-   >  Verwenden Sie die Menüoption „Komponenten“ der OSGi-Konsole zur Deaktivierung der Option
-   >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
+>  als Erstes den WorkflowLauncher deaktivieren.
+>  Verwenden Sie die Menüoption „Komponenten“ der OSGi-Konsole zur Deaktivierung der Option
+>  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
 >* als Nächstes den WorkflowLauncher reaktivieren, wenn die Installation abgeschlossen ist.
 >
 >Die Deaktivierung des WorkflowLauncher gewährleistet, dass die Assets nach der Installation nicht (versehentlich) vom Asset-Importer-Framework verändert werden.

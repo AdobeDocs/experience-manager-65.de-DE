@@ -79,6 +79,7 @@ Das Inhaltsfragmentmodell definiert effektiv die Struktur der resultierenden Inh
          >Wenn Sie die Eigenschaft **Eigenschaftsname** für einen Datentyp manuell aktualisieren, beachten Sie, dass Namen nur A–Z, a–z, 0–9 und den Unterstrich „_“ als Sonderzeichen enthalten dürfen.
          >
          >Wenn in früheren Versionen von AEM erstellte Modelle unzulässige Zeichen enthalten, entfernen oder ändern Sie diese Zeichen.
+
       Beispiel:
 
       ![Feldeigenschaften](assets/cfm-models-05.png)
@@ -233,10 +234,10 @@ Inhaltsfragmente können mit einem der folgenden Datentypen verschachtelte Inhal
 >AEM bietet einen Wiederholungsschutz für:
 >
 >* Inhaltsreferenzen
-   >  Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
+>  Verhindert, dass der Benutzer dem aktuellen Fragment einen Verweis hinzufügt. Dies kann zu einem leeren Dialogfeld für die Auswahl von Fragmentreferenzen führen.
 >
 >* Fragmentverweise in GraphQL
-   >  Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten NULL zurück.
+>  Wenn Sie eine Deep-Abfrage erstellen, die mehrere Inhaltsfragmente zurückgibt, die gegenseitig aufeinander verweisen, gibt sie beim ersten Auftreten NULL zurück.
 
 
 ### Inhaltsreferenz {#content-reference}

@@ -247,11 +247,11 @@ Siehe [(Optional) Anzeigen einer Vorschau für interaktive Bilder](#optional-pre
 >[!NOTE]
 >
 >Wenn Sie einem Bild in einem interaktiven Bild oder einem Karussell-Banner Hotspots hinzufügen, werden die Hotspot-Informationen am selben Metadaten-Speicherort gespeichert. Der Speicherort ist relativ zur Position des Bildes, unabhängig davon, ob es sich um ein interaktives Bild oder ein Karussell-Banner handelt. Das bedeutet, dass Sie dasselbe Bild zusammen mit den definierten Hotspot-Daten in beiden Viewern einfach wiederverwenden können.
-Karussell-Banner unterstützen Imagemaps auf Bildern, die auch Hotspots enthalten können. Interaktive Bilder nicht. Dies sollten Sie beachten, wenn Sie ein interaktives Bild oder ein Karussell-Banner mit demselben Bild erstellen möchten. Stattdessen können Sie separate Kopien desselben Bildes verwenden, um interaktive Bilder und Karussell-Banner zu erstellen.
-Weitere Informationen finden Sie unter [Karussellbanner](/help/assets/carousel-banners.md).
+>Karussell-Banner unterstützen Imagemaps auf Bildern, die auch Hotspots enthalten können. Interaktive Bilder nicht. Dies sollten Sie beachten, wenn Sie ein interaktives Bild oder ein Karussell-Banner mit demselben Bild erstellen möchten. Stattdessen können Sie separate Kopien desselben Bildes verwenden, um interaktive Bilder und Karussell-Banner zu erstellen.
+>Weitere Informationen finden Sie unter [Karussellbanner](/help/assets/carousel-banners.md).
 
 >[!NOTE]
-Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
+>Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
 
 **So fügen Sie einem Bildbanner Hotspots hinzu:**
 
@@ -300,7 +300,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
       * Legen Sie die Breite und Höhe des Experience Fragment fest, so wie es im Banner angezeigt werden soll.
 
          >[!NOTE]
-         Im interaktiven Bild werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
+         >Im interaktiven Bild werden die Tools zur Freigabe in Social Media nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten. Um dies zu vermeiden, können Sie Viewer-Vorgaben verwenden oder erstellen, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
 
 
@@ -314,7 +314,7 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
    Siehe [Integrieren eines interaktiven Bildes auf Ihrer Website](#integrating-an-interactive-image-with-your-website).
 
    >[!NOTE]
-   Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zuzuschneiden, werden die Hotspots entfernt.
+   >Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zuzuschneiden, werden die Hotspots entfernt.
 
 ### (Optional) Anzeigen einer Vorschau für interaktive Bilder {#optional-previewing-interactive-images}
 
@@ -367,7 +367,7 @@ Die Integration ist sehr einfach. Sie entfernen das `IMG`-Tag und ersetzen es du
 [https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-1.html?lang=de)
 
 >[!NOTE]
-Zurzeit dienen die Hotspots auf dem interaktiven Bild mit Shopping-Funktion auf der Demo-Website nur zu Anzeigezwecken. Sie sind noch nicht in die vorhandene Schnellansicht integriert.
+>Zurzeit dienen die Hotspots auf dem interaktiven Bild mit Shopping-Funktion auf der Demo-Website nur zu Anzeigezwecken. Sie sind noch nicht in die vorhandene Schnellansicht integriert.
 
 Um einen „Zuschnitt“ auf ein interaktives Bild mit Shopping-Funktion für eine responsive Umgebung anzuwenden, fügen Sie im Pfad das Konfigurationsattribut `ZoomView.iscommand` für das interaktive Bild ein. Die Komponente `ZoomView` wird aufgerufen und `iscommand` ist der von Ihnen verwendete Image-Serving-Befehl „Zuschnitt“.
 
@@ -380,7 +380,7 @@ Jetzt können Sie das interaktive Bild in eine vorhandene Schnellansicht auf Ihr
 ## Integrieren eines interaktiven Bildes in einer Schnellansicht {#integrating-an-interactive-image-with-an-existing-quickview}
 
 >[!NOTE]
-Diese Aufgabe ist nur relevant, wenn Sie ausschließlich Experience Manager Assets verwenden.
+>Diese Aufgabe ist nur relevant, wenn Sie ausschließlich Experience Manager Assets verwenden.
 
 Der letzte Schritt in diesem Prozess ist die Integration des interaktiven Bildes in eine vorhandene Schnellansichtsimplementierung auf Ihrer Website. Es gibt keine Lösung für die Integration, die für alle Fälle funktioniert. Jede Schnellansichtsimplementierung ist einzigartig und erfordert eine individuelle Vorgehensweise. Wahrscheinlich ist dabei die Unterstützung von Frontend-IT-Mitarbeitenden erforderlich.
 
@@ -440,27 +440,27 @@ Unter Verwendung der vorherigen Schnellansichts-URL-Beispiele können Sie in den
  <tbody>
   <tr>
    <td><p>Einzelne SKU, befindet sich in der Abfragezeichenfolge.</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/json?productId=" + inData.sku + "&amp;amp;source=100";
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>Einzelne SKU, befindet sich im URL-Pfad.</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/product/" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
   <tr>
    <td><p>SKU und Kategorie-ID in der Abfragezeichenfolge.</p> </td>
-   <td><code class="code">s7interactiveimageviewer.setHandlers({
-      "quickViewActivate": function(inData) {
+   <td><code class="code">s7interactiveimageviewer.setHandlers(&lbrace;
+      "quickViewActivate": function(inData) &lbrace;
       var quickViewUrl = "https://server/quickView/product/?category=" + inData.categoryId + "&amp;amp;prodId=" + inData.sku;
-      },
-      });</code></td>
+      &rbrace;,
+      &rbrace;);</code></td>
   </tr>
  </tbody>
 </table>

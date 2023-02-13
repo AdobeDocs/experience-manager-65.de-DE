@@ -234,12 +234,12 @@ Mithilfe der Zusammenfassung von Text können Benutzer die Länge des Textes auf
 >  `/content/dam/my-brand/en/path-down/my-content-fragment`
 
 >[!CAUTION]
-Englisch ist standardmäßig verfügbar.
-Andere Sprachen sind als Sprachmodellpakete über Package Share verfügbar:
-* [Französisch (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
-* [Deutsch (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
-* [Italienisch (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
-* [Spanisch (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+>Englisch ist standardmäßig verfügbar.
+>Andere Sprachen sind als Sprachmodellpakete über Package Share verfügbar:
+>* [Französisch (fr)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Deutsch (de)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italienisch (it)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spanisch (es)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?lang=de?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
@@ -308,7 +308,7 @@ Anmerkungen:
 * Werden sowohl im Vollbildmodus als auch im Normalmodus des Editors als hervorgehobener Text angezeigt. Die vollständigen Details einer Anmerkung können dann angezeigt, bearbeitet und/oder gelöscht werden, indem Sie auf den hervorgehobenen Text klicken. Dann wird das Dialogfeld erneut geöffnet.
 
    >[!NOTE]
-   Eine Dropdown-Liste wird angezeigt, wenn mehrere Anmerkungen auf einen Textausschnitt angewendet wurden.
+   >Eine Dropdown-Liste wird angezeigt, wenn mehrere Anmerkungen auf einen Textausschnitt angewendet wurden.
 
 * Wenn Sie den gesamten Text löschen, auf den die Anmerkung angewendet wurde, wird der Kommentar ebenfalls gelöscht.
 
@@ -325,11 +325,11 @@ Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie [Assets](/h
 Sie werden der Absatzreihe des Fragments ohne jede Formatierung hinzugefügt. Die Formatierung kann erfolgen, wenn das [Fragment auf einer Seite verwendet/referenziert wird](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
-Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
-Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiteneditor](/help/sites-authoring/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+>Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
+>Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiteneditor](/help/sites-authoring/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
-Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
+>Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
 
 1. Positionieren Sie den Cursor über der Position, an der Sie das Bild hinzufügen möchten.
 1. Öffnen Sie das Suchdialogfeld mithilfe der Schaltfläche **Asset einfügen**.
@@ -346,9 +346,9 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 1. Verwenden Sie **Auswahl**, um das Asset dem Absatzsystem Ihres Inhaltsfragments am aktuellen Speicherort hinzuzufügen.
 
    >[!CAUTION]
-   Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
-   * **Klartext:** Das Asset geht im Fragment vollständig verloren.
-   * **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
+   >Wenn Sie nach dem Hinzufügen eines Assets das Format ändern in:
+   >* **Klartext:** Das Asset geht im Fragment vollständig verloren.
+   >* **Markdown:** Das Asset wird nicht angezeigt, ist aber immer noch vorhanden, wenn Sie zu **Rich Text** zurückkehren.
 
 
 ### Einfügen eines Inhaltsfragments in ein Fragment {#inserting-content-fragment-into-your-fragment}
@@ -358,14 +358,14 @@ Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie Ihrem Fragm
 Es wird an der aktuellen Position in Ihrem Fragment als Referenz hinzugefügt.
 
 >[!NOTE]
-Diese Option ist verfügbar, wenn Ihr **mehrzeiliges Textfeld** mit **Fragmentreferenz zulassen** konfiguriert wurde.
+>Diese Option ist verfügbar, wenn Ihr **mehrzeiliges Textfeld** mit **Fragmentreferenz zulassen** konfiguriert wurde.
 
 >[!CAUTION]
-Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
-Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiteneditor](/help/sites-authoring/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
+>Diese Assets können auf einer referenzierenden Seite nicht verschoben oder gelöscht werden, sondern nur im Fragment-Editor.
+>Allerdings muss die Formatierung eines Assets (z. B. Größe) über den [Seiteneditor](/help/sites-authoring/content-fragments.md) erfolgen. Die Darstellung des Assets im Fragment-Editor dient lediglich der Erstellung des Inhaltsflusses.
 
 >[!NOTE]
-Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
+>Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder einer Seite hinzuzufügen.
 
 1. Positionieren Sie den Cursor über der Position, an der Sie das Fragment hinzufügen möchten.
 1. Öffnen Sie das Suchdialogfeld mithilfe der Schaltfläche **Inhaltsfragment einfügen**.
@@ -382,9 +382,9 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 1. Verwenden Sie **Auswahl**, um dem aktuellen Inhaltsfragment (an der aktuellen Position) eine Referenz zum ausgewählten Inhaltsfragment hinzuzufügen.
 
    >[!CAUTION]
-   Wenn Sie nach dem Hinzufügen einer Referenz zu einem anderem Fragment das Format ändern, könnte folgendes auftreten:
-   * **Klartext**: Die Referenz geht im Fragment vollständig verloren.
-   * **Markdown**: Die Referenz bleibt bestehen.
+   >Wenn Sie nach dem Hinzufügen einer Referenz zu einem anderem Fragment das Format ändern, könnte folgendes auftreten:
+   >* **Klartext**: Die Referenz geht im Fragment vollständig verloren.
+   >* **Markdown**: Die Referenz bleibt bestehen.
 
 
 ## Verwalten von Varianten {#managing-variations}
@@ -402,10 +402,10 @@ So erstellen Sie eine neue Variante:
 1. Wählen Sie **Hinzufügen** aus. Das Fragment **Primäre Version** wird in die neue Variante kopiert, die nun zur [Bearbeitung](#editing-a-variation) geöffnet ist.
 
    >[!NOTE]
-   Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
+   >Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
 
    >[!NOTE]
-   Wenn Sie eine neue Variante erstellen, werden alle **Tags**, die derzeit der **primären** Variante zugewiesen sind, in Ihre neue Variante kopiert.
+   >Wenn Sie eine neue Variante erstellen, werden alle **Tags**, die derzeit der **primären** Variante zugewiesen sind, in Ihre neue Variante kopiert.
 
 ### Bearbeiten einer Variante {#editing-a-variation}
 
@@ -429,7 +429,7 @@ So benennen Sie eine vorhandene Variante um:
 1. Bestätigen Sie die Aktion **Umbenennen**.
 
 >[!NOTE]
-Dies wirkt sich nur auf den **Namen** der Variante aus.
+>Dies wirkt sich nur auf den **Namen** der Variante aus.
 
 ### Löschen einer Variante {#deleting-a-variation}
 
@@ -442,7 +442,7 @@ So löschen Sie eine vorhandene Variante:
 1. Bestätigen Sie im Dialogfeld die Aktion **Löschen**.
 
 >[!NOTE]
-**Primäre Version** kann nicht gelöscht werden.
+>**Primäre Version** kann nicht gelöscht werden.
 
 ### Mit primärer Version synchronisieren {#synchronizing-with-master}
 
@@ -451,10 +451,10 @@ So löschen Sie eine vorhandene Variante:
 Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Dadurch können Sie an der primären Version vorgenommene Änderungen automatisch in die entsprechende Variante kopieren.
 
 >[!CAUTION]
-Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
-Es wird nur das aktuelle Element der Variante synchronisiert.
-Die Synchronisierung funktioniert nur mit dem Datentyp **Mehrzeiliger Text**.
-Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Version*** zu übertragen.
+>Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
+>Es wird nur das aktuelle Element der Variante synchronisiert.
+>Die Synchronisierung funktioniert nur mit dem Datentyp **Mehrzeiliger Text**.
+>Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Version*** zu übertragen.
 
 <!-- needs new screenshot for synchronize effect -->
 

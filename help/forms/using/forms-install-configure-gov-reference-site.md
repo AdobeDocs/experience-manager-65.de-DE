@@ -311,10 +311,10 @@ Sobald die Cloud-Konfiguration abgeschlossen ist, sollten Sie das Formulardatenm
 1. Testen Sie die Services, um sicherzustellen, dass sie erfolgreich eine Verbindung zur konfigurierten Datenquelle herstellen.
 
    >[!NOTE]
-   Klicken Sie nach dem Testen der Services auf **Abbrechen** um sicherzustellen, dass unfreiwillige Änderungen nicht an das Formulardatenmodell weitergegeben werden.
+   >Klicken Sie nach dem Testen der Services auf **Abbrechen** um sicherzustellen, dass unfreiwillige Änderungen nicht an das Formulardatenmodell weitergegeben werden.
 
    >[!NOTE]
-   Es wurde berichtet, dass ein AEM Server-Neustart erforderlich war, damit die Datenquelle erfolgreich an das FDM gebunden werden konnte.
+   >Es wurde berichtet, dass ein AEM Server-Neustart erforderlich war, damit die Datenquelle erfolgreich an das FDM gebunden werden konnte.
 
 #### Testen des Formulardatenmodells (Derby) {#test-fdm-derby}
 
@@ -418,7 +418,7 @@ Administratoren können Benutzern AEM Analytics-Berechtigungen erteilen, indem s
 #### Anzeigen von Adobe Analytics Sites-Berichten {#view-adobe-analytics-sites-reporting}
 
 >[!NOTE]
-AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
+>AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Wählen Sie die „AEM Forms We.Gov-Site“ aus, um die Seiten der Site anzuzeigen.
@@ -446,7 +446,7 @@ AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfigura
 #### Anzeigen von Adobe Analytics-Formularberichten {#view-adobe-analytics-forms-reporting}
 
 >[!NOTE]
-AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
+>AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
 
 1. Gehen Sie zu
 
@@ -491,7 +491,7 @@ Damit der Service ordnungsgemäß mit dem Konvertierungs-Tool für Formulare kom
 1. Fahren Sie nicht mit dem Rest der Konfiguration fort, sondern lesen Sie den Abschnitt [Erstellen der Integration in Adobe I/O](#create-integration-adobeio)
 
 >[!NOTE]
-Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations-Service in Adobe I/O zu erstellen. Sobald Benutzer den Integrations-Service erstellt haben, können Benutzer diese Informationen aus Adobe I/O verwenden, um die Konfiguration abzuschließen.
+>Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations-Service in Adobe I/O zu erstellen. Sobald Benutzer den Integrations-Service erstellt haben, können Benutzer diese Informationen aus Adobe I/O verwenden, um die Konfiguration abzuschließen.
 
 #### Erstellen der Integration in Adobe I/O {#create-integration-adobeio}
 
@@ -790,7 +790,7 @@ Um sie so zu konfigurieren, dass sie im Workflow aktiviert werden, müssen Benut
 1. Öffnen Sie die Service-Definition und aktivieren Sie den Aufruf der ausgewählten Services innerhalb des Workflows.
 
    >[!NOTE]
-   Auch wenn ein Benutzer den Service auf der Seite „Configuration Manager“ aktiviert, muss er dennoch eine Service-Konfiguration einrichten, um mit den angefragten externen Services kommunizieren zu können.
+   >Auch wenn ein Benutzer den Service auf der Seite „Configuration Manager“ aktiviert, muss er dennoch eine Service-Konfiguration einrichten, um mit den angefragten externen Services kommunizieren zu können.
 
    ![WeGov-Formular-Paket](assets/aftia-configuration-options.jpg)
 

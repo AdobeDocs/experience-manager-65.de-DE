@@ -55,7 +55,6 @@ AEM bietet verschiedene Methoden zum Anpassen von Konsolen (und der [Seitenbearb
 >1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
 >
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
-
 >
 
 
@@ -148,11 +147,13 @@ Anpassen von Spalten in der Listenansicht:
       ```
 
    * Fügen Sie die neuen Spalten hinzu oder entfernen Sie vorhandene.
+
    Weitere Informationen finden Sie unter [Verwenden von Überlagerungen (und der Sling-Ressourcenzusammenführung)](/help/sites-developing/overlays.md).
 
 1. Optional:
 
    * Falls Sie zusätzliche Daten hinzufügen möchten, müssen Sie einen [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) mit einer
+
       `pageInfoProviderType`-Eigenschaft schreiben.
 
    Ein Beispiel sehen Sie im unten (aus GitHub) angehängten Class-Bundle.

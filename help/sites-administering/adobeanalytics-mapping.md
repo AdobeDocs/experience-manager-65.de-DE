@@ -137,6 +137,7 @@ Sie können mit der Liste wie folgt arbeiten:
    * Sie können die Variablen auf jede beliebige Adobe Analytics-Variable ziehen, die zu einer der drei Variablenbereiche (**Traffic**, **Konversion** und **Ereignisse**) gehört.
 
    * Wenn Sie in der CQ-Ansicht eine neue Tracking-Komponente auf das Framework ziehen, werden die zur Komponente gehörenden CQ-Variablen automatisch zum Content Finder (cf#) in der Adobe Analytics-Ansicht hinzugefügt.
+
    >[!NOTE]
    >
    >Sie können immer nur eine CQ-Variable auf einmal einer Adobe Analytics-Variable zuordnen.
@@ -202,7 +203,7 @@ Das obige Bild dient als Beispiel. Die **AEM-Ansicht** hat die folgenden Eigensc
 >
 >Beispiel: Neben `prop3` können Sie Folgendes hinzufügen:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-, um den *Titel* einer Seite und ihre *sitesection* verkettet mit einem *:* (Doppelpunkt) und mit dem Präfix *Adobe* als `prop3` zu übermitteln.
+>, um den *Titel* einer Seite und ihre *sitesection* verkettet mit einem *:* (Doppelpunkt) und mit dem Präfix *Adobe* als `prop3` zu übermitteln.
 
 >[!CAUTION]
-Sie können immer nur eine CQ-Variable auf einmal einer Adobe Analytics-Variable zuordnen.
+>Sie können immer nur eine CQ-Variable auf einmal einer Adobe Analytics-Variable zuordnen.

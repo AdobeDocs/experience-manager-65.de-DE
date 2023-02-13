@@ -329,11 +329,11 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 >[!NOTE]
 >
 >* Die allgemeinen Suchprädikate sind hier definiert:
-   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >* Sucheigenschaften, die nur mit siteadmin (klassische Benutzeroberfläche) verbunden sind, befinden sich unter:
-   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
-   >   * Sie sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
+>  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+>   * Sie sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
 >
 >Diese Angaben dienen nur als Referenz. Sie dürfen `/libs` nicht verändern.
 

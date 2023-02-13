@@ -160,8 +160,8 @@ Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 
 So fügen Sie Text mit einer Liste hinzu:
 
-* 1.
-* 2.
+* &#x200B;1.
+* &#x200B;2.
 
 der in einem RTE-Editor bearbeitet werden kann:
 
@@ -533,7 +533,7 @@ In der folgenden Tabelle finden Sie eine Kurzbeschreibung der Eigenschaften:
 >`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
 >Und Sie müssen im Suchmuster >`CQ_DESIGN_PATH` durch `VIPURL` ersetzen, dann sollte Ihr Suchmuster wie folgt aussehen:
-`/\* *VIPURL *\*/ *(['"])`
+>`/\* *VIPURL *\*/ *(['"])`
 
 ## Fehlerbehebung {#troubleshooting}
 
@@ -598,4 +598,4 @@ wird `box img` im Design Importer verwendet. Die daraus resultierende Einstiegss
 ```
 
 >[!NOTE]
-Außerdem sollten Designer beachten, dass nur Code innerhalb des **id=cqcanvas**-Tags vom Importer erkannt wird. Andernfalls bleibt das Design nicht erhalten.
+>Außerdem sollten Designer beachten, dass nur Code innerhalb des **id=cqcanvas**-Tags vom Importer erkannt wird. Andernfalls bleibt das Design nicht erhalten.

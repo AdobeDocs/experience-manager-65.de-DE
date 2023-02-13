@@ -129,7 +129,6 @@ Jede Produktressource kann durch eine `Product API` dargestellt werden. Die meis
 >
 >1. `size`
 >1. und eine zusätzliche Variante
-
 >
 >   Diese zusätzliche Variante wird von der `variationAxis`-Eigenschaft des Produktverweises (in der Regel `color` für Geometrixx Outdoors) ausgewählt.
 
