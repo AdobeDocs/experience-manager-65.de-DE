@@ -1,5 +1,5 @@
 ---
-title: Ordner konfigurieren
+title: Konfigurieren von Verzeichnissen
 seo-title: Configuring directories
 description: Erfahren Sie, wie Sie Ordner hinzufügen, bearbeiten und löschen und User Management für die virtuelle Listenansicht konfigurieren.
 seo-description: Learn how to add, edit and delete directories and configure user management to use virtual list view.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
 source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3227'
 ht-degree: 100%
 
 ---
 
-# Ordner konfigurieren {#configuring-directories}
+# Konfigurieren von Verzeichnissen {#configuring-directories}
 
 Für jede Unternehmens-Domain, die Sie konfigurieren, geben Sie die Ordner an, aus denen der Authentifizierungsanbieter Benutzerdaten abfragt. Sie können mehrere Ordner für eine Domain konfigurieren.
 
@@ -230,7 +230,7 @@ Das LDAP-Protokoll bietet in der Form von Anforderungssteuerelementen eine Mögl
 
 1. Wählen Sie beim Konfigurieren des Ordners die Option „VLV-Steuerung (Virtuelle Listenansicht) aktivieren“ sowohl auf der Seite „Benutzereinstellungen“ als auch auf der Seite „Gruppeneinstellungen“ aus. Wenn Sie das Kontrollkästchen aktivieren, müssen Sie außerdem in das Feld „Sortierfeldname“ einen Sortierfeldnamen eingeben. Der Standardwert ist „uid“. (Siehe [Ordner oder benutzerdefinierten SPIs hinzufügen](configuring-directories.md#adding-directories-or-custom-spis) oder [Ordner bearbeiten](configuring-directories.md#edit-a-directory).)
 1. Verwenden Sie die Sun ONE Administration Console oder ein Befehlszeilenskript, um die LDAP-VLV-Einträge für Benutzer und Gruppen zu erstellen. Mithilfe eines Befehlszeilenskripts können die Benutzer- und Gruppen-LDIF-Beispieldateien verwendet werden. (Siehe [Sun ONE Directory Server für VLV konfigurieren](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
-1. Beenden Sie den Server und erstellen Sie den erforderlichen Index. (Siehe [Ordnerserverindex für VLV erstellen](configuring-directories.md#create-the-directory-server-index-for-vlv).)
+1. Beenden Sie den Server und erstellen Sie den erforderlichen Index. (Siehe [Erstellen des Verzeichnis-Server-Index für VLV](configuring-directories.md#create-the-directory-server-index-for-vlv)).
 
 ### Sun ONE Directory Server für VLV konfigurieren {#configuring-the-sun-one-directory-server-for-vlv}
 
