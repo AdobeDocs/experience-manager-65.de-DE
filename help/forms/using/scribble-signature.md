@@ -13,7 +13,7 @@ docset: aem65
 feature: Designer
 exl-id: 2025182f-195b-40d0-aee7-67669f55b964
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '658'
 ht-degree: 100%
 
@@ -73,7 +73,7 @@ Nachdem ein Scribble-Signatur-Feld dem Formular hinzugefügt wurde und das Formu
 Wenn Sie beim Einfügen der Signatur auf das Geotargeting-Symbol klicken, werden geografische Informationen und die Uhrzeit in das Feld eingebettet.
 
 >[!NOTE]
->Das Einbetten der geografischen Informationen ist auf einem iPad obligatorisch.
+Das Einbetten der geografischen Informationen ist auf einem iPad obligatorisch.
 
 Auf einem iPad wird das Geotargeting-Symbol standardmäßig nicht angezeigt. Die geografischen Informationen werden automatisch eingebettet, wenn Sie auf **OK** klicken.
 
