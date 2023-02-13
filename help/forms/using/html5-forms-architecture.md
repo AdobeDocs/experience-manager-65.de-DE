@@ -1,5 +1,5 @@
 ---
-title: Architektur von HTML5-Formulare
+title: Architektur von HTML5-Formularen
 seo-title: Architecture of HTML5 forms
 description: HTML5-Formulare wird als Paket innerhalb der eingebetteten AEM-Instanz bereitgestellt und stellt die Funktionen mithilfe einer REST-konformen /Apache Sling Architecture als REST-Endpunkt über HTTP/S bereit.
 seo-description: HTML5 forms is deployed as a package within the embedded AEM instance and exposes the functionality as REST end point over HTTP/S using RESTful Apache Sling architecture.
@@ -13,13 +13,13 @@ docset: aem65
 feature: Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2011'
 ht-degree: 100%
 
 ---
 
-# Architektur von HTML5-Formulare{#architecture-of-html-forms}
+# Architektur von HTML5-Formularen{#architecture-of-html-forms}
 
 ## Architektur {#architecture}
 
