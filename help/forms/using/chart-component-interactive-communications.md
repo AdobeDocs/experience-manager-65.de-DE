@@ -12,7 +12,7 @@ docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2613'
 ht-degree: 100%
 
@@ -184,7 +184,7 @@ Konfigurieren Sie beim Erstellen von Diagrammen für Druck- und Web-Kanäle die 
 
 ## Funktionen im Diagramm verwenden {#use-functions-in-chart}
 
-Sie können das Diagramm so konfigurieren, dass Sie mit statistischen Funktionen Werte aus Quelldaten zur grafischen Darstellung im Diagramm berechnen können. Durch Anwenden von Funktionen in einem Diagramm können Sie Daten darstellen, die nicht direkt vom Formulardatenmodell bereitgestellt werden.
+Sie können das Diagramm so konfigurieren, dass Sie mit statistischen Funktionen Werte aus Quelldaten zur grafischen Darstellung im Diagramm berechnen können. Durch Anwenden von Funktionen in einem Diagramm können Sie Daten grafisch darstellen, die nicht direkt vom Formulardatenmodell bereitgestellt werden.
 
 ![Funktionen in Diagrammen](assets/functions_charts_new.png)
 
