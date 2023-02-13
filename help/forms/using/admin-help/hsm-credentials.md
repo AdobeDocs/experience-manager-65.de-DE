@@ -1,5 +1,5 @@
 ---
-title: HSM-Berechtigungen verwalten
+title: Verwalten von HSM-Berechtigungen
 seo-title: Managing HSM credentials
 description: Erfahren Sie, wie Sie HSM-Berechtigungen verwalten
 seo-description: Learn how to manage HSM credentials.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1304'
 ht-degree: 100%
 
 ---
 
-# HSM-Berechtigungen verwalten {#managing-hsm-credentials}
+# Verwalten von HSM-Berechtigungen {#managing-hsm-credentials}
 
 Auf der Seite „Trust Store-Verwaltung“ können Sie HSM-Berechtigungen (Hardware Security Module, Hardwaresicherheitsmodul) verwalten. Ein HSM ist ein PKCS#11-Gerät eines anderen Anbieters, mit dem Sie private Schlüssel sicher erzeugen und speichern können. Das HSM schützt den Zugriff auf die privaten Schlüssel und ihre Verwendung.
 
