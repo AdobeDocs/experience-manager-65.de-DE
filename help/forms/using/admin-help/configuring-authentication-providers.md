@@ -1,5 +1,5 @@
 ---
-title: Authentifizierungsanbieter konfigurieren
+title: Konfigurieren von Authentifizierungsanbietern
 seo-title: Configuring authentication providers
 description: Fügen Sie Authentifizierungsanbieter hinzu, bearbeiten oder löschen Sie diese, ändern Sie die Authentifizierungseinstellungen und informieren Sie sich über Just-in-time-Bereitstellung.
 seo-description: Add, edit, or delete authentication providers, change authentication settings, and read about just-in-time provisioning of users.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
 source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1576'
 ht-degree: 100%
 
 ---
 
-# Authentifizierungsanbieter konfigurieren {#configuring-authentication-providers}
+# Konfigurieren von Authentifizierungsanbietern {#configuring-authentication-providers}
 
 Hybrid-Domains erfordern mindestens einen Authentifizierungsanbieter und für Unternehmens-Domains ist mindestens ein Authentifizierungs- oder Ordneranbieter erforderlich.
 
