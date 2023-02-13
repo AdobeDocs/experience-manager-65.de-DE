@@ -1,5 +1,5 @@
 ---
-title: HTML5 forms Service Proxy
+title: HTML5 Forms-Service-Proxy
 seo-title: HTML5 forms service proxy
 description: HTML5 forms Service Proxy ist eine Konfiguration, um einen Proxy zum Sendedienst anzumelden. Um Service Proxy zu konfigurieren, geben Sie die URL des Sendedienstes über den Anforderungsparameter „submissionServiceProxy“ ein.
 seo-description: HTML5 forms Service Proxy is a configuration to register a proxy for the submission service. To configure Service Proxy, specify the URL of submission service through request parameter submissionServiceProxy.
@@ -12,13 +12,13 @@ docset: aem65
 feature: Mobile Forms
 exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '697'
 ht-degree: 100%
 
 ---
 
-# HTML5 forms Service Proxy{#html-forms-service-proxy}
+# HTML5 Forms-Service-Proxy{#html-forms-service-proxy}
 
 HTML5 forms Service Proxy ist eine Konfiguration, um einen Proxy zum Sendedienst anzumelden. Um Service Proxy zu konfigurieren, geben Sie die URL des Sendedienstes über den Anforderungsparameter *„submissionServiceProxy“* ein.
 
@@ -40,7 +40,7 @@ HTML5-Formulare können folgende Topologien für die Verbindung zum AEM-Server v
 
 ![HTML5 forms Service Proxy-Topologien](assets/topology.png)
 
-HTML5 forms Service Proxy-Topologien
+HTML5 Forms-Service-Proxy-Topologien
 
 HTML5-Formulare stellen eine Verbindung zu den AEM-Servern her, um serverseitige Skripte, Webdienste und Sendevorgänge auszuführen. Die XFA-Laufzeitumgebung der HTML5-Formulare verwendet Ajax-Aufrufe am Endpunkt „//bin/xfaforms/submitaction“ mit verschiedenen Parametern, um eine Verbindung zu den AEM-Servern herzustellen. HTML5-Formulare stellen eine Verbindung zu den AEM-Servern für folgende Vorgänge her:
 
@@ -128,7 +128,7 @@ Wenn auf die Schaltfläche „Senden“ geklickt wird, senden HTML5-Formulare Da
 
 #### Wie funktioniert der Sende-Proxy? {#how-nbsp-the-nbsp-submit-proxy-works}
 
-Der Sendedienst-Proxy fungiert als Pass-Through, wenn die submitUrl nicht in den Anforderungsparametern enthalten ist. Er fungiert als Pass-Through. Er sendet die Anforderung zum Endpunkt „//bin/xfaforms/submitaction“ und die Antwort zur XFA-Laufzeitumgebung.
+Der Sendedienst-Proxy fungiert als Pass-Through, wenn die submitUrl nicht in den Anforderungsparametern enthalten ist. Er fungiert als Pass-Through. Er sendet die Anforderung zum Endpunkt „/bin/xfaforms/submitaction“ und die Antwort zur XFA-Laufzeitumgebung.
 
 Der Sendedienst-Proxy wählt eine Topologie, wenn die submitUrl in den Anforderungsparametern enthalten ist.
 
