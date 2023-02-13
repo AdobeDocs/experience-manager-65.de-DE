@@ -12,7 +12,7 @@ discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '931'
 ht-degree: 100%
 
@@ -108,4 +108,4 @@ Führen Sie die folgenden Schritte durch, um von AEM 6.3 Forms oder AEM 6.4 Form
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
-   >In AEM 6.4 Forms hat sich die Struktur des crx-Repository geändert. Verwenden Sie nach dem Upgrade auf AEM 6.5 Forms die geänderten Pfade für die Anpassung, die Sie neu erstellen. Sie finden die vollständige Liste der geänderten Pfade unter [Forms Repository-Restrukturierung in AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
+   In AEM 6.4 Forms hat sich die Struktur des crx-Repository geändert. Verwenden Sie nach dem Upgrade auf AEM 6.5 Forms die geänderten Pfade für die Anpassung, die Sie neu erstellen. Sie finden die vollständige Liste der geänderten Pfade unter [Forms Repository-Restrukturierung in AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
