@@ -11,7 +11,7 @@ discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1462'
 ht-degree: 100%
 
@@ -153,7 +153,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
  </tbody>
 </table>
 
-### Konfigurationen für den Mobilgeräte-Emulator {#mobile-device-emulator-configurations}
+### Konfigurationen für den Emulator von Mobilgeräten {#mobile-device-emulator-configurations}
 
 <table>
  <tbody>
@@ -257,7 +257,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
  </tbody>
 </table>
 
-### E-Mail-Vorlage für Seitenereignis-Benachrichtigung {#page-event-notification-e-mail-template}
+### E-Mail-Vorlage für die Benachrichtigung über Seitenereignisse {#page-event-notification-e-mail-template}
 
 <table>
  <tbody>
