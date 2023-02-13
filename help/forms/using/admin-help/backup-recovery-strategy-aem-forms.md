@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1491'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -94,7 +94,7 @@ Wenn die AEM Forms-Hauptdatenbank verschoben oder geändert wird, lesen Sie die 
 
 ### AEM Forms-Hostnamen oder IP-Adresse ändern {#changing-the-aem-forms-hostname-or-ip-address}
 
-In einem Cluster müssen Sie die Cache-Locator-Konfiguration aktualisieren, wenn Sie TCP-Zwischenspeicherung anstelle von UDP verwenden. Siehe &quot;Zwischenspeicherungs-Locators konfigurieren (nur Zwischenspeicherung mit TCP)&quot;im Konfigurationshandbuch, das für Ihren Anwendungsserver relevant ist.
+In einem Cluster müssen Sie die Cache-Locator-Konfiguration aktualisieren, wenn Sie TCP-Zwischenspeicherung anstelle von UDP verwenden. Siehe „Konfigurieren des Caching-Locators (nur Caching unter Verwendung von TCP)“ im Konfigurationshandbuch für Ihren Anwendungs-Server.
 
 ### AEM Forms-Knotendatei-Systempfade ändern {#changing-the-aem-forms-node-file-system-paths}
 
