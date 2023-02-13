@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Microsoft Dynamics 365 für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite
+title: Konfigurieren von Microsoft Dynamics 365 für den Hypotheken-Workflow der We.Finance-Referenz-Website
 seo-title: Configure Microsoft Dynamics 365 for the home mortgage workflow of the We.Finance reference site
 description: In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste über adaptive Formularen für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite nutzen.
 seo-description: Learn how to leverage the Microsoft® Dynamics 365 services through adaptive forms for the home mortgage workflow of the We.Finance Reference site
@@ -9,13 +9,13 @@ topic-tags: develop, Configuration
 discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '398'
 ht-degree: 100%
 
 ---
 
-# Konfigurieren von Microsoft Dynamics 365 für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
+# Konfigurieren von Microsoft Dynamics 365 für den Hypotheken-Workflow der We.Finance-Referenz-Website {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 In diesem Dokument erfahren Sie, wie Sie die Microsoft® Dynamics 365-Dienste über adaptive Formularen für den Hypotheken-Arbeitsablauf der We.Finance-Referenzwebsite nutzen.
 
