@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 source-git-commit: 1b57fca352457e973bd7395e060e3d0495a9d920
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1134'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ Die Workflow-Konsole stellt mehrere Tools für die Verwaltung von Workflow-Insta
 
 >[!NOTE]
 >
->Die [JMX-Konsole](/help/sites-administering/jmx-console.md#workflow-maintenance) bietet zusätzliche Workflow-Wartungsvorgänge.
+>Die [JMX-Konsole](/help/sites-administering/jmx-console.md#workflow-maintenance) stellt zusätzliche Workflow-Wartungsvorgänge bereit.
 
 Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwenden Sie die [globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation), um das Bedienfeld **Tools** zu öffnen, und wählen Sie dann **Workflow** aus:
 
@@ -55,7 +55,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
    * Workflow-Modell: ein Workflow-Modell auswählen
    * Bevollmächtigter: einen Workflow-Bevollmächtigten auswählen
    * Typ: Aufgabe, Workflow-Element oder Workflow-Fehler
-   * Aufgabenstatus: Aktiv, Abgeschlossen oder Beendet
+   * Aufgabenstatus: „Aktiv“, „Abgeschlossen“ oder „Beendet“
    * Meine Position: Eigentümer UND Bevollmächtigter, nur Eigentümer, nur Bevollmächtigter
    * Startdatum: Startdatum vor oder nach einem bestimmten Datum
    * Enddatum: Enddatum vor oder nach einem bestimmten Datum
@@ -118,7 +118,7 @@ Setzen Sie den Workflow anschließend zur Untersuchung von Fehlern fort oder bee
 
 Die Minimierung der Anzahl von Workflow-Instanzen steigert die Leistung der Workflow-Engine, sodass Sie regelmäßig abgeschlossene oder laufende Workflow-Instanzen aus dem Repository löschen können.
 
-Konfigurieren **Adobe Granite-Workflow-Bereinigungskonfiguration** um Workflow-Instanzen entsprechend ihrem Alter und Status zu bereinigen. Darüber hinaus können Sie Workflow-Instanzen aller Modelle oder eines bestimmten Modells löschen.
+Konfigurieren Sie die **Adobe Granite Workflow-Bereinigungskonfiguration**, um Workflow-Instanzen je nach ihrem Alter und Status zu löschen. Darüber hinaus können Sie Workflow-Instanzen aller Modelle oder eines bestimmten Modells löschen.
 
 Sie können auch mehrere Konfigurationen des Service erstellen, um Workflow-Instanzen zu löschen, die andere Kriterien erfüllen. Erstellen Sie zum Beispiel eine Konfiguration, mit der die Instanzen eines bestimmten Workflow-Modells gelöscht werden, wenn sie bedeutend länger als erwartet ausgeführt werden. Erstellen Sie eine weitere Konfiguration, die alle abgeschlossenen Workflows nach einer bestimmten Anzahl von Tagen löscht, um die Größe des Repositorys zu minimieren.
 
@@ -158,7 +158,7 @@ Zum Konfigurieren des Dienstes können Sie die [Web-Konsole](/help/sites-deployi
   <tr>
    <td>Zu bereinigende Modelle</td>
    <td>scheduledpurge.modelIds</td>
-   <td><p>Dies ist die ID der zu bereinigenden Workflow-Modelle. Die ID ist der Pfad zum Modellknoten, z. B.:<br /> /var/workflow/models/dam/update_asset<br /> </p> <p>Klicken Sie zum Angeben mehrerer Modelle auf die „+“-Schaltfläche innerhalb der Web-Konsole. </p> <p>Geben Sie keinen Wert an, um Instanzen aller Workflow-Modelle zu bereinigen.</p> </td>
+   <td><p>Dies ist die ID der zu bereinigenden Workflow-Modelle. Die ID ist der Pfad zum Modellknoten, zum Beispiel:<br /> /conf/global/settings/workflow/models/dam/update_asset/<br />. </p> <p>Klicken Sie zum Angeben mehrerer Modelle auf die „+“-Schaltfläche innerhalb der Web-Konsole. </p> <p>Geben Sie keinen Wert an, wenn die Instanzen aller Workflow-Modelle bereinigt werden sollen.</p> </td>
   </tr>
   <tr>
    <td>Workflow-Alter</td>
@@ -170,7 +170,7 @@ Zum Konfigurieren des Dienstes können Sie die [Web-Konsole](/help/sites-deployi
 
 ## Einstellen der maximalen Größe des Posteingangs {#setting-the-maximum-size-of-the-inbox}
 
-Sie können die maximale Größe des Posteingangs festlegen, indem Sie die Variable **Adobe Granite Workflow-Dienst**, wobei [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder [Hinzufügen einer OSGi-Konfiguration zum Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). In der folgenden Tabelle ist die Eigenschaft beschrieben, die Sie für jede Methode konfigurieren.
+Sie können die maximale Größe des Posteingangs durch die Konfiguration des **Adobe Granite Workflow-Services** mithilfe der [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) oder durch das [Hinzufügen einer OSGi-Konfiguration zum Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) einstellen. In der folgenden Tabelle ist die Eigenschaft beschrieben, die Sie für jede Methode konfigurieren.
 
 >[!NOTE]
 >
@@ -184,7 +184,7 @@ Sie können die maximale Größe des Posteingangs festlegen, indem Sie die Varia
 
 ## Verwenden von Workflow-Variablen für kundeneigene Datenspeicher {#using-workflow-variables-customer-datastore}
 
-Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (JCR) gespeichert. Diese Daten können von sensibler Natur sein. Sie können alle benutzerdefinierten Metadaten/Daten in Ihrem eigenen verwalteten Speicher speichern, anstatt die von Adobe bereitgestellte Datenspeicherung zu verwenden. In diesen Abschnitten wird beschrieben, wie Sie diese Variablen für den externen Speicher einrichten.
+Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (JCR) gespeichert. Diese Daten können von sensibler Natur sein. Sie können alle benutzerdefinierten Metadaten/Daten in Ihrem eigenen verwalteten Speicher speichern, anstatt die von Adobe bereitgestellte Datenspeicherung zu verwenden. In diesen Abschnitten wird beschrieben, wie Sie diese Variablen für die externe Speicherung einrichten.
 
 ### Festlegen des Modells für die Verwendung der externen Datenspeicherung von Metadaten {#set-model-for-external-storage}
 
@@ -192,7 +192,7 @@ Auf der Ebene des Workflow-Modells wird ein Flag bereitgestellt, das angibt, das
 
 Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* des Workflow-Modells gespeichert. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled* beibehalten.
 
-Die folgende Abbildung zeigt, wie Sie das Flag für einen Workflow festlegen.
+Die folgende Illustration zeigt, wie Sie die Hervorhebung in einem Workflow festlegen.
 
 ![workflow-externalize-config](assets/workflow-externalize-config.png)
 
