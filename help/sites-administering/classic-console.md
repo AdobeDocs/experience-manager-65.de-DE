@@ -12,7 +12,7 @@ discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '860'
 ht-degree: 100%
 
@@ -26,7 +26,7 @@ Informationen zur Tagging-Konsole der Touch-optimierten Benutzeroberfläche find
 
 So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
-* In der Autoreninstanz:
+* in der Autoreninstanz
 * Melden Sie sich mit Administratorrechten an.
 * Navigieren Sie zur Konsole, zum Beispiel [https://localhost:4502/tagging](https://localhost:4502/tagging).
 
@@ -115,7 +115,7 @@ Das Dialogfeld **Tag verschieben** hat folgende Gestalt:
 
 ## Zusammenführen von Tags {#merging-tags}
 
-Das Zusammenführen von Tags kann sich anbieten, wenn im Klassifikationsschema Duplikate vorhanden sind. Wenn Tag A mit Tag B zusammengeführt wird, werden alle mit Tag gekennzeichneten Seiten mit Tag B gekennzeichnet, und Tag A steht Autoren nicht mehr zur Verfügung.
+Das Zusammenführen von Tags kann sich anbieten, wenn in einer Taxonomie Duplikate vorhanden sind. Wenn Tag A mit Tag B zusammengeführt wird, werden alle mit Tag gekennzeichneten Seiten mit Tag B gekennzeichnet, und Tag A steht Autoren nicht mehr zur Verfügung.
 
 So führen Sie Tags zusammen:
 
