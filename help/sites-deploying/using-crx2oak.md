@@ -12,9 +12,9 @@ discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1246'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ Es kann zur Migration von Daten aus älteren CQ-Versionen, die auf Apache Jackra
 
 Die aktuelle CRX2OAK-Version kann unter der folgenden Adresse vom öffentlichen Adobe-Repository heruntergeladen werden:[https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
-Die Liste der Änderungen und Fehlerbehebungen für die aktuelle Version finden Sie in den [Versionshinweisen zu CRX2OAK](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/crx2oak.html).
+Die Liste der Änderungen und Fehlerbehebungen für die aktuelle Version finden Sie in den [Versionshinweisen zu CRX2OAK](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/crx2oak.html?lang=de).
 
 >[!NOTE]
 >
