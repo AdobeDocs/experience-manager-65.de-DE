@@ -11,9 +11,9 @@ docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
 source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2042'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 94%
 
 Mit der AEM Forms-Datenintegration können Sie unterschiedliche Datenquellen konfigurieren und Verbindungen zu ihnen herzustellen. Die folgenden Datenquellen werden standardmäßig unterstützt. Es ist jedoch möglich, mit nur wenigen Anpassungen auch andere Datenquellen zu integrieren.
 
-* Relationale Datenbanken - MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS und Sybase
+* Relationale Datenbanken: MySQL, Microsoft SQL Server, IBM DB2, Oracle RDBMS und Sybase
 * AEM-Benutzerprofil 
 * RESTful-Webservices
 * SOAP-basierte Webservices
@@ -65,7 +65,7 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
 
    >[!NOTE]
    >
-   > Wenn Ihr Forms-Datenmodell ein Objekt enthält, das ein reserviertes Schlüsselwort für Ihre relationale Datenbank ist, kann dies zu Problemen beim Hinzufügen, Aktualisieren oder Abrufen von Daten führen. Vermeiden Sie daher die Verwendung solcher Objekte in Ihrem Formulardatenmodell.
+   > Wenn Ihr Datenmodell in Forms ein Objekt enthält, das ein reserviertes Keyword für Ihre relationale Datenbank ist, kann dies zu Problemen beim Hinzufügen, Aktualisieren oder Abrufen von Daten führen. Vermeiden Sie daher die Verwendung solcher Objekte in Ihrem Formulardatenmodell.
 
 ## AEM-Benutzerprofil konfigurieren {#configure-aem-user-profile}
 
@@ -73,7 +73,7 @@ Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfigura
 
 1. Wechseln Sie zur AEM-Web-Console unter https://&#39;[server]:[port]&#39;system/console/configMgr.
 1. Suchen Sie nach **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** und tippen Sie darauf, um die Konfiguration im Bearbeitungsmodus zu öffnen.
-1. Im Dialogfeld für die Benutzerprofil-Connector-Konfiguration können Sie Benutzerprofileigenschaften hinzufügen, entfernen oder aktualisieren. Die angegebenen Eigenschaften sind für die Verwendung im Formulardatenmodell verfügbar. Verwenden Sie das folgende Format, um Benutzerprofileigenschaften festzulegen:
+1. Im Dialogfeld für die Benutzerprofil-Connector-Konfiguration können Sie Benutzerprofileigenschaften hinzufügen, entfernen oder aktualisieren. Die angegebenen Eigenschaften sind zur Verwendung im Formulardatenmodell verfügbar. Verwenden Sie das folgende Format, um Benutzerprofileigenschaften festzulegen:
 
    `name=[property_name_with_location_in_user_profile],type=[property_type]`
 
@@ -84,7 +84,7 @@ Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfigura
 
    >[!NOTE]
    >
-   >Die **&#42;** im obigen Beispiel bedeutet, dass alle Knoten unter `profile/empLocation/` Knoten in AEM Benutzerprofil in der CRXDE-Struktur. Das bedeutet, dass das Formulardatenmodell auf die Eigenschaft `city` des Typs `string` in jedem Knoten unter dem `profile/empLocation/`-Knoten zugreifen kann. Die Knoten, die die angegebene Eigenschaft enthalten, müssen jedoch einer einheitlichen Struktur entsprechen.
+   >Der **&#42;** im obigen Beispiel bezeichnet alle Knoten unter dem Knoten `profile/empLocation/` im AEM-Benutzerprofil in der CRXDE-Struktur. Das bedeutet, dass das Formulardatenmodell auf die Eigenschaft `city` des Typs `string` in jedem Knoten unter dem `profile/empLocation/`-Knoten zugreifen kann. Die Knoten, die die angegebene Eigenschaft enthalten, müssen jedoch einer einheitlichen Struktur entsprechen.
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Konfiguration zu speichern.
 
@@ -223,4 +223,4 @@ Wenn Sie die gegenseitige Authentifizierung für das Formulardatenmodell aktivie
 
 ## Nächste Schritte {#next-steps}
 
-Sie haben die Datenquellen konfiguriert. Als Nächstes können Sie ein Formulardatenmodell erstellen oder wenn Sie bereits ein Formulardatenmodell ohne Datenquelle erstellt haben, können Sie es mit den konfigurierten Datenquellen verknüpfen. Weitere Informationen finden Sie unter [Erstellen eines Formulardatenmodells](/help/forms/using/create-form-data-models.md).
+Sie haben die Datenquellen konfiguriert. Als Nächstes können Sie ein Formulardatenmodell erstellen oder, falls Sie bereits ein Formulardatenmodell ohne eine Datenquelle erstellt haben, können Sie es den schon konfigurierten Datenquellen zuordnen. Weitere Informationen finden Sie unter [Erstellen eines Formulardatenmodells](/help/forms/using/create-form-data-models.md).
