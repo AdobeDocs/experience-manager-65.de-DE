@@ -1,5 +1,5 @@
 ---
-title: SSL für JBoss Application Server konfigurieren
+title: Konfigurieren von SSL für JBoss Application Server
 seo-title: Configuring SSL for JBoss Application Server
 description: Erfahren Sie, wie Sie SSL für JBoss Application Server konfigurieren.
 seo-description: Learn how to configure SSL for JBoss Application Server.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '908'
 ht-degree: 100%
 
 ---
 
-# SSL für JBoss Application Server konfigurieren {#configuring-ssl-for-jboss-application-server}
+# Konfigurieren von SSL für JBoss Application Server {#configuring-ssl-for-jboss-application-server}
 
 Zum Konfigurieren von SSL unter JBoss Application Server benötigen Sie eine SSL-Berechtigung für die Authentifizierung. Sie können das Java-Keytool zum Erstellen einer Berechtigung oder zum Anfordern und Importieren einer Berechtigung von einer Zertifizierungsstelle verwenden. Anschließend müssen Sie SSL unter JBoss aktivieren.
 
@@ -90,7 +90,7 @@ In diesem Verfahren gilt:
 
    * Servercluster – `[appserver root]`/domain/configuration/domain_&lt;dbname>.xml
 
-1. &#x200B;
+1. 
    * **Für Einzelserver** Fügen Sie in der Datei „lc_&lt;dbaname/tunkey>.xml“ Folgendes nach dem Abschnitt „&lt;security-realms>“ ein:
 
    ```xml
@@ -136,7 +136,7 @@ In diesem Verfahren gilt:
    ```
 
 1. Ändern Sie die Werte für die Attribute `keystoreFile` und `keystorePass` in das Keystore-Kennwort, das Sie beim Erstellen des Keystore festgelegt haben.
-1. Starten Sie den Anwendungsserver neu:
+1. So starten Sie den Anwendungs-Server neu:
 
    * Für Turnkey-Installationen:
 
