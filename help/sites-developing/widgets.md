@@ -12,9 +12,9 @@ discoiquuid: 7b234f1f-4470-4de1-a3c3-ab19e5e001ad
 docset: aem65
 exl-id: 56a9591c-cd78-42e8-a5d7-6b48581d6af6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4934'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -141,11 +141,11 @@ Die erste Komponente der Gruppe **Verwenden von ExtJS Widgets** im Sidekick wird
 * das Dialogfeld „“ (Knoten `full`full): Es zeigt ein Fenster mit drei Registerkarten mit jeweils zwei Textfeldern an.
 * das Dialogfeld „Single Panel“ (Knoten `singlepanel`): Es zeigt ein Fenster mit einer Registerkarte mit zwei Textfeldern an.
 * das Dialogfeld „Multi Panel“ (Knoten `multipanel`): Es zeigt dasselbe an wie das Dialogfeld „Full“, ist aber anders aufgebaut.
-* das Dialogfeld „“ (Knoten `design`design): Es zeigt ein Fenster mit zwei Registerkarten an. Die erste Registerkarte weist ein Textfeld auf, ein Dropdown-Menü und einen ausblendbaren Textbereich. Die zweite Registerkarte verfügt über einen Feldsatz mit vier Textfeldern und einen ausblendbaren Feldsatz mit zwei Textfeldern.
+* das Dialogfeld „“ (Knoten `design`design): Es zeigt ein Fenster mit zwei Registerkarten an. Die erste Registerkarte besitzt ein Textfeld, ein Dropdown-Menü und einen ausblendbaren Textbereich. Die zweite Registerkarte verfügt über einen Feldsatz mit vier Textfeldern und einen ausblendbaren Feldsatz mit zwei Textfeldern.
 
 Fügen Sie die Komponente **1. Dialog Basics** der Beispielseite hinzu:
 
-1. Fügen Sie die Komponente **1. Dialog Basics** der Beispielseite aus der Registerkarte **Verwenden von ExtJS Widgets** im **Sidekick** hinzu.
+1. Fügen Sie die Komponente **1. Dialog Basics** zur Beispielseite aus der Registerkarte **Verwenden von ExtJS Widgets** im **Sidekick** hinzu.
 1. Die Komponente zeigt einen Titel, etwas Text und einen Link **EIGENSCHAFTEN**: Klicken Sie auf den Link, um die Eigenschaften des im Repository gespeicherten Absatzes anzuzeigen. Klicken Sie erneut auf den Link, um die Eigenschaften zu verbergen.
 
 Die Komponente wird wie im Folgenden dargestellt:
@@ -378,7 +378,7 @@ Die direkt einsatzbereiten und im Lieferumfang von AEM enthaltenen Widgets sollt
 
 Die benutzerdefinierten Widgets und das Plug-in sind in der Komponente **3. Benutzerdefinierte Widgets** des Pakets **Verwenden von ExtJS Widgets** enthalten. Fügen Sie diese Komponente wie folgt der Beispielseite hinzu:
 
-1. Fügen Sie die Komponente **3. Benutzerdefinierte Widgets** der Beispielseite aus der Registerkarte **Verwenden von ExtJS Widgets** im **Sidekick** hinzu.
+1. Fügen Sie die Komponente **3. Benutzerdefinierte Widgets** zur Beispielseite aus der Registerkarte **Verwenden von ExtJS-Widgets** im **Sidekick** hinzu.
 1. Die Komponente zeigt einen Titel, etwas Text und, wenn Sie auf den Link **EIGENSCHAFTEN** klicken, die Eigenschaften des im Repository gespeicherten Absatzes an. Durch erneutes Klicken werden die Eigenschaften verborgen.
 Die Komponente wird wie im Folgenden dargestellt:
 
