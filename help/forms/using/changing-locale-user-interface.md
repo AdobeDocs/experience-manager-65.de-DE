@@ -1,5 +1,5 @@
 ---
-title: Ändern des Gebietsschemas der AEM Forms Workspace-Benutzeroberfläche
+title: Ändern des Gebietsschemas der Benutzeroberfläche von AEM Forms Workspace
 seo-title: Changing the locale of AEM Forms workspace user interface
 description: AEM Forms Workspace anpassen zum Lokalisieren von Text, ausgeblendeten Kategorien, Warteschlangen, Prozessen und der Datumsauswahl auf der Benutzeroberfläche.
 seo-description: How to modify the AEM Forms workspace to localize text, collapsed categories, queues, and processes, and the date picker on the interface.
@@ -12,13 +12,13 @@ discoiquuid: 89f9d666-28e2-4201-8467-ae90693ca5d2
 docset: aem65
 exl-id: 9a069486-02a8-4058-adfb-4e0e49d8c0cf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '556'
 ht-degree: 100%
 
 ---
 
-# Ändern des Gebietsschemas der AEM Forms Workspace-Benutzeroberfläche{#changing-the-locale-of-aem-forms-workspace-user-interface}
+# Ändern des Gebietsschemas der Benutzeroberfläche von AEM Forms Workspace{#changing-the-locale-of-aem-forms-workspace-user-interface}
 
 AEM Forms Workspace unterstützt standardmäßig die Sprachen Englisch, Französisch, Deutsch und Japanisch. Darüber hinaus besteht die Möglichkeit, die AEM Forms Workspace-Benutzeroberfläche in einer beliebigen anderen Sprache zu lokalisieren.
 
