@@ -1,5 +1,5 @@
 ---
-title: Suchvorlagen anpassen
+title: Anpassen von Suchvorlagen
 seo-title: Customizing search templates
 description: Sie können Suchvorlagen erstellen, die in Workspace verwendet werden sollen, um von den Seiten „Aufgaben“ und „Verfolgung“ aus nach Prozessinstanzen zu suchen. Außerdem können Sie vorhandene Suchvorlagen bearbeiten oder löschen.
 seo-description: You can create search templates to be used in Workspace to search for instances of processes from the To Do and Tracking pages. You can also edit or delete existing search templates.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '856'
 ht-degree: 100%
 
 ---
 
-# Suchvorlagen anpassen {#customizing-search-templates}
+# Anpassen von Suchvorlagen {#customizing-search-templates}
 
 Sie können Suchvorlagen erstellen, die in Workspace verwendet werden sollen, um von den Seiten „Aufgaben“ und „Verfolgung“ aus nach Prozessinstanzen zu suchen. Außerdem können Sie vorhandene Suchvorlagen bearbeiten oder löschen.
 
