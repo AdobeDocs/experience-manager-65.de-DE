@@ -1,5 +1,5 @@
 ---
-title: Verwenden der Document Security-Webseiten
+title: Verwenden der Document Security-Web-Seiten
 seo-title: Using the document security webpages
 description: Erfahren Sie, wie Sie zu Document Security-Webseiten navigieren und sie verwenden und sich bei ihnen anmelden.
 seo-description: Learn how you can login, navigate and use the document security web pages.
@@ -12,13 +12,13 @@ discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '923'
 ht-degree: 100%
 
 ---
 
-# Verwenden der Document Security-Webseiten {#using-the-document-security-webpages}
+# Verwenden der Document Security-Web-Seiten {#using-the-document-security-webpages}
 
 Benutzer und Administratoren nutzen die Document Security-Webseiten zum Erstellen und Verwalten von Richtlinien, zum Verwalten richtliniengeschützter Dokumente und zum Überwachen von Ereignissen in Verbindung mit richtliniengeschützten Dokumenten. Administratoren nutzen Webseiten auch zum Erstellen von Richtliniensätzen und Zuweisen von Richtliniensatzkoordinatoren, zum Konfigurieren von Document Security-Standardeinstellungen, zum Verwalten der Registrierung und der Konten eingeladener Benutzer sowie zum Überwachen und Verwalten server-, richtlinien-, benutzer- und dokumentbezogener Ereignisse.
 
