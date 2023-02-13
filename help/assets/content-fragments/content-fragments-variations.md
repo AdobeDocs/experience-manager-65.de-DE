@@ -5,9 +5,9 @@ feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2426'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ In der Registerkarte **Varianten** haben Sie folgende Möglichkeiten:
 * [Eingeben des Inhalts](#authoring-your-content) für das Fragment,
 * [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts,
 
-Führen Sie je nach bearbeitetem Datentyp eine Reihe weiterer Aktionen durch. Beispiel:
+Führen Sie eine Vielzahl weiterer Aktionen abhängig vom bearbeiteten Datentyp aus, z. B.:
 
 * [Einfügen von visuellen Assets in Ihr Fragment](#inserting-assets-into-your-fragment) (Bilder)
 
@@ -40,7 +40,7 @@ Führen Sie je nach bearbeitetem Datentyp eine Reihe weiterer Aktionen durch. Be
 
 ## Verfassen Ihres Inhalts {#authoring-your-content}
 
-Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **Varianten** standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält verschiedene Felder verschiedener Datentypen, die im Inhaltsmodell definiert wurden.
+Wenn Sie Ihr Inhaltsfragment zur Bearbeitung öffnen, wird die Registerkarte **Varianten** standardmäßig geöffnet. Hier können Sie den Inhalt bearbeiten, und zwar den der primären Version sowie sämtlicher Varianten. Das strukturierte Fragment enthält verschiedene Felder mit verschiedenen Datentypen, die im Inhaltsmodell definiert wurden.
 
 Beispiel:
 
@@ -50,7 +50,7 @@ Beispiel:
 
 Sie haben folgende Möglichkeiten:
 
-* Bearbeiten Sie Ihre Inhalte direkt im **Varianten** Registerkarte; Jeder Datentyp bietet verschiedene Bearbeitungsoptionen, z. B.:
+* Bearbeiten Sie Ihre Inhalte direkt auf der Registerkarte **Varianten**. Jeder Datentyp bietet verschiedene Bearbeitungsoptionen, z. B.:
 
    * Für **mehrzeilige Textfelder** können Sie auch den [Vollbild-Editor](#full-screen-editor) öffnen, um:
 
@@ -60,17 +60,17 @@ Sie haben folgende Möglichkeiten:
    * Für die Felder **Fragmentreferenz** kann je nach Modelldefinition die Option [Inhaltsfragment bearbeiten](#fragment-references-edit-content-fragment) verfügbar sein.
 
 
-* Zuweisen **Tags** zur aktuellen Änderung; die Tags hinzugefügt, aktualisiert und entfernt werden können
+* Weisen Sie der aktuellen Variante **Tags** zu; die Tags können hinzugefügt, aktualisiert und entfernt werden
 
    * [Tags](/help/sites-authoring/tags.md) sind besonders leistungsstark bei der Organisation Ihrer Fragmente, da sie für die Inhaltsklassifizierung und -taxonomie verwendet werden können. Tags können zum Suchen von Inhalten (nach Tags) und zum Anwenden von Massenvorgängen verwendet werden.
 
       * Bei der Suche nach einem Tag wird das Fragment zurückgegeben, wobei die getaggte Variante hervorgehoben ist.
       * Varianten-Tags können auch verwendet werden, um Varianten für ein bestimmtes CDN-Profil (Content Delivery Network) (für CDN-Caching) zu gruppieren, anstatt den Variantennamen zu verwenden.
 
-      Beispielsweise können Sie relevante Fragmente als &quot;Weihnachtsstart&quot;taggen, um nur diese als Teilmenge durchsuchen zu können oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
+      Beispielsweise können Sie relevante Fragmente als „Weihnachts-Launch“ taggen, um nur diese als Teilmenge zu durchsuchen oder sie für einen anderen zukünftigen Launch in einen neuen Ordner zu kopieren.
    >[!NOTE]
    >
-   >**Tags** kann auch hinzugefügt werden (zum **Übergeordnet** -Variante) als Teil der [Metadaten](/help/assets/content-fragments/content-fragments-metadata.md)
+   >**Tags** können auch (in der **primären** Variante) als Teil der [Metadaten](/help/assets/content-fragments/content-fragments-metadata.md) hinzugefügt werden
 
 * [Erstellen und Verwalten von Varianten](#managing-variations) des **primären** Inhalts.
 
@@ -382,7 +382,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 1. Verwenden Sie **Auswahl**, um dem aktuellen Inhaltsfragment (an der aktuellen Position) eine Referenz zum ausgewählten Inhaltsfragment hinzuzufügen.
 
    >[!CAUTION]
-   Wenn Sie nach dem Hinzufügen eines Verweises zu einem anderen Fragment das Format ändern in:
+   Wenn Sie nach dem Hinzufügen einer Referenz zu einem anderem Fragment das Format ändern, könnte folgendes auftreten:
    * **Klartext**: Die Referenz geht im Fragment vollständig verloren.
    * **Markdown**: Die Referenz bleibt bestehen.
 
@@ -405,7 +405,7 @@ So erstellen Sie eine neue Variante:
    Wenn eine neue Variante erstellt wird, wird immer die **Primäre Version** kopiert, nicht die gerade geöffnete Variante.
 
    >[!NOTE]
-   Wenn Sie eine neue Variante erstellen, werden alle **Tags** derzeit zugewiesen ist **Übergeordnet** -Variante in Ihre neue Variante kopiert werden.
+   Wenn Sie eine neue Variante erstellen, werden alle **Tags**, die derzeit der **primären** Variante zugewiesen sind, in Ihre neue Variante kopiert.
 
 ### Bearbeiten einer Variante {#editing-a-variation}
 
@@ -453,7 +453,7 @@ Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisie
 >[!CAUTION]
 Die Synchronisierung ist nur verfügbar, um Änderungen *von der **primären Version**in die Variante* zu kopieren.
 Es wird nur das aktuelle Element der Variante synchronisiert.
-Die Synchronisierung funktioniert nur auf der **Mehrzeiliger Text** Datentyp.
+Die Synchronisierung funktioniert nur mit dem Datentyp **Mehrzeiliger Text**.
 Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Version*** zu übertragen.
 
 <!-- needs new screenshot for synchronize effect -->
@@ -478,4 +478,4 @@ Es ist nicht möglich, Änderungen *von einer Variante auf die **primäre Versio
 
    ![Mit primärer Version synchronisieren](assets/cfm-variations-11c.png)
 
-1. Auswählen **Synchronisieren**, wird die Variante aktualisiert und angezeigt.
+1. Wählen Sie **Synchronisieren**, um die Variante zu aktualisieren und anzuzeigen.
