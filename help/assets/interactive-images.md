@@ -12,9 +12,9 @@ feature: Interactive Images
 role: User, Admin
 exl-id: 8a609024-e9e6-4805-8306-48d095110eb6
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4275'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -160,9 +160,9 @@ Im Folgenden finden Sie einige Beispiele für Schnellansichts-URLs und die resul
 
 Sie können den in den drei oben genannten Beispielen verwendeten Ansatz auch auf die Demo-Web-Seite anwenden:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=de)
 
-Die Demo-Web-Seite enthält mehrere Produktminiaturansichten, von denen jede eine Schnellansichtsschaltfläche mit der Bezeichnung &quot;Weitere Informationen&quot;aufweist. Wählen Sie bei aktiviertem Debugging-Tool des Webbrowsers jede einzelne Schaltfläche aus, und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichten auf der Seite aktiviert haben, verfügen Sie über die folgende Liste mit den an das Backend gesendeten Schnellansichtsanforderungen:
+Die Demo-Web-Seite enthält mehrere Produktminiaturen. Jede davon verfügt über eine Schnellansichts-Schaltfläche mit der Bezeichnung „Mehr anzeigen“. Wählen Sie bei aktiviertem Debugging-Tool des Webbrowsers jede einzelne Schaltfläche aus und notieren Sie sich die aufgezeichneten Schnellansichts-URLs. Nachdem Sie alle vier Produktschnellansichten auf der Seite aktiviert haben, verfügen Sie über die folgende Liste mit den an das Backend gesendeten Schnellansichtsanforderungen:
 
 * `/datafeed/Male-Windbreaker.json`
 * `/datafeed/Male-SimpleHenley.json`
@@ -354,7 +354,7 @@ Der kopierte Einbettungs-Code ist für eine responsive Umgebung ausgelegt, sodas
 
 Verwenden der Demo-Website als ein Beispiel:
 
-[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html)
+[https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=de](https://experienceleague.adobe.com/tools/dynamic-media-demo/shoppable-banner/we-fashion/landing-0.html?lang=de)
 
 Beachten Sie, dass es sich beim Bild der drei Männer um ein statisches `IMG`-Tag handelt:
 
