@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
 source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '590'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -32,7 +32,7 @@ Diese Seite enthält einen Überblick über die Komponenten von Adobe Experience
 * Verfügen über eine standardisierte Benutzeroberfläche.
 * Verfügen über ein konfigurierbares Bearbeitungsverhalten.
 * Verwenden Dialogfelder, die basierend auf Granite-UI-Komponenten mit Unterelementen erstellt werden
-* Werden per [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) (empfohlen) oder JSP entwickelt.
+* Werden per [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) (empfohlen) oder JSP entwickelt.
 * Können für die Erstellung von angepassten Komponenten entwickelt werden, mit denen die Standardfunktionalität erweitert wird.
 
 Da die Komponenten modular sind, haben Sie folgende Möglichkeiten:
@@ -73,7 +73,7 @@ Die **Kernkomponenten** wurden mit AEM 6.3 eingeführt und bieten flexible und 
 
 >[!NOTE]
 >
->[Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) sind die derzeit beste Vorgehensweise für den Entwurf und die Entwicklung von Komponenten und dienen als Referenzimplementierungen.
+>[Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) sind die derzeit beste Vorgehensweise für den Entwurf und die Entwicklung von Komponenten und dienen als Referenzimplementierungen.
 >
 >[AEM-Modernisierungs-Tools](modernization-tools.md) können die Migration zu Kernkomponenten unterstützen.
 
@@ -106,7 +106,7 @@ Die folgenden Seiten enthalten detailliertere Informationen zur Entwicklung dies
 * [Komponenten für Inhaltsfragmente](/help/sites-developing/components-content-fragments.md)
 * [Ermitteln von Seiteninformationen im JSON-Format](/help/sites-developing/pageinfo.md)
 * [Internationalisieren von Komponenten](/help/sites-developing/i18n.md)
-* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 * [Verwenden von Bedingungen zum Ausblenden](/help/sites-developing/hide-conditions.md)
 * Klassische Benutzeroberfläche
 
