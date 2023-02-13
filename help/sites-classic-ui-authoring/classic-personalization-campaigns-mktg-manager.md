@@ -12,9 +12,9 @@ discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1175'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -32,28 +32,36 @@ Beispiel:
 
 ![screen_shot_2012-02-21at114636am](assets/screen_shot_2012-02-21at114636am.png)
 
-Aus dem MCM können Sie auf folgende Komponenten zugreifen:
+Aus MCM können Sie auf folgende Komponenten zugreifen:
 
-* **[Dashboard](#dashboard)** Dieses ist in vier Bereiche unterteilt:
+* **[Dashboard](#dashboard)**
+Dieses ist in vier Bereiche unterteilt:
 
-   * [Listen](#lists) Dieser Bereich enthält die Listen, die Sie bereits erstellt haben, sowie die Anzahl der Leads in den jeweiligen Listen. Aus diesem Bereich können Sie direkt neue Listen erstellen oder Leads importieren, um eine neue Liste zu erstellen.
+   * [Listen](#lists)
+Dieser Bereich enthält die Listen, die Sie bereits erstellt haben, sowie die Anzahl der Leads in den jeweiligen Listen. Aus diesem Bereich können Sie direkt neue Listen erstellen oder Leads importieren, um eine neue Liste zu erstellen.
 Wenn Sie eine bestimmte Liste auswählen, gelangen Sie in den Bereich [Listen](#lists), der Details zu Ihrer Liste enthält.
 
-   * [Segmente](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation) Dieser Bereich enthält die Segmente, die Sie definiert haben. Mit Segmenten können Sie eine Gruppe von Besuchern charakterisieren, die bestimmte Eigenschaften teilen.
+   * [Segmente](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#anoverviewofsegmentation)
+Dieser Bereich enthält die Segmente, die Sie definiert haben. Mit Segmenten können Sie eine Gruppe von Besuchern charakterisieren, die bestimmte Eigenschaften teilen.
 Wenn Sie ein bestimmtes Segment auswählen, wird die Segment-Definitionsseite geöffnet.
 
-   * [Berichte](/help/sites-administering/reporting.md) In AEM stehen verschiedene Berichte zur Verfügung, mit denen Sie den Status Ihrer Instanz analysieren und überwachen können. In diesem MCM-Bereich werden die Berichte angezeigt.
+   * [Berichte](/help/sites-administering/reporting.md)
+In AEM stehen verschiedene Berichte zur Verfügung, mit denen Sie den Status Ihrer Instanz analysieren und überwachen können. In diesem MCM-Bereich werden die Berichte angezeigt.
 Wenn Sie einen Bericht auswählen, wird die Berichtseite geöffnet.
 
-   * [Kampagnen](#campaigns) In diesem Fenster werden Ihre Kampagnenerlebnisse wie [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) und [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) aufgeführt.
+   * [Kampagnen](#campaigns)
+In diesem Fenster werden Ihre Kampagnenerlebnisse wie [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) und [Teaser](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#teasers) aufgeführt.
 
-* **[Leads](#leads)** Hier können Sie Ihre Leads verwalten. Sie können Leads erstellen oder importieren, bestimmte Details für einzelne Leads bearbeiten oder löschen, wenn sie nicht mehr benötigt werden. Außerdem können Sie Leads in verschiedene Gruppen, sogenannte Listen, einteilen. **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
- Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+* **[Leads](#leads)**
+Hier können Sie Ihre Leads verwalten. Sie können Leads erstellen oder importieren, bestimmte Details für einzelne Leads bearbeiten oder löschen, wenn sie nicht mehr benötigt werden. Außerdem können Sie Leads in verschiedene Gruppen, sogenannte Listen, einteilen. **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
+Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
-* **[Listen](#lists)** Hier können Sie Ihre (Lead-)Listen verwalten. **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
- Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
+* **[Listen](#lists)**
+Hier können Sie Ihre (Lead-)Listen verwalten.**Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
+Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
-* **[Kampagnen](#campaigns)** Hier können Sie Ihre Marken, Kampagnen und Erlebnisse verwalten.
+* **[Kampagnen](#campaigns)**
+Hier können Sie Ihre Marken, Kampagnen und Erlebnisse verwalten.
 
 ## Dashboard {#dashboard}
 
@@ -74,7 +82,7 @@ Im linken Bereich unter **Leads** können Sie Ihre Leads erstellen, importieren,
 
 >[!NOTE]
 >
->Genauere Informationen zu bestimmten Aufgaben finden Sie unter[ Arbeiten mit Leads](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads).
+>Genauere Informationen zu bestimmten Aufgaben finden Sie unter [Arbeiten mit Leads](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithleads).
 
 ![screen_shot_2012-02-21at114748am-1](assets/screen_shot_2012-02-21at114748am-1.png)
 
@@ -91,7 +99,7 @@ Unter **Listen** können Sie Ihre Listen verwalten, indem Sie Listen erstellen, 
 
 >[!NOTE]
 >
->Genauere Informationen zu bestimmten Aufgaben finden Sie unter[ Arbeiten mit Listen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists).
+>Genauere Informationen zu bestimmten Aufgaben finden Sie unter [Arbeiten mit Listen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists).
 
 ![screen_shot_2012-02-21at124828pm-1](assets/screen_shot_2012-02-21at124828pm-1.png)
 
@@ -99,19 +107,21 @@ Unter **Listen** können Sie Ihre Listen verwalten, indem Sie Listen erstellen, 
 
 >[!NOTE]
 >
->Unter [Teaser und Strategien](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists), [Campaign einrichten](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupyourcampaign) und [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) finden Sie genauere Informationen zu bestimmten Aufgaben.
+>Unter [Teaser und Strategien](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists), [Einrichten einer Kampagne](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupyourcampaign) und [Newsletter](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#newsletters) finden Sie genauere Informationen zu bestimmten Aufgaben.
 
-Klicken Sie im MCM auf **Kampagnen**, um auf die bestehenden Kampagnen zuzugreifen.
+Klicken Sie in MCM auf **Kampagnen**, um auf die bestehenden Kampagnen zuzugreifen.
 
 ![screen_shot_2012-02-21at11106pm](assets/screen_shot_2012-02-21at11106pm.png)
 
-* **Linker Bereich**: Hier finden Sie eine vollständige Aufzählung aller Marken und Kampagnen.
+* **Linker Bereich**:
+Hier finden Sie eine vollständige Aufzählung aller Marken und Kampagnen.
 Wenn Sie auf eine Marke klicken, geschieht Folgendes:
 
    * Die Liste wird erweitert, sodass alle zusammenhängenden Kampagnen im linken Bereich angezeigt werden. Die Liste enthält auch die Anzahl der Erlebnisse, die für die einzelnen Kampagnen vorhanden sind.
    * Im rechten Bereich wird die Markenübersicht geöffnet.
 
-* **Rechter Bereich**: Hier werden für jede Marke Symbole angezeigt (historische Kampagnen werden nicht aufgeführt).
+* **Rechter Bereich**:
+Hier werden für jede Marke Symbole angezeigt (historische Kampagnen werden nicht aufgeführt).
 Sie können darauf doppelklicken, um die Markenübersicht anzuzeigen.
 
 #### Markenübersicht {#brand-overview}
@@ -166,7 +176,7 @@ Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
 
    Hier können Sie folgende Aktionen durchführen:
 
-   * Erstellen Sie eine **Neu...** Erfahrung; z. B. Adobe Target-Angebote, Teaser und Newsletter.
+   * Erstellen eines **neuen** Erlebnisses, z. B. Adobe Target-Angebote, Teaser und Newsletter.
    * **Bearbeiten** der Details einer bestimmten Teaser-Seite oder eines bestimmten Newsletters (auch per Doppelklick möglich).
    * Definieren der **Eigenschaften** für eine bestimmte Teaser-Seite oder einen bestimmten Newsletter.
    * **Simulieren** des Aussehens eines Erlebnisses (Teaser-Seite oder Newsletter).
