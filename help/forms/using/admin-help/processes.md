@@ -1,5 +1,5 @@
 ---
-title: Prozesse verwalten
+title: Verwalten von Prozessen
 seo-title: Managing Processes
 description: Auf der Seite „Prozessliste“ werden die Prozesse angezeigt, die von einem Benutzer initiiert oder automatisch gestartet wurden. Erfahren Sie mehr über die Verwaltung der Prozesse.
 seo-description: The Process List page shows the processes that a user has initiated or that were started automatically. Learn more about managing the processes.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 37e702c2-8716-4360-a3eb-d9877b28cc86
 exl-id: 21a2317d-3542-4ccb-98db-3cedf20c89ea
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1631'
 ht-degree: 100%
 
 ---
 
-# Prozesse verwalten {#managing-processes}
+# Verwalten von Prozessen {#managing-processes}
 
 Auf der Seite „Prozessliste“ werden die Prozesse angezeigt, die von einem Benutzer initiiert oder automatisch gestartet wurden.
 
@@ -95,7 +95,7 @@ Wenn Sie die Aussetzung einer Prozessinstanz aufheben, wechselt deren Status auf
 
 Wenn Sie eine Prozessinstanz aussetzen, die andere (untergeordnete) Prozesse mithilfe ihres jeweiligen Aufrufvorgangs aufgerufen hat, werden die untergeordneten Prozesse ebenfalls ausgesetzt.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
 1. Wählen Sie auf der Seite „Prozessinstanz“ den Prozess aus und klicken Sie auf „Aussetzen“ oder „Aussetzen aufheben“.
 
 ### Prozessinstanzen beenden {#terminate-a-process-instances}
@@ -106,7 +106,7 @@ Sie können Prozessinstanzen mit beliebigem Status beenden.
 
 Wenn Sie eine Prozessinstanz beenden, wechselt deren Status zuerst auf WIRD BEENDET, dann auf BEENDET, und der Prozess wird an der aktuellen Position beendet. Es werden keine weiteren Vorgänge ausgeführt und alle zugeordneten Vorgänge und Aufgaben werden beendet.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
 1. Wählen Sie auf der Seite „Prozessinstanz“ den Prozess aus und klicken Sie auf „Beenden“.
 
 ## Mit Prozessinstanzdetails arbeiten {#working-with-process-instance-details}
@@ -187,7 +187,7 @@ Wenn Sie einen Vorgang wiederholen, wird eine Anforderung zum erneuten Starten d
 
 Auf der Seite „Vorgangsdetails“ wird die Zusammenfassung eines in einem Prozess enthaltenen Vorgangs mit seinen aktuellen Benutzerzuweisungen angezeigt.
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
+1. Klicken Sie in der Administration-Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Arbeitsablauf für Formulare“. 
 1. Durch Klicken auf den Namen eines Prozesses können Sie die dazugehörigen Prozessinstanzen anzeigen. Klicken Sie auf eine Prozessinstanz, um die Seite „Prozessinstanzdetails“ anzuzeigen, und wählen Sie einen Vorgang aus, um die Seite „Vorgangsdetails“ anzuzeigen.
 
    Für jede Aufgabe werden in der Liste die folgenden Informationen angezeigt:
