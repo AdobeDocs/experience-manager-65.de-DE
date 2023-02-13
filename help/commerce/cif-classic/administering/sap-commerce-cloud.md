@@ -9,13 +9,13 @@ topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
 source-git-commit: 61691c300322edcdee33b121ca400e4c89256e45
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1714'
 ht-degree: 100%
 
 ---
 
-# SAP-Commerce Cloud{#sap-commerce-cloud}
+# SAP Commerce Cloud{#sap-commerce-cloud}
 
 Nach der Installation können Sie Ihre Instanz konfigurieren:
 
