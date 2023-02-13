@@ -12,7 +12,7 @@ discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 feature: Mobile Forms
 exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '812'
 ht-degree: 100%
 
@@ -101,7 +101,7 @@ Zusätzlich zu der type- und name-Klasse enthält die Feldkomponente noch eine w
    <td>Benutzerdefinierter Name</td>
   </tr>
   <tr>
-   <td>Zeichenelement</td>
+   <td>Draw</td>
    <td>draw</td>
    <td>Benutzerdefinierter Name</td>
   </tr>
@@ -178,7 +178,7 @@ Jedes Feld verfügt über ein zugehöriges Widget, das das Benutzeroberflächen-
    <td>choicelist<br type="_moz" /> </td>
    <td>dropDownListWidget<br type="_moz" /> </td>
    <td>choicelistwidget<br type="_moz" /> </td>
-   <td>select</td>
+   <td>auswählen</td>
   </tr>
   <tr>
    <td>ListBox<br type="_moz" /> </td>
