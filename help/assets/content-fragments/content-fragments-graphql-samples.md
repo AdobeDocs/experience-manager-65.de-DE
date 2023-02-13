@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „head
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1530'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -356,14 +356,14 @@ Wenn Sie eine neue Variante mit dem Namen „Berlin Centre“ (`berlin_centre`) 
 }
 ```
 
-### Beispielabfrage – Namen aller Städte Als Stadtunterbrechungen markiert {#sample-names-all-cities-tagged-city-breaks}
+### Beispielabfrage – Namen aller Städte Als Städtereisen markiert {#sample-names-all-cities-tagged-city-breaks}
 
 Wenn Sie:
 
-* eine Vielzahl von Tags erstellen, die `Tourism` : `Business`, `City Break`, `Holiday`
-* und weisen sie der Übergeordneten Variante verschiedener `City` Instanzen
+* eine Vielzahl von Tags namens `Tourism` erstellen: `Business`, `City Break`, `Holiday`
+* und sie der übergeordneten Variante verschiedener `City`-Instanzen zuweisen
 
-Anschließend können Sie eine Abfrage verwenden, um Details zur `name` und `tags`aller Einträge, die im `city`Schema.
+Dann können Sie eine Abfrage verwenden, um Details zu `name` und `tags` aller Einträge mit dem Tag „Städtereisen“ im Schema `city` herauszugeben.
 
 **Beispielabfrage**
 
@@ -1717,4 +1717,4 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 | San Francisco |  USA |  883306 |  city:beach<br>city:na |
 | San José |  USA |  102635 |  city:na |
 | Stuttgart |  Deutschland |  634830 |  city:emea |
-|  Zürich |  Schweiz |  415367 |  Stadt:Hauptstadt<br>city:emea |
+|  Zürich |  Schweiz |  415367 |  city:capital<br>city:emea |
