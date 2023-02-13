@@ -1,5 +1,5 @@
 ---
-title: AEM DS-Einstellungen konfigurieren
+title: Konfigurieren der AEM DS-Einstellungen
 seo-title: Configuring AEM DS settings
 description: Sie müssen die Verarbeitungsserver-URL angeben, bevor Sie ein Formular senden.
 seo-description: You need to specify the processing server URL before you submit a form.
@@ -12,7 +12,7 @@ docset: aem65
 role: Admin
 exl-id: c43cab7b-3421-4e1b-a834-b2dd6eb23c1d
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '241'
 ht-degree: 100%
 
