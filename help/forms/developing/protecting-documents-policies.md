@@ -12,9 +12,9 @@ discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
 source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '15514'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -263,7 +263,7 @@ Erstellen Sie eine Richtlinie mithilfe der Document Security-API (Java):
 
 Code-Beispiele, die den Document Security-Service verwenden, finden Sie unter folgenden Themen:
 
-* &quot;Schnellstart (SOAP-Modus): Erstellen einer Richtlinie mit der Java-API&quot;
+* „Schnellstartanleitung (SOAP-Modus): Erstellen einer Richtlinie mithilfe der Java-API“
 
 ### Erstellen einer Richtlinie mithilfe der Webservice-API {#create-a-policy-using-the-web-service-api}
 
@@ -321,8 +321,8 @@ So erstellen Sie eine Richtlinie mithilfe der Document Security-API (Webservice)
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (MTOM): Erstellen einer Richtlinie mithilfe der Webdienst-API&quot;
-* &quot;Schnellstart (SwaRef): Erstellen einer Richtlinie mithilfe der Webdienst-API&quot;
+* „Schnellstartanleitung (MTOM): Erstellen einer Richtlinie mithilfe der Webservice-API“
+* „Schnellstartanleitung (SwaRef): Erstellen einer Richtlinie mithilfe der Webservice-API“
 
 ## Ändern von Richtlinien {#modifying-policies}
 
@@ -388,7 +388,7 @@ So ändern Sie eine bestehende Richtlinie mithilfe der Document Security-API (Ja
 1. Rufen Sie eine bestehende Richtlinie ab.
 
    * Erstellen Sie ein `PolicyManager`-Objekt, indem Sie die Methode `getPolicyManager` des `RightsManagementClient`-Objekts aufrufen.
-   * Erstellen Sie eine `Policy` -Objekt, das die zu aktualisierende Richtlinie darstellt, indem das `PolicyManager` -Objekt `getPolicy` Methode und Übergabe der folgenden Werte&quot;
+   * Erstellen Sie ein `Policy`-Objekt, das die zu aktualisierende Richtlinie darstellt, indem Sie die Methode `PolicyManager` des `getPolicy`-Objekts aufrufen und die folgenden Werte übergeben:
 
       * Ein Zeichenfolgenwert, der den Namen des Richtliniensatzes darstellt, zu dem die Richtlinie gehört. Sie können `null` angeben, was dazu führt, dass der Richtliniensatz `MyPolicies` verwendet wird.
       * Ein Zeichenfolgenwert, der den Richtliniennamen darstellt.
@@ -450,8 +450,8 @@ So ändern Sie eine bestehende Richtlinie mithilfe der Document Security-API (We
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (MTOM): Ändern einer Richtlinie mithilfe der Webdienst-API&quot;
-* &quot;Schnellstart (SwaRef): Ändern einer Richtlinie mithilfe der Webdienst-API&quot;
+* „Schnellstartanleitung (MTOM): Ändern einer Richtlinie mithilfe der Webservice-API“
+* „Schnellstartanleitung (SwaRef): Ändern einer Richtlinie mithilfe der Webservice-API“
 
 ## Löschen von Richtlinien {#deleting-policies}
 
@@ -506,7 +506,7 @@ So löschen Sie eine Richtlinie mithilfe der Document Security-API (Java):
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (SOAP-Modus): Löschen einer Richtlinie mit der Java-API&quot;
+* „Schnellstartanleitung (SOAP-Modus): Löschen einer Richtlinie mithilfe der Java-API“
 
 ### Richtlinien mithilfe der Web-Service-API löschen {#delete-policies-using-the-web-service-api}
 
@@ -545,8 +545,8 @@ Löschen einer Richtlinie mithilfe der Document Security-API (Web Service):
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (MTOM): Löschen einer Richtlinie mithilfe der Webdienst-API&quot;
-* &quot;Schnellstart (SwaRef): Löschen einer Richtlinie mithilfe der Webdienst-API&quot;
+* „Schnellstartanleitung (MTOM): Löschen einer Richtlinie mithilfe der Web-Service-API“
+* „Schnellstartanleitung(SwaRef): Löschen einer Richtlinie mithilfe der Web-Service-API“
 
 ## Anwenden von Richtlinien auf PDF-Dokumente {#applying-policies-to-pdf-documents}
 
@@ -642,8 +642,8 @@ Wenden Sie mithilfe der Document Security-API (Java) eine Richtlinie auf ein PDF
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (EJB-Modus): Anwenden einer Richtlinie auf ein PDF-Dokument mithilfe der Java-API&quot;
-* &quot;Schnellstart (SOAP-Modus): Anwenden einer Richtlinie auf ein PDF-Dokument mit der Java-API&quot;
+* „Schnellstartanleitung (EJB-Modus): Anwenden einer Richtlinie auf ein PDF-Dokument mithilfe der Java-API“
+* „Schnellstartanleitung (SOAP-Modus): Anwenden einer Richtlinie auf ein PDF-Dokument mithilfe der Java-API“
 
 **Siehe auch**
 
@@ -713,8 +713,8 @@ Wenden Sie mithilfe der Document Security-API (Web Service) eine Richtlinie auf 
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (MTOM): Anwenden einer Richtlinie auf ein PDF-Dokument mithilfe der Webdienst-API&quot;
-* &quot;Schnellstart (SwaRef): Anwenden einer Richtlinie auf ein PDF-Dokument mithilfe der Webdienst-API &quot;
+* „Schnellstartanleitung (MTOM): Anwenden einer Richtlinie auf ein PDF-Dokument mithilfe der Webservice-API“
+* „Schnellstartanleitung (SwaRef): Anwenden einer Richtlinie auf ein PDF-Dokument mithilfe der Webservice-API“
 
 ## Entfernen von Richtlinien aus PDF-Dokumenten {#removing-policies-from-pdf-documents}
 
@@ -794,7 +794,7 @@ Entfernen Sie mithilfe der Document Security-API (Java) eine Richtlinie aus eine
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (SOAP-Modus): Entfernen einer Richtlinie aus einem PDF-Dokument mit der Java-API&quot;
+* „Schnellstartanleitung (SOAP-Modus): Entfernen einer Richtlinie aus einem PDF-Dokument mithilfe der Java-API“
 
 ### Eine Richtlinie mithilfe der Web-Service-API entfernen {#remove-a-policy-using-the-web-service-api}
 
@@ -844,8 +844,8 @@ Entfernen Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie a
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (MTOM): Entfernen einer Richtlinie aus einem PDF-Dokument mithilfe der Webdienst-API &quot;
-* &quot;Schnellstart (SwaRef): Entfernen einer Richtlinie aus einem PDF-Dokument mithilfe der Webdienst-API&quot;
+* „Schnellstartanleitung (MTOM): Entfernen einer Richtlinie aus einem PDF-Dokument mithilfe der Web-Service-API“
+* „Schnellstartanleitung (SwaRef): Entfernen einer Richtlinie aus einem PDF-Dokument mithilfe der Webservice-API“
 
 **Siehe auch**
 
@@ -937,7 +937,7 @@ So widerrufen Sie mithilfe der Document Security-API (Java) den Zugriff auf ein 
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (SOAP-Modus): Widerrufen eines Dokuments mit der Java-API&quot;
+* „Schnellstartanleitung (SOAP-Modus): Widerrufen eines Dokuments mithilfe der Java-API“
 
 ### Widerrufen des Zugriffs auf Dokumente mithilfe der Webservice-API {#revoke-access-to-documents-using-the-web-service-api}
 
@@ -986,8 +986,8 @@ So widerrufen Sie den Zugriff auf ein richtliniengeschütztes PDF-Dokument mithi
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (MTOM): Sperren eines Dokuments mithilfe der Webdienst-API&quot;
-* &quot;Schnellstart (SwaRef): Sperren eines Dokuments mithilfe der Webdienst-API&quot;
+* „Schnellstartanleitung (MTOM): Widerrufen eines Dokuments mithilfe der Webservice-API“
+* „Schnellstartanleitung (SwaRef): Widerrufen eines Dokuments mithilfe der Webservice-API“
 
 **Siehe auch**
 
@@ -1069,7 +1069,7 @@ So stellen Sie den Zugriff auf ein widerrufenes Dokument mithilfe der Document S
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (SOAP-Modus): Zugriff auf ein gesperrtes Dokument mit der Web-Dienst-API reaktivieren&quot;
+* „Schnellstartanleitung (SOAP-Modus): Wiederherstellen des Zugriffs auf ein widerrufenes Dokument mithilfe der Webservice-API“
 
 ### Wiederherstellen des Zugriffs auf widerrufene Dokumente mithilfe der Webservice-API {#reinstate-access-to-revoked-documents-using-the-web-service-api}
 
@@ -1114,8 +1114,8 @@ So stellen Sie den Zugriff auf ein widerrufenes Dokument mithilfe der Document S
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (MTOM): Zugriff auf ein gesperrtes Dokument mit der Web-Dienst-API reaktivieren&quot;
-* &quot;Schnellstart (SwaRef): Zugriff auf ein gesperrtes Dokument mit der Web-Dienst-API reaktivieren&quot;
+* „Schnellstartanleitung (MTOM): Wiederherstellen des Zugriffs auf ein widerrufenes Dokument mithilfe der Webservice-API“
+* „Schnellstartanleitung (SwaRef): Wiederherstellen des Zugriffs auf ein widerrufenes Dokument mithilfe der Webservice-API“
 
 **Siehe auch**
 
@@ -1203,7 +1203,7 @@ So überprüfen Sie ein richtliniengeschütztes PDF-Dokument mithilfe der Docume
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (SOAP-Modus): Überprüfung richtliniengeschützter PDF-Dokumente mit der Java-API&quot;
+* „Schnellstartanleitung (SOAP-Modus): Überprüfung richtliniengeschützter PDF-Dokumente mithilfe der Java-API“
 
 ### Überprüfen von richtliniengeschützten PDF-Dokumenten mithilfe der Webservice-API {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
@@ -1251,8 +1251,8 @@ So überprüfen Sie ein richtliniengeschütztes PDF-Dokument mithilfe der Docume
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (MTOM): Untersuchen richtliniengeschützter PDF-Dokumente mithilfe der Web Service-API&quot;
-* &quot;Schnellstart (SwaRef): Untersuchen richtliniengeschützter PDF-Dokumente mithilfe der Web Service-API&quot;
+* „Schnellstartanleitung (MTOM): Überprüfen von richtliniengeschützten PDF-Dokumenten mithilfe der Webservice-API“
+* „Schnellstartanleitung (SwaRef): Überprüfen von richtliniengeschützten PDF-Dokumenten mithilfe der Webservice-API“
 
 **Siehe auch**
 
@@ -1423,7 +1423,7 @@ So erstellen Sie ein Wasserzeichen mithilfe der Document Security-API (Java):
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (SOAP-Modus): Erstellen eines Wasserzeichens mit der Java-API&quot;
+* „Schnellstartanleitung (SOAP-Modus): Erstellen eines Wasserzeichens mithilfe der Java-API“
 
 ### Erstellen von Wasserzeichen mit der Web-Service-API {#create-watermarks-using-the-web-service-api}
 
@@ -1470,8 +1470,8 @@ Erstellen Sie ein Wasserzeichen mithilfe der Document Security-API (Web-Service)
 
 Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (MTOM): Erstellen eines Wasserzeichens mithilfe der Webdienst-API&quot;
-* &quot;Schnellstart (SwaRef): Erstellen eines Wasserzeichens mithilfe der Webdienst-API&quot;
+* „Schnellstartanleitung (MTOM): Erstellen eines Wasserzeichens mithilfe der Web-Service-API“
+* „Schnellstartanleitung (SwaRef): Erstellen eines Wasserzeichens mithilfe der Web-Service-API“
 
 **Siehe auch**
 
@@ -1618,7 +1618,7 @@ Code-Beispiele, die den Document Security-Service verwenden, finden Sie im Absch
 
 Code-Beispiele, die den Document Security-Service verwenden, finden Sie in folgendem Schnellstart:
 
-* &quot;Schnellstart (MTOM): Ändern eines Wasserzeichens mithilfe der Webdienst-API&quot;
+* „Schnellstartanleitung (MTOM): Ändern eines Wasserzeichens mithilfe der Webservice-API“
 
 ## Suchen nach Ereignissen {#searching-for-events}
 
@@ -1698,7 +1698,7 @@ So suchen Sie mithilfe der Rights Management-API (Java) nach Ereignissen:
 
 Code-Beispiele, die den Rights Management-Service verwenden, finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (SOAP): Suchen nach Ereignissen mit der Java-API&quot;
+* „Schnellstartanleitung (SOAP): Suchen nach Ereignissen mithilfe der Java-API“
 
 ### Suchen nach Ereignissen mithilfe der Webservice-API {#search-for-events-using-the-web-service-api}
 
@@ -1942,8 +1942,8 @@ So suchen Sie mithilfe der Rights Management-API (Webservice) nach Ereignissen:
 
 Code-Beispiele, die den Rights Management-Service verwenden, finden Sie in den folgenden Kurzanleitungen:
 
-* &quot;Schnellstart (MTOM): Suchen nach Ereignissen mithilfe der Webdienst-API&quot;
-* &quot;Schnellstart (SwaRef): Suchen nach Ereignissen mithilfe der Webdienst-API&quot;
+* „Schnellstartanleitung (MTOM): Suchen nach Ereignissen mithilfe der Web-Service-API“
+* „Schnellstartanleitung (SwaRef): Suchen nach Ereignissen mithilfe der Web-Service-API“
 
 **Siehe auch**
 
@@ -2043,7 +2043,7 @@ Wenden Sie mithilfe der Document Security-API (Java) eine Richtlinie auf ein Wor
 
 Code-Beispiele, die den Document Security-Service verwenden, finden Sie in folgendem Schnellstart:
 
-* &quot;Schnellstart (SOAP-Modus): Anwenden einer Richtlinie auf ein Word-Dokument mithilfe der Java-API&quot;
+* „Schnellstartanleitung (SOAP-Modus): Anwenden einer Richtlinie auf ein Word-Dokument mithilfe der Java-API“
 
 ### Eine Richtlinie auf ein Word-Dokument mithilfe der Web Service-API anwenden {#apply-a-policy-to-a-word-document-using-the-web-service-api}
 
@@ -2107,7 +2107,7 @@ Wenden Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie auf 
 
 Code-Beispiele, die den Document Security-Service verwenden, finden Sie in folgendem Schnellstart:
 
-* &quot;Schnellstart (MTOM): Anwenden einer Richtlinie auf ein Word-Dokument mithilfe der Webdienst-API &quot;
+* „Schnellstartanleitung (MTOM): Anwenden einer Richtlinie auf ein Word-Dokument mithilfe der Webservice-API“
 
 ## Entfernen von Richtlinien aus Word-Dokumenten {#removing-policies-from-word-documents}
 
@@ -2187,7 +2187,7 @@ So entfernen Sie mithilfe der Document Security-API (Java) eine Richtlinie aus e
 
 Code-Beispiele, die den Document Security-Service verwenden, finden Sie in folgendem Schnellstart:
 
-* &quot;Schnellstart (SOAP-Modus): Entfernen einer Richtlinie aus einem Word-Dokument mit der Java-API &quot;
+* „Schnellstartanleitung (SOAP-Modus): Entfernen einer Richtlinie aus einem Word-Dokument mithilfe der Java-API“
 
 ### Entfernen einer Richtlinie aus einem Word-Dokument mithilfe der Webservice-API {#remove-a-policy-from-a-word-document-using-the-web-service-api}
 
@@ -2237,7 +2237,7 @@ So entfernen Sie mithilfe der Document Security-API (Webservice) eine Richtlinie
 
 Code-Beispiele, die den Document Security-Service verwenden, finden Sie in folgendem Schnellstart:
 
-* &quot;Schnellstart (MTOM): Entfernen einer Richtlinie aus einem Word-Dokument mithilfe der Webdienst-API&quot;
+* „Schnellstartanleitung (MTOM): Entfernen einer Richtlinie aus einem Word-Dokument mithilfe der Webservice-API“
 
 **Siehe auch**
 
