@@ -1,5 +1,5 @@
 ---
-title: Komponente „Drafts and Submissions“
+title: Komponente „Entwürfe und Sendungen“
 seo-title: Drafts and submissions component
 description: Mit der Komponente „Drafts and Submissions“ können Sie Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Sie können die Darstellung und den Stil der Komponente anpassen.
 seo-description: Drafts and submissions component lists forms that are in the draft state and are already submitted. You can customize appearance and style of the component.
@@ -11,13 +11,13 @@ discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '747'
 ht-degree: 100%
 
 ---
 
-# Komponente „Drafts and Submissions“{#drafts-and-submissions-component}
+# Komponente „Entwürfe und Sendungen“{#drafts-and-submissions-component}
 
 Mit der Komponente „Drafts &amp;Submissions“ können Sie alle Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Die Komponente bietet separate Bereiche (Registerkarten) für Entwürfe und für gesendete Formulare. Die Benutzer können lediglich ihre eigenen Entwürfe und gesendeten Formulare anzeigen.
 
@@ -52,7 +52,7 @@ Führen Sie die folgenden Schritte durch, um eine Komponente „Drafts and Submi
   </tr>
   <tr>
    <td> </td>
-   <td>Style Type (Stiltyp)</td>
+   <td>Stiltyp</td>
    <td>Legt den Stil der Komponente fest. Sie können entweder <strong>No Style</strong> (Kein Stil), <strong>Default Style</strong> (Standardstil) oder <strong>Custom Style </strong>(Benutzerdefinierter Stil) für die Liste der Formulare angeben. Für die Option „Custom Style“ können Sie den Pfad zu Ihrem benutzerdefinierten CSS im Feld <strong>Custom Style Path</strong> angeben<strong>.</strong></td>
   </tr>
   <tr>
