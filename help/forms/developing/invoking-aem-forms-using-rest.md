@@ -12,9 +12,9 @@ discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
 source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2506'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -30,7 +30,7 @@ Bei der Verwendung von REST-Anfragen wird empfohlen, Forms-Services nicht direkt
 
 Wenn Sie einen Service mithilfe von REST aufrufen, werden Sie nach einem Benutzernamen und Kennwort für AEM Forms aufgefordert. Wenn Sie jedoch keinen Benutzernamen und kein Kennwort angeben möchten, können Sie für den Service die Sicherheit deaktivieren.
 
-Um einen Forms-Service (ein Prozess wird zu einem Service, wenn der Prozess aktiviert wird) mithilfe von REST aufzurufen, konfigurieren Sie einen REST-Endpunkt. (Siehe &quot;Verwalten von Endpunkten&quot;in [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).
+Um einen Forms-Service (ein Prozess wird zu einem Service, wenn der Prozess aktiviert wird) mithilfe von REST aufzurufen, konfigurieren Sie einen REST-Endpunkt. (Siehe „Verwalten von Endpunkten“ in der [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).)
 
 Nachdem ein REST-Endpunkt konfiguriert wurde, können Sie einen Forms-Service mithilfe einer HTTP-GET-Methode oder einer POST-Methode aufrufen.
 
@@ -99,7 +99,7 @@ Ein AEM Forms-Service kann auf asynchrone Weise aufgerufen werden, indem in der 
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
 ```
 
-Diese URL gibt den Bezeichnerwert (im Format &quot;text/plain&quot;) des für diesen Aufruf verantwortlichen Auftrags zurück.
+Diese URL gibt den Bezeichnerwert (im Format „text/plain“) des für diesen Aufruf verantwortlichen Auftrags zurück.
 
 Mithilfe einer Aufruf-URL, bei der `services` durch `async_status` ersetzt ist, kann der Status des asynchronen Aufrufs abgerufen werden. Die URL muss einen `job_id`-Parameter enthalten, der den Kennungswert des mit diesem Aufruf verknüpften Auftrags angibt. Beispiel:
 
@@ -107,7 +107,7 @@ Mithilfe einer Aufruf-URL, bei der `services` durch `async_status` ersetzt ist, 
  http://localhost:8080/rest/async_status/SomeService.SomeOperation?job_id=2345353443366564
 ```
 
-Diese URL gibt einen ganzzahligen Wert (im Format &quot;text/plain&quot;) zurück, der den Auftragsstatus gemäß der Spezifikation von Job Manager kodiert (z. B. 2 bedeutet &quot;Ausführen&quot;, 3 bedeutet &quot;Abgeschlossen&quot;, 4 bedeutet &quot;Fehlgeschlagen&quot; usw.).
+Diese URL gibt einen ganzzahligen Wert (im „text/plain“-Format) zurück, der den Auftragsstatus gemäß der Spezifikation von Job Manager codiert (beispielsweise bedeutet 2 „wird ausgeführt“, 3 bedeutet „abgeschlossen“, 4 bedeutet „fehlgeschlagen“ usw.).
 
 Wenn der Auftrag abgeschlossen ist, gibt die URL das gleiche Ergebnis zurück, wie wenn der Service synchron aufgerufen worden wäre.
 
@@ -291,7 +291,7 @@ Sie können einen kurzlebigen AEM Forms-Prozess namens *MyApplication/EncryptDoc
 
 >[!NOTE]
 >
->Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Code-Beispiel zu folgen, erstellen Sie mithilfe von Workbench einen Prozess mit dem Namen `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).)
+>Dieser Prozess basiert nicht auf einem vorhandenen AEM Forms-Prozess. Um dem Code-Beispiel zu folgen, erstellen Sie mithilfe von Workbench einen Prozess mit dem Namen `MyApplication/EncryptDocument`. (Siehe [Verwenden von Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63_de).)
 
 Wenn dieser Prozess aufgerufen wird, führt er die folgenden Aktionen aus:
 
