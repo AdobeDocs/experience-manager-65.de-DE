@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1540'
 ht-degree: 100%
 
@@ -82,7 +82,7 @@ Sie können entweder Administration Console, den Befehl „LCBackupMode“ oder 
 
 **Administration Console verwenden, um den abgesicherten Sicherungsmodus zu aktivieren**
 
-1. Melden Sie sich bei Administration Console an.
+1. Melden Sie sich bei der Administration-Console an.
 1. Klicken Sie in auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Sicherungsdienstprogramme“.
 1. Aktivieren Sie „Im abgesicherten Sicherungsmodus arbeiten“ und klicken Sie auf „OK“.
 
@@ -124,7 +124,7 @@ Sie können entweder Administration Console oder die Befehlszeilenoption verwend
 
 Führen Sie die folgenden Schritte aus, um AEM Forms über Administration Console aus dem abgesicherten Sicherungsmodus (Snapshot-Modus) zu nehmen.
 
-1. Melden Sie sich bei Administration Console an.
+1. Melden Sie sich bei der Administration-Console an.
 1. Klicken Sie in auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Sicherungsdienstprogramme“.
 1. Deaktivieren Sie „Im abgesicherten Sicherungsmodus arbeiten“ und klicken Sie auf „OK“.
 
