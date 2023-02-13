@@ -7,9 +7,9 @@ topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2242'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -36,11 +36,11 @@ Die Ressourcen in dieser Tabelle können Ihnen dabei helfen, mehr über AEM Form
   </tr>
   <tr>
    <td><p>Allgemeine Informationen zu AEM Forms und dessen Integration in anderen Adobe-Produkten</p> </td>
-   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">Übersicht über AEM Forms</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65_de">Übersicht über AEM Forms</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Die gesamte Dokumentation, die für AEM Forms verfügbar ist</p> </td>
-   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65">AEM Forms-Dokumentation</a><br /> <br /> </p> </td>
+   <td><p><a href="https://adobe.com/go/learn_aemforms_introduction_65_de">AEM Forms-Dokumentation</a><br /> <br /> </p> </td>
   </tr>
   <tr>
    <td><p>Patch-Updates, technische Hinweise und zusätzliche Informationen zu dieser Produktversion</p> </td>
@@ -172,9 +172,9 @@ Stellen Sie vor der Installation von Workbench sicher, dass die Umgebung über d
 1. Lesen Sie die Installationsübersicht. Wählen Sie „AEM Forms Workbench starten“, um Workbench zu starten, und klicken Sie dann auf „Weiter“.
 1. Lesen Sie die Versionshinweise und klicken Sie auf Fertig.
 1. Jetzt sind die folgenden Elemente auf Ihrem Computer installiert:
-   * **Workbench**: Um Workbench im Menü „Start“ auszuführen, wählen Sie „Alle Programme“ > „AEM Forms“ > „Workbench“, falls Sie den Verknüpfungsordner dort gespeichert haben. Weitere Informationen finden Sie in der Dokumentation <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Verwenden von Workbench</a>.
+   * **Workbench**: Um Workbench im Menü „Start“ auszuführen, wählen Sie „Alle Programme“ > „AEM Forms“ > „Workbench“, falls Sie den Verknüpfungsordner dort gespeichert haben. Weitere Informationen finden Sie in der Dokumentation <a href="https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Verwenden von Workbench</a>.
    * **Designer**: Sie können von Workbench aus auf Designer zugreifen. Weitere Informationen finden Sie im Thema „Erste Schritte“ in der <a href="https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/using-designer.pdf">Designer-Hilfe</a>.
-   * **AEM Forms SDK**: Weitere Informationen zur Verwendung des SDK finden Sie unter <a href="https://www.adobe.com/go/learn_aemforms_programming_65">Programmieren mit AEM Forms</a>.
+   * **AEM Forms SDK**: Weitere Informationen zur Verwendung des SDK finden Sie unter <a href="https://www.adobe.com/go/learn_aemforms_programming_65_de">Programmieren mit AEM Forms</a>.
 
 ## Aktualisieren von Prozessen {#upgrading-processes}
 
@@ -190,7 +190,7 @@ Um Workbench zu verwenden, muss eine Instanz von AEM Forms laufen, normalerweise
 
 ### Konfigurieren von Zeitlimiteinstellungen {#configuring-timeout-settings}
 
-Standardmäßig beträgt das Zeitlimit von Workbench, unabhängig von Aktivität bzw. Inaktivität, zwei Stunden. Informationen zum Bearbeiten der Zeitlimiteinstellung finden Sie unter &quot;Konfigurieren von User Management > Erweiterte Systemattribute konfigurieren&quot;in der <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html">Administration Console-Hilfe</a>.
+Standardmäßig beträgt das Zeitlimit von Workbench, unabhängig von Aktivität bzw. Inaktivität, zwei Stunden. Informationen zur Bearbeitung der Zeitlimiteinstellung finden Sie unter „Konfigurieren der Benutzerverwaltung“ > „Erweiterte Systemattribute konfigurieren“ in der <a href="https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/configure-user-management/configure-advanced-system-attributes.html?lang=de">Hilfe zur Administration-Console</a>.
 
 ### Konfigurieren von Workbench, um eine Verbindung über HTTPS herzustellen {#configuring-workbench-to-connect-over-HTTPS}
 
