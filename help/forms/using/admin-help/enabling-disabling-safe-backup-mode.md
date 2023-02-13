@@ -1,5 +1,5 @@
 ---
-title: Abgesicherten Sicherungsmodus aktivieren und deaktivieren
+title: Aktivieren und Deaktivieren des abgesicherten Sicherungsmodus
 seo-title: Enabling and disabling safe backup mode
 description: Auf der Seite „Sicherungseinstellungen“ können Sie AEM Forms im abgesicherten Sicherungsmodus ausführen, sodass die Datenbank und der Ordner des globalen Dokumentenspeichers zuverlässig gesichert werden können. Erfahren Sie mehr über die Aktivierung und Deaktivierung des Sicherungsmodus.
 seo-description: On the Backup Settings page, you can operate AEM forms in safe backup mode so that you can reliably back up your database and Global Document Storage (GDS) (GDS) directory. Learn how to enable and disable safe backup mode.
@@ -11,13 +11,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9fda71e4-78a1-4581-9d02-bf06a75c3bcb
 exl-id: f0ab712f-ecd9-4be8-a7a5-fd1a7a8c9a0b
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '196'
 ht-degree: 100%
 
 ---
 
-# Abgesicherten Sicherungsmodus aktivieren und deaktivieren {#enabling-and-disabling-safe-backup-mode}
+# Aktivieren und Deaktivieren des abgesicherten Sicherungsmodus {#enabling-and-disabling-safe-backup-mode}
 
 Auf der Seite „Sicherungseinstellungen“ können Sie AEM Forms im abgesicherten Sicherungsmodus ausführen, sodass die Datenbank und der Ordner des globalen Dokumentenspeichers zuverlässig gesichert werden können.
 
