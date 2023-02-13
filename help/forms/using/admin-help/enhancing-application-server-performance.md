@@ -1,5 +1,5 @@
 ---
-title: Leistung des Anwendungsservers verbessern
+title: Verbessern der Leistung des Anwendungs-Servers
 seo-title: Enhancing application server performance
 description: In diesem Dokument werden die optionalen Einstellungen beschrieben, die Sie zum Verbessern der Leistung des AEM Forms-Anwendungsservers konfigurieren können.
 seo-description: This document describes optional settings that you can configure to improve the performance of your AEM forms application server.
@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 exl-id: 6e2f3d4c-2ead-45b3-98e7-32cacc7e2985
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1863'
 ht-degree: 100%
 
@@ -45,21 +45,21 @@ Wenn der Administrator des Anwendungsservers die richtigen Einstellungen für de
    * Capacity Increment
    * Statement Cache Size
 
-1. Klicken Sie auf Save und dann auf Activate Changes.
+1. Klicken Sie auf „Speichern“ und dann auf „Änderungen aktivieren“.
 1. Starten Sie WebLogic Managed Server neu.
 
 ### Einstellungen für den Verbindungspool für WebLogic für SQLServer konfigurieren {#configure-connection-pool-settings-for-weblogic-for-sqlserver}
 
-1. Klicken Sie unter „Change Center“ auf Lock &amp; Edit.
+1. Klicken Sie im Change Center auf „Sperren und bearbeiten“
 1. Klicken Sie unter „Domain Structure“ auf „Services“ > „JDBC“ > „Data Sources“ und klicken Sie dann im rechten Bereich auf „EDC_DS“.
 1. Klicken Sie im nächsten Bildschirm auf die Registerkarte „Configuration“ > „Connection Pool“ und geben Sie Werte in die folgenden Felder ein:
 
-   * Anfangskapazität
-   * Maximale Kapazität
+   * Initial Capacity
+   * Maximum Capacity
    * Capacity Increment
    * Statement Cache Size
 
-1. Klicken Sie auf Save und dann auf Activate Changes.
+1. Klicken Sie auf „Speichern“ und dann auf „Änderungen aktivieren“.
 1. Starten Sie WebLogic Managed Server neu.
 
 ### Einstellungen für den Verbindungspool für WebSphere für DB2 konfigurieren {#configure-connection-pool-settings-for-websphere-for-db2}
@@ -102,7 +102,7 @@ Wenn der Dokumentinhalt kleiner als die Inline-Maximalgröße ist, wird er in de
 
 **Die Inline-Maximalgröße ändern**
 
-1. Klicken Sie in der Administrationskonsole auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“.
+1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Core-Systemeinstellungen“ > „Konfigurationen“.
 1. Geben Sie einen Wert in das Feld „Standardmäßige Maximalgröße für Inline-Dokumente“ ein.
 
    >[!NOTE]
