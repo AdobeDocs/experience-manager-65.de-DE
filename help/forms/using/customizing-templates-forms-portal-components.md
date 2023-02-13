@@ -12,9 +12,9 @@ docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1225'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -99,7 +99,7 @@ Jeder Platzhalter verfügt über einen exklusiven OOTB-Metadatensatz. Um die ben
 
 Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die Sie für Auflistungen verwenden können.
 
-### Komponente „Search &amp; Lister“ {#search-amp-lister-component}
+### Komponente „Suche und Auflister“ {#search-amp-lister-component}
 
 * **Title**: Titel des Formulars
 * **name**: Name des Formulars (meist identisch mit dem Titel)
@@ -108,7 +108,7 @@ Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die
 * **pdfUrl**: URL zur Ausgabe des Formulars als PDF
 * **assetType**: Typ des Assets. Gültige Werte sind unter anderem **Form**,**PDF Form**,**Print Form** und **Adaptive Form**
 
-* **htmlStyle**&amp; **pdfStyle**: Anzeigestil für HTML- bzw. PDF-Symbole für die Ausgabe. Gültige Werte sind &quot;**__FP_display_none**&quot; oder leer.
+* **htmlStyle**&amp; **pdfStyle**: Anzeigestil für HTML- bzw. PDF-Symbole für die Ausgabe. Gültige Werte sind „**__FP_display_none**“ oder leer.
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 
 * **Title**: Titel des Formulars
 * **formUrl**: URL zur Ausgabe des Formulars als HTML
-* **target**: Zielattribut des Links. Gültige Werte sind &quot;_blank&quot;und &quot;_self&quot;.
+* **target**: Zielattribut des Links. Gültige Werte sind „_blank“ und „_self“.
 * **linkText**: Beschriftung des Links
 
 ### Komponente „Drafts &amp; Submissions“ {#drafts-amp-submissions-component}
