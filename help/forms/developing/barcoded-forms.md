@@ -12,9 +12,9 @@ discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
 source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1920'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -179,7 +179,7 @@ Dekodieren Sie Formulardaten mithilfe der Barcode-Formulare-API (Web-Service):
 1. Projektdateien einschließen
 
    * Erstellen Sie eine Microsoft .NET-Client-Assembly, die die Barcode-Fomulare-Service-WSDL verwendet. Weitere Informationen finden Sie unter [Aufrufen von AEM Forms mithilfe von Base64-Codierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
-   * Referenzieren Sie die Microsoft .NET-Client-Assembly. Weitere Informationen finden Sie unter &quot;Referenzieren der .NET-Clientassembly&quot;in [Aufrufen von AEM Forms mit Base64-Kodierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
+   * Referenzieren Sie die Microsoft .NET-Client-Assembly. Weitere Informationen finden Sie unter „Referenzieren der .NET-Client-Assembly“ in [Aufrufen von AEM Forms über Base64-Codierung](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).
 
 1. Erstellen eines Client-API-Objekts für Barcode-Formulare
 
