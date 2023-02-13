@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager 
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
 source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4089'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -380,7 +380,7 @@ Da Metadaten über den Schema-Editor generiert werden und daher keine bestimmte 
 | `floatMetadata:[FloatMetadata]!` |
 | `floatArrayMetadata:[FloatArrayMetadata]!` |
 | `booleanMetadata:[BooleanMetadata]!` |
-| `booleanArrayMetadata:[booleanArrayMetadata]!` |
+| `booleanArrayMetadata:[booleanArrayMetadata]!`  |
 | `calendarMetadata:[CalendarMetadata]!` |
 | `calendarArrayMetadata:[CalendarArrayMetadata]!` |
 
@@ -543,10 +543,10 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
    * Fügen Sie `List` zum Modellnamen hinzu, z. B. `cityList`
    * Siehe [Beispielabfrage – Alle Informationen zu allen Städten](#sample-all-information-all-cities)
 
-* Der Filter `includeVariations` ist im `List` Abfragetyp.  Um Inhaltsfragmentvarianten in den Abfrageergebnissen abzurufen, muss die `includeVariations` Filter muss auf `true`.
+* Der Filter `includeVariations` ist im `List`-Abfragetyp enthalten.  Um Inhaltsfragmentvarianten in den Abfrageergebnissen abzurufen, muss der Filter `includeVariations` auf `true` festgelegt sein.
 
    >[!CAUTION]
-   >Der Filter `includeVariations` kann nicht zusammen mit dem systemgenerierten Feld verwendet werden `_variation`.
+   >Der Filter `includeVariations` kann nicht zusammen mit dem systemgenerierten Feld `_variation` verwendet werden.
 
 * Wenn Sie ein logisches ODER verwenden möchten:
    * Verwenden Sie ` _logOp: OR`
@@ -578,13 +578,13 @@ Die grundlegende Funktionsweise von Abfragen mit GraphQL für AEM entspricht der
          >Wenn die angegebene Variante für ein Inhaltsfragment nicht existiert, wird standardmäßig die Master-Variante (als Fallback) zurückgegeben.
 
          >[!CAUTION]
-         >Das systemgenerierte Feld `_variation` kann nicht zusammen mit dem Filter verwendet werden `includeVariations`.
+         >Das systemgenerierte Feld `_variation` kann nicht zusammen mit dem Filter `includeVariations` verwendet werden.
 
          * Weitere Informationen finden Sie unter [Beispielabfrage – Alle Städte mit einer gegebenen Variante](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-cities-named-variation)
-      * `_tags` : um die IDs von Inhaltsfragmenten oder Varianten anzuzeigen, die Tags enthalten; Dies ist ein Array von `cq:tags` Kennungen.
+      * `_tags`: um die IDs von Inhaltsfragmenten oder Varianten anzuzeigen, die Tags enthalten; dies ist ein Array von `cq:tags`-Kennungen.
 
-         * Siehe [Beispielabfrage - Namen aller Städte, die als Stadtumbrüche gekennzeichnet sind](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
-         * Siehe [Beispielabfrage für Inhaltsfragmentvarianten eines bestimmten Modells, an das ein bestimmtes Tag angehängt ist](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
+         * Siehe [Beispielabfrage – Namen aller Städte, die als Städtereisen markiert sind](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
+         * Siehe [Beispielabfrage für Inhaltsfragmentvarianten eines bestimmten Modells, an die ein bestimmtes Tag angehängt ist](/help/assets/content-fragments/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
 
          >[!NOTE]
          >
