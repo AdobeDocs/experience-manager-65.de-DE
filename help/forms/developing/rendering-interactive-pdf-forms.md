@@ -13,9 +13,9 @@ discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
 source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2487'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -55,7 +55,7 @@ Die folgende Tabelle beschreibt die Schritte in diesem Diagramm.
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>Nachdem der Benutzer das Darlehensformular ausgefüllt und auf die Senden-Schaltfläche geklickt hat, werden die Daten an das Java-Servlet <code>HandleData</code> übermittelt. (Siehe <i>"Darlehensformular"</i>.</p></td>
+   <td><p>Nachdem der Benutzer das Darlehensformular ausgefüllt und auf die Senden-Schaltfläche geklickt hat, werden die Daten an das Java-Servlet <code>HandleData</code> übermittelt. (Siehe <i>„Darlehensformular“</i>.)</p></td>
   </tr>
   <tr>
    <td><p>4</p></td>
