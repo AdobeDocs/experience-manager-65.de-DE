@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1188'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -78,7 +78,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritt 4</strong></td>
    <td>Gehen Anforderungen vom Dispatcher ein?</td>
-   <td><p>Überprüfen Sie die <a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">Dokumentation zum Dispatcher-Debugging</a>, um festzustellen, ob die Anforderungen ordnungsgemäß zwischengespeichert werden.<br /> </p> </td>
+   <td><p>Überprüfen Sie die <a href="https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#debugging">Dokumentation zum Dispatcher-Debugging</a>, um festzustellen, ob die Anforderungen ordnungsgemäß zwischengespeichert werden.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 5</strong></td>
@@ -153,7 +153,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritt 19</strong></td>
    <td>CPU-Auslastung 100 %</td>
-   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://helpx.adobe.com/experience-manager/6-3/sites-deploying/monitoring-and-maintaining.html#MonitoringPerformance</a></td>
+   <td><a href="/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance">https://helpx.adobe.com/de/experience-manager/6-3/sites-deploying/monitoring-and-maintaining.html#MonitoringPerformance</a></td>
   </tr>
   <tr>
    <td><strong>Schritt 20</strong></td>
@@ -162,7 +162,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
     <ol>
      <li><a href="/help/sites-deploying/monitoring-and-maintaining.md#out-of-memory">Unzureichender Speicher</a></li>
      <li><a href="/help/sites-deploying/troubleshooting.md">Meine Anwendung gibt Fehler über unzureichenden Speicher aus</a></li>
-     <li><a href="https://helpx.adobe.com/de/experience-manager/kb/AnalyzeMemoryProblems.html">Analyse von Speicherproblemen mit der Helpx-Funktion.</a><br /> </li>
+     <li><a href="https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html">Analyse von Speicherproblemen mit der Helpx-Funktion.</a><br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -185,7 +185,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
    <td>Repository-Optimierung</td>
    <td>
     <ul>
-     <li><a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">Tipps zur Leistungsoptimierung </a></li>
+     <li><a href="https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html">Tipps zur Leistungsoptimierung </a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#configuring-for-performance">Konfiguration zur Leistungsoptimierung</a></li>
      <li><a href="https://www.slideshare.net/jukka/repository-performance-tuning">Optimierung der Repository-Leistung</a></li>
     </ul> </td>
@@ -213,7 +213,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Synchronisierungsdienst für Assets</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Mehrere DAM-Instanzen</a></li>
-     <li>Artikel mit Tipps zur Leistungsoptimierung finden Sie <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">hier</a> und <a href="https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html">hier</a>.<br /> </li>
+     <li>Artikel mit Tipps zur Leistungsoptimierung finden Sie <a href="https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html">hier</a> und <a href="https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html">hier</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -229,20 +229,20 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritt 31</strong></td>
    <td>Verwendung von CDN vor dem Dispatcher</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Verwenden des Dispatchers mit einem CDN </a><br /> </td>
+   <td><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Verwenden des Dispatchers mit einem CDN </a><br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 32</strong></td>
    <td>Nutzung der Sitzungsverwaltung auf Dispatcher-Ebene für die AEM-Serverabladung</td>
-   <td><p><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Aktivierung von Sicherheitssitzungen</a></p> </td>
+   <td><p><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Aktivierung von Sicherheitssitzungen</a></p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 33</strong></td>
    <td>Anforderungen zwischenspeicherbar machen</td>
    <td>
     <ol>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html">Allgemeine Dispatcher-Konfiguration</a></li>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Konfigurieren des Dispatcher-Caches</a></li>
+     <li><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher.html">Allgemeine Dispatcher-Konfiguration</a></li>
+     <li><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Konfigurieren des Dispatcher-Caches</a></li>
     </ol> <p>Verbessern des Cache-Verhältnisses; Anforderungen zwischenspeicherbar machen (Best Practices für Dispatcher)</p> <p>Berücksichtigen Sie bei der Optimierung Ihrer Zwischenspeicherungskonfigurationen auch die nachfolgenden Einstellungen<br /> </p>
     <ol>
      <li>Legen Sie eine „no-cache“-Regel für HTTP-Anforderungen fest, die keine GET-Anforderungen sind.</li>
@@ -254,26 +254,26 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritt 34</strong></td>
    <td>Aktualisierung der Dispatcher-Version</td>
-   <td><p>Sie können die aktuelle Dispatcher-Version hier herunterladen:</p> <p><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/release-notes.html">Link folgen</a></p> </td>
+   <td><p>Sie können die aktuelle Dispatcher-Version hier herunterladen:</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Link folgen</a></p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 35</strong></td>
    <td>Konfiguration des Dispatchers</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html">Konfigurieren des Dispatchers</a><br /> </td>
+   <td><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html">Konfigurieren des Dispatchers</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 36</strong></td>
    <td>Überprüfung der Cache-Invalidierung</td>
    <td><br />
     <ul>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">Cache-Invalidierung für die Autorenschicht</a></li>
-     <li><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">Cache-Invalidierung für die Veröffentlichungsschicht</a></li>
+     <li><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-the-authoring-environment">Cache-Invalidierung für die Autorenschicht</a></li>
+     <li><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/using/page-invalidate.html#invalidating-dispatcher-cache-from-a-publishing-instance">Cache-Invalidierung für die Veröffentlichungsschicht</a></li>
     </ul> </td>
   </tr>
   <tr>
    <td><strong>Schritte 37 und 38</strong></td>
    <td>Lazy Loading</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Weitere Informationen finden Sie in der Gem-Sitzung „AEM Web Performance“.</a><br /> </td>
+   <td><a href="https://docs.adobe.com/ddc/de/gems/aem-web-performance.html">Weitere Informationen finden Sie in der Gem-Sitzung „AEM Web Performance“.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 39</strong></td>
@@ -288,12 +288,12 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritte 45<br /> und 47</strong><br /> </td>
    <td>Verwendung von HTTP/2</td>
-   <td>Weitere Informationen finden Sie in der Gem-Sitzung für die Schritte 37, 38 und 39 Auschecken <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">this</a> Forumsbeitrag zur HTTP/2-Unterstützung.<br /> </td>
+   <td>Weitere Informationen finden Sie in der Gem-Sitzung für die Schritte 37, 38 und 39 und in <a href="https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.topic.html/forum__kdzc-does_anyoneknowwhe.html">diesem</a> Forumsbeitrag zur HTTP/2-Unterstützung.<br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 49</strong></td>
    <td>Reduzierung der Payload-Größe</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Aktivieren von Gzip</a> und <a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Reduzieren der Bildgröße</a>.<br /> </td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Aktivieren von Gzip</a> und <a href="https://docs.adobe.com/ddc/de/gems/aem-web-performance.html">Reduzieren der Bildgröße</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Schritte 42 und 43</strong></td>
@@ -313,19 +313,19 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
      <li>Verketten Sie Ressourcen (Bilder, CSS-Sprites, JSON usw.)<br /> </li>
      <li>Einbetten von clientlibs:
       <ol>
-       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Erstellen von Client-Bibliotheksordnern</a> - siehe Abschnitt Verwenden der Einbettung zum Minimieren von Anforderungen</li>
+       <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Erstellen von Client-Bibliotheks-Ordnern</a> – siehe den Beitrag zur Minimierung von Anforderungen durch Einbetten</li>
       </ol> </li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Schritt 48</strong></td>
-   <td>Wie groß ist die Nutzlast?</td>
+   <td>Wie groß ist die Payload?</td>
    <td>Standard-HTTP-Anforderungsanalyse im Browser</td>
   </tr>
   <tr>
    <td><strong>Schritte 50 und 51</strong></td>
    <td>Blockierung von JS-Code</td>
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">https://docs.adobe.com/ddc/en/gems/aem-web-performance.html</a></td>
+   <td><a href="https://docs.adobe.com/ddc/de/gems/aem-web-performance.html">https://docs.adobe.com/ddc/en/gems/aem-web-performance.html</a></td>
   </tr>
  </tbody>
 </table>
