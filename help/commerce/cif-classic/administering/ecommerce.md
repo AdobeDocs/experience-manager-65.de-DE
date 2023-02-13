@@ -1,18 +1,18 @@
 ---
-title: E-Commerce
+title: eCommerce
 description: Mit AEM eCommerce können Marketingexperten personalisierte Marken-Einkaufserlebnisse über Web-, Mobile- und Social-Touchpoints bereitstellen.
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '729'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
-# E-Commerce{#ecommerce}
+# eCommerce{#ecommerce}
 
 * [Konzepte](/help/commerce/cif-classic/administering/concepts.md)
 * [Verwaltung (generisch)](/help/commerce/cif-classic/administering/generic.md)
@@ -47,7 +47,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Front-End</p> </td>
+   <td><p>Frontend</p> </td>
    <td><p>Server-seitig wiedergegebene AEM-Seiten</p> </td>
    <td>Gemischte Seitenanwendung (hybrides Rendering)</td>
   </tr>
@@ -55,7 +55,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
    <td><p>Produktkatalog</p> </td>
    <td>
     <ul>
-     <li>Produkt-Importer, Editor, Zwischenspeicherung in AEM</li>
+     <li>Produktimport-Tool, Editor, Caching in AEM</li>
      <li>Standardkataloge mit AEM- oder Proxy-Seiten</li>
     </ul> </td>
    <td>
@@ -69,7 +69,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
    <td><p>Skalierbarkeit</p> </td>
    <td>
     <ul>
-     <li>Kann bis zu einige Millionen Produkte unterstützen (abhängig vom Anwendungsfall)</li>
+     <li>Unterstützt bis zu mehrere Millionen Produkte (je nach Anwendungsfall)</li>
      <li>Zwischenspeicherung im Dispatcher</li>
     </ul> </td>
    <td>
@@ -81,12 +81,12 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
   <tr>
    <td>Standardisiertes Datenmodell</td>
    <td>Nein</td>
-   <td>Ja, Adobe Commerce GraphQL-Schema</td>
+   <td>Ja, das Adobe Commerce GraphQL-Schema</td>
   </tr>
   <tr>
    <td>Verfügbarkeit</td>
-   <td><p>Ja. SAP Commerce Cloud (Erweiterung aktualisiert, um AEM 6.4 und Hybris 5 (standardmäßig) zu unterstützen und Kompatibilität mit Hybris 4 zu gewährleisten)</p> <p>Salesforce Commerce Cloud (Open-Source-Connector zur Unterstützung von AEM 6.4)</p> </td>
-   <td>Ja, über Open Source von GitHub. Adobe Commerce (unterstützt 2.3.2 (Standard) und kompatibel mit 2.3.1).</td>
+   <td><p>Ja. SAP Commerce Cloud (Erweiterung aktualisiert, um AEM 6.4 und Hybris 5 (standardmäßig) zu unterstützen und die Kompatibilität mit Hybris 4 zu gewährleisten)</p> <p>Salesforce Commerce Cloud (Open-Source-Connector zur Unterstützung von AEM 6.4)</p> </td>
+   <td>Ja, über Open Source über GitHub. Adobe Commerce (unterstützt 2.3.2 (standardmäßig) und ist mit 2.3.1 kompatibel).</td>
   </tr>
   <tr>
    <td>Wann ist sie einzusetzen?</td>
@@ -122,13 +122,13 @@ Die Implementierung ermöglicht den Echtzeitzugriff auf Produktdaten. Damit läs
 >
 >Um das Integrationsframework mit externen eCommerce-Anbietern zu nutzen, müssen Sie zunächst die benötigten Pakete installieren. Weitere Informationen finden Sie unter [Bereitstellen von eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md).
 >
->Informationen zur Erweiterung der eCommerce-Funktionen finden Sie unter [Entwicklung von eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
+>Weitere Informationen zu erweiterten eCommerce-Funktionen finden Sie unter [Entwicklung von eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
 ## Zentrale Funktionen {#main-features}
 
 AEM eCommerce bietet Folgendes:
 
-* Einige **vordefinierte AEM** , um zu veranschaulichen, was für Ihr Projekt erreicht werden kann:
+* Eine Reihe von **AEM-Komponenten, die vorkonfiguriert sind** und zeigen, was bei Ihrem Projekt möglich ist:
 
    * Produktanzeige
    * Warenkorb
@@ -147,12 +147,12 @@ AEM eCommerce bietet Folgendes:
 
    * die AEM-Suche
    * die Suche des eCommerce-Systems
-   * Suche von Drittanbietern
+   * eine Suche von Drittanbietern
    * oder eine Kombination aus diesen Suchmöglichkeiten
 
    ![](/help/sites-administering/assets/chlimage_1-131.png)
 
-* Verwendet die AEM Möglichkeit, **Inhalt auf mehreren Kanälen präsentieren**, sei es das vollständige Browserfenster oder Mobilgerät. So stehen die Inhalte in dem Format bereit, das Ihre Besucher benötigen.
+* Nutzt die AEM-Funktion zur **Darstellung Ihrer Inhalte auf mehreren Kanälen**, ob im Browserfenster oder auf einem Mobilgerät. So stehen die Inhalte in dem Format bereit, das Ihre Besucher benötigen.
 
    ![](/help/sites-administering/assets/chlimage_1-132.png)
 
@@ -190,8 +190,8 @@ Im Abschnitt [Konzepte](/help/commerce/cif-classic/administering/concepts.md) fi
 * Das Framework ist erweiterbar.
 * Das Framework stellt keine vorkonfigurierte, sofort verwendbare Website bereit. Ein gewisses Maß an Entwicklungsarbeit ist immer erforderlich, um das Framework an Ihre Vorgaben anzupassen.
 
-### Warum? {#why}
+### Vorteile {#why}
 
-* Bereitstellung der grundlegenden Mechanismen, die für die rasche Realisierung einer angepassten eCommerce-Site erforderlich sind.
+* Bereitstellung der grundlegenden Mechanismen, um schnell eine benutzerdefinierte eCommerce-Website zu erstellen
 * Flexibilität, die für die Entwicklung einer echten eCommerce-Website nötig ist
 * Veranschaulichung bewährter Verfahren
