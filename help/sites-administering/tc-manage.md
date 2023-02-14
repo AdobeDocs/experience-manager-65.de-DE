@@ -1,20 +1,11 @@
 ---
 title: Verwalten von Übersetzungsprojekten
-seo-title: Managing Translation Projects
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in AEM verwalten.
-seo-description: Learn how to manage translation projects in AEM.
-uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
-contentOwner: msm-service
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
-feature: Language Copy
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '3442'
-ht-degree: 100%
+source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
+workflow-type: tm+mt
+source-wordcount: '3536'
+ht-degree: 97%
 
 ---
 
@@ -418,6 +409,16 @@ Füllen Sie Ihre Sprachkopie so, dass sie Inhalte aus der Stammsprache enthält,
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
 1. Klicken oder tippen Sie auf „Starten“.
+
+## Verschieben oder Umbenennen einer Quellseite {#move-source}
+
+Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)Wenn Sie die Seite nach dem Verschieben erneut übersetzen, wird eine neue Sprachkopie erstellt, die auf dem neuen Seitennamen/Speicherort basiert. Die alte Sprachkopie, die auf dem vorherigen Namen/Speicherort basiert, ist weiterhin vorhanden.
+
+Die Best Practice in diesem Szenario besteht darin, dieses Verfahren zu befolgen:
+1. Machen Sie die Veröffentlichung der Sprachkopien rückgängig, die mit der Quellseite verknüpft sind, die Sie verschieben möchten.
+1. Löschen Sie sie.
+1. Erstellen Sie neue Sprachkopien von der neu verschobenen Quellseite.
+1. Veröffentlichen Sie die neu erstellten Sprachkopien.
 
 ## Erstellen von Übersetzungsprojekten mithilfe der Projektkonsole {#creating-a-translation-project-using-the-projects-console}
 
