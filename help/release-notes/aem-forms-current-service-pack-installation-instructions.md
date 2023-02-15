@@ -2,9 +2,9 @@
 title: Installationsanweisungen für AEM Forms Patch für AEM Forms
 description: Installationsanweisungen für das AEM Forms Service Pack für die OSGi- und JEE-Umgebung
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 72e4d6372a013acde1c2cf7e46cc36e3525e53bf
+source-git-commit: 0083de8ba459662d04ba80d8c63f21735d82ac82
 workflow-type: tm+mt
-source-wordcount: '1817'
+source-wordcount: '1797'
 ht-degree: 55%
 
 ---
@@ -91,7 +91,8 @@ Navigieren Sie zum entsprechenden Verzeichnis, von einer Shell aus und geben Sie
 
       >[!NOTE]
       >
-      > Verwenden der **ConfigurationManager.bat** hilft Ihnen dabei, die Namensänderung von .lax-Dateien manuell zu vermeiden.
+      >* Aktualisieren oder Ersetzen der **ConfigurationManager.bat** hilft Ihnen dabei, eine manuelle Aktualisierung des Namens von .lax-Dateien zu vermeiden.
+
 
 1. **[Nur für Unix-basierte]:** Die **Configuration Manager starten** ist standardmäßig aktiviert. Klicken Sie auf **[!UICONTROL Fertig]**, um Configuration Manager sofort zu starten. Um **Configuration Manager** erst später zu starten, deaktivieren Sie die Option **Configuration Manager starten**, bevor Sie auf **[!UICONTROL Fertig]** klicken. Sie können **Configuration Manager** später mit dem entsprechenden Skript im Verzeichnis `[AEM_forms_root]/configurationManager/bin` starten.
 
@@ -104,7 +105,6 @@ Navigieren Sie zum entsprechenden Verzeichnis, von einer Shell aus und geben Sie
    * [Installieren und Bereitstellen von AEM Forms für WebSphere® Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-websphere.pdf)
    * [Installieren und Bereitstellen von AEM Forms für WebLogic Cluster](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/install-cluster-weblogic.pdf)
 
-Es ist
 
 >[!NOTE]
 >
@@ -245,8 +245,6 @@ Informationen zu den Plattformen, die für diese Version zertifiziert sind, find
 +++
 
 ## Fehlerbehebung
-
-* Installieren Sie die AEM Forms Service Packs neu, wenn während der Installation ein Fehler auftritt. Wenn das Problem weiterhin besteht, wenden Sie sich an den Support der Adobe.
 
 * Wenn **Dialogfeld &quot;Package Manager UI&quot;** während der Installation des Service Packs beendet wird, warten Sie, bis sich die Fehlerprotokolle stabilisieren, bevor Sie auf die Bereitstellung zugreifen. Warten Sie auf die spezifischen Protokolle im Zusammenhang mit der Deinstallation des Aktualisierungs-Bundles, bevor Sie sicherstellen, dass die Installationen erfolgreich sind. In der Regel tritt dieses Problem im Safari-Browser auf, kann aber gelegentlich auch in jedem Browser auftreten.
 
