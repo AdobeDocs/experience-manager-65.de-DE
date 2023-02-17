@@ -5,9 +5,9 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 source-git-commit: f669c18278b468e6002864e76c676153060819ea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '986'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Im Folgenden finden Sie Details zu den Funktionen, die durch verschiedene Integr
 | Assets, die verknüpften Ordnern hinzugefügt wurden, werden automatisch an AEM gesendet | Wenn ein Dokument zu einem verknüpften Ordner hinzugefügt wird, wird das verknüpfte Asset automatisch als neues Asset in AEM Assets hochgeladen. | ✓ | ✓ |
 | Herunterladen von verknüpften AEM Assets aus Workfront | Wenn ein Asset in Workfront verknüpft ist, kann der Benutzer die Bytes des Assets herunterladen. | ✓ | ✓ |
 | Suchen nach AEM Assets in Workfront | Der AEM Assets-Selektor in Workfront ermöglicht die Volltextsuche nach Assets. | ✓ | ✓ |
-| Anzeigen von und Navigieren in der AEM-Ordnerhierarchie in Workfront | Der AEM Assets-Selektor in Workfront ermöglicht das Durchsuchen der AEM Assets-Hierarchie, die durch die zugehörigen Zugriffssteuerungen und Berechtigungen des Benutzers in AEM eingeschränkt ist. | ✓ | ✓ |
+| Anzeigen von und Navigieren in der AEM-Ordnerhierarchie in Workfront | Die AEM Assets-Auswahl in Workfront ermöglicht das Durchsuchen der AEM Assets-Hierarchie im Rahmen der in AEM festgelegten Zugriffssteuerungen und -berechtigungen der Benutzenden. | ✓ | ✓ |
 | Aufheben der Verknüpfung von Assets mit AEM Assets in Workfront | Ein vorhandenes verknüpftes Asset aus AEM kann vom zugehörigen Workfront-Dokument getrennt werden. Dadurch wird das ursprüngliche Asset in AEM nicht gelöscht. | ✓ | ✓ |
 | Hinzufügen von neu versionierten Assets zu AEM Assets aus Workfront | Wenn eine neu hinzugefügte Version zu einem Dokument in Workfront hinzugefügt wird, kann ein Benutzer die neue Version an AEM senden, um die vorhandene Version zu ersetzen. | ✓ | ✓ |
 | In Workfront verknüpfte Assets, wenn auf „Benutzer zu AEM leiten“ geklickt wurde | Benutzer werden zu AEM weitergeleitet, um eine Vorschau eines verknüpften Assets aus Workfront anzuzeigen. | ✓ | Benutzerdefiniert |
