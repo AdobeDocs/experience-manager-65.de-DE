@@ -13,7 +13,7 @@ docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
 source-git-commit: 66e9e8e1d9f43faa3d0e4fe61e8206bdab1348f6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2859'
 ht-degree: 100%
 
@@ -228,13 +228,13 @@ Sie müssen für jeden der folgenden Dienste die angegebenen Einstellungen ände
 
    * Heben Sie die Auswahl von **Aktivieren** auf.
 
-* [Day CQ WCM Filter](/help/sites-deploying/osgi-configuration-settings.md):
+* [Day CQ WCM-Filter](/help/sites-deploying/osgi-configuration-settings.md):
 
    * Legen Sie die Option **WCM-Modus** nur auf der Veröffentlichungsinstanz auf „Deaktiviert“ fest.
 
 * [Apache Sling Java Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
 
-   * Deaktivieren Sie **Generate Debug Info**.
+   * Deaktivieren Sie **die Funktion zum Erzeugen von Debug-Informationen**.
 
 * [Apache Sling JSP Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-jsp-script-handler):
 
