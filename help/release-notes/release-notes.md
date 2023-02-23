@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
-source-git-commit: d07b87532fe84f4729d4769ad5a178d3b2830e4f
+source-git-commit: 156e83ad9f73e200da70f824b598a713c0e2e97f
 workflow-type: tm+mt
-source-wordcount: '2203'
-ht-degree: 53%
+source-wordcount: '2195'
+ht-degree: 52%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 53%
 | Version | 6.5.16.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Typ | Service Pack-Version |
 | Datum | Donnerstag, 23. Februar 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.15.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[..]be/packages/cq650/servicepack/aem-service-pkg-6.5.16.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## Was in [!DNL Experience Manager] 6.5.16.0 enthalten ist {#what-is-included-in-aem-6516}
 
