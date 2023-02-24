@@ -2,10 +2,10 @@
 title: 'Schnellstartanleitung für Headless: Abrufen und Bereitstellen von Inhaltsfragmenten'
 description: Erfahren Sie, wie Sie die AEM Assets-REST-API zum Verwalten von Inhaltsfragmenten und die GraphQL-API für die Headless-Bereitstellung von Inhalten der Inhaltsfragmente verwenden.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: ht
-source-wordcount: '532'
-ht-degree: 100%
+source-git-commit: f17674f535fe4ecfdf846132bfc7787384095892
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 87%
 
 ---
 
@@ -27,8 +27,8 @@ Der Rest dieses Handbuchs konzentriert sich auf den GraphQL-Zugriff und die Bere
 
 Informationsarchitekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um Inhalte bereitzustellen. Diese Abfragen müssen in der Regel nur einmal pro Endpunkt und Modell berücksichtigt werden. Für die Zwecke dieser ersten Schritte müssen wir nur eine erstellen.
 
-1. Melden Sie sich bei AEM an und rufen Sie die GraphiQL-Oberfläche auf:
-   * Beispiel: `https://<host>:<port>/content/graphiql.html`.
+1. Melden Sie sich bei AEM an und greifen Sie auf die [GraphiQL-Benutzeroberfläche](/help/assets/content-fragments/graphiql-ide.md):
+   * Beispiel: `http://<host>:<port>/aem/graphiql.html`.
 
 1. GraphiQL ist ein In-Browser-Abfrage-Editor für GraphQL. Sie können damit Abfragen zum Abrufen von Inhaltsfragmenten erstellen, um diese als JSON-Datei direkt bereitzustellen.
    * Im linken Bedienfeld können Sie Ihre Abfrage erstellen.
@@ -53,14 +53,18 @@ Informationsarchitekten müssen Abfragen für ihre Kanalendpunkte entwerfen, um 
    ```
 
 1. Geben Sie die Abfrage in das linke Bedienfeld ein.
-   ![GraphiQL-Abfrage](../assets/graphiql-query.png)
 
-1. Klicken Sie auf die Schaltfläche **Abfrage ausführen** oder verwenden Sie den `Ctrl-Enter`-Hotkey. Die Ergebnisse werden als JSON im rechten Bedienfeld angezeigt.
+<!--
+   ![GraphiQL query](../assets/graphiql-query.png)
+-->
+
+1. Klicken Sie auf **Ausführen der Abfrage** (Pfeil nach rechts) oder verwenden Sie das `Ctrl-Enter` -Hotkey und die Ergebnisse werden im rechten Bereich als JSON angezeigt.
    ![GraphiQL-Ergebnisse](../assets/graphiql-results.png)
 
 1. Klicken Sie auf:
    * **Dokumente** oben rechts auf der Seite, um eine kontextbezogene Dokumentation anzuzeigen, die Sie bei der Erstellung Ihrer Abfragen unterstützt und sich an Ihre eigenen Modelle anpasst.
    * **Verlauf** in der oberen Symbolleiste, um frühere Abfragen anzuzeigen.
+   * **Speichern unter** und **Speichern** , um Ihre Abfragen zu speichern. Danach können Sie sie auflisten und aus der **Beständige Abfragen** Bedienfeld und **Veröffentlichen**.
       ![GraphiQL-Dokumentation](../assets/graphiql-documentation.png)
 
 GraphQL ermöglicht strukturierte Abfragen, die nicht nur auf bestimmte Datensätze oder einzelne Datenobjekte abzielen, sondern auch bestimmte Elemente der Objekte und verschachtelte Ergebnisse bereitstellen, Unterstützung für Abfragevariablen bieten und vieles mehr.
@@ -73,5 +77,7 @@ Das war´s! Sie haben nun ein grundlegendes Verständnis für das Headless-Conte
 
 * **[Konfigurations-Browser](create-configuration.md)** – Weitere Informationen zum AEM-Konfigurations-Browser
 * **[Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md)** – Weitere Informationen zum Erstellen und Verwalten von Inhaltsfragmenten
+* **[GraphiQL IDE](/help/assets/content-fragments/graphiql-ide.md)** Weitere Informationen zur Verwendung der GraphiQL IDE
+* **[Beständige Abfragen](/help/assets/content-fragments/persisted-queries.md)** Weitere Informationen zu persistenten Abfragen
 * **[Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](/help/assets/assets-api-content-fragments.md)** – Weitere Informationen zum direkten Zugriff auf AEM-Inhalte über die HTTP-API über CRUD-Vorgänge (Erstellen, Lesen, Aktualisieren, Löschen)
 * **[GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md)** – Weitere Informationen zum Headless-Bereitstellen von Inhaltsfragmenten

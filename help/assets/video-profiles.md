@@ -12,10 +12,10 @@ feature: Video Profiles
 role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '3689'
-ht-degree: 100%
+source-git-commit: dacbfbc8b4677ac7b63b92c45602e030031de3a1
+workflow-type: tm+mt
+source-wordcount: '3727'
+ht-degree: 98%
 
 ---
 
@@ -284,7 +284,7 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
    <td><code>keyframe</code></td>
    <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, damit alle 2 bis 10 Sekunden ein Keyframe generiert werden kann. Bei 30 Frames pro Sekunde sollte das Keyframe-Intervall zwischen 60 und 300 liegen.<br /> <br /> Niedrigere Keyframe-Intervalle verbessern das Verhalten bei Stream-Suche und Stream-Wechsel für adaptive Videoverschlüsselung und können auch die Qualität bei Videos mit viel Bewegung verbessern. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
    <td><code>String</code></td>
-   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für HLS (HTTP Live Streaming) ist 60–90.</p> </td>
+   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für DASH oder HLS ist 60-90. (Um DASH für Ihre Videos zu verwenden, muss es zunächst in Ihrem Konto aktiviert werden. Siehe <a href="/help/assets/video.md#enable-dash">DASH in Ihrem Konto aktivieren</a>.</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -302,7 +302,7 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
    <td><code>audioBitrateCustom</code></td>
    <td>Setzen Sie den Wert auf <code>true</code>, um eine konstante Bit-Rate für den Audio-Stream zu erzwingen, sofern dies vom Audio-Codec unterstützt wird.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Der Standardwert ist <code>false</code>.</p> <p>Der empfohlene Wert für HLS (HTTP Live Streaming) ist <code>false</code>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Der Standardwert ist <code>false</code>.</p> <p>Empfohlener Wert für DASH oder HLS: <code>false</code>. (Um DASH für Ihre Videos zu verwenden, muss es zunächst in Ihrem Konto aktiviert werden. Siehe <a href="/help/assets/video.md#enable-dash">DASH in Ihrem Konto aktivieren</a>.</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>

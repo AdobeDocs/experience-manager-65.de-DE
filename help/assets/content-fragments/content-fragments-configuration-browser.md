@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfig
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: 8dc8eff86ff25534a578dd227033aa185853d930
-workflow-type: ht
-source-wordcount: '292'
+source-git-commit: da41f48d08b7629a734e2f60077af6190a7fee8f
+workflow-type: tm+mt
+source-wordcount: '271'
 ht-degree: 100%
 
 ---
@@ -42,10 +42,6 @@ Um [bestimmte Inhaltsfragmentfunktionen zu verwenden](#creating-a-content-fragme
 >[!NOTE]
 >
 >Weitere Informationen finden Sie auch unter [Konfigurations-Browser](/help/sites-administering/configurations.md#using-configuration-browser).
-
->[!CAUTION]
->
->Unterkonfigurationen (eine Konfiguration, die in einer Konfiguration verschachtelt ist) werden für die Verwendung mit Inhaltsfragmenten unterstützt, können jedoch nicht für GraphQL-Abfragen verwendet werden.
 
 1. Navigieren Sie zu **Tools** > **Allgemein** und öffnen Sie dann den **Konfigurations-Browser**.
 

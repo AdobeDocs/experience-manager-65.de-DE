@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '4332'
-ht-degree: 100%
+source-git-commit: f578a3c5dee24bbb9995329777eea02bb8f1b654
+workflow-type: tm+mt
+source-wordcount: '4507'
+ht-degree: 95%
 
 ---
 
@@ -140,7 +140,7 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
    <td><strong>Vertikaler Zoom</strong></td>
    <td><p>Mit dem Viewer für vertikalen Zoom können Sie das Betrachtererlebnis für Produktbilder optimieren, um Ihren Benutzern die bestmögliche Darstellung eines Produktes zu bieten. Die vertikale Positionierung von Farbfeldern:</p>
     <ul>
-     <li>Stellt sicher, dass sich Farbfelder „oberhalb der Falte“ befinden.<br/> Bei einer horizontalen Platzierung von Farbfeldern sind diese je nach Bildschirmgröße nicht sichtbar, bis Benutzerinnen und Benutzer auf der Seite nach unten scrollen. Wenn die Farbfelder vertikal im Viewer platziert werden, sind sie unabhängig von der Bildschirmgröße des Benutzers sichtbar.</li>
+     <li>Stellt sicher, dass sich Farbfelder „oberhalb der Falte“ befinden.<br/> Bei horizontalen Farbfeldern sind sie je nach Bildschirmgröße des Benutzers auf dem Desktop erst sichtbar, wenn der Benutzer einen Bildlauf auf der Seite nach unten durchführt. Wenn die Farbfelder vertikal im Viewer platziert werden, sind sie unabhängig von der Bildschirmgröße des Benutzers sichtbar.</li>
      <li>Maximiert die Größe des Hauptbildes.<br /> Bei horizontalen Farbfeldern ist es erforderlich, Platz auf der Seite zu lassen, um sicherzustellen, dass sie sichtbar sind. Diese Positionierung verringerte die mögliche Größe des Hauptbildes. Bei einer vertikalen Farbfeld-Platzierung ist es jedoch nicht notwendig, diesen Platz freizulassen. Somit können Sie die Größe des Hauptbildes maximieren.</li>
     </ul> </td>
   </tr>
@@ -459,6 +459,19 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
 1. (Optional) Klicken Sie in der Nähe des oberen Bereichs der Seite „Viewer-Vorgabe bearbeiten“ auf **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** oder **[!UICONTROL Smartphone]**, um visuelle Stile für verschiedene Geräte- und Bildschirmtypen individuell zu definieren.
 1. Wählen Sie auf der Seite „Viewer-Vorgaben-Editor“ die Registerkarte **[!UICONTROL Verhalten]**. Sie können auch auf ein beliebiges visuelles Element im Viewer klicken, um es zum Konfigurieren auszuwählen.
+Beispiel: für die *VideoPlayer* Typ, unter **[!UICONTROL Modifikatoren]** > **[!UICONTROL Wiedergabe]** können Sie aus einer von drei adaptiven Streaming-Optionen auswählen:
+
+   * **[!UICONTROL dash]** - Video-Stream nur als Bindestrich.
+   * **[!UICONTROL hls]** - Video-Stream nur als &quot;hls&quot;.
+   * **[!UICONTROL auto]** - Best Practice. Die Erstellung von DASH- und HLS-Streams ist speicheroptimiert. Daher empfiehlt Adobe, immer **[!UICONTROL auto]** als Wiedergabetyp. Videos streamen als Bindestrich, Halb oder Progressiv, wie in der folgenden Abbildung dargestellt:
+      * Wenn der Browser DASH unterstützt, wird zuerst DASH-Streaming verwendet.
+      * Wenn der Browser DASH nicht unterstützt, wird HLS-Streaming verwendet (zweite).
+      * Wenn der Browser weder DASH noch HLS unterstützt, wird schließlich die progressive Wiedergabe verwendet.
+
+   >[!NOTE]
+   >
+   >So können Sie **[!UICONTROL dash]** muss sie zunächst vom technischen Support von Adobe für Ihr Konto aktiviert werden. Siehe [DASH in Ihrem Konto aktivieren](/help/assets/video.md#enable-dash).
+
 1. Wählen Sie im Pulldown-Menü **[!UICONTROL Ausgewählter Typ]** eine Komponente aus, deren Verhalten Sie ändern möchten.
 
    Viele Komponenten im Visual Editor sind mit einer detaillierten Beschreibung verknüpft. Diese Beschreibungen werden in blauen Feldern angezeigt, wenn Sie eine Komponente zum Anzeigen der mit ihr verknüpften Parameter einblenden.
@@ -476,6 +489,10 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 1. Veröffentlichen Sie die neue Viewer-Vorgabe, damit Sie sie auf Ihrer Website verwenden können.
 
    Siehe [Veröffentlichen von Viewer-Vorgaben](#publishing-viewer-presets).
+
+   >[!IMPORTANT]
+   >
+   >Bei alten Videos, die ein adaptives Streaming-Profil verwenden, wird die URL weiterhin wie gewohnt mit HLS-Streaming wiedergegeben, bis Sie [Video-Assets erneut verarbeiten](/help/assets/processing-profiles.md#reprocessing-assets). Nach der Neuverarbeitung funktioniert dieselbe URL weiterhin, aber jetzt mit *both* DASH- und HLS-Streaming aktiviert.
 
 ### Besondere Hinweise zum Erstellen von Viewer-Vorgaben für interaktive Videos {#special-considerations-for-creating-an-interactive-viewer-preset}
 

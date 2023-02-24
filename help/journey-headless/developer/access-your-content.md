@@ -2,10 +2,10 @@
 title: Zugreifen auf Ihre Inhalte über AEM-Bereitstellungs-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour lernen Sie, wie Sie GraphQL-Abfragen verwenden, um auf den Inhalt Ihrer Inhaltsfragmente zuzugreifen.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '1342'
-ht-degree: 100%
+source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
+workflow-type: tm+mt
+source-wordcount: '1335'
+ht-degree: 98%
 
 ---
 
@@ -245,9 +245,8 @@ Bevor Sie mit Abfragen zu Ihren Inhalten beginnen, müssen Sie Folgendes tun:
    * Verwenden von Tools -> Assets -> GraphQL
    * [Aktivieren des GraphQL-Endpunkts](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint)
 
-* Installieren von GraphiQL (falls erforderlich)
-   * Installieren als dediziertes Paket
-   * [Installieren der AEM-GraphiQL-Schnittstelle](/help/assets/content-fragments/graphql-api-content-fragments.md#installing-graphiql-interface)
+* Zugriff auf GraphiQL (falls erforderlich)
+   * [AEM Benutzeroberfläche für GraphiQL](/help/assets/content-fragments/graphql-api-content-fragments.md#graphiql-interface)
 
 ### Beispielstruktur {#sample-structure}
 
@@ -270,9 +269,9 @@ Die Fragmentmodelle werden in folgenden Fällen verwendet:
 
 ### Testen von Abfragen {#where-to-test-your-queries}
 
-Die Abfragen können über die GraphiQL-Schnittstelle eingegeben werden, beispielsweise unter:
+Die Abfragen können im [GraphiQL-Benutzeroberfläche](/help/assets/content-fragments/graphiql-ide.md), beispielsweise unter:
 
-* `http://localhost:4502/content/graphiql.html`
+* `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL-Oberfläche](assets/graphiql-interface.png "GraphiQL-Oberfläche")
 

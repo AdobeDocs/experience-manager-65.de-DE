@@ -6,10 +6,10 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: cd3dcd0232e1ecf69c79b03ab960cfbfc283ee76
+source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
 workflow-type: tm+mt
-source-wordcount: '675'
-ht-degree: 100%
+source-wordcount: '681'
+ht-degree: 99%
 
 ---
 
@@ -17,7 +17,7 @@ ht-degree: 100%
 # Assets-Anleitung {#assets}
 
 + [[!DNL Assets]-Benutzerhandbuch](home.md)
-+ [Versionshinweise zu [!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=de)
++ Versionshinweise zu [[!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=de)
 + [Über DAM](assets.md)
 + [Best Practices für Assets](best-practices-for-assets.md)
 + [Barrierefreiheit in  [!DNL Assets]](accessibility.md)
@@ -97,6 +97,8 @@ ht-degree: 100%
    + [[!DNL Assets]-HTTP-API](mac-api-assets.md)
    + [Unterstützung von Inhaltsfragmenten in der  [!DNL Assets] -HTTP-API](assets-api-content-fragments.md)
    + [GraphQL-API für Inhaltsfragmente](content-fragments/graphql-api-content-fragments.md)
+   + [Verwenden der GraphiQL-IDE](content-fragments/graphiql-ide.md)
+   + [Beständige Abfragen](content-fragments/persisted-queries.md)
    + [Authentifizierung für GraphQL-Remote-Abfragen in Inhaltsfragmenten](content-fragments/graphql-authentication-content-fragments.md)
    + [GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und Abfragen](/help/assets/content-fragments/content-fragments-graphql-samples.md)
    + [[!DNL Assets]-Proxy-Entwicklung](proxy.md)
