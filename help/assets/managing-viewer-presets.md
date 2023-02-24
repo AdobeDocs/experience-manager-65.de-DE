@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: f578a3c5dee24bbb9995329777eea02bb8f1b654
+source-git-commit: 40ae6c06f3296bfd4affe3e862d57df747d9bb82
 workflow-type: tm+mt
-source-wordcount: '4507'
+source-wordcount: '4520'
 ht-degree: 95%
 
 ---
@@ -461,7 +461,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 1. Wählen Sie auf der Seite „Viewer-Vorgaben-Editor“ die Registerkarte **[!UICONTROL Verhalten]**. Sie können auch auf ein beliebiges visuelles Element im Viewer klicken, um es zum Konfigurieren auszuwählen.
 Beispiel: für die *VideoPlayer* Typ, unter **[!UICONTROL Modifikatoren]** > **[!UICONTROL Wiedergabe]** können Sie aus einer von drei adaptiven Streaming-Optionen auswählen:
 
-   * **[!UICONTROL dash]** - Video-Stream nur als Bindestrich.
+   * **[!UICONTROL dash]** - Video-Stream nur als Bindestrich. Auf Safari-/iOS-Geräten müssen Sie jedoch **[!UICONTROL hls]** als Typ, stattdessen angeben.
    * **[!UICONTROL hls]** - Video-Stream nur als &quot;hls&quot;.
    * **[!UICONTROL auto]** - Best Practice. Die Erstellung von DASH- und HLS-Streams ist speicheroptimiert. Daher empfiehlt Adobe, immer **[!UICONTROL auto]** als Wiedergabetyp. Videos streamen als Bindestrich, Halb oder Progressiv, wie in der folgenden Abbildung dargestellt:
       * Wenn der Browser DASH unterstützt, wird zuerst DASH-Streaming verwendet.

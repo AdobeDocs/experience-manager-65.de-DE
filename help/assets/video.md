@@ -12,10 +12,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 2c4be989decbac2a4109e7c02cd9d6231c1d0753
+source-git-commit: 86394ab7e7de89615218d6ddd6843ec9276275cd
 workflow-type: tm+mt
-source-wordcount: '12541'
-ht-degree: 87%
+source-wordcount: '12734'
+ht-degree: 86%
 
 ---
 
@@ -231,17 +231,17 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Desktop</td>
    <td>Firefox 45 oder höher</td>
-   <td>DASH* oder HLS</td>
+   <td>Adaptives DASH*- oder HLS-Streaming.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Chrome</td>
-   <td>DASH* oder HLS</td>
+   <td>Adaptives DASH*- oder HLS-Streaming.</td>
   </tr>
   <tr>
    <td>Desktop</td>
    <td>Safari (Mac)</td>
-   <td>HLS</td>
+   <td>HLS adaptives Streaming.</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
@@ -251,7 +251,7 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Mobilgerät</td>
    <td>Chrome (Android 7™ oder neuer)</td>
-   <td>DASH* oder HLS</td>
+   <td>Adaptives DASH*- oder HLS-Streaming.</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
@@ -261,17 +261,17 @@ Die folgende Tabelle beschreibt das Gerät, den Browser und die Wiedergabemethod
   <tr>
    <td>Mobilgerät</td>
    <td>Safari (iOS)</td>
-   <td>HLS</td>
+   <td>HLS adaptives Streaming.</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
    <td>Chrome (iOS)</td>
-   <td>DASH* oder HLS</td>
+   <td>HLS adaptives Streaming.</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
    <td>BlackBerry®</td>
-   <td>DASH* oder HLS</td>
+   <td>Adaptives DASH*- oder HLS-Streaming./td&gt;
   </tr>
  </tbody>
 </table>
@@ -432,7 +432,7 @@ In Dynamic Media wird empfohlen, MP4 H.264-Videokodierungsvorgaben zu verwenden.
 
 ### DASH in Ihrem Konto aktivieren {#enable-dash}
 
-DASH (Digital Adaptive Streaming über HTTP) ist der internationale Standard für Video-Streaming und wird in verschiedenen Video-Viewern auf breiter Front verwendet. Wenn Sie DASH aktivieren, können Sie aus HLS oder DASH für adaptives Video-Streaming wählen. Sie können sich auch für beide entscheiden, wenn Sie zwischen den Playern wechseln.
+DASH (Digital Adaptive Streaming über HTTP) ist der internationale Standard für Video-Streaming und wird in verschiedenen Video-Viewern auf breiter Front verwendet. Wenn DASH in Ihrem Konto aktiviert ist, können Sie entweder DASH oder HLS für adaptives Video-Streaming auswählen. Sie können auch beide Optionen beim automatischen Wechseln zwischen Playern wählen, wenn **[!UICONTROL auto]** als Wiedergabetyp in der Viewer-Vorgabe ausgewählt ist.
 
 Zu den wichtigsten Vorteilen der Aktivierung von DASH in Ihrem Konto zählen die folgenden:
 
@@ -447,12 +447,28 @@ Zu den wichtigsten Vorteilen der Aktivierung von DASH in Ihrem Konto zählen die
    >
    >Die Aktivierung von DASH in Ihrem Konto ist derzeit nur in Nordamerika verfügbar.
 
+Die Aktivierung von DASH in Ihrem Konto erfordert zwei Schritte:
+
+* Konfigurieren von Dynamic Media für die Verwendung von DASH, was Sie einfach selbst tun können.
+* Konfigurieren von Experience Manager 6.5 für die Verwendung von DASH, das mithilfe eines von Ihnen erstellten und gesendeten Adobe-Support-Falles durchgeführt wird.
+
 **So aktivieren Sie DASH in Ihrem Konto:**
 
-1. Navigieren Sie zu [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+1. **Konfigurieren von Dynamic Media** - Navigieren Sie in Dynamic Media unter Experience Manager 6.5 zu [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
 1. Suchen Sie nach **AEM Assets Dynamic Media Video Advanced Streaming** Feature Flag.
 1. Aktivieren Sie das Kontrollkästchen, um DASH zu aktivieren.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
+1. **Experience Manager 6.5 konfigurieren** - [Verwenden Sie die Admin Console, um mit der Erstellung eines neuen Support-Falles zu beginnen.](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
+1. Befolgen Sie die Anweisungen, um einen Support-Fall zu erstellen, und stellen Sie dabei sicher, dass Sie die folgenden Informationen bereitstellen:
+
+   * Name des Hauptansprechpartners, E-Mail, Telefon.
+   * Name Ihres Dynamic Media-Kontos.
+   * Geben Sie an, dass DASH in Experience Manager 6.5 aktiviert werden soll.
+
+1. Der Adobe-Support fügt Sie basierend auf der Reihenfolge, in der Anfragen gesendet werden, zur DASH-Kundenwarteschlange hinzu.
+1. Wenn Adobe zur Bearbeitung Ihrer Anfrage bereit ist, kontaktiert der Kundensupport Sie, um ein Zieldatum für die DASH-Aktivierung zu koordinieren und festzulegen.
+1. Nach Abschluss werden Sie durch den Support benachrichtigt.
+1. Erstellen Sie Ihre [Video-Viewer-Vorgabe](/help/assets/managing-viewer-presets.md#creating-a-new-viewer-preset) wie gewohnt.
 
 ## Veröffentlichen von Videos auf YouTube {#publishing-videos-to-youtube}
 
