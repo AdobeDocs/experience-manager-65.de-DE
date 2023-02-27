@@ -12,9 +12,9 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 40ae6c06f3296bfd4affe3e862d57df747d9bb82
+source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
 workflow-type: tm+mt
-source-wordcount: '4520'
+source-wordcount: '4522'
 ht-degree: 95%
 
 ---
@@ -459,7 +459,7 @@ Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner
 
 1. (Optional) Klicken Sie in der Nähe des oberen Bereichs der Seite „Viewer-Vorgabe bearbeiten“ auf **[!UICONTROL Desktop]**, **[!UICONTROL Tablet]** oder **[!UICONTROL Smartphone]**, um visuelle Stile für verschiedene Geräte- und Bildschirmtypen individuell zu definieren.
 1. Wählen Sie auf der Seite „Viewer-Vorgaben-Editor“ die Registerkarte **[!UICONTROL Verhalten]**. Sie können auch auf ein beliebiges visuelles Element im Viewer klicken, um es zum Konfigurieren auszuwählen.
-Beispiel: für die *VideoPlayer* Typ, unter **[!UICONTROL Modifikatoren]** > **[!UICONTROL Wiedergabe]** können Sie aus einer von drei adaptiven Streaming-Optionen auswählen:
+Beispiel: für die *VideoPlayer* Typ, unter **[!UICONTROL Modifikatoren]** > **[!UICONTROL Wiedergabe]** können Sie aus einer von drei Streaming-Optionen für adaptive Bitraten auswählen:
 
    * **[!UICONTROL dash]** - Video-Stream nur als Bindestrich. Auf Safari-/iOS-Geräten müssen Sie jedoch **[!UICONTROL hls]** als Typ, stattdessen angeben.
    * **[!UICONTROL hls]** - Video-Stream nur als &quot;hls&quot;.
@@ -492,7 +492,7 @@ Beispiel: für die *VideoPlayer* Typ, unter **[!UICONTROL Modifikatoren]** > **[
 
    >[!IMPORTANT]
    >
-   >Bei alten Videos, die ein adaptives Streaming-Profil verwenden, wird die URL weiterhin wie gewohnt mit HLS-Streaming wiedergegeben, bis Sie [Video-Assets erneut verarbeiten](/help/assets/processing-profiles.md#reprocessing-assets). Nach der Neuverarbeitung funktioniert dieselbe URL weiterhin, aber jetzt mit *both* DASH- und HLS-Streaming aktiviert.
+   >Bei alten Videos, die ein Streaming-Profil mit adaptiver Bitrate verwenden, wird die URL weiterhin wie gewohnt mit HLS-Streaming wiedergegeben, bis Sie [Video-Assets erneut verarbeiten](/help/assets/processing-profiles.md#reprocessing-assets). Nach der Neuverarbeitung funktioniert dieselbe URL weiterhin, aber jetzt mit *both* DASH- und HLS-Streaming aktiviert.
 
 ### Besondere Hinweise zum Erstellen von Viewer-Vorgaben für interaktive Videos {#special-considerations-for-creating-an-interactive-viewer-preset}
 
