@@ -87,7 +87,7 @@ ht-degree: 31%
    + [Komponenten, Funktionen und Funktionsgrundlagen](essentials.md)
    + [Tutorials](tutorials.md)
    + [Fehlerbehebung](troubleshooting.md)
-   + [Kodierungsrichtlinien ](code-guide.md)
+   + [Codierungsrichtlinien ](code-guide.md)
    + [Serverseitige Anpassung](server-customize.md)
    + [Clientseitige Anpassung](client-customize.md)
    + [SCF Handlebars Helpers](handlebars-helpers.md)
