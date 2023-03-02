@@ -2,10 +2,10 @@
 title: Konfigurieren der OAuth2-basierten Authentifizierung für Microsoft® Office 365-Mailserver-Protokolle
 description: Konfigurieren der OAuth2-basierten Authentifizierung für Microsoft® Office 365-Mailserver-Protokolle
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
-source-git-commit: 4df6be3206cd4b64dbaf14607bfdcec549117091
-workflow-type: ht
-source-wordcount: '938'
-ht-degree: 100%
+source-git-commit: d19de2955adef56570378a6d62ec0015718f9039
+workflow-type: tm+mt
+source-wordcount: '975'
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ Die Option **Konten in einem beliebigen Organisationsverzeichnis (Beliebiges Azu
    >[!NOTE]
    >
    > * Für die Anwendung von **Konten in einem beliebigen Organisationsverzeichnis (Beliebiges Azure AD-Verzeichnis – Multitenant)** wird empfohlen, ein Arbeitskonto und kein persönliches E-Mail-Konto zu verwenden.
-   > * **Nur persönliche Microsoft®-Konten** und **Einzelmandant**-Anwendungen werden nicht unterstützt.
+   > * **Nur persönliche Microsoft®-Konten** -Anwendung wird nicht unterstützt.
    > * Es wird empfohlen, die Anwendung **Multitenant und persönliches Microsoft®-Konto** zu verwenden.
 
 
@@ -68,9 +68,13 @@ Die Option **Konten in einem beliebigen Organisationsverzeichnis (Beliebiges Azu
 
 Als nächstes müssen Sie den Autorisierungs-Code generieren, wie in den folgenden Schritten erklärt:
 
-1. Öffnen Sie die folgende URL im Browser, nachdem Sie `clientID` durch `<client_id>` und `redirect_uri` durch den Redirect-URI Ihrer Anwendung ersetzt haben:
+1. Öffnen Sie die folgende URL im Browser, nachdem Sie `clientID` mit dem `<client_id>` und `redirect_uri` mit dem Umleitungs-URI Ihrer Anwendung:
 
    ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
+
+   >[!NOTE]
+   >
+   > Ersetzen Sie im Fall der Einzelmandantenanwendung `common` mit `[tenantid]` in der folgenden URL für die Generierung von Autorisierungscode: `https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/authorize?client_id=[[clientid]]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20openid%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login`
 
 1. Wenn Sie die obige URL eingeben, werden Sie zum Anmeldebildschirm weitergeleitet:
    ![Anmeldebildschirm](/help/forms/using/assets/azure_loginscreen.png)
@@ -92,6 +96,11 @@ Als nächstes müssen Sie das Aktualisierungs-Token generieren, wie in den folge
 1. Ersetzen Sie `clientID`, `client_secret` und `redirect_uri` durch die Werte für Ihre Anwendung zusammen mit dem Wert von `<code>`:
 
    `curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/common/oauth2/v2.0/token`
+
+   >[!NOTE]
+   >
+   > Verwenden Sie in einer Einzelmandantenanwendung den folgenden cURL-Befehl und ersetzen Sie `common` mit dem `[tenantid]` in:
+   >`curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
 
 1. Notieren Sie sich das Aktualisierungs-Token.
 
@@ -117,7 +126,7 @@ Jetzt müssen Sie den E-Mail-Dienst auf dem neuesten JEE-Server konfigurieren, i
    >[!NOTE]
    >
    >* Das Transport-Sicherheitsprotokoll hat folgende gültige Werte: „leer“, „SSL“ oder „TLS“. Sie müssen die Werte von **SMTP Transport Security** und **Receive Transport Security** auf **TLS** setzen, um den oAuth-Authentifizierungsdienst zu aktivieren.
-   >* Das **POP3-Protokoll** wird für OAuth nicht unterstützt.
+   >* **POP3-Protokoll** wird für OAuth bei der Verwendung von E-Mail-Endpunkten nicht unterstützt.
 
 
    ![Verbindungseinstellungen](/help/forms/using/assets/oauth_connectionsettings.png)
