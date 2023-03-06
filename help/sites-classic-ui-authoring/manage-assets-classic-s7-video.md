@@ -1,6 +1,5 @@
 ---
-title: Video
-seo-title: Video
+title: Video in Sites Classic Authoring
 description: Assets bietet zentralisierte Video-Asset-Verwaltung, mit der Sie Videos direkt in Assets zur automatischen Kodierung in Dynamic Media Classic hochladen und für die Seitenerstellung direkt in Assets auf Dynamic Media Classic-Videos zugreifen können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -8,10 +7,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: b5cf18d8e83786a23005aadf8aafe43d006a2e67
-workflow-type: ht
-source-wordcount: '1678'
-ht-degree: 100%
+source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
+workflow-type: tm+mt
+source-wordcount: '1682'
+ht-degree: 99%
 
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: Arbeiten mit Dynamic Media
+title: Arbeiten mit Dynamic Media in Sites Classic Authoring
 description: Mit Dynamic Media können Sie visuell ansprechende Merchandising- und Marketing-Assets nach Bedarf bereitstellen, die automatisch für die Anzeige auf Web- sowie Mobile- und Social-Media-Sites skaliert werden. Anhand eines Sets von Assets aus Primärquellen können Sie mit Dynamic Media mehrere Varianten ansprechender Inhalte in Echtzeit über das globale, skalierbare und leistungsoptimierte Netzwerk generieren und bereitstellen..
 uuid: 201d7ff5-0ebc-4680-9ac4-00c229be5f04
 contentOwner: Chris Bohnert
@@ -8,10 +8,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
 exl-id: b00d83ab-aeec-4199-bfe4-4f928fb49930
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: ht
-source-wordcount: '201'
-ht-degree: 100%
+source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 98%
 
 ---
 
