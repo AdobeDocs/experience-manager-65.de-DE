@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: b7f9b5256e07d4bfbc0c3454e8d2fe112ea650e8
+source-git-commit: 28046104e75a833736f53b0e9d1edf4c8fbe6249
 workflow-type: tm+mt
-source-wordcount: '5918'
-ht-degree: 99%
+source-wordcount: '5898'
+ht-degree: 98%
 
 ---
 
@@ -574,15 +574,9 @@ Die error.log-Einträge sind ausführlich, falls es bei der Online-Revisionsbere
 
 >[!CAUTION]
 >
->Je nach der mit der AEM-Installation verwendeten Oak-Version müssen unterschiedliche Versionen des Tools „oak-run“ verwendet werden. Prüfen Sie die nachfolgend aufgeführten Versionsanforderungen, bevor Sie das Tool nutzen:
->
->* Für Oak-Versionen **1.0.0 bis 1.0.11** oder **1.1.0 bis 1.1.6** verwenden Sie die oak-run-Version **1.0.11**.
->
->* Für **neuere** Oak-Versionen verwenden Sie die oak-run-Version, die dem Oak-Core der AEM-Installation entspricht.
->
+>Verwenden Sie eine Oak-run-Tool-Version, die eine Versionsnummer (sowohl Haupt- als auch Nebenversion) aufweist, die mit der Oak-Kernversion Ihrer AEM übereinstimmt. Wenn Ihre AEM-Instanz beispielsweise über die Oak-Core-Version 1.22.x verfügt, sollten Sie das Oak-Run-Tool Version 1.22.x verwenden.
 
-
-Adobe stellt das Tool **oak-run** für das Ausführen der Revisionsbereinigung bereit. Es kann unter folgender URL heruntergeladen werden:
+Adobe bietet ein Tool mit dem Namen **Oak-run** , um eine Revisionsbereinigung durchzuführen. Es kann unter folgender URL heruntergeladen werden:
 
 [https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/)
 
