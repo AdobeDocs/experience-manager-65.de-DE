@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 28046104e75a833736f53b0e9d1edf4c8fbe6249
+source-git-commit: 5c26a043d735921d91044156f2749dc761dbb566
 workflow-type: tm+mt
-source-wordcount: '5898'
+source-wordcount: '5901'
 ht-degree: 98%
 
 ---
@@ -574,7 +574,7 @@ Die error.log-Einträge sind ausführlich, falls es bei der Online-Revisionsbere
 
 >[!CAUTION]
 >
->Verwenden Sie eine Oak-run-Tool-Version, die eine Versionsnummer (sowohl Haupt- als auch Nebenversion) aufweist, die mit der Oak-Kernversion Ihrer AEM übereinstimmt. Wenn Ihre AEM-Instanz beispielsweise über die Oak-Core-Version 1.22.x verfügt, sollten Sie das Oak-Run-Tool Version 1.22.x verwenden.
+>Verwenden Sie eine Oak-run-Tool-Version, die eine Versionsnummer (sowohl Haupt- als auch Nebenversion) aufweist, die mit der Oak-Kernversion Ihrer AEM übereinstimmt. Wenn Ihre AEM-Instanz beispielsweise über die Oak-Core-Version 1.22.x verfügt, sollten Sie die neueste Version des Oak-run-Tools 1.22.x verwenden.
 
 Adobe bietet ein Tool mit dem Namen **Oak-run** , um eine Revisionsbereinigung durchzuführen. Es kann unter folgender URL heruntergeladen werden:
 
