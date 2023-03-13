@@ -12,10 +12,10 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 66e9e8e1d9f43faa3d0e4fe61e8206bdab1348f6
-workflow-type: ht
-source-wordcount: '2859'
-ht-degree: 100%
+source-git-commit: 7efe4a011d831c34f6aafd877654e8b41fec96e0
+workflow-type: tm+mt
+source-wordcount: '2889'
+ht-degree: 97%
 
 ---
 
@@ -86,19 +86,25 @@ Weitere Informationen zum Ändern des Kennworts für die Web-Konsole finden Sie 
 
 #### Ändern des Admin-Kennworts für die OSGi-Web-Konsole {#changing-the-osgi-web-console-admin-password}
 
-Sie müssen auch das Kennwort ändern, das für den Zugriff auf die Web-Konsole verwendet wird. Konfigurieren Sie dazu die folgenden Eigenschaften der [Apache Felix OSGi Management Console](/help/sites-deploying/osgi-configuration-settings.md):
+Sie müssen auch das Kennwort ändern, das für den Zugriff auf die Web-Konsole verwendet wird. Dies geschieht mit einem [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) , um die folgenden Eigenschaften der **Apache Felix OSGi Management Console**:
 
-**Benutzername** und **Kennwort**: die Anmeldedaten für den Zugriff auf die Apache Felix Web Management Console.
-Das Kennwort muss nach der ersten Installation geändert werden, damit die Sicherheit Ihrer Instanz gewährleistet ist.
+* **Benutzername** und **Kennwort**: die Anmeldedaten für den Zugriff auf die Apache Felix Web Management Console.
+Das Kennwort muss geändert werden *after* die Erstinstallation, um die Sicherheit Ihrer Instanz sicherzustellen.
 
 Gehen Sie hierfür wie folgt vor:
 
-1. Navigieren Sie zur Web-Konsole unter `<server>:<port>/system/console/configMgr`.
-1. Navigieren Sie zu **Apache Felix OSGi Management Console** und ändern Sie den **Benutzernamen** und das **Kennwort**.
+>[!NOTE]
+>
+>Siehe [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) für ausführliche Informationen zur Konfiguration der OSGi-Einstellungen.
+
+1. Verwenden der **Instrumente**, **Aktivitäten** öffnen Sie das Menü **Web-Konsole** und navigieren Sie zum **Konfiguration** Abschnitt.
+Beispiel: unter `<server>:<port>/system/console/configMgr`.
+1. Navigieren Sie zum Eintrag für und öffnen Sie ihn. **Apache Felix OSGi Management Console**.
+1. Ändern Sie die **Benutzername** und **password**.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
-1. Klicken Sie auf **Speichern**.
+1. Wählen Sie **Speichern** aus.
 
 ### Implementieren von benutzerdefinierten Fehler-Handlern {#implement-custom-error-handler}
 
