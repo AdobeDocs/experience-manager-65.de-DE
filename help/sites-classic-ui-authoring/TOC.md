@@ -8,7 +8,7 @@ user-guide-description: In diesem Handbuch werden die Authoring-Konzepte in AEM 
 feature: Authoring
 role: User
 source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: ht
+workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 100%
 
