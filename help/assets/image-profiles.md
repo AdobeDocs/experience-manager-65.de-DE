@@ -10,9 +10,9 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: f93e57c861ceda20ee82019da38b3b16791dbd0d
+source-git-commit: 32ff13dbf8fbf17258a3df21b86575fa65c4ceeb
 workflow-type: tm+mt
-source-wordcount: '3011'
+source-wordcount: '3008'
 ht-degree: 91%
 
 ---
@@ -45,14 +45,14 @@ Jeder von Ihnen erstellte smarte Zuschnitt erfordert zusätzliche Verarbeitungss
 **Richtlinien zum Definieren von smartem Zuschneiden in einem Bildprofil**
 Um die Verwendung von smartem Zuschneiden unter Kontrolle zu halten und die Verarbeitungszeit und Lagerung von Kulturen zu optimieren, empfiehlt Adobe die folgenden Richtlinien und Tipps:
 
-* Für Bild-Assets, auf die ein smartes Zuschneiden angewendet wird, muss mindestens 50 x 50 Pixel groß sein. &lt;!-- CQDOC-20087>
-* Ein Bildprofil, das doppelte smarte Zuschnittdimensionen enthält, ist nicht zulässig. &lt;!-- CQDOC-20087>
-* Duplizierte Bildprofile mit Namen, für die Optionen für das smarte Zuschneiden festgelegt sind, sind nicht zulässig. &lt;!-- CQDOC-20087>
+* Für Bild-Assets, auf die ein smartes Zuschneiden angewendet wird, muss mindestens 50 x 50 Pixel groß sein. <!-- CQDOC-20087 -->
+* Ein Bildprofil, das doppelte smarte Zuschnittdimensionen enthält, ist nicht zulässig. <!-- CQDOC-20087 -->
+* Duplizierte Bildprofile mit Namen, für die Optionen für das smarte Zuschneiden festgelegt sind, sind nicht zulässig. <!-- CQDOC-20087 -->
 * Erstellen Sie seitenweise Bildprofile/Asset-Typ für bestimmte Ordner und Unterordner anstelle eines gemeinsamen Smart-Zuschnitt-Profils, das auf alle Ordner oder Assets angewendet wird.
 * Ein Bildprofil, das Sie auf Unterordner anwenden, überschreibt ein Bildprofil, das auf den Ordner angewendet wird.
 * Idealerweise sollten Sie pro Bild 10 bis 15 smarte Zuschnitte haben, um das Bildschirmverhältnis und die Verarbeitungszeit zu optimieren.
 <!-- * Avoid creating duplicate smart crop profiles that have the same width and height values. 
-* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages.-->
+* Name smart crops based on crop dimensions, not on end usage. Doing so helps to optimize for duplicates where a single dimension is used on multiple pages. -->
 
 Es stehen für das Zuschneiden zwei Optionen zur Auswahl. Sie können auch die Erstellung von Farb- und Bildmustern automatisieren oder einen zugeschnittenen Inhalt über Zielauflösungen hinweg beibehalten.
 
