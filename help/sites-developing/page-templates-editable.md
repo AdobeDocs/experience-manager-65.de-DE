@@ -12,9 +12,9 @@ discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
 source-git-commit: ae56ffafff38fe60530a8850732de58ba8c8f8f9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3252'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -435,7 +435,7 @@ Wenn Sie eine Vorlage erstellt haben, die als Grundlage für andere Vorlagen die
 1. Erstellen Sie eine Vorlage wie andere bearbeitbare Vorlagen auch, [wie hier dokumentiert](/help/sites-authoring/templates.md#creating-a-new-template-template-author). Diese dient dann als Grundlage für Ihren Vorlagentyp.
 1. Kopieren Sie mit CRXDE Lite die neu erstellte Vorlage aus dem Knoten `templates` in den Knoten `template-types` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
 1. Löschen Sie die Vorlage aus dem Knoten `templates` unter dem [Vorlagenordner](/help/sites-developing/page-templates-editable.md#template-folders).
-1. In der Kopie der Vorlage, die sich unter der `template-types` Knoten, alle löschen `cq:template` und `cq:templateType` Eigenschaften aus allen `jcr:content` Knoten.
+1. Löschen Sie in der Kopie der Vorlage, die sich unter dem `template-types`-Knoten befindet, alle `cq:template`- und `cq:templateType`-Eigenschaften aus allen `jcr:content`-Knoten.
 
 Sie können auch Ihren eigenen Vorlagentyp entwickeln, indem Sie eine bearbeitbare Beispielvorlage von GitHub als Grundlage verwenden.
 
@@ -539,7 +539,7 @@ Wenn Sie [eine Vorlage bearbeiten, können Sie das Layout definieren](/help/site
 
 ### Inhaltsrichtlinien {#content-policies}
 
-Die Inhalts- (oder Design-)Richtlinien definieren die Designeigenschaften einer Komponente, z. B. die Verfügbarkeit der Komponente oder minimale/maximale Dimensionen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden). Inhaltsrichtlinien können mit dem Vorlageneditor erstellt und ausgewählt werden.
+Die Inhalts- (oder Design-) Richtlinien definieren die Design-Eigenschaften einer Komponente, wie z. B. die Verfügbarkeit der Komponente oder die minimalen/maximalen Abmessungen. Diese sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden). Inhaltsrichtlinien können mit dem Vorlageneditor erstellt und ausgewählt werden.
 
 * Die Eigenschaft `cq:policy` im Knoten `root`
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
