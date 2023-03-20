@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
 source-git-commit: 6fa3679429527e026313b22d953267503598d1a9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '850'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
-# SAML 2.0-Authentifizierungs-Handler{#saml-authentication-handler}
+# SAML 2.0-Authentifizierungs-Handler {#saml-authentication-handler}
 
 AEM umfasst einen [SAML](https://saml.xml.org/saml-specifications)-Authentifizierungs-Handler. Dieser Handler unterstützt das [SAML](https://saml.xml.org/saml-specifications) 2.0-Authentifizierungsanforderungsprotokoll (Web-SSO-Profil), das die `HTTP POST`-Bindung verwendet.
 
@@ -117,11 +117,11 @@ SAML-Assertionen werden signiert und optional verschlüsselt. Damit dies funktio
 >
 >Die folgenden Schritte sind nur erforderlich, wenn der Handler in der Lage sein muss, Nachrichten zu signieren oder zu verschlüsseln.
 
-1. Erstellen Sie das Zertifikat/die Tastatur für AEM. Der Befehl, ihn über openssl zu generieren, sollte dem folgenden Beispiel ähneln:
+1. Erstellen Sie das Zertifikat/Schlüsselpaar für AEM. Der Befehl zur Erzeugung über OpenSSL sollte dem folgenden Beispiel ähneln:
 
    `openssl req -newkey rsa:2048 -new -x509 -days 3652 -nodes -out certificate.crt -keyout key.pem`
 
-1. Konvertieren Sie den Schlüssel mit DER-Kodierung in das PKCS#8-Format. Dies ist das Format, das für den AEM-Keystore erforderlich ist.
+1. Konvertieren Sie den Schlüssel mit DER-Codierung in das PKCS#8-Format. Dies ist das Format, das für den AEM-Keystore erforderlich ist.
 
    `openssl pkcs8 -topk8 -inform PEM -outform DER -in key.pem -out key.der -nocrypt`
 
