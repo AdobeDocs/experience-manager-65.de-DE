@@ -13,13 +13,13 @@ docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
 source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2696'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Konfigurieren der Synchronisierung von Live Copies{#configuring-live-copy-synchronization}
+# Konfigurieren der Synchronisierung von Live Copies {#configuring-live-copy-synchronization}
 
 Führen Sie die folgenden Schritte durch, um zu steuern, wie und wann Live Copies mit ihren Quellinhalten synchronisiert werden sollen.
 
@@ -172,7 +172,7 @@ In der folgenden Tabelle sind die Synchronisierungsaktionen aufgeführt, die mit
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Auf der Live Copy aktualisiert diese Synchronisierungsaktion Verweise wie Links.<br /> Sie sucht in den Live Copy-Seiten Pfade, die auf eine Ressource in der Blueprint verweisen. Wenn sie solch einen Pfad gefunden hat, wird er so aktualisiert, dass er auf die zugehörige Ressource in der Live Copy (statt in der Blueprint) verweist. Verweise, die Ziele außerhalb der Blueprints aufweisen, werden nicht geändert.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Konfigurieren Sie den Service CQ MSM References Update Action</a>, um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. </p> </td>
+   <td><p>In der Live Copy werden durch diese Synchronisierung Verweise wie Links aktualisiert.<br /> Sie sucht in den Live Copy-Seiten Pfade, die auf eine Ressource in der Blueprint verweisen. Wenn sie solch einen Pfad gefunden hat, wird er so aktualisiert, dass er auf die zugehörige Ressource in der Live Copy (statt in der Blueprint) verweist. Verweise, die Ziele außerhalb der Blueprints aufweisen, werden nicht geändert.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">Konfigurieren Sie den Service CQ MSM References Update Action</a>, um die Knotentypen, Absatzelemente und Seiteneigenschaften zu definieren, die ausgeschlossen werden sollen. </p> </td>
    <td> </td>
   </tr>
   <tr>
