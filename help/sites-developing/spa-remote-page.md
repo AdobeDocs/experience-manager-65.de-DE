@@ -3,9 +3,9 @@ title: Die RemotePage-Komponente
 description: Die RemotePage-Komponente ist eine benutzerdefinierte Seitenkomponente zur Bearbeitung von Remote-React-SPAs in AEM.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
 source-git-commit: 41aac3b4ea3b100e9d927bef161929477d667a95
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '394'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -39,7 +39,7 @@ Weitere Informationen zu bearbeitbaren externen SPAs in AEM finden Sie im Artike
 
 ## Beschränkungen {#limitations}
 
-* Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest wie das [gefunden.](https://github.com/shellscape/webpack-manifest-plugin) Die RemotePage-Komponente wurde jedoch nur für die Verwendung mit dem React-Framework getestet (und Next.js über die Komponente &quot;remote-page-next&quot;) und unterstützt daher nicht das Remote-Laden von Anwendungen aus anderen Frameworks wie Angular.
+* Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest wie das [hier gefundene bereitstellt.](https://github.com/shellscape/webpack-manifest-plugin) Die RemotePage-Komponente wurde jedoch nur für die Zusammenarbeit mit dem React-Framework (und Next.js über die Komponente „remote-page-next“) getestet und unterstützt daher nicht das Fernladen von Anwendungen aus anderen Frameworks, wie z. B. Angular.
 * Internes CSS, das in der Stamm-HTML-Datei des Programms definiert ist, sowie Inline-CSS im Stamm-DOM-Knoten sind beim Remote-Rendering in AEM nicht verfügbar.
 
 ## Technische Details {#technical-details}
