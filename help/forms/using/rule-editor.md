@@ -11,13 +11,13 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
 source-git-commit: 26403941129f3a80fdb3e9b964cb943a04b3bfa1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6888'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Regeleditor für adaptive Formulare{#adaptive-forms-rule-editor}
+# Regeleditor für adaptive Formulare {#adaptive-forms-rule-editor}
 
 ## Übersicht {#overview}
 
@@ -581,7 +581,7 @@ Zeigt die von der Funktion verwendeten Parameter an. In einer Funktion können m
    1. Boolean (Boolesch)
    1. Scope (Umfang)
 
-   Der Umfang wird für verweisende Felder eines adaptiven Formulars verwendet. Wenn ein Formular verzögertes Laden (Lazy Loading) verwendet, können Sie `scope` verwenden, um auf dessen Felder zuzugreifen. Sie können auf Felder zugreifen, wenn die Felder geladen wurden oder wenn die Felder als „global“ gekennzeichnet sind.
+   Der Umfang wird für die Verweise auf Felder eines adaptiven Formulars verwendet. Wenn ein Formular verzögertes Laden (Lazy Loading) verwendet, können Sie `scope` verwenden, um auf dessen Felder zuzugreifen. Sie können auf Felder zugreifen, wenn die Felder geladen wurden oder wenn die Felder als „global“ gekennzeichnet sind.
 
    Alle anderen Parametertypen fallen in eine der oben genannten Kategorien.  „None“ wird nicht unterstützt. Achten Sie darauf, einen der oben genannten Typen zu wählen. Für die Typen wird nicht zwischen Groß- und Kleinschreibung unterschieden. Leerzeichen sind im Parameter `name` unzulässig. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
