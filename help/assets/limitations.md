@@ -9,7 +9,7 @@ feature: Dynamic Media Classic,Asset Management,Image Sets,Spin Sets,eCatalog
 role: User
 exl-id: e4d4059e-ac0b-42e7-910c-001310796574
 source-git-commit: 9247a81a518b1bd6e037c234a6c67f95209bfde8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '235'
 ht-degree: 100%
 
@@ -33,8 +33,8 @@ Wenn Sie ein Rotationsset oder Bildset erstellen oder PDFs zur Seitenextrahierun
 | **Bild**: Anzahl der smarten Zuschnitte pro Bild | 5 | 100 |
 | **Alle Sets**: Anzahl doppelter Assets pro Set | Keine Duplikate | 20 |
 | **Alle Sets**: Maximale Anzahl von Assets pro Set | 5–10 Bilder pro Set | 1000 |
-| **Rotationsset**: Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1.000 |
-| **PDF**: Maximale Seitenzahl für eine PDF, die für die Extraktion berücksichtigt werden sollen |  | 100 (für alle PDFs) |
+| **Rotationsset**: Maximale Anzahl von Zeilen/Spalten pro 2D-Set | 12–18 Bilder pro Set | 1000 |
+| **PDF**: Maximale Zahl der Seiten für eine PDF-Datei, die für die Extraktion berücksichtigt werden sollen |  | 100 (für alle PDFs) |
 
 <!-- See also [Dynamic Media limitations](/help/assets/limitations.md). -->
 
