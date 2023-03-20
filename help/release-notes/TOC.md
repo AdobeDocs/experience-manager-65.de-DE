@@ -10,7 +10,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 source-git-commit: dbe13e38861486b0b7d82e860fa6a3ff52b03a07
 workflow-type: tm+mt
 source-wordcount: '68'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 91%
 + [Versionshinweise zu AEM 6.5](home.md)
 + [Aktuelle Versionshinweise](release-notes.md)
 + [Installationsanweisungen für AEM Forms Service Pack](aem-forms-current-service-pack-installation-instructions.md)
-+ [Hinweise zu früheren Versionen]{#service-pack}
++ [Hinweise zu früheren Versionen ]{#service-pack}
    + [6.5.15](previous/6.5.15.md)
    + [6.5.14](previous/6.5.14.md)
    + [6.5.13](previous/6.5.13.md)

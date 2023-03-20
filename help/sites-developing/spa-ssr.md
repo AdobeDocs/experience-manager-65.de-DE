@@ -14,11 +14,11 @@ exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
 source-git-commit: f923a3b7d6821f63d059f310de783b11bf3e8ec3
 workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
-# Single Page Applications (SPAs) und Server-seitiges Rendering{#spa-and-server-side-rendering}
+# Single Page Applications (SPAs) und Server-seitiges Rendering {#spa-and-server-side-rendering}
 
 >[!NOTE]
 >

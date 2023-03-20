@@ -5,7 +5,7 @@ mini-toc-levels: 3
 source-git-commit: 676472125cf472d42b792fae87dffe263e499014
 workflow-type: tm+mt
 source-wordcount: '2605'
-ht-degree: 44%
+ht-degree: 45%
 
 ---
 
@@ -222,7 +222,7 @@ Informationen zu den Plattformen, die für diese Version zertifiziert sind, find
 
 ### Installieren des Service Packs für [!DNL Experience Manager] Forms {#install-aem-forms-add-on-package}
 
-Anweisungen zum Installieren des Service Packs auf AEM Forms finden Sie unter [Installationsanweisungen für AEM Forms Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
+Anweisungen zur Installation des Service Packs auf AEM Forms finden Sie unter [Installationsanweisungen für das AEM Forms Service Pack](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md).
 
 ### UberJar {#uber-jar}
 
@@ -270,7 +270,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 * [AEM-Inhaltsfragment mit GraphQL Index Package 1.0.5](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq650%2Ffeaturepack%2Fcfm-graphql-index-def-1.0.5.zip)
 Dieses Paket ist für Kundinnen und Kunden erforderlich, die GraphQL verwenden. Dadurch können sie die erforderliche Indexdefinition hinzufügen, die auf den tatsächlich verwendeten Funktionen basiert.
 
-* Aktualisieren Sie Ihre GraphQL-Abfragen, die möglicherweise einen benutzerdefinierten API-Namen für Ihr Inhaltsmodell verwendet haben, so, dass stattdessen der Standardname des Inhaltsmodells verwendet wird.
+* Bitte aktualisieren Sie Ihre GraphQL-Abfragen, die möglicherweise einen benutzerdefinierten API-Namen für Ihr Inhaltsmodell verwendet haben, und verwenden Sie stattdessen den Standardnamen des Inhaltsmodells.
 
 * Da [!DNL Microsoft®® Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss®® EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft®® Windows Server 2019] keine Turnkey-Installationen für [!DNL AEM Forms 6.5.10.0].
 

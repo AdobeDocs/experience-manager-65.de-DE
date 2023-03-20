@@ -11,7 +11,7 @@ role: User
 source-git-commit: 071d7bf2e7c9ceb3328e77262cc45ed3f2e303cc
 workflow-type: tm+mt
 source-wordcount: '3846'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -220,13 +220,13 @@ ht-degree: 99%
    + [Generische Schritte zur Anpassung von AEM Forms Workspace](using/generic-steps-html-workspace-customization.md)
    + [Ändern des Gebietsschemas der AEM Forms Workspace-Benutzeroberfläche](using/changing-locale-user-interface.md)
    + [Erstellen eines neuen Anmeldungsbildschirms](using/creating-new-login-screen.md)
-   + [Anpassen von Fehlerdialogen](using/customizing-error-dialogs.md)
+   + [Anpassen von Fehlerdialogfeldern](using/customizing-error-dialogs.md)
    + [Anpassen von Registerkarten für eine Aufgabe](using/customizing-tabs-task.md)
    + [Anpassen der Aufgabendetailseite](using/customizing-task-details-page.md)
    + [Anpassen der Auflistung von Prozessinstanzen](using/customizing-listing-process-instances.md)
    + [Anpassen von Aufgabenaktionen](using/customizing-task-actions.md)
    + [Anzeigen zusätzlicher Daten in der ToDo-Liste](using/display-additional-data-in-todo-list.md)
-   + [Aufrufen von Aufgabenvariablen in der Zusammenfassungs-URL](using/getting-task-variables-summary-url.md)
+   + [Abrufen von Aufgabenvariablen in der Zusammenfassungs-URL](using/getting-task-variables-summary-url.md)
    + [In Route-Aktionen verwendete Bilder anpassen](using/images-route-actions.md)
    + [Minimierung der JavaScript-Dateien](using/minification-javascript-files.md)
    + [Anpassen von Verfolgungstabellen](using/sorting-tracking-tables-add-columns.md)
@@ -243,7 +243,7 @@ ht-degree: 99%
    + [Erste Schritte mit AEM Forms Workspace](using/getting-started-livecycle-html-workspace.md)
    + [Verwalten von Aufgaben in einer hierarchischen Struktur mithilfe der Manageransicht](using/tasks-organizational-hierarchy-using-manager.md)
    + [Starten von Prozessen](using/starting-processes.md)
-   + [Verfolgen von Prozessen](using/tracking-processes.md)
+   + [Tracking-Prozesse](using/tracking-processes.md)
    + [Single Sign-On und Zeitüberschreitungshandler](using/single-sign-timeout-handlers.md)
    + [Verwenden eines adaptiven Formulars in HTML Workspace](using/using-adaptive-form-html-workspace.md)
    + [Integrieren von AEM Forms Workspace in Microsoft Office SharePoint Server](using/integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server.md)
@@ -454,7 +454,7 @@ ht-degree: 99%
       + [E-Mail-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-email-endpoints.md)
       + [Konfigurieren der oAuth2.0-Authentifizierung](/help/forms/using/oauth2-support-for-mail-service.md)
       + [Remoting-Endpunkte konfigurieren](/help/forms/using/admin-help/configuring-remoting-endpoints.md)
-      + [Endpunkte des Typs „Überwachter Ordner“ konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
+      + [Konfigurieren von Endpunkten des Typs &quot;überwachter Ordner&quot;](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
       + [Konfigurieren der Task Manager-Endpunkte](/help/forms/using/admin-help/configuring-task-manager-endpoints.md)
       + [Arten von Endpunkten](/help/forms/using/admin-help/types-endpoints.md)
    + Konfigurieren von Acrobat Reader DC Extensions {#configure-acrobat-reader-dc-extensions}
@@ -470,7 +470,7 @@ ht-degree: 99%
    + Arbeiten mit PDF Generator {#work-with-pdf-generator}
       + [Einführung in das Arbeiten mit PDF Generator](/help/forms/using/admin-help/overview-5.md)
       + [Aktivieren mehrprozessgestützter Dateikonvertierungen](/help/forms/using/admin-help/enabling-multi-threaded-file-conversions.md)
-      + [Adobe PDF-Einstellungen konfigurieren](/help/forms/using/admin-help/configuring-pdf-settings.md)
+      + [Konfigurieren von Adobe PDF-Einstellungen](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Sicherheitseinstellungen konfigurieren](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Dateitypeinstellungen konfigurieren](/help/forms/using/admin-help/configuring-file-type-settings.md)
       + [Importieren und Exportieren der PDF Generator-Konfigurationsdateien](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
@@ -514,7 +514,7 @@ ht-degree: 99%
       + [Einzubettende Schriften angeben](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Sicherheitseinstellungen angeben](/help/forms/using/admin-help/specify-security-settings.md)
       + [Den Zeichensatz ändern](/help/forms/using/admin-help/change-character-set.md)
-   + Konfigurieren des Arbeitsablaufs für Formulare{#configure-forms-workflow}
+   + Konfigurieren des Arbeitsablaufs für Formulare {#configure-forms-workflow}
       + [Informationen zur Administrations- und Prozessterminologie](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Prozesse verwalten](/help/forms/using/admin-help/processes.md)
       + [Konfigurieren von Geschäftskalendern](/help/forms/using/admin-help/configuring-business-calendars.md)
@@ -603,10 +603,10 @@ ht-degree: 99%
          + [Java API-Schnellstart (SOAP) für den Acrobat Reader DC-Erweiterungsdienst](developing/acrobat-reader-dc-extensions-service.md)
          + [Sicherungs- und Wiederherstellungs-Service API-Schnellstarts](developing/backup-restore-service-api-quick.md)
          + [Java API-Schnellstart (SOAP) für den Barcode-Formulardienst](developing/barcoded-forms-service-java-api.md)
-         + [Java API Quick Start (SOAP) für Komponenten und Services](developing/components-services-java-api-quick.md)
+         + [Java API-Schnellstart (SOAP) für Komponenten und Services](developing/components-services-java-api-quick.md)
          + [Convert PDF Service Java-API Schnellstart(SOAP)](developing/convert-pdf-service-java-api.md)
          + [Java API-Schnellstart (SOAP) für den Bereichtigungsdienst](developing/credential-service-java-api-quick.md)
-         + [Distiller Service Java API QuickStart(SOAP)](developing/distiller-service-java-api-quick.md)
+         + [Distiller Service Java API-Schnellstart (SOAP)](developing/distiller-service-java-api-quick.md)
          + [Kurzanleitung zur DocConverter-Service-Java-API (SOAP)](developing/docconverter-service-java-api-quick.md)
          + [Java API-Schnellstart (SOAP) für den Document Management-Dienst (veraltet)](developing/document-management-service-deprecated-java.md)
          + [Java API-Schnellstart (SOAP) für den Document Security-Dienst](developing/document-security-service-java-api.md)
@@ -688,7 +688,7 @@ ht-degree: 99%
    + [Konvertieren von Word- oder Excel-Dateien in PDF ist unter Windows Server nicht möglich](/help/forms/using/disable-uac-for-pdfgconfiguration.md)
    + [XFA-basierte PDF-Formulare können in Google Chrome, Firefox, Microsoft Edge, Microsoft Internet Explorer oder Apple Safari nicht geöffnet werden.](/help/forms/using/xfa-based-forms-in-chrome-firefox-ie-internet-explorter-safari-edge.md)
    + [CRX-Repository kann nicht wiederhergestellt werden](/help/forms/using/restore-crx-repository.md)
-   + [Service unavailable errors after installation AEM 6.5.15.0 Service Pack](/help/forms/using/aem-service-pack-installation-solution.md)
+   + [Fehler „Dienst nicht verfügbar“ nach der Installation von AEM 6.5.15.0 Service Pack](/help/forms/using/aem-service-pack-installation-solution.md)
    + [AEM Forms JEE 6.5.15.0 Service Pack-Installationsproblem in der JBoss Linux-Umgebung](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
 + Alte Dokumentation {#legacy-documentation}
    + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)

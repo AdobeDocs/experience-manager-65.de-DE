@@ -1,7 +1,7 @@
 ---
 title: Bereitstellen und Verwalten
 seo-title: Deploying and Maintaining
-description: Informationen zu den ersten Schritten der AEM-Installation
+description: Erfahren Sie, wie Sie mit der AEM-Installation beginnen.
 seo-description: Learn how to get started with the AEM installation.
 uuid: 4429ac4d-abd7-47d8-b19d-773accb7cc7a
 contentOwner: Guillaume Carlino
@@ -14,13 +14,13 @@ exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
 source-git-commit: 9052ed3e89fdc67d94fc60bbff64d42255565767
 workflow-type: tm+mt
 source-wordcount: '1802'
-ht-degree: 96%
+ht-degree: 65%
 
 ---
 
-# Bereitstellen und Verwalten{#deploying-and-maintaining}
+# Bereitstellen und Verwalten {#deploying-and-maintaining}
 
-Inhalt dieser Seite:
+Auf dieser Seite finden Sie:
 
 * [Grundlegende Konzepte](#basic-concepts)
 
@@ -64,68 +64,68 @@ Nachdem Sie sich mit diesen Grundlagen vertraut gemacht haben, finden Sie auf de
 
 ### Was ist AEM? {#what-is-aem}
 
-Adobe Experience Manager ist ein webbasiertes Client-Server-System für das Erstellen, Verwalten und Bereitstellen von kommerziellen Websites und zugehörigen Diensten. Es kombiniert einige Funktionen auf Infrastrukturebene und Anwendungsebene in einem einzelnen integrierten Paket.
+Adobe Experience Manager ist ein webbasiertes Client-Server-System zum Erstellen, Verwalten und Bereitstellen von kommerziellen Websites und zugehörigen Diensten. Es kombiniert einige Funktionen auf Infrastrukturebene und Anwendungsebene in einem einzelnen integrierten Paket.
 
 Auf Infrastrukturebene bietet AEM Folgendes:
 
-* **Webanwendungsserver**: AEM kann im eigenständigen Modus (umfasst einen Intergated-Jetty-Webserver) oder als eine Webanwendung auf einem Drittanbieter-Anwendungsserver bereitgestellt werden.
-* **Framework für Webanwendungen**: AEM verfügt über das Sling Web Application Framework (Sling-Webanwendungsframework). Dieses vereinfacht das Schreiben von RESTful- und inhaltsorientierten Webanwendungen.
-* **Inhalts-Repository**: AEM umfasst ein Java Content Repository (JCR). Hierbei handelt es sich um einen Typ hierarchischer Datenbank, die speziell für unstrukturierte und halb strukturierte Daten entwickelt wurde. Das Repository speichert nicht nur die benutzerseitigen Inhalte, sondern auch alle durch die Anwendung verwendeten Codes, Vorlagen und internen Daten.
+* **Webanwendungsserver**: AEM können im eigenständigen Modus (einschließlich eines integrierten Jetty-Webservers) oder als Webanwendung auf einem Drittanbieter-Anwendungsserver bereitgestellt werden.
+* **Webanwendungsframework**: AEM beinhaltet das Sling Web Application Framework, das das Schreiben von RESTful-Webanwendungen vereinfacht.
+* **Content-Repository**: AEM enthält ein Java Content Repository (JCR), einen Typ hierarchischer Datenbank, der speziell für unstrukturierte und teilstrukturierte Daten entwickelt wurde. Das Repository speichert nicht nur den für den Benutzer sichtbaren Inhalt, sondern auch alle von der Anwendung verwendeten Code, Vorlagen und internen Daten.
 
-Auf dieser Grundlage bietet AEM einige Funktionen auf Anwendungsebene für die Verwaltung von:
+Auf dieser Grundlage bietet AEM außerdem eine Reihe von Funktionen auf Anwendungsebene für die Verwaltung von:
 
 * **Websites**
 * **Mobilanwendungen**
-* **digitalen Veröffentlichungen**
+* **Digitale Veröffentlichungen**
 * **Formulare**
 * **Digitale Assets**
 * **Communities**
-* **Online-Handel**
+* **Online-Commerce**
 
-Schließlich können Kunden diese Bausteine auf Infrastruktur- und Anwendungsebene verwenden, um benutzerdefinierte Lösungen zu erstellen, indem sie eigene Anwendungen erstellen.
+Schließlich können Kundinnen und Kunden diese Bausteine auf Infrastruktur- und Anwendungsebene nutzen, um individuelle Lösungen zu erstellen, indem sie eigene Anwendungen entwickeln.
 
 Der AEM-Server ist **Java-basiert** und kann auf den meisten Betriebssystemen ausgeführt werden, die diese Plattform unterstützen. Die gesamte Client-Interaktion mit AEM erfolgt über einen **Webbrowser**.
 
 ### Typische Bereitstellungsszenarien {#typical-deployment-scenarios}
 
-In der AEM-Terminologie entspricht eine „Instanz“ einer Kopie von AEM, die auf einem Server ausgeführt wird. AEM-Installationen beziehen für gewöhnlich mindestens zwei Instanzen ein, die normalerweise auf separaten Computern ausgeführt werden:
+In AEM Terminologie ist eine &quot;Instanz&quot;eine Kopie von AEM, die auf einem Server ausgeführt wird. AEM Installationen betreffen in der Regel mindestens zwei Instanzen, die normalerweise auf separaten Computern ausgeführt werden:
 
-* **Autor**: Eine zum Erstellen, Hochladen und Bearbeiten von Inhalten sowie zum Verwalten der Website verwendete AEM-Instanz. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
-* **Veröffentlichen**: Eine AEM-Instanz, die den Inhalt veröffentlicht.
+* **Autor**: Eine AEM Instanz, die zum Erstellen, Hochladen und Bearbeiten von Inhalten und zum Verwalten der Website verwendet wird. Sobald der Inhalt für die Veröffentlichung bereit ist, wird er an die Veröffentlichungsinstanz repliziert.
+* **Veröffentlichen**: Eine AEM-Instanz, die den veröffentlichten Inhalt der Öffentlichkeit bereitstellt.
 
-Diese Instanzen sind hinsichtlich der installierten Software identisch. Sie unterscheiden sich nur in Bezug auf ihre Konfiguration. Zusätzlich verwenden die meisten Installationen einen Dispatcher:
+Diese Instanzen sind hinsichtlich der installierten Software identisch. Sie werden nur nach Konfiguration unterschieden. Darüber hinaus verwenden die meisten Installationen einen Dispatcher:
 
-* **Dispatcher**: Ein um das AEM-Dispatcher-Modul erweiterter statischer Webserver (Apache httpd, Microsoft IIS usw.). Er speichert durch die Veröffentlichungsinstanz generierte Web-Seiten zwischen, um die Leistung zu verbessern.
+* **Dispatcher**: Ein statischer Webserver (Apache httpd, Microsoft IIS usw.) mit dem AEM Dispatcher-Modul erweitert. Er speichert durch die Veröffentlichungsinstanz generierte Web-Seiten zwischen, um die Leistung zu verbessern.
 
-Es gibt viele erweiterte Optionen und Ausarbeitungen dieser Einrichtung. Das allgemeine Muster von „author“ (erstellen), „publish“ (veröffentlichen) und „dispatcher“ befindet sich im Zentrum der meisten Bereitstellungen. Zunächst konzentrieren wir uns auf ein relativ einfaches Setup. Die Erläuterung erweiterter Bereitstellungsoptionen folgt.
+Es gibt viele erweiterte Optionen und Ausarbeitungen dieses Setups, aber das grundlegende Muster von Autor, Veröffentlichung und Dispatcher bildet den Kern der meisten Implementierungen. Zunächst konzentrieren wir uns auf ein relativ einfaches Setup. Die Erläuterung erweiterter Bereitstellungsoptionen folgt.
 
-Die folgenden Abschnitte beschreiben beide Szenarien:
+In den folgenden Abschnitten werden beide Szenarien beschrieben:
 
 * **On-Premise**: AEM in Ihrer Unternehmensumgebung bereitgestellt und verwaltet.
 
-* **Verwaltete Dienste - Cloud Manager für Adobe Experience Manager**: AEM von Adobe Managed Services bereitgestellt und verwaltet.
+* **Managed Services - Cloud Manager für Adobe Experience Manager**: AEM von Adobe Managed Services bereitgestellt und verwaltet.
 
 ### On-Premise {#on-premise}
 
 Sie können AEM auf Servern in Ihrer Unternehmensumgebung installieren. Typische Installationsinstanzen umfassen: Bereitstellungs-, Test- und Veröffentlichungsumgebungen. Nähere Informationen finden Sie im Abschnitt [Erste Schritte](/help/sites-deploying/deploy.md#getting%20started). Dort erhalten Sie grundlegende Informationen darüber, wie Sie die AEM-Software erhalten, um sie lokal zu installieren.
 
-Weitere Informationen zu typischen On-Premise-Bereitstellungen erhalten Sie unter [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
+Weitere Informationen zu typischen lokalen Implementierungen finden Sie unter [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md).
 
 ### Managed Services mit Cloud Manager {#managed-services-using-cloud-manager}
 
-AEM Managed Services ist eine Komplettlösung für das Management digitaler Erlebnisse. Sie bietet die Vorteile einer Lösung zur Erlebnisbereitstellung in der Cloud unter Beibehaltung aller Vorteile hinsichtlich Kontrolle, Sicherheit und Personalisierung einer On-Premise-Bereitstellung. AEM Managed Services ermöglicht Kunden schnellere Launches, indem sie in der Cloud bereitstellen und dabei auf die Best Practices und die Unterstützung von Adobe vertrauen können. Organisationen und Geschäftskunden können so in kürzester Zeit Kunden ansprechen, den Marktanteil steigern und sich auf innovative Marketing-Kampagnen konzentrieren, wobei die Belastung auf die IT reduziert wird.
+AEM Managed Services ist eine Komplettlösung für das Management digitaler Erlebnisse. Sie bietet die Vorteile einer Lösung zur Erlebnisbereitstellung in der Cloud unter Beibehaltung aller Vorteile hinsichtlich Kontrolle, Sicherheit und Personalisierung einer On-Premise-Bereitstellung. AEM Managed Services ermöglicht Kunden schnellere Launches, indem sie in der Cloud bereitstellen und dabei auf die Best Practices und die Unterstützung von Adobe vertrauen können. Unternehmen und Business-Anwender können Kunden in minimaler Zeit ansprechen, Marktanteile steigern und sich auf die Erstellung innovativer Marketing-Kampagnen konzentrieren und gleichzeitig die IT-Belastung reduzieren.
 
-Mit AEM Managed Services können Kunden die folgenden Vorteile nutzen:
+Mit AEM Managed Services können Kunden die folgenden Vorteile erzielen:
 
 **Schnellere Markteinführungszeiten:** Dank flexibler Cloud-Infrastruktur von Adobe Managed Services können Organisationen erfolgreiche digitale Erlebnisse schnell planen, starten und optimieren. Adobe verwaltet die Cloud-Architektur ohne zusätzliches Kapital, keine Hardware oder Software, und die Customer Solutions Engineers von Adobe unterstützen Sie bei der AEM-Architektur, Bereitstellung, Anpassung für die Verbindung mit Back-End-Apps und Best Practices für die Live-Schaltung.
 
 **Höhere Leistung:** Bietet zuverlässige digitale Erlebnisse für Ihr Unternehmen mit vier Service-Verfügbarkeitsoptionen, 99,5 %, 99,9 %, 99,95 % und 99,99 %. Zusätzlich ermöglicht es eine automatische Sicherung und Modelle zur Notfallwiederherstellung und hilft so, Sicherheit und kontinuierliche Verwaltung sicherzustellen.
 
-**Optimierte IT-Kosten:** Proaktive Unterstützung und Know-how helfen Unternehmen, über neue Entwicklungen von AEM auf dem Laufenden zu bleiben. Adobe Platinum Maintenance und Support ist bei neuen Bereitstellungen von AMS Enterprise/Basic automatisch enthalten und bietet technisches Know-how und operative Erfahrung, um Unternehmen bei der Verwaltung ihrer unternehmenskritischen Applikationen zu helfen. Kostenlose grundlegende Analytics- oder Target-Funktionen bieten zusätzlichen Mehrwert für mittelständische Unternehmen mit begrenztem Bedarf hinsichtlich Analysen und Personalisierung.
+**Optimierte IT-Kosten:** Proaktive Unterstützung und Know-how helfen Unternehmen, über neue Entwicklungen von AEM auf dem Laufenden zu bleiben. Adobe Platinum Maintenance und Support ist bei neuen Bereitstellungen von AMS Enterprise/Basic automatisch enthalten und bietet technisches Know-how und operative Erfahrung, um Unternehmen bei der Verwaltung ihrer unternehmenskritischen Applikationen zu helfen. Kostenlose grundlegende Analytics- oder Target-Funktionen bieten zusätzlichen Nutzen, insbesondere für Midmarket-Unternehmen mit begrenztem Analysebedarf und eingeschränktem Personalisierungsbedarf.
 
-**Oberste Sicherheit:** Stellt physische, Netzwerk- und Datensicherheit auf Unternehmensniveau sicher, indem Kunden-Applikationen in einer Einrichtung mit beschränktem Zugang, hinter Firewall-Systemen oder in einer virtuellen, privaten Cloud, gehostet werden. Es beinhaltet virtuelle Maschinen für jeden einzelnen Mandanten mit robuster Datenspeicherungsverschlüsselung, Anti-Viren-Programmen und Datenisolierung.
+**Oberste Sicherheit:** Stellt physische, Netzwerk- und Datensicherheit auf Unternehmensniveau sicher, indem Kunden-Applikationen in einer Einrichtung mit beschränktem Zugang, hinter Firewall-Systemen oder in einer virtuellen, privaten Cloud, gehostet werden. Es umfasst virtuelle Einzelmandanten mit robuster Datenspeicherverschlüsselung, antiviralen Mitteln und Datenisolierung.
 
-**Cloud Manager**: Cloud Manager, Teil von Adobe Experience Manager Managed Services, bietet ein Selbstbedienungsportal, das es Organisationen besser ermöglicht, Adobe Experience Manager in der Cloud selbst zu verwalten. Es enthält eine moderne kontinuierliche Integration und eine kontinuierliche Bereitstellungs-Pipeline (CI/CD), die IT-Teams und Implementierungspartner dazu nutzen können, die Geschwindigkeit der Lieferung von Personalisierungen oder Aktualisierungen zu erhöhen, ohne bei der Leistung oder Sicherheit Abstriche zu machen. Cloud Manager ist nur für Adobe Managed Service-Kunden verfügbar.
+**Cloud Manager**: Cloud Manager, Teil von Adobe Experience Manager Managed Services, bietet ein Selbstbedienungsportal, das es Organisationen besser ermöglicht, Adobe Experience Manager in der Cloud selbst zu verwalten. Es enthält eine moderne kontinuierliche Integration und eine kontinuierliche Bereitstellungs-Pipeline (CI/CD), die IT-Teams und Implementierungspartner dazu nutzen können, die Geschwindigkeit der Lieferung von Personalisierungen oder Aktualisierungen zu erhöhen, ohne bei der Leistung oder Sicherheit Abstriche zu machen. Cloud Manager ist nur für Kunden von Adobe Managed Service verfügbar.
 
 Weitere Informationen zu Cloud Manager und den zugehörigen Ressourcen finden Sie im [**Benutzerhandbuch zu Cloud Manager**](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de).
 
@@ -149,23 +149,23 @@ Das AEM-Softwarepaket steht in zwei Formen zur Verfügung:
 
 * **cq-quickstart-6.5.0.war:** Eine *WAR*-Datei für die Bereitstellung auf dem Anwendungsserver eines Drittanbieters.
 
-Im folgenden Abschnitt wird die **eigenständige Installation** beschrieben. Details über das Installieren von AEM auf einem Anwendungsserver finden Sie unter [Applikationsserver-Installation](/help/sites-deploying/application-server-install.md).
+Im folgenden Abschnitt wird die **eigenständige Installation** beschrieben. Weitere Informationen zum Installieren von AEM auf einem Anwendungsserver finden Sie unter [Anwendungsserverinstallation](/help/sites-deploying/application-server-install.md).
 
 ### Standardmäßige lokale Installation {#default-local-install}
 
-1. Erstellen Sie ein Installationsverzeichnis auf Ihrem lokalen Computer. Beispiel:
+1. Erstellen Sie auf Ihrem lokalen Computer einen Installationsordner. Beispiel:
 
    UNIX-Installationsspeicherort: **/opt/aem**
 
    Windows-Installationsspeicherort: **`C:\Program Files\aem`**
 
-   Gleichermaßen werden häufig Beispielinstanzen in einem Ordner installiert, der sich direkt auf dem Desktop befindet. Dieser Speicherort wird hier im Allgemeinen wie folgt bezeichnet::
+   Ebenso ist es üblich, Beispielinstanzen in einem Ordner direkt auf dem Desktop zu installieren. Auf jeden Fall werden wir diesen Ort im Allgemeinen wie folgt bezeichnen:
 
    `<aem-install>`
 
    *Beachten Sie, dass der Pfad des Dateiverzeichnisses nur aus US ASCII-Zeichen bestehen darf.*
 
-1. Platzieren Sie die **jar** und **Lizenz** Dateien in diesem Verzeichnis:
+1. Legen Sie die Dateien **jar** und **license** in dieses Verzeichnis:
 
    ```shell
    <aem-install>/
@@ -183,11 +183,11 @@ Im folgenden Abschnitt wird die **eigenständige Installation** beschrieben. Det
        java -Xmx1024M -jar cq-quickstart-6.5.0.jar
    ```
 
-AEM braucht einige Minuten, um die JAR-Datei zu entpacken, sich selbst zu installieren und zu starten. Die obige Prozedur führt zu Folgendem:
+AEM dauert ein paar Minuten, um die JAR-Datei zu entpacken, sich selbst zu installieren und zu starten. Das obige Verfahren führt zu:
 
 * einer **AEM author**-Instanz,
 * die auf **localhost**
-* auf Port **4502** ausgeführt wird
+* auf Port **4502**
 
 Navigieren Sie für den Zugriff auf den Instanzpunkt zu:
 
@@ -256,15 +256,15 @@ Wenn die Instanz über die Benutzeroberfläche installiert wurde, werden automat
 
 >[!NOTE]
 >
->Wenn Sie symlinks verwenden, lesen Sie auch [Probleme mit symlink](https://helpx.adobe.com/de/experience-manager/kb/changing-symlink.html).
+>Wenn Sie Symlinks verwenden, sehen Sie sich Folgendes an: [Probleme mit Symlink](https://helpx.adobe.com/de/experience-manager/kb/changing-symlink.html).
 
 ### Starten und Anhalten {#starting-and-stopping}
 
-Nachdem sich AEM selbst entpackt und erstmals gestartet hat, wird die Instanz durch einfaches Doppelklicken auf die JAR-Datei im Installationsverzeichnis gestartet. Es wird hingegen dadurch nicht erneut installiert.
+Nachdem AEM sich selbst entpackt und zum ersten Mal gestartet hat, startet ein Doppelklick auf die JAR-Datei im Installationsverzeichnis einfach die Instanz, sie wird nicht erneut installiert.
 
-Um die Instanz von der GUI anzuhalten, müssen Sie einfach im Desktopanwendungsfenster auf den **Ein-/Aus**-Schalter klicken.
+Um die Instanz über die Benutzeroberfläche zu stoppen, klicken Sie einfach auf das **ein/aus** Schalten Sie das Fenster der Desktop-Applikation ein.
 
-Sie können AEM auch an der Befehlszeile anhalten und starten. Angenommen, Sie haben die Instanz bereits erstmals installiert, dann befinden sich die **Befehlszeilenskripts** hier:
+Sie können AEM auch über die Befehlszeile anhalten und starten. Angenommen, Sie haben die Instanz bereits erstmals installiert, dann befinden sich die **Befehlszeilenskripts** hier:
 
 **`<aem-install>/crx-quickstart/bin/`**
 
@@ -285,16 +285,16 @@ AEM startet und leitet Ihren Webbrowser automatisch zur entsprechenden Seite um.
 
 ![Anmeldebildschirm](assets/screen_shot_2019-04-08at83533am.png)
 
-Nachdem Sie sich angemeldet haben, verfügen Sie über Zugriff auf AEM. Weitere Informationen in Abhängigkeit von Ihrer Rolle finden Sie unter den folgenden Punkten:
+Nach der Anmeldung haben Sie Zugriff auf AEM. Weitere Informationen zu Ihrer Rolle finden Sie in den folgenden Abschnitten:
 
 * [Authoring –](/help/sites-authoring/home.md)
 * [Verwalten](/help/sites-administering/home.md)
 * [Entwickeln](/help/sites-developing/home.md)
 * [Verwaltung](/help/managing/best-practices.md)
 
-## Erweiterte Bereitstellung {#advanced-deployment}
+## Erweiterte Implementierung {#advanced-deployment}
 
-Im obigen Abschnitt sollten Sie ein solides Verständnis der Grundlagen der AEM-Installation gewonnen haben. Das Installieren eines vollständigen Produktionssystems von AEM kann erheblich komplexer sein. Informationen über die vollständige Abdeckung der erweiterten Installation finden Sie auf den folgenden Unterseiten:
+Der obige Abschnitt sollte Ihnen ein gutes Verständnis der Grundlagen AEM Installation vermitteln. Die Installation eines vollständigen Produktionssystems von AEM kann jedoch erheblich komplexer sein. Die vollständige Abdeckung der erweiterten Installation finden Sie auf den folgenden Unterseiten:
 
 * [Technische Anforderungen](/help/sites-deploying/technical-requirements.md)
 * [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md)
