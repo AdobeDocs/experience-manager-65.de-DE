@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
 source-git-commit: 509ea0945e6c80e50f6f5bffd4c68282d586504a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '491'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
-# SPA-Modell-Routing{#spa-model-routing}
+# SPA-Modell-Routing {#spa-model-routing}
 
 Bei Single Page Applications in AEM ist die App für das Routing verantwortlich. In diesem Dokument werden der Routing-Mechanismus, der Vertrag und die verfügbaren Optionen beschrieben.
 
@@ -43,7 +43,7 @@ Eine ausführliche Beschreibung finden Sie im Abschnitt [PageModelManager](/help
 
 >[!NOTE]
 >
->Die [We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal) Beispiel-React-Projekt veranschaulicht den automatisierten Ansatz, während das Angular-Projekt den manuellen Ansatz veranschaulicht. Ein halbautomatisierter Ansatz wäre auch ein gültiger Anwendungsfall.
+>Das Beispielprojekt von React, [We.Retail Journal](https://github.com/adobe/aem-sample-we-retail-journal), veranschaulicht den automatisierten Ansatz, während das Angular-Projekt den manuellen Ansatz veranschaulicht. Ein halbautomatisierter Ansatz wäre auch ein gültiger Anwendungsfall.
 
 >[!CAUTION]
 >
