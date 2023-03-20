@@ -5,9 +5,9 @@ topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
 source-git-commit: 0e8ad326e883f73e795929ce7d5d36f1bcdc5347
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1966'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -32,21 +32,21 @@ Ziel der vorliegenden Einführung und exemplarischen Anleitung ist es, einem AEM
 
 ## Voraussetzungen {#requirements}
 
-Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der exemplarischen WKND-SPA-Projekt-App. Um dieser exemplarischen Vorgehensweise zu folgen, müssen Sie über Folgendes verfügen.
+Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der beispielhaften WKND SPA Project-App. Um dieser schrittweisen Anleitung zu folgen, müssen Sie über Folgendes verfügen.
 
 * [AEM Version 6.5.4 oder neuer](/help/release-notes/release-notes.md)
    * Sie müssen über Administratorrechte für das System verfügen.
-* [Die WKND SPA Project-App, die auf GitHub verfügbar ist](https://github.com/adobe/aem-guides-wknd-spa)
-   * Laden Sie die [neueste Version der React-App.](https://github.com/adobe/aem-guides-wknd-spa/releases) Sie wird ähnlich wie `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
-   * Laden Sie die [aktuelle Beispielbilder](https://github.com/adobe/aem-guides-wknd-spa/releases) für die App. Sie wird ähnlich wie `wknd-spa-sample-images-X.Y.Z.zip`.
-   * [Package Manager verwenden](/help/sites-administering/package-manager.md) um die Pakete so zu installieren, wie Sie es bei jedem anderen Paket in AEM tun würden.
-   * Für diese exemplarische Vorgehensweise muss die App nicht mit Maven installiert werden.
+* [Die Beispiel-Anwendung des WKND SPA-Projekts ist auf GitHub verfügbar](https://github.com/adobe/aem-guides-wknd-spa)
+   * Laden Sie die [neueste Version der React-Anwendung herunter.](https://github.com/adobe/aem-guides-wknd-spa/releases) Sie wird ähnlich benannt wie `wknd-spa-react.all.classic-X.Y.Z-SNAPSHOT.zip`.
+   * Laden Sie die [neuesten Beispielbilder](https://github.com/adobe/aem-guides-wknd-spa/releases) für die Anwendung herunter. Sie wird ähnlich benannt wie `wknd-spa-sample-images-X.Y.Z.zip`.
+   * [Verwenden Sie den Package Manager](/help/sites-administering/package-manager.md), um die Pakete zu installieren, wie Sie es mit jedem anderen Paket in AEM tun würden.
+   * Für die Zwecke dieser schrittweisen Anleitung muss die Anwendung nicht mit Maven installiert werden.
 
 >[!CAUTION]
 >
->Dieses Dokument verwendet die [WKND-SPA-Projekt-App](https://github.com/adobe/aem-guides-wknd-spa) nur zu Demonstrationszwecken. Sie sollte nicht für Projektaufgaben verwendet werden.
+>Dieses Dokument verwendet die [WKND Spa Project-Anwendung](https://github.com/adobe/aem-guides-wknd-spa) nur zu Demonstrationszwecken. Sie sollte nicht für Projektaufgaben verwendet werden.
 >
->Jedes AEM Projekt sollte [AEM Projektarchetyp,](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) unterstützt SPA Projekte mit React oder Angular und nutzt das SPA SDK.
+>Jedes AEM-Projekt sollte den [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) nutzen, der SPA-Projekte mit React oder Angular unterstützt und das SPA-SDK nutzt.
 
 ### Was ist eine SPA? {#what-is-a-spa}
 
@@ -109,7 +109,7 @@ Wenn eine SPA zur Nutzung des AEM-SPA-Editors konfiguriert ist, merkt der Inhalt
 
    ![Schritt 2](assets/spa-walkthrough-step-2.png)
 
-1. Bearbeiten Sie den Inhalt in AEM wie gewohnt und beachten Sie, dass die Änderungen gespeichert werden.
+1. Bearbeiten Sie den Inhalt in AEM wie gewohnt und beachten Sie, dass die Änderungen beibehalten werden.
 
    ![Schritt 3](assets/spa-walkthrough-step-3.png)
 
@@ -121,7 +121,7 @@ Wenn eine SPA zur Nutzung des AEM-SPA-Editors konfiguriert ist, merkt der Inhalt
 
    ![Schritt 4](assets/spa-walkthrough-step-4.png)
 
-1. Die Änderung wird gespeichert.
+1. Die Änderung wird beibehalten.
 
    ![Schritt 5](assets/spa-walkthrough-step-5.png)
 
@@ -139,7 +139,7 @@ Wenn Sie wissen, wie sich eine SPA beim Endbenutzer verhält, und dann die SPA-S
 
 ### Verwenden einer SPA-Anwendung {#using-an-spa-application}
 
-1. Laden Sie das WKND-SPA-Projekt-Programm entweder auf den Veröffentlichungs-Server oder mithilfe der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiteneditors.
+1. Laden Sie die WKND-SPA-Projekt-Anwendung entweder auf den Veröffentlichungs-Server oder mithilfe der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiteneditors.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -161,11 +161,11 @@ Wenn Sie wissen, wie sich eine SPA beim Endbenutzer verhält, und dann die SPA-S
 
 Wenn die Seite beim Navigieren durch die untergeordneten Seiten nicht neu geladen wird: Wie wird sie dann geladen?
 
-im nächsten Abschnitt, [Laden einer SPA,](#loading-an-spa-application) vertieft die Methoden zum Laden der SPA und zum synchronen und asynchronen Laden von Inhalten.
+Der nächste Abschnitt, [Laden einer SPA-Anwendung](#loading-an-spa-application), geht näher auf die Mechanismen des Ladens der SPA ein und beschreibt, wie Inhalte synchron und asynchron geladen werden können.
 
 ### Laden eines SPA-Programms {#loading-an-spa-application}
 
-1. Laden Sie, falls noch nicht geschehen, das WKND-SPA-Projekt-Programm entweder auf den Veröffentlichungs-Server oder unter Verwendung der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiten-Editors.
+1. Laden Sie, falls noch nicht geschehen, die WKND-SPA-Projekt-Anwendung entweder auf den Veröffentlichungs-Server oder unter Verwendung der Option **Als veröffentlicht anzeigen** im Menü **Seiteninformationen** des Seiten-Editors.
 
    `http://<host>:<port>/content/wknd-spa-react/us/en/home.html`
 
@@ -181,9 +181,9 @@ im nächsten Abschnitt, [Laden einer SPA,](#loading-an-spa-application) vertieft
 
    ![Schritt 4](assets/spa-walkthrough-step-1-4.png)
 
-1. Wechseln Sie zu **Netzwerk** und laden Sie die Seite neu.
+1. Wechseln Sie zur Registerkarte **Netzwerk** der Entwickler-Tools und laden Sie die Seite neu.
 
-   Beachten Sie, dass wenn Bildanfragen ignoriert werden, die primären Ressourcen, die für die Seite geladen werden, die Seite selbst, CSS, das React-JavaScript, seine Abhängigkeiten sowie JSON-Daten für die Seite sind.
+   Abgesehen von Bildanfragen sind die primären Ressourcen, die für die Seite geladen werden, die Seite selbst, CSS, das React-Javascript, seine Abhängigkeiten sowie die JSON-Daten für die Seite.
 
    ![Schritt 5](assets/spa-walkthrough-step-1-5.png)
 
@@ -203,11 +203,11 @@ im nächsten Abschnitt, [Laden einer SPA,](#loading-an-spa-application) vertieft
 
    Im Beispiel des WKND-SPA-Projekt-Programms werden die Seiten `home`, `page-1`, `page-2` und `page-3` synchron geladen, da Besucher in der Regel alle diese Seiten besuchen.
 
-   Dieses Verhalten ist nicht obligatorisch und kann umfassend definiert werden.
+   Dieses Verhalten ist nicht obligatorisch und kann vollständig definiert werden.
 
    ![Schritt 7](assets/spa-walkthrough-step-1-7.png)
 
-1. Um diesen Unterschied im Verhalten anzuzeigen, laden Sie die Seite neu und löschen Sie die Netzwerkaktivität der Entwickler-Tools. Navigieren Sie im Seitenmenü zu `page-1` und vergewissern Sie sich, dass die einzige Netzwerkaktivität eine Anfrage nach dem Bild von `page-1` ist. `page-1` selbst muss nicht geladen werden.
+1. Um diesen Unterschied im Verhalten zu sehen, laden Sie die Seite neu und deaktivieren Sie die Netzwerkaktivität der Entwickler-Tools. Navigieren Sie im Seitenmenü zu `page-1` und vergewissern Sie sich, dass die einzige Netzwerkaktivität eine Anfrage nach dem Bild von `page-1` ist. `page-1` selbst muss nicht geladen werden.
 
    ![Schritt 8](assets/spa-walkthrough-step-1-8.png)
 
