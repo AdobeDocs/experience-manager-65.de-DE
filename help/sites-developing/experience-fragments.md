@@ -12,13 +12,13 @@ discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 source-git-commit: 6e54073a0c1d67218283b096db3f2e5597f10376
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1784'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
-# Experience Fragments{#experience-fragments}
+# Experience Fragments {#experience-fragments}
 
 ## Grundlagen {#the-basics}
 
@@ -58,18 +58,18 @@ Der Selektor für die einfache Ausgabe verwendet einen Transformator im Gegensat
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
-### HTML-Ausgabegenerierung konfigurieren {#configuring-html-rendition-generation}
+### Konfigurieren der HTML-Ausgabegenerierung {#configuring-html-rendition-generation}
 
-Die HTML-Ausgabedarstellung wird mithilfe der Sling Rewriter Pipelines generiert. Die Pipeline wird definiert unter `/libs/experience-fragments/config/rewriter/experiencefragments`. HTML Transformer unterstützt die folgenden Optionen:
+Die HTML-Ausgabedarstellung wird mit den Sling Rewriter Pipelines erstellt. Die Pipeline ist unter `/libs/experience-fragments/config/rewriter/experiencefragments` definiert. Der HTML-Transformer unterstützt die folgenden Optionen:
 
 * `allowedCssClasses`
-   * Ein RegEx-Ausdruck, der mit den CSS-Klassen übereinstimmt, die in der endgültigen Ausgabe beibehalten werden sollen.
-   * Dies ist nützlich, wenn der Kunde einige bestimmte CSS-Klassen entfernen möchte
+   * Ein RegEx-Ausdruck, der den CSS-Klassen entspricht, die in der endgültigen Wiedergabe belassen werden sollen.
+   * Dies ist nützlich, wenn kundenseitig einige bestimmte CSS-Klassen entfernt werden sollen.
 * `allowedTags`
-   * Eine Liste der HTML-Tags, die in der endgültigen Ausgabe zulässig sein sollen.
-   * Standardmäßig sind die folgenden Tags zulässig (keine Konfiguration erforderlich): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link und script
+   * Eine Liste von HTML-Tags, die in der endgültigen Ausgabedarstellung erlaubt sein sollen.
+   * Standardmäßig sind die folgenden Tags erlaubt (keine Konfiguration erforderlich): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link und script
 
-Es wird empfohlen, den Rewriter mithilfe einer Überlagerung zu konfigurieren. Siehe [Überlagerungen in AEM as a Cloud Service](/help/sites-developing/overlays.md)
+Es wird empfohlen, den Rewriter mit einer Überlagerung zu konfigurieren. Siehe [Überlagerungen in AEM as a Cloud Service](/help/sites-developing/overlays.md)
 
 ## Social-Varianten {#social-variations}
 
