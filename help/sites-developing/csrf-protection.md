@@ -11,13 +11,13 @@ content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
 source-git-commit: f841e3886771fb00eee6e476d7111d4a335a9d51
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '260'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
-# Das CSRF Protection Framework{#the-csrf-protection-framework}
+# Das CSRF Protection Framework {#the-csrf-protection-framework}
 
 Neben dem Apache Sling Referrer Filter bietet Adobe zudem ein neues CSRF Protection Framework zum Schutz vor dieser Art von Angriffen.
 
@@ -35,7 +35,7 @@ Jede Komponente, die sich auf die Abhängigkeit `granite.jquery` stützt, profit
 
 ### Replizieren des Crypto-Schlüssels {#replicating-crypto-keys}
 
-Um die Token zu nutzen, müssen Sie die HMAC-Binärdatei für alle Instanzen in Ihrer Implementierung replizieren. Siehe [Replizieren des HMAC-Schlüssels](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) für weitere Details.
+Um die Token nutzen zu können, müssen Sie die HMAC-Binärdatei auf alle Instanzen in Ihrer Implementierung replizieren. Siehe [Replizieren des HMAC-Schlüssels](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) für weitere Details.
 
 >[!NOTE]
 >
