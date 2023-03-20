@@ -7,9 +7,9 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3877'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -282,7 +282,7 @@ Sie können nach der Konfiguration von Connected Assets eine Remote-DAM-Implemen
 
 +++**Kann man nach der Konfiguration von Connected Assets Dynamic Media Assets aus der [!DNL Sites]-Implementierung verwenden?**
 
-Nach der Konfiguration von Connected Assets sind [!DNL Dynamic Media]-Assets in einer [!DNL Sites]-Implementierung in einem schreibgeschützten Modus verfügbar. Folglich können Sie mit [!DNL Dynamic Media] keine Assets in der [!DNL Sites]-Implementierung bearbeiten.  Weitere Informationen finden Sie unter [Konfigurieren einer Verbindung zwischen Sites- und Dynamic Media-Implementierungen](#dynamic-media-assets).
+Nach der Konfiguration von Connected Assets sind [!DNL Dynamic Media]-Assets in einer [!DNL Sites]-Implementierung in einem schreibgeschützten Modus verfügbar. Folglich können Sie mit [!DNL Dynamic Media] keine Assets in der [!DNL Sites]-Implementierung bearbeiten. Weitere Informationen finden Sie unter [Konfigurieren einer Verbindung zwischen Sites- und Dynamic Media-Implementierungen](#dynamic-media-assets).
 
 +++
 
@@ -359,7 +359,7 @@ Führen Sie die folgenden Schritte aus, um häufig auftretende Fehler zu beheben
 
    ![Cookie-Fehler im Browser Chrome im Inkognito-Modus](assets/chrome-cookies-incognito-dialog.png)
 
-* Wenn Sie nicht auf die Remote-DAM-Bereitstellung von Adobe Managed Services über die Bereitstellung von Experience Manager Sites as a Cloud Service Sites zugreifen können, aktualisieren Sie die `aem_author.vhost` Datei verfügbar unter `"/etc/httpd/conf.d/available_vhosts`, damit Remote-DAM die folgenden Header in die Dispatcher-Konfiguration einbezieht:
+* Wenn Sie von der Experience Manager Sites as a Cloud Service Sites-Implementierung aus nicht auf die Remote-DAM-Bereitstellung von Adobe Managed Services zugreifen können, aktualisieren Sie die `aem_author.vhost`-Datei, verfügbar unter `"/etc/httpd/conf.d/available_vhosts`, für Remote-DAM, um die folgenden Kopfzeilen in die Dispatcher-Konfiguration aufzunehmen:
 
    ```xml
    Header Set Access-Control-Allow-Origin <Local Sites instance host>
