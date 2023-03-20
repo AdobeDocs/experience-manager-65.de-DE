@@ -3,9 +3,9 @@ title: Bearbeiten einer externen SPA in AEM
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine AEM-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren des Authoring beschrieben.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
 source-git-commit: 90f3fb05581820167ea0dcf50fb23048609af31d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2446'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -361,7 +361,7 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 ## Framework-Einschränkungen {#framework-limitations}
 
-Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest wie das [gefunden.](https://github.com/shellscape/webpack-manifest-plugin) Die RemotePage-Komponente wurde jedoch nur für die Verwendung mit dem React-Framework getestet (und Next.js über die Komponente &quot;remote-page-next&quot;) und unterstützt daher nicht das Remote-Laden von Anwendungen aus anderen Frameworks wie Angular.
+Die RemotePage-Komponente erwartet, dass die Implementierung ein Asset-Manifest wie das hier [gefundene bereitstellt.](https://github.com/shellscape/webpack-manifest-plugin) Die RemotePage-Komponente wurde jedoch nur für die Zusammenarbeit mit dem React-Framework (und Next.js über die Komponente „remote-page-next“) getestet und unterstützt daher nicht das Fernladen von Anwendungen aus anderen Frameworks, wie z. B. Angular.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
