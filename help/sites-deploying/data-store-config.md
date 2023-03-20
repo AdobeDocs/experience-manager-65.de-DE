@@ -7,13 +7,13 @@ docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
 source-git-commit: 461424de9158e14e251037004ea3590ed35bb4a0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3584'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
-# Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6{#configuring-node-stores-and-data-stores-in-aem}
+# Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6 {#configuring-node-stores-and-data-stores-in-aem}
 
 ## Einführung {#introduction}
 
@@ -117,7 +117,7 @@ Die verschiedenen Datenspeicher und Konfigurationen werden nachfolgend beschrieb
 
 >[!NOTE]
 >
->Um benutzerdefinierte Datenspeicher verwenden zu können, müssen Sie `customBlobStore` in `true` der entsprechenden Knotenspeicher-Konfigurationsdatei ([Knotenspeicher „Segment“](/help/sites-deploying/data-store-config.md#segment-node-store) oder [Knotenspeicher „Dokument“](/help/sites-deploying/data-store-config.md#document-node-store)) auf  einstellen.
+>Um benutzerdefinierte Datenspeicher verwenden zu können, müssen Sie `customBlobStore` in `true` der entsprechenden Knotenspeicher-Konfigurationsdatei ([Knotenspeicher „Segment“](/help/sites-deploying/data-store-config.md#segment-node-store) oder [Knotenspeicher „Dokument“](/help/sites-deploying/data-store-config.md#document-node-store)) auf einstellen.
 
 ### Dateidatenspeicher {#file-data-store}
 
@@ -443,7 +443,7 @@ Sie können die Konfigurationsdatei mit den folgenden Optionen verwenden:
 * accessKey=&quot;&quot;: Der Speicherkontoname. Weitere Informationen zu den von Microsoft Azure-Anmeldeinformationen für die Authentifizierung finden Sie in der [offiziellen Dokumentation](https://azure.microsoft.com/de-de/documentation/articles/storage-create-storage-account).
 
 * secretKey=&quot;&quot;: Der Speicherzugriffsschlüssel. Stellen Sie sicher, dass &#39;=&#39; wie folgt mit Escapezeichen versehen ist &#39;\=&#39;.
-* container=&quot;&quot;: Der Name des Blob-Speichercontainers von Microsoft Azure. Der Container stellt eine Gruppierung mehrerer Blobs dar. Zusätzliche Details finden Sie in der [offiziellen Dokumentation](https://msdn.microsoft.com/en-us/library/dd135715.aspx).
+* container=&quot;&quot;: Der Name des Blob-Speichercontainers von Microsoft Azure. Der Container stellt eine Gruppierung mehrerer Blobs dar. Zusätzliche Details finden Sie in der [offiziellen Dokumentation](https://msdn.microsoft.com/de-DE/library/dd135715.aspx).
 * maxConnections=&quot;&quot;: Die gleichzeitige Anzahl gleichzeitiger Anforderungen pro Vorgang. Der Standardwert lautet 1.
 * maxErrorRetry=&quot;&quot;: Die Anzahl der Wiederholungen pro Anfrage. Der Standardwert lautet 3.
 * socketTimeout=&quot;&quot;: Das Zeitüberschreitungsintervall, in Millisekunden, für die Anfrage. Der Standardwert lautet 5 Minuten.
