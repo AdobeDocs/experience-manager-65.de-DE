@@ -1,68 +1,68 @@
 ---
-title: Ablauf und Auswirkung von Zertifikaten für Reader Extensions
-description: Ablauf und Auswirkung von Zertifikaten für Reader Extensions
+title: Die Gültigkeit von Reader Extensions-Zertifikaten und ihre Auswirkungen
+description: Die Gültigkeit von Reader Extensions-Zertifikaten und ihre Auswirkungen
 exl-id: 4e14e0dc-f248-4f6e-a075-6012b6792d9d
 source-git-commit: 6e9a7f3307ed05f887d60c7c7310100cd4596b23
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1121'
-ht-degree: 4%
+ht-degree: 100%
 
 ---
 
 
-# Ablauf und Auswirkung von Zertifikaten für Reader Extensions {#expiration-of-reader-extensions-certificates-and-its-impact}
+# Die Gültigkeit von Reader Extensions-Zertifikaten und ihre Auswirkungen {#expiration-of-reader-extensions-certificates-and-its-impact}
 
-Adobe Experience Manager Forms (AEM Forms)-Kunden mit Adobe Managed Services- oder On-Premise-Enterprise-Basislizenzen sind zur Verwendung des Acrobat Reader DC Extensions-Dienstes berechtigt. Der Dienst ermöglicht es einem Unternehmen, interaktive PDF-Dokumente einfach freizugeben, indem die Funktionalität von Acrobat Reader um zusätzliche Verwendungsrechte erweitert wird. Der Dienst fügt einem PDF-Dokument Verwendungsrechte hinzu und aktiviert Funktionen, die beim Öffnen eines PDF-Dokuments mit Adobe Acrobat Reader nicht verfügbar sind, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzer benötigen keine zusätzliche Software oder Plug-Ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten. PDF-Dokumente, für die zusätzlich Nutzungsrechte gelten, werden als Dokumente mit aktivierten Nutzungsrechten bezeichnet. Ein Benutzer, der ein PDF-Dokument mit aktivierten Benutzerrechten in Acrobat Reader öffnet, kann die für dieses Dokument aktivierten Vorgänge ausführen.
+Kundinnen und Kunden von Adobe Experience Manager Forms (AEM Forms) mit einer Basislizenz für Adobe Managed Services oder On-Premise Enterprise sind berechtigt, den Service Acrobat Reader DC-Erweiterungen zu nutzen. Dieser Service ermöglicht einer Organisation das einfache Freigeben interaktiver PDF-Dokumente, indem er die Funktionalität von Acrobat Reader um zusätzliche Nutzungsrechte erweitert. Der Service fügt einem PDF-Dokument Nutzungsrechte hinzu und aktiviert Funktionen, die beim Öffnen eines PDF-Dokuments mit Adobe Acrobat Reader nicht zur Verfügung stehen, z. B. das Hinzufügen von Kommentaren zu einem Dokument, das Ausfüllen von Formularen und das Speichern des Dokuments. Externe Benutzer benötigen keine zusätzliche Software oder Plug-Ins für das Verwenden von Dokumenten mit aktivierten Benutzerrechten. PDF-Dokumente, für die zusätzlich Nutzungsrechte gelten, werden als Dokumente mit aktivierten Nutzungsrechten bezeichnet. Benutzende, die ein berechtigungsaktiviertes PDF-Dokument in Acrobat Reader öffnen, können Vorgänge durchführen, die für dieses Dokument aktiviert sind.
 
-Adobe nutzt eine PKI (Public Key Infrastructure), um digitale Zertifikate zur Verwendung bei der Lizenzierung und Aktivierung von Funktionen auszustellen. Die Adobe hat Bescheinigungen im Rahmen der Bescheinigungsbehörde ausgestellt **Adobe Root CA**, die am 7. Januar 2023 ablaufen soll. Die Gültigkeit des Zertifikats wirkt sich nicht auf PDF-Dokumente aus, die mit den von der **Adobe Root CA** basierte Zertifikate (alte Zertifikate). Alle vor dem 7. Januar 2023 mit den alten PDF-Zertifikaten erweiterten Reader, einschließlich der von Ihren Kunden heruntergeladenen Dokumente, funktionieren weiterhin mit allen Nutzungsrechten, die auf sie angewendet werden, und erfordern keine Updates.
+Adobe nutzt eine Public Key Infrastructure (PKI), um digitale Zertifikate für die Lizenzierung und die Aktivierung von Funktionen auszustellen. Adobe hat Zertifikate unter der Zertifizierungsstelle **Adobe Root CA** ausgestellt, die am 7. Januar 2023 auslaufen wird. Die Gültigkeit des Zertifikats wirkt sich nicht auf PDF-Dokumente aus, die mit Produktionszertifikaten erweitert wurden, welche von den **Adobe Root CA** basierten Zertifikaten ausgestellt wurden (alte Zertifikate). Alle PDF-Dokumente, die mithilfe der alten Zertifikate vor dem 7. Januar 2023 Reader Extended wurden, einschließlich der von Kundenseite aus heruntergeladenen, funktionieren weiterhin mit allen Nutzungsrechten, die für sie gelten, und benötigen keine Updates.
 
-eine neue Zertifizierungsstelle, **Adobe Root CA G2**, und Zertifikate, die auf der neuen Zertifizierungsstelle basieren, sind jetzt verfügbar. Beginnen Sie am oder vor dem 7. Januar 2023 mit der Verwendung der neuen Zertifikate, die auf **Adobe Root CA G2** - um Reader Ihre neuen PDF-Dokumente zu erweitern.  Sie können [neue Zertifikate von der Adobe Licensing-Website erhalten](https://licensing.adobe.com/) oder Adobe-Support.
+Eine neue Zertifizierungsstelle, **Adobe Root CA G2**, und Zertifikate, die auf der neuen Zertifizierungsstelle basieren, sind jetzt verfügbar. Beginnen Sie am oder vor dem 7. Januar 2023 mit der Verwendung der neuen Zertifikate, die auf **Adobe Root CA G2** basieren, um die Reader Extension auf Ihre neuen PDF-Dokumente anzuwenden.  Sie können neue Zertifikate [von der Adobe-Lizenzierungs-Website](https://licensing.adobe.com/) oder vom Adobe-Support erhalten.
 
 ## Häufig gestellte Fragen
 
-**F. Was ist der Unterschied zwischen einem Adobe-Stammzertifikat und einem Acrobat Reader Extensions-Zertifikat? Ist das Stammzertifikat für Adoben von einem Acrobat Reader Extensions-Zertifikat abhängig? Sind beide Zertifikate bis Januar 2023 gültig?**
+**F. Was ist der Unterschied zwischen einem Adobe-Stammzertifikat und einem Acrobat Reader Extensions-Zertifikat? Ist das Adobe-Stammzertifikat von einem Acrobat Reader Extensions-Zertifikat abhängig? Laufen diese beiden Zertifikate im Januar 2023 aus?**
 
-A. Adobe Root CA ist die Zertifizierungsstelle, von der aus ein Acrobat Reader Extensions-Zertifikat ausgestellt wird. Am 7. Januar 2023 laufen die &quot;Adobe Root CA&quot;und alle von ihr ausgestellten Zertifikate ab.
+A. Adobe Root CA ist die Zertifizierungsstelle, von der aus ein Acrobat Reader Extensions-Zertifikat ausgestellt wird. Am 7. Januar 2023 laufen „Adobe Root CA“ und alle von ihr ausgestellten Zertifikate aus
 
-**F. Es gab eine frühere Mitteilung der Adobe über den Ablauf von Zertifikaten und die Auswirkungen auf die Verwendung/das Öffnen von PDF-Dokumenten. Sollte diese Mitteilung ignoriert werden?**
+**F. Es gab eine frühere Mitteilung von Adobe über den Ablauf von Zertifikaten und dessen Auswirkungen auf die Verwendung/das Öffnen von PDF-Dokumenten. Sollte diese Mitteilung ignoriert werden?**
 
-A. Basierend auf der Neubewertung der Lage werden alle PDF-Unterlagen, die mit Produktionsbescheinigungen ausgeweitet wurden, die vor dem 7. Januar 2023 vom alten &quot;Stammverzeichnis der Adobe&quot; ausgestellt wurden, nach dem 7. Januar 2023 unverändert weitergeführt. Wenn Sie Ihre PDF-Dokumente bereits aktualisiert haben, ändert sich das Erlebnis nicht.
+A. Nach der Neubewertung der Situation können wir davon ausgehen, dass alle PDF-Dokumente, die mit Produktionszertifikaten erweitert wurden, die von der alten „Adobe Root CA“ vor dem 7. Januar 2023 ausgestellt wurden, auch nach dem 7. Januar 2023 unverändert funktionieren. Wenn Sie Ihre PDF-Dokumente bereits aktualisiert haben, bleibt das Erlebnis das gleiche.
 
-**Frage: An wen kann ich mich wenden, wenn ich weitere Fragen habe?**
+**F. An wen sollte ich mich wenden, wenn ich weitere Fragen habe?**
 
-A. Sie können [Adobe-Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home&amp;lang=de#support) oder ein Support-Ticket erstellen.
+A. Sie können sich an den [Adobe-Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=de#support) wenden oder ein Support-Ticket erstellen.
 
-**F. Was passiert, wenn ich mein Zertifikat nicht vor dem 7. Januar 2023 aktualisiert habe?**
+**F. Was passiert, wenn ich mein Zertifikat nicht vor dem 7. Januar 2023 aktualisiere?**
 
-A. Alle PDF-Dokumente, die unter Verwendung von Produktionszertifikaten, die vor dem 7. Januar 2023 von der alten &quot;Adobe Root CA&quot;ausgestellt wurden, erweitert wurden, funktionieren auch nach dem 7. Januar 2023 ohne Änderung. PDF, die mit Bewertungszertifikaten erweitert wurden, funktionieren nach dem Ablaufdatum nicht mehr.
+A. Alle PDF-Dokumente, die mit Produktionszertifikaten erweitert wurden, welche von der alten „Adobe Root CA“ vor dem 7. Januar 2023 ausgestellt wurden, funktionieren auch nach dem 7. Januar 2023 unverändert. Mit Bewertungszertifikaten erweiterte PDFs werden nach dem Ablaufdatum nicht mehr funktionieren.
 
 **F. Unterscheidet sich die Beschreibung neuer Zertifikate von alten Zertifikaten?**
 
-A. In der Beschreibung der neuen Acrobat Reader Extensions-Zertifikate werden die Erwähnungen **G3-P24** als Programmname. In der Beschreibung älterer Zertifikate (Zertifikate, die auf &quot;Adobe Root CA&quot;basieren), **P24** wird als Programmname angegeben.
+A. In der Beschreibung der neuen Acrobat Reader Extensions-Zertifikate wird **G3-P24** als Programmname genannt. In der Beschreibung älterer Zertifikate (Zertifikate, die auf „Adobe Root CA“ basieren) wird **P24** als Programmname genannt.
 
 **F. Wie erhalte ich die neuesten Zertifikate?**
 
-A. Alle berechtigten Forms-Kunden (mit aktiver Lizenz) können die neuen Zertifikate (Zertifikate, die auf &quot;Adobe Root CA G2&quot;basieren) von der [Adobe Licensing-Website](https://licensing.adobe.com/). Wenn Sie das Zertifikat auf der Adobe Licensing-Website nicht finden können, wenden Sie sich an [Adobe-Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=en#support) oder ein Support-Ticket erstellen.
+A. Alle berechtigten Forms-Kunden (mit aktiver Lizenz) können die neuen Zertifikate (Zertifikate, die auf „Adobe Root CA G2“ basieren) von der [Adobe-Lizenzierungs-Website](https://licensing.adobe.com/) herunterladen. Wenn Sie das Zertifikat auf der Adobe-Lizenzierungs-Website nicht finden können, wenden Sie sich an den [Adobe-Support](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;lang=de#support) oder erstellen Sie ein Support-Ticket.
 
-**F. Funktionieren meine PDF-Dokumente, die mit Zertifikaten aus der &quot;Adobe Root CA&quot; (der alten Zertifizierungsstelle) erweitert wurden, auch nach dem 7. Januar 2023?**
+**F. Funktionieren meine PDF-Dokumente, die mit Zertifikaten erweitert wurden, welche von „Adobe Root CA“ (der alten Zertifizierungsstelle) ausgestellt wurden, auch nach dem 7. Januar 2023?**
 
-A. Ja, alle PDF-Dokumente, die mit vor dem 7. Januar 2023 von der &quot;Adobe Root CA&quot; (der alten Zertifizierungsstelle) ausgestellten Produktionszertifikaten erweitert wurden, funktionieren auch nach dem 7. Januar 2023 ohne Änderung. PDF-Dokumente, die mit Bewertungszertifikaten erweitert wurden, funktionieren nach dem Ablaufdatum nicht mehr.
+A. Ja, alle PDF-Dokumente, die mit Produktionszertifikaten erweitert wurden, welche von der „Adobe Root CA“ (der alten Zertifizierungsstelle) vor dem 7. Januar 2023 ausgestellt wurden, funktionieren auch nach dem 7. Januar 2023 ohne Änderungen. PDF-Dokumente, die mit Bewertungszertifikaten erweitert wurden, funktionieren nach dem Ablaufdatum nicht mehr.
 
-**F. Welche Version von Adobe Acrobat Reader ist erforderlich, um weiterhin PDF-Dokumente zu verwenden, die mit Zertifikaten erweitert wurden, die von der &quot;Adobe Root CA&quot; (der alten Zertifizierungsstelle) ausgestellt wurden?**
+**F. Welche Version von Adobe Acrobat Reader ist erforderlich, um PDF-Dokumente, die mit Zertifikaten der „Adobe Root CA“ (der alten Zertifizierungsstelle) erweitert wurden, weiterhin verwenden zu können?**
 
-A. Adobe Acrobat Reader 2020 oder höher ist erforderlich, um PDF-Dokumente zu verwenden, die mit &quot;Adobe Root CA&quot; (der alten Zertifizierungsstelle) erweitert wurden. Dies ist die unterstützte Version von Acrobat Reader zum Zeitpunkt der Veröffentlichung dieses Dokuments. Wenn Sie eine [nicht unterstützte Version von Adobe Acrobat](https://helpx.adobe.com/de/support/programs/eol-matrix.html)empfiehlt Adobe, dass Sie [die neueste Version von Adobe Acrobat Reader herunterladen und installieren](https://get.adobe.com/de/reader/).
+A. Adobe Acrobat Reader 2020 oder höher ist erforderlich, um PDF-Dokumente zu verwenden, die mit „Adobe Root CA“ (der alten Zertifizierungsstelle) erweitert wurden. Dies ist die unterstützte Version von Acrobat Reader zum Zeitpunkt der Veröffentlichung dieses Dokuments. Wenn Sie eine [nicht unterstützte Version von Adobe Acrobat](https://helpx.adobe.com/de/support/programs/eol-matrix.html) verwenden, empfiehlt Adobe, dass Sie [die neueste Version von Adobe Acrobat Reader herunterladen und installieren](https://get.adobe.com/de/reader/).
 
-**F. Welche Version von Adobe Acrobat Reader ist erforderlich, um weiterhin PDF-Dokumente zu verwenden, die mit Zertifikaten erweitert wurden, die von der &quot;Adobe Root CA 2&quot; (der neuen Zertifizierungsstelle) ausgestellt wurden?**
+**F. Welche Version von Adobe Acrobat Reader ist erforderlich, um weiterhin PDF-Dokumente, die mit Zertifikaten von „Adobe Root CA 2“ (der neuen Zertifizierungsstelle) erweitert wurden, weiterhin verwenden zu können?**
 
-A. Adobe Acrobat Reader 2020 oder höher ist erforderlich, um PDF-Dokumente zu verwenden, die mit &quot;Adobe Root CA 2&quot; (der neuen Zertifizierungsstelle) erweitert wurden. Wenn Sie eine [nicht unterstützte Version von Adobe Acrobat Reader](https://helpx.adobe.com/de/support/programs/eol-matrix.html)empfiehlt Adobe, dass Sie [die neueste Version von Adobe Acrobat Reader herunterladen und installieren](https://get.adobe.com/de/reader/).
+A. Adobe Acrobat Reader 2020 oder höher ist erforderlich, um PDF-Dokumente zu verwenden, die mit „Adobe Root CA 2“ (der neuen Zertifizierungsstelle) erweitert wurden. Wenn Sie eine [nicht unterstützte Version von Adobe Acrobat Reader](https://helpx.adobe.com/de/support/programs/eol-matrix.html) verwenden, empfiehlt Adobe, dass Sie [die neueste Version von Adobe Acrobat Reader herunterladen und installieren](https://get.adobe.com/de/reader/).
 
-**F. Kann ich ein altes Acrobat Reader Extensions-Zertifikat löschen und ein neues auf einem Adobe Experience Manager Forms-Server hinzufügen, während ich weiterhin den vorhandenen Alias verwende?**
+**F. Kann ich ein altes Acrobat Reader Extensions-Zertifikat löschen und ein neues auf einem Adobe Experience Manager Forms Server hinzufügen, während ich den bestehenden Alias weiter verwende?**
 
-A. Ja, Sie können ein altes Acrobat Reader Extensions-Zertifikat löschen und einem Adobe Experience Manager Forms-Server ein neues Zertifikat mit dem vorhandenen Alias hinzufügen.
+A. Ja, Sie können ein altes Acrobat Reader Extensions-Zertifikat löschen und ein neues mit dem bestehenden Alias zu einem Adobe Experience Manager Forms-Server hinzufügen.
 
 **F. Kann ich sowohl neue als auch alte Acrobat Reader Extensions-Zertifikate auf einem Adobe Experience Manager Forms-Server speichern?**
 
-A. Ja, Sie können beide Zertifikate mit unterschiedlichen Alias auf einem Adobe Experience Manager Forms-Server beibehalten. Nach dem 7. Januar 2023 können Sie nur das neue Zertifikat verwenden, um ein PDF-Dokument für den Reader zu erweitern.
+A. Ja, Sie können beide Zertifikate mit unterschiedlichen Aliasnamen auf einem Adobe Experience Manager Forms-Server speichern. Nach dem 7. Januar 2023 können Sie nur noch das neue Zertifikat verwenden, um die Reader Extension auf ein PDF-Dokument anzuwenden.
 
 **F. Kann ich dasselbe Acrobat Reader Extensions-Zertifikat in alle Adobe Experience Manager Forms-Umgebungen importieren?**
 
@@ -70,11 +70,11 @@ A. Ja, dasselbe Acrobat Reader Extensions-Zertifikat kann in mehreren Umgebungen
 
 **F. Wie kann ich die auf ein PDF-Dokument angewendeten Verwendungsrechte überprüfen?**
 
-A. Sie können die [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=en#quick-start-soap-mode-retrieving-credential-information-using-the-java-api) API zum Abrufen der Informationen zu den auf ein PDF-Dokument angewendeten Nutzungsrechten.
+A. Sie können die [getDocumentUsageRights](https://experienceleague.adobe.com/docs/experience-manager-65/forms/developer-reference/programming-aem-forms-jee/java-api-quick-start-code-examples/acrobat-reader-dc-extensions-service.html?lang=de#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)-API zum Abrufen der Informationen zu den auf ein PDF-Dokument angewendeten Nutzungsrechten verwenden.
 
 **F. Wie ändere ich das Kennwort einer Acrobat Reader Extensions-Zertifikatdatei?**
 
-A. Um unter Microsoft Windows das Zertifikatkennwort zu ändern, installieren Sie das Zertifikat mithilfe der Microsoft Management Console (MMC) und wählen Sie **Markieren Sie den Schlüssel als &quot;Exporable&quot;.**. Exportieren Sie nach der Installation das Zertifikat mit einem privaten Schlüssel und verwenden Sie ein anderes Kennwort für die PFX-Datei.
+A. Um unter Microsoft Windows das Zertifikatkennwort zu ändern, installieren Sie das Zertifikat mithilfe der Microsoft Management Console (MMC) und wählen Sie **Schlüssel als exportierbar markieren** aus. Exportieren Sie nach der Installation das Zertifikat mit einem privaten Schlüssel und verwenden Sie ein anderes Kennwort für die PFX-Datei.
 
 
 <!-- 
