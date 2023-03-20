@@ -12,13 +12,13 @@ discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
 source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '546'
 ht-degree: 100%
 
 ---
 
-# Implementieren einer React-Komponente für SPAs{#implementing-a-react-component-for-spa}
+# Implementieren einer React-Komponente für SPAs {#implementing-a-react-component-for-spa}
 
 Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten in der Lage sein, Websites mithilfe von SPA-Frameworks zu erstellen, und Autoren möchten Inhalte innerhalb von AEM für eine Website, die mit SPA-Frameworks erstellt wurde, nahtlos bearbeiten.
 
