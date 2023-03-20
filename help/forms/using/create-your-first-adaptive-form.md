@@ -10,9 +10,9 @@ docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
 source-git-commit: 318347178fd626dea8e5a15caa7cdad8fe353eba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '965'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -41,7 +41,7 @@ Die Website wird mit Adobe Experience Manager (AEM) ausgeführt und verwendet AE
 
 ### Voraussetzung {#prerequisite}
 
-* Einrichten einer [AEM Autoreninstanz](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#author-and-publish-installs)
+* Einrichten einer [AEM-Autoreninstanz](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html?lang=de#author-and-publish-installs)
 * Installieren Sie das [AEM Forms-Add-On](../../forms/using/installing-configuring-aem-forms-osgi.md) auf der Author-Instanz.
 * Beziehen Sie den JDBC-Datenbanktreiber (JAR-Datei) vom Datenbankanbieter. Die Beispiele im Tutorial basieren auf einer [!DNL MySQL]-Datenbank und verwenden [!DNL Oracle's] [MySQL JDBC-Datenbanktreiber](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
