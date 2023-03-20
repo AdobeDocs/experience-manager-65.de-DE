@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 source-git-commit: eb60913e125d89c7494c21cfd6432b659695670a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '9982'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Die Größe, ab der ein Asset als großes Asset gilt, lässt sich konfigurieren.
 
 Die Option [!UICONTROL Pause] wird nicht angezeigt, wenn eine Datei, die größer ist als 1000 MB, mit einer Datei hochgeladen wird, die kleiner ist als 1000 MB. Wenn Sie jedoch den Upload der Datei abbrechen, die kleiner ist als 1000-MB, wird die Option **[!UICONTROL Pause]** angezeigt.
 
-Um die Größenbeschränkung zu ändern, konfigurieren Sie die `chunkUploadMinFileSize` -Eigenschaft der `fileupload` Knoten im CRX-Repository verfügbar unter `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload`.
+Um die Größenbegrenzung zu ändern, konfigurieren Sie die Eigenschaft `chunkUploadMinFileSize` des Knotens `fileupload` im CRX-Repository, das unter `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` verfügbar ist.
 
 Wenn Sie auf **[!UICONTROL Anhalten]** klicken, wird stattdessen die Option **[!UICONTROL Play]** angezeigt. Um den Upload fortzusetzen, klicken Sie auf **[!UICONTROL Play]**.
 
@@ -282,7 +282,7 @@ Verwenden Sie die oben beschriebenen Optionen für [!UICONTROL Beschneiden] und 
 
 #### Festlegen von PDF-Uploadoptionen {#setting-pdf-upload-options}
 
-Wenn Sie eine PDF-Datei hochladen, können Sie diese auf verschiedene Arten formatieren. Sie können ihre Seiten zuschneiden, Suchbegriffe extrahieren, eine ppi (Pixel pro Zoll)-Auflösung eingeben und einen Farbraum auswählen. PDF-Dateien enthalten oft einen Schnitt-, Zuschnitt-, Registrierungs- und andere Druckermarkierungen. Sie können diese Marken von den Seitenrändern aus zuschneiden, wenn Sie eine PDF-Datei hochladen.
+Wenn Sie eine PDF-Datei hochladen, können Sie diese auf verschiedene Arten formatieren. Sie können ihre Seiten zuschneiden, Suchbegriffe extrahieren, eine ppi (Pixel pro Zoll)-Auflösung eingeben und einen Farbraum auswählen. PDF-Dateien enthalten oft einen Zuschnittrand, Schnittmarken, Registrierungsmarken und andere Druckermarken. Sie können diese Marken von den Seitenrändern aus zuschneiden, wenn Sie eine PDF-Datei hochladen.
 
 Die maximale Seitenanzahl, damit eine PDF-Datei für die Extraktion berücksichtigt werden kann, beträgt 5.000 Seiten für neue Uploads. Dieser Grenzwert wird am 31. Dezember 2022 auf 100 Seiten geändert (für alle PDF-Dateien). Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md).
 
