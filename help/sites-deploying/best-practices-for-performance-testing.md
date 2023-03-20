@@ -1,7 +1,7 @@
 ---
 title: Best Practices für Leistungstests
 seo-title: Best Practices for Performance Testing
-description: In diesem Artikel werden Gesamtstrategien und Methoden für Leistungstests sowie verschiedene hierfür verfügbare Tools beschrieben.
+description: In diesem Artikel werden die allgemeinen Strategien und Methoden für Leistungstests sowie einige der verfügbaren Tools zur Unterstützung des Prozesses beschrieben.
 seo-description: This article outlines the overall strategies and methodologies used for performance testing as well as some of the tools that are available to assist in the process.
 uuid: ab8720d6-b864-4d00-9e07-2e1699cfe7db
 contentOwner: User
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: e8320b1dac681fd2c9e749344e8c126487d840ba
-workflow-type: ht
-source-wordcount: '1897'
-ht-degree: 100%
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+workflow-type: tm+mt
+source-wordcount: '1898'
+ht-degree: 26%
 
 ---
 
@@ -21,74 +21,74 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-Leistungstests stellen einen wichtigen Teil von AEM-Bereitstellungen dar. Je nach Kundenanforderungen können Leistungstests in Veröffentlichungsinstanzen und/oder Autoreninstanzen durchgeführt werden.
+Leistungstests sind ein wichtiger Bestandteil jeder AEM Implementierung. Je nach Kundenanforderungen können Leistungstests für Veröffentlichungsinstanzen, Autoreninstanzen oder beides durchgeführt werden.
 
-In diesem Dokument werden Gesamtstrategien und Methoden zum Durchführen von Leistungstests sowie verschiedene Tools beschrieben, die von Adobe zur Unterstützung dieses Vorgangs bereitgestellt werden. Schließlich analysieren wir einige der Tools, die in AEM 6 zur Leistungsoptimierung verfügbar sind, und zwar sowohl im Hinblick auf eine Codeanalyse als auch in Bezug auf die Systemkonfiguration.
+In dieser Dokumentation werden die allgemeinen Strategien und Methoden für die Durchführung von Leistungstests sowie einige der Tools beschrieben, die von Adobe zur Prozessunterstützung zur Verfügung gestellt werden. Schließlich werden wir einige der in AEM 6 verfügbaren Tools analysieren, um die Leistungsoptimierung zu unterstützen, sowohl aus der Sicht der Code-Analyse als auch der Systemkonfiguration.
 
 ### Simulieren der Realität {#simulating-reality}
 
-Am wichtigsten bei Leistungstests: Sie müssen darauf achten, Ihre Produktionsumgebung so genau wie möglich nachzuahmen. Auch wenn dies häufig schwierig ist, ist dies unumgänglich, um die Genauigkeit dieser Tests sicherzustellen. Beim Konzipieren von Leistungstests müssen die folgenden Punkte berücksichtig werden:
+Wichtig bei der Durchführung von Leistungstests ist, sicherzustellen, dass Sie eine Produktionsumgebung so gut wie möglich nachahmen. Dies kann zwar oft schwierig sein, es ist jedoch unerlässlich, die Genauigkeit dieser Tests sicherzustellen. Bei der Erstellung von Leistungstests ist Folgendes zu berücksichtigen:
 
-* Produktionsähnlicher Inhalt
+* Produktionsähnliche Inhalte
 
-Viele Leistungsmessungen in AEM, etwa der Antwortzeiten von Abfragen, können durch den Umfang des auf dem System vorhandenen Inhalts beeinflusst werden. Es ist wichtig sicherzustellen, dass die Testumgebung über eine möglichst genaue Kopie der Produktionsdaten verfügt.
+Viele Leistungsmessungen in AEM, wie z. B. die Antwortzeit der Abfrage, können durch die Größe des Inhalts im System beeinflusst werden. Es ist wichtig sicherzustellen, dass die Testumgebung so nah wie möglich an einer Kopie der Produktionsdaten liegt.
 
 * Produktionscode
 
-In der Produktions- und Testumgebung sollten die gleichen AEM-Versionen und -Hotfixes bereitgestellt sein. Die Tests müssen zudem mit der Codeversion der Produktionsumgebung erfolgen.
+Die AEM und Hotfixes, die in der Produktion bereitgestellt werden, sollten in der Testumgebung gleich sein. Es ist auch wichtig, die Version des Codes zu testen, der in der Produktion bereitgestellt wird.
 
 * Produktionsähnliche Hardware- und Netzwerkkonfiguration
 
-Die Tests sind ohne eine Umgebung, die möglichst genau den Produktionsbedingungen entspricht, bedeutungslos. Im Idealfall sollten Hardwarespezifikationen, Netzwerkschnittstellen, Lastenausgleichsmodule und CDN in der Produktions- und Testumgebung identisch sein.
+Die Tests sind ohne eine Umgebung ohne Bedeutung, die der Produktionsumgebung so ähnlich wie möglich ist. Idealerweise sollten die Hardwarespezifikationen, Netzwerkschnittstellen, Lastverteiler und CDN mit der Produktion in der Testumgebung identisch sein.
 
-* Produktionsauslastung
+* Produktionslast
 
-Viele Leistungsprobleme treten erst dann zum Vorschein, wenn das System eine hohe Auslastung aufweist. Gute Leistungstests sollten die Auslastung der Produktionssysteme zu Stoßzeiten simulieren.
+Viele Leistungsprobleme treten erst auf, wenn das System stark ausgelastet ist. Gute Leistungstests sollten die Last simulieren, unter der die Produktionssysteme zu ihrem Spitzenwert liegen.
 
 ### Festlegen von Zielen {#setting-goals}
 
-Vor Leistungstests müssen nicht funktionsbezogene Anforderungen zur Angabe der Last und Antwortzeiten festgelegt werden. Achten Sie beim Migrieren von einem vorhandenen System darauf, dass Antwortzeiten mit denen Ihrer aktuellen Produktionswerte vergleichbar sind. Was die Auslastung angeht, sollte am besten die Spitzenlast verdoppelt werden. Auf diese Weise wird sichergestellt, dass die Website auch bei Wachstum weiterhin leistungsfähig ist.
+Bevor Sie mit Leistungstests beginnen, müssen Sie nicht funktionale Anforderungen festlegen, um die Lade- und Antwortzeiten anzugeben. Wenn Sie von einem vorhandenen System migrieren, stellen Sie sicher, dass die Antwortzeit Ihren aktuellen Produktionswerten ähnlich ist. Für die Last ist es am besten, die aktuelle Spitzenlast zu verdoppeln. Dadurch wird sichergestellt, dass die Website auch weiterhin gut funktionieren kann, wenn sie wächst.
 
 ### Tools {#tools}
 
-Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stellen Sie beim Ausführen eines Lastgenerators sicher, dass die Computer, die die Tests durchführen, über ausreichend Netzwerkbrandbreite verfügen. Andernfalls wird, sobald der Testrechner an seine Verbindungsgrenzen stößt, keine zusätzliche Last in der getesteten Umgebung erzeugt.
+Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stellen Sie beim Ausführen eines Lastgenerators sicher, dass die Computer, die die Tests durchführen, über ausreichend Netzwerkbrandbreite verfügen. Andernfalls wird keine zusätzliche Belastung in der getesteten Umgebung erzeugt, sobald die Testmaschine die Grenzen ihrer Verbindung erreicht.
 
-#### Testtools {#testing-tools}
+#### Testwerkzeuge {#testing-tools}
 
-* Mit dem **Tough Day**-Tool von Adobe können Lasten auf AEM-Instanzen erzeugt und Leistungsdaten erfasst werden. Das Entwicklungs-Team von Adobe AEM setzt dieses Tool für Auslastungstests beim eigentlichen AEM-Produkt ein. Die in Tough Day ausgeführten Skripts werden über Eigenschaftendateien und JMX-XML-Dateien konfiguriert. Weitere Informationen finden Sie in der [Tough Day-Dokumentation](/help/sites-developing/tough-day.md).
+* Adobe **Tough Day** kann verwendet werden, um die Auslastung AEM Instanzen zu generieren und Leistungsdaten zu erfassen. Das AEM-Technikerteam der Adobe verwendet das Tool tatsächlich, um das AEM selbst zu laden. Die in Tough Day ausgeführten Skripte werden über Eigenschaftendateien und JMX-XML-Dateien konfiguriert. Weitere Informationen finden Sie unter [Tough Day-Dokumentation](/help/sites-developing/tough-day.md).
 
-* AEM stellt sofort einsatzfähige Tools bereit, um problematische Abfragen, Anforderungen und Fehlermeldungen schnell erkennen zu können. Weitere Informationen finden Sie im Abschnitt [Diagnose-Tools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) des Dokuments zu Vorgangs-Dashboards.
-* Apache bietet ein Produkt namens **JMeter** an, das Leistungs- und Auslastungstests sowie eine Überprüfung des Funktionsverhaltens ermöglicht. Es handelt sich um kostenlose Open-Source-Software, die im Vergleich zu Enterprise-Produkten zwar einen geringeren Funktionsumfang hat, dafür aber eine steilere Lernkurve. JMeter können Sie auf der Apache-Website unter [https://jmeter.apache.org/](https://jmeter.apache.org/) herunterladen.
+* AEM bietet vorkonfigurierte Tools, um problematische Abfragen, Anfragen und Fehlermeldungen schnell anzuzeigen. Weitere Informationen finden Sie unter [Diagnosetools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) Abschnitt der Dokumentation zum Vorgangs-Dashboard.
+* Apache bietet ein Produkt mit dem Namen **JMeter** die für Leistungs- und Belastungstests sowie für funktionelles Verhalten verwendet werden können. Es handelt sich um Open-Source-Software und ist kostenlos zu verwenden, hat aber einen kleineren Funktionsumfang als Unternehmensprodukte und eine stärkere Lernkurve. JMeter finden Sie auf der Apache-Website unter [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
 * **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview).
 
-* Cloudbasierte Tools für Auslastungstests wie [Neustar](https://www.neustar.biz/services/web-performance/load-testing) können ebenfalls verwendet werden.
-* Zum Testen von mobilen Websites oder responsiven Webdesigns sind andere Tools erforderlich. Diese drosseln die Netzwerkbrandbreite, um langsamere mobile Verbindungen wie 3G oder EDGE zu simulieren. Zu den gängigsten Tools gehören:
+* Cloud-basierte Tools zum Testen von Lasten, wie [Neustar](https://www.neustar.biz/services/web-performance/load-testing) kann auch verwendet werden.
+* Beim Testen mobiler oder responsiver Websites muss ein separater Satz von Tools verwendet werden. Sie ermöglichen die Einschränkung der Netzwerkbandbreite und simulieren langsamere mobile Verbindungen wie 3G oder EDGE. Zu den gängigsten Tools gehören:
 
    * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** mit einer benutzerfreundlichen Oberfläche und einer relativ niedrigen Ebene im Netzwerk-Stack. Es sind OS X- und iOS-Versionen verfügbar.
    * [**Charles**](https://www.charlesproxy.com/), eine Web-Debugging-Proxy-Anwendung, die u. a. eine Netzwerkdrosselung ermöglicht. Es sind Windows-, OS X- und Linux-Versionen verfügbar.
 
-#### Optimierungstools {#optimization-tools}
+#### Optimierungswerkzeuge {#optimization-tools}
 
 **Überwachung**
 
-Das Dokument [Überwachen der Leistung](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) liefert zahlreiche Informationen zu Tools und Methoden für die Diagnose von Problemen und Erkennung von Optimierungsbereichen.
+Die [Überwachung der Leistung](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) -Dokumentation ist eine gute Ressource für Tools und Methoden, die zur Diagnose von Problemen und zur Bestimmung von Optimierungsbereichen verwendet werden können.
 
 **Entwicklermodus in der Touch-Benutzeroberfläche**
 
-Eine der neuen Funktionen in der Touch-Benutzeroberfläche von AEM 6 ist der Entwicklermodus. So wie Autoren zwischen Bearbeitungs- und Vorschaumodi wechseln können, können Entwickler den Entwicklermodus in der Autor-Benutzeroberfläche aufrufen, um die Renderzeit für jede Komponente auf der Seite sowie Stapelnachverfolgungen von Fehlern anzuzeigen. Weitere Informationen zum Entwicklermodus finden Sie in dieser [CQ Gems-Präsentation](https://docs.adobe.com/content/ddc/de/gems/aem-6-0-developer-mode.html).
+Eine der neuen Funktionen der Touch-Benutzeroberfläche von AEM 6 ist der Entwicklermodus. So wie Autoren zwischen Bearbeitungs- und Vorschaumodi wechseln können, können Entwickler in der Autoren-Benutzeroberfläche in den Entwicklermodus wechseln, um die Renderzeit für jede Komponente auf der Seite anzuzeigen und Stacktraces von Fehlern zu sehen. Weitere Informationen zum Entwicklermodus finden Sie in diesem [CQ Gems-Präsentation](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
 
-**Lesen von Anforderungsprotokollen mit rlog.jar**
+**Lesen der Anforderungsprotokolle mithilfe von rlog.jar**
 
-Für eine eingehendere Analyse der Anforderungsprotokolle auf einem AEM-System können die von AEM erzeugten `request.log`-Dateien mit `rlog.jar` durchsucht und sortiert werden. Diese JAR-Datei ist Teil der AEM-Installation im Ordner `/crx-quickstart/opt/helpers`. Weitere Informationen zum rlog-Tool und Anforderungsprotokoll im Allgemeinen finden Sie im Dokument [Überwachen und Verwalten](/help/sites-deploying/monitoring-and-maintaining.md).
+Für eine eingehendere Analyse der Anforderungsprotokolle auf einem AEM-System können die von AEM erzeugten `request.log`-Dateien mit `rlog.jar` durchsucht und sortiert werden. Diese JAR-Datei ist Teil der AEM-Installation im Ordner `/crx-quickstart/opt/helpers`. Weitere Informationen zum rlog-Tool und zum Anforderungsprotokoll im Allgemeinen finden Sie in der [Überwachung und Wartung](/help/sites-deploying/monitoring-and-maintaining.md) Dokumentation.
 
-**Tool „Abfrage erläutern“**
+**Tool &quot;Abfrage erläutern&quot;**
 
-Mit dem [Tool „Abfrage erläutern“](/help/sites-administering/operations-dashboard.md#explain-query) in ACS AEM-Tools können Sie die beim Ausführen einer Abfrage verwendeten Indizes anzeigen. Dies kann sehr nützlich bei der Optimierung langsamer Abfragen sein.
+Die [Tool &quot;Abfrage erläutern&quot;](/help/sites-administering/operations-dashboard.md#explain-query) in ACS AEM Tools können verwendet werden, um die Indizes anzuzeigen, die beim Ausführen einer Abfrage verwendet werden. Dies kann sehr nützlich sein, wenn langsame Abfragen optimiert werden.
 
 **PageSpeed-Tools**
 
-Die PageSpeed-Tools von Google bieten Website-Analysen zur Einhaltung der Best Practices in Bezug auf die seitenbezogene Leistung sowie ein Plug-in, das zur weiteren Optimierung neben dem Dispatcher in einer Apache-Instanz installiert werden kann. Weitere Informationen finden Sie auf der [PageSpeed-Tools-Website](https://developers.google.com/speed/pagespeed/).
+Die PageSpeed-Tools von Google bieten eine Site-Analyse zur Einhaltung der Best Practices für die Seitenleistung sowie ein Plug-in, das zusammen mit dem Dispatcher auf einer Apache-Instanz installiert werden kann, um zusätzliche Optimierungen zu ermöglichen. Weitere Informationen finden Sie auf der [PageSpeed-Tools-Website](https://developers.google.com/speed/pagespeed/).
 
 ## Autorenumgebung {#author-environment}
 
@@ -96,25 +96,25 @@ Die PageSpeed-Tools von Google bieten Website-Analysen zur Einhaltung der Best P
 
 Um Leistungstests für die Autorenumgebung durchzuführen, müssen Sie das Erlebnis der Produktionsautoren simulieren. Die Autoreninstallationen müssen also alle Komponenten, OSGi-Bundles, UI-Anpassungen, benutzerdefinierten Indizes und sonstigen Ergänzungen für die produktionsbezogenen Autoreninstanzen umfassen.
 
-Es gibt eine Vielzahl von Automatisierungsframeworks, die auf Leistungs- und Auslastungstests ausgelegt sind. Benutzerdefinierte Skripts können in diesen Tools aufgezeichnet und dann wiedergegeben werden, um eine Höchstanzahl von Autoren zu simulieren, die gleichzeitig ähnlichen Inhalt erstellen und Aktivierungen durchführen. Sie sollten auf das Tough Day-Tool zum Simulieren von Aktivitäten wie Hochladen Tausender von Assets oder Aktivieren einer großen Anzahl von Seiten zurückgreifen.
+Es gibt viele Automatisierungs-Frameworks, die für Leistungs- und Belastungstests entwickelt wurden. Benutzerdefinierte Skripte können in diesen Tools aufgezeichnet und dann wiedergegeben werden, um eine Spitzenanzahl von Autoren zu simulieren, die gleichzeitig ähnliche Inhaltserstellung und Aktivierungsaktivitäten durchführen. Es wird empfohlen, das Tough Day-Tool zu verwenden, um Aktivitäten wie das Hochladen Tausender Assets oder das Aktivieren einer großen Anzahl von Seiten zu simulieren.
 
-In Umgebungen, in denen sehr viele Assets geladen bzw. viele Seiten erstellt werden müssen, sind Tools wie Tough Day unverzichtbar, um unter Spitzenlast einen effizienten Betrieb der Umgebung sicherzustellen. [WebDAV](/help/sites-administering/webdav-access.md) ist ein Tool, für das kein Scripting erforderlich ist und mit dem große Mengen an Assets geladen werden können.
+Für Umgebungen mit hohen Anforderungen an Asset-Ladevorgänge oder Seitenbearbeitung ist es unerlässlich, Tools wie Tough Day zu verwenden, um sicherzustellen, dass die Umgebung unter Spitzenlast effizient arbeitet. [WebDAV](/help/sites-administering/webdav-access.md) ist ein Tool, für das kein Scripting erforderlich ist und mit dem große Mengen an Assets geladen werden können.
 
 #### MongoDB-spezifische Schritte {#mongodb-specific-steps}
 
-Auf Systemen mit MongoDB-Backends stellt AEM mehrere [JMX](/help/sites-administering/jmx-console.md)-MBeans zur Verfügung, die bei Auslastungs- oder Leistungstests überwacht werden müssen:
+Auf Systemen mit MongoDB-Backends stellt AEM mehrere [JMX](/help/sites-administering/jmx-console.md) MBeans, die bei Belastungs- oder Leistungstests überwacht werden müssen:
 
-* MBean **Consolidated Cache Statistics**. Sie können wie folgt direkt darauf zugreifen:
+* Die **Konsolidierte Cache-Statistiken** MBean. Sie können wie folgt direkt darauf zugreifen:
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-Für den Cache mit der Bezeichnung **Document-Diff** sollte die Trefferrate bei einem Wert von über `.90` liegen. Wenn die Trefferrate unter 90 % fällt, müssen Sie wahrscheinlich die `DocumentNodeStoreService`-Konfiguration ändern. Der Produktsupport von Adobe kann Ihnen optimale Einstellungen für Ihre Umgebung empfehlen.
+Für den Cache mit der Bezeichnung **Document-Diff** sollte die Trefferrate bei einem Wert von über `.90` liegen. Wenn die Trefferrate unter 90 % fällt, müssen Sie wahrscheinlich die `DocumentNodeStoreService`-Konfiguration ändern. Der Produktsupport von Adobe kann optimale Einstellungen für Ihre Umgebung empfehlen.
 
-* MBean **Oak Repository Statistics**. Sie können wie folgt direkt darauf zugreifen:
+* Die **Oak-Repository-Statistiken** Mbean. Sie können wie folgt direkt darauf zugreifen:
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-Im Abschnitt **ObservationQueueMaxLength** wird die Anzahl der Ereignisse in der Oak-Überwachungswarteschlange während der letzten Stunden, Minuten, Sekunden und Wochen angezeigt. Suchen Sie im Abschnitt „per hour“ nach der größten Anzahl von Ereignissen. Diese Zahl muss mit der Einstellung `oak.observation.queue-length` verglichen werden. Wenn die höchste für die Beobachtungswarteschlange angezeigte Anzahl die Einstellung `queue-length` übersteigt:
+Die **ObservationQueueMaxLength** zeigt die Anzahl der Ereignisse in der Beobachtungswarteschlange von Oak in den letzten Stunden, Minuten, Sekunden und Wochen an. Die größte Anzahl von Ereignissen finden Sie im Abschnitt &quot;pro Stunde&quot;. Diese Zahl muss mit der Einstellung `oak.observation.queue-length` verglichen werden. Wenn die höchste für die Beobachtungswarteschlange angezeigte Anzahl die Einstellung `queue-length` übersteigt:
 
 1. Erstellen Sie eine Datei mit dem Namen `com.adobe.granite.repository.impl.SlingRepositoryManager.cfg`, die den Parameter `oak.observation.queue‐length=50000` enthält.
 1. Platzieren Sie sie im Ordner „/crx-­‐quickstart/install“.
@@ -128,31 +128,31 @@ Die Standardeinstellung ist 10.000, aber für die meisten Bereitstellungen ist n
 
 ### Durchführen von Tests {#performing-tests-1}
 
-Der wichtigste Teil einer Bereitstellung, der Auslastungstests unterzogen werden muss, ist die Veröffentlichungs- oder Dispatcherumgebung für Endbenutzer.
+Der wichtigste Teil einer Bereitstellung, der Belastungstests unterzogen werden muss, ist der Endbenutzer, der sich der Veröffentlichungs- oder Dispatcher-Umgebung gegenübersieht.
 
-Die Leistung der Website kann mithilfe automatisierter Testtools von Drittanbietern überprüft werden. Über diese Tools können Sie die Schritte aufzeichnen, die Benutzer auf der Website durchführen, und viele dieser Sitzungen gleichzeitig ausführen, um die für eine Produktionswebsite typische Last zu simulieren.
+Automatisierte Testwerkzeuge von Drittanbietern können zum Testen der Leistung der Website verwendet werden. Über diese Tools können Sie die Schritte aufzeichnen, die Benutzer auf der Website durchführen, und viele dieser Sitzungen gleichzeitig ausführen, um die für eine Produktionswebsite typische Last zu simulieren.
 
-Die meisten Produktionswebsites besitzen Optimierungsfunktionen wie Dispatcher-Caching und ein Netzwerk für die Inhaltsbereitstellung. Sie müssen beim Testen sicherstellen, dass diese Optimierungen auch für die Testumgebung verfügbar sind. Abgesehen von der Überwachung der Antwortzeiten für Endbenutzer müssen Sie auch die Systemmetriken auf den Veröffentlichungsservern und Dispatchern im Auge behalten, um Einschränkungen des Systems aufgrund der Hardwareressourcen auszuschließen.
+Die meisten Produktions-Websites verfügen über Optimierungen wie Dispatcher-Caching und ein Inhaltsbereitstellungsnetzwerk. Beim Testen müssen Sie sicherstellen, dass diese Optimierungen auch für die Testumgebung verfügbar sind. Zusätzlich zur Überwachung der Antwortzeiten für die Endbenutzer müssen Sie auch die Systemmetriken auf den Veröffentlichungs-Servern und Dispatchern überwachen, um sicherzustellen, dass das System nicht durch Hardware-Ressourcen eingeschränkt wird.
 
-Auf einem System ohne hohen Personalisierungsbedarf sollte der Dispatcher die meisten Anforderungen im Cache speichern. Daher sollte die Belastungskurve für die Veröffentlichungsinstanz relativ flach verlaufen. Wenn ein hohes Maß an Personalisierung erforderlich ist, werden Technologien wie iFrame oder AJAX-Anforderungen für den personalisierten Inhalt empfohlen, um ein Maximum an Dispatcher-Caching zuzulassen.
+Auf einem System, das keine umfassende Personalisierung erfordert, sollte der Dispatcher die meisten Anforderungen zwischenspeichern. Daher sollte die Belastung der Veröffentlichungsinstanz relativ flach bleiben. Wenn ein hohes Maß an Personalisierung erforderlich ist, wird empfohlen, Technologien wie iFrames oder AJAX Anforderungen für den personalisierten Inhalt zu verwenden, um so viel Dispatcher-Caching wie möglich zu ermöglichen.
 
-Für grundlegende Tests können mit Apache Bench die Antwortzeit der Webserver gemessen und Lasten für Messungen, etwa von Speicherverlusten, generiert werden. Weitere Informationen liefert Ihnen das Beispiel in der [Dokumentation zur Überwachung](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
+Für grundlegende Tests kann Apache Bench verwendet werden, um die Antwortzeiten von Webservern zu messen und die Last für die Messung von Dingen wie Speicherlecks zu erzeugen. Weitere Informationen finden Sie im Beispiel im [Überwachungsdokumentation](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
 
-## Fehlerbehebung von Leistungsproblemen {#troubleshooting-performance-issues}
+## Beheben von Leistungsproblemen {#troubleshooting-performance-issues}
 
-Im Anschluss an die Leistungstests der Autoreninstanz müssen alle festgestellten Probleme untersucht, diagnostiziert und behoben werden. Zur Analyse und Behandlung dieser Probleme können Sie verschiedene Tools und Verfahren anwenden:
+Nach dem Ausführen von Leistungstests auf der Autoreninstanz müssen alle Probleme untersucht, diagnostiziert und behoben werden. Sie können bei der Durchführung von Analysen und der Problembehebung verschiedene Tools und Techniken verwenden:
 
-* Sie können das [Protokoll für die Anforderungsleistung](/help/sites-administering/operations-dashboard.md#request-performance) im Vorgangs-Dashboard einsehen. Mit diesem Tool können Sie langsame Seitenanforderungen identifizieren.
+* Sie können die [Protokoll zur Anforderungsleistung](/help/sites-administering/operations-dashboard.md#request-performance) im Vorgangs-Dashboard. Mit diesem Tool können Sie langsame Seitenanforderungen identifizieren
 * Analysieren Sie langsame Abfragen mit dem [Tool „Abfrageleistung“](/help/sites-administering/operations-dashboard.md#query-performance).
 
-* Überprüfen Sie das Fehlerprotokoll auf Fehler oder Warnungen. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md)
-* Überwachen Sie die Hardwareressourcen des Systems wie den Arbeitsspeicher und die CPU oder I/O-Vorgänge von Festplatte bzw. Netzwerk. Diese Ressourcen sind häufig die Ursache für Leistungsengpässe.
-* Optimieren Sie die Architektur der Seiten und ihre Adressierung, um die Nutzung von URL-Parametern zu minimieren, damit ein Höchstmaß an Caching ermöglicht wird.
-* Folgen Sie der Dokumentation zur [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) und den [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html).
+* Achten Sie auf die Fehlermeldung auf Fehler oder Warnungen. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md)
+* Überwachen Sie die Hardware-Ressourcen des Systems, z. B. Speicher- und CPU-Auslastung, Datenträger-E/A oder Netzwerk-I/O. Diese Ressourcen sind häufig die Ursachen für Leistungsengpässe
+* Optimieren Sie die Architektur der Seiten und deren Adressierung, um die Verwendung von URL-Parametern zu minimieren und so viel Zwischenspeicherung wie möglich zu ermöglichen.
+* Befolgen Sie die [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) und [Tipps zur Leistungsoptimierung](https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html) Dokumentation
 
-* Wenn es Probleme beim Bearbeiten bestimmter Seiten oder Komponenten in Autoreninstanzen gibt, sehen Sie sich die fragliche Seite mithilfe des Entwicklermodus der Touch-optimierten Benutzeroberfläche an. Dabei wird jeder Inhaltsbereich auf der Seite samt Ladezeit aufgeschlüsselt.
-* Führen Sie eine vollständige JS- und CSS-Minimierung auf der Website durch. Weitere Informationen dazu finden Sie in diesem [Blogpost](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
-* Beseitigen Sie eingebettete CSS- und JS-Elemente aus den Komponenten. Diese sollten in den Client-seitigen Bibliotheken enthalten und minimiert sein, um die Anzahl der zum Rendern der Seite benötigten Anforderungen zu minimieren.
-* Verwenden Sie Browsertools wie die Chrome-Registerkarte „Netzwerk“, um Serveranforderungen zu untersuchen und die Anforderungen mit der längsten Dauer zu ermitteln.
+* Wenn beim Bearbeiten bestimmter Seiten oder Komponenten in Autoreninstanzen Probleme auftreten, verwenden Sie den Entwicklermodus der Touch-optimierten Benutzeroberfläche, um die betroffene Seite zu überprüfen. Dadurch erhalten Sie eine Aufschlüsselung der einzelnen Inhaltsbereiche auf der Seite sowie ihrer Ladezeit.
+* Minimieren Sie alle JS- und CSS-Dateien auf der Site. Weitere Informationen hierzu finden Sie in diesem [Blogpost](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
+* Entfernen Sie eingebettetes CSS und JS aus den Komponenten. Diese sollten in den Client-seitigen Bibliotheken enthalten und minimiert sein, um die Anzahl der zum Rendern der Seite benötigten Anforderungen zu minimieren.
+* Verwenden Sie Browser-Tools wie die Registerkarte &quot;Netzwerk&quot;von Chrome, um die Server-Anforderungen zu untersuchen und zu sehen, welche die längsten benötigen.
 
 Nach Identifizierung von Problembereichen kann der Anwendungs-Code im Hinblick auf Leistungsoptimierungen untersucht werden. Sollten AEM-Standardfunktionen nicht ordnungsgemäß verwendet werden können, wenden Sie sich an den Adobe-Support, um Unterstützung zu erhalten.

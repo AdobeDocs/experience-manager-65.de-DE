@@ -1,7 +1,7 @@
 ---
 title: Anpassen der in Route-Aktionen verwendeten Bilder
 seo-title: Customize images used in route actions
-description: Vorgehensweise zum Anpassen von Bildern, die in Route-Aktionen in LiveCycle AEM Forms Workspace verwendet werden.
+description: So passen Sie die Bilder an, die in Route-Aktionen in LiveCycle AEM Forms Workspace verwendet werden.
 seo-description: How-to customize the images used in route actions in LiveCycle AEM Forms workspace.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
@@ -9,20 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 10158c13-47b4-43e3-ac47-690f3cbab158
 exl-id: 687c6569-7189-4039-9c7a-bc29658a7756
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '308'
-ht-degree: 100%
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 74%
 
 ---
 
 # Anpassen der in Route-Aktionen verwendeten Bilder {#customize-images-used-in-route-actions}
 
-Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte in [Generische Schritte zur Anpassung](/help/forms/using/generic-steps-html-workspace-customization.md) und anschließend die Schritte in diesem Artikel durch.
+So passen Sie die in Route-Aktionen verwendeten Bilder an: [Allgemeine Schritte zur Anpassung](/help/forms/using/generic-steps-html-workspace-customization.md) gefolgt von den in diesem Artikel beschriebenen Schritten.
 
 ## Bilder für Route-Aktionen {#images-for-route-actions}
 
-1. Fügen Sie in CSS am folgenden Speicherort die Stile hinzu, die die Bilder für die neuen Route-Aktionen definieren:
+1. Fügen Sie die Stile hinzu, die Bilder im CSS definieren, und zwar an der folgenden Stelle für die neuen Route-Aktionen:
 
    `/apps/ws/css/newStyle.css`
 
@@ -30,11 +30,11 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
 
    >[!NOTE]
    >
-   >Weitere Informationen zum Zugriff über WebDAV finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/de/crx/current/how_to/webdav_access.html).
+   >Weitere Informationen zum Zugriff über WebDAV finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de).
 
    >[!NOTE]
    >
-   >Verwenden Sie den Route-Aktionsnamen auch als den Stilnamen.
+   >Verwenden Sie lieber den Stilnamen, der mit dem Route-Aktionsnamen übereinstimmt.
 
    ```css
    .myStyle1{
@@ -44,7 +44,7 @@ Um die in Route-Aktionen verwendeten Bilder anzupassen, führen Sie die Schritte
        }
    ```
 
-## Popup bei Tasklist-Aufgabenaktion {#task-list-task-action-popup}
+## Popup für Aufgabenaktion &quot;Aufgabenliste&quot; {#task-list-task-action-popup}
 
 1. Erstellen Sie ein Tasklisten-Aktionspopup siehe [Erstellen von AEM Forms Workspace-Code](introduction-customizing-html-workspace.md#building-html-workspace-code). Dazu muss ein Dev-Paket verwendet werden.
 

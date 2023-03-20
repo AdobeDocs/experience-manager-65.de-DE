@@ -1,7 +1,7 @@
 ---
 title: Leistungsübersicht
 seo-title: Performance Tree
-description: Erfahren Sie, welche Schritte zur Behebung von Leistungsproblemen in AEM erforderlich sind.
+description: Erfahren Sie mehr über die Schritte, die zur Behebung von Leistungsproblemen in AEM erforderlich sind.
 seo-description: Learn about the steps that need to be taken in order to troubleshoot performance issues in AEM.
 uuid: ab0624f7-6b39-4255-89e0-54c74b54cd98
 contentOwner: User
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1188'
-ht-degree: 100%
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 57%
 
 ---
 
@@ -21,13 +21,13 @@ ht-degree: 100%
 
 ## Anwendungsbereich {#scope}
 
-Das nachfolgende Diagramm zeigt die erforderlichen Schritte zur Behebung von Leistungsproblemen. Aus Gründen der Lesbarkeit wurde das Diagramm in fünf Bereiche unterteilt.
+Das nachfolgende Diagramm zeigt die erforderlichen Schritte zur Behebung von Leistungsproblemen. Es ist in 5 Abschnitte unterteilt, um das Lesen zu erleichtern.
 
 Jeder Schritt im Diagramm ist mit einer Dokumentationsressource oder einer Empfehlung verknüpft.
 
 ## Voraussetzungen und Annahmen {#prerequisites-and-assumptions}
 
-Es wird davon ausgegangen, dass ein Leistungsproblem auf einer Seite auftritt (einer AEM-Konsole oder einer Webseite) und konsistent reproduziert werden kann. Vor dem Start der Untersuchung muss es möglich sein, die Leistung zu testen oder zu überwachen.
+Es wird davon ausgegangen, dass ein Leistungsproblem auf einer Seite auftritt (einer AEM-Konsole oder einer Webseite) und konsistent reproduziert werden kann. Eine Möglichkeit, die Leistung zu testen oder zu überwachen, ist eine Voraussetzung, bevor mit der Untersuchung begonnen wird.
 
 Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welche Einheit (Dispatcher, externer Host oder AEM) das Leistungsproblem verursacht, und dann zu bestimmen, welcher Bereich (Server oder Netzwerk) untersucht werden muss.
 
@@ -62,18 +62,18 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   </tr>
   <tr>
    <td><strong>Schritt 0</strong></td>
-   <td>Analyse des Anforderungsablaufs</td>
-   <td><p>Mit der Standard-HTTP-Anforderungsanalyse im Browser können Sie den Anforderungsablauf analysieren. Weitere Informationen dazu, wie Sie diesen Schritt in Chrome durchführen, finden Sie unter:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
+   <td>Anforderungsfluss analysieren</td>
+   <td><p>Mit der Standard-HTTP-Anforderungsanalyse im Browser können Sie den Anforderungsablauf analysieren. Weitere Informationen dazu, wie Sie dies in Chrome durchführen, finden Sie unter:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 2</strong></td>
-   <td>Gehen Anforderungen von externen Hosts ein?</td>
-   <td>Mit der Standard-HTTP-Anforderungsanalyse im Browser können Sie den Anforderungsablauf analysieren. Weitere Informationen dazu, wie Sie diesen Schritt in Chrome durchführen, finden Sie unter den obigen links.<br /> </td>
+   <td>Kommen Anforderungen von externen Hosts?</td>
+   <td>Mit der Standard-HTTP-Anforderungsanalyse im Browser können Sie den Anforderungsablauf analysieren. Informationen dazu, wie Sie dies in Chrome durchführen, finden Sie unter den obigen Links.<br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 3</strong></td>
    <td>Können die Anforderungen zwischengespeichert werden?</td>
-   <td>Weitere Informationen zu zwischenspeicherbaren Anforderungen und allgemeine Hinweise zur Optimierung der Dispatcher-Leistung finden Sie unter <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">Optimierung der Dispatcher-Leistung</a>.</td>
+   <td>Weitere Informationen zu zwischenspeicherbaren Anforderungen und allgemeine Empfehlungen zur Leistungsoptimierung des Dispatchers finden Sie unter <a href="/help/sites-deploying/configuring-performance.md#optimizing-performance-when-using-the-dispatcher">Leistungsoptimierung des Dispatchers</a>.</td>
   </tr>
   <tr>
    <td><strong>Schritt 4</strong></td>
@@ -88,7 +88,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritt 6</strong></td>
    <td>Ist der geografische Standort des Dispatchers weit von den Benutzern entfernt?</td>
-   <td>Platzieren Sie den Dispatcher in der Nähe der Benutzer.</td>
+   <td>Verschieben Sie den Dispatcher näher an die Benutzer.</td>
   </tr>
   <tr>
    <td><strong>Schritt 7</strong></td>
@@ -97,18 +97,18 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   </tr>
   <tr>
    <td><strong>Schritt 8</strong></td>
-   <td>Kann die langsame Geschwindigkeit mit einer lokalen Instanz reproduziert werden?</td>
-   <td><br /> <p>Stellen Sie die Echtzeitbedingungen der Produktionsinstanzen mithilfe von <a href="/help/sites-developing/tough-day.md">Tough Day</a> nach. Wenn dies für Ihre Entwicklungsphase nicht realistisch ist, testen Sie die Produktionsinstanz (oder eine identische Staging-Instanz) in einem anderen Netzwerkkontext.<br /> </p> </td>
+   <td>Ist die Langsamkeit bei einer lokalen Instanz reproduzierbar?</td>
+   <td><br /> <p>Stellen Sie die Echtzeitbedingungen der Produktionsinstanzen mithilfe von <a href="/help/sites-developing/tough-day.md">Tough Day</a> nach. Wenn dies für die Geschwindigkeit Ihrer Entwicklung nicht realistisch ist, testen Sie die Produktionsinstanz (oder eine identische Staging-Instanz) in einem anderen Netzwerkkontext.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 9</strong></td>
    <td>Ist der geografische Standort des Servers weit von den Benutzern entfernt?</td>
-   <td>Platzieren Sie den Server in der Nähe der Benutzer.</td>
+   <td>Verschieben Sie den Server näher an die Benutzer.</td>
   </tr>
   <tr>
    <td><strong>Schritte 10 und 29</strong></td>
    <td>Untersuchung der Netzwerkschicht</td>
-   <td><p>Überprüfen Sie die Netzwerkschicht auf Sättigungs- und Latenzprobleme.</p> <p>Für die Autorenschicht wird empfohlen, dass der Latenzwert 100 Millisekunden nicht übersteigt.</p> <p>Weitere Tipps zur Leistungsoptimierung finden Sie auf <a href="https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html">dieser Seite</a>.</p> </td>
+   <td><p>Überprüfen Sie die Netzwerkschicht auf Sättigungs- und Latenzprobleme.</p> <p>Für die Autorenstufe wird empfohlen, dass die Latenz 100 Millisekunden nicht überschreitet.</p> <p>Weitere Tipps zur Leistungsoptimierung finden Sie auf <a href="https://helpx.adobe.com/de/experience-manager/kb/performance-tuning-tips.html">dieser Seite</a>.</p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 11</strong></td>
@@ -117,13 +117,13 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   </tr>
   <tr>
    <td><strong>Schritt 12</strong></td>
-   <td>Problembehebung für den AEM-Server</td>
-   <td>Überprüfen Sie die folgenden Teilschritte im Diagramm, um weitere Informationen zu erhalten.</td>
+   <td>Fehlerbehebung für AEM Server</td>
+   <td>Weitere Informationen finden Sie in den folgenden Unterschritten im Diagramm.</td>
   </tr>
   <tr>
    <td><strong>Schritt 13</strong></td>
-   <td>Überprüfung der Hardwareanforderungen</td>
-   <td>Überprüfen Sie die Dokumentation zu den <a href="/help/managing/hardware-sizing-guidelines.md">Richtlinien für die Hardwaregröße</a>.<br /> </td>
+   <td>Überprüfen der Hardwareanforderungen</td>
+   <td>Überprüfen Sie die Dokumentation unter <a href="/help/managing/hardware-sizing-guidelines.md">Richtlinien zur Hardware-Skalierung</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 14</strong></td>
@@ -133,12 +133,12 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   <tr>
    <td><strong>Schritt 15</strong></td>
    <td>Suche nach langsamen Anforderungen</td>
-   <td><p>Um nach langsamen Anforderungen zu suchen, können Sie das Protokoll <code>request.log</code> analysieren oder die Datei <code>rlog.jar</code> verwenden.</p> <p>Weitere Informationen zur Verwendung von „rlog.jar“ finden Sie auf dieser Seite.</p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Verwenden von rlog.jar bei der Suche nach Anforderungen mit langer Dauer</a>.<br /> </p> <p> </p> </td>
+   <td><p>Um nach langsamen Anforderungen zu suchen, können Sie das Protokoll <code>request.log</code> analysieren oder die Datei <code>rlog.jar</code> verwenden.</p> <p>Weitere Informationen zur Verwendung von rlog.jar finden Sie auf dieser Seite.</p> <p>Siehe <a href="/help/sites-deploying/monitoring-and-maintaining.md#using-rlog-jar-to-find-requests-with-long-duration-times">Verwenden von rlog.jar zum Suchen von Anforderungen mit langer Dauer</a>.<br /> </p> <p> </p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 16</strong></td>
    <td>Profilserver</td>
-   <td><p>Weitere Informationen zu den Profilerstellungstools, die mit AEM verwendet werden können, finden Sie unter <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Tools für die Leistungsüberwachung und -analyse</a>.<br /> </p> </td>
+   <td><p>Informationen zu Profiling-Tools, die Sie mit AEM verwenden können, finden Sie unter <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Tools zur Leistungsüberwachung und -analyse</a>.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 17</strong></td>
@@ -147,8 +147,8 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   </tr>
   <tr>
    <td><strong>Schritt 18</strong></td>
-   <td>Allgemeine Szenarien bei der Profilerstellung</td>
-   <td>Weitere Informationen finden Sie unter <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">Analyse spezieller Szenarien</a> im Abschnitt „Leistungsoptimierung“.<br /> </td>
+   <td>Allgemeine Szenarien für die Profilerstellung</td>
+   <td>Siehe <a href="/help/sites-deploying/monitoring-and-maintaining.md#analyzing-specific-scenarios">Analysieren spezifischer Szenarien</a> im Abschnitt Leistungsoptimierung .<br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 19</strong></td>
@@ -167,13 +167,13 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   </tr>
   <tr>
    <td><strong>Schritt 21</strong></td>
-   <td>Festplatten-I/O</td>
-   <td><p>Weitere Informationen finden Sie in der Dokumentation zur Überwachung und Wartung im Abschnitt <a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">Festplatten-I/O</a>.</p> </td>
+   <td>Datenträger-E/A</td>
+   <td><p>Siehe <a href="/help/sites-deploying/monitoring-and-maintaining.md#disk-i-o">Datenträger-E/A</a> in der Dokumentation zu Überwachung und Wartung .</p> </td>
   </tr>
   <tr>
    <td><strong>Schritte 22 und 22.1</strong></td>
    <td>Cache-Verhältnis</td>
-   <td>Weitere Informationen finden Sie unter <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">Berechnen des Dispatcher-Cache-Verhältnisses</a>.<br /> <br /> </td>
+   <td>Siehe <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">Berechnung des Dispatcher-Cache-Verhältnisses</a>.<br /> <br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 23</strong></td>
@@ -243,18 +243,18 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
     <ol>
      <li><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher.html">Allgemeine Dispatcher-Konfiguration</a></li>
      <li><a href="https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#configuring-the-dispatcher-cache-cache">Konfigurieren des Dispatcher-Caches</a></li>
-    </ol> <p>Verbessern des Cache-Verhältnisses; Anforderungen zwischenspeicherbar machen (Best Practices für Dispatcher)</p> <p>Berücksichtigen Sie bei der Optimierung Ihrer Zwischenspeicherungskonfigurationen auch die nachfolgenden Einstellungen<br /> </p>
+    </ol> <p>Verbesserung des Cache-Verhältnisses; Anforderungen zwischenspeicherbar machen (Best Practices für Dispatcher)</p> <p>Berücksichtigen Sie auch die folgenden Einstellungen, um Ihre Caching-Konfigurationen zu optimieren.<br /> </p>
     <ol>
-     <li>Legen Sie eine „no-cache“-Regel für HTTP-Anforderungen fest, die keine GET-Anforderungen sind.</li>
-     <li>Legen Sie fest, dass Abfragezeichenfolgen nicht zwischenspeicherbar sind.</li>
-     <li>URLs mit fehlenden Erweiterungen dürfen nicht zwischengespeichert werden.</li>
-     <li>Cache-Authentifizierungs-Header (Option seit Dispatcher-Version 4.1.10)</li>
+     <li>Festlegen einer Nicht-Cache-Regel für HTTP-Anforderungen, die keine GET sind</li>
+     <li>Konfigurieren von nicht zwischenspeicherbaren Abfragezeichenfolgen</li>
+     <li>URLs mit fehlenden Erweiterungen nicht zwischenspeichern</li>
+     <li>Cache-Authentifizierungs-Header (möglich seit Dispatcher-Version 4.1.10)</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Schritt 34</strong></td>
    <td>Aktualisierung der Dispatcher-Version</td>
-   <td><p>Sie können die aktuelle Dispatcher-Version hier herunterladen:</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Link folgen</a></p> </td>
+   <td><p>Sie können die neueste Dispatcher-Version hier herunterladen:</p> <p><a href="https://helpx.adobe.com/experience-manager/dispatcher/release-notes.html">Link folgen</a></p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 35</strong></td>
@@ -272,18 +272,18 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   </tr>
   <tr>
    <td><strong>Schritte 37 und 38</strong></td>
-   <td>Lazy Loading</td>
-   <td><a href="https://docs.adobe.com/ddc/de/gems/aem-web-performance.html">Weitere Informationen finden Sie in der Gem-Sitzung „AEM Web Performance“.</a><br /> </td>
+   <td>Verzögertes Laden</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">Weitere Informationen finden Sie in der Gem-Sitzung „AEM Web Performance“.</a><br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 39</strong></td>
-   <td>Nutzung von Vorverbindungen zur Reduzierung des Verbindungsaufwands</td>
-   <td>Weitere Informationen finden Sie in der oben genannten Gem-Sitzung sowie in der zusätzlichen Dokumentation zu Vorverbindungen von W3c: <a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect">https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td>
+   <td>Verwenden Sie Pre-Connect, um den Verbindungsaufwand zu reduzieren.</td>
+   <td>Weitere Informationen finden Sie in der oben genannten Gem-Sitzung Zusätzliche Dokumentationsvorverknüpfung auf W3c:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td>
   </tr>
   <tr>
    <td><strong>Schritte 40 und 41</strong><br /> </td>
-   <td>Latenz- und Antwortzeit externer Hosts</td>
-   <td>Untersuchung der Latenz- und Antwortzeit für die externen Hosts.</td>
+   <td>Latenz externer Hosts und Reaktionszeit</td>
+   <td>Untersuchen Sie die Latenz und Reaktionszeit für die externen Hosts.</td>
   </tr>
   <tr>
    <td><strong>Schritte 45<br /> und 47</strong><br /> </td>
@@ -292,26 +292,26 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   </tr>
   <tr>
    <td><strong>Schritt 49</strong></td>
-   <td>Reduzierung der Payload-Größe</td>
-   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Aktivieren von Gzip</a> und <a href="https://docs.adobe.com/ddc/de/gems/aem-web-performance.html">Reduzieren der Bildgröße</a>.<br /> </td>
+   <td>Shrink-Payload-Größe</td>
+   <td><a href="/help/sites-deploying/osgi-configuration-settings.md">Gzip aktivieren</a> und <a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">Bildgröße verkleinern</a>.<br /> </td>
   </tr>
   <tr>
    <td><strong>Schritte 42 und 43</strong></td>
    <td>Keep-Alive</td>
-   <td><p>Ist der <code>Keep-Alive</code>-Header in den verschiedenen Anforderungen zur Wiederverwendung von Verbindungen vorhanden? Andernfalls führen alle Anforderungen dazu, dass eine weitere Verbindung hergestellt wird, wodurch ein unnötiger Verbindungsaufwand entsteht. (Standard-HTTP-Anforderungsanalyse im Browser)</p> <p>Mit dem <a href="/help/sites-administering/proxy-jar.md">Proxyserver-Tool</a> können Sie nach Keep-Alive-Verbindungen suchen.<br /> </p> </td>
+   <td><p>Ist der <code>Keep-Alive</code>-Header in den verschiedenen Anforderungen zur Wiederverwendung von Verbindungen vorhanden? Andernfalls führen alle Anforderungen dazu, dass eine weitere Verbindung hergestellt wird, wodurch ein unnötiger Verbindungsaufwand entsteht. (Standard-HTTP-Anforderungsanalyse im Browser)</p> <p>Sie können die <a href="/help/sites-administering/proxy-jar.md">Proxy-Server-Tool</a> um nach Keep-Alive-Verbindungen zu suchen.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 44</strong></td>
-   <td>Wie viele Anforderungen werden gestellt?</td>
-   <td>Führen Sie eine Standard-HTTP-Anforderungsanalyse im Browser durch.</td>
+   <td>Wie viele Anfragen werden gestellt?</td>
+   <td>Führen Sie eine standardmäßige HTTP-Anforderungsanalyse im Browser durch.</td>
   </tr>
   <tr>
    <td><strong>Schritt 46</strong></td>
-   <td>Reduzierung der Anzahl von Anforderungen</td>
+   <td>Anzahl der Anforderungen reduzieren</td>
    <td>
     <ol>
-     <li>Verketten Sie Ressourcen (Bilder, CSS-Sprites, JSON usw.)<br /> </li>
-     <li>Einbetten von clientlibs:
+     <li>Verketten von Ressourcen (Bilder, CSS-Sprites, JSON usw.)<br /> </li>
+     <li>Einbetten von Clientlibs:
       <ol>
        <li><a href="/help/sites-developing/clientlibs.md#creating-client-library-folders">Erstellen von Client-Bibliotheks-Ordnern</a> – siehe den Beitrag zur Minimierung von Anforderungen durch Einbetten</li>
       </ol> </li>
@@ -324,8 +324,8 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, festzustellen, welch
   </tr>
   <tr>
    <td><strong>Schritte 50 und 51</strong></td>
-   <td>Blockierung von JS-Code</td>
-   <td><a href="https://docs.adobe.com/ddc/de/gems/aem-web-performance.html">https://docs.adobe.com/ddc/en/gems/aem-web-performance.html</a></td>
+   <td>JS-Codeblockierung</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en">https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2016/aem-web-performance.html?lang=en</a></td>
   </tr>
  </tbody>
 </table>

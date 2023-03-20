@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines neuen Anmeldungsbildschirms
 seo-title: Creating a new login screen
-description: Gehen Sie wie folgt vor, um die Anmeldeseite von LiveCycle-Modulen zu ändern, beispielsweise AEM Forms oder Forms Manager.
+description: Gehen Sie wie folgt vor, um die Anmeldeseite von LiveCycle-Modulen zu ändern, z. B. AEM Forms Workspace oder Forms Manager.
 seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
 uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
 content-type: reference
@@ -10,16 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '463'
-ht-degree: 100%
+source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 79%
 
 ---
 
 # Erstellen eines neuen Anmeldungsbildschirms{#creating-a-new-login-screen}
 
-Sie können den Anmeldungsbildschirm aller Module von AEM Forms ändern, die den AEM Forms-Anmeldungsbildschirm verwenden. Die Änderungen wirken sich beispielsweise auf den Anmeldungsbildschirm, den Formularmanager und AEM Forms aus.
+Sie können den Anmeldebildschirm aller AEM Forms-Module ändern, die den AEM Forms-Anmeldebildschirm verwenden. Beispielsweise wirken sich die Änderungen auf den Anmeldebildschirm von Forms Manager und AEM Forms Workspace aus.
 
 ## Voraussetzung {#prerequisite}
 
@@ -183,7 +183,7 @@ String browserLocale = "en";
     }
 ```
 
-***Standardgebietsschema ändern***
+***So ändern Sie das Standardgebietsschema***
 
 ```jsp
    String browserLocale = "en";
@@ -195,7 +195,7 @@ String browserLocale = "en";
    for(int i=0; i<locales.length; i++)
 ```
 
-### Hinzufügen von neuem Text oder Ändern des vorhandenen Texts {#adding-new-text-or-modifying-existing-text}
+### Hinzufügen von neuem Text oder Ändern von vorhandenem Text {#adding-new-text-or-modifying-existing-text}
 
 1. Kopieren Sie den Ordner `i18n`:
 
@@ -204,7 +204,7 @@ String browserLocale = "en";
 
 1. Ändern Sie nun den Wert der Eigenschaft `sling:message` des Knotens (unter dem Codeordner des gewünschten Gebietsschemas) für den Sie den Text ändern möchten. Die Übersetzung wird mit dem Schlüssel durchgeführt, der im Wert der Eigenschaft `sling:key` des Knotens aufgeführt ist.
 
-1. Zum Hinzufügen des neuen Schlüssel-Wert-Paars führen Sie die folgenden Schritte aus. Überprüfen Sie ein Beispiel auf dem darauffolgenden Screenshot.
+1. Um ein neues Schlüssel-Wert-Paar hinzuzufügen, führen Sie die folgenden Aktionen aus. Überprüfen Sie ein Beispiel im folgenden Screenshot.
 
    1. Erstellen Sie unter den Gebietsschemaordnern einen Knoten vom Typ `sling:MessageEntry` oder kopieren Sie einen vorhandenen Knoten und benennen Sie ihn um.
    1. Kopieren `login.jsp` :
@@ -246,7 +246,7 @@ String browserLocale = "en";
 
 1. Löschen Sie die Dateien `login.js` und `jquery-1.8.0.min.js` vom Knoten `/apps/livecycle/core/content/login.`
 1. Ändern Sie die Stile in der CSS-Datei.
-1. Neue Stile hinzufügen:
+1. So fügen Sie neue Stile hinzu:
 
    1. Fügen Sie neue Stile zu `/apps/livecycle/core/content/login/login.css` hinzu
    1. Kopieren `login.jsp`
@@ -289,10 +289,10 @@ css.newLoginContentArea {
 ### Fügen Sie neue Bilder hinzu {#add-new-images}
 
 1. Führen Sie die Schritte zum Hinzufügen eines neuen Stils oder Ändern des vorhandenen Stils durch (oben beschrieben).
-1. Fügen Sie neue Bilder in `/apps/livecycle/core/content/login` hinzu. Bild hinzufügen:
+1. Fügen Sie neue Bilder in `/apps/livecycle/core/content/login` hinzu. So fügen Sie ein Bild hinzu:
 
    1. Installieren Sie den WebDAV-Client.
-   1. Navigieren Sie mithilfe eines WebDAV-Clients zum Ordner `/apps/livecycle/core/content/login`. Weitere Informationen finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/de/crx/current/how_to/webdav_access.html).
+   1. Navigieren Sie mithilfe eines WebDAV-Clients zum Ordner `/apps/livecycle/core/content/login`. Weitere Informationen finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de).
 
    1. Fügen Sie neue Bilder hinzu.
 
