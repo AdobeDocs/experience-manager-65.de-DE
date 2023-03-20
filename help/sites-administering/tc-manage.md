@@ -3,13 +3,13 @@ title: Verwalten von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in AEM verwalten.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
 source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3536'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Verwalten von Übersetzungsprojekten{#managing-translation-projects}
+# Verwalten von Übersetzungsprojekten {#managing-translation-projects}
 
 Nach dem Sie den Inhalt für die Übersetzung vorbereitet haben, müssen Sie die Sprachstruktur abschließen, indem Sie fehlende Sprachkopien sowie Übersetzungsprojekte erstellen.
 
@@ -412,10 +412,10 @@ Füllen Sie Ihre Sprachkopie so, dass sie Inhalte aus der Stammsprache enthält,
 
 ## Verschieben oder Umbenennen einer Quellseite {#move-source}
 
-Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)Wenn Sie die Seite nach dem Verschieben erneut übersetzen, wird eine neue Sprachkopie erstellt, die auf dem neuen Seitennamen/Speicherort basiert. Die alte Sprachkopie, die auf dem vorherigen Namen/Speicherort basiert, ist weiterhin vorhanden.
+Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page) werden muss, wird beim erneuten Übersetzen der Seite nach der Verschiebung eine neue Sprachkopie auf der Grundlage des neuen Seitennamens/des neuen Speicherorts erstellt. Die alte Sprachkopie, die auf dem vorherigen Namen/Speicherort basiert, bleibt erhalten.
 
-Die Best Practice in diesem Szenario besteht darin, dieses Verfahren zu befolgen:
-1. Machen Sie die Veröffentlichung der Sprachkopien rückgängig, die mit der Quellseite verknüpft sind, die Sie verschieben möchten.
+In diesem Szenario erweist es sich als Best Practice, wie folgt vorzugehen:
+1. Heben Sie die Veröffentlichung der Sprachkopien auf, die mit der zu verschiebenden Quellseite verbunden sind.
 1. Löschen Sie sie.
 1. Erstellen Sie neue Sprachkopien von der neu verschobenen Quellseite.
 1. Veröffentlichen Sie die neu erstellten Sprachkopien.
