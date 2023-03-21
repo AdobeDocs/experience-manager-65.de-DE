@@ -1,7 +1,7 @@
 ---
 title: Wiederherstellen der AEM Forms-Daten
 seo-title: Recovering the AEM forms data
-description: In diesem Dokument werden die zum Wiederherstellen der AEM Forms-Daten erforderlichen Schritte beschrieben.
+description: In diesem Dokument werden die Schritte beschrieben, die zum Wiederherstellen der AEM Formulardaten erforderlich sind.
 seo-description: This document describes the steps required to recover the AEM forms data.
 uuid: b5735196-5a8d-4358-884f-e9b8d8f4f682
 contentOwner: admin
@@ -10,22 +10,22 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1157'
-ht-degree: 100%
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+workflow-type: tm+mt
+source-wordcount: '1180'
+ht-degree: 20%
 
 ---
 
 # Wiederherstellen der AEM Forms-Daten {#recovering-the-aem-forms-data}
 
-In diesem Abschnitt werden die zum Wiederherstellen der AEM Forms-Daten erforderlichen Schritte beschrieben. Weitere Informationen finden Sie außerdem unter [Besondere Überlegungen zur Sicherung und Wiederherstellung](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
+In diesem Abschnitt werden die Schritte beschrieben, die zum Wiederherstellen der AEM Formulardaten erforderlich sind. Siehe auch [Besondere Hinweise für Sicherung und Wiederherstellung](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md#special-considerations-for-backup-and-recovery).
 
 >[!NOTE]
 >
->Der Computer, auf dem Datenbank, GDS, AEM-Repository und Stammordner für Inhalte wiederhergestellt werden, muss denselben DNS-Namen wie ursprünglich haben.
+>Die Ordner &quot;Datenbank&quot;, &quot;Ordner des globalen Dokumentenspeichers&quot;, &quot;AEM Repository&quot;und &quot;Stammordner für Inhalte&quot;müssen auf einem Computer wiederhergestellt werden, der denselben DNS-Namen wie das Original hat.
 
-AEM Forms sollte nach einem der folgenden Ereignisse zuverlässig wiederhergestellt werden:
+AEM Formulare sollten zuverlässig von folgenden Fehlern wiederhergestellt werden:
 
 **Datenträgerausfall:** Zum Wiederherstellen des Datenbankinhalts ist das letzte Sicherungsmedium erforderlich.
 
@@ -33,43 +33,43 @@ AEM Forms sollte nach einem der folgenden Ereignisse zuverlässig wiederhergeste
 
 **Benutzerfehler:** Die Wiederherstellung ist auf die Daten beschränkt, die von der Datenbank zur Verfügung gestellt werden. Falls die Daten gespeichert wurden und verfügbar sind, wird die Wiederherstellung vereinfacht.
 
-**Stromausfall, Systemabsturz:** Dateisystem-APIs sind bei unerwarteten Systemausfällen häufig nicht stabil. Bei einem Stromausfall oder Systemabsturz ist es wahrscheinlicher, dass in der Datenbank gespeicherte Dokumentinhalte aktuell sind als in einem Dateisystem gespeicherte Inhalte.
+**Stromausfall, Systemabsturz:** Dateisystem-APIs sind bei unerwarteten Systemausfällen häufig nicht stabil. Wenn ein Stromausfall oder ein Systemabsturz auftritt, ist der in der Datenbank gespeicherte Dokumentinhalt wahrscheinlich aktueller als der in einem Dateisystem gespeicherte Inhalt.
 
-Wenn Sie im kontinuierlichen Sicherungsmodus arbeiten, befinden Sie sich auch nach der Wiederherstellung in diesem Modus. Wenn Sie im Snapshot-Sicherungsmodus arbeiten, befinden Sie sich nach der Wiederherstellung nicht im Sicherungsmodus.
+Wenn Sie den kontinuierlichen Sicherungsmodus verwenden, befinden Sie sich nach der Wiederherstellung noch im Sicherungsmodus. Wenn Sie den Snapshot-Sicherungsmodus verwenden, befinden Sie sich nach der Wiederherstellung nicht im Sicherungsmodus.
 
-Beim Wiederherstellen aus einer Sicherung auf ein neues System können die folgenden Konfigurationen abweichen. Hiervon sollte eine erfolgreiche Wiederherstellung der AEM Forms-Anwendung unberührt bleiben:
+Beim Wiederherstellen von einem Backup auf ein neues System können die folgenden Konfigurationen unterschiedlich sein. Dieser Unterschied sollte sich nicht auf eine erfolgreiche Wiederherstellung der AEM Forms-Anwendung auswirken:
 
 * IP-Adresse
-* Physische Systemkonfiguration (Prozessoren, Festplatte, Arbeitsspeicher)
-* Speicherort des globalen Dokumentenspeichers
+* Physische Systemkonfiguration (CPUs, Festplatte, Speicher)
+* GDS-Speicherort
 
 >[!NOTE]
 >
->Die Sicherung des Stammordners für Inhalte muss an dem Speicherort des Ordners wiederhergestellt werden, der während der Content Services-Konfiguration festgelegt wurde.
+>Die Sicherung des Stammordners für Inhalte muss an dem Speicherort des Ordners wiederhergestellt werden, der während der Konfiguration von Content Services festgelegt wurde.
 
-Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, die verbliebenen Clusterknoten aber ordnungsgemäß weiter funktionieren, führen Sie das Wiederherstellungsverfahren für einen einzelnen Clusterknoten durch.
+Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten fehlschlägt und die verbleibenden Knoten des Clusters ordnungsgemäß funktionieren, führen Sie das Wiederherstellungsverfahren für einzelne Clusterknoten durch.
 
-## Wiederherstellen der AEM Forms-Daten {#recover-the-aem-forms-data}
+## AEM Formulardaten wiederherstellen {#recover-the-aem-forms-data}
 
-1. Beenden Sie die AEM Forms-Dienste und den Anwendungsserver, falls er ausgeführt wird.
-1. Erstellen Sie bei Bedarf das physische System aus einem Systemabbild neu. Dieses Schritt ist ggf. nicht erforderlich, wenn der Grund für die Wiederherstellung ein fehlerhafter Datenbankserver ist.
-1. Wenden Sie Patches oder Aktualisierungen für AEM Forms an, die seit der Erstellung des Abbilds angewendet wurden. Diese Informationen wurden im Sicherungsverfahren erfasst. Auf AEM Forms müssen Patches entsprechend dem Patchlevel zum Zeitpunkt der Systemsicherung angewendet werden.
-1. (WebSphere Application Server) Wenn Sie die Wiederherstellung auf eine neue Instanz von WebSphere Application Server durchführen, führen Sie den Befehl „restoreConfig.bat/sh“ aus.
-1. Zum Wiederherstellen der AEM Forms-Datenbank müssen Sie zuerst einen Datenbankwiederherstellungsvorgang unter Verwendung der Datenbanksicherungsdateien ausführen und anschließend die Protokolle zum Wiederholen von Transaktionen auf die wiederhergestellte Datenbank anwenden. (Siehe [AEM Forms-Datenbank](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Weitere Informationen finden Sie in einem dieser Knowledgebase-Artikel:
+1. Beenden Sie die AEM Forms-Dienste und den Anwendungsserver bei Ausführung.
+1. Erstellen Sie bei Bedarf das physische System aus einem Systembild neu. Dieser Schritt ist beispielsweise möglicherweise nicht erforderlich, wenn der Grund für die Wiederherstellung ein fehlerhafter Datenbankserver ist.
+1. Wenden Sie Patches oder Aktualisierungen auf AEM Formulare an, die seit der Erstellung des Bildes angewendet wurden. Diese Informationen wurden im Sicherungsverfahren erfasst. AEM Formulare müssen auf dieselbe Patch-Ebene gepatcht werden wie bei der Sicherung des Systems.
+1. (WebSphere® Application Server) Wenn Sie auf eine neue Instanz von WebSphere® Application Server wiederherstellen, führen Sie den Befehl restoreConfig.bat/sh aus.
+1. Zum Wiederherstellen der AEM Forms-Datenbank müssen Sie zuerst einen Datenbankwiederherstellungsvorgang unter Verwendung der Datenbanksicherungsdateien ausführen und anschließend die Protokolle zum Wiederholen von Transaktionen auf die wiederhergestellte Datenbank anwenden. (Siehe [AEM Formulardatenbank](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database). Weitere Informationen finden Sie in einem dieser Knowledge Base-Artikel:
 
-   * [Oracle-Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403624)
-   * [Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403625)
-   * [Microsoft SQL Server-Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403623)
-   * [DB2 Backup und Wiederherstellung für AEM Forms](https://www.adobe.com/go/kb403626)
+   * [DB2® Backup und Wiederherstellung für AEM Formulare](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#db2)
+   * [Oracle-Backup und Wiederherstellung für AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#oracle)
+   * [Microsoft® SQL Server-Sicherung und -Wiederherstellung für AEM Formulare](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#sql-server)
+   * [Backup und Wiederherstellung für AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#mysql)
 
-1. Stellen Sie den Ordner des globalen Dokumentenspeichers wieder her, indem Sie zuerst den Inhalt des Ordners des globalen Dokumentenspeichers in der vorhandenen Installation von AEM Forms löschen und dann den Inhalt des globalen Dokumentenspeichers aus dem gesicherten Ordner des globalen Dokumentenspeichers kopieren. Wenn Sie den Speicherort des Ordners des globalen Dokumentenspeichers geändert haben, lesen Sie [Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
-1. Benennen Sie den Sicherungsordner des globalen Dokumentspeichers, der wiederhergestellt werden soll, wie in den folgenden Beispielen gezeigt um:
+1. Rufen Sie den Ordner des globalen Dokumentenspeichers ab, indem Sie zunächst den Inhalt des Ordners des globalen Dokumentenspeichers in der bestehenden Installation AEM Formulare löschen und dann den Inhalt des Ordners des globalen Dokumentenspeichers aus dem gesicherten Ordner des globalen Dokumentenspeichers kopieren. Informationen zum Speicherort des Ordners des globalen Dokumentenspeichers finden Sie unter [Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
+1. Benennen Sie den wiederherzustellenden Ordner des globalen Dokumentenspeichers wie in den folgenden Beispielen gezeigt um:
 
    >[!NOTE]
    >
-   >Wenn den Ordner „/restore“ bereits vorhanden ist, sichern Sie ihn zuerst und löschen ihn dann, bevor Sie den Ordner „/backup“, der die neuesten Daten enthält, umbenennen.
+   >Wenn der Ordner &quot;/restore&quot;bereits vorhanden ist, sichern Sie ihn und löschen Sie ihn dann, bevor Sie den Ordner &quot;/backup&quot;umbenennen, der die neuesten Daten enthält.
 
-   * (JBoss) Benennen Sie `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` um in:
+   * (JBoss®) Umbenennen `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` an:
 
       `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
@@ -77,59 +77,59 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten ausgefallen ist, di
 
       `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
-   * (WebSphere) Benennen Sie `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` um in:
+   * (WebSphere®) Umbenennen `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` an:
 
       `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
-1. Stellen Sie den Stammordner für Inhalte wieder her, indem Sie zuerst den Inhalt des Stammordners für Inhalte in der vorhandenen Installation von AEM Forms löschen und dann unter Ausführung der Schritte für eigenständige oder Clusterumgebungen wiederherstellen:
+1. Stellen Sie den Stammordner für Inhalte wieder her, indem Sie zunächst den Inhalt des Stammordners für Inhalte aus der bestehenden Installation von AEM Formularen löschen und dann den Inhalt wiederherstellen, indem Sie die Aufgaben für eigenständige oder Clusterumgebungen ausführen:
 
    >[!NOTE]
    >
-   >Die Sicherung des Stammordners für Inhalte muss an dem Speicherort des Stammordners für Inhalte wiederhergestellt werden, der während der Content Services-Konfiguration (nicht mehr unterstützt) festgelegt wurde.
+   >Die Sicherung des Stammordners für Inhalte muss an dem Speicherort des Stammordners für Inhalte wiederhergestellt werden, der während der Konfiguration von Content Services (nicht mehr unterstützt) festgelegt wurde.
 
-   **Eigenständig:** Während des Wiederherstellungsprozesses werden alle Ordner wiederhergestellt, die gesichert wurden. Wenn diese Ordner wiederhergestellt werden und der Ordner „/backup-lucene-indexes“ vorhanden ist, benennen Sie ihn in „/lucene-indexes“ um. Andernfalls sollte der Ordner „/lucene-indexes“ bereits vorhanden sein, sodass keine Aktion erforderlich ist.
+   **Eigenständig:** Während des Wiederherstellungsprozesses werden alle Ordner wiederhergestellt, die gesichert wurden. Wenn diese Ordner wiederhergestellt werden und der Ordner /backup-lucene-indexes vorhanden ist, benennen Sie ihn in /lucene-indexes um. Andernfalls sollte der Ordner lucene-indexes bereits vorhanden sein und es ist keine Aktion erforderlich.
 
-   **Cluster:** Während des Wiederherstellungsprozesses werden alle Ordner wiederhergestellt, die gesichert wurden. Führen Sie zum Wiederherstellen des Indexstammordners die folgenden Schritte auf jedem Knoten des Clusters aus:
+   **Cluster:** Während des Wiederherstellungsprozesses werden alle Ordner wiederhergestellt, die gesichert wurden. Um den Indexstammordner wiederherzustellen, führen Sie die folgenden Schritte für jeden Knoten des Clusters aus:
 
-   * Löschen Sie den gesamten Inhalt des Indexstammordners.
-   * Wenn der Ordner „/backup-lucene-indexes“ vorhanden ist, kopieren Sie den Inhalt des Ordners „*Stammordner für Inhalte*/backup-lucene-indexes“ in den Indexstammordner und löschen Sie den Ordner „*Stammordner für Inhalte*/backup-lucene-indexes“.
-   * Wenn der Ordner „/lucene-indexes“ vorhanden ist, kopieren Sie den Inhalt des Ordners „*Stammordner für Inhalte*/lucene-indexes“ in den Indexstammordner.
+   * Löschen Sie alle Inhalte im Indexstammverzeichnis.
+   * Wenn der Ordner /backup-lucene-indexes vorhanden ist, kopieren Sie den Inhalt des Ordners *Stammordner für Inhalte* Ordner &quot;/backup-lucene-indexes&quot;in den Ordner &quot;Index Root&quot;und löschen Sie die *Stammordner für Inhalte* Ordner &quot;/backup-lucene-indexes&quot;.
+   * Wenn der Ordner /lucene-indexes vorhanden ist, kopieren Sie den Inhalt der *Stammordner für Inhalte* Ordner /lucene-indexes in den Indexstammordner.
 
-1. Wiederherstellen der CRX-Repository
+1. Wiederherstellen/Wiederherstellen des CRX-Repositorys.
 
    * **Eigenständig**
 
-      *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die hier beschrieben Schritte ausführen: [Backup and Restore.](https://docs.adobe.com/docs/de/crx/current/administering/backup_and_restore.html)
+      *Autor- und Veröffentlichungsinstanzen wiederherstellen*: Bei einem Systemausfall können Sie das Repository im letzten gesicherten Zustand wiederherstellen, indem Sie die hier beschrieben Schritte ausführen: [Backup and Restore.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
 
       Bei der vollständigen Wiederherstellung des Autorknotens werden auch die Daten von Forms Manager und AEM Forms Workspace wiederhergestellt.
 
    * **Cluster**
 
-      Für die Wiederherstellung in einer Clusterumgebung finden Sie weitere Informationen unter [Strategie für Sicherung und Wiederherstellung in einer Clusterumgebung](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
+      Informationen zur Wiederherstellung in einer Clusterumgebung finden Sie unter [Strategie für Sicherung und Wiederherstellung in einer Clusterumgebung](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
-1. Löschen Sie alle temporären AEM Forms-Dateien, die im Ordner „java.io.temp“ oder im temporären Adobe-Ordner erstellt wurden.
+1. Löschen Sie alle temporären AEM Formulare, die im Ordner &quot;java.io.temp&quot;oder im temporären Ordner der Adobe erstellt wurden.
 1. Starten Sie AEM Forms (siehe [Starten und Stoppen von Services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern {#changing-the-gds-location-during-recovery}
 
-Falls der globale Dokumentenspeicher an anderen als dem ursprünglichen Speicherort wiederhergestellt wird, führen Sie das Skript „LCSetGDS“ aus, um den globalen Dokumentenspeicher auf den neuen Speicherort festzulegen. Das Skript befindet sich im Ordner `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline`. Das Skript benötigt die zwei Parameter `defaultGDS` und `newGDS`. Lesen Sie die Datei `ReadMe.txt` im selben Ordner für Anweisungen zum Ausführen des Skripts.
+Wenn der globale Dokumentenspeicher an einem anderen Speicherort als dem ursprünglichen Speicherort wiederhergestellt wird, führen Sie das Skript &quot;LCSetGDS&quot;aus, um den globalen Dokumentenspeicher auf den neuen Speicherort festzulegen. Das Skript befindet sich im Ordner `[aem-forms root]\sdk\misc\Foundation\SetGDSCommandline`. Das Skript benötigt die zwei Parameter `defaultGDS` und `newGDS`. Lesen Sie die Datei `ReadMe.txt` im selben Ordner für Anweisungen zum Ausführen des Skripts.
 
 >[!NOTE]
 >
->Wenn Sie die Dokumentenspeicherung in der Datenbank aktiviert haben, müssen Sie den GDS-Speicherort nicht ändern.
+>Wenn Sie die Dokumentenspeicherung in der Datenbank aktiviert haben, müssen Sie den Speicherort des globalen Dokumentenspeichers nicht ändern.
 
 >[!NOTE]
 >
->Dies ist der einzige Umstand, unter dem dieses Skript zum Ändern des Speicherorts für den Ordner des globalen Dokumentenspeichers verwendet werden sollte. Um den Speicherorts für den Ordner des globalen Dokumentenspeichers zu ändern, während AEM Forms ausgeführt wird, verwenden Sie Administration Console. (Siehe [Allgemeine AEM Forms-Einstellungen konfigurieren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).)
+>Dies ist der einzige Umstand, unter dem Sie dieses Skript verwenden sollten, um den Speicherort des globalen Dokumentenspeichers zu ändern. Um den Speicherorts für den Ordner des globalen Dokumentenspeichers zu ändern, während AEM Forms ausgeführt wird, verwenden Sie Administration Console. (Siehe [Allgemeine AEM Forms-Einstellungen konfigurieren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings).)
 
 >[!NOTE]
 >
->Die Komponentenbereitstellung schlägt unter Windows fehl, wenn sich der Ordner des globalen Dokumentenspeichers im Stammordner des Laufwerks befindet (z. B. D:\) Beim globalen Dokumentenspeicher müssen Sie sicherstellen, dass sich der Ordner nicht im Stammordner des Laufwerks befindet, sondern in einem Unterordner. Der Ordner sollte beispielsweise „D:\GDS“ und nicht einfach „D:\“ lauten.
+>Die Komponentenbereitstellung schlägt unter Windows fehl, wenn sich der Ordner des globalen Dokumentenspeichers im Stammordner des Laufwerks befindet (z. B. D:\). Beim globalen Dokumentenspeicher müssen Sie sicherstellen, dass sich der Ordner nicht im Stammverzeichnis des Laufwerks befindet, sondern in einem Unterverzeichnis. Der Ordner sollte beispielsweise D:\GDS and not simply D:\ lauten.
 
-## Globalen Dokumentenspeicher in einer Clusterumgebung wiederherstellen {#recovering-the-gds-to-a-clustered-environment}
+## Wiederherstellen des globalen Dokumentenspeichers in einer Clusterumgebung {#recovering-the-gds-to-a-clustered-environment}
 
-Fahren Sie zum Ändern des Speicherortes des globalen Dokumentenspeichers den gesamten Cluster herunter und führen Sie das Skript LCSetGDS auf einem einzelnen Knoten des Clusters aus. (Siehe [Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Starten Sie nur diesen Knoten. Sobald dieser Knoten vollständig gestartet ist, können andere Knoten im Cluster sicher gestartet werden. Die Knoten verweisen dann korrekt auf den neuen Speicherort des globalen Dokumentenspeichers.
+Um den Speicherort des globalen Dokumentenspeichers in einer Clusterumgebung zu ändern, fahren Sie den gesamten Cluster herunter und führen Sie das Skript LCSetGDS auf einem einzelnen Knoten des Clusters aus. (Siehe [Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery). Starten Sie nur diesen Knoten. Wenn dieser Knoten vollständig gestartet ist, können andere Knoten im Cluster sicher gestartet werden und verweisen ordnungsgemäß auf den neuen globalen Dokumentenspeicher.
 
 >[!NOTE]
 >
->Wenn der vollständige Abschluss des Starts eines einzelnen Knotens vor dem Starten anderer Knoten nicht sichergestellt werden kann, müssen Sie das Skript LCSetGDS auf allen Knoten im Cluster ausführen, bevor Sie den Cluster starten.
+>Wenn Sie nicht sicherstellen können, dass ein Knoten vollständig gestartet wird, bevor Sie andere Knoten starten, müssen Sie das Skript LCSetGDS auf jedem Knoten im Cluster ausführen, bevor Sie den Cluster starten.

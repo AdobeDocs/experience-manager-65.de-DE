@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
 workflow-type: tm+mt
-source-wordcount: '956'
-ht-degree: 1%
+source-wordcount: '934'
+ht-degree: 2%
 
 ---
 
 # Grundlagen zu Scoring und Abzeichen {#scoring-and-badges-essentials}
 
-Die AEM Communities-Scoring- und -Badges-Funktion bietet die Möglichkeit, Community-Mitglieder zu identifizieren und zu belohnen.
+Mit der AEM Communities-Scoring- und Badges-Funktion werden Community-Mitglieder identifiziert und belohnt.
 
 Die Details zur Einrichtung der Funktion finden Sie unter
 
@@ -70,7 +70,7 @@ Suchen Sie beispielsweise nach `this.isAssigned` in `/libs/social/forum/componen
 
 Wenn &quot;true&quot;, zeigt isAssigned an, dass das Zeichen für eine Rolle zugewiesen wurde und das Zeichen als Text angezeigt werden soll.
 
-Wenn &quot;false&quot;, zeigt an, dass der Badge für einen Gewinn zugewiesen wurde und der Badge als Bild angezeigt werden soll.
+Ist der Wert &quot;false&quot;, bedeutet &quot;isAssigned&quot;, dass das Abzeichen für einen Ergebniswert vergeben wurde und das Abzeichen als Bild angezeigt werden soll.
 
 Alle Änderungen an diesem Verhalten sollten in einem benutzerdefinierten Skript vorgenommen werden (entweder Überschreiben oder Überlagerung). Siehe [Clientseitige Anpassung](/help/communities/client-customize.md).
 
@@ -127,7 +127,7 @@ Die Beschreibungen für den Zugriff auf Scoring- und Badging-Daten verwenden JSR
 
 **JSRP für Autor**: Das Experimentieren in der Autorenumgebung führt zu benutzergenerierten Inhalten, die nur in der Autorenumgebung sichtbar sind.
 
-**JSRP bei Veröffentlichung**: Ebenso ist es bei Tests in der Veröffentlichungsumgebung erforderlich, auf die CRXDE Lite mit Administratorrechten in einer Veröffentlichungsinstanz zuzugreifen. Wenn die Veröffentlichungsinstanz in ausgeführt wird [Produktionsmodus](/help/sites-administering/production-ready.md) (Ausführungsmodus nosamplecontent ), muss [CRXDE Lite aktivieren](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP bei Veröffentlichung**: Ebenso ist es bei Tests in der Veröffentlichungsumgebung erforderlich, auf die CRXDE Lite mit Administratorrechten in einer Veröffentlichungsinstanz zuzugreifen. Wenn die Veröffentlichungsinstanz in ausgeführt wird [Produktionsmodus](/help/sites-administering/production-ready.md) (Ausführungsmodus nosamplecontent ), ist es erforderlich, [CRXDE Lite aktivieren](/help/sites-administering/enabling-crxde-lite.md).
 
 Der Basisspeicherort von UGC auf JSRP lautet `/content/usergenerated/asi/jcr/`.
 
@@ -135,8 +135,8 @@ Der Basisspeicherort von UGC auf JSRP lautet `/content/usergenerated/asi/jcr/`.
 
 Die folgenden APIs stehen zur Verwendung zur Verfügung:
 
-* [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
-* [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
+* [com.adobe.cq.social.scoring.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)
+* [com.adobe.cq.social.badging.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)
 
 Die neuesten Javadocs für das installierte Feature Pack stehen Entwicklern aus dem Adobe-Repository zur Verfügung. Siehe [Verwenden von Maven für Communities : Javadocs](/help/communities/maven.md#javadocs).
 
@@ -170,7 +170,7 @@ Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und
       `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Eigenschaft hinzufügen, um Badge anzuzeigen
+   * Um Badges anzuzeigen, fügen Sie eine Eigenschaft hinzu
 
       `allowBadges = true`
 
@@ -201,7 +201,7 @@ Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und
       `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
-   * Eigenschaft hinzufügen, um Badge anzuzeigen
+   * Um Badges anzuzeigen, fügen Sie eine Eigenschaft hinzu
 
       `allowBadges = true`
 
@@ -214,7 +214,7 @@ Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und
    curl -i -X POST -H "Accept:application/json" -u admin:admin -F ":operation=social:assignBadge" -F "badgeContentPath=/libs/settings/community/badging/images/moderator/jcr:content/moderator.png" https://localhost:4503/home/users/community/w271OOup2Z4DjnOQrviv/profile.social.json
    ```
 
-   Da ein Benutzer zwei Bronze-Abzeichen gesammelt und ein Moderatorenabzeichen erhalten hat, erscheint der Benutzer so mit seinem Forumseintrag.
+   Da ein Benutzer zwei Bronze-Abzeichen gesammelt und ein Moderatorenabzeichen erhalten hat, wird der Benutzer mit seinem Forumseintrag wie folgt angezeigt:
 
    ![Moderator](assets/moderator.png)
 
@@ -246,11 +246,11 @@ Für die Geometrixx Engage-Site befinden sich der Benutzer und sein Ergebnis in 
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
-Für die Guide-Site &quot;Community Components&quot;befindet sich der Benutzer und sein Ergebnis in einem Pfad, der mit dem Namen der Scoring-Regel, einer Standard-ID ( `default-site`), eine eindeutige ID und die ID des Benutzers:
+Auf der Guide-Site &quot;Community-Komponenten&quot;befinden sich der Benutzer und sein Ergebnis in einem Pfad, der mit dem Namen der Scoring-Regel, einer Standard-ID ( `default-site`), eine eindeutige ID und die ID des Benutzers:
 
 * `.../scoring/forums-scoring/default-site/b27a17cb4910a9b69fe81fb1b492ba672d2c086e/riley`
 
-Das Ergebnis wird in der -Eigenschaft gespeichert. `scoreValue_tl` die direkt einen Wert enthalten oder indirekt auf einen atomicCounter verweisen können.
+Das Ergebnis wird in der -Eigenschaft gespeichert. `scoreValue_tl` , die nur einen Wert enthalten oder indirekt auf einen atomicCounter verweisen können.
 
 ![access-scoring-ugc](assets/access-scoring-ugc.png)
 

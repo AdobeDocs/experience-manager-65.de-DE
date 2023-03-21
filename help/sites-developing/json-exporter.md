@@ -10,10 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: ht
-source-wordcount: '441'
-ht-degree: 100%
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 58%
 
 ---
 
@@ -27,45 +27,45 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 * native Mobile Apps
 * weitere AEM-externe Kanäle und Touchpoints
 
-Über Inhaltsfragmente, die strukturierte Inhalte verwenden, können Sie Content Services zur Verfügung stellen, indem Sie die Inhalte mit JSON Exporter auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
+Mit Inhaltsfragmenten, die strukturierte Inhalte verwenden, können Sie Inhaltsdienste bereitstellen, indem Sie den JSON Exporter verwenden, um den Inhalt AEM beliebigen Seite im JSON-Datenmodellformat bereitzustellen. Diese Methode kann dann von Ihren eigenen Anwendungen genutzt werden.
 
 >[!NOTE]
 >
->Die hier beschriebene Funktionalität ist für alle Kernkomponenten seit [Version 1.1.0 der Kernkomponenten](https://docs.adobe.com/content/docs/de/core-components/v1.html) verfügbar.
+>Die hier beschriebene Funktionalität ist für alle Kernkomponenten seit [Version 1.1.0 der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) verfügbar.
 
 ## JSON Exporter mit Inhaltsfragment-Kernkomponenten {#json-exporter-with-content-fragment-core-components}
 
-Mit dem AEM JSON Exporter können Sie die Inhalte auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese können dann von Ihren eigenen Anwendungen genutzt werden.
+Mit dem AEM JSON Exporter können Sie den Inhalt einer beliebigen AEM Seite im JSON-Datenmodellformat bereitstellen. Diese Methode kann dann von Ihren eigenen Anwendungen genutzt werden.
 
-In AEM erfolgt die Bereitstellung mit dem `model`-Selektor und der `.json`-Erweiterung.
+Der Versand wird AEM mithilfe des -Selektors durchgeführt `model` und `.json` -Erweiterung.
 
 `.model.json`
 
-1. Zum Beispiel werden über eine URL wie:
+1. Beispielsweise eine URL wie:
 
    ```shell
    http://localhost:4502/content/we-retail/language-masters/en.model.json
    ```
 
-1. Inhalte der folgenden Art bereitgestellt:
+1. Stellt Inhalte bereit, z. B.:
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
 Alternativ können Sie die Inhalte eines strukturierten Inhaltsfragments bereitstellen, indem Sie dieses spezifisch nachverfolgen.
 
-Verwenden Sie dazu den vollständigen Pfad zum Fragment (über `jcr:content`); beispielsweise mit dem folgenden Suffix:
+Verwenden Sie den gesamten Pfad zum Fragment (über den `jcr:content`); zum Beispiel mit einem Suffix wie .
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
-Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten verschiedener Art enthalten. Sie können außerdem Mechanismen wie Listenkomponenten verwenden, um automatisch nach relevantem Inhalt zu suchen.
+Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten verschiedener Typen enthalten. Sie können auch Mechanismen wie Listenkomponenten verwenden, um automatisch nach relevanten Inhalten zu suchen.
 
-* Zum Beispiel werden über eine URL wie:
+* Beispielsweise eine URL wie:
 
    ```shell
    http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
    ```
 
-* Inhalte der folgenden Art bereitgestellt:
+* Stellt Inhalte bereit, z. B.:
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -87,7 +87,7 @@ Siehe auch:
 
 * Sling-Modelle:
 
-   * [Sling-Modelle – Zuweisung von Modellklassen und Ressourcentypen seit 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Sling-Modelle - Verknüpfen einer Modellklasse mit einem Ressourcentyp seit 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM mit JSON:
 
@@ -95,12 +95,12 @@ Siehe auch:
 
 ## Verwandte Dokumentation {#related-documentation}
 
-Weitere Informationen finden Sie unter:
+Weiterführende Ressourcen:
 
-* Das [Thema „Inhaltsfragmente“ im Assets-Benutzerhandbuch](https://helpx.adobe.com/de/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
+* Das [Thema „Inhaltsfragmente“ im Assets-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html?lang=en&amp;topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
 * [Aktivieren eines JSON-Exports für eine Komponente](/help/sites-developing/json-exporter-components.md)
 
-* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und die [Inhaltsfragmentkomponente](https://helpx.adobe.com/de/experience-manager/core-components/using/content-fragment-component.html)
+* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)

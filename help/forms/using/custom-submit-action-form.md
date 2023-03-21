@@ -1,7 +1,7 @@
 ---
 title: Schreiben benutzerdefinierter Übermittlungsaktionen für adaptive Formulare
 seo-title: Writing custom Submit action for adaptive forms
-description: Mit AEM forms können Sie benutzerdefinierte Übermittlungsaktionen für adaptive Formulare erstellen. Dieser Artikel beschreibt die Vorgehensweise beim Hinzufügen einer benutzerdefinierten Übermittlungsaktion zu einem adaptiven Formular.
+description: Mit AEM forms können Sie benutzerdefinierte Übermittlungsaktionen für adaptive Formulare erstellen. In diesem Artikel wird das Verfahren zum Hinzufügen einer benutzerdefinierten Übermittlungsaktion für adaptive Formulare beschrieben.
 seo-description: AEM Forms lets you create custom Submit action for Adaptive forms. This article describes the procedure to add custom Submit action for Adaptive forms.
 uuid: fd8e1dac-b997-4e86-aaf6-3507edcb3070
 content-type: reference
@@ -10,10 +10,10 @@ topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1629'
-ht-degree: 100%
+source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+workflow-type: tm+mt
+source-wordcount: '1616'
+ht-degree: 89%
 
 ---
 
@@ -53,11 +53,11 @@ Die XML-Daten werden mit dem Abfrageparameter **`jcr:data`** an das Servlet gese
 
 ### Aktionsfelder {#action-fields}
 
-Eine Sende-Aktion kann (mit dem HTML-Tag [input](https://developer.mozilla.org/de/docs/Web/HTML/Element/Input)) verborgene Eingabefelder zu dem gerenderten Formular-HTML hinzufügen. Diese verborgenen Felder können Werte enthalten, die bei der Verarbeitung der Formularübermittlung benötigt werden. Wenn das Formular gesendet wird, werden diese Formularwerte als Abfrageparameter zurückgegeben, die die Sende-Aktion während der Verarbeitung der Übermittlung verwenden kann. Die Eingabefelder werden als Aktionsfelder bezeichnet.
+Eine Sende-Aktion kann (mit dem HTML-Tag [input](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Input)) verborgene Eingabefelder zu dem gerenderten Formular-HTML hinzufügen. Diese verborgenen Felder können Werte enthalten, die bei der Verarbeitung der Formularübermittlung benötigt werden. Wenn das Formular gesendet wird, werden diese Formularwerte als Abfrageparameter zurückgegeben, die die Sende-Aktion während der Verarbeitung der Übermittlung verwenden kann. Die Eingabefelder werden als Aktionsfelder bezeichnet.
 
 Eine Sende-Aktion, die auch die für das Ausfüllen eines Formulars benötigte Zeit erfasst, kann beispielsweise die verborgenen Eingabefelder `startTime` und `endTime` hinzufügen.
 
-Ein Skript kann die Werte der Felder `startTime` und `endTime` bereitstellen, wenn das Formular ausgegeben bzw. bevor das Formular übermittelt wird. Das Skript für die Übermittlungsaktion, `post.jsp`, kann dann mithilfe von Abfrageparametern auf diese Felder zugreifen und die für das Ausfüllen des Formulars benötigte Gesamtzeit berechnen.
+Ein Skript kann die Werte der Felder `startTime` und `endTime` bereitstellen, wenn das Formular ausgegeben bzw. bevor das Formular übermittelt wird. Die ActionScript zum Senden `post.jsp` Sie können dann mithilfe von Anforderungsparametern auf diese Felder zugreifen und die zum Ausfüllen des Formulars erforderliche Gesamtdauer berechnen.
 
 ### Dateianhänge {#file-attachments}
 
@@ -79,7 +79,7 @@ for (Map.Entry<String, RequestParameter[]> param : requestParameterMap.entrySet(
 
 Nach dem Ausführen der gewünschten Aktion leitet das Sende-Servlet die Abfrage an den Weiterleitungspfad weiter. Eine Aktion verwendet die setForwardPath-API, um den Weiterleitungspfad im Guide Submit-Servlet festzulegen.
 
-Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Übermittlungs-Servlet den Browser mithilfe der Umleitungs-URL um. Der Autor konfiguriert die Umleitungs-URL über die Konfiguration der Danksagungsseite im Dialogfeld für die Bearbeitung adaptiver Formulare. Sie können die Umleitungs-URL auch über die Übermittlungsaktion konfigurieren oder die setRedirectUrl-API im Guide Submit-Servlet einrichten. Sie können die an die Umleitungs-URL gesendeten Abfrageparameter auch mit der setRedirectParameters-API im Guide Submit-Servlet konfigurieren.
+Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Übermittlungs-Servlet den Browser mithilfe der Umleitungs-URL um. Der Autor konfiguriert die Umleitungs-URL über die Konfiguration der Danksagungsseite im Dialogfeld für die Bearbeitung adaptiver Formulare. Sie können die Umleitungs-URL auch über die Übermittlungsaktion konfigurieren oder die setRedirectUrl-API im Guide Submit-Servlet einrichten. Sie können die an die Umleitungs-URL gesendeten Anforderungsparameter auch mithilfe der setRedirectParameters -API im Guide Submit-Servlet konfigurieren.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ Wenn die Aktion keinen Weiterleitungspfad bereitstellt, leitet das Übermittlung
 
 Bei einer Übermittlungsaktion handelt es sich um ein sling:Folder, das Folgendes enthält:
 
-* **addfields.jsp**: Dieses Skript stellt die Aktionsfelder bereit, die der HTML-Datei während der Ausgabe hinzugefügt werden. Verwenden Sie dieses Skript, um im Skript „post.POST.jsp“ verborgene Eingabeparameter hinzuzufügen, die während der Übermittlung benötigt werden.
+* **addfields.jsp**: Dieses Skript stellt die Aktionsfelder bereit, die der HTML-Datei während der Ausgabe hinzugefügt werden. Verwenden Sie dieses Skript, um ausgeblendete Eingabeparameter hinzuzufügen, die während der Übermittlung im Skript post.POST.jsp erforderlich sind.
 * **dialog.xml**: Dieses Skript ähnelt dem Dialogfeld für die CQ-Komponente. Es enthält Konfigurationsinformationen, die der Autor anpasst. Die Felder werden im Dialogfeld für die Bearbeitung des adaptiven Formulars auf der Registerkarte „Aktionen übermitteln“ angezeigt, wenn Sie die Sende-Aktion auswählen.
 * **post.POST.jsp**: Das Submit-Servlet ruft dieses Skript mit den Daten, die Sie übermitteln, und den zusätzlichen Daten aus den vorherigen Bereichen auf. Jede Erwähnung einer Aktionsausführung auf dieser Seite impliziert die Ausführung des Skripts „post.POST.jsp“. Um die Sende-Aktion mit dem adaptiven Formular zu registrieren, sodass sie im Dialogfeld für die Bearbeitung des adaptiven Formulars angezeigt wird, fügen Sie diese Eigenschaften zum sling:Folder: hinzu:
 
@@ -102,9 +102,9 @@ Bei einer Übermittlungsaktion handelt es sich um ein sling:Folder, das Folgende
 
 ## Erstellen einer benutzerdefinierten Übermittlungsaktion {#creating-a-custom-submit-action}
 
-Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlungsaktion zu erstellen, die die Daten im CRX-Repository speichert und anschließend eine E-Mail an Sie sendet. Das adaptive Formular enthält die OOTB-Übermittlungsaktion „Inhalt speichern“ (veraltet), die die Daten im CRX-Repository speichert. Zudem stellt CQ eine [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)-API zum Senden von E-Mails bereit. Vor der Verwendung der Mail-API [konfigurieren Sie](https://docs.adobe.com/docs/en/cq/current/administering/notification.html?wcmmode=disabled#Configuring the Mail Service) den Service „Day CQ Mail“ über die Systemkonsole. Sie können die Aktion „Inhalt speichern“ (veraltet) erneut verwenden, um Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet) ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
+Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlungsaktion zu erstellen, die die Daten im CRX-Repository speichert und anschließend eine E-Mail an Sie sendet. Das adaptive Formular enthält die OOTB-Übermittlungsaktion „Inhalt speichern“ (veraltet), die die Daten im CRX-Repository speichert. Zudem stellt CQ eine [Mail](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)-API zum Senden von E-Mails bereit. Vor der Verwendung der Mail-API müssen Sie den Service „Day CQ Mail“ über die Systemkonsole [konfigurieren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de&amp;wcmmode=disabled). Sie können die Aktion „Inhalt speichern“ (veraltet) erneut verwenden, um Daten im Repository zu speichern. Die Aktion „Inhalt speichern“ (veraltet) ist im Ordner /libs/fd/af/components/guidesubmittype/store im CRX-Repository verfügbar.
 
-1. Melden Sie sich unter der URL https://&lt;server>:&lt;port>/crx/de/index.jsp bei CRXDE Lite an. Erstellen Sie einen Knoten mit der Eigenschaft „sling:Folder“ und dem Namen „store_and_mail“ im Ordner /apps/custom_submit_action. Erstellen Sie den Ordner „custom_submit_action“, sofern dieser nicht bereits vorhanden ist.
+1. Melden Sie sich unter der URL https://&lt;server>:&lt;port>/crx/de/index.jsp bei CRXDE Lite an. Erstellen Sie einen Knoten mit der Eigenschaft „sling:Folder“ und dem Namen „store_and_mail“ im Ordner /apps/custom_submit_action. Erstellen Sie den Ordner custom_submit_action , falls er noch nicht vorhanden ist.
 
    ![Screenshot zur Erstellung eines Knotens mit der Eigenschaft „sling:Folder“](assets/step1.png)
 
@@ -120,9 +120,9 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlung
 
    ![Anpassen der E-Mail-Aktion](assets/step3.png)
 
-1. **Machen Sie die Aktion im Dialogfeld für die Bearbeitung adaptiver Formulare verfügbar.**
+1. **Stellen Sie die Aktion im Dialogfeld &quot;Bearbeiten des adaptiven Formulars&quot;zur Verfügung.**
 
-   Fügen Sie im Knoten „store_and_email“ die folgenden Eigenschaften ein:
+   Fügen Sie die folgenden Eigenschaften im Knoten store_and_email hinzu:
 
    * **guideComponentType** vom Typ **String** mit dem Wert **fd/af/components/guidesubmittype**
 
@@ -138,11 +138,11 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Übermittlung
 
    Fügen Sie der Aktion das Skript „post.POST.jsp“ hinzu. (/apps/custom_submit_action/store_and_mail/).
 
-   Führen Sie die OOTB-Speicheraktion aus (Skript „post.POST.jsp“). Verwenden Sie die API [FormsHelper.runAction](https://docs.adobe.com/docs/en/cq/current/javadoc/com/day/cq/wcm/foundation/forms/FormsHelper.html#runAction(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse)), die CQ in Ihrem Code bereitstellt, um die Aktion des Speicherns auszuführen. Fügen Sie der JSP-Datei den folgenden Code hinzu:
+   Führen Sie die OOTB-Speicheraktion aus (Skript „post.POST.jsp“). Verwenden Sie die [FormsHelper.runAction](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)(java.lang.String, java.lang.String, org.apache.sling.api.resource.Resource, org.apache.sling.api.SlingHttpServletRequest, org.apache.sling.api.SlingHttpServletResponse) API, die CQ in Ihrem Code bereitstellt, um die Store-Aktion auszuführen. Fügen Sie der JSP-Datei den folgenden Code hinzu:
 
    `FormsHelper.runAction("/libs/fd/af/components/guidesubmittype/store", "post", resource, slingRequest, slingResponse);`
 
-   Zum Senden der E-Mail wird im Code die E-Mail-Adresse des Empfängers aus der Konfiguration gelesen. Um den Konfigurationswert aus dem Skript der Aktion abzurufen, lesen Sie die Eigenschaften der aktuellen Ressource mit dem folgenden Code. Entsprechend können Sie die anderen Konfigurationsdateien lesen.
+   Zum Senden der E-Mail wird im Code die E-Mail-Adresse des Empfängers aus der Konfiguration gelesen. Um den Konfigurationswert aus dem Skript der Aktion abzurufen, lesen Sie die Eigenschaften der aktuellen Ressource mit dem folgenden Code. Ebenso können Sie die anderen Konfigurationsdateien lesen.
 
    `ValueMap properties = ResourceUtil.getValueMap(resource);`
 
