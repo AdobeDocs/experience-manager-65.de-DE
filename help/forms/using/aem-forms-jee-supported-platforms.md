@@ -509,17 +509,17 @@ AEM Forms App unterstützt jetzt Apache Cordova. Die folgenden plattformspezifis
 </table>
 
 >[!NOTE]
-PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
-Zusätzlich gilt Folgendes:
-- PDF Generator erfordert die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder der Acrobat 2017-Version 17.011.30078, um die Konvertierung durchzuführen.
-- PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft Office Professional Plus und andere für die Konvertierung erforderliche Software.
-- PDF Generator unterstützt nicht Microsoft Office 365.
-- PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt.
-- Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
-- Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung je nach Ihrer Implementierung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
-- Der PDF Generator-Service unterstützt nicht Microsoft Windows 10.
-- PDF Generator kann Dateien mit Microsoft Visio 2019 nicht konvertieren. Sie können Microsoft Visio 2016 weiterhin verwenden, um .VSD- und .VSDX-Dateien zu konvertieren.
-- PDF Generator kann Dateien mit Microsoft Project 2019 nicht konvertieren. Sie können weiterhin Microsoft Project 2016 verwenden, um .MPP-Dateien zu konvertieren.
+>PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
+>Zusätzlich gilt Folgendes:
+>- PDF Generator erfordert die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder der Acrobat 2017-Version 17.011.30078, um die Konvertierung durchzuführen.
+>- PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft Office Professional Plus und andere für die Konvertierung erforderliche Software.
+>- PDF Generator unterstützt nicht Microsoft Office 365.
+>- PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt.
+>- Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
+>- Eine Version von Acrobat wird im Paket mit AEM Forms bereitgestellt, um die PDF Generator-Funktionen zu aktivieren. Auf diese Version sollte während der während der Geltungsdauer der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur vom Programm aus mit AEM Forms zugegriffen werden. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung je nach Ihrer Implementierung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html)).
+>- Der PDF Generator-Service unterstützt nicht Microsoft Windows 10.
+>- PDF Generator kann Dateien mit Microsoft Visio 2019 nicht konvertieren. Sie können Microsoft Visio 2016 weiterhin verwenden, um .VSD- und .VSDX-Dateien zu konvertieren.
+>- PDF Generator kann Dateien mit Microsoft Project 2019 nicht konvertieren. Sie können weiterhin Microsoft Project 2016 verwenden, um .MPP-Dateien zu konvertieren.
 >
 
 
@@ -633,7 +633,7 @@ Für zusätzliche Anforderungen siehe:
 </table>
 
 >[!NOTE]
-Die Acrobat DC-Produktfamilie führt zwei Linien für Acrobat und Reader ein, wobei es sich im Wesentlichen um zwei verschiedene Produkte handelt: „Klassik“ und „Fortlaufend“. Details und einen Vergleich der beiden Modi finden Sie unter [https://www.adobe.com/go/acrobatdctracks_de](https://www.adobe.com/go/acrobatdctracks_de).
+>Die Acrobat DC-Produktfamilie führt zwei Linien für Acrobat und Reader ein, wobei es sich im Wesentlichen um zwei verschiedene Produkte handelt: „Klassik“ und „Fortlaufend“. Details und einen Vergleich der beiden Modi finden Sie unter [https://www.adobe.com/go/acrobatdctracks_de](https://www.adobe.com/go/acrobatdctracks_de).
 
 ### Browser {#browsers}
 
@@ -675,12 +675,12 @@ Die Acrobat DC-Produktfamilie führt zwei Linien für Acrobat und Reader ein, wo
 </table>
 
 >[!NOTE]
-Für Desktops gelten die folgenden Browser-bedingten Ausnahmen:
-- Safari wird nur unter Mac OS X unterstützt.
-- Workspace unterstützt Safari 5.1 unter Macintosh OS X 10.6 und 10.7 mit Acrobat DC oder höheren Versionen. Weitere Informationen zur Kompatibilität von Safari 5.1 mit Adobe Acrobat Reader finden Sie unter [https://helpx.adobe.com/de/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/de/x-productkb/multi/safari-5-1-incompatible-reader.html).
-- Administration Console wird in Safari nicht unterstützt.
-- Correspondence Management unterstützt nicht Windows® Internet Explorer 9.0 für AEM 6.1-Formulare.
-- Forms Portal unterstützt die JAWS 14.0-Bildschirmlesehilfe-Software in Internet Explorer 11 für einen leichteren Zugriff.
+>Für Desktops gelten die folgenden Browser-bedingten Ausnahmen:
+>- Safari wird nur unter Mac OS X unterstützt.
+>- Workspace unterstützt Safari 5.1 unter Macintosh OS X 10.6 und 10.7 mit Acrobat DC oder höheren Versionen. Weitere Informationen zur Kompatibilität von Safari 5.1 mit Adobe Acrobat Reader finden Sie unter [https://helpx.adobe.com/de/x-productkb/multi/safari-5-1-incompatible-reader.html](https://helpx.adobe.com/de/x-productkb/multi/safari-5-1-incompatible-reader.html).
+>- Administration Console wird in Safari nicht unterstützt.
+>- Correspondence Management unterstützt nicht Windows® Internet Explorer 9.0 für AEM 6.1-Formulare.
+>- Forms Portal unterstützt die JAWS 14.0-Bildschirmlesehilfe-Software in Internet Explorer 11 für einen leichteren Zugriff.
 
 
 #### Mobile Clients {#mobile-clients}
@@ -711,7 +711,7 @@ Für Desktops gelten die folgenden Browser-bedingten Ausnahmen:
 </table>
 
 >[!NOTE]
-- Forms Portal wird nur auf einem iPad nur in Safari unterstützt.
+>- Forms Portal wird nur auf einem iPad nur in Safari unterstützt.
 
 
 ### AEM Forms-App {#aem-forms-workspace-app}
@@ -777,15 +777,15 @@ Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.10.0 vom 7. Septe
 - OpenOffice 4.1.2
 
 >[!NOTE]
-Die Plattformen, die mit AEM Forms 6.5.12.0 und 6.5.10.0 als [veraltet gekennzeichnet werden, werden bis zur Freigabe von AEM Forms 6.5 Service Pack 18 (6.5.18.0) weiterhin unterstützt](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
+>Die Plattformen, die mit AEM Forms 6.5.12.0 und 6.5.10.0 als [veraltet gekennzeichnet werden, werden bis zur Freigabe von AEM Forms 6.5 Service Pack 18 (6.5.18.0) weiterhin unterstützt](https://helpx.adobe.com/de/support/programs/eol-matrix.html).
 
 ## Revisionsverlauf {#revision-history}
 
-- 01. September 2022
+- &#x200B;01. September 2022
 
    - Es wurde Unterstützung für Oracle Java™ SE 11 (64 Bit) SDK für Anwendungs-Server JBoss EAP 7.4 hinzugefügt.
 
-- 03. März 2022
+- &#x200B;03. März 2022
 
    - Die Unterstützung für Folgendes wurde entfernt:
       - IBM® J9 Virtual Machine (Build 2.8, JRE 1.8.0)
@@ -796,11 +796,11 @@ Die Plattformen, die mit AEM Forms 6.5.12.0 und 6.5.10.0 als [veraltet gekennzei
       - IBM Filenet 5.2
       - Adobe Flash Player
 
-- 10. Oktober 2021
+- &#x200B;10. Oktober 2021
 
    - Die unterstützte Version von iOS für die Mobile App von AEM Forms wurde in iOS 15.1 geändert. Die vorherige Version war iOS 12.
 
-- 07. September 2021
+- &#x200B;07. September 2021
    - **Plattformaktualisierungen**: [!DNL Adobe Experience Manager Forms] on JEE unterstützt nun die folgenden Plattformen:
       - [!DNL Adobe Acrobat 2020]
       - [!DNL Ubuntu 20.04]
@@ -809,11 +809,11 @@ Die Plattformen, die mit AEM Forms 6.5.12.0 und 6.5.10.0 als [veraltet gekennzei
       - [!DNL Microsoft Windows Server 2019]
       - [!DNL RHEL8]
 
-- 03. Dezember 2020
+- &#x200B;03. Dezember 2020
    - Mit AEM Forms 6.5.7.0 oder höher wurde Unterstützung für die folgende Plattform hinzugefügt:
       - [!DNL Microsoft SQL Server 2019]
 
-- 09. September 2020
+- &#x200B;09. September 2020
 
    - Die unterstützte Version von iOS für die Mobile App von AEM Forms wurde in iOS 12 geändert. Die vorherige Version war iOS 11.
 
