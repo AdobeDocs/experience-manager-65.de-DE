@@ -2,7 +2,7 @@
 sub-product: AEM Content and Commerce
 user-guide-title: AEM Content and Commerce
 breadcrumb-title: Commerce-Anleitung
-user-guide-description: Erfahren Sie, wie Sie Adobe Experience Manager Content and Commerce verwenden und verwalten.
+user-guide-description: Erfahren Sie, wie Sie AEM Content and Commerce verwenden und verwalten.
 source-git-commit: 0ae78938641c383a65462096235e3b62d6b67e23
 workflow-type: tm+mt
 source-wordcount: '123'

@@ -4,7 +4,7 @@ product: adobe experience manager
 solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.5-Implementierungsanleitung
-breadcrumb-title: Implementierungsanleitung
+breadcrumb-title: Bereitstellungshandbuch
 user-guide-description: Erfahren Sie mehr über die Installation, Bereitstellung und Architektur von Adobe Experience Manager 6.5, einschließlich unserer Cloud-Implementierung von Adobe Managed Services.
 feature: Deploying
 role: Architect
