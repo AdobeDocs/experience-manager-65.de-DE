@@ -3,9 +3,9 @@ title: AEM 6.5-Bereitstellungshandbuch für Benutzer
 seo-title: AEM 6.5 Deploying User Guide
 description: Erfahren Sie mehr über die Installation und Bereitstellung von Adobe Experience Manager 6.5 und über die zugehörige Architektur sowie die Cloud-Implementierung mit Adobe Managed Services.
 exl-id: 4a82008c-af69-414e-bd98-c7f683a74905
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '380'
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '361'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,6 @@ Dieses Handbuch behandelt alle Aufgaben rund um die Bereitstellung von AEM, z. 
 | [Benutzerhandbuch Verwaltung](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM-Projekt erfolgreich verwalten. |
 | [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM. |
 | [Mobilbenutzeranleitung](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=de) | In diesem Handbuch erfahren Sie, wie Sie anwendergenerierten Content für Livefyre freigeben. |
 
 ## Wichtige AEM-Ressourcen
 

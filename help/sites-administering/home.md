@@ -2,9 +2,9 @@
 title: AEM 6.5-Administratorenanleitung
 description: Erfahren Sie mehr über die Verwaltung von AEM 6.5. Diese Handbücher decken Site-Funktionen, Bereitstellungsvorgänge, Sicherheitsfunktionen, Personalisierung, Integration und mehr ab.
 exl-id: 299c783a-1495-4c0d-8431-cd7de142a163
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '347'
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '328'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,6 @@ Erfahren Sie mehr über die Verwaltung von AEM 6.5. Diese Handbücher decken Si
 | [Benutzerhandbuch Verwaltung](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM-Projekt erfolgreich verwalten. |
 | [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM. |
 | [Mobilbenutzeranleitung](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=de) | In diesem Handbuch erfahren Sie, wie Sie anwendergenerierten Content für Livefyre freigeben. |
 
 ## Wichtige AEM-Ressourcen
 

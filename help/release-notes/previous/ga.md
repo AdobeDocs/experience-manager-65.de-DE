@@ -2,10 +2,10 @@
 title: Allgemeine Versionshinweise zu  [!DNL Adobe Experience Manager]  6.5
 description: Informationen zu [!DNL Adobe Experience Manager] 6.5 mit Versionshinweisen, Angaben zu neuen Funktionen und zur Installation sowie ausführlichen Auflistungen von Änderungen.
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
-workflow-type: ht
-source-wordcount: '4697'
-ht-degree: 100%
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '4675'
+ht-degree: 80%
 
 ---
 
@@ -52,7 +52,7 @@ Quickstart verwendet Eclipse Jetty 9.4.15 als Servlet-Engine.
 
 #### Benutzeroberfläche {#user-interface}
 
-Die Benutzeroberfläche wurde verbessert, um sie effizienter und anwenderfreundlicher zu gestalten.
+An der Benutzeroberfläche wurden verschiedene Verbesserungen vorgenommen, um sie produktiver und benutzerfreundlicher zu gestalten.
 
 * Es gibt eine neue Benutzeroberfläche zur Verwaltung von Berechtigungen von Benutzern und Gruppen..
 * In Spaltenansichten werden nun auch nur noch die Einträge geladen, die auf dem Bildschirm sichtbar sind. Weitere Einträge werden nur geladen, wenn der Anwender zu scrollen beginnt. In der Listen- und Kartenansicht gilt dies bereits seit Version 6.0 (verbessert in Version 6.4).
@@ -62,7 +62,7 @@ Die Benutzeroberfläche wurde verbessert, um sie effizienter und anwenderfreundl
 
 >[!CAUTION]
 >
->Adobe plant keine weiteren Verbesserungen an der klassischen UI. In AEM 6.5 ist die klassische UI integriert und Kunden, die auf diese Version aktualisieren, können diese wie gehabt verwenden. Die klassische Benutzeroberfläche ist zwar veraltet, wird aber weiterhin vollständig unterstützt. [Weitere Informationen](/help/sites-deploying/ui-recommendations.md).
+>Adobe plant keine weiteren Verbesserungen an der klassischen Benutzeroberfläche. AEM Version 6.5 enthält die klassische Benutzeroberfläche, und Kunden, die ein Upgrade von früheren Versionen durchführen, können diese weiterhin unverändert verwenden. Die klassische Benutzeroberfläche ist zwar veraltet, wird aber weiterhin vollständig unterstützt. [Weitere Informationen](/help/sites-deploying/ui-recommendations.md).
 
 #### Suche und Indizierung {#indexing-and-search}
 
@@ -88,7 +88,7 @@ Die Benutzeroberfläche wurde verbessert, um sie effizienter und anwenderfreundl
 
 >[!CAUTION]
 >
->Aufgrund der neuen Version von Oak Segment Tar, die mit AEM 6.3 eingeführt wurde, ist eine Repository-Migration erforderlich. Dieser Schritt ist obligatorisch, wenn Sie eine Aktualisierung von einer älteren TarMK-Version durchführen oder von einem anderen Persistenztyp zum neuen Segment-TAR-Format wechseln möchten. Weitere Informationen zu den Vorteilen des neuen Segment-TAR-Formats finden Sie unter [Migration auf Oak-Segment-TAR – Häufig gestellte Fragen (FAQ)](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+>Aufgrund der neuen Version von Oak Segment Tar, die mit AEM 6.3 eingeführt wurde, ist eine Repository-Migration erforderlich. Dieser Schritt ist obligatorisch, wenn Sie eine Aktualisierung von einer älteren TarMK-Version durchführen oder von einem anderen Persistenztyp zum neuen Segment-TAR-Format wechseln möchten. Weitere Informationen zu den Vorteilen des neuen Segment-TAR finden Sie unter [Häufig gestellte Fragen zur Migration zu Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 
 #### OSGI {#osgi}
 
@@ -104,38 +104,38 @@ Die Benutzeroberfläche wurde verbessert, um sie effizienter und anwenderfreundl
 
 ### [!DNL Experience Manager] Sites {#experience-manager-sites}
 
-#### Managed-Single-Page-Apps {#managed-single-page-apps}
+#### Verwaltete Einzelseiten-Apps {#managed-single-page-apps}
 
-Der Seiten-Editor ermöglicht nun kontextbezogene Inhaltsbearbeitungen und Erstell-/Layoutvorgänge in Client-seitig gerenderter Erlebnissen (auch als [SPA-Editor](/help/sites-developing/spa-architecture.md) bekannt). Vorhandene Single-Page-Apps, die auf dem JavaScript-Framework React oder Angular basieren, können mit AEM SJ SDK erweitert werden, damit sie von Experten bearbeitet werden können.
+Der Seiten-Editor ermöglicht nun kontextbezogene Inhaltsbearbeitungen und Erstell-/Layoutvorgänge in Client-seitig gerenderter Erlebnissen (auch als [SPA-Editor](/help/sites-developing/spa-architecture.md) bekannt). Vorhandene Einzelseiten-Apps, die mit JavaScript-Framework React oder Angular erstellt wurden, können mit dem AEM SJ SDK erweitert werden, damit sie für Anwender bearbeitbar sind.
 
-Die zunächst als Teil von AEM 6.4 SP2 bereitgestellte SPA-Unterstützung bietet in AEM 6.5 folgende Funktionen:
+Zuerst im Lieferumfang von AEM 6.4 SP2 enthalten, bietet AEM 6.5 die SPA-Unterstützung folgende Funktionen:
 
-* Bearbeiten und Konfigurieren der bearbeitbaren AEM-Teile der SPA mit dem Vorlagen-Editor
+* Verwenden Sie den Vorlagen-Editor, um die AEM bearbeitbaren Teile des SPA zu bearbeiten und zu konfigurieren
 * Erstellen von landesbezogenen bzw. Franchise- oder White-Label-SPA-Erlebnissen durch Multi-Site-Management
 
 #### Headless-Content-Management {#headless-content-management}
 
-Mit AEM können Inhalte in verschiedenen Formaten und aus verschiedenen Ebenen des Stapels bereitgestellt werden. Einige von ihnen sind durch das [Sling GET-](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) und [POST-Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html) bereits seit 2008 verfügbar. Content Services ([Sling Model Exporter](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=de)) wurden in AEM 6.3 eingeführt und sind die von AEM SJ SDK eingesetzte Hydrationsmethode für Single-Page-Apps. Die [HTTP-API für Assets](/help/assets/mac-api-assets.md) ist eine für AEM 6.5 erweiterte CRUD-API. 
+Mit AEM können Inhalte in verschiedenen Formaten und aus verschiedenen Ebenen des Stapels bereitgestellt werden. Einige sind seit 2008 mit dem [Sling GET](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) und [POST Servlet](https://sling.apache.org/documentation/bundles/manipulating-content-the-slingpostservlet-servlets-post.html). Content Services ([Sling Model Exporter](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=de)) wurde in AEM 6.3 eingeführt und ist die Methode, die vom AEM SJ SDK verwendet wird, um Single-Page-Apps zu hydrieren. Die [HTTP-API für Assets](/help/assets/mac-api-assets.md) ist eine CRUD-API, die für AEM 6.5 erweitert wurde.
 
 Neue HTTP-API-Funktionen:
 
 * Es wurde [Unterstützung von Inhaltsfragmenten in der HTTP-API für Assets](/help/assets/assets-api-content-fragments.md) zum Erstellen, Aktualisieren, Lesen und Löschen von Fragmenten hinzugefügt.
 * Offenlegung von Inhaltsfragmentlisten über Content Services mit der [Kernkomponenten-Inhaltsfragmentliste](https://www.aemcomponents.dev)
-* [Kernkomponentenbibliothek](https://www.aemcomponents.dev) zur Anzeige der Content Services-JSON-Standardausgabe für jede Komponente
+* [Kernkomponentenbibliothek](https://www.aemcomponents.dev) , die für jede Komponente die standardmäßige Content Services-JSON-Ausgabe anzeigt
 
 #### Screens-Add-on {#screens-add-on}
 
 Sie können Erlebnisse effizient entwickeln, bereitstellen und optimieren, und zwar auf allen digitalen Displays, ob interaktiver Kiosk oder digitale Beschilderung (Digital Signage).
 
-* Vereinheitlichung von Erlebnissen und Inhalten, online und offline, mit verbesserter Wiederverwendung von Inhalten
-* Optimierte Erstellungs- und Genehmigungs-/Veröffentlichungsworkflows mit Unterstützung für Launches
-* Bearbeitung und Bereitstellung von ansprechenden, interaktiven Erlebnissen mit dem SPA-Editor
+* Vereinheitlichung von Erlebnissen und Inhalten für digitale und In-Store-Geräte mit verbesserter Wiederverwendung von Inhalten
+* Optimierte Bearbeitungs- und Genehmigungs-/Veröffentlichungs-Workflows mit Unterstützung für Launches
+* Bearbeiten und Bereitstellen interaktiver Erlebnisse mit dem SPA Editor
 * Mit Launches können Sie zukünftige Inhaltsänderungen für Signage-Content planen.
 * Es sind getaktete Wiedergaben in einem Sequenzkanal möglich.
 * Automatisches Erstellen von Projektstrukturen anhand einer Quelldatei, z. B. einer Excel-Tabelle
 * Erweiterte Medienplayer-Unterstützung für zuverlässigen Online- und Offlinebetrieb (Smart Sync), skalierbar sogar für größte Signage-Netzwerke
-* Ortsbezogene Personalisierung oder Konfiguration von datenbasierten Inhalten durch Nutzung dynamischer Platzhalter
-* Einheitliche Einblicke durch die Adobe Analytics-Integration in AEM Screens Player
+* Personalisieren Sie den durch Daten ausgelösten Inhalt nach Ort oder Konfiguration mithilfe dynamischer Platzhalter.
+* Einheitliche Einblicke durch die Integration von Adobe Analytics in den AEM Screens Player
 
 Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionshinweisen des [AEM Screens-Benutzerhandbuchs](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=de).
 
@@ -148,7 +148,7 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
    * „in“-Operator für Zeichenfolgen, Arrays und Objekte:
 
       ```html
-      ${'a' in 'abc’}
+      ${'a' in 'abc'}
       ${100 in myArray}
       ${'a' in myObject}
       ```
@@ -183,34 +183,34 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 >
 >AEM umfasst Version 1.12.4 der jQuery-Bibliothek, um für größtmögliche Kompatibilität mit vorhandenem benutzerdefinierten Code zu sorgen. Adobe hat Änderungen vorgenommen, um bekannte Sicherheitsprobleme zu beheben.
 
-#### Site-Administration {#site-administration}
+#### Site-Verwaltung {#site-administration}
 
-* Die Leiste [Verweis](/help/sites-authoring/author-environment-tools.md#references) enthält einen neuen Abschnitt, in dem interne, auf die ausgewählte Seite verweisende Links aufgelistet werden. Dies ist nützlich, wenn eine Seite offline geschaltet oder gelöscht werden soll. So können Sie sehen, welche Seiten vor der Offlineschaltung angepasst werden müssen.
+* Die [Referenz](/help/sites-authoring/author-environment-tools.md#references) enthält einen neuen Abschnitt, in dem interne Links aufgelistet werden, die auf die ausgewählte Seite verweisen. Dies ist nützlich, wenn Sie planen, eine Seite offline zu schalten oder zu löschen - um zu sehen, welche Seiten angepasst werden müssen, bevor sie offline geschaltet werden.
 * Die [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) enthält eine neue Workflow-Spalte, die den Status anzeigt, wenn sich die Seite in einem Workflow befindet.
-* In den [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) können Sie nun nach vorhandenen Elementen suchen, wenn Sie der Seite eine Miniaturansicht zuweisen (Registerkarte „Miniatur“).
+* Im [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md)können Sie jetzt nach vorhandenen Assets suchen, wenn Sie der Seite eine Miniaturansicht zuweisen (Registerkarte &quot;Miniatur&quot;).
 
 #### Seiteneditor {#page-editor}
 
 * Der Seiten-Editor ermöglicht kontextbezogenes Bearbeiten und Erstellen von Single-Page-Apps-Erlebnissen mit Client-seitigen React- und Angular-Komponenten, die das JS-SDK nutzen (auch als SPA-Editor bezeichnet).
-* Der Strukturvorlagen-Modus wird nur angezeigt, wenn für die Seite eine Strukturvorlagen-Seite konfiguriert ist.
+* Der Strukturvorlagenmodus wird nur angezeigt, wenn auf der Seite eine Strukturvorlagenseite konfiguriert ist.
 
 #### Inhaltsfragmente und Editor {#content-fragments-amp-editor}
 
 * Mit der neuen Leiste [Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) im Inhaltsfragmente-Editor können Sie allgemeine Kommentare erstellen und Kommentare innerhalb des Texts anzeigen (erscheinen ebenfalls in der Leiste „Timeline“).
 * Es ist nun möglich, den standardmäßigen Inhaltstyp eines mehrzeiligen Textelements in einem [Inhaltsfragmentmodell](/help/assets/content-fragments/content-fragments-models.md) auf einfachen Text, Rich-Text oder Markdown festzulegen.
-* [Kommentare/Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) können per Textauswahl in RTE (Vollbildansicht) hinzugefügt werden.
-* In der Leiste „Verweis“ können Versionen von Inhaltsfragmenten nebeneinander [verglichen](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) werden.
-* Der heruntergeladene Bericht eines Assets zeigt nun die entsprechenden Inhaltsfragmente an.
-* Durch /api.json kann [Unterstützung für Inhaltsfragmente zur Assets-HTTP-API](/help/assets/assets-api-content-fragments.md) hinzugefügt werden. Es sind APIs zum Erstellen, Aktualisieren, Lesen und Löschen von Inhaltsfragmenten vorhanden.
+* Hinzufügen [Kommentare/Anmerkungen](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) durch Auswahl von Text im RTE (Vollbildansicht)
+* [Versionen vergleichen](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) von einem Inhaltsfragment über die Leiste &quot;Referenz&quot;nebeneinander
+* Der Asset-Download-Bericht zeigt jetzt Inhaltsfragmente entsprechend an
+* Hinzufügen [Unterstützung von Inhaltsfragmenten für die Assets-HTTP-API](/help/assets/assets-api-content-fragments.md) über /api.json. Es sind APIs zum Erstellen, Aktualisieren, Lesen und Löschen von Inhaltsfragmenten vorhanden.
 
-#### Experience Fragments {#experience-fragments}
+#### Experience Fragments  {#experience-fragments}
 
-* Die Indizierung von [Experience Fragments](/help/sites-authoring/experience-fragments.md) wurde verbessert, sodass deren Inhalte bei der Suche nach Seiten mit diesen Experience Fragments gefunden werden..
+* Verbesserte Indizierung von [Experience Fragments](/help/sites-authoring/experience-fragments.md), sodass ihr Inhalt bei der Suche nach Seiten gefunden wird, auf denen sie verwendet werden.
 * Mit der Option [In Ziel exportieren](/help/sites-administering/experience-fragments-target.md) können Sie nun das Experience Fragment als JSON (Standard ist HTML) oder beides senden.
 
 #### Übersetzung {#translation}
 
-* Übersetzungsprojekte lassen sich durch Projekt-Master einfacher erstellen..
+* Vereinfachen Sie die Erstellung von Übersetzungsprojekten mithilfe von Projekt-Mastern.
 * Übersetzungsprojekte können einfacher ausgeführt werden, indem Sie für Übersetzungsaufträge standardmäßig den Status auf „Genehmigt“ festlegen.
 * Sie können zulassen, dass übersetzte Seiten mit Änderungen aus dem Translation Memory von Drittanbietern aktualisiert werden.
 * Sie können zulassen, dass Übersetzungsaufträge in das JSON-Format exportiert werden.
@@ -224,10 +224,10 @@ Weitere Informationen zu Änderungen in AEM Screens finden Sie in den Versionsh
 
 #### Launches {#launches}
 
-* Neben neuer Prüf- und Genehmigungsworkflows für Launches ist es möglich, den Promotion-Schritt auf genehmigte Launch-Seiten zu beschränken.
-* In der [UI wurde eine Option zum Löschen des Launch gleich nach dem Promotion-Schritt](/help/sites-authoring/launches-promoting.md#promoting-launch-pages) hinzugefügt.
+* Neuer Prüfungs- und Genehmigungsarbeitsablauf für Launches und Möglichkeit, nur genehmigte Launch-Seiten zu bewerben
+* Hinzugefügt [Option in der Benutzeroberfläche zum Löschen des Launches direkt nach dem Promotion-Schritt](/help/sites-authoring/launches-promoting.md#promoting-launch-pages)
 
-#### Content-Targeting und Simulation {#content-targeting-simulation}
+#### Content-Targeting und -Simulation {#content-targeting-simulation}
 
 * Die ContextHub-Datenebene und die Client-seitige JavaScript-Regel-Engine wurden so aktualisiert, dass standardmäßig jQuery 3 verwendet wird.
 
@@ -271,7 +271,7 @@ Die Community-Admins müssen die Funktion **Erwähnung aktivieren** in den Commu
 
 **Gruppennachrichten**
 
-Registrierte Community-Mitglieder können nun eine einzige E-Mail verfassen und diese direkt per Massenversand an Gruppen senden, anstatt dieselbe Nachricht einzeln an die jeweiligen Gruppenmitglieder verschicken zu müssen. Um [Gruppennachrichten](/help/communities/configure-messaging.md) zuzulassen, aktivieren Sie beide Instanzen des [Messaging Operations Service](/help/communities/messaging.md#group-messaging).
+Registrierte Community-Mitglieder können jetzt über eine einzelne E-Mail-Komposition Direktnachrichten stapelweise an Gruppen senden, anstatt dieselbe Nachricht einzeln an Gruppenmitglieder zu senden. Um [Gruppennachrichten](/help/communities/configure-messaging.md) zuzulassen, aktivieren Sie beide Instanzen des [Messaging Operations Service](/help/communities/messaging.md#group-messaging).
 
 ![Gruppennachricht](/help/release-notes/assets/group-messaging.png)
 
@@ -285,25 +285,25 @@ In [GitHub](https://github.com/Adobe-Marketing-Cloud/aem-communities-extensions/
 
 ![Benutzerdefinierte Filter](/help/release-notes/assets/custom-tag-filter.png)
 
-**Listenansicht bei Massenmoderation**
+**Listenansicht bei der Massenmoderation**
 
-Eine neue Listenansicht mit verbesserter UI wurde im Bereich für Massenmoderation bereitgestellt, um Einträge zu anwendergenerierten Inhalten anzuzeigen.
+In der Massenmoderation wurde eine neue Listenansicht mit verbesserter Benutzeroberfläche zur Anzeige benutzergenerierter Inhalte bereitgestellt.
 
 ![Massenmoderation in der Listenansicht](/help/release-notes/assets/list-view-moderation.png)
 
-##### Verbesserte Site- und Gruppenverwaltung {#enhancements-to-site-and-group-management}
+##### Verbesserungen der Site- und Gruppenverwaltung {#enhancements-to-site-and-group-management}
 
 **Autorseitige Site- und Gruppenadministratoren**
 
-Communities ermöglicht ab AEM 6.5 das dezentrale Verwalten (und Managen) verschiedener Community-Sites und Gruppen/verschachtelter Gruppen. Organisationen, die mehrere Community-Sites und verschachtelte Gruppen hosten, können nun beim Erstellen der Site (Gruppe) autorseitig Mitglieder für Administratorrollen auswählen.
+Communities ab 6.5 ermöglicht die dezentrale Verwaltung (und Verwaltung) verschiedener Community-Sites und -Gruppen/ verschachtelter Gruppen. Organisationen, die mehrere Community-Sites und verschachtelte Gruppen hosten, können jetzt Mitglieder für Administratorrollen auf Autorenseite zum Zeitpunkt der Erstellung der Site (und Gruppe) auswählen.
 
 ![Site-Admin](/help/release-notes/assets/site-admin.png)
 
-Site-Admins können eine Gruppe auf jeder Hierarchieebene erstellen und zu Standardadmins werden. Diese Admins können später von anderen Gruppenadmins entfernt werden. Gruppenadministratoren können ihre Gruppe G1 verwalten und eine unter G1 verschachtelte Untergruppe erstellen.
+Site-Admins können eine Gruppe auf jeder Hierarchieebene erstellen und zu Standardadmins werden. Diese Admins können später von anderen Gruppenadmins entfernt werden. Gruppenadministratoren können ihre Gruppe G1 verwalten und eine Untergruppe erstellen, die unter G1 verschachtelt ist.
 
-##### Verbesserte Aktivierung {#enhancements-to-enablement}
+##### Verbesserungen bei der Aktivierung {#enhancements-to-enablement}
 
-**SCORM 2017.1-Unterstützung**
+**Unterstützung für SCORM 2017.1**
 
 Die Aktivierungsfunktion von AEM 6.5 Communities unterstützt die Engine „Shareable Content Object Reference Model“ [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/).
 
@@ -361,7 +361,7 @@ Weitere Informationen finden Sie unter [Neue Funktionen in Brand Portal](https:/
 
 #### Connected Assets {#connectedassets}
 
-In großen Unternehmen kann die zur Erstellung von Websites erforderliche Infrastruktur verteilt werden. Manchmal befinden sich die Funktionen zur Website-Erstellung und die hierfür benötigten digitalen Assets in unterschiedlichen Silos.
+In großen Unternehmen kann die für die Erstellung von Websites erforderliche Infrastruktur verteilt werden. Manchmal befinden sich die Funktionen zur Website-Erstellung und die erforderlichen digitalen Assets in verschiedenen Silos.
 
 [!DNL Experience Manager Sites] bietet Funktionen zum Erstellen von Web-Seiten, während das Digital Asset Management (DAM)-System ist, das die für Websites erforderlichen Assets bereitstellt. [!DNL Experience Manager Assets] [!DNL Experience Manager] unterstützt nun dank Integration von [!DNL Sites] und [!DNL Assets] das obige Nutzungsszenario. Siehe [Konfigurieren und Verwenden der Funktion „Connected Assets“](/help/assets/use-assets-across-connected-assets-instances.md).
 
@@ -371,7 +371,7 @@ In großen Unternehmen kann die zur Erstellung von Websites erforderliche Infras
 
 #### Dynamic Media {#dynamic-media}
 
-[!DNL Dynamic Media] bietet eine erweiterte Rich-Media-Erstellung und -Bereitstellung in für beeindruckend intensive, personalisierte Erlebnisse. [!DNL Experience Manager Assets] Durch Hochladen eines einzigen hochwertigen Primär-Assets und Verwenden der erweiterten Cloudrendering-Funktion und der Viewer von Adobe können Sie eine beliebige Kombination von Ausgabedarstellungen direkt bereitstellen und so die Medienstrategie Ihres Unternehmens unterstützen.
+[!DNL Dynamic Media] bietet eine erweiterte Rich-Media-Erstellung und -Bereitstellung in für beeindruckend intensive, personalisierte Erlebnisse. [!DNL Experience Manager Assets] Durch das Hochladen eines einzelnen hochwertigen primären Assets und die Verwendung des erweiterten Cloud-Renderings und Viewers von Adobe können Sie jede Kombination von Ausgabeformaten sofort bereitstellen, um die Medienstrategie Ihres Unternehmens zu unterstützen.
 
 Weitere Informationen zu neuen [!DNL Dynamic Media]-Funktionen finden Sie in den [Versionshinweisen zu Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html?lang=de).
 
@@ -389,7 +389,7 @@ Sie können nun die Miniaturen für Ihre Video-Assets mithilfe von Frames aus de
 
 #### Verbessertes Sucherlebnis {#experience-enhancement-for-searching}
 
-Ab [!DNL Experience Manager] 6.5 können Marketing-Fachleute die gewünschten Assets schneller über die Suchergebnisseite ermitteln. Die Suchfacetten werden mit der Anzahl der Assets aktualisiert, noch bevor der Suchfilter angewendet wird. Durch Anzeige der erwarteten Anzahl im Filter können Benutzer effizient durch Suchergebnisse navigieren. Weitere Informationen finden Sie unter [Suche nach Assets in Experience Manager](/help/assets/search-assets.md).
+Ab [!DNL Experience Manager] 6.5 können Marketing-Fachleute die gewünschten Assets schneller über die Suchergebnisseite ermitteln. Die Suchfacetten werden mit der Anzahl der Assets aktualisiert, noch bevor der Suchfilter angewendet wird. Wenn die erwartete Anzahl mit dem Filter verglichen wird, können Benutzer effizient durch die Suchergebnisse navigieren. Weitere Informationen finden Sie unter [Suche nach Assets in Experience Manager](/help/assets/search-assets.md).
 
 ![Anzeigen der Asset-Anzahl ohne Filterung der Suchergebnisse in Suchfacetten](/help/assets/assets/asset_search_results_in_facets_filters.png)
 
@@ -407,7 +407,7 @@ Sie können nun alle geladenen Assets in einem Ordner oder aus einem Suchergebni
 
 Mit [!DNL Assets] können Sie Metadatenschemata für Asset-Ordner erstellen, die die auf Seiten mit Ordnereigenschaften angezeigten Layouts und Metadaten definieren. Sie können einem vorhandenen Ordner ein Ordner-Metadatenschema zu diesem Zeitpunkt oder beim Erstellen eines Ordners zuweisen. Weitere Informationen finden Sie unter [Ordner-Metadatenschema](/help/assets/metadata-config.md#folder-metadata-schema).
 
-Beim Festlegen kaskadierender Metadaten können die Optionen zur Laufzeit aus einer JSON-Datei geladen werden, anstatt sie manuell in das Formular einzugeben. Weitere Informationen finden Sie unter [Kaskadierende Metadaten](/help/assets/metadata-schemas.md#cascading-metadata).
+Beim Festlegen kaskadierender Metadaten können die Optionen zur Laufzeit aus einer JSON-Datei geladen werden, beispielsweise anstatt sie manuell im Formular einzugeben. Weitere Informationen finden Sie unter [Kaskadierende Metadaten](/help/assets/metadata-schemas.md#cascading-metadata).
 
 #### Verbessertes Reporting {#reporting-enhancements}
 
@@ -418,19 +418,15 @@ Die Inhaltsfragmente und Linkfreigaben sind nun im Bericht „heruntergeladen“
 AEM 6.5 Forms wurde um mehrere neue Funktionen und Erweiterungen ergänzt. Hier einige der Highlights:
 
 * Transaktionsberichte zur Verfolgung der Anzahl gesendeter Formulare, verarbeiteter Dokumente und gerenderter Dokumente
-* Verbesserte Nutzung interaktiver Kommunikation
-* Cloudbasierte digitale Signaturen in adaptiven Formularen
+* Verbesserungen der Benutzerfreundlichkeit bei interaktiver Kommunikation
+* Cloud-basierte digitale Signaturen in adaptiven Formularen
 * Integration adaptiver Formulare und interaktiver Kommunikation in eine Einzelseitenanwendung (Single Page Application, SPA) für AEM Sites.
 * Unterstützung für Variablen in AEM-Workflows
-* Unterstützung von Datenanzeigemustern bei interaktiver Kommunikation
-* Sortierung adaptiver Formulare und interaktiver Kommunikationstabellen
+* Unterstützung für Datenanzeigemuster bei interaktiver Kommunikation
+* Sortieren adaptiver Formulare und interaktiver Kommunikationstabellen
 * Automatische Validierung von Eingabedaten in Formulardatenmodellen
 
 Weitere Informationen zu neuen und verbesserten Funktionen sowie Dokumentationsressourcen finden Sie in der [Zusammenfassung der neuen Funktionen und Verbesserungen in AEM 6.5 Forms](/help/forms/using/whats-new.md).
-
-### [!DNL Experience Manager Livefyre] {#experience-manager-livefyre}
-
-Livefyre lässt sich in AEM 6.5-Instanzen integrieren. Siehe [Integration von Livefyre mit AEM](https://experienceleague.adobe.com/docs/experience-manager-65/administering/integration/livefyre.html?lang=de).
 
 ### Verwenden von kundenorientierter Entwicklung {#leverage-customer-focused-development}
 
@@ -438,7 +434,7 @@ Adobe verwendet ein kundenorientiertes Entwicklungsmodell, das es den Kunden erm
 
 Adobe hält die erforderlichen Vorgehensweisen und Prozesse bereit, um die Erfassung, Priorisierung und Verfolgung kundenorientierter Fehlerbehebungen und eine auf Verbesserungswünsche bezogene Entwicklung zu ermöglichen. Das [Experience Manager-Supportportal](https://experienceleague.adobe.com/?support-solution=Experience+Manager&amp;support-tab=home&amp;lang=de#support) ist mit dem Adobe Enhancement and Defect Tracking System integriert. Kundenprobleme werden, wenn möglich, gemeinsam mit dem Kunden-Support-Team identifiziert und gelöst. Bei einer Weiterleitung an Forschung und Entwicklung werden alle Kundeninformationen erfasst und zu Priorisierungs- und Reporting-Zwecken verwendet. Bei der Entwicklung haben bezahlter Support, Garantieprobleme sowie bezahlte Kundenerweiterungen Priorität.
 
-Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderungen geführt, die in AEM 6.5 vorgenommen wurden.
+Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderungen geführt, die in AEM 6.5 vorgenommen wurden.
 
 ## Liste der Dateien, die Teil der Version sind {#list-of-files-that-are-part-of-the-release}
 
@@ -450,13 +446,13 @@ Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderu
 * Plug-in für Eclipse IDE ([weitere Informationen und Download](/help/sites-developing/aem-eclipse.md))
 
 * Erweiterung für Brackets-Code-Editor ([weitere Informationen und Download](/help/sites-developing/aem-brackets.md))
-* Maven/Gradle-Abhängigkeiten ([Download-Link](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.0/))
+* Maven-/Gradle-Abhängigkeiten ([Downloadlink](https://repo1.maven.org/maven2/com/adobe/aem/uber-jar/6.5.0/))
 
 **Sites**
 
 * Kernkomponenten ([GitHub-Projekt](https://github.com/adobe/aem-core-wcm-components))
-* We.Retail-Referenzimplementierung ([weitere Informationen](/help/sites-developing/we-retail.md))
-* Maven-Projekt-Archetypen:
+* We.Retail-Referenzimplementierung ([mehr dazu](/help/sites-developing/we-retail.md))
+* Maven-Projektarchetypen:
 
    * Für Full-Stack-Sites: [GitHub-Projekt](https://github.com/adobe/aem-project-archetype)
    * Für Single-Page-Apps mit React/Angular: [GitHub-Projekt](https://github.com/adobe/aem-spa-project-archetype)
@@ -474,17 +470,17 @@ Dieser Prozess der Priorisierung hat zu mehr als 750 kundenorientierten Änderu
 
 **Assets**
 
-* Paket zum Hinzufügen der erweiterten PDF Rasterizer-Bibliothek ([weitere Informationen](/help/assets/aem-pdf-rasterizer.md))
-* Paket zum Hinzufügen von erweiterter Rohbildunterstützung ([weitere Informationen](/help/assets/camera-raw.md))
+* Paket zum Hinzufügen eines erweiterten PDF Rasterizer ([mehr dazu](/help/assets/aem-pdf-rasterizer.md))
+* Paket zum Hinzufügen der erweiterten RAW-Bildunterstützung ([mehr dazu](/help/assets/camera-raw.md))
 
 **Formulare**
 
-* [Pakete für AEM Forms-Funktionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)
+* [Pakete für AEM Forms-Funktionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de)
 * [AEM Forms – OSGi Client-SDK](https://repo1.maven.org/maven2/com/adobe/aemfd/aemfd-client-sdk/)
 
 ## Sprachen {#languages}
 
-Die Benutzeroberfläche ist in den folgenden Sprachen verfügbar:
+Die Benutzeroberfläche ist in folgenden Sprachen verfügbar:
 
 * Englisch
 * Deutsch
@@ -493,7 +489,7 @@ Die Benutzeroberfläche ist in den folgenden Sprachen verfügbar:
 * Italienisch
 * Brasilianisches Portugiesisch
 * Japanisch
-* Vereinfachtes Chinesisch
+* Chinesisch (Kurzzeichen)
 * Traditionelles Chinesisch (begrenzte Unterstützung)
 * Koreanisch
 
@@ -559,8 +555,8 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 ### Assets {#assets}
 
 * **Suche**: Die Suche gibt keine Ergebnisse zurück, wenn die Suchzeichenfolgen führende Leerzeichen enthält ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)).
-* **Ordner-Metadatenschema**: Nach Hinzufügen einer Auswahlschaltfläche entsprechen das ID-Feld und das Wertfeld nicht den Erwartungen und die Löschfunktion kann nicht verwendet werden (CQ-4261144)
-* Beim Umbenennen eines Assets ist es nicht möglich, ein Leerzeichen im Asset-Namen zu verwenden (CQ-4266403)
+* **Ordner-Metadatenschema**: Nach dem Hinzufügen einer Auswahlschaltfläche werden die Felder ID und Wert nicht erwartungsgemäß gerendert und die Löschfunktion funktioniert nicht. (CQ-4261144)
+* Beim Umbenennen eines Assets ist es nicht möglich, einen Leerraum im Asset-Namen zu verwenden. (CQ-4266403)
 
 ### Formulare {#forms}
 
@@ -568,10 +564,10 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 * (Nur AEM Forms auf WebSphere®) Die Option **Forms-Workflow** > **Aufgabensuche** gibt kein Ergebnis zurück, wenn Sie nach einem **Admin** anhand des **Benutzernamens** suchen. (CQ-4266457)
 
 * AEM Forms kann keine TIF- und TIFF-Dateien mit JPEG-Komprimierung in PDF-Dokumente konvertieren. (CQ-4265972)
-* Die Optionen **AEM Forms-Asset-Scanner** und **Letter in interaktive Kommunikation – Migration** funktionieren nicht auf der Seite **AEM Forms-Migration** (CQ-4266572)
+* Die **AEM Forms Assets-Scanner** und **Migration von Briefen zu interaktiver Kommunikation** -Optionen funktionieren nicht auf der **AEM Forms-Migration** Seite. (CQ-4266572)
 
 * (Nur JBoss® 7) Wenn von einer früheren Version ein Upgrade auf AEM 6.5 Forms durchführen und diese frühere Version Prozesse (.lca) aufwies, die eine Kopie des standardmäßigen Submit- oder Render-Prozesses erstellt und kopiert haben, können HTML5-Formulare mit solchen Prozessen (.lca) die erforderlichen Aktionen nicht ausführen. (CQ-4243928)
-* Wenn in einem adaptiven Formular ein Formulardatenmodell-Service vom Regel-Editor aufgerufen wird, um die Werte der Bildauswahlkomponente dynamisch zu aktualisieren, werden die Werte der Bildauswahlkomponente nicht aktualisiert (CQ-4254754)
+* Wenn in einem adaptiven Formular ein Formulardatenmodelldienst vom Regeleditor aufgerufen wird, um Werte der Bildauswahlkomponente dynamisch zu aktualisieren, werden die Werte der Bildauswahlkomponente nicht aktualisiert. (CQ-4254754)
 * Für das AEM Forms Designer-Installationsprogramm ist die 32-Bit-Version von [Visual C++ Redistributable Runtime Package 2012](https://docs.microsoft.com/de-de/cpp/windows/latest-supported-vc-redist?view=msvc-170) und [Visual C++ Redistributable Runtime Package 2013](https://support.microsoft.com/de-de/topic/update-for-visual-c-2013-and-visual-c-redistributable-package-5b2ac5ab-4139-8acc-08e2-9578ec9b2cf1) erforderlich. Stellen Sie vor Installationsbeginn sicher, dass die oben genannten Redistributable Runtime Packages installiert sind. (CQ-4265668)
 
 * PDF Generator unterstützt keine Authentifizierung mit Smart Card. Wenn ein Admin die Gruppenrichtlinie `Interactive Logon: Require Smart card` auf einem Windows-Server aktiviert, werden alle vorhandenen PDF Generator-Benutzenden ungültig gemacht.
@@ -580,10 +576,10 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
    * Name: allowProxy
    * Typ: Boolean
-   * Value: True
-   * Protected: False
-   * Mandatory: False
-   * Multiple: False
+   * Wert: true
+   * Geschützt: False
+   * Obligatorisch: False
+   * Mehrere: False
    * Auto Created: False
 
    Durch diese Eigenschaft können Client-Bibliotheken unter dem Laufzeitordner auf Proxys zugreifen (CQ-4268679)

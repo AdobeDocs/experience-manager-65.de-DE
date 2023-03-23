@@ -4,10 +4,10 @@ seo-title: AEM 6.5 Mobile User Guide
 description: Profitieren Sie von AEM Unterstützung zum Erstellen und Verwalten von Inhalten für mobile Apps. Hier erhalten Sie eine Einführung in und erfahren, wie Sie die On-Demand Services App und Adobe PhoneGap Enterprise erstellen, entwickeln und verwalten.
 seo-description: Describes how to create and manage content for mobile applications.
 exl-id: 3531d8ea-614d-465a-8b4a-e3e3f3461e94
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '380'
-ht-degree: 79%
+source-wordcount: '361'
+ht-degree: 81%
 
 ---
 
@@ -39,15 +39,14 @@ Profitieren Sie von AEM Unterstützung zum Erstellen und Verwalten von Inhalten 
 | [Benutzerhandbuch Verwaltung](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM-Projekt erfolgreich verwalten. |
 | [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM. |
 | [Mobilbenutzeranleitung](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=de) | In diesem Handbuch erfahren Sie, wie Sie anwendergenerierten Content für Livefyre freigeben. |
 
 ## Wichtige AEM-Ressourcen
 
 * [AEM-Tutorials](https://helpx.adobe.com/de/experience-manager/kt/index/aem-6-4-videos.html)
 * [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)
-* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de)
 * [Benutzerhandbuch zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=de#home)
 * [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)

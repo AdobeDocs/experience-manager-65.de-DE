@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Capabilities User Guide
 description: Überblick über die wichtigsten Funktionen von AEM 6.5
 seo-description: An overview of the essential capabilities of AEM 6.5
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '143'
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '129'
 ht-degree: 100%
 
 ---
@@ -44,10 +44,6 @@ ht-degree: 100%
 ## AEM Communities {#aem-communities}
 
 [Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen.](/help/communities/home.md)
-
-## AEM Livefyre {#aem-livefyre}
-
-[Geben Sie benutzergenerierte Inhalte mit AEM Livefyre frei.](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=de)
 
 ## AEM Mobile {#aem-mobile}
 

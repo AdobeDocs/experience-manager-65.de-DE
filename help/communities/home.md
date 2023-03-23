@@ -4,10 +4,10 @@ seo-title: Adobe Experience Manager 6.5 Communities Guide
 description: Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen. In unserem Handbuch erfahren Sie, wie Sie Communities bereitstellen, verwalten, entwickeln und erstellen können.
 seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 84%
+source-wordcount: '355'
+ht-degree: 88%
 
 ---
 
@@ -39,15 +39,14 @@ Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und a
 | [Benutzerhandbuch Verwaltung](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM-Projekt erfolgreich verwalten. |
 | [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM. |
 | [Mobilbenutzeranleitung](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=de) | In diesem Handbuch erfahren Sie, wie Sie anwendergenerierten Content für Livefyre freigeben. |
 
 ## Wichtige AEM-Ressourcen
 
 * [AEM-Tutorials](https://helpx.adobe.com/de/experience-manager/kt/index/aem-6-4-videos.html)
-* [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en)
-* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
+* [Dispatcher-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de?lang=en)
+* [HTL-Benutzerhandbuch](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de)
 * [Benutzerhandbuch zu Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
-* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=en)
+* [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=de?lang=en)
 * [Einhaltung der DSGVO](/help/managing/data-protection-and-privacy.md)
 * [Experience League](https://experienceleague.adobe.com/?promoid=K42KVXHD&amp;mv=other&amp;lang=de#home)
 * [AEM-Community-Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de)

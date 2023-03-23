@@ -1,7 +1,7 @@
 ---
 title: Die Checkliste – Weitere Referenzen
 seo-title: The Checklist - Further Reference
-description: Informieren Sie sich über weitere Details, die die Dokumente und Prinzipien der Checkliste „Verwalten von Projekten - Checkliste mit Best Practices“ erläutern und/oder ergänzen.
+description: Erfahren Sie mehr über weitere Details, die die Dokumente und Prinzipien der Checkliste "Verwalten von Projekten - Best Practices"erläutern und/oder ergänzen.
 seo-description: Learn about further details that elaborate on and/or augment the documents and principles covered by the Managing Projects - Best Practices Checklist.
 uuid: 58a8b4ab-e447-4a12-b9e9-4cd3db11e06a
 contentOwner: User
@@ -10,28 +10,28 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 exl-id: 36620e3e-ecdf-4062-bbef-65513362d691
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '3755'
-ht-degree: 100%
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '3699'
+ht-degree: 18%
 
 ---
 
 # Die Checkliste – Weitere Referenzen{#the-checklist-further-reference}
 
-Auf dieser Seite finden Sie weitere Details, um die Dokumente und Prinzipien von [Verwalten von Projekten - Checkliste mit Best Practices](/help/managing/best-practices.md) auszuarbeiten bzw. zu ergänzen.
+Auf dieser Seite finden Sie weitere Details, um die Dokumente und Grundsätze zu erarbeiten und/oder zu ergänzen, die unter das [Verwalten von Projekten - Checkliste mit Best Practices](/help/managing/best-practices.md).
 
-## AEM - Überblick über die Komponenten {#aem-what-will-you-be-using}
+## AEM - Was wirst du verwenden? {#aem-what-will-you-be-using}
 
 >[!CAUTION]
 >
->Die Listen in diesem Unterabschnitt sind nicht erschöpfend, sondern als Einführung gedacht.
+>Die Listen in diesem Unterabschnitt sind nicht vollständig, dienen aber als Einführung.
 
-### Funktionen innerhalb von AEM {#features-within-aem}
+### Funktionen in AEM {#features-within-aem}
 
-Bei der Implementierung von AEM (insbesondere zum ersten Mal) müssen Sie die [Funktionen und Workflows von AEM](https://www.adobe.com/de/marketing/experience-manager.html) überprüfen, um sicher zu sein, welche Bereiche Sie benötigen.
+Überprüfen Sie bei der Implementierung von AEM (insbesondere zum ersten Mal) die [Funktionen und Workflows von AEM](https://business.adobe.com/de/products/experience-manager/adobe-experience-manager.html) um sicher zu sein, welche Bereiche Sie benötigen.
 
-Beachten Sie die Funktionen von AEM, die Sie verwenden werden, und die Auswirkungen auf Ihr Design, zum Beispiel:
+Beachten Sie die Funktionen von AEM, die Sie verwenden, und die Auswirkungen auf Ihr Design. Beispiel:
 
 * [Commerce](/help/commerce/cif-classic/administering/ecommerce.md)
 * [Screens](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=de)
@@ -40,31 +40,30 @@ Beachten Sie die Funktionen von AEM, die Sie verwenden werden, und die Auswirkun
 * [Multi-Site-Management und Übersetzung](/help/sites-administering/msm-and-translation.md)
 * [Formulare](/help/forms/home.md)
 * [Communities](/help/communities/deploy-communities.md)
-* [Livefyre](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
-Überprüfen Sie außerdem die [Versionshinweise](/help/release-notes/release-notes.md) für die verschiedenen Versionen von AEM, um zu sehen, wann neue Funktionen hinzugefügt wurden.
+Überprüfen Sie außerdem die [Versionshinweise](/help/release-notes/release-notes.md)für die verschiedenen Versionen von AEM, um zu sehen, wann neue Funktionen hinzugefügt wurden.
 
 ### Integrationen {#integrations}
 
-AEM kann mit anderen Adobe-Produkten und/oder Dienstleistungen von Drittanbietern integriert werden. Diese können die Ihnen zur Verfügung stehende Leistung und Funktionalität steigern.
+AEM können mit anderen Adobe-Produkten oder mit Drittanbieterdiensten oder beidem integriert werden. Diese Workflows können Ihnen mehr Leistung und Funktionalität zur Verfügung stellen.
 
-Siehe [Lösungsintegration](/help/sites-administering/integration.md) für ausführliche Informationen.
+Siehe [Lösungsintegration](/help/sites-administering/integration.md) für vollständige Informationen.
 
-## Migration oder Upgrade? {#migrate-or-upgrade}
+## Migrieren oder aktualisieren? {#migrate-or-upgrade}
 
-Es ist wichtig, dass Sie sich klar machen welche der beiden Alternativen Sie nutzen möchten:
+Eine wichtige Überlegung ist, ob Sie:
 
-* Upgrade der bestehenden Installation.
-* Migration der Inhalte vom aktuellen System auf eine frische, neue Installation.
+* Aktualisieren Sie die vorhandene Installation.
+* Migrieren Sie den Inhalt aus dem aktuellen System in eine neue Installation.
 
-Beim Wechsel von einer Vorgängerversion zur aktuellen Version gibt es zwei Möglichkeiten
+Beim Wechsel von einer vorherigen Version zur aktuellen Version gibt es zwei Optionen:
 
-* Verwenden Sie den [Package Manager](/help/sites-administering/package-manager.md), um alle Inhalte und Anwendungscodes aus dem alten System in das neue System zu exportieren.
-* [Upgrade](/help/sites-deploying/upgrade.md) des aktuellen Systems. Dies ist in den meisten Fällen die empfohlene Wahl.
+* Verwenden Sie die [Package Manager](/help/sites-administering/package-manager.md) um den gesamten Inhalt und Anwendungscode aus dem alten System in das neue zu exportieren.
+* [Upgrade](/help/sites-deploying/upgrade.md) das alte System. Diese Methode wird in der Regel empfohlen.
 
 ## Grundregeln {#basic-ground-rules}
 
-Wie bei jedem Projekt ist es wichtig, so schnell wie möglich Grundregeln festzulegen. Dazu gehören:
+Wie bei jedem Projekt ist es von entscheidender Bedeutung, so bald wie möglich Grundregeln festzulegen. Zu diesen Regeln gehören:
 
 >[!NOTE]
 >
@@ -72,223 +71,221 @@ Wie bei jedem Projekt ist es wichtig, so schnell wie möglich Grundregeln festzu
 
 * **Rollen**
 
-   Diese sollten klar definiert und allen Projektbeteiligten bekannt gemacht werden. Darüber hinaus ist es ratsam, Folgendes hervorzuheben:
+   Rollen sollten klar definiert und allen am Projekt beteiligten Personen bekannt gemacht werden. Außerdem ist es ratsam, Folgendes hervorzuheben:
 
    * Entscheidungsträger
-   * Ansprechpartner
+   * Kontaktstellen
 
-* **Verantwortlichkeiten**
+* **Zuständigkeiten**
 
-   * Für jede Rolle hilft eine klare Definition der Verantwortlichkeiten im Zusammenhang mit Ihrem Projekt, Verwirrung zu vermeiden.
+   * Für jede Rolle hilft eine klare Definition der Verantwortlichkeiten in Bezug auf Ihr Projekt, Verwirrung zu vermeiden.
 
-* **Mitwirkung**
+* **Beteiligung**
 
-   Indem Sie Interessenten so schnell wie möglich einbinden, können Sie sie ermutigen, *Projektbeteiligte* zu werden und so ihr Engagement für dessen Erfolg erhöhen.
+   Wenn Sie interessierte Kreise so bald wie möglich einbinden, können Sie sie ermutigen, *Interessengruppen* im Projekt. Dies erhöht ihr Engagement für seinen Erfolg.
 
-   * Auf der Kundenseite sind dies die Autoren, die täglich mit dem System arbeiten müssen.
-   * In Ihrem eigenen Projektteam sind dies auch die Verantwortlichen für die Qualitätssicherung. Je besser sie die Anforderungen des Kunden verstehen, desto besser können sie die Tests planen.
+   * Auf Kundenseite umfasst diese Rolle die Autoren, die täglich mit dem System arbeiten
+   * In Ihrem eigenen Projektteam gehören dazu auch die Verantwortlichen für Qualitätssicherung. Je besser sie die Anforderungen des Kunden verstehen, desto besser können sie die Tests planen.
 
+* **Kommunikationswege**
 
-* **Kommunikationwege**
-
-   * Obwohl diese nicht übermäßig formalisiert werden sollten, sollten spezifische Definitionen sicherstellen, dass die Schlüsselpersonen stets informiert und somit auf dem Laufenden gehalten werden. Besonderes Augenmerk sollte auf die Kommunikation mit externen Parteien gelegt werden.
+   * Auch wenn die Kommunikationswege nicht übermäßig formalisiert werden sollten, sollten spezifische Definitionen gewährleisten, dass die Schlüsselpersonen stets informiert und somit auf dem neuesten Stand gehalten werden. Besonderes Augenmerk sollte auf die Kommunikation mit externen Parteien gelegt werden.
 
 * **Prozesse**
 
-   Die zu definierenden Prozesse hängen von Ihrem individuellen Projekt ab. Versuchen Sie auch hier, die Umstände einfach zu halten hinsichtlich:
+   Die definierten Prozesse hängen von Ihrem jeweiligen Projekt ab. Versuchen Sie erneut, diese Prozesse einfach zu halten, unter Berücksichtigung von:
 
-   * Definition von Prozessen (und Kommunikationswegen) für die Interaktion mit Dritten, z. B. Designagenturen und Softwarelieferanten.
-   * Häufig verfügt der Kunde über eigene Projektmanagement- und Reporting-Verfahren und -Werkzeuge.
+   * Definition von Prozessen (und Kommunikationswegen) für die Interaktion mit Dritten; z. B. Designagenturen und Drittanbieter von Software.
+   * Häufig verfügt der Kunde über eigene Projektmanagement- und Reporting-Verfahren und -Tools.
 
-* **Tracking-Werkzeuge**
+* **Tracking-Tools**
 
-   Es gibt viele Tools, um Informationen über Fehler, Aufgaben und andere Aspekte Ihres Projekts zu verfolgen - siehe [Übersicht der möglichen Tools](#overview-of-potential-tools) für weitere Details.
+   Es gibt viele Tools zum Tracking von Informationen zu Fehlern, Aufgaben und anderen Aspekten Ihres Projekts - siehe [Übersicht über potenzielle Tools](#overview-of-potential-tools) für weitere Details.
 
-   * Dabei ist es wichtig, nur eine Kopie der Informationen aufzubewahren und die Informationen (und damit den Zugriff auf das verwendete Tool) zu teilen. Dies erleichtert die Wartung und hilft, Unstimmigkeiten zu vermeiden.
+   * Wichtig ist hier, dass nur eine Kopie der Informationen gespeichert und die Informationen (und damit der Zugriff auf das verwendete Tool) weitergegeben werden. Dieser Workflow vereinfacht die Wartung und verhindert Diskrepanzen.
 
 * **Umfang**
 
-   Definieren Sie klar, was das Projekt auf verschiedenen Ebenen abdecken soll:
+   Definieren Sie eindeutig, was auf verschiedenen Ebenen von dem Projekt abgedeckt werden soll:
 
-   * die einzelnen Versionen (wenn ein periodischer Freigabeprozess verwendet wird und unabhängig davon, ob sie an Kunden oder Ihr internes Testteam ausgeliefert werden).
-   * das AEM-Projekt.
-   * das gesamte Projekt, einschließlich der Software von Drittanbietern, deren Auswirkungen auf Tests, organisatorische Fragen und viele andere.
-   * Für bestimmte Aspekte kann es auch sinnvoll sein anzugeben, was *nicht* im Umfang des Projekts liegt. Dies kann dazu beitragen, Verwirrung und falsche Annahmen zu vermeiden, sollte sich aber auf das Wesentliche beschränken.
+   * die einzelnen Versionen (wenn ein iterativer Freigabeprozess verwendet wird und unabhängig davon, ob sie an Kunden oder Ihr internes Testteam bereitgestellt werden).
+   * das AEM Projekt.
+   * das gesamte Projekt; einschließlich Software von Drittanbietern, Auswirkungen auf Tests, organisatorische Probleme und viele andere.
+   * Für bestimmte Aspekte kann es auch nützlich sein, anzugeben, was *not* im Rahmen des Projekts. Diese Idee kann dazu beitragen, Verwirrung und falsche Annahmen zu vermeiden, sollte aber auf grundlegende Fragen beschränkt sein.
 
 * **Reporting**
 
-   Definieren Sie klar, welche Informationen Sie in welcher Form, wie oft und an wen melden werden.
+   Definieren Sie klar, welche Informationen Sie melden möchten, in welcher Form, wie oft und an wen.
 
 * **Terminologie**
 
-   * Definieren Sie eventuell zu verwendende Abkürzungen und/oder kundenspezifische Terminologie.
+   * Definieren Sie die zu verwendenden Abkürzungen und/oder kundenspezifischen Begriffe.
 
 * **Annahmen**
 
-   * Definieren Sie die getroffenen Annahmen.
+   * Definieren Sie die möglichen Annahmen.
 
-Diese Informationen können in einem Projekthandbuch definiert werden; die Verwendung eines Wikis kann auch dazu beitragen, dass laufende Änderungen effizient behandelt werden. Wo immer diese definiert sind, sind die Schlüsselfaktoren:
+Diese Informationen können in einem Projekthandbuch definiert werden; die Verwendung eines Wikis kann auch dazu beitragen, dass laufende Änderungen effizient behandelt werden. Wo immer diese Annahmen definiert sind, sind die Schlüsselfaktoren:
 
 * Informationen werden definiert und gepflegt
-* Die Informationen werden klar und deutlich an alle Beteiligten kommuniziert. Obwohl Standard-Projektmanagement-Praxis, kann es nicht oft genug wiederholt werden, dass eine klare Rollendefinition und gute Kommunikation entscheidend für den Erfolg eines Projekts sind.
-* Von allen Informationen, die verfolgt werden, wird nur eine Version gespeichert, z. B. Bug-Verfolgung, Problem-Tracking usw.
+* Die Informationen werden allen beteiligten Personen klar mitgeteilt. Obwohl die Standard-Projektmanagementpraxis nicht oft genug wiederholt werden kann, um eine klare Rollendefinition und eine gute Kommunikation zu einem Projekt führen oder es unterbrechen zu können.
+* Es wird nur eine Version der verfolgten Informationen aufbewahrt. z. B. Fehlerverfolgung und Problemverfolgung.
 
-## Leistungsindikatoren und Zielmetriken {#key-performance-indicators-and-target-metrics}
+## Wichtige Leistungsindikatoren und Zielmetriken {#key-performance-indicators-and-target-metrics}
 
-Unternehmen verwenden Key Performance Indicators (KPIs), um ihren Erfolg bei der Erreichung von Zielen zu bewerten. Diese Indikatoren sind messbare Werte, die zeigen, wie effektiv bestimmte Ziele erreicht werden.
+Unternehmen verwenden Key Performance Indicators (KPIs), um ihren Erfolg bei der Erreichung von Zielen zu bewerten. Diese Indikatoren sind messbare Werte, anhand derer nachgewiesen werden kann, wie effektiv bestimmte Ziele erreicht werden.
 
 Diese Indikatoren können sein:
 
-* Business:
+* Handel:
 
-   * Zur Messung der wichtigsten Unternehmensziele.
-   * Es ist wichtig, KPIs zu wählen, die zu Ihrem Unternehmen/Szenario passen, mit klaren Definitionen dessen, was sie sind, wie sie gemessen werden, wie sie verwendet werden und von wem.
+   * Dient zur Messung der wichtigsten Geschäftsziele.
+   * Es ist wichtig, KPIs auszuwählen, die für Ihr Unternehmen/Szenario geeignet sind, mit klaren Definitionen dessen, was sie sind, wie sie gemessen werden, wie sie verwendet werden und von wem.
 
 * Leistung:
 
-   * Legen Sie fest, wie die Performance des Systems gemessen werden soll.
+   * Definieren Sie, wie Sie die Leistung des Systems messen.
    * Einige Beispiele sind die Seitenladezeit, die Antwortzeit des Servers und die Leistung der Datenbankabfrage.
 
 Einige, aber nicht alle Indikatoren können auf den Zielmetriken basieren, die Sie identifizieren und definieren.
 
-### Ziel-Metriken {#target-metrics}
+### Zielmetriken {#target-metrics}
 
-Metriken werden verwendet, um quantitative Messungen für die Qualität Ihrer Website zu definieren - sie sind im Wesentlichen eine Definition der Leistungsziele, die Sie erreichen wollen, und können zur Definition der [Key Performance Indicators (KPIs)](#key-performance-indicators-and-target-metrics) verwendet werden.
+Metriken dienen zur Definition quantitativer Messungen für die Qualität Ihrer Website. Sie sind im Grunde eine Definition der Leistungsziele, die Sie erreichen möchten, und können zur Definition Ihrer [KPIs (Key Performance Indicators)](#key-performance-indicators-and-target-metrics).
 
-Sie können eine Vielzahl von Metriken definieren, die meisten decken jedoch die Ziele für Leistung und Gleichzeitigkeit ab. Insbesondere Faktoren, die schwer zu quantifizieren sind und *gefühlte* Wahrnehmung beinhalten:
+Sie können eine Vielzahl von Metriken definieren, die meisten decken jedoch die Ziele für Leistung und Gleichzeitigkeit ab. Insbesondere Faktoren, die schwer zu quantifizieren sind und häufig anfällig für *emotional* Bewertung:
 
-* „Unsere Website ist heute *viel zu langsam*“ - wie qualifiziert sich *langsam*?
+* &quot;Die Website ist *viel zu langsam* today&quot;- Wann passiert? *langsam* qualifizieren?
 
-* „Alles *kommt zum Stillstand*, wenn sich mein Kollege einloggt“ - wie viele gleichzeitige Benutzer unterstützt das System?
-* „Wenn ich eine Suchanfrage starte, kommt das *System zum Stillstand*“ - welche Art von Suchanfragen wirken sich auf das System aus?
-* „Es *dauert ewig*, die Datei herunterzuladen“ - was sind akzeptable Downloadzeiten (unter normalen Netzwerkbedingungen)?
+* &quot;alles *Einfrieren* wann sich mein Kollege anmeldet&quot;- wie viele gleichzeitige Benutzer kann das System unterstützen?
+* &quot;Wenn ich suche, das System *Einfrieren* &quot; - Welche Suchanfragen wirken sich auf das System aus?
+* &quot;es dauert *ages* zum Herunterladen der Datei&quot; - welche Download-Zeiten sind akzeptabel (unter normalen Netzwerkbedingungen)?
 
-Zielmetriken werden zu Beginn eines Projektes definiert:
+Target-Metriken werden zu Beginn eines Projekts definiert, um:
 
-* Um die gewünschten Dimensionen der Website anzugeben, die Sie anbieten möchten.
-* Um die Mindestqualität anzugeben, die erreicht werden soll.
-* Um zu definieren, wie diese Faktoren gemessen werden.
-* Als Basis für die [Key Performance Indicators](#key-performance-indicators-and-target-metrics).
+* die erwarteten Dimensionen der Website angeben, die Sie anbieten können
+* die Mindestqualität angeben, die Sie erreichen möchten
+* bestimmen, wie diese Faktoren gemessen werden
+* als Grundlage für die [Key Performance Indicators](#key-performance-indicators-and-target-metrics)
 
 Wie immer ist bei der Definition der Zielmetriken Vorsicht geboten:
 
-* Wenn sie zu hoch eingestellt sind, können sie völlig unerreichbar sein.
-* Wenn sie zu gering eingestellt sind, werden Schwankungen möglicherweise nicht hervorgehoben.
-* Sie müssen sicherstellen, dass sie wiederholt und konsistent gemessen werden können.
-* Sie müssen einen Ausgleich zwischen den verschiedenen zu messenden Faktoren zu schaffen.
-* Bestimmte Metriken beziehen sich auf eine Testumgebung, aber einige sollten reale Szenarien widerspiegeln, da sie auf Ihrer Produktionswebsite messbar und reproduzierbar sein müssen.
-* Priorisieren Sie die Metriken entsprechend ihrer Bedeutung für die Website.
-* Beschränken Sie die Metriken auf eine Menge, die realistisch überwacht werden kann
+* wenn sie zu hoch eingestellt sind, können sie unerreichbar sein
+* bei zu niedrigen Schwankungen nicht hervorgehoben werden
+* um sicherzustellen, dass sie wiederholt und konsistent gemessen werden können
+* einen Ausgleich über die verschiedenen zu messenden Faktoren
+* bestimmte Metriken beziehen sich auf eine Testumgebung, einige sollten jedoch reale Szenarien widerspiegeln, da sie auf Ihrer Produktionswebsite messbar und reproduzierbar sein müssen
+* die Metriken entsprechend ihrer Bedeutung für die Website priorisieren
+* beschränken Sie die Metriken auf einen Satz, der überwacht werden kann.
 
-Während der Entwicklung des Projekts können sie aktualisiert und entsprechend angepasst werden. Nachdem das Projekt erfolgreich umgesetzt wurde, können sie Ihnen helfen, Ihre Installation zu steuern und die erforderlichen Servicelevel für den laufenden Betrieb zu überwachen und aufrechtzuerhalten.
+Während der Entwicklung des Projekts können sie aktualisiert und nach Bedarf angepasst werden. Nachdem das Projekt erfolgreich implementiert wurde, können sie verwendet werden, um Sie bei der Kontrolle Ihrer Installation und der Überwachung/Aufrechterhaltung der erforderlichen Servicestufe für den laufenden Betrieb zu unterstützen.
 
-Bei richtiger Anwendung können diese Metriken ein nützliches Werkzeug sein; bei unverantwortlicher Anwendung können sie eine zeitraubende Ablenkung darstellen. Wie immer müssen Sie verstehen, was Sie messen, wie Sie es messen und warum.
+Bei richtiger Anwendung können diese Metriken ein nützliches Werkzeug sein; bei unverantwortlicher Anwendung können sie eine zeitraubende Ablenkung darstellen. Verstehen Sie wie immer, was Sie messen, wie Sie es messen und warum.
 
 >[!NOTE]
 >
->In diesem Abschnitt werden die Grundprinzipien und Fragen behandelt, die zu berücksichtigen sind. Jede Installation ist anders beschaffen, sodass sich die tatsächlich zu messenden Werte unterscheiden
+>In diesem Abschnitt werden die Grundprinzipien und die zu prüfenden Fragen erläutert. Jede Installation ist anders, sodass die tatsächlichen zu messenden Werte tendenziell unterschiedlich sind.
 
-### Alles dies beruht auf Ihrem Projektdesign {#everything-rests-on-your-project-design}
+### Alles hängt von Ihrem Projektdesign ab {#everything-rests-on-your-project-design}
 
-Alle zu messenden Metriken werden auf irgendeine Weise durch den Entwurf des Projekts beeinflusst. Umgekehrt lassen sich viele Probleme am besten durch Entwurfsänderungen lösen.
+Alle gemessenen Metriken sind vom Design Ihres Projekts betroffen. Umgekehrt lassen sich viele Probleme am besten durch Designänderungen lösen.
 
-Deshalb sollten Sie Ihre Zielmetriken definieren, *bevor*Sie sich für Ihr Design entscheiden. 
-So können Sie Ihr Design auf Basis dieser Faktoren optimieren. So können Sie Ihr Design auf Basis dieser Faktoren optimieren. Sobald Ihr Projekt entwickelt ist, wird es schwierig, Änderungen an den grundlegenden Entwurfsprinzipien vorzunehmen.
+Definieren Sie daher Ihre Zielmetriken. *before* über Ihr Design entscheiden. Auf diese Weise können Sie Ihr Design anhand dieser Faktoren optimieren. Nach der Entwicklung Ihres Projekts sind die grundlegenden Designprinzipien anspruchsvoll.
 
-Wenn Sie die Struktur für die Website erstellen, folgen Sie der empfohlenen Struktur für AEM Sites. Stellen Sie sicher, dass Sie die folgenden Punkte und/oder Prinzipien verstehen:
+Wenn Sie die Struktur für die Website erstellen, folgen Sie der empfohlenen Struktur für AEM Sites. Vergewissern Sie sich, dass Sie die folgenden Probleme und/oder Prinzipien verstehen:
 
-* Wie der Inhalt der Website strukturiert ist.
-* Wie Vorlagen und Komponenten funktionieren.
-* Wie Zwischenspeicherung funktioniert.
+* So strukturieren Sie Website-Inhalte.
+* Funktionsweise von Vorlagen und Komponenten.
+* Wie funktioniert das Zwischenspeichern?
 * Die Auswirkungen personalisierter Inhalte.
-* Wie die Suchfunktion funktioniert.
-* Wie Sie CSS und verwandte Technologien nutzen können, um kompakten, nicht redundanten HTML-Code zu erstellen.
+* Funktionsweise der Suchfunktion.
+* Wie Sie CSS und zugehörige Technologien verwenden können, um kompakten, nicht redundanten HTML-Code zu erstellen.
 
-Wenn Sie der Meinung sind, dass Ihr Design nicht den Richtlinien entspricht, oder wenn Sie sich über einige der Auswirkungen unsicher sind, klären Sie diese Fragen, bevor Sie entweder mit der Programmierphase beginnen oder den Inhalt ausfüllen.
+Wenn Sie der Meinung sind, dass Ihr Design nicht den Richtlinien entspricht, oder wenn Sie sich bezüglich einiger der Auswirkungen nicht sicher sind, klären Sie diese Probleme. Führen Sie diese Schritte aus, bevor Sie mit der Programmierung oder dem Ausfüllen des Inhalts beginnen.
 
 ### Infrastruktur {#infrastructure}
 
-Um die Infrastruktur zu definieren oder zu bewerten, hilft es, Zielwerte zu definieren, wie z. B.:
+Zur Definition oder Bewertung der Infrastruktur ist es hilfreich, Zielwerte zu definieren, z. B.:
 
 * Besucher/Tag; sowohl Durchschnitt als auch Spitze
-* Aufrufe/Tag; sowohl Durchschnitt als auch Spitze
-* Anzahl der zur Verfügung gestellten Webseiten
+* Treffer/Tag; sowohl Durchschnitt als auch Spitze
+* Anzahl der verfügbaren Webseiten
 * Volumen des Webinhalts
 
-Abhängig von Ihrer Situation und der strategischen Bedeutung der Website hilft Ihnen dies bei der Bewertung und Auswahl Ihrer Infrastruktur:
+Je nach Ihrer Situation und der strategischen Bedeutung der Website können Sie mithilfe der Definition der Infrastruktur Ihre Infrastruktur bewerten und auswählen:
 
 * Anzahl der Server
-* Anzahl der AEM-Instanzen (Autor und Veröffentlichung)
+* Anzahl AEM Instanzen (Autor und Veröffentlichung)
 
 ### Leistung {#performance}
 
-Es gibt mehrere Leistungsfaktoren, die ausgewertet werden können:
+Es gibt verschiedene Leistungsfaktoren, die ausgewertet werden können:
 
-* Antwortzeiten für einzelne Seiten unter Berücksichtigung von:
+* Antwortzeiten für einzelne Seiten, unter Berücksichtigung:
 
    * Antwortzeiten in einer Autorenumgebung
    * Antwortzeiten in der Veröffentlichungsumgebung
 
 * Antwortzeiten für Suchanfragen
 
-Dieser Abschnitt kann in Verbindung mit dem Abschnitt [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) gelesen werden, in dem die technischen Details der eigentlichen Leistungsmessung näher erläutert werden.
+Dieser Abschnitt kann gelesen werden mit [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) die die technischen Details der tatsächlichen Leistungsmessung erweitert.
 
-#### Antwortzeiten für einzelne Seiten {#response-times-for-individual-pages}
+#### Reaktionszeiten einzelner Seiten {#response-times-for-individual-pages}
 
-Ein wichtiger Faktor ist die Zeit, die Ihre Website benötigt, um auf Anforderungen durch Besuchende zu reagieren.
+Ein wichtiges Problem ist die Zeit, die Ihre Website benötigt, um auf Besucheranfragen zu reagieren.
 
-Obwohl dieser Wert für jede Anforderung anders ist, kann ein durchschnittlicher Zielwert definiert werden. Sobald sich gezeigt hat, dass dieser Wert längerfristig erreichbar ist, kann er verwendet werden, um die Leistung der Website zu überwachen und auf potenzielle Probleme hinzuweisen
+Obwohl dieser Wert für jede Anforderung unterschiedlich ist, kann ein durchschnittlicher Zielwert definiert werden. Sobald sich gezeigt hat, dass dieser Wert sowohl erreichbar als auch wartbar ist, kann er verwendet werden, um die Leistung der Website zu überwachen und die Entwicklung potenzieller Probleme anzuzeigen.
 
-Unterschiedliche Ziele für Autoren- und Veröffentlichungsumgebung
+Unterschiedliche Ziele in Autoren- und Veröffentlichungsumgebungen
 
-Die Antwortzeiten, die Sie anstreben, sind je nach Autoren- und Veröffentlichungsumgebung unterschiedlich und spiegeln die Zielgruppe wider:
+Die Antwortzeiten, die Sie anstreben, unterscheiden sich in der Autoren- und Veröffentlichungsumgebung und spiegeln die Zielgruppe wider:
 
 * **Autorenumgebung**
 
-   Diese Umgebung wird von Autoren benutzt, die Inhalte eingeben und aktualisieren, also muss sie:
+   Diese Umgebung wird von Autoren verwendet, die Inhalte eingeben und aktualisieren. Daher muss sie:
 
-   * einer kleinen Anzahl von Nutzern gerecht werden, die bei der Aktualisierung von Inhaltsseiten und den einzelnen Elementen auf diesen Seiten eine hohe Anzahl von Aufrufen erzeugen
-   * so schnell wie möglich sein, um ihre Produktivität zu maximieren und die Inhalte auf die Website bringen.
+   * für einige Benutzer, die beim Aktualisieren von Inhaltsseiten und einzelnen Elementen auf diesen Seiten eine hohe Anzahl von Anforderungen generieren
+   * so schnell wie möglich sein, um die Produktivität zu maximieren, damit Ihre Inhalte auf Ihre Website gelangen
 
 * **Veröffentlichungsumgebung**
 
-   Diese Umgebung enthält Inhalte, die Sie Ihren Benutzern zugänglich machen:
+   Diese Umgebung enthält Inhalte, die Sie Ihren Benutzern zur Verfügung stellen:
 
-   * Geschwindigkeit ist auch hier wichtig, darf aber gewöhnlich langsamer sein als in der Autorenumgebung.
-   * häufig werden zusätzliche leistungssteigernde Mechanismen eingesetzt:
+   * Die Geschwindigkeit ist weiterhin wichtig, ist aber oft langsamer als die Autorenumgebung
+   * Häufig werden zusätzliche leistungssteigernde Mechanismen angewendet:
 
-      * Der Inhalt wird zwischengespeichert
-      * Lastausgleich wird angewendet
+      * der Inhalt zwischengespeichert wird
+      * Lastenausgleich wird angewendet
 
-#### Zielvorgabe für Antwortzeiten festlegen {#setting-target-response-times}
+#### Festlegen der Target-Antwortzeiten {#setting-target-response-times}
 
-Wie können Sie die erreichbaren (durchschnittlichen) Antwortzeiten bestimmen? Dies ist häufig eine Frage der Erfahrung:
+Wie können Sie über erreichbare (durchschnittliche) Antwortzeiten entscheiden? Die Frage und Antwort ist oft eine Frage der Erfahrung:
 
-* bisherige Erfahrungen auf Ihrer Website
-* Erfahrung mit AEM
-* Erkennen von komplexen Seiten mit überdurchschnittlichen Antwortzeiten (diese sollten möglichst individuell optimiert werden)
+* Erlebnis auf Ihrer Website
+* Erlebnis mit AEM
+* Erkennung komplexer Seiten mit überdurchschnittlichen Antwortzeiten (diese Seiten sollten nach Möglichkeit einzeln optimiert werden).
 
-Allerdings können (unter kontrollierten Umständen) die folgenden Richtlinien angewendet werden:
+Unter kontrollierten Umständen können jedoch die folgenden Leitlinien angewendet werden:
 
-* 70 % der Seitenanfragen sollten in weniger als 100 ms beantwortet werden.
-* 25 % der Seitenanfragen sollten in weniger als 100 ms–300 ms beantwortet werden.
-* 4 % der Seitenanfragen sollten in weniger als 300 ms–500 ms beantwortet werden.
-* 1 % der Seitenanfragen sollten in weniger als 500 ms–1000 ms beantwortet werden.
+* 70 % der Seitenanfragen sollten in weniger als 100 ms beantwortet werden.
+* 25 % der Seitenanfragen sollten in weniger als 100 ms bis 300 ms beantwortet werden.
+* 4 % der Seitenanfragen sollten in weniger als 300 ms bis 500 ms beantwortet werden.
+* 1 % der Seitenanfragen sollten in weniger als 500 ms bis 1000 ms beantwortet werden.
 * Keine Seite sollte langsamer als 1 Sekunde reagieren.
 
-Bei den obigen Zahlen gelten die folgenden Bedingungen:
+Die obigen Zahlen gehen von folgenden Bedingungen aus:
 
-* gemessen in der Veröffentlichungsumgebung (nicht Autorenumgebung und/oder CFC-Overhead)
-* gemessen auf dem Server (kein Netzwerk-Overhead)
-* nicht zwischengespeichert (kein AEM-Ausgabe-Cache, kein Dispatcher-Cache)
-* nur für komplexe Objekte mit vielen Abhängigkeiten (HTML, JS, PDF usw.)
-* keine andere Last auf dem System
+* gemessen bei der Veröffentlichung (keine Authoring-Umgebung und/oder CFC-Overhead)
+* gemessen auf dem Server (kein Netzwerkaufwand)
+* nicht zwischengespeichert (kein AEM-Output-Cache, kein Dispatcher-Cache)
+* nur für komplexe Elemente mit vielen Abhängigkeiten (HTML, JS, PDF, ...)
+* keine andere Belastung des Systems
 
-Es gibt verschiedene Möglichkeiten, die Sie verwenden können, um die Antwortzeiten zu überwachen:
+Es gibt verschiedene Mechanismen, mit denen Sie die Antwortzeiten überwachen können:
 
-* **Überwachung der Antwortzeiten mit dem AEM request.log**
+* **Überwachen der Antwortzeiten mit AEM request.log**
 
-   Ein guter Ausgangspunkt für Leistungsanalysen ist das Anforderungsprotokoll. Hier können Sie u.a. die Antwortzeiten einzelner Anfragen einsehen. Siehe [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Informationen.
+   Ein guter Ausgangspunkt für Leistungsanalysen ist das Anforderungsprotokoll. Neben anderen Informationen können Sie die Antwortzeiten einzelner Anforderungen anzeigen. Siehe [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
 
 * **Überwachen von Antwortzeiten mit HTML-Kommentaren**
 
@@ -298,61 +295,61 @@ Es gibt verschiedene Möglichkeiten, die Sie verwenden können, um die Antwortze
 
 #### Suchanfragen {#search-requests}
 
-Suchanfragen können im Hinblick auf folgende Bereiche einen erheblichen Einfluss auf Ihre Website haben:
+Suchanfragen können erhebliche Auswirkungen auf Ihre Website haben, sowohl im Hinblick auf Folgendes:
 
-* Antwortzeit der eigentlichen Suche
+* Antwortzeit der tatsächlichen Suche
 
    * Eine schnelle Suchfunktion ist ein Qualitätsziel für Ihre Website.
 
 * Auswirkungen auf die allgemeine Leistung
 
-   * Da eine Suchfunktion (möglicherweise große) Teile des Inhalts oder einen speziell extrahierten Index scannen muss, kann dies die Performance des gesamten Systems beeinträchtigen, wenn sie nicht optimiert wird.
+   * Da eine Suchfunktion (potenziell große) Abschnitte des Inhalts oder einen speziell extrahierten Index scannen muss, kann diese Funktion die Leistung des gesamten Systems beeinträchtigen, wenn sie nicht optimiert wird
 
-Das Setzen von Zielen für Suchanfragen ist wiederum eine Frage der Erfahrung:
+Das Festlegen von Zielen für Suchanfragen ist wiederum eine Frage des Erlebnisses, abhängig von:
 
-* Erfahrung mit AEM
-* Einschätzung, wie oft die Suche im Vergleich zu anderen Zielen genutzt wird
-* Persistenzmanager
+* AEM
+* eine Bewertung, wie oft die Suche im Vergleich zu anderen Zielen verwendet wird
+* Ihr Persistenzmanager
 * Suchindex
-* Komplexität der Suchfunktion; eine einfache Suchfunktion, bei der nur 1 Suchbegriff eingegeben werden kann, ist schneller als eine erweiterte Suche, bei der der Benutzer komplexe Suchanweisungen mit UND/ODER/NICHT erstellen kann.
+* die Komplexität Ihrer Suchfunktion; eine einfache Suchfunktion, die die Eingabe eines Suchbegriffs ermöglicht, schneller ist als eine erweiterte Suche, mit der der Benutzer komplexe Suchanweisungen mit UND/ODER/NOT erstellen kann.
 
-Diese sollten von Anfang des Projekts an geplant und integriert werden. Für die Überwachung stehen u.a. folgende Mechanismen zur Verfügung:
+Diese Suchanfragen sollten von Anfang an in Ihr Projekt integriert und geplant werden. Zu den für die Überwachung verfügbaren Mechanismen gehören:
 
-* **Überwachung der Suchantwortzeiten mit request.log von AEM**
+* **Überwachen der Antwortzeiten der Suche mit AEM request.log**
 
-   Auch hier kann request.log verwendet werden, um die Antwortzeiten für Suchanfragen zu überwachen; siehe [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
+   Auch hier kann request.log verwendet werden, um die Antwortzeiten für Suchanfragen zu überwachen. see [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
 
 * **Programmierte Mechanismen zur Messung der Suchantwortzeiten**
 
-   Um die von Ihnen gesammelten Informationen über Suchanfragen und deren Leistung anzupassen, wird empfohlen, die Informationssammlung in Ihren Projekt-Quellcode aufzunehmen; siehe [Performanceoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
+   Um die von Ihnen erfassten Informationen zu Suchanfragen und deren Leistung anzupassen, wird empfohlen, die Datenerfassung in Ihren Projektquell-Code aufzunehmen. see [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
 
-### Gleichzeitigkeit {#concurrency}
+### Parallelität {#concurrency}
 
-Ihre Website wird einer Reihe von Benutzern/Besuchern zur Verfügung gestellt, sowohl in der Autoren- als auch in der Veröffentlichungsumgebung. Die Zahlen sind oft höher als beim Testen, aber auch schwankend und schwer vorhersehbar. Die Website muss für eine durchschnittliche Anzahl von gleichzeitigen Benutzern/Besuchern konzipiert sein, ohne dass dabei eine negative Auswirkung auf die Performance auftritt. Auch hier kann `request.log` verwendet werden, um Parallelitätstests durchzuführen; siehe [Performanceoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
+Stellen Sie Ihre Website einigen Benutzern und Besuchern in der Autoren- und Veröffentlichungsumgebung zur Verfügung. Die Zahlen sind oft höher als beim Testen, aber auch schwankend und schwer vorhersehbar. Gestalten Sie Ihre Website für eine durchschnittliche Anzahl gleichzeitiger Benutzer und Besucher, ohne dass sich dies auf die Leistung auswirkt. Verwenden Sie erneut die `request.log` , um Parallelitätstests durchzuführen. Siehe [Leistungsoptimierung](/help/sites-deploying/configuring-performance.md) für weitere Details.
 
-Ziele für die Anzahl der gleichzeitigen Benutzer sind abhängig von der Art der Umgebung:
+Ziele für die Anzahl gleichzeitiger Benutzer hängen vom Umgebungstyp ab:
 
 * **Autorenumgebung**
 
-   * In der Regel kann die Anzahl der gleichzeitigen Benutzer genau geschätzt werden. Sie wissen, wie viele Autoren Sie insgesamt haben, obwohl (wahrscheinlich) nicht alle gleichzeitig aktiv sind.
+   * Normalerweise kann die Anzahl der gleichzeitigen Benutzer genau geschätzt werden. Sie können ermitteln, wie viele Autoren insgesamt vorhanden sind, obwohl (wahrscheinlich) nicht alle gleichzeitig aktiv sind.
 
 * **Veröffentlichungsumgebung**
 
-   * Dies ist schwieriger vorherzusagen, es sollte daher ein Zielwert ausgewählt werden. Auch dies sollte auf der Erfahrung Ihrer aktuellen Website zusammen mit realistischen Erwartungen an Ihre neue Website basieren.
-   * Spezielle Veranstaltungen (z. B. wenn Sie neue, sehr beliebte Inhalte veröffentlichen) können die Erwartungen übertreffen - oder sogar die Möglichkeiten (wie manchmal in der Presse berichtet wird, wenn Tickets für bestimmte Veranstaltungen zum Verkauf angeboten werden).
+   * Die Vorhersage der Veröffentlichungsumgebung ist schwieriger, daher müssen Sie einen Zielwert auswählen. Auch hier sollte es auf den Erfahrungen Ihrer aktuellen Website und realistischen Erwartungen Ihrer neuen Website basieren.
+   * Sonderveranstaltungen (z. B. bei der Veröffentlichung neuer beliebter Inhalte) können die Erwartungen - oder sogar die Fähigkeiten - übertreffen (wie manchmal in der Presse berichtet wird, wenn Tickets für bestimmte Veranstaltungen zum Verkauf angeboten werden).
 
 ### Kapazität und Volumen {#capacity-and-volume}
 
-Bevor wir die entsprechenden Metriken besprechen, eine schnelle Definition der Begriffe:
+Bevor Sie die zugehörigen Metriken besprechen, sollten Sie eine schnelle Definition der Begriffe vornehmen:
 
 * **Volumen**
 
-   * Die Menge an Ausgabedaten, die vom System verarbeitet und geliefert wird.
+   * Die Menge der Ausgabe, die vom System verarbeitet und bereitgestellt wird.
 
 * **Kapazität**
 
-   * Die Fähigkeit des Systems, das Volumen zu liefern.
-   * Bei jedem Schritt werden Kapazität und Volumen unterschiedlich gemessen, wie in der folgenden Tabelle dargestellt. Um eine optimale Leistung zu erzielen, stellen Sie sicher, dass die Kapazität bei jedem Schritt dem Volumen entspricht und dass sowohl die Kapazität als auch das Volumen über alle Schritte verteilt sind. Beispielsweise können Sie die Navigation auf dem Client-Computer berechnen oder in den Cache legen, anstatt sie für jede Anfrage auf dem Server zu berechnen.
+   * Die Fähigkeit des Systems, das Volumen bereitzustellen.
+   * Bei jedem Schritt werden Kapazität und Volumen unterschiedlich gemessen, wie in der folgenden Tabelle dargestellt. Um eine optimale Leistung zu erzielen, stellen Sie sicher, dass die Kapazität dem Volumen in jedem Schritt entspricht und dass sowohl Kapazität als auch Volumen in allen Schritten gemeinsam genutzt werden. Beispielsweise können Sie die Navigation auf dem Clientcomputer berechnen oder in den Cache legen, anstatt sie für jede Anfrage auf dem Server zu berechnen.
 
 * **Kapazität und Volumen**
 
@@ -361,45 +358,45 @@ Bevor wir die entsprechenden Metriken besprechen, eine schnelle Definition der B
    | Client | Rechenleistung des Computers des Benutzers. | Komplexität des Seiten-Layouts. |
    | Netzwerk | Netzwerkbandbreite. | Größe der Seite (Code, Bilder usw.). |
    | Dispatcher-Cache | Server-Speicher des Webservers (Hauptspeicher und Festplatte). | Webserver (Hauptspeicher und Festplatte). Anzahl und Größe der zwischengespeicherten Seiten. |
-   | Ausgabe-Cache | Server-Speicher des AEM-Servers (Hauptspeicher und Festplatte). | Anzahl und Größe der Seiten im Ausgabe-Cache, die Anzahl der Abhängigkeiten pro Seite. Der Dispatcher-Cache verringert dieses Volumen. |
+   | Ausgabe-Cache | Server-Speicher des AEM-Servers (Hauptspeicher und Festplatte). | Anzahl und Größe der Seiten im Ausgabe-Cache, die Anzahl der Abhängigkeiten pro Seite. Der Dispatcher-Cache senkt dieses Volumen. |
    | Webserver | Rechenleistung des Webservers. | Anzahl der Anfragen. Der Cache verringert dieses Volumen. |
    | Vorlage | Rechenleistung des Webservers. | Komplexität der Vorlagen. |
    | Repository | Leistung des Repositorys. | Anzahl der aus dem Repository geladenen Seiten. |
 
 ### Andere Metriken {#other-metrics}
 
-In den vorhergehenden Abschnitten werden die wichtigsten zu definierenden Metriken beschrieben.
+In den vorherigen Abschnitten werden die zu definierenden Hauptmetriken beschrieben.
 
-Je nach Ihren spezifischen Anforderungen kann es sinnvoll sein, zusätzliche Metriken zu definieren, entweder isoliert oder unter Berücksichtigung der oben genannten Klassifizierungen.
+Je nach Ihren spezifischen Anforderungen kann es nützlich sein, zusätzliche Metriken zu definieren, entweder isoliert oder unter Berücksichtigung der oben genannten Klassifizierungen.
 
-Es ist jedoch besser, einen kleinen Satz von genauen, zentralen Metriken zu haben, die einfach und zuverlässig funktionieren, als zu versuchen, jeden Aspekt Ihrer Website zu messen und zu definieren. Durch ihre schiere Natur beginnt sich Ihre Website zu verändern und zu entwickeln, sobald sie Ihren Benutzern übergeben wird.
+Es empfiehlt sich jedoch, einen kleinen Satz genauer, zentraler Metriken zu verwenden, die einfach und zuverlässig funktionieren, anstatt jeden Aspekt Ihrer Website zu messen und zu definieren. Ihre Website ändert sich aufgrund ihrer bloßen Natur, wenn sie Ihren Benutzern übergeben wird, und entwickelt sich weiter.
 
 ## Sicherheit {#security}
 
-Sicherheit ist entscheidend und eine immer größere Herausforderung. Sie ***muss*** von Anfang an berücksichtigt und geplant werden.
+Sicherheit ist entscheidend und eine immer größere Herausforderung. Es ***must*** werden in den frühesten Phasen Ihres Projekts berücksichtigt und geplant.
 
 Die [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md) beschreibt die Schritte, die Sie unternehmen sollten, um sicherzustellen, dass Ihre AEM-Installation bei der Bereitstellung sicher ist. Weitere Sicherheitsaspekte werden unter [Sicherheit (bei der Entwicklung)](/help/sites-developing/security.md) und [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md) behandelt.
 
-## Parallele und iterative Aufgaben {#parallel-and-iterative-tasks}
+## Parallele und interaktive Aufgaben {#parallel-and-iterative-tasks}
 
 >[!NOTE]
 >
->Das Folgende:
+>Folgendes:
 >
->* Bietet einen Überblick über die *erste* Implementierung eines AEM-Projekts.
->* Ist als abstrakte Übersicht gedacht; siehe [Projekt-Checkliste](/help/managing/best-practices.md) für bestimmte Phasen/Milestones/Aufgaben.
+>* Bietet einen Überblick über die *first* Durchführung eines AEM Projekts.
+>* dient als abstrakte Übersicht; sehen Sie die [Projektprüfliste](/help/managing/best-practices.md) für bestimmte Phasen/Meilensteine/Aufgaben.
 >* Jede Zeitskala ist theoretisch.
 >
 
 
-Für eine Neuimplementierung eines Standard-AEM-Projekts müssen Sie u.a. folgende Aufgaben berücksichtigen:
+Für eine neue Implementierung eines standardmäßigen AEM-Projekts sollten Sie folgende Aufgaben in Betracht ziehen:
 
 * Übergabe aus dem Verkaufsprozess.
 * Implementierung der Kundenanwendung (**Entwicklung**).
-* Installation und Konfiguration der Infrastruktur (und der zugehörigen Prozesse) auf der Site des Kunden (**Infrastruktur**).
+* Installation und Konfiguration der Infrastruktur (und der damit verbundenen Prozesse) auf der Site des Kunden (**Infrastruktur**).
 * Erstellung (oder Migration) des Inhalts (**Inhalt**).
-* Übergabe an den Betrieb (**Wartung/Support**).
-* Folgefreigaben.
+* Übergabe an Vorgänge (**Wartung/Support**).
+* Folgeversionen.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -409,72 +406,72 @@ Für alle Aspekte wird ein periodischer Ansatz empfohlen:
 
 >[!NOTE]
 >
->Teilen Sie den Projektstart in **Soft Launch** (reduzierte Verfügbarkeit, mehrere Iterationen) und **Hard Launch** (volle Verfügbarkeit - Live) auf, um eine Abstimmung, Optimierung und Anwenderschulung unter realistischen Bedingungen in der Produktionsumgebung zu ermöglichen.
+>Um eine Optimierung, Optimierung und Benutzerschulung unter realistischen Bedingungen in der Produktionsumgebung zu ermöglichen, teilen Sie den Projektstart in **Soft Launch** (reduzierte Verfügbarkeit, mehrere Iterationen) und **Hard Launch** (volle Verfügbarkeit - Live).
 
 >[!NOTE]
 >
->In der [Projekt-Checkliste](/help/managing/best-practices.md) finden Sie Beispiele für Aufgaben, die Sie während des Lebenszyklus Ihres Projekts durchführen (oder bewerten) sollten.
+>Siehe [Projektprüfliste](/help/managing/best-practices.md) Beispiele für Aufgaben, die Sie während des Lebenszyklus Ihres Projekts ausführen (oder bewerten) sollten.
 
-Einige Punkte, die für jede Kategorie zu beachten sind:
+Zu beachten sind einige Punkte für jede Kategorie:
 
 * **Entwicklung**
 
-   * Definieren Sie zunächst die Basisarchitektur.
-   * Verwenden Sie mehrere Durchgänge (Sprints) für die Entwicklung:
+   * Definieren Sie zuerst die Basisarchitektur.
+   * Verwenden Sie mehrere Iterationen (Sprints) für die Entwicklung:
 
-      * Der erste Sprint entspricht dem ersten vollen Entwicklungszyklus.
-      * Der erste Sprint führt zum ersten Einsatz in Ihrer Testumgebung.
-      * Jeder Sprint hat ein lauffähiges Ergebnis.
-      * Jeder Sprint erhält eine Kundenabnahme (Minimum an strukturiertem Test mit Feedback).
+      * Der erste Sprint entspricht dem ersten vollständigen Entwicklungszyklus.
+      * Der erste Sprint führt zur ersten Bereitstellung in Ihrer Testumgebung.
+      * Jeder Sprint hat ein durchlaufbares Ergebnis.
+      * Jeder Sprint erhält einen Kunden-Signoff (Minimum an strukturierten Tests mit Feedback).
    * Planen Sie den Fall eines Updates der verfügbaren AEM-Version während des Projekts mit ein.
-   * Planen Sie Tests und Optimierungen während des Sprints mit ein.
-   * Planen Sie Stabilisierungs- und Optimierungsphasen.
-   * Erstellen Sie ein Protokoll der zu planenden Positionen für weitere Releases
+   * Planen Sie Tests und Optimierungen während des Sprints.
+   * Planen Sie die Stabilisierungs- und Optimierungsphasen.
+   * Erstellen Sie ein Protokoll mit Elementen, die für weitere Versionen geplant werden sollen.
    * Planung der Partnerbeteiligung und -übergabe.
 
 
 * **Infrastruktur**
 
-   * Definieren Sie zunächst die Basisarchitektur:
+   * Definieren Sie zuerst die Basisarchitektur:
 
-      * Definieren Sie Leistungsanforderungen.
-      * Definieren Sie Leistungsziele (d. h. Erwartungen klar definieren).
-      * Definieren Sie Hardware- und Infrastrukturarchitektur; einschließlich der Größenbestimmung.
-      * Definieren Sie die Bereitstellung
-   * Verwenden Sie mehrere Durchgänge; bereiten Sie für den ersten Sprint und die erste Konfiguration Folgendes vor:
+      * Definieren Sie die Leistungsanforderungen.
+      * Definieren Sie Leistungsziele (d. h. klare Erwartungen).
+      * Definition der Hardware- und Infrastrukturarchitektur; einschließlich der Größenanpassung.
+      * Definieren Sie die Bereitstellung.
+   * Verwendung mehrerer Iterationen; für den ersten Sprint und die Erstkonfiguration vorbereiten:
 
       * Bereitstellungsumgebung.
       * Entwicklungsprozess.
       * Testumgebung.
-      * Bereitstellungsprozess (einschließlich Konfigurationsmanagement).
+      * Bereitstellungsprozess (einschließlich Konfigurationsverwaltung).
    * Planen Sie mehrere Belastungstests.
-   * Planen Sie Tests und Optimierungen während des Sprints mit ein.
+   * Planen Sie Tests und Optimierungen während des Sprints.
    * Planen Sie eine Stabilisierungs- und Optimierungsphase.
-   * Stellen Sie das System so früh wie möglich in der Produktionsumgebung bereit (lassen Sie das Betriebsteam das System einrichten, um Erfahrungen zu sammeln).
-   * Verwenden Sie benannte Benutzer und definierte Rollen so früh wie möglich.
-   * Planen Sie das Training (z. B. Administrator-Training).
+   * Stellen Sie das System so früh wie möglich in der Produktionsumgebung bereit (lassen Sie es vom Betriebsteam einrichten, um Erlebnisse zu sammeln).
+   * Verwenden Sie so früh wie möglich benannte Benutzer und definierte Rollen.
+   * Planen Sie Schulungen (z. B. Administratorschulungen).
    * Planen Sie die Übergabe an den Betrieb.
 
 
 
 * **Inhalt**
 
-   * Die Grundarchitektur:
-      * Steuert die Inhaltshierarchie.
+   * Die Basisarchitektur:
+      * Verschiebt die Inhaltshierarchie.
       * Hilft bei der Definition des Inhaltskonzepts.
-      * Definiert die Verwendung und das Layout von MSM.
+      * Definiert die MSM-Nutzung und das Layout.
       * Definiert Rollen, Gruppen, Workflows und Berechtigungen.
-   * Überlegen Sie, ob die Offline-Seitenerstellung sinnvoll ist.
-   * Planen Sie die frühzeitige Erstellung von ersten Seiten und Inhalten (für Tests und Feedback).
-   * Planen Sie die Migration bestehender Inhalte.
-   * Planen Sie „In-Sprint-Migration“ nach der Überarbeitung.
-   * Planen Sie „Inhalts-Burndown“ (Sitemap für Go-Live-Inhalte).
+   * Überlegen Sie, ob die Offline-Seitenerstellung nützlich ist.
+   * Planen Sie die frühzeitige Erstellung von ersten Seiten und Inhalten (zur Verwendung in Tests und Feedback).
+   * Planen Sie die Migration vorhandener Inhalte.
+   * Planen Sie die &quot;In-Sprint-Migration&quot;nach der Umgestaltung.
+   * Planen Sie den &quot;Inhaltsabbruch&quot;(Sitemap für Live-Inhalte).
 
 ## Schätzung von Zeit und Aufwand {#estimating-time-and-effort}
 
-Abhängig von Ihrer resultierenden Aufgabenliste können Sie dann erste Schätzungen des Aufwands für (hochrangige) Aufgabendefinitionen vornehmen. Diese sollten einen Hinweis enthalten, wer (Kunde oder Partner) was und wann tun wird.
+Abhängig von Ihrer resultierenden Aufgabenliste können Sie dann erste Schätzungen der Zeit und des Aufwands für Aufgabendefinitionen (auf hoher Ebene) vornehmen. Diese Schätzungen sollten einen Hinweis darauf enthalten, wer (Kunde oder Partner) was und wann tut.
 
-Die folgende Liste zeigt Standardannäherungen und Zusammenhänge des Aufwands und damit der Kosten:
+Die folgende Liste zeigt Standardschätzungen und Zusammenhänge von Aufwand und damit Kosten:
 
 >[!CAUTION]
 >
@@ -482,7 +479,7 @@ Die folgende Liste zeigt Standardannäherungen und Zusammenhänge des Aufwands u
 
 | Phase | Aufwand |
 |---|---|
-| Entwicklung | Eine grobe Schätzung von 2 – 4 Stunden für jeden Komponentenknoten deckt alle Entwicklungsanforderungen ab. |
+| Entwicklung | Ungefähre Schätzung von 2-4 Stunden für jeden Komponentenknoten, der alle Entwicklungsanforderungen abdeckt. |
 | Entwicklertests | 15 % der Entwicklung |
 | Folgemaßnahmen | 10 % der Entwicklung |
 | Dokumentation | 15 % der Entwicklung |
@@ -490,11 +487,11 @@ Die folgende Liste zeigt Standardannäherungen und Zusammenhänge des Aufwands u
 | Fehlerbehebung | 15 % der Entwicklung |
 | Projekt-Management | 20 % der Projektkosten für laufende Projektverwaltung und Nutzerrechte |
 
-Die Detailplanung kann dann verfügbare oder benötigte Ressourcen mit Terminen und Kosten verknüpfen.
+Eine detaillierte Planung kann dann verfügbare oder erforderliche Ressourcen mit Terminen und Kosten verknüpfen.
 
 ## Referenzarchitektur {#reference-architecture}
 
-Die Referenzarchitektur dient als Vorlage für die AEM-Architektur. Die Referenzarchitektur adressiert Probleme, die bei Unternehmenssystemen häufig auftreten, einschließlich Skalierung, Zuverlässigkeit und Sicherheit.
+Die Referenzarchitektur dient als Vorlage für die AEM-Architektur. Die Referenzarchitektur behandelt Probleme, die üblicherweise für Unternehmenssysteme auftreten, einschließlich Skalierung, Zuverlässigkeit und Sicherheit.
 
 Die folgenden Site-Metriken sollten definiert werden:
 
@@ -502,7 +499,7 @@ Die folgenden Site-Metriken sollten definiert werden:
 |---|---|
 | Anzahl der Websites |  |
 | Anzahl der Intranet-Sites |  |
-| Anzahl der Code-Basen (z. B. wenn Internet und Intranet unterschiedlich sind) |  |
+| Anzahl der Codegrundlagen (z. B. wenn Internet und Intranet unterschiedlich sind) |  |
 | Anzahl der einzelnen Seiten |  |
 | Anzahl der Site-Besuche/Tag |  |
 | Anzahl der Seitenaufrufe/Tag |  |
@@ -514,9 +511,9 @@ Die folgenden Site-Metriken sollten definiert werden:
 | Anzahl der Seitenaktivierungen/Arbeitstag |  |
 | Anzahl der Seitenaktivierungen während der Bereitstellung |  |
 
-## Übersicht der möglichen Werkzeuge {#overview-of-potential-tools}
+## Übersicht über potenzielle Tools {#overview-of-potential-tools}
 
-Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als Einführung gedacht, nicht als umfangreiche Empfehlungsliste, und sollte Sie sicherlich nicht davon abhalten, andere Tools zu verwenden, die Sie bevorzugen.
+Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als Einführung, nicht als umfassende Empfehlungsliste gedacht und sollte Sie nicht davon abhalten, andere Tools zu verwenden.
 
 <table>
  <tbody>
@@ -526,7 +523,7 @@ Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als 
   </tr>
   <tr>
    <td>AEM</td>
-   <td><p>AEM bietet eine Reihe von Mechanismen, mit denen Sie Ihre Anwendung überwachen, testen, untersuchen und debuggen können, darunter folgende:</p>
+   <td><p>AEM bietet eine Reihe von Mechanismen, mit denen Sie Ihre Anwendung überwachen, testen, untersuchen und debuggen können. einschließlich:</p>
     <ul>
      <li><a href="/help/sites-developing/developer-mode.md">Entwicklermodus</a></li>
      <li>Die <a href="/help/sites-developing/hobbes.md">Testkonsole</a></li>
@@ -541,10 +538,10 @@ Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als 
   </tr>
   <tr>
    <td>Selenium</td>
-   <td><a href="https://docs.seleniumhq.org/">Selenium</a> ist ein Open Source-Test-Tool. Die Tests laufen direkt im Browser ab und emulieren, wie Ihre Benutzer arbeiten.</td>
+   <td><a href="https://www.selenium.dev/">Selenium</a> ist ein Open Source-Test-Tool. Die Tests laufen direkt im Browser ab und emulieren, wie Ihre Benutzer arbeiten.</td>
   </tr>
   <tr>
-   <td>Microsoft Project</td>
+   <td>Microsoft® Project</td>
    <td>Ein häufig verwendetes Projekt-Management-Tool.</td>
   </tr>
   <tr>
@@ -557,7 +554,7 @@ Die folgende Liste informiert Sie über die verwendbaren Werkzeuge. Sie ist als 
   </tr>
   <tr>
    <td>Eclipse</td>
-   <td><p>Eclipse ist eine Open Source-IDE, die aus verschiedenen Projekten besteht. Diese konzentrieren sich auf den Aufbau einer offenen Entwicklungsplattform, die aus erweiterbaren Frameworks, Tools und Laufzeiten für die Erstellung, Bereitstellung und Verwaltung von Software über den gesamten Lebenszyklus besteht.</p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/howto-projects-eclipse.md">Entwickeln von AEM-Projekten mit Eclipse</a>.</p> </td>
+   <td><p>Eclipse ist eine Open Source-IDE, die aus verschiedenen Projekten besteht. Der Schwerpunkt liegt auf dem Aufbau einer offenen Entwicklungsplattform, die aus erweiterbaren Frameworks, Tools und Laufzeitumgebungen für die Erstellung, Bereitstellung und Verwaltung von Software über den gesamten Lebenszyklus hinweg besteht.</p> <p>Weitere Informationen finden Sie unter <a href="/help/sites-developing/howto-projects-eclipse.md">Entwickeln von AEM-Projekten mit Eclipse</a>.</p> </td>
   </tr>
   <tr>
    <td>IntelliJ</td>

@@ -4,9 +4,9 @@ seo-title: AEM 6.5 Developing User Guide
 description: Erfahren Sie, wie Sie Ihre AEM-Instanz aufbauen. Erfahren Sie mehr über die Plattform und die Komponenten und finden Sie Informationen zu Entwicklungs-Tools und Personalisierung.
 seo-description: Covers how to build out your AEM instance.
 exl-id: 4413f5e8-7e52-4ea7-8be3-5717b780a6e2
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '360'
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '341'
 ht-degree: 100%
 
 ---
@@ -39,7 +39,6 @@ Erfahren Sie, wie Sie Ihre AEM-Instanz aufbauen. Erfahren Sie mehr über die Pla
 | [Benutzerhandbuch Verwaltung](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM-Projekt erfolgreich verwalten. |
 | [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM. |
 | [Mobilbenutzeranleitung](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=de) | In diesem Handbuch erfahren Sie, wie Sie anwendergenerierten Content für Livefyre freigeben. |
 
 ## Wichtige AEM-Ressourcen
 

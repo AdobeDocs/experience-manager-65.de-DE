@@ -2,9 +2,9 @@
 title: Versionshinweise zu Adobe Experience Manager 6.5
 description: Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version von AEM, einschließlich neuer unterstützter Plattformen, nicht mehr unterstützter und eingestellter Funktionen und bekannter Probleme.
 exl-id: 2fc93249-9bd0-4e34-83b2-80f51c102ed1
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '355'
 ht-degree: 100%
 
 ---
@@ -37,7 +37,6 @@ Die AEM-Versionshinweise enthalten wichtige Informationen zur neuesten Version v
 | [Benutzerhandbuch Verwaltung](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM-Projekt erfolgreich verwalten. |
 | [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM. |
 | [Mobilbenutzeranleitung](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=de) | In diesem Handbuch erfahren Sie, wie Sie anwendergenerierten Content für Livefyre freigeben. |
 
 ## Wichtige AEM-Ressourcen
 

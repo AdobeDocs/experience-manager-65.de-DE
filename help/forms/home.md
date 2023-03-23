@@ -1,12 +1,12 @@
 ---
-title: Adobe Experience Manager 6.5, Forms-Anleitung
+title: Handbuch zu Adobe Experience Manager 6.5 Forms
 seo-title: AEM 6.5 Forms Guide
 description: Verwenden Sie dieses AEM 6.5-Handbuch, um digitale Formulare zu erstellen, zu verwalten, zu veröffentlichen und zu aktualisieren. Hier finden Sie Hilfe zur Installation, Aktualisierung und Konfiguration und erfahren, wie Sie adaptive Formulare erstellen können.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '367'
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '348'
 ht-degree: 100%
 
 ---
@@ -39,7 +39,6 @@ Verwenden Sie dieses AEM 6.5-Handbuch, um digitale Formulare zu erstellen, zu ve
 | [Benutzerhandbuch Verwaltung](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein AEM-Projekt erfolgreich verwalten. |
 | [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework in AEM. |
 | [Mobilbenutzeranleitung](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
-| [AEM Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=de) | In diesem Handbuch erfahren Sie, wie Sie anwendergenerierten Content für Livefyre freigeben. |
 
 ## Wichtige AEM-Ressourcen
 

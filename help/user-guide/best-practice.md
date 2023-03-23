@@ -4,27 +4,26 @@ seo-title: AEM 6.5 Best Practices
 description: Ressourcen für Best Practices, Problembehandlung und Schulungen für AEM 6.5
 seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '425'
-ht-degree: 100%
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '387'
+ht-degree: 49%
 
 ---
 
 # Best Practices für AEM 6.5 {#aem-65-best-practices}
 
-## Wo erfahre ich mehr über Training oder Schulungen für AEM? {#training}
+## Wo erhalte ich weitere Informationen über AEM? {#training}
 
-Adobe bietet hilfreiche Ressourcen, die Ihnen dabei helfen, AEM optimal zu nutzen.
+Adobe verfügt über verschiedene wichtige Ressourcen, mit denen Sie das Beste aus AEM erhalten.
 
-* [Unseren offiziellen AEM-Trainings-Katalog finden Sie hier.](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1)
-* Wenn Sie sich für AEM zertifizieren lassen möchten, [finden Sie hier unseren Leitfaden zu offiziellen AEM-Zertifizierungen.](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager)
+* [Offizieller AEM](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1).
+* Wenn Sie für AEM zertifiziert werden möchten, wird die [Eine vollständige Anleitung zu den offiziellen AEM-Zertifizierungen finden Sie hier .](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
-Die AEM-Community erstellt ständig Beispiel-Workflows, Übungen und Code-Beispiele aus Empfehlungen und gemeinschaftlichen Projekten.
+Die AEM Community erstellt ständig Beispiele für Workflows, Tutorials und Inhaltscode-Beispiele aus Vorschlägen und kollaborativen Arbeiten.
 
-* [Eine vollständige Liste der Tutorials und Videos zu AEM 6.4 finden Sie hier.](https://helpx.adobe.com/de/experience-manager/kt/index/aem-6-5-videos.html)
-* [Eine vollständige Liste der AEM-Community-Artikel mit empfohlenen Vorgehensweisen finden Sie hier.](https://helpx.adobe.com/de/experience-manager/topics/how-to.html)
-* [Eine vollständige Liste der Artikel zu AEM in der Wissensdatenbank finden Sie hier.](https://helpx.adobe.com/de/experience-manager/kb/index/full_kb_list.html)
+* [Eine vollständige Liste der Tutorials und Videos zu AEM 6.5 finden Sie hier](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html?lang=de).
+* [Eine vollständige Liste AEM Community-Anleitungsartikel finden Sie hier](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de).
 
 ## Best Practices für AEM {#best-practices}
 
@@ -38,24 +37,23 @@ Die AEM-Community erstellt ständig Beispiel-Workflows, Übungen und Code-Beispi
 
 ## Erste-Schritte-Handbücher für verschiedene AEM-Funktionen {#getting-started}
 
-AEM wird vielseitig in Unternehmen eingesetzt und verfügt über vielfältige Funktionen für verschiedenste Unternehmensbereiche. Für einen ersten Überblick eignen sich unsere Einstiegsanleitungen:
+AEM wird vielseitig in Unternehmen eingesetzt und verfügt über vielfältige Funktionen für verschiedenste Unternehmensbereiche. Wenn Sie die ersten Schritte untersuchen möchten, finden Sie die Erste-Schritte-Handbücher:
 
 * [AEM Platform und Sites – Erste Schritte](/help/sites-deploying/deploy.md#getting-started)
 * [Erste Schritte mit AEM Forms](/help/forms/using/introduction-aem-forms.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Erste Schritte mit AEM Communities](/help/communities/getting-started.md)
-* [Erste Schritte mit AEM Livefyre](https://answers.livefyre.com/developers/getting-started/)
 
-Wir haben auch ein neues [WKND-Tutorial, eine schrittweise Anleitung für die Erstellung Ihrer ersten Website mit AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de) sowie einen [Schritt-für-Schritt-Ratgeber für die Bereitstellung unserer Digital Foundation-Lösung](https://helpx.adobe.com/marketing-cloud/how-to/digital-foundation.html), für die AEM ein wichtiger Baustein ist.
+Adobe hat eine neue [WKND-Tutorial, eine schrittweise Anleitung zur Erstellung Ihrer ersten Website mit AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de). Es gibt auch eine [Schrittweise Anleitung zur Bereitstellung der Digital Foundation-Lösung von Adobe](https://experienceleague.adobe.com/#courses), für die AEM ein wichtiger Baustein ist.
 
 ## Empfohlene Implementierungen für AEM {#deployments}
 
-Microkernel dienen als Persistenz-Manager. Sie zu verstehen, ist der Schlüssel zu einer erfolgreichen AEM-Implementierung. Welcher Mikrokernel Ihre Anforderungen erfüllt, hängt vom Zweck Ihrer Instanz und dem Bereitstellungstyp ab. [Erfahren Sie mehr über die empfohlenen Verwendungen in gängigen AEM-Setups.](/help/sites-deploying/recommended-deploys.md)
+MicroKernels dienen als Persistenzmanager und das Verständnis davon ist der Schlüssel zu einer erfolgreichen AEM Implementierung. Die Wahl eines solchen für Ihre Anforderungen hängt vom Zweck Ihrer Instanz und vom geplanten Bereitstellungstyp ab. [Erfahren Sie mehr über die empfohlenen Verwendungen in gängigen AEM-Setups.](/help/sites-deploying/recommended-deploys.md)
 
 ## Checkliste für die AEM-Sicherheit {#security-checklist}
 
-Sicherheit ist ein wichtiger Faktor bei der Installation von AEM. [Lernen Sie die verschiedenen Schritte und Maßnahmen kennen, mit denen Sie die Sicherheit Ihrer AEM-Installation gewährleisten können.](/help/sites-administering/security-checklist.md) Die Checkliste ist so konzipiert, dass sie von oben nach unten abgearbeitet werden sollte.
+Sicherheit ist ein wichtiger Faktor bei der Installation von AEM. [Lernen Sie die verschiedenen Schritte und Maßnahmen kennen, mit denen Sie die Sicherheit Ihrer AEM-Installation gewährleisten können.](/help/sites-administering/security-checklist.md) Wenden Sie die Checkliste von oben nach unten an.
 
 ## Häufig gestellte Fragen zu AEM {#faq}
 
-In den [Häufig gestellten Fragen zu AEM](/help/sites-administering/aem-faqs.md) erhalten Sie Antworten auf einige der am häufigsten gestellten Fragen zu AEM.
+Um Antworten auf einige der am häufigsten gestellten Fragen zu AEM zu erhalten, überprüfen Sie die [AEM FAQs](/help/sites-administering/aem-faqs.md).

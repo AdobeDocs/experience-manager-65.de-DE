@@ -5,9 +5,9 @@ user-guide-title: Assets-Anleitung
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: f4016056-47a2-4d86-b12b-90d062d6a21a
-source-git-commit: 8a51bbf3cea999f77e6eea41e184926121d6a866
-workflow-type: ht
-source-wordcount: '344'
+source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+workflow-type: tm+mt
+source-wordcount: '325'
 ht-degree: 100%
 
 ---
@@ -38,7 +38,7 @@ Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets in Experienc
 | [Benutzerhandbuch Verwaltung](/help/managing/home.md) | In diesem Handbuch wird beschrieben, wie Sie ein Experience Manager-Projekt erfolgreich verwalten. |
 | [Benutzerhandbuch für Commerce](/help/commerce/home.md) | Erfahren Sie mehr über Commerce Integration Framework in Experience Manager. |
 | [Mobilbenutzeranleitung](/help/mobile/home.md) | In diesem Handbuch wird beschrieben, wie Sie Inhalte für mobile Anwendungen erstellen und verwalten. |
-| [Experience Manager Livefyre](https://experienceleague.adobe.com/docs/livefyre/using/home.html?lang=de) | In diesem Handbuch erfahren Sie, wie Sie anwendergenerierten Content mit [!DNL Livefyre] freigeben. |
+
 
 ## Wichtige [!DNL Experience Manager]-Ressourcen
 
