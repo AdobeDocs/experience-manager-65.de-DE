@@ -1,7 +1,7 @@
 ---
 title: Erweitern des Multi-Site-Managers
 seo-title: Extending the Multi Site Manager
-description: Auf dieser Seite erfahren Sie, wie Sie die Funktionen von Multi Site Manager erweitern können.
+description: Auf dieser Seite erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers erweitern.
 seo-description: This page helps you extend the functionalities of the Multi Site Manager
 uuid: dfa7d050-29fc-4401-8d4d-d6ace6b49bea
 contentOwner: User
@@ -11,26 +11,26 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: ht
-source-wordcount: '2582'
-ht-degree: 100%
+source-git-commit: 0caaa4b5de519567df4a527f62a2583abd7ed937
+workflow-type: tm+mt
+source-wordcount: '2593'
+ht-degree: 72%
 
 ---
 
 # Erweitern des Multi-Site-Managers{#extending-the-multi-site-manager}
 
-Auf dieser Seite erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers erweitern können:
+Auf dieser Seite können Sie die Funktionen des Multi-Site-Managers erweitern:
 
-* Erfahren Sie mehr über die wichtigsten MSM-Java-APIs.
+* Erfahren Sie mehr über die wichtigsten Mitglieder der MSM Java-API.
 * Erstellen Sie eine neue Synchronisierungsaktion, die in einer Rollout-Konfiguration verwendet werden kann.
-* Ändern Sie die Standardsprache und die Ländercodes.
+* Ändern Sie die standardmäßigen Sprach- und Ländercodes.
 
 <!-- * Remove the "Chapters" step in the Create Site wizard. -->
 
 >[!NOTE]
 >
->Wir empfehlen, diese Seite in Verbindung mit [Wiederverwenden von Inhalten: Multi Site Manager](/help/sites-administering/msm.md).
+>Diese Seite sollte zusammen mit [Wiederverwenden von Inhalten: Multi-Site-Manager](/help/sites-administering/msm.md).
 >
 >Die folgenden Abschnitte der Sites-Repository-Neustrukturierung in AEM 6.4 könnten ebenfalls von Interesse sein:
 >* [Blueprint-Konfigurationen für den Multi-Site-Manager](https://experienceleague.adobe.com/docs/experience-manager-64/deploying/restructuring/sites-repository-restructuring-in-aem-6-4.html?lang=de#multi-site-manager-blueprint-configurations)
@@ -39,16 +39,16 @@ Auf dieser Seite erfahren Sie, wie Sie die Funktionen des Multi-Site-Managers er
 
 >[!CAUTION]
 >
->Multi Site Manager und die dazugehörige API werden beim Erstellen einer Website verwendet und sind daher ausschließlich für die Nutzung in einer Autorenumgebung gedacht.
+>Der Multi-Site-Manager und die zugehörige API werden beim Erstellen einer Website verwendet und sind daher nur für die Verwendung in einer Autorenumgebung vorgesehen.
 
-## Überblick über die Java-API {#overview-of-the-java-api}
+## Übersicht über die Java-API {#overview-of-the-java-api}
 
-Multi Site Manager umfasst die folgenden Pakete:
+Multi-Site-Management umfasst die folgenden Pakete:
 
 * [com.day.cq.wcm.msm.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/package-frame.html)
 * [com.day.cq.wcm.msm.commons](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/commons/package-frame.html)
 
-Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch: [Verwendete Begriffe](/help/sites-administering/msm.md#terms-used)):
+Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch [Verwendete Begriffe](/help/sites-administering/msm.md#terms-used)):
 
 ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -61,8 +61,8 @@ Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch: [Verwendete 
    * Die Verwendung einer Blueprint-Konfiguration (`Blueprint`) ist optional, aber sie:
 
       * ermöglicht es dem Autor, die **Rollout**-Option auf der Quelle zu nutzen (um Änderungen (explizit) an Live Copies zu pushen, die Inhalte von dieser Quelle erben)
-      * ermöglicht es dem Autor, **Site erstellen** zu nutzen, wodurch der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren kann
-      * definiert die standardmäßige Rollout-Konfiguration für alle entstehenden Live Copies.
+      * Ermöglicht dem Autor die Verwendung von **Site erstellen**; Dadurch kann der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren.
+      * Definiert die standardmäßige Rollout-Konfiguration für alle resultierenden Live Copies.
 
 * **`LiveRelationship`**
 
@@ -99,11 +99,11 @@ Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch: [Verwendete 
 
    Die `RolloutConfig` enthält eine Liste der `LiveActions`, die nach der Auslösung zum Einsatz kommen sollen. Die `LiveCopy` erbt die `RolloutConfig` und das Ergebnis befindet sich in der `LiveRelationship`.
 
-   * Beim erstmaligen Einrichten einer Live Copy wird ebenfalls eine RolloutConfig genutzt (die die LiveActions auslöst).
+   * Beim erstmaligen Einrichten einer Live Copy wird auch eine RolloutConfig verwendet (die die LiveActions Trigger).
 
 ## Erstellen einer neuen Synchronisierungsaktion {#creating-a-new-synchronization-action}
 
-Erstellen Sie benutzerdefinierte Synchronisierungsaktionen für die Nutzung mit Ihren Rollout-Konfigurationen. Wenn die [installierten Aktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) Ihre spezifischen Anwendungsanforderungen nicht erfüllen, können Sie eine Synchronisierungsaktion erstellen. Hierfür erstellen Sie zwei Klassen:
+Erstellen Sie benutzerdefinierte Synchronisierungsaktionen zur Verwendung mit Ihren Rollout-Konfigurationen. Erstellen Sie eine Synchronisierungsaktion, wenn die Variable [installierte Aktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) Ihre spezifischen Anwendungsanforderungen nicht erfüllen. Erstellen Sie dazu zwei Klassen:
 
 * eine Implementierung der Schnittstelle [ `com.day.cq.wcm.msm.api.LiveAction`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveAction.html), die die Aktion ausführt
 * eine OSGi-Komponente, die die Schnittstelle [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) implementiert und Instanzen der Klasse `LiveAction` erstellt.
@@ -172,14 +172,14 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 Erstellen Sie eine Rollout-Konfiguration, wenn die installierten Rollout-Konfigurationen Ihre Anwendungsanforderungen nicht erfüllen:
 
-* [Erstellen Sie die Rollout-Konfiguration](#create-the-rollout-configuration).
-* [Fügen Sie Synchronisierungsaktionen zur Rollout-Konfiguration hinzu](#add-synchronization-actions-to-the-rollout-configuration).
+* [Erstellen der Rollout-Konfiguration](#create-the-rollout-configuration).
+* [Hinzufügen von Synchronisierungsaktionen zur Rollout-Konfiguration](#add-synchronization-actions-to-the-rollout-configuration).
 
 Die neue Rollout-Konfiguration steht dann zur Verfügung, wenn Sie die Rollout-Konfigurationen auf einer Blueprint oder einer Live Copy-Seite festlegen.
 
 >[!NOTE]
 >
->Informationen hierzu finden Sie auch unter [Best Practices zum Anpassen von Rollouts](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
+>Siehe auch [Best Practices zum Anpassen von Rollouts](/help/sites-administering/msm-best-practices.md#customizing-rollouts).
 
 ### Erstellen der Rollout-Konfiguration {#create-the-rollout-configuration}
 
@@ -194,13 +194,14 @@ So erstellen Sie eine neue Rollout-Konfiguration:
    >[!NOTE]
    >Dies ist die benutzerdefinierte Version Ihres Projekts von:
    >`/libs/msm/wcm/rolloutconfigs`
-   >Muss erstellt werden, wenn dies Ihre erste Konfiguration ist.
+   >Wenn dies Ihre erste Konfiguration ist, wird dies `/libs` -Verzweigung muss als Vorlage zum Erstellen der neuen Verzweigung unter verwendet werden `/apps`.
 
    >[!NOTE]
    >
    >Sie dürfen keinerlei Änderungen im Pfad /libs vornehmen.
    >Denn der Inhalt von /libs wird überschrieben, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
    >Die empfohlene Methode zur Konfiguration und für andere Änderungen sieht wie folgt aus:
+   >
    >* Erstellen Sie das erforderliche Element neu (d. h. wie es in /libs aussieht) unter /apps.
    >* Nehmen Sie die gewünschten Änderungen in /apps vor.
 
@@ -247,42 +248,42 @@ Fügen Sie untergeordnete Knoten des Typs `cq:LiveSyncAction` hinzu, um Synchron
 Der Name muss dem **Aktionsnamen** in der Tabelle unter [Synchronisierungsaktionen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) entsprechen, z. B. `contentCopy` oder `workflow`. 
    * **Typ**: `cq:LiveSyncAction`
 
-1. Fügen Sie so viele Synchronisierungsaktionsknoten hinzu wie erforderlich. Ordnen Sie die Aktionen so an, dass sie die Reihenfolge aufweisen, in der sie ausgeführt werden sollen. Der oberste Aktionsknoten wird zuerst ausgeführt.
+1. Fügen Sie beliebig viele Synchronisierungsaktionsknoten hinzu und konfigurieren Sie sie. Ordnen Sie die Aktionsknoten so an, dass ihre Reihenfolge der gewünschten Reihenfolge entspricht. Der oberste Aktionsknoten tritt zuerst auf.
 
 ## Erstellen und Verwenden einer einfachen LiveActionFactory-Klasse {#creating-and-using-a-simple-liveactionfactory-class}
 
 Mit den Verfahren, die in diesem Abschnitt erläutert werden, können Sie eine `LiveActionFactory` entwickeln und in einer Rollout-Konfiguration verwenden. Für die Entwicklung und Bereitstellung der `LiveActionFactory` werden Maven und Eclipse verwendet:
 
-1. [Erstellen Sie das Maven-Projekt](#create-the-maven-project) und importieren Sie es in Eclipse.
-1. [Fügen Sie Abhängigkeiten](#add-dependencies-to-the-pom-file) zur POM-Datei hinzu.
+1. [Maven-Projekt erstellen](#create-the-maven-project) und importieren Sie es in Eclipse.
+1. [Abhängigkeiten hinzufügen](#add-dependencies-to-the-pom-file) in die POM-Datei.
 1. [Implementieren Sie die `LiveActionFactory`-Schnittstelle](#implement-liveactionfactory) und stellen Sie das OSGi-Bundle bereit.
-1. [Erstellen Sie die Rollout-Konfiguration](#create-the-example-rollout-configuration).
-1. [Erstellen Sie die Live Copy](#create-the-live-copy).
+1. [Erstellen der Rollout-Konfiguration](#create-the-example-rollout-configuration).
+1. [Erstellen der Live Copy](#create-the-live-copy).
 
 Das Maven-Projekt und der Quell-Code der Java-Klasse sind im öffentlichen Git-Repository verfügbar.
 
-CODE AUF GITHUB
+CODE FÜR GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
 * [Öffnen des Projekts „experiencemanager-java-msmrollout“ auf GitHub](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/experiencemanager-java-msmrollout/archive/master.zip) herunter.
 
-### Erstellen des Maven-Projekts {#create-the-maven-project}
+### Maven-Projekt erstellen {#create-the-maven-project}
 
-Das folgende Verfahren setzt voraus, dass Sie das adobe-public-Profil zu Ihrer Maven-Einstellungsdatei hinzugefügt haben.
+Für das folgende Verfahren müssen Sie das adobe-public -Profil zu Ihrer Maven-Einstellungsdatei hinzugefügt haben.
 
-* Weitere Informationen zum adobe-public-Profil finden Sie unter [Beschaffen des Inhaltspaket-Maven-Plug-ins](/help/sites-developing/vlt-mavenplugin.md#obtaining-the-content-package-maven-plugin).
-* Weitere Informationen zur Maven-Einstellungsdatei finden Sie in der [Referenz zu den Einstellungen](https://maven.apache.org/settings.html) für Maven.
+* Weitere Informationen zum adobe-public-Profil finden Sie unter [Abrufen des Inhaltspaket-Maven-Plug-ins](/help/sites-developing/vlt-mavenplugin.md#obtaining-the-content-package-maven-plugin)
+* Weitere Informationen zur Maven-Einstellungsdatei finden Sie in der Maven-Einstellungsdatei [Einstellungsreferenz](https://maven.apache.org/settings.html).
 
-1. Öffnen Sie eine Terminal- oder Befehlszeilensitzung und ändern Sie das Verzeichnis in den Ort, an dem Sie das Projekt erstellen möchten.
+1. Öffnen Sie eine Terminal- oder Befehlszeilensitzung und ändern Sie das Verzeichnis so, dass es auf den Speicherort verweist, an dem das Projekt erstellt werden soll.
 1. Geben Sie den folgenden Befehl ein:
 
    ```xml
    mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault -DarchetypeArtifactId=multimodule-content-package-archetype -DarchetypeVersion=1.0.0 -DarchetypeRepository=adobe-public-releases
    ```
 
-1. Legen Sie auf interaktive Aufforderung die folgenden Werte fest:
+1. Geben Sie die folgenden Werte an der interaktiven Eingabeaufforderung an:
 
    * `groupId`: `com.adobe.example.msm`
    * `artifactId`: `MyLiveActionFactory`
@@ -292,9 +293,9 @@ Das folgende Verfahren setzt voraus, dass Sie das adobe-public-Profil zu Ihrer M
    * `artifactName`: `MyLiveActionFactory package`
    * `packageGroup`: `myPackages`
 
-1. Starten Sie Eclipse und [importieren Sie das Maven-Projekt](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
+1. Starten Sie Eclipse und [Importieren des Maven-Projekts](/help/sites-developing/howto-projects-eclipse.md#import-the-maven-project-into-eclipse).
 
-### Hinzufügen von Abhängigkeiten zur POM-Datei {#add-dependencies-to-the-pom-file}
+### Abhängigkeiten zur POM-Datei hinzufügen {#add-dependencies-to-the-pom-file}
 
 Fügen Sie Abhängigkeiten hinzu, damit der Eclipse-Compiler auf die Klassen verweisen kann, die im `LiveActionFactory`-Code verwendet werden.
 
@@ -351,7 +352,7 @@ Fügen Sie Abhängigkeiten hinzu, damit der Eclipse-Compiler auf die Klassen ver
    ```
 
 1. Öffnen Sie im **Projekt-Explorer** unter `MyLiveActionFactory-bundle/pom.xml` die POM-Datei für das Bundle.
-1. Klicken Sie im Editor auf die Registerkarte `pom.xml` und suchen Sie den Abschnitt project/dependencies. Fügen Sie den folgenden XML-Code zum Element „dependencies“ hinzu und speichern Sie dann die Datei:
+1. Klicken Sie im Editor auf die Registerkarte `pom.xml` und suchen Sie den Abschnitt project/dependencies. Fügen Sie die folgende XML innerhalb des Elements &quot;dependencies&quot;hinzu und speichern Sie dann die Datei:
 
    ```xml
     <dependency>
@@ -384,7 +385,7 @@ Fügen Sie Abhängigkeiten hinzu, damit der Eclipse-Compiler auf die Klassen ver
     </dependency>
    ```
 
-### Implementieren von LiveActionFactory {#implement-liveactionfactory}
+### LiveActionFactory implementieren {#implement-liveactionfactory}
 
 Die folgende `LiveActionFactory`-Klasse implementiert eine `LiveAction`, die Nachrichten zu Quell- und Zielseiten protokolliert und die Eigenschaft `cq:lastModifiedBy` vom Quell- zum Zielknoten kopiert. Der Name der Live-Aktion lautet `exampleLiveAction`.
 
@@ -556,7 +557,7 @@ Erstellen Sie die MSM-Rollout-Konfiguration, die die von Ihnen erstellte `LiveAc
 
 1. Erstellen und konfigurieren Sie eine [Rollout-Konfiguration über das Standardverfahren](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) – mit den folgenden Eigenschaften:
 
-   * **Titel**: Rollout-Beispielkonfiguration
+   * **Titel**: Beispiel-Rollout-Konfiguration
    * **Name**: examplerolloutconfig
    * **cq:trigger**: `publish`
 
@@ -583,7 +584,7 @@ Konfigurieren Sie die beim vorhergehenden Verfahren erstellte Rollout-Konfigurat
 
 ### Erstellen der Live Copy {#create-the-live-copy}
 
-[Erstellen Sie eine Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) des English/Products-Zweigs der We.Retail-Referenzwebsite mit Ihrer Rollout-Konfiguration:
+[Erstellen einer Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) der englischsprachigen/produktbezogenen Verzweigung der We.Retail-Referenz-Site mit Ihrer Rollout-Konfiguration:
 
 * **Quelle**: `/content/we-retail/language-masters/en/products`
 
@@ -617,14 +618,14 @@ In some cases, the **Chapters** selection is not required in the create site wiz
     1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
 -->
 
-## Ändern von Sprachennamen und Standardländern {#changing-language-names-and-default-countries}
+## Ändern von Sprachnamen und Standardländern {#changing-language-names-and-default-countries}
 
-AEM verwendet einen Standardsatz an Sprachen und Ländercodes.
+AEM verwendet einen Standardsatz von Sprach- und Ländercodes.
 
-* Standard-Sprachcode ist der aus zwei Kleinbuchstaben bestehende Code nach ISO 639-1.
-* Standard-Ländercode ist der aus zwei Klein- oder Großbuchstaben bestehende Code nach ISO 3166.
+* Der Standard-Sprachcode ist der aus zwei Buchstaben bestehende Code in Kleinbuchstaben gemäß ISO-639-1.
+* Der standardmäßige Ländercode ist der aus zwei Buchstaben bestehende Code in Kleinbuchstaben oder Großbuchstaben gemäß ISO 3166.
 
-MSM bestimmt anhand einer gespeicherten Liste von Sprach- und Ländercodes den Namen des Landes, das mit dem Namen der Sprachversion Ihrer Seite verknüpft ist. Die folgenden Elemente der Liste können Sie bei Bedarf ändern:
+MSM verwendet eine gespeicherte Liste von Sprach- und Ländercodes, um den Namen des Landes zu bestimmen, das mit dem Namen der Sprachversion Ihrer Seite verknüpft ist. Sie können bei Bedarf die folgenden Aspekte der Liste ändern:
 
 * Sprachtitel
 * Ländernamen
@@ -650,38 +651,38 @@ So bearbeiten Sie die Sprachen:
 1. Wiederholen Sie diesen Schritt, um die Ordnerstruktur `/apps/wcm/core` zu erstellen. Erstellen Sie in `core` einen Knoten des Typs `sling:Folder` mit dem Namen `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `/libs/wcm/core/resources/languages` und klicken Sie auf **Kopieren**.
-1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/wcm/core/resources` und klicken Sie auf **Einfügen**. Bearbeiten Sie die untergeordneten Knoten nach Bedarf.
+1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/wcm/core/resources` und klicken Sie auf **Einfügen**. Ändern Sie die untergeordneten Knoten nach Bedarf.
 1. Klicken Sie auf **Alle speichern**.
-1. Klicken Sie auf **Tools** > **Vorgänge** > **Web-Konsole**. Klicken Sie in dieser Konsole auf **OSGi** > **Konfiguration**.
+1. Klicken **Instrumente**, **Aktivitäten** then **Web-Konsole**. Klicken Sie in dieser Konsole auf **OSGi**, dann **Konfiguration**.
 1. Suchen Sie **Day CQ WCM Language Manager**, klicken Sie darauf und ändern Sie den Wert von **Language List** in `/apps/wcm/core/resources/languages`. Klicken Sie dann auf **Speichern**.
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
-## Konfigurieren von MSM-Sperren bei Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
+## Konfigurieren von MSM-Sperren für Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
-Beim Erstellen einer benutzerdefinierten Seiteneigenschaft müssen Sie ggf. überlegen, ob die neue Eigenschaft für den Rollout auf allen Live Copies qualifiziert sein soll.
+Beim Erstellen einer benutzerdefinierten Seiteneigenschaft müssen Sie möglicherweise überlegen, ob die neue Eigenschaft für das Rollout auf allen Live Copies geeignet sein soll.
 
-Beispiel: Zwei neue Seiteneigenschaften werden hinzugefügt:
+Wenn beispielsweise zwei neue Seiteneigenschaften hinzugefügt werden:
 
-* Contact Email:
+* Kontakt-E-Mail:
 
-   * Diese Eigenschaft muss nicht bereitgestellt werden, da sie in jedem Land (oder bei jeder Marke usw.) anders ausfällt.
+   * Diese Eigenschaft muss nicht eingeführt werden, da sie in den einzelnen Ländern (oder Marken usw.) unterschiedlich ist.
 
 * Key Visual Style:
 
-   * Die Projektanforderung gibt die Bereitstellung dieser Eigenschaft vor, da sie (in der Regel) in allen Ländern (oder bei allen Marken usw.) gleich ist.
+   * Die Projektanforderung besteht darin, dass diese Eigenschaft eingeführt wird, da sie (normalerweise) allen Ländern (oder Marken usw.) gemeinsam ist.
 
 Dann müssen Sie Folgendes sicherstellen:
 
-* Contact Email:
+* Kontakt-E-Mail:
 
-   * muss von den bereitgestellten Eigenschaften ausgeschlossen sein; siehe [Ausschließen von Eigenschaften und Knotentypen von der Synchronisierung](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization)
+* muss von den bereitgestellten Eigenschaften ausgeschlossen sein; siehe [Ausschließen von Eigenschaften und Knotentypen von der Synchronisierung](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization)
 
 * Key Visual Style:
 
-   * Stellen Sie sicher, dass Sie diese Eigenschaft in der Touch-optimierten Benutzeroberfläche nur bearbeiten, wenn die Vererbung abgebrochen wird, damit Sie die Vererbung neu aktivieren können. Gesteuert wird dies durch Klicken auf das Kettensymbol bzw. das Symbol der gebrochenen Kette, die den Verbindungsstatus anzeigt.
+* Stellen Sie sicher, dass Sie diese Eigenschaft in der Touch-optimierten Benutzeroberfläche nur bearbeiten dürfen, wenn die Vererbung abgebrochen wurde. Außerdem können Sie die Vererbung dann erneut aktivieren. Dies wird durch Klicken auf die Kettenlinks/unterbrochenen Kettenlinks gesteuert, die den Status der Verbindung anzeigen.
 
-Ob eine Seiteneigenschaft bereitgestellt werden soll und daher bei der Bearbeitung abhängig vom Abbruch/der erneuten Aktivierung der Vererbung ist, wird durch die folgende Dialogeigenschaft gesteuert:
+Ob für eine Seiteneigenschaft ein Rollout durchgeführt werden muss und daher beim Bearbeiten die Vererbung abgebrochen/reaktiviert werden kann, wird durch die Eigenschaft dialog gesteuert:
 
 * `cq-msm-lockable`
 
@@ -689,10 +690,10 @@ Ob eine Seiteneigenschaft bereitgestellt werden soll und daher bei der Bearbeitu
    * erstellt das Ketten-Linksymbol im Dialogfeld
    * lässt die Bearbeitung nur zu, wenn die Vererbung abgebrochen wird (also der Ketten-Link gebrochen ist)
    * gilt nur für die erste untergeordnete Ebene der Ressource
-   * **Typ**: `String`
+      * **Typ**: `String`
 
-   * **Wert**: speichert den Namen der betroffenen Eigenschaft (und ist vergleichbar mit dem Wert der Eigenschaft `name`; z. B.
-      `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+      * **Wert**: speichert den Namen der betroffenen Eigenschaft (und ist vergleichbar mit dem Wert der Eigenschaft `name`; z. B.
+         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wenn `cq-msm-lockable` definiert wurde, interagiert das Öffnen oder Schließen der Kettenverbindung mit MSM wie folgt:
 
