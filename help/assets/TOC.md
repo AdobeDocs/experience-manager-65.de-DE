@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: 62d921df1b03520b53ceefa072530bf0214df30a
+source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '683'
 ht-degree: 99%
 
 ---
@@ -158,6 +158,7 @@ ht-degree: 99%
 + Verwalten von Assets {#managing}
    + [Verwalten digitaler Assets](manage-assets.md)
    + [Verwalten von Sammlungen](manage-collections.md)
+   + [Asset-Auswahl](asset-selector.md)
    + [Aktivieren der Duplikatserkennung](duplicate-detection.md)
    + [Organisieren von digitalen Assets](organize-assets.md)
    + [Verwalten von Video-Assets](managing-video-assets.md)

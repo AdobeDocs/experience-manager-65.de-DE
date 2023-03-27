@@ -1,11 +1,11 @@
 ---
 title: Asset-Auswahl
 description: Erfahren Sie, wie Sie mit der Asset-Auswahl Metadaten für Assets in Adobe Experience Manager Assets suchen, filtern, durchsuchen und abrufen können. Erfahren Sie außerdem, wie Sie die Benutzeroberfläche des Asset-Wählers anpassen.
-contentOwner: AG
+contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 4139b42d5cd3d7d1d93863dc07cfafd58c3f64f2
+source-git-commit: 0c6c269e9f0cbdcc0c5e3b925ef09b9923cbb2b3
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 43%
