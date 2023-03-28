@@ -2,8 +2,8 @@
 title: Erste Schritte mit AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
+source-git-commit: 40e81b63e28a75c769507654d7f1d75da82f0bd6
+workflow-type: tm+mt
 source-wordcount: '3031'
 ht-degree: 100%
 
@@ -15,7 +15,7 @@ In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, was
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM Headless-Tour, [Informationen zur CMS-Headless-Entwicklung](learn-about.md) haben Sie die grundlegende Theorie gelernt, was ein Headless-CMS ist und sollten jetzt:
+Im vorherigen Dokument der AEM Headless-Tour, [Informationen zur CMS-Headless-Entwicklung](learn-about.md), haben Sie die grundlegende Theorie gelernt, was ein Headless-CMS ist, und sollten jetzt:
 
 * die grundlegenden Konzepte und die Terminologie der Headless-Bereitstellung von Inhalten verstehen,
 * verstehen, warum und wann Headless erforderlich ist,
@@ -58,7 +58,7 @@ Auf der einfachsten Ebene erfordert das Erstellen digitaler Erlebnisse in AEM di
 1. Wenn diese Inhalte fertig sind, werden sie auf die Veröffentlichungsinstanz repliziert.
 1. Anschließend können APIs aufgerufen werden, um diese Inhalte abzurufen.
 
-AEM Headless baut auf dieser technischen Grundlage auf, indem leistungsstarke Tools zum Verwalten von Headless-Inhalten bereitgestellt werden, die [im nächsten Abschnitt beschrieben](#aem-headless-basics) werden.
+AEM Headless baut auf dieser technischen Grundlage auf, indem leistungsstarke Tools zum Verwalten von Headless-Inhalten bereitgestellt werden, die [im nächsten Abschnitt beschrieben werden](#aem-headless-basics).
 
 ## AEM Headless-Grundlagen {#aem-headless-basics}
 
@@ -99,7 +99,7 @@ Nehmen wir einmal an, dass Ihre Grundanforderung mindestens darin besteht, Inhal
 
 Diese Integrationsebene ist das herkömmliche Headless-Modell und ermöglicht es Ihren Inhaltsautoren, Inhalte in AEM zu erstellen und diese mithilfe von GraphQL für eine beliebige Anzahl externer Services bereitzustellen oder mithilfe der Assets-API über externe Services zu bearbeiten. In AEM ist keine Programmierung erforderlich.
 
-In diesem Modell wird AEM nur zum Erstellen und Bereitstellen der Inhalte mithilfe von AEM Inhaltsfragmenten verwendet. Rendering und Interaktion mit dem Inhalt werden an die nutzende externe Anwendung delegiert, häufig eine Single Page Application (SPA).
+In diesem Modell wird AEM nur zum Erstellen und Bereitstellen der Inhalte mithilfe von AEM-Inhaltsfragmenten verwendet. Rendering und Interaktion mit dem Inhalt werden an die nutzende externe Anwendung delegiert, häufig eine Single Page Application (SPA).
 
 #### Ebene 2: Einbetten der SPA in das AEM-Hybridmodell {#level-2}
 
@@ -201,7 +201,7 @@ Durch die Erstellung einer geeigneten Inhaltsstruktur wird es einfacher, das Aut
 
 Inhaltsfragmentnamen müssen für Inhaltsautoren beschreibend sein. AEM behandelt das Maskieren und/oder Abschneiden der verwendeten IDs auf Repository-Ebene transparent. Daher sollten die von den Inhaltsautoren bereitgestellten logischen Namen immer lesbar sein und den Inhalt darstellen.
 
-* Schelchter Name: `cta_btn_1`
+* Schlechter Name: `cta_btn_1`
 * Guter Name: `Call To Action Button`
 
 Weitere Informationen zu AEM-Seitennamenkonventionen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources).
@@ -214,7 +214,7 @@ Als allgemeine Faustregel gilt, dass Inhaltsfragmentverweise nicht über mehr al
 
 #### Inhaltsarchitekt {#content-architect}
 
-Inhaltsarchitekten analysieren die Anforderungen an die Daten, die „headless“ bereitgetellt werden müssen, und definieren die Struktur für diese Daten. Diese Strukturen werden in AEM [Inhaltsfragmentmodelle](#content-fragment-models) genannt. Inhaltsfragmentmodelle werden als Grundlage für die Inhaltsfragmente verwendet, die die Inhaltsautoren erstellen.
+Inhaltsarchitekten analysieren die Anforderungen an die Daten, die „headless“ bereitgestellt werden müssen, und definieren die Struktur für diese Daten. Diese Strukturen werden in AEM [Inhaltsfragmentmodelle](#content-fragment-models) genannt. Inhaltsfragmentmodelle werden als Grundlage für die Inhaltsfragmente verwendet, die die Inhaltsautoren erstellen.
 
 Ein nützlicher Ansatz bei der Definition von Inhaltsfragmentmodellen besteht darin, Modelle zu erstellen, die den Benutzererlebnis-Komponenten der Anwendungen zugeordnet sind, die die Inhalte nutzen.
 
@@ -289,5 +289,5 @@ Es wird zwar empfohlen, zum nächsten Teil der Headless-Development-Tour voranzu
 * [Technische Dokumentation zu GraphQL](https://graphql.org): Die GraphQL-Definition (externer Link).
 * [GraphQL-API](/help/assets/content-fragments/graphql-api-content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellt werden.
 * [Assets-REST-API](/help/assets/assets-api-content-fragments.md): Technische Dokumentation, in der erläutert wird, wie Inhaltsfragmente (und andere Assets) erstellt und geändert werden.
-* [Persistente Abfragen](/help/assets/content-fragments/graphql-api-content-fragments.md#persisted-queries-caching): Technische Dokumentation zu persistenten Abfragen in AEM.
+* [Persistente Abfragen](/help/assets/content-fragments/persisted-queries.md): Technische Dokumentation zu persistenten Abfragen in AEM.
 * [Headful und Headless in AEM](/help/sites-developing/headful-headless.md): Eine vollständige Diskussion der Headless-Integrationsebenen, die in AEM verfügbar sind.
