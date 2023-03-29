@@ -2,8 +2,8 @@
 title: Live-Schalten Ihres Headless-Programms
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie eine Headless-Anwendung live schalten.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+workflow-type: tm+mt
 source-wordcount: '1903'
 ht-degree: 100%
 
@@ -104,7 +104,7 @@ Jetzt sollten Sie Ihr AEM Headless-Programm für den Launch vorbereiten, indem S
 
 ### Sichern Ihres Headless-Programms vor dem Launch {#secure-and-scale-before-launch}
 
-1. Vorbereiten der [Authentifizierung](/help/assets/content-fragments/graphql-authentication-content-fragments.md) für Ihre GraphQL-Anfragen
+1. Vorbereiten der [Authentifizierung](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md) für Ihre GraphQL-Anfragen
 
 ### Modellstruktur und GraphQL-Ausgabe im Vergleich {#structure-vs-output}
 

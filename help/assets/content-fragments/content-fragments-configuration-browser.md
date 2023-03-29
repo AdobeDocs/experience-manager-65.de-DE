@@ -4,8 +4,8 @@ description: Erfahren Sie, wie Sie bestimmte Inhaltsfragmentfunktionen im Konfig
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: da41f48d08b7629a734e2f60077af6190a7fee8f
-workflow-type: ht
+source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 100%
 
@@ -27,7 +27,7 @@ Bevor Sie Inhaltsfragmente verwenden können, müssen Sie den **Konfigurations-B
 >Wenn Sie **Inhaltsfragmentmodelle** nicht aktivieren:
 >
 >* ist die Option **Erstellen** für das Erstellen neuer Modelle nicht verfügbar.
->* können Sie die [Sites-Konfiguration nicht auswählen, um den entsprechenden Endpunkt zu erstellen](/help/assets/content-fragments/graphql-api-content-fragments.md#enabling-graphql-endpoint).
+>* können Sie die [Sites-Konfiguration nicht auswählen, um den entsprechenden Endpunkt zu erstellen](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
 
 Gehen Sie wie folgt vor, um die Inhaltsfragmentfunktionen zu aktivieren:

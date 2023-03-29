@@ -2,8 +2,8 @@
 title: Schnellstartanleitung zum Erstellen von Asset-Ordnern per Headless-Implementierung
 description: Verwenden Sie AEM-Inhaltsfragmentmodelle, um die Struktur von Inhaltsfragmenten zu definieren – die Grundlage für Ihren Headless-Content.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: ht
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 100%
 
@@ -33,16 +33,16 @@ Administratoren müssen nur gelegentlich Ordner erstellen, um Inhalte bei der Er
       * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/sites-developing/naming-conventions.md) angepasst.
       * Er kann bei Bedarf angepasst werden.
 
-   ![Ordner erstellen](../assets/assets-folder-create.png)
+   ![Ordner erstellen](assets/assets-folder-create.png)
 1. Wählen Sie den soeben erstellten Ordner und dann in der Symbolleiste **Eigenschaften** aus (oder verwenden Sie den [Tastaturbefehl](/help/sites-authoring/keyboard-shortcuts.md) `p`).
 1. Wählen Sie im Fenster **Eigenschaften** die Registerkarte **Cloud Services** aus.
 1. Wählen Sie für die **Cloud-Konfiguration** die zuvor erstellte [Konfiguration aus.](create-configuration.md)
 
-   ![Konfigurieren des Asset-Ordners](../assets/assets-folder-configure.png)
+   ![Konfigurieren des Asset-Ordners](assets/assets-folder-configure.png)
 1. Tippen oder klicken Sie auf **Speichern und schließen**.
 1. Tippen oder klicken Sie im Bestätigungsfenster auf **OK**.
 
-   ![Bestätigungsfenster](../assets/assets-folder-confirmation.png)
+   ![Bestätigungsfenster](assets/assets-folder-confirmation.png)
 
 Sie können im soeben erstellten Ordner weitere Unterordner erstellen. Die Unterordner übernehmen die **Cloud-Konfiguration** des übergeordneten Ordners. Dies kann jedoch überschrieben werden, wenn Sie Modelle aus einer anderen Konfiguration verwenden möchten.
 

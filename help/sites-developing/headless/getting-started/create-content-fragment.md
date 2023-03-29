@@ -2,8 +2,8 @@
 title: Schnellstartanleitung zum Erstellen von Inhaltsfragmenten per Headless-Implementierung
 description: Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhalte für die Headless-Bereitstellung entwerfen, erstellen, kuratieren und verwenden können.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: ht
+source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 100%
 
@@ -32,16 +32,16 @@ Inhaltsersteller können eine beliebige Anzahl von Inhaltsfragmenten für ihre I
    * Die verfügbaren Modelle hängen von der [**Cloud-Konfiguration** ab, die Sie für den Asset-Ordner](create-assets-folder.md) definiert haben, in dem Sie das Inhaltsfragment erstellen.
    * Wenn Ihnen die Meldung `We could not find any models` angezeigt wird, überprüfen Sie die Konfiguration Ihres Asset-Ordners.
 
-   ![Auswählen des Inhaltsfragmentmodells](../assets/content-fragment-model-select.png)
+   ![Auswählen des Inhaltsfragmentmodells](assets/content-fragment-model-select.png)
 1. Geben Sie nach Bedarf einen **Titel**, eine **Beschreibung** und **Tags** ein und tippen oder klicken Sie auf **Erstellen**.
 
-   ![Inhaltsfragment erstellen](../assets/content-fragment-create.png)
+   ![Inhaltsfragment erstellen](assets/content-fragment-create.png)
 1. Tippen oder klicken Sie im Bestätigungsfenster auf **Öffnen**.
 
-   ![Bestätigung der Inhaltsfragment-Erstellung ](../assets/content-fragment-confirmation.png)
+   ![Bestätigung der Inhaltsfragment-Erstellung ](assets/content-fragment-confirmation.png)
 1. Geben Sie im Inhaltsfragment-Editor die Details des Inhaltsfragments an.
 
-   ![Inhaltsfragmente-Editor](../assets/content-fragment-edit.png)
+   ![Inhaltsfragmente-Editor](assets/content-fragment-edit.png)
 1. Tippen oder klicken Sie auf **Speichern** oder **Speichern und schließen**.
 
 Inhaltsfragmente können auf andere Inhaltsfragmente verweisen, was bei Bedarf eine verschachtelte Inhaltsstruktur ermöglicht.

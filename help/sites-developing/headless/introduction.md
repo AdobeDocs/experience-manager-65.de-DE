@@ -2,8 +2,8 @@
 title: Headless-Entwicklung für AEM 6.5 Sites
 description: Erfahren Sie, wie die leistungsstarken Headless-Funktionen von AEM 6.5 wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API zusammenarbeiten, um Ihnen die zentrale Verwaltung Ihrer Erlebnisse und deren kanalübergreifende Bereitstellung zu ermöglichen.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
+source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
+workflow-type: tm+mt
 source-wordcount: '493'
 ht-degree: 100%
 
@@ -19,7 +19,7 @@ Die Headless-Implementierung wird immer wichtiger, wenn es darum geht, Erlebniss
 
 Die Headless-Implementierung verzichtet auf das Seiten- und Komponenten-Management, wie es bei Full-Stack- und Hybrid-Lösungen üblich ist, und konzentriert sich auf die Erstellung kanalneutraler, wiederverwendbarer Inhaltsfragmente und deren kanalübergreifende Bereitstellung. Es handelt sich um ein modernes und dynamisches Entwicklungsmuster zur Implementierung von Web-Erlebnissen.
 
-![AEM-Implementierungsmodelle](assets/aem-implementation-models.png)
+![AEM-Implementierungsmodelle](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
 ## Vergleich von Headful und Headless {#headful-headless}
 
