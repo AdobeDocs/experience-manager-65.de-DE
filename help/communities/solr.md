@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1424'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 ## Solr für AEM Plattform {#solr-for-aem-platform}
 
-Ein [Apache Solr](https://lucene.apache.org/solr/) Die Installation kann von der [Knotenspeicher](../../help/sites-deploying/data-store-config.md) (Oak) und [gemeinsamer Speicher](working-with-srp.md) (SRP) durch Verwendung verschiedener Sammlungen.
+Ein [Apache Solr](https://solr.apache.org/) Die Installation kann von der [Knotenspeicher](../../help/sites-deploying/data-store-config.md) (Oak) und [gemeinsamer Speicher](working-with-srp.md) (SRP) durch Verwendung verschiedener Sammlungen.
 
 Wenn sowohl die Oak- als auch die SRP-Kollektionen intensiv verwendet werden, kann aus Leistungsgründen ein zweiter Solr installiert werden.
 
@@ -32,9 +32,9 @@ Für Produktionsumgebungen: [SolrCloud-Modus](#solrcloud-mode) bietet eine verbe
 
 Herunterladen und Installieren von Apache Solr:
 
-* [Version 7.0](https://archive.apache.org/dist/lucene/solr/7.0.0/)
+* [Version 7.0](https://archive.apache.org/dist/lucene/solr/7.0.0/)
 
-* Solr erfordert Java 1.7 oder höher
+* Solr erfordert Java™ 1.7 oder höher
 * Es ist kein Dienst erforderlich
 * Auswahl der Ausführungsmodi:
 
@@ -63,14 +63,14 @@ Es wird außerdem empfohlen, JVM zu konfigurieren, um die Speicherbelegung und d
 JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xloggc:../logs/gc.log -XX:+PrintGCDetails -XX:+PrintGCDateStamps -Djava.awt.headless=true"
 ```
 
-### SolrCloud-Setup-Befehle {#solrcloud-setup-commands}
+### SolrCloud - Befehle einrichten {#solrcloud-setup-commands}
 
 Bei Ausführung im SolrCloud-Modus ist vor der MLS-Installation die Verwendung und Kenntnis der folgenden SolrCloud-Einrichtungsbefehle erforderlich.
 
 #### 1. Eine Konfiguration in ZooKeeper hochladen {#upload-a-configuration-to-zookeeper}
 
 Referenz:
-[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
+[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Verwendung: sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd upconfig \
@@ -82,9 +82,9 @@ Verwendung: sh ./scripts/cloud-scripts/zkcli.sh \
 #### 2. Kollektion erstellen {#create-a-collection}
 
 Referenz:
-[https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create](https://cwiki.apache.org/confluence/display/solr/Solr+Start+Script+Reference#SolrStartScriptReference-Create)
+[https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create](https://solr.apache.org/guide/6_6/solr-control-script-reference.html#SolrControlScriptReference-Create)
 
-Nutzung:
+Verwendung:
 ./bin/solr create \
 -c *mycollection-name*\
 -d *config-dir* \
@@ -98,7 +98,7 @@ Nutzung:
 Verknüpfen Sie eine Sammlung mit einer Konfiguration, die bereits in ZooKeeper hochgeladen wurde.
 
 Referenz:
-[https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities](https://cwiki.apache.org/confluence/display/solr/Command+Line+Utilities)
+[https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
 
 Verwendung: sh ./scripts/cloud-scripts/zkcli.sh \
 -cmd linkconfig \
@@ -140,7 +140,7 @@ Insgesamt werden die folgenden 33 Sprachen in Advanced MLS unterstützt.
 | Finnisch | Lettisch | Thailändisch |
 | Französisch | Litauisch | Türkisch |
 
-#### Vergleich AEM 6.1 Solr-Suche, Standard-MLS und erweitertes MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
+#### Vergleich von AEM 6.1 Solr-Suche, Standard-MLS und erweiterten MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
 **Hinweis**: AEM 6.1 bezieht sich auf AEM 6.1 Communities FP3 und früher.
 
@@ -171,8 +171,8 @@ Die Standard-MLS-Dateien werden im AEM-Repository gespeichert.
 1. Herunterladen auf den lokalen Server, auf dem Solr bereitgestellt wird.
 
    * Suchen Sie die `jcr:content` Knoten `jcr:data` -Eigenschaft.
-   * Auswählen `view` um den Download zu starten.
-   * Stellen Sie sicher, dass die Dateien mit den entsprechenden Namen und der entsprechenden Kodierung (UTF8) gespeichert sind.
+   * Um den Download zu starten, wählen Sie `view`.
+   * Stellen Sie sicher, dass die Dateien mit den entsprechenden Namen und der entsprechenden Kodierung (UTF8) gespeichert werden.
 
 1. Befolgen Sie die Installationsanweisungen für den eigenständigen oder SolrCloud-Modus.
 
@@ -194,7 +194,7 @@ Die Standard-MLS-Dateien werden im AEM-Repository gespeichert.
 1. [Kollektion erstellen](#create-a-collection) Angabe der erforderlichen Parameter, wie z. B. Anzahl der Shards, Anzahl der Replikate und Konfigurationsname.
 1. Wenn der Konfigurationsname während der Erstellung der Kollektion *nicht *angegeben wurde, [Diese neu erstellte Sammlung verknüpfen](#link-a-collection-to-a-configuration-set) mit der Konfiguration, die in ZooKeeper hochgeladen wurde.
 
-1. Führen Sie für MSRP aus. [MSRP-Reindex-Tool](msrp.md#msrp-reindex-tool), es sei denn, es handelt sich um eine Neuinstallation.
+1. Führen Sie für MSRP aus. [MSRP-Reindex-Tool](msrp.md#msrp-reindex-tool), es sei denn, es handelt sich um eine neue Installation.
 
 #### Eigenständiger Modus - Standard-MLS {#standalone-mode-standard-mls}
 
@@ -212,7 +212,7 @@ Die Standard-MLS-Dateien werden im AEM-Repository gespeichert.
 1. Kopieren Sie die heruntergeladenen **schema.xml** und **solrconfig.xml** in denselben Ordner.
 
 1. Starten Sie Solr neu.
-1. Führen Sie für MSRP aus. [MSRP-Reindex-Tool](#msrpreindextool), es sei denn, es handelt sich um eine Neuinstallation.
+1. Führen Sie für MSRP aus. [MSRP-Reindex-Tool](#msrpreindextool), es sei denn, es handelt sich um eine neue Installation.
 
 ### Installieren erweiterter MLS {#installing-advanced-mls}
 
@@ -277,13 +277,13 @@ Installationsanweisungen - beachten Sie die wenigen Unterschiede für Solr4 und 
 1. [Kollektion erstellen](#create-a-collection) Angabe der erforderlichen Parameter, wie z. B. Anzahl der Shards, Anzahl der Replikate und Konfigurationsname.
 1. Wenn der Konfigurationsname *not* bei der Erstellung der Sammlung bereitgestellt werden, [Diese neu erstellte Sammlung verknüpfen](#link-a-collection-to-a-configuration-set) mit der Konfiguration, die in ZooKeeper hochgeladen wurde.
 
-1. Führen Sie für MSRP aus. [MSRP-Reindex-Tool](#msrpreindextool), es sei denn, es handelt sich um eine Neuinstallation.
+1. Führen Sie für MSRP aus. [MSRP-Reindex-Tool](#msrpreindextool), es sei denn, es handelt sich um eine neue Installation.
 
 #### Eigenständiger Modus - Erweitertes MLS {#standalone-mode-advanced-mls}
 
 Ein Installationsskript ist im erweiterten MLS-Paket enthalten.
 
-Nachdem der Inhalt des Pakets auf den Server extrahiert wurde, der den eigenständigen Solr-Server hostet, führen Sie einfach das Installationsskript aus, um die erforderlichen Ressourcen und Konfigurationsdateien zu installieren.
+Nachdem der Inhalt des Pakets auf den Server extrahiert wurde, der den eigenständigen Solr-Server hostet, führen Sie das Installationsskript aus, um die erforderlichen Ressourcen und Konfigurationsdateien zu installieren.
 
 * Installieren Sie Solr im eigenständigen Modus.
 * Wenn Sie Solr5 ausführen, erstellen Sie eine Sammlung1 (ähnlich wie bei Solr4):
@@ -324,7 +324,7 @@ wobei:
 
 ### Über solrconfig.xml {#about-solrconfig-xml}
 
-Die **solrconfig.xml** -Datei steuert das automatische Commit-Intervall und die Sichtbarkeit der Suche und erfordert Tests und Tuning.
+Die **solrconfig.xml** -Datei steuert das Intervall für die automatische Übertragung und die Sichtbarkeit der Suche und erfordert Tests und Tuning.
 
 `<autoCommit>`: Standardmäßig ist das AutoCommit-Intervall, bei dem es sich um eine feste Bindung an einen stabilen Speicher handelt, auf 15 Sekunden festgelegt. Die Sichtbarkeit der Suche verwendet standardmäßig den Pre-commit-Index.
 

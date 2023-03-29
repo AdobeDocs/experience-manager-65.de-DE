@@ -8,10 +8,10 @@ contentOwner: anujkapo
 discoiquuid: fe5da0aa-d3a8-4b77-a447-9e429fdc2816
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '4689'
-ht-degree: 100%
+source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+workflow-type: tm+mt
+source-wordcount: '4677'
+ht-degree: 97%
 
 ---
 
@@ -84,9 +84,9 @@ Dieser Abschnitt enthält Informationen zur Installation des Demopakets.
 
 1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
-1. Im Abschnitt **[!UICONTROL Filter]**:
-   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-   2. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
+1. Im **[!UICONTROL Filter]** Abschnitt:
+   1. Auswählen **[!UICONTROL Forms]** von **[!UICONTROL Lösung]** Dropdown-Liste.
+   2. Wählen Sie die Version aus und geben Sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Tippen Sie auf den Paketnamen **we-gov-forms.pkg.all-&lt;version>.zip**, wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
 1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
@@ -281,7 +281,7 @@ Die in diesem Abschnitt beschriebenen Schritte bieten Hilfe bei der Suche nach d
 1. Um die Ressourcen-URL/Service-Stamm-URL zu finden, navigieren Sie zum Dashboard der MS Dynamics-Instanz.
 1. Klicken Sie in der oberen Navigationsleiste auf „Verkauf“ oder Ihren eigenen Instanztyp und dann auf „Einstellungen auswählen“.
 1. Klicken Sie unten rechts auf „Anpassungen“ und dann auf „Entwicklungsressourcen“.
-1. Dort finden Sie die Service-Stamm-URL: z. B.
+1. Dort finden Sie die Dienststamm-URL: z. B.
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
@@ -311,10 +311,10 @@ Sobald die Cloud-Konfiguration abgeschlossen ist, sollten Sie das Formulardatenm
 1. Testen Sie die Services, um sicherzustellen, dass sie erfolgreich eine Verbindung zur konfigurierten Datenquelle herstellen.
 
    >[!NOTE]
-   >Klicken Sie nach dem Testen der Services auf **Abbrechen** um sicherzustellen, dass unfreiwillige Änderungen nicht an das Formulardatenmodell weitergegeben werden.
+   Klicken Sie nach dem Testen der Services auf **Abbrechen** um sicherzustellen, dass unfreiwillige Änderungen nicht an das Formulardatenmodell weitergegeben werden.
 
    >[!NOTE]
-   >Es wurde berichtet, dass ein AEM Server-Neustart erforderlich war, damit die Datenquelle erfolgreich an das FDM gebunden werden konnte.
+   Es wurde berichtet, dass ein AEM Server-Neustart erforderlich war, damit die Datenquelle erfolgreich an das FDM gebunden werden konnte.
 
 #### Testen des Formulardatenmodells (Derby) {#test-fdm-derby}
 
@@ -418,7 +418,7 @@ Administratoren können Benutzern AEM Analytics-Berechtigungen erteilen, indem s
 #### Anzeigen von Adobe Analytics Sites-Berichten {#view-adobe-analytics-sites-reporting}
 
 >[!NOTE]
->AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
+AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/sites.html/content*
 1. Wählen Sie die „AEM Forms We.Gov-Site“ aus, um die Seiten der Site anzuzeigen.
@@ -446,7 +446,7 @@ Administratoren können Benutzern AEM Analytics-Berechtigungen erteilen, indem s
 #### Anzeigen von Adobe Analytics-Formularberichten {#view-adobe-analytics-forms-reporting}
 
 >[!NOTE]
->AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
+AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
 
 1. Gehen Sie zu
 
@@ -491,7 +491,7 @@ Damit der Service ordnungsgemäß mit dem Konvertierungs-Tool für Formulare kom
 1. Fahren Sie nicht mit dem Rest der Konfiguration fort, sondern lesen Sie den Abschnitt [Erstellen der Integration in Adobe I/O](#create-integration-adobeio)
 
 >[!NOTE]
->Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations-Service in Adobe I/O zu erstellen. Sobald Benutzer den Integrations-Service erstellt haben, können Benutzer diese Informationen aus Adobe I/O verwenden, um die Konfiguration abzuschließen.
+Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations-Service in Adobe I/O zu erstellen. Sobald Benutzer den Integrations-Service erstellt haben, können Benutzer diese Informationen aus Adobe I/O verwenden, um die Konfiguration abzuschließen.
 
 #### Erstellen der Integration in Adobe I/O {#create-integration-adobeio}
 
@@ -737,7 +737,7 @@ Dieser Abschnitt enthält Informationen zu Demo-Funktionen und Design-Entscheidu
 ### Überlegungen zur Demo {#demo-considerations}
 
 * Stellen Sie gemäß AGRS-159 sicher, dass der Name (Vor-, Mittel- und Nachname) des Kontakts, der im adaptiven Anmeldungsformular verwendet wird, einzigartig ist.
-* Das adaptive Anmeldungsformular sendet die Adobe Sign-E-Mail an die E-Mail, die im E-Mail-Feld des Formulars angegeben ist. Diese E-Mail-Adresse darf nicht dieselbe E-Mail-Adresse sein wie die E-Mail, die zum Konfigurieren der Adobe Sign-Cloud-Konfiguration verwendet wurde.
+* Das adaptive Registrierungsformular sendet die Adobe Sign-E-Mail an die E-Mail, die im E-Mail-Feld des Formulars angegeben ist. Diese E-Mail-Adresse darf nicht dieselbe E-Mail-Adresse sein wie die E-Mail, die zum Konfigurieren der Adobe Sign-Cloud-Konfiguration verwendet wurde.
 
 ### Bekannte Probleme {#known-issues}
 
@@ -748,12 +748,12 @@ Dieser Abschnitt enthält Informationen zu Demo-Funktionen und Design-Entscheidu
 
 ### Aktivieren des Chrome-Add-ons für Zugänglichkeitstests {#enable-chrome-add-on}
 
-Um Zugänglichkeitstests durchzuführen, müssen Sie zunächst das Chrome-Plug-in installieren, das Sie [hier](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=de) finden.
+Installieren Sie das gefundene Chrome-Plug-in, um Barrierefreiheitstests durchzuführen. [here](https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=de). <!-- This URL is a 404. Please fix and update this topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Laden Sie nach der Installation die Seite, die Sie im Chrome-Browser testen möchten (Hinweis: Wenn mehrere Tabs geöffnet sind, kann sich dies auf Ihr Scoring auswirken. Es ist empfehlenswert, nur eine Registerkarte zu öffnen.) Sobald die Seite geladen ist, klicken Sie mit der 
-**rechten Maustaste** auf die Seite und wählen Sie die Registerkarte **Prüfungen**. Dort können Entwickler die Art der Prüfung auswählen, die vom Zugänglichkeits-Plug-in durchgeführt werden soll. Nachdem alle gewünschten Optionen ausgewählt wurden, kann der Anwender die Schaltfläche „Bericht erstellen“ auswählen. Hierdurch wird ein PDF-Dokument generiert, das die allgemeine Zugänglichkeitsbewertung zeigt und verwendet werden kann, um die Zugänglichkeitsbewertung insgesamt zu verbessern.
+Laden Sie nach der Installation die Seite, die Sie im Chrome-Browser testen möchten (Hinweis: Wenn mehrere Tabs geöffnet sind, kann sich dies auf Ihre Punktzahl auswirken. Es ist empfehlenswert, nur eine Registerkarte zu öffnen.) Sobald die Seite geladen ist, klicken Sie mit der 
+**rechten Maustaste** auf die Seite und wählen Sie die Registerkarte **Prüfungen**. Dort können Entwickler die Art der Prüfung auswählen, die vom Zugänglichkeits-Plug-in durchgeführt werden soll. Nachdem alle gewünschten Optionen ausgewählt sind, kann der Benutzer auf die Schaltfläche Bericht generieren klicken. Hierdurch wird ein PDF-Dokument generiert, das die allgemeine Zugänglichkeitsbewertung zeigt und verwendet werden kann, um die Zugänglichkeitsbewertung insgesamt zu verbessern.
 
-Sobald der Bericht ausgeführt wurde, können Anwender Folgendes erwarten:
+Nachdem der Bericht ausgeführt wurde, können Benutzer erwarten, Folgendes zu sehen:
 
 ![Zugänglichkeitsbericht](assets/aftia-accessibility.jpg)
 
@@ -790,7 +790,7 @@ Um sie so zu konfigurieren, dass sie im Workflow aktiviert werden, müssen Benut
 1. Öffnen Sie die Service-Definition und aktivieren Sie den Aufruf der ausgewählten Services innerhalb des Workflows.
 
    >[!NOTE]
-   >Auch wenn ein Benutzer den Service auf der Seite „Configuration Manager“ aktiviert, muss er dennoch eine Service-Konfiguration einrichten, um mit den angefragten externen Services kommunizieren zu können.
+   Auch wenn ein Benutzer den Service auf der Seite „Configuration Manager“ aktiviert, muss er dennoch eine Service-Konfiguration einrichten, um mit den angefragten externen Services kommunizieren zu können.
 
    ![WeGov-Formular-Paket](assets/aftia-configuration-options.jpg)
 
