@@ -19,7 +19,7 @@ ht-degree: 58%
 
 # Erstellen und Verwalten von A/B-Test für adaptive Formulare{#create-and-manage-a-b-test-for-adaptive-forms}
 
-|Negativ|[!BADGE Abbruch]{type=negative tooltip="Diese Funktion ist jetzt eingestellt"}
+|Negativ|[!BADGE Abbruch]{type=negative tooltip="Diese Funktion ist jetzt eingestellt"}|
 <div class="preview"> Die A/B-Tests für adaptive Formulare haben das Ende der Lebensdauer erreicht und werden nicht mehr unterstützt. </div>
 
 ## Übersicht {#overview-br}
