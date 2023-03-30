@@ -12,10 +12,10 @@ discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
 workflow-type: tm+mt
-source-wordcount: '6065'
-ht-degree: 30%
+source-wordcount: '6053'
+ht-degree: 29%
 
 ---
 
@@ -138,9 +138,9 @@ Die Erstellung einer individuellen Konsistenzprüfung umfasst zwei Schritte: Imp
 
 ### Erstellen einer Verbund-Konsistenzprüfung {#creating-a-composite-health-check}
 
-Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle Konsistenzprüfungen mit einer Reihe gemeinsamer Funktionen zu aggregieren. Beispielsweise gruppiert die Security Composite Health Check alle individuellen Konsistenzprüfungen, die sicherheitsbezogene Überprüfungen durchführen. Der erste Schritt zum Erstellen einer zusammengesetzten Prüfung besteht darin, eine OSGi-Konfiguration hinzuzufügen. Damit sie im Vorgangs-Dashboard angezeigt werden kann, muss ein neuer Konfigurationsknoten hinzugefügt werden, wie dies bei einer einfachen Prüfung der Fall war.
+Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle Konsistenzprüfungen mit einer Reihe gemeinsamer Funktionen zu aggregieren. Beispielsweise gruppiert die Security Composite Health Check alle individuellen Konsistenzprüfungen, die sicherheitsbezogene Überprüfungen durchführen. Der erste Schritt zum Erstellen einer zusammengesetzten Prüfung besteht darin, eine OSGi-Konfiguration hinzuzufügen. Damit er im Vorgangs-Dashboard angezeigt wird, muss ein neuer Konfigurationsknoten auf die gleiche Weise hinzugefügt werden wie eine einfache Prüfung.
 
-1. Wechseln Sie zum Web-Konfigurations-Manager in der OSGi-Konsole. Sie können dies tun, indem Sie `https://serveraddress:port/system/console/configMgr` aufrufen.
+1. Wechseln Sie zum Web-Konfigurations-Manager in der OSGi-Konsole. Zugriff `https://serveraddress:port/system/console/configMgr`
 1. Suchen Sie nach dem Eintrag namens **Apache Sling Composite Health Check**. Beachten Sie nach der Suche, dass bereits zwei Konfigurationen verfügbar sind: eine für die Systemprüfungen und eine andere für die Sicherheitsprüfungen.
 1. Erstellen Sie eine Konfiguration, indem Sie auf die Schaltfläche &quot;+&quot; rechts in der Konfiguration klicken. Ein neues Fenster wird wie unten gezeigt angezeigt:
 
@@ -153,7 +153,7 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
    * **Name (hc.name):** Der Name der Verbund-Konsistenzprüfung. Es wird ein aussagekräftiger Name empfohlen.
    * **Tags (hc.tags):** Die Tags für diese Konsistenzprüfung. Wenn diese zusammengesetzte Konsistenzprüfung Teil einer anderen Verbund-Konsistenzprüfung sein soll (z. B. in einer Hierarchie der Konsistenzprüfungen), fügen Sie die Tags hinzu, mit denen dieser Verbund verbunden ist.
    * **MBean-Name (hc.mbean.name):** Der Name des MBean, das dem JMX MBean dieser zusammengesetzten Konsistenzprüfung übergeben wird.
-   * **Filter-Tags (filter.tags):** Die -Eigenschaft, die für Konsistenzprüfungen für Composite spezifisch ist. Dies sind die Tags, die der Composite aggregieren soll. Die zusammengesetzte Konsistenzprüfung aggregiert unter ihrer Gruppe alle Konsistenzprüfungen mit Tags, die mit einem der Filter-Tags dieses Verbundes übereinstimmen. Beispiel: eine zusammengesetzte Konsistenzprüfung mit den Filter-Tags **test** und **check**, aggregiert alle individuellen und zusammengesetzten Konsistenzprüfungen mit einer der **test** und **check** Tags in ihrer Tags-Eigenschaft ( `hc.tags`).
+   * **Filter-Tags (filter.tags):** Die -Eigenschaft, die für Konsistenzprüfungen für Composite spezifisch ist. Diese Tags werden durch den Verbund aggregiert. Die zusammengesetzte Konsistenzprüfung aggregiert unter ihrer Gruppe alle Konsistenzprüfungen mit Tags, die mit einem der Filter-Tags dieses Verbundes übereinstimmen. Beispiel: eine zusammengesetzte Konsistenzprüfung mit den Filter-Tags **test** und **check**, aggregiert alle individuellen und zusammengesetzten Konsistenzprüfungen mit einer der **test** und **check** Tags in ihrer Tags-Eigenschaft ( `hc.tags`).
 
    >[!NOTE]
    >
@@ -308,11 +308,11 @@ Die Rolle einer Verbund-Konsistenzprüfung besteht darin, mehrere individuelle K
   </tr>
   <tr>
    <td>Code-Cache-Prüfung</td>
-   <td><p>Dies ist eine Konsistenzprüfung, die mehrere JVM-Bedingungen überprüft, die auf einen in Java 7 vorhandenen CodeCache-Fehler Trigger werden können:</p>
+   <td><p>Eine Konsistenzprüfung, die mehrere JVM-Bedingungen überprüft, die auf einen in Java™ 7 vorhandenen CodeCache-Fehler Trigger werden können:</p>
     <ul>
-     <li>gibt eine Warnung zurück, wenn die Instanz unter Java 7 ausgeführt wird, wobei die Code-Cache-Bereinigung aktiviert ist</li>
-     <li>gibt eine Warnung zurück, wenn die Instanz unter Java 7 ausgeführt wird und die Größe des reservierten Code-Caches kleiner als ein Mindestschwellenwert ist (der Standardwert ist 90 MB)</li>
-    </ul> <p>Der Schwellenwert <code>minimum.code.cache.size</code> ist konfigurierbar. Weitere Informationen zu diesem Bug <a href="https://bugs.java.com/bugdatabase/view_bug.do?bug_id=8012547">finden Sie auf dieser Seite</a>.</p> <p>Das MBean für diese Konsistenzprüfung lautet <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
+     <li>gibt eine Warnung zurück, wenn die Instanz unter Java™ 7 ausgeführt wird, wobei die Bereinigung des Code-Cache aktiviert ist</li>
+     <li>gibt eine Warnung zurück, wenn die Instanz auf Java™ 7 ausgeführt wird und die Größe des reservierten Code-Caches kleiner als ein Mindestschwellenwert ist (der Standardwert ist 90 MB)</li>
+    </ul> <p>Der Schwellenwert <code>minimum.code.cache.size</code> ist konfigurierbar. Weitere Informationen zum Fehler finden Sie unter <a href="https://bugs.java.com/bugdatabase/"> und suchen Sie dann nach der Fehler-ID 8012547.</a>.</p> <p>Das MBean für diese Konsistenzprüfung lautet <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DcodeCacheHealthCheck%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.healthcheck:name=codeCacheHealthCheck,type=HealthCheck</a>.</p> </td>
   </tr>
   <tr>
    <td>Ressourcen-Suchpfad-Fehler</td>
@@ -629,7 +629,7 @@ Sie können die Wartungsaufgabe zur Versionsbereinigung planen, um alte Versione
 
 ## Benutzerdefinierte Wartungsaufgaben {#custom-maintenance-tasks}
 
-Sie können benutzerdefinierte Wartungsaufgaben als OSGi-Dienste implementieren. Da die Infrastruktur der Wartungsaufgaben auf der Auftragsverarbeitung von Apache Sling basiert, muss eine Wartungsaufgabe die Java-Schnittstelle ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)` implementieren. Um als Wartungsaufgabe erkannt zu werden, muss sie zusätzlich mehrere Dienstregistrierungseigenschaften festlegen, wie nachfolgend aufgeführt:
+Sie können benutzerdefinierte Wartungsaufgaben als OSGi-Dienste implementieren. Da die Infrastruktur der Wartungsaufgaben auf der Auftragsverarbeitung von Apache Sling basiert, muss eine Wartungsaufgabe die Java™-Schnittstelle implementieren ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)`. Um als Wartungsaufgabe erkannt zu werden, muss sie zusätzlich mehrere Dienstregistrierungseigenschaften festlegen, wie nachfolgend aufgeführt:
 
 <table>
  <tbody>
@@ -766,7 +766,7 @@ Sie können auch eine `JSON` Datei, in der die Dashboard-Informationen durch Kli
    <td>System</td>
    <td>
     <ul>
-     <li>Betriebssystem und Betriebssystemversion (z. B. Mac OS X)</li>
+     <li>Betriebssystem und Betriebssystemversion (z. B. macOS X)</li>
      <li>durchschnittliche Systemlast, abgerufen von <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/OperatingSystemMXBean.html#getSystemLoadAverage--">OperatingSystemMXBeanusable</a></li>
      <li>Speicherplatz (auf der Partition, auf der sich das Home-Verzeichnis befindet)</li>
      <li>maximaler Heap, wie zurückgegeben von <a href="https://docs.oracle.com/javase/8/docs/api/java/lang/management/MemoryMXBean.html#getHeapMemoryUsage--">MemoryMXBean</a></li>
