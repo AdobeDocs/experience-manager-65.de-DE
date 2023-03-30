@@ -1,7 +1,7 @@
 ---
 title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Clientanwendungen mithilfe der HTTP-GET-Methode angefordert werden. Die Antwort kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, wodurch die Leistung der Clientanwendungen verbessert wird.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: d87b226d846c6d144e8dfe0b06ec4c296edcad05
 workflow-type: tm+mt
 source-wordcount: '1428'
 ht-degree: 73%
@@ -266,7 +266,7 @@ Beständige Abfragen werden empfohlen, da sie im [Dispatcher](https://experience
 Standardmäßig werden AEM Cache basierend auf einer TTL-Definition (Time To Live) ungültig. Diese TTLs können durch die folgenden Parameter definiert werden. Auf diese Parameter kann auf verschiedene Weise zugegriffen werden, wobei die Namen je nach verwendetem Mechanismus variieren:
 
 | Cachetyp | [HTTP-Header](https://developer.mozilla.org/de-de/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-Konfiguration  |
-|--- |--- |--- |--- |--- |
+|--- |--- |--- |--- |
 | Browser | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
 | CDN | `stale-while-revalidate` | `surrogate-control : stale-while-revalidate ` | `surrogateControlStaleWhileRevalidate` |
