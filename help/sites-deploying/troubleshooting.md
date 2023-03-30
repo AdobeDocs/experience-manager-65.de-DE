@@ -1,7 +1,7 @@
 ---
 title: Fehlerbehebung
 seo-title: Troubleshooting
-description: Dieser Artikel behandelt einige der Installationsprobleme, auf die Sie bei AEM stoßen können.
+description: In diesem Artikel werden einige der Installationsprobleme behandelt, auf die Sie möglicherweise bei AEM stoßen.
 seo-description: This article covers some of the installation issues you might encounter with AEM.
 uuid: 2ca898c3-b074-4ccd-a383-b92f226e6c14
 contentOwner: Guillaume Carlino
@@ -10,22 +10,22 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 exl-id: 55576729-be9c-412e-92ac-4be90650c6fa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1167'
-ht-degree: 100%
+source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+workflow-type: tm+mt
+source-wordcount: '1163'
+ht-degree: 15%
 
 ---
 
 # Fehlerbehebung{#troubleshooting}
 
-Dieser Abschnitt enthält detaillierte Informationen zu Protokollen, die Ihnen bei der Fehlerbehebung helfen. Darüber hinaus finden Sie Informationen zu einigen der Probleme, auf die Sie bei AEM stoßen können.
+Dieser Abschnitt enthält detaillierte Informationen zu den verfügbaren Protokollen, die Ihnen bei der Fehlerbehebung helfen, sowie Informationen zu einigen Problemen, auf die Sie möglicherweise bei AEM stoßen.
 
-## Beheben von Leistungsproblemen auf der Autoreninstanz {#troubleshoot-author-performance}
+## Fehlerbehebung bei der Autorenleistung {#troubleshoot-author-performance}
 
-Das Analysieren von schlechter Leistung auf der Autoreninstanz kann sehr aufwendig sein. Zuerst sollten Sie herausfinden, auf welcher Stufe im Technologie-Stack die Leistung abnimmt.
+Die Analyse der langsamen Leistung in der Authoring-Instanz kann komplex werden. Als ersten Schritt muss ermittelt werden, auf welchem Niveau der Technologie-Stack die Leistung abnimmt.
 
-Anhand der folgenden Entscheidungsstruktur können Sie die möglichen Ursachen von Leistungsengpässen einengen.
+Der folgende Entscheidungsbaum bietet Anleitungen zur Eingrenzung des Engpässen.
 
 ![chlimage_1-75](assets/chlimage_1-75.png)
 
@@ -33,49 +33,49 @@ Anhand der folgenden Entscheidungsstruktur können Sie die möglichen Ursachen v
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-## Konfigurieren von Protokolldateien und Prüfprotokollen {#configuring-log-files-and-audit-logs}
+## Protokolldateien und Prüfprotokolle konfigurieren {#configuring-log-files-and-audit-logs}
 
-AEM speichert detaillierte Protokolle, die Sie konfigurieren können, um Installationsprobleme zu beheben. Weitere Informationen finden Sie im Abschnitt [Arbeiten mit Prüfdatensätzen und Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
+AEM protokolliert detaillierte Protokolle, die Sie zur Fehlerbehebung bei Installationsproblemen konfigurieren möchten. Weitere Informationen finden Sie im Abschnitt [Arbeiten mit Prüfdatensätzen und Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ## Verwenden der Option „verbose“ (ausführlich) {#using-the-verbose-option}
 
 Wenn Sie AEM WCM starten, können Sie die Option „-v“ für „verbose“ zur Befehlszeile hinzufügen. Beispiel: java -jar cq-wcm-quickstart-&lt;Version>.jar -v.
 
-Die Option „verbose“ zeigt einen Teil der Ausgabe des Schnellstartprotokolls in der Konsole an und kann somit für die Fehlerbehebung verwendet werden.
+Die ausführliche Option zeigt einige Ausgaben des Schnellstartprotokolls in der Konsole an, damit sie zur Fehlerbehebung verwendet werden können.
 
 ## Häufige Installationsprobleme {#common-installation-issues}
 
-Im folgenden Abschnitt werden einige Installationsprobleme und zugehörige Lösungen beschrieben.
+Im folgenden Abschnitt werden einige Installationsprobleme und deren Lösungen beschrieben.
 
-### Beim Doppelklicken auf die JAR-Datei für den Schnellstart passiert entweder gar nichts oder die Datei wird mit einem anderen Programm (z. B. der Archivverwaltung) geöffnet {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
+### Ein Doppelklick auf die Schnellstart-JAR hat keine Auswirkungen oder öffnet die JAR-Datei mit einem anderen Programm (z. B. Archiv-Manager). {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
-Dieses Verhalten weist in der Regel darauf hin, dass ein Problem mit der Konfiguration der Desktop-Umgebung Ihres Betriebssystems im Hinblick auf das Öffnen von Dateien mit der Erweiterung JAR vorliegt. Abgesehen davon kann es ein Hinweis darauf sein, dass Java nicht installiert ist oder dass Sie eine nicht unterstützte Version von Java verwenden.
+Dieses Problem weist normalerweise auf ein Problem mit der Konfiguration der Desktop-Umgebung Ihres Betriebssystems zum Öffnen von Dateien mit der Erweiterung .jar hin. Sie kann auch darauf hinweisen, dass Java™ nicht installiert ist oder dass Sie eine nicht unterstützte Version von Java™ verwenden.
 
-Da JAR-Dateien das weit verbreitete ZIP-Format nutzen, wird der Desktop von manchen Archivierungsprogrammen automatisch so konfiguriert, dass JAR-Dateien als Archive geöffnet werden.
+Da JAR-Dateien das allgegenwärtige ZIP-Format verwenden, können einige Archivierungsprogramme den Desktop automatisch so konfigurieren, dass JAR-Dateien als Archivdateien geöffnet werden.
 
-Beheben Sie dieses Problem wie folgt:
+Gehen Sie zur Fehlerbehebung wie folgt vor:
 
-* Vergewissern Sie sich, dass Sie Version 1.6 oder eine neuere Version von Java installiert haben.
-* Öffnen Sie das Kontextmenü des AEM WCM-Schnellstarts (in der Regel rechter Mausklick) und wählen Sie „Öffnen mit...“ aus.
-* Überprüfen Sie, ob Java oder Sun Java aufgeführt ist, und versuchen Sie, AEM WCM damit auszuführen. Sollten mehrere Java-Versionen installiert sein, wählen Sie die unterstützte Version aus.
+* Vergewissern Sie sich, dass Sie mindestens Java™ Version 1.6 installiert haben.
+* Probieren Sie ein Kontextmenü (in der Regel Rechtsklick) auf den AEM WCM-Schnellstart aus und wählen Sie &quot;Öffnen mit....&quot;
+* Überprüfen Sie, ob Java™ oder Sun Java™ aufgelistet ist, und versuchen Sie, AEM WCM damit auszuführen. Wenn mehrere Java™-Versionen installiert sind, wählen Sie die unterstützte Version aus.
 
-   Falls dieser Schritt erfolgreich verläuft und Ihr Betriebssystem die Option anbietet, JAR-Dateien immer mit dem ausgewählten Programm zu öffnen, wählen Sie diese aus. Ab sofort sollten Sie die Dateien mit einem Doppelklick öffnen können.
+   Wenn dieser Schritt erfolgreich ist und Ihr Betriebssystem eine Option anbietet, das ausgewählte Programm immer zum Ausführen der JAR-Dateien zu verwenden, wählen Sie es aus. Doppelklicken sollte von nun an funktionieren.
 
-* Manchmal hilft es auch, die unterstützte Java-Version neu zu installieren, um die richtigen Zuordnungen wiederherzustellen.
-* Sie haben jederzeit die Möglichkeit, CRX über eine Befehlszeile oder Start-/Stoppskripts wie zuvor in diesem Dokument beschrieben auszuführen.
+* Manchmal hilft die Neuinstallation der unterstützten Java™-Version dabei, die korrekte Zuordnung wiederherzustellen.
+* Sie können CRX immer mit der Befehlszeile oder Start-/Stopp-Skripten ausführen, wie zuvor in diesem Dokument beschrieben.
 
 ### Meine über CRX ausgeführte Anwendung erzeugt Fehler wegen unzureichendem Arbeitsspeicher {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
->Siehe [Analysieren von Arbeitsspeicherproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html).
+>Siehe auch [Analysieren von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=en).
 
 
-CRX selbst benötigt sehr wenig Arbeitsspeicher. Wenn die Anwendung, die in CRX ausgeführt wird, größere Mengen Arbeitsspeicher benötigt oder Vorgänge anfordert, die viel Arbeitsspeicher belegen, etwa große Transaktionen, muss die JVM-Instanz, in der CRX ausgeführt wird, mit entsprechenden Speichereinstellungen gestartet werden.
+CRX selbst hat einen geringen Speicherbedarf. Wenn die in CRX ausgeführte Anwendung größere Speicheranforderungen hat oder speicherintensive Vorgänge anfordert (z. B. große Transaktionen), muss die JVM-Instanz, in der CRX ausgeführt wird, mit den entsprechenden Speichereinstellungen gestartet werden.
 
-Verwenden Sie Java-Befehlsoptionen, um die Speichereinstellungen der JVM zu definieren, etwa „java -Xmx512m -jar crx&amp;ast;.jar“, um die Heap-Größe auf 512 MB festzulegen.
+Verwenden Sie Java™-Befehlsoptionen, um die Speichereinstellungen der JVM zu definieren (z. B. java -Xmx512m -jar crx&amp;ast;.jar , um die Heapgröße auf 512 MB festzulegen).
 
-Legen Sie die Option für die Speichereinstellung fest, wenn AEM WCM über die Befehlszeile gestartet wird. Die Start-/Stoppskripts für AEM WCM oder benutzerdefinierte Skripts zur Verwaltung des Starts von AEM WCM können ebenfalls geändert werden, um die erforderlichen Speichereinstellungen zu definieren.
+Geben Sie die Speichereinstellungsoption beim Starten AEM WCM über die Befehlszeile an. Die AEM WCM Start-/Stopp-Skripte oder benutzerdefinierten Skripte zur Verwaltung AEM WCM-Starts können ebenfalls geändert werden, um die erforderlichen Speichereinstellungen zu definieren.
 
 Wenn Sie die Heap-Größe bereits auf 512 MB festgelegt haben, können Sie das Speicherproblem näher untersuchen, indem Sie ein Heap-Abbild erstellen:
 
@@ -83,25 +83,25 @@ Verwenden Sie den folgenden Befehl, um automatisch ein Heap-Abbild zu erstellen,
 
 java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar &amp;ast;.jar
 
-Damit wird immer dann eine Heap-Abbilddatei erstellt (**java_...hprof**), wenn dem Vorgang nicht genügend Arbeitsspeicher zur Verfügung steht. Der Vorgang läuft möglicherweise noch weiter, nachdem das Heap-Abbild erstellt wurde. In der Regel reicht eine Heap-Abbilddatei, um das Problem zu analysieren.
+Diese Methode generiert eine Heap-Dump-Datei (**java_..hprof**) immer dann, wenn dem Prozess der Speicher ausgeht. Der Prozess kann nach der Erstellung des Heap-Dumps fortgesetzt werden. Normalerweise reicht eine Heap-Dump-Datei aus, um das Problem zu analysieren.
 
-### Der AEM-Begrüßungsbildschirm wird nicht im Browser angezeigt, nachdem auf den AEM-Schnellstart doppelt geklickt wurde. {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
+### Der AEM Begrüßungsbildschirm wird nach einem Doppelklick auf AEM Schnellstart nicht im Browser angezeigt {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
-Manchmal wird der AEM WCM-Begüßungsbildschirm nicht automatisch angezeigt, obwohl das Repository selbst fehlerfrei läuft. Dies kann von der Einrichtung des Betriebssystems, der Browserkonfiguration oder ähnlichen Faktoren abhängen.
+In bestimmten Situationen werden die AEM WCM-Begrüßungsbildschirme nicht automatisch angezeigt, obwohl das Repository selbst erfolgreich ausgeführt wurde. Dieses Problem kann von der Einrichtung des Betriebssystems, der Browserkonfiguration oder ähnlichen Faktoren abhängen.
 
-Ein häufiges Symptom ist, dass im AEM WCM-Schnellstartfenster die Meldung „AEM WCM starting up, waiting for server startup...“ angezeigt wird. Sollte diese Meldung über einen relativ langen Zeitraum angezeigt werden, geben Sie die AEM WCM-URL manuell in das Browserfenster ein und verwenden Sie den Standardport 4502 oder den Port, über den die Instanz läuft: http://localhost:4502/.
+Ein häufiges Symptom ist, dass im AEM WCM-Schnellstartfenster die Meldung „AEM WCM starting up, waiting for server startup...“ angezeigt wird. Wenn diese Nachricht relativ lange angezeigt wird, geben Sie die AEM WCM-URL manuell unter Verwendung des standardmäßigen 4502-Anschlusses oder des Anschlusses ein, an dem die Instanz ausgeführt wird: http://localhost:4502/
 
-Es ist auch möglich, den Grund dafür, dass der Browser nicht startet, in Protokollen zu finden.
+Außerdem können Protokolle den Grund dafür enthalten, dass der Browser nicht gestartet wird.
 
-Manchmal wird die Meldung „AEM WCM running on http://localhost:port/“ im AEM WCM-Schnellstartfenster angezeigt und der Browser startet nicht automatisch. Klicken Sie in diesem Fall auf die URL im AEM WCM-Schellstartfenster (es handelt sich dabei um einen Hyperlink) oder geben Sie die URL manuell im Browser ein.
+Manchmal wird im AEM WCM-Schnellstartfenster die Meldung &quot;AEM WCM wird auf http://localhost:port/ ausgeführt&quot;angezeigt und der Browser startet nicht automatisch. Klicken Sie in diesem Fall auf die URL im AEM WCM-Schnellstartfenster (es handelt sich um einen Hyperlink) oder geben Sie die URL manuell im Browser ein.
 
-Sollte das Problem durch keinen der Vorschläge gelöst werden können, überprüfen Sie die Protokolle, um herauszufinden, was passiert ist.
+Wenn alles andere fehlschlägt, überprüfen Sie die Protokolle, um herauszufinden, was passiert ist.
 
-### Die Website wird nicht geladen oder schlägt mit Java 11 gelegentlich fehl {#the-website-does-not-load-or-fails-intermittently-with-java11}
+### Die Website wird nicht geladen oder schlägt mit Java™ 11 gelegentlich fehl {#the-website-does-not-load-or-fails-intermittently-with-java11}
 
-Es gibt ein bekanntes Problem bei der Ausführung von AEM 6.5 auf Java 11, bei dem die Website möglicherweise nicht geladen wird oder zeitweise fehlschlägt.
+Es gibt ein bekanntes Problem, bei dem AEM 6.5 auf Java™ 11 ausgeführt wird, bei dem die Website möglicherweise nicht zeitweise geladen wird oder fehlschlägt.
 
-In diesem Fall folgen Sie der folgenden Problemumgehung:
+Tritt dieses Problem auf, führen Sie folgende Schritte aus:
 
 1. Öffnen Sie die `sling.properties`-Datei unter dem Ordner `crx-quickstart/conf/`.
 1. Suchen Sie die folgende Zeile:
@@ -116,32 +116,33 @@ In diesem Fall folgen Sie der folgenden Problemumgehung:
 
 ## Fehlerbehebung bei Installationen mit einem Anwendungsserver {#troubleshooting-installations-with-an-application-server}
 
-### Meldung „Seite nicht gefunden“ wird angezeigt, wenn eine Geometrixx Outdoors-Seite angefordert wird {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
+### Seite nicht gefunden wurde bei Anforderung einer Geometrixx-Outdoor-Seite zurückgegeben {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
-**Gilt für WebLogic 10.3.5 und JBoss 5.1**
+**Gilt für WebLogic 10.3.5 und JBoss® 5.1**
 
-Wenn eine englische Geometrixx Outdoors-Seite einen 404-Fehler (Seite nicht gefunden) zurückgibt, sollten Sie sich noch einmal vergewissern, dass Sie die zusätzliche „sling“-Eigenschaft in der Datei „sling.properties“ festgelegt haben, die für diese speziellen Applikationsserver erforderlich ist.
+Wenn eine Anforderung an die Seite &quot;geometrixx-outdoors/en&quot;den Wert 404 (Seite nicht gefunden) zurückgibt, können Sie erneut überprüfen, ob Sie die zusätzliche sling-Eigenschaft in der Datei sling.properties festgelegt haben, die für diese spezifischen Anwendungsserver erforderlich ist.
 
 Weitere Informationen finden Sie unter *Bereitstellen der AEM-Web-Anwendung*.
 
-### Antwortkopfzeile kann größer als 4 KB sein {#response-header-size-can-be-greater-than-kb}
+### Die Größe des Antwortheaders kann größer als 4 KB sein. {#response-header-size-can-be-greater-than-kb}
 
-502-Fehler können darauf hinweisen, dass der Webserver mit der Größe der AEM-HTTP-Antwortkopfzeile nicht umgehen kann. AEM kann HTTP-Antwortkopfzeilen erstellen, die Cookies mit einer Größe von mehr als 4 KB beinhalten. Achten Sie darauf, dass Ihr Servletcontainer so konfiguriert ist, dass die maximale Größe der Antwortkopfzeile 4 KB übersteigen darf.
+502-Fehler können darauf hinweisen, dass der Webserver die Größe des AEM HTTP-Antwortheaders nicht verarbeiten kann. AEM können HTTP-Antwort-Header generieren, die Cookies mit einer Größe von mehr als 4 KB enthalten. Stellen Sie sicher, dass Ihr Servlet-Container so konfiguriert ist, dass die maximale Größe des Antwort-Headers 4 KB überschreiten kann.
 
-Bei Tomcat 7.0 zum Beispiel steuert das Attribut „maxHttpHeaderSize“ des [HTTP-Connectors](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) Größenbegrenzungen für Kopfzeilen.
+Beispiel: Für Tomcat 7.0 ist das Attribut maxHttpHeaderSize des [HTTP-Connector](https://tomcat.apache.org/tomcat-7.0-doc/config/http.html) steuert Beschränkungen der Header-Größe.
 
 ## Deinstallieren von Adobe Experience Manager {#uninstalling-adobe-experience-manager}
 
-Da AEM nur in ein einzelnes Verzeichnis installiert wird, ist kein Deinstallationsprogramm erforderlich. Für eine Deinstallation kann es ausreichen, das gesamte Verzeichnis zu löschen, wobei die Art der Deinstallation von AEM davon abhängt, was Sie bezwecken möchten und welche Art beständigen Speicher Sie verwenden.
+Da AEM in einem einzigen Ordner installiert wird, ist kein Deinstallationsdienstprogramm erforderlich. Die Deinstallation kann so einfach sein wie das Löschen des gesamten Installationsordners. Wie Sie deinstallieren, hängt jedoch davon ab, was Sie erreichen und welchen persistenten Speicher Sie verwenden AEM.
 
-Falls beständiger Speicher in das Installationsverzeichnis integriert ist, beispielsweise in der standardmäßigen TarPM-Installation, werden durch Entfernen der Ordner auch alle Daten entfernt.
+Wenn persistenter Speicher in das Installationsverzeichnis eingebettet ist, z. B. in der standardmäßigen TarPM-Installation, werden beim Löschen von Ordnern auch Daten entfernt.
 
 >[!NOTE]
 >
->Adobe empfiehlt dringend, Ihr Repository zu sichern, bevor Sie AEM löschen. Wenn Sie das gesamte &lt;CQ-Installationsverzeichnis> löschen, wird dabei auch das Repository gelöscht. Sichern Sie die Repository-Daten vor dem Löschen, indem Sie den Ordner „&lt;cq-installation-directory>/crx-quickstart/repository“ an einen anderen Speicherort verschieben oder kopieren, bevor Sie die anderen Ordner löschen.
+>Adobe empfiehlt, das Repository zu sichern, bevor Sie AEM löschen. Wenn Sie die gesamte &lt;cq-installation-directory>, löschen Sie auch das Repository. Sichern Sie die Repository-Daten vor dem Löschen, indem Sie den Ordner „&lt;cq-installation-directory>/crx-quickstart/repository“ an einen anderen Speicherort verschieben oder kopieren, bevor Sie die anderen Ordner löschen.
 
-Falls Ihre AEM-Installation externen Speicher nutzt, etwa einen Datenbankserver, werden beim Entfernen der Ordner nicht automatisch auch die Daten entfernt. Allerdings wird dabei die Speicherkonfiguration entfernt, wodurch die Wiederherstellung der JCR-Inhalte schwierig wird.
+Wenn Ihre AEM externen Speicher verwendet, z. B. einen Datenbankserver, werden die Daten beim Entfernen des Ordners nicht automatisch entfernt. Dadurch wird jedoch die Speicherkonfiguration entfernt, was die Wiederherstellung des JCR-Inhalts erschwert.
 
-### JSP-Dateien werden von JBoss nicht kompiliert {#jsp-files-are-not-compiled-on-jboss}
+### JSP-Dateien werden nicht auf JBoss® kompiliert {#jsp-files-are-not-compiled-on-jboss}
 
-Wenn Sie JSP-Dateien über JBoss im Experience Manager installieren oder aktualisieren und die entsprechenden Servlets nicht kompiliert werden, überprüfen Sie, ob der JBoss-JSP-Compiler richtig konfiguriert ist. Weitere Informationen finden Sie im Artikel [JSP-Kompilierungsprobleme in JBoss](https://helpx.adobe.com/de/experience-manager/kb/jsps-dont-compile-jboss.html).
+Wenn Sie JSP-Dateien auf JBoss® installieren oder auf Experience Manager aktualisieren und die entsprechenden Servlets nicht kompiliert sind, stellen Sie sicher, dass der JBoss® JSP-Compiler korrekt konfiguriert ist. Weitere Informationen finden Sie unter
+[JSP-Kompilierungsprobleme in JBoss®](https://helpx.adobe.com/de/experience-manager/kb/jsps-dont-compile-jboss.html) Artikel.
