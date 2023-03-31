@@ -1,5 +1,5 @@
 ---
-title: Übersicht über AEM Communities
+title: Übersicht über AEM Communities
 seo-title: AEM Communities Overview
 description: Überblick über AEM Communities-Funktionen und -Einrichtung
 seo-description: An overview of AEM Communities features and setup
@@ -11,20 +11,16 @@ content-type: reference
 discoiquuid: 44374006-f711-4af8-a1fe-f89164f79581
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '1435'
-ht-degree: 5%
+source-wordcount: '1273'
+ht-degree: 1%
 
 ---
 
-# Übersicht über AEM Communities {#aem-communities-overview}
+# Übersicht über AEM Communities {#aem-communities-overview}
 
-Mit Adobe Experience Manager (AEM) Communities lässt sich leicht eine interne Communitysite erstellen, die verbesserte Leistung und optimierte Siteverwaltung bietet und aus Besuchern wertvolle Communitymitglieder macht.
-
-<!--
-Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
--->
+Adobe Experience Manager (AEM) Communities bietet die Möglichkeit, schnell eine On-Premise-Community-Site zu erstellen, die die Leistung verbessert, das Site-Management verbessert und die Konversion von Site-Besuchern in wertvolle Community-Mitglieder fördert.
 
 ## Communities-Funktionen {#communities-features}
 
@@ -40,7 +36,6 @@ AEM Communities ermöglicht die Entwicklung einer Beziehung zu Site-Besuchern, d
 * **Dateifreigabe**,
 * **Benachrichtigungen** und **Aktivitätsströme**,
 * Ermöglicht **Tagging** (@mention) anderen registrierten Mitgliedern in benutzergenerierten Inhalten, um deren Aufmerksamkeit zu erregen.
-* Unterstützt **Tastaturnavigation** bei Aktivierungskomponenten (z. B. Katalogwiedergabe und Kurswiedergabe, Zuweisungen, Dateibibliothek) .
 
 Communities-Funktionen können mithilfe der [AEM Demomaschine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) öffentlich auf GitHub.com oder mit der neuen We.Retail-Referenzimplementierung verfügbar.
 
@@ -98,14 +93,14 @@ Weitere Informationen zur Persistenz von Community-Inhalten und zu empfohlenen B
 
 In der Autorenumgebung bietet die globale Navigationskonsole Zugriff auf die [Communities-Konsole](/help/communities/consoles.md), der Folgendes enthält:
 
-* [Sites-Konsole](/help/communities/sites-console.md)
+* [Sites](/help/communities/sites-console.md) console
 
    * Site-Erstellung
    * Site-Bearbeitung
    * Site-Management
    * [Community-Gruppen](/help/communities/groups.md) console
 
-* [Moderatoren-Konsole](/help/communities/moderation.md)
+* [Moderation](/help/communities/moderation.md) console
 
    * Allgemeine Massenmoderations-Benutzeroberfläche für Autoren- und Veröffentlichungsumgebungen.
    * Neue Filterkriterien.
@@ -119,11 +114,6 @@ In der Autorenumgebung bietet die globale Navigationskonsole Zugriff auf die [Co
 * [Berichte](/help/communities/reports.md) console
 
    * Ermöglicht die Erstellung von Berichten über Zuweisungen, Beiträge und Ansichten.
-
-* [Ressourcen](/help/communities/resources.md) console
-
-   * Bietet die Möglichkeit, Aktivierungsressourcen und Lernpfade zu erstellen.
-   * Bietet Zugriff auf Berichte zu Aktivierungsressourcen und Lernpfaden.
 
 Die globale Tools-Konsole bietet Zugriff auf die folgenden Communities-Tools:
 
@@ -183,9 +173,7 @@ Die [Community-Komponenten](/help/communities/author-communities.md) , von dem a
 
 Die [Handbuch zu Community-Komponenten](/help/communities/components-guide.md) ist für die interaktive Untersuchung der Komponenten verfügbar.
 
-## Communities-Typen {#types-of-communities}
-
-### Einsatzgemeinschaft {#engagement-community}
+## Einsatzgemeinschaft {#engagement-community}
 
 Eine Interaktionsgemeinschaft ist eine Community-Site, auf der Kunden zur Information, zum Abruf von Feedback und zur Interaktion als Community-Mitglieder angesprochen werden.
 
@@ -195,7 +183,7 @@ Zu den Funktionen einer Interaktionsgemeinschaft zählen:
 * Messaging
 * Foren
 * Kommentare
-* Reviews
+* Bewertungen
 * Bewertungen
 * Abstimmung
 * Blogs
@@ -208,23 +196,6 @@ Zu den Funktionen einer Interaktionsgemeinschaft zählen:
 * Analytics-Reporting
 
 Um die einfache Erstellung einer neuen Interaktionsgemeinschaft zu erleben, besuchen Sie [Erste Schritte mit AEM Communities](/help/communities/getting-started.md).
-
-### Aktivierungs-Community {#enablement-community}
-
-Eine Aktivierungs-Community ist eine Community-Site, die Funktionen für Online-Lernen enthält.
-
-Zu den Funktionen einer Aktivierungs-Community zählen:
-
-* Alle Funktionen eines [Interaktionsgemeinschaft](#engagement-community).
-* Möglichkeit, Inhalt und Lernen zuzuweisen. Ressourcen für Mitglieder und Mitgliedergruppen.
-* Unterstützt SCORM-Inhalte wie Quizze und Tests.
-* Nachverfolgen der Fertigstellung von Zuweisungen.
-* Zugriff auf Reporting und Analysen.
-* Die Möglichkeit, über Foren, Nachrichten, Kommentare und Bewertungen über eine Lernressource zu sprechen.
-
-Eine Aktivierungs-Community kann erstellt werden, wenn die Variable [Aktivierungs-Add-on ist konfiguriert](/help/communities/enablement.md), die zusätzliche Lizenzen für die Verwendung in einer Produktionsumgebung erfordert. Eine Aktivierungs-Community-Site enthält die [Zuweisungsfunktion](#community-functions).
-
-Um die einfache Erstellung einer neuen Aktivierungs-Community zu erleben, besuchen Sie [Erste Schritte mit AEM Communities zur Aktivierung](/help/communities/getting-started-enablement.md).
 
 ## AEM Demomaschine {#aem-demo-machine}
 

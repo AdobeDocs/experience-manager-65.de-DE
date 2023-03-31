@@ -1,5 +1,5 @@
 ---
-title: Berichte-Konsole
+title: Berichtkonsole
 seo-title: Reports Console
 description: Erfahren Sie, wie Sie auf Berichte zugreifen können
 seo-description: Learn how to access reports
@@ -12,24 +12,20 @@ discoiquuid: fde053ff-b671-456b-869c-81f16ea1f1be
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '618'
-ht-degree: 8%
+source-wordcount: '381'
+ht-degree: 9%
 
 ---
 
-# Berichte-Konsole {#reports-console}
+# Berichtkonsole {#reports-console}
 
 ## Übersicht {#overview}
 
 Für AEM Communities gibt es verschiedene Berichte, auf die über die Autorenumgebung auf verschiedene Weise zugegriffen werden kann.
 
 Die verschiedenen Berichte sind im Allgemeinen:
-
-* [Zuweisungsbericht](#assignments-report)
-
-   Für [Aktivierungs-Community](/help/communities/overview.md#enablement-community)bietet einen Überblick über den Fortschritt der Lernenden bei ihrer Zuweisung, einschließlich eines zugehörigen Punkts bei der Implementierung des SCORM-Standards.
 
 * [Ansichtsbericht](#views-report)
 
@@ -38,8 +34,6 @@ Die verschiedenen Berichte sind im Allgemeinen:
 * [Post-Bericht](#posts-report)
 
    Bietet eine Grafik verschiedener Arten von Beiträgen von Community-Mitgliedern zu jeder Community-Site.
-
-Wann [Adobe Analytics ist aktiviert](/help/communities/sites-console.md#analytics)enthalten, enthalten Berichte die Anzahl der Ansichten, Wiedergaben, Kommentare und Bewertungen für jede Aktivierungsressource im Zeitverlauf.
 
 Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format exportiert werden.
 
@@ -64,59 +58,6 @@ Tabellarische Berichte können zur nachfolgenden Verarbeitung im CSV-Format expo
 
 
 ![Berichte](assets/reports1.png)
-
-### Berichte für Aktivierungsressourcen und Lernpfade {#reports-for-enablement-resources-and-learning-paths}
-
-* Über die globale Navigation: **[!UICONTROL Navigation]** > **[!UICONTROL Communities]** >  **[!UICONTROL Ressourcen]**
-
-* Wählen Sie eine vorhandene Aktivierungs-Community-Site aus:
-
-   * Auswählen **Bericht** zum Generieren von Berichten, die alle Aktivierungsressourcen abdecken.
-   * Wählen Sie einen Lernpfad für die Aktivierung aus.
-   * Auswählen **Bericht** -Symbol zum Generieren von Berichten für:
-
-      * Die enthaltenen Aktivierungsressourcen.
-      * Die dem Lernpfad zugewiesenen Lernenden.
-
-* Diese Berichte bieten Folgendes:
-
-   * Tabellendaten, als CSV heruntergeladen:
-
-      * Identifizieren von Lernenden
-      * Ihr Status
-      * Ob zugewiesen oder über Katalog aufgerufen
-      * Anzahl der abgegebenen Kommentare
-      * Sternbewertung
-
-Weitere Informationen finden Sie unter [Berichtabschnitt](/help/communities/resources.md#report) in der Ressourcenkonsole.
-
-## Zuweisungsbericht {#assignments-report}
-
-In der Konsole &quot;Zuweisungen&quot;können Berichte nach der Aktivierungs-Community-Site, Benutzern oder Gruppen und der Zuweisung gefiltert werden.
-
-Der Bericht enthält Informationen über ihren Fortschritt sowie etwaige Kommentare oder Bewertungen.
-
-![assignment-report](assets/assignment-report.png)
-
-Wählen Sie die Kriterien für den Bericht aus:
-
-* **Site**
-
-   Wählen Sie eine Aktivierungs-Community-Site aus.
-
-* **Benutzer oder Gruppe**
-   * Wählen Sie Benutzer aus, um einen Bericht für einen Lernenden zu erstellen.
-   * Wählen Sie Gruppe aus, um einen Bericht für eine Gruppe von Lernenden zu erstellen.
-
-   Der Tunneldienst greift über die Veröffentlichungsumgebung auf Mitglieder und Mitgliedergruppen zu.
-
-* **Zuweisung**
-
-   Wählen Sie aus den Aktivierungsressourcen, die den ausgewählten Lernenden zugewiesen sind.
-
-Auswählen **Erzeugen** , um den Bericht zu erstellen:
-
-![generate-report](assets/generate-assignment-report.png)
 
 ## Ansichtsbericht {#views-report}
 

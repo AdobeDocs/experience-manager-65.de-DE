@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '209'
-ht-degree: 19%
+source-wordcount: '207'
+ht-degree: 18%
 
 ---
 
@@ -28,7 +28,7 @@ Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities-Komponen
 ## Basiskomponenten {#base-components}
 
 * [Kommentare](essentials-comments.md)
-* [Reviews](reviews-basics.md)
+* [Bewertungen](reviews-basics.md)
 * [Tally](tally.md)
 
    * [Likes](essentials-liking.md)
@@ -39,11 +39,9 @@ Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities-Komponen
 ## Komponenten mit Funktionen {#components-with-functions}
 
 * [Aktivitäts-Streams](essentials-activities.md)
-* [Zuweisungen](essentials-assignments.md)
 * [Blog](blog-developer-basics.md) ( `Journal`)
 
 * [Kalender](calendar-basics-for-developers.md)
-* [Katalog](catalog-developer-essentials.md)
 * [Präsentierter Inhalt](essentials-featured.md)
 * [Dateibibliothek](essentials-file-library.md)
 * [Forum](essentials-forum.md)
@@ -82,6 +80,6 @@ Für jeden [Feature Pack](deploy-communities.md#latestfeaturepack), wird eine Ja
    * [Serverseitige Anpassungen](server-customize.md)
    * [Übersicht über den Speicheranbieter](srp.md)
 
-* [Kodierungsrichtlinien ](code-guide.md)
+* [Codierungsrichtlinien ](code-guide.md)
 * [Tutorials](tutorials.md)
 * [Fehlerbehebung](troubleshooting.md)

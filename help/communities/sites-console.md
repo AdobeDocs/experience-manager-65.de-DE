@@ -12,9 +12,9 @@ discoiquuid: 4130f952-5bb5-4e32-91d6-47b2885b30a4
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '3278'
+source-wordcount: '3106'
 ht-degree: 4%
 
 ---
@@ -62,10 +62,6 @@ Die Communities Sites-Konsole zeigt alle vorhandenen Community-Sites an. In dies
 Um eine neue Community-Site zu erstellen, wählen Sie die **Erstellen** Symbol.
 
 Um auf eine bestehende Community-Site zuzugreifen, wählen Sie zum Erstellen, Ändern, Veröffentlichen, Exportieren oder Hinzufügen einer verschachtelten Gruppe das Ordnersymbol der Site aus.
-
-Die folgende Abbildung zeigt beispielsweise die Haupt-Konsole Communities-Sites , in der die Ordner für zwei Community-Sites angezeigt werden: [enable](/help/communities/getting-started-enablement.md) und [interagieren](/help/communities/getting-started.md):
-
-![site-console](assets/site-console.png)
 
 ## Erstellung einer Site {#site-creation}
 
@@ -165,7 +161,6 @@ Das Einstellungsbedienfeld enthält mehrere Unterbedienfelder mit Funktionen, di
 * [MODERATION](#moderation)
 * [ANALYTICS](#analytics)
 * [ÜBERSETZUNG](#translation)
-* [AKTIVIERUNG](#enablement)
 
 >[!NOTE]
 >
@@ -183,41 +178,35 @@ Das Einstellungsbedienfeld enthält mehrere Unterbedienfelder mit Funktionen, di
 
 ![createsitesettings](assets/createsitesettings.png)
 
->[!NOTE]
->
->Es wird empfohlen, [Aktivierungs-Community-Sites](/help/communities/overview.md#enablement-community) privat sein (weitere Informationen erhalten Sie von Ihrem Kundenbetreuer).
->
->Eine Community-Site ist privat, wenn anonymen Site-Besuchern der Zugriff verweigert wird, sie sich möglicherweise nicht selbst registrieren und keine Anmeldung über soziale Netzwerke verwenden.
-
 * **Benutzerregistrierung zulassen**
 
    Wenn diese Option aktiviert ist, können Besucher der Site durch Selbstregistrierung Community-Mitglieder werden.
 Wenn diese Option deaktiviert ist, wird die Community-Site *eingeschränkt* und Besucher der Site müssen der Mitgliedergruppe der Community-Site zugewiesen werden, eine Anforderung stellen oder per E-Mail eingeladen werden. Wenn diese Option deaktiviert ist, sollte der anonyme Zugriff nicht erlaubt sein.
-Deaktivieren Sie die Option für *privat* Community-Site. Diese Option ist standardmäßig aktiviert.
+Deaktivieren Sie die Option für *privat* Community-Site. Die Option Standard ist aktiviert.
 
 * **Anonymen Zugriff erlauben**
 
    Wenn diese Option aktiviert ist, ist die Community-Site *geöffnet *und jeder Besucher der Site kann auf die Site zugreifen.
 Wenn diese Option deaktiviert ist, können nur angemeldete Mitglieder auf die Site zugreifen.
-Deaktivieren Sie die Option für eine *private *Community-Site. Diese Option ist standardmäßig aktiviert.
+Deaktivieren Sie die Option für eine *private *Community-Site. Die Option Standard ist aktiviert.
 
 * **Messaging zulassen**
 
    Wenn diese Option aktiviert ist, können Mitglieder Nachrichten miteinander und an die Gruppe innerhalb der Community-Site senden.
 Wenn diese Option deaktiviert ist, werden Nachrichten nicht für die Community eingerichtet.
-Diese Option ist standardmäßig deaktiviert.
+Die Option Standard ist deaktiviert.
 
 * **Anmeldung über soziale Medien erlauben: Facebook**
 
    Wenn diese Option aktiviert ist, können sich Besucher der Site mit ihren Facebook-Kontoanmeldeinformationen anmelden. Die ausgewählte [Facebook-Cloud-Konfiguration](/help/communities/social-login.md#create-a-facebook-connect-cloud-service) sollte so konfiguriert werden, dass Benutzer zur Mitgliedergruppe der Community-Site hinzugefügt werden, sobald die Community-Site erstellt wurde.
 Wenn diese Option deaktiviert ist, wird keine Facebook-Anmeldung angezeigt.
-Lassen Sie die Option deaktiviert für *privat* Community-Site. Diese Option ist standardmäßig deaktiviert.
+Lassen Sie die Option deaktiviert für *privat* Community-Site. Die Option Standard ist deaktiviert.
 
 * **Anmeldung über soziale Medien erlauben: Twitter**
 
    Wenn diese Option aktiviert ist, können sich Besucher der Site mit ihren Twitter-Kontoanmeldeinformationen anmelden. Die ausgewählte [Twitter-Cloud-Konfiguration](/help/communities/social-login.md#create-a-twitter-connect-cloud-service) sollte so konfiguriert werden, dass Benutzer zur Mitgliedergruppe der Community-Site hinzugefügt werden, sobald die Community-Site erstellt wurde.
 Wenn diese Option deaktiviert ist, wird keine Twitter-Anmeldung angezeigt.
-Lassen Sie die Option deaktiviert für *privat* Community-Site. Diese Option ist standardmäßig deaktiviert.
+Lassen Sie die Option deaktiviert für *privat* Community-Site. Die Option Standard ist deaktiviert.
 
 >[!NOTE]
 >
@@ -231,7 +220,7 @@ Lassen Sie die Option deaktiviert für *privat* Community-Site. Diese Option ist
 
 Die Tags, die auf Community-Inhalte angewendet werden können, werden durch die Auswahl von Tag-Namespaces gesteuert, die zuvor durch die Variable [Tagging-Konsole](/help/sites-administering/tags.md#tagging-console).
 
-Darüber hinaus wird durch die Auswahl von Tag-Namespaces für die Community-Site die beim Definieren von Katalogen und Ressourcen angezeigte Auswahl eingeschränkt. Siehe [Tagging von Aktivierungsressourcen](/help/communities/tag-resources.md) für wichtige Informationen.
+Darüber hinaus wird durch die Auswahl von Tag-Namespaces für die Community-Site die beim Definieren von Katalogen und Ressourcen angezeigte Auswahl eingeschränkt.
 
 * Textsuchfeld : Beginnen Sie mit der Eingabe, um die Tags zu identifizieren, die auf der Site verwendet werden dürfen.
 
@@ -267,7 +256,7 @@ Die globale Einstellung für die Moderation benutzergenerierter Inhalte (UGC) wi
 
 * **Inhalt ist vormoderiert**
 
-   Wenn diese Option aktiviert ist, werden veröffentlichte Community-Inhalte erst angezeigt, nachdem sie von einem Moderator genehmigt wurden. Diese Option ist standardmäßig deaktiviert. Weitere Informationen finden Sie unter [Moderieren von Community-Inhalten](/help/communities/moderate-ugc.md#premoderation).
+   Wenn diese Option aktiviert ist, werden veröffentlichte Community-Inhalte erst angezeigt, nachdem sie von einem Moderator genehmigt wurden. Die Option Standard ist deaktiviert. Weitere Informationen finden Sie unter [Moderieren von Community-Inhalten](/help/communities/moderate-ugc.md#premoderation).
 
 * **Kennzeichnung des Schwellenwerts, bevor der Inhalt ausgeblendet wird**
 
@@ -280,7 +269,7 @@ Die globale Einstellung für die Moderation benutzergenerierter Inhalte (UGC) wi
 * **Analytics aktivieren**
 
    Nur verfügbar, wenn Adobe Analytics [konfiguriert](/help/communities/analytics.md) für Communities-Funktionen.
-Diese Option ist standardmäßig deaktiviert. Wenn diese Option aktiviert ist, wird ein zusätzliches Auswahlmenü angezeigt:
+Die Option Standard ist deaktiviert. Wenn diese Option aktiviert ist, wird ein zusätzliches Auswahlmenü angezeigt:
 
 ![site-analytics-enable](assets/site-analytics-enable.png)
 
@@ -350,21 +339,6 @@ Wenn diese Option aktiviert ist, wird der Inhalt erst übersetzt, nachdem eine A
    * `Always show contributions in the original language` (default)
    * `Always show contributions in user preferred language`
    * `Show contributions in user preferred language for only logged-in users`
-
-#### AKTIVIERUNG {#enablement}
-
-![Site-Aktivierung](assets/site-enablement.png)
-
-Die `ENABLEMENT`Die Einstellungen gelten, wenn die ausgewählte Community-Site-Vorlage die [Zuweisungsfunktion](/help/communities/functions.md#assignments-function), der bei der Lizenzierung der Aktivierungsfunktionen verfügbar ist, und [konfiguriert](/help/communities/enablement.md). Die Referenz-Website-Vorlage, die die Zuweisungsfunktion enthält, lautet `Reference Structured Learning Site Template.`
-
-* **Aktivierungsmanager**
-(Erforderlich) Nur Mitglieder der `Community Enablementmanagers` zur Verwaltung dieser Aktivierungs-Community ausgewählt werden. Aktivierungsmanager sind für die Zuweisung von Mitgliedern zu Ressourcen verantwortlich. Siehe auch [Verwalten von Benutzern und Benutzergruppen](/help/communities/users.md).
-
-* **ID der Marketing Cloud-Organisation**
-
-   (optional) Die ID für eine [Video Heartbeat Analytics](/help/communities/analytics.md#video-heartbeat-analytics) Lizenz.
-
-* Wählen Sie **Weiter** aus.
 
 ### Schritt 4: Community-Site erstellen {#step-create-communities-site}
 
@@ -476,7 +450,7 @@ Im Bedienfeld DESIGN kann ein neues Design angewendet werden:
 
 Das Fenster EINSTELLUNGEN ermöglicht den Zugriff auf die meisten Einstellungen unter den Unterfeldern von für Schritt 3 der Community-Site-Erstellung:
 
-* [Benutzerverwaltung](#user-management)
+* [User Management](#user-management)
 * [Tags](#tagging)
 * [Moderation](#moderation)
 * [Mitgliederrollen](#roles)
@@ -486,12 +460,6 @@ Das Fenster EINSTELLUNGEN ermöglicht den Zugriff auf die meisten Einstellungen 
 ### Miniaturansicht ändern {#modify-thumbnail}
 
 Im Bedienfeld &quot;MINIATURANSICHT&quot;kann ein Bild hochgeladen werden, das die Site in der Konsole &quot;Communities-Sites&quot;darstellt.
-
-### Aktivierung ändern {#modify-enablement}
-
-Das Bedienfeld AKTIVIERUNG ermöglicht den Zugriff auf die Einstellungen, die während der Erstellung der Community-Site bereitgestellt werden.
-
-Siehe [AKTIVIERUNG](#enablement) Beschreibung.
 
 ## Veröffentlichen der Site {#publishing-the-site}
 

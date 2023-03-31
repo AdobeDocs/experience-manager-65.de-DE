@@ -7,10 +7,10 @@ breadcrumb-title: Communities-Anleitung
 user-guide-description: Gestalten Sie Online-Erlebnisse wie Foren, Benutzergruppen, Lernressourcen und andere Community-Funktionen.
 feature: Communities
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 31%
+source-wordcount: '451'
+ht-degree: 13%
 
 ---
 
@@ -20,29 +20,23 @@ ht-degree: 31%
 + [Communities-Anleitung](home.md)
 + Einführung in AEM Communities {#introduction}
    + [Communities-Sites](administer-landing.md)
-   + [Übersicht über AEM Communities](overview.md)
-   + [Versionshinweise zu AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
-   + [Einstieg in AEM Communities](getting-started.md)
-   + [Erste Schritte mit AEM Communities zur Aktivierung](getting-started-enablement.md)
+   + [Übersicht über AEM Communities](overview.md)
+   + [Versionshinweise zu AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/communities-release-notes.html)
+   + [Erste Schritte mit AEM Communities](getting-started.md)
    + [Ersteinrichtung](setup.md)
    + [Erstellen einer neuen Community-Site](create-site.md)
    + [Erlebnis der veröffentlichten Site](published-site.md)
    + [Verfassen verschachtelter Gruppen](nested-groups.md)
-   + [Ersteinrichtung für Aktivierung](enablement-setup.md)
-   + [Erstellen einer neuen Community-Site zur Aktivierung](enablement-create-site.md)
-   + [Erstellen und Zuweisen von Aktivierungsressourcen](resource.md)
-   + [Erleben Sie die veröffentlichte Aktivierungsseite.](enablement-published-site.md)
 + Bereitstellen {#deploy}
    + [Bereitstellen von Communities](deploy-communities.md)
    + [Upgrade auf AEM 6.5 Communities](upgrade.md)
    + [Empfohlene Topologien für Communities](topologies.md)
    + [Konfigurieren des Dispatchers für Communities](dispatcher.md)
 + Verwalten {#administer}
-   + [Verwaltungsdienst für Benutzer und benutzergenerierte Inhalte in AEM Communities](user-ugc-management-service.md)
+   + [User- und UGC-Verwaltungsdienst in AEM Communities](user-ugc-management-service.md)
    + [Communities-Sites](https://experienceleague.adobe.com/docs/experience-manager-65/communities/introduction/administer-landing.html)
    + [Communities-Konsolen](consoles.md)
    + [Analytics-Konfiguration für Communities-Funktionen](analytics.md)
-   + [Konfiguration von Aktivierungsfunktionen](enablement.md)
    + [Messaging konfigurieren](messaging.md)
    + [Moderieren von Community-Inhalten](moderate-ugc.md)
    + [E-Mail konfigurieren](email.md)
@@ -62,9 +56,7 @@ ht-degree: 31%
    + [Community-Funktionen](functions.md)
    + [Speicherkonfiguration](srp-config.md)
    + [Badges Console](badges.md)
-   + [Aktivierungsressourcen-Konsole](resources.md)
-   + [Berichte-Konsole](reports.md)
-   + [MySQL-Konfiguration für Aktivierungsfunktionen](mysql.md)
+   + [Berichtkonsole](reports.md)
    + [FFmpeg für Communities](ffmpeg.md)
    + [In-Context-Moderation](in-context.md)
    + [Erweiterte Scoring- und Badges](advanced.md)
@@ -75,7 +67,6 @@ ht-degree: 31%
    + [MySQL-Konfiguration für DSRP](dsrp-mysql.md)
    + [JSRP - JCR Storage Resource Provider](jsrp.md)
    + [Solr-Konfiguration für SRP](solr.md)
-   + [Tagging von Aktivierungsressourcen](tag-resources.md)
    + [Tagging benutzergenerierter Inhalte](tag-ugc.md)
    + [Übersetzen benutzergenerierter Inhalte](translate-ugc.md)
    + [Communities-Benutzersynchronisierung](sync.md)
@@ -94,10 +85,8 @@ ht-degree: 31%
    + [Übersicht über den Speicheranbieter](srp.md)
    + [Community-Site-Grundlagen](sites-for-developers.md)
    + [Grundlagen zum Aktivitäts-Stream](essentials-activities.md)
-   + [Zuweisungsgrundlagen](essentials-assignments.md)
    + [Blog-Grundlagen](blog-developer-basics.md)
    + [Kalendergrundlagen](calendar-basics-for-developers.md)
-   + [Kataloggrundlagen](catalog-developer-essentials.md)
    + [Clientlibs für Communities-Komponenten](clientlibs.md)
    + [Grundlagen zu Kommentaren](essentials-comments.md)
    + [OSGi-Ereignisse für Communities-Komponenten](events.md)
@@ -145,25 +134,23 @@ ht-degree: 31%
    + [Communities-Komponenten](author-communities.md)
    + [Grundlagen zu Communities-Komponenten](basics.md)
    + [Aktivitäts-Streams-Funktion](activities.md)
-   + [Zuweisungsfunktion](assignments.md)
-   + [Blogfunktion](blog-feature.md)
+   + [Blog-Funktion](blog-feature.md)
    + [Kalenderfunktion](calendar.md)
-   + [Katalogfunktion](catalog.md)
    + [Verwenden von Kommentaren](comments.md)
    + [Funktionen für spezielle Inhalte](featured.md)
-   + [Dateibibliothek](file-library.md)
-   + [Funktion „Forum“](forum.md)
+   + [Dateibibliothek-Funktion](file-library.md)
+   + [Forumsfunktion](forum.md)
    + [Community-Gruppen](creating-groups.md)
    + [Ideen-Funktion](ideation-feature.md)
    + [Leaderboard-Funktion](enabling-leaderboard.md)
    + [Verwenden von &quot;Gefällt mir&quot;](liking.md)
    + [Messaging-Funktion](configure-messaging.md)
-   + [Funktion „Fragen-und-Antworten-Forum“](working-with-qna.md)
+   + [Frage- und Forumsfunktion](working-with-qna.md)
    + [Verwenden von Bewertungen](rating.md)
-   + [Verwenden von Bewertungen und Bewertungszusammenfassung (Anzeige)](reviews.md)
+   + [Verwenden der Bewertungszusammenfassung (Anzeige)](reviews.md)
    + [Suchfunktion](search.md)
-   + [Verwenden von Sozialdiagrammen](socialgraph.md)
+   + [Social-Diagramm verwenden](socialgraph.md)
    + [Aktivitätstrends](trends.md)
-   + [Verwenden von einer Social-Tag-Cloud](tagcloud.md)
-   + [Verwenden einer Abstimmung](voting.md)
+   + [Verwenden der Social Tag Cloud](tagcloud.md)
+   + [Verwenden der Abstimmung](voting.md)
    + [Erstellen einer Beispielseite](https://experienceleague.adobe.com/docs/experience-manager-65/communities/develop/create-sample-page.html)

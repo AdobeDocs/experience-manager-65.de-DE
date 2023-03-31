@@ -12,10 +12,10 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 0f7d4aba0b8c79039918e1338007a4277a5030f2
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '2731'
-ht-degree: 5%
+source-wordcount: '2694'
+ht-degree: 4%
 
 ---
 
@@ -27,7 +27,7 @@ Adobe Analytics und Adobe Experience Manager (AEM) sind beide Lösungen von Adob
 
 Adobe Analytics kann für AEM Communities so konfiguriert werden, dass bei der Interaktion eines Mitglieds mit unterstützten Communities-Funktionen Ereignisse an Adobe Analytics gesendet werden, aus denen Berichte generiert werden.
 
-Wenn beispielsweise ein Mitglied einer Community-Aktivierungswebsite eine ihm zugewiesene Videoressource anzeigt, sendet der Ressourcen-Player Ereignisse an Analytics, einschließlich Video Heartbeat-Daten. Auf der Community-Site können Administratoren verschiedene Berichte zur Videowiedergabe sehen.
+Auf der Community-Site können Administratoren beispielsweise verschiedene Berichte zur Videowiedergabe sehen.
 
 Außerdem ist die Analyse erforderlich für:
 
@@ -44,9 +44,8 @@ Außerdem ist die Analyse erforderlich für:
 
 Zu den unterstützten Communities-Funktionen gehören:
 
-* [Aktivierungsressourcen](/help/communities/resources.md)
 * [Forum](/help/communities/forum.md)
-* [Frage und Antwort](/help/communities/working-with-qna.md)
+* [Fragen und Antworten](/help/communities/working-with-qna.md)
 * [Blog](/help/communities/blog-feature.md)
 * [Dateibibliothek](/help/communities/file-library.md)
 * [Kalender](/help/communities/calendar.md)
@@ -71,7 +70,7 @@ Um die Funktionen von Analytics for Communities zu konfigurieren, müssen Sie si
 
    Das Unternehmen, das mit dem Adobe Analytics-Konto verknüpft ist.
 
-* **User Name**
+* **Benutzername**
 
    Der Anmeldename des Benutzers, der zur Verwaltung des Analytics-Kontos berechtigt ist (einschließlich Zugriffsberechtigungen für Webdienste).
 
@@ -83,9 +82,9 @@ Um die Funktionen von Analytics for Communities zu konfigurieren, müssen Sie si
 
    Die URL des Analytics-Rechenzentrums für das Konto.
 
-* **Report Suite**
+* **Berichtssuite**
 
-   Der Name der verwendeten Analytics-Report Suite.
+   Der Name der zu verwendenden Analytics Report Suite.
 
 ## Adobe Analytics Report Suite für Videoberichte {#adobe-analytics-report-suite-for-video-reporting}
 
@@ -105,11 +104,11 @@ Durch Anmeldung bei [Adobe Experience Cloud](https://experienceleague.adobe.com/
 
    * type **`Counter`**
 
-      * not **`Counter (no subrelations)`**
+      * nicht **`Counter (no subrelations)`**
    * Kann vorhandene Ereignisse wiederverwenden (umbenennen) oder neue erstellen, die für Communities-Funktionen verwendet werden können
 
 
-* [Videomanagement](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
+* [Videomanagement](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html?lang=de)
 
    * Videoberichterkonsole
 
@@ -117,7 +116,7 @@ Durch Anmeldung bei [Adobe Experience Cloud](https://experienceleague.adobe.com/
       * Wählen Sie Speichern aus
    * Video Core Measurement Console
 
-      * Wählen Sie nun eine der folgenden Optionen aus `Use Solution Variables`
+      * Klicken Sie auf `Use Solution Variables`
       * Wählen Sie Speichern aus
 
 
@@ -151,7 +150,7 @@ So aktivieren Sie die Video Heartbeat-Berichterstellung nach [Konfigurieren der 
 * Aktivieren [Analytics für eine Community-Site](#enable-analytics-for-a-community-site)
 * Verknüpfen Sie die `Marketing Cloud Org Id` mit der Community-Site
 
-Die `Marketing Cloud Org Id` kann zum Zeitpunkt der [Community-Site-Erstellung](/help/communities/sites-console.md#enablement) oder später von [Ändern](/help/communities/sites-console.md#modifying-site-properties) die Eigenschaften der Community-Site.
+Die `Marketing Cloud Org Id` kann zum Zeitpunkt der [Community-Site-Erstellung](/help/communities/sites-console.md) oder später von [Ändern](/help/communities/sites-console.md#modifying-site-properties) die Eigenschaften der Community-Site.
 
 ![marketing-org-id](assets/marketing-org-id.png)
 
@@ -180,7 +179,7 @@ Im Dialogfeld &quot;Konfiguration erstellen&quot;geben die eingegebenen Werte di
 * **Titel**
 
    (Erforderlich) Ein Anzeigetitel für die Konfiguration.
-Geben Sie beispielsweise *Community-Analyse aktivieren*
+Geben Sie beispielsweise *Community Analytics*
 
 * **Name**
 
@@ -189,9 +188,9 @@ Geben Sie beispielsweise *communities*
 
 * **Vorlage**
 
-   Wählen Sie nun eine der folgenden Optionen aus `Adobe Analytics Configuration`
+   Klicken Sie auf `Adobe Analytics Configuration`
 
-* Wählen Sie **Erstellen**
+* Wählen Sie **Erstellen** aus
 
    * Startet die Konfigurationsseite und öffnet `Analytics Settings` dialog
 
@@ -242,9 +241,9 @@ So speichern Sie die Einstellungen:
       * Vergewissern Sie sich, dass die Einträge keine führenden Leerzeichen enthalten.
       * Probieren Sie ein anderes Rechenzentrum aus.
 
-* Klicken Sie auf **OK**.
+* Wählen Sie **OK** aus.
 
-   ![analytics-enable-settings](assets/analytics-settings1.png)
+   ![analytics-settings](assets/analytics-settings1.png)
 
 ### Framework erstellen {#create-framework}
 
@@ -256,7 +255,7 @@ Nach erfolgreicher Konfiguration der Basisverbindung mit Adobe Analytics muss ei
 
 * **Titel**
 
-   (Erforderlich) Ein Anzeigetitel für das Framework. Geben Sie beispielsweise *Community-Rahmen für die Aktivierung*.
+   (Erforderlich) Ein Anzeigetitel für das Framework. Geben Sie beispielsweise *Gemeinschaftsrahmen*.
 
 * **Name**
 
@@ -265,9 +264,9 @@ Geben Sie beispielsweise *communities*.
 
 * *Vorlage*
 
-   Wählen Sie nun eine der folgenden Optionen aus `Adobe Analytics Framework`.
+   Klicken Sie auf `Adobe Analytics Framework`.
 
-* Wählen Sie **Erstellen**.
+* Wählen Sie **Erstellen** aus.
 
 Durch Erstellen des Analytics-Frameworks wird das Framework zur Konfiguration geöffnet.
 
@@ -275,7 +274,7 @@ Durch Erstellen des Analytics-Frameworks wird das Framework zur Konfiguration ge
 
 Das Framework dient der Zuordnung AEM Variablen zu Analytics-Variablen (eVars und Ereignisse). Die für die Zuordnung verfügbaren Analytics-Variablen sind [definiert in der Report Suite](#adobe-analytics-report-suite-for-video-reporting).
 
-![analytics-enable-framework](assets/analytics-framework1.png)
+![analytics-framework](assets/analytics-framework1.png)
 
 ### Report Suite auswählen {#select-report-suite}
 
@@ -307,7 +306,7 @@ Der Sidekick ist nicht erforderlich und kann minimiert werden, damit der Zugriff
 
 1. Wählen Sie eine `Run Mode`.
 
-1. Wählen Sie **Veröffentlichen**.
+1. Auswählen **Veröffentlichen**.
 
 ![analytics-framework2](assets/analytics-framework2.png)
 
@@ -389,7 +388,7 @@ Sobald die Community-Site bei aktiviertem Analytics und ausgewähltem Cloud-Konf
 
 Wenn Sie eine vorhandene Report Suite verwenden, die eine der Variablen in evar1 bis evar11 und event1 bis event7 zugeordnet hat, müssen Sie [AEM](#modifying-analytics-variable-mapping) und stellen Sie die ursprüngliche Zuordnung wieder her.
 
-Im Folgenden finden Sie ein Beispiel für standardmäßige Zuordnungen nach dem [Tutorial zu den ersten Schritten](/help/communities/getting-started-enablement.md):
+Im Folgenden finden Sie ein Beispiel für standardmäßige Zuordnungen:
 
 ![map-analytics](assets/map-analytics1.png)
 
@@ -433,7 +432,7 @@ Im Folgenden finden Sie ein Beispiel für standardmäßige Zuordnungen nach dem 
    <td><em>-</em></td>
    <td><em>-</em></td>
    <td><em>-</em></td>
-   <td><em>(i)</em></td>
+   <td><em>i)</em></td>
    <td><em>-</em></td>
   </tr>
   <tr>
@@ -442,9 +441,9 @@ Im Folgenden finden Sie ein Beispiel für standardmäßige Zuordnungen nach dem 
    <td><em>(b)</em></td>
    <td><em>(c)</em></td>
    <td><em>(d)</em></td>
-   <td><em>(E)</em></td>
-   <td><em>(f)</em></td>
-   <td><em>(g)</em></td>
+   <td><em>e)</em></td>
+   <td><em>f)</em></td>
+   <td><em>g)</em></td>
    <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
@@ -452,65 +451,65 @@ Im Folgenden finden Sie ein Beispiel für standardmäßige Zuordnungen nach dem 
   <tr>
    <td><strong>event3<br /> SCFCreate (Post)</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
-   <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>(E)</em></td>
+   <td><em>(b)</em></td>
+   <td><em>(c)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
    <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event4<br /> SCFFollow</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
-   <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>(E)</em></td>
+   <td><em>(b)</em></td>
+   <td><em>(c)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
    <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event5<br /> SCFVoteUp</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
-   <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>(E)</em></td>
+   <td><em>(b)</em></td>
+   <td><em>(c)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
    <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event6<br /> SCFVoteDown</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
-   <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>(E)</em></td>
+   <td><em>(b)</em></td>
+   <td><em>(c)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
    <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>
   <tr>
    <td><strong>event7<br /> SCFRate</strong></td>
    <td><em>-</em></td>
-   <td><em>b)</em></td>
-   <td><em>c)</em></td>
-   <td><em>d)</em></td>
-   <td><em>(E)</em></td>
+   <td><em>(b)</em></td>
+   <td><em>(c)</em></td>
+   <td><em>(d)</em></td>
+   <td><em>e)</em></td>
    <td><em>f)</em></td>
    <td><em>g)</em></td>
-   <td><em>h)</em></td>
+   <td><em>(h)</em></td>
    <td><em>i)</em></td>
    <td><em>j)</em></td>
   </tr>

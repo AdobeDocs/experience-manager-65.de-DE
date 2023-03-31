@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
 workflow-type: tm+mt
-source-wordcount: '1914'
-ht-degree: 5%
+source-wordcount: '1699'
+ht-degree: 4%
 
 ---
 
@@ -76,13 +76,6 @@ ht-degree: 5%
          * UGC ist nur in AEM Instanz oder Cluster sichtbar, in dem sie eingegeben wurde
 
          * Der Standardwert ist JSRP
-   Für **[Aktivierungsfunktion](/help/communities/overview.md#enablement-community)**
-
-   * [Installieren und Konfigurieren von FFmpeg](/help/communities/ffmpeg.md)
-   * [JDBC-Treiber für MySQL installieren](#jdbc-driver-for-mysql)
-   * [AEM Communities SCORM-Engine installieren](#scorm-package)
-   * [MySQL zur Aktivierung installieren und konfigurieren](/help/communities/mysql.md)
-
 
 
 
@@ -103,9 +96,8 @@ Wie AEM 6.4 und höher sind AEM Communities-Funktionen und Hotfixes Teil von AEM
 
 ### JDBC-Treiber für MySQL {#jdbc-driver-for-mysql}
 
-Zwei Communities-Funktionen verwenden eine MySQL-Datenbank:
+Eine Communities-Funktion verwendet eine MySQL-Datenbank:
 
-* Für [Aktivierung](/help/communities/enablement.md): Aufzeichnen von SCORM-Aktivitäten und -Lernenden
 * Für [DSRP](/help/communities/dsrp.md): Speichern benutzergenerierter Inhalte (UGC)
 
 Der MySQL-Connector muss separat abgerufen und installiert werden.
@@ -120,7 +112,7 @@ Die erforderlichen Schritte sind:
 1. Verwenden Sie die Web-Konsole, um das Bundle zu installieren und zu starten:
 
    * Beispiel: https://localhost:4502/system/console/bundles
-   * Wählen Sie nun eine der folgenden Optionen aus **`Install/Update`**
+   * Klicken Sie auf **`Install/Update`**
    * Durchsuchen... , um das aus dem heruntergeladenen ZIP-Archiv extrahierte Bundle auszuwählen.
    * Vergewissern Sie sich, dass *JDBC-Treiber der oracle Corporation für MySQLcom.mysql.jdbc* aktiv ist, und starten Sie es, falls nicht (oder überprüfen Sie die Protokolle)
 
@@ -128,7 +120,7 @@ Die erforderlichen Schritte sind:
    * Beispiel: https://localhost:4502/system/console/configMgr
    * Suchen `Day Commons JDBC Connections Pool` Konfiguration
    * Zum Öffnen auswählen
-   * Wählen Sie nun eine der folgenden Optionen aus `Save`
+   * Klicken Sie auf `Save`
 
 1. Wiederholen Sie die Schritte 3 und 4 für alle Autoren- und Veröffentlichungsinstanzen.
 
@@ -138,28 +130,7 @@ Weitere Informationen zur Installation von Bundles finden Sie auf der [Web-Konso
 
 ![connector-bundle](assets/connector-bundle.png)
 
-### SCORM-Paket {#scorm-package}
 
-Das Shareable Content Object Reference Model (SCORM) ist eine Sammlung von Standards und Spezifikationen für E-Learning. SCORM definiert auch, wie Inhalte in eine übertragbare ZIP-Datei gepackt werden können.
-
-Die AEM Communities SCORM-Engine ist für die [Aktivierung](/help/communities/overview.md#enablement-community) Funktion. Scorm-Pakete werden in AEM 6.5 Communities unterstützt:
-
-* [cq-social-scorm-package, Version 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg) , der Folgendes umfasst: [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) Motor.
-
-**So installieren Sie ein SCORM-Paket**
-
-1. Installieren Sie die [cq-social-scorm-package, Version 2.3.7](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Fadobe%2Fpackages%2Fcq640%2Fsocial%2Fscorm%2Fcq-social-scorm-2017-pkg)  aus der Paketfreigabe.
-1. Download `/libs/social/config/scorm/database_scormengine_data.sql` aus der cq-Instanz und führen Sie sie auf dem mysql-Server aus, um ein aktualisiertes scormEngineDB-Schema zu erstellen.
-1. Hinzufügen `/content/communities/scorm/RecordResults` in der Eigenschaft &quot;Excluded Paths&quot;im CSRF-Filter von `https://<hostname>:<port>/system/console/configMgr` auf Herausgebern.
-
-
-#### SCORM-Protokollierung {#scorm-logging}
-
-Wie installiert, werden alle Aktivierungsaktivitäten ausführlich in der Systemkonsole protokolliert.
-
-Bei Bedarf kann die Protokollebene für die `RusticiSoftware.*` Paket.
-
-Informationen zum Arbeiten mit Protokollen finden Sie unter [Arbeiten mit Auditdatensätzen und Protokolldateien](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files).
 
 ### AEM erweiterte MLS {#aem-advanced-mls}
 
@@ -207,7 +178,7 @@ Der gemeinsame Speicher unterstützt die Moderation von und die Analyse von benu
 
 * [Empfohlene Topologien](/help/communities/topologies.md) : beschreibt die je nach Anwendungsfall und SRP-Auswahl zu verwendende Topologie
 
-## Aktualisieren {#upgrading}
+## Upgrade {#upgrading}
 
 Bei der Aktualisierung von früheren Versionen von AEM auf die AEM 6.5-Plattform ist es wichtig, Folgendes zu lesen: [Upgrade auf AEM 6.5](/help/sites-deploying/upgrade.md).
 
@@ -344,9 +315,9 @@ Mit dem im Repository gespeicherten Schlüsselmaterial wird der Crypto-Schlüsse
 Verwenden [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Navigieren Sie zu [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de)
-* Wählen Sie nun eine der folgenden Optionen aus `/etc/key`
+* Klicken Sie auf `/etc/key`
 * Öffnen `Replication` tab
-* Wählen Sie nun eine der folgenden Optionen aus `Replicate`
+* Klicken Sie auf `Replicate`
 
 * [Aktualisieren des Granite Crypto-Bundles](#refresh-the-granite-crypto-bundle)
 
@@ -394,13 +365,13 @@ Achten Sie insbesondere darauf, den richtigen Servernamen zu verwenden, nicht `l
 Informationen zur Verwendung eines Dispatchers finden Sie unter:
 
 * AEM [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher.html) Dokumentation
-* [Installieren des Dispatchers](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
+* [Installieren des Dispatchers](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-install.html)
 * [Konfigurieren des Dispatchers für Communities](/help/communities/dispatcher.md)
 * [Bekannte Probleme](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
-## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
+## Verwandte Communities - Dokumentation {#related-communities-documentation}
 
-* Unter [Communities-Sites verwalten](/help/communities/administer-landing.md) erfahren Sie mehr darüber, wie Sie Community-Sites erstellen, Community-Site-Vorlagen bearbeiten, Community-Inhalte moderieren, Mitglieder verwalten und Messaging-Systeme konfigurieren können.
+* Besuch [Verwalten von Communities-Sites](/help/communities/administer-landing.md) , um mehr über die Erstellung einer Community-Site, die Konfiguration von Community-Site-Vorlagen, die Moderation von Community-Inhalten, die Verwaltung von Mitgliedern und die Konfiguration von Messaging zu erfahren.
 
 * Besuch [Entwickeln von Communities](/help/communities/communities.md) , um mehr über das Social-Komponenten-Framework (SCF) zu erfahren und Communities-Komponenten und -Funktionen anzupassen.
 

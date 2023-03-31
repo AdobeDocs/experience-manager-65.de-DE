@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '673'
 ht-degree: 3%
 
 ---
@@ -51,8 +51,6 @@ In diesem Tutorial wird eine [Interaktionswebsite](overview.md#engagement-commun
 Um sicherzustellen, dass das neueste Feature Pack installiert ist, gehen Sie zu:
 
 * [Neueste Versionen](deploy-communities.md#latest-releases)
-
-Für ein Tutorial, das eine [Community-Site für Aktivierung](overview.md#enablement-community), Besuch [Erste Schritte mit AEM Communities zur Aktivierung](getting-started-enablement.md).
 
 ## Konfigurieren Sie Analytics {#configure-analytics}
 
@@ -110,8 +108,8 @@ Scrollen Sie nach unten zu `Add User to Groups`:
 
 * Geben Sie &quot;C&quot;zur Suche ein.
 
-   * Wählen Sie nun eine der folgenden Optionen aus `Community Administrators`
-   * Wählen Sie nun eine der folgenden Optionen aus `Community Enablement Managers`
+   * Klicken Sie auf `Community Administrators`
+   * Klicken Sie auf `Community Enablement Managers`
 
 * Wählen Sie **[!UICONTROL Speichern]** aus.
 
@@ -130,7 +128,7 @@ Siehe [Anmeldung über Social Media mit Facebook und Twitter](social-login.md).
 
 ## Erstellen von Tutorial-Tags {#create-tutorial-tags}
 
-Erstellen Sie Tags, die für die Tutorials zur Interaktion und Aktivierung verwendet werden sollen, mithilfe des Tag-Namespace von `Tutorial`.
+Erstellen Sie Tags, die für die Tutorials zu Interaktionen verwendet werden sollen, mithilfe des Tag-Namespace von `Tutorial`.
 
 Verwenden Sie die [Tagging-Konsole](../../help/sites-administering/tags.md#tagging-console) um die folgenden Tags zu erstellen:
 
@@ -150,7 +148,7 @@ Folgen Sie dann den Anweisungen, um:
 
 Beispielpaket mit Tags, die für die Tutorials für die ersten Schritte mit AEM Communities erstellt wurden
 
-[Datei herunterladen](assets/tutorial_tags-v63.zip)
+[Datei abrufen](assets/tutorial_tags-v63.zip)
 
 ## MongoDB für UGC Common Store {#mongodb-for-ugc-common-store}
 

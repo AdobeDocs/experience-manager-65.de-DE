@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '561'
-ht-degree: 3%
+source-wordcount: '500'
+ht-degree: 2%
 
 ---
 
@@ -40,7 +40,7 @@ Gehen Sie dazu wie folgt vor:
 
 **Eigenschaft**: page-template
 
-**Typ**: String
+**Typ**: Zeichenfolge
 
 **Wert**: `template-name` (keine Erweiterung)
 
@@ -93,7 +93,6 @@ Ab AEM Communities 6.3 Service Pack 1 wird das Symbol Website löschen angezeigt
 
 * [UGC](#user-generated-content)
 * [Benutzergruppen](#community-user-groups)
-* [Assets](#enablement-assets)
 * [Datenbankdatensätze](#database-records)
 
 ### Community Unique Site-ID {#community-unique-site-id}
@@ -106,7 +105,7 @@ So identifizieren Sie die eindeutige Site-ID, die mit der Community-Site verknü
 
 * Die Site-ID ist die dritte Komponente von `rep:principalName`
 
-   Wenn z. B.`rep:principalName = community-enable-nrh9h-members`
+   Wenn beispielsweise `rep:principalName = community-enable-nrh9h-members`
 
    * **Site-Name** = *enable*
    * **Site-ID** = *nrh9h*
@@ -134,18 +133,3 @@ In allen Autoren- und Veröffentlichungsinstanzen von der [Sicherheitskonsole](.
 * Gefolgt von [eindeutige Site-ID](#community-unique-site-id)
 
 Beispiel: `community-engage-x0e11-members`.
-
-### Aktivierung von Assets {#enablement-assets}
-
-In der Hauptkonsole:
-
-* Auswählen **[!UICONTROL Assets]**.
-* Eingabe **[!UICONTROL Auswählen]** -Modus.
-* Wählen Sie den Ordner mit dem Namen [eindeutige Site-ID](#community-unique-site-id).
-* Auswählen **[!UICONTROL Löschen]** (kann aus **[!UICONTROL Mehr ...]**).
-
-### Datenbankdatensätze {#database-records}
-
-Es gibt kein Tool zum selektiven Löschen von Datenbankeinträgen für eine bestimmte Community-Site für die Aktivierung.
-
-Wenn alle Community-Sites gelöscht werden, legen Sie mithilfe von MySQL Workbench die Enablementdb- und Scormenginedb-Datei ab.

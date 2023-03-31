@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '1920'
 ht-degree: 1%
 
 ---
@@ -27,8 +27,6 @@ In AEM Communities können sich Benutzer in der Veröffentlichungsumgebung selbs
 * Erstellen Sie Untergruppen auf der Community-Site (siehe [Community-Gruppen](creating-groups.md)).
 
 * [Moderieren](moderation.md) benutzergenerierte Inhalte (UGC).
-
-* be [Aktivierungsressource](resources.md) Kontakte.
 
 * be [privilegiert](#privileged-members-group) , um Einträge für Blogs, Kalender, Fragen und Antworten und Foren zu erstellen.
 
@@ -76,11 +74,9 @@ Um in der Autorenumgebung registrierte Benutzer und Benutzergruppen zu verwalten
 
 | Wenn Gruppenmitglied... | Primäre Rolle |
 |---|---|
-| administrators | Die Gruppe Administratoren besteht aus Systemadministratoren, die über alle Fähigkeiten eines Community-Administrators sowie über die Fähigkeit verfügen, die Gruppe Community-Administratoren zu verwalten. |
+| Administratoren | Die Gruppe Administratoren besteht aus Systemadministratoren, die über alle Fähigkeiten eines Community-Administrators sowie über die Fähigkeit verfügen, die Gruppe Community-Administratoren zu verwalten. |
 | Community-Administratoren | Die Gruppe Community-Administratoren wird automatisch Mitglied aller Community-Sites und aller auf der Site erstellten Community-Gruppen. Die Administratorgruppe ist ein erstmaliges Mitglied der Gruppe Community-Administratoren . In der Autorenumgebung können Community-Administratoren Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder aus der Community verbieten) und Inhalte moderieren. |
 | Community &lt;*Site-Name*> Sitecontentmanager | Der Community-Site-Inhaltsmanager kann herkömmliche AEM erstellen, Seiten für eine Community-Site erstellen und ändern. |
-| Community-Aktivierungsmanager | Die Gruppe Community-Aktivierungsmanager besteht aus Benutzern, die für die Zuweisung zur Verwaltung der Gruppe Aktivierungsmanager einer Community-Site zur Verfügung stehen. |
-| Community &lt;*Site-Name* > SiteEnabledManager | Die Gruppe Community-Site-Aktivierungsmanager besteht aus Benutzern, die mit der Verwaltung der Aktivierung einer Community-Site beauftragt wurden [resources](resources.md). |
 | Ohne | Ein anonymer Site-Besucher kann nicht auf die Autorenumgebung zugreifen. |
 
 ### Systemadministratoren {#system-administrators}
@@ -196,43 +192,11 @@ Es gibt vier separate Konsolen, die nur in der Autorenumgebung verfügbar sind:
 | verwaltet | Benutzer in der Autoreninstanz | Benutzergruppen für Autor | Mitglieder in der Veröffentlichungsumgebung | Mitgliedergruppen in der Veröffentlichungsumgebung |
 | erfordert | Administratorberechtigung | Administratorberechtigung | Administratorberechtigungen, Tunneldienst, Benutzersynchronisierung für Veröffentlichungsfarm | Administratorberechtigungen, Tunneldienst, Benutzersynchronisierung für Veröffentlichungsfarm |
 
-### Rolle &quot;Community-Aktivierungsmanager&quot; {#community-enablement-manager-role}
-
-Die Möglichkeit für einen Site-Besucher, sich selbst zu registrieren, ist normalerweise für einen [Aktivierungs-Community](overview.md#enablement-community) da mit jedem Mitglied Kosten verbunden sind. Die Aktivierung von Lernenden und Ressourcen wird von einem Benutzer verwaltet, dem die [Rolle](#author-group-roles) von `enablement manager` [während der Site-Erstellung](sites-console.md#enablement) auf der Autoreninstanz (als Mitglied der Gruppe hinzugefügt) `Community <site-name> Siteenablementmanagers`). Die `enablement manager` ist auch für [Zuweisen von Lernressourcen](resources.md) zu Community-Mitgliedern auf der Autoreninstanz.
-
-Nur Benutzer, die Mitglieder der globalen `Community Enablement Managers` kann als `enablement manager` für eine bestimmte Community-Site.
-
-So erstellen Sie einen Benutzer, dem die Rolle von `Community Site Enablement Manager`verwenden Sie die Sicherheitskonsole der klassischen Benutzeroberfläche, um den Pfad anzugeben:
-
-Auf der Authoring-Instanz:
-
-1. Mit Administratorrechten angemeldet, navigieren Sie zur Sicherheitskonsole der klassischen Benutzeroberfläche.
-
-   Beispiel: [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
-
-2. Wählen Sie im Menü Bearbeiten die Option **[!UICONTROL Benutzer erstellen]**.
-3. Füllen Sie die `Create User` angezeigt.
-   * Pfad muss `/home/users/community`.
-4. Wählen Sie **[!UICONTROL Erstellen]**.
-
-   ![create-community-user](assets/create-community-user.png)
-
-* Suchen Sie im linken Bereich nach dem neu erstellten Benutzer und wählen Sie aus, um im rechten Bereich angezeigt zu werden.
-
-   ![community-user](assets/view-community-user.png)
-
-Im linken Bereich:
-
-1. Löschen Sie das Suchfeld und wählen Sie **[!UICONTROL Benutzer ausblenden]**.
-2. Suchen und Ziehen `community-enablementmanagers` der **[!UICONTROL Gruppen]** im rechten Bereich angezeigt.
-
-   ![assign-group](assets/assign-group.png)
-
 ### Community-Administratorrolle {#community-administrators-role}
 
 Wie im Abschnitt [Autorengruppen-Rollen](#author-group-roles) -Diagramm, können Mitglieder der Community-Administratoren-Gruppe Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder der Community verbieten) und Inhalte moderieren.
 
-Führen Sie die gleichen Schritte aus wie beim Erstellen und Zuweisen eines Benutzers zur Rolle von [Aktivierungsmanager](#communitysiteenablementmanagerrole), aber c hinzufügen `ommunity-administrators` auf der Registerkarte Gruppen des Benutzers.
+Führen Sie dieselben Schritte aus wie beim Erstellen und Zuweisen eines Benutzers zur Rolle des Aktivierungsmanagers, fügen Sie jedoch c hinzu. `ommunity-administrators` auf der Registerkarte Gruppen des Benutzers.
 
 ### LDAP-Integration {#ldap-integration}
 
@@ -249,8 +213,8 @@ Im Folgenden finden Sie einige Konfigurationsdetails für Community-Mitglieder u
 
    * Legen Sie die folgenden Eigenschaften fest:
 
-      * **[!UICONTROL Automatische Benutzermitgliedschaft]**: `community-<site name>-<uid>-members`
-      * **[!UICONTROL Benutzerpfadpräfix]**: `/community`
+      * **[!UICONTROL User auto membership]**: `community-<site name>-<uid>-members`
+      * **[!UICONTROL User Path Prefix]**: `/community`
       * **[!UICONTROL Group Path Prefix]**: `/community`
 
 4. [Das externe Anmeldemodul](../../help/sites-administering/ldap-config.md#the-external-login-module)
