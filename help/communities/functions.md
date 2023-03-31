@@ -12,10 +12,10 @@ discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '2448'
-ht-degree: 9%
+source-wordcount: '2224'
+ht-degree: 6%
 
 ---
 
@@ -86,23 +86,15 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * **Ansicht „Meine Aktivitäten“ anzeigen**
 
-   Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten eine Registerkarte, auf der Aktivitäten basierend auf denen gefiltert werden, die innerhalb der Community vom aktuellen Mitglied generiert wurden. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten eine Registerkarte, auf der Aktivitäten basierend auf denen gefiltert werden, die innerhalb der Community vom aktuellen Mitglied generiert wurden. Standardmäßig ist ausgewählt.
 
 * **Ansicht „Alle Aktivitäten“ anzeigen**
 
-   Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten einen Tab, der alle in der Community generierten Aktivitäten enthält, auf die das aktuelle Mitglied Zugriff hat. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option aktiviert ist, enthält die Seite Aktivitäten einen Tab, der alle in der Community generierten Aktivitäten enthält, auf die das aktuelle Mitglied Zugriff hat. Standardmäßig ist ausgewählt.
 
 * **Ansicht „News-Feed“ anzeigen**
 
-   Wenn diese Option aktiviert ist, enthalten die Aktivitätsseiten eine Registerkarte, auf der Aktivitäten nach denen gefiltert werden, denen das aktuelle Mitglied folgt. Diese Option ist standardmäßig ausgewählt.
-
-### Zuweisungsfunktion {#assignments-function}
-
-Die Zuweisungsfunktion ist die grundlegende Funktion, die eine [Community-Site zur Aktivierung](/help/communities/overview.md#enablement-community). Sie ermöglicht die Zuweisung von Aktivierungsressourcen an Community-Mitglieder. Siehe auch [Zuweisungsgrundlagen](/help/communities/essentials-assignments.md) für Entwickler.
-
-Diese Funktion ist als Funktion der [Aktivierungs-Add-on](/help/communities/enablement.md). Das Aktivierungs-Add-on erfordert zusätzliche Lizenzierung für die Verwendung in einer Produktionsumgebung.
-
-Wenn sie einer Vorlage hinzugefügt wird, ist die einzige Konfiguration für die [Titel und URL-Einstellungen](#title-and-url-settings).
+   Wenn diese Option aktiviert ist, enthalten die Aktivitätsseiten eine Registerkarte, auf der Aktivitäten nach denen gefiltert werden, denen das aktuelle Mitglied folgt. Standardmäßig ist ausgewählt.
 
 ### Blogfunktion {#blog-function}
 
@@ -120,15 +112,15 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * **Datei-Uploads zulassen**
 
-   Wenn diese Option aktiviert ist, bietet der Blog Mitgliedern die Möglichkeit, Dateien hochzuladen. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option aktiviert ist, bietet der Blog Mitgliedern die Möglichkeit, Dateien hochzuladen. Standardmäßig ist ausgewählt.
 
 * **Antworten mit Diskussionsfaden zulassen**
 
-   Wenn diese Option nicht ausgewählt ist, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht zulässig. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option nicht ausgewählt ist, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht zulässig. Standardmäßig ist ausgewählt.
 
 * **Feature-Inhalt zulassen**
 
-   Wenn ausgewählt, wird der Blog als [präsentierte Inhalte](/help/communities/featured.md). Diese Option ist standardmäßig ausgewählt.
+   Wenn ausgewählt, wird der Blog als [präsentierte Inhalte](/help/communities/featured.md). Standardmäßig ist ausgewählt.
 
 ### Kalenderfunktion {#calendar-function}
 
@@ -142,7 +134,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * **Fixierung zulassen**
 
-   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Standardmäßig ist ausgewählt.
 
 * **Privilegierte Mitglieder zulassen**
 
@@ -150,34 +142,15 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * **Datei-Uploads zulassen**
 
-   Wenn diese Option aktiviert ist, bietet der Blog Mitgliedern die Möglichkeit, Dateien hochzuladen. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option aktiviert ist, bietet der Blog Mitgliedern die Möglichkeit, Dateien hochzuladen. Standardmäßig ist ausgewählt.
 
 * **Antworten mit Diskussionsfaden zulassen**
 
-   Wenn diese Option nicht ausgewählt ist, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht zulässig. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option nicht ausgewählt ist, erlaubt der Blog Antworten (Kommentare) auf einen Artikel, aber Antworten auf Kommentare sind nicht zulässig. Standardmäßig ist ausgewählt.
 
 * **Feature-Inhalt zulassen**
 
-   Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Diese Option ist standardmäßig ausgewählt.
-
-### Katalogfunktion {#catalog-function}
-
-Die Katalogfunktion bietet die Möglichkeit, [Aktivierungs-Community](/help/communities/overview.md#enablement-community) Mitglieder, um Aktivierungsressourcen zu durchsuchen, die ihnen nicht zugewiesen sind. Siehe [Tagging von Aktivierungsressourcen](/help/communities/tag-resources.md) und [Kataloggrundlagen](/help/communities/catalog-developer-essentials.md) für Entwickler.
-
-Alle Aktivierungsressourcen und Lernpfade für die Community-Site werden in allen Katalogen angezeigt, sofern ihre Eigenschaft, ` [Show in Catalog](/help/communities/resources.md)`festgelegt ist, auf &quot;true&quot;gesetzt ist. Um Ressourcen und Lernpfade explizit einzubeziehen, muss ein [Vorfilter](/help/communities/catalog-developer-essentials.md#pre-filters) in den Katalog.
-
-Wenn sie einer Vorlage hinzugefügt wird, ermöglicht die Konfiguration die Angabe von Tag-Namespaces, die zum Konfigurieren des Tag-Filters verwendet werden, der den Besuchern der Site angezeigt wird:
-
-![Katalogfunktion](assets/catalog-function.png)
-
-* [Titel und URL-Einstellungen](#title-and-url-settings)
-
-* **Alle Namespaces auswählen**
-
-   Die ausgewählten Tag-Namespaces definieren, welche Tags von Besuchern zum Filtern der Liste der im Katalog aufgelisteten Aktivierungsressourcen ausgewählt werden können.
-Wenn diese Option aktiviert ist, sind alle für die Community-Site zulässigen Tag-Namespaces verfügbar.
-Wenn diese Option deaktiviert ist, können Sie einen oder mehrere Namespaces auswählen, die für die Community-Site zulässig sind.
-Diese Option ist standardmäßig ausgewählt.
+   Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Standardmäßig ist ausgewählt.
 
 ### Funktion für spezielle Inhalte {#featured-content-function}
 
@@ -207,7 +180,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * **Fixierung zulassen**
 
-   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Standardmäßig ist ausgewählt.
 
 * **Privilegierte Mitglieder zulassen**
 
@@ -215,15 +188,15 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 
 * **Datei-Uploads zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Standardmäßig ist ausgewählt.
 
 * **Antworten mit Diskussionsfaden zulassen**
 
-   Wenn diese Option nicht ausgewählt ist, sind im Forum Kommentare zu einem Thema zulässig, Antworten auf diese Kommentare sind jedoch nicht zulässig. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option nicht ausgewählt ist, sind im Forum Kommentare zu einem Thema zulässig, Antworten auf diese Kommentare sind jedoch nicht zulässig. Standardmäßig ist ausgewählt.
 
 * **Feature-Inhalt zulassen**
 
-   Wenn diese Option aktiviert ist, wird der Inhalt der Komponente als [präsentierte Inhalte](/help/communities/featured.md). Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option aktiviert ist, wird der Inhalt der Komponente als [präsentierte Inhalte](/help/communities/featured.md). Standardmäßig ist ausgewählt.
 
 ### Gruppenfunktion {#groups-function}
 
@@ -258,7 +231,7 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet:
 * **Veröffentlichung der Kreation erlauben**
 
    Sofern ausgewählt, können autorisierte Community-Mitglieder eine Gruppe in der Veröffentlichungsumgebung erstellen. Wenn diese Option deaktiviert ist, können neue Gruppen (Untergruppen) nur in der Autorenumgebung über die Gruppenkonsole der Communities-Sites erstellt werden.
-Diese Option ist standardmäßig ausgewählt.
+Standardmäßig ist ausgewählt.
 
 ### Ideen-Funktion {#ideation-function}
 
@@ -276,15 +249,15 @@ Wenn eine Vorlage hinzugefügt wird, wird das folgende Dialogfeld geöffnet, in 
 
 * **Datei-Uploads zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Standardmäßig ist ausgewählt.
 
 * **Antworten mit Diskussionsfaden zulassen**
 
-   Wenn diese Option nicht ausgewählt ist, sind Antworten (Kommentare) auf ein Thema zulässig, Antworten auf Kommentare sind jedoch nicht zulässig. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option nicht ausgewählt ist, sind Antworten (Kommentare) auf ein Thema zulässig, Antworten auf Kommentare sind jedoch nicht zulässig. Standardmäßig ist ausgewählt.
 
 * **Feature-Inhalt zulassen**
 
-   Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Diese Option ist standardmäßig ausgewählt.
+   Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Standardmäßig ist ausgewählt.
 
 ### Leaderboard-Funktion {#leaderboard-function}
 
@@ -331,7 +304,7 @@ Wenn sie einer Vorlage hinzugefügt wird, ermöglicht die Konfiguration die Besc
 
 * **Fixierung zulassen**
 
-   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option aktiviert ist, können Themenantworten an den Anfang der Liste der Kommentare eingefügt werden. Standardmäßig ist ausgewählt.
 
 * **Privilegierte Mitglieder zulassen**
 
@@ -339,15 +312,15 @@ Wenn sie einer Vorlage hinzugefügt wird, ermöglicht die Konfiguration die Besc
 
 * **Datei-Uploads zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option aktiviert ist, können Mitglieder Dateien hochladen. Standardmäßig ist ausgewählt.
 
 * **Antworten mit Diskussionsfaden zulassen**
 
-   Wenn diese Option nicht ausgewählt ist, können im Forum Kommentare (Antworten) zu einer geposteten Frage eingesehen werden. Antworten auf Antworten sind jedoch nicht zulässig. Diese Option ist standardmäßig ausgewählt.
+   Wenn diese Option nicht ausgewählt ist, können im Forum Kommentare (Antworten) zu einer geposteten Frage eingesehen werden. Antworten auf Antworten sind jedoch nicht zulässig. Standardmäßig ist ausgewählt.
 
 * **Feature-Inhalt zulassen**
 
-   Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Diese Option ist standardmäßig ausgewählt.
+   Bei Auswahl dieser Option wird der Inhalt als [präsentierte Inhalte](/help/communities/featured.md). Standardmäßig ist ausgewählt.
 
 ## Community-Funktion erstellen {#create-community-function}
 

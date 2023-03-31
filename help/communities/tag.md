@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '263'
-ht-degree: 4%
+source-wordcount: '252'
+ht-degree: 3%
 
 ---
 
@@ -29,19 +29,17 @@ Die zugrunde liegende Infrastruktur für Tags, die in der Veröffentlichungsumge
 
 * Siehe [Verwenden der Social Tag Cloud](tagcloud.md) für Informationen für Autoren zum Hinzufügen einer `social tag cloud` -Komponente auf eine Seite klicken, um die auf UGC angewandten Tags in der Veröffentlichungsumgebung hervorzuheben.
 
-* Siehe [Tagging von Aktivierungsressourcen](tag-resources.md) für Informationen zum Tagging von Ressourcen für Kataloge.
-
 Das Tagging von benutzergenerierten Inhalten kann beim Konfigurieren eines [Community-Site](sites-console.md#tagging) oder einer der folgenden Funktionen:
 
 * [Blog](blog-feature.md)
 * [Kalender](calendar.md)
 * [Dateibibliothek](file-library.md)
 * [Forum](forum.md)
-* [Frage und Antwort](working-with-qna.md)
+* [Fragen und Antworten](working-with-qna.md)
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
-### Social-Tag-Cloud {#social-tag-cloud}
+### Social Tag-Cloud {#social-tag-cloud}
 
 <table>
  <tbody>

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 role: Admin
 exl-id: e3ffc73e-2bc5-492d-b64b-750cc7d8ab9b
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '470'
-ht-degree: 9%
+source-wordcount: '430'
+ht-degree: 5%
 
 ---
 
@@ -26,9 +26,8 @@ Dieser Abschnitt richtet sich an diejenigen, die AEM Communities verwalten und m
 
 Einen Überblick und die ersten Schritte finden Sie unter:
 
-* [Übersicht über AEM Communities](overview.md)
-* [Einstieg in AEM Communities](getting-started.md)
-* [Erste Schritte mit AEM Communities zur Aktivierung](getting-started-enablement.md)
+* [Übersicht über AEM Communities](overview.md)
+* [Erste Schritte mit AEM Communities](getting-started.md)
 
 ## Administrations- und Konfigurationsthemen {#administration-and-configuration-topics}
 
@@ -41,7 +40,6 @@ Einen Überblick und die ersten Schritte finden Sie unter:
       * [Gruppen (Untergruppen)](groups.md)
    * [Moderation](moderation.md)
    * [Mitglieder und Gruppenverwaltung](members.md)
-   * [Aktivierungsressourcen](resources.md)
    * [Berichte](reports.md)
 
 
@@ -78,12 +76,6 @@ Eine wichtige Funktion von AEM Communities ist die Erstellung benutzergenerierte
 * [Abonnements](subscriptions.md): Möglichkeit für Mitglieder, mit der Community über externe E-Mails zu interagieren.
 * [Messaging](messaging.md): Möglichkeit für Mitglieder, mithilfe interner Nachrichten mit der Community zu interagieren.
 
-### Aktivierungsfunktionen {#enablement-features}
-
-* [Konfiguration der Aktivierung](enablement.md): die erforderlichen Informationen, um die Aktivierungsfunktionen ordnungsgemäß einzurichten.
-* [Analytics-Konfiguration](analytics.md): erforderliche Informationen zur Aktivierung der Funktionen von Adobe Analytics für Communities.
-* [Tagging von Aktivierungsressourcen](tag-resources.md): erforderlich, um Aktivierungskataloge zu erstellen.
-
 ### Implementierung {#deployment}
 
 Der Abschnitt &quot;Bereitstellung&quot;enthält AEM Communities-spezifische Informationen.
@@ -98,7 +90,7 @@ Es ist wichtig, die neueste Communities-Version auf der AEM zu installieren:
 
 Auf der Bereitstellungsseite finden Sie weitere Communities-spezifische Informationen, z. B. für [Upgrade](upgrade.md), [Dispatcher](dispatcher.md) und [Replikation](deploy-communities.md#replication-agents-on-author).
 
-## Communities-Dokumentation zu ähnlichen Themen {#related-communities-documentation}
+## Verwandte Communities - Dokumentation {#related-communities-documentation}
 
 * Besuch [Bereitstellen von Communities](deploy-communities.md) , um mehr über empfohlene Bereitstellungen zu erfahren.
 

@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
+source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
 workflow-type: tm+mt
-source-wordcount: '663'
-ht-degree: 4%
+source-wordcount: '624'
+ht-degree: 1%
 
 ---
 
@@ -33,12 +33,6 @@ Bei der Installation eines neuen Communities Feature Packs in einer mit MSRP kon
 1. Installieren Sie die [neueste Feature Pack](/help/communities/deploy-communities.md#latestfeaturepack).
 1. Installieren Sie die [aktuelle Solr-Konfigurationsdateien](/help/communities/msrp.md#upgrading).
 1. MSRP neu indizieren - siehe Abschnitt [MSRP-Reindex-Tool](/help/communities/msrp.md#msrp-reindex-tool).
-
-### Aktivierung 2.0 {#enablement}
-
-Ab AEM 6.3 speichern die Aktivierungsfunktionen keine Reporting-Informationen mehr in MySQL. MySQL wird nur noch für die Nachverfolgung von SCORM-Inhalten benötigt.
-
-Bitte kontaktieren Sie uns [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html) für Unterstützung bei der Migration von Inhalten von Enablement 1.0.
 
 ## Upgrade von AEM 6.0 {#upgrading-from-aem}
 

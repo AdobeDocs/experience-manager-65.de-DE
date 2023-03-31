@@ -10,10 +10,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 exl-id: eb5ce76a-bf28-4540-bc2d-3b5ecb8286f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '365'
-ht-degree: 62%
+source-wordcount: '361'
+ht-degree: 2%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 62%
 
 ## Übersicht {#overview}
 
-Im Autorenabschnitt der Dokumentation finden Sie Informationen zum Hinzufügen von Communities-Funktionen zu AEM Sites im Bearbeitungsmodus sowie eine Beschreibung der Komponentenkonfigurationen.
+Im Abschnitt &quot;Authoring&quot;der Dokumentation werden das Hinzufügen von Communities-Funktionen zu AEM Sites im Bearbeitungsmodus für Autoren sowie die Beschreibung von Komponentenkonfigurationen beschrieben.
 
 Komponenten können mithilfe einer AEM-Instanz und der interaktiven [Handbuch zu Community-Komponenten](components-guide.md).
 
-## Auf Communities-Komponenten zugreifen {#accessing-communities-components}
+## Zugreifen auf Communities-Komponenten {#accessing-communities-components}
 
-Wenn Sie Seiteninhalte verfassen und die zugrunde liegende Vorlage Änderungen am Design der Seite zulässt, können Komponenten aktiviert werden, die im Komponenten-Browser noch nicht als Teil des Seitendesigns verfügbar sind.
+Wenn beim Erstellen von Seiteninhalten die zugrunde liegende Vorlage Änderungen am Design der Seite zulässt, ist es möglich, Komponenten zu aktivieren, die im Komponenten-Browser nicht bereits als Teil des Site-Designs verfügbar sind.
 
-Die verfügbaren Communities-Komponenten sind [hier](author-communities.md#available-communities-components) aufgeführt.
+Die verfügbaren Communities-Komponenten werden aufgelistet [here](author-communities.md#available-communities-components).
 
 >[!NOTE]
 >
@@ -37,9 +37,9 @@ Die verfügbaren Communities-Komponenten sind [hier](author-communities.md#avail
 >
 >Wenn Sie nicht mit AEM vertraut sind, lesen Sie die Dokumentation unter [grundlegende Handhabung](../../help/sites-authoring/basic-handling.md).
 
-### Designmodus aktivieren {#entering-design-mode}
+### Aktivieren des Designmodus {#entering-design-mode}
 
-Wenn eine **Communities** -Komponente nicht im Komponenten-Browser gefunden werden (Sidekick), muss `Design Mode` , um weitere Communities-Komponenten hinzuzufügen. Möglicherweise müssen Sie zudem [erforderliche Client-seitige Bibliotheken](#required-clientlibs) (clientlibs) hinzufügen.
+Wenn eine **Communities** -Komponente nicht im Komponenten-Browser gefunden werden (Sidekick), muss `Design Mode` , um weitere Communities-Komponenten hinzuzufügen. [Erforderliche clientseitige Bibliotheken](#required-clientlibs) (clientlibs) hinzugefügt werden.
 
 Weitere Informationen finden Sie unter [Konfigurieren von Komponenten im Designmodus](../../help/sites-authoring/default-components-designmode.md).
 
@@ -47,15 +47,15 @@ Im Folgenden finden Sie Bilder zur Auswahl einiger Communities-Komponenten und d
 
 ![component-design](assets/component-design.png)
 
-Die ausgewählten Komponenten werden jetzt im Komponenten-Browser angezeigt:
+Die ausgewählten Komponenten sind jetzt im Komponenten-Browser verfügbar:
 
 ![component-design1](assets/component-design1.png)
 
 ## Erforderliche Clientlibs {#required-clientlibs}
 
-[Client-seitige Bibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs) werden für die ordnungsgemäße Ausführung (JavaScript) und Formatierung (CSS) der Komponenten benötigt.
+[Client-seitige Bibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs) sind für die ordnungsgemäße Funktion (JavaScript) und Formatierung (CSS) einer Komponente erforderlich.
 
-Wird eine Communities-Komponente einer Seite hinzugefügt und führt dies zur Ausgabe einer Fehlermeldung sowie einem unerwarteten Layoutergebnis, sollte zunächst überprüft werden, ob die für die Communities-Komponente erforderlichen clientlibs hinzugefügt wurden. Weitere Informationen finden Sie unter [Clientlibs für Communities-Komponenten](clientlibs.md).
+Wenn Sie eine Communities-Komponente zu einer Seite hinzufügen und das Ergebnis ein Fehler oder ein unerwartetes Erscheinungsbild ist, sollten Sie als Erstes versuchen, die erforderlichen Clientlibs für die Communities-Komponente hinzuzufügen. Weitere Informationen finden Sie unter [Clientlibs für Communities-Komponenten](clientlibs.md).
 
 ### Beispiel: Ursprünglich platzierte Bewertungen ohne Client-Bibliotheken... {#example-initially-placed-reviews-without-client-libraries}
 
@@ -67,24 +67,23 @@ Wird eine Communities-Komponente einer Seite hinzugefügt und führt dies zur Au
 
 ## Tagging {#tagging}
 
-Viele Communities-Funktionen lassen sich so konfigurieren, dass Mitglieder veröffentlichte (gepostete) Inhalte in der Veröffentlichungsumgebung taggen können.
+Viele Communities-Funktionen können so konfiguriert werden, dass Mitglieder Inhalte taggen können, die in der Veröffentlichungsumgebung eingegeben (veröffentlicht) wurden.
 
-Ist das Tagging von Inhalten freigeschaltet, werden die für Mitglieder in der Veröffentlichungsumgebung verfügbaren Namespaces möglicherweise durch die Konfiguration der Community-Site beschränkt. Informationen hierzu finden Sie in der [Community-Sites-Konsole](sites-console.md#tagging).
+Wenn Tagging zulässig ist, kann die Konfiguration der Community-Site so eingestellt sein, dass die Namespaces, die Mitgliedern in der Veröffentlichungsumgebung angezeigt werden, beschränkt werden. Siehe [Community-Sites-Konsole](sites-console.md#tagging).
 
 Funktionen, die Tagging ermöglichen: [blog](blog-feature.md), [calendar](calendar.md), [Dateibibliothek](file-library.md), [Forum](forum.md)
 
-Funktionen, die Tags verwenden: [Katalog](catalog.md), [suchen](search.md), [Social Tag Cloud](tagcloud.md)
+Funktionen, die Tags verwenden: [suchen](search.md), [Social Tag Cloud](tagcloud.md)
 
-Informationen zum Verfassen:
+Für Informationen zur Bearbeitung:
 
 * [Verwenden von Tags](../../help/sites-authoring/tags.md)
 
-Verwaltungsinformationen:
+Für Verwaltungsinformationen:
 
 * Erstellen von Tag-Namespaces (Taxonomie): [Verwalten von Tags](../../help/sites-administering/tags.md)
 * Community-Site-Konfiguration: see [TAGGING](sites-console.md#tagging)
 * [Tagging benutzergenerierter Inhalte](../../help/sites-authoring/tags.md)
-* [Tagging von Aktivierungsressourcen](tag-resources.md)
 
 Entwicklerinformationen:
 

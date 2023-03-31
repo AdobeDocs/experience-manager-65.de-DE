@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
 workflow-type: tm+mt
-source-wordcount: '1648'
+source-wordcount: '1601'
 ht-degree: 3%
 
 ---
@@ -78,11 +78,9 @@ Wählen Sie **Weiter** aus.
 
 ### Schritt 3: Einstellungen {#step-settings}
 
-Im Schritt Einstellungen vor Auswahl von `Next`, beachten Sie, dass es sieben Abschnitte gibt, die Zugriff auf Konfigurationen bieten, die die Benutzerverwaltung, Tagging, Moderation, Gruppenverwaltung, Analyse, Übersetzung und Aktivierung betreffen.
+Im Schritt Einstellungen vor Auswahl von `Next`Beachten Sie, dass es sieben Abschnitte gibt, die Zugriff auf Konfigurationen bieten, die die Benutzerverwaltung, Tagging, Moderation, Gruppenverwaltung, Analyse und Übersetzung betreffen.
 
-Besuchen Sie die [Erste Schritte mit AEM Communities zur Aktivierung](/help/communities/getting-started-enablement.md) Tutorial zur Erfahrung mit der Arbeit mit den Aktivierungsfunktionen.
-
-#### Benutzerverwaltung {#user-management}
+#### User Management {#user-management}
 
 Aktivieren Sie alle Kontrollkästchen für [Benutzerverwaltung](/help/communities/sites-console.md#user-management)
 
@@ -105,9 +103,9 @@ Die Tags, die auf Community-Inhalte angewendet werden können, werden durch die 
 Die Suche nach Namespaces ist mit der Typvorsuche einfach. Beispiel:
 
 * Typ `tut`
-* Wählen Sie nun eine der folgenden Optionen aus `Tutorial`
+* Klicken Sie auf `Tutorial`
 
-![tagging](assets/tagging.png)
+![Tagging](assets/tagging.png)
 
 #### ROLLEN {#roles}
 
@@ -118,7 +116,7 @@ Damit ein Community-Mitglied (oder eine Gruppe von Mitgliedern) die Site als Com
 Beispiel:
 
 * Typ `q`
-* Auswählen [Quinn Harper](/help/communities/enablement-setup.md#publishcreateenablementmembers)
+* Quinn Harper auswählen
 
 >[!NOTE]
 >
@@ -152,16 +150,6 @@ Die [Übersetzungsparameter](/help/communities/sites-console.md#translation) Geb
 * Behalten Sie die Standardpersistenzoption bei
 
 ![translation-settings](assets/translation-settings.png)
-
-#### AKTIVIERUNG {#enablement}
-
-Lassen Sie beim Erstellen einer Interaktionsgemeinschaft leer.
-
-Für ein ähnliches Tutorial zum schnellen Erstellen einer [Aktivierungs-Community](/help/communities/overview.md#enablement-community), siehe [Erste Schritte mit AEM Communities zur Aktivierung](/help/communities/getting-started-enablement.md).
-
-Wählen Sie **Weiter** aus.
-
-![Aktivierung](assets/enablement.png)
 
 ### Schritt 4: Community-Site erstellen {#step-create-communities-site}
 
@@ -222,11 +210,11 @@ Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 >1. Weiter zu **[!UICONTROL Einstellungen]** auswählen **[!UICONTROL Bearbeiten]**.
 >1. Wählen Sie im Popup-Dialogfeld für Agenteneinstellungen **[!UICONTROL Verkehr]** Registerkarte.
 >1. Ändern Sie in URI die Portnummer 4503 in die gewünschte Portnummer. So verwenden Sie beispielsweise Port 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
->1. Klicken Sie auf **[!UICONTROL OK]**.
+>1. Wählen Sie **[!UICONTROL OK]** aus.
 >1. (Optional) Wählen Sie **[!UICONTROL Löschen]** oder **[!UICONTROL Wiederholen erzwingen]** , um die Replikationswarteschlange zurückzusetzen.
 
 
-### Wählen Sie Veröffentlichen {#select-publish}
+### Veröffentlichung auswählen {#select-publish}
 
 Nachdem Sie sichergestellt haben, dass der Veröffentlichungsserver ausgeführt wird, wählen Sie das Weltsymbol aus, um die Community-Site zu veröffentlichen.
 
@@ -280,7 +268,7 @@ Erste Schritte:
 1. Melden Sie sich in der Veröffentlichungsinstanz mit Administratorrechten an.
 1. Navigieren Sie zu [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 1. Erweitern Sie im Projektbrowser die `/etc/map.`
-1. Wählen Sie die `http` node:
+1. Wählen Sie den `http`-Knoten aus:
 
    * Auswählen **Knoten erstellen:**
 
@@ -302,7 +290,7 @@ Erste Schritte:
       * **Wert** /content/sites/engage/en.html
 
 
-1. Auswählen **Alle speichern**
+1. Klicken Sie auf **Alle speichern.**
 1. (Optional) Löschen Sie den Browser-Verlauf.
 1. Navigieren Sie zu https://localhost:4503/.
 
