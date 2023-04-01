@@ -12,10 +12,10 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 7efe4a011d831c34f6aafd877654e8b41fec96e0
+source-git-commit: 70c2d7c910f61169869aab9fdcbff4c4564ea9bd
 workflow-type: tm+mt
-source-wordcount: '2889'
-ht-degree: 97%
+source-wordcount: '2818'
+ht-degree: 32%
 
 ---
 
@@ -31,11 +31,11 @@ Dieser Abschnitt behandelt die verschiedenen Schritte, mit denen Sie sicherstell
 >
 >Es gibt einige zusätzliche [Sicherheitsüberlegungen](/help/sites-developing/dev-guidelines-bestpractices.md#security-considerations), die in der Entwicklungsphase berücksichtig werden müssen.
 
-## Hauptsicherheitsmaßnahmen {#main-security-measures}
+## Wichtigste Sicherheitsmaßnahmen {#main-security-measures}
 
-### Ausführen von AEM im produktionsbereiten Modus {#run-aem-in-production-ready-mode}
+### AEM im produktionsbereiten Modus ausführen {#run-aem-in-production-ready-mode}
 
-Weitere Informationen dazu finden Sie in [Ausführen von AEM im produktionsbereiten Modus](/help/sites-administering/production-ready.md).
+Weitere Informationen finden Sie unter [Ausführen von AEM im produktionsbereiten Modus](/help/sites-administering/production-ready.md).
 
 ### Aktivieren von HTTPS für Transport Layer Security {#enable-https-for-transport-layer-security}
 
@@ -47,55 +47,55 @@ Die Aktivierung der HTTPS-Transportschicht (Transport Layer) in den Autoren- und
 
 ### Installieren von Sicherheits-Hotfixes {#install-security-hotfixes}
 
-Stellen Sie sicher, dass die neuesten, [von Adobe bereitgestellten Sicherheits-Hotfixes](https://helpx.adobe.com/de/experience-manager/kb/aem63-available-hotfixes.html) installiert sind.
+Vergewissern Sie sich, dass Sie die neueste Version installiert haben [Von Adobe bereitgestellte Sicherheits-Hotfixes](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de).
 
-### Änderung von Standardkennwörtern für die Admin-Konten von AEM und der OSGi-Konsole {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Standardkennwörter für AEM und OSGi Console Admin-Konten ändern {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe empfiehlt dringend, dass Sie das Passwort für die mit allen Berechtigungen ausgestatteten [**`admin`-Konten von AEM**](#changing-the-aem-admin-password) nach der Installation ändern (in allen Instanzen).
+Adobe empfiehlt nach der Installation, das Kennwort für die berechtigten [**AEM** `admin` Konten](#changing-the-aem-admin-password) (in allen Fällen).
 
 Diese Konten beinhalten:
 
 * Das `admin`-Konto von AEM
 
-   Sobald Sie das Passwort für das Admin-Konto von AEM geändert haben, müssen Sie für den Zugriff auf CRX das neue Passwort verwenden.
+   Nachdem Sie das Kennwort für das AEM-Administratorkonto geändert haben, verwenden Sie beim Zugriff auf CRX das neue Kennwort.
 
 * Das `admin`-Passwort für die OSGi-Web-Konsole
 
-   Diese Änderung wird auch für das Admin-Konto übernommen, das für den Zugriff auf die Web-Konsole verwendet wird. Daher müssen Sie dafür dasselbe Passwort verwenden.
+   Diese Änderung wird auch auf das Administratorkonto angewendet, das für den Zugriff auf die Web-Konsole verwendet wird. Verwenden Sie daher beim Zugriff darauf dasselbe Kennwort.
 
 Diese beiden Konten nutzen separate Kontoanmeldeinformationen und die Verwendung von unterschiedlichen sicheren Passwörtern für jedes Konto ist für eine sichere Bereitstellung von entscheidender Bedeutung.
 
-#### Ändern des Admin-Kennworts von AEM {#changing-the-aem-admin-password}
+#### Ändern des AEM Administratorkennworts {#changing-the-aem-admin-password}
 
-Das Kennwort für das Admin-Konto von AEM kann über die Konsole [Granite-Vorgänge – Benutzer](/help/sites-administering/granite-user-group-admin.md) geändert werden.
+Das Kennwort für das AEM Administratorkonto kann über die [Granite-Vorgänge - Benutzer](/help/sites-administering/granite-user-group-admin.md) Konsole.
 
 Dort können Sie das `admin`-Konto bearbeiten und [das Kennwort ändern](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user).
 
 >[!NOTE]
 >
->Eine Änderung des Admin-Kontos führt auch zu einer Änderung des OSGi-Webkonsolenkontos. Nachdem Sie das Admin-Konto geändert haben, sollten Sie das OSGi-Konto so ändern, dass es sich vom Admin-Konto unterscheidet.
+>Durch das Ändern des Admin-Kontos wird auch das OSGi-Web-Konsolenkonto geändert. Nachdem Sie das Administratorkonto geändert haben, sollten Sie das OSGi-Konto in etwas Anderes ändern.
 
 #### Bedeutung der Änderung des Kennworts für die OSGi-Web-Konsole {#importance-of-changing-the-osgi-web-console-password}
 
 Unabhängig vom `admin`-Konto von AEM kann eine Nichtänderung des Standardkennworts für die OSGi-Web-Konsole dazu führen, dass:
 
-* der Server aufgrund des Standardkennworts beim Starten und Herunterfahren einem Sicherheitsrisiko ausgesetzt ist (bei großen Servern kann dies einige Minuten dauern).
-* der Server einem Sicherheitsrisiko ausgesetzt ist, wenn das Repository nicht aktiv ist oder ein Bundle neu startet und OSGi ausgeführt wird.
+* Verfügbarkeit des Servers mit einem Standardkennwort beim Start und beim Herunterfahren (das bei großen Servern Minuten dauern kann);
+* Exposition des Servers, wenn das Repository heruntergefahren/neu gestartet wird - und OSGi ausgeführt wird.
 
-Weitere Informationen zum Ändern des Kennworts für die Web-Konsole finden Sie im nachfolgenden Abschnitt [Ändern des Admin-Kennworts für die OSGi-Web-Konsole](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password).
+Weitere Informationen zum Ändern des Kennworts für die Web-Konsole finden Sie unter [Ändern des Administratorkennworts der OSGi-Web-Konsole](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) unten.
 
-#### Ändern des Admin-Kennworts für die OSGi-Web-Konsole {#changing-the-osgi-web-console-admin-password}
+#### Ändern des Administratorkennworts der OSGi-Web-Konsole {#changing-the-osgi-web-console-admin-password}
 
-Sie müssen auch das Kennwort ändern, das für den Zugriff auf die Web-Konsole verwendet wird. Dies geschieht mit einem [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) , um die folgenden Eigenschaften der **Apache Felix OSGi Management Console**:
+Ändern Sie das Kennwort für den Zugriff auf die Webkonsole. Verwenden Sie eine [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) , um die folgenden Eigenschaften der **Apache Felix OSGi Management Console**:
 
 * **Benutzername** und **Kennwort**: die Anmeldedaten für den Zugriff auf die Apache Felix Web Management Console.
 Das Kennwort muss geändert werden *after* die Erstinstallation, um die Sicherheit Ihrer Instanz sicherzustellen.
 
-Gehen Sie hierfür wie folgt vor:
-
 >[!NOTE]
 >
 >Siehe [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) für ausführliche Informationen zur Konfiguration der OSGi-Einstellungen.
+
+**So ändern Sie das Administratorkennwort der OSGi-Web-Konsole**:
 
 1. Verwenden der **Instrumente**, **Aktivitäten** öffnen Sie das Menü **Web-Konsole** und navigieren Sie zum **Konfiguration** Abschnitt.
 Beispiel: unter `<server>:<port>/system/console/configMgr`.
@@ -106,77 +106,79 @@ Beispiel: unter `<server>:<port>/system/console/configMgr`.
 
 1. Wählen Sie **Speichern** aus.
 
-### Implementieren von benutzerdefinierten Fehler-Handlern {#implement-custom-error-handler}
+### Benutzerdefinierten Fehler-Handler implementieren {#implement-custom-error-handler}
 
-Adobe empfiehlt die Definition von benutzerdefinierten Fehler-Handler-Seiten, insbesondere für 404- und 500-HTTP-Antwortcodes, um die Offenlegung von Informationen zu verhindern.
+Adobe empfiehlt die Definition benutzerdefinierter Fehler-Handler-Seiten, insbesondere für 404- und 500-HTTP-Antwortcodes, um die Offenlegung von Informationen zu verhindern.
 
 >[!NOTE]
 >
->Weitere Details finden Sie im Knowledgebase-Artikel [Erstellen von benutzerdefinierten Skripten oder Fehler-Handlern](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html).
+>Siehe [Wie kann ich benutzerdefinierte Skripte oder Fehler-Handler erstellen?](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=en) für weitere Details.
 
-### Durchgehen der Dispatcher-Sicherheitscheckliste {#complete-dispatcher-security-checklist}
+### Vollständige Dispatcher-Sicherheitscheckliste {#complete-dispatcher-security-checklist}
 
-Der AEM-Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt dringend, dass Sie die [Dispatcher-Sicherheitscheckliste](https://helpx.adobe.com/de/experience-manager/dispatcher/using/security-checklist.html) durchgehen.
+AEM Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt, die [Dispatcher-Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en).
 
 >[!CAUTION]
 >
->Zur Verwendung des Dispatchers müssen Sie den „.form“-Selektor deaktivieren.
+>Mithilfe des Dispatchers müssen Sie den &quot;.form&quot;-Selektor deaktivieren.
 
 ## Überprüfungsschritte {#verification-steps}
 
-### Konfigurieren von Replikations- und Transportbenutzer {#configure-replication-and-transport-users}
+### Konfigurieren von Replikations- und Transportbenutzern {#configure-replication-and-transport-users}
 
-Bei einer Standardinstallation von AEM wird `admin` als Benutzer für die Transport-Anmeldedaten in den Standard-[Replikationsagenten](/help/sites-deploying/replication.md) angegeben. Der Admin-Benutzer wird auch verwendet, um die Replikation auf dem Autorensystem zu beziehen.
+Bei einer Standardinstallation von AEM wird `admin` als Benutzer für die Transport-Anmeldedaten in den Standard-[Replikationsagenten](/help/sites-deploying/replication.md) angegeben. Außerdem wird der Admin-Benutzer verwendet, um die Replikation auf dem Autorensystem zu beziehen.
 
-Aus Sicherheitsgründen sollte beides unter Berücksichtigung der folgenden beiden Aspekte geändert werden, um den bestimmten vorliegenden Anwendungsfall widerzuspiegeln:
+Aus Sicherheitsgründen sollten beide geändert werden, um dem jeweiligen Anwendungsfall Rechnung zu tragen, wobei die beiden folgenden Aspekte zu berücksichtigen sind:
 
-* Der **Transport-Benutzer** sollte nicht der Admin-Benutzer sein. Richten Sie stattdessen einen Benutzer auf dem Veröffentlichungssystem ein, der nur über Zugriffsrechte für die relevanten Abschnitte des Veröffentlichungssystems verfügt, und verwenden Sie die Anmeldedaten dieses Benutzers für den Transport.
+* Die **Transportnutzer** darf nicht der Administratorbenutzer sein. Richten Sie stattdessen einen Benutzer im Veröffentlichungssystem ein, der nur über Zugriffsrechte auf die relevanten Teile des Veröffentlichungssystems verfügt, und verwenden Sie die Anmeldeinformationen dieses Benutzers für den Transport.
 
      Sie können mit dem gebündelten Benutzer „Replikations-Empfänger“ beginnen und die Zugriffsrechte dieses Benutzenden so konfigurieren, dass sie Ihren Anforderungen entsprechen.
 
-* Der **Replikationsbenutzende** oder die **Agenten-Benutzer-ID** sollte auch nicht der Admin-User sein, sondern eine Benutzerin oder ein Benutzer, die bzw. der nur die Inhalte sehen kann, die repliziert werden sollen. Der Replikationsbenutzende wird auch zum Erfassen von Inhalten verwendet, die auf dem Autorensystem repliziert werden sollen, bevor sie an den Publisher gesendet werden.
+* Die **Replikationsbenutzer** oder **Agenten-Benutzer-ID** darf auch nicht der Admin-Benutzer sein, sondern ein Benutzer, der nur replizierte Inhalte sehen kann. Der Replikationsbenutzende wird auch zum Erfassen von Inhalten verwendet, die auf dem Autorensystem repliziert werden sollen, bevor sie an den Publisher gesendet werden.
 
-### Kontrollieren der Sicherheits-Konsistenzprüfungen auf dem Vorgangs-Dashboard {#check-the-operations-dashboard-security-health-checks}
+### Überprüfen der Sicherheits-Konsistenzprüfungen im Vorgangs-Dashboard {#check-the-operations-dashboard-security-health-checks}
 
-In AEM 6 wird das neue Vorgangs-Dashboard eingeführt, das Systembedienern bei der Behebung von Problemen und der Überwachung des Zustands einer Instanz helfen soll.
+Mit AEM 6 wird das neue Vorgangs-Dashboard eingeführt, das Systembetreibern bei der Fehlerbehebung und der Überwachung des Zustands einer Instanz helfen soll.
 
-Das Dashboard umfasst eine Reihe von Sicherheits-Konsistenzprüfungen. Es empfiehlt sich, den Status aller Sicherheits-Konsistenzprüfungen zu kontrollieren, bevor Sie Ihre Produktionsinstanz in Betrieb nehmen. Weitere Informationen dazu finden Sie in der [Dokumentation zum Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
+Das Dashboard enthält außerdem eine Sammlung von Konsistenzprüfungen. Es wird empfohlen, den Status aller Sicherheits-Konsistenzprüfungen zu überprüfen, bevor Sie mit Ihrer Produktionsinstanz live gehen. Weitere Informationen dazu finden Sie in der [Dokumentation zum Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
 
-### Prüfen, ob Beispielinhalte vorhanden sind {#check-if-example-content-is-present}
+### Überprüfen, ob Beispielinhalt vorhanden ist {#check-if-example-content-is-present}
 
-Alle Beispielinhalte und -benutzer (z. B. das Geometrixx-Projekt und die zugehörigen Komponenten) sollten deinstalliert und vollständig von einem Produktionssystem gelöscht werden, bevor es öffentlich zugänglich gemacht wird.
+Alle Beispielinhalte und -benutzer (z. B. das Geometrixx und seine Komponenten) sollten deinstalliert und vollständig auf einem Produktionssystem gelöscht werden, bevor sie öffentlich zugänglich gemacht werden.
 
 >[!NOTE]
 >
->Die We.Retail-Beispielanwendungen werden entfernt, wenn diese Instanz im [produktionsbereiten Modus](/help/sites-administering/production-ready.md) ausgeführt wird. Wenn dies aus irgendeinem Grund nicht der Fall ist, können Sie den Beispielinhalt deinstallieren, indem Sie zum Package Manager navigieren und dann alle We.Retail-Pakete suchen und deinstallieren. Weitere Informationen finden Sie unter [Arbeiten mit Paketen](package-manager.md).
+>Beispiel `We.Retail` -Anwendungen werden entfernt, wenn diese Instanz in ausgeführt wird [Produktionsbereiter Modus](/help/sites-administering/production-ready.md). Ist dies nicht der Fall, können Sie den Beispielinhalt deinstallieren, indem Sie Package Manager aufrufen und dann nach allen `We.Retail` Packages.
 
-### Prüfen, ob die CRX-Entwicklungsbundles vorhanden sind {#check-if-the-crx-development-bundles-are-present}
+Siehe [Arbeiten mit Paketen](package-manager.md).
 
-Die OSGi-Entwicklungsbundles sollten sowohl auf dem Autoren- als auch auf dem Veröffentlichungs-Produktionssystem deinstalliert werden, bevor sie zugänglich gemacht werden.
+### Überprüfen Sie, ob die CRX-Entwicklungs-Bundles vorhanden sind. {#check-if-the-crx-development-bundles-are-present}
 
-* Unterstützung von Adobe CRXDE (com.adobe.granite.crxde-support)
+Diese Entwicklungs-OSGi-Pakete sollten sowohl auf Autoren- als auch auf Veröffentlichungs-Produktionssystemen deinstalliert werden, bevor sie verfügbar gemacht werden.
+
+* Adobe CRXDE-Unterstützung (com.adobe.granite.crxde-support)
 * Adobe Granite CRX Explorer (com.adobe.granite.crx-explorer)
-* Adobe Granite CRXDE Lite (com.adobe.granite.crxde-lite)
+* Adobe Granite-CRXDE Lite (com.adobe.granite.crxde-lite)
 
-### Prüfen, ob das Sling-Entwicklungsbundle vorhanden ist {#check-if-the-sling-development-bundle-is-present}
+### Überprüfen Sie, ob das Sling-Entwicklungsbundle vorhanden ist. {#check-if-the-sling-development-bundle-is-present}
 
-[AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) stellt das Tool „Apache Sling Tooling Support Install“ (org.apache.sling.tooling.support.install) bereit.
+Die [AEM Developer Tools](/help/sites-developing/aem-eclipse.md) stellen Sie die Installation der Apache Sling Tooling-Unterstützung bereit (org.apache.sling.tooling.support.install).
 
-Dieses OSGi-Bundle sollte sowohl auf dem Autoren- als auch auf dem Veröffentlichungs-Produktionssystem deinstalliert werden, bevor diese zugänglich gemacht werden.
+Dieses OSGi-Bundle sollte sowohl auf Autoren- als auch auf Veröffentlichungs-Produktionssystemen deinstalliert werden, bevor sie verfügbar gemacht werden.
 
-### Schutz vor Cross-Site Request Forgery-Angriffen {#protect-against-cross-site-request-forgery}
+### Protect gegen Cross-Site Request Forgery {#protect-against-cross-site-request-forgery}
 
 #### Das CSRF Protection Framework {#the-csrf-protection-framework}
 
 AEM 6.1 verfügt über einen Mechanismus namens **CSRF Protection Framework**, der vor Cross-Site Request Forgery-Angriffen (Website-übergreifende Anfragenfälschung) schützt. Weitere Informationen zur Verwendungsweise finden Sie in der entsprechenden [Dokumentation](/help/sites-developing/csrf-protection.md).
 
-#### Der Sling Referrer Filter {#the-sling-referrer-filter}
+#### Der Sling Referrer-Filter {#the-sling-referrer-filter}
 
-Zur Behebung bekannter Sicherheitsprobleme hinsichtlich Cross-Site Request Forgery-(CSRF-)Angriffen in CRX WebDAV und Apache Sling müssen Sie Konfigurationen für den Referrer Filter hinzufügen, um diesen verwenden zu können.
+Um bekannte Sicherheitsprobleme mit Cross-Site Request Forgery (CSRF) in CRX WebDAV und Apache Sling zu beheben, fügen Sie Konfigurationen für den Referrer-Filter hinzu, um ihn zu verwenden.
 
-Der Referrer-Filter-Dienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurieren können:
+Der Referrer-Filterdienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurieren können:
 
-* Welche HTTP-Methoden gefiltert werden sollen
+* welche HTTP-Methoden gefiltert werden sollen
 * Ob eine leere Referrer-Kopfzeile zulässig ist
 * Eine Whitelist von Servern, die zusätzlich zum Serverhost zugelassen werden sollen.
 
@@ -193,7 +195,7 @@ So konfigurieren Sie den Referrer-Filterdienst:
 
    `Apache Sling Referrer Filter`
 
-1. Geben Sie im Feld `Allow Hosts` alle Hosts ein, die als Referrer zugelassen werden sollen. Jeder Eintrag muss folgendes Format aufweisen:
+1. Geben Sie im Feld `Allow Hosts` alle Hosts ein, die als Referrer zugelassen werden sollen. Jeder Eintrag muss im Formular enthalten sein.
 
    &lt;Protokoll>://&lt;Server>:&lt;Port>
 
@@ -201,44 +203,44 @@ So konfigurieren Sie den Referrer-Filterdienst:
 
    * `https://allowed.server:80`: Alle Anfragen von diesem Server mit dem angegebenen Port sind zugelassen.
    * Wenn Sie auch HTTPS-Anfragen zulassen wollen, müssen Sie eine zweite Zeile eingeben.
-   * Falls Sie alle Ports dieses Servers zulassen wollen, können Sie als Port-Nummer eine `0` eingeben.
+   * Wenn Sie alle Ports dieses Servers zulassen, können Sie `0` als Portnummer.
 
 1. Aktivieren Sie das Feld `Allow Empty`, wenn Sie leere/fehlende Referrer-Kopfzeilen zulassen möchten.
 
    >[!CAUTION]
    >
-   >Es wird empfohlen, einen Referrer bereitzustellen, wenn Sie Befehlszeilen-Tools wie `cURL` verwenden, anstatt einen leeren Wert zuzulassen, da andernfalls das Risiko besteht, dass Ihr System CSRF-Angriffen ausgesetzt ist.
+   >Adobe empfiehlt, dass Sie einen Referrer bereitstellen, während Sie Befehlszeilen-Tools wie `cURL` anstatt einen leeren Wert zuzulassen, da dies Ihr System CSRF-Angriffen aussetzen könnte.
 
-1. Bearbeiten Sie die Methoden, die dieser Filter für Prüfungen verwenden soll, über das Feld `Filter Methods`.
+1. Bearbeiten Sie die Methoden, die dieser Filter für Prüfungen verwendet, mit dem `Filter Methods` -Feld.
 
 1. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
 ### OSGi-Einstellungen {#osgi-settings}
 
-Einige OSGi-Einstellungen sind standardmäßig festgelegt, um ein einfacheres Debugging der Anwendung zu ermöglichen. Diese müssen in der Veröffentlichungs- und der Autoren-Produktionsinstanz geändert werden, um zu verhindern, dass interne Informationen offengelegt werden.
+Einige OSGi-Einstellungen sind standardmäßig festgelegt, um das Debugging der Anwendung zu erleichtern. Ändern Sie diese Einstellungen in Ihren Veröffentlichungs- und Autorenproduktionsinstanzen, um zu verhindern, dass interne Informationen an die Öffentlichkeit weitergegeben werden.
 
 >[!NOTE]
 >
->Alle nachfolgenden Einstellungen mit Ausnahme des **Day CQ WCM Debug Filters** sind automatisch im [produktionsbereiten Modus](/help/sites-administering/production-ready.md) enthalten. Aus diesem Grund wird empfohlen, alle Einstellungen vor der Bereitstellung der Instanz in einer Produktionsumgebung zu überprüfen.
+>Alle unten aufgeführten Einstellungen mit Ausnahme von **Der Day CQ WCM Debug-Filter** werden automatisch von der [Produktionsbereiter Modus](/help/sites-administering/production-ready.md). Daher empfiehlt Adobe, alle Einstellungen zu überprüfen, bevor Sie Ihre Instanz in einer Produktionsumgebung bereitstellen.
 
-Sie müssen für jeden der folgenden Dienste die angegebenen Einstellungen ändern:
+Für jeden der folgenden Dienste müssen die angegebenen Einstellungen geändert werden:
 
-* [Adobe Granite HTML-Bibliotheksmanager](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
+* [Adobe Granite HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
 
-   * Aktivieren Sie **Minify** (um Neuzeilenzeichen [CRLF] und Leerzeichen zu löschen).
-   * Aktivieren Sie **Gzip** (um Dateien als GZIP zu komprimieren und mit einer Anforderung darauf zuzugreifen).
-   * Deaktivieren Sie **Debug**.
-   * Deaktivieren Sie **Timing**.
+   * enable **Minimieren** (um CRLF- und Leerzeichen zu entfernen).
+   * enable **Gzip** (damit Dateien komprimiert und mit einer Anfrage aufgerufen werden können).
+   * disable **Debuggen**
+   * disable **Zeit**
 
 * [Day CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter):
 
-   * Heben Sie die Auswahl von **Aktivieren** auf.
+   * uncheck **Aktivieren**
 
 * [Day CQ WCM-Filter](/help/sites-deploying/osgi-configuration-settings.md):
 
    * Legen Sie die Option **WCM-Modus** nur auf der Veröffentlichungsinstanz auf „Deaktiviert“ fest.
 
-* [Apache Sling Java Script Handler](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
+* [Apache Sling JavaScript Handler](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-javascript-handler):
 
    * Deaktivieren Sie **die Funktion zum Erzeugen von Debug-Informationen**.
 
@@ -247,18 +249,18 @@ Sie müssen für jeden der folgenden Dienste die angegebenen Einstellungen ände
    * Deaktivieren Sie **Generate Debug Info**.
    * Deaktivieren Sie **Mapped Content**.
 
-Weitere Informationen finden Sie in [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md).
+Siehe [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md).
 
-Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Services. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+Beim Arbeiten mit AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für diese Dienste. see [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md) für weitere Details und empfohlene Vorgehensweisen.
 
 ## Weitere Informationen {#further-readings}
 
-### Verringern von Denial-of-Service-(DoS-)Angriffen {#mitigate-denial-of-service-dos-attacks}
+### Vermeiden von DoS-Angriffen (Denial of Service) {#mitigate-denial-of-service-dos-attacks}
 
-Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computer-Ressource für die vorgesehenen Benutzenden unzugänglich zu machen. Dies geschieht häufig, indem die Ressource überlastet wird, zum Beispiel:
+Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computer-Ressource für die vorgesehenen Benutzenden unzugänglich zu machen. Dieser Angriff erfolgt oft durch Überlastung der Ressource. Beispiel:
 
-* durch eine Flut von Anfragen von einer externen Quelle;
-* durch eine Anforderung von mehr Informationen, als das System erfolgreich bereitstellen kann.
+* Eine Flut von Anforderungen aus einer externen Quelle.
+* Eine Anfrage nach mehr Informationen, als das System erfolgreich bereitstellen kann.
 
    Beispiel: Eine JSON-Darstellung des gesamten Repositorys.
 
@@ -270,54 +272,52 @@ Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computer-Ressource fü
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
 
-   Alle gültigen Varianten (geben z. B. die Antwort `200` zurück und werden per Konfiguration zwischengespeichert) werden vom Dispatcher zwischengespeichert, was möglicherweise zu einem vollen Dateisystem führen kann, sodass kein Dienst für weitere Anfragen verfügbar ist.
+   Alle gültigen Varianten (z. B. `200` Antwort und sind so konfiguriert, dass sie zwischengespeichert werden) vom Dispatcher zwischengespeichert werden, was letztendlich zu einem vollständigen Dateisystem und zu keinem Dienst für weitere Anfragen führt.
 
-Es gibt viele Konfigurationspunkte zum Verhindern solcher Angriffe. In diesem Dokument gehen wir jedoch nur auf die ein, die direkt für AEM relevant sind.
+Es gibt viele Konfigurationsmöglichkeiten, um solche Angriffe zu verhindern, aber nur die Punkte, die sich auf AEM beziehen, werden hier besprochen.
 
-**Konfigurieren von Sling zum Verhindern von DoS-Angriffen**
+**Konfigurieren von Sling zum Verhindern von DoS**
 
-Sling ist *inhaltsorientiert*. Dies bedeutet, dass sich die Verarbeitung auf den Inhalt konzentriert, da jede (HTTP-)Anfrage auf den Inhalt in Form einer JCR-Ressource (eines Repository-Knotens) abgebildet wird:
+Sling ist *content-centric*. Die Verarbeitung konzentriert sich auf den Inhalt, da jede (HTTP-)Anforderung in Form einer JCR-Ressource (eines Repository-Knotens) Inhalten zugeordnet wird:
 
-* Das erste Ziel ist die Ressource (JCR-Knoten), die die Inhalte enthält..
-* Als Zweites wird der Renderer oder das Skript aus den Ressourceneigenschaften ausgelesen – zusammen mit bestimmten Teilen der Anfrage (z. B. Selektoren und/oder die Erweiterung).
+* Das erste Ziel ist die Ressource (JCR-Knoten), die den Inhalt enthält.
+* Zweitens befindet sich der Renderer bzw. das Skript in den Ressourceneigenschaften mit bestimmten Teilen der Anforderung (z. B. Selektoren und/oder die Erweiterung).
 
->[!NOTE]
->
->Dies wird ausführlicher im Abschnitt [Verarbeiten von Sling-Anfragen](/help/sites-developing/the-basics.md#sling-request-processing) beschrieben.
+Siehe [Verarbeitung von Sling-Anfragen](/help/sites-developing/the-basics.md#sling-request-processing) für weitere Informationen.
 
-Durch diesen Ansatz wird Sling zu einem leistungsstarken und sehr flexiblen Tool, aber wie immer ist es die Flexibilität, die sorgfältig verwaltet werden muss.
+Dieser Ansatz macht Sling leistungsstark und flexibel, aber wie immer muss die Flexibilität sorgfältig verwaltet werden.
 
-So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
+Um DoS-Missbrauch zu verhindern, können Sie Folgendes tun:
 
-1. Steuerungen auf Anwendungsebene implementieren. Aufgrund der Anzahl an möglichen Varianten ist eine Standardkonfiguration nicht praktikabel.
+1. Einbinden von Steuerelementen auf Anwendungsebene. Aufgrund der möglichen Anzahl von Varianten ist eine Standardkonfiguration nicht möglich.
 
    In Ihrer Anwendung sollten Sie:
 
    * die Selektoren in der Anwendung steuern, sodass Sie *nur* die erforderlichen expliziten Selektoren verwenden und für alle anderen den Wert `404` zurückgeben.
-   * die Ausgabe einer unbegrenzten Anzahl an Inhaltsknoten vermeiden.
+   * Verhindern der Ausgabe einer unbegrenzten Anzahl von Inhaltsknoten.
 
-1. die Konfiguration der Standard-Renderer überprüfen, die eine Problemquelle darstellen können.
+1. Überprüfen Sie die Konfiguration der Standard-Renderer, was ein Problembereich sein kann.
 
-   * Dies gilt insbesondere für den JSON-Renderer, der sich über mehrere Ebenen der hierarchischen Struktur erstrecken kann.
+   * Insbesondere überträgt der JSON-Renderer die Baumstruktur über mehrere Ebenen.
 
       Beispiel: Die Anfrage
 
       `http://localhost:4502/.json`
 
-      könnte das gesamte Repository in einer JSON-Darstellung ablegen. Dies würde zu erheblichen Serverproblemen führen. Aus diesem Grund beschränkt Sling die Anzahl an maximalen Ergebnissen. Um die Tiefe des JSON-Renderings zu begrenzen, können Sie den Wert für
+      könnte das gesamte Repository in einer JSON-Darstellung ablegen, was zu erheblichen Serverproblemen führen kann. Aus diesem Grund begrenzt Sling die Anzahl der maximalen Ergebnisse. Um die Tiefe des JSON-Renderings zu begrenzen, legen Sie den Wert für Folgendes fest:
 
       **Max. JSON-Ergebnisse** (`json.maximumresults`)
 
-      in der Konfiguration für das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet) festlegen. Wenn dieser Grenzwert überschritten wird, wird das Rendering ausgeblendet. Der Standardwert für Sling innerhalb von AEM ist `1000`.
+      in der Konfiguration für das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet) festlegen. Wenn diese Grenze überschritten wird, wird das Rendering reduziert. Der Standardwert für Sling innerhalb von AEM ist `1000`.
 
-   * Deaktivieren Sie als Präventivmaßnahme die anderen Standard-Renderer (HTML, Nur Text, XML). Konfigurieren Sie dazu ebenfalls das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
+   * Als vorbeugende Maßnahme sollten Sie die anderen Standard-Renderer deaktivieren (HTML, Nur-Text, XML). Auch hier wird die [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet).
    >[!CAUTION]
    >
-   >Deaktivieren Sie nicht den JSON-Renderer. Dieser ist für den normalen Betrieb von AEM erforderlich.
+   >Deaktivieren Sie den JSON-Renderer nicht, da er für den normalen AEM erforderlich ist.
 
 1. Verwenden Sie eine Firewall, um den Zugriff auf Ihre Instanz zu filtern.
 
-   * Eine Firewall auf Betriebssystemebene ist erforderlich, um den Zugriff auf Punkte Ihrer Instanz zu filtern, die ungeschützt möglicherweise zu DoS-Angriffen führen können.
+   * Die Verwendung einer Firewall auf Betriebssystemebene ist erforderlich, um den Zugriff auf Punkte Ihrer Instanz zu filtern, die zu Denial-of-Service-Angriffen führen können, wenn sie nicht geschützt bleiben.
 
 **Abmildern von DoS mithilfe der Formularauswahl**
 
@@ -325,44 +325,44 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 >
 >Diese Abmilderung sollte nur für AEM-Umgebungen durchgeführt werden, die keine Formulare verwenden.
 
-Da AEM keine Standardindizes für `FormChooserServlet` bereitstellt, löst die Verwendung der Formularauswahl in Abfragen einen aufwendigen Repository-Durchlauf aus, der meist die AEM-Instanz stoppt. Formularauswahl-Instanzen können anhand der Zeichenfolge **&amp;ast;.form.&amp;ast;** in Abfragen erkannt werden.
+Da AEM keine nativen Indizes für die `FormChooserServlet`, kann die Verwendung von Formularselektoren in Abfragen einen kostspieligen Repository-Durchlauf Trigger werden, der normalerweise die AEM-Instanz stoppt. Formularauswahl-Instanzen können anhand der Zeichenfolge **&amp;ast;.form.&amp;ast;** in Abfragen erkannt werden.
 
-Führen Sie zum Beheben dieses Problems die folgenden Schritte aus:
+Um dieses Problem zu beheben, können Sie die folgenden Schritte ausführen:
 
 1. Gehen Sie zur Web-Konsole, indem Sie im Browser *https://&lt;Server-Adresse>:&lt;Serverport>/system/console/configMgr* aufrufen.
 
 1. Suchen Sie nach **Day CQ WCM Form Chooser Servlet**.
-1. Klicken Sie auf den Eintrag, deaktivieren Sie im folgenden Fenster die Option **Advanced Search Require** (Erweiterte Suche erforderlich).
+1. Nachdem Sie auf den Eintrag geklickt haben, deaktivieren Sie die **Erweiterte Suche erforderlich** im folgenden Fenster.
 
 1. Klicken Sie auf **Speichern**.
 
 **Abmildern von DoS durch Asset Download Servlet**
 
-Mit dem Standard-Servlet für den Asset-Download können authentifizierte Benutzerinnen und Benutzer beliebig große gleichzeitige Download-Anfragen stellen, um ZIP-Dateien von Assets zu erstellen. Das Erstellen großer ZIP-Archive kann den Server und das Netzwerk überlasten. Um ein mögliches DoS-Risiko (Denial of Service) zu reduzieren, das durch dieses Verhalten verursacht wird, `AssetDownloadServlet`ist die OSGi-Komponente auf der [!DNL Experience Manager]-Veröffentlichungsinstanz standardmäßig deaktiviert. Auf der [!DNL Experience Manager]-Autoreninstanz ist sie standardmäßig aktiviert.
+Das standardmäßige Asset-Download-Servlet ermöglicht es authentifizierten Benutzern, beliebig große, gleichzeitige Download-Anfragen zum Erstellen von ZIP-Dateien von Assets zu stellen. Das Erstellen großer ZIP-Archive kann den Server und das Netzwerk überlasten. Um ein mögliches DoS-Risiko (Denial of Service) zu reduzieren, das durch dieses Verhalten verursacht wird, `AssetDownloadServlet`ist die OSGi-Komponente auf der [!DNL Experience Manager]-Veröffentlichungsinstanz standardmäßig deaktiviert. Auf der [!DNL Experience Manager]-Autoreninstanz ist sie standardmäßig aktiviert.
 
-Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet auf Autoren- und Veröffentlichungsbereitstellungen. Wenn Sie die Asset-Download-Funktion im Rahmen Ihrer Einrichtung aktivieren müssen, finden Sie weitere Informationen in [diesem Artikel](/help/assets/download-assets-from-aem.md). Sie können auch eine maximale Download-Grenze definieren, die Ihre Bereitstellung unterstützen kann.
+Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet in Autoren- und Veröffentlichungsbereitstellungen. Wenn Sie die Asset-Download-Funktion im Rahmen Ihrer Einrichtung aktivieren müssen, finden Sie weitere Informationen in [diesem Artikel](/help/assets/download-assets-from-aem.md). Sie können auch eine maximale Download-Grenze definieren, die Ihre Bereitstellung unterstützen kann.
 
-### Deaktivieren von WebDAV {#disable-webdav}
+### WebDAV deaktivieren {#disable-webdav}
 
-WebDAV sollte sowohl in Autoren- als auch in Veröffentlichungsumgebungen deaktiviert werden. Stoppen Sie dazu die entsprechenden OSGi-Bundles.
+Deaktivieren Sie WebDAV sowohl in der Autoren- als auch in der Veröffentlichungsumgebung, indem Sie die entsprechenden OSGi-Bundles anhalten.
 
-1. Stellen Sie eine Verbindung zur **Felix Management Console** her, die ausgeführt wird unter:
+1. Stellen Sie eine Verbindung zum **Felix Management Console** ausgeführt auf:
 
    `https://<*host*>:<*port*>/system/console`
 
-   Beispiel `http://localhost:4503/system/console/bundles`.
+   Beispiel: `http://localhost:4503/system/console/bundles`.
 
 1. Suchen Sie in der Liste der Bundles nach einem Bundle mit dem folgenden Namen:
 
    `Apache Sling Simple WebDAV Access to repositories (org.apache.sling.jcr.webdav)`
 
-1. Klicken Sie in der Spalte „Aktionen“ auf die Schaltfläche „Stopp“, um dieses Bundle zu stoppen.
+1. Um dieses Bundle zu stoppen, klicken Sie in der Spalte Aktionen auf die Schaltfläche Stoppen .
 
-1. Suchen Sie erneut in der Liste der Bundles nach einem Bundle mit dem folgenden Namen:
+1. Suchen Sie erneut in der Liste der Bundles das Bundle mit dem Namen:
 
    `Apache Sling DavEx Access to repositories (org.apache.sling.jcr.davex)`
 
-1. Klicken Sie auf die Schaltfläche „Stopp“, um dieses Bundle zu stoppen.
+1. Um dieses Bundle zu stoppen, klicken Sie auf die Schaltfläche &quot;Stopp&quot;.
 
    >[!NOTE]
    >
@@ -370,13 +370,13 @@ WebDAV sollte sowohl in Autoren- als auch in Veröffentlichungsumgebungen deakti
 
 ### Sicherstellen, dass keine personenbezogenen Informationen im Home-Pfad von Benutzern offengelegt werden {#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path}
 
-Der Schutz Ihrer Benutzer ist wichtig. Stellen Sie daher sicher, dass Sie keine personenbezogenen Informationen im Home-Pfad von Repository-Benutzern offenlegen.
+Es ist wichtig, Ihre Benutzer zu schützen, indem Sie sicherstellen, dass Sie keine persönlich identifizierbaren Informationen im Home-Pfad der Repository-Benutzer verfügbar machen.
 
-Ab AEM 6.1 ändert sich mit der neuen Implementierung der Schnittstelle `AuthorizableNodeName` die Art, wie Benutzer-ID-Knotennamen (auch als autorisierbare ID-Knotennamen bezeichnet) gespeichert werden. Die neue Schnittstelle legt nicht mehr die Benutzer-ID im Knotennamen offen, sondern generiert stattdessen einen zufälligen Namen.
+Ab AEM 6.1 ändert sich mit der neuen Implementierung der Schnittstelle `AuthorizableNodeName` die Art, wie Benutzer-ID-Knotennamen (auch als autorisierbare ID-Knotennamen bezeichnet) gespeichert werden. Die neue Schnittstelle legt die Benutzer-ID nicht mehr im Knotennamen offen, sondern generiert stattdessen einen zufälligen Namen.
 
-Es ist keine Konfiguration erforderlich, um sie zu aktivieren, da dies nun die Standardvorgehensweise zum Generieren von autorisierbaren IDs in AEM ist.
+Es muss keine Konfiguration vorgenommen werden, um sie zu aktivieren, da sie jetzt die Standardmethode zum Generieren autorisierbarer IDs in AEM ist.
 
-Obwohl dies nicht empfohlen wird, können Sie sie deaktivieren, wenn Sie die alte Implementierung aus Gründen der Abwärtskompatibilität mit vorhandenen Applikationen benötigen. Gehen Sie dazu wie folgt vor:
+Obwohl dies nicht empfohlen wird, können Sie es deaktivieren, falls Sie die alte Implementierung aus Gründen der Abwärtskompatibilität mit Ihren vorhandenen Anwendungen benötigen. Gehen Sie dazu wie folgt vor:
 
 1. Navigieren Sie zur Web-Konsole und entfernen Sie den Eintrag **org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** aus der Eigenschaft **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
 
@@ -384,57 +384,57 @@ Obwohl dies nicht empfohlen wird, können Sie sie deaktivieren, wenn Sie die alt
 
 1. Löschen Sie die OSGi-Konfiguration **Apache Jackrabbit Oak Random Authorizable Node Name** aus der Web-Konsole.
 
-   Um die Suche zu vereinfachen, beachten Sie, dass die PID für diese Konfiguration **org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** lautet.
+   Für eine einfachere Suche lautet die PID für diese Konfiguration: **org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName**.
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie in der Oak-Dokumentation zur [Namenserstellung für autorisierbare Knoten](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
+>Weitere Informationen finden Sie in der Oak-Dokumentation unter [Namenserstellung für autorisierbare Knoten](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
 
 ### Verhindern von Clickjacking {#prevent-clickjacking}
 
-Um Clickjacking zu verhindern, sollten Sie Ihren Webserver so konfigurieren, dass er die HTTP-Kopfzeile `X-FRAME-OPTIONS` bereitstellt, die auf `SAMEORIGIN` festgelegt ist.
+Um Clickjacking zu verhindern, empfiehlt Adobe, dass Sie Ihren Webserver so konfigurieren, dass `X-FRAME-OPTIONS` HTTP-Header auf `SAMEORIGIN`.
 
-Weitere [Informationen zum Thema Clickjacking finden Sie auf der OWASP-Website](https://www.owasp.org/index.php/Clickjacking).
+Weitere Informationen zu Clickjacking finden Sie unter [OWASP-Site](https://www.owasp.org/index.php/Clickjacking).
 
-### Sicherstellen, dass Verschlüsselungsschlüssel bei Bedarf korrekt repliziert werden {#make-sure-you-properly-replicate-encryption-keys-when-needed}
+### Vergewissern Sie sich bei Bedarf, dass Sie Verschlüsselungsschlüssel ordnungsgemäß replizieren. {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
-Bestimmte AEM-Funktionen und Authentisierungsschemata erfordern, dass Sie Ihre Verschlüsselungsschlüssel in allen AEM-Instanzen replizieren.
+Bestimmte AEM Funktionen und Authentifizierungsschemas erfordern, dass Sie Ihre Verschlüsselungsschlüssel über alle AEM Instanzen hinweg replizieren.
 
-Bevor Sie das tun, beachten Sie, dass die Schlüsselreplikation von Version zu Version unterschiedlich sein kann, da die Art der Speicherung von Schlüsseln zwischen der Version 6.3 und älteren Versionen unterschiedlich ist.
+Bevor Sie dies tun, erfolgt die Schlüsselreplikation in verschiedenen Versionen unterschiedlich, da die Art und Weise, wie Schlüssel gespeichert werden, zwischen 6.3 und älteren Versionen unterschiedlich ist.
 
-Weitere Informationen finden Sie im folgenden Abschnitt.
+Weitere Informationen finden Sie unten.
 
-#### Replizieren von Schlüsseln in AEM 6.3 {#replicating-keys-for-aem}
+#### Replizieren von Schlüsseln für AEM 6.3 {#replicating-keys-for-aem}
 
-In älteren Versionen wurden die Replikationsschlüssel im Repository gespeichert, ab AEM-Version 6.3 werden sie jedoch im Dateisystem gespeichert.
+Während in älteren Versionen die Replikationsschlüssel im Repository gespeichert wurden, ab AEM 6.3 werden sie im Dateisystem gespeichert.
 
-Daher müssen Sie zum Replizieren Ihrer Schlüssel auf den Instanzen diese von der Quellinstanz an den Speicherort im Dateisystem der Zielinstanzen kopieren.
+Um Ihre Schlüssel über Instanzen hinweg zu replizieren, kopieren Sie sie daher von der Quellinstanz an den Speicherort der Zielinstanzen im Dateisystem.
 
-Genauer gesagt, müssen Sie Folgendes tun:
+Im Einzelnen müssen Sie Folgendes tun:
 
-1. Greifen Sie auf die AEM-Instanz zu, auf der sich die zu kopierenden Schlüsseldaten befinden. In der Regel handelt es sich dabei um eine Autoreninstanz.
+1. Greifen Sie auf die AEM -Instanz zu - normalerweise eine Autoreninstanz -, die das zu kopierende Schlüsselmaterial enthält.
 1. Suchen Sie im lokalen Dateisystem das Bundle com.adobe.granite.crypto.file. Es kann sich z. B. unter diesem Pfad befinden:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
 
-   Die Datei `bundle.info` in jedem Ordner identifiziert den Bundle-Namen.
+   Die `bundle.info` -Datei in jedem Ordner identifiziert den Bundle-Namen.
 
 1. Navigieren Sie zum Ordner „data“. Beispiel:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-1. Kopieren Sie die HMAC- und die Master-Dateien.
+1. Kopieren Sie die HMAC- und Übergeordneten Dateien.
 1. Navigieren Sie dann zur Zielinstanz, auf der Sie den HMAC-Schlüssel duplizieren möchten, und dann zum Ordner „data“. Beispiel:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
 1. Fügen Sie die beiden zuvor kopierten Dateien ein.
 1. [Aktualisieren Sie das Crypto-Bundle](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle), wenn die Zielinstanz bereits ausgeführt wird.
-1. Wiederholen Sie die vorherigen Schritte für alle Instanzen, auf denen Sie den Schlüssel replizieren möchten.
+1. Wiederholen Sie die obigen Schritte für alle Instanzen, in denen Sie den Schlüssel replizieren möchten.
 
 >[!NOTE]
 >
->Sie können zum älteren Verfahren zum Speichern von Schlüssel (vor der Version 6.3) zurückkehren, indem Sie den folgenden Parameter bei der ersten Installation von AEM hinzufügen:
+>Sie können zur Methode zum Speichern von Schlüsseln vor Version 6.3 zurückkehren, indem Sie den folgenden Parameter bei der ersten Installation von AEM hinzufügen:
 >
 >`-Dcom.adobe.granite.crypto.file.disable=true`
 
@@ -442,17 +442,17 @@ Genauer gesagt, müssen Sie Folgendes tun:
 
 In AEM 6.2 und älteren Versionen werden die Schlüssel im Repository im Knoten `/etc/key` gespeichert.
 
-Für eine sichere Replikation der Schlüssel auf Ihren Instanzen wird empfohlen, nur diesen Knoten zu replizieren. Sie können Knoten in CRXDE Lite selektiv replizieren:
+Die empfohlene Methode zur sicheren Replikation der Schlüssel in allen Ihren Instanzen besteht darin, nur diesen Knoten zu replizieren. Sie können Knoten selektiv über CRXDE Lite replizieren:
 
-1. Öffnen Sie CRXDE Lite unter *https://&lt;Server-Adresse>:4502/crx/de/index.jsp*.
+1. Öffnen von CRXDE Lite über *`https://&lt;serveraddress&gt;:4502/crx/de/index.jsp`*
 1. Wählen Sie den `/etc/key`-Knoten aus.
-1. Wechseln Sie zur Registerkarte **Replikation**.
-1. Klicken Sie auf die Schaltfläche **Replikation**.
+1. Navigieren Sie zu **Replikation** Registerkarte.
+1. Drücken Sie die **Replikation** Schaltfläche.
 
 ### Durchführen eines Penetrationstests {#perform-a-penetration-test}
 
-Adobe empfiehlt dringend, Ihre AEM-Infrastruktur vor dem Einsatz in einer Produktionsumgebung einem Penetrationstest zu unterziehen. 
+Adobe empfiehlt, vor der Produktion einen Penetrationstest für Ihre AEM durchzuführen.
 
 ### Best Practices für die Entwicklung {#development-best-practices}
 
-Es ist wichtig, dass neue Entwicklungen den [Security Best Practices](/help/sites-developing/security.md) entsprechen, um eine dauerhaft sichere AEM-Umgebung zu gewährleisten.
+Es ist von entscheidender Bedeutung, dass die neue Entwicklung dem [Best Practices für die Sicherheit](/help/sites-developing/security.md) , um sicherzustellen, dass Ihre AEM-Umgebung sicher bleibt.
