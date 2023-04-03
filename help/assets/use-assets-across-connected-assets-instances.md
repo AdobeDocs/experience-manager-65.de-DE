@@ -6,10 +6,10 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: cd7800546ec4ebc950c5ebca4d7c80779cb2632c
-workflow-type: ht
-source-wordcount: '3877'
-ht-degree: 100%
+source-git-commit: b10b7d957ef3a28b5eeb05383a7504c6516f7aa7
+workflow-type: tm+mt
+source-wordcount: '3856'
+ht-degree: 99%
 
 ---
 
@@ -250,10 +250,6 @@ Sie können auch die Metadateneigenschaften für ein Asset auf dem Remote-DAM ak
 
 [!DNL Experience Manager] zeigt die Statusanzeige für Assets in `Remote Assets Content Finder` an, um Website-Autoren daran zu hindern, das Asset auf einer [!DNL Sites]-Seite zu verwenden. Wenn Sie ein Asset mit dem Status „Abgelaufen“ auf einer [!DNL Sites]-Seite verwenden, kann das Asset nicht in der [!DNL Experience Manager]-Veröffentlichungsinstanz angezeigt werden.
 
->[!NOTE]
->
->Die Aktualisierungen an Assets im Remote-DAM werden nur dann für die [!DNL Sites]-Implementierung verfügbar gemacht, wenn Remote-DAM- und [!DNL Sites]-Implementierungen in [!DNL Experience Manager] sind.
-
 ## Häufig gestellte Fragen {#frequently-asked-questions}
 
 +++**Sollten Sie Connected Assets konfigurieren, wenn Sie Assets verwenden müssen, die in Ihrer [!DNL Sites]-Bereitstellung verfügbar sind?**
@@ -328,7 +324,7 @@ Sie können der [!DNL Sites]-Implementierung Assets hinzufügen, diese Assets k�
 * [!DNL Experience Manager] ruft die Metadatenschemata nicht ab. Das bedeutet, dass möglicherweise nicht alle abgerufenen Metadaten angezeigt werden. Wenn die Schemata bei der [!DNL Sites]-Bereitstellung separat aktualisiert werden, werden alle Metadateneigenschaften angezeigt.
 * Alle [!DNL Sites]-Autoren erhalten Leseberechtigungen für die abgerufenen Kopien, auch wenn sie keine Zugriffsberechtigungen für die Remote-DAM-Implemetierung haben.
 * Keine API-Unterstützung, um die Integration anzupassen.
-* Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Implementierung verfügbar machen möchten, sollten Sie die Assets migrieren. Weitere Informationen finden Sie im [Handbuch zur Assets-Migration](assets-migration-guide.md).
+* Die Funktion unterstützt die nahtlose Suche und Verwendung von Remote-Assets. Wenn Sie viele Remote-Assets auf einmal für die lokale Implementierung verfügbar machen möchten, sollten Sie die Assets migrieren. Siehe [Handbuch zur Asset-Migration](assets-migration-guide.md).
 * Es ist nicht möglich, ein Remote-Asset als Miniatur in der Benutzeroberfläche der [!UICONTROL Seiteneigenschaften] zu verwenden. Sie können eine Miniatur einer Web-Seite in der Benutzeroberfläche [!UICONTROL Seiteneigenschaften] von [!UICONTROL Miniatur] aus festlegen, indem Sie auf [!UICONTROL Bild auswählen] klicken.
 
 ### Einrichten und Lizenzieren {#setup-licensing}
