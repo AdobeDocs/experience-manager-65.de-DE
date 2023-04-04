@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 exl-id: f2f968b8-b21c-487d-bc0d-ed60903bc4bf
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
+source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
 workflow-type: tm+mt
-source-wordcount: '1198'
+source-wordcount: '1178'
 ht-degree: 38%
 
 ---
@@ -62,7 +62,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, zu bestimmen, welche
   <tr>
    <td><strong>Schritt 0</strong></td>
    <td>Anforderungsfluss analysieren</td>
-   <td><p>Mit der Standard-HTTP-Anforderungsanalyse im Browser können Sie den Anforderungsablauf analysieren. Weitere Informationen zu dieser Analyse in Chrome finden Sie unter:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/understanding-resource-timing"><br /> https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
+   <td><p>Mit der Standard-HTTP-Anforderungsanalyse im Browser können Sie den Anforderungsablauf analysieren. Weitere Informationen zu dieser Analyse in Chrome finden Sie unter:<br /> </p> <p><a href="https://developers.google.com/web/tools/chrome-devtools/profile/network-performance/resource-loading">https://developer.chrome.com/docs/devtools/</a><br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 2</strong></td>
@@ -97,7 +97,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, zu bestimmen, welche
   <tr>
    <td><strong>Schritt 8</strong></td>
    <td>Ist die Langsamkeit bei einer lokalen Instanz reproduzierbar?</td>
-   <td><br /> <p>Stellen Sie die Echtzeitbedingungen der Produktionsinstanzen mithilfe von <a href="/help/sites-developing/tough-day.md">Tough Day</a> nach. Wenn dieses Szenario für den Speicherplatz Ihrer Entwicklung nicht realistisch ist, sollten Sie die Produktionsinstanz (oder eine identische Staging-Instanz) in einem anderen Netzwerkkontext testen.<br /> </p> </td>
+   <td><br /> <p>Verwendung <a href="/help/sites-developing/tough-day.md">Tough Day</a> um "reale"Bedingungen aus den Produktionsinstanzen zu replizieren. Wenn dieses Szenario für den Speicherplatz Ihrer Entwicklung nicht realistisch ist, sollten Sie die Produktionsinstanz (oder eine identische Staging-Instanz) in einem anderen Netzwerkkontext testen.<br /> </p> </td>
   </tr>
   <tr>
    <td><strong>Schritt 9</strong></td>
@@ -212,7 +212,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, zu bestimmen, welche
     <ol>
      <li><a href="/help/sites-deploying/configuring-performance.md#cq-dam-asset-synchronization-service">Synchronisierungsdienst für Assets</a></li>
      <li><a href="/help/sites-deploying/configuring-performance.md#multiple-dam-instances">Mehrere DAM-Instanzen</a></li>
-     <li>Artikel mit Tipps zur Leistungsoptimierung finden Sie <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">hier</a> und <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">hier</a>.<br /> </li>
+     <li>Artikel zu Tipps zur Leistungsoptimierung <a href="https://helpx.adobe.com/customer-care-office-hours/aem/6x-performance-tuning-best-practices.html">here</a>.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -228,7 +228,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, zu bestimmen, welche
   <tr>
    <td><strong>Schritt 31</strong></td>
    <td>Verwenden von CDN vor dem Dispatcher</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn">Verwenden des Dispatchers mit einem CDN </a><br /> </td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#using-dispatcher-with-a-cdn">Verwenden des Dispatchers mit einem CDN </a><br /> </td>
   </tr>
   <tr>
    <td><strong>Schritt 32</strong></td>
@@ -240,7 +240,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, zu bestimmen, welche
    <td>Anforderungen zwischenspeicherbar machen</td>
    <td>
     <ol>
-     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en">Allgemeine Dispatcher-Konfiguration</a></li>
+     <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de">Allgemeine Dispatcher-Konfiguration</a></li>
      <li><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-the-dispatcher-cache-cache">Konfigurieren des Dispatcher-Caches</a></li>
     </ol> <p>Verbesserung des Cache-Verhältnisses; Anforderungen zwischenspeicherbar machen (Best Practices für Dispatcher)</p> <p>Beachten Sie außerdem die folgenden Einstellungen, um Ihre Caching-Konfigurationen zu optimieren.<br /> </p>
     <ol>
@@ -277,7 +277,7 @@ Die Analyse beginnt mit Schritt 0. Das Ziel besteht darin, zu bestimmen, welche
   <tr>
    <td><strong>Schritt 39</strong></td>
    <td>Verwenden Sie Pre-Connect, um den Verbindungsaufwand zu reduzieren.</td>
-   <td>Siehe Gem-Sitzung oben. Zusätzliche Dokumentationsvorverknüpfung auf W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
+   <td>Siehe Gem-Sitzung oben. Außerdem zusätzliche Dokumentation zur Vorverbindung auf W3c:<a href="https://html.spec.whatwg.org/#linkTypes"> https://html.spec.whatwg.org/#linkTypes</a></td>
   </tr>
   <tr>
    <td><strong>Schritte 40 und 41</strong><br /> </td>
