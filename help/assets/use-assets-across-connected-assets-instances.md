@@ -6,10 +6,10 @@ mini-toc-levels: 2
 role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
-source-git-commit: b10b7d957ef3a28b5eeb05383a7504c6516f7aa7
+source-git-commit: 8d4ff8bcb7df4770bc1ed7e7c2cad27befe3d175
 workflow-type: tm+mt
-source-wordcount: '3856'
-ht-degree: 99%
+source-wordcount: '3909'
+ht-degree: 98%
 
 ---
 
@@ -366,5 +366,5 @@ Führen Sie die folgenden Schritte aus, um häufig auftretende Fehler zu beheben
 
    ![Fehler beim Abrufen von Asset-Remote-Referenzen](assets/reference-report-failure.png)
 
-
+* Wenn die Cookies nicht vom Sites-Server an den Assets-Server in Google Chrome gesendet werden, liegt dies daran, dass die Assets-Verbindung nicht über HTTPS hergestellt wird. Wenn Sie HTTPS nicht in der Assets-Instanz verwenden, wird die `SameSite=None` -Kopfzeile kann der Antwort nicht hinzugefügt werden, nachdem Sie sich beim Assets-Server authentifiziert haben.
 
