@@ -2,7 +2,7 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
-source-git-commit: 99a2167fa1eaee8111ad4e3bd7cdd36ad47a9a4c
+source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
 workflow-type: tm+mt
 source-wordcount: '2705'
 ht-degree: 42%
@@ -80,7 +80,7 @@ Siehe [DASH in Ihrem Konto aktivieren](/help/assets/video.md#enable-dash).
 
 ### [!DNL Forms] Wichtigste Funktionen {#forms-features-6516}
 
-* [Headless Adaptive Forms](https://experienceleague.corp.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) Ermöglichen es Entwicklern, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann.
+* [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) Ermöglichen es Entwicklern, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann.
 
 * [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) sind eine Gruppe von 24 Open-Source-BEM-kompatiblen Komponenten, die auf der Grundlage der Adobe Experience Manager WCM-Kernkomponenten erstellt wurden. Diese Komponenten sind Open-Source-Komponenten und bieten Entwicklern die Möglichkeit, diese Komponenten einfach anzupassen und zu erweitern, um sie an die spezifischen Anforderungen ihrer Organisation anzupassen. Jeder, der über vorhandene Fähigkeiten zum Anpassen verfügt [WCM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=en) kann diese Komponenten einfach anpassen und gestalten.
 
@@ -100,7 +100,7 @@ Siehe [DASH in Ihrem Konto aktivieren](/help/assets/video.md#enable-dash).
    * Microsoft® Excel stürzt häufig ab.
    * Beim Öffnen eines gesicherten Dokuments wird die **Document Security-Büro** -Erweiterung nicht als auf einem Computer installiert erkannt wird. Weist den Benutzer an, die Sicherheitserweiterung herunterzuladen und zu installieren. (NPR-39768)
 * Nach einem Benutzerupgrade auf AEM Service Pack 6.5.15.0 funktioniert die PostScript-zu-PDF-Konvertierung nicht. (NPR-39765), (NPR-39764)
-* Wenn Benutzer versuchen, den Bildschirm für die Tour nach dem Öffnen eines adaptiven Formulars zu öffnen, schlägt dies mit einer NullPointer-Ausnahme fehl:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:”` (NPR-39654)
+* Wenn Benutzer versuchen, den Bildschirm für die Tour nach dem Öffnen eines adaptiven Formulars zu öffnen, schlägt dies mit einer NullPointer-Ausnahme fehl:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
 * Wenn der Benutzer unter Windows Schwarze Einstellungen mit hohem Kontrast aktiviert, wird der HTML5-Forms-Inhalt bei der Wiedergabe als HTML-Vorschau im Browser unklar. (NPR-39018)
 
 ## Integrationen {#integrations-6516}
