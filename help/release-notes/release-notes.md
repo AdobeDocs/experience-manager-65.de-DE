@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
-source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
+source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
 workflow-type: tm+mt
-source-wordcount: '2705'
-ht-degree: 42%
+source-wordcount: '2967'
+ht-degree: 39%
 
 ---
 
@@ -88,7 +88,7 @@ Siehe [DASH in Ihrem Konto aktivieren](/help/assets/video.md#enable-dash).
 
 ### [!DNL Forms] Fehlerkorrekturen {#forms-fixes-6516}
 
-* Bei Verwendung des Schritts &quot;Aufgabe zuweisen&quot;zum Senden einer Benachrichtigung für eine zugewiesene Aufgabe werden zwei E-Mails anstelle einer E-Mail an die zugewiesene Person gesendet. (NPR-40078)
+* Bei Verwendung von **Aufgabe zuweisen** zum Senden einer Benachrichtigung für eine zugewiesene Aufgabe werden zwei E-Mails anstelle einer E-Mail an die zugewiesene Person gesendet. (NPR-40078)
 * Wenn ein Benutzer die Tabellenüberschriften ausblendet, wird die zuvor festgelegte Spaltenbreite deaktiviert und alle Spalten behalten dieselbe Breite bei. (NPR-40063)
 * Falls Sie das Standardkennwort des Admin-Benutzers ändern von `admin`, während Sie die `Prepare Adobe Experience Manager Server For DSC deployment` Überprüfen Sie, ob das AEM Forms JEE Service Pack fehlschlägt. (NPR-40062), (NPR-39387)
 * Die OutputService- und AssemblerService-APIs können das PDF-Formular nicht in PDF/A konvertieren. (NPR-39990)
@@ -102,6 +102,18 @@ Siehe [DASH in Ihrem Konto aktivieren](/help/assets/video.md#enable-dash).
 * Nach einem Benutzerupgrade auf AEM Service Pack 6.5.15.0 funktioniert die PostScript-zu-PDF-Konvertierung nicht. (NPR-39765), (NPR-39764)
 * Wenn Benutzer versuchen, den Bildschirm für die Tour nach dem Öffnen eines adaptiven Formulars zu öffnen, schlägt dies mit einer NullPointer-Ausnahme fehl:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
 * Wenn der Benutzer unter Windows Schwarze Einstellungen mit hohem Kontrast aktiviert, wird der HTML5-Forms-Inhalt bei der Wiedergabe als HTML-Vorschau im Browser unklar. (NPR-39018)
+* Wenn der Benutzer versucht, Metadaten hinzuzufügen, wird die Schaltfläche &quot;Speichern&quot;sowohl für die Komponenten &quot;Entwurf&quot;als auch &quot;Übermittlung&quot;nicht mehr funktionsfähig.(CQ-4349601)
+* Nach dem Upgrade auf AEM 6.5.15.0 Service Pack funktioniert die Umleitung relativer URLs im Visual Editor nicht mehr. (NPR-39947)
+* Wenn ein Benutzer auf AEM 6.5.15.0 Service Pack aktualisiert, funktioniert die Weiterleitung nicht mehr mit Internet Explorer. (CQ-4351745)
+* Nach einem Benutzerupgrade auf AEM 6.5.15.0 Service Pack wird das Überschriften-Tag für HTML nicht erkannt. HTML-Code für das Überschriften-Tag wird als Text im HTML-Formular angezeigt. (NPR-39915)
+* Wenn der Benutzer versucht, ein adaptives Formular zu senden, tritt ein Typecast-Fehler auf: `ERROR [10.207.64.167 [1668589530607] POST /app/LS4/content/forms/af/revalidate/jcr:content/guideContainer.af.submit.jsp HTTP/1.1]`( NPR-39809)
+* Wenn ein Benutzer eine Vorschau eines Datensatzdokuments mit der **E-Mail senden** Sendeaktion, wird sie nicht korrekt angezeigt. Die E-Mail-Vorlage wird in die Vorschau des Datensatzdokuments eingebettet. (CQ-4352155)
+* Wenn ein Benutzer ein adaptives Formular im Microsoft Edge-Browser mit dem IE-Kompatibilitätsmodus als HTML in der Vorschau anzeigt, wird es nicht korrekt angezeigt.(CQ-4352216)
+* Das Wörterbuch muss neue Gebietsschemata mit Sonderzeichen wie Unterstrichen oder Bindestrichen enthalten, um die Übersetzung zu ermöglichen. (NPR-40088)
+
+Nach der Installation des AEM 6.5.16.0 Forms Add-On Service Packs hatten Kunden das folgende Problem. Daher wird eine aktualisierte Version des Forms Add-On-Service Packs AEM 6.5.16.0 veröffentlicht:
+* Wenn ein Benutzer versucht, ein adaptives Formular mit einem Benutzer in der Gruppe &quot;forms-users&quot;zu erstellen, ist die Option zur Auswahl einer Vorlage nicht vorhanden und der Fehler ähnlich dem folgenden tritt auf: interner Server-Fehler: java.lang.NullPointerException at com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataSourceServlet.java:76) at java.base/java.util.stream.ReferencePipeline$2.accept(ReferencePipeline.java:176) at java.base/java.util.Iterator.forAnyRemaining(Iterator.java:133) (FORMS-7629)
+* Die Änderungen, die in den Code-Editor-Regeln vorgenommen wurden, werden nicht gespeichert.(FORMS-7532)
 
 ## Integrationen {#integrations-6516}
 
