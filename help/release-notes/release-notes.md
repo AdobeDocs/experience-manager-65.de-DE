@@ -2,9 +2,9 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
-source-git-commit: a2fa4eacf1b39f185fdf46581ca7c5dcc8083969
+source-git-commit: f53dbe7d51ff976f8d79702a86527f984aa00997
 workflow-type: tm+mt
-source-wordcount: '2967'
+source-wordcount: '2983'
 ht-degree: 39%
 
 ---
@@ -111,7 +111,7 @@ Siehe [DASH in Ihrem Konto aktivieren](/help/assets/video.md#enable-dash).
 * Wenn ein Benutzer ein adaptives Formular im Microsoft Edge-Browser mit dem IE-Kompatibilitätsmodus als HTML in der Vorschau anzeigt, wird es nicht korrekt angezeigt.(CQ-4352216)
 * Das Wörterbuch muss neue Gebietsschemata mit Sonderzeichen wie Unterstrichen oder Bindestrichen enthalten, um die Übersetzung zu ermöglichen. (NPR-40088)
 
-Nach der Installation des AEM 6.5.16.0 Forms Add-On Service Packs hatten Kunden das folgende Problem. Daher wird eine aktualisierte Version des Forms Add-On-Service Packs AEM 6.5.16.0 veröffentlicht:
+Nach der Installation des AEM 6.5.16.0 Forms Add-On Service Packs waren die folgenden Probleme für Kunden aufgetreten. Eine aktualisierte Version von [AEM 6.5.16.0 Forms Add-On Service Pack - 6.0.914](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) veröffentlicht. Adobe empfiehlt die Verwendung des aktualisierten Service Packs:
 * Wenn ein Benutzer versucht, ein adaptives Formular mit einem Benutzer in der Gruppe &quot;forms-users&quot;zu erstellen, ist die Option zur Auswahl einer Vorlage nicht vorhanden und der Fehler ähnlich dem folgenden tritt auf: interner Server-Fehler: java.lang.NullPointerException at com.adobe.aem.formsndocuments.servlet.ThemeClientLibraryDataSourceServlet.lambda$getThemeClientLibCategoryList$3(ThemeClientLibraryDataSourceServlet.java:76) at java.base/java.util.stream.ReferencePipeline$2.accept(ReferencePipeline.java:176) at java.base/java.util.Iterator.forAnyRemaining(Iterator.java:133) (FORMS-7629)
 * Die Änderungen, die in den Code-Editor-Regeln vorgenommen wurden, werden nicht gespeichert.(FORMS-7532)
 
