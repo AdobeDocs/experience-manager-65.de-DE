@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '4522'
-ht-degree: 95%
+source-wordcount: '4523'
+ht-degree: 81%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 
 Eine Viewer-Vorgabe ist eine Sammlung aus Einstellungen, die bestimmen, wie Benutzer Rich-Media-Assets auf ihren Computer-Bildschirmen und Mobilgeräten anzeigen. Viewer-Vorgaben können von Adminserstellt werden. Einstellungen sind für eine Vielzahl an Viewer-Konfigurationsoptionen verfügbar. Sie können beispielsweise die Viewer-Anzeigegröße oder das Zoom-Verhalten ändern.
 
-Anweisungen zum Erstellen und Anpassen Ihrer eigenen HTML5-Viewer-Vorgaben finden Sie in der Dokumentation zur *HTML5 Viewer SDK API* von Adobe Dynamic Media. Das SDK ist auf dem im SDK eingebetteten IS-Veröffentlichungsserver verfügbar. Jede Bibliotheksversion verfügt über eine eigene SDK-Dokumentation.
+Anweisungen zum Erstellen und Anpassen Ihrer eigenen HTML5-Viewer-Vorgaben finden Sie in der Dokumentation zur *HTML5 Viewer SDK API* von Adobe Dynamic Media. Das SDK ist auf dem im SDK selbst eingebetteten IS-Veröffentlichungsserver verfügbar. Jede Bibliotheksversion verfügt über eine eigene SDK-Dokumentation.
 
 Pfad: `<scene7_domain>/s7sdk/<library_version>/docs/jsdocs/index.html`.\
 Beispielsweise das 3.10-SDK: [https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)
@@ -90,11 +90,11 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
   </tr>
   <tr>
    <td><strong>Flyout-Zoom</strong></td>
-   <td><p>Zeigt ein zweites Bild des vergrößerten Bereichs neben dem Originalbild an. Dafür gibt es keine Steuerelemente. Benutzer verschieben die Auswahl auf den gewünschten Bereich.</p> <p>Bei der Bestimmung der vollständigen Bandbreitenauslastung für diesen Viewer müssen Sie berücksichtigen, dass sowohl das Hauptbild als auch das Flyout-Bild im Viewer verarbeitet werden. Die Größe des Hauptbildes (Anzeigenbreite und -höhe) und der Zoomfaktor bestimmen die Größe des Flyout-Bildes. Sie müssen ein Gleichgewicht zwischen diesen beiden Werten schaffen, um zu verhindern, dass die Flyout-Datei zu groß wird: Wenn das Hauptbild sehr groß ist, reduzieren Sie den Zoomfaktor-Wert. (Die Flyout-Breite und Flyout-Höhe bestimmen die Größe des Flyout-Fensters, aber nicht die Größe des Flyout-Bildes, das im Viewer verarbeitet wird.)</p> <p>Beispiel: Wenn das Hauptbild eine Größe von 350 x 350 Pixel und einen Zoomfaktor von 3 aufweist, hat das resultierende Flyout-Bild eine Größe von 1050 x 1050 Pixel. Wenn das Hauptbild eine Größe von 300 x 300 Pixel und einen Zoomfaktor von 4 aufweist, hat das Flyout-Bild eine Größe von 1200 x 1200 Pixel. Abhängig von der JPEG-Qualitätseinstellung (empfohlene Einstellungen liegen zwischen 80 und 90) können Sie die Dateigröße erheblich reduzieren. Als Zoomfaktor wird ein Wert zwischen 2,5 und 4 empfohlen, je nach Größe des Hauptbildes.</p> </td>
+   <td><p>Zeigt ein zweites Bild des gezoomten Bereichs neben dem Originalbild an. Es gibt keine Steuerelemente, die verwendet werden können: Benutzer verschieben die Auswahl über den Bereich, der angezeigt werden soll.</p> <p>Beachten Sie bei der Bestimmung der vollständigen Bandbreitennutzung für diesen Viewer, dass sowohl das Hauptbild als auch das Flyout-Bild im Viewer bereitgestellt werden. Die Größe des Hauptbilds (Anzeigebreite und -höhe) und der Zoomfaktor bestimmen die Größe des Flyout-Bildes. Damit die Flyout-Dateigröße nicht zu groß wird, müssen Sie diese beiden Werte berücksichtigen: Wenn Sie eine große Hauptbildgröße haben, senken Sie den Zoomfaktor -Wert. (Die Flyout-Breite und Flyout-Höhe bestimmen die Größe des Flyout-Fensters, jedoch nicht die Größe des Flyout-Bildes, das in den Viewer bereitgestellt wird.)</p> <p>Wenn die Größe des Hauptbilds beispielsweise 350 x 350 Pixel bei einem Zoomfaktor von 3 beträgt, beträgt das resultierende Flyout-Bild 1050 x 1050 Pixel. Wenn die Größe des Hauptbilds 300 x 300 Pixel bei einem Zoomfaktor von 4 beträgt, beträgt das Flyout-Bild 1200 x 1200 Pixel. Je nach JPEG-Qualitätseinstellung (empfohlene Einstellungen sind zwischen 80 und 90) können Sie die Dateigröße erheblich verringern. Je nach Größe des Hauptbilds werden Zoomfaktoren von 2,5 bis 4 empfohlen.</p> </td>
   </tr>
   <tr>
    <td><strong>Inline-Zoom</strong></td>
-   <td>Zeigt ein Bild des hereingezoomten Bereichs im ursprünglichen Viewer an. Es stehen keinerlei Steuerelemente zur Verfügung. Benutzer verschieben vielmehr die Auswahl über den Bereich, der angezeigt werden soll.</td>
+   <td>Zeigt ein Bild des gezoomten Bereichs im ursprünglichen Viewer an. Es stehen keinerlei Steuerelemente zur Verfügung. Benutzer verschieben vielmehr die Auswahl über den Bereich, der angezeigt werden soll.</td>
   </tr>
   <tr>
    <td><strong>Bildset</strong></td>
@@ -114,11 +114,11 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
   </tr>
   <tr>
    <td><strong>Panoramabild</strong></td>
-   <td><p>Die Viewer für Panoramabilder und PanoramicVR geben Kugelpanoramen wieder, um Benutzern ein 360°-Betrachtererlebnis eines Zimmers, einer Immobilie, eines Orts oder einer Landschaft zu bieten.</p> <p>Damit ein hochgeladenes Bild als Kugelpanorama gilt, muss mindestens eine der beiden folgenden Eigenschaften zutreffen:</p>
+   <td><p>Die Viewer für Panoramabilder und PanoramaVR rendern kugelförmige Panoramabilder, um Benutzer in ein 360°-Betrachtungserlebnis eines Raums, einer Eigenschaft, eines Standorts oder einer Landschaft einzutauchen.</p> <p>Damit ein hochgeladenes Bild als Kugelpanorama gilt, muss es entweder eine oder beide der folgenden Eigenschaften aufweisen:</p>
     <ul>
      <li>Ein Seitenverhältnis von 2:1.</li>
      <li>Mit den Keywords <code>equirectangular</code> oder <code>spherical</code> und <code>panorama</code> oder <code>spherical </code> und <code>panoramic</code> als Tags versehen. Weitere Informationen finden Sie unter <a href="/help/sites-authoring/tags.md">Verwenden von Tags</a>.</li>
-    </ul> <p>Die Kriterien für das Seitenverhältnis sowie die Keywords gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente „Panoramamedien“.</p> <p><strong>Wichtig:</strong> Dieser Viewer ist nur im Scene7-Modus von Dynamic Media verfügbar.</p> </td>
+    </ul> <p>Sowohl das Seitenverhältnis als auch die Keywordkriterien gelten für Panorama-Assets für die Asset-Detailseite und die WCM-Komponente "Panoramamedien".</p> <p><strong>Wichtig</strong>: Dieser Viewer ist nur im Modus Dynamic Media - Scene7 verfügbar.</p> </td>
   </tr>
   <tr>
    <td><strong>Smartes Zuschneiden von Videos</strong><br /> </td>
@@ -130,18 +130,18 @@ Administratoren können bei der Erstellung von Viewer-Vorgaben die folgenden Ric
   </tr>
   <tr>
    <td><strong>360-Grad-Video</strong></td>
-   <td><p>Verwenden Sie den 360/VR-Video-Viewer, um ein Panoramavideo für eine interaktive Anzeige eines Raums, einer Eigenschaft, eines Standorts, einer Landschaft oder eines medizinischen Verfahrens zu rendern.</p> <p>Während der Wiedergabe auf einer flachen Anzeige können Benutzerinnen und Benutzer den Anzeigewinkel bestimmen; bei der Wiedergabe auf Mobilgeräten werden in der Regel die integrierten gyroskopischen Funktionen verwendet.</p> <p>Der Viewer bietet native Unterstützung für die Bereitstellung von 360-Grad-Video-Assets. Standardmäßig ist keine weitere Konfiguration für die Anzeige oder die Wiedergabe erforderlich. 360-Grad-Videos werden mit Standardvideoerweiterungen wie .mp4, .mkv und .mov bereitgestellt. Der am häufigsten verwendete Codec ist H.264.</p> <p><strong>Wichtig:</strong> Dieser Viewer ist nur im Scene7-Modus von Dynamic Media verfügbar.</p> </td>
+   <td><p>Verwenden Sie den 360/VR-Video-Viewer, um ein Panoramavideo für eine interaktive Anzeige eines Raums, einer Eigenschaft, eines Standorts, einer Landschaft oder eines medizinischen Verfahrens zu rendern.</p> <p>Während der Wiedergabe auf einer flachen Anzeige können Benutzerinnen und Benutzer den Anzeigewinkel bestimmen; bei der Wiedergabe auf Mobilgeräten werden in der Regel die integrierten gyroskopischen Funktionen verwendet.</p> <p>Der Viewer bietet native Unterstützung für die Bereitstellung von 360-Grad-Video-Assets. Standardmäßig ist keine weitere Konfiguration für die Anzeige oder die Wiedergabe erforderlich. 360-Grad-Videos werden mit Standardvideoerweiterungen wie .mp4, .mkv und .mov bereitgestellt. Der häufigste Codec ist H.264.</p> <p><strong>Wichtig</strong>: Dieser Viewer ist nur im Modus Dynamic Media - Scene7 verfügbar.</p> </td>
   </tr>
   <tr>
    <td><strong>Video</strong></td>
-   <td><p>Wiedergeben von Videos unter Verwendung des progressiven oder adaptiven Bitraten-Streamings. Beim Streaming mit adaptiver Bitrate wird eine automatische Geräte- und Brandbreitenerkennung durchgeführt, um Videos mit der richtigen Qualität und im richtigen Format bereitzustellen.</p> </td>
+   <td><p>Gibt Videos mit progressivem oder adaptivem Bitratenstreaming wieder. Beim adaptiven Bitrate-Streaming wird automatisch eine Geräte- und Bandbreitenerkennung durchgeführt, um das richtige Video in der richtigen Qualität im richtigen Format bereitzustellen.</p> </td>
   </tr>
   <tr>
    <td><strong>Vertikaler Zoom</strong></td>
-   <td><p>Mit dem Viewer für vertikalen Zoom können Sie das Betrachtererlebnis für Produktbilder optimieren, um Ihren Benutzern die bestmögliche Darstellung eines Produktes zu bieten. Die vertikale Positionierung von Farbfeldern:</p>
+   <td><p>Mit dem Viewer für vertikalen Zoom können Sie das Anzeigeerlebnis von Produktbildern maximieren, um Ihren Benutzern die bestmögliche Darstellung eines Produkts zu bieten. Die vertikale Position von Farbfeldern bewirkt Folgendes:</p>
     <ul>
-     <li>Stellt sicher, dass sich Farbfelder „oberhalb der Falte“ befinden.<br/> Bei horizontalen Farbfeldern sind sie je nach Bildschirmgröße des Benutzers auf dem Desktop erst sichtbar, wenn der Benutzer einen Bildlauf auf der Seite nach unten durchführt. Wenn die Farbfelder vertikal im Viewer platziert werden, sind sie unabhängig von der Bildschirmgröße des Benutzers sichtbar.</li>
-     <li>Maximiert die Größe des Hauptbildes.<br /> Bei horizontalen Farbfeldern ist es erforderlich, Platz auf der Seite zu lassen, um sicherzustellen, dass sie sichtbar sind. Diese Positionierung verringerte die mögliche Größe des Hauptbildes. Bei einer vertikalen Farbfeld-Platzierung ist es jedoch nicht notwendig, diesen Platz freizulassen. Somit können Sie die Größe des Hauptbildes maximieren.</li>
+     <li>Stellt sicher, dass sich Farbfelder „oberhalb der Falte“ befinden.<br/> Bei horizontalen Farbfeldern sind sie je nach Bildschirmgröße des Benutzers auf dem Desktop erst sichtbar, wenn der Benutzer einen Bildlauf auf der Seite nach unten durchführt. Durch die vertikale Platzierung der Farbfelder im Viewer wird sichergestellt, dass sie unabhängig von der Bildschirmgröße des Benutzers sichtbar sind.</li>
+     <li>Maximiert die Größe des Hauptbilds.<br /> Bei horizontalen Farbfeldern muss Platz auf der Seite reserviert werden, um sicherzustellen, dass sie sichtbar sind. Durch diese Positionierung wurde die Größe des Hauptbilds verringert. Bei einem vertikalen Farbfeldlayout ist diese Platzierung jedoch nicht erforderlich. Daher können Sie die Größe des Hauptbilds maximieren.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -178,22 +178,22 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>Carousel_Dotted_dark</td>
-   <td>Carousel_Set</td>
+   <td>Karussell_Set</td>
    <td><code>html5_carouselviewer_dotted_dark.css</code></td>
   </tr>
   <tr>
    <td>Carousel_Dotted_light</td>
-   <td>Carousel_Set</td>
+   <td>Karussell_Set</td>
    <td><code>html5_carouselviewer_dotted_light.css</code></td>
   </tr>
   <tr>
    <td>Carousel_Numeric_dark</td>
-   <td>Carousel_Set</td>
+   <td>Karussell_Set</td>
    <td><code>html5_carouselviewer_numeric_dark.css</code></td>
   </tr>
   <tr>
    <td>Carousel_Numeric_light</td>
-   <td>Carousel_Set</td>
+   <td>Karussell_Set</td>
    <td><code>html5_carouselviewer_numeric_light.css</code></td>
   </tr>
   <tr>
@@ -218,12 +218,12 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>InlineMixedMedia_dark</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_inlinemixedmediaviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>InlineMixedMedia_light</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_inlinemixedmediaviewer_light.css</code></td>
   </tr>
   <tr>
@@ -233,22 +233,22 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>MixedMedia_dark</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_mixedmediaviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>MixedMedia_light</td>
-   <td>Mixed_Media</td>
+   <td>Gemischte Medien</td>
    <td><code>html5_mixedmediaviewer_light.css</code></td>
   </tr>
   <tr>
    <td>PanoramicImage</td>
-   <td>Panoramic_Image</td>
+   <td>panoramic_image</td>
    <td><code>html5_panoramicimage.css</code></td>
   </tr>
   <tr>
    <td>PanoramicImageVR</td>
-   <td>Panoramic_Image</td>
+   <td>panoramic_image</td>
    <td><code>html5_panoramicimage.css</code></td>
   </tr>
   <tr>
@@ -278,31 +278,31 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>SpinSet_dark</td>
-   <td>Spin_Set</td>
+   <td>Rotationsset</td>
    <td><code>html5_spinviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>SpinSet_light</td>
-   <td>Spin_Set</td>
+   <td>Rotationsset</td>
    <td><code>html5_spinviewer_light.css</code></td>
   </tr>
   <tr>
-   <td><p>Video</p> <p>(mit Unterstützung für Untertitel)</p> </td>
+   <td><p>Video</p> <p>(Unterstützung für Untertitel)</p> </td>
    <td>Video</td>
    <td><code>html5_videoviewer.css</code></td>
   </tr>
   <tr>
-   <td><p>Video360_social</p> <p>(Enthält grundlegende Steuerelemente für die Videowiedergabe, das Video-Rendering erfolgt im Stereomodus, und die manuelle Blickwinkelsteuerung ist deaktiviert. Jedoch sind die gyroskopischen Funktionen aktiviert und die Social-Media-Eigenschaften deaktiviert)</p> </td>
+   <td><p>Video360_social</p> <p>(Enthält grundlegende Steuerelemente für die Videowiedergabe, das Video-Rendering erfolgt im Stereomodus, die manuelle Point-of-View-Steuerung ist deaktiviert, aber die gyroskopische Steuerung ist aktiviert und keine Social-Media-Funktionen)</p> </td>
    <td>Video_360</td>
    <td><code>html5_video360viewersocial.css</code></td>
   </tr>
   <tr>
-   <td><p>Video360VR</p> <p>(Für Endbenutzer, die Virtual-Reality-Brillen verwenden. Enthält grundlegende Steuerelemente für die Videowiedergabe und Social-Media-Eigenschaften)</p> </td>
+   <td><p>Video360VR</p> <p>(Für Endbenutzer konzipiert, die Virtual-Reality-Brillen verwenden. Enthält grundlegende Steuerelemente für die Videowiedergabe und Social-Media-Eigenschaften)</p> </td>
    <td>Video_360</td>
    <td><code>html5_video360viewer.css</code></td>
   </tr>
   <tr>
-   <td><p>Video_social</p> <p>(mit Unterstützung für Untertitel und soziale Medien)</p> </td>
+   <td><p>Video_social</p> <p>(einschließlich Unterstützung für Untertitel und soziale Medien)</p> </td>
    <td>Video</td>
    <td><code>html5_videoviewersocial.css</code></td>
   </tr>
@@ -318,12 +318,12 @@ Weitere Informationen finden Sie in den Viewer-Versionshinweisen im Inhaltsverze
   </tr>
   <tr>
    <td>ZoomVertical_dark<br /> </td>
-   <td>Vertical_Zoom</td>
+   <td>Vertikaler_Zoom</td>
    <td><code>html5_zoomverticalviewer_dark.css</code></td>
   </tr>
   <tr>
    <td>ZoomVertical_light</td>
-   <td>Vertical_Zoom</td>
+   <td>Vertikaler_Zoom</td>
    <td><code>html5_zoomverticalviewer_light.css</code></td>
   </tr>
  </tbody>
@@ -415,7 +415,7 @@ Wenn Sie eine Viewer-Vorgabe erstellen möchten, wird nach deren Speicherung der
 
 Bestimmte Viewer-Vorgaben weisen exklusive Einstellungen auf, die die Nutzung und das Gesamtverhalten des Viewers beeinflussen können. Je nach der von Ihnen erstellten Viewer-Vorgabe sollten Sie diese besonderen Hinweise berücksichtigen.
 
-Siehe [Besondere Hinweise zum Erstellen von Vorgaben für interaktive Viewer](#special-considerations-for-creating-an-interactive-viewer-preset).
+Siehe [Besondere Hinweise zum Erstellen einer Viewer-Vorgabe für interaktive Videos](#special-considerations-for-creating-an-interactive-viewer-preset).
 
 Siehe [Besondere Hinweise zum Erstellen von Viewer-Vorgaben für Karussellbanner](#special-considerations-for-creating-a-carousel-banner-viewer-preset).
 
@@ -463,7 +463,7 @@ Beispiel: für die *VideoPlayer* Typ, unter **[!UICONTROL Modifikatoren]** > **[
 
    * **[!UICONTROL dash]** - Video-Stream nur als Bindestrich. Auf Safari-/iOS-Geräten müssen Sie jedoch **[!UICONTROL hls]** als Typ, stattdessen angeben.
    * **[!UICONTROL hls]** - Video-Stream nur als &quot;hls&quot;.
-   * **[!UICONTROL auto]** - Best Practice. Die Erstellung von DASH- und HLS-Streams ist speicheroptimiert. Daher empfiehlt Adobe, immer **[!UICONTROL auto]** als Wiedergabetyp. Videos streamen als Bindestrich, Halb oder Progressiv, wie in der folgenden Abbildung dargestellt:
+   * **[!UICONTROL auto]** - Best Practice. Die Erstellung von DASH- und HLS-Streams ist speicheroptimiert. Daher empfiehlt Adobe, immer **[!UICONTROL auto]** als Wiedergabetyp. Videos werden als Bindestrich, Halb oder Progressiv gestreamt, wie in der folgenden Wiedergabesequenz:
       * Wenn der Browser DASH unterstützt, wird zuerst DASH-Streaming verwendet.
       * Wenn der Browser DASH nicht unterstützt, wird HLS-Streaming verwendet (zweite).
       * Wenn der Browser weder DASH noch HLS unterstützt, wird schließlich die progressive Wiedergabe verwendet.
@@ -558,7 +558,7 @@ Beim Erstellen von Viewer-Vorgaben für Karussellbanner kann der Stil von Hotspo
 
 ## Aktivieren oder Deaktivieren von Viewer-Vorgaben {#activating-or-deactivating-viewer-presets}
 
-Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon ab, welche Vorgaben im Autorenmodus aktiviert wurden. Nach dem Erstellen ist eine Viewer-Vorgabe standardmäßig auf „Ein“ eingestellt. Wenn Sie die Vorgabe deaktivieren möchten, wird sie nicht im Autorenmodus angezeigt. Wenn die Vorgabe veröffentlicht wird, wird sie immer veröffentlicht, unabhängig davon, ob sie aktiviert oder deaktiviert ist. Ggf. müssen Sie Viewer-Vorgaben deaktivieren, wenn die Liste zu umfangreich wird oder wenn eine Viewer-Vorgabe nicht zur Verfügung gestellt werden soll.
+Welche Viewer-Vorgaben in der Benutzeroberfläche verfügbar sind, hängt davon ab, welche im Autorenmodus aktiv sind. Nach dem Erstellen ist eine Viewer-Vorgabe standardmäßig auf „Ein“ eingestellt. Wenn Sie die Vorgabe deaktivieren möchten, wird sie nicht im Autorenmodus angezeigt. Wenn die Vorgabe veröffentlicht wird, wird sie immer veröffentlicht, unabhängig davon, ob sie aktiviert oder deaktiviert ist. Ggf. müssen Sie Viewer-Vorgaben deaktivieren, wenn die Liste zu umfangreich wird oder wenn eine Viewer-Vorgabe nicht zur Verfügung gestellt werden soll.
 
 **So aktivieren oder deaktivieren Sie Viewer-Vorgaben:**
 
@@ -575,7 +575,7 @@ Um jedoch ein Asset mit einer Viewer-Vorgabe *bereitzustellen*, muss die Viewer-
 
 Siehe [Aktivieren oder Deaktivieren von Viewer-Vorgaben](#activating-or-deactivating-viewer-presets).
 
-Siehe auch [Anzeigen von Assets in einer Vorschau](/help/assets/previewing-assets.md).
+Siehe auch [Asset-Vorschau](/help/assets/previewing-assets.md).
 
 **So veröffentlichen Sie Viewer-Vorgaben:**
 

@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 5ac1b0a343c3742f27fecbfb0de577d65c2607d0
+source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
 workflow-type: tm+mt
-source-wordcount: '8091'
+source-wordcount: '8098'
 ht-degree: 71%
 
 ---
@@ -445,7 +445,7 @@ Zu den wichtigsten Vorteilen der Aktivierung von DASH in Ihrem Konto zählen die
 
    >[!IMPORTANT]
    >
-   >Die Aktivierung von DASH in Ihrem Konto ist derzeit nur in Nordamerika verfügbar.
+   >Die Aktivierung von DASH in Ihrem Konto ist derzeit nur in Asien-Pazifik und Nordamerika verfügbar. in Kürze in Europa, im Nahen Osten und in Afrika vorkommen.
 
 Die Aktivierung von DASH in Ihrem Konto erfordert zwei Schritte:
 
@@ -476,7 +476,7 @@ Die Aktivierung von DASH in Ihrem Konto erfordert zwei Schritte:
 >
 >Videoberichte sind nur verfügbar, wenn Sie Dynamic Media im Hybridmodus ausführen.
 
-Videoberichte enthalten mehrere aggregierte Metriken für einen angegebenen Zeitaum, anhand derer Sie überwachen können, ob veröffentlichte individuelle und aggregierte Videos die erwartete Leistung zeigen. Die folgenden Top-Metrikdaten werden für alle veröffentlichten Videos auf der gesamten Website aggregiert:
+Videoberichte zeigen mehrere aggregierte Metriken über einen bestimmten Zeitraum an, damit Sie überwachen können, dass *veröffentlicht* einzelne und aggregierte Videos funktionieren erwartungsgemäß. Die folgenden Top-Metrikdaten werden für alle veröffentlichten Videos auf der gesamten Website aggregiert:
 
 * Videostarts
 * Abschlussrate
