@@ -1,7 +1,7 @@
 ---
 title: Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5
 seo-title: Custom User Group Mapping in AEM 6.5
-description: Erfahren Sie, wie benutzerdefinierte Benutzergruppen in AEM zugeordnet werden.
+description: Erfahren Sie, wie die Zuordnung benutzerspezifischer Benutzergruppen in AEM funktioniert.
 seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
@@ -12,16 +12,16 @@ discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
-workflow-type: ht
-source-wordcount: '489'
-ht-degree: 100%
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+workflow-type: tm+mt
+source-wordcount: '478'
+ht-degree: 24%
 
 ---
 
 # Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5 {#custom-user-group-mapping-in-aem}
 
-## Vergleich von JCR-Inhalt mit CUG-Bezug {#comparison-of-jcr-content-related-to-cug}
+## Vergleich von JCR-Inhalten im Zusammenhang mit CUG (benutzerdefinierte Benutzergruppe) {#comparison-of-jcr-content-related-to-cug}
 
 <table>
  <tbody>
@@ -31,24 +31,24 @@ ht-degree: 100%
    <td><strong>Kommentare</strong></td>
   </tr>
   <tr>
-   <td><p>Eigenschaft: cq:cugEnabled</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
+   <td><p>Eigenschaft: cq:cugEnabled</p> <p>Deklarierender Knotentyp: N/A, Resteigenschaft</p> </td>
    <td><p>Autorisierung:</p> <p>Knoten: rep:cugPolicy des Knotentyps rep:CugPolicy</p> <p>Deklarierender Knotentyp: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentifizierung:</p> <p>Mixin-Typ: granite:AuthenticationRequired</p> </td>
-   <td><p>Um den Lesezugriff einzuschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur für die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:Cugpolicy und Typ rep:Cugpolicy sind geschützt und können nicht mit normalen JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen JCR-Zugangssteuerungsverwaltung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungspflicht auf einem Knoten durchzusetzen, genügt es, den Mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unterhalb der konfigurierten unterstützten Pfade berücksichtigt.</p> </td>
+   <td><p>Um den Lesezugriff zu beschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur auf die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:cugPolicy und Typ rep:CugPolicy sind geschützt und können nicht mit regulären JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen die Verwaltung der JCR-Zugriffssteuerung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungspflicht für einen Knoten zu erzwingen, reicht es aus, den Mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unterhalb der konfigurierten unterstützten Pfade berücksichtigt.</p> </td>
   </tr>
   <tr>
-   <td><p>Eigenschaft: cq:cugPrincipals</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
+   <td><p>Eigenschaft: cq:cugPrincipals</p> <p>Deklarierender Knotentyp: NA, Resteigentum</p> </td>
    <td><p>Eigenschaft: rep:principalNames</p> <p>Deklarierender Knotentyp: rep:CugPolicy</p> </td>
-   <td><p>Die Eigenschaft, die die Namen der Prinzipale enthält, die den Inhalt unterhalb der eingeschränkten CUG lesen dürfen, ist geschützt und kann nicht mit normalen JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen JCR-Zugangssteuerungsverwaltung.</p> <p>Weitere Informationen zur Implementierung finden Sie auf <a href="https://svn.apache.org/repos/asf/jackrabbit/trunk/jackrabbitapi/src/main/java/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.java">dieser Seite</a>.</p> </td>
+   <td><p>Die -Eigenschaft, die die Namen der Prinzipale enthält, die den Inhalt unter der eingeschränkten CUG lesen dürfen, ist geschützt und kann nicht mit regulären JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen die Verwaltung der JCR-Zugriffssteuerung.</p> <p>Siehe <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">diese Seite</a> für weitere Details zur Implementierung.</p> </td>
   </tr>
   <tr>
-   <td><p>Eigenschaft: cq:cugLoginPage</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
+   <td><p>Eigenschaft: cq:cugLoginPage</p> <p>Deklarierender Knotentyp: NA, Resteigentum</p> </td>
    <td><p>Eigenschaft: granite:loginPath (optional)</p> <p>Deklarierender Knotentyp: granite:AuthenticationRequired</p> </td>
    <td><p>Ein JCR-Knoten, bei dem der Mixin-Typ granite:AuthenticationRequired definiert ist, kann optional einen alternativen Anmeldepfad definieren.</p> <p>HINWEIS: Wird nur unter den konfigurierten unterstützten Pfaden berücksichtigt.</p> </td>
   </tr>
   <tr>
-   <td><p>Eigenschaft: cq:cugRealm</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
+   <td><p>Eigenschaft: cq:cugRealm</p> <p>Deklarierender Knotentyp: NA, Resteigentum</p> </td>
    <td>nicht vorhanden</td>
-   <td>Wird bei der neuen Implementierung nicht mehr unterstützt.</td>
+   <td>Wird von der neuen Implementierung nicht mehr unterstützt.</td>
   </tr>
  </tbody>
 </table>
@@ -57,26 +57,26 @@ ht-degree: 100%
 
 **Ältere AEM-Versionen**
 
-Bezeichnung: Adobe Granite Closed User Group (CUG) Support
+Titel: Adobe Granite Closed User Group (CUG)-Unterstützung
 
 Name: com.day.cq.auth.impl.CugSupportImpl
 
 **AEM 6.5**
 
-* Bezeichnung: Apache Jackrabbit Oak CUG Configuration
+* Titel: Apache Jackrabbit Oak CUG-Konfiguration
 
    Name: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
 
    ConfigurationPolicy = ERFORDERLICH
 
-* Bezeichnung: Apache Jackrabbit Oak CUG Exclude List
+* Titel: Apache Jackrabbit Oak CUG Exclude List
 
    Name: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl
 
    ConfigurationPolicy = ERFORDERLICH
 
 * Name: com.adobe.granite.auth.requirement.impl.RequirementService
-* Bezeichnung: Adobe Granite Authentication Requirement and Login Path Handler
+* Titel: Adobe Granite-Authentifizierungspflicht und Anmeldungspfad-Handler
 
    Name: com.adobe.granite.auth.requirement.impl.DefaultRequirementHandler
 
@@ -89,16 +89,16 @@ Dienst zum Konfigurieren der Ausschlussliste der Prinzipale, die durch die CUG-A
 
    >[!NOTE]
    > 
-   >Wenn die Variable `CugExcludeImpl` nicht konfiguriert ist, wird die `CugConfiguration` auf den Standardwert zurückgesetzt.
+   >Wenn die Variable `CugExcludeImpl` nicht konfiguriert ist, wird die `CugConfiguration` wird auf den Standardwert zurückgesetzt.
 
-   Es ist möglich, bei besonderen Anforderungen eine benutzerdefinierte CugExclude-Implementierung zu verbinden.
+   Es ist möglich, eine benutzerdefinierte CugExclude-Implementierung zu verwenden, wenn besondere Anforderungen auftreten.
 
-* OSGi-Komponente, die den LoginPathProvider implementiert, der einen übereinstimmenden Anmeldepfad zum LoginSelectorHandler bereitstellt. Verfügt über einen obligatorischen Verweis auf einen RequirementHandler. Dieser wird dazu verwendet, den Beobachter zu registrieren, der auf geänderte Authentifizierungsanforderungen wartet, die im Inhalt durch den Mixin-Typ granite:AuthenticationRequired gespeichert sind.
+* OSGi-Komponente zur Implementierung von LoginPathProvider , die einen übereinstimmenden Anmeldepfad für den LoginSelectorHandler bereitstellt. Sie enthält einen obligatorischen Verweis auf einen RequirementHandler, der zur Registrierung des Beobachters verwendet wird, der mithilfe des Mixin-Typs granite:AuthenticationRequired die geänderten Authentifizierungsanforderungen überwacht, die im Inhalt gespeichert sind.
 * OSGi-Komponente, die den RequirementHandler implementiert, der den SlingAuthenticator über Änderungen an Authentifizierungspflichten benachrichtigt.
 
-   Da die Konfigurationsrichtlinie für diese Komponente REQUIRED (erforderlich) lautet, wird sie nur aktiviert, wenn ein Satz unterstützter Pfade angegeben wird.
+   Da die Konfigurationsrichtlinie für diese Komponente ERFORDERLICH ist, wird sie nur aktiviert, wenn eine Reihe unterstützter Pfade angegeben ist.
 
-   Durch Aktivierung des Dienstes wird der RequirementService gestartet.
+   Durch die Aktivierung des Dienstes wird der RequirementService gestartet.
 
 <!-- nested tables not supported - text above is the table>
 <table>

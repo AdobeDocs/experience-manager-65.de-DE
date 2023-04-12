@@ -4,9 +4,9 @@ description: Eine Liste der unterstützten Client- und Serverplattformen für Ad
 content-type: reference
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '3499'
+source-wordcount: '3498'
 ht-degree: 32%
 
 ---
@@ -214,7 +214,7 @@ Für Empfehlungen zur Bereitstellung von AEM auf Azure oder AWS außerhalb von A
 
 ### Dispatcher-Plattformen (Webserver) {#dispatcher-platforms-web-servers}
 
-Beim Dispatcher handelt es sich um eine Zwischenspeicherungs- und Lastenausgleichskomponente. [Laden Sie die neueste Dispatcher-Version herunter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Für Experience Manager 6.5 ist die Dispatcher-Version 4.3.2 oder höher erforderlich.
+Der Dispatcher ist die Komponente zum Zwischenspeichern und Lastenausgleich. [Laden Sie die neueste Dispatcher-Version herunter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/release-notes.html?lang=en). Für Experience Manager 6.5 ist die Dispatcher-Version 4.3.2 oder höher erforderlich.
 
 Die folgenden Webserver werden für die Verwendung mit Dispatcher Version 4.3.2 unterstützt:
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 55f6aab3e41159735e332b2740e3a21c563c1157
+source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
 workflow-type: tm+mt
-source-wordcount: '1950'
+source-wordcount: '1949'
 ht-degree: 39%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 39%
 
 OSGi &quot;*stellt die standardisierten Grundbausteine bereit, mit denen Anwendungen aus kleinen, wiederverwendbaren und kollaborativen Komponenten erstellt werden können. Diese Komponenten können zu einem Programm zusammengefügt und bereitgestellt werden*&quot;.
 
-Dies ermöglicht eine einfache Verwaltung von Bundles, da diese einzeln angehalten, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://www.osgi.org/Specifications/HomePage)) ist in einem der Bundles enthalten.
+Dies ermöglicht eine einfache Verwaltung von Bundles, da diese einzeln angehalten, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://docs.osgi.org/specification/)) ist in einem der Bundles enthalten.
 
 Sie können die Konfigurationseinstellungen für solche Bundles wie folgt verwalten:
 
