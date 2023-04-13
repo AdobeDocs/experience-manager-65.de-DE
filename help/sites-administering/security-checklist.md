@@ -12,10 +12,10 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 70c2d7c910f61169869aab9fdcbff4c4564ea9bd
+source-git-commit: e44480535ea7058dc41fc747351446b670d03b7f
 workflow-type: tm+mt
-source-wordcount: '2818'
-ht-degree: 32%
+source-wordcount: '2986'
+ht-degree: 30%
 
 ---
 
@@ -389,6 +389,14 @@ Obwohl dies nicht empfohlen wird, können Sie es deaktivieren, falls Sie die alt
 >[!NOTE]
 >
 >Weitere Informationen finden Sie in der Oak-Dokumentation unter [Namenserstellung für autorisierbare Knoten](https://jackrabbit.apache.org/oak/docs/security/user/authorizablenodename.html).
+
+**Anonymes Berechtigungs-Härtungspaket**
+
+Standardmäßig speichert AEM Systemmetadaten wie `jcr:createdBy` oder `jcr:lastModifiedBy` als Knoteneigenschaften neben regulärem Inhalt im Repository. Abhängig von der Konfiguration und der Einrichtung der Zugriffskontrolle kann dies in einigen Fällen zur Anzeige persönlich identifizierbarer Informationen (PII) führen, z. B. wenn solche Knoten als rohe JSON- oder XML-Dateien gerendert werden.
+
+Wie alle Repository-Daten werden diese Eigenschaften durch den Oak-Autorisierungsstapel vermittelt. Der Zugang zu ihnen sollte gemäß dem Grundsatz des geringsten Vertrauens eingeschränkt werden.
+
+Um dies zu unterstützen, bietet Adobe ein Berechtigungs-Härtungspaket als Grundlage für die Erstellung durch Kunden. Es funktioniert durch die Installation eines Zugriffssteuerungseintrags &quot;Verweigern&quot;im Repository-Stammverzeichnis, wodurch der anonyme Zugriff auf häufig verwendete Systemeigenschaften eingeschränkt wird. Das Paket kann heruntergeladen werden [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) und kann in allen unterstützten Versionen von AEM installiert werden. Weitere Informationen finden Sie in den Versionshinweisen .
 
 ### Verhindern von Clickjacking {#prevent-clickjacking}
 
