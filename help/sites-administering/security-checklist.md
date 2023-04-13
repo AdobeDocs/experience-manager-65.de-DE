@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: f23adcf200b625e2ab2a766460c41fd7e38fae83
+source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
 workflow-type: tm+mt
-source-wordcount: '2986'
+source-wordcount: '3025'
 ht-degree: 30%
 
 ---
@@ -396,7 +396,17 @@ Standardmäßig speichert AEM Systemmetadaten wie `jcr:createdBy` oder `jcr:last
 
 Wie alle Repository-Daten werden diese Eigenschaften durch den Oak-Autorisierungsstapel vermittelt. Der Zugang zu ihnen sollte gemäß dem Grundsatz des geringsten Vertrauens eingeschränkt werden.
 
-Um dies zu unterstützen, bietet Adobe ein Berechtigungs-Härtungspaket als Grundlage für die Erstellung durch Kunden. Es funktioniert durch die Installation eines Zugriffssteuerungseintrags &quot;Verweigern&quot;im Repository-Stammverzeichnis, wodurch der anonyme Zugriff auf häufig verwendete Systemeigenschaften eingeschränkt wird. Das Paket kann heruntergeladen werden [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) und kann in allen unterstützten Versionen von AEM installiert werden. Weitere Informationen finden Sie in den Versionshinweisen .
+Um dies zu unterstützen, bietet Adobe ein Berechtigungs-Härtungspaket als Grundlage für die Erstellung durch Kunden. Es funktioniert durch die Installation eines Zugriffssteuerungseintrags &quot;Verweigern&quot;im Repository-Stammverzeichnis, wodurch der anonyme Zugriff auf häufig verwendete Systemeigenschaften eingeschränkt wird. Das Paket kann heruntergeladen werden [here](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/helper/anonymous-permissions-pkg-0.1.2.zip) und kann in allen unterstützten Versionen von AEM installiert werden.
+
+Um die Änderungen zu veranschaulichen, können wir die Knoteneigenschaften vergleichen, die vor der Installation des Pakets anonym angezeigt werden können:
+
+![Vor der Installation des Pakets](/help/sites-administering/assets/before_resized.png)
+
+mit den Optionen, die nach der Installation des Pakets angezeigt werden können, wobei `jcr:createdBy` und `jcr:lastModifiedBy` nicht sichtbar sind:
+
+![Nach der Package-Installation](/help/sites-administering/assets/after_resized.png)
+
+Weitere Informationen finden Sie in den Versionshinweisen zu Paketen.
 
 ### Verhindern von Clickjacking {#prevent-clickjacking}
 
