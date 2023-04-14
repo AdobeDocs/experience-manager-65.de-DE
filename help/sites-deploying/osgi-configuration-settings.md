@@ -12,10 +12,10 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
 workflow-type: tm+mt
-source-wordcount: '3431'
-ht-degree: 47%
+source-wordcount: '3430'
+ht-degree: 46%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 47%
 
 OSGi &quot;*stellt die standardisierten Grundbausteine bereit, mit denen Anwendungen aus kleinen, wiederverwendbaren und kollaborativen Komponenten erstellt werden können. Diese Komponenten können zu einem Programm zusammengefügt und bereitgestellt werden*&quot;.
 
-Diese Funktion ermöglicht die einfache Verwaltung von Bundles, da diese einzeln angehalten, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://www.osgi.org/Specifications/HomePage)) ist in einem der Bundles enthalten. Beim Arbeiten mit AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Bundles. see [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md) für weitere Details und empfohlene Vorgehensweisen.
+Diese Funktion ermöglicht die einfache Verwaltung von Bundles, da diese einzeln angehalten, installiert und gestartet werden können. Die gegenseitigen Abhängigkeiten werden automatisch verwaltet. Jede OSGi-Komponente (siehe [OSGi-Spezifikation](https://docs.osgi.org/specification/)) ist in einem der Bundles enthalten. Beim Arbeiten mit AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Bundles. see [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md) für weitere Details und empfohlene Vorgehensweisen.
 
 Die folgenden OSGi-Konfigurationseinstellungen (aufgeführt gemäß Bundle) sind für die Projektimplementierung relevant. Nicht alle aufgeführten Einstellungen müssen angepasst werden. Einige werden nur zum besseren Verständnis von AEM erwähnt.
 
