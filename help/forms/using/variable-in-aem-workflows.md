@@ -1,7 +1,7 @@
 ---
 title: Variablen in AEM Forms-Workflows
 seo-title: Variables in AEM Forms Workflows
-description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in Workflow-Schritten von AEM Forms.
+description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in AEM Forms Workflow-Schritten.
 seo-description: Create a variable, set a value for the variable, and use it in AEM Forms workflow steps.
 uuid: 634a75c4-4899-478f-9e5d-a870f5efa583
 contentOwner: khsingh
@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 3d0eb55eb35fcf5da1212b8be7c0aeee11307bb6
-workflow-type: ht
+source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
+workflow-type: tm+mt
 source-wordcount: '2208'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -25,9 +25,11 @@ In AEM-Workflow-Modellen haben Sie folgende Möglichkeiten:
 
 * [Erstellen Sie eine Variable](../../forms/using/variable-in-aem-workflows.md#create-a-variable) eines Datentyps basierend auf dem Typ von Information, die Sie darin speichern möchten.
 * [Legen Sie einen Wert für die Variable fest](../../forms/using/variable-in-aem-workflows.md#set-a-variable), indem Sie den Workflow-Schritt „Variable festlegen“ verwenden.
-* [Verwenden Sie die Variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) in allen Workflow-Schritten von AEM Forms, um den gespeicherten Wert abzurufen, sowie in ODER-Teilungs- und GOTO-Schritten, um einen Routing-Ausdruck zu definieren.
+* [Verwenden Sie die Variable](../../forms/using/variable-in-aem-workflows.md#use-a-variable) in allen Workflow-Schritten von AEM Forms, um den gespeicherten Wert abzurufen, sowie in ODER-Teilungs- und GOTO-Schritten (Wechseln zu Schritt), um einen Routing-Ausdruck zu definieren.
 
 Das folgende Video zeigt, wie Sie Variablen in AEM-Workflow-Modellen erstellen, festlegen und verwenden können:
+
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_introduction_1_1.mp4)
 
@@ -115,6 +117,8 @@ Verwenden Sie einen Ausdruck, um die Summe der Variablen zu berechnen und das Er
 
 In diesem Beispiel verwenden Sie den Ausdruckseditor, um einen Ausdruck zu definieren, mit dem die Summe der Variablen **assetscost** und **balanceamount** zu berechnet und das Ergebnis in der Variablen **totalvalue** gespeichert wird.
 
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
+
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_expression.mp4)
 
 ## Verwenden des Ausdruckseditors {#use-expression-editor}
@@ -150,7 +154,7 @@ Sie können Variablen verwenden, um Eingaben und Ausgaben abzurufen oder um das 
 
 ### Workflow-Schritte mit Unterstützung für Variablen {#workflow-steps-with-support-for-variables}
 
-Die Schritte „Wechseln zu Schritt“ und „ODER-Aufteilung“ sowie alle AEM Forms Workflow-Schritte unterstützen Variablen.
+Die Schritte „Wechseln zu Schritt“ und „Aufteilen“ sowie alle AEM Forms Workflow-Schritte unterstützen Variablen.
 
 #### ODER-Teilungs-Schritt {#or-split-step}
 
@@ -161,6 +165,8 @@ Sie können Routing-Ausdrücke für eine Verzweigung mithilfe einer Regeldefinit
 Sie können Variablen verwenden, um den Routing-Ausdruck mit dem Ausdruckseditor zu definieren. Weitere Informationen zur Verwendung von Routing-Ausdrücken für den Schritt „ODER-Teilung“ finden Sie unter [ODER-Teilungs-Schritt](/help/sites-developing/workflows-step-ref.md#or-split).
 
 In diesem Beispiel verwenden Sie vor dem Definieren des Routing-Ausdrucks das [Beispiel 2](../../forms/using/variable-in-aem-workflows.md#example2), um den Wert für die Variable **totalvalue** festzulegen. Zweig 1 ist aktiv, wenn der Wert der Variablen **totalvalue** größer als 50000 ist. Auf ähnliche Weise können Sie eine Regel definieren, die den Zweig 2 aktivieren soll, wenn der Wert der Variablen **totalvalue** kleiner als 50000 ist.
+
+<!-- FUTURE ERROR: YouTube and mp4 videos are not supported -->
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/variables_orsplit_example.mp4)
 
@@ -271,7 +277,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Speichern sensibler Benutzerdaten außerhalb von JCR mit Hilfe von Workflow-Variablen {#jcr-independent-persistance}
 
-Daten, die mit Hilfe von Forms-Workflows verarbeitet werden, können sensible Benutzerdaten enthalten, wie z. B. persönlich identifizierbare Informationen und sensible persönliche Informationen. Unternehmen können sich dafür entscheiden, die Daten, die von verschiedenen Workflow-Schritten verarbeitet (und mit Hilfe von Workflow-Variablen übergeben) werden, außerhalb des JCR-Speichers in einem externen Datenspeicher zu speichern, der ihnen gehört und von ihnen verwaltet wird. Weitere Informationen über die Speicherung von Workflow-Daten in einem externen Speicher finden Sie unter [Verwendung von Workflow-Variablen für kundeneigene Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+Daten, die mit Forms Workflow verarbeitet werden, können vertrauliche Benutzerdaten wie personenbezogene Daten und vertrauliche personenbezogene Daten enthalten. Unternehmen können sich dafür entscheiden, die Daten, die von verschiedenen Workflow-Schritten verarbeitet (und mit Hilfe von Workflow-Variablen übergeben) werden, außerhalb des JCR-Speichers in einem externen Datenspeicher zu speichern, der ihnen gehört und von ihnen verwaltet wird. Weitere Informationen über die Speicherung von Workflow-Daten in einem externen Speicher finden Sie unter [Verwendung von Workflow-Variablen für kundeneigene Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe Experience Manager] bietet die Workflow-API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer), um Workflow-Variablen in externen Azure-Blob-Speichern zu speichern. Für Details zur Verwendung der API siehe [Verwenden von Workflow-Variablen zum Parametrisieren sensibler Daten und Speichern in externen Datenspeichern](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Bearbeiten einer Variablen {#edit-a-variable}
@@ -292,4 +298,4 @@ Führen Sie die folgenden Schritte aus, um eine Variable zu löschen:
 
 ## Verweise {#references}
 
-Weitere Beispiele zur Verwendung von Variablen in AEM Forms-Workflow-Schritten finden Sie unter [Variablen in AEM-Workflows](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=de).
+Weitere Beispiele zur Verwendung von Variablen in AEM Forms-Workflow-Schritten finden Sie unter [Variablen in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=de).
