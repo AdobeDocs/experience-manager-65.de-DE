@@ -11,10 +11,10 @@ discoiquuid: 64bc6018-2828-4634-9275-48f1d411452b
 docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
+source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
 workflow-type: tm+mt
-source-wordcount: '1060'
-ht-degree: 50%
+source-wordcount: '1059'
+ht-degree: 47%
 
 ---
 
@@ -65,7 +65,7 @@ Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Betriebssystemen
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3</td>
-   <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Security Guide for Release 7</a><br /> </td>
+   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Security Guide for Release 7</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -212,7 +212,7 @@ JBoss® Application Server verwendet 8080 als standardmäßigen HTTP-Port. JBoss
 
 1. Öffnen Sie die folgende Datei zum Bearbeiten:
 
-   Einzelserverinstallation: [JBoss® root]/standalone/configuration/standalone.xml
+   Installation auf einem Einzelserver: [JBoss® root]/standalone/configuration/standalone.xml
 
    Cluster-Installationen: [JBoss® root]/domain/configuration/domain.xml
 
@@ -245,8 +245,8 @@ Die Datei lc_[Datenbank].xml sollte kein Kennwort in unverschlüsseltem Textform
 >
 >Das AEM Forms on JEE JBoss® Turnkey-Installationsprogramm verschlüsselt das Datenbankkennwort.
 
-IBM® WebSphere® Application Server und Oracle WebLogic Server verschlüsseln möglicherweise standardmäßig Datenquellenkennwörter. Schlagen Sie in der Dokumentation zu Ihrem Anwendungs-Server nach, um sicherzustellen, dass eine Verschlüsselung erfolgt.
+IBM® WebSphere® Application Server und Oracle WebLogic Server verschlüsseln möglicherweise standardmäßig Datenquellenkennwörter. Sie sollten jedoch die Dokumentation für Ihren Anwendungsserver mitteilen, um sicherzustellen, dass dies geschieht.
 
 ### Schutz des in Trust Store gespeicherten privaten Schlüssels {#protecting-the-private-key-stored-in-trust-store}
 
-Die privaten Schlüssel oder Berechtigungen, die in Trust Store importiert wurden, werden in der AEM Forms on JEE-Datenbank gespeichert. Sie müssen entsprechende Sicherheitsmaßnahmen treffen, um die Datenbank zu schützen und den Zugriff auf benannte Administratoren zu beschränken.
+Die privaten Schlüssel oder Berechtigungen, die in Trust Store importiert wurden, werden in der AEM Forms on JEE-Datenbank gespeichert. Um die Datenbank zu schützen und den Zugriff auf bestimmte Administratoren zu beschränken, treffen Sie geeignete Vorkehrungen.
