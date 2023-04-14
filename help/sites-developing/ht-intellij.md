@@ -1,8 +1,6 @@
 ---
 title: Entwicklung von AEM-Projekten mit IntelliJ IDEA
-seo-title: How to Develop AEM Projects using IntelliJ IDEA
-description: Verwenden von IntelliJ IDEA für die Entwicklung von AEM-Projekten
-seo-description: Using IntelliJ IDEA to develop AEM projects
+description: Verwenden von IntelliJ IDEA zur Entwicklung AEM Projekte
 uuid: 382b5008-2aed-4e08-95be-03c48f2b549e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: bb8dbb9069c4575af62a4d0b21195cee75944fea
-workflow-type: ht
-source-wordcount: '642'
-ht-degree: 100%
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+workflow-type: tm+mt
+source-wordcount: '633'
+ht-degree: 49%
 
 ---
 
@@ -21,36 +19,36 @@ ht-degree: 100%
 
 ## Übersicht {#overview}
 
-Die folgenden Schritte sind erforderlich, um mit der AEM-Entwicklung unter IntelliJ zu beginnen.
+Um mit AEM Entwicklung auf IntelliJ zu beginnen, sind die folgenden Schritte erforderlich.
 
-Im Rest dieser Anleitung werden die einzelnen Schritte genauer ausgeführt.
+Jeder Schritt wird im Rest dieses Themas ausführlicher erläutert.
 
 * Installieren von IntelliJ
-* Einrichten Ihres AEM-Projekts auf Grundlage von Maven
+* Richten Sie Ihr AEM Projekt auf Grundlage von Maven ein.
 * Vorbereiten der JSP-Unterstützung für IntelliJ im Maven-POM
 * Importieren des Maven-Projekts in IntelliJ
 
 >[!NOTE]
 >
->Diese Anleitung basiert auf der IntelliJ IDEA Ultimate Edition 12.1.4 und AEM 5.6.1.
+>Dieses Handbuch basiert auf IntelliJ IDEA Ultimate Edition 12.1.4 und AEM 5.6.1.
 
 ### Installieren von IntelliJ IDEA {#install-intellij-idea}
 
-Laden Sie IntelliJ IDEA auf [der Downloadseite bei JetBrains](https://www.jetbrains.com/idea/download/index.html) herunter.
+IntelliJ IDEA herunterladen [die Downloadseite bei JetBrains](https://www.jetbrains.com/idea/download/).
 
-Folgen Sie anschließend den Installationsanweisungen auf der Seite.
+Folgen Sie dann den Installationsanweisungen auf dieser Seite.
 
-### Einrichten Ihres AEM-Projekts auf Grundlage von Maven {#set-up-your-aem-project-based-on-maven}
+### Richten Sie Ihr AEM Projekt auf Grundlage von Maven ein. {#set-up-your-aem-project-based-on-maven}
 
 Richten Sie Ihr Projekt anschließend wie in [So erstellen Sie AEM-Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md) beschrieben mit Maven ein.
 
-Beginnen Sie damit, AEM-Projekte in IntelliJ IDEA zu bearbeiten, indem Sie sich an der in [Einstieg in 5 Minuten](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) beschriebenen grundlegenden Einrichtung orientieren.
+Um mit AEM Projekten in IntelliJ IDEA zu arbeiten, müssen Sie die grundlegende Einrichtung in [Erste Schritte in 5 Minuten](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) ausreichend ist.
 
 ### Vorbereiten der JSP-Unterstützung für IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
-IntelliJ IDEA bietet darüber hinaus Unterstützung für die Arbeit mit JSP, z. B.
+IntelliJ IDEA kann auch die Arbeit mit JSP unterstützen, z. B.:
 
-* automatische Vervollständigung von Tag-Bibliotheken,
+* automatische Vervollständigung von Tag-Bibliotheken
 * Wahrnehmung von Objekten, die durch `<cq:defineObjects />` und `<sling:defineObjects />` definiert sind
 
 Folgen Sie den Anweisungen im Abschnitt [So arbeiten Sie mit JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [So erstellen Sie AEM-Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md), damit das funktioniert.
@@ -75,23 +73,23 @@ Folgen Sie den Anweisungen im Abschnitt [So arbeiten Sie mit JSPs](/help/sites-d
 
    ![chlimage_1-47](assets/chlimage_1-47a.png)
 
-### Debuggen von JSPs mit IntelliJ IDEA {#debugging-jsps-with-intellij-idea}
+### Debugging von JSPs mit IntelliJ IDEA {#debugging-jsps-with-intellij-idea}
 
-Zum Debuggen von JSPs mit IntelliJ IDEA sind die folgenden Schritte notwendig:
+Die folgenden Schritte sind zum Debugging von JSPs mit IntelliJ IDEA erforderlich
 
-* Richten Sie ein Web-Facet im Projekt ein.
+* Einrichten einer Web-Facette im Projekt
 * Installieren des Plug-ins zur JSR45-Unterstützung
 * Konfigurieren eines Debug-Profils
-* Konfigurieren Sie AEM für den Debugmodus.
+* AEM für den Debug-Modus konfigurieren
 
-#### Richten Sie ein Web-Facet im Projekt ein. {#set-up-a-web-facet-in-the-project}
+#### Einrichten einer Web-Facette im Projekt {#set-up-a-web-facet-in-the-project}
 
-IntelliJ IDEA muss wissen, wo die JSPs zum Debuggen gefunden werden können. Da IDEA die `content-package-maven-plugin`-Einstellungen nicht interpretieren kann, muss dies manuell konfiguriert werden.
+IntelliJ IDEA muss wissen, wo die JSPs zum Debugging zu finden sind. Da IDEA die `content-package-maven-plugin` -Einstellungen, muss sie manuell konfiguriert werden.
 
 1. Gehen Sie zu **Datei -> Projektstruktur**
 1. Wählen Sie das Modul **Inhalte** aus
 1. Klicken Sie über der Modulliste auf **+** und wählen Sie **Web** aus.
-1. Wählen Sie, wie im Folgenden zu sehen, das Verzeichnis `content/src/main/content/jcr_root subdirectory` Ihres Projekts als Verzeichnis für Web-Ressourcen aus.
+1. Wählen Sie als Verzeichnis der Web-Ressourcen die `content/src/main/content/jcr_root subdirectory` des Projekts, wie im Screenshot unten dargestellt.
 
 ![chlimage_1-48](assets/chlimage_1-48a.png)
 
@@ -111,16 +109,16 @@ IntelliJ IDEA muss wissen, wo die JSPs zum Debuggen gefunden werden können. Da 
 1. Wählen Sie im Konfigurationsdialogfeld **Konfigurieren** neben **Anwendungsserver** aus und konfigurieren Sie einen generischen Server.
 1. Legen Sie die Startseite auf eine passende URL fest, wenn Sie beim Beginn des Debuggens einen Browser öffnen möchten.
 1. Entfernen Sie alle **Vor dem Start**-Aufgaben, falls Sie die automatische Synchronisierung von VLT nutzen, oder konfigurieren Sie geeignete Maven-Aufgaben, falls nicht.
-1. Passen Sie im Fenster **Start/Verbindung** den Port an, sofern erforderlich.
+1. Im **Start/Verbindung** Bereich, passen Sie bei Bedarf den Anschluss an.
 1. Kopieren Sie die Befehlszeilenargumente, die IntelliJ IDEA vorschlägt.
 
 ![chlimage_1-50](assets/chlimage_1-50a.png) ![chlimage_1-51](assets/chlimage_1-51a.png)
 
-#### Konfigurieren Sie AEM für den Debugmodus. {#configure-aem-for-debug-mode}
+#### AEM für den Debug-Modus konfigurieren {#configure-aem-for-debug-mode}
 
-Starten Sie als letzten erforderlichen Schritt AEM mit den von IntelliJ IDEA vorgeschlagenen JVM-Optionen.
+Der letzte erforderliche Schritt besteht darin, mit den von IntelliJ IDEA vorgeschlagenen JVM-Optionen zu AEM.
 
-Starten Sie dazu die AEM-JAR-Datei direkt und fügen Sie diese Optionen hinzu, zum Beispiel mit der folgenden Befehlszeile:
+Starten Sie die AEM JAR-Datei direkt und fügen Sie diese Optionen hinzu, z. B. mit der folgenden Befehlszeile:
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 
@@ -139,16 +137,16 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 # ...
 ```
 
-#### Starten des Debuggens {#start-debugging}
+#### Debugging starten {#start-debugging}
 
-Sie können nun mit dem Debuggen Ihrer JSPs in AEM beginnen.
+Sie sind jetzt alle für das Debugging Ihrer JSPs in AEM eingerichtet.
 
 1. Wählen Sie **Ausführen -> Debuggen** und anschließend Ihr Debugprofil aus.
-1. Legen Sie in Ihrem Komponentencode Haltepunkte fest.
-1. Greifen Sie in Ihrem Browser auf eine Seite zu.
+1. Festlegen von Haltepunkten im Komponenten-Code
+1. Zugriff auf eine Seite in Ihrem Browser
 
 ![chlimage_1-52](assets/chlimage_1-52a.png)
 
 ### Debuggen von Paketen mit IntelliJ IDEA {#debugging-bundles-with-intellij-idea}
 
-Code in Paketen können Sie mithilfe einer standardmäßigen generischen Debug-Remoteverbindung debuggen. Weitere Informationen finden Sie in der [JetBrains-Dokumentation zum Remote-Debugging](https://www.jetbrains.com/idea/webhelp/run-debug-configuration-remote.html).
+Code in Bundles kann mit einer standardmäßigen generischen Remote-Debug-Verbindung debuggt werden. Sie können dem [JetBrain-Dokumentation zum Remote-Debugging](https://www.jetbrains.com/help/idea/remote-debugging-with-product.html#remote-interpreter).

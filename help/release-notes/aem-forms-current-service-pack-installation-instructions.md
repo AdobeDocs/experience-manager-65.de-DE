@@ -2,10 +2,10 @@
 title: AEM Forms – Patch-Installationsanweisungen für AEM Forms
 description: Installationsanweisungen für AEM Forms Service Packs für OSGi- und JEE-Umgebungen
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: b15581701aaff72db2fc0030b0062d2f12150d8f
+source-git-commit: 01bf12ec46966ab2c78e2e825840230ea1bd3395
 workflow-type: tm+mt
 source-wordcount: '1726'
-ht-degree: 87%
+ht-degree: 88%
 
 ---
 
@@ -78,7 +78,7 @@ Navigieren Sie in den entsprechenden Ordner und geben Sie in einer Shell Folgend
 
    Dadurch wird ein Installationsassistent gestartet, der Sie durch die Installation führt.
 
-1. Klicken Sie im Einführungsbereich auf **[!UICONTROL Nächste]**.
+1. Klicken Sie im Begrüßungsbildschirm auf **[!UICONTROL Weiter]**.
 1. Stellen Sie auf dem Bildschirm **Installationsordner auswählen** sicher, dass der Standardspeicherort, der angezeigt wird, für Ihre bestehende Installation korrekt ist, oder klicken Sie auf **[!UICONTROL Durchsuchen]**, um den alternativen Ordner auszuwählen, auf dem AEM Forms installiert ist, und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Lesen Sie die Zusammenfassung der Informationen zum Service Pack und klicken Sie auf **[!UICONTROL Weiter]**.
 1. Lesen Sie die Informationen in der Zusammenfassung vor der Installation und klicken Sie auf **[!UICONTROL Installieren]**.
@@ -153,16 +153,15 @@ Das Paket wird automatisch installiert.
 * Verwenden Sie die [HTTP-API von Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de). Verwenden Sie `cmd=install&recursive=true`, damit die verschachtelten Pakete installiert werden.
 
    >[!NOTE]
-   >
-   >Experience Manager Service Pack unterstützt nicht die Installation von Bootstraps. <!-- UPDATE FOR EACH NEW RELEASE -->
+   Experience Manager Service Pack unterstützt nicht die Installation von Bootstraps. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-**Validierung der Installation**
+   **Validierung der Installation**
 
-Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie in den [technischen Anforderungen](/help/sites-deploying/technical-requirements.md).
+   Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie in den [technischen Anforderungen](/help/sites-deploying/technical-requirements.md).
 
-1. Die Seite mit den Produktinformationen (`/system/console/productinfo`) zeigt die aktualisierte Versionszeichenfolge `Adobe Experience Manager (spversion)` unter [!UICONTROL Installierte Produkte] an.<!-- UPDATE FOR EACH NEW RELEASE -->
-1. Alle OSGi-Bundles haben in der OSGi-Konsole entweder den Status **[!UICONTROL ACTIV]** oder **[!UICONTROL FRAGMENT]** (Verwenden Sie die Web-Konsole: `/system/console/bundles`).
-1. Das OSGi-Bundle `org.apache.jackrabbit.oak-core` ist Version 1.22.14 oder höher (Verwenden Sie die Web-Konsole: `/system/console/     bundles`).
+   1. Die Seite mit den Produktinformationen (`/system/console/productinfo`) zeigt die aktualisierte Versionszeichenfolge `Adobe Experience Manager (spversion)` unter [!UICONTROL Installierte Produkte] an.<!-- UPDATE FOR EACH NEW RELEASE -->
+   1. Alle OSGi-Bundles haben in der OSGi-Konsole entweder den Status **[!UICONTROL ACTIV]** oder **[!UICONTROL FRAGMENT]** (Verwenden Sie die Web-Konsole: `/system/console/bundles`).
+   1. Das OSGi-Bundle `org.apache.jackrabbit.oak-core` ist Version 1.22.14 oder höher (Verwenden Sie die Web-Konsole: `/system/console/     bundles`).
 
 +++
 
@@ -185,8 +184,7 @@ Informationen zu den Plattformen, die für diese Version zertifiziert sind, find
 1. Sichern Sie Ihr [CRX-Repository und Datenbankschema](https://experienceleague.adobe.com/docs/experience-manager-65/forms/administrator-help/aem-forms-backup-recovery/backing-aem-forms-data.html?lang=de).
 
 >[!NOTE]
->
-> Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
+Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
 
 +++
 
@@ -213,18 +211,17 @@ Es gibt zwei verschiedene Methoden, mit denen Sie automatisch installieren könn
 * Verwenden Sie die [HTTP-API von Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de). Verwenden Sie `cmd=install&recursive=true`, damit die verschachtelten Pakete installiert werden.
 
    >[!NOTE]
-   >
-   >Experience Manager Service Pack unterstützt nicht die Installation von Bootstraps. <!-- UPDATE FOR EACH NEW RELEASE -->
+   Experience Manager Service Pack unterstützt nicht die Installation von Bootstraps. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-**Validierung der Installation**
+   **Validierung der Installation**
 
-Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie in den [technischen Anforderungen](/help/sites-deploying/technical-requirements.md).
+   Informationen zu den Plattformen, die für diese Version zertifiziert sind, finden Sie in den [technischen Anforderungen](/help/sites-deploying/technical-requirements.md).
 
-1. Die Seite mit den Produktinformationen (`/system/console/productinfo`) zeigt die aktualisierte Versionszeichenfolge `Adobe Experience Manager (spversion)` unter [!UICONTROL Installierte Produkte] an. <!-- UPDATE FOR EACH NEW RELEASE -->
+   1. Die Seite mit den Produktinformationen (`/system/console/productinfo`) zeigt die aktualisierte Versionszeichenfolge `Adobe Experience Manager (spversion)` unter [!UICONTROL Installierte Produkte] an. <!-- UPDATE FOR EACH NEW RELEASE -->
 
-1. Alle OSGi-Bundles sind in der OSGi-Konsole entweder **[!UICONTROL AKTIV]** oder **[!UICONTROL FRAGMENT]** (zu verwendende Web-Konsole: `/system/console/bundles`).
+   1. Alle OSGi-Bundles sind in der OSGi-Konsole entweder **[!UICONTROL AKTIV]** oder **[!UICONTROL FRAGMENT]** (zu verwendende Web-Konsole: `/system/console/bundles`).
 
-   1. Das OSGi-Bundle `org.apache.jackrabbit.oak-core` hat die Version 1.22.14 oder höher (zu verwendende Web-Konsole: `/system/console/bundles`).
+      1. Das OSGi-Bundle `org.apache.jackrabbit.oak-core` hat die Version 1.22.14 oder höher (zu verwendende Web-Konsole: `/system/console/bundles`).
 
 +++
 

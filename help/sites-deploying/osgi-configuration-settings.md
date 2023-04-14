@@ -12,9 +12,9 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3431'
 ht-degree: 47%
 
 ---
@@ -269,7 +269,7 @@ Wenn ein konfigurierter Pfadwert mit einem Schrägstrich endet, wird die gesamte
 * Für die JS-Entwicklung (insbesondere beim Firebugging/Debugging):
 
    * disable **Minimieren**
-   * enable **Debuggen** , um die Dateien für das Debugging und die Verwendung mit Firebug zu trennen.
+   * enable **Debuggen** , um die Dateien für das Debugging zu trennen und mit dem Fehler auszulösen.
    * enable **Zeit** wenn Interesse an der Zeitplanung.
    * enable **Debuggen** -Konsole, um die Protokollmeldungen der JS-Konsole anzuzeigen.
 
@@ -378,7 +378,7 @@ Auf die anderen Modi kann aus dem Sidekick zugegriffen werden. Oder das Suffix `
 
 **Day CQ WCM Link Checker Configurator** Konfigurieren Sie:
 
-* **Liste der Neuschreibungskonfigurationen** um eine Liste von Speicherorten für inhaltsbasierte Linkprüfer-Konfigurationen anzugeben. Die Konfigurationen können auf dem Ausführungsmodus basieren. Diese Tatsache ist wichtig, um zwischen Autoren- und Veröffentlichungsumgebungen zu unterscheiden, da die Einstellungen des Linkprüfers unterschiedlich sein können.
+* **Liste der Neuschreibungskonfigurationen** , um eine Liste der Speicherorte für inhaltsbasierte Link-Checker-Konfigurationen anzugeben. Die Konfigurationen können auf dem Ausführungsmodus basieren. Diese Tatsache ist wichtig, um zwischen Autoren- und Veröffentlichungsumgebungen zu unterscheiden, da die Einstellungen des Link-Checkers unterschiedlich sein können.
 
 **Day CQ WCM Page Manager Factory** Konfigurieren Sie:
 
@@ -440,7 +440,7 @@ Eine Factory-Konfiguration, sodass mehrere Instanzen konfiguriert werden können
 **CDN Rewriter** Die Kommunikation zwischen AEM und einem CDN muss sichergestellt sein, damit Assets/Binärdateien auf sichere Weise an einen Endbenutzer übermittelt werden. Dieser Prozess umfasst die beiden folgenden Aufgaben:
 
 * Zugriff auf die Ressource von AEM über das CDN beim ersten Mal (oder nachdem sie im Cache abgelaufen ist).
-* Sicherer Zugriff auf die im CDN zwischengespeicherte Ressource, da die Anforderung nach dem Zwischenspeichern der Ressource im CDN nicht an AEM gesendet wird und alle Benutzer, die Zugriff auf diese Ressource haben, vom CDN bereitgestellt werden sollten.
+* Sicherer Zugriff auf die im CDN zwischengespeicherte Ressource. Nachdem die Ressource im CDN zwischengespeichert wurde, wird die Anfrage nicht an AEM gesendet und alle Benutzer, die Zugriff auf diese Ressource haben, sollten vom CDN bereitgestellt werden.
 
 AEM bietet einen Rewriter zum Neuschreiben interner Asset-URLs in externe CDN-URLs. Es schreibt Links, die an das CDN weitergegeben werden sollen, einschließlich einer JWS-Signatur, und läuft die Zeit ab, damit der Asset sicher aufgerufen werden kann. Diese Funktion wird in Autoreninstanzen verwendet.
 

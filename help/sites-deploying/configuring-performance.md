@@ -1,8 +1,6 @@
 ---
 title: Leistungsoptimierung
-seo-title: Performance Optimization
 description: Erfahren Sie, wie Sie bestimmte Aspekte von AEM konfigurieren, um die Leistung zu optimieren.
-seo-description: Learn how to configure certain aspects of AEM to optimize performance.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configuring
 exl-id: 5b0c9a8c-0f5f-46ee-a455-adb9b9d27270
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
 workflow-type: tm+mt
 source-wordcount: '6503'
-ht-degree: 27%
+ht-degree: 26%
 
 ---
 
@@ -102,12 +100,12 @@ Dieser Fokus bedeutet, dass der Entwickler, der die Optimierung implementiert, s
 
 ## Allgemeine Leistungsrichtlinien {#basic-performance-guidelines}
 
-Im Allgemeinen sollten nicht gecachte HTML-Anforderungen weniger als 100 ms benötigen. Konkret wird Folgendes empfohlen:
+Im Allgemeinen sollten Sie Ihre nicht zwischengespeicherten HTML-Anforderungen auf weniger als 100 Millisekunden beschränken. Konkret wird Folgendes empfohlen:
 
-* 70 % der Seitenanfragen sollten in weniger als 100 ms beantwortet werden.
-* 25 % der Seitenanforderungen sollten innerhalb von 100 ms bis 300 ms beantwortet werden.
-* 4 % der Seitenanforderungen sollten innerhalb von 300 ms bis 500 ms beantwortet werden.
-* 1 % der Seitenanforderungen sollten innerhalb von 500 ms bis 1000 ms beantwortet werden.
+* 70 % der Seitenanfragen sollten in weniger als 100 Millisekunden beantwortet werden.
+* 25 % der Seitenanfragen sollten innerhalb von 100 Millisekunden - 300 Millisekunden beantwortet werden.
+* 4 % der Seitenanfragen sollten innerhalb von 300 Millisekunden - 500 Millisekunden beantwortet werden.
+* 1 % der Seitenanfragen sollten innerhalb von 500 Millisekunden - 1000 Millisekunden beantwortet werden.
 * Keine Seite sollte langsamer als 1 Sekunde reagieren.
 
 Die obigen Zahlen gehen von folgenden Bedingungen aus:
@@ -459,14 +457,12 @@ Alle vorgenommenen Optimierungen müssen auf folgende Bedingungen hin getestet w
 * Sie dürfen die Funktionalität nicht beeinträchtigen.
 * Sie wurden vor ihrer Veröffentlichung Belastungstests unterzogen.
 
-Für die Lastgenerierung, Leistungsüberwachung und/oder Ergebnisanalyse steht eine Reihe von Tools zur Verfügung:
+Es stehen verschiedene Tools zur Verfügung, die Sie bei der Lastgenerierung, der Leistungsüberwachung und der Ergebnisanalyse unterstützen. Einige dieser Tools umfassen Folgendes:
 
 * [JMeter](https://jmeter.apache.org/)
 * [Load Runner](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
-* [Determyne](https://www.determyne.com/) InsideApps
 * [InfraRED](https://www.infraredsoftware.com/)
 * [Java™ Interactive Profile](https://jiprof.sourceforge.net/)
-* viele weitere ...
 
 Führen Sie nach der Optimierung erneut einen Test durch, um die Auswirkung zu bestätigen.
 
@@ -691,7 +687,7 @@ Die Last besteht aus erstellten Seiten, gelöschten Seiten, Durchläufen und Abf
 
 Die Auswirkung von Last auf die Sicherungsleistung kann geschätzt werden, indem die Differenz zwischen der Leistung mit Anwendungslast und der Leistung ohne Anwendungslast errechnet wird. Die Auswirkungen der Sicherung auf den Anwendungsdurchsatz werden ermittelt, indem der Szenario-Durchsatz in Transaktionen pro Stunde mit und ohne gleichzeitige Sicherung verglichen wird und Backups mit unterschiedlichen Einstellungen für &quot;Backup Delay&quot; ausgeführt werden.
 
-* **Verzögerungseinstellung** - In verschiedenen Szenarien wurde die Einstellung für die Sicherungsverzögerung ebenfalls geändert, indem Werte von 10 ms (Standard), 1 ms und 0 ms verwendet wurden, um zu untersuchen, wie diese Einstellung die Leistung von Backups beeinflusst hat.
+* **Verzögerungseinstellung** - In verschiedenen Szenarien wurde die Einstellung für die Sicherungsverzögerung ebenfalls geändert, indem Werte von 10 Millisekunden (Standard), 1 Millisekunden und 0 Millisekunden verwendet wurden, um zu untersuchen, wie sich diese Einstellung auf die Leistung von Backups auswirkte.
 * **Sicherungstyp** - Alle Sicherungen waren externe Sicherungen des Repositorys, die in einem Backup-Verzeichnis durchgeführt wurden, ohne eine ZIP-Datei zu erstellen, außer in einem Fall zum Vergleich, in dem der tar-Befehl direkt verwendet wurde. Da inkrementelle Sicherungen nicht in eine ZIP-Datei geschrieben werden können oder wenn die vorherige vollständige Sicherung eine ZIP-Datei ist, wird in Produktionssituationen meist die Sicherungsverzeichnismethode verwendet.
 
 ### Zusammenfassung der Ergebnisse {#summary-of-results}
@@ -720,7 +716,7 @@ Der Parameter für die Sicherungsverzögerung wird bereitgestellt, um zu begrenz
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
-Zum Vergleich: der Durchsatz, der mithilfe einer Dateisystemsicherung (&#39;tar&#39;) ermittelt wurde, um dieselben Repository-Dateien zu sichern. Die Leistung des Tars ist vergleichbar, aber etwas höher als die Sicherung mit einer Verzögerung von null. Durch die Festlegung einer geringen Verzögerung wird der Backup-Durchsatz erheblich reduziert, und die Standardverzögerung von 10 ms führt zu einem deutlich geringeren Durchsatz. In Situationen, in denen Sicherungen geplant werden können, wenn die allgemeine Anwendungsnutzung gering ist oder die Anwendung inaktiv sein kann, reduzieren Sie die Verzögerung unter den Standardwert, damit die Sicherung schneller fortgesetzt werden kann.
+Zum Vergleich: der Durchsatz, der mithilfe einer Dateisystemsicherung (&#39;tar&#39;) ermittelt wurde, um dieselben Repository-Dateien zu sichern. Die Leistung des Tars ist vergleichbar, aber etwas höher als die Sicherung mit einer Verzögerung von null. Durch die Festlegung einer geringen Verzögerung wird der Backup-Durchsatz erheblich reduziert, und die Standardverzögerung von 10 Millisekunden führt zu einem deutlich geringeren Durchsatz. In Situationen, in denen Sicherungen geplant werden können, wenn die allgemeine Anwendungsnutzung gering ist oder die Anwendung inaktiv sein kann, reduzieren Sie die Verzögerung unter den Standardwert, damit die Sicherung schneller fortgesetzt werden kann.
 
 Die tatsächlichen Auswirkungen des Durchsatzes einer laufenden Sicherung hängen von der Anwendungs- und Infrastrukturdetails ab. Die Auswahl des Verzögerungswerts sollte durch empirische Analyse der Anwendung erfolgen, sollte jedoch so klein wie möglich sein, damit Backups so schnell wie möglich abgeschlossen werden können. Da es nur eine schwache Korrelation zwischen der Auswahl des Verzögerungswerts und den Auswirkungen auf den Anwendungsdurchsatz gibt, sollte die Wahl der Verzögerung kürzere Backup-Zeiten bevorzugen, um die Gesamtauswirkungen von Backups zu minimieren. Ein Backup, das acht Stunden dauert, aber den Durchsatz um -20 % beeinflusst, hat wahrscheinlich eine größere Gesamtwirkung als ein Backup, das zwei Stunden dauert, aber den Durchsatz um -30 % beeinflusst.
 
