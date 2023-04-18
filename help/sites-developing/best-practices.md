@@ -1,8 +1,6 @@
 ---
-title: Best Practices
-seo-title: Best Practices
-description: Die Entwicklungs- und Beratungs-Teams von Adobe haben einen umfassenden Satz an Best Practices für AEM-Entwickler zusammengestellt
-seo-description: Adobe Engineering and Consulting teams have developed a comprehensive set of best practices for AEM developers
+title: Best Practices für AEM-Entwickler
+description: Die Entwicklungs- und Beratungs-Teams von Adobe haben einen umfassenden Satz an Best Practices für AEM-Entwickler zusammengestellt.
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +8,18 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 exl-id: 0a478e80-c1b2-46c1-a6be-794d78b85d69
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: ht
-source-wordcount: '463'
-ht-degree: 100%
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+workflow-type: tm+mt
+source-wordcount: '466'
+ht-degree: 58%
 
 ---
 
 # Best Practices{#best-practices}
 
-## Best Practices für Entwickler – Erste Schritte {#best-practices-for-developers-getting-started}
+## Best Practices für Entwickler - Erste Schritte {#best-practices-for-developers-getting-started}
 
-Die Entwicklungs- und Beratungs-Teams von Adobe haben einen umfassenden Satz an Best Practices für AEM-Entwickler zusammengestellt. Sie werden von den Entwicklern von Adobe eingehalten, wenn sie zentrale AEM-Produktaktualisierungen und Code für Kundenimplementierungen entwickeln.
+Die Entwicklungs- und Beratungs-Teams von Adobe haben einen umfassenden Satz an Best Practices für AEM-Entwickler zusammengestellt. Die Entwickler von Adoben halten sich an diese Best Practices, da sie Kernproduktaktualisierungen AEM und Kundencode für Kundenimplementierungen entwickeln.
 
 Bevor Sie mit Ihrem AEM-Entwicklungsprojekt beginnen, machen Sie sich zunächst mit diesen Best Practices vertraut:
 
@@ -42,9 +40,9 @@ Für die folgenden Bereiche steht jeweils eine Dokumentation der Best Practices 
 * [Communities](/help/sites-developing/best-practices.md#communities)
 * [Tools/HTL](/help/sites-developing/best-practices.md#tooling-htl)
 
-Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
+Spezifische Dokumente werden in den folgenden Tabellen beschrieben und mit ihnen verknüpft.
 
-Best Practices für die Verwaltung, Bereitstellung und Pflege oder Inhaltserstellung finden Sie unter folgenden Themen:
+Best Practices für die Verwaltung, Bereitstellung, Verwaltung oder Bearbeitung finden Sie unter folgenden Themen:
 
 * [Best Practices für die Verwaltung ](/help/sites-administering/administer-best-practices.md)
 * [Best Practices für die Inhaltserstellung](/help/sites-authoring/best-practices.md)
@@ -52,29 +50,29 @@ Best Practices für die Verwaltung, Bereitstellung und Pflege oder Inhaltserstel
 
 ## Sites {#sites}
 
-Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practices wie folgt beschrieben:
+Für die Verwaltung und Bearbeitung von Website-Inhalten gelten folgende Best Practices:
 
 <table>
  <tbody>
   <tr>
-   <td>Teile der Theorie, die der standardmäßigen Touch-optimierten Benutzeroberfläche zugrunde liegt</td>
+   <td>Einige der Theorie hinter der standardmäßigen Touch-optimierten Benutzeroberfläche.</td>
    <td><p><a href="/help/sites-developing/touch-ui-concepts.md">Touch-optimierte Benutzeroberfläche: Konzepte</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">Touch-optimierte Benutzeroberfläche: Struktur</a></p> </td>
    <td>Diese Dokumente bieten einen Überblick über die Konzepte und die Struktur der Touch-optimierten Benutzeroberfläche.</td>
   </tr>
   <tr>
    <td>Touch-optimierte Benutzeroberfläche: Anpassen von Konsolen </td>
    <td><a href="/help/sites-developing/customizing-consoles-touch.md">Anpassen der Konsolen der Touch-optimierten Benutzeroberfläche</a></td>
-   <td>Dieses Dokument beschreibt die beste Methode, um die Konsolen für die Touch-optimierte Benutzeroberfläche zu erweitern.</td>
+   <td>In diesem Dokument wird die beste Möglichkeit beschrieben, die Konsolen für die Touch-optimierte Benutzeroberfläche zu erweitern.</td>
   </tr>
   <tr>
-   <td>Touch-optimierte Benutzeroberfläche: Anpassen der Seiteninhaltserstellung</td>
+   <td>Touch-optimierte Benutzeroberfläche: Anpassen der Seitenbearbeitung</td>
    <td><a href="/help/sites-developing/customizing-page-authoring-touch.md">Anpassen der Seiteninhaltserstellung bei der Touch-optimierten Benutzeroberfläche</a></td>
-   <td>Beschreibt, wie Sie die Seiteninhaltserstellung für die Touch-optimierte Benutzeroberfläche erweitern.</td>
+   <td>Beschreibt, wie die Seitenbearbeitung für die Touch-optimierte Benutzeroberfläche erweitert wird.</td>
   </tr>
   <tr>
    <td>Workflows</td>
    <td><a href="/help/sites-developing/workflows-best-practices.md">Entwickeln und Erweitern von Workflows</a></td>
-   <td><p>Mit Workflows können Sie Adobe Experience Manager (AEM)-Aktivitäten automatisieren und einen größeren Umfang der Verarbeitung repräsentieren, die in einer AEM-Umgebung stattfindet. Daher empfiehlt es sich, die Workflow-Implementierungen sorgfältig zu planen.</p> </td>
+   <td><p>Mit Workflows können Sie Adobe Experience Manager-Aktivitäten (AEM) automatisieren und einen großen Teil der Verarbeitung in einer AEM darstellen. Daher wird dringend empfohlen, Ihre Workflows sorgfältig zu planen.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -92,12 +90,12 @@ Einige Best Practices für Communities sind hier beschrieben:
 
 ## Tooling/HTL {#tooling-htl}
 
-HTML Template Language (HTL) ist ein neues HTML-Vorlagensystem, das mit AEM 6.0 eingeführt wurde. Es ersetzt JSP und ESP als bevorzugtes Vorlagensystem von AEM.
+HTML Template Language (HTL) ist ein neues HTML-Vorlagensystem, das mit AEM 6.0 eingeführt wurde. Es ersetzt JSP und ESP als bevorzugtes Vorlagensystem von AEM.
 
 |  |  |  |
 |---|---|---|
-| HTL-Übersicht | [HTL-Überblick und -Syntax](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) | In diesem Dokument wird beschrieben, was HTL ist und wie der Umstieg auf HTL gelingt. Es enthält Beispiele eines Projekts, Syntax, Ausdrücke und Aussagen. |
-| Verwenden von APIs in Java | [HTL-Java-Anwendungs-API](https://helpx.adobe.com/de/experience-manager/htl/using/use-api.html) | Mit der HTL-Java-Anwendungs-API kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen. |
+| HTL-Übersicht | [HTL-Übersicht und -Syntax](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) | In diesem Dokument wird beschrieben, was HTL ist, wie Sie zu HTL, einem Beispielprojekt, einer Syntax, Ausdrücken und Anweisungen wechseln |
+| Verwenden der API in Java | [HTL-Java-Anwendungs-API](https://helpx.adobe.com/de/experience-manager/htl/using/use-api.html) | Mit der HTL-Java-Anwendungs-API kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen. |
 
 >[!NOTE]
 >

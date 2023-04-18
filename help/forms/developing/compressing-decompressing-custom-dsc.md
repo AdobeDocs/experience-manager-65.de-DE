@@ -1,11 +1,11 @@
 ---
-title: Wie übergebe ich Informationen zu Berechtigungen mithilfe von WS-Security-Headern?
-description: Erfahren Sie, wie Sie Berechtigungen mithilfe von WS-Security-Headern übergeben.
+title: Komprimieren und Dekomprimieren von Dateien mit einem benutzerdefinierten AEM Forms on JEE-DSC
+description: Erfahren Sie, wie Sie Dateien mit einem benutzerdefinierten AEM Forms on JEE DSC komprimieren und entpacken können.
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
-source-wordcount: '473'
-ht-degree: 100%
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 94%
 
 ---
 

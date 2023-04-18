@@ -1,11 +1,11 @@
 ---
-title: AEM Headless-Inhaltsarchitekten-Tour
+title: Adobe Experience Manager Headless Content Architect-Journey
 description: Eine Einführung in die leistungsstarken und flexiblen Headless-Funktionen von Adobe Experience Manager und die Modellierung von Inhalten für Ihr Projekt.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '702'
-ht-degree: 100%
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+workflow-type: tm+mt
+source-wordcount: '704'
+ht-degree: 99%
 
 ---
 

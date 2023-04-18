@@ -1,8 +1,6 @@
 ---
-title: Fehlerbehebung
-seo-title: Troubleshooting
+title: Problembehebung in der Community
 description: Fehlerbehebung in der Community einschließlich bekannter Probleme
-seo-description: Troubleshooting Community including Known Issues
 uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,16 +8,16 @@ topic-tags: developing
 content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '359'
 ht-degree: 1%
 
 ---
 
-# Fehlerbehebung {#troubleshooting}
+# Problembehebung in der Community {#troubleshooting}
 
-Dieser Abschnitt enthält allgemeine Probleme und bekannte Probleme.
+Dieser Abschnitt enthält häufige Probleme und bekannte Probleme bei der Fehlerbehebung in der Community.
 
 ## Bekannte Probleme {#known-issues}
 
@@ -47,7 +45,7 @@ Das Problem besteht darin, dass die Formatzeichenfolge für com.day.cq.commons.d
 Daher muss jeder Code, der die RelativeTimeFormat()-API verwendet, Folgendes ändern:
 
 * Von: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
-* To: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
+* An: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
 Der Fehler unterscheidet sich bei der Autoren- und Veröffentlichungsinstanz. Beim Autor schlägt es still fehl und zeigt die Forenthemen einfach nicht an. Beim Veröffentlichen wird der Fehler auf der Seite ausgegeben.
 

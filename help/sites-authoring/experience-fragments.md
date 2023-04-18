@@ -1,8 +1,6 @@
 ---
-title: Experience Fragments
-seo-title: Experience Fragments
+title: Experience Fragments  in AEM Sites Authoring
 description: Experience Fragments
-seo-description: null
 uuid: 9a1d12ef-5690-4a2e-8635-a710775efa39
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ content-type: reference
 discoiquuid: 4c5b52c3-5e23-4125-9306-48bf2ded23cb
 docset: aem65
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: 2f635d5c856b35794ef2d62c15bc7cf4f4e57773
-workflow-type: ht
-source-wordcount: '1440'
-ht-degree: 100%
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+workflow-type: tm+mt
+source-wordcount: '1444'
+ht-degree: 76%
 
 ---
 
@@ -24,46 +22,46 @@ Ein Experience Fragment ist eine Gruppe aus einer oder mehreren Komponenten (ein
 
 Ein Experience Fragment:
 
-* ist Teil eines Erlebnisses (Seite).
-* kann übergreifend für mehrere Seiten verwendet werden.
-* basiert auf einer (bearbeitbaren) Vorlage, die seine Struktur und Komponenten definiert.
+* Ist Teil eines Erlebnisses (Seite).
+* Kann über mehrere Seiten hinweg verwendet werden.
+* Basiert auf einer Vorlage (nur bearbeitbar), um Struktur und Komponenten zu definieren.
 * Diese Vorlage wird verwendet, um die *Stammseite* des Experience Fragments zu erstellen.
-* besteht aus einer oder mehreren Komponenten mit Layout innerhalb eines Absatzsystems.
-* kann Experience Fragments enthalten.
-* kann mit anderen Komponenten (einschließlich anderen Experience Fragments) zu einer vollständigen Seite (Erlebnis) kombiniert werden.
+* besteht aus einer oder mehreren Komponenten mit Layout in einem Absatzsystem.
+* Kann andere Experience Fragments enthalten.
+* Kann mit anderen Komponenten (einschließlich anderen Experience Fragments) kombiniert werden, um eine vollständige Seite (Erlebnis) zu bilden.
 * Je nach Stammseite können eine oder mehrere Varianten erstellt werden.
 * Diese Varianten können Inhalte und/oder Komponenten gemeinsam nutzen.
 * kann in Bausteine untergliedert werden, die sich übergreifend für mehrere Varianten des Fragments verwenden lassen.
 
 Experience Fragments können in folgenden Fällen verwendet werden:
 
-* Wenn Autoren die Teile einer Seite (die sogenannten Fragmente eines Erlebnisses) wiederverwenden möchten, müssen sie das entsprechende Fragment kopieren und an der gewünschten Stelle einfügen. Das Erstellen und Verwalten dieser zum Kopieren/Einfügen vorgesehenen Erlebnisse sind zeitaufwendige und fehleranfällige Verfahren. Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
-* Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen. Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters für den Endnutzer bereitgestellt.
+* Wenn ein Autor Teile (ein Fragment eines Erlebnisses) einer Seite wiederverwenden möchte, muss er dieses Fragment kopieren und einfügen. Das Erstellen und Verwalten dieser zum Kopieren/Einfügen vorgesehenen Erlebnisse sind zeitaufwendige und fehleranfällige Verfahren. Mit Experience Fragments ersparen Sie sich das Kopieren/Einfügen.
+* Zur Unterstützung des Nutzungsszenarios mit Headless-Content-Management-Systemen. Autoren sollten AEM nur zum Erstellen von Inhalten nutzen, jedoch nicht für deren Bereitstellung für Kunden. In diesem Fall würde das Erlebnis über ein System/einen Touchpoint eines Drittanbieters für den Endnutzer bzw. die Endnutzerin bereitgestellt.
 
 >[!NOTE]
 >
->Für den Schreibzugriff auf Experience Fragments muss das betreffende Benutzerkonto der folgenden Gruppe angehören:
+>Damit für Experience Fragments Schreibzugriff besteht, muss das betreffende Benutzerkonto in der folgenden Gruppe registriert sein:
 >
 >    `experience-fragments-editors`
->Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
+Wenden Sie sich an Ihren Systemadministrator, falls Probleme auftreten.
 
 ## Wann ist die Verwendung von Experience Fragments sinnvoll? {#when-should-you-use-experience-fragments}
 
-Experience Fragments sollten in folgenden Fällen verwendet werden:
+Experience Fragments sollten verwendet werden:
 
-* Immer wenn Sie Erlebnisse wiederverwenden möchten.
+* Wann immer Sie Erlebnisse wiederverwenden möchten.
 
-   * Erlebnisse, die in Verbindung mit demselben oder ähnlichem Inhalt wiederverwendet werden
+   * Erlebnisse, die mit demselben oder ähnlichen Inhalten wiederverwendet werden
 
-* Wenn Sie AEM als Inhaltsbereitstellungs-Plattform für Dritte nutzen möchten.
+* Wenn Sie AEM als Plattform zur Inhaltsbereitstellung für Dritte verwenden.
 
-   * Nutzung durch beliebige Lösungen, bei denen AEM als Inhaltsbereitstellungs-Plattform fungieren soll
+   * Jede Lösung, die AEM als Content-Bereitstellungsplattform verwenden möchte
    * Einbetten von Inhalten in Touchpoints von Dritten
 
-* Wenn ein Erlebnis verschiedene Varianten oder Ausgabeformate aufweist.
+* Wenn Sie über ein Erlebnis mit unterschiedlichen Varianten oder Ausgabedarstellungen verfügen.
 
    * Kanal- oder kontextspezifische Varianten
-   * Erlebnisse, die als Gruppe sinnvoll eingesetzt werden können (z. B. eine Kampagne, die abhängig vom jeweiligen Kanal unterschiedliche Erlebnisse liefert)
+   * Erlebnisse, die eine Gruppierung sinnvoll sind (z. B. eine Kampagne mit unterschiedlichen Erlebnissen über verschiedene Kanäle hinweg)
 
 * Wenn Sie Omni-Channel-Commerce betreiben.
 
@@ -82,12 +80,12 @@ Mit dem Erstellen von Ordnern können Sie:
 * eine aussagekräftige Struktur für Ihre Experience Fragments erstellen; zum Beispiel nach Klassifizierung
 
    >[!NOTE]
-   >Es ist nicht erforderlich, die Struktur Ihrer Experience Fragments an der Seitenstruktur Ihrer Site auszurichten.
+   Es ist nicht erforderlich, die Struktur Ihrer Experience Fragments an der Seitenstruktur Ihrer Site auszurichten.
 
 * [Zuweisen der zulässigen Vorlagen auf Ordnerebene](#configure-allowed-templates-folder)
 
    >[!NOTE]
-   >Verwenden Sie den [Vorlagen-Editor](/help/sites-authoring/templates.md), wenn Sie eine eigene Vorlage erstellen möchten.
+   Verwenden Sie den [Vorlagen-Editor](/help/sites-authoring/templates.md), wenn Sie eine eigene Vorlage erstellen möchten.
 
 Das WKND-Projekt strukturiert einige Experience Fragments nach `Contributors`. Die verwendete Struktur zeigt auch, wie andere Funktionen, wie Multi-Site-Management (einschließlich Sprachkopien), verwendet werden können.
 
@@ -106,12 +104,12 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
 1. [Konfigurieren der zulässigen Experience Fragment-Vorlagen für diesen Ordner](#configure-allowed-templates-folder).
 
 >[!NOTE]
->Es ist auch möglich, die [zulässigen Vorlagen für Ihre Instanz](#configure-allowed-templates-instance) zu konfigurieren. Diese Methode wird jedoch **nicht** empfohlen, da die Werte bei der Aktualisierung überschrieben werden können.
+Es ist auch möglich, die [zulässigen Vorlagen für Ihre Instanz](#configure-allowed-templates-instance) zu konfigurieren. Diese Methode wird jedoch **nicht** empfohlen, da die Werte bei der Aktualisierung überschrieben werden können.
 
 ### Konfigurieren zulässiger Vorlagen für Ihren Ordner {#configure-allowed-templates-folder}
 
 >[!NOTE]
->Dies ist die empfohlene Methode zur Angabe der **zulässigen Vorlagen**, da die Werte bei der Aktualisierung nicht überschrieben werden.
+Dies ist die empfohlene Methode zur Angabe der **zulässigen Vorlagen**, da die Werte bei der Aktualisierung nicht überschrieben werden.
 
 1. Navigieren Sie zum gewünschten Ordner mit **Experience Fragments**.
 
@@ -128,15 +126,15 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
    ![Experience Fragment-Eigenschaften – Zulässige Vorlagen](/help/sites-authoring/assets/xf-folders-templates.png)
 
    >[!NOTE]
-   >Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
+   Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
 1. Klicken Sie auf **Speichern und schließen**.
 
 ### Konfigurieren zulässiger Vorlagen für Ihre Instanz {#configure-allowed-templates-instance}
 
 >[!CAUTION]
->Es wird nicht empfohlen, die **zulässigen Vorlagen** mit dieser Methode zu ändern, da die angegebenen Vorlagen bei der Aktualisierung überschrieben werden können.
->Verwenden Sie diesen Dialog nur zu Informationszwecken.
+Es wird nicht empfohlen, die **zulässigen Vorlagen** mit dieser Methode zu ändern, da die angegebenen Vorlagen bei der Aktualisierung überschrieben werden können.
+Verwenden Sie diesen Dialog nur zu Informationszwecken.
 
 1. Navigieren Sie zur gewünschten Konsole **Experience Fragments**.
 
@@ -149,7 +147,7 @@ Um einen Ordner für Ihre Experience Fragments zu erstellen und zu konfigurieren
    ![Experience Fragments konfigurieren](assets/ef-01.png)
 
    >[!NOTE]
-   >Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
+   Weitere Informationen finden Sie unter [Vorlagen für Experience Fragments](/help/sites-developing/experience-fragments.md#templates-for-experience-fragments).
 
 1. Klicken Sie auf **Speichern**.
 
@@ -173,17 +171,17 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 
 1. Geben Sie die **Eigenschaften** für das **Experience Fragment** ein.
 
-   Sie müssen einen **Titel** angeben. Wenn Sie das Feld **Name** leer lassen, wird der Name vom **Titel** abgeleitet.
+   A **Titel** ist zwingend erforderlich. Wenn die Variable **Name** leer gelassen wird, wird es aus dem **Titel**.
 
    ![xf-04](assets/xf-04.png)
 
    >[!NOTE]
-   >Tags aus der Experience Fragment-Vorlage werden nicht mit Tags auf dieser Experience Fragment-Stammseite zusammengeführt.
-   >Diese sind völlig voneinander getrennt.
+   Tags aus der Experience Fragment-Vorlage werden nicht mit Tags auf dieser Experience Fragment-Stammseite zusammengeführt.
+   Diese sind völlig voneinander getrennt.
 
 1. Klicken Sie auf **Erstellen**.
 
-   Daraufhin wird eine Meldung angezeigt. Klicken Sie auf:
+   Daraufhin wird eine Nachricht angezeigt. Klicken Sie auf:
 
    * **Fertig**, um zur Konsole zurückzukehren
 
@@ -194,38 +192,38 @@ Gehen Sie zum Erstellen eines Experience Fragment folgendermaßen vor:
 Der Experience Fragment Editor bietet Ihnen ähnliche Funktionen wie der normale Seiten-Editor.
 
 >[!NOTE]
->Weiterführende Informationen zu dessen Verwendung finden Sie unter [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md).
+Siehe [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md) für weitere Informationen zur Verwendung des Seiteneditors.
 
-Die folgende Beispielvorgehensweise veranschaulicht, wie Sie Teaser für Produkte erstellen:
+Das folgende Beispielverfahren zeigt, wie ein Teaser für ein Produkt erstellt wird:
 
-1. Ziehen Sie per Drag-and-Drop einen **Teaser** aus dem [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Ziehen und Ablegen eines **Teaser** von [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-05](assets/xf-05.png)
 
-1. Wählen Sie in der Komponenten-Symbolleiste die Option **[Konfigurieren](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**.
+1. Auswählen **[Konfigurieren](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** aus der Komponenten-Symbolleiste.
 1. Fügen Sie das **Asset** hinzu und definieren Sie die **Eigenschaften** nach Bedarf.
-1. Bestätigen Sie die Definitionen mit der Option **Fertig** (Häkchen).
+1. Validieren Sie die Definitionen mit **Fertig** (Häkchensymbol).
 1. Fügen Sie bei Bedarf weitere Komponenten hinzu.
 
 ## Erstellen einer Experience Fragment-Variante {#creating-an-experience-fragment-variation}
 
-Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragment erstellen:
+Je nach Bedarf können Sie Varianten Ihres Experience Fragment erstellen:
 
-1. Öffnen Sie ein Fragment zur [Bearbeitung](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
+1. Öffnen Sie das Fragment für [Bearbeiten](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
 1. Öffnen Sie die Registerkarte **Varianten**.
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
-1. Die Option **Erstellen** ermöglicht es Ihnen, Folgendes zu erstellen:
+1. **Erstellen** ermöglicht Ihnen Folgendes zu erstellen:
 
    * **Variante**
    * **Variante als [Live Copy](/help/sites-administering/msm.md#live-copies)**
 
-1. Definieren Sie die gewünschten Eigenschaften:
+1. Definieren Sie die erforderlichen Eigenschaften:
 
    * **Vorlage**
    * **Titel**
-   * **Name** (Wenn Sie das Feld leer lassen, wird der Name vom Titel abgeleitet.)
+   * **Name**; Wenn Sie das Feld leer lassen, wird es aus dem Titel abgeleitet
    * **Beschreibung**
    * **Varianten-Tags**
 
@@ -237,9 +235,9 @@ Je nach Ihren Anforderungen können Sie Varianten eines Experience Fragment erst
 
 ## Verwenden eines Experience Fragment {#using-your-experience-fragment}
 
-Jetzt können Sie das Experience Fragment auf Ihren Seiten verwenden:
+Sie können Ihr Experience Fragment jetzt beim Erstellen Ihrer Seiten verwenden:
 
-1. Öffnen Sie eine beliebige Seite, um sie zu bearbeiten.
+1. Öffnen Sie eine beliebige Seite zur Bearbeitung.
 
    Zum Beispiel: [https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html](https://localhost:4502/editor.html/content/we-retail/language-masters/en/products/men.html)
 
@@ -255,7 +253,7 @@ Jetzt können Sie das Experience Fragment auf Ihren Seiten verwenden:
    ![xf-09](assets/xf-09.png)
 
    >[!NOTE]
-   >In der Komponenten-Symbolleiste dient die Option „Bearbeiten“ als Kurzbefehl zum Öffnen eines Fragments im Editor für Fragmente.
+   In der Komponenten-Symbolleiste dient die Option „Bearbeiten“ als Kurzbefehl zum Öffnen eines Fragments im Editor für Fragmente.
 
 ## Bausteine {#building-blocks}
 
@@ -265,7 +263,7 @@ Sie können eine oder mehrere Komponenten auswählen, um einen Baustein zur Wied
 
 So erstellen Sie einen neuen Baustein:
 
-1. Wählen Sie im Editor für Experience Fragments die Komponenten, die wiederverwendet werden sollen:
+1. Wählen Sie im Experience Fragment-Editor die Komponenten aus, die Sie wiederverwenden möchten:
 
    ![xf-10](assets/xf-10.png)
 
@@ -283,7 +281,7 @@ So erstellen Sie einen neuen Baustein:
 
 #### Verwalten eines Bausteins {#managing-a-building-block}
 
-Der Baustein wird auf der Registerkarte **Bausteine** angezeigt. Für jeden Baustein sind die folgenden Aktionen verfügbar:
+Ihr Baustein wird im **Bausteine** Registerkarte. Für jeden Block sind folgende Aktionen verfügbar:
 
 * Zur Hauptvariante wechseln: zum Öffnen der Stammseiten-Variante in einer neuen Registerkarte
 * Umbenennen
@@ -310,8 +308,8 @@ Details zu Ihrem Fragment können wie folgt angezeigt werden:
    Die Eigenschaften werden auf verschiedenen Registerkarten angezeigt:
 
    >[!CAUTION]
-   >Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
-   >Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften** öffnen, werden die entsprechenden [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) angezeigt.
+   Diese Registerkarten werden angezeigt, wenn Sie **Eigenschaften** in der Konsole „Experience Fragments“ öffnen.
+   Wenn Sie beim Bearbeiten eines Experience Fragment **Eigenschaften** öffnen, werden die entsprechenden [Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md) angezeigt.
 
    ![ef-05](assets/ef-05.png)
 
@@ -326,7 +324,7 @@ Details zu Ihrem Fragment können wie folgt angezeigt werden:
       * **Anzahl der Web-Varianten** – nur zur Information
       * **Anzahl der Nicht-Webvarianten** – nur zur Information ****
 
-      * **Anzahl der Seiten, auf denen dieses Fragment verwendet wird** – nur zur Information
+      * **Anzahl der Seiten, die dieses Fragment verwenden** - nur Informationen
    * **Cloud Services**
 
       * **Cloud-Konfiguration**
@@ -348,10 +346,10 @@ Details zu Ihrem Fragment können wie folgt angezeigt werden:
 Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe des Browsers zugreifen.
 
 >[!NOTE]
->Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
+Diese ist zwar direkt über den Browser verfügbar, [aber ihr Hauptzweck ist es, anderen Programmen (beispielsweise Web-Programmen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL](/help/sites-developing/experience-fragments.md#the-plain-html-rendition).
 
 ## Exportieren von Experience Fragments {#exporting-experience-fragments}
 
-Standardmäßig werden Experience Fragments im HTML-Format bereitgestellt. Dies kann von AEM und Drittkanalanbietern gleichermaßen verwendet werden.
+Standardmäßig werden Experience Fragments im HTML-Format bereitgestellt. Dies kann sowohl von AEM als auch von Drittanbieterkanälen verwendet werden.
 
 Für den Export nach Adobe Target kann JSON ebenfalls verwendet werden. Vollständige Informationen finden Sie unter [Target-Integration mit Experience Fragments](/help/sites-administering/experience-fragments-target.md).

@@ -1,8 +1,6 @@
 ---
-title: Best Practices
-seo-title: Best Practices
-description: Wie AEM am effizientesten und effektivsten verwendet wird
-seo-description: How to use AEM in the most efficient and most effective way possible
+title: Best Practices für die Verwendung von AEM Authoring
+description: Verwendung von AEM auf die effizienteste und effizienteste Weise.
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,18 +8,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '287'
-ht-degree: 100%
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+workflow-type: tm+mt
+source-wordcount: '291'
+ht-degree: 64%
 
 ---
 
 # Best Practices{#best-practices}
 
-Best Practices für die Bearbeitung beschreiben, wie Sie AEM am effizientesten und effektivsten verwenden. Diese laufend erweiterte Liste von Themen enthält eine Vielzahl von Bereichen in AEM.
+Best Practices für die Bearbeitung beschreiben, wie Sie AEM am effizientesten und effektivsten verwenden. Diese wachsende Themenliste umfasst verschiedene Bereiche in AEM.
 
-Die folgenden Bereiche enthalten Hinweise zu bewährten Vorgehensweisen:
+In den folgenden Bereichen finden Sie Dokumentationen zu Best Practices:
 
 * [Assets](#assets)
 * [Sites](#sites)
@@ -33,7 +31,7 @@ Best Practices für die Verwaltung, Bereitstellung, Pflege und Entwicklung finde
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
 * [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
 
-Spezielle Dokumente werden in den folgenden Tabellen beschrieben und verknüpft.
+Spezifische Dokumente werden in den folgenden Tabellen beschrieben und mit ihnen verknüpft.
 
 ## Assets {#assets}
 
@@ -49,7 +47,7 @@ Best Practices rund um Assets, einschließlich der Dynamic Media-Funktionen und 
   <tr>
    <td>Videokodierung</td>
    <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Best Practices für die Kodierung</a></td>
-   <td>Beschreibt Best Practices rund um die Kodierung von Quellvideodateien.</td>
+   <td>Beschreibt Best Practices für die Kodierung von Quellvideodateien.</td>
   </tr>
   <tr>
    <td>Dynamic Imaging</td>
@@ -66,7 +64,7 @@ Best Practices rund um Assets, einschließlich der Dynamic Media-Funktionen und 
 
 ## Sites {#sites}
 
-Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practices wie folgt beschrieben:
+Für die Verwaltung und Bearbeitung von Website-Inhalten gelten folgende Best Practices:
 
 |  |  |  |
 |---|---|---|
@@ -77,5 +75,5 @@ Zur Verwaltung und Bearbeitung Ihrer Website-Inhalte wurden einige Best Practice
 
 |  |  |  |
 |---|---|---|
-| Adaptive Formulare | [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) | Beschreibt Best Practices für das Einrichten, Bearbeiten und Anpassen adaptiver Formulare |
-| HTML5-Formulare | [Best Practices für den Entwurf von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md) | Beschreibt Best Practices für Arbeiten am Layout und Design von HTML5-Formularen |
+| Adaptive Formulare | [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) | Beschreibt Best Practices zum Einrichten, Bearbeiten und Anpassen adaptiver Formulare. |
+| HTML5-Formulare | [Best Practices für die Erstellung von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md) | Beschreibt Best Practices für die Arbeit am Layout und Design von HTML5-Formularen. |

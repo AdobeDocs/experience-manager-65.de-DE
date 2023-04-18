@@ -1,8 +1,6 @@
 ---
-title: Experience Fragments
-seo-title: Experience Fragments
+title: Experience Fragments in der AEM Sites-Entwicklung
 description: Erfahren Sie mehr über das Anpassen von Experience Fragments.
-seo-description: Learn about customizing Experience Fragments.
 uuid: fc9f7e59-bd7c-437a-8c63-de8559b5768d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ content-type: reference
 discoiquuid: c02e713e-15f3-408b-879a-d5eb014aef02
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 6e54073a0c1d67218283b096db3f2e5597f10376
-workflow-type: ht
-source-wordcount: '1784'
-ht-degree: 100%
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+workflow-type: tm+mt
+source-wordcount: '1787'
+ht-degree: 96%
 
 ---
 
@@ -38,7 +36,7 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 
 Diese ist über den Browser verfügbar, aber ihr Hauptzweck ist es, anderen Applikationen (beispielsweise Web-Applikationen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL.
 
-Die Plain-HTML-Wiedergabe fügt den Protokoll-, Host- und Kontextpfad zu Pfaden hinzu, welche:
+Die einfache HTML-Ausgabedarstellung fügt den Protokoll-, Host- und Kontextpfad zu Pfaden hinzu, die:
 
 * den folgenden Typ aufweisen: `src`, `href` oder `action`
 
@@ -50,7 +48,7 @@ Beispiel:
 
 >[!NOTE]
 >
->Links verweisen immer auf die Veröffentlichungsinstanz. Sie sind für die Nutzung durch Dritte bestimmt, sodass der Link immer von der Veröffentlichungsinstanz und nicht von der Autoreninstanz aufgerufen wird.
+>Links verweisen immer auf die Veröffentlichungsinstanz. Sie sollen von Dritten genutzt werden, sodass der Link immer von der Veröffentlichungsinstanz und nicht vom Autor aufgerufen wird.
 
 ![xf-14](assets/xf-14.png)
 

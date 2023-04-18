@@ -1,8 +1,6 @@
 ---
-title: Aktualisierung auf AEM 6.5 Forms
-seo-title: Upgrade to AEM 6.5 Forms
+title: Aktualisierung auf AEM 6.5 Forms auf OSGi
 description: Sie können direkt von AEM 6.1 Forms, AEM 6.2 Forms und LiveCycle ES4 SP1 auf AEM 6.3 Forms aktualisieren.
-seo-description: You can perform a direct upgrade from AEM 6.1 Forms, AEM 6.2 Forms, and LiveCycle ES4 SP1 to AEM 6.3 Forms.
 uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -11,10 +9,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 1e39455e-f588-42a2-91f5-daefcfed82a0
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '931'
-ht-degree: 100%
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 74%
 
 ---
 
@@ -41,15 +39,15 @@ Führen Sie die folgenden Schritte durch, um von AEM 6.3 Forms oder AEM 6.4 Form
 
       >[!NOTE]
       >
-      >Sobald der Server ausgeführt wird, bleiben einige AEM Forms-Pakete im Installationsstatus. Die Anzahl von Paketen kann für jede Installation variieren. Sie können den Zustand dieser Pakete ignorieren. Die Pakete sind unter https://&#39;[server]:[port]&#39;/system/console/ aufgeführt.
+      >Nachdem der Server ausgeführt wurde, bleiben einige AEM Forms-Bundles im Installationsstatus. Die Anzahl der Bundles kann für jede Installation variieren. Sie können den Status dieser Bundles sicher ignorieren. Die Pakete sind unter https://&#39;[server]:[port]&#39;/system/console/ aufgeführt.
 
-1. Installieren des AEM Forms-Add-on-Pakets. Dies umfasst die folgenden Schritte:
+1. Installieren des AEM Forms-Add-on-Pakets. Die Schritte sind unten aufgeführt:
 
    1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
    1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
-   1. Im Abschnitt **[!UICONTROL Filter]**:
-      1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]**.
-      1. Wählen Sie die Version und den Typ für das Paket aus. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
+   1. Im **[!UICONTROL Filter]** Abschnitt:
+      1. Auswählen **[!UICONTROL Forms]** von **[!UICONTROL Lösung]** Dropdown-Liste.
+      1. Wählen Sie die Version aus und geben Sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
    1. Tippen Sie auf den für Ihr Betriebssystem zutreffenden Paketnamen, wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Herunterladen]**.
    1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
    1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
@@ -58,11 +56,11 @@ Führen Sie die folgenden Schritte durch, um von AEM 6.3 Forms oder AEM 6.4 Form
 
       >[!NOTE]
       >
-      >Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Halten Sie den Server nicht sofort an.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen „ServiceEvent REGISTERED“ und „ServiceEvent UNREGISTERED“ nicht mehr in der Datei „&lt;crx-Repository>/error.log“ angezeigt werden und das Protokoll stabil ist. Beachten Sie zudem, dass einige Pakete im installierten Zustand verbleiben können. Sie können den Status dieser Pakete ignorieren.
+      >Sobald das Paket installiert ist, werden Sie aufgefordert, die AEM-Instanz neu zu starten. **Beenden Sie den Server nicht sofort.** Warten Sie vor dem Anhalten des AEM Forms-Servers, bis die Meldungen ServiceEvent REGISTERED und ServiceEvent UNREGISTERED nicht mehr in der &lt;crx-repository>/error.log und das Protokoll ist stabil. Beachten Sie außerdem, dass einige Pakete im installierten Status verbleiben können. Sie können den Status dieser Pakete ignorieren.
 
 1. Starten Sie die AEM-Instanz neu.
 
-1. Führen Sie auf die Installation folgenden Aufgaben durch.
+1. Führen Sie nach der Installation Aktivitäten durch.
 
    * **Migrationsdienstprogramm ausführen**
 
@@ -84,7 +82,7 @@ Führen Sie die folgenden Schritte durch, um von AEM 6.3 Forms oder AEM 6.4 Form
 
    * **(Nur wenn Sie von AEM 6.2 Forms oder früheren Versionen aktualisieren) Konfigurieren Sie Adobe Sign neu**
 
-      Wenn Adobe Sign in der vorherigen Version von AEM Forms konfiguriert war, müssen Sie Adobe Sign über die AEM-Cloud-Services erneut konfigurieren. Weitere Informationen finden Sie unter [Adobe Sign mit AEM Forms integrieren](../../forms/using/adobe-sign-integration-adaptive-forms.md).
+      Wenn Sie Adobe Sign in der vorherigen Version von AEM Forms konfiguriert haben, konfigurieren Sie Adobe Sign von AEM Cloud Services neu. Weitere Informationen finden Sie unter [Adobe Sign mit AEM Forms integrieren](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
    * **Unterstützung für jQuery**
 
@@ -94,18 +92,18 @@ Führen Sie die folgenden Schritte durch, um von AEM 6.3 Forms oder AEM 6.4 Form
       * Entfernen Sie nicht unterstützte APIs aus den benutzerdefinierten Komponenten. Siehe [Upgrade-Handbuch](https://jquery.com/upgrade-guide/3.0/) für die Liste der entfernten APIs. Beispielsweise wird die Unterstützung für die APIs load(), .unload() und .error() entfernt. Verwenden Sie die Methode .on() anstelle der oben genannten APIs. Ändern Sie beispielsweise $(&quot;img&quot;).load(fn) to $(&quot;img&quot;).on(&quot;load&quot;, fn).
    * **(Nur wenn Sie von AEM 6.2 Forms oder früheren Versionen aktualisieren) Konfigurieren Sie Analysen und Berichte neu**
 
-      In AEM 6.4 Forms stehen keine Traffic-Variablen für Quelle und Erfolgsereignis für Impressionen zur Verfügung. Wenn Sie von AEM 6.2 Forms oder vorherigen Versionen aktualisieren, sendet AEM Forms daher keine Daten mehr an den Adobe Analytics-Server und es stehen keine Analyseberichte für adaptive Formulare zur Verfügung. Darüber hinaus werden mit AEM 6.4 Forms Traffic-Variablen für die Version der Formularanalyse und das Erfolgsereignis mit Angabe der Dauer der Aktivität in einem Feld eingeführt. Konfigurieren Sie daher die Analysen und Berichte erneut für Ihre AEM Forms-Umgebung. Ausführliche Anweisungen finden Sie unter [Konfigurieren von Analyse und Berichten](../../forms/using/configure-analytics-forms-documents.md).
+      In AEM 6.4 Forms sind keine Traffic-Variablen für Quelle und Erfolgsereignis für Impressionen verfügbar. Wenn Sie von AEM 6.2 Forms oder vorherigen Versionen aktualisieren, sendet AEM Forms daher keine Daten mehr an den Adobe Analytics-Server und es stehen keine Analyseberichte für adaptive Formulare zur Verfügung. Darüber hinaus führt Forms AEM 6.4 Traffic-Variablen für die Version der Formularanalyse und das Erfolgsereignis für die für ein Feld verbrachte Zeit ein. Konfigurieren Sie daher die Analyse und Berichte für Ihre AEM Forms-Umgebung neu. Ausführliche Anweisungen finden Sie unter [Konfigurieren von Analysen und Berichten](../../forms/using/configure-analytics-forms-documents.md).
 
 
 1. Vergewissern Sie sich, dass der Server erfolgreich aktualisiert und alle Daten migriert wurden und dass der Server einwandfrei funktioniert.
 
    * **Überprüfen Sie den Status der Pakete:** Stellen Sie sicher, dass alle Pakete sich im aktiven Status befinden.
-   * **Überprüfen Sie Replikation und Rückwärtsreplikation:** Veröffentlichen Sie einige migrierte Formulare, füllen Sie sie aus und übermitteln Sie sie. Überprüfen Sie auch die gesendeten Daten.
-   * **Überprüfen Sie den Zugriff auf die Administrator- und Benutzeroberflächen:** Melden Sie sich über ein Administratorkonto bei der AEM-Instanz an und überprüfen Sie, ob Sie Zugriff auf die folgenden URLs haben:
+   * **Überprüfen Sie die Replikation und Rückwärtsreplikation:** Veröffentlichen, Ausfüllen und Senden einiger migrierter Formulare. Überprüfen Sie auch die gesendeten Daten.
+   * **Überprüfen Sie den Zugriff auf die Administrator- und Entwicklerbenutzeroberflächen:** Melden Sie sich von einem Administratorkonto aus bei AEM Instanz an und stellen Sie sicher, dass Sie Zugriff auf die folgenden URLs haben:
 
       * `https://'[server]:[port]'/crx/packmgr`
       * `https://'[server]:[port]'/crx/de`
       * `https://'[server]:[port]'/aem/forms.html/content/dam/formsanddocuments`
 
    >[!NOTE]
-   >In AEM 6.4 Forms hat sich die Struktur des crx-Repository geändert. Verwenden Sie nach dem Upgrade auf AEM 6.5 Forms die geänderten Pfade für die Anpassung, die Sie neu erstellen. Sie finden die vollständige Liste der geänderten Pfade unter [Forms Repository-Restrukturierung in AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).
+   In AEM 6.4 Forms hat sich die Struktur des crx-Repository geändert. Verwenden Sie nach dem Upgrade auf AEM 6.5 Forms die geänderten Pfade für die Anpassung, die Sie neu erstellen. Sie finden die vollständige Liste der geänderten Pfade unter [Forms Repository-Restrukturierung in AEM](/help/sites-deploying/forms-repository-restructuring-in-aem-6-5.md).

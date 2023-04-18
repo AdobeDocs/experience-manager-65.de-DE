@@ -1,7 +1,7 @@
 ---
-title: Anzeigen von Seitenanalysedaten
+title: Anzeigen von Seitenanalysedaten zur Messung der Effektivität des Seiteninhalts
 seo-title: Seeing Page Analytics Data
-description: Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
+description: Verwenden Sie Seitenanalysedaten, um die Effektivität des Seiteninhalts zu messen.
 seo-description: Use page analytics data to gauge the effectiveness of their page content
 uuid: 5398a5d5-0239-4194-a403-77f5e6fcd741
 contentOwner: Guillaume Carlino
@@ -12,43 +12,43 @@ discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '438'
-ht-degree: 100%
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 47%
 
 ---
 
 # Anzeigen von Seitenanalysedaten{#seeing-page-analytics-data}
 
-Verwenden Sie Seitenanalysedaten, um die Wirkung des Seiteninhalts zu messen.
+Verwenden Sie Seitenanalysedaten, um die Effektivität des Seiteninhalts zu messen.
 
-## In der Konsole sichtbare Analysedaten {#analytics-visible-from-the-console}
+## In der Konsole sichtbare Analytics {#analytics-visible-from-the-console}
 
 ![spad-01](assets/spad-01.png)
 
-Seitenanalysedaten werden in der [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) der Konsole „Sites“ angezeigt. Wenn Seiten im Listenformat angezeigt werden, sind die folgenden Spalten standardmäßig verfügbar:
+Seitenanalysedaten werden angezeigt in [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) der Sites-Konsole. Wenn die Seiten im Listenformat angezeigt werden, sind die folgenden Spalten standardmäßig verfügbar:
 
 * Seitenansichten
-* Individuelle Besucher
+* Unique Visitors
 * Zeit auf Seite
 
-Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und gibt außerdem an, ob der Wert sich seit dem vorherigen Berichtszeitraum erhöht oder verringert hat. Die Daten, die Sie sehen, werden alle 12 Stunden aktualisiert.
+Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und zeigt auch an, ob der Wert seit dem vorherigen Berichtszeitraum gestiegen oder gesunken ist. Die angezeigten Daten werden alle 12 Stunden aktualisiert.
 
 >[!NOTE]
 >
->Zum Ändern des Aktualisierungszeitraums [konfigurieren Sie das Importintervall](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>So ändern Sie den Aktualisierungszeitraum: [Konfigurieren des Importintervalls](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Öffnen Sie die **Sites**-Konsole, z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).
 1. Klicken oder tippen Sie ganz rechts oben in der Symbolleiste auf das Symbol, um **Listenansicht** auszuwählen. (Das angezeigte Symbol ist von der [aktuellen Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) abhängig.)
 
-1. Klicken oder tippen Sie wieder ganz rechts oben in der Symbolleiste auf das Symbol und wählen Sie dann **Anzeigeeinstellungen** aus. Das Dialogfeld **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
+1. Klicken oder tippen Sie oben rechts in der Symbolleiste auf das Symbol und wählen Sie **Anzeigeeinstellungen**. Die **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
 
    ![spad-02](assets/spad-02.png)
 
-### Auswählen des Berichtszeitraums {#selecting-the-reporting-period}
+### Berichtszeitraum auswählen {#selecting-the-reporting-period}
 
-Wählen Sie den Berichtszeitraum aus, für den Analysedaten in der Konsole „Sites“ angezeigt werden:
+Wählen Sie den Berichtszeitraum aus, für den Analytics-Daten in der Sites-Konsole angezeigt werden:
 
 * Daten der letzten 30   Daten
 * Daten der letzten 90 Tage
@@ -60,11 +60,11 @@ Der aktuelle Berichtszeitraum wird in der Symbolleiste der Konsole „Sites“ (
 
 ### Konfigurieren der verfügbaren Datenspalten {#configuring-available-data-columns}
 
-Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites“ so konfigurieren, dass Autoren zusätzliche Analysespalten sehen können.
+Mitglieder der Benutzergruppe &quot;Analytics-Administratoren&quot;können die Konsole &quot;Sites&quot;konfigurieren, damit Autoren zusätzliche Analytics-Spalten sehen können.
 
 >[!NOTE]
 >
->Wenn eine Struktur von Seiten untergeordnete Elemente enthält, die mit verschiedenen Adobe Analytics-Cloudkonfigurationen verbunden sind, können Sie die verfügbaren Datenspalten für die Seiten nicht konfigurieren.
+>Wenn ein Seitenbaum untergeordnete Elemente enthält, die verschiedenen Adobe Analytics-Cloud-Konfigurationen zugeordnet sind, können Sie die verfügbaren Datenspalten für die Seiten nicht konfigurieren.
 
 1. Verwenden Sie in der Listenansicht die Ansichtsselektoren (rechts neben der Symbolleiste) und wählen Sie **Anzeigeeinstellungen** und anschließend **Benutzerdefinierte Analysedaten hinzufügen** aus.
 
@@ -80,12 +80,12 @@ Mitglieder der Analyse-Administratorbenutzergruppe können die Konsole „Sites�
 
 Öffnen Sie [Inhaltseinsicht](/help/sites-authoring/content-insights.md) von der Konsole „Sites“ aus, um die Seiteneffektivität weiter zu untersuchen.
 
-1. Wählen Sie in der Konsole „Sites“ die Seite aus, für die Sie Inhaltseinblicke sehen möchten.
-1. Klicken Sie in der Symbolleiste auf das Symbol „Analyse und Empfehlungen“.
+1. Wählen Sie in der Sites-Konsole die Seite aus, für die Sie Inhaltseinblicke anzeigen möchten.
+1. Klicken Sie in der Symbolleiste auf das Symbol Analytics und Recommendations .
 
    ![](do-not-localize/chlimage_1-14.png)
 
-## Im Seiteneditor sichtbare Analysedaten (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
+## Im Seiteneditor sichtbare Analytics (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >

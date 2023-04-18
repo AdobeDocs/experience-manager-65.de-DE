@@ -1,8 +1,6 @@
 ---
-title: Benennungskonventionen
-seo-title: Naming Conventions
+title: Namenskonventionen von Knoten im Java Content Repository
 description: Knoten im Repository unterliegen Benennungskonventionen des Java Content Repository
-seo-description: Nodes in the repository are subject to naming conventions of the Java Content Repository
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '301'
-ht-degree: 100%
+source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 86%
 
 ---
 
@@ -61,17 +59,17 @@ Die standardmäßige Touch-optimierte Benutzeroberfläche:
 
 ### Klassische Benutzeroberfläche {#classic-ui}
 
-Die klassische Benutzeroberfläche gibt strengere Einschränkungen vor:
+Die klassische Benutzeroberfläche enthält strengere Einschränkungen:
 
-* Validiert den Namen bei expliziten Knotennamen, wenn entweder:
+* Validiert den Namen, wenn entweder:
 
    * ein Seitentitel zum Konvertieren in den Knotennamen angegeben ist
    * ein expliziter Knotenname angegeben ist
 
 * Gültige Zeichen (beim Erstellen innerhalb der klassischen Benutzeroberfläche sind nur diese Zeichen tatsächlich gültig, obwohl `PageManagerImpl` weitere Zeichen erlauben würde):
 
-   * „a“ bis „z“
-   * „A“ bis „Z“
-   * „0“ bis „9“
+   * &quot;a&quot;bis &quot;z&quot;
+   * &quot;A&quot;bis &quot;Z&quot;
+   * &quot;0&quot;bis &quot;9&quot;
    * _ (Unterstrich)
    * `-` (Strich/Minus)
