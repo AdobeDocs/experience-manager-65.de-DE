@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 252924afb70dd311a27d04278fbe363db15e9519
+source-git-commit: 9273282b26aeab5f65f0f05aa8ad754962dc59ec
 workflow-type: tm+mt
-source-wordcount: '850'
+source-wordcount: '853'
 ht-degree: 43%
 
 ---
@@ -40,7 +40,7 @@ Ein Service-Benutzer mit dem Namen **ssl-service** wurde für diese Funktion ers
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Nachdem Sie die Anmeldedaten eingegeben haben, klicken Sie auf **Nächste** in der oberen rechten Ecke der Seite. Laden Sie dann den zugehörigen privaten Schlüssel und das zugehörige Zertifikat für die SSL-Verbindung hoch.
+1. Nachdem Sie die Anmeldedaten eingegeben haben, klicken Sie auf **Nächste** in der oberen rechten Ecke der Seite. Laden Sie dann den zugehörigen privaten Schlüssel und das zugehörige Zertifikat für die SSL-/TLS-Verbindung hoch.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -152,7 +152,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 ### Über Package {#via-package}
 
-Alternativ können Sie die SSL-Einrichtung automatisieren, indem Sie ein Paket hochladen, das bereits die folgenden erforderlichen Elemente enthält:
+Alternativ können Sie die SSL-/TLS-Einrichtung automatisieren, indem Sie ein Paket hochladen, das bereits die folgenden erforderlichen Elemente enthält:
 
 * Der Keystore des ssl-service-Benutzers. Dies befindet sich unter */home/users/system/security/ssl-service/keystore* im Repository.
 * Die `GraniteSslConnectorFactory`-Konfiguration
@@ -178,7 +178,7 @@ Unten finden Sie ein Beispiel für die Erstellung eines selbstsignierten Zertifi
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. Generieren Sie das SSL-Zertifikat und signieren Sie es mit dem privaten Schlüssel. In diesem Beispiel läuft in einem Jahr ab:
+1. Generieren Sie das SSL-/TLS-Zertifikat und signieren Sie es mit dem privaten Schlüssel. In diesem Beispiel läuft in einem Jahr ab:
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
