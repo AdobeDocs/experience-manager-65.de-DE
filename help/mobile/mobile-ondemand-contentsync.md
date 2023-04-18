@@ -1,8 +1,6 @@
 ---
 title: Mobil mit Inhaltssynchronisierung
-seo-title: Mobile with Content Sync
 description: Auf dieser Seite erfahren Sie mehr über die Inhaltssynchronisierung. Seiten, die in AEM erstellt werden, können als App-Inhalt verwendet werden, selbst wenn das Gerät offline ist. Da AEM Seiten außerdem auf Webstandards basieren, funktionieren sie plattformübergreifend und ermöglichen es Ihnen, sie in jeden nativen Wrapper einzubetten. Diese Strategie reduziert den Entwicklungsaufwand und ermöglicht es Ihnen, App-Inhalte einfach zu aktualisieren.
-seo-description: Follow this page to learn about Content Sync. Pages that are authored in AEM can be used as app content, even when the device is offline. Furthermore, because AEM pages are based on web standards, they work cross-platform enabling you to embed them in any native wrapper. This strategy reduces develoment effort and enables you to easily update app content.
 uuid: 11f74cc5-99a5-4186-9b60-b19351305432
 contentOwner: User
 content-type: reference
@@ -10,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 8fb70ca4-86fc-477d-9773-35b84d5e85a8
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
 source-wordcount: '2993'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Verwenden Sie die Inhaltssynchronisierung , um Inhalte zu verpacken, damit sie in nativen mobilen Anwendungen verwendet werden können. Seiten, die in AEM erstellt werden, können als App-Inhalt verwendet werden, selbst wenn das Gerät offline ist. Da AEM Seiten außerdem auf Webstandards basieren, funktionieren sie plattformübergreifend und ermöglichen es Ihnen, sie in jeden nativen Wrapper einzubetten. Diese Strategie reduziert den Entwicklungsaufwand und ermöglicht es Ihnen, App-Inhalte einfach zu aktualisieren.
 
@@ -150,9 +148,9 @@ Der Bildtyp wird verwendet, um das We Retail-Logo in die ZIP-Datei einzuschließ
 
 * **selector** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele: *touch* zum Rendern mobiler Versionen einer Seite.
 
-* **deep** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert lautet *true.*
+* **deep** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert ist *wahr.*
 
-* **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert lautet *true*.
+* **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert ist *true*.
 
    Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp foundation/components/image zur Aufnahme berücksichtigt. Sie können weitere Ressourcentypen hinzufügen, indem Sie die **Day CQ WCM Pages Update Handler** in der Webkonsole.
 
@@ -244,7 +242,7 @@ Auf die Konsole kann unter folgender Adresse zugegriffen werden:
 
 `http://localhost:4502/libs/cq/contentsync/content/console.html`
 
-Diese sieht nun wie folgt aus:
+Sie sieht wie folgt aus:
 
 ![chlimage_1-50](assets/chlimage_1-50.png)
 

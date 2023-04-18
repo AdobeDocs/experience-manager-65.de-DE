@@ -1,8 +1,6 @@
 ---
-title: Bearbeiten von Seiten (Authoring)
-seo-title: Authoring Pages
-description: Die Aufgaben, die in das Bearbeiten von Seiteninhalten involviert sind
-seo-description: The tasks involved when authoring a content page
+title: Inhaltsseiten in AEM erstellen
+description: Die Aufgaben, die beim Bearbeiten einer Inhaltsseite erforderlich sind.
 uuid: 454d94aa-da27-45cb-bbb2-7bfcef103806
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,28 +9,28 @@ content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '312'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '315'
+ht-degree: 81%
 
 ---
 
 # Bearbeiten von Seiten (Authoring){#authoring-pages}
 
-Die folgenden Abschnitte enthalten jeweils einen Überblick über die Bearbeitung mit AEM:
+Im Folgenden finden Sie zwei Übersichtstypen zum Authoring mit AEM:
 
 * [Erste Schritte für Autoren](/help/sites-authoring/first-steps.md) – eine Einführung für neue Autoren
 
-* [Kurzanleitung für die Seitenbearbeitung](/help/sites-authoring/qg-page-authoring.md) – eine (zusammenfassende) Kurzanleitung zu den Hauptaktionen
+* [Kurzanleitung zum Bearbeiten von Seiten](/help/sites-authoring/qg-page-authoring.md) - Kurzanleitung (auf hoher Ebene) zu den wichtigsten Aktionen
 
 >[!NOTE]
 >
 >Dieser Abschnitt enthält die Aufgaben, die bei der Bearbeitung von Inhaltsseiten ausgeführt werden. Es gibt viele zusätzliche Funktionen, die eng mit der Erstellung von Seiten zusammenhängen. Weitere Informationen finden Sie in anderen Abschnitten des [Leitfadens für die Seitenbearbeitung](/help/sites-authoring/home.md).
 
-## Kurze Übersicht der Funktionen zur Seitenbearbeitung (Authoring) {#quick-overview-of-features-used-for-authoring-pages}
+## Schneller Überblick über die Funktionen für die Seitenbearbeitung {#quick-overview-of-features-used-for-authoring-pages}
 
-Zur Unterstützung der Seitenbearbeitung enthält die Autorenumgebung unter anderem folgende Funktionen:
+Um Sie beim Erstellen von Seiten zu unterstützen, bietet die Autorenumgebung Funktionen wie:
 
 * **Drag-and-Drop**
 Komponenten (wie Text, Bild) und digitale Assets (wie Bilder) können auf der Seite positioniert werden, indem sie einfach per Drag-and-Drop an die gewünschte Position verschoben werden.

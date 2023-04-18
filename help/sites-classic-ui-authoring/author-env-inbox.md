@@ -1,8 +1,6 @@
 ---
 title: Ihr Posteingang
-seo-title: Your Inbox
-description: Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten, beispielsweise Benachrichtigungen zu Arbeitselementen oder Aufgaben bezüglich Aktionen, die Sie für Seiteninhalte durchführen müssen.
-seo-description: You can receive notifications from various areas of AEM such as notification about work items or tasks that represent actions that you need to perform on page content.
+description: Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten, z. B. Benachrichtigungen zu Arbeitselementen oder Aufgaben, die Aktionen darstellen, die Sie für Seiteninhalte ausführen müssen.
 uuid: e7ba9150-957d-4f84-a570-2f3d83792472
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,27 +9,27 @@ content-type: reference
 discoiquuid: ce2a1475-49cf-43e6-bfb9-006884ce3881
 docset: aem65
 exl-id: 52ea2ca2-eb1c-4bed-b52d-feef37c6afd6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '581'
-ht-degree: 100%
+ht-degree: 27%
 
 ---
 
 # Ihr Posteingang{#your-inbox}
 
-Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten, beispielsweise Benachrichtigungen zu Arbeitselementen oder Aufgaben bezüglich Aktionen, die Sie für Seiteninhalte durchführen müssen.
+Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM erhalten, z. B. Benachrichtigungen zu Arbeitselementen oder Aufgaben, die Aktionen darstellen, die Sie für Seiteninhalte ausführen müssen.
 
-Diese Benachrichtigungen werden je nach Benachrichtigungstyp in zwei verschiedene Posteingänge zugestellt:
+Sie erhalten diese Benachrichtigungen in zwei Postfächern, die durch den Benachrichtigungstyp getrennt sind:
 
-* Ein Posteingang, in dem die Benachrichtigungen empfangen werden, die Sie im Rahmen von Abonnements erhalten. Dieser wird im folgenden Abschnitt beschrieben.
+* Ein Posteingang, in dem Sie die Benachrichtigungen sehen können, die Sie durch Abonnements erhalten, wird im folgenden Abschnitt beschrieben.
 * Ein spezieller Posteingang für Workflow-Elemente wird im Dokument [Teilnehmen an Workflows](/help/sites-classic-ui-authoring/classic-workflows-participating.md) beschrieben.
 
-## Anzeigen von Benachrichtigungen {#viewing-your-notifications}
+## Anzeigen Ihrer Benachrichtigungen {#viewing-your-notifications}
 
 So zeigen Sie Ihre Benachrichtigungen an:
 
-1. Öffnen Sie den Benachrichtigungs-Posteingang, indem Sie in der Konsole **Websites** auf die Benutzerschaltfläche oben rechts klicken und **Benachrichtigungs-Posteingang** wählen.
+1. Öffnen Sie den Benachrichtigungs-Posteingang: im **Websites** -Konsole, klicken Sie auf die Benutzerschaltfläche oben rechts und wählen Sie **Benachrichtigungs-Posteingang**.
 
    ![screen_shot_2012-02-08at105226am](assets/screen_shot_2012-02-08at105226am.png)
 
@@ -42,7 +40,7 @@ So zeigen Sie Ihre Benachrichtigungen an:
    >
    >` https://<host>:<port>/libs/wcm/core/content/inbox.html`
 
-1. Ihre Benachrichtigungen werden angezeigt. Sie können die nötigen Aktionen durchführen:
+1. Ihre Benachrichtigungen werden angezeigt. Sie können nach Bedarf Aktionen durchführen:
 
    * [Abonnieren von Benachrichtigungen](#subscribing-to-notifications)
    * [Verarbeiten von Benachrichtigungen](#processing-your-notifications)
@@ -51,9 +49,9 @@ So zeigen Sie Ihre Benachrichtigungen an:
 
 ## Abonnieren von Benachrichtigungen {#subscribing-to-notifications}
 
-So abonnieren Sie Benachrichtigungen:
+Abonnieren von Benachrichtigungen:
 
-1. Öffnen Sie den Benachrichtigungs-Posteingang, indem Sie in der Konsole **Websites** auf die Benutzerschaltfläche oben rechts klicken und **Benachrichtigungs-Posteingang** wählen.
+1. Öffnen Sie den Benachrichtigungs-Posteingang: im **Websites** -Konsole, klicken Sie auf die Benutzerschaltfläche oben rechts und wählen Sie **Benachrichtigungs-Posteingang**.
 
    ![screen_shot_2012-02-08at105226am-1](assets/screen_shot_2012-02-08at105226am-1.png)
 
@@ -68,46 +66,46 @@ So abonnieren Sie Benachrichtigungen:
 
    ![screen_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
 
-1. Wählen Sie den Benachrichtigungskanal:
+1. Wählen Sie den Benachrichtigungskanal aus:
 
-   * **Posteingang**: Die Benachrichtigungen werden in Ihrem AEM-Posteingang angezeigt.
-   * **E-Mail**: Die Benachrichtigungen werden an die im Benutzerprofil angegebene E-Mail-Adresse gesendet.
+   * **Posteingang**: Benachrichtigungen werden in Ihrem AEM Posteingang angezeigt.
+   * **Email**: Benachrichtigungen werden an die in Ihrem Benutzerprofil definierte E-Mail-Adresse gesendet.
 
    >[!NOTE]
    >
-   >Einige Einstellungen müssen konfiguriert werden, damit die Benachrichtigung per E-Mail erfolgen kann. Außerdem können Sie die E-Mail-Vorlage anpassen oder eine E-Mail-Vorlage für eine neue Sprache hinzufügen. Informationen zum Konfigurieren von E-Mail-Benachrichtigungen in AEM finden Sie unter [Konfigurieren von E-Mail-Benachrichtigungen](/help/sites-administering/notification.md#configuringemailnotification).
+   >Einige Einstellungen müssen konfiguriert werden, um per E-Mail benachrichtigt zu werden. Sie können auch die E-Mail-Vorlage anpassen oder eine E-Mail-Vorlage für eine neue Sprache hinzufügen. Siehe [Konfigurieren von E-Mail-Benachrichtigungen](/help/sites-administering/notification.md#configuringemailnotification) um E-Mail-Benachrichtigungen in AEM zu konfigurieren.
 
-1. Wählen Sie die Seitenaktionen, für die Sie eine Benachrichtigungen erhalten möchten:
+1. Wählen Sie die Seitenaktionen aus, für die Sie eine Benachrichtigung erhalten möchten:
 
    * Aktiviert: wenn eine Seite aktiviert wurde.
    * Deaktiviert: wenn eine Seite deaktiviert wurde.
    * Gelöscht (Syndizierung): wenn das Löschen einer Seite repliziert wurde.
-Wenn eine Seite gelöscht oder verschoben wurde, wird das Löschen automatisch repliziert, d. h. die Seite wurde sowohl in der Quellinstanz, in der die Löschaktion durchgeführt wurde, als auch in der von Replikationsagenten angegebenen Zielinstanz gelöscht.
+Wenn eine Seite gelöscht oder verschoben wird, wird automatisch eine Löschaktion repliziert: Die Seite wird in der Quellinstanz, in der die Löschaktion durchgeführt wurde, und in der von den Replikationsagenten definierten Zielinstanz gelöscht.
 
-   * Modifiziert: wenn eine Seite geändert wurde.
+   * Geändert: wenn eine Seite geändert wurde.
    * Erstellt: wenn eine Seite erstellt wurde.
-   * Gelöscht: wenn eine Seite durch eine Seitenlöschaktion gelöscht wurde.
-   * Ausgerollt: wenn eine Seite ausgerollt wurde.
+   * Gelöscht: wenn eine Seite durch die Seitenlöschaktion gelöscht wurde.
+   * Ausgerollt: wenn ein Rollout einer Seite durchgeführt wurde.
 
-1. Legen Sie die Pfade für die Seiten fest, über die Sie Benachrichtigungen erhalten möchten:
+1. Definieren Sie die Pfade der Seiten, für die Sie benachrichtigt werden:
 
-   * Klicken Sie auf **Hinzufügen**, um der Tabelle eine neue Zeile hinzuzufügen.
+   * Klicken **Hinzufügen** , um der Tabelle eine neue Zeile hinzuzufügen.
    * Klicken Sie auf die Tabellenzelle **Pfad**, und geben Sie den Pfad ein, z. B. `/content/docs`.
 
    * Um über alle Seiten in der Unter-Baumstruktur Benachrichtigungen zu erhalten, setzen Sie **Exakt?** auf **Nein**.
-Um über nur über die angegebene Seite Benachrichtigungen zu erhalten, setzen Sie **Exakt?** auf **Ja**.
+Um über nur über die angegebene Seite Benachrichtigungen zu erhalten, setzen Sie **Exakt?** nach **Ja**.
 
-   * Um die Regel zu aktivieren, setzen Sie **Regel** auf **Zulassen**. Ist dieser Wert auf **Ablehnen** gesetzt, wird die Regel deaktiviert, aber nicht entfernt, und kann zu einem späteren Zeitpunkt aktiviert werden.
+   * Um die Regel zuzulassen, legen Sie **Regel** nach **Zulassen**. Wenn auf **Ablehnen**, wird die Regel verweigert, aber nicht entfernt und kann später zugelassen werden.
 
-   Um eine Definition zu entfernen, wählen Sie die Zeile aus, indem Sie auf eine Tabellenzelle klicken und auf **Löschen** klicken.
+   Um eine Definition zu entfernen, wählen Sie die Zeile aus, indem Sie auf eine Tabellenzelle klicken, und klicken Sie auf **Löschen**.
 
-1. Klicken Sie auf **OK**, um die Konfiguration zu speichern.
+1. Klicken **OK** , um die Konfiguration zu speichern.
 
 ## Verarbeiten von Benachrichtigungen {#processing-your-notifications}
 
-Wenn Sie ausgewählt haben, dass Sie Benachrichtigungen in Ihrem AEM-Posteingang erhalten, werden die Benachrichtigungen an das Postfach versendet. Sie können [Ihre Benachrichtigungen anzeigen](#viewing-your-notifications) und anschließend die gewünschten Benachrichtigungen auswählen, um:
+Wenn Sie ausgewählt haben, dass Sie Benachrichtigungen in Ihrem AEM-Posteingang erhalten, werden die Benachrichtigungen an das Postfach versendet. Sie können [Anzeigen von Benachrichtigungen](#viewing-your-notifications) Wählen Sie dann die erforderlichen Benachrichtigungen aus, um:
 
-* sie durch Klicken auf **Genehmigen** zu genehmigen: Dann wird der Wert in der Spalte **Gelesen** auf **true** gesetzt.
+* Genehmigen Sie sie durch Klicken auf **Genehmigen**: der Wert in **Lesen** Spalte ist auf **true**.
 
 * Löschen durch Klicken auf **Löschen**.
 

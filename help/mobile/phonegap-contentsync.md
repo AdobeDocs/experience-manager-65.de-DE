@@ -1,8 +1,6 @@
 ---
-title: Mobil mit Inhaltssynchronisierung
-seo-title: Mobile with Content Sync
+title: Inhaltssynchronisierung für Adobe PhoneGap Enterprise mit AEM
 description: Auf dieser Seite erfahren Sie mehr über die Inhaltssynchronisierung für Adobe PhoneGap Enterprise mit AEM.
-seo-description: Follow this page to learn about Content Sync for Adobe PhoneGap Enterprise with AEM.
 uuid: c3a82171-e070-4e32-b1ef-26e65ae23d99
 contentOwner: User
 content-type: reference
@@ -11,10 +9,10 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 923fc031-1a06-4a9d-94da-a2a4e82c54ee
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '2971'
-ht-degree: 2%
+source-wordcount: '2975'
+ht-degree: 1%
 
 ---
 
@@ -22,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 >[!NOTE]
 >
@@ -140,7 +138,7 @@ Erfassen Sie Original-Ausgabeformate von Assets.
 * **path** - Pfad zu einem Asset-Ordner unter /content/dam.
 * **Ausgabeformate** - Typ ist ein Array von Zeichenfolgen, mit denen der Benutzer angeben kann, welche Ausgabeformate anstelle des Standardbilds verwendet werden sollen. Die folgende Liste fasst einige vordefinierte Ausgabedarstellungen zusammen, Sie können aber auch alle vom Workflow erstellten Ausgabedarstellungen verwenden:
 
-   * *originale*
+   * *original*
    * *cq5dam.thumbnail.48.48.png*
    * *cq5dam.thumbnail.319.319.png*
    * *cq5dam.thumbnail.140.100.png*
@@ -159,9 +157,9 @@ Der Bildtyp wird verwendet, um das We.Retail-Logo in die ZIP-Datei einzuschließ
 
 * **selector** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele: *touch* zum Rendern mobiler Versionen einer Seite.
 
-* **deep** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert lautet *true.*
+* **deep** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert ist *wahr.*
 
-* **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert lautet *true*.
+* **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert ist *true*.
 Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp foundation/components/image zur Aufnahme berücksichtigt. Sie können weitere Ressourcentypen hinzufügen, indem Sie die **Day CQ WCM Pages Update Handler** in der Webkonsole.
 
 **rewrite** Der Knoten rewrite definiert, wie die Links auf der exportierten Seite neu geschrieben werden. Die neu geschriebenen Links können entweder auf die Dateien in der ZIP-Datei oder auf die Ressourcen auf dem Server verweisen.
@@ -252,7 +250,7 @@ Auf die Konsole kann unter folgender Adresse zugegriffen werden:
 
 `https://localhost:4502/libs/cq/contentsync/content/console.html`
 
-Diese sieht nun wie folgt aus:
+Sie sieht wie folgt aus:
 
 ![chlimage_1](assets/chlimage_1.png)
 

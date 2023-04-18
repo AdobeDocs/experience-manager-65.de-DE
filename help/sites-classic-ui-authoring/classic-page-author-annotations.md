@@ -1,8 +1,6 @@
 ---
 title: Anmerkungen beim Bearbeiten einer Seite
-seo-title: Annotations when Editing a Page
-description: Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Zur Erleichterung dieses Vorgangs können Sie in vielen Komponenten, die in direkter Verbindung mit dem Inhalt stehen, Anmerkungen hinzufügen.
-seo-description: Adding content to the pages of your website is often subject to discussions prior to it actually being published. To aid this, many components directly related to content allow you to add an annotation.
+description: Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Um dies zu unterstützen, können Sie mit vielen Komponenten, die sich direkt auf Inhalte beziehen, Anmerkungen hinzufügen.
 page-status-flag: de-activated
 uuid: d8d6ba76-f2aa-4044-98bf-5d506742d90d
 contentOwner: Chris Bohnert
@@ -11,16 +9,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '782'
-ht-degree: 100%
+ht-degree: 43%
 
 ---
 
 # Anmerkungen beim Bearbeiten einer Seite{#annotations-when-editing-a-page}
 
-Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Um diesen Vorgang zu erleichtern, können Sie in vielen Komponenten, die direkt mit Inhalt (und nicht mit dem Layout) in Verbindung stehen, Anmerkungen hinzufügen.
+Oft muss das Hinzufügen von Inhalten zu den Seiten Ihrer Website vor der tatsächlichen Veröffentlichung besprochen werden. Um dies zu unterstützen, können Sie mit vielen Komponenten, die sich direkt auf Inhalte beziehen (im Gegensatz zum Layout), Anmerkungen hinzufügen.
 
 Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platziert. Mit einer Anmerkung können Sie (oder andere Benutzer) Kommentare und/oder Fragen für andere Autoren/Prüfer hinterlassen.
 
@@ -30,7 +28,7 @@ Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platzie
 
 >[!NOTE]
 >
->Anmerkungen, die in der klassischen Benutzeroberfläche erstellt wurden, werden auch in der Touch-optimierten Benutzeroberfläche angezeigt. Zeichnungen sind jedoch benutzeroberflächenspezifisch und werden nur in der Benutzeroberfläche angezeigt, in der sie erstellt wurden.
+>In der klassischen Benutzeroberfläche erstellte Anmerkungen werden auch in der Touch-optimierten Benutzeroberfläche angezeigt. Zeichnungen sind jedoch benutzeroberflächenspezifisch und werden nur in der Benutzeroberfläche angezeigt, in der sie erstellt wurden.
 
 >[!CAUTION]
 >
@@ -42,21 +40,21 @@ Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platzie
 
 ## Anmerkungen {#annotations}
 
-In Abhängigkeit vom Absatzdesign sind Anmerkungen entweder als Option im Kontextmenü (in der Regel über die rechte Maustaste aufrufbar, wenn sich die Maus über dem entsprechenden Absatz befindet) oder als Schaltfläche auf der Bearbeitungsleiste für Absätze verfügbar.
+Je nach Absatzdesign sind Anmerkungen entweder als Option im Kontextmenü (in der Regel über die rechte Maustaste, wenn sich der Absatz über dem gewünschten Absatz befindet) oder als Schaltfläche in der Absatzbearbeitungsleiste verfügbar.
 
-Wählen Sie in beiden Fällen **Anmerken** aus. Daraufhin wird ein farbiger Notizzettel im Absatz platziert. Sie befinden sich unmittelbar im Bearbeitungsmodus und können direkt Text hinzufügen:
+Wählen Sie in beiden Fällen **Anmerken** aus. Auf den Absatz wird eine farbige Kurznotiz angewendet. Sie befinden sich unmittelbar im Bearbeitungsmodus und können Text direkt hinzufügen:
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
-Sie können die Anmerkung an eine neue Position auf der Seite verschieben. Klicken Sie auf den oberen Rahmenbereich, halten Sie die Maustaste gedrückt und ziehen Sie gleichzeitig die Anmerkung an die neue Position. Dies kann eine beliebige Stelle auf der Seite sein, es bietet sich in der Regel jedoch an, die Anmerkung in der Nähe des Absatzes zu platzieren.
+Sie können die Anmerkung an eine neue Position auf der Seite verschieben. Klicken Sie auf den oberen Rahmenbereich, halten Sie die Maustaste gedrückt und ziehen Sie gleichzeitig die Anmerkung an die neue Position. Dies kann sich an einer beliebigen Stelle auf der Seite befinden, es ist jedoch in der Regel sinnvoll, sie in irgendeiner Weise mit dem Absatz zu verbinden.
 
-Anmerkungen (einschließlich zugehöriger Zeichnungen) sind auch in allen Kopier-, Ausschneide- oder Löschvorgängen enthalten, die in dem Absatz ausgeführt werden, mit dem sie verbunden sind. Bei Kopier- oder Ausschneidevorgängen wird die Position der Anmerkung (und der zugehörigen Zeichnungen) in Relation zu dem ursprünglichen Absatz beibehalten.
+Anmerkungen (einschließlich zugehöriger Zeichnungen) sind auch in allen Kopier-, Ausschneide- oder Löschaktionen enthalten, die für den Absatz durchgeführt werden, dem sie zugeordnet sind. Bei Kopier- oder Ausschneideaktionen behält die Position der Anmerkung (und der zugehörigen Zeichnungen) ihre Position in Bezug auf den ursprünglichen Absatz bei.
 
 Die Anmerkung kann auch durch Ziehen der Anmerkung in der unteren rechten Ecke vergrößert oder verkleinert werden.
 
-Aus Gründen der Nachverfolgung werden in der Fußzeile der Benutzer, der die Anmerkung erstellt hat, sowie das Datum angegeben. Nachfolgende Autoren können dieselbe Anmerkung bearbeiten (die Fußzeile wird dann aktualisiert) oder eine neue Anmerkung für denselben Absatz erstellen.
+Aus Gründen der Nachverfolgung werden in der Fußzeile der Benutzer, der die Anmerkung erstellt hat, sowie das Datum angegeben. Nachfolgende Autoren können dieselbe Anmerkung bearbeiten (die Fußzeile wird aktualisiert) oder eine neue Anmerkung für denselben Absatz erstellen.
 
-Wenn Sie die Anmerkung löschen möchten, müssen Sie den Vorgang bestätigen (durch Löschen einer Anmerkung werden auch alle mit dieser Anmerkung verbundenen Zeichnungen gelöscht).
+Wenn Sie die Anmerkung löschen möchten, wird eine Bestätigung angefordert (beim Löschen einer Anmerkung werden auch alle mit dieser Anmerkung verknüpften Zeichnungen gelöscht).
 
 Über die drei Symbole oben links können Sie die Anmerkung (zusammen mit allen damit verbundenen Zeichnungen) minimieren, die Farbe ändern und Zeichnungen hinzufügen.
 
@@ -76,30 +74,30 @@ Wenn Sie die Anmerkung löschen möchten, müssen Sie den Vorgang bestätigen (d
 >
 >Zeichnungen sind in Internet Explorer nicht verfügbar, daher:
 >
->* Wird das Symbol nicht angezeigt.
->* Werden vorhandene Zeichnungen, die in anderen Browsern erstellt wurden, nicht angezeigt.
+>* wird das Symbol nicht angezeigt.
+>* vorhandene Zeichnungen, die in einem anderen Browser erstellt wurden, werden nicht angezeigt.
 >
 
 
-Zeichnungen sind eine Funktion von Anmerkungen, über die Sie einfache Liniengrafiken an einer beliebigen Stelle im Browserfenster (sichtbarer Bereich) erstellen können:
+Zeichnungen sind eine Funktion von Anmerkungen, mit denen Sie einfache Liniengrafiken an einer beliebigen Stelle im Browser-Fenster (sichtbarer Teil) erstellen können:
 
 ![chlimage_1-138](assets/chlimage_1-138.png)
 
 * Wenn Sie sich im Zeichenmodus befinden, wird der Cursor in ein Kreuz geändert. Sie können mehrere separate Linien zeichnen.
-* Die Zeichnungslinie hat die gleiche Farbe wie die Anmerkung und kann Folgendes sein:
+* Die Zeichnungslinie spiegelt die Anmerkungsfarbe wider und kann entweder:
 
-   * Freihand:
+   * Freehand
 
-      (der Standardmodus; beenden Sie das Zeichnen, indem Sie die Maustaste loslassen.)
+      den Standardmodus; Schließen Sie, indem Sie die Maustaste loslassen.
 
-   * Gerade:
+   * gerade:
 
       Halten Sie die `ALT`-Taste gedrückt, und klicken Sie auf die Start- und Endpunkte; schließen Sie den Vorgang mit einem Doppelklick ab.
 
-* Nachdem Sie den Designmodus verlassen haben, können Sie auf eine Zeichnungslinie klicken, um diese Zeichnung auszuwählen.
+* Nachdem Sie den Zeichenmodus beendet haben, können Sie auf eine Zeichnung klicken, um diese Zeichnung auszuwählen.
 * Verschieben Sie eine Zeichnung, indem Sie die Zeichnung auswählen und sie dann an die gewünschte Position ziehen.
-* Eine Zeichnung überlagert den Inhalt. Dies bedeutet, dass sie innerhalb der vier Ecken der Zeichnung nicht auf den darunter liegenden Absatz klicken können, wenn Sie beispielsweise einen Link bearbeiten oder darauf zugreifen möchten. Wenn dies zu einem Problem wird (weil die Zeichnung beispielsweise einen großen Bereich der Seite bedeckt), minimieren Sie die entsprechende Anmerkung, da dadurch auch alle zugehörigen Zeichnungen minimiert werden, sodass Sie auf den darunter liegenden Bereich zugreifen können.
-* Um eine einzelne Zeichnung zu löschen, wählen Sie die erforderliche Zeichnung aus und drücken dann die Taste **Entf.**(**fn**-**Rücktaste** auf einem MAC).
+* Eine Zeichnung überlagert den Inhalt. Dies bedeutet, dass sie innerhalb der vier Ecken der Zeichnung nicht auf den darunter liegenden Absatz klicken können, wenn Sie beispielsweise einen Link bearbeiten oder darauf zugreifen möchten. Wenn dies zu einem Problem wird (z. B. wenn eine Zeichnung einen großen Bereich der Seite umfasst), minimieren Sie die entsprechende Anmerkung, da dadurch auch alle zugehörigen Zeichnungen minimiert werden, sodass Sie Zugriff auf den zugrunde liegenden Bereich erhalten.
+* So löschen Sie eine einzelne Zeichnung: Wählen Sie die gewünschte Zeichnung aus und drücken Sie dann die **Löschen** key (**fn**-**backspace** auf einer MAC).
 
-* Wenn Sie einen Absatz verschieben oder kopieren, werden auch alle damit verbundenen Anmerkungen und deren Zeichnungen verschoben oder kopiert; ihre Position in Relation zu dem Absatz bleibt gleich.
+* Wenn Sie einen Absatz verschieben oder kopieren, werden auch alle zugehörigen Anmerkungen und deren Zeichnungen verschoben oder kopiert. ihre Position in Bezug auf den Absatz bleibt unverändert.
 * Wenn Sie eine Anmerkung löschen, werden auch alle Zeichnungen gelöscht, die mit dieser Anmerkung verbunden sind.

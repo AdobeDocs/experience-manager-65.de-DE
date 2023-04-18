@@ -1,14 +1,14 @@
 ---
-title: eCommerce
-description: Mit AEM eCommerce können Marketingexperten personalisierte Marken-Einkaufserlebnisse über Web-, Mobile- und Social-Touchpoints bereitstellen.
+title: eCommerce-Integrations-Framework
+description: AEM eCommerce hilft Marketing-Experten bei der Bereitstellung von markenspezifischen, personalisierten Einkaufserlebnissen über Web-, mobile und soziale Touchpoints hinweg.
 topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: ht
-source-wordcount: '729'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 38%
 
 ---
 
@@ -36,27 +36,27 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
    <td>
     <ul>
      <li>AEM, Java</li>
-     <li>Monolithische Integration, voreingestellte Zuordnung (Vorlage)</li>
+     <li>Monolithische Integration, Pre-Build-Zuordnung (Vorlage)</li>
      <li>JCR-Repository</li>
     </ul> </td>
    <td>
     <ul>
      <li>Adobe Commerce</li>
-     <li>Java &amp; Javascript</li>
+     <li>Java und JavaScript</li>
      <li>Keine Commerce-Daten im JCR-Repository gespeichert</li>
     </ul> </td>
   </tr>
   <tr>
    <td><p>Frontend</p> </td>
-   <td><p>Server-seitig wiedergegebene AEM-Seiten</p> </td>
-   <td>Gemischte Seitenanwendung (hybrides Rendering)</td>
+   <td><p>Server-seitig gerenderte Seiten AEM</p> </td>
+   <td>Gemischte Seitenanwendung (Hybrid-Rendering)</td>
   </tr>
   <tr>
    <td><p>Produktkatalog</p> </td>
    <td>
     <ul>
      <li>Produktimport-Tool, Editor, Caching in AEM</li>
-     <li>Standardkataloge mit AEM- oder Proxy-Seiten</li>
+     <li>Regelmäßige Kataloge mit AEM- oder Proxy-Seiten</li>
     </ul> </td>
    <td>
     <ul>
@@ -75,7 +75,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
    <td>
     <ul>
      <li>Keine Volumenbegrenzung</li>
-     <li>Zwischenspeicherung im Dispatcher oder im CDN</li>
+     <li>Zwischenspeicherung im Dispatcher oder CDN</li>
     </ul> </td>
   </tr>
   <tr>
@@ -85,35 +85,35 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
   </tr>
   <tr>
    <td>Verfügbarkeit</td>
-   <td><p>Ja. SAP Commerce Cloud (Erweiterung aktualisiert, um AEM 6.4 und Hybris 5 (standardmäßig) zu unterstützen und die Kompatibilität mit Hybris 4 zu gewährleisten)</p> <p>Salesforce Commerce Cloud (Open-Source-Connector zur Unterstützung von AEM 6.4)</p> </td>
+   <td><p>Ja. SAP Commerce Cloud (Erweiterung aktualisiert, um AEM 6.4 und Hybris 5 (standardmäßig) zu unterstützen und die Kompatibilität mit Hybris 4 zu gewährleisten)</p> <p>Salesforce Commerce Cloud (Connector Open-Source-Unterstützung für AEM 6.4)</p> </td>
    <td>Ja, über Open Source über GitHub. Adobe Commerce (unterstützt 2.3.2 (standardmäßig) und ist mit 2.3.1 kompatibel).</td>
   </tr>
   <tr>
    <td>Wann ist sie einzusetzen?</td>
-   <td>Eingeschränkte Anwendungsfälle: z. B. wenn kleine, statische Kataloge importiert werden müssen</td>
+   <td>Eingeschränkte Anwendungsfälle: Zum Beispiel Szenarien, in denen kleine statische Kataloge importiert werden müssen</td>
    <td>Bevorzugte Lösung in den meisten Anwendungsfällen</td>
   </tr>
  </tbody>
 </table>
 
-Zusammen mit der Produktdatenverwaltung (PIM) verarbeitet eCommerce die Aktivitäten auf einer Website mit Schwerpunkt auf dem Verkauf von Produkten über einen Online-Shop:
+eCommerce übernimmt zusammen mit dem Produktdatenmanagement (PIM) die Aktivitäten einer Website, die sich auf den Verkauf von Produkten über einen Online-Store konzentriert:
 
 * Erstellung, Lebensdauer und Veralterung eines Produkts
 * Preisverwaltung
-* Transaktionsverwaltung
+* Transaktionsmanagement
 * Verwaltung von kompletten Katalogen
 * Live- und zentralisierte Speicherdatensätze
 * Webschnittstellen
 
-Mit AEM eCommerce können Marketingexperten personalisierte Marken-Einkaufserlebnisse über Web-, Mobile- und Social-Touchpoints bereitstellen. In der Authoring-Umgebung von AEM können Sie die Seiten und Komponenten an den Kontext des Zielbesuchers und Ihre Merchandising-Strategien anpassen, zum Beispiel:
+AEM eCommerce hilft Marketing-Experten bei der Bereitstellung von markenspezifischen, personalisierten Einkaufserlebnissen über Web-, mobile und soziale Touchpoints hinweg. Die AEM Authoring-Umgebung ermöglicht es Ihnen, Seiten und Komponenten basierend auf dem Zielgruppen-Besucherkontext und Merchandising-Strategien anzupassen. Beispiel:
 
 * Produktseiten
 * Warenkorbkomponenten
-* Kassenkomponenten
+* Auschecken von Komponenten
 
-Die Implementierung ermöglicht den Echtzeitzugriff auf Produktdaten. Damit lässt sich Folgendes durchsetzen:
+Die Implementierung ermöglicht den Echtzeitzugriff auf Produktinformationen. Dies kann verwendet werden, um Folgendes zu erzwingen:
 
-* Integrität der Produktdaten
+* Integrität der Produktinformationen
 * Preise
 * Lagerbestand
 * Variationen im Status eines Warenkorbs
@@ -124,29 +124,29 @@ Die Implementierung ermöglicht den Echtzeitzugriff auf Produktdaten. Damit läs
 >
 >Weitere Informationen zu erweiterten eCommerce-Funktionen finden Sie unter [Entwicklung von eCommerce](/help/commerce/cif-classic/developing/ecommerce.md).
 
-## Zentrale Funktionen {#main-features}
+## Hauptfunktionen {#main-features}
 
-AEM eCommerce bietet Folgendes:
+AEM eCommerce bietet:
 
 * Eine Reihe von **AEM-Komponenten, die vorkonfiguriert sind** und zeigen, was bei Ihrem Projekt möglich ist:
 
    * Produktanzeige
    * Warenkorb
-   * Kasse
-   * Kürzlich angezeigte Produkte
+   * Auschecken
+   * Vor Kurzem aufgerufene Produkte
    * Gutscheine
-   * und mehr
+   * und andere
 
    ![](/help/sites-administering/assets/chlimage_1-130.png)
 
    >[!NOTE]
    >
-   >Mit dem Integrationsframework von AEM können Sie unabhängig von Ihrer eCommerce-Engine zusätzliche AEM-Komponenten für eCommerce-Funktionen entwickeln.
+   >Mit dem von AEM bereitgestellten Integrations-Framework können Sie auch zusätzliche AEM für Commerce-Funktionen erstellen, unabhängig von Ihrer spezifischen eCommerce-Engine.
 
-* **Suche** – entweder:
+* **Suche** - entweder:
 
-   * die AEM-Suche
-   * die Suche des eCommerce-Systems
+   * AEM
+   * die Suche nach dem eCommerce-System
    * eine Suche von Drittanbietern
    * oder eine Kombination aus diesen Suchmöglichkeiten
 
@@ -158,40 +158,40 @@ AEM eCommerce bietet Folgendes:
 
 * Funktion zur **Entwicklung Ihrer eigenen Integrationsimplementierung basierend auf dem [AEM eCommerce-Framework](#the-framework)**.
 
-   Die beiden aktuell verfügbaren Implementierungen setzen auf derselben Basis auf und nutzen die allgemeine API (das Framework). Bei der Implementierung einer neuen Integration müssen Sie nur die Funktionen implementieren, die für Ihre Implementierung erforderlich sind. Frontendkomponenten können von jeder neuen Implementierung genutzt werden, da sie Schnittstellen verwenden (und somit unabhängig von der Implementierung sind).
+   Die beiden derzeit verfügbaren Implementierungen basieren auf derselben Basis - zusätzlich zur allgemeinen API (dem Framework). Die Implementierung einer neuen Integration umfasst nur die Implementierung der Funktionen, die für Ihre Integration erforderlich sind. Frontendkomponenten können von jeder neuen Implementierung genutzt werden, da sie Schnittstellen verwenden (und somit unabhängig von der Implementierung sind).
 
-* Möglichkeit zur Entwicklung von **erlebnisgesteuertem Handel basierend auf den Daten und Aktivitäten der Käufer**. Damit können Sie zahlreiche Szenarien umsetzen:
+* Möglichkeit zur Entwicklung **erlebnisgesteuerter Handel basierend auf Kundendaten und Aktivitäten**. Auf diese Weise können Sie viele Szenarien umsetzen:
 
    * Beispielsweise können Sie einen Nachlass auf die Versandkosten anbieten, wenn der Gesamtbetrag der Bestellung einen bestimmten Wert überschreitet.
-   * Oder Sie bieten saisonale Angebote an, die Profildaten (wie den Ort) nutzen. Diese könnten dann bei Bedarf abhängig von anderen Faktoren hervorgehoben werden.
+   * Eine andere Möglichkeit bietet Ihnen die Bereitstellung saisonaler Angebote, die Profildaten verwenden (z. B. Standort). Diese können dann hervorgehoben werden, je nach anderen Faktoren, falls erforderlich.
 
-   Im folgenden Beispiel wird ein Teaser angezeigt, da die Artikel im Warenkorb einen Wert von unter 75 USD aufweisen:
+   Im folgenden Beispiel wird ein Teaser angezeigt, da der Inhalt des Warenkorbs weniger als 75 USD beträgt:
 
    ![](/help/sites-administering/assets/chlimage_1-133.png)
 
-   Wenn die Artikel im Warenkorb den Wert von 75 USD überschreiten, erfolgt eine Änderung:
+   Dies kann geändert werden, wenn der Inhalt des Warenkorbs 75 USD überschreitet:
 
    ![](/help/sites-administering/assets/chlimage_1-134.png)
 
-* Weitere Funktionen, darunter:
+* Und andere Funktionen wie:
 
-   * Artikel im Warenkorb werden sitzungsübergreifend gespeichert.
+   * Inhalte des Warenkorbs werden sitzungsübergreifend beibehalten
    * Vollständiger Bestellverlauf
-   * Eilkatalogaktualisierung
+   * Express-Katalogaktualisierung
 
-## Das Framework {#the-framework}
+## Der Rahmen {#the-framework}
 
-Im Abschnitt [Konzepte](/help/commerce/cif-classic/administering/concepts.md) finden Sie detailliertere Informationen zum Framework. Nachfolgend erhalten Sie einen groben Überblick über das Framework:
+Die [Konzepte](/help/commerce/cif-classic/administering/concepts.md) -Abschnitt behandelt das Framework detaillierter, bietet jedoch im Folgenden eine allgemeine Hochgeschwindigkeits-Ansicht des Frameworks:
 
-### Eigenschaften des Frameworks {#what}
+### Was? {#what}
 
-* Das Integrationsframework stellt die API, mehrere Komponenten zur Veranschaulichung der Funktionalität und einige Erweiterungen für Beispiele für Anbindungsmethoden bereit.
-* Das Framework stellt die grundlegende Struktur bereit, die für eine Projektimplementierung erforderlich ist.
+* Das Integrations-Framework stellt die API, eine Reihe von Komponenten zur Veranschaulichung der Funktionalität und mehrere Erweiterungen bereit, um Beispiele für Verbindungsmethoden bereitzustellen.
+* Das Framework stellt die für eine Projektimplementierung benötigte grundlegende Struktur bereit.
 * Das Framework ist erweiterbar.
 * Das Framework stellt keine vorkonfigurierte, sofort verwendbare Website bereit. Ein gewisses Maß an Entwicklungsarbeit ist immer erforderlich, um das Framework an Ihre Vorgaben anzupassen.
 
 ### Vorteile {#why}
 
 * Bereitstellung der grundlegenden Mechanismen, um schnell eine benutzerdefinierte eCommerce-Website zu erstellen
-* Flexibilität, die für die Entwicklung einer echten eCommerce-Website nötig ist
-* Veranschaulichung bewährter Verfahren
+* Tp bietet die Flexibilität, die für die Entwicklung einer echten eCommerce-Site erforderlich ist.
+* Veranschaulichen Sie Best Practices.

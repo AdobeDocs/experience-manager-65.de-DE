@@ -1,8 +1,6 @@
 ---
 title: Erstellen und Organisieren von Seiten
-seo-title: Creating and Organizing Pages
-description: In diesem Abschnitt wird das Erstellen und Verwalten von Seiten mit AEM beschrieben, auf denen Sie dann Inhalt erstellen können.
-seo-description: This section describes how to create and manage pages with AEM so that you can then create content on those pages.
+description: In diesem Abschnitt wird beschrieben, wie Sie Seiten mit AEM erstellen und verwalten, damit Sie dann Inhalte auf diesen Seiten erstellen können.
 uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,33 +8,33 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '1910'
-ht-degree: 100%
+ht-degree: 48%
 
 ---
 
 # Erstellen und Organisieren von Seiten{#creating-and-organizing-pages}
 
-In diesem Abschnitt wird beschrieben, wie Sie mit Adobe Experience Manager (AEM) Seiten erstellen und verwalten, um auf diesen Seiten [Inhalte zu erstellen](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md).
+In diesem Abschnitt wird beschrieben, wie Sie Seiten mit Adobe Experience Manager (AEM) erstellen und verwalten, damit Sie dann [Inhalt erstellen](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) auf diesen Seiten.
 
 >[!NOTE]
 >
->Ihr Konto muss über die [erforderlichen Zugriffsrechte](/help/sites-administering/security.md) und [Brechtigungen](/help/sites-administering/security.md#permissions) verfügen, damit Sie Aktionen auf Seiten durchführen können, wie das Erstellen, Kopieren, Verschieben, Bearbeiten oder Löschen.
+>Ihr Konto muss [angemessene Zugriffsberechtigungen](/help/sites-administering/security.md) und [Berechtigungen](/help/sites-administering/security.md#permissions) , um Aktionen auf Seiten auszuführen, z. B. Erstellen, Kopieren, Verschieben, Bearbeiten, Löschen.
 >
 >Wenn Sie auf Probleme stoßen, empfehlen wir Ihnen, sich an die bzw. den Systemadmin zu wenden.
 
 ## Website-Organisation {#organizing-your-website}
 
-Als Autor müssen Sie Ihre Website in AEM organisieren. Aus diesem Grund müssen Sie Ihre Inhaltsseiten entsprechend folgenden Richtlinien erstellen und benennen:
+Als Autor müssen Sie Ihre Website in AEM organisieren. Dazu gehört die Erstellung und Benennung von Inhaltsseiten, sodass:
 
 * Sie müssen leicht in der Autorenumgebung auffindbar sein.
 * Besucher der Website müssen sie einfach in der Veröffentlichungsumgebung durchsuchen können.
 
 Sie können Ihre Inhalte auch mithilfe von [Ordnern](#creating-a-new-folder) organisieren.
 
-Die Struktur einer Website kann als *Baumstruktur* gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet. Der Titel wird zusammen mit dem Seiteninhalt angezeigt.
+Die Struktur einer Website kann als *Baumstruktur* gesehen werden, die die Inhaltsseiten enthält. Die Namen dieser Inhaltsseiten werden zur Bildung der URLs verwendet, während der Titel bei der Anzeige des Seiteninhalts angezeigt wird.
 
 Der folgende Auszug stammt aus der Geometrixx-Website, über die z. B. die `Triangle`-Seite aufgerufen wird.
 
@@ -86,23 +84,23 @@ Beim Erstellen einer neuen Seite gibt es zwei Schlüsselfelder:
 * **[Name](#name)**:
 
    * Mit diesem Wert wird der URI generiert.
-   * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
+   * Benutzereingaben sind für dieses Feld optional. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
 
 Wenn Sie eine neue Seite erstellen, validiert AEM [den Seitennamen gemäß den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
 
 Die Implementierung und die Liste von zulässigen Zeichen variieren entsprechend der Benutzeroberfläche (umfangreicher für die Touch-optimierte Benutzeroberfläche). Das zulässige Minimum ist:
 
-* „a“ bis „z“
-* „A“ bis „Z“
-* „0“ bis „9“
+* &quot;a&quot;bis &quot;z&quot;
+* &quot;A&quot;bis &quot;Z&quot;
+* &quot;0&quot;bis &quot;9&quot;
 * _ (Unterstrich)
 * `-` (Bindestrich/Minus)
 
-Verwenden Sie nur diese Zeichen, wenn Sie sicher sein möchten, dass sie akzeptiert/verwendet werden (weitere Informationen zu allen zulässigen Zeichen finden Sie in den [Benennungskonventionen](/help/sites-developing/naming-conventions.md)).
+Verwenden Sie nur diese Zeichen, wenn Sie sicherstellen möchten, dass sie akzeptiert/verwendet werden (wenn Sie vollständige Details zu allen zulässigen Zeichen benötigen, lesen Sie [Namenskonventionen](/help/sites-developing/naming-conventions.md)).
 
 #### Titel {#title}
 
-Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR. In beiden Benutzeroberflächen werden ungültige Zeichen im Feld **Titel** akzeptiert, wobei die ungültigen Zeichen im abgeleiteten Namen jedoch ersetzt werden. Beispiel:
+Wenn Sie für eine neu erstellte Seite nur den **Titel** angeben, leitet AEM den **Namen** für die Seite von dieser Zeichenfolge ab und [validiert den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR. In beiden Benutzeroberflächen ist eine **Titel** -Feld mit ungültigen Zeichen wird akzeptiert, aber der abgeleitete Name ersetzt die ungültigen Zeichen. Beispiel:
 
 | Titel | Abgeleiteter Name |
 |---|---|
@@ -122,11 +120,11 @@ In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen
 >
 >Sie sollten die Verwendung eines zweistelligen Codes gemäß ISO-639-1 vermeiden, es sei denn, es handelt sich um einen Sprachstamm.
 >
->Weitere Informationen finden Sie unter [Vorbereiten von Inhalten für die Übersetzung](/help/sites-administering/tc-prep.md).
+>Siehe [Vorbereiten von Inhalten für die Übersetzung](/help/sites-administering/tc-prep.md) für weitere Informationen.
 
 ### Vorlagen {#templates}
 
-In AEM sind bestimmte Seitentypen in Vorlagen gespeichert. Eine Vorlage wird als Basis für jede neue erstellte Seite verwendet.
+In AEM gibt eine Vorlage einen speziellen Seitentyp an. Eine Vorlage wird als Grundlage für jede neue Seite verwendet, die erstellt wird.
 
 Die Vorlage definiert die Seitenstruktur, u. a. eine Miniaturansicht und andere Eigenschaften. Beispielsweise könnten Sie unterschiedliche Vorlagen für Produktseiten, Sitemaps und Kontaktangaben verwenden. Vorlagen bestehen aus [Komponenten](#components).
 
@@ -147,7 +145,7 @@ Komponenten sind die Elemente, die von AEM bereitgestellt werden, damit Sie best
 
 * Text
 * Bild
-* Diashow
+* Bildschirmpräsentation
 * Video
 * viele weitere
 
@@ -157,33 +155,33 @@ Sobald Sie eine Seite erstellt und geöffnet haben, können Sie mithilfe der Kom
 
 ### Erstellen einer neuen Seite {#creating-a-new-page}
 
-Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem Einfügen von Inhalten zunächst eine Seite erstellen:
+Wenn nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstellen, bevor Sie mit der Erstellung von Inhalten beginnen können:
 
-1. Wählen Sie in der Konsole **Websites** die Ebene aus, auf der die neue Seite erstellt werden soll.
+1. Aus dem **Websites** -Konsole, wählen Sie die Ebene aus, auf der Sie eine neue Seite erstellen möchten.
 
-   Im folgenden Beispiel erstellen Sie die Seite auf der Ebene **Produkte** - diese Ebene wird im linken Fenster angezeigt, im rechten Fenster sehen Sie die bereits auf der Ebene **Produkte** angelegten Seiten.
+   Im folgenden Beispiel erstellen Sie eine Seite unter der Ebene **Produkte** - im linken Bereich angezeigt; Im rechten Bereich werden Seiten angezeigt, die bereits auf der Ebene unter **Produkte**.
 
    ![screen_shot_2012-02-15at114413am](assets/screen_shot_2012-02-15at114413am.png)
 
-1. Klicken Sie im Menü **Neu...** (auf den Pfeil neben **Neu...** klicken) auf **Neue Seite...**. Das Fenster **Seite erstellen** wird geöffnet.
+1. Im **Neu...** Menü (klicken Sie auf den Pfeil neben **Neu...**), wählen Sie **Neue Seite...**. Die **Seite erstellen** geöffnet.
 
-   Wenn Sie einfach auf **Neu...** klicken, wird ebenfalls die Option **Neue Seite...** gewählt.
+   Klicken **Neu...** selbst dient auch als Abkürzung zum **Neue Seite...** -Option.
 
-1. Im Dialogfeld **Seite erstellen** haben Sie folgende Möglichkeiten:
+1. Die **Seite erstellen** -Dialogfeld bietet Ihnen folgende Möglichkeiten:
 
-   * Angabe eines **Titels**, der für den Benutzer angezeigt wird.
-   * Angabe eines **Namens**, der für die Erzeugung des URI verwendet wird. Wenn kein Name angegeben ist, wird er vom Titel abgeleitet.
+   * Bereitstellung einer **Titel**; wird dem Benutzer angezeigt.
+   * Bereitstellung einer **Name**; wird verwendet, um den URI zu generieren. Wenn kein Name angegeben wird, wird der Name aus dem Titel abgeleitet.
 
       * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM [den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
       * In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig.
-   * Klicken Sie auf die Vorlage, die für die Erstellung der neuen Seite verwendet werden soll.
+   * Klicken Sie auf die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten.
 
-      Die Vorlage wird als Grundlage für die neue Seite verwendet, z. B. um die grundlegende Formatierung für die neue Seite festzulegen.
+      Die Vorlage wird als Grundlage für die neue Seite verwendet. z. B. um das grundlegende Layout einer Inhaltsseite zu bestimmen.
    >[!NOTE]
    >
-   >Weitere Informationen finden Sie unter [Benennungskonventionen für Seiten](#page-naming-conventions).
+   >Siehe [Seitenbenennungskonventionen](#page-naming-conventions).
 
-   Das Minimum an Informationen für das Erstellen einer neuen Seite sind der **Titel** und die erforderliche Vorlage.
+   Die zum Erstellen einer neuen Seite mindestens erforderlichen Informationen sind die **Titel** und die erforderliche Vorlage.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
@@ -191,9 +189,9 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
    >
    >Wenn Sie in den URLs Unicode-Zeichen verwenden möchten, richten Sie die Eigenschaft „Alias“(`sling:alias`) ein ([Seiteneigenschaften](/help/sites-classic-ui-authoring/classic-page-author-edit-page-properties.md)).
 
-1. Klicken Sie auf **Erstellen**, um die Seite zu erstellen. Dann kehren Sie zur Konsole **Websites** zurück, wo Sie den Eintrag für die neue Seite sehen können.
+1. Klicken **Erstellen** , um die Seite zu erstellen. Sie kehren zum **Websites** -Konsole, in der Sie einen Eintrag für die neue Seite sehen können.
 
-   Die Konsole enthält Informationen über die Seite (z. B. Datum und Uhrzeit und Verursacher der letzten Änderung), die nach Bedarf aktualisiert werden.
+   Die Konsole enthält Informationen über die Seite (z. B. wann sie zuletzt bearbeitet wurde und von wem), die nach Bedarf aktualisiert werden.
 
    >[!NOTE]
    >
@@ -201,9 +199,9 @@ Sofern nicht alle Seiten für Sie im Voraus erstellt wurden, müssen Sie vor dem
 
 ### Öffnen einer Seite zur Bearbeitung {#opening-a-page-for-editing}
 
-Sie haben verschiedene Möglichkeiten, um eine Seite zur [Bearbeitung](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) zu öffnen:
+Sie können die Seite öffnen, um [bearbeitet](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties) nach einer von mehreren Methoden:
 
-* Sie können in der Konsole **Websites** auf den Titel der Seite **doppelklicken**, um sie für die Bearbeitung zu öffnen.
+* Von **Websites** Konsole, können Sie **Doppelklicken** den Seiteneintrag, um ihn zur Bearbeitung zu öffnen.
 
 * In der **Websites**-Konsole können Sie mit der **rechten Maustaste** (Kontextmenü) auf das Seitenelement klicken und dann im Kontextmenü die Option **Öffnen** auswählen.
 
@@ -211,67 +209,67 @@ Sie haben verschiedene Möglichkeiten, um eine Seite zur [Bearbeitung](/help/sit
 
 ### Kopieren und Einfügen einer Seite {#copying-and-pasting-a-page}
 
-Beim Kopieren können Sie entweder
+Beim Kopieren können Sie Folgendes kopieren:
 
 * eine einzelne Seite
-* oder eine Seite zusammen mit allen Unterseiten kopieren.
+* eine Seite mit allen Unterseiten
 
-1. Wählen Sie in der Konsole **Websites** die zu kopierende Seite aus.
-
-   >[!NOTE]
-   >
-   >Zu diesem Zeitpunkt ist es unerheblich, ob Sie eine einzelne Seite oder auch alle Unterseiten kopieren möchten.
-
-1. Klicken Sie auf **Kopieren**.
-
-1. Navigieren Sie zum neuen Speicherort und klicken Sie auf eine der folgenden Optionen:
-
-   * **Einfügen** - um die Seite zusammen mit allen Unterseiten einzufügen
-   * **Umschalt + Einfügen** - um nur die ausgewählte Seite einzufügen
-
-   Die Seite bzw. die Seiten werden am neuen Speicherort eingefügt.
+1. Aus dem **Websites** -Konsole, wählen Sie die Seite aus, die Sie kopieren möchten.
 
    >[!NOTE]
    >
-   >Wenn eine bestehende Seite bereits denselben Namen hat, wird der Seitenname möglicherweise automatisch angepasst.
+   >In dieser Phase ist es nicht relevant, ob Sie eine einzelne Seite oder die zugrunde liegenden Unterseiten kopieren möchten.
+
+1. Klicken **Kopieren**.
+
+1. Navigieren Sie zum neuen Speicherort und klicken Sie auf:
+
+   * **Einfügen** - um die Seite mit allen Unterseiten einzufügen
+   * **Umschalt + Einfügen** - nur zum Einfügen der ausgewählten Seite
+
+   Die Seiten werden an der neuen Position eingefügt.
 
    >[!NOTE]
    >
-   >Sie können auch **Seite kopieren** auf der Registerkarte **Seite** des Sidekicks verwenden. Ein Dialogfeld wird geöffnet, in dem Sie unter anderem das Ziel angeben können.
+   >Der Seitenname kann automatisch angepasst werden, wenn eine vorhandene Seite bereits denselben Namen hat.
+
+   >[!NOTE]
+   >
+   >Sie können auch **Seite kopieren** auf der Registerkarte **Seite** des Sidekicks verwenden. Dadurch wird ein Dialogfeld geöffnet, in dem Sie das Ziel usw. angeben können.
 
 ### Verschieben oder Umbenennen einer Seite {#moving-or-renaming-page}
 
 >[!NOTE]
 >
->Beim Umbenennen einer Seite gelten ebenfalls die [Benennungskonventionen für Seiten](#page-naming-conventions), wenn der neue Seitenname angegeben wird.
+>Das Umbenennen einer Seite unterliegt auch dem [Seitenbenennungskonventionen](#page-naming-conventions) beim Angeben des neuen Seitennamens.
 
-Das Verfahren für das Verschieben oder Umbenennen einer Seite ist identisch. Mit derselben Aktion können Sie:
+Das Verfahren zum Verschieben oder Umbenennen einer Seite ist identisch. Mit derselben Aktion können Sie:
 
 * eine Seite an eine neue Position verschieben
 * eine Seite an derselben Position umbenennen
 * eine Seite an eine andere Position verschieben und sie gleichzeitig umbenennen
 
-AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite führen, die umbenannt oder verschoben wird. Dies kann seitenweise erfolgen, um die volle Flexibilität zu ermöglichen.
+AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite führen, die umbenannt oder verschoben wird. Dies kann seitenweise erfolgen, um volle Flexibilität zu bieten.
 
-So verschieben Sie eine Seite oder benennen sie um:
+So verschieben oder umbenennen Sie eine Seite:
 
-1. Es gibt verschiedene Methoden, eine Verschiebung auszulösen:
+1. Es gibt verschiedene Methoden, einen Verschiebevorgang auszulösen:
 
    * Klicken Sie in der **Websites**-Konsole auf die gewünschte Seite und wählen Sie **Verschieben...** aus.
-   * In der Konsole **Websites** können Sie auch das Seitenelement auswählen, dann **mit der rechten Maustaste klicken** und **Verschieben...** auswählen.
-   * Beim Bearbeiten einer Seite können Sie im Sidekick auf der Registerkarte **Seite** die Option **Seite verschieben** auswählen.
+   * Aus dem **Websites** -Konsole können Sie auch das Seitenelement auswählen und dann **Rechtsklick** und wählen Sie **Verschieben...**
+   * Beim Bearbeiten einer Seite können Sie **Seite verschieben** von **Seite** Registerkarte des Sidekicks.
 
 1. Das Fenster **Verschieben** wird geöffnet, in dem Sie entweder einen neuen Speicherort oder einen neuen Namen oder beides angeben können.
 
    ![screen_shot_2012-02-15at121336pm](assets/screen_shot_2012-02-15at121336pm.png)
 
-   Auf der Seite werden außerdem alle Seiten aufgelistet, die auf die zu verschiebende Seite verweisen. Je nach Status der verweisenden Seite können Sie diese Links möglicherweise anpassen und/oder die Seiten neu veröffentlichen.
+   Die Seite listet auch alle Seiten auf, die auf die verschobene Seite verweisen. Je nach Status der referenzierenden Seite können Sie diese Links möglicherweise anpassen und/oder die Seiten erneut veröffentlichen.
 
-1. Machen Sie je nach Bedarf Angaben in den folgenden Feldern:
+1. Füllen Sie je nach Bedarf die folgenden Felder aus:
 
    * **Ziel**
 
-      Verwenden Sie die Sitemap (verfügbar über die Dropdownliste), um den Speicherort zu wählen, an den die Seite verschoben werden soll.
+      Verwenden Sie die Sitemap (verfügbar über die Dropdown-Auswahl), um den Ort auszuwählen, an den die Seite verschoben werden soll.
 
       Wenn Sie die Seite nur umbenennen, ignorieren Sie dieses Feld.
 
@@ -281,13 +279,13 @@ So verschieben Sie eine Seite oder benennen sie um:
 
    * **Umbenennen in**
 
-      Standardmäßig wird das aktuelle Etikett angezeigt. Geben Sie, falls erforderlich, ein neues Seitenetikett an.
+      Die aktuelle Seitenbeschriftung wird standardmäßig angezeigt. Geben Sie bei Bedarf die neue Seitenbeschriftung an.
 
    * **Anpassen**
 
-      Aktualisieren Sie die Links, die auf die zu verschiebende Seite verweisen. Wenn beispielsweise Seite A auf Seite B verweist, passt AEM die Links an, wenn Sie Seite B verschieben.
+      Aktualisieren Sie die Links auf der aufgelisteten Seite, die auf die verschobene Seite verweisen: Wenn beispielsweise Seite A über Links zu Seite B verfügt, passt AEM die Links auf Seite A an, falls Sie Seite B verschieben.
 
-      Diese Funktion kann für jede Seite einzeln aktiviert bzw. deaktiviert werden.
+      Diese Option kann für jede einzelne verweisende Seite ausgewählt/deaktiviert werden.
 
    * **Neu veröffentlichen**
 
@@ -296,7 +294,7 @@ So verschieben Sie eine Seite oder benennen sie um:
    >
    >Wenn die Seite bereits aktiviert war, wird sie durch Verschieben automatisch deaktiviert. Standardmäßig wird sie nach dem Verschieben wieder aktiviert. Dies lässt sich jedoch ändern, indem Sie im Fenster **Verschieben** das Kontrollkästchen **Neu veröffentlichen** für die Seite deaktivieren.
 
-1. Klicken Sie auf **Verschieben**. Für den Vorgang ist eine Bestätigung erforderlich. Klicken Sie hierfür auf **OK**.
+1. Klicken Sie auf **Verschieben**. Eine Bestätigung ist erforderlich. Klicken **OK** zur Bestätigung.
 
    >[!NOTE]
    >
@@ -304,17 +302,17 @@ So verschieben Sie eine Seite oder benennen sie um:
 
 ### Löschen einer Seite {#deleting-a-page}
 
-1. Sie können eine Seite von verschiedenen Stellen aus löschen:
+1. Sie können eine Seite aus verschiedenen Speicherorten löschen:
 
-   * Klicken Sie in der Konsole **Websites** auf die gewünschte Seite, klicken Sie mit der rechten Maustaste darauf und wählen Sie dann im Kontextmenü **Löschen** aus.
-   * Klicken Sie in der Konsole **Websites** auf die gewünschte Seite und wählen Sie dann im Symbolleistenmenü **Löschen** aus.
-   * Verwenden Sie im Sidekick die Registerkarte **Seite** und wählen Sie dort **Seite löschen** aus. Die aktuell geöffnete Seite wird gelöscht.
+   * Innerhalb der **Websites** Console, klicken Sie auf die gewünschte Seite, klicken Sie mit der rechten Maustaste darauf und wählen Sie **Löschen** aus dem resultierenden Menü.
+   * Innerhalb der **Websites** Console, klicken Sie auf , um die Seite auszuwählen, und wählen Sie **Löschen** über das Symbolleistenmenü aus.
+   * Verwenden Sie im Sidekick die **Seite** auswählen **Seite löschen** - Dadurch wird die aktuell geöffnete Seite gelöscht.
 
-1. Nachdem Sie das Löschen einer Seite ausgewählt haben, müssen Sie den Vorgang bestätigen, da dieser nicht rückgängig gemacht werden kann.
+1. Nachdem Sie das Löschen einer Seite ausgewählt haben, müssen Sie die Anforderung bestätigen, da die Aktion nicht rückgängig gemacht werden kann.
 
    >[!NOTE]
    >
-   >Falls eine Seite bereits veröffentlicht wurde, können Sie nach ihrem Löschen die neueste (oder eine bestimmte andere) Version der Seite wiederherstellen, aber möglicherweise enthält diese Version nicht die zuletzt durchgeführten Änderungen. Weitere Einzelheiten finden Sie im Beitrag zum [Wiederherstellen von Seiten](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages).
+   >Nach dem Löschen können Sie, wenn die Seite veröffentlicht wurde, die neueste (oder eine bestimmte) Version wiederherstellen. Diese Version enthält jedoch möglicherweise nicht den gleichen Inhalt wie die letzte Version, wenn weitere Änderungen vorgenommen wurden. Siehe [Wiederherstellen von Seiten](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoringpages) für weitere Informationen.
 
 >[!NOTE]
 >
@@ -322,15 +320,15 @@ So verschieben Sie eine Seite oder benennen sie um:
 
 ### Sperren einer Seite {#locking-a-page}
 
-Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page). Auch Angaben dazu, ob eine Seite gesperrt ist, werden in beiden Fällen angezeigt.
+Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page). Informationen darüber, ob eine Seite gesperrt ist, werden auch an beiden Stellen angezeigt.
 
 ### Erstellen eines neuen Ordners {#creating-a-new-folder}
 
 >[!NOTE]
 >
->Für Ordner gelten ebenfalls die [Benennungskonventionen für Seiten](#page-naming-conventions), wenn der neue Ordnername angegeben wird.
+>Ordner unterliegen auch dem [Seitenbenennungskonventionen](#page-naming-conventions) beim Angeben des neuen Ordnernamen.
 
-1. Öffnen Sie die Konsole **Sites** und navigieren Sie zum gewünschten Ort.
+1. Öffnen Sie die **Websites** und navigieren Sie zum gewünschten Speicherort.
 1. Klicken Sie im Menü **Neu...** (klicken Sie auf den Pfeil neben **Neu...**) auf **Neuer Ordner...**
 1. Das Dialogfeld **Ordner erstellen** wird geöffnet. Hier können Sie den **Namen** und den **Titel** eingeben:
 

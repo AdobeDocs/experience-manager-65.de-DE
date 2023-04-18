@@ -1,8 +1,6 @@
 ---
-title: Anwenden von Workflows auf Seiten
-seo-title: Applying Workflows to Pages
-description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Aktionen auszuführen. Es ist auch möglich, mehrere Workflows anzuwenden.
-seo-description: When authoring, you can invoke workflows to take action on your pages; it is also possible to apply more than one workflow..
+title: Anwenden von Workflows auf Inhaltsseiten
+description: Beim Authoring können Sie Workflows aufrufen, um auf Ihren Seiten Maßnahmen zu ergreifen. Es ist auch möglich, mehrere Workflows anzuwenden.
 uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
-workflow-type: ht
-source-wordcount: '648'
-ht-degree: 100%
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+workflow-type: tm+mt
+source-wordcount: '649'
+ht-degree: 73%
 
 ---
 
@@ -26,7 +24,7 @@ Wenn Sie den Workflow anwenden, geben Sie die folgenden Informationen an:
 
 * Der anzuwendende Workflow.
 Sie können jeden beliebigen Workflow anwenden (auf den Sie Zugriff haben, wie von Ihrem AEM-Administrator zugewiesen).
-* Optional: Ein Titel, der dabei hilft, die Workflow-Instanz im Posteingang eines Benutzers zu erkennen.
+* Optional einen Titel, der dazu beiträgt, die Workflow-Instanz im Posteingang eines Benutzers zu identifizieren.
 * Die Workflow-Payload. Hierbei kann es sich um eine oder mehrere Seiten handeln.
 
 Workflows können wie folgt gestartet werden:
@@ -45,7 +43,7 @@ Workflows können wie folgt gestartet werden:
 
 >[!NOTE]
 >
->AEM-Administratoren können [Workflows mithilfe mehrerer anderer Methoden starten](/help/sites-administering/workflows-starting.md).
+>AEM Administratoren können [Workflows mit verschiedenen anderen Methoden starten](/help/sites-administering/workflows-starting.md).
 
 ## Starten eines Workflows von der Sites-Konsole aus {#starting-a-workflow-from-the-sites-console}
 
@@ -54,9 +52,9 @@ Sie können einen Workflow wie folgt starten:
 * [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
 * [die Zeitleiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
-In beiden Fällen ist Folgendes zu tun:
+In beiden Fällen müssen Sie:
 
-* [Geben Sie die Workflow-Details im Workflow-Erstellungs-Assistenten an](#specifying-workflow-details-in-the-create-workflow-wizard).
+* [Geben Sie die Workflow-Details im Assistenten &quot;Workflow erstellen&quot;an](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Starten eines Workflows von der Sites-Symbolleiste aus {#starting-a-workflow-from-the-sites-toolbar}
 
@@ -83,28 +81,28 @@ Aus der **Zeitleiste** können Sie einen Workflow starten, der auf Ihre ausgewä
 
 ### Angeben von Workflow-Details im Assistenten „Workflow erstellen“ {#specifying-workflow-details-in-the-create-workflow-wizard}
 
-Der Assistent **Workflow erstellen** hilft Ihnen, den Workflow auszuwählen und die erforderlichen Details anzugeben.
+Die **Workflow erstellen** -Assistent hilft Ihnen bei der Auswahl des Workflows und der Angabe der erforderlichen Details.
 
-Öffnen Sie den Assistenten **Workflow erstellen** über
+Nach dem Öffnen **Workflow erstellen** Assistenten aus:
 
 * [die Option Erstellen der Sites-Symbolleiste.](#starting-a-workflow-from-the-sites-toolbar)
 * [die Zeitleiste der Sites-Konsole](#starting-a-workflow-from-the-timeline).
 
-Anschließend können Sie Details angeben:
+Sie können Details angeben:
 
-1. Unter **Eigenschaften** werden die grundlegenden Optionen des Workflows definiert:
+1. Im **Eigenschaften** Schritt, werden die grundlegenden Optionen des Workflows definiert:
 
    * **Workflow-Modell**
    * **Workflow-Titel**
 
-      * Sie können einen Titel für diese Instanz angeben, damit Sie sie zu einem späteren Zeitpunkt identifizieren können.
+      * Sie können einen Titel für diese Instanz angeben, damit Sie sie später identifizieren können.
 
-   Abhängig vom Workflow-Modell stehen die folgenden Optionen zur Verfügung. Diese erlauben, das als Payload erstellte Paket zu behalten, nachdem der Workflow beendet ist.
+   Je nach Workflow-Modell stehen auch die folgenden Optionen zur Verfügung. Dadurch kann das als Payload erstellte Paket nach Abschluss des Workflows beibehalten werden.
 
    * **Workflow-Paket behalten**
    * **Paketname**
 
-      * Sie können einen Titel für das Paket festlegen, um die Identifizierung erleichtern.
+      * Sie können einen Titel für das Paket angeben, um die Identifizierung zu erleichtern.
    >[!NOTE]
    >
    >Die Option **Workflow-Paket behalten** ist verfügbar, wenn der Workflow für Unterstützung für mehrere [Ressourcen konfiguriert](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) wurde und mehrere Ressourcen ausgewählt wurden.
@@ -126,9 +124,9 @@ Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl verfeinern können:
          * Nur geänderte Seiten einbeziehen.
          * Nur bereits veröffentlichte Seiten einbeziehen.
 
-         Alle angegebenen untergeordneten Elemente werden der Liste der Ressourcen hinzugefügt, auf die der Workflow angewendet wird.
+         Alle angegebenen untergeordneten Elemente werden der Liste der Ressourcen hinzugefügt, auf die der Workflow angewendet werden soll.
 
-      * **Auswahl entfernen**, um die betreffende Ressource aus dem Workflow zu entfernen.
+      * **Auswahl entfernen** , um diese Ressource aus dem Workflow zu entfernen.
 
    ![wf-53](assets/wf-53.png)
 
@@ -140,6 +138,6 @@ Ein Dialogfeld wird geöffnet, in dem Sie die Auswahl verfeinern können:
 
 ## Starten eines Workflows aus dem Seiten-Editor {#starting-a-workflow-from-the-page-editor}
 
-Wenn Sie eine Seite bearbeiten, können Sie die **Seiteninformationen** von der Symbolleiste aus aufrufen. Das Dropdown-Menü enthält die Option **Im Workflow starten**. Ein Dialogfeld wird geöffnet, in dem Sie den gewünschten Workflow ggf. zusammen mit einem Titel angeben können:
+Wenn Sie eine Seite bearbeiten, können Sie die **Seiteninformationen** von der Symbolleiste aus aufrufen. Das Dropdown-Menü enthält die Option **Workflow starten**. Ein Dialogfeld wird geöffnet, in dem Sie den gewünschten Workflow ggf. zusammen mit einem Titel angeben können:
 
 ![wf-54](assets/wf-54.png)

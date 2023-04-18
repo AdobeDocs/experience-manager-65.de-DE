@@ -1,8 +1,6 @@
 ---
-title: Bearbeiten von Seiten (Authoring)
-seo-title: Authoring Pages
+title: Bearbeiten von Seiten
 description: Es gibt zwei Übersichten zur Inhaltserstellung in AEM. (1) Erste Schritte für Autoren – eine Einführung für neue Autoren, und (2) Kurzanleitung zur Seitenbearbeitung (Authoring) – eine (allgemeine) Kurzanleitung zu den wichtigsten Aktionen.
-seo-description: There are two overviews to authoring with AEM. (1) First Steps for Authors - an introduction for new authors, and (2) Quick Guide to Authoring Pages - a quick guide (high-level) to the main actions.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '298'
-ht-degree: 100%
+ht-degree: 92%
 
 ---
 
@@ -27,9 +25,9 @@ Im Folgenden finden Sie eine Übersicht zur Seitenbearbeitung in AEM:
 >
 >Dieser Abschnitt enthält die Aufgaben, die bei der Bearbeitung von Inhaltsseiten ausgeführt werden. <!-- There are many additional features closely related to page authoring, these are covered under [Site and Page Features](/sites-classic-ui-authoring/classic-feature.md). -->
 
-## Kurze Übersicht der Funktionen zur Seitenbearbeitung (Authoring) {#quick-overview-of-features-used-for-authoring-pages}
+## Schneller Überblick über die Funktionen für die Seitenbearbeitung {#quick-overview-of-features-used-for-authoring-pages}
 
-Zur Unterstützung der Seitenbearbeitung enthält die Autorenumgebung unter anderem folgende Funktionen:
+Um Sie beim Erstellen von Seiten zu unterstützen, bietet die Autorenumgebung Funktionen wie:
 
 * **Drag-and-Drop**
 Komponenten (wie Text, Bild) und digitale Assets (wie Bilder) können auf der Seite positioniert werden, indem sie einfach per Drag-and-Drop an die gewünschte Position verschoben werden.

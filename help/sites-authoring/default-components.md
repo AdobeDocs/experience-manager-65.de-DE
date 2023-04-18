@@ -1,8 +1,6 @@
 ---
-title: Komponenten
-seo-title: Components
-description: AEM ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten
-seo-description: AEM comes with a variety of out-of-the-box components that provide comprehensive functionality for website authors
+title: Standardkomponenten
+description: Adobe Experience Manager verfügt über eine Vielzahl vordefinierter Komponenten, die Website-Autoren umfangreiche Funktionen bieten.
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: ht
-source-wordcount: '427'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '430'
+ht-degree: 63%
 
 ---
 
@@ -21,19 +19,19 @@ ht-degree: 100%
 
 Adobe Experience Manager (AEM) ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. Diese sind beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) verfügbar und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um die Filterung zu erleichtern.
 
-Die Komponenten sind verfügbar, wenn Sie [eine Seite bearbeiten](/help/sites-authoring/editing-content.md). Zur Erleichterung der Filterung werden die Komponenten nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert.
+Die Komponenten sind verfügbar, wenn [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md). Zur Erleichterung der Filterung werden die Komponenten nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert.
 
 >[!NOTE]
 >
->In diesem Abschnitt werden nur Komponenten behandelt, die direkt nach einer Standardinstallation von AEM verfügbar sind.
+>Dieser Abschnitt behandelt nur Komponenten, die standardmäßig in einer AEM-Standardinstallation verfügbar sind.
 >
->Abhängig von Ihrer Instanz besitzen Sie möglicherweise benutzerdefinierte Komponenten, die speziell für Ihre Anforderungen entwickelt wurden. Möglicherweise haben diese sogar denselben Namen wie die hier behandelten Komponenten.
+>Abhängig von Ihrer Instanz verfügen Sie möglicherweise über benutzerdefinierte Komponenten, die explizit für Ihre Anforderungen entwickelt wurden. Diese können sogar denselben Namen haben wie einige der hier behandelten Komponenten.
 
 ## Allgemeine Verwendung {#general-usage}
 
-Die Komponenten sind im Seiten-Editor auf dem seitlichen Bedienfeld der Registerkarte **Komponenten** verfügbar, wenn Sie eine [Seite bearbeiten](/help/sites-authoring/editing-content.md).
+Die Komponenten sind auf der **Komponenten** Registerkarte des Seitenbereichs des Seiteneditors, wenn [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md).
 
-Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer Seite ziehen. Danach können Sie sie wie folgt bearbeiten:
+Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer Seite ziehen. Sie können sie dann bearbeiten, indem Sie Folgendes verwenden:
 
 * [Eigenschaften konfigurieren](/help/sites-authoring/editing-page-properties.md)
 * [Inhalt bearbeiten](/help/sites-authoring/editing-content.md)
@@ -47,11 +45,11 @@ Die Komponenten sind nach verschiedenen Kategorien (Komponentengruppen) sortiert
 
 * **We.Retail Commerce**: Enthält Commerce-Komponenten wie Einkaufswagen und Produktraster
 
-* **Allgemein: Enthält den Layout-Container und das Experience Fragment**
+* **Allgemein**: Enthält den Layout-Container und das Experience Fragment
 
 ## Übersicht über alle Komponenten {#overview-of-all-components}
 
-Die [Komponentenkonsole](/help/sites-authoring/default-components-console.md) bietet einen Überblick über die Komponentengruppen und Komponenten, die von Ihrer AEM-Installation bereitgestellt werden. Sie können wichtige Informationen über die einzelnen Komponenten und deren Verwendung anzeigen.
+Die [Komponentenkonsole](/help/sites-authoring/default-components-console.md) gibt einen Überblick über die Komponentengruppen und Komponenten, die von Ihrer AEM-Installation bereitgestellt werden. Sie können wichtige Informationen über die einzelnen Komponenten und deren Verwendung anzeigen.
 
 ## Komponenten – Hauptbereiche {#components-major-areas}
 
@@ -65,7 +63,7 @@ Die folgenden Seiten enthalten Links zu einigen zusätzlichen, wichtigen Informa
 
 ### Konfigurieren von Komponenten {#configuring-components}
 
-Neben den Komponenten, auf die Autoren in einer Standardinstallation zugreifen können, sind auch verschiedene andere Komponenten verfügbar.
+Neben den Komponenten, auf die Autoren in einer Standardinstallation zugreifen können, stehen auch verschiedene andere Komponenten zur Verfügung.
 
 * Wenn Ihre Seite auf der empfohlenen, modernen, bearbeitbaren Vorlage basiert, können Sie die [Vorlage bearbeiten](/help/sites-authoring/templates.md), diese aktivieren/deaktivieren und Parameter für bestimmte Komponenten bearbeiten.
 * Wenn Ihre Seite auf einer statischen Vorlage basiert, können Sie den [Designmodus](/help/sites-authoring/default-components-designmode.md#enable-disable-components) verwenden, um diese zu aktivieren/deaktivieren und Parameter für bestimmte Komponenten zu bearbeiten.

@@ -1,8 +1,6 @@
 ---
-title: Fehlerbehebung in AEM beim Authoring
-seo-title: Troubleshooting AEM when Authoring
+title: Fehlerbehebung bei AEM beim Authoring
 description: Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei der Arbeit mit AEM stoßen können, und liefert entsprechende Lösungsvorschläge.
-seo-description: The following section covers some issues that you might encounter when using AEM, together with suggestions on how to troubleshoot them.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '430'
-ht-degree: 100%
+ht-degree: 68%
 
 ---
 
@@ -23,7 +21,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 >[!NOTE]
 >
->Wenn Probleme auftreten, sollten Sie auch die Liste der [bekannten Probleme](/help/release-notes/release-notes.md) für Ihre Instanz (Version und Service Packs) prüfen.
+>Bei Problemen sollten Sie auch die Liste der [Bekannte Probleme](/help/release-notes/release-notes.md) für Ihre Instanz (Release- und Service Packs).
 
 >[!NOTE]
 >
@@ -33,16 +31,16 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 * **Problem**:
 
-   * Sie haben Änderungen an einer Seite vorgenommen und die Seite in die Veröffentlichungs-Website repliziert, die *alte* Version der Seite wird aber weiterhin auf der Veröffentlichungs-Website angezeigt.
+   * Sie haben Änderungen an einer Seite vorgenommen und die Seite auf die Veröffentlichungs-Site repliziert, aber die *old* -Version der Seite wird weiterhin auf der Veröffentlichungs-Site angezeigt.
 
 * **Grund**:
 
-   * Dies kann verschiedene Gründe haben. Meist liegt es am Cache (entweder dem Ihres lokalen Browsers oder dem des Dispatchers), gelegentlich kann es sich jedoch auch um ein Problem mit der Replikations-Warteschlange handeln.
+   * Dies kann verschiedene Ursachen haben, meist den Cache (entweder Ihren lokalen Browser oder den Dispatcher), obwohl es manchmal ein Problem mit der Replikationswarteschlange sein kann.
 
 * **Lösungen**:
 
-   * Hier gibt es mehrere Möglichkeiten:
-   * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Prüfen Sie den Seitenstatus und ggf. den Status der Replikations-Warteschlange.
+   * Hier gibt es verschiedene Möglichkeiten:
+   * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Überprüfen Sie den Seitenstatus und ggf. den Status der Replikationswarteschlange.
    * Löschen Sie den Cache des lokalen Browsers und rufen Sie die Seite erneut auf.
    * Fügen Sie dem Ende der Seiten-URL `?` hinzu:
 
@@ -52,21 +50,21 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
    * Wenden Sie sich an den Systemadministrator, wenn Probleme mit den Replikationswarteschlangen vorliegen.
 
-## Sidekick wird nicht angezeigt {#sidekick-not-visible}
+## Sidekick nicht sichtbar {#sidekick-not-visible}
 
 * **Problem**:
 
-   * Beim Bearbeiten einer Inhaltsseite in der Autorenumgebung wird der Sidekick nicht angezeigt.
+   * Der Sidekick ist beim Bearbeiten einer Inhaltsseite in der Autorenumgebung nicht sichtbar.
 
 * **Grund**:
 
-   * In seltenen Fällen kann es vorkommen, dass Sie die Kopfzeile des Sidekicks außerhalb des aktuellen Fensterbereichs platziert haben. Sie können ihn dann nicht neu platzieren.
+   * In seltenen Fällen kann es vorkommen, dass Sie die Kopfzeile des Sidekicks außerhalb des aktuellen Fensterbereichs platziert haben. Das bedeutet, dass Sie sie nicht erneut positionieren können.
 
 * **Lösung**:
 
-   * Melden Sie sich bei Ihrer aktuellen Sitzung ab und melden Sie sich erneut an. Der Sidekick wird wieder an der Standardposition angezeigt.
+   * Melden Sie sich bei Ihrer aktuellen Sitzung ab und melden Sie sich erneut an. Der Sidekick kehrt zur Standardposition zurück.
 
-## Suchen und Ersetzen: nicht alle Instanzen werden ersetzt {#find-replace-not-all-instances-are-replaced}
+## Suchen und Ersetzen - nicht alle Instanzen werden ersetzt {#find-replace-not-all-instances-are-replaced}
 
 * **Problem:**
 

@@ -1,8 +1,6 @@
 ---
-title: AEM Mobile On-Demand
-seo-title: AEM Mobile On-Demand
-description: Auf dieser Seite erfahren Sie, wie Sie AEM Mobile On-Demand Services-App verwalten. Es bietet einen Überblick über die Rollen und Zuständigkeiten eines AEM-Administrators für On-Demand-Dienste.
-seo-description: Follow this page to get started with administering AEM mobile On-Demand services app. It provides an overview of the roles and responsibilities of an AEM administrator for On-Demand services.
+title: Erste Schritte mit Adobe Experience Manager Mobile On-Demand-Diensten
+description: Erste Schritte mit der Verwaltung AEM Mobile On-Demand Services-App. Es bietet einen Überblick über die Rollen und Zuständigkeiten eines AEM-Administrators für On-Demand-Dienste.
 uuid: fd99c032-287a-489b-9690-b18980c55c29
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -10,9 +8,9 @@ content-type: reference
 topic-tags: administering-on-demand-services-app
 discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ff7e37f24990a94510331a33cb05b7b44b3bfe85
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '296'
 ht-degree: 8%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 8%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 >[!NOTE]
 >

@@ -1,8 +1,6 @@
 ---
-title: Grundlegende Handhabung
-seo-title: Basic Handling
-description: Machen Sie sich mit der Steuerung von AEM und seiner grundlegenden Verwendung vertraut.
-seo-description: Get comfortable with navigating AEM and its basic usage
+title: Grundlegende Handhabung bei der Verwendung der AEM Autorenumgebung
+description: Bequem mit der Navigation AEM und der grundlegenden Verwendung
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '2967'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '2973'
+ht-degree: 60%
 
 ---
 
@@ -22,9 +20,9 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->* Diese Seite soll einen Überblick über die grundlegende Handhabung der AEM-Autorenumgebung geben. Als Grundlage wird die **Sites-Konsole** verwendet.
+>* Auf dieser Seite erhalten Sie einen Überblick über die grundlegende Handhabung der AEM Autorenumgebung. Als Grundlage wird die **Sites-Konsole** verwendet.
 >
->* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Detaillierte Informationen zu den einzelnen Konsolen und ihren jeweiligen Funktionen finden Sie auf den anderen Seiten.
+>* Einige Funktionen stehen nicht in allen Konsolen zur Verfügung und in einigen Konsolen können zusätzliche Funktionen zur Verfügung stehen. Spezifische Informationen zu den einzelnen Konsolen und den zugehörigen Funktionen werden auf anderen Seiten ausführlicher behandelt.
 >* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
@@ -33,13 +31,13 @@ ht-degree: 100%
 
 ### Touch-optimierte Benutzeroberfläche {#a-touch-enabled-ui}
 
-Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Berührungen – Tippen, Berühren und Halten sowie Wischen – mit der Software zu interagieren. Im Gegensatz dazu werden auf herkömmlichen Desktop-Benutzeroberflächen Mausaktionen verwendet, wie z. B. Klicken, Doppelklicken, mit der rechten Maustaste klicken und Bewegen der Maus über ein Objekt.
+AEM Benutzeroberfläche wurde für Touch aktiviert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Berührungen – Tippen, Berühren und Halten sowie Wischen – mit der Software zu interagieren. Dies steht im Gegensatz dazu, wie eine herkömmliche Desktop-Oberfläche mit Mausaktionen wie Klick, Doppelklick, Rechtsklick und Mauszeiger funktioniert.
 
 Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie auf Ihren Touch-Geräten (z. B. einem Smartphone oder Tablet) Touch-Gesten und auf einem traditionellen Desktop-Gerät Mausaktionen nutzen.
 
 ### Erste Schritte {#first-steps}
 
-Unmittelbar nach der Anmeldung gelangen Sie zum [Navigationsfenster](#navigation-panel). Durch Auswahl einer der Optionen wird die entsprechende Konsole geöffnet.
+Unmittelbar nach der Anmeldung gelangen Sie zum [Navigationsfenster](#navigation-panel). Wenn Sie eine der Optionen auswählen, wird die entsprechende Konsole geöffnet.
 
 ![bh-01](assets/bh-01.png)
 
@@ -51,17 +49,17 @@ Unmittelbar nach der Anmeldung gelangen Sie zum [Navigationsfenster](#navigation
 
 ### Produktnavigation {#product-navigation}
 
-Wenn ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zur Produktnavigation gestartet. Nehmen Sie sich einen Moment Zeit, um sich das Programm anzusehen und einen guten Überblick über den grundlegenden Umgang mit AEM zu erhalten.
+Wenn ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zur Produktnavigation gestartet. Nehmen Sie sich eine Minute Zeit, um zu klicken oder zu tippen, um einen guten Überblick über die grundlegende Handhabung von AEM zu erhalten.
 
 ![bh-02](assets/bh-02.png)
 
 Klicken oder tippen Sie auf **Weiter**, um zur nächsten Seite der Übersicht zu wechseln. Klicken bzw. tippen Sie auf **Schließen** oder klicken Sie außerhalb des Überblicksfensters, um es zu schließen.
 
-Die Übersicht wird bei Ihrem nächsten Zugriff auf eine Konsole wieder gestartet, sofern Sie nicht die Option **Nicht mehr anzeigen** aktivieren.
+Die Übersicht wird beim nächsten Zugriff auf eine Konsole neu gestartet, es sei denn, Sie sehen alle Folien oder aktivieren die Option **Zeigt das nicht noch einmal an**.
 
 ## Globale Navigation {#global-navigation}
 
-Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Dieses Navigationsfenster wird als Vollbild-Dropdown angezeigt, wenn Sie auf den AEM-Link in der oberen linken Bildschirmecke klicken oder tippen.
+Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navigieren. Dies wird als Vollbild-Dropdown-Liste ausgelöst, wenn Sie auf den Link Adobe Experience Manager oben links im Bildschirm klicken oder tippen.
 
 Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
@@ -69,14 +67,14 @@ Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließe
 
 >[!NOTE]
 >
->Bei Ihrer ersten Anmeldung wird das **Navigationsfenster** geöffnet.
+>Bei der ersten Anmeldung haben Sie die **Navigation** Bereich.
 
 Die globale Navigation verfügt über zwei Fenster, die am linken Bildschirmrand durch Symbole dargestellt werden:
 
 * **[Navigation](/help/sites-authoring/basic-handling.md#navigation-panel)** – dargestellt durch einen Kompass 
-* **[Tools](/help/sites-authoring/basic-handling.md#tools-panel)** – dargestellt durch einen Hammer
+* **[Instrumente](/help/sites-authoring/basic-handling.md#tools-panel)** - dargestellt durch einen Hammer
 
-Die in diesen Fenstern verfügbaren Optionen werden im Folgenden beschrieben.
+Die in diesen Bedienfeldern verfügbaren Optionen werden unten beschrieben.
 
 ### Navigationsfenster {#navigation-panel}
 
@@ -100,48 +98,48 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
   </tr>
   <tr>
    <td>Communities</td>
-   <td>In dieser Konsole können Sie <a href="/help/communities/sites-console.md">Community-Sites</a> für die <a href="/help/communities/overview.md#engagement-community">Interaktion</a> und <a href="/help/communities/overview.md#enablement-community">Aktivierung</a> erstellen und verwalten.</td>
+   <td>In dieser Konsole können Sie <a href="/help/communities/sites-console.md">Community-Sites</a> für <a href="/help/communities/overview.md#engagement-community">Interaktion</a> und <a href="/help/communities/overview.md#enablement-community">Aktivierung</a>.</td>
   </tr>
   <tr>
    <td>Commerce</td>
-   <td>Damit können Sie Produkte, Produktkataloge und Bestellungen verwalten, die im Zusammenhang mit Ihren <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a>-Websites stehen.</td>
+   <td>Damit können Sie Produkte, Produktkataloge und Bestellungen verwalten, die mit Ihrer <a href="/help/commerce/cif-classic/administering/ecommerce.md">Handel</a> Sites.</td>
   </tr>
   <tr>
    <td>Experience Fragments</td>
-   <td>Bei einem <a href="/help/sites-authoring/experience-fragments.md">Experience Fragment</a> handelt es sich um ein einzelnes Erlebnis, das kanalübergreifend wiederverwendet werden kann und Variationen aufweist. So erübrigt sich das wiederholte Kopieren und Einfügen von Erlebnissen oder Teilen von Erlebnissen.</td>
+   <td>Ein <a href="/help/sites-authoring/experience-fragments.md">Experience Fragment</a> ist ein eigenständiges Erlebnis, das kanalübergreifend wiederverwendet werden kann und Varianten aufweist. So erübrigt sich das wiederholte Kopieren und Einfügen von Erlebnissen oder Teilen von Erlebnissen.</td>
   </tr>
   <tr>
    <td>Formulare</td>
-   <td>In dieser Konsole können Sie <a href="/help/forms/home.md">Formulare und Dokumente</a> erstellen, verwalten und verarbeiten.</td>
+   <td>In dieser Konsole können Sie Ihre <a href="/help/forms/home.md">Formulare und Dokumente</a>.</td>
   </tr>
   <tr>
    <td>Personalisierung</td>
-   <td>Diese Konsole bietet ein <a href="/help/sites-authoring/personalization.md">Framework aus Tools für die Bearbeitung von Inhalt für eine bestimmte Zielgruppe und die Darstellung personalisierter Erlebnisse</a>.</td>
+   <td>Diese Konsole bietet eine <a href="/help/sites-authoring/personalization.md">Framework von Tools für die Erstellung von zielgerichteten Inhalten und die Präsentation personalisierter Erlebnisse</a>.</td>
   </tr>
   <tr>
    <td>Projekte</td>
-   <td>Über die <a href="/help/sites-authoring/touch-ui-managing-projects.md">Konsole „Projekte“ können Sie direkt auf Ihre Projekte zugreifen</a>. Projekte sind virtuelle Dashboards. Sie können sie verwenden, um ein Team zusammenzustellen, diesem Team Zugriff auf Ressourcen, Workflows und Aufgaben zu erteilen und Personen so die Möglichkeit zu geben, gemeinsam an einem Ziel zu arbeiten. <br /> </td>
+   <td>Die <a href="/help/sites-authoring/touch-ui-managing-projects.md">Über die Projektekonsole erhalten Sie direkten Zugriff auf Ihre Projekte</a>. Projekte sind virtuelle Dashboards. Sie können sie verwenden, um ein Team zusammenzustellen, diesem Team Zugriff auf Ressourcen, Workflows und Aufgaben zu erteilen und Personen so die Möglichkeit zu geben, gemeinsam an einem Ziel zu arbeiten. <br /> </td>
   </tr>
   <tr>
    <td>Screens</td>
-   <td>Mit <a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=de">Screens </a>können Sie alle an Kunden gerichteten Bildschirme aller Größenordnungen und an jedem Ort verwalten.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=de">Screens</a> ermöglicht Ihnen die Verwaltung aller Ihrer kundenorientierten Bildschirme, unabhängig von Größe und Standort.</td>
   </tr>
   <tr>
    <td>Sites</td>
-   <td>Mit der Konsole „Sites“ können Sie <a href="/help/sites-authoring/page-authoring.md">Websites erstellen, anzeigen und verwalten</a>, die auf Ihrer AEM-Instanz ausgeführt werden. Mithilfe dieser Konsolen können Sie Seiten auf der Website erstellen, bearbeiten, kopieren, verschieben, löschen und veröffentlichen.<br /> </td>
+   <td>Mit der Konsole Sites können Sie <a href="/help/sites-authoring/page-authoring.md">Websites erstellen, anzeigen und verwalten</a> auf Ihrer AEM Instanz ausgeführt werden. In diesen Konsolen können Sie Website-Seiten erstellen, bearbeiten, kopieren, verschieben und löschen, Workflows starten und Seiten veröffentlichen.<br /> </td>
   </tr>
  </tbody>
 </table>
 
 ### Tools-Bereich {#tools-panel}
 
-Im Werkzeugfenster besitzt jede Option im Seitenbereich mehrere Untermenüs. Die hier verfügbaren [Tools-Konsolen](/help/sites-administering/tools-consoles.md) bieten Zugriff auf mehrere spezielle Tools und Konsolen, die Ihnen bei der Verwaltung Ihrer Websites, Ihrer digitalen Assets und anderer Aspekten Ihres Inhalts-Repositorys helfen.
+Im Bedienfeld &quot;Tools&quot;enthält jede Option im seitlichen Bedienfeld einen Bereich von Untermenüs. Die [Tools-Konsolen](/help/sites-administering/tools-consoles.md) können Sie hier auf eine Reihe spezialisierter Tools und Konsolen zugreifen, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Inhalts-Repositorys verwalten können.
 
 ![bh-04](assets/bh-04.png)
 
 ## Die Kopfzeile {#the-header}
 
-Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meisten Optionen in der Kopfzeile bleiben unabhängig von Ihrer Position im System gleich, manche sind aber kontextspezifisch.
+Die Kopfzeile befindet sich immer oben im Bildschirm. Während die meisten Optionen in der Kopfzeile unabhängig davon, wo Sie sich im System befinden, gleich bleiben, sind einige kontextspezifisch.
 
 ![bh-03](assets/bh-03.png)
 
@@ -173,7 +171,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    >[!NOTE]
    >
-   >AEM enthält vorab installierte Verwaltungsaufgaben, die für die Benutzergruppe der Administratoren bestimmt sind. Weitere Informationen finden Sie unter [Ihr Posteingang – Standardmäßige Verwaltungsaufgaben](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks).
+   >Vordefinierte AEM enthalten vordefinierte Aufgaben, die der Administrator-Benutzergruppe zugewiesen sind. Siehe [Ihr Posteingang - Vordefinierte Verwaltungsaufgaben](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) für Details.
 
 * [Benutzereigenschaften](/help/sites-authoring/user-properties.md)
 
@@ -193,7 +191,7 @@ Die Kopfzeile befindet sich immer am oberen Rand der Bildschirmseite. Die meiste
 
    Breadcrumbs befinden sich immer in der Mitte der Leiste und zeigen die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole. In der Sites-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
 
-   Klicken Sie einfach auf den Breadcrumb-Text, um eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements anzuzeigen. Klicken Sie auf einen Eintrag, um zu dieser Position zu gelangen.
+   Klicken Sie einfach auf den Breadcrumb-Text, um eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements anzuzeigen. Klicken Sie auf einen Eintrag, um zu diesem Ort zu springen.
 
    ![bh-06](assets/bh-06.png)
 
@@ -233,7 +231,7 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
 * **Konsolensymbolleiste**
 
-   Durch Auswahl des Symbols **Hilfe** werden abhängig von Ihrer Position die geeigneten Ressourcen geöffnet:
+   Je nach Standort **Hilfe** -Symbol öffnet die entsprechenden Ressourcen:
 
    ![bh-10](assets/bh-10.png)
 
@@ -253,7 +251,7 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
 * **Tools-Konsole**
 
-   Mit der **Tools-Konsole** können Sie auch die externen **Ressourcen** aufrufen:
+   Aus dem **Instrumente** -Konsole können Sie auch auf die externe **Ressourcen**:
 
    * **Dokumentation**
 Dokumentation für Web Experience Management anzeigen
@@ -276,7 +274,7 @@ Bei der Auswahl einer Ressource (z. B. einer Seite oder eines Assets) werden in 
 
 * der aktuellen Konsole.
 * dem aktuellen Kontext.
-* ob Sie sich im [Auswahlmodus](#navigatingandselectionmode) befinden
+* Ob Sie [Auswahlmodus](#navigatingandselectionmode).
 
 In der Symbolleiste werden immer nur jene Aktionen angezeigt, die Sie bei den jeweiligen Elementen durchführen können.
 
@@ -292,9 +290,9 @@ Aufgrund des eingeschränkten Anzeigebereichs in einigen Fenstern kann die Symbo
 
 ## Schnellaktionen {#quick-actions}
 
-In der [Kartenansicht](#cardviewquickactions) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind für jeweils ein einzelnes Element verfügbar. Die Notwendigkeit der Vorauswahl entfällt dabei.
+In der [Kartenansicht](#cardviewquickactions) sind bestimmte Aktionen sowohl als Schnellaktionssymbole als auch auf der Symbolleiste vorhanden. Schnellaktionssymbole sind jeweils nur für ein Element verfügbar, sodass Sie keine Vorauswahl treffen müssen.
 
-Die Schnellaktionen sind sichtbar, wenn Sie die Maus auf eine Ressourcenkarte bewegen (Desktopgerät). Die verfügbaren Schnellaktionen hängen von der Konsole und vom Kontext ab. Dies sind beispielsweise die Schnellaktionen für eine Seite in der **Sites-Konsole**:
+Die Schnellaktionen sind sichtbar, wenn Sie den Mauszeiger über eine Ressourcenkarte (Desktop-Gerät) bewegen. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite im **Sites** console:
 
 ![bh-13](assets/bh-13.png)
 
@@ -370,8 +368,8 @@ Die Auswahl einer bestimmten Ressource hängt von der Kombination der Ansicht un
 
 Sie können alle Elemente in einer Ansicht auswählen, indem Sie in der oberen rechten Ecke der Konsole auf die Option **Alles auswählen** klicken.
 
-* In der **Kartenansicht** sind alle Karten ausgewählt.
-* In der **Listenansicht** sind alle Elemente in der Liste ausgewählt.
+* In **Kartenansicht** alle Karten ausgewählt sind.
+* In **Listenansicht** alle Elemente in der Liste ausgewählt sind.
 * In der **Spaltenansicht** sind alle Elemente in der Spalte ganz links ausgewählt.
 
 ![screen-shot_2019-03-05at094659](assets/screen-shot_2019-03-05at094659.png)
@@ -380,7 +378,7 @@ Sie können alle Elemente in einer Ansicht auswählen, indem Sie in der oberen r
 
 In allen Fällen wird die Anzahl der ausgewählten Elemente in der rechten oberen Ecke der Symbolleiste angezeigt.
 
-Sie können wie folgt die Auswahl aller Elemente aufheben und den Auswahlmodus beenden:
+Sie können die Auswahl aller Elemente aufheben und den Auswahlmodus beenden, indem Sie entweder:
 
 * Klicken oder tippen Sie auf das **X** neben der Anzahl
 
@@ -388,7 +386,7 @@ Sie können wie folgt die Auswahl aller Elemente aufheben und den Auswahlmodus b
 
 ![bh-14](assets/bh-14.png)
 
-In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie die Esc-Taste auf der Tastatur drücken, wenn Sie ein Desktop-Gerät verwenden.
+In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie auf der Tastatur auf Esc tippen, wenn Sie ein Desktop-Gerät verwenden.
 
 #### Auswahlbeispiel {#selecting-example}
 
@@ -404,35 +402,35 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 ![bh-16](assets/bh-16.png)
 
-Die Spaltenansicht ermöglicht die Navigation durch einen Inhaltsbaum über mehrere untergeordnete Spalten. Mit dieser Ansicht können Sie die Baumstruktur Ihrer Website visualisieren und durchlaufen.
+Die Spaltenansicht ermöglicht eine visuelle Navigation eines Inhaltsbaums durch eine Reihe kaskadierender Spalten. Mit dieser Ansicht können Sie die Baumstruktur Ihrer Website visualisieren und durchlaufen.
 
-Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeordneten Ressourcen in einer Spalte rechts angezeigt. Wird eine Ressource in der rechten Spalte ausgewählt, werden die untergeordneten Ressourcen in einer weiteren Spalte rechts angezeigt usw.
+Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeordneten Ressourcen in einer Spalte rechts angezeigt. Wenn Sie eine Ressource in der rechten Spalte auswählen, werden die untergeordneten Ressourcen in einer anderen Spalte rechts angezeigt usw.
 
-* Sie können im Baum nach oben und unten navigieren, indem Sie auf einen Ressourcennamen oder den Pfeil rechts vom Ressourcennamen tippen oder klicken.
+* Sie können im Baum nach oben und unten navigieren, indem Sie auf den Ressourcennamen oder den Pfeil rechts neben dem Ressourcennamen tippen/klicken.
 
-   * Beim Tippen bzw. Klicken werden Ressourcenname und Pfeil hervorgehoben.
+   * Der Ressourcenname und der Pfeil werden beim Tippen oder Klicken hervorgehoben.
 
    ![bh-17](assets/bh-17.png)
 
-   * Die untergeordneten Elemente der ausgewählten Ressource werden in der Spalte rechts neben der Ressource angezeigt.
-   * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente besitzt, werden die Ressourcendetails in der letzten Spalte angezeigt.
+   * Die untergeordneten Elemente der angeklickten/getappten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
+   * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente enthält, werden dessen Details in der letzten Spalte angezeigt.
 
 
 * Durch Tippen oder Klicken auf die Miniatur wird die Ressource ausgewählt.
 
-   * Dann erscheint ein Häkchen auf der Miniaturansicht und der Ressourcenname wird hervorgehoben dargestellt.
+   * Wenn diese Option aktiviert ist, wird ein Häkchen auf der Miniaturansicht angezeigt und der Ressourcenname wird ebenfalls hervorgehoben.
    * Die Details der ausgewählten Ressource werden in der letzten Spalte angezeigt.
    * Die Aktionssymbolleiste wird verfügbar.
 
    ![bh-18](assets/bh-18.png)
 
-   Wenn eine Seite in der Spaltenansicht ausgewählt wird, wird sie zusammen mit den folgenden Details in der letzten Spalte angezeigt:
+   Wenn eine Seite in der Spaltenansicht ausgewählt wird, wird die ausgewählte Seite in der finalen Spalte zusammen mit den folgenden Details angezeigt:
 
    * Seitentitel
    * Seitenname (Teil der URL der Seite)
    * Vorlage, auf der die Seite basiert
    * Änderungsdetails
-   * Sprache der Seite
+   * Seitensprache
    * Veröffentlichungsdetails
 
 
@@ -440,17 +438,17 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
 ![bh-15-1](assets/bh-15-1.png)
 
-* In der Kartenansicht werden Informationskarten für jedes Element auf der aktuellen Ebene angezeigt. Diese bieten u. a. folgende Informationen:
+* In der Kartenansicht werden Informationskarten für jedes Element auf der aktuellen Ebene angezeigt. Diese enthalten Informationen wie:
 
    * eine visuelle Darstellung des Seiteninhalts
    * den Seitentitel
    * wichtige Daten (z. B. zuletzt bearbeitet, zuletzt veröffentlicht)
    * ob die Seite gesperrt, ausgeblendet oder Teil einer Live Copy ist
-   * wann Sie im Zuge eines Workflows eine Aktion ausführen müssen (sofern zutreffend)
+   * Gegebenenfalls, wann Sie im Rahmen eines Workflows Maßnahmen ergreifen müssen.
 
-      * Markierungen, die auf erforderliche Aktionen hinweisen, können mit Einträgen in Ihrem [Posteingang](/help/sites-authoring/inbox.md) verknüpft werden.
+      * Markierungen, die die erforderlichen Aktionen angeben, können mit Einträgen in Ihrer [Posteingang](/help/sites-authoring/inbox.md).
 
-* In dieser Ansicht sind auch [Schnellaktionen](#quick-actions) sowie die Auswahlfunktion und allgemeine Aktionen wie „Bearbeiten“ verfügbar.
+* [Schnellaktionen](#quick-actions) sind auch in dieser Ansicht verfügbar, z. B. Auswahl und allgemeine Aktionen wie Bearbeiten.
 
    ![bh-13-1](assets/bh-13-1.png)
 
@@ -467,30 +465,30 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
    ![bh-20](assets/bh-20.png)
 
-   * Wenn alle Elemente in der Liste ausgewählt wurden, ist dieses Kontrollkästchen aktiviert.
+   * Wenn alle Elemente in der Liste ausgewählt sind, wird dieses Kontrollkästchen aktiviert.
 
-      * Klicken bzw. tippen Sie auf das Kontrollkästchen, um die Auswahl wieder aufzuheben.
-   * Wurden nur einige Elemente ausgewählt, wird es mit einem Minuszeichen dargestellt.
+      * Klicken oder tippen Sie auf das Kontrollkästchen, um die Auswahl für alle aufzuheben.
+   * Wenn nur einige Elemente ausgewählt sind, wird sie mit einem Minuszeichen angezeigt.
 
-      * Klicken bzw. tippen Sie auf das Kontrollkästchen, um alle auszuwählen.
-      * Durch abermaliges Klicken oder Tippen auf das Kontrollkästchen heben Sie die Auswahl wieder auf.
+      * Klicken oder tippen Sie auf das Kontrollkästchen, um alle auszuwählen.
+      * Klicken oder tippen Sie erneut auf das Kontrollkästchen, um die Auswahl für alle aufzuheben.
 
 
-* Wählen Sie mit der Option **Ansichtseinstellungen** unter der Schaltfläche „Ansichten“ die Spalten aus, die angezeigt werden sollen. Die folgenden Spalten können angezeigt werden:
+* Wählen Sie mit der Option **Ansichtseinstellungen** unter der Schaltfläche „Ansichten“ die Spalten aus, die angezeigt werden sollen. Die folgenden Spalten stehen zur Anzeige zur Verfügung:
 
-   * **Name** – Seitenname, der in einer mehrsprachigen Autorenumgebung nützlich sein kann, da er Teil der Seiten-URL ist und unabhängig von der Sprache gleich bleibt
-   * **Geändert** – Datum der letzten Änderung und der Benutzer, der die Änderung vorgenommen hat
-   * **Veröffentlicht** – Veröffentlichungsstatus
+   * **Name** - Seitenname, der in einer mehrsprachigen Authoring-Umgebung nützlich sein kann, da er Teil der URL der Seite ist und sich unabhängig von der Sprache nicht ändert
+   * **Geändert** - Datum der letzten Änderung und letzte Änderung durch den Benutzer
+   * **Veröffentlicht** - Veröffentlichungsstatus
    * **Vorlage** – Vorlage, auf der die Seite basiert
    * **Workflow** – Workflow, der derzeit auf die Seite angewendet ist. Weitere Informationen sind verfügbar, wenn Sie die Maus darauf bewegen oder die Zeitleiste öffnen.
 
-   * **Seitenanalyse**
-   * **Individuelle Besucher**
-   * **Zeit auf Seite**
+   * **Seitenanalysen**
+   * **Unique Visitors**
+   * **Besuchszeit pro Seite**
 
    ![bh-21](assets/bh-21.png)
 
-   Standardmäßig wird die Spalte **Name** angezeigt, die Teil der URL der Seite ist. Unter Umständen muss der Autor auf Seiten zugreifen, die in einer anderen Sprache verfasst sind. In diesem Fall ist die Anzeige des Seitennamens (der sich normalerweise nicht ändert) äußerst hilfreich, wenn der Autor die Sprache der Seite nicht kennt.
+   Standardmäßig wird die Spalte **Name** angezeigt, die Teil der URL der Seite ist. In einigen Fällen muss der Autor möglicherweise auf Seiten zugreifen, die in einer anderen Sprache verfasst sind. Wenn der Autor die Sprache der Seite nicht kennt, kann es hilfreich sein, den Namen der Seite zu sehen (was in der Regel unverändert ist).
 
 * Ändern Sie die Reihenfolge der Elemente mithilfe des vertikalen gepunkteten Balkens am rechten Rand jedes Elements.
 
@@ -504,9 +502,9 @@ Durch die Auswahl einer Ressource in der Spalte ganz links werden die untergeord
 
    ![bh-23](assets/bh-23.png)
 
-* Sie können Analysedaten anzeigen, indem Sie die entsprechenden Spalten mithilfe des Dialogfelds **Ansichtseinstellungen** anzeigen.
+* Sie können Analytics-Daten anzeigen, indem Sie die entsprechenden Spalten mit der **Anzeigeeinstellungen** angezeigt.
 
-   Zum Filtern der Analysedaten stehen Ihnen rechts neben der Kopfzeile Optionen für die letzten 30, 90 oder 365 Tage zur Verfügung.
+   Sie können Analytics-Daten für die letzten 30, 90 oder 365 Tage mithilfe der Filteroptionen auf der rechten Seite der Kopfzeile filtern.
 
    ![bh-24](assets/bh-24.png)
 
@@ -526,17 +524,17 @@ Wenn „Nur Inhalt“ ausgewählt ist, wird lediglich das Schienensymbol angezei
 
 ### Inhaltsstruktur {#content-tree}
 
-Über die Inhaltsstruktur können Benutzer im seitlichen Bedienfeld schnell in der Website-Hierarchie navigieren und eine Vielzahl von Informationen zu den Seiten im aktuellen Ordner anzeigen.
+Die Inhaltsstruktur kann verwendet werden, um schnell in der Site-Hierarchie im Seitenbereich zu navigieren und viele Informationen über die Seiten im aktuellen Ordner anzuzeigen.
 
-Mit dem seitlichen Bedienfeld der Inhaltsstruktur und einer Listen- oder Kartenansicht können Benutzer die hierarchische Struktur von Projekten problemlos einsehen. Außerdem können sie mit dem seitlichen Bedienfeld der Inhaltsstruktur in der gesamten Inhaltsstruktur navigieren sowie ausführliche Seiteninformationen in der Listenansicht aufrufen.
+Mithilfe des Seitenbereichs der Inhaltsstruktur in Verbindung mit einer Listen- oder Kartenansicht können Benutzer die hierarchische Struktur des Projekts einfach erkennen, mit dem Seitenbereich der Inhaltsstruktur einfach durch die Inhaltsstruktur navigieren und detaillierte Seiteninformationen in der Listenansicht anzeigen.
 
 ![bh-26](assets/bh-26.png)
 
 >[!NOTE]
 >
->Sobald ein Eintrag in der Hierarchieansicht ausgewählt wurde, kann mit den Pfeiltasten schnell in der Hierarchie navigiert werden.
+>Sobald ein Eintrag in der Hierarchieansicht ausgewählt ist, können Sie mithilfe der Pfeiltasten schnell in der Hierarchie navigieren.
 >
->Weitere Informationen finden Sie unter [Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md).
+>Siehe Abschnitt [Tastaturbefehle](/help/sites-authoring/keyboard-shortcuts.md) für weitere Informationen.
 
 ### Zeitleiste {#timeline}
 
@@ -572,7 +570,7 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 ### Verweise {#references}
 
-**Verweise** zeigen sämtliche Verbindungen zur ausgewählten Ressource. Beispiel: In der **Sites-Konsole** wird in den [Verweisen](/help/sites-authoring/author-environment-tools.md#showingpagereferences) für Seiten Folgendes angezeigt:
+**Verweise** zeigt alle Verbindungen zur ausgewählten Ressource an. Beispiel: in der **Sites** console [Verweise](/help/sites-authoring/author-environment-tools.md#showingpagereferences) für Seiten zeigt an:
 
 * [Launches](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live Copies](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)

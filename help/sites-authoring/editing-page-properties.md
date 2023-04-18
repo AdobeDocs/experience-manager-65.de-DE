@@ -1,8 +1,6 @@
 ---
-title: Bearbeiten der Seiteneigenschaften
-seo-title: Editing Page Properties
-description: Definieren der erforderlichen Eigenschaften für eine Seite
-seo-description: Define the required properties for a page
+title: Bearbeiten der Eigenschaften von Inhaltsseiten
+description: Definieren Sie die erforderlichen Eigenschaften für eine Seite.
 uuid: d3a2183b-8082-4cfc-aeed-26facbf3f3e6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +9,16 @@ content-type: reference
 discoiquuid: 1e9dd0d7-209a-4989-b66b-bca0d04b437a
 docset: aem65
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '1884'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '1885'
+ht-degree: 60%
 
 ---
 
 # Bearbeiten der Seiteneigenschaften{#editing-page-properties}
 
-Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden und andere Seiten nicht. Entsprechend sind auch die Live Copy-Informationen verfügbar.
+Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden, andere nicht und die Live Copy-Informationen sind entsprechend verfügbar.
 
 ## Seiteneigenschaften {#page-properties}
 
@@ -30,7 +28,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Titel**
 
-   Der Titel der Seite wird an verschiedenen Stellen angezeigt. Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
+   Der Titel der Seite wird an verschiedenen Stellen angezeigt. Beispiel: die **Websites** und der **Sites** Karten-/Listenansichten.
 
    Dies ist ein Pflichtfeld.
 
@@ -38,13 +36,13 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
    Hier können Sie der Seite Tags hinzufügen (oder davon entfernen), indem Sie die Liste im Auswahlfeld aktualisieren:
 
-   * Wenn Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
-   * Ein vollkommen neues Tag kann angegeben werden, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
+   * Nachdem Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem x aus dieser Liste entfernen.
+   * Sie können ein völlig neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
 
       * Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken.
-      * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der es als neues Tag kennzeichnet.
-   * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
-   * Wenn Sie den Mauszeiger über ein Tag im Auswahlfeld halten, wird ein x angezeigt, mit dessen Hilfe Sie das Tag löschen können.
+      * Das neue Tag wird dann mit einem kleinen Stern auf der rechten Seite angezeigt, der angibt, dass es sich um ein neues Tag handelt.
+   * Mit der Dropdown-Funktion können Sie aus vorhandenen Tags auswählen.
+   * Ein x wird angezeigt, wenn Sie den Mauszeiger über einen Tag-Eintrag im Auswahlfeld halten, der zum Entfernen dieses Tags für diese Seite verwendet werden kann.
 
    Weitere Informationen zu Tags finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
 
@@ -62,11 +60,11 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
       * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. „Cycling Tuscany | Always ready for the WKND“.
 * **Seitentitel**
 
-   Ein Titel zur Verwendung auf der Seite. Dieser wird üblicherweise von Titel-Komponenten verwendet. Wenn dieses Feld leer bleibt, wird der **Titel** verwendet.
+   Ein Titel, der auf der Seite verwendet werden soll. Wird normalerweise von Titelkomponenten verwendet. Wenn leer, wird **Titel** verwendet.
 
 * **Navigationstitel**
 
-   Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten). Wenn dieses Feld leer bleibt, wird der **Titel** verwendet.
+   Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten). Wenn leer, wird die **Titel** verwendet.
 
 * **Untertitel**
 
@@ -74,23 +72,23 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Beschreibung**
 
-   Ihre Beschreibung der Seite, der Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
+   Ihre Beschreibung der Seite, ihren Zweck oder andere Details, die Sie hinzufügen möchten.
 
 * **Einschaltzeit**
 
-   Datum und Uhrzeit der Aktivierung der veröffentlichten Seite. Nach der Veröffentlichung ruht die Seite bis zu diesem Zeitpunkt. 
+   Datum und Uhrzeit der Aktivierung der veröffentlichten Seite. Nach der Veröffentlichung ruht diese Seite bis zum angegebenen Zeitpunkt.
 
-   Lassen Sie diese Felder leer, wenn die Seite sofort veröffentlicht werden soll (der Normalfall).
+   Lassen Sie diese Felder für Seiten, die Sie sofort veröffentlichen möchten (im normalen Szenario), leer.
 
 * **Ausschaltzeit**
 
-   Datum und Uhrzeit der Deaktivierung der veröffentlichten Seite.
+   Der Zeitpunkt, zu dem die veröffentlichte Seite deaktiviert wird.
 
-   Lassen Sie diese Felder für sofortige Maßnahmen leer.
+   Lassen Sie diese Felder erneut für sofortiges Handeln leer.
 
 * **Vanity-URL**
 
-   Ermöglicht die Eingabe einer Vanity-URL für diese Seite, sodass Sie eine kürzere bzw. aussagekräftigere URL verwenden können.
+   Ermöglicht die Eingabe einer Vanity-URL für diese Seite, die es Ihnen ermöglicht, eine kürzere und/oder ausdrucksstärkere URL zu verwenden.
 
    Wenn z. B. die Vanity-URL `welcome` auf die Seite gesetzt wird, die durch den Pfad `/v1.0/startpage` für die Website `http://example.com,` identifiziert wird, wäre `http://example.com/welcome` die Vanity-URL von `http://example.com/content/v1.0/startpage`.
 
@@ -98,8 +96,8 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
    >
    >Vanity-URLs:
    >
-   >* müssen eindeutig sein, Sie müssen also darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
-   >* unterstützen keine regex-Muster.
+   >* Muss eindeutig sein. Daher sollten Sie darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
+   >* Unterstützen Sie keine Regex-Muster.
    >* sollten nicht auf eine vorhandene Seite eingestellt sein.
 
 
@@ -117,15 +115,15 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Sprach-Stamm**
 
-   Muss aktiviert werden, wenn die Seite als Stamm einer Sprachkopie fungiert.
+   Muss überprüft werden, wenn die Seite der Stamm einer Sprachkopie ist.
 
 * **Umleiten**
 
-   Geben Sie eine Seite an, zu der die Seite automatisch umgeleitet werden soll.
+   Geben Sie die Seite an, zu der diese Seite automatisch umgeleitet werden soll.
 
 * **Design**
 
-   Geben Sie das [Design](/help/sites-developing/designer.md) an, das für diese Seite verwendet werden soll.
+   Geben Sie die [Design](/help/sites-developing/designer.md) für diese Seite verwendet werden.
 
 * **Alias**
 
@@ -138,7 +136,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Vererbt von &lt;*path*>**
 
-   Gibt an, ob die Seite vererbt wurde und von wo.
+   Gibt an, ob die Seite vererbt wurde und wohin von.
 
 * **Cloud-Konfiguration**
 
@@ -146,7 +144,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
 * **Zugelassene Vorlagen**
 
-   [Definieren Sie die Liste der Vorlagen, die in dieser](/help/sites-authoring/templates.md#allowingatemplate) Zweigstelle verfügbar sein werden.
+   [Definieren der Liste der verfügbaren Vorlagen](/help/sites-authoring/templates.md#allowingatemplate) innerhalb dieser Unterverzweigung.
 
 * **Aktivieren** (Authentifizierungspflicht)
 
@@ -177,15 +175,15 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 * **Vorschau generieren**
 
-   Erstellen Sie eine Vorschau der Seite, die als Miniatur verwendet werden soll.
+   Erstellen Sie eine Vorschau der Seite, die als Miniaturansicht verwendet werden soll.
 
 * **Bild hochladen**
 
-   Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
+   Laden Sie ein Bild hoch, das als Miniaturansicht verwendet werden soll.
 
 * **Bild auswählen**
 
-   Wählen Sie ein vorhandenes Asset aus, das als Miniatur verwendet werden soll.
+   Wählen Sie ein vorhandenes Asset aus, das als Miniaturansicht verwendet werden soll.
 
 * **Zurück zur letzten Version**
 
@@ -195,23 +193,23 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 * **Freigabe in Social Media**
 
-   Definiert die auf der Seite verfügbaren Freigabeoptionen. Zeigt die Optionen an, die für die zentrale Komponente für die [Freigabe](https://helpx.adobe.com/de/experience-manager/core-components/using/sharing.html) zur Verfügung stehen.
+   Definiert die auf der Seite verfügbaren Freigabeoptionen. Stellt die verfügbaren Optionen für die [Kernkomponente freigeben](https://helpx.adobe.com/de/experience-manager/core-components/using/sharing.html).
 
-   * **Benutzerfreigabe aktivieren für Facebook**
-   * **Benutzerfreigabe aktivieren für Pinterest**
+   * **Benutzerfreigabe für Facebook aktivieren**
+   * **Benutzerfreigabe für Pinterest aktivieren**
    * **Bevorzugte XF-Variation** Definieren Sie die Experience-Fragment-Variante, die zum Generieren von Metadaten für die Seite verwendet werden soll.
 
 ### Cloud Services {#cloud-services}
 
 * **Cloud Services**
 
-   Legen Sie Eigenschaften für [Cloud-Services](/help/sites-developing/extending-cloud-config.md) fest.
+   Definieren von Eigenschaften für [Cloud Services](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalisierung {#personalization}
 
 * **ContextHub-Konfigurationen**
 
-   Wählen Sie [ContextHub Konfiguration](/help/sites-developing/ch-configuring.md) und [Segmentpfad](/help/sites-administering/segmentation.md).
+   Wählen Sie die [ContextHub-Konfiguration](/help/sites-developing/ch-configuring.md) und [Segmentpfad](/help/sites-administering/segmentation.md).
 
 * **Konfiguration für Targeting**
 
@@ -239,19 +237,19 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
    >[!NOTE]
    >
-   >Die Registerkarte „Berechtigungen“ gestattet es nicht, leere CUG-Gruppen zu erstellen, was allerdings nützlich sein kann, um allen Benutzern den Zugriff zu verwehren. Verwenden Sie dazu stattdessen den CRX-Explorer. Weitere Informationen finden Sie im Dokument [Verwalten von Benutzer-, Gruppen- und Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md).
+   >Auf der Registerkarte Berechtigungen kann keine leere CUG-Gruppe erstellt werden. Dies kann als einfache Möglichkeit zum Verweigern des Zugriffs für jeden Benutzer nützlich sein. Dazu muss CRX Explorer verwendet werden. Weitere Informationen finden Sie im Dokument [Verwalten von Benutzer-, Gruppen- und Zugriffsrechten](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blueprint {#blueprint}
 
 * **Blueprint**
 
-   Legen Sie Eigenschaften für eine Blueprint-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
+   Definieren Sie Eigenschaften für eine Blueprint-Seite in [Multi-Site-Management](/help/sites-administering/msm.md). Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
 ### Live Copy  {#live-copy}
 
 * **Live Copy**
 
-   Legen Sie Eigenschaften für eine Live Copy-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
+   Legen Sie Eigenschaften für eine Live Copy-Seite fest in [Multi-Site-Management](/help/sites-administering/msm.md). Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
 
 ### Site-Struktur  {#site-structure}
 
@@ -259,7 +257,7 @@ Zeigt das Miniaturbild der Seite an. Sie haben folgende Möglichkeiten:
 
 ## Bearbeiten der Seiteneigenschaften {#editing-page-properties-1}
 
-Sie können Seiteneigenschaften an folgenden Stellen definieren:
+Sie können Seiteneigenschaften definieren:
 
 * In der Konsole **Sites**:
 
@@ -267,8 +265,8 @@ Sie können Seiteneigenschaften an folgenden Stellen definieren:
 
    * durch Klicken oder Tippen auf **Eigenschaften**
 
-      * für eine einzelne Seite
-      * für mehrere Seiten (bei der Massenbearbeitung steht nur ein Teil der Eigenschaften zur Verfügung)
+      * Für eine einzelne Seite
+      * Für mehrere Seiten (nur eine Teilmenge der Eigenschaften steht zur Massenbearbeitung zur Verfügung)
 
 * Im Seiteneditor:
 
@@ -314,14 +312,14 @@ In der **Sites** Console können Sie mehrere Seiten auswählen und dann die Seit
 
 >[!NOTE]
 >
->Die Massenbearbeitung von Eigenschaften ist auch für Assets verfügbar. Dieses Verfahren ist sehr ähnlich, weicht aber in einigen Punkten ab. Weitere Informationen dazu finden Sie unter [Bearbeiten von Eigenschaften für mehrere Assets](/help/assets/metadata.md).
+>Die Massenbearbeitung von Eigenschaften ist auch für Assets verfügbar. Sie ist sehr ähnlich, unterscheidet sich aber in einigen Punkten. Siehe [Bearbeiten von Eigenschaften mehrerer Assets](/help/assets/metadata.md) für Details.
 >
->Darüber hinaus steht Ihnen die [Massenbearbeitung](/help/sites-administering/bulk-editor.md) zur Verfügung. Damit können Sie mithilfe von GQL (Google Query Language) auf mehreren Seiten nach Inhalten suchen und die Inhalte anschließend direkt per Massenbearbeitung bearbeiten, bevor Sie die Änderungen an den Ursprungsseiten speichern.
+>Es gibt auch die [Bulk Editor](/help/sites-administering/bulk-editor.md), mit dem Sie mithilfe von GQL (Google Query Language) aus mehreren Seiten nach Inhalten suchen und diese dann direkt im Bulk Editor bearbeiten können, bevor Sie Ihre Änderungen auf den ursprünglichen Seiten speichern.
 
-Sie können mehrere Seiten zur Massenbearbeitung auf verschiedene Arten auswählen, einschließlich:
+Sie können mehrere Seiten für die Massenbearbeitung mit verschiedenen Methoden auswählen, darunter:
 
-* Beim Navigieren in der **Sites-Konsole**
-* Nach dem Verwenden der **Suche** zum Auffinden einer Gruppe aus Seiten
+* Beim Durchsuchen der **Sites** console
+* Nach Verwendung von **Suche** , um einen Seitensatz zu finden
 
 ![epp-01](assets/epp-01.png)
 
@@ -329,10 +327,10 @@ Nach Auswahl der Seiten und anschließendem Klicken oder Tippen auf die Option *
 
 ![epp-02](assets/epp-02.png)
 
-Sie können die Massenbearbeitung nur für Seiten durchführen, die:
+Sie können nur Massenbearbeitungen von Seiten durchführen, die:
 
-* denselben Ressourcentyp verwenden
-* nicht Teil einer Live Copy sind
+* Identischen Ressourcentyp freigeben
+* Sind nicht Teil einer Live Copy
 
    * Ist eine der Seiten Teil einer Live Copy, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
 
@@ -340,15 +338,15 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 
 * **Anzeigen**
 
-   Beim Anzeigen der Seiteneigenschaften für mehrere Seiten wird Folgendes angezeigt:
+   Wenn Sie Seiteneigenschaften für mehrere Seiten anzeigen, sehen Sie Folgendes:
 
    * Eine Liste der betroffenen Seiten
 
-      * Sie können Seiten nach Bedarf auswählen/entfernen.
+      * Bei Bedarf können Sie die Auswahl aufheben/aufheben
    * Registerkarten
 
-      * Wie beim Anzeigen der Eigenschaften für eine einzelne Seite werden auch hier die Eigenschaften in Registerkarten angeordnet.
-   * Eine Teilmenge der Eigenschaften
+      * Wie beim Anzeigen von Eigenschaften für eine einzelne Seite werden die Eigenschaften unter Registerkarten angeordnet.
+   * Eine Untergruppe von Eigenschaften
 
       * Eigenschaften, die auf allen ausgewählten Seiten verfügbar sind und explizit als für die Massenbearbeitung verfügbar definiert wurden, sind sichtbar.
       * Wenn Sie die Seitenauswahl auf eine Seite reduzieren, sind alle Eigenschaften sichtbar.
@@ -361,15 +359,15 @@ Nach dem Start der Massenbearbeitung können Sie folgende Aktionen ausführen:
 
 * **Bearbeiten**
 
-   Beim Bearbeiten von Seiteneigenschaften für mehrere Seiten, gilt Folgendes:
+   Beim Bearbeiten der Seiteneigenschaften für mehrere Seiten:
 
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
 
       * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
-      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
+      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
    * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert angegeben, beispielsweise `<Mixed Entries>`.
 
 
 >[!NOTE]
 >
->Die Seitenkomponente kann so konfiguriert werden, dass die für die Massenbearbeitung verfügbaren Felder angegeben werden. Informationen dazu finden Sie unter [Konfigurieren der Seite für Massenbearbeitung von Seiteneigenschaften](/help/sites-developing/bulk-editing.md).
+>Die Seitenkomponente kann so konfiguriert werden, dass die für die Massenbearbeitung verfügbaren Felder angegeben werden. Siehe [Konfigurieren Ihrer Seite für die Massenbearbeitung von Seiteneigenschaften](/help/sites-developing/bulk-editing.md).

@@ -1,8 +1,6 @@
 ---
-title: 'Bearbeiten: Umgebung und Tools'
-seo-title: Authoring - the Environment and Tools
-description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten
-seo-description: The authoring environment of AEM provides various mechanisms for organizing and editing your content
+title: Authoring - Umgebung und Tools in AEM
+description: Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisieren und Bearbeiten von Inhalten.
 uuid: 23a8aa93-b3d2-423b-b402-9e5f3f273d9a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 1cef6f87fa66fd78d439c23e6ac907f9531b8fd6
-workflow-type: ht
-source-wordcount: '2220'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '2222'
+ht-degree: 91%
 
 ---
 
@@ -24,7 +22,7 @@ Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisiere
 
 ## Verwalten Ihrer Site {#managing-your-site}
 
-Die **Sites-Konsole** bietet Ihnen die Möglichkeit, auf Ihrer Website zu navigieren und diese zu verwalten. Hierfür stehen neben der Kopfzeilen- und Symbolleiste auch Aktionssymbole (für die jeweils ausgewählte Ressource) sowie Breadcrumbs und ggf. sekundäre Leisten (z. B. für Zeit und Verweise) zur Verfügung.
+Die **Sites** Mit der Konsole können Sie auf Ihrer Website navigieren und diese verwalten. Verwenden Sie dazu die Kopfzeilenleiste, Symbolleiste, Aktionssymbole (für die ausgewählte Ressource zutreffend), Breadcrumbs und ggf. sekundäre Leisten (z. B. Timeline und Verweise).
 
 Zum Beispiel in der Spaltenansicht:
 
@@ -48,8 +46,8 @@ Sie können eine Seite mit dem Seiteneditor bearbeiten. Beispiel:
 
 Wenn Sie eine Seite bearbeiten, können Sie folgendermaßen auf die **Hilfe** zugreifen:
 
-* über den Selektor [**Seiteninformationen**](/help/sites-authoring/editing-page-properties.md#page-properties), der die Einführungsfolien (wie beim erstmaligen Zugriff auf den Editor) anzeigt.
-* über das [Konfigurationsdialogfeld](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) für bestimmte Komponenten (mithilfe des Symbols „?“ in der Symbolleiste des Dialogfelds), das die kontextsensitive Hilfe anzeigt.
+* die [**Seiteninformationen**](/help/sites-authoring/editing-page-properties.md#page-properties) Selektor; Hier werden die Einführungsfolien angezeigt (wie beim ersten Zugriff auf den Editor gezeigt).
+* die [Konfiguration](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) Dialogfeld für bestimmte Komponenten (mithilfe des Symbols ? Symbol in der Symbolleiste des Dialogfelds); zeigt kontextsensitive Hilfe an.
 
 In den Konsolen stehen weitere [Hilferessourcen zur Verfügung](/help/sites-authoring/basic-handling.md#accessing-help).
 
@@ -92,7 +90,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
    * Symbol oder Abkürzung
 
       * Die Symbole für die Standardkomponenten sind monochrom dargestellt.
-      * Für die Abkürzungen werden immer die ersten zwei Buchstaben des Komponentennamens verwendet.
+      * Abkürzungen sind immer die ersten beiden Zeichen des Komponentennamen.
 
    In der oberen Symbolleiste des **Komponenten-Browsers** haben Sie folgende Möglichkeiten:
 
@@ -150,7 +148,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 >
 >Ein Mobilgerät wird erkannt, wenn die Breite geringer als 1.024 Pixel ist, d. h. auch bei einem kleinen Desktop-Fenster.
 
-* **Mobilgerät, z. B. iPad**
+* **Mobilgerät wie iPad**
 
    Der Asset-Browser deckt die gesamte bearbeitete Seite ab.
 
@@ -206,7 +204,7 @@ Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfü
 
    ![](do-not-localize/screen_shot_2018-03-22at142725.png)
 
-* Oder bei einer Seite, die Teil einer [Live Copy](/help/sites-administering/msm.md) ist, wobei Komponenten von einer anderen Seite übernommen werden. Beispiel: 
+* Oder eine Seite, die Teil eines [Livecopy](/help/sites-administering/msm.md), wobei Komponenten von einer anderen Seite übernommen werden; Beispiel:
 
    `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
@@ -282,9 +280,9 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 * [In Admin anzeigen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Hilfe](/help/sites-authoring/basic-handling.md#accessing-help)
 
-Beispielsweise stehen unter **Seiteninformationen** ggf. auch folgende Optionen zur Verfügung:
+Beispiel: **Seiteninformationen** verfügt außerdem über die folgenden Optionen:
 
-* [Launch bewerben](/help/sites-authoring/launches-promoting.md), wenn die Seite ein Launch ist.
+* [Launch bewerben](/help/sites-authoring/launches-promoting.md) wenn es sich bei der Seite um einen Launch handelt.
 * [In klassischer Benutzeroberfläche öffnen](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page), wenn diese Option [von einer bzw. einem Admin aktiviert](/help/sites-administering/enable-classic-ui-editor.md) wurde.
 
 Darüber hinaus können über die **Seiteninformationen** ggf. auch Analysen und Empfehlungen aufgerufen werden.
@@ -299,7 +297,7 @@ Für die Bearbeitung von Seiten stehen verschiedene Modi zur Verfügung, über d
 * [Strukturvorlage:](/help/sites-authoring/scaffolding.md) Hilft Ihnen bei der Erstellung einer großen Anzahl von Seiten, die unterschiedliche Inhalte, aber eine einheitliche Struktur aufweisen sollen.
 * [Entwickler:](/help/sites-developing/developer-mode.md) Ermöglicht die Durchführung verschiedener Aktionen (Berechtigungen erforderlich), zu denen die Untersuchung der technischen Details einer Seite und von deren Komponenten gehört.
 
-* [Design](/help/sites-authoring/default-components-designmode.md): Hierüber können Sie Komponenten auf einer Seite aktivieren bzw. deaktivieren und das Design der auf der Seite verwendeten Komponenten konfigurieren (wenn die Seite auf einer [statischen Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert).
+* [Design](/help/sites-authoring/default-components-designmode.md) - ermöglicht es Ihnen, Komponenten für die Verwendung auf einer Seite zu aktivieren bzw. zu deaktivieren und das Design der Komponente zu konfigurieren (wenn die Seite auf einer [statische Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
 * [Zielsetzung:](/help/sites-authoring/content-targeting-touch.md) Steigerung der Inhaltsrelevanz durch Zielsetzung und Messung über alle Kanäle hinweg.
 * [Activity Map:](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) Zeigt Analytics-Daten für die Seite an.
@@ -331,7 +329,7 @@ Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werde
 
 Im vorliegenden Beispiel wird zur Verdeutlichung die Bildkomponente verwendet. Weitere Informationen zur Verwendung und Bearbeitung von Komponenten finden Sie unter [Komponenten für die Seitenbearbeitung](/help/sites-authoring/default-components.md).
 
-Die Pfad-Felder bieten jetzt auch automatisches Ausfüllen und Vorausschau auf Eingaben, um die Suche nach einer Ressource zu vereinfachen.
+Pfadfelder verfügen jetzt über automatische Vervollständigungs- und Vorausschau-Funktionen, um die Suche nach einer Ressource zu vereinfachen.
 
 Durch Klicken auf die Schaltfläche **Auswahl-Dialogfeld öffnen** im Pfadfeld wird das Dialogfeld [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) geöffnet, in dem Optionen für eine präzisere Auswahl zur Verfügung stehen.
 

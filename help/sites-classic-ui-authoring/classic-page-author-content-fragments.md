@@ -1,8 +1,6 @@
 ---
 title: Seitenbearbeitung mit Inhaltsfragmenten
-seo-title: Page Authoring with Content Fragments
 description: Inhaltsfragmente werden als seitenunabhängige Assets erstellt und verwaltet. Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit Varianten zu erstellen.
-seo-description: Content fragments are created and managed as page-independent assets. They allow you to create channel-neutral content, together with variations.
 page-status-flag: de-activated
 uuid: 8e3bb1bc-8720-48e2-8d06-98fbab4dd4fd
 contentOwner: Chris Bohnert
@@ -11,10 +9,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
 exl-id: b55d9edc-a210-407a-aa4b-a91bb358be7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '110'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 29%
 
 ---
 
@@ -26,6 +24,6 @@ Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise k
 
 >[!CAUTION]
 >
->Die Funktionen der Inhaltsfragmentverwaltung sind in der klassischen Benutzeroberfläche nicht in vollem Umfang verfügbar. Weitere Informationen finden Sie in der Dokumentation für die standardmäßige Autorenumgebung unter [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md).
+>Die vollständige Funktionalität der Inhaltsfragmentverwaltung ist in der klassischen Benutzeroberfläche nicht verfügbar. Siehe [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md) in der Standarddokumentation für die Bearbeitung.
 >
->Die Inhaltsfragment-Komponente wird im Sidekick der klassischen Benutzeroberfläche angezeigt, weitere Funktionen sind jedoch nicht verfügbar.
+>Die Inhaltsfragment-Komponente ist im Sidekick der klassischen Benutzeroberfläche sichtbar, weitere Funktionen sind jedoch nicht verfügbar.

@@ -1,8 +1,6 @@
 ---
-title: AEM Mobile On-Demand
-seo-title: AEM Mobile On-Demand
+title: Adobe Experience Manager Mobile On-Demand
 description: Für den Start eines neuen AEM Mobile-App-Erlebnisses müssen mehrere Rollen kodiert werden, bevor es für die Inhaltsbearbeitung bereit ist. Auf dieser Seite erhalten Sie AEM ersten Schritte mit mobilen On-Demand-Diensten.
-seo-description: Starting a new AEM Mobile app experience requires a cohesion of roles before it is ready for content editing. Follow this page to get started with AEM mobile On-Demand services.
 uuid: 175c609d-3cb8-4a1b-bfea-278df272e500
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
@@ -10,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: dc6891cd-19cc-4dff-8bda-a41ed8af8bfb
 exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
 workflow-type: tm+mt
-source-wordcount: '771'
-ht-degree: 5%
+source-wordcount: '773'
+ht-degree: 3%
 
 ---
 
@@ -21,13 +19,13 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 >[!NOTE]
 >
 >Wenn Sie AEM nicht als Quelle für das Content Management verwenden, lesen Sie [Hilfe zu AEM Mobile On-demand Services](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
-AEM bietet verschiedene Tools, mit denen Sie Ihren Inhalt in mobile Anwendungen integrieren können.
+AEM bietet mehrere Tools, mit denen Sie Inhalte in mobile Anwendungen integrieren können.
 
 Das folgende Diagramm zeigt, wie die verschiedenen Komponenten von AEM Mobile und On-Demand Services zusammenpassen, um Inhalte für mobile Apps bereitzustellen.
 

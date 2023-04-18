@@ -1,8 +1,6 @@
 ---
 title: Grundlegendes zur Segmentierung
-seo-title: Understanding Segmentation
-description: Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. In den meisten Fällen müssen vor dem Start einer Kampagne bereits Segmente definiert sein.
-seo-description: Segmentation is a key consideration when creating a campaign. In most cases, you will need to have segments already defined before starting your campaign.
+description: Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. In den meisten Fällen müssen Segmente bereits definiert sein, bevor Sie mit der Kampagne beginnen.
 uuid: 609d83b3-df0e-44ad-8e27-90b676d2666b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,30 +8,30 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: bb75f4ab-d983-45f6-98a3-da8bd9b63751
 exl-id: 9092977b-b558-42a3-8092-4615fbc0a08e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+workflow-type: tm+mt
 source-wordcount: '565'
-ht-degree: 100%
+ht-degree: 73%
 
 ---
 
 # Grundlegendes zur Segmentierung{#understanding-segmentation}
 
-Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. In den meisten Fällen müssen vor dem Start einer Kampagne bereits Segmente definiert sein.
+Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. In den meisten Fällen müssen Segmente bereits definiert sein, bevor Sie mit der Kampagne beginnen.
 
-Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Das Verstehen dieser Ziele und das Erfüllen der Erwartungen sind wichtige Erfolgsfaktoren beim Onlinemarketing.
+Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Diese Ziele zu verstehen und die Erwartungen zu erfüllen, ist ein wichtiger Erfolgsfaktor für Online-Marketing.
 
-Dies können Sie mithilfe der Segmentierung erreichen, indem Sie die folgenden Faktoren eines Besuchers analysieren und charakterisieren:
+Die Segmentierung hilft dabei, die folgenden Punkte eines Besuchers zu analysieren und zu charakterisieren:
 
 * Aktivität auf der Website
 * Profil
-* Aktivität auf anderen Websites
+* Aktivitäten auf anderen Websites
 
-Inhalte können dann entsprechend den zutreffenden Segmenten speziell auf die Anforderungen und Interessen des Besuchers abgestimmt werden.
+Inhalte können dann entsprechend den jeweiligen Segmenten speziell auf die Bedürfnisse und Interessen des Besuchers abgestimmt werden.
 
 ## Verwenden von Segmentierung {#using-segmentation}
 
-Segmente werden unter [Konfigurieren von Segmentierung](/help/sites-administering/campaign-segmentation.md) definiert. Sie werden dazu verwendet, den tatsächlich für Zielgruppen sichtbaren Inhalt zu steuern.
+Segmente werden definiert in [Konfigurieren der Segmentierung](/help/sites-administering/campaign-segmentation.md). Sie werden dazu verwendet, den tatsächlich für Zielgruppen sichtbaren Inhalt zu steuern.
 
 ## Segmentierungsterminologie {#segmentation-terminology}
 
@@ -41,7 +39,7 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
 
 **Besucherin/Besucher**: Eine Besucherin bzw. ein Besucher ist eine Person, die eine Website besucht. Der Besuch dieser Person beginnt in der Regel auf einer verweisenden Seite und geht dann über auf eine oder mehrere Seitenansichten auf Ihrer eigenen Website. Aus den Details des Besuchs dieser Person kann ein Verhaltensprofil erstellt werden.
 
-**Benutzerin/Benutzer**: Eine Benutzerin bzw. ein Benutzer ist eine Besucherin oder ein Besucher, die/der sich bei der Website registriert, um ein Kontoprofil zu erhalten. Um ein Profil zu erstellen, geben Benutzer weitere Informationen zu ihrer Person an, z. B. eine E-Mail-Adresse oder ihr Geschlecht. Es können auch weitere Informationen erfasst werden, beispielsweise Aktivität in der Community und Kaufmuster. Basierend auf den in dem Profil angegebenen Informationen kann ein demografisches Profil erstellt werden.
+**Benutzerin/Benutzer**: Eine Benutzerin bzw. ein Benutzer ist eine Besucherin oder ein Besucher, die/der sich bei der Website registriert, um ein Kontoprofil zu erhalten. Um ein Profil zu erstellen, geben Benutzer weitere Informationen zu ihrer Person an, z. B. eine E-Mail-Adresse oder ihr Geschlecht. Es können auch weitere Informationen erfasst werden, beispielsweise Aktivität in der Community und Kaufmuster. Basierend auf den im Profil angegebenen Informationen kann ein demografisches Profil erstellt werden.
 
 **Eigenschaft**: Eine Eigenschaft ist ein Merkmal oder eine Charakteristik einer Besucherin oder eines Besuchers, das bzw. die verwendet werden kann, um die Zugehörigkeit zu einem bestimmten Segment zu bestimmen.
 
@@ -52,20 +50,20 @@ Im Rahmen der Segmentierung wird die folgende Terminologie verwendet:
 * Interessensgebiete auf Ihrer Website, einschließlich besuchter Seiten und gekaufter Produkte.
 * Interessensgebiete auf der verweisenden Website, einschließlich verwendeter Suchbegriffe oder Anzeigen, auf die geklickt wurde.
 * Interessensgebiete auf anderen Sites, die durch Tools wie Spyjax ermittelt werden.
-* Loyalität der Besucher, Dauer des Besuchs, Häufigkeit der Besuche.
+* Besucherloyalität; Dauer des Besuchs, Häufigkeit der Besuche.
 
 **Demografische Eigenschaften**: Dabei handelt es sich um ausgewählte Merkmale der Population, darunter:
 
 * Alter
 * Einkommen
-* Größe der Familie
+* Familiengröße
 * Familienstand
 * Geschlecht
 * Standort
 
 **Abgeleitete Eigenschaften**  
 
-Manche demografischen Eigenschaften können ohne Registrierung nur schwer ermittelt werden, können jedoch durch Kombination von verhaltensbezogenen und demografischen Eigenschaften abgeleitet werden.
+Einige demografische Eigenschaften lassen sich ohne Registrierung nur schwer ermitteln, können jedoch durch Kombination von Verhaltens- und demografischen Eigenschaften abgeleitet werden.
 
 Beispielsweise können Besitzer von Sites durch Kombination der verweisenden URL (als Verhaltenseigenschaft) mit demografischen Informationen (ermittelt mithilfe von Tools wie [Google Ad Planner](https://www.google.com/adplanner/)) demografische Eigenschaften ihrer Besucher ableiten.
 

@@ -1,16 +1,14 @@
 ---
-title: SAP Commerce Cloud
-seo-title: SAP Commerce Cloud
-description: Hier erfahren Sie, wie Sie eCommerce mit SAP Commerce Cloud bereitstellen können.
-seo-description: Learn how to deploy eCommerce with SAP Commerce Cloud.
+title: Bereitstellen von eCommerce mit SAP Commerce Cloud
+description: Erfahren Sie, wie Sie eCommerce mit SAP Commerce Cloud bereitstellen.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
-workflow-type: ht
-source-wordcount: '721'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '724'
+ht-degree: 58%
 
 ---
 
@@ -18,7 +16,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Diese Seite enthält Links zur hybris-Website. Für bestimmte Seiten benötigen Sie ein Konto, mit dem Sie sich anmelden können.
+>Diese Seite enthält Links zur hybris-Website. Für bestimmte Seiten benötigen Sie ein Konto, um sich anzumelden.
 
 ## Bereitstellen von eCommerce mit SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
 
@@ -47,20 +45,20 @@ Die Hybris-Erweiterung des eCommerce-Integrations-Frameworks wurde aktualisiert 
 >
 >* Unterstützt die Versionen 18.11 und höher.
 >* Sie benötigen Java 7 für den [Hybris 5-Server](https://www.hybris.com/de/architecture-technology).
->* Das hybris-Add-on, der [Telco Accelerator](https://www.hybris.com/de/products/telecommunication), wird nicht von der AEM-Erweiterung unterstützt.
+>* Das hybris-Add-on, das [Telco Accelerator](https://www.hybris.com/de/products/telecommunication), wird von der AEM-Erweiterung nicht unterstützt.
 >
 
 
-### Benötigte Pakete für eCommerce mit hybris {#packages-needed-for-ecommerce-with-hybris}
+### Für eCommerce mit Hybris benötigte Pakete {#packages-needed-for-ecommerce-with-hybris}
 
-Zur Installation der eCommerce-Funktionalität benötigen Sie:
+Zum Installieren der eCommerce-Funktion benötigen Sie Folgendes:
 
 * Ihren Hybris-Server
 * AEM eCommerce-Framework:
 
-   * Dies ist Teil einer standardmäßigen AEM-Installation. 
+   * Dies ist Teil einer standardmäßigen AEM.
 
-* AEM Geometrixx-all-Paket:
+* AEM Geometrixx-Package:
 
    * `cq-geometrixx-all-pkg`
 
@@ -73,10 +71,10 @@ Zur Installation der eCommerce-Funktionalität benötigen Sie:
 
 ### Installation von eCommerce mit hybris {#installation-of-ecommerce-with-hybris}
 
-Um eine vollständige Konfiguration (mithilfe des Demonstrationskatalogs Geometrixx Outdoors) zu installieren, gehen Sie folgendermaßen vor:
+Zur Installation einer vollständigen Konfiguration (unter Verwendung des Demonstrationskatalogs, Geometrixx Outdoors) sind folgende Schritte erforderlich:
 
 1. [Installieren Sie AEM](/help/sites-deploying/deploy.md).
-1. Installieren Sie das Paket Geometrixx-all
+1. Installieren des Geometrixx all-Packages
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
@@ -85,12 +83,12 @@ Um eine vollständige Konfiguration (mithilfe des Demonstrationskatalogs Geometr
    1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
 
-1. [Laden Sie den hybris-Server herunter und richten Sie ihn ein](#download-and-build-your-hybris-server).
+1. [Herunterladen und Erstellen Ihres hybris-Servers](#download-and-build-your-hybris-server).
 1. Erstellen Sie Ihren Katalog in Ihrer eCommerce-Engine:
 
-   1. [Richten Sie den Geometrixx Outdoor Store ein](#setup-the-geometrixx-outdoors-store).
+   1. [Einrichten des Geometrixx Outdoor Store](#setup-the-geometrixx-outdoors-store).
 
-1. [Erstellen](/help/sites-authoring/qg-page-authoring.md) Sie etwaige zusätzliche Seiten, die Sie in AEM benötigen.
+1. [Autor](/help/sites-authoring/qg-page-authoring.md) alle zusätzlichen Seiten, die Sie in AEM benötigen.
 
 >[!CAUTION]
 >
@@ -100,9 +98,9 @@ Um eine vollständige Konfiguration (mithilfe des Demonstrationskatalogs Geometr
 >
 >Für Entwickler ist auch eine [API-Dokumentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) zum Herunterladen verfügbar.
 
-### hybris-Server herunterladen und einrichten {#download-and-build-your-hybris-server}
+### Herunterladen und Erstellen Ihres hybris-Servers {#download-and-build-your-hybris-server}
 
-Mit den folgenden Schritten können Sie den hybris-Server herunterladen und einrichten. Dadurch werden auch die Erstkonfigurationen erstellt, die für die Verbindungen zwischen hybris und CQ erforderlich sind. Die Erweiterung kann danach mit den Standardeinstellungen verwendet werden.
+Die Schritte in diesem Verfahren werden den hybris-Server herunterladen und erstellen. Außerdem werden die ersten Konfigurationen vorgenommen, die für die Verbindungen zwischen hybris und cq erforderlich sind. Die Erweiterung kann dann mit den Standardeinstellungen verwendet werden.
 
 >[!CAUTION]
 >
@@ -116,10 +114,10 @@ Mit den folgenden Schritten können Sie den hybris-Server herunterladen und einr
 
    >[!CAUTION]
    >
-   >Dazu benötigen Sie ein hybris-Konto.
+   >Sie benötigen ein Konto (von hybris), um darauf zugreifen zu können.
 
-1. Dekomprimieren Sie die Distributionsdatei am entsprechenden Speicherort (&lt;hybris-root-directory>).
-1. Geben Sie in der Befehlszeile Folgendes ein:
+1. Entpacken Sie die Verteilungsdatei an den erforderlichen Speicherort (siehe &lt;hybris-root-directory>).
+1. Führen Sie in der Befehlszeile Folgendes aus:
 
    ```shell
    cd <hybris-root-directory>/bin/platform
@@ -130,7 +128,7 @@ Mit den folgenden Schritten können Sie den hybris-Server herunterladen und einr
 
    >[!NOTE]
    >
-   >Während der Ausführung:
+   >Beim Ausführen:
    >
    >`ant clean all`
    >
@@ -157,7 +155,7 @@ Mit den folgenden Schritten können Sie den hybris-Server herunterladen und einr
 
    * die Konfiguration des Hybris-Servers zu aktualisieren (gemäß der Anforderung der Erweiterung); 
    * den Hybris-Server mit der geänderten Konfiguration einzurichten; 
-   * den Server zu starten.
+   * Server starten
 
    ```shell
    groovy setup.groovy
@@ -168,9 +166,9 @@ Mit den folgenden Schritten können Sie den hybris-Server herunterladen und einr
 
    >[!NOTE]
    >
-   >Abhängig von Ihrem System können diese Schritte einige Minuten dauern.
+   >Je nach System kann es mehrere Minuten dauern, bis einige dieser Schritte abgeschlossen sind.
 
-1. Navigieren Sie im Browser zu **hybris Administration Console** unter:
+1. Navigieren Sie in Ihrem Browser zum **hybris Administration Console** unter:
 
    [http://localhost:9002](http://localhost:9002)
 
@@ -180,20 +178,20 @@ Mit den folgenden Schritten können Sie den hybris-Server herunterladen und einr
 
    >[!NOTE]
    >
-   >Abhängig von Ihrem System kann dies einige Minuten dauern.
+   >Abhängig von Ihrem System kann dies mehrere Minuten dauern.
 
 ### Einrichten des Geometrixx Outdoors Store {#setup-the-geometrixx-outdoors-store}
 
 Mit diesem Verfahren wird das Demo-Geschäft Geometrixx Online hochgeladen und konfiguriert.
 
-1. Starten Sie Ihre hybris-Instanz. Geben Sie in der Befehlszeile Folgendes ein:
+1. Starten Sie Ihre hybris-Instanz. Führen Sie in der Befehlszeile Folgendes aus:
 
    ```shell
    cd <hybris-root-directory>/bin/platform
    sh hybrisserver.sh
    ```
 
-1. Navigieren Sie im Browser zur **hybris-Verwaltungskonsole** unter:
+1. Navigieren Sie in Ihrem Browser zum **Hybris-Verwaltungskonsole** unter:
 
    [https://localhost:9002/backoffice](https://localhost:9002/backoffice)
 
@@ -201,8 +199,8 @@ Mit diesem Verfahren wird das Demo-Geschäft Geometrixx Online hochgeladen und k
    * Benutzername: admin
    * Kennwort: nimda
 
-1. Erweitern Sie in der Sidebar-Navigation **System** und **Tools**. Wählen Sie dann **Import** aus, um das Fenster **Wizard: CSV Import** zu öffnen.
-1. Wählen Sie auf der Registerkarte **Configuration** die Option **Upload** für die folgende **Importdatei**:
+1. Erweitern Sie in der Sidebar-Navigation **System** und **Tools**. Wählen Sie anschließend **Import** , um **Assistent: CSV-Import** Fenster.
+1. Im **Konfiguration** Registerkarte, **Hochladen** die folgenden **Importdatei**:
 
 [Datei abrufen](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)
 
@@ -210,8 +208,8 @@ Mit diesem Verfahren wird das Demo-Geschäft Geometrixx Online hochgeladen und k
 
    `en_US - English (United States)`
 
-1. Öffnen Sie die Registerkarte **Resources**.
-1. **Laden** Sie die folgende **Media-Zip**-Datei hoch:
+1. Öffnen Sie die **Ressourcen** Registerkarte.
+1. **Hochladen** die folgenden **Media-Zip**:
 
 [Datei abrufen](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 

@@ -1,8 +1,6 @@
 ---
-title: Tastaturbefehle für die Seitenbearbeitung
-seo-title: Keyboard Shortcuts when Editing Pages
+title: Tastaturbefehle bei der Bearbeitung von Inhaltsseiten
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch Befehle für die Bearbeitung von Seiten.
-seo-description: Various keyboard shortcuts are available throughout AEM, including some for page editing
 uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '221'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 92%
 
 ---
 

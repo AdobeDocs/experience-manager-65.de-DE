@@ -1,8 +1,6 @@
 ---
 title: Suchen
-seo-title: Search
 description: Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Möglichkeiten zur Inhaltssuche.
-seo-description: The author environment of AEM provides various mechanisms for searching for content, dependent on the resource type.
 uuid: 6dd3df4d-6040-4230-8373-fc028687b675
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
 source-wordcount: '470'
-ht-degree: 100%
+ht-degree: 54%
 
 ---
 
@@ -24,7 +22,7 @@ Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Mög
 
 >[!NOTE]
 >
->Außerhalb der Autorenumgebung stehen auch andere Verfahren für die Suche zur Verfügung, wie der [Query Builder](/help/sites-developing/querybuilder-api.md) und [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Außerhalb der Autorenumgebung stehen auch andere Mechanismen für die Suche zur Verfügung, z. B. die [Query Builder](/help/sites-developing/querybuilder-api.md) und [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Grundlagen zur Suche {#search-basics}
 
@@ -34,10 +32,10 @@ Um den Suchbereich aufzurufen, klicken Sie in der jeweiligen Konsole im linken B
 
 Im Suchbereich können Sie alle Seiten Ihrer Website durchsuchen. Er enthält Felder und Widgets für folgende Zwecke:
 
-* **Volltext**: Suche nach dem angegebenen Text
-* **Geändert nach/vor**: Suche nur nach den Seiten, die zwischen bestimmten Datumsangaben geändert wurden
+* **Volltext**: Nach dem angegebenen Text suchen
+* **Geändert nach/vor**: Suchen Sie nur die Seiten, die zwischen den spezifischen Datumsangaben geändert wurden.
 * **Vorlage**: Suche nur nach den Seiten, die auf der angegebenen Vorlage basieren
-* **Tags**: Suche nur nach Seiten, die die angegebenen Tags enthalten
+* **Tags**: Suche nur nach Seiten mit den angegebenen Tags
 
 >[!NOTE]
 >
@@ -48,40 +46,40 @@ Im Suchbereich können Sie alle Seiten Ihrer Website durchsuchen. Er enthält Fe
 >
 >* [Reguläre Ausdrücke](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Feld-Gruppierung](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping) 
->* [Verstärkung](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term) 
+>* [Verstärken](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
 
-Starten Sie die Suche, indem Sie unten im Bereich auf **Suchen** klicken. Klicken Sie auf **Zurücksetzen**, um die Suchkriterien zu löschen.
+Starten Sie die Suche, indem Sie unten im Bereich auf **Suchen** klicken. Klicken **Zurücksetzen** , um die Suchkriterien zu löschen.
 
 ## Filter {#filter}
 
-An verschiedenen Positionen können Sie einen Filter setzen (oder löschen), um die Ansicht weiter zu spezialisieren und zu verfeinern:
+An verschiedenen Stellen kann ein Filter festgelegt (und gelöscht) werden, um Ihre Ansicht weiter aufzuschlüsseln und zu verfeinern:
 
 ![chlimage_1-102](assets/chlimage_1-102.png)
 
 ## Suchen und Ersetzen {#find-and-replace}
 
-In der Konsole **Websites** ermöglicht Ihnen die Menüoption **Suchen und Ersetzen** die Suche nach mehreren Instanzen einer Zeichenfolge innerhalb eines Abschnitts der Website und deren Ersetzung.
+Im **Websites** Konsole **Suchen und Ersetzen** -Menüoption können Sie innerhalb eines Bereichs der Website nach mehreren Instanzen einer Zeichenfolge suchen und diese ersetzen.
 
-1. Wählen Sie die Stammseite (oder den Ordner) aus, von wo aus der Such- und Ersetzungsvorgang durchgeführt werden soll.
-1. Wählen Sie **Tools** und dann **Suchen und Ersetzen**:
+1. Wählen Sie die Stammseite bzw. den Ordner aus, in dem die Aktion &quot;Suchen und Ersetzen&quot;stattfinden soll.
+1. Auswählen **Instrumente** then **Suchen und Ersetzen**:
 
    ![screen_shot_2012-02-15at120346pm](assets/screen_shot_2012-02-15at120346pm.png)
 
-1. Das Dialogfeld **Suchen und Ersetzen** bietet die folgenden Möglichkeiten:
+1. Die **Suchen und Ersetzen** Das Dialogfeld führt Folgendes aus:
 
-   * Angabe des Stammpfads, an dem der Suchvorgang gestartet werden soll
-   * Angabe des zu suchenden Begriffs
-   * Angabe des für die Ersetzung zu verwenden Begriffs
-   * Angabe, ob Groß -und Kleinschreibung beachtet werden sollen
-   * Angabe, ob nur ganze Wörter gefunden werden sollen (andernfalls werden auch Wortteile von der Suche erfasst)
+   * bestätigt den Stammpfad, an dem die Suchaktion beginnen soll
+   * definiert den zu suchenden Begriff
+   * definiert den Begriff, der ihn ersetzen soll
+   * gibt an, ob bei der Suche die Groß-/Kleinschreibung beachtet werden soll
+   * gibt an, ob nur ganze Wörter gefunden werden sollen (andernfalls werden auch Unterzeichenfolgen gefunden)
 
    Durch Klicken auf **Vorschau** werden die Stellen aufgelistet, an denen der Begriff gefunden wurde. Sie können bestimmte Instanzen markieren bzw. deren Markierung aufheben:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
-1. Klicken Sie auf **Ersetzen**, um die tatsächliche Ersetzung aller Instanzen durchzuführen. Sie werden aufgefordert, den Vorgang zu bestätigen.
+1. Klicken **Ersetzen** , um alle Instanzen zu ersetzen. Sie werden aufgefordert, den Vorgang zu bestätigen.
 
 Der Standardumfang für das Servlet „Suchen und Ersetzen“ deckt die folgenden Eigenschaften ab:
 
@@ -94,6 +92,6 @@ Dieser Bereich kann mithilfe der Apache Felix Web Management Console geändert w
 
 >[!NOTE]
 >
->Bei der Standardinstallation von AEM wird für „Suchen und Ersetzen“ Lucene verwendet.
+>In einer standardmäßigen AEM-Installation verwendet &quot;Suchen und Ersetzen&quot;Lucene für die Suchfunktion.
 >
->Lucene indiziert Zeichenfolgen mit bis zu 16K Länge. Nach längeren Zeichenfolgen wird nicht gesucht.
+>Lucene indiziert Zeichenfolgen mit bis zu 16K Länge. Mehr Zeichenfolgen werden nicht durchsucht.

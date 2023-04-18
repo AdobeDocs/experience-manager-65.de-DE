@@ -1,8 +1,6 @@
 ---
-title: Fehlerbehebung in AEM beim Authoring
-seo-title: Troubleshooting AEM when Authoring
-description: Probleme, die bei der Verwendung mit AEM auftreten können
-seo-description: Some issues that you might encounter when using AEM
+title: Fehlerbehebung beim Authoring in AEM
+description: Einige Probleme, die bei der Verwendung von AEM auftreten können.
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
-source-git-commit: d1b4cf87291f7e4a0670a21feca1ebf8dd5e0b5e
-workflow-type: ht
-source-wordcount: '294'
-ht-degree: 100%
+source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 59%
 
 ---
 
@@ -23,7 +21,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 >[!NOTE]
 >
->Wenn Probleme auftreten, sollten Sie auch die Liste der [bekannten Probleme](/help/release-notes/release-notes.md) für Ihre Instanz (Version und Service Packs) prüfen.
+>Bei Problemen sollten Sie auch die Liste der [Bekannte Probleme](/help/release-notes/release-notes.md) für Ihre Instanz (Release- und Service Packs).
 
 >[!NOTE]
 >
@@ -33,16 +31,16 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 * **Problem**:
 
-   * Sie haben Änderungen an einer Seite vorgenommen und die Seite in die Veröffentlichungs-Website repliziert, die *alte* Version der Seite wird aber weiterhin auf der Veröffentlichungs-Website angezeigt.
+   * Sie haben Änderungen an einer Seite vorgenommen und die Seite auf die Veröffentlichungs-Site repliziert, aber die *old* -Version der Seite wird weiterhin auf der Veröffentlichungs-Site angezeigt.
 
 * **Grund**:
 
-   * Dies kann verschiedene Gründe haben. Meist liegt es am Cache (entweder dem Ihres lokalen Browsers oder dem des Dispatchers), gelegentlich kann es sich jedoch auch um ein Problem mit der Replikations-Warteschlange handeln.
+   * Dies kann verschiedene Ursachen haben, meist den Cache (entweder Ihren lokalen Browser oder den Dispatcher), obwohl es manchmal ein Problem mit der Replikationswarteschlange sein kann.
 
 * **Lösungen**:
 
-   * Hier gibt es mehrere Möglichkeiten:
-   * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Prüfen Sie den Seitenstatus und ggf. den Status der Replikations-Warteschlange.
+   * Hier gibt es verschiedene Möglichkeiten:
+   * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Überprüfen Sie den Seitenstatus und ggf. den Status der Replikationswarteschlange.
    * Löschen Sie den Cache des lokalen Browsers und rufen Sie die Seite erneut auf.
    * Fügen Sie dem Ende der Seiten-URL `?` hinzu:
 
@@ -59,7 +57,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 * **Grund**:
 
-   * In seltenen Fällen kann eine frühere Aktion die Symbolleiste beeinflussen.
+   * In seltenen Fällen kann sich eine frühere Aktion auf die Symbolleiste auswirken.
 
 * **Lösung**:
 
