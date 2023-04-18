@@ -10,10 +10,10 @@ topic-tags: process-reporting
 discoiquuid: 222daab8-4514-44a5-b5c9-c5510809c74e
 docset: aem65
 exl-id: 30720061-d0e5-453b-a334-6a3aa9ca4c87
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
 workflow-type: tm+mt
-source-wordcount: '984'
-ht-degree: 92%
+source-wordcount: '973'
+ht-degree: 90%
 
 ---
 
@@ -632,7 +632,7 @@ response.setCharacterEncoding("utf-8");
 
 ## Integrieren der Berichtsbenutzeroberfläche in die vorhandene Benutzeroberfläche für die Prozessberichterstellung  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
-Grundvoraussetzungen für das Erstellen einer separaten Benutzeroberfläche zum Anzeigen von Ergebnissen sind: [Sling – Grundlagen](https://wem.help.adobe.com/enterprise/de_DE/10-0/wem/developing/the_basics.html), [Erstellen eines CRX-Knotens](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) und das Bereitstellen geeigneter [Zugriffsberechtigungen](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
+Grundvoraussetzungen für das Erstellen einer separaten Benutzeroberfläche zum Anzeigen von Ergebnissen sind: [Sling – Grundlagen](https://wem.help.adobe.com/enterprise/de_DE/10-0/wem/developing/the_basics.html), [Erstellen eines CRX-Knotens](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html?lang=en#creating-a-node) und das Bereitstellen geeigneter [Zugriffsberechtigungen](https://experienceleague.adobe.com/docs/experience-manager-64/developing/devtools/developing-with-crxde-lite.html?lang=en#access-control).
 
 1. Erstellen Sie eine separate Benutzeroberfläche.
 1. Erstellen Sie für jeden Plug-In-fähigen Bericht im `/content/process-reporting-runtime/custom-reports`-Knoten einen untergeordneten `nt:unstructured`-Knoten.
