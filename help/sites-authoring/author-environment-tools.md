@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
 workflow-type: tm+mt
-source-wordcount: '2222'
-ht-degree: 91%
+source-wordcount: '2230'
+ht-degree: 90%
 
 ---
 
@@ -264,7 +264,7 @@ Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets a
 
 ## Seiteninformationen {#page-information}
 
-Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch Details zur letzten Bearbeitung und zur letzten Aktivierung enthält. Abhängig von den Eigenschaften der Seite (und der Website, zu der sie gehört) sind u. U. weitere Optionen verfügbar:
+Mit der Schaltfläche Seiteninformationen (Equalizer-Symbol) wird ein Menü geöffnet, das auch Details zur letzten Bearbeitung und zur letzten Veröffentlichung enthält. Abhängig von den Eigenschaften der Seite (und der Website, zu der sie gehört) sind u. U. weitere Optionen verfügbar:
 
 ![ateat-17](assets/ateat-17.png)
 
@@ -277,7 +277,7 @@ Mit „Seiteninformationen“ (Equalizer-Symbol) öffnen Sie ein Menü, das auch
 * [Vorlage bearbeiten](/help/sites-authoring/templates.md), wenn die Seite auf einer [bearbeitbaren Vorlage](/help/sites-authoring/templates.md#editable-and-static-templates) basiert.
 
 * [Als veröffentlicht anzeigen](/help/sites-authoring/editing-content.md#view-as-published)
-* [In Admin anzeigen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* In Admin anzeigen; öffnet die Seite im [Sites-Konsole](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Hilfe](/help/sites-authoring/basic-handling.md#accessing-help)
 
 Beispiel: **Seiteninformationen** verfügt außerdem über die folgenden Optionen:
