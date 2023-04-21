@@ -3,7 +3,7 @@ title: 'Schnellstartanleitung für Headless: Abrufen und Bereitstellen von Inhal
 description: Erfahren Sie, wie Sie die AEM Assets-REST-API zum Verwalten von Inhaltsfragmenten und die GraphQL-API für die Headless-Bereitstellung von Inhalten der Inhaltsfragmente verwenden.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
 source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '573'
 ht-degree: 100%
 
