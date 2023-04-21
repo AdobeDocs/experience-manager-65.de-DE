@@ -1,13 +1,13 @@
 ---
 title: Verwalten von GraphQL-Endpunkten in AEM
 description: Erfahren Sie, wie Sie GraphQL-Endpunkte in Adobe Experience Manager as a Cloud Service für die Bereitstellung von Headless-Inhalten verwalten.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: tm+mt
+exl-id: a59a5e50-0787-4c1c-a83d-bb3eac1479a8
+source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
+workflow-type: ht
 source-wordcount: '515'
 ht-degree: 100%
 
 ---
-
 
 # Verwalten von GraphQL-Endpunkten in AEM {#graphql-aem-endpoint}
 
