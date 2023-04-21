@@ -3,9 +3,9 @@ title: Erweitern von [!DNL Adobe Experience Manager] 6.5 mit dem Adobe Developer
 description: Erweitern von [!DNL Adobe Experience Manager] 6.5 mit dem Adobe Developer App Builder.
 exl-id: 8221c2db-82d4-43df-ad38-e8e7831541ac
 source-git-commit: cc1b86a15eb7ef45616bc9ea4f8aab4a28e74add
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '550'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
