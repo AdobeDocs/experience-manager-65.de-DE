@@ -12,9 +12,9 @@ docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
 source-git-commit: a98550c11405e6d0f43ff7ed8905644a3aedd78c
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '330'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 98%
 
 AEM Forms 6.5 beinhaltet verschiedene neue Funktionen und Verbesserungen, die die Erstellung, Verwaltung und die Benutzererfahrung von Formularen und Korrespondenz weiter optimieren. Weitere Informationen über die neuen Funktionen und Verbesserungen von AEM 6.5 Forms finden Sie im Dokument [Übersicht über die neuen Funktionen](../../forms/using/whats-new.md).
 
-Sie können Ihre vorhandene LiveCycle- oder AEM Forms-Installation aktualisieren, um neue Funktionen und Verbesserungen in AEM 6.5 Forms zu erhalten und gleichzeitig vorhandene Daten, Prozesse und Assets beizubehalten. Bei der Aktualisierung werden Metadaten und Status der Prozesse ebenfalls beibehalten. Sie können einen Aktualisierungspfad wählen, um mit der Aktualisierung zu beginnen.
+Sie können Ihre vorhandene LiveCycle- oder AEM Forms-Installation aktualisieren, um neue Funktionen und Verbesserungen in AEM 6.5 Forms zu erhalten und gleichzeitig vorhandene Daten, Prozesse und Assets beizubehalten. Bei der Aktualisierung werden Metadaten und Status der Prozesse ebenfalls beibehalten. Sie können einen Aktualisierungspfad auswählen, um mit der Aktualisierung zu beginnen.
 
-Das folgende Diagramm zeigt die verfügbaren Aktualisierungspfade für AEM Forms auf OSGi:
+Das folgende Diagramm zeigt die verfügbaren Aktualisierungspfade für AEM Forms on OSGi:
 
 ![](do-not-localize/osgi-upgrade-path.png)
 
-Sie können eine direkte Aktualisierung durchführen von:
+Sie können von hier aus eine direkte Aktualisierung durchführen:
 
 * AEM 6.3 Forms on OSGi
 * AEM 6.4 Forms on OSGi
@@ -43,7 +43,7 @@ Das folgende Diagramm zeigt die verfügbaren Aktualisierungspfade für AEM Forms
 
 ![](do-not-localize/jee-upgrade-6-5.png)
 
-Sie können eine direkte Aktualisierung durchführen von:
+Sie können von hier aus eine direkte Aktualisierung durchführen:
 
 * AEM 6.3 Forms on JEE
 * AEM 6.4 Forms on JEE
