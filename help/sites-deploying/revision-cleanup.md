@@ -12,25 +12,25 @@ discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
 source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5903'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
-# Revisionsbereinigung{#revision-cleanup}
+# Revisionsbereinigung {#revision-cleanup}
 
 ## Einführung {#introduction}
 
-Bei jeder Repository-Aktualisierung wird eine neue Inhaltsrevision erstellt. Daher wächst bei jeder Aktualisierung die Größe des Repositorys. Alte Revisionen müssen bereinigt werden, um freie Festplattenressourcen zu erhalten - dies ist wichtig, um ein unkontrolliertes Repository-Wachstum zu vermeiden. Diese Wartungsfunktionalität wird als Revisionsbereinigung bezeichnet. und ist ab AEM 6.0 als Offlineprogramm verfügbar.
+Bei jeder Repository-Aktualisierung wird eine neue Inhaltsrevision erstellt. Daher wächst das Repository nach jeder Aktualisierung. Alte Revisionen müssen bereinigt werden, um freie Festplattenressourcen zu erhalten – dies ist wichtig, um ein unkontrolliertes Repository-Wachstum zu vermeiden. Diese Wartungsfunktionalität wird als Revisionsbereinigung bezeichnet. Sie ist seit AEM 6.0 als Offline-Routine verfügbar.
 
-Mit AEM 6.3 und höher wurde eine Online-Version dieser Funktion namens Online-Revisionsbereinigung eingeführt. Verglichen mit der Offline-Revisionsbereinigung, bei der die AEM-Instanz beendet werden muss, kann die Online-Revisionsbereinigung ausgeführt werden, wenn die AEM-Instanz online ist. Die Online-Revisionsbereinigung ist standardmäßig aktiviert und wird als Methode für die Revisionsbereinigung empfohlen.
+Mit AEM 6.3 und höher wurde eine Online-Version dieser Funktion namens Online-Revisionsbereinigung eingeführt. Verglichen mit der Offline-Revisionsbereinigung, bei der die AEM-Instanz beendet werden muss, kann die Online-Revisionsbereinigung ausgeführt werden, wenn die AEM-Instanz online ist. Die Online-Revisionsbereinigung ist standardmäßig aktiviert und ist die empfohlene Methode zur Durchführung der Revisionsbereinigung.
 
 **Hinweis**: [Im Video](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/revision-cleanup-technical-video-use.html) finden Sie eine Einführung in die Verwendung der Online-Revisionsbereinigung.
 
-Die Revisionsbereinigung ist in drei Phasen unterteilt: **Schätzung**, **Komprimierung** und **Bereinigung**. Bei der Schätzung wird basierend auf der Menge an erfassten veralteten Daten entschieden, ob die nächste Phase (Komprimierung) ausgeführt wird. In der Komprimierungsphase werden Segmente und TAR-Dateien neu geschrieben; nicht verwendete Inhalte werden daraus entfernt. In der Bereinigungsphase werden die alten Segmente und alle darin enthaltenen veralteten Daten gelöscht. Im Offline-Modus kann in der Regel mehr Speicherplatz zurückgewonnen werden, da im Online-Modus der Arbeitsdatensatz von AEM berücksichtigt werden muss, für den zusätzliche Segmente beibehalten (d. h. nicht bereinigt) werden.
+Der Revisionsbereinigungsprozess besteht aus drei Phasen: **Schätzung**, **Komprimierung** und **Bereinigung**. Die Schätzung bestimmt, ob die nächste Phase (Komprimierung) ausgeführt werden soll oder nicht, je nachdem, wie viel Speicherabfall möglicherweise erfasst wird. Während der Komprimierungsphase werden Segmente und TAR-Dateien neu geschrieben, wobei nicht verwendete Inhalte ausgeschlossen werden. In der Bereinigungsphase werden anschließend die alten Segmente entfernt, einschließlich des möglicherweise vorhandenen Speicherabfalls. Der Offline-Modus kann in der Regel mehr Speicherplatz zurückgewinnen, da der Online-Modus das AEM-Arbeits-Set berücksichtigen muss, in dem zusätzliche Segmente nicht erfasst werden.
 
-Weitere Informationen zur Revisionsbereinigung finden Sie unter folgenden Links:
+Weitere Informationen zur Revisionsbereinigung finden Sie unter den folgenden Links:
 
 * [Ausführen der Online-Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup)
 * [Häufig gestellte Fragen zur Online-Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions)
@@ -40,11 +40,11 @@ Weitere Informationen finden Sie in der [offiziellen Oak-Dokumentation](https://
 
 ### Wann sollte die Online-Revisionsbereinigung anstelle der Offline-Revisionsbereinigung verwendet werden? {#when-to-use-online-revision-cleanup-as-opposed-to-offline-revision-cleanup}
 
-**Die Online-Revisionsbereinigung ist die empfohlene Methode zur Durchführung einer Revisionsbereinigung.** Die Offline-Revisionsbereinigung sollte nur in Ausnahmefällen erfolgen, beispielsweise bei der Migration zu einem neuen Speicherformat oder auf Anforderung der Adobe-Kundenunterstützung.
+**Die Online-Revisionsbereinigung ist die empfohlene Methode zur Durchführung der Revisionsbereinigung.** Die Offline-Revisionsbereinigung sollte nur in Ausnahmefällen erfolgen, beispielsweise bei der Migration zu einem neuen Speicherformat oder auf Anforderung der Adobe-Kundenunterstützung.
 
 ## Ausführen der Online-Revisionsbereinigung {#how-to-run-online-revision-cleanup}
 
-Die Online-Revisionsbereinigung ist standardmäßig so konfiguriert, dass sie einmal pro Tag automatisch auf der Autoren- und Veröffentlichungsinstanz von AEM ausgeführt wird. Sie müssen nur ein Wartungsfenster für einen Zeitraum festlegen, in dem die Benutzeraktivität am wenigsten beeinträchtigt wird. Sie können die Online-Revisionsbereinigung wie folgt konfigurieren:
+Die Online-Revisionsbereinigung ist standardmäßig so konfiguriert, dass sie einmal täglich sowohl in der Autoren- als auch in der Veröffentlichungsinstanz von AEM ausgeführt wird. Sie müssen lediglich das Wartungsfenster während eines Zeitraums mit der geringsten Benutzeraktivität definieren. Sie können die Online-Revisionsbereinigung wie folgt konfigurieren:
 
 1. Wechseln Sie im AEM-Hauptfenster zu **Tools > Vorgänge > Dashboard > Wartung** oder öffnen Sie im Browser die URL: `https://serveraddress:serverport/libs/granite/operations/content/maintenance.html`
 
@@ -69,23 +69,23 @@ Wenn Sie die Revisionsbereinigung manuell durchführen möchten, gehen Sie wie f
 
 ### Ausführen der Online-Revisionsbereinigung nach der Offline-Revisionsbereinigung {#running-online-revision-cleanup-after-offline-revision-cleanup}
 
-Der Revisionsbereinigungsprozess gewinnt alte Revisionen generationsweise zurück. Dies bedeutet, dass bei jeder Ausführung der Revisionsbereinigung eine neue Generation erstellt und auf der Festplatte gespeichert wird. Die beiden Typen der Revisionsbereinigung unterscheiden sich: Bei der Offline-Revisionsbereinigung wird eine Generation aufbewahrt, während bei der Online-Revisionsbereinigung zwei Generationen aufbewahrt werden. Wenn Sie also **nach** einer Offline-Revisionsbereinigung eine Online-Revisionsbereinigung durchführen, passiert Folgendes:
+Der Revisionsbereinigungsprozess gewinnt alte Revisionen generationsweise zurück. Das bedeutet, dass jedes Mal, wenn Sie die Revisionsbereinigung ausführen, eine neue Generierung erstellt und auf der Festplatte gespeichert wird. Die beiden Typen der Revisionsbereinigung unterscheiden sich: Bei der Offline-Revisionsbereinigung wird eine Generation aufbewahrt, während bei der Online-Revisionsbereinigung zwei Generationen aufbewahrt werden. Wenn Sie also **nach** einer Offline-Revisionsbereinigung eine Online-Revisionsbereinigung durchführen, passiert Folgendes:
 
 1. Nach dem ersten Durchlauf der Online-Revisionsbereinigung verdoppelt sich die Größe des Repositorys. Dies geschieht, weil jetzt zwei Generationen auf der Festplatte aufbewahrt werden.
 1. Während der nachfolgenden Ausführungen wächst das Repository, solange die neue Generation erstellt wird, und stabilisiert sich dann wieder bei der Größe, die es nach dem ersten Durchlauf hatte, sobald der Online-Revisionsbereinigungsprozess die vorherige Generation zurückgewinnt.
 
-Beachten Sie auch, dass abhängig vom Typ und der Anzahl der Commits jede Generierung eine andere Größe als die vorherige haben kann, weshalb die endgültige Größe von einem Durchlauf zum nächsten abweichen kann.
+Beachten Sie außerdem, dass je nach Typ und Anzahl der Commits jede Generierung im Vergleich zum vorherigen unterschiedlich groß sein kann, sodass die endgültige Größe von einer Ausführung zur anderen variieren kann.
 
-Deswegen empfiehlt es sich, eine Festplatte zu wählen, die mindestens zwei- oder dreimal so groß ist wie die ursprünglich geschätzte Repository-Größe.
+Es empfiehlt sich deswegen, eine Festplatte zu wählen, die mindestens zwei- oder dreimal so groß ist wie die ursprünglich geschätzte Repository-Größe.
 
 ## Vollständiger und Tail-Komprimierungsmodus  {#full-and-tail-compaction-modes}
 
 Mit **AEM 6.5** werden **zwei neue Modi** für die **Komprimierungsphase** des Online-Revisionsbereinigungsprozesses eingeführt:
 
-* Der Modus für die **vollständige Komprimierung** schreibt alle Segmente und TAR-Dateien im gesamten Repository neu. Die nachfolgende Bereinigungsphase kann so eine maximale Bereinigung des Repositorys durchführen. Da die vollständige Komprimierung das gesamte Repository betrifft, benötigt sie in erheblichem Umfang Systemressourcen und Zeit. Die vollständige Komprimierung entspricht der Komprimierungsphase in AEM 6.3.
-* Der Modus **Tail-Komprimierung** schreibt nur die aktuellsten Segmente und TAR-Dateien im Repository neu. Die aktuellsten Segmente und TAR-Dateien sind diejenigen, die seit der letzten vollständigen oder Tail-Komprimierung hinzugefügt wurden. Die nachfolgende Bereinigungsphase kann daher nur den aktuellen Teil des Repositorys bereinigen. Da die Tail-Komprimierung nur einen Teil des Repositorys betrifft, benötigt sie erheblich weniger Systemressourcen und Zeit als eine vollständige Komprimierung.
+* Der Modus für die **vollständige Komprimierung** schreibt alle Segmente und TAR-Dateien im gesamten Repository neu. Die nachfolgende Bereinigungsphase kann somit die maximale Menge an Speicherabfall im Repository entfernen. Da die vollständige Komprimierung sich auf das gesamte Repository auswirkt, ist eine beträchtliche Menge an Systemressourcen und Zeit zum Abschluss erforderlich. Die vollständige Komprimierung entspricht der Komprimierungsphase in AEM 6.3.
+* Der Modus **Tail-Komprimierung** schreibt nur die aktuellsten Segmente und TAR-Dateien im Repository neu. Die neuesten Segmente und TAR-Dateien sind diejenigen, die seit der letzten vollständigen oder Tail-Komprimierung hinzugefügt wurden. Die nachfolgende Bereinigungsphase kann daher nur den im aktuellen Teil des im Repository enthaltenen Speicherabfall entfernen. Da die Tail-Komprimierung nur einen Teil des Repositorys betrifft, benötigt sie erheblich weniger Systemressourcen und Zeit als eine vollständige Komprimierung.
 
-Diese Komprimierungsmodi stellen einen Kompromiss zwischen Effizienz und Ressourcenverbrauch dar: während die Tail-Komprimierung weniger effektiv ist, wirkt sie sich auch weniger auf den normalen Systembetrieb aus. Im Gegensatz dazu ist die vollständige Komprimierung effektiver, wirkt sich aber stärker auf den normalen Systembetrieb aus.
+Diese Komprimierungsmodi stellen einen Kompromiss zwischen Effizienz und Ressourcenverbrauch dar: Die Tail-Komprimierung ist zwar weniger effektiv, hat dafür aber weniger Auswirkungen auf den normalen Systembetrieb. Die vollständige Komprimierung ist effektiver, hat aber auch wesentlich größere Auswirkungen auf den normalen Systembetrieb.
 
 AEM 6.5 bietet bei der Komprimierung außerdem einen effizienteren Mechanismus für die Deduplizierung des Inhalts, was den Speicherbedarf des Repositorys weiter verringert.
 
@@ -93,25 +93,25 @@ Die beiden folgenden Diagramme enthalten die Ergebnisse aus internen Laborversuc
 
 ![onrc-duration-6_4vs63](assets/onrc-duration-6_4vs63.png) ![segmentstore-6_4vs63](assets/segmentstore-6_4vs63.png)
 
-### Anleitung zum Konfigurieren der vollständigen und der Tail-Komprimierung {#how-to-configure-full-and-tail-compaction}
+### Konfigurieren der vollständigen und Tail-Komprimierung {#how-to-configure-full-and-tail-compaction}
 
-In der Standardkonfiguration wird die Tail-Komprimierung an Wochentagen und die vollständige Komprimierung an Sonntagen ausgeführt. Die Standardkonfiguration kann über den neuen Konfigurationswert `full.gc.days` der `RevisionCleanupTask`-[Wartungsaufgabe](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup) geändert werden.
+Bei der Standardkonfiguration wird eine Tail-Komprimierung an Wochentagen und eine vollständige Komprimierung an Sonntagen durchgeführt. Die Standardkonfiguration kann über den neuen Konfigurationswert `full.gc.days` der `RevisionCleanupTask`-[Wartungsaufgabe](/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup) geändert werden.
 
-Wenn Sie den Wert `full.gc.days` konfigurieren, beachten Sie, dass die vollständige Komprimierung während der mit diesem Wert definierten Tage ausgeführt wird und die Tail-Komprimierung während der nicht mit diesem Wert definierten Tage. Wenn Sie beispielsweise die Ausführung einer vollständigen Komprimierung am Sonntag konfigurieren, wird die Tail-Komprimierung von Montag bis Samstag ausgeführt. Wenn Sie hingegen die Ausführung einer vollständigen Komprimierung an allen Tagen der Woche konfigurieren, wird die Tail-Komprimierung gar nicht ausgeführt.
+Wenn Sie den Wert `full.gc.days` konfigurieren, beachten Sie, dass die vollständige Komprimierung während der mit diesem Wert definierten Tage ausgeführt wird und die Tail-Komprimierung während der nicht mit diesem Wert definierten Tage. Wenn Sie beispielsweise die vollständige Komprimierung so konfigurieren, dass sie am Sonntag ausgeführt wird, wird die Tail-Komprimierung von Montag bis Samstag ausgeführt. Wenn Sie beispielsweise die vollständige Komprimierung so konfigurieren, dass sie an jedem Wochentag ausgeführt wird, wird die Tail-Komprimierung überhaupt nicht ausgeführt.
 
-Berücksichtigen Sie auch Folgendes:
+Berücksichtigen Sie zusätzlich Folgendes:
 
 * Die **Tail-Komprimierung** ist weniger effektiv und hat weniger Auswirkungen auf den normalen Systembetrieb. Sie sollte daher an den Werktagen ausgeführt werden.
-* Die **vollständige Komprimierung** ist effektiver, hat aber auch wesentlich größere Auswirkungen auf den normalen Systembetrieb. Sie sollte daher außerhalb der Arbeitstage verwendet werden.
-* Beide Komprimierungen sollten so konfiguriert sein, dass sie außerhalb der Spitzenzeiten ausgeführt werden.
+* Die **vollständige Komprimierung** ist effektiver, hat aber auch wesentlich größere Auswirkungen auf den normalen Systembetrieb. Sie ist daher zur Verwendung außerhalb der Werktage vorgesehen.
+* Sowohl die Tail-Komprimierung als auch die vollständige Komprimierung sollte außerhalb der Spitzenzeiten ausgeführt werden.
 
 ### Fehlerbehebung {#troubleshooting}
 
-Wenn Sie die neuen Komprimierungsmodi verwenden, beachten Sie Folgendes:
+Beachten Sie bei der Verwendung der neuen Komprimierungsmodi Folgendes:
 
-* Sie können die Ein-/Ausgabeaktivität überwachen, z. B.: E/A-Vorgänge, Wartezeiten der CPU auf E/A-Vorgänge, Größe der Commit-Warteschlange. Dies hilft Ihnen bei der Entscheidung, ob das System die E/A-Grenze erreicht hat und Upsizing erforderlich ist.
-* Der `RevisionCleanupTaskHealthCheck` zeigt den Gesamtzustand der Online-Revisionsbereinigung. Er funktioniert wie in AEM 6.3 und unterscheidet nicht zwischen der vollständigen und der Tail-Komprimierung.
-* Die Protokollmeldungen enthalten relevante Information über die Komprimierungsmodi. Wenn beispielsweise die Online-Revisionsbereinigung gestartet wird, geben die Protokollmeldungen den verwendeten Komprimierungsmodus an. Außerdem kann es in einigen Grenzfällen passieren, dass das System zur vollständigen Komprimierung wechselt, obwohl eine Tail-Komprimierung geplant ist. Diese Änderung ist in den Protokollmeldungen ersichtlich. Die folgenden Protokollbeispiele zeigen den Komprimierungsmodus und den Wechsel von der vollständigen Komprimierung zur Tail-Komprimierung:
+* Sie können die Eingabe/Ausgabe-Aktivität (I/O) überwachen, z. B.: I/O-Vorgänge, CPU wartet auf IO, Commit-Warteschlangengröße. Auf diese Weise können Sie feststellen, ob das System I/O-gebunden wird und eine Vergrößerung erforderlich ist.
+* Der `RevisionCleanupTaskHealthCheck` zeigt den Gesamtzustand der Online-Revisionsbereinigung. Es funktioniert genauso wie in AEM 6.3 und unterscheidet nicht zwischen vollständiger und Tail-Komprimierung.
+* Die Protokollmeldungen enthalten relevante Informationen über die Komprimierungsmodi. Wenn beispielsweise die Online-Revisionsbereinigung beginnt, zeigen die entsprechenden Protokollmeldungen den Komprimierungsmodus an. In einigen Fällen wird das System außerdem zur vollständigen Komprimierung zurückgesetzt, wenn eine Tail-Komprimierung geplant ist. Die Protokollmeldungen zeigen diese Änderung an. Die folgenden Protokollbeispiele zeigen den Komprimierungsmodus und den Wechsel von der Tail-Komprimierung zur vollständigen Komprimierung an:
 
 ```
 TarMK GC: running tail compaction
@@ -120,7 +120,7 @@ TarMK GC: no base state available, running full compaction instead
 
 ### Bekannte Einschränkungen {#known-limitations}
 
-In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständigen Komprimierungsmodus den Bereinigungsprozess. Genauer gesagt steigt die Größe des Repositorys nach einer vollständigen Komprimierung an (sie verdoppelt sich). Der zusätzliche Speicherplatz wird bei der nachfolgenden Tail-Komprimierung zurückgewonnen, bei der das Repository unter den Wert vor der vollständigen Komprimierung fällt. Auch die parallele Ausführung von Wartungsaufgaben sollte vermieden werden.
+In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständigen Komprimierungsmodus den Bereinigungsprozess. Genauer gesagt wächst das Repository nach einer vollständigen Komprimierung (es verdoppelt sich die Größe). Der zusätzliche Speicherplatz wird bei der nachfolgenden Tail-Komprimierung zurückgewonnen, wenn das Repository unter die Größe vor der vollständigen Komprimierungsgröße fällt. Das parallele Durchführen von Wartungsaufgaben sollte ebenfalls vermieden werden.
 
 **Es empfiehlt sich, eine Festplatte zu wählen, die mindestens zwei- oder dreimal so groß ist wie die ursprünglich geschätzte Repository-Größe.**
 
@@ -152,32 +152,32 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Warum muss ich das Repository migrieren?</strong></td>
-   <td><p>In AEM 6.3 mussten Änderungen am Speicherformat durchgeführt werden, um insbesondere die Leistung und die Effektivität der Online-Revisionsbereinigung zu verbessern. Diese Änderungen sind nicht rückwärtskompatibel, daher müssen mit dem alten Oak-Segment (AEM 6.2 und früher) erstellte Repositorys migriert werden.</p> <p>Weitere Vorteile der Änderung des Speicherformats:</p>
+   <td><p>In AEM 6.3 mussten Änderungen am Speicherformat durchgeführt werden, um insbesondere die Leistung und die Effektivität der Online-Revisionsbereinigung zu verbessern. Diese Änderungen sind nicht abwärtskompatibel, und Repositorys, die mit dem alten Oak-Segment (AEM 6.2 und früher) erstellt wurden, müssen migriert werden.</p> <p>Weitere Vorteile der Änderung des Speicherformats:</p>
     <ul>
      <li>Bessere Skalierbarkeit (optimierte Segmentgröße).</li>
-     <li>Schnellere <a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank">Bereinigung des Datenspeichers</a>.<br /> </li>
+     <li>Schnellere <a href="/help/sites-administering/data-store-garbage-collection.md" target="_blank">Datenspeicherbereinigung</a>.<br /> </li>
      <li>Grundlage für zukünftige Verbesserungen.</li>
     </ul> </td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Wird das vorherige TAR-Format weiterhin unterstützt?</strong></td>
-   <td>Nur der neue Oak-Segment-Tar wird mit AEM 6.3 oder höher unterstützt.</td>
+   <td>Nur das neue Oak Segment Tar wird von AEM 6.3 oder höher unterstützt.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Ist die Migration des Inhalts immer obligatorisch?</strong></td>
-   <td>Ja. Sie müssen Inhalt immer migrieren, es sei denn, Sie starten mit einer neuen Instanz.</td>
+   <td>Ja. Wenn Sie nicht mit einer neuen Instanz beginnen, müssen Sie den Inhalt immer migrieren.</td>
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Kann ich auf 6.3 oder höher aktualisieren und die Migration später durchführen (z. B. mithilfe eines anderen Wartungsfensters)?</strong></td>
+   <td><strong>Kann ich auf 6.3 oder höher aktualisieren und die Migration zu einem späteren Zeitpunkt durchführen (zum Beispiel in einem anderen Wartungsfenster)?</strong></td>
    <td>Nein, wie oben beschrieben, ist die Migration obligatorisch.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Kann die Ausfallzeit für die Migration vermieden werden?</strong></td>
-   <td>Nein. Es handelt sich um eine einmalige Aufgabe, die nicht auf einer laufenden Instanz ausgeführt werden kann.</td>
+   <td>Nein. Dies ist ein einmaliger Aufwand, der nicht auf einer laufenden Instanz ausgeführt werden kann.</td>
    <td> </td>
   </tr>
   <tr>
@@ -192,7 +192,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Wie kann ich den während und nach der Migration erforderlichen Speicherplatz am besten berechnen?</strong></td>
-   <td>Die Migration entspricht der Neuerstellung des Segmentspeichers im neuen Format. Auf Basis dieser Annahme können Sie den zusätzlich für die Migration erforderlichen Festplattenspeicher berechnen. Nach der Migration kann der alte Segmentspeicher gelöscht werden, um Speicherplatz zurückzugewinnen.</td>
+   <td>Die Migration entspricht der Neuerstellung des Segmentspeichers in dem neuen Format. Auf Basis dieser Annahme können Sie den zusätzlich für die Migration erforderlichen Festplattenspeicher berechnen. Nach der Migration kann der alte Segmentspeicher gelöscht werden, um Speicherplatz zurückzugewinnen.</td>
    <td> </td>
   </tr>
   <tr>
@@ -234,12 +234,12 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Warum gewinnt die Online-Revisionsbereinigung keinen Speicherplatz zurück, wenn sie das erste Mal ausgeführt wird?</strong></td>
-   <td>Die Online-Revisionsbereinigung gewinnt alte Revisionen generationsweise zurück. Jedes Mal, wenn die Revisionsbereinigung ausgeführt wird, wird eine neue Generation erstellt. Nur Inhalt, der mindestens zwei Generationen alt ist, wird zurückgewonnen; daher wird beim erstmaligen Ausführen kein Speicherplatz zurückgewonnen.</td>
+   <td>Die Online-Revisionsbereinigung gewinnt alte Revisionen generationsweise zurück. Bei jeder Ausführung der Revisionsbereinigung wird eine neue Generierung erzeugt. Nur Inhalte, die mindestens zwei Generationen alt sind, werden zurückgewonnen, was bedeutet, dass bei einem ersten Durchlauf nichts zurückgewonnen werden kann.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Warum gewinnt die erste Online-Revisionsbereinigung keinen Speicherplatz zurück, wenn sie nach der Offline-Revisionsbereinigung ausgeführt wird?</strong></td>
-   <td><p>Bei der Offline-Revisionsbereinigung wird alles zurückgewonnen, nur die letzte Generation bleibt erhalten. Bei der Online-Revisionsbereinigung bleiben die beiden letzten Generationen erhalten. Im Fall eines neuen Repositorys wird beim erstmaligen Ausführen der Online-Revisionsbereinigung im Anschluss an die Offline-Bereinigung kein Speicherplatz zurückgewonnen, da keine Generation alt genug für die Rückgewinnung ist.</p> <p>Lesen Sie hierzu auch den Abschnitt „Ausführen der Online-Revisionsbereinigung nach der Offline-Revisionsbereinigung“ in <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">diesem Kapitel</a>.</p> </td>
+   <td><p>Die Offline-Revisionsbereinigung gewinnt alles zurück bis auf die neueste Generierung, im Vergleich zu den letzten zwei Generierungen für die Online-Revisionsbereinigung. Im Falle eines neuen Repositorys wird bei der Online-Revisionsbereinigung kein Speicherplatz zurückgewonnen, wenn sie zum ersten Mal nach der Offline-Revisionsbereinigung ausgeführt wird, da keine Generierung alt genug ist, um zurückgewonnen zu werden.</p> <p>Lesen Sie hierzu auch den Abschnitt „Ausführen der Online-Revisionsbereinigung nach der Offline-Revisionsbereinigung“ in <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">diesem Kapitel</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -254,28 +254,28 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Welche Faktoren bestimmen die Dauer der Online-Revisionsbereinigung?</strong></td>
-   <td>Es handelt sich um folgende Faktoren:<br /> 
+   <td>Die Faktoren sind:<br />
     <ul>
      <li>Repository-Größe</li>
      <li>Systemlast (Anforderungen pro Minute, insbesondere Schreibvorgänge)</li>
-     <li>Aktivitätsmuster (Lese- versus Schreibvorgänge)</li>
-     <li>Hardwarespezifikationen (CPU-Leistung, Hauptspeicher, IOPS)</li>
+     <li>Aktivitätsmuster (Lese- und Schreibvorgänge)</li>
+     <li>Hardware-Spezifikationen (CPU-Leistung, Speicher, IOPS)</li>
     </ul> </td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Können Autoren weiterarbeiten, während die Online-Revisionsbereinigung läuft?</strong></td>
-   <td>Ja, die Online-Revisionsbereinigung beherrscht gleichzeitige Schreibvorgänge. Die Online-Revisionsbereinigung ist jedoch schneller und effizienter, wenn keine gleichzeitigen Schreibvorgänge erfolgen. Es wird empfohlen, die Wartungsaufgabe für die Online-Revisionsbereinigung für einen relativ ruhigen Zeitraum mit geringem Traffic zu planen.</td>
+   <td>Ja, die Online-Revisionsbereinigung kann gleichzeitige Schreibvorgänge handhaben. Die Online-Revisionsbereinigung funktioniert jedoch schneller und effizienter ohne gleichzeitige Schreibvorgänge. Es wird empfohlen, die Wartungsaufgabe für die Online-Revisionsbereinigung für eine relativ ruhige Zeit ohne viel Traffic zu planen.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Welche Mindestanforderungen gelten für Festplatten- und Heap-Speicher, wenn die Online-Revisionsbereinigung ausgeführt wird?</strong></td>
-   <td><p>Der Festplattenspeicher wird während der Online-Revisionsbereinigung kontinuierlich überwacht. Falls der verfügbare Speicherplatz unter einen kritischen Wert sinkt, wird der Vorgang abgebrochen. Der kritische Wert beträgt 25 % der aktuellen Festplattengröße auf dem Repository und kann nicht konfiguriert werden.</p> <p><strong>Es empfiehlt sich, eine Festplatte zu wählen, die mindestens zwei- oder dreimal so groß ist wie die ursprünglich geschätzte Repository-Größe.</strong></p> <p>Der verfügbare Heap-Speicher wird beim Bereinigungsvorgang ständig überwacht. Falls der verfügbare Heap-Speicher unter einen kritischen Wert sinkt, wird der Vorgang abgebrochen. Der kritische Wert wird über org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD konfiguriert. Der Standardwert ist 15 %.</p> <p>Es gibt keine separaten Empfehlungen für die Mindestkomprimierung der Heap-Speichergröße zusätzlich zu den Empfehlungen für die AEM-Speichergröße. Als allgemeine Regel gilt: <strong>Falls eine AEM-Instanz ausreichend für die Anwendungsbereiche und erwartete Payload dimensioniert ist, ist ausreichend Speicherplatz für den Bereinigungsvorgang vorhanden.</strong></p> </td>
+   <td><p>Der Festplattenspeicher wird während der Online-Revisionsbereinigung kontinuierlich überwacht. Wenn der verfügbare Speicherplatz unter einen kritischen Wert fällt, wird der Prozess abgebrochen. Dieser kritische Wert beträgt 25 % des aktuell belegten Speicherplatzes des Repositorys und kann nicht konfiguriert werden.</p> <p><strong>Es empfiehlt sich, eine Festplatte zu wählen, die mindestens zwei- oder dreimal so groß ist wie die ursprünglich geschätzte Repository-Größe.</strong></p> <p>Der verfügbare Heap-Speicher wird während des Bereinigungsprozesses kontinuierlich überwacht. Falls der verfügbare Heap-Speicher unter einen kritischen Wert sinkt, wird der Vorgang abgebrochen. Der kritische Wert wird über org.apache.jackrabbit.oak.segment.SegmentNodeStoreService#MEMORY_THRESHOLD konfiguriert. Der Standardwert ist 15 %.</p> <p>Es gibt keine separaten Empfehlungen für die Mindestkomprimierung der Heap-Speichergröße zusätzlich zu den Empfehlungen für die AEM-Speichergröße. Als allgemeine Regel gilt: <strong>Falls eine AEM-Instanz ausreichend für die Anwendungsbereiche und erwartete Payload dimensioniert ist, ist ausreichend Speicherplatz für den Bereinigungsvorgang vorhanden.</strong></p> </td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Mit welcher Auswirkung auf die Leistung muss beim Ausführen der Online-Revisionsbereinigung gerechnet werden?</strong></td>
-   <td>Die Online-Revisionsbereinigung ist ein Hintergrundprozess, der parallel zu den normalen Systemvorgängen Daten aus dem Repository liest und in das Repository schreibt. Insbesondere benötigt der Vorgang u. U. für einen kurzen Zeitraum exklusiven Zugang zum Repository, sodass andere Threads nicht in das Repository schreiben können.</td>
+   <td>Die Online-Revisionsbereinigung ist ein Hintergrundprozess, der gleichzeitig aus dem Repository liest und in das Repository schreibt, parallel zu den normalen Systemvorgängen. Insbesondere benötigt sie möglicherweise für kurze Zeit exklusiven Zugriff auf das Repository, während der sie andere Threads daran hindert, in das Repository zu schreiben.</td>
    <td> </td>
   </tr>
   <tr>
@@ -295,12 +295,12 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Was passiert, wenn die Online-Revisionsbereinigung das konfigurierte Wartungsfenster überschreitet?</strong></td>
-   <td>Stellen Sie sicher, dass andere Wartungsaufgaben die Ausführung nicht verzögern. Dies kann der Fall sein, falls mehrere Wartungsaufgaben zusätzlich zur Online-Revisionsbereinigung im selben Wartungsfenster ausgeführt werden. Beachten Sie, dass Wartungsaufgaben der Reihe nach ausgeführt werden und die Reihenfolge nicht konfiguriert werden kann.</td>
+   <td>Stellen Sie sicher, dass andere Wartungsaufgaben die Ausführung nicht verzögern. Dies kann der Fall sein, wenn innerhalb desselben Wartungsfensters noch andere Wartungsaufgaben als die Online-Revisionsbereinigung ausgeführt werden. Beachten Sie, dass Wartungsaufgaben nacheinander und ohne konfigurierbare Reihenfolge ausgeführt werden.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Warum wird die Revisionsbereinigung übersprungen?</strong></td>
-   <td><p>Die Revisionsbereinigung ermittelt in einer Schätzungsphase, ob eine Bereinigung notwendig ist. Bei der Schätzung wird die aktuelle Repository-Größe mit der Größe nach der letzten Komprimierung verglichen. Falls die Größe den konfigurierten Deltawert übersteigt, erfolgt eine Bereinigung. Der Deltawert für die Größe beträgt 1 GB. In der Praxis bedeutet dies: Falls die Repository-Größe seit der letzten Bereinigung nicht um 1 GB gewachsen ist, wird die neue Iteration der Revisionsbereinigung übersprungen. </p> <p>Unten sehen Sie die für die Schätzungsphase relevanten Protokolleinträge:</p>
+   <td><p>Die Revisionsbereinigung beruht auf einer Schätzungsphase, in der entschieden wird, ob ausreichend Datenabfall zur Bereinigung vorhanden ist. Bei der Schätzung wird die aktuelle Größe mit der Größe des Repositorys nach der letzten Komprimierung verglichen. Wenn die Größe das konfigurierte Delta überschreitet, wird die Bereinigung ausgeführt. Der Deltawert für die Größe beträgt 1 GB. In der Praxis bedeutet dies: Falls die Repository-Größe seit der letzten Bereinigung nicht um 1 GB gewachsen ist, wird die neue Iteration der Revisionsbereinigung übersprungen. </p> <p>Unten sehen Sie die für die Schätzungsphase relevanten Protokolleinträge:</p>
     <ul>
      <li>Revisionsbereinigung wird ausgeführt: <em>Deltagröße ist N % oder N/N (N/N Byte), Komprimierung wird ausgeführt</em></li>
      <li>Revisionsbereinigung wird <strong>nicht</strong> ausgeführt: <em>Deltagröße ist N % oder N/N (N/N Byte), Komprimierung wird übersprungen</em></li>
@@ -309,7 +309,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Kann die automatische Komprimierung abgebrochen werden, falls die Auswirkung auf die Leistung zu groß ist?</strong></td>
-   <td>Ja. AEM 6.3 kann sicher über das Wartungsaufgaben-Fenster im Vorgangs-Dashboard oder über JMX beendet werden.</td>
+   <td>Ja. Seit AEM 6.3 kann sie sicher über das Fenster „Wartungsaufgaben“ im Vorgangs-Dashboard oder über JMX beendet werden.</td>
    <td> </td>
   </tr>
   <tr>
@@ -319,7 +319,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Was passiert, wenn das System während der Online-Revisionsbereinigung abstürzt?</strong></td>
-   <td>Es besteht in diesem Fall keine Gefahr für die Daten. Nicht bereinigte alte Daten werden bei der nächsten Bereinigung gelöscht.</td>
+   <td>In solchen Fällen besteht keine Gefahr einer Datenbeschädigung. Restliche Datenabfälle werden durch einen nachfolgenden Lauf bereinigt.</td>
    <td> </td>
   </tr>
   <tr>
@@ -334,21 +334,21 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Was passiert, wenn zu viele gleichzeitige Schreibvorgänge im Repository zu starken Störungen führen?</strong></td>
-   <td><p>Wenn im System gleichzeitige Schreibvorgänge stattfinden, benötigt die Online-Revisionsbereinigung möglicherweise einen exklusiven Schreibzugriff, um die Änderungen am Ende eines Komprimierungszyklus zu übermitteln. Das System wechselt in den <strong>forceCompact-Modus</strong>, der in der <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html" target="_blank">Dokumentation zu Oak</a> ausführlicher erläutert wird. Bei der erzwungenen Komprimierung wird eine exklusive Schreibsperre angewendet, damit die Änderungen ohne störende gleichzeitige Schreibvorgänge gespeichert werden können. Um die Auswirkungen auf die Reaktionszeiten zu begrenzen, kann ein Zeitlimitwert festgelegt werden. Dieser Wert beträgt standardmäßig 1 Minute. Falls also die erzwungene Komprimierung nicht innerhalb 1 Minute abgeschlossen ist, wird die Komprimierung zugunsten gleichzeitiger Speichervorgänge abgebrochen.</p> <p>Die Dauer der erzwungenen Komprimierung hängt von folgenden Faktoren ab:</p>
+   <td><p>Wenn im System gleichzeitige Schreibvorgänge stattfinden, benötigt die Online-Revisionsbereinigung möglicherweise einen exklusiven Schreibzugriff, um die Änderungen am Ende eines Komprimierungszyklus zu übermitteln. Das System wechselt in den <strong>forceCompact-Modus</strong>, der in der <a href="https://jackrabbit.apache.org/oak/docs/nodestore/segment/overview.html" target="_blank">Dokumentation zu Oak</a> ausführlicher erläutert wird. Während der erzwungenen Komprimierung gilt eine exklusive Schreibsperre, damit die Änderungen endgültig übertragen werden können, ohne dass gleichzeitige Schreibvorgänge dazwischenkommen. Um die Auswirkungen auf die Antwortzeiten zu begrenzen, kann ein Zeitlimitwert definiert werden. Dieser Wert ist standardmäßig auf 1 Minute gesetzt. Das bedeutet, dass der Komprimierungsprozess zugunsten gleichzeitiger Commits abgebrochen wird, wenn die erzwungene Komprimierung nicht innerhalb von 1 Minute abgeschlossen wird.</p> <p>Die Dauer der erzwungenen Komprimierung hängt von folgenden Faktoren ab:</p>
     <ul>
-     <li>Hardware: insbesondere IOPS. Die Dauer verkürzt sich mit steigenden IOPS.</li>
-     <li>Segmentspeichergröße: Die Dauer steigt proportional zur Größe des Segmentspeichers.</li>
+     <li>Hardware: speziell IOPS. Die Dauer nimmt mit zunehmenden IOPS ab.</li>
+     <li>Segmentspeichergröße: Die Dauer steigt mit der Größe des Segmentspeichers.</li>
     </ul> </td>
    <td> </td>
   </tr>
   <tr>
    <td><p><strong>Wie wird die Online-Revisionsbereinigung auf einer Standby-Instanz ausgeführt?</strong></p> </td>
-   <td><p>In einem Setup mit Cold-Standby muss nur die primäre Instanz für die Ausführung der Online-Revisionsbereinigung konfiguriert sein. Auf der Standby-Instanz muss die Online-Revisionsbereinigung nicht explizit geplant werden.</p> <p>Der entsprechende Vorgang auf der Standby-Instanz ist die automatische Bereinigung; diese entspricht der Bereinigungsphase der Online-Revisionsbereinigung. Die automatische Bereinigung wird auf der Standby-Instanz im Anschluss an die Online-Revisionsbereinigung auf der primären Instanz ausgeführt.</p> <p>Auf der Standby-Instanz gibt es keine Schätzungs- und Komprimierungsphasen.</p> </td>
+   <td><p>In einem Setup mit Cold-Standby muss nur die primäre Instanz für die Ausführung der Online-Revisionsbereinigung konfiguriert sein. Auf der Standby-Instanz muss die Online-Revisionsbereinigung nicht explizit geplant werden.</p> <p>Der entsprechende Vorgang auf der Standby-Instanz ist die automatische Bereinigung; diese entspricht der Bereinigungsphase der Online-Revisionsbereinigung. Die automatische Bereinigung wird auf der Standby-Instanz ausgeführt, nachdem die Online-Revisionsbereinigung auf der primären Instanz ausgeführt wurde.</p> <p>Schätzungs- und Komprimierungsphasen werden nicht auf einer Standby-Instanz ausgeführt.</p> </td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Kann die Offline-Revisionsbereinigung mehr Speicherplatz freigeben als die Online-Revisionsbereinigung?</strong></td>
-   <td><p>Die Offline-Revisionsbereinigung kann alte Revisionen sofort entfernen, während die Online-Revisionsbereinigung alte Versionen berücksichtigen muss, die weiterhin vom Anwendungsstapel referenziert werden. Bei der Offline-Revisionsbereinigung werden alte Daten also aggressiver bereinigt; bei der Online-Revisionsbereinigung zeigt sich der Effekt nach einigen Bereinigungszyklen.</p> <p>Lesen Sie hierzu auch den Abschnitt „Ausführen der Online-Revisionsbereinigung nach der Offline-Revisionsbereinigung“ in <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">diesem Kapitel</a>.</p> </td>
+   <td><p>Bei der Offline-Revisionsbereinigung können alte Revisionen sofort entfernt werden, während bei der Online-Revisionsbereinigung alte Revisionen berücksichtigt werden müssen, auf die noch vom Anwendungsstapel verwiesen wird. Bei der Offline-Revisionsbereinigung werden alte Daten also aggressiver bereinigt, während sich bei der Online-Revisionsbereinigung der Effekt erst nach einigen Bereinigungszyklen zeigt.</p> <p>Lesen Sie hierzu auch den Abschnitt „Ausführen der Online-Revisionsbereinigung nach der Offline-Revisionsbereinigung“ in <a href="/help/sites-deploying/revision-cleanup.md#how-to-run-online-revision-cleanup">diesem Kapitel</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -430,7 +430,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Welche Daten werden einer Konsistenzprüfiung bei der Online-Revisionsbereinigung unterzogen? Wie und wann tragen sie zu den farbcodierten Statusstufen bei? </strong></td>
-   <td><p>Die Konsistenzprüfung der Revisionsbereinigung ist Teil des <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Vorgangs-Dashboards</a>.<br /> </p> <p>Der Status ist <strong>GRÜN</strong>, falls die letzte Wartungsaufgabe für die Online-Revisionsbereinigung erfolgreich abgeschlossen wurde.</p> <p>Er ist <strong>GELB</strong>, wenn die Wartungsaufgabe für die Online-Revisionsbereinigung einmal abgebrochen wurde.<br /> </p> <p>Er ist <strong>ROT</strong>, wenn die Wartungsaufgabe für die Online-Revisionsbereinigung dreimal nacheinander abgebrochen wurde. <strong>In diesem Fall ist eine manuelle Interaktion erforderlich</strong> oder die Online-Revisionsbereinigung schlägt wahrscheinlich wieder fehl. Weitere Informationen finden Sie im Abschnitt <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Fehlerbehebung</a> unten.<br /> </p> <p>Beachten Sie, dass der Status der Konsistenzprüfung nach jedem Systemneustart zurückgesetzt wird. Für eine neu gestartete Instanz wird der Status der Konsistenzprüfung der Revisionsbereinigung grün angezeigt. Sie können externe Überwachungs-Tools verwenden, um Daten über die AEM-Laufzeit hinaus aufzubewahren. In der <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">AEM-Dokumentation finden Sie Informationen zum Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungs-Tool</a>.</p> </td>
+   <td><p>Die Konsistenzprüfung der Revisionsbereinigung ist Teil des <a href="/help/sites-administering/operations-dashboard.md#health-reports" target="_blank">Vorgangs-Dashboards</a>.<br /> </p> <p>Der Status ist <strong>GRÜN</strong>, falls die letzte Wartungsaufgabe für die Online-Revisionsbereinigung erfolgreich abgeschlossen wurde.</p> <p>Er ist <strong>GELB</strong>, wenn die Wartungsaufgabe für die Online-Revisionsbereinigung einmal abgebrochen wurde.<br /> </p> <p>Er ist <strong>ROT</strong>, wenn die Wartungsaufgabe für die Online-Revisionsbereinigung dreimal nacheinander abgebrochen wurde. <strong>In diesem Fall ist eine manuelle Interaktion erforderlich</strong> oder die Online-Revisionsbereinigung schlägt wahrscheinlich wieder fehl. Weitere Informationen finden Sie im Abschnitt <a href="/help/sites-deploying/revision-cleanup.md#troubleshooting-online-revision-cleanup">Fehlerbehebung</a> unten.<br /> </p> <p>Beachten Sie, dass der Status der Konsistenzprüfung nach jedem Systemneustart zurückgesetzt wird. Bei einer neu gestarteten Instanz wird der Status bei der Konsistenzprüfung der Revisionsbereinigung als grün angezeigt. Sie können externe Überwachungs-Tools verwenden, um Daten über die AEM-Laufzeit hinaus aufzubewahren. In der <a href="/help/sites-administering/operations-dashboard.md#monitoring-with-nagios">AEM-Dokumentation finden Sie Informationen zum Anhängen von Konsistenzprüfungen an Nagios als Beispiel für ein externes Überwachungs-Tool</a>.</p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -467,15 +467,15 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Gemäß Konsistenzprüfung und Protokolleinträgen ist die Online-Revisionsbereinigung dreimal in Folge fehlgeschlagen. Was ist erforderlich, um die Online-Revisionsbereinigung erfolgreich abzuschließen?</strong></td>
-   <td>Sie können verschiedene Maßnahmen ergreifen, um das Problem zu identifizieren und zu beheben:<br /> 
+   <td>Sie können mehrere Schritte ausführen, um das Problem zu finden und zu beheben:<br />
     <ul>
-     <li>Analysieren Sie zunächst die Protokolleinträge.<br />  </li>
-     <li>Führen Sie je nach den in den Protokollen angezeigten Informationen folgende Schritte aus:
+     <li>Überprüfen Sie zunächst die Protokolleinträge.<br /> </li>
+     <li>Gehen Sie je nach den Informationen in den Protokollen wie folgt vor:
       <ul>
        <li>Falls in den Protokolldateien fünf übersprungene Komprimierungszyklen und eine Zeitüberschreitung beim <code>forceCompact</code>-Zyklus angezeigt werden, planen Sie das Wartungsfenster für einen ruhigen Zeitraum, in dem wenige Schreibvorgänge im Repository erfolgen. Sie können das Repository mit dem Überwachungs-Tool für Repository-Metriken auf Schreibvorgänge überprüfen; das Tool finden Sie unter <em>https://serveradresse:serverport/libs/granite/operations/content/monitoring/page.html</em>.</li>
-       <li>Falls die Bereinigung am Ende des Wartungsfenster angehalten wurde, überprüfen Sie auf der Benutzeroberfläche für Wartungsaufgaben, ob das Wartungsfenster ausreichend lange konfiguriert ist.</li>
-       <li>Falls der verfügbare Heap-Speicher nicht ausreicht, stellen Sie sicher, dass die Instanz genügend Speicher hat.</li>
-       <li>Im Fall einer langsamen Reaktion wächst der Segmentspeicher möglicherweise zu schnell, sodass die Online-Revisionsbereinigung auch in einem längeren Wartungsfenster nicht abgeschlossen werden kann. Falls beispielsweise die Online-Revisionsbereinigung in der letzten Woche nicht erfolgreich abgeschlossen wurde, wird empfohlen, eine Offline-Wartung zu planen und eine Offline-Revisionsbereinigung auszuführen, um die Größe des Segmentspeichers zu beschränken.</li>
+       <li>Wenn die Bereinigung am Ende des Wartungsfensters angehalten wurde, stellen Sie sicher, dass die Konfiguration des Wartungsfensters in der Benutzeroberfläche für Wartungsaufgaben ein genügend großes Zeitfenster festlegt.</li>
+       <li>Wenn der verfügbare Heap-Speicher nicht ausreicht, stellen Sie sicher, dass die Instanz über ausreichend Speicher verfügt.</li>
+       <li>Im Falle einer verspäteten Reaktion kann der Segmentspeicher zu stark anwachsen, sodass eine Online-Revisionsbereinigung selbst innerhalb eines längeren Wartungsfensters nicht abgeschlossen werden kann. Wenn beispielsweise in der letzten Woche eine Online-Revisionsbereinigung nicht erfolgreich abgeschlossen wurde, wird empfohlen, eine Offline-Wartung zu planen und die Offline-Revisionsbereinigung auszuführen, um den Segmentspeicher wieder auf eine überschaubare Größe zu bringen.</li>
       </ul> </li>
     </ul> </td>
    <td> </td>
@@ -487,15 +487,15 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Was passiert, wenn die Zeit bei der Online-Revisionsbereinigung in einem geplanten Wartungsfenster überschritten wird?</strong></td>
-   <td>Die Online-Revisionsbereinigung wird abgebrochen und Reste werden entfernt. Die Online-Revisionsbereinigung wird im nächsten geplanten Wartungsfenster neu gestartet.</td>
+   <td>Die Online-Revisionsbereinigung wird abgebrochen und die verbleibenden Elemente werden entfernt. Sie wird im nächsten geplanten Wartungsfenster erneut gestartet.</td>
    <td> </td>
   </tr>
   <tr>
    <td><strong>Was verursacht <code>SegmentNotFoundException</code>-Instanzen im <code>error.log</code>-Protokoll und wie erreiche ich eine Wiederherstellung?</strong></td>
-   <td><p><code>SegmentNotFoundException</code> wird von TarMK beim Versuch protokolliert, auf eine Speichereinheit (ein Segment) zuzugreifen, die nicht auffindbar ist. Es gibt drei Situationen, die diesen Fehler verursachen können:</p>
+   <td><p><code>SegmentNotFoundException</code> wird von TarMK beim Versuch protokolliert, auf eine Speichereinheit (ein Segment) zuzugreifen, die nicht auffindbar ist. Es gibt drei Szenarien, die dieses Problem verursachen können:</p>
     <ol>
-     <li>Eine Anwendung, die die empfohlenen Zugriffsmechanismen (wie Sling und die JCR-API) umgeht und über eine API/SPI auf niedrigerer Ebene auf das Repository zugreift und dann die Aufbewahrungsdauer für ein Segment überschreitet. Anders ausgedrückt, es wird eine Referenz auf eine Einheit für einen längeren Zeitraum als die von der Online-Revisionsbereinigung erlaubte Aufbewahrungsdauer (standardmäßig 24 Stunden) beibehalten. Dieser Fall tritt nur vorübergehend auf und führt nicht zu einer Beschädigung von Daten. Verwenden Sie für die Wiederherstellung das Tool „oak-run“, um den vorübergehenden Status der Ausnahme zu bestätigen (bei der Überprüfung mit „oak-run“ sollten keine Fehler gemeldet werden). Versetzen Sie die Instanz dazu in den Offline-Modus und starten Sie sie anschließend neu.</li>
-     <li>Ein externes Ereignis hat die Beschädigung der Daten auf der Festplatte verursacht. Hierbei kann es sich um einen Datenträgerfehler, ungenügenden Festplattenspeicher oder eine unbeabsichtigte Änderung der erforderlichen Datendateien handeln. In diesem Fall müssen Sie die Instanz in den Offline-Modus versetzen und den Fehler mithilfe der oak-run-Prüfung beheben. Weitere Informationen zum Ausführen von Prüfungen mit „oak-run“ finden Sie in der <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache-Dokumentation</a>.</li>
+     <li>Eine Anwendung, die die empfohlenen Zugriffsmechanismen (wie Sling und die JCR-API) umgeht und eine API/SPI auf niedrigerer Ebene verwendet, um auf das Repository zuzugreifen, und dann die Aufbewahrungsdauer eines Segments überschreitet. Das heißt, sie bewahrt einen Verweis auf eine Entität länger auf als die von der Online-Revisionsbereinigung erlaubte Aufbewahrungsdauer (standardmäßig 24 Stunden). Dieser Fall ist vorübergehend und führt nicht zu einer Beschädigung der Daten. Verwenden Sie für die Wiederherstellung das Tool „oak-run“, um den vorübergehenden Status der Ausnahme zu bestätigen (bei der Überprüfung mit „oak-run“ sollten keine Fehler gemeldet werden). Versetzen Sie die Instanz dazu in den Offline-Modus und starten Sie sie anschließend neu.</li>
+     <li>Ein externes Ereignis verursachte die Beschädigung der Daten auf der Festplatte. Dabei kann es sich um einen Datenträgerfehler, ungenügenden Speicherplatz oder eine versehentliche Änderung der erforderlichen Datendateien handeln. In diesem Fall muss die Instanz offline geschaltet und mithilfe der Oak-run-Prüfung repariert werden. Weitere Informationen zum Ausführen von Prüfungen mit „oak-run“ finden Sie in der <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache-Dokumentation</a>.</li>
      <li>Bei allen anderen Vorfällen wenden Sie sich an die <a href="https://helpx.adobe.com/de/marketing-cloud/contact-support.html" target="_blank">Adobe-Kundenunterstützung</a>.</li>
     </ol> </td>
    <td> </td>
@@ -574,55 +574,55 @@ Die error.log-Einträge sind ausführlich, falls es bei der Online-Revisionsbere
 
 >[!CAUTION]
 >
->Verwenden Sie eine Oak-run-Tool-Version, die eine Versionsnummer (sowohl Haupt- als auch Nebenversion) aufweist, die mit der Oak-Kernversion Ihrer AEM übereinstimmt. Wenn Ihre AEM-Instanz beispielsweise über die Oak-Core-Version 1.22.x verfügt, sollten Sie die neueste Version des Oak-run-Tools 1.22.x verwenden.
+>Verwenden Sie eine Version des Oak-run-Tools mit einer Versionsnummer (sowohl Haupt- als auch Nebenversion), die mit der Oak-Kernversion Ihrer AEM-Installation übereinstimmt. Wenn Ihre AEM-Instanz beispielsweise über die Oak-Kernversion 1.22.x verfügt, sollten Sie die neueste Version des Oak-run-Tools 1.22.x verwenden.
 
-Adobe bietet ein Tool mit dem Namen **Oak-run** , um eine Revisionsbereinigung durchzuführen. Es kann unter folgender URL heruntergeladen werden:
+Adobe stellt ein Tool namens **Oak-run** für die Ausführung von Revisionsbereinigungen bereit. Es kann unter folgender URL heruntergeladen werden:
 
 [https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/](https://repo1.maven.org/maven2/org/apache/jackrabbit/oak-run/)
 
-Bei dem Tool handelt es sich um eine ausführbare JAR-Datei, die manuell ausgeführt werden kann, um das Repository zu komprimieren. Dieser Vorgang wird als Offline-Revisionsbereinigung bezeichnet, da das Repository zum korrekten Ausführen des Tools heruntergefahren werden muss. Planen Sie die Bereinigung für das konfigurierte Wartungsfenster.
+Das Tool ist eine ausführbare JAR-Datei, die manuell ausgeführt werden kann, um das Repository zu komprimieren. Dieser Vorgang wird als Offline-Revisionsbereinigung bezeichnet, da das Repository zum korrekten Ausführen des Tools heruntergefahren werden muss. Planen Sie die Bereinigung entsprechend Ihrem Wartungsfenster.
 
 Tipps, wie Sie die Leistung des Bereinigungsvorgangs steigern können, finden Sie unter [Steigern der Leistung der Offline-Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md#increasing-the-performance-of-offline-revision-cleanup).
 
 >[!NOTE]
 >
->Vor der Wartung können Sie außerdem alte Prüfpunkte löschen (Schritte 2 und 3 unten). Dies wird nur für Instanzen empfohlen, die mehr als 100 Prüfpunkte aufweisen.
+>Sie können auch alte Checkpoints löschen, bevor die Wartung durchgeführt wird (Schritte 2 und 3 im unten beschriebenen Verfahren). Dies wird nur für Instanzen mit mehr als 100 Checkpoints empfohlen.
 
-1. Stellen Sie immer sicher, dass Sie über eine Sicherungskopie der AEM-Instanz verfügen.
+1. Stellen Sie stets sicher, dass Sie über eine aktuelle Sicherung der AEM-Instanz verfügen.
 
    Fahren Sie AEM herunter.
 
-1. (Optional) Verwenden Sie das Tool, um alte Prüfpunkte zu finden:
+1. (Optional) Verwenden Sie das Tool, um alte Checkpoints zu finden:
 
    ```xml
    java -jar oak-run.jar checkpoints install-folder/crx-quickstart/repository/segmentstore
    ```
 
-1. (Optional) Löschen Sie die nicht referenzierten Prüfpunkte:
+1. (Optional) Löschen Sie dann die nicht referenzierten Checkpoints:
 
    ```xml
    java -jar oak-run.jar checkpoints install-folder/crx-quickstart/repository/segmentstore rm-unreferenced
    ```
 
-1. Führen Sie die Komprimierung aus und warten Sie, bis diese abgeschlossen ist:
+1. Führen Sie die Komprimierung aus und warten Sie, bis sie abgeschlossen ist:
 
    ```xml
    java -jar -Dsun.arch.data.model=32 oak-run.jar compact install-folder/crx-quickstart/repository/segmentstore
    ```
 
-### Steigern der Leistung der Offline-Revisionsbereinigung {#increasing-the-performance-of-offline-revision-cleanup}
+### Erhöhen der Leistung der Offline-Revisionsbereinigung {#increasing-the-performance-of-offline-revision-cleanup}
 
-Das Oak-run-Tool beinhaltet diverse Funktionen, die die Leistung der Revisionsbereinigung steigern und das Wartungsfenster so weit wie möglich verkleinern.
+Das Oak-run-Tool führt mehrere Funktionen ein, die die Leistung des Revisionsbereinigungsprozesses steigern und das Wartungsfenster so weit wie möglich minimieren sollen.
 
-Die Liste enthält einige Befehlszeilenparameter, wie im Folgenden beschrieben:
+Die Liste enthält mehrere Befehlszeilenparameter, wie unten beschrieben:
 
-* **-mmap.** Sie können für diese Option „true“ oder „false“ festlegen. Wenn „true“ festgelegt ist, wird der Zugriff mit Speicherzuordnung verwendet. Wenn „false“ festgelegt ist, wird der Dateizugriff verwendet. Wenn kein Wert festgelegt ist, wird auf 64-Bit-Systemen der Zugriff mit Speicherzuordnung und auf 32-Bit-Systemen der Dateizugriff verwendet. Unter Windows wird immer der reguläre Dateizugriff erzwungen, weshalb diese Option ignoriert wird. **Dieser Parameter ersetzt den Parameter -Dtar.memoryMapped.**
+* **-mmap.** Sie können für diese Option „true“ oder „false“ festlegen. Wenn dies auf „true“ festgelegt ist, wird der Zugriff mit Speicherzuordnung verwendet. Wenn dies auf „false“ festgelegt ist, wird der Dateizugriff verwendet. Wenn kein Wert angegeben ist, wird auf 64-Bit-Systemen der Zugriff mit Speicherzuordnung und auf 32-Bit-Systemen der Dateizugriff verwendet. Unter Windows wird immer der reguläre Dateizugriff erzwungen, sodass diese Option ignoriert wird. **Dieser Parameter ersetzt den Parameter -Dtar.memoryMapped.**
 
-* **-Dupdate.limit**. Definiert den Schwellenwert für das Löschen temporärer Transaktionen auf der Festplatte. Der Standardwert ist 10.000.
+* **-Dupdate.limit**. Definiert den Schwellenwert für das Leeren einer temporären Transaktion auf die Festplatte. Der Standardwert ist 10.000.
 
-* **-Dcompress-interval**. Anzahl der Komprimierungszuordnungseinträge, die bis zur Komprimierung der aktuellen Zuordnung beibehalten werden. Der Standardwert ist 1.000.000. Sie sollten für diesen Wert eine noch höhere Zahl festlegen, um einen schnelleren Durchsatz zu erzielen, falls nicht genügend Heap-Speicher vorhanden ist. **Dieser Parameter wurde in der Oak-Version 1.6 entfernt und hat keine Auswirkung.**
+* **-Dcompress-interval**. Anzahl der Komprimierungszuordnungseinträge, die bis zum Komprimieren der aktuellen Zuordnung beibehalten werden sollen. Der Standardwert ist 1.000.000. Sie sollten diesen Wert auf eine noch höhere Zahl erhöhen, um einen schnelleren Durchsatz zu erzielen, wenn ausreichend Heap-Speicher verfügbar ist. **Dieser Parameter wurde in der Oak-Version 1.6 entfernt und hat keine Auswirkung.**
 
-* **-Dcompaction-progress-log**. Die Anzahl der komprimierten Knoten, die protokolliert werden. Der Standardwert ist 150.000, d. h., die ersten 150.000 komprimierten Knoten werden bei einem Vorgang protokolliert. Verwenden Sie diese Option zusammen mit dem im Folgenden erläuterten Parameter.
+* **-Dcompaction-progress-log**. Die Anzahl der komprimierten Knoten, die protokolliert werden. Der Standardwert ist 150.000, d. h., die ersten 150.000 komprimierten Knoten werden bei einem Vorgang protokolliert. Verwenden Sie dies in Verbindung mit dem nächsten Parameter, der im Folgenden dokumentiert ist.
 
 * **-Dtar.PersistCompactionMap.** Legen Sie für diesen Parameter „true“ fest, um Festplattenspeicher statt Heap-Speicher für eine persistente Komprimierungszuordnung zu verwenden. Erfordert **Version 1.4** und höher des Tools „oak-run“. Weitere Informationen finden Sie unter Frage 3 im Abschnitt [Häufig gestellte Fragen zur Offline-Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md#offline-revision-cleanup-frequently-asked-questions). **Dieser Parameter wurde in der Oak-Version 1.6 entfernt und hat keine Auswirkung.** 
 
@@ -630,17 +630,17 @@ Die Liste enthält einige Befehlszeilenparameter, wie im Folgenden beschrieben:
 
 >[!CAUTION]
 >
->Mit dem Parameter `--force` wird der Segmentspeicher auf die neueste Version aktualisiert, die nicht mit älteren Oak-Versionen kompatibel ist. Beachten Sie außerdem, dass kein Downgrade möglich ist. Generell sollten Sie diese Parameter vorsichtig verwenden und nur, wenn Sie wirklich wissen, wie sie verwendet werden.
+>Mit dem Parameter `--force` wird der Segmentspeicher auf die neueste Version aktualisiert, die nicht mit älteren Oak-Versionen kompatibel ist. Beachten Sie auch, dass kein Downgrade möglich ist. In der Regel sollten Sie diese Parameter mit Vorsicht verwenden und sie nur nutzen, wenn Sie sich mit ihrer Verwendung auskennen.
 
-Ein Beispiel der verwendeten Parameter:
+Ein Beispiel für die verwendeten Parameter:
 
 ```xml
 java -Dupdate.limit=10000 -Dcompaction-progress-log=150000 -Dlogback.configurationFile=logback.xml -Xmx8g -jar oak-run-*.jar checkpoints <repository>
 ```
 
-### Zusätzliche Methoden zum Auslösen der Revisions-Bereinigung {#additional-methods-of-triggering-revision-cleanup}
+### Zusätzliche Methoden zum Auslösen der Revisionsbereinigung {#additional-methods-of-triggering-revision-cleanup}
 
-Zusätzlich zu den oben genannten Methoden können Sie die Revisionsbereinigung auch wie folgt über die JMX-Konsole auslösen:
+Zusätzlich zu den oben beschriebenen Methoden können Sie den Revisionsbereinigungsmechanismus auch wie folgt mithilfe der JMX-Konsole auslösen:
 
 1. Öffnen Sie die JMX-Konsole, indem Sie zu [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx) wechseln.
 1. Klicken Sie auf MBean **RevisionGarbageCollection**.
@@ -658,7 +658,7 @@ Zusätzlich zu den oben genannten Methoden können Sie die Revisionsbereinigung 
    <td><strong>Was ist der Unterschied zwischen einer Revision und einer Seitenversion?</strong></td>
    <td>
     <ul>
-     <li><strong>Oak-Revision:</strong> Oak organisiert den gesamten Inhalt in einer großen Baumstruktur, die aus Knoten und Eigenschaften besteht. Jede Momentaufnahme bzw. jede Revision dieser Inhaltsstruktur ist unveränderlich; Änderungen der Struktur werden als eine Reihe neuer Revisionen ausgedrückt. In der Regel wird durch jede Inhaltsänderung eine neue Revision ausgelöst. Siehe auch <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank">Link folgen</a>.</li>
+     <li><strong>Oak-Revision:</strong> Oak organisiert den gesamten Inhalt in einer großen Baumstruktur, die aus Knoten und Eigenschaften besteht. Jeder Schnappschuss oder jede Revision dieser Inhaltsstruktur ist unveränderlich, und Änderungen an der Baumstruktur werden als eine Abfolge neuer Revisionen ausgedrückt. Normalerweise wird bei jeder Inhaltsänderung eine neue Revision ausgelöst. Siehe auch <a href="https://jackrabbit.apache.org/dev/ngp.html" target="_blank">Link folgen</a>.</li>
      <li><strong>Seitenversion:</strong> Durch die Versionierung wird eine „Momentaufnahme“ einer Seite zu einem bestimmten Zeitpunkt festgehalten. In der Regel wird eine neue Version erstellt, wenn eine Seite aktiviert ist. Weitere Informationen finden Sie unter <a href="/help/sites-authoring/working-with-page-versions.md" target="_blank">Arbeiten mit Seitenversionen</a>.</li>
     </ul> </td>
   </tr>
