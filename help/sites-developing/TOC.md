@@ -141,7 +141,7 @@ ht-degree: 99%
       + [Inhaltsfragment-GraphQL-API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
       + [Verwalten von GraphQL-Endpunkten](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
       + [Verwenden der GraphiQL-IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
-      + [Beständige Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [Persistierte Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md)
       + [Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [AEM-GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und Abfragen](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + Hybride und SPA-Entwicklung mit AEM{#spas}

@@ -9,7 +9,7 @@ user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digi
 source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
 workflow-type: tm+mt
 source-wordcount: '723'
-ht-degree: 93%
+ht-degree: 94%
 
 ---
 
@@ -39,7 +39,7 @@ ht-degree: 93%
    + [Newsletter-Archiv von Experience League](dynamic-media-newsletter.md)
    + [Einrichten von Dynamic Media](administering-dynamic-media.md)
    + [Arbeiten mit Dynamic Media](dynamic-media.md)
-   + [Konfigurieren von Dynamic Media   – Scene7-Modus](config-dms7.md)
+   + [Konfigurieren von Dynamic Media  – Scene7-Modus](config-dms7.md)
    + [Optional – Konfigurieren des Dynamic Media-Scene7-Modus, Allgemeine Einstellungen](dm-general-settings.md)
    + [Optional – Konfigurieren des Dynamic Media-Scene7-Modus, Veröffentlichungseinstellungen](dm-publish-settings.md)
    + [Konfigurieren des Dynamic Media-Scene7-Modus](troubleshoot-dms7.md)
@@ -67,7 +67,7 @@ ht-degree: 93%
    + [Panoramabilder](panoramic-images.md)
    + [Sets mit gemischten Medien](mixed-media-sets.md)
    + [Rotationssets](spin-sets.md)
-   + [Video    in Dynamic Media](video.md)
+   + [Video  in Dynamic Media](video.md)
    + [Karussellbanner](carousel-banners.md)
    + [Interaktive Bilder](interactive-images.md)
    + [Interaktive Videos](interactive-videos.md)
@@ -98,7 +98,7 @@ ht-degree: 93%
    + [Unterstützung von Inhaltsfragmenten in der  [!DNL Assets] -HTTP-API](assets-api-content-fragments.md)
    + [GraphQL-API für Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html)
    + [Verwenden der GraphiQL-IDE](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html)
-   + [Beständige Abfragen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html)
+   + [Persistierte Abfragen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html)
    + [Authentifizierung für GraphQL-Remote-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
    + [GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und Abfragen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/content-fragments-graphql-samples.html)
    + [[!DNL Assets]-Proxy-Entwicklung](proxy.md)

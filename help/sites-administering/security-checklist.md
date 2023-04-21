@@ -15,7 +15,7 @@ feature: Security
 source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
 workflow-type: tm+mt
 source-wordcount: '3025'
-ht-degree: 30%
+ht-degree: 53%
 
 ---
 
@@ -31,9 +31,9 @@ Dieser Abschnitt behandelt die verschiedenen Schritte, mit denen Sie sicherstell
 >
 >Es gibt einige zusätzliche [Sicherheitsüberlegungen](/help/sites-developing/dev-guidelines-bestpractices.md#security-considerations), die in der Entwicklungsphase berücksichtig werden müssen.
 
-## Wichtigste Sicherheitsmaßnahmen {#main-security-measures}
+## Hauptsicherheitsmaßnahmen {#main-security-measures}
 
-### AEM im produktionsbereiten Modus ausführen {#run-aem-in-production-ready-mode}
+### Ausführen von AEM im produktionsbereiten Modus {#run-aem-in-production-ready-mode}
 
 Weitere Informationen finden Sie unter [Ausführen von AEM im produktionsbereiten Modus](/help/sites-administering/production-ready.md).
 
@@ -47,9 +47,9 @@ Die Aktivierung der HTTPS-Transportschicht (Transport Layer) in den Autoren- und
 
 ### Installieren von Sicherheits-Hotfixes {#install-security-hotfixes}
 
-Vergewissern Sie sich, dass Sie die neueste Version installiert haben [Von Adobe bereitgestellte Sicherheits-Hotfixes](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de).
+Vergewissern Sie sich, dass Sie die neuesten [von Adobe bereitgestellten Sicherheits-Hotfixes](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de) installiert haben.
 
-### Standardkennwörter für AEM und OSGi Console Admin-Konten ändern {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Ändern von Standardkennwörtern für AEM- und OSGi Console-Administratorkonten {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
 Adobe empfiehlt nach der Installation, das Kennwort für die berechtigten [**AEM** `admin` Konten](#changing-the-aem-admin-password) (in allen Fällen).
 
@@ -65,22 +65,22 @@ Diese Konten beinhalten:
 
 Diese beiden Konten nutzen separate Kontoanmeldeinformationen und die Verwendung von unterschiedlichen sicheren Passwörtern für jedes Konto ist für eine sichere Bereitstellung von entscheidender Bedeutung.
 
-#### Ändern des AEM Administratorkennworts {#changing-the-aem-admin-password}
+#### Ändern des AEM-Administratorkennworts {#changing-the-aem-admin-password}
 
-Das Kennwort für das AEM Administratorkonto kann über die [Granite-Vorgänge - Benutzer](/help/sites-administering/granite-user-group-admin.md) Konsole.
+Das Kennwort für das AEM-Administratorkonto kann über die Konsole für [Granite-Vorgänge – Benutzer](/help/sites-administering/granite-user-group-admin.md) geändert werden.
 
 Dort können Sie das `admin`-Konto bearbeiten und [das Kennwort ändern](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user).
 
 >[!NOTE]
 >
->Durch das Ändern des Admin-Kontos wird auch das OSGi-Web-Konsolenkonto geändert. Nachdem Sie das Administratorkonto geändert haben, sollten Sie das OSGi-Konto in etwas Anderes ändern.
+>Durch das Ändern des Administratorkontos wird auch das OSGi-Web-Konsolenkonto geändert. Nachdem Sie das Administratorkonto geändert haben, sollten Sie das OSGi-Konto in etwas Anderes ändern.
 
 #### Bedeutung der Änderung des Kennworts für die OSGi-Web-Konsole {#importance-of-changing-the-osgi-web-console-password}
 
 Unabhängig vom `admin`-Konto von AEM kann eine Nichtänderung des Standardkennworts für die OSGi-Web-Konsole dazu führen, dass:
 
-* Verfügbarkeit des Servers mit einem Standardkennwort beim Start und beim Herunterfahren (das bei großen Servern Minuten dauern kann);
-* Exposition des Servers, wenn das Repository heruntergefahren/neu gestartet wird - und OSGi ausgeführt wird.
+* Offenlegung des Servers mit einem Standardkennwort beim Start und beim Herunterfahren (was bei großen Servern mehrere Minuten dauern kann);
+* Offenlegung des Servers, wenn das Repository heruntergefahren/ein Bundle neu gestartet wird – und OSGi ausgeführt wird.
 
 Weitere Informationen zum Ändern des Kennworts für die Web-Konsole finden Sie unter [Ändern des Administratorkennworts der OSGi-Web-Konsole](/help/sites-administering/security-checklist.md#changing-the-osgi-web-console-admin-password) unten.
 
@@ -88,8 +88,8 @@ Weitere Informationen zum Ändern des Kennworts für die Web-Konsole finden Sie 
 
 Ändern Sie das Kennwort für den Zugriff auf die Webkonsole. Verwenden Sie eine [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) , um die folgenden Eigenschaften der **Apache Felix OSGi Management Console**:
 
-* **Benutzername** und **Kennwort**: die Anmeldedaten für den Zugriff auf die Apache Felix Web Management Console.
-Das Kennwort muss geändert werden *after* die Erstinstallation, um die Sicherheit Ihrer Instanz sicherzustellen.
+* **Benutzername** und **Kennwort**: die Anmeldeinformationen für den Zugriff auf die Apache Felix Web Management Console.
+Das Kennwort muss *nach* der ersten Installation geändert werden, damit die Sicherheit Ihrer Instanz gewährleistet ist.
 
 >[!NOTE]
 >
@@ -97,16 +97,15 @@ Das Kennwort muss geändert werden *after* die Erstinstallation, um die Sicherhe
 
 **So ändern Sie das Administratorkennwort der OSGi-Web-Konsole**:
 
-1. Verwenden der **Instrumente**, **Aktivitäten** öffnen Sie das Menü **Web-Konsole** und navigieren Sie zum **Konfiguration** Abschnitt.
-Beispiel: unter `<server>:<port>/system/console/configMgr`.
-1. Navigieren Sie zum Eintrag für und öffnen Sie ihn. **Apache Felix OSGi Management Console**.
-1. Ändern Sie die **Benutzername** und **password**.
+1. Öffnen Sie über das Menü **Tools**, **Vorgänge** die **Web-Konsole** und navigieren Sie zum Abschnitt **Konfiguration**. Zum Beispiel unter `<server>:<port>/system/console/configMgr`.
+1. Navigieren Sie zum Eintrag für die **Management-Konsole für Apache Felix OSGi** und öffnen Sie ihn.
+1. Ändern Sie den **Benutzernamen** und das **Kennwort**.
 
    ![chlimage_1-3](assets/chlimage_1-3.png)
 
 1. Wählen Sie **Speichern** aus.
 
-### Benutzerdefinierten Fehler-Handler implementieren {#implement-custom-error-handler}
+### Implementieren eines benutzerdefinierten Fehler-Handlers {#implement-custom-error-handler}
 
 Adobe empfiehlt die Definition benutzerdefinierter Fehler-Handler-Seiten, insbesondere für 404- und 500-HTTP-Antwortcodes, um die Offenlegung von Informationen zu verhindern.
 
@@ -114,35 +113,35 @@ Adobe empfiehlt die Definition benutzerdefinierter Fehler-Handler-Seiten, insbes
 >
 >Siehe [Wie kann ich benutzerdefinierte Skripte oder Fehler-Handler erstellen?](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/implementing/developing/full-stack/custom-error-page.html?lang=en) für weitere Details.
 
-### Vollständige Dispatcher-Sicherheitscheckliste {#complete-dispatcher-security-checklist}
+### Vollständige Dispatcher-Sicherheits-Checkliste {#complete-dispatcher-security-checklist}
 
 AEM Dispatcher ist ein wichtiger Teil Ihrer Infrastruktur. Adobe empfiehlt, die [Dispatcher-Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en).
 
 >[!CAUTION]
 >
->Mithilfe des Dispatchers müssen Sie den &quot;.form&quot;-Selektor deaktivieren.
+>Mithilfe des Dispatchers müssen Sie den „.form“-Selektor deaktivieren.
 
 ## Überprüfungsschritte {#verification-steps}
 
-### Konfigurieren von Replikations- und Transportbenutzern {#configure-replication-and-transport-users}
+### Konfigurieren von Replikations- und Transport-Benutzenden {#configure-replication-and-transport-users}
 
-Bei einer Standardinstallation von AEM wird `admin` als Benutzer für die Transport-Anmeldedaten in den Standard-[Replikationsagenten](/help/sites-deploying/replication.md) angegeben. Außerdem wird der Admin-Benutzer verwendet, um die Replikation auf dem Autorensystem zu beziehen.
+Bei einer Standardinstallation von AEM wird `admin` als Benutzer für die Transport-Anmeldedaten in den Standard-[Replikationsagenten](/help/sites-deploying/replication.md) angegeben. Außerdem werden Admin-Benutzende verwendet, um die Replikation auf dem Autorensystem zu beziehen.
 
 Aus Sicherheitsgründen sollten beide geändert werden, um dem jeweiligen Anwendungsfall Rechnung zu tragen, wobei die beiden folgenden Aspekte zu berücksichtigen sind:
 
-* Die **Transportnutzer** darf nicht der Administratorbenutzer sein. Richten Sie stattdessen einen Benutzer im Veröffentlichungssystem ein, der nur über Zugriffsrechte auf die relevanten Teile des Veröffentlichungssystems verfügt, und verwenden Sie die Anmeldeinformationen dieses Benutzers für den Transport.
+* Die **Transportnutzer** darf nicht der Administratorbenutzer sein. Richten Sie stattdessen einen Benutzer im Veröffentlichungssystem ein, der nur über Zugriffsrechte für die relevanten Teile des Veröffentlichungssystems verfügt, und verwenden Sie die Anmeldeinformationen dieses Benutzers für den Transport.
 
      Sie können mit dem gebündelten Benutzer „Replikations-Empfänger“ beginnen und die Zugriffsrechte dieses Benutzenden so konfigurieren, dass sie Ihren Anforderungen entsprechen.
 
 * Die **Replikationsbenutzer** oder **Agenten-Benutzer-ID** darf auch nicht der Admin-Benutzer sein, sondern ein Benutzer, der nur replizierte Inhalte sehen kann. Der Replikationsbenutzende wird auch zum Erfassen von Inhalten verwendet, die auf dem Autorensystem repliziert werden sollen, bevor sie an den Publisher gesendet werden.
 
-### Überprüfen der Sicherheits-Konsistenzprüfungen im Vorgangs-Dashboard {#check-the-operations-dashboard-security-health-checks}
+### Überprüfen der Sicherheitskonsistenzprüfungen im Vorgangs-Dashboard {#check-the-operations-dashboard-security-health-checks}
 
-Mit AEM 6 wird das neue Vorgangs-Dashboard eingeführt, das Systembetreibern bei der Fehlerbehebung und der Überwachung des Zustands einer Instanz helfen soll.
+Mit AEM 6 wird das neue Vorgangs-Dashboard eingeführt, das Systembetreibenden bei der Fehlerbehebung und der Überwachung des Status einer Instanz helfen soll.
 
-Das Dashboard enthält außerdem eine Sammlung von Konsistenzprüfungen. Es wird empfohlen, den Status aller Sicherheits-Konsistenzprüfungen zu überprüfen, bevor Sie mit Ihrer Produktionsinstanz live gehen. Weitere Informationen dazu finden Sie in der [Dokumentation zum Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
+Das Dashboard enthält außerdem eine Sammlung von Sicherheitskonsistenzprüfungen. Es wird empfohlen, den Status aller Sicherheitskonsistenzprüfungen zu überprüfen, bevor Sie mit Ihrer Produktionsinstanz live gehen. Weitere Informationen dazu finden Sie in der [Dokumentation zum Vorgangs-Dashboard](/help/sites-administering/operations-dashboard.md).
 
-### Überprüfen, ob Beispielinhalt vorhanden ist {#check-if-example-content-is-present}
+### Überprüfen, ob Beispielinhalte vorhanden sind {#check-if-example-content-is-present}
 
 Alle Beispielinhalte und -benutzer (z. B. das Geometrixx und seine Komponenten) sollten deinstalliert und vollständig auf einem Produktionssystem gelöscht werden, bevor sie öffentlich zugänglich gemacht werden.
 
@@ -152,21 +151,21 @@ Alle Beispielinhalte und -benutzer (z. B. das Geometrixx und seine Komponenten) 
 
 Siehe [Arbeiten mit Paketen](package-manager.md).
 
-### Überprüfen Sie, ob die CRX-Entwicklungs-Bundles vorhanden sind. {#check-if-the-crx-development-bundles-are-present}
+### Überprüfen, ob die CRX-Entwicklungs-Bundles vorhanden sind {#check-if-the-crx-development-bundles-are-present}
 
-Diese Entwicklungs-OSGi-Pakete sollten sowohl auf Autoren- als auch auf Veröffentlichungs-Produktionssystemen deinstalliert werden, bevor sie verfügbar gemacht werden.
+Diese Entwicklungs-OSGi-Bundles sollten sowohl auf Autoren- als auch auf Veröffentlichungs-Produktionssystemen deinstalliert werden, bevor diese verfügbar gemacht werden.
 
 * Adobe CRXDE-Unterstützung (com.adobe.granite.crxde-support)
-* Adobe Granite CRX Explorer (com.adobe.granite.crx-explorer)
-* Adobe Granite-CRXDE Lite (com.adobe.granite.crxde-lite)
+* Adobe Granite CRX-Explorer (com.adobe.granite.crx-explorer)
+* Adobe Granite CRXDE Lite (com.adobe.granite.crxde-lite)
 
-### Überprüfen Sie, ob das Sling-Entwicklungsbundle vorhanden ist. {#check-if-the-sling-development-bundle-is-present}
+### Überprüfen, ob das Sling-Entwicklungs-Bundle vorhanden ist {#check-if-the-sling-development-bundle-is-present}
 
 Die [AEM Developer Tools](/help/sites-developing/aem-eclipse.md) stellen Sie die Installation der Apache Sling Tooling-Unterstützung bereit (org.apache.sling.tooling.support.install).
 
 Dieses OSGi-Bundle sollte sowohl auf Autoren- als auch auf Veröffentlichungs-Produktionssystemen deinstalliert werden, bevor sie verfügbar gemacht werden.
 
-### Protect gegen Cross-Site Request Forgery {#protect-against-cross-site-request-forgery}
+### Schutz vor Cross-Site Request-Forgery {#protect-against-cross-site-request-forgery}
 
 #### Das CSRF Protection Framework {#the-csrf-protection-framework}
 
@@ -227,14 +226,14 @@ Für jeden der folgenden Dienste müssen die angegebenen Einstellungen geändert
 
 * [Adobe Granite HTML Library Manager](/help/sites-deploying/osgi-configuration-settings.md#day-cq-html-library-manager):
 
-   * enable **Minimieren** (um CRLF- und Leerzeichen zu entfernen).
-   * enable **Gzip** (damit Dateien komprimiert und mit einer Anfrage aufgerufen werden können).
-   * disable **Debuggen**
-   * disable **Zeit**
+   * Aktivieren Sie **Minimieren** (um CRLF- und Leerzeichen zu entfernen).
+   * Aktivieren Sie **gzip** (damit Dateien ins gzip-Format komprimiert und mit einer Anfrage aufgerufen werden können).
+   * Deaktivieren Sie **Debuggen**.
+   * Deaktivieren Sie **Zeitplanung**.
 
 * [Day CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md#day-cq-wcm-debug-filter):
 
-   * uncheck **Aktivieren**
+   * Entfernen Sie den Haken bei **Aktivieren**.
 
 * [Day CQ WCM-Filter](/help/sites-deploying/osgi-configuration-settings.md):
 
@@ -255,7 +254,7 @@ Beim Arbeiten mit AEM gibt es mehrere Methoden zum Verwalten der Konfigurationse
 
 ## Weitere Informationen {#further-readings}
 
-### Vermeiden von DoS-Angriffen (Denial of Service) {#mitigate-denial-of-service-dos-attacks}
+### Vermeiden von Denial-of-Service (DoS)-Angriffen {#mitigate-denial-of-service-dos-attacks}
 
 Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computer-Ressource für die vorgesehenen Benutzenden unzugänglich zu machen. Dieser Angriff erfolgt oft durch Überlastung der Ressource. Beispiel:
 
@@ -278,7 +277,7 @@ Es gibt viele Konfigurationsmöglichkeiten, um solche Angriffe zu verhindern, ab
 
 **Konfigurieren von Sling zum Verhindern von DoS**
 
-Sling ist *content-centric*. Die Verarbeitung konzentriert sich auf den Inhalt, da jede (HTTP-)Anforderung in Form einer JCR-Ressource (eines Repository-Knotens) Inhalten zugeordnet wird:
+Sling ist *inhaltzentriert*. Die Verarbeitung konzentriert sich auf den Inhalt, da jede (HTTP-)Anforderung in Form einer JCR-Ressource (eines Repository-Knotens) Inhalten zugeordnet wird:
 
 * Das erste Ziel ist die Ressource (JCR-Knoten), die den Inhalt enthält.
 * Zweitens befindet sich der Renderer bzw. das Skript in den Ressourceneigenschaften mit bestimmten Teilen der Anforderung (z. B. Selektoren und/oder die Erweiterung).
@@ -291,10 +290,10 @@ Um DoS-Missbrauch zu verhindern, können Sie Folgendes tun:
 
 1. Einbinden von Steuerelementen auf Anwendungsebene. Aufgrund der möglichen Anzahl von Varianten ist eine Standardkonfiguration nicht möglich.
 
-   In Ihrer Anwendung sollten Sie:
+   In Ihrem Programm sollten Sie Folgendes tun:
 
    * die Selektoren in der Anwendung steuern, sodass Sie *nur* die erforderlichen expliziten Selektoren verwenden und für alle anderen den Wert `404` zurückgeben.
-   * Verhindern der Ausgabe einer unbegrenzten Anzahl von Inhaltsknoten.
+   * Verhindern Sie die Ausgabe einer unbegrenzten Anzahl von Inhaltsknoten.
 
 1. Überprüfen Sie die Konfiguration der Standard-Renderer, was ein Problembereich sein kann.
 
@@ -336,17 +335,17 @@ Um dieses Problem zu beheben, können Sie die folgenden Schritte ausführen:
 
 1. Klicken Sie auf **Speichern**.
 
-**Abmildern von DoS durch Asset Download Servlet**
+**Schützen gegen durch Asset-Download-Servlets ausgelöste DoS**
 
 Das standardmäßige Asset-Download-Servlet ermöglicht es authentifizierten Benutzern, beliebig große, gleichzeitige Download-Anfragen zum Erstellen von ZIP-Dateien von Assets zu stellen. Das Erstellen großer ZIP-Archive kann den Server und das Netzwerk überlasten. Um ein mögliches DoS-Risiko (Denial of Service) zu reduzieren, das durch dieses Verhalten verursacht wird, `AssetDownloadServlet`ist die OSGi-Komponente auf der [!DNL Experience Manager]-Veröffentlichungsinstanz standardmäßig deaktiviert. Auf der [!DNL Experience Manager]-Autoreninstanz ist sie standardmäßig aktiviert.
 
 Wenn Sie die Download-Funktion nicht benötigen, deaktivieren Sie das Servlet in Autoren- und Veröffentlichungsbereitstellungen. Wenn Sie die Asset-Download-Funktion im Rahmen Ihrer Einrichtung aktivieren müssen, finden Sie weitere Informationen in [diesem Artikel](/help/assets/download-assets-from-aem.md). Sie können auch eine maximale Download-Grenze definieren, die Ihre Bereitstellung unterstützen kann.
 
-### WebDAV deaktivieren {#disable-webdav}
+### Deaktivieren von WebDAV {#disable-webdav}
 
 Deaktivieren Sie WebDAV sowohl in der Autoren- als auch in der Veröffentlichungsumgebung, indem Sie die entsprechenden OSGi-Bundles anhalten.
 
-1. Stellen Sie eine Verbindung zum **Felix Management Console** ausgeführt auf:
+1. Stellen Sie eine Verbindung zur **Felix-Management-Konsole** her, ausgeführt unter:
 
    `https://<*host*>:<*port*>/system/console`
 
@@ -376,7 +375,7 @@ Ab AEM 6.1 ändert sich mit der neuen Implementierung der Schnittstelle `Author
 
 Es muss keine Konfiguration vorgenommen werden, um sie zu aktivieren, da sie jetzt die Standardmethode zum Generieren autorisierbarer IDs in AEM ist.
 
-Obwohl dies nicht empfohlen wird, können Sie es deaktivieren, falls Sie die alte Implementierung aus Gründen der Abwärtskompatibilität mit Ihren vorhandenen Anwendungen benötigen. Gehen Sie dazu wie folgt vor:
+Obwohl es nicht empfohlen wird, können Sie dies deaktivieren, falls Sie die alte Implementierung aus Gründen der Abwärtskompatibilität mit Ihren vorhandenen Anwendungen benötigen. Gehen Sie dazu wie folgt vor:
 
 1. Navigieren Sie zur Web-Konsole und entfernen Sie den Eintrag **org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** aus der Eigenschaft **requiredServicePids** in **Apache Jackrabbit Oak SecurityProvider**.
 
@@ -414,17 +413,17 @@ Um Clickjacking zu verhindern, empfiehlt Adobe, dass Sie Ihren Webserver so konf
 
 Weitere Informationen zu Clickjacking finden Sie unter [OWASP-Site](https://www.owasp.org/index.php/Clickjacking).
 
-### Vergewissern Sie sich bei Bedarf, dass Sie Verschlüsselungsschlüssel ordnungsgemäß replizieren. {#make-sure-you-properly-replicate-encryption-keys-when-needed}
+### Achten Sie bei Bedarf darauf, dass Verschlüsselungsschlüssel ordnungsgemäß repliziert werden. {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
-Bestimmte AEM Funktionen und Authentifizierungsschemas erfordern, dass Sie Ihre Verschlüsselungsschlüssel über alle AEM Instanzen hinweg replizieren.
+Bestimmte AEM-Funktionen und Authentifizierungsschemata erfordern, dass Sie Ihre Verschlüsselungsschlüssel über alle AEM-Instanzen hinweg replizieren.
 
 Bevor Sie dies tun, erfolgt die Schlüsselreplikation in verschiedenen Versionen unterschiedlich, da die Art und Weise, wie Schlüssel gespeichert werden, zwischen 6.3 und älteren Versionen unterschiedlich ist.
 
-Weitere Informationen finden Sie unten.
+Nachfolgenden finden Sie weitere Informationen.
 
 #### Replizieren von Schlüsseln für AEM 6.3 {#replicating-keys-for-aem}
 
-Während in älteren Versionen die Replikationsschlüssel im Repository gespeichert wurden, ab AEM 6.3 werden sie im Dateisystem gespeichert.
+Während in älteren Versionen die Replikationsschlüssel im Repository gespeichert wurden, werden sie ab AEM 6.3 im Dateisystem gespeichert.
 
 Um Ihre Schlüssel über Instanzen hinweg zu replizieren, kopieren Sie sie daher von der Quellinstanz an den Speicherort der Zielinstanzen im Dateisystem.
 
@@ -441,7 +440,7 @@ Im Einzelnen müssen Sie Folgendes tun:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-1. Kopieren Sie die HMAC- und Übergeordneten Dateien.
+1. die HMAC- und Master-Dateien kopieren.
 1. Navigieren Sie dann zur Zielinstanz, auf der Sie den HMAC-Schlüssel duplizieren möchten, und dann zum Ordner „data“. Beispiel:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
@@ -464,8 +463,8 @@ Die empfohlene Methode zur sicheren Replikation der Schlüssel in allen Ihren In
 
 1. Öffnen von CRXDE Lite über *`https://&lt;serveraddress&gt;:4502/crx/de/index.jsp`*
 1. Wählen Sie den `/etc/key`-Knoten aus.
-1. Navigieren Sie zu **Replikation** Registerkarte.
-1. Drücken Sie die **Replikation** Schaltfläche.
+1. Wechseln Sie zur Registerkarte **Replikation**.
+1. Klicken Sie auf die Schaltfläche **Replikation**.
 
 ### Durchführen eines Penetrationstests {#perform-a-penetration-test}
 

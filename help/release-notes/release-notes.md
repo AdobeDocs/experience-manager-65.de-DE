@@ -2,10 +2,11 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+exl-id: fc7d3727-7cd4-47a4-8e75-840f9f9c0e62
+source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
 workflow-type: tm+mt
 source-wordcount: '2986'
-ht-degree: 39%
+ht-degree: 85%
 
 ---
 
@@ -20,7 +21,7 @@ ht-degree: 39%
 | Version | 6.5.16.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Typ | Service Pack-Version |
 | Datum | Donnerstag, 23. Februar 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
-| Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?pack[..]be/packages/cq650/servicepack/aem-service-pkg-6.5.16.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Download-URL | [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?pack[...]be/packages/cq650/servicepack/aem-service-pkg-6.5.16.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
 ## Was in [!DNL Experience Manager] 6.5.16.0 enthalten ist {#what-is-included-in-aem-6516}
 
@@ -30,12 +31,12 @@ ht-degree: 39%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
-Eine wesentliche Verbesserung in Dynamic Media ist die folgende:
+Folgendes ist eine wesentliche Verbesserung in Dynamic Media:
 
-Neue Protokoll-DASH-Unterstützung (dynamisches adaptives Streaming über HTTP) für adaptives Bitratenstreaming in Dynamic Media-Videobereitstellung (mit CMAF) [Allgemeines Medienanwendungsformat] aktiviert).
+Unterstützung des neuen Protokolls DASH (Dynamic Adaptive Streaming over HTTP) wurde für adaptives Bit-Rate-Streaming in Dynamic Media-Videobereitstellung (mit aktiviertem CMAF, [Common Media Application Format]) eingeführt.
 
 * Adaptives Streaming (DASH/HLS) sorgt für ein besseres Anwendererlebnis bei der Videoanzeige.
-* DASH ist das internationale Standardprotokoll für adaptives Video-Streaming und wird in der Branche weithin verwendet.
+* DASH ist das internationale Standardprotokoll für adaptives Video-Streaming und wird in der Branche weitläufig verwendet.
 * Jetzt in Asien-Pazifik und Nordamerika verfügbar (über ein Support-Ticket möglich); in Kürze in Europa, im Nahen Osten und in Afrika vorkommen.
 
 Siehe [DASH in Ihrem Konto aktivieren](/help/assets/video.md#enable-dash).
@@ -44,64 +45,64 @@ Siehe [DASH in Ihrem Konto aktivieren](/help/assets/video.md#enable-dash).
 
 ## [!DNL Assets] {#assets-6516}
 
-* Connected Assets: Wenn Sie die Optionen für smartes Zuschneiden für Bilder auf Remote-DAM aktivieren, Bilder in einen Ordner hochladen und den Ordner mit lokalen Sites synchronisieren, wird der Ordner nicht in der lokalen Sites-Bereitstellung geöffnet. (NPR-39912)
+* Connected Assets: Wenn Sie die Optionen für smartes Zuschneiden für Bilder auf Remote-DAM aktivieren, Bilder in einen Ordner hochladen und den Ordner mit lokalen Websites synchronisieren, wird der Ordner nicht in der lokalen Sites-Implementierung geöffnet. (NPR-39912)
 * Beim Sortieren einer Sammlung nach Namen funktioniert die Listenansicht nicht ordnungsgemäß. (ASSETS-19401)
 * Wenn eine große Mediendatei (JPEG) in Sammlungen hochgeladen wird, reagiert Experience Manager nicht mehr. (ASSETS-19387)
 * Im Inhaltsbaum-Bereich ist der angezeigte Asset-Name falsch, da der Speicherort des Assets nicht ordnungsgemäß wiedergegeben wird. (ASSETS-18870)
 * Beim Teilen einer Sammlung mithilfe eines Links stimmen die Daten in der URL nicht mit der Kombination aus Karten- und Listenansicht überein. (ASSETS-18758)
 * Wenn Sie eine Omnisearch mithilfe eines Filters für den Ordnertyp durchführen, sind die Suchergebnisse inkonsistent. (ASSETS-18227)
-* Die `dam:size` -Eigenschaft nach XMP Writeback nicht aktualisiert wird, was dazu führt, dass falsche Informationen von der `/platform/path/to/asset.jpg;resource=metadata` API. (ASSETS-17631)
-* Nicht geschlossener Ressourcen-Resolver für alle Experience Manager-Instanzen. (ASSETS-16904)
-* Es kann keine Version für ein Asset erstellt werden, selbst wenn Ihnen die `create` und `modify` Berechtigungen. (ASSETS-15956)
-* Die `move` -Schaltfläche beim Verschieben eines Assets von einem Punkt an einen anderen zufällig deaktiviert wird. (ASSETS-14889)
+* Die Eigenschaft `dam:size` wird nach XMP-Writeback nicht aktualisiert, was dazu führt, dass von der `/platform/path/to/asset.jpg;resource=metadata`-API falsche Informationen zurückgegeben werden. (ASSETS-17631)
+* Nicht geschlossener Ressourcenauflöser bei allen Experience Manager-Instanzen. (ASSETS-16904)
+* Es kann keine Version für ein Asset erstellt werden, selbst wenn Sie über die Berechtigungen `create` und `modify` verfügen. (ASSETS-15956)
+* Die Schaltfläche `move` wird beim Verschieben eines Assets von einem Punkt zu einem anderen zufällig deaktiviert. (ASSETS-14889)
 * Bildschirmlesehilfen können Überschriften nicht identifizieren, da der Text nicht innerhalb von Überschriften-Tags, sondern als allgemeiner Text definiert ist. (ASSETS-6924)
-* Der Alternativtext unter dem Bild ist nicht obligatorisch, aber der unter dem Bild angezeigte Text wiederholt sich mit einem `Type` -Attribut. (ASSETS-6915)
+* Der Alternativtext unter dem Bild ist nicht obligatorisch, aber der unter dem Bild angezeigte Text wiederholt sich mit einem `Type`-Attribut. (ASSETS-6915)
 
 
-## [!DNL Assets] - [!DNL Dynamic Media] {#dm-6516}
+## [!DNL Assets] – [!DNL Dynamic Media] {#dm-6516}
 
 * Das Formularelement enthält keine Beschriftung. Bei Bildschirmlesehilfen wie NVDA und JAWS werden Informationen zur Formularbeschriftung nicht ordnungsgemäß angekündigt. (CQ-4344078)
-* Dropdown-Listen werden nicht geschlossen, wenn die Variable `Escape` -Taste auf einer Tastatur verwendet wird. (CQ-4344077)
-* Das Informationssymbol (der Buchstabe &quot;i&quot;), das nach Eingabe einer ungültigen Eingabe für den Inline-Fehlervorschlag angezeigt wird, kann nicht über eine Tastatur aufgerufen werden. (CQ-4344076)
-* `getManifestURI` gibt null zurück, da eine JCR-Eigenschaft als gelesen wird `toString` anstelle von `getString`. (ASSETS-18674)
+* Dropdown-Listen werden nicht geschlossen, wenn die `Escape`-Taste auf einer Tastatur verwendet wird. (CQ-4344077)
+* Das Informationssymbol (der Buchstabe „i“), das für den Inline-Fehlervorschlag nach einer ungültigen Eingabe erscheint, ist nicht über eine Tastatur zugänglich. (CQ-4344076)
+* `getManifestURI` gibt null zurück, da eine JCR-Eigenschaft als `toString` anstatt als `getString` gelesen wird. (ASSETS-18674)
 * Die SmartCrop-Videokomponente verhält sich nicht korrekt. Die Komponente führt die Wiedergabe anstelle von Streaming durch, und VTT-Aufrufe schlagen fehl und geben einen 404-Fehler zurück. (ASSETS-18468)
-* Auswählen **[!UICONTROL Eigenschaften]** auf der Viewer-Seite eines Assets verursacht eine Null-Pointer-Ausnahme. (ASSETS-18420)
-* [!DNL Experience Manager] Änderungen an der Benutzeroberfläche für DASH-Streaming, die Folgendes enthalten:
-   * über ein sichtbares CMAF-Feld (Common Media Application Format) im Videoprofil-Editor verfügen.
-   * Wenn der Video-Upload-Prozess eine CMAF-Markierung sendet.
-   * die Optionen **[!UICONTROL auto]**, **[!UICONTROL hls]** und **[!UICONTROL dash]** sind jetzt in der Dropdown-Liste &quot;Wiedergabe&quot;im Editor für Viewer-Vorgaben verfügbar **[!UICONTROL Verhalten]** Registerkarte.
+* Das Auswählen von **[!UICONTROL Eigenschaften]** auf der Viewer-Seite eines Assets verursacht eine Null Pointer-Ausnahme. (ASSETS-18420)
+* Änderungen an der Benutzeroberfläche von [!DNL Experience Manager] für DASH-Streaming, die Folgendes beinhalten:
+   * Ein sichtbares CMAF-Feld (Common Media Application Format) im Videoprofil-Editor.
+   * Der Video-Upload-Prozess sendet eine CMAF-Markierung.
+   * Die Optionen **[!UICONTROL auto]**, **[!UICONTROL hls]** und **[!UICONTROL dash]** sind jetzt in der Dropdown-Liste „Wiedergabe“ im Editor für Viewer-Vorgaben auf der Registerkarte **[!UICONTROL Verhalten]** verfügbar.
 (ASSETS-17428)
-* Wenn Sie in der Navigation **[!UICONTROL Assets]** > **[!UICONTROL Dateien]** > **[!UICONTROL Erstellen]** > **[!UICONTROL Karussellset]**, wird das Bildsymbol mit der Textzeichenfolge &quot;Folie 1&quot;überlagert. (ASSETS-18578)
+* Wenn Sie in der Navigation **[!UICONTROL Assets]** > **[!UICONTROL Dateien]** > **[!UICONTROL Erstellen]** > **[!UICONTROL Karussell-Set]** auswählen, wird das Bildsymbol mit der Textzeichenfolge „Folie 1“ überlagert. (ASSETS-18578)
 * Nicht veröffentlichte Assets werden erneut veröffentlicht. (ASSETS-16428)
-* Die Experience Manager-Autoreninstanz wird aufgrund eines Ladeproblems heruntergefahren, was zur Erstellung eines synthetischen Warnhinweises führt. (ASSETS-15937)
-* Auf der Seite &quot;Allgemeine Dynamic Media-Einstellungen&quot;wird eine nicht übersetzte Fehlermeldung angezeigt. `Failed to fetch data` angezeigt. (ASSETS-15617)
+* Experience Manager Author wird aufgrund eines Ladeproblems heruntergefahren, was zur Erstellung eines synthetischen Warnhinweises führt. (ASSETS-15937)
+* Auf der Seite „Allgemeine Einstellungen“ von Dynamic Media wird die nicht übersetzte Fehlermeldung `Failed to fetch data` angezeigt. (ASSETS-15617)
 
 ## [!DNL Forms] {#forms-6516}
 
 ### [!DNL Forms] Wichtigste Funktionen {#forms-features-6516}
 
-* [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) Ermöglichen es Entwicklern, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann.
+* [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) ermöglichen es Entwicklerinnen und Entwicklern, interaktive Formulare zu erstellen, zu veröffentlichen und zu verwalten, auf die über APIs und nicht über eine herkömmliche grafische Benutzeroberfläche zugegriffen und mit denen interagiert werden kann.
 
-* [Adaptive Forms-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html#features) sind eine Gruppe von 24 Open-Source-BEM-kompatiblen Komponenten, die auf der Grundlage der Adobe Experience Manager WCM-Kernkomponenten erstellt wurden. Diese Komponenten sind Open-Source-Komponenten und bieten Entwicklern die Möglichkeit, diese Komponenten einfach anzupassen und zu erweitern, um sie an die spezifischen Anforderungen ihrer Organisation anzupassen. Jeder, der über vorhandene Fähigkeiten zum Anpassen verfügt [WCM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=en) kann diese Komponenten einfach anpassen und gestalten.
+* [Kernkomponenten für adaptive Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de#features) sind eine Gruppe von 24 BEM-kompatiblen Open-Source-Komponenten, die auf der Grundlage der Adobe Experience Manager WCM-Kernkomponenten erstellt wurden. Diese Komponenten sind Open-Source-Komponenten und bieten Entwicklerinnen und Entwicklern die Möglichkeit, diese Komponenten einfach anzupassen und zu erweitern, um sie an die spezifischen Anforderungen ihrer Organisation anzupassen. Jeder, der über vorhandene Fähigkeiten zum Anpassen von [WCM-Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/authoring.html?lang=de) verfügt, kann diese Komponenten einfach anpassen und gestalten.
 
 * Der Reader Extension-Dienst für OSGi bietet jetzt separate Optionen, um Import- und Exportrechte für PDF zum Importieren oder Exportieren von Daten in Adobe Acrobat Reader zu ermöglichen. (NPR-39909)
 
-### [!DNL Forms] Fehlerkorrekturen {#forms-fixes-6516}
+### [!DNL Forms]-Fehlerkorrekturen {#forms-fixes-6516}
 
 * Bei Verwendung von **Aufgabe zuweisen** zum Senden einer Benachrichtigung für eine zugewiesene Aufgabe werden zwei E-Mails anstelle einer E-Mail an die zugewiesene Person gesendet. (NPR-40078)
-* Wenn ein Benutzer die Tabellenüberschriften ausblendet, wird die zuvor festgelegte Spaltenbreite deaktiviert und alle Spalten behalten dieselbe Breite bei. (NPR-40063)
-* Falls Sie das Standardkennwort des Admin-Benutzers ändern von `admin`, während Sie die `Prepare Adobe Experience Manager Server For DSC deployment` Überprüfen Sie, ob das AEM Forms JEE Service Pack fehlschlägt. (NPR-40062), (NPR-39387)
+* Wenn eine Benutzerin oder ein Benutzer die Tabellenüberschriften ausblendet, wird die zuvor festgelegte Spaltenbreite deaktiviert und alle Spalten behalten dieselbe Breite bei. (NPR-40063)
+* Falls Sie das Standardkennwort des Admin-Benutzenden von `admin` ändern, schlägt die Prüfung `Prepare Adobe Experience Manager Server For DSC deployment` auf dem AEM Forms JEE Service Pack fehl. (NPR-40062), (NPR-39387)
 * Die OutputService- und AssemblerService-APIs können das PDF-Formular nicht in PDF/A konvertieren. (NPR-39990)
-* Der AssemblerService kann PDF nicht in PDF/A konvertieren. Wenn ein Benutzer PDF in PDF/A konvertiert, tritt der folgende Fehler auf: `PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Summary" ignoreUnusedResources="true" allowCertificationSignatures="true"> <Violation count="6" key="PDFA_CS_001_NOT_DEVICE_INDEPENDENT" description="ColorSpace is not device independent`. (NPR-39956)
-* Wenn die serverseitige Validierung für einen GuideSubmitServlet-API-Aufruf fehlschlägt, werden die Fehler nicht in der an den Client gesendeten Antwort zurückgegeben. (NPR-39925)
-* Nach dem Upgrade auf AEM 6.5.15.0 Service Pack auf Windows-Server treten mehrere Fehlermeldungen auf, und der E-Mail-Dienst funktioniert nicht.(NPR-39919)
+* Der AssemblerService kann PDF nicht in PDF/A konvertieren. Beim Versuch, PDF in PDF/A zu konvertieren, tritt der folgende Fehler auf: `PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Summary" ignoreUnusedResources="true" allowCertificationSignatures="true"> <Violation count="6" key="PDFA_CS_001_NOT_DEVICE_INDEPENDENT" description="ColorSpace is not device independent`. (NPR-39956)
+* Wenn die Server-seitige Validierung für einen Aufruf der GuideSubmitServlet-API fehlschlägt, werden die Fehler nicht in der an den Client gesendeten Antwort zurückgegeben. (NPR-39925)
+* Nach dem Upgrade auf das Service Pack von AEM 6.5.15.0 auf Windows-Server treten mehrere Fehlermeldungen auf, und der E-Mail-Service funktioniert nicht.(NPR-39919)
 * Wenn Sie auf AEM 6.5.14.0 aktualisieren und den importData-Dienst verwenden, um PDF mit XML zusammenzuführen, tritt der folgende Fehler auf: `Caused by: java.lang.NoSuchMethodError: com.adobe.xfa.form.FormModel.isXFABarcode(Lcom/adobe/xfa/Node;)Ljava/lang/Boolean`.(NPR-39807)
-* Wenn der Benutzer installiert **Document Security Office** -Erweiterung, treten folgende Probleme auf:
+* Wenn die Erweiterung **Document Security Office** installiert wird, treten folgende Probleme auf:
    * Microsoft® Excel stürzt häufig ab.
-   * Beim Öffnen eines gesicherten Dokuments wird die **Document Security-Büro** -Erweiterung nicht als auf einem Computer installiert erkannt wird. Weist den Benutzer an, die Sicherheitserweiterung herunterzuladen und zu installieren. (NPR-39768)
-* Nach einem Benutzerupgrade auf AEM Service Pack 6.5.15.0 funktioniert die PostScript-zu-PDF-Konvertierung nicht. (NPR-39765), (NPR-39764)
-* Wenn Benutzer versuchen, den Bildschirm für die Tour nach dem Öffnen eines adaptiven Formulars zu öffnen, schlägt dies mit einer NullPointer-Ausnahme fehl:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
-* Wenn der Benutzer unter Windows Schwarze Einstellungen mit hohem Kontrast aktiviert, wird der HTML5-Forms-Inhalt bei der Wiedergabe als HTML-Vorschau im Browser unklar. (NPR-39018)
+   * Beim Öffnen eines gesicherten Dokuments wird die Erweiterung **Document Security Office** nicht als auf einem Computer installiert erkannt. Weist Benutzende an, die Sicherheitserweiterung herunterzuladen und zu installieren. (NPR-39768)
+* Nachdem einem Upgrade auf das Service Pack von AEM 6.5.15.0 funktioniert die Konversion von PostScript zu PDF nicht. (NPR-39765: NPR-39764)
+* Wenn versucht wird, nach dem Öffnen eines adaptiven Formulars den Bildschirm für die Tour zu öffnen, schlägt dies mit einer Null Pointer-Ausnahme fehl:`[172.17.0.1[1662032923933]GET/libs/fd/af/content/editors/form/tour/content.htmlHTTP/1.1]com.day.cq.wcm.core.impl.WCMDebugFilterException:org.apache.sling.api.scripting.ScriptEvaluationException:"` (NPR-39654)
+* Wenn unter Windows Einstellungen für kontrastreiches Schwarz aktiviert werden, wird der Inhalt von HTML5-Formularen unklar, wenn er als eine HTML-Vorschau im Browser gerendert wird. (NPR-39018)
 * Wenn der Benutzer versucht, Metadaten hinzuzufügen, wird die Schaltfläche &quot;Speichern&quot;sowohl für die Komponenten &quot;Entwurf&quot;als auch &quot;Übermittlung&quot;nicht mehr funktionsfähig.(CQ-4349601)
 * Nach dem Upgrade auf AEM 6.5.15.0 Service Pack funktioniert die Umleitung relativer URLs im Visual Editor nicht mehr. (NPR-39947)
 * Wenn ein Benutzer auf AEM 6.5.15.0 Service Pack aktualisiert, funktioniert die Weiterleitung nicht mehr mit Internet Explorer. (CQ-4351745)
@@ -117,66 +118,66 @@ Nach der Installation des AEM 6.5.16.0 Forms Add-On Service Packs waren die folg
 
 ## Integrationen {#integrations-6516}
 
-* Entfernen Sie den Code und die Abhängigkeit der Adobe-Search&amp;Promote aus Experience Manager 6.5. Adobe Search&amp;Promote hat das Ende des Diensts im September 2022 erreicht. Siehe [Ankündigung zum Ende der Adobe-Search&amp;Promote](https://experienceleague.adobe.com/docs/discontinued/using/search-promote.html?lang=en). (NPR-39706)
+* Das Entfernen des Adobe Search&amp;Promote-Codes und der Abhängigkeit von Experience Manager 6.5. Adobe Search&amp;Promote hat Ende September 2022 das Dienstende erreicht. Siehe [Ankündigung zum Dienstende von Adobe Search&amp;Promote](https://experienceleague.adobe.com/docs/discontinued/using/search-promote.html?lang=de). (NPR-39706)
 
 ## [!DNL Sites] {#sites-6516}
 
-* Aktuell `cq-wcm-core` Die Werksfreigabe verfügt nicht über das POM. (SITES-10983)
-* Die zu erstellende Seite sollte bei der Rollout-Vorschauaktion nicht aufgelistet werden. (SITES-10355, CQ-4266213)
-* Rollout nach MSM-Trennen erstellt die separate Seite. (SITES-9841)
-* Beim Erstellen eines Launches wird der Zeitablauf überschritten. Der Benutzer muss auf einem Ladebildschirm viele Minuten warten, bevor die Anfrage eine Zeitüberschreitung aufweist. (SITES-9051)
-* In der Benutzeroberfläche &quot;Rollout-Seite&quot;werden nicht vorhandene Pfade übergeordneter Seiten angezeigt. Sie können die Seite mit einer Erfolgsmeldung einführen, aber die untergeordnete Seite wird nicht ausgerollt, da die übergeordnete Seite überhaupt nicht eingeführt wird. (SITES-8621)
+* Die aktuelle Artifactory-Version von `cq-wcm-core` verfügt nicht über das POM. (SITES-10983)
+* Die zu erstellende Seite sollte bei der Aktion „Vorschau-Rollout“ nicht aufgelistet werden. (SITES-10355, CQ-4266213)
+* Ein Rollout nach einer MSM-Trennung erstellt die getrennte Seite neu. (SITES-9841)
+* Beim Erstellen eines Launches tritt eine Zeitüberschreitung auf. Benutzende müssen an einem Ladebildschirm viele Minuten warten, bevor die Zeit für die Anfrage abläuft. (SITES-9051)
+* Auf der Benutzeroberfläche „Seiten-Rollout“ werden nicht vorhandene Pfade übergeordneter Seiten angezeigt. Sie können die Seite zwar mit einer Erfolgsmeldung bereitstellen, aber die untergeordnete Seite wird nicht bereitgestellt, da die übergeordnete Seite gar nicht erst bereitgestellt wurde. (SITES-8621)
 
-### [!DNL Sites] - Kernkomponenten {#sites-core-components-6516}
+### [!DNL Sites] – Kernkomponenten {#sites-core-components-6516}
 
 * Zentralisieren Sie die Link-Verarbeitung auf E-Mail-Seiten, sodass Modellanpassungen nicht mehr erforderlich sind. (SITES-9002)
 
-### [!DNL Sites] - Admin-Benutzeroberfläche {#sites-adminui-6516}
+### [!DNL Sites] – Admin-Benutzeroberfläche {#sites-adminui-6516}
 
 * CSV-Export exportiert nicht alle Seiten unter der ausgewählten Seite. (SITES-9390)
 
-### [!DNL Sites] - [!DNL Content Fragments] {#sites-contentfragments-6516}
+### [!DNL Sites] – [!DNL Content Fragments] {#sites-contentfragments-6516}
 
 * Die JSON eines Inhaltsfragments kann nicht gedruckt werden. Der Grund dafür ist, dass die GraphQL-Abfrage beim Öffnen der Vorschauseite des Inhaltsfragments nicht generiert werden kann. (SITES-8619)
-* Beim erneuten Öffnen des Inhaltsfragmentmodell-Editors müssen alle **[!UICONTROL Datum und Uhrzeit]** -Felder sind standardmäßig vom Typ Datum und Uhrzeit . (SITES-8401)
+* Beim erneuten Öffnen des Modell-Editors des Inhaltsfragments gehen alle **[!UICONTROL Datum und Uhrzeit]**-Felder standardmäßig auf den Typ „Datum und Uhrzeit“ zurück. (SITES-8401)
 
-### [!DNL Sites] - [!DNL Experience Fragments] {#sites-experiencefragments-6516}
+### [!DNL Sites] – [!DNL Experience Fragments] {#sites-experiencefragments-6516}
 
 * Sie können ein Experience Fragment nicht in einen anderen Ordner verschieben, selbst wenn die Vorlage unter den zulässigen Vorlagen aufgeführt ist. (SITES-8601)
 * (SITES-7989)
 
 
-### [!DNL Sites] - Seiteneditor {#sites-pageeditor-6516}
+### [!DNL Sites] – Seiteneditor {#sites-pageeditor-6516}
 
-* Aktualisierung der Abhängigkeiten für die Verbesserung des Ressourcen-Resolvers in SITES-8464, bei der das Seiten-Rendering im Authoring-Modus eine hohe Anzahl von `TemplatedResourceImpl` Objekte. (SITES-9350)
+* Es wurde eine Verbesserung an den Aktualisierungsabhängigkeiten für den Ressourcenauflöser in SITES-8464 vorgenommen, wo das Seiten-Rendering im Authoring-Modus eine hohe Anzahl von `TemplatedResourceImpl`-Objekten erstellt hat. (SITES-9350)
 
 
 ## Sling {#sling-6516}
 
-* Experience Manager wird beim Start gesperrt. (NPR-39832)
-* Wenn im Versionsspeicher des Experience Managers viele Vanity-Pfade vorhanden sind, kann der Experience Manager nicht gestartet werden. (NPR-38955)
+* Experience Manager ist beim Start blockiert. (NPR-39832)
+* Wenn im Versionsspeicher von Experience Manager viele Vanity-Pfade vorhanden sind, kann Experience Manager nicht gestartet werden. (NPR-38955)
 
 
 ## Übersetzungsprojekte {#translation-6516}
 
-* In `MicrosoftTranslationServiceImpl`, der Abfragezeichenfolgenparameter `Category` ist falsch. (NPR-39828)
-* Beim Erstellen eines Übersetzungsprojekts wird der Fehler angezeigt *Übergeordnete Seitenressource nicht vorhanden*; das Übersetzungsprojekt nicht erstellt wurde. (NPR-39762)
-* Es kann kein Fälligkeitsdatum für ein Übersetzungsprojekt festgelegt werden, das einen menschlichen Übersetzungs-Connector verwendet. (NPR-39593)
+* In `MicrosoftTranslationServiceImpl` ist der Abfragezeichenfolge-Parameter `Category` falsch. (NPR-39828)
+* Beim Erstellen eines Übersetzungsprojekts wird der Fehler *Ressource der Musterseite existiert nicht* angezeigt, und das Übersetzungsprojekt wird nicht erstellt. (NPR-39762)
+* Es kann kein Fälligkeitsdatum für ein Übersetzungsprojekt festgelegt werden, das einen Connector für eine menschliche Übersetzung verwendet. (NPR-39593)
 
 ## Benutzeroberfläche {#ui-6516}
 
-* Beim Ändern in eine kleinere Auflösung wird der DatePicker nicht angezeigt und die AM/PM-Auswahl wird nicht angezeigt oder ändert sich nicht sichtbar. (NPR-39948)
-* Wenn &quot;js minify&quot;(Minimierung von JavaScript) verwendet wird, wird die Minimierung aufgrund eines Parsing-Fehlers nicht verarbeitet. (NPR-39650)
-* Tag-Feld (`/libs/cq/gui/components/coral/common/form/tagfield`) mit der Timeline in Konflikt. (CQ-4350751)
+* Beim Ändern in eine kleinere Auflösung wird die Datumsauswahl nicht angezeigt, und die AM/PM-Auswahl wird nicht angezeigt oder ändert sich nicht sichtbar. (NPR-39948)
+* Wenn „minify js“ (Minimierung von JavaScript) verwendet wird, wird die Minimierung aufgrund eines Parsing-Fehlers nicht verarbeitet. (NPR-39650)
+* Das Tag-Feld (`/libs/cq/gui/components/coral/common/form/tagfield`) steht in Konflikt mit der Timeline. (CQ-4350751)
 
 
 ## WCM {#wcm-6516}
 
-* Die zu erstellende Seite sollte bei der Rollout-Vorschauaktion nicht aufgelistet werden. (CQ-4266213, SITES-10355)
+* Die zu erstellende Seite sollte bei der Aktion „Vorschau-Rollout“ nicht aufgelistet werden. (CQ-4266213, SITES-10355)
 
 ## Workflow {#workflow-6516}
 
-* Manuelles Löschen des bearbeitbaren Workflow-Modells aus `/conf` lässt eine verbleibende Laufzeitmodellinstanz ohne bearbeitbares Modell. (CQ-4349365)
+* Das manuelle Löschen des bearbeitbaren Workflow-Modells aus `/conf` hinterlässt eine zurückbleibende Laufzeitmodellinstanz ohne ein bearbeitbares Modell. (CQ-4349365)
 
 
 ## Installieren von [!DNL Experience Manager] 6.5.16.0 {#install}
@@ -250,11 +251,11 @@ Wenn dieses Paket nicht installiert wird, kann es zu langsamen oder fehlgeschlag
 
 ### UberJar {#uber-jar}
 
-Das UberJar für [!DNL Experience Manager] 6.5.16.0 ist im [Maven Central Repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.15/) verfügbar. <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+UberJar für [!DNL Experience Manager] 6.5.16.0 ist im [Maven Central-Repository](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.15/) verfügbar. <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 >[!NOTE]
 >
->In Experience Manager 6.5.16.0 bleibt die UberJar-Version (6.5.15.0) mit der vorherigen Version identisch.
+>In Experience Manager 6.5.16.0 bleibt die UberJar-Version (6.5.15.0) die gleiche wie in der vorherigen Experience Manager-Version.
 
 
 Um UberJar in einem Maven-Projekt zu verwenden, lesen Sie bitte [Verwendung von UberJar](/help/sites-developing/ht-projects-maven.md) und nehmen Sie die folgende Abhängigkeit in Ihr Projekt-POM auf: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
@@ -304,9 +305,9 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
    Nach diesen Schritten sollten die GraphQL-Abfragen schneller ausgeführt werden.
 
-* Da [!DNL Microsoft®® Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss®® EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft®® Windows Server 2019] keine Turnkey-Installationen für [!DNL AEM Forms 6.5.10.0].
+* Da [!DNL Microsoft®® Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss®® EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft®® Windows Server 2019] keine schlüsselfertigen Installationen für [!DNL AEM Forms 6.5.10.0].
 
-* Wenn Sie Ihre [!DNL Experience Manager] von 6.5.0 bis 6.5.4 bis zum neuesten Service Pack auf Java™ 11 sehen Sie `RRD4JReporter` Ausnahmen `error.log` -Datei. Um die Ausnahmen zu beenden, starten Sie Ihre Instanz von neu [!DNL Experience Manager]. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
+* Wenn Sie Ihre [!DNL Experience Manager]-Instanz von 6.5.0 bis 6.5.4 auf das neueste Service Pack für Java™ 11 aktualisieren, sehen Sie `RRD4JReporter`-Ausnahmen in der Datei `error.log`. Um die Ausnahmen zu stoppen, starten Sie Ihre Instanz von [!DNL Experience Manager] neu. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
 * Benutzende können einen Ordner in einer Hierarchie in [!DNL Assets] umbenennen und einen verschachtelten Ordner in [!DNL Brand Portal] veröffentlichen. Der Titel des Ordners wird jedoch erst dann in [!DNL Brand Portal] aktualisiert, wenn der Stammordner erneut veröffentlicht wird.
 
@@ -331,7 +332,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
    ```
 
 * In AEM Forms funktioniert das POP3-Protokoll nicht mit E-Mail-Endpunkten für Microsoft® Office 365.
-* auf der JBoss® 7.1.4-Plattform bei der Installation des Service Packs AEM 6.5.16.0 durch den Benutzer, `adobe-livecycle-jboss.ear` Die Bereitstellung schlägt fehl.
+* Auf der JBoss® 7.1.4-Plattform schlägt die Implementierung von `adobe-livecycle-jboss.ear` bei der Installation des Service Packs von AEM 6.5.16.0 fehl.
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete {#osgi-bundles-and-content-packages-included}
 
