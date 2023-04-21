@@ -13,15 +13,15 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: b290fac2-7259-45d7-b733-70419d632b07
 source-git-commit: 78aa7aac838dabc1c4f0329520092e4755541322
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3736'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
 # Videoprofile {#video-profiles}
 
-Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Beim Kodieren von primären Videos mithilfe des Profils „Adaptive Videoverschlüsselung“ passt der Video-Player während der Wiedergabe automatisch die Qualität des Video-Streams auf Grundlage der Internet-Verbindungsgeschwindigkeit Ihrer Kunden an. Diese Funktion wird als Streaming adaptiver Bitraten bezeichnet.
+Dynamic Media enthält bereits das vordefinierte Profil „Adaptive Videoverschlüsselung“. Die Einstellungen in diesem vordefinierten Profil sind so optimiert, dass sie Ihren Kunden Ansichten in bestmöglicher Qualität bieten. Beim Kodieren von primären Videos mithilfe des Profils „Adaptive Videoverschlüsselung“ passt der Video-Player während der Wiedergabe automatisch die Qualität des Video-Streams auf Grundlage der Internet-Verbindungsgeschwindigkeit Ihrer Kunden an. Diese Funktionalität wird als Streaming mit adaptiver Bit-Rate bezeichnet.
 
 Die folgenden weiteren Faktoren wirken sich auf die Qualität Ihrer Videos aus:
 
@@ -51,7 +51,7 @@ Siehe auch [Profile für die Verarbeitung von Metadaten, Bildern und Videos](pro
 
 ## Vorgaben für adaptive Videoverschlüsselung {#adaptive-video-encoding-presets}
 
-In der folgenden Tabelle werden die empfohlenen Kodierungsprofile für das adaptive Video-Streaming auf Smartphones und Tablets sowie Desktop-Computern angegeben. Sie können diese Vorgaben für Videos mit jedem Seitenverhältnis verwenden.
+In der folgenden Tabelle werden die Best Practice Codierungsprofile für das adaptive Video-Streaming auf Smartphones und Tablets sowie Desktop-Computern angegeben. Sie können diese Vorgaben für Videos mit jedem Seitenverhältnis verwenden.
 
 <table>
  <tbody>
@@ -130,26 +130,26 @@ Siehe [Anwenden eines Videoprofils auf bestimmte Ordner](#applying-video-profile
 
 Siehe auch [Smartes Zuschneiden für Bilder](image-profiles.md).
 
-## Erstellen eines Videoprofils für Streaming mit adaptiver Bitrate {#creating-a-video-encoding-profile-for-adaptive-streaming}
+## Erstellen eines Videoprofils für Streaming mit adaptiver Bit-Rate {#creating-a-video-encoding-profile-for-adaptive-streaming}
 
 Dynamic Media umfasst standardmäßig das vordefinierte Profil „Adaptive Videoverschlüsselung“ (eine Gruppe mit Video-Upload-Einstellungen für MP4 H.264), das für das beste Anzeigeerlebnis optimiert ist. Sie können dieses Profil beim Hochladen von Videos verwenden.
 
 Wenn dieses vordefinierte Profil Ihre Anforderungen jedoch nicht erfüllt, können Sie ein eigenes Profil für die adaptive Videoverschlüsselung erstellen. Wenn Sie die Einstellung **[!UICONTROL Für adaptives Streaming kodieren]** verwenden (eine empfohlene Vorgehensweise), werden alle dem Profil hinzugefügten Kodierungsvorgaben validiert, um sicherzustellen, dass alle Videos dasselbe Seitenverhältnis aufweisen. Darüber hinaus werden die kodierten Videos als Multi-Bitrate-Set für das Streaming behandelt.
 
-Beim Erstellen des Videokodierungsprofils sehen Sie, dass die meisten Kodierungsoptionen vorab mit empfohlenen Standardeinstellungen gefüllt sind, um Ihnen die Arbeit zu erleichtern. Wenn Sie allerdings einen anderen Wert als den empfohlenen Standardwert auswählen, kann dies zu schlechter Videoqualität bei der Wiedergabe und zu anderen Leistungsproblemen führen.
+Beim Erstellen des Videokodierungsprofils sehen Sie, dass die meisten Kodierungsoptionen vorab mit empfohlenen Standardeinstellungen gefüllt sind, um Ihnen die Arbeit zu erleichtern. Wenn Sie allerdings einen anderen Wert als den empfohlenen Standardwert auswählen, kann dies zu einer schlechten Videoqualität bei der Wiedergabe und zu anderen Leistungsproblemen führen.
 
-Daher werden für alle MP4 H.264-Videokodierungsvorgaben im Profil die folgenden Werte validiert, um sicherzustellen, dass sie für alle individuellen Kodierungsvorgaben im Profil gleich sind, sodass das adaptive Bitratenstreaming möglich ist:
+Für alle MP4 H.264-Videocodierungsvorgaben im Profil werden also die folgenden Werte validiert, um sicherzustellen, dass diese über individuelle Codierungsvorgaben hinweg identisch sind. Dadurch wird Streaming mit adaptiver Bit-Rate ermöglicht:
 
-* Videoformat-Codec – MP4 H.264 (.mp4)
+* Videoformat-Codec – MP4 H.264 (.mp4)
 * Audio-Codec
 * Audiobitrate
 * Seitenverhältnis beibehalten
-* Kodierung mit zwei Durchgängen
-* Konstante Bitrate
+* Codierung mit zwei Durchgängen
+* Konstante Bit-Rate
 * H264-Profil
-* Audio-Samplingrate
+* Audio-Sampling-Rate
 
-Wenn die Werte nicht identisch sind, können Sie das Profil durchaus im Istzustand erstellen. Das Streaming adaptiver Bitraten ist jedoch nicht möglich. Stattdessen wird das Einzel-Bitraten-Streaming durchgeführt. Es wird empfohlen, dass Sie die Kodierungseinstellungen so bearbeiten, dass dieselben Werte über individuelle Kodierungsvorgaben hinweg im Profil verwendet werden. (Der Videoprofil-/Vorgabeneditor erzwingt die Parität der adaptiven Videokodierungseinstellungen, wenn die Einstellung **[!UICONTROL Für adaptives Streaming kodieren]** aktiviert ist.)
+Wenn die Werte nicht identisch sind, können Sie das Profil durchaus im Istzustand erstellen. Streaming mit adaptiver Bit-Rate ist dann jedoch nicht möglich. Stattdessen wird das Einzel-Bitraten-Streaming durchgeführt. Es wird empfohlen, dass Sie die Kodierungseinstellungen so bearbeiten, dass dieselben Werte über individuelle Kodierungsvorgaben hinweg im Profil verwendet werden. (Der Videoprofil-/Vorgabeneditor erzwingt die Parität der adaptiven Videokodierungseinstellungen, wenn die Einstellung **[!UICONTROL Für adaptives Streaming kodieren]** aktiviert ist.)
 
 Siehe auch [Erstellen eines Videokodierungsprofils für progressives Streaming](#creating-a-video-encoding-profile-for-progressive-streaming).
 
@@ -157,7 +157,7 @@ Siehe auch [Best Practices zur Videokodierung](/help/assets/video.md#best-practi
 
 Informationen zur Definition von erweiterten Verarbeitungsparametern für andere Asset-Typen finden Sie unter [Konfigurieren der Asset-Verarbeitung](/help/assets/config-dms7.md#configuring-asset-processing).
 
-**So erstellen Sie ein Videoprofil für Streaming mit adaptiver Bitrate**,
+**So erstellen Sie ein Videoprofil für Streaming mit adaptiver Bit-Rate**:
 
 1. Klicken Sie auf das Adobe Experience Manager-Logo und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Videoprofile]**.
 1. Klicken Sie auf **[!UICONTROL Erstellen]**, um ein Videoprofil hinzuzufügen.
@@ -167,7 +167,7 @@ Informationen zur Definition von erweiterten Verarbeitungsparametern für andere
 1. Legen Sie auf der Registerkarte **[!UICONTROL Allgemein]** die Video- und Audiooptionen fest.
 Klicken Sie auf das Informationssymbol neben den einzelnen Optionen, um zusätzliche Beschreibungen oder empfohlene Einstellungen auf Grundlage des ausgewählten Videoformat-Codecs anzuzeigen.
 1. Stellen Sie unter der Überschrift „Videogröße“ sicher, dass **[!UICONTROL Seitenverhältnis beibehalten]** aktiviert ist.
-1. Legen Sie die Videoframe-Auflösung in Pixeln fest. Verwenden Sie den Wert **[!UICONTROL Auto]**, um das Seitenverhältnis der Quelle anzupassen (Verhältnis von Breite zu Höhe). Beispielsweise „Auto x 480“ oder „640 x Auto“.
+1. Legen Sie die Video-Frame-Auflösung in Pixeln fest. Verwenden Sie den Wert **[!UICONTROL Auto]**, um das Seitenverhältnis der Quelle anzupassen (Verhältnis von Breite zu Höhe). Beispiel: Auto x 480 oder 640 x Auto.
 
 1. Führen Sie einen der folgenden Schritte aus:
 
@@ -204,7 +204,7 @@ Je nachdem, welchen Modus Sie ausführen, werden die folgenden Videoformat-Codec
 * Dynamic Media-Scene7-Modus: H.264 (.mp4)
 * Dynamic Media-Hybridmodus: H.264 (.mp4), WebM
 
-Siehe auch [Erstellen eines Videokodierungsprofils für Streaming mit adaptiver Bitrate](#creating-a-video-encoding-profile-for-adaptive-streaming).
+Siehe auch [Erstellen eines Videocodierungsprofils für Streaming mit adaptiver Bit-Rate](#creating-a-video-encoding-profile-for-adaptive-streaming).
 
 Siehe auch [Best Practices zur Videokodierung](/help/assets/video.md#best-practices-for-encoding-videos).
 
@@ -284,7 +284,7 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
    <td><code>keyframe</code></td>
    <td>Die Zielzahl der Frames zwischen Keyframes. Berechnen Sie diesen Wert, damit alle 2 bis 10 Sekunden ein Keyframe generiert werden kann. Bei 30 Frames pro Sekunde sollte das Keyframe-Intervall zwischen 60 und 300 liegen.<br /> <br /> Niedrigere Keyframe-Intervalle verbessern das Verhalten bei Stream-Suche und Stream-Wechsel für adaptive Videoverschlüsselung und können auch die Qualität bei Videos mit viel Bewegung verbessern. Da Keyframes die Größe einer Datei erhöhen, bewirkt ein niedrigeres Keyframe-Intervall in der Regel eine niedrigere Videogesamtqualität bei einer bestimmten Bit-Rate.</td>
    <td><code>String</code></td>
-   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für DASH oder HLS ist 60-90. (Um DASH für Ihre Videos zu verwenden, muss es zunächst in Ihrem Konto aktiviert werden. Siehe <a href="/help/assets/video.md#enable-dash">DASH in Ihrem Konto aktivieren</a>.</p> </td>
+   <td><p>Positive Zahl.</p> <p>Der Standardwert ist 300.</p> <p>Der empfohlene Wert für DASH oder HLS ist 60-90. (Um DASH für Ihre Videos zu verwenden, muss es zunächst in Ihrem Konto aktiviert werden. Siehe <a href="/help/assets/video.md#enable-dash">Aktivieren von DASH in Ihrem Konto</a>.)</p> </td>
   </tr>
   <tr>
    <td><code>minBitrate</code></td>
@@ -302,7 +302,7 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
    <td><code>audioBitrateCustom</code></td>
    <td>Setzen Sie den Wert auf <code>true</code>, um eine konstante Bit-Rate für den Audio-Stream zu erzwingen, sofern dies vom Audio-Codec unterstützt wird.</td>
    <td><code>String</code></td>
-   <td><p><code>true</code>/<code>false</code></p> <p>Der Standardwert ist <code>false</code>.</p> <p>Empfohlener Wert für DASH oder HLS: <code>false</code>. (Um DASH für Ihre Videos zu verwenden, muss es zunächst in Ihrem Konto aktiviert werden. Siehe <a href="/help/assets/video.md#enable-dash">DASH in Ihrem Konto aktivieren</a>.</p> <p> </p> </td>
+   <td><p><code>true</code>/<code>false</code></p> <p>Der Standardwert ist <code>false</code>.</p> <p>Empfohlener Wert für DASH oder HLS: <code>false</code>. (Um DASH für Ihre Videos zu verwenden, muss es zunächst in Ihrem Konto aktiviert werden. (Siehe <a href="/help/assets/video.md#enable-dash">Aktivieren von DASH in Ihrem Konto</a>.)</p> <p> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -312,7 +312,7 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
 1. Klicken Sie in der rechten unteren Ecke der Seite auf **[!UICONTROL Hinzufügen]**.
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Wiederholen Sie die Schritte 3 und 4, um Ihrem Videokodierungsprofil einen weiteren Parameter hinzuzufügen.
+   * Wiederholen Sie die Schritte 3 und 4, um Ihrem Videocodierungsprofil einen weiteren Parameter hinzuzufügen.
    * Klicken Sie in der oberen linken Ecke der Seite auf **[!UICONTROL Alle speichern]**.
 
 1. Klicken Sie in der oberen linken Ecke der Seite „CRXDE Lite“ auf das Symbol **[!UICONTROL Zurück zur Startseite]**, um zu Adobe Experience Manager zurückzukehren.
@@ -321,7 +321,7 @@ Sie können nun vorhandene Videokodierungsprofile bearbeiten, um von erweiterten
 
 Sie können die Videoprofile bearbeiten, die Sie erstellt haben, um die in diesen Profilen enthaltenen Videovorgaben hinzuzufügen, zu bearbeiten oder zu löschen.
 
-Die Bearbeitung des bereits in Dynamic Media integrierten Profils **[!UICONTROL Adaptive Videokodierung]** ist standardmäßig deaktiviert. Sie können das Profil einfach kopieren und dann unter einem neuen Namen speichern. Dann können Sie die gewünschten Vorgaben im kopierten Profil bearbeiten.
+Die Bearbeitung des bereits in Dynamic Media integrierten Profils **[!UICONTROL Adaptive Videokodierung]** ist standardmäßig deaktiviert. Sie können das Profil einfach kopieren und dann unter einem neuen Namen speichern. Sie können dann die gewünschten Vorgaben im kopierten Profil bearbeiten.
 
 Siehe auch [Best Practices zur Videokodierung](/help/assets/video.md#best-practices-for-encoding-videos).
 
@@ -333,8 +333,8 @@ Informationen zur Definition von erweiterten Verarbeitungsparametern für andere
 1. Aktivieren Sie auf der Seite „Videoprofile“ einen Videoprofilnamen.
 1. Wählen Sie in der Symbolleiste die Option **[!UICONTROL Bearbeiten]** aus.
 1. Bearbeiten Sie den Namen und die Beschreibung nach Bedarf auf der Seite „Videokodierungsprofil“.
-1. Als Best Practice sollten Sie sicherstellen, dass **[!UICONTROL Kodieren für Streaming mit adaptiver Bitrate]** aktiviert ist.
-Wählen Sie das Informationssymbol aus, um eine Beschreibung des Streaming adaptiver Bitraten zu erhalten. (Wenn Sie ein progressives Videoprofil nicht bearbeiten möchten, aktivieren Sie dieses Kontrollkästchen nicht.)
+1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für Streaming mit adaptiver Bit-Rate codieren]** zu aktivieren.
+Klicken Sie auf das Informationssymbol, um eine Beschreibung von Streaming mit adaptiver Bit-Rate anzuzeigen. (Wenn Sie ein progressives Videoprofil bearbeiten, aktivieren Sie dieses Kontrollkästchen nicht.)
 1. Unter der Überschrift „Videokodierungsvorgaben“ können Sie die Videokodierungsvorgaben des Profils hinzufügen, bearbeiten oder löschen.
 
    Klicken Sie neben den einzelnen Optionen auf den Registerkarten **[!UICONTROL Allgemein]** und **[!UICONTROL Erweitert]** auf das Informationssymbol, um zusätzliche Beschreibungen oder empfohlene Einstellungen auf Grundlage des ausgewählten Videoformat-Codecs anzuzeigen.
@@ -347,7 +347,7 @@ Wählen Sie das Informationssymbol aus, um eine Beschreibung des Streaming adapt
 1. Aktivieren Sie auf der Seite „Videoprofile“ einen Videoprofilnamen.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**.
 1. Geben Sie auf der Seite „Videokodierungsprofil“ einen neuen Namen für das Profil ein.
-1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für adaptives Streaming kodieren]** zu aktivieren. Wählen Sie das Informationssymbol aus, um eine Beschreibung des Streaming adaptiver Bitraten zu erhalten. (Wenn Sie ein progressives Videoprofil kopieren, aktivieren Sie dieses Kontrollkästchen nicht.)
+1. Als Best Practice hat es sich bewährt, das Kontrollkästchen **[!UICONTROL Für adaptives Streaming kodieren]** zu aktivieren. Klicken Sie auf das Informationssymbol, um eine Beschreibung von Streaming mit adaptiver Bit-Rate anzuzeigen. (Wenn Sie ein progressives Videoprofil kopieren, aktivieren Sie dieses Kontrollkästchen nicht.)
 
    Wenn im Hybridmodus von Dynamic Media eine WebM-Videovoreinstellung Teil des Videoprofils ist, ist die Option **[!UICONTROL Für adaptives Streaming kodieren]** nicht möglich, da alle Vorgaben das MP4-Format aufweisen müssen.
 1. Unter der Überschrift „Videokodierungsvorgaben“ können Sie die Videokodierungsvorgaben des Profils hinzufügen, bearbeiten oder löschen.
