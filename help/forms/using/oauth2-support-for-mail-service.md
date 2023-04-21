@@ -3,9 +3,9 @@ title: Konfigurieren der OAuth2-basierten Authentifizierung für Microsoft® Off
 description: Konfigurieren der OAuth2-basierten Authentifizierung für Microsoft® Office 365-Mailserver-Protokolle
 exl-id: cd3da71f-892c-4fde-905f-71a64fb5d4e4
 source-git-commit: d19de2955adef56570378a6d62ec0015718f9039
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '975'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Die Option **Konten in einem beliebigen Organisationsverzeichnis (Beliebiges Azu
    >[!NOTE]
    >
    > * Für die Anwendung von **Konten in einem beliebigen Organisationsverzeichnis (Beliebiges Azure AD-Verzeichnis – Multitenant)** wird empfohlen, ein Arbeitskonto und kein persönliches E-Mail-Konto zu verwenden.
-   > * **Nur persönliche Microsoft®-Konten** -Anwendung wird nicht unterstützt.
+   > * Die Anwendung **Nur persönliche Microsoft®-Konten** wird nicht unterstützt.
    > * Es wird empfohlen, die Anwendung **Multitenant und persönliches Microsoft®-Konto** zu verwenden.
 
 
@@ -68,7 +68,7 @@ Die Option **Konten in einem beliebigen Organisationsverzeichnis (Beliebiges Azu
 
 Als nächstes müssen Sie den Autorisierungs-Code generieren, wie in den folgenden Schritten erklärt:
 
-1. Öffnen Sie die folgende URL im Browser, nachdem Sie `clientID` mit dem `<client_id>` und `redirect_uri` mit dem Umleitungs-URI Ihrer Anwendung:
+1. Öffnen Sie die folgende URL im Browser, nachdem Sie `clientID` durch `<client_id>` und `redirect_uri` durch den Redirect-URI Ihrer Anwendung ersetzt haben:
 
    ```https://login.microsoftonline.com/common/oauth2/v2.0/authorize?client_id=[clientid]&scope=IMAP.AccessAsUser.All%20POP.AccessAsUser.All%20SMTP.Send%20User.Read%20Mail.Read%20offline_access&response_type=code&redirect_uri=[redirect_uri]&prompt=login```
 
@@ -99,7 +99,7 @@ Als nächstes müssen Sie das Aktualisierungs-Token generieren, wie in den folge
 
    >[!NOTE]
    >
-   > Verwenden Sie in einer Einzelmandantenanwendung den folgenden cURL-Befehl und ersetzen Sie `common` mit dem `[tenantid]` in:
+   > Verwenden Sie in einer Einzelmandantenanwendung den folgenden cURL-Befehl, um ein Aktualisierungs-Token zu generieren, und ersetzen Sie `common` mit der `[tenantid]` in:
    >`curl -H “ContentType application/x-www-form-urlencoded” -d “client_id=[client-id]&scope=https%3A%2F%2Foutlook.office.com%2FIMAP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FPOP.AccessAsUser.All%20https%3A%2F%2Foutlook.office.com%2FSMTP.Send%20https%3A%2F%2Foutlook.office.com%2FUser.Read%20https%3A%2F%2Foutlook.office.com%2FMail.Read%20offline_access&code=[code]&grant_type=authorization_code&redirect_uri=[redirect_uri]&client_secret=[secretkey_value]” -X POST https://login.microsoftonline.com/[tenantid]/oauth2/v2.0/token`
 
 1. Notieren Sie sich das Aktualisierungs-Token.
