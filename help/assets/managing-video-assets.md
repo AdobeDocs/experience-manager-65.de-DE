@@ -6,9 +6,9 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 source-git-commit: 5ac1b0a343c3742f27fecbfb0de577d65c2607d0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5511'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Sie können lokale Experience Manager-Video-Assets direkt in einem YouTube-Kanal
 
 Um Video-Assets in YouTube zu veröffentlichen, richten Sie Experience Manager-Assets mit Tags ein. Diese Tags verknüpfen Sie mit einem YouTube-Kanal. Wenn das Tag eines Video-Assets mit dem Tag eines YouTube-Kanals übereinstimmt, wird das Video auf YouTube veröffentlicht. Die Veröffentlichung auf YouTube erfolgt neben einer normalen Veröffentlichung des Videos, solange ein entsprechendes Tag verwendet wird.
 
-YouTube verwendet eine eigene Kodierung. Daher wird die Originalvideodatei, die in Experience Manager hochgeladen wurde, in YouTube veröffentlicht und nicht in eine Videoausgabedarstellung, die durch die Kodierung von Dynamic Media erstellt wurde. Die Verarbeitung von Videos mit Dynamic Media ist zwar nicht erforderlich, wird aber für den Fall vorausgesetzt, dass eine Viewer-Vorgabe für die Wiedergabe benötigt wird.
+YouTube verwendet eine eigene Kodierung. Daher wird die ursprüngliche Videodatei, die in Experience Manager hochgeladen wurde, auf YouTube veröffentlicht und nicht das Videoausgabeformat, das durch die Codierung von Dynamic Media erstellt wurde. Die Verarbeitung von Videos mit Dynamic Media ist zwar nicht erforderlich, wird aber für den Fall vorausgesetzt, dass eine Viewer-Vorgabe für die Wiedergabe benötigt wird.
 
 Wenn Sie das Videoverarbeitungsprofil umgehen und Videos direkt auf YouTube veröffentlichen, bedeutet das einfach, dass das Video-Asset in Experience Manager Asset keine anzeigbare Miniatur erhält. Das bedeutet auch, dass nicht kodierte Videos in den Ausführungsmodi `dynamicmedia` oder `dynamicmedia_scene7` nicht mit den Asset-Typen für Dynamic Media funktionieren.
 
@@ -137,14 +137,14 @@ So konfigurieren Sie Google Cloud-Einstellungen:
 
 1. Nehmen Sie eine der folgenden Aktionen vor:
 
-   * Tippen Sie im Dashboard Ihres Projekts auf der Karte Erste Schritte auf **[!UICONTROL APIs erkunden und aktivieren]**.
-   * Tippen Sie im Dashboard Ihres Projekts auf der API-Karte auf **[!UICONTROL Übersicht über APIs]**.
+   * Tippen Sie im Dashboard Ihres Projekts auf der Karte „Erste Schritte“ auf die Option zum **[!UICONTROL Entdecken und Aktivieren von APIs]**.
+   * Tippen Sie im Dashboard Ihres Projekts auf der API-Karte auf die Option zum **[!UICONTROL Aufrufen der API-Übersicht]**.
 
    ![6_5_googleaccount-apis-enable2](assets/6_5_googleaccount-apis-enable2.png)
 
 1. Tippen Sie oben auf der Seite mit den APIs und Services auf die Option zum **[!UICONTROL Aktivieren von APIs und Services]**.
-1. Auf der Seite &quot;API-Bibliothek&quot;auf der linken Seite unter **[!UICONTROL Kategorie]** Tippen Sie auf **[!UICONTROL YouTube]**. Tippen Sie rechts auf der Seite auf **[!UICONTROL YouTube Data API]**.
-1. Tippen Sie auf der Seite &quot;YouTube Data API v3&quot;auf **[!UICONTROL Aktivieren]**.
+1. Tippen Sie in der API-Bibliothek auf der linken Seite unter **[!UICONTROL Kategorie]** auf **[!UICONTROL YouTube]**. Tippen Sie rechts auf der Seite auf **[!UICONTROL YouTube-Daten-API]**.
+1. Tippen Sie auf der Seite zur YouTube-Daten-API v3 auf die Option **[!UICONTROL Aktivieren]**.
 
    ![6_5_googleaccount-apis-enable3](assets/6_5_googleaccount-apis-enable3.png)
 
@@ -182,7 +182,7 @@ So konfigurieren Sie Google Cloud-Einstellungen:
 
    **Hinweis**: Dieses Pfadbeispiel dient nur zu Veranschaulichungszwecken.
 
-1. Klicken **[!UICONTROL OAuth-Client-ID erstellen]**.
+1. Klicken Sie auf **[!UICONTROL OAuth-Client-ID erstellen]**.
 1. Wählen Sie auf der Seite **[!UICONTROL Anmeldeinformationen zu Projekt hinzufügen]** in Schritt 3 unter der Überschrift **[!UICONTROL OAuth 2.0-Einverständnisbildschirm einrichten]** die derzeit verwendete E-Mail-Adresse für Gmail aus.
 
    ![6_5_googleaccount-apis-createcrecredentials-screen](assets/6_5_googleaccount-apis-createcredentials-consentscreen.png)
@@ -257,7 +257,7 @@ Mit Experience Manager 6.4 wurde eine neue Methode für die Touch-Benutzeroberfl
 1. Tippen Sie oben links in Experience Manager auf das Experience Manager-Logo und dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Konfiguration der YouTube-Veröffentlichung]**.
 1. Tippen Sie auf **[!UICONTROL global]** (nicht auswählen).
 
-1. Tippen Sie oben rechts auf der globalen Seite auf **[!UICONTROL Erstellen]**.
+1. Klicken Sie oben rechts auf der globalen Seite auf **[!UICONTROL Erstellen]**.
 1. Geben Sie auf der Seite „YouTube-Veröffentlichungskonfiguration erstellen“ unter „Google Cloud Platform-Einstellungen“ im Feld **[!UICONTROL Anwendungsname]** die Google-Projekt-ID ein.
 
    Sie haben die Projekt-ID bereits während der Konfiguration der Google Cloud-Einstellungen angegeben.
@@ -272,13 +272,13 @@ Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet, Sie werden
 
    Richten Sie jetzt YouTube-Kanäle in Experience Manager ein.
 
-1. Tippen **[!UICONTROL Kanal hinzufügen]**.
+1. Tippen Sie auf **[!UICONTROL Kanal hinzufügen]**.
 1. Geben Sie im Dialogfeld „Kanalname“ den Namen des Kanals ein, den Sie zuvor in der Aufgabe zum **[!UICONTROL Hinzufügen von Kanälen zu YouTube]** erstellt haben.
 
    Sie können optional eine Beschreibung hinzufügen.
 
 1. Tippen Sie auf **[!UICONTROL Hinzufügen]**.
-1. Die Authentifizierung mit YouTube/Google wird angezeigt. Wenn Sie nicht bereits beim Google Cloud-Konto angemeldet sind, überspringen Sie diesen Schritt.
+1. Die YouTube-/Google-Authentifizierung wird angezeigt. Wenn Sie nicht bereits beim Google Cloud-Konto angemeldet sind, überspringen Sie diesen Schritt.
 
    * Geben Sie den Google-Benutzernamen und das -Kennwort ein, der bzw. das mit der Google-Projekt-ID und dem obigen JSON-Text verknüpft ist.
    * In Abhängigkeit davon, über wie viele Kanäle Ihr Konto verfügt, werden mindestens zwei Elemente angezeigt. Wählen Sie einen Kanal aus. Wählen Sie keine E-Mail-Adresse aus, da es sich hierbei nicht um einen Kanal handelt.
@@ -292,7 +292,7 @@ Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet, Sie werden
 1. Tippen Sie auf das Symbol der Dropdown-Liste (umgekehrtes Caret-Zeichen), um die Liste der verfügbaren Tags in Experience Manager anzuzeigen.
 1. Tippen Sie auf einen oder mehrere Tags, damit Sie sie hinzufügen können.
 
-   Um ein hinzugefügtes Tag zu löschen, wählen Sie es aus und tippen Sie auf **[!UICONTROL X]**.
+   Wählen Sie zum Löschen eines von Ihnen hinzugefügten Tags das Tag aus und tippen Sie auf **[!UICONTROL X]**.
 
 1. Wenn Sie alle gewünschten Tags hinzugefügt haben, tippen Sie auf **[!UICONTROL Speichern]**.
 
@@ -324,7 +324,7 @@ Lassen Sie das Dialogfeld „YouTube-Kontoeinstellungen“ geöffnet, da Sie gle
    Sie können optional eine Beschreibung hinzufügen.
 
 1. Tippen Sie auf **[!UICONTROL OK]**.
-1. Die Authentifizierung mit YouTube/Google wird angezeigt. Wenn Sie nicht bereits beim Google Cloud-Konto angemeldet sind, überspringen Sie diesen Schritt.
+1. Die YouTube-/Google-Authentifizierung wird angezeigt. Wenn Sie nicht bereits beim Google Cloud-Konto angemeldet sind, überspringen Sie diesen Schritt.
 
    * Geben Sie den Google-Benutzernamen und das -Kennwort ein, der bzw. das mit der Google-Projekt-ID und dem obigen JSON-Text verknüpft ist.
    * In Abhängigkeit davon, über wie viele Kanäle Ihr Konto verfügt, werden mindestens zwei Elemente angezeigt. Wählen Sie einen Kanal aus. Wählen Sie keine E-Mail-Adresse aus, da es sich hierbei nicht um einen Kanal handelt.
@@ -338,7 +338,7 @@ Lassen Sie das Dialogfeld „YouTube-Kontoeinstellungen“ geöffnet, da Sie gle
 1. Tippen Sie auf das Symbol der Dropdown-Liste (umgekehrtes Caret-Zeichen), um die Liste der verfügbaren Tags in Experience Manager anzuzeigen.
 1. Tippen Sie auf einen oder mehrere Tags, damit Sie sie hinzufügen können.
 
-   Um ein hinzugefügtes Tag zu löschen, wählen Sie es aus und tippen Sie auf **X**.
+   Um ein von Ihnen hinzugefügtes Tag zu löschen, wählen Sie das Tag aus und tippen Sie auf **X**.
 
 1. Wenn Sie alle gewünschten Tags hinzugefügt haben, tippen Sie auf **[!UICONTROL OK]**.
 
@@ -379,7 +379,7 @@ Fügen Sie den kopierten Wert in den geöffneten Texteditor ein. Sie benötigen 
 
 1. Klicken Sie auf der Seite „Metadatenprofile“ in der rechten oberen Ecke der Seite auf **[!UICONTROL Erstellen]**.
 1. Geben Sie im Dialogfeld „Metadatenprofil hinzufügen“ im Textfeld **[!UICONTROL Profiltitel]** den Namen `YouTube Video` ein. Klicken Sie danach auf **[!UICONTROL Erstellen]**.
-1. Klicken Sie auf der Seite &quot;Metadatenprofil-Editor&quot;auf das **[!UICONTROL Voranbringen]** Registerkarte.
+1. Klicken Sie auf der Seite „Metadatenprofil-Editor“ auf die Registerkarte **[!UICONTROL Erweitert]**.
 1. Fügen Sie die kopierten YouTube-Publishing-Werte dem Profil hinzu, indem Sie folgende Schritte ausführen:
 
    * Klicken Sie rechts auf der Seite auf die Registerkarte **[!UICONTROL Formular erstellen]**.
@@ -413,9 +413,9 @@ Nun verknüpfen Sie die Tags, die Sie den Video-Assets zuvor hinzugefügt haben.
 
 >[!NOTE]
 >
->Bei der Ausführung des Dynamic Media-Scene7-Modus wird Ihr Asset bei der Veröffentlichung nicht automatisch auf YouTube veröffentlicht. Wenn der Dynamic Media-Scene7-Modus eingerichtet ist, stehen zwei Veröffentlichungsoptionen zur Auswahl: **[!UICONTROL Sofort]** oder **[!UICONTROL Bei Aktivierung]**.
+>Bei der Ausführung des Dynamic Media-Scene7-Modus wird Ihr Asset bei der Veröffentlichung nicht automatisch auf YouTube veröffentlicht. Nach der Einrichtung des Scene7-Modus von Dynamic Media stehen zwei Veröffentlichungsoptionen zur Auswahl: **[!UICONTROL Sofort]** oder **[!UICONTROL Bei Aktivierung]**.
 >
->**[!UICONTROL Sofort veröffentlichen]** bedeutet, dass das hochgeladene Asset - nachdem es mit IPS synchronisiert wurde - automatisch im Bereitstellungssystem veröffentlicht wird. Das gilt zwar für Dynamic Media, aber nicht für YouTube. Um auf YouTube zu veröffentlichen, müssen Sie über die Experience Manager-Autorenumgebung veröffentlichen.
+>**[!UICONTROL Sofort veröffentlichen]** bedeutet, dass das hochgeladene Asset nach dem Synchronisieren mit IPS automatisch im Bereitstellungssystem veröffentlicht wird. Das gilt zwar für Dynamic Media, aber nicht für YouTube. Um auf YouTube zu veröffentlichen, müssen Sie über die Experience Manager-Autorenumgebung veröffentlichen.
 
 >[!NOTE]
 >
@@ -423,7 +423,7 @@ Nun verknüpfen Sie die Tags, die Sie den Video-Assets zuvor hinzugefügt haben.
 >
 >Siehe [Überwachen der Videokodierung und des YouTube-Veröffentlichungs-Fortschritts](#monitoring-video-encoding-and-youtube-publishing-progress).
 >
->Ausführlichere Fortschrittsinformation können Sie dem YouTube-Protokoll unter „Replikation“ entnehmen. Beachten Sie jedoch, dass diese Überwachung Administratorzugriff erfordert.
+>Ausführlichere Fortschrittsinformation können Sie dem YouTube-Protokoll unter „Replikation“ entnehmen. Beachten Sie allerdings, dass Sie für die Überwachung solcher Informationen einen Administratorzugriff benötigen.
 
 **So veröffentlichen Sie Videos in Ihrem YouTube-Kanal:**
 
@@ -436,8 +436,8 @@ Nun verknüpfen Sie die Tags, die Sie den Video-Assets zuvor hinzugefügt haben.
    Denken Sie daran, dass die Tags mit dem YouTube-Kanal verknüpft werden müssen.
 
 1. Klicken Sie oben rechts auf **[!UICONTROL Auswählen]**.
-1. Klicken Sie in der rechten oberen Ecke der Eigenschaftenseite des Videos auf **[!UICONTROL Speichern und schließen]**.
-1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Quick Publish]**.
+1. Klicken Sie in der rechten oberen Ecke der Seite mit den Videoeigenschaften auf **[!UICONTROL Speichern und schließen]**.
+1. Wählen Sie in der Symbolleiste **[!UICONTROL Quick Publish]** aus.
 
    Weitere Informationen finden Sie im Abschnitt zum [Verwalten von Veröffentlichungen mit Experience Manager Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/publication-management-feature-video-use.html?lang=de).
 
@@ -463,7 +463,7 @@ Sie können nach dem Veröffentlichen des Videos eine YouTube-URL-Zeichenfolge a
 
 **So verknüpfen Sie YouTube-URLs mit einer Web-Anwendung:**
 
-1. Navigieren Sie zum *YouTube veröffentlicht* Video-Asset, dessen URL Sie kopieren möchten, und wählen Sie es aus.
+1. Navigieren Sie zum *auf YouTube veröffentlichten* Video-Asset, dessen URL Sie kopieren möchten, und wählen Sie es aus.
 
    Denken Sie daran, dass YouTube-URLs erst kopiert werden können, *nachdem* Sie die Video-Assets in YouTube *veröffentlicht* haben.
 
@@ -490,9 +490,9 @@ Wenn Sie die Veröffentlichung eines Video-Assets in Experience Manager aufheben
 1. Navigieren Sie zu den Video-Assets, deren Veröffentlichung in Ihrem YouTube-Kanal Sie aufheben möchten.
 1. Wählen Sie in einem Asset-Auswahlmodus eines oder mehrere der veröffentlichten Video-Assets aus.
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Veröffentlichung verwalten]**. Tippen Sie auf das Drei-Punkte-Symbol (. . . ) in der Symbolleiste, sodass **[!UICONTROL Veröffentlichung verwalten]** geöffnet wird.
-1. Tippen Sie auf der Seite Veröffentlichung verwalten auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
-1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Nächste]**.
-1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
+1. Klicken Sie auf der Seite „Veröffentlichung verwalten“ auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
+1. Tippen Sie oben rechts auf der Seite auf **[!UICONTROL Weiter]**.
+1. Klicken Sie oben rechts auf der Seite auf **[!UICONTROL Veröffentlichung rückgängig machen]**.
 
 ## Überwachen des Fortschritts von Videokodierung und YouTube-Veröffentlichung {#monitoring-video-encoding-and-youtube-publishing-progress}
 
@@ -590,8 +590,8 @@ Wie Sie Benachrichtigungen konfigurieren, hängt davon ab, ob Sie Benachrichtigu
 * Gehen Sie bei YouTube-Veröffentlichungsaufträgen wie folgt vor:
 
 1. Tippen Sie in Experience Manager auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
-1. Wählen Sie auf der Seite &quot;Workflow-Modelle&quot;die Option **[!UICONTROL In YouTube veröffentlichen]** und tippen Sie dann auf **[!UICONTROL Bearbeiten]** in der Symbolleiste.
-1. Tippen Sie in der rechten oberen Ecke der Workflow-Seite In YouTube veröffentlichen auf **[!UICONTROL Bearbeiten]**.
+1. Wählen Sie auf der Seite zu den Workflow-Modellen die Option **[!UICONTROL In YouTube veröffentlichen]** und tippen Sie dann auf **[!UICONTROL Bearbeiten]** in der Symbolleiste.
+1. Tippen Sie in der rechten oberen Ecke der Workflow-Seite „In YouTube veröffentlichen“ auf **[!UICONTROL Bearbeiten]**.
 1. Zeigen Sie mit der Maus auf die Komponente für den YouTube-Upload und tippen Sie einmal, um die Inline-Symbolleiste anzuzeigen.
 
    ![6_5_publishtoyoutubeworkflow](assets/6_5_publishtoyoutubeworkflow.png)
@@ -608,7 +608,7 @@ Wie Sie Benachrichtigungen konfigurieren, hängt davon ab, ob Sie Benachrichtigu
 
    * Start der Veröffentlichung
    * Fehler beim Veröffentlichen
-   * Abschluss der Veröffentlichung - enthält Informationen zu Kanälen und URLs
+   * Abschluss der Veröffentlichung – enthält Informationen zu Kanälen und URLs
 
    Wenn Sie ein Kontrollkästchen deaktivieren, erhalten Sie die angegebene E-Mail-Benachrichtigung vom Workflow „YouTube-Veröffentlichung“ nicht.
 
