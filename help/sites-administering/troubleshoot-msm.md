@@ -5,7 +5,7 @@ feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
 source-git-commit: a323e6c30bf2c226f6613d1b9b037a0beedbfc0d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '762'
 ht-degree: 100%
 
@@ -35,7 +35,7 @@ MSM enthält mehrere Servlets, die mit Selektoren in den Ressourcen-URLs angefor
    * Beispiel:
       `http://localhost:4502/content/wknd/ca/en.msm.json`
 
-Diese Servlets generieren DEBUG-Protokollmeldungen über den `com.day.cq.wcm.msm`-Logger, die ebenfalls hilfreich sein können.
+Diese Servlets generieren DEBUG-Protokollmeldungen über den Logger `com.day.cq.wcm.msm`, die ebenfalls hilfreich sein können.
 
 ## Abrufen MSM-spezifischer Informationen im Repository {#checking-repo}
 
