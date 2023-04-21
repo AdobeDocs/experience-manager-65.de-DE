@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von E-Mail-Benachrichtigungen
 seo-title: Configuring Email Notification
-description: Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in AEM konfigurieren können.
+description: Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in AEM konfigurieren.
 seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: ea5abbbe8f928a63b7d3d6f96f3007a3c82706e0
-workflow-type: ht
+source-git-commit: e803fde42cfb7b7c9d3fb6483ca661ce386d6464
+workflow-type: tm+mt
 source-wordcount: '2116'
-ht-degree: 100%
+ht-degree: 80%
 
 ---
 
@@ -23,23 +23,23 @@ AEM sendet E-Mail-Benachrichtigungen an Benutzer, die:
 
 * Seitenereignisse wie Änderungen oder Replikationen abonniert haben. Im Abschnitt [Benachrichtigungs-Posteingang](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) ist beschrieben, wie solche Ereignisse abonniert werden können.
 
-* Forenereignisse abonniert haben.
-* einen Schritt innerhalb eines Workflows durchführen müssen. Im Abschnitt [Teilnehmer-Schritt](/help/sites-developing/workflows-step-ref.md#participant-step) ist beschreiben, wie E-Mail-Benachrichtigungen in einem Workflow ausgelöst werden können.
+* Forumsveranstaltungen abonniert haben.
+* Führen Sie einen Schritt in einem Workflow aus. Die [Teilnehmer-Schritt](/help/sites-developing/workflows-step-ref.md#participant-step) -Abschnitt beschreibt den Trigger von E-Mail-Benachrichtigungen in einem Workflow.
 
 Voraussetzungen:
 
-* Benutzer müssen über eine in ihrem Profil festgelegte, gültige E-Mail-Adresse verfügen.
+* Für den/die Benutzer muss/müssen in seinem Profil eine gültige E-Mail-Adresse definiert sein.
 * Der **Day CQ Mail Service** muss ordnungsgemäß konfiguriert sein.
 
-Wenn ein Benutzer benachrichtigt wird, erhält er eine E-Mail in der Sprache, die in seinem Profil festgelegt ist. Jede Sprache verfügt über eine eigene, anpassbare Vorlage. Für neue Sprachen können neue E-Mail-Vorlagen hinzugefügt werden.
+Wenn ein Benutzer benachrichtigt wird, erhält er eine E-Mail in der Sprache, die in seinem Profil definiert ist. Jede Sprache verfügt über eine eigene Vorlage, die angepasst werden kann. Für neue Sprachen können neue E-Mail-Vorlagen hinzugefügt werden.
 
 >[!NOTE]
 >
 >Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Dienste. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-## Konfigurieren des E-Mail-Diensts {#configuring-the-mail-service}
+## Konfigurieren des Mail-Dienstes {#configuring-the-mail-service}
 
-Damit AEM E-Mails versenden kann, muss der **Day CQ Mail Service** ordnungsgemäß konfiguriert sein. Sie können die Konfiguration in der Web-Konsole anzeigen. Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Dienste. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
+Damit AEM E-Mails versenden können, muss die **Day CQ Mail Service** muss ordnungsgemäß konfiguriert sein. Sie können die Konfiguration in der Webkonsole anzeigen. Bei der Verwendung von AEM gibt es mehrere Methoden zur Verwaltung der Konfigurationseinstellungen für solche Dienste. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
 Es gelten die folgenden Beschränkungen:
 
@@ -67,11 +67,11 @@ Fügen Sie zum Konfigurieren der „Von“-E-Mail-Adresse einen `sling:OsgiConfi
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` vom Typ `sling:OsgiConfig`
 
-1. Fügen Sie eine `String`-Eigenschaft zum Knoten mit dem Namen `email.from` hinzu. Legen Sie zu dem Wert die E-Mail-Adresse fest, die Sie verwenden möchten.
+1. Fügen Sie eine `String`-Eigenschaft zum Knoten mit dem Namen `email.from` hinzu. Geben Sie als Wert die E-Mail-Adresse an, die Sie verwenden möchten.
 
 1. Klicken Sie auf **Alle speichern**.
 
-Gehen Sie wie folgt vor, um den Knoten in den Inhaltspaketen Ihrer Quellordner festzulegen:
+Gehen Sie wie folgt vor, um den Knoten in den Quellordnern des Inhaltspakets zu definieren:
 
 1. Erstellen Sie in `jcr_root/apps/*app_name*/config folder` eine Datei mit dem Namen `com.day.cq.wcm.notification.email.impl.EmailChannel.xml`.
 
@@ -84,15 +84,15 @@ Gehen Sie wie folgt vor, um den Knoten in den Inhaltspaketen Ihrer Quellordner f
 
 ## Konfigurieren des Workflow-E-Mail-Benachrichtigungsdiensts {#configuring-the-workflow-email-notification-service}
 
-Wenn Sie Workflow-E-Mail-Benachrichtigungen erhalten, sind beide „Von“-E-Mail-Adressen und das Host-URL-Präfix auf Standardwerte eingestellt. Sie können diese Werte ändern, indem Sie den **Day CQ Workflow Email Notification Service** in der Web-Konsole konfigurieren. Wenn Sie dies tun, wird empfohlen, die Änderung im Repository beizubehalten.
+Wenn Sie Workflow-E-Mail-Benachrichtigungen erhalten, werden sowohl die E-Mail-Adresse als auch das Host-URL-Präfix auf Standardwerte gesetzt. Sie können diese Werte ändern, indem Sie die **Day CQ Workflow Email Notification Service** in der Web-Konsole. Wenn Sie dies tun, wird empfohlen, die Änderung im Repository beizubehalten.
 
 Die Standardkonfiguration sieht in der Web-Konsole wie folgt aus:
 
 ![chlimage_1-277](assets/chlimage_1-277.png)
 
-### E-Mail-Vorlagen für die Seitenbenachrichtigung {#email-templates-for-page-notification}
+### E-Mail-Vorlagen für Seitenbenachrichtigungen {#email-templates-for-page-notification}
 
-E-Mail-Vorlagen für die Seitenbenachrichtigungen sind zu finden unter:
+E-Mail-Vorlagen für Seitenbenachrichtigungen finden Sie unten:
 
 `/libs/settings/notification-templates/com.day.cq.wcm.core.page`
 
@@ -123,10 +123,10 @@ Die englische E-Mail-Vorlage für die Seitenbenachrichtigung können Sie wie fol
 
    `/libs/settings/notification-templates/com.day.cq.wcm.core.page/en.txt`
 
-1. Passen Sie die Datei an Ihre Anforderungen an.
+1. Ändern Sie die Datei nach Bedarf.
 1. Speichern Sie die Änderungen.
 
-Die Vorlage muss folgendes Format aufweisen:
+Die Vorlage muss das folgende Format aufweisen:
 
 ```
  subject=<text_1>
@@ -150,9 +150,9 @@ Dabei kann &lt;text_x> ein Mix von statischem Text und dynamischen Zeichenfolgen
 
    PageModified => /content/geometrixx/en/products
 
-### E-Mail-Vorlagen für die Forumsbenachrichtigung {#email-templates-for-forum-notification}
+### E-Mail-Vorlagen für Forumsbenachrichtigungen {#email-templates-for-forum-notification}
 
-E-Mail-Vorlagen für die Forumsbenachrichtigungen sind zu finden unter:
+E-Mail-Vorlagen für Forumsbenachrichtigungen finden Sie unter:
 
 `/etc/notification/email/default/com.day.cq.collab.forum`
 
@@ -181,10 +181,10 @@ Die englische E-Mail-Vorlage für die Forumsbenachrichtigung können Sie wie fol
 
    `/etc/notification/email/default/com.day.cq.collab.forum/en.txt`
 
-1. Passen Sie die Datei an Ihre Anforderungen an.
+1. Ändern Sie die Datei nach Bedarf.
 1. Speichern Sie die Änderungen.
 
-Die Vorlage muss folgendes Format aufweisen:
+Die Vorlage muss das folgende Format aufweisen:
 
 ```
  subject=<text_1>
@@ -201,9 +201,9 @@ Die folgenden Variablen können innerhalb der E-Mail-Vorlage für Forumsbenachri
 
 * `${forum.path}`, der Pfad zur Forumsseite.
 
-### E-Mail-Vorlagen für die Workflow-Benachrichtigung {#email-templates-for-workflow-notification}
+### E-Mail-Vorlagen für Workflow-Benachrichtigung {#email-templates-for-workflow-notification}
 
-Die (englische) Vorlage für die Workflow-Benachrichtigungen befindet sich unter:
+Die E-Mail-Vorlage für Workflow-Benachrichtigungen (Englisch) befindet sich unter:
 
 `/libs/settings/workflow/notification/email/default/en.txt`
 
@@ -236,10 +236,10 @@ Die englische E-Mail-Vorlage für die Benachrichtigung über ein Workflow-Ereign
 
    `/libs/settings/workflow/notification/email/default/en.txt`
 
-1. Passen Sie die Datei an Ihre Anforderungen an.
+1. Ändern Sie die Datei nach Bedarf.
 1. Speichern Sie die Änderungen.
 
-Die Vorlage muss folgendes Format aufweisen:
+Die Vorlage muss das folgende Format aufweisen:
 
 ```
 subject=<text_1>
@@ -286,9 +286,9 @@ Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 * `${payload.path}`, der Pfad der Payload
 * `${host.prefix}`, das Host-Präfix, z. B. http://localhost:4502
 
-### Hinzufügen einer E-Mail-Vorlage in einer neuen Sprache {#adding-an-email-template-for-a-new-language}
+### Hinzufügen einer E-Mail-Vorlage für eine neue Sprache {#adding-an-email-template-for-a-new-language}
 
-Sie können wie folgt eine Vorlage in einer neuen Sprache hinzufügen:
+So fügen Sie eine Vorlage für eine neue Sprache hinzu:
 
 1. Fügen Sie in CRXDE eine Datei `<language-code>.txt` hinzu unter:
 
@@ -303,13 +303,13 @@ Sie können wie folgt eine Vorlage in einer neuen Sprache hinzufügen:
 >
 >Der `<language-code>`, der als Dateiname der E-Mail-Vorlage verwendet wird, muss ein von AEM anerkannter, aus zwei Kleinbuchstaben bestehender Sprach-Code sein. AEM nutzt die Sprach-Codes gemäß ISO-639-1.
 
-## Konfigurieren von E-Mail-Benachrichtigungen für AEM Assets {#assetsconfig}
+## Konfigurieren von AEM Assets-E-Mail-Benachrichtigungen {#assetsconfig}
 
-Wenn Sammlungen in AEM Assets freigegeben werden oder ihre Freigabe aufgehoben wird, können Benutzer E-Mail-Benachrichtigungen von AEM erhalten. Um E-Mail-Benachrichtigungen zu konfigurieren, führen Sie diese Schritte aus.
+Wenn Sammlungen in AEM Assets freigegeben oder nicht freigegeben sind, können Benutzer E-Mail-Benachrichtigungen von AEM erhalten. Gehen Sie wie folgt vor, um E-Mail-Benachrichtigungen zu konfigurieren.
 
-1. Konfigurieren Sie den E-Mail-Dienst, wie oben unter [Konfigurieren des E-Mail-Diensts](/help/sites-administering/notification.md#configuring-the-mail-service) beschrieben.
+1. Konfigurieren Sie den E-Mail-Dienst, wie oben unter [Konfigurieren des Mail-Dienstes](/help/sites-administering/notification.md#configuring-the-mail-service).
 1. Melden Sie sich in AEM als Admin an. Klicken Sie auf **Tools** > **Vorgänge** > **Web-Konsole**, um die Konfiguration der Web-Konsole zu öffnen.
-1. Bearbeiten Sie das **Day CQ DAM-Ressourcensammlungs-Servlet**. Wählen Sie **E-Mail senden**. Klicken Sie auf **Speichern**.
+1. Bearbeiten Sie das **Day CQ DAM-Ressourcensammlungs-Servlet**. Auswählen **Versand-E-Mail**. Klicken Sie auf **Speichern**.
 
 ## Einrichten von OAuth {#setting-up-oauth}
 
@@ -464,6 +464,6 @@ Aktivieren Sie jetzt die OAuth-Komponenten. Gehen Sie dazu wie folgt vor:
 Bestätigen Sie abschließend die Konfiguration, indem Sie:
 
 1. zur Adresse der Veröffentlichungsinstanz wechseln und sich als Admin anmelden
-1. eine neue Registerkarte im Browser öffnen und zu `http://serveraddress:serverport/services/mailer/oauth2/authorize` navigieren. Dadurch werden Sie zur Seite Ihres SMTP-Anbieters weitergeleitet, in diesem Fall Gmail.
+1. eine neue Registerkarte im Browser öffnen und zu `http://serveraddress:serverport/services/mailer/oauth2/authorize` navigieren. Dadurch werden Sie zur Seite Ihres SMTP-Anbieters weitergeleitet, in diesem Fall zu Outlook.
 1. Anmelden und Einverständnis zur Erteilung der erforderlichen Berechtigungen
 1. Nach der Zustimmung wird das Token im Repository gespeichert. Sie können es unter `accessToken` aufrufen, indem Sie direkt auf diese URL auf Ihrer Veröffentlichungsinstanz zugreifen: `http://serveraddress:serverport/crx/de/index.jsp#/conf/global/settings/mailer/oauth`
