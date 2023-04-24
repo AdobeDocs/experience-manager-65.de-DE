@@ -10,46 +10,46 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '2265'
-ht-degree: 100%
+source-git-commit: a296e459461973fc2dbd0641c6fdda1d89d8d524
+workflow-type: tm+mt
+source-wordcount: '2262'
+ht-degree: 33%
 
 ---
 
 # Fehlerbehebung bei langsamen Abfragen{#troubleshooting-slow-queries}
 
-## Klassifikation langsamer Abfragen {#slow-query-classifications}
+## Langsame Abfrageklassifizierungen {#slow-query-classifications}
 
-Es gibt 3 Hauptklassifikationen von langsamen Abfragen in AEM, die hier nach Schweregrad aufgelistet sind:
+Es gibt drei Hauptklassifizierungen langsamer Abfragen in AEM, die nach Schweregrad aufgelistet sind:
 
 1. **Abfragen ohne Index**
 
-   * Abfragen, die **nicht** auf einen Index aufgelöst werden und den JCR-Inhalt nach Ergebnissen durchsuchen
+   * Abfragen, die **not** in einen Index auflösen und den JCR-Inhalt durchlaufen, um Ergebnisse zu erfassen
 
-1. **Abfragen mit schlechter Einschränkung (oder schlechtem Bereich)**
+1. **Unzulänglich eingeschränkte Abfragen (oder Bereiche)**
 
-   * Abfragen, die auf einen Index aufgelöst werden, aber alle Indexeinträge durchlaufen müssen, um Ergebnisse zu sammeln
+   * Abfragen, die zu einem Index aufgelöst werden, aber alle Indexeinträge durchlaufen müssen, um Ergebnisse zu erfassen
 
-1. **Abfragen mit vielen Ergebnissen**
+1. **Abfragen mit großen Ergebnismengen**
 
-   * Abfragen, die sehr viele Ergebnisse zurückgeben
+   * Abfragen, die eine große Anzahl von Ergebnissen zurückgeben
 
-Die ersten beiden Abfrageklassifikationen (ohne Index und schlechte Einschränkung) sind langsam, weil sie die Oak-Abfrage-Engine zwingen, jedes **potenzielle** Ergebnis (Inhaltsknoten oder Indexeintrag) zu untersuchen, um festzustellen, welche zur **tatsächlichen** Ergebnismenge gehören.
+Die ersten beiden Classifications von Abfragen (indexlos und schlecht eingeschränkt) sind langsam. Sie sind langsam, da sie die Oak-Abfrage-Engine zwingen, jede **Potenzial** result (Inhaltsknoten oder Indexeintrag), um zu identifizieren, welche zum **tatsächlich** Ergebnismenge.
 
-Das Untersuchen aller potenziellen Ergebnisse wird als Durchlaufen bezeichnet.
+Die Untersuchung jedes potenziellen Ergebnisses wird als Durchlaufen bezeichnet.
 
-Da jedes potenzielle Ergebnis überprüft werden muss, steigen die Kosten zur Bestimmung der tatsächlichen Ergebnismenge linear zur Anzahl der potenziellen Ergebnisse.
+Da jedes potenzielle Ergebnis überprüft werden muss, steigen die Kosten zur Bestimmung des tatsächlichen Ergebnissatzes linear mit der Anzahl potenzieller Ergebnisse.
 
-Durch Abfragebeschränkungen und Tuning von Indizes können die Indexdaten in einem optimierten Format gespeichert werden, das schnell Ergebnisse produziert und eine lineare Inspektion potenzieller Ergebnismengen unnötig macht.
+Durch das Hinzufügen von Abfragebeschränkungen und das Anpassen von Indizes können die Indexdaten in einem optimierten Format gespeichert werden, das einen schnellen Abruf der Ergebnisse ermöglicht und die lineare Inspektion potenzieller Ergebnismengen verringert oder beseitigt.
 
-In AEM 6.3 schlägt die Abfrage standardmäßig fehl und löst einen Ausnahmefehler aus, wenn 100.000 potenzielle Ergebnisse durchlaufen wurden. Dieser Grenzwert kommt in AEM-Versionen vor AEM 6.3 standardmäßig nicht vor, kann jedoch über die Einstellungen der Apache Jackrabbit-Abfrage-Engine in der OSGi-Konfiguration und dem QueryEngineSettings-JMX-Bean festgelegt werden (Eigenschaft LimitReads).
+In AEM 6.3 schlägt die Abfrage standardmäßig fehl und löst eine Ausnahme aus, wenn ein Durchlauf von 100.000 erreicht wird. Diese Beschränkung existiert nicht standardmäßig in AEM Versionen vor AEM 6.3, kann jedoch über die OSGi-Konfiguration Apache Jackrabbit Query Engine Settings und das JMX-Bean QueryEngine Settings (Eigenschaft LimitReads) festgelegt werden.
 
 ### Erkennen von Abfragen ohne Index {#detecting-index-less-queries}
 
 #### Während der Entwicklung {#during-development}
 
-Erklären Sie **alle** Abfragen und stellen Sie sicher, dass die Abfragepläne nicht die Erklärung **/&amp;ast; traverse** enthalten. Beispiel für das Durchlaufen eines Abfrageplans:
+Erklären **all** Abfragen und stellen sicher, dass ihre Abfragepläne nicht die **/&amp;ast; traverse** Erklärung. Beispiel für das Durchlaufen eines Abfrageplans:
 
 * **PLAN:** `[nt:unstructured] as [a] /* traverse "/content//*" where ([a].[unindexedProperty] = 'some value') and (isdescendantnode([a], [/content])) */`
 
@@ -58,15 +58,15 @@ Erklären Sie **alle** Abfragen und stellen Sie sicher, dass die Abfragepläne n
 * Überwachen Sie `error.log` nach Index-losen Durchlaufabfragen:
 
    * `*INFO* org.apache.jackrabbit.oak.query.QueryImpl Traversal query (query without index) ... ; consider creating and index`
-   * Diese Meldung wird nur aufgezeichnet, wenn kein Index verfügbar ist und die Abfrage möglicherweise viele Knoten durchlaufen wird. Meldungen werden nicht aufgezeichnet, wenn ein Index verfügbar ist oder die zu durchlaufende Knotenanzahl gering und somit schnell zu durchlaufen ist.
+   * Diese Meldung wird nur protokolliert, wenn kein Index verfügbar ist und die Abfrage potenziell viele Knoten durchläuft. Nachrichten werden nicht protokolliert, wenn ein Index verfügbar ist, aber die Anzahl der Durchläufe ist gering und daher schnell.
 
 * Besuchen Sie die AEM-Betriebskonsole [Abfrageleistung](/help/sites-administering/operations-dashboard.md#query-performance) und [erklären Sie](/help/sites-administering/operations-dashboard.md#explain-query) langsame Abfragen, die einen Durchlauf durchführen werden oder keine Index-Abfrageerklärungen aufweisen.
 
-### Erkennen von schlecht eingeschränkten Abfragen {#detecting-poorly-restricted-queries}
+### Erkennen schlecht eingeschränkter Abfragen {#detecting-poorly-restricted-queries}
 
 #### Während der Entwicklung {#during-development-1}
 
-Erklären Sie alle Abfragen und stellen Sie sicher, dass sie auf einen Index aufgelöst werden, der den Eigenschaftsbeschränkungen der Abfrage entspricht.
+Erklären Sie alle Abfragen und stellen Sie sicher, dass sie in einen Index aufgelöst werden, der an die Eigenschaftsbeschränkungen der Abfrage angepasst ist.
 
 * Bei einer idealen Abdeckung des Abfrageplans sind `indexRules` für alle Eigenschaftsbeschränkungen vorhanden, mindestens aber für die strengsten Eigenschaftsbeschränkungen in der Abfrage.
 * Abfragen, die Ergebnisse sortieren, sollten auf einen Lucene-Eigenschaftsindex mit Indexregeln für die Sortierungseigenschaften aufgelöst werden, die `orderable=true.` setzen.
@@ -91,7 +91,7 @@ Vor dem Hinzufügen der cq:tags-Indexregel
 
    `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) *:* where [a].[jcr:content/cq:tags] = 'my:tag' */`
 
-Diese Abfrage wird auf den Index `cqPageLucene` aufgelöst. Da jedoch keine Eigenschaftsindexregel für `jcr:content` oder `cq:tags` vorhanden ist, wird bei der Prüfung der Einschränkung jeder Datensatz im Index `cqPageLucene` auf Übereinstimmung geprüft. Wenn also der Index 1 Million `cq:Page`-Knoten enthält, werden 1 Million Datensätze geprüft, um die Ergebnismenge zu bestimmen.
+Diese Abfrage wird auf den Index `cqPageLucene` aufgelöst. Da jedoch keine Eigenschaftsindexregel für `jcr:content` oder `cq:tags` vorhanden ist, wird bei der Prüfung der Einschränkung jeder Datensatz im Index `cqPageLucene` auf Übereinstimmung geprüft. Enthält der Index 1 Million `cq:Page` Knoten, werden dann 1 Million Datensätze überprüft, um die Ergebnismenge zu bestimmen.
 
 Nach dem Hinzufügen der cq:tags-Indexregel
 
@@ -119,13 +119,13 @@ Durch Hinzufügen der indexRule für `jcr:content/cq:tags` im Index `cqPageLucen
 
 Wenn eine Abfrage mit der Einschränkung `jcr:content/cq:tags` durchgeführt wird, kann der Index Ergebnisse nach Wert abfragen. Wenn also 100 `cq:Page`-Knoten den Wert `myTagNamespace:myTag` aufweisen, werden nur diese 100 Ergebnisse zurückgegeben. Die übrigen 999.000 werden aus den Einschränkungsprüfungen ausgeschlossen, was die Leistung um den Faktor 10.000 verbessert.
 
-Selbstverständlich verringern weitere Abfragebeschränkungen die möglichen Ergebnismengen und führen zu weiterer Abfrageoptimierung.
+Weitere Abfrageeinschränkungen reduzieren die zulässigen Ergebnismengen und optimieren die Abfrageoptimierung weiter.
 
-Ebenso würde ohne eine weitere Indexregel für die Eigenschaft `cq:tags` selbst eine Volltextabfrage mit einer Einschränkung auf `cq:tags` schlecht abschneiden, da die Ergebnisse aus dem Index alle Volltexttreffer zurückgeben würden. Die Einschränkung auf cq:tags würde anschließend gefiltert werden.
+Gleichermaßen ohne zusätzliche Indexregel für `cq:tags` -Eigenschaft, selbst eine Volltextabfrage mit einer Beschränkung auf `cq:tags` würde nur schlecht funktionieren, da Ergebnisse aus dem Index alle Volltext-Übereinstimmungen zurückgeben würden. Die Einschränkung auf cq:tags würde anschließend gefiltert werden.
 
-Eine weitere Ursache von Filtern nach dem Index sind Zugangssteuerungslisten, die oft bei der Entwicklung übergangen werden. Stellen Sie sicher, dass die Abfrage keine Pfade zurückgibt, die dem Benutzer nicht zugänglich sind. Dies kann meist durch eine bessere Inhaltsstruktur sowie durch Bereitstellung relevanter Pfadbeschränkungen bei der Abfrage realisiert werden.
+Eine weitere Ursache für die Filterung nach dem Index ist Zugriffssteuerungslisten, die bei der Entwicklung häufig übersehen werden. Versuchen Sie sicherzustellen, dass die Abfrage keine Pfade zurückgibt, auf die der Benutzer möglicherweise nicht zugreifen kann. Dies kann durch eine bessere Inhaltsstruktur sowie durch Bereitstellung relevanter Pfadbeschränkungen für die Abfrage erfolgen.
 
-Eine gute Möglichkeit, um herauszufinden, ob der Lucene-Index viele Ergebnisse zurückgibt und dann eine sehr kleine Untermenge als Abfrageergebnis zurückgibt, besteht darin, DEBUG-Protokolle für `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex` zu aktivieren und zu prüfen, wie viele Dokumente aus dem Index geladen werden. Die Anzahl der Ergebnisse sollte nicht zu weit unter der Anzahl der geladenen Dokumente liegen. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
+Eine nützliche Möglichkeit, festzustellen, ob der Lucene-Index viele Ergebnisse zurückgibt, um eine kleine Teilmenge als Abfrageergebnis zurückzugeben, besteht darin, DEBUG-Protokolle für `org.apache.jackrabbit.oak.plugins.index.lucene.LucenePropertyIndex`. Auf diese Weise können Sie sehen, wie viele Dokumente aus dem Index geladen werden. Die Anzahl der Ergebnisse im Vergleich zur Anzahl der geladenen Dokumente sollte nicht unverhältnismäßig sein. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
 
 #### Nach der Bereitstellung {#post-deployment-1}
 
@@ -135,44 +135,44 @@ Eine gute Möglichkeit, um herauszufinden, ob der Lucene-Index viele Ergebnisse 
 
 * Besuchen Sie die in der AEM-Betriebskonsole [Abfrageleistung](/help/sites-administering/operations-dashboard.md#query-performance) und [erklären](/help/sites-administering/operations-dashboard.md#explain-query) Sie langsame Abfragen, wobei Sie nach Abfrageplänen suchen, die Abfrageeigenschaftseinschränkungen nicht in Indexeigenschaftsregeln auflösen.
 
-### Erkennen von Abfragen mit vielen Ergebnissen {#detecting-large-result-set-queries}
+### Erkennen von Abfragen mit großen Ergebnismengen {#detecting-large-result-set-queries}
 
 #### Während der Entwicklung {#during-development-2}
 
-Legen Sie niedrige Schwellenwerte für oak.queryLimitInMemory (z. B. 10000) und oak.queryLimitReads (z. B. 5000) und optimieren Sie die ressourcenintensive Abfrage, wenn die UnsupportedOperationException „The query read more than x nodes...“ auftritt.
+Setzen Sie niedrige Schwellenwerte für oak.queryLimitInMemory (z. B. 10000) und oak.queryLimitReads (z. B. 5000) und optimieren Sie die teure Abfrage, wenn Sie auf eine UnsupportedOperationException klicken, die besagt: &quot;Die Abfrage liest mehr als x Knoten...&quot;.
 
-Dies trägt zur Vermeidung ressourcenintensiver Abfragen bei (d. h. keine Sicherung durch einen Index oder Sicherung durch einen weniger abdeckenden Index). Beispielsweise führt eine Abfrage, die 1 Million Knoten liest, zu einer großen E/A-Menge – mit negativen Folgen für die Gesamtleistung der Anwendung. Jede Abfrage, die aufgrund eines überschrittenen Limits fehlschlägt, sollte also analysiert und optimiert werden.
+Die Festlegung niedriger Schwellenwerte verhindert ressourcenintensive Abfragen (d. h. nicht durch einen Index unterlegt oder durch einen Index mit geringerer Abdeckung unterlegt). Beispielsweise würde eine Abfrage, die eine Million Knoten liest, zu vielen I/O führen und die Gesamtleistung der Anwendung negativ beeinflussen. Daher sollten alle Abfragen, die aufgrund der obigen Beschränkungen fehlschlagen, analysiert und optimiert werden.
 
 #### Nach der Bereitstellung {#post-deployment-2}
 
 * Überwachen Sie die Protokolle auf Abfragen, die eine hohe Anzahl durchlaufener Knoten oder einen hohen Heap-Speicherverbrauch auslösen:
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
-   * Optimieren Sie die Abfrage, um die Anzahl durchlaufener Knoten zu reduzieren.
+   * Optimieren Sie die Abfrage, sodass Sie die Anzahl der durchsuchten Knoten reduzieren.
 
 * Überwachen Sie die Protokolle auf Abfragen, die einen hohen Heap-Speicherverbrauch auslösen:
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
-   * Optimieren Sie die Abfrage, um den Heap-Speicherverbrauch zu reduzieren.
+   * Optimieren Sie die Abfrage, sodass Sie den Heap-Speicherverbrauch reduzieren.
 
 Für die AEM-Versionen 6.0 bis 6.2 können Sie den Schwellenwert für das Durchlaufen von Knoten über JVM-Parameter im AEM-Startskript abstimmen, um zu verhindern, dass die Umgebung durch umfangreiche Abfragen überlastet wird. Folgende Werte werden empfohlen:
 
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-In AEM 6.3 sind die beiden oben stehenden Parameter standardmäßig vorkonfiguriert und können über die OSGi QueryEngineSettings bearbeitet werden.
+In AEM 6.3 sind die beiden oben genannten Parameter standardmäßig vorkonfiguriert und können über die OSGi QueryEngineSettings geändert werden.
 
 Weitere Informationen finden Sie unter: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
-## Verbesserung der Abfrageleistung {#query-performance-tuning}
+## Optimierung der Abfrageleistung {#query-performance-tuning}
 
-Das Motto der Abfrageleistungsoptimierung in AEM lautet:
+Das Motto der Optimierung der Abfrageleistung in AEM lautet:
 
-**„Je mehr Einschränkungen, desto besser.“**
+**&quot;Je mehr Einschränkungen, desto besser.&quot;**
 
-Im Folgenden werden einige empfohlene Anpassungen zur Verbesserung der Abfrageleistung beschrieben. Passen Sie zunächst die Abfrage an (ein geringfügiger Eingriff) und anschließend, wenn nötig, die Index-Definitionen.
+Im Folgenden werden die empfohlenen Anpassungen zur Gewährleistung der Abfrageleistung beschrieben. Passen Sie zuerst die Abfrage an, eine weniger störende Aktivität, und passen Sie bei Bedarf die Indexdefinitionen an.
 
-### Anpassen der Abfrage {#adjusting-the-query-statement}
+### Anpassen der Abfrage-Anweisung {#adjusting-the-query-statement}
 
 AEM unterstützt die folgenden Abfragesprachen:
 
@@ -180,9 +180,9 @@ AEM unterstützt die folgenden Abfragesprachen:
 * JCR-SQL2
 * XPath
 
-Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am häufigsten verwendet wird. Die Prinzipien sind jedoch auch auf JCR-SQL2 und XPath anwendbar.
+Im folgenden Beispiel wird Query Builder verwendet, da es die gängigste Abfragesprache ist, die von AEM-Entwicklern verwendet wird. Die gleichen Prinzipien gelten jedoch für JCR-SQL2 und XPath.
 
-1. Fügen Sie eine Knotentyp-Einschränkung hinzu, sodass die Abfrage auf einen vorhandenen Lucene-Eigenschaftsindex aufgelöst wird.
+1. Fügen Sie eine Knotentyp-Einschränkung hinzu, damit die Abfrage zu einem vorhandenen Lucene-Eigenschaftsindex aufgelöst wird.
 
 * **Nicht optimierte Abfrage**
 
@@ -203,7 +203,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
 
    Wenn Sie `type=cq:Page` setzen, wird die Abfrage auf `cq:Page`-Knoten beschränkt und auf cqPageLucene von AEM aufgelöst. Dadurch werden die Ergebnisse auf eine Untergruppe von Knoten (nur `cq:Page`-Knoten) in AEM beschränkt.
 
-1. Passen Sie die Knotentyp-Einschränkung der Abfrage an, sodass sie auf einen vorhandenen Lucene-Eigenschaftsindex aufgelöst wird.
+1. Passen Sie die Knotentyp-Einschränkung der Abfrage an, sodass die Abfrage zu einem vorhandenen Lucene-Eigenschaftsindex aufgelöst wird.
 
 * **Nicht optimierte Abfrage**
 
@@ -221,13 +221,13 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    property.value=article-page
    ```
 
-   `nt:hierarchyNode` ist der übergeordnete Knotentyp von `cq:Page`. Angenommen, `jcr:content/contentType=article-page` wird durch unsere angepasste Anwendung nur auf `cq:Page`-Knoten angewandt, gibt diese Abfrage nur `cq:Page`-Knoten mit `jcr:content/contentType=article-page` zurück. Dies ist jedoch aus folgenden Gründen eine suboptimale Beschränkung:
+   `nt:hierarchyNode` ist der übergeordnete Knotentyp von `cq:Page`. Annahmen `jcr:content/contentType=article-page` wird nur auf `cq:Page` -Knoten über die benutzerdefinierte Anwendung der Adobe zurückgibt diese Abfrage nur `cq:Page` Knoten, `jcr:content/contentType=article-page`. Dieser Fluss ist jedoch eine suboptimale Einschränkung, da:
 
-   * Andere Knoten erben von `nt:hierarchyNode` (z. B. `dam:Asset`), was die Menge der potenziellen Ergebnisse unnötig vergrößert.
+   * Andere Knoten übernehmen von `nt:hierarchyNode` (z. B. `dam:Asset`), was unnötig zum Satz potenzieller Ergebnisse hinzufügt.
    * Es gibt keinen von AEM bereitgestellten Index für `nt:hierarchyNode`. Ein Index ist jedoch für `cq:Page` vorhanden.
    Wenn Sie `type=cq:Page` setzen, wird die Abfrage auf `cq:Page`-Knoten beschränkt und auf cqPageLucene von AEM aufgelöst. Dadurch werden die Ergebnisse auf eine Untergruppe von Knoten (nur cq:Page-Knoten) in AEM beschränkt.
 
-1. Sie können auch die Eigenschaftsbeschränkung(en) anpassen, sodass die Abfrage auf einen vorhandenen Eigenschaftsindex aufgelöst wird.
+1. Sie können auch die Eigenschaftsbeschränkungen so anpassen, dass die Abfrage zu einem vorhandenen Eigenschaftsindex aufgelöst wird.
 
 * **Nicht optimierte Abfrage**
 
@@ -243,11 +243,11 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    property.value=my-site/components/structure/article-page
    ```
 
-   Durch das Ändern der Eigenschaftsbeschränkung von `jcr:content/contentType` (ein benutzerdefinierter Wert) auf die bekannte Eigenschaft `sling:resourceType` kann die Abfrage auf den Eigenschaftsindex `slingResourceType`, der alle Inhalte nach `sling:resourceType` indiziert, aufgelöst werden.
+   Ändern der Eigenschaftsbeschränkung von `jcr:content/contentType` (ein benutzerdefinierter Wert) zur bekannten Eigenschaft hinzu. `sling:resourceType` ermöglicht die Auflösung der Abfrage in den Eigenschaftenindex `slingResourceType` , der den gesamten Inhalt nach `sling:resourceType`.
 
-   Eigenschaftsindizes (anstelle von Lucene-Eigenschaftsindizes) eignen sich am besten, wenn die Abfrage nicht nach Knotentyp unterscheidet und eine einzige Eigenschaftsbeschränkung die Ergebnismenge beherrscht.
+   Eigenschaftenindizes (im Gegensatz zu Lucene-Eigenschaftsindizes) werden am besten verwendet, wenn die Abfrage nicht nach Knotentyp erkennt und eine einzelne Eigenschaftsbeschränkung den Ergebnissatz dominiert.
 
-1. Fügen Sie die strengstmögliche Pfadbeschränkung zur Abfrage hinzu. Beispielsweise soll `/content/my-site/us/en` gegenüber `/content/my-site` oder `/content/dam` gegenüber `/` bevorzugt werden.
+1. Fügen Sie der Abfrage die strengste Pfadbeschränkung hinzu. Beispielsweise soll `/content/my-site/us/en` gegenüber `/content/my-site` oder `/content/dam` gegenüber `/` bevorzugt werden.
 
 * **Nicht optimierte Abfrage**
 
@@ -267,11 +267,11 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    property.value=article-page
    ```
 
-   Wenn Sie die Pfadbeschränkung von `path=/content` auf `path=/content/my-site/us/en` ändern, können die Indizes die Anzahl der zu prüfenden Indexeinträge senken. Wenn die Abfrage den Pfad besser als nur mit `/content` oder `/content/dam` einschränken kann, stellen Sie sicher, dass der Index `evaluatePathRestrictions=true` aufweist.
+   Pfadbeschränkung von `path=/content`nach `path=/content/my-site/us/en` ermöglicht es den Indizes, die Anzahl der zu prüfenden Indexeinträge zu reduzieren. Wenn die Abfrage den Pfad gut einschränken kann, über `/content` oder `/content/dam`, stellen Sie sicher, dass der Index `evaluatePathRestrictions=true`.
 
    Beachten Sie, dass die Verwendung von `evaluatePathRestrictions` den Index vergrößert.
 
-1. Falls möglich, vermeiden Sie Abfragefunktionen/-operationen wie `LIKE` und `fn:XXXX`, da ihre Kosten mit der Anzahl der einschränkungsbasierten Ergebnisse skalieren.
+1. Vermeiden Sie nach Möglichkeit Abfragefunktionen und Abfragevorgänge wie: `LIKE` und `fn:XXXX` da ihre Kosten mit der Anzahl der einschränkungsbasierten Ergebnisse skaliert werden.
 
 * **Nicht optimierte Abfrage**
 
@@ -290,11 +290,11 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
    fulltext.relPath=jcr:content/contentType
    ```
 
-   Die Bedingung LIKE wird langsam geprüft, da kein Index verwendet werden kann, wenn der Text mit einem Platzhalter (&quot;%...&#39;) beginnt. Die Bedingung jcr: ermöglicht die Verwendung eines Volltext-Index und wird daher bevorzugt. Der aufgelöste Lucene-Eigenschaftsindex benötigt dazu indexRule für `jcr:content/contentType` mit `analayzed=true`.
+   Die Bedingung LIKE wird langsam geprüft, da kein Index verwendet werden kann, wenn der Text mit einem Platzhalter (&quot;%...&#39;) beginnt. Die Bedingung jcr: ermöglicht die Verwendung eines Volltext-Index und wird daher bevorzugt. Dazu muss der aufgelöste Lucene-Eigenschaftsindex über indexRule verfügen für `jcr:content/contentType` mit `analayzed=true`.
 
-   Das Verwenden von Abfragefunktionen wie `fn:lowercase(..)` kann schwieriger zu optimieren sein, da es keine schnelleren Äquivalente gibt (abgesehen von komplexeren und aufdringlichen Indexanalysekonfigurationen). Es ist ratsam, andere Scoping-Beschränkungen zu identifizieren, damit die Funktionen mit der kleinstmöglichen Ergebnismenge arbeiten, um die Abfrageleistung insgesamt zu verbessern.
+   Das Verwenden von Abfragefunktionen wie `fn:lowercase(..)` kann schwieriger zu optimieren sein, da es keine schnelleren Äquivalente gibt (abgesehen von komplexeren und aufdringlichen Indexanalysekonfigurationen). Es ist am besten, andere Scoping-Einschränkungen zu identifizieren, um die Gesamtabfrageleistung zu verbessern, sodass die Funktionen auf die kleinstmögliche Anzahl möglicher Ergebnisse angewendet werden müssen.
 
-1. ***Diese Anpassung ist nur im Query Builder möglich und gilt nicht für JCR-SQL2 oder XPath.***
+1. ***Diese Anpassung ist für Query Builder spezifisch und gilt nicht für JCR-SQL2 oder XPath.***
 
    Verwenden Sie [guessTotal in Query Builder](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results), wenn die vollständige Ergebnismenge **nicht** sofort benötigt wird.
 
@@ -314,13 +314,13 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
       ```
    Wenn die Abfrage schnell ausgeführt wird, aber sehr viele Ergebnisse zurückgibt, stellt p.`guessTotal` eine wichtige Optimierung für Query Builder-Abfragen dar.
 
-   `p.guessTotal=100` sorgt dafür, dass Query Builder nur die ersten 100 Ergebnisse erfasst, und setzt einen booleschen Wert, der angibt, ob mindestens ein weiteres Ergebnis vorliegt (jedoch nicht die Anzahl der weiteren Ergebnisse, da das Zählen den Vorgang verlangsamen würde). Diese Optimierung eignet sich hervorragend für Anwendungsfälle mit Paginierung oder endlosem Laden, wenn nur eine Teilmenge der Ergebnisse schrittweise angezeigt wird.
+   `p.guessTotal=100` weist Query Builder an, nur die ersten 100 Ergebnisse zu erfassen. Und um eine boolesche Markierung zu setzen, die angibt, ob mindestens ein weiteres Ergebnis vorhanden ist (aber nicht wie viele weitere Ergebnisse, da die Zählung dieser Zahl zu Langsamkeit führt). Diese Optimierung eignet sich hervorragend für Anwendungsfälle für Paginierung oder unendliches Laden, bei denen nur eine Ergebnisuntergruppe inkrementell angezeigt wird.
 
-## Anpassen vorhandener Indizes {#existing-index-tuning}
+## Vorhandene Indexverfeinerung {#existing-index-tuning}
 
-1. Wenn die optimale Abfrage auf einen Eigenschaftsindex aufgelöst wird, gibt es nichts mehr zu tun, da Eigenschaftsindizes nur minimale Anpassungsmöglichkeiten bieten.
-1. Andernfalls sollte die Abfrage auf einen Lucene-Eigenschaftsindex aufgelöst werden. Wenn kein Index aufgelöst werden kann, springen Sie zu „Erstellen eines neuen Index“.
-1. Wandeln Sie bei Bedarf die Abfrage in XPath oder JCR-SQL2 um.
+1. Wenn die optimale Abfrage in einen Eigenschaftsindex aufgelöst wird, bleibt nichts zu tun, da Eigenschaftenindizes nur geringfügig angepasst werden können.
+1. Andernfalls sollte die Abfrage auf einen Lucene-Eigenschaftsindex aufgelöst werden. Wenn kein Index aufgelöst werden kann, springen Sie zu Erstellen eines neuen Index .
+1. Konvertieren Sie die Abfrage nach Bedarf in XPath oder JCR-SQL2.
 
    * **Query Builder-Abfrage**
 
@@ -339,7 +339,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
       /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
       ```
 
-1. Stellen Sie den XPath (oder JCR-SQL2) dem [Oak Index Definition Generator](https://oakutils.appspot.com/generate/index) bereit, um die optimierte Lucene-Eigenschaftsindex-Definition zu generieren.
+1. Stellen Sie den XPath (oder JCR-SQL2) dem Oak Index Definition Generator unter `https://oakutils.appspot.com/generate/index` damit Sie die optimierte Definition des Lucene-Eigenschaftsindex generieren können. <!-- The above URL is 404 as of April 24, 2023 -->
 
    **Generierte Lucene-Eigenschaftsindex-Definition**
 
@@ -360,16 +360,16 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
                - name = "jcr:content/publishDate"
    ```
 
-1. Führen Sie manuell die generierte Definition additiv mit dem vorhandenen Lucene-Eigenschaftsindex zusammen. Achten Sie darauf, dass Sie keine vorhandenen Konfigurationen entfernen, da sie zum Erfüllen anderer Abfragen verwendet werden können.
+1. Führen Sie manuell die generierte Definition additiv mit dem vorhandenen Lucene-Eigenschaftsindex zusammen. Achten Sie darauf, vorhandene Konfigurationen nicht zu entfernen, da sie möglicherweise für andere Abfragen verwendet werden.
 
-   1. Suchen Sie nach dem vorhandenen Lucene-Eigenschaftsindex, der cq:Page abdeckt (mit Index Manager). In diesem Fall, `/oak:index/cqPageLucene`.
-   1. Finden Sie die Konfigurationsunterschiede zwischen der optimierten Indexdefinition (Schritt 4) und dem vorhandenen Index (/oak:index/cqPageLucene) und fügen Sie die fehlenden Konfigurationen aus dem optimierten Index zur vorhandenen Indexdefinition hinzu.
-   1. Gemäß der Best Practices zur Neuindizierung in AEM müssen Sie entweder eine Aktualisierung oder eine Neuindizierung durchführen, je nachdem, ob vorhandene Inhalte von dieser Indexkonfigurationsänderung betroffen sind.
+   1. Suchen Sie den vorhandenen Lucene-Eigenschaftsindex, der cq:Page abdeckt (mithilfe des Index-Managers). In diesem Fall, `/oak:index/cqPageLucene`.
+   1. Identifizieren Sie die Konfigurationsunterschiede zwischen der optimierten Indexdefinition (Schritt 4) und dem vorhandenen Index (/oak:index/cqPageLucene) und fügen Sie die fehlenden Konfigurationen aus dem optimierten Index zur vorhandenen Indexdefinition hinzu.
+   1. Gemäß AEM Best Practices für die Neuindizierung ist entweder eine Aktualisierung oder eine Neuindizierung in der richtigen Reihenfolge, je nachdem, ob sich diese Indexkonfigurationsänderung auf vorhandenen Inhalt auswirken könnte.
 
 ## Erstellen eines neuen Index {#create-a-new-index}
 
-1. Vergewissern Sie sich, dass die Abfrage nicht auf einen vorhandenen Lucene-Eigenschaftsindex aufgelöst wird. In diesem Fall finden Sie weitere Informationen im vorherigen Abschnitt zur Anpassung eines vorhandenen Index.
-1. Wandeln Sie bei Bedarf die Abfrage in XPath oder JCR-SQL2 um.
+1. Stellen Sie sicher, dass die Abfrage nicht in einen vorhandenen Lucene-Eigenschaftsindex aufgelöst wird. Ist dies der Fall, lesen Sie den obigen Abschnitt zur Optimierung und zum vorhandenen Index.
+1. Konvertieren Sie die Abfrage nach Bedarf in XPath oder JCR-SQL2.
 
    * **Query Builder-Abfrage**
 
@@ -385,7 +385,7 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
       //element(*, myApp:Page)[@firstName = 'ira']
       ```
 
-1. Stellen Sie den XPath (oder JCR-SQL2) dem [Oak Index Definition Generator](https://oakutils.appspot.com/generate/index) bereit, um die optimierte Lucene-Eigenschaftsindex-Definition zu generieren.
+1. Stellen Sie den XPath (oder JCR-SQL2) dem Oak Index Definition Generator unter `https://oakutils.appspot.com/generate/index` damit Sie die optimierte Definition des Lucene-Eigenschaftsindex generieren können. <!-- The above URL is 404 as of April 24, 2023 -->
 
    **Generierte Lucene-Eigenschaftsindex-Definition**
 
@@ -402,45 +402,45 @@ Im folgenden Beispiel wird Query Builder verwendet, da es von AEM-Entwicklern am
                - propertyIndex = true
    ```
 
-1. Stellen Sie die generierte Lucene-Eigenschaftsindex-Definition bereit.
+1. Stellen Sie die generierte Definition des Lucene-Eigenschaftsindex bereit.
 
-   Fügen Sie die XML-Definition hinzu, die der Oak Index Definition Generator für den neuen Index für das AEM-Projekt, der Oak Index-Definitionen verwaltet, bereitgestellt hat. (Denken Sie daran, Oak Index-Definitionen als Code zu behandeln, da Code davon abhängt).
+   Fügen Sie die vom Oak Index Definition Generator bereitgestellte XML-Definition für den neuen Index zum AEM-Projekt hinzu, das Oak-Indexdefinitionen verwaltet (denken Sie daran, behandeln Sie Oak-Indexdefinitionen als Code, da der Code von ihnen abhängt).
 
-   Stellen Sie den neuen Index bereit und testen Sie ihn entsprechend dem üblichen Lebenszyklus für AEM-Softwareentwicklung. Prüfen Sie, ob die Abfrage auf den Index aufgelöst wird und gute Leistung zeigt.
+   Stellen Sie den neuen Index bereit und testen Sie ihn nach dem üblichen AEM Softwareentwicklungs-Lebenszyklus und überprüfen Sie, ob die Abfrage in den Index aufgelöst wird und die Abfrage leistungsfähig ist.
 
-   Nach der Erstbereitstellung dieses Index füllt AEM ihn mit den erforderlichen Daten aus.
+   Bei der ersten Bereitstellung dieses Index füllt AEM den Index mit den erforderlichen Daten.
 
 ## Wann sind indexlose und Durchlaufabfragen zulässig? {#when-index-less-and-traversal-queries-are-ok}
 
-Aufgrund der flexiblen Inhaltsarchitektur von AEM ist es schwer vorherzusagen und zu verhindern, dass der Durchlauf von Inhaltsstrukturen im Laufe der Zeit auf eine inakzeptable Größe anwächst.
+Aufgrund AEM flexiblen Inhaltsarchitektur ist es schwierig, vorherzusagen und sicherzustellen, dass sich die Durchläufe von Inhaltsstrukturen im Laufe der Zeit nicht zu einer inakzeptablen Größe entwickeln.
 
-Stellen Sie daher sicher, dass Indizes Abfragen erfüllen, es sei denn, die Kombination aus Pfad- und Knotentyp-Beschränkungen garantiert, dass **nie mehr als 20 Knoten durchlaufen werden**.
+Stellen Sie daher sicher, dass Indizes Abfragen erfüllen, es sei denn, die Kombination aus Pfadbeschränkung und Knotentyp-Beschränkung gewährleistet, dass **weniger als 20 Knoten werden je durchlaufen.**
 
-## Abfragen-Entwicklungswerkzeuge {#query-development-tools}
+## Tools zur Abfrageentwicklung {#query-development-tools}
 
-### Adobe-Unterstützung {#adobe-supported}
+### Unterstützte Adobe {#adobe-supported}
 
 * **Query Builder-Debugger**
 
    * Eine WebUI für die Ausführung von Query Builder-Abfragen und die Generierung des unterstützenden XPath (zur Verwendung in „Abfrage erläutern“ oder im Oak Index Definition Generator).
-   * In AEM unter [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
+   * AEM [/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 
-* **CRXDE Lite – Abfragewerkzeug**
+* **CRXDE Lite - Abfrage-Tool**
 
-   * Eine WebUI für die Ausführung von XPath- und JCR-SQL2-Abfragen.
-   * In AEM unter [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) > „Tools“ > „Abfrage...“
+   * Eine WebUI zum Ausführen von XPath- und JCR-SQL2-Abfragen.
+   * AEM [/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp) > Tools > Abfrage..
 
 * **[Abfrage erläutern](/help/sites-administering/operations-dashboard.md#explain-query)**
 
-   * Ein AEM Operations-Dashboard, das für jede XPATH- oder JCR-SQL2-Abfrage eine detaillierte Erklärung bietet (Abfrageplan, Abfragezeit und Anzahl der Ergebnisse).
+   * Ein Dashboard für AEM Vorgänge , das eine detaillierte Erläuterung (Abfrageplan, Abfragezeit und Anzahl der Ergebnisse) für eine gegebene XPATH- oder JCR-SQL2-Abfrage bereitstellt.
 
 * **[Langsame/beliebte Abfragen](/help/sites-administering/operations-dashboard.md#query-performance)**
 
-   * Ein AEM Operations-Dashboard, das langsame und beliebte Abfragen ausführt, die kürzlich auf AEM ausgeführt wurden.
+   * Ein Dashboard AEM Vorgänge , in dem die zuletzt durchgeführten langsamen und beliebten Abfragen für AEM aufgelistet werden.
 
 * **[Index-Manager](/help/sites-administering/operations-dashboard.md#the-index-manager)**
 
-   * Eine AEM Operations-WebUI, die die Indizes in der AEM-Instanz anzeigt. Sie bietet Informationen zu bereits vorhandenen Indizes und kann angesprochen oder erweitert werden.
+   * Eine AEM Operations-WebUI, die die Indizes auf der AEM-Instanz anzeigt; erleichtert das Verständnis der vorhandenen Indizes; kann als Ziel ausgewählt oder erweitert werden.
 
 * **[Protokollierung](/help/sites-administering/operations-dashboard.md#log-messages)**
 
@@ -452,19 +452,19 @@ Stellen Sie daher sicher, dass Indizes Abfragen erfüllen, es sei denn, die Komb
       * `DEBUG @ org.apache.jackrabbit.oak.query`
 
 
-* **Apache Jackrabbit Query Engine-Einstellungen – OSGi-Konfiguration**
+* **OSGi-Konfiguration der Apache Jackrabbit Query Engine-Einstellungen**
 
-   * OSGi-Konfiguration, die das Verhalten im Fehlerfall bei Durchlaufabfragen konfiguriert.
-   * In AEM unter [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
+   * OSGi-Konfiguration, die das Fehlerverhalten für das Durchlaufen von Abfragen konfiguriert.
+   * AEM [/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService](http://localhost:4502/system/console/configMgr#org.apache.jackrabbit.oak.query.QueryEngineSettingsService)
 
 * **NodeCounter JMX MBean**
 
-   * JMX MBean wird verwendet, um die Anzahl der Knoten in Content-Baumstrukturen in AEM zu schätzen.
-   * In AEM unter [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
+   * JMX MBean, mit dem die Anzahl der Knoten in Inhaltsbäumen in AEM geschätzt wird.
+   * AEM [/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DnodeCounter%2Ctype%3DNodeCounter)
 
 ### Community-Unterstützung {#community-supported}
 
-* **[Oak Index Definition Generator](https://oakutils.appspot.com/generate/index)**
+* **Oak Index Definition Generator unter`https://oakutils.appspot.com/generate/index`** <!-- The above URL is 404 as of April 24, 2023 -->
 
    * Generieren Sie optimale Lucence-Eigenschafts-Indizes aus XPath- oder JCR-SQL2-Abfragen.
 
