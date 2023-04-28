@@ -1,14 +1,14 @@
 ---
-title: Mehrsprachige Assets und Übersetzung von Assets
-description: Erfahren Sie, wie Sie Workflows für die Übersetzung von Assets wie Binärdateien, Metadaten und Tags in mehrere Sprachen automatisieren können.
+title: Mehrsprachiges Asset
+description: Erfahren Sie, wie Sie Workflows für die Übersetzung von Assets, darunter Binärdateien, Metadaten und Tags, in mehrere Sprachen automatisieren können.
 contentOwner: AG
 feature: Asset Management
 role: Admin
 exl-id: edccf23c-087e-4253-babb-dd4c6610517d
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: ht
-source-wordcount: '202'
-ht-degree: 100%
+source-git-commit: 68f9179222c55840c4edf8774687cd8fde8cde4b
+workflow-type: tm+mt
+source-wordcount: '199'
+ht-degree: 96%
 
 ---
 
@@ -28,7 +28,7 @@ Menschliche Übersetzung: Die übersetzten Assets werden zurückgegeben und in [
 
 Maschinelle Übersetzung: Der Service für maschinelle Übersetzung übersetzt die Metadaten und Tags für Assets sofort.
 
-Das Übersetzen von Assets umfasst Folgendes:
+Die Übersetzung von Assets umfasst Folgendes:
 
 1. [Verbinden von Experience Manager mit dem Übersetzungsanbieter](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider)
 1. [Erstellen von Framework-Konfigurationen für die Übersetzungsintegration](/help/sites-administering/tc-tic.md)
