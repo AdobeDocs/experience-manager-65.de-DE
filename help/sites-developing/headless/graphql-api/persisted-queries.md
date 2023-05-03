@@ -1,16 +1,17 @@
 ---
 title: Persistente GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Clientanwendungen mithilfe der HTTP-GET-Methode angefordert werden. Die Antwort kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, wodurch die Leistung der Clientanwendungen verbessert wird.
-source-git-commit: f4a3b7edc9187c1984afedb4e3b4c558354a4d84
+exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
+source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt
-source-wordcount: '1428'
-ht-degree: 73%
+source-wordcount: '1424'
+ht-degree: 72%
 
 ---
 
 # Persistente GraphQL-Abfragen {#persisted-queries-caching}
 
-Persistente Abfragen sind GraphQL-Abfragen, die auf dem Server mit Adobe Experience Manager (AEM) as a Cloud Service erstellt und gespeichert werden. Sie können von Client-Programmen mit einer GET-Anfrage angefragt werden. Die Antwort einer GET-Anfrage kann auf den Ebenen Dispatcher und Content Delivery Network (CDN) zwischengespeichert werden, wodurch die Leistung der anfragenden Client-Anwendung verbessert wird. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mit POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
+Beständige Abfragen sind GraphQL-Abfragen, die auf dem Adobe Experience Manager-Server (AEM) erstellt und gespeichert werden. Sie können von Client-Programmen mit einer GET-Anfrage angefragt werden. Die Antwort einer GET-Anfrage kann auf den Ebenen Dispatcher und Content Delivery Network (CDN) zwischengespeichert werden, wodurch die Leistung der anfragenden Client-Anwendung verbessert wird. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mit POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
 
 <!--
 >[!NOTE]
@@ -261,11 +262,11 @@ Beachten Sie Folgendes: `%3B` ist die UTF-8-Codierung für `;`, und `%3D` ist di
 
 ## Caching persistenter Abfragen {#caching-persisted-queries}
 
-Beständige Abfragen werden empfohlen, da sie im [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) und CDN-Ebenen (Content Delivery Network), die letztendlich die Leistung der anfragenden Client-Anwendung verbessern.
+Beständige Abfragen werden empfohlen, da sie im [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) und CDN-Ebenen (Content Delivery Network), die letztendlich die Leistung der anfragenden Client-Anwendung verbessern.
 
 Standardmäßig werden AEM Cache basierend auf einer TTL-Definition (Time To Live) ungültig. Diese TTLs können durch die folgenden Parameter definiert werden. Auf diese Parameter kann auf verschiedene Weise zugegriffen werden, wobei die Namen je nach verwendetem Mechanismus variieren:
 
-| Cachetyp | [HTTP-Header](https://developer.mozilla.org/de-de/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-Konfiguration  |
+| Cachetyp | [HTTP-Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-Konfiguration  |
 |--- |--- |--- |--- |
 | Browser | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
