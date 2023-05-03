@@ -3,10 +3,10 @@ title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
 description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: ht
-source-wordcount: '1530'
-ht-degree: 100%
+source-git-commit: e773990c6bd32df65c7f62060f7eca5547b7b614
+workflow-type: tm+mt
+source-wordcount: '1586'
+ht-degree: 97%
 
 ---
 
@@ -1306,15 +1306,15 @@ Diese Abfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
-  articleByPath (_path: "/content/dam/wknd/en/magazine/skitouring/skitouring") {
+  adventureByPath(_path: "/content/dam/wknd-shared/en/magazine/western-australia/western-australia-by-camper-van") {
     item {
+      _path
+      title
+      _model {
         _path
-        author
-        referencearticle {
-          _path
-          author
+        title
       }
     }
   }
@@ -1323,16 +1323,42 @@ Diese Abfrage untersucht:
 
 ### Beispielabfrage für ein verschachteltes Inhaltsfragment – Typ mit mehreren Modellen {#sample-wknd-nested-fragment-multiple-model}
 
+#### Einzelner referenzierter Modelltyp
+
 Diese Abfrage untersucht:
 
 * Mehrere Inhaltsfragmente vom Typ `bookmark`
-   * Mit Fragmentreferenzen auf andere Fragmente der spezifischen Modelltypen `article` und `adventure`
+   * mit Fragmentverweisen auf andere Fragmente des spezifischen Modelltyps `article`
 
 >[!NOTE]
 >
->Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind.
+>Das Feld `fragments` hat den Datentyp `fragment-reference`mit dem Modell `Article` ausgewählt ist. Abfrage liefert `fragments` als Array von `[Article]`.
 
-```xml
+```graphql
+{
+  bookmarkList {
+    items {
+        fragments {
+          _path
+          author
+        }
+     }
+  }
+}
+```
+
+#### Mehrere referenzierte Modelltypen
+
+Diese Abfrage untersucht:
+
+* Mehrere Inhaltsfragmente vom Typ `bookmark`
+   * Mit Fragmentreferenzen auf andere Fragmente der spezifischen Modelltypen `Article` und `Adventure`
+
+>[!NOTE]
+>
+>Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind. Abfrage liefert `fragments` als Array von `[AllFragmentModels]`, der vom Vereinigungstyp ausgeschlossen wird.
+
+```graphql
 {
   bookmarkList {
     items {
