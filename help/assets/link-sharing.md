@@ -5,10 +5,10 @@ contentOwner: AG
 role: User
 feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
-source-git-commit: aa45839c53cb2c0715c9163847351aa2391309e0
-workflow-type: ht
-source-wordcount: '1043'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '1031'
+ht-degree: 94%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/share-assets.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/link-sharing.html?lang=de) |
 
 [!DNL Adobe Experience Manager Assets]Mit können Sie Assets, Ordner und Sammlungen als URL für Mitglieder Ihres Unternehmens und externe Einheiten (z. B. Partner und Anbieter) freigeben. Die Freigabe von Assets über einen Link ist eine praktische Methode, um Ressourcen für externe Parteien verfügbar zu machen, ohne dass sich diese zunächst bei [!DNL Assets] anmelden müssen.
 
@@ -49,9 +48,9 @@ Die URL für Assets, die Sie freigeben möchten, generieren Sie im Dialogfeld [!
    >
    >Wenn Sie die E-Mail-ID von Benutzerinnen und Benutzern eingeben, die nicht zu Ihrem Unternehmen gehören, wird die E-Mail-ID den Worten [!UICONTROL Externer Benutzer] vorangestellt.
 
-1. Geben Sie in das Feld **[!UICONTROL Betreff]** einen Betreff für das freizugebende Asset ein.
+1. Im **[!UICONTROL Betreff]** Geben Sie einen Betreff für das Asset ein, das Sie freigeben möchten.
 
-1. Geben Sie im Feld **[!UICONTROL Meldung]** eine optionale Meldung ein.
+1. Im **[!UICONTROL Nachricht]** eine optionale Meldung eingeben.
 
 1. Geben Sie im Feld **[!UICONTROL Ablauf]** ein Ablaufdatum und eine Ablaufuhrzeit für den Link an. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
 
@@ -83,9 +82,9 @@ Die URL für Assets, die Sie freigeben möchten, generieren Sie im Dialogfeld [!
 1. Wählen Sie in der Liste der Dienste **[!UICONTROL Day CQ Mail Service]** aus.
 1. Klicken Sie neben dem Service auf **[!UICONTROL Bearbeiten]** und konfigurieren Sie die folgenden Parameter für den **[!UICONTROL Day CQ Mail Service]** mit den angegebenen Details zu ihren Namen:
 
-   * SMTP-Server-Hostname: email server host name
-   * SMTP-Server-Anschluss: email server port
-   * SMTP-Benutzer: email server user name
+   * Hostname des SMTP-Servers: Hostname des E-Mail-Servers
+   * SMTP-Server-Anschluss: E-Mail-Server-Anschluss
+   * SMTP-Benutzer: Benutzername des E-Mail-Servers
    * SMTP-Kennwort: email server password
 
    ![chlimage_1-263](assets/chlimage_1-548.png)
@@ -106,7 +105,7 @@ Wenn Sie Assets herunterladen, die mithilfe der Linkfreigabe-Funktion freigegebe
 
 ## Best Practices und Fehlerbehebung {#best-practices-and-troubleshooting}
 
-* Asset-Ordner oder Sammlungen, die ein Leerzeichen im Namen enthalten, werden möglicherweise nicht freigegeben.
+* Asset-Ordner oder Sammlungen, die ein Leerzeichen in ihrem Namen enthalten, werden möglicherweise nicht freigegeben.
 * Wenn Benutzerinnen und Benutzer die freigegebenen Assets nicht herunterladen können, fragen Sie bei Ihrem [!DNL Experience Manager]-Admin nach den [Download-Beschränkungen](#configure-maximum-data-size).
 * Wenn Sie keine E-Mail mit Links zu freigegebenen Assets senden oder die anderen Benutzerinnen und Benutzer Ihre E-Mail nicht empfangen können, fragen Sie Ihren [!DNL Experience Manager]-Admin, ob der [E-Mail-Dienst](#configure-day-cq-mail-service) konfiguriert wurde.
 * Wenn Sie Assets nicht mit der Funktion zum Freigeben von Links freigeben können, stellen Sie sicher, dass Sie über die entsprechenden Berechtigungen verfügen. Siehe [Freigeben von Assets](#share-assets).

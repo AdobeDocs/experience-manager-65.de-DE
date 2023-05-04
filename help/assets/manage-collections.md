@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: ht
-source-wordcount: '2215'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '2203'
+ht-degree: 88%
 
 ---
 
@@ -19,15 +19,14 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-collections.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/managing/managing-collections-touch-ui.html?lang=de) |
 
 Eine Sammlung ist ein Satz von Assets innerhalb von [!DNL Adobe Experience Manager Assets]. Anhand von Sammlungen können Assets von mehreren Benutzern gemeinsam verwendet werden. Der Satz kann eine statische Sammlung oder eine dynamische Sammlung sein, die auf Suchergebnissen basiert.
 
-Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können Sammlungen für mehrere Benutzer mit unterschiedlichen Berechtigungsstufen, wie Anzeigen, Bearbeiten usw., freigeben.
+Im Gegensatz zu Ordnern kann eine Sammlung Assets von verschiedenen Speicherorten enthalten. Sie können Sammlungen für verschiedene Benutzer freigeben, denen unterschiedliche Berechtigungsstufen zugewiesen sind, z. B. Anzeigen, Bearbeiten usw.
 
-Sie können mehrere Sammlungen für einen Benutzer freigeben. Jede Sammlung enthält Referenzen zu Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten.
+Sie können mehrere Sammlungen für eine Benutzerin bzw. einen Benutzer freigeben. Jede Sammlung enthält Verweise auf Assets. Die referenzielle Integrität von Assets wird sammlungsübergreifend aufrechterhalten.
 
-Sammlungen sind von den folgenden Typen, und zwar auf Grundlage, wie sie Assets sortieren:
+Sammlungen weisen die folgenden Typen auf, basierend auf der Art und Weise, wie sie Assets sammeln:
 
 * Eine Sammlung mit einer statischen Referenzliste von Assets, Ordnern und anderen Sammlungen.
 
@@ -43,11 +42,11 @@ Sie können eine Sammlung mit [statischen Referenzen](#creating-a-collection-wi
 
 ### Erstellen von Sammlungen mit statischen Referenzen {#creating-a-collection-with-static-references}
 
-Sie können eine Sammlung mit statischen Referenzen erstellen, wie eine Sammlung mit Referenzen zu Assets, Ordnern, Sammlungen, Rotationssets und Bildsets.
+Sie können eine Sammlung mit statischen Referenzen erstellen, z. B. eine Sammlung mit Verweisen auf Assets, Ordner, Sammlungen, Rotationssets und Bildsets.
 
-1. Navigieren Sie zur Konsole **[!UICONTROL Sammlungen]**.
+1. Navigieren Sie zum **[!UICONTROL Sammlungen]** Konsole.
 1. Klicken Sie auf der Symbolleiste auf **[!UICONTROL Erstellen]**.
-1. Geben Sie auf der Seite **[!UICONTROL Sammlung erstellen]** einen Titel und eine optionale Beschreibung für die Sammlung ein.
+1. Im **[!UICONTROL Sammlung erstellen]** -Seite, geben Sie einen Titel und eine optionale Beschreibung für die Sammlung ein.
 1. Fügen Sie Mitglieder zur Sammlung hinzu und weisen Sie entsprechende Berechtigungen zu. Wählen Sie alternativ **[!UICONTROL Öffentliche Sammlung]**, um allen Benutzern Zugriff auf die Sammlung zu ermöglichen.
 
    >[!NOTE]
@@ -81,7 +80,7 @@ Sie können Assets aus der [!DNL Assets]-Benutzeroberfläche ziehen und in einer
 
 ### Erstellen von Smart-Sammlungen {#creating-a-smart-collection}
 
-Eine Smart-Sammlung verwendet Suchkriterien, um Assets dynamisch zu füllen. Sie können eine Smart-Sammlung erstellen, indem Sie Dateien und Ordner oder nur Dateien nutzen.
+Eine Smart-Sammlung verwendet Suchkriterien, um Assets dynamisch zu füllen. Sie können eine Smart-Sammlung nur mit Dateien und nicht mit Ordnern oder Dateien und Ordnern erstellen.
 
 Zum Erstellen einer Smart-Sammlung führen Sie die folgenden Schritte aus:
 
@@ -113,7 +112,7 @@ Zum Erstellen einer Smart-Sammlung führen Sie die folgenden Schritte aus:
 
 ## Hinzufügen von Assets zu einer Sammlung {#adding-assets-to-a-collection}
 
-Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Assets hinzufügen. Smart-Sammlungen füllen Assets anhand einer Suchabfrage. Daher sind statische Referenzen zu Assets und Ordnern für sie nicht anwendbar.
+Sie können einer Sammlung mit einer Liste referenzierter Assets oder Ordner Assets hinzufügen. Smart-Sammlungen verwenden eine Suchabfrage zum Ausfüllen von Assets. Daher können statische Referenzen auf Assets und Ordner nicht auf sie angewendet werden.
 
 1. Wählen Sie in der [!DNL A]ssets-Benutzeroberfläche das Asset aus und klicken Sie auf der Symbolleiste auf **[!UICONTROL Zu Sammlung]** ![Zu Sammlung hinzufügen](assets/do-not-localize/add-to-collection.png).
 Alternativ können Sie das Asset in den Bereich **[!UICONTROL In Sammlung ablegen]** auf der Benutzeroberfläche ziehen. Fügen Sie die Assets hinzu, wenn sich die Bezeichnung der Region in **[!UICONTROL Zum Hinzufügen ablegen]** ändert.
@@ -140,7 +139,7 @@ Smart-Sammlungen werden durch Speichern von Suchvorgängen erstellt. Das heißt,
 
    ![edit_smart_collection_dialog](assets/edit_smart_collectiondialog.png)
 
-1. Klicken Sie auf **[!UICONTROL Speichern]**. Das Dialogfeld **[!UICONTROL Smart-Sammlung bearbeiten]** wird angezeigt.
+1. Klicken Sie auf **[!UICONTROL Speichern]**. Die **[!UICONTROL Intelligente Sammlung bearbeiten]** angezeigt.
 1. Klicken Sie auf **[!UICONTROL Überschreiben]**, um die ursprüngliche Smart-Sammlung durch die bearbeitete Sammlung zu ersetzen. Wählen Sie alternativ **[!UICONTROL Speichern unter]** aus, um die bearbeitete Sammlung separat zu speichern.
 1. Klicken Sie im Bestätigungsdialogfeld auf **[!UICONTROL Speichern]**, um den Vorgang abzuschließen.
 
@@ -154,7 +153,7 @@ Sammlungsmetadaten umfassen die Daten zur Sammlung, einschließlich aller hinzug
 
 ## Stapelweises Bearbeiten der Metadaten mehrerer Sammlungen {#editing-collection-metadata-in-bulk}
 
-Sie können die Metadaten von mehreren Sammlungen gleichzeitig bearbeiten. Mit dieser Funktion können Sie schnell allgemeine Metadaten in mehreren Sammlungen replizieren.
+Sie können die Metadaten mehrerer Sammlungen gleichzeitig bearbeiten. Mit dieser Funktion können Sie gängige Metadaten in mehreren Sammlungen schnell replizieren.
 
 1. Wählen Sie in der Konsole „Sammlungen“ mindestens zwei Sammlungen aus.
 1. Klicken Sie auf der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
@@ -217,7 +216,7 @@ Wenn Sie eine Sammlung herunterladen, wird die gesamte Asset-Hierarchie innerhal
 
 1. Wählen Sie in der Konsole „Sammlungen“ eine oder mehrere Sammlungen für den Download aus.
 1. Klicken Sie auf der Symbolleiste auf **[!UICONTROL Herunterladen]**.
-1. Klicken Sie im Dialogfeld **[!UICONTROL Herunterladen]** auf **[!UICONTROL Herunterladen]**. Wählen Sie **[!UICONTROL Ausgabedarstellungen]** aus, wenn Sie die Ausgabedarstellungen des Assets in der Sammlung herunterladen möchten. Wählen Sie die Option **[!UICONTROL E-Mail]** aus, um eine E-Mail-Benachrichtigung an den Eigentümer der Sammlung zu senden.
+1. Klicken Sie im Dialogfeld **[!UICONTROL Herunterladen]** auf **[!UICONTROL Herunterladen]**. Wählen Sie **[!UICONTROL Ausgabedarstellungen]** aus, wenn Sie die Ausgabedarstellungen des Assets in der Sammlung herunterladen möchten. Wählen Sie die **[!UICONTROL Email]** Option zum Senden einer E-Mail-Benachrichtigung an den Eigentümer der Kollektion.
 
    Bei Auswahl einer Sammlung für den Download wird die gesamte Ordnerstruktur unter dieser Sammlung heruntergeladen. Um jede Sammlung (einschließlich Assets in untergeordneten Sammlungen, die unter der übergeordneten Sammlung verschachtelt sind), die Sie herunterladen, in einem eigenen Ordner zu speichern, wählen Sie **[!UICONTROL Separaten Ordner für jedes Asset erstellen]** aus.
 
@@ -233,11 +232,11 @@ Sie können eine Sammlung zu einer anderen Sammlung hinzufügen und so eine vers
    >
    >Die zuletzt aktualisierte Sammlung wird standardmäßig auf der Seite **[!UICONTROL Zu Sammlung hinzufügen]** ausgewählt.
 
-1. Klicken Sie auf **[!UICONTROL Hinzufügen]**. Eine Meldung bestätigt, dass die Sammlung zur Zielsammlung auf der Seite **[!UICONTROL Ziel auswählen]** hinzugefügt wird. Schließen Sie die Meldung, um den Vorgang abzuschließen.
+1. Klicken Sie auf **[!UICONTROL Hinzufügen]**. Eine Meldung bestätigt, dass die Sammlung zur Zielsammlung im **[!UICONTROL Ziel auswählen]** Seite. Schließen Sie die Nachricht, um den Prozess abzuschließen.
 
 >[!NOTE]
 >
->Smart-Sammlungen können nicht verschachtelt werden. Das heißt, Smart-Sammlungen können keine anderen Sammlungen enthalten.
+>Smart-Sammlungen können nicht verschachtelt werden. Mit anderen Worten: Smart-Sammlungen können keine andere Sammlung enthalten.
 
 ## Gespeicherte Suchvorgänge {#saved-searches}
 
@@ -266,7 +265,7 @@ Gehen Sie wie folgt vor, um gespeicherte Suchen zu löschen:
 
 ## Ausführen eines Workflows für eine Sammlung {#running-a-workflow-on-a-collection}
 
-Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn die Sammlung verschachtelte Sammlungen enthält, wird der Workflow auch für die Assets in den verschachtelten Sammlungen ausgeführt. Wenn jedoch die Sammlung und die verschachtelte Sammlung doppelte Assets enthalten, wird der Workflow nur einmal für solche Assets ausgeführt.
+Sie können einen Workflow für die Assets in einer Sammlung ausführen. Wenn die Sammlung verschachtelte Sammlungen enthält, wird der Workflow auch für die Assets innerhalb der verschachtelten Sammlungen ausgeführt. Wenn die Sammlung und die verschachtelte Sammlung jedoch doppelte Assets enthalten, wird der Workflow für diese Assets nur einmal ausgeführt.
 
 1. Öffnen Sie **[!UICONTROL Assets]** > **[!UICONTROL Sammlungen]**. Um einen Workflow für eine bestimmte Sammlung auszuführen, wählen Sie diese aus.
 1. Öffnen Sie die **[!UICONTROL Zeitleiste]**. Klicken Sie auf den ![Pfeil nach oben](assets/do-not-localize/chevron-up-icon.png) und dann auf **[!UICONTROL Workflow starten]**.

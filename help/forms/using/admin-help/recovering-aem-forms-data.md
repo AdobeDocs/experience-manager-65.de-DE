@@ -10,10 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1180'
-ht-degree: 20%
+source-wordcount: '1122'
+ht-degree: 21%
 
 ---
 
@@ -57,10 +57,10 @@ Wenn ein einzelner Knoten eines Clusters mit mehreren Knoten fehlschlägt und di
 1. (WebSphere® Application Server) Wenn Sie auf eine neue Instanz von WebSphere® Application Server wiederherstellen, führen Sie den Befehl restoreConfig.bat/sh aus.
 1. Zum Wiederherstellen der AEM Forms-Datenbank müssen Sie zuerst einen Datenbankwiederherstellungsvorgang unter Verwendung der Datenbanksicherungsdateien ausführen und anschließend die Protokolle zum Wiederholen von Transaktionen auf die wiederhergestellte Datenbank anwenden. (Siehe [AEM Formulardatenbank](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database). Weitere Informationen finden Sie in einem dieser Knowledge Base-Artikel:
 
-   * [DB2® Backup und Wiederherstellung für AEM Formulare](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#db2)
-   * [Oracle-Backup und Wiederherstellung für AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#oracle)
-   * [Microsoft® SQL Server-Sicherung und -Wiederherstellung für AEM Formulare](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#sql-server)
-   * [Backup und Wiederherstellung für AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/aem-forms-backup-recovery/files-back-recover.html?lang=en#mysql)
+   * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
+   * [Oracle-Backup und Wiederherstellung für AEM Forms](/help/forms/using/admin-help/files-back-recover.md#oracle)
+   * [Microsoft](/help/forms/using/admin-help/files-back-recover.md#sql-server)
+   * [Backup und Wiederherstellung für AEM Forms](/help/forms/using/admin-help/files-back-recover.md#mysql)
 
 1. Rufen Sie den Ordner des globalen Dokumentenspeichers ab, indem Sie zunächst den Inhalt des Ordners des globalen Dokumentenspeichers in der bestehenden Installation AEM Formulare löschen und dann den Inhalt des Ordners des globalen Dokumentenspeichers aus dem gesicherten Ordner des globalen Dokumentenspeichers kopieren. Informationen zum Speicherort des Ordners des globalen Dokumentenspeichers finden Sie unter [Speicherort des globalen Dokumentenspeichers während der Wiederherstellung ändern](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).
 1. Benennen Sie den wiederherzustellenden Ordner des globalen Dokumentenspeichers wie in den folgenden Beispielen gezeigt um:

@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: ht
-source-wordcount: '3280'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '3268'
+ht-degree: 85%
 
 ---
 
@@ -19,7 +19,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/aem-cc-integration-best-practices.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html?lang=de) |
 
 [!DNL Adobe Experience Manager Assets] ist eine DAM-Lösung (Digital Asset Management), die mit [!DNL Adobe Creative Cloud] integriert werden kann, um DAM-Benutzende bei der Zusammenarbeit mit Kreativ-Teams zu unterstützen und so die Kooperation beim Erstellen von Inhalten zu optimieren.
 
@@ -37,11 +36,11 @@ Lesen Sie weiter, um mehr darüber zu erfahren, welche Integration Sie zwischen 
 |---|---|---|
 | Vereinfachtes Desktop-Erlebnis für Kreative | Für Kreativprofis oder allgemein für Desktop-Benutzer, die mit nativen Anwendungen zur Asset-Erstellung arbeiten, soll der Zugriff auf Assets von einem DAM-System ([!DNL Experience Manager Assets]) optimiert werden. Sie benötigen eine einfache und unkomplizierte Möglichkeit zum Identifizieren, Verwenden (Öffnen), Bearbeiten und Speichern von Änderungen in [!DNL Experience Manager] sowie zum Hochladen neuer Dateien. | Windows- oder Mac-Desktop; [!DNL Creative Cloud]-Programme |
 | Bereitstellen von hochwertigen, gebrauchsfertigen Assets aus [!DNL Adobe Stock] | Marketer tragen zu einer schnelleren Inhaltserstellung bei, indem sie beim Beschaffen von und Suchen nach Assets helfen. Kreativprofis verwenden die genehmigten Assets direkt in ihren Kreativ-Tools. | [!DNL Experience Manager Assets]; Marktplatz [!DNL Adobe Stock]; Metadatenfelder |
-| Verteilen und Freigeben von Assets nach Organisationen | Interne Abteilungen/Zweigstellen und externe Partner, Distributoren und Agenturen verwenden die genehmigten Assets, die von der übergeordneten Organisation freigegeben wurden. Die Organisation möchte die erstellten Assets sicher und nahtlos für eine größere Wiederverwendung freigeben. | Brand Portal, Asset Share Commons |
+| Verteilen und Freigeben von Assets nach Organisationen | Interne Abteilungen/lokale Zweigstellen und externe Partner, Distributoren und Agenturen verwenden die genehmigten Assets, die von der übergeordneten Organisation gemeinsam genutzt werden. Die Organisation möchte die erstellten Assets sicher und nahtlos für eine größere Wiederverwendung freigeben. | Brand Portal, Asset Share Commons |
 
 ## Adobe-Angebote zur Unterstützung von Kooperationsbedarf {#adobe-offerings-to-support-the-collaboration-need}
 
-| Wertangebot für die betroffenen Benutzer | Adobe-Angebot | Betroffene Oberflächen |
+| Wertvorschlag für die beteiligten Personen | Adobe | Betroffene Oberflächen |
 |---|---|---|
 | Kreativprofis identifizieren Assets aus [!DNL Experience Manager], öffnen und verwenden diese, nehmen Änderungen vor und laden sie in [!DNL Experience Manager]sowie neue Dateien in [!DNL Experience Manager] hoch, ohne ihr [!DNL Creative Cloud]-Programm verlassen zu müssen. | [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) | [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] und [!DNL Adobe InDesign]. |
 | Business-Anwender vereinfachen das Öffnen und Verwenden von Assets, das Bearbeiten und Hochladen von Änderungen in [!DNL Experience Manager] sowie das Hochladen neuer Dateien aus der Desktop-Umgebung in [!DNL Experience Manager]. Sie nutzen eine generische Integration, um jeden Asset-Typ in nativen Desktop-Programmen zu öffnen, auch von anderen Anbietern als Adobe. | [Experience Manager-Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de) | [!DNL Experience Manager] Desktop App auf Windows- und Mac-Desktop |
@@ -61,14 +60,14 @@ Dieser Artikel konzentriert sich in erster Linie auf die ersten beiden Aspekte d
 | Entdecken – Durchsuchen von DAM-Ordnern | Ja | [!DNL Experience Manager]-Web-Oberfläche und Desktop-Aktionen |  |
 | Entdecken – Zugreifen auf DAM-Sammlungen | Ja | [!DNL Experience Manager]-Web-Oberfläche und Desktop-Aktionen |  |
 | Entdecken – Suchen nach Assets aus DAM | Ja | [!DNL Experience Manager]-Web-Oberfläche und Desktop-Aktionen |  |
-| Verwenden – Öffnen von Assets | Ja | Ja | [Öffnen über die Web-Benutzeroberfläche](manage-assets.md#previewing-assets) oder den Finder |
-| Verwenden – Platzieren von Assets aus DAM in ein Dokument | Ja – Einbetten | Ja – Verknüpfen oder Einbetten | [!DNL Experience Manager] Desktop App ermöglicht den Zugriff auf Assets als Dateien im lokalen Dateisystem. Diese Links in den nativen Programmen werden durch lokale Pfade dargestellt. |
-| Bearbeiten – Öffnen zur Bearbeitung | Ja – Checkout-Aktion | Ja – Öffnen-Aktion (über die Netzwerkfreigabe) | Beim [Checkout in AAL](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) wird standardmäßig das Asset für das Creative Cloud-Speicherkonto des Benutzers (synchronisiert durch das Creative Cloud-Programm) gespeichert. |
+| Verwenden - Asset öffnen | Ja | Ja | [Öffnen über die Web-Benutzeroberfläche](manage-assets.md#previewing-assets) oder den Finder |
+| Verwenden – Platzieren von Assets aus DAM in ein Dokument | Ja - Einbetten | Ja - Verknüpfen oder Einbetten | [!DNL Experience Manager] Desktop App ermöglicht den Zugriff auf Assets als Dateien im lokalen Dateisystem. Diese Links in den nativen Programmen werden durch lokale Pfade dargestellt. |
+| Bearbeiten - Öffnen zur Bearbeitung | Ja - Checkout-Aktion | Ja - Aktion &quot;Öffnen&quot;(in der Netzwerkfreigabe) | Beim [Checkout in AAL](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) wird standardmäßig das Asset für das Creative Cloud-Speicherkonto des Benutzers (synchronisiert durch das Creative Cloud-Programm) gespeichert. |
 | Bearbeiten – laufende Arbeiten außerhalb von DAM | Ja – Asset im mit dem Desktop synchronisierten Creative Cloud-Speicherkonto des Benutzers verfügbar. | Ja |  |
-| Bearbeiten – Hochladen von Änderungen | Ja – [Checkin-Aktion](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) mit optionalem Kommentar | Ja |  |
-| Hochladen – einzelne Datei | Ja – Hochladen des aktuellen aktiven Dokuments | Ja | [Hochladen über die Web-Oberfläche](manage-assets.md#uploading-assets) |
-| Hochladen – mehrere Dateien/hierarchische Ordnerstrukturen | Nein | Ja | [Hochladen über die Web-Oberfläche](manage-assets.md#uploading-assets) oder über ein benutzerdefiniertes Skript oder Tool. |
-| Sonstiges – Benutzer und Anmeldung | Erkennung des Creative Cloud-Benutzers, der beim Creative Cloud-Desktop-Programm angemeldet ist (SSO) | [!DNL Experience Manager]-Benutzende und Anmeldedaten | Benutzende beider Lösungen werden auf das [!DNL Experience Manager]-Benutzerkontingent angerechnet. |
+| Bearbeiten - Änderungen hochladen | Ja - [Aktion zum Einchecken](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html) mit optionalem Kommentar | Ja |  |
+| Hochladen - einzelne Datei | Ja - Hochladen des aktuellen aktiven Dokuments | Ja | [Hochladen über die Web-Oberfläche](manage-assets.md#uploading-assets) |
+| Hochladen - mehrere Dateien/hierarchische Ordnerstrukturen | Nein | Ja | [Hochladen über die Web-Oberfläche](manage-assets.md#uploading-assets) oder über ein benutzerdefiniertes Skript oder Tool. |
+| Sonstiges - Benutzer und Login | Erkennung des Creative Cloud-Benutzers, der beim Creative Cloud-Desktop-Programm angemeldet ist (SSO) | [!DNL Experience Manager]-Benutzende und Anmeldedaten | Benutzende beider Lösungen werden auf das [!DNL Experience Manager]-Benutzerkontingent angerechnet. |
 | Sonstiges – Netzwerk und Zugriff | Zugriff vom Desktop der Benutzenden auf die [!DNL Experience Manager]-Implementierung über das Netzwerk erforderlich | Zugriff vom Desktop der Benutzenden auf die [!DNL Experience Manager]-Implementierung über das Netzwerk erforderlich | [!DNL Adobe Asset Link] gibt keine Netzwerk-Proxy-Umgebung frei. |
 | Sonstiges – Migrieren einer großen Anzahl von Assets | Nein | Nein | [Handbuch zur Assets-Migration](assets-migration-guide.md) |
 
@@ -131,44 +130,44 @@ Für das Entwickeln eines effizienten Workflows zwischen Kreativ-Teams und Marke
 
 ### Warum Assets in DAM gespeichert werden {#why-assets-are-stored-in-dam}
 
-Das Speichern von Assets in DAM macht sie leicht zugänglich und auffindbar. Es wird sichergestellt, dass die Assets von verschiedenen Benutzern in der gesamten Organisation oder im gesamten System genutzt werden, z. B. von Kunden, Partnern usw.
+Durch das Speichern von Assets in DAM können Sie einfach darauf zugreifen und sie finden. Dadurch wird sichergestellt, dass die Assets von zahlreichen Benutzern im gesamten Unternehmen oder Ökosystem genutzt werden können, zu denen Partner, Kunden usw. gehören.
 
-Die meisten Unternehmen entscheiden sich dafür, nur Assets zu speichern, die für nachgelagerte Marketing-/Branchenprozesse (Veröffentlichen in Kanälen wie dem Internet über [!DNL Experience Manager Sites] oder in anderen Kanälen wie Marketing Cloud oder Advertising Cloud, die von Adobe Experience Cloud bereitgestellt und von Analytics Cloud bewertet werden, Bereitstellung für Benutzende/Partnerinnen und Partner usw.) relevant sind. Außerdem speichern Organisationen Assets, für die möglicherweise ein Prüfungs-/Genehmigungsprozess in DAM erfolgt. Auf diese Weise werden hauptsächlich Assets in DAM gespeichert, die mit hoher Wahrscheinlichkeiten genutzt werden, und das Speichern von Assets im Leerlauf wird vermieden.
+Die meisten Unternehmen entscheiden sich dafür, nur Assets zu speichern, die für nachgelagerte Marketing-/Branchenprozesse (Veröffentlichen in Kanälen wie dem Internet über [!DNL Experience Manager Sites] oder in anderen Kanälen wie Marketing Cloud oder Advertising Cloud, die von Adobe Experience Cloud bereitgestellt und von Analytics Cloud bewertet werden, Bereitstellung für Benutzende/Partnerinnen und Partner usw.) relevant sind. Darüber hinaus speichern Organisationen Assets, die in DAM überprüft/genehmigt werden können. Auf diese Weise speichert DAM hauptsächlich Assets, die mit hoher Wahrscheinlichkeit genutzt werden, und vermeidet das Speichern inaktiver Assets.
 
-Die Speicherung von Assets hängt außerdem von Überlegungen zu technischen Aspekten und zur Ressourcennutzung ab. DAM bietet zusätzliche Services rund um gespeicherte Assets, darunter Extrahieren von Metadaten, Versionierung, Erstellen von Vorschauen/Transcodierung, Verwalten von Referenzen und Hinzufügen von Informationen zur Zugriffssteuerung. Diese Services erfordern zusätzlich Zeit und Infrastrukturressourcen.
+Das Speichern von Assets unterliegt auch technischen Überlegungen und Überlegungen zur Ressourcenauslastung. DAM bietet zusätzliche Services rund um gespeicherte Assets, darunter Extrahieren von Metadaten, Versionierung, Erstellen von Vorschauen/Transcodierung, Verwalten von Referenzen und Hinzufügen von Informationen zur Zugriffssteuerung. Diese Services erfordern zusätzlich Zeit und Infrastrukturressourcen.
 
-Häufig ist das Speichern aller Assets und Aktualisierungen nicht empfehlenswert. Beispiel: Wenn Aktualisierungen von schlechter Qualität sind und einen unverhältnismäßigen Ressourcenverbrauch aufweisen, sollten die Assets nicht in DAM gespeichert werden.
+Häufig ist es nicht wünschenswert, alle Assets und Updates zu speichern. Wenn beispielsweise Aktualisierungen an bestimmten Assets von schlechter Qualität sind und übermäßige Ressourcen verbrauchen, werden die Assets möglicherweise nicht in DAM gespeichert.
 
 #### Wann Assets in DAM gespeichert werden {#when-assets-are-stored-in-dam}
 
-Kreativ-Teams (und Organisationen) sind in der Regel nicht daran interessiert, Assets in jeder Phase des Asset-Lebenszyklus zu speichern. Beispielsweise vermeiden sie das Speichern von Assets in den folgenden Fällen:
+Kreativ-Teams (und Organisationen) sind in der Regel nicht daran interessiert, Assets in jeder Phase des Asset-Lebenszyklus zu speichern. Sie vermeiden beispielsweise das Speichern von Assets in den folgenden Fällen:
 
-* Assets, die noch nicht abgeschlossen sind, oder zum Experimentieren verwendet werden.
+* Assets, die noch nicht abgeschlossen sind oder getestet werden können.
 * Assets, die den Prüfungszyklus des Kreativ-Teams/internen Teams nicht bestehen.
 * Verglichen mit dem betreffenden Asset verfügt das Team über bessere Beispiele für seine Arbeit, um sie externen Teams vorzustellen.
 
-In der Regel werden Assets der folgenden Klassen in DAM gespeichert:
+Normalerweise werden die folgenden Klassen-Assets in DAM gespeichert:
 
-* Assets, die einen bestimmten Reifegrad erreicht haben und als bereit zur Freigabe für andere Benutzer gelten.
+* Vermögenswerte, die eine bestimmte Laufzeit erreicht haben und als zur Freigabe bereit gelten.
 * Assets, die vorab vom Kreativ-Team ausgewählt wurden.
 * Bestimmte Asset-Formate, die vom Marketing-Team verwendet werden können oder abhängig von einem bestimmten Vertrag bzw. einer Vereinbarung angefordert wurden (z. B. aus RAW-Dateien konvertierte JPG-Dateien, TIFF-Dateien/-Bilder aus PSD-Originaldateien).
 
 #### Wann Aktualisierungen von Assets in DAM gespeichert werden {#when-updates-to-assets-are-stored-in-dam}
 
-In der Regel sollten nur Aktualisierungen von Assets in DAM gespeichert werden, die für den Großteil der DAM-Benutzer relevant sind. Dadurch wird sichergestellt, dass Benutzern (Marketing- und ähnliche Funktionen) in der DAM-Asset-Zeitleiste nur relevante Versionen angezeigt werden.
+In der Regel sollten nur Aktualisierungen an Assets in DAM gespeichert werden, die für den breiteren Satz von DAM-Benutzern relevant sind. Dadurch wird sichergestellt, dass Benutzer (Marketing- und ähnliche Funktionen) nur relevante Versionen in der DAM-Asset-Zeitleiste sehen.
 
-Normalerweise handelt es sich dabei um Änderungen in Bezug auf die wichtigsten Meilensteine im Asset-Lebenszyklus. Beispielsweise sollte das ursprüngliche fertige Marketing-Asset oder eine offizielle Aktualisierung basierend auf Anfragen/Überprüfungen durch das Kreativ-Team in DAM gespeichert und versioniert werden.
+Normalerweise Änderungen im Zusammenhang mit wichtigen Meilensteinen im Asset-Lebenszyklus. Beispielsweise sollte das ursprüngliche fertige Marketing-Asset oder eine offizielle Aktualisierung basierend auf Anfragen/Überprüfungen durch das Kreativ-Team in DAM gespeichert und versioniert werden.
 
-Die Aktualisierung des Kreativ-Teams zur Überprüfung durch das Marketing-Team nach einer Änderungsanfrage für ein vorhandenes Asset in DAM ist ein Beispiel für eine relevante Aktualisierung. Diese sollte als Referenzmaterial oder zum Zurücksetzen auf die letzte Version in DAM gespeichert und versioniert werden.
+Die Aktualisierung des Kreativ-Teams zur Überprüfung durch das Marketing-Team nach einer Änderungsanfrage für ein vorhandenes Asset in DAM ist ein Beispiel für eine relevante Aktualisierung. Sie sollte in DAM gespeichert und versioniert werden, um weitere Informationen zu erhalten oder zur vorherigen Version zurückzukehren.
 
-Es folgen Beispiele für Updates, die normalerweise nicht relevant sind:
+Im Folgenden finden Sie Beispiele für Aktualisierungen, die normalerweise nicht relevant sind:
 
-* Frühe Versionen von Assets, die hochgeladen wurden, bevor sie für die Marketingüberprüfung bereit waren
+* Frühzeitige Versionen von Assets, die hochgeladen wurden, bevor sie zur Marketing-Überprüfung bereit sind
 * Häufige kreative Änderungen am Asset in der WIP-Phase, bevor die Kreativ- und Marketing-Teams das Asset für fertig erklären
 
 ### Benutzerzugriff auf DAM {#user-access-to-dam}
 
-[!DNL Assets] unterstützt zwei Arten von Benutzenden, basierend auf deren Zugriff auf die [!DNL Assets]-Implementierung. Normalerweise haben Benutzer innerhalb des Unternehmensnetzwerks (Firewall) direkten Zugriff auf DAM. Andere Benutzer außerhalb des Unternehmensnetzwerks haben dagegen keinen direkten Zugriff. Der Benutzertyp bestimmt, welche Integrationen aus technischer Sicht verwendet werden können.
+[!DNL Assets] unterstützt zwei Arten von Benutzenden, basierend auf deren Zugriff auf die [!DNL Assets]-Implementierung. Normalerweise haben Benutzer im Unternehmensnetzwerk (Firewall) direkten Zugriff auf DAM. Andere Benutzer außerhalb des Unternehmensnetzwerks hätten keinen direkten Zugriff. Der Benutzertyp bestimmt aus technischer Sicht, welche Integrationen verwendet werden können.
 
 #### Kreative Benutzer mit direktem Zugriff auf DAM {#creative-users-with-direct-access-to-dam}
 
@@ -191,11 +190,11 @@ Stellen Sie mit den folgenden Strategien Zugriff auf abgeschlossene/genehmigte A
 
 Wie in diesem Dokument erläutert, wird empfohlen, umfangreiche Aktualisierungen für Assets, auch als laufende Arbeiten bezeichnet, durchzuführen, ohne dass alle in der lokalen Datei gespeicherten Bearbeitungen ebenfalls als Änderungen in [!DNL Experience Manager] hochgeladen werden. Dies beschleunigt die Arbeit von Desktop-Benutzern, schränkt die verwendete Netzwerkbandbreite ein und sorgt dafür, dass die Assets-Zeitleiste „sauber“ bleibt und auf kontrollierte, größere Aktualisierungen ausgerichtet ist.
 
-Adobe Asset Link bietet eine gute Unterstützung für dieses Nutzungsszenario:
+Adobe Asset Link bietet eine gute Unterstützung für diesen Anwendungsfall:
 
 * Wenn Benutzende in [!DNL Photoshop], [!DNL InDesign] oder [!DNL Illustrator] eine Datei bearbeiten möchten, checken sie das jeweilige Asset aus.
 * Das Asset wird im Hintergrund heruntergeladen und in die vom Creative Cloud-Desktop-Programm mit der Festplatte synchronisierten Creative Cloud-Konten der Benutzenden platziert. In [!DNL Experience Manager] wird die Checkout-Markierung auf dem Asset umgeschaltet, um Bearbeitungskonflikte zu minimieren.
-* Von diesem Zeitpunkt an arbeiten die Benutzer in einer Datei, die lokal am synchronisierten Speicherort abgelegt ist. Sie können weiterarbeiten und die erforderlichen Änderungen so oft wie gewünscht speichern.
+* Von dort aus arbeitet der Benutzer in einer Datei, die lokal am synchronisierten Speicherort gespeichert ist, und kann die erforderlichen Änderungen in allen erforderlichen Intervallen weiter bearbeiten und speichern
 * Da sich das Asset im Creative Cloud-Konto befindet, ist es auch auf etwaigen anderen Benutzergeräten verfügbar (z. B. zum Öffnen oder Bearbeiten in einer dedizierten Creative Cloud-Mobile-App). Außerdem kann es für andere Creative Cloud-Benutzer zwecks Zusammenarbeit freigegeben werden.
 * Wenn kreative Benutzer keine weiteren Änderungen vornehmen möchten, können sie diese Datei in ihrem Creative Cloud-Programm mit einem optionalen Kommentar einchecken. Das entsprechende Asset in [!DNL Experience Manager] wird versioniert und mit der neuen Binärdatei aktualisiert. [!DNL Experience Manager]-Benutzende wie Marketer oder Branchenbenutzende haben über die Zeitleisten-Benutzeroberfläche von [!DNL Experience Manager] Assets Zugriff auf wichtige Asset-Änderungen oder Meilensteine.
 
@@ -209,9 +208,9 @@ In einigen Szenarien müssen Sie möglicherweise eine größere Anzahl von Datei
 
 * Hochladen der Ergebnisse von Foto-Shootings oder größeren Projekten
 * Hochladen von Assets von Kreativagenturen
-* Hochladen von Assets aus einem größeren Satz, wenn die Auswahl außerhalb von DAM erfolgt
+* Hochladen ausgewählter Assets aus einem größeren Satz, wenn die Auswahl außerhalb von DAM erfolgt
 
-Die Beschreibung bezieht sich auf das betriebsbedingte Hochladen von Dateien (z. B. jede Woche oder bei jedem Foto-Shooting) als normaler Teil des Workflows von Desktop-Benutzenden. Das Migrieren großer Assets wird hier nicht behandelt.
+Die Beschreibung bezieht sich auf das betriebsbedingte Hochladen von Dateien (z. B. jede Woche oder bei jedem Foto-Shooting) als normaler Teil des Workflows von Desktop-Benutzenden. Große Asset-Migrationen werden hier nicht behandelt.
 
 Sie können die folgenden Upload-Funktionen nutzen:
 
@@ -227,7 +226,7 @@ Verwenden Sie das [!DNL Experience Manager]-Desktop-Programm nicht für die dire
 
 #### Asset-Migration {#asset-migration}
 
-Informationen zum Planen und Ausführen von Asset-Migrationen von vorhandenen Systemen in ein neues System oder Migrieren großer Mengen von auf Servern gespeicherten Assets finden Sie im [Migrationshandbuch](/help/assets/assets-migration-guide.md). [!DNL Experience Manager]-Desktop-Programm und Integrationen aus [!DNL Experience Manager] in [!DNL Creative Cloud] unterstützen keine derartigen Migrationen. Aufgrund der großen Menge an aufzunehmenden Assets und der zusätzlichen Anforderungen rund um Metadatenzuordnungen, Transformationen und Aufnahmen sollten Migrationen mithilfe anderer Tools und Ansätze erfolgen.
+Informationen zum Planen und Ausführen von Asset-Migrationen von einem vorhandenen System auf ein neues System oder zum Migrieren einer großen Menge von auf Servern gespeicherten Assets finden Sie unter [Migrationshandbuch](/help/assets/assets-migration-guide.md). [!DNL Experience Manager]-Desktop-Programm und Integrationen aus [!DNL Experience Manager] in [!DNL Creative Cloud] unterstützen keine derartigen Migrationen. Aufgrund der großen Menge an aufzunehmenden Assets und der zusätzlichen Anforderungen rund um Metadatenzuordnungen, Transformationen und Aufnahmen sollten Migrationen mithilfe anderer Tools und Ansätze erfolgen.
 
 >[!MORELIKETHIS]
 >

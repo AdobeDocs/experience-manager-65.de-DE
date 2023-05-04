@@ -1,7 +1,7 @@
 ---
 title: Aktualisieren auf AEM 6.5
 seo-title: Upgrading to AEM 6.5
-description: Erfahren Sie mehr über die Grundlagen der Aktualisierung einer älteren AEM-Installation auf AEM 6.5.
+description: Erfahren Sie mehr über die Grundlagen der Aktualisierung einer älteren AEM auf AEM 6.5.
 seo-description: Learn about the basics of upgrading an older AEM installation to AEM 6.5.
 contentOwner: sarchiz
 topic-tags: upgrading
@@ -10,22 +10,22 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: 02fc145d5ec1458d1f71a2f353b56b944a267f3e
-workflow-type: ht
-source-wordcount: '694'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 80%
 
 ---
 
 # Aktualisieren auf AEM 6.5 {#upgrading-to-aem}
 
-In diesem Abschnitt wird das Aktualisieren einer AEM-Installation auf AEM 6.5 beschrieben:
+In diesem Abschnitt wird die Aktualisierung einer AEM auf AEM 6.5 beschrieben:
 
 * [Planung von Upgrades](/help/sites-deploying/upgrade-planning.md)
 * [Bewertung der Komplexität des Upgrades mit dem Musterdetektor ](/help/sites-deploying/pattern-detector.md)
 * [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
 
-<!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+   <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Upgrade-Verfahren](/help/sites-deploying/upgrade-procedure.md)
 * [Upgrades von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Wartungsaufgaben vor einem Upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
@@ -37,16 +37,16 @@ In diesem Abschnitt wird das Aktualisieren einer AEM-Installation auf AEM 6.5 be
 
 Für ein einfacheres Verständnis der in diesen Verfahren verwendeten AEM-Instanzen werden die folgenden Begriffe in diesen Artikeln verwendet:
 
-* Bei der *Quell* instanz handelt es sich um die AEM-Instanz, von der aus die Aktualisierung durchgeführt wird.
-* Bei der *Ziel* instanz handelt es sich um die Instanz, auf die die Aktualisierung durchgeführt wird.
+* Die *source* -Instanz ist die AEM Instanz, von der Sie ein Upgrade durchführen.
+* Die *target* -Instanz ist die Instanz, auf die Sie aktualisieren.
 
 >[!NOTE]
 >
->Als Teil der Bemühungen, die Zuverlässigkeit von Upgrades zu verbessern, wurde AEM einer umfassenden Repository-Neustrukturierung unterzogen. Weitere Informationen, wie die neue Struktur angepasst wird, finden Sie unter [Repository-Neustrukturierung in AEM](/help/sites-deploying/repository-restructuring.md).
+>Als Teil der Bemühungen, die Zuverlässigkeit von Upgrades zu verbessern, wurde AEM einer umfassenden Repository-Neustrukturierung unterzogen. Weitere Informationen zur Anpassung an die neue Struktur finden Sie unter [Repository-Neustrukturierung in AEM.](/help/sites-deploying/repository-restructuring.md)
 
-## Was wurde geändert? {#what-has-changed}
+## Was hat sich geändert? {#what-has-changed}
 
-Nachfolgend sind die wichtigsten Änderungen im Vergleich zu den letzten AEM-Versionen aufgeführt:
+Im Folgenden werden die wichtigsten Änderungen der letzten Versionen von AEM beschrieben:
 
 In AEM 6.0 wurde das neue Jackrabbit-Oak-Repository eingeführt. Persistenz-Manager wurden durch [Mikrokernel](/help/sites-deploying/platform.md#contentbody_title_4) ersetzt. Ab Version 6.1 wird CRX2 nicht mehr unterstützt. Ein Migrationstool mit der Bezeichnung CRX2OAK muss ausgeführt werden, um CRX2-Repositorys von 5.6.1-Instanzen zu migrieren. Weitere Informationen finden Sie unter [Verwenden des CRX2OAK-Migrationstools](/help/sites-deploying/using-crx2oak.md).
 
@@ -64,13 +64,12 @@ Die Befehlszeilenoptionen für die Verwendung des CRX2OAK-Tools wurden geändert
 
 Die Prüfungen nach einem Upgrade wurden ebenfalls automatisierungsfreundlich gestaltet.
 
-Zu den regelmäßig durchzuführenden Routinewartungsaufgaben gehören jetzt die regelmäßige Revisionsbereinigung und die Bereinigung des Datenspeichers. Mit der Einführung von AEM 6.3 unterstützt und empfiehlt Adobe die Online-Revisionsbereinigung. Weitere Informationen zum Konfigurieren dieser Aufgaben finden Sie unter [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md).
+Zu den regelmäßig durchzuführenden Routinewartungsaufgaben gehören jetzt die regelmäßige Revisionsbereinigung und die Bereinigung des Datenspeichers. Mit der Einführung von AEM 6.3 unterstützt und empfiehlt Adobe die Online-Revisionsbereinigung. Siehe [Revisionsbereinigung](/help/sites-deploying/revision-cleanup.md) für Informationen zur Konfiguration dieser Aufgaben.
 
 Neu in AEM ist der [Musterdetektor](/help/sites-deploying/pattern-detector.md), mit dem Sie bei der Planung des Upgrades die Komplexität der Aktualisierung ermitteln können. In 6.5 liegt der Fokus auf der [Abwärtskompatibilität](/help/sites-deploying/backward-compatibility.md) der Funktionen. Außerdem wurden Best Practices für [nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md) hinzugefügt.
 
-Einzelheiten zu weiteren Änderungen in den neuen AEM-Versionen finden Sie in den vollständigen Versionshinweisen:
+Weitere Informationen zu den Änderungen der letzten AEM finden Sie in den vollständigen Versionshinweisen:
 
-* [Allgemeine Versionshinweise zu Adobe Experience Manager 6.4](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/release-notes.html?lang=de)
 * [Versionshinweise zum neuesten Service Pack von Adobe Experience Manager 6.5](/help/release-notes/release-notes.md)
 
 ## Überblick über das Upgrade {#upgrade-overview}
@@ -81,7 +80,7 @@ Die Aktualisierung von AEM ist ein mehrstufiger Prozess, der in manchen Fällen 
 
 ## Ablauf des Upgrades {#upgrade-overview-1}
 
-Das folgende Diagramm zeigt den für das Upgrade empfohlenen Ablauf. Beachten Sie den Verweis auf die neu eingeführten Funktionen. Das Upgrade sollte damit starten, dass mit dem Musterdetektor ein Bericht über vorhandene Muster erstellt wird (siehe [Bewertung der Komplexität des Upgrades mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)), mit dessen Hilfe Sie entscheiden können, welchem Pfad Sie für die Kompatibilität mit AEM 6.4 folgen möchten.
+Das folgende Diagramm zeigt den für das Upgrade empfohlenen Ablauf. Beachten Sie bitte die neuen Funktionen, die wir eingeführt haben. Das Upgrade sollte damit starten, dass mit dem Musterdetektor ein Bericht über vorhandene Muster erstellt wird (siehe [Bewertung der Komplexität des Upgrades mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)), mit dessen Hilfe Sie entscheiden können, welchem Pfad Sie für die Kompatibilität mit AEM 6.4 folgen möchten.
 
 In 6.5 haben wir einen starken Fokus darauf gelegt, alle neuen Funktionen abwärtskompatibel zu gestalten. In Fällen, in denen mit der Abwärtskompatibilität weiterhin Probleme auftreten, können Sie notwendige Entwicklungsarbeiten jedoch mit dem Kompatibilitätsmodus aufschieben und so Ihren benutzerdefinierten Code vorübergehend mit 6.5 kompatibel halten. Mit diesem Ansatz vermeiden Sie sofort nach dem Upgrade jeden erforderlichen Entwicklungsaufwand (siehe [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 

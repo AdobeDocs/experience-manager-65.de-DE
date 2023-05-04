@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '2228'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '2207'
+ht-degree: 99%
 
 ---
 
@@ -79,7 +79,7 @@ Sie kombinieren einen Datensatz mit einer Vorlage für interaktive Kommunikation
 
 So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer JSON-Datei gespeichert sind:
 
-1. Erstellen Sie einen [überwachten Ordner](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html?lang=de) und konfigurieren Sie ihn für die Verwendung der Batch-API:
+1. Erstellen Sie einen [überwachten Ordner](/help/forms/using/creating-configure-watched-folder.md) und konfigurieren Sie ihn für die Verwendung der Batch-API:
    1. Melden Sie sich bei der AEM Forms-Autoreninstanz an.
    1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Formulare]** > **[!UICONTROL Überwachten Ordner konfigurieren]**. Tippen Sie auf **[!UICONTROL Neu]**.
    1. Geben Sie die den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`.
@@ -109,7 +109,7 @@ So erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer J
 
 #### Verwenden Sie Eingabedaten, die in einer externen Datenquelle gespeichert sind und über das Formulardatenmodell aufgerufen werden, um eine interaktive Kommunikation zu erstellen. {#use-fdm-as-data-source}
 
-Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) mit einer interaktiven Kommunikationsvorlage, um eine interaktive Kommunikation zu erzeugen. Wenn Sie eine interaktive Kommunikation erstellen, verbinden Sie sie über ein Formulardatenmodell (FDM) mit einer externen Datenquelle, um auf Daten zuzugreifen. Sie können den Batch-Prozess-Service für überwachte Ordner konfigurieren, um Daten mit demselben Formulardatenmodell aus einer externen Datenquelle abzurufen. So [Erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer externen Datenquelle gespeichert sind](https://experienceleague.adobe.com/docs/experience-manager-64/forms/form-data-model/work-with-form-data-model.html?lang=de):
+Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) mit einer interaktiven Kommunikationsvorlage, um eine interaktive Kommunikation zu erzeugen. Wenn Sie eine interaktive Kommunikation erstellen, verbinden Sie sie über ein Formulardatenmodell (FDM) mit einer externen Datenquelle, um auf Daten zuzugreifen. Sie können den Batch-Prozess-Service für überwachte Ordner konfigurieren, um Daten mit demselben Formulardatenmodell aus einer externen Datenquelle abzurufen. So [Erstellen Sie eine interaktive Kommunikation aus Datensätzen, die in einer externen Datenquelle gespeichert sind](/help/forms/using/work-with-form-data-model.md):
 
 1. So konfigurieren Sie das Formulardatenmodell der Vorlage:
    1. Öffnen Sie das Formulardatenmodell, das mit der Vorlage für interaktive Kommunikation verknüpft ist.
@@ -141,7 +141,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
 
    1. Speichern und schließen Sie die Datei.
 
-1. Erstellen Sie einen [überwachten Ordner](https://experienceleague.adobe.com/docs/experience-manager-64/forms/publish-process-aem-forms/creating-configure-watched-folder.html?lang=de) und konfigurieren Sie ihn für die Verwendung des Batch-API-Services:
+1. Erstellen Sie einen [überwachten Ordner](/help/forms/using/creating-configure-watched-folder.md) und konfigurieren Sie ihn für die Verwendung des Batch-API-Services:
    1. Melden Sie sich bei der AEM Forms-Autoreninstanz an.
    1. Navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Formulare]** > **[!UICONTROL Überwachten Ordner konfigurieren]**. Tippen Sie auf **[!UICONTROL Neu]**.
    1. Geben Sie die den **[!UICONTROL Namen]** und den physischen **[!UICONTROL Pfad]** des Ordners an. Beispiel: `c:\batchprocessing`.
@@ -359,7 +359,7 @@ Sie speichern nicht nur die Daten im Dateisystem, sondern auch JSON-Dateien im C
 
    SERVICE_NAME verweist auf den Namen des OSGI-Vorbefüllungs-Service. Lesen Sie Erstellen und Ausführen eines Vorbefüllungs-Service.
 
-   IDENTIFIER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Service erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Ein Bezeichner für den angemeldeten Benutzer ist ein Beispiel für die Metadaten, die verwendet werden könnten.
+   IDENTIFIER bezieht sich auf alle Metadaten, die vom OSGI-Vorbefüllungs-Service erforderlich sind, um die Daten zum Vorbefüllen aufzurufen. Eine Kennung für den angemeldeten Benutzer ist ein Beispiel für Metadaten, die verwendet werden können.
 
 * **HTTP-Protokoll**
 

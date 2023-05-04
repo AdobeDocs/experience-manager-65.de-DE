@@ -6,10 +6,10 @@ mini-toc-levels: 1
 feature: Tagging, Metadata
 role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: ht
-source-wordcount: '2371'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '2359'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/manage-metadata.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/metadata.html?lang=de) |
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -71,9 +70,9 @@ XMP-Writeback wird für die unter [Technische Anforderungen](/help/sites-deployi
 
 ## Bearbeiten von Metadateneigenschaften für mehrere Assets {#editing-metadata-properties-of-multiple-assets}
 
-Mit [!DNL Adobe Enterprise Manager Assets] können Sie die Metadaten mehrerer Assets gleichzeitig bearbeiten, sodass Sie allgemeine Metadatenänderungen an Assets zusammen vornehmen können. Sie können die Metadaten für mehrere Sammlungen zusammen bearbeiten. Verwenden Sie die Seite „Eigenschaften“, um Metadatenänderungen für mehrere Assets oder Sammlungen durchzuführen:
+Mit [!DNL Adobe Enterprise Manager Assets] können Sie die Metadaten mehrerer Assets gleichzeitig bearbeiten, sodass Sie allgemeine Metadatenänderungen an Assets zusammen vornehmen können. Sie können die Metadaten für mehrere Sammlungen zusammen bearbeiten. Verwenden Sie die Eigenschaftenseite, um Metadatenänderungen an mehreren Assets oder Sammlungen durchzuführen:
 
-* Metadateneigenschaften in einen gemeinsamen Wert ändern
+* Ändern von Metadateneigenschaften in einen gemeinsamen Wert
 * Tags hinzufügen oder ändern
 
 Verwenden Sie zum Anpassen der Seite mit Metadateneigenschaften, einschließlich Hinzufügen, Ändern und Löschen von Metadateneigenschaften, den [Schemaeditor](metadata-config.md#folder-metadata-schema).
@@ -100,7 +99,7 @@ Verwenden Sie zum Anpassen der Seite mit Metadateneigenschaften, einschließlich
 
 Mit [!DNL Assets] können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
 
-Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn das Flag für die Arbeitsabläufe gesetzt ist. Planen Sie einen solchen Import während Zeiten geringer Servernutzung, damit die Leistung anderer Benutzer nicht beeinträchtigt wird.
+Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann ressourcenintensiv sein, da XMP Writeback-Aktivität aktiviert ist. Planen Sie einen solchen Import während der schlanken Server-Nutzung, damit die Leistung für andere Benutzer nicht beeinträchtigt wird.
 
 >[!NOTE]
 >
@@ -167,9 +166,9 @@ Weitere Informationen finden Sie unter [Anzeigen und Bearbeiten von Sammlungsmet
 <!-- TBD: Review this overview.
 -->
 
-Wenn Sie ein Metadatenprofil zu einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Demzufolge können Sie einem Ordner nur ein Metadatenprofil zuweisen. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
+Wenn Sie ein Metadatenprofil zu einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Das bedeutet, dass Sie einem Ordner nur ein Metadatenprofil zuweisen können. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
 
-Wenn Sie einem Ordner ein anderes Metadatenprofil zugewiesen haben, überschreibt das neue das vorherige Profil. Die zuvor vorhandenen Ordner-Assets verbleiben unverändert. Das neue Profil wird auf die Assets angewendet, die dem Ordner später hinzugefügt werden.
+Wenn Sie einem Ordner ein anderes Metadatenprofil zugewiesen haben, überschreibt das neue Profil das vorherige Profil. Die zuvor vorhandenen Ordner-Assets bleiben unverändert. Das neue Profil wird auf die Assets angewendet, die dem Ordner später hinzugefügt werden.
 
 Ordner, denen ein Profil zugewiesen wurde, werden in der Benutzeroberfläche durch den Namen des Profils angegeben, der im Kartennamen angezeigt wird.
 
@@ -210,7 +209,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 
 ### Entfernen eines Metadatenprofils aus Ordnern {#removing-a-metadata-profile-from-folders}
 
-Wenn Sie ein Metadatenprofil aus einem Ordner entfernen, erben automatisch alle Unterordner das Entfernen des Profils aus dem übergeordneten Ordner. Die Verarbeitung der Dateien, die in den Ordnern stattgefunden hat, verbleibt jedoch intakt.
+Wenn Sie ein Metadatenprofil aus einem Ordner entfernen, erben automatisch alle Unterordner das Entfernen des Profils aus dem übergeordneten Ordner. Die Verarbeitung von Dateien, die in den Ordnern stattgefunden hat, bleibt jedoch intakt.
 
 Sie können ein Metadatenprofil aus einem Ordner über das Menü **[!UICONTROL Tools]** oder über die **[!UICONTROL Eigenschaften]** im Ordner entfernen.
 

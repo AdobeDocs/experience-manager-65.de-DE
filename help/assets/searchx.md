@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 0db95c4e7fc1ca20ce4f2d352c1276aa546dc7c3
-workflow-type: ht
-source-wordcount: '838'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '825'
+ht-degree: 88%
 
 ---
 
@@ -22,7 +22,7 @@ Sie können dem Admin-Bedienfeld von [!DNL Assets] auch zusätzliche Registerkar
 
 >[!CAUTION]
 >
->Seit Einführung von [!DNL Experience Manager] 6.4 ist die klassische Benutzeroberfläche veraltet. Eine entsprechende Ankündigung finden Sie unter [Veraltete und entfernte Funktionen](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/deprecated-removed-features.html?lang=de). Adobe empfiehlt die Verwendung der Touch-optimierten Benutzeroberfläche. Informationen zur Anpassung finden Sie unter [Suchfacetten](/help/assets/search-facets.md).
+>Seit Einführung von [!DNL Experience Manager] 6.4 ist die klassische Benutzeroberfläche veraltet. Adobe empfiehlt die Verwendung der Touch-optimierten Benutzeroberfläche. Informationen zur Anpassung finden Sie unter [Suchfacetten](/help/assets/search-facets.md).
 
 ## Überlagerung {#overlaying}
 
@@ -53,7 +53,7 @@ Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie in der Ad
 
 Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?lang=de).
 
-Als Best Practice hat es sich erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispiel-Eigenschaften befinden sich unter **/libs/cq/search/components/predicates**.
+Es empfiehlt sich, ein vorhandenes Prädikat zu kopieren und anzupassen. Beispielprädikate finden Sie unter **/libs/cq/search/components/predicates**.
 
 ### Beispiel: Einfaches Eigenschaftsprädikat erstellen   {#example-build-a-simple-property-predicate}
 
@@ -140,7 +140,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
    ```
 
 1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE den Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft **cq:actions** mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
-1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. **press.html**) in den Designmodus. Aktivieren Sie Ihre neue Komponente für das Eigenschaften-Absatzsystem (z. B. **links**).
+1. Navigieren Sie zu Ihrem Browser und auf Ihrer Beispielseite (z. B. **press.html**) in den Designmodus wechseln und Ihre neue Komponente für das Prädikat-Absatzsystem aktivieren (z. B. **left**).
 
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein, geben Sie einen Suchbegriff – z. B. **Raute** – ein und klicken Sie auf das Lupensymbol, um die Suche zu starten.
 
@@ -165,7 +165,7 @@ So erstellen Sie eine Gruppeneigenschaft:
        componentGroup="Search"/>
    ```
 
-1. Fügen Sie **titlepredicate.jsp** hinzu:
+1. Hinzufügen **titlepredicate.jsp**:
 
    ```java
    <%--
@@ -244,7 +244,7 @@ So erstellen Sie eine Gruppeneigenschaft:
    ```
 
 1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE den Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft **cq:actions** mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
-1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. **press.html**) in den Designmodus. Aktivieren Sie Ihre neue Komponente für das Eigenschaften-Absatzsystem (z. B. **links**).
+1. Navigieren Sie zu Ihrem Browser und auf Ihrer Beispielseite (z. B. **press.html**) in den Designmodus wechseln und Ihre neue Komponente für das Prädikat-Absatzsystem aktivieren (z. B. **left**).
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein.
 
 ## Installierte Eigenschaften-Widgets {#installed-predicate-widgets}

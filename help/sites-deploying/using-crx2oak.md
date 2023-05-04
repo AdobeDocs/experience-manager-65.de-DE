@@ -1,7 +1,7 @@
 ---
 title: Verwendung des CRX2Oak-Migrations-Tools
 seo-title: Using the CRX2Oak Migration Tool
-description: Erlernen Sie den Umgang mit dem CRX2OAK-Migrationstool.
+description: Erfahren Sie, wie Sie das Migrationstool CRX2Oak verwenden.
 seo-description: Learn how to use the CRX2Oak migration tool.
 uuid: 9b788981-4ef0-446e-81f0-c327cdd3214b
 contentOwner: User
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '1246'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '1220'
+ht-degree: 76%
 
 ---
 
@@ -22,25 +22,23 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-CRX2Oak ist ein Tool für die Migration von Daten zwischen verschiedenen Repositorys.
+CRX2Oak ist ein Tool, mit dem Daten zwischen verschiedenen Repositorys migriert werden können.
 
-Es kann zur Migration von Daten aus älteren CQ-Versionen, die auf Apache Jackrabbit 2 basieren, nach Oak verwendet werden, sowie zum Kopieren von Daten zwischen Oak-Repositorys.
+Es kann verwendet werden, um Daten aus älteren CQ-Versionen basierend auf Apache Jackrabbit 2 nach Oak zu migrieren, und es kann auch zum Kopieren von Daten zwischen Oak-Repositorys verwendet werden.
 
 Die aktuelle CRX2OAK-Version kann unter der folgenden Adresse vom öffentlichen Adobe-Repository heruntergeladen werden:[https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
-Die Liste der Änderungen und Fehlerbehebungen für die aktuelle Version finden Sie in den [Versionshinweisen zu CRX2OAK](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/crx2oak.html?lang=de).
-
 >[!NOTE]
 >
->Weitere Informationen zu Apache Oak sowie zu den Grundkonzepten der AEM-Persistenz finden Sie unter [Einführung in die AEM-Plattform](/help/sites-deploying/platform.md).
+>Weitere Informationen zu Apache Oak und den Schlüsselkonzepten AEM Persistenz finden Sie unter [Einführung in die AEM Platform](/help/sites-deploying/platform.md).
 
-## Anwendungsfälle zu Migration {#migration-use-cases}
+## Migrationsanwendungsfälle {#migration-use-cases}
 
-Dieses Tool kann für folgende Anwendungsfälle verwendet werden:
+Das Tool kann für Folgendes verwendet werden:
 
-* Migration von älteren CQ 5-Versionen nach AEM 6
+* Migration von älteren CQ 5-Versionen zu AEM 6
 * Kopieren von Daten zwischen mehreren Oak-Repositorys
-* Konvertieren von Daten zwischen unterschiedlichen Oak-Mikrokernel-Implementierungen.
+* Konvertieren von Daten zwischen verschiedenen Oak MicroKernel-Implementierungen.
 
 Die Unterstützung für die Migration von Repositorys mit externen BLOB-Speichern (allgemein als Datenspeicher bekannt) wird in unterschiedlicher Form bereitgestellt. Ein möglicher Migrationspfad ist von einem CRX2-Repository, das einen externen `FileDataStore` nutzt, auf ein Oak-Repository, das einen `S3DataStore` verwendet.
 
@@ -50,19 +48,19 @@ Das nachfolgende Diagramm zeigt alle von CRX2Oak unterstützten Migrationsoption
 
 ## Funktionen {#features}
 
-CRX2OAK wird bei AEM-Aktualisierungen aufgerufen. Dabei kann der Benutzer ein vordefiniertes Migrationsprofil angeben, das die Rekonfiguration von Persistenzmodi automatisiert. Dies wird als Quickstart-Modus bezeichnet.
+CRX2OAK wird bei AEM-Aktualisierungen aufgerufen. Dabei kann der Benutzer ein vordefiniertes Migrationsprofil angeben, das die Rekonfiguration von Persistenzmodi automatisiert. Dies wird als Schnellstartmodus bezeichnet.
 
-Das Tool kann auch separat ausgeführt werden, für den Fall, dass eine umfassendere Anpassung erforderlich ist. Beachten Sie jedoch, dass in diesem Modus Änderungen nur am Repository vorgenommen werden und dass jede weitere Neukonfiguration von AEM manuell durchgeführt werden muss. Dies wird als Standalone-Modus bezeichnet.
+Das Tool kann auch separat ausgeführt werden, für den Fall, dass eine umfassendere Anpassung erforderlich ist. Beachten Sie jedoch, dass in diesem Modus Änderungen nur am Repository vorgenommen werden und dass jede weitere Neukonfiguration von AEM manuell durchgeführt werden muss. Dies wird als eigenständiger Modus bezeichnet.
 
-Eine weitere Besonderheit besteht darin, dass mit den Standardeinstellungen des Standalone-Modus nur der Knotenspeicher migriert wird und dass das neue Repository den alten Binärspeicher wiederverwendet.
+Beachten Sie auch, dass mit den Standardeinstellungen im eigenständigen Modus nur der Knotenspeicher migriert wird und das neue Repository den alten binären Speicher wiederverwendet.
 
-### Automatisierter Quickstart-Modus {#automated-quickstart-mode}
+### Automatisierter Schnellstartmodus {#automated-quickstart-mode}
 
-Ab AEM 6.3 kann das CRX2OAK-Tool benutzerdefinierte Migrationsprofile verarbeiten. Diese können so konfiguriert werden, dass alle Migrationsoptionen bereits verfügbar sind. Damit wird die Flexibilität gesteigert und eine Automatisierung der AEM-Konfiguration ermöglicht. Funktionen wie diese stehen nicht zur Verfügung, wenn Sie das Tool im Standalone-Modus verwenden.
+Ab AEM 6.3 kann das CRX2OAK-Tool benutzerdefinierte Migrationsprofile verarbeiten. Diese können so konfiguriert werden, dass alle Migrationsoptionen bereits verfügbar sind. Dies ermöglicht sowohl höhere Flexibilität als auch die Möglichkeit, die Konfiguration von AEM zu automatisieren, Funktionen, die nicht verfügbar sind, wenn Sie das Tool im eigenständigen Modus verwenden.
 
-Um CRX2OAK in den Quickstart-Modus zu schalten, müssen Sie den Pfad zum Ordner „crx-quickstart“ im AEM-Installationsverzeichnis mithilfe der folgenden Betriebssystemvariablen definieren:
+Um CRX2Oak in den Schnellstartmodus zu wechseln, müssen Sie den Pfad zum Ordner crx-quickstart im AEM Installationsverzeichnis über diese Umgebungsvariable des Betriebssystems definieren:
 
-**Für UNIX-basierte Systeme und Mac OS:**
+**Für UNIX-basierte Systeme und macOS:**
 
 ```shell
 export SLING_HOME="/path/to/crx-quickstart"
@@ -76,15 +74,15 @@ SET "SLING_HOME=/path/to/crx-quickstart"
 
 #### Fortsetzung der Unterstützung {#resume-support}
 
-Die Migration kann jederzeit unterbrochen und anschließend wieder fortgesetzt werden.
+Die Migration kann jederzeit unterbrochen werden und kann danach wieder aufgenommen werden.
 
-#### Anpassbare Aktualisierungslogik {#customizable-upgrade-logic}
+#### Anpassbare Upgrade-Logik {#customizable-upgrade-logic}
 
 Mithilfe von `CommitHooks` kann auch eine benutzerdefinierte Java-Logik implementiert werden. Benutzerdefinierte `RepositoryInitializer`-Klassen können implementiert werden, um das Repository mit benutzerdefinierten Werten zu initialisieren.
 
 #### Unterstützung für Speicherzuordnungsvorgänge {#support-for-memory-mapped-operations}
 
-CRX2OAK unterstützt standardmäßig auch Speicherzuordnungsvorgänge. Durch die Speicherzuordnung wird die Leistung erheblich verbessert. Diese Funktion sollte deshalb nach Möglichkeit verwendet werden.
+CRX2OAK unterstützt standardmäßig auch Speicherzuordnungsvorgänge. Die Speicherzuordnung verbessert die Leistung erheblich und sollte nach Möglichkeit verwendet werden.
 
 >[!CAUTION]
 >
@@ -104,7 +102,7 @@ Wenn Daten zwischen zwei Repositorys kopiert werden müssen und der Inhaltspfad 
 
 #### Versionsunterstützung {#version-support}
 
-Standardmäßig erstellt AEM eine Version jedes Knotens oder jeder Seite, der bzw. die geändert wird, und speichert diese/n im Repository. Diese Versionen können dann zum Wiederherstellen eines früheren Status der Seite verwendet werden.
+Standardmäßig erstellt AEM eine Version jedes Knotens oder jeder Seite, der bzw. die geändert wird, und speichert diese/n im Repository. Die Versionen können dann verwendet werden, um die Seite in einem früheren Zustand wiederherzustellen.
 
 Allerdings werden diese Versionen nie bereinigt, auch wenn die Originalseite gelöscht wird. Bei Repositorys, die bereits lange Zeit verwendet werden, muss bei der Migration möglicherweise ein hohes Volumen von redundanten Daten verarbeitet werden. Schuld daran sind verwaiste Versionen.
 
@@ -116,13 +114,13 @@ Beide Parameter unterstützen außerdem das Datumsformat `YYYY-MM-DD`, falls Sie
 
 ![chlimage_1-153](assets/chlimage_1-153.png)
 
-#### Open-Source-Version {#open-source-version}
+#### Open Source Version {#open-source-version}
 
-Eine Open-Source-Version von CRX2OAK ist als „Oak-Upgrade“ verfügbar. Es unterstützt alle Funktionen, mit Ausnahme der folgenden:
+Eine Open-Source-Version von CRX2OAK ist als „Oak-Upgrade“ verfügbar. Es unterstützt alle Funktionen mit Ausnahme von:
 
 * CRX2-Unterstützung
-* Unterstützung für Migrationsprofilen
-* Unterstützung für die automatisierte AEM-Neukonfiguration
+* Unterstützung von Migrationsprofilen
+* Unterstützung für automatisierte AEM
 
 Weitere Informationen finden Sie in der [Apache-Dokumentation](https://jackrabbit.apache.org/oak/docs/migration.html).
 
@@ -145,7 +143,7 @@ Weitere Informationen finden Sie in der [Apache-Dokumentation](https://jackrabbi
 
 * `--early-shutdown`: Fährt das JCR2-Quell-Repository nach dem Kopieren der Knoten herunter, bevor die CommitHooks angewendet werden
 * `--fail-on-error`: Erzwingt ein Fehlschlagen der Migration, wenn die Knoten nicht aus dem Quell-Repository gelesen werden können.
-* `--ldap`: Migriert LDAP-Benutzer von einer CQ 5.x-Instanz auf eine Oak-basierte Instanz. Dies funktioniert jedoch nur, wenn der Identitätsanbieter in der Oak-Konfiguration als „ldap“ angegeben ist. Weitere Informationen finden Sie in der [LDAP-Dokumentation](/help/sites-administering/ldap-config.md).
+* `--ldap`: Migriert LDAP-Benutzer von einer CQ 5.x-Instanz auf eine Oak-basierte Instanz. Dies funktioniert jedoch nur, wenn der Identitätsanbieter in der Oak-Konfiguration als „ldap“ angegeben ist. Weitere Informationen finden Sie unter [LDAP-Dokumentation](/help/sites-administering/ldap-config.md).
 
 * `--ldap-config:`: Verwenden Sie diese Option zusammen mit dem Parameter `--ldap` für CQ 5.x-Repositorys, die mehrere LDAP-Server für die Authentifizierung verwendet haben. Sie können damit auf die CQ 5.x-Konfigurationsdateien `ldap_login.conf` oder `jaas.conf` verweisen. Das Format lautet `--ldapconfig=path/to/ldap_login.conf`.
 

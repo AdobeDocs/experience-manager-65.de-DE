@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 56c92b7f-e687-4ab5-a376-afa58bdb6ee0
-source-git-commit: 068f6c1c2909c2840e9ad4c0ad295538e543d9c9
-workflow-type: ht
-source-wordcount: '2012'
-ht-degree: 100%
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+workflow-type: tm+mt
+source-wordcount: '2000'
+ht-degree: 93%
 
 ---
 
@@ -18,7 +18,6 @@ ht-degree: 100%
 | -------- | ---------------------------- |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/metadata-profiles.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM 6.4 | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-64/assets/administer/metadata-profiles.html?lang=de) |
 
 <!-- Scope of metadata articles:
 * metadata.md: The scope of this article is basic metadata updates, changes, etc. operations that end-users can do.
@@ -105,7 +104,7 @@ Mit einem Metadatenprofil können Sie Standardmetadaten auf Assets in einem Ordn
 
 1. Klicken Sie in der Symbolleiste auf **[!UICONTROL Kopieren]**.
 1. Geben Sie im Dialogfeld **[!UICONTROL Metadatenprofil kopieren]** einen Titel für die neue Kopie des Metadatenprofils ein.
-1. Klicken Sie auf **[!UICONTROL Kopieren]**. Die Kopie des Metadatenprofils wird in der Liste mit Profilen auf der Seite **[!UICONTROL Metadatenprofile]** angezeigt.
+1. Klicken **[!UICONTROL Kopieren]**. Die Kopie des Metadatenprofils wird in der Liste mit Profilen auf der Seite **[!UICONTROL Metadatenprofile]** angezeigt.
 
    ![Eine Kopie des auf der Seite „Metadatenprofile“ hinzugefügten Metadatenprofils](assets/copy-metadata-profile.png)
 
@@ -150,10 +149,10 @@ Verwenden Sie den Editor für Metadatenschema-Formulare, um Metadatenschemata f�
 
 ### Bearbeiten von Ordner-Metadatenschema-Formularen {#edit-folder-metadata-schema-forms}
 
-Sie können neu erstellte oder bestehende Metadatenschema-Formulare bearbeiten. Hierzu zählen folgende Elemente:
+Sie können ein neu hinzugefügtes oder vorhandenes Metadatenschema-Formular bearbeiten, das Folgendes enthält:
 
 * Registerkarten
-* Formularelemente innerhalb von Registerkarten
+* Formularelemente in Registerkarten.
 
 Sie können diese Formularelemente einem Feld innerhalb eines Metdatenknotens im CRX-Repository zuordnen bzw. dafür konfigurieren. Sie können dem Metadatenschema-Formular neue Registerkarten oder Formularelemente hinzufügen.
 
@@ -199,7 +198,7 @@ Um die Eigenschaften von Formularelementen zu bearbeiten, klicken Sie auf die Ko
 
 **[!UICONTROL Feldbezeichnung]**: Der Name der Metadateneigenschaft, der auf der Eigenschaftenseite des Assets angezeigt wird.
 
-**[!UICONTROL Zu Eigenschaft zuordnen]**: Diese Eigenschaft gibt den relativen Pfad des Ordnerknotens im CRX-Repository an, wo das Element gespeichert ist. Sie beginnt mit „**./**“. Dies zeigt an, dass sich der Pfad unter dem Knoten des Ordners befindet.
+**[!UICONTROL Zu Eigenschaft zuordnen]**: Diese Eigenschaft gibt den relativen Pfad des Ordnerknotens im CRX-Repository an, wo das Element gespeichert ist. Er beginnt mit &quot;**./**&quot;, was angibt, dass sich der Pfad unter dem Knoten des Ordners befindet.
 
 Im Folgenden finden Sie die gültigen Werte für diese Eigenschaft:
 
@@ -211,13 +210,13 @@ Um zu gewährleisten, dass die Komponente ordnungsgemäß im Metadatenschema-For
 
 **[!UICONTROL JSON-Pfad]**: Verwenden Sie diese Eigenschaft, um den Pfad der JSON-Datei anzugeben, in der Sie Schlüssel-Wert-Paare für Optionen speichern.
 
-**[!UICONTROL Platzhalter]**: Geben Sie mit dieser Eigenschaft relevanten Platzhaltertext zur Metadateneigenschaft an.
+**[!UICONTROL Platzhalter]**: Verwenden Sie diese Eigenschaft, um relevanten Platzhaltertext für die Metadateneigenschaft anzugeben.
 
 **[!UICONTROL Wahlen]**: Mit dieser Eigenschaft legen Sie Optionen in einer Liste fest.
 
 **[!UICONTROL Beschreibung]**: Mit dieser Eigenschaft können Sie eine kurze Beschreibung für die Metadatenkomponente hinzufügen.
 
-**[!UICONTROL Klasse]**: Objektklasse, der die Eigenschaft zugeordnet ist.
+**[!UICONTROL Klasse]**: Objektklasse, mit der die Eigenschaft verknüpft ist.
 
 ### Löschen von Ordner-Metadatenschema-Formularen {#delete-folder-metadata-schema-forms}
 
@@ -248,11 +247,11 @@ Wenn Sie ein Metadatenschema für einen Ordner konfigurieren, wird der Pfad in d
 
 #### Zuweisen eines Schemas bei der Ordnererstellung {#assign-a-schema-when-creating-a-folder}
 
-Sie können Ordner-Metadatenschemata auch beim Erstellen eines Ordners zuweisen. Wenn bereits mindestens ein Ordner-Metadatenschema im System vorhanden ist, wird eine zusätzliche Liste im Dialogfeld **[!UICONTROL Ordner erstellen]** angezeigt. Sie können das gewünschte Schema auswählen. Standardmäßig ist kein Schema ausgewählt.
+Sie können beim Erstellen eines Ordners ein Ordner-Metadatenschema zuweisen. Wenn mindestens ein Ordner-Metadatenschema im System vorhanden ist, wird eine zusätzliche Liste im **[!UICONTROL Ordner erstellen]** angezeigt. Sie können das gewünschte Schema auswählen. Standardmäßig ist kein Schema ausgewählt.
 
 1. Klicken Sie in der Symbolleiste der [!DNL Experience Manager Assets]-Benutzeroberfläche auf **[!UICONTROL Erstellen]**.
 1. Geben Sie einen Titel und einen Namen für den Ordner an.
-1. Wählen Sie in der Liste „Ordner-Metadatenschema“ das gewünschte Schema aus. Klicken Sie dann auf **[!UICONTROL Erstellen]**.
+1. Wählen Sie in der Liste Ordner-Metadatenschema das gewünschte Schema aus. Klicken Sie dann auf **[!UICONTROL Erstellen]**.
 
    ![select_schema](assets/select_schema.png)
 

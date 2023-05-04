@@ -8,10 +8,10 @@ topic-tags: process-reporting
 discoiquuid: 7c1fcde0-b983-4b24-bc19-fcee1d4f096b
 docset: aem65
 exl-id: 1272e854-fa64-4bfd-b073-8fbcf210e9b5
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
-source-wordcount: '1693'
-ht-degree: 75%
+source-wordcount: '1673'
+ht-degree: 76%
 
 ---
 
@@ -29,11 +29,11 @@ Wenn Sie derzeit Forms Workflow verwenden, kann die AEM Forms-Datenbank möglich
 
 Der Process Reporting Publishing-Dienst veröffentlicht alle derzeit in der Datenbank verfügbaren AEM Forms-Daten. Wenn die Datenbank ältere Daten enthält, für die Sie keine Berichte und Abfragen ausführen möchten, würden alle diese Daten ebenfalls im Repository veröffentlicht, auch wenn sie für die Berichterstellung nicht erforderlich sind. Es wird empfohlen, diese Daten zu bereinigen, bevor Sie die Services ausführen, um die Daten im Process Reporting-Repository zu veröffentlichen. Dadurch wird die Leistung sowohl des Publisher-Dienstes als auch des Dienstes, der die Daten zur Berichterstellung abfragt, verbessert.
 
-Weitere Informationen zum Bereinigen von AEM Forms-Prozessdaten finden Sie unter [Bereinigen von Prozessdaten](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+Weitere Informationen zum Bereinigen von AEM Forms-Prozessdaten finden Sie unter [Bereinigen von Prozessdaten](/help/forms/using/admin-help/purging-process-data.md).
 
 >[!NOTE]
 >
->Tipps und Tricks für Purge Utility finden Sie im Adobe Developer Connection-Artikel zu [Bereinigen von Prozessen und Aufträgen](https://experienceleague.adobe.com/docs/experience-manager-64/forms/administrator-help/maintain-aem-forms-database/purging-process-data.html?lang=en).
+>Tipps und Tricks für Purge Utility finden Sie im Adobe Developer Connection-Artikel zu [Bereinigen von Prozessen und Aufträgen](/help/forms/using/admin-help/purging-process-data.md).
 
 ## Konfigurieren von Process Reporting-Services {#configuring-process-reporting-services}
 
