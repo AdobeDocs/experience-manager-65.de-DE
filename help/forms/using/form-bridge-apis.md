@@ -119,6 +119,7 @@ Gibt die Versionsnummer der Skriptbibliothek zurück.
          "submitUrl" : "`<submitUrl>`"
          });
          ```
+
    * **config:** Wert der Konfiguration
 
 

@@ -364,6 +364,7 @@ So ändern Sie die Standarddefinitionen:
       ```
              /apps/wcm/core/resources/languages
       ```
+
    Hierzu können Sie die OSGi-Web-Konsole verwenden:
 
    ```shell

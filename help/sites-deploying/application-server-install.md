@@ -211,6 +211,7 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
          <user username="role1" password="tomcat" roles="role1"/>
          </tomcat-users>
          ```
+
    * Wenn Sie AEM mit dem Kontextstamm „/“ bereitstellen möchten, müssen Sie den Kontextstamm der vorhandenen „ROOT webapp“ ändern:
 
       * Halten Sie „ROOT webapp“ an und heben Sie ihre Bereitstellung auf.
