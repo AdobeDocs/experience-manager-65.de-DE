@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '2686'
-ht-degree: 1%
+source-wordcount: '2691'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 ## Seitenvorlagen für mobile Apps {#page-templates-for-mobile-apps}
 
@@ -309,7 +309,7 @@ Dies ist ein ausgeblendetes Verzeichnis, das je nach den aktuellen Betriebssyste
 
 #### .cordova/hooks/ {#cordova-hooks}
 
-Dieser Ordner enthält die [CLI-Hooks](https://devgirl.org/2013/11/12/three-hooks-your-cordovaphonegap-project-needs/). Die Ordner im Hooks-Ordner enthalten node.js-Skripte, die an bestimmten Stellen während des Builds ausgeführt werden.
+Dieser Ordner enthält die [CLI-Hooks](https://cordova.apache.org/docs/en/10.x/guide/appdev/hooks/). Die Ordner im Hooks-Ordner enthalten node.js-Skripte, die an bestimmten Stellen während des Builds ausgeführt werden.
 
 #### .cordova/hooks/after-platform_add/ {#cordova-hooks-after-platform-add}
 

@@ -9,9 +9,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 923fc031-1a06-4a9d-94da-a2a4e82c54ee
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '2975'
+source-wordcount: '2977'
 ht-degree: 1%
 
 ---
@@ -263,7 +263,7 @@ Für jeden Konfigurationstyp gibt es eine *Content Update Handler*, eine OSGi-Ko
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Schnittstelle, die alle Update-Handler implementieren müssen
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Eine abstrakte Klasse, die das Rendering von Ressourcen mithilfe von Sling vereinfacht
 
-Registrieren Sie Ihre Klasse als OSGi-Komponentenfabrik und stellen Sie sie im OSGi-Container in einem Bundle bereit. Dies kann mithilfe der [Maven SCR-Plug-in](https://felix.apache.org/site/apache-felix-maven-scr-plugin.html) entweder mit JavaDoc-Tags oder Anmerkungen. Das folgende Beispiel zeigt die JavaDoc-Version:
+Registrieren Sie Ihre Klasse als OSGi-Komponentenfabrik und stellen Sie sie im OSGi-Container in einem Bundle bereit. Dies kann mithilfe der [Maven SCR-Plug-in](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) entweder mit JavaDoc-Tags oder Anmerkungen. Das folgende Beispiel zeigt die JavaDoc-Version:
 
 ```java
 /*

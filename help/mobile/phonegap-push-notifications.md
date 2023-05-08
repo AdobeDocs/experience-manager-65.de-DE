@@ -1,8 +1,6 @@
 ---
 title: Push-Benachrichtigungen
-seo-title: Push Notifications
-description: Auf dieser Seite erfahren Sie, wie Sie Push-Benachrichtigungen in einer AEM Mobile-App verwenden.
-seo-description: Follow this page to learn about how to use push notifications in an AEM Mobile app.
+description: Auf dieser Seite erfahren Sie, wie Sie Push-Benachrichtigungen in einer Adobe Experience Manager Mobile-App verwenden.
 uuid: 0ed8b183-ef81-487f-8f35-934d74ec82af
 contentOwner: User
 content-type: reference
@@ -10,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '3273'
-ht-degree: 2%
+source-wordcount: '3293'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Die Möglichkeit, Ihre AEM Mobile-App-Benutzer sofort mit wichtigen Benachrichtigungen zu benachrichtigen, ist für den Wert einer App und ihrer Marketingkampagnen von entscheidender Bedeutung. In unserem Beispiel werden die Schritte beschrieben, die unternommen werden müssen, damit Ihre App Push-Benachrichtigungen empfangen kann, sowie die Konfiguration und der Versand von Push-Benachrichtigungen von AEM Mobile an die am Telefon installierte App. Außerdem wird in diesem Abschnitt beschrieben, wie Sie die [Deep-Linking](#deeplinking) -Funktion für Ihre Push-Benachrichtigungen verwenden.
 
@@ -44,14 +42,14 @@ Diese Version von AEM unterstützt Mobilgeräte mit iOS und Android.
 
 Um Push-Benachrichtigungen in einer AEM Mobile-App zu verwenden, müssen die folgenden allgemeinen Schritte ausgeführt werden.
 
-Normalerweise führt ein AEM-Entwickler Folgendes durch:
+Normalerweise führt ein Experience Manager-Entwickler Folgendes aus:
 
 1. Bei Apple- und Google-Messaging-Diensten registrieren
 1. Registrieren Sie sich bei einem Push-Messaging-Dienst und konfigurieren Sie ihn.
 1. Push-Unterstützung zur App hinzufügen
 1. Vorbereiten eines Telefons auf Tests
 
-Ein AEM Administrator wird Folgendes tun:
+Ein Experience Manager-Administrator führt Folgendes aus:
 
 1. Push-Benachrichtigungen für AEM Apps konfigurieren
 1. Erstellen und Bereitstellen der App
@@ -62,9 +60,9 @@ Ein AEM Administrator wird Folgendes tun:
 
 #### Verwenden des Apple Push Notification Service (APNS) {#using-the-apple-push-notification-service-apns}
 
-Navigieren Sie zur Apple-Seite [here](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ApplePushService.html) , um sich mit dem Push-Benachrichtigungsdienst von Apple vertraut zu machen.
+Navigieren Sie zur Apple-Seite [here](https://developer.apple.com/documentation/usernotifications#//apple_ref/doc/uid/TP40008194-CH8-SW1) , um sich mit dem Push-Benachrichtigungsdienst von Apple vertraut zu machen.
 
-Für die Verwendung von APNS benötigen Sie eine **Zertifikat** Datei (eine .cer-Datei), eine Push-Datei **Privater Schlüssel** (eine .p12-Datei) und **Passwort für privaten Schlüssel** aus Apple. Anweisungen dazu finden Sie [here](https://developer.apple.com/library/ios/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/Chapters/ProvisioningDevelopment.html).
+Für die Verwendung von APNS benötigen Sie eine **Zertifikat** Datei (eine .cer-Datei), eine Push-Datei **Privater Schlüssel** (eine .p12-Datei) und **Passwort für privaten Schlüssel** aus Apple. Anweisungen dazu finden Sie [here](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/RemoteNotificationsPG/).
 
 #### Verwenden des Google Cloud Messaging-Dienstes (GCM) {#using-the-google-cloud-messaging-gcm-service}
 
@@ -217,7 +215,7 @@ Erstellen Sie zwei Inhaltsknoten (einen in app-config und einen in app-config-de
 * /content/`<your app>`/shell/jcr:content/page-app/app-config/notificationsConfig
 
 Mit diesen Eigenschaften (.content.xml files) :
-&lt;jcr:root xmlns:jcr=&quot; &lt;span id=&quot; translate=&quot;no&quot; />https://www.jcp.org/jcr/1.0](https://www.jcp.org/jcr/1.0)&quot; xmlns:nt=&quot; [https://www.jcp.org/jcr/nt/1.0](https://www.jcp.org/jcr/nt/1.0)&quot; jcr:primaryType=&quot;nt:unstructured&quot; excludeProperties=&quot;[appAPIAccessToken]&quot; path=&quot;../../../...&quot;
+&lt;jcr:root xmlns:jcr=&quot; &lt;span id=&quot; translate=&quot;no&quot; />https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; xmlns:nt=&quot; [https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/1.0/index.html)&quot; jcr:primaryType=&quot;nt:unstructured&quot; excludeProperties=&quot;[appAPIAccessToken]&quot; path=&quot;../../../...&quot;
 [
 targetRootDirectory=&quot;www&quot; type=&quot;notificationsConfig&quot;/>
 

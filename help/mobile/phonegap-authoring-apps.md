@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten von Anwendungen
+title: Erstellen von mobilen Anwendungen
 seo-title: Authoring Mobile Applications
 description: Mit dem AEM Mobile Dashboard können Sie Ihre Mobile App erstellen, erstellen und bereitstellen sowie Metadaten für Anwendungen erstellen, löschen und bearbeiten. Auf dieser Seite erfahren Sie mehr.
 seo-description: he AEM Mobile Dashboard allows you to create, build and deploy your mobile application, create, delete and edit application metadata. Follow this page to learn more.
@@ -10,30 +10,30 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '1024'
-ht-degree: 32%
+source-wordcount: '1015'
+ht-degree: 1%
 
 ---
 
-# Bearbeiten von Anwendungen{#authoring-mobile-applications}
+# Erstellen von mobilen Anwendungen{#authoring-mobile-applications}
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Mit dem AEM Mobile Dashboard können Sie Ihre Mobile App erstellen, erstellen und bereitstellen sowie Metadaten für Anwendungen erstellen, löschen und bearbeiten. Sobald Ihre Anwendung live ist, können Sie Anwendungsanalysen einschließlich Lebenszyklus- und Nutzungsmetriken analysieren, um die Kundenkonvertierung und Markenloyalität zu verbessern.
 
 Informationen zum Erstellen Ihrer AEM Mobile-Anwendung finden Sie unter [Erstellen von Mobile Apps](/help/mobile/building-app-mobile-phonegap.md) Seite.
 
-Informationen zum Einrichten der Umgebung und zu den ersten Schritten finden Sie unter [Verwalten von AEM zur Verwendung AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
+Informationen zum Einrichten der Umgebung und zum Einstieg finden Sie unter [Verwalten von AEM zur Verwendung AEM PhoneGap Enterprise](/help/mobile/administer-phonegap.md).
 
-## Der AEM Mobile-App-Katalog {#the-aem-mobile-apps-catalog}
+## Der AEM Mobile Apps-Katalog {#the-aem-mobile-apps-catalog}
 
 Die [AEM Mobile Apps-Katalog](http://localhost:4502/aem/apps.html/content/phonegap) zeigt alle Ihre Mobile App an, die in AEM verwaltet wird.
 
-Stellen Sie sich diesen Katalog als &quot;Landingpage&quot;für AEM Mobile vor, auf der Administratoren eine neue AEM Mobile-Anwendung starten können, indem sie entweder basierend auf einer Vorlage erstellen oder eine vorhandene App hochladen, die bereits von einem Mobile-Entwickler gestartet wurde.
+Stellen Sie sich diesen Katalog als &quot;Landingpage&quot;für AEM Mobile vor, auf der Administratoren eine neue AEM Mobile-Anwendung starten können, indem sie entweder auf der Grundlage einer Vorlage erstellen oder eine vorhandene App hochladen, die bereits von einem Mobile-Entwickler gestartet wurde.
 
 Gehen Sie wie folgt vor, um zur Landingpage des Apps-Katalogs zu gelangen:
 
@@ -41,19 +41,19 @@ Gehen Sie wie folgt vor, um zur Landingpage des Apps-Katalogs zu gelangen:
 
 1. Auswählen **Apps** , um den Apps-Katalog zu öffnen.
 
-![AEM Mobile-App-Katalog](assets/chlimage_1-135.png)
+![AEM Mobile Apps-Katalog](assets/chlimage_1-135.png)
 
-## Das AEM Mobile-App-Dashboard {#the-aem-mobile-app-dashboard}
+## Das Dashboard der AEM Mobile-App {#the-aem-mobile-app-dashboard}
 
-Wenn Sie eine AEM Mobile-App aus dem Katalog auswählen, wird das entsprechende Dashboard angezeigt. Hier können Sie Ihre App verwalten, Statistiken anzeigen, Inhalte für Ihre Mobile App erstellen, bereitstellen und verwalten.
+Wenn Sie eine AEM Mobile-App aus dem Katalog auswählen, wird ihr Dashboard angezeigt. Hier können Sie Ihre App verwalten, Statistiken anzeigen, Inhalte für Ihre Mobile App erstellen, bereitstellen und verwalten.
 
-Sie können jede Kachel im AEM Mobile Dashboard erweitern, um Details anzuzeigen oder zu bearbeiten, indem Sie auf &quot;...&quot;klicken in der unteren rechten Ecke.
+Sie können jede Kachel im AEM Mobile Dashboard erweitern, um Details anzuzeigen oder zu bearbeiten, indem Sie auf &quot;...&quot;klicken unten rechts.
 
-![AEM Mobile-Apps-Befehlszentrale](assets/chlimage_1-136.png)
+![AEM Mobile Applications Command Center](assets/chlimage_1-136.png)
 
-### Bereich „App verwalten“ {#the-manage-app-tile}
+### Die Kachel App verwalten {#the-manage-app-tile}
 
-Der Bereich „App verwalten“ zeigt Symbol, Name, Beschreibung, unterstützte Plattformen, Quell-URL für Updates sowie Versionsinformationen an. Sie können diese Kachel näher untersuchen, um die PhoneGap-Anwendungskonfiguration (config.xml) zu bearbeiten und zu verwalten und Ihre Anwendung für die Übermittlung an die verschiedenen Anwendungsspeicher für die Verteilung vorzubereiten.
+Im Bereich App verwalten werden Ihr Anwendungssymbol, Ihr Name, Ihre Beschreibung, die unterstützten Plattformen sowie der Aufruf der Startseite mit Informationen zu Updates-URL und Version angezeigt. Sie können diese Kachel näher untersuchen, um die PhoneGap-Anwendungskonfiguration (config.xml) zu bearbeiten und zu verwalten und Ihre Anwendung für die Übermittlung an die verschiedenen Anwendungsspeicher zur Verteilung vorzubereiten.
 
 Klicken [here](/help/mobile/phonegap-app-details-tile.md) für Details.
 
@@ -61,45 +61,45 @@ Klicken [here](/help/mobile/phonegap-app-details-tile.md) für Details.
 
 ### Kachel &quot;Seiteninhalt verwalten&quot; {#the-manage-page-content-tile}
 
-Inhalt kann in AEM Mobile im Prinzip auf dieselbe Weise wie in AEM Sites erstellt, aktualisiert und gelöscht werden. Die **Kachel &quot;Seiteninhalt verwalten&quot;** zeigt die Anzahl der Seiten verwalteten Inhalts und der zuletzt geänderten Inhalte an. Durch Klicken auf die einzelnen Datensätze in diesem Bereich können Sie Details für den Inhalt anzeigen, um Seiten zu erstellen, zu kopieren, zu verschieben, zu löschen und zu aktualisieren. Sobald der Inhalt aktualisiert wurde, können Sie Ihren Kunden eine Inhaltsaktualisierung über die **Kachel &quot;Inhaltspakete verwalten&quot;.**
+Inhalte können in AEM Mobile auf die gleiche Weise erstellt, aktualisiert und gelöscht werden wie in AEM Sites. Die **Kachel &quot;Seiteninhalt verwalten&quot;** zeigt die Anzahl der Seiten verwalteten Inhalts und der zuletzt geänderten Inhalte an. Sie können einen Drilldown in den Inhalt durchführen, um Seiten zu erstellen, zu kopieren, zu verschieben, zu löschen und zu aktualisieren, indem Sie auf jeden Datensatz in der Kachel klicken. Sobald der Inhalt aktualisiert wurde, können Sie Ihren Kunden eine Inhaltsaktualisierung über die **Kachel &quot;Inhaltspakete verwalten&quot;.**
 
-![Bereich „Inhalt“](assets/chlimage_1-138.png)
+![Inhaltsbereich](assets/chlimage_1-138.png)
 
 ### Die Kachel Inhaltspakete verwalten {#the-manage-content-packages-tile}
 
 Nachdem Sie Ihren Inhalt über die Kachel Seiteninhalt verwalten hinzugefügt oder geändert haben, können Sie diese Änderungen mit einem Update der Inhaltsfreigabe an Ihre Kunden senden.
 
-Das Inhaltspaket ermöglicht es dem AEM App-Autor, Seiteninhalte in AEM zu verwalten und Ihr Entwicklungsteam dazu zu veranlassen, Änderungen an Ihrer PhoneGap Shell-Anwendung vorzunehmen (d. h. App-Framework oder -Infrastruktur) und diese Änderungen dann schnell an Ihre Kunden zu senden, ohne dass ein Entwickler die Möglichkeit haben muss, sich zur Verteilung an die verschiedenen Stores erneut anzumelden.
+Das Inhaltspaket ermöglicht es dem AEM App-Autor, Seiteninhalte in AEM zu verwalten und Ihr Entwicklungsteam dazu zu veranlassen, Änderungen an Ihrer PhoneGap-Shell-Anwendung vorzunehmen (d. h. App-Framework oder -Infrastruktur) und diese Änderungen dann schnell an Ihre Kunden zu übertragen, ohne dass ein Entwickler die Möglichkeit haben muss, sich erneut an die verschiedenen Stores zur Verteilung anzumelden.
 
 Das Inhaltspaket erstellt für jedes Update eine ZIP-Datei, die als Inhaltsfreigabepaket gilt. Diese Pakete enthalten HTML-Ressourcen und HTML-Seiten, die beim Rendern der App generiert werden und intelligent genug sind, nur die Dateien zu verpacken, die seit der letzten Aktualisierung geändert wurden.
 
-Die Kachel &quot;Inhaltspaket verwalten&quot; **Typ** -Spalte zeigt entweder &quot;App&quot;an, um Anwendungs-Shell-Inhalt anzugeben, z. B. das Framework oder die Infrastruktur der App, die von einem Entwickler verwaltet wird, oder &quot;Inhalt&quot;, der den vom Inhaltsautor verwalteten Seiteninhalt darstellt.
+Die Kachel &quot;Inhaltspaket verwalten&quot; **Typ** -Spalte zeigt entweder &quot;App&quot;an, um Application Shell-Inhalt anzugeben, z. B. das Framework oder die Infrastruktur der App, die von einem Entwickler verwaltet wird, oder &quot;Inhalt&quot;, der den vom Inhaltsautor verwalteten Seiteninhalt darstellt.
 
-Inhalt kann als Sprache dargestellt werden oder als ein bestimmter Teil der App, in dem mehrere Inhaltsfreigabe-Pakete von der App genutzt werden. Die Art und Weise der Inhaltsbündelung ist flexibel und hängt komplett davon ab, wie Sie den Inhalt Ihrer App verwalten möchten.
+Inhalte können als Sprache oder als bestimmter Teil der App dargestellt werden, in dem die App mehrere Inhaltsfreigabe-Pakete nutzt. Die Art und Weise, wie Sie Inhalte bündeln, ist flexibel und hängt vollständig davon ab, wie Sie Inhalte für Ihre Anwendung verwalten möchten.
 
-Die Spalte **Geändert** gibt an, wann Seiten zuletzt geändert wurden.
+Die **Geändert** gibt an, wann die Seiten zuletzt geändert wurden.
 
-Die Spalte **Gestaffelt** zeigt an, wann die letzte Inhaltsaktualisierung erstellt wurde. Um eine neue Inhaltsaktualisierung zu erstellen und die Änderungen gestaffelt bereitzustellen, öffnen Sie einen beliebigen Datensatz in diesem Bereich und erstellen Sie eine neue Aktualisierung.
+Die **Staging** gibt an, wann die letzte Inhaltsaktualisierung erstellt wurde. Um eine Inhaltsaktualisierung zu erstellen und Ihre Änderungen zu testen, öffnen Sie einen beliebigen Datensatz in der Kachel und erstellen Sie eine Aktualisierung.
 
-Die Spalte **Veröffentlicht** zeigt an, wann die letzte Inhaltsaktualisierung veröffentlicht und für die Nutzung durch Ihre Kunden zur Verfügung gestellt wurde. Um Inhalte zu veröffentlichen, müssen Sie zunächst diesen Inhalt bereitstellen und dann die Aktualisierung veröffentlichen, indem Sie in diese Kachel navigieren und über die Konsole Inhaltsfreigabe-Details veröffentlichen.
+Die **Veröffentlicht** gibt an, wann die letzte Inhaltsaktualisierung veröffentlicht und für Ihre Kunden zur Verfügung gestellt wurde. Um Inhalte zu veröffentlichen, müssen Sie zunächst diesen Inhalt bereitstellen und dann die Aktualisierung veröffentlichen, indem Sie in diese Kachel navigieren und über die Konsole Inhaltsfreigabe-Details veröffentlichen.
 
 ![Bereich &quot;Inhaltsfreigabe&quot;](assets/chlimage_1-139.png) ![ContentSync-Paket für die App-Shell](do-not-localize/chlimage_1-5.png)
 
-Dieses Symbol stellt ein Inhaltsaktualisierungs-Paket für die App-Shell dar
+Dieses Symbol stellt ein Inhaltsfreigabepaket für die App-Shell dar
 
 ![](do-not-localize/chlimage_1-6.png)
 
-Dieses Symbol stellt ein Inhaltsaktualisierungs-Paket für den App-Inhalt dar
+Diese Symbole stellen ein Inhaltsfreigabepaket für App-Inhalte dar
 
-### Bereich „PhoneGap-Build“ {#the-phonegap-build-tile}
+### Der PhoneGap Build {#the-phonegap-build-tile}
 
 Die **PhoneGap Build** verbindet mit [https://build.phonegap.com](https://build.phonegap.com) um Remote-Builds zu erstellen und zu hosten. Nach der Erstellung wird der Build entweder als Download oder direkt auf Ihrem Gerät über einen QR-Code bereitgestellt.
 
-Sie können auch die Gerätequelle herunterladen, um die Erstellung lokal über die [PhoneGap-CLI](https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html) abzuwickeln.
+Alternativ können Sie die Gerätequelle herunterladen, um sie lokal über die [PhoneGap-CLI](https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html).
 
-![Bereich „PhoneGap-Build“](assets/chlimage_1-140.png)
+![PhoneGap Build](assets/chlimage_1-140.png)
 
-### Bereich „Metrik“ {#the-metrics-tile}
+### Bereich &quot;Metriken&quot; {#the-metrics-tile}
 
 >[!CAUTION]
 >
@@ -107,11 +107,11 @@ Sie können auch die Gerätequelle herunterladen, um die Erstellung lokal über 
 >
 >Siehe [Adobe Mobile Services Cloud Service konfigurieren](/help/mobile/configure-adobe-mobile-cloud-service.md) für Details.
 
-AEM Mobile integriert in Adobe Analytics über [Adobe Mobile Services SDK](https://www.adobe.com/ca/solutions/digital-marketing/mobile-services/app-sdk.html) (AMS).
+AEM Mobile kann über [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) (AMS).
 
-Im **Bereich „Metrik“** des Kontrollzentrums wird für Ihre App eine zusammenfassende Analyse mit Daten aus AMS angezeigt. Sie können Details im Analyse-Dashboard anzeigen, indem Sie rechts unten auf „...“ klicken.
+Das Kontrollzentrum **Bereich &quot;Metriken&quot;** zeigt zusammenfassende Analysen an, die von AMS für Ihre Anwendung abgerufen wurden. Sie können einen Drilldown im Analyse-Dashboard durchführen, indem Sie auf &quot;...&quot;klicken unten rechts.
 
-![Bereich „Metrik“](assets/chlimage_1-141.png)
+![Bereich &quot;Metriken&quot;](assets/chlimage_1-141.png)
 
 ### Kachel &quot;Entitätsinhalt verwalten&quot; {#the-manage-entity-content-tile}
 

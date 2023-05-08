@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
 exl-id: a2bc9a50-6455-4703-8829-964fab313e96
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '206'
-ht-degree: 14%
+source-wordcount: '193'
+ht-degree: 15%
 
 ---
 
@@ -21,18 +21,18 @@ ht-degree: 14%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 >[!CAUTION]
 >
->Bestandskunden von AEM Mobile Apps, die von AEM 6.2 oder 6.3 auf AEM 6.5 migrieren, können weiterhin AEM Mobile-Apps verwenden, indem sie eine [Package aus PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package). Neue Installationen von AEM 6.5 unterstützen jedoch nicht die Funktionalität von AEM Mobile Apps.
+>Bestandskunden von AEM Mobile Apps, die von AEM 6.2 oder 6.3 auf AEM 6.5 migrieren, können weiterhin AEM Mobile-Apps verwenden, indem sie ein Paket von Package Share herunterladen. Neue Installationen von AEM 6.5 unterstützen jedoch nicht die Funktionalität von AEM Mobile Apps.
 
 Adobe Experience Manager (AEM) Mobile ist Teil der digitalen Adobe Experience Manager-Multichannel-Plattform, die auch AEM Assets, Sites, Screens, Workflow, User Manager, Commerce und Forms nutzt. AEM Mobile bietet eine bemerkenswerte Flexibilität bei der Implementierung und ermöglicht es Unternehmen, eine Vielzahl von Inhaltsquellen zu verwenden.
 
 AEM Mobile bietet mehrere Methoden zum Erstellen von Apps. Sie können Apps auf drei verschiedene Arten erstellen:
 
 * **[Verwenden von On-Demand-Diensten mit AEM](/help/mobile/getting-started-aem-mobile-on-demand.md)**
-* **[Verwenden von On-Demand-Diensten ohne AEM](https://helpx.adobe.com/digital-publishing-solution/topics.html)**
+* **[Verwenden von On-Demand-Diensten ohne AEM](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html)**
 * **[Verwenden von Adobe PhoneGap Enterprise mit AEM](/help/mobile/getting-started-aem-mobile-phonegap.md)**
 
 >[!NOTE]

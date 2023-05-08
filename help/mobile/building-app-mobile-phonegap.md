@@ -1,5 +1,5 @@
 ---
-title: Erstellen von Mobilanwendungen
+title: Erstellen von Mobile Apps
 seo-title: Building Mobile Applications
 description: Auf dieser Seite finden Sie einen vollständigen Schritt-für-Schritt-Artikel zum Erstellen einer Mobile App mithilfe des von GitHub verfügbaren Codes. Erstellen Sie hier Ihre Anwendung, um sie auf einem Gerät oder Simulator zu installieren, um sie zu testen oder in Appstores zu veröffentlichen. Sie können Anwendungen lokal über die PhoneGap-Befehlszeilenschnittstelle oder in der Cloud über PhoneGap Build erstellen.
 seo-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
@@ -10,18 +10,18 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '1034'
-ht-degree: 5%
+source-wordcount: '1036'
+ht-degree: 3%
 
 ---
 
-# Erstellen von Mobilanwendungen{#building-mobile-applications}
+# Erstellen von Mobile Apps{#building-mobile-applications}
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Erstellen Sie Ihre Anwendung zur Installation auf einem Gerät oder Simulator zum Testen oder zur Veröffentlichung in Appstores. Sie können Anwendungen lokal über die PhoneGap-Befehlszeilenschnittstelle oder in der Cloud über PhoneGap Build erstellen.
 
@@ -53,7 +53,7 @@ Beispielsweise wird eine Mobile App mit dem Namen phonegapapp erstellt. Der folg
 
 ## Erstellen mithilfe der PhoneGap-Befehlszeilenschnittstelle {#building-using-the-phonegap-command-line-interface}
 
-Das Kompilieren der PhoneGap-App erfolgt auf Ihrem Computer mithilfe der PhoneGap-Befehlszeilenoberfläche (Command Line Interface, CLI). Um den AEM Inhalt in Ihre Anwendung aufzunehmen, erstellt AEM eine ZIP-Datei, die den Inhalt Ihrer Mobile App, Konfigurationen zur Inhaltssynchronisierung und andere erforderliche Assets enthält. Laden Sie die ZIP-Datei herunter und fügen Sie sie in Ihren Build ein.
+Kompilieren Sie die PhoneGap-Anwendung mithilfe der PhoneGap-Befehlszeilenschnittstelle (CLI) auf Ihrem Computer. Um den AEM Inhalt in Ihre Anwendung aufzunehmen, erstellt AEM eine ZIP-Datei, die den Inhalt Ihrer Mobile App, Konfigurationen zur Inhaltssynchronisierung und andere erforderliche Assets enthält. Laden Sie die ZIP-Datei herunter und fügen Sie sie in Ihren Build ein.
 
 ### Vorbereiten der Build-Umgebung {#preparing-your-build-environment}
 
@@ -164,7 +164,7 @@ Senden Sie Ihre Anwendungsressourcen zur Kompilierung für die verschiedenen mob
 
 1. Klicken Sie im Dialogfeld &quot;Erfolg&quot;auf PhoneGap Build , um die Adobe PhoneGap Build-Seite unter [https://build.phonegap.com/apps](https://build.phonegap.com/apps). Wenn Sie darauf warten, dass Ihre App angezeigt wird, können Sie die [PhoneGap Build](https://status.build.phonegap.com/) Seite.
 
-   Weitere Informationen zur Installation des Builds finden Sie unter [Dokumentation zu PhoneGap Build](https://docs.build.phonegap.com/en_US/3.1.0/#googtrans%28en%29).
+   Weitere Informationen zur Installation des Builds finden Sie unter [Dokumentation zu PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 
    >[!NOTE]
    >

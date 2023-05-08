@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
-source-wordcount: '299'
-ht-degree: 7%
+source-wordcount: '259'
+ht-degree: 8%
 
 ---
 
@@ -23,7 +23,7 @@ Auf dieser Seite wird die Vorschau mit der Preflight-App erläutert.
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Die folgenden Aktionen werden für die Anwendung als Ganzes ausgeführt.
 
@@ -45,9 +45,7 @@ Mit der Mobile On Demand Preflight-App können Sie alle Projekte anzeigen, auf d
 
 >[!NOTE]
 >
->Die AEM Preflight-App wird für die Vorschau von Inhalten und Durchsuchen von Seiten verwendet. Um mehr über die Preflight-App zu erfahren, klicken Sie auf [here](https://helpx.adobe.com/digital-publishing-solution/help/preflight-app.html).
->
->Die AEM Preflight-App ist verfügbar unter [iTunes App Store](https://itunes.apple.com/us/app/adobe-experience-manager-mobile/id1042687518?mt=8), [Google Play Store](https://play.google.com/store/apps/details?id=com.adobe.dps.preflight&amp;hl=en)und [Windows Store](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-mobile-preflight/9nblggh5wmxq).
+>Die AEM Preflight-App wird für die Vorschau von Inhalten und Durchsuchen von Seiten verwendet. Um mehr über die Preflight-App zu erfahren, klicken Sie auf [here](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
 
 ### Erste Schritte {#getting-ahead}
 
