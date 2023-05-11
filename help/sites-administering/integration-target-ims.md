@@ -2,10 +2,10 @@
 title: Integration mit Adobe Target mithilfe von IMS
 description: Erfahren Sie mehr über die Integration von AEM mit Adobe Target mithilfe von IMS.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: ht
-source-wordcount: '1500'
-ht-degree: 100%
+source-git-commit: 5c3de9c272030b3e258aea95899a58553c3b33db
+workflow-type: tm+mt
+source-wordcount: '1503'
+ht-degree: 95%
 
 ---
 
@@ -167,7 +167,7 @@ Zurück in AEM können Sie die IMS-Konfiguration abschließen, indem Sie erforde
    * **Client-Geheimnis**: Generieren Sie dies im Abschnitt [Übersicht](#details-stored-for-the-ims-integration-project) und kopieren Sie es.
    * **Payload**: Kopieren Sie diese aus dem Abschnitt [JWT generieren](#details-stored-for-the-ims-integration-project)
 
-   ![](assets/integrate-target-io-10.png)
+   ![Technische Kontokonfiguration](assets/integrate-target-io-10.png)
 
 1. Bestätigen Sie mit **Erstellen**.
 
@@ -238,9 +238,9 @@ Die Konfiguration kann nun referenziert werden, damit ein Cloud Service die Targ
 
    * **A4T-Analytics-Cloud-Konfiguration**: Wählen Sie die Analyse-Cloud-Konfiguration aus, die für Target-Aktivitätsziele und -metriken verwendet wird. Sie benötigen sie, wenn Sie Adobe Analytics als Quelle für das Reporting für bestimmte Inhalte verwenden. Falls Ihre Cloud-Konfiguration nicht angezeigt wird, hilft Ihnen der Hinweis unter [Konfigurieren der A4T-Analytics-Cloud-Konfiguration](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration) weiter.
 
-   * **Präzises Targeting verwenden**: Dieses Kontrollkästchen ist standardmäßig aktiviert. Bei Aktivierung dieser Option wird für die Cloud Service-Konfiguration gewartet, bis das Laden des Kontexts erfolgt ist, bevor der Inhalt geladen wird. Siehe Hinweis unten.
+   * **Präzises Targeting verwenden**: Dieses Kontrollkästchen ist standardmäßig aktiviert. Wenn diese Option aktiviert ist, wartet die Cloud Service-Konfiguration auf das Laden des Kontexts, bevor der Inhalt geladen wird. Siehe Hinweis, der folgt.
 
-   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft „API-Typ“ auf „REST“ festgelegt ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM-Begriff „Segment“ hier dem Target-Begriff „Zielgruppe“ entspricht.)
+   * **Segmente aus Adobe Target synchronisieren**: Aktivieren Sie diese Option, um in Target definierte Segmente herunterzuladen und in AEM zu verwenden. Sie müssen diese Option auswählen, wenn die Eigenschaft &quot;API-Typ&quot;REST ist, da Inline-Segmente nicht unterstützt werden und Sie immer Segmente aus Target verwenden müssen. (Beachten Sie, dass der AEM Begriff &quot;Segment&quot;der Zielgruppe &quot;Zielgruppe&quot;entspricht.)
 
    * **Client-Bibliothek**: Wählen Sie aus, ob die AT.js-Client-Bibliothek oder mbox.js (veraltet) verwendet werden soll.
 
