@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: e803fde42cfb7b7c9d3fb6483ca661ce386d6464
+source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
 workflow-type: tm+mt
-source-wordcount: '2116'
-ht-degree: 80%
+source-wordcount: '2019'
+ht-degree: 81%
 
 ---
 
@@ -150,57 +150,6 @@ Dabei kann &lt;text_x> ein Mix von statischem Text und dynamischen Zeichenfolgen
 
    PageModified => /content/geometrixx/en/products
 
-### E-Mail-Vorlagen für Forumsbenachrichtigungen {#email-templates-for-forum-notification}
-
-E-Mail-Vorlagen für Forumsbenachrichtigungen finden Sie unter:
-
-`/etc/notification/email/default/com.day.cq.collab.forum`
-
-Die standardmäßige englische Vorlage (`en.txt`) wird wie folgt definiert:
-
-```xml
-subject=[CQ Forum Notification]
-
-header=-------------------------------------------------------------------------------------\n \
-Time: Time: ${time}\n \
-Forum Page Path: ${forum.path}\n \
--------------------------------------------------------------------------------------\n\n
-
-message=Page: ${host.prefix}${forum.path}.html\n
-
-footer=\n \
--------------------------------------------------------------------------------------\n \
-This is an automatically generated message. Please do not reply.
-```
-
-#### Anpassen von E-Mail-Vorlagen für die Forumsbenachrichtigung {#customizing-email-templates-for-forum-notification}
-
-Die englische E-Mail-Vorlage für die Forumsbenachrichtigung können Sie wie folgt anpassen:
-
-1. Öffnen Sie in CRXDE die Datei:
-
-   `/etc/notification/email/default/com.day.cq.collab.forum/en.txt`
-
-1. Ändern Sie die Datei nach Bedarf.
-1. Speichern Sie die Änderungen.
-
-Die Vorlage muss das folgende Format aufweisen:
-
-```
- subject=<text_1>
- header=<text_2>
- message=<text_3>
- footer=<text_4>
-```
-
-Dabei kann `<text_x>` ein Mix von statischem Text und dynamischen Zeichenfolgenvariablen sein.
-
-Die folgenden Variablen können innerhalb der E-Mail-Vorlage für Forumsbenachrichtigungen verwendet werden:
-
-* `${time}`, Ereignisdatum und -uhrzeit
-
-* `${forum.path}`, der Pfad zur Forumsseite.
-
 ### E-Mail-Vorlagen für Workflow-Benachrichtigung {#email-templates-for-workflow-notification}
 
 Die E-Mail-Vorlage für Workflow-Benachrichtigungen (Englisch) befindet sich unter:
@@ -293,7 +242,6 @@ So fügen Sie eine Vorlage für eine neue Sprache hinzu:
 1. Fügen Sie in CRXDE eine Datei `<language-code>.txt` hinzu unter:
 
    * `/libs/settings/notification-templates/com.day.cq.wcm.core.page`: für Seitenbenachrichtigungen
-   * `/etc/notification/email/default/com.day.cq.collab.forum`: für Forumsbenachrichtigungen
    * `/libs/settings/workflow/notification/email/default`: für Workflow-Benachrichtigungen
 
 1. Passen Sie die Datei an die Sprache an.
