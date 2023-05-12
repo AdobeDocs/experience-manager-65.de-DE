@@ -1,7 +1,7 @@
 ---
 title: Verwalten der Workflow-Instanzen
 seo-title: Administering Workflow Instances
-description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden.
+description: Erfahren Sie, wie Sie Workflow-Instanzen verwalten.
 seo-description: Lear how to administer Workflow Instances.
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
 contentOwner: User
@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 1b57fca352457e973bd7395e060e3d0495a9d920
-workflow-type: ht
-source-wordcount: '1134'
-ht-degree: 100%
+source-git-commit: 25f7218355b7715949273c84eb72ddde3d6a0a65
+workflow-type: tm+mt
+source-wordcount: '994'
+ht-degree: 99%
 
 ---
 
@@ -41,26 +41,27 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 
    ![wf-96](assets/wf-96.png)
 
+<!--
+## Search Workflow Instances {#search-workflow-instances}
 
-## Durchsuchen von Workflow-Instanzen {#search-workflow-instances}
-
-1. Wählen Sie über die Navigation **Tools** und dann **Workflow** aus.
-1. Wählen Sie **Instanzen** aus, um die Liste der aktuell ausgeführten Workflow-Instanzen anzuzeigen. Wählen Sie in der oberen Leiste links die Option **Filter**. Alternativ können Sie den Tastaturbefehl Alt+1 verwenden. Daraufhin wird das folgende Dialogfeld angezeigt:
+1. Using Navigation select **Tools**, then **Workflow**.
+1. Select **Instances** to display the list of workflow instances currently in progress. On the top rail, in the left corner, select **Filters**. Alternatively, you can use the keystrokes alt+1. The following dialog is displayed:
 
    ![wf-99-1](assets/wf-99-1.png)
 
-1. Wählen Sie im Dialogfeld „Filter“ die gewünschten Suchkriterien für den Workflow aus. Sie können anhand der folgenden Eingaben suchen:
+1. In the Filter dialog, select the workflow search criteria. You can search based on these inputs:
 
-   * Payload-Pfad: einen bestimmten Pfad auswählen
-   * Workflow-Modell: ein Workflow-Modell auswählen
-   * Bevollmächtigter: einen Workflow-Bevollmächtigten auswählen
-   * Typ: Aufgabe, Workflow-Element oder Workflow-Fehler
-   * Aufgabenstatus: „Aktiv“, „Abgeschlossen“ oder „Beendet“
-   * Meine Position: Eigentümer UND Bevollmächtigter, nur Eigentümer, nur Bevollmächtigter
-   * Startdatum: Startdatum vor oder nach einem bestimmten Datum
-   * Enddatum: Enddatum vor oder nach einem bestimmten Datum
-   * Fälligkeitsdatum: Fälligkeitsdatum vor oder nach einem bestimmten Datum
-   * Aktualisierungsdatum: Aktualisierungsdatum vor oder nach einem bestimmten Datum
+   * Payload path: Select a specific path
+   * Workflow model: Select a workflow model
+   * Assignee: Select a workflow Assignee
+   * Type: Task, Workflow item, or Workflow Failure
+   * Task Status: Active, Complete, or Terminated
+   * Where I Am: Owner AND Assignee, Owner only, Assignee only
+   * Start Date: Start date before or after a specified date
+   * End Date: End date before or after a specified date
+   * Due Date: Due date before or after a specified date
+   * Updated Date: Updated date before or after a specified date
+-->
 
 ## Aussetzen, Fortsetzen und Beenden einer Workflow-Instanz {#suspending-resuming-and-terminating-a-workflow-instance}
 
