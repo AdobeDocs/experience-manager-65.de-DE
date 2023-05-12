@@ -6,7 +6,8 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '3268'
 ht-degree: 85%
@@ -68,7 +69,7 @@ Dieser Artikel konzentriert sich in erster Linie auf die ersten beiden Aspekte d
 | Hochladen - einzelne Datei | Ja - Hochladen des aktuellen aktiven Dokuments | Ja | [Hochladen über die Web-Oberfläche](manage-assets.md#uploading-assets) |
 | Hochladen - mehrere Dateien/hierarchische Ordnerstrukturen | Nein | Ja | [Hochladen über die Web-Oberfläche](manage-assets.md#uploading-assets) oder über ein benutzerdefiniertes Skript oder Tool. |
 | Sonstiges - Benutzer und Login | Erkennung des Creative Cloud-Benutzers, der beim Creative Cloud-Desktop-Programm angemeldet ist (SSO) | [!DNL Experience Manager]-Benutzende und Anmeldedaten | Benutzende beider Lösungen werden auf das [!DNL Experience Manager]-Benutzerkontingent angerechnet. |
-| Sonstiges – Netzwerk und Zugriff | Zugriff vom Desktop der Benutzenden auf die [!DNL Experience Manager]-Implementierung über das Netzwerk erforderlich | Zugriff vom Desktop der Benutzenden auf die [!DNL Experience Manager]-Implementierung über das Netzwerk erforderlich | [!DNL Adobe Asset Link] gibt keine Netzwerk-Proxy-Umgebung frei. |
+| Sonstiges – Netzwerk und Zugriff | Zugriff vom Desktop der Benutzenden auf die [!DNL Experience Manager]-Bereitstellung über das Netzwerk erforderlich | Zugriff vom Desktop der Benutzenden auf die [!DNL Experience Manager]-Bereitstellung über das Netzwerk erforderlich | [!DNL Adobe Asset Link] gibt keine Netzwerk-Proxy-Umgebung frei. |
 | Sonstiges – Migrieren einer großen Anzahl von Assets | Nein | Nein | [Handbuch zur Assets-Migration](assets-migration-guide.md) |
 
 Um Nutzungsszenarien zum Verteilen von Assets zu unterstützen, sollten andere Lösungen in Betracht gezogen werden:
@@ -118,7 +119,7 @@ Einige wichtige Punkte zu dieser Integration:
 
 **Arbeiten mit Assets, die aus [!DNL Adobe Stock] in [!DNL Experience Manager] in[!DNL Creative Cloud]** gespeichert wurden. Diese Integration ist unabhängig von [!DNL Adobe Asset Link], aber [!DNL Adobe Asset Link] erkennt diese Assets, die aus [!DNL Stock] gespeichert wurden, und zeigt zusätzliche Metadaten und ein [!DNL Adobe Stock]-Logo auf diesen Assets in der [!DNL Adobe Asset Link]-Erweiterungs-Benutzeroberfläche in [!DNL Photoshop], [!DNL Illustrator] oder [!DNL InDesign] an. Die Dateien sind zum Durchsuchen, Öffnen usw. verfügbar, da sie durch das Speichern in [!DNL Experience Manager] zu regulären Assets werden.
 Kreativprofis, die in [!DNL Creative Cloud]-Programmen mit vorhandener[!DNL Adobe Asset Link]-Erweiterung arbeiten, haben zusätzlich zum Zugriff auf bereits lizenzierte Assets aus [!DNL Adobe Stock] in [!DNL Experience Manager] auch Zugriff auf das [!DNL Creative Cloud]-Libraries-Bedienfeld, um [!DNL Adobe Stock]-Assets zu suchen, in einer Vorschau anzuzeigen und zu lizenzieren.
-[!DNL Assets] aus [!DNL Adobe Stock], die lizenziert und in [!DNL Experience Manager] gespeichert wurden, stehen umfangreicheren Teams zur Verfügung, die auf die [!DNL Experience Manager Assets]-Implementierung zugreifen. Kreativprofis hingegen, die Assets aus [!DNL Adobe Stock] über das [!DNL Creative Cloud]-Libraries-Bedienfeld lizenzieren, stehen die Assets standardmäßig lediglich in ihrem eigenen [!DNL Creative Cloud]-Konto zur Verfügung.
+[!DNL Assets] aus [!DNL Adobe Stock], die lizenziert und in [!DNL Experience Manager] gespeichert wurden, stehen umfangreicheren Teams zur Verfügung, die auf die [!DNL Experience Manager Assets]-Bereitstellung zugreifen. Kreativprofis hingegen, die Assets aus [!DNL Adobe Stock] über das [!DNL Creative Cloud]-Libraries-Bedienfeld lizenzieren, stehen die Assets standardmäßig lediglich in ihrem eigenen [!DNL Creative Cloud]-Konto zur Verfügung.
 
 <!-- 
 TBD: A condensed version of the below content is better placed in the Adobe DAM introduction article.
@@ -167,7 +168,7 @@ Im Folgenden finden Sie Beispiele für Aktualisierungen, die normalerweise nicht
 
 ### Benutzerzugriff auf DAM {#user-access-to-dam}
 
-[!DNL Assets] unterstützt zwei Arten von Benutzenden, basierend auf deren Zugriff auf die [!DNL Assets]-Implementierung. Normalerweise haben Benutzer im Unternehmensnetzwerk (Firewall) direkten Zugriff auf DAM. Andere Benutzer außerhalb des Unternehmensnetzwerks hätten keinen direkten Zugriff. Der Benutzertyp bestimmt aus technischer Sicht, welche Integrationen verwendet werden können.
+[!DNL Assets] unterstützt zwei Arten von Benutzenden, basierend auf deren Zugriff auf die [!DNL Assets]-Bereitstellung. Normalerweise haben Benutzer im Unternehmensnetzwerk (Firewall) direkten Zugriff auf DAM. Andere Benutzer außerhalb des Unternehmensnetzwerks hätten keinen direkten Zugriff. Der Benutzertyp bestimmt aus technischer Sicht, welche Integrationen verwendet werden können.
 
 #### Kreative Benutzer mit direktem Zugriff auf DAM {#creative-users-with-direct-access-to-dam}
 
@@ -177,7 +178,7 @@ In solchen Fällen bietet Adobe Asset Link oder das [!DNL Experience Manager]-De
 
 #### Kreativprofis ohne Zugriff auf DAM {#creative-users-without-access-to-dam}
 
-Externe Agenturen oder Freiberufler ohne direkten Zugriff auf die DAM-Implementierung benötigen möglicherweise Zugriff auf genehmigte Assets oder möchten ihre neuen Designs in DAM hinzufügen.
+Externe Agenturen oder Freiberufler ohne direkten Zugriff auf die DAM-Bereitstellung benötigen möglicherweise Zugriff auf genehmigte Assets oder möchten ihre neuen Designs in DAM hinzufügen.
 
 Stellen Sie mit den folgenden Strategien Zugriff auf abgeschlossene/genehmigte Assets bereit:
 

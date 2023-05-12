@@ -3,10 +3,11 @@ title: Unterstützung von Adobe Experience Manager-Inhaltsfragmenten in der Asse
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in AEM.
 feature: Content Fragments,Assets HTTP API
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
-source-git-commit: 9d5440747428830a3aae732bec47d42375777efd
-workflow-type: ht
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+workflow-type: tm+mt
 source-wordcount: '1957'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -55,7 +56,7 @@ Die Assets-REST-API:
 
 ## Voraussetzungen {#prerequisites}
 
-Die Assets-REST-API ist in jeder standardmäßigen Installation einer aktuellen AEM-Version verfügbar.
+Die Assets-REST-API ist bei jeder nativen Installation einer aktuellen AEM verfügbar.
 
 ## Wichtige Konzepte {#key-concepts}
 

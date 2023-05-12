@@ -4,7 +4,8 @@ description: Einführung in die Integration zwischen [!DNL Assets] und [!DNL Wor
 role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '1158'
 ht-degree: 100%
@@ -34,7 +35,7 @@ Siehe Plattformunterstützung und [Voraussetzungen für den erweiterten Connecto
 
 >[!IMPORTANT]
 >
->* Adobe erfordert die Implementierung und Konfiguration des [!DNL Adobe Workfront for Experience Manager enhanced connector] nur über zertifizierte Partner oder [!DNL Adobe Professional Services]. Wird diese ohne zertifizierten Partner oder [!DNL Adobe Professional Services] bereitgestellt oder konfiguriert, wird sie von Adobe nicht unterstützt.
+>* Adobe erfordert die Bereitstellung und Konfiguration des [!DNL Adobe Workfront for Experience Manager enhanced connector] nur über zertifizierte Partner oder [!DNL Adobe Professional Services]. Wird diese ohne zertifizierten Partner oder [!DNL Adobe Professional Services] bereitgestellt oder konfiguriert, wird sie von Adobe nicht unterstützt.
 >
 >* Adobe veröffentlicht möglicherweise Aktualisierungen für [!DNL Adobe Workfront] und [!DNL Adobe Experience Manager], die diesen Connector redundant machen. In diesem Fall kann es erforderlich sein, dass Kunden diesen Connector nicht mehr verwenden.
 >
@@ -49,7 +50,7 @@ Im Folgenden finden Sie Details zu den Funktionen, die durch verschiedene Integr
 
 | Funktion | Beschreibung | [!DNL Workfront] und [!DNL Assets Essentials] *Kein Connector (OOTB)* | [!DNL Workfront for Experience Manager enhanced connector] *Erfordert Connector* | Workfront und [!DNL Experience Manager as a Cloud Service] *Kein Connector (OOTB)* |
 |----|----|----|-----|-----|
-| Implementierungsmethoden | Passend für welches [!DNL Assets]-Angebot. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
+| Bereitstellungsmethoden | Passend für welches [!DNL Assets]-Angebot. | Assets Essentials | Adobe Managed Services, On-Premise | Cloud Service |
 | **Allgemein** |
 | Senden digitaler Dateien von [!DNL Workfront] zu [!DNL Assets] | Die neueste Version eines WF-Dokuments kann in AEM Assets hochgeladen werden, wo sie als neue Version des Dokuments verknüpft wird. | ✓ | ✓ | ✓ |
 | Manuelles Verknüpfen von AEM-Ordnern mit Workfront-Objekten | Vorhandene AEM-Ordner können als Workfront-Ordner verknüpft werden, wobei die untergeordneten Assets als neue Workfront-Dokumente verknüpft werden. | ✓ | ✓ | ✓ |

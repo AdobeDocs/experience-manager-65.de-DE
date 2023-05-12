@@ -5,7 +5,8 @@ contentOwner: AG
 role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '5499'
 ht-degree: 100%
@@ -235,7 +236,7 @@ Falls Sie die Standard-Tags in Experience Manager verwenden möchten, können Si
 
 Wenn Sie nach dem Aktivieren des Agenten für die YouTube-Veröffentlichungsreplikation die Verbindung zum Google-Konto testen möchten, tippen Sie auf **[!UICONTROL Verbindung testen]**. Auf einer Browser-Registerkarte werden die Verbindungsergebnisse angezeigt. Wenn Sie YouTube-Kanäle hinzugefügt haben, wird als Teil des Tests eine Liste dieser Kanäle angezeigt.
 
-1. Klicken Sie oben links in Experience Manager auf das Experience Manager-Logo und anschließend in der linken Leiste auf **[!UICONTROL Tools]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Replikation]** > **[!UICONTROL Agenten für Autor]**.
+1. Klicken Sie oben links in Experience Manager auf das Experience Manager-Logo und anschließend in der linken Leiste auf **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]** > **[!UICONTROL Agenten für Autor]**.
 1. Klicken Sie auf der Seite „Agenten für Autor“ auf **[!UICONTROL In Youtube veröffentlichen]**.
 1. Klicken Sie auf der Symbolleiste rechts neben den Einstellungen auf **[!UICONTROL Bearbeiten]**.
 1. Markieren Sie das Kontrollkästchen **[!UICONTROL Aktiviert]**, um den Replikationsagenten einzuschalten.
@@ -301,7 +302,7 @@ Lassen Sie die Seite „YouTube-Konfiguration erstellen“ geöffnet, Sie werden
 
 1. Melden Sie sich als Administrator bei Ihrer Dynamic Media-Instanz an.
 
-1. Tippen Sie in der linken oberen Ecke von Experience Manager auf das Experience Manager-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Implementierung]** > **[!UICONTROL Cloud-Services]**.
+1. Tippen Sie in der linken oberen Ecke von Experience Manager auf das Experience Manager-Logo und tippen Sie dann in der linken Leiste auf **[!UICONTROL Tools]** (Hammersymbol) > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Cloud-Services]**.
 1. Tippen Sie unter der Überschrift „Services von Dritten“ unter „YouTube“ auf **[!UICONTROL Jetzt konfigurieren]**.
 1. Geben Sie im Dialogfeld „Konfiguration erstellen“ einen Titel (obligatorisch) und einen Namen (optional) in die entsprechenden Felder ein.
 1. Tippen Sie auf **[!UICONTROL Erstellen]**.
@@ -526,6 +527,7 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
    >    * Konfiguration der Warteschlange für Apache Sling-Aufträge
    >    * Handler für externe Prozessaufträge im Adobe Granite-Workflow
    >    * Granite-Workflow – Zeitlimit-Warteschlange
+
    >
    >In diesen Konfigurationen können Sie die Eigenschaften für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** anpassen.
 
@@ -560,6 +562,7 @@ Wenn Sie ein neues Video in einen Ordner hochladen, auf den Videokodierung angew
    >    * Konfiguration der Warteschlange für Apache Sling-Aufträge
    >    * Handler für externe Prozessaufträge im Adobe Granite-Workflow
    >    * Granite-Workflow – Zeitlimit-Warteschlange
+
    >
    >
    >In diesen Konfigurationen können Sie die Eigenschaften für **[!UICONTROL Wiederholungen]**, **[!UICONTROL Wiederholungsverzögerung]** und **[!UICONTROL Zeitüberschreitung]** anpassen.

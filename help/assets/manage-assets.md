@@ -6,7 +6,8 @@ role: User
 feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+hide: true
+source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
 workflow-type: tm+mt
 source-wordcount: '9970'
 ht-degree: 80%
@@ -148,7 +149,7 @@ Das Dialogfeld für den Upload-Fortschritt in [!DNL Assets] zeigt die Anzahl der
 
 ### Serielle Uploads {#serialuploads}
 
-Das gleichzeitige Hochladen einer Vielzahl von Assets verbraucht erhebliche E/A-Ressourcen, was sich negativ auf die Leistung Ihrer [!DNL Assets]-Implementierung auswirken kann. Insbesondere bei einer langsamen Internetverbindung erhöht sich die Ladezeit aufgrund einer Auslastungsspitze beim Festplatten-E/A erheblich. Von Ihrem Webbrowser können weitere Einschränkungen auferlegt werden, die die Anzahl der POST-Anfragen betreffen, die [!DNL Assets] für gleichzeitige Asset-Uploads verarbeiten kann. Fehler oder ein vorzeitiger Abbruch des Upload-Vorgangs können die Folge sein. Es kann also vorkommen, dass in [!DNL Experience Manager Assets] bei der Erfassung großer Dateienmengen einige Dateien verloren gehen oder der Erfassungsvorgang insgesamt nicht ausgeführt werden kann.
+Das gleichzeitige Hochladen einer Vielzahl von Assets verbraucht erhebliche E/A-Ressourcen, was sich negativ auf die Leistung Ihrer [!DNL Assets]-Bereitstellung auswirken kann. Insbesondere bei einer langsamen Internetverbindung erhöht sich die Ladezeit aufgrund einer Auslastungsspitze beim Festplatten-E/A erheblich. Von Ihrem Webbrowser können weitere Einschränkungen auferlegt werden, die die Anzahl der POST-Anfragen betreffen, die [!DNL Assets] für gleichzeitige Asset-Uploads verarbeiten kann. Fehler oder ein vorzeitiger Abbruch des Upload-Vorgangs können die Folge sein. Es kann also vorkommen, dass in [!DNL Experience Manager Assets] bei der Erfassung großer Dateienmengen einige Dateien verloren gehen oder der Erfassungsvorgang insgesamt nicht ausgeführt werden kann.
 
 Um diese Situation zu vermeiden, gibt es die Möglichkeit, Ladevorgänge im Stapelmodus seriell durchzuführen. Dabei werden in die Assets nicht gleichzeitig, sondern einzeln nacheinander von [!DNL Assets] erfasst.
 
@@ -853,7 +854,7 @@ Wenn ein Asset Anmerkungen in Fremdsprachen (insbesondere nicht lateinischen Spr
 
    * Schließen Sie die Zeichenfolge `<font_family_name_of_custom_font, sans-serif>` in der Schriftartoption ein. Wenn Sie z. B. Anmerkungen in CJK (Chinesisch, Japanisch und Koreanisch) drucken möchten, schließen Sie die Zeichenfolge `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in die Schriftartoption ein. Wenn Sie Anmerkungen in Hindi drucken möchten, laden Sie die entsprechende Schriftart herunter. Anschließend konfigurieren Sie die Schriftart als Arial® Unicode MS®, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, Sans-Serif.
 
-1. Starten Sie die [!DNL Experience Manager]-Implementierung.
+1. Starten Sie die [!DNL Experience Manager]-Bereitstellung.
 
 Es folgt ein Beispiel, wie Sie [!DNL Experience Manager] konfigurieren können, um Anmerkungen in CJK (Chinesisch, Japanisch und Koreanisch) zu drucken:
 
