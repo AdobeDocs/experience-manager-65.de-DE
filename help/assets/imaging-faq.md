@@ -9,10 +9,10 @@ discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 feature: Asset Management,Renditions
 role: User, Admin
 exl-id: e427d4ee-d5c8-421b-9739-f3cf2de36e41
-source-git-commit: bb42b5990993b0f8cea95cf1f6c033aed2713c1c
-workflow-type: ht
-source-wordcount: '3519'
-ht-degree: 100%
+source-git-commit: 164b3745c5bddf6ec77f9ac2ada19cfa10c6d266
+workflow-type: tm+mt
+source-wordcount: '3624'
+ht-degree: 94%
 
 ---
 
@@ -28,7 +28,18 @@ Und jetzt erhalten Sie eine bessere Google Core Web Vital-Bewertung für LCP (La
 >
 >Für die intelligente Bildbearbeitung müssen Sie das im Lieferumfang von Adobe Experience Manager Dynamic Media enthaltene vorkonfigurierte CDN (Content Delivery Network) verwenden. Andere benutzerdefinierte CDN werden von dieser Funktion nicht unterstützt.
 
-Die intelligente Bildbearbeitung profitiert von der zusätzlichen Leistungssteigerung durch die vollständige Integration mit dem erstklassigen Premium-CDN (Content Delivery Network) von Adobe. Dieser Service ermittelt die optimale Internetroute zwischen Servern, Netzwerken und Austauschpunkten. Er findet die Route mit der niedrigsten Latenz und der niedrigsten Paketverlustrate, anstatt die Standardroute im Internet zu verwenden.
+>[!TIP]
+>
+>Probieren Sie die Vorteile von Dynamic Media-Bildmodifikatoren und der intelligenten Bildbearbeitung mithilfe von Dynamic Media aus. [_Momentaufnahme_](https://snapshot.scene7.com/).
+>
+> Snapshot ist ein visuelles Demonstrationswerkzeug, das die Leistungsfähigkeit von Dynamic Media für eine optimierte und dynamische Bildbereitstellung veranschaulicht. Experimentieren Sie mit Testbildern oder Dynamic Media-URLs, um die Ausgabe verschiedener Dynamic Media-Bildmodifikatoren visuell zu beobachten, und optimieren Sie die intelligente Bildbearbeitung für Folgendes:
+>* Dateigröße (mit WebP- und AVIF-Bereitstellung)
+>* Netzwerkbandbreite
+>* DSGVO (Gerätepixelverhältnis)
+>
+>Um zu erfahren, wie einfach es ist, Snapshot zu verwenden, spielen Sie die [Schulungsvideo zu Momentaufnahmen](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html?lang=en) (3 Minuten und 17 Sekunden).
+
+Die intelligente Bildbearbeitung profitiert auch von der zusätzlichen Leistungssteigerung durch die vollständige Integration mit dem erstklassigen Premium-CDN-Dienst (Content Delivery Network) von Adobe. Dieser Service ermittelt die optimale Internetroute zwischen Servern, Netzwerken und Austauschpunkten. Er findet die Route mit der niedrigsten Latenz und der niedrigsten Paketverlustrate, anstatt die Standardroute im Internet zu verwenden.
 
 Die folgenden Beispiele für Bild-Assets veranschaulichen die Optimierungen durch die intelligente Bildbearbeitung:
 
@@ -43,7 +54,7 @@ Die folgenden Beispiele für Bild-Assets veranschaulichen die Optimierungen durc
 
 Im Vergleich mit PNG können Sie eine Reduzierung der Größe um 84 % mit WebP und 87 % mit AVIF feststellen. Da sowohl WebP als auch AVIF Transparenz und mehrere Bildanimationen unterstützen, ist dies ein guter Ersatz für transparente PNG- und GIF-Dateien.
 
-Siehe auch [Bildoptimierung mit Bildformaten der nächsten Generation (WebP und AVIF)](https://medium.com/adobetech/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
+Siehe auch [Bildoptimierung mit Bildformaten der nächsten Generation (WebP und AVIF)](https://blog.developer.adobe.com/image-optimisation-with-next-gen-image-formats-webp-and-avif-248c75afacc4)
 
 <!-- HIDDEN ON MAY 19, 2022 BASED ON CQDOC-19280 On the mobile web, the challenges are compounded by two factors:
 
@@ -76,7 +87,7 @@ Siehe auch [bfc](https://experienceleague.adobe.com/docs/dynamic-media-developer
 
 Das Gerätepixelverhältnis (Device Pixel Ratio, DPR), auch als CSS-Pixelverhältnis bezeichnet, ist das Verhältnis zwischen den physischen und den logischen Pixeln eines Geräts. Insbesondere mit dem Aufkommen von Retina-Bildschirmen nimmt die Pixelauflösung moderner Mobilgeräte stetig zu.
 
-Durch Aktivierung der Optimierung des Gerätepixelverhältnisses wird das Bild in der nativen Bildschirmauflösung gerendert, sodass es gestochen scharf erscheint.
+Durch Aktivierung der Optimierung des Gerätepixelverhältnisses wird das Bild in der nativen Bildschirmauflösung gerendert, wodurch es scharf wird.
 
 Derzeit stammt die Display-Pixeldichte aus den CDN-Kopfzeilenwerten von Akamai.
 
@@ -160,7 +171,7 @@ Für Bilddateiformate, die Transparenz unterstützen, wie PNG, können Sie die i
 
 Die intelligente Bildbearbeitung funktioniert mit vorhandenen Bildvorgaben und berücksichtigt alle Bildeinstellungen. Was sich ändert, ist das Bildformat, die Qualitätseinstellung oder beides. Bei der Formatkonvertierung bleibt die Wiedergabetreue gemäß den von Ihnen für die Bildvorgabe gewählten Einstellungen vollständig erhalten – jedoch bei kleinerer Dateigröße.
 
-Angenommen, für eine Bildvorgabe ist etwa das JPEG-Format mit einer Größe von 500 x 500 sowie einer Qualitätseinstellung von „85“ und einem Unschärfenmasken-Wert von 0,1;1;5 definiert. Wenn die intelligente Bildbearbeitung erkennt, dass ein Chrome-Browser verwendet wird, wird das Bild in das WebP-Format mit einer Größe von 500 x 500 und einer Unschärfemaske von 0,1;1;5 in einer WebP-Qualität konvertiert, die einer JPEG-Qualität von 85 so nahe wie möglich kommt. Der Platzbedarf dieser WebP-Konvertierung wird mit dem von JPEG verglichen, und der kleinere von beiden wird zurückgegeben.
+Angenommen, für eine Bildvorgabe ist etwa das JPEG-Format mit einer Größe von 500 x 500 sowie einer Qualitätseinstellung von „85“ und einem Unschärfenmasken-Wert von 0,1;1;5 definiert. Wenn die intelligente Bildbearbeitung erkennt, dass sich ein Benutzer in einem Chrome-Browser befindet, wird das Bild in das WebP-Format mit einer Größe von 500 x 500 konvertiert. Unschärfemaske=0.1,1,5 ist WebP-Qualität, die einer JPEG-Qualität von 85 so nahe wie möglich entspricht. Der Platzbedarf dieser WebP-Konvertierung wird mit dem von JPEG verglichen, und der kleinere von beiden wird zurückgegeben.
 
 ## Muss ich für die intelligente Bildbearbeitung URLs bzw. Bildvorgaben ändern oder neuen Code auf meiner Site bereitstellen? {#will-i-have-to-change-any-urls-image-presets-or-deploy-any-new-code-on-my-site-for-smart-imaging}
 
@@ -304,7 +315,7 @@ Aus diesem Header geht Folgendes hervor:
 
 ## Wie kann ich die AVIF-Optimierung in der intelligenten Bildbearbeitung deaktivieren?{#disable-avif}
 
-Wenn Sie zur standardmäßigen Bereitstellung von WebP zurückwechseln möchten, erstellen Sie einen entsprechenden Support-Fall. Wie üblich können Sie die intelligente Bildbearbeitung deaktivieren, indem Sie den Modifikator `bfc=off` zur Bild-URL hinzufügen. Sie können jedoch weder WebP noch AVIF im URL-Modifikator für die intelligente Bildbearbeitung auswählen. Diese Funktion ist nur auf der Kontoebene Ihres Unternehmens verfügbar.
+Wenn Sie zur standardmäßigen Bereitstellung von WebP zurückwechseln möchten, erstellen Sie einen entsprechenden Support-Fall. Wie üblich können Sie die intelligente Bildbearbeitung deaktivieren, indem Sie den Modifikator `bfc=off` zur Bild-URL hinzufügen. Sie können jedoch weder WebP noch AVIF im URL-Modifikator für die intelligente Bildbearbeitung auswählen. Diese Fähigkeit wird auf der Kontoebene Ihres Unternehmens beibehalten.
 
 ## Kann die intelligente Bildbearbeitung für eine beliebige Anfrage deaktiviert werden?{#turning-off-smart-imaging}
 
