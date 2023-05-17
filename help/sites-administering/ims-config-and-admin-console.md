@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 exl-id: 95eae97c-01c2-4f5c-8068-f504eab7c49e
 feature: Security
-source-git-commit: 11db7c44853f95380fa5200efaf5691ad08b3729
+source-git-commit: fff35031eaf55b185870da56a0b66f9145b1ec41
 workflow-type: tm+mt
-source-wordcount: '1677'
+source-wordcount: '1676'
 ht-degree: 67%
 
 ---
@@ -133,10 +133,10 @@ Weitere Informationen zu den neuen Gruppenfunktionen finden Sie hier:
 >
 >Das User Sync Tool muss mit dem [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html) beschriebenen Verfahren als Adobe I/O-Client-UMAPI registriert werden.
 >
->Die Dokumentation zur Adobe I/O-Konsole finden Sie [hier](https://www.adobe.io/apis/cloudplatform/console.html).
+>Die Dokumentation zur Adobe I/O-Konsole finden Sie [hier](https://developer.adobe.com/developer-console/docs/guides/).
 >
 >
->Die [!DNL User Management]-API, die vom User Sync Tool verwendet wird, wird [hier erläutert](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>Die [!DNL User Management]-API, die vom User Sync Tool verwendet wird, wird [hier erläutert](https://adobe-apiplatform.github.io/umapi-documentation/en/).
 
 >[!NOTE]
 >
