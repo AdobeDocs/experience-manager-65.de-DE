@@ -6,10 +6,11 @@ mini-toc-levels: 1
 role: User, Admin
 feature: Asset Management,Renditions
 exl-id: a4bcf67b-54f4-4681-9e42-fd4753acde1a
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
+hide: true
+source-git-commit: c1878d6aadba9c795168459dbd5f09abfe0fc327
+workflow-type: tm+mt
 source-wordcount: '1751'
-ht-degree: 100%
+ht-degree: 88%
 
 ---
 
@@ -45,9 +46,9 @@ Die unterstützten Rasterbildformate in [!DNL Assets] sind:
 | PICT | − | − | − | − | − | − | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ | − | − | − |
 
-‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
+‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Es handelt sich um ein von Adobe Photoshop generiertes Bild, das in der PSD-Datei enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
-Berücksichtigen Sie zusätzlich zu den oben genannten Informationen Folgendes:
+Beachten Sie zusätzlich zu den oben genannten Informationen Folgendes:
 
 * Die Unterstützung für EPS-Dateien gilt nur für Rasterbilder. Zum Beispiel wird die Erstellung von Miniaturansichten für Vektorbilder im EPS-Format nicht standardmäßig unterstützt. Um die Unterstützung hinzuzufügen, [konfigurieren Sie ImageMagick](best-practices-for-imagemagick.md). Informationen zur Integration von Drittanbieter-Tools zur Aktivierung zusätzlicher Funktionen finden Sie unter [Befehlszeilenbasierter Medien-Handler](media-handlers.md#command-line-based-media-handler).
 
@@ -75,7 +76,7 @@ Siehe auch [Arbeiten mit 3D-Assets in Dynamic Media](/help/assets/assets-3d.md).
 Die Adobe PDF Rasterizer-Bibliothek generiert hochwertige Miniaturansichten und Vorschauen für große und ressourcenintensive [!DNL Adobe Illustrator]- und PDF-Dateien. Adobe empfiehlt die Verwendung der PDF Rasterizer-Bibliothek für folgende Dateien:
 
 * Umfangreiche AI-/PDF-Dateien, deren Verarbeitung ressourcenintensiv ist.
-* AI-/PDF-Dateien, für die standardmäßig keine Miniaturansichten generiert werden.
+* KI-/PDF-Dateien, für die standardmäßig keine Miniaturansichten generiert werden.
 * AI-Dateien mit PMS-Farben (Pantone Matching System)
 
 Siehe [Verwenden von PDF Rasterizer](aem-pdf-rasterizer.md).
@@ -142,7 +143,7 @@ Folgende Dokumentenformate werden für Asset-Management-Funktionen unterstützt:
 
 ## Unterstützte Archivformate {#supported-archive-formats}
 
-Die unterstützten Archivformate und die Anwendbarkeit gemeinsamer DAM-Workflows werden in der folgenden Tabelle behandelt.
+Die unterstützten Archivformate und die Anwendbarkeit der allgemeinen DAM-Workflows werden in der folgenden Tabelle behandelt.
 
 | Formate | Speicherung | Versionierung | Workflow | Veröffentlichung | Zugriffssteuerung | Bereitstellung von Dynamic Media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -264,9 +265,9 @@ Eine Liste der unterstützten MIME-Typen finden Sie in CRXDE Lite unter `/conf/g
 
 Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 
-* Um mithilfe von Dynamic Media dynamische Ausgaben für PDF-Dateien zu generieren, informieren Sie sich unter [Adobe Illustrator (AI)-, PostScript (EPS)- und PDF-Dateiformate.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Informationen zum Generieren dynamischer Ausgabeformate für PDF-Dateien mit Dynamic Media finden Sie unter [Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Um mithilfe von Dynamic Media dynamische Ausgaben für AI-Dateien in der Vorschau anzuzeigen und zu generieren, informieren Sie sich unter [Adobe Illustrator (AI)-, PostScript (EPS)- und PDF-Dateiformate.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) 
+* Informationen zur Verwendung von Dynamic Media zur Vorschau und Generierung dynamischer Ausgabeformate für AI-Dateien finden Sie unter [Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Unter [InDesign-Dateiformat (INDD)](../assets/managing-image-presets.md#indesign-indd-file-format) erfahren Sie, wie Sie Dynamic Media zum Generieren dynamischer Ausgabedarstellungen für INDD-Dateien verwenden können.
 
@@ -283,7 +284,7 @@ Berücksichtigen Sie zusätzlich zu den oben genannten Funktionen Folgendes:
 | [EPS](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | − |
 | PICT | ✓ | − | − | − | − | − |
 
-‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Dabei handelt es sich um ein von Adobe Photoshop generiertes Bild, das in der PSD enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
+‡ Das zusammengeführte Bild wird aus der PSD-Datei extrahiert. Es handelt sich um ein von Adobe Photoshop generiertes Bild, das in der PSD-Datei enthalten ist. Je nach den Einstellungen kann dieses Bild das eigentliche Bild sein oder nicht.
 
 * Die Unterstützung für EPS-Dateien gilt nur für Rasterbilder. Zum Beispiel wird die Erstellung von Miniaturansichten für Vektorbilder im EPS-Format nicht standardmäßig unterstützt. Um die Unterstützung hinzuzufügen, [konfigurieren Sie ImageMagick](best-practices-for-imagemagick.md). Informationen zur Integration von Drittanbieter-Tools zur Aktivierung zusätzlicher Funktionen finden Sie unter [Befehlszeilenbasierter Medien-Handler](media-handlers.md#command-line-based-media-handler).
 
