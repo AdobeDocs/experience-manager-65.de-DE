@@ -12,10 +12,10 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer
 feature: Viewer Presets
 role: User, Admin
 exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
-source-wordcount: '4523'
-ht-degree: 99%
+source-wordcount: '4519'
+ht-degree: 98%
 
 ---
 
@@ -60,7 +60,7 @@ Weitere Informationen zum Einbetten responsiver Viewer auf Webseiten finden Sie 
 
 >[!NOTE]
 >
->Sie müssen zunächst alle standardmäßig vorhandenen Viewer veröffentlichen, um sie verwenden zu können.
+>Veröffentlichen Sie alle standardmäßigen Viewer, bevor Sie sie zum ersten Mal verwenden.
 >Siehe [Veröffentlichen von Viewer-Vorgaben].(#publishing-viewer-presets)
 
 ### Systemkompatibilität der Viewer-Vorgaben {#viewer-preset-system-compatibility}
@@ -72,7 +72,7 @@ Alle standardmäßig vorhandenen Viewer-Vorgaben, die mit Dynamic Media bereitge
 * Apple iPads
 * Android™-Smartphone
 * Android™-Tablet
-* Videos: zusätzliche Unterstützung zur MP4-Wiedergabe für [Blackberry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) und [Windows Phone](https://docs.microsoft.com/de-de/windows/uwp/audio-video-camera/supported-codecs)
+* Videos: zusätzliche Unterstützung zur MP4-Wiedergabe für [Blackberry®](https://developer.blackberry.com/devzone/develop/supported_media/bb_media_support_at_a_glance.html#kba1328730952678) und [Windows Phone](https://learn.microsoft.com/de-de/windows/uwp/audio-video-camera/supported-codecs)
 
 ### Rich-Media-Typen für Viewer-Vorgaben {#rich-media-types-for-viewer-presets}
 
@@ -498,7 +498,7 @@ Beispiel: Beim *VideoPlayer*-Typ können Sie unter **[!UICONTROL Modifikatoren]*
 
 **Über Anzeigemodi für Bildminiaturansichten im Anzeigefeld**
 
-Beim Erstellen oder Bearbeiten einer Viewer-Vorgabe für interaktive Videos können Sie die zu verwendende Anzeigemodus-Einstellung festlegen, wenn Sie `InteractiveSwatches` aus dem Menü **[!UICONTROL Ausgewählte Komponente]** unter der Registerkarte **[!UICONTROL Verhalten]** auswählen. Der von Ihnen gewählte Anzeigemodus beeinflusst, wie und wann Miniaturansichten während der Videowiedergabe angezeigt werden. Sie können entweder den Anzeigemodus `segment` (Standard) oder den Anzeigemodus `continuous` auswählen.
+Beim Erstellen oder Bearbeiten einer Viewer-Vorgabe für interaktive Videos können Sie die zu verwendende Anzeigemodus-Einstellung festlegen, wenn Sie `InteractiveSwatches` aus dem Menü **[!UICONTROL Ausgewählte Komponente]** unter der Registerkarte **[!UICONTROL Verhalten]** auswählen. Der gewählte Anzeigemodus beeinflusst, wie und wann Miniaturansichten während der Videowiedergabe angezeigt werden. Sie können entweder den Anzeigemodus `segment` (Standard) oder den Anzeigemodus `continuous` auswählen.
 
 <table>
  <tbody>

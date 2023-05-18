@@ -12,9 +12,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: c704397f08e163a58ee6ac1dbaefc3171298864e
+source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
-source-wordcount: '8086'
+source-wordcount: '8066'
 ht-degree: 99%
 
 ---
@@ -155,8 +155,6 @@ Das adaptive Video-Streaming wird auf verschiedenen iOS-Plattformen unterstützt
 Dynamic Media unterstützt die mobile Videowiedergabe für MP4 H.264-Videos. Welche BlackBerry®-Geräte dieses Videoformat unterstützen, können Sie hier einsehen: [Unterstützte Videoformate für BlackBerry®](https://support.blackberry.com/kb/articleDetail?ArticleNumber=000005482).
 
 Welche Windows-Geräte dieses Videoformat unterstützen, können Sie hier einsehen: [Unterstützte Medien-Codecs für Windows Phone 8](https://learn.microsoft.com/de-de/windows/uwp/audio-video-camera/supported-codecs)
-
-
 
 * Wiedergabe von Videos mit Video-Viewer-Vorgaben aus Dynamic Media, einschließlich der folgenden:
 
@@ -442,10 +440,6 @@ Zu den wichtigsten Vorteilen der Aktivierung von DASH in Ihrem Konto zählen die
 * Hilft Ihnen, die Bereitstellung von Videos für Ihre Kundinnen und Kunden leichter zugänglich zu machen.
 * Rufen Sie die Streaming-URL auch über APIs ab.
 
-   >[!IMPORTANT]
-   >
-   >Die Aktivierung von DASH in Ihrem Konto ist derzeit nur in Asien-Pazifik und Nordamerika verfügbar. in Kürze in Europa, im Nahen Osten und in Afrika vorkommen.
-
 Die Aktivierung von DASH in Ihrem Konto erfordert zwei Schritte:
 
 * Konfigurieren von Dynamic Media für die Verwendung von DASH, was Sie einfach selbst tun können.
@@ -458,7 +452,7 @@ Die Aktivierung von DASH in Ihrem Konto erfordert zwei Schritte:
 1. Aktivieren Sie das Kontrollkästchen, um DASH zu aktivieren.
 1. Wählen Sie **[!UICONTROL Speichern]** aus.
 1. **Konfigurieren Sie Experience Manager 6.5** – [Verwenden Sie die Admin Console, um die Erstellung eines neuen Support-Falls zu starten](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html).
-1. Befolgen Sie die Anweisungen, um einen Support-Fall zu erstellen, und stellen Sie dabei sicher, dass Sie die folgenden Informationen bereitstellen:
+1. Um einen Support-Fall zu erstellen, befolgen Sie die Anweisungen und stellen Sie dabei sicher, dass Sie die folgenden Informationen bereitstellen:
 
    * Name des Hauptansprechpartners, E-Mail, Telefon.
    * Name Ihres Dynamic Media-Kontos.
@@ -720,7 +714,7 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
 ## Informationen zu Videominiaturen im Dynamic Media-Scene7-Modus {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
-Eine Videominiatur ist eine verkleinerte Version eines Videoframes oder eines Bild-Assets, in dem das Video dem Kunden vorgestellt wird. Das Miniaturbild soll Kunden dazu motivieren, auf das Video zu klicken.
+Eine Videominiatur ist eine verkleinerte Version eines Videoframes oder eines Bild-Assets, in dem das Video dem Kunden vorgestellt wird. Die Miniaturansicht dient dazu, einen Kunden zur Auswahl des Videos zu ermutigen.
 
 Alle Videos in Experience Manager müssen ein zugehöriges Miniaturbild enthalten. Sie können ein Miniaturbild nicht löschen, ohne es zu ersetzen. Wenn Sie ein Video in Experience Manager hochladen, wird standardmäßig der erste Frame als Miniaturansicht verwendet. Sie können jedoch die Miniaturansicht anpassen, z. B. für Branding oder visuelle Suche. Wenn Sie eine Videominiatur anpassen, können Sie das Video abspielen und bei dem Frame anhalten, den Sie verwenden möchten. Sie können auch ein Bild-Asset auswählen, das Sie bereits in Ihrem Digital Asset Manager hochgeladen und *veröffentlicht* haben.
 

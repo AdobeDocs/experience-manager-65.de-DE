@@ -3,9 +3,9 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fc7d3727-7cd4-47a4-8e75-840f9f9c0e62
-source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
+source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
-source-wordcount: '2986'
+source-wordcount: '2972'
 ht-degree: 85%
 
 ---
@@ -37,7 +37,7 @@ Unterstützung des neuen Protokolls DASH (Dynamic Adaptive Streaming over HTTP) 
 
 * Adaptives Streaming (DASH/HLS) sorgt für ein besseres Anwendererlebnis bei der Videoanzeige.
 * DASH ist das internationale Standardprotokoll für adaptives Video-Streaming und wird in der Branche weitläufig verwendet.
-* Jetzt in Asien-Pazifik und Nordamerika verfügbar (über ein Support-Ticket möglich); in Kürze in Europa, im Nahen Osten und in Afrika vorkommen.
+* Jetzt erhältlich durch Einreichen eines Support-Tickets.
 
 Siehe [DASH in Ihrem Konto aktivieren](/help/assets/video.md#enable-dash).
 
@@ -45,7 +45,7 @@ Siehe [DASH in Ihrem Konto aktivieren](/help/assets/video.md#enable-dash).
 
 ## [!DNL Assets] {#assets-6516}
 
-* Connected Assets: Wenn Sie die Optionen für smartes Zuschneiden für Bilder auf Remote-DAM aktivieren, Bilder in einen Ordner hochladen und den Ordner mit lokalen Websites synchronisieren, wird der Ordner nicht in der lokalen Sites-Implementierung geöffnet. (NPR-39912)
+* Connected Assets: Wenn Sie die Optionen für smartes Zuschneiden für Bilder auf Remote-DAM aktivieren, Bilder in einen Ordner hochladen und den Ordner mit lokalen Websites synchronisieren, wird der Ordner nicht in der lokalen Sites-Bereitstellung geöffnet. (NPR-39912)
 * Beim Sortieren einer Sammlung nach Namen funktioniert die Listenansicht nicht ordnungsgemäß. (ASSETS-19401)
 * Wenn eine große Mediendatei (JPEG) in Sammlungen hochgeladen wird, reagiert Experience Manager nicht mehr. (ASSETS-19387)
 * Im Inhaltsbaum-Bereich ist der angezeigte Asset-Name falsch, da der Speicherort des Assets nicht ordnungsgemäß wiedergegeben wird. (ASSETS-18870)
@@ -332,7 +332,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
    ```
 
 * In AEM Forms funktioniert das POP3-Protokoll nicht mit E-Mail-Endpunkten für Microsoft® Office 365.
-* Auf der JBoss® 7.1.4-Plattform schlägt die Implementierung von `adobe-livecycle-jboss.ear` bei der Installation des Service Packs von AEM 6.5.16.0 fehl.
+* Auf der JBoss® 7.1.4-Plattform schlägt die Bereitstellung von `adobe-livecycle-jboss.ear` bei der Installation des Service Packs von AEM 6.5.16.0 fehl.
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete {#osgi-bundles-and-content-packages-included}
 
