@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 18f843ed3ffb719d168b67826baaffd926ffd2dd
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 16%
@@ -60,7 +60,7 @@ Auf dem Markt ist eine Vielzahl von Tools für Leistungstests erhältlich. Stell
 
 * **Load Runner** ist ein Enterprise-Produkt für Auslastungstests. Eine kostenlose Evaluierungsversion ist verfügbar. Weitere Informationen finden Sie unter [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 
-* Tools zum Laden von Websites, [Neustar](https://neustarsecurityservices.com/web-performance-management) kann auch verwendet werden.
+* Tools zum Laden von Websites, [Vercara](https://vercara.com/website-performance-management) kann auch verwendet werden.
 * Beim Testen mobiler oder responsiver Websites muss ein separater Satz von Tools verwendet werden. Sie ermöglichen die Einschränkung der Netzwerkbandbreite und simulieren langsamere mobile Verbindungen wie 3G oder EDGE. Zu den gängigeren Tools gehören:
 
    * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)** mit einer benutzerfreundlichen Oberfläche und einer relativ niedrigen Ebene im Netzwerk-Stack. Es sind OS X- und iOS-Versionen verfügbar.
