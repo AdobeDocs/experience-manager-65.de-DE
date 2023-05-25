@@ -2,9 +2,9 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
-source-git-commit: f8af806bbb78623d5ba12379fc547a2cffc03841
+source-git-commit: 0bce05571590bc09e2b65f6bd6c1f387c71fba3a
 workflow-type: tm+mt
-source-wordcount: '2606'
+source-wordcount: '2620'
 ht-degree: 42%
 
 ---
@@ -70,6 +70,7 @@ Einige der wichtigsten Funktionen und Verbesserungen in dieser Version sind:
 * Workflow kann nicht für mehrere ausgewählte Assets Trigger werden, die mithilfe von Suchfiltern gefunden werden. (ASSETS-7689)
 * Wenn Sie ein Asset (oder mehrere Assets) aus den Suchergebnissen auswählen, ist die Option zum Zuordnen oder Aufheben der Zuordnung nicht sichtbar. Andernfalls ist die Option jedoch verfügbar. (ASSETS-7679)
 * Der Bereich Suchfilter wird nach der Anmeldung nur einmal geöffnet und nicht geöffnet, wenn Sie die Suchseite verlassen und die Suche erneut ausführen. (ASSETS-7671)
+* Das E-Mail-Kombinationsfeld zeigt beim Teilen eines Links kein angemessenes Kontrastverhältnis an. (ASSETS-17349)
 
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST 
 * When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 
