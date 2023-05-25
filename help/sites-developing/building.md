@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '875'
-ht-degree: 100%
+source-git-commit: be028f116ccb83853cd46dc742438babd2207314
+workflow-type: tm+mt
+source-wordcount: '903'
+ht-degree: 91%
 
 ---
 
 # Einbinden von Tagging in eine AEM-Anwendung{#building-tagging-into-an-aem-application}
 
-Zum Zwecke von programmatischem Arbeiten mit Tags oder zum Erweitern von Tags in einer benutzerdefinierten AEM-Anwendung wird auf dieser Seite die Verwendung der
+Zum Zweck der programmgesteuerten Arbeit mit Tags oder der Erweiterung von Tags in einem benutzerdefinierten AEM-Programm beschreibt diese Seite die Verwendung des
 
 * [Tagging-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html),
 
@@ -31,7 +31,7 @@ die mit dem
 Weitere Informationen zum Tagging finden Sie unter:
 
 * Informationen zur Erstellung und Verwaltung von Tags sowie dazu, welchen Inhalten Tags zugewiesen werden, finden Sie unter [Verwalten von Tags](/help/sites-administering/tags.md).
-* [Verwendung von Tags](/help/sites-authoring/tags.md) für Informationen zum Markieren von Inhalt.
+* [Verwenden von Tags](/help/sites-authoring/tags.md) für Informationen zum Tagging von Inhalten.
 
 ## Übersicht über die Tagging-API {#overview-of-the-tagging-api}
 
@@ -188,7 +188,7 @@ Beim Tagging hängt die Lokalisierung vom Kontext ab, da Tag-`titles` in der Sei
 
 ### Hinzufügen einer neuen Sprache zum Dialogfeld „Tag bearbeiten“ {#adding-a-new-language-to-the-edit-tag-dialog}
 
-Im folgenden Verfahren wird beschrieben, wie Sie eine neue Sprache (Finnisch) im Dialogfeld **Tag bearbeiten** hinzufügen:
+Im folgenden Verfahren wird beschrieben, wie Sie eine neue Sprache (Finnisch) zum **Tag bearbeiten** dialog:
 
 1. Bearbeiten Sie in **CRXDE** die Mehrwerteigenschaft `languages` des Knotens `/content/cq:tags`.
 
@@ -199,3 +199,7 @@ Die neue Sprache (Finnisch) ist jetzt im Tag-Dialogfeld der Seiteneigenschaften 
 >[!NOTE]
 >
 >Die neue Sprache muss eine der von AEM erkannten Sprachen sein, d. h. sie muss als Knoten unter `/libs/wcm/core/resources/languages` verfügbar sein.
+
+>[!CAUTION]
+>
+>Durch die Installation eines Service Packs wird die Eigenschaft languages des Knotens /content/cq:tags auf den Standardwert zurückgesetzt. Daher ist es erforderlich, sie vor der Installation aus den Eigenschaften hinzuzufügen.

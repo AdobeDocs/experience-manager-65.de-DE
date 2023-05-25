@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 6dea3a23c70fdb5f07bdf724547e799776002c61
-workflow-type: ht
-source-wordcount: '1553'
-ht-degree: 100%
+source-git-commit: 3d1959a1a81293b51257d99d32c9576866c8a308
+workflow-type: tm+mt
+source-wordcount: '1569'
+ht-degree: 80%
 
 ---
 
@@ -52,7 +52,7 @@ Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen A
 >
 >
 >* [AEM – Übersetzung durch Menschen](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM – maschinelle Übersetzung](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* [AEM maschinelle Übersetzung](https://www.adobe.com/go/aem-machine-translation-connectors)
 >
 
 
@@ -72,7 +72,7 @@ Erstellen Sie eine Framework-Konfiguration für die Übersetzungsintegration, um
 
 Nachdem Sie eine Framework-Konfiguration erstellt haben, verknüpfen Sie die Cloud-Konfiguration mit den Seiten, die Sie gemäß der Konfiguration übersetzen möchten. Wenn der Übersetzungsvorgang gestartet wird, geht der Übersetzungsworkflow entsprechend der verknüpften Framework-Konfiguration vor.
 
-Wenn für verschiedene Bereiche Ihrer Website unterschiedliche Übersetzungsanforderungen vorliegen, erstellen Sie entsprechend mehrere Framework-Konfigurationen. Beispielsweise enthält eine mehrsprachige Website deutsche, englische und japanische Sprachkopien. Der Website-Eigentümer nutzt zwei verschiedene Übersetzungsdienstleister für die englische und die deutsche Übersetzung. Daher werden zwei verschiedene Konfigurationen des Frameworks erstellt. Jede Konfiguration nutzt einen anderen Übersetzungsdienstleister.
+Wenn für verschiedene Bereiche Ihrer Website unterschiedliche Übersetzungsanforderungen vorliegen, erstellen Sie entsprechend mehrere Framework-Konfigurationen. Beispielsweise enthält eine mehrsprachige Website englische, spanische und japanische Sprachkopien. Der Website-Eigentümer nutzt zwei verschiedene Übersetzungsdienstleister für die englische und die deutsche Übersetzung. Daher werden zwei verschiedene Konfigurationen des Frameworks erstellt. Jede Konfiguration nutzt einen anderen Übersetzungsdienstleister.
 
 Nachdem Sie ein Framework für die Übersetzungsintegration erstellt haben, können Sie es [mit den Seiten verknüpfen](/help/sites-administering/tc-prep.md), die es verwenden.
 
@@ -83,7 +83,7 @@ Eine einzelne Framework-Konfiguration steuert, wie Seiten- und Community-Inhalte
 
 ### Website-Konfigurationseigenschaften {#sites-configuration-properties}
 
-Die Website-Eigenschaften steuern, wie die Übersetzung von Seiteninhalten durchgeführt wird.
+Die Sites-Eigenschaften steuern, wie die Übersetzung von Seiteninhalten ausgeführt wird.
 
 <table>
  <tbody>
@@ -109,6 +109,10 @@ Die Website-Eigenschaften steuern, wie die Übersetzung von Seiteninhalten durch
    <td>(Nur maschinelle Übersetzung) Eine Kategorie, die den zu übersetzenden Inhalt beschreibt. Die Kategorie kann beeinflussen, welche Terminologie und welche Formulierungen bei der Übersetzung von Inhalten verwendet werden.</td>
   </tr>
   <tr>
+   <td>Komponenten-Zeichenfolgen übersetzen</td>
+   <td>Wählen Sie diese Option, um Komponentenzeichenfolgen von Komponenten zu übersetzen, die mit der Seite verknüpft sind.</td>
+  </tr>
+  <tr>
    <td>Tags übersetzen</td>
    <td>Wählen Sie diese Option aus, um Tags zu übersetzen, die mit der Seite verknüpft sind.</td>
   </tr>
@@ -130,7 +134,7 @@ Die Website-Eigenschaften steuern, wie die Übersetzung von Seiteninhalten durch
 
 ### Communities-Konfigurationseigenschaften {#communities-configuration-properties}
 
-Die Communities-Eigenschaften steuern, wie die Übersetzung von benutzergenerierten Inhalten durchgeführt wird. Für die Übersetzung von benutzergenerierten Inhalten wird immer maschinelle Übersetzung genutzt. Weitere Informationen finden Sie unter [Übersetzen benutzergenerierter Inhalte](/help/communities/translate-ugc.md)
+Communities-Eigenschaften steuern, wie die Übersetzung benutzergenerierter Inhalte durchgeführt wird. Die Übersetzung benutzergenerierter Inhalte verwendet immer maschinelle Übersetzung. Weitere Informationen finden Sie unter [Übersetzen benutzergenerierter Inhalte](/help/communities/translate-ugc.md).
 
 | Eigenschaft | Beschreibung |
 |---|---|
@@ -184,14 +188,14 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Information
  </tbody>
 </table>
 
-1. Klicken oder tippen Sie in der Seitenleiste auf „Tools“ > „Vorgänge“ > „Cloud“ > „Cloud-Services“.
-1. Welche Links im Übersetzungsintegrations-Bereich angezeigt werden, hängt davon ab, ob Konfigurationen erstellt wurden:
+1. Klicken oder tippen Sie in der Seitenleiste auf Tools > Vorgänge > Cloud > Cloud Services .
+1. Ob im Bereich &quot;Übersetzungsintegration&quot;Konfigurationen erstellt wurden, bestimmt, welcher Link angezeigt wird:
 
-   * Wenn keine Konfigurationen erstellt wurden, klicken oder tippen Sie auf „Jetzt konfigurieren“.
-   * Wenn bereits Konfigurationen vorhanden sind, klicken oder tippen Sie auf „Konfigurationen anzeigen“ und anschließend auf den Link mit dem Pluszeichen (+), der neben „Verfügbare Konfigurationen“ angezeigt wird.
+   * Wenn keine Konfigurationen erstellt wurden, klicken oder tippen Sie auf Jetzt konfigurieren .
+   * Wenn bereits Konfigurationen vorhanden sind, klicken oder tippen Sie auf Konfigurationen anzeigen und dann auf den Link + , der neben Verfügbare Konfigurationen angezeigt wird.
 
-1. Geben Sie einen Namen für die Konfiguration an und klicken oder tippen Sie anschließend auf „Erstellen“.
-1. Konfigurieren Sie die Eigenschaften auf den Registerkarten „Sites“, „Communities“ und „Assets“ und klicken oder tippen Sie anschließend auf „OK“.
+1. Geben Sie einen Namen für die Konfiguration ein und klicken oder tippen Sie auf Erstellen .
+1. Konfigurieren Sie die Eigenschaften auf der Registerkarte Sites, Communities und Assets und klicken oder tippen Sie auf OK.
 
 ## Konfigurieren von Seiten für Übersetzungen {#configuring-pages-for-translation}
 
@@ -204,7 +208,7 @@ Beachten Sie, dass die Cloud-Konfiguration des Frameworks für die Übersetzungs
 
 Wenn Sie eine Seite mit einer Cloud-Konfiguration verknüpfen, erben die untergeordneten Elemente der Seite diese Verknüpfung. Wenn Sie z. B. die Seite /content/geometrixx/en/products mit einem Framework für die Übersetzungsintegration verknüpfen, werden die Produktseite und alle untergeordneten Seiten entsprechend diesem Framework übersetzt.
 
-Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite überschreiben. Beispiel: Die Inhalte einer Website drehen sich größtenteils um das Thema Bekleidung. Ein Zweig an Seiten beschreibt dagegen das Unternehmen. Die Stammseite der Website ist mit einem Framework für die Übersetzungsintegration verknüpft, das vorgibt, dass maschinelle Übersetzung mit der Kategorie „Bekleidung“ angewendet werden soll. Der Zweig, der das Unternehmen beschreibt, nutzt dagegen ein Framework, bei dem maschinelle Übersetzung mit der Kategorie „Allgemein“ angewendet wird.
+Bei Bedarf können Sie die Verknüpfung auf einer untergeordneten Seite überschreiben. Zum Beispiel handelt es sich bei dem Inhalt einer Website hauptsächlich um Kleidung. Ein Zweig an Seiten beschreibt dagegen das Unternehmen. Die Stammseite der Site ist mit einem Framework für die Übersetzungsintegration verknüpft, das die maschinelle Übersetzung mithilfe der Kategorie &quot;Kleidung&quot;angibt. Die Zweigstelle, die das Unternehmen beschreibt, verwendet ein Framework, das maschinelle Übersetzung unter Verwendung der Kategorie &quot;Allgemein&quot;durchführt.
 
 Darüber hinaus steht bei allen [SCF-Komponenten](/help/communities/scf.md) von Communities auf den Seiten für benutzergenerierte Inhalte die Möglichkeit zur Verfügung, dass Benutzer Inhalte übersetzen können. Weitere Informationen finden Sie unter [Übersetzen von benutzergenerierten Inhalten](/help/communities/translate-ugc.md).
 
@@ -212,16 +216,16 @@ Darüber hinaus steht bei allen [SCF-Komponenten](/help/communities/scf.md) von 
 
 Verknüpfen Sie eine Seite mit Ihrem Übersetzungsdienstleister, um die Seite und ihre untergeordneten Seiten zu übersetzen.
 
-1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und klicken oder tippen Sie auf „Eigenschaften anzeigen“.
-1. Klicken oder tippen Sie auf „Bearbeiten“ und anschließend auf die Registerkarte „Cloud-Services“.
-1. Klicken oder tippen Sie auf „Konfiguration hinzufügen“ > „Übersetzungsintegration“.
-1. Wählen Sie den gewünschten Übersetzungsdienstleister aus und klicken oder tippen Sie auf „Fertig“.
+1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und klicken oder tippen Sie auf Eigenschaften anzeigen .
+1. Klicken oder tippen Sie auf Bearbeiten und dann auf die Registerkarte Cloud Services .
+1. Klicken oder tippen Sie auf Konfiguration hinzufügen > Übersetzungsintegration .
+1. Wählen Sie den zu verwendenden Übersetzungsanbieter aus und klicken oder tippen Sie auf Fertig .
 
 ### Verknüpfen von Seiten mit einem Framework für die Übersetzungsintegration {#associating-pages-with-a-translation-integration-framework}
 
 Verknüpfen Sie eine Seite mit dem Framework für die Übersetzungsintegration, das festlegt, wie die Übersetzung der Seite und der untergeordneten Seiten durchgeführt werden soll.
 
-1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und klicken oder tippen Sie auf „Eigenschaften anzeigen“.
-1. Klicken oder tippen Sie auf „Bearbeiten“ und anschließend auf die Registerkarte „Cloud-Services“.
-1. Klicken oder tippen Sie auf „Konfiguration hinzufügen“ > „Übersetzungsintegration“.
-1. Wählen Sie das gewünschte Framework für die Übersetzungsintegration aus und klicken oder tippen Sie auf „Fertig“.
+1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und klicken oder tippen Sie auf Eigenschaften anzeigen .
+1. Klicken oder tippen Sie auf Bearbeiten und dann auf die Registerkarte Cloud Services .
+1. Klicken oder tippen Sie auf Konfiguration hinzufügen > Übersetzungsintegration .
+1. Wählen Sie das zu verwendende Framework für die Übersetzungsintegration aus und klicken oder tippen Sie auf Fertig .
