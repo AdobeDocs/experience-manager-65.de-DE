@@ -7,10 +7,10 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: eac578f8c8ef3bfc3c94929814398486777094f0
+source-git-commit: b138bc434ecad849b2c588864868cab6666d50c9
 workflow-type: tm+mt
-source-wordcount: '5601'
-ht-degree: 98%
+source-wordcount: '5741'
+ht-degree: 96%
 
 ---
 
@@ -228,7 +228,7 @@ Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTR
 
 ### Suchen nach digitalen Assets in der Inhaltssuche beim Erstellen von Web-Seiten {#content-finder}
 
-Autoren können mit der Inhaltssuche das DAM-Repository nach den relevanten Assets durchsuchen und die Assets auf den von ihnen erstellten Web-Seiten verwenden. Autoren können auch die Funktion „Connected Assets“ verwenden, um nach Assets zu suchen, die in einer Remote-Implementierung von [!DNL Experience Manager] verfügbar sind. Autoren können diese Assets dann auf Webseiten in einer lokalen [!DNL Experience Manager]-Implementierung verwenden. Siehe [Remote-Assets verwenden](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
+Autoren können mit der Inhaltssuche das DAM-Repository nach den relevanten Assets durchsuchen und die Assets auf den von ihnen erstellten Web-Seiten verwenden. Autoren können auch die Funktion „Connected Assets“ verwenden, um nach Assets zu suchen, die in einer Remote-Bereitstellung von [!DNL Experience Manager] verfügbar sind. Autoren können diese Assets dann auf Webseiten in einer lokalen [!DNL Experience Manager]-Bereitstellung verwenden. Siehe [Remote-Assets verwenden](/help/assets/use-assets-across-connected-assets-instances.md#use-remote-assets).
 
 ### Suchen nach Sammlungen {#collections}
 
@@ -386,7 +386,7 @@ Zur Verbesserung der Erkennungsgeschwindigkeit bietet [!DNL Experience Manager A
 
 Sie können [!DNL Experience Manager] so konfigurieren, dass der Text aus den Assets extrahiert wird, wenn Benutzer Assets wie PSD- oder PDF-Dateien hochladen. [!DNL Experience Manager] indiziert den extrahierten Text und hilft Benutzern, diese Assets basierend auf dem extrahierten Text zu suchen. Siehe [Hochladen von Assets](/help/assets/manage-assets.md#uploading-assets).
 
-Wenn die Textextraktion für Ihre Implementierung zu ressourcenintensiv wird, sollten Sie [die Textextraktion deaktivieren](https://helpx.adobe.com/de/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
+Wenn die Textextraktion für Ihre Bereitstellung zu ressourcenintensiv wird, sollten Sie [die Textextraktion deaktivieren](https://helpx.adobe.com/de/experience-manager/kb/Disable-binary-text-extraction-to-optimize-Lucene-indexing-AEM.html).
 
 ### Benutzerdefinierte Prädikate zum Filtern von Suchergebnissen {#custompredicates}
 
@@ -419,6 +419,10 @@ Mit den in [!DNL Experience Manager] gesuchten Assets können Sie Folgendes tun:
 * Ein oder mehrere Assets herunterladen.
 * Desktop-Aktionen verwenden, um die Assets im Desktop-Programm zu öffnen.
 * Smart-Sammlungen erstellen.
+* Version erstellen
+* einen Workflow starten
+* Zuordnen oder Aufheben der Zuordnung von Assets
+* Wenden Sie mithilfe des Bedienfelds Filter an, das nach der Durchführung der Suche automatisch angezeigt wird, um die Suchergebnisse einzugrenzen.
 
 ### Sortieren von Suchergebnissen {#sort}
 
@@ -459,6 +463,18 @@ Eine Sammlung ist ein geordneter Satz von Assets, der Assets von verschiedenen S
 
 Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen Sie im Bedienfeld **[!UICONTROL Filter]** die Option **[!UICONTROL Dateien]** und klicken Sie auf **[!UICONTROL Smart-Sammlung speichern]**. Siehe [Verwalten von Sammlungen](/help/assets/manage-collections.md).
 
+### Version erstellen {#create-version}
+
+Erstellen Sie eine Version für die Assets, die in den Suchergebnissen angezeigt werden. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Version]**. Fügen Sie eine optionale Bezeichnung oder einen Kommentar hinzu und klicken Sie auf **[!UICONTROL Erstellen]**. Sie können auch mehrere Assets auswählen und gleichzeitig Versionen für sie erstellen.
+
+### Workflow erstellen {#create-workflow}
+
+Ähnlich wie bei der Funktion &quot;Version erstellen&quot;können Sie auch einen Workflow für die Assets erstellen, die in den Suchergebnissen angezeigt werden. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Workflow]**. Wählen Sie das Workflow-Modell aus, geben Sie einen Titel für den Workflow an und klicken Sie auf **[!UICONTROL Starten]**.
+
+### Zuordnen und Aufheben der Zuordnung von Assets {#relate-unrelate-assets}
+
+Ordnen Sie Assets zu, die in den Suchergebnissen angezeigt werden, und heben Sie deren Zuordnung auf. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Relation]** oder **[!UICONTROL Nicht zuordnen]**.
+
 ## Unerwartete Suchergebnisse und Probleme {#unexpected-results}
 
 | Fehler, Probleme, Symptome | Möglicher Grund | Mögliche Lösung oder Verständnis des Problems |
@@ -468,7 +484,7 @@ Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen 
 | Nicht verwandte oder teilweise verwandte Suchergebnisse. | Das Suchverhalten ändert sich beim intelligenten Tagging. | Verstehen Sie, [wie sich die Suche nach dem intelligenten Tagging ändert](#withsmarttags). |
 | Keine Vorschläge zur automatischen Vervollständigung von Assets. | Neu hochgeladene Assets wurden noch nicht indiziert. Die Metadaten sind nicht sofort als Vorschläge verfügbar, wenn Sie mit der Eingabe eines Suchbegriffs in der Omnisearch-Leiste beginnen. | [!DNL Experience Manager] erstellt erst nach dem Ablauf eines Timeout-Zeitraums (standardmäßig eine Stunde) im Hintergrund einen Index der Metadaten für alle neu hochgeladenen oder aktualisierten Assets und fügt die Metadaten der Liste der Vorschläge hinzu. |
 | Keine Suchergebnisse. | <ul><li>Es gibt keine Assets, die Ihrer Abfrage entsprechen. </li><li> Vor der Suchabfrage wurde ein Leerzeichen hinzugefügt. </li><li> Ein nicht unterstütztes Metadatenfeld enthält das Keyword, nach dem Sie suchen.</li><li> Die Suche erfolgte während der Auszeit eines Assets. </li></ul> | <ul><li>Suchen Sie mit einem anderen Keyword. Alternativ können Sie intelligentes Tagging oder die Ähnlichkeitssuche verwenden, um die Suchergebnisse zu verbessern. </li><li>[Bekannte Einschränkung](#limitations).</li><li>Es werden nicht alle Metadatenfelder bei Suchvorgängen berücksichtigt. Weitere Informationen finden Sie unter [Suchbereich](#scope).</li><li>Suchen Sie später oder ändern Sie die Ein- und Auszeit für die gewünschten Assets.</li></ul> |
-| Suchfilter oder Prädikat ist nicht verfügbar. | <ul><li>Der Suchfilter ist nicht konfiguriert.</li><li>Er steht Ihren Anmeldedaten nicht zur Verfügung.</li><li>(Weniger wahrscheinlich) Die Suchoptionen sind in der von Ihnen verwendeten Implementierung nicht angepasst.</li></ul> | <ul><li>Wenden Sie sich an den Administrator, um zu prüfen, ob die Suchanpassungen verfügbar sind oder nicht.</li><li>Wenden Sie sich an den Administrator, um zu prüfen, ob Ihr Konto über die Rechte/Berechtigungen zur Verwendung der Anpassung verfügt.</li><li>Wenden Sie sich an den Administrator, und überprüfen Sie die verfügbaren Anpassungen für die von Ihnen verwendete [!DNL Assets]-Implementierung.</li></ul> |
+| Suchfilter oder Prädikat ist nicht verfügbar. | <ul><li>Der Suchfilter ist nicht konfiguriert.</li><li>Er steht Ihren Anmeldedaten nicht zur Verfügung.</li><li>(Weniger wahrscheinlich) Die Suchoptionen sind in der von Ihnen verwendeten Bereitstellung nicht angepasst.</li></ul> | <ul><li>Wenden Sie sich an den Administrator, um zu prüfen, ob die Suchanpassungen verfügbar sind oder nicht.</li><li>Wenden Sie sich an den Administrator, um zu prüfen, ob Ihr Konto über die Rechte/Berechtigungen zur Verwendung der Anpassung verfügt.</li><li>Wenden Sie sich an den Administrator, und überprüfen Sie die verfügbaren Anpassungen für die von Ihnen verwendete [!DNL Assets]-Bereitstellung.</li></ul> |
 | Bei der Suche nach visuell ähnlichen Bildern fehlt ein erwartetes Bild. | <ul><li>Bild ist in [!DNL Experience Manager] nicht verfügbar.</li><li>Bild ist nicht indiziert. In der Regel, wenn es kürzlich hochgeladen wurde.</li><li>Bild ist nicht mit Smart-Tags versehen.</li></ul> | <ul><li>Fügen Sie das Bild zu [!DNL Assets] hinzu.</li><li>Wenden Sie sich an Ihren Administrator, um das Repository erneut zu indizieren. Stellen Sie außerdem sicher, dass Sie den entsprechenden Index verwenden.</li><li>Wenden Sie sich an Ihren Administrator, um die relevanten Assets mit einem Smart-Tag zu versehen.</li></ul> |
 | Bei der Suche nach visuell ähnlichen Bildern wird ein irrelevantes Bild angezeigt. | Verhalten der visuellen Suche. | [!DNL Experience Manager] zeigt so viele potenziell passende Assets wie möglich an. Weniger relevante Bilder werden den Ergebnissen hinzugefügt, jedoch mit einem niedrigeren Such-Ranking. Die Qualität der Treffer und die Relevanz der gefundenen Assets nehmen ab, je weiter Sie nach unten scrollen. |
 | Bei Auswahl und Verwendung der Suchergebnisse werden nicht alle gesuchten Assets verarbeitet. | Mit der Option [!UICONTROL Alle auswählen] werden nur die ersten 100 Suchergebnisse in der Kartenansicht und die ersten 200 Suchergebnisse in der Listenansicht ausgewählt. |  |
