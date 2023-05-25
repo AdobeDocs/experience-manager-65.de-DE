@@ -8,10 +8,10 @@ breadcrumb-title: Entwickleranleitung
 user-guide-description: In dieser Anleitung wird beschrieben, wie Sie Ihre AEM-Instanz erstellen.
 feature: Developing
 role: Developer
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
-source-wordcount: '1285'
-ht-degree: 99%
+source-wordcount: '1296'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +33,7 @@ ht-degree: 99%
    + [Beitragen zu AEM](contributing-to-cq.md)
    + [Sicherheit](security.md)
    + [Referenzmaterialien](reference-materials.md)
-   + [Erstellen einer voll funktionsfähigen Website (klassische Benutzeroberfläche)](website.md)
+   + [Erstellen einer vollständig vorgestellten Website (klassische Benutzeroberfläche)](website.md)
    + [Designs und der Designer (klassische Benutzeroberfläche)](designer.md)
    + [Migration zur Touch-optimierten Benutzeroberfläche](/help/sites-developing/touch-ui-migration.md)
 + Plattform{#platform}
@@ -142,6 +142,8 @@ ht-degree: 99%
       + [Verwalten von GraphQL-Endpunkten](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
       + [Verwenden der GraphiQL-IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Persistierte Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [Optimieren von GraphQL-Abfragen](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
+      + [Aktualisieren von Inhaltsfragmenten für optimierte GraphQL-Filterung](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Authentifizierung für AEM-GraphQL-Remote-Abfragen in Inhaltsfragmenten](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [AEM-GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und Abfragen](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + Hybride und SPA-Entwicklung mit AEM{#spas}

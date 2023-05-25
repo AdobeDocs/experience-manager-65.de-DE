@@ -1,18 +1,18 @@
 ---
-title: Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen
-description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
+title: Verwendung von GraphQL mit AEM - Beispielinhalt und Abfragen
+description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden können, um Inhalte Headless bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
-source-git-commit: 85f8da2a30e1bb5b78cbb36cd9b79939dd913251
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
 source-wordcount: '1586'
-ht-degree: 97%
+ht-degree: 76%
 
 ---
 
 # Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
-Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
+Erfahren Sie, wie Sie GraphQL mit AEM verwenden können, um Inhalte Headless bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 
 >[!NOTE]
 >
@@ -23,7 +23,7 @@ Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um Inhalte „headless“ berei
 >* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
 
-Um mit GraphQL-Abfragen zu beginnen und wie sie mit AEM-Inhaltsfragmenten funktionieren, ist es hilfreich, einige praktische Beispiele zu sehen.
+Für die ersten Schritte mit GraphQL-Abfragen und deren Funktionsweise mit AEM Inhaltsfragmenten ist es hilfreich, einige praktische Beispiele anzuzeigen.
 
 Sehen Sie dazu:
 
@@ -38,7 +38,7 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 
 >[!NOTE]
 >
->Abhängig von Ihrer Instanz können Sie direkt auf die in der [AEM-GraphQL-API enthaltene GraphiQL-Schnittstelle](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) zugreifen, um Abfragen zu senden und zu testen.
+>Je nach Instanz können Sie direkt auf die [Die mit AEM GraphQL-API enthaltene Grafik-QL-Schnittstelle](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) zum Senden und Testen von Abfragen.
 >
 >Beispiel: `http://localhost:4502/content/graphiql.html`
 
@@ -48,11 +48,11 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 
 ### Beispielabfrage – Alle verfügbaren Schemata und Datentypen {#sample-all-schemes-datatypes}
 
-Dadurch werden alle `types` für alle verfügbaren Schemata zurückgegeben.
+Diese Beispielabfrage gibt alle `types` für alle verfügbaren Schemas.
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   __schema {
     types {
@@ -65,7 +65,7 @@ Dadurch werden alle `types` für alle verfügbaren Schemata zurückgegeben.
 
 **Beispielergebnis**
 
-```xml
+```json
 {
   "data": {
     "__schema": {
@@ -141,10 +141,10 @@ Dadurch werden alle `types` für alle verfügbaren Schemata zurückgegeben.
 
 ### Beispielabfrage – Alle Informationen zu allen Städten {#sample-all-information-all-cities}
 
-Um alle Informationen zu allen Städten abzurufen, können Sie die grundlegende Abfrage verwenden:
+Um alle Informationen über alle Städte abzurufen, können Sie die grundlegende Abfrage verwenden:
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   cityList {
     items
@@ -152,9 +152,9 @@ Um alle Informationen zu allen Städten abzurufen, können Sie die grundlegende 
 }
 ```
 
-Bei der Ausführung erweitert das System die Abfrage automatisch um alle Felder:
+Bei Ausführung erweitert das System die Abfrage automatisch, um alle Felder einzuschließen:
 
-```xml
+```graphql
 {
   cityList {
     items {
@@ -169,7 +169,7 @@ Bei der Ausführung erweitert das System die Abfrage automatisch um alle Felder:
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -224,11 +224,11 @@ Bei der Ausführung erweitert das System die Abfrage automatisch um alle Felder:
 
 ### Beispielabfrage – Namen aller Städte {#sample-names-all-cities}
 
-Dies ist eine unkomplizierte Abfrage, um den `name`aller Einträge im `city`-Schema zurückzugeben.
+Diese Beispielabfrage ist eine einfache Abfrage, um die `name`aller Einträge in `city`Schema.
 
 **Beispielabfrage**
 
-```xml
+```xmgraphqll
 query {
   cityList {
     items {
@@ -240,7 +240,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -274,11 +274,11 @@ query {
 
 ### Beispielabfrage – ein Einzelstadtfragment {#sample-single-specific-city-fragment}
 
-Dies ist eine Abfrage, um die Details eines einzelnen Fragmenteintrags an einem bestimmten Speicherort im Repository zurückzugeben.
+Diese Beispielabfrage ist eine Abfrage, um die Details eines einzelnen Fragmenteintrags an einem bestimmten Speicherort im Repository zurückzugeben.
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   cityByPath (_path: "/content/dam/sample-content-fragments/cities/berlin") {
     item {
@@ -294,7 +294,7 @@ Dies ist eine Abfrage, um die Details eines einzelnen Fragmenteintrags an einem 
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "cityByPath": {
@@ -315,11 +315,11 @@ Dies ist eine Abfrage, um die Details eines einzelnen Fragmenteintrags an einem 
 
 ### Beispielabfrage – alle Städte mit einer gegebenen Variante {#sample-cities-named-variation}
 
-Wenn Sie eine neue Variante mit dem Namen „Berlin Centre“ (`berlin_centre`) für `city` Berlin erstellen, können Sie eine Abfrage verwenden, um Details zur Variante zurückzugeben.
+Wenn Sie eine Variante mit dem Namen &quot;Berlin Center&quot;erstellen (`berlin_centre`), für die `city` Berlin können Sie eine Abfrage verwenden, um Details der Variante zurückzugeben.
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   cityList (variation: "berlin_center") {
     items {
@@ -335,7 +335,7 @@ Wenn Sie eine neue Variante mit dem Namen „Berlin Centre“ (`berlin_centre`) 
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -360,14 +360,14 @@ Wenn Sie eine neue Variante mit dem Namen „Berlin Centre“ (`berlin_centre`) 
 
 Wenn Sie:
 
-* eine Vielzahl von Tags namens `Tourism` erstellen: `Business`, `City Break`, `Holiday`
-* und sie der übergeordneten Variante verschiedener `City`-Instanzen zuweisen
+* Erstellen Sie verschiedene Tags namens `Tourism` : `Business`, `City Break`, `Holiday`
+* und weisen diese Tags der Übergeordneten Variante verschiedener `City` Instanzen
 
 Dann können Sie eine Abfrage verwenden, um Details zu `name` und `tags` aller Einträge mit dem Tag „Städtereisen“ im Schema `city` herauszugeben.
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   cityList(
     includeVariations: true,
@@ -383,7 +383,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -414,7 +414,7 @@ Unter Verwendung der Struktur der verschachtelten Fragmente gibt diese Abfrage d
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   companyList {
     items {
@@ -443,7 +443,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -538,11 +538,11 @@ query {
 
 ### Beispielabfrage – Alle Personen mit dem Namen „Jobs“ oder „Smith“ {#sample-all-persons-jobs-smith}
 
-Dadurch werden alle `persons` mit dem Namen `Jobs`oder `Smith` gefiltert.
+Diese Beispielabfrage filtert alle `persons` für alle, die über einen Namen verfügen `Jobs`oder `Smith`.
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -567,7 +567,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -592,11 +592,11 @@ query {
 
 ### Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben  {#sample-all-persons-not-jobs}
 
-Dadurch werden alle `persons` mit dem Namen `Jobs`oder `Smith` gefiltert.
+Diese Beispielabfrage filtert alle `persons` für alle, die über einen Namen verfügen `Jobs`oder `Smith`.
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   personList(filter: {
     name: {
@@ -618,7 +618,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "personList": {
@@ -663,7 +663,7 @@ Alle `adventures`, bei denen `_path` mit einem bestimmten Präfix (`/content/dam
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   adventureList(
     filter: {
@@ -685,7 +685,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "adventureList": {
@@ -702,13 +702,13 @@ query {
 }
 ```
 
-### Beispielabfrage – Alle Städte in Deutschland oder der Schweiz mit einer Einwohnerzahl zwischen 400.000 und 999.999 {#sample-all-cities-d-ch-population}
+### Beispielabfrage - Alle Städte in Deutschland oder der Schweiz mit einer Bevölkerung von 400000 bis 999999 {#sample-all-cities-d-ch-population}
 
 Hier wird eine Kombination von Feldern gefiltert. Ein `AND` (implizit) wird verwendet, um den `population`-Bereich auszuwählen, während ein `OR` (explizit) zur Auswahl der erforderlichen Städte verwendet wird.
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     population: {
@@ -744,7 +744,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -771,7 +771,7 @@ Diese Abfrage durchsucht alle Städte mit `SAN` im Namen, unabhängig von der Gr
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     name: {
@@ -795,7 +795,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -822,7 +822,7 @@ Diese Abfrage filtert ein Array nach einem Element (`city:na`), das mindestens e
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -846,7 +846,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -880,7 +880,7 @@ Diese Abfrage filtert nach einem exakten Array-Wert.
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   cityList(filter: {
     categories: {
@@ -906,7 +906,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "cityList": {
@@ -932,7 +932,7 @@ Diese Abfrage veranschaulicht die Filterung nach `person` von `name` „Smith“
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -964,7 +964,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -998,7 +998,7 @@ Diese Abfrage veranschaulicht die Filterung von drei verschachtelten Fragmenten 
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   companyList(filter: {
     employees: {
@@ -1040,7 +1040,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "companyList": {
@@ -1090,7 +1090,7 @@ Diese Abfrage veranschaulicht die Filterung von drei verschachtelten Fragmenten 
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   awardList(filter: {
       id: {
@@ -1117,7 +1117,7 @@ query {
 
 **Beispielergebnisse**
 
-```xml
+```json
 {
   "data": {
     "awardList": {
@@ -1146,7 +1146,7 @@ query {
 
 ## Beispielabfragen unter Verwendung des WKND-Projekts {#sample-queries-using-wknd-project}
 
-Diese Beispielabfragen basieren auf dem WKND-Projekt. Es gilt:
+Diese Beispielabfragen basieren auf dem WKND-Projekt. Sie hat Folgendes:
 
 * Inhaltsfragmentmodelle verfügbar unter:
    `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
@@ -1156,7 +1156,7 @@ Diese Beispielabfragen basieren auf dem WKND-Projekt. Es gilt:
 
 >[!NOTE]
 >
->Da die Ergebnisse sehr umfangreich sein können, werden sie hier nicht wiedergegeben.
+>Da die Ergebnisse umfangreich sein können, werden sie hier nicht reproduziert.
 
 ### Beispielabfrage für alle Inhaltsfragmente eines bestimmten Modells mit den angegebenen Eigenschaften {#sample-wknd-all-model-properties}
 
@@ -1167,7 +1167,7 @@ Diese Beispielabfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   articleList {
     items {
@@ -1187,7 +1187,7 @@ Diese Abfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   adventureList {
     items {
@@ -1244,7 +1244,7 @@ Diese Abfrage untersucht:
 Diese Beispielabfrage untersucht:
 
 * Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
-   * Darin alle Content-Formate:
+   * innerhalb dieses Pfads alle Inhaltsformate:
       * HTML
       * Markdown
       * Nur Text
@@ -1252,7 +1252,7 @@ Diese Beispielabfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures") {
     item {
@@ -1278,7 +1278,7 @@ Diese Beispielabfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   adventureByPath(_path: "/content/dam/wknd/en/adventures/riverside-camping-australia/riverside-camping-australia") {
     item {
@@ -1298,7 +1298,7 @@ Diese Beispielabfrage untersucht:
 Diese Abfrage untersucht:
 
 * Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
-   * Darin den Pfad und Autor des referenzierten (verschachtelten) Fragments
+   * in diesem Pfad den Pfad und den Autor des referenzierten (verschachtelten) Fragments
 
 >[!NOTE]
 >
@@ -1393,7 +1393,7 @@ Diese Abfragen untersuchen:
 
 Die folgende Abfrage gibt alle Inhaltsreferenzen mit `_references` zurück:
 
-```xml
+```graphql
 {
   bookmarkList {
      _references {
@@ -1427,13 +1427,13 @@ Die folgende Abfrage gibt alle Inhaltsreferenzen mit `_references` zurück:
 
 #### Beispielabfrage für mehrere Inhaltsfragmente mit Anhängen {#sample-wknd-multiple-fragments-attachments}
 
-Die folgende Abfrage gibt alle `attachments` zurück – ein bestimmtes Feld (Untergruppe) vom Typ `content-reference`:
+Die folgende Abfrage gibt alle `attachments` - ein spezifisches Feld (Untergruppe) des Typs `content-reference`:
 
 >[!NOTE]
 >
 >Das Feld `attachments` hat den Datentyp `content-reference`, wobei verschiedene Formen ausgewählt sind.
 
-```xml
+```graphql
 {
   bookmarkList {
     items {
@@ -1477,7 +1477,7 @@ Diese Abfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   bookmarkByPath(_path: "/content/dam/wknd/en/bookmarks/skitouring") {
     item {
@@ -1515,11 +1515,11 @@ Diese Abfrage untersucht:
 Diese Abfrage untersucht:
 
 * Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
-   * Darin die Daten im Zusammenhang mit der Variante: `variation1`
+   * innerhalb dieses Pfads die mit der Variante zusammenhängenden Daten: `variation1`
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   articleByPath (_path: "/content/dam/wknd/en/magazine/alaska-adventure/alaskan-adventures", variation: "variation1") {
     item {
@@ -1544,7 +1544,7 @@ Diese Abfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   articleList (variation: "variation1") {
     items {
@@ -1569,7 +1569,7 @@ Diese Abfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 query {
   articleList(
     includeVariations: true  ){
@@ -1596,7 +1596,7 @@ Diese Abfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 {
   articleList(
     includeVariations: true,
@@ -1625,7 +1625,7 @@ Diese Abfrage untersucht:
 
 **Beispielabfrage**
 
-```xml
+```graphql
 { 
   articleList (_locale: "fr") {
     items {
@@ -1652,7 +1652,7 @@ Die Abfragen basieren auf der folgenden Struktur, die Folgendes verwendet:
 
 ### Beispielmodelle für Inhaltsfragmente (Schemata) {#sample-content-fragment-models-schemas}
 
-Für die Beispielabfragen verwenden wir die folgenden Inhaltsmodelle und ihre Wechselbeziehungen (Verweise ->):
+Verwenden Sie für die Beispielabfragen die folgenden Inhaltsmodelle und ihre Beziehungen (Referenzen ->):
 
 * [Unternehmen](#model-company)
 > [Person](#model-person)
@@ -1666,7 +1666,7 @@ Die grundlegenden Felder, die das Unternehmen definieren, sind:
 
 | Feldname | Datentyp | Verweis |
 |--- |--- |--- |
-| Unternehmensname | Einzeilentext |  |
+| Unternehmensname | Einzelzeilentext |  |
 | CEO | Fragmentreferenz (Einzelfeld) | [Person](#model-person) |
 | Mitarbeiter | Fragmentreferenz (Mehrfeld) | [Person](#model-person) |
 
@@ -1676,8 +1676,8 @@ Die Felder, die eine Person definieren, die auch ein Mitarbeiter sein kann:
 
 | Feldname | Datentyp | Verweis |
 |--- |--- |--- |
-| Name | Einzeilentext |  |
-| Vorname | Einzeilentext |  |
+| Name | Einzelzeilentext |  |
+| Vorname | Einzelzeilentext |  |
 | Auszeichnungen | Fragmentreferenz (Mehrfeld) | [Auszeichnung](#model-award) |
 
 #### Auszeichnung {#model-award}
@@ -1686,8 +1686,8 @@ Die Felder, die eine Auszeichnung definieren, sind:
 
 | Feldname | Datentyp | Verweis |
 |--- |--- |--- |
-| Kürzel/Kennung | Einzeilentext |  |
-| Titel | Einzeilentext |  |
+| Kürzel/Kennung | Einzelzeilentext |  |
+| Titel | Einzelzeilentext |  |
 
 #### Stadt {#model-city}
 
@@ -1695,8 +1695,8 @@ Die Felder zur Definition einer Stadt sind:
 
 | Feldname | Datentyp | Verweis |
 |--- |--- |--- |
-| Name | Einzeilentext |  |
-| Land | Einzeilentext |  |
+| Name | Einzelzeilentext |  |
+| Land | Einzelzeilentext |  |
 | Einwohnerzahl | Zahl |  |
 | Kategorien | Tags |  |
 
