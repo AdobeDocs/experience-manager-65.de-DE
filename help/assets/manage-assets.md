@@ -7,9 +7,9 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
 workflow-type: tm+mt
-source-wordcount: '9970'
+source-wordcount: '9993'
 ht-degree: 80%
 
 ---
@@ -402,6 +402,9 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset mit der Tastatur anzuze
    ![Datum-/Zeitauswahl oder Verwendung von Tastaturtasten im Feld „Einschaltzeit“, um Datum und Uhrzeit der Asset-Aktivierung hinzuzufügen](assets/datepicker.png)
 
    *Abbildung: Verwenden der Datumsauswahl, um die Asset-Aktivierung zu planen.*
+
+1. Sie müssen **[!UICONTROL Einschaltzeit/Ausschaltzeit erreicht]** -Option, wenn Sie die Trigger des Replikationsagenten in den Metadateneigenschaften aktualisieren möchten.
+   ![Agenteneinstellungen](assets-dm/Agent-settings.png)
 
 1. Um das Asset nach einer bestimmten Laufzeit zu deaktivieren, wählen Sie das Datum/den Zeitpunkt mit der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]**. Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die [!DNL Assets]-Web-Oberfläche noch über die HTTP-API verfügbar.
 
