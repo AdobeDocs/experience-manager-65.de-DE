@@ -3,10 +3,10 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: efd2a41b6b53a72b941ac23386b6aa4c41c9da15
+source-git-commit: 2391eb74979b7ee9ed148763ffebf125ef09fc88
 workflow-type: tm+mt
-source-wordcount: '2683'
-ht-degree: 41%
+source-wordcount: '3475'
+ht-degree: 31%
 
 ---
 
@@ -30,7 +30,9 @@ ht-degree: 41%
 
 ## Was in [!DNL Experience Manager] 6.5.17.0 enthalten ist {#what-is-included-in-aem-6517}
 
-[!DNL Experience Manager] 6.5.17.0 umfasst neue Funktionen, wichtige von Kunden angeforderte Verbesserungen, Fehlerbehebungen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](#install) auf [!DNL Experience Manager] 6.5. <!-- UPDATE FOR EACH NEW RELEASE -->
+[!DNL Experience Manager] 6.5.17.0 umfasst neue Funktionen, wichtige von Kunden angeforderte Verbesserungen, Fehlerbehebungen sowie Leistungs-, Stabilitäts- und Sicherheitsverbesserungen, die seit der ersten Verfügbarkeit von 6.5 im April 2019 veröffentlicht wurden. [Installieren Sie dieses Service Pack](#install) auf [!DNL Experience Manager] 6.5.
+
+<!-- UPDATE FOR EACH NEW RELEASE -->
 
 <!-- Some of the key features and improvements are the following:
 
@@ -46,6 +48,13 @@ Einige der wichtigsten Funktionen und Verbesserungen in dieser Version sind:
    Sie müssen nicht zum Asset-Speicherort navigieren und seine Eigenschaften anzeigen, um diese Vorgänge durchzuführen.
 * **Dynamic Media _Momentaufnahme_**- Experimentieren Sie mit Testbildern oder Dynamic Media-URLs, um die Ausgabe verschiedener Bildmodifikatoren anzuzeigen, und optimieren Sie die intelligente Bildbearbeitung für Dateigröße (mit WebP- und AVIF-Bereitstellung), Netzwerkbandbreite und Gerätepixelverhältnis. Siehe [Dynamic Media-Schnappschuss](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 * **DASH-Streaming mit Dynamic Media** - Neue Protokollunterstützung (DASH - Dynamic Adaptive Streaming über HTTP) für adaptives Streaming in der Dynamic Media-Videobereitstellung (mit aktivierter CMAF). Jetzt für alle Regionen verfügbar, [aktiviert über ein Support-Ticket](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
+
+* **Integration des adaptiven Forms auf AEM Site-Seiten**: Nahtloses Erstellen digitaler Registrierungserlebnisse durch Nutzung adaptiver Forms-Komponenten im AEM Sites-Editor mit: - Adaptive Forms-Container- und Adaptive Forms - Embed(v2)-Komponenten.
+* **Unterstützung von reCAPTCHA Enterprise in AEM Forms**: Unterstützung für reCAPTCHA Enterprise in AEM Forms hinzugefügt, die zusätzlich zur Unterstützung von Google reCAPTCHA v2 einen verbesserten Schutz vor betrügerischer Aktivität und Spam bietet.
+* **Unterstützung von Adobe Acrobat Sign für Behörden mit AEM Forms**: Sichere und konforme Integration von AEM Forms mit Adobe Sign für Behörden (FedRAMP-konform).
+* **Salesforce-Integration mit AEM Forms für den Datenaustausch aktivieren**: OAuth 2.0-Client-Anmeldeinformationen fließen zur sicheren und direkten Anwendungsauthentifizierung und -autorisierung in der Salesforce-Anwendung, um eine nahtlose Kommunikation zwischen Anwendungen ohne Benutzerbeteiligung zu ermöglichen.
+* **Optimierung und verbesserte Funktionalität der Workflow-Engine**: Die Minimierung der Anzahl der Workflow-Instanzen erhöht die Leistung der Workflow-Engines. Zusätzlich zu `COMPLETED` und `RUNNING` -Statuswerte unterstützt der Workflow auch drei neue Statuswerte: `ABORTED`, `SUSPENDED`und `FAILED`.
+* Das ZPL-Ausgabeformat unterstützt unterschiedliche Papierformate wie Brief, A4 und A5.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -95,9 +104,41 @@ Einige der wichtigsten Funktionen und Verbesserungen in dieser Version sind:
 
 ## [!DNL Forms]{#forms-6517}
 
->[!NOTE]
->
->Fehlerbehebungen in [!DNL Experience Manager] Forms wird eine Woche nach der geplanten Bereitstellung über ein separates Add-On-Paket bereitgestellt [!DNL Experience Manager] Veröffentlichungsdatum des Service Packs. In diesem Fall werden die Add-On-Pakete am Donnerstag, 1. Juni 2023 veröffentlicht. Darüber hinaus wird diesem Abschnitt eine Liste mit Fehlerbehebungen und Verbesserungen für Forms hinzugefügt.
+* Wenn ein Benutzer auf AEM 6.5.16.0 Service Pack aktualisiert, wird die angehängte Datei nicht ordnungsgemäß abgerufen. (FORMS-8906)
+* Nach der Aktualisierung auf AEM 6.5.15.0 Service Pack funktionieren die HTML5-Formulare im Edge-Browser mit dem IE-Kompatibilitätsmodus nicht oder werden nicht ordnungsgemäß geladen. (FORMS-8526, FORMS-8523)
+* Wenn ein Benutzer AEM 6.5.16.0 Service Pack anwendet, kann der Regeleditor nicht geöffnet werden. (FORMS-8290)
+* Wenn die maximale Anzahl von Ziffern-Validierungen auf eine Komponente vom Typ &quot;Numerisches Feld&quot;angewendet wird, schlägt dies fehl. (FORMS-7938)
+* Beim Erstellen interaktiver Kommunikationsanweisungen wird die Diagrammkomponente im PDF nicht ordnungsgemäß generiert. (FORMS-7827, FORMS-8297)
+* Die Java-Speicherbereinigung kann den alten Generieren-Heap auf einem AEM Forms-OSGi-Server nicht löschen. (FORMS-8207)
+* Wenn ein Benutzer auf AEM 6.5.16.0 Service Pack aktualisiert, fehlen die Eigenschaften der CRX-Metadaten nach der Übermittlung. (FORMS-8205)
+* Wenn ein Benutzer die Komponente für die Datumsauswahl in einem adaptiven Formular deaktiviert, kann sie weiterhin bearbeitet werden. (FORMS-7804)
+* Wenn ein Benutzer in AEM 6.5.16.0 Forms Service Pack versucht, die Richtliniensatzkoordinatoren zu bearbeiten, bleibt der Manager Document Publisher immer deaktiviert. (FORMS-7775, FORMS-8599)
+* Wenn ein Benutzer auf AEM 6.5.16.0 Service Pack aktualisiert, funktioniert die Methode &quot;GuideNode.externalize&quot;, die Strings verarbeitet, die übersetzt werden müssen, nicht mehr. (FORMS-7709)
+* Im `Assign task` Schritt: Wenn ein Benutzer die &quot;Benachrichtigungs-E-Mail senden&quot;auswählt und den Workflow aufruft, wird der Text nicht ordnungsgemäß in der empfangenen E-Mail angezeigt. Die Fragezeichen werden anstelle des Textes in der empfangenen E-Mail empfangen. (FORMS-7675)
+* Das Datensatzdokument wird teilweise lokalisiert. (FORMS-7674, FORMS-7573)
+* Ein Benutzer kann Richtliniensätze nicht bearbeiten, selbst wenn bestimmte Berechtigungen zugewiesen wurden. (FORMS-7665)
+* Wenn ein Benutzer in `forms-users` versucht, ein neues Formular zu erstellen, stürzt die AEM Forms-Instanz ab. (FORMS-7629)
+* Wenn der Benutzer in einem adaptiven Formular auf die Schaltflächen Zurücksetzen, Speichern oder Senden klickt, wird keine Nachricht auf dem Bildschirm angezeigt. (FORMS-7524)
+* Um die Leistung der PDFG-Konvertierung in einem AEM 6.5.16.0 Service Pack zu verbessern, wird das Schlafintervall konfigurierbar gemacht. (FORMS-6752)
+* Die Umschalter-Option bleibt gleich, aber die Sichtbarkeit des Felds ändert sich auch, wenn ein Benutzer den Cursor leicht zieht. (FORMS-6728)
+* Wenn der Benutzer auf AEM 6.5.15.0 Service Pack aktualisiert, funktioniert die Weiterleitung nicht mehr, wenn ein adaptives Formular in Internet Explorer wiedergegeben wird. (FORMS-6725)
+* Das PAC 2021-Tool für alle Hintergrundobjekte in einem PDF-Formular, das von einem AEM Designer erstellt wurde, gibt einen Fehler als `Path object not tagged`. (FORMS-6707)
+* Wenn ein Benutzer einen Filter im Posteingang anwendet, wird ein `NullPointerException` Fehler. (FORMS-6706)
+* Wenn ein Benutzer eine Vorlagendatei (.tds) mit referenzierten Fragmenten importiert, stürzt der AEM Designer ab.  (FORMS-6702)
+* Wenn der Benutzer mit dem Output-Dienst in AEM Forms Designer 6.5 eine statische PDF erstellt, tritt ein Fehler auf, wenn `OCCD (optional content configuration dictionary) contains AS key`. (FORMS-6691)
+* Wenn der Benutzer einen einfachen Workflow erstellt und eine einfache Variable hinzufügt, wird ein `set variable mapping` Fehler auftritt. (FORMS-5819)
+* Wenn ein Benutzer versucht, eine PDF mit dem Output-Dienst zu generieren, obwohl er als `PDF/A-1a`, eine Konformitätsprüfung mit der`Preflight` -Dienst schlägt fehl. (LC-3920837)
+* Nach der Installation eines AEM 6.5.16.0 Service Packs kann ein AEM Designer nicht geöffnet werden. (LC-3921000)
+* Wenn ein Benutzer ein Kontrollkästchen und ein Optionsfeld hinzufügt, wird die Struktur eines Tag-Baums nicht gemäß PDF-Standards generiert. (LC-3920838)
+* Wenn ein Benutzer über den Ausgabedienst eine statische PDF generiert, indem er die Schriften einbettet und unterteilt, enthält die resultierende PDF nur die eingebetteten Schriften. (LC-3920963)
+* Der hebräische Text wird im RTL-Format falsch angezeigt. (LC-3919632)
+* Wenn ein Benutzer auf AEM 6.5.16.0 Service Pack auf einem JBoss Turnkey-Server aktualisiert, kann der Signature-Dienst nicht aufgerufen werden. Der aufgetretene Fehler lautet: `java.lang.ClassCastException: com.adobe.xfa.TextNode cannot be cast to com.adobe.xfa.Element`. (FORMS-7833)
+* Nach der Aktualisierung auf AEM 6.5.14.0 Service Pack funktionieren die Workbench-Prozesse zum Verschieben eines CRX-Knotens von einem Speicherort an einen anderen nicht. Der Fehler tritt auf als `ALC-CRX-30000-000: com.adobe.ep.crx.client.exceptions.CRCException: ALC-CRX-030-000-[Internal Server Error]`.(FORMS-7713)
+* Wenn ein Benutzer auf AEM 6.5.16.0 Service Pack aktualisiert, wird die `Usage Rights` nicht zutrifft. (FORMS-7892)
+* Wenn ein Benutzer versucht, ein PDF-Dokument zu generieren, schlägt die PDF/A-1b-Validierung fehl. (FORMS-7615)
+* Wenn ein Benutzer auf die `Configure` -Option für die `Form Container` -Komponente reagiert der Browser nicht mehr (FORMS-7605).
+* Wenn ein Benutzer auf das AEM Forms 6.5.16.0 Service Pack aktualisiert und versucht, die `LicenseType` nach `Production`, werden die Änderungen nicht übernommen. (FORMS-7594)
+* Wenn ein Benutzer versucht, einen LCA-Prozess mit einer PDF aufzurufen, die die `Chinese Full Width Characters`, tritt bei der `ValidateForm` Prozess. (FORMS-7464)
 
 ## Integrationen{#integrations-6517}
 
@@ -351,8 +392,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
    "refresh": true
    ```
 
-* In AEM Forms funktioniert das POP3-Protokoll nicht mit E-Mail-Endpunkten für Microsoft® Office 365.
-* auf der JBoss® 7.1.4-Plattform, wenn der Benutzer AEM 6.5.16.0 Service Pack installiert, `adobe-livecycle-jboss.ear` Die Bereitstellung schlägt fehl.
+* auf der JBoss® 7.1.4-Plattform, wenn der Benutzer AEM Service Pack 6.5.16.0 oder höher installiert, `adobe-livecycle-jboss.ear` Die Bereitstellung schlägt fehl.
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 

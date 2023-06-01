@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von Datenquellen
 seo-title: Configure data sources
-description: Erfahren Sie, wie Sie verschiedene Arten von Datenquellen konfigurieren und das Erstellen von Formulardatenmodellen nutzen können.
+description: Erfahren Sie, wie Sie verschiedene Arten von Datenquellen konfigurieren und nutzen können, um Formulardatenmodelle zu erstellen.
 seo-description: Learn how to configure different types of data sources and leverage to create form data models.
 uuid: 12360c8c-b596-4f9b-837a-10a8ff5c7448
 topic-tags: integration
@@ -10,10 +10,10 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
-workflow-type: ht
-source-wordcount: '2042'
-ht-degree: 100%
+source-git-commit: db4b432a95856302eb2e80b6386eee557d6afd17
+workflow-type: tm+mt
+source-wordcount: '2090'
+ht-degree: 84%
 
 ---
 
@@ -27,35 +27,36 @@ Mit der AEM Forms-Datenintegration können Sie unterschiedliche Datenquellen kon
 * AEM-Benutzerprofil 
 * RESTful-Webservices
 * SOAP-basierte Webservices
-* OData-Services
+* OData-Services  
 
-Die Datenintegration unterstützt standardmäßig die Authentifizierungstypen OAuth2.0, Standardauthentifizierung sowie API-Schlüssel und ermöglicht die Implementierung benutzerdefinierter Authentifizierung für den Zugriff auf Webservices. RESTful-, SOAP-basierte und OData-Dienste werden in AEM-Cloud-Services, JDBC für relationale Datenbanken und der Connector für AEM-Profile dagegen in der AEM-Webkonsole konfiguriert.
+Die Datenintegration unterstützt OAuth2.0([Autorisierungscode](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldedaten](https://oauth.net/2/grant-types/client-credentials/)), Standardauthentifizierung und API-Schlüssel-Authentifizierungstypen vorkonfiguriert und ermöglicht die Implementierung benutzerdefinierter Authentifizierung für den Zugriff auf Webdienste. RESTful-, SOAP-basierte und OData-Dienste werden in AEM-Cloud-Services, JDBC für relationale Datenbanken und der Connector für AEM-Profile dagegen in der AEM-Webkonsole konfiguriert.
 
 ## Konfigurieren relationaler Datenbanken {#configure-relational-database}
 
-Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration konfigurieren. Gehen Sie folgendermaßen vor:
+Sie können relationale Datenbanken mithilfe AEM Konfiguration der Web-Konsole konfigurieren. Gehen Sie folgendermaßen vor:
 
 1. Wechseln Sie zur AEM-Web-Konsole unter `https://server:host/system/console/configMgr`.
-1. Suchen Sie die Konfiguration **[!UICONTROL Apache Sling Connection Pooled DataSource]**. Tippen Sie, um die Konfiguration im Bearbeitungsmodus zu öffnen.
+1. Suchen nach **[!UICONTROL Apache Sling Connection Pooled DataSource]** Konfiguration. Tippen Sie, um die Konfiguration im Bearbeitungsmodus zu öffnen.
 1. Geben Sie im Konfigurationsdialogfeld die Details für die Datenbank an, die Sie konfigurieren möchten, z. B.:
 
    * Name der Datenquelle
-   * Datenquellendienst-Eigenschaft, in der der Name der Datenquelle gespeichert wird
+   * Datenquellendienst-Eigenschaft, die den Namen der Datenquelle speichert
    * Java-Klassenname für den JDBC-Treiber
    * JDBC-Verbindungs-URI
-   * Benutzername und Kennwort zum Herstellen der Verbindung zum JDBC-Treiber
+   * Benutzername und Passwort zum Herstellen der Verbindung mit dem JDBC-Treiber
 
    >[!NOTE]
    >
-   >Stellen Sie sicher, dass Sie vertrauliche Informationen wie Kennwörter verschlüsseln, bevor Sie die Datenquelle konfigurieren. Gehen Sie zum Verschlüsseln wie folgt vor:
+   >Stellen Sie sicher, dass Sie vertrauliche Informationen wie Passwörter verschlüsseln, bevor Sie die Datenquelle konfigurieren. Verschlüsseln:
    >
    > 1. Wechseln Sie zu https://&#39;[server]:[port]&#39;/system/console/crypto.
    > 1. Geben Sie im Feld **[!UICONTROL Plain Text]** das Kennwort oder eine beliebige Zeichenfolge zum Verschlüsseln an und tippen Sie auf **[!UICONTROL Protect]**.
+
    >
    >Der verschlüsselte Text wird im Feld „Protected Text“ angezeigt, das Sie in der Konfiguration angeben können.
 
-1. Aktivieren Sie **[!UICONTROL Test on Borrow]** oder **[!UICONTROL Test on Return]**, um festzulegen, dass die Objekte vor der Entnahme oder bei der Rückgabe aus dem bzw. in den Pool validiert werden sollen.
-1. Geben Sie eine SQL SELECT-Abfrage in das Feld **[!UICONTROL Validation Query]** ein, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Legen Sie die für Ihre Datenbank geeignete Option fest:
+1. Aktivieren **[!UICONTROL Borgentest]** oder **[!UICONTROL Rücksendungstest]** , um anzugeben, dass die Objekte validiert werden, bevor sie geliehen oder von bzw. an den Pool zurückgegeben werden.
+1. Geben Sie eine SQL SELECT-Abfrage im Feld **[!UICONTROL Überprüfungsabfrage]** ein, um Verbindungen aus dem Pool zu validieren. Die Abfrage muss mindestens eine Zeile zurückgeben. Legen Sie je nach Datenbank eine der folgenden Optionen fest:
 
    * SELECT 1 (MySQL und MS SQL)
    * SELECT 1 from dual (Oracle)
@@ -68,7 +69,7 @@ Sie können relationale Datenbanken mithilfe der AEM Web Console-Konfiguration k
 
 ## AEM-Benutzerprofil konfigurieren {#configure-aem-user-profile}
 
-Sie können das AEM-Benutzerprofil mithilfe der User Profile Connector-Konfiguration in der AEM-Webkonsole konfigurieren. Gehen Sie folgendermaßen vor:
+Sie können AEM Benutzerprofil mithilfe der Benutzerprofil-Connector-Konfiguration in AEM Web-Konsole konfigurieren. Gehen Sie folgendermaßen vor:
 
 1. Wechseln Sie zur AEM-Web-Console unter https://&#39;[server]:[port]&#39;system/console/configMgr.
 1. Suchen Sie nach **[!UICONTROL AEM Forms Data Integrations - User Profile Connector Configuration]** und tippen Sie darauf, um die Konfiguration im Bearbeitungsmodus zu öffnen.
@@ -108,7 +109,7 @@ Konfigurieren des Ordners für Cloud Service-Konfigurationen:
    1. Tippen Sie auf **[!UICONTROL Speichern und schließen]**, um die Konfiguration zu speichern und das Dialogfeld zu schließen.
 
 1. Tippen Sie im **[!UICONTROL Konfigurationsbrowser]** auf **[!UICONTROL Erstellen]**.
-1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen Titel für den Ordner fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
+1. Im **[!UICONTROL Konfiguration erstellen]** Dialogfeld, geben Sie einen Titel für den Ordner an und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**.
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um den für Cloud Service-Konfigurationen aktivierten Ordner zu erstellen.
 
 ## Konfigurieren von RESTful-Webservices {#configure-restful-web-services}
@@ -130,9 +131,8 @@ Gehen Sie wie folgt vor, um RESTful-Services zu konfigurieren:
       * Schema: Die von der REST-API verwendeten Übertragungsprotokolle. Die Anzahl der in der Dropdown-Liste angezeigten Schematypen hängt von den Schemas ab, die in der Swagger-Quelle definiert wurden.
       * Host: Der Domain-Name oder die IP-Adresse des Hosts, der die REST-API bereitstellt. Dies ist ein Pflichtfeld.
       * Basispfad: Das URL-Präfix für alle API-Pfade. Dies ist ein optionales Feld.\
-
          Bearbeiten Sie bei Bedarf die vorbefüllten Werte für diese Felder.
-   * Wählen Sie den Authentifizierungstyp – Ohne, OAuth2.0, Standardauthentifizierung, API-Schlüssel, benutzerdefinierte Authentifizierung oder gegenseitige Authentifizierung – für den Zugriff auf den RESTful-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
+   * Wählen Sie den Authentifizierungstyp aus: None, OAuth2.0([Autorisierungscode](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldedaten](https://oauth.net/2/grant-types/client-credentials/)), &quot;Grundlegende Authentifizierung&quot;, &quot;API-Schlüssel&quot;, &quot;Benutzerdefinierte Authentifizierung&quot;oder &quot;Gegenseitige Authentifizierung&quot;, um auf den RESTful-Dienst zuzugreifen und dementsprechend Details für die Authentifizierung bereitzustellen.
 
    Wenn Sie **[!UICONTROL API-Schlüssel]** als Authentifizierungstyp auswählen, geben Sie den Wert für den API-Schlüssel an. Der API-Schlüssel kann als Anforderungskopfzeile oder als Abfrageparameter gesendet werden. Wählen Sie eine dieser Optionen aus der Dropdown-Liste **[!UICONTROL Speicherort]** und geben Sie den Namen der Kopfzeile oder des Abfrageparameters im Feld **[!UICONTROL Parametername]** entsprechend an.
 
@@ -174,7 +174,7 @@ SOAP-basierte Webservices werden mithilfe von [WSDL-Spezifikationen (Web Service
 
    * WSDL-URL für den Webservice.
    * Service-Endpunkt. Geben Sie in diesem Feld einen Wert ein, um den in WSDL erwähnten Service-Endpunkt zu überschreiben.
-   * Wählen Sie den Authentifizierungstyp – Keine, OAuth2.0, Standardauthentifizierung, benutzerdefinierte Authentifizierung, X509-Token oder gegenseitige Authentifizierung – für den Zugriff auf den SOAP-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
+   * Wählen Sie den Authentifizierungstyp aus: None, OAuth2.0([Autorisierungscode](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldedaten](https://oauth.net/2/grant-types/client-credentials/)), &quot;Standardauthentifizierung&quot;, &quot;Benutzerdefinierte Authentifizierung&quot;, &quot;X509-Token&quot;oder &quot;Gegenseitige Authentifizierung&quot;, um auf den SOAP-Dienst zuzugreifen, und geben Sie dementsprechend die Details für die Authentifizierung an.
 
       Wenn Sie **[!UICONTROL X509-Token]** als Authentifizierungstyp verwenden, konfigurieren Sie das X509-Zertifikat. Weitere Informationen finden Sie unter [Einrichten von Zertifikaten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Geben Sie im Feld **[!UICONTROL Schlüssel-Alias]** den KeyStore-Alias für das X509-Zertifikat an. Geben Sie im Feld **[!UICONTROL Gültigkeitsdauer]** die Zeit in Sekunden an, während der die Authentifizierungsanfrage gültig bleibt. Optional können Sie den Nachrichtentext oder die Kopfzeile des Zeitstempels oder beides signieren.
@@ -185,7 +185,7 @@ Geben Sie im Feld **[!UICONTROL Schlüssel-Alias]** den KeyStore-Alias für das 
 
 ## Konfigurieren von OData-Services {#config-odata}
 
-Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Stellen Sie zum Konfigurieren eines OData-Dienstes in AEM-Cloud-Services sicher, dass Sie die Dienststamm-URL für den Service haben, und gehen Sie folgendermaßen vor:
+Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Um einen OData-Dienst in AEM-Cloud-Services zu konfigurieren, stellen Sie sicher, dass Sie über eine Dienststamm-URL für den Dienst verfügen, und führen Sie die folgenden Schritte aus:
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Stellen Si
 1. Geben Sie folgende Details für den OData-Service an:
 
    * Service-Stamm-URL für den zu konfigurierenden OData-Service.
-   * Wählen Sie den Authentifizierungstyp – Keine, OAuth2.0, Standardauthentifizierung oder benutzerdefinierte Authentifizierung – für den Zugriff auf den OData-Service aus und geben Sie dementsprechend die Details für die Authentifizierung an.
+   * Wählen Sie den Authentifizierungstyp aus: None, OAuth2.0([Autorisierungscode](https://oauth.net/2/grant-types/authorization-code/), [Client-Anmeldedaten](https://oauth.net/2/grant-types/client-credentials/)), &quot;Standardauthentifizierung&quot;oder &quot;Benutzerdefinierte Authentifizierung&quot;, um auf den OData-Dienst zuzugreifen, und geben Sie dementsprechend die Details für die Authentifizierung an.
 
    >[!NOTE]
    >
@@ -210,7 +210,7 @@ Ein OData-Service wird anhand seiner Service-Stamm-URL identifiziert. Stellen Si
 
 ## Zertifikatbasierte gegenseitige Authentifizierung für RESTful- und SOAP-Web-Services {#mutual-authentication}
 
-Wenn Sie die gegenseitige Authentifizierung für das Formulardatenmodell aktivieren, authentifizieren sowohl die Datenquelle als auch der AEM-Server, der das Formulardatenmodell ausführt, die Identität des jeweils anderen, bevor Daten freigegeben werden. Sie können die gegenseitige Authentifizierung für REST- und SOAP-basierte Verbindungen (Datenquellen) verwenden. So konfigurieren Sie die gegenseitige Authentifizierung für ein Formulardatenmodell in Ihrer AEM Forms-Umgebung:
+Wenn Sie die gegenseitige Authentifizierung für das Formulardatenmodell aktivieren, authentifizieren sowohl die Datenquelle als auch AEM Server, der das Formulardatenmodell ausführt, die Identität der anderen, bevor Daten freigegeben werden. Sie können die gegenseitige Authentifizierung für REST- und SOAP-basierte Verbindungen (Datenquellen) verwenden. So konfigurieren Sie die gegenseitige Authentifizierung für ein Formulardatenmodell in Ihrer AEM Forms-Umgebung:
 
 1. Laden Sie den privaten Schlüssel (Zertifikat) auf den [!DNL AEM Forms]-Server hoch. So laden Sie den privaten Schlüssel hoch:
    1. Melden Sie sich bei Ihrem [!DNL AEM Forms]-Server als Administrator an.

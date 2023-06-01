@@ -8,10 +8,10 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Erstellen, Verwalten, Veröffentlichen und Aktualisieren von digitalen Formularen.
 role: User
-source-git-commit: 071d7bf2e7c9ceb3328e77262cc45ed3f2e303cc
+source-git-commit: f0ffa552bd4a5b8b20a58aed7847c4de07acc4f4
 workflow-type: tm+mt
-source-wordcount: '3846'
-ht-degree: 100%
+source-wordcount: '3860'
+ht-degree: 99%
 
 ---
 
@@ -127,6 +127,7 @@ ht-degree: 100%
    + [Einführung in die AEM Forms-Datenintegration](using/data-integration.md)
    + [Konfigurieren von Datenquellen](using/configure-data-sources.md)
    + [Microsoft Dynamics-OData-Konfiguration](using/ms-dynamics-odata-configuration.md)
+   + [Salesforce-Integration mithilfe des OAuth 2.0-Client-Anmeldedatenflusses](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Erstellen des Formulardatenmodells](using/create-form-data-models.md)
    + [Arbeiten mit einem Formulardatenmodell](using/work-with-form-data-model.md)
    + [Verwenden eines Formulardatenmodells](using/using-form-data-model.md)
@@ -690,6 +691,7 @@ ht-degree: 100%
    + [CRX-Repository kann nicht wiederhergestellt werden](/help/forms/using/restore-crx-repository.md)
    + [Fehler „Dienst nicht verfügbar“ nach der Installation von AEM 6.5.15.0 Service Pack](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Installationsproblem mit dem Service Pack von AEM Forms JEE 6.5.15.0 in der JBoss Linux-Umgebung](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+   + [EAR-Bereitstellung auf JEE WebLogic Server fehlgeschlagen](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
 + Alte Dokumentation {#legacy-documentation}
    + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)
    + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](developing/compressing-decompressing-custom-dsc.md)
