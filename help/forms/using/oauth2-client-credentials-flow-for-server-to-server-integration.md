@@ -3,9 +3,9 @@ title: Salesforce-Integration mit AEM Forms mithilfe des OAuth 2.0-Client-Anmeld
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 description: Schritte zur Integration von Salesforce mit AEM Forms mithilfe des Workflows für OAuth 2.0-Client-Anmeldeinformationen
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
-source-git-commit: f03513c98455e00beef37819a5a47ba56dfa5028
+source-git-commit: cc0375f5b5616f82a73bd983a9da95225c51db99
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '502'
 ht-degree: 0%
 
 ---
@@ -40,9 +40,9 @@ Es ist erforderlich, eine Salesforce-verbundene App mit einem OAuth 2.0-Client-A
 
 Swagger ist ein Open-Source-Satz von Regeln, Spezifikationen und Tools zur Entwicklung und Beschreibung von RESTful-APIs. [Swagger-Datei erstellen](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/forms/integrate-with-salesforce/describe-rest-api.html) vor der Integration von Salesforce mit AEM Forms.
 
-    >[!NOTE]
-    >
-    > AEM 6.5 unterstützt nur Swagger 2.0-Dateispezifikationen.
+>[!NOTE]
+>
+> AEM 6.5 unterstützt nur Swagger 2.0-Dateispezifikationen.
 
 +++
 
