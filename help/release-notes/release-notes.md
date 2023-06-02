@@ -3,9 +3,9 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 2391eb74979b7ee9ed148763ffebf125ef09fc88
+source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
 workflow-type: tm+mt
-source-wordcount: '3475'
+source-wordcount: '3499'
 ht-degree: 31%
 
 ---
@@ -52,9 +52,9 @@ Einige der wichtigsten Funktionen und Verbesserungen in dieser Version sind:
 * **Integration des adaptiven Forms auf AEM Site-Seiten**: Nahtloses Erstellen digitaler Registrierungserlebnisse durch Nutzung adaptiver Forms-Komponenten im AEM Sites-Editor mit: - Adaptive Forms-Container- und Adaptive Forms - Embed(v2)-Komponenten.
 * **Unterstützung von reCAPTCHA Enterprise in AEM Forms**: Unterstützung für reCAPTCHA Enterprise in AEM Forms hinzugefügt, die zusätzlich zur Unterstützung von Google reCAPTCHA v2 einen verbesserten Schutz vor betrügerischer Aktivität und Spam bietet.
 * **Unterstützung von Adobe Acrobat Sign für Behörden mit AEM Forms**: Sichere und konforme Integration von AEM Forms mit Adobe Sign für Behörden (FedRAMP-konform).
-* **Salesforce-Integration mit AEM Forms für den Datenaustausch aktivieren**: OAuth 2.0-Client-Anmeldeinformationen fließen zur sicheren und direkten Anwendungsauthentifizierung und -autorisierung in der Salesforce-Anwendung, um eine nahtlose Kommunikation zwischen Anwendungen ohne Benutzerbeteiligung zu ermöglichen.
-* **Optimierung und verbesserte Funktionalität der Workflow-Engine**: Die Minimierung der Anzahl der Workflow-Instanzen erhöht die Leistung der Workflow-Engines. Zusätzlich zu `COMPLETED` und `RUNNING` -Statuswerte unterstützt der Workflow auch drei neue Statuswerte: `ABORTED`, `SUSPENDED`und `FAILED`.
-* Das ZPL-Ausgabeformat unterstützt unterschiedliche Papierformate wie Brief, A4 und A5.
+* **Salesforce-Integration mit AEM Forms für den Datenaustausch aktivieren**: Konfigurieren Sie die Integration zwischen AEM Formularen und der Salesforce-Anwendung mithilfe des Workflows OAuth 2.0-Client-Anmeldedaten. Dies ermöglicht eine sichere und direkte Authentifizierung und Autorisierung der Anwendung und ermöglicht eine nahtlose Kommunikation ohne Einbindung der Benutzer.
+* **Optimierung und verbesserte Funktionalität der Workflow-Engine**: Erhöhen Sie die Leistung der Workflow-Engines, indem Sie die Anzahl der Workflow-Instanzen minimieren. Zusätzlich zu `COMPLETED` und `RUNNING` -Statuswerte unterstützt der Workflow auch drei neue Statuswerte: `ABORTED`, `SUSPENDED`und `FAILED`.
+* **Unterstützung von Papiergrößen für ZPL-Ausgabe**: In AEM Forms Designer generiert XMLFM eine ZPL-Ausgabe mit unterschiedlichen Papiergrößen wie Brief, A4 und A5 für XDP-basierte Vorlagen.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
