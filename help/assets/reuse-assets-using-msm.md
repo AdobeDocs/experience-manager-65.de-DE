@@ -7,9 +7,9 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 56632bd6ce9fc90f0bc61f903f84f7ea8bbcd12d
 workflow-type: tm+mt
-source-wordcount: '3389'
+source-wordcount: '3288'
 ht-degree: 100%
 
 ---
@@ -287,22 +287,6 @@ Wenn mehrere Assets in einem Live Copy-Ordner vorhanden sind, kann das Initiier
    ![Einfaches Aktualisieren vieler Assets in Live Copy-Ordnern über die Konsole „Live Copy-Übersicht“](assets/livecopyconsole_update_many_assets.png)
 
    *Abbildung: Einfaches Aktualisieren vieler Assets in Live Copy-Ordnern über die Konsole [!UICONTROL Live Copy-Übersicht].*
-
-## Erweitern von MSM für [!DNL Assets] {#extend-api}
-
-[!DNL Experience Manager] ermöglicht es, die Funktionalität mithilfe der MSM-Java-APIs zu erweitern. Bei [!DNL Assets] funktioniert die Erweiterung genauso wie bei MSM für [!DNL Sites]. Weitere Details finden Sie unter [Erweitern von MSM](/help/sites-developing/extending-msm.md) sowie in den Informationen zu bestimmten Aufgaben in den folgenden Abschnitten:
-
-* [Übersicht über APIs](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [Erstellen einer Synchronisierungsaktion](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [Erstellen einer Rollout-Konfiguration](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
-* [Erstellen und Verwenden einer einfachen LiveActionFactory-Klasse](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
-
->[!NOTE]
->
->* Blueprints in MSM für [!DNL Sites] werden in MSM für [!DNL Assets] als Live Copy-Quellen bezeichnet.
->* Das Entfernen des Schritts „Kapitel“ im Assistenten zum Erstellen von Websites wird in MSM für [!DNL Assets] nicht unterstützt.
->* Das Konfigurieren von MSM-Sperren in den Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) wird in MSM für [!DNL Assets] nicht unterstützt.
-
 
 ## Auswirkungen von Asset-Management-Aufgaben auf Live Copies {#manage-assets}
 
