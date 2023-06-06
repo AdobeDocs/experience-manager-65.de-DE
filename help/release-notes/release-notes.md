@@ -3,9 +3,9 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 206242583fcbf651dbc6234dc01be5140d0cfca7
+source-git-commit: 46e76c36db3396a013c8610b62f5cff9f1ea14d9
 workflow-type: tm+mt
-source-wordcount: '3537'
+source-wordcount: '3548'
 ht-degree: 31%
 
 ---
@@ -394,6 +394,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
    ```
 
 * auf der JBoss® 7.1.4-Plattform, wenn der Benutzer AEM Service Pack 6.5.16.0 oder höher installiert, `adobe-livecycle-jboss.ear` Die Bereitstellung schlägt fehl.
+* JDK-Versionen, die höher als 1.8.0_281 sind, werden für WebLogic JEE-Server nicht unterstützt.
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
