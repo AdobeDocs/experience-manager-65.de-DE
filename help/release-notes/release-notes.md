@@ -3,9 +3,9 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 9bf19cd21db185229d565d684dbac9e44f236532
+source-git-commit: 2c9337af99811d7b58712e1d0def7b5af5661c11
 workflow-type: tm+mt
-source-wordcount: '3586'
+source-wordcount: '3567'
 ht-degree: 30%
 
 ---
@@ -104,9 +104,8 @@ Einige der wichtigsten Funktionen und Verbesserungen in dieser Version sind:
 
 ## [!DNL Forms]{#forms-6517}
 
-* Wenn ein Benutzer ein Upgrade auf Experience Manager 6.5.16.0 Service Pack durchführt, wird die angehängte Datei nicht ordnungsgemäß abgerufen. (FORMS-8906)
-* Nach der Aktualisierung auf Experience Manager 6.5.15.0 Service Pack funktionieren die HTML5-Formulare im Edge-Browser mit dem IE-Kompatibilitätsmodus nicht oder werden nicht ordnungsgemäß geladen. (FORMS-8526, FORMS-8523)
-* Wenn ein Benutzer das Experience Manager 6.5.16.0 Service Pack anwendet, kann der Regeleditor nicht geöffnet werden. (FORMS-8290)
+* Nach der Aktualisierung auf AEM 6.5.15.0 Service Pack funktionieren die HTML5-Formulare im Edge-Browser mit dem IE-Kompatibilitätsmodus nicht oder werden nicht ordnungsgemäß geladen. (FORMS-8526, FORMS-8523)
+* Wenn ein Benutzer AEM 6.5.16.0 Service Pack anwendet, kann der Regeleditor nicht geöffnet werden. (FORMS-8290)
 * Wenn die maximale Anzahl von Ziffern-Validierungen auf eine Komponente vom Typ &quot;Numerisches Feld&quot;angewendet wird, schlägt dies fehl. (FORMS-7938)
 * Beim Erstellen interaktiver Kommunikationsanweisungen wird die Diagrammkomponente im PDF nicht ordnungsgemäß generiert. (FORMS-7827, FORMS-8297)
 * Die Java™-Speicherbereinigung kann den alten Generieren-Heap auf einem Experience Manager Forms-OSGi-Server nicht löschen. (FORMS-8207)
