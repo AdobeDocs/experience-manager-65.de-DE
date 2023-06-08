@@ -3,9 +3,9 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 2c9337af99811d7b58712e1d0def7b5af5661c11
+source-git-commit: 36edc2507d9acd7d5f94e433a654ccc1647bb58a
 workflow-type: tm+mt
-source-wordcount: '3567'
+source-wordcount: '3568'
 ht-degree: 30%
 
 ---
@@ -187,7 +187,7 @@ Neue Ordner von `cache` und `diff-cache` automatisch erstellt werden und Sie kei
 * Sprachkopien einer Seite wurden nicht erwartungsgemäß aktualisiert. (SITES-11191)
 * Öffnen des Seitenaufrufs ohne Kampagne `targeteditor.html` unnötig. Entfernen Sie die `targeteditor` aufrufen, wenn nicht erforderlich. (SITES-12469)
 * Live Copies können nicht für Seiten mit Anmerkungen erstellt werden. (SITES-12154)
-* Das Rollout von Seiten funktioniert in Experience Manager 6.5.16. (SITES-12008)
+* Das Rollout von Seiten funktioniert in Experience Manager 6.5.16 nicht. (SITES-12008)
 * Nicht genügend Arbeitsspeicher; hohe Speicherbereinigung aufgrund `NotificationManagerImpl`. `NotificationManager` Bundle-Upgrade auf Experience Manager 6.5. (SITES-11440)
 * Es wurden WCM-IT-Tests behoben, die Service Pack 17 blockierten. (SITES-13089)
 * Das Abrufen von Sites-Verweisen schlägt beim Servlet fehl. (SITES-10901)
