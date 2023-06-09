@@ -7,10 +7,10 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
+source-git-commit: 0afd721ff02f2c9abeed40c4b8f4fdf169523c35
 workflow-type: tm+mt
-source-wordcount: '9993'
-ht-degree: 80%
+source-wordcount: '10068'
+ht-degree: 77%
 
 ---
 
@@ -33,7 +33,6 @@ Wenn Sie eine Sammlung von Assets organisieren, etwa alle `Nature`-Aufnahmen, k�
 >
 >* Die Freigabe eines [!DNL Assets]-Ordners vom Typ `sling:OrderedFolder` wird bei der Weitergabe an Experience Cloud nicht unterstützt. Wenn Sie einen Ordner freigeben möchten, wählen Sie beim Erstellen eines Ordners nicht [!UICONTROL Geordnet] aus.
 >* In [!DNL Experience Manager] ist die Verwendung von `subassets` als Ordnername nicht zulässig. Dieses Keyword ist für Knoten reserviert, die Unter-Assets für ebenenübergreifende Assets enthalten.
-
 
 1. Navigieren Sie zu dem Ort in Ihrem Ordner „Digitale Assets“, an dem Sie einen neuen Ordner erstellen möchten. Klicken Sie im Menü auf **[!UICONTROL Erstellen]**. Wählen Sie **[!UICONTROL Neuer Ordner]** aus.
 1. Geben Sie in das Feld **[!UICONTROL Titel]** einen Ordnernamen an. Standardmäßig verwendet DAM den von Ihnen als Ordnernamen angegebenen Titel. Nachdem der Ordner erstellt wurde, können Sie den Standard überschreiben und einen anderen Ordnernamen angeben.
@@ -58,6 +57,12 @@ Sie können verschiedene Arten von Assets (z. B. Bilder, PDF-Dateien, Raw-Datei
 >[!NOTE]
 >
 >Im Modus „Dynamic Media – Scene7“ beträgt die Standardgröße der Asset-Upload-Datei höchstens 2 GB. Informationen zum Konfigurieren des Uploads von Assets mit einer Größe zwischen 2 GB und 15 GB finden Sie unter [(Optional) Konfigurieren des Dynamic Media-Scene7-Modus für das Hochladen von Assets mit mehr als 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+
+>[!IMPORTANT]
+>
+>Assets, die Sie in Experience Manager hochladen und deren Dateiname 100 Zeichen überschreitet, haben einen gekürzten Namen, wenn sie in Dynamic Media verwendet werden.
+>
+>Die ersten 100 Zeichen im Dateinamen werden unverändert verwendet. alle verbleibenden Zeichen durch eine alphanumerische Zeichenfolge ersetzt werden. Diese Umbenennungsmethode stellt einen eindeutigen Namen sicher, wenn das Asset in Dynamic Media verwendet wird. Sie soll auch die maximale Länge der Asset-Dateinamen berücksichtigen, die in Dynamic Media zulässig ist.
 
 Sie können Assets mit oder ohne zugewiesenes Verarbeitungsprofil in Ordner hochladen.
 
@@ -104,7 +109,6 @@ Die Bereinigungsaufgabe für nicht abgeschlossene Chunkupload-Aufträge können 
 >* Dass der Chunk-Upload für Dateien aktiviert wird, deren Größe während des Uploads wahrscheinlich zum Ablauf der Anmeldedaten führt.
 >
 >* Dass jeder Chunk abgeschlossen wird, bevor die Anmeldedaten ablaufen.
-
 
 Wenn Sie ein Asset unter einem Namen hochladen, der bereits für ein Asset am Zielort verwendet wird, wird eine Warnmeldung angezeigt.
 
@@ -198,22 +202,22 @@ Um die laufende Verarbeitung eines Upload-Auftrags abzubrechen, klicken Sie nebe
 
 | Uploadoptionen | Unteroption | Beschreibung |
 |---|---|---|
-| Auftragsname |  | Der Name, der standardmäßig in diesem Feld erstellt wird, enthält den vom Benutzer eingegebenen Teil des Namens und einen Zeitstempel samt Datum. Für diesen Upload-Auftrag können Sie den Standardnamen oder einen von Ihnen selbst erstellten Namen verwenden. <br>Der Auftrag und andere Upload- und Veröffentlichungsaufträge werden auf der Seite „Aufträge“ aufgezeichnet, wo Sie den Status der Aufträge prüfen können. |
-| Nach dem Hochladen veröffentlichen |  | Veröffentlicht die hochgeladenen Assets automatisch. |
-| In belieb. Ordner Assets mit ident. Namen unabh. von Erweit. überschreiben |  | Wählen Sie diese Option aus, wenn die hochgeladenen Dateien bestehende Dateien mit denselben Namen ersetzen sollen. Der Name dieser Option kann je nach den Einstellungen unter **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]** > **[!UICONTROL In Anwendung hochladen]** > **[!UICONTROL Bilder überschreiben]**. |
-| Komprimieren von ZIP- oder TAR-Dateien beim Hochladen |  |  |
-| Auftragsoptionen |  | Klicken Sie auf **[!UICONTROL Auftragsoptionen]**, um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] anzuzeigen und Optionen auszuwählen, die für den gesamten Upload-Auftrag gelten. Diese Optionen sind für alle Dateitypen gleich.<br>Sie können über die Seite „Allgemeine Programmeinstellungen“ Standardoptionen für das Hochladen von Dateien auswählen. Um diese Seite zu öffnen, wählen Sie **[!UICONTROL Einstellung]** > **[!UICONTROL Anwendungseinstellungen]**. Wählen Sie die Option **[!UICONTROL Standard-Uploadoptionen]** aus, um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen. |
-|  | Wenn | Wählen Sie Einmalig oder Wiederkehrend aus. Um einen wiederkehrenden Auftrag festzulegen, wählen Sie die Option &quot;Wiederholen&quot;- &quot;Täglich&quot;, &quot;Wöchentlich&quot;, &quot;Monatlich&quot;oder &quot;Benutzerdefiniert&quot;-, um anzugeben, wann der FTP-Upload-Auftrag wiederholt werden soll. Geben Sie dann bei Bedarf die Planungsoptionen an. |
-|  | Unterordner einschließen | Laden Sie alle Unterordner in den Ordner hoch, den Sie hochladen möchten. Die Namen des hochgeladenen Ordners und der darin enthaltenen Unterordner werden automatisch in [!DNL Experience Manager Assets] erfasst. |
-|  | Optionen für Beschneiden | Um manuell von den Seiten eines Bildes zu beschneiden, wählen Sie im Menü &quot;Beschneiden&quot;die Option &quot;Manuell&quot;. Geben Sie dann die Anzahl der Pixel ein, die von einer beliebigen Bildseite oder jeder Bildseite abgeschnitten werden sollen. Wie viel des Bildes beschnitten wird, hängt von der ppi-Einstellung (Pixel pro Zoll) in der Bilddatei ab. Wenn das Bild beispielsweise 150 ppi aufweist und Sie in die Textfelder &quot;Oben&quot;, &quot;Rechts&quot;, &quot;Unten&quot;und &quot;Links&quot;75 eingeben, wird von jeder Seite ein halber Zoll abgeschnitten.<br> Zum automatischen Beschneiden der Leerraumpixel eines Bildes öffnen Sie das Menü „Beschneiden“, wählen Sie „Manuell“ und geben Sie zum Beschneiden der Seiten die Pixelwerte in die Felder „Oben“, „Rechts“, „Unten“ und „Links“ ein. Sie können im Menü „Beschneiden“ auch „Zuschneiden“ und anschließend folgende Optionen auswählen:<br> **Beschneiden basierend auf** <ul><li>**Farbe**: Wählen Sie die Option „Farbe“. Wählen Sie anschließend im Menü „Ecke“ die Bildecke mit der Farbe aus, die am besten der Leerraumfarbe entspricht, die Sie entfernen möchten.</li><li>**Transparenz** – Wählen Sie die Option „Transparenz“.<br> **Toleranz**: Ziehen Sie den Regler, um eine Toleranz von 0 bis 1 festzulegen. Für das Zuschneiden auf Grundlage der Farbe geben Sie 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie genau der Farbe entsprechen, die Sie in der Bildecke ausgewählt haben. Werte, die näher an 1 liegen, lassen eine größere Farbdifferenz zu.<br>Für das Zuschneiden auf der Grundlage der Transparenz geben Sie den Wert 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie transparent sind. Werte, die näher an 1 liegen, lassen eine größere Transparenz zu.</li></ul><br>Diese Zuschnittsoptionen sind zerstörungsfrei. |
-|  | Farbprofiloptionen | Wählen Sie beim Erstellen optimierter Dateien eine Farbkonvertierung aus, die für die Bereitstellung verwendet wird:<ul><li>Beibehaltung der Standardfarbe: Behält die Farben des Quellbildes bei, wenn die Bilder Farbrauminformationen enthalten. Es findet keine Farbkonvertierung statt. Fast alle Bilder haben heute bereits das entsprechende Farbprofil eingebettet. Wenn jedoch ein CMYK-Quellbild kein eingebettetes Farbprofil enthält, werden die Farben in den Farbraum sRGB (standardmäßiges Rot Grün Blau) konvertiert. sRGB ist der empfohlene Farbraum für die Anzeige von Bildern auf Webseiten.</li><li>Ursprünglichen Farbraum beibehalten: Behält die ursprünglichen Farben bei, ohne dass an der betreffenden Stelle eine Farbkonvertierung stattfindet. Bei Bildern ohne eingebettetes Farbprofil wird jede Farbkonvertierung mit den in den Veröffentlichungseinstellungen konfigurierten Standardfarbprofilen durchgeführt. Die Farbprofile stimmen möglicherweise nicht mit der Farbe in den mit dieser Option erstellten Dateien überein. Daher wird empfohlen, die Option &quot;Beibehaltung der Standardfarbe&quot;zu verwenden.</li><li>Benutzerdefiniert von > zu<br> Öffnet Menüs, in denen Sie den Farbraum &quot;Konvertieren von&quot;und &quot;Konvertieren in&quot;auswählen können. Diese erweiterte Option überschreibt alle Farbinformationen, die in die Quelldatei eingebettet sind. Wählen Sie diese Option aus, wenn alle Bilder, die Sie senden, falsche oder fehlende Farbprofildaten enthalten.</li></ul> |
-|  | Bildbearbeitungsoptionen | Sie können die Schnittmasken in Bildern beibehalten und ein Farbprofil auswählen.<br> Siehe [Festlegen von Optionen für die Bildbearbeitung beim Hochladen](#setting-image-editing-options-at-upload). |
-|  | PostScript-Optionen | Sie können PostScript® rastern, Dateien zuschneiden, transparente Hintergründe beibehalten, eine Auflösung wählen und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
-|  | Photoshop-Optionen | Sie können Vorlagen aus Adobe® Photoshop®-Dateien erstellen, Ebenen beibehalten, Ebenennamen angeben, Text extrahieren und angeben, wie Bilder in Vorlagen verankert werden.<br> Vorlagen werden in [!DNL Experience Manager] nicht unterstützt.<br> Siehe [Festlegen von Photoshop-Uploadoptionen](#setting-photoshop-upload-options). |
-|  | PDF-Optionen | Sie können die Dateien rastern, Suchbegriffe und Links extrahieren, automatisch einen E-Katalog erstellen, die Auflösung festlegen und einen Farbraum auswählen.<br>E-Kataloge werden in [!DNL Experience Manager] nicht unterstützt. <br> Siehe [Festlegen von PDF-Uploadoptionen](#setting-pdf-upload-options).<br>**Hinweis**: Die maximale Seitenanzahl, damit eine PDF-Datei für die Extraktion berücksichtigt werden kann, beträgt 5.000 Seiten für neue Uploads. Dieser Grenzwert wird am 31. Dezember 2022 auf 100 Seiten geändert (für alle PDF-Dateien). Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md). |
-|  | Illustrator-Optionen | Sie können Adobe Illustrator®-Dateien rastern, transparente Hintergründe beibehalten sowie eine Auflösung und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
-|  | eVideo-Optionen | Sie können eine Videodatei transkodieren, indem Sie eine Videovorgabe auswählen.<br> Siehe [Festlegen von eVideo-Uploadoptionen](#setting-evideo-upload-options). |
-|  | Stapelsatz-Vorgaben | Um ein Bildset oder Rotationsset aus den hochgeladenen Dateien zu erstellen, klicken Sie auf die Spalte Aktiv für die Vorgabe, die Sie verwenden möchten. Sie können mehrere Vorgaben auswählen. Sie erstellen die Vorgaben auf der Seite &quot;Anwendungseinstellungen&quot;/&quot;Stapelsatzvorgaben&quot;von Dynamic Media Classic.<br> Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Siehe [Festlegen von Stapelsatzvorgaben beim Hochladen](#setting-batch-set-presets-at-upload). |
+| Auftragsname | | Der Name, der standardmäßig in diesem Feld erstellt wird, enthält den vom Benutzer eingegebenen Teil des Namens und einen Zeitstempel samt Datum. Für diesen Upload-Auftrag können Sie den Standardnamen oder einen von Ihnen selbst erstellten Namen verwenden. <br>Der Auftrag und andere Upload- und Veröffentlichungsaufträge werden auf der Seite „Aufträge“ aufgezeichnet, wo Sie den Status der Aufträge prüfen können. |
+| Nach dem Hochladen veröffentlichen | | Veröffentlicht die hochgeladenen Assets automatisch. |
+| In belieb. Ordner Assets mit ident. Namen unabh. von Erweit. überschreiben | | Wählen Sie diese Option aus, wenn die hochgeladenen Dateien bestehende Dateien mit denselben Namen ersetzen sollen. Der Name dieser Option kann je nach den Einstellungen unter **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]** > **[!UICONTROL In Anwendung hochladen]** > **[!UICONTROL Bilder überschreiben]**. |
+| Komprimieren von ZIP- oder TAR-Dateien beim Hochladen | | |
+| Auftragsoptionen | | Klicken Sie auf **[!UICONTROL Auftragsoptionen]**, um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] anzuzeigen und Optionen auszuwählen, die für den gesamten Upload-Auftrag gelten. Diese Optionen sind für alle Dateitypen gleich.<br>Sie können über die Seite „Allgemeine Programmeinstellungen“ Standardoptionen für das Hochladen von Dateien auswählen. Um diese Seite zu öffnen, wählen Sie **[!UICONTROL Einstellung]** > **[!UICONTROL Anwendungseinstellungen]**. Wählen Sie die Option **[!UICONTROL Standard-Uploadoptionen]** aus, um das Dialogfeld [!UICONTROL Upload-Auftragsoptionen] zu öffnen. |
+| | Wenn | Wählen Sie Einmalig oder Wiederkehrend aus. Um einen wiederkehrenden Auftrag festzulegen, wählen Sie die Option &quot;Wiederholen&quot;- &quot;Täglich&quot;, &quot;Wöchentlich&quot;, &quot;Monatlich&quot;oder &quot;Benutzerdefiniert&quot;-, um anzugeben, wann der FTP-Upload-Auftrag wiederholt werden soll. Geben Sie dann bei Bedarf die Planungsoptionen an. |
+| | Unterordner einschließen | Laden Sie alle Unterordner in den Ordner hoch, den Sie hochladen möchten. Die Namen des hochgeladenen Ordners und der darin enthaltenen Unterordner werden automatisch in [!DNL Experience Manager Assets] erfasst. |
+| | Optionen für Beschneiden | Um manuell von den Seiten eines Bildes zu beschneiden, wählen Sie im Menü &quot;Beschneiden&quot;die Option &quot;Manuell&quot;. Geben Sie dann die Anzahl der Pixel ein, die von einer beliebigen Bildseite oder jeder Bildseite abgeschnitten werden sollen. Wie viel des Bildes beschnitten wird, hängt von der ppi-Einstellung (Pixel pro Zoll) in der Bilddatei ab. Wenn das Bild beispielsweise 150 ppi aufweist und Sie in die Textfelder &quot;Oben&quot;, &quot;Rechts&quot;, &quot;Unten&quot;und &quot;Links&quot;75 eingeben, wird von jeder Seite ein halber Zoll abgeschnitten.<br> Zum automatischen Beschneiden der Leerraumpixel eines Bildes öffnen Sie das Menü „Beschneiden“, wählen Sie „Manuell“ und geben Sie zum Beschneiden der Seiten die Pixelwerte in die Felder „Oben“, „Rechts“, „Unten“ und „Links“ ein. Sie können im Menü „Beschneiden“ auch „Zuschneiden“ und anschließend folgende Optionen auswählen:<br> **Beschneiden basierend auf** <ul><li>**Farbe**: Wählen Sie die Option „Farbe“. Wählen Sie anschließend im Menü „Ecke“ die Bildecke mit der Farbe aus, die am besten der Leerraumfarbe entspricht, die Sie entfernen möchten.</li><li>**Transparenz** – Wählen Sie die Option „Transparenz“.<br> **Toleranz**: Ziehen Sie den Regler, um eine Toleranz von 0 bis 1 festzulegen. Für das Zuschneiden auf Grundlage der Farbe geben Sie 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie genau der Farbe entsprechen, die Sie in der Bildecke ausgewählt haben. Werte, die näher an 1 liegen, lassen eine größere Farbdifferenz zu.<br>Für das Zuschneiden auf der Grundlage der Transparenz geben Sie den Wert 0 an, damit Pixel nur dann abgeschnitten werden, wenn sie transparent sind. Werte, die näher an 1 liegen, lassen eine größere Transparenz zu.</li></ul><br>Diese Zuschnittsoptionen sind zerstörungsfrei. |
+| | Farbprofiloptionen | Wählen Sie beim Erstellen optimierter Dateien eine Farbkonvertierung aus, die für die Bereitstellung verwendet wird:<ul><li>Beibehaltung der Standardfarbe: Behält die Farben des Quellbildes bei, wenn die Bilder Farbrauminformationen enthalten. Es findet keine Farbkonvertierung statt. Fast alle Bilder haben heute bereits das entsprechende Farbprofil eingebettet. Wenn jedoch ein CMYK-Quellbild kein eingebettetes Farbprofil enthält, werden die Farben in den Farbraum sRGB (standardmäßiges Rot Grün Blau) konvertiert. sRGB ist der empfohlene Farbraum für die Anzeige von Bildern auf Webseiten.</li><li>Ursprünglichen Farbraum beibehalten: Behält die ursprünglichen Farben bei, ohne dass an der betreffenden Stelle eine Farbkonvertierung stattfindet. Bei Bildern ohne eingebettetes Farbprofil wird jede Farbkonvertierung mit den in den Veröffentlichungseinstellungen konfigurierten Standardfarbprofilen durchgeführt. Die Farbprofile stimmen möglicherweise nicht mit der Farbe in den mit dieser Option erstellten Dateien überein. Daher wird empfohlen, die Option &quot;Beibehaltung der Standardfarbe&quot;zu verwenden.</li><li>Benutzerdefiniert von > zu<br> Öffnet Menüs, in denen Sie den Farbraum &quot;Konvertieren von&quot;und &quot;Konvertieren in&quot;auswählen können. Diese erweiterte Option überschreibt alle Farbinformationen, die in die Quelldatei eingebettet sind. Wählen Sie diese Option aus, wenn alle Bilder, die Sie senden, falsche oder fehlende Farbprofildaten enthalten.</li></ul> |
+| | Bildbearbeitungsoptionen | Sie können die Schnittmasken in Bildern beibehalten und ein Farbprofil auswählen.<br> Siehe [Festlegen von Optionen für die Bildbearbeitung beim Hochladen](#setting-image-editing-options-at-upload). |
+| | PostScript-Optionen | Sie können PostScript® rastern, Dateien zuschneiden, transparente Hintergründe beibehalten, eine Auflösung wählen und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
+| | Photoshop-Optionen | Sie können Vorlagen aus Adobe® Photoshop®-Dateien erstellen, Ebenen beibehalten, Ebenennamen angeben, Text extrahieren und angeben, wie Bilder in Vorlagen verankert werden.<br> Vorlagen werden in [!DNL Experience Manager] nicht unterstützt.<br> Siehe [Festlegen von Photoshop-Uploadoptionen](#setting-photoshop-upload-options). |
+| | PDF-Optionen | Sie können die Dateien rastern, Suchbegriffe und Links extrahieren, automatisch einen E-Katalog erstellen, die Auflösung festlegen und einen Farbraum auswählen.<br>E-Kataloge werden in [!DNL Experience Manager] nicht unterstützt. <br> Siehe [Festlegen von PDF-Uploadoptionen](#setting-pdf-upload-options).<br>**Hinweis**: Die maximale Seitenanzahl, damit eine PDF-Datei für die Extraktion berücksichtigt werden kann, beträgt 5.000 Seiten für neue Uploads. Dieser Grenzwert wird am 31. Dezember 2022 auf 100 Seiten geändert (für alle PDF-Dateien). Siehe auch [Grenzwerte für Dynamic Media](/help/assets/limitations.md). |
+| | Illustrator-Optionen | Sie können Adobe Illustrator®-Dateien rastern, transparente Hintergründe beibehalten sowie eine Auflösung und einen Farbraum auswählen.<br> Siehe [Festlegen von PostScript- und Illustrator-Uploadoptionen](#setting-postscript-and-illustrator-upload-options). |
+| | eVideo-Optionen | Sie können eine Videodatei transkodieren, indem Sie eine Videovorgabe auswählen.<br> Siehe [Festlegen von eVideo-Uploadoptionen](#setting-evideo-upload-options). |
+| | Stapelsatz-Vorgaben | Um ein Bildset oder Rotationsset aus den hochgeladenen Dateien zu erstellen, klicken Sie auf die Spalte Aktiv für die Vorgabe, die Sie verwenden möchten. Sie können mehrere Vorgaben auswählen. Sie erstellen die Vorgaben auf der Seite &quot;Anwendungseinstellungen&quot;/&quot;Stapelsatzvorgaben&quot;von Dynamic Media Classic.<br> Weitere Informationen zur Erstellung von Stapelsatzvorgaben finden Sie unter [Konfigurieren von Stapelsatzvorgaben zum automatischen Erstellen von Bild- und Rotationssets](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets).<br> Siehe [Festlegen von Stapelsatzvorgaben beim Hochladen](#setting-batch-set-presets-at-upload). |
 
 #### Festlegen von Optionen für die Bildbearbeitung beim Hochladen {#setting-image-editing-options-at-upload}
 
@@ -247,14 +251,14 @@ Beim Hochladen von PostScript- (EPS) oder Illustrator- (AI-) Bilddateien können
 
 | Option | Unteroption | Beschreibung |
 |---|---|---|
-| Verarbeitung |  | Auswählen **[!UICONTROL Rastern]** , um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
-| Transparenten Hintergrund im gerenderten Bild beibehalten |  | Beibehalten der Hintergrundtransparenz der Datei. |
-| Auflösung |  | Zum Festlegen der Auflösung: Diese Einstellung bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
-| Farbraum |  | Klicken Sie auf das Menü „Farbraum“ und wählen Sie unter den folgenden Farbraumoptionen: |
-|  | Automatisch erkennen | Behält den Farbraum der Datei bei. |
-|  | Immer RGB | Zur Konvertierung in den RGB-Farbraum. |
-|  | Immer CMYK | Zur Konvertierung in den CMYK-Farbraum. |
-|  | Immer Graustufen | Zur Konvertierung in den Graustufenfarbraum. |
+| Verarbeitung | | Auswählen **[!UICONTROL Rastern]** , um Vektorgrafiken in der Datei in das Bitmap-Format zu konvertieren. |
+| Transparenten Hintergrund im gerenderten Bild beibehalten | | Beibehalten der Hintergrundtransparenz der Datei. |
+| Auflösung | | Zum Festlegen der Auflösung: Diese Einstellung bestimmt, wie viele Pixel pro Zoll in der Datei angezeigt werden. |
+| Farbraum | | Klicken Sie auf das Menü „Farbraum“ und wählen Sie unter den folgenden Farbraumoptionen: |
+| | Automatisch erkennen | Behält den Farbraum der Datei bei. |
+| | Immer RGB | Zur Konvertierung in den RGB-Farbraum. |
+| | Immer CMYK | Zur Konvertierung in den CMYK-Farbraum. |
+| | Immer Graustufen | Zur Konvertierung in den Graustufenfarbraum. |
 
 #### Festlegen von Photoshop-Uploadoptionen {#setting-photoshop-upload-options}
 
@@ -270,15 +274,15 @@ Verwenden Sie die oben beschriebenen Optionen für [!UICONTROL Beschneiden] und 
 
 | Option | Unteroption | Beschreibung |
 |---|---|---|
-| Ebenen beibehalten |  | Teilt die Ebenen im PSD (falls vorhanden) in einzelne Assets. Die Asset-Ebenen bleiben mit der PSD verknüpft. Sie können sie anzeigen, indem Sie die PSD-Datei in der Detailansicht öffnen und das Ebenenbedienfeld auswählen. |
-| Erstellen einer Vorlage |  | Erstellt eine Vorlage aus den Ebenen der PSD-Datei. |
-| Text extrahieren |  | Extrahiert den Text, damit Benutzer den Text in einem Viewer suchen können. |
-| Ebenen auf Hintergrundgröße ausdehnen |  | Erweitert die Größe aufgeteilter Bildebenen auf die Größe der Hintergrundebene. |
-| Ebenenbenennung |  | Ebenen in der PSD-Datei werden als separate Bilder hochgeladen. |
-|  | Ebenenname | Benennt die Bilder nach ihren Ebenennamen in der PSD-Datei. Wenn eine Ebene in der Original-PSD-Datei beispielsweise „Preisschild“ heißt, wird auch das zugehörige Bild „Preisschild“ genannt. Wenn es sich bei den Ebenennamen in der PSD-Datei jedoch um standardmäßige Photoshop-Ebenennamen handelt (Hintergrund, Ebene 1, Ebene 2 usw.), werden die Bilder nach den zugehörigen Ebenennummern in der PSD-Datei benannt. Sie werden nicht nach ihren standardmäßigen Ebenennamen benannt. |
-|  | Photoshop- und Ebenennummer | Benennt die Bilder nach ihren Ebenennummern in der PSD-Datei, wobei die ursprünglichen Ebenennamen ignoriert werden. Bilder werden mit dem Photoshop-Dateinamen und einer angefügten Ebenennummer benannt. Beispielsweise erhält die zweite Ebene einer Datei mit dem Namen Spring Ad.psd den Namen Spring Ad_2, selbst wenn sie in Photoshop einen nicht standardmäßigen Namen hatte. |
-|  | Photoshop und Ebenenname | Benennt die Bilder nach der PSD-Datei, gefolgt vom Ebenennamen oder der Ebenennummer. Die Ebenennummer wird verwendet, wenn es sich bei den Ebenennamen in der PSD-Datei um standardmäßige Photoshop-Ebenennamen handelt. Beispielsweise erhält eine Ebene mit dem Namen &quot;Price Tag&quot;in einer PSD-Datei mit dem Namen &quot;SpringAd&quot;den Namen &quot;Spring Ad_Price Tag&quot;. Eine Ebene mit dem Standardnamen Ebene 2 heißt Frühjahrsannonce_2. |
-| Anker |  | Geben Sie an, wie Bilder in Vorlagen verankert werden, die aus der aus der PSD-Datei erzeugten mehrschichtigen Komposition generiert werden. Standardmäßig ist der Anker die Mitte. Ein zentrierter Anker ermöglicht es Ersatzbilder, unabhängig vom Seitenverhältnis des Ersatzbilds denselben Raum am besten auszufüllen. Bilder mit einem anderen Aspekt, der dieses Bild ersetzt, belegen beim Referenzieren der Vorlage und bei der Verwendung der Parameterersetzung effektiv denselben Raum. Wechseln Sie zu einer anderen Einstellung, wenn Ihre Anwendung erfordert, dass die Ersatzbilder den zugewiesenen Platz in der Vorlage ausfüllen. |
+| Ebenen beibehalten | | Teilt die Ebenen im PSD (falls vorhanden) in einzelne Assets. Die Asset-Ebenen bleiben mit der PSD verknüpft. Sie können sie anzeigen, indem Sie die PSD-Datei in der Detailansicht öffnen und das Ebenenbedienfeld auswählen. |
+| Erstellen einer Vorlage | | Erstellt eine Vorlage aus den Ebenen der PSD-Datei. |
+| Text extrahieren | | Extrahiert den Text, damit Benutzer den Text in einem Viewer suchen können. |
+| Ebenen auf Hintergrundgröße ausdehnen | | Erweitert die Größe aufgeteilter Bildebenen auf die Größe der Hintergrundebene. |
+| Ebenenbenennung | | Ebenen in der PSD-Datei werden als separate Bilder hochgeladen. |
+| | Ebenenname | Benennt die Bilder nach ihren Ebenennamen in der PSD-Datei. Wenn eine Ebene in der Original-PSD-Datei beispielsweise „Preisschild“ heißt, wird auch das zugehörige Bild „Preisschild“ genannt. Wenn es sich bei den Ebenennamen in der PSD-Datei jedoch um standardmäßige Photoshop-Ebenennamen handelt (Hintergrund, Ebene 1, Ebene 2 usw.), werden die Bilder nach den zugehörigen Ebenennummern in der PSD-Datei benannt. Sie werden nicht nach ihren standardmäßigen Ebenennamen benannt. |
+| | Photoshop- und Ebenennummer | Benennt die Bilder nach ihren Ebenennummern in der PSD-Datei, wobei die ursprünglichen Ebenennamen ignoriert werden. Bilder werden mit dem Photoshop-Dateinamen und einer angefügten Ebenennummer benannt. Beispielsweise erhält die zweite Ebene einer Datei mit dem Namen Spring Ad.psd den Namen Spring Ad_2, selbst wenn sie in Photoshop einen nicht standardmäßigen Namen hatte. |
+| | Photoshop und Ebenenname | Benennt die Bilder nach der PSD-Datei, gefolgt vom Ebenennamen oder der Ebenennummer. Die Ebenennummer wird verwendet, wenn es sich bei den Ebenennamen in der PSD-Datei um standardmäßige Photoshop-Ebenennamen handelt. Beispielsweise erhält eine Ebene mit dem Namen &quot;Price Tag&quot;in einer PSD-Datei mit dem Namen &quot;SpringAd&quot;den Namen &quot;Spring Ad_Price Tag&quot;. Eine Ebene mit dem Standardnamen Ebene 2 heißt Frühjahrsannonce_2. |
+| Anker | | Geben Sie an, wie Bilder in Vorlagen verankert werden, die aus der aus der PSD-Datei erzeugten mehrschichtigen Komposition generiert werden. Standardmäßig ist der Anker die Mitte. Ein zentrierter Anker ermöglicht es Ersatzbilder, unabhängig vom Seitenverhältnis des Ersatzbilds denselben Raum am besten auszufüllen. Bilder mit einem anderen Aspekt, der dieses Bild ersetzt, belegen beim Referenzieren der Vorlage und bei der Verwendung der Parameterersetzung effektiv denselben Raum. Wechseln Sie zu einer anderen Einstellung, wenn Ihre Anwendung erfordert, dass die Ersatzbilder den zugewiesenen Platz in der Vorlage ausfüllen. |
 
 #### Festlegen von PDF-Uploadoptionen {#setting-pdf-upload-options}
 
@@ -296,14 +300,14 @@ Wählen Sie unter folgenden Optionen:
 |---|---|---|
 | Verarbeitung | Rastern | (Standard) Zum Extrahieren der Seiten aus der PDF-Datei und zum Konvertieren von Vektorgrafiken in Bitmap-Bilder. Wählen Sie diese Option, wenn Sie einen E-Katalog erstellen möchten. |
 | Extrahieren | Suchbegriffe | Extrahiert Wörter aus der PDF-Datei, damit die in einem E-Katalog-Viewer nach Schlüsselwörtern durchsucht werden kann. |
-|  | Links | Extrahiert Links aus den PDF-Dateien und konvertiert sie in Imagemaps, die in einem E-Katalog-Viewer verwendet werden. |
-| eCatalog von mehrseitiger PDF automatisch generieren |  | Erstellt automatisch einen eCatalog aus der PDF-Datei. Der eCatalog wird nach der hochgeladenen PDF-Datei benannt. (Diese Option ist nur verfügbar, wenn Sie die PDF-Datei beim Hochladen rastern.) |
-| Auflösung |  | Zum Festlegen der Auflösung: Diese Einstellung bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Der Standardwert ist 150. |
-| Farbraum |  | Wählen Sie das Menü Farbraum aus und wählen Sie einen Farbraum für die PDF-Datei. Die meisten PDF-Dateien haben sowohl RGB- als auch CMYK-Farbbilder. Der Farbraum RGB ist für die Online-Anzeige vorzuziehen. |
-|  | Automatisch erkennen | Behält den Farbraum der PDF-Datei bei. |
-|  | RGB erzwingen | Konvertiert in den RGB-Farbraum. |
-|  | CMYK erzwingen | Konvertiert in den CMYK-Farbraum. |
-|  | Graufstufen erzwingen | Konvertiert in den Graustufenfarbraum. |
+| | Links | Extrahiert Links aus den PDF-Dateien und konvertiert sie in Imagemaps, die in einem E-Katalog-Viewer verwendet werden. |
+| eCatalog von mehrseitiger PDF automatisch generieren | | Erstellt automatisch einen eCatalog aus der PDF-Datei. Der eCatalog wird nach der hochgeladenen PDF-Datei benannt. (Diese Option ist nur verfügbar, wenn Sie die PDF-Datei beim Hochladen rastern.) |
+| Auflösung | | Zum Festlegen der Auflösung: Diese Einstellung bestimmt, wie viele Pixel pro Zoll in der PDF-Datei angezeigt werden. Der Standardwert ist 150. |
+| Farbraum | | Wählen Sie das Menü Farbraum aus und wählen Sie einen Farbraum für die PDF-Datei. Die meisten PDF-Dateien haben sowohl RGB- als auch CMYK-Farbbilder. Der Farbraum RGB ist für die Online-Anzeige vorzuziehen. |
+| | Automatisch erkennen | Behält den Farbraum der PDF-Datei bei. |
+| | RGB erzwingen | Konvertiert in den RGB-Farbraum. |
+| | CMYK erzwingen | Konvertiert in den CMYK-Farbraum. |
+| | Graufstufen erzwingen | Konvertiert in den Graustufenfarbraum. |
 
 #### Festlegen von eVideo-Uploadoptionen {#setting-evideo-upload-options}
 
@@ -311,11 +315,11 @@ Zum Transkodieren einer Videodatei, indem Sie aus verschiedenen Videovorgaben au
 
 | Option | Unteroption | Beschreibung |
 |---|---|---|
-| Adaptives Video |  | Eine einzelne Kodierungsvorgabe, die mit jedem Seitenverhältnis verwendet werden kann, um Videos für die Bereitstellung auf Mobilgeräten, Tablets und Desktops zu erstellen. Hochgeladene Quellvideos, die mit dieser Vorgabe kodiert wurden, weisen eine feste Höhe auf. Die Breite wird jedoch automatisch skaliert, um das Seitenverhältnis des Videos beizubehalten. <br>Am besten ist es, adaptive Videokodierung zu verwenden. |
+| Adaptives Video | | Eine einzelne Kodierungsvorgabe, die mit jedem Seitenverhältnis verwendet werden kann, um Videos für die Bereitstellung auf Mobilgeräten, Tablets und Desktops zu erstellen. Hochgeladene Quellvideos, die mit dieser Vorgabe kodiert wurden, weisen eine feste Höhe auf. Die Breite wird jedoch automatisch skaliert, um das Seitenverhältnis des Videos beizubehalten. <br>Am besten ist es, adaptive Videokodierung zu verwenden. |
 | Einzelne Kodierungsvorgaben | Sortieren von Kodierungsvorgaben | Wählen Sie **[!UICONTROL Name]** oder **[!UICONTROL Größe]** aus, wenn Sie die unter „Desktop, Mobile und Tablet“ aufgelisteten Kodierungsvorgaben nach Name oder Auflösungsgröße sortieren möchten. |
-|  | Desktop | Erstellen Sie eine MP4-Datei für die Ausgabe eines Streaming- oder progressiven Videoerlebnisses auf Desktop-Computern. Wählen Sie hier ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösungsgröße und Zieldatenrate aus. |
-|  | Mobilgerät | Erstellen Sie eine MP4-Datei zur Bereitstellung auf iPhone- oder Android™-Mobilgeräten. Wählen Sie hier ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösungsgröße und Zieldatenrate aus. |
-|  | Tablet | Erstellen Sie eine MP4-Datei zur Bereitstellung auf iPad- oder Android™-Tablet-Geräten. Wählen Sie hier ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösungsgröße und Zieldatenrate aus. |
+| | Desktop | Erstellen Sie eine MP4-Datei für die Ausgabe eines Streaming- oder progressiven Videoerlebnisses auf Desktop-Computern. Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösungsgröße und Zieldatenrate aus. |
+| | Mobilgerät | Erstellen Sie eine MP4-Datei zur Bereitstellung auf iPhone- oder Android™-Mobilgeräten. Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösungsgröße und Zieldatenrate aus. |
+| | Tablet | Erstellen Sie eine MP4-Datei zur Bereitstellung auf iPad- oder Android™-Tablet-Geräten. Wählen Sie ein oder mehrere Seitenverhältnisse mit der gewünschten Auflösungsgröße und Zieldatenrate aus. |
 
 #### Festlegen von Stapelsatzvorgaben beim Hochladen {#setting-batch-set-presets-at-upload}
 
@@ -382,7 +386,6 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset mit der Tastatur anzuze
 >* [Anzeigen von Dynamic Media-Assets in der Vorschau](/help/assets/previewing-assets.md).
 >* [Anzeigen von Unter-Assets](managing-linked-subassets.md#viewing-subassets).
 
-
 ## Eigenschaften und Metadaten bearbeiten {#editing-properties}
 
 1. Navigieren Sie zum Speicherort des Assets, dessen Metadaten Sie bearbeiten möchten.
@@ -403,7 +406,7 @@ Gehen Sie wie folgt vor, um eine Vorschau für ein Asset mit der Tastatur anzuze
 
    *Abbildung: Verwenden der Datumsauswahl, um die Asset-Aktivierung zu planen.*
 
-1. Sie müssen **[!UICONTROL Einschaltzeit/Ausschaltzeit erreicht]** -Option, wenn Sie die Trigger des Replikationsagenten in den Metadateneigenschaften aktualisieren möchten.
+1. Überprüfen **[!UICONTROL Einschaltzeit/Ausschaltzeit erreicht]** -Option, wenn Sie die Trigger des Replikationsagenten in den Metadateneigenschaften aktualisieren möchten.
    ![Agenteneinstellungen](assets-dm/Agent-settings.png)
 
 1. Um das Asset nach einer bestimmten Laufzeit zu deaktivieren, wählen Sie das Datum/den Zeitpunkt mit der Datumsauswahl neben dem Feld **[!UICONTROL Ausschaltzeit]**. Das Deaktivierungsdatum sollte nach dem Aktivierungsdatum für ein Asset liegen. Nach der [!UICONTROL Ausschaltzeit] sind ein Asset und seine Ausgabedarstellungen weder über die [!DNL Assets]-Web-Oberfläche noch über die HTTP-API verfügbar.
@@ -482,11 +485,11 @@ So verschieben Sie Assets oder Ordner:
    * Geben Sie nach dem Verschieben den Namen für das Asset an. Klicken Sie anschließend auf **[!UICONTROL Weiter]**, um fortzufahren.
 
    * Klicken Sie auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.
+
    >[!NOTE]
    >
    >* Sie können denselben Namen für das Asset angeben, wenn am neuen Speicherort kein Asset mit diesem Namen vorhanden ist. Sie sollten jedoch einen anderen Namen verwenden, wenn Sie das Asset an einen Speicherort verschieben, an dem sich ein Asset mit demselben Namen befindet. Wenn Sie denselben Namen verwenden, erzeugt das System automatisch eine Variation des Namens. Wenn Ihr Asset beispielsweise den Namen &quot;Quadrat&quot;hat, generiert das System den Namen &quot;Quadrat1&quot;für die Kopie.
    >* Beim Umbenennen sind Leerzeichen im Dateinamen nicht zulässig.
-
 
 1. Führen Sie im Dialogfeld **[!UICONTROL Ziel auswählen]** eine der folgenden Aktionen aus:
 
@@ -567,7 +570,7 @@ Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, ak
 
 So löschen Sie ein Asset oder einen Ordner mit einem Asset:
 
-1. Navigieren Sie zum Speicherort des Assets oder Ordners, die Sie löschen möchten.
+1. Navigieren Sie zum Speicherort des Assets oder des Ordners, den Sie löschen möchten.
 
 1. Wählen Sie das Asset oder den Ordner aus und klicken Sie auf das Symbol **[!UICONTROL Löschen]** ![Option „Löschen“](assets/do-not-localize/deleteoutline.png) auf der Symbolleiste.
 
@@ -576,11 +579,11 @@ So löschen Sie ein Asset oder einen Ordner mit einem Asset:
    * Wenn das Asset keine Referenzen aufweist, wird es gelöscht.
 
    * Wenn das Asset Referenzen aufweist, wird eine Fehlermeldung angezeigt mit dem Hinweis **Es wird auf ein oder mehrere Asset(s) verwiesen.** Sie können **[!UICONTROL Löschen erzwingen]** oder **[!UICONTROL Abbrechen]** auswählen.
+
    >[!NOTE]
    >
    >* Um die eingehenden Verweise von anderen Seiten aufzulösen oder zu entfernen, aktualisieren Sie die entsprechenden Verweise, bevor Sie ein Asset löschen. Deaktivieren Sie außerdem die Option „Löschen erzwingen“ mithilfe einer Überlagerung, um zu verhindern, dass Benutzerinnen und Benutzer referenzierte Assets löschen und fehlerhafte Links hinterlassen.
    >* Es ist möglich, einen *Ordner* zu löschen, der ausgecheckte Asset-Dateien enthält. Stellen Sie vor dem Löschen eines Ordners sicher, dass er keine von Benutzern ausgecheckte digitale Assets enthält.
-
 
 >[!NOTE]
 >
@@ -683,7 +686,7 @@ Mit den Bearbeitungswerkzeugen in der Oberfläche von [!DNL Assets] können Sie 
 
 1. Um das Bild zu beschneiden, klicken Sie auf die Option **[!UICONTROL Zuschneiden]** ![Option zum Zuschneiden eines Bildes](assets/do-not-localize/crop.png).
 
-1. Wählen Sie die gewünschte Option aus der Liste aus. Der Zuschneidebereich wird auf dem Bild je nach gewählter Option angezeigt. Mit der Option **Freihand** können Sie das Bild ohne Einschränkungen des Seitenverhältnisses zuschneiden.
+1. Wählen Sie die gewünschte Option aus der Liste aus. Der Zuschneidebereich wird auf dem Bild je nach ausgewählter Option angezeigt. Mit der Option **Freihand** können Sie das Bild ohne Einschränkungen des Seitenverhältnisses zuschneiden.
 
 1. Wählen Sie den Bereich aus, der beschnitten werden soll, und ändern Sie die Größe oder Position auf dem Bild.
 
@@ -863,9 +866,9 @@ Es folgt ein Beispiel, wie Sie [!DNL Experience Manager] konfigurieren können, 
 
 1. Laden Sie die Google Noto CJK-Schriftarten über die folgenden Links herunter und speichern Sie sie im Schriftartenverzeichnis, das in Font Manager Service konfiguriert ist.
 
-   * Schriftart All In One Super CJK: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans (für europäische Sprachen): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * Noto-Schriftarten für eine Sprache Ihrer Wahl: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
+   * Schriftart All In One Super CJK: [https://fonts.google.com/noto/use](https://fonts.google.com/noto/use)
+   * Noto Sans (für europäische Sprachen): [https://fonts.google.com/noto](https://fonts.google.com/noto)
+   * Noto-Schriftarten für eine Sprache Ihrer Wahl: [https://fonts.google.com/noto](https://fonts.google.com/noto)
 
 1. Konfigurieren Sie die PDF-Datei, die Anmerkungen enthält, indem Sie den Schriftartparameter auf `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` setzen. Diese Konfiguration ist standardmäßig verfügbar und funktioniert für alle europäischen und CJK-Sprachen.
 1. Wenn sich die Sprache Ihrer Wahl von den Sprachen unterscheidet, die in Schritt 2 erwähnt werden, fügen Sie der Standardschriftart einen entsprechenden (kommagetrennten) Eintrag hinzu.
@@ -879,7 +882,7 @@ Sie können Versionen in [!DNL Experience Manager] in den folgenden Szenarien er
 * Laden Sie ein Asset mit einem Dateinamen hoch, der am selben Speicherort bereits vorhanden ist. Es kann sich um ein neues Asset oder eine geänderte Version desselben Assets handeln.
 * Bearbeiten Sie ein Bild in [!DNL Experience Manager] und speichern Sie die Änderungen.
 * Bearbeiten Sie die Metadaten eines Assets.
-* Verwenden Sie das [!DNL Experience Manager]-Desktop-Programm zum Auschecken eines vorhandenen Assets, Bearbeiten des Assets und [Hochladen Ihrer Änderungen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#edit-assets-upload-updated-assets).
+* Verwendung [!DNL Experience Manager] Desktop-Programm zum Auschecken eines vorhandenen Assets, Bearbeiten des Assets und [Ihre Änderungen hochladen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#edit-assets-upload-updated-assets).
 
 Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. Wenn Sie eine Version für ein Asset erstellen, werden die Metadaten und Ausgabedarstellungen gemeinsam mit der Version gespeichert. Ausgabedarstellungen sind gerenderte Alternativen für dieselben Bilder, z. B. eine PNG-Ausgabedarstellung einer hochgeladenen JPEG-Datei.
 
@@ -895,9 +898,9 @@ Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. 
    * Klicken Sie auf **[!UICONTROL Als Version speichern]**, um eine Version für das Asset zu erstellen. Fügen Sie optional eine Beschriftung und einen Kommentar hinzu.
    * Klicken Sie auf **[!UICONTROL Erstellen]**, um eine Version zu erstellen.
 
-      ![Erstellen der Asset-Version über die Seitenleiste](assets/create-new-version-from-timeline.png)
+     ![Erstellen der Asset-Version über die Seitenleiste](assets/create-new-version-from-timeline.png)
 
-      *Abbildung: Erstellen Sie eine Version eines Assets über die [!UICONTROL Zeitleiste] in der linken Seitenleiste.*
+     *Abbildung: Erstellen Sie eine Version eines Assets über die [!UICONTROL Zeitleiste] in der linken Seitenleiste.*
 
 1. So zeigen Sie eine Version eines Assets an:
 
@@ -911,9 +914,9 @@ Sie können mithilfe eines Workflows die automatische Versionierung aktivieren. 
    * Klicken Sie auf eine Version des Assets. Fügen Sie optional einen Titel und einen Kommentar hinzu.
    * Klicken Sie auf **[!UICONTROL Auf diese Version zurück]**.
 
-      ![Auswählen einer Version, um sie wiederherzustellen](assets/select_version.png)
+     ![Auswählen einer Version, um sie wiederherzustellen](assets/select_version.png)
 
-      *Abbildung: Wählen Sie eine Version aus und stellen Sie sie wieder her. Sie wird zur aktuellen Version, die dann für DAM-Benutzerinnen und -Benutzer verfügbar ist.*
+     *Abbildung: Wählen Sie eine Version aus und stellen Sie sie wieder her. Sie wird zur aktuellen Version, die dann für DAM-Benutzerinnen und -Benutzer verfügbar ist.*
 
 1. Gehen Sie wie folgt vor, um zwei Versionen eines Bildes zu vergleichen:
    * Klicken Sie auf die Version, die mit der aktuellen Version verglichen werden soll.
@@ -934,7 +937,7 @@ Eine Sammlung ist ein geordneter Satz von Assets. Verwenden Sie Sammlungen, um v
 * Eine Sammlung kann Assets aus verschiedenen Speicherorten enthalten, da sie nur Verweise auf diese Assets enthalten. Jede Sammlung behält die referenzielle Integrität von Assets bei.
 * Sie können Sammlungen für mehrere Benutzer mit unterschiedlichen Berechtigungsstufen (Bearbeiten, Anzeigen usw.) freigeben.
 
-Weitere Informationen zur Sammlungsverwaltung finden Sie unter [Verwalten von Sammlungen](/help/assets/manage-collections.md).
+Weitere Informationen zur Sammlungsverwaltung finden Sie unter [Verwalten von digitalen Asset-Sammlungen](/help/assets/manage-collections.md).
 
 ## Ausblenden abgelaufener Assets beim Anzeigen von Assets im Desktop-Programm oder Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
@@ -954,4 +957,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Weitere Informationen finden Sie unter [Durchsuchen von DAM-Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets) und [Verwenden von Adobe Asset Link](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Weitere Informationen finden Sie unter [Durchsuchen von DAM-Assets mit dem Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets) und [Verwenden von Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html).
