@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
 workflow-type: tm+mt
-source-wordcount: '1508'
-ht-degree: 9%
+source-wordcount: '1509'
+ht-degree: 8%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 9%
 
 | **[⇐ Funktionsgrundlagen](essentials.md)** | **[Server-seitige Anpassung imetall](server-customize.md)** |
 |---|---|
-|  | **[Client-seitige Anpassung imetall](client-customize.md)** |
+|   | **[Client-seitige Anpassung imetall](client-customize.md)** |
 
 Handlebars Helpers (helpers) sind Methoden, die von Handlebars-Skripten aufgerufen werden können, um die Arbeit mit SCF-Komponenten zu erleichtern.
 
@@ -49,19 +49,19 @@ Wenn safeString auf &quot;true&quot;gesetzt ist, ist die zurückgegebene Zeichen
 
 * **context**: Zeichenfolge
 
-   (Optional) Der Standardwert ist die leere Zeichenfolge.
+  (Optional) Der Standardwert ist die leere Zeichenfolge.
 
 * **maxLength**: Zahl
 
-   (Optional) Der Standardwert ist die Länge des Kontexts.
+  (Optional) Der Standardwert ist die Länge des Kontexts.
 
 * **maxWords**: Zahl
 
-   (Optional) Die Standardeinstellung ist die Anzahl der Wörter in der gekürzten Zeichenfolge.
+  (Optional) Die Standardeinstellung ist die Anzahl der Wörter in der gekürzten Zeichenfolge.
 
 * **safeString**: Boolesch
 
-   (Optional) Gibt einen Handlebars.SafeString() zurück, wenn &quot;true&quot;. Der Standardwert lautet false.
+  (Optional) Gibt einen Handlebars.SafeString() zurück, wenn &quot;true&quot;. Der Standardwert ist &quot;false&quot;.
 
 ### Beispiele {#examples}
 
@@ -97,23 +97,23 @@ Ein Hilfsprogramm zum Hinzufügen von zwei Bereichen unter einem div, einer für
 
 * **context**: Zeichenfolge
 
-   (Optional) Der Standardwert ist die leere Zeichenfolge.
+  (Optional) Der Standardwert ist die leere Zeichenfolge.
 
 * **numChars**: Zahl
 
-   (Optional) Die Anzahl der Zeichen, die angezeigt werden sollen, wenn kein Volltext angezeigt wird. Der Standardwert ist 100.
+  (Optional) Die Anzahl der Zeichen, die angezeigt werden sollen, wenn kein Volltext angezeigt wird. Der Standardwert ist 100.
 
 * **moreText**: Zeichenfolge
 
-   (Optional) Der anzuzeigende Text, der angibt, dass mehr Text angezeigt werden soll. Der Standardwert ist &quot;more&quot;.
+  (Optional) Der anzuzeigende Text, der angibt, dass mehr Text angezeigt werden soll. Der Standardwert ist &quot;more&quot;.
 
 * **ellipsesText**: Zeichenfolge
 
-   (Optional) Der Text, der anzeigt, dass ausgeblendeter Text vorhanden ist. Der Standardwert ist &quot;...&quot;.
+  (Optional) Der Text, der anzeigt, dass ausgeblendeter Text vorhanden ist. Der Standardwert ist &quot;...&quot;.
 
 * **safeString**: Boolesch
 
-   (Optional) Boolescher Wert, der angibt, ob Handlebars.SafeString() angewendet werden soll, bevor das Ergebnis zurückgegeben wird. Der Standardwert lautet false.
+  (Optional) Boolescher Wert, der angibt, ob Handlebars.SafeString() angewendet werden soll, bevor das Ergebnis zurückgegeben wird. Der Standardwert ist &quot;false&quot;.
 
 ### Beispiel {#example}
 
@@ -137,11 +137,11 @@ Hilfsmittel zum Zurückgeben einer formatierten Datums-Zeichenfolge.
 
 * **context**: Zahl
 
-   (Optional) ein Millisekunden-Wert, der vom 1. Januar 1970 (Epoche) versetzt wurde. Der Standardwert ist das aktuelle Datum.
+  (Optional) ein Millisekunden-Wert, der vom 1. Januar 1970 (Epoche) versetzt wurde. Der Standardwert ist das aktuelle Datum.
 
 * **format**: Zeichenfolge
 
-   (Optional) Das anzuwendende Datumsformat. Der Standardwert ist &quot;YYYY-MM-DDTHH&quot;:mm:ss.sssZ&quot;und das Ergebnis wird als &quot;2015-03-18T18&quot;angezeigt:17:13-07:00&quot;
+  (Optional) Das anzuwendende Datumsformat. Der Standardwert ist &quot;YYYY-MM-DDTHH&quot;:mm:ss.sssZ&quot;und das Ergebnis wird als &quot;2015-03-18T18&quot;angezeigt:17:13-07:00&quot;
 
 ### Beispiele {#examples-1}
 
@@ -165,11 +165,11 @@ Hilfsmittel zum Zurückgeben von Inhalten in Abhängigkeit von einer Gleichheits
 
 * **lvalue**: Zeichenfolge
 
-   Der zu vergleichende linke Wert.
+  Der zu vergleichende linke Wert.
 
 * **rvalue**: Zeichenfolge
 
-   Der zu vergleichende Wert auf der rechten Seite.
+  Der zu vergleichende Wert auf der rechten Seite.
 
 ### Beispiel {#example-1}
 
@@ -183,17 +183,17 @@ Hilfsmittel zum Zurückgeben von Inhalten in Abhängigkeit von einer Gleichheits
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Ein Block-Helfer, der den aktuellen Wert von [WCM-Modus](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) für eine durch eine Zeichenfolge getrennte Liste von Modi.
+Ein Block-Helfer, der den aktuellen Wert von [WCM-Modus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) für eine durch eine Zeichenfolge getrennte Liste von Modi.
 
 ### Parameter {#parameters-4}
 
 * **context**: Zeichenfolge
 
-   (Optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben wurde.
+  (Optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben wurde.
 
 * **mode**: Zeichenfolge
 
-   (Optional) Eine kommagetrennte Liste von [WCM-Modi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) , um zu testen, falls festgelegt.
+  (Optional) Eine kommagetrennte Liste von [WCM-Modi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) , um zu testen, falls festgelegt.
 
 ### Beispiel {#example-2}
 
@@ -215,15 +215,15 @@ Siehe auch [Internationalisieren von Zeichenfolgen in JavaScript-Code](../../hel
 
 * **context**: Zeichenfolge
 
-   (Optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben wurde.
+  (Optional) Die zu übersetzende Zeichenfolge. Erforderlich, wenn kein Standardwert angegeben wurde.
 
 * **default**: Zeichenfolge
 
-   (Optional) Die zu übersetzende Standardzeichenfolge. Erforderlich, wenn kein Kontext angegeben wurde.
+  (Optional) Die zu übersetzende Standardzeichenfolge. Erforderlich, wenn kein Kontext angegeben wurde.
 
 * **comment**: Zeichenfolge
 
-   (Optional) Ein Übersetzungshinweis
+  (Optional) Ein Übersetzungshinweis
 
 ### Beispiel {#example-3}
 
@@ -232,7 +232,7 @@ Siehe auch [Internationalisieren von Zeichenfolgen in JavaScript-Code](../../hel
 {{i18n "hello" comment="greeting" default="bonjour"}}
 ```
 
-## Einbeziehen {#include}
+## Einschließen {#include}
 
 Hilfsmittel zum Einfügen einer Komponente als nicht vorhandene Ressource in eine Vorlage.
 
@@ -246,27 +246,27 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die dem [cq
 
 * **context**: Zeichenfolge oder Objekt
 
-   (Optional, sofern kein relativer Pfad angegeben wird)
+  (Optional, sofern kein relativer Pfad angegeben wird)
 
-   Verwendung `this` , um den aktuellen Kontext zu übergeben.
+  Verwendung `this` , um den aktuellen Kontext zu übergeben.
 
-   Verwendung `this.id` zum Abrufen der Ressource unter `id` zum Rendern des angeforderten resourceType .
+  Verwendung `this.id` zum Abrufen der Ressource unter `id` zum Rendern des angeforderten resourceType .
 
 * **resourceType**: Zeichenfolge
 
-   (Optional) Der Ressourcentyp wird standardmäßig auf Ressourcentyp aus dem Kontext festgelegt.
+  (Optional) Der Ressourcentyp wird standardmäßig auf Ressourcentyp aus dem Kontext festgelegt.
 
 * **template**: Zeichenfolge
 
-   Pfad zum Komponentenskript.
+  Pfad zum Komponentenskript.
 
 * **path**: Zeichenfolge
 
-   (Erforderlich) Der Pfad zur Ressource. Wenn der Pfad relativ ist, muss ein Kontext angegeben werden. Andernfalls wird die leere Zeichenfolge zurückgegeben.
+  (Erforderlich) Der Pfad zur Ressource. Wenn der Pfad relativ ist, muss ein Kontext angegeben werden. Andernfalls wird die leere Zeichenfolge zurückgegeben.
 
 * **authoringDisabled**: Boolesch
 
-   (Optional) Der Standardwert ist &quot;false&quot;. Nur zur internen Verwendung.
+  (Optional) Der Standardwert ist &quot;false&quot;. Nur zur internen Verwendung.
 
 ### Beispiel {#example-4}
 
@@ -286,19 +286,19 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die dem [ui
 
 * **categories**: Zeichenfolge
 
-   (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
+  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
 
 * **Design**: Zeichenfolge
 
-   (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies beinhaltet alle designbezogenen Bibliotheken (CSS und JS) für die entsprechenden Kategorien. Der Designname wird aus der Abfrage extrahiert.
+  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies beinhaltet alle designbezogenen Bibliotheken (CSS und JS) für die entsprechenden Kategorien. Der Designname wird aus der Abfrage extrahiert.
 
 * **js**: Zeichenfolge
 
-   (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Bibliotheken für die betreffenden Kategorien mit ein.
+  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Bibliotheken für die betreffenden Kategorien mit ein.
 
 * **css**: Zeichenfolge
 
-   (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle CSS-Bibliotheken für die betreffenden Kategorien mit ein.
+  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle CSS-Bibliotheken für die betreffenden Kategorien mit ein.
 
 ### Beispiele {#examples-2}
 
@@ -353,11 +353,11 @@ Beispiel:
 
 * **context**: Zahl
 
-   Eine Zeit in der Vergangenheit, um mit &quot;jetzt&quot;zu vergleichen. Die Zeit wird als Millisekunden-Wertversatz ab dem 1. Januar 1970 (Epoche) ausgedrückt.
+  Eine Zeit in der Vergangenheit, um mit &quot;jetzt&quot;zu vergleichen. Die Zeit wird als Millisekunden-Wertversatz ab dem 1. Januar 1970 (Epoche) ausgedrückt.
 
 * **daysCutoff**: Zahl
 
-   Die Anzahl der Tage vor dem Wechsel zu einem tatsächlichen Datum. Der Standardwert ist 60.
+  Die Anzahl der Tage vor dem Wechsel zu einem tatsächlichen Datum. Der Standardwert ist 60.
 
 ### Beispiel {#example-5}
 
@@ -385,7 +385,7 @@ HINWEIS: Dies ist kein Validator und sollte nicht zum Schreiben von Attributwert
 
 * **context**: Objekt
 
-   Die zu kodierende HTML.
+  Die zu kodierende HTML.
 
 ### Beispiel {#example-6}
 
@@ -403,7 +403,7 @@ HINWEIS: Dies ist kein Validator und sollte nicht zum Schreiben von umsetzbaren 
 
 * **context**: Objekt
 
-   Die zu kodierende HTML.
+  Die zu kodierende HTML.
 
 ### Beispiel {#example-7}
 
@@ -421,7 +421,7 @@ HINWEIS: Dies ist kein Validator und soll nicht zum Schreiben in beliebiges Java
 
 * **context**: Objekt
 
-   Die zu kodierende HTML.
+  Die zu kodierende HTML.
 
 ### Beispiel {#example-8}
 
@@ -439,7 +439,7 @@ HINWEIS: dies kann eine leere Zeichenfolge zurückgeben
 
 * **context**: Objekt
 
-   Die URL, die bereinigt werden soll.
+  Die URL, die bereinigt werden soll.
 
 ### Beispiel {#example-9}
 
@@ -457,7 +457,7 @@ HINWEIS: dies kann eine leere Zeichenfolge zurückgeben
 * Der Kontext kann ein String-, number-, boolesches oder JSON-Datenobjekt sein.
 * Es ist möglich, ein im aktuellen Kontext verschachteltes Objekt als Kontext zu übergeben, z. B. `this.url` oder `this.id` (siehe folgende Beispiele für einfache und Blockhilfer).
 
-* Block Helpers sind Funktionen, die von überall in der Vorlage aufgerufen werden können. Sie können einen Block der Vorlage jedes Mal null oder mehrmals mit einem anderen Kontext aufrufen. Sie enthalten einen Kontext zwischen {{#*name*}} and {{/*name*}}.
+* Block Helpers sind Funktionen, die von überall in der Vorlage aufgerufen werden können. Sie können einen Block der Vorlage jedes Mal null oder mehrmals mit einem anderen Kontext aufrufen. Sie enthalten einen Kontext zwischen `{{#*name*}}` und `{{/*name*}}`.
 
 * Handlebars bietet einen letzten Parameter für Hilfedateien namens &quot;options&quot;. Das Sonderobjekt &#39;options&#39; enthält
 
@@ -603,4 +603,4 @@ Hinweis: Die SCF-Helfer werden in `/etc/clientlibs/social/commons/scf/helpers.js
 
 | **[⇐ Funktionsgrundlagen](essentials.md)** | **[Server-seitige Anpassung imetall](server-customize.md)** |
 |---|---|
-|  | **[Client-seitige Anpassung imetall](client-customize.md)** |
+|   | **[Client-seitige Anpassung imetall](client-customize.md)** |

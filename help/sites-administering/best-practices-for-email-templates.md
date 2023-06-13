@@ -1,7 +1,7 @@
 ---
 title: Best Practices für E-Mail-Vorlagen
 seo-title: Best Practices for Email Templates
-description: Finden Sie Best Practices zur Erstellung von E-Mail-Vorlagen in AEM.
+description: Hier finden Sie Best Practices zum Erstellen von E-Mail-Vorlagen in AEM.
 seo-description: Find best practices on creating email templates in AEM.
 uuid: 07417a63-7ca6-484c-b55d-57b319428329
 contentOwner: User
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1116'
-ht-degree: 100%
+source-git-commit: 70be796a50a93267b965d00db1b359d9a809ec08
+workflow-type: tm+mt
+source-wordcount: '1070'
+ht-degree: 75%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->Die AEM-E-Mail-Komponenten werden nicht mehr unterstützt. Aufgrund der Art von E-Mails, bei denen Inhalt und Stil zusammengeführt werden, können die standardmäßig von AEM bereitgestellten E-Mail-Komponenten von Kunden nur eingeschränkt wiederverwendet werden, da benutzerdefinierte Stile in allen Komponenten implementiert werden müssen, die für Projekte erforderlich sind.
+>Dieser Artikel gilt für die veralteten Foundation-Komponenten, die auf E-Mail-Komponenten AEM.
 >
->E-Mail-Komponenten können auf Projektebene implementiert werden. Die veralteten AEM-E-Mail-Komponenten veranschaulichen, wie dies erreicht werden kann. Diese veralteten Komponenten sollten jedoch nicht für Projekte verwendet werden.
+>Benutzer sollten die moderne [Kernkomponenten E-Mail-Komponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
-Dieses Dokument beschreibt einige der Best Practices zum E-Mail-Design, die eine gut entwickelte E-Mail-Kampagnenvorlage ermöglichen.
+In diesem Dokument werden einige Best Practices zum E-Mail-Design beschrieben, die zu einer gut entwickelten E-Mail-Kampagnenvorlage führen.
 
-Die in AEM verfügbare Demokampagne befolgt all diese Best Practices. Zu jeder Best Practice ist beschrieben, wie dieses Best Practices in der Demokampagne implementiert werden.
+Die in AEM verfügbare Demokampagne folgt diesen Best Practices. Wie die Best Practices in der Demokampagne implementiert werden, wird für jede Best Practice beschrieben.
 
 Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 
@@ -80,7 +80,7 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
   </tr>
   <tr>
    <td>Inline-CSS ist besser, als den gesamten CSS-Code am Anfang anzugeben.</td>
-   <td><p>Um die zugrunde liegende HTML-Struktur besser zu demonstrieren und die Möglichkeit zur Anpassung der Newsletter-Struktur zu erleichtern, erfolgen nur einige CSS-Definitionen inline.</p> <p>Basisstile und Vorlagenvarianten wurden im &lt;head&gt; der Seite in einen Stilblock extrahiert. Bei der finalen Übermittlung des Newsletters sollten diese CSS-Definitionen inline in HTML vorhanden sein. Ein automatischer Inlining-Mechanismus ist geplant, aktuell jedoch noch nicht verfügbar.</p> </td>
+   <td><p>Um die zugrunde liegende HTML-Struktur besser zu demonstrieren und die Möglichkeit zur Anpassung der Newsletter-Struktur zu erleichtern, erfolgen nur einige CSS-Definitionen inline.</p> <p>Basisstile und Vorlagenvarianten wurden im &lt;head&gt; der Seite in einen Stilblock extrahiert. Bei der endgültigen Übermittlung des Newsletters sollten diese CSS-Definitionen in die HTML eingefügt werden. Ein automatischer Inline-Mechanismus ist geplant, derzeit jedoch nicht verfügbar.</p> </td>
   </tr>
   <tr>
    <td>Halten Sie CSS einfach. Vermeiden Sie zusammengesetzte Stildeklarationen, Kompakt-Code, CSS-Layout-Eigenschaften, komplexe Selektoren und Pseudoelemente.</td>
@@ -133,13 +133,13 @@ Verwenden Sie diese Best Practices bei der Erstellung Ihres eigenen Newsletters.
 | Verwenden Sie weder JavaScript noch Flash. Diese Technologien werden von E-Mail-Clients größtenteils nicht unterstützt. | In der Newsletter-Vorlage werden weder JavaScript noch Flash verwendet. |
 | Fügen Sie eine Nur-Text-Version für das mehrteilige Senden hinzu. | Es wurde ein neues Widget in die Seiteneigenschaften integriert, mit dem im Handumdrehen eine Nur-Text-Version aus den Seiteninhalten extrahiert werden kann. Dies kann als Ausgangspunkt für die finale Nur-Text-Version verwendet werden. |
 
-## Kampagnen-Newsletter – Vorlagen und Beispiele {#campaign-newsletter-templates-and-examples}
+## Vorlagen und Beispiele für Campaign-Newsletter {#campaign-newsletter-templates-and-examples}
 
-AEM bietet Ihnen standardmäßig mehrere Vorlagen und Komponenten zur Erstellung von Kampagnen-Newslettern. Sie können diese Vorlagen und Komponenten zur Erstellung Ihrer benutzerdefinierten Newsletter verwenden.
+AEM enthält standardmäßig mehrere Vorlagen und Komponenten, mit denen Sie Kampagnen-Newsletter erstellen können. Sie können diese Vorlagen und Komponenten verwenden, um Ihre benutzerdefinierten Newsletter zu erstellen.
 
 ### Vorlagen {#templates}
 
-Um eine solide Grundlage zu schaffen und die Vielfalt der Möglichkeiten für den Inhaltsfluss zu erweitern, stehen standardmäßig drei leicht voneinander abweichende Vorlagentypen zur Verfügung. Sie können diese im Handumdrehen verwenden, um einen benutzerdefinierten Newsletter zu erstellen.
+Um eine solide Basis zu bieten und die Vielfalt an Inhaltsflussmöglichkeiten zu erweitern, sind standardmäßig drei leicht unterschiedliche Vorlagentypen verfügbar. Sie können diese im Handumdrehen verwenden, um einen benutzerdefinierten Newsletter zu erstellen.
 
 Alle verfügen über eine **Kopfzeile**, eine **Fußzeile** und einen **Hauptteil**. Unter dem Abschnitt mit dem Hauptteil variiert das **Spalten-Design** (1, 2 oder 3 Spalten) der verschiedenen Vorlagen.
 
@@ -147,7 +147,7 @@ Alle verfügen über eine **Kopfzeile**, eine **Fußzeile** und einen **Haup
 
 ### Komponenten {#components}
 
-Es stehen aktuell [sieben Komponenten zur Verfügung, die innerhalb von Kampagnenvorlagen verwendet werden können](/help/sites-authoring/adobe-campaign-components.md). Diese Komponenten basieren alle auf der Adobe-Markup-Sprache **HTL**.
+Es gibt derzeit [sieben Komponenten zur Verwendung in Kampagnenvorlagen](/help/sites-authoring/adobe-campaign-components.md). Diese Komponenten basieren alle auf der Adobe Markup-Sprache **HTL**.
 
 | **Komponentenname** | **Komponentenpfad** |
 |---|---|
@@ -161,6 +161,6 @@ Es stehen aktuell [sieben Komponenten zur Verfügung, die innerhalb von Kampagne
 
 >[!NOTE]
 >
->Diese Komponenten sind für Mail-Inhalte optimiert, d. h. sie befolgen die in diesem Dokument beschriebenen Best Practices. Die Verwendung standardmäßiger Komponenten verstößt in der Regel gegen diese Regeln.
+>Diese Komponenten sind für E-Mail-Inhalte optimiert. d. h. sie halten sich an die in diesem Dokument beschriebenen Best Practices. Die Verwendung anderer vordefinierter Komponenten verstößt normalerweise gegen diese Regeln.
 
-Diese Komponenten sind unter [Adobe Campaign-Komponenten](/help/sites-authoring/adobe-campaign-components.md) detailliert beschrieben.
+Diese Komponenten werden ausführlich unter [Adobe Campaign-Komponenten](/help/sites-authoring/adobe-campaign-components.md).

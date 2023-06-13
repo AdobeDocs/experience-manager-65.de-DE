@@ -1,5 +1,5 @@
 ---
-title: Dateibibliothek
+title: Dateibibliothek-Funktion
 seo-title: File Library Feature
 description: Mit der Funktion "Dateibibliothek"können angemeldete Site-Besucher Dateien hochladen, verwalten und herunterladen
 seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
 workflow-type: tm+mt
 source-wordcount: '735'
-ht-degree: 39%
+ht-degree: 10%
 
 ---
 
-# Dateibibliothek{#file-library-feature}
+# Dateibibliothek-Funktion{#file-library-feature}
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
-Mithilfe der Dateibibliothek können angemeldete Besucher der Site (Community-Mitglieder) Dateien auf die Community-Site hochladen, sie dort verwalten oder von dort herunterladen.
+Die Dateibibliotheksfunktion bietet angemeldeten Site-Besuchern (Community-Mitgliedern) die Möglichkeit, Dateien innerhalb der Community-Site hochzuladen, zu verwalten und herunterzuladen.
 
-In diesem Abschnitt der Dokumentation wird Folgendes beschrieben::
+In diesem Abschnitt der Dokumentation wird Folgendes beschrieben:
 
 * Hinzufügen der Dateibibliotheksfunktion zu einer AEM Site.
 * Konfigurationseinstellungen für `File Library` -Komponente.
@@ -35,7 +35,7 @@ So fügen Sie eine `File Library` -Komponente auf einer Seite im Autorenmodus zu
 
 * `Communities / File Library`
 
-und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
+und ziehen Sie sie an die gewünschte Stelle auf einer Seite.
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
@@ -43,7 +43,7 @@ Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/essentials
 
 ![file-library1](assets/file-library1.png)
 
-### Konfigurieren der Dateibibliothek {#configuring-file-library}
+### Dateibibliothek konfigurieren {#configuring-file-library}
 
 Wählen Sie die platzierte `File Library` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
@@ -53,115 +53,115 @@ Wählen Sie die platzierte `File Library` -Komponente, die aufgerufen und ausgew
 
 #### Registerkarte &quot;Kommentare&quot; {#comments-tab}
 
-Legen Sie auf der Registerkarte **Kommentare** fest, ob und wie Kommentare zu hochgeladenen Dateien angezeigt werden:
+Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hochgeladene Dateien angezeigt werden:
 
 * **Kommentare in Dateien zulassen**
 
-   Wenn diese Option aktiviert ist, lassen Sie Kommentare zu hochgeladenen Dateien zu. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, lassen Sie Kommentare zu hochgeladenen Dateien zu. Die Option Standard ist deaktiviert.
 
 * **Kommentare pro Seite**
 
-   Schränkt die Anzahl der pro Seite angezeigten Kommentare sowie die Anzahl der angezeigten Antworten ein. Der Standardwert ist **10**.
+  Schränkt die Anzahl der pro Seite angezeigten Kommentare sowie die Anzahl der angezeigten Antworten ein. Der Standardwert ist **10**.
 
 * **Max. Dateigröße**
 
-   Dieser Wert begrenzt die Größe der hochgeladenen Datei. Die Standardbeschränkung ist 104857600 (10 MB).
+  Dieser Wert begrenzt die Größe der hochgeladenen Datei. Der Standardwert ist 104857600 (10 MB).
 
 * **Maximale Nachrichtenlänge**
 
-   Maximale Zeichenanzahl, die in das Textfeld eingegeben werden kann. Der Standardwert ist 4096 Zeichen.
+  Maximale Zeichenanzahl, die in das Textfeld eingegeben werden kann. Der Standardwert beträgt 4096 Zeichen.
 
 * **Zulässige Dateitypen**
 
-   Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Der Standardwert ist nicht so angegeben, dass alle Dateitypen zulässig sind.
+  Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben werden, sind nicht angegebene Dateitypen nicht zulässig. Der Standardwert ist nicht so angegeben, dass alle Dateitypen zulässig sind.
 
 * **Rich-Text-Editor**
 
-   Wenn diese Option aktiviert ist, können Kommentare mit Markup eingegeben werden. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Kommentare mit Markup eingegeben werden. Die Option Standard ist deaktiviert.
 
 * **Kommentare löschen**
 
-   Wenn diese Option aktiviert ist, können Benutzer ihre eigenen Kommentare löschen. Diese Option ist standardmäßig aktiviert.
+  Wenn diese Option aktiviert ist, können Benutzer ihre eigenen Kommentare löschen. Die Option Standard ist aktiviert.
 
 * **Tagging zulassen**
 
-   Wenn diese Option aktiviert ist, wird die Möglichkeit zum Hinzufügen eines Tags zur Datei aktiviert. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, wird die Möglichkeit zum Hinzufügen eines Tags zur Datei aktiviert. Die Option Standard ist deaktiviert.
 
-* **Zulässige Namespaces**
+* **Zugelassene Namespaces**
 
-   Wenn die Option Tagging zulassen aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namespaces beschränkt. Wenn keines aktiviert ist, sind alle zulässig. In der Standardeinstellung werden alle Namespaces zugelassen.
+  Wenn die Option Tagging zulassen aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namespaces beschränkt. Wenn keines aktiviert ist, sind alle zulässig. Der Standardwert ist alle Namespaces.
 
 * **Empfehlungsgrenze**
 
-   Wenn die Option Tagging zulassen aktiviert ist, beschränkt diese Einstellung die Anzahl der vorgeschlagenen Tags, die angezeigt werden sollen. Wurde der Wert „-1“ festgelegt, werden beliebig viele Tags eingeblendet. Der Standardwert ist -1.
+  Wenn die Option Tagging zulassen aktiviert ist, beschränkt diese Einstellung die Anzahl der vorgeschlagenen Tags, die angezeigt werden sollen. Wenn auf -1 gesetzt, gibt es keine Begrenzung. Der Standardwert ist -1.
 
 * **Abstimmung zulassen**
 
-   Wenn diese Option aktiviert ist, wird die Möglichkeit zur Auswahl einer Datei aktiviert. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, wird die Möglichkeit zur Auswahl einer Datei aktiviert. Die Option Standard ist deaktiviert.
 
 * **Folgende zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Blog-Artikel hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
 
 * **Erwähnung aktivieren**
 
-   Wenn diese Option aktiviert ist, können registrierte Community-Benutzer andere registrierte Mitglieder (unter Verwendung von Vorname, Nachname, Benutzername) identifizieren und sie mit der gemeinsamen Syntax @user-name versehen. Die getaggten Benutzer erhalten Benachrichtigungen über ihre Erwähnungen.
+  Wenn diese Option aktiviert ist, können registrierte Community-Benutzer andere registrierte Mitglieder (unter Verwendung von Vorname, Nachname, Benutzername) identifizieren und sie mit der gemeinsamen Syntax @user-name versehen. Die getaggten Benutzer erhalten Benachrichtigungen über ihre Erwähnungen.
 
 * **Max. Erwähnungen**
 
-   Schränken Sie die maximale Anzahl der Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
+  Schränken Sie die maximale Anzahl der Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
 
 * **UI-Erwähnungsmuster**
 
-   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel ~{{familyName}}{{givenName}}.
+  Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel `~{{familyName}}{{givenName}}`.
 
 * **Antworten mit Diskussionsfaden zulassen**
 
-   Ist diese Option aktiviert, können Antworten auf gepostete Kommentare zugelassen werden. Diese Option ist standardmäßig deaktiviert.
+  Ist diese Option aktiviert, können Antworten auf gepostete Kommentare zugelassen werden. Die Option Standard ist deaktiviert.
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Legen Sie auf der Registerkarte **Benutzermoderation** fest, wie Kommentare moderiert werden sollen, falls diese zugelassen sind:
+Unter dem **Benutzermoderation** -Tab konfigurieren Sie die Moderation der Kommentare, falls Kommentare zulässig sind:
 
 * **Vor der Moderation**
 
-   Wenn diese Option aktiviert ist, müssen Kommentare genehmigt werden, bevor sie auf einer Veröffentlichungs-Site angezeigt werden. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, müssen Kommentare genehmigt werden, bevor sie auf einer Veröffentlichungs-Site angezeigt werden. Die Option Standard ist deaktiviert.
 
 * **Kommentare löschen**
 
-   Wenn diese Option aktiviert ist, kann der Besucher, der den Kommentar veröffentlicht hat, ihn löschen. Diese Option ist standardmäßig aktiviert.
+  Wenn diese Option aktiviert ist, kann der Besucher, der den Kommentar veröffentlicht hat, ihn löschen. Die Option Standard ist aktiviert.
 
 * **Kommentare ablehnen**
 
-   Ist diese Option aktiviert, können Moderatoren vertrauenswürdiger Mitglieder Kommentare ablehnen. Diese Option ist standardmäßig deaktiviert.
+  Ist diese Option aktiviert, können Moderatoren vertrauenswürdiger Mitglieder Kommentare ablehnen. Die Option Standard ist deaktiviert.
 
 * **Kommentare schließen/erneut öffnen**
 
-   Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder Kommentare schließen und erneut öffnen. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder Kommentare schließen und erneut öffnen. Die Option Standard ist deaktiviert.
 
 * **Kommentare kennzeichnen**
 
-   Ist diese Option aktiviert, können Besucher Kommentare als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
+  Ist diese Option aktiviert, können Besucher Kommentare als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
 * **Liste mit Kenn-zeichnungsgründen**
 
-   Wenn diese Option aktiviert ist, können Besucher aus einer Dropdown-Liste den Grund auswählen, aus dem ein Kommentar als unangemessen gekennzeichnet wird. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Besucher aus einer Dropdown-Liste den Grund auswählen, aus dem ein Kommentar als unangemessen gekennzeichnet wird. Die Option Standard ist deaktiviert.
 
 * **Grund für benutzerdefinierte Kennzeichnung**
 
-   Wenn diese Option aktiviert ist, können Besucher einen eigenen Grund für die Kennzeichnung eines Kommentars als unangemessen eingeben. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Besucher einen eigenen Grund für die Kennzeichnung eines Kommentars als unangemessen eingeben. Die Option Standard ist deaktiviert.
 
 * **Schwellenwert für Moderation**
 
-   Geben Sie an, wie oft ein Kommentar von Besuchern gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist einmal (**1**).
+  Geben Sie an, wie oft ein Kommentar von Besuchern gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist einmal (**1**).
 
 * **Kennzeichnungslimit**
 
-   Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Dieser Wert muss größer als der oder gleich dem **Schwellenwert für Moderation** sein. Der Standardwert ist 5.
+  Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich der **Schwellenwert für Moderation**. Der Standardwert ist 5.
 
 ### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
-Sortierfolge
+Sortieren nach
 
 Als Standard festlegen
 
@@ -169,6 +169,6 @@ Als Standard festlegen
 
 Weitere Informationen finden Sie unter [Grundlagen zur Dateibibliothek](/help/communities/essentials-file-library.md) für Entwickler.
 
-Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 Informationen zum Tagging von veröffentlichten Themen und Kommentaren finden Sie unter [Tagging benutzergenerierter Inhalte](/help/communities/tag-ugc.md).
