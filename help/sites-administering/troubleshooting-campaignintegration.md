@@ -8,10 +8,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
 exl-id: 317bab41-3504-4e46-9ddc-72e291a34e06
-source-git-commit: 0d91e54fde32f2fafb9a616ed4e957e9590fff26
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '803'
-ht-degree: 5%
+source-wordcount: '806'
+ht-degree: 2%
 
 ---
 
@@ -24,20 +24,20 @@ Die folgenden Tipps zur Fehlerbehebung helfen bei der Lösung der häufigsten Pr
 
 ## Allgemeine Tipps zur Problembehebung {#general-troubleshooting-tips}
 
-Überprüfen Sie, ob HTTP-Aufrufe von beiden Lösungen gesendet und empfangen werden (AEM > Adobe Campaign Classic, Adobe Campaign Classic > AEM). Dadurch sollen Firewall-/SSL-Probleme vermieden werden.
+Überprüfen Sie, ob HTTP-Aufrufe von beiden Lösungen gesendet und empfangen werden (AEM > Adobe Campaign Classic, Adobe Campaign Classic > AEM). Dieser Tipp hilft Ihnen, Firewall-/SSL-Probleme zu vermeiden.
 
-* Für AEM Funktion sehen Sie, dass JSON-Aufrufe über die AEM-Autorenoberfläche angefordert werden
-   * Dies sollte nicht zu einem HTTP-500-Fehler führen.
-   * Wenn HTTP-500-Fehler auftreten, überprüfen Sie die Datei `error.log`, um weitere Informationen zu erhalten.
+* Für AEM Funktion können Sie sehen, dass JSON-Aufrufe über die AEM-Autorenoberfläche angefordert werden
+   * Diese Aufrufe sollten nicht zu einem HTTP-500-Fehler führen.
+   * Wenn HTTP-500-Fehler auftreten, überprüfen Sie die `error.log` für weitere Informationen.
 * Die Anhebung der Debugging-Stufe für Kampagnenklassen in AEM kann auch zur Fehlerbehebung beitragen.
 
 ## Wenn die Verbindung fehlschlägt {#when-the-connection-fails}
 
-Vergewissern Sie sich, dass Sie die **aemserver** Operator in Adobe Campaign Classic.
+Vergewissern Sie sich, dass Sie die **`aemserver`** Operator in Adobe Campaign Classic.
 
 ## Wenn Bilder nicht in der Adobe Campaign Classic-Konsole angezeigt werden {#if-images-do-not-appear-in-the-adobe-campaign-console}
 
-Überprüfen Sie die HTML-Quelle und überprüfen Sie, ob Sie die URL vom Clientcomputer aus öffnen können. Wenn die URL `localhost:4503` Ändern Sie anschließend die Konfiguration von Day CQ Link Externalizer in Ihrer AEM-Autoreninstanz so, dass sie auf eine Veröffentlichungsinstanz verweist, die vom Adobe Campaign Classic Console-Computer aus aufgerufen werden kann.
+Überprüfen Sie die HTML-Quelle und überprüfen Sie, ob Sie die URL vom Clientcomputer aus öffnen können. Wenn die URL `localhost:4503` Ändern Sie darin die Konfiguration von Day CQ Link Externalizer in Ihrer AEM Autoreninstanz. Sie muss auf eine Veröffentlichungsinstanz verweisen, die vom Adobe Campaign Classic-Konsolencomputer aus erreicht werden kann.
 
 Siehe [Konfigurieren des Externalizers](/help/sites-administering/campaignstandard.md#configuring-the-externalizer).
 
@@ -70,7 +70,7 @@ Vergewissern Sie sich, dass Sie `en_CA.ISO-8859-15 locale` auf Ihrem Adobe Campa
 
 ## Wenn beim Kompilieren des Skripts &#39;get_nms_amcGetSeedMetaData_jssp&#39; ein Fehler auftritt {#if-you-get-an-error-while-compiling-script-get-nms-amcgetseedmetadata-jssp}
 
-Wenn die folgende Fehlermeldung in der AEM Protokolldatei angezeigt wird.
+Wenn die folgende Fehlermeldung in der AEM-Protokolldatei angezeigt wird:
 
 `com.day.cq.mcm.campaign.impl.CampaignConnectorImpl Internal Adobe Campaign error: response body is Error while compiling script 'get_nms_amcGetSeedMetaData_jssp' line 45: String.prototype.toJSON called on incompatible XML.`
 
@@ -86,7 +86,7 @@ Verwenden Sie die folgende Problemumgehung auf dem Adobe Campaign Classic-Server
 
 Wenn Sie auf **Synchronisieren** -Schaltfläche in Adobe Campaign Classic wird möglicherweise der folgende Fehler angezeigt.
 
-* `Error while executing the method ‘aemListContent' of service [nms:delivery](https://nmsdelivery/)`
+* `Error while executing the method 'aemListContent' of service [nms:delivery](https://nmsdelivery/)`
 
 Um dieses Problem zu beheben, stellen Sie sicher, dass die AEM Verbindungs-URL, die im **Externe Konten** in Adobe Campaign Classic ist vom Computer aus erreichbar.
 
@@ -98,15 +98,15 @@ Nach dem Klicken **Synchronisieren** in AEM erhalten Sie möglicherweise einen F
 
 * `Cannot parse XTK Date+Time 'undefined': not a valid XTK value.`
 
-Dies geschieht, wenn veraltete Adobe Campaign Classic-Informationen auf der AEM-Instanz vorhanden sind. Sie können dieses Problem lösen, indem Sie:
+Dieser Fehler tritt auf, wenn veraltete Adobe Campaign Classic-Informationen auf der AEM-Instanz vorhanden sind. Sie können dieses Problem wie folgt beheben:
 
-1. Entfernen aller Adobe Campaign Classic-Integrationskonfigurationen, die sich auf AEM befinden.
+1. Entfernen Sie alle Adobe Campaign Classic-Integrationskonfigurationen, die sich auf AEM befinden.
 1. Erstellen Sie die Integration neu.
-1. Erstellen Sie eine neue Vorlage.
+1. Erstellen von Vorlagen.
 
 ## Wenn eine Verbindung zu SSL einen Fehler beim Einrichten des Cloud Service anzeigt {#if-a-connection-to-ssl-displays-an-error-when-setting-up-the-cloud-service}
 
-Bitte erstellen Sie ein Ticket beim Adobe Campaign-Supportteam, wenn Sie Folgendes im `error.log` AEM.
+Senden Sie ein Ticket an das Adobe Campaign-Supportteam, wenn Folgendes im `error.log` AEM.
 
 ```text
 javax.net.ssl.SSLProtocolException: handshake alert:  unrecognized_name
@@ -120,27 +120,27 @@ at sun.security.ssl.AppOutputStream.write(Unknown Source)
 
 ## Wenn HTTP anstelle der erwarteten HTTPS-Links im Synchronisierungsdialogfeld angezeigt wird {#if-you-see-http-instead-of-an-expected-https-links-in-the-synchronization-dialog}
 
-Wenn Sie versuchen, Inhalte im Adobe Campaign Classic-Versand zu synchronisieren, gibt AEM eine Liste von Newslettern zurück. Die URLs zu den Newslettern in der Liste können jedoch HTTP-Adressen anstelle von HTTPS sein. Bei Auswahl eines der Elemente in der Liste tritt ein Fehler auf. Dies kann bei der folgenden Einrichtung geschehen.
+Wenn Sie versuchen, Inhalte im Adobe Campaign Classic-Versand zu synchronisieren, gibt AEM eine Liste von Newslettern zurück. Die URLs zu den Newslettern in der Liste können jedoch HTTP-Adressen anstelle von HTTPS sein. Bei Auswahl eines der Elemente in der Liste tritt ein Fehler auf. Dieser Fehler kann bei der folgenden Einrichtung auftreten.
 
 * Gehostete Adobe Campaign mit HTTPS für die Kommunikation mit AEM Author
 * Umgekehrter Proxy, der SSL beendet
 * On-Premise-AEM-Autoreninstanz
 
-So lösen Sie dieses Problem:
+Gehen Sie wie folgt vor, um dieses Problem zu beheben:
 
-* Der AEM Dispatcher oder Reverse-Proxy muss konfiguriert werden, um das Originalprotokoll als Header zu übergeben.
-* Die **Apache Felix HTTP Service SSL-Filter** in der OSGi-Konfiguration von AEM muss mit den erforderlichen Kopfzeileneinstellungen konfiguriert werden.
+* Der AEM Dispatcher oder Reverse-Proxy muss konfiguriert werden, um das Originalprotokoll als Kopfzeile zu übergeben.
+* Die **Apache Felix HTTP Service SSL-Filter** in der OSGi-Konfiguration von AEM müssen mit den erforderlichen Kopfzeileneinstellungen konfiguriert werden.
    * `https://<host>:<port>/system/console/configMgr`
-   * Siehe [https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter](https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter)
+   * Siehe [https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter](https://github.com/apache/felix-dev/tree/master/http#using-the-ssl-filter)
 
 ## Eine benutzerdefinierte Vorlage kann nicht in den Seiteneigenschaften ausgewählt werden {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
 
-Beim Erstellen einer E-Mail-Vorlage in AEM für Adobe Campaign Classic müssen Sie die -Eigenschaft einbeziehen `acMapping` mit dem Wert `mapRecipient` im `jcr:content` -Knoten der Vorlage verwenden, oder Sie können die Adobe Campaign Classic-Vorlage nicht in **Seiteneigenschaften** AEM. Das Feld wird deaktiviert angezeigt.
+Beim Erstellen einer E-Mail-Vorlage in AEM für Adobe Campaign Classic müssen Sie die -Eigenschaft einbeziehen `acMapping` mit dem Wert `mapRecipient` im `jcr:content` Knoten der Vorlage. Ist dies nicht der Fall, kann die Adobe Campaign Classic-Vorlage in **Seiteneigenschaften** AEM. Das Feld wird deaktiviert angezeigt.
 
 ## Wenn der Fehler &quot;com.day.cq.mcm.campaign.servlets.util.ParameterMapper&quot;in den AEM Logs angezeigt wird {#if-you-get-the-error-com-day-cq-mcm-campaign-servlets-util-parametermapper-in-your-logs}
 
 Möglicherweise wird der Fehler angezeigt `com.day.cq.mcm.campaign.servlets.util.ParameterMapper` in den AEM Logs bei Verwendung einer benutzerdefinierten Vorlage.
 
-Dies ist ein Problem, bei dem die Variable `acMapping` -Eigenschaft auf einen anderen Wert als `recipient.firstName`, wird im Adobe Campaign Manager ein leerer Wert erstellt.
+Dieser Fehler tritt auf, wenn die `acMapping` -Eigenschaft auf einen anderen Wert als `recipient.firstName`, wird im Adobe Campaign Manager ein leerer Wert erstellt.
 
-Wenn dies auftritt, installieren Sie Feature Pack 6576 für AEM aus [Package Share](/help/sites-administering/package-manager.md#package-share).
+Wenn dieser Fehler auftritt, installieren Sie Feature Pack 6576 für AEM aus [Package Share](/help/sites-administering/package-manager.md#package-share).

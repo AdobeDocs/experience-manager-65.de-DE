@@ -1,8 +1,6 @@
 ---
 title: SCF Handlebars Helpers
-seo-title: SCF Handlebars Helpers
 description: Handlebars Helper-Methoden zur Erleichterung der Arbeit mit SCF
-seo-description: Handlebars Helper methods to facilitate work with SCF
 uuid: 9c514199-871e-4b68-8147-2052d2eeda15
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,10 +8,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '1509'
-ht-degree: 8%
+source-wordcount: '1473'
+ht-degree: 3%
 
 ---
 
@@ -183,7 +181,7 @@ Hilfsmittel zum Zurückgeben von Inhalten in Abhängigkeit von einer Gleichheits
 
 ## If-wcm-mode {#if-wcm-mode}
 
-Ein Block-Helfer, der den aktuellen Wert von [WCM-Modus](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) für eine durch eine Zeichenfolge getrennte Liste von Modi.
+Ein Block-Helfer, der den aktuellen Wert von [WCM-Modus](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) für eine durch eine Zeichenfolge getrennte Liste von Modi.
 
 ### Parameter {#parameters-4}
 
@@ -193,7 +191,7 @@ Ein Block-Helfer, der den aktuellen Wert von [WCM-Modus](https://helpx.adobe.com
 
 * **mode**: Zeichenfolge
 
-  (Optional) Eine kommagetrennte Liste von [WCM-Modi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) , um zu testen, falls festgelegt.
+  (Optional) Eine kommagetrennte Liste von [WCM-Modi](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/WCMMode.html) , um zu testen, falls festgelegt.
 
 ### Beispiel {#example-2}
 
@@ -236,9 +234,9 @@ Siehe auch [Internationalisieren von Zeichenfolgen in JavaScript-Code](../../hel
 
 Hilfsmittel zum Einfügen einer Komponente als nicht vorhandene Ressource in eine Vorlage.
 
-Dadurch kann die Ressource programmgesteuert einfacher angepasst werden als für eine Ressource, die als JCR-Knoten hinzugefügt wird. Siehe [Hinzufügen oder Einschließen einer Communities-Komponente](scf.md#add-or-include-a-communities-component).
+Diese Methode ermöglicht die programmgesteuerte Anpassung der Ressource, als es für eine Ressource möglich ist, die als JCR-Knoten hinzugefügt wird. Siehe [Hinzufügen oder Einschließen einer Communities-Komponente](scf.md#add-or-include-a-communities-component).
 
-Es sind nur einige ausgewählte Communities-Komponenten eingeschlossen. Für AEM 6.1 sind die inklusiven [Kommentare](essentials-comments.md), [Bewertung](rating-basics.md), [Bewertungen](reviews-basics.md)und [abstimmen](essentials-voting.md).
+Es sind nur einige ausgewählte Communities-Komponenten verfügbar, die einbezogen werden können. <!-- OBSOLETE/OLD  NEED TO UPDATE FOR 6.5  For AEM 6.1, those that are includable are [comments](essentials-comments.md), [rating](rating-basics.md), [reviews](reviews-basics.md), and [voting](essentials-voting.md). -->
 
 Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die dem [cq:include](../../help/sites-developing/taglib.md) für JSP-Skripte.
 
@@ -254,7 +252,7 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die dem [cq
 
 * **resourceType**: Zeichenfolge
 
-  (Optional) Der Ressourcentyp wird standardmäßig auf Ressourcentyp aus dem Kontext festgelegt.
+  (Optional) Der Ressourcentyp ist standardmäßig auf den Ressourcentyp aus dem Kontext eingestellt.
 
 * **template**: Zeichenfolge
 
@@ -274,11 +272,11 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die dem [cq
 {{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}
 ```
 
-Dazu gehört eine neue Kommentarkomponente unter `this.id` + /comments.
+Enthält eine neue Kommentarkomponente unter `this.id` + /comments.
 
 ## IncludeClientLib {#includeclientlib}
 
-Ein Hilfsprogramm, das eine AEM HTML-Client-Bibliothek enthält, die eine JS-, CSS- oder Design-Bibliothek sein kann. Für mehrere Einschlüsse verschiedener Typen, z. B. js und css, muss dieses Tag mehrmals im Handlebars-Skript verwendet werden.
+Ein Hilfsprogramm, das eine AEM HTML-Client-Bibliothek enthält, die eine JS-, CSS- oder Design-Bibliothek sein kann. Für mehrere Einschlüsse verschiedener Typen, z. B. js und css, muss dieses Tag im Handlebars-Skript mehrmals verwendet werden.
 
 Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die dem [ui:includeClientLib](../../help/sites-developing/taglib.md) für JSP-Skripte.
 
@@ -286,19 +284,19 @@ Dieser Helfer, der nur serverseitig geeignet ist, bietet Funktionen, die dem [ui
 
 * **categories**: Zeichenfolge
 
-  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Dateien und CSS-Bibliotheken für die betreffenden Kategorien mit ein. Der Designname wird aus der Abfrage extrahiert.
+  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Schließen Sie alle JavaScript- und CSS-Bibliotheken für die angegebenen Kategorien ein. Der Designname wird aus der Abfrage extrahiert.
 
 * **Design**: Zeichenfolge
 
-  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies beinhaltet alle designbezogenen Bibliotheken (CSS und JS) für die entsprechenden Kategorien. Der Designname wird aus der Abfrage extrahiert.
+  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Schließen Sie alle themenbezogenen Bibliotheken (CSS und JS) für die angegebenen Kategorien ein. Der Designname wird aus der Abfrage extrahiert.
 
 * **js**: Zeichenfolge
 
-  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle Javascript-Bibliotheken für die betreffenden Kategorien mit ein.
+  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Umfasst alle JavaScript-Bibliotheken für die angegebenen Kategorien.
 
 * **css**: Zeichenfolge
 
-  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Dies bezieht alle CSS-Bibliotheken für die betreffenden Kategorien mit ein.
+  (Optional) Eine Liste mit kommagetrennten Client-Bibliothekskategorien. Umfasst alle CSS-Bibliotheken für die angegebenen Kategorien.
 
 ### Beispiele {#examples-2}
 
@@ -379,7 +377,7 @@ Depending on how long in the past, may return
 
 Ein Hilfsprogramm, das eine Quellzeichenfolge für HTML-Elementinhalte kodiert, um den Schutz vor XSS zu unterstützen.
 
-HINWEIS: Dies ist kein Validator und sollte nicht zum Schreiben von Attributwerten verwendet werden.
+HINWEIS: Dieser Hilfsprogramm ist kein Validator und darf nicht zum Schreiben von Attributwerten verwendet werden.
 
 ### Parameter {#parameters-9}
 
@@ -397,7 +395,7 @@ HINWEIS: Dies ist kein Validator und sollte nicht zum Schreiben von Attributwert
 
 Ein Hilfsprogramm, das eine Quellzeichenfolge zum Schreiben in einen HTML-Attributwert kodiert, um den Schutz vor XSS zu erleichtern.
 
-HINWEIS: Dies ist kein Validator und sollte nicht zum Schreiben von umsetzbaren Attributen (href, src, event handlers) verwendet werden.
+HINWEIS: Dieser Hilfsprogramm ist kein Validator und darf nicht zum Schreiben von umsetzbaren Attributen (href, src, event handlers) verwendet werden.
 
 ### Parameter {#parameters-10}
 
@@ -415,7 +413,7 @@ HINWEIS: Dies ist kein Validator und sollte nicht zum Schreiben von umsetzbaren 
 
 Ein Hilfsprogramm, das eine Quellzeichenfolge zum Schreiben in JavaScript-Zeichenfolgeninhalte kodiert, um den Schutz vor XSS zu unterstützen.
 
-HINWEIS: Dies ist kein Validator und soll nicht zum Schreiben in beliebiges JavaScript verwendet werden.
+HINWEIS: Dieser Helfer ist kein Validator und darf nicht zum Schreiben in beliebiges JavaScript verwendet werden.
 
 ### Parameter {#parameters-11}
 
@@ -433,7 +431,7 @@ var input = {{xss-jsString topic-title}}
 
 Ein Helfer, der eine URL zum Schreiben als HTML href- oder srce-Attributwert bereinigt, um den Schutz vor XSS zu unterstützen.
 
-HINWEIS: dies kann eine leere Zeichenfolge zurückgeben
+HINWEIS: Dieser Helfer kann eine leere Zeichenfolge zurückgeben.
 
 ### Parameter {#parameters-12}
 
@@ -450,7 +448,7 @@ HINWEIS: dies kann eine leere Zeichenfolge zurückgeben
 ## Handlebars.js - Grundlegende Übersicht {#handlebars-js-basic-overview}
 
 * Ein Handlebars Helper-Aufruf ist eine einfache Kennung (die *name* des Helfers), gefolgt von null oder mehr durch Leerzeichen getrennten Parametern.
-* Parameter können ein einfaches String-, number-, boolesches oder JSON-Objekt sowie eine optionale Sequenz von Schlüssel-Wert-Paaren (Hash-Argumenten) als letzte Parameter sein.
+* Parameter können ein einfaches String-, number-, boolesches oder JSON-Objekt und eine optionale Sequenz von Schlüssel-Wert-Paaren (Hash-Argumenten) als letzte Parameter sein.
 * Die Schlüssel in Hash-Argumenten müssen einfache Bezeichner sein.
 * Die Werte in den Hash-Argumenten sind Handlebars-Ausdrücke: einfache Bezeichner, Pfade oder Zeichenfolgen.
 * den aktuellen Kontext, `this`ist immer für Handlebars-Helfer verfügbar.
@@ -459,7 +457,7 @@ HINWEIS: dies kann eine leere Zeichenfolge zurückgeben
 
 * Block Helpers sind Funktionen, die von überall in der Vorlage aufgerufen werden können. Sie können einen Block der Vorlage jedes Mal null oder mehrmals mit einem anderen Kontext aufrufen. Sie enthalten einen Kontext zwischen `{{#*name*}}` und `{{/*name*}}`.
 
-* Handlebars bietet einen letzten Parameter für Hilfedateien namens &quot;options&quot;. Das Sonderobjekt &#39;options&#39; enthält
+* Handlebars bieten einen endgültigen Parameter für Helfer namens &quot;options&quot;. Das Sonderobjekt &#39;options&#39; enthält
 
    * Optionale private Daten (options.data)
    * Optionale Tastenwerteigenschaften aus dem Aufruf (options.hash)
@@ -522,11 +520,11 @@ würde rendern:
 
 ## Benutzerdefinierte SCF-Helfer {#custom-scf-helpers}
 
-Benutzerdefinierte Helfer müssen sowohl serverseitig als auch Client-seitig implementiert werden, insbesondere bei der Übergabe von Daten. Bei SCF werden die meisten Vorlagen serverseitig kompiliert und gerendert, da der Server die HTML für eine bestimmte Komponente generiert, wenn die Seite angefordert wird.
+Benutzerdefinierte Helfer müssen auf Server- und Client-Seite implementiert werden, insbesondere bei der Übergabe von Daten. Bei SCF werden die meisten Vorlagen serverseitig kompiliert und gerendert, da der Server die HTML für eine bestimmte Komponente generiert, wenn die Seite angefordert wird.
 
 ### Benutzerdefinierte Helfer serverseitig {#server-side-custom-helpers}
 
-Um einen benutzerdefinierten SCF-Helfer serverseitig zu implementieren und zu registrieren, implementieren Sie einfach die Java-Oberfläche [TemplateHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), machen Sie es zu einem [OSGi-Dienst](../../help/sites-developing/the-basics.md#osgi) und installieren Sie es als Teil eines OSGi-Bundles.
+Um einen benutzerdefinierten SCF-Helfer serverseitig zu implementieren und zu registrieren, implementieren Sie einfach die Java™-Oberfläche [TemplateHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/handlebars/api/TemplateHelper.html), machen Sie es zu einem [OSGi-Dienst](../../help/sites-developing/the-basics.md#osgi) und installieren Sie es als Teil eines OSGi-Bundles.
 
 Beispiel:
 

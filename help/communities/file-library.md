@@ -1,8 +1,6 @@
 ---
 title: Dateibibliothek-Funktion
-seo-title: File Library Feature
 description: Mit der Funktion "Dateibibliothek"können angemeldete Site-Besucher Dateien hochladen, verwalten und herunterladen
-seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '733'
 ht-degree: 10%
 
 ---
@@ -35,17 +33,17 @@ So fügen Sie eine `File Library` -Komponente auf einer Seite im Autorenmodus zu
 
 * `Communities / File Library`
 
-und ziehen Sie sie an die gewünschte Stelle auf einer Seite.
+Und ziehen Sie es an die gewünschte Stelle auf einer Seite.
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) eingeschlossen sind, wird die `File Library` wird angezeigt:
+Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) eingeschlossen sind, wird die `File Library` -Komponente angezeigt:
 
 ![file-library1](assets/file-library1.png)
 
 ### Dateibibliothek konfigurieren {#configuring-file-library}
 
-Wählen Sie die platzierte `File Library` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte `File Library` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
@@ -61,7 +59,7 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
 * **Kommentare pro Seite**
 
-  Schränkt die Anzahl der pro Seite angezeigten Kommentare sowie die Anzahl der angezeigten Antworten ein. Der Standardwert ist **10**.
+  Beschränkt die Anzahl der pro Seite angezeigten Kommentare und die angezeigte Anzahl der Antworten. Der Standardwert ist **10**.
 
 * **Max. Dateigröße**
 
@@ -73,7 +71,7 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
 * **Zulässige Dateitypen**
 
-  Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben werden, sind nicht angegebene Dateitypen nicht zulässig. Der Standardwert ist nicht so angegeben, dass alle Dateitypen zulässig sind.
+  Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, sind keine nicht angegebenen Dateitypen zulässig. Der Standardwert ist nicht so angegeben, dass alle Dateitypen zulässig sind.
 
 * **Rich-Text-Editor**
 
@@ -85,11 +83,11 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
 * **Tagging zulassen**
 
-  Wenn diese Option aktiviert ist, wird die Möglichkeit zum Hinzufügen eines Tags zur Datei aktiviert. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, kann der Datei ein Tag hinzugefügt werden. Die Option Standard ist deaktiviert.
 
 * **Zugelassene Namespaces**
 
-  Wenn die Option Tagging zulassen aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namespaces beschränkt. Wenn keines aktiviert ist, sind alle zulässig. Der Standardwert ist alle Namespaces.
+  Wenn die Option Tagging zulassen aktiviert ist, sind die verfügbaren Tags auf die aktivierten Namespaces beschränkt. Wenn keine Namespaces aktiviert sind, sind alle zulässig. Der Standardwert ist alle Namespaces.
 
 * **Empfehlungsgrenze**
 
@@ -97,7 +95,7 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
 * **Abstimmung zulassen**
 
-  Wenn diese Option aktiviert ist, wird die Möglichkeit zur Auswahl einer Datei aktiviert. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, ist die Möglichkeit, für eine Datei zu stimmen, aktiviert. Die Option Standard ist deaktiviert.
 
 * **Folgende zulassen**
 
@@ -113,7 +111,7 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
 * **UI-Erwähnungsmuster**
 
-  Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel `~{{familyName}}{{givenName}}`.
+  Geben Sie die zulässige Musterzeichenfolge an, damit Sie den registrierten Benutzer in einem Beitrag mit Tags versehen (@mention). Beispiel: `~{{familyName}}{{givenName}}`.
 
 * **Antworten mit Diskussionsfaden zulassen**
 
@@ -129,7 +127,7 @@ Unter dem **Benutzermoderation** -Tab konfigurieren Sie die Moderation der Komme
 
 * **Kommentare löschen**
 
-  Wenn diese Option aktiviert ist, kann der Besucher, der den Kommentar veröffentlicht hat, ihn löschen. Die Option Standard ist aktiviert.
+  Wenn diese Option aktiviert ist, kann der Besucher, der den Kommentar veröffentlicht hat, ihn bei Bedarf löschen. Die Option Standard ist aktiviert.
 
 * **Kommentare ablehnen**
 

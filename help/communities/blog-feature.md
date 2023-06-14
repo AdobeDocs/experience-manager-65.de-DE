@@ -1,8 +1,6 @@
 ---
 title: Blog-Funktion
-seo-title: Blog Feature
 description: Community-Informationen im Journalformat
-seo-description: Community information in a journaling format
 uuid: 7323063f-81e8-45c3-9035-bf7df6124830
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '1666'
+source-wordcount: '1652'
 ht-degree: 8%
 
 ---
@@ -55,17 +53,17 @@ Wenn Sie im Autorenmodus einen Blog zu einer Seite hinzufügen möchten, suchen 
 * `Communities / Blog`
 * `Communities / Blog Sidebar`
 
-und ziehen Sie sie an die gewünschte Stelle auf einer Seite, auf der der Blog erscheinen soll.
+Ziehen Sie sie an die gewünschte Stelle auf einer Seite, auf der der Blog erscheinen soll.
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) eingeschlossen sind, wird die `Blog` wird angezeigt:
+Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) enthalten sind, wird die `Blog` -Komponente wird wie folgt angezeigt:
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### Blog konfigurieren {#configuring-blog}
 
-Wählen Sie die platzierte `Blog` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Wählen Sie die platzierte `Blog` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -99,7 +97,7 @@ Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blog
 
   Fügen Sie die berechtigten Mitglieder hinzu, die Inhalte erstellen dürfen.
 
-* **Benutzergenerierte Inhalte im Autoren-Bearbeitungsmodus blockieren**
+* **Blockieren benutzergenerierter Inhalte im Bearbeitungsmodus des Autors**
 
   Wenn diese Option aktiviert ist, wird benutzergenerierter Inhalt bei der Bearbeitung im Autorenmodus blockiert.
 
@@ -143,11 +141,11 @@ Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blog
 
 * **Max. Dateigröße**
 
-  Nur relevant, wenn `Allow File Uploads` aktiviert ist. Dieses Feld begrenzt die Größe einer hochgeladenen Datei (in Byte). Der Standardwert ist 104857600 (10 MB).
+  Nur relevant, wenn `Allow File Uploads` aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 104857600 (10 MB).
 
 * **Zulässige Dateitypen**
 
-  Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben werden, dürfen nicht angegebene nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
+  Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, können die nicht angegebenen Dateitypen nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
 * **Maximale Dateigröße für Bildanhang**
 
@@ -181,11 +179,11 @@ Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blog
 
 * **Feature-Inhalt zulassen**
 
-  Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, wird die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
 
 * **Erwähnung aktivieren**
 
-  Wenn diese Option aktiviert ist, können registrierte Community-Benutzer andere registrierte Mitglieder (unter Verwendung von Vorname, Nachname, Benutzername) identifizieren und sie mit der gemeinsamen Syntax @user-name versehen. Die getaggten Benutzer erhalten Benachrichtigungen über ihre Erwähnungen.
+  Wenn diese Option aktiviert ist, können registrierte Community-Benutzer andere registrierte Mitglieder (unter Verwendung von Vorname, Nachname, Benutzername) identifizieren und sie mit der gemeinsamen Syntax @user-name versehen. Die getaggten Benutzer erhalten Benachrichtigungen über ihre eigenen Erwähnungen.
 
 * **Max. Erwähnungen**
 
@@ -193,7 +191,7 @@ Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blog
 
 * **UI-Erwähnungsmuster**
 
-  Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel `~{{familyName}}{{givenName}}`.
+  Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel: `~{{familyName}}{{givenName}}`.
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
@@ -201,7 +199,7 @@ Unter dem **Benutzermoderation** -Registerkarte die Moderationseinstellungen ang
 
 * **Posts ablehnen**
 
-  Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, dürfen Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Die Option Standard ist deaktiviert.
 
 * **Themen schließen/erneut öffnen**
 
@@ -229,11 +227,11 @@ Unter dem **Benutzermoderation** -Registerkarte die Moderationseinstellungen ang
 
 #### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
-Unter dem **Tag-Feld** -Registerkarte angeben, welche Tags bei **Tagging zulassen** wird auf der Seite **Einstellungen** tab :
+Unter dem **Tag-Feld** Registerkarte angeben, welche Tags angewendet werden können, wenn **Tagging zulassen** wird auf der Seite **Einstellungen** tab :
 
 * **Zugelassene Namespaces**
 
-  Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
+  Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
 * **Empfehlungsgrenze**
 
@@ -249,7 +247,7 @@ Unter dem **Journal-Seitenleisten-Einstellungen** -Registerkarte das Datumsforma
 
 * **Datumsformat**
 
-  Das Format, das für die Anzeige von Archiven von Blogeinträgen verwendet wird. Das Format verwendet Platzhalter, die der Java-Konvention folgen.
+  Das Format, das für die Anzeige von Archiven von Blogeinträgen verwendet wird. Das Format verwendet Platzhalter gemäß der Java™-Konvention.
 
    * jjjj : vollständiges Jahr, z. B. &quot;2015&quot;
    * yy : kurze Jahreszahl, z. B. &quot;15&quot;
@@ -267,9 +265,9 @@ Unter dem **Journal-Seitenleisten-Einstellungen** -Registerkarte das Datumsforma
    * Kategorien
    * Archive
 
-* **Pfad der Blopg-Komponente**
+* **Blog-Komponentenpfad**
 
-  *(Optional)* Der Speicherort der Blog-Ressource, von der aus Blog-Artikel aufgelistet werden sollen. Wenn das Feld leer gelassen wird, wird die Komponente von resourceType verwendet. `social/journal/components/hbs/journal` wird auf derselben Seite angezeigt.
+  *(Optional)* Der Speicherort der Blog-Ressource, von der aus Blog-Artikel aufgelistet werden sollen. Wenn dieses Feld leer gelassen wird, wird die Komponente resourceType verwendet. `social/journal/components/hbs/journal` wird auf derselben Seite angezeigt.
 
    * Beispiel: `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
@@ -289,13 +287,13 @@ Andere Möglichkeiten hängen davon ab, ob der Besucher der Site Moderator, Admi
 
 ### Arbeiten mit Artikeln {#working-with-articles}
 
-Beim Erstellen eines neuen Blogartikels haben Sie folgende Möglichkeiten:
+Beim Erstellen eines Blogartikels haben Sie folgende Möglichkeiten:
 
 1. Sofort veröffentlichen
 1. Entwurf veröffentlichen
 1. An einem geplanten Datum und zu einer geplanten Uhrzeit veröffentlichen
 
-Die Blogartikel werden auf der entsprechenden Registerkarte (Veröffentlicht, Entwürfe oder Geplant) für Mitglieder angezeigt, die in der Lage sind, sie in der Veröffentlichung zu erstellen.
+Die Blogartikel werden auf der entsprechenden Registerkarte (Veröffentlicht, Entwürfe oder Geplant) für Mitglieder angezeigt, die in der Lage sind, sie in der Veröffentlichungsumgebung zu erstellen.
 
 #### Moderatoren und Administratoren {#moderators-and-administrators}
 
@@ -309,7 +307,7 @@ Wenn der angemeldete Benutzer Community-Mitglied ist oder [privilegiertes Mitgli
 
 Insbesondere können sie:
 
-* Erstellen eines neuen Blogartikels
+* Erstellen eines Blogartikels
 * Posten eines neuen Blogartikels im Namen eines anderen Mitglieds
 * Posten eines Kommentars zu einem Blogartikel
 * Bearbeiten eigener Blogartikel oder Kommentare
