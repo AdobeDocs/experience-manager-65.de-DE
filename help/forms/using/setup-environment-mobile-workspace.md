@@ -1,8 +1,6 @@
 ---
 title: Einrichten einer Umgebung für die AEM Forms-App
-seo-title: Set up environment for AEM Forms app
-description: Hardware, Software und Lizenzen, um die AEM Forms-App zu erstellen und zu bereitstellen.
-seo-description: Hardware, software, and licenses to build and deploy the AEM Forms app.
+description: Hardware, Software und Lizenzen zum Erstellen und Bereitstellen der AEM Forms-App.
 uuid: 4123a6b7-5766-476c-9afb-f57029b148ad
 contentOwner: robhagat
 content-type: reference
@@ -11,37 +9,37 @@ topic-tags: forms-app
 discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
 docset: aem65
 exl-id: 1d1f9db2-83cf-4612-ac8c-d2638c3bbaea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '209'
-ht-degree: 100%
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+workflow-type: tm+mt
+source-wordcount: '207'
+ht-degree: 22%
 
 ---
 
 # Einrichten einer Umgebung für die AEM Forms-App{#set-up-environment-for-aem-forms-app}
 
-Sie benötigen folgende Hardware, Software und Lizenzen, um die AEM Forms-App erstellen und bereitstellen zu können:
+Sie benötigen die folgende Hardware, Software und Lizenzen, um die AEM Forms-App zu erstellen und bereitzustellen:
 
 ## Für Windows-Geräte {#for-windows-devices}
 
-* Microsoft Windows 10
-* Microsoft Visual Studio 2015
-* Microsoft Visual Studio-Tools für Apache Cordova
+* Microsoft® Windows 10
+* Microsoft® Visual Studio 2015
+* Microsoft® Visual Studio Tools for Apache Cordova
 
 ## Für iOS-Geräte {#for-ios-devices}
 
-* Intel-basierte Apple Mac, auf dem Mac OS X 10.9.5 oder höher ausgeführt wird
+* Intel-basierte Apple Mac mit macOS X 10.9.5 oder höher
 * iOS SDK 8.4 oder höher
 * Xcode-Version: Xcode 6.4 für OS X oder höher
 * Mitgliedschaft im iOS Developer Enterprise Program
 * Enterprise-Zertifikat zum Verteilen interner iOS-Apps
 * Apple iPad mit iOS 8.4 oder höher
 
-## Für Android-Geräte {#for-android-devices}
+## Für Android™-Geräte {#for-android-devices}
 
-* Android Development Toolkit (ADT-Bundle), das von [https://developer.android.com/sdk/index.html](https://developer.android.com/sdk/index.html) heruntergeladen werden kann
-* Wenn diese Umgebung auf einem MAC-System eingerichtet wird, sollte die ADT im Anwendungsordner installiert werden.
-* Wenn das ADT auf dem Mac auf einem anderen Speicherort installiert ist, oder wenn die Umgebung auf einem Windows-System eingerichtet ist, muss der ADT SDK-Pfad in der Datei `local.properties` aktualisiert werden, die im Ordner `src\android` im extrahierten Quellarchiv `mobileworkspace-src.zip` verfügbar ist. Zeigen Sie in dieser Datei die Variable `sdk.dir` auf den ADT SDK-Speicherort auf Ihrem Desktop.
+* Android™ Development Toolkit (ADT bundle), das heruntergeladen werden kann von [https://developer.android.com/studio](https://developer.android.com/studio)
+* Wenn die Umgebung auf einem Mac-System eingerichtet ist, sollte ADT im Ordner &quot;Applications&quot;installiert werden.
+* Wenn die ADT an einem anderen Speicherort auf Mac installiert ist oder die Umgebung auf einem Windows-System eingerichtet ist, muss der ADT SDK-Pfad in `local.properties` -Datei. Diese Datei ist im `src\android` Ordner im extrahierten Quellarchiv `mobileworkspace-src.zip`. Zeigen Sie in dieser Datei die Variable `sdk.dir` auf den ADT SDK-Speicherort auf Ihrem Desktop.
 
 >[!NOTE]
 >

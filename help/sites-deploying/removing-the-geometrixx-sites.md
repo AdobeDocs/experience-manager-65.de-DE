@@ -1,26 +1,24 @@
 ---
-title: Entfernen der Geometrixx-Websites
-seo-title: Removing the Geometrixx Sites
-description: Erfahren Sie, wie Sie den Geometrixx-Beispielinhalt entfernen.
-seo-description: Learn how to remove the sample Geometrixx content.
+title: Entfernen der Geometrixx Sites
+description: Erfahren Sie, wie Sie den Beispielinhalt des Geometrixx entfernen.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
-workflow-type: ht
-source-wordcount: '132'
-ht-degree: 100%
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+workflow-type: tm+mt
+source-wordcount: '126'
+ht-degree: 16%
 
 ---
 
 
-# Entfernen der Geometrixx-Websites{#removing-the-geometrixx-sites}
+# Entfernen der Geometrixx Sites{#removing-the-geometrixx-sites}
 
-AEM enthält standardmäßig eine Auswahl an Geometrixx-Beispielwebsites. Sie können diese Beispielinhalte über den **Paket-Manager** entfernen.
+AEM enthält eine Reihe von Beispiel-Geometrixx-Websites. Sie können diese Beispielinhalte über den **Paket-Manager** entfernen.
 
-Die einzelnen Geometrixx-bezogenen Pakete sind:
+Die einzelnen geometrixx-bezogenen Pakete sind:
 
 * `cq-geometrixx-outdoors-ugc-pkg-<version>.zip`
 * `cq-geometrixx-pkg-<version>.zip`
@@ -32,17 +30,17 @@ Die einzelnen Geometrixx-bezogenen Pakete sind:
 * `cq-geometrixx-commons-pkg-<version>.zip`
 * `cq-geometrixx-media-pkg-<version>.zip`
 
-Entfernen Sie einzelne Pakete, indem Sie dafür auf **Deinstallieren** klicken.
+Um ein einzelnes Paket zu entfernen, klicken Sie einfach auf **Deinstallieren** auf das Paket.
 
-Darüber hinaus gibt es noch ein Gesamtpaket:
+Es gibt auch ein Super-Paket:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Dieses Paket enthält sämtliche oben genannten Einzelpakete. Sie können sämtliche Geometrixx-bezogenen Inhalte auf einmal entfernen, indem Sie bei diesem Paket auf **Deinstallieren** klicken. Das Gesamtpaket wechselt in den Zustand „Deinstalliert“ und alle Einzelpakete verschwinden aus der Paket-Manager-Ansicht.
+Dieses Paket enthält alle oben genannten individuellen Pakete. Um alle geometrixx-bezogenen Inhalte gleichzeitig zu entfernen, klicken Sie auf **Deinstallieren** auf dieses Paket. Das Superpaket wechselt in den deinstallierten Status und alle einzelnen Pakete werden aus der Paketmanageransicht entfernt.
 
 Sie verfügen nun über eine leere AEM-Instanz ohne jegliche Beispielwebsites.
 
 >[!NOTE]
 >
->Bei einem Upgrade werden alle Geometrixx-Websites automatisch neu installiert. Sollten Sie diese Beispieldateien nicht wünschen, können Sie die Geometrixx-Websites nach dem Upgrade erneut entfernen.
+>Beim Aktualisieren werden Geometrixx Sites automatisch neu installiert. Entfernen Sie nach der Aktualisierung Geometrixx-Websites, wenn Sie diese Beispiele nicht benötigen.
 

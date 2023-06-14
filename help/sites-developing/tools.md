@@ -1,8 +1,6 @@
 ---
 title: Test- und Tracking-Tools
-seo-title: Testing and Tracking Tools
-description: AEM bietet ein Framework für das Testen von Komponentenbenutzeroberflächen und einen Mechanismus zum Testen und Debuggen von Komponenten.
-seo-description: AEM provides a framework for testing component UI and a mechanism for testing and debugging components
+description: AEM bietet ein Framework zum Testen der Komponentenbenutzeroberfläche und einen Mechanismus zum Testen und Debuggen von Komponenten
 uuid: 12abedb5-4ee7-4389-9340-e628adbbc053
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ content-type: reference
 discoiquuid: 3cf0fd8d-7fc8-468a-bb1e-1debb68a82a5
 docset: aem65
 exl-id: bb5d1c7c-56ce-4d1e-a3cb-4e74d6922137
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+workflow-type: tm+mt
 source-wordcount: '292'
-ht-degree: 100%
+ht-degree: 20%
 
 ---
 
@@ -27,41 +25,41 @@ AEM bietet:
 * [ein Framework für das Testen von Komponentenbenutzeroberflächen](/help/sites-developing/hobbes.md).
 * [einen Mechanismus zum Testen und Debuggen von Komponenten](/help/sites-developing/developer-mode.md).
 
-Im Folgenden werden zwei Open-Source-Test-Tools vorgestellt:
+Im Folgenden finden Sie zwei Open Source-Testtools:
 
 **Selenium**
 
-Selenium wird für Funktionstests im Browser mit einem Benutzer pro Aktivität verwendet. Das Tool zeichnet Prüfungsschritte (Klicks) entweder als HTML-Tabellen oder Java-Klassen auf.
+Selenium wird für Funktionstests in einem Browser mit einem Benutzer pro Aktivität verwendet. Testschritte (Klicks) werden entweder als HTML-Tabellen oder als Java™-Klassen aufgezeichnet.
 
-Weitere Informationen finden Sie unter [https://www.seleniumhq.org/](https://www.seleniumhq.org/).
+Weitere Informationen finden Sie unter [https://www.selenium.dev/](https://www.selenium.dev/).
 
 **JMeter**
 
-JMeter wird für das Tracking von Anfragen verwendet und kann für die Automatisierung von Funktions-, Leistungs- und Belastungstests verwendet werden.
+JMeter wird zur Nachverfolgung von Anforderungen verwendet und kann für Funktions-, Leistungs- und Stresstests verwendet werden.
 
-Weitere Informationen finden Sie unter [https://jakarta.apache.org/jmeter/](https://jakarta.apache.org/jmeter).
+Weitere Informationen finden Sie unter [https://jmeter.apache.org/](https://jmeter.apache.org/).
 
-Außerdem sind viele proprietäre Tools für die Automatisierung von Tests und die Verwaltung von Testplänen verfügbar.
+Es gibt auch viele proprietäre Tools für die Automatisierung von Tests und die Verwaltung von Testplänen.
 
 ### Tracking {#tracking}
 
-Die folgenden Tools stehen zur Verfügung. Eine wichtige Angelegenheit ist jedoch in allen Fällen die Verfügbarkeit der Daten für alle Mitglieder des Projektteams, also Partner und Kunde.
+Die folgenden Tools sind einfach verfügbar. Ein zentrales Problem ist jedoch in allen Fällen die Verfügbarkeit der Daten für alle Mitglieder des Projektteams - Partner und Kunde.
 
 **Bugzilla**
 
-Ein Bugtracker, der Ihren eigenen Anforderungen entsprechend konfiguriert werden kann.
+Ein Bug-Tracking-System, das für Ihre eigenen Anforderungen konfiguriert werden kann.
 
 **Tabellen**
 
 Tabellen sind zwar nicht als Bugtracker gedacht, werden aber oft als solche *miss* braucht, da sie leicht verständlich sind und viele Benutzer Erfahrung mit ihrer Verwendung haben.
 
-Wenn Tabellen als Bugtracker verwendet werden, dann:
+Wenn diese Tabellen zur Verfolgung verwendet werden, gehen Sie folgendermaßen vor:
 
-* sollten sie einfach gehalten werden.
-* sollte die Anzahl der einzelnen Tabellen möglichst gering gehalten werden.
-* müssen sie regelmäßig aktualisiert werden.
-* sollte nur eine Master-Kopie gepflegt werden, deren Speicherort allen bekannt ist.
-* sollten sie allen Projektmitgliedern zugänglich sein.
-* dürfen, falls Sicherheit ein Anliegen (oft in großen Unternehmen) und gemeinsamer Zugriff nicht möglich ist, Kopien verteilt werden, solange alle verstehen, dass es sich um Kopien handelt, die nicht aktualisiert werden können.
+* sie sollten einfach gehalten werden.
+* die Anzahl der einzelnen Tabellen sollte auf ein Minimum beschränkt werden.
+* sie müssen regelmäßig aktualisiert werden.
+* Es sollte nur eine Primärkopie aufbewahrt werden und jeder sollte wissen, wo die Primärkopie ist.
+* sie sollten für alle Projektmitglieder zugänglich sein.
+* Wenn Sicherheit ein Problem ist (häufig bei großen Unternehmen auftritt) und ein gemeinsamer Zugriff nicht möglich ist, können Kopien verteilt werden, solange alle verstehen, dass diese Tabellen Kopien sind und nicht aktualisiert werden können.
 
 Auch für das Tracking von Bugs und Funktionsanforderungen sind proprietäre Tools vorhanden.

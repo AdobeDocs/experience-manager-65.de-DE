@@ -1,8 +1,6 @@
 ---
 title: Entwickeln von Apps mit PhoneGap CLI
-seo-title: Developing Apps with PhoneGap CLI
-description: Auf dieser Seite erfahren Sie mehr über die Entwicklung von Apps mit PhoneGap CLI.
-seo-description: Follow this page to learn about developing apps with PhoneGap CLI.
+description: Erfahren Sie mehr über die Entwicklung von Apps mit PhoneGap CLI.
 uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
 contentOwner: User
 content-type: reference
@@ -10,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '696'
-ht-degree: 5%
+source-wordcount: '689'
+ht-degree: 2%
 
 ---
 
@@ -21,11 +19,11 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Als Entwickler können Sie Ihre App jederzeit auf einem Gerät oder in einem Emulator ausführen, sofern Sie Ihre Entwicklungsumgebung konfiguriert haben.
 
-Um die folgenden Beispiele auszuführen, benötigen Sie ein System, das OSx (Mac) mit Xcode ausführt, oder ein Mac/Win/Linux-System mit installiertem Android-SDK.
+Um die folgenden Beispiele auszuführen, benötigen Sie ein System, das OS X (Mac) mit Xcode ausführt, oder ein Mac/Win/Linux-System mit installiertem Android™ SDK.
 
 ## Bootstrap Ihrer Entwicklungsumgebung {#bootstrap-your-development-environment}
 
@@ -33,19 +31,19 @@ Um die folgenden Beispiele auszuführen, benötigen Sie ein System, das OSx (Mac
 
 Für iOS: Für die Entwicklung für iPhones und iPads benötigen Sie die Xcode-IDE von Apple.
 
-* kostenlos herunterladen [here](https://developer.apple.com/xcode/downloads/).
+* kostenlos herunterladen [here](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
 * [Handbuch zur PhoneGap iOS-Plattform](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
 
-Für Android: Für die Entwicklung für iPhones und iPads benötigen Sie die Android Stuido IDE von Google.
+Für Android™: Für die Entwicklung für iPhones und iPads benötigen Sie die Google Android™ Stuido IDE.
 
-* kostenlos herunterladen [here](https://developer.android.com/sdk/index.html).
-* [Handbuch zur PhoneGap Android-Plattform](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+* kostenlos herunterladen [here](https://developer.android.com/studio).
+* [Handbuch zur PhoneGap Android™-Plattform](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
 ## Quelle herunterladen {#download-the-source}
 
-Nachdem Sie die Entwicklungsumgebung erfolgreich gebootet haben, laden Sie die Quelle aus der Kachel zum Erstellen der AEM App herunter:
+Nachdem Sie Ihre Entwicklungsumgebung erfolgreich per Bootstrapping implementiert haben, laden Sie die Quelle aus der AEM App Build-Kachel herunter:
 
-* Klicken Sie auf den Dropdown-Chevron der PhoneGap Build-Kachel.
+* Klicken Sie auf den Dropdown-Chevron für die PhoneGap Build-Kachel.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -56,11 +54,11 @@ Nachdem Sie die Entwicklungsumgebung erfolgreich gebootet haben, laden Sie die Q
 
 >[!NOTE]
 >
->Die Entwicklungsquelle enthält den neuesten Status Ihrer App, einschließlich nicht gestaffelter Änderungen. Verwenden Sie die Staging-Quelle zum Erstellen von Release-Kandidaten für das Senden an Appstore-Anbieter.
+>Die Entwicklungsquelle enthält den neuesten Status Ihrer App und gleichzeitig nicht gestaffelte Änderungen. Verwenden Sie die Staging-Quelle zum Erstellen von Release-Kandidaten für das Senden an Appstore-Anbieter.
 >
->Wenn Sie Ihre App nie testen, wird durch die Auswahl von Staging der Staging-Workflow Trigger (Tipp: Dies wird als gestaffelte App in der PhoneGap Enterprise Viewer App angezeigt, die im AppStore und im Google PlayStore verfügbar ist.
+>Wenn Sie Ihre App nie testen, wird durch die Auswahl von Staging-Triggern der Staging-Workflow (Tipp: wird in der PhoneGap Enterprise Viewer App, die im AppStore und im Google Play Store verfügbar ist, als gestaffelte App angezeigt.
 
-* Klicken Sie auf Herunterladen und speichern Sie die ZIP auf Ihrem Computer.
+* Klicken Sie auf Herunterladen und speichern Sie die ZIP-Datei auf Ihrem Computer.
 * Extrahieren Sie die heruntergeladene ZIP-Datei in Ihren Arbeitsbereich.
 
 ## Erstellen und Laden der App (aus der Quelle) {#build-and-load-the-app-from-source}
@@ -85,21 +83,20 @@ phonegap run ios
 
 >[!NOTE]
 >
->Wenn Sie derzeit Probleme haben, gehen Sie zurück zu den Grundlagen zu Trommelschießen -
+>Wenn Sie derzeit Probleme haben, gehen Sie zurück zu den Grundlagen, um eine Fehlerbehebung durchzuführen -
 >
->1. Erstellen eines neuen Ordners (mkdir test)
+>1. Erstellen eines Ordners (mkdir-Test)
 >1. Navigieren Sie in diesen neuen Ordner (cd test).
->1. Führen Sie &#39;phonegap create helloWorld&#39; aus.
+>1. Führen Sie `phonegap create helloWorld` aus.
 >1. Navigieren Sie zu helloWorld (cd helloWorld).
->1. Führen Sie &#39;phonegap run android (oder ersetzen Sie android durch ios wie oben).
->1. Emulator öffnet die neu erstellte PhoneGap-App mit der Meldung &quot;Device Ready&quot;, wenn die JavaScript-Verbindung zum nativen Gerät betriebsbereit ist.
-
+>1. Ausführen `phonegap run android` (oder ersetzen Sie Android wie oben beschrieben durch iOS).
+>1. Emulator öffnet die neu erstellte PhoneGap-App mit der Meldung &quot;Device Ready&quot;, wenn die JavaScript Bridge zu nativ betriebsbereit ist.
 >
->Dadurch wird sichergestellt, dass die PhoneGap-CLI-Entwicklungsumgebung ordnungsgemäß ausgeführt wird.
+>Mit dieser Fehlerbehebung wird überprüft, ob Ihre PhoneGap-CLI-Entwicklungsumgebung ordnungsgemäß ausgeführt wird.
 
-## Debuggen von JavaScript-Dateien mit Safari und IOS-Debugging {#debug-javascripts-with-safari-and-ios-debug}
+## Debuggen von JavaScript mit Safari- und IOS-Debugging {#debug-javascripts-with-safari-and-ios-debug}
 
-Sie können die JavaScripts Ihrer App mit den Entwicklertools von Safari debuggen, so wie bei einer Webanwendung.
+Sie können das JavaScript Ihrer App mit den Entwicklerwerkzeugen von Safari genauso debuggen wie mit einer Webanwendung.
 
 ## Aktivieren der Safari-Entwicklertools {#enable-safari-developer-tools}
 
@@ -122,7 +119,7 @@ So aktivieren Sie die Entwicklertools:
 Sie können Safari entweder mit einem iOS-Gerät oder -Emulator verbinden.
 
 * Navigieren Sie in einem Konsolenfenster zum Stammverzeichnis der extrahierten Quelle.
-* Geben Sie den folgenden Befehl ein, um Ihre App auf Ihrem Gerät oder Emulator zu starten.
+* Geben Sie den folgenden Befehl ein, damit Sie Ihre App auf Ihrem Gerät oder Emulator starten können.
 
 ```xml
 phonegap run <platform> --device
@@ -135,7 +132,7 @@ phonegap run <platform> --emulator
 * Safari öffnen
 * Klicken Sie in der Menüleiste auf Entwickeln .
 * iOS Simulator-Untermenü auswählen
-* Auf home.html klicken
+* Klicken Sie auf home.html
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -144,7 +141,7 @@ phonegap run <platform> --emulator
 Sie können Haltepunkte an einer beliebigen Stelle in Ihrer Quelle festlegen. Wenn Sie mit Ihrem Emulator oder Gerät interagieren, stoppt die Ausführung Ihrer App an diesen Haltepunkten. Sie können die Ausführung schrittweise durchführen und die Werte in Variablen überprüfen.
 
 * Klicken Sie im Fenster des Web-Inspektors auf Ressourcen .
-* Navigieren Sie in der Quellstruktur und klicken Sie auf die gewünschte Quelldatei
+* Navigieren Sie in der Quellstruktur und klicken Sie auf die gewünschte Quelldatei.
 * Klicken Sie auf die Zeilennummer neben, um einen Haltepunkt hinzuzufügen.
 * Interagieren mit dem Gerät oder Emulator
 

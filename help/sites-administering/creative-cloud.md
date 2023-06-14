@@ -1,8 +1,6 @@
 ---
-title: Ordnerfreigabe mit Adobe Creative Cloud
-seo-title: Folder sharing with Adobe Creative Cloud
-description: Hier erfahren Sie mehr über das Freigeben von Ordnern mit Adobe Creative Cloud.
-seo-description: Learn about sharing folder with Adobe Creative Cloud
+title: Ordnerfreigabe mit Adobe Creative Cloud
+description: Erfahren Sie, wie Sie Ordner mit Adobe Creative Cloud freigeben.
 uuid: 4d93df7d-36da-43bb-a069-42993c607b2b
 contentOwner: asgupta
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,19 +8,19 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 7699c08b-a5b8-4f8b-8856-113d09349f49
 docset: aem65
-source-git-commit: d19b203ffe75a5628f350113d4d74a2916beffc8
-workflow-type: ht
-source-wordcount: '66'
-ht-degree: 100%
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+workflow-type: tm+mt
+source-wordcount: '68'
+ht-degree: 48%
 
 ---
 
 
-# Ordnerfreigabe mit Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
+# Ordnerfreigabe mit Adobe Creative Cloud {#folder-sharing-with-adobe-creative-cloud}
 
 >[!CAUTION]
 >
->Die Ordnerfreigabe von AEM in Creative Cloud wird nicht mehr unterstützt. Kunden wird dringend empfohlen, auf [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder die [AEM Desktop App](https://helpx.adobe.com/de/experience-manager/desktop-app/aem-desktop-app.html) zurückzugreifen, da diese aktuelle Funktionen bieten. Weitere Informationen finden Sie unter [Best Practices für die Integration von AEM und Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+>Die Ordnerfreigabe von AEM in Creative Cloud wird nicht mehr unterstützt. Kunden wird empfohlen, neuere Funktionen wie [Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html) oder [AEM Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de). Weitere Informationen finden Sie unter [Best Practices für die Integration von AEM und Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
 <!-- TBD: This article is removed from TOC and is not published. The functionality does not exist.
 

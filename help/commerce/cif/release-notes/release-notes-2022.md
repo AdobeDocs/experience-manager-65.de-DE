@@ -2,10 +2,10 @@
 title: AEM Content and Commerce – Versionshinweise 2022
 description: AEM Content and Commerce – Versionshinweise 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
-workflow-type: ht
-source-wordcount: '812'
-ht-degree: 100%
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+workflow-type: tm+mt
+source-wordcount: '816'
+ht-degree: 82%
 
 ---
 
@@ -13,15 +13,15 @@ ht-degree: 100%
 
 ## Übersicht über die Systemanforderungen
 
-Überprüfen Sie die minimalen Systemanforderungen in der folgenden Tabelle für die CIF-Version, die Sie derzeit verwenden oder in Zukunft verwenden möchten.
+Überprüfen Sie die Mindestanforderungen in der folgenden Tabelle für die CIF-Version, die Sie derzeit verwenden oder in Zukunft verwenden möchten.
 
 | Komponente | Systemanforderungen |
 |:-------|:-----:|
-| CIF-Add-on | Minimum: AEM 6.5.7, Magento 2.3.5-GraphQL-Schemata |
+| CIF-Add-on | Minimum: AEM 6.5.7, Adobe Commerce 2.3.5-GraphQL-Schemata |
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Veröffentlichungsdatum: September 2022
+## Releasedatum: September 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -36,7 +36,7 @@ ht-degree: 100%
 * Unterstützung für Peregrine 12.5-Komponenten
 * Unterstützung für Client-seitiges Laden von Preisen in Produkt-Teaser und Karussell
 
-## Veröffentlichungsdatum: Juli 2022
+## Releasedatum: Juli 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -45,9 +45,9 @@ ht-degree: 100%
 ### Neue Funktionen {#what-is-new-july}
 
 * Zuordnung von AEM-Seiten zu Produkten und Kategorien über AEM-Seiteneigenschaften plus Übersicht im Produkt-Cockpit
-   ![Produkt-Cockpit-Seitenzuordnung](/help/assets/CIF/product_cockpit_page_association.png)
+  ![Produkt-Cockpit-Seitenzuordnung](/help/assets/CIF/product_cockpit_page_association.png)
 
-## Veröffentlichungsdatum: Juni 2022
+## Releasedatum: Juni 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -57,7 +57,7 @@ ht-degree: 100%
 
 ### Neue Funktionen {#what-is-new-june}
 
-* Die Produktkataloganreicherung unterstützt jetzt AEM-Seiten. Dadurch können Autorinnen und Autoren die Zuordnung von Seite und Produkt verwalten.
+* Die Anreicherung von Produktkatalogen unterstützt jetzt AEM Seiten, sodass Autoren die Zuordnung von Seite und Produkt verwalten können.
 
 * Verschiedene Verbesserungen der CIF-Kernkomponenten
 
@@ -65,9 +65,9 @@ ht-degree: 100%
 
 * Login-Token zur Client-seitigen Preisabfrage hinzufügen
 
-* Falsche Seitenkomponente in der Datenschicht
+* Falsche Seitenkomponente in der Datenschicht.
 
-## Veröffentlichungsdatum: Mai 2022
+## Releasedatum: Mai 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -83,15 +83,15 @@ ht-degree: 100%
 
 * Verbesserte Kompatibilität und Stabilität für Connectoren von Drittanbietern in I/O Runtime
 
-* Verbesserte Unterstützung für Überschreibungen der GQL-Client-Konfiguration (z. B. Festlegen des benutzerdefinierten Caching-Verhaltens)
+* Verbessern der Unterstützung für Überschreibungen der GQL-Client-Konfiguration (z. B. Festlegen des benutzerdefinierten Caching-Verhaltens)
 
 ### Fehlerbehebungen {#bug-fixes-may}
 
-* Das Feld für die Produktauswahl mit mehreren Werten zeigt das zweite und weitere Produkte als ungültig an.
+* Das Feld für die Produktauswahl mit mehreren Werten zeigt ein zweites und zusätzliche Produkte als ungültig an
 
 * Die Produktauswahl ist gelegentlich hinter Komponenten verborgen.
 
-## Veröffentlichungsdatum: April 2022
+## Releasedatum: April 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -103,13 +103,13 @@ ht-degree: 100%
 
 * Schnellzugriff auf das Produkt-Cockpit: Einfacher Zugriff auf detaillierte Produktinformationen mit einem Klick im Sites-Editor
 
-   ![Wunschliste aktivieren](/help/assets/CIF/enable-wishlist.png)
+  ![Wunschliste aktivieren](/help/assets/CIF/enable-wishlist.png)
 
 * Unterstützung für zusätzliche Marketing-Commerce-Komponenten: Komponenten können so konfiguriert werden, dass sie einen Aufruf zum Hinzufügen zum Warenkorb und zum Hinzufügen zur Wunschliste anzeigen
 
-   ![Verknüpfung mit dem Produkt-Cockpit im Sites-Editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![Verknüpfung mit dem Produkt-Cockpit im Sites-Editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-## Veröffentlichungsdatum: Februar 2022
+## Releasedatum: Februar 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -121,11 +121,11 @@ ht-degree: 100%
 
 * Beta: AEM CIF-Kernkomponente für die Suche unterstützt Commerce LiveSearch
 * Verbessertes SEO für Multi-Store-Szenarien: URL-Formate für PDP/PLP können jetzt auf Store-Ebene über die CIF-Cloud-Konfigurationseigenschaften konfiguriert werden
-* Die Produktauswahl unterstützt gestaffelte Produkte über die neue Filteroption in der Benutzeroberfläche. Dadurch können Content-Experten das Product Content Management für bevorstehende Produkteinführungen vorbereiten.
+* Die Produktauswahl unterstützt Staging-Produkte über die neue Filteroption in der Benutzeroberfläche. Ermöglicht es Inhaltspraktikern, das Content Management für bevorstehende Produktstarts vorzubereiten.
 * Vereinfachte CIF-Konfigurationsverwaltung und Fehlerbehandlung durch Verwendung des CIF-Cloud-Konfigurationsnamens anstelle der Proxy-URL für die Konfiguration
-* Manuelle Kategorieauswahl für Produktlisten- und Karussellkomponenten. Dadurch können Content-Experten diese Komponenten auf Inhaltsseiten außerhalb des Katalogerlebnisses verwenden.
+* Manuelle Kategorieauswahl für Produktlisten- und Karussellkomponenten. Ermöglicht es Inhaltspraktikern, diese Komponenten auf Inhaltsseiten außerhalb des Katalogerlebnisses zu verwenden
 
-## Veröffentlichungsdatum: Januar 2022
+## Releasedatum: Januar 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|

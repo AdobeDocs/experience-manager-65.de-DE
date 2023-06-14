@@ -1,8 +1,6 @@
 ---
 title: Erscheinungsbild ändern
-seo-title: Alter the Appearance
 description: Skript ändern
-seo-description: Modify the script
 uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '218'
 ht-degree: 1%
 
 ---
@@ -28,14 +26,14 @@ So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
 
 1. Kopieren `comment.hbs`von `libs`nach `apps`
 
-   1. Wählen Sie nun eine der folgenden Optionen aus `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
+   1. Klicken Sie auf `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
    1. Klicken Sie auf **[!UICONTROL Kopieren]**
-   1. Wählen Sie nun eine der folgenden Optionen aus `/apps/social/commons/components/hbs/comments/comment`
+   1. Klicken Sie auf `/apps/social/commons/components/hbs/comments/comment`
    1. Auswählen **[!UICONTROL Einfügen]**
 
 1. Öffnen Sie die überlagerte `comment.hbs`
 
-   * Doppelklicken auf Knoten `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
+   * Doppelklick-Knoten `comment.hbs` in `/apps/social/commons/components/hbs/comments/comment folder`
 
 1. Suchen Sie die folgenden Zeilen und löschen oder kommentieren Sie sie aus:
 
@@ -44,7 +42,7 @@ So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
         <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
 ```
 
-Löschen Sie die Zeilen oder umschließen Sie sie mit `<!--` und `-->` um sie zu kommentieren. Außerdem werden die Zeichen &quot;xxx&quot;als visueller Indikator hinzugefügt, wo der Avatar gewesen wäre.
+Löschen Sie die Zeilen oder umschließen Sie sie mit `<!--` und `-->` also kommentieren Sie sie aus. Außerdem werden die Zeichen &quot;xxx&quot;als visueller Indikator hinzugefügt, wo der Avatar gewesen wäre.
 
 ```xml
    xxx
@@ -71,6 +69,6 @@ Geben Sie für den Startpfad ein. `/apps/social/commons` und wählen Sie **[!UIC
 
 Wenn Sie sich als Administrator bei der Veröffentlichungsinstanz anmelden, z. B. https://localhost:4503/crx/de als Administrator/Administrator, können Sie überprüfen, ob die überlagerten Komponenten vorhanden sind.
 
-Wenn Sie sich abmelden und sich erneut als `aaron.mcdonald@mailinator.com/password` und die Seite aktualisieren, werden Sie feststellen, dass der veröffentlichte Kommentar nicht mehr mit einem Avatar angezeigt wird, sondern eine einfache &quot;xxx&quot; angezeigt wird.
+Wenn Sie sich abmelden und sich dann als `aaron.mcdonald@mailinator.com/password` und aktualisieren Sie die Seite, stellen Sie fest, dass ein Avatar nicht mit dem veröffentlichten Kommentar angezeigt wird. Stattdessen wird eine einfache &quot;xxx&quot;angezeigt.
 
 ![create-template-component](assets/create-template-component.png)
