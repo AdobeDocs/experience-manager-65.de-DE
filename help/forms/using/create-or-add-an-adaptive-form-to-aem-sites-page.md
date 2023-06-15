@@ -2,19 +2,15 @@
 title: Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite
 description: Erfahren Sie, wie Sie mühelos ein adaptives Formular erstellen oder nahtlos zu Ihrer AEM Sites-Seite hinzufügen können. Lernen Sie schrittweise Techniken und Best Practices für die Integration dynamischer und anpassbarer Formulare in Ihre Website kennen, um Ihre digitalen Erlebnisse für eine maximale Wirkung zu optimieren.
 feature: Adaptive Forms
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
 workflow-type: tm+mt
-source-wordcount: '2874'
+source-wordcount: '2862'
 ht-degree: 1%
 
 ---
 
 
 # Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite {#create-or-add-an-adaptive-form-to-aem-sites-page}
-
-[!BADGE Dokumentation zur Vorabversion]{type=Caution tooltip="Gelber Status"}
-
-<span class="preview"> Dies ist die Dokumentation zur Vorabversion und kann geändert werden.</span>
 
 Mit AEM Forms können Sie adaptive Formulare nahtlos in Ihre Webseiten integrieren. Dadurch können Ihre Besucher bequem Formulare ausfüllen und senden, ohne jemals die Seite verlassen zu müssen, auf der sie sich befinden. Dadurch können sie mühelos mit anderen Elementen der Website interagieren und gleichzeitig aktiv mit dem Formular interagieren.
 
@@ -236,8 +232,6 @@ Sie können den Vorbefüllungs-Dienst für Formulardatenmodelle verwenden, um Fe
 1. Klicken Sie auf die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/using/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
    ![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Formulardatenmodell auswählen. Öffnen Sie die **[!UICONTROL Allgemein]** Registerkarte. Wählen Sie im Vorbefüllungs-Dienst die Option **[!UICONTROL Forms Portal-Prefill-Dienst]**.
-
-
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
 ## Leitet den Benutzer bei der Formularübermittlung an einen neuen Benutzer weiter oder zeigt eine Dankesnachricht an

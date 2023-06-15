@@ -11,10 +11,10 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 66674f0e2621d8786ab4d662cddad373122d8b51
+source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
 workflow-type: tm+mt
-source-wordcount: '1953'
-ht-degree: 63%
+source-wordcount: '1972'
+ht-degree: 62%
 
 ---
 
@@ -91,9 +91,9 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
    1. Fügen Sie dem Feld **[!UICONTROL Umleitungs-URL]** die HTTPS-URL hinzu, die Sie im vorherigen Schritt kopiert haben.
    1. Aktivieren Sie die folgenden OAuth-Einstellungen für das [!DNL Adobe Sign]-Programm und klicken Sie auf **[!UICONTROL Speichern]**.
 
-   * aggrement_read
-   * aggrement_write
-   * aggrement_send
+   * Agreement_read
+   * Agreement_write
+   * Agreement_send
    * widget_write
    * workflow_read
 
@@ -136,9 +136,6 @@ Jetzt ist [!DNL Adobe Sign] mit AEM [!DNL Forms] integriert und kann in adaptive
 
 ## Verbinden von AEM Forms mit Adobe Acrobat Sign Solutions für Behörden {#adobe-acrobat-sign-for-government}
 
-[!BADGE Beta-Dokumentation]{type=Caution tooltip="Gelber Status"}
-<span class="preview"> Dieser Abschnitt enthält die Beta-Dokumentation und kann geändert werden.</span>
-
 Die Verbindung von AEM Forms mit Adobe Acrobat Sign Solutions für Behörden ist ein mehrstufiger Prozess. Er umfasst:
 
 * Erstellen der Umleitungs-URL für Ihre AEM-Instanzen
@@ -168,25 +165,24 @@ Bevor Sie mit der Verbindung von AEM Forms mit der Adobe Acrobat Sign-Lösung be
 1. Tippen Sie auf der Konfigurationsseite auf **[!UICONTROL Erstellen]**, um die [!DNL Adobe Acrobat Sign]-Konfiguration in AEM Forms zu erstellen.
 1. Kopieren Sie die URL Ihres aktuellen Browserfensters aus der URL in ein Notizblock. Diese URL wird als `re-direct URL`. Im nächsten Abschnitt teilen Sie die `re-direct URL` und `Scopes` mit Adobe Sign-Team und Anforderungsberechtigungen (Client-ID und Client-Geheimnis).
 
+>[!NOTE]
 >
 >
->
-* Verwenden Sie eine [Top-Level](https://en.wikipedia.org/wiki/Top-level_domain) domain as `re-direct URL`. Beispiel: `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
-* Verwenden Sie keine lokale URL als `re-direct URL`. Beispiel: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/SignConfig`.
-> 
+* A `re-direct URL` sollte [Top-Level](https://en.wikipedia.org/wiki/Top-level_domain) Domäne. Beispiel: `https://adobe.com/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`
+* Verwenden Sie keine lokale URL als `re-direct URL`. Beispiel: `https://localhost:4502/libs/adobesign/cloudservices/adobesign/createcloudconfigwizard/cloudservices.html/conf/global`.
 
 
 #### Freigeben der Umleitungs-URL und der Bereiche für das Adobe Sign-Team und Empfangen von Anmeldeinformationen
 
 Das Adobe Acrobat Sign for Government Solutions-Team benötigt `re-direct URL` und die bestimmten Bereiche, die für Ihre Adobe Acrobat Sign-Anwendung aktiviert werden sollen (siehe unten), um Anmeldeinformationen (Client-ID und Client-Geheimnis) zu generieren, mit denen Sie AEM Forms mit Adobe Acrobat Sign Solutions für Behörden verbinden können.
 
-Freigeben von `scopes` (siehe unten) und die `re-direct URL` den letzten Schritt des vorherigen Abschnitts mit Ihrem Adobe Acrobat Sign for Government Solution-Support-Mitarbeiter ([Adobe Professional Services-Teammitglied](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password)).
+Freigeben von `scopes` (siehe unten) und die `re-direct URL` den letzten Schritt des vorherigen Abschnitts mit Ihrem Adobe Acrobat Sign for Government Solution-Support-Mitarbeiter erstellt und vermerkt haben [Adobe Professional Services-Teammitglied](https://opensource.adobe.com/acrobat-sign/signgov/gstarted.html#password).
 
 **_Bereiche_**
 
-* [!DNL aggrement_read]
-* [!DNL aggrement_write]
-* [!DNL aggrement_send]
+* [!DNL agreement_read]
+* [!DNL agreement_write]
+* [!DNL agreement_send]
 * [!DNL widget_read]
 * [!DNL widget_write]
 * [!DNL workflow_read]
@@ -212,11 +208,11 @@ Der Support-Mitarbeiter generiert Anmeldeinformationen und gibt diese für Sie f
 
 1. Wählen Sie die **[!UICONTROL Adobe Acrobat Sign für Anlagen aktivieren]** Option zum Anhängen von Dateien, die an ein adaptives Formular angehängt sind, an die entsprechende [!DNL Adobe Acrobat Sign] Dokument zum Signieren gesendet.
 
-1. Tippen Sie auf **[!UICONTROL Verbindung zu Adobe Sign herstellen]**. Geben Sie bei Aufforderung zur Eingabe der Anmeldeinformationen Benutzername und Kennwort des Kontos an, die bei der Erstellung des [!DNL Adobe Acrobat Sign]-Programms verwendet wurden. Sobald Sie aufgefordert werden, den Zugriff für `your developer account` zu bestätigen, klicken Sie auf **[!UICONTROL Zugriff erlauben]**. Wenn die Anmeldeinformationen korrekt sind und Sie [!DNL AEM Forms] erlauben, auf Ihr [!DNL Adobe Acrobat Sign]-Entwicklerkonto zuzugreifen, wird eine Erfolgsmeldung wie folgende angezeigt.
+1. Tippen Sie auf **[!UICONTROL Verbindung zu Adobe Sign herstellen]**. Geben Sie bei Aufforderung zur Eingabe der Anmeldeinformationen Benutzername und Kennwort des Kontos an, die bei der Erstellung des [!DNL Adobe Acrobat Sign]-Programms verwendet wurden. Bei Aufforderung zur Bestätigung des Zugriffs auf `Adobe Acrobat Sign for Government Solutions` und klicken Sie auf **[!UICONTROL Zugriff erlauben]**. Wenn die Anmeldeinformationen korrekt sind und Sie [!DNL AEM Forms] erlauben, auf Ihr [!DNL Adobe Acrobat Sign]-Entwicklerkonto zuzugreifen, wird eine Erfolgsmeldung wie folgende angezeigt.
 
    ![Erfolg der Adobe Acrobat Sign Cloud-Konfiguration](/help/forms/using/assets/adobe-sign-cloud-configuration-success.png)
 
-   <!-- > When prompted for credentials, provide username and password of the account used while creating [!DNL Adobe Acrobat Sign] application. When asked to confirm access for `your developer account`, Click **[!UICONTROL Allow Access]**. -->
+   Geben Sie bei Aufforderung zur Eingabe der Anmeldeinformationen den Benutzernamen und das Kennwort des Kontos an, die bei der Erstellung des [!DNL Adobe Acrobat Sign]-Programms verwendet wurden. Bei Aufforderung zur Bestätigung des Zugriffs auf `your account`und klicken Sie auf **[!UICONTROL Zugriff erlauben]**.
 
 1. Tippen Sie auf **[!UICONTROL Erstellen]**, um die -Konfiguration zu erstellen.
 1. Öffnen Sie die AEM Web-Konsole. Die URL lautet `https://'[server]:[port]'/system/console/configMgr`.
@@ -245,4 +241,5 @@ Das Standardintervall für den Synchronisationsstatus von [!DNL Adobe Sign] wurd
 ## Ähnliche Artikel {#related-articles}
 
 * [Verwenden von Adobe Sign in einem adaptiven Formular](../../forms/using/working-with-adobe-sign.md)
+* [Adobe Sign mit formularzentrierten Workflows](/help/forms/using/aem-forms-workflow-step-reference.md#sign-document-step-sign-document-step)
 * [Verwenden von Adobe Sign mit AEM Forms (Video)](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/forms-and-sign/introduction.html?lang=de)
