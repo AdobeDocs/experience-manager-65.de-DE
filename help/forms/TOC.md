@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Erstellen, Verwalten, Veröffentlichen und Aktualisieren von digitalen Formularen.
 role: User
-source-git-commit: f0ffa552bd4a5b8b20a58aed7847c4de07acc4f4
+source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
 workflow-type: tm+mt
-source-wordcount: '3860'
+source-wordcount: '3870'
 ht-degree: 99%
 
 ---
@@ -134,6 +134,7 @@ ht-degree: 99%
 + Adaptiv Forms- einfaches Authoring {#adaptive-forms-basic-authoring}
    + [Best Practices für die Arbeit mit adaptiven Formularen](using/adaptive-forms-best-practices.md)
    + [Erstellen eines adaptiven Formulars](using/creating-adaptive-form.md)
+   + [Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
    + [Adaptive Formularfragmente](using/adaptive-form-fragments.md)
    + [Konfigurieren der Sendeaktion](using/configuring-submit-actions.md)
    + [Verwenden von CAPTCHA in adaptiven Formularen](using/captcha-adaptive-forms.md)
