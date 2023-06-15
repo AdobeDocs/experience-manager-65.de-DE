@@ -11,9 +11,9 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 9b792e8601ac52f92e8bc143e3d1e8c4eb7cd79c
+source-git-commit: 66674f0e2621d8786ab4d662cddad373122d8b51
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '1953'
 ht-degree: 63%
 
 ---
@@ -29,8 +29,7 @@ In einem typischen Szenario mit [!DNL Adobe Acrobat Sign] und adaptiven Formular
 
 ## Verbinden von AEM Forms mit Adobe Acrobat Sign {#adobe-sign}
 
-Verbindung herstellen **[!DNL AEM Forms]** mit **[!DNL Adobe Acrobat Sign]**, richten Sie die im Abschnitt Voraussetzungen aufgelistete Software und Konten ein und konfigurieren Sie die Adobe Sign Cloud Service in Ihren AEM Forms-Autoren- und Veröffentlichungsinstanzen:
-
+Verbindung herstellen **[!DNL AEM Forms]** mit **[!DNL Adobe Acrobat Sign]**, richten Sie die im Abschnitt &quot;Voraussetzungen&quot;aufgelistete Software und Konten ein und verbinden Sie Adobe Sign mit allen AEM Forms-Autoren- und Veröffentlichungsinstanzen:
 
 ## Voraussetzungen {#prerequisites}
 
@@ -50,7 +49,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 1. Navigieren Sie in der AEM [!DNL Forms]-Autoreninstanz zu **Tools** ![hammer](assets/hammer.png) > **[!UICONTROL Allgemeinl]** > **[!UICONTROL Konfigurations-Browser]**.
 1. Tippen Sie auf der Seite **[!UICONTROL Konfigurations-Browser]** auf **[!UICONTROL Erstellen]**.
    * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
-1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen **[!UICONTROL Titel]** für die Konfiguration fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**. Anschließend tippen Sie auf **[!UICONTROL Erstellen]**. Es wird ein Konfigurationscontainer für Cloud-Dienste erstellt.
+1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen **[!UICONTROL Titel]** für die Konfiguration fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**. Anschließend tippen Sie auf **[!UICONTROL Erstellen]**. Es wird ein Konfigurations-Container erstellt.
 1. Navigieren Sie zu **Tools** ![hammer](assets/hammer.png) > **[!UICONTROL Cloud-Services]** > **[!UICONTROL Adobe Sign]** und wählen Sie den Konfigurationscontainer aus, den Sie im obigen Schritt erstellt haben.
 
    >[!NOTE]
@@ -59,7 +58,7 @@ Nachdem die Voraussetzungen erfüllt sind, führen Sie die folgenden Schritte au
 
    >[!NOTE]
    >
-   Vergewissern Sie sich, dass die URL der Cloud-Dienste-Konfigurationsseite mit **HTTPS** beginnt. Andernfalls müssen Sie für den AEM [!DNL Forms] Server [SSL aktivieren](/help/sites-administering/ssl-by-default.md). 
+   Stellen Sie sicher, dass die URL der Cloud Services-Konfigurationsseite mit **HTTPS**. Andernfalls müssen Sie für den AEM [!DNL Forms] Server [SSL aktivieren](/help/sites-administering/ssl-by-default.md). 
 
 1. Tippen Sie auf der Konfigurationsseite auf **[!UICONTROL Erstellen]**, um die [!DNL Adobe Sign]-Konfiguration in AEM [!DNL Forms] zu erstellen.
 1. Geben Sie auf der Registerkarte **[!UICONTROL Allgemein]** auf der Seite **[!UICONTROL Adobe Sign-Konfiguration erstellen]** einen **[!UICONTROL Namen]** für die Konfiguration an und tippen Sie auf **[!UICONTROL Weiter]**. Sie können optional einen Titel angeben und durchsuchen, um ein Miniaturbild für die Konfiguration auszuwählen.
@@ -149,8 +148,6 @@ Die Verbindung von AEM Forms mit Adobe Acrobat Sign Solutions für Behörden ist
 
 ![](/help/forms/using/assets/adobe-acrobat-sign-govt-workflow.png)
 
-AEM Forms as a Cloud Service bietet Entwicklungs-, Staging- und Produktionsumgebungen. Sie können damit beginnen, Ihre Entwicklungsumgebung für mit Adobe Acrobat Sign Solutions for Government zu verbinden und die Staging- und Produktionsumgebungen später miteinander zu verbinden.
-
 ### Bevor Sie beginnen {#prerequisites-for-adobe-sign-for-acrobat-sign-for-government}
 
 Bevor Sie mit der Verbindung von AEM Forms mit der Adobe Acrobat Sign-Lösung beginnen,
@@ -159,13 +156,14 @@ Bevor Sie mit der Verbindung von AEM Forms mit der Adobe Acrobat Sign-Lösung be
 * Ihre AEM [!DNL Forms] -Server [SSL aktiviert](/help/sites-administering/ssl-by-default.md) .
 * Ihre AEM [!DNL Forms] -Server verwenden [identischer Kryptoschlüssel](/help/sites-administering/security-checklist.md#make-sure-you-properly-replicate-encryption-keys-when-needed) für Autoren- und Veröffentlichungsinstanzen.
 
-### Verbinden von AEM Forms as a Cloud Service mit Adobe Acrobat Sign Solutions für Regierungseinrichtungen {#connect-adobe-acrobat-sign-for-government}
+### Verbinden von AEM Forms mit Adobe Acrobat Sign Solutions für Behörden {#connect-adobe-acrobat-sign-for-government}
 
 #### Erstellen einer Umleitungs-URL für Ihre AEM-Instanz
 
-1. Navigieren Sie in der as a Cloud Service Autoreninstanz von Forms zu **[!UICONTROL Instrumente]** ![Hammer](assets/hammer.png) > **[!UICONTROL Allgemein]** > **[!UICONTROL Konfigurationsbrowser]**.
+1. Navigieren Sie in Ihrer AEM Forms-Instanz zu **[!UICONTROL Instrumente]** ![Hammer](assets/hammer.png) > **[!UICONTROL Allgemein]** > **[!UICONTROL Konfigurationsbrowser]**.
 1. Tippen Sie auf der Seite **[!UICONTROL Konfigurations-Browser]** auf **[!UICONTROL Erstellen]**.
-1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen **[!UICONTROL Titel]** für die Konfiguration fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**. Anschließend tippen Sie auf **[!UICONTROL Erstellen]**. Es wird ein Konfigurations-Container für Cloud Services erstellt. Stellen Sie sicher, dass der Ordnername keine Leerzeichen enthält.
+1. Legen Sie im Dialogfeld **[!UICONTROL Konfiguration erstellen]** einen **[!UICONTROL Titel]** für die Konfiguration fest und aktivieren Sie **[!UICONTROL Cloud-Konfigurationen]**. Anschließend tippen Sie auf **[!UICONTROL Erstellen]**. Es wird ein Konfigurations-Container erstellt. Stellen Sie sicher, dass der Container-/Ordnername kein Leerzeichen enthält.
+
 1. Navigieren Sie zu **[!UICONTROL Instrumente]** ![Hammer](assets/hammer.png) > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Acrobat Sign]** und öffnen Sie den Konfigurationscontainer, den Sie im vorherigen Schritt erstellt haben. Wenn Sie ein adaptives Formular erstellen, geben Sie den Namen des Containers im Feld **[!UICONTROL Konfigurations-Container]** an.
 1. Tippen Sie auf der Konfigurationsseite auf **[!UICONTROL Erstellen]**, um die [!DNL Adobe Acrobat Sign]-Konfiguration in AEM Forms zu erstellen.
 1. Kopieren Sie die URL Ihres aktuellen Browserfensters aus der URL in ein Notizblock. Diese URL wird als `re-direct URL`. Im nächsten Abschnitt teilen Sie die `re-direct URL` und `Scopes` mit Adobe Sign-Team und Anforderungsberechtigungen (Client-ID und Client-Geheimnis).
