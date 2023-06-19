@@ -11,7 +11,7 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
+source-git-commit: 4e6521f0d40fc10e016bf197d5b31033192e3214
 workflow-type: tm+mt
 source-wordcount: '1915'
 ht-degree: 56%
@@ -31,7 +31,7 @@ AEM Forms unterstützt CAPTCHA in adaptiven Formularen. Sie können den reCAPTCH
 
 ## Konfigurieren des reCAPTCHA-Dienstes von Google für adaptive Forms {#google-reCAPTCHA}
 
-AEM Forms-Benutzer können den reCAPTCHA-Dienst von Google verwenden, um CAPTCHA in adaptive Formulare zu implementieren. Es bietet erweiterte CAPTCHA-Funktionen zum Schutz Ihrer Site. Weitere Informationen zur Funktionsweise von reCAPTCHA finden Sie unter [Google reCAPTCHA](https://developers.google.com/reCAPTCHA/). Der reCAPTCHA-Dienst einschließlich reCAPTCHA v2 und reCAPTCHA Enterprise ist in AEM Forms integriert. Je nach Ihren Anforderungen können Sie den reCAPTCHA-Dienst konfigurieren, um Folgendes zu aktivieren:
+AEM Forms-Benutzer können den reCAPTCHA-Dienst von Google verwenden, um CAPTCHA in adaptive Formulare zu implementieren. Es bietet erweiterte CAPTCHA-Funktionen zum Schutz Ihrer Site. Weitere Informationen zur Funktionsweise von reCAPTCHA finden Sie unter [Google reCAPTCHA](https://developers.google.com/recaptcha/). Der reCAPTCHA-Dienst einschließlich reCAPTCHA v2 und reCAPTCHA Enterprise ist in AEM Forms integriert. Je nach Ihren Anforderungen können Sie den reCAPTCHA-Dienst konfigurieren, um Folgendes zu aktivieren:
 
 * [reCAPTCHA Enterprise in AEM Forms](#steps-to-implement-reCAPTCHA-enterprise-in-forms)
 * [reCAPTCHA v2 in AEM Forms](#steps-to-implement-reCAPTCHA-v2-in-forms)
