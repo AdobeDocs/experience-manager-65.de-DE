@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '3293'
+source-wordcount: '3280'
 ht-degree: 1%
 
 ---
@@ -133,7 +133,6 @@ Führen Sie die folgenden Schritte aus, um Amazon SNS für Push-Benachrichtigung
    1. Klicken Sie auf die Registerkarte Sicherheitsberechtigungen .
    1. Hier sehen Sie Ihre Schlüssel und erstellen neue Schlüssel. Speichern Sie die Schlüssel zur späteren Verwendung.
 
-
 1. **Thema erstellen**
 
    1. Klicken **Thema erstellen** und wählen Sie einen Themennamen. Notieren Sie alle Felder wie Themenbereich-ARN, Themeneigentümer, Region, Anzeigename.
@@ -150,8 +149,8 @@ Führen Sie die folgenden Schritte aus, um Amazon SNS für Push-Benachrichtigung
 
       1. Bei APNS müssen eine P12-Datei, ein Kennwort, ein Zertifikat und ein privater Schlüssel eingegeben werden. Diese hätten im Laufe des Schritts erreicht werden müssen *Verwenden des Apple Push Notification Service (APNS)* höher.
       1. Für GCM muss ein API-Schlüssel eingegeben werden. Dies hätte im Rahmen des Schritts erreicht werden müssen *Verwenden des Google Cloud Messaging-Dienstes (GCM)* höher.
-   1. Wiederholen Sie den obigen Schritt einmal für jede Plattform, die Sie unterstützen. Um sowohl an iOS als auch an Android pushen zu können, müssen zwei Plattformanwendungen erstellt werden.
 
+   1. Wiederholen Sie den obigen Schritt einmal für jede Plattform, die Sie unterstützen. Um sowohl an iOS als auch an Android pushen zu können, müssen zwei Plattformanwendungen erstellt werden.
 
 1. **Erstellen eines Identitäts-Pools**
 
@@ -178,7 +177,6 @@ Führen Sie die folgenden Schritte aus, um Amazon SNS für Push-Benachrichtigung
     </table>
 
    1. Klicken Sie auf **Richtlinie anwenden**
-
 
 #### Pushwoosh-Messaging-Dienst verwenden {#using-the-pushwoosh-messaging-service}
 
@@ -276,9 +274,9 @@ Es gibt zwei Möglichkeiten, Ihre App mit PhoneGap zu erstellen und bereitzustel
 
 **Hinweis:** Für Push-Benachrichtigungstests reichen Emulatoren nicht aus, da Push-Benachrichtigungen ein bestimmtes Protokoll zwischen dem Push-Provider (Apple oder Google) und dem Gerät verwenden. Die aktuelle Mac-/PC-Hardware und -Emulatoren unterstützen dies nicht.
 
-1. *PhoneGap Build* ist ein von PhoneGap angebotener Dienst, mit dem Sie Ihre App auf ihren Servern erstellen und direkt auf Ihr Gerät herunterladen können. Siehe Abschnitt [Dokumentation zu PhoneGap Build](https://build.phonegap.com/) , um zu erfahren, wie Sie PhoneGap Build einrichten und verwenden.
+1. *PhoneGap Build* ist ein von PhoneGap angebotener Dienst, mit dem Sie Ihre App auf ihren Servern erstellen und direkt auf Ihr Gerät herunterladen können. Siehe PhoneGap Build-Dokumentation unter `https://build.phonegap.com/` , um zu erfahren, wie Sie PhoneGap Build einrichten und verwenden.
 
-1. *PhoneGap-Befehlszeilenschnittstelle* (CLI) ermöglicht Ihnen die Verwendung einer Vielzahl von PhoneGap-Befehlen in Ihrer Befehlszeile zum Erstellen, Debuggen und Bereitstellen Ihrer App. Siehe Abschnitt [Dokumentation für PhoneGap-Entwickler](https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface) , um zu erfahren, wie Sie PhoneGap CLI einrichten und verwenden.
+1. *PhoneGap-Befehlszeilenschnittstelle* (CLI) ermöglicht Ihnen die Verwendung einer Vielzahl von PhoneGap-Befehlen in Ihrer Befehlszeile zum Erstellen, Debuggen und Bereitstellen Ihrer App. Weitere Informationen finden Sie in der PhoneGap-Entwicklerdokumentation (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`), um zu erfahren, wie Sie PhoneGap CLI einrichten und verwenden.
 
 ### Schritt 7: Push-Benachrichtigung senden {#step-send-a-push-notification}
 

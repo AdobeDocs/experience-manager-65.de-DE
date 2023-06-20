@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2653'
 ht-degree: 0%
 
 ---
@@ -369,7 +369,7 @@ Das Verzeichnis www enthält alle Webinhalte (HTML-, JS- und CSS-Dateien), die d
 
 ### www/config.xml {#www-config-xml}
 
-Die [PhoneGap-Dokumentation](https://docs.phonegap.com) bezeichnet diese Datei als &quot;globale Konfigurationsdatei&quot;. Die Datei &quot;config.xml&quot;enthält viele App-Eigenschaften, z. B. den Namen der App, die App-Voreinstellungen (z. B. ob eine iOS-Webansicht einen Bildlauf ermöglicht) und Plugin-Abhängigkeiten, die *only* Wird vom PhoneGap-Build verwendet.
+Die PhoneGap-Dokumentation (`https://docs.phonegap.com`) bezeichnet diese Datei als &#39;globale Konfigurationsdatei&#39;. Die Datei &quot;config.xml&quot;enthält viele App-Eigenschaften, z. B. den Namen der App, die App-Voreinstellungen (z. B. ob eine iOS-Webansicht einen Bildlauf ermöglicht) und Plugin-Abhängigkeiten, die *only* Wird vom PhoneGap-Build verwendet.
 
 Die Datei &quot;config.xml&quot;ist eine statische Datei in AEM und wird unverändert über die Inhaltssynchronisierung exportiert.
 
@@ -381,7 +381,7 @@ Die Datei &quot;config.xml&quot;enthält die `content` element:
 
 `<content src="content/phonegap/weretail/apps/ng-we-retail/en.html" />`
 
-In [die PhoneGap-Dokumentation](https://docs.phonegap.com)festgelegt ist, wird dieses Element als &quot;Die optionale &lt;content> -Element definiert die Startseite der App im Verzeichnis der Web-Assets der obersten Ebene. Der Standardwert ist index.html, der normalerweise im obersten www-Verzeichnis eines Projekts angezeigt wird.&quot;
+In der PhoneGap-Dokumentation (`https://docs.phonegap.com`), wird dieses Element als &quot;Das optionale &lt;content> -Element definiert die Startseite der App im Verzeichnis der Web-Assets der obersten Ebene. Der Standardwert ist index.html, der normalerweise im obersten www-Verzeichnis eines Projekts angezeigt wird.&quot;
 
 Der PhoneGap-Build schlägt fehl, wenn keine index.html -Datei vorhanden ist. Daher ist diese Datei enthalten.
 

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c614a7ff-0d13-4407-bda0-c0a402a13dcd
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '939'
 ht-degree: 2%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Ein AEM Mobile-Projekt umfasst eine Vielzahl von Inhaltstypen, darunter Seiten, JavaScript- und CSS-Client-Bibliotheken, wiederverwendbare AEM, Inhaltssynchronisierungskonfigurationen und Shell-Inhalte der PhoneGap-App. Stützen der neuen AEM Mobile-App auf [Starter Kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) ist eine gute Möglichkeit, alle verschiedenen Inhaltstypen in unsere empfohlene Struktur zu integrieren, um die Portabilität und Wartbarkeit langfristig zu erleichtern.
 
@@ -53,7 +53,7 @@ Wenn Ihr clientseitiger Code eng mit einer bestimmten Komponente verknüpft ist,
 
 ## PhoneGap-Konfiguration {#phonegap-configuration}
 
-Jede AEM Mobile-App enthält einen Ordner, in dem die von PhoneGap verwendeten Konfigurationsdateien gespeichert werden. [Befehlszeilenschnittstelle](https://github.com/phonegap/phonegap-cli) und [PhoneGap-Build](https://build.phonegap.com/) , um Ihren Webinhalt in eine ausführbare Anwendung umzuwandeln. Im Geometrixx-Beispiel befindet sich dieser Ordner (/content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-content) als Teil der Shell. eine Designentscheidung getroffen wurde, da sie nur Inhalte enthält, die nicht sofort aktualisiert werden können, z. B. Plugins, die Geräte-APIs behandeln und die Konfiguration der App selbst.
+Jede AEM Mobile-App enthält einen Ordner, in dem die von PhoneGap verwendeten Konfigurationsdateien gespeichert werden. [Befehlszeilenschnittstelle](https://github.com/phonegap/phonegap-cli) und PhoneGap-Build unter `https://build.phonegap.com/` , um Ihren Webinhalt in eine ausführbare Anwendung umzuwandeln. Im Geometrixx-Beispiel befindet sich dieser Ordner (/content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-content) als Teil der Shell. eine Designentscheidung getroffen wurde, da sie nur Inhalte enthält, die nicht sofort aktualisiert werden können, z. B. Plugins, die Geräte-APIs behandeln und die Konfiguration der App selbst.
 
 In diesem Verzeichnis finden Sie auch eine Reihe von [Cordova-Hooks](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide) , die zum Installieren von Plug-ins, zum Platzieren von Ressourcendateien an ihren plattformspezifischen Speicherorten und anderen Aktionen verwendet werden kann, die im Rahmen des Builds ausgeführt werden sollen. Hinweis: als Alternative zum Herunterladen jedes Plug-ins als Teil des Builds können Sie dem Muster der Kitchen Sink-App folgen und [Plug-in-Quellcode einschließen](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins) mit dem Rest Ihres App-Projekts.
 

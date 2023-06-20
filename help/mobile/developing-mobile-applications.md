@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '583'
-ht-degree: 11%
+source-wordcount: '581'
+ht-degree: 4%
 
 ---
 
@@ -21,9 +21,9 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM nutzt Adobe PhoneGap und Adobe Publishing Solutions, damit Sie inhaltsreiche und anwendungsbasierte, plattformübergreifende Mobilanwendungen erstellen können:
+AEM nutzt Adobe PhoneGap- und Adobe Publishing Solutions, mit denen Sie inhaltsreiche und anwendungsbasierte, plattformübergreifende mobile Apps erstellen und verwalten können:
 
 * Verwalten Sie alle mobilen Apps Ihrer Unternehmen an einem Ort.
 * Überprüfen Sie Apps in Entwicklungs- und Staging-Umgebungen, ohne die Komplexität von Bereitstellungsprofilen und den zusätzlichen Aufwand zum Erstellen und Hochladen Ihrer App zur Freigabe zu haben.
@@ -32,7 +32,7 @@ AEM nutzt Adobe PhoneGap und Adobe Publishing Solutions, damit Sie inhaltsreiche
 * Einführung von HTML5-Webansichten in neue oder bereits vorhandene **nativ** Anwendungen über Cordova WebViews.
 * Erstellen, kuratieren und teilen Sie Rich-Multimedia-Inhalte über alle Versandkanäle, einschließlich Web, Mobile-Web, Mobile-App und Druck.
 
-AEM Integration in die Adobe **[PhoneGap Build](https://build.phonegap.com/)** zur Vereinfachung des Anwendungs-Build- und -Bereitstellungsprozesses.
+AEM Integration mit dem Adobe PhoneGap Build-Dienst (`https://build.phonegap.com/`), um den Prozess zum Erstellen und Bereitstellen von Anwendungen zu vereinfachen.
 
 **Adobe ContentSync** ermöglicht Benutzern das einfache Herunterladen von Seiten- und Inhaltsaktualisierungen Over-the-Air (OTA) auf ihre Geräte, ohne die Anwendung neu installieren oder aus dem AppStore, Google Play oder anderen App-Quellen herunterladen zu müssen.
 
@@ -73,12 +73,12 @@ iOS-Entwickler sollten sich eines offenen Problems mit Cordova-Apps bewusst sein
 
 >[!NOTE]
 >
->Weitere Informationen zu &quot;App Transport Security&quot;finden Sie im folgenden Abschnitt von [Dokumente zu Vorversionen mit Apple iOS 9](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) und dies [Diskussion über Stack Overflow](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>Weitere Informationen zu &quot;App Transport Security&quot;finden Sie im folgenden Abschnitt von [Dokumente zu Apple iOS9-Vorabversionen](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) und dies [Diskussion über Stack Overflow](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Entwickeln von Mobilanwendungen in AEM {#developing-mobile-applications-in-aem-1}
 
 * [Starten AEM PhoneGap](/help/mobile/starting-aem-phonegap-app.md)
-* [Erstellen von Mobilanwendungen](/help/mobile/building-app-mobile-phonegap.md)
+* [Erstellen von Mobile Apps](/help/mobile/building-app-mobile-phonegap.md)
 * [App strukturieren](/help/mobile/phonegap-structure-an-app.md)
 * [Erstellen und Bearbeiten von Apps mithilfe der Apps-Konsole](/help/mobile/phonegap-apps-console.md)
 * [Single Page Applications (SPA)](/help/mobile/phonegap-single-page-applications.md)
