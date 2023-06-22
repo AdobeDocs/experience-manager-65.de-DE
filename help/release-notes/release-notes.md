@@ -3,10 +3,10 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
+source-git-commit: 1077aeabacb1dbb489dbc7222c45da0a35b8cf16
 workflow-type: tm+mt
-source-wordcount: '3738'
-ht-degree: 29%
+source-wordcount: '3777'
+ht-degree: 28%
 
 ---
 
@@ -400,6 +400,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 * auf der JBoss® 7.1.4-Plattform, wenn der Benutzer Experience Manager 6.5.16.0 oder höher installiert, `adobe-livecycle-jboss.ear` Die Bereitstellung schlägt fehl.
 * JDK-Versionen, die höher als 1.8.0_281 sind, werden für WebLogic JEE-Server nicht unterstützt.
+* Ab AEM 6.5.15 wird die von der ```org.apache.servicemix.bundles.rhino``` Das Bundle weist ein neues Hosting-Verhalten auf. Skripte, die den strikten Modus (```use strict;```) ihre Variablen korrekt deklarieren müssen, andernfalls werden sie nicht ausgeführt, sondern es wird ein Laufzeitfehler ausgegeben.
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
