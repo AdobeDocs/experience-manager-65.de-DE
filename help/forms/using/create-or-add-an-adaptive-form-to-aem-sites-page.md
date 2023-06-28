@@ -2,15 +2,20 @@
 title: Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite
 description: Erfahren Sie, wie Sie mühelos ein adaptives Formular erstellen oder nahtlos zu Ihrer AEM Sites-Seite hinzufügen können. Lernen Sie schrittweise Techniken und Best Practices für die Integration dynamischer und anpassbarer Formulare in Ihre Website kennen, um Ihre digitalen Erlebnisse für eine maximale Wirkung zu optimieren.
 feature: Adaptive Forms
-source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
+exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
+source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
 workflow-type: tm+mt
-source-wordcount: '2862'
+source-wordcount: '2883'
 ht-degree: 1%
 
 ---
 
-
 # Erstellen oder Hinzufügen eines adaptiven Formulars zur AEM Sites-Seite {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | Dieser Artikel |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 
 Mit AEM Forms können Sie adaptive Formulare nahtlos in Ihre Webseiten integrieren. Dadurch können Ihre Besucher bequem Formulare ausfüllen und senden, ohne jemals die Seite verlassen zu müssen, auf der sie sich befinden. Dadurch können sie mühelos mit anderen Elementen der Website interagieren und gleichzeitig aktiv mit dem Formular interagieren.
 
@@ -246,7 +251,3 @@ Beim Senden eines Formulars können Sie den Benutzer zu einer anderen Webseite o
    * Um eine Umleitungs-URL zu konfigurieren, wählen Sie für die Option &quot;Senden&quot;die Option &quot;Zu URL umleiten&quot;aus und geben Sie eine absolute Adresse, eine Umleitungs-URL oder einen relativen Pfad einer AEM Sites-Seite an.
 
    * Um eine benutzerdefinierte Nachricht oder eine Dankesnachricht zu konfigurieren, wählen Sie für die Option &quot;Senden&quot;die Option &quot;Nachricht anzeigen&quot;und geben Sie im Feld Nachrichteninhalt eine Nachricht ein. Es handelt sich um ein Rich-Text-Feld. Sie können die Vollbildoption verwenden, um alle verfügbaren Rich-Text-Elemente anzuzeigen.
-
-
-
-

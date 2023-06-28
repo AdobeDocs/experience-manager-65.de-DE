@@ -10,14 +10,19 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1108'
-ht-degree: 100%
+source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
+workflow-type: tm+mt
+source-wordcount: '1131'
+ht-degree: 93%
 
 ---
 
 # Standardmäßige Validierungsfehlermeldungen für adaptive Formulare {#standard-validation-error-messages}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | Dieser Artikel |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html) |
 
 Adaptive Formulare validieren die Eingaben, die Sie in Feldern bereitstellen, basierend auf vordefinierten Validierungskriterien. Die Validierungskriterien beziehen sich auf die zulässigen Eingabewerte für Felder in einem adaptiven Formular. Sie können die Validierungskriterien auf Grundlage der Datenquelle festlegen, die Sie mit dem adaptiven Formular verwenden. Wenn Sie beispielsweise RESTful-Web-Services als Datenquelle verwenden, können Sie die Validierungskriterien in einer Swagger-Definitionsdatei definieren.
 
@@ -80,7 +85,7 @@ Bevor Sie einen benutzerdefinierten Handler hinzufügen, müssen Sie das adaptiv
 
 ### Hinzufügen eines benutzerdefinierten Fehler-Handlers bei der Übermittlung des adaptiven Formulars {#add-custom-error-handler-af-submission}
 
-AEM Forms bietet standardmäßig Handler zur Verarbeitung von erfolgreichen und fehlgeschlagenen Formularübermittlungen an. Handler sind clientseitige Funktionen, die anhand der Serverantwort ausgeführt werden. Wenn ein Formular übermittelt wird, werden die Daten zur Validierung an den Server gesendet, der eine Antwort mit Informationen über den Erfolg oder das Fehlschlagen der Übermittlung an den Client zurücksendet. Die Informationen werden als Parameter an den relevanten Handler übergeben, um die Funktion auszuführen.
+AEM Forms bietet vordefinierte Erfolgs- und Fehler-Handler für die Formularübermittlung. Handler sind clientseitige Funktionen, die basierend auf der Serverantwort ausgeführt werden. Wenn ein Formular gesendet wird, werden die Daten zur Validierung an den Server übermittelt, der eine Antwort mit Informationen zum Erfolgs- oder Fehlerereignis für die Übermittlung an den Client zurückgibt. Die Informationen werden als Parameter an den relevanten Handler übergeben, um die Funktion auszuführen.
 
 Führen Sie die folgenden Schritte aus, um beim Übermitteln des adaptiven Formulars einen benutzerdefinierten Fehler-Handler hinzuzufügen: 
 
