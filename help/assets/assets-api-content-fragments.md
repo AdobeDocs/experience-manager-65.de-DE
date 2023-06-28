@@ -2,9 +2,10 @@
 title: Unterstützung von Adobe Experience Manager-Inhaltsfragmenten in der Assets-HTTP-API
 description: Erfahren Sie mehr über die Unterstützung für Inhaltsfragmente in der Assets-HTTP-API, einem wichtigen Teil der Headless-Bereitstellungs-Funktion in AEM.
 feature: Content Fragments,Assets HTTP API
+role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 48131c5accfe73b83197bd581ed5a22bc4890a56
 workflow-type: tm+mt
 source-wordcount: '1957'
 ht-degree: 99%
@@ -76,7 +77,6 @@ Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreif
 >
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
 >* `/content/path/to/page` **erfordert** die Verwendung des `.model`-Selektors.
-
 
 Die HTTP-Methode ermittelt den auszuführenden Vorgang:
 
@@ -155,7 +155,6 @@ Wenn die Assets-REST-API in einer Umgebung ohne spezifische Authentifizierungsan
 >* [Erklärung: CORS/AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html?lang=de)
 >* [Video: Entwicklung für CORS mit AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/develop-for-cross-origin-resource-sharing.html?lang=de)
 >
-
 
 In Umgebungen mit bestimmten Authentifizierungsanforderungen wird OAuth empfohlen.
 
@@ -336,49 +335,52 @@ Wird zurückgegeben, wenn:
 
 * **500** (Interner Server-Fehler)
 
-   >[!NOTE]
-   >
-   >Dieser Fehler wird zurückgegeben:
-   >
-   >* wenn ein Fehler, der mit keinem bestimmten Code identifiziert werden kann, aufgetreten ist
-   >* wenn als Payload „null“ angegeben ist
+  >[!NOTE]
+  >
+  >Dieser Fehler wird zurückgegeben:
+  >
+  >* wenn ein Fehler, der mit keinem bestimmten Code identifiziert werden kann, aufgetreten ist
+  >* wenn als Payload „null“ angegeben ist
 
-
-   Nachfolgend finden Sie allgemeine Szenarien, in denen dieser Fehlerstatus in Kombination mit der Fehlermeldung (monospace) zurückgegeben wird:
+  Nachfolgend finden Sie allgemeine Szenarien, in denen dieser Fehlerstatus in Kombination mit der Fehlermeldung (monospace) zurückgegeben wird:
 
    * Übergeordneter Ordner ist nicht vorhanden (wenn ein Inhaltsfragment per `POST` erstellt wurde)
    * Es wird kein Inhaltsfragmentmodell bereitgestellt (cq:model fehlt), es kann nicht gelesen werden (aufgrund eines ungültigen Pfads oder eines Berechtigungsproblems) oder es gibt kein gültiges Fragmentmodell:
 
       * `No content fragment model specified`
       * `Cannot create a resource of given model '/foo/bar/qux'`
+
    * Das Inhaltsfragment konnte nicht erstellt werden (möglicherweise ein Berechtigungsproblem):
 
       * `Could not create content fragment`
+
    * Titel oder Beschreibung konnte nicht aktualisiert werden:
 
       * `Could not set value on content fragment`
+
    * Metadaten konnten nicht festgelegt werden:
 
       * `Could not set metadata on content fragment`
+
    * Inhaltselement wurde nicht gefunden oder konnte nicht aktualisiert werden
 
       * `Could not update content element`
       * `Could not update fragment data of element`
 
-   Die detaillierten Fehlermeldungen werden im Allgemeinen im folgenden Typ zurückgegeben:
+  Die detaillierten Fehlermeldungen werden im Allgemeinen im folgenden Typ zurückgegeben:
 
-   ```xml
-   {
-     "class": "core/response",
-     "properties": {
-       "path": "/api/assets/foo/bar/qux",
-       "location": "/api/assets/foo/bar/qux.json",
-       "parentLocation": "/api/assets/foo/bar.json",
-       "status.code": 500,
-       "status.message": "...{error message}.."
-     }
-   }
-   ```
+  ```xml
+  {
+    "class": "core/response",
+    "properties": {
+      "path": "/api/assets/foo/bar/qux",
+      "location": "/api/assets/foo/bar/qux.json",
+      "parentLocation": "/api/assets/foo/bar.json",
+      "status.code": 500,
+      "status.message": "...{error message}.."
+    }
+  }
+  ```
 
 ## API-Referenz {#api-reference}
 
