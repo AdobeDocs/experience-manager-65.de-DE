@@ -5,10 +5,10 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 39930967e2f423b7fbbc79bcb85f78d15809e97d
 workflow-type: tm+mt
 source-wordcount: '1737'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 100%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=de) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets-view/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6.5 | Dieser Artikel |
 
 Ein Benutzer mit Adminzugriff in [!DNL Adobe Experience Manager] konfiguriert den erweiterten Connector nach der Installation. Anweisungen zur Installation finden Sie unter [Installieren des Connectors](/help/assets/workfront-integrations.md).
@@ -30,7 +30,6 @@ Ein Benutzer mit Adminzugriff in [!DNL Adobe Experience Manager] konfiguriert de
 >* Adobe unterstützt die Versionen 1.7.4 und höher des erweiterten Connectors. Frühere Vorabversionen und benutzerdefinierte Versionen werden nicht unterstützt. Um die Version des erweiterten Connectors zu überprüfen, gehen Sie zu der Gruppe `digital.hoodoo`, die im linken Fensterbereich des [Package Managers](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) verfügbar ist.
 >
 >* Siehe [Partnerzertifizierungsprüfung für den erweiterten Connector von Workfront for Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Informationen zur Prüfung finden Sie im [Prüfungshandbuch](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
-
 
 ## Konfigurieren von Ereignisabonnements {#event-subscriptions}
 
@@ -46,7 +45,7 @@ Um diese Funktionen nutzen zu können, müssen Sie die Ereignisabonnements aktiv
 * Wählen Sie die [!UICONTROL benutzerdefinierte Workfront-Integration] aus, die Sie in Abschnitt 6 erstellt haben.
 * Klicken Sie auf [!UICONTROL Workfront-Ereignisabonnements aktivieren].
 
-   ![Ereignisabonnement](/help/assets/assets/event-subs.png)
+  ![Ereignisabonnement](/help/assets/assets/event-subs.png)
 
 ## Konfigurieren von verknüpften Ordnern {#linked-folders}
 
