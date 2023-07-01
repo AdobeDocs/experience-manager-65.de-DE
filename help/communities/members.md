@@ -1,8 +1,6 @@
 ---
 title: Verwaltungskonsolen für Mitglieder und Gruppen
-seo-title: Members & Groups Management Consoles
 description: Zugriff auf die Verwaltungskonsolen für Mitglieder und Gruppen
-seo-description: How to access Members and Groups Management consoles
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '946'
+source-wordcount: '942'
 ht-degree: 4%
 
 ---
@@ -55,7 +53,7 @@ Um in der Autorenumgebung zur Mitgliederkonsole für die Verwaltung von in der V
 
 Wählen Sie auf der linken Seite des `Members` -Kopfzeile, um das seitliche Suchbedienfeld zu öffnen.
 
-![](assets/leftpanel-icon.png)
+![Symbol &quot;Seitenbereich suchen&quot;.](assets/leftpanel-icon.png)
 
 
 ![member-console2](assets/member-console2.png)
@@ -97,19 +95,19 @@ Das Mitglied kann seine E-Mail-Adresse bei der Profilaktualisierung ändern. I W
 
 * **[!UICONTROL Kennwort]**
 
-   (*Erforderlich*) Das Anmeldekennwort.
+  (*Erforderlich*) Das Anmeldekennwort.
 
 * **[!UICONTROL Kennwortwdh.]**
 
-   (*Erforderlich*) Geben Sie das Kennwort zur Überprüfung erneut ein.
+  (*Erforderlich*) Geben Sie das Kennwort zur Überprüfung erneut ein.
 
 * **[!UICONTROL Mitglied zu Sites hinzufügen]**
 
-   (*Optional*) Wählen Sie aus vorhandenen Community-Sites aus, um das Mitglied zur Mitgliedergruppe der Community-Site hinzuzufügen.
+  (*Optional*) Wählen Sie aus vorhandenen Community-Sites aus, um das Mitglied zur Mitgliedergruppe der Community-Site hinzuzufügen.
 
 * **[!UICONTROL Mitglied zu Gruppen hinzufügen]**
 
-   (*Optional*) Wählen Sie aus vorhandenen Mitgliedergruppen aus, um das Mitglied dieser Gruppe hinzuzufügen.
+  (*Optional*) Wählen Sie aus vorhandenen Mitgliedergruppen aus, um das Mitglied dieser Gruppe hinzuzufügen.
 
 * Wählen Sie **[!UICONTROL Speichern]** aus
 
@@ -122,17 +120,17 @@ Unter &quot;Kontoeinstellungen&quot;kann ein Community-Administrator Folgendes t
 
    * Nicht verboten Ein Mitglied hat vollen Zugriff auf die Community-Site.
 
-   Der Standardwert ist `Not Banned`.
+  Der Standardwert ist `Not Banned`.
 
 * **[!UICONTROL Anteilslimits]**
 
-   Wenn diese Option aktiviert ist, ist die Fähigkeit des Mitglieds, Inhalte zu posten, eingeschränkt.
+  Wenn diese Option aktiviert ist, ist die Fähigkeit des Mitglieds, Inhalte zu posten, eingeschränkt.
 Der Standardwert hängt von der Konfiguration der Beitragsbeschränkungen ab.
 Siehe [Beitragsgrenzen der Mitgliedstaaten](limits.md).
 
 * **[!UICONTROL Kennwort ändern]**
 
-   Ein Link, der beim Ändern eines vorhandenen Mitglieds vorhanden ist. Bietet die Möglichkeit für einen Community-Administrator, ein Kennwort für ein Mitglied zurückzusetzen.
+  Ein Link, der beim Ändern eines vorhandenen Mitglieds vorhanden ist. Bietet die Möglichkeit für einen Community-Administrator, ein Kennwort für ein Mitglied zurückzusetzen.
 
 ### ALLGEMEIN - Foto {#general-photo}
 
@@ -173,7 +171,7 @@ So greifen Sie auf die Gruppenkonsole zu:
 
 ### Neue Gruppe erstellen {#create-new-group}
 
-Auswählen `Add Group` um eine Gruppe in der Veröffentlichungsumgebung zu erstellen.
+Auswählen `Add Group` , um eine Gruppe in der Veröffentlichungsumgebung zu erstellen.
 
 ![group-console1](assets/group-console1.png)
 
@@ -181,23 +179,23 @@ Die erforderlichen Felder zum Erstellen einer neuen veröffentlichungsseitigen M
 
 * **[!UICONTROL ID]**
 
-   (*Erforderlich*) Die eindeutige Kennung der Gruppe.
+  (*Erforderlich*) Die eindeutige Kennung der Gruppe.
 
-   *Nach der Erstellung kann die ID nicht mehr geändert werden.*
+  *Nach der Erstellung kann die ID nicht mehr geändert werden.*
 
 * **[!UICONTROL Name]**
 
-   (*Optional*) Der Anzeigename für die Gruppe.
+  (*Optional*) Der Anzeigename für die Gruppe.
 
-   Der Standardwert ist die ID.
+  Der Standardwert ist die ID.
 
 * **[!UICONTROL Beschreibung]**
 
-   (*Optional*) Eine Beschreibung des Zwecks und der Berechtigungen der Gruppe.
+  (*Optional*) Eine Beschreibung des Zwecks und der Berechtigungen der Gruppe.
 
 * **[!UICONTROL Mitglieder zu Gruppe hinzufügen]**
 
-   (*Optional*) Wählen Sie veröffentlichungsseitige Mitglieder aus, die als anfängliche Mitglieder der Gruppe aufgenommen werden sollen.
+  (*Optional*) Wählen Sie veröffentlichungsseitige Mitglieder aus, die als anfängliche Mitglieder der Gruppe aufgenommen werden sollen.
 
 * Wählen Sie **[!UICONTROL Speichern]** aus
 

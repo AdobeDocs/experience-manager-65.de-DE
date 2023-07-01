@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1755'
-ht-degree: 47%
+source-wordcount: '1836'
+ht-degree: 45%
 
 ---
 
@@ -207,19 +207,19 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 Es gibt zwei Symbole im unteren Rand des Sidekicks, die für die Vorschau von Seiten wichtig sind:
 
-![](do-not-localize/chlimage_1-5.png)
+![Unterer Rand des Sidekicks mit einer horizontalen Zeile von sieben Symbolen. Zwei der Symbole am Anfang der Zeile, das Bearbeitungssymbol und das Vorschaumodussymbol, werden durch ein Stiftsymbol bzw. ein Lupensymbol gekennzeichnet.](do-not-localize/chlimage_1-5.png)
 
 * Das Stiftsymbol zeigt an, dass Sie sich derzeit im Bearbeitungsmodus befinden, in dem Sie Inhalte hinzufügen, ändern, verschieben oder löschen können.
 
-   ![](do-not-localize/chlimage_1-6.png)
+  ![Bearbeitungssymbol, gekennzeichnet durch ein Bleistiftsymbol.](do-not-localize/chlimage_1-6.png)
 
 * Mit dem Lupensymbol können Sie den Vorschaumodus auswählen, in dem die Seite so angezeigt wird, wie sie in der Veröffentlichungsumgebung angezeigt wird (manchmal ist auch eine Seitenaktualisierung erforderlich):
 
-   ![](do-not-localize/chlimage_1-7.png)
+  ![Symbol für den Vorschaumodus, gekennzeichnet durch ein Lupensymbol.](do-not-localize/chlimage_1-7.png)
 
-   Im Vorschaumodus wird der Sidekick minimiert. Klicken Sie auf den Pfeil nach unten, um in den Bearbeitungsmodus zurückzukehren:
+  Im Vorschaumodus wird der Sidekick minimiert. Klicken Sie auf den Pfeil nach unten, um in den Bearbeitungsmodus zurückzukehren:
 
-   ![](do-not-localize/chlimage_1-8.png)
+  ![Balken mit AEM als Titel und einem Bearbeitungsmodussymbol rechts neben dem Titel, gekennzeichnet durch ein Abwärtspfeilsymbol.](do-not-localize/chlimage_1-8.png)
 
 ## Suchen und Ersetzen {#find-replace}
 
@@ -286,7 +286,6 @@ Das Verhalten der Befehle &quot;Rückgängig&quot;und &quot;Wiederholen&quot;äh
 >* maximal 20 Bearbeitungsaktionen rückgängig machen (Standardeinstellung).
 >* auch verwenden [Tastaturbefehle](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) zum Rückgängigmachen und Wiederholen.
 >
-
 
 Sie können die folgenden Arten von Seitenänderungen rückgängig machen und wiederholen:
 

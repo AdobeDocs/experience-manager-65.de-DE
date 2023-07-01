@@ -1,8 +1,6 @@
 ---
 title: Testen der Benutzeroberfläche
-seo-title: Testing Your UI
-description: AEM stellt ein Framework bereit, mit dem Sie das Testen Ihrer AEM-Benutzeroberfläche automatisieren können.
-seo-description: AEM provides a framework for automating tests for your AEM UI
+description: AEM bietet ein Framework für die Automatisierung von Tests für Ihre AEM-Benutzeroberfläche
 uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,10 +9,10 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '737'
-ht-degree: 100%
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+workflow-type: tm+mt
+source-wordcount: '771'
+ht-degree: 51%
 
 ---
 
@@ -26,17 +24,17 @@ ht-degree: 100%
 >
 >Siehe [Veraltete und entfernte Funktionen](/help/release-notes/deprecated-removed-features.md).
 
-AEM stellt ein Framework bereit, mit dem Sie das Testen Ihrer AEM-Benutzeroberfläche automatisieren können. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework umfasst eine JavaScript-API für das Erstellen von Tests.
+AEM bietet ein Framework für die Automatisierung von Tests für Ihre AEM Benutzeroberfläche. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework stellt eine JavaScript-API zum Erstellen von Tests bereit.
 
-Das AEM-Test-Framework nutzt Hobbes.js, eine Testbibliothek, die in JavaScript geschrieben wurde. Das Hobbes.js-Framework wurde für AEM-Tests als Teil des Entwicklungsprozesses entwickelt. Das Framework steht jetzt zur allgemeinen Verwendung zum Testen Ihrer AEM-Anwendungen zur Verfügung.
+Das AEM-Test-Framework verwendet Hobbes.js, eine in JavaScript geschriebene Testbibliothek. Das Hobbes.js-Framework wurde für AEM-Tests als Teil des Entwicklungsprozesses entwickelt. Das Framework steht jetzt zur allgemeinen Verwendung zum Testen Ihrer AEM-Anwendungen zur Verfügung.
 
 >[!NOTE]
 >
->Detaillierte Angaben zur API finden Sie in der [Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) zu Hobbes.js.
+>Detaillierte Angaben zur API finden Sie in der [Dokumentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) zu Hobbes.js.
 
-## Die Struktur von Tests {#structure-of-tests}
+## Struktur von Tests {#structure-of-tests}
 
-Wenn Sie automatisierte Tests in AEM verwenden, sollten Sie die folgenden Begriffe kennen:
+Bei der Verwendung automatisierter Tests in AEM sind die folgenden Begriffe wichtig, um sie zu verstehen:
 
 | Aktion | Eine **Aktion** ist eine bestimmte Aktivität auf einer Web-Seite, z. B. das Klicken auf einen Link oder eine Schaltfläche. |
 |---|---|
@@ -47,57 +45,57 @@ Wenn Sie automatisierte Tests in AEM verwenden, sollten Sie die folgenden Begrif
 
 ### Anzeigen von Test-Suites {#viewing-test-suites}
 
-Öffnen Sie die Testen-Konsole, um die registrierten Test-Suites anzuzeigen. Das Test-Feld enthält eine Liste der Test-Suites samt ihrer Testfälle.
+Öffnen Sie die Testkonsole , um die registrierten Test-Suites anzuzeigen. Das Testbedienfeld enthält eine Liste von Test-Suites und deren Testfälle.
 
-Navigieren Sie über **Globale Navigation > Tools > Vorgänge > Testen** zur Tools-Konsole.
+Navigieren Sie zur Tools-Konsole über **Globale Navigation -> Tools > Vorgänge -> Tests**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
-Wenn Sie die Konsole öffnen, werden die Test-Suites links aufgeführt, zusammen mit der Option, sie alle nacheinander auszuführen. Der Bereich rechts mit einem Hintergrund im Schachbrettmuster ist ein Platzhalter. Hier werden Seiteninhalte bei der Testausführung angezeigt.
+Beim Öffnen der Konsole werden die Test-Suites links neben einer Option aufgeführt, mit der sie alle nacheinander ausgeführt werden können. Der rechts angezeigte Bereich mit einem gecheckten Hintergrund ist ein Platzhalter für die Anzeige des Seiteninhalts während der Testausführung.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
 ### Ausführen einer einzelnen Test-Suite {#running-a-single-test-suite}
 
-Test-Suites können einzeln ausgeführt werden. Wenn Sie eine Test-Suite ausführen, ändert sich die Seite, während die Testfälle und ihre Aktion ausgeführt werden, und die Ergebnisse werden nach dem Abschluss des Tests angezeigt. Symbole zeigen die Ergebnisse an.
+Testsuiten können einzeln ausgeführt werden. Wenn Sie eine Test-Suite ausführen, ändert sich die Seite, während die Testfälle und ihre Aktionen ausgeführt werden. Die Ergebnisse werden nach Abschluss des Tests angezeigt. Die Ergebnisse werden durch Symbole gekennzeichnet.
 
 Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test: 
 
-![](do-not-localize/chlimage_1-2.png)
+![Häkchensymbol.](do-not-localize/chlimage_1-2.png)
 
 Eine X-Symbol zeigt einen fehlgeschlagenen Test an:
 
-![](do-not-localize/chlimage_1-3.png)
+![Symbol &quot;Fehlgeschlagener Test&quot;, gekennzeichnet durch ein X innerhalb eines Kreises.](do-not-localize/chlimage_1-3.png)
 
-So führen Sie eine Test-Suite aus:
+So führen Sie eine Test Suite aus:
 
-1. Klicken oder tippen Sie im Testfeld auf den Namen des Testfalls, den Sie ausführen möchten, um die Details zu den Aktionen anzuzeigen.
+1. Klicken oder tippen Sie im Testfeld auf den Namen des Testfalls, den Sie ausführen möchten, um die Details der Aktionen zu erweitern.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Klicken oder tippen Sie auf die Schaltfläche **Test ausführen**.
+1. Klicken **Ausführen eines Tests**.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Ein Bild der Schaltfläche &quot;Tests ausführen&quot;, gekennzeichnet durch einen rechts zeigenden Zeiger in einem Kreis.](do-not-localize/chlimage_1-4.png)
 
 1. Der Platzhalter wird durch Seiteninhalte ersetzt, wenn der Test ausgeführt wird.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Um die Ergebnisse des Testfalls anzuzeigen, tippen oder klicken Sie auf die Beschreibung, um das Feld **Ergebnis** zu öffnen. Wenn Sie im Feld **Ergebnis** auf den Namen des Testfalls tippen oder klicken, werden alle Details angezeigt.
+1. Überprüfen Sie die Ergebnisse des Testfalls, indem Sie auf die Beschreibung tippen oder klicken, um die **Ergebnis** Bereich. Tippen oder klicken Sie auf den Namen Ihres Testfalls im **Ergebnis** -Bedienfeld werden alle Details angezeigt.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
 ### Ausführen mehrerer Tests {#running-multiple-tests}
 
-Test-Suites werden nacheinander in der Reihenfolge ausgeführt, in der sie in der Konsole erscheinen. Sie können einen Test aufschlüsseln, um detaillierte Ergebnisse einzusehen.
+Test-Suites werden nacheinander in der Reihenfolge ausgeführt, in der sie in der Konsole angezeigt werden. Sie können einen Test detailliert untersuchen, um die detaillierten Ergebnisse anzuzeigen.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
 1. Tippen oder klicken Sie im Testfeld auf die Schaltfläche **Alle Tests ausführen** oder auf die Schaltfläche **Tests ausführen** unter dem Titel der Test-Suite, die Sie ausführen möchten.
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Ein Bild der Schaltfläche Alle Tests ausführen und der Schaltfläche Tests ausführen , gekennzeichnet durch einen rechts zeigenden Zeiger in einem Kreis.](do-not-localize/chlimage_1-5.png)
 
-1. Um die Ergebnisse jedes Testfalls anzuzeigen, tippen oder klicken Sie auf den Titel des Testfalls. Wenn Sie im Bedienfeld **Ergebnis** auf den Namen des Tests tippen oder klicken, werden alle Details angezeigt.
+1. Um die Ergebnisse der einzelnen Testfälle anzuzeigen, klicken Sie auf den Titel des Testfalls. Klicken Sie auf den Namen Ihres Tests im **Ergebnis** -Bedienfeld werden alle Details angezeigt.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -105,7 +103,7 @@ Test-Suites werden nacheinander in der Reihenfolge ausgeführt, in der sie in de
 
 Die folgenden Schritte erläutern die Erstellung und Ausführung einer Test-Suite mit [We.Retail-Inhalten](/help/sites-developing/we-retail.md). Sie können den Test jedoch auch einfach für eine andere Web-Seite anpassen.
 
-Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der [Dokumentation zur Hobbes.js-API](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
+Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der [Dokumentation zur Hobbes.js-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
 
 1. Öffnen Sie CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/etc/clientlibs` und klicken Sie auf **Erstellen > Ordner erstellen**. Geben Sie als Namen `myTests` ein und klicken Sie auf **OK**.
@@ -123,10 +121,10 @@ Vollständige Informationen zum Erstellen eigener Test-Suites finden Sie in der 
 
    >[!NOTE]
    >
-   >**Nur in AEM Forms**
+   >**Nur AEM Forms**
    >
    >
-   >Um adaptive Formulare zu testen, fügen Sie die folgenden Werte den Kategorien (categories) und Abhängigkeiten (dependencies) hinzu. Beispiel:
+   >Fügen Sie den Kategorien und Abhängigkeiten die folgenden Werte hinzu, um adaptive Formulare zu testen. Beispiel:
    >
    >
    >**categories:**: `granite.testing.hobbes.tests, granite.testing.hobbes.af.commons`

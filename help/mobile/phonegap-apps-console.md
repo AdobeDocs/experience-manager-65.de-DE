@@ -1,8 +1,6 @@
 ---
 title: Erstellen und Bearbeiten von Apps mithilfe der Apps-Konsole
-seo-title: Creating and Editing Apps Using the Apps Console
 description: Auf dieser Seite erfahren Sie mehr über das Erstellen und Bearbeiten von Apps mithilfe der Apps-Konsole.
-seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
@@ -10,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '2615'
-ht-degree: 2%
+source-wordcount: '2695'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +19,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Der Entwicklungsprozess AEM Mobile Apps erkennt, dass Benutzer mit unterschiedlichem Know-how zur Entwicklung von Mobile Apps beitragen. Die folgende Prozesszuordnung zeigt die allgemeine Reihenfolge, in der Inhaltsautoren und Anwendungsentwickler Aufgaben ausführen.
 
@@ -62,7 +60,7 @@ Die Sprachseite dient zwei Zwecken:
 
 ### Die Homepage {#the-home-page}
 
-Die Startseite oder index.html-Seite einer Sprachvariante einer Anwendung wird angezeigt, wenn die Anwendung geöffnet wird. Die Startseite bietet Benutzern ein Menü mit Links zu verschiedenen Seiten in der Anwendung. Mit dem Absatzsystem können Sie Komponenten zur Seite hinzufügen, um Inhalte zu erstellen.
+Die Homepage oder index.html-Seite einer Sprachvariante einer Anwendung wird beim Öffnen der Anwendung angezeigt. Die Startseite bietet Benutzern ein Menü mit Links zu verschiedenen Seiten in der Anwendung. Mit dem Absatzsystem können Sie Komponenten zur Seite hinzufügen, um Inhalte zu erstellen.
 
 ## Erstellen einer Mobile App {#creating-a-mobile-application}
 
@@ -89,9 +87,9 @@ Es gibt zusätzliche (und optionale) Registerkarten für den Build-Cloud-Service
 Im folgenden Verfahren wird die Touch-Benutzeroberfläche zum Erstellen einer Mobile App verwendet.
 
 1. Klicken Sie in der Leiste auf Apps .
-1. Klicken oder tippen Sie auf das Symbol Erstellen .
+1. Klicken Sie auf das Symbol Erstellen .
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![Das Symbol Erstellen , das durch ein Pluszeichen in einem Quadrat gekennzeichnet ist.](do-not-localize/chlimage_1-7.png)
 
 1. (Optional) Geben Sie auf der Registerkarte Erweitert eine Beschreibung für die Anwendung ein und ändern Sie bei Bedarf die Server-URL.
 1. (Optional) Wenn Sie PhoneGap Build zum Kompilieren der Anwendung verwenden, wählen Sie auf der Registerkarte &quot;Build&quot;die zu verwendende Konfiguration aus.
@@ -114,30 +112,30 @@ Nachdem Sie eine Mobile App erstellt haben, können Sie die Eigenschaften änder
 1. Klicken oder tippen Sie in der Leiste auf Apps .
 1. Wählen Sie die zu konfigurierende Anwendung aus und klicken Sie auf das Symbol Seiteneigenschaften anzeigen .
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![Das Symbol Seiteneigenschaften anzeigen wird durch den Buchstaben I in einem Kreis angezeigt.](do-not-localize/chlimage_1-8.png)
 
 1. Um Eigenschaftswerte zu ändern, klicken oder tippen Sie auf das Symbol Bearbeiten .
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![Das durch einen Bleistift angegebene Symbol Bearbeiten .](do-not-localize/chlimage_1-9.png)
 
 1. Konfigurieren Sie die Eigenschaften Allgemein und Erweitert und klicken oder tippen Sie auf das Symbol Fertig .
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![Das Symbol Fertig , das durch ein Häkchen-Symbol gekennzeichnet ist.](do-not-localize/chlimage_1-10.png)
 
 #### Konfigurieren einer Sprachvariante der Anwendung {#configure-a-language-variation-of-the-application}
 
-1. Klicken oder tippen Sie in der Leiste auf Apps .
-1. Klicken Sie auf diese Schaltfläche, um einen Drilldown in die Mobile App durchzuführen, die Sie in der Admin Console von Apps bearbeiten möchten. Wählen Sie die Sprachversion der zu konfigurierenden Anwendung aus und klicken Sie auf das Symbol Anwendungseigenschaften anzeigen .
+1. Klicken Sie in der Leiste auf Apps .
+1. Klicken Sie auf diese Schaltfläche, um einen Drilldown in der Mobile App durchzuführen, die Sie in der App-Admin Console bearbeiten möchten. Wählen Sie die Sprachversion der zu konfigurierenden Anwendung aus und klicken Sie auf das Symbol Anwendungseigenschaften anzeigen .
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![Das Symbol Anwendungseigenschaften anzeigen wird durch den Buchstaben I in einem Kreis angezeigt.](do-not-localize/chlimage_1-11.png)
 
 1. Um Eigenschaftswerte zu ändern, klicken oder tippen Sie auf das Symbol Bearbeiten .
 
-   ![](do-not-localize/chlimage_1-12.png)
+   ![Das durch einen Bleistift angegebene Symbol Bearbeiten .](do-not-localize/chlimage_1-12.png)
 
 1. Konfigurieren Sie die Eigenschaften auf den Registerkarten Allgemein, Erweitert, Erstellen und Analytics und klicken oder tippen Sie dann auf das Symbol Fertig .
 
-   ![](do-not-localize/chlimage_1-13.png)
+   ![Das Symbol Fertig , das durch ein Häkchen-Symbol gekennzeichnet ist.](do-not-localize/chlimage_1-13.png)
 
 ### Verfassen des Inhalts einer Mobile App {#authoring-the-content-of-a-mobile-application}
 
@@ -167,7 +165,7 @@ Führen Sie das folgende Verfahren für die Instanz durch, in der Sie den Cache 
 1. Klicken oder tippen Sie in der Leiste auf Apps und dann auf Ihre Anwendung.
 1. Wählen Sie die Begrüßungsseite aus und klicken oder tippen Sie auf das Symbol Cache aktualisieren .
 
-   ![](do-not-localize/chlimage_1-14.png)
+   ![Das Symbol Cache aktualisieren , das durch einen gestreiften Balken mit einem Recyclingsymbol gekennzeichnet ist.](do-not-localize/chlimage_1-14.png)
 
 ### Verwenden von App-Vorlagen {#using-app-templates}
 
@@ -195,7 +193,7 @@ Schritte zum Erstellen einer neuen App basierend auf einer App-Vorlage:
 1. Klicken Sie auf Weiter.
 1. Geben Sie eine App-ID und einen Titel an. Sie können jedoch auch einen Namen und eine Beschreibung einfügen.
 
-   1. Darüber hinaus können Sie ein PNG-Symbol (unterstütztes PhoneGap-Symbolformat) als Symbol bereitstellen, indem Sie AEM Assets durchsuchen.
+   1. Sie können auch ein PNG-Symbol (unterstütztes PhoneGap-Symbolformat) als Symbol bereitstellen, indem Sie AEM Assets durchsuchen.
    1. Denken Sie daran, dass Sie alle diese Felder bearbeiten können, nachdem die App in der Kachel App verwalten erstellt wurde. Mit Ausnahme der App-ID können Sie nach dem Festlegen der App-ID diese nicht mehr ändern.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
@@ -222,7 +220,7 @@ Um die Anwendung zu öffnen, klicken Sie in der Leiste auf Mobile Apps und wähl
 Jede Seite der mobilen App enthält die folgenden Funktionen:
 
 * Eine Zurück-Schaltfläche zum Zurückkehren zur übergeordneten Seite. Beachten Sie, dass die Schaltfläche &quot;Zurück&quot;nicht auf der Startseite angezeigt wird.
-* Eine erweiterte Leiste mit einer Liste von Befehlen und Links:
+* Eine erweiterbare Leiste, die ein Menü mit Befehlen und Links bietet:
 
    * Öffnen Sie die Seite Standorte .
    * Öffnen Sie den Warenkorb.
@@ -251,7 +249,7 @@ Jede Kategorieseite verwendet dieselbe Inhaltsstruktur wie die Zahnradseite. Das
 
 ### Produktseite - Geometrixx Mobile App {#the-products-page-geometrixx-mobile-app}
 
-Die Produktseite und ihre Hierarchie untergeordneter Seiten implementieren ein Classification-System für Produktseiten. Die niedrigsten Seiten in jedem Zweig der Hierarchie sind Produktseiten, die eine ng-Produktkomponente enthalten.
+Die Produktseite und ihre Hierarchie der untergeordneten Seiten implementieren ein Classification-System für Produktseiten. Die niedrigsten Seiten in jedem Zweig der Hierarchie sind Produktseiten, die eine ng-Produktkomponente enthalten.
 
 Die Seite Produkte steht Anwendungsbenutzern nicht zur Verfügung. Die Zahnradseite bietet Zugriff auf die einzelnen Produktseiten.
 
@@ -269,7 +267,7 @@ Bei Verwendung der Anwendung ist die Seite Nachrichten im Karussell auf der engl
 
 ### Die Seite &quot;Über uns&quot;- Geometrixx Mobile App {#the-about-us-page-geometrixx-mobile-app}
 
-Die Seite Über uns enthält mehrere Komponenten für zwei Spaltenzeilen. Jede Spalte enthält entweder eine Bild- oder eine Text-Komponente. Die Komponenten sind bearbeitbar und das Absatzsystem ermöglicht das Hinzufügen von Komponenten.
+Die Seite &quot;Über uns&quot;enthält mehrere Komponenten für zwei Spaltenzeilen. Jede Spalte enthält entweder eine Bild- oder eine Text-Komponente. Die Komponenten sind bearbeitbar und das Absatzsystem ermöglicht das Hinzufügen von Komponenten.
 
 Bei Verwendung der Anwendung ist die Seite Über uns im Karussell auf der englischen Seite verfügbar.
 
@@ -281,9 +279,9 @@ Bei Verwendung der Anwendung ist die Seite Standorte in der Menüliste auf der e
 
 ## Beispiele für mobile Komponenten {#sample-mobile-components}
 
-Beim Verfassen der Seiten einer Mobile App sind im Sidekick sofort mehrere Komponenten verfügbar. Die Komponenten gehören zur PhoneGap-Komponentengruppe.
+Beim Verfassen der Seiten einer Mobile App stehen in Sidekick sofort mehrere Komponenten zur Verfügung. Die Komponenten gehören zur PhoneGap-Komponentengruppe.
 
-### Swipe-Karussell {#swipe-carousel}
+### Karussell-Galerie {#swipe-carousel}
 
 Die Komponente Karussell löschen ist ein Tool zum Anzeigen und Navigieren von Seiten der Site. Die Komponente enthält ein Karussell, bei dem die Bilder für die Seiten über einer Liste von Seitenlinks durchlaufen werden. Bearbeiten Sie die Komponente, um die anzuzeigenden Seiten und das Verhalten des Karussells anzugeben.
 
@@ -304,7 +302,7 @@ Verhalten des Karussells konfigurieren:
 Geben Sie an, wie die Seitenliste generiert wird:
 
 * Erstellen einer Liste mithilfe von: Die Methode zum Angeben der Seiten, die in das Karussell aufgenommen werden sollen. Siehe Erstellen der Seitenliste .
-* Sortieren nach: Wählen Sie eine Seiteneigenschaft aus, die zum Sortieren der Seitenliste verwendet werden soll. Wählen Sie beispielsweise jcr:title aus, um Seiten alphabetisch nach Titel zu sortieren.
+* Sortieren nach: Wählen Sie eine Seiteneigenschaft aus, die zum Sortieren der Seitenliste verwendet werden soll. Wählen Sie beispielsweise jcr:title aus, um die Seiten alphabetisch nach Titel zu sortieren.
 * Limit: Die maximale Anzahl der einzuschließenden Seiten. Diese Eigenschaft eignet sich für suchbasierte Methoden zum Erstellen der Seitenliste.
 
 #### Erstellen der Seitenliste {#building-the-page-list}

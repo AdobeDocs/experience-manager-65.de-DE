@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '666'
 ht-degree: 2%
 
 ---
@@ -89,10 +89,10 @@ phonegap run ios
 >1. Navigieren Sie in diesen neuen Ordner (cd test).
 >1. Führen Sie `phonegap create helloWorld` aus.
 >1. Navigieren Sie zu helloWorld (cd helloWorld).
->1. Ausführen `phonegap run android` (oder ersetzen Sie Android wie oben beschrieben durch iOS).
->1. Emulator öffnet die neu erstellte PhoneGap-App mit der Meldung &quot;Device Ready&quot;, wenn die JavaScript Bridge zu nativ betriebsbereit ist.
+>1. Ausführen `phonegap run android` (oder ersetzen Sie Android™ durch iOS wie oben beschrieben).
+1. Emulator öffnet die neu erstellte PhoneGap-App mit der Meldung &quot;Device Ready&quot;, wenn die JavaScript Bridge zu nativ betriebsbereit ist.
 >
->Mit dieser Fehlerbehebung wird überprüft, ob Ihre PhoneGap-CLI-Entwicklungsumgebung ordnungsgemäß ausgeführt wird.
+Mit dieser Fehlerbehebung wird überprüft, ob Ihre PhoneGap-CLI-Entwicklungsumgebung ordnungsgemäß ausgeführt wird.
 
 ## Debuggen von JavaScript mit Safari- und IOS-Debugging {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -147,13 +147,13 @@ Sie können Haltepunkte an einer beliebigen Stelle in Ihrer Quelle festlegen. We
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-* Verwenden Sie die Kontrollschaltflächen, um die Ausführung fortzusetzen, Schritt für Schritt vorzunehmen, Schritte in die Methoden einzuleiten und auszusteigen:
+* Verwenden Sie die Schaltflächen, um die Ausführung fortzusetzen, einen Schritt weiter zu gehen, Schritte in die Methoden einzuleiten und auszusteigen:
 
-![](do-not-localize/chlimage_1-4.png)
+![Fünf verschiedene funktionierende Schaltflächen, die in einer horizontalen Zeile ausgerichtet sind.](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >
->Um die Werte der Variablen anzuzeigen, bewegen Sie in der aktuellen Methode den Mauszeiger über.
+Um die Werte der Variablen anzuzeigen, bewegen Sie in der aktuellen Methode den Mauszeiger über.
 
 ## Die nächsten Schritte {#the-next-steps}
 

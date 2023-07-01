@@ -1,8 +1,6 @@
 ---
 title: AEM Developer Tools for Eclipse
-seo-title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
-seo-description: null
 uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,16 +8,16 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '779'
-ht-degree: 48%
+source-wordcount: '788'
+ht-degree: 62%
 
 ---
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
-![](do-not-localize/chlimage_1-9.png)
+![Zirkuläres Bildmotiv für AEM Entwicklertools für Eclipse.](do-not-localize/chlimage_1-9.png)
 
 ## Übersicht {#overview}
 
@@ -30,7 +28,7 @@ Es bietet mehrere Funktionen, die die AEM-Entwicklung vereinfachen:
 * Nahtlose Integration mit AEM-Instanzen über Eclipse Server Connector.
 * Synchronisierung für Inhalte und OSGI-Pakete.
 * Debugging-Unterstützung mit Code-Hot-Swapping-Funktion.
-* Einfacher Bootstrap von AEM über einen spezifischen Assistenten zur Projekterstellung.
+* Einfacher Bootstrap von AEM-Projekten über einen speziellen Projekterstellungsassistenten.
 * Einfache Bearbeitung von JCR-Eigenschaften.
 
 ## Voraussetzungen {#requirements}
@@ -40,7 +38,7 @@ Bevor Sie die AEM Developer Tools verwenden, gehen Sie wie folgt vor:
 * Herunterladen und installieren [Eclipse IDE für Java™ EE-Entwickler](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers). AEM Developer Tools unterstützt derzeit Eclipse Kepler oder höher.
 
 * Kann mit AEM Version 5.6.1 oder höher verwendet werden.
-* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre `eclipse.ini` Konfigurationsdatei wie im Abschnitt [Häufig gestellte Fragen zu Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
+* Konfigurieren Sie Ihre Eclipse-Installation, um sicherzustellen, dass Sie mindestens 1 GB Heap-Speicher haben, indem Sie Ihre Konfigurationsdatei `eclipse.ini` bearbeiten, wie in den [häufig gestellten Fragen zu Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F) beschrieben.
 
 >[!NOTE]
 >
@@ -56,13 +54,13 @@ Sobald Sie die oben genannten [Voraussetzungen](#requirements) erfüllt haben, k
 
    Alternativ können Sie ein Archiv herunterladen, anstatt den Installationslink zu verwenden. Dies ermöglicht eine Offline-Installation, aber Sie verpassen automatische Aktualisierungsbenachrichtigungen.
 
-1. Öffnen Sie in Eclipse die **Hilfe** Menü.
-1. Klicken **Neue Software installieren**.
+1. Öffnen Sie in Eclipse das Menü **Hilfe**.
+1. Klicken Sie auf **Neue Software installieren**.
 1. Klicken Sie auf **Hinzufügen...**.
 1. In **Name** Geben Sie AEM Entwicklertools ein.
 1. Unter **Standort** kopieren Sie die Installations-URL.
 1. Klicken Sie auf **OK**.
-1. Überprüfen Sie beide **AEM** und **Sling** Plug-ins.
+1. Prüfen Sie die beiden Plug-ins für **AEM** und **Sling**.
 1. Klicken Sie auf **Weiter**.
 1. Klicken Sie auf **Weiter**.
 1. Akzeptieren Sie die Lizenzvereinbarungen und klicken Sie auf **Beenden**.
@@ -82,11 +80,11 @@ Die AEM Entwicklungs-Tools für Eclipse verfügen über eine Perspektive, die Ih
 
 ## Multi-Modul-Beispielprojekt {#sample-multi-module-project}
 
-&quot;AEM Developer Tools&quot;enthalten ein Beispielprojekt mit mehreren Modulen, mit dem Sie sich schnell mit der Projekteinrichtung in Eclipse vertraut machen können. Es dient auch als Best-Practice-Leitfaden für verschiedene AEM Funktionen. [Erfahren Sie mehr über den Projektarchetyp](https://github.com/adobe/aem-project-archetype).
+&quot;AEM Developer Tools&quot;enthalten ein Beispielprojekt mit mehreren Modulen, mit dem Sie sich schnell mit der Projekteinrichtung in Eclipse vertraut machen können. Es dient auch als Best-Practice-Leitfaden für verschiedene AEM-Funktionen. [Erfahren Sie mehr über den Projektarchetyp](https://github.com/adobe/aem-project-archetype).
 
 Führen Sie die folgenden Schritte aus, um das Beispielprojekt zu erstellen:
 
-1. Im **Datei** > **Neu** > **Projekt** Menü, navigieren Sie zum **AEM** und wählen Sie **AEM Beispiel für ein Projekt mit mehreren Modulen**.
+1. Suchen Sie im Menü **Datei** > **Neu** > **Projekt** den Abschnitt **AEM** und wählen Sie **AEM-Multi-Modul-Beispielprojekt**.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -153,12 +151,12 @@ Stellen Sie sicher, dass Sie die korrekte Version für Ihre Bereitstellung von A
 
 Die offizielle Website „Apache Sling IDE tooling for Eclipse“ bietet Ihnen nützliche Informationen:
 
-* Die [**Apache Sling IDE-Tools für Eclipse** Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html)enthält, führt Sie diese Dokumentation durch die allgemeinen Konzepte, Serverintegration und Bereitstellungsfunktionen, die von den AEM Entwicklungs-Tools unterstützt werden.
+* Das Benutzerhandbuch](https://sling.apache.org/documentation/development/ide-tooling.html) zu [**Apache Sling IDE-Tooling für Eclipse**, diese Dokumentation führt Sie durch die allgemeinen Konzepte, die Server-Integration und die von den AEM-Entwicklungs-Tools unterstützten Implementierungsfunktionen.
 * Der [Abschnitt zur Fehlerbehebung](https://sling.apache.org/documentation/development/ide-tooling.html#troubleshooting).
 * Die [Liste der bekannten Probleme](https://sling.apache.org/documentation/development/ide-tooling.html#known-issues).
 
 Die folgende offizielle [Eclipse](https://www.eclipse.org/)-Dokumentation kann dabei helfen, Ihre Umgebung einzurichten:
 
-* [Erste Schritte mit Eclipse](https://www.eclipse.org/getting-started/)
+* [Erste Schritte mit Eclipse](https://eclipseide.org/getting-started/)
 * [Eclipse Luna-Hilfesystem](https://help.eclipse.org/latest/index.jsp)
 * [Maven-Integration (m2eclipse)](https://www.eclipse.org/m2e/)

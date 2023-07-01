@@ -1,8 +1,6 @@
 ---
 title: Responsives Design für Web-Seiten
-seo-title: Responsive design for web pages
-description: Responsives Design ermöglicht die effektive Darstellung derselben Seiten auf mehreren Geräten in verschiedenen Ausrichtungen
-seo-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
+description: Responsives Design ermöglicht die effektive Darstellung derselben Seiten auf mehreren Geräten in verschiedenen Ausrichtungen.
 uuid: 3d324557-e7ff-4c82-920f-9b5a906925e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '5336'
+source-wordcount: '5375'
 ht-degree: 43%
 
 ---
@@ -23,6 +21,7 @@ ht-degree: 43%
 >[!NOTE]
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein Framework-basiertes Client-seitiges Rendering für einzelne Seiten erforderlich ist (z. B. _React_). [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>
 
 >[!NOTE]
 >
@@ -201,7 +200,7 @@ Erstellen Sie beispielsweise einen Knoten ` [sling:OsgiConfig](/help/sites-deplo
 * Übergeordneter Ordner: `/apps/application_name/config`
 * Name: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
 
-   Das Suffix - `*alias*` ist erforderlich, weil der Service „MobileEmulatorProvider“ ein Factory-Service ist. Verwenden Sie einen beliebigen eindeutigen Alias für diese Factory.
+  Das Suffix - `*alias*` ist erforderlich, weil der Service „MobileEmulatorProvider“ ein Factory-Service ist. Verwenden Sie einen beliebigen eindeutigen Alias für diese Factory.
 
 * jcr:primaryType: `sling:OsgiConfig`
 
@@ -211,12 +210,12 @@ Fügen Sie folgende Knoteneigenschaft hinzu:
 * Typ: `String[]`
 * Wert: Die Pfade zu den Seitenkomponenten, die Ihre Web-Seiten rendern. Das Programm „geometrixx-media“ verwendet beispielsweise die folgenden Werte:
 
-   ```
-   geometrixx-media/components/page
-    geometrixx-unlimited/components/pages/page
-    geometrixx-unlimited/components/pages/coverpage
-    geometrixx-unlimited/components/pages/issue
-   ```
+  ```
+  geometrixx-media/components/page
+   geometrixx-unlimited/components/pages/page
+   geometrixx-unlimited/components/pages/coverpage
+   geometrixx-unlimited/components/pages/issue
+  ```
 
 ### Angeben der Gerätegruppen {#specifying-the-device-groups}
 
@@ -235,6 +234,7 @@ Verwenden Sie die Tools-Konsole, um [Erstellen und Bearbeiten von Gerätegruppen
 >[!NOTE]
 >
 >Für Gerätegruppen, die Sie für responsives Design verwenden, bearbeiten Sie die Gerätegruppe und wählen Sie auf der Registerkarte Allgemein die Option Emulator deaktivieren aus. Diese Option verhindert, dass das Emulator-Karussell angezeigt wird, was für responsives Design nicht relevant ist.
+>
 
 ## Verwenden adaptiver Bilder {#using-adaptive-images}
 
@@ -326,6 +326,7 @@ Im folgenden HTML-Beispiel werden zwei DAM-Ausgabeformate desselben Bildes ausge
 >* Skript, das den HTML-Code generiert: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
 >
 >Der folgende Abschnitt enthält Details zu dieser Komponente.
+>
 
 ### Grundlegendes zum Bild-Rendering in AEM {#understanding-image-rendering-in-aem}
 
@@ -365,6 +366,7 @@ Die Komponente muss die folgenden Aufgaben ausführen:
 >[!NOTE]
 >
 >Der Webclient verwendet die JavaScript-Bibliotheken &quot;matchMedia&quot;und &quot;Picturefill&quot;(oder ähnliche Bibliotheken), um die Medienauswahl zu bewerten.
+>
 
 Das Servlet, das die Bildanforderung verarbeitet, muss die folgenden Aufgaben ausführen:
 
@@ -656,6 +658,7 @@ Die Klasse `ImageReferenceModificationServlet` überschreibt die Methode `create
 
 >[!NOTE]
 >Die Klasse [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) stellt die Methode „getFileReference“ zur Verfügung.
+>
 
 ## Entwickeln eines fließenden Rasters {#developing-a-fluid-grid}
 
@@ -697,6 +700,7 @@ Beispielsweise enthält die Beispielanwendung „geometrixx-media“ die Kompone
 >[!NOTE]
 >
 >Wenn eine Komponente verschiedene `cq:include`-Elemente umfasst, die auf die Parsys-Komponente verweisen, müssen alle `path`-Attribute unterschiedliche Werte aufweisen.
+>
 
 #### Skalieren des Seitenkomponentenrasters {#scaling-the-page-component-grid}
 
@@ -861,13 +865,13 @@ Verwenden Sie für jeden Bereich der Viewport-Breiten, die Sie als Ziel auswähl
 
 Verwenden Sie Raster zum Skalieren von Inhaltsbausteinen, um sie an verschiedene Darstellungsfeldgrößen anzupassen. Inhaltsbausteine erstrecken sich über eine bestimmte Anzahl von Spalten. Wenn sich die Spaltenbreiten erhöhen oder verringern, um an verschiedene Darstellungsfeldgrößen anzupassen, werden die Inhaltsblöcke entsprechend vergrößert oder verkleinert. Die Skalierung kann sowohl große als auch mittlere Viewports unterstützen, die groß genug sind, um die nebeneinander platzierte Platzierung von Inhaltsbausteinen zu ermöglichen.
 
-![](do-not-localize/chlimage_1-1a.png)
+![Bild zweier Raster, eines, das kleiner skaliert ist als das andere.](do-not-localize/chlimage_1-1a.png)
 
 #### Neupositionieren von Inhalten im Raster {#repositioning-content-in-the-grid}
 
 Die Größe von Inhaltsbausteinen kann durch eine minimale Breite beschränkt werden, über die die Skalierung nicht mehr effektiv ist. Bei kleineren Viewports kann das Raster verwendet werden, um Inhaltsblöcke vertikal und nicht horizontal zu verteilen.
 
-![](do-not-localize/chlimage_1-2a.png)
+![Bild von zwei Rastern, die kleiner als das andere positioniert werden.](do-not-localize/chlimage_1-2a.png)
 
 ### Entwerfen des Rasters {#designing-the-grid}
 
@@ -952,7 +956,7 @@ Verwenden Sie den Float-Stil des `.row-fluid` -Klasse, damit Sie steuern können
 
 Fügen Sie den Stil dem `.row-fluid`-Selektor in den Medienabfragen hinzu. Legen Sie den Wert entsprechend dem Seiten-Layout fest, das Sie für die Medienabfrage verwenden. Das folgende Diagramm zeigt beispielsweise eine Zeile, die Inhalte für breite Viewports horizontal und für schmale Viewports vertikal verteilt.
 
-![](do-not-localize/chlimage_1-3a.png)
+![Zwei Bilder von Inhaltsbausteinen in einer Zeile, das zweite Bild, das die Zeile neu positioniert.](do-not-localize/chlimage_1-3a.png)
 
 Dieses Verhalten kann durch die folgende CSS implementiert werden:
 
