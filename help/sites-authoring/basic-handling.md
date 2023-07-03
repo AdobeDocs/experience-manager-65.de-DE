@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 3802eb71dc6d17db4b1158d8d433ba1c516e54f2
 workflow-type: tm+mt
-source-wordcount: '2973'
+source-wordcount: '3011'
 ht-degree: 60%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 60%
 >* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-authoring/keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
-
 ## Erste Schritte {#getting-started}
 
 ### Touch-optimierte Benutzeroberfläche {#a-touch-enabled-ui}
@@ -39,7 +38,7 @@ Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie auf Ihren Touch-
 
 Unmittelbar nach der Anmeldung gelangen Sie zum [Navigationsfenster](#navigation-panel). Wenn Sie eine der Optionen auswählen, wird die entsprechende Konsole geöffnet.
 
-![bh-01](assets/bh-01.png)
+![Navigation](assets/bh-01.png)
 
 >[!NOTE]
 >
@@ -51,7 +50,7 @@ Unmittelbar nach der Anmeldung gelangen Sie zum [Navigationsfenster](#navigation
 
 Wenn ein Benutzer zum ersten Mal auf eine Konsole zugreift, wird ein Tutorial zur Produktnavigation gestartet. Nehmen Sie sich eine Minute Zeit, um zu klicken oder zu tippen, um einen guten Überblick über die grundlegende Handhabung von AEM zu erhalten.
 
-![bh-02](assets/bh-02.png)
+![Produktnavigation](assets/bh-02.png)
 
 Klicken oder tippen Sie auf **Weiter**, um zur nächsten Seite der Übersicht zu wechseln. Klicken bzw. tippen Sie auf **Schließen** oder klicken Sie außerhalb des Überblicksfensters, um es zu schließen.
 
@@ -63,7 +62,7 @@ Sie können mithilfe des globalen Navigationsfensters zwischen den Konsolen navi
 
 Sie können das globale Navigationsfenster schließen, indem Sie auf **Schließen** klicken oder tippen. Sie kehren dann zu Ihrer vorherigen Position zurück.
 
-![bh-03](assets/bh-03.png)
+![Globale Navigation](assets/bh-03.png)
 
 >[!NOTE]
 >
@@ -80,7 +79,7 @@ Die in diesen Bedienfeldern verfügbaren Optionen werden unten beschrieben.
 
 Das Navigationsfenster bietet Zugriff auf die AEM-Konsolen:
 
-![bh-01](assets/bh-01.png)
+![Navigation](assets/bh-01.png)
 
 Der Titel der Browser-Registerkarte wird aktualisiert, um Ihren Standort während der Navigation durch die Konsolen und Inhalte widerzuspiegeln.
 
@@ -135,95 +134,95 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
 
 Im Bedienfeld &quot;Tools&quot;enthält jede Option im seitlichen Bedienfeld einen Bereich von Untermenüs. Die [Tools-Konsolen](/help/sites-administering/tools-consoles.md) können Sie hier auf eine Reihe spezialisierter Tools und Konsolen zugreifen, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Inhalts-Repositorys verwalten können.
 
-![bh-04](assets/bh-04.png)
+![Tools-Bereich](assets/bh-04.png)
 
 ## Die Kopfzeile {#the-header}
 
-Die Kopfzeile befindet sich immer oben im Bildschirm. Während die meisten Optionen in der Kopfzeile unabhängig davon, wo Sie sich im System befinden, gleich bleiben, sind einige kontextspezifisch.
+Die Kopfzeile von befindet sich immer oben im Bildschirm. Während die meisten Optionen in der Kopfzeile unabhängig davon, wo Sie sich im System befinden, gleich bleiben, sind einige kontextspezifisch.
 
-![bh-03](assets/bh-03.png)
+![Kopfzeile](assets/bh-03.png)
 
 * [Globale Navigation](#navigatingconsolesandtools)
 
-   Wählen Sie den Link **Adobe Experience Manager** aus, um zwischen Konsolen zu navigieren.
+  Wählen Sie den Link **Adobe Experience Manager** aus, um zwischen Konsolen zu navigieren.
 
-   ![screen_shot_2018-03-23at103615](assets/screen_shot_2018-03-23at103615.png)
+  ![Adobe Experience Manager-Link](assets/screen_shot_2018-03-23at103615.png)
 
 * [Suchen](/help/sites-authoring/search.md)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103542.png)
+  ![Suchen](do-not-localize/screen_shot_2018-03-23at103542.png)
 
-   Sie können auch den [Tastaturbefehl](/help/sites-authoring/keyboard-shortcuts.md) `/` (Schrägstrich) verwenden, um von jeder beliebigen Konsole aus die Suche zu starten.
+  Sie können auch den [Tastaturbefehl](/help/sites-authoring/keyboard-shortcuts.md) `/` (Schrägstrich) verwenden, um von jeder beliebigen Konsole aus die Suche zu starten.
 
 * [Lösungen](https://www.adobe.com/experience-cloud.html)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103552.png)
+  ![Lösungen](do-not-localize/screen_shot_2018-03-23at103552.png)
 
 * [Hilfe](#accessinghelptouchoptimizedui)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103547.png)
+  ![Hilfe](do-not-localize/screen_shot_2018-03-23at103547.png)
 
 * [Benachrichtigungen](/help/sites-authoring/inbox.md)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103558.png)
+  ![Benachrichtigungen](do-not-localize/screen_shot_2018-03-23at103558.png)
 
-   Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen gekennzeichnet.
+  Dieses Symbol wird mit der Anzahl der aktuell zugewiesenen unvollständigen Benachrichtigungen gekennzeichnet.
 
-   >[!NOTE]
-   >
-   >Vordefinierte AEM enthalten vordefinierte Aufgaben, die der Administrator-Benutzergruppe zugewiesen sind. Siehe [Ihr Posteingang - Vordefinierte Verwaltungsaufgaben](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) für Details.
+  >[!NOTE]
+  >
+  >Vordefinierte AEM enthalten vordefinierte Aufgaben, die der Administrator-Benutzergruppe zugewiesen sind. Siehe [Ihr Posteingang - Vordefinierte Verwaltungsaufgaben](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks) für Details.
 
 * [Benutzereigenschaften](/help/sites-authoring/user-properties.md)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103603.png)
+  ![Benutzereigenschaften](do-not-localize/screen_shot_2018-03-23at103603.png)
 
 * [Schienenauswahl](/help/sites-authoring/basic-handling.md#rail-selector)
 
-   ![](do-not-localize/screen_shot_2018-03-23at103943.png)
+  ![](do-not-localize/screen_shot_2018-03-23at103943.png)
 
-   Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
+  Die angezeigten Optionen hängen von der jeweiligen Konsole ab. So können Sie z. B. in **Sites** nur Inhalt (Standard), die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
-   ![screen_shot_2018-03-23at104029](assets/screen_shot_2018-03-23at104029.png)
+  ![Leistenauswahl](assets/screen_shot_2018-03-23at104029.png)
 
-* Breadcrumbs
+* Breadcrumb
 
-   ![bh-05](assets/bh-05.png)
+  ![Breadcrumbs](assets/bh-05.png)
 
-   Breadcrumbs befinden sich immer in der Mitte der Leiste und zeigen die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole. In der Sites-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
+  Breadcrumbs befinden sich immer in der Mitte der Leiste und zeigen die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole. In der Sites-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
 
-   Klicken Sie einfach auf den Breadcrumb-Text, um eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements anzuzeigen. Klicken Sie auf einen Eintrag, um zu diesem Ort zu springen.
+  Klicken Sie einfach auf den Breadcrumb-Text, um eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements anzuzeigen. Klicken Sie auf einen Eintrag, um zu diesem Ort zu springen.
 
-   ![bh-06](assets/bh-06.png)
+  ![Hierarchieebenen](assets/bh-06.png)
 
 * Auswahl des Analysezeitraums
 
-   ![screen_shot_2018-03-23at104126](assets/screen_shot_2018-03-23at104126.png)
+  ![Analytics-Zeitraum](assets/screen_shot_2018-03-23at104126.png)
 
-   Diese Option ist nur in der Listenansicht verfügbar. Weitere Informationen dazu finden Sie unter [Listenansicht](#list-view).
+  Diese Option ist nur in der Listenansicht verfügbar. Weitere Informationen dazu finden Sie unter [Listenansicht](#list-view).
 
 * Schaltfläche **Erstellen**
 
-   ![screen_shot_2018-03-23at104301](assets/screen_shot_2018-03-23at104301.png)
+  ![Erstellen](assets/screen_shot_2018-03-23at104301.png)
 
-   Wird hierauf geklickt, entsprechen die angezeigten Optionen der Konsole/dem Kontext.
+  Wird hierauf geklickt, entsprechen die angezeigten Optionen der Konsole/dem Kontext.
 
 * [Ansichten](/help/sites-authoring/basic-handling.md#viewingandselectingyourresourcescardlistcolumn)
 
-   Das Ansichtssymbol befindet sich ganz rechts in der AEM-Symbolleiste. Da es auch die aktuelle Ansicht anzeigt, ändert es sich. In der Standardansicht wird beispielsweise in der **Spaltenansicht** Folgendes angezeigt:
+  Das Ansichtssymbol befindet sich ganz rechts in der AEM-Symbolleiste. Da es auch die aktuelle Ansicht anzeigt, ändert es sich. In der Standardansicht wird beispielsweise in der **Spaltenansicht** Folgendes angezeigt:
 
-   ![bh-07](assets/bh-07.png)
+  ![Spaltenansicht](assets/bh-07.png)
 
-   Sie können zwischen der Spalten-, Karten- und Listenansicht wechseln; in der Listenansicht werden auch die Ansichtseinstellungen angezeigt.
+  Sie können zwischen der Spalten-, Karten- und Listenansicht wechseln; in der Listenansicht werden auch die Ansichtseinstellungen angezeigt.
 
-   ![bh-09](assets/bh-09.png)
+  ![Ansichten wechseln](assets/bh-09.png)
 
 * Navigation über die Tastatur
 
-   Sie haben die Möglichkeit, auf einer Website nur mit der Tastatur zu navigieren. Dabei wird die Standard-Browser-Funktionalität der **TAB**-Taste (oder **WAHL+TAB**) verwendet, um zwischen *fokussierbaren* Elementen auf der Seite zu wechseln.
+  Sie haben die Möglichkeit, auf einer Website nur mit der Tastatur zu navigieren. Dabei wird die Standard-Browser-Funktionalität der **TAB**-Taste (oder **WAHL+TAB**) verwendet, um zwischen *fokussierbaren* Elementen auf der Seite zu wechseln.
 
-   In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Diese wird sichtbar, wenn Sie mit *TAB* durch die Kopfzeilenoptionen blättern, und beschleunigt Ihre Navigation, indem Sie die Standardelemente in der Symbolleiste (des Produkts) überspringen und direkt zum Hauptinhalt wechseln.
+  In der **Sites**-Konsole gibt es die zusätzliche Option, **zum Hauptinhalt zu wechseln**. Diese wird sichtbar, wenn Sie mit *TAB* durch die Kopfzeilenoptionen blättern, und beschleunigt Ihre Navigation, indem Sie die Standardelemente in der Symbolleiste (des Produkts) überspringen und direkt zum Hauptinhalt wechseln.
 
-   ![bh-30](assets/bh-30.png)
+  ![Zum Hauptinhalt wechseln](assets/bh-30.png)
 
 ## Aufrufen der Hilfe {#accessing-help}
 
@@ -231,42 +230,42 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
 * **Konsolensymbolleiste**
 
-   Je nach Standort **Hilfe** -Symbol öffnet die entsprechenden Ressourcen:
+  Je nach Standort **Hilfe** -Symbol öffnet die entsprechenden Ressourcen:
 
-   ![bh-10](assets/bh-10.png)
+  ![Symbolleiste der Konsole](assets/bh-10.png)
 
 * **Navigation**
 
-   Beim erstmaligen Navigieren im System [wird die AEM-Navigation über eine Reihe von Folien vorgestellt](/help/sites-authoring/basic-handling.md#product-navigation).
+  Beim erstmaligen Navigieren im System [wird die AEM-Navigation über eine Reihe von Folien vorgestellt](/help/sites-authoring/basic-handling.md#product-navigation).
 
 * **Seiten-Editor**
 
-   Wenn Sie zum ersten Mal eine Seite bearbeiten, wird der Seiten-Editor durch eine Reihe von Folien vorgestellt.
+  Wenn Sie zum ersten Mal eine Seite bearbeiten, wird der Seiten-Editor durch eine Reihe von Folien vorgestellt.
 
-   ![bh-11](assets/bh-11.png)
+  ![Seiteneditor](assets/bh-11.png)
 
-   Navigieren Sie in diesem Überblick wie im [Überblick zur Produktnavigation](/help/sites-authoring/basic-handling.md#product-navigation) beim erstmaligen Öffnen einer Konsole.
+  Navigieren Sie in diesem Überblick wie im [Überblick zur Produktnavigation](/help/sites-authoring/basic-handling.md#product-navigation) beim erstmaligen Öffnen einer Konsole.
 
-   Im Menü [**Seiteninformationen** können Sie die Option **Hilfe**](/help/sites-authoring/author-environment-tools.md#accessing-help) auswählen, um diese Folien jederzeit erneut anzuzeigen.
+  Im Menü [**Seiteninformationen** können Sie die Option **Hilfe**](/help/sites-authoring/author-environment-tools.md#accessing-help) auswählen, um diese Folien jederzeit erneut anzuzeigen.
 
 * **Tools-Konsole**
 
-   Aus dem **Instrumente** -Konsole können Sie auch auf die externe **Ressourcen**:
+  Aus dem **Instrumente** -Konsole können Sie auch auf die externe **Ressourcen**:
 
    * **Dokumentation**
 Dokumentation für Web Experience Management anzeigen
 
    * **Entwicklungsressourcen**
 Entwicklungsressourcen und Downloads
-   >[!NOTE]
-   >
-   >Sie können jederzeit über den Hotkey `?` (Fragezeichen) in einer Konsole auf eine Übersicht der verfügbaren Tastaturbefehle zugreifen.
-   >
-   >Eine Aufstellung aller Tastaturbefehle finden Sie in den folgenden Dokumenten:
-   >
-   >    * [Tastaturbefehle für die Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
-   >    * [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
 
+  >[!NOTE]
+  >
+  >Sie können jederzeit über den Hotkey `?` (Fragezeichen) in einer Konsole auf eine Übersicht der verfügbaren Tastaturbefehle zugreifen.
+  >
+  >Eine Aufstellung aller Tastaturbefehle finden Sie in den folgenden Dokumenten:
+  >
+  >* [Tastaturbefehle für die Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
+  >* [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
 
 ## Aktionssymbolleiste {#actions-toolbar}
 
@@ -294,7 +293,7 @@ In der [Kartenansicht](#cardviewquickactions) sind bestimmte Aktionen sowohl als
 
 Die Schnellaktionen sind sichtbar, wenn Sie den Mauszeiger über eine Ressourcenkarte (Desktop-Gerät) bewegen. Die verfügbaren Schnellaktionen können von der Konsole und dem Kontext abhängen. Hier finden Sie beispielsweise die Schnellaktionen für eine Seite im **Sites** console:
 
-![bh-13](assets/bh-13.png)
+![Schnellaktionen](assets/bh-13.png)
 
 ## Anzeigen und Auswählen von Ressourcen {#viewing-and-selecting-resources}
 
@@ -372,7 +371,7 @@ Sie können alle Elemente in einer Ansicht auswählen, indem Sie in der oberen r
 * In **Listenansicht** alle Elemente in der Liste ausgewählt sind.
 * In der **Spaltenansicht** sind alle Elemente in der Spalte ganz links ausgewählt.
 
-![screen-shot_2019-03-05at094659](assets/screen-shot_2019-03-05at094659.png)
+![Alle auswählen](assets/screen-shot_2019-03-05at094659.png)
 
 #### Gesamte Auswahl aufheben {#deselecting-all}
 
@@ -384,7 +383,7 @@ Sie können die Auswahl aller Elemente aufheben und den Auswahlmodus beenden, in
 
 * oder drücken Sie die **Esc-Taste**.
 
-![bh-14](assets/bh-14.png)
+![Auswahl aufheben](assets/bh-14.png)
 
 In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie auf der Tastatur auf Esc tippen, wenn Sie ein Desktop-Gerät verwenden.
 
@@ -392,7 +391,7 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 1. Beispiel für die Kartenansicht:
 
-   ![bh-15](assets/bh-15.png)
+   ![Select - Kartenansicht](assets/bh-15.png)
 
 1. Nach Auswahl einer Ressource wird die obere Kopfzeile von der [Aktionssymbolleiste](#actionstoolbar) überdeckt, die Zugriff auf die Aktionen bietet, die für die ausgewählte Ressource verfügbar sind.
 
@@ -400,7 +399,7 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 ### Spaltenansicht {#column-view}
 
-![bh-16](assets/bh-16.png)
+![Spaltenansicht](assets/bh-16.png)
 
 Die Spaltenansicht ermöglicht eine visuelle Navigation eines Inhaltsbaums durch eine Reihe kaskadierender Spalten. Mit dieser Ansicht können Sie die Baumstruktur Ihrer Website visualisieren und durchlaufen.
 
@@ -410,11 +409,10 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
    * Der Ressourcenname und der Pfeil werden beim Tippen oder Klicken hervorgehoben.
 
-   ![bh-17](assets/bh-17.png)
+     ![Spaltenansicht](assets/bh-17.png)
 
    * Die untergeordneten Elemente der angeklickten/getappten Ressource werden in der Spalte rechts neben der angeklickten/angetippten Ressource angezeigt.
    * Wenn Sie auf einen Ressourcennamen tippen oder klicken, der keine untergeordneten Elemente enthält, werden dessen Details in der letzten Spalte angezeigt.
-
 
 * Durch Tippen oder Klicken auf die Miniatur wird die Ressource ausgewählt.
 
@@ -422,9 +420,9 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * Die Details der ausgewählten Ressource werden in der letzten Spalte angezeigt.
    * Die Aktionssymbolleiste wird verfügbar.
 
-   ![bh-18](assets/bh-18.png)
+     ![Spaltenansicht](assets/bh-18.png)
 
-   Wenn eine Seite in der Spaltenansicht ausgewählt wird, wird die ausgewählte Seite in der finalen Spalte zusammen mit den folgenden Details angezeigt:
+  Wenn eine Seite in der Spaltenansicht ausgewählt wird, wird die ausgewählte Seite in der finalen Spalte zusammen mit den folgenden Details angezeigt:
 
    * Seitentitel
    * Seitenname (Teil der URL der Seite)
@@ -432,7 +430,6 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * Änderungsdetails
    * Seitensprache
    * Veröffentlichungsdetails
-
 
 ### Kartenansicht {#card-view}
 
@@ -450,29 +447,29 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
 * [Schnellaktionen](#quick-actions) sind auch in dieser Ansicht verfügbar, z. B. Auswahl und allgemeine Aktionen wie Bearbeiten.
 
-   ![bh-13-1](assets/bh-13-1.png)
+  ![Kartenansicht - Schnellaktionen](assets/bh-13-1.png)
 
 * Sie können in der Struktur nach unten navigieren, indem Sie auf die Karten tippen/klicken (vermeiden Sie dabei die Schnellaktionen), und über die [Breadcrumbs in der Kopfzeile](/help/sites-authoring/basic-handling.md#the-header) wieder nach oben navigieren.
 
 ### Listenansicht {#list-view}
 
-![bh-19](assets/bh-19.png)
+![Listenansicht](assets/bh-19.png)
 
 * In der Listenansicht werden Informationen für jede Ressource auf der aktuellen Ebene aufgelistet.
 * Sie können in der Struktur nach unten navigieren, indem Sie auf den Ressourcennamen tippen/klicken, und über die [Breadcrumbs in der Kopfzeile](/help/sites-authoring/basic-handling.md#the-header) wieder nach oben navigieren.
 
 * Um alle Elemente in der Liste auszuwählen, verwenden Sie das Kontrollkästchen links oben in der Liste.
 
-   ![bh-20](assets/bh-20.png)
+  ![Listenansicht - Alle auswählen](assets/bh-20.png)
 
    * Wenn alle Elemente in der Liste ausgewählt sind, wird dieses Kontrollkästchen aktiviert.
 
       * Klicken oder tippen Sie auf das Kontrollkästchen, um die Auswahl für alle aufzuheben.
+
    * Wenn nur einige Elemente ausgewählt sind, wird sie mit einem Minuszeichen angezeigt.
 
       * Klicken oder tippen Sie auf das Kontrollkästchen, um alle auszuwählen.
       * Klicken oder tippen Sie erneut auf das Kontrollkästchen, um die Auswahl für alle aufzuheben.
-
 
 * Wählen Sie mit der Option **Ansichtseinstellungen** unter der Schaltfläche „Ansichten“ die Spalten aus, die angezeigt werden sollen. Die folgenden Spalten stehen zur Anzeige zur Verfügung:
 
@@ -486,33 +483,33 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * **Unique Visitors**
    * **Besuchszeit pro Seite**
 
-   ![bh-21](assets/bh-21.png)
+  ![Anzeigeeinstellungen - Spalten konfigurieren](assets/bh-21.png)
 
-   Standardmäßig wird die Spalte **Name** angezeigt, die Teil der URL der Seite ist. In einigen Fällen muss der Autor möglicherweise auf Seiten zugreifen, die in einer anderen Sprache verfasst sind. Wenn der Autor die Sprache der Seite nicht kennt, kann es hilfreich sein, den Namen der Seite zu sehen (was in der Regel unverändert ist).
+  Standardmäßig wird die Spalte **Name** angezeigt, die Teil der URL der Seite ist. In einigen Fällen muss der Autor möglicherweise auf Seiten zugreifen, die in einer anderen Sprache verfasst sind. Es kann hilfreich sein, den Namen der Seite zu sehen (was in der Regel unverändert ist), wenn der Autor die Sprache der Seite nicht kennt.
 
 * Ändern Sie die Reihenfolge der Elemente mithilfe des vertikalen gepunkteten Balkens am rechten Rand jedes Elements.
 
-   >[!NOTE]
-   >
-   >Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
+  >[!NOTE]
+  >
+  >Das Ändern der Reihenfolge funktioniert nur innerhalb eines sortierten Ordners, der den Wert `jcr:primaryType` als `sling:OrderedFolder` hat.
 
-   ![bh-22](assets/bh-22.png)
+  ![Reihenfolge ändern](assets/bh-22.png)
 
-   Klicken oder tippen Sie auf die vertikale Auswahlleiste und ziehen Sie das Element an die gewünschte Position in der Liste.
+  Klicken oder tippen Sie auf die vertikale Auswahlleiste und ziehen Sie das Element an die gewünschte Position in der Liste.
 
-   ![bh-23](assets/bh-23.png)
+  ![Reihenfolge ändern - Ziehen](assets/bh-23.png)
 
 * Sie können Analytics-Daten anzeigen, indem Sie die entsprechenden Spalten mit der **Anzeigeeinstellungen** angezeigt.
 
-   Sie können Analytics-Daten für die letzten 30, 90 oder 365 Tage mithilfe der Filteroptionen auf der rechten Seite der Kopfzeile filtern.
+  Sie können Analytics-Daten für die letzten 30, 90 oder 365 Tage mithilfe der Filteroptionen auf der rechten Seite der Kopfzeile filtern.
 
-   ![bh-24](assets/bh-24.png)
+  ![Analytics](assets/bh-24.png)
 
 ## Schienenauswahl {#rail-selector}
 
 Die **Schienenauswahl** befindet sich im Fenster oben links. Je nach Konsole stehen unterschiedliche Optionen zur Verfügung.
 
-![bh-25](assets/bh-25.png)
+![Leistenauswahl](assets/bh-25.png)
 
 So können Sie z. B. in Sites nur Inhalt (Standard), die Inhaltsstruktur, die Zeitleiste, Verweise oder das seitliche Bedienfeld „Filter“ auswählen.
 
@@ -528,7 +525,7 @@ Die Inhaltsstruktur kann verwendet werden, um schnell in der Site-Hierarchie im 
 
 Mithilfe des Seitenbereichs der Inhaltsstruktur in Verbindung mit einer Listen- oder Kartenansicht können Benutzer die hierarchische Struktur des Projekts einfach erkennen, mit dem Seitenbereich der Inhaltsstruktur einfach durch die Inhaltsstruktur navigieren und detaillierte Seiteninformationen in der Listenansicht anzeigen.
 
-![bh-26](assets/bh-26.png)
+![Inhaltsstruktur](assets/bh-26.png)
 
 >[!NOTE]
 >
@@ -554,8 +551,8 @@ Die Zeitleistenspalte bietet folgende Möglichkeiten:
       * [Workflows](/help/sites-authoring/workflows-applying.md)
 
          * mit Ausnahme von [Übergangs-Workflows](/help/sites-developing/workflows.md#transient-workflows), da keine Verlaufsinformationen für diese gespeichert werden
-      * Alle anzeigen
 
+      * Alle anzeigen
 
 * [Hinzufügen/Anzeigen von Kommentaren zum gewählten Element ](#timelineaddingandviewingcomments) Das Feld **Kommentare** wird unten in der Ereignisliste angezeigt. Wenn Sie einen Kommentar eingeben (und anschließend die Eingabetaste drücken), wird der Kommentar registriert. Er wird angezeigt, wenn **Kommentare** oder **Alle anzeigen** ausgewählt wird.
 
@@ -564,9 +561,9 @@ Die Zeitleistenspalte bietet folgende Möglichkeiten:
    * [eine Version speichern](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [einen Workflow starten](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
-Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
+Auf diese Optionen kann über den Pfeil neben dem **Kommentar** -Feld.
 
-![bh-27](assets/bh-27.png)
+![Zeitleiste](assets/bh-27.png)
 
 ### Verweise {#references}
 
@@ -586,4 +583,4 @@ Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 Hierdurch wird ein dem [Suchbereich](/help/sites-authoring/search.md) ähnliches Fenster mit bereits entsprechend eingestellten Ortsfiltern geöffnet. So können Sie den für die Anzeige gewünschten Inhalt weiter filtern.
 
-![bh-29](assets/bh-29.png)
+![Filter](assets/bh-29.png)
