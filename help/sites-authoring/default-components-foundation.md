@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '7200'
-ht-degree: 44%
+source-wordcount: '7210'
+ht-degree: 45%
 
 ---
 
@@ -75,7 +75,7 @@ Sie können einen Link mit Titel und Beschreibung definieren.
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Bild-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) anstatt.
+>Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Bild-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de) anstatt.
 
 Die Komponente der Adaptive Image Foundation erzeugt Bilder, die in das Fenster eingepasst werden, in dem die Webseite geöffnet wird. Um die Komponente zu verwenden, geben Sie eine Bildressource entweder im Dateisystem oder im DAM an. Wenn die Webseite geöffnet wird, lädt der Webbrowser eine Kopie des Bildes herunter, dessen Größe so geändert wurde, dass es für das aktuelle Fenster geeignet ist.
 
@@ -158,7 +158,7 @@ Informationen zum Anpassen der Adaptive Image-Komponente finden Sie unter [Grund
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Karussell-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html) anstatt.
+>Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Karussell-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=de) anstatt.
 
 Mit der Karussellkomponente können Sie Bilder anzeigen, die einzelnen Seiten zugeordnet sind:
 
@@ -184,7 +184,7 @@ Die Zeit in Millisekunden bis zur Anzeige des nächsten Dias.
 
 * **Liste**
 
-   Hier legen Sie fest, wie Seiten in Ihr Karussell aufgenommen werden:
+  Hier legen Sie fest, wie Seiten in Ihr Karussell aufgenommen werden:
 
    * **Erstellen einer Liste mithilfe von**
 Es gibt verschiedene Möglichkeiten, eine Seitenliste zu erstellen: untergeordnete Seiten, feste Liste, Suche oder erweiterte Suche (alle unten beschrieben). Unabhängig von der gewählten Methode sollte den Seiten, die Sie in Ihre Liste aufnehmen, bereits ein Bild zugeordnet sein. Dieses Bild wird im Karussell angezeigt. Wenn unter den Seiteneigenschaften dieser Seite kein Bild für eine bestimmte Seite vorhanden ist, sollten Sie ein Bild mit der Seite verknüpfen, bevor Sie beginnen. Andernfalls wird im Karussell eine meist leere Seite angezeigt. Siehe [Bearbeiten der Seiteneigenschaften](/help/sites-authoring/editing-page-properties.md).
@@ -194,11 +194,12 @@ Je nach ausgewähltem Element wird ein neues Bedienfeld angezeigt:
 
          * **Übergeordnete Seite**
 Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nichts angeben, wird die aktuelle Seite als übergeordnete Seite verwendet.
+
       * **Optionen für Liste fester Werte**
 
          * **Seiten**
-Wählen Sie eine Liste mit Seiten aus. Verwenden Sie 
-`+`, um weitere Einträge hinzuzufügen und passen Sie mit den Schaltflächen nach oben und unten die Reihenfolge an.
+Wählen Sie eine Liste von Seiten aus. Verwendung `+` um weitere Einträge und die Nach-oben-/Nach-unten-Schaltflächen hinzuzufügen, um die Reihenfolge anzupassen.
+
       * **Optionen für die Suche**
 
          * **Starten in**
@@ -206,21 +207,18 @@ Geben Sie manuell oder über die Auswahl einen Startpfad ein.
 
          * **Suchabfrage**
 Sie können eine Textsuchabfrage eingeben.
+
       * **Optionen für die erweiterte Suche**
 
          * **Querybuilder-Eigenschafts-Notation**
 Geben Sie mit der Querybuilder-Eigenschafts-Notation eine Suchabfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 Unter [QueryBuilder API](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
+
    * **Sortierreihenfolge**
-Wählen Sie 
-`jcr:title`, `jcr:created`, `cq:lastModified` oder `cq:template` aus dem Dropdown-Menü aus.
+Wählen Sie `jcr:title`, `jcr:created`, `cq:lastModified` oder `cq:template` aus dem Dropdown-Menü aus.
 
    * **Limit**
 Optional. Die maximale Anzahl von Elementen, die Sie im Karussell verwenden möchten.
-
-
-
-
 
 >[!NOTE]
 >
@@ -265,7 +263,7 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) anstatt.
+>Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) anstatt.
 
 [Inhaltsfragmente](/help/sites-authoring/content-fragments.md) werden als seitenunabhängige Assets erstellt und verwaltet. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
@@ -277,7 +275,7 @@ Im Folgenden sehen Sie ein Beispiel für Diagrammdaten und das daraus resultiere
 
 Mit dieser Komponente können Sie eine ZIP-Datei mit einem Designpaket hochladen.
 
-### Download {#download}
+### Herunterladen {#download}
 
 >[!CAUTION]
 >
@@ -310,9 +308,9 @@ Die Komponente **Extern** ermöglicht es Ihnen, anhand von iframes externe Anwen
    * **Zielanwendung**
 Geben Sie die URL der zu integrierenden Web-Anwendung an, z. B.:
 
-      ```
-      https://en.wikipedia.org/wiki/Main_Page
-      ```
+     ```
+     https://en.wikipedia.org/wiki/Main_Page
+     ```
 
    * **Parameter weiterleiten**
 Aktivieren Sie das Kontrollkästchen für das Weiterleiten von Parametern an die Anwendung.
@@ -344,43 +342,43 @@ Mithilfe der Flash-Komponente können Sie einen Flash-Film laden. Sie können ei
 
    * **Flash-Movie**
 
-      Die Flash-Film-Datei. Ziehen Sie ein Asset aus dem Content Finder oder klicken Sie, um ein Suchfenster zu öffnen.
+     Die Flash-Film-Datei. Ziehen Sie ein Asset aus dem Content Finder oder klicken Sie, um ein Suchfenster zu öffnen.
 
    * **Größe**
 
-      Die Abmessungen des Anzeigebereichs für den Film in Pixel.
+     Die Abmessungen des Anzeigebereichs für den Film in Pixel.
 
 * **Alternativbild**
 
-   Ein alternatives Bild, das angezeigt werden soll.
+  Ein alternatives Bild, das angezeigt werden soll.
 
 * **Erweitert**
 
    * **Kontextmenü**
 
-      Gibt an, ob das Kontextmenü ein- oder ausgeblendet werden soll.
+     Gibt an, ob das Kontextmenü ein- oder ausgeblendet werden soll.
 
    * **Fenstermodus**
 
-      Darstellung des Fensters, z B. deckend, transparent oder als klares (einfarbiges) Fenster.
+     Darstellung des Fensters, z B. deckend, transparent oder als klares (einfarbiges) Fenster.
 
    * **Hintergrundfarbe**
 
-      Eine aus dem Farbdiagramm ausgewählte Hintergrundfarbe.
+     Eine aus dem Farbdiagramm ausgewählte Hintergrundfarbe.
 
    * **Minimum-Version**
 
-      Die zum Abspielen des Films erforderliche Mindestversion von Adobe Flash Player. Der Standardwert lautet 9.0.0.
+     Die zum Abspielen des Films erforderliche Mindestversion von Adobe Flash Player. Der Standardwert lautet 9.0.0.
 
    * **Attribute**
 
-      Alle weiteren erforderlichen Attribute.
+     Alle weiteren erforderlichen Attribute.
 
 ### Bild {#image}
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Bild-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) anstatt.
+>Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Bild-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de) anstatt.
 
 Die Bild-Komponente zeigt ein Bild und begleitenden Text gemäß den festgelegten Parametern an.
 
@@ -392,7 +390,7 @@ Sie können ein Bild entweder aus dem [Asset-Browser](/help/sites-authoring/auth
 
 Nachdem das Bild hochgeladen wurde (und nicht vorher), können Sie [Bearbeitung im Kontext](/help/sites-authoring/editing-content.md#edit-content) um das Bild nach Bedarf zuzuschneiden/zu drehen:
 
-![](do-not-localize/chlimage_1-15.png)
+![Symbolleiste für die Bearbeitung im Kontext](do-not-localize/chlimage_1-15.png)
 
 >[!NOTE]
 >
@@ -402,7 +400,7 @@ Nachdem das Bild hochgeladen wurde (und nicht vorher), können Sie [Bearbeitung 
 
 Im Vollbildbearbeitungsmodus stehen verschiedene zusätzliche Optionen zur Verfügung, beispielsweise Karte und Zoom:
 
-![](do-not-localize/chlimage_1-16.png)
+![Vollbildbearbeitungsmodus - Karte und Zoom](do-not-localize/chlimage_1-16.png)
 
 >[!NOTE]
 >
@@ -416,39 +414,39 @@ Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werde
 
 * **Zuweisen**
 
-   Wählen Sie „Zuweisen“ aus, um ein Bild zuzuweisen. Sie legen fest, wie die Imagemap (Rechteck, Polygon usw.) erstellt werden soll, und geben an, worauf der Bereich verweisen soll.
+  Wählen Sie „Zuweisen“ aus, um ein Bild zuzuweisen. Sie legen fest, wie die Imagemap (Rechteck, Polygon usw.) erstellt werden soll, und geben an, worauf der Bereich verweisen soll.
 
 * **Zuschneiden**
 
-   Um einen Teil eines Bildes auszuschneiden, wählen Sie &quot;Zuschneiden&quot;aus. Verwenden Sie die Maus, um das Bild zuzuschneiden.
+  Um einen Teil eines Bildes auszuschneiden, wählen Sie &quot;Zuschneiden&quot;aus. Verwenden Sie die Maus, um das Bild zuzuschneiden.
 
 * **Drehen**
 
-   Wählen Sie „Drehen“ aus, um ein Bild zu drehen. Wiederholen Sie das Drehen so lange, bis das Bild die gewünschte Ausrichtung hat.
+  Wählen Sie „Drehen“ aus, um ein Bild zu drehen. Wiederholen Sie das Drehen so lange, bis das Bild die gewünschte Ausrichtung hat.
 
 * **Entfernen**
 
-   Damit entfernen Sie das aktuelle Bild.
+  Damit entfernen Sie das aktuelle Bild.
 
 * **Titel**
 
-   Der Titel des Bildes.
+  Der Titel des Bildes.
 
 * **Alt-Text**
 
-   Ein alternativer Text, der beim Erstellen barrierefreier Inhalte verwendet wird.
+  Ein alternativer Text, der beim Erstellen barrierefreier Inhalte verwendet wird.
 
 * **Verknüpfung zu**
 
-   Erstellt einen Link zu Assets oder anderen Seiten innerhalb Ihrer Website.
+  Erstellt einen Link zu Assets oder anderen Seiten innerhalb Ihrer Website.
 
 * **Beschreibung**
 
-   Eine Beschreibung des Bildes.
+  Eine Beschreibung des Bildes.
 
 * **Größe**
 
-   Legt die Höhe und Breite des Bildes fest.
+  Legt die Höhe und Breite des Bildes fest.
 
 >[!NOTE]
 >
@@ -480,7 +478,7 @@ Mit der Listenkomponente können Sie Suchkriterien für die Anzeige einer Liste 
 
    * **Liste erstellen mittels**
 
-      Hier geben Sie an, wo die Liste ihren Inhalt abruft. Es gibt mehrere Methoden:
+     Hier geben Sie an, wo die Liste ihren Inhalt abruft. Es gibt mehrere Methoden:
 
    * Je nach ausgewähltem Element wird ein neues Bedienfeld angezeigt:
 
@@ -488,55 +486,55 @@ Mit der Listenkomponente können Sie Suchkriterien für die Anzeige einer Liste 
 
          * **Untergeordnete Seite von** (Übergeordnete Seite)
 
-            Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Lassen Sie das Feld leer, um die aktuelle Seite als übergeordnet zu verwenden.
+           Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Lassen Sie das Feld leer, um die aktuelle Seite als übergeordnet zu verwenden.
+
       * **Optionen für Liste fester Werte**
 
          * **Seiten**
 
-            Wählen Sie eine Liste mit Seiten aus. Fügen Sie mit + weitere Einträge hinzu und passen Sie mit den Schaltflächen nach oben und unten die Reihenfolge an.
+           Wählen Sie eine Liste mit Seiten aus. Fügen Sie mit + weitere Einträge hinzu und passen Sie mit den Schaltflächen nach oben und unten die Reihenfolge an.
+
       * **Optionen für die Suche**
 
          * Starten in
 
-            Geben Sie einen Startpfad ein – manuell oder über die Auswahl.
+           Geben Sie einen Startpfad ein – manuell oder über die Auswahl.
 
          * Suchabfrage
 
-            Sie können eine Klartext-Suchabfrage eingeben.
+           Sie können eine Klartext-Suchabfrage eingeben.
+
       * **Optionen für die erweiterte Suche**
 
          * **Querybuilder-Eigenschafts-Notation**
 
-            Geben Sie mit der QueryBuilder-Eigenschaftsnotation eine Suchanfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
+           Geben Sie mit der QueryBuilder-Eigenschaftsnotation eine Suchanfrage ein. Sie können beispielsweise „fulltext=Marketing“ eingeben, um alle Seiten, deren Inhalt das Wort „Marketing“ enthält, in Ihrem Karussell anzuzeigen.
 
-            Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
+           Unter [„QueryBuilder API“](/help/sites-developing/querybuilder-api.md) finden Sie eine umfassende Übersicht über Abfrageausdrücke sowie weitere Beispiele.
+
       * **Tags**
 
-         Geben Sie die **Übergeordnete Seite**, **Tags/Keywords** und Ihre erforderlichen Übereinstimmungskriterien.
+        Geben Sie die **Übergeordnete Seite**, **Tags/Keywords** und Ihre erforderlichen Übereinstimmungskriterien.
+
    * **Anzeigen als**
 
-      Angabe, wie die Elemente aufgeführt werden sollen; umfasst Links, Teaser und Nachrichten.
+     Angabe, wie die Elemente aufgeführt werden sollen; umfasst Links, Teaser und Nachrichten.
 
    * **Sortieren nach**
 
-      Gibt an, ob die Liste sortiert und nach welchen Kriterien sie sortiert sein soll. Sie können Kriterien eingeben oder aus der Dropdown-Liste auswählen.
+     Gibt an, ob die Liste sortiert und nach welchen Kriterien sie sortiert sein soll. Sie können Kriterien eingeben oder aus der Dropdown-Liste auswählen.
 
    * **Beschränkung**
 
-      Legen Sie die maximale Anzahl an Elementen fest, die in der Liste angezeigt werden sollen.
+     Legen Sie die maximale Anzahl an Elementen fest, die in der Liste angezeigt werden sollen.
 
    * **Feed aktivieren**
 
-      Gibt an, ob für die Liste ein RSS-Feed aktiviert werden soll.
+     Gibt an, ob für die Liste ein RSS-Feed aktiviert werden soll.
 
    * **Paginieren nach**
 
-      Hier können Sie die Anzahl der Listenelemente festlegen, die gleichzeitig angezeigt werden sollen. Eine Liste mit mehr Elementen als angegeben verwendet die Paginierung, um die Liste in mehreren Teilen anzuzeigen.
-
-
-
-
-
+     Hier können Sie die Anzahl der Listenelemente festlegen, die gleichzeitig angezeigt werden sollen. Eine Liste mit mehr Elementen als angegeben verwendet die Paginierung, um die Liste in mehreren Teilen anzuzeigen.
 
 Das folgende Beispiel zeigt eine **Liste** -Komponente die Art und Weise, wie sie eine Liste von untergeordneten Seiten anzeigen kann (das Design wird durch die benutzerdefinierten CSS-Definitionen eines Site-Designs gesteuert).
 
@@ -562,29 +560,29 @@ Sie können Folgendes konfigurieren:
 
    * Bereichsbeschriftung
 
-      Einleitender Text für die Eingabefelder.
+     Einleitender Text für die Eingabefelder.
 
    * Benutzername-Beschriftung
 
-      Text zur Beschriftung des Benutzernamenfelds.
+     Text zur Beschriftung des Benutzernamenfelds.
 
    * Kennwortaufschrift
 
-      Text zur Beschriftung des Kennwortfelds.
+     Text zur Beschriftung des Kennwortfelds.
 
    * Beschriftung für Anmelde-Schaltfläche
 
-      Text für die Anmelde-Schaltfläche.
+     Text für die Anmelde-Schaltfläche.
 
    * Umleiten zu
 
-      Sie können die Seite Ihrer Website angeben, die geöffnet wird, nachdem sich der Benutzer angemeldet hat.
+     Sie können die Seite Ihrer Website angeben, die geöffnet wird, nachdem sich der Benutzer angemeldet hat.
 
 * Bereits angemeldet
 
    * Schaltflächenbeschriftung fortsetzen
 
-      Text, der angibt, dass der Benutzer bereits angemeldet ist.
+     Text, der angibt, dass der Benutzer bereits angemeldet ist.
 
 ### Auftragsstatus {#order-status}
 
@@ -596,16 +594,16 @@ Sie können Folgendes konfigurieren:
 
    * **Titel**
 
-      Geben Sie den Titeltext an, der angezeigt werden soll.
+     Geben Sie den Titeltext an, der angezeigt werden soll.
 
    * **Verknüpfung**
 
-      
+     
 Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werden soll.
 
    * **Typ/Größe**
 
-      Wählen Sie aus der bereitgestellten Auswahl aus.
+     Wählen Sie aus der bereitgestellten Auswahl aus.
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -613,7 +611,7 @@ Geben Sie die Seite (das Produkt) an, für das der Auftragsstatus angezeigt werd
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) anstatt.
+>Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Inhaltsfragment-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de) anstatt.
 
 Mit der Komponente **Verweis** können Sie auf Text in einem anderen Teil einer AEM-basierten Website (innerhalb der aktuellen Instanz) verweisen. Der Inhalt des referenzierten Absatzes wird dann so angezeigt, als wäre er auf der aktuellen Seite. Der Inhalt wird aktualisiert, wenn sich der Quellabsatz ändert (möglicherweise muss die Seite aktualisiert werden).
 
@@ -621,7 +619,7 @@ Mit der Komponente **Verweis** können Sie auf Text in einem anderen Teil einer 
 
    * **Verweis**
 
-      Geben Sie den Pfad zu der Seite und den Absatz an, auf die bzw. den Sie verweisen möchten (einschließlich Inhalt).
+     Geben Sie den Pfad zu der Seite und den Absatz an, auf die bzw. den Sie verweisen möchten (einschließlich Inhalt).
 
 Um den Pfad zu einem Absatz anzugeben, müssen Sie dem Pfad (zur Seite) Folgendes anhängen:
 
@@ -657,52 +655,52 @@ Sie können Folgendes konfigurieren:
 
    * **Knotentypen**
 
-      Wenn die Suche für den bestimmten Knotentyp zu restriktiv ist, führen Sie sie hier auf, beispielsweise `cq:Page`.
+     Wenn die Suche für den bestimmten Knotentyp zu restriktiv ist, führen Sie sie hier auf, beispielsweise `cq:Page`.
 
    * **Suchpfad**
 
-      Geben Sie die Stammseite der Verzweigung an, die Sie suchen möchten.
+     Geben Sie die Stammseite der Verzweigung an, die Sie suchen möchten.
 
    * **Text auf Such-Schaltfläche**
 
-      Der auf der Suchschaltfläche tatsächlich angezeigte Name.
+     Der auf der Suchschaltfläche tatsächlich angezeigte Name.
 
    * **Text für Statistiken**
 
-      Der über den Suchergebnissen angezeigte Text.
+     Der über den Suchergebnissen angezeigte Text.
 
    * **Text für Keine Ergebnisse**
 
-      Wenn keine Ergebnisse vorliegen, wird der hier eingegebene Text angezeigt.
+     Wenn keine Ergebnisse vorliegen, wird der hier eingegebene Text angezeigt.
 
    * **Text für Rechtschreibprüfung**
 
-      Wenn jemand einen ähnlichen Begriff eingibt, wird dieser Text vor dem Begriff angezeigt.
+     Wenn jemand einen ähnlichen Begriff eingibt, wird dieser Text vor dem Begriff angezeigt.
 Wenn Sie beispielsweise `Geometrixxe`, zeigt das System &quot;Meinten Sie das? Geometrixx&quot;.
 
    * **Text für Ähnliche Seiten**
 
-      Der Text, der für ähnliche Seiten neben dem Ergebnis angezeigt wird. Um Seiten mit ähnlichem Inhalt anzuzeigen, klicken Sie auf diesen Link.
+     Der Text, der für ähnliche Seiten neben dem Ergebnis angezeigt wird. Um Seiten mit ähnlichem Inhalt anzuzeigen, klicken Sie auf diesen Link.
 
    * **Text für Verwandte Suche**
 
-      Der Text, der neben Suchen nach verwandten Begriffen und Themen angezeigt wird.
+     Der Text, der neben Suchen nach verwandten Begriffen und Themen angezeigt wird.
 
    * **Text für Such-Trends**
 
-      Der Titel über den Suchbegriffen, die ein Benutzer eingibt.
+     Der Titel über den Suchbegriffen, die ein Benutzer eingibt.
 
    * **Beschriftung: Ergebnisseiten**
 
-      Der Text, der am Ende dieser Liste mit Links zu anderen Ergebnisseiten angezeigt wird.
+     Der Text, der am Ende dieser Liste mit Links zu anderen Ergebnisseiten angezeigt wird.
 
    * **Beschriftung: Vorherige**
 
-      Der Name, der für den Link zu vorherigen Suchseiten angezeigt wird.
+     Der Name, der für den Link zu vorherigen Suchseiten angezeigt wird.
 
    * **Beschriftung: Weiter**
 
-      Der Name, der für den Link zu nachfolgenden Suchseiten angezeigt wird.
+     Der Name, der für den Link zu nachfolgenden Suchseiten angezeigt wird.
 
 Das folgende Beispiel zeigt die Suchkomponente nach einer Suche nach dem Wort *`geometrixx`* aus dem Stammverzeichnis einer Standardinstallation. Außerdem wird die Paginierung der Ergebnisse veranschaulicht:
 
@@ -728,13 +726,13 @@ Bei Bedarf können Sie Folgendes konfigurieren:
 
    * **Stammverzeichnis**
 
-      Pfad, von dem aus die Auflistung beginnen soll.
+     Pfad, von dem aus die Auflistung beginnen soll.
 
 ### Bildschirmpräsentation {#slideshow}
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Karussell-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html) anstatt.
+>Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Karussell-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=de) anstatt.
 
 >[!CAUTION]
 >
@@ -748,17 +746,17 @@ Sie können Folgendes konfigurieren:
 
    * **Neue Folie**
 
-      Über die Schaltflächen **Hinzufügen** (und **Entfernen**) können Sie eine Auswahl von Folien festlegen.
+     Über die Schaltflächen **Hinzufügen** (und **Entfernen**) können Sie eine Auswahl von Folien festlegen.
 
    * **Titel**
 
-      Geben Sie bei Bedarf einen Titel an. Der Titel wird auf der entsprechenden Folie überlagert.
+     Geben Sie bei Bedarf einen Titel an. Der Titel wird auf der entsprechenden Folie überlagert.
 
 * **Erweitert**
 
    * **Größe**
 
-      Geben Sie die Breite und die Höhe in Pixel an.
+     Geben Sie die Breite und die Höhe in Pixel an.
 
 Die Diashow-Komponente zeigt dann jedes Mal für kurze Zeit nacheinander an, bevor sie zur nächsten Folie führt:
 
@@ -768,7 +766,7 @@ Die Diashow-Komponente zeigt dann jedes Mal für kurze Zeit nacheinander an, bev
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) anstatt.
+>Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=de) anstatt.
 
 >[!NOTE]
 >
@@ -801,15 +799,15 @@ Beim Konfigurieren der Tag-Cloud-Komponente können Sie Folgendes festlegen:
 
 * **Tags für Anzeige**
 
-   Ort, aus dem die anzuzeigenden Tags erfasst werden sollen. Wählen Sie dafür eine Seite, eine Seite mit allen untergeordneten Seiten oder alle Tags aus.
+  Ort, aus dem die anzuzeigenden Tags erfasst werden sollen. Wählen Sie dafür eine Seite, eine Seite mit allen untergeordneten Seiten oder alle Tags aus.
 
 * **Seite**
 
-   Wählen Sie die Seite aus, auf die verwiesen werden soll.
+  Wählen Sie die Seite aus, auf die verwiesen werden soll.
 
 * **Keine Einschränkung bezüglich Tags**
 
-   Ob die angezeigten Tags als Links fungieren sollen.
+  Ob die angezeigten Tags als Links fungieren sollen.
 
 Weitere Informationen zum Anwenden von Tags finden Sie unter [Verwenden von Tags](/help/sites-authoring/tags.md).
 
@@ -817,7 +815,7 @@ Weitere Informationen zum Anwenden von Tags finden Sie unter [Verwenden von Tags
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) anstatt.
+>Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=de) anstatt.
 
 >[!NOTE]
 >
@@ -846,7 +844,7 @@ Zusätzlich zum Dialogfeldbasierten Rich-Text-Bearbeitungsmodus bietet AEM auch 
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Bild](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) und [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) anstatt.
+>Diese Foundation-Komponente wird nicht mehr unterstützt. Adobe empfiehlt die Verwendung der [Bild](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html?lang=de) und [Text-Kernkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html?lang=de) anstatt.
 
 Die Komponente Text und Bild fügt einen Textblock und ein Bild hinzu. Sie können auch Text und Bilder separat hinzufügen und bearbeiten. Siehe [Text](#text) und [Bild](#image) Komponenten für Details.
 
@@ -856,35 +854,35 @@ Sie können Folgendes konfigurieren:
 
 * **Komponentenstile** (**Stile**)
 
-   Mit dieser Option können Sie das Bild rechts- oder linksbündig ausrichten. Standardmäßig wird das Bild **linksbündig** ausgerichtet.
+  Mit dieser Option können Sie das Bild rechts- oder linksbündig ausrichten. Standardmäßig wird das Bild **linksbündig** ausgerichtet.
 
 * **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
 
-   Dies ermöglicht die Festlegung des Folgenden:
+  Dies ermöglicht die Festlegung des Folgenden:
 
    * **Bild-Asset**
 
-      Laden Sie das gewünschte Bild hoch.
+     Laden Sie das gewünschte Bild hoch.
 
    * **Titel**
 
-      Der Titel des Blocks, der durch Bewegen der Maus angezeigt wird.
+     Der Titel des Blocks, der durch Bewegen der Maus angezeigt wird.
 
    * **Alt-Text**
 
-      Alternativer Text, der angezeigt wird, wenn das Bild nicht dargestellt werden kann. Wenn dies leer gelassen wird, wird der Titel verwendet.
+     Alternativer Text, der angezeigt wird, wenn das Bild nicht dargestellt werden kann. Wenn dies leer gelassen wird, wird der Titel verwendet.
 
    * **Verknüpfung zu**
 
-      Geben Sie einen Zielpfad an.
+     Geben Sie einen Zielpfad an.
 
    * **Beschreibung**
 
-      Eine Beschreibung des Bildes.
+     Eine Beschreibung des Bildes.
 
    * **Größe**
 
-      Legt die Höhe und Breite des Bildes fest.
+     Legt die Höhe und Breite des Bildes fest.
 
 Das folgende Beispiel zeigt eine Textbildkomponente, die das Bild linksbündig anzeigt:
 
@@ -905,15 +903,15 @@ Sie können Folgendes konfigurieren:
 
 * **Titel**
 
-   Wenn Sie einen anderen Namen als den Seitentitel verwenden möchten, geben Sie ihn hier ein.
+  Wenn Sie einen anderen Namen als den Seitentitel verwenden möchten, geben Sie ihn hier ein.
 
 * **Verknüpfung**
 
-   Die URI, wenn der Titel als Link fungieren soll.
+  Die URI, wenn der Titel als Link fungieren soll.
 
 * **Typ/Größe**
 
-   Wählen Sie aus der Dropdown-Liste die Option „Klein“ oder „Groß“. „Klein“ wird als Bild generiert. Groß wird als Text generiert.
+  Wählen Sie aus der Dropdown-Liste die Option „Klein“ oder „Groß“. „Klein“ wird als Bild generiert. Groß wird als Text generiert.
 
 Das folgende Beispiel zeigt eine **Titel** angezeigte Komponente; das Design wird durch das Site-spezifische CSS bestimmt.
 
@@ -939,11 +937,11 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
 
    * **Video-Asset**
 
-      Video-Asset hochladen oder ablegen.
+     Video-Asset hochladen oder ablegen.
 
    * **Größe**
 
-      Die native Größe des Videos (Breite x Höhe in Pixel) wird in den Feldern neben &quot;Größe&quot;angezeigt (siehe oben). Geben Sie hier manuell Breite und Höhe-Dimensionen ein, wenn Sie die nativen Abmessungen des Videos überschreiben möchten. Auswählen **OK** Deaktiviert das Dialogfeld.
+     Die native Größe des Videos (Breite x Höhe in Pixel) wird in den Feldern neben &quot;Größe&quot;angezeigt (siehe oben). Geben Sie hier manuell Breite und Höhe-Dimensionen ein, wenn Sie die nativen Abmessungen des Videos überschreiben möchten. Auswählen **OK** Deaktiviert das Dialogfeld.
 
 >[!NOTE]
 >
@@ -952,7 +950,6 @@ Nachdem Sie eine Instanz der Komponente auf Ihrer Seite platziert haben, können
 >* `.mp4`
 >* `Ogg`
 >* `FLV` (Flash-Video)
-
 
 ## Spalten {#columns}
 
@@ -978,7 +975,7 @@ Mit der Komponente &quot;Spalten-Steuerung&quot;können Benutzer auswählen, wie
 
    * **Spalten-Layout**
 
-      Wählen Sie die Anzahl der Spalten aus, die gerendert werden sollen. Nach der Erstellung verfügt jede Spalte über einen eigenen Link zum Ziehen von Komponenten oder Assets beim Hinzufügen von Inhalten.
+     Wählen Sie die Anzahl der Spalten aus, die gerendert werden sollen. Nach der Erstellung verfügt jede Spalte über einen eigenen Link zum Ziehen von Komponenten oder Assets beim Hinzufügen von Inhalten.
 
 ## Formular {#form}
 
@@ -996,15 +993,15 @@ Forms besteht aus verschiedenen Komponenten:
 
 * **Formular**
 
-   Die Formular-Komponente definiert den Beginn und das Ende eines neuen Formulars auf einer Seite. Zwischen diesen Elementen, wie Tabellen und Downloads, können dann weitere Komponenten platziert werden.
+  Die Formular-Komponente definiert den Beginn und das Ende eines neuen Formulars auf einer Seite. Zwischen diesen Elementen, wie Tabellen und Downloads, können dann weitere Komponenten platziert werden.
 
 * **Formularfelder und -elemente**
 
-   Formularfelder und -elemente können Textfelder, Optionsfelder und Bilder enthalten. Der Benutzer führt oft eine Aktion in einem Formularfeld aus, z. B. Eingabe von Text. Weitere Informationen finden Sie unter den einzelnen Formularelementen .
+  Formularfelder und -elemente können Textfelder, Optionsfelder und Bilder enthalten. Der Benutzer führt oft eine Aktion in einem Formularfeld aus, z. B. Eingabe von Text. Weitere Informationen finden Sie unter den einzelnen Formularelementen .
 
 * **Profilkomponenten**
 
-   Profilkomponenten beziehen sich auf Besucherprofile, die für die soziale Zusammenarbeit und andere Bereiche verwendet werden, in denen eine Besucherpersonalisierung erforderlich ist.
+  Profilkomponenten beziehen sich auf Besucherprofile, die für die soziale Zusammenarbeit und andere Bereiche verwendet werden, in denen eine Besucherpersonalisierung erforderlich ist.
 
 Im Folgenden finden Sie ein Beispielformular. Sie setzt sich aus dem **Formular** Komponente (Start und Ende) mit zwei **Formular** **Text** für die Eingabe verwendete Felder, a **Allgemein** **Text** -Feld, das für den Einleitungstext verwendet wird, und ein **Einsenden** Schaltfläche.
 
@@ -1022,19 +1019,19 @@ Beim Konfigurieren einer der Formularkomponenten sind die folgenden Registerkart
 
 * **Titel und Text**
 
-   Hier müssen Sie die grundlegenden Informationen angeben, z. B. den Titel des Formulars und begleitenden Text. Gegebenenfalls können Sie auch andere Schlüsselinformationen definieren, z. B. ob das Feld mehrmals ausgewählt werden kann und welche Elemente ausgewählt werden können.
+  Hier müssen Sie die grundlegenden Informationen angeben, z. B. den Titel des Formulars und begleitenden Text. Gegebenenfalls können Sie auch andere Schlüsselinformationen definieren, z. B. ob das Feld mehrmals ausgewählt werden kann und welche Elemente ausgewählt werden können.
 
 * **Anfangswerte**
 
-   Ermöglicht die Angabe eines Standardwerts.
+  Ermöglicht die Angabe eines Standardwerts.
 
 * **Begrenzungen**
 
-   Hier können Sie angeben, ob ein Feld erforderlich ist, und Einschränkungen für dieses Feld festlegen (z. B. muss numerisch sein).
+  Hier können Sie angeben, ob ein Feld erforderlich ist, und Einschränkungen für dieses Feld festlegen (z. B. muss numerisch sein).
 
 * **Stile**
 
-   Gibt die Größe und den Stil der Felder an.
+  Gibt die Größe und den Stil der Felder an.
 
 >[!NOTE]
 >
@@ -1046,57 +1043,57 @@ Diese Tabs bieten die notwendigen Parameter. Die Registerkarten können vom jewe
 
    * **Elementname**
 
-      Name des Formularelements. Er gibt an, wo im Repository die Daten gespeichert werden.
+     Name des Formularelements. Er gibt an, wo im Repository die Daten gespeichert werden.
 Dieses Feld ist erforderlich und sollte nur die folgenden Zeichen enthalten:
 
       * alphanumerische Zeichen
       * `_ . / : -`
+
    * **Titel**
 
-      Der Titel wird mit dem Feld angezeigt. Wenn Sie das Feld leer lassen, wird der Standardtitel angezeigt.
+     Der Titel wird mit dem Feld angezeigt. Wenn Sie das Feld leer lassen, wird der Standardtitel angezeigt.
 
    * **Beschreibung**
 
-      Hier können Sie bei Bedarf zusätzliche Informationen für den Benutzer angeben. Auf dem Formular wird es unter dem Feld in einer kleineren Schrift als der Titel angezeigt.
+     Hier können Sie bei Bedarf zusätzliche Informationen für den Benutzer angeben. Auf dem Formular wird es unter dem Feld in einer kleineren Schrift als der Titel angezeigt.
 
    * **Einblenden/ausblenden**
 
-      Bestimmt, wann das Feld sichtbar ist.
-
+     Bestimmt, wann das Feld sichtbar ist.
 
 * **Anfangswerte**
 
    * **Standardwert**
 
-      Der Wert, der beim Öffnen des Formulars im Feld angezeigt wird. Das heißt, bevor der Benutzer seine Eingabe gemacht hat.
+     Der Wert, der beim Öffnen des Formulars im Feld angezeigt wird. Das heißt, bevor der Benutzer seine Eingabe gemacht hat.
 
 * **Begrenzungen**
 
    * **Erforderlich**
 
-      Einschränkungen hängen vom Formularkomponententyp ab, bieten jedoch ein oder mehrere Klickfelder, um anzuzeigen, dass dieses Feld erforderlich ist, oder bestimmte Teile dieses Felds sind erforderlich.
+     Einschränkungen hängen vom Formularkomponententyp ab, bieten jedoch ein oder mehrere Klickfelder, um anzuzeigen, dass dieses Feld erforderlich ist, oder bestimmte Teile dieses Felds sind erforderlich.
 
    * **Meldung: Erforderlich**
 
-      Eine Meldung, die Benutzer darüber informiert, dass dieses Feld erforderlich ist. Ein erforderliches Feld wird ebenfalls mit einem Sternchen gekennzeichnet.
+     Eine Meldung, die Benutzer darüber informiert, dass dieses Feld erforderlich ist. Ein erforderliches Feld wird ebenfalls mit einem Sternchen gekennzeichnet.
 
    * **Beschränkung**
 
-      Die für die Auswahl verfügbaren Begrenzungen hängen vom Formularkomponententyp ab.
+     Die für die Auswahl verfügbaren Begrenzungen hängen vom Formularkomponententyp ab.
 
    * **Beschränkungsmeldung**
 
-      Eine Meldung, die den Benutzer über erforderliche Eingaben informiert.
+     Eine Meldung, die den Benutzer über erforderliche Eingaben informiert.
 
 * **Stile**
 
    * **Größe**
 
-      In Zeilen und Spalten.
+     In Zeilen und Spalten.
 
    * **Breite**
 
-      In Pixeln.
+     In Pixeln.
 
    * **CSS**
 
@@ -1124,17 +1121,17 @@ Diese Komponente definiert den Beginn eines neuen Formulars auf einer Seite. Sie
 
    * **Dankeseite**
 
-      Die Seite, auf die verwiesen wird, um Besuchern für ihre Eingabe zu danken. Wenn das Formular leer gelassen wird, wird es nach der Übermittlung erneut angezeigt.
+     Die Seite, auf die verwiesen wird, um Besuchern für ihre Eingabe zu danken. Wenn das Formular leer gelassen wird, wird es nach der Übermittlung erneut angezeigt.
 
    * **Workflow starten**
 
-      Bestimmt, welcher Workflow ausgelöst wird, sobald ein Formular übermittelt wird.
+     Bestimmt, welcher Workflow ausgelöst wird, sobald ein Formular übermittelt wird.
 
 * **Erweitert**
 
    * **Aktionstyp**
 
-      Für ein Formular ist eine Aktion erforderlich. Die Aktion bestimmt den Vorgang, dessen Ausführung mit den vom Benutzer übermittelten Daten ausgelöst wird (ähnlich wie „action=“ in HTML). Teilweise erfordert dies eine entsprechende **Aktionskonfiguration**.
+     Für ein Formular ist eine Aktion erforderlich. Die Aktion bestimmt den Vorgang, dessen Ausführung mit den vom Benutzer übermittelten Daten ausgelöst wird (ähnlich wie „action=“ in HTML). Teilweise erfordert dies eine entsprechende **Aktionskonfiguration**.
 Einige Aktionstypen sind in einer Standard-AEM-Installation enthalten:
 
       * **Kontoabfrage**
@@ -1154,149 +1151,149 @@ Einige Aktionstypen sind in einer Standard-AEM-Installation enthalten:
       * **Kennwort festlegen**
       * **Inhalt speichern**
 
-         Der standardmäßige Aktionstyp.
+        Der standardmäßige Aktionstyp.
 
       * **Inhalt mit Uploads speichern**
       * **Bestellung übermitteln**
       * **Abonnenten löschen**
       * **Auftrag aktualisieren**
+
    * **Formular-ID**
 
-      Mit der Formular-ID wird das Formular eindeutig gekennzeichnet. Verwenden Sie die Formular-ID, wenn sich mehrere Formulare auf einer Seite befinden. Achten Sie darauf, dass die Formulare unterschiedliche IDs haben.
+     Mit der Formular-ID wird das Formular eindeutig gekennzeichnet. Verwenden Sie die Formular-ID, wenn sich mehrere Formulare auf einer Seite befinden. Achten Sie darauf, dass die Formulare unterschiedliche IDs haben.
 
    * **Ladepfad**
 
-      Dies ist der Pfad zu den Knoteneigenschaften, mit denen vordefinierte Werte in die Formularfelder geladen werden.
+     Dies ist der Pfad zu den Knoteneigenschaften, mit denen vordefinierte Werte in die Formularfelder geladen werden.
 
-      Ein optionales Feld, das den Pfad zu einem Knoten im Repository angibt. Wenn dieser Knoten Eigenschaften hat, die den Feldnamen entsprechen, werden die jeweiligen Felder im Formular vorab mit den Werten dieser Eigenschaften ausgefüllt. Wenn keine Übereinstimmung besteht, steht im Feld der Standardwert.
+     Ein optionales Feld, das den Pfad zu einem Knoten im Repository angibt. Wenn dieser Knoten Eigenschaften hat, die den Feldnamen entsprechen, werden die jeweiligen Felder im Formular vorab mit den Werten dieser Eigenschaften ausgefüllt. Wenn keine Übereinstimmung besteht, steht im Feld der Standardwert.
 
-      Mit **Ladepfad** können Sie das Formular mit Werten in den erforderlichen Feldern vorab laden. Siehe den Beitrag zum [Vorabladen von Formularwerten](/help/sites-developing/developing-forms.md#preloading-form-values).
+     Mit **Ladepfad** können Sie das Formular mit Werten in den erforderlichen Feldern vorab laden. Siehe den Beitrag zum [Vorabladen von Formularwerten](/help/sites-developing/developing-forms.md#preloading-form-values).
 
    * **Client-Validierung**
 
-      Gibt an, ob für dieses Formular eine Client-Überprüfung erforderlich ist (Serverüberprüfung) *always* auftritt). Die Client-Validierung kann mit der **Forms Captcha** -Komponente.
+     Gibt an, ob für dieses Formular eine Client-Überprüfung erforderlich ist (Serverüberprüfung) *always* auftritt). Die Client-Validierung kann mit der **Forms Captcha** -Komponente.
 
    * **Validierungsressourcentyp**
 
-      Hiermit wird der Ressourcentyp für die Formularvalidierung definiert, wenn Sie das gesamte Formular (anstelle von einzelnen Feldern) überprüfen möchten. Wenn Sie das gesamte Formular überprüfen, führen Sie auch eine der folgenden Aufgaben aus:
+     Hiermit wird der Ressourcentyp für die Formularvalidierung definiert, wenn Sie das gesamte Formular (anstelle von einzelnen Feldern) überprüfen möchten. Wenn Sie das gesamte Formular überprüfen, führen Sie auch eine der folgenden Aufgaben aus:
 
       * Ein Skript zur Client-Überprüfung:
 
-         `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
+        `/apps/<*myApp*>/form/<*myValidation*>/formclientvalidation.jsp`
 
       * Ein Skript zur Überprüfung auf der Server-Seite:
 
-         `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
+        `/apps/<*myApp*>/form/<*myValidation*>/formservervalidation.jsp`
+
    * **Aktionskonfiguration**
 
-      Die in **Aktionskonfiguration** Abhängig von der ausgewählten **Aktionstyp**:
+     Die in **Aktionskonfiguration** Abhängig von der ausgewählten **Aktionstyp**:
 
       * **Kontoabfrage**
 
          * **Konto erstellen (Seite)**
 
-            Die Seite, die beim Erstellen eines Kontos verwendet wird.
+           Die Seite, die beim Erstellen eines Kontos verwendet wird.
+
       * **Inhalt erstellen**
 
          * Inhalts-Pfad
 
-            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich (`/`) endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
+           Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich (`/`) endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
 
-            `/forms/feedback/`
+           `/forms/feedback/`
 
          * **Typ**
 
-            Wählen Sie den erforderlichen Typ aus.
+           Wählen Sie den erforderlichen Typ aus.
 
          * **Formular**
 
-            Geben Sie das Formular an.
+           Geben Sie das Formular an.
 
          * **Rendern mit**
 
-            Wählen Sie die gewünschte Option aus der Liste aus.
+           Wählen Sie die gewünschte Option aus der Liste aus.
 
          * **Ressourcentyp**
 
-            Wenn diese Einstellung festgelegt ist, wird sie jedem Kommentar als `sling:resourceType`
+           Wenn diese Einstellung festgelegt ist, wird sie jedem Kommentar als `sling:resourceType`
 
          * **Ansichtselektor**
+
       * **Lead erstellen**
 
          * **Lead wird dieser Liste hinzugefügt**
 
-            Geben Sie die gewünschte Lead-Liste an.
+           Geben Sie die gewünschte Lead-Liste an.
+
       * **Konto erstellen und aktualisieren**
 
          * **Anfangsgruppe**
 
-            Gruppe, der neue Benutzer zugewiesen werden sollen.
+           Gruppe, der neue Benutzer zugewiesen werden sollen.
 
          * **Home**
 
-            Seite, die nach erfolgreicher Anmeldung angezeigt werden soll.
+           Seite, die nach erfolgreicher Anmeldung angezeigt werden soll.
 
          * **Pfad**
 
-            Der Pfad (relativ), in dem das neue Konto erstellt und gespeichert wird.
+           Der Pfad (relativ), in dem das neue Konto erstellt und gespeichert wird.
 
          * **Daten anzeigen...**
 
-            Wenn Sie diese Schaltfläche auswählen, werden die Informationen zu den Formularergebnissen im Bulk Editor angezeigt. Von hier aus können Sie die Informationen in eine `.tsv`-Datei (durch Tabulatoren getrennt) exportieren, die Sie z. B. in einer Excel-Tabelle öffnen können.
+           Wenn Sie diese Schaltfläche auswählen, werden die Informationen zu den Formularergebnissen im Bulk Editor angezeigt. Von hier aus können Sie die Informationen in eine `.tsv`-Datei (durch Tabulatoren getrennt) exportieren, die Sie z. B. in einer Excel-Tabelle öffnen können.
+
       * **E-Mail**
 
          * **Von**
 
-            Geben Sie die E-Mail-Adresse ein, von der die E-Mail stammen soll.
+           Geben Sie die E-Mail-Adresse ein, von der die E-Mail stammen soll.
 
          * **Mailto**
 
-            Geben Sie eine oder mehrere E-Mail-Adressen ein, an die das Formular gesendet wird.
+           Geben Sie eine oder mehrere E-Mail-Adressen ein, an die das Formular gesendet wird.
 
          * **CC**
 
-            Geben Sie eine oder mehrere CC-E-Mail-Adressen ein.
+           Geben Sie eine oder mehrere CC-E-Mail-Adressen ein.
 
          * **BCC**
 
-            Geben Sie eine oder mehrere BCC-E-Mail-Adressen ein.
+           Geben Sie eine oder mehrere BCC-E-Mail-Adressen ein.
 
          * **Betreff**
 
-            Geben Sie einen Betreff für die E-Mail ein.
+           Geben Sie einen Betreff für die E-Mail ein.
+
       * **Kennwort zurücksetzen**
 
          * **Kennwort ändern (Seite)**
 
-            Die Seite, die beim Ändern des Kennworts verwendet wird.
+           Die Seite, die beim Ändern des Kennworts verwendet wird.
+
       * **Inhalt speichern**
 
          * **Inhalts-Pfad**
 
-            Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich (`/`) endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
-            `/forms/feedback/`
+           Der Inhaltspfad zu Inhalten, die aus dem Formular ausgegeben werden. Geben Sie einen Pfad ein, der mit einem Schrägstrich (`/`) endet. Der Schrägstrich zeigt an, dass für jeden Formular-Port ein neuer Knoten unter dem angegebenen Verzeichnis erstellt wird. Beispiel:
+           `/forms/feedback/`
 
          * **Daten anzeigen...**
 
-            Klicken Sie auf diese Schaltfläche, damit Sie im Bulk Editor auf die Informationen zu den Formularergebnissen zugreifen können. Von hier aus können Sie die Informationen in eine TSV-Datei (Tabulator-getrennt) exportieren (z. B. zur Verwendung in einer Excel-Tabelle).
+           Klicken Sie auf diese Schaltfläche, damit Sie im Bulk Editor auf die Informationen zu den Formularergebnissen zugreifen können. Von hier aus können Sie die Informationen in eine TSV-Datei (Tabulator-getrennt) exportieren (z. B. zur Verwendung in einer Excel-Tabelle).
+
       * **Inhalt mit Uploads speichern**
 
-         Hat dieselben Optionen wie **Inhalt speichern**.
+        Hat dieselben Optionen wie **Inhalt speichern**.
 
       * **Abonnenten löschen**
 
          * **Lead wird aus dieser Liste gelöscht**
 
-            Geben Sie die gewünschte Lead-Liste an.
-
-
-
-
-
-
-
-
-
+           Geben Sie die gewünschte Lead-Liste an.
 
 #### Ende des Formulars {#end-of-form}
 
@@ -1306,27 +1303,27 @@ Markiert das Ende des Formulars. Sie können Folgendes konfigurieren:
 
    * **Senden-Schaltfläche einblenden**
 
-      Gibt an, ob eine Senden-Schaltfläche angezeigt werden soll oder nicht.
+     Gibt an, ob eine Senden-Schaltfläche angezeigt werden soll oder nicht.
 
    * **Senden-Name**
 
-      Eine Kennung, wenn Sie mehrere Senden-Schaltflächen in einem Formular verwenden.
+     Eine Kennung, wenn Sie mehrere Senden-Schaltflächen in einem Formular verwenden.
 
    * **Senden-Titel**
 
-      Der Name, der auf der Schaltfläche angezeigt wird, z. B. „Senden“ oder „Übermitteln“.
+     Der Name, der auf der Schaltfläche angezeigt wird, z. B. „Senden“ oder „Übermitteln“.
 
    * **Zurücksetzen-Schaltfläche einblenden**
 
-      Wenn Sie das Kontrollkästchen aktivieren, wird die Schaltfläche Zurücksetzen angezeigt.
+     Wenn Sie das Kontrollkästchen aktivieren, wird die Schaltfläche Zurücksetzen angezeigt.
 
    * **Titel zurücksetzen**
 
-      Der Name, der auf der Schaltfläche &quot;Zurücksetzen&quot;angezeigt wird.
+     Der Name, der auf der Schaltfläche &quot;Zurücksetzen&quot;angezeigt wird.
 
    * **Beschreibung**
 
-      Informationen, die unter der Schaltfläche angezeigt werden.
+     Informationen, die unter der Schaltfläche angezeigt werden.
 
 ### Kontoname {#account-name}
 
@@ -1366,7 +1363,7 @@ Bei der Captcha-Komponente muss der Benutzer eine alphanumerische Zeichenfolge e
 
 Sie können verschiedene Parameter für diese Komponente konfigurieren, einschließlich einer Meldung, die angezeigt wird, wenn die Captcha-Zeichenfolge ungültig ist.
 
-### Kontrollkästchen Gruppe {#checkbox-group}
+### Kontrollkästchen-Gruppe {#checkbox-group}
 
 >[!CAUTION]
 >

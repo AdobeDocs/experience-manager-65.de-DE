@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '907'
-ht-degree: 48%
+source-wordcount: '913'
+ht-degree: 47%
 
 ---
 
@@ -68,13 +68,13 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
 1. Klicken oder tippen Sie auf das Symbol **Übergeordnetes Element**.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103204.png)
+   ![Übergeordnetes Element](do-not-localize/screen_shot_2018-03-22at103204.png)
 
    Dadurch wird das Absatzsystem mit der aktuellen Komponente ausgewählt.
 
 1. Das Symbol **Konfigurieren** für das Absatzsystem wird in der Aktionsleiste für das übergeordnete Element angezeigt.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256.png)
+   ![Konfigurieren](do-not-localize/screen_shot_2018-03-22at103256.png)
 
    Wählen Sie dieses Symbol, um das Dialogfeld anzuzeigen.
 
@@ -121,7 +121,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
 1. Öffnen Sie das Dialogfeld, indem Sie das Symbol **Konfigurieren** verwenden.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256-1.png)
+   ![Symbol &quot;Konfigurieren&quot;](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
    Im Dialogfeld für den Entwurf können Sie die Komponente entsprechend den verfügbaren Designparametern konfigurieren.
 
@@ -151,12 +151,12 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Verwenden Sie das Symbol **Löschen**, um einen Eintrag aus einer Dialogfeldliste mit mehreren Einträgen zu entfernen.
+   Verwenden Sie die **Löschen** -Symbol, um einen Eintrag aus einer Dialogfeldliste mit mehreren Einträgen zu entfernen.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103809.png)
+   ![Löschen](do-not-localize/screen_shot_2018-03-22at103809.png)
 
    Verwenden Sie die **Verschieben** -Symbol, um die Reihenfolge der Einträge in einer Dialogfeldliste mit mehreren Einträgen neu anzuordnen.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103816.png)
+   ![Verschieben](do-not-localize/screen_shot_2018-03-22at103816.png)
 
 1. Klicken oder tippen Sie auf **Fertig** zum Speichern und Schließen des Dialogfelds.

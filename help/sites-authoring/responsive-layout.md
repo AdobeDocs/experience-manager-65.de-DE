@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 61%
+source-wordcount: '1805'
+ht-degree: 62%
 
 ---
 
@@ -40,11 +40,11 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
 
 * [**Layout-Container-Komponente**](#adding-a-layout-container-and-its-content-edit-mode)
 
-   Diese Komponente ist im [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) verfügbar. Sie bietet ein Raster-Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses kann auf Ihrer Seite auch als Standardabsatzsystem festgelegt werden.
+  Diese Komponente ist im [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser) verfügbar. Sie bietet ein Raster-Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Dieses kann auf Ihrer Seite auch als Standardabsatzsystem festgelegt werden.
 
 * [**Layout-Modus**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
-   Sobald der Layout-Container auf der Seite positioniert ist, können Sie im **Layout**-Modus Inhalte im responsiven Raster positionieren.
+  Sobald der Layout-Container auf der Seite positioniert ist, können Sie im **Layout**-Modus Inhalte im responsiven Raster positionieren.
 
 * [**Emulator**](#selecting-a-device-to-emulate)
 Hiermit können Sie responsive Websites erstellen und bearbeiten, deren Layout durch eine interaktive Größenanpassung der Komponenten an die Größe des Geräts oder Fensters angepasst wird. Der Benutzer kann sich dann mit dem Emulator ansehen, wie der Inhalt für bestimmte Geräte gerendert wird.
@@ -101,7 +101,7 @@ Wenn Sie beispielsweise das Gerät auswählen **iPhone 6 Plus** (definiert mit e
 
 1. Wählen Sie in der oberen Symbolleiste das Symbol **Emulator** aus:
 
-   ![](do-not-localize/screen_shot_2018-03-23at084256.png)
+   ![Emulator](do-not-localize/screen_shot_2018-03-23at084256.png)
 
 1. Die Emulator-Symbolleiste wird geöffnet.
 
@@ -109,13 +109,13 @@ Wenn Sie beispielsweise das Gerät auswählen **iPhone 6 Plus** (definiert mit e
 
    In der Emulator-Symbolleiste werden zusätzliche Layout-Optionen angezeigt:
 
-   * **Gerät drehen** - Ermöglicht das Drehen eines Geräts von der vertikalen (Hochformat-) Ausrichtung in die horizontale (Querformat-) Ausrichtung und umgekehrt.
+   * **Gerät drehen** – Ermöglicht es Ihnen, die vertikale Ausrichtung (Hochformat) eines Geräts in eine horizontale Ausrichtung (Querformat) zu ändern und umgekehrt.
 
-   ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
+     ![Gerät drehen](do-not-localize/screen_shot_2018-03-23at084612.png) ![Gerät drehen](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Gerät auswählen** – Ermöglicht es Ihnen, ein bestimmtes Gerät anzugeben, das aus einer Liste emuliert werden soll (Einzelheiten dazu werden im nächsten Schritt beschrieben).
 
-   ![](do-not-localize/screen_shot_2018-03-23at084743.png)
+     ![Gerät auswählen](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Um ein bestimmtes zu emulierendes Gerät auszuwählen, haben Sie folgende Möglichkeiten:
 
@@ -138,8 +138,6 @@ Wenn Sie beispielsweise das Gerät auswählen **iPhone 6 Plus** (definiert mit e
    * Die Kante kann auch als Seitenzeilenumbruch betrachtet werden (nicht zu verwechseln mit der [Breakpoints](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) für den Inhalt. Diese wird angezeigt, um zu veranschaulichen, welchen Teil des Inhalts der Benutzer vor dem Scrollen auf dem Gerät sehen wird.
    * Die Linie für die Kante wird nicht angezeigt, wenn die Höhe des zu emulierenden Geräts größer als die Bildschirmgröße ist.
    * Der Falz wird aus Komfortgründen für Autoren, aber nicht auf der veröffentlichten Seite angezeigt.
-
-
 
 ## Hinzufügen eines Layout-Containers und seiner Inhalte (Bearbeitungsmodus) {#adding-a-layout-container-and-its-content-edit-mode}
 
@@ -172,7 +170,7 @@ Einen Layout-Container können Sie wie andere Komponenten im **Bearbeitungsmodus
 
    Wählen Sie daraufhin die Option **Übergeordnetes Element** aus.
 
-   ![](do-not-localize/screen_shot_2018-03-23at085417.png)
+   ![Übergeordnete Option](do-not-localize/screen_shot_2018-03-23at085417.png)
 
 1. Wenn die Layout-Komponente verschachtelt ist, wählen Sie die **Übergeordnet** bietet eine Dropdown-Auswahl, über die Sie den verschachtelten Layout-Container oder dessen übergeordnete Elemente auswählen können.
 
@@ -212,62 +210,62 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
 
 * Ändern Sie die Größe der Inhaltskomponenten mithilfe der blauen Punkte. Die Größenanpassung erfolgt immer am Raster. Bei der Größenanpassung wird das Hintergrundraster angezeigt, um die Ausrichtung zu erleichtern:
 
-   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
+  ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 
-   >[!NOTE]
-   >
-   >Wenn Sie die Größe von Komponenten wie **Bildern** ändern, bleiben die Proportionen und Seitenverhältnisse erhalten.
+  >[!NOTE]
+  >
+  >Wenn Sie die Größe von Komponenten wie **Bildern** ändern, bleiben die Proportionen und Seitenverhältnisse erhalten.
 
 * Wenn Sie auf eine Inhaltskomponente klicken/tippen, bietet Ihnen die Symbolleiste folgende Möglichkeiten:
 
    * **Übergeordnetes Element**
 
-      Ermöglicht die Auswahl der gesamten Layout-Container-Komponente, um diese insgesamt zu bearbeiten.
+     Ermöglicht die Auswahl der gesamten Layout-Container-Komponente, um diese insgesamt zu bearbeiten.
 
    * **In neue Zeile verschieben**
 
-      Die Komponente wird abhängig von dem innerhalb des Rasters verfügbaren Platz in eine neue Zeile verschoben.
+     Die Komponente wird abhängig von dem innerhalb des Rasters verfügbaren Platz in eine neue Zeile verschoben.
 
    * **Komponente ausblenden**
 
-      Die Komponente wird unsichtbar (sie kann über die Symbolleiste des Layout-Containers wiederhergestellt werden).
-   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
+     Die Komponente wird unsichtbar (sie kann über die Symbolleiste des Layout-Containers wiederhergestellt werden).
+
+  ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * Im **Layout**-Modus können Sie auf **Komponenten hierher ziehen** tippen/klicken, um die gesamte Komponente auszuwählen. Dadurch wird die Symbolleiste für diesen Modus angezeigt.
 
-   Die Symbolleiste bietet je nach Status der Layout-Komponente und der zugehörigen Komponenten unterschiedliche Optionen. Beispiel:
+  Die Symbolleiste bietet je nach Status der Layout-Komponente und der zugehörigen Komponenten unterschiedliche Optionen. Beispiel:
 
    * **Übergeordnetes Element**: Wählt die übergeordnete Komponente aus.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090823.png)
+     ![Übergeordnetes Element](do-not-localize/screen_shot_2018-03-23at090823.png)
 
    * **Ausgeblendete Komponenten anzeigen**: Blendet alle oder einzelne Komponenten ein. Die Zahl gibt an, wie viele ausgeblendete Komponenten es derzeit gibt. Der Zähler zeigt an, wie viele Komponenten ausgeblendet sind.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091007.png)
+     ![Verborgene Komponenten einblenden](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **Breakpoint-Layout zurücksetzen**: Ermöglicht die Rückkehr zum Standard-Layout. Dies bedeutet, dass kein benutzerdefiniertes Layout vorgegeben wird.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091013.png)
+     ![Breakpoint-Layout wiederherstellen](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **In neue Zeile verschieben**: Verschiebt die Komponente um eine Position nach oben, wenn der Leerraum dies erlaubt.
 
-   ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+     ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
    * **Komponente ausblenden**: Blendet die aktuelle Komponente aus.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090834.png)
+     ![Komponente ausblenden](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-   >[!NOTE]
-   >
-   >Im obigen Beispiel sind die Aktionen zum Verschieben und Ausblenden verfügbar, weil dieser Layout-Container in einem übergeordneten Layout-Container verschachtelt ist.
+     >[!NOTE]
+     >
+     >Im obigen Beispiel sind die Aktionen zum Verschieben und Ausblenden verfügbar, weil dieser Layout-Container in einem übergeordneten Layout-Container verschachtelt ist.
 
-   * **Komponenten einblenden**
-Wählen Sie die übergeordneten Komponenten aus, um die Aktionssymbolleiste mit der 
-Option **Ausgeblendete Komponenten anzeigen** anzuzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
-   ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+   * **Komponenten einblenden**: Ermöglicht das Auswählen der übergeordneten Komponenten, um die Aktionssymbolleiste mit der Option **Verborgene Komponenten einblenden** anzuzeigen. In diesem Beispiel gibt es zwei ausgeblendete Komponenten.
 
-   Bei Auswahl der Option **Ausgeblendete Komponenten anzeigen** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.
+     ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
-   ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+  Bei Auswahl der Option **Ausgeblendete Komponenten anzeigen** werden die jeweils ausgeblendeten Komponenten in Blau an ihren ursprünglichen Positionen angezeigt.
 
-   Bei Auswahl der Option **Alle wiederherstellen** werden alle ausgeblendeten Komponenten eingeblendet.
+  ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+
+  Bei Auswahl der Option **Alle wiederherstellen** werden alle ausgeblendeten Komponenten eingeblendet.
