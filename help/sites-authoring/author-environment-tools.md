@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
+source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2242'
 ht-degree: 90%
 
 ---
@@ -69,21 +69,21 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 * **Mobilgerät (z. B. iPad)**
 
-   Der Komponenten-Browser deckt die gesamte bearbeitete Seite ab.
+  Der Komponenten-Browser deckt die gesamte bearbeitete Seite ab.
 
-   Um der Seite eine Komponente hinzuzufügen, berühren und halten Sie die gewünschte Komponente und verschieben Sie sie nach rechts. Der Komponenten-Browser wird geschlossen und die Seite wird erneut angezeigt. Sie können die Komponente jetzt dort platzieren.
+  Um der Seite eine Komponente hinzuzufügen, berühren und halten Sie die gewünschte Komponente und verschieben Sie sie nach rechts. Der Komponenten-Browser wird geschlossen und die Seite wird erneut angezeigt. Sie können die Komponente jetzt dort platzieren.
 
-   ![ateat-04](assets/ateat-04.png)
+  ![ateat-04](assets/ateat-04.png)
 
 * **Desktop-Gerät**
 
-   Der Komponenten-Browser wird auf der linken Seite des Fensters geöffnet.
+  Der Komponenten-Browser wird auf der linken Seite des Fensters geöffnet.
 
-   Um der Seite eine Komponente hinzuzufügen, klicken Sie auf die gewünschte Komponente und ziehen Sie sie an die gewünschte Position.
+  Um der Seite eine Komponente hinzuzufügen, klicken Sie auf die gewünschte Komponente und ziehen Sie sie an die gewünschte Position.
 
-   ![ateat-05](assets/ateat-05.png)
+  ![ateat-05](assets/ateat-05.png)
 
-   Komponenten werden wie folgt dargestellt:
+  Komponenten werden wie folgt dargestellt:
 
    * Komponentenname
    * Komponentengruppe (in grau)
@@ -92,16 +92,16 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
       * Die Symbole für die Standardkomponenten sind monochrom dargestellt.
       * Abkürzungen sind immer die ersten beiden Zeichen des Komponentennamen.
 
-   In der oberen Symbolleiste des **Komponenten-Browsers** haben Sie folgende Möglichkeiten:
+  In der oberen Symbolleiste des **Komponenten-Browsers** haben Sie folgende Möglichkeiten:
 
    * Komponenten nach Namen filtern
    * mittels Dropdown-Auswahl die Anzeige auf eine bestimmte Gruppe begrenzen
 
-   Für eine detailliertere Beschreibung der Komponente können Sie im Browser **Komponenten** auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar). Beispiel für den **Layout-Container**:
+  Für eine detailliertere Beschreibung der Komponente können Sie im Browser **Komponenten** auf das Informationssymbol neben der Komponente tippen/klicken (falls verfügbar). Beispiel für den **Layout-Container**:
 
-   ![ateat-06](assets/ateat-06.png)
+  ![ateat-06](assets/ateat-06.png)
 
-   Weiterführende Informationen zu den verfügbaren Komponenten finden Sie unter [Komponenten-Konsole](/help/sites-authoring/default-components-console.md).
+  Weiterführende Informationen zu den verfügbaren Komponenten finden Sie unter [Komponenten-Konsole](/help/sites-authoring/default-components-console.md).
 
 ## Asset-Browser {#assets-browser}
 
@@ -150,23 +150,23 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 * **Mobilgerät wie iPad**
 
-   Der Asset-Browser deckt die gesamte bearbeitete Seite ab.
+  Der Asset-Browser deckt die gesamte bearbeitete Seite ab.
 
-   Um der Seite ein Asset hinzuzufügen, berühren und halten Sie das gewünschte Asset und verschieben Sie es nach rechts. Der Asset-Browser wird geschlossen und die Seite wird erneut angezeigt. Jetzt können Sie das Asset der gewünschten Komponente hinzufügen.
+  Um der Seite ein Asset hinzuzufügen, berühren und halten Sie das gewünschte Asset und verschieben Sie es nach rechts. Der Asset-Browser wird geschlossen und die Seite wird erneut angezeigt. Jetzt können Sie das Asset der gewünschten Komponente hinzufügen.
 
-   ![ateat-09](assets/ateat-09.png)
+  ![ateat-09](assets/ateat-09.png)
 
 * **Desktop-Gerät**
 
-   Der Asset-Browser wird auf der linken Seite des Fensters geöffnet.
+  Der Asset-Browser wird auf der linken Seite des Fensters geöffnet.
 
-   Um ein Asset zu Ihrer Seite hinzuzufügen, klicken Sie auf das gewünschte Asset und ziehen Sie es auf die benötigte Komponente oder Stelle.
+  Um ein Asset zu Ihrer Seite hinzuzufügen, klicken Sie auf das gewünschte Asset und ziehen Sie es auf die benötigte Komponente oder Stelle.
 
-   ![ateat-10](assets/ateat-10.png)
+  ![ateat-10](assets/ateat-10.png)
 
 Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den [Asset-Editor](/help/assets/manage-assets.md) auch direkt über den Browser starten. Klicken Sie dazu einfach auf das Bearbeitungssymbol neben dem Asset-Namen.
 
-![](do-not-localize/screen_shot_2018-03-22at142448.png)
+![Assets Browser Desktop-Gerät](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Inhaltsstruktur {#content-tree}
 
@@ -174,7 +174,7 @@ Die **Inhaltsstruktur** bietet einen Überblick über alle auf der Seite verwend
 
 Die Inhaltsstruktur befindet sich auf einer Registerkarte im seitlichen Bedienfeld (zusammen mit dem Asset-Browser). Um das Bedienfeld zu öffnen (oder zu schließen), verwenden Sie das Symbol links oben in der Symbolleiste:
 
-![](do-not-localize/screen_shot_2018-03-22at142042.png)
+![Inhaltsstruktur](do-not-localize/screen_shot_2018-03-22at142042.png)
 
 Wenn Sie das Bedienfeld öffnen, wird es von der linken Seite aus eingeblendet. Wählen Sie ggf. die Registerkarte **Inhaltsstruktur**. Mit dieser Strukturansicht Ihrer Seite oder Vorlage können Sie leicht nachvollziehen, wie die darauf verwendeten Komponenten hierarchisch strukturiert sind. Auf einer komplexer gestalteten Seite können Sie so zudem einfacher zwischen Komponenten auf der Seite wechseln.
 
@@ -196,19 +196,19 @@ Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfü
 
 * Zum Beispiel bei einer einfachen Seite:
 
-   `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
 
-   ![ateat-12](assets/ateat-12.png)
+  ![ateat-12](assets/ateat-12.png)
 
-   Wenn Sie in der Struktur auf eine Komponente klicken, die bearbeitbar ist, wird rechts neben ihrem Namen ein Schraubenschlüssel-Symbol angezeigt. Durch Klicken auf dieses Symbol können Sie das Dialogfeld für die Bearbeitung der Komponente direkt aufrufen.
+  Wenn Sie in der Struktur auf eine Komponente klicken, die bearbeitbar ist, wird rechts neben ihrem Namen ein Schraubenschlüssel-Symbol angezeigt. Durch Klicken auf dieses Symbol können Sie das Dialogfeld für die Bearbeitung der Komponente direkt aufrufen.
 
-   ![](do-not-localize/screen_shot_2018-03-22at142725.png)
+  ![Schraubenschlüsselsymbol - Bearbeiten](do-not-localize/screen_shot_2018-03-22at142725.png)
 
 * Oder eine Seite, die Teil eines [Livecopy](/help/sites-administering/msm.md), wobei Komponenten von einer anderen Seite übernommen werden; Beispiel:
 
-   `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
-   ![ateat-13](assets/ateat-13.png)
+  ![ateat-13](assets/ateat-13.png)
 
 ## Fragmente: Browser für zugehörige Inhalte {#fragments-associated-content-browser}
 
@@ -320,7 +320,6 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Mit dem [Tastaturbefehl](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M) können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
 >
 
-
 ## Pfadauswahl {#path-selection}
 
 Oft muss bei der Bearbeitung einer Seite eine andere Ressource ausgewählt werden (z. B. zum Definieren eines Links zu einer anderen Seite/Ressource oder zum Auswählen eines Bilds). Zur Vereinfachung der Pfadauswahl werden Eingaben in den [Pfad-Feldern](/help/sites-authoring/author-environment-tools.md#path-fields) automatisch ausgefüllt. Ergänzend dazu stehen zudem leistungsstarke Auswahlfunktionen im [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) zur Verfügung.
@@ -333,7 +332,7 @@ Pfadfelder verfügen jetzt über automatische Vervollständigungs- und Voraussch
 
 Durch Klicken auf die Schaltfläche **Auswahl-Dialogfeld öffnen** im Pfadfeld wird das Dialogfeld [Pfad-Browser](/help/sites-authoring/author-environment-tools.md#path-browser) geöffnet, in dem Optionen für eine präzisere Auswahl zur Verfügung stehen.
 
-![](do-not-localize/screen_shot_2018-03-22at154427.png)
+![Auswahl-Dialogfeld öffnen](do-not-localize/screen_shot_2018-03-22at154427.png)
 
 Alternativ können Sie etwas in das Pfadfeld eingeben und AEM schlägt Ihrer Eingabe entsprechend passende Pfade vor.
 
@@ -351,7 +350,7 @@ Der Pfad-Browser ist wie die [Spaltenansicht](/help/sites-authoring/basic-handli
 * Darüber hinaus können Sie auch jederzeit das Suchfeld oben im Dialogfeld verwenden. Klicken Sie im Suchfeld auf **X**, wenn Sie die Suche löschen möchten.
 * Sie können Ihre Suche auch eingrenzen, indem Sie die Filteroptionen einblenden und die Ergebnisse nach Pfad filtern.
 
-   ![ateat-21](assets/ateat-21.png)
+  ![ateat-21](assets/ateat-21.png)
 
 ## Tastaturbefehle {#keyboard-shortcuts}
 
