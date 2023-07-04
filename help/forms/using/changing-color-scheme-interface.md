@@ -1,7 +1,7 @@
 ---
 title: Ändern des Farbschemas der Benutzeroberfläche
 seo-title: Changing the color scheme of the interface
-description: So ändern Sie das Farbschema der Benutzeroberfläche von AEM Forms Workspace selektiv.
+description: So ändern Sie das selektiv das Farbschema der Benutzeroberfläche von AEM Forms Workspace.
 seo-description: How to modify the color scheme of AEM Forms workspace user interface portions selectively.
 uuid: 32c32f7a-8271-4d2c-8a1f-ad5ab3c90b83
 contentOwner: robhagat
@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 exl-id: e0a261a2-518b-4984-a5b5-24f0b9222e24
 source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '228'
-ht-degree: 44%
+ht-degree: 100%
 
 ---
 
@@ -23,18 +23,18 @@ Sie können das Farbschema von Bereichen der Benutzeroberfläche von AEM Forms W
 
 ## Navigationsleiste oben {#top-navigation-bar}
 
-### Hintergrundbild verwenden {#using-background-image}
+### Verwenden eines Hintergrundbilds {#using-background-image}
 
-So aktualisieren Sie die Navigationsleiste am oberen Rand von AEM Forms Workspace.
+So aktualisieren Sie die Navigationsleiste am oberen Rand von AEM Forms Workspace
 
-1. Erstellen Sie ein Hintergrundbild, um die Farbe zu aktualisieren. Benennen Sie die Datei mit newBackground.jpg.
-1. Laden Sie die Hintergrundbilddatei mithilfe eines WebDAV-Clients in den Ordner /apps/ws/images hoch.
+1. Erstellen Sie ein Hintergrundbild, um die Farbe zu aktualisieren. Geben Sie der Datei den Namen „newBackground.jpg“.
+1. Laden Sie die Datei des Hintergrundbilds mithilfe eines WebDAV-Clients in den Ordner „/apps/ws/images“ hoch.
 
    >[!NOTE]
    >
    >Weitere Informationen zum WebDAV-Zugriff finden Sie unter [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de).
 
-1. Referenzieren Sie das neue Hintergrundbild in /apps/ws/css/newStyle.css , indem Sie folgenden Stil hinzufügen.
+1. Verweisen Sie auf das neue Hintergrundbild in „/apps/ws/css/newStyle.css“, indem Sie den folgenden Stil hinzufügen.
 
    ```css
    #header {
@@ -44,7 +44,7 @@ So aktualisieren Sie die Navigationsleiste am oberen Rand von AEM Forms Workspac
 
 ### Verwenden der Farbeigenschaft in CSS {#using-color-property-in-css}
 
-1. Fügen Sie den folgenden Stil in newStyle.css unter /apps/ws/css hinzu
+1. Fügen Sie in „newStyle.css“ unter „/apps/ws/css“ den folgenden Stil hinzu:
 
    ```css
    #header {
@@ -55,7 +55,7 @@ So aktualisieren Sie die Navigationsleiste am oberen Rand von AEM Forms Workspac
 
 ## Kategoriekomponente {#category-component}
 
-Die Komponente Kategorie zeigt die verschiedenen Kategorien Ihrer Aufgaben im linken Bereich an. Um die Farbe zu ändern, definieren Sie die Hintergrundfarbe im `.category`-Element der CSS-Datei.
+Die Kategoriekomponente zeigt die verschiedenen Kategorien Ihrer Aufgaben im linken Bereich an. Um die Farbe zu ändern, definieren Sie die Hintergrundfarbe im `.category`-Element der CSS-Datei.
 
 ## Task-Komponente {#task-component}
 
