@@ -10,9 +10,9 @@ discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1362'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
@@ -21,15 +21,15 @@ ht-degree: 57%
 Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem bestimmten Zeitpunkt festgehalten. Bei der Versionierung können Sie die folgenden Aktionen durchführen:
 
 * Erstellen Sie eine Version einer Seite.
-* Stellen Sie eine Seite auf eine frühere Version zurück, um eine Änderung rückgängig zu machen, die Sie beispielsweise an einer Seite vorgenommen haben.
-* Vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version mit Unterschieden in Text und Bildern, die hervorgehoben sind.
+* Stellen Sie beispielsweise eine Seite auf eine frühere Version zurück, um eine Änderung rückgängig zu machen, die Sie an ihr vorgenommen haben.
+* Vergleichen Sie anhand von hervorgehobenen Unterschieden in Text und Bildern die aktuelle Version einer Seite mit einer früheren Version.
 
 ## Erstellen einer neuen Version   {#creating-a-new-version}
 
 So erstellen Sie eine neue Version einer Seite:
 
 1. Öffnen Sie in Ihrem Browser die Seite, für die Sie eine neue Version erstellen möchten.
-1. Wählen Sie im Sidekick die **Versionierung** Registerkarte, dann die **Version erstellen** Unterregisterkarte.
+1. Wählen Sie im Sidekick die Registerkarte **Versionierung** und dann die Unterregisterkarte **Version erstellen** aus.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
@@ -44,10 +44,10 @@ Version 1.2 erstellt für: Hemden.
 
 ## Wiederherstellen einer Seitenversion über den Sidekick {#restoring-a-page-version-from-sidekick}
 
-So stellen Sie eine frühere Version der Seite wieder her:
+So können Sie die Seite in einer früheren Version wiederherstellen:
 
 1. Öffnen Sie die Seite, für die Sie eine frühere Version wiederherstellen möchten.
-1. Wählen Sie im Sidekick die **Versionierung** Registerkarte, dann die **Version wiederherstellen** Unterregisterkarte.
+1. Wählen Sie im Sidekick die Registerkarte **Versionierung** und dann die Unterregisterkarte **Version wiederherstellen** aus.
 
    ![screen_shot_2012-02-14at42949pm](assets/screen_shot_2012-02-14at42949pm.png)
 
@@ -57,8 +57,8 @@ So stellen Sie eine frühere Version der Seite wieder her:
 
 Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. Sie kann auch verwendet werden, um zuvor gelöschte Seiten wiederherzustellen:
 
-1. Im **Websites** , navigieren Sie zu der Seite, die Sie wiederherstellen möchten, und wählen Sie sie aus.
-1. Wählen Sie im oberen Menü die Option **Instrumente**, dann **Wiederherstellen**:
+1. Navigieren Sie in der Konsole **Websites** zu der Seite, die Sie wiederherstellen möchten, und wählen Sie diese aus.
+1. Wählen Sie im oberen Menü die Option **Werkzeuge** und dann **Wiederherstellen**:
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
@@ -66,25 +66,25 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
-1. Wählen Sie die Version aus, die Sie wiederherstellen möchten, und klicken Sie auf **Wiederherstellen**. AEM stellt die ausgewählten Versionen (bzw. Bäume) wieder her.
+1. Wählen Sie die Version aus, die Sie wiederherstellen möchten, und klicken Sie auf **Wiederherstellen**. AEM stellt die ausgewählte(n) Version(en) (bzw. Baumstrukturen) wieder her.
 
-### Wiederherstellen eines Baums über die Konsole {#restoring-a-tree-from-the-console}
+### Wiederherstellen einer Baumstruktur über die Konsole {#restoring-a-tree-from-the-console}
 
 Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. Sie kann auch verwendet werden, um zuvor gelöschte Seiten wiederherzustellen:
 
-1. Im **Websites** -Konsole, navigieren Sie zu dem Ordner, den Sie wiederherstellen möchten, und wählen Sie ihn aus.
-1. Wählen Sie im oberen Menü die Option **Instrumente**, dann **Wiederherstellen**.
+1. Navigieren Sie in der Konsole **Websites** zu dem Ordner, den Sie wiederherstellen möchten, und wählen Sie ihn aus.
+1. Wählen Sie im oberen Menü die Option **Werkzeuge** und dann **Wiederherstellen** aus.
 1. Wenn Sie **Baum wiederherstellen...** auswählen, wird ein Dialogfeld geöffnet, in dem Sie den wiederherzustellenden Baum auswählen können:
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
-1. Klicken **Wiederherstellen**. AEM stellt den ausgewählten Baum wieder her.
+1. Klicken Sie auf **Wiederherstellen**. AEM stellt die ausgewählte Baumstruktur wieder her.
 
 ## Vergleich mit einer früheren Version {#comparing-with-a-previous-version}
 
-So vergleichen Sie die aktuelle Version der Seite mit einer früheren Version:
+So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
 
-1. Öffnen Sie in Ihrem Browser die Seite, für die Sie einen Vergleich mit einer früheren Version anstellen möchten.
+1. Öffnen Sie in Ihrem Browser die Seite, für die Sie einen Vergleich mit einer früheren Version vornehmen möchten.
 1. Wählen Sie im Sidekick die Registerkarte **Versionierung** und dann die Unterregisterkarte **Version wiederherstellen** aus.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
@@ -92,44 +92,44 @@ So vergleichen Sie die aktuelle Version der Seite mit einer früheren Version:
 1. Markieren Sie die Version, die Sie vergleichen möchten, und klicken Sie auf die Schaltfläche **Differenz**.
 1. Die Unterschiede zwischen der aktuellen Version und der ausgewählten Version werden wie folgt dargestellt:
 
-   * Gelöschter Text ist rot und durchgestrichen.
-   * Der hinzugefügte Text ist grün und hervorgehoben.
-   * Bilder, die hinzugefügt oder gelöscht wurden, werden grün gerahmt.
+   * Gelöschter Text wird rot und durchgestrichen angezeigt.
+   * Hinzugefügter Text wird grün und hervorgehoben angezeigt.
+   * Bilder, die hinzugefügt oder gelöscht wurden, werden grün umrahmt angezeigt.
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Wählen Sie im Sidekick die **Version wiederherstellen** und klicken Sie auf **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> -Schaltfläche, um die aktuelle Version anzuzeigen.**
+1. Wählen Sie im Sidekick die Unterregisterkarte **Version wiederherstellen** und klicken Sie auf die Schaltfläche **&lt;&lt;Zurück**, um die aktuelle Version anzuzeigen.
 
 ## Timewarp {#timewarp}
 
 Timewarp ist eine Funktion, die den ***Veröffentlichungsstatus*** einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
-Ziel ist es, Ihnen die Nachverfolgung der veröffentlichten Website zu einem bestimmten Zeitpunkt zu ermöglichen. Hierbei werden die Seitenaktivierungen verwendet, um den Status der Veröffentlichungsumgebung zu ermitteln.
+Ziel ist es, Ihnen die Nachverfolgung der veröffentlichten Website zu einem bestimmten Zeitpunkt zu ermöglichen. Hierbei werden die Seitenaktivierungen verwendet, um den Status der Publishing-Umgebung zu ermitteln.
 
 Gehen Sie hierfür wie folgt vor:
 
 * Das System sucht nach der Seitenversion, die zum ausgewählten Zeitpunkt aktiv war.
-* Dies bedeutet, dass die angezeigte Version erstellt/aktiviert wurde *before* den in Timewarp ausgewählten Zeitpunkt.
-* Wenn Sie zu einer Seite navigieren, die gelöscht wurde, wird dies ebenfalls gerendert - solange die alten Versionen der Seite noch im Repository verfügbar sind.
-* Wenn keine veröffentlichte Version gefunden wird, kehrt Timewarp zum aktuellen Status der Seite in der Autorenumgebung zurück (um einen Fehler/404-Seite zu verhindern, was bedeutet, dass Sie nicht mehr durchsuchen können).
+* Dies bedeutet, dass die angezeigte Version *vor* dem Zeitpunkt erstellt/aktiviert wurde, der in Timewarp ausgewählt wurde.
+* Wenn Sie zu einer inzwischen gelöschten Seite navigieren, wird diese ebenfalls wiedergegeben, sofern die alten Versionen der Seite noch im Repository verfügbar sind.
+* Wenn keine veröffentlichte Version gefunden wird, kehrt Timewarp zum aktuellen Status der Seite in der Authoring-Umgebung zurück (dadurch wird eine Fehler-/404-Seite vermieden, die dazu führen würde, dass Sie nicht weiter browsen können).
 
 >[!NOTE]
 >
->Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen. Wenn sich Elemente (wie Code, CSS, Bilder usw.) zum Rendern der Website geändert haben, unterscheidet sich die Ansicht von der ursprünglichen Ansicht, da diese Elemente nicht im Repository versioniert werden.
+>Wenn Versionen aus dem Repository entfernt wurden, kann Timewarp die korrekte Ansicht nicht anzeigen. Außerdem unterscheidet sich die Ansicht von der ursprünglichen Ansicht, wenn Elemente (Code, CSS, Bilder usw.) für das Rendern der Website geändert wurden, da diese Elemente nicht im Repository versioniert werden.
 
 ### Verwenden des Timewarp-Kalenders {#using-the-timewarp-calendar}
 
 Timewarp ist im Sidekick verfügbar.
 
-Die Kalenderversion wird verwendet, wenn ein bestimmter Tag angezeigt werden soll:
+Die Kalenderversion wird verwendet, wenn Sie einen bestimmten Tag anzeigen möchten.
 
-1. Öffnen Sie die Registerkarte **Versionierung** und klicken Sie auf **Timewarp** (unten im Sidekick). Das folgende Dialogfeld wird angezeigt:
+1. Öffnen Sie die Registerkarte **Versionierung** und klicken Sie auf **Timewarp** (unten im Sidekick). Der folgende Dialog wird angezeigt:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Geben Sie mithilfe der Datums- und Uhrzeitauswahl das gewünschte Datum/die gewünschte Uhrzeit an und klicken Sie auf **Los**.
+1. Legen Sie mithilfe der Datum- und Uhrzeitauswahl das gewünschte Datum und die gewünschte Uhrzeit fest und klicken Sie auf **Los**.
 
-   Timewarp zeigt die Seite so an, wie sie vor/am gewählten Datum veröffentlicht wurde.
+   Timewarp zeigt die Seite so an, wie sie vor/an dem gewählten Datum veröffentlicht war.
 
    >[!NOTE]
    >
@@ -137,7 +137,7 @@ Die Kalenderversion wird verwendet, wenn ein bestimmter Tag angezeigt werden sol
 
    >[!NOTE]
    >
-   >Wenn Sie zu einer Seite navigieren, die aus dem Repository entfernt/gelöscht wurde, wird sie ordnungsgemäß gerendert, wenn alte Versionen der Seite weiterhin im Repository verfügbar sind.
+   >Wenn Sie zu einer inzwischen aus dem Repository gelöschten Seite navigieren, wird diese ebenfalls korrekt wiedergegeben, sofern die alten Versionen der Seite noch im Repository verfügbar sind.
 
    >[!NOTE]
    >
@@ -176,7 +176,7 @@ Im Beispiel unten zeigt die rote Linie an, dass die Seite während des Zeitraums
 
 1. Klicken Sie auf:
 
-   1. **Los** , um den Inhalt der veröffentlichten Seite zum ausgewählten Zeitpunkt anzuzeigen.
+   1. Klicken Sie auf **Los**, um den Inhalt der veröffentlichten Seite zum ausgewählten Zeitpunkt anzuzeigen.
    1. Wenn der Inhalt angezeigt wird, verwenden Sie **Timewarp beenden**, um Timewarp zu verlassen und zur aktuellen Autorenseite zurückzukehren.
 
 ### Timewarp-Beschränkungen {#timewarp-limitations}
