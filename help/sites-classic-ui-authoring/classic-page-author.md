@@ -1,5 +1,5 @@
 ---
-title: Bearbeiten von Seiten
+title: Bearbeiten von Seiten (Authoring)
 description: Es gibt zwei Übersichten zur Inhaltserstellung in AEM. (1) Erste Schritte für Autoren – eine Einführung für neue Autoren, und (2) Kurzanleitung zur Seitenbearbeitung (Authoring) – eine (allgemeine) Kurzanleitung zu den wichtigsten Aktionen.
 uuid: 95d12bd6-c51d-4b7c-9d67-a152a822eb01
 contentOwner: Chris Bohnert
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '298'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Im Folgenden finden Sie eine Übersicht zur Seitenbearbeitung in AEM:
 
 ## Schneller Überblick über die Funktionen für die Seitenbearbeitung {#quick-overview-of-features-used-for-authoring-pages}
 
-Um Sie beim Erstellen von Seiten zu unterstützen, bietet die Autorenumgebung Funktionen wie:
+Um Sie beim Bearbeiten von Seiten zu unterstützen, bietet die Authoring-Umgebung Funktionen wie:
 
 * **Drag-and-Drop**
 Komponenten (wie Text, Bild) und digitale Assets (wie Bilder) können auf der Seite positioniert werden, indem sie einfach per Drag-and-Drop an die gewünschte Position verschoben werden.
