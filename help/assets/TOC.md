@@ -7,9 +7,9 @@ user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
 source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '723'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -96,11 +96,11 @@ ht-degree: 94%
    + [Erweitern des Asset-Editors](asseteditorx.md)
    + [[!DNL Assets]-HTTP-API](mac-api-assets.md)
    + [Unterstützung von Inhaltsfragmenten in der  [!DNL Assets] -HTTP-API](assets-api-content-fragments.md)
-   + [GraphQL-API für Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html)
-   + [Verwenden der GraphiQL-IDE](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html)
-   + [Persistierte Abfragen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html)
-   + [Authentifizierung für GraphQL-Remote-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-authentication-content-fragments.html)
-   + [GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und Abfragen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/content-fragments-graphql-samples.html)
+   + [GraphQL-API für Inhaltsfragmente](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-api-content-fragments.html?lang=de)
+   + [Verwenden der GraphiQL-IDE](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphiql-ide.html?lang=de)
+   + [Persistierte Abfragen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/persisted-queries.html?lang=de)
+   + [Authentifizierung für Remote-GraphQL-Abfragen in Inhaltsfragmenten](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/graphql-authentication-content-fragments.html?lang=de)
+   + [GraphQL-API mit Inhaltsfragmenten – Beispielinhalt und Abfragen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/headless/delivery-api/content-fragments-graphql-samples.html?lang=de)
    + [[!DNL Assets]-Proxy-Entwicklung](proxy.md)
 + Verwalten von Assets {#administer}
    + [Unterstützte Dateiformate](assets-formats.md)
@@ -158,7 +158,7 @@ ht-degree: 94%
 + Verwalten von Assets {#managing}
    + [Verwalten digitaler Assets](manage-assets.md)
    + [Verwalten von Sammlungen](manage-collections.md)
-   + [Asset-Auswahl](asset-selector.md)
+   + [Asset-Wähler](asset-selector.md)
    + [Aktivieren der Duplikatserkennung](duplicate-detection.md)
    + [Organisieren von digitalen Assets](organize-assets.md)
    + [Verwalten von Video-Assets](managing-video-assets.md)
