@@ -1,5 +1,5 @@
 ---
-title: Fehlerbehebung bei Richtlinien für AEM Forms Workspace
+title: Fehlerbehebung bei Richtlinien für einen AEM Forms-Arbeitsbereich
 seo-title: Troubleshooting guidelines for AEM Forms workspace
 description: Aktivieren Sie Protokolle und verwenden Sie Debugger im Browser, um eine Fehlerbehebung in AEM Forms Workspace durchzuführen.
 seo-description: Enable logs and use debugger in browser to troubleshoot AEM Forms workspace.
@@ -11,13 +11,13 @@ topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
 exl-id: a054b60a-5e89-4c98-87bc-35669988d160
 source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '734'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
-# Fehlerbehebung bei Richtlinien für AEM Forms Workspace {#troubleshooting-guidelines-for-aem-forms-workspace}
+# Fehlerbehebung bei Richtlinien für einen AEM Forms-Arbeitsbereich {#troubleshooting-guidelines-for-aem-forms-workspace}
 
 Dieser Artikel erläutert, wie Sie AEM Forms Workspace debuggen, indem Sie die Protokollierung aktivieren und den Debugger in einem Browser verwenden. Außerdem werden einige häufig auftretende Probleme bei der Verwendung von AEM Forms Workspace und deren Umgehungslösungen erläutert.
 
@@ -52,7 +52,7 @@ In AEM Forms Workspace:
 >
 >Standardmäßig ist die Protokollebene aller Komponenten auf INFO festgelegt.
 
-* Die vom Benutzer festgelegte Protokollebene wird nur für diese Browsersitzung beibehalten. Wenn der Benutzer die Seite aktualisiert, wird die Protokollebene für alle Komponenten auf ihren ursprünglichen Wert festgelegt.
+* Die von Benutzern bzw. Benutzerinnen festgelegte Protokollebene wird nur für diese Browser-Sitzung beibehalten. Wenn Benutzer bzw. Benutzerinnen die Seite aktualisieren, wird die Protokollebene für alle Komponenten auf ihren ursprünglichen Wert festgelegt.
 
 ### Liste der Komponentendateien in AEM Forms Workspace {#list-of-component-files-in-nbsp-aem-forms-workspace}
 
@@ -153,17 +153,17 @@ In AEM Forms Workspace:
 
 ## Debugging-Informationen für Browser {#debugging-information-for-browsers}
 
-Skripte und Stile können in verschiedenen Browsern debuggt werden.
+Das Debugging von Skripten und Stilen ist in verschiedenen Browsern möglich.
 
-* **Debugging in IE**: Informationen zum Debugging von AEM Forms Workspace in IE finden Sie unter: [https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/en-us/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
+* **Debugging in IE**: Informationen zum Debugging von AEM Forms Workspace in IE finden Sie unter: [https://learn.microsoft.com/de-de/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie](https://learn.microsoft.com/de-de/office/dev/add-ins/testing/debug-add-ins-using-f12-tools-ie).
 
-* **Debugging in Chrome**: Um den Debugger in Chrome zu öffnen, verwenden Sie den Tastaturbefehl: Strg+Umschalt+I. Weitere Informationen finden Sie unter: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
+* **Debugging in Chrome**: Um den Debugger in Chrome zu öffnen, verwenden Sie den Tastaturbefehl Strg+Umschalt+I. Weitere Informationen finden Sie unter: [https://developer.chrome.com/docs/extensions/mv3/tut_debugging/](https://developer.chrome.com/docs/extensions/mv3/tut_debugging/).
 
 * **Debugging in Firefox**: Zum Debugging von Skripten und Stilen in Firefox stehen mehrere Add-ons zur Verfügung. Zum Beispiel ist Firebug ein solches Debugging-Programm ([https://getfirebug.com](https://getfirebug.com)).
 
 ## Häufig gestellte Fragen {#faqs}
 
-1. PDF-Formular wird in Google Chrome nicht wiedergegeben oder gesendet.
+1. PDF-Formular wird in Google Chrome nicht gerendert oder übermittelt.
 
    1. Installieren Sie das Adobe® Reader®-Plug-in.
    1. Öffnen Sie in Chrome chrome://plugins, um verfügbare Plug-ins anzuzeigen.
@@ -172,25 +172,25 @@ Skripte und Stile können in verschiedenen Browsern debuggt werden.
 1. SWF-Formular oder Guide wird in Google Chrome nicht gerendert.
 
    1. Öffnen Sie in Chrome chrome://plugins, um verfügbare Plug-ins anzuzeigen.
-   1. Weitere Informationen finden Sie unter Adobe Flash® Player-Plug-in .
+   1. Sehen Sie sich die Details zum Adobe Flash® Player-Plug-in an.
    1. Deaktivieren Sie PepperFlash unter dem Adobe Flash Player-Plug-in.
 
 1. Ich habe AEM Forms Workspace angepasst, kann die Änderungen jedoch nicht sehen.
 
-   Löschen Sie den Cache des Browsers und greifen Sie dann auf AEM Forms Workspace zu.
+   Löschen Sie den Cache des Browsers und rufen Sie dann AEM Forms Workspace auf.
 
-1. Was muss der Benutzer tun, damit das Formular beim Öffnen auf dem Desktop auf HTML wiedergegeben werden kann?
+1. Was müssen Benutzer bzw. Benutzerinnen tun, damit das Formular beim Öffnen auf dem Desktop in HTML gerendert werden kann?
 
-   Wählen Sie bei Verwendung von Workbench im Schritt &quot;Aufgabe zuweisen&quot;die Optionsschaltfläche HTML für das Standardprofil aus.
+   Wählen Sie bei Verwendung von Workbench im Schritt „Aufgabe zuweisen“ die Optionsschaltfläche „HTML“ für das Standardprofil aus.
 
 1. Der Anhang wird beim Klicken nicht angezeigt.
 
    Um Anlagen anzuzeigen, aktivieren Sie Popups in Ihrem Browser.
 
-1. Ein Benutzer ist bei einer Formularanwendung angemeldet. Wenn der Benutzer versucht, sich bei Workspace anzumelden, wird er möglicherweise nicht geladen, wenn der Benutzer keine Workspace-Berechtigungen hat.
+1. Eine Benutzerin bzw. ein Benutzer ist bei einer Formularanwendung angemeldet. Wenn die Benutzerin bzw. der Benutzer versucht, sich bei Workspace anzumelden, kann es möglicherweise nicht geladen werden, wenn die Person keine Workspace-Berechtigungen hat.
 
    Melden Sie sich von der anderen Formularanwendung ab und melden Sie sich dann bei Workspace an.
 
 1. Bei HTML-Formularen, die Prozesseigenschaften im Design verwenden, wird bei der Wiedergabe in AEM Forms Workspace die Schaltfläche „Senden“ innerhalb des Formulars angezeigt.
 
-   Wenn Sie beim Entwerfen von Formularen Prozesseigenschaften verwenden, wird im Formular eine Senden-Schaltfläche hinzugefügt. Wenn die Schaltfläche &quot;Senden&quot;in AEM Forms Workspace als PDF gerendert wird, ist sie für den Endbenutzer nicht sichtbar. Bei der Wiedergabe als HTML-Formular in AEM Forms Workspace ist die Schaltfläche &quot;Senden&quot;jedoch für den Endbenutzer sichtbar. Durch Klicken auf diese Senden-Schaltfläche im Formular wird keine Aktion ausgelöst. Durch Klicken auf die Schaltfläche &quot;Senden&quot;unten im AEM Forms-Arbeitsbereich außerhalb des Formulars wird die Aufgabe abgeschlossen.
+   Wenn Sie beim Entwerfen von Formularen Prozesseigenschaften verwenden, wird im Formular eine Schaltfläche „Senden“ hinzugefügt. Wenn die Schaltfläche „Senden“ in AEM Forms Workspace als PDF gerendert wird, ist sie für den Endbenutzer bzw. die Endbenutzerin nicht sichtbar. Beim Rendern als HTML-Formular in AEM Forms Workspace ist die Schaltfläche „Senden“ jedoch für den Endbenutzer bzw. die Endbenutzerin sichtbar. Durch Klicken auf diese „Senden“ Schaltfläche im Formular wird keine Aktion ausgelöst. Durch Klicken auf die Schaltfläche „Senden“ unten in AEM Forms Workspace, außerhalb des Formulars, wird die Aufgabe abgeschlossen.
