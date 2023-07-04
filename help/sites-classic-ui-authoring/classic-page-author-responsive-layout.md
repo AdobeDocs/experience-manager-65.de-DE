@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 69a20064-99c9-4ead-9cc1-4c771a87268c
 exl-id: ccdce571-8b1c-4aca-a8c6-a909ec9b0516
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '62'
-ht-degree: 77%
+ht-degree: 100%
 
 ---
 
@@ -19,4 +19,4 @@ ht-degree: 77%
 
 >[!CAUTION]
 >
->Auch wenn die Layout-Container-Komponente in der klassischen Benutzeroberfläche verfügbar ist, wird der vollständige Funktionsumfang nur in der Touch-optimierten Benutzeroberfläche zur Verfügung gestellt und unterstützt. Siehe [Responsives Layout](/help/sites-authoring/responsive-layout.md) in der Standarddokumentation für die Bearbeitung für weitere Informationen.
+>Auch wenn die Layout-Container-Komponente in der klassischen Benutzeroberfläche verfügbar ist, wird der vollständige Funktionsumfang nur in der Touch-optimierten Benutzeroberfläche zur Verfügung gestellt und unterstützt. Weitere Informationen finden Sie unter [Responsives Layout](/help/sites-authoring/responsive-layout.md) in der Standarddokumentation zum Authoring.
