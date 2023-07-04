@@ -1,6 +1,6 @@
 ---
-title: Bearbeiten der Seiteneigenschaften
-description: Die Eigenschaften einer Seite können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden, andere nicht und die Live Copy-Informationen sind entsprechend verfügbar.
+title: Bearbeiten von Seiteneigenschaften
+description: Die Eigenschaften einer Seite können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden und andere Seiten nicht. Entsprechend sind auch die Live Copy-Informationen verfügbar.
 uuid: 63d37d1b-52da-489d-b02b-e8b3d17571d1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,15 +9,15 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '763'
-ht-degree: 39%
+ht-degree: 100%
 
 ---
 
 # Bearbeiten der Seiteneigenschaften{#editing-page-properties}
 
-Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. Beispielsweise sind einige Seiten möglicherweise mit einer Live Copy verbunden, andere nicht und die Live Copy-Informationen sind entsprechend verfügbar.
+Sie können die erforderlichen Eigenschaften für eine Seite definieren. Diese können je nach Art der Seite variieren. Beispielsweise kann es sein, dass einige Seiten mit einer Live Copy verbunden sind und andere nicht. Entsprechend sind auch die Live Copy-Informationen verfügbar.
 
 ## Seiteneigenschaften {#page-properties}
 
@@ -27,7 +27,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
 * **Titel**
 
-   Der Titel der Seite wird an verschiedenen Stellen angezeigt. Beispiel: die **Websites** und der **Sites** Karten-/Listenansichten.
+   Der Titel der Seite wird an verschiedenen Stellen angezeigt. Zum Beispiel in der Liste auf der Registerkarte **Websites** und in den Karten-/Listenansichten **Sites**.
 
    Dies ist ein Pflichtfeld.
 
@@ -35,25 +35,25 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
    Hier können Sie der Seite Tags hinzufügen (oder davon entfernen), indem Sie die Liste im Auswahlfeld aktualisieren:
 
-   * Nachdem Sie ein Tag ausgewählt haben, wird es unter dem Auswahlfeld aufgeführt. Sie können ein Tag mit dem x aus dieser Liste entfernen.
+   * Nachdem Sie ein Tag ausgewählt haben, wird es unterhalb des Auswahlfelds aufgelistet. Sie können ein Tag mit dem „x“ aus dieser Liste entfernen.
    * Sie können ein völlig neues Tag eingeben, indem Sie den Namen in ein leeres Auswahlfeld eingeben.
 
       Das neue Tag wird erstellt, wenn Sie die Eingabetaste drücken. Das neue Tag wird dann in einem Feld angezeigt. Ein kleiner Stern auf der rechten Seite markiert es als neues Tag.
 
-   * Mit der Dropdown-Funktion können Sie aus vorhandenen Tags auswählen.
-   * Wenn Sie den Mauszeiger über einen Tag-Eintrag im Auswahlfeld bewegen, wird ein x angezeigt. kann verwendet werden, um dieses Tag für diese Seite zu entfernen.
+   * In der Dropdown-Liste können Sie aus vorhandenen Tags auswählen.
+   * Wenn Sie den Mauszeiger über einen Tag-Eintrag im Auswahlfeld bewegen, wird ein x angezeigt, mit dessen Hilfe Sie das Tag löschen können.
 
 * **In Navigation ausblenden**
 
-   Ein Umschalter gibt an, ob die Seite in der Seitennavigation ein- oder ausgeblendet wird.
+   Ein Umschalter gibt an, ob die Seite in der Seitennavigation ein- oder ausgeblendet sein soll.
 
 * **Seitentitel**
 
-   Ein Titel, der auf der Seite verwendet werden soll.
+   Ein Titel zur Verwendung auf der Seite.
 
 * **Navigationstitel**
 
-   Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten). Wenn leer, wird die **Titel** verwendet.
+   Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten). Wenn es leer ist, wird der generelle **Titel** verwendet.
 
 * **Untertitel**
 
@@ -61,23 +61,23 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
 * **Beschreibung**
 
-   Ihre Beschreibung der Seite, ihr Zweck oder andere Details, die Sie hinzufügen möchten.
+   Ihre Beschreibung der Seite, ihr Zweck oder beliebige andere Details, die Sie hinzufügen möchten.
 
 * **Einschaltzeit**
 
-   Datum und Uhrzeit der Aktivierung der veröffentlichten Seite. Nach der Veröffentlichung ruht diese Seite bis zum angegebenen Zeitpunkt.
+   Datum und Uhrzeit der Aktivierung der veröffentlichten Seite. Nach der Veröffentlichung dieser Seite ruht sie bis zum angegebenen Zeitpunkt.
 
-   Lassen Sie diese Felder für Seiten, die Sie sofort veröffentlichen möchten (im normalen Szenario), leer.
+   Lassen Sie diese Felder für Seiten, die Sie sofort veröffentlichen möchten (das normale Szenario), leer.
 
 * **Ausschaltzeit**
 
    Der Zeitpunkt, zu dem die veröffentlichte Seite deaktiviert wird.
 
-   Lassen Sie diese Felder für Seiten, die Sie sofort veröffentlichen möchten, wieder leer.
+   Lassen Sie diese Felder wiederum leer, wenn die Seite sofort veröffentlicht werden soll.
 
 * **Vanity-URL**
 
-   Ermöglicht die Eingabe einer Vanity-URL für diese Seite. Dadurch können Sie eine kürzere und ausdrucksstärkere URL verwenden.
+   Ermöglicht die Eingabe einer Vanity-URL für diese Seite. Dadurch können Sie eine kürzere, ausdrucksstärkere URL verwenden.
 
    Beispiel: Wenn die Vanity-URL w`elcome` für die Seite mit dem Pfad /`v1.0/startpage` auf der Website h`ttp://example.com,` verwendet wird, wäre h`ttp://example.com/welcome` die Vanity-URL von h`ttp://example.com/content/v1.0/startpage`.
 
@@ -85,7 +85,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
    >
    >Vanity-URLs:
    >
-   >* muss eindeutig sein. Daher sollten Sie darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
+   >* müssen eindeutig sein. Sie müssen also darauf achten, dass der Wert nicht bereits von einer anderen Seite verwendet wird.
    >* unterstützen keine Regex-Muster.
 
 
@@ -105,7 +105,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
 * **Design**
 
-   Geben Sie die [Design](/help/sites-developing/designer.md) für diese Seite verwendet werden.
+   Geben Sie das [Design](/help/sites-developing/designer.md) an, das für diese Seite verwendet werden soll.
 
 * **Alias**
 
@@ -113,11 +113,11 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
 * **Geschlossene Benutzergruppe aktivieren**
 
-   Aktiviert (oder deaktiviert) die Verwendung von [geschlossene Benutzergruppen](/help/sites-administering/cug.md) (CUGs).
+   Aktiviert (oder deaktiviert) die Verwendung von [geschlossenen Benutzergruppen](/help/sites-administering/cug.md) (CUGs).
 
 * **Anmeldeseite**
 
-   Die für die Anmeldung zu verwendende Seite.
+   Die Seite, die für die Anmeldung verwendet werden soll.
 
 * **Zugelassene Gruppen**
 
@@ -139,17 +139,17 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
    * **Vorschau generieren**
 
-      Erstellen Sie eine Vorschau der Seite, die als Miniaturansicht verwendet werden soll.
+      Generieren Sie eine Vorschau der Seite, die als Miniatur verwendet werden soll.
 
    * **Bild hochladen**
 
-      Laden Sie ein Bild hoch, das als Miniaturansicht verwendet werden soll.
+      Laden Sie ein Bild hoch, das als Miniatur verwendet werden soll.
 
 ### Cloud-Services {#cloud-services}
 
 * **Cloud Services**
 
-   Definieren von Eigenschaften für [Cloud Services](/help/sites-developing/extending-cloud-config.md).
+   Definieren Sie Eigenschaften für [Cloud-Services](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalisierung  {#personalization}
 
@@ -167,13 +167,13 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
 * **Blueprint**
 
-   Definieren Sie Eigenschaften für eine Blueprint-Seite in [Multi-Site-Management](/help/sites-administering/msm.md). Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
+   Legen Sie Eigenschaften für eine Blueprint-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen an die Live Copy propagiert werden.
 
 ### Live Copy  {#live-copy}
 
 * **Live Copy**
 
-   Legen Sie Eigenschaften für eine Live Copy-Seite fest in [Multi-Site-Management](/help/sites-administering/msm.md). Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
+   Legen Sie Eigenschaften für eine Live Copy-Seite fest, die für die [Verwaltung mehrerer Websites](/help/sites-administering/msm.md) verwendet wird. Steuert die Umstände, unter denen Änderungen von der Blueprint-Seite propagiert werden.
 
 ### Site-Struktur  {#site-structure}
 
@@ -183,7 +183,7 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt:
 
 ### Bearbeiten der Seiteneigenschaften für eine bestimmte Seite {#editing-page-properties-for-a-specific-page}
 
-Seiteneigenschaften definieren die verschiedenen Eigenschaften der Seite, z. B. Titel, wenn sie auf der Website und anderen angezeigt werden.
+Seiteneigenschaften definieren die verschiedenen Eigenschaften der Seite, z. B. Titel, wenn sie auf der Website und anderen Seiten angezeigt werden.
 
 1. Öffnen Sie die Seite, die Sie bearbeiten möchten.
 
