@@ -1,6 +1,6 @@
 ---
 title: Veröffentlichen von Seiten
-description: Nachdem Sie Ihren Inhalt in der Autorenumgebung erstellt und geprüft haben, stellen Sie ihn auf Ihrer öffentlichen Website zur Verfügung.
+description: Nachdem Sie Ihren Inhalt in der Authoring-Umgebung erstellt und geprüft haben, muss dieser auf der öffentlichen Website (der Publishing-Umgebung) verfügbar gemacht werden.
 uuid: ab5ffc59-1c41-46fe-904e-9fc67d7ead04
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,23 +10,23 @@ discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1036'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Veröffentlichen von Seiten{#publishing-pages}
 
-Nachdem Sie Ihren Inhalt in der Autorenumgebung erstellt und geprüft haben, stellen Sie ihn auf Ihrer öffentlichen Website (Ihrer Veröffentlichungsumgebung) zur Verfügung.
+Nachdem Sie Ihren Inhalt in der Authoring-Umgebung erstellt und geprüft haben, muss dieser auf der öffentlichen Website (der Publishing-Umgebung) verfügbar gemacht werden.
 
-Dies wird als Veröffentlichen einer Seite bezeichnet. Wenn Sie eine Seite aus der Veröffentlichungsumgebung entfernen möchten, wird dies als Rückgängigmachen der Veröffentlichung bezeichnet. Beim Veröffentlichen und Rückgängigmachen der Veröffentlichung bleibt die Seite in der Autorenumgebung für weitere Änderungen verfügbar, bis Sie sie löschen.
+Dies wird als Publishing einer Seite bezeichnet. Wenn Sie eine Seite aus der Publishing-Umgebung entfernen möchten, wird dies als „Veröffentlichung aufheben“ bezeichnet. Beim „Publishing“ und „Veröffentlichung aufheben“ bleibt die Seite in der Authoring-Umgebung für weitere Änderungen verfügbar, bis Sie diese löschen.
 
-Sie können eine Seite auch sofort oder zu einem vordefinierten Zeitpunkt (Datum/Uhrzeit) in der Zukunft veröffentlichen bzw. deren Veröffentlichung rückgängig machen.
+Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt in der Zukunft veröffentlichen oder die Veröffentlichungen aufheben.
 
 >[!NOTE]
 >
->Bestimmte Begriffe im Zusammenhang mit der Veröffentlichung können verwirrt werden:
+>Bestimmte Begriffe im Zusammenhang mit Publishing sind leicht zu verwechseln:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
    >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
@@ -41,16 +41,16 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Zeitpunkt (Datum
 
 >[!NOTE]
 >
->Wenn Sie nicht über die erforderlichen Berechtigungen zum Veröffentlichen einer bestimmten Seite verfügen:
+>Wenn Sie nicht über die erforderlichen Berechtigungen zum Veröffentlichen einer bestimmten Seite verfügen, dann:
 >
->* Es wird ein Workflow ausgelöst, der die entsprechende Person über Ihre Veröffentlichungsanfrage informiert.
->* Eine Meldung wird angezeigt (für einen kurzen Zeitraum), um Sie darüber zu informieren.
+>* wird ein Workflow ausgelöst, der die entsprechende Person über Ihre Veröffentlichungsanfrage informiert.
+>* wird (für einen kurzen Zeitraum) eine Meldung angezeigt, um Sie darüber zu informieren.
 >
 
 
 ## Veröffentlichen einer Seite {#publishing-a-page}
 
-Es gibt zwei Methoden zum Aktivieren einer Seite:
+Für die Aktivierung einer Seite stehen zwei Methoden zur Verfügung:
 
 * [Mit der Websites-Konsole](#activating-a-page-from-the-websites-console)
 * [Mit dem Sidekick auf der Seite selbst](#activating-a-page-from-sidekick)
@@ -64,7 +64,7 @@ Es gibt zwei Methoden zum Aktivieren einer Seite:
 Sie können Seiten in der Websites-Konsole aktivieren. Nachdem Sie eine Seite geöffnet und deren Inhalt geändert haben, kehren Sie zur Websites-Konsole zurück:
 
 1. Wählen Sie in der Websites-Konsole die Seite aus, die Sie aktivieren möchten.
-1. Auswählen **Aktivieren**, entweder über das obere Menü oder das Dropdown-Menü auf dem ausgewählten Seitenelement.
+1. Wählen Sie **Aktivieren** aus, entweder über das obere Menü oder das Dropdown-Menü bei dem ausgewählten Seitenelement.
 
    Um den Inhalt einer Seite und alle zugehörigen Unterseiten zu aktivieren, verwenden Sie die [**Tools**-Konsole](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#howtoactivateacompletesectiontreeofyourwebsite).
 
@@ -72,13 +72,13 @@ Sie können Seiten in der Websites-Konsole aktivieren. Nachdem Sie eine Seite ge
 
    >[!NOTE]
    >
-   >Gegebenenfalls werden Sie von AEM aufgefordert, alle Assets zu aktivieren bzw. zu reaktivieren, die mit der Seite verknüpft sind. Sie können die Kontrollkästchen zum Aktivieren dieser Assets aktivieren oder deaktivieren.
+   >Gegebenenfalls werden Sie von AEM aufgefordert, alle Assets zu aktivieren bzw. zu reaktivieren, die mit der Seite verknüpft sind. Sie können die Aktivierung der Assets steuern, indem Sie die zugehörigen Kontrollkästchen markieren bzw. die Markierung aufheben.
 
-1. Gegebenenfalls werden Sie von AEM aufgefordert, alle Assets zu aktivieren bzw. zu reaktivieren, die mit der Seite verknüpft sind. Sie können die Kontrollkästchen zum Aktivieren dieser Assets aktivieren oder deaktivieren.
+1. Gegebenenfalls werden Sie von AEM aufgefordert, alle Assets zu aktivieren bzw. zu reaktivieren, die mit der Seite verknüpft sind. Sie können die Aktivierung der Assets steuern, indem Sie die zugehörigen Kontrollkästchen markieren bzw. die Markierung aufheben.
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. AEM WCM aktiviert den ausgewählten Inhalt. Die veröffentlichten Seiten werden im [Websites-Konsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (grün markiert) mit Informationen darüber, wer den Inhalt aktiviert hat, sowie Datum und Uhrzeit der Aktivierung.
+1. AEM WCM aktiviert den ausgewählten Inhalt. Die veröffentlichten Seiten werden in der [Websites-Konsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) angezeigt (grün markiert), zusammen mit Informationen darüber, wer den Inhalt aktiviert hat, sowie Datum und Uhrzeit der Aktivierung.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
@@ -86,20 +86,20 @@ Sie können Seiten in der Websites-Konsole aktivieren. Nachdem Sie eine Seite ge
 
 Sie können eine Seite auch aktivieren, wenn sie zur Bearbeitung geöffnet ist.
 
-Nachdem Sie die Seite geöffnet und ihren Inhalt geändert haben, führen Sie folgende Schritte durch:
+Nachdem Sie die Seite geöffnet und ihren Inhalt geändert haben, tun Sie Folgendes:
 
-1. Wählen Sie die **Seite** im Sidekick.
+1. Wählen Sie die Registerkarte **Seite** im Sidekick aus.
 1. Klicken Sie auf **Seite aktivieren**.
 Oben rechts im Fenster wird eine Meldung angezeigt, die die Aktivierung der Seite bestätigt.
 
 ## Rückgängigmachen der Veröffentlichung einer Seite {#unpublishing-a-page}
 
-Um eine Seite aus der Veröffentlichungsumgebung zu entfernen, deaktivieren Sie den Inhalt.
+Um eine Seite aus der Publishing-Umgebung zu entfernen, deaktivieren Sie den Inhalt.
 
 So deaktivieren Sie eine Seite:
 
 1. Wählen Sie in der Websites-Konsole die Seite aus, die Sie deaktivieren möchten.
-1. Auswählen **Deaktivieren**, entweder über das obere Menü oder das Dropdown-Menü auf dem ausgewählten Seitenelement. Sie werden aufgefordert, den Löschvorgang zu bestätigen.
+1. Wählen Sie entweder über das obere Menü oder das Dropdown-Menü bei dem ausgewählten Seitenelement **Deaktivieren** aus. Sie werden aufgefordert, den Löschvorgang zu bestätigen.
 
    ![screen_shot_2012-02-08at14859pm](assets/screen_shot_2012-02-08at14859pm.png)
 
@@ -118,9 +118,9 @@ So planen Sie die Aktivierung einer Seite für einen späteren Zeitpunkt:
 
    ![screen_shot_2012-02-08at14751pm](assets/screen_shot_2012-02-08at14751pm.png)
 
-Durch die spätere Aktivierung wird ein Workflow gestartet, mit dem diese Seitenversion zum angegebenen Zeitpunkt aktiviert wird. Umgekehrt startet die Deaktivierung später einen Workflow, um diese Version der Seite zu einem bestimmten Zeitpunkt zu deaktivieren.
+Durch Auswahl der Option „Später aktivieren“ wird ein Workflow gestartet, mit dem diese Seitenversion zum angegebenen Zeitpunkt aktiviert wird. Entsprechend wird durch Auswahl der Option „Später deaktivieren“ ein Workflow gestartet, mit dem die Seitenversion zum angegebenen Zeitpunkt deaktiviert wird.
 
-Wenn Sie diese Aktivierung/Deaktivierung abbrechen möchten, gehen Sie zu [Workflow-Konsole](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) , um den entsprechenden Workflow zu beenden.
+Wenn Sie diese Aktivierung/Deaktivierung später abbrechen möchten, gehen Sie zur [Workflow-Konsole](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd), um den entsprechenden Workflow zu beenden.
 
 ### Später deaktivieren {#deactivate-later}
 
@@ -134,7 +134,7 @@ So planen Sie die Deaktivierung einer Seite für einen späteren Zeitpunkt:
 
 Mit **Später deaktivieren** wird ein Workflow zur Deaktivierung der Seite zum angegebenen Zeitpunkt gestartet.
 
-Wenn Sie diese Deaktivierung abbrechen möchten, gehen Sie zu [Workflow-Konsole](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) , um den entsprechenden Workflow zu beenden.
+Wenn Sie diese spätere Deaktivierung abbrechen möchten, gehen Sie zur [Workflow-Konsole](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd), um den entsprechenden Workflow zu beenden.
 
 ## Geplante Aktivierung/Deaktivierung (Einschaltzeit/Ausschaltzeit) {#scheduled-activation-deactivation-on-off-time}
 
@@ -142,11 +142,11 @@ Wenn Sie diese Deaktivierung abbrechen möchten, gehen Sie zu [Workflow-Konsole]
 
 ### Bestimmen des Seitenveröffentlichungsstatus {#determining-page-publication-status-classic-ui}
 
-Der Status wird im [Websites-Konsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console). Die Farben geben den Veröffentlichungsstatus an.
+Der Status wird in der [Websites-Konsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) angezeigt. Die Farben geben den Veröffentlichungsstatus an.
 
-## Aktivieren eines vollständigen Abschnitts (Baums) Ihrer Website {#activating-a-complete-section-tree-of-your-website}
+## Aktivieren einer kompletten Baumstruktur Ihrer Website {#activating-a-complete-section-tree-of-your-website}
 
-Aus dem **Websites** -Tab können Sie die einzelnen Seiten aktivieren. Wenn Sie eine beträchtliche Anzahl von Inhaltsseiten eingegeben oder aktualisiert haben, die sich alle unter derselben Stammseite befinden, kann es einfacher sein, den gesamten Baum in einer Aktion zu aktivieren. Sie können auch einen Probelauf durchführen, um eine Aktivierung zu emulieren und hervorzuheben, welche Seiten aktiviert werden.
+Von der Registerkarte **Websites** aus können Sie die einzelnen Seiten aktivieren. Wenn Sie allerdings eine große Anzahl von Inhaltsseiten eingegeben oder aktualisiert haben, die sich alle unterhalb derselben Stammseite befinden, kann es einfacher sein, die gesamte Baumstruktur mit einer einzigen Aktion zu aktivieren. Sie können auch einen Probelauf durchführen, um eine Aktivierung zu emulieren und hervorzuheben, welche Seiten aktiviert würden.
 
 1. Öffnen Sie die **Tools**-Konsole, indem Sie sie auf dem **Startbildschirm** auswählen, und doppelklicken Sie dann auf **Replikation**, um die Konsole zu öffnen (`https://localhost:4502/etc/replication.html`).
 
@@ -161,11 +161,11 @@ Aus dem **Websites** -Tab können Sie die einzelnen Seiten aktivieren. Wenn Sie 
 1. Geben Sie den **Startpfad** ein. Dies ist der Pfad zum Stammverzeichnis des Abschnitts, den Sie aktivieren (veröffentlichen) möchten. Diese Seite und alle darunter liegenden Seiten werden bei der Aktivierung (bzw. bei der Emulation, falls ein Probelauf ausgewählt wurde) berücksichtigt.
 1. Aktivieren Sie die Auswahlkriterien nach Bedarf:
 
-   * **Nur geändert**: nur Seiten aktivieren, die geändert wurden.
+   * **Nur geänderte**: nur Seiten aktivieren, die geändert wurden.
    * **Nur aktivierte**: nur Seiten aktivieren, die bereits vorher aktiviert waren. Dies stellt eine Art von Reaktivierung dar.
-   * **Ignorieren deaktiviert**: ignorieren Sie alle deaktivierten Seiten.
+   * **Deaktivierte ignorieren**: alle deaktivierten Seiten ignorieren.
 
-1. Wählen Sie die gewünschte Aktion aus:
+1. Wählen Sie die Aktion aus, die Sie durchführen möchten:
 
    1. Wählen Sie **Probelauf** aus, wenn Sie überprüfen möchten, welche Seiten aktiviert *würden*. Dabei handelt es sich lediglich um eine Emulation, bei der keine Seiten tatsächlich aktiviert werden.
 
