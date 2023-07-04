@@ -1,6 +1,6 @@
 ---
 title: Bildeditor
-description: Der Bildeditor ist ein Kernelement der AEM und kann von Komponenten verwendet werden, um die Bearbeitung von Bildern durch Inhaltsautoren zu erleichtern.
+description: Der Bildeditor ist ein Kernstück von AEM und kann von Komponenten genutzt werden, um eine Bearbeitung von Bildern durch Inhaltsautorinnen und -autoren zu erleichtern.
 uuid: de6ac71b-380a-4b67-b697-ac34a79a9cc4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,15 +9,15 @@ topic-tags: components
 discoiquuid: f6347492-cf48-4835-b8fd-ce9a75a09abe
 exl-id: af6cf1e0-8901-4621-9f72-e791cb8d68ae
 source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '312'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
 # Bildeditor{#image-editor}
 
-Der Bildeditor ist ein Kernelement der AEM und kann von Komponenten verwendet werden, um die Bearbeitung von Bildern durch Inhaltsautoren zu erleichtern.
+Der Bildeditor ist ein Kernstück von AEM und kann von Komponenten genutzt werden, um eine Bearbeitung von Bildern durch Inhaltsautorinnen und -autoren zu erleichtern.
 
 >[!CAUTION]
 >
