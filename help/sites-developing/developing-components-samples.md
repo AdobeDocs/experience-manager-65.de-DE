@@ -12,9 +12,9 @@ discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
 exl-id: 4059af12-49a7-489c-a2b8-d0481be57cc5
 source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '221'
-ht-degree: 48%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Informationen zur klassischen Benutzeroberfläche finden Sie unter [AEM-Komponen
 
 ## Codebeispiel – So passen Sie Dialogfelder an {#code-sample-how-to-customize-dialog-fields}
 
-CODE FÜR GITHUB
+CODE AUF GITHUB
 
 Den Code dieser Seite finden Sie auf GitHub.
 
@@ -49,11 +49,11 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 >[!NOTE]
 >
->Dieses Codebeispiel bezieht sich auf die AEM Gems-Sitzung auf [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=en).
+>Dieses Code-Beispiel bezieht sich auf die AEM Gems-Sitzung zum Thema [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=de).
 
 ## Verwandte Ressourcen {#related-resources}
 
-### Hinzufügen einer neuen Aktion zur Komponentensymbolleiste {#add-new-action-to-a-component-toolbar}
+### Hinzufügen einer neuen Aktion zu einer Komponenten-Symbolleiste {#add-new-action-to-a-component-toolbar}
 
 Neue Aktionen können zu Komponenten-Symbolleisten über die Bearbeitungsebene des Seiteneditors hinzugefügt werden.
 
