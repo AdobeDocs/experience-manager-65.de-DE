@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '634'
-ht-degree: 46%
+ht-degree: 100%
 
 ---
 
@@ -19,30 +19,30 @@ ht-degree: 46%
 
 Verwenden Sie Seitenanalysedaten, um die Effektivität des Seiteninhalts zu messen.
 
-## In der Konsole sichtbare Analytics {#analytics-visible-from-the-console}
+## In der Konsole sichtbare Analysen {#analytics-visible-from-the-console}
 
 ![aa-10](assets/aa-10.png)
 
-Seitenanalysedaten werden angezeigt in [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) der Sites-Konsole. Wenn die Seiten im Listenformat angezeigt werden, sind die folgenden Spalten standardmäßig verfügbar:
+Seitenanalysedaten werden in der [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) der Sites-Konsole angezeigt. Wenn die Seiten im Listenformat angezeigt werden, sind die folgenden Spalten standardmäßig verfügbar:
 
 * Seitenansichten
 * Unique Visitors
 * Zeit auf Seite
 
-Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und zeigt auch an, ob der Wert seit dem vorherigen Berichtszeitraum gestiegen oder gesunken ist. Die angezeigten Daten werden alle 12 Stunden aktualisiert.
+Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und zeigt dazu an, ob der Wert seit dem vorherigen Berichtszeitraum gestiegen oder gesunken ist. Die angezeigten Daten werden alle 12 Stunden aktualisiert.
 
 >[!NOTE]
 >
->So ändern Sie den Aktualisierungszeitraum: [Konfigurieren des Importintervalls](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>Um den Aktualisierungszeitraum zu ändern, [konfigurieren Sie das Importintervall](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Öffnen Sie die Konsole **Sites**, z. B. [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content).
 1. Klicken oder tippen Sie ganz rechts oben in der Symbolleiste auf das Symbol, um **Listenansicht** auszuwählen. (Das angezeigte Symbol ist von der [aktuellen Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) abhängig.)
 
-1. Klicken oder tippen Sie oben rechts in der Symbolleiste auf das Symbol und wählen Sie **Anzeigeeinstellungen**. Die **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
+1. Klicken oder tippen Sie oben rechts in der Symbolleiste auf das Symbol und wählen Sie **Anzeigeeinstellungen** aus. Der Dialog **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
 
    ![aa-04](assets/aa-04.png)
 
-### Berichtszeitraum auswählen {#selecting-the-reporting-period}
+### Auswählen des Berichtszeitraums {#selecting-the-reporting-period}
 
 Wählen Sie den Berichtszeitraum aus, für den Analytics-Daten in der Sites-Konsole angezeigt werden:
 
@@ -55,11 +55,11 @@ Der aktuelle Berichtszeitraum wird in der Symbolleiste der Konsole „Sites“ (
 
 ### Konfigurieren der verfügbaren Datenspalten {#configuring-available-data-columns}
 
-Mitglieder der Benutzergruppe &quot;Analytics-Administratoren&quot;können die Konsole &quot;Sites&quot;konfigurieren, damit Autoren zusätzliche Analytics-Spalten sehen können.
+Mitglieder der Benutzergruppe „Analytics-Administratoren“ können die Sites-Konsole konfigurieren, damit Autorinnen und Autoren zusätzliche Analytics-Spalten sehen können.
 
 >[!NOTE]
 >
->Wenn ein Seitenbaum untergeordnete Elemente enthält, die verschiedenen Adobe Analytics-Cloud-Konfigurationen zugeordnet sind, können Sie die verfügbaren Datenspalten für die Seiten nicht konfigurieren.
+>Wenn ein Seitenbaum untergeordnete Elemente enthält, die verschiedenen Cloud-Konfigurationen von Adobe Analytics zugeordnet sind, können Sie die verfügbaren Datenspalten für die Seiten nicht konfigurieren.
 
 1. Verwenden Sie in der Listenansicht die Ansichtsselektoren (rechts neben der Symbolleiste), wählen Sie **Ansichts-Einstellungen** und anschließend **Benutzerdefinierte Analysedaten hinzufügen**.
 
@@ -76,11 +76,11 @@ Mitglieder der Benutzergruppe &quot;Analytics-Administratoren&quot;können die K
 Öffnen Sie [Inhaltseinsicht](/help/sites-authoring/content-insights.md) von der Konsole „Sites“ aus, um die Seiteneffektivität weiter zu untersuchen.
 
 1. Wählen Sie in der Sites-Konsole die Seite aus, für die Sie Inhaltseinblicke anzeigen möchten.
-1. Klicken Sie in der Symbolleiste auf das Symbol Analytics und Recommendations .
+1. Klicken Sie in der Symbolleiste auf das Symbol „Analysen und Empfehlungen“.
 
    ![](do-not-localize/chlimage_1-16a.png)
 
-## Im Seiteneditor sichtbare Analytics (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
+## Im Seiten-Editor sichtbare Analysen (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!NOTE]
 >
@@ -100,9 +100,9 @@ Nachdem Sie den Modus [Activity Map](/help/sites-authoring/author-environment-to
 
 ![aa-03](assets/aa-03.png)
 
-Die **Analytics** schwebende Symbolleiste wird angezeigt; Hier können Sie:
+Die schwebende Symbolleiste **Analyse** wird angezeigt. Hier können Sie:
 
-* Ändern Sie das Symbolleistenformat mit den doppelten Pfeilen (**>>**)
+* das Symbolleistenformat mit den doppelten Pfeilen (**>>**) ändern
 * Ein- oder Ausblenden der Seitendetails (Augensymbol)
 * Einstellungen der Activity Map konfigurieren (Zahnradsymbol)
 * Anzuzeigende Analysedaten auswählen (verschiedene Dropdown-Selektoren)
@@ -110,7 +110,7 @@ Die **Analytics** schwebende Symbolleiste wird angezeigt; Hier können Sie:
 
 ![aa-09](assets/aa-09.png)
 
-### Auswahl der anzuzeigenden Analyse {#selecting-the-analytics-to-show}
+### Auswahl der anzuzeigenden Analysen {#selecting-the-analytics-to-show}
 
 Sie können anhand der verschiedenen Kriterien auswählen, welche Analysedaten angezeigt werden sollen und wie sie angezeigt werden sollen:
 
@@ -126,7 +126,7 @@ Sie können anhand der verschiedenen Kriterien auswählen, welche Analysedaten a
 
 ### Konfigurieren der Activity Map {#configuring-the-activity-map}
 
-Verwenden Sie die **Einstellungen anzeigen** Symbol zum Öffnen **Activity Map-Einstellungen** angezeigt.
+Verwenden Sie das Symbol **Einstellungen anzeigen** zum Öffnen des Dialogs **Activity Map-Einstellungen**.
 
 ![aa-04-1](assets/aa-04-1.png)
 
@@ -136,11 +136,11 @@ Das Dialogfeld **Einstellungen für Activity Map** bietet auf drei Registerkarte
 
 * Allgemein
 
-   * Berichtssuite
+   * Report Suite
    * Seitenname
    * Sprache
-   * Overlays bezeichnen als
-   * Schriftgröße Beschriftung
+   * Kennzeichnen von Überlagerungen mit
+   * Schriftgröße der Kennzeichnung
    * Verlaufsfarbe
    * Blasenfarbe
    * Farbverlauf basierend auf
@@ -153,6 +153,6 @@ Das Dialogfeld **Einstellungen für Activity Map** bietet auf drei Registerkarte
 
 * Live
 
-   * Anzeige oben (Gewinner oder Verlierer)
+   * Stärkste Gewinner oder Verlierer anzeigen
    * Unterste % ausschließen
    * Automatische Aktualisierung (Daten und Zeitraum)
