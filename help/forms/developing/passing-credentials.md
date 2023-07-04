@@ -1,11 +1,11 @@
 ---
-title: Übergeben von Anmeldeinformationen mithilfe von WS-Sicherheitskopfzeilen
+title: Übergeben von Anmeldeinformationen mithilfe von WS-Security-Kopfzeilen
 description: Erfahren Sie, wie Sie Berechtigungen mithilfe von WS-Security-Headern übergeben.
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '217'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
