@@ -10,9 +10,9 @@ discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1492'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -21,26 +21,26 @@ ht-degree: 79%
 Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem bestimmten Zeitpunkt festgehalten. Bei der Versionierung können Sie die folgenden Aktionen durchführen:
 
 * Erstellen Sie eine Version einer Seite.
-* Stellen Sie eine Seite auf eine frühere Version zurück, um eine Änderung rückgängig zu machen, die Sie beispielsweise an einer Seite vorgenommen haben.
-* Vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version mit Unterschieden in Text und Bildern, die hervorgehoben sind.
+* Stellen Sie beispielsweise eine Seite auf eine frühere Version zurück, um eine Änderung rückgängig zu machen, die Sie an ihr vorgenommen haben.
+* Vergleichen Sie anhand von hervorgehobenen Unterschieden in Text und Bildern die aktuelle Version einer Seite mit einer früheren Version.
 
 ## Erstellen einer neuen Version   {#creating-a-new-version}
 
 Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
 * über die [Zeitleiste](#creating-a-new-version-timeline)
-* die [Erstellen](#creating-a-new-version-create-with-a-selected-resource) Option (wenn eine Ressource ausgewählt ist)
+* mithilfe der Option [Erstellen](#creating-a-new-version-create-with-a-selected-resource) (wenn eine Ressource ausgewählt ist)
 
 ### Erstellen einer neuen Version – Zeitleiste {#creating-a-new-version-timeline}
 
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die Spalte **Zeitleiste**.
-1. Klicken/tippen Sie auf den Pfeil neben dem Kommentarfeld, um die Optionen anzuzeigen:
+1. Klicken/tippen Sie auf die Pfeilspitze neben dem Kommentarfeld, um die Optionen anzuzeigen:
 
    ![screen-shot_2019-03-05at112335](assets/screen-shot_2019-03-05at112335.png)
 
-1. Auswählen **Als Version speichern**.
+1. Wählen Sie **Als Version speichern**.
 1. Geben Sie eine **Beschriftung** an und ggf. einen **Kommentar** ein.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
@@ -53,7 +53,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Wählen Sie die **Erstellen** in der Symbolleiste.
+1. Wählen Sie die Option **Erstellen** in der Symbolleiste.
 1. Das Dialogfeld wird geöffnet. Sie können eine **Beschriftung** angeben und ggf. einen **Kommentar** eingeben:
 
    ![screen_shot_2012-02-15at105050am](assets/screen_shot_2012-02-15at105050am.png)
@@ -169,7 +169,7 @@ Sie können eine Vorschau einer bestimmten Version anzeigen:
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
-1. Die Seitenversionen werden aufgeführt. Wählen Sie die Version aus, die Sie in der Vorschau anzeigen möchten:
+1. Die Seitenversionen werden aufgeführt. Wählen Sie die Version, die Sie in der Vorschau anzeigen möchten:
 
    ![screen-shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
 
@@ -177,7 +177,7 @@ Sie können eine Vorschau einer bestimmten Version anzeigen:
 
    >[!CAUTION]
    >
-   >Wenn eine Seite verschoben wurde, können Sie keine Vorschau mehr für Versionen anzeigen, die vor dem Verschieben vorgenommen wurden.
+   >Wenn eine Seite verschoben wurde, können Sie keine Vorschau von Versionen mehr anzeigen, die vor dem Verschieben erstellt wurden.
    >
    >* Wenn Probleme bei der Vorschau auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 
@@ -189,11 +189,11 @@ So vergleichen Sie eine frühere Version mit der aktuellen Seite:
 1. Navigieren Sie zu der Seite, die Sie vergleichen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Öffnen Sie die **Zeitleiste** und wählen Sie entweder **Alle anzeigen** oder **Versionen** aus.
-1. Die Seitenversionen werden aufgeführt. Wählen Sie die Version aus, die Sie vergleichen möchten:
+1. Die Seitenversionen werden aufgeführt. Wählen Sie die Version aus, die Sie vergleichen möchten.
 
    ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Auswählen **Mit aktueller Version vergleichen**. Die [Seitenvergleich](/help/sites-authoring/page-diff.md) öffnet und zeigt die Unterschiede an.
+1. Wählen Sie **Mit aktueller Version vergleichen** aus. Die Seite [Seitenvergleich](/help/sites-authoring/page-diff.md) öffnet sich und zeigt die Unterschiede an.
 
 ## Timewarp {#timewarp}
 
@@ -208,15 +208,15 @@ Da die Erstellung von Inhalten ein fortlaufender und kollaborativer Prozess ist,
 Gehen Sie hierfür wie folgt vor:
 
 * Das System sucht nach der Seitenversion, die zum ausgewählten Zeitpunkt aktiv war.
-* Dies bedeutet, dass die angezeigte Version erstellt/aktiviert wurde *before* den in Timewarp ausgewählten Zeitpunkt.
+* Dies bedeutet, dass die angezeigte Version *vor* dem Zeitpunkt erstellt/aktiviert wurde, der in Timewarp ausgewählt wurde.
 * Wenn Sie zu einer inzwischen gelöschten Seite navigieren, wird diese ebenfalls wiedergegeben, sofern die alten Versionen der Seite nach wie vor im Repository verfügbar sind.
 * Wenn keine veröffentlichte Version gefunden wird, kehrt Timewarp zum aktuellen Status der Seite in der Autorenumgebung zurück (dadurch wird eine Fehler-/404-Seite vermieden, die dazu führen würde, dass Sie nicht weiter browsen können).
 
 ### Verwenden von Timewarp {#using-timewarp}
 
-Timewarp ist eine [mode](/help/sites-authoring/author-environment-tools.md#page-modes) des Seiteneditors. Um es zu starten, wechseln Sie es einfach wie jeder andere Modus.
+Timewarp ist ein [Modus](/help/sites-authoring/author-environment-tools.md#page-modes) des Seiteneditors. Um ihn zu starten, aktivieren Sie ihn einfach wie jeden anderen Modus.
 
-1. Starten Sie den Editor für die Seite, auf der Sie Timewarp starten möchten, und wählen Sie dann **Timewarp** in der Modusauswahl.
+1. Starten Sie den Editor für die Seite, auf der Timewarp ausgeführt werden soll, und wählen Sie in der Modusauswahl **Timewarp** aus.
 
    ![wwpv-01](assets/wwpv-01.png)
 
@@ -224,7 +224,7 @@ Timewarp ist eine [mode](/help/sites-authoring/author-environment-tools.md#page-
 
    ![wwpv-02](assets/wwpv-02.png)
 
-1. Die Seite wird basierend auf dem festgelegten Datum angezeigt. Der Timewarp-Modus wird über die blaue Statusleiste am oberen Rand des Fensters angezeigt. Verwenden Sie die Links in der Statusleiste, um ein neues Zieldatum auszuwählen oder den Timewarp-Modus zu beenden.
+1. Die Seite wird basierend auf dem festgelegten Datum angezeigt. Der Timewarp-Modus ist durch die blaue Statusleiste am oberen Fensterrand gekennzeichnet. Verwenden Sie die Links in der Statusleiste, um ein neues Zieldatum auszuwählen oder den Timewarp-Modus zu verlassen.
 
    ![wwpv-03](assets/wwpv-03.png)
 
