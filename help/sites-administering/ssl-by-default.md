@@ -1,7 +1,7 @@
 ---
-title: SSL/TLS standardmäßig
+title: SSL/TLS By Default
 seo-title: SSL/TLS By Default
-description: Erfahren Sie, wie Sie in AEM SSL standardmäßig verwenden.
+description: Erfahren Sie, wie Sie SSL by Default in AEM verwenden.
 seo-description: Learn how to use SSL by Default in AEM.
 uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
 contentOwner: User
@@ -12,21 +12,21 @@ discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
 source-git-commit: 9273282b26aeab5f65f0f05aa8ad754962dc59ec
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '853'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
-# SSL/TLS standardmäßig{#ssl-tls-by-default}
+# SSL/TLS By Default{#ssl-tls-by-default}
 
-Im Bestreben, die Sicherheit von AEM kontinuierlich weiter zu verbessern, hat Adobe eine Funktion namens „SSL By Default“ (SSL als Standard) eingeführt. Der Zweck besteht darin, die Verwendung von HTTPS zur Verbindung mit AEM Instanzen zu fördern.
+Im Bestreben, die Sicherheit von AEM kontinuierlich weiter zu verbessern, hat Adobe eine Funktion namens „SSL By Default“ (SSL als Standard) eingeführt. Der Zweck besteht darin, die Verwendung von HTTPS für die Verbindung mit AEM-Instanzen zu fördern.
 
-## SSL/TLS standardmäßig aktivieren {#enabling-ssl-tls-by-default}
+## Aktivieren von „SSL/TLS By Default“ {#enabling-ssl-tls-by-default}
 
-Sie können mit der Konfiguration von SSL/TLS standardmäßig beginnen, indem Sie in Ihrem AEM-Startbildschirm auf die entsprechende Posteingangsnachricht klicken. Um den Posteingang zu erreichen, drücken Sie auf das Glockensymbol in der oberen rechten Ecke des Bildschirms. Klicken Sie dann auf **Alle anzeigen**. Dadurch wird eine Liste aller in einer Listenansicht bestellten Warnungen angezeigt.
+Sie können mit der Konfiguration von „SSL/TLS By Default“ beginnen, indem Sie in Ihrem AEM-Startbildschirm auf die entsprechende Posteingangsnachricht klicken. Um den Posteingang zu erreichen, klicken Sie auf das Glockensymbol in der oberen rechten Ecke des Bildschirms. Klicken Sie dann auf **Alle anzeigen**. Dadurch wird eine Liste aller bestellten Warnungen in einer Listenansicht angezeigt.
 
-Wählen Sie in der Liste die **HTTPS konfigurieren** alert:
+Wählen und öffnen Sie in der Liste die Warnung **HTTPS konfigurieren**:
 
 ![chlimage_1-103](assets/chlimage_1-103.png)
 
@@ -40,7 +40,7 @@ Ein Service-Benutzer mit dem Namen **ssl-service** wurde für diese Funktion ers
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Nachdem Sie die Anmeldedaten eingegeben haben, klicken Sie auf **Nächste** in der oberen rechten Ecke der Seite. Laden Sie dann den zugehörigen privaten Schlüssel und das zugehörige Zertifikat für die SSL-/TLS-Verbindung hoch.
+1. Nachdem Sie die Anmeldedaten eingegeben haben, klicken Sie auf **Weiter** in der rechten oberen Ecke der Seite. Laden Sie dann den zugehörigen privaten Schlüssel und das zugehörige Zertifikat für die SSL/TLS-Verbindung hoch.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -52,11 +52,11 @@ Ein Service-Benutzer mit dem Namen **ssl-service** wurde für diese Funktion ers
 
    ![screen_shot_2018-07-25at31658pm](assets/screen_shot_2018-07-25at31658pm.png)
 
-## Standardmäßige Automatisierung von SSL/TLS {#automating-ssl-tls-by-default}
+## Automatisierung von „SSL/TLS By Default“ {#automating-ssl-tls-by-default}
 
-Es gibt drei Möglichkeiten, SSL/TLS standardmäßig zu automatisieren.
+Es gibt drei Möglichkeiten, „SSL/TLS By Default“ automatisch zu konfigurieren.
 
-### Über HTTP-POST {#via-http-post}
+### Über eine HTTP-POST-Anfrage {#via-http-post}
 
 Die erste Methode umfasst das Posten auf dem SSLSetup-Server, der vom Konfigurationsassistenten verwendet wird:
 
@@ -64,7 +64,7 @@ Die erste Methode umfasst das Posten auf dem SSLSetup-Server, der vom Konfigurat
 POST /libs/granite/security/post/sslSetup.html
 ```
 
-Sie können die folgende Payload in Ihrer POST verwenden, um die Konfiguration zu automatisieren:
+Sie können die folgende Payload in Ihrem POST verwenden, um die Konfiguration zu automatisieren:
 
 ```xml
 ------WebKitFormBoundaryyBO4ArmGlcfdGDbs
@@ -150,16 +150,16 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-### Über Package {#via-package}
+### Über ein Paket {#via-package}
 
-Alternativ können Sie die SSL-/TLS-Einrichtung automatisieren, indem Sie ein Paket hochladen, das bereits die folgenden erforderlichen Elemente enthält:
+Alternativ können Sie die SSL/TLS-Einrichtung automatisieren, indem Sie ein Paket hochladen, das bereits die folgenden erforderlichen Elemente enthält:
 
-* Der Keystore des ssl-service-Benutzers. Dies befindet sich unter */home/users/system/security/ssl-service/keystore* im Repository.
+* Der Keystore des SSL-Service-Benutzers bzw. -Benutzerin. Dieser befindet sich unter */home/users/system/security/ssl-service/keystore* im Repository.
 * Die `GraniteSslConnectorFactory`-Konfiguration
 
 ### Generieren eines Paares aus privatem Schlüssel/Zertifikat für die Verwendung im Assistenten {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
-Unten finden Sie ein Beispiel für die Erstellung eines selbstsignierten Zertifikats im DER-Format, das der SSL-/TLS-Assistent verwenden kann. Installieren Sie OpenSSL basierend auf dem Betriebssystem, öffnen Sie die OpenSSL-Eingabeaufforderung und ändern Sie das Verzeichnis in den Ordner, in dem Sie den privaten Schlüssel/das Zertifikat generieren möchten.
+Nachstehend finden Sie ein Beispiel für das Erstellen eines selbstsignierten Zertifikats im DER-Format, das der SSL/TSL-Assistent verwenden kann. Installieren Sie OpenSSL basierend auf dem Betriebssystem, öffnen Sie die OpenSSL-Eingabeaufforderung und ändern Sie das Verzeichnis in den Ordner, in dem Sie den privaten Schlüssel/das Zertifikat generieren möchten.
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ Unten finden Sie ein Beispiel für die Erstellung eines selbstsignierten Zertifi
    openssl req -sha256 -new -key localhostprivate.key -out localhost.csr -subj "/CN=localhost"
    ```
 
-1. Generieren Sie das SSL-/TLS-Zertifikat und signieren Sie es mit dem privaten Schlüssel. In diesem Beispiel läuft in einem Jahr ab:
+1. Generieren Sie das SSL/TLS-Zertifikat und signieren Sie es mit dem privaten Schlüssel. In diesem Beispiel läuft es in einem Jahr ab:
 
    ```shell
    openssl x509 -req -days 365 -in localhost.csr -signkey localhostprivate.key -out localhost.crt
@@ -190,7 +190,7 @@ Konvertieren Sie den privaten Schlüssel in das DER-Format. Dies liegt daran, da
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-Laden Sie abschließend die **localhostprivate.der** als privaten Schlüssel und **localhost.crt** als SSL-/TLS-Zertifikat in Schritt 2 des grafischen SSL/TLS-Assistenten, der am Anfang dieser Seite beschrieben wird.
+Laden Sie abschließend in Schritt 2 des visuellen SSL/TLS-Assistenten, der am Anfang dieser Seite beschrieben wird, die Datei **localhostprivate.der** als privaten Schlüssel und **localhost.crt** als SSL-/TLS-Zertifikat hoch.
 
 ### Aktualisieren der SSL-/TLS-Konfiguration über cURL {#updating-the-ssl-tls-configuration-via-curl}
 
@@ -198,7 +198,7 @@ Laden Sie abschließend die **localhostprivate.der** als privaten Schlüssel und
 >
 >Eine zentrale Liste mit nützlichen cURL-Befehlen in AEM finden Sie unter [Verwenden von cURL in AEM](https://helpx.adobe.com/de/experience-manager/6-4/sites/administering/using/curl.html).
 
-Sie können die SSL-/TLS-Konfiguration auch mithilfe des cURL-Tools automatisieren. Sie können dies tun, indem Sie die Konfigurationsparameter an diese URL senden:
+Sie können die SSL-/TLS-Konfiguration auch mithilfe des cURL-Tools automatisieren. Sie können dies tun, indem Sie die Konfigurationsparameter an die folgende URL senden:
 
 *https://&lt;Server-Adresse>:&lt;Serverport>/libs/granite/security/post/sslSetup.html*
 
@@ -221,7 +221,7 @@ Nachfolgend sind die Parameter aufgeführt, mit denen Sie die zahlreichen Einste
 
 >[!NOTE]
 >
->Die schnellste Möglichkeit, cURL zur Automatisierung der SSL/TLS-Konfiguration auszuführen, ist der Ordner, in dem sich die DER- und CRT-Dateien befinden. Alternativ dazu können Sie den vollständigen Pfad in den Argumenten `privatekeyFile` und „certificateFile“ festlegen.
+>Die schnellste Art, cURL auszuführen, um die SSL-/TLS-Konfiguration zu automatisieren, ist über den Ordner, in dem sich die DER- und CRT-Dateien befinden. Alternativ dazu können Sie den vollständigen Pfad in den Argumenten `privatekeyFile` und „certificateFile“ festlegen.
 >
 >Sie müssen außerdem authentifiziert werden, damit die Aktualisierung durchgeführt werden kann. Stellen Sie daher sicher, dass Sie den cURL-Befehl mit dem Parameter `-u user:passeword` anhängen.
 >
@@ -231,9 +231,9 @@ Nachfolgend sind die Parameter aufgeführt, mit denen Sie die zahlreichen Einste
 curl -u user:password -F "keystorePassword=password" -F "keystorePasswordConfirm=password" -F "truststorePassword=password" -F "truststorePasswordConfirm=password" -F "privatekeyFile=@localhostprivate.der" -F "certificateFile=@localhost.crt" -F "httpsHostname=host.example.com" -F "httpsPort=8443" https://host:port/libs/granite/security/post/sslSetup.html
 ```
 
-#### Mehrere Zertifikate mit cURL {#multiple-certificates-using-curl}
+#### Mehrere Zertifikate verwenden cURL {#multiple-certificates-using-curl}
 
-Sie können dem Servlet eine Kette von Zertifikaten senden, indem Sie den Parameter certificateFile wie folgt wiederholen:
+Sie können dem Servlet eine Kette von Zertifikaten senden, indem Sie den Parameter „certificateFile“ wie folgt wiederholen:
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
@@ -242,9 +242,9 @@ Stellen Sie nach Ausführung des Befehls sicher, dass alle Zertifikate an den Ke
 
 ### Aktivieren einer TLS 1.3-Verbindung {#enabling-tls-connection}
 
-1. Navigieren Sie zur Web-Konsole .
-1. Navigieren Sie dann zu **OSGi** - **Konfiguration** - **Adobe Granite SSL Connector Factory**
-1. Navigieren Sie zu **Enthaltene Chiffre-Suites** und fügen Sie die folgenden Einträge hinzu. Sie können jede Ergänzung bestätigen, indem Sie auf &quot;**+**&quot; auf der linken Seite des Felds, nachdem jede in hinzugefügt wurde:
+1. Wechseln Sie zur Web-Konsole.
+1. Navigieren Sie dann zu **OSGi** –> **Konfiguration** –> **Adobe Granite SSL Connector Factory**.
+1. Gehen Sie zum Feld **Enthaltene Chiffre-Suites** und fügen Sie die folgenden Einträge hinzu. Sie können jede Ergänzung bestätigen, indem Sie die Schaltfläche „**+**“ auf der linken Seite des Felds betätigen, nachdem jede hinzugefügt wurde:
 
    * `TLS_AES_256_GCM_SHA384`
    * `TLS_AES_128_GCM_SHA256`
