@@ -1,11 +1,11 @@
 ---
-title: Komprimieren und Dekomprimieren von Dateien mit einem benutzerdefinierten AEM Forms on JEE-DSC
-description: Erfahren Sie, wie Sie Dateien mit einem benutzerdefinierten AEM Forms on JEE DSC komprimieren und entpacken können.
+title: Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms on JEE
+description: Erfahren Sie, wie Sie Dateien mit einem benutzerdefinierten DSC von AEM Forms on JEE komprimieren und entpacken können.
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '485'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
