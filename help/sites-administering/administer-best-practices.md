@@ -1,5 +1,5 @@
 ---
-title: Best Practices, die Administratoren bei der Einrichtung und Ausführung unterstützen
+title: Best Practices, die Admins bei der Einrichtung und Ausführung unterstützen
 description: Erhalten Sie Informationen zu Best Practices, die von den Entwicklungs- und Beratungs-Teams von Adobe zusammengestellt wurden, um Admins einen schnellen Einstieg zu ermöglichen.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
@@ -9,15 +9,15 @@ topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '531'
-ht-degree: 57%
+ht-degree: 100%
 
 ---
 
 # Best Practices{#best-practices}
 
-Best Practices beschreiben, wie AEM so effizient und wirkungsvoll wie möglich entwickelt, verwaltet oder verwendet werden. Diese wachsende Themenliste umfasst verschiedene Bereiche in AEM.
+In den Best Practices wird beschrieben, wie AEM am effizientesten und wirkungsvollsten entwickelt, verwaltet und verwendet wird. Diese wachsende Themenliste umfasst verschiedene Bereiche in AEM.
 
 In den folgenden Bereichen finden Sie Dokumentationen zu Best Practices:
 
@@ -30,7 +30,7 @@ Best Practices für die Bearbeitung, Bereitstellung, Pflege und Entwicklung find
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
 * [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
 
-Spezifische Dokumente werden in den folgenden Tabellen beschrieben und mit ihnen verknüpft.
+Spezifische Dokumente werden in den folgenden Tabellen beschrieben und verlinkt.
 
 ## Assets {#assets}
 
@@ -46,17 +46,17 @@ Best Practices rund um Assets, einschließlich der Dynamic Media-Funktionen und 
   <tr>
    <td>Organisieren Ihres Inhalts (Ordnerhierarchie)</td>
    <td><a href="/help/assets/organize-assets.md">Best Practices für die Dateiverwaltung</a></td>
-   <td>Ein Großteil der Verarbeitungsprofile ist ordnerbasiert, da Video, Metadaten und Bildverarbeitung immer auf Ordner angewendet werden. In diesem Best Practice-Dokument wird beschrieben, wie Sie Ihre Ordnerhierarchie definieren und einrichten, da die Hierarchie erhebliche Auswirkungen auf die Verarbeitung von Inhalten hat. </td>
+   <td>Ein Großteil der Verarbeitungsprofile ist ordnerbasiert, da die Verarbeitung von Video, Metadaten und Bildern immer auf Ordner angewendet werden. In diesem Best Practice-Dokument wird beschrieben, wie Sie Ihre Ordnerhierarchie definieren und einrichten, da die Hierarchie erhebliche Auswirkungen auf die Verarbeitung von Inhalten hat. </td>
   </tr>
   <tr>
    <td>Integrieren von Scene7 und AEM</td>
    <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Best Practices für das Integrieren von Scene7 in AEM</a></td>
-   <td><p>Beschreibt, wann das Abruf-Importtool aktiviert werden soll, wie Sie Ihre Integration testen können und wann der Inhaltsbrowser im Vergleich zu einem direkten Upload in Assets verwendet werden soll.</p> </td>
+   <td><p>Beschreibt, wann das Abruf-Importtool aktiviert werden soll, wie Sie Ihre Integration testen können und wann der Inhalts-Browser im Vergleich zu einem direkten Upload in Assets verwendet werden soll.</p> </td>
   </tr>
   <tr>
    <td>Optionen für Bildvorgaben</td>
    <td>Grundlegendes zu <a href="/help/assets/managing-image-presets.md#understanding-image-presets">Bildvorgaben</a> und <a href="/help/assets/managing-image-presets.md#image-preset-options">Best Practices zu Bildvorgaben</a></td>
-   <td>Als Teil der Dokumentation zu <a href="/help/assets/managing-image-presets.md">Verwalten von Bildvorgaben</a>in diesen Themen wird beschrieben, was Bildvorgaben sind, und Best Practices für die Auswahl von Bildvorgabenoptionen.</td>
+   <td>Als Teil der Dokumentation zum <a href="/help/assets/managing-image-presets.md">Verwalten von Bildvorgaben</a> beschreiben diese Themen, was Bildvorgaben sind und welche Best Practices es gibt, um Bildvorgabeoptionen auszuwählen.</td>
   </tr>
   <tr>
    <td>Dynamic Media im Vergleich zur direkten Integration in Scene7</td>
@@ -73,24 +73,24 @@ Für die Verwaltung und Bearbeitung von Website-Inhalten gelten folgende Best Pr
 <table>
  <tbody>
   <tr>
-   <td>DSGVO-Konformität</td>
+   <td>DSGVO-Compliance</td>
    <td><a href="/help/sites-administering/gdpr-compliance-sites.md">AEM Sites – DSGVO-Compliance</a></td>
-   <td>Die Datenschutz-Grundverordnung der Europäischen Union ist seit Mai 2018 in Kraft. AEM Sites entspricht der DSGVO. Diese Seite führt Kunden durch die Verfahren zur Verarbeitung von DSGVO-Anfragen in AEM Sites. Sie beschreibt den Speicherort der privaten Daten und wie diese manuell oder per Code entfernt werden können.</td>
+   <td>Die Datenschutz-Grundverordnung der Europäischen Union ist seit Mai 2018 in Kraft. AEM Sites ist konform mit der DSGVO. Auf dieser Seite werden die Verfahren zur Handhabung DSGVO-bezogener Anfragen in AEM Sites beschrieben. Sie beschreibt den Speicherort der privaten Daten und wie diese manuell oder per Code entfernt werden können.</td>
   </tr>
   <tr>
-   <td>Definieren Sie die Standard-Benutzeroberfläche für Ihre Instanz.</td>
+   <td>Legen Sie die Standard-Benutzeroberfläche für Ihre Instanz fest.</td>
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">Konfigurieren der Standard-Benutzeroberfläche für Ihre Instanz</a></p> </td>
-   <td>AEM verfügt über zwei Benutzeroberflächen: Touch-optimiert und klassisch. In diesem Abschnitt wird beschrieben, wie Sie die standardmäßige Benutzeroberfläche für Ihre Instanz definieren.</td>
+   <td>AEM verfügt über zwei Benutzeroberflächen: Touch-optimiert und klassisch. In diesem Abschnitt wird beschrieben, wie Sie die Standard-Benutzeroberfläche für Ihre Instanz festlegen.</td>
   </tr>
   <tr>
-   <td>Multi-Site-Management</td>
+   <td>Verwaltung mehrerer Websites</td>
    <td><a href="/help/sites-administering/msm-best-practices.md">Best Practices für MSM</a></td>
    <td>Hier sind die Best Practices für die Verwendung von MSM zur Automatisierung der Inhaltsbereitstellung beschrieben. </td>
   </tr>
   <tr>
    <td>Übersetzen von Inhalten</td>
    <td><a href="/help/sites-administering/tc-bp.md">Best Practices für die Übersetzung</a></td>
-   <td>Best Practices für die Planung und Implementierung Ihrer mehrsprachigen Site.</td>
+   <td>Best Practices für die Planung und Implementierung einer mehrsprachigen Site.</td>
   </tr>
   <tr>
    <td>Benutzerverwaltung</td>
