@@ -9,9 +9,9 @@ topic-tags: platform
 docset: aem65
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '145'
-ht-degree: 71%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 71%
 Das Integrations-Framework enthält eine Integrationsebene mit einer API. Dies ermöglicht Ihnen Folgendes:
 
 * ein eCommerce-System einbinden und Produktdaten in AEM abrufen
-* Erstellen AEM Komponenten für Commerce-Funktionen unabhängig von der jeweiligen eCommerce-Engine
+* erstellen von AEM Komponenten für Commerce-Funktionen, unabhängig von der jeweiligen eCommerce-Engine
 
 Weitere Informationen finden Sie unter:
 
@@ -39,7 +39,7 @@ Weitere Informationen finden Sie unter:
 
 ## API-Dokumentation {#api-documentation}
 
-Die eCommerce-API wird von den Paketen bereitgestellt:
+Die eCommerce-API wird von den folgenden Paketen bereitgestellt:
 
 `com.adobe.cq.commerce.*`
 
