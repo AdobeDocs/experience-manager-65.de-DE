@@ -12,27 +12,27 @@ docset: aem65
 role: Admin
 exl-id: 3f150dd5-f486-4f16-9de9-035cde53b034
 source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1059'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
 # Allgemeine Überlegungen zur Sicherheit von AEM Forms on JEE{#general-security-considerations-for-aem-forms-on-jee}
 
-Dieser Artikel enthält einleitende Informationen, die Sie bei der Vorbereitung auf die Härtung Ihrer AEM Forms-Umgebung unterstützen. Dazu gehören Informationen zu AEM Forms on JEE, zum Betriebssystem, zum Anwendungsserver und zur Datenbanksicherheit. Sie sollten diese Informationen lesen, bevor Sie Ihre Umgebung sperren.
+Dieser Artikel bietet einleitende Informationen, die Sie bei der Vorbereitung auf die Härtung Ihrer AEM Forms-Umgebung unterstützen. Er enthält voraussetzungsvolle Informationen über AEM Forms on JEE, Betriebssystem, Anwendungs-Server und Datenbanksicherheit. Sie sollten diese Informationen lesen, bevor Sie Ihre Umgebung sperren.
 
 ## Anbieterspezifische Sicherheitsinformationen {#vendor-specific-security-information}
 
-Dieser Abschnitt enthält sicherheitsbezogene Informationen zu Betriebssystemen, Anwendungsservern und Datenbanken, die in Ihre AEM Forms on JEE-Lösung integriert sind.
+Dieser Abschnitt enthält sicherheitsbezogene Informationen zu Betriebssystemen, Anwendungs-Servern und Datenbanken, die in Ihre AEM Forms on JEE-Lösung integriert sind.
 
-Verwenden Sie die Links in diesem Abschnitt, um herstellerspezifische Sicherheitsinformationen für Ihr Betriebssystem, Ihre Datenbank und Ihren Anwendungsserver zu finden.
+Verwenden Sie die Links in diesem Abschnitt, um anbieterspezifische Sicherheitsinformationen für Ihr Betriebssystem, Ihre Datenbank und Ihren Anwendungs-Server zu finden.
 
 ### Informationen zur Betriebssystemsicherheit {#operating-system-security-information}
 
 Berücksichtigen Sie bei der Absicherung Ihres Betriebssystems sorgfältig die vom Hersteller Ihres Betriebssystems beschriebenen Maßnahmen, einschließlich der folgenden:
 
-* Definieren und Steuern von Benutzern, Rollen und Berechtigungen
+* Definieren und Steuern von Benutzenden, Rollen und Berechtigungen
 * Überwachungsprotokolle und Prüfprotokolle
 * Entfernen unnötiger Dienste und Anwendungen
 * Sichern von Dateien
@@ -49,7 +49,7 @@ Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Betriebssystemen
  <tbody>
   <tr>
    <td><p>IBM® AIX® 7.2</p> </td>
-   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM® AIX® Security Benefits</a></p> </td>
+   <td><p><a href="https://www.ibm.com/support/knowledgecenter/ssw_aix_72/com.ibm.aix.security/security-kickoff.htm" target="_blank">IBM® AIX®-Sicherheitsvorteile</a></p> </td>
   </tr>
   <tr>
    <td><p>Microsoft® Windows Server® 2016 </p> </td>
@@ -57,7 +57,7 @@ Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Betriebssystemen
   </tr>
   <tr>
    <td><p>Red Hat® Linux® AP oder ES</p> </td>
-   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat® Enterprise Linux® Security Guide</a></p> </td>
+   <td><p><a href="https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/pdf/security_guide/Red_Hat_Enterprise_Linux-7-Security_Guide-en-US.pdf" target="_blank">Red Hat® Enterprise Linux®-Sicherheitshandbuch</a></p> </td>
   </tr>
   <tr>
    <td><p>Sun Solaris™ 11</p> </td>
@@ -65,7 +65,7 @@ Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Betriebssystemen
   </tr>
   <tr>
    <td>Oracle Linux® 7 Update 3</td>
-   <td><a href="https://docs.oracle.com/en/operating-systems/oracle-linux/7/security/" target="_blank">Security Guide for Release 7</a><br /> </td>
+   <td><a href="https://docs.oracle.com/de/operating-systems/oracle-linux/7/security/" target="_blank">Security Guide for Release 7</a><br /> </td>
   </tr>
   <tr>
    <td>CentOS 7<sup> </sup></td>
@@ -78,15 +78,15 @@ Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Betriebssystemen
 
 Berücksichtigen Sie bei der Sicherung Ihres Anwendungs-Servers sorgfältig die von Ihrem Serveranbieter beschriebenen Maßnahmen, einschließlich der folgenden:
 
-* Verwenden eines nicht offensichtlichen Benutzernamens für Administratoren
+* Verwenden eines nicht offensichtlichen Benutzernamens für Admins
 * Deaktivieren unnötiger Dienste
-* Schützen des Konsolenmanagers
+* Schützen des Konsolen-Managers
 * Aktivieren sicherer Cookies
 * Schließen nicht benötigter Ports
-* Einschränken von Clients nach IP-Adressen oder Domänen
+* Einschränken von Clients nach IP-Adressen oder Domains
 * Verwenden von Java™ Security Manager zum programmgesteuerten Einschränken von Berechtigungen
 
-Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Anwendungsservern finden Sie in den nachfolgend aufgeführten Ressourcen.
+Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Betriebssystemen finden Sie in der nachfolgenden Tabelle.
 
 <table>
  <thead>
@@ -98,7 +98,7 @@ Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Anwendungsserver
  <tbody>
   <tr>
    <td><p>Oracle WebLogic®</p> </td>
-   <td><p>Suchen Sie nach WebLogic Security unter <a href="https://docs.oracle.com/">https://docs.oracle.com/</a>.</p> </td>
+   <td><p>Suchen Sie unter <a href="https://docs.oracle.com/de">https://docs.oracle.com/</a> nach „Understanding WebLogic Security“.</p> </td>
   </tr>
   <tr>
    <td><p>IBM® WebSphere®</p> </td>
@@ -116,11 +116,11 @@ Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Anwendungsserver
 Berücksichtigen Sie bei der Sicherung Ihrer Datenbank die von Ihrem Datenbankanbieter beschriebenen Maßnahmen, einschließlich der folgenden:
 
 * Einschränken von Vorgängen mit Zugriffssteuerungslisten (ACLs)
-* Verwendung nicht standardmäßiger Anschlüsse
-* Datenbank hinter einer Firewall ausblenden
+* Verwenden von nicht standardmäßigen Ports
+* Schützen der Datenbank durch eine Firewall
 * Verschlüsseln sensibler Daten vor dem Schreiben in die Datenbank (siehe die Dokumentation des Datenbankherstellers)
 
-Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Datenbanken finden Sie in den nachfolgend aufgeführten Ressourcen.
+Sicherheitsinformationen zu Datenbanken, die von AEM Forms on JEE unterstützt werden, finden Sie in den Ressourcen in dieser Tabelle.
 
 <table>
  <thead>
@@ -149,7 +149,7 @@ Sicherheitsinformationen zu von AEM Forms on JEE unterstützten Datenbanken find
  </tbody>
 </table>
 
-In dieser Tabelle werden die Standardanschlüsse beschrieben, die während des AEM Forms on JEE-Konfigurationsprozesses geöffnet sein müssen. Wenn Sie die Verbindung über HTTPS herstellen, passen Sie Ihre Anschlussinformationen und IP-Adressen entsprechend an. Weitere Informationen zum Konfigurieren von Anschlüssen finden Sie im Dokument *Installieren und Bereitstellen von AEM Forms on JEE* für Ihren Anwendungsserver.
+In dieser Tabelle werden die Standardanschlüsse beschrieben, die während des Konfigurationsprozesses von AEM Forms on JEE geöffnet sein müssen. Wenn Sie die Verbindung über HTTPS herstellen, passen Sie Ihre Anschlussinformationen und IP-Adressen entsprechend an. Weitere Informationen zum Konfigurieren von Anschlüssen finden Sie im Dokument *Installieren und Bereitstellen von AEM Forms on JEE* für Ihren Anwendungsserver.
 
 <table>
  <thead>
@@ -169,11 +169,11 @@ In dieser Tabelle werden die Standardanschlüsse beschrieben, die während des A
   </tr>
   <tr>
    <td>&gt;<p>WebLogic Managed Server</p> </td>
-   <td><p>Wird vom Administrator während der Konfiguration festgelegt</p> </td>
+   <td><p>Wird von Admin während der Konfiguration festgelegt</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>WebSphere®</p> </td>
-   <td><p>9060, wenn Global Security aktiviert ist, lautet der standardmäßige SSL-Anschlusswert 9043.</p> <p>9080</p> </td>
+   <td><p>9060; wenn die globale Sicherheit aktiviert wurde, wird als standardmäßiger SSL-Anschluss der Anschluss 9043 verwendet.</p> <p>9080</p> </td>
   </tr>
   <tr>
    <td>&gt;<p>BAM-Server</p> </td>
@@ -206,32 +206,32 @@ In dieser Tabelle werden die Standardanschlüsse beschrieben, die während des A
  </tbody>
 </table>
 
-### JBoss® für die Verwendung eines nicht standardmäßigen HTTP-Ports konfigurieren {#configuring-jboss-to-use-a-non-default-http-port}
+### Konfigurieren von JBoss® zur Verwendung eines nicht standardmäßigen HTTP-Ports {#configuring-jboss-to-use-a-non-default-http-port}
 
-JBoss® Application Server verwendet 8080 als standardmäßigen HTTP-Port. JBoss® verfügt auch über vorkonfigurierte Anschlüsse 8180, 8280 und 8380, die in der Datei jboss-service.xml auskommentiert sind. Wenn Sie auf Ihrem Computer über eine Anwendung verfügen, die bereits diesen Anschluss verwendet, ändern Sie den von AEM Forms on JEE verwendeten Anschluss, indem Sie die folgenden Schritte ausführen:
+Der Anwendungs-Server von JBoss® verwendet 8080 als standardmäßigen HTTP-Port. JBoss® verfügt außerdem über die vorkonfigurierten Ports 8180, 8280 und 8380, die in der Datei „jboss-service.xml“ auskommentiert sind. Wenn Sie auf Ihrem Computer über eine Anwendung verfügen, die bereits diesen Port verwendet, ändern Sie den von AEM Forms on JEE verwendeten Port, indem Sie die folgenden Schritte ausführen:
 
 1. Öffnen Sie die folgende Datei zum Bearbeiten:
 
-   Installation auf einem Einzelserver: [JBoss® root]/standalone/configuration/standalone.xml
+   Einzel-Server-Installation: [JBoss®-Stamm]/standalone/configuration/standalone.xml
 
-   Cluster-Installationen: [JBoss® root]/domain/configuration/domain.xml
+   Cluster-Installationen: [JBoss®-Stamm]/domain/configuration/domain.xml
 
-1. Ändern Sie den Wert von **port** -Attribut im **&lt;socket-binding>** -Tag an eine benutzerdefinierte Portnummer. Im Folgenden wird beispielsweise Port 8090 verwendet:
+1. Ändern Sie den Wert des Attributs **Port** im Tag **&lt;socket-binding>** in eine benutzerdefinierte Port-Nummer. Im Folgenden wird beispielsweise Port 8090 verwendet:
 
    &lt;socket-binding name=&quot;http&quot; port=&quot;8090&quot;/>
 
 1. Speichern und schließen Sie die Datei.
-1. Starten Sie den JBoss®-Anwendungsserver neu.
+1. Starten Sie den JBoss®-Anwendungs-Server neu.
 
-## Überlegungen zur Sicherheit von AEM Forms on JEE {#aem-forms-on-jee-security-considerations}
+## Sicherheitsüberlegungen zu AEM Forms on JEE {#aem-forms-on-jee-security-considerations}
 
-In diesem Abschnitt werden einige AEM Forms on JEE-spezifische Sicherheitsprobleme beschrieben, die Sie kennen sollten.
+In diesem Abschnitt werden einige für AEM Forms on JEE spezifische Sicherheitsprobleme beschrieben, die Sie kennen sollten.
 
-### In der Datenbank nicht verschlüsselte E-Mail-Anmeldeinformationen {#email-credentials-not-encrypted-in-database}
+### Keine Verschlüsselung von E-Mail-Anmeldeinformationen in der Datenbank {#email-credentials-not-encrypted-in-database}
 
-Die von Anwendungen gespeicherten E-Mail-Anmeldeinformationen werden nicht verschlüsselt, bevor sie in der AEM Forms on JEE-Datenbank gespeichert werden. Wenn Sie einen Dienstendpunkt für die Verwendung von E-Mails konfigurieren, werden Kennwortinformationen, die im Rahmen dieser Endpunktkonfiguration verwendet werden, nicht verschlüsselt, wenn sie in der Datenbank gespeichert werden.
+Die von Applikationen gespeicherten E-Mail-Anmeldeinformationen werden nicht verschlüsselt, bevor sie in der Datenbank von AEM Forms on JEE gespeichert werden. Wenn Sie einen Dienstendpunkt für die Verwendung von E-Mails konfigurieren, werden Passwortinformationen, die im Rahmen dieser Endpunktkonfiguration verwendet werden, nicht verschlüsselt, wenn sie in der Datenbank gespeichert werden.
 
-### Sensitive Inhalte für Rights Management in der Datenbank {#sensitive-content-for-rights-management-in-the-database}
+### Sensible Inhalte für Rights Management in der Datenbank {#sensitive-content-for-rights-management-in-the-database}
 
 AEM Forms on JEE verwendet die AEM Forms on JEE-Datenbank, um vertrauliche Informationen über Dokumentschlüssel und anderes kryptographisches Material zu speichern, das für Richtliniendokumente verwendet wird. Wenn Sie die Datenbank gegen unberechtigten Zugriff schützen, erhöht dies den Schutz dieser sensiblen Informationen.
 
@@ -243,10 +243,10 @@ Die Datei lc_[Datenbank].xml sollte kein Kennwort in unverschlüsseltem Textform
 
 >[!NOTE]
 >
->Das AEM Forms on JEE JBoss® Turnkey-Installationsprogramm verschlüsselt das Datenbankkennwort.
+>Das AEM Forms on JEE JBoss® Turnkey-Installationsprogramm verschlüsselt das Datenbankpasswort.
 
-IBM® WebSphere® Application Server und Oracle WebLogic Server verschlüsseln möglicherweise standardmäßig Datenquellenkennwörter. Sie sollten jedoch die Dokumentation für Ihren Anwendungsserver mitteilen, um sicherzustellen, dass dies geschieht.
+Bei IBM® WebSphere® Anwendungs-Server und Oracle WebLogic Server werden Datenquellenkennwörter eventuell standardmäßig verschlüsselt. Sie sollten sich jedoch anhand der Dokumentation Ihres Anwendungs-Servers vergewissern, dass eine Verschlüsselung erfolgt.
 
 ### Schutz des in Trust Store gespeicherten privaten Schlüssels {#protecting-the-private-key-stored-in-trust-store}
 
-Die privaten Schlüssel oder Berechtigungen, die in Trust Store importiert wurden, werden in der AEM Forms on JEE-Datenbank gespeichert. Um die Datenbank zu schützen und den Zugriff auf bestimmte Administratoren zu beschränken, treffen Sie geeignete Vorkehrungen.
+Die privaten Schlüssel oder Berechtigungen, die in Trust Store importiert wurden, werden in der Datenbank von AEM Forms on JEE gespeichert. Um die Datenbank zu schützen und den Zugriff auf bestimmte Admins zu beschränken, treffen Sie geeignete Vorkehrungen.
