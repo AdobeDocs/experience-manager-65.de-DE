@@ -10,9 +10,9 @@ discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
 source-git-commit: e147605ff4d5c3d2403632285956559db235c084
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1512'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -20,11 +20,11 @@ ht-degree: 68%
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-Dieses Tutorial ist ein Schritt im [Erstellen Ihres ersten adaptiven Formulars](../../forms/using/create-your-first-adaptive-form.md) Reihe. Es wird empfohlen, der Reihe in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, auszuführen und zu demonstrieren.
+Dieses Tutorial ist ein Teil der Serie [Erstellen Ihres ersten adaptives Formulars](../../forms/using/create-your-first-adaptive-form.md). Es wird empfohlen, die Serie in chronologischer Reihenfolge zu durchlaufen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, durchzuführen und zu demonstrieren.
 
 ## Über das Tutorial {#about-the-tutorial}
 
-Mit dem AEM [!DNL Forms]-Datenintegrationsmodul können Sie ein Formulardatenmodell aus verschiedenen Backend-Datenquellen wie AEM-Benutzerprofil, RESTful-Web-Services, SOAP-basierten Web-Services, OData-Services und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und Dienste in einem Formulardatenmodell konfigurieren und es mit einem adaptiven Formular verknüpfen. Adaptive Formularfelder sind an Datenmodellobjekteigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab ausfüllen und die gesendeten Formulardaten zurück in das Datenmodellobjekt schreiben.
+Mit dem AEM [!DNL Forms]-Datenintegrationsmodul können Sie ein Formulardatenmodell aus verschiedenen Backend-Datenquellen wie AEM-Benutzerprofil, RESTful-Web-Services, SOAP-basierten Web-Services, OData-Services und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekt-Eigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
 
 Weitere Informationen zum Formulardatenmodell und zur Formulardatenintegration finden Sie unter [Datenintegration für AEM Forms](../../forms/using/data-integration.md).
 
@@ -49,15 +49,15 @@ Bevor Sie beginnen, stellen Sie Folgendes sicher:
 * OSGi-Paket für [!DNL MySQL]-JDBC-Treiber, wie unter [Bündeln der JDBC-Datenbanktreiber](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver) erläutert
 * Adaptives Formular, wie in der ersten Schulung [Erstellen eines adaptives Formulars](/help/forms/using/create-adaptive-form.md) erläutert
 
-## Schritt 1: MySQL-Datenbank als Datenquelle konfigurieren {#config-database}
+## Schritt 1: Konfigurieren der MySQL-Datenbank als Datenquelle {#config-database}
 
-Sie können verschiedene Arten von Datenquellen konfigurieren, um ein Formulardatenmodell zu erstellen. Für dieses Tutorial konfigurieren wir die MySQL-Datenbank, die Sie konfiguriert und mit Beispieldaten gefüllt haben. Informationen zu anderen unterstützten Datenquellen und deren Konfiguration finden Sie unter [AEM Forms-Datenintegration](../../forms/using/data-integration.md).
+Sie können verschiedene Arten von Datenquellen konfigurieren, um ein Formulardatenmodell zu erstellen. Für dieses Tutorial konfigurieren wir die MySQL-Datenbank, die Sie konfiguriert und mit Beispieldaten befüllt haben. Informationen zu anderen unterstützten Datenquellen und deren Konfiguration finden Sie unter [AEM Forms-Datenintegration](../../forms/using/data-integration.md).
 
 Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
 1. Installieren Sie den JDBC-Treiber für die [!DNL MySQL]-Datenbank als OSGi-Bundle:
 
-   1. Download [!DNL MySQL] OSGi Bundle des JDBC-Treibers aus `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
+   1. Laden Sie das [!DNL MySQL] JDBC-Treiber-OSGi-Bundle von `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html` herunter. <!-- This URL is an insecure link but using https is not possible -->
    1. Melden Sie sich bei der AEM [!DNL Forms]-Autoreninstanz als Administrator an und wechseln Sie zu den AEM-Web-Konsole-Bundles. Die Standard-URL lautet [http://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
    1. Tippen Sie auf **[!UICONTROL Installieren/Aktualisieren]**. Ein Dialogfeld [!UICONTROL Pakete hochladen/installieren] wird angezeigt.
@@ -67,11 +67,11 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 1. Konfigurieren Sie die [!DNL MySQL]-Datenbank als Datenquelle:
 
    1. Wechseln Sie zu AEM-Web-Konsole unter [http://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Suchen Sie die Konfiguration **Apache Sling Connection Pooled DataSource**. Tippen Sie, um die Konfiguration im Bearbeitungsmodus zu öffnen.
-   1. Geben Sie im Konfigurationsdialogfeld die folgenden Details an:
+   1. Suchen Sie die Konfiguration **Apache Sling Connection Pooled DataSource**. Tippen Sie auf die Konfiguration, um sie im Bearbeitungsmodus zu öffnen.
+   1. Geben Sie im Konfigurationsdialog die folgenden Details an:
 
       * **Datenquellenname:** Sie können einen beliebigen Namen angeben. beispielsweise **WeRetailMySQL**.
-      * **Name der DataSource-Diensteigenschaft**: Geben Sie den Namen der Diensteigenschaft an, die den DataSource-Namen enthält. Sie wird bei der Registrierung der Datenquelleninstanz als OSGi-Dienst angegeben. Beispiel: **datasource.name**.
+      * **Name der DataSource-Diensteigenschaft**: Geben Sie den Namen der Diensteigenschaft an, die den DataSource-Namen enthält. Er wird beim Registrieren der Datenquelleninstanz als OSGi-Dienst angegeben. Zum Beispiel: **datasource.name**.
       * **JDBC-Treiberklasse**: Geben Sie den Java-Klassennamen des JDBC-Treibers an. Geben Sie für die [!DNL MySQL]-Datenbank **com.mysql.jdbc.Driver** an.
       * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. Für eine [!DNL MySQL]-Datenbank, die auf Port 3306 und nach dem Schema WeRetail ausgeführt wird, lautet die URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
@@ -88,7 +88,7 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
       * **Test on Borrow**: Aktivieren Sie die Option **[!UICONTROL Test on Borrow]**.
       * **Test on Return:** Aktivieren Sie die Option **[!UICONTROL Test on Return.]**
-      * **Validierungsabfrage:** Geben Sie eine SQL SELECT-Abfrage an, um Verbindungen aus dem Pool zu überprüfen. Die Abfrage muss mindestens eine Zeile zurückgeben. Zum Beispiel **select &#42; from customerdetails**.
+      * **Validierungsabfrage**: Geben Sie eine SQL SELECT-Abfrage an, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Zum Beispiel **select &#42; from customerdetails**.
       * **Transaktions-Isolierung**: Setzen Sie den Wert auf **READ_COMMITTED**.
 
          Belassen Sie die anderen Eigenschaften auf den [Standardwerten](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) und tippen Sie auf **[!UICONTROL Speichern]**.
@@ -114,7 +114,7 @@ Gehen Sie folgendermaßen vor, um ein Formulardatenmodell zu erstellen:
 
 Das Formulardatenmodell **customer-shipping-billing-details** wird erstellt.
 
-## Schritt 3: Formulardatenmodell konfigurieren {#config-fdm}
+## Schritt 3: Konfigurieren des Formulardatenmodells {#config-fdm}
 
 Das Konfigurieren des Formulardatenmodells umfasst Folgendes:
 
@@ -140,12 +140,12 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
       * Ort
       * state
       * Postleitzahl
-   * **Services:**
+   * **Dienste:**
 
-      * get
+      * Abrufen
       * Aktualisieren
 
-   Tippen **Auswahl hinzufügen** , um ausgewählte Datenmodellobjekte und Dienste zum Formulardatenmodell hinzuzufügen.
+   Tippen Sie auf **Ausgewählte hinzufügen**, um dem Formulardatenmodell ausgewählte Datenmodellobjekte und Dienste hinzuzufügen.
 
    ![WeRetail-Schema](assets/weretail_schema_new.png)
 
@@ -153,14 +153,14 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
    >
    >Die Standard-Services zum Abrufen, Aktualisieren und Einfügen von JDBC-Datenquellen werden standardmäßig mit dem Formulardatenmodell bereitgestellt.
 
-1. Konfigurieren Sie Lese- und Schreibdienste für das Datenmodellobjekt.
+1. Konfigurieren Sie die Lese- und Schreibdienste für das Datenmodellobjekt.
 
-   1. Wählen Sie die **customerdetails** Datenmodellobjekt und tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**.
+   1. Wählen Sie das Datenmodellobjekt **customerdetails** aus und tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**.
    1. Wählen Sie aus dem Dropdown-Menü „Lesedienst“ **[!UICONTROL get.]** Das Argument **id**, das der Primärschlüssel im Datenmodellobjekt des „customerdetails“ ist, wird automatisch hinzugefügt. Tippen Sie auf ![aem_6_3_edit](assets/aem_6_3_edit.png) und konfigurieren Sie das Argument wie folgt.
 
       ![read-default](assets/read-default.png)
 
-   1. Wählen Sie auf ähnliche Weise **[!UICONTROL update]** als Schreibdienst. Die **customerdetails** -Objekt wird automatisch als Argument hinzugefügt. Das -Argument wird wie folgt konfiguriert.
+   1. Wählen Sie auf ähnliche Weise **[!UICONTROL Aktualisieren]** als Schreibdienst. Das Objekt **customerdetails** wird automatisch als Argument hinzugefügt. Das Argument wird wie folgt konfiguriert.
 
       ![write-default](assets/write-default.png)
 
@@ -179,7 +179,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
    1. Wählen Sie den Service **[!UICONTROL get]** und tippen Sie auf **[!UICONTROL Eigenschaften bearbeiten]**. Das Dialogfeld „Eigenschaften“ wird geöffnet.
    1. Geben Sie im Dialogfeld „Eigenschaften bearbeiten“ Folgendes an:
 
-      * **Titel**: Geben Sie den Titel des Dienstes an. Beispiel: Versandadresse abrufen.
+      * **Titel**: Geben Sie den Titel des Dienstes an. Zum Beispiel: Versandadresse abrufen.
       * **Beschreibung**: Geben Sie eine Beschreibung an, die eine detaillierte Funktionsweise des Dienstes enthält. Beispiel:
 
          Dieser Service ruft die Lieferadresse und andere Kundendaten aus der [!DNL MySQL]-Datenbank ab.
@@ -188,8 +188,8 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
 
          customerdetail schema
 
-      * **Array zurückgeben**: Deaktivieren Sie die **Array zurückgeben** -Option.
-      * **Argumente**: Argument auswählen namens **ID**.
+      * **Array zurückgeben**: Deaktivieren Sie die Option **Array zurückgeben**.
+      * **Argumente**: Wählen Sie das Argument mit dem Namen **ID** aus.
 
       Tippen Sie auf **[!UICONTROL Fertig]**. Der Dienst zum Abrufen von Kundendaten aus der MySQL-Datenbank ist konfiguriert.
 
@@ -217,7 +217,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
 
 
 
-Das Datenmodellobjekt und die Dienste im Formulardatenmodell werden konfiguriert. Sie können jetzt das Formulardatenmodell testen.
+Das Datenmodellobjekt und die Dienste im Formulardatenmodell sind konfiguriert. Sie können das Formulardatenmodell jetzt testen.
 
 ## Schritt 4: Testen des Formulardatenmodells {#test-fdm}
 
@@ -225,7 +225,7 @@ Sie können das Datenmodellobjekt und die Services testen, um zu überprüfen, o
 
 Führen Sie folgende Schritte aus, um den Test durchzuführen:
 
-1. Navigieren Sie zu **[!UICONTROL Modell]** auswählen, wählen Sie die **customerdetails** Datenmodellobjekt und tippen Sie auf **[!UICONTROL Testmodell-Objekt]**.
+1. Gehen Sie zur Registerkarte **[!UICONTROL Modell]**, wählen Sie das Datenmodellobjekt **customerdetails** aus und tippen Sie auf **[!UICONTROL Testmodellobjekt]**.
 1. Wählen Sie im Fenster [!UICONTROL Modell/Dienst testen] **[!UICONTROL Modellobjekt lesen]** aus der Dropdown-Liste **[!UICONTROL Modell/Dienst auswählen]** auswählen.
 1. Geben Sie im Abschnitt **customerdetails** einen Wert für das Argument **id** in der konfigurierten MySQL-Datenbank [!DNL MySQL] an und tippen Sie auf **[!UICONTROL Test]**.
 
@@ -233,9 +233,9 @@ Führen Sie folgende Schritte aus, um den Test durchzuführen:
 
    ![test-read-model](assets/test-read-model.png)
 
-1. Auf ähnliche Weise können Sie das Schreibmodellobjekt und die Dienste testen.
+1. Auf ähnliche Weise können Sie das Schreib-Modellobjekt und die Dienste testen.
 
-   Im folgenden Beispiel aktualisiert der Aktualisierungsdienst erfolgreich die Adressdetails für die ID 7102715 in der Datenbank.
+   Im folgenden Beispiel ändert der Aktualisierungsdienst erfolgreich die Adressdetails für die ID 7102715 in der Datenbank.
 
    ![test-write-model](assets/test-write-model.png)
 
