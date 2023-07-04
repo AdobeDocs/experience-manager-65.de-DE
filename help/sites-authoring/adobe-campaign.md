@@ -9,9 +9,9 @@ topic-tags: personalization
 discoiquuid: 28582d42-ef24-4ca1-98e6-e02248fc9dea
 exl-id: 0954fd5f-cd70-4f2f-85e9-df1c7a3037e1
 source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '126'
-ht-degree: 37%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Beachten Sie Folgendes:
 * [Erstellen von Adobe Campaign-Formularen in AEM](/help/sites-authoring/adobe-campaign-forms.md)
 * [Targeting von Adobe Campaign](/help/sites-authoring/target-adobe-campaign.md)
 
-Sie müssen zuvor [integrierte AEM mit Adobe Campaign](/help/sites-administering/campaign.md).
+Sie müssen zuvor [AEM mit Adobe Campaign integriert haben](/help/sites-administering/campaign.md).
 
 Wenn Sie Ihre Integrationen anpassen möchten, lesen Sie außerdem die folgenden Themen:
 
