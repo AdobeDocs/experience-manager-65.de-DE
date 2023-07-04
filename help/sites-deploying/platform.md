@@ -1,7 +1,7 @@
 ---
 title: Einführung in die AEM-Plattform
 seo-title: Introduction to the AEM Platform
-description: Dieser Artikel bietet einen allgemeinen Überblick über die AEM Plattform und ihre wichtigsten Komponenten.
+description: Dieses Kapitel gibt einen allgemeinen Überblick über die AEM-Plattform und ihre wichtigsten Komponenten.
 seo-description: This article provides a general overview of the AEM platform and its most important components.
 uuid: 214d4c49-1f5c-432c-a2c0-c1fbdceee716
 contentOwner: Guillaume Carlino
@@ -12,9 +12,9 @@ discoiquuid: fccf9a0f-ebab-45ab-8460-84c86b3c4192
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/introduction-to-oak
 exl-id: 8ee5f4ff-648d-45ea-a51e-894cd4385e62
 source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '754'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
@@ -28,10 +28,10 @@ Es handelt sich hierbei um die Nachfolgeversion von Jackrabbit 2 und die Lösun
 
 ## Designrichtlinien und -ziele {#design-principles-and-goals}
 
-Oak implementiert die [JSR-283](https://jcp.org/en/jsr/detail?id=283)-Spezifikation (JCR 2.0). Hauptziele sind:
+Oak implementiert die [JSR-283](https://jcp.org/en/jsr/detail?id=283)-Spezifikation (JCR 2.0). Die Hauptziele des Designs sind:
 
 * Bessere Unterstützung für große Repositorys
-* Mehrere verteilte Clusterknoten für hohe Verfügbarkeit
+* Mehrere verteilte Cluster-Knoten für hohe Verfügbarkeit
 * Bessere Leistung
 * Unterstützung für eine Vielzahl von untergeordneten Knoten und Zugriffssteuerungsebenen
 
@@ -43,13 +43,13 @@ Oak implementiert die [JSR-283](https://jcp.org/en/jsr/detail?id=283)-Spezifikat
 
 Die Speicherschicht hat folgenden Zweck:
 
-* Baummodell implementieren
-* Speicher als Plug-in einrichten
+* Implementieren des Baumstrukturmodells
+* Möglichkeit, Speicher anzuschließen
 * Bereitstellung eines Clustering-Mechanismus
 
 ### Oak Core {#oak-core}
 
-Der Oak-Kern fügt mehrere Ebenen zur Speicherschicht hinzu:
+Der Oak Core fügt mehrere Ebenen zur Speicherschicht hinzu:
 
 * Zugriffsstufenkontrollen
 * Suche und Indizierung
@@ -74,7 +74,7 @@ Derzeit stehen in AEM 6 zwei Speicher zur Verfügung: der **TAR-Speicher** und
 
 Der TAR-Speicher nutzt TAR-Dateien. Er speichert Inhalte als unterschiedliche Datensätze innerhalb größerer Segmente. Journale werden verwendet, um den aktuellen Status des Repositorys zu verfolgen.
 
-Es wurden mehrere grundlegende Designprinzipien entwickelt:
+Es gibt mehrere wichtige Design-Prinzipien, um die herum das System aufgebaut wurde:
 
 * **Unveränderliche Segmente**
 
@@ -84,15 +84,15 @@ Jedes Segment wird durch einen eindeutigen Bezeichner (Unique Identifier, UUID) 
 
 * **Lokalität**
 
-Verwandte Datensätze wie einen Knoten und seine unmittelbar untergeordneten Elemente werden im selben Segment gespeichert. Dadurch wird die Suche nach dem Repository beschleunigt und die meisten Cache-Fehler für typische Clients vermieden, die auf mehr als einen zugehörigen Knoten pro Sitzung zugreifen.
+Verwandte Datensätze wie etwa ein Knoten und dessen unmittelbare, untergeordnete Elemente werden normalerweise im selben Segment gespeichert. Dadurch wird die Suche nach dem Repository beschleunigt, und es werden die meisten Cache-Fehler für typische Clients vermieden, die auf mehr als einen zugehörigen Knoten pro Sitzung zugreifen.
 
 * **Kompaktheit**
 
-Die Formatierung von Datensätzen ist für die Größe optimiert, um IO-Kosten zu reduzieren und so viel Inhalt wie möglich in Caches zu integrieren.
+Die Formatierung von Datensätzen ist für die Größe optimiert, um E/A-Kosten zu reduzieren und so viel Inhalt wie möglich in Caches zu integrieren.
 
 ### Mongo-Speicher {#mongo-storage}
 
-Der MongoDB-Speicher verwendet MongoDB für Sharding und Clustering. Die Repository-Struktur wird in einer MongoDB-Datenbank gespeichert, wobei jeder Knoten ein separates Dokument ist.
+Der MongoDB-Speicher nutzt MongoDB für Sharding und Clustering. Die Repository-Struktur wird in einer MongoDB-Datenbank gespeichert, wobei jeder Knoten ein separates Dokument ist.
 
 Sie weist mehrere Besonderheiten auf:
 
@@ -102,19 +102,19 @@ Bei jeder Aktualisierung (Commit) von Inhalten wird eine neue Revision erstellt.
 
 1. Ein Zeitstempel, der von der Systemzeit des Geräts abgeleitet wird, auf dem er generiert wurde
 1. Ein Zähler, der Revisionen unterscheidet, die mit demselben Zeitstempel erstellt wurden
-1. Die Clusterknoten-ID, unter der die Revision erstellt wurde
+1. Die ID des Clusterknotens, unter dem die Revision erstellt wurde
 
-* Zweige
+* Verzweigungen
 
-Verzweigungen werden unterstützt, die es dem Client ermöglichen, mehrere Änderungen zu testen und sie mit einem einzigen Zusammenführungsaufruf sichtbar zu machen.
+Verzweigungen werden unterstützt, was es dem Client ermöglicht, mehrfache Änderungen zu testen und sie mit einem einzigen Zusammenführungsaufruf sichtbar zu machen.
 
 * Frühere Dokumente
 
 Der MongoDB-Speicher fügt bei jeder Änderung Daten zu einem Dokument hinzu. Daten werden jedoch nur gelöscht, wenn explizit eine Bereinigung ausgelöst wird. Alte Daten werden verschoben, wenn ein bestimmter Grenzwert erreicht wird. Frühere Dokumente enthalten nur unveränderliche Daten, d. h. sie enthalten nur übergebene und zusammengeführte Revisionen.
 
-* Clusterknotenmetadaten
+* Metadaten des Cluster-Knotens
 
-Daten zu aktiven und inaktiven Clusterknoten werden in der Datenbank gespeichert, um Cluster-Vorgänge zu erleichtern.
+Daten zu aktiven und inaktiven Cluster-Knoten werden in der Datenbank gespeichert, um Cluster-Vorgänge zu erleichtern.
 
 Eine typische AEM-Clusterkonfiguration mit MongoDB-Speicher:
 
@@ -122,15 +122,15 @@ Eine typische AEM-Clusterkonfiguration mit MongoDB-Speicher:
 
 ## Was unterscheidet sich von Jackrabbit 2? {#what-is-different-from-jackrabbit}
 
-Da Oak abwärtskompatibel mit dem JCR 1.0-Standard ist, gibt es fast keine Änderungen auf Benutzerebene. Es gibt jedoch einige merkliche Unterschiede, die Sie beim Einrichten einer Oak-basierten AEM-Installation berücksichtigen müssen:
+Da Oak abwärtskompatibel mit dem JCR 1.0-Standard ist, gibt es auf Benutzerebene fast keine Änderungen. Es gibt jedoch einige merkliche Unterschiede, die Sie beim Einrichten einer Oak-basierten AEM-Installation berücksichtigen müssen:
 
 * Indizes in Oak werden nicht automatisch erstellt. Daher müssen bei Bedarf benutzerdefinierte Indizes erstellt werden.
-* Im Gegensatz zu Jackrabbit 2, bei dem Sitzungen immer den aktuellen Status des Repositorys angegeben, zeigen Oak-Sitzungen eine unveränderte Ansicht des Repositorys zum Zeitpunkt, an dem die Sitzung erfasst wurde. Der Grund dafür ist das MVCC-Modell, auf dem Oak basiert.
+* Im Gegensatz zu Jackrabbit 2, wo Sitzungen immer den aktuellen Status des Repositorys angegeben, zeigen Oak-Sitzungen eine unveränderte Ansicht des Repositorys zum Zeitpunkt, an dem die Sitzung erfasst wurde. Der Grund dafür ist das MVCC-Modell, auf dem Oak basiert.
 * Same Name Siblings (SNS), d. h. untergeordnete Elemente mit demselben Namen, werden in Oak nicht unterstützt.
 
 ## Weitere plattformbezogene Dokumentation {#other-platform-related-documentation}
 
-Weitere Informationen zur AEM Plattform finden Sie in den folgenden Artikeln:
+Weitere Informationen zur AEM-Plattform finden Sie in den folgenden Artikeln:
 
 * [Konfigurieren von Knotenspeichern und Datenspeichern in AEM 6](/help/sites-deploying/data-store-config.md)
 * [Oak-Abfragen und Indizierung](/help/sites-deploying/queries-and-indexing.md)
