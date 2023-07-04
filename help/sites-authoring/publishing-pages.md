@@ -10,23 +10,23 @@ discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1662'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
 # Veröffentlichen von Seiten {#publishing-pages}
 
-Nachdem Sie Ihren Inhalt in der Autorenumgebung erstellt und geprüft haben, [Veröffentlichung auf der öffentlichen Website](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (Ihre Veröffentlichungsumgebung).
+Nachdem Sie Ihren Inhalt in der Authoring-Umgebung erstellt und geprüft haben, muss dieser [auf der öffentlichen Website](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (der Publishing-Umgebung) verfügbar gemacht werden.
 
-Dies wird als Veröffentlichen einer Seite bezeichnet. Wenn Sie eine Seite aus der Veröffentlichungsumgebung entfernen möchten, wird dies als Rückgängigmachen der Veröffentlichung bezeichnet. Beim Veröffentlichen und Rückgängigmachen der Veröffentlichung bleibt die Seite in der Autorenumgebung für weitere Änderungen verfügbar, bis Sie sie löschen.
+Dies wird als Publishing einer Seite bezeichnet. Wenn Sie eine Seite aus der Publishing-Umgebung entfernen möchten, wird dies als „Veröffentlichung aufheben“ bezeichnet. Beim „Publishing“ und „Veröffentlichung aufheben“ bleibt die Seite in der Authoring-Umgebung für weitere Änderungen verfügbar, bis Sie diese löschen.
 
-Sie können eine Seite auch sofort oder zu einem vordefinierten Zeitpunkt (Datum/Uhrzeit) in der Zukunft veröffentlichen bzw. deren Veröffentlichung rückgängig machen.
+Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt in der Zukunft veröffentlichen oder die Veröffentlichungen aufheben.
 
 >[!NOTE]
 >
->Bestimmte Begriffe im Zusammenhang mit der Veröffentlichung können verwirrt werden:
+>Bestimmte Begriffe im Zusammenhang mit Publishing sind leicht zu verwechseln:
 >
 >* **Veröffentlichen/Veröffentlichung rückgängig machen**
    >  Dies sind die Hauptbegriffe für die Aktionen, mit denen Sie Ihren Inhalt in Ihrer Veröffentlichungsumgebung verfügbar machen (oder dies rückgängig machen).
@@ -41,10 +41,10 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Zeitpunkt (Datum
 
 >[!NOTE]
 >
->Wenn Sie nicht über die erforderlichen Berechtigungen zum Veröffentlichen einer bestimmten Seite verfügen:
+>Wenn Sie nicht über die erforderlichen Berechtigungen zum Veröffentlichen einer bestimmten Seite verfügen, dann:
 >
->* Es wird ein Workflow ausgelöst, der die entsprechende Person über Ihre Veröffentlichungsanfrage informiert.
->* Diese [Workflow wurde möglicherweise angepasst](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) durch Ihr Entwicklungsteam.
+>* wird ein Workflow ausgelöst, der die entsprechende Person über Ihre Veröffentlichungsanfrage informiert.
+>* wurde dieser [Workflow möglicherweise angepasst](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) von Ihrem Entwicklungsteam.
 >* Sie werden in einer Mitteilung darüber informiert, dass der Workflow ausgelöst wurde.
 >
 
@@ -100,7 +100,7 @@ In der Sites-Konsole gibt es zwei Möglichkeiten zur Veröffentlichung:
 
 #### Quick Publish {#quick-publish}
 
-**Quick Publish** wird für einfache Fälle verwendet. Die ausgewählten Seiten werden damit sofort ohne weitere Interaktion veröffentlicht. Aus diesem Grund werden auch alle nicht veröffentlichten Verweise automatisch veröffentlicht.
+**Quick Publish** wird für einfache Fälle verwendet. Die ausgewählten Seiten werden damit sofort ohne weitere Interaktion veröffentlicht. Aus diesem Grund werden alle nicht-veröffentlichten Verweise ebenfalls automatisch veröffentlicht.
 
 So veröffentlichen Sie eine Seite mit der Funktion „Quick Publish“:
 
@@ -133,7 +133,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
    * Veröffentlichen Sie die ausgewählte Seite oder machen Sie die Veröffentlichung rückgängig.
    * Entscheiden Sie, ob Sie diese Aktion jetzt oder zu einem späteren Zeitpunkt durchführen möchten.
 
-   Später veröffentlichen startet einen Workflow zum Veröffentlichen der ausgewählten Seiten zum angegebenen Zeitpunkt. Umgekehrt startet das Rückgängigmachen der Veröffentlichung später einen Workflow zum Rückgängigmachen der Veröffentlichung der ausgewählten Seiten zu einem bestimmten Zeitpunkt.
+   Bei späterer Veröffentlichung wird ein Workflow gestartet, um die ausgewählte(n) Seite(n) zum angegebenen Zeitpunkt zu veröffentlichen. Umgekehrt startet „Veröffentlichung aufheben“ später einen Workflow zum Aufheben der Veröffentlichung der ausgewählte(n) Seite(n) zu einem angegebenen Zeitpunkt.
 
    Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole [Workflow](/help/sites-administering/workflows.md), um den entsprechenden Workflow zu beenden.
 
@@ -151,11 +151,11 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    Wählen Sie die gewünschten Seiten aus und klicken Sie dann auf **Auswählen**, um den Inhalt dem Assistenten hinzuzufügen, oder auf **Abbrechen**, um die Auswahl abzubrechen und zum Assistenten zurückzukehren.
 
-   Im Assistenten können Sie ein Element in der Liste auswählen, um seine weiteren Optionen zu konfigurieren, z. B.:
+   Zurück im Assistenten können Sie ein Element in der Liste auswählen, um dessen weitere Optionen zu konfigurieren, z. B.:
 
-   * Untergeordnete Elemente einschließen.
-   * Entfernen Sie sie aus der Auswahl.
-   * Verwalten der veröffentlichten Verweise
+   * Einschließen seiner untergeordneten Elemente.
+   * Entfernen des Elements aus der Auswahl.
+   * Verwalten seiner veröffentlichten Verweise
 
    ![pp-03](assets/pp-03.png)
 
@@ -195,7 +195,7 @@ So veröffentlichen Sie eine Seite bzw. machen ihre Veröffentlichung rückgäng
 
    Die Ressourcen werden nach den ausgelösten Workflows gruppiert und erhalten jeweils folgende Optionen:
 
-   * Definieren Sie den Titel des Workflows.
+   * Definieren des Workflow-Titels
    * Behalten Sie das Workflow-Pakets bei, vorausgesetzt, der Workflow [unterstützt mehrere Ressourcen](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definieren des Titels des Workflow-Pakets, sofern die Option zum Beibehalten des Workflow-Pakets ausgewählt wurde
 
@@ -233,26 +233,26 @@ Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichu
 
    Wenn Sie eine Veröffentlichung/rückgängig gemachte Veröffentlichung später abbrechen möchten, gehen Sie zur Konsole [Workflow](/help/sites-administering/workflows.md), um den entsprechenden Workflow zu beenden.
 
-1. Um die Aufhebung der Veröffentlichung abzuschließen, fahren Sie mit dem Assistenten wie gewünscht fort [Seite veröffentlichen](/help/sites-authoring/publishing-pages.md#manage-publication).
+1. Um das Rückgängigmachen der Veröffentlichung abzuschließen, fahren Sie mit dem Assistenten ähnlich wie beim [Veröffentlichen der Seite](/help/sites-authoring/publishing-pages.md#manage-publication) fort.
 
 ## Veröffentlichen und Rückgängigmachen der Veröffentlichung eines Baums {#publishing-and-unpublishing-a-tree}
 
-Wenn Sie eine beträchtliche Anzahl von Inhaltsseiten eingegeben oder aktualisiert haben, die sich alle unter derselben Stammseite befinden, kann es einfacher sein, den gesamten Baum in einer Aktion zu veröffentlichen.
+Wenn Sie eine beträchtliche Anzahl von Inhaltsseiten eingegeben oder aktualisiert haben, die sich alle unter derselben Stammseite befinden, kann es praktischer sein, mit einer einzigen Aktion den gesamten Baum zu veröffentlichen.
 
-Sie können die [Veröffentlichung verwalten](/help/sites-authoring/publishing-pages.md#manage-publication) auf der Sites-Konsole zu.
+Sie können dazu die Option [Veröffentlichung verwalten](/help/sites-authoring/publishing-pages.md#manage-publication) auf der Sites-Konsole verwenden.
 
-1. Wählen Sie in der Sites-Konsole die Stammseite des Baums aus, den Sie veröffentlichen oder dessen Veröffentlichung rückgängig machen möchten, und wählen Sie **Veröffentlichung verwalten**.
+1. Wählen Sie in der Sites-Konsole die Stammseite des Baums aus, den Sie veröffentlichen bzw. dessen Veröffentlichung Sie rückgängig machen möchten, und wählen Sie **Veröffentlichung verwalten** aus.
 1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie „Veröffentlichen“ oder „Veröffentlichung aufheben“ sowie den Zeitpunkt aus und danach **Weiter**, um fortzufahren.
-1. Im **Anwendungsbereich** Schritt, wählen Sie die Stammseite aus und wählen Sie **Untergeordnete Elemente einschließen**.
+1. Wählen Sie im Schritt **Umfang** die Stammseite aus und wählen Sie **Untergeordnete Elemente einschließen** aus.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-1. Im **Untergeordnete Elemente einschließen** deaktivieren Sie die Optionen:
+1. Deaktivieren Sie im Dialogfeld **Untergeordnete Elemente einbeziehen** die folgenden Optionen:
 
    * Nur unmittelbar untergeordnete Elemente einbeziehen
    * Nur bereits veröffentlichte Seiten einbeziehen
 
-   Diese Optionen sind standardmäßig ausgewählt, Sie müssen also daran denken, die Auswahl aufzuheben. Klicken **Hinzufügen** , um den Inhalt zu validieren und zur Veröffentlichung bzw. Rückgängigmachung der Veröffentlichung hinzuzufügen.
+   Diese Optionen sind standardmäßig ausgewählt. Sie müssen also darauf achten, diese Auswahl aufzuheben. Klicken Sie auf **Hinzufügen**, um zu bestätigen und den Inhalt für die Veröffentlichung bzw. das Rückgängigmachen einer Veröffentlichung hinzuzufügen.
 
    ![chlimage_1-7](assets/chlimage_1-7.png)
 
