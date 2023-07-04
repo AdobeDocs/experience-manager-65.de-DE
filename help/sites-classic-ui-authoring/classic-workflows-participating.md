@@ -1,6 +1,6 @@
 ---
 title: Teilnehmen an Workflows
-description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss. Der Workflow wählt einen Benutzer oder eine Gruppe aus, um die Aktivität auszuführen, und weist dieser Person oder Gruppe ein Arbeitselement zu.
+description: Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss. Der Workflow wählt eine Benutzerin bzw. einen Benutzer oder eine Gruppe aus, um die Aktivität auszuführen, und weist dieser Person oder Gruppe ein Arbeitselement zu.
 uuid: 04dcc8f2-dc11-430f-b0ae-47ef2cb069a2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,19 +9,19 @@ topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '543'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
 # Teilnehmen an Workflows{#participating-in-workflows}
 
-Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss. Der Workflow wählt einen Benutzer oder eine Gruppe aus, um die Aktivität auszuführen, und weist dieser Person oder Gruppe ein Arbeitselement zu.
+Workflows enthalten normalerweise Schritte, bei denen eine Person eine Aktivität auf einer Seite oder in einem Asset ausführen muss. Der Workflow wählt eine Benutzerin bzw. einen Benutzer oder eine Gruppe aus, um die Aktivität auszuführen, und weist dieser Person oder Gruppe ein Arbeitselement zu.
 
-## Bearbeiten von Arbeitselementen {#processing-your-work-items}
+## Verarbeiten Ihrer Arbeitselemente {#processing-your-work-items}
 
-Sie können die folgenden Aktionen ausführen, um ein Arbeitselement zu verarbeiten:
+Sie können die folgenden Aktionen ausführen, um ein Arbeitselement zu bearbeiten:
 
 * **Fertig stellen**
 
@@ -29,9 +29,9 @@ Sie können die folgenden Aktionen ausführen, um ein Arbeitselement zu verarbei
 
 * **Delegieren**
 
-   Wenn Ihnen ein Schritt zugewiesen wurde, Sie jedoch aus irgendeinem Grund keine Aktion ausführen können, können Sie den Schritt an einen anderen Benutzer oder eine andere Gruppe delegieren.
+   Wenn Ihnen ein Schritt zugewiesen wurde, Sie jedoch aus irgendeinem Grund die Aktion nicht ausführen können, können Sie den Schritt an eine andere Person oder Gruppe delegieren.
 
-   Die Benutzer, die für die Zuweisung verfügbar sind, hängen davon ab, wem das Arbeitselement zugewiesen wurde:
+   An welche Benutzenden delegiert werden kann, hängt davon ab, wem das Arbeitselement zugewiesen wurde:
 
    * Wenn das Arbeitselement einer Gruppe zugewiesen wurde, sind die Gruppenmitglieder verfügbar.
    * Wenn das Arbeitselement einer Gruppe zugewiesen und dann an einen Benutzer delegiert wurde, sind die Gruppenmitglieder und die Gruppe verfügbar.
@@ -47,7 +47,7 @@ Sie können die folgenden Aktionen ausführen, um ein Arbeitselement zu verarbei
 
 Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), werden verschiedene Warnungen und/oder Benachrichtigungen angezeigt:
 
-* Die **Status** -Spalte der Websites-Konsole gibt an, wann sich eine Seite in einem Workflow befindet:
+* Die Spalte **Status** der Websites-Konsole zeigt an, wenn eine Seite in einem Workflow enthalten ist:
 
    ![workflowstatus-1](assets/workflowstatus-1.png)
 
@@ -57,10 +57,10 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), w
 
 ### Fertigstellen eines Teilnehmerschritts {#completing-a-participant-step}
 
-Nachdem Sie die angegebene Aktion abgeschlossen haben, können Sie das Arbeitselement fertig stellen, damit der Workflow fortgesetzt wird. Führen Sie die folgenden Schritte aus, um das Arbeitselement abzuschließen.
+Nachdem Sie die angegebene Aktion abgeschlossen haben, können Sie das Arbeitselement fertig stellen, damit der Workflow fortgesetzt wird. Gehen Sie folgendermaßen vor, um das Arbeitselement abzuschließen.
 
-1. Wählen Sie den Workflow-Schritt aus und klicken Sie auf die Schaltfläche **Fertig** in der oberen Navigationsleiste.
-1. Wählen Sie im angezeigten Dialogfeld die Option **Nächster Schritt** aus. Damit ist der Schritt gemeint, der als nächster ausgeführt werden soll. Eine Dropdown-Liste zeigt alle entsprechenden Ziele an. A **Kommentar** kann auch eingegeben werden.
+1. Wählen Sie den Workflow-Schritt aus und klicken Sie in der oberen Navigationsleiste auf die Schaltfläche **Fertig stellen**.
+1. Wählen Sie im angezeigten Dialogfeld die Option **Nächster Schritt** aus. Damit ist der Schritt gemeint, der als nächster ausgeführt werden soll. Eine Dropdown-Liste zeigt alle entsprechenden Ziele an. Sie können auch einen **Kommentar** eingeben.
 
    ![workflowcomplete](assets/workflowcomplete.png)
 
@@ -70,10 +70,10 @@ Nachdem Sie die angegebene Aktion abgeschlossen haben, können Sie das Arbeitsel
 
 ### Delegieren eines Teilnehmerschritts {#delegating-a-participant-step}
 
-Gehen Sie wie folgt vor, um ein Arbeitselement zu delegieren.
+Gehen Sie folgendermaßen vor, um ein Arbeitselement zu delegieren.
 
-1. Klicken Sie auf **Delegieren** in der oberen Navigationsleiste.
-1. Wählen Sie im Dialogfeld mithilfe der Dropdown-Liste die **Benutzer** , um das Arbeitselement zu delegieren. Sie können auch eine **Kommentar**.
+1. Klicken Sie in der oberen Navigationsleiste auf die Schaltfläche **Delegieren**.
+1. Wählen Sie im Dialogfeld mithilfe der Dropdown-Liste den **Benutzer** aus, an den das Arbeitselement delegiert wird. Sie können auch einen **Kommentar** hinzufügen.
 
    ![workflowdelegate](assets/workflowdelegate.png)
 
@@ -81,9 +81,9 @@ Gehen Sie wie folgt vor, um ein Arbeitselement zu delegieren.
 
 ### Wechseln zu einem vorherigen Teilnehmerschritt {#performing-step-back-on-a-participant-step}
 
-Gehen Sie wie folgt vor, um zurückzutreten.
+Gehen Sie wie folgt vor, um einen Schritt zurückzugehen.
 
-1. Klicken Sie in der oberen Navigationsleiste auf die Schaltfläche Schritt zurück .
+1. Klicken Sie in der oberen Navigationsleiste auf die Schaltfläche „Schritt zurück“.
 1. Wählen Sie im angezeigten Dialogfeld einen Schritt unter „Vorheriger Schritt“ aus. Dies ist der Schritt, der als nächster ausgeführt werden soll (wobei es sich natürlich um einen Schritt handelt, der weiter vorne im Workflow steht). Eine Dropdown-Liste zeigt alle entsprechenden Ziele an.
 
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
