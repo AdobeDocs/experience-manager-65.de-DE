@@ -5,25 +5,25 @@ description: Ressourcen für Best Practices, Problembehandlung und Schulungen f�
 seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '387'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
 # Best Practices für AEM 6.5 {#aem-65-best-practices}
 
-## Wo erhalte ich weitere Informationen über AEM? {#training}
+## Wo erhalte ich weitere Informationen zu Schulungen über AEM? {#training}
 
-Adobe verfügt über verschiedene wichtige Ressourcen, mit denen Sie das Beste aus AEM erhalten.
+Adobe verfügt über verschiedene wichtige Ressourcen, die dabei helfen, AEM optimal zu nutzen.
 
-* [Offizieller AEM](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1).
-* Wenn Sie für AEM zertifiziert werden möchten, wird die [Eine vollständige Anleitung zu den offiziellen AEM-Zertifizierungen finden Sie hier .](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+* [Offizieller AEM-Schulungskatalog](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1).
+* Wenn Sie sich für AEM zertifizieren lassen möchten, [finden Sie hier unser Handbuch zu offiziellen AEM-Zertifizierungen](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
-Die AEM Community erstellt ständig Beispiele für Workflows, Tutorials und Inhaltscode-Beispiele aus Vorschlägen und kollaborativen Arbeiten.
+Die AEM-Community erstellt ständig Beispiel-Workflows, Tutorials und Code-Beispiele aus Empfehlungen und gemeinschaftlichen Projekten.
 
 * [Eine vollständige Liste der Tutorials und Videos zu AEM 6.5 finden Sie hier](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html?lang=de).
-* [Eine vollständige Liste AEM Community-Anleitungsartikel finden Sie hier](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?profile.language=de).
+* [Eine vollständige Liste der AEM-Community-Artikel mit empfohlenen Vorgehensweisen finden Sie hier](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community?lang=de).
 
 ## Best Practices für AEM {#best-practices}
 
@@ -37,18 +37,18 @@ Die AEM Community erstellt ständig Beispiele für Workflows, Tutorials und Inha
 
 ## Erste-Schritte-Handbücher für verschiedene AEM-Funktionen {#getting-started}
 
-AEM wird vielseitig in Unternehmen eingesetzt und verfügt über vielfältige Funktionen für verschiedenste Unternehmensbereiche. Wenn Sie die ersten Schritte untersuchen möchten, finden Sie die Erste-Schritte-Handbücher:
+AEM wird vielseitig in Unternehmen eingesetzt und verfügt über vielfältige Funktionen für verschiedenste Unternehmensbereiche. Wenn Sie sich mit den ersten Schritten vertraut machen möchten, lesen Sie die Handbücher „Erste Schritte“:
 
 * [AEM Platform und Sites – Erste Schritte](/help/sites-deploying/deploy.md#getting-started)
 * [Erste Schritte mit AEM Forms](/help/forms/using/introduction-aem-forms.md)
 * [Erste Schritte mit AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Erste Schritte mit AEM Communities](/help/communities/getting-started.md)
 
-Adobe hat eine neue [WKND-Tutorial, eine schrittweise Anleitung zur Erstellung Ihrer ersten Website mit AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de). Es gibt auch eine [Schrittweise Anleitung zur Bereitstellung der Digital Foundation-Lösung von Adobe](https://experienceleague.adobe.com/#courses), für die AEM ein wichtiger Baustein ist.
+Adobe hat ein neues [WKND-Tutorial, eine schrittweise Anleitung zur Erstellung Ihrer ersten Website unter Verwendung von AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de). Es gibt auch eine [Schrittweise Anleitung zum Bereitstellen der Digital Foundation-Lösung von Adobe](https://experienceleague.adobe.com/?lang=de#courses), für die AEM ein wichtiger Baustein ist.
 
 ## Empfohlene Implementierungen für AEM {#deployments}
 
-MicroKernels dienen als Persistenzmanager und das Verständnis davon ist der Schlüssel zu einer erfolgreichen AEM Implementierung. Die Wahl eines solchen für Ihre Anforderungen hängt vom Zweck Ihrer Instanz und vom geplanten Bereitstellungstyp ab. [Erfahren Sie mehr über die empfohlenen Verwendungen in gängigen AEM-Setups.](/help/sites-deploying/recommended-deploys.md)
+Microkernel dienen als Persistenz-Manager. Sie zu verstehen, ist der Schlüssel zu einer erfolgreichen AEM-Implementierung. Die Auswahl einer geeigneten Komponente hängt vom Zweck Ihrer Instanz und der Art der Implementierung ab, die Sie in Betracht ziehen. [Erfahren Sie mehr über die empfohlenen Verwendungen in gängigen AEM-Setups.](/help/sites-deploying/recommended-deploys.md)
 
 ## Checkliste für die AEM-Sicherheit {#security-checklist}
 
@@ -56,4 +56,4 @@ Sicherheit ist ein wichtiger Faktor bei der Installation von AEM. [Lernen Sie di
 
 ## Häufig gestellte Fragen zu AEM {#faq}
 
-Um Antworten auf einige der am häufigsten gestellten Fragen zu AEM zu erhalten, überprüfen Sie die [AEM FAQs](/help/sites-administering/aem-faqs.md).
+Um Antworten auf einige der am häufigsten gestellten Fragen zu AEM zu erhalten, lesen Sie die [AEM FAQs](/help/sites-administering/aem-faqs.md).
