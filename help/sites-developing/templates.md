@@ -1,6 +1,6 @@
 ---
 title: Vorlagen
-description: Vorlagen werden beim Erstellen einer Seite verwendet, die als Grundlage für die neue Seite verwendet wird.
+description: Vorlagen werden beim Erstellen einer Seite verwendet, die als Basis für die neue Seite verwendet wird.
 uuid: 6fa3dafc-dfa1-42d8-b296-d4be57449411
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
 source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '931'
-ht-degree: 53%
+ht-degree: 100%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 53%
 
 Vorlagen werden an verschiedenen Stellen in AEM verwendet:
 
-* [Wenn Sie eine Seite erstellen, wählen Sie eine Vorlage aus](#templates-pages). Diese Vorlage wird als Grundlage für die neue Seite verwendet. Die Vorlage definiert die Struktur der Seite, den anfänglichen Inhalt und die [Komponenten](/help/sites-authoring/default-components.md) die verwendet werden können (Designeigenschaften).
+* [Wenn Sie eine Seite erstellen, wählen Sie eine Vorlage aus](#templates-pages). Diese Vorlage wird als Basis für die neue Seite verwendet. Die Vorlage definiert die Struktur der Seite, jeden anfänglichen Inhalt und die [Komponenten](/help/sites-authoring/default-components.md), die verwendet werden können (Design-Eigenschaften).
 
-* [Beim Erstellen eines Inhaltsfragments wählen Sie auch eine Vorlage aus](#templates-content-fragments). Diese Vorlage definiert die Struktur, die Anfangselemente und Varianten.
+* [Beim Erstellen eines Inhaltsfragments wählen Sie auch eine Vorlage aus](#templates-content-fragments). Diese Vorlage definiert die Struktur, die Anfangselemente und die Variationen.
 
 Die folgenden Vorlagen werden im Detail beschrieben:
 
@@ -31,13 +31,13 @@ Die folgenden Vorlagen werden im Detail beschrieben:
 * [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md)
 * [Rendering von adaptiven Vorlagen](/help/sites-developing/templates-adaptive-rendering.md)
 
-## Vorlagen - Seiten {#templates-pages}
+## Vorlagen – Seiten {#templates-pages}
 
 AEM bietet jetzt zwei grundlegende Arten von Vorlagen zum Erstellen von Seiten:
 
 >[!NOTE]
 >
->Bei Verwendung einer Vorlage für [Erstellen einer Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page), gibt es keinen sichtbaren Unterschied (für den Seitenautor) und keine Angabe zum Typ der verwendeten Vorlage.
+>Wenn Sie eine Vorlage zum [Erstellen einer neuen Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page) verwenden, gibt es keinen sichtbaren Unterschied (zum Autor oder zur Autorin der Seite) und keine Angabe zum Typ der verwendeten Vorlage.
 
 ### Bearbeitbare Vorlagen {#editable-templates}
 
@@ -45,13 +45,13 @@ Bearbeitbare Vorlagen gelten nun als Best Practices für die Entwicklung mit AEM
 
 Die Vorteile bearbeitbarer Vorlagen:
 
-* Kann [created](/help/sites-authoring/templates.md#creating-a-new-template-template-author) und [bearbeitet](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) durch Ihre Autoren.
+* Können von den Autoren oder Autorinnen [erstellt](/help/sites-authoring/templates.md#creating-a-new-template-template-author) und [bearbeitet](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) werden.
 
-* wurden eingeführt, damit Sie Folgendes für alle Seiten definieren können, die mit der Vorlage erstellt werden:
+* Wurden eingeführt, damit Sie Folgendes für alle Seiten definieren können, die mit der Vorlage erstellt werden:
 
-   * Struktur
-   * den anfänglichen Inhalt
-   * Content-Richtlinien
+   * Die Struktur
+   * Den anfänglichen Inhalt
+   * Inhaltsrichtlinien
 
 * Nachdem die neue Seite erstellt wurde, wird eine dynamische Verbindung zwischen der Seite und der Vorlage aufrechterhalten. Diese Verbindung bedeutet, dass Änderungen an der Vorlagenstruktur auf allen Seiten widergespiegelt werden, die mit dieser Vorlage erstellt werden. Änderungen am anfänglichen Inhalt werden nicht übernommen.
 * Verwendet Inhaltsrichtlinien (die im Vorlageneditor bearbeitet wurden), um die Designeigenschaften beizubehalten (verwendet den Designmodus im Seiteneditor nicht).
@@ -60,17 +60,17 @@ Die Vorteile bearbeitbarer Vorlagen:
 
 >[!NOTE]
 >
->Siehe [Verwenden bearbeitbarer Seitenvorlagen zum Entwickeln einer Experience Manager-Site](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=en).
+>Siehe [Verwenden bearbeitbarer Seitenvorlagen zum Entwickeln einer Experience Manager-Site](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/page-authoring/template-editor-feature-video-use.html?lang=de).
 
 ### Statische Vorlagen {#static-templates}
 
 Statische Vorlagen:
 
-* Muss von Ihren Entwicklern definiert und konfiguriert werden.
-* Das ursprüngliche AEM-Vorlagensystem, das seit vielen Versionen verfügbar ist.
+* Muss von Ihren Entwickelnden definiert und konfiguriert werden.
+* Das ursprüngliche Vorlagensystem von AEM, das seit vielen Versionen verfügbar ist.
 * Eine statische Vorlage ist eine Hierarchie von Knoten mit derselben Struktur wie die zu erstellende Seite, jedoch ohne tatsächlichen Inhalt.
-* werden kopiert, um die Seite zu erstellen. Danach existiert keine dynamische Verbindung.
-* Verwendet [Designmodus](/help/sites-authoring/default-components-designmode.md) um Designeigenschaften beizubehalten.
+* Werden kopiert, um die Seite zu erstellen. Danach existiert keine dynamische Verbindung.
+* Verwendet [Design-Modus](/help/sites-authoring/default-components-designmode.md), um Design-Eigenschaften zu persistieren.
 * Werden gespeichert unter `/apps`
 * Siehe [Statische Vorlagen](/help/sites-developing/page-templates-static.md) für weitere Informationen.
 
@@ -84,7 +84,7 @@ Statische Vorlagen:
 
 >[!CAUTION]
 >
->AEM bietet verschiedene Eigenschaften zur Steuerung der unter **Sites** zulässigen Vorlagen. Eine Kombination dieser Regeln kann jedoch zu komplexen Regeln führen, die sich nur schwer verfolgen und verwalten lassen.
+>AEM bietet verschiedene Eigenschaften zur Steuerung der unter **Sites** zulässigen Vorlagen. Ihre Kombination kann jedoch zu komplexen Regeln führen, die schwer zu verfolgen und zu verwalten sind.
 >
 >Daher empfiehlt Adobe, einfach anzufangen, indem Sie Folgendes definieren:
 >
@@ -94,13 +94,13 @@ Statische Vorlagen:
 >
 >Ein Beispiel finden Sie unter „We.Retail“: `/content/we-retail/jcr:content`
 >
->Außerdem können die Eigenschaften `allowedPaths`, `allowedParents` und `allowedChildren` in den Vorlagen platziert werden, um komplexere Regeln zu definieren. Wenn möglich, ist es jedoch *viel* Einfachere Definition `cq:allowedTemplates` Eigenschaften in Unterabschnitten der Site, wenn die zulässigen Vorlagen weiter eingeschränkt werden müssen.
+>Außerdem können die Eigenschaften `allowedPaths`, `allowedParents` und `allowedChildren` in den Vorlagen platziert werden, um komplexere Regeln zu definieren. Wenn möglich, ist es jedoch *viel* einfacher, weitere `cq:allowedTemplates`-Eigenschaften auf Unterabschnitten der Site zu definieren, wenn es notwendig ist, die erlaubten Vorlagen weiter einzuschränken.
 >
->Ein weiterer Vorteil besteht darin, dass die Variable `cq:allowedTemplates` -Eigenschaften können von einem Autor im **Erweitert** des **Seiteneigenschaften**. Die anderen Vorlageneigenschaften können nicht über die (standardmäßige) Benutzeroberfläche aktualisiert werden. Dafür wird ein Entwickler benötigt, der die Regeln und Code-Implementierung für jede Änderung pflegt.
+>Ein zusätzlicher Vorteil ist, dass die `cq:allowedTemplates`-Eigenschaften von einem Autor oder einer Autorin auf der Registerkarte **Erweitert** der **Seiteneigenschaften** aktualisiert werden können. Die anderen Vorlageneigenschaften können nicht über die (standardmäßige) Benutzeroberfläche aktualisiert werden. Dafür wird ein Entwickler bzw. eine Entwicklerin benötigt, der bzw. die die Regeln und Code-Implementierung für jede Änderung pflegt.
 
-Beim Erstellen einer Seite in der Site-Admin-Oberfläche hängt die Liste der verfügbaren Vorlagen vom Speicherort der neuen Seite und den in den einzelnen Vorlagen angegebenen Platzierungsbeschränkungen ab.
+Beim Erstellen einer neuen Seite in der Site-Admin-Oberfläche hängt die Liste der verfügbaren Vorlagen vom Speicherort der neuen Seite und den in den einzelnen Vorlagen angegebenen Platzierungsbeschränkungen ab.
 
-Die folgenden Eigenschaften bestimmen, ob eine Vorlage `T` wird für eine neue Seite verwendet, die als untergeordnetes Element der Seite platziert werden soll `P`. Jede dieser Eigenschaften ist eine mehrwertige Zeichenfolge, welche null oder mehrere reguläre Ausdrücke enthält, die für die Übereinstimmung mit Pfaden verwendet werden:
+Die folgenden Eigenschaften bestimmen, ob eine `T`-Vorlage für eine neue Seite verwendet wird, die als untergeordnetes Element der Seite `P` platziert werden soll. Jede dieser Eigenschaften ist eine mehrwertige Zeichenfolge, welche null oder mehrere reguläre Ausdrücke enthält, die für die Übereinstimmung mit Pfaden verwendet werden:
 
 * Die Eigenschaft `cq:allowedTemplates` des Unterknotens `jcr:content` von `P` oder ein Vorgänger von `P`.
 
@@ -134,8 +134,8 @@ Um zu begrenzen, welche Vorlagen zum Erstellen von untergeordneten Seiten unter 
 
 Sie können die Eigenschaft `cq:allowedTemplates` im Knoten `jcr:content` der Vorlage verwenden, damit diese Konfiguration auf alle neu erstellten Seiten angewendet wird, die diese Vorlage nutzen.
 
-Wenn Sie weitere Einschränkungen hinzufügen möchten, z. B. bezüglich der Vorlagenhierarchie, können Sie die `allowedParents/allowedChildren` Eigenschaften in der Vorlage. Sie können dann explizit angeben, dass Seiten, die aus einer Vorlage T erstellt wurden, übergeordnet/untergeordnet von Seiten sein müssen, die aus einer Vorlage T erstellt wurden.
+Wenn Sie mehrere Einschränkungen hinzufügen möchten, z. B. bezüglich der Vorlagenhierarchie, können Sie die Eigenschaften `allowedParents/allowedChildren` der Vorlage verwenden. Sie können dann explizit angeben, dass Seiten, die aus einer Vorlage T erstellt wurden, übergeordnet/untergeordnet von Seiten sein müssen, die aus einer Vorlage T erstellt wurden.
 
-## Vorlagen - Inhaltsfragmente {#templates-content-fragments}
+## Vorlagen – Inhaltsfragmente {#templates-content-fragments}
 
 Siehe [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md).
