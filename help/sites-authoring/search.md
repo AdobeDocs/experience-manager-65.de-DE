@@ -1,6 +1,6 @@
 ---
 title: Umfassende Suche
-description: Mit einer umfassenden Suche können Sie Inhalte schneller finden.
+description: Rasches Auffinden Ihrer Inhalte dank umfassender Suchfunktionen
 uuid: 21605b96-b467-4d01-9a64-9d0648d539f1
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '504'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Mög
 
 >[!NOTE]
 >
->Außerhalb der Autorenumgebung stehen auch andere Mechanismen für die Suche zur Verfügung, z. B. die [Query Builder](/help/sites-developing/querybuilder-api.md) und [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Außerhalb der Authoring-Umgebung stehen auch andere Verfahren zur Suche zur Verfügung, wie der [Query Builder](/help/sites-developing/querybuilder-api.md) und [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Grundlagen zur Suche {#search-basics}
 
@@ -44,7 +44,7 @@ Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
 So durchsuchen und filtern Sie Ressourcen:
 
-1. Öffnen **Suche** (mit der Lupe in der Symbolleiste) und geben Sie Ihren Suchbegriff ein. Vorschläge werden erstellt und können ausgewählt werden:
+1. Öffnen Sie die Option **Suchen** (mit der Lupe in der Symbolleiste) und geben Sie den Suchbegriff ein. Es werden Empfehlungen angezeigt, die Sie dann auswählen können:
 
    ![s-01](assets/s-01.png)
 
@@ -52,8 +52,8 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
-1. Bei Bedarf können Sie den Standortfilter entfernen (wählen Sie **X** auf dem Filter, den Sie entfernen möchten), um über alle Konsolen/Ressourcentypen zu suchen.
-1. Die Ergebnisse werden angezeigt und nach Konsole und Ressourcentyp gruppiert.
+1. Bei Bedarf können Sie den Positionsfilter entfernen (wählen Sie für den zu entfernenden Filter **X** aus), um alle Konsolen-/Ressourcentypen zu durchsuchen.
+1. Die Ergebnisse werden gemäß der Konsole und dem zugehörigen Ressourcentyp gruppiert angezeigt.
 
    Sie können entweder eine spezifische Ressource (für eine spätere Aktion) oder eine Drilldown-Suche auswählen, indem Sie den erforderlichen Ressourcentyp auswählen, z. B. **Alle Sites anzeigen**:
 
@@ -63,14 +63,14 @@ So durchsuchen und filtern Sie Ressourcen:
 
    ![](do-not-localize/screen_shot_2018-03-23at101542.png)
 
-   Je nach Ressourcentyp zeigt die Suche eine vordefinierte Auswahl von Such-/Filterkriterien an.
+   Je nach Ressourcentyp zeigt die Suche eine vordefinierte Auswahl von Such-/Filterkriterien.
 
-   Im seitlichen Bedienfeld können Sie Folgendes auswählen:
+   Im Seitenbereich können Sie folgende Elemente auswählen:
 
    * Gespeicherte Suchvorgänge
-   * Suchverzeichnis
+   * Verzeichnis durchsuchen
    * Tags
-   * Suchkriterien, z. B. Änderungsdatum, Veröffentlichungsstatus, Live Copy-Status. 
+   * Suchkriterien, z. B. Änderungsdatum, Veröffentlichungsstatus, Live Copy-Status.
 
    >[!NOTE]
    >
@@ -78,8 +78,8 @@ So durchsuchen und filtern Sie Ressourcen:
    >
    >
    >
-   >    * Je nach ausgewähltem Ressourcentyp; Beispielsweise sind die Kriterien Assets und Communities verständlicherweise spezialisiert.
-   >    * Ihre Instanz als [Forms durchsuchen](/help/sites-administering/search-forms.md) kann angepasst werden (entsprechend dem Speicherort in AEM).
+   >    * in Abhängigkeit von dem von Ihnen ausgewählten Ressourcentyp, wobei z. B. die Kriterien „Assets“ und „Communitys“ verständlicherweise spezialisiert sind.
+   >    * je nach Instanz, da die [Suchformulare](/help/sites-administering/search-forms.md) (entsprechend der Stelle innerhalb von AEM) angepasst werden können
 
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
@@ -98,9 +98,9 @@ So durchsuchen und filtern Sie Ressourcen:
 
 ## Gespeicherte Suchvorgänge {#saved-searches}
 
-Neben der Suche nach einer Vielzahl von Facetten können Sie auch eine bestimmte Suchkonfiguration speichern, um sie später abzurufen und zu verwenden:
+Sie können nicht nur nach zahlreichen Facetten suchen, sondern auch eine bestimmte Suchkonfiguration speichern, um diese später abzurufen und zu verwenden:
 
-1. Definieren Sie Ihre Suchkriterien und wählen Sie **Speichern**.
+1. Definieren Sie die Suchkriterien und wählen Sie **Speichern**.
 
    ![screen-shot_2019-03-05at102613-1](assets/screen-shot_2019-03-05at102613-1.png)
 
@@ -114,8 +114,8 @@ Neben der Suche nach einer Vielzahl von Facetten können Sie auch eine bestimmte
 
 1. Nach dem Speichern können Sie:
 
-   * Verwendung **x** (neben dem Namen der gespeicherten Suche), um eine neue Abfrage zu starten (die gespeicherte Suche selbst wird nicht gelöscht).
-   * **Gespeicherte Suche bearbeiten**, ändern Sie die Suchbedingungen und **Speichern** erneut.
+   * **x** (für den Namen der gespeicherten Suche) verwenden, um eine neue Abfrage zu starten. Die gespeicherte Suche selbst wird nicht gelöscht.
+   * die Option **Gespeicherte Suche bearbeiten** verwenden, die Suchbedingungen ändern und dann erneut auf **Speichern** klicken.
 
 Gespeicherte Suchen können geändert werden, indem Sie die gespeicherte Suche auswählen und unten im Suchfeld auf **Gespeicherte Suche bearbeiten** klicken.
 
