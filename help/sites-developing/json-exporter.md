@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
 source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '431'
-ht-degree: 60%
+ht-degree: 100%
 
 ---
 
@@ -27,7 +27,7 @@ Sie ermöglichen die Bereitstellung von Inhalten in Kanälen, die keine traditio
 * native Mobile Apps
 * weitere AEM-externe Kanäle und Touchpoints
 
-Mit Inhaltsfragmenten, die strukturierte Inhalte verwenden, können Sie Inhaltsdienste bereitstellen, indem Sie den JSON Exporter verwenden, um den Inhalt AEM beliebigen Seite im JSON-Datenmodellformat bereitzustellen. Diese Methode kann dann von Ihren eigenen Anwendungen genutzt werden.
+Über Inhaltsfragmente, die strukturierte Inhalte verwenden, können Sie Content Services zur Verfügung stellen, indem Sie die Inhalte mit JSON Exporter auf einer (beliebigen) AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese Methode kann dann von Ihren eigenen Anwendungen genutzt werden.
 
 >[!NOTE]
 >
@@ -35,47 +35,47 @@ Mit Inhaltsfragmenten, die strukturierte Inhalte verwenden, können Sie Inhaltsd
 
 ## JSON Exporter mit Inhaltsfragment-Kernkomponenten {#json-exporter-with-content-fragment-core-components}
 
-Mit dem AEM JSON Exporter können Sie den Inhalt einer beliebigen AEM Seite im JSON-Datenmodellformat bereitstellen. Diese Methode kann dann von Ihren eigenen Anwendungen genutzt werden.
+Mit dem AEM JSON Exporter können Sie den Inhalt einer beliebigen AEM-Seite im JSON-Datenmodellformat bereitstellen. Diese Methode kann dann von Ihren eigenen Anwendungen genutzt werden.
 
-Der Versand wird AEM mithilfe des -Selektors durchgeführt `model` und `.json` -Erweiterung.
+Im Rahmen von AEM erfolgt die Bereitstellung über den Selektor `model` und die Erweiterung `.json`.
 
 `.model.json`
 
-1. Beispielsweise eine URL wie:
+1. Beispielsweise werden durch eine URL wie:
 
    ```shell
    http://localhost:4502/content/we-retail/language-masters/en.model.json
    ```
 
-1. Stellt Inhalte bereit, z. B.:
+1. Inhalte bereitgestellt wie:
 
    ![chlimage_1-192](assets/chlimage_1-192.png)
 
 Alternativ können Sie die Inhalte eines strukturierten Inhaltsfragments bereitstellen, indem Sie dieses spezifisch nachverfolgen.
 
-Verwenden Sie den gesamten Pfad zum Fragment (über den `jcr:content`); zum Beispiel mit einem Suffix wie .
+Verwenden Sie den gesamten Pfad zum Fragment (über `jcr:content`), zum Beispiel mit einem Suffix wie.
 
 `.../jcr:content/root/responsivegrid/contentfragment.model.json`
 
 Ihre Seite kann entweder ein einzelnes Inhaltsfragment oder mehrere Komponenten verschiedener Typen enthalten. Sie können auch Mechanismen wie Listenkomponenten verwenden, um automatisch nach relevanten Inhalten zu suchen.
 
-* Beispielsweise eine URL wie:
+* Beispielsweise werden durch eine URL wie:
 
-   ```shell
-   http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
+  ```
 
-* Stellt Inhalte bereit, z. B.:
+* Inhalte bereitgestellt wie:
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+  ![chlimage_1-193](assets/chlimage_1-193.png)
 
-   >[!NOTE]
-   >
-   >Sie können [Ihre eigenen Komponenten anpassen](/help/sites-developing/json-exporter-components.md), um auf diese Daten zuzugreifen und sie zu verwenden.
+  >[!NOTE]
+  >
+  >Sie können [Ihre eigenen Komponenten anpassen](/help/sites-developing/json-exporter-components.md), um auf diese Daten zuzugreifen und sie zu verwenden.
 
-   >[!NOTE]
-   >
-   >Obwohl es sich nicht um eine Standardimplementierung handelt, werden [mehrere Selektoren unterstützt,](json-exporter-components.md#multiple-selectors) jedoch muss `model` der erste sein.
+  >[!NOTE]
+  >
+  >Obwohl es sich nicht um eine Standardimplementierung handelt, werden [mehrere Selektoren unterstützt,](json-exporter-components.md#multiple-selectors) jedoch muss `model` der erste sein.
 
 ### Weiterführende Informationen {#further-information}
 
@@ -87,7 +87,7 @@ Siehe auch:
 
 * Sling-Modelle:
 
-   * [Sling-Modelle - Verknüpfen einer Modellklasse mit einem Ressourcentyp seit 130](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
+   * [Sling-Modelle – Zuordnen einer Modellklasse zu einem Ressourcentyp seit 1.3.0](https://sling.apache.org/documentation/bundles/models.html#associating-a-model-class-with-a-resource-type-since-130)
 
 * AEM mit JSON:
 
@@ -103,4 +103,4 @@ Weiterführende Ressourcen:
 * [Bearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
 * [Aktivieren eines JSON-Exports für eine Komponente](/help/sites-developing/json-exporter-components.md)
 
-* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=en)
+* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und die [Inhaltsfragmentkomponente](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html?lang=de)
