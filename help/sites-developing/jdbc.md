@@ -1,7 +1,7 @@
 ---
 title: Verbindung mit SQL-Datenbanken
 seo-title: Connecting to SQL Databases
-description: Greifen Sie auf eine externe SQL-Datenbank zu, damit Ihre AEM-Anwendungen mit den Daten interagieren können.
+description: Greifen Sie auf eine externe SQL-Datenbank zu, damit Ihre AEM-Programme mit den Daten interagieren können.
 seo-description: Access an external SQL database to so that your AEM applications can interact with the data
 uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
 contentOwner: Guillaume Carlino
@@ -11,36 +11,36 @@ content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
 source-git-commit: e147605ff4d5c3d2403632285956559db235c084
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '920'
-ht-degree: 50%
+ht-degree: 100%
 
 ---
 
 # Verbinden mit SQL-Datenbanken{#connecting-to-sql-databases}
 
-Greifen Sie auf eine externe SQL-Datenbank zu, damit Ihre CQ-Anwendungen mit den Daten interagieren können:
+Greifen Sie auf eine externe SQL-Datenbank zu, damit Ihre CQ-Programme mit den Daten interagieren können:
 
 1. [Erstellen oder beziehen Sie ein OSGi-Bundle, das das JDBC-Treiberpaket exportiert](#bundling-the-jdbc-database-driver).
-1. [JDBC-Datenquellen-Poolanbieter konfigurieren](#configuring-the-jdbc-connection-pool-service).
-1. [Rufen Sie ein Datenquellenobjekt ab und erstellen Sie die Verbindung in Ihrem Code.](#connecting-to-the-database).
+1. [Konfigurieren Sie einen JDBC-Datenquellen-Pool-Anbieter](#configuring-the-jdbc-connection-pool-service).
+1. [Rufen Sie ein Datenquellenobjekt ab und erstellen Sie die Verbindung in Ihrem Code](#connecting-to-the-database).
 
-## Bundling des JDBC-Datenbanktreibers {#bundling-the-jdbc-database-driver}
+## Bündelung des JDBC-Datenbanktreibers {#bundling-the-jdbc-database-driver}
 
 Einige Datenbankanbieter stellen JDBC-Treiber in einem OSGi-Paket bereit, z. B. [MySQL](https://dev.mysql.com/downloads/connector/j/). Wenn der JDBC-Treiber für Ihre Datenbank nicht als OSGi-Bundle verfügbar ist, rufen Sie die Treiber-JAR-Datei ab und verpacken Sie sie in einem OSGi-Paket. Das Bundle muss die Pakete exportieren, die für die Interaktion mit dem Datenbankserver erforderlich sind. Das Bundle muss außerdem die Pakete importieren, die es referenziert.
 
-Im folgenden Beispiel wird die [Bundle-Plug-in für Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) um den HSQLDB-Treiber in ein OSGi-Bundle zu verpacken. Der POM weist das Plug-in an, die hsqldb.jar-Datei einzubetten, die als Abhängigkeit identifiziert wird. Alle org.hsqldb-Pakete werden exportiert.
+Das folgende Beispiel verwendet das [Bundle-Plug-in für Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html), um den HSQLDB-Treiber in einem OSGi-Bundle zu verpacken. Das POM weist das Plug-in an, die hsqldb.jar-Datei einzubetten, die als Abhängigkeit angegeben ist. Alle org.hsqldb-Pakete werden exportiert.
 
-Das Plug-in bestimmt automatisch, welche Pakete importiert werden sollen, und listet sie in der Datei MANIFEST.MF des Bundles auf. Wenn eines der Pakete nicht auf dem CQ-Server verfügbar ist, startet das Bundle nicht bei der Installation. Zwei mögliche Lösungen sind:
+Das Plug-in bestimmt automatisch, welche Pakete importiert werden sollen, und listet sie in der Datei „MANIFEST.MF“ des Bundles auf. Wenn eines der Pakete nicht auf dem CQ-Server verfügbar ist, startet das Bundle nicht bei der Installation. Zwei mögliche Lösungen sind:
 
-* Geben Sie im POM an, dass die Pakete optional sind. Verwenden Sie diese Lösung, wenn die JDBC-Verbindung nicht die Paketmitglieder benötigt. Verwenden Sie das Element Import-Package , um optionale Pakete anzugeben, wie im folgenden Beispiel gezeigt:
+* Geben Sie im POM an, dass die Pakete optional sind. Verwenden Sie diese Lösung, wenn die JDBC-Verbindung nicht die Paketmitglieder benötigt. Verwenden Sie das Import-Paketelement, um wie im folgenden Beispiel optionale Pakete anzugeben:
 
    `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
-* Schließen Sie die JAR-Dateien, die die Pakete enthalten, in ein OSGi-Bundle ein, das die Pakete exportiert, und stellen Sie das Bundle bereit. Verwenden Sie diese Lösung, wenn die Paketmitglieder während der Codeausführung erforderlich sind.
+* Verpacken Sie die JAR-Dateien, die die Pakete enthalten, in einem OSGi-Bundle, das die Pakete exportiert, und stellen Sie das Bundle bereit. Verwenden Sie diese Lösung, wenn die Paketmitglieder während der Ausführung des Codes erforderlich sind.
 
-Kenntnisse des Quellcodes ermöglichen es Ihnen, zu entscheiden, welche Lösung verwendet werden soll. Sie können auch eine der Lösungen ausprobieren und Tests durchführen, um die Lösung zu validieren.
+Entscheiden Sie anhand Ihrer Kenntnis des Quellcodes, welche Lösung geeignet ist. Sie können auch beide Lösungen ausprobieren und Tests durchführen, um sie zu validieren.
 
-### POM, das hsqldb.jar gebündelt {#pom-that-bundles-hsqldb-jar}
+### POM, das hsqldb.jar bündelt {#pom-that-bundles-hsqldb-jar}
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -94,13 +94,13 @@ Die folgenden Links öffnen die Download-Seiten für einige beliebte Datenbankpr
 
 Fügen Sie eine Konfiguration für den JDBC Connections Pool-Dienst hinzu. Dieser Dienst verwendet den JDBC-Treiber, um Datenquellenobjekte zu erstellen. Ihr Anwendungs-Code verwendet diesen Dienst, um das Objekt abzurufen und eine Verbindung zur Datenbank herzustellen.
 
-JDBC Connections Pool (`com.day.commons.datasource.jdbcpool.JdbcPoolService`) ist ein Factory Service. Wenn Sie Verbindungen benötigen, die andere Eigenschaften verwenden, z. B. schreibgeschützten oder Lese-/Schreibzugriff, erstellen Sie mehrere Konfigurationen.
+JDBC Connections Pool (`com.day.commons.datasource.jdbcpool.JdbcPoolService`) ist ein Factory Service. Wenn Sie Verbindungen benötigen, die unterschiedliche Eigenschaften verwenden, zum Beispiel schreibgeschützten oder Lese-/Schreibzugriff, erstellen Sie mehrere Konfigurationen.
 
-Beim Arbeiten mit CQ gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für diese Dienste. see [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md) für ausführliche Informationen.
+Wenn Sie mit CQ arbeiten, gibt es mehrere Methoden, um die Konfigurationseinstellungen für solche Dienste zu verwalten; siehe [Konfiguration von OSGi](/help/sites-deploying/configuring-osgi.md) für weitere Details.
 
 Die folgenden Eigenschaften sind bei der Konfiguration eines Pool-Verbindungsdienstes verfügbar. Die Eigenschaftsnamen werden so aufgelistet, wie sie in der Web-Konsole angezeigt werden. Der entsprechende Name für einen `sling:OsgiConfig`-Knoten wird in Klammern aufgeführt. Die angegebenen Beispielwerte gelten für einen HSQLDB-Server und eine Datenbank mit dem Alias `mydb`:
 
-* JDBC-Treiberklasse ( `jdbc.driver.class`): Die zu verwendende Java™-Klasse, die die Schnittstelle java.sql.Driver implementiert, z. B. `org.hsqldb.jdbc.JDBCDriver`. Der Datentyp ist `String`.
+* JDBC-Treiberklasse (`jdbc.driver.class`): Die zu verwendende Java™-Klasse, die die Schnittstelle java.sql.Driver implementiert, zum Beispiel `org.hsqldb.jdbc.JDBCDriver`. Der Datentyp ist `String`.
 
 * JDBC Connection URI (`jdbc.connection.uri`): Die URL der für die Verbindungsherstellung zu verwendenden Datenbank. Beispiel: `jdbc:hsqldb:hsql//10.36.79.223:9001/mydb`. Das Format der URL muss mit der getConnection-Methode der java.sql.DriverManager-Klasse verwendbar sein. Der Datentyp ist `String`.
 
@@ -121,17 +121,17 @@ Die folgenden Eigenschaften sind bei der Konfiguration eines Pool-Verbindungsdie
 
 * Additional Service Properties (`datasource.svc.properties`): Eine Gruppe von Name/Wert-Paaren, die Sie an die Verbindungs-URL anhängen möchten. Der Datentyp ist `String[]`.
 
-Der JDBC Connections Pool-Dienst ist eine Factory. Wenn Sie also einen `sling:OsgiConfig`-Knoten verwenden, um den Verbindungsdienst zu konfigurieren, muss der Name des Knotens die Factory-Dienst-PID gefolgt von *`-alias`* enthalten. Der von Ihnen verwendete Alias muss für alle Konfigurationsknoten für diese PID eindeutig sein. Ein Beispiel für einen Knotennamen ist `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
+Der JDBC Connections Pool-Dienst ist eine Factory. Wenn Sie also einen `sling:OsgiConfig`-Knoten verwenden, um den Verbindungsdienst zu konfigurieren, muss der Name des Knotens die Factory-Dienst-PID gefolgt von *`-alias`* enthalten. Der Alias, den Sie verwenden, muss unter allen Konfigurationsknoten für diese PID eindeutig sein. Ein Beispiel für einen Knotennamen ist `com.day.commons.datasource.jdbcpool.JdbcPoolService-myhsqldbpool`.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png)
 
 ### Verbindung zur Datenbank aufbauen {#connecting-to-the-database}
 
-Verwenden Sie in Ihrem Java™-Code den DataSourcePool-Dienst, um eine `javax.sql.DataSource` -Objekt für die von Ihnen erstellte Konfiguration. Der DataSourcePool-Dienst stellt die Methode `getDataSource` bereit, die ein `DataSource`-Objekt für einen angegebenen Datenquellennamen zurückgibt. Verwenden Sie als Argument der Methode den Wert der Datenquellennamen-Eigenschaft (oder `datasource.name`), den Sie für die JDBC Connections Pool-Konfiguration angegeben haben.
+In Ihrem Java™-Code verwenden Sie den DataSourcePool-Dienst, um ein `javax.sql.DataSource`-Objekt für die Konfiguration, die Sie erstellt haben, zu erhalten. Der DataSourcePool-Dienst stellt die Methode `getDataSource` bereit, die ein `DataSource`-Objekt für einen angegebenen Datenquellennamen zurückgibt. Verwenden Sie als Argument der Methode den Wert der Datenquellennamen-Eigenschaft (oder `datasource.name`), den Sie für die JDBC Connections Pool-Konfiguration angegeben haben.
 
-Der folgende JSP-Beispielcode ruft eine Instanz der hsqldbds-Datenquelle ab, führt eine einfache SQL-Abfrage aus und zeigt die Anzahl der zurückgegebenen Ergebnisse an.
+Der folgende JSP-Beispiel-Code ruft eine Instanz der hsqldbds-Datenquelle ab, führt eine einfache SQL-Abfrage aus und zeigt die Anzahl der zurückgegebenen Ergebnisse an.
 
-#### JSP, das eine Datenbanksuche durchführt {#jsp-that-performs-a-database-lookup}
+#### JSP-Code, der eine Datenbankabfrage durchführt {#jsp-that-performs-a-database-lookup}
 
 ```java
 <%@include file="/libs/foundation/global.jsp"%><%
