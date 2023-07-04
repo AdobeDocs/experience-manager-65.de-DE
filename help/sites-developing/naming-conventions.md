@@ -1,5 +1,5 @@
 ---
-title: Namenskonventionen von Knoten im Java Content Repository
+title: Namenskonventionen von Knoten im Java Content-Repository
 description: Knoten im Repository unterliegen Benennungskonventionen des Java Content Repository
 uuid: 0515c5c5-3e93-4710-983f-c08c146467fc
 contentOwner: Guillaume Carlino
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 exl-id: 01c6bb29-1d2d-4a45-b291-0e8d97c01a08
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '308'
-ht-degree: 86%
+ht-degree: 100%
 
 ---
 
@@ -59,17 +59,17 @@ Die standardmäßige Touch-optimierte Benutzeroberfläche:
 
 ### Klassische Benutzeroberfläche {#classic-ui}
 
-Die klassische Benutzeroberfläche enthält strengere Einschränkungen:
+Die klassische Benutzeroberfläche weist stärkere Einschränkungen auf:
 
-* Validiert den Namen, wenn entweder:
+* Validiert den Namen für einen expliziten Knotennamen, wenn entweder:
 
    * ein Seitentitel zum Konvertieren in den Knotennamen angegeben ist
    * ein expliziter Knotenname angegeben ist
 
 * Gültige Zeichen (beim Erstellen innerhalb der klassischen Benutzeroberfläche sind nur diese Zeichen tatsächlich gültig, obwohl `PageManagerImpl` weitere Zeichen erlauben würde):
 
-   * &quot;a&quot;bis &quot;z&quot;
-   * &quot;A&quot;bis &quot;Z&quot;
-   * &quot;0&quot;bis &quot;9&quot;
+   * „a“ bis „z“
+   * „A“ bis „Z“
+   * „0“ bis „9“
    * _ (Unterstrich)
    * `-` (Strich/Minus)
