@@ -9,15 +9,15 @@ discoiquuid: 9f400560-8152-4d07-a946-e514e9b9cedf
 role: Admin
 exl-id: fd0e17d7-c3e9-4dec-ad26-ed96a1881f42
 source-git-commit: fb9363a39ffc9d3929a31a3a19a124b806607ef4
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1005'
-ht-degree: 43%
+ht-degree: 100%
 
 ---
 
 # Formularzentrierte Workflows unter OSGi | Umgang mit Benutzerdaten {#forms-centric-workflows-on-osgi-handling-user-data}
 
-Forms-orientierte AEM-Workflows ermöglichen die Automatisierung von Forms-orientierten Geschäftsprozessen in der Praxis. Workflows bestehen aus einer Reihe von Schritten, die in der im zugehörigen Workflow-Modell angegebenen Reihenfolge ausgeführt werden. Jeder Schritt führt eine bestimmte Aktion aus, z. B. das Zuweisen einer Aufgabe zu einem Benutzer oder das Senden einer E-Mail-Nachricht. Workflows können mit Assets im Repository, mit Benutzerkonten und mit Experience Manager-Diensten interagieren. Daher können Workflows komplexe Aktivitäten koordinieren, die einen beliebigen Aspekt des Experience Managers betreffen.
+Formularzentrierte AEM-Workflows ermöglichen die Automatisierung von formularzentrierten Geschäftsprozessen in der Praxis. Workflows bestehen aus einer Reihe von Schritten, die in der im zugehörigen Workflow-Modell angegebenen Reihenfolge ausgeführt werden. Jeder Schritt führt eine bestimmte Aktion aus, z. B. das Zuweisen einer Aufgabe zu einer Benutzerin bzw. einem Benutzer oder das Senden einer E-Mail-Nachricht. Workflows können mit Assets im Repository, mit Benutzerkonten und mit Experience Manager-Diensten interagieren. Daher können Workflows komplexe Aktivitäten koordinieren, die einen beliebigen Aspekt von Experience Manager betreffen.
 
 Ein formularzentrierter Workflow kann über eine der folgenden Methoden ausgelöst oder gestartet werden:
 
@@ -31,13 +31,13 @@ Weitere Informationen über die formularzentrierten AEM-Workflows und -Funktione
 
 ## Benutzerdaten und Datenspeicher {#user-data-and-data-stores}
 
-Wenn ein Workflow ausgelöst wird, wird automatisch eine Payload für die Workflow-Instanz generiert. Jeder Workflow-Instanz wird eine eindeutige Instanz-ID und eine zugeordnete Payload-ID zugewiesen. Die Payload enthält die Repository-Speicherorte für Benutzer- und Formulardaten, die mit einer Workflow-Instanz verknüpft sind. Darüber hinaus werden Entwürfe und historische Daten für eine Workflow-Instanz auch im AEM Repository gespeichert.
+Wenn ein Workflow ausgelöst wird, wird automatisch eine Payload für die Workflow-Instanz generiert. Jeder Workflow-Instanz wird eine eindeutige Instanz-ID und eine zugeordnete Payload-ID zugewiesen. Die Payload enthält die Repository-Speicherorte für Benutzer- und Formulardaten, die mit einer Workflow-Instanz verknüpft sind. Darüber hinaus werden Entwürfe und historische Daten für eine Workflow-Instanz auch im AEM-Repository gespeichert.
 
 Die standardmäßigen Repository-Speicherorte, in denen sich Payload, Entwürfe und der Verlauf einer Workflow-Instanz befinden, lauten wie folgt:
 
 >[!NOTE]
 >
->Sie können verschiedene Speicherorte konfigurieren, um beim Erstellen eines Workflows oder einer Anwendung Payload-, Entwurfs- und Verlaufsdaten zu speichern. Überprüfen Sie den Workflow, um die Speicherorte anzugeben, an denen ein Workflow oder eine Anwendung Daten gespeichert hat.
+>Sie können verschiedene Speicherorte konfigurieren, um beim Erstellen eines Workflows oder einer Anwendung Payload-, Entwurfs- und Verlaufsdaten zu speichern. Überprüfen Sie den Workflow, um die Speicherorte zu identifizieren, an denen ein Workflow oder eine Anwendung Daten gespeichert hat.
 
 <table>
  <tbody>
@@ -48,35 +48,35 @@ Die standardmäßigen Repository-Speicherorte, in denen sich Payload, Entwürfe 
   </tr>
   <tr>
    <td><strong>Workflow-<br />Instanz</strong></td>
-   <td>/var/workflow/instances/[server_id]/&lt;date&gt;/[workflow-instance]/</td>
-   <td>/etc/workflow/instances/[server_id]/[date]/[workflow-instance]/</td>
+   <td>/var/workflow/instances/[Server-ID]/&lt;date&gt;/[Workflow-Instanz]/</td>
+   <td>/etc/workflow/instances/[Server-ID]/[Datum]/[Workflow-Instanz]/</td>
   </tr>
   <tr>
    <td><strong>Nutzlast</strong></td>
-   <td>/var/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
-   <td>/etc/fd/dashboard/payload/[server_id]/[date]/<br /> [payload-id]/</td>
+   <td>/var/fd/dashboard/payload/[Server-ID]/[Datum]/<br /> [Payload-ID]/</td>
+   <td>/etc/fd/dashboard/payload/[Server-ID]/[Datum]/<br /> [Payload-ID]/</td>
   </tr>
   <tr>
    <td><strong>Entwürfe</strong></td>
-   <td>/var/fd/dashboard/instances/[server_id]/<br /> [Datum]/[Workflow-Instanz]/draft/[Arbeitselement]/</td>
-   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [Datum]/[Workflow-Instanz]/draft/[Arbeitselement]/</td>
+   <td>/var/fd/dashboard/instances/[Server-ID]/<br /> [Datum]/[Workflow-Instanz]/draft/[Arbeitselement]/</td>
+   <td>/etc/fd/dashboard/instances/[Server-ID]/<br /> [Datum]/[Workflow-Instanz]/draft/[Arbeitselement]/</td>
   </tr>
   <tr>
    <td><strong>Verlauf</strong></td>
-   <td>/var/fd/dashboard/instances/[server_id]/<br /> [Datum]/[Workflow-Instanz]/history/</td>
-   <td>/etc/fd/dashboard/instances/[server_id]/<br /> [Datum]/[Workflow-Instanz]/history/</td>
+   <td>/var/fd/dashboard/instances/[Server-ID]/<br /> [Datum]/[Workflow-Instanz]/history/</td>
+   <td>/etc/fd/dashboard/instances/[Server-ID]/<br /> [Datum]/[Workflow-Instanz]/history/</td>
   </tr>
  </tbody>
 </table>
 
 ## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
-Sie können Benutzerdaten aus einer Workflow-Instanz im Repository aufrufen und löschen. Um dies zu erreichen, müssen Sie die Instanz-ID der Workflow-Instanz kennen, die dem Benutzer zugeordnet ist. Sie können die Instanz-ID einer Workflow-Instanz mithilfe des Benutzernamens des Benutzers finden, der die Workflow-Instanz initiiert hat oder der der aktuelle Bearbeiter der Workflow-Instanz ist.
+Sie können Benutzerdaten aus einer Workflow-Instanz im Repository aufrufen und löschen. Um dies zu erreichen, müssen Sie die Instanz-ID der Workflow-Instanz kennen, die der Benutzerin bzw. dem Benutzer zugeordnet ist. Sie können die Instanz-ID einer Workflow-Instanz mithilfe des Benutzernamens des Benutzers finden, der die Workflow-Instanz initiiert hat oder der der aktuelle Bearbeiter der Workflow-Instanz ist.
 
-In den folgenden Szenarien können Sie jedoch keine mehrdeutigen Ergebnisse erkennen, wenn Sie Workflows identifizieren, die mit einem Initiator verknüpft sind:
+Bei der Identifizierung von Workflows, die mit einer Initiatorin oder einem Initiator verbunden sind, können Sie jedoch in den folgenden Szenarien keine Workflows identifizieren oder die Ergebnisse sind möglicherweise nicht eindeutig:
 
-* **Workflow, der durch einen überwachten Ordner ausgelöst wird**: Eine Workflow-Instanz kann nicht mit ihrem Initiator identifiziert werden, wenn der Workflow durch einen überwachten Ordner ausgelöst wird. In diesem Fall werden die Benutzerinformationen in den gespeicherten Daten kodiert.
-* **Workflow, der von der Veröffentlichungs-AEM-Instanz initiiert wurde**: Alle Workflow-Instanzen werden mithilfe eines Dienstbenutzers erstellt, wenn adaptive Formulare, interaktive Kommunikation oder Briefe aus AEM Veröffentlichungsinstanz gesendet werden. In diesen Fällen wird der Benutzername des angemeldeten Benutzers nicht in den Workflow-Instanzdaten erfasst.
+* **Workflow, der durch einen überwachten Ordner ausgelöst wird**: Eine Workflow-Instanz kann nicht über die Person identifiziert werden, die sie initiiert hat, wenn der Workflow durch einen überwachten Ordner ausgelöst wird. In diesem Fall werden die Benutzerinformationen in den gespeicherten Daten codiert.
+* **Workflow, der von der AEM-Publishing-Instanz initiiert wurde**: Alle Workflow-Instanzen werden mithilfe eines Dienstbenutzers erstellt, wenn adaptive Formulare, interaktive Mitteilungen oder Briefe von der AEM-Publishing-Instanz gesendet werden. In diesen Fällen wird der Benutzername der angemeldeten Person nicht in den Workflow-Instanzdaten erfasst.
 
 ### Zugreifen auf Benutzerdaten {#access}
 
@@ -84,11 +84,11 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 
 1. Navigieren Sie in der AEM-Author-Instanz zu `https://'[server]:[port]'/crx/de` und anschließend zu **[!UICONTROL Tools > Abfrage]**.
 
-   Auswählen **[!UICONTROL SQL2]** von **[!UICONTROL Typ]** Dropdown-Liste.
+   Wählen Sie **[!UICONTROL SQL2]** aus der Dropdown-Liste **[!UICONTROL Typ]** aus.
 
 1. Führen Sie je nach den verfügbaren Informationen eine der folgenden Abfragen aus:
 
-   * Führen Sie Folgendes aus, wenn der Workflow-Initiator bekannt ist:
+   * Führen Sie Folgendes aus, wenn die Person, die den Workflow initiiert hat, bekannt ist:
 
    `SELECT &ast; FROM [cq:Workflow] AS s WHERE ISDESCENDANTNODE([path-to-workflow-instances]) and s.[initiator]='*initiator-ID*'`
 
@@ -126,11 +126,11 @@ Führen Sie die folgenden Schritte aus, um Benutzerdaten für eine Workflow-Inst
 
 ### Löschen von Benutzerdaten {#delete-user-data}
 
-Sie müssen ein AEM Administrator sein, um Benutzerdaten aus Workflow-Instanzen zu löschen, indem Sie die folgenden Schritte ausführen:
+Wenn Sie AEM-Admin sind, können Sie Benutzerdaten aus Workflow-Instanzen löschen, indem Sie die folgenden Schritte ausführen:
 
 1. Folgen Sie den Anweisungen in [Auf Benutzerdaten zugreifen](/help/forms/using/forms-workflow-osgi-handling-user-data.md#access) und beachten Sie Folgendes:
 
-   * Pfade zu Workflow-Instanzen, die dem Benutzer zugeordnet sind
+   * Pfade zu Workflow-Instanzen, die der Benutzerin bzw. dem Benutzer zugeordnet sind
    * Status der Workflow-Instanzen
    * Pfade zu Payloads für die Workflow-Instanzen
    * Pfade zu Entwürfen und Verlauf für die Workflow-Instanzen
@@ -139,7 +139,7 @@ Sie müssen ein AEM Administrator sein, um Benutzerdaten aus Workflow-Instanzen 
 
    1. Navigieren Sie zu `https://'[server]:[port]'/aem/start.html` und melden Sie sich als Administrator an.
    1. Navigieren Sie zu **[!UICONTROL Tools > Workflow > Instanzen]**.
-   1. Wählen Sie relevante Workflow-Instanzen für den Benutzer aus und tippen Sie auf **[!UICONTROL Beenden]** , um laufende Instanzen zu beenden.
+   1. Wählen Sie relevante Workflow-Instanzen für die Benutzerin bzw. den Benutzer aus und tippen Sie auf **[!UICONTROL Beenden]**, um laufende Instanzen zu beenden.
 
       Weitere Informationen zum Arbeiten mit Workflow-Instanzen finden Sie unter [Verwalten von Workflow-Instanzen](/help/sites-administering/workflows-administering.md).
 
@@ -152,7 +152,7 @@ Sie müssen ein AEM Administrator sein, um Benutzerdaten aus Workflow-Instanzen 
    >
    >Durch Löschen des Knotens der Workflow-Instanz wird die Workflow-Instanz für alle Workflow-Teilnehmer entfernt.
 
-1. Wiederholen Sie die Schritte 2 bis 6 für alle Workflow-Instanzen, die für einen Benutzer identifiziert wurden.
+1. Wiederholen Sie die Schritte 2 bis 6 für alle Workflow-Instanzen, die für eine Benutzerin bzw. einen Benutzer identifiziert wurden.
 1. Identifizieren und löschen Sie Offline-Entwurfs- und -Sendedaten aus dem AEM [!DNL Forms]-Mobile-App-Postausgang von Workflow-Teilnehmern, um eine Übermittlung an den Server zu vermeiden.
 
 Sie können APIs auch verwenden, um auf Knoten und Eigenschaften zuzugreifen und sie zu entfernen. Weitere Informationen finden Sie in den folgenden Dokumenten.
