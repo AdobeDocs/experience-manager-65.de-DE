@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: a62ddf8b-97ea-40b9-9c3b-0922fe134567
 exl-id: 7689b0e7-9da3-467f-8e53-f056040391d8
 source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '123'
-ht-degree: 33%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Adobe Campaign ist eine Reihe von Lösungen, mit denen Sie Kampagnen personalisi
 
 In dieser Dokumentation wird beschrieben, wie Sie mit Adobe Campaign arbeiten:
 
-* Adobe Campaign 6.1, die On-Premise-Lösung.
+* Adobe Campaign 6.1, wobei es sich um die On-Premise-Lösung handelt.
 * Adobe Campaign Standard, erhältlich als Lizenzabonnement.
 
 Beachten Sie Folgendes:
@@ -30,7 +30,7 @@ Beachten Sie Folgendes:
 * [Adobe Campaign-Komponenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md)
 * [Targeting von Adobe Campaign](/help/sites-classic-ui-authoring/classic-personalization-ac-target.md)
 
-Sie müssen zuvor [integrierte AEM mit Adobe Campaign](/help/sites-administering/campaign.md).
+Sie müssen zuvor [AEM mit Adobe Campaign integriert haben](/help/sites-administering/campaign.md).
 
 Wenn Sie Ihre Integrationen anpassen möchten, lesen Sie außerdem die folgenden Themen:
 
