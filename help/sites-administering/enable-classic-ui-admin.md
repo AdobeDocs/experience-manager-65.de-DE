@@ -1,7 +1,7 @@
 ---
 title: Admin Consoles
 seo-title: Admin Consoles
-description: Es wird beschrieben, wie Sie die in AEM verfügbaren Admin Consoles verwenden.
+description: Erfahren Sie, wie Sie die in AEM verfügbaren Admin Consolen verwenden.
 seo-description: Lear how to use the Admin Consoles available in AEM.
 uuid: 82ab5267-2f2a-4772-85d5-678d883a0294
 contentOwner: Chris Bohnert
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '222'
-ht-degree: 100%
+source-git-commit: b4370d23c7b1bd43e1f02a862f11952d04892eb3
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 46%
 
 ---
 
 # Admin Consoles{#admin-consoles}
 
-In der Standardeinstellung ist die Option zum Wechseln zur klassischen Benutzeroberfläche über die Admin Consoles nun deaktiviert. Aus diesem Grund werden die Pop-up-Symbole, die beim Bewegen des Mauszeigers auf bestimmte Konsolensymbole angezeigt wurden, um den Zugriff auf die klassische Benutzeroberfläche zu ermöglichen, nicht mehr eingeblendet.
+Standardmäßig wurde die Möglichkeit deaktiviert, über die Admin Console zur klassischen Benutzeroberfläche zu wechseln. Daher werden die Pop-up-Symbole, die beim Bewegen des Mauszeigers über bestimmte Konsolensymbole angezeigt wurden und den Zugriff auf die klassische Benutzeroberfläche ermöglichten, nicht mehr angezeigt.
 
 Jede Konsole, die unter `/libs/cq/core/content/nav` über eine klassische Benutzeroberfläche verfügt, kann einzeln wieder aktiviert werden. Die Option **Klassische Benutzeroberfläche** wird für das Konsolensymbol dann wieder angezeigt, wenn Sie den Mauszeiger darauf bewegen.
 
@@ -32,9 +32,9 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
    Beispiel
 
-   [ `https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
+   [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
-1. Wählen Sie den entsprechenden Knoten der Konsole aus, für die Sie die klassische Benutzeroberfläche wieder aktivieren möchten. Im Beispiel aktivieren wir die klassische Benutzeroberfläche für die Sites-Konsole.
+1. Wählen Sie den Knoten aus, der der Konsole entspricht, für die Sie die klassische Benutzeroberfläche erneut aktivieren möchten. In unserem Beispiel wird die klassische Benutzeroberfläche für die Sites-Konsole erneut aktiviert.
 
    `/libs/cq/core/content/nav/sites`
 
@@ -42,14 +42,14 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
    * **Pfad**: `/apps/cq/core/content/nav/sites`
    * **Pfad für Überlagerung**: `/apps/`
-   * **Übereinstimmungstypen abgleichen**: aktiv (Kontrollkästchen aktivieren)
+   * **Knotentypen abgleichen**: active (aktivieren Sie das Kontrollkästchen)
 
 1. Fügen Sie dem überlagerten Knoten die folgende boolesche Eigenschaft hinzu:
 
    `enableDesktopOnly = {Boolean}true`
 
-1. Die Option **Klassische Benutzeroberfläche** ist in der Admin Console jetzt wieder als Popover-Option verfügbar.
+1. Die **Klassische Benutzeroberfläche** ist in der Admin Console wieder als Popover-Option verfügbar.
 
-   ![](assets/syui-01-2019-02-27-15-16-55.png)
+   ![Popupoption &quot;klassische Benutzeroberfläche&quot;](assets/syui-01-2019-02-27-15-16-55.png)
 
-Wiederholen Sie diese Schritte für jede Konsole, für die Sie den Zugriff auf die klassische Benutzeroberfläche wieder aktivieren möchten.
+Wiederholen Sie diese Schritte für jede Konsole, für die Sie den Zugriff auf die klassische Benutzeroberfläche erneut aktivieren möchten.

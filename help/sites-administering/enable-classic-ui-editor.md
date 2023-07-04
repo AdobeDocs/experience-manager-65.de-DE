@@ -1,7 +1,7 @@
 ---
 title: Bearbeiter
 seo-title: Editor
-description: Erfahren Sie, wie Sie zurück zum klassischen Benutzeroberflächen-Editor wechseln.
+description: Erfahren Sie, wie Sie zum klassischen UI-Editor zurückkehren.
 seo-description: Learn how to switch back to the Classic UI Editor.
 uuid: ca8b07e7-014f-428e-82bd-87f3aae12f6e
 contentOwner: Chris Bohnert
@@ -11,18 +11,18 @@ content-type: reference
 discoiquuid: 54903f3a-1e7e-4083-a2c9-b2ea4555d7fc
 docset: aem65
 exl-id: 8540e1f0-22d7-4f48-85d9-7c44eb7185df
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '100'
-ht-degree: 100%
+source-git-commit: ab6399d2d3b4ea0e77a017a34b953864ecadb10c
+workflow-type: tm+mt
+source-wordcount: '108'
+ht-degree: 40%
 
 ---
 
 # Bearbeiter{#editor}
 
-Standardmäßig ist die Möglichkeit, zum klassischen Benutzeroberflächen-Editor zu wechseln, deaktiviert.
+Standardmäßig wurde die Möglichkeit deaktiviert, vom Editor aus zur klassischen Benutzeroberfläche zu wechseln.
 
-Gehen Sie wie folgt vor, um im Menü **Seiteninformationen** die Option **In klassischer Benutzeroberfläche öffnen** wieder zu aktivieren.
+So aktivieren Sie die Option erneut **In klassischer Benutzeroberfläche öffnen** im **Seiteninformationen** Gehen Sie wie folgt vor.
 
 1. Suchen Sie mithilfe von CRXDE Lite den folgenden Knoten:
 
@@ -36,7 +36,7 @@ Gehen Sie wie folgt vor, um im Menü **Seiteninformationen** die Option **In kla
 
    * **Pfad**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
    * **Pfad für Überlagerung**: `/apps/`
-   * **Übereinstimmungstypen abgleichen**: aktiv (Kontrollkästchen aktivieren)
+   * **Knotentypen abgleichen**: active (aktivieren Sie das Kontrollkästchen)
 
 1. Fügen Sie die folgende Multiwert-Texteigenschaft zum überlagerten Knoten hinzu:
 
@@ -44,4 +44,4 @@ Gehen Sie wie folgt vor, um im Menü **Seiteninformationen** die Option **In kla
 
 1. Die Option **In klassischer Benutzeroberfläche öffnen** steht nun wieder beim Bearbeiten von Seiten im Menü **Seiteninformationen** zur Verfügung.
 
-   ![](assets/syui-03-2019-02-27-15-19-48.png)
+   ![Option in der klassischen Benutzeroberfläche über Seiteninformationen öffnen](assets/syui-03-2019-02-27-15-19-48.png)
