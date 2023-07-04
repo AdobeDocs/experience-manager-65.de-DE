@@ -1,5 +1,5 @@
 ---
-title: Inhaltsseiten-Authoring mit Inhaltsfragmenten
+title: Inhaltsseitenbearbeitung mit Inhaltsfragmenten
 description: Mit AEM Inhaltsfragmenten können Sie seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden.
 uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
@@ -10,9 +10,9 @@ discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1140'
-ht-degree: 58%
+ht-degree: 100%
 
 ---
 
@@ -41,27 +41,27 @@ Die Inhaltsfragmente ermöglichen Folgendes:
 
 * **Marketing- und Kampagnenstrategie**
 
-   * Überprüfen Sie Inhalte über zentral verwaltete Inhaltsfragmente.
+   * Überprüfen von Inhalten über zentral verwaltete Inhaltsfragmente.
 
 * **Creative Pro**
 
-   * Tracking von kreativen Assets über Sammlungen, die mit Inhaltsfragmenten verknüpft sind.
+   * Tracking von Kreativ-Assets über Sammlungen, die mit Inhaltsfragmenten verknüpft sind.
 
-* **Writer kopieren**
+* **Copywriter**
 
-   * Schreiben Sie im Inhaltsfragment-Editor AEM.
-   * Kann Inhaltsvarianten erstellen.
-   * Kann relevante Inhalte mit dem Inhaltsfragment verknüpfen.
-   * Kann Versionierung/Workflow verwenden.
-   * Kann Inhaltsfragmente freigeben.
-   * Kann Übersetzungen zentral verwalten.
+   * Schreiben im Inhaltsfragment-Editor von AEM.
+   * Können Inhaltsvarianten erstellen.
+   * Können relevante Inhalte mit dem Inhaltsfragment verknüpfen.
+   * Können Versionierung/Workflow verwenden.
+   * Können Inhaltsfragmente freigeben.
+   * Können Übersetzungen zentral verwalten.
 
 * **Produzenten und Journey-Manager**
 
-   * Wählen Sie aus vordefinierten Fragmenten und Varianten mit Authoring in AEM aus.
-   * Kann sich darauf verlassen, dass Fragmente und verknüpfte Inhalte immer aktuell sind, da Autoren und Kreative ihre Aktualisierungen in zentral verwalteten Fragmenten und Assets vornehmen.
-   * Kann sich darauf verlassen, dass verknüpfte Medieninhalte für Relevanz kuratiert werden.
-   * Kann spontan Ad-hoc-Inhaltsvarianten erstellen und gleichzeitig sicherstellen, dass diese Varianten zentral im Fragment verwaltet werden.
+   * Auswahl aus vordefinierten Fragmenten und Varianten mit Authoring in AEM.
+   * Können sich darauf verlassen, dass Fragmente und verknüpfte Inhalte immer aktuell sind, da Copywriter und Kreative ihre Aktualisierungen in zentral verwalteten Fragmenten und Assets vornehmen.
+   * Können sich darauf verlassen, dass verknüpfte Medieninhalte im Hinblick auf ihre Relevanz kuratiert werden.
+   * Können spontan Ad-hoc-Inhaltsvarianten erstellen und gleichzeitig sicherstellen, dass diese Varianten zentral im Fragment verwaltet werden.
 
 ## Hinzufügen eines Inhaltsfragments zu Ihrer Seite {#adding-a-content-fragment-to-your-page}
 
@@ -71,7 +71,7 @@ Die Inhaltsfragmente ermöglichen Folgendes:
 
 1. Wählen Sie eine der folgenden Möglichkeiten:
 
-   * Öffnen Sie den **Assets**-Browser und filtern Sie nach der Option **Inhaltsfragmente** (die Standardeinstellung ist „Bilder“). Ziehen Sie dann das gewünschte Fragment auf die Komponenteninstanz.
+   * Öffnen Sie den **Assets**-Browser und filtern Sie nach der Option **Inhaltsfragmente** (die Standardeinstellung ist „Bilder“). Ziehen Sie dann das gewünschte Fragment auf die entsprechende Komponente.
 
    * Wählen Sie die Inhaltsfragmentkomponente und dann **Konfigurieren** aus der Symbolleiste. Im daraufhin angezeigten Dialogfeld können Sie das Auswahldialogfeld zum Durchsuchen und Auswählen des gewünschten **Inhaltsfragments** öffnen.
    >[!NOTE]
@@ -110,7 +110,7 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
 
 * **Element**
 
-   * Die Standardeinstellung **Main** wird immer verfügbar sein.
+   * Die Standardoption **Primär** ist immer verfügbar.
    * Eine Auswahl ist verfügbar, wenn das Fragment mit einer entsprechenden Vorlage erstellt wurde.
 
    >[!NOTE]
@@ -122,7 +122,7 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
    * Die Standardversion **Primär** ist immer verfügbar.
    * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden.
 
-* **Absätze**: Geben Sie den Bereich der zu berücksichtigenden Absätze an:
+* **Absätze**: Geben Sie den Bereich der aufzunehmenden Absätze an:
 
    * **Alle**
    * **Bereich**: Zum Beispiel `1`, `3-5`, `9-*`
@@ -141,14 +141,14 @@ Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols 
 
 ### Hinzufügen von Zwischeninhalten {#adding-in-between-content}
 
-Wenn ein bestimmtes Inhaltsfragment zur Seite hinzugefügt wird, gibt es eine **Komponenten hierher ziehen** Platzhalter zwischen jedem HTML-Absatz (und am oberen/unteren Rand) des Fragments.
+Wenn ein bestimmtes Inhaltsfragment zur Seite hinzugefügt wird, gibt es einen Platzhalter **Komponenten hierher ziehen** zwischen jedem HTML-Absatz (und am oberen/unteren Rand) des Fragments.
 
-Auf diese Weise können Sie zusätzliche Inhalte hinzufügen [Zwischeninhalt (d. h. Zwischeninhalt)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) den Fragmentinhalt (an einem der verfügbaren Punkte), ohne das Stammfragment ändern zu müssen.
+Damit können Sie zusätzliche Inhalte [zwischen (d. h. Zwischeninhalte)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) dem Fragmentinhalt (an einer der verfügbaren Stellen) hinzufügen, ohne das Stammfragment ändern zu müssen.
 
-Für Übergangsinhalte haben Sie folgende Möglichkeiten:
+Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 
-* Komponenten aus der [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
-* Hinzufügen von Assets aus der [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser).
+* Hinzufügen von Komponenten aus dem [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser).
+* Hinzufügen von Assets aus dem [Asset-Browser](/help/sites-authoring/author-environment-tools.md#assets-browser).
 * [Zugehörige Inhalte](#using-associated-content) als Quelle für Zwischeninhalte verwenden.
 
 >[!CAUTION]
@@ -159,9 +159,9 @@ Für Übergangsinhalte haben Sie folgende Möglichkeiten:
 
 >[!NOTE]
 >
->Sie können auch [Einfügen visueller Assets (Bilder) in das Fragment selbst](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>Sie können auch [visuelle Assets (Bilder) in das Fragment selbst einfügen](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
->In das Fragment selbst eingefügte visuelle Assets werden an den vorangehenden Absatz im Fragment angehängt. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden.
+>Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Deshalb können Zwischeninhalte nicht zwischen einem visuellen Asset und dem vorangehenden Absatz platziert werden.
 
 >[!CAUTION]
 >
@@ -169,7 +169,7 @@ Für Übergangsinhalte haben Sie folgende Möglichkeiten:
 >
 >Wenn dies eintritt, wird der Zwischeninhalt unverändert beibehalten:
 >
->* Übergangskomponenten haben eine absolute Position innerhalb der Komponentensequenz im Fragmentfluss. Diese Position ändert sich nicht, auch wenn sich der Inhalt der Absätze im Fragment ändert.
+>* Zwischenkomponenten haben eine absolute Position innerhalb der Komponentensequenz im Fragmentfluss. Diese Position ändert sich nicht, auch wenn sich der Inhalt der Absätze im Fragment ändert.
 >
 >  Dies kann den Eindruck erwecken, als hätte sich die relative Position geändert, da Zwischenabsätze keinen kontextuellen Bezug zu den Absätzen (des Fragments) haben, neben denen sie sich befinden.
 >* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
@@ -186,9 +186,9 @@ Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments/content-fragments-
 
 >[!NOTE]
 >
->Wenn sich auf einer Seite mehrere Inhaltsfragmente befinden, wird die **Zugehörige Inhalte** -Registerkarte zeigt Assets an, die für alle Fragmente geeignet sind.
+>Wenn sich auf einer Seite mehrere Inhaltsfragmente befinden, zeigt die Registerkarte **Verknüpfte Inhalte** Assets an, die für alle Fragmente geeignet sind.
 
-Nachdem Sie ein Fragment mit verknüpftem Inhalt zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Zugehörige Inhalte**) im Seitenbereich geöffnet.
+Nachdem Sie ein Fragment mit verknüpftem Inhalt zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Verknüpfte Inhalte**) im Seitenbereich geöffnet.
 
 Von hier aus können Sie die Assets an die gewünschte Position ziehen (entweder zu einer vorhandenen Komponente oder an die gewünschte Position, an der die entsprechende Komponente erstellt wird):
 
@@ -200,16 +200,16 @@ Wenn Assets (z. B. Bilder) in das Fragment eingefügt wurden, sind die Optionen 
 
 Beispielsweise haben Sie zur Bearbeitung eines Bildes folgende Möglichkeiten:
 
-* Beschneiden, Drehen oder Spiegeln des Bildes.
+* Zuschneiden, Drehen oder Spiegeln des Bildes.
 * Fügen Sie einen Titel oder alternativen Text hinzu.
 * Geben Sie eine Größe an.
 * Sie können auch das Layout konfigurieren.
 
-Andere Änderungen wie Verschieben, Kopieren und Löschen müssen im Fragment-Editor vorgenommen werden.
+Andere Änderungen wie Verschieben, Kopieren und Löschen müssen im Fragmenteditor vorgenommen werden.
 
 ### Veröffentlichung {#publishing}
 
 Fragmente müssen zuerst veröffentlicht werden, damit sie auf Ihren veröffentlichten Web-Seiten verwendet werden können:
 
-* Ein Fragment kann veröffentlicht werden, nachdem [Erstellen des Fragments in der Konsole &quot;Assets&quot;](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
+* Ein Fragment kann veröffentlicht werden, nachdem es [in der Asset-Konsole erstellt wurde](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
 * Wenn ein *unveröffentlichtes Fragment* auf einer Seite verwendet wird, die veröffentlicht wird, kann das Fragment ebenfalls zu diesem Zeitpunkt veröffentlicht werden.
