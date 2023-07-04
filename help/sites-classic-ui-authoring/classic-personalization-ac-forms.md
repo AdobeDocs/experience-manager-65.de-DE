@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
 source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1228'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Mit AEM können Sie Formulare erstellen und bearbeiten, die auf Ihrer Website mi
 
 Sie können neue Kontaktanmeldungen, -abmeldungen und Benutzerprofildaten verwalten und gleichzeitig deren Daten in Ihre Adobe Campaign-Datenbank integrieren.
 
-Um Adobe Campaign forms in AEM zu verwenden, müssen Sie die folgenden Schritte ausführen, die in diesem Dokument beschrieben werden:
+Um Adobe Campaign-Formulare in AEM zu verwenden, müssen Sie die folgenden Schritte ausführen, die in diesem Dokument beschrieben werden:
 
 1. Stellen Sie eine Vorlage zur Verfügung.
 1. Erstellen Sie ein Formular.
@@ -30,14 +30,14 @@ Um Adobe Campaign forms in AEM zu verwenden, müssen Sie die folgenden Schritte 
 Standardmäßig sind drei Formulartypen für Adobe Campaign verfügbar:
 
 * Profil speichern
-* Dienst abonnieren
-* Abmeldung von einem Dienst
+* Service abonnieren
+* Von einem Service abmelden
 
 Diese Formulare definieren einen URL-Parameter, der den verschlüsselten Primärschlüssel eines Adobe Campaign-Profils akzeptiert. Basierend auf diesem URL-Parameter aktualisiert das Formular die Daten des zugehörigen Adobe Campaign-Profils.
 
-Obwohl Sie diese Formulare unabhängig voneinander erstellen, generieren Sie in einem typischen Anwendungsfall einen personalisierten Link zu einer Formularseite innerhalb des Newsletter-Inhalts, damit Empfänger den Link öffnen und Anpassungen an ihren Profildaten vornehmen können (unabhängig davon, ob sie sich abmelden, abonnieren oder ihr Profil aktualisieren).
+Obwohl Sie diese Formulare unabhängig voneinander erstellen, generieren Sie in einem typischen Anwendungsfall einen personalisierten Link zu einer Formularseite innerhalb des Newsletter-Inhalts, damit Empfängerinnen und Empfänger den Link öffnen und Anpassungen an ihren Profildaten vornehmen können (unabhängig davon, ob sie sich abmelden, abonnieren oder ihr Profil aktualisieren).
 
-Das Formular wird basierend auf dem Benutzer automatisch aktualisiert. Siehe [Bearbeiten von Formularinhalten](#editing-form-content) für weitere Informationen.
+Das Formular wird basierend auf der Benutzerin bzw. dem Benutzer automatisch aktualisiert. Siehe [Formularinhalt bearbeiten](#editing-form-content), um weitere Informationen zu erhalten.
 
 ## Verfügbarmachen von Vorlagen {#making-a-template-available}
 
@@ -45,7 +45,7 @@ Damit Sie für Adobe Campaign spezifische Formulare erstellen können, müssen S
 
 Weitere Informationen hierzu finden Sie in der [Vorlagendokumentation](/help/sites-developing/page-templates-static.md#templateavailability).
 
-Überprüfen Sie zunächst, ob die Verbindung zwischen der Autoren- und der Veröffentlichungsinstanz und Adobe Campaign funktioniert. Siehe [Integration mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) oder [Integration mit Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md).
+Überprüfen Sie zunächst, ob die Verbindung zwischen der Authoring- und der Publishing-Instanz und Adobe Campaign funktioniert. Weitere Informationen finden Sie unter [Integration mit Adobe Campaign Standard](/help/sites-administering/campaignstandard.md) oder [Integration mit Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md).
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Weitere Informationen hierzu finden Sie in der [Vorlagendokumentation](/help/sit
 
 ### Erstellen von Formularen {#creating-a-form}
 
-1. Beginnen Sie mit siteadmin.
+1. Beginnen Sie in siteadmin.
 1. Durchsuchen Sie die Baumstruktur so lange, bis Sie den Ort finden, an dem Sie das Formular auf der gewünschten Website erstellen möchten.
 1. Wählen Sie **Neu** > **Neue Seite...** aus.
 1. Wählen Sie entweder die Vorlage **Adobe Campaign-Profil (AC 6.1)** oder **Adobe Campaign-Profil (ACS)** aus und geben Sie die Seiteneigenschaften ein.
@@ -66,11 +66,11 @@ Weitere Informationen hierzu finden Sie in der [Vorlagendokumentation](/help/sit
 
    ![chlimage_1-187](assets/chlimage_1-187.png)
 
-   Sie können dann [Bearbeiten und Konfigurieren des Formularinhalts](#editing-form-content).
+   Sie können dann [den Formularinhalt bearbeiten und konfigurieren](#editing-form-content).
 
 ## Bearbeiten von Formularinhalten {#editing-form-content}
 
-Für Adobe Campaign dedizierte Forms verfügen über bestimmte Komponenten. Diese Komponenten bieten die Möglichkeit, jedes Formularfeld mit einem Feld in der Adobe Campaign-Datenbank zu verknüpfen.
+Eigens für Adobe Campaign erstellte Formulare haben bestimmte Komponenten. Diese Komponenten bieten die Möglichkeit, jedes Formularfeld mit einem Feld in der Adobe Campaign-Datenbank zu verknüpfen.
 
 >[!NOTE]
 >
@@ -90,13 +90,13 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
 
    Im Formular **Erweitert** können Sie den Formulartyp auswählen. Das Feld **Post-Optionen** ermöglicht Ihnen die Wahl zwischen drei Typen von Adobe Campaign-Formularen:
 
-   * **Adobe Campaign: Profil speichern**: ermöglicht die Erstellung oder Aktualisierung eines Empfängers in Adobe Campaign (Standardwert).
-   * **Adobe Campaign: Abonnieren von Diensten**: ermöglicht die Verwaltung der Empfängeranmeldungen in Adobe Campaign.
-   * **Adobe Campaign: Abmeldung von Diensten**: ermöglicht Ihnen, die Abonnements eines Empfängers in Adobe Campaign abzubrechen.
+   * **Adobe Campaign: Profil speichern**: ermöglicht das Erstellen oder Aktualisieren einer Empfängerin oder eines Empfängers in Adobe Campaign (Standardwert).
+   * **Adobe Campaign: Abonnieren von Diensten**: ermöglicht das Verwalten der Abonnements einer Empfängerin oder eines Empfängers in Adobe Campaign.
+   * **Adobe Campaign: Abmeldung von Diensten**: ermöglicht Ihnen, die Abonnements einer Empfängerin oder eines Empfängers in Adobe Campaign zu stornieren.
 
    Über das Feld **Aktionskonfiguration** können Sie angeben, ob Sie das Empfängerprofil in der Adobe Campaign-Datenbank erstellen möchten, falls es noch nicht vorhanden ist. Aktivieren Sie hierzu die Option **Nicht vorhandene Benutzer erstellen**.
 
-1. Fügen Sie die ausgewählten Komponenten hinzu, indem Sie sie aus der Toolbox ziehen und in das Formular ablegen. Weitere Informationen zu den verfügbaren Adobe Campaign-spezifischen Komponenten finden Sie unter [Adobe-Formularkomponenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
+1. Fügen Sie die ausgewählten Komponenten hinzu, indem Sie sie aus der Toolbox ziehen und im Formular ablegen. Weitere Informationen zu den verfügbaren Adobe Campaign-spezifischen Komponenten finden Sie unter [Adobe-Formularkomponenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md).
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
@@ -108,7 +108,7 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
    >
    >Jedes Formular muss eine Komponente des Typs **Verschlüsselter Primärschlüssel** aufweisen, damit die Empfänger in der Adobe Campaign-Datenbank ordnungsgemäß verwaltet werden können.
 
-1. Aktivieren Sie die Seite, indem Sie in der Toolbox **Seite** > **Seite aktivieren** auswählen. Die Seite wird auf Ihrer Site aktiviert. Sie können sie anzeigen, indem Sie zu Ihrer AEM Veröffentlichungsinstanz wechseln. Die Daten in der Adobe Campaign-Datenbank werden aktualisiert, sobald ein Formular validiert wurde.
+1. Aktivieren Sie die Seite, indem Sie in der Toolbox **Seite** > **Seite aktivieren** auswählen. Die Seite wird auf Ihrer Site aktiviert. Sie können sie anzeigen, indem Sie zu Ihrer AEM-Publishing-Instanz wechseln. Die Daten in der Adobe Campaign-Datenbank werden aktualisiert, sobald ein Formular validiert wurde.
 
 ## Testen eines Formulars {#testing-a-form}
 
@@ -118,11 +118,11 @@ Nachdem Sie ein Formular erstellt und den Formularinhalt bearbeitet haben, könn
 >
 >Jedes Formular muss eine Komponente des Typs **Verschlüsselter Primärschlüssel** aufweisen. Wählen Sie aus den Komponenten Adobe Campaign aus, sodass nur die entsprechenden Komponenten angezeigt werden.
 >
->Obwohl Sie bei diesem Verfahren die EPK-Nummer manuell eingeben, erhalten Benutzer in der Praxis einen Link zu dieser Seite (ob sie sich abmelden, abonnieren oder Ihr Profil aktualisieren möchten) in einem Newsletter. Je nach Benutzer wird der EPK automatisch aktualisiert.
+>Obwohl Sie bei diesem Verfahren die Nummer des verschlüsselten Primärschlüssels manuell eingeben, erhalten Benutzerinnen und Benutzer in der Praxis einen Link zu dieser Seite (egal ob sie sich abmelden, abonnieren oder Ihr Profil aktualisieren möchten) in einem Newsletter. Je nach Benutzerin bzw. Benutzer wird der verschlüsselte Primärschlüssel automatisch aktualisiert.
 >
 >Verwenden Sie zur Herstellung dieser Verknüpfung die Variable **Hauptressourcenkennung** (Adobe Campaign Standard) oder **Verschlüsselte Kennung** (Adobe Campaign 6.1) (beispielsweise in einer Komponente des Typs **Text und Personalisierung (Kampagne)**), die eine Verknüpfung mit dem EPK in Adobe Campaign herstellt.
 
-Dazu müssen Sie das EPK eines Adobe Campaign-Profils manuell abrufen und an die URL anhängen:
+Dazu müssen Sie den verschlüsselten Primärschlüssel eines Adobe Campaign-Profils manuell abrufen und an die URL anhängen:
 
 1. So rufen Sie den verschlüsselten Primärschlüssel (EPK) eines Adobe Campaign-Profils ab:
 
