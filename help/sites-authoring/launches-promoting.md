@@ -1,6 +1,6 @@
 ---
-title: Launches bewerben
-description: Sie können Launch-Seiten weiterleiten, um den Inhalt vor der Veröffentlichung zurück in die Quelle (Produktion) zu verschieben.
+title: Hochstufen von Launches
+description: Sie stufen Launch-Seiten hoch, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird.
 uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,28 +11,28 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
 source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '754'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 # Weiterleiten von Launches{#promoting-launches}
 
-Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. Beim Weiterleiten einer Launch-Seite wird die entsprechende Seite der Quellseiten mit dem Inhalt der weitergeleiteten Seite aktualisiert. Beim Anzeigen einer Launch-Seite stehen die folgenden Optionen zur Verfügung:
+Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichung wieder in die Quelle (Produktion) verschoben wird. Beim Weiterleiten einer Launch-Seite wird die entsprechende Seite der Quellseiten mit dem Inhalt der weitergeleiteten Seite aktualisiert. Beim Hochstufen einer Launch-Seite stehen die folgenden Optionen zur Verfügung:
 
-* Gibt an, ob nur die aktuelle Seite oder der gesamte Launch weitergeleitet werden soll.
-* Gibt an, ob die untergeordneten Seiten der aktuellen Seite weitergeleitet werden sollen.
-* Ob der vollständige Launch weitergeleitet werden soll oder nur Seiten, die geändert wurden.
-* Ob der Launch nach der Promotion gelöscht werden soll.
+* Gibt an, ob nur die aktuelle Seite oder der gesamte Launch hochgestuft werden soll.
+* Gibt an, ob die untergeordneten Seiten der aktuellen Seite hochgestuft werden sollen.
+* Ob der vollständige Launch hochgestuft werden soll oder nur Seiten, die geändert wurden.
+* Ob der Launch nach der Hochstufung gelöscht werden soll.
 
 >[!NOTE]
 >
->Nach dem Weiterleiten der Launch-Seiten an das Ziel (**Produktion**), können Sie die **Produktion** Seiten als Entität (um den Prozess schneller zu gestalten). Fügen Sie die Seiten einem Workflow-Paket hinzu und verwenden Sie es als Payload für einen Workflow, der ein Paket mit Seiten aktiviert. Sie müssen das Workflow-Paket erstellen, bevor Sie den Launch weiterleiten. Siehe [Verarbeiten weitergeleiteter Seiten mit AEM Workflow](#processing-promoted-pages-using-aem-workflow).
+>Nach dem Hochstufen der Launch-Seiten zum Ziel (**Produktion**) können Sie die **Produktionsseiten** als Entität aktivieren (um den Prozess schneller zu gestalten). Fügen Sie die Seiten einem Workflow-Paket hinzu und verwenden Sie es als Payload für einen Workflow, der ein Paket mit Seiten aktiviert. Sie müssen das Workflow-Paket erstellen, bevor Sie den Launch weiterleiten. Siehe [Bearbeiten hochgestufter Seiten mit einem AEM-Workflow ](#processing-promoted-pages-using-aem-workflow)
 
 >[!CAUTION]
 >
->Ein einzelner Launch kann nicht gleichzeitig beworben werden. Dies bedeutet, dass zwei gleichzeitig ausgeführte Weiterleitungen für denselben Launch einen Fehler verursachen können: `Launch could not be promoted` (zusammen mit Konfliktfehlern im Protokoll).
+>Ein einzelner Launch kann nicht gleichzeitig mehrfach hochgestuft werden. Dies bedeutet, dass zwei gleichzeitig ausgeführte Weiterleitungen für denselben Launch einen Fehler verursachen können: `Launch could not be promoted` (zusammen mit Konfliktfehlern im Protokoll).
 
 >[!CAUTION]
 >
@@ -42,41 +42,41 @@ Sie müssen Launch-Seiten weiterleiten, damit der Inhalt vor der Veröffentlichu
 
 >[!NOTE]
 >
->Dies umfasst die manuelle Aktion zum Weiterleiten von Launch-Seiten, wenn nur eine Launch-Ebene vorhanden ist. Siehe:
+>Dies umfasst die manuelle Aktion des Hochstufens von Launch-Seiten, wenn nur eine Launch-Ebene vorhanden ist. Siehe:
 >
->* [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch) wenn sich in der Struktur mehrere Launches befinden.
->* [Launches - die Reihenfolge der Ereignisse](/help/sites-authoring/launches.md#launches-the-order-of-events) für weitere Informationen zur automatischen Promotion und Veröffentlichung.
+>* [Hochstufen eines verschachtelten Launches](#promoting-a-nested-launch), wenn sich in der Struktur mehrere Launches befinden.
+>* [Launches – die Reihenfolge der Ereignisse](/help/sites-authoring/launches.md#launches-the-order-of-events) für weitere Informationen zur automatischen Hochstufung und Veröffentlichung.
 >
 
 
-Sie können Launches über die **Sites** oder **Starts** console:
+Sie können Launches über die Konsolen **Sites** oder **Launches** hochstufen.
 
 1. Öffnen Sie:
 
-   * die **Sites** console:
+   * In der **Sites**-Konsole:
 
       1. Öffnen Sie die Leiste [Verweise](/help/sites-authoring/author-environment-tools.md#showingpagereferences) und wählen Sie die gewünschte Quellseite mithilfe des [Auswahlmodus](/help/sites-authoring/basic-handling.md) aus. (Oder wählen Sie die Seite aus und öffnen die Verweisleiste. Die Reihenfolge ist nicht wichtig.) Alle Verweise werden angezeigt.
 
-      1. Auswählen **Starts** (z. B. Starts (1)), um eine Liste der spezifischen Launches anzuzeigen.
-      1. Wählen Sie den jeweiligen Launch aus, um die verfügbaren Aktionen anzuzeigen.
+      1. Wählen Sie **Launches** aus (z. B. „Launches (1)“), um eine Liste der spezifischen Launches anzuzeigen.
+      1. Wählen Sie den gewünschten Launch aus, damit die verfügbaren Aktionen angezeigt werden.
       1. Wählen Sie **Launch bewerben** aus, um den Assistenten zu öffnen.
    * die **Launch**-Konsole:
 
-      1. Wählen Sie Ihren Launch aus (tippen/klicken Sie auf die Miniaturansicht).
+      1. Wählen Sie den Launch aus, indem Sie auf die Miniaturansicht tippen/klicken.
       1. Wählen Sie **Bewerben** aus.
 
 
-1. Im ersten Schritt können Sie Folgendes angeben:
+1. Im ersten Schritt können Sie folgende Optionen festlegen:
 
    * **Ziel**
 
-      * **Start nach der Veröffentlichung löschen**
+      * **Launch nach der Veröffentlichung löschen**
    * **Umfang**
 
-      * **Vollständigen Launch bewerben**
-      * **Geänderte Seiten bewerben**
-      * **Aktuelle Seite bewerben**
-      * **Aktuelle Seite und Unterseiten bewerben**
+      * **Vollständigen Launch hochstufen**
+      * **Geänderte Seiten hochstufen**
+      * **Aktuelle Seite hochstufen**
+      * **Aktuelle Seite und Unterseiten hochstufen**
 
    Wenn beispielsweise nur geänderte Seiten weitergeleitet werden sollen:
 
@@ -84,9 +84,9 @@ Sie können Launches über die **Sites** oder **Starts** console:
 
    >[!NOTE]
    >
-   >Dies behandelt einen einzelnen Launch, wenn Sie verschachtelte Launches haben, siehe [Weiterleiten eines verschachtelten Launches](#promoting-a-nested-launch).
+   >Dies behandelt einen einzelnen Launch. Falls Sie verschachtelte Launches haben, siehe [Hochstufen eines verschachtelten Launches](#promoting-a-nested-launch).
 
-1. Auswählen **Nächste** um fortzufahren.
+1. Klicken Sie auf **Weiter**, um fortzufahren.
 1. Sie können die weiterzuleitenden Seiten überprüfen. Diese Überprüfung hängt vom ausgewählten Seitenbereich ab:
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
@@ -116,15 +116,15 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
 
    * **Ziel**
 
-      * **Ziel der Promotion** Sie können an eine beliebige Quelle weiterleiten. 
+      * **Ziel der Promotion** Sie können an eine beliebige Quelle weiterleiten.
 
       * **Launch nach der Veröffentlichung löschen** Nach der Promotion wird der ausgewählte Launch und alle darin enthaltenen Launches gelöscht.
-   * **Bereich** Hier können Sie auswählen, ob der gesamte Launch weitergeleitet werden soll oder nur die Seiten, die bearbeitet wurden. Im zweiten Fall können Sie dann auswählen, welche Unterseiten einbezogen bzw. ausgeschlossen werden. Die Standardkonfiguration besteht darin, nur Seitenänderungen für die aktuelle Seite weiterzuleiten:
+   * **Bereich** Hier können Sie auswählen, ob der gesamte Launch weitergeleitet werden soll oder nur die Seiten, die bearbeitet wurden. Im zweiten Fall können Sie dann auswählen, welche Unterseiten einbezogen bzw. ausgeschlossen werden. Die Standardkonfiguration besteht darin, nur Seitenänderungen für die aktuelle Seite hochzustufen
 
-      * **Vollständigen Launch bewerben**
-      * **Geänderte Seiten bewerben**
-      * **Aktuelle Seite bewerben**
-      * **Aktuelle Seite und Unterseiten bewerben**
+      * **Vollständigen Launch hochstufen**
+      * **Geänderte Seiten hochstufen**
+      * **Aktuelle Seite hochstufen**
+      * **Aktuelle Seite und Unterseiten hochstufen**
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -135,22 +135,22 @@ Wenn Sie einen verschachtelten Launch erstellt haben, können Sie ihn wieder an 
 
    >[!NOTE]
    >
-   >Die aufgeführten Seiten hängen von der **Anwendungsbereich** definiert und möglicherweise die Seiten, die tatsächlich bearbeitet wurden.
+   >Die aufgeführten Seiten hängen vom definierten **Anwendungsbereich** ab und möglicherweise den Seiten, die tatsächlich bearbeitet wurden.
 
-1. Ihre Änderungen werden gefördert und in der **Starts** console:
+1. Ihre Änderungen werden hochgestuft und in der Konsole **Launches** dargestellt:
 
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
 ## Bearbeiten weitergeleiteter Seiten mit einem AEM-Workflow {#processing-promoted-pages-using-aem-workflow}
 
-Verwenden Sie Workflow-Modelle, um eine Massenverarbeitung von beworbenen Launches-Seiten durchzuführen:
+Verwenden Sie Workflow-Modelle, um Seiten von hochgestuften Launches massenweise zu verarbeiten:
 
-1. Erstellen Sie ein Workflow-Paket.
-1. Wenn Autoren Launch-Seiten weiterleiten, speichern sie sie im Workflow-Paket.
-1. Starten Sie ein Workflow-Modell mit dem -Paket als Payload.
+1. Erstellen Sie ein Workflow-Modell.
+1. Wenn Autorinnen und Autoren Launch-Seiten hochstufen, speichern sie sie im Workflow-Paket.
+1. Starten Sie ein Workflow-Modell mit dem Paket als Payload.
 
-So starten Sie einen Workflow automatisch, wenn Seiten weitergeleitet werden: [Konfigurieren eines Workflow-Starters](/help/sites-administering/workflows-starting.md#workflows-launchers) für den Paketknoten.
+Um einen Workflow automatisch zu starten, wenn Seiten hochgestuft werden, [konfigurieren Sie einen Workflow-Launcher](/help/sites-administering/workflows-starting.md#workflows-launchers) für den Paketknoten.
 
-Sie können z. B. automatisch Seitenaktivierungsanfragen generieren, wenn Autoren Launches-Seiten weiterleiten. Konfigurieren Sie einen Workflow-Starter, um den Workflow Anforderungsaktivierung zu starten, wenn der Paketknoten geändert wird.
+Sie können z. B. automatisch Seitenaktivierungsanfragen generieren, wenn Autoren Launches-Seiten weiterleiten. Konfigurieren Sie einen Workflow-Starter, um den Aktivierungsanfrage-Workflow zu starten, wenn der Paketknoten geändert wurde.
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
