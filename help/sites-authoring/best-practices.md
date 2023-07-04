@@ -1,6 +1,6 @@
 ---
-title: Best Practices für die Verwendung von AEM Authoring
-description: Verwendung von AEM auf die effizienteste und effizienteste Weise.
+title: Best Practices für die Verwendung von Authoring in AEM
+description: Wie Sie AEM so effizient und effektiv wie möglich nutzen können.
 uuid: b3044cdf-8ca4-4012-b290-11f73c0cb1bf
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: d15ded18-7417-47e2-9783-b23fa05a0cda
 exl-id: 9994c63b-65ca-4974-a48d-992f5f8f3f01
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 64%
+ht-degree: 100%
 
 ---
 
@@ -31,7 +31,7 @@ Best Practices für die Verwaltung, Bereitstellung, Pflege und Entwicklung finde
 * [Best Practices für die Entwicklung](/help/sites-developing/best-practices.md)
 * [Best Practices für die Bereitstellung](/help/sites-deploying/best-practices.md)
 
-Spezifische Dokumente werden in den folgenden Tabellen beschrieben und mit ihnen verknüpft.
+Spezifische Dokumente werden in den folgenden Tabellen beschrieben und verlinkt.
 
 ## Assets {#assets}
 
@@ -47,7 +47,7 @@ Best Practices rund um Assets, einschließlich der Dynamic Media-Funktionen und 
   <tr>
    <td>Videokodierung</td>
    <td><a href="/help/assets/video.md#best-practices-for-encoding-videos">Best Practices für die Kodierung</a></td>
-   <td>Beschreibt Best Practices für die Kodierung von Quellvideodateien.</td>
+   <td>Beschreibt Best Practices für die Codierung von Quellvideodateien.</td>
   </tr>
   <tr>
    <td>Dynamic Imaging</td>
@@ -76,4 +76,4 @@ Für die Verwaltung und Bearbeitung von Website-Inhalten gelten folgende Best Pr
 |  |  |  |
 |---|---|---|
 | Adaptive Formulare | [Best Practices für die Arbeit mit adaptiven Formularen](/help/forms/using/adaptive-forms-best-practices.md) | Beschreibt Best Practices zum Einrichten, Bearbeiten und Anpassen adaptiver Formulare. |
-| HTML5-Formulare | [Best Practices für die Erstellung von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md) | Beschreibt Best Practices für die Arbeit am Layout und Design von HTML5-Formularen. |
+| HTML5-Formulare | [Best Practices für die Gestaltung von HTML5-Formularen](/help/forms/using/best-practices-for-html5-forms.md) | Beschreibt Best Practices für die Arbeit am Layout und Design von HTML5-Formularen. |
