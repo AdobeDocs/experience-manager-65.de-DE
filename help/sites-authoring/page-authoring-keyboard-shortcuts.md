@@ -1,5 +1,5 @@
 ---
-title: Tastaturbefehle bei der Bearbeitung von Inhaltsseiten
+title: Tastaturbefehle für die Inhaltsseitenbearbeitung
 description: In AEM stehen verschiedene Tastaturbefehle zur Verfügung, darunter auch Befehle für die Bearbeitung von Seiten.
 uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
 contentOwner: Chris Bohnert
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '222'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
