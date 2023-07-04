@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines neuen Anmeldungsbildschirms
 seo-title: Creating a new login screen
-description: Gehen Sie wie folgt vor, um die Anmeldeseite von LiveCycle-Modulen zu ändern, z. B. AEM Forms Workspace oder Forms Manager.
+description: Gehen Sie wie folgt vor, um die Anmeldeseite von LiveCycle-Modulen zu ändern, z. B. AEM Forms Workspace oder Forms Manager.
 seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
 uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
 content-type: reference
@@ -11,9 +11,9 @@ discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
 source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '462'
-ht-degree: 79%
+ht-degree: 100%
 
 ---
 
@@ -204,7 +204,7 @@ String browserLocale = "en";
 
 1. Ändern Sie nun den Wert der Eigenschaft `sling:message` des Knotens (unter dem Codeordner des gewünschten Gebietsschemas) für den Sie den Text ändern möchten. Die Übersetzung wird mit dem Schlüssel durchgeführt, der im Wert der Eigenschaft `sling:key` des Knotens aufgeführt ist.
 
-1. Um ein neues Schlüssel-Wert-Paar hinzuzufügen, führen Sie die folgenden Aktionen aus. Überprüfen Sie ein Beispiel im folgenden Screenshot.
+1. Um ein neues Schlüssel-Wert-Paar hinzuzufügen, führen Sie die folgenden Aktionen aus. Sehen Sie sich ein Beispiel im folgenden Screenshot an.
 
    1. Erstellen Sie unter den Gebietsschemaordnern einen Knoten vom Typ `sling:MessageEntry` oder kopieren Sie einen vorhandenen Knoten und benennen Sie ihn um.
    1. Kopieren `login.jsp` :
