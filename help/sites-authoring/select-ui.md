@@ -1,6 +1,6 @@
 ---
 title: Auswählen der Benutzeroberfläche in AEM
-description: Konfigurieren Sie die Benutzeroberfläche, die Sie für AEM verwenden.
+description: Konfigurieren Sie, welche Benutzeroberfläche Sie für AEM verwenden möchten.
 uuid: ab127f2f-2f8a-4398-90dd-c5d48eed9e53
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,15 +10,15 @@ discoiquuid: e418d330-f234-411d-8cad-3fd9906dcbee
 docset: aem65
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '745'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
 # Auswahl der Benutzeroberfläche{#selecting-your-ui}
 
-Obwohl die Touch-optimierte Benutzeroberfläche jetzt die Standardbenutzeroberfläche ist und bei der Verwaltung und Bearbeitung von Sites nahezu Funktionsparität erreicht wurde, kann es manchmal vorkommen, dass der Benutzer zum [klassische Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md). Dazu gibt es mehrere Möglichkeiten.
+Obwohl die Touch-optimierte Benutzeroberfläche jetzt die Standard-Benutzeroberfläche ist und bei der Verwaltung und Bearbeitung von Sites nahezu eine Funktionsparität erreicht wurde, kann es manchmal vorkommen, dass Benutzerinnen oder Benutzer zur [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/classicui.md) wechseln möchten. Dazu gibt es mehrere Möglichkeiten.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Damit wird die Standard-Benutzeroberfläche festgelegt, die bei der Benutzeranme
 * [Wechseln zur klassischen Benutzeroberfläche für die aktuelle Sitzung](#switching-to-classic-ui-for-the-current-session)
 Damit wird für die aktuelle Sitzung zur klassischen Benutzeroberfläche gewechselt.
 
-* Im Falle von [Seitenbearbeitung des Systems überschreibt bestimmte Aspekte in Bezug auf die Benutzeroberfläche](#ui-overrides-for-the-editor).
+* Im Falle der [Seitenerstellung überschreibt das System bestimmte Aspekte in Bezug auf die Benutzeroberfläche](#ui-overrides-for-the-editor).
 
 >[!CAUTION]
 >
@@ -50,13 +50,13 @@ Damit wird für die aktuelle Sitzung zur klassischen Benutzeroberfläche gewechs
 
 ## Konfigurieren der Standard-Benutzeroberfläche für Ihre Instanz {#configuring-the-default-ui-for-your-instance}
 
-Ein Systemadministrator kann die Benutzeroberfläche konfigurieren, die beim Start und bei der Anmeldung angezeigt wird, indem er [Stammzuordnung](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping).
+Systemadmins können die Benutzeroberfläche konfigurieren, die beim Start und bei der Anmeldung angezeigt wird, indem sie die [Stammzuordnung](/help/sites-deploying/osgi-configuration-settings.md#daycqrootmapping) verwenden.
 
-Dies kann durch Benutzereinstellungen oder Sitzungseinstellungen überschrieben werden.
+Dies kann durch Benutzerstandardeinstellungen oder Sitzungseinstellungen überschrieben werden.
 
-## Einrichten der klassischen Benutzeroberflächen-Bearbeitung für Ihr Konto {#setting-classic-ui-authoring-for-your-account}
+## Einrichten der Seitenerstellung in der klassischen Benutzeroberfläche für Ihr Konto {#setting-classic-ui-authoring-for-your-account}
 
-Jeder Benutzer kann auf seine [Benutzereinstellungen](/help/sites-authoring/user-properties.md#userpreferences) , um zu definieren, ob er die klassische Benutzeroberfläche für die Seitenbearbeitung verwenden möchte (anstelle der Standard-Benutzeroberfläche).
+Benutzerinnen und Benutzer können auf ihre [Benutzereinstellungen](/help/sites-authoring/user-properties.md#userpreferences) zugreifen, um zu definieren, ob sie die klassische Benutzeroberfläche (anstelle der Standard-Benutzeroberfläche) für die Seitenerstellung verwenden möchten.
 
 Dies kann durch Sitzungseinstellungen überschrieben werden.
 
@@ -64,7 +64,7 @@ Dies kann durch Sitzungseinstellungen überschrieben werden.
 
 Bei Verwendung der Touch-optimierten Benutzeroberfläche möchten Benutzer vielleicht zur klassischen Benutzeroberfläche (nur für Desktops) zurückzukehren. Es gibt mehrere Methoden, um für die aktuelle Sitzung zur klassischen Benutzeroberfläche zu wechseln:
 
-* **Navigationslinks**
+* **Navigations-Links**
 
    >[!CAUTION]
    >
@@ -104,11 +104,11 @@ Sofern aktiviert, ist die Option **Klassische Benutzeroberfläche öffnen** im D
 
 ![syui-02](assets/syui-02.png)
 
-### UI-Überschreibungen für den Editor {#ui-overrides-for-the-editor}
+### Benutzeroberflächenüberschreibungen für den Editor {#ui-overrides-for-the-editor}
 
-Die von einem Benutzer oder Systemadministrator festgelegten Einstellungen können vom System bei der Seitenbearbeitung überschrieben werden.
+Die von Benutzenden oder Systemadmins festgelegten Einstellungen können im Falle der Seitenerstellung vom System überschrieben werden.
 
-* Beim Erstellen von Seiten:
+* Beim Bearbeiten von Seiten:
 
    * Die Verwendung des klassischen Editors wird erzwungen, wenn die Seite über eine URL aufgerufen wird, die `cf#` enthält. Beispiel:
       `https://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
@@ -128,12 +128,12 @@ Die von einem Benutzer oder Systemadministrator festgelegten Einstellungen könn
 
 >[!NOTE]
 >
->Wenn [ein Benutzer bereits eine Voreinstellung für die Seitenbearbeitung definiert hat](#settingthedefaultauthoringuiforyouraccount), das nicht durch Ändern der OSGi-Eigenschaft überschrieben wird.
+>Wenn [eine Benutzerin oder ein Benutzer bereits eine Voreinstellung für die Seitenbearbeitung definiert hat](#settingthedefaultauthoringuiforyouraccount), die nicht durch Ändern der OSGi-Eigenschaft überschrieben wird.
 
 >[!CAUTION]
 >
->Aufgrund der Verwendung von Cookies, wie bereits beschrieben, wird Folgendes nicht empfohlen:
+>Aufgrund der Verwendung von Cookies wird, wie bereits beschrieben, Folgendes nicht empfohlen:
 >
->* Manuelles Bearbeiten der URL - Eine nicht standardmäßige URL könnte zu einer unbekannten Situation und Funktionslosigkeit führen.
+>* Manuelles Bearbeiten der URL – Eine nicht-standardmäßige URL könnte zu einer unbekannten Situation und fehlender Funktionalität führen.
 >* Verwenden Sie beide Editoren zur selben Zeit, z. B. in separaten Fenstern.
 
