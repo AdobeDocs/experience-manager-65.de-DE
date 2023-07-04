@@ -1,5 +1,5 @@
 ---
-title: Fehlerbehebung bei AEM beim Authoring
+title: Fehlerbehebung in AEM während des Authorings
 description: Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei der Arbeit mit AEM stoßen können, und liefert entsprechende Lösungsvorschläge.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '430'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 >[!NOTE]
 >
->Bei Problemen sollten Sie auch die Liste der [Bekannte Probleme](/help/release-notes/release-notes.md) für Ihre Instanz (Release- und Service Packs).
+>Wenn Probleme auftreten, sollten Sie auch die Liste der [bekannten Probleme](/help/release-notes/release-notes.md) für Ihre Instanz (Version und Service Packs) prüfen.
 
 >[!NOTE]
 >
@@ -31,16 +31,16 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 * **Problem**:
 
-   * Sie haben Änderungen an einer Seite vorgenommen und die Seite auf die Veröffentlichungs-Site repliziert, aber die *old* -Version der Seite wird weiterhin auf der Veröffentlichungs-Site angezeigt.
+   * Sie haben Änderungen an einer Seite vorgenommen und die Seite auf die Veröffentlichungs-Site repliziert, aber auf der Veröffentlichungs-Site wird immer noch die *alte* Version der Seite angezeigt.
 
 * **Grund**:
 
-   * Dies kann verschiedene Ursachen haben, meist den Cache (entweder Ihren lokalen Browser oder den Dispatcher), obwohl es manchmal ein Problem mit der Replikationswarteschlange sein kann.
+   * Dies kann verschiedene Gründe haben. Meist liegt es am Cache (entweder dem Ihres lokalen Browsers oder dem des Dispatchers), gelegentlich kann es sich jedoch auch um ein Problem mit der Replikations-Warteschlange handeln.
 
 * **Lösungen**:
 
-   * Hier gibt es verschiedene Möglichkeiten:
-   * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Überprüfen Sie den Seitenstatus und ggf. den Status der Replikationswarteschlange.
+   * Hier gibt es mehrere Möglichkeiten:
+   * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Überprüfen Sie den Seitenstatus und ggf. den Status der Replikations-Warteschlange.
    * Löschen Sie den Cache des lokalen Browsers und rufen Sie die Seite erneut auf.
    * Fügen Sie dem Ende der Seiten-URL `?` hinzu:
 
@@ -50,21 +50,21 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
    * Wenden Sie sich an den Systemadministrator, wenn Probleme mit den Replikationswarteschlangen vorliegen.
 
-## Sidekick nicht sichtbar {#sidekick-not-visible}
+## Sidekick wird nicht angezeigt {#sidekick-not-visible}
 
 * **Problem**:
 
-   * Der Sidekick ist beim Bearbeiten einer Inhaltsseite in der Autorenumgebung nicht sichtbar.
+   * Beim Bearbeiten einer Inhaltsseite in der Authoring-Umgebung wird der Sidekick nicht angezeigt.
 
 * **Grund**:
 
-   * In seltenen Fällen kann es vorkommen, dass Sie die Kopfzeile des Sidekicks außerhalb des aktuellen Fensterbereichs platziert haben. Das bedeutet, dass Sie sie nicht erneut positionieren können.
+   * In seltenen Fällen kann es vorkommen, dass Sie die Kopfzeile des Sidekicks außerhalb des aktuellen Fensterbereichs platziert haben. Das bedeutet, dass Sie sie nicht neu platzieren können.
 
 * **Lösung**:
 
-   * Melden Sie sich bei Ihrer aktuellen Sitzung ab und melden Sie sich erneut an. Der Sidekick kehrt zur Standardposition zurück.
+   * Melden Sie sich bei Ihrer aktuellen Sitzung ab und melden Sie sich erneut an. Der Sidekick wird wieder an der Standardposition angezeigt.
 
-## Suchen und Ersetzen - nicht alle Instanzen werden ersetzt {#find-replace-not-all-instances-are-replaced}
+## Suchen und Ersetzen: nicht alle Vorkommen werden ersetzt {#find-replace-not-all-instances-are-replaced}
 
 * **Problem:**
 
