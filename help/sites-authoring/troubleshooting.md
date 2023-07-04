@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '295'
-ht-degree: 59%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,7 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 >[!NOTE]
 >
->Bei Problemen sollten Sie auch die Liste der [Bekannte Probleme](/help/release-notes/release-notes.md) für Ihre Instanz (Release- und Service Packs).
+>Wenn Probleme auftreten, sollten Sie auch die Liste der [bekannten Probleme](/help/release-notes/release-notes.md) für Ihre Instanz (Version und Service Packs) prüfen.
 
 >[!NOTE]
 >
@@ -31,16 +31,16 @@ Der folgende Abschnitt beschäftigt sich mit einigen Problemen, auf die Sie bei 
 
 * **Problem**:
 
-   * Sie haben Änderungen an einer Seite vorgenommen und die Seite auf die Veröffentlichungs-Site repliziert, aber die *old* -Version der Seite wird weiterhin auf der Veröffentlichungs-Site angezeigt.
+   * Sie haben Änderungen an einer Seite vorgenommen und die Seite auf die Veröffentlichungs-Site repliziert, aber auf der Veröffentlichungs-Site wird immer noch die *alte* Version der Seite angezeigt.
 
 * **Grund**:
 
-   * Dies kann verschiedene Ursachen haben, meist den Cache (entweder Ihren lokalen Browser oder den Dispatcher), obwohl es manchmal ein Problem mit der Replikationswarteschlange sein kann.
+   * Dies kann verschiedene Gründe haben. Meist liegt es am Cache (entweder dem Ihres lokalen Browsers oder dem des Dispatchers), gelegentlich kann es sich jedoch auch um ein Problem mit der Replikations-Warteschlange handeln.
 
 * **Lösungen**:
 
-   * Hier gibt es verschiedene Möglichkeiten:
-   * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Überprüfen Sie den Seitenstatus und ggf. den Status der Replikationswarteschlange.
+   * Hier gibt es mehrere Möglichkeiten:
+   * Überprüfen Sie, ob die Seite korrekt repliziert wurde. Überprüfen Sie den Seitenstatus und ggf. den Status der Replikations-Warteschlange.
    * Löschen Sie den Cache des lokalen Browsers und rufen Sie die Seite erneut auf.
    * Fügen Sie dem Ende der Seiten-URL `?` hinzu:
 
