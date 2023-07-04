@@ -1,5 +1,5 @@
 ---
-title: Seitenbearbeitung mit Inhaltsfragmenten
+title: Seitenerstellung mit Inhaltsfragmenten
 description: Inhaltsfragmente werden als seitenunabhängige Assets erstellt und verwaltet. Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit Varianten zu erstellen.
 page-status-flag: de-activated
 uuid: 8e3bb1bc-8720-48e2-8d06-98fbab4dd4fd
@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
 exl-id: b55d9edc-a210-407a-aa4b-a91bb358be7b
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '109'
-ht-degree: 29%
+ht-degree: 100%
 
 ---
 
@@ -24,6 +24,6 @@ Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise k
 
 >[!CAUTION]
 >
->Die vollständige Funktionalität der Inhaltsfragmentverwaltung ist in der klassischen Benutzeroberfläche nicht verfügbar. Siehe [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md) in der Standarddokumentation für die Bearbeitung.
+>Die Funktionen der Inhaltsfragmentverwaltung sind in der klassischen Benutzeroberfläche nicht in vollem Umfang verfügbar. Siehe [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md) in der Standarddokumentation zum Authoring.
 >
->Die Inhaltsfragment-Komponente ist im Sidekick der klassischen Benutzeroberfläche sichtbar, weitere Funktionen sind jedoch nicht verfügbar.
+>Die Inhaltsfragmentkomponente kann im Sidekick der klassischen Benutzeroberfläche angezeigt werden. Es stehen jedoch keine weiteren Funktionen zur Verfügung.
