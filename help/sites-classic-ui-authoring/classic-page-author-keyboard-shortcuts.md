@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '313'
-ht-degree: 52%
+ht-degree: 100%
 
 ---
 
@@ -42,7 +42,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
    <th>Beschreibung</th>
   </tr>
   <tr>
-   <td>Bearbeitungsmodus</td>
+   <td>Bearbeiten-Modus</td>
    <td><code>Ctrl-z</code></td>
    <td>Letzte Änderung rückgängig machen.</td>
   </tr>
@@ -100,7 +100,7 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-Alt-c</code></strong></td>
-   <td>Zeigt die <a href="/help/sites-administering/client-context.md">Client-Kontext</a>.</td>
+   <td>Zeigt den <a href="/help/sites-administering/client-context.md">Client-Kontext</a>.</td>
   </tr>
   <tr>
    <td>Rich-Text-Editor<br /> </td>
@@ -118,34 +118,34 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
    <td>Unterstrichen</td>
   </tr>
   <tr>
-   <td>Content Finder - Suchfeld</td>
+   <td>Inhaltssuche – Suchfeld</td>
    <td><strong><code>down-arrow</code></strong></td>
-   <td>Trigger einer Vorschlagsliste. Wird benötigt, wenn zu wenige Zeichen zum automatischen Trigger der Liste eingegeben wurden (dies geschieht, wenn mindestens 2 Zeichen eingegeben wurden).</td>
+   <td>Auslösen einer Liste mit Vorschlägen. Wird benötigt, wenn zu wenige Zeichen eingegeben wurden, um die Liste automatisch auszulösen (dies geschieht, wenn mindestens zwei Zeichen eingegeben wurden).</td>
   </tr>
   <tr>
    <td> </td>
-   <td><strong><code>right-arrow</code></strong><br /> (auf einen vorgeschlagenen Pfad)</td>
-   <td>Wählen Sie Elemente und Trigger-Vorschläge für den ausgewählten Pfad aus.</td>
+   <td><strong><code>right-arrow</code></strong><br /> (für einen vorgeschlagenen Pfad)</td>
+   <td>Auswählen eines Elements und Auslösen von Vorschlägen für den ausgewählten Pfad.</td>
   </tr>
   <tr>
    <td> </td>
-   <td><strong><code>left-arrow</code></strong><br /> (auf einen vorgeschlagenen Pfad)</td>
-   <td>Wählen Sie Elemente und Trigger-Vorschläge für ihre Vorgänger aus (wie in Geschwistern von übergeordneten Elementen).</td>
+   <td><strong><code>left-arrow</code></strong><br /> (für einen vorgeschlagenen Pfad)</td>
+   <td>Auswählen eines Elements und Auslösen von Vorschlägen für seine Vorgänger (gleichrangige Elemente von übergeordneten Elementen).</td>
   </tr>
   <tr>
    <td> </td>
-   <td><strong><code>Enter</code></strong><br /> (auf einen vorgeschlagenen Pfad)</td>
-   <td>Wählen Sie Element- und Trigger-Suche aus.</td>
+   <td><strong><code>Enter</code></strong><br /> (für einen vorgeschlagenen Pfad)</td>
+   <td>Auswählen eines Elements und Auslösen der Suche.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Esc</code></strong></td>
-   <td>Schließen Sie die Vorschlagsebene.</td>
+   <td>Schließen der Vorschlagsebene.</td>
   </tr>
   <tr>
-   <td>Content Finder<br /> </td>
+   <td>Inhaltssuche<br /> </td>
    <td><strong><code>Alt+drag</code></strong></td>
-   <td><p>Ziehen Sie Assets und legen Sie sie am Ziel ab.</p> <p>Die Ablageaktion erzeugt einen neuen Absatz. anstatt das Asset im Ziel zu ersetzen.</p> </td>
+   <td><p>Ziehen Sie Assets und legen Sie sie am Ziel ab.</p> <p>Durch den Ziehvorgang wird ein neuer Absatz erstellt (anstatt das Asset am Ziel zu ersetzen).</p> </td>
   </tr>
  </tbody>
 </table>
@@ -154,7 +154,7 @@ Desktop-Benutzern stehen bei der Verwendung von [Konsolen](/help/sites-classic-u
 
 ## Tastaturbefehle für die Entwicklung {#keyboard-shortcuts-for-development}
 
-Desktop-Entwicklern stehen bei Verwendung des Seiteneditors zusätzliche Tastaturbefehle zur Verfügung.
+Desktop-Entwicklerinnen und -Entwicklern stehen bei Verwendung des Seiteneditors zusätzliche Tastaturbefehle zur Verfügung.
 
 <table>
  <tbody>
