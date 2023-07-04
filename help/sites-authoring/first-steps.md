@@ -1,6 +1,6 @@
 ---
-title: Erste Schritte für Autoren beim Erstellen von Inhalten in AEM
-description: Eine Übersicht über die wichtigsten Aufgaben, die Sie beim Verfassen von Inhalten mit Adobe Experience Manager verwenden (AEM).
+title: Erste Schritte für Autorinnen und Autoren beim Erstellen von Inhalten in AEM
+description: Ein Überblick über die wichtigsten Aufgaben, die Sie beim Verfassen von Inhalten mit Adobe Experience Manager verwenden (AEM).
 uuid: 1a09da22-faa4-4a7a-a2c5-97a255a6a2ae
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,17 +10,17 @@ discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '407'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
 # Erste Schritte für Autoren{#first-steps-for-authors}
 
-In diesem Abschnitt erhalten Sie einen Überblick über die wichtigsten Aufgaben, die Sie bei der [Erstellen von Inhalten](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) mit Adobe Experience Manager (AEM).
+In diesem Abschnitt finden Sie einen Überblick über die wichtigsten Funktionen, die Sie nutzen, wenn Sie mit der [Inhaltserstellung](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) in Adobe Experience Manager (AEM) beginnen.
 
-Er umfasst:
+Dieser umfasst:
 
 * [Erste Schritte](#getting-started)\
    Details zur grundlegenden Ereignisabfolge, die Sie für das Erstellen und Veröffentlichen Ihrer ersten Seite benötigen.
@@ -30,7 +30,7 @@ Er umfasst:
 
 ## Erste Schritte {#getting-started}
 
-Diese beschreiben die grundlegende Ereignisabfolge, die Sie zum Erstellen und Veröffentlichen Ihrer ersten Seite benötigen.
+Hier stehen Details zur grundlegenden Ereignisabfolge, die Sie für das Erstellen und Veröffentlichen Ihrer ersten Seite benötigen.
 
 ### Navigieren zum Seitenspeicherort {#navigating-to-the-page-location}
 
@@ -42,11 +42,11 @@ Vor der Bearbeitung müssen Sie [eine neue Seite erstellen](/help/sites-authorin
 
 ### Öffnen einer Seite {#opening-a-page}
 
-Für viele Aktionen, wie z. B. die Bearbeitung, müssen Sie [Seite öffnen](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
+Für viele Aktionen, z. B. die Bearbeitung, müssen Sie eine [Seite öffnen](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
 ### Bearbeiten einer Seite {#editing-a-page}
 
-Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie gerade selbst eine neue Seite erstellt haben, können Sie [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) durch:
+Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder ob Sie gerade selbst eine neue Seite erstellt haben, können Sie [eine Seite bearbeiten](/help/sites-authoring/editing-content.md), indem Sie folgende Schritte befolgen:
 
 * [Einfügen einer Komponente (Absatz)](/help/sites-authoring/editing-content.md#inserting-a-component)
 * [Bearbeiten/Konfigurieren/Kopieren/Ausschneiden/Löschen/Einfügen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) einer Komponente
@@ -59,7 +59,7 @@ Unabhängig davon, ob Ihre Instanz bereits über vorhandene Seiten verfügt oder
 
 ### Veröffentlichen einer Seite {#publishing-a-page}
 
-Nachdem Sie die Bearbeitung der Seite abgeschlossen haben, sollten Sie [Veröffentlichen (oder Aktivieren) Ihrer Seite](/help/sites-authoring/publishing-pages.md#main-pars-title-10) damit sie für Besucher Ihrer Website verfügbar ist.
+Nachdem Sie die Bearbeitung der Seite abgeschlossen haben, erfolgt das [Veröffentlichen (oder Aktivieren) Ihrer Seite](/help/sites-authoring/publishing-pages.md#main-pars-title-10), damit sie für Besuchende Ihrer Website verfügbar ist.
 
 ## Weitere Aktionen {#further-actions}
 
@@ -67,28 +67,28 @@ Nach den grundlegenden Schritten gibt es viele weitere Aktionen, die Sie beim Au
 
 ### Kopieren einer Seite {#copying-a-page}
 
-Manchmal ist es einfacher, [Seite kopieren](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page) und verwenden den Inhalt erneut, anstatt alles von Grund auf neu zu erstellen.
+Manchmal ist es einfacher, eine [Seite zu kopieren](/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page) und den Inhalt erneut zu verwenden, anstatt alles von Grund auf neu zu erstellen.
 
 ### Verschieben oder Umbenennen einer Seite {#moving-or-renaming-a-page}
 
-[Verschieben und Umbenennen von Seiten](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page) wird im Grunde mit derselben Aktion ausgeführt.
+Das [Verschieben und Umbenennen von Seiten](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page) wird im Grunde mit derselben Aktion ausgeführt.
 
 ### Rückgängigmachen der Veröffentlichung einer Seite {#unpublishing-a-page}
 
-Um zuvor veröffentlichte (oder aktivierte) Inhalte auf Ihrer öffentlichen Website nicht verfügbar zu machen, müssen Sie [Veröffentlichung der Seite rückgängig machen (oder deaktivieren)](/help/sites-authoring/publishing-pages.md#main-pars-title-5).
+Um zuvor veröffentlichte (oder aktivierte) Inhalte auf Ihrer öffentlichen Website unverfügbar zu machen, müssen Sie die [Veröffentlichung der Seite aufheben (oder diese deaktivieren)](/help/sites-authoring/publishing-pages.md#main-pars-title-5).
 
 ### Löschen einer Seite {#deleting-a-page}
 
-Wenn eine Seite nicht mehr benötigt wird, sollten Sie [Löschen der Seite](/help/sites-authoring/managing-pages.md#deleting-a-page).
+Wenn eine Seite nicht mehr benötigt wird, können Sie [die Seite löschen](/help/sites-authoring/managing-pages.md#deleting-a-page).
 
-### Festlegen der Seiteneigenschaften {#setting-the-page-properties}
+### Bearbeiten der Seiteneigenschaften {#setting-the-page-properties}
 
-Alle [Seite hat Eigenschaften](/help/sites-authoring/editing-page-properties.md) , die Sie definieren können, um Aspekte seines Vorgangs zu bestimmen. Diese können mit beiden Benutzeroberflächen aktualisiert werden.
+Alle [Seiten haben Eigenschaften](/help/sites-authoring/editing-page-properties.md), die Sie definieren können, um Aspekte ihrer Arbeitsweise zu bestimmen. Diese können mit jeder Benutzeroberfläche aktualisiert werden.
 
 ### Erstellen einer Seitenversion {#creating-a-version-of-a-page}
 
-Sie können [eine Version erstellen](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version) einer Seite und [auf eine Version zurücksetzen](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version) falls erforderlich.
+Sie können [eine Version einer Seite erstellen](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version) und sie [auf eine Version zurücksetzen](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version), falls erforderlich.
 
 ## Weitere Informationen {#more-information}
 
-Weitere Informationen zum Authoring finden Sie unter [Seitenbearbeitung](/help/sites-authoring/page-authoring.md).
+Weitere Informationen zum Authoring finden Sie unter [Bearbeiten von Seiten](/help/sites-authoring/page-authoring.md).
