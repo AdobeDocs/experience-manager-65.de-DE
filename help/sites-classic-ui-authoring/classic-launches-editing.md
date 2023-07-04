@@ -10,9 +10,9 @@ discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
 source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '291'
-ht-degree: 55%
+ht-degree: 100%
 
 ---
 
@@ -27,41 +27,41 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
 
    ![chlimage_1-13](assets/chlimage_1-13.jpeg)
 
-1. Wählen Sie den Launch aus, an dem Sie arbeiten möchten, und klicken Sie auf **Switch**.
-1. Starten Sie die Bearbeitung.
+1. Wählen Sie den Launch aus, an dem Sie arbeiten möchten, und klicken Sie auf **Umschalten**.
+1. Beginnen Sie mit der Bearbeitung.
 
    >[!NOTE]
    >
-   >Sie können die Registerkarte **Seite** des Sidekicks verwenden, um Aktionen wie **Untergeordnete Seite erstellen** durchzuführen. 
+   >Sie können die Registerkarte **Seite** des Sidekicks verwenden, um Aktionen wie **Untergeordnete Seite erstellen** durchzuführen.
 
 ## Bearbeiten einer Launch-Konfiguration {#editing-a-launch-configuration}
 
 Wenn Sie einen Launch erstellt haben, können Sie den Namen und das Datum des Launches ändern. Sie können auch ein Bild angeben, das mit dem Launch verknüpft werden soll.
 
-1. Öffnen Sie die Verwaltungsseite „Launches“ ([http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)). 
+1. Öffnen Sie die Verwaltungsseite „Launches“ ([http://localhost:4502/libs/launches/content/admin.html](http://localhost:4502/libs/launches/content/admin.html)).
 
-1. Wählen Sie den gewünschten Launch aus und klicken Sie auf **Bearbeiten** , um das Dialogfeld zu öffnen:
+1. Wählen Sie den gewünschten Launch aus und klicken Sie auf **Bearbeiten**, um das Dialogfeld zu öffnen:
 
-   * Im **Allgemein** können Sie Folgendes bearbeiten:
+   * In der Registerkarte **Allgemein** können Sie Folgendes bearbeiten:
 
       * **Titel**
       * **Live-Datum**: dieses entspricht dem Launch-Datum 
       * **Produktionsbereit**
 
-      Siehe [Launches - die Reihenfolge der Ereignisse](/help/sites-authoring/launches.md#launches-the-order-of-events) für Informationen zum Zweck und zur Interaktion dieser Felder.
+      Weitere Informationen über den Zweck und das Zusammenspiel dieser Felder finden Sie unter [Launches und die Reihenfolge der Ereignisse](/help/sites-authoring/launches.md#launches-the-order-of-events).
 
-   * Im **Bild** -Registerkarte, können Sie eine Bilddatei hochladen.
+   * In der Registerkarte **Bild** können Sie eine Bilddatei hochladen.
 
 
 1. Klicken Sie auf **Speichern**.
 
 ## Ermitteln des Launch-Status einer Seite {#discovering-the-launch-status-of-a-page}
 
-Wenn Sie einen Launch einer Seite bearbeiten, werden Informationen zum Launch unten im **Versionierung** Registerkarte des Sidekick:
+Wenn Sie einen Launch einer Seite bearbeiten, werden Informationen zum Launch unten auf der Registerkarte **Versionierung** des Sidekicks angezeigt:
 
 * Der Name des Launches.
 * Die Zeit seit der letzten Änderung.
-* Der Benutzer, der die letzte Änderung vorgenommen hat.
-* Der Status des Flags **Produktionsbereit** (orange = nicht festgelegt; grün = festgelegt). 
+* Die Person, die die letzte Änderung vorgenommen hat.
+* Der Status des Flags **Produktionsbereit** (orange = nicht festgelegt; grün = festgelegt).
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
