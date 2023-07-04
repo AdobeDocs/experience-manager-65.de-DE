@@ -1,7 +1,7 @@
 ---
 title: Zuordnung benutzerdefinierter Benutzergruppen in AEM 6.5
 seo-title: Custom User Group Mapping in AEM 6.5
-description: Erfahren Sie, wie die Zuordnung benutzerspezifischer Benutzergruppen in AEM funktioniert.
+description: Erfahren Sie, wie die Zuordnung benutzerdefinierter Benutzergruppen in AEM funktioniert.
 seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
@@ -13,9 +13,9 @@ docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
 source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '478'
-ht-degree: 24%
+ht-degree: 100%
 
 ---
 
@@ -31,22 +31,22 @@ ht-degree: 24%
    <td><strong>Kommentare</strong></td>
   </tr>
   <tr>
-   <td><p>Eigenschaft: cq:cugEnabled</p> <p>Deklarierender Knotentyp: N/A, Resteigenschaft</p> </td>
+   <td><p>Eigenschaft: cq:cugEnabled</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigenschaft</p> </td>
    <td><p>Autorisierung:</p> <p>Knoten: rep:cugPolicy des Knotentyps rep:CugPolicy</p> <p>Deklarierender Knotentyp: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Authentifizierung:</p> <p>Mixin-Typ: granite:AuthenticationRequired</p> </td>
-   <td><p>Um den Lesezugriff zu beschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur auf die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:cugPolicy und Typ rep:CugPolicy sind geschützt und können nicht mit regulären JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen die Verwaltung der JCR-Zugriffssteuerung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungspflicht für einen Knoten zu erzwingen, reicht es aus, den Mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unterhalb der konfigurierten unterstützten Pfade berücksichtigt.</p> </td>
+   <td><p>Um den Lesezugriff zu beschränken, wird eine dedizierte CUG-Richtlinie auf den Zielknoten angewendet.</p> <p>HINWEIS: Richtlinien können nur auf die konfigurierten unterstützten Pfade angewendet werden.</p> <p>Knoten mit dem Namen rep:cugPolicy und Typ rep:CugPolicy sind geschützt und können nicht mit regulären JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen die Verwaltung der JCR-Zugriffssteuerung.</p> <p>Weitere Informationen finden Sie auf <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">dieser Seite</a>.</p> <p>Um die Authentifizierungspflicht auf einem Knoten durchzusetzen, genügt es, den Mixin-Typ granite:AuthenticationRequired hinzuzufügen.</p> <p>HINWEIS: Wird nur unterhalb der konfigurierten unterstützten Pfade berücksichtigt.</p> </td>
   </tr>
   <tr>
-   <td><p>Eigenschaft: cq:cugPrincipals</p> <p>Deklarierender Knotentyp: NA, Resteigentum</p> </td>
+   <td><p>Eigenschaft: cq:cugPrincipals</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigentum</p> </td>
    <td><p>Eigenschaft: rep:principalNames</p> <p>Deklarierender Knotentyp: rep:CugPolicy</p> </td>
-   <td><p>Die -Eigenschaft, die die Namen der Prinzipale enthält, die den Inhalt unter der eingeschränkten CUG lesen dürfen, ist geschützt und kann nicht mit regulären JCR-API-Aufrufen geschrieben werden. Verwenden Sie stattdessen die Verwaltung der JCR-Zugriffssteuerung.</p> <p>Siehe <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">diese Seite</a> für weitere Details zur Implementierung.</p> </td>
+   <td><p>Die Eigenschaft, die die Namen derjenigen Prinzipale enthält, die den Inhalt unter der eingeschränkten CUG lesen dürfen, ist geschützt und kann nicht über reguläre JCR-API-Aufrufe geschrieben werden. Verwenden Sie stattdessen die Verwaltung der JCR-Zugriffssteuerung.</p> <p>Weitere Details zur Implementierung finden Sie auf <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">dieser Seite</a>.</p> </td>
   </tr>
   <tr>
-   <td><p>Eigenschaft: cq:cugLoginPage</p> <p>Deklarierender Knotentyp: NA, Resteigentum</p> </td>
+   <td><p>Eigenschaft: cq:cugLoginPage</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigentum</p> </td>
    <td><p>Eigenschaft: granite:loginPath (optional)</p> <p>Deklarierender Knotentyp: granite:AuthenticationRequired</p> </td>
    <td><p>Ein JCR-Knoten, bei dem der Mixin-Typ granite:AuthenticationRequired definiert ist, kann optional einen alternativen Anmeldepfad definieren.</p> <p>HINWEIS: Wird nur unter den konfigurierten unterstützten Pfaden berücksichtigt.</p> </td>
   </tr>
   <tr>
-   <td><p>Eigenschaft: cq:cugRealm</p> <p>Deklarierender Knotentyp: NA, Resteigentum</p> </td>
+   <td><p>Eigenschaft: cq:cugRealm</p> <p>Deklarierender Knotentyp: nicht zutreffend, Resteigentum</p> </td>
    <td>nicht vorhanden</td>
    <td>Wird von der neuen Implementierung nicht mehr unterstützt.</td>
   </tr>
@@ -57,26 +57,26 @@ ht-degree: 24%
 
 **Ältere AEM-Versionen**
 
-Titel: Adobe Granite Closed User Group (CUG)-Unterstützung
+Titel: Unterstützung der geschlossenen Benutzergruppe (CUG) in Adobe Granite
 
 Name: com.day.cq.auth.impl.CugSupportImpl
 
 **AEM 6.5**
 
-* Titel: Apache Jackrabbit Oak CUG-Konfiguration
+* Apache Jackrabbit Oak CUG-Konfiguration
 
    Name: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugConfiguration
 
    ConfigurationPolicy = ERFORDERLICH
 
-* Titel: Apache Jackrabbit Oak CUG Exclude List
+* Apache Jackrabbit Oak CUG-Ausschlussliste
 
    Name: org.apache.jackrabbit.oak.spi.security.authorization.cug.impl.CugExcludeImpl
 
    ConfigurationPolicy = ERFORDERLICH
 
 * Name: com.adobe.granite.auth.requirement.impl.RequirementService
-* Titel: Adobe Granite-Authentifizierungspflicht und Anmeldungspfad-Handler
+* Bezeichnung: Adobe Granite Authentication Requirement and Login Path Handler
 
    Name: com.adobe.granite.auth.requirement.impl.DefaultRequirementHandler
 
@@ -89,14 +89,14 @@ Dienst zum Konfigurieren der Ausschlussliste der Prinzipale, die durch die CUG-A
 
    >[!NOTE]
    > 
-   >Wenn die Variable `CugExcludeImpl` nicht konfiguriert ist, wird die `CugConfiguration` wird auf den Standardwert zurückgesetzt.
+   >Wenn die Variable `CugExcludeImpl` nicht konfiguriert ist, wird die `CugConfiguration` auf den Standardwert zurückgesetzt.
 
-   Es ist möglich, eine benutzerdefinierte CugExclude-Implementierung zu verwenden, wenn besondere Anforderungen auftreten.
+   Es ist möglich, bei besonderen Anforderungen eine benutzerdefinierte CugExclude-Implementierung zu verbinden.
 
-* OSGi-Komponente zur Implementierung von LoginPathProvider , die einen übereinstimmenden Anmeldepfad für den LoginSelectorHandler bereitstellt. Sie enthält einen obligatorischen Verweis auf einen RequirementHandler, der zur Registrierung des Beobachters verwendet wird, der mithilfe des Mixin-Typs granite:AuthenticationRequired die geänderten Authentifizierungsanforderungen überwacht, die im Inhalt gespeichert sind.
+* OSGi-Komponente zur Implementierung von LoginPathProvider, der einen übereinstimmenden Anmeldepfad für den LoginSelectorHandler bereitstellt. Sie verfügt über einen obligatorischen Verweis auf einen RequirementHandler. Dieser wird dazu verwendet, die Beobachterkomponente zu registrieren, die auf geänderte Authentifizierungsanforderungen lauscht, welche im Inhalt durch den Mixin-Typ „granite:AuthenticationRequired“ gespeichert sind.
 * OSGi-Komponente, die den RequirementHandler implementiert, der den SlingAuthenticator über Änderungen an Authentifizierungspflichten benachrichtigt.
 
-   Da die Konfigurationsrichtlinie für diese Komponente ERFORDERLICH ist, wird sie nur aktiviert, wenn eine Reihe unterstützter Pfade angegeben ist.
+   Da die Konfigurationsrichtlinie für diese Komponente REQUIRED (erforderlich) lautet, wird sie nur aktiviert, wenn ein Satz unterstützter Pfade angegeben wird.
 
    Durch die Aktivierung des Dienstes wird der RequirementService gestartet.
 
