@@ -12,19 +12,19 @@ discoiquuid: 257f3e4a-4b59-4cbb-bf61-f72f173676e6
 feature: Configuring
 exl-id: e9ea9df4-a355-41fc-a102-01a5d7ca2629
 source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '88'
-ht-degree: 45%
+ht-degree: 100%
 
 ---
 
 # Artikel mit Anleitungen für die Konfiguration{#configuration-how-to-articles}
 
-In den folgenden Themen wird beschrieben, wie Sie bestimmte AEM Bereitstellungsaufgaben durchführen:
+In den folgenden Themen wird beschrieben, wie bestimmte AEM-Bereitstellungsaufgaben durchgeführt werden:
 
 * [Verwenden des Protokoll-Viewers](https://helpx.adobe.com/de/experience-manager/kb/logsviewer.html)
-* [Bereinigen von Workflows und des Auditprotokolls](https://helpx.adobe.com/de/experience-manager/kb/howtopurgewf.html)
+* [Bereinigen von Workflows und des Administratorprotokolls](https://helpx.adobe.com/de/experience-manager/kb/howtopurgewf.html)
 
-* [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en)
+* [Tipps zur Leistungsoptimierung](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de)
 * [Anleitung zum Entfernen von Funktionen vom Startbildschirm](/help/sites-developing/customizing-the-welcome-console.md)
 * [Anleitung zur Deaktivierung der Standortverfolgung](https://helpx.adobe.com/de/experience-manager/kb/turn-off-geolocation.html) 
