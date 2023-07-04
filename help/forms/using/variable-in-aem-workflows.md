@@ -1,7 +1,7 @@
 ---
 title: Variablen in AEM Forms-Workflows
 seo-title: Variables in AEM Forms Workflows
-description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in AEM Forms Workflow-Schritten.
+description: Erstellen Sie eine Variable, legen Sie einen Wert für die Variable fest und verwenden Sie sie in Workflow-Schritten von AEM Forms.
 seo-description: Create a variable, set a value for the variable, and use it in AEM Forms workflow steps.
 uuid: 634a75c4-4899-478f-9e5d-a870f5efa583
 contentOwner: khsingh
@@ -11,9 +11,9 @@ discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
 source-git-commit: 936b636819eaef595fcdf9f1f3446d4ac0c28b2f
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2208'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -154,7 +154,7 @@ Sie können Variablen verwenden, um Eingaben und Ausgaben abzurufen oder um das 
 
 ### Workflow-Schritte mit Unterstützung für Variablen {#workflow-steps-with-support-for-variables}
 
-Die Schritte „Wechseln zu Schritt“ und „Aufteilen“ sowie alle AEM Forms Workflow-Schritte unterstützen Variablen.
+Die Schritte „Goto“ und „ODER-Teilung“ sowie alle AEM Forms Workflow-Schritte unterstützen Variablen.
 
 #### ODER-Teilungs-Schritt {#or-split-step}
 
@@ -277,7 +277,7 @@ workflowSession.startWorkflow(model, wfData, metaData);
 
 ### Speichern sensibler Benutzerdaten außerhalb von JCR mit Hilfe von Workflow-Variablen {#jcr-independent-persistance}
 
-Daten, die mit Forms Workflow verarbeitet werden, können vertrauliche Benutzerdaten wie personenbezogene Daten und vertrauliche personenbezogene Daten enthalten. Unternehmen können sich dafür entscheiden, die Daten, die von verschiedenen Workflow-Schritten verarbeitet (und mit Hilfe von Workflow-Variablen übergeben) werden, außerhalb des JCR-Speichers in einem externen Datenspeicher zu speichern, der ihnen gehört und von ihnen verwaltet wird. Weitere Informationen über die Speicherung von Workflow-Daten in einem externen Speicher finden Sie unter [Verwendung von Workflow-Variablen für kundeneigene Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+Daten, die mithilfe von Forms-Workflows verarbeitet werden, können sensible Benutzerdaten enthalten, wie z. B. persönlich identifizierbare Informationen und sensible persönliche Informationen. Unternehmen können sich dafür entscheiden, die Daten, die von verschiedenen Workflow-Schritten verarbeitet (und mit Hilfe von Workflow-Variablen übergeben) werden, außerhalb des JCR-Speichers in einem externen Datenspeicher zu speichern, der ihnen gehört und von ihnen verwaltet wird. Weitere Informationen über die Speicherung von Workflow-Daten in einem externen Speicher finden Sie unter [Verwendung von Workflow-Variablen für kundeneigene Datenspeicher](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe Experience Manager] bietet die Workflow-API [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer), um Workflow-Variablen in externen Azure-Blob-Speichern zu speichern. Für Details zur Verwendung der API siehe [Verwenden von Workflow-Variablen zum Parametrisieren sensibler Daten und Speichern in externen Datenspeichern](/help/forms/using/aem-forms-workflow.md#externalize-wf-variables).
 
 ## Bearbeiten einer Variablen {#edit-a-variable}
@@ -298,4 +298,4 @@ Führen Sie die folgenden Schritte aus, um eine Variable zu löschen:
 
 ## Verweise {#references}
 
-Weitere Beispiele zur Verwendung von Variablen in AEM Forms-Workflow-Schritten finden Sie unter [Variablen in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=de).
+Weitere Beispiele zur Verwendung von Variablen in AEM Forms-Workflow-Schritten finden Sie unter [Variablen in AEM-Workflows](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/variables-aem-workflow/introduction.html?lang=de).
