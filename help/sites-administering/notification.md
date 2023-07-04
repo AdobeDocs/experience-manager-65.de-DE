@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2026'
 ht-degree: 81%
 
 ---
@@ -144,11 +144,11 @@ Dabei kann &lt;text_x> ein Mix von statischem Text und dynamischen Zeichenfolgen
 * `${userId}`, die ID des Benutzers, der das Ereignis ausgelöst hat
 * `${modifications}`, beschreibt den Typ des Seitenereignisses und den Seitenpfad im folgenden Format:
 
-   &lt;Seitenereignistyp> => &lt;Seitenpfad>
+  &lt;Seitenereignistyp> => &lt;Seitenpfad>
 
-   Beispiel:
+  Beispiel:
 
-   PageModified => /content/geometrixx/en/products
+  PageModified => /content/geometrixx/en/products
 
 ### E-Mail-Vorlagen für Workflow-Benachrichtigung {#email-templates-for-workflow-notification}
 
@@ -342,7 +342,7 @@ Bestätigen Sie abschließend die Konfiguration, indem Sie:
 1. Suchen Sie in der Suchleiste nach **Azure Active Directory** und klicken Sie auf das Ergebnis. Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) gehen.
 1. Klicken Sie auf **Registrierung einer Anwendung** – **Neue Registrierung**
 
-   ![](assets/oauth-outlook1.png)
+   ![Microsoft Outlook-Konfiguration](assets/oauth-outlook1.png)
 
 1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**
 1. Wechseln Sie zur neu erstellten Anwendung und wählen Sie **API-Berechtigungen** aus.
@@ -397,7 +397,7 @@ Integrieren Sie anschließend Ihre OAuth2-Einstellungen mit AEM:
 
 Nach der Konfiguration sollten die Einstellungen wie folgt aussehen:
 
-![](assets/oauth-outlook-smptconfig.png)
+![AEM Seitenkonfigurationsansicht](assets/oauth-outlook-smptconfig.png)
 
 Aktivieren Sie jetzt die OAuth-Komponenten. Gehen Sie dazu wie folgt vor:
 

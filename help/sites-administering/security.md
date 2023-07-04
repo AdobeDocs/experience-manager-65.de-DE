@@ -10,9 +10,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5402'
 ht-degree: 35%
 
 ---
@@ -284,14 +284,14 @@ Im Folgenden finden Sie Empfehlungen zur Verwaltung von Zugriffssteuerungslisten
 
 * Weisen Sie Benutzern keine Berechtigungen direkt zu. Weisen Sie sie nur Gruppen zu.
 
-   Dies vereinfacht die Wartung, da die Anzahl der Gruppen viel kleiner ist als die Anzahl der Benutzer und auch weniger flüchtig ist.
+  Dies vereinfacht die Wartung, da die Anzahl der Gruppen viel kleiner ist als die Anzahl der Benutzer und auch weniger flüchtig ist.
 
 * Wenn Sie möchten, dass eine Gruppe/ein Benutzer nur Seiten ändern kann, gewähren Sie ihnen keine Berechtigung zum Erstellen oder Ablehnen von Rechten. Erteilen Sie ihnen nur Änderungen und Leseberechtigungen.
 * Verwenden Sie Deny sparsam. Soweit möglich, darf nur &quot;Zulassen&quot;verwendet werden.
 
-   Die Verwendung von Ablehnen kann zu unerwarteten Auswirkungen führen, wenn die Berechtigungen in einer anderen Reihenfolge als der erwarteten angewendet werden. Wenn ein Benutzer Mitglied mehrerer Gruppen ist, können die Anweisungen vom Typ Ablehnen von einer Gruppe die Anweisung Zulassen von einer anderen Gruppe oder umgekehrt abbrechen. Es ist schwierig, einen Überblick zu behalten, wenn so etwas passiert, und kann leicht zu unvorhergesehenen Ergebnissen führen, während Zuweisungen zulassen solche Konflikte nicht verursacht.
+  Die Verwendung von Ablehnen kann zu unerwarteten Auswirkungen führen, wenn die Berechtigungen in einer anderen Reihenfolge als der erwarteten angewendet werden. Wenn ein Benutzer Mitglied mehrerer Gruppen ist, können die Anweisungen vom Typ Ablehnen von einer Gruppe die Anweisung Zulassen von einer anderen Gruppe oder umgekehrt abbrechen. Es ist schwierig, einen Überblick zu behalten, wenn so etwas passiert, und kann leicht zu unvorhergesehenen Ergebnissen führen, während Zuweisungen zulassen solche Konflikte nicht verursacht.
 
-   Adobe empfiehlt, mit Allow anstatt Deny zu arbeiten. Siehe [Best Practices](#best-practices).
+  Adobe empfiehlt, mit Allow anstatt Deny zu arbeiten. Siehe [Best Practices](#best-practices).
 
 Bevor Sie eine der Berechtigungen ändern, sollten Sie wissen, wie sie funktionieren und miteinander in Beziehung stehen. Die CRX-Dokumentation veranschaulicht AEM WCM. [bewertet Zugriffsberechtigungen](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated), und Beispiele zum Einrichten von Zugriffssteuerungslisten.
 
@@ -391,7 +391,7 @@ Führen Sie einen der folgenden Schritte aus, um auf AEM WCM-Sicherheit zuzugrei
 
 * Klicken Sie im Begrüßungsbildschirm oder in verschiedenen anderen Bereichen in AEM auf das Sicherheitssymbol:
 
-![](do-not-localize/wcmtoolbar.png)
+![Registerkarte &quot;WCM-Sicherheit&quot;](do-not-localize/wcmtoolbar.png)
 
 * Navigieren Sie direkt zu `https://<server>:<port>/useradmin`. Achten Sie darauf, sich als Admin bei AEM anzumelden.
 
@@ -640,7 +640,6 @@ Die Replikationsberechtigung ist das Recht, Inhalte zu veröffentlichen und kann
 >* Die Replikationsberechtigungen eines Benutzers ersetzen die Replikationsberechtigungen einer Gruppe.
 >* Die Replikationsrechte &quot;Zulassen&quot;haben eine höhere Priorität als die Replikationsrechte &quot;Ablehnen&quot;. Weitere Informationen finden Sie unter [Berechtigungen in AEM](#permissions-in-aem).
 >
-
 
 So legen Sie Replikationsberechtigungen fest:
 
