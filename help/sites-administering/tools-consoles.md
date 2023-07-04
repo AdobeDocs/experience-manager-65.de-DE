@@ -12,15 +12,15 @@ discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
 source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '607'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
 # Die Tools-Konsolen {#tools-consoles}
 
-Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Content-Repositorys verwalten können. Derzeit gibt es zwei Varianten der **Instrumente** abhängig von der verwendeten Benutzeroberfläche:
+Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen Sie Ihre Websites, digitalen Assets und andere Bereiche Ihres Content-Repositorys verwalten können. Derzeit gibt es zwei Varianten der **Tools**, je nach verwendeter Benutzeroberfläche:
 
 * [Tools – Touch-optimierte Benutzeroberfläche](#tools-touch-optimized-ui)
 * [Tools – klassische Benutzeroberfläche](#tools-classic-ui)
@@ -33,7 +33,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
 
 >[!NOTE]
 >
->Da die Karten in der Benutzeroberfläche Details zum Zweck jeder Option bereitstellen, bietet diese Tabelle einfach einen schnellen Überblick über die Position der Funktionen in der Struktur.
+>Da die Karten in der Benutzeroberfläche Details zum Zweck jeder Option zeigen, bietet diese Tabelle einfach einen schnellen Überblick über die Position der Funktionen in der Baumstruktur.
 
 <table>
  <tbody>
@@ -369,7 +369,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <th>Zweck</th>
   </tr>
   <tr>
-   <td>MSM Control Center</td>
+   <td>MSM-Kontrollzentrum</td>
    <td>Zentrale Stelle für die Verwaltung mehrerer Sites.</td>
   </tr>
   <tr>
@@ -378,15 +378,15 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td>Cloud Services-Konfigurationen<br /> </td>
-   <td>Enthält Konfigurationen für die Integration in Adobe Marketing Cloud.</td>
+   <td>Enthält Konfigurationen für die Integration mit der Adobe Marketing Cloud.</td>
   </tr>
   <tr>
    <td>Cloud-Einstellungen<br /> </td>
-   <td>Configuration Manager-Einstellungen.</td>
+   <td>Konfiguration der Manager-Einstellungen.</td>
   </tr>
   <tr>
    <td>Commerce </td>
-   <td>Ermöglicht den Zugriff auf Importeure und verschiedene Produktdaten.</td>
+   <td>Ermöglicht den Zugriff auf Import-Tools und verschiedene Produktdaten.</td>
   </tr>
   <tr>
    <td>DAM </td>
@@ -413,8 +413,8 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Bietet Zugriff auf verschiedene Optionen.</td>
   </tr>
   <tr>
-   <td>Externer Linkprüfer</td>
-   <td>Externer Linkprüfer.</td>
+   <td>Prüfer für externe Links</td>
+   <td>Prüfer für externe Links.</td>
   </tr>
   <tr>
    <td>Mobilgerät</td>
@@ -422,11 +422,11 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td>Pakete</td>
-   <td>Ein alternativer Link zum Package Manager, der die Pakete anzeigt, die für AEM WCM geladen wurden. Ähnlich den Informationen, die im Paketmanager von CRX angezeigt werden.</td>
+   <td>Ein alternativer Link zum Package Manager, der die Pakete anzeigt, die für AEM WCM geladen wurden. Ähnlich den Informationen, die im Package Manager von CRX angezeigt werden.</td>
   </tr>
   <tr>
-   <td>Replikation - Replikationsagenten</td>
-   <td>Wird verwendet, um Daten vom Autor zur Veröffentlichung zu replizieren, wenn Seiten veröffentlicht werden, oder mit Rückwärtsreplikation, um Benutzerkommentare aus der Veröffentlichungsumgebung an den Autor zurückzugeben.</td>
+   <td>Replikation – Replikationsagenten</td>
+   <td>Wird verwendet, um bei der Veröffentlichung von Seiten Daten von der Authoring-Umgebung zur Publishing-Umgebung zu replizieren, oder zur umgekehrten Replikation, um Benutzerkommentare aus der Publishing-Umgebung zur Authoring-Umgebung zurückzugeben.</td>
   </tr>
   <tr>
    <td>Berichte</td>
@@ -434,26 +434,26 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td>Strukturvorlage für Standardseite</td>
-   <td>Mit Strukturvorlage können Sie ein Formular (eine Grundlage) mit Feldern erstellen, die die gewünschte Struktur für Ihre Seiten widerspiegeln. Mithilfe dieses Formulars können Sie dann einfach Seiten erstellen, die auf dieser Struktur basieren.</td>
+   <td>Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dessen Felder die gewünschte Seitenstruktur bilden. Anhand dieses Formulars können Sie ganz einfach auf dieser Struktur basierende Seiten erstellen.</td>
   </tr>
   <tr>
    <td>Sicherheit – Self-Service-Konfiguration </td>
-   <td>Ermöglicht die Konfiguration der E-Mails, die Benutzer automatisch erhalten, wenn sie ein Konto erstellen oder ein Kennwort zurücksetzen, sowie die Bestätigung eines zurückgesetzten Kennworts.</td>
+   <td>Ermöglicht die Konfiguration der E-Mails, die Benutzer bzw. Benutzerinnen automatisch erhalten, wenn sie ein Konto erstellen oder ein Passwort zurücksetzen, sowie die Bestätigung eines zurückgesetzten Passworts.</td>
   </tr>
   <tr>
    <td>Segmentierung</td>
-   <td>Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Diese Ziele zu verstehen und die Erwartungen zu erfüllen, ist ein wichtiger Erfolgsfaktor für Online-Marketing. Die Segmentierung hilft dabei, die Details eines Besuchers zu analysieren und zu charakterisieren.<br /> </td>
+   <td>Besucher von Websites haben unterschiedliche Interessen und Ziele, wenn sie eine Site besuchen. Diese Ziele zu verstehen und die Erwartungen zu erfüllen, ist ein wichtiger Erfolgsfaktor für das Online-Marketing. Die Segmentierung hilft dabei, die Details eines Besuchers zu analysieren und zu charakterisieren.<br /> </td>
   </tr>
   <tr>
    <td>Mandanten</td>
    <td>Keine aktive Funktion im Zusammenhang mit diesem Eintrag.</td>
   </tr>
   <tr>
-   <td>truststore</td>
+   <td>Truststore</td>
    <td>Keine aktive Funktion im Zusammenhang mit diesem Eintrag.</td>
   </tr>
   <tr>
-   <td>Versionierung - Versionen bereinigen</td>
+   <td>Versionierung – Versionen bereinigen</td>
    <td>Ermöglicht die Bereinigung der Seitenversionen nach Bedarf.</td>
   </tr>
   <tr>
