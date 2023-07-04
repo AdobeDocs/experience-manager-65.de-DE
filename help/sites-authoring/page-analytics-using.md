@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '445'
-ht-degree: 47%
+ht-degree: 100%
 
 ---
 
@@ -23,30 +23,30 @@ ht-degree: 47%
 
 Verwenden Sie Seitenanalysedaten, um die Effektivität des Seiteninhalts zu messen.
 
-## In der Konsole sichtbare Analytics {#analytics-visible-from-the-console}
+## In der Konsole sichtbare Analysen {#analytics-visible-from-the-console}
 
 ![spad-01](assets/spad-01.png)
 
-Seitenanalysedaten werden angezeigt in [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) der Sites-Konsole. Wenn die Seiten im Listenformat angezeigt werden, sind die folgenden Spalten standardmäßig verfügbar:
+Seitenanalysedaten werden in der [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) der Sites-Konsole angezeigt. Wenn die Seiten im Listenformat angezeigt werden, sind die folgenden Spalten standardmäßig verfügbar:
 
 * Seitenansichten
 * Unique Visitors
 * Zeit auf Seite
 
-Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und zeigt auch an, ob der Wert seit dem vorherigen Berichtszeitraum gestiegen oder gesunken ist. Die angezeigten Daten werden alle 12 Stunden aktualisiert.
+Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und zeigt dazu an, ob der Wert seit dem vorherigen Berichtszeitraum gestiegen oder gesunken ist. Die angezeigten Daten werden alle 12 Stunden aktualisiert.
 
 >[!NOTE]
 >
->So ändern Sie den Aktualisierungszeitraum: [Konfigurieren des Importintervalls](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>Um den Aktualisierungszeitraum zu ändern, [konfigurieren Sie das Importintervall](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Öffnen Sie die **Sites**-Konsole, z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).
 1. Klicken oder tippen Sie ganz rechts oben in der Symbolleiste auf das Symbol, um **Listenansicht** auszuwählen. (Das angezeigte Symbol ist von der [aktuellen Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) abhängig.)
 
-1. Klicken oder tippen Sie oben rechts in der Symbolleiste auf das Symbol und wählen Sie **Anzeigeeinstellungen**. Die **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
+1. Klicken oder tippen Sie oben rechts in der Symbolleiste auf das Symbol und wählen Sie **Anzeigeeinstellungen** aus. Der Dialog **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
 
    ![spad-02](assets/spad-02.png)
 
-### Berichtszeitraum auswählen {#selecting-the-reporting-period}
+### Auswählen des Berichtszeitraums {#selecting-the-reporting-period}
 
 Wählen Sie den Berichtszeitraum aus, für den Analytics-Daten in der Sites-Konsole angezeigt werden:
 
@@ -60,11 +60,11 @@ Der aktuelle Berichtszeitraum wird in der Symbolleiste der Konsole „Sites“ (
 
 ### Konfigurieren der verfügbaren Datenspalten {#configuring-available-data-columns}
 
-Mitglieder der Benutzergruppe &quot;Analytics-Administratoren&quot;können die Konsole &quot;Sites&quot;konfigurieren, damit Autoren zusätzliche Analytics-Spalten sehen können.
+Mitglieder der Benutzergruppe „Analytics-Administratoren“ können die Sites-Konsole konfigurieren, damit Autorinnen und Autoren zusätzliche Analytics-Spalten sehen können.
 
 >[!NOTE]
 >
->Wenn ein Seitenbaum untergeordnete Elemente enthält, die verschiedenen Adobe Analytics-Cloud-Konfigurationen zugeordnet sind, können Sie die verfügbaren Datenspalten für die Seiten nicht konfigurieren.
+>Wenn ein Seitenbaum untergeordnete Elemente enthält, die verschiedenen Cloud-Konfigurationen von Adobe Analytics zugeordnet sind, können Sie die verfügbaren Datenspalten für die Seiten nicht konfigurieren.
 
 1. Verwenden Sie in der Listenansicht die Ansichtsselektoren (rechts neben der Symbolleiste) und wählen Sie **Anzeigeeinstellungen** und anschließend **Benutzerdefinierte Analysedaten hinzufügen** aus.
 
@@ -81,11 +81,11 @@ Mitglieder der Benutzergruppe &quot;Analytics-Administratoren&quot;können die K
 Öffnen Sie [Inhaltseinsicht](/help/sites-authoring/content-insights.md) von der Konsole „Sites“ aus, um die Seiteneffektivität weiter zu untersuchen.
 
 1. Wählen Sie in der Sites-Konsole die Seite aus, für die Sie Inhaltseinblicke anzeigen möchten.
-1. Klicken Sie in der Symbolleiste auf das Symbol Analytics und Recommendations .
+1. Klicken Sie in der Symbolleiste auf das Symbol „Analysen und Empfehlungen“.
 
    ![](do-not-localize/chlimage_1-14.png)
 
-## Im Seiteneditor sichtbare Analytics (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
+## Im Seiten-Editor sichtbare Analysen (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
