@@ -1,7 +1,7 @@
 ---
 title: Hinzufügen benutzerdefinierter Aktionen zur Ansicht „Asset-Auflistung“
 seo-title: Add custom action to the Asset Listing view
-description: In diesem Artikel erfahren Sie, wie Sie der Ansicht "Asset-Auflistung"benutzerdefinierte Aktionen hinzufügen
+description: In diesem Artikel erfahren Sie, wie Sie der Ansicht „Asset-Auflistung“ benutzerdefinierte Aktionen hinzufügen.
 seo-description: This article teaches how to add custom action to the Asset Listing view
 uuid: 45f25cfb-f08f-42c6-99c5-01900dd8cdee
 content-type: reference
@@ -12,9 +12,9 @@ docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
 source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1355'
-ht-degree: 68%
+ht-degree: 100%
 
 ---
 
@@ -22,28 +22,28 @@ ht-degree: 68%
 
 ## Übersicht {#overview}
 
-Mit der Correspondence Management-Lösung können Sie benutzerdefinierte Aktionen zur Benutzeroberfläche &quot;Assets verwalten&quot;hinzufügen.
+Mit der Lösung „Correspondence Management“ können Sie benutzerdefinierte Aktionen zur Benutzeroberfläche „Assets verwalten“ hinzufügen.
 
-Sie können der Ansicht &quot;Asset-Auflistung&quot;eine benutzerdefinierte Aktion hinzufügen für:
+Sie können der Ansicht „Asset-Auflistung“ eine benutzerdefinierte Aktion hinzufügen für:
 
 * Ein oder mehrere Asset-Typen oder Briefe
-* Ausführung (Aktion/Befehl wird aktiv) bei Auswahl einzelner, mehrerer Assets/Briefe oder ohne Auswahl
+* Ausführung (Aktion / Befehl wird aktiv) bei Auswahl einzelner oder mehrerer Assets/Briefe oder ohne Auswahl
 
-Diese Anpassung wird mit dem Szenario veranschaulicht, das der Ansicht &quot;Asset-Auflistung&quot;für Briefe den Befehl &quot;Einfache PDF herunterladen&quot;hinzufügt. Mit diesem Anpassungsszenario können Ihre Benutzer eine einfache PDF eines einzelnen ausgewählten Briefs herunterladen.
+Diese Anpassung wird mit dem Szenario veranschaulicht, das der Ansicht „Asset-Auflistung“ für Briefe den Befehl „Geglättetes PDF herunterladen“ hinzufügt. Mit diesem Anpassungsszenario können Ihre Benutzer eine einfache PDF eines einzelnen ausgewählten Briefs herunterladen.
 
 ### Voraussetzungen {#prerequisites}
 
-Um das folgende Szenario oder ein ähnliches Szenario abzuschließen, benötigen Sie Kenntnisse über:
+Um das folgende Szenario oder ein ähnliches Szenario abzuschließen, benötigen Sie Kenntnisse in:
 
 * CRX
 * JavaScript
 * Java™
 
-## Szenario: Fügen Sie der Benutzeroberfläche der Liste &quot;Briefe&quot;einen Befehl hinzu, um eine einfache PDF-Version eines Briefs herunterzuladen. {#addcommandtoletters}
+## Szenario: Hinzufügen eines Befehls zur Benutzeroberfläche der Liste „Briefe“, um eine geglättete PDF-Version eines Briefes herunterzuladen {#addcommandtoletters}
 
-Im Folgenden wird der Befehl &quot;Einfache PDF herunterladen&quot;zur Ansicht &quot;Asset-Auflistung für Briefe&quot;hinzugefügt, mit dem Ihre Benutzer einfache PDF des ausgewählten Briefs herunterladen können. Mithilfe dieser Schritte mit dem entsprechenden Code und den entsprechenden Parametern können Sie weitere Funktionen für ein anderes Asset hinzufügen, z. B. Datenwörterbücher oder Texte.
+Im folgenden Schritt wird der Befehl „Geglättetes PDF herunterladen“ zur Ansicht „Asset-Auflistung für Briefe“ hinzugefügt, mit dem Benuzter bzw. Benutzerinnen ein geglättetes PDF des ausgewählten Briefs herunterladen können. Wenn Sie diese Schritte mit dem entsprechenden Code und den entsprechenden Parametern anwenden, können Sie weitere Funktionen für ein anderes Asset hinzufügen, z. B. Datenwörterbücher oder Texte.
 
-Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupassen, dass Ihre Benutzer eine einfache PDF mit Briefen herunterladen können:
+Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupassen, dass Benutzer und Benutzerinnen geglättete PDFs von Briefen herunterladen können:
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als Administrator an.
 
@@ -55,7 +55,7 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
 
       >[!NOTE]
       >
-      >Dieser Pfad ist spezifisch für das Erstellen einer Aktion, die mit der Auswahl eines oder mehrerer Assets/Briefe funktioniert. Wenn Sie eine Aktion erstellen möchten, die ohne Auswahl funktioniert, erstellen Sie stattdessen einen Überlagerungsknoten für den folgenden Pfad und führen Sie die verbleibenden Schritte entsprechend aus:
+      >Dieser Pfad ist spezifisch für das Erstellen einer Aktion, die über die Auswahl eines oder mehrerer Assets/Briefe funktioniert. Wenn Sie eine Aktion erstellen möchten, die ohne Auswahl funktioniert, erstellen Sie stattdessen einen Überlagerungsknoten für den folgenden Pfad und führen Sie die verbleibenden Schritte entsprechend aus:
       >
       >
       >`/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/default/items`
@@ -86,7 +86,7 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
 
       **Typ:** nt:unstructured
 
-   1. Klicken Sie auf den neuen Knoten, den Sie erstellt haben (hier downloadFlatPDF). CRX zeigt die Eigenschaften des Knotens an.
+   1. Klicken Sie auf den von Ihnen erstellten neuen Knoten (hier: downloadFlatPDF). CRX zeigt die Eigenschaften des Knotens an.
 
    1. Fügen Sie dem Knoten (hier: downloadFlatPDF) die folgenden Eigenschaften hinzu und klicken Sie auf **Alle speichern**:
 
@@ -130,12 +130,12 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
         <tr>
         <td>text</td>
         <td>Zeichenfolge</td>
-        <td>Einfache PDF herunterladen (oder eine andere Bezeichnung)<br /> <br /> Der Befehl, der in der Benutzeroberfläche "Asset-Auflistung"angezeigt wird</td>
+        <td>Geglättetes PDF herunterladen (oder eine andere Bezeichnung)<br /> <br /> Der Befehl, der in der Benutzeroberfläche „Asset-Auflistung“ angezeigt wird</td>
         </tr>
         <tr>
         <td>title</td>
         <td>Zeichenfolge</td>
-        <td>Herunterladen einer flachen PDF des ausgewählten Briefs (oder einer anderen Beschriftung/Alternativtext)<br /> <br /> Der Titel ist der Alternativtext, den Correspondence Management anzeigt, wenn der Benutzer den Mauszeiger über den benutzerdefinierten Befehl bewegt.</td>
+        <td>Herunterladen eines geglätteten PDFs des ausgewählten Briefs (oder einer anderen Bezeichnung/Alternativtext)<br /> <br /> Der Titel ist der Alternativtext, den Correspondence Management anzeigt, wenn Benutzer bzw. -Benutzerinnen den Mauszeiger über den benutzerdefinierten Befehl bewegen.</td>
         </tr>
         </tbody>
        </table>
@@ -226,9 +226,9 @@ Führen Sie die folgenden Schritte aus, um Correspondence Management so anzupass
       '</div>';
       ```
 
-      Der Code, den Sie in diesem Schritt hinzufügen, überschreibt den Code im Ordner &quot;libs&quot;. Kopieren Sie daher den vorherigen Code in die Datei &quot;formaction.js&quot;in der Verzweigung /apps . Durch das Kopieren des Codes aus der /libs-Verzweigung in die /apps-Verzweigung wird sichergestellt, dass auch die vorherigen Funktionen funktionieren.
+      Der Code, den Sie in diesem Schritt hinzufügen, überschreibt den Code im Ordner „libs“. Kopieren Sie daher den vorherigen Code in die Datei „formaction.js“ in der Verzweigung /apps. Durch das Kopieren des Codes aus der Verzweigung /libs in die Verzweigung /apps wird sichergestellt, dass auch die vorherigen Funktionen erhalten bleiben.
 
-      Der obige Code dient der briefspezifischen Aktionsbearbeitung des in diesem Verfahren erstellten Befehls. Für die Aktionsbearbeitung anderer Assets ändern Sie den JavaScript-Code.
+      Der obige Code dient der für Briefe spezifischen Aktionsbearbeitung des in diesem Verfahren erstellten Befehls. Für die Aktionsbearbeitung anderer Assets müssen Sie den JavaScript-Code ändern.
 
 1. Erstellen Sie im Programmordner einen Ordner mit dem Namen „items“ mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der Ordner „items“, der sich im Ordner „actionhandlers“ befindet, indem Sie folgende Schritte durchführen:
 
