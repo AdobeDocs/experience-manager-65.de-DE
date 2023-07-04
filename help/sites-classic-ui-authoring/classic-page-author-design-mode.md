@@ -1,6 +1,6 @@
 ---
-title: Konfigurieren von Komponenten im Designmodus
-description: Wenn AEM Instanz vorkonfiguriert installiert ist, ist im Sidekick sofort eine Auswahl von Komponenten verfügbar. Darüber hinaus stehen auch verschiedene weitere Komponenten zur Verfügung. Sie können den Designmodus verwenden, um diese Komponenten zu aktivieren/deaktivieren.
+title: Konfigurieren von Komponenten im Design-Modus
+description: Wenn die AEM-Instanz vorkonfiguriert installiert wird, steht im Sidekick sofort eine Auswahl von Komponenten zur Verfügung. Darüber hinaus stehen auch verschiedene weitere Komponenten zur Verfügung. Sie können den Design-Modus verwenden, um diese Komponenten zu aktivieren/deaktivieren.
 uuid: 2cd5dad0-2f9c-4f34-aae8-1638d1445eb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,15 +10,15 @@ discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '500'
-ht-degree: 42%
+ht-degree: 100%
 
 ---
 
-# Konfigurieren von Komponenten im Designmodus{#configuring-components-in-design-mode}
+# Konfigurieren von Komponenten im Design-Modus{#configuring-components-in-design-mode}
 
-Wenn AEM Instanz vorkonfiguriert installiert ist, ist im Sidekick sofort eine Auswahl von Komponenten verfügbar.
+Wenn die AEM-Instanz vorkonfiguriert installiert wird, steht im Sidekick sofort eine Auswahl von Komponenten zur Verfügung.
 
 Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mit dem [Design-Modus](#enabledisablecomponentsusingdesignmode) können Sie diese Komponenten aktivieren/deaktivieren. Wenn Sie den Design-Modus aktivieren und sich auf der Seite befinden, können Sie damit [Aspekte des Komponenten-Designs konfigurieren](#configuringcomponentsusingdesignmode), indem Sie die Attributparameter bearbeiten.
 
@@ -26,24 +26,24 @@ Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mit dem [
 >
 >Bei der Bearbeitung dieser Komponenten ist Vorsicht geboten. Die Designeinstellungen sind häufig ein wesentlicher Bestandteil des Designs der gesamten Website. Daher sollten sie nur von einer Person mit den entsprechenden Berechtigungen (und der erforderlichen Erfahrung) geändert werden (meist ein Administrator oder Entwickler). Weitere Informationen finden Sie unter [Entwicklung von Komponenten](/help/sites-developing/components.md).
 
-Dazu müssen die zulässigen Komponenten im Absatzsystem für die Seite hinzugefügt oder entfernt werden. Das Absatzsystem (`parsys`) ist eine zusammengesetzte Komponente, die alle anderen Absatzkomponenten enthält. Das Absatzsystem ermöglicht es Autoren, einer Seite Komponenten unterschiedlicher Typen hinzuzufügen, da sie alle anderen Absatzkomponenten enthält. Jeder Absatztyp wird als eine Komponente dargestellt.
+Dazu müssen die zulässigen Komponenten im Absatzsystem für die Seite hinzugefügt oder entfernt werden. Das Absatzsystem (`parsys`) ist eine zusammengesetzte Komponente, die alle anderen Absatzkomponenten enthält. Mit dem Absatzsystem können Komponenten unterschiedlicher Typen zu einer Seite hinzugefügt werden, da es alle anderen Absatzkomponenten enthält. Jeder Absatztyp wird als eine Komponente dargestellt.
 
 Beispielsweise kann der Inhalt einer Produktseite ein Absatzsystem enthalten, das Folgendes enthält:
 
-* Ein Bild des Produkts (in Form eines Bild- oder Textimage-Absatzes)
-* Die Produktbeschreibung (als Textabsatz)
-* Eine Tabelle mit technischen Daten (als Tabellenabsatz)
-* Formularbenutzer füllen das Formular aus (als Formularbeginn, Formularelement und Formularende-Absatz)
+* Ein Bild des Produkts (in Form eines image- oder textimage-Absatzes)
+* Die Produktbeschreibung (als text-Absatz)
+* Eine Tabelle mit technischen Daten (als table-Absatz)
+* Ein Formular, das ausgefüllt werden kann (als forms begin-, forms element- und forms end-Absatz)
 
 >[!NOTE]
 >
 >Unter [Entwicklung von Komponenten](/help/sites-developing/components.md#paragraphsystem) und [Richtlinien für die Verwendung von Vorlagen und Komponenten](/help/sites-developing/dev-guidelines-bestpractices.md#guidelines-for-using-templates-and-components) finden Sie weitere Informationen zu `parsys`.
 
-## Komponenten aktivieren/deaktivieren {#enable-disable-components}
+## Aktivieren/Deaktivieren von Komponenten {#enable-disable-components}
 
-Im Designmodus ist der Sidekick minimiert und Sie können die für die Bearbeitung verfügbaren Komponenten konfigurieren:
+Im Design-Modus ist der Sidekick minimiert und Sie können die für die Bearbeitung verfügbaren Komponenten konfigurieren:
 
-1. Um in den Designmodus zu wechseln, öffnen Sie eine Seite zur Bearbeitung und verwenden Sie das Sidekick-Symbol:
+1. Um in den Design-Modus zu wechseln, öffnen Sie eine Seite zur Bearbeitung und verwenden Sie das Sidekick-Symbol:
 
    ![](do-not-localize/chlimage_1.png)
 
@@ -51,7 +51,7 @@ Im Designmodus ist der Sidekick minimiert und Sie können die für die Bearbeitu
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
-1. Es wird ein Dialogfeld geöffnet, in dem die im Sidekick angezeigten Komponentengruppen zusammen mit den einzelnen darin enthaltenen Komponenten aufgelistet werden.
+1. Ein Dialogfeld wird geöffnet, in dem die im Sidekick gezeigten Komponentengruppen zusammen mit den darin enthaltenen individuellen Komponenten aufgeführt sind.
 
    Wählen Sie die Komponenten, die im Sidekick verfügbar sein sollen, nach Bedarf aus, um sie hinzuzufügen oder zu entfernen.
 
@@ -63,9 +63,9 @@ Im Designmodus ist der Sidekick minimiert und Sie können die für die Bearbeitu
 
 ## Konfigurieren des Designs einer Komponente {#configuring-the-design-of-a-component}
 
-Im Designmodus können Sie auch Attribute für die einzelnen Komponenten konfigurieren. Jede Komponente verfügt über eigene Parameter. Das folgende Beispiel zeigt die **Bild** component:
+Im Design-Modus können Sie auch Attribute für die einzelnen Komponenten konfigurieren. Jede Komponente verfügt über eigene Parameter. Das folgende Beispiel zeigt die **Bildkomponente**:
 
-1. Um in den Designmodus zu wechseln, öffnen Sie eine Seite zur Bearbeitung und verwenden Sie das Sidekick-Symbol:
+1. Um in den Design-Modus zu wechseln, öffnen Sie eine Seite zur Bearbeitung und verwenden Sie das Sidekick-Symbol:
 
    ![](do-not-localize/chlimage_1-1.png)
 
