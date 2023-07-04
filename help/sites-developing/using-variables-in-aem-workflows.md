@@ -11,7 +11,7 @@ exl-id: c8aeceec-860c-49ee-b681-d7107e52020d
 source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
 source-wordcount: '2096'
-ht-degree: 83%
+ht-degree: 94%
 
 ---
 
@@ -23,7 +23,7 @@ In AEM-Workflow-Modellen haben Sie folgende Möglichkeiten:
 
 * [Erstellen Sie eine Variable](/help/sites-developing/using-variables-in-aem-workflows.md#create-a-variable) eines Datentyps basierend auf dem Typ von Information, die Sie darin speichern möchten.
 * [Legen Sie einen Wert für die Variable fest](/help/sites-developing/using-variables-in-aem-workflows.md#set-a-variable), indem Sie den Workflow-Schritt „Variable festlegen“ verwenden.
-* [Variable verwenden](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) in den Workflow-Schritten ODER-Teilung und Zu AEM , damit Sie einen Ausdruck für Routing-Entscheidungen definieren können. Sie können auch Variablen in allen AEM Forms-Workflow-Schritten verwenden.
+* [Verwenden Sie die Variable](/help/sites-developing/using-variables-in-aem-workflows.md#use-a-variable) in den Workflow-Schritten „ODER-Aufspaltung“ und „Goto“ von AEM zum Definieren eines Ausdrucks für Routing-Entscheidungen. In allen AEM Forms-Workflow-Schritten können Sie auch Variablen verwenden.
 
 Das folgende Video zeigt, wie Sie Variablen in AEM-Workflow-Modellen erstellen, festlegen und verwenden können:
 
@@ -46,7 +46,7 @@ Variablen erstellen Sie mithilfe des Abschnitts „Variablen“ im Sidekick des 
 
 Weitere komplexe Datentypen, die in AEM Forms-Workflows verfügbar sind, finden Sie unter [Variablen in AEM Forms-Workflows](/help/forms/using/variable-in-aem-workflows.md). Verwenden Sie den Datentyp „ArrayList“, um Variablenauflistungen zu erstellen. Sie können eine ArrayList-Variable für alle primitiven und komplexen Datentypen erstellen. Beispiel: Erstellen Sie eine ArrayList-Variable und wählen Sie als Untertyp „String“ aus, um mehrere Zeichenfolgenwerte in der Variablen zu speichern.
 
-Erstellen einer Variablen,
+Um eine Variable zu erstellen:
 
 1. Navigieren Sie in einer AEM-Instanz zu „Tools“ > „Workflows“ > „Modelle“.
 1. Tippen Sie auf **[!UICONTROL Erstellen]** und geben Sie den Titel und einen optionalen Namen für das Workflow-Modell an. Wählen Sie das Modell aus und tippen Sie auf **[!UICONTROL Bearbeiten]**.
@@ -54,7 +54,7 @@ Erstellen einer Variablen,
 
    ![Variable hinzufügen](assets/variables_add_variable_new.png)
 
-1. Geben Sie im Dialogfeld Variable hinzufügen den Namen an und wählen Sie den Typ der Variablen aus.
+1. Geben Sie im Dialogfeld „Variable hinzufügen“ den Namen an und wählen Sie den Typ der Variable aus.
 1. Wählen Sie in der Dropdown-Liste **[!UICONTROL Typ]** den Datentyp aus und geben Sie die folgenden Werte an:
 
    * Primitiver Datentyp: Geben Sie einen optionalen Standardwert für die Variable an.
@@ -72,7 +72,7 @@ Berücksichtigen Sie beim Erstellen von Variablen die folgenden Punkte:
 
 ## Festlegen einer Variablen {#set-a-variable}
 
-Mit dem Schritt „Variable festlegen“ können Sie den Wert einer Variablen festlegen und die Reihenfolge definieren, in der die Werte festgelegt werden. Die -Variable wird in der Reihenfolge festgelegt, in der die Variablenzuordnungen im Schritt der festgelegten Variablen aufgeführt werden.
+Mit dem Schritt „Variable festlegen“ können Sie den Wert einer Variablen festlegen und die Reihenfolge definieren, in der die Werte festgelegt werden. Die Variable wird in der Reihenfolge festgelegt, in der die Variablenzuordnungen im Schritt „Variable festlegen“ aufgeführt sind.
 
 Änderungen an Variablenwerten betreffen nur die Instanz des Prozesses, in dem die Änderung erfolgt. Wenn beispielsweise ein Prozess initiiert wird und Variablendaten geändert werden, betreffen die Änderungen nur diese Instanz des Prozesses. Die Änderungen wirken sich nicht auf andere Instanzen des Prozesses aus, die davor oder danach initiiert werden.
 
@@ -89,19 +89,19 @@ Sie können bestimmte Elemente einer JSON- oder XML-Typvariablen auch mittels JS
 
 ### Hinzufügen einer Zuordnung zwischen Variablen {#add-mapping-between-variables}
 
-Gehen Sie wie folgt vor, um die Zuordnung zwischen Variablen hinzuzufügen:
+Gehen Sie wie folgt vor, um eine Zuordnung zwischen Variablen hinzuzufügen:
 
 1. Tippen Sie auf der Seite für das Bearbeiten des Workflows auf das Symbol „Schritte“, das im Sidekick des Workflow-Modells verfügbar ist.
 1. Ziehen Sie die **Variable festlegen** in den Workflow-Editor wechseln, auf den Schritt tippen und wählen Sie ![Symbol &quot;Konfigurieren&quot;mit einem Schraubenschlüssel.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/configure_icon.png) (Konfigurieren).
 1. Wählen Sie im Dialogfeld „Variable festlegen“ die Option **[!UICONTROL Zuordnung]** > **[!UICONTROL Zuordnung hinzufügen]** aus.
 1. Wählen Sie im Abschnitt **Variable zuordnen** die Variable aus, in der Daten gespeichert werden sollen, wählen Sie den Zuordnungsmodus aus und geben Sie einen Wert an, der in der Variablen gespeichert werden soll. Die Zuordnungsmodi variieren je nach Variablentyp.
-1. Ordnen Sie weitere Variablen zu, damit Sie einen aussagekräftigen Ausdruck erstellen können. Tippen ![Symbol &quot;Speichern&quot;, gekennzeichnet durch ein Häkchen in einem Feld.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) , um die Änderungen zu speichern.
+1. Ordnen Sie weitere Variablen zu, damit Sie einen aussagekräftigen Ausdruck bilden können. Tippen ![Symbol &quot;Speichern&quot;, gekennzeichnet durch ein Häkchen in einem Feld.](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/using/chart-component/Done_Icon.png) , um die Änderungen zu speichern.
 
 ### Beispiel 1: Abfragen einer XML-Variablen, um den Wert für eine Zeichenfolgenvariable festzulegen {#example-query-an-xml-variable-to-set-value-for-a-string-variable}
 
-Wählen Sie eine Variable des XML-Typs aus, in der Sie eine XML-Datei speichern möchten. Fragen Sie die XML-Variable ab, um den Wert für eine Zeichenfolgenvariable für die in der XML-Datei verfügbare Eigenschaft festzulegen. Verwenden Sie das Feld **XPATH für die XML-Variable angeben**, um die Eigenschaft zu definieren, die in der Zeichenfolgenvariablen gespeichert werden soll.
+Wählen Sie eine Variable vom Typ XML aus, in der Sie eine XML-Datei speichern möchten. Fragen Sie die XML-Variable ab, um den Wert für eine Zeichenfolgenvariable für die in der XML-Datei verfügbare Eigenschaft festzulegen. Verwenden Sie das Feld **XPATH für die XML-Variable angeben**, um die Eigenschaft zu definieren, die in der Zeichenfolgenvariablen gespeichert werden soll.
 
-In diesem Beispiel wählen Sie eine XML-Variable **formdata** aus, um die Datei **cc-app.xml** zu speichern. Abfrage **formdata** -Variable, damit Sie den Wert für **emailAddress** string -Variable zum Speichern des Werts für **emailAddress** -Eigenschaft verfügbar in **cc-app.xml** -Datei.
+In diesem Beispiel wählen Sie eine XML-Variable **formdata** aus, um die Datei **cc-app.xml** zu speichern. Fragen Sie die Variable **formdata** ab, damit Sie den Wert für die String-Variable **emailaddress** setzen können, um den Wert für die Eigenschaft **emailAddress** zu speichern, die in der Datei **cc-app.xml** verfügbar ist.
 
 >[!VIDEO](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/using/set_variable_example1.mp4 "Festlegen des Wertes einer Variablen")
 
@@ -148,7 +148,7 @@ Sie können Variablen verwenden, um Eingaben und Ausgaben abzurufen oder um das 
 
 ### Workflow-Schritte mit Unterstützung für Variablen {#workflow-steps-with-support-for-variables}
 
-Die Schritte „Wechseln zu Schritt“ und „Aufteilen“ sowie alle AEM Forms Workflow-Schritte unterstützen Variablen.
+Die Schritte „Goto“ und „ODER-Teilung“ sowie alle AEM Forms Workflow-Schritte unterstützen Variablen.
 
 #### ODER-Teilungs-Schritt {#or-split-step}
 
@@ -170,7 +170,7 @@ Weitere Beispiele finden Sie unter [Erstellen eines Workflow-Modells](/help/form
 
 #### GOTO-Schritt (Wechseln zu Schritt)  {#go-to-step}
 
-Die **Zum Schritt wechseln** ermöglicht die Angabe des nächsten Schritts, der im Workflow-Modell ausgeführt werden soll, abhängig vom Ergebnis eines Routing-Ausdrucks.
+Mit der Option **Goto-Schritt** können Sie den nächsten auszuführenden Schritt im Workflow-Modell angeben, abhängig vom Ergebnis eines Routing-Ausdrucks.
 
 Ähnlich wie beim ODER-Teilungs-Schritt können Sie Routing-Ausdrücke für einen GOTO-Schritt (Wechseln zu Schritt) mithilfe einer Regeldefinition, eines ECMA-Skripts oder eines externen Skripts definieren.
 
@@ -230,7 +230,7 @@ Aktualisiert den Wert der Variablen **salary** (Gehalt) auf 50000.
 
 Sie können eine API verwenden, um Variablen festzulegen und sie dann zu übergeben, um Workflow-Instanzen aufzurufen.
 
-[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/WorkflowSession.html#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) verwendet „model“, „wfData“ und „metaData“ als Argumente. Verwenden Sie MetaDataMap, um einen Wert für die Variable festzulegen.
+[workflowSession.startWorkflow](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/workflow/WorkflowSession.html?lang=de#startWorkflow-com.adobe.granite.workflow.model.WorkflowModel-com.adobe.granite.workflow.exec.WorkflowData-java.util.Map-) verwendet „model“, „wfData“ und „metaData“ als Argumente. Verwenden Sie MetaDataMap, um einen Wert für die Variable festzulegen.
 
 In dieser API wird die Variable **variableName** mithilfe von metaData.put(variableName, value) auf **value** festgelegt.
 

@@ -1,5 +1,5 @@
 ---
-title: Konfigurieren von Standardkomponenten im Designmodus
+title: Konfigurieren von Standardkomponenten im Design-Modus
 description: Konfigurieren von Komponenten im Design-Modus
 uuid: b9c9792d-4398-446d-8767-44d4e7ce9a2e
 contentOwner: Chris Bohnert
@@ -11,13 +11,13 @@ exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
 source-wordcount: '913'
-ht-degree: 47%
+ht-degree: 98%
 
 ---
 
-# Konfigurieren von Standardkomponenten im Designmodus{#configuring-components-in-design-mode}
+# Konfigurieren von Standardkomponenten im Design-Modus{#configuring-components-in-design-mode}
 
-Wenn AEM Instanz vorkonfiguriert installiert ist, ist eine Auswahl von Komponenten sofort im Komponenten-Browser verfügbar.
+Wenn die AEM-Instanz direkt installiert wird, ist im Komponenten-Browser sofort eine Auswahl von Komponenten verfügbar.
 
 Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mithilfe des [Design-Modus](#enable-disable-components) können Sie diese Komponenten aktivieren bzw. deaktivieren. Wenn Sie den Design-Modus aktivieren und sich auf der Seite befinden, können Sie damit [Aspekte des Komponenten-Designs konfigurieren](#configuring-the-design-of-a-component), indem Sie die Attributparameter bearbeiten.
 
@@ -27,7 +27,7 @@ Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mithilfe 
 
 >[!NOTE]
 >
->Der Design-Modus steht nur für statische Vorlagen zur Verfügung. Vorlagen, die mit bearbeitbaren Vorlagen erstellt werden, sollten mit dem [Vorlageneditor](/help/sites-authoring/templates.md).
+>Der Design-Modus steht nur für statische Vorlagen zur Verfügung. Vorlagen, die mit bearbeitbaren Vorlagen erstellt wurden, sollten mit dem [Vorlageneditor](/help/sites-authoring/templates.md) bearbeitet werden.
 
 >[!NOTE]
 >
@@ -35,14 +35,14 @@ Darüber hinaus sind auch verschiedene weitere Komponenten verfügbar. Mithilfe 
 >
 >Ab AEM 6.4 wird empfohlen, Designs als Konfigurationsdaten unter `/apps` zu speichern, um kontinuierliche Bereitstellungsszenarien zu unterstützen. Unter `/apps` gespeicherte Designs können nicht zur Laufzeit bearbeitet werden. Außerdem steht der Design-Modus in Bezug auf diese Vorlagen ausschließlich Admins zur Verfügung.
 
-Dazu müssen die zulässigen Komponenten im Absatzsystem für die Seite hinzugefügt oder entfernt werden. Das Absatzsystem (`parsys`) ist eine zusammengesetzte Komponente, die alle anderen Absatzkomponenten enthält. Das Absatzsystem ermöglicht es Autoren, einer Seite Komponenten unterschiedlicher Typen hinzuzufügen, da sie alle anderen Absatzkomponenten enthält. Jeder Absatztyp wird als eine Komponente dargestellt.
+Dazu müssen die zulässigen Komponenten im Absatzsystem für die Seite hinzugefügt oder entfernt werden. Das Absatzsystem (`parsys`) ist eine zusammengesetzte Komponente, die alle anderen Absatzkomponenten enthält. Mit dem Absatzsystem können Komponenten unterschiedlicher Typen zu einer Seite hinzugefügt werden, da es alle anderen Absatzkomponenten enthält. Jeder Absatztyp wird als eine Komponente dargestellt.
 
 Beispielsweise kann der Inhalt einer Produktseite ein Absatzsystem enthalten, das Folgendes enthält:
 
-* Ein Bild des Produkts (in Form eines Bild- oder Textimage-Absatzes)
-* Die Produktbeschreibung (als Textabsatz)
-* Eine Tabelle mit technischen Daten (als Tabellenabsatz)
-* Formularbenutzer füllen das Formular aus (als Formularbeginn, Formularelement und Formularende-Absatz)
+* Ein Bild des Produkts (in Form eines image- oder textimage-Absatzes)
+* Die Produktbeschreibung (als text-Absatz)
+* Eine Tabelle mit technischen Daten (als table-Absatz)
+* Ein Formular, das ausgefüllt werden kann (als forms begin-, forms element- und forms end-Absatz)
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Beispielsweise kann der Inhalt einer Produktseite ein Absatzsystem enthalten, da
 >
 >Das Ändern von Designs in CRX DE ist beispielsweise nicht ratsam und die Anwendung derartiger Designs kann von erwarteten Verhaltensweisen abweichen. Weitere Informationen finden Sie im Entwicklerdokument [Seitenvorlagen – statisch](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied).
 
-## Komponenten aktivieren/deaktivieren {#enable-disable-components}
+## Aktivieren/Deaktivieren von Komponenten {#enable-disable-components}
 
 So aktivieren oder deaktivieren Sie eine Komponente:
 
@@ -62,7 +62,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
-1. Tippen oder klicken Sie auf eine Komponente. Die Komponente hat bei Auswahl einen blauen Rahmen.
+1. Tippen oder klicken Sie auf eine Komponente. Diese Komponente wird mit einem blauen Rahmen versehen, wenn sie ausgewählt wird.
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
@@ -92,20 +92,20 @@ So aktivieren oder deaktivieren Sie eine Komponente:
    Auf der Registerkarte **Zugelassene Komponenten** legen Sie fest, welche Komponenten für das ParSys verfügbar sein sollen.
 
    * Die Komponenten werden nach Komponentengruppen gruppiert, die sich erweitern und reduzieren lassen.
-   * Es kann eine ganze Gruppe ausgewählt werden, indem der Gruppenname überprüft wird. Die Auswahl aller Gruppen kann durch Deaktivieren der Option aufgehoben werden.
-   * Ein Minuszeichen steht für mindestens ein Element, es werden jedoch nicht alle Elemente einer Gruppe ausgewählt.
-   * Es ist eine Suche verfügbar, um nach einer Komponente nach Namen zu filtern.
-   * Die rechts neben dem Komponentengruppen-Namen aufgelisteten Zahlen geben die Gesamtanzahl der ausgewählten Komponenten in diesen Gruppen an, unabhängig vom Filter.
+   * Es kann eine ganze Gruppe ausgewählt werden, indem das Kontrollkästchen für den Gruppennamen aktiviert wird. Um die Auswahl aller Elemente wieder aufzuheben, deaktivieren Sie das Kontrollkästchen.
+   * Ein Minuszeichen zeigt an, dass mindestens eines, aber nicht alle Elemente in einer Gruppe ausgewählt sind.
+   * Es steht eine Suchfunktion zur Verfügung, um nach einer Komponente anhand ihres Namens zu filtern.
+   * Die rechts neben dem Namen der Komponentengruppe aufgeführten Zahlen geben die Gesamtzahl der ausgewählten Komponenten in diesen Gruppen an, unabhängig vom Filter.
 
-   Sie definieren die Konfiguration pro Seitenkomponente. Wenn untergeordnete Seiten dieselbe Vorlage und/oder Seitenkomponente verwenden (normalerweise ausgerichtet), wird dieselbe Konfiguration auf das entsprechende Absatzsystem angewendet.
+   Die Konfiguration wird pro Seitenkomponente definiert. Wenn untergeordnete Seiten dieselbe Vorlage und/oder Seitenkomponente verwenden (normalerweise ausgerichtet), wird dieselbe Konfiguration auf das zugehörige Absatzsystem angewendet.
 
    >[!NOTE]
    >
-   >Adaptive Formularkomponenten sind für die Verwendung im Container für adaptive Formulare konzipiert, um das Forms-Ökosystem zu nutzen. Daher dürfen diese Komponenten nur im adaptiven Formular-Editor verwendet werden und funktionieren nicht im Sites-Seiten-Editor.
+   >Adaptive Formularkomponenten sind für die Verwendung im Container für adaptive Formulare konzipiert, um das Forms-Ökosystem zu nutzen. Entsprechend dürfen diese Komponenten nur im Editor für adaptive Formulare verwendet werden und funktionieren nicht im Seiten-Editor von Sites.
 
    **Einstellungen**
 
-   Im **Einstellungen** -Tab können Sie zusätzliche Optionen definieren, z. B. zum Zeichnen eines Ankers für jede Komponente und zum Definieren des Zellenabstands jedes Containers.
+   Auf der Registerkarte **Einstellungen** können Sie zusätzliche Optionen festlegen und beispielsweise für jede Komponente einen Anker zeichnen oder den Zellenabstand für die einzelnen Container definieren.
 
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
 
@@ -115,7 +115,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Tippen oder klicken Sie auf eine Komponente mit einem blauen Rahmen In diesem Beispiel wird eine Hero-Bild-Komponente ausgewählt.
+1. Tippen oder klicken Sie auf eine Komponente mit einem blauen Rahmen In diesem Beispiel wird eine Hero-Bildkomponente ausgewählt.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 
@@ -135,15 +135,15 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    **Eigenschaften**
 
-   Die **Eigenschaften** -Tab können Sie die wichtigen Designparameter der Komponente konfigurieren. Beispielsweise können Sie für eine Bildkomponente die maximal zulässige und minimale Bildgröße definieren.
+   Auf der Registerkarte **Eigenschaften** können Sie die wichtigsten Design-Parameter der Komponente konfigurieren. Beispielsweise können Sie für eine Bildkomponente die maximal und minimal zulässige Größe des Bildes festlegen.
 
    **Funktionen**
 
-   Die **Funktionen** -Tab können Sie zusätzliche Funktionen der Komponente aktivieren oder deaktivieren. Beispielsweise können Sie für eine Bildkomponente die Ausrichtung des Bildes, die verfügbaren Zuschneideoptionen und festlegen, ob ein Bild hochgeladen werden kann.
+   Auf der Registerkarte **Funktionen** können Sie zusätzliche Funktionen der Komponente aktivieren oder deaktivieren. Beispielsweise können Sie für eine Bildkomponente die Ausrichtung des Bildes und die verfügbaren Zuschneideoptionen definieren und festlegen, ob ein Bild hochgeladen werden kann.
 
    **Stile**
 
-   Die **Stile** -Tab können Sie die CSS-Klassen und -Stile definieren, die mit der Komponente verwendet werden sollen.
+   Auf der Registerkarte **Stile** können Sie die CSS-Klassen und -Stile definieren, die mit der Komponente verwendet werden sollen.
 
    ![screen_shot_2018-03-22at103741](assets/screen_shot_2018-03-22at103741.png)
 
@@ -155,8 +155,8 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![Löschen](do-not-localize/screen_shot_2018-03-22at103809.png)
 
-   Verwenden Sie die **Verschieben** -Symbol, um die Reihenfolge der Einträge in einer Dialogfeldliste mit mehreren Einträgen neu anzuordnen.
+   Verwenden Sie das Symbol **Verschieben**, um in einer Dialogfeldliste mit mehreren Einträgen die Reihenfolge der Einträge zu ändern.
 
    ![Verschieben](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Klicken oder tippen Sie auf **Fertig** zum Speichern und Schließen des Dialogfelds.
+1. Klicken oder tippen Sie auf das Symbol **Fertig**, um Ihre Änderungen zu speichern und das Dialogfeld zu schließen.

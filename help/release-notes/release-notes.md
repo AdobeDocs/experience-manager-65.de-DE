@@ -6,7 +6,7 @@ exl-id: fed4e110-9415-4740-aba1-75da522039a9
 source-git-commit: d244fb50ad0f165d31bc51ee671b80bdd13c860e
 workflow-type: tm+mt
 source-wordcount: '3777'
-ht-degree: 28%
+ht-degree: 31%
 
 ---
 
@@ -362,16 +362,16 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * Aktualisieren Sie Ihre GraphQL-Abfragen, die möglicherweise einen benutzerdefinierten API-Namen für Ihr Inhaltsmodell verwendet haben, so, dass stattdessen der Standardname des Inhaltsmodells verwendet wird.
 
-* Eine GraphQL-Abfrage kann die `damAssetLucene` Index anstelle der `fragments` Index. Diese Aktion kann dazu führen, dass GraphQL-Abfragen fehlschlagen oder dass die Ausführung lange dauert.
+* Eine GraphQL-Abfrage verwendet möglicherweise den `damAssetLucene`-Index anstelle des `fragments`-Index. Diese Aktion kann dazu führen, dass GraphQL-Abfragen fehlschlagen oder dass die Ausführung lange dauert.
 
-  Um das Problem zu beheben, `damAssetLucene` muss so konfiguriert werden, dass die folgenden beiden Eigenschaften einbezogen werden:
+  Um das Problem zu beheben, muss `damAssetLucene` so konfiguriert werden, dass die folgenden beiden Eigenschaften einbezogen werden:
 
    * `contentFragment`
    * `model`
 
   Nach Änderung der Indexdefinition ist eine Neuindizierung erforderlich (`reindex` = `true`).
 
-  Nach diesen Schritten sollten die GraphQL-Abfragen schneller ausgeführt werden.
+  Nach diesen Schritten sollten die GraphQL-Abfragen schneller funktionieren.
 
 * Beim Versuch, Inhaltsfragmente, Sites oder Seiten zu verschieben, zu löschen oder zu veröffentlichen, tritt beim Abrufen von Inhaltsfragmentverweisen ein Problem auf, da die Hintergrundabfrage fehlschlägt. Das heißt, die Funktionalität funktioniert nicht.
 Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigenschaften zum Indexdefinitionsknoten `/oak:index/damAssetLucene` hinzufügen (eine Neuindizierung ist nicht erforderlich):

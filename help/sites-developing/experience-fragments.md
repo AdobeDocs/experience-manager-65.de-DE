@@ -12,7 +12,7 @@ exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
 source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt
 source-wordcount: '1781'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -36,7 +36,7 @@ Mit dem `.plain.`-Selektor in der URL können Sie auf die einfache HTML-Ausgabe 
 
 Diese ist über den Browser verfügbar, aber ihr Hauptzweck ist es, anderen Applikationen (beispielsweise Web-Applikationen von Drittanbietern oder benutzerdefinierten mobilen Implementierungen) den direkten Zugriff auf den Inhalt des Experience Fragment zu ermöglichen, und zwar allein über die URL.
 
-Die einfache HTML-Ausgabedarstellung fügt den Protokoll-, Host- und Kontextpfad zu Pfaden hinzu, die:
+Die Plain-HTML-Wiedergabe fügt das Protokoll, den Host und den Kontextpfad zu Pfaden hinzu, die:
 
 * den folgenden Typ aufweisen: `src`, `href` oder `action`
 
@@ -48,7 +48,7 @@ Beispiel:
 
 >[!NOTE]
 >
->Links verweisen immer auf die Veröffentlichungsinstanz. Sie sollen von Dritten genutzt werden, sodass der Link immer von der Veröffentlichungsinstanz und nicht vom Autor aufgerufen wird.
+>Links verweisen immer auf die Publishing-Instanz. Sie sind für die Nutzung durch Dritte bestimmt, sodass der Link immer von der Publishing-Instanz und nicht vom Authoring aufgerufen wird.
 
 ![xf-14](assets/xf-14.png)
 
@@ -109,11 +109,9 @@ Um eine Experience Fragment-Vorlage zu erstellen, die vom **Experience Fragment*
 
    1. Der Name der Vorlage muss beginnen mit:
       `experience-fragments`
-Dadurch können Anwender Experience Fragments in „/content/experience-fragments“ erstellen, da 
-die `cq:allowedTemplates`-Eigenschaft dieses Ordners alle Vorlagen umfasst, deren Namen mit `experience-fragment`beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
+Dadurch können Benutzer Experience Fragments in /content/experience-fragments erstellen, da die `cq:allowedTemplates`-Eigenschaft dieses Ordners alle Vorlagen enthält, deren Namen mit `experience-fragment` beginnen. Kunden können diese Eigenschaft aktualisieren, um ihr eigenes Namensschema oder ihre eigenen Vorlagenspeicherorte einzuschließen.
 
 1. [Zulässige Vorlagen](/help/sites-authoring/experience-fragments.md#configure-allowed-templates-folder) können in der Experience Fragments-Konsole konfiguriert werden.
-
 <!--
 1. Add the template details manually in `cq:allowedTemplates` on the `/content/experience-fragment` node.
 -->
@@ -281,7 +279,7 @@ Im obigen Beispiel möchten wir Folgendes umschreiben:
 * nur `href`-Attribute
 
 * für ein bestimmtes Experience Fragment:
-   `/content/experience-fragment/master`
+  `/content/experience-fragment/master`
 
 Alle anderen Experience Fragments, die das System „In Target exportieren“ durchlaufen, werden ignoriert und sind von den in diesem Service implementierten Änderungen nicht betroffen.
 
@@ -294,8 +292,7 @@ Für die Experience Fragment-Variante, die vom Umschreibungsprozess betroffen is
 Als Eingabe erhält die Methode die folgenden Parameter:
 
 * `link`
-Die 
-`String`-Darstellung des Links, der derzeit verarbeitet wird. Dies ist normalerweise eine relative URL, die auf die Ressource in der Autoreninstanz verweist.
+Die `String`-Darstellung des Links, der derzeit verarbeitet wird. Dies ist normalerweise eine relative URL, die auf die Ressource in der Autoreninstanz verweist.
 
 * `tag`
 Der Name des HTML-Elements, das derzeit verarbeitet wird.

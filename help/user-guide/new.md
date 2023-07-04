@@ -5,7 +5,7 @@ exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
 source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 44%
+ht-degree: 72%
 
 ---
 
@@ -13,10 +13,10 @@ ht-degree: 44%
 
 ## Was ist Adobe Experience Manager (AEM) und wo finden Sie die Dokumentation? {#what-is-aem}
 
-Adobe Experience Manager (AEM) ist ein webbasiertes Client-Server-System zum Erstellen, Verwalten und Bereitstellen von kommerziellen Websites und zugehörigen Diensten. Es kombiniert mehrere Funktionen auf Infrastruktur- und Anwendungsebene zu einem einzigen integrierten Paket.
+Adobe Experience Manager (AEM) ist ein Web-basiertes Client-Server-System für das Erstellen, Verwalten und Bereitstellen von kommerziellen Websites und zugehörigen Diensten. Es kombiniert mehrere Funktionen auf Infrastrukturebene und Anwendungsebene in einem einzelnen integrierten Paket.
 
-* [Weitere Informationen finden Sie in der Dokumentation .](/help/sites-deploying/home.md)
-* [Aktuelle Dokumentationsaktualisierungen für AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
+* [Weitere Informationen finden Sie in der Dokumentation](/help/sites-deploying/home.md)
+* [Aktuelle Dokumentationsaktualisierungen für AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=de)
 
 ## Wo kann ich die AEM-Software herunterladen? {#download}
 
@@ -24,17 +24,17 @@ Kunden mit einem gültigen Wartungs- und Support-vertrag sollten eine E-Mail-Ben
 
 [Weitere Informationen zur Bereitstellung der AEM-Software.](/help/sites-deploying/home.md)
 
-Besuch [AEM Sustenanz-Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de) für Informationen zu AEM Versionen.
+Im [AEM Sustenance-Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de) finden Sie Informationen zu AEM-Versionen.
 
 ## Wie erhalte ich Support für AEM? {#official-support}
 
-Als lizenzierter Kunde erhalten Sie Unterstützung für AEM von [Kundenunterstützungs-Team](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support). Sie können uns auch Fragen im Abschnitt [AEM Community](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) oder auf der AdobeExpCare Twitter-Seite `https://twitter.com/adobeexpcare`.
+Als lizenzierte Kundin bzw. lizenzierter Kunde erhalten Sie Support für AEM vom [Kundenunterstützungs-Team](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support). Sie können uns auch Fragen im Abschnitt [AEM Community](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) oder auf der AdobeExpCare Twitter-Seite `https://twitter.com/adobeexpcare`.
 
 ## Wo finde ich die Dokumentation zu anderen Versionen von AEM? {#versions}
 
 Sie befinden sich an der richtigen Stelle für die AEM 6.5 Dokumentation.
 
-Adobe verfügt auch über eine Dokumentation für ältere Versionen von Adobe Experience Manager. Sie können einen Blick auf [Ältere Versionen der Dokumentation zu Adobe Experience Manager, CQ und CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de) für weitere Informationen.
+Adobe bietet auch Dokumentationen für ältere Versionen von Adobe Experience Manager. Sie können einen Blick auf [Ältere Versionen der Dokumentation zu Adobe Experience Manager, CQ und CRX](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de) für weitere Informationen.
 
 ## Wo befinden sich die Versionshinweise zu AEM 6.5? {#release-notes}
 

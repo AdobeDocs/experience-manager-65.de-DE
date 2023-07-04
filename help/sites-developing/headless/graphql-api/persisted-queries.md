@@ -1,17 +1,17 @@
 ---
 title: Persistente GraphQL-Abfragen
-description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager beibehalten, um die Leistung zu optimieren. Persistente Abfragen können von Clientanwendungen mithilfe der HTTP-GET-Methode angefordert werden. Die Antwort kann auf den Dispatcher- und CDN-Ebenen zwischengespeichert werden, wodurch die Leistung der Clientanwendungen verbessert wird.
+description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager beibehalten, um die Leistung zu optimieren. Persistierte Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, was letztendlich die Leistung der Client-Programme verbessert.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
 workflow-type: tm+mt
 source-wordcount: '1424'
-ht-degree: 72%
+ht-degree: 98%
 
 ---
 
-# Persistente GraphQL-Abfragen {#persisted-queries-caching}
+# Persistierte GraphQL-Abfragen {#persisted-queries-caching}
 
-Beständige Abfragen sind GraphQL-Abfragen, die auf dem Adobe Experience Manager-Server (AEM) erstellt und gespeichert werden. Sie können von Client-Programmen mit einer GET-Anfrage angefragt werden. Die Antwort einer GET-Anfrage kann auf den Ebenen Dispatcher und Content Delivery Network (CDN) zwischengespeichert werden, wodurch die Leistung der anfragenden Client-Anwendung verbessert wird. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mit POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
+Beständige Abfragen sind GraphQL-Abfragen, die auf dem Adobe Experience Manager-Server (AEM) erstellt und gespeichert werden. Sie können von Client-Programmen mit einer GET-Anfrage angefragt werden. Die Antwort auf eine GET-Anfrage kann auf der Ebene des Dispatchers und des Content Delivery Network (CDN) zwischengespeichert werden, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mithilfe von POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
 
 <!--
 >[!NOTE]
@@ -19,7 +19,7 @@ Beständige Abfragen sind GraphQL-Abfragen, die auf dem Adobe Experience Manager
 >Persisted Queries are recommended. See [GraphQL Query Best Practices (Dispatcher)](/help/headless/graphql-api/content-fragments.md#graphql-query-best-practices) for details, and the related Dispatcher configuration.
 -->
 
-Die [GraphiQL-IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md) ist in AEM verfügbar, damit Sie (persistente) GraphQL-Abfragen entwickeln und testen können, bevor Sie sie [in Ihre Produktionsumgebung übertragen](#transfer-persisted-query-production). Für Fälle, in denen eine Anpassung erforderlich ist (z. B. wenn [Cache anpassen](/help/sites-developing/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)) können Sie die API verwenden; sehen Sie sich das Beispiel cURL an, das in [Beibehalten einer GraphQL-Abfrage](#how-to-persist-query).
+Die [GraphiQL-IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md) ist in AEM verfügbar, damit Sie GraphQL-Abfragen entwickeln, testen und persistieren können, bevor Sie sie [in Ihre Produktionsumgebung übertragen](#transfer-persisted-query-production). Für Fälle, in denen eine Anpassung erforderlich ist (z. B. beim [Anpassen des Caches](/help/sites-developing/headless/graphql-api/graphiql-ide.md#caching-persisted-queries)), können Sie die API verwenden. Sehen Sie sich dazu das cURL-Beispiel in [Persistieren einer GraphQL-Abfrage](#how-to-persist-query) an.
 
 ## Persistente Abfragen und Endpunkte {#persisted-queries-and-endpoints}
 
@@ -40,9 +40,9 @@ Um beispielsweise eine persistente Abfrage speziell für die WKND-Website-Konfig
 Wenn es beispielsweise eine bestimmte Abfrage namens `my-query` gibt, die ein `my-model`-Modell aus der Sites-Konfiguration `my-conf` verwendet:
 
 * Sie können eine Abfrage mit dem `my-conf`-spezifischen Endpunkt erstellen und die Abfrage wird dann wie folgt gespeichert:
-   `/conf/my-conf/settings/graphql/persistentQueries/my-query`
+  `/conf/my-conf/settings/graphql/persistentQueries/my-query`
 * Sie können dieselbe Abfrage mit dem `global`-Endpunkt erstellen, die Abfrage wird dann jedoch wie folgt gespeichert:
-   `/conf/global/settings/graphql/persistentQueries/my-query`
+  `/conf/global/settings/graphql/persistentQueries/my-query`
 
 >[!NOTE]
 >
@@ -57,10 +57,10 @@ Es wird empfohlen, Abfragen zunächst in einer AEM-Autorenumgebung beizubehalten
 Es gibt verschiedene Methoden zum Beibehalten von Abfragen:
 
 * GraphiQL-IDE – siehe [Speichern persistenter Abfragen](/help/sites-developing/headless/graphql-api/graphiql-ide.md#saving-persisted-queries) (bevorzugte Methode)
-* cURL - siehe folgendes Beispiel
+* cURL: siehe folgendes Beispiel
 * Andere Tools, einschließlich [Postman](https://www.postman.com/)
 
-Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfragen. So behalten Sie eine bestimmte Abfrage bei: **cURL** Befehlszeilen-Tool:
+Die GraphiQL-IDE ist die **bevorzugte** Methode zum Erstellen persistenter Abfragen. So persistieren Sie eine Abfrage mithilfe des Befehlszeilen-Tools **cURL**:
 
 1. Bereiten Sie die Abfrage mittels einer PUT-Anfrage an die neue Endpunkt-URL `/graphql/persist.json/<config>/<persisted-label>` vor.
 
@@ -262,11 +262,11 @@ Beachten Sie Folgendes: `%3B` ist die UTF-8-Codierung für `;`, und `%3D` ist di
 
 ## Caching persistenter Abfragen {#caching-persisted-queries}
 
-Beständige Abfragen werden empfohlen, da sie im [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) und CDN-Ebenen (Content Delivery Network), die letztendlich die Leistung der anfragenden Client-Anwendung verbessern.
+Persistierte Abfragen werden empfohlen, da sie auf der [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)- und CDN-Ebene zwischengespeichert werden können, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert.
 
-Standardmäßig werden AEM Cache basierend auf einer TTL-Definition (Time To Live) ungültig. Diese TTLs können durch die folgenden Parameter definiert werden. Auf diese Parameter kann auf verschiedene Weise zugegriffen werden, wobei die Namen je nach verwendetem Mechanismus variieren:
+Standardmäßig macht AEM zwischengespeicherte Inhalte, die auf einer TTL (Time To Live)-Definition basieren, ungültig. Diese TTLs können durch die folgenden Parameter definiert werden. Auf diese Parameter kann auf verschiedene Weise zugegriffen werden, wobei die Namen je nach verwendetem Mechanismus variieren:
 
-| Cachetyp | [HTTP-Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-Konfiguration  |
+| Cache-Typ | [HTTP-Kopfzeile](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)  | cURL  | OSGi-Konfiguration  |
 |--- |--- |--- |--- |
 | Browser | `max-age` | `cache-control : max-age` | `cacheControlMaxAge` |
 | CDN | `s-maxage` | `surrogate-control : max-age` | `surrogateControlMaxAge` |
@@ -275,19 +275,19 @@ Standardmäßig werden AEM Cache basierend auf einer TTL-Definition (Time To Liv
 
 {style="table-layout:auto"}
 
-### Autoreninstanzen {#author-instances}
+### Authoring-Instanzen {#author-instances}
 
-Für Autoreninstanzen sind die Standardwerte:
+Für Authoring-Instanzen sind die Standardwerte:
 
-* `max-age`  : 60
+* `max-age` : 60
 * `s-maxage` : 60
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
 
-Diese:
+Diese Werte:
 
-* kann nicht mit einer OSGi-Konfiguration überschrieben werden
-* kann durch eine Anfrage überschrieben werden, die HTTP-Header-Einstellungen mithilfe von cURL definiert; Es sollten geeignete Einstellungen für `cache-control` und/oder `surrogate-control`; Beispiele finden Sie unter [Verwalten des Cache auf der Ebene der persistenten Abfrage](#cache-persisted-query-level)
+* können nicht mit einer OSGi-Konfiguration überschrieben werden
+* können durch eine Anfrage überschrieben werden, die HTTP-Header-Einstellungen mithilfe von cURL definiert. Es sollten geeignete Einstellungen für `cache-control` und/oder `surrogate-control` enthalten. Beispiele finden Sie unter [Verwalten des Caches auf der Ebene der persistierten Abfrage](#cache-persisted-query-level).
 
 <!-- CQDOC-20186 -->
 <!-- following entry is only when the GraphiQL IDE is ready; add cross-reference too -->
@@ -295,11 +295,11 @@ Diese:
 * can be overwritten if you specify values in the **Headers** dialog of the [GraphiQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-### Veröffentlichungsinstanzen {#publish-instances}
+### Publishing-Instanzen {#publish-instances}
 
-Für Veröffentlichungsinstanzen sind die Standardwerte:
+Für Publishing-Instanzen sind die Standardwerte:
 
-* `max-age`  : 60
+* `max-age` : 60
 * `s-maxage` : 7200
 * `stale-while-revalidate` : 86400
 * `stale-if-error` : 86400
@@ -312,7 +312,7 @@ Diese können überschrieben werden:
 * [from the GraphQL IDE](#http-cache-headers-graphiql-ide)
 -->
 
-* [auf der Ebene der persistenten Abfrage](#cache-persisted-query-level); Hierzu gehört das Posten der Abfrage an AEM mithilfe von cURL in Ihrer Befehlszeilenschnittstelle und das Veröffentlichen der beständigen Abfrage.
+* [auf der Ebene der persistierten Abfrage](#cache-persisted-query-level) – dies geschieht durch Senden der Abfrage an AEM mithilfe von cURL in Ihrer Befehlszeilenschnittstelle und das Veröffentlichen der persistierten Abfrage.
 
 * [mit einer OSGi-Konfiguration](#cache-osgi-configration)
 
@@ -324,11 +324,11 @@ Diese können überschrieben werden:
 The GraphiQL IDE - see [Saving Persisted Queries](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache)
 -->
 
-### Verwalten des Cache auf der Ebene der persistenten Abfrage {#cache-persisted-query-level}
+### Verwalten des Caches auf der Ebene der persistenten Abfrage {#cache-persisted-query-level}
 
-Dazu gehört das Posten der Abfrage an AEM mithilfe von cURL in Ihrer Befehlszeilenschnittstelle.
+Dazu müssen Sie die Abfrage mithilfe von cURL in Ihrer Befehlszeilenschnittstelle an AEM senden.
 
-Beispiel für die PUT-Methode (create):
+Ein Beispiel für die PUT-Methode (erstellen):
 
 ```bash
 curl -u admin:admin -X PUT \
@@ -337,7 +337,7 @@ curl -u admin:admin -X PUT \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-Beispiel für die POST-Methode (update):
+Ein Beispiel für die POST-Methode (aktualisieren):
 
 ```bash
 curl -u admin:admin -X POST \
@@ -346,15 +346,15 @@ curl -u admin:admin -X POST \
 --data '{ "query": "{articleList { items { _path author } } }", "cache-control": { "max-age": 300 }, "surrogate-control": {"max-age":600, "stale-while-revalidate":1000, "stale-if-error":1000} }'
 ```
 
-Die `cache-control` kann zum Zeitpunkt der Erstellung (PUT) oder später (z. B. über eine POST-Anfrage) festgelegt werden. Die Cache-Steuerung ist beim Erstellen der persistenten Abfrage optional, da AEM den Standardwert bereitstellen kann. Siehe [Beibehalten einer GraphQL-Abfrage](#how-to-persist-query), zum Beispiel für die Beibehaltung einer Abfrage mit cURL.
+Die `cache-control` kann zum Zeitpunkt der Erstellung (PUT) oder später (z. B. über eine POST-Anfrage) festgelegt werden. Die Cache-Steuerung ist beim Erstellen der persistenten Abfrage optional, da AEM den Standardwert bereitstellen kann. Lesen Sie [Persistieren einer GraphQL-Abfrage](#how-to-persist-query), um ein Beispiel für die Persistierung einer Abfrage mithilfe von cURL zu sehen.
 
-### Verwalten des Cache mit einer OSGi-Konfiguration {#cache-osgi-configration}
+### Verwalten des Caches mit einer OSGi-Konfiguration {#cache-osgi-configration}
 
-Um den Cache global zu verwalten, können Sie [Konfigurieren der OSGi-Einstellungen](/help/sites-deploying/configuring-osgi.md) für **Konfigurationen für beständige Abfragen**. Andernfalls verwendet diese OSGi-Konfiguration die [Standardwerte für Veröffentlichungsinstanzen](#publish-instances).
+Um den Cache global zu verwalten, können Sie [die OSGi-Einstellungen](/help/sites-deploying/configuring-osgi.md) für die **Konfiguration des persistierten Abfrage-Service** konfigurieren. Andernfalls verwendet diese OSGi-Konfiguration die [Standardwerte für Publishing-Instanzen](#publish-instances).
 
 >[!NOTE]
 >
->Die OSGi-Konfiguration ist nur für Veröffentlichungsinstanzen geeignet. Die Konfiguration ist in Autoreninstanzen vorhanden, wird jedoch ignoriert.
+>Die OSGi-Konfiguration ist nur für Publishing-Instanzen geeignet. Die Konfiguration ist in Authoring-Instanzen zwar vorhanden, wird jedoch ignoriert.
 
 ## Codieren der Abfrage-URL zur Verwendung in einer Mobile App {#encoding-query-url}
 
@@ -396,7 +396,7 @@ Persistente Abfragen können in [AEM-Pakete](/help/sites-administering/package-m
 
 So erstellen Sie ein Paket:
 
-1. Navigieren Sie zu **Tools** > **Implementierung** > **Pakete**.
+1. Navigieren Sie zu **Tools** > **Bereitstellung** > **Pakete**.
 1. Erstellen Sie ein neues Paket durch Tippen auf **Paket erstellen**. Dadurch wird ein Dialogfeld zum Definieren des Pakets geöffnet.
 1. Geben Sie im Dialogfeld zur Paketdefinition unter **Allgemein** einen **Namen** wie „wknd-persistent-queries“ ein.
 1. Geben Sie eine Versionsnummer wie „1.0“ ein.

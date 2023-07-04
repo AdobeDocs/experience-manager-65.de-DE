@@ -42,7 +42,7 @@ ht-degree: 98%
    + [Tag-Bibliotheken](taglib.md)
    + Vorlagen{#templates}
       + [Vorlagen](templates.md)
-      + [Bearbeitbare Seitenvorlagen ](page-templates-editable.md)
+      + [Bearbeitbare Seitenvorlagen](page-templates-editable.md)
       + [Seitenvorlagen – statisch](page-templates-static.md)
       + [Inhaltsfragmentvorlagen](content-fragment-templates.md)
       + [Rendering von adaptiven Vorlagen](templates-adaptive-rendering.md)

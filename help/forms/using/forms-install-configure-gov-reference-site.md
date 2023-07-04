@@ -11,7 +11,7 @@ exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
 source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
 workflow-type: tm+mt
 source-wordcount: '4663'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
@@ -56,12 +56,12 @@ Das [AEM Forms-We.Gov-Demopaket](https://experience.adobe.com/#/downloads/conten
       * **core.wcm.components.all-2.0.4.zip** – *Sammlung von WCM-Beispielkomponenten*
 
       * **grid-aem.ui.apps-1.0-SNAPSHOT.zip** – *AEM Sites Grid-Layout-Paket für die Seitenspaltensteuerung in Sites*
+
    * **we-gov-forms.ui.content-&lt;version>.zip** – *Enthält alle Inhalte, Seiten, Bilder, Formulare, interaktiven Kommunikations-Assets usw.*
 
    * **we-gov-forms.ui.analytics-&lt;version>.zip** – *Enthält alle Forms-Analysedaten zu We.Gov, die im Repository gespeichert werden sollen.*
 
    * **we-gov-forms.config.public-&lt;version>.zip** – *Enthält alle standardmäßigen Konfigurationsknoten, einschließlich Platzhalter-Cloud-Konfigurationen, um Probleme mit Formulardatenmodellen und Service-Bindung zu vermeiden.*
-
 
 Zu den in diesem Paket enthaltenen Assets gehören:
 
@@ -84,9 +84,9 @@ Dieser Abschnitt enthält Informationen zur Installation des Demopakets.
 
 1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
-1. Im **[!UICONTROL Filter]** Abschnitt:
-   1. Auswählen **[!UICONTROL Forms]** von **[!UICONTROL Lösung]** Dropdown-Liste.
-   2. Wählen Sie die Version aus und geben Sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
+1. Im Abschnitt **[!UICONTROL Filter]**:
+   1. Wählen Sie **[!UICONTROL Formulare]** aus der Dropdown-Liste **[!UICONTROL Lösung]** aus.
+   2. Wählen Sie die Version aus und geben Sie sie für das Paket ein. Sie können auch die Option **[!UICONTROL Downloads durchsuchen]** verwenden, um die Ergebnisse zu filtern.
 1. Tippen Sie auf den Paketnamen **we-gov-forms.pkg.all-&lt;version>.zip**, wählen Sie **[!UICONTROL EULA-Bedingungen akzeptieren]** und tippen Sie auf **[!UICONTROL Download]**.
 1. Öffnen Sie [Package Manager](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=de) und klicken Sie auf **[!UICONTROL Paket hochladen]**, um das Paket hochzuladen.
 1. Wählen Sie das Paket aus und klicken Sie auf **[!UICONTROL Installieren]**.
@@ -128,7 +128,7 @@ Um eine neue Paketversion zu installieren, führen Sie die in 4.1 und 4.2 defini
 
 ## Konfiguration des Demopakets {#demo-package-configuration}
 
-Dieser Abschnitt enthält Details und Anweisungen zur Konfiguration des Demopakets nach der Implementierung vor der Präsentation.
+Dieser Abschnitt enthält Details und Anweisungen zur Konfiguration des Demopakets nach der Bereitstellung vor der Präsentation.
 
 ### Konfigurieren eines fiktiven Benutzers {#fictional-user-configuration}
 
@@ -256,8 +256,8 @@ Dieser Abschnitt enthält Details und Anweisungen zur MS Dynamics-Cloud-Konfigur
       1. Genehmigungsumfang – **openid**
       1. Authentifizierungs-Header – **Autorisierungsanbieter**
       1. Ressource – z. B. `https://msdynamicsserver.api.crm3.dynamics.com`
-   1. Klicken Sie auf „Mit OAuth verbinden“.
 
+   1. Klicken Sie auf „Mit OAuth verbinden“.
 
 1. Klicken Sie nach erfolgreicher Authentifizierung auf „Speichern und schließen“, um die Integration abzuschließen.
 
@@ -281,7 +281,7 @@ Die in diesem Abschnitt beschriebenen Schritte bieten Hilfe bei der Suche nach d
 1. Um die Ressourcen-URL/Service-Stamm-URL zu finden, navigieren Sie zum Dashboard der MS Dynamics-Instanz.
 1. Klicken Sie in der oberen Navigationsleiste auf „Verkauf“ oder Ihren eigenen Instanztyp und dann auf „Einstellungen auswählen“.
 1. Klicken Sie unten rechts auf „Anpassungen“ und dann auf „Entwicklungsressourcen“.
-1. Dort finden Sie die Dienststamm-URL: z. B.
+1. Dort finden Sie die Service-Stamm-URL: z. B.
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
@@ -311,9 +311,11 @@ Sobald die Cloud-Konfiguration abgeschlossen ist, sollten Sie das Formulardatenm
 1. Testen Sie die Services, um sicherzustellen, dass sie erfolgreich eine Verbindung zur konfigurierten Datenquelle herstellen.
 
    >[!NOTE]
+   >
    Klicken Sie nach dem Testen der Services auf **Abbrechen** um sicherzustellen, dass unfreiwillige Änderungen nicht an das Formulardatenmodell weitergegeben werden.
 
    >[!NOTE]
+   >
    Es wurde berichtet, dass ein AEM Server-Neustart erforderlich war, damit die Datenquelle erfolgreich an das FDM gebunden werden konnte.
 
 #### Testen des Formulardatenmodells (Derby) {#test-fdm-derby}
@@ -418,6 +420,7 @@ Administratoren können Benutzern AEM Analytics-Berechtigungen erteilen, indem s
 #### Anzeigen von Adobe Analytics Sites-Berichten {#view-adobe-analytics-sites-reporting}
 
 >[!NOTE]
+>
 AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/sites.html/content*
@@ -446,6 +449,7 @@ AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfigura
 #### Anzeigen von Adobe Analytics-Formularberichten {#view-adobe-analytics-forms-reporting}
 
 >[!NOTE]
+>
 AEM Forms-Analytics-Daten sind offline oder ohne Adobe Analytics-Cloud-Konfiguration verfügbar, wenn das Paket `we-gov-forms.ui.analytics-<version>.zip` installiert ist, für AEM Sites-Daten ist jedoch eine aktive Cloud-Konfiguration erforderlich.
 
 1. Gehen Sie zu
@@ -491,6 +495,7 @@ Damit der Service ordnungsgemäß mit dem Konvertierungs-Tool für Formulare kom
 1. Fahren Sie nicht mit dem Rest der Konfiguration fort, sondern lesen Sie den Abschnitt [Erstellen der Integration in Adobe I/O](#create-integration-adobeio)
 
 >[!NOTE]
+>
 Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations-Service in Adobe I/O zu erstellen. Sobald Benutzer den Integrations-Service erstellt haben, können Benutzer diese Informationen aus Adobe I/O verwenden, um die Konfiguration abzuschließen.
 
 #### Erstellen der Integration in Adobe I/O {#create-integration-adobeio}
@@ -737,7 +742,7 @@ Dieser Abschnitt enthält Informationen zu Demo-Funktionen und Design-Entscheidu
 ### Überlegungen zur Demo {#demo-considerations}
 
 * Stellen Sie gemäß AGRS-159 sicher, dass der Name (Vor-, Mittel- und Nachname) des Kontakts, der im adaptiven Anmeldungsformular verwendet wird, einzigartig ist.
-* Das adaptive Registrierungsformular sendet die Adobe Sign-E-Mail an die E-Mail, die im E-Mail-Feld des Formulars angegeben ist. Diese E-Mail-Adresse darf nicht dieselbe E-Mail-Adresse sein wie die E-Mail, die zum Konfigurieren der Adobe Sign-Cloud-Konfiguration verwendet wurde.
+* Das adaptive Anmeldungsformular sendet die Adobe Sign-E-Mail an die E-Mail-Adresse, die im E-Mail-Feld des Formulars angegeben ist. Diese E-Mail-Adresse darf nicht dieselbe E-Mail-Adresse sein wie die E-Mail, die zum Konfigurieren der Adobe Sign-Cloud-Konfiguration verwendet wurde.
 
 ### Bekannte Probleme {#known-issues}
 
@@ -750,10 +755,10 @@ Dieser Abschnitt enthält Informationen zu Demo-Funktionen und Design-Entscheidu
 
 Installieren Sie das Chrome-Plug-in hier , um Zugriffstests durchzuführen. `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
-Laden Sie nach der Installation die Seite, die Sie im Chrome-Browser testen möchten (Hinweis: Wenn mehrere Tabs geöffnet sind, kann sich dies auf Ihre Punktzahl auswirken. Es ist empfehlenswert, nur eine Registerkarte zu öffnen.) Sobald die Seite geladen ist, klicken Sie mit der 
-**rechten Maustaste** auf die Seite und wählen Sie die Registerkarte **Prüfungen**. Dort können Entwickler die Art der Prüfung auswählen, die vom Zugänglichkeits-Plug-in durchgeführt werden soll. Nachdem alle gewünschten Optionen ausgewählt sind, kann der Benutzer auf die Schaltfläche Bericht generieren klicken. Hierdurch wird ein PDF-Dokument generiert, das die allgemeine Zugänglichkeitsbewertung zeigt und verwendet werden kann, um die Zugänglichkeitsbewertung insgesamt zu verbessern.
+Laden Sie nach der Installation die Seite, die Sie im Chrome-Browser testen möchten. (Hinweis: Wenn mehrere Registerkarten geöffnet sind, kann sich dies auf Ihr Scoring auswirken. Es empfiehlt sich deswegen, nur eine Registerkarte zu öffnen.) Sobald die Seite geladen ist, klicken Sie mit der 
+**rechten Maustaste** auf die Seite und wählen Sie die Registerkarte **Prüfungen**. Dort können Entwickler die Art der Prüfung auswählen, die vom Zugänglichkeits-Plug-in durchgeführt werden soll. Nachdem alle gewünschten Optionen ausgewählt sind, können die Benutzenden auf die Schaltfläche „Bericht erstellen“ klicken. Hierdurch wird ein PDF-Dokument generiert, das die allgemeine Zugänglichkeitsbewertung zeigt und verwendet werden kann, um die Zugänglichkeitsbewertung insgesamt zu verbessern.
 
-Nachdem der Bericht ausgeführt wurde, können Benutzer erwarten, Folgendes zu sehen:
+Nachdem der Bericht ausgeführt wurde, sollten die Benutzenden Folgendes sehen:
 
 ![Zugänglichkeitsbericht](assets/aftia-accessibility.jpg)
 
@@ -790,6 +795,7 @@ Um sie so zu konfigurieren, dass sie im Workflow aktiviert werden, müssen Benut
 1. Öffnen Sie die Service-Definition und aktivieren Sie den Aufruf der ausgewählten Services innerhalb des Workflows.
 
    >[!NOTE]
+   >
    Auch wenn ein Benutzer den Service auf der Seite „Configuration Manager“ aktiviert, muss er dennoch eine Service-Konfiguration einrichten, um mit den angefragten externen Services kommunizieren zu können.
 
    ![WeGov-Formular-Paket](assets/aftia-configuration-options.jpg)
