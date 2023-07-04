@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
 source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1097'
-ht-degree: 49%
+ht-degree: 100%
 
 ---
 
@@ -25,7 +25,7 @@ AEM bietet WebDAV-Unterstützung, mit der Sie Repository-Inhalte anzeigen und be
 
 ## Allgemein {#general}
 
-[Detaillierte Anweisungen nach Betriebssystem](/help/sites-administering/webdav-access.md#connecting-via-webdav) in diesem Dokument enthalten sind. Um jedoch mithilfe des WebDAV-Protokolls eine Verbindung zu Ihrem Repository herzustellen, verweisen Sie Ihren WebDAV-Client auf den folgenden Speicherort:
+[Detaillierte Anweisungen pro Betriebssystem](/help/sites-administering/webdav-access.md#connecting-via-webdav) sind in diesem Dokument enthalten, aber im Wesentlichen verbinden Sie sich mit Ihrem Repository unter Verwendung des WebDAV-Protokolls, indem Sie Ihren WebDAV-Client auf den folgenden Speicherort verweisen:
 
 ```xml
 http://localhost:4502
@@ -45,7 +45,7 @@ Wenn Sie mit WebDAV Ordner und Dateien erstellen und bearbeiten, erstellt und be
 
 >[!NOTE]
 >
->Bevor Sie WebDAV einrichten, überprüfen Sie die [Technische Anforderungen](/help/sites-deploying/technical-requirements.md#webdav-clients).
+>Bevor Sie WebDAV einrichten, überprüfen Sie die [technischen Voraussetzungen](/help/sites-deploying/technical-requirements.md#webdav-clients).
 
 ## WebDAV-URLs {#webdav-urls}
 
@@ -100,7 +100,7 @@ http://localhost:4502/crx/repository/staging
 
 [Wie bereits erwähnt](/help/sites-administering/webdav-access.md#general), lassen Sie den WebDAV-Client auf den Repository-Ort verweisen, um Ihr Repository über das WebDAV-Protokoll zu verbinden. Je nach Betriebssystem sind jedoch unterschiedliche Schritte erforderlich, um den Client zu verbinden, und es kann eine erforderliche Konfiguration des Betriebssystems geben.
 
-Anweisungen zum Verbinden der folgenden Betriebssysteme finden Sie unter:
+Es werden Anleitungen zum Verbinden der folgenden Betriebssysteme bereitgestellt:
 
 * [Windows](/help/sites-administering/webdav-access.md#windows)
 * [macOS](/help/sites-administering/webdav-access.md#macos)
@@ -108,13 +108,13 @@ Anweisungen zum Verbinden der folgenden Betriebssysteme finden Sie unter:
 
 ### Windows {#windows}
 
-Um ein Microsoft® Windows 7 (und höher)-System erfolgreich mit einer AEM Instanz zu verbinden, die nicht mit SSL gesichert ist, muss die Option zur Einrichtung der Basisauthentifizierung über ein ungesichertes Netzwerk in Windows explizit aktiviert sein. Diese Fähigkeit erfordert eine Änderung in der Windows-Registrierung des WebClient.
+Um ein System mit Microsoft® Windows 7 (und höher) erfolgreich mit einer AEM-Instanz zu verbinden, die nicht mit SSL gesichert ist, muss die Option zur Einrichtung der Standard-Authentifizierung über ein ungesichertes Netzwerk in Windows explizit aktiviert sein. Diese Fähigkeit erfordert eine Änderung in der Windows-Registrierung des WebClients.
 
-Nachdem die Registrierung aktualisiert wurde, kann die AEM Instanz als Laufwerk zugeordnet werden.
+Nachdem die Registrierung aktualisiert wurde, kann die AEM-Instanz als Laufwerk zugeordnet werden.
 
 #### Konfiguration von Windows 7 und höher {#windows-and-greater-configuration}
 
-So aktualisieren Sie die Registrierung, um eine grundlegende Authentifizierung über ein ungesichertes Netzwerk zuzulassen:
+So aktualisieren Sie die Registrierung, um eine Standard-Authentifizierung über ein ungesichertes Netzwerk zuzulassen:
 
 1. Suchen Sie den folgenden Registrierungsunterschlüssel:
 
@@ -130,30 +130,30 @@ So aktualisieren Sie die Registrierung, um eine grundlegende Authentifizierung �
 
 >[!NOTE]
 >
->Adobe empfiehlt, einen Windows-Benutzer mit denselben Anmeldeinformationen wie der Repository-Benutzer zu erstellen, da andernfalls Berechtigungskonflikte auftreten können.
+>Adobe empfiehlt, einen Windows-Benutzer bzw. -Benutzerin mit denselben Anmeldeinformationen wie des Repository-Benutzers bzw. -Benutzerin zu erstellen, da andernfalls Berechtigungskonflikte auftreten können.
 
 #### Windows 8-Konfiguration {#windows-configuration}
 
-Für Windows 8 ändern Sie den Registrierungseintrag [wie für Windows 7 und höher beschrieben](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Bevor Sie diese Aufgabe ausführen, muss das Desktop-Erlebnis jedoch aktiviert sein, damit der Registrierungseintrag angezeigt werden kann.
+Auch bei Windows 8 müssen Sie den Registrierungs-Eintrag ändern, [wie für Windows 7 und höher beschrieben](/help/sites-administering/webdav-access.md#windows-and-greater-configuration). Bevor Sie diese Aufgabe ausführen, muss das Desktop-Erlebnis jedoch aktiviert sein, damit der Registrierungseintrag angezeigt werden kann.
 
 Öffnen Sie dazu **Server-Manager** > **Funktionen** > **Funktionen hinzufügen** > **Desktop Experience**.
 
-Nach dem Neustart ist der für Windows 7 und höher beschriebene Registrierungs-Eintrag verfügbar. Ändern Sie sie wie für Windows 7 und höher beschrieben.
+Nach dem Neustart ist der für Windows 7 und höher beschriebene Registrierungseintrag verfügbar. Bearbeiten Sie ihn so, wie für Windows 7 oder höher beschrieben.
 
 #### Herstellen einer Verbindung unter Windows {#connecting-in-windows}
 
 So stellen Sie in einer Windows-Umgebung eine Verbindung zu AEM über WebDAV her:
 
-1. Öffnen **Windows Explorer** oder **Datei-Explorer** und klicken Sie auf **Computer** oder **Dieser PC**.
+1. Öffnen Sie **Windows-Explorer** oder **Datei-Explorer** und klicken Sie auf **Computer** oder **Dieser PC**.
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
 1. Um den Assistenten zu starten, klicken Sie auf **Netzlaufwerk zuordnen**.
 1. Geben Sie die Zuordnungsdetails ein:
 
-   * **Laufwerk**: Beliebigen Brief auswählen
+   * **Laufwerk**: Wählen Sie einen verfügbaren Buchstaben
    * **Ordner**: `http://localhost:4502`
-   * Überprüfen **Verbindung mit anderen Anmeldeinformationen herstellen**
+   * Klicken Sie auf **Verbindung mit anderen Anmeldeinformationen herstellen**.
 
    Klicken Sie auf Beenden
 
@@ -161,13 +161,13 @@ So stellen Sie in einer Windows-Umgebung eine Verbindung zu AEM über WebDAV her
 
    >[!NOTE]
    >
-   >Wenn sich AEM an einem anderen Port befindet, verwenden Sie diese Portnummer anstelle von 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
+   >Wenn sich AEM an einem anderen Port befindet, nutzen Sie diese Portnummer statt der 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
 
 1. Geben Sie den Benutzernamen `admin` und das Passwort `admin` ein. Adobe empfiehlt, das vorkonfigurierte Admin-Konto zum Testen zu nutzen.
 
    ![chlimage_1-114](assets/chlimage_1-114a.png)
 
-1. Der Assistent wird geschlossen und das neu zugeordnete Laufwerk wird in einem Windows Explorer- oder File Explorer-Fenster geöffnet.
+1. Der Assistent wird geschlossen und das neu zugeordnete Laufwerk wird in einem Windows Explorer- oder Datei-Explorer-Fenster geöffnet.
 
    ![chlimage_1-115](assets/chlimage_1-115a.png)
 
@@ -183,11 +183,11 @@ Für die Verbindung über WebDAV in macOS sind keine Konfigurationsschritte erfo
    * `http://localhost:4502`
    >[!NOTE]
    >
-   >Wenn sich AEM an einem anderen Port befindet, verwenden Sie diese Portnummer anstelle von 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
+   >Wenn sich AEM an einem anderen Port befindet, nutzen Sie diese Portnummer statt der 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
 
 1. Wenn Sie zur Authentifizierung aufgefordert werden, geben Sie den Benutzernamen `admin` und das Kennwort `admin` ein. Adobe empfiehlt, zum Testen das vorkonfigurierte Admin-Konto zu nutzen.
 
-macOS hat jetzt über WebDAV eine Verbindung zu AEM und Sie können sie wie jeden anderen Ordner in Ihrer Mac verwenden.
+macOS hat sich nun über WebDAV mit AEM verbunden und Sie können ihn wie jeden anderen Ordner auf Ihrem Mac verwenden.
 
 ### Linux® {#linux}
 
@@ -195,16 +195,16 @@ Die Verbindung über WebDAV unter Linux® erfordert keine Konfiguration, erforde
 
 #### GNOME {#gnome}
 
-So stellen Sie über WebDAV mit GNOME eine Verbindung zu AEM her:
+So stellen Sie eine Verbindung zu AEM über WebDAV mit GNOME her:
 
-1. Wählen Sie in Nautilus (Datei-Explorer) die Option **Orte** und wählen Sie **Verbindung zum Server herstellen**.
+1. Wählen Sie in Nautilus (Datei-Explorer) **Orte** und dann **Mit Server verbinden**.
 1. Wählen Sie im Fenster **Mit Server verbinden** unter „Dienste-Typ“ die Option „WebDAV (HTTP)“ aus.
 
 1. Geben Sie bei **Server** `http://localhost:4502/crx/repository/crx.default` ein.
 
    >[!NOTE]
    >
-   >Wenn sich AEM an einem anderen Port befindet, verwenden Sie diese Portnummer anstelle von 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
+   >Wenn sich AEM an einem anderen Port befindet, nutzen Sie diese Portnummer statt der 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
 
 1. Unter **Ordner** geben Sie `/dav` ein.
 1. Geben Sie den Benutzernamen `admin` ein. Adobe empfiehlt, das vorkonfigurierte Admin-Konto zum Testen zu nutzen.
@@ -216,7 +216,7 @@ AEM wurde nun von GNOME als Volume eingebunden und kann wie jedes andere Volume 
 
 #### KDE {#kde}
 
-1. Öffnen Sie den Assistenten Netzwerkordner .
+1. Öffnen Sie den Netzwerkordner-Assistenten.
 1. Wählen Sie **Webordner** aus und klicken Sie auf „Weiter“.
 1. Geben Sie unter **Name** den Verbindungsnamen ein.
 1. Geben Sie bei **Benutzer** `admin.` ein. Adobe empfiehlt die Verwendung des vorkonfigurierten Administratorkontos.
@@ -224,7 +224,7 @@ AEM wurde nun von GNOME als Volume eingebunden und kann wie jedes andere Volume 
 
    >[!NOTE]
    >
-   >Wenn sich AEM an einem anderen Port befindet, verwenden Sie diese Portnummer anstelle von 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
+   >Wenn sich AEM an einem anderen Port befindet, nutzen Sie diese Portnummer statt der 4502. Wenn Sie das Inhalts-Repository nicht auf dem lokalen Rechner ausführen, ersetzen Sie `localhost` durch den entsprechen Servernamen bzw. die IP-Adresse.
 
 1. Unter **Ordner** geben Sie `dav` ein.
 
