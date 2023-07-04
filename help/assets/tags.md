@@ -11,9 +11,9 @@ feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
 source-git-commit: cd797b1a5edd05715761f5914ebc64fdb64745af
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6631'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -422,7 +422,7 @@ Für die Konfiguration Ihrer Integration verwenden Sie die folgenden Adobe-Produ
 
 Wenn diese Integrationslösung mit Experience Manager Sites verwendet wird, muss auch die folgende Konfiguration durchgeführt werden:
 
-* [!DNL Adobe Developer Console] - Die Integration wird für Experience Platform-Tags erstellt.
+* [!DNL Adobe Developer Console]: Die Integration wird für Experience Platform Tags erstellt.
 * Experience Manager-Autorenknoten – IMS-Konfiguration und Experience Platform Tags-Cloud-Konfiguration.
 
 Vergewissern Sie sich, dass Sie bei der Konfiguration Zugriff auf eine Firma in Adobe Experience Cloud haben, für die Adobe Analytics und Experience Platform Tags bereits aktiviert sind.
@@ -683,7 +683,7 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
 
    Die folgende Informationsmeldung wird angezeigt:
 
-   *Um ein gültiges Zugriffstoken abzurufen, wird der öffentliche Schlüssel des neuen Zertifikats zum technischen Konto in der Adobe Developer Console hinzugefügt!*
+   *Um ein gültiges Zugriffstoken abzurufen, wird der öffentliche Schlüssel des neuen Zertifikats zum technischen Konto in Adobe Developer Console* hinzugefügt!
 
    Um das Dialogfeld „Informationen“ zu schließen, klicken Sie auf **[!UICONTROL OK]**.
 
@@ -697,9 +697,9 @@ Die Experience Manager-Konfiguration besteht aus den folgenden zwei Hauptschritt
 
    ![2019-07-25_12-52-24](assets/2019-07-25_12-52-24.png)
 
-1. Navigieren Sie in einer neuen Browser-Registerkarte zu [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/integrations).
+1. Navigieren Sie in einer neuen Browser-Registerkarte zur [[!DNL Adobe Developer Console]](https://developer.adobe.com/console/integrations).
 
-1. Aus dem **[!UICONTROL Integrationen der Adobe Developer Console]** Seite rechts oben auswählen **[!UICONTROL Neue Integration]**.
+1. Wählen Sie auf der Seite **[!UICONTROL Adobe Developer Console-Integrationen]** rechts oben **[!UICONTROL Neue Integration]** aus.
 1. Vergewissern Sie sich, dass im Dialogfeld **[!UICONTROL Neue Integration erstellen]** das Optionsfeld **[!UICONTROL Zugriff auf API]** ausgewählt ist, und klicken Sie dann auf **[!UICONTROL Weiter]**.
 
    ![2019-07-25_13-04-20](assets/2019-07-25_13-04-20.png)
@@ -854,4 +854,4 @@ Sie wird jedoch im Experience Manager-Veröffentlichungsknoten unterstützt. Bei
 
 Es gibt eine Möglichkeit, diese Einschränkung zu umgehen. Geben Sie in der Experience Platform Tags Cloud-Konfiguration für den Experience Manager-Veröffentlichungsknoten oben die Entwicklungs- oder Staging-URL der Platform Tags-Bibliothek an. Dadurch verwendet der Experience Manager-Veröffentlichungsknoten die Entwicklungs- oder Staging-Version der Experience Platform Tags-Bibliothek.
 
-Weitere Informationen zum Einrichten der Experience Platform Tags Cloud-Konfiguration finden Sie unter [Integrieren von Experience Manager mit Experience Platform Tags über  [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html).
+Weitere Informationen zum Einrichten der Experience Platform Tags Cloud-Konfiguration finden Sie unter [Integrieren von Experience Manager mit Experience Platform Tags über  [!DNL Adobe Developer Console]](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-data-collection-tags/overview.html?lang=de).
