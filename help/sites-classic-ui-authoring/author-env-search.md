@@ -10,9 +10,9 @@ discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
 source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '470'
-ht-degree: 54%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Mög
 
 >[!NOTE]
 >
->Außerhalb der Autorenumgebung stehen auch andere Mechanismen für die Suche zur Verfügung, z. B. die [Query Builder](/help/sites-developing/querybuilder-api.md) und [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Außerhalb der Authoring-Umgebung stehen auch andere Verfahren zur Suche zur Verfügung, wie der [Query Builder](/help/sites-developing/querybuilder-api.md) und [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Grundlagen zur Suche {#search-basics}
 
@@ -33,9 +33,9 @@ Um den Suchbereich aufzurufen, klicken Sie in der jeweiligen Konsole im linken B
 Im Suchbereich können Sie alle Seiten Ihrer Website durchsuchen. Er enthält Felder und Widgets für folgende Zwecke:
 
 * **Volltext**: Nach dem angegebenen Text suchen
-* **Geändert nach/vor**: Suchen Sie nur die Seiten, die zwischen den spezifischen Datumsangaben geändert wurden.
-* **Vorlage**: Suche nur nach den Seiten, die auf der angegebenen Vorlage basieren
-* **Tags**: Suche nur nach Seiten mit den angegebenen Tags
+* **Geändert nach/vor**: Nur nach den Seiten suchen, die zwischen den bestimmten Datumsangaben geändert wurden
+* **Vorlage**: Nur nach den Seiten suchen, die auf der angegebenen Vorlage basieren
+* **Tags**: Nur nach Seiten mit den angegebenen Tags suchen
 
 >[!NOTE]
 >
@@ -50,7 +50,7 @@ Im Suchbereich können Sie alle Seiten Ihrer Website durchsuchen. Er enthält Fe
 >
 
 
-Starten Sie die Suche, indem Sie unten im Bereich auf **Suchen** klicken. Klicken **Zurücksetzen** , um die Suchkriterien zu löschen.
+Starten Sie die Suche, indem Sie unten im Bereich auf **Suchen** klicken. Klicken Sie auf **Zurücksetzen**, um die Suchkriterien zu löschen.
 
 ## Filter {#filter}
 
@@ -60,26 +60,26 @@ An verschiedenen Stellen kann ein Filter festgelegt (und gelöscht) werden, um I
 
 ## Suchen und Ersetzen {#find-and-replace}
 
-Im **Websites** Konsole **Suchen und Ersetzen** -Menüoption können Sie innerhalb eines Bereichs der Website nach mehreren Instanzen einer Zeichenfolge suchen und diese ersetzen.
+In der Konsole **Websites** ermöglicht Ihnen die Menüoption **Suchen und Ersetzen**, innerhalb eines Bereichs der Website nach mehreren Vorkommen einer Zeichenfolge zu suchen und diese zu ersetzen.
 
-1. Wählen Sie die Stammseite bzw. den Ordner aus, in dem die Aktion &quot;Suchen und Ersetzen&quot;stattfinden soll.
-1. Auswählen **Instrumente** then **Suchen und Ersetzen**:
+1. Wählen Sie die Stammseite bzw. den Stammordner aus, in dem die Aktion „Suchen und Ersetzen“ stattfinden soll.
+1. Wählen Sie **Tools** und dann **Suchen und Ersetzen**:
 
    ![screen_shot_2012-02-15at120346pm](assets/screen_shot_2012-02-15at120346pm.png)
 
-1. Die **Suchen und Ersetzen** Das Dialogfeld führt Folgendes aus:
+1. Der Dialog **Suchen und Ersetzen** bietet die folgenden Möglichkeiten:
 
-   * bestätigt den Stammpfad, an dem die Suchaktion beginnen soll
+   * bestätigt den Stammpfad, in dem die Suchaktion beginnen soll
    * definiert den zu suchenden Begriff
    * definiert den Begriff, der ihn ersetzen soll
    * gibt an, ob bei der Suche die Groß-/Kleinschreibung beachtet werden soll
-   * gibt an, ob nur ganze Wörter gefunden werden sollen (andernfalls werden auch Unterzeichenfolgen gefunden)
+   * gibt an, ob nur ganze Wörter gesucht werden sollen (andernfalls werden auch Unterzeichenfolgen gesucht)
 
    Durch Klicken auf **Vorschau** werden die Stellen aufgelistet, an denen der Begriff gefunden wurde. Sie können bestimmte Instanzen markieren bzw. deren Markierung aufheben:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
-1. Klicken **Ersetzen** , um alle Instanzen zu ersetzen. Sie werden aufgefordert, den Vorgang zu bestätigen.
+1. Klicken Sie auf **Ersetzen**, um die tatsächliche Ersetzung aller Instanzen durchzuführen. Sie werden aufgefordert, den Vorgang zu bestätigen.
 
 Der Standardumfang für das Servlet „Suchen und Ersetzen“ deckt die folgenden Eigenschaften ab:
 
@@ -92,6 +92,6 @@ Dieser Bereich kann mithilfe der Apache Felix Web Management Console geändert w
 
 >[!NOTE]
 >
->In einer standardmäßigen AEM-Installation verwendet &quot;Suchen und Ersetzen&quot;Lucene für die Suchfunktion.
+>In einer standardmäßigen AEM-Installation wird bei „Suchen und Ersetzen“ Lucene für die Suchfunktion verwendet.
 >
->Lucene indiziert Zeichenfolgen mit bis zu 16K Länge. Mehr Zeichenfolgen werden nicht durchsucht.
+>Lucene indiziert Zeichenfolgen mit bis zu 16K Länge. Darüber hinaus gehende Zeichenfolgen werden nicht gesucht.
