@@ -11,10 +11,10 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 59%
+source-wordcount: '578'
+ht-degree: 57%
 
 ---
 
@@ -52,7 +52,7 @@ Wenn Sie beispielsweise Versionen vergleichen, wird die aktuelle Version auf der
 
 Die Quelle beider Seiten wird deutlich in der Kopfzeile am oberen Rand des Browser-Fensters angezeigt.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![In der Kopfzeile angezeigte Quelle](assets/chlimage_1-109.png)
 
 Der Vergleich erkennt Änderungen auf Komponenten- und HTML-Ebene. Geänderte Elemente werden mit unterschiedlichen Farben hervorgehoben.
 
@@ -78,7 +78,7 @@ Damit Sie sich auf einen bestimmten Inhalt konzentrieren können, haben Sie die 
 
 Die gewählte Seite füllt dann das gesamte Fenster aus, aber die Leiste am oberen Rand bleibt weiterhin angezeigt und bietet Ihnen die Möglichkeit, zwischen den zwei Seiten zu wechseln.
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![Mit der oberen Leiste können Sie zwischen Seiten wechseln](assets/chlimage_1-110.png)
 
 Sie können die Vollbildansicht auch schließen, indem Sie auf das Symbol „Vollbildmodus beenden“ klicken.
 

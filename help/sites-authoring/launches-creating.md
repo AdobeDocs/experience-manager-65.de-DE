@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 7f595bec8ea138d5a73a17d0548320a31544dcd1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '1018'
-ht-degree: 96%
+source-wordcount: '1040'
+ht-degree: 92%
 
 ---
 
@@ -60,7 +60,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    Wiederholen Sie dies nach Bedarf.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Quelle auswählen und Seiten hinzufügen](assets/chlimage_1-225.png)
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    Fahren Sie mit **Weiter** fort.
 
-   ![chlimage_1-226](assets/chlimage_1-226.png)
+   ![Festlegen, ob Seiten eingeschlossen werden sollen](assets/chlimage_1-226.png)
 
 1. Im Schritt **Eigenschaften** des Assistenten können Sie Folgendes festlegen:
 
@@ -91,7 +91,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
    * **Launch-Datum**: Das Datum und die Uhrzeit für die Aktivierung der Launch-Kopie (abhängig von der Markierung **Produktionsbereit**. Siehe [Launches: Reihenfolge von Ereignissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
-   ![chlimage_1-227](assets/chlimage_1-227.png)
+   ![Eigenschaften angeben](assets/chlimage_1-227.png)
 
 1. Verwenden Sie **Erstellen**, um den Vorgang abzuschließen und den neuen Launch zu erstellen. Im Bestätigungsdialogfeld werden Sie gefragt, ob Sie den Launch sofort öffnen möchten.
 
@@ -102,22 +102,20 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
 
 ### Erstellen von Launches mit einer neuen Vorlage {#create-launch-with-new-template}
 
-Bei der [Erstellung eines Launches](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) können Sie auswählen, wie eine neue Vorlage verwendet werden soll:
-
-**mit einer neuen Vorlage, um die Seite zu ersetzen**
+Wann [Erstellen eines Launches](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) Sie können auswählen, ob eine neue Vorlage mit der Option verwendet werden soll: **Verwenden einer neuen Vorlage zum Ersetzen der Seite**
 
 >[!CAUTION]
 >
 >Diese Option ist nur verfügbar, wenn ein Launch über die Konsole **Sites** erstellt wird. Sie steht nicht zur Verfügung, wenn ein Launch über die Konsole **Launches** erstellt wird.
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![Verwenden Sie eine neue Vorlage, um die Seite zu ersetzen.](assets/chlimage_1-228.png)
 
 Die Auswahl dieser Option bewirkt Folgendes:
 
 * die anderen verfügbaren Optionen werden aktualisiert,
 * ein neuer Schritt wird einbezogen, mit dem Sie die gewünschte Vorlage auswählen können.
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![Vorlage auswählen](assets/chlimage_1-229.png)
 
 >[!CAUTION]
 >
@@ -140,11 +138,11 @@ Das Erstellen eines verschachtelten Launches über die Konsole **Launches** ist 
 1. Wählen Sie in der Konsole **Launches** die Option **Erstellen** aus.
 1. Wählen Sie **Seiten hinzufügen** aus und navigieren Sie zur Launch-Verzweigung, indem Sie `/content/launches` im Filter angeben. Wählen Sie den gewünschten Launch aus und bestätigen Sie mit **Auswählen**:
 
-   ![chlimage_1-230](assets/chlimage_1-230.png)
+   ![Launch auswählen](assets/chlimage_1-230.png)
 
 1. Klicken Sie auf **Weiter**, um fortzufahren. Geben Sie die **Eigenschaften** dann wie bei jedem anderen Launch an.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![Eigenschaften angeben](assets/chlimage_1-231.png)
 
 #### Erstellen von verschachtelten Launches: Konsole „Sites“  {#creating-a-nested-launch-sites-console}
 

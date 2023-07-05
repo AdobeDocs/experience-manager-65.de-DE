@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '2575'
+source-wordcount: '2583'
 ht-degree: 99%
 
 ---
@@ -49,13 +49,13 @@ Multi Site Manager umfasst die folgenden Pakete:
 
 Die wichtigsten MSM-API-Objekte interagieren wie folgt (siehe auch [Verwendete Begriffe](/help/sites-administering/msm.md#terms-used)):
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![Haupt-MSM-API-Objekte](assets/chlimage_1-73.png)
 
 * **`Blueprint`**
 
   Ein `Blueprint` (wie in [Blueprint-Konfiguration](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) legt die Seiten fest, von denen eine Live Copy Inhalte erben kann.
 
-  ![chlimage_1-74](assets/chlimage_1-74.png)
+  ![Blueprint](assets/chlimage_1-74.png)
 
    * Die Verwendung einer Blueprint-Konfiguration (`Blueprint`) ist optional, aber sie:
 
@@ -634,7 +634,7 @@ Die Sprachliste ist unter dem Knoten `/libs/wcm/core/resources/languages` gespei
 * In der Eigenschaft `country` des Knotens wird der volle Name des Landes für den Code gespeichert.
 * Wenn der Knotenname nur aus einem Sprach-Code besteht (z. B. `en`), ist die Ländereigenschaft `*` und die zusätzliche Eigenschaft `defaultCountry` speichert den Code des Sprachlandes, um das zu verwendende Land anzugeben.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![Sprachdefinition](assets/chlimage_1-76.png)
 
 So bearbeiten Sie die Sprachen:
 
@@ -643,7 +643,7 @@ So bearbeiten Sie die Sprachen:
 
    Geben Sie dem neuen Ordner den Namen `wcm`.
 
-1. Wiederholen Sie diesen Schritt, um die Ordnerstruktur `/apps/wcm/core` zu erstellen. Erstellen Sie in `core` einen Knoten des Typs `sling:Folder` mit dem Namen `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
+1. Wiederholen Sie diesen Schritt, um die Ordnerstruktur `/apps/wcm/core` zu erstellen. Erstellen Sie in `core` einen Knoten des Typs `sling:Folder` mit dem Namen `resources`. <!-- ![Resources](assets/chlimage_1-77.png) -->
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `/libs/wcm/core/resources/languages` und klicken Sie auf **Kopieren**.
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps/wcm/core/resources` und klicken Sie auf **Einfügen**. Ändern Sie die untergeordneten Knoten nach Bedarf.
@@ -651,7 +651,7 @@ So bearbeiten Sie die Sprachen:
 1. Klicken Sie auf **Tools** > **Vorgänge** > **Web-Konsole**. Klicken Sie in dieser Konsole auf **OSGi** > **Konfiguration**.
 1. Suchen Sie **Day CQ WCM Language Manager**, klicken Sie darauf und ändern Sie den Wert von **Language List** in `/apps/wcm/core/resources/languages`. Klicken Sie dann auf **Speichern**.
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![Day CQ WCM Language Manager](assets/chlimage_1-78.png)
 
 ## Konfigurieren von MSM-Sperren bei Seiteneigenschaften (Touch-optimierte Benutzeroberfläche) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 

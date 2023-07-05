@@ -1,7 +1,7 @@
 ---
 title: Voraussetzungen für das Integrieren mit Adobe Target
 seo-title: Prerequisites for Integrating with Adobe Target
-description: Hier finden Sie alle Informationen über die Voraussetzungen für die Integration mit Adobe Target.
+description: Erfahren Sie mehr über die Voraussetzungen für die Integration mit Adobe Target.
 seo-description: Find out about the prerequisites for integrating with Adobe Target.
 uuid: 55d87a96-5fe7-4f7e-93c1-fdf7fbb7c971
 contentOwner: User
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '555'
-ht-degree: 100%
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 65%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 100%
 
 Als Teil der [Integration von AEM und Adobe Target](/help/sites-administering/target.md) müssen Sie sich bei Adobe Target registrieren, den Replikationsagenten konfigurieren und Aktivitätseinstellungen auf dem Veröffentlichungsknoten sichern.
 
-## Registrieren bei Adobe Target {#registering-with-adobe-target}
+## Registrieren bei Adobe Target {#registering-with-adobe-target}
 
-Zur Integration von AEM mit Adobe Target müssen Sie über ein gültiges Adobe Target-Konto verfügen. Dieses Konto muss mindestens über die Berechtigungsstufe einer **Genehmigenden Person** verfügen. Nach der Registrierung bei Adobe Target erhalten Sie einen Clientcode. Dieser Clientcode und Ihre Adobe Target-Anmeldedaten sind erforderlich, um eine Verbindung zwischen AEM und Adobe Target herzustellen.
+Zur Integration von AEM in Adobe Target benötigen Sie ein gültiges Adobe Target-Konto. Dieses Konto muss mindestens über die Berechtigungsstufe einer **Genehmigenden Person** verfügen. Nach der Registrierung bei Adobe Target erhalten Sie einen Clientcode. Sie benötigen den Clientcode sowie Ihren Adobe Target-Anmeldenamen und Ihr Kennwort, um eine Verbindung AEM Adobe Target herzustellen.
 
-Der Clientcode identifiziert beim Aufrufen des Adobe Target-Servers das Adobe Target-Kundenkonto.
+Der Clientcode identifiziert das Adobe Target-Kundenkonto beim Aufrufen des Adobe Target-Servers.
 
 >[!NOTE]
 >
@@ -36,12 +36,12 @@ Der Clientcode identifiziert beim Aufrufen des Adobe Target-Servers das Adobe 
 
 ## Aktivieren des Target-Replikationsagenten {#enabling-the-target-replication-agent}
 
-Auf der Autoreninstanz muss der Test-and-Target-[Replikationsagent](/help/sites-deploying/replication.md) aktiviert werden. Dieser Replikationsagent ist standardmäßig deaktiviert, wenn Sie bei der Installation von AEM den Ausführungsmodus [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) verwendet haben. Weitere Informationen zum Speichern Ihrer Produktionsumgebung finden Sie in der [Sicherheits-Checkliste](/help/sites-administering/security-checklist.md).
+Auf der Autoreninstanz muss der Test-and-Target-[Replikationsagent](/help/sites-deploying/replication.md) aktiviert werden. Dieser Replikationsagent ist standardmäßig deaktiviert, wenn Sie bei der Installation von AEM den Ausführungsmodus [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) verwendet haben. Weitere Informationen zum Schützen der Produktionsumgebung finden Sie im Abschnitt [Sicherheitscheckliste](/help/sites-administering/security-checklist.md).
 
-1. Klicken oder tippen Sie auf der AEM-Homepage auf **Tools** > **Bereitstellung** > **Replikation**.
+1. Klicken oder tippen Sie auf der AEM Homepage auf **Instrumente** > **Implementierung** > **Replikation**.
 1. Klicken oder tippen Sie auf **Agenten für Autor**.
-1. Klicken oder tippen Sie auf den **Test &amp; Target**-Replikationsagenten und dann auf **Bearbeiten**.
-1. Wählen Sie die Option „Aktiviert“ aus und klicken oder tippen Sie auf **OK**.
+1. Klicken oder tippen Sie auf **Test und Target (Test und Ziel)** Replikationsagent und klicken oder tippen Sie dann auf **Bearbeiten**.
+1. Wählen Sie die Option Aktiviert aus und klicken oder tippen Sie auf **OK**.
 
    >[!NOTE]
    >
@@ -51,17 +51,17 @@ Auf der Autoreninstanz muss der Test-and-Target-[Replikationsagent](/help/sites-
 
 ## Sichern des Aktivitätseinstellungsknotens {#securing-the-activity-settings-node}
 
-Sie müssen den Aktivitätseinstellungsknoten **cq:ActivitySettings** auf der Veröffentlichungsinstanz sichern, sodass dieser für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
+Sie müssen den Aktivitätseinstellungsknoten sichern **cq:ActivitySettings** auf der Veröffentlichungsinstanz, sodass sie für normale Benutzer nicht zugänglich ist. Der Aktivitätseinstellungsknoten sollte ausschließlich für den Service zur Verfügung stehen, mit dem die Aktivitätssynchronisierung mit Adobe Target durchgeführt wird.
 
 Der Knoten **cq:ActivitySettings** steht in CRXDE Lite unter `/content/campaigns/*nameofbrand*`* *unter dem Aktivitätsknoten jcr:content zur Verfügung,* *z. B. `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dieser Knoten wird nur erstellt, wenn Sie eine Komponente als Ziel angeben.
 
 Der Knoten **cq:ActivitySettings** unter dem Aktivitätsknoten jcr:content wird von folgenden ACLs geschützt:
 
-* Alles für jeden verweigern
-* „jcr:read,rep:write“ für „target-activity-authors“ zulassen („author“ ist standardmäßig ein Mitglied dieser Gruppe)
-* „jcr:read,rep:write“ für „targetservice“ zulassen
+* Alle für alle verweigern
+* Zulassen von jcr:read,rep:write für &quot;target-activity-authors&quot;(der Autor ist standardmäßig Mitglied dieser Gruppe)
+* Allow jcr:read,rep:write für &quot;targetservice&quot;
 
-Diese Einstellungen gewährleisten, dass normale Benutzer keinen Zugriff auf die Knoteneigenschaften haben. Verwenden Sie dieselben ACLs für „author“ und „publish“. Weitere Informationen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
+Diese Einstellungen stellen sicher, dass normale Benutzer keinen Zugriff auf die Knoteneigenschaften haben. Verwenden Sie dieselben ACLs für Autor und Veröffentlichung. Weitere Informationen finden Sie unter [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md).
 
 ## Konfigurieren des AEM-Link-Externalizer {#configuring-the-aem-link-externalizer}
 
@@ -80,4 +80,4 @@ Konfigurieren Sie den AEM-Externalizer wie folgt:
 1. Navigieren Sie zur OSGi-Web-Konsole unter **https://&lt;server>:&lt;port>/system/console/configMgr**.
 1. Suchen Sie nach **Day CQ Link Externalizer** und geben Sie die Domain des Autorenknotens an.
 
-   ![chlimage_1-120](assets/aem-externalizer-01.png)
+   ![Day CQ Link Externalizer ](assets/aem-externalizer-01.png)

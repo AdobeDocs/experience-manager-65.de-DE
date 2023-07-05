@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '833'
-ht-degree: 100%
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 97%
 
 ---
 
@@ -53,7 +53,7 @@ Launches ermöglichen Folgendes:
 
       * Die Quellseiten können aus mehreren (verschiedenen) Verzweigungen stammen.
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+  ![Übersicht über Launch-Aktionen](assets/chlimage_1-111.png)
 
 * Bearbeiten Sie die Launch-Konfiguration:
 
@@ -67,32 +67,32 @@ Launches ermöglichen Folgendes:
       * Leiten Sie Ihren Launch-Inhalt, wenn er zur Veröffentlichung bereit ist, wieder an das **Ziel** (Quellseiten) zurück.
       * Veröffentlichen Sie den Inhalt von den Quellseiten (nachdem die Seiten weitergeleitet wurden).
       * Leiten Sie entweder alle Seiten oder nur die überarbeiteten Seiten weiter.
+
    * Automatisch (dies beinhaltet Folgendes):
 
       * Das Feld **Launch-Datum** (**Live**-**Datum)**: Dieses Feld kann beim Erstellen oder Bearbeiten eines Launches festgelegt werden.
 
       * Die Markierung **Produktionsbereit**: Dies kann nur beim Bearbeiten eines Launches festgelegt werden.
       * Wenn das Flag **Produktionsbereit** gesetzt wurde, wird der Launch automatisch am angegebenen **Launch-Datum** (**Live**-**Datum**) an die Produktionsseiten weitergeleitet. Nach der Promotion werden die Produktionsseiten automatisch veröffentlicht.\
-         Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
-
+        Wenn kein Datum ausgewählt wurde, hat die Markierung keine Auswirkungen.
 
 * Paralleles Aktualisieren der Quell- und Launch-Seiten:
 
    * Änderungen an den Quellseiten werden automatisch in der Launch-Kopie implementiert (wenn sie mit Vererbung eingerichtet wurden, z. B. in Form einer Live Copy).
    * Änderungen an der Launch-Kopie können ohne Störung dieser automatischen Aktualisierungen oder der Quellseiten vorgenommen werden.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+  ![Überblick über Updates](assets/chlimage_1-112.png)
 
 * [Erstellen eines verschachtelten Launches](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) – ein Launch innerhalb eines Launches:
 
    * Die Quelle ist ein vorhandener Launch.
    * Sie können [einen verschachtelten Launch](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) zu einem beliebigen Ziel weiterleiten; dies kann ein übergeordneter Launch oder die Quellseiten der obersten Ebene (Produktion) sein.
 
-   ![chlimage_1-113](assets/chlimage_1-113.png)
+  ![Übersicht über verschachtelten Launch](assets/chlimage_1-113.png)
 
-   >[!CAUTION]
-   >
-   >Durch Löschen eines Launches werden der Launch selbst sowie alle nachfolgenden verschachtelten Launches entfernt.
+  >[!CAUTION]
+  >
+  >Durch Löschen eines Launches werden der Launch selbst sowie alle nachfolgenden verschachtelten Launches entfernt.
 
 >[!NOTE]
 >
@@ -121,8 +121,8 @@ Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermög
 1. Öffnen Sie die Leiste **Referenzen** und wählen Sie die Quellseite aus.
 1. Wählen Sie **Launches**, die vorhandenen Launches werden aufgelistet:
 
-   ![screen-shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
+   ![Registerkarte &quot;Referenz&quot;- Launches](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Tippen/klicken Sie auf den entsprechenden Launch. Die Liste der möglichen Aktionen wird angezeigt:
 
-   ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
+   ![Launch auswählen, um mögliche Aktionen anzuzeigen](assets/screen-shot_2019-03-05at121952-1.png)
