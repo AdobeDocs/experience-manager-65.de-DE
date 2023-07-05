@@ -10,12 +10,13 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 93dfac20bbb761abd580a004741ade20dc4ee2fe
 workflow-type: tm+mt
-source-wordcount: '2026'
-ht-degree: 99%
+source-wordcount: '2068'
+ht-degree: 96%
 
 ---
+
 
 # Konfigurieren von E-Mail-Benachrichtigungen{#configuring-email-notification}
 
@@ -54,7 +55,7 @@ Zum Debuggen eines Problems mit dem **Day CQ Mail Service** können Sie die Prot
 
 Die Konfiguration sieht in der Web-Konsole wie folgt aus:
 
-![chlimage_1-276](assets/chlimage_1-276.png)
+![Das OSGi-Konfigurationsfenster des Day CQ Mail Service](assets/chlimage_1-276.png)
 
 ## Konfigurieren des E-Mail-Benachrichtigungskanals {#configuring-the-email-notification-channel}
 
@@ -88,7 +89,7 @@ Wenn Sie E-Mail-Benachrichtigungen durch den Workflow erhalten, werden sowohl di
 
 Die Standardkonfiguration sieht in der Web-Konsole wie folgt aus:
 
-![chlimage_1-277](assets/chlimage_1-277.png)
+![Das Konfigurationsfenster des Day CQ Workflow Email Notification Service](assets/chlimage_1-277.png)
 
 ### E-Mail-Vorlagen für die Seitenbenachrichtigung {#email-templates-for-page-notification}
 
@@ -233,7 +234,7 @@ Die folgenden Variablen können innerhalb der E-Mail-Vorlage verwendet werden:
 
 * `${payload.type}`, der Typ der Payload
 * `${payload.path}`, der Pfad der Payload
-* `${host.prefix}`, das Host-Präfix, z. B. http://localhost:4502
+* `${host.prefix}`, Host-Präfix, z. B.: `http://localhost:4502`
 
 ### Hinzufügen einer E-Mail-Vorlage für eine neue Sprache {#adding-an-email-template-for-a-new-language}
 
@@ -297,7 +298,7 @@ Konfigurieren Sie zunächst den E-Mail-Dienst:
    * Markieren Sie die Kontrollkästchen für **SMPT verwendet StarTLS** und **SMTP erfordert StarTLS**.
    * Markieren Sie **OAuth-Fluss** und klicken Sie auf **Speichern**.
 
-Konfigurieren Sie anschließend Ihren SMTP-OAuth-Provider wie unten beschrieben:
+Konfigurieren Sie anschließend Ihren SMTP OAuth-Provider wie unten beschrieben:
 
 1. Öffnen Sie die AEM-Web-Konsole, indem Sie zu `http://serveraddress:serverport/system/console/configMgr` gehen.
 1. Suchen Sie nach **CQ Mailer SMTP OAuth2 Provider** und klicken Sie darauf.
@@ -310,11 +311,11 @@ Konfigurieren Sie anschließend Ihren SMTP-OAuth-Provider wie unten beschrieben:
    * Token-Ablauf aktualisieren: nie
 1. Klicken Sie auf **Speichern**.
 
-<!-- clarify refresh token expiry, currrently not present in the UI -->
+<!-- clarify refresh token expiry, currently not present in the UI -->
 
 Nach der Konfiguration sollten die Einstellungen wie folgt aussehen:
 
-![OAuth-SMTP-Anbieter](assets/oauth-smtpprov2.png)
+![Das Konfigurationsfenster des CQ Mailer SMTP Oauth2 Provider](assets/oauth-smtpprov2.png)
 
 Aktivieren Sie jetzt die OAuth-Komponenten. Gehen Sie dazu wie folgt vor:
 
@@ -324,7 +325,7 @@ Aktivieren Sie jetzt die OAuth-Komponenten. Gehen Sie dazu wie folgt vor:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Klicken Sie links neben den Komponenten auf das Wiedergabesymbol.
 
-   ![Komponenten](assets/oauth-components-play.png)
+   ![Liste der Komponenten, die OAuthCodeGenerateServlet und OAuthCodeAccessTokenGenerator anzeigen](assets/oauth-components-play.png)
 
 Bestätigen Sie abschließend die Konfiguration, indem Sie:
 
@@ -342,7 +343,7 @@ Bestätigen Sie abschließend die Konfiguration, indem Sie:
 1. Suchen Sie in der Suchleiste nach **Azure Active Directory** und klicken Sie auf das Ergebnis. Alternativ können Sie direkt zu [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview) gehen.
 1. Klicken Sie auf **Registrierung einer Anwendung** – **Neue Registrierung**
 
-   ![Microsoft Outlook-Konfiguration](assets/oauth-outlook1.png)
+   ![Die neue Registrierungsschaltfläche beim Konfigurieren von Microsoft Outlook](assets/oauth-outlook1.png)
 
 1. Füllen Sie die Informationen entsprechend Ihren Anforderungen aus und klicken Sie dann auf **Registrieren**
 1. Wechseln Sie zur neu erstellten Anwendung und wählen Sie **API-Berechtigungen** aus.
@@ -397,7 +398,7 @@ Integrieren Sie anschließend Ihre OAuth2-Einstellungen mit AEM:
 
 Nach der Konfiguration sollten die Einstellungen wie folgt aussehen:
 
-![AEM Seitenkonfigurationsansicht](assets/oauth-outlook-smptconfig.png)
+![Die abgeschlossene CQ Mailer SMTP OAuth2-Konfiguration](assets/oauth-outlook-smptconfig.png)
 
 Aktivieren Sie jetzt die OAuth-Komponenten. Gehen Sie dazu wie folgt vor:
 
@@ -407,7 +408,7 @@ Aktivieren Sie jetzt die OAuth-Komponenten. Gehen Sie dazu wie folgt vor:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Klicken Sie links neben den Komponenten auf das Wiedergabesymbol.
 
-![components2](assets/oauth-components-play.png)
+![Ein Codeausschnitt der Komponentenliste, der OAuthCodeGenerateServlet und OAuthCodeAccessTokenGenerator enthält](assets/oauth-components-play.png)
 
 Bestätigen Sie abschließend die Konfiguration, indem Sie:
 

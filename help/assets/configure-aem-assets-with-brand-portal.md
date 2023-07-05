@@ -13,12 +13,13 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 14988b55c21131391fdcb033373774ee170f5305
 workflow-type: tm+mt
-source-wordcount: '2076'
-ht-degree: 100%
+source-wordcount: '2124'
+ht-degree: 97%
 
 ---
+
 
 # Konfigurieren von AEM Assets mit Brand Portal {#configure-integration-65}
 
@@ -103,6 +104,7 @@ Für die Konfiguration von AEM Assets mit Brand Portal sind Konfigurationen sowo
 >Eine AEM Assets-Autoreninstanz darf nur mit einem Brand Portal-Mandanten konfiguriert werden.
 
 Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, wenn Sie AEM Assets zum ersten Mal mit Brand Portal konfigurieren:
+
 1. [Abrufen eines öffentlichen Zertifikats](#public-certificate)
 1. [Erstellen einer JWT-Verbindung (Service-Konto)](#createnewintegration)
 1. [Konfigurieren des IMS-Kontos](#create-ims-account-configuration)
@@ -274,7 +276,7 @@ Gehen Sie wie folgt vor, um das IMS-Konto zu konfigurieren.
 
    Klicken Sie im Dialogfeld auf **[!UICONTROL Prüfen]**. Bei erfolgreicher Konfiguration wird eine Meldung angezeigt, dass das *Token erfolgreich abgerufen* wurde.
 
-   ![](assets/create-new-integration5.png)
+   ![Bestätigungsdialogfeld zur gesunden Konfiguration](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
@@ -298,7 +300,7 @@ Führen Sie die folgenden Schritte aus, um den Brand Portal-Cloud-Service zu kon
 
    Geben Sie im Feld **[!UICONTROL Dienst-URL]** Ihre Brand Portal-Mandanten-URL (Organisations-URL) ein.
 
-   ![](assets/create-cloud-service.png)
+   ![Fenster &quot;Brand Portal Configuration&quot;](assets/create-cloud-service.png)
 
 1. Klicken Sie auf **[!UICONTROL Speichern und schließen]**. Die Cloud-Konfiguration wird erstellt.
 
@@ -312,17 +314,17 @@ Führen Sie zur Validierung der Konfiguration folgende Schritte aus:
 
 1. Gehen Sie vom Bedienfeld **Tools** ![Tools](assets/do-not-localize/tools.png) zu **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]**.
 
-   ![](assets/test-integration1.png)
+   ![Das Bedienfeld &quot;Tools&quot;](assets/test-integration1.png)
 
 1. Klicken Sie auf der Seite „Replikation“ auf **[!UICONTROL Agenten für Autor]**.
 
-   ![](assets/test-integration2.png)
+   ![Replikationsseite](assets/test-integration2.png)
 
    Sie sehen die vier für Ihren Brand Portal-Mandanten erstellten Replikationsagenten.
 
    Suchen Sie die Replikationsagenten Ihres Brand Portal-Mandanten und klicken Sie auf die Replikationsagenten-URL.
 
-   ![](assets/test-integration3.png)
+   ![Konfiguration der Assets-Replikation](assets/test-integration3.png)
 
    >[!NOTE]
    >
@@ -330,11 +332,11 @@ Führen Sie zur Validierung der Konfiguration folgende Schritte aus:
 
 1. Um die Verbindung zwischen AEM Assets und Brand Portal zu überprüfen, klicken Sie auf das Symbol **[!UICONTROL Verbindung testen]**.
 
-   ![](assets/test-integration4.png)
+   ![Überprüfen der Asset-Replikationseinstellungen](assets/test-integration4.png)
 
    Ihnen wird eine Meldung angezeigt, dass Ihr *Testpaket erfolgreich bereitgestellt wurde*.
 
-   ![](assets/test-integration5.png)
+   ![Testbestätigungsausgabe](assets/test-integration5.png)
 
 1. Überprüfen Sie die Testergebnisse für alle vier Replikationsagenten.
 
@@ -362,6 +364,7 @@ Weitere Informationen finden Sie in der [Dokumentation zu Brand Portal](https://
 ## Upgrade der Konfiguration {#upgrade-integration-65}
 
 Führen Sie die folgenden Schritte in der angegebenen Reihenfolge aus, um ein Upgrade Ihrer vorhandenen Konfigurationen auf die Adobe Developer Console durchzuführen:
+
 1. [Überprüfen von laufenden Aufträgen](#verify-jobs)
 1. [Löschen von vorhandenen Konfigurationen](#delete-existing-configuration)
 1. [Erstellen einer Konfiguration](#configure-new-integration-65)
@@ -376,13 +379,13 @@ Stellen Sie sicher, dass in Ihrer AEM Assets-Autoreninstanz kein Veröffentlichu
 
 1. Klicken Sie auf der Seite „Replikation“ auf **[!UICONTROL Agenten für Autor]**.
 
-   ![](assets/test-integration2.png)
+   ![Replikationsagenten für Assets](assets/test-integration2.png)
 
 1. Suchen Sie die Replikationsagenten Ihres Brand Portal-Mandanten.
 
    Stellen Sie sicher, dass für alle Replikationsagenten die **Warteschlange im Leerlauf ist** und kein Veröffentlichungsauftrag aktiv ist.
 
-   ![](assets/test-integration3.png)
+   ![Einstellungen für Replikationswarteschlangen](assets/test-integration3.png)
 
 ### Löschen von vorhandenen Konfigurationen {#delete-existing-configuration}
 
@@ -395,15 +398,15 @@ Sie müssen beim Löschen der vorhandenen Konfigurationen die folgende Checklist
 
 1. Navigieren Sie zu `/etc/replications/agents.author` und löschen Sie alle vier Replikationsagenten Ihres Brand Portal-Mandanten.
 
-   ![](assets/delete-replication-agent.png)
+   ![Replikationsagent in CRXDE](assets/delete-replication-agent.png)
 
 1. Navigieren Sie zu `/etc/cloudservices/mediaportal` und löschen Sie die Cloud Service-Konfiguration von Brand Portal.
 
-   ![](assets/delete-cloud-service.png)
+   ![Detail des Replikationsagenten in CRXDE](assets/delete-cloud-service.png)
 
 1. Navigieren Sie zu `/home/users/mac` und löschen Sie die **Mac-Benutzer** Ihres Brand Portal-Mandanten.
 
-   ![](assets/delete-mac-user.png)
+   ![Weitere Details zum Replikationsagenten in CRXDE](assets/delete-mac-user.png)
 
 
 Sie können jetzt über die Adobe Developer Console auf Ihrer AEM 6.5-Autoreninstanz eine [Konfiguration erstellen](#configure-new-integration-65).

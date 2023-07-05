@@ -1,7 +1,7 @@
 ---
 title: Analyse mit externen Anbietern
 seo-title: Analytics with External Providers
-description: Erfahren Sie mehr über Analyse mit externen Anbietern.
+description: Erfahren Sie mehr über Analytics mit externen Anbietern.
 seo-description: Learn about Analytics with External Providers.
 uuid: 31a773ca-901e-45f2-be8f-951c26f9dbc5
 contentOwner: Guillaume Carlino
@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '432'
-ht-degree: 100%
+source-git-commit: ec4f24528089fe3de639b974ff4ab6f8807fc7fc
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 70%
 
 ---
+
 
 # Analyse mit externen Anbietern {#analytics-with-external-providers}
 
@@ -27,9 +28,9 @@ Verschiedene vordefinierte Konfigurationen stehen Ihnen zur Integration in den e
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-Sie können auch Ihre eigene Instanz der **generischen Analyse-Snippets** konfigurieren, um neue Dienstkonfigurationen zu definieren.
+Sie können auch Ihre eigene Instanz der **Allgemeine Analytics-Snippets** , um neue Dienstkonfigurationen zu definieren.
 
-Die Informationen werden dann mithilfe von kleinen Code-Snippets erfasst, die den Webseiten hinzugefügt werden. Beispiel:
+Die Informationen werden dann mithilfe kleiner Codefragmente erfasst, die den Webseiten hinzugefügt werden. Beispiel:
 
 >[!CAUTION]
 >
@@ -47,12 +48,12 @@ _gaq.push(['_trackPageview']);
 })();
 ```
 
-Diese Snippets ermöglichen die Erfassung von Daten und Generierung von Berichten. Welche Daten tatsächlich erfasst werden, hängt vom Anbieter und dem tatsächlich verwendeten Code-Snippet ab. Beispielstatistiken beinhalten Folgendes:
+Diese Snippets ermöglichen die Erfassung von Daten und die Erstellung von Berichten. Die tatsächlichen erfassten Daten hängen vom Provider und dem tatsächlich verwendeten Codeausschnitt ab. Zu den Beispielstatistiken gehören:
 
-* Anzahl der Besucher in einem bestimmten Zeitraum
-* Anzahl der besuchten Seiten
-* Verwendete Suchbegriffe
-* Einstiegsseiten
+* wie viele Besucher im Laufe der Zeit
+* wie viele Seiten besucht wurden
+* verwendete Suchbegriffe
+* Landingpages
 
 >[!CAUTION]
 >
@@ -70,15 +71,15 @@ Für die Grundkonfiguration:
 1. Erweitern Sie im linken Bereich die Option **Cloud Service-Konfigurationen**.
 1. Doppelklicken Sie auf **Generisches Analyse-Snippet**, um die Seite zu öffnen:
 
-   ![](assets/analytics_genericoverview.png)
+   ![Generisches Analyse-Snippet](assets/analytics_genericoverview.png)
 
 1. Klicken Sie auf das Plussymbol (+), um eine neue Konfiguration mithilfe des Dialogfelds hinzuzufügen. Sie müssen mindestens einen Namen, z. B. Google Analytics, zuweisen:
 
-   ![](assets/analytics_addconfig.png)
+   ![Erstellen einer Konfiguration](assets/analytics_addconfig.png)
 
 1. Klicken Sie auf **Erstellen**, woraufhin sofort das Snippet-Dialogfeld geöffnet wird, und fügen Sie das entsprechende Javascript-Snippet in das Feld ein.
 
-   ![](assets/analytics_snippet.png)
+   ![Bearbeiten der Komponente](assets/analytics_snippet.png)
 
 1. Klicken Sie zum Speichern auf **OK**.
 
@@ -90,18 +91,18 @@ Nach der Erstellung der Dienstkonfiguration müssen Sie nun die erforderlichen S
 1. Öffnen Sie die **Seiteneigenschaften** im Sidekick und wählen Sie dann die Registerkarte **Cloud-Services** aus.
 1. Klicken Sie auf **Service hinzufügen** und wählen Sie dann den erforderlichen Dienst aus, zum Beispiel den Dienst **Generisches Analyse-Snippet**:
 
-   ![](assets/analytics_selectservice.png)
+   ![Hinzufügen eines Cloud-Service](assets/analytics_selectservice.png)
 
 1. Klicken Sie zum Speichern auf **OK**.
 1. Sie werden zur Registerkarte **Cloud-Services** zurückgeleitet. Der Dienst **Generisches Analyse-Snippet** wird nun mit der Meldung `Configuration reference missing` angezeigt. Wählen Sie in der Dropdown-Liste die spezifische Dienstinstanz aus, zum Beispiel Google Analytics:
 
-   ![](assets/analytics_selectspecificservice.png)
+   ![Hinzufügen der Cloud Service-Konfiguration](assets/analytics_selectspecificservice.png)
 
 1. Klicken Sie zum Speichern auf **OK**.
 
-   Das Snippet wird nun angezeigt, wenn Sie die Seitenquelle für die Seite anzeigen.
+   Das Snippet kann jetzt angezeigt werden, wenn Sie die Seitenquelle für die Seite anzeigen.
 
-   Nach Ablauf einer gewissen Zeitspanne können Sie die Statistiken anzeigen, die erfasst wurden.
+   Nach Ablauf eines angemessenen Zeitraums können Sie die gesammelten Statistiken anzeigen.
 
    >[!NOTE]
    >

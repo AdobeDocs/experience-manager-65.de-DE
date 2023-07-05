@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 4dd216167f97eb6f6181586b57694b139872c5ef
 workflow-type: tm+mt
-source-wordcount: '945'
-ht-degree: 69%
+source-wordcount: '958'
+ht-degree: 67%
 
 ---
+
 
 # Granite-Vorgänge – Benutzer- und Gruppenverwaltung{#granite-operations-user-and-group-administration}
 
@@ -26,7 +27,7 @@ Diese Konten bilden die Grundlage der [AEM-Konten](/help/sites-administering/sec
 
 Granite-Benutzer- und Gruppenverwaltungskonsolen sind beide über das **[Instrumente](/help/sites-administering/tools-consoles.md)** Konsole der Touch-optimierten Benutzeroberfläche:
 
-![chlimage_1-72](assets/chlimage_1-72a.png)
+![Tools-Konsole](assets/chlimage_1-72a.png)
 
 Entweder **Benutzer** oder **Gruppen** über die Tools-Konsole die entsprechende Konsole öffnen. In beiden können Sie entweder über das Kontrollkästchen und dann über Aktionen in der Symbolleiste oder durch Öffnen der Kontodetails über den Link unter **Name**.
 
@@ -42,7 +43,7 @@ Entweder **Benutzer** oder **Gruppen** über die Tools-Konsole die entsprechende
 
 * [Gruppenverwaltung](#group-administration)
 
-  ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![Benutzerverwaltungskonsole](assets/chlimage_1-74a.png)
 
   Die **Gruppen** Konsolenlisten:
 
@@ -56,11 +57,11 @@ Entweder **Benutzer** oder **Gruppen** über die Tools-Konsole die entsprechende
 
 1. Verwenden Sie die **Benutzer hinzufügen** Symbol:
 
-   ![Benutzer hinzufügen](do-not-localize/chlimage_1-1.png)
+   ![Symbol &quot;Benutzer hinzufügen&quot;](do-not-localize/chlimage_1-1.png)
 
 1. Die **Benutzer erstellen** Das Formular wird geöffnet:
 
-   ![chlimage_1-75](assets/chlimage_1-75a.png)
+   ![Formular &quot;Benutzerdetails&quot;](assets/chlimage_1-75a.png)
 
    Hier können Sie die Benutzerdetails für das Konto eingeben (die meisten entsprechen dem Standard und sind selbsterklärend):
 
@@ -132,11 +133,11 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
 1. Sie können nun die Details wie unter [Hinzufügen neuer Benutzer](#adding-a-new-user) bearbeiten. Unter **Kontoeinstellungen** ist ein Link **Kennwort ändern** vorhanden.
 
-   ![chlimage_1-76](assets/chlimage_1-76a.png)
+   ![Dialogfeld &quot;Kontoeinstellungen&quot;](assets/chlimage_1-76a.png)
 
 1. Das Dialogfeld **Kennwort ändern** wird geöffnet. Geben Sie das neue Kennwort zusammen mit Ihrem Kennwort ein und geben Sie es erneut ein. Bestätigen Sie die Änderungen mit **OK**.
 
-   ![chlimage_1-77](assets/chlimage_1-77a.png)
+   ![Dialogfeld &quot;Kennwort ändern&quot;](assets/chlimage_1-77a.png)
 
    Über eine Meldung wird bestätigt, dass das Kennwort geändert wurde.
 
@@ -149,7 +150,7 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
    Hierdurch wird die Dropdown-Liste für die Gruppenauswahl geöffnet:
 
-   ![chlimage_1-78](assets/chlimage_1-78a.png)
+   ![Gruppenauswahl](assets/chlimage_1-78a.png)
 
 1. Im Auswahlfeld können Sie per Aus-/Abwahl festlegen, welchen Gruppen das Benutzerkonto angehören soll.
 
@@ -177,7 +178,7 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
 1. Die **Gruppe erstellen** Das Formular wird geöffnet:
 
-   ![chlimage_1-79](assets/chlimage_1-79a.png)
+   ![Gruppendetails-Formular](assets/chlimage_1-79a.png)
 
    Hier können Sie die Gruppendetails eingeben:
 

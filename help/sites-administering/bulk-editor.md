@@ -11,16 +11,17 @@ content-type: reference
 discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1143'
-ht-degree: 100%
+source-git-commit: feef7362b832f2ddef1902ef2a25d55323b6be26
+workflow-type: tm+mt
+source-wordcount: '1167'
+ht-degree: 47%
 
 ---
 
+
 # Der Bulk Editor{#the-bulk-editor}
 
-Der Bulk Editor ermöglicht eine äußerst effiziente Bearbeitung, wenn der visuelle Seitenkontext nicht benötigt wird. Sie können damit:
+Der Bulk Editor ermöglicht eine sehr effiziente Bearbeitung, wenn der visuelle Seitenkontext nicht benötigt wird, da Sie damit:
 
 * Inhalte von mehreren Seiten suchen (und anzeigen); dazu wird GQL (Google Query Language) genutzt
 * diese Inhalte direkt im Bulk Editor bearbeiten
@@ -29,28 +30,28 @@ Der Bulk Editor ermöglicht eine äußerst effiziente Bearbeitung, wenn der visu
 
 >[!NOTE]
 >
->Sie können auch Inhalte in das Repository importieren. Standardmäßig ist diese Option für den Bulk Editor aber deaktiviert, der in der **Tools-Konsole** verfügbar ist.
+>Sie können auch Inhalte in das Repository importieren. Standardmäßig ist dies jedoch für den Bulk Editor deaktiviert, wie im Abschnitt **Instrumente** Konsole.
 
-In diesem Abschnitt wird erläutert, wie Sie mit dem Bulk Editor in der **Tools-Konsole** arbeiten. Typischerweise nutzen Administratoren den Bulk Editor, um mehrere Elemente zu suchen und zu bearbeiten. Zu diesem Zweck füllen Sie die Tabelle mit einer GQL-Abfrage und der anschließenden Auswahl der zu bearbeitenden Inhaltselemente. Autoren nutzen den Bulk Editor in der Regel als Teil einer benutzerdefinierten Bulk-Editor-Anwendung, die über die [Produktlisten](/help/sites-authoring/default-components.md#productlist)-Komponente zugänglich ist.
+In diesem Abschnitt wird erläutert, wie Sie mit dem Bulk Editor in der **Tools-Konsole** arbeiten. In der Regel verwenden Administratoren den Bulk Editor, um mehrere Elemente zu suchen und zu bearbeiten. Dazu füllen Sie die Tabelle mit einer GQL-Abfrage aus und wählen dann die zu bearbeitenden Inhaltselemente aus. Autoren nutzen den Bulk Editor in der Regel als Teil einer benutzerdefinierten Bulk-Editor-Anwendung, die über die [Produktlisten](/help/sites-authoring/default-components.md#productlist)-Komponente zugänglich ist.
 
 >[!CAUTION]
 >
->Da die [Unterstützung für die klassische Benutzeroberfläche in AEM 6.4 eingestellt wurde](/help/release-notes/deprecated-removed-features.md), wird auch der Bulk Editor nicht mehr unterstützt. Entsprechend plant Adobe keine weiteren Verbesserungen am Bulk Editor.
+>Mit dem [Einstellung der klassischen Benutzeroberfläche](/help/release-notes/deprecated-removed-features.md) In AEM 6.4 ist der Bulk Editor ebenfalls veraltet und die Adobe plant daher nicht, den Bulk Editor weiter zu verbessern.
 
-## Beispiel-Anwendungsfall für den Bulk Editor {#example-use-case-for-the-bulk-editor}
+## Anwendungsbeispiel für den Bulk Editor {#example-use-case-for-the-bulk-editor}
 
-Wenn Sie beispielsweise alle Namen und E-Mail-Adressen von Benutzern benötigen, die an einer bestimmten Umfrage teilgenommen haben, stellt Ihnen der Bulk Editor diese Daten bereit und Sie können sie in eine Tabelle exportieren.
+Wenn Sie beispielsweise alle Namen und E-Mail-Adressen von Benutzern benötigen, die eine bestimmte Umfrage ausgefüllt haben, kann der Bulk Editor diese Informationen bereitstellen und in eine Tabelle exportieren.
 
-Ein Beispiel, das einen solchen Anwendungsfall veranschaulicht, ist auf der Geometrixx-Website enthalten:
+Ein Beispiel zur Veranschaulichung eines solchen Anwendungsfalls finden Sie auf der Geometrixx-Website:
 
-1. Navigieren Sie zur Seite **Support** und dann zur Umfrage **Zufriedenheit mit dem Kundenservice**.
-1. **Bearbeiten Sie** den Absatz **Beginn des Formulars**. Klicken Sie im Dialogfeld auf die Registerkarte **Erweitert**, erweitern Sie die **Aktionskonfiguration** und klicken Sie dann auf **Daten anzeigen...**.
+1. Navigieren Sie zum **Support** und dann zum **Zufriedenheit des Kundendienstes** Umfrage.
+1. **Bearbeiten** die **Beginn des Formulars** Absatz. Klicken Sie im Dialogfeld auf das **Erweitert** Registerkarte, erweitern Sie die **Aktionskonfiguration** Klicken Sie auf **Daten anzeigen...**.
 
-   ![](assets/custsatsurvey.png)
+   ![Beispiel für eine Umfrage zur Kundenzufriedenheit](assets/custsatsurvey.png)
 
 1. Der Bulk Editor ist vollständig anpassbar, auch wenn in diesem Beispiel die Benutzer keine Inhalte bearbeiten, sondern nur die Daten in eine Tabelle exportieren können.
 
-   ![](assets/bulkeditor.png)
+   ![Bulk Editor-Konsole](assets/bulkeditor.png)
 
 ## Verwenden des Bulk Editors {#how-to-use-the-bulk-editor}
 
@@ -65,9 +66,9 @@ Mit dem Bulk Editor können Sie:
 
 So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
 
-1. Klicken Sie in der **Tools-Konsole** auf den Ordner **Importtools**, um ihn zu erweitern.
-1. Doppelklicken Sie auf den **Bulk Editor**, um ihn zu öffnen.
-1. Geben Sie die Auswahlanforderungen ein:
+1. Im **Instrumente** klicken Sie auf die **Importtools** Ordner, um ihn zu erweitern.
+1. Doppelklicken Sie auf die **Bulk Editor** um es zu öffnen.
+1. Geben Sie Ihre Auswahlanforderungen an:
 
 <table>
  <tbody>
@@ -89,27 +90,27 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
   </tr>
   <tr>
    <td>Eigenschaften/Spalten</td>
-   <td>Aktivieren Sie die Kontrollkästchen für die Eigenschaften, die der Bulk Editor zurückgeben soll. Die ausgewählten Eigenschaften stellen die Spaltenüberschriften im Ergebnisbereich dar. Standardmäßig wird der Knotenpfad in den Ergebnissen angezeigt.</td>
+   <td>Aktivieren Sie die Kontrollkästchen für die Eigenschaften, die der Bulk Editor zurückgeben soll. Die Eigenschaften, die Sie auswählen, sind die Spaltenüberschriften im Ergebnisbereich. Standardmäßig wird der Knotenpfad in den Ergebnissen angezeigt.</td>
   </tr>
   <tr>
    <td>Benutzerdefinierte Eigenschaften/Spalten</td>
-   <td>Geben Sie alle anderen Eigenschaften ein, die nicht im Feld <strong>Eigenschaften/Spalten</strong> aufgeführt sind. Diese benutzerdefinierten Eigenschaften werden im Ergebnisbereich angezeigt. Sie können mehrere Eigenschaften hinzufügen, indem Sie sie mit Kommas voneinander trennen. <i>Hinweis:</i> Wenn Sie eine benutzerdefinierte Eigenschaft hinzufügen, die noch nicht vorhanden ist, zeigt AEM WCM eine leere Zelle an. Wenn Sie die leere Zelle bearbeiten und speichern, wird die Eigenschaft zum Knoten hinzugefügt. Die neu erstellte Eigenschaft muss die Einschränkungen des Knotentyps und Eigenschafts-Namespaces einhalten.</td>
+   <td>Geben Sie alle anderen Eigenschaften ein, die nicht im Feld <strong>Eigenschaften/Spalten</strong> aufgeführt sind. Diese benutzerdefinierten Eigenschaften werden im Ergebnisbereich angezeigt. Sie können mehrere Eigenschaften mithilfe eines Kommas hinzufügen, um Eigenschaften zu trennen. <i>Hinweis:</i> Wenn Sie eine benutzerdefinierte Eigenschaft hinzufügen, die noch nicht vorhanden ist, zeigt AEM WCM eine leere Zelle an. Wenn Sie die leere Zelle ändern und speichern, wird die Eigenschaft zum Knoten hinzugefügt. Die neu erstellte Eigenschaft muss Einschränkungen des Knotentyps und Eigenschafts-Namespaces berücksichtigen.</td>
   </tr>
  </tbody>
 </table>
 
 Beispiel:
 
-![](assets/searchfilter.png)
+![Masseneditor-Filteroptionen](assets/searchfilter.png)
 
 1. Klicken Sie auf **Suchen**. Der Bulk Editor zeigt die Suchergebnisse an.
 Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurückgegeben und in den geforderten Spalten angezeigt.
 
-   ![](assets/chlimage_1-39.png)
+   ![Ergebnisse des Masseneditors](assets/chlimage_1-39.png)
 
 1. Um ggf. Änderungen vorzunehmen, doppelklicken Sie in eine Zelle.
 
-   ![](assets/srchresultedit.png)
+   ![Massenbearbeitung](assets/srchresultedit.png)
 
 1. Klicken Sie auf **Speichern**, um die Änderungen zu speichern. (Die Schaltfläche **Speichern** wird aktiviert, sobald Sie eine Zelle bearbeitet haben.)
 
@@ -120,37 +121,37 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 #### Weitere GQL-Abfrageparameter {#additional-gql-query-parameters}
 
 * **path:** Durchsucht nur Knoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix festlegen, wird nur der letzte berücksichtigt.
-* **type:** Gibt nur Knoten der angegebenen Knotentypen zurück. Das schließt primäre und Mixin-Typen ein. Sie können mehrere Knotentypen durch Kommas voneinander getrennt festlegen. GQL gibt Knoten zurück, die einen der festgelegten Typen aufweisen.
-* **order:** Sortiert das Ergebnis nach den bestimmten Eigenschaften. Sie können mehrere Eigenschaftsnamen durch Kommas voneinander getrennt festlegen. Um das Ergebnis in absteigender Reihenfolge zu sortieren, stellen Sie dem Eigenschaftsnamen ein Minuszeichen voran. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
+* **type:** Gibt nur Knoten der angegebenen Knotentypen zurück. Dies umfasst sowohl die primären als auch die Mixin-Typen. Sie können mehrere kommagetrennte Knotentypen angeben. GQL gibt Knoten zurück, die einen der angegebenen Typen aufweisen.
+* **order:** Sortiert das Ergebnis nach den bestimmten Eigenschaften. Sie können mehrere kommagetrennte Eigenschaftsnamen angeben. Um das Ergebnis in absteigender Reihenfolge anzuordnen, setzen Sie einfach das Präfix des Eigenschaftsnamens auf ein Minuszeichen. Beispiel: order:-name. Ein Pluszeichen gibt das Ergebnis in aufsteigender Reihenfolge zurück. Dies ist die Standardeinstellung.
 * **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10..20 – Beachten Sie, dass das Intervall auf 0 basiert. Der Startwert wird ein-, der Endwert ausgeschlossen. Sie können auch ein offenes Intervall festlegen: :limit:10.. oder limit:..20. Wenn Sie die Punkte weglassen und nur einen Wert angeben, gibt GQL höchstens diese Anzahl an Ergebnissen zurück. Beispiel: limit:10 (Gibt die ersten zehn Ergebnisse zurück.)
 
-### Exportieren von Inhalten {#exporting-content}
+### Inhalt exportieren {#exporting-content}
 
-Möglicherweise müssen Sie Inhalte exportieren und in einer Excel-Tabelle bearbeiten. Beispielsweise möchten Sie vielleicht eine Mailing-Liste exportieren und die Vorwahl aller aufgeführten Telefonnummern direkt in Excel ändern, zusätzliche Zeilen hinzufügen usw.
+Möglicherweise müssen Sie Inhalte exportieren und in einer Excel-Tabelle ändern. Sie können beispielsweise eine Mailingliste exportieren und den Bereichscode aller aufgelisteten Telefonnummern direkt in Excel ändern, zusätzliche Zeilen hinzufügen usw.
 
 So exportieren Sie Inhalte:
 
-1. Suchen Sie wie unter [Suchen und Bearbeiten von Inhalten](#searching-and-editing-content) erläutert nach Inhalten.
-1. Klicken Sie auf **Exportieren**, um die Änderungen in eine tabulatorgetrennte Excel-Tabelle zu exportieren. AEM WCM fragt Sie, in welches Verzeichnis Sie die Datei herunterladen möchten.
+1. Suchen Sie nach Inhalt, wie unter [Suchen und Bearbeiten von Inhalten](#searching-and-editing-content).
+1. Klicken **Export** um die Änderungen in eine tabulatorgetrennte Excel-Tabelle zu exportieren. AEM WCM fragt Sie, wo Sie die Datei herunterladen möchten.
 
    >[!NOTE]
    >
-   >Standardmäßig sind die Änderungen in [Windows-1252](https://de.wikipedia.org/wiki/Windows-1252) (auch als CP-1252 bekannt) kodiert. Sie könnten UTF-8 auswählen, um die Änderungen in UTF-8 zu exportieren.
+   >Standardmäßig sind Änderungen in [Windows-1252](https://de.wikipedia.org/wiki/Windows-1252) (auch bekannt als CP-1252). Sie können UTF-8 aktivieren, um die Änderungen in UTF-8 zu exportieren.
 
-   ![](assets/srchrsesultexport.png)
+   ![Ergebnisse exportieren](assets/srchrsesultexport.png)
 
 1. Wählen Sie den Speicherort aus und bestätigen Sie, dass Sie die Datei herunterladen möchten.
-1. Nach dem Herunterladen können Sie die Datei in einem Tabellenprogramm öffnen, z. B. in Microsoft Excel. Das Tabellenprogramm importiert die Datei und wandelt sie in ein Tabellenprogramm um.
+1. Nachdem Sie die Datei heruntergeladen haben, können Sie sie über Ihr Tabellenkalkulationsprogramm öffnen, z. B. Microsoft Excel. Das Tabellenprogramm importiert die Datei und konvertiert sie in ein Tabellenformat.
 
-   ![](assets/exportinexcel.png)
+   ![Exportierte Ergebnisse in einer Tabelle](assets/exportinexcel.png)
 
-### Importieren von Inhalten {#importing-content}
+### Inhalt importieren {#importing-content}
 
-Standardmäßig ist die Importfunktion ausgeblendet, wenn Sie den Bulk Editor öffnen. Wenn Sie den Parameter `hib=false` zur URL hinzufügen, wird die Schaltfläche **Importieren** auf der Bulk Editor-Seite angezeigt. Sie können Inhalte aus jeder tabulatorgetrennten Datei (`.tsv`) importieren. Damit der Importvorgang ordnungsgemäß funktioniert, müssen die Spaltenüberschriften (die erste Reihe an Zellen) mit den Spaltenüberschriften der zu importierenden Tabelle übereinstimmen.
+Standardmäßig ist die Importfunktion beim Öffnen des Bulk Editors ausgeblendet. Wenn Sie den Parameter `hib=false` zur URL hinzufügen, wird die Schaltfläche **Importieren** auf der Bulk Editor-Seite angezeigt. Sie können Inhalte aus jeder tabulatorgetrennten Datei (`.tsv`) importieren. Damit der Import ordnungsgemäß funktioniert, müssen die Spaltenüberschriften (erste Zellenzeile) mit den Spaltenüberschriften der Tabelle übereinstimmen, in die Sie importieren.
 
 >[!NOTE]
 >
->Wenn Sie Inhalte erneut importieren, löschen Sie alle vorherigen Inhalte dieser Knoten. Achten Sie darauf, keine wichtigen Daten zu überschreiben.
+>Wenn Sie Inhalte erneut importieren, löschen Sie alle vorherigen Inhalte für diese Knoten. Achten Sie darauf, wichtige Informationen nicht zu überschreiben.
 
 So importieren Sie Inhalte:
 

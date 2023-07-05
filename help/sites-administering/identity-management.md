@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 1036127ae508ec76c868db5fb67709c104c51123
 workflow-type: tm+mt
-source-wordcount: '1226'
-ht-degree: 52%
+source-wordcount: '1250'
+ht-degree: 50%
 
 ---
+
 
 # Identitäts-Management{#identity-management}
 
@@ -61,11 +62,11 @@ A [Formular](/help/sites-authoring/default-components.md#form-component) kann ve
 Benutzerinnen und Benutzer können beispielsweise mithilfe der folgenden Geometrixx-Seite ein neues Profil anfordern:
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![registerform](assets/registerform.png)
+![Beispielformular für eine Registrierung](assets/registerform.png)
 
 Nach dem Übermitteln der Anfrage wird die Profilseite geöffnet. Auf dieser kann der Benutzer oder die Benutzerin persönliche Daten bereitstellen.
 
-![profilepage](assets/profilepage.png)
+![Beispielprofilseite](assets/profilepage.png)
 
 Das neue Konto ist auch in der [Benutzerkonsole](/help/sites-administering/security.md) sichtbar.
 
@@ -79,7 +80,7 @@ Benutzende können sich beispielsweise entweder anmelden oder mithilfe der Optio
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![anmelden](assets/login.png)
+![Beispielseite für die Anmeldung](assets/login.png)
 
 ## Abmelden {#logging-out}
 
@@ -106,13 +107,13 @@ Sie können mit dem [ClientContext](/help/sites-administering/client-context.md)
 1. Presse **control-alt-C** , um den Client-Kontext zu öffnen.
 1. Klicken Sie oben links im ClientContext auf das **Profil laden** Schaltfläche.
 
-   ![Schaltfläche &quot;Profil laden&quot;](do-not-localize/loadprofile.png)
+   ![Symbol &quot;Profil laden&quot;](do-not-localize/loadprofile.png)
 
 1. Wählen Sie ein anderes Profil aus der Dropdown-Liste im Dialogfeld aus. Beispiel: **Alison Parker**.
 1. Klicken Sie auf **OK**.
 1. Klicken Sie erneut auf **Mein Profil**. Das Formular wird mit den Details von Alison aktualisiert.
 
-   ![profilealison](assets/profilealison.png)
+   ![Beispielprofil von Alison](assets/profilealison.png)
 
 1. Sie können jetzt **Profil bearbeiten** oder **Kennwort ändern** um die Details zu aktualisieren.
 
@@ -136,11 +137,11 @@ Sie können der Profildefinition Felder hinzufügen. Beispielsweise zum Hinzufü
 
    Bei der nächsten Ansicht eines Profils können Sie eine Lieblingsfarbe auswählen:
 
-   ![aparkerfavcolour](assets/aparkerfavcolour.png)
+   ![Alison Parkers Lieblingsfarbstichprobe-Feld](assets/aparkerfavcolour.png)
 
    Das Feld wird unter dem Abschnitt **Profil** des relevanten Benutzerkontos gespeichert:
 
-   ![aparkercrxdelite](assets/aparkercrxdelite.png)
+   ![Alison Parkers Daten in CRXDE](assets/aparkercrxdelite.png)
 
 ## Profilstatus {#profile-states}
 
@@ -188,7 +189,7 @@ Profile werden im Content-Repository als Teil des [Benutzerkontos](/help/sites-a
 
 Das Profil ist unter `/home/users/geometrixx` zu finden:
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![Profile wie in CRXDE angezeigt](assets/chlimage_1-138.png)
 
 Bei einer Standardinstallation (Autor oder Veröffentlichung) hat jeder Lesezugriff auf die gesamten Profilinformationen aller Benutzer. Jeder ist ein &quot;*Integrierte Gruppe, die automatisch alle vorhandenen Benutzer und Gruppen enthält. Die Mitgliederliste kann nicht bearbeitet werden*&quot;.
 
@@ -205,7 +206,7 @@ Wenn dieser Zugriff für Ihre Installation nicht geeignet ist, können Sie diese
 
 Verwenden Sie dazu die Registerkarte **[Zugriffskontrolle](/help/sites-administering/user-group-ac-admin.md#access-right-management)**:
 
-![aclmanager](assets/aclmanager.png)
+![Verwalten von ACLs in CRXDE](assets/aclmanager.png)
 
 ## Profilkomponenten {#profile-components}
 
@@ -215,27 +216,27 @@ Es stehen auch verschiedene Profilkomponenten zur Definition der Profilanforderu
 
 Diese Komponente bietet Ihnen zwei Felder für:
 
-* die Eingabe eines Kennworts
+* die Eingabe eines Passworts
 * eine Überprüfung, um sicherzustellen, dass das Kennwort korrekt eingegeben wurde.
 
 Mit den Standardeinstellungen wird die Komponente wie folgt angezeigt:
 
-![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
+![Dialogfeld &quot;Kennwort überprüfen&quot;](assets/dc_profiles_checkedpassword.png)
 
 ### Profil – Avatar-Foto {#profile-avatar-photo}
 
 Diese Komponente bietet dem Benutzer einen Mechanismus zum Auswählen und Hochladen einer Avatar-Fotodatei.
 
-![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png)
+![Avatar-Selektor](assets/dc_profiles_avatarphoto.png)
 
 ### Profil – Genauer Name {#profile-detailed-name}
 
 Mit dieser Komponente kann der Benutzer einen detaillierten Namen eingeben.
 
-![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
+![Dialogfeld &quot;Detailname&quot;](assets/dc_profiles_detailedname.png)
 
 ### Profil – Geschlecht {#profile-gender}
 
 Mit dieser Komponente kann der Benutzer sein Geschlecht eingeben.
 
-![dc_profiles_gender](assets/dc_profiles_gender.png)
+![Geschlechterauswahl](assets/dc_profiles_gender.png)

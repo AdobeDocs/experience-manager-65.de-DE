@@ -9,12 +9,13 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
 workflow-type: tm+mt
-source-wordcount: '942'
+source-wordcount: '961'
 ht-degree: 4%
 
 ---
+
 
 # Verwaltungskonsolen für Mitglieder und Gruppen {#members-groups-management-consoles}
 
@@ -47,7 +48,7 @@ Um in der Autorenumgebung zur Mitgliederkonsole für die Verwaltung von in der V
 >
 >Die Mitgliederkonsole kann nicht verwendet werden, wenn die Variable [Tunneldienst](deploy-communities.md#tunnel-service-on-author) nicht aktiviert ist.
 
-![member-console1](assets/member-console1.png)
+![Die Mitgliederkonsole](assets/member-console1.png)
 
 ### Suchen {#search-features}
 
@@ -56,7 +57,7 @@ Wählen Sie auf der linken Seite des `Members` -Kopfzeile, um das seitliche Such
 ![Symbol &quot;Seitenbereich suchen&quot;.](assets/leftpanel-icon.png)
 
 
-![member-console2](assets/member-console2.png)
+![Filteroptionen für die Mitgliederkonsole](assets/member-console2.png)
 
 Wählen Sie auf der linken Seite des `Members` -Kopfzeile, um das seitliche Bedienfeld für die Suche zu deaktivieren.
 
@@ -76,7 +77,7 @@ Die Spaltenüberschriften sind
 
 Auswählen `Create Member` , um einen Benutzer in der Veröffentlichungsumgebung zu erstellen.
 
-![create-member1](assets/create-member1.png)
+![Das Fenster Neues Mitglied erstellen](assets/create-member1.png)
 
 ### ALLGEMEINE - Mitgliederdetails {#general-member-details}
 
@@ -150,7 +151,7 @@ Die `BADGES` bietet die Möglichkeit, Badges manuell zuzuweisen und zu widerrufe
 
 Siehe auch [Scoring und Abzeichen](implementing-scoring.md).
 
-![create-member2](assets/create-member2.png)
+![Das Fenster Mitgliedschaftseinstellungen bearbeiten](assets/create-member2.png)
 
 * **[!UICONTROL Hinzufügen von Abzeichen]**
    * Eingabe beginnen, aus der Sie auswählen können [verfügbare Abzeichen](badges.md). Nachdem ein Badge ausgewählt wurde, wählen Sie jede Website oder alle Sites aus, auf denen das Badge zusammen mit dem Avatar des Mitglieds angezeigt werden soll.
@@ -173,7 +174,7 @@ So greifen Sie auf die Gruppenkonsole zu:
 
 Auswählen `Add Group` , um eine Gruppe in der Veröffentlichungsumgebung zu erstellen.
 
-![group-console1](assets/group-console1.png)
+![Das Fenster Neue Gruppe erstellen](assets/group-console1.png)
 
 Die erforderlichen Felder zum Erstellen einer neuen veröffentlichungsseitigen Mitgliedergruppe sind:
 

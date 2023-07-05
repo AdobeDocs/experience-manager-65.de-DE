@@ -9,12 +9,13 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: 3f48e059ec8b0b255caf7d29749930e0534a37f7
 workflow-type: tm+mt
-source-wordcount: '1077'
+source-wordcount: '1081'
 ht-degree: 41%
 
 ---
+
 
 # Best Practices für E-Mail-Vorlagen {#best-practices-for-email-templates}
 
@@ -141,7 +142,7 @@ Um eine solide Basis zu bieten und die Vielfalt an Inhaltsflussmöglichkeiten zu
 
 Alle haben eine **header**, **Fußzeile** und **body** Abschnitt. Unter dem Abschnitt &quot;Text&quot;unterscheidet sich jede Vorlage in **Spaltendesign** (eine, zwei oder drei Spalten).
 
-![](assets/chlimage_1-69.png)
+![Varianten möglicher Newsletter](assets/chlimage_1-69.png)
 
 ### Komponenten {#components}
 
