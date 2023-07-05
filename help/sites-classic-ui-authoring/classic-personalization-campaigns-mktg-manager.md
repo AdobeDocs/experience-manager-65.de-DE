@@ -1,7 +1,7 @@
 ---
 title: Arbeiten mit dem Marketing Campaign Manager
 seo-title: Working with the Marketing Campaign Manager
-description: Der Marketing Campaign Manager (MCM) ist eine Konsole, mit der Sie Multi-Channel-Kampagnen verwalten können. Mit dieser Software zur Marketing-Automatisierung können Sie sämtliche Marken, Kampagnen und Erlebnisse gemeinsam mit den damit zusammenhängenden Segmenten, Listen, Leads und Berichten verwalten.
+description: Der Marketing Campaign Manager (MCM) ist eine Konsole, mit der Sie Multi-Channel-Kampagnen verwalten können. Mit dieser Software zur Marketing-Automatisierung können Sie alle Ihre Marken, Kampagnen und Erlebnisse gemeinsam mit den zugehörigen Segmenten, Listen, Leads und Berichten verwalten.
 seo-description: The Marketing Campaign Manager (MCM) is a console that helps you manage multi-channel campaigns. With this marketing automation software you can manage all your brands, campaigns and experiences together with the related segments, lists, leads, and reports.
 uuid: 63b817e4-34b9-42b8-845b-e0b7d9af3a96
 contentOwner: User
@@ -11,18 +11,18 @@ content-type: reference
 discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1175'
-ht-degree: 100%
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+workflow-type: tm+mt
+source-wordcount: '1179'
+ht-degree: 54%
 
 ---
 
 # Arbeiten mit dem Marketing Campaign Manager{#working-with-the-marketing-campaign-manager}
 
-Der Marketing Campaign Manager (MCM) in AEM ist eine Konsole, mit der Sie Multi-Channel-Kampagnen verwalten können. Mit dieser Software zur Marketing-Automatisierung können Sie sämtliche Marken, Kampagnen und Erlebnisse gemeinsam mit den damit zusammenhängenden Segmenten, Listen, Leads und Berichten verwalten.
+Der Marketing Campaign Manager (MCM) in AEM ist eine Konsole, mit der Sie Multi-Channel-Kampagnen verwalten können. Mit dieser Software zur Marketing-Automatisierung können Sie alle Ihre Marken, Kampagnen und Erlebnisse gemeinsam mit den zugehörigen Segmenten, Listen, Leads und Berichten verwalten.
 
-Sie können von verschiedenen Bereichen in AEM auf den MCM zugreifen, z. B. vom Begrüßungsbildschirm. Der Zugriff ist über das Symbol „Kampagnen“ oder über folgende URL möglich:
+Der Zugriff auf MCM erfolgt über verschiedene Stellen in AEM. beispielsweise den Begrüßungsbildschirm, über das Kampagnensymbol oder mit der URL:
 
 `https://<hostname>:<port>/libs/mcm/content/admin.html`
 
@@ -65,7 +65,7 @@ Hier können Sie Ihre Marken, Kampagnen und Erlebnisse verwalten.
 
 ## Dashboard {#dashboard}
 
-Das Dashboard enthält vier Bereiche, die Ihnen eine Übersicht über Ihre (Lead-)Listen, Segmente, Berichte und Kampagnen bieten. Hier können Sie ebenfalls auf die entsprechenden Grundfunktionen zugreifen.
+Das Dashboard enthält vier Bereiche, die Ihnen eine Übersicht über Ihre (Lead-)Listen, Segmente, Berichte und Kampagnen bieten. Hier finden Sie auch Zugriff auf grundlegende Funktionen für diese.
 
 ![mcm_dashboard](assets/mcm_dashboard.png)
 
@@ -76,9 +76,9 @@ Das Dashboard enthält vier Bereiche, die Ihnen eine Übersicht über Ihre (Lead
 >Adobe plant nicht, diese Funktion (Lead-Verwaltung) weiter auszubauen.
 >Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
-Im MCM von AEM können Sie Leads organisieren und hinzufügen, indem Sie sie manuell eingeben oder indem Sie eine kommagetrennte Liste importieren, z. B. eine Mailing-Liste. Sie können Leads auch anhand von Newsletter- oder Community-Anmeldungen generieren. (Wenn dies konfiguriert wurde, kann nach einer Anmeldung ein Workflow ausgelöst werden, aus dem Leads hervorgehen.) Leads werden im Allgemeinen in Kategorien eingeteilt und in Listen gruppiert, sodass Sie zu einem späteren Zeitpunkt Aktionen für die gesamte Liste ausführen können, z. B. eine E-Mail an eine bestimmte Liste senden.
+Im MCM von AEM können Sie Leads organisieren und hinzufügen, indem Sie sie manuell eingeben oder indem Sie eine kommagetrennte Liste importieren, z. B. eine Mailing-Liste. Sie können Leads auch anhand von Newsletter- oder Community-Anmeldungen generieren. (Wenn dies konfiguriert wurde, kann nach einer Anmeldung ein Workflow ausgelöst werden, aus dem Leads hervorgehen.) Leads werden in der Regel kategorisiert und in eine Liste eingefügt, sodass Sie später Aktionen für die gesamte Liste durchführen können. Senden einer benutzerdefinierten E-Mail an eine bestimmte Liste.
 
-Im linken Bereich unter **Leads** können Sie Ihre Leads erstellen, importieren, bearbeiten und löschen und anschließend nach Bedarf aktivieren oder deaktivieren. Sie können einen Lead einer Liste hinzufügen oder anzeigen, welchen Listen er bereits angehört.
+Im linken Bereich unter **Leads** können Sie Ihre Leads erstellen, importieren, bearbeiten und löschen und anschließend nach Bedarf aktivieren oder deaktivieren. Sie können einen Lead zu einer Liste hinzufügen oder sehen, zu welchen Listen er bereits gehört.
 
 >[!NOTE]
 >
@@ -93,9 +93,9 @@ Im linken Bereich unter **Leads** können Sie Ihre Leads erstellen, importieren,
 >Adobe plant nicht, diese Funktion (Listenverwaltung) weiter auszubauen.
 >Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
-Mithilfe von Listen können Sie Ihre Leads in Gruppen organisieren. Mit Listen können Sie Marketingkampagnen gezielt für eine bestimmte Personengruppe erstellen, z. B. können Sie einen speziellen Newsletter an eine bestimmte Liste senden.
+Mithilfe von Listen können Sie Ihre Leads in Gruppen organisieren. Mit Listen können Sie Ihre Marketing-Kampagnen auf eine ausgewählte Personengruppe ausrichten. Sie können beispielsweise einen zielgerichteten Newsletter an eine Liste senden.
 
-Unter **Listen** können Sie Ihre Listen verwalten, indem Sie Listen erstellen, importieren, bearbeiten, zusammenführen und löschen und dann nach Bedarf aktivieren oder deaktivieren. Außerdem können Sie die Leads innerhalb der Liste anzeigen, überprüfen ob die Liste einer weiteren Liste angehört, oder die Beschreibung anzeigen.
+Unter **Listen** können Sie Ihre Listen verwalten, indem Sie Listen erstellen, importieren, bearbeiten, zusammenführen und löschen und dann nach Bedarf aktivieren oder deaktivieren. Sie können auch die Leads in dieser Liste anzeigen, sehen, ob die Liste Mitglied einer anderen Liste ist, oder die Beschreibung anzeigen.
 
 >[!NOTE]
 >
@@ -115,14 +115,14 @@ Klicken Sie in MCM auf **Kampagnen**, um auf die bestehenden Kampagnen zuzugreif
 
 * **Linker Bereich**:
 Hier finden Sie eine vollständige Aufzählung aller Marken und Kampagnen.
-Wenn Sie auf eine Marke klicken, geschieht Folgendes:
+Mit einem einzigen Klick auf eine Marke können Sie Folgendes tun:
 
-   * Die Liste wird erweitert, sodass alle zusammenhängenden Kampagnen im linken Bereich angezeigt werden. Die Liste enthält auch die Anzahl der Erlebnisse, die für die einzelnen Kampagnen vorhanden sind.
-   * Im rechten Bereich wird die Markenübersicht geöffnet.
+   * Erweitern Sie die Liste, um alle zugehörigen Kampagnen im linken Bereich anzuzeigen. Diese Liste zeigt auch die Anzahl der Erlebnisse an, die für jede Kampagne vorhanden sind.
+   * Öffnen Sie die Markenübersicht im rechten Bereich.
 
 * **Rechter Bereich**:
 Hier werden für jede Marke Symbole angezeigt (historische Kampagnen werden nicht aufgeführt).
-Sie können darauf doppelklicken, um die Markenübersicht anzuzeigen.
+Sie können auf diese doppelklicken, um die Markenübersicht zu öffnen.
 
 #### Markenübersicht {#brand-overview}
 
@@ -130,74 +130,74 @@ Sie können darauf doppelklicken, um die Markenübersicht anzuzeigen.
 
 Hier können Sie folgende Aktionen durchführen:
 
-* Anzeigen der Anzahl von Kampagnen und Erlebnissen (Zahl wird im linken Bereich angezeigt), die für diese Marke vorhanden sind.
-* Erstellen einer **neuen** Kampagne für diese Marke.
+* Sehen Sie sich die Anzahl der Kampagnen und Erlebnisse an (Zahl wird im linken Bereich angezeigt), die für diese Marke vorhanden sind.
+* Erstellen Sie eine **Neu...** Kampagne für diese Marke.
 
-* Ändern des angezeigten Zeitbereichs. Wählen Sie **Woche**, **Monat** oder **Quartal**, verwenden Sie die Pfeile, um bestimmte Zeitabschnitte auszuwählen, oder kehren Sie zu **Heute** zurück.
+* Ändern des angezeigten Zeitbereichs; select **Woche**, **Monat** oder **Quartal** verwenden, um bestimmte Zeiträume auszuwählen oder zu **Heute**.
 
-* Auswählen einer Kampagne (im rechten Bereich), um folgende Aktionen auszuführen:
+* Wählen Sie eine Kampagne (im rechten Bereich) aus, um:
 
-   * Bearbeiten der **Eigenschaften**.
-   * **Löschen** der Kampagne.
+   * Bearbeiten Sie die **Eigenschaften...**
+   * **Löschen** die Kampagne.
 
-* Öffnen der Kampagnenübersicht (doppelklicken Sie im rechten Bereich auf eine Kampagne oder klicken Sie im linken Bereich einmal).
+* Öffnen Sie die Kampagnenübersicht (doppelklicken Sie im rechten Bereich auf eine Kampagne oder klicken Sie einfach im linken Bereich auf eine Kampagne).
 
 #### Kampagnenübersicht {#campaign-overview}
 
-Für die einzelnen Kampagnen sind zwei Ansichten verfügbar:
+Für die einzelnen Kampagnen stehen zwei Ansichten zur Verfügung:
 
 1. **Kalenderansicht**
 
    Verwenden Sie das Symbol:
 
-   ![](do-not-localize/mcm_iconcalendarview.png)
+   ![Kalenderansicht](do-not-localize/mcm_iconcalendarview.png)
 
-   Eine Liste sämtlicher Touchpoints (grau) und eine horizontale Zeitleiste der mit dem jeweiligen Touchpoint verbunden Erlebnisse (grün) wird angezeigt.
+   Hier finden Sie eine Liste aller Touchpoints (grau) mit einem horizontalen Zeitrahmen der Erlebnisse (grün), die mit diesem Touchpoint verbunden sind:
 
    ![mcm_banner_calendarview](assets/mcm_banner_calendarview.png)
 
    Hier können Sie folgende Aktionen durchführen:
 
-   * Ändern des angezeigten Zeitbereichs mit den Pfeilen bzw. zu **Heute** zurückkehren.
+   * Ändern Sie den angezeigten Zeitraum mithilfe der Pfeile oder kehren Sie zu **Heute**.
 
-   * Verwenden von **Touchpoint hinzufügen**, um einem vorhandenen Erlebnis einen neuen Touchpoint hinzuzufügen.
+   * Verwendung **Touchpoint hinzufügen...** , um einen neuen Touchpoint für ein vorhandenes Erlebnis hinzuzufügen.
 
-   * Klicken auf einen Teaser (im rechten Bereich), um die **Einschaltzeit** und die **Ausschaltzeit** einzurichten.
+   * Klicken Sie auf einen Teaser (im rechten Bereich), um die **Einschaltzeit** und **Ausschaltzeit**.
 
 1. **Listenansicht**
 
    Verwenden Sie das Symbol:
 
-   ![](do-not-localize/mcm_icon_listview.png)
+   ![Listenansicht](do-not-localize/mcm_icon_listview.png)
 
-   Hier werden sämtliche Erlebnisse (z. B. Teaser und Newsletter) für die ausgewählte Kampagne aufgeführt:
+   Hier werden alle Erlebnisse (z. B. Teaser und Newsletter) für die ausgewählte Kampagne aufgelistet:
 
    ![mcm_banner_listview](assets/mcm_banner_listview.png)
 
    Hier können Sie folgende Aktionen durchführen:
 
    * Erstellen eines **neuen** Erlebnisses, z. B. Adobe Target-Angebote, Teaser und Newsletter.
-   * **Bearbeiten** der Details einer bestimmten Teaser-Seite oder eines bestimmten Newsletters (auch per Doppelklick möglich).
-   * Definieren der **Eigenschaften** für eine bestimmte Teaser-Seite oder einen bestimmten Newsletter.
+   * **Bearbeiten** die Details einer bestimmten Teaser-Seite oder eines bestimmten Newsletters (es kann auch ein Doppelklick verwendet werden).
+   * Definieren Sie die **Eigenschaften...** für eine bestimmte Teaser-Seite oder einen bestimmten Newsletter.
    * **Simulieren** des Aussehens eines Erlebnisses (Teaser-Seite oder Newsletter).
 Wenn die simulierte Seite geöffnet ist, können Sie den Sidekick öffnen, um in den Bearbeitungsmodus für diese Seite zu wechseln.
 
-   * **Analysieren** der für eine Seite erzeugten Impressions.
+   * **Analysieren...** die für eine Seite generierten Impressionen.
 
-   * **Löschen** von Elementen, die nicht mehr benötigt werden.
+   * **Löschen** Elemente, wenn sie nicht mehr benötigt werden.
    * **Suchen** nach Text (das Feld „Titel“ des Erlebnisses wird durchsucht).
-   * Verwenden der **erweiterten** Suche, um Filter auf die Suche anzuwenden.
+   * Verwendung **Erweitert** Suchen, um Filter auf die Suche anzuwenden.
 
-### Simulieren von Kampagnen-Erlebnissen {#simulating-your-campaign-experiences}
+### Simulieren Ihrer Campaign-Erlebnisse {#simulating-your-campaign-experiences}
 
-Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Simulieren**. Der Touchpoint (Teaser- oder Newsletter-Seite) wird geöffnet und das gewählte Erlebnis wird angezeigt (so, wie der Besucher es sieht).
+Klicken Sie im MCM auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Simulieren**. Der Touchpoint (Teaser- oder Newsletter-Seite) wird geöffnet, um das von Ihnen ausgewählte Erlebnis anzuzeigen, wie es dem Besucher angezeigt wird.
 
 ![mcm_simateexperience](assets/mcm_simulateexperience.png)
 
-Von hier aus können Sie auch den Sidekick öffnen (klicken Sie auf den kleinen Pfeil nach unten), um zum Bearbeitungsmodus zu wechseln und die Seite zu aktualisieren.
+Von hier aus können Sie auch den Sidekick öffnen (klicken Sie auf den kleinen Pfeil nach unten), um in den Bearbeitungsmodus zu wechseln, um die Seite zu aktualisieren.
 
-### Analysieren von Kampagnen-Erlebnissen {#analyzing-your-campaign-experiences}
+### Analysieren Ihrer Kampagnenerlebnisse {#analyzing-your-campaign-experiences}
 
-Klicken Sie im Marketing Campaign Manager auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Analysieren...**. Ein Diagramm mit den Seiten-Impressions im Zeitverlauf wird angezeigt.
+Klicken Sie im MCM auf **Kampagnen**. Vergewissern Sie sich, dass die Listenansicht aktiv ist, wählen Sie dann die gewünschte Kampagnenerfahrung und klicken Sie auf **Analysieren...**. Ein Diagramm der Seitenimpressionen im Zeitverlauf wird angezeigt.
 
 ![mcm_campaignanalyze](assets/mcm_campaignanalyze.png)

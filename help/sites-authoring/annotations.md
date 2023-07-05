@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '634'
-ht-degree: 100%
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+workflow-type: tm+mt
+source-wordcount: '641'
+ht-degree: 99%
 
 ---
 
@@ -53,14 +53,13 @@ Zum Erstellen und Ansehen von Anmerkungen wird ein spezieller [Modus](/help/site
 >* [Kommentieren von Video-Assets](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 
-
 ### Hinzufügen von Anmerkungen zu Komponenten {#annotating-a-component}
 
 Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeiten, verschieben oder löschen:
 
 1. Sie können den Anmerkungsmodus über das Symbol in der Symbolleiste (rechts oben) aufrufen, wenn Sie eine Seite bearbeiten:
 
-   ![](do-not-localize/screen_shot_2018-03-22at110414.png)
+   ![Anmerken](do-not-localize/screen_shot_2018-03-22at110414.png)
 
    Sie können nun vorhandene Anmerkungen anzeigen.
 
@@ -83,16 +82,17 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
    * den Anmerkungstext einzugeben.
    * Eine Zeichnung (Linien und Formen) erstellen, um den Bereich der Komponente hervorzuheben.
 
-      Der Mauszeiger ändert sich in ein Fadenkreuz, wenn Sie eine Zeichnung erstellen. Sie können mehrere separate Linien zeichnen. Die Zeichnungslinie hat dieselbe Farbe wie die Anmerkung und kann ein Pfeil, ein Kreis oder ein Oval sein.
-   ![](do-not-localize/screen_shot_2018-03-22at110640.png)
+     Der Mauszeiger ändert sich in ein Fadenkreuz, wenn Sie eine Zeichnung erstellen. Sie können mehrere separate Linien zeichnen. Die Zeichnungslinie hat dieselbe Farbe wie die Anmerkung und kann ein Pfeil, ein Kreis oder ein Oval sein.
+
+     ![Skizze](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Farbe wählen/ändern:
 
-   ![](do-not-localize/chlimage_1-19.png)
+     ![Farbe wählen/ändern](do-not-localize/chlimage_1-19.png)
 
    * Die Anmerkung löschen.
 
-   ![](do-not-localize/screen_shot_2018-03-22at110647.png)
+     ![Anmerkung löschen](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. Sie können das Dialogfeld für die Anmerkungen schließen, indem Sie außerhalb des Dialogfelds. Es wird eine gekürzte Ansicht der Anmerkung zusammen mit sämtlichen Zeichnungen angezeigt:
 
@@ -103,12 +103,12 @@ Im Anmerkungsmodus können Sie Anmerkungen für Ihre Inhalte erstellen, bearbeit
    * Klicken/tippen Sie auf die Textmarkierung, um die Anmerkung zu öffnen. Sobald sie geöffnet ist, können Sie den vollständigen Text sehen, Änderungen vornehmen oder die Anmerkung löschen.
 
       * Zeichnungen können nicht unabhängig von der Anmerkung gelöscht werden.
+
    * Positionieren Sie die Textmarkierung neu.
    * Klicken/tippen Sie auf eine Zeichnung, um diese Zeichnung auszuwählen und sie auf die gewünschte Position zu ziehen.
    * Eine Komponente zu verschieben oder zu kopieren.
 
       * Alle damit verbundenen Anmerkungen und deren Zeichnungen werden ebenfalls verschoben oder kopiert und ihre Position in Relation zum Absatz bleibt gleich.
-
 
 1. Um den Anmerkungsmodus zu beenden und zum vorher verwendeten Modus zurückzukehren, tippen/klicken Sie auf die Schaltfläche (x-Symbol) oben rechts in der Symbolleiste.
 

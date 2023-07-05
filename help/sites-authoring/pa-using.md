@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '634'
-ht-degree: 100%
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+workflow-type: tm+mt
+source-wordcount: '638'
+ht-degree: 99%
 
 ---
 
@@ -78,7 +78,7 @@ Mitglieder der Benutzergruppe „Analytics-Administratoren“ können die Sites-
 1. Wählen Sie in der Sites-Konsole die Seite aus, für die Sie Inhaltseinblicke anzeigen möchten.
 1. Klicken Sie in der Symbolleiste auf das Symbol „Analysen und Empfehlungen“.
 
-   ![](do-not-localize/chlimage_1-16a.png)
+   ![Symbol &quot;Analytics and Recommendations&quot;](do-not-localize/chlimage_1-16a.png)
 
 ## Im Seiten-Editor sichtbare Analysen (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 

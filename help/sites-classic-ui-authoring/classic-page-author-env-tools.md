@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '898'
-ht-degree: 100%
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+workflow-type: tm+mt
+source-wordcount: '902'
+ht-degree: 99%
 
 ---
 
@@ -40,7 +40,7 @@ Verschiedene **Hilfe**-Ressourcen sind direkt in AEM zugänglich:
 
 Neben der [Hilfe über die Konsolen-Symbolleisten](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help) können Sie auch über den Sidekick auf die Hilfe zugreifen (mithilfe des Fragezeichensymbols), während Sie eine Seite bearbeiten.
 
-![](do-not-localize/sidekick-collapsed-2.png)
+![Sidekick ausgeblendet](do-not-localize/sidekick-collapsed-2.png)
 
 Alternativ können Sie die Schaltfläche **Hilfe** im Bearbeitungsdialogfeld bestimmter Komponenten verwenden. Dadurch wird die kontextsensitive Hilfe angezeigt.
 
@@ -188,7 +188,7 @@ Die Website-Konsole enthält auch [Informationen zum aktuellen Status der Seite]
 
 Beim Bearbeiten einer Seite in der klassischen Benutzeroberfläche können Sie verschiedene Modi über die Symbole unten im Sidekick aufrufen:
 
-![](do-not-localize/chlimage_1-12.png)
+![Seitenmodi](do-not-localize/chlimage_1-12.png)
 
 Die Reihe von Symbolen am unteren Rand des Sidekick wird verwendet, um den Bearbeitungsmodus für Seiten umzuschalten:
 
@@ -209,7 +209,6 @@ In diesem Modus können Sie das Design der Seite bearbeiten, indem Sie die verf�
 >* [ClientContext](/help/sites-administering/client-context.md)
 >* Websites – öffnet die Konsole „Websites“.
 >* Neu laden – aktualisiert die Seite.
-
 
 ## Tastaturbefehle {#keyboard-shortcuts}
 

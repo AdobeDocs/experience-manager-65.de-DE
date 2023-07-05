@@ -9,10 +9,10 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '2828'
-ht-degree: 100%
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+workflow-type: tm+mt
+source-wordcount: '2839'
+ht-degree: 99%
 
 ---
 
@@ -85,7 +85,7 @@ Sie können ein Bild direkt aus dem [Asset-Browser](/help/sites-authoring/author
 
 Nachdem das Bild hochgeladen wurde (und nicht vorher), können Sie es mittels [Direktbearbeitung](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) zuschneiden und drehen:
 
-![](do-not-localize/chlimage_1-10.png)
+![Symbolleiste für die Bearbeitung im Kontext](do-not-localize/chlimage_1-10.png)
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Nachdem das Bild hochgeladen wurde (und nicht vorher), können Sie es mittels [D
 
 Im Vollbildbearbeitungsmodus stehen verschiedene zusätzliche Optionen zur Verfügung, beispielsweise Karte und Zoom:
 
-![](do-not-localize/chlimage_1-11.png)
+![Vollbildbearbeitungsmodus](do-not-localize/chlimage_1-11.png)
 
 Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werden:
 
@@ -133,6 +133,7 @@ Legt die Höhe und Breite des Bildes fest.
 >Sie müssen im Feld **ALT-Text** der Registerkarte **Erweitert** Informationen eingeben, da das Bild sonst nicht gespeichert werden kann und die folgende Fehlermeldung ausgegeben wird:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Bild (Kampagne)“ dargestellt wird.
 
@@ -151,8 +152,7 @@ Die Beschriftung des Links. Dies ist der Text, der den Benutzern angezeigt wird.
 Mit dieser Option werden weitere Informationen zur Verwendung des Links hinzugefügt.
 
 * **LinkType**
-Wählen Sie in der Dropdown-Liste zwischen 
-**Benutzerdefinierte URL** und **Adaptives Dokument**. Dieses Feld ist obligatorisch. Wenn Sie „Benutzerdefinierte URL“ auswählen, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
+Wählen Sie in der Dropdown-Liste zwischen **Benutzerdefinierte URL** und **Adaptives Dokument**. Dieses Feld ist obligatorisch. Wenn Sie „Benutzerdefinierte URL“ auswählen, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
 
 * **Zusätzlicher URL-Parameter**
 Fügen Sie weitere URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen“, um mehrere Elemente hinzuzufügen.
@@ -162,6 +162,7 @@ Fügen Sie weitere URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen�
 >Sie müssen im Feld **Verknüpfungstyp** auf der Registerkarte **URL-Info** Daten eingeben, da die Komponente sonst nicht gespeichert werden kann und folgende Fehlermeldung ausgegeben wird:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Link (Kampagne)“ dargestellt wird.
 
@@ -197,11 +198,11 @@ Klicken Sie zur Konfiguration auf die Komponente und wählen Sie „Text“ oder
 
 Durch Auswahl von **Text** wird ein Inline-Editor eingeblendet:
 
-![](do-not-localize/chlimage_1-12.png)
+![Text-Symbolleiste](do-not-localize/chlimage_1-12.png)
 
 Durch Auswahl von **Bild** wird der Editor zur Bearbeitung im Kontext für Bilder eingeblendet:
 
-![](do-not-localize/chlimage_1-13.png)
+![Bild-Symbolleiste](do-not-localize/chlimage_1-13.png)
 
 Siehe [Komponente „Bild (Campaign)“](#image-campaign) für weitere Informationen zur Arbeit mit Bildern. Siehe [Komponente „Text und Personalisierung (Campaign)“](#text-personalization-campaign) für weitere Informationen zur Arbeit mit Text.
 
@@ -236,6 +237,7 @@ Legt die Höhe und Breite des Bildes fest.
 >Das Feld **ALT-Text** auf der Registerkarte **Erweitert** muss ausgefüllt werden, da die Komponente anderenfalls nicht gespeichert werden kann und folgende Fehlermeldung ausgegeben wird:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Text und Bild (Kampagne)“ dargestellt wird.
 
@@ -456,7 +458,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Numerisches Feld (Kampagn
 
 In dieser Dropdown-Liste können Sie eine Option auswählen. z. B. das Geschlecht oder den Status einer Empfängerin bzw. eines Empfängers.
 
-Sie können [in der Komponente „Optionsfeld (Campaign)“ Einstellungen konfigurieren, die für die meisten Adobe Campaign-Komponenten üblich sind](#settings-common-to-most-components). Um die Dropdown-Liste zu füllen, wählen Sie das entsprechende Feld in den Adobe Campaign-Personalisierungsfeldern aus, indem Sie auf das Adobe Campaign-Symbol klicken oder tippen und zum entsprechenden Feld navigieren.
+Sie können in der Komponente „Optionsfeld (Campaign)“ [Einstellungen konfigurieren, die für die meisten Adobe Campaign-Komponenten üblich sind](#settings-common-to-most-components). Um die Dropdown-Liste zu füllen, wählen Sie das entsprechende Feld in den Adobe Campaign-Personalisierungsfeldern aus, indem Sie auf das Adobe Campaign-Symbol klicken oder tippen und zum entsprechenden Feld navigieren.
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
@@ -474,7 +476,7 @@ Wird die Komponente einem Formular hinzugefügt, werden alle verfügbaren Abonne
 >
 >Von der Komponente wird nicht geprüft, welche Services der Benutzer bereits abonniert oder abbestellt hat und welche nicht.
 
-Sie können [in der Komponente „Abonnement-Checkliste (Campaign)“ Einstellungen konfigurieren, die für die meisten Adobe Campaign-Komponenten üblich sind](#settings-common-to-most-components). (Für diese Komponente sind keine Adobe Campaign-Konfigurationen verfügbar.)
+Sie können in der Komponente „Abonnement-Checkliste (Campaign)“ [Einstellungen konfigurieren, die für die meisten Adobe Campaign-Komponenten üblich sind](#settings-common-to-most-components). (Für diese Komponente sind keine Adobe Campaign-Konfigurationen verfügbar.)
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Abonnement-Checkliste (Campaign)“ dargestellt wird.
 

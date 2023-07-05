@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '260'
-ht-degree: 100%
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 76%
 
 ---
 
@@ -30,7 +30,7 @@ Bei der Auswahl einer textbasierten Komponente durch einfaches Tippen oder Klick
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Wenn Sie nochmals darauf tippen/klicken oder gleich anfangs die Komponente mit einem langsamen Doppeltippen/-klick auswählen, wird die Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und die Formatierung ändern.
+Durch Tippen/Klicken auf die Komponente oder anfängliches Auswählen der Komponente mit einem langsamen Doppeltippen/Doppelklick wird die Bearbeitung im Kontext geöffnet, die über eine eigene Symbolleiste verfügt. Hier können Sie den Inhalt bearbeiten und grundlegende Formatierungsänderungen vornehmen.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 
@@ -44,9 +44,9 @@ Diese Symbolleiste beinhaltet die folgenden Optionen:
 * **Schließen**
 * **Speichern**
 
-## Bearbeiten im Vollbildmodus {#full-screen-editing}
+## Bearbeitung im Vollbildmodus {#full-screen-editing}
 
-Wenn für textbasierte Komponenten der Vollbildmodus in der Symbolleiste ![](do-not-localize/screen_shot_2018-03-21at163236.png) ausgewählt wird, öffnet sich der Rich-Text-Editor und der restliche Seiteninhalt wird ausgeblendet.
+Tippen Sie bei textbasierten Komponenten in der Symbolleiste auf den Vollbildmodus. ![Vollbildbearbeitungsmodus](do-not-localize/screen_shot_2018-03-21at163236.png) öffnet den Rich-Text-Editor und blendet den Rest des Seiteninhalts aus.
 
 Im Vollbildmodus werden alle konfigurierten Optionen angezeigt, die Sie zum Bearbeiten verwenden können. Die Verfügbarkeit der Optionen [hängt von der Konfiguration ab](/help/sites-administering/rich-text-editor.md).
 

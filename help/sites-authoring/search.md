@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '504'
-ht-degree: 100%
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 99%
 
 ---
 
@@ -28,7 +28,7 @@ Die Autorenumgebung von AEM bietet abhängig vom Ressourcentyp verschiedene Mög
 
 Die Suchfunktion ist über die obere Symbolleiste verfügbar:
 
-![](do-not-localize/chlimage_1-17.png)
+![Suchen](do-not-localize/chlimage_1-17.png)
 
 Die Suchleiste bietet Ihnen folgende Möglichkeiten:
 
@@ -61,7 +61,7 @@ So durchsuchen und filtern Sie Ressourcen:
 
 1. Wenn Sie einen Drilldown durchführen möchten, wählen Sie das Symbol für die Seitenleiste (oben links) aus, um den Seitenbereich **Filter und Optionen** zu öffnen.
 
-   ![](do-not-localize/screen_shot_2018-03-23at101542.png)
+   ![Filter und Optionen](do-not-localize/screen_shot_2018-03-23at101542.png)
 
    Je nach Ressourcentyp zeigt die Suche eine vordefinierte Auswahl von Such-/Filterkriterien.
 
@@ -80,7 +80,8 @@ So durchsuchen und filtern Sie Ressourcen:
    >
    >    * in Abhängigkeit von dem von Ihnen ausgewählten Ressourcentyp, wobei z. B. die Kriterien „Assets“ und „Communitys“ verständlicherweise spezialisiert sind.
    >    * je nach Instanz, da die [Suchformulare](/help/sites-administering/search-forms.md) (entsprechend der Stelle innerhalb von AEM) angepasst werden können
-
+   >
+   >
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 
