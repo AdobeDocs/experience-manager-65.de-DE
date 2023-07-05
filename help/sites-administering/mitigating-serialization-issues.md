@@ -76,8 +76,8 @@ Die Firewall-Konfiguration ist dynamisch und kann jederzeit wie folgt geändert 
 1. Suchen Sie nach **Deserialisierungs-Firewall-Konfiguration** und klicken Sie darauf.
 
    >[!NOTE]
-   Sie können die Konfigurationsseite auch direkt erreichen, indem Sie auf die URL zugreifen:
-   * `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
+   >Sie können die Konfigurationsseite auch direkt erreichen, indem Sie auf die URL zugreifen:
+   >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
 Diese Konfiguration enthält die Zulassungsliste, die Blockierungsliste und die Deserialisierungs-Protokollierung.
@@ -109,7 +109,7 @@ Nachdem Sie auf die URL zugegriffen haben, wird eine Liste mit Integritätsprüf
 Weitere Informationen zum Behandeln von Problemen mit dem Agenten finden Sie weiter unten unter [Behandeln von Fehlern beim dynamischen Laden des Agenten](#handling-errors-with-dynamic-agent-loading).
 
 >[!NOTE]
-Wenn Sie `org.apache.commons.collections.functors` auf die Zulassungsliste setzen, schlägt die Konsistenzprüfung immer fehl.
+>Wenn Sie `org.apache.commons.collections.functors` auf die Zulassungsliste setzen, schlägt die Konsistenzprüfung immer fehl.
 
 ## Behandeln von Fehlern beim dynamischen Laden des Agenten {#handling-errors-with-dynamic-agent-loading}
 
@@ -124,10 +124,10 @@ Gehen Sie wie folgt vor, um den Agenten manuell zu laden:
    ```
 
    >[!NOTE]
-   Erfordert, dass Sie auch die Option -nofork CQ/AEM zusammen mit den entsprechenden JVM-Speichereinstellungen verwenden, da der Agent auf einer abgespalteten JVM nicht aktiviert ist.
+   >Erfordert, dass Sie auch die Option -nofork CQ/AEM zusammen mit den entsprechenden JVM-Speichereinstellungen verwenden, da der Agent auf einer abgespalteten JVM nicht aktiviert ist.
 
    >[!NOTE]
-   Die Adobe-Distribution der JAR-Datei des NotSoSerial-Agenten finden Sie im Ordner `crx-quickstart/opt/notsoserial/` Ihrer AEM-Installation.
+   >Die Adobe-Distribution der JAR-Datei des NotSoSerial-Agenten finden Sie im Ordner `crx-quickstart/opt/notsoserial/` Ihrer AEM-Installation.
 
 1. Beenden Sie die JVM-Instanz und starten Sie sie neu.
 

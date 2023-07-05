@@ -413,9 +413,8 @@ Verwenden Sie das Element &lt;strong> oder &lt;em>, um eine Hervorhebung anzugeb
 >RTE ist in einer Standardinstallation von AEM wie folgt eingerichtet:
 >
 >* &lt;b> für &lt;strong>
-* &lt;i> für &lt;em>
-  >
-Sie haben die gleiche Wirkung, doch &lt;strong> und &lt;em> sollten bevorzugt werden, weil sie semantisch korrekt für HTML sind. Bei der Entwicklung Ihrer Projektinstanz kann Ihr Entwicklungs-Team den RTE so konfigurieren, dass er &lt;strong> und &lt;em> (anstelle von &lt;b> und &lt;i>) verwendet.
+>* &lt;i> für &lt;em>
+>Sie haben die gleiche Wirkung, doch &lt;strong> und &lt;em> sollten bevorzugt werden, weil sie semantisch korrekt für HTML sind. Bei der Entwicklung Ihrer Projektinstanz kann Ihr Entwicklungs-Team den RTE so konfigurieren, dass er &lt;strong> und &lt;em> (anstelle von &lt;b> und &lt;i>) verwendet.
 
 * **Listen verwenden**: Mit HTML können Sie drei verschiedene Arten von Listen angeben:
 
@@ -430,7 +429,7 @@ Sie haben die gleiche Wirkung, doch &lt;strong> und &lt;em> sollten bevorzugt we
 Wenn Sie vorhandene Inhalte in einen bestimmten Listentyp ändern möchten, markieren Sie den entsprechenden Text und wählen Sie den entsprechenden Listentyp aus. Wie im vorherigen Beispiel, das zeigt, wie Absatztext eingegeben wird, werden die entsprechenden Listenelemente automatisch zu Ihrem HTML hinzugefügt. Sie können dies jedoch in der Ansicht der Quellbearbeitung anzeigen.
 
 >[!NOTE]
-Das Element `<dl>` wird vom RTE nicht unterstützt.
+>Das Element `<dl>` wird vom RTE nicht unterstützt.
 
 * **Verwenden von Tabellen**:
 
@@ -442,7 +441,7 @@ Datentabellen müssen mit HTML-Tabellenelementen gekennzeichnet sein:
     * ein Element `&lt;td>` für jede Datenzelle
 
 >[!NOTE]
-Tabellen sollten mit der Komponente **Tabelle** umgesetzt werden. Obwohl Tabellen in der Textkomponente erstellt werden können, wird dieses Verfahren nicht empfohlen.
+>Tabellen sollten mit der Komponente **Tabelle** umgesetzt werden. Obwohl Tabellen in der Textkomponente erstellt werden können, wird dieses Verfahren nicht empfohlen.
 
 Barrierefreie Tabellen verwenden außerdem die folgenden Elemente und Attribute:
 
@@ -451,7 +450,7 @@ Barrierefreie Tabellen verwenden außerdem die folgenden Elemente und Attribute:
     * Das Attribut `scope` des Elements `&lt;th>` wird verwendet, um anzugeben, ob eine Zelle eine Überschrift für eine bestimmte Zeile oder eine bestimmte Spalte darstellt. Auf ähnliche Weise können die Überschrift und ID-Attribute in komplexen Tabellen verwendet werden, bei denen Datenzellen mit einer oder mehreren Überschriften verknüpft sein können.
 
 >[!NOTE]
-Diese Elemente und Attribute sind standardmäßig nicht direkt verfügbar, doch Systemadmins können Unterstützung für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen (siehe [Hinzufügen von Unterstützung für zusätzliche HTML-Elemente und -Attribute](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
+>Diese Elemente und Attribute sind standardmäßig nicht direkt verfügbar, doch Systemadmins können Unterstützung für diese Werte im Dialogfeld **Tabelleneigenschaften** hinzufügen (siehe [Hinzufügen von Unterstützung für zusätzliche HTML-Elemente und -Attribute](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 
 Beim Hinzufügen einer **Tabelle** können Sie die **Tabelleneigenschaften** über das Dialogfeld konfigurieren.
 
@@ -469,10 +468,10 @@ Anschließend können Sie im Dialogfeld **Zelleneigenschaften** auswählen, ob d
 In einigen Fällen, in denen komplexe Tabellen mit zwei oder mehr Überschriftenebenen vorhanden sind, reicht das normale Dialogfeld „Tabelleneigenschaften“ nicht aus, um alle benötigten Strukturinformationen anzugeben. Für diese Art von komplexen Tabellen müssen direkte Beziehungen zwischen den Überschriften und den zugehörigen Zellen mithilfe der Attribute **Überschrift** und **ID** hergestellt werden. Beispielsweise werden in der Tabelle unten Überschriften und IDs zugeordnet, um eine programmgesteuerte Verbindung für Benutzer von Hilfstechnologien herzustellen.
 
 >[!NOTE]
-Das ID-Attribut ist in einer vorkonfigurierten Installation nicht verfügbar. Es kann durch die Konfiguration von HTML-Regeln und des Serialisierungsprogramms im RTE aktiviert werden.
+>Das ID-Attribut ist in einer vorkonfigurierten Installation nicht verfügbar. Es kann durch die Konfiguration von HTML-Regeln und des Serialisierungsprogramms im RTE aktiviert werden.
 
 >[!NOTE]
-Tabellen sollten mit der Komponente **Tabelle** umgesetzt werden. Obwohl Tabellen in der Textkomponente erstellt werden können, wird dieses Verfahren nicht empfohlen.
+>Tabellen sollten mit der Komponente **Tabelle** umgesetzt werden. Obwohl Tabellen in der Textkomponente erstellt werden können, wird dieses Verfahren nicht empfohlen.
 
 ```xml
 <table>
@@ -504,7 +503,7 @@ Tabellen sollten mit der Komponente **Tabelle** umgesetzt werden. Obwohl Tabelle
 Um dies in AEM zu erreichen, müssen Sie das Markup hinzufügen, indem Sie direkt den Modus zur Bearbeitung des Quell-Codes verwenden.
 
 >[!NOTE]
-Diese Funktion ist in einer Standardinstallation nicht sofort verfügbar. Sie erfordert die Konfiguration des RTE, HTML-Regeln und ein Serialisierungsprogramm.
+>Diese Funktion ist in einer Standardinstallation nicht sofort verfügbar. Sie erfordert die Konfiguration des RTE, HTML-Regeln und ein Serialisierungsprogramm.
 
 #### Weitere Informationen: Informationen und Beziehungen (1.3.1) {#more-information-info-and-relationships}
 
@@ -524,7 +523,7 @@ Entwickler nutzen bei der Präsentation von Informationen oft visuelle Design-Mi
 Entsprechend sind Informationen, für die zwischen verschiedenen Klängen unterschieden werden muss (z. B. Inhalte, die von einer Frau oder einem Mann gesprochen werden), für Menschen mit eingeschränktem Hörvermögen nicht verfügbar, wenn sie nicht in Textalternativen für den Audioinhalt umgesetzt wurden.
 
 >[!NOTE]
-Die Anforderungen, die sich auf die Alternativen für Farben beziehen, finden Sie unter [Verwendung von Farbe](#use-of-color).
+>Die Anforderungen, die sich auf die Alternativen für Farben beziehen, finden Sie unter [Verwendung von Farbe](#use-of-color).
 
 #### Erfüllen: Sensorische Eigenschaften (1.3.3) {#how-to-meet-sensory-characteristics}
 
@@ -534,7 +533,7 @@ Stellen Sie sicher, dass alle Informationen, die sich auf visuelle Eigenschaften
 * Verlassen Sie sich nicht auf den Textstil (z. B. fett oder kursiv gedruckter Text) als einzige Methode zur Vermittlung von Informationen.
 
 >[!NOTE]
-Die Verwendung beschreibender Begriffe ist zulässig, wenn sie in einem nicht visuellen Kontext eine Bedeutung haben. Beispielsweise ist die Verwendung von *über* und *unter* im Allgemeinen akzeptabel, da sie jeweils Inhalte vor und nach einem bestimmten Inhaltselement implizieren. Es wäre immer noch sinnvoll, wenn der Inhalt laut gesprochen wird.
+>Die Verwendung beschreibender Begriffe ist zulässig, wenn sie in einem nicht visuellen Kontext eine Bedeutung haben. Beispielsweise ist die Verwendung von *über* und *unter* im Allgemeinen akzeptabel, da sie jeweils Inhalte vor und nach einem bestimmten Inhaltselement implizieren. Es wäre immer noch sinnvoll, wenn der Inhalt laut gesprochen wird.
 
 #### Weitere Informationen – Sensorische Eigenschaften (1.3.3) {#more-information-sensory-characteristics}
 
@@ -552,7 +551,7 @@ Die Verwendung beschreibender Begriffe ist zulässig, wenn sie in einem nicht vi
 * Verwendung von Farbe: Farbe wird nicht als einziges visuelles Mittel zur Informationsübermittlung, zur Angabe einer Aktion, zur Aufforderung einer Antwort oder zur Unterscheidung eines visuellen Elements verwendet.
 
 >[!NOTE]
-Dieses Erfolgskriterium bezieht sich speziell auf die Farbwahrnehmung. Andere Wahrnehmungsformen werden in [Anpassbar (1.3)](#adaptable) behandelt, einschließlich des programmgesteuerten Zugriffs auf Farbe und andere visuelle Darstellungscodierungen.
+>Dieses Erfolgskriterium bezieht sich speziell auf die Farbwahrnehmung. Andere Wahrnehmungsformen werden in [Anpassbar (1.3)](#adaptable) behandelt, einschließlich des programmgesteuerten Zugriffs auf Farbe und andere visuelle Darstellungscodierungen.
 
 #### Zweck - Verwendung von Farbe (1.4.1) {#purpose-use-of-color}
 
@@ -615,7 +614,7 @@ Menschen mit bestimmten Sehbehinderungen können möglicherweise nicht zwischen 
 * Die Farbcodierung von Text (z. B. Link-Text und Nicht-Link-Text) für die Unterscheidung von Informationen wichtig ist.
 
 >[!NOTE]
-Text, der für rein dekorative Zwecke verwendet wird, ist von diesem Erfolgskriterium ausgeschlossen.
+>Text, der für rein dekorative Zwecke verwendet wird, ist von diesem Erfolgskriterium ausgeschlossen.
 
 #### Erfüllen - Kontrast (Minimum) (1.4.3) {#how-to-meet-contrast-minimum}
 
@@ -646,7 +645,7 @@ Wenn es nicht möglich ist, die empfohlenen Kontraststufen zu erreichen, stellen
    * Wesentlich: Eine besondere Textdarstellung ist für die vermittelte Information von wesentlicher Bedeutung.
 
 >[!NOTE]
-Logotypen (Text, der Teil eines Logos oder Markennamen ist) werden als wesentlich betrachtet.
+>Logotypen (Text, der Teil eines Logos oder Markennamen ist) werden als wesentlich betrachtet.
 
 #### Zweck - Bilder von Text (1.4.5) {#purpose-images-of-text}
 
@@ -711,7 +710,7 @@ Abhängig von der Art des Inhalts können Sie beim Erstellen von Web-Seiten mit 
 * Drei Blitze oder Unterschreitung des Schwellenwerts: Web-Seiten enthalten keine Elemente, die innerhalb einer Sekunde mehr als dreimal aufblitzen, oder die Aufblitzfrequenz liegt unter den Schwellenwerten für allgemeines Blitzen und rotes Blitzen.
 
 >[!NOTE]
-Da jeder Inhalt, der dieses Erfolgskriterium nicht erfüllt, die Fähigkeit der Benutzenden beeinträchtigen kann, die gesamte Seite zu nutzen, müssen alle Inhalte auf der Web-Seite (unabhängig davon, ob sie zur Erfüllung anderer Erfolgskriterien verwendet werden oder nicht) dieses Erfolgskriterium erfüllen. Siehe [Konformitätsanforderung 5: Nicht-Interferenz](https://www.w3.org/TR/WCAG20/#cc5).
+>Da jeder Inhalt, der dieses Erfolgskriterium nicht erfüllt, die Fähigkeit der Benutzenden beeinträchtigen kann, die gesamte Seite zu nutzen, müssen alle Inhalte auf der Web-Seite (unabhängig davon, ob sie zur Erfüllung anderer Erfolgskriterien verwendet werden oder nicht) dieses Erfolgskriterium erfüllen. Siehe [Konformitätsanforderung 5: Nicht-Interferenz](https://www.w3.org/TR/WCAG20/#cc5).
 
 #### Zweck – Grenzwert von maximal dreimaligem Blitzen (2.3.1) {#purpose-three-flashes-or-below-threshold}
 
@@ -796,7 +795,7 @@ John Smith's publications
 ```
 
 >[!NOTE]
-Das obige Snippet ist eine Illustration. Es wird empfohlen, die **Bildkomponente** zu verwenden.
+>Das obige Snippet ist eine Illustration. Es wird empfohlen, die **Bildkomponente** zu verwenden.
 
 Auch wenn empfohlen wird, einen Link-Text bereitzustellen, der den Zweck des Links verdeutlicht, ohne zusätzlichen Kontext zu benötigen, gibt es Fälle, in denen dies nicht möglich ist. Links ohne Kontext können in den folgenden Fällen verwendet werden. HTML-Beispiele hierzu finden Sie unter [Erfolgskriterium 2.4.4 erfüllen](https://www.w3.org/WAI/WCAG21/quickref/?versions=2.0#qr-navigation-mechanisms-refs).
 
@@ -881,7 +880,7 @@ Mit dem `lang`-Attribut können Änderungen in Bezug auf die Sprache des Inhalts
 ```
 
 >[!NOTE]
-Blockzitate werden in einer nativen Instanz nicht unterstützt. Es könnte eine benutzerdefinierte Komponente entwickelt werden, um diese Funktion zu unterstützen.
+>Blockzitate werden in einer nativen Instanz nicht unterstützt. Es könnte eine benutzerdefinierte Komponente entwickelt werden, um diese Funktion zu unterstützen.
 
 Auf ähnliche Weise kann der Browser ein wenig geläufiges Lehnwort oder eine Redewendung korrekt rendern, wenn das Element `span` wie folgt verwendet wird:
 
@@ -890,7 +889,7 @@ Auf ähnliche Weise kann der Browser ein wenig geläufiges Lehnwort oder eine Re
 ```
 
 >[!NOTE]
-Dieses Erfolgskriterium muss nicht beachtet werden, wenn Namen oder Städte in verschiedenen Sprachen vorkommen oder wenn Sie Lehnwörter oder Redewendungen nutzen, die in der Standardsprache gängig geworden sind (wie *Schadenfreude* im Englischen).
+>Dieses Erfolgskriterium muss nicht beachtet werden, wenn Namen oder Städte in verschiedenen Sprachen vorkommen oder wenn Sie Lehnwörter oder Redewendungen nutzen, die in der Standardsprache gängig geworden sind (wie *Schadenfreude* im Englischen).
 
 Um ein span-Element mit der entsprechenden Sprache hinzuzufügen, können Sie Ihren HTML-Code im Bearbeitungsmodus für den Quelltext im RTE manuell bearbeiten, damit er wie oben aussieht. Alternativ kann ein Systemadministrator das `lang`-Attribut im RTE einfügen (siehe [Unterstützung für zusätzliche HTML-Elemente und -Attribute hinzufügen](/help/sites-administering/rte-accessible-content.md#add-support-for-more-html-elements-and-attributes)).
 

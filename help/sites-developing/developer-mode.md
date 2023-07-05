@@ -38,8 +38,8 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >
 >* Ist nur in der Touch-optimierten Benutzeroberfläche verfügbar (beim Bearbeiten von Seiten).
 >* Der Modus ist (aufgrund von Größenbeschränkungen) nicht auf mobilen Geräten oder in kleinen Desktop-Fenstern verfügbar.
-   >
-   >   * Dies gilt bei einer Breite von weniger als 1024 Pixel.
+>
+>   * Dies gilt bei einer Breite von weniger als 1024 Pixel.
 >* Ist nur für Benutzer verfügbar, die Mitglieder der Gruppe `administrators` sind.
 
 

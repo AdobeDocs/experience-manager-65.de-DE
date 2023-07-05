@@ -120,7 +120,6 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
    >
    >* eine einzelne Seite ausgewählt haben, die noch nie untergeordnete Seiten hatte,
    >* oder keine der Seiten im Ordner Versionen enthält,
-
    >
    >ist die Anzeige leer, da keine Versionen verfügbar sind.
 

@@ -325,12 +325,13 @@ Weitere Einzelheiten zu den verfügbaren Konfigurationsoptionen finden Sie unter
 >
 >
 >
+
 ### Suchen {#search-features}
 
 In diesem Abschnitt sind die in AEM verwendeten benutzerdefinierten Index-Provider aufgeführt. Weitere Informationen zur Indizierung finden Sie unter [Oak-Abfragen und Indizierung](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
-Für den Großteil der Bereitstellungen empfiehlt Adobe den Lucene-Index. Verwenden Sie Solr nur für die Skalierbarkeit in spezialisierten und komplexen Implementierungen.
+>Für den Großteil der Bereitstellungen empfiehlt Adobe den Lucene-Index. Verwenden Sie Solr nur für die Skalierbarkeit in spezialisierten und komplexen Implementierungen.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
@@ -368,7 +369,7 @@ Weitere Informationen zur Entwicklung in AEM finden Sie unter [Entwickeln – Gr
 ### Benchmark-Szenarios {#benchmark-scenarios}
 
 >[!NOTE]
-Alle auf dieser Seite angezeigten Benchmark-Tests wurden in einer Laborumgebung durchgeführt.
+>Alle auf dieser Seite angezeigten Benchmark-Tests wurden in einer Laborumgebung durchgeführt.
 
 Die unten beschriebenen Testszenarien werden für die Abschnitte mit den Benchmark-Tests in den Kapiteln „TarMK“, „MongoMK“ und „TarMK im Vergleich zu MongoMK“ verwendet. Um festzustellen, welches Szenario für einen bestimmten Benchmarktest verwendet wurde, sehen Sie im Feld „Szenario“ der Tabelle [Technische Spezifikationen](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) nach.
 
@@ -405,7 +406,7 @@ Weitere Informationen zu TarMK finden Sie unter [Bereitstellungsszenarien](/help
 ### Richtlinien zur Mindestarchitektur von TarMK {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
-Die unten angegebenen Richtlinien zur Mindestarchitektur gelten für Produktionsumgebungen und Websites mit einem hohen Traffic-Volumen. Bei diesen Richtlinien handelt es sich **nicht** um die [Mindestanforderungen](/help/sites-deploying/technical-requirements.md#prerequisites) für die Ausführung von AEM.
+>Die unten angegebenen Richtlinien zur Mindestarchitektur gelten für Produktionsumgebungen und Websites mit einem hohen Traffic-Volumen. Bei diesen Richtlinien handelt es sich **nicht** um die [Mindestanforderungen](/help/sites-deploying/technical-requirements.md#prerequisites) für die Ausführung von AEM.
 
 Sie sollten mit der folgenden Architektur beginnen, um bei der Verwendung von TarMK eine gute Leistung zu erzielen:
 
@@ -416,7 +417,7 @@ Sie sollten mit der folgenden Architektur beginnen, um bei der Verwendung von Ta
 Nachfolgend finden Sie die Architekturrichtlinien für AEM Sites und AEM Assets.
 
 >[!NOTE]
-Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation **AKTIVIERT** sein.
+>Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation **AKTIVIERT** sein.
 
 **TAR-Architekturrichtlinien für AEM Sites**
 
@@ -506,7 +507,7 @@ Die Benchmarktests wurden nach folgenden Spezifikationen durchgeführt:
 #### Performance-Benchmark-Ergebnisse {#performance-benchmark-results}
 
 >[!NOTE]
-Die folgenden Zahlen wurden auf 1 als Baseline normalisiert und sind nicht die tatsächlichen Durchsatzwerte.
+>Die folgenden Zahlen wurden auf 1 als Baseline normalisiert und sind nicht die tatsächlichen Durchsatzwerte.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png) ![chlimage_1-8](assets/chlimage_1-8a.png)
 
@@ -526,10 +527,10 @@ Sie sollten mit der folgenden Architektur beginnen, um bei der Verwendung von Mo
 * Zwei Dispatcher
 
 >[!NOTE]
-In Produktionsumgebungen wird MongoDB immer als Replikatgruppe mit einer primären und zwei sekundären Instanzen verwendet. Die Lese- und Schreibvorgänge gehen an die primäre Instanz und die Lesevorgänge können an die sekundären Instanzen gehen. Wenn die Speicherung nicht verfügbar ist, kann eine der sekundären Instanzen durch einen Arbiter ersetzt werden. MongoDB-Replikatgruppen müssen jedoch immer aus einer ungeraden Anzahl von Instanzen bestehen.
+>In Produktionsumgebungen wird MongoDB immer als Replikatgruppe mit einer primären und zwei sekundären Instanzen verwendet. Die Lese- und Schreibvorgänge gehen an die primäre Instanz und die Lesevorgänge können an die sekundären Instanzen gehen. Wenn die Speicherung nicht verfügbar ist, kann eine der sekundären Instanzen durch einen Arbiter ersetzt werden. MongoDB-Replikatgruppen müssen jedoch immer aus einer ungeraden Anzahl von Instanzen bestehen.
 
 >[!NOTE]
-Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation **AKTIVIERT** sein.
+>Wenn der Dateidatenspeicher freigegeben wird, muss die Binärdatei-lose Replikation **AKTIVIERT** sein.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
@@ -613,7 +614,7 @@ Die Benchmarktests wurden nach folgenden Spezifikationen durchgeführt:
 ### Performance-Benchmark-Ergebnisse {#performance-benchmark-results-1}
 
 >[!NOTE]
-Die folgenden Zahlen wurden auf 1 als Baseline normalisiert und sind nicht die tatsächlichen Durchsatzwerte.
+>Die folgenden Zahlen wurden auf 1 als Baseline normalisiert und sind nicht die tatsächlichen Durchsatzwerte.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
 
@@ -646,7 +647,7 @@ Weitere Einzelheiten zu TarMK und MongoMK finden Sie unter [Empfohlene Implement
 ### Benchmarks für den Vergleich zwischen TarMK und MongoMK {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
-Die folgenden Zahlen wurden auf 1 als Basiswert normiert und sind keine tatsächlichen Durchsatzwerte.
+>Die folgenden Zahlen wurden auf 1 als Basiswert normiert und sind keine tatsächlichen Durchsatzwerte.
 
 ### Szenario 1 Technische Spezifikationen {#scenario-technical-specifications}
 
@@ -734,7 +735,7 @@ Die folgenden Zahlen wurden auf 1 als Basiswert normiert und sind keine tatsäch
 ### Szenario 2 Technische Spezifikationen {#scenario-technical-specifications-1}
 
 >[!NOTE]
-Sie benötigen einen Cluster mit zwei AEM-Knoten, um bei Verwendung von MongoDB dieselbe Anzahl von Authoring-Instanzen wie bei einem TarMK-System nutzen zu können. Ein MongoDB-Cluster mit vier Knoten kann die 1,8-fache Anzahl von Autoreninstanzen einer TarMK-Instanz verarbeiten. Ein MongoDB-Cluster mit acht Knoten kann die 2,3-fache Anzahl von Authoring-Instanzen einer TarMK-Instanz verarbeiten.
+>Sie benötigen einen Cluster mit zwei AEM-Knoten, um bei Verwendung von MongoDB dieselbe Anzahl von Authoring-Instanzen wie bei einem TarMK-System nutzen zu können. Ein MongoDB-Cluster mit vier Knoten kann die 1,8-fache Anzahl von Autoreninstanzen einer TarMK-Instanz verarbeiten. Ein MongoDB-Cluster mit acht Knoten kann die 2,3-fache Anzahl von Authoring-Instanzen einer TarMK-Instanz verarbeiten.
 
 <table>
  <tbody>

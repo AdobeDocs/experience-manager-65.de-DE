@@ -120,7 +120,7 @@ Red Hat® Linux® nutzt einen Speicherverwaltungsalgorithmus mit der Bezeichnung
 >Sehen Sie sich die folgenden Ressourcen an:
 >
 >* Weitere Informationen zu Transparent Huge Pages unter Red Hat® Linux® finden Sie in diesem [Artikel](https://access.redhat.com/solutions/46111).
-* Tipps zum Linux®-Tuning finden Sie in diesem [Artikel](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de).
+>* Tipps zum Linux®-Tuning finden Sie in diesem [Artikel](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=de).
 >
 
 

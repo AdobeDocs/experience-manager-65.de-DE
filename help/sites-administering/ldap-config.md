@@ -222,7 +222,7 @@ Folgende Konfigurationsoptionen sind verfügbar:
 | **Sync Handler Name** | Name des Synchronisierungs-Handlers. |
 
 >[!NOTE]
-Wenn für Ihre AEM-Instanz mehr als eine LDAP-Konfiguration vorgesehen ist, müssen Sie für jede Konfiguration separate Identitäts-Provider und Synchronisierungs-Handler erstellen. 
+>Wenn für Ihre AEM-Instanz mehr als eine LDAP-Konfiguration vorgesehen ist, müssen Sie für jede Konfiguration separate Identitäts-Provider und Synchronisierungs-Handler erstellen. 
 
 ## Konfigurieren von LDAP über SSL {#configure-ldap-over-ssl}
 
