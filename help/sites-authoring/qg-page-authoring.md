@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '1580'
-ht-degree: 65%
+source-wordcount: '1558'
+ht-degree: 56%
 
 ---
 
@@ -40,11 +40,11 @@ Bevor Sie sich einen Überblick über die Besonderheiten verschaffen, hier eine 
 
 * **Erstellen**
 
-   * Diese Schaltfläche ist in vielen Konsolen verfügbar. Die aufgeführten Optionen sind kontextsensitiv und können je nach Szenario variieren.
+   * Diese Schaltfläche ist in vielen Konsolen verfügbar - die angezeigten Optionen sind kontextsensitiv und können je nach Szenario variieren.
 
 * Neuanordnen von Seiten in einem Ordner
 
-   * Dies kann in der [Listenansicht](/help/sites-authoring/basic-handling.md#list-view) erfolgen. Die Änderungen werden übernommen und in anderen Ansichten angezeigt.
+   * Dies kann in [Listenansicht](/help/sites-authoring/basic-handling.md#list-view). Die Änderungen werden angewendet und in anderen Ansichten angezeigt.
 
 #### Bearbeiten von Seiten {#page-authoring}
 
@@ -59,7 +59,7 @@ Bevor Sie sich einen Überblick über die Besonderheiten verschaffen, hier eine 
 
 >[!NOTE]
 >
->Es gibt eine Reihe von Tastaturbefehlen, die die Bearbeitung vereinfachen.
+>Es gibt mehrere Tastaturbefehle, die die Bearbeitung vereinfachen können.
 >
 >* [Tastaturbefehle bei der Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
@@ -69,7 +69,7 @@ Bevor Sie sich einen Überblick über die Besonderheiten verschaffen, hier eine 
 
 Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigieren und/oder suchen:
 
-1. Öffnen Sie die **Sites-Konsole** mithilfe der Option **Sites** im Feld [Globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation). Diese wird als Dropdown-Liste angezeigt, wenn Sie links oben auf den Link „Adobe Experience Manager“ klicken.
+1. Öffnen Sie die **Sites** -Konsole (mithilfe der **Sites** in der [Globale Navigation](/help/sites-authoring/basic-handling.md#global-navigation)) - Wird ausgelöst (Dropdown), wenn Sie den Adobe Experience Manager-Link (oben links) auswählen.
 
 1. Navigieren Sie durch Tippen/Klicken auf die entsprechende Seite in der Baumstruktur nach unten. Die Darstellung der Seitenressourcen ist von der verwendeten Ansicht abhängig: [Karte, Liste oder Spalte](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
@@ -85,9 +85,9 @@ Es gibt verschiedene Möglichkeiten, eine Seite zu finden: Sie können navigiere
 
 ### Erstellen einer neuen Seite {#creating-a-new-page}
 
-[So erstellen Sie eine neue Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page):
+nach [Erstellen einer Seite](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [Navigieren Sie zu der Position, an der Sie die neue Seite erstellen möchten.](#finding-your-page)
+1. [Navigieren zum Speicherort](#finding-your-page) wo Sie die Seite erstellen möchten.
 1. Verwenden Sie die **Erstellen** und wählen Sie **Seite** aus der Liste:
 
    ![qgtap-02](assets/qgtap-02.png)
@@ -134,8 +134,6 @@ Wie Sie eine Seite auswählen, hängt davon ab, welche Ansicht Sie in der Konsol
 
 ### Bearbeiten des Seiteninhalts {#editing-your-page-content}
 
-So bearbeiten Sie Ihre Seite:
-
 1. [Navigieren Sie zu der Seite](#finding-your-page), die Sie bearbeiten möchten.
 1. [Öffnen Sie die zu bearbeitende Seite](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing) über das Symbol „Bearbeiten“ (Bleistift):
 
@@ -143,12 +141,12 @@ So bearbeiten Sie Ihre Seite:
 
    Darauf können Sie zugreifen, indem Sie wahlweise Folgendes verwenden:
 
-   * [Schnellaktionen (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die entsprechende Ressource.
+   * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
    * Symbolleiste, wenn die [Seite ausgewählt wurde](#selectiingyourpageforfurtheraction)
 
-1. Beim Öffnen des Editors haben Sie folgende Möglichkeiten:
+1. Wenn der Editor geöffnet wird, haben Sie folgende Möglichkeiten:
 
-   * [Hinzufügen einer neuen Komponente zu Ihrer Seite](/help/sites-authoring/editing-content.md#inserting-a-component) durch:
+   * [Fügen Sie der Seite eine neue Komponente hinzu](/help/sites-authoring/editing-content.md#inserting-a-component), indem Sie:
 
       * Öffnen des Seitenbereichs
       * Wählen Sie die Registerkarte Komponenten (die [Komponenten-Browser](/help/sites-authoring/author-environment-tools.md#components-browser))
@@ -161,7 +159,7 @@ So bearbeiten Sie Ihre Seite:
    * [Inhalt einer vorhandenen Komponente bearbeiten](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) auf der Seite:
 
       * Öffnen Sie die Komponenten-Symbolleiste durch Tippen oder Klicken. Verwenden Sie die **Bearbeiten** (Bleistift), um das Dialogfeld zu öffnen.
-      * Öffnen Sie den Editor für die Bearbeitung an Ort und Stelle für die Komponente durch Tippen und Halten oder durch einen doppelten langsamen Klick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine begrenzte Auswahl).
+      * Öffnen Sie den Editor für die Bearbeitung an Ort und Stelle für die Komponente durch Tippen und Halten oder durch einen doppelten langsamen Klick. Die verfügbaren Aktionen werden angezeigt (bei einigen Komponenten ist dies eine eingeschränkte Auswahl).
       * Um alle verfügbaren Aktionen anzuzeigen, gehen Sie wie folgt in den Vollbildmodus:
 
      ![Vollbildmodus](do-not-localize/screen_shot_2018-03-21at160706.png)
@@ -201,7 +199,7 @@ So bearbeiten Sie Ihre Seite:
 
    >[!NOTE]
    >
-   >Verwenden Sie den [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode), wenn Sie mithilfe von Links im Inhalt navigieren möchten.
+   >Um mithilfe von Links im Inhalt zu navigieren, müssen Sie [Vorschaumodus](/help/sites-authoring/editing-content.md#preview-mode).
 
 ### Bearbeiten der Seiteneigenschaften {#editing-the-page-properties}
 
@@ -212,7 +210,7 @@ Es gibt zwei (wesentliche) Methoden für [Bearbeiten von Seiteneigenschaften](/h
    1. [Navigieren zur Seite](#finding-your-page) Sie veröffentlichen möchten.
    1. Wählen Sie die **Eigenschaften** Symbol aus:
 
-      * [Schnellaktionen (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die entsprechende Ressource.
+      * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
       * Symbolleiste, wenn die [Seite ausgewählt wurde](#selectiingyourpageforfurtheraction)
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
@@ -235,7 +233,7 @@ Es gibt zwei Hauptmethoden von [Veröffentlichen einer Seite](/help/sites-author
    1. [Navigieren zur Seite](#finding-your-page) Sie veröffentlichen möchten.
    1. Wählen Sie das Symbol **Quick Publish** aus, indem Sie wahlweise Folgendes verwenden:
 
-      * [Schnellaktionen (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die entsprechende Ressource.
+      * [Schnellzugriffe (nur Kartenansicht/Desktop)](#quick-actions-card-view-desktop-only) für die jeweilige Ressource
       * Symbolleiste, wenn die [Seite ausgewählt wurde](#selectiingyourpageforfurtheraction) (ermöglicht auch Zugriff auf [Später veröffentlichen](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
@@ -269,15 +267,15 @@ Diese Aktionen können alle durch Folgendes ausgelöst werden:
 
    * Kopieren:
 
-      * Navigieren Sie dann zum neuen Ort und fügen Sie die Seite ein.
+      * Navigieren Sie zum neuen Speicherort und fügen Sie ihn ein.
 
    * Verschieben:
 
-      * Der Assistent wird geöffnet, mit dem Sie die erforderlichen Informationen zum Verschieben der Seite erfassen. Befolgen Sie die Anweisungen auf dem Bildschirm.
+      * Der Assistent wird geöffnet, um die zum Verschieben der Seite erforderlichen Informationen zu sammeln. Befolgen Sie die Anweisungen auf dem Bildschirm.
 
    * Löschen:
 
-      * Sie werden aufgefordert, den Vorgang zu bestätigen.
+      * Sie werden aufgefordert, die Aktion zu bestätigen.
 
    >[!NOTE]
    >
@@ -288,7 +286,7 @@ Diese Aktionen können alle durch Folgendes ausgelöst werden:
 [Sperren einer Seite](/help/sites-authoring/editing-content.md#locking-a-page): Verhindert, dass andere Autoren daran arbeiten, während Sie dies tun. Das Symbol bzw. die Schaltfläche „Sperren“ (und „Entsperren“) ist verfügbar:
 
 * Symbolleiste, wenn die [Seite ausgewählt wurde](#selecting-your-page-for-further-action)
-* Dropdown-Menü [Seiteninformationen](#editing-the-page-properties) beim Bearbeiten einer Seite
+* Die [Dropdown-Menü &quot;Seiteninformationen&quot;](#editing-the-page-properties) beim Bearbeiten einer Seite.
 * Seitensymbolleiste beim Bearbeiten einer Seite (wenn die Seite gesperrt ist)
 
 Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
@@ -297,7 +295,7 @@ Beispielsweise sieht das Schloss-Symbol folgendermaßen aus:
 
 ### Zugreifen auf Seitenverweise {#accessing-page-references}
 
-[Schnellzugriff auf Verweise](/help/sites-authoring/author-environment-tools.md#references) von/zu einer Seite ist in der Verweisleiste verfügbar.
+[Schnellzugriff auf Verweise](/help/sites-authoring/author-environment-tools.md#references) zu einer Seite oder von einer Seite aus in der Verweisleiste verfügbar.
 
 1. Wählen Sie die Option **Verweise** mithilfe des Symbolleistensymbols (vor oder nach dem [Auswählen Ihrer Seite](#selecting-your-page-for-further-action)):
 
@@ -331,7 +329,7 @@ Beim Wiederherstellen und/oder Vergleichen von Seitenversionen wird dasselbe gru
 
    ![screen_shot_2018-03-21at161355-1](assets/screen_shot_2018-03-21at161355-1.png)
 
-   Wenn bereits eine Version der Seite gespeichert wurde, wird diese in der Zeitleiste aufgeführt.
+   Wenn eine Version Ihrer Seite bereits gespeichert wurde, wird sie in der Timeline aufgeführt.
 
 1. Tippen/klicken Sie auf die Version, die Sie wiederherstellen möchten. Dadurch werden zusätzliche Aktionsschaltflächen angezeigt:
 

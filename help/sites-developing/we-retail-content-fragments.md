@@ -10,16 +10,16 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+workflow-type: tm+mt
 source-wordcount: '452'
-ht-degree: 100%
+ht-degree: 90%
 
 ---
 
 # Testen von Inhaltsfragmenten in We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail** (in einer vorkonfigurierten Instanz von AEM) stellt das Fragment **Surfen in der Arktis auf den Lofoten** als einfaches Beispiel bereit. Dies verdeutlicht:
+Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail** (in einer vorkonfigurierten Instanz von AEM) stellt das Fragment **Surfen in der Arktis auf den Lofoten** als einfaches Beispiel bereit. Dies zeigt Folgendes:
 
 * Inhaltsfragmente für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen.
 
@@ -37,7 +37,7 @@ Die vollständige Dokumentation zum Erstellen, Verwalten, Nutzen und Entwickeln 
 >
 >**Inhaltsfragmente** und **[Experience Fragments](/help/sites-authoring/experience-fragments.md)** sind unterschiedliche Funktionen in AEM:
 >
->* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
+>* **Inhaltsfragmente** sind redaktionelle Inhalte, in erster Linie Text und zugehörige Bilder. Sie sind reine Inhalte ohne Design und Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
@@ -58,9 +58,9 @@ Sie können das Fragment **Surfen in der Arktis auf den Lofoten** auswählen und
 
 * [http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten](http://localhost:4502/editor.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten/arctic-surfing-in-lofoten)
 
-Hier können Sie Ihr Fragment anhand der Registerkarten (linkes Bedienfeld) [bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md):
+Hier können Sie [Bearbeiten und Verwalten](/help/assets/content-fragments/content-fragments.md) Ihr Fragment mithilfe der Registerkarten (linker Seitenbereich):
 
-<!--![](do-not-localize/cf-45-aa.png) ![](do-not-localize/cf-45-a.png) ASSET does not exist-->
+<!--![cf-45-aa](do-not-localize/cf-45-aa.png) ![cf-45-a](do-not-localize/cf-45-a.png) ASSET does not exist-->
 
 * **[Variationen](/help/assets/content-fragments/content-fragments-variations.md)** einschließlich [Markdown](/help/assets/content-fragments/content-fragments-markdown.md)
 * **[Zugehörige Inhalte](/help/assets/content-fragments/content-fragments-assoc-content.md)**
@@ -68,9 +68,9 @@ Hier können Sie Ihr Fragment anhand der Registerkarten (linkes Bedienfeld) [bea
 
 ![cf-46](assets/cf-46.png)
 
-## Verwendung von Inhaltsfragmenten in We.Retail {#where-content-fragments-are-used-in-we-retail}
+## wo Inhaltsfragmente in We.Retail verwendet werden {#where-content-fragments-are-used-in-we-retail}
 
-Unter folgendem Link finden Sie mehrere Beispiele zum Veranschaulichen der [Seitenerstellung mit einem Inhaltsfragment](/help/sites-authoring/content-fragments.md):
+Beispiel [Seitenbearbeitung mit einem Inhaltsfragment](/help/sites-authoring/content-fragments.md) Es gibt mehrere Beispielseiten, die unter bereitgestellt werden, z. B.:
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 

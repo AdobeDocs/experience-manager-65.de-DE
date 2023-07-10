@@ -5,10 +5,10 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 39930967e2f423b7fbbc79bcb85f78d15809e97d
+source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
 workflow-type: tm+mt
 source-wordcount: '1737'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 99%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets-view/integrations/workfront-connector-configure.html?lang=en) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 Ein Benutzer mit Adminzugriff in [!DNL Adobe Experience Manager] konfiguriert den erweiterten Connector nach der Installation. Anweisungen zur Installation finden Sie unter [Installieren des Connectors](/help/assets/workfront-integrations.md).
