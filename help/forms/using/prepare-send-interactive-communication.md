@@ -1,7 +1,7 @@
 ---
 title: Vorbereiten und Senden der interaktiven Kommunikation mithilfe der Agent-Benutzeroberfläche
 seo-title: Prepare and send Interactive Communication using the Agent UI
-description: Über die Benutzeroberfläche der Agenten können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
+description: Die Benutzeroberfläche für Agenten ermöglicht es den Agenten, interaktive Kommunikation vorzubereiten und an den Nachbearbeitungsprozess zu senden. Der Agent nimmt die erforderlichen Änderungen wie erlaubt vor und sendet die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
 seo-description: Prepare and send Interactive Communication using the Agent UI
 uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
-source-wordcount: '2021'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '2022'
+ht-degree: 82%
 
 ---
 
 # Vorbereiten und Senden der interaktiven Kommunikation mithilfe der Agent-Benutzeroberfläche {#prepare-and-send-interactive-communication-using-the-agent-ui}
 
-Über die Benutzeroberfläche der Agenten können die Agenten die interaktive Kommunikation vorbereiten und an den Nachbearbeitungsprozess senden. Der Agent nimmt die erforderlichen Änderungen vor und übergibt die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
+Die Benutzeroberfläche für Agenten ermöglicht es den Agenten, interaktive Kommunikation vorzubereiten und an den Nachbearbeitungsprozess zu senden. Der Agent nimmt die erforderlichen Änderungen wie erlaubt vor und sendet die interaktive Kommunikation an einen Nachbearbeitungsprozess, z. B. E-Mail oder Druck.
 
 ## Übersicht {#overview}
 
@@ -26,7 +26,7 @@ Nachdem eine interaktive Kommunikation erstellt wurde, kann der Agent die intera
 
 Beim Vorbereiten der interaktiven Kommunikation über die Agent-Benutzeroberfläche verwaltet der Agent die folgenden Aspekte der interaktiven Kommunikation in der Agent-Benutzeroberfläche, bevor er sie an einen Nachbearbeitungsprozess sendet:
 
-* **Daten**: Die Registerkarte „Daten“ der Benutzeroberfläche für Agenten zeigt alle vom Agenten bearbeitbaren Variablen und entsperrten Datenmodelleigenschaften in der interaktiven Kommunikation an. Diese Variablen/Eigenschaften werden beim Bearbeiten oder Erstellen von Dokumentfragmenten in der interaktiven Kommunikation erstellt. Die Registerkarte „Daten“ enthält auch alle Felder, die in der XDP/Druckkanalvorlage erstellt wurden. Die Registerkarte „Daten“ wird nur angezeigt, wenn Variablen, Formulardatenmodelleigenschaften oder Felder in der interaktiven Kommunikation vorhanden sind, die vom Agenten bearbeitet werden können.
+* **Daten**: Auf der Registerkarte &quot;Daten&quot;der Benutzeroberfläche für Agenten werden alle vom Agenten bearbeitbaren Variablen und entsperrten Formulardatenmodelleigenschaften in der interaktiven Kommunikation angezeigt. Diese Variablen/Eigenschaften werden beim Bearbeiten oder Erstellen von Dokumentfragmenten erstellt, die in der interaktiven Kommunikation enthalten sind. Die Registerkarte &quot;Daten&quot;enthält auch alle Felder, die in der XDP-/Druckkanalvorlage erstellt wurden. Die Registerkarte „Daten“ wird nur angezeigt, wenn Variablen, Formulardatenmodelleigenschaften oder Felder in der interaktiven Kommunikation vorhanden sind, die vom Agenten bearbeitet werden können.
 * **Inhalt**: Auf der Registerkarte „Inhalt“ verwalten Sie den Inhalt, z. B. Dokumentfragmente und die Inhaltsvariablen in der interaktiven Kommunikation. Der Agent kann die Änderungen im Dokumentfragment so vornehmen, wie dies beim Erstellen der interaktiven Kommunikation in den Eigenschaften dieser Dokumentfragmente zulässig ist. Der Agent kann auch ein Dokumentfragment neu anordnen, hinzufügen/entfernen und Seitenumbrüche hinzufügen, sofern dies zulässig ist.
 * **Anlagen**: Die Registerkarte „Anlagen“ wird nur dann in der Agent-Benutzeroberfläche angezeigt, wenn die interaktive Kommunikation Anlagen hat oder der Agent über Bibliothekszugriff verfügt. Der Agent darf die Anlagen ändern oder bearbeiten.
 
@@ -49,13 +49,13 @@ Beim Vorbereiten der interaktiven Kommunikation über die Agent-Benutzeroberflä
 
 ### Daten eingeben {#enter-data}
 
-1. Geben Sie auf der Registerkarte „Daten“ die erforderlichen Daten für Variablen, Formulardatenmodelleigenschaften und Druckvorlagenfelder (XDP) ein. Füllen Sie alle erforderlichen Felder (mit einem Sternchen (*) gekennzeichnet) aus, um die Schaltfläche **Senden** zu aktivieren.
+1. Geben Sie auf der Registerkarte &quot;Daten&quot;die Daten für Variablen, Formulardatenmodelleigenschaften und XDP-Felder (Druckvorlage) ein. Füllen Sie alle erforderlichen Felder (mit einem Sternchen (*) gekennzeichnet) aus, um die Schaltfläche **Senden** zu aktivieren.
 
    Tippen Sie auf einen Datenfeldwert in der Vorschau der interaktiven Kommunikation, um das entsprechende Datenfeld auf der Registerkarte „Daten“ hervorzuheben.
 
 ### Inhalt verwalten {#manage-content}
 
-Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfragmente und die Inhaltsvariablen in der interaktiven Kommunikation.
+Verwalten Sie auf der Registerkarte &quot;Inhalt&quot;den Inhalt wie Dokumentfragmente und Inhaltsvariablen in der interaktiven Kommunikation.
 
 1. Wählen Sie **[!UICONTROL Inhalt]**. Die Registerkarte „Inhalt“ der interaktiven Kommunikation wird angezeigt.
 
@@ -69,12 +69,13 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
    Auf der Registerkarte „Inhalt“ oder „Daten“ können Sie durch Tippen auf „Ausgewählte Module im Inhalt markieren“ (![highlightselectedmodulesincontentccr](assets/highlightselectedmodulesincontentccr.png)) links oben in der Vorschau eine Funktion aktivieren oder deaktivieren, die bewirkt, dass beim Klicken auf den relevanten Text oder Absatz bzw. das Datenfeld in der Vorschau das dazugehörige Inhalts-/Datenmodul aufgerufen wird.
 
-   Die Fragmente, die vom Agenten beim Erstellen der interaktiven Kommunikation bearbeitet werden dürfen, haben das Symbol „Ausgewählten Inhalt bearbeiten“ (![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Tippen Sie auf das Symbol „Ausgewählten Inhalt bearbeiten“, um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
+   Die Fragmente, die vom Agenten beim Erstellen der interaktiven Kommunikation bearbeitet werden dürfen, haben das Symbol „Ausgewählten Inhalt bearbeiten“ (![iconeditselectedcontent](assets/iconeditselectedcontent.png)). Tippen Sie auf das Symbol Ausgewählten Inhalt bearbeiten , um das Fragment im Bearbeitungsmodus zu starten und Änderungen daran vorzunehmen. Verwenden Sie die folgenden Optionen zum Formatieren und Verwalten von Text:
 
    * [Formatierungsoptionen](#formattingtext)
 
       * [Formatierten Text aus anderen Anwendungen kopieren/einfügen](#pasteformattedtext)
       * [Teile des Textes markieren](#highlightemphasize)
+
    * [Sonderzeichen](#specialcharacters)
    * [Tastaturbefehle](/help/forms/using/keyboard-shortcuts.md)
 
@@ -82,7 +83,7 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
 1. Um der Druckausgabe der interaktiven Kommunikation einen Seitenumbruch hinzuzufügen, tippen Sie auf die Stelle, an der Sie den Seitenumbruch einfügen möchten, und wählen Sie „Seitenumbruch vor“ oder „Seitenumbruch nach“ ( ![pagebreakbeforeafter](assets/pagebreakbeforeafter.png)).
 
-   Ein Platzhalter für einen expliziten Seitenumbruch wird in der interaktiven Kommunikation eingefügt. Sie können in der Druckvorschau anzeigen, wie sich ein expliziter Seitenumbruch auf die interaktive Kommunikation auswirkt.
+   Ein Platzhalter für einen expliziten Seitenumbruch wird in die interaktive Kommunikation eingefügt. Informationen dazu, wie sich ein expliziter Seitenumbruch auf die interaktive Kommunikation auswirkt, finden Sie in der Druckvorschau.
 
    ![explicitpagebreak](assets/explicitpagebreak.png)
 
@@ -109,7 +110,7 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt, z. B. Dokumentfrag
 
 ## Text formatieren {#formattingtext}
 
-Beim Bearbeiten eines Textfragments in der Benutzeroberfläche für Agenten ändert sich die Symbolleiste abhängig vom Typ der von Ihnen vorgenommenen Änderungen: Schriftart, Absatz oder Liste:
+Beim Bearbeiten eines Textfragments in der Benutzeroberfläche des Agenten ändert sich die Symbolleiste je nach dem Typ der Änderungen, die Sie vornehmen: Schrift, Absatz oder Liste:
 
 ![typeofformattingtoolbar](assets/typeofformattingtoolbar.png) ![Schrift-Symbolleiste](do-not-localize/fonttoolbar.png)
 
@@ -123,9 +124,9 @@ Absatz-Symbolleiste
 
 Listen-Symbolleiste
 
-### Teile des Textes markieren/hervorheben {#highlightemphasize}
+### Teile von Text hervorheben/hervorheben {#highlightemphasize}
 
-Um Teile eines Textes in einem bearbeitbaren Fragment hervorzuheben, wählen Sie den Text aus und tippen Sie auf „Hervorhebungsfarbe“.
+Um Textteile in einem bearbeitbaren Fragment hervorzuheben bzw. hervorzuheben, wählen Sie den Text aus und tippen Sie auf Farbe hervorheben.
 
 ![highlighttextagentui](assets/highlighttextagentui.png)
 
@@ -135,21 +136,21 @@ Um Teile eines Textes in einem bearbeitbaren Fragment hervorzuheben, wählen Sie
 
 ### Sonderzeichen in Text einfügen {#specialcharacters}
 
-Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung hinzufügen](/help/forms/using/custom-special-characters.md).
+Die Benutzeroberfläche für Agenten bietet integrierte Unterstützung für 210 Sonderzeichen. Der Administrator kann [Unterstützung für mehr/benutzerdefinierte Sonderzeichen durch Anpassung hinzufügen](/help/forms/using/custom-special-characters.md).
 
 #### Anlagenübermittlung {#attachmentdelivery}
 
 * Wenn die interaktive Kommunikation mit serverseitigen APIs als interaktive oder nicht interaktive PDF gerendert wird, enthält die gerenderte PDF-Datei Anlagen im PDF-Format.
 * Wenn ein mit einer interaktiven Kommunikation verknüpfter Nachbearbeitungsprozess als Teil der Option „Senden mit Benutzeroberfläche für Agenten“ geladen wird, werden Anlagen als List&lt;com.adobe.idp.Document> im AttachmentDocs-Parameter weitergeleitet.
-* Vordefinierte Übermittlungsmechanismen, wie z. B. E-Mail und Drucken, übermitteln auch Anlagen zusammen mit einer PDF-Datei der interaktiven Kommunikation.
+* Bereitstellungsmechanismus-Workflows, wie E-Mail und Druck, übermitteln Anhänge zusammen mit der PDF-Version der interaktiven Kommunikation.
 
-## Aktionen und Informationen, die auf der Benutzeroberfläche für Agenten verfügbar sind {#actionsagentui}
+## Auf der Benutzeroberfläche &quot;Agent&quot;verfügbare Aktionen und Informationen {#actionsagentui}
 
 ### Dokumentfragmente {#document-fragments}
 
-![](do-not-localize/contentoptionsdocfragments.png)
+![document-fragments-ui-operations](do-not-localize/contentoptionsdocfragments.png)
 
-* **Pfeile nach oben bzw. nach unten**: Pfeile zum Verschieben von Dokumentenfragmenten nach unten oder oben in der interaktiven Kommunikation.
+* **Nach-oben-/Nach-unten-Pfeile**: Pfeile zum Verschieben von Dokumentfragmenten in der interaktiven Kommunikation nach oben oder unten.
 * **Löschen**: Wenn zulässig, löschen Sie das Dokumentfragment aus der interaktiven Kommunikation.
 * **Seitenumbruch vor** (anwendbar für untergeordnete Fragmente des Zielbereichs): Fügt Seitenumbruch vor dem Dokumentfragment ein.
 * **Einzug:** Einzug eines Dokumentenfragments vergrößern oder verkleinern.
@@ -162,7 +163,7 @@ Die Benutzeroberfläche für Agenten enthält integrierte Unterstützung für 21
 * Auswahl (Augensymbol): Schließt Dokumentfragmente in die interaktive Kommunikation ein bzw. schließt sie daraus aus.
 * Nicht ausgefüllte Werte (Info): Gibt die Anzahl der nicht ausgefüllten Variablen im Dokumentfragment an.
 
-### Listendokumentfragmente {#list-document-fragments}
+### Dokumentfragmente auflisten {#list-document-fragments}
 
 ![listoptions](assets/listoptions.png)
 
@@ -324,20 +325,20 @@ In der folgenden Tabelle wird das Beispiel einer `ccrDocumentInstance`-SPI-Imple
   <td><p><strong>Beispiele für Datenbank-Services</strong></p></td> 
    </tr>
   <tr>
-   <td><p>Sie können einen Entwurf für eine interaktive Kommunikation entweder erstellen oder ihn direkt senden. Die API für den Speichervorgang prüft, ob die interaktive Kommunikation als Entwurf übermittelt wird, und sie enthält einen Entwurfsnamen. Die API ruft dann den Service mySQLDataBaseServiceCRUD mit „Speichern“ als Eingabemethode auf.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
-   <td><p>Der Service mySQLDataBaseServiceCRUD überprüft „Speichern“ als Eingabemethode, erzeugt eine automatisch generierte Entwurfs-ID und gibt sie an AEM zurück. Die Logik zum Erzeugen einer Entwurfs-ID kann je nach Datenbank variieren.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   <td><p>Sie können einen Entwurf für eine interaktive Kommunikation entweder erstellen oder ihn direkt senden. Die API für den Speichervorgang prüft, ob die interaktive Kommunikation als Entwurf übermittelt wird, und sie enthält einen Entwurfsnamen. Die API ruft dann den Service mySQLDataBaseServiceCRUD mit „Speichern“ als Eingabemethode auf.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
+   <td><p>Der Service mySQLDataBaseServiceCRUD überprüft „Speichern“ als Eingabemethode, erzeugt eine automatisch generierte Entwurfs-ID und gibt sie an AEM zurück. Die Logik zum Erzeugen einer Entwurfs-ID kann je nach Datenbank variieren.</p></br><img src="assets/save-operation-service.png"/></td>
    </tr>
   <tr>
-   <td><p>Die API für den Aktualisierungsvorgang ruft den Status des Entwurfs der interaktiven Kommunikation ab und prüft, ob die interaktive Kommunikation einen Entwurfsnamen enthält. Die API ruft den Service mySQLDataBaseServiceCRUD auf, um diesen Status in der Datenbank zu aktualisieren.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>Die API für den Aktualisierungsvorgang ruft den Status des Entwurfs der interaktiven Kommunikation ab und prüft, ob die interaktive Kommunikation einen Entwurfsnamen enthält. Die API ruft den Service mySQLDataBaseServiceCRUD auf, um diesen Status in der Datenbank zu aktualisieren.</p></br><img src="assets/save-as-draft-update-operation.png"/></td>
    <td><p>Der Service mySQLDataBaseServiceCRUD überprüft „Aktualisieren“ als Eingabemethode und speichert den Status des Entwurfs der interaktiven Kommunikation in der Datenbank.</br></p><img src="assets/update-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>Die API für den GET-Vorgang prüft, ob die interaktive Kommunikation eine Entwurfs-ID enthält. Die API ruft dann den Service mySQLDataBaseServiceCRUD mit GET als Eingabemethode auf, um die Daten für die interaktive Kommunikation abzurufen.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
-   <td><p>Der Service mySQLDataBaseServiceCRUD überprüft GET als Eingabemethode und ruft die Daten für die interaktive Kommunikation basierend auf der Entwurfs-ID ab.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   <td><p>Der Service mySQLDataBaseServiceCRUD überprüft GET als Eingabemethode und ruft die Daten für die interaktive Kommunikation basierend auf der Entwurfs-ID ab.</p></br><img src="assets/get-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>Die API für den Vorgang getAll ruft den Service mySQLGetALLData auf, um Daten für alle in der Datenbank gespeicherten interaktiven Kommunikationen abzurufen.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
-   <td><p>Der Service mySQLGetALLData ruft Daten für alle in der Datenbank gespeicherten interaktiven Kommunikationen ab.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   <td><p>Der Service mySQLGetALLData ruft Daten für alle in der Datenbank gespeicherten interaktiven Kommunikationen ab.</p></br><img src="assets/getall-operation-service.png"/></td>
    </tr>
   </tbody>
 </table>

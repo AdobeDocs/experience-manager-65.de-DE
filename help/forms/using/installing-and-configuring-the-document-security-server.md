@@ -8,10 +8,10 @@ contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
-source-wordcount: '606'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '610'
+ht-degree: 87%
 
 ---
 
@@ -19,11 +19,11 @@ ht-degree: 100%
 
 Mithilfe von Dokumentensicherheit können Sie Informationen sicher verteilen, die Sie in einem unterstützten Format gespeichert haben. Nur autorisierte Benutzer können auf geschützte Dokumente zugreifen.
 
-Document Security stellt sicher, dass Ihre Dokumente nur von autorisierten Benutzern genutzt werden können. Mithilfe von Document Security können Sie Informationen sicher verteilen, die Sie in einem unterstützten Format gespeichert haben. Unterstützte Dateiformate beinhalten Adobe Portable Document Format (PDF) sowie Microsoft Word-, Excel- und PowerPoint-Dateien.
+Adobe Experience Manager Forms Document Security stellt sicher, dass nur autorisierte Benutzer Ihre Dokumente verwenden können. Mithilfe von Document Security können Sie Informationen, die Sie in einem unterstützten Format gespeichert haben, sicher verteilen. Zu den unterstützten Dateiformaten gehören Adobe Portable Document Format (PDF) sowie Microsoft Word-, Excel- und PowerPoint-Dateien.
 
-Sie können Dokumente durch Richtlinien schützen. Die Vertraulichkeitseinstellungen, die Sie in einer Richtlinie angeben, bestimmen, wie ein Empfänger ein Dokument nutzen darf, auf das Sie die Richtlinie anwenden. Sie können beispielsweise angeben, ob Empfänger Folgendes dürfen: Text drucken, kopieren oder bearbeiten, geschützten Dokumenten Signaturen und Kommentare hinzufügen.
+Sie können Dokumente mithilfe von Richtlinien schützen. Die Vertraulichkeitseinstellungen, die Sie in einer Richtlinie angeben, bestimmen, wie ein Empfänger ein Dokument verwenden kann, auf das Sie die Richtlinie anwenden. Sie können beispielsweise angeben, ob Empfängerinnen und Empfänger Text drucken oder kopieren, Text bearbeiten oder geschützten Dokumenten Signaturen und Kommentare hinzufügen können.
 
-Die Richtlinien werden zwar auf dem Document Security-Server gespeichert, Sie wenden sie jedoch über Ihre Client-Anwendung auf Dokumente an. Wenn Sie eine Richtlinie auf ein Dokument anwenden, werden die in der Datei enthaltenen Informationen durch die in der Richtlinie angegebenen Vertraulichkeitseinstellungen geschützt. Sie können das richtliniengeschützte Dokument an Empfänger verteilen, die durch die Richtlinie autorisiert sind.
+Die Richtlinien werden auf dem Document Security-Server gespeichert. Sie wenden die Richtlinien über Ihre Clientanwendung auf Dokumente an. Wenn Sie eine Richtlinie auf ein Dokument anwenden, schützen die in der Richtlinie angegebenen Vertraulichkeitseinstellungen die Informationen, die das Dokument enthält. Sie können das richtliniengeschützte Dokument an Empfängerinnen und Empfänger verteilen, die durch die Richtlinie autorisiert sind.
 
 Dokumentensicherheit bietet außerdem Clients, Viewer und Indexer zum Schützen von Dokumenten, zum Anzeigen geschützter Dokumente und zum Indizieren geschützter Dokumente. Ausführliche Informationen zu Dokumentensicherheit finden Sie unter [Über Dokumentensicherheit](/help/forms/using/admin-help/document-security.md).
 
@@ -33,7 +33,7 @@ Die Funktion Dokumentensicherheit ist nur in AEM Forms auf JEE verfügbar. Sie b
 
 <!--fix above link-->
 
-![](do-not-localize/document-security-server_topology.png)
+![Document Security-Servertopologie](do-not-localize/document-security-server_topology.png)
 
 Die folgende Abbildung zeigt die typische Architektur für AEM Forms Document Security:
 

@@ -1,17 +1,17 @@
 ---
 title: '„Tutorial: Erstellen eines adaptiven Formulars“'
 seo-title: Create an adaptive form
-description: Lernen Sie, ein adaptives Formular zu erstellen, zu gestalten und in der Vorschau anzuzeigen. Informieren Sie sich auch über das Konfigurieren von Sendeaktionen.
+description: Erfahren Sie, wie Sie ein adaptives Formular erstellen, anordnen und in der Vorschau anzeigen. Erfahren Sie auch, wie Sie Sendeaktionen konfigurieren.
 seo-description: Learn to create, layout, and preview an adaptive form. Also, learn to configure submit actions.
 page-status-flag: de-activated
 uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '1376'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '1380'
+ht-degree: 74%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 100%
 
 ![02-create-adaptive-form-main-image](assets/02-create-adaptive-form-main-image.png)
 
-Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives Formular](/help/forms/using/create-your-first-adaptive-form.md). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Dieses Tutorial ist ein Teil der Serie [Erstellen Ihres ersten adaptives Formulars](/help/forms/using/create-your-first-adaptive-form.md). Es wird empfohlen, die Serie in chronologischer Reihenfolge zu durchlaufen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, durchzuführen und zu demonstrieren.
 
-## Über die Schulung {#about-the-tutorial}
+## Über das Tutorial {#about-the-tutorial}
 
 Adaptive Formulare sind Formulare der neuen Generation, die dynamisch und responsiv sind. Sie können adaptive Formulare verwenden, um ein personalisiertes Benutzererlebnis zu schaffen. Außerdem können Sie adaptive Formulare mit [!DNL Adobe Analytics] für Nutzungsstatistiken und mit [!DNL Adobe Campaign] für das Kampagnen-Management integrieren. Weitere Informationen zu den Funktionen adaptiver Formulare finden Sie unter [Einführung in das Bearbeiten adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md).
 
@@ -35,7 +35,7 @@ Es ist einfacher, Formulare zu erstellen und zu verwalten, wenn ein ordnungsgem�
 * [Anzeigen und Senden eines adaptiven Formulars in der Vorschau](/help/forms/using/create-adaptive-form.md)
 
 Am Ende des Artikels haben Sie ein Formular, was so ähnlich wie Folgendes aussieht:\
-[![](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
+[![Formularvorschau auf einem Mobilgerät](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
 
 ## Schritt 1: Adaptives Formular erstellen {#step-create-the-adaptive-form}
 
@@ -45,24 +45,24 @@ Am Ende des Artikels haben Sie ein Formular, was so ähnlich wie Folgendes aussi
 1. Eine Option **[!UICONTROL Eigenschaften hinzufügen]** wird angezeigt. Die Felder **[!UICONTROL Titel]** und **[!UICONTROL Name]** sind obligatorisch.
 
    * **Titel:** Geben Sie `Add new or update shipping address` im Feld **[!UICONTROL Titel]** an. Das Feld „Titel“: Gibt den Anzeigenamen des Formulars an. Der Titel erleichtert Ihnen die Identifizierung des Formulars in der Benutzeroberfläche von AEM [!DNL Forms].
-   * **Name:** Geben Sie `shipping-address-add-update-form` in das Feld **[!UICONTROL Name]** ein. Das Feld „Name“ gibt den Namen des Formulars an. Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Ungültige Eingaben werden durch Bindestriche ersetzt.
+   * **Name:** Geben Sie `shipping-address-add-update-form` in das Feld **[!UICONTROL Name]** ein. Das Feld Name gibt den Namen des Formulars an. Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Alle ungültigen Eingaben werden durch Bindestriche ersetzt.
 
-1. Tippen Sie auf **[!UICONTROL Erstellen]**. Ein adaptives Formular wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Tippen Sie auf **[!UICONTROL Öffnen]**, um das neu erstellte Formular in einer neuen Registerkarte zu öffnen. Das Formular wird zur Bearbeitung geöffnet. Es zeigt auch die Seitenleiste an, um das neu erstellte Formular entsprechend den Anforderungen anzupassen.
+1. Tippen Sie auf **[!UICONTROL Erstellen]**. Ein adaptives Formular wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Tippen Sie auf **[!UICONTROL Öffnen]**, um das neu erstellte Formular in einer neuen Registerkarte zu öffnen. Das Formular wird zur Bearbeitung geöffnet. Er zeigt auch die Seitenleiste an, um das neu erstellte Formular entsprechend den Anforderungen anzupassen.
 
-   Weitere Informationen zur Authoring-Benutzeroberfläche für adaptive Formulare und zu verfügbaren Komponenten finden Sie unter [Einführung in das Authoring adaptiver Formulare](/help/forms/using/creating-adaptive-form.md).
+   Informationen zur Authoring-Oberfläche für adaptive Formulare und zu verfügbaren Komponenten finden Sie unter [Einführung in das Authoring adaptiver Formulare](/help/forms/using/creating-adaptive-form.md).
 
    ![newly-created-adaptive-form](assets/newly-created-adaptive-form.png)
 
 ## Schritt 2: Kopf- und Fußzeile hinzufügen {#step-add-header-and-footer}
 
-AEM [!DNL Forms] bietet viele Komponenten zum Anzeigen von Informationen in einem adaptiven Formular. Kopfzeilen- und Fußzeilen-Komponenten sorgen für ein konsistentes Erscheinungsbild eines Formulars. Eine Kopfzeile enthält normalerweise das Logo eines Unternehmens, den Titel des Formulars und eine Zusammenfassung. Eine Fußzeile enthält meist Copyright-Informationen und Links zu anderen Seiten.
+AEM [!DNL Forms] bietet viele Komponenten zum Anzeigen von Informationen in einem adaptiven Formular. Die Kopf- und Fußzeilenkomponenten ermöglichen ein einheitliches Erscheinungsbild des Formulars. Eine Kopfzeile enthält normalerweise das Logo eines Unternehmens, den Titel des Formulars und die Zusammenfassung. Eine Fußzeile enthält meist Copyright-Informationen und Links zu anderen Seiten.
 
 1. Tippen Sie auf ![toggle-side-panel](assets/toggle-side-panel.png) > ![treeexpandall](assets/treeexpandall.png). Der Komponentenbrowser wird geöffnet. Ziehen Sie die Komponente **[!UICONTROL Kopfzeile]** aus dem Komponentenbrowser in das adaptive Formular.
-1. Tippen Sie auf **[!UICONTROL Logo]**. Der Symbolleiste wird angezeigt. Tippen Sie in der Werkzeugleiste auf ![aem_6_3_edit](assets/aem_6_3_edit.png). Geben Sie **We.Retail** ein und tippen Sie anschließend auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tippen **[!UICONTROL Logo]**. Die Symbolleiste wird angezeigt. Tippen Sie in der Werkzeugleiste auf ![aem_6_3_edit](assets/aem_6_3_edit.png). Geben Sie **We.Retail** ein und tippen Sie anschließend auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-1. Tippen Sie auf „Bild“. Der Symbolleiste wird angezeigt. Tippen Sie auf ![cmppr](assets/cmppr.png). Der Eigenschaften-Browser wird auf der linken Seite des Bildschirms geöffnet. **[!UICONTROL Suchen Sie]** das Logo und laden Sie es hoch. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). Das Bild erscheint in der Kopfzeile.
+1. Tippen Sie auf Bild. Die Symbolleiste wird angezeigt. Tippen Sie auf ![cmppr](assets/cmppr.png). Der Eigenschaften-Browser wird auf der linken Seite des Bildschirms geöffnet. **[!UICONTROL Suchen Sie]** das Logo und laden Sie es hoch. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). Das Bild wird in der Kopfzeile angezeigt.
 
-   Sie können auf „Datei abrufen“ tippen, um das in diesem Artikel verwendete Logo herunterzuladen, falls Sie keines haben.
+   Sie können auf Datei laden tippen, um das in diesem Artikel verwendete Logo herunterzuladen, wenn Sie keines haben.
 
 [Datei laden](assets/logo.png)
 
@@ -75,7 +75,7 @@ AEM [!DNL Forms] bietet viele Komponenten zum Anzeigen von Informationen in eine
 Komponenten sind Bausteine &#x200B;&#x200B;eines adaptiven Formulars. AEM [!DNL Forms] bietet viele Komponenten zum Erfassen und Anzeigen von Informationen in einem adaptiven Formular. Sie können die Komponenten von ![treeexpandall](assets/treeexpandall.png) in ein Formular ziehen. Informationen zu verfügbaren Komponenten und entsprechenden Funktionen finden Sie in [Einführung in die Bearbeitung von adaptiven Formularen](/help/forms/using/introduction-forms-authoring.md). 
 
 1. Ziehen Sie die **[!UICONTROL numerische Feldkomponente]** in das adaptive Formular. Platzieren Sie sie vor der Fußzeilenkomponente. Öffnen Sie die Eigenschaften der Komponente. Ändern Sie den **[!UICONTROL Titel]** der Komponente in **`Customer ID`** und den **[!UICONTROL Elementnamen]** in **`customer_ID`**. Aktivieren Sie die Option **[!UICONTROL Erforderliches Feld]**, aktivieren Sie die Option **[!UICONTROL HTML5-Zahleneingabetyp verwenden]** und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
-1. Ziehen Sie drei Textfeldkomponenten in das adaptive Formular. Platzieren Sie diese vor die Fußzeilenkomponente. Legen Sie die folgenden Eigenschaften für diese Textfelder fest:
+1. Ziehen Sie drei Textfeldkomponenten in das adaptive Formular. Platzieren Sie diese vor der Fußzeilenkomponente. Legen Sie die folgenden Eigenschaften für diese Textfelder fest.:
 
    <table> 
     <tbody> 
@@ -120,7 +120,7 @@ Komponenten sind Bausteine &#x200B;&#x200B;eines adaptiven Formulars. AEM [!DNL 
    | Elementname | customer_ZIPCode |
    | Maximale Anzahl von Ziffern | 6 |
    | Erforderliches Feld | Aktiviert |
-   | Mustertyp anzeigen | Kein Muster |
+   | Anzeigemuster Typ | Kein Muster |
 
 1. Ziehen Sie eine **[!UICONTROL E-Mail]**-Komponente vor die Fußzeilenkomponente. Öffnen Sie die Eigenschaften der Komponente, legen Sie die in der folgenden Tabelle aufgeführen Werte fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -130,7 +130,7 @@ Komponenten sind Bausteine &#x200B;&#x200B;eines adaptiven Formulars. AEM [!DNL 
    | Elementname | customer_Email |
    | Erforderliches Feld | Aktiviert |
 
-1. Ziehen Sie eine **[!UICONTROL Dateianhang]**-Komponente vor die Fußzeilenkomponente. Öffnen Sie die Eigenschaften der Komponente, legen Sie die in der folgenden Tabelle aufgeführen Werte fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Ziehen Sie eine **[!UICONTROL Dateianhang]** -Komponente vor der Fußzeilenkomponente. Öffnen Sie die Eigenschaften der Komponente, legen Sie die in der folgenden Tabelle aufgeführen Werte fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
    <table> 
     <tbody> 
@@ -153,13 +153,13 @@ Komponenten sind Bausteine &#x200B;&#x200B;eines adaptiven Formulars. AEM [!DNL 
     </tbody> 
    </table>
 
-1. Ziehen Sie eine **[!UICONTROL Sendeschaltfläche]**-Komponente in das adaptive Formular. Platzieren Sie sie vor der Fußzeilenkomponente. Öffnen Sie die Eigenschaften der Komponente und ändern Sie den Elementnamen in `address_addition_update_submit`. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). Das Layout des Formulars ist vollständig und das Formular sieht wie folgt aus:
+1. Ziehen Sie eine **[!UICONTROL Senden-Schaltfläche]** -Komponente in das adaptive Formular ein. Platzieren Sie sie vor der Fußzeilenkomponente. Öffnen Sie die Eigenschaften der Komponente und ändern Sie den Elementnamen in `address_addition_update_submit`. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png). Das Layout des Formulars ist vollständig und das Formular sieht wie folgt aus:
 
    ![adaptive-form-with-all-the-components](assets/adaptive-form-with-all-the-components.png)
 
-## Schritt 4: Sendeaktion für das adaptive Formular konfigurieren {#step-configure-submit-action-for-the-adaptive-form}
+## Schritt 4: Konfigurieren der Sendeaktion für das adaptive Formular {#step-configure-submit-action-for-the-adaptive-form}
 
-Eine Sendeaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche „Senden“ klickt. Sie können eine Sendeaktion verwenden, um Formulardaten im lokalen Repository zu speichern, Formulardaten an einen REST-Endpunkt zu senden, Formulardaten als E-Mail zu senden und mehr. Adaptive Formulare bieten einige weitere vordefinierte Übermittlungsaktionen. Weitere Informationen finden Sie unter [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md).
+Eine Übermittlungsaktion wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche &quot;Senden&quot;tippt. Sie können eine Übermittlungsaktion verwenden, um Formulardaten in das lokale Repository zu speichern, Formulardaten an einen REST-Endpunkt zu senden, Formulardaten als E-Mail zu senden und vieles mehr. Adaptive Formulare bieten einige weitere vordefinierte Übermittlungsaktionen. Detaillierte Informationen finden Sie unter [Konfigurieren der Sendeaktion](/help/forms/using/configuring-submit-actions.md).
 
 Mit den folgenden Schritten können Sie die E-Mail-Sendeaktion und die Demo-Sendeaktion des Formulars konfigurieren:
 
@@ -177,16 +177,16 @@ Mit den folgenden Schritten können Sie die E-Mail-Sendeaktion und die Demo-Send
    | E-Mail-Vorlage | Hallo `${customer_Name}`, die folgende Adresse wurde als Lieferadresse für Ihr Konto hinzugefügt: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Mit freundlichen Grüßen, We.Retail |
    | Anlagen einschließen | Aktiviert |
 
-   Ihr Formular ist jetzt bereit. Jetzt können Sie das Formular in der Vorschau anzeigen und die Funktionalität testen. Wenn Sie den im Tutorial genannten Namen verwendet haben und das Formular auf dem Rechner mit dem AEM [!DNL Forms]-Server aufrufen, dann ist das Formular unter [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html) verfügbar.
+   Ihr Formular ist fertig. Jetzt können Sie eine Vorschau des Formulars anzeigen und die Funktionalität testen. Wenn Sie den im Tutorial genannten Namen verwendet haben und das Formular auf dem Rechner mit dem AEM [!DNL Forms]-Server aufrufen, dann ist das Formular unter [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html) verfügbar.
 
 ## Schritt 5: Adaptives Formular in der Vorschau ansehen und senden {#step-preview-and-submit-the-adaptive-form}
 
-Sie können die Option **[!UICONTROL Vorschau]** verwenden, um das Erscheinungsbild und Verhalten eines Formulars zu bewerten. Sie können ein Formular im Vorschaumodus senden und auch die für ein Formular geltenden Validierungen prüfen. Zum Beispiel, wenn ein Fehler angezeigt wird, weil ein Pflichtfeld leer ist.
+Sie können die Option **[!UICONTROL Vorschau]** verwenden, um das Erscheinungsbild und Verhalten eines Formulars zu bewerten. Sie können ein Formular im Vorschaumodus senden und auch auf ein Formular angewendete Validierungen überprüfen. Wenn beispielsweise ein Fehler angezeigt wird, wenn ein Pflichtfeld leer gelassen wird.
 
-Adaptive Formulare bieten auch eine Option zum Emulieren des Benutzererlebnisses bei einem Formular für verschiedene Geräte. Beispiel: iPhone, iPad und Desktop. Sie können die beiden Optionen **[!UICONTROL Vorschau]** und **[!UICONTROL Emulator]**-![Lineal](assets/ruler.png) in Verbindung miteinander verwenden, um eine Vorschau eines Formulars für Geräte mit unterschiedlichen Bildschirmgrößen anzuzeigen.
+Adaptive Formulare bieten auch eine Option zum Emulieren von Erlebnissen eines Formulars für verschiedene Geräte. Beispiel: iPhone, iPad und Desktop. Sie können die beiden Optionen **[!UICONTROL Vorschau]** und **[!UICONTROL Emulator]**-![Lineal](assets/ruler.png) in Verbindung miteinander verwenden, um eine Vorschau eines Formulars für Geräte mit unterschiedlichen Bildschirmgrößen anzuzeigen.
 
 1. Tippen Sie auf die Option **[!UICONTROL Vorschau]** auf der rechten Seite des Formulareditors. Das Formular wird im Bearbeitungsmodus geöffnet. Wenn Sie den Namen verwendet haben, der in der Schulung benutzt wird, dann lautet die Vorschau-URL des Formulars [http://localhost:4502/content/dam/formsanddocuments/shipping-address-add-update-form/jcr:content?wcmmode=disabled](http://localhost:4502/content/dam/formsanddocuments/shipping-address-addition-updation-form/jcr:content?wcmmode=disabled)
 1. Verwenden Sie ![Lineal](assets/ruler.png), um zu sehen, wie das Formular auf verschiedenen Geräten aussieht.
-1. Füllen Sie die Felder des Formulars aus und tippen Sie auf **[!UICONTROL Senden]**. Das Formular wird gesendet und Sie werden zur standardmäßigen **Dankeseite** weitergeleitet. Sie können auch eine benutzerdefinierte Danke-Seite angeben. Einzelheiten finden Sie unter [Konfigurieren der Weiterleitungsseite](/help/forms/using/configuring-redirect-page.md).
+1. Füllen Sie die Felder des Formulars aus und tippen Sie auf **[!UICONTROL Einsenden]**. Das Formular wird gesendet und Sie werden zur Standardeinstellung weitergeleitet **Vielen Dank** Seite. Sie können auch eine benutzerdefinierte Dankeseite angeben. Einzelheiten finden Sie unter [Konfigurieren der Weiterleitungsseite](/help/forms/using/configuring-redirect-page.md).
 
 Das adaptive Formular zum Hinzufügen einer Adresse ist fertig. Wenn Sie den im Tutorial genannten Namen verwendet haben und auf das Formular auf dem Computer zugreifen, auf dem der AEM Forms-Server ausgeführt wird, ist das Formular unter [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html) verfügbar.

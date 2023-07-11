@@ -10,18 +10,18 @@ discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '936'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 99%
 
 ---
 
 # Tutorial: Veröffentlichen des adaptiven Formulars {#tutorial-publish-your-adaptive-form}
 
-![](do-not-localize/13-publish-your-adaptive-form-small.png)
+![Hero-Image](do-not-localize/13-publish-your-adaptive-form-small.png)
 
-Diese Schulung ist ein Schritt in der Serie [Erstellen Sie Ihr erstes adaptives Formular](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Dieses Tutorial ist ein Teil der Serie [Erstellen Ihres ersten adaptives Formulars](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Es wird empfohlen, die Serie in chronologischer Reihenfolge zu durchlaufen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, durchzuführen und zu demonstrieren.
 
 Nachdem das adaptive Formular bereit ist, können Sie das Formular veröffentlichen, um es für Endbenutzer verfügbar zu machen. Die Endbenutzer können das veröffentlichte Formular auf jedem Gerät und in jedem Internet-Browser öffnen. Wenn ein adaptives Formular veröffentlicht wird, werden das Formular und der zugehörige Inhalt aus einer AEM-Autoreninstanz in eine AEM-Veröffentlichungsinstanz kopiert. Das Formular wird dem Endbenutzer über die Veröffentlichungsinstanz zur Verfügung gestellt.
 
@@ -69,7 +69,8 @@ AEM [!DNL Forms] bietet eine Komponente, AEM [!DNL Forms]-Container, zum Einbett
    * Wenn Sie nur das eingebettete Formular in einer veröffentlichte Site-Seite geändert haben, veröffentlichen Sie das Originalformular, und die Änderungen werden auf der veröffentlichten Site-Seite übernommen. Die veröffentliche Siteseite enthält einen Verweis auf das Formular ein und erfordert kein erneutes Veröffentlichen der Seite.
    * Wenn Sie die [!DNL Sites]-Seite und das eingebettete Formular geändert haben, veröffentlichen Sie die [!DNL Sites]-Seite und das Formular erneut.
 
-      ![embed-in-aem-sites](assets/embed-in-aem-sites.png)
+     ![embed-in-aem-sites](assets/embed-in-aem-sites.png)
+
    Formular zur Änderung der Versand- und Rechnungsadresse zu einer AEM [!DNL Sites]-Seite hinzugefügt.
 
 ## Einbetten des adaptiven Formulars in eine externe Web-Seite {#embed-the-adaptive-form-in-an-external-webpage}

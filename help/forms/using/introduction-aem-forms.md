@@ -1,7 +1,7 @@
 ---
 title: Einführung in AEM Forms
 seo-title: Introduction to AEM Forms
-description: Mit Adobe Experience Manager Forms können Benutzer interessante, reaktionsfähige und adaptive Formulare in Web- und mobile Sites integrieren, die digitale Registrierung vereinfachen und Kundenkonversionsraten erhöhen.
+description: Mit Adobe Experience Manager Forms können Geschäftsbenutzer ansprechende, responsive und adaptive Formulare in Web- und mobile Sites integrieren, den Prozess der digitalen Registrierung vereinfachen und die Konversionsraten von Kunden erhöhen.
 seo-description: With Adobe Experience Manager Forms, business users can integrate engaging, responsive, and adaptive forms into web and mobile sites, simplifying the digital enrollment process and increasing customer conversion rates.
 uuid: a6564997-4227-4d5d-b27d-47a55a386238
 content-type: reference
@@ -11,59 +11,59 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '891'
-ht-degree: 100%
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+workflow-type: tm+mt
+source-wordcount: '894'
+ht-degree: 26%
 
 ---
 
 # Einführung in AEM Forms{#introduction-to-aem-forms}
 
-Informationen zu neuesten Funktionen und Verbesserungen in AEM Forms finden Sie unter [Neue Funktionen in AEM Forms](../../forms/using/whats-new.md).
+Informationen zu den neuesten Funktionen und Verbesserungen in AEM Forms finden Sie unter [Neue Funktionen in AEM Forms](../../forms/using/whats-new.md).
 
-## Info zu AEM Forms {#about-aem-forms}
+## Über AEM Forms {#about-aem-forms}
 
-Adobe Experience Manager (AEM) ist eine benutzerfreundliche Lösung, mit der Sie komplexe digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren und dabei in Back-End-Prozesse, Geschäftsregeln und Daten integrieren können.
+Adobe Experience Manager (AEM) ist eine benutzerfreundliche Lösung, mit der Sie komplexe digitale Formulare erstellen, verwalten, veröffentlichen und aktualisieren und dabei in Backend-Prozesse, Geschäftsregeln und Daten integrieren können.
 
 Mit AEM Forms lassen sich Funktionen zum Erstellen, Verwalten und Veröffentlichen von Formularen mit Korrespondenzverwaltung, Dokumentensicherheit und integrierter Analyse zu einer griffigen End-to-End-Lösung kombinieren. AEM Forms wurde für die Verwendung sowohl über Web- als auch über Mobilkanäle konzipiert und kann effizient in Ihre Geschäftsprozesse integriert werden, sodass Sie Papierprozesse und Fehler reduzieren können, während Sie die Effizienz verbessern.
 
-Bei großen Unternehmen werden Formulare häufig nur einmal erstellt und dann wiederverwendet, indem sie in ein Content-Management-System kopiert werden. Eine umfangreiche Datenbank mit Formularen aktuell zu halten und diese für Erkennungsfunktionen zugänglich zu machen, kann eine erhebliche Herausforderung darstellen. AEM bietet ein anpassbares Forms Portal, das Kunden eine Suchfunktion und den Zugriff auf Formulare über eine Weboberfläche oder mobile Kanäle ermöglicht.
+Bei großen Unternehmen werden Formulare häufig nur einmal erstellt und dann wiederverwendet, indem sie in ein Content-Management-System kopiert werden. Eine große Datenbank von Formularen auf dem neuesten Stand zu halten und sie für ihre Entdeckung zu gewinnen, kann eine erhebliche Herausforderung darstellen. AEM bietet ein anpassbares Formularportal, das Kundinnen und Kunden eine Suchfunktion und den Zugriff auf Formulare über eine Web-Oberfläche oder mobile Kanäle ermöglicht.
 
 AEM Forms bietet Tools zur Formularverwaltung, mit denen sich neben adaptiven Formularen auch XFA-Formulare, PDF-Formulare und zugehörige Elemente verwalten lassen. Weitere Informationen finden Sie unter [Einführung in das Verwalten von Formularen](../../forms/using/introduction-managing-forms.md).
 
-![](do-not-localize/4th-draft.gif)
+![AEM Formularfunktionen](do-not-localize/4th-draft.gif)
 
 ### Schlüsselfunktionen {#key-capabilities}
 
 Zusammenfassend lässt sich sagen, dass AEM Forms leistungsstarke Formularverwaltungsfunktionen wie die folgenden bietet, die manuelle Prozesse reduzieren und die Kundenzufriedenheit erhöhen.
 
-* Ein zentralisiertes Forms Portal zum Entwickeln und Bereitstellen von dynamischen Formularen, einschließlich PDF, HTML5 und adaptive Formulare
-* Eine benutzerfreundliche grafische Benutzeroberfläche, mit der Benutzer Formulare mühelos importieren, verwalten, in der Vorschau anzeigen und veröffentlichen können
-* Ein interaktives Formularverzeichnis mit leistungsstarken Suchfunktionen anhand von Schlüsselwörtern, Tags und Metadaten
-* Dynamische Erkennung des Geräts und Standorts eines Benutzers, um das Formular korrekt über Web- und mobile Kanäle wiederzugeben
-* Integration in Adobe Analytics, um Formularverwendungsmetriken effektiv zu messen
-* Integration mit Adobe Document Cloud-eSign-Diensten oder Scribble zur elektronischen Verschlüsselung von Dokumenten mit vertraulichen Informationen
+* Ein zentralisiertes Forms-Portal zum Entwerfen und Bereitstellen von dynamischen Formularen, einschließlich PDF, HTML5 und adaptiven Formularen
+* Eine benutzerfreundliche grafische Benutzeroberfläche, mit der Benutzer Formulare einfach importieren, verwalten, in der Vorschau anzeigen und veröffentlichen können
+* Ein responsives Formularverzeichnis mit leistungsstarken Suchfunktionen mithilfe von Keywords, Tags und Metadaten
+* Dynamische Erkennung des Geräts und Standorts eines Benutzers, um das Formular über Web- und mobile Kanäle hinweg angemessen wiederzugeben
+* Integration mit Adobe Analytics zur effektiven Messung von Formularverwendungsmetriken
+* Integration mit Adobe Document Cloud eSign-Diensten oder Scribble zum elektronischen Signieren von Dokumenten mit vertraulichen Informationen
 * Automatisierte Formularveröffentlichungsfunktionen und die Möglichkeit, zeitnahe, personalisierte und konsistente Kommunikation über mehrere Kanäle bereitzustellen
 
-## AEM-Formulartypen {#aem-form-types}
+## AEM Formulartypen {#aem-form-types}
 
 Mit AEM Forms können Sie neue und vorhandene Formulare erweitern, um Folgendes zu erstellen:
 
-* pixelgenaue, paginierte HTML- und PDF-Formulare, die fast wie Papier aussehen, oder
-* adaptive Formulare, die automatisch für das Gerät und den Browser eines Benutzers angezeigt werden.
+* pixelgenaues, paginiertes HTML und PDF forms, die fast wie Papier aussehen, oder
+* adaptive Formulare, die automatisch für das Gerät und den Browser eines Benutzers wiedergegeben werden.
 
-**PDF-Formulare**
+**PDF forms**
 
-PDF-Formulare können offline ausgefüllt und lokal gespeichert werden. Sie können die Formulardaten dann senden, wenn Sie wieder online sind. Sie können 2D-Strichcodes verwenden, um Formulardaten zu erfassen, und digitale Signaturen verwenden, um die Authentizität für Benutzer zu validieren.
+PDF forms können offline ausgefüllt, lokal gespeichert und Formulardaten gesendet werden, wenn Sie das nächste Mal online sind. Sie können 2D-Barcodes verwenden, um Formulardaten zu erfassen, und digitale Signaturen verwenden, um die Authentizität für Benutzer zu überprüfen.
 
 **HTML-Formulare**
 
-Browserbasierte HTML5-Formulare können auf Mobilgeräten und Desktop-Browsern angezeigt werden. Sie können HTML-Formulare mithilfe von Scribble oder eSign-Dienste elektronisch signieren.
+HTML5 browserbasierte Formulare können sowohl auf Mobilgeräten als auch in Desktopbrowsern angezeigt werden. Sie können HTML-Formulare mithilfe von Scribble oder eSign-Diensten elektronisch signieren.
 
 **Adaptive Formulare**
 
-Adaptive Formulare können sich dynamisch an Benutzerantworten anpassen, indem sie Felder oder Abschnitte nach Bedarf hinzufügen oder entfernen. Mit AEM können Sie Adobe XML-Formularvorlagen verwenden, um adaptive Formulare zu erstellen.
+Adaptive Formulare können sich dynamisch an Benutzerantworten anpassen, indem sie nach Bedarf Felder oder Abschnitte hinzufügen oder entfernen. AEM ermöglicht die Wiederverwendung von XML-Formularvorlagen für Adoben, um adaptive Formulare zu erstellen.
 
 ### Unterstützte Funktionen {#supported-features}
 
@@ -72,29 +72,29 @@ Alle Formulartypen unterstützen die folgenden Funktionen:
 * Dynamisches Layout
 * Formularfeldvalidierung
 * Kontextbezogene Hilfe
-* Skripte und Verarbeitung von XML-Daten
-* Barrierefreiheitsdesign und -prüfung
-* Möglichkeit, Formulare auf Serverseite zu speichern
+* Skripterstellung und XML-Datenverarbeitung
+* Entwurf und Prüfung der Barrierefreiheit
+* Möglichkeit zum Speichern von Formularen serverseitig
 * Unterstützung für Dateianlagen
-* Integration mit HTML Workspace zur Datenerfassung
+* Integration mit HTML Workspace für die Datenerfassung
 
 ## Offline-Datenerfassung {#offline-data-collection}
 
-Wenn Formulardaten gesendet wurden, verbindet Adobe Experience Manager die Formulardaten mit vorhandenen Systemen, Geschäftsregeln und den gewünschten Personen.
+Sobald die Formulardaten gesendet wurden, verbindet Adobe Experience Manager die Formulardaten mit vorhandenen Systemen, Geschäftsregeln und den erforderlichen Personen.
 
-AEM Forms umfasst Forms Workspace, eine mobile Anwendung, die Ihre digitalen Geschäftsprozesse auf Mobilgeräte erweitert. Mit Forms Workspace können Sie Daten auch dann erfassen und aufzeichnen, wenn Sie offline sind. Forms Workspace nutzt die Funktionen Ihres Mobilgeräts und ermöglicht es Ihnen, Fotos und Videos aufzunehmen und Daten wie Zeitstempel und andere Informationen zu erfassen. Wenn Sie das nächste Mal mit einem Netzwerk verbunden sind, können Sie die erfassten Daten synchronisieren.
+AEM Forms bietet Forms Workspace, eine mobile Anwendung, die Ihre digitalen Geschäftsprozesse auf Mobilgeräte erweitert. Mit Forms Workspace können Sie Daten auch offline erfassen und aufzeichnen. Forms Workspace nutzt die Funktionen Ihres Mobilgeräts und ermöglicht Ihnen das Erfassen von Fotos und Videos sowie das Erfassen von Daten wie Zeitstempeln und anderen Informationen. Wenn Sie das nächste Mal eine Verbindung zu einem Netzwerk herstellen, können Sie die erfassten Daten synchronisieren.
 
-Besonders für Mitarbeiter, die viel unterwegs sind, ist es nützlich, Daten offline zu erfassen und sie zu synchronisieren, wenn sie das nächste Mal online sind. Dies verbessert die Produktivität und reduziert Fehler.
+Die Offline-Datenerfassung und die Synchronisierung der Daten bei der nächsten Online-Rückkehr sind besonders für Personen hilfreich, die sich vor Ort befinden. Sie verbessert die Produktivität und reduziert Fehler.
 
 **Vorteile der Verwendung von Forms Workspace für die Offline-Datenerfassung**
 
-* Benutzerfreundliche HTML-Workspace-Anwendung für Aufgabenzuweisung und -verfolgung
-* Workflow-Designumgebung mit Drag-&amp;-Drop-Funktion
-* Enterprise Content Management-(ECM-)Connectors
+* Benutzerfreundliche HTML Workspace-Anwendung für Aufgabenzuweisung und -verfolgung
+* Workflow-Designumgebung per Drag &amp; Drop verschieben
+* Enterprise Content Management Connectors (ECM)
 * Unterstützung offener Standards, einschließlich XML und SOAP, um Formulardaten mit Unternehmenssystemen zu verbinden
-* Standardmäßig verfügbare HTML-Berichte, um Arbeitsrückstände, Warteschlangen und wichtige Leistungsindikatoren (KPIs) zu überwachen
-* Anpassbare Dashboards für Einblick in Geschäftsvorgänge in Echtzeit
-* API für die Verbindung mit Berichtstools von Drittanbietern
+* Vordefinierte HTML-Berichte überwachen Rückstände, Arbeitswarteschlangen und wichtige Leistungsindikatoren (KPIs)
+* Anpassbare Dashboards für Echtzeiteinblicke in Geschäftsvorgänge
+* API für die Verbindung mit Reporting-Tools von Drittanbietern
 
 ![](do-not-localize/3rd-draft.gif)
 
@@ -102,18 +102,18 @@ Besonders für Mitarbeiter, die viel unterwegs sind, ist es nützlich, Daten off
 
 Eine wichtige Komponente für effizienten digitalen Self-Service ist die Kommunikation zeitnaher, personalisierter Informationen, auf die Benutzer von überall aus und mit jedem Gerät zugreifen können. Personalisierte und zeitnahe Kommunikation kann Konversionsraten und Benutzerzufriedenheit verbessern.
 
-Mit AEM Forms können Benutzer interessante personalisierte Benutzererfahrungen schaffen, indem sie Dokumentvorlagen anpassen, Informationen aus Back-End-Prozessen integrieren und interaktive Komponenten aufnehmen. Eine intuitive Benutzeroberfläche hilft Benutzern ohne technische Fachkenntnisse dabei, Geschäftsregeln zu entwickeln, die bestimmen, ob eine Kommunikation basierend auf einer Anforderung erstellt oder eine benutzergenerierte Antwort initiiert werden soll.
+Mit AEM Forms können Benutzer interessante personalisierte Benutzererfahrungen schaffen, indem sie Dokumentvorlagen anpassen, Informationen aus Back-End-Prozessen integrieren und interaktive Komponenten aufnehmen. Eine intuitive Benutzeroberfläche hilft nichttechnischen Benutzern dabei, Geschäftsregeln zu entwickeln, die entscheiden, wann eine Kommunikation basierend auf einer Anfrage generiert oder eine benutzergenerierte Antwort initiiert werden soll.
 
-Personalisierte Dokumente, wie Empfangsbestätigungen, Willkommens-Kits und Anweisungen, können einfach über mehrere Kanäle bereitgestellt werden. Unternehmen können Traffic zu personalisierten Internetportalen steuern, was zu Registrierungen oder Kauf von zusätzlichen Diensten führt.
+Personalisierte Dokumente wie Empfangsbestätigungen, Willkommenskits und Anweisungen können einfach über mehrere Kanäle hinweg bereitgestellt werden. Unternehmen können Traffic zu personalisierten Internetportalen steuern, was zu Registrierungen oder Kauf von zusätzlichen Diensten führt.
 
 **Wichtigste Funktionen**
 
-* Korrespondenz-Authoring-Umgebung mit Unterstützung für Vorlagen, Inhaltsblöcke, Geschäftsregeln und mehr
+* Correspondence Authoring-Umgebung mit Unterstützung für Vorlagen, Inhaltsbausteine, Geschäftsregeln und mehr
 * Dokumentkonvertierung und -assemblierung
-* Unterstützung für bedarfsmäßige oder Batch-Dokumentzustellung über mehrere Kanäle, einschließlich Web, E-Mail und Papier
-* Prüfprotokolle mit Änderungshistorie
-* Unterstützung für digitale Signaturen zum Validieren der Inhaltsintegrität und der Identität des Unterzeichners
-* Document Security-Add-On für AEM Forms mit Funktionen für Verschlüsselung, Nutzungsrichtlinien, Verfolgung und Prüfung
+* Unterstützung der On-Demand- oder Batch-Dokumentbereitstellung über mehrere Kanäle, einschließlich Web, E-Mail und Papier
+* Audit-Protokolle mit Änderungsverlauf
+* Unterstützung für digitale Signaturen zur Überprüfung der Inhaltsintegrität und der Identität des Unterzeichners
+* Document Security-Add-on für AEM Forms, einschließlich Verschlüsselung, Nutzungsrichtlinien, Verfolgung und Prüfung
 
 ![](do-not-localize/layout-02.png)
 

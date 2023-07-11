@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 1a3e0f90bbe133a7b0fc383b997e69b10ca82478
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2068'
 ht-degree: 83%
 
 ---
@@ -394,7 +394,7 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
 ### Erstellen/Öffnen einer benutzerdefinierten Konfiguration {#creating-opening-a-customized-configuration}
 
-1. Navigieren Sie zu **Tools** > **Allgemein** > **Suchformulare**.
+1. Navigieren Sie zu **Instrumente** >>  **Allgemein** >> **Forms durchsuchen**.
 
 1. Wählen Sie die Konfiguration aus, die Sie anpassen möchten.
 1. Verwenden Sie die **Bearbeiten** -Symbol, um die Konfiguration für die Aktualisierung zu öffnen.
@@ -437,7 +437,7 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
 1. Wählen Sie das Vorschausymbol aus:
 
-   ![Vorschausymbol](do-not-localize/chlimage_1-31.png)
+   ![Suchformulare in der Vorschau anzeigen](do-not-localize/chlimage_1-31.png)
 
 1. Daraufhin werden die Suchformulare so angezeigt, wie sie in der Suchspalte der jeweiligen Konsole (vollständig eingeblendet) zu sehen sein werden.
 
