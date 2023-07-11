@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
-workflow-type: ht
-source-wordcount: '1949'
-ht-degree: 100%
+source-git-commit: bf55fcb855cbdad72c669058662ca70fe57e6632
+workflow-type: tm+mt
+source-wordcount: '1973'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Jede dieser Methoden kann verwendet werden, es gibt aber leichte Unterschiede vo
 
    * Die Web-Konsole ist die Standardschnittstelle für die OSGi-Konfiguration. Sie bietet eine Benutzeroberfläche für die Bearbeitung der verschiedenen Eigenschaften, wobei mögliche Werte aus vordefinierten Listen ausgewählt werden können.
 
-      Dies ist die einfachste Methode.
+     Dies ist die einfachste Methode.
 
    * Alle über die Web-Konsole durchgeführten Konfigurationen werden unmittelbar auf die aktuelle Instanz angewendet, und zwar unabhängig davon, welcher Ausführungsmodus gerade aktiv ist oder wie dieser zu einem späteren Zeitpunkt geändert werden könnte.
 
@@ -86,11 +86,12 @@ So aktualisieren Sie mit der Web-Konsole eine Konfiguration:
 
    * Öffnen Sie die Web-Konsole über den Link im Menü **Tool > Vorgänge**. Nach der Anmeldung in der Konsole können Sie dieses Dropdown-Menü verwenden:
 
-      **OSGi >**
+     **OSGi >**
 
    * Die direkte URL, zum Beispiel:
 
-      `http://localhost:4502/system/console/configMgr`
+     `http://localhost:4502/system/console/configMgr`
+
    Eine Liste wird angezeigt.
 
 1. Wählen Sie das Bundle aus, das Sie konfigurieren möchten, indem Sie eine dieser Optionen auswählen:
@@ -124,7 +125,9 @@ Diese Dateien können in Inhaltspaketen eingeschlossen und in anderen Instanzen 
 
 >[!NOTE]
 >
->Die Konfigurationsdateien haben ein spezifisches Format. Vollständige Details finden Sie in der [Sling Apache-Dokumentation](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>Das Format der Konfigurationsdateien ist spezifisch. Weitere Informationen finden Sie in der Sling Apache-Dokumentation für:
+>* vollständige Angaben zu [das Apache Sling Provisioning Model und Apache SlingStart](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>* Tutorials und Beispiele für [Abrufen von Ressourcen und Eigenschaften in Sling](https://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html).
 >
 >Aus diesem Grund wird empfohlen, die Konfigurationsdatei zu erstellen und zu pflegen, indem Sie die effektiven Änderungen in der Web-Konsole vornehmen.
 
@@ -230,7 +233,8 @@ Um die neue Konfiguration zum Repository hinzuzufügen, gehen Sie folgendermaße
    * Typ: `sling:OsgiConfig`
    * Name: die persistente Identität (PID),
 
-      Für den AEM WCM-Versions-Manager verwenden Sie z. B. `com.day.cq.wcm.core.impl.VersionManagerImpl`
+     Für den AEM WCM-Versions-Manager verwenden Sie z. B. `com.day.cq.wcm.core.impl.VersionManagerImpl`
+
    >[!NOTE]
    >
    >Wenn Sie eine Werkskonfiguration durchführen, hängen Sie an den Namen `-<identifier>` an.
@@ -310,15 +314,15 @@ Die folgende Liste zeigt eine kleine Auswahl der im Repository verfügbaren Konf
 
 * Autor – AEM WCM-Filter:
 
-   `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
+  `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
 
 * Veröffentlichung – AEM WCM-Filter:
 
-   `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
+  `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
 
 * Veröffentlichung – AEM WCM-Seitenstatistiken:
 
-   `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
+  `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
 
 >[!NOTE]
 >
@@ -332,25 +336,25 @@ Um alle Konfigurationsknoten in Ihrer Instanz aufzulisten, senden Sie über die 
 
 * Wenn Sie eine Konfiguration über die Web-Konsole ändern, wird sie (normalerweise) über folgenden Pfad in das Repository geschrieben:
 
-   `/apps/{somewhere}`
+  `/apps/{somewhere}`
 
    * Das standardmäßige `{somewhere}` ist `system/config`, sodass die Konfiguration in diesen Pfad geschrieben wird:
 
-      `/apps/system/config`
+     `/apps/system/config`
 
    * Wenn Sie jedoch eine Konfiguration bearbeiten, die ursprünglich von einem anderen Ort im Repository stammte, zum Beispiel:
 
-      /libs/foo/config/someconfig
+     /libs/foo/config/someconfig
 
-      dann wird die aktualisierte Konfiguration unter dem ursprünglichen Speicherort geschrieben. Beispiel:
+     dann wird die aktualisierte Konfiguration unter dem ursprünglichen Speicherort geschrieben. Beispiel:
 
-      `/apps/foo/config/someconfig`
+     `/apps/foo/config/someconfig`
 
 * Einstellungen, die vom `admin` geändert werden, werden in `*.config`-Dateien gespeichert, und zwar unter:
 
-   ```
-      /crx-quickstart/launchpad/config
-   ```
+  ```
+     /crx-quickstart/launchpad/config
+  ```
 
    * Dies ist der private Datenbereich der OSGi-Konfigurationsverwaltung und enthält alle von `admin` angegebenen Konfigurationsdetails, unabhängig davon, wie sie in das System gelangt sind.
    * Dieser Bereich ist ein Implementierungsdetail, und Sie dürfen diesen Ordner niemals direkt bearbeiten.
@@ -358,11 +362,11 @@ Um alle Konfigurationsknoten in Ihrer Instanz aufzulisten, senden Sie über die 
 
       * Apache Felix OSGi-Management Console
 
-         `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
+        `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
       * CRX Sling Client Repository
 
-         `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
+        `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 
 >[!CAUTION]
 >
