@@ -1,39 +1,35 @@
 ---
 title: Planung von Upgrades
-seo-title: Planning Your Upgrade
-description: Dieser Artikel unterstützt Sie bei der Formulierung von klaren Zielen, Phasen und Arbeitsergebnissen bei der Planung eines Upgrades von AEM.
-seo-description: This article helps establish clear goals, phases and deliverables when planning the AEM upgrade.
-uuid: 6128ac53-4115-4262-82d9-a0ad7d498ea6
+description: Dieser Artikel hilft bei der Planung des AEM-Upgrades, klare Ziele, Phasen und Lieferziele festzulegen.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
-discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2430'
-ht-degree: 100%
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+workflow-type: tm+mt
+source-wordcount: '2399'
+ht-degree: 45%
 
 ---
 
 # Planung von Upgrades{#planning-your-upgrade}
 
-## AEM-Projektüberblick {#aem-project-overview}
+## AEM Project Overview {#aem-project-overview}
 
-AEM kommt häufig in umfangreichen Bereitstellungen zum Einsatz, die möglicherweise von Millionen von Benutzern genutzt werden. Im Großteil der Fälle werden dabei benutzerdefinierte Anwendungen auf Instanzen bereitgestellt, wodurch die Komplexität weiter erhöht wird. Das Upgrade einer solchen Implementierung muss deshalb methodisch angegangen werden.
+AEM kommt häufig in umfangreichen Bereitstellungen zum Einsatz, die möglicherweise von Millionen von Benutzern genutzt werden. Normalerweise werden auf den Instanzen benutzerdefinierte Programme bereitgestellt, was die Komplexität erhöht. Das Upgrade einer solchen Bereitstellung muss deshalb methodisch angegangen werden.
 
-Dieser Leitfaden unterstützt Sie bei der Formulierung von klaren Zielen, Phasen und Ergebnissen bei der Planung des Upgrades. Im Mittelpunkt des Leitfadens stehen die Abwicklung und die Richtlinien des gesamten Projekts. Er gibt einen Überblick über die konkreten Upgrade-Schritte und verweist auf verfügbare technische Ressourcen, falls erforderlich. Der Leitfaden sollte in Verbindung mit den verfügbaren technischen Ressourcen verwendet werden, auf die in diesem Dokument Bezug genommen wird.
+Dieses Handbuch hilft bei der Festlegung klarer Ziele, Phasen und Lieferziele bei der Planung Ihrer Aktualisierung. Im Mittelpunkt des Leitfadens stehen die Abwicklung und die Richtlinien des gesamten Projekts. Er gibt einen Überblick über die konkreten Upgrade-Schritte und verweist auf verfügbare technische Ressourcen, falls erforderlich. Es sollte mit den verfügbaren technischen Ressourcen verwendet werden, auf die in dem Dokument verwiesen wird.
 
-Der Upgrade-Prozess für AEM erfordert sorgfältig ausgeführte Planungs-, Analyse- und Durchführungsphasen, für die jeweils wichtige Ergebnisse festgelegt werden müssen.
+Der AEM-Upgrade-Prozess muss sorgfältig mit Planungs-, Analyse- und Ausführungsphasen durchgeführt werden, wobei für jede Phase die wichtigsten Ergebnisse definiert sind.
 
-Beachten Sie, dass ein direktes Upgrade von AEM 6.0 und höheren Versionen auf Version 6.5 möglich ist. Kunden mit AEM 5.6.x und älteren Versionen müssen jedoch zuerst ein Upgrade auf Version 6.0 oder höher durchführen (empfohlen wird 6.0 SP3). Darüber hinaus wird seit 6.3 für den Segment-Knotenspeicher das neue OAK-Segment-TAR-Format verwendet. Eine Repository-Migration in dieses neue Format ist sogar für die Versionen 6.0, 6.1 und 6.2 obligatorisch.
+Es ist möglich, ein direktes Upgrade von AEM Version 6.0 und bis 6.5 durchzuführen. Kunden, die 5.6.x und älter ausführen, müssen zunächst ein Upgrade auf Version 6.0 oder höher durchführen, wobei 6.0 (SP3) empfohlen wird. Außerdem wird jetzt das neue Oak Segment Tar-Format für den Segment-Knotenspeicher seit 6.3 verwendet, und die Repository-Migration auf dieses neue Format ist auch für 6.0, 6.1 und 6.2 obligatorisch.
 
 >[!CAUTION]
 >
->Wenn Sie von AEM 6.2 auf 6.3 upgraden, sollten Sie ENTWEDER von den Versionen **6.2-SP1-CFP1 - 6.2-SP1-CFP12.1** oder ab der Version **6.2-SP1-CFP15** upgraden. Wenn Sie jedoch von **6.2-SP1-CFP13/6.2-SP1CFP14** auf AEM 6.3 upgraden, müssen Sie mindestens auf Version **6.3.2.2** upgraden. Ansonsten kann AEM Sites nach der Aktualisierung nicht ausgeführt werden.
+>Wenn Sie von AEM 6.2 auf 6.3 upgraden, sollten Sie ENTWEDER von den Versionen **6.2-SP1-CFP1 - 6.2-SP1-CFP12.1** oder ab der Version **6.2-SP1-CFP15** upgraden. Wenn Sie jedoch von **6.2-SP1-CFP13/6.2-SP1CFP14** auf AEM 6.3 upgraden, müssen Sie mindestens auf Version **6.3.2.2** upgraden. Andernfalls würde AEM Sites nach der Aktualisierung fehlschlagen.
 
 ## Upgrade-Umfang und -Anforderungen {#upgrade-scope-requirements}
 
@@ -48,72 +44,72 @@ Nachfolgend finden Sie eine Liste der Bereiche, die von einem typischen AEM-Upgr
   </tr>
   <tr>
    <td>Betriebssystem</td>
-   <td>Ungewisse aber geringfügige Auswirkungen</td>
+   <td>Ungewisse, aber feine Effekte</td>
    <td>Möglicherweise muss beim Upgrade von AEM auch das Betriebssystem aktualisiert werden. Dies kann gewisse Auswirkungen haben.</td>
   </tr>
   <tr>
-   <td>Java-Laufzeitumgebung</td>
-   <td>Moderate Auswirkungen</td>
-   <td>AEM 6.3 erfordert JRE 1.7.x (64 Bit) oder höher. Derzeit ist JRE 1.8 die einzige von Oracle unterstützte Version.</td>
+   <td>Java™ Runtime</td>
+   <td>Moderate Auswirkung</td>
+   <td>AEM 6.3 erfordert JRE 1.7.x (64 Bit) oder höher. JRE 1.8 ist die einzige Version, die derzeit von Oracle unterstützt wird.</td>
   </tr>
   <tr>
    <td>Hardware</td>
-   <td>Moderate Auswirkungen</td>
-   <td>Für die Online-Revisionsbereinigung sind freier<br /> Speicherplatz, der 25 % des Repository-Volumens entspricht, sowie 15 % freier Heap-Speicher erforderlich,<br /> um die Bereinigung erfolgreich abzuschließen. Möglicherweise müssen Sie Ihre Hardware aufrüsten, um<br /> sicherzustellen, dass ausreichend Ressourcen für die vollständige Ausführung der Online-Revisionsbereinigung<br /> verfügbar sind. Wenn Sie zudem eine Aktualisierung von einer Version vor AEM 6 durchführen,<br /> sind u. U. zusätzliche Speicheranforderungen zu beachten.</td>
+   <td>Moderate Auswirkung</td>
+   <td>Für die Online-Revisionsbereinigung sind freier<br /> Speicherplatz, der 25 % des Repository-Volumens entspricht, sowie 15 % freier Heap-Speicher erforderlich,<br /> um die Bereinigung erfolgreich abzuschließen. Möglicherweise müssen Sie Ihre Hardware auf<br /> Sicherstellung ausreichender Ressourcen für die Online-Revisionsbereinigung<br /> ausführen. Wenn ein Upgrade von einer Version vor AEM 6 durchgeführt wird, gibt es außerdem<br /> kann zusätzliche Speicheranforderungen umfassen.</td>
   </tr>
   <tr>
-   <td>Inhalts-Repository (CRX oder Oak)</td>
-   <td>Starke Auswirkungen</td>
-   <td>Ab Version 6.1 bietet AEM keine Unterstützung für CRX2, sodass eine Migration auf<br /> Oak (CRX3) erforderlich ist, wenn eine Aktualisierung von einer älteren Version durchgeführt wird. In AEM 6.3 wurde<br /> ein neuer Segment-Knotenspeicher implementiert, der ebenfalls migriert werden muss. Hierzu wird das<br /> CRX2OAK-Tool verwendet.</td>
+   <td>Content Repository (CRX oder Oak)</td>
+   <td>Hohe Auswirkung</td>
+   <td>Ab Version 6.1 bietet AEM keine Unterstützung für CRX2, sodass eine Migration auf<br /> Oak (CRX3) erforderlich ist, wenn eine Aktualisierung von einer älteren Version durchgeführt wird. In AEM 6.3 wurde<br /> ein neuer Segment-Knotenspeicher implementiert, der ebenfalls migriert werden muss. Die<br /> Zu diesem Zweck wird das crx2oak-Tool verwendet.</td>
   </tr>
   <tr>
-   <td>AEM-Komponenten/-Inhalte</td>
-   <td>Moderate Auswirkungen</td>
-   <td><code>/libs</code> Und <code>/apps</code> werden beim Upgrade problemlos verarbeitet; für <code>/etc</code> müssen die Anpassungen jedoch in der Regel erneut angewendet werden.</td>
+   <td>AEM Komponenten/Inhalte</td>
+   <td>Moderate Auswirkung</td>
+   <td><code>/libs</code> und <code>/apps</code> sind während des Upgrades leicht zu handhaben, <code>/etc</code> erfordert normalerweise eine manuelle Neuanwendung der Anpassungen.</td>
   </tr>
   <tr>
-   <td>AEM-Dienste</td>
-   <td>Geringfügige Auswirkungen</td>
-   <td>Der Großteil der AEM-Core Services wird für ein Upgrade getestet. Dies ist ein Bereich mit geringfügigen Auswirkungen.</td>
+   <td>AEM</td>
+   <td>Geringe Auswirkung</td>
+   <td>Der Großteil der AEM-Core Services wird für ein Upgrade getestet. Dies ist ein Bereich mit geringer Auswirkung.</td>
   </tr>
   <tr>
    <td>Benutzerdefinierte Anwendungsdienste</td>
-   <td>Geringfügige bis starke Auswirkungen</td>
-   <td>Je nach Anwendung und Grad der Anpassung liegen möglicherweise <br />Abhängigkeiten von JVM, Betriebssystemversionen und einige indizierungsbezogene<br /> Änderungen vor, da Indizes in Oak nicht automatisch generiert werden.</td>
+   <td>Geringe bis große Auswirkung</td>
+   <td>Je nach Anwendung und Anpassung kann es<br /> Abhängigkeiten von JVM, Betriebssystemversionen und einigen Indizierungszusammenhängen<br /> geändert, da Indizes in Oak nicht automatisch generiert werden.</td>
   </tr>
   <tr>
    <td>Benutzerdefinierte Anwendungsinhalte</td>
-   <td>Geringfügige bis starke Auswirkungen</td>
+   <td>Geringe bis große Auswirkung</td>
    <td>Inhalte, die vom Upgrade nicht betroffen sind, können vorher gesichert<br /> und dann wieder in das Repository verschoben werden.<br /> Die meisten Inhalte können mithilfe des Migrationstools verarbeitet werden.</td>
   </tr>
  </tbody>
 </table>
 
-Sie müssen sicherstellen, dass ein unterstütztes Betriebssystem, eine unterstützte Java-Laufzeitumgebung sowie eine unterstützte httpd- und Dispatcher-Version ausgeführt werden. Weitere Informationen finden Sie auf der Seite [Technische Anforderungen für AEM 6.5](/help/sites-deploying/technical-requirements.md). Die Aktualisierung dieser Komponenten muss im Projektplan berücksichtigt werden und sollte vor der AEM-Aktualisierung durchgeführt werden.
+Es muss sichergestellt werden, dass Sie ein unterstütztes Betriebssystem, eine unterstützte Java™-Laufzeitumgebung, HTTPD und Dispatcher-Version ausführen. Weitere Informationen finden Sie auf der Seite [Technische Anforderungen für AEM 6.5](/help/sites-deploying/technical-requirements.md). Die Aktualisierung dieser Komponenten muss in Ihrem Projektplan berücksichtigt werden und sollte vor der Aktualisierung von AEM erfolgen.
 
 ## Projektphasen {#project-phases}
 
-Mit der Planung und Durchführung eines AEM-Upgrades ist ein hoher Arbeitsaufwand verbunden. Um den Arbeitsaufwand besser zu verdeutlichen, haben wir die Planungs- und Durchführungsschritte in separate Phasen unterteilt. In den nachfolgenden Abschnitten resultiert jede Phase in einem Ergebnis, das häufig für eine zukünftige Phase des Projekts genutzt wird.
+Viel Arbeit geht in die Planung und Durchführung eines AEM-Upgrades. Um die verschiedenen Anstrengungen zu verdeutlichen, die in diesem Prozess unternommen werden, hat die Adobe die Planungs- und Ausführungsübungen in separate Phasen unterteilt. In den folgenden Abschnitten führt jede Phase zu einem Lieferziel, das häufig von einer künftigen Projektphase verwendet wird.
 
 ### Planen der Autorenschulung {#planning-for-author-training}
 
-In jeder neuen Version ist mit potenziellen Änderungen an der Benutzeroberfläche und den Benutzer-Workflows zu rechnen. Außerdem werden neue Funktionen eingeführt, deren Nutzung sich für das Unternehmen als vorteilhaft erweisen kann. Adobe empfiehlt die eingeführten Funktionsänderungen zu überprüfen und einen Schulungsplan für Benutzer zu erstellen, damit diese neue Funktionen effektiv nutzen können.
+In jeder neuen Version ist mit potenziellen Änderungen an der Benutzeroberfläche und den Benutzer-Workflows zu rechnen. Darüber hinaus werden durch neue Versionen neue Funktionen eingeführt, die für das Unternehmen von Vorteil sein können. Adobe empfiehlt, die eingeführten Funktionsänderungen zu überprüfen und einen Plan zu organisieren, um Ihre Benutzer bei der effektiven Verwendung dieser Funktionen zu schulen.
 
 ![unu_cropped](assets/unu_cropped.png)
 
-Neue Funktionen in AEM 6.5 finden Sie im [Bereich zu AEM auf adobe.com](/help/release-notes/release-notes.md). Achten Sie vor allem auf Änderungen an Benutzeroberflächen oder Produktfunktionen, die in Ihrem Unternehmen häufig verwendet werden. Wenn Sie sich über die neuen Funktionen informieren, achten Sie auch auf neue Funktionen, die für Ihr Unternehmen von Nutzen sein können. Sobald Sie sich mit den Änderungen in AEM 6.5 vertraut gemacht haben, entwickeln Sie einen Schulungsplan für Ihre Autoren. Hierzu können Sie kostenlos verfügbare Ressourcen wie Videos zu Funktionen des Adobe-Supports oder formelle Schulungen nutzen, die von [Adobe Digital Learning Services](https://www.adobe.com/de/training.html) angeboten werden.
+Neue Funktionen in AEM 6.5 finden Sie im [Bereich zu AEM auf adobe.com](/help/release-notes/release-notes.md). Achten Sie vor allem auf Änderungen an Benutzeroberflächen oder Produktfunktionen, die in Ihrem Unternehmen häufig verwendet werden. Wenn Sie sich über die neuen Funktionen informieren, achten Sie auch auf neue Funktionen, die für Ihr Unternehmen von Nutzen sein können. Sobald Sie sich mit den Änderungen in AEM 6.5 vertraut gemacht haben, entwickeln Sie einen Schulungsplan für Ihre Autoren. Dazu kann die Verwendung frei verfügbarer Ressourcen wie Videos zu Hilfefunktionen oder formelles Training über [Adobe Digital Learning Services](https://learning.adobe.com/).
 
 ### Erstellen eines Testplans {#creating-a-test-plan}
 
-Jede Kundenimplementierung von AEM ist einzigartig und auf die Geschäftsanforderungen des Unternehmens zugeschnitten. Deshalb ist es wichtig, alle am System vorgenommenen Anpassungen zu bestimmen, damit sie in einen Testplan einbezogen werden können. Dieser Testplan bildet die Basis für den QS-Prozess, der für upgegradete Instanzen durchgeführt wird.
+Jede Kundenimplementierung von AEM ist einzigartig und auf die Geschäftsanforderungen des Unternehmens zugeschnitten. Deshalb ist es wichtig, alle am System vorgenommenen Anpassungen zu bestimmen, damit sie in einen Testplan einbezogen werden können. Dieser Testplan ermöglicht die Qualitätssicherung, die Adobe auf der aktualisierten Instanz durchführt.
 
 ![test-plan](assets/test-plan.png)
 
-Die Produktionsumgebung muss exakt dupliziert und nach dem Upgrade getestet werden, um sicherzustellen, dass alle Anwendungen und benutzerdefinierter Code weiterhin wie gewünscht ausgeführt werden. Sie müssen alle Anpassungen rückgängig machen und Leistungs-, Last- und Sicherheitstests durchführen. Beziehen Sie beim Organisieren des Testplans neben den vorkonfigurierten Benutzeroberflächen und Workflows, die für Ihre täglichen Betriebsabläufe verwendet werden, alle am System vorgenommenen Anpassungen in den Plan mit ein. Hierzu gehören möglicherweise benutzerdefinierte OSGi-Dienste und -Servlets, Integrationen mit Adobe Marketing Cloud, Integrationen mit Drittanbieteranwendungen über AEM-Connectors, benutzerdefinierte Drittanbieterintegrationen, benutzerdefinierte Komponenten und Vorlagen, benutzerdefinierte Benutzeroberflächen-Überlagerungen in AEM und benutzerdefinierte Workflows. Kunden, die eine Migration von einer Version vor AEM 6 durchführen, sollten alle benutzerdefinierten Abfragen analysieren, da diese u. U. indiziert werden müssen. Kunden die bereits eine AEM 6.x-Version verwenden, sollte diese Abfragen ebenfalls testen, um sicherzustellen, das ihre Indizes auch nach der Aktualisierung ordnungsgemäß arbeiten.
+Die Produktionsumgebung muss exakt dupliziert und nach dem Upgrade getestet werden, um sicherzustellen, dass alle Anwendungen und benutzerdefinierter Code weiterhin wie gewünscht ausgeführt werden. Nehmen Sie alle Anpassungen vor und führen Sie Leistungs-, Last- und Sicherheitstests durch. Stellen Sie bei der Organisation Ihres Testplans sicher, dass Sie alle Anpassungen, die am System vorgenommen wurden, sowie die vordefinierten Benutzeroberflächen und Workflows abdecken, die in Ihren täglichen Vorgängen verwendet werden. Dazu gehören benutzerdefinierte OSGi-Dienste und Servlets, Integrationen in Adobe Experience Cloud, Integrationen mit Drittanbietern über AEM Connectoren, benutzerdefinierte Drittanbieterintegrationen, benutzerdefinierte Komponenten und Vorlagen, benutzerdefinierte UI-Überlagerungen in AEM und benutzerdefinierte Workflows. Kunden, die eine Migration von einer Version vor AEM 6 durchführen, sollten alle benutzerdefinierten Abfragen analysieren, da diese u. U. indiziert werden müssen. Kunden, die bereits eine AEM 6.x-Version verwenden, sollten diese Abfragen dennoch testen, um sicherzustellen, dass ihre Indizes nach der Aktualisierung weiterhin effektiv funktionieren.
 
-### Bestimmen der erforderlichen Architektur- und Infrastrukturänderungen {#determining-architectural-and-infrastructure-changes-needed}
+### Ermittlung der erforderlichen Architektur- und Infrastrukturänderungen {#determining-architectural-and-infrastructure-changes-needed}
 
-Sie müssen bei einem Upgrade möglicherweise auch andere Komponenten Ihres Technologie-Stacks upgraden, z. B. das Betriebssystem oder JVM. Darüber hinaus ist aufgrund von Änderungen an der Repository-Konfiguration u. U. zusätzliche Hardware erforderlich. Dies trifft in der Regel nur für Kunden zu, die eine Migration von Instanzen vor Version 6.x durchführen, muss jedoch berücksichtigt werden. Und schließlich müssen Sie möglicherweise Ihre Betriebspraktiken ändern, darunter Ihre Prozesse für die Überwachung, Wartung, Sicherung und Nofallwiederherstellung.
+Sie müssen bei einem Upgrade möglicherweise auch andere Komponenten Ihres Technologie-Stacks upgraden, z. B. das Betriebssystem oder JVM. Außerdem ist es möglich, dass aufgrund von Änderungen im Repository-Aufbau zusätzliche Hardware erforderlich ist. Dies gilt nur für Kunden, die von Instanzen vor 6.x migrieren, ist jedoch zu beachten. Schließlich können Änderungen an Ihren betrieblichen Verfahren erforderlich sein, einschließlich Überwachungs-, Wartungs-, Sicherungs- und Notfallwiederherstellungsprozessen.
 
 ![doi_cropped](assets/doi_cropped.png)
 
@@ -139,15 +135,15 @@ Sie müssen bei einem Upgrade möglicherweise auch andere Komponenten Ihres Tech
 
 #### Überlegungen zur Neustrukturierung des Contents {#content-restructuring-considerations}
 
-Mit AEM werden Änderungen an der Repository-Struktur eingeführt, mit denen Upgrades noch nahtloser durchgeführt werden können. Diese Änderungen erfordern, dass Inhalte aus dem Ordner /etc in Ordner wie /libs, /apps und /content verschoben werden – je nachdem, ob Adobe oder der Kunde Eigentümer des Inhalts ist – um die Wahrscheinlichkeit zu verringern, dass Inhalte durch Aktualisierungen überschrieben werden. Die Repository-Umstrukturierung wurde so vorgenommen, dass zum Zeitpunkt des Upgrades auf 6.5 keine Code-Änderungen erforderlich sein sollten. Es wird jedoch empfohlen, bei der Planung eines Upgrades die Details unter [Repository-Umstrukturierung in AEM](/help/sites-deploying/repository-restructuring.md) zu lesen.
+Mit AEM werden Änderungen an der Repository-Struktur eingeführt, mit denen Upgrades noch nahtloser durchgeführt werden können. Diese Änderungen erfordern, dass Inhalte aus dem Ordner /etc in Ordner wie /libs, /apps und /content verschoben werden – je nachdem, ob Adobe oder der Kunde Eigentümer des Inhalts ist – um die Wahrscheinlichkeit zu verringern, dass Inhalte durch Aktualisierungen überschrieben werden. Die Repository-Neustrukturierung wurde so durchgeführt, dass zum Zeitpunkt der Aktualisierung auf 6.5 keine Codeänderungen erforderlich sind. Es wird jedoch empfohlen, die Details unter [Repository-Neustrukturierung in AEM](/help/sites-deploying/repository-restructuring.md) bei der Planung eines Upgrades.
 
 ### Bewertung der Komplexität des Upgrades {#assessing-upgrade-complexity}
 
-Aufgrund der von unseren Kunden an ihren AEM-Umgebungen vorgenommenen Anpassungen, die sich hinsichtlich des Umfangs und der Art der Anpassung weitgehend unterscheiden, ist es wichtig, vor einem Upgrade den damit verbundenen Aufwand zu bestimmen.
+Aufgrund der großen Vielfalt an Anpassungen, die Adobe-Kunden in ihren AEM-Umgebungen anwenden, ist es wichtig, einige Zeit vor dem Upgrade zu verbringen, um den Gesamtaufwand zu ermitteln, der bei Ihrem Upgrade erwartet werden sollte.
 
-Es gibt zwei Ansätze zur Bewertung der Komplexität des Upgrades. In einer Vorbereitungsphase können Sie einfach den neuen Musterdetektor verwenden, der auf Ihren AEM 6.1-, 6.2- und 6.3-Instanzen ausgeführt werden kann. Der Musterdetektor bietet die einfachste Möglichkeit, die erwartete Gesamtkomplexität des Upgrades anhand der gefundenen Muster zu bewerten. Der Bericht des Musterdetektors enthält Muster, mit denen veraltete APIs identifiziert werden können, die von der benutzerdefinierten Code-Basis verwendet werden (dies wurde in 6.3 mithilfe von Kompatibilitätsprüfungen vor dem Upgrade durchgeführt).
+Es gibt zwei Ansätze, mit denen Sie die Komplexität des Upgrades bewerten können. Eine Vorphase kann den neu eingeführten Musterdetektor verwenden, der für Ihre AEM 6.1, 6.2 und 6.3-Instanzen verfügbar ist. Der Musterdetektor bietet die einfachste Möglichkeit, die erwartete Gesamtkomplexität des Upgrades anhand der gefundenen Muster zu bewerten. Der Musterdetektorbericht enthält Muster zum Identifizieren nicht verfügbarer APIs, die von der benutzerdefinierten Codebase verwendet werden (dies wurde mithilfe von Kompatibilitätsprüfungen vor der Aktualisierung in 6.3 durchgeführt).
 
-Nach dieser anfänglichen Bewertung kann in einem umfangreicheren nächsten Schritt ein Upgrade einer Testinstanz durchgeführt werden, um einige grundlegende Tests durchzuführen. Adobe bietet auch einige . Außerdem sollte die Liste der [veralteten und entfernten Funktionen](/help/release-notes/deprecated-removed-features.md) überprüft werden, und zwar nicht nur in Bezug auf die Version, auf die Sie die Aktualisierung durchführen, sondern auch bezüglich der Versionen zwischen Ihrer Quell- und Zielversion. Bei einer Aktualisierung von AEM 6.2 auf 6.5 ist es beispielsweise wichtig, die veralteten und entfernten Funktionen von AEM 6.3 neben denen von AEM 6.5 zu überprüfen.
+Nach dieser anfänglichen Bewertung kann in einem umfangreicheren nächsten Schritt ein Upgrade einer Testinstanz durchgeführt werden, um einige grundlegende Tests durchzuführen. Adobe bietet auch einige . Die Liste der [Eingestellte und entfernte Funktionen](/help/release-notes/deprecated-removed-features.md) sollten nicht nur auf die Version überprüft werden, auf die Sie aktualisieren, sondern auch auf alle Versionen zwischen Ihren Quell- und Zielversionen. Bei einer Aktualisierung von AEM 6.2 auf 6.5 ist es beispielsweise wichtig, die veralteten und entfernten Funktionen von AEM 6.3 neben denen von AEM 6.5 zu überprüfen.
 
 ![trei_cropped](assets/trei_cropped.png)
 
@@ -155,15 +151,15 @@ Der kürzlich eingeführte Musterdetektor liefert Ihnen eine recht genaue Schät
 
 ### Erstellen des Runbooks für das Upgrade und das Rollback {#building-the-upgrade-and-rollback-runbook}
 
-Obwohl Adobe den Prozess für die Aktualisierung von AEM-Instanzen dokumentiert hat, muss der Ansatz entsprechend dem Netzwerklayout, der Bereitstellungsarchitektur und den Anpassungen jedes Kunden optimiert und darauf zugeschnitten werden. Wir empfehlen deshalb die gesamte verfügbare Dokumentation zu lesen und auf dieser Basis ein projektspezifisches Runbook mit den speziellen Upgrade- und Rollbackverfahren für Ihre Umgebung zu erstellen. Stellen Sie bei einer Aktualisierung von CRX2 sicher, dass Sie die Dauer der Inhaltsmigration von CRX2 auf Oak evaluieren. Diese kann bei großen Repositorys erheblich sein.
+Während Adobe den Prozess zum Aktualisieren einer AEM-Instanz dokumentiert hat, erfordern das Netzwerklayout, die Bereitstellungsarchitektur und die Anpassungen jedes Kunden eine Feinabstimmung und Anpassung dieses Ansatzes. Aus diesem Grund empfiehlt Ihnen Adobe, alle bereitgestellten Dokumentationen zu lesen und sie zu verwenden, um ein projektspezifisches Runbook zu informieren, in dem die spezifischen Upgrade- und Rollback-Verfahren beschrieben werden, die Sie in Ihrer Umgebung anwenden werden. Stellen Sie bei einer Aktualisierung von CRX2 sicher, dass Sie die Dauer der Inhaltsmigration von CRX2 auf Oak evaluieren. Für große Repositorys könnte dies erheblich sein.
 
 ![runbook-diagram](assets/runbook-diagram.png)
 
-Unter [Upgrade-Verfahren](/help/sites-deploying/upgrade-procedure.md) finden Sie Upgrade- und Rollback-Verfahren sowie schrittweise Anleitungen für die Durchführung eines [In-Place-Upgrade](/help/sites-deploying/in-place-upgrade.md). Diese Anweisungen sollten überprüft und für Ihre Systemarchitektur, Anpassungen und Ausfallzeitentoleranz berücksichtigt werden, um die entsprechenden Switchover- und Rollback-Vorgänge zu bestimmen, die Sie während des Upgrades ausführen. Änderungen an der Architektur oder Servergröße sollten bei der Erstellung Ihres benutzerdefinierten Runbooks miteinbezogen werden. Beachten Sie, dass diese Version als erster Entwurf gelten sollte. Möglicherweise sind nach Abschluss der QS- und Entwicklungszyklen und der Bereitstellung des Upgrades in der Staging-Umgebung weitere Schritte erforderlich. Die Informationen im Dokument sollten möglichst umfassend sein, sodass Ihr Betriebspersonal das Upgrade anhand der darin enthaltenen Informationen vollständig durchführen und abschließen kann.
+Adobe hat Upgrade- und Rollback-Verfahren in [Aktualisierungsverfahren](/help/sites-deploying/upgrade-procedure.md) und schrittweise Anleitungen zum Anwenden des Upgrades unter Ausführen eines [Ersetzende Aktualisierung](/help/sites-deploying/in-place-upgrade.md). Diese Anweisungen sollten überprüft und mit Ihrer Systemarchitektur, Ihren Anpassungen und Ihrer Ausfallzeittoleranz in Betracht gezogen werden, um die geeigneten Umstellungs- und Rollback-Verfahren zu bestimmen, die Sie während des Upgrades ausführen. Änderungen an der Architektur oder Servergröße sollten bei der Erstellung Ihres benutzerdefinierten Runbooks miteinbezogen werden. Beachten Sie, dass diese Version als erster Entwurf gelten sollte. Möglicherweise sind nach Abschluss der QS- und Entwicklungszyklen und der Bereitstellung des Upgrades in der Staging-Umgebung weitere Schritte erforderlich. Die Informationen im Dokument sollten möglichst umfassend sein, sodass Ihr Betriebspersonal das Upgrade anhand der darin enthaltenen Informationen vollständig durchführen und abschließen kann.
 
 ### Entwickeln eines Projektplans {#developing-a-project-plan}
 
-Anhand der Ergebnisse aus den vorherigen Schritten kann ein Projektplan erstellt werden, der die erwarteten Zeitrahmen für den Test- oder Entwicklungsaufwand, Schulungen und das tatsächliche Upgrade beinhaltet.
+Die Ergebnisse früherer Übungen können verwendet werden, um einen Projektplan zu erstellen, der die erwarteten Zeitpläne für Ihre Test- oder Entwicklungsbemühungen, Schulungen und die tatsächliche Durchführung der Aktualisierung abdeckt.
 
 ![develop-project-plan](assets/develop-project-plan.png)
 
@@ -174,30 +170,30 @@ Ein umfassender Projektplan sollte folgende Punkte beinhalten:
 * Aktualisierung der benutzerdefinierten Code-Basis für AEM 6.5
 * Test- und Fehlerbehebungszyklus zur Qualitätssicherung
 * Aktualisierung der Staging-Umgebung
-* Integrations-, Leistungs- und Lasttests
+* Integration, Leistung und Belastungstests
 * Zertifizierung der Umgebung
 * Live-Schaltung
 
-### Entwicklung und Qualitätssicherung (QS) {#performing-development-and-qa}
+### Entwicklung und Qualitätssicherung durchführen {#performing-development-and-qa}
 
-Wir haben Verfahren für das [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) bereitgestellt, damit diese mit AEM 6.5 kompatibel sind. Wenn dieser iterative Prozess ausgeführt wird, sollten nach Bedarf Änderungen am Runbook vorgenommen werden. Auch unter [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md) finden Sie Informationen darüber, wie Sie Ihre Anpassungen in den meisten Fällen abwärtskompatibel halten können, ohne dass sofort nach dem Upgrade Entwicklungsarbeiten erforderlich sind.
+Die Adobe hat Verfahren für [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) , um mit AEM 6.5 kompatibel zu sein. Da dieser iterative Prozess ausgeführt wird, sollten nach Bedarf Änderungen am Runbook vorgenommen werden. Siehe auch [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md) Informationen dazu, wie Ihre Anpassungen in der Regel abwärtskompatibel bleiben können, ohne dass sofort nach der Aktualisierung eine Entwicklung erforderlich ist.
 
 ![patru_cropped](assets/patru_cropped.png)
 
-Der Entwicklungs- und Testprozess ist in der Regel iterativ. Änderungen, die aufgrund von Anpassungen während des Upgrades vorgenommen werden, können potenziell einen kompletten Teil des Produkts unbrauchbar machen. Wenn die Entwickler die Ursache des Problems behoben und das Test-Team Zugriff auf die Funktionen hat, um diese zu testen, werden möglicherweise weitere Probleme gefunden. Werden Probleme identifiziert, die Anpassungen des Upgrade-Prozesses erfordern, stellen Sie sicher, dass Sie diese zum benutzerdefinierten Runbook für das Upgrade hinzufügen. Nach mehreren Test- und Fehlerbehebungsphasen sollte die Codebasis vollständig validiert und zur Implementierung in der Staging-Umgebung bereit sein.
+Der Entwicklungs- und Testprozess ist in der Regel iterativ. Änderungen, die aufgrund von Anpassungen während des Upgrades vorgenommen werden, können potenziell einen kompletten Teil des Produkts unbrauchbar machen. Wenn die Entwickler die Ursache des Problems behoben und das Test-Team Zugriff auf die Funktionen hat, um diese zu testen, werden möglicherweise weitere Probleme gefunden. Werden Probleme identifiziert, die Anpassungen des Upgrade-Prozesses erfordern, stellen Sie sicher, dass Sie diese zum benutzerdefinierten Runbook für das Upgrade hinzufügen. Nach mehreren Iterationen von Tests und Fehlerbehebung sollte die Codebasis vollständig validiert und für die Bereitstellung in der Staging-Umgebung bereit sein.
 
 ### Abschließende Tests {#final-testing}
 
-Nach der Autorisierung der Codebasis durch das QS-Team Ihres Unternehmens wird eine abschließende Testphase empfohlen. Dabei wird Ihr Runbook in einer Staging-Umgebung überprüft, gefolgt von Benutzerakzeptanz-, Leistungs- und Sicherheitstests.
+Adobe empfiehlt eine letzte Testrunde, nachdem die Codebase vom QA-Team Ihres Unternehmens zertifiziert wurde. Diese Testrunde beinhaltet die Validierung Ihres Runbooks in einer Staging-Umgebung, gefolgt von Benutzerakzeptanz-, Leistungs- und Sicherheitstests.
 
 ![cinci_cropped](assets/cinci_cropped.png)
 
-Dieser Schritt ist notwendig, da dies die einzige Gelegenheit ist, bei der Sie die Schritte im Runbook in einer produktionsähnlichen Umgebung überprüfen können. Wenn die Umgebung upgegradet wurde, müssen die Endbenutzer genügend Zeit haben, um sich anzumelden und ihre üblichen täglichen Aktivitäten im System durchzuführen. Nicht selten verwenden Benutzer einen Teil des Systems, den sie zuvor nicht genutzt haben. Durch die Identifizierung und Behebung von Fehlern in diesen Bereichen vor einer Live-Schaltung können teure Produktionsausfälle verhindert werden. Da eine neue AEM-Version erhebliche Änderungen der zugrunde liegenden Plattform mit sich bringt, ist es ebenfalls wichtig, Leistungs-, Last- und Sicherheitstests für das System durchzuführen, und zwar so, als ob dieses zum ersten Mal gestartet wird.
+Dieser Schritt ist notwendig, da dies die einzige Gelegenheit ist, bei der Sie die Schritte im Runbook in einer produktionsähnlichen Umgebung überprüfen können. Nach der Aktualisierung der Umgebung ist es wichtig, Endbenutzern Zeit zu geben, sich anzumelden und die Aktivitäten zu durchlaufen, die sie bei der Verwendung des Systems in ihren täglichen Aktivitäten durchführen. Es ist nicht ungewöhnlich, dass Benutzer einen Teil des Systems verwenden, der zuvor nicht berücksichtigt wurde. Durch die Identifizierung und Behebung von Fehlern in diesen Bereichen vor einer Live-Schaltung können teure Produktionsausfälle verhindert werden. Da eine neue Version von AEM erhebliche Änderungen an der zugrunde liegenden Plattform enthält, ist es auch wichtig, Leistungs-, Last- und Sicherheitstests für das System durchzuführen, als ob Sie es zum ersten Mal starten würden.
 
 ### Durchführen des Upgrades {#performing-the-upgrade}
 
-Wenn alle Beteiligten den Prozess abgezeichnet haben, ist es Zeit für die Ausführung der im Runbook festgelegten Verfahren. Unter [Upgrade-Verfahren](/help/sites-deploying/upgrade-procedure.md) werden Schritte für das Upgrade und das Rollback sowie als Referenz die Installationsschritte bei der Durchführung eines [In-Place-Upgrades](/help/sites-deploying/in-place-upgrade.md) beschrieben.
+Sobald die endgültige Abnahme von allen Beteiligten eingegangen ist, ist es an der Zeit, die definierten Runbook-Verfahren auszuführen. Adobe hat Schritte für die Aktualisierung und das Rollback-Verfahren in [Aktualisierungsverfahren](/help/sites-deploying/upgrade-procedure.md) und Installationsschritte unter Ausführen einer [Ersetzende Aktualisierung](/help/sites-deploying/in-place-upgrade.md) als Referenzpunkt.
 
 ![perform-upgrade](assets/perform-upgrade.png)
 
-Die Upgrade-Anweisungen enthalten eine Reihe von Schritten für die Überprüfung der Umgebung. Hierzu gehören grundlegende Prüfungen wie das Überprüfen der Upgrade-Protokolle und die Verifizierung des ordnungsgemäßen Starts aller OSGi-Bundles. Wir empfehlen jedoch auch eine Validierung anhand eigener Nutzungsszenarien für Ihre Geschäftsprozesse. Darüber hinaus empfiehlt Adobe die Überprüfung des Zeitplans für die Online-Revisionsbereinigung von AEM sowie der zugehörigen Routinen, um sicherzustellen, dass diese nicht zu Stoßzeiten durchgeführt werden. Diese Routinen sind wichtig, um langfristig die Leistung von AEM aufrechtzuerhalten.
+Adobe hat einige Schritte in den Aktualisierungsanweisungen für die Umgebungsvalidierung bereitgestellt. Dazu gehören grundlegende Prüfungen wie das Überprüfen der Aktualisierungsprotokolle und die Überprüfung, ob alle OSGi-Bundles ordnungsgemäß gestartet wurden. Adobe empfiehlt jedoch auch, anhand Ihrer eigenen Testfälle anhand Ihrer Geschäftsprozesse zu validieren. Adobe empfiehlt außerdem, den Zeitplan für AEM Online-Revisionsbereinigung und zugehörige Routinen zu überprüfen, um sicherzustellen, dass diese in einer stillen Zeit für Ihr Unternehmen stattfinden. Diese Routinen sind für die langfristige AEM von entscheidender Bedeutung.

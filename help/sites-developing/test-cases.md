@@ -1,20 +1,16 @@
 ---
 title: Definieren von Testfällen
-seo-title: Defining your Test Cases
 description: Ihre Testfälle sollten auf den Anwendungsfällen und der detaillierten Anforderungsspezifikation basieren
-seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
-uuid: daaa5370-bcd3-45a6-9974-f9b5af6a1529
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
 exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '529'
-ht-degree: 100%
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+workflow-type: tm+mt
+source-wordcount: '514'
+ht-degree: 22%
 
 ---
 
@@ -25,78 +21,77 @@ Ihre Testfälle sollten auf Folgendem basieren:
 **Anwendungsfälle**
 
 * Diese definieren die erforderliche Funktionalität in Bezug auf die Interaktion zwischen Akteuren (Rollen, die bestimmte Aktionen auslösen) und dem System.
-* Die Nutzungsszenarios sollten vom Kunden definiert werden.
+* Die Anwendungsfälle sollten vom Kunden definiert werden.
 
 **Detaillierte Anforderungsspezifikation**
 
-* Alle Funktions- und Leistungsanforderungen sollten getestet werden.
+* Alle funktionalen und leistungsbezogenen Anforderungen sollten getestet werden.
 
-Die Tests sollten eindeutig definieren:
+Die Tests sollten klar definieren:
 
-* Voraussetzungen; diese umfassen möglicherweise bestimmte Systeme, Konfigurationen oder Testerfahrung.
-* Schritte die zu befolgen sind; in angemessenen Details.
+* Voraussetzungen; Diese können bestimmte Systeme, Konfigurationen oder Testerlebnisse abdecken.
+* Schritte, die zu befolgen sind; auf einer geeigneten Detailebene.
 * Erwartete Ergebnisse.
-* Klare Kriterien für Bestehen/Nichtbestehen.
+* Klare Kriterien für Bestehen oder Fehlschlagen.
 
-Die Aussicht, Testfälle zu automatisieren, ist offensichtlich attraktiv, da dadurch repetititve Aufgaben eliminiert werden können.
+Die Möglichkeit der Automatisierung von Testfällen ist attraktiv, da sich wiederholende Aufgaben entfallen.
 
-## Manuelle und automatisierte Tests {#manual-versus-automated-tests}
+## Vergleich von manuellen und automatisierten Tests {#manual-versus-automated-tests}
 
-Die Automatisierung von Testfällen ist jedoch eine erhebliche Investition, daher sollten bestimmte Aspekte berücksichtigt werden:
+Die Automatisierung von Testfällen ist jedoch eine wichtige Investition, daher sollten bestimmte Aspekte berücksichtigt werden:
 
-* Benötigen Zeit, Mühe und Erfahrung beim Einrichten und Konfigurieren.
-* Wenn sie browserbasiert sind, besteht ein erhöhtes Risiko für Probleme, wenn Browser-Updates installiert werden; es bedarf weiterer Korrekturzeit.
-* Nur tatsächlich praktikabel für große Projekte.
-* Gut, wenn mehrere Versionen entweder zum Testen oder im langfristigen Freigabeplan generiert werden.
+* Sie benötigen Zeit, Mühe und Erlebnis für die Einrichtung und Konfiguration.
+* Wenn Browser-basiert sind, besteht ein erhöhtes Risiko von Problemen bei der Installation von Browseraktualisierungen. weitere Korrekturzeit erforderlich machen.
+* Nur bei großen Projekten machbar.
+* Gut, wenn mehrere Versionen entweder zum Testen oder im langfristigen Release-Plan generiert werden.
 
 ## Testen von spezifischen Aspekten {#testing-specific-aspects}
 
-Beim Testen von AEM sind einige spezifische Details von besonderem Interesse:
+Beim AEM sind einige spezifische Details von besonderem Interesse:
 
 **Autor- und Veröffentlichungsumgebung**
 
-Auch wenn dies unter [Umgebungen](/help/sites-developing/the-basics.md#environments) erläutert wird, lohnt es sich, einen entscheidenden Faktor von AEM in Bezug auf Tests noch einmal hervorzuheben.
+Auch wenn in [Umgebungen](/help/sites-developing/the-basics.md#environments), ist es sinnvoll, einen entscheidenden AEM in Bezug auf Tests hervorzuheben.
 
-Sie müssen AEM als zwei Anwendungen betrachten:
+Betrachten Sie AEM als zwei Anwendungen:
 
 * die *Autorenumgebung*
 Diese Instanz ermöglicht es Autoren, Inhalte einzugeben und zu veröffentlichen.
-Sie hat einen klein(er)en, vorhersehbaren Benutzerkreis, für den spezielle Funktionen und Leistung äußerst wichtig sind.
+Dies umfasst einen kleinen (er), vorhersehbaren Satz von Benutzern, für die spezifische Funktionalität und Leistung von entscheidender Bedeutung sind.
 
-* die *Veröffentlichungsumgebung*
-Diese Instanz stellt die Website in veröffentlichter Form dar, auf die Besucher zugreifen können.
-Daraus ergibt sich meist ein größerer Benutzerkreis und das Traffic-Volumen ist nicht immer zu 100 % vorhersehbar. Leistung ist immer noch entscheidend - wenn auf Anfragen reagiert wird. Caching und Lastenausgleich müssen ebenfalls berücksichtigt werden.
+* die *Veröffentlichen* Umgebung Diese Instanz präsentiert die Website in ihrer veröffentlichten Form für den Zugriff durch Besucher.
+Dies umfasst normalerweise eine größere Gruppe von Benutzern, bei denen das Traffic-Volumen nicht immer zu 100 % vorhersehbar ist. Leistung ist immer noch entscheidend - wenn auf Anfragen reagiert wird. Erwägen Sie auch Zwischenspeicherung und Lastenausgleich.
 
-Zwar handelt es sich um dieselbe Software, doch die Umgebungen:
+Obwohl dieselbe Software als solche:
 
-* dienen verschiedenen Zwecken
-* haben unterschiedliche Anforderungen hinsichtlich Funktionalität und Leistung
-* sind unterschiedlich konfiguriert
-* werden separat eingestellt
-* haben jeweils einen eigenen Satz von Funktionstests
+* unterschiedliche Zwecke nutzen
+* verschiedene Anforderungen an Funktionalität und Leistung haben
+* unterschiedlich konfiguriert sind
+* separat eingestellt werden
+* jeder hat seine eigenen Abnahmeprüfungen
 
 Mit anderen Worten, sie müssen separat und mit verschiedenen Testfällen getestet werden.
 
 **Personalisierung**
 
-Beim Testen der Personalisierung sollte jeder einzelne Anwendungsfall mit mehreren Benutzerkonten wiederholt werden, um das Verhalten nachzuweisen.
+Beim Testen der Personalisierung sollte jeder einzelne Anwendungsfall mit mehreren Benutzerkonten wiederholt werden, um das Verhalten zu überprüfen.
 
-Caching muss auch auf korrektes Verhalten geprüft werden.
+Überprüfen Sie auch die Zwischenspeicherung auf korrektes Verhalten.
 
 **Der Dispatcher**
 
-Bei den meisten Projekte installieren Sie den Dispatcher für Caching und Lastenausgleich.
+Bei den meisten Projekten wird der Dispatcher für die Zwischenspeicherung und den Lastenausgleich installiert.
 
-Das Testen ist schwierig (Caching tritt auf unterschiedlichen Ebenen und in verschiedenen Orten auf) und muss auf Blackboxbasis vorgenommen werden. Die zu prüfenden Hauptaspekte sind:
+Das Testen ist schwierig (Zwischenspeicherung erfolgt auf verschiedenen Ebenen und an verschiedenen Orten) und muss auf Blackbox-Basis durchgeführt werden. Die wichtigsten Aspekte, auf die getestet werden muss:
 
 * **Genauigkeit**
-Stellen Sie sicher, dass dem Website-Besucher Inhaltsaktualisierungen angezeigt werden.
+Stellt sicher, dass der Besucher der Website Inhaltsaktualisierungen sieht.
 
 * **Kontinuität**
-Stellen Sie sicher, dass die Website auch dann noch verfügbar ist, wenn ein Server abgeschaltet ist.
+Stellen Sie sicher, dass die Website weiterhin verfügbar ist, wenn ein Server heruntergefahren wird.
 
 * **Cluster**
-Cluster werden verwendet, um Folgendes bereitzustellen:
+Wird verwendet, um Folgendes bereitzustellen:
 
    * **Failover**
 Wenn ein Server ausfällt, übernehmen andere Server im Cluster die Verarbeitung.

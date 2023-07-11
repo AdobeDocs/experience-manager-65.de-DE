@@ -1,15 +1,14 @@
 ---
 title: Verwenden von AEM mit SAP Commerce Cloud
 description: Erfahren Sie, wie Sie AEM mit SAP Commerce Cloud verwenden.
-uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1717'
-ht-degree: 100%
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+workflow-type: tm+mt
+source-wordcount: '1702'
+ht-degree: 80%
 
 ---
 
@@ -52,27 +51,27 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
    >
    >Wählen Sie im Kontextmenü (in der Regel über Rechtsklick aufrufbar) `Create Solr sort` aus.
    >
-   >Öffnen Sie für Hybris 5.0.0 die Registerkarte `Indexed Types`, doppelklicken Sie auf `ClothesVariantProduct`, dann auf die Registerkarte `SOLR Sort`.
+   >Öffnen Sie für Hybris 5.0.0 den `Indexed Types` Registerkarte, doppelklicken `ClothesVariantProduct`, dann die Registerkarte `SOLR Sort`.
 
    ![chlimage_1-36](/help/sites-administering/assets/chlimage_1-36a.png)
 
-1. Legen Sie auf der Registerkarte **Indizierte Typen** unter **Zusammengestellter Typ** den folgenden Wert fest:
+1. Im **Indexierte Typen** Registerkarte, legen Sie die **Zusammengesetzter Typ** an:
 
    `Product - Product`
 
-1. Passen Sie auf der Registerkarte **Indizierte Typen** die **Indexerabfragen** für `full` an:
+1. Im **Indexierte Typen** Registerkarte, passen Sie die **Indexabfragen** für `full`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}})
    ```
 
-1. Passen Sie auf der Registerkarte **Indizierte Typen** die **Indexerabfragen** für `incremental` an:
+1. Im **Indexierte Typen** Registerkarte, passen Sie die **Indexabfragen** für `incremental`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}}) AND {modifiedtime} <= ?lastIndexTime
    ```
 
-1. Passen Sie auf der Registerkarte **Indizierte Typen** die Facette `category` an. Doppelklicken Sie auf den letzten Eintrag in der „category“-Liste, um die Registerkarte **Indizierte Eigenschaft** zu öffnen:
+1. Im **Indexierte Typen** Registerkarte, passen Sie die `category` facet. Doppelklicken Sie auf den letzten Eintrag in der Kategorienliste, um den **Indexierte Eigenschaft** tab:
 
    >[!NOTE]
    >
@@ -85,7 +84,7 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
 1. **Speichern** Sie die Änderungen.
-1. Passen Sie über **SOLR-Elementtypen** die Facette `price` entsprechend den folgenden Screenshots an. Doppelklicken Sie wie bei `category` auf `price`, um die Registerkarte **Indizierte Eigenschaft** zu öffnen:
+1. Passen Sie über **SOLR-Elementtypen** die Facette `price` entsprechend den folgenden Screenshots an. Als `category`, Doppelklick `price` , um **Indexierte Eigenschaft** tab:
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
 
@@ -106,11 +105,11 @@ Sie können die importierte **Katalogversion** (`hybris.catalog.version`) für d
 **Day CQ Commerce Hybris Configuration**
 ( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
-**Katalogversion** wird in der Regel entweder auf `Online` oder `Staged` (Standard) festgelegt.
+**Katalogversion** auf `Online` oder `Staged` (Standardeinstellung).
 
 >[!NOTE]
 >
->In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md). Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
+>In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi. ](/help/sites-deploying/configuring-osgi.md) Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
 
 Die Protokollausgabe bietet Feedback zu den erstellten Seiten und Komponenten und zeigt potenzielle Fehler auf.
 
@@ -151,7 +150,7 @@ Die folgende Auflistung zeigt eine Beispielstruktur (von Assets, Seiten und Komp
               + ...
 ```
 
-Solch eine Struktur wird vom OSGi-Service `DefaultImportHandler` erstellt, der die Schnittstelle `ImportHandler` implementiert. Das Importtool ruft einen Import-Handler auf, um Produkte, Produktvarianten, Kategorien, Assets usw. zu erstellen.
+Solch eine Struktur wird vom OSGi-Service `DefaultImportHandler` erstellt, der die Schnittstelle `ImportHandler` implementiert. Der eigentliche Importeur ruft einen Import-Handler auf, um Produkte, Produktvarianten, Kategorien, Assets usw. zu erstellen.
 
 >[!NOTE]
 >
@@ -162,7 +161,7 @@ Die beim Importieren zu erzeugende Struktur kann für Folgendes konfiguriert wer
 ``**Day CQ Commerce Hybris Default Import Handler**
 `(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
-In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md). Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
+In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi. ](/help/sites-deploying/configuring-osgi.md) Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
 
 ## Konfigurieren der zu ladenden Produktattribute {#configure-the-product-attributes-to-load}
 
@@ -177,7 +176,7 @@ Der Antwort-Parser kann so konfiguriert werden, dass er die Eigenschaften und At
 
    >[!NOTE]
    >
-   >In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md). Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
+   >In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi. ](/help/sites-deploying/configuring-osgi.md) Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
 
 ## Importieren der Produktdaten {#importing-the-product-data}
 
@@ -199,13 +198,13 @@ Die folgenden Eigenschaften geben die Verknüpfung mit Hybris an:
 
 >[!NOTE]
 >
->Die Hybris-Implementierung (d. h. `geometrixx-outdoors/en_US`) speichert nur Produkt-IDs und weitere grundlegende Daten unter `/etc/commerce`.
+>Die hybris-Implementierung (d. h. `geometrixx-outdoors/en_US`) speichert nur Produkt-IDs und andere grundlegende Informationen unter `/etc/commerce`.
 >
 >Der Hybris-Server wird immer dann referenziert, wenn Informationen zu einem Produkt angefordert werden.
 
 ### Vollständiger Import {#full-import}
 
-1. Falls erforderlich, löschen Sie alle vorhandenen Produktdaten mit CRXDE Lite.
+1. Löschen Sie bei Bedarf alle vorhandenen Produktdaten mithilfe von CRXDE Lite.
 
    1. Navigieren Sie zur Unterstruktur mit den Produktdaten:
 
@@ -244,7 +243,7 @@ Die folgenden Eigenschaften geben die Verknüpfung mit Hybris an:
 
 ### Inkrementeller Import {#incremental-import}
 
-1. Überprüfen Sie die in AEM gespeicherten Informationen für die relevanten Produkte in der entsprechenden Unterstruktur unter:
+1. Überprüfen Sie die Informationen in AEM auf die betreffenden Produkte in der entsprechenden Unterstruktur unter:
 
    `/etc/commerce/products`
 
@@ -252,7 +251,7 @@ Die folgenden Eigenschaften geben die Verknüpfung mit Hybris an:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. Aktualisieren Sie in Hybris die gespeicherten Daten zu den relevanten Produkten.
+1. Aktualisieren Sie in hybris die Informationen zu den relevanten Produkten.
 
 1. Öffnen Sie das Hybris-Import-Tool in AEM:
 
@@ -276,7 +275,7 @@ Die folgenden Eigenschaften geben die Verknüpfung mit Hybris an:
 
 Der Importvorgang kann lange dauern. Als Erweiterung der Produktsynchronisierung können Sie daher bestimmte Bereiche des Katalogs für ein Express-Update auswählen, das manuell ausgelöst wird. Dafür wird der Export-Feed zusammen mit der Standard-Attributkonfiguration verwendet.
 
-1. Überprüfen Sie die in AEM gespeicherten Informationen für die relevanten Produkte in der entsprechenden Unterstruktur unter:
+1. Überprüfen Sie die Informationen in AEM auf die betreffenden Produkte in der entsprechenden Unterstruktur unter:
 
    `/etc/commerce/products`
 
@@ -284,9 +283,9 @@ Der Importvorgang kann lange dauern. Als Erweiterung der Produktsynchronisierung
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. Aktualisieren Sie in Hybris die gespeicherten Daten zu den relevanten Produkten.
+1. Aktualisieren Sie in hybris die Informationen zu den relevanten Produkten.
 
-1. Fügen Sie in Hybris die Produkte zur Express-Warteschlange hinzu, z. B.:
+1. Fügen Sie in hybris ein oder mehrere Produkte zur Express-Warteschlange hinzu. Beispiel:
 
    ![chlimage_1-43](/help/sites-administering/assets/chlimage_1-43a.png)
 
@@ -298,7 +297,7 @@ Der Importvorgang kann lange dauern. Als Erweiterung der Produktsynchronisierung
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. Aktivieren Sie das Kontrollkästchen **Express-Update**.
+1. Aktivieren Sie das Kontrollkästchen **Express Update**.
 1. Klicken Sie auf **Katalog importieren**, um den Import zu starten.
 
    Nach Abschluss des Importvorgangs können Sie die aktualisierten Daten in AEM unter folgendem Pfad überprüfen:
@@ -309,14 +308,14 @@ Der Importvorgang kann lange dauern. Als Erweiterung der Produktsynchronisierung
 
 ## Konfigurieren des Katalog-Import-Tools {#configure-the-catalog-importer}
 
-Sie können den Hybris-Katalog in AEM importieren. Nutzen Sie dazu das Batch-Import-Tool für Hybris-Kataloge, -Kategorien und -Produkte.
+Der hybris-Katalog kann in AEM importiert werden, indem der Batch Importer für hybris-Kataloge, -Kategorien und -Produkte verwendet wird.
 
 Die vom Import-Tool verwendeten Parameter können für Folgendes konfiguriert werden:
 
 **Day CQ Commerce Hybris Catalog Importer**
 ( `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
-In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md). Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
+In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi. ](/help/sites-deploying/configuring-osgi.md) Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
 
 ## Katalogimport {#catalog-import}
 
@@ -328,7 +327,7 @@ Verfügbar ist es unter:
 
 ![ecommerceimportconsole](/help/sites-administering/assets/ecommerceimportconsole.png)
 
-Sie müssen die folgenden Informationen angeben:
+Folgende Informationen sind anzugeben:
 
 * **Basisspeicher**
 Die ID des in Hybris konfigurierten Basisspeichers.
@@ -352,12 +351,12 @@ So entfernen Sie ein oder mehrere Produkte aus dem Katalog:
 
    >[!NOTE]
    >
-   >In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md). Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
+   >In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi. ](/help/sites-deploying/configuring-osgi.md) Darüber hinaus enthält die Konsole eine vollständige Liste mit den konfigurierbaren Parametern und den dazugehörigen Standardwerten.
 
 1. Initialisieren Sie das Import-Tool, indem Sie zwei inkrementelle Aktualisierungen durchführen (siehe [Katalogimport](#catalog-import)):
 
-   * Die erste Ausführung resultiert in einigen geänderten Produkten – aufgeführt in der Protokollliste.
-   * Bei der zweiten Ausführung sollten keine Produkte aktualisiert werden.
+   * Die erste Ausführung führt zu einer Reihe von geänderten Produkten, die in der Protokollliste angegeben sind.
+   * Zum zweiten Mal sollten keine Produkte aktualisiert werden.
 
    >[!NOTE]
    >
@@ -378,23 +377,23 @@ So entfernen Sie ein oder mehrere Produkte aus dem Katalog:
    * Suchen Sie nach `Cajamara`.
    * Wählen Sie dieses Produkt aus und ändern Sie den Genehmigungsstatus in `unapproved`.
 
-1. Führen Sie eine weitere inkrementelle Aktualisierung durch (siehe [Katalogimport](#catalog-import)). Im Protokoll wird das gelöschte Produkt aufgeführt.
-1. Führen Sie den [Rollout](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) für den entsprechenden Katalog durch. Das Produkt und die Produktseite wurden aus AEM entfernt.
+1. Führen Sie eine weitere inkrementelle Aktualisierung durch (siehe [Katalogimport](#catalog-import)). Das Protokoll listet das gelöschte Produkt auf.
+1. Führen Sie den [Rollout](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) für den entsprechenden Katalog durch. Die Produkt- und Produktseite wurden aus AEM entfernt.
 
    Beispiel:
 
    * Öffnen Sie:
 
-      [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
+     [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
 
    * Führen Sie den Rollout des Katalogs `Hybris Base` durch.
    * Öffnen Sie:
 
-      [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
+     [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * Das Produkt `Cajamara` wurde aus der Kategorie `Bike` entfernt.
+   * Die `Cajamara` Das Produkt wird aus dem `Bike` category
 
-1. So aktivieren Sie das Produkt erneut:
+1. So reaktivieren Sie das Produkt:
 
    1. Ändern Sie in Hybris den Genehmigungsstatus zurück in **Genehmigt**.
    1. Gehen Sie in AEM wie folgt vor:
@@ -409,7 +408,7 @@ So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/
 
 1. Öffnen Sie die [Client Context-Designseite](/help/sites-administering/client-context.md) auf eine der folgenden Arten:
 
-   * Öffnen Sie eine Seite für die Bearbeitung und anschließend Client Context mit **Strg+Alt+C** (Windows) oder **Ctrl+Wahltaste+C** (Mac). Klicken Sie in der linken oberen Ecke von Client Context auf das Stiftsymbol, um **die ClientContext-Design-Seite zu öffnen**.
+   * Öffnen Sie eine Seite für die Bearbeitung und anschließend Client Context mit **Strg+Alt+C** (Windows) oder **Ctrl+Wahltaste+C** (Mac). Verwenden Sie das Stiftsymbol in der oberen linken Ecke des Client-Kontexts, um **Öffnen Sie die ClientContext-Design-Seite**.
    * Navigieren Sie direkt zu [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html).
 
 1. [Fügen Sie die Komponente **Auftragsverlauf** ](/help/sites-administering/client-context.md#adding-a-property-component) zur Komponente **Warenkorb** des Client-Kontexts hinzu.
@@ -433,7 +432,6 @@ So fügen Sie einen Auftragsverlauf zum [Client Context](/help/sites-developing/
    >
    >  Die Kampagne besteht aus einem Erlebnis.
    >
-   >* Klicken Sie auf das Segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html)).
+   >* Klicken Sie auf das Segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
    >
    >* Das Segment basiert auf der Eigenschaft **Order History Property**.
-

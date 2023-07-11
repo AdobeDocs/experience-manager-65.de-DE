@@ -1,49 +1,47 @@
 ---
 title: Sicherheit
-seo-title: Security
-description: Anwendungssicherheit beginnt während der Entwicklung
-seo-description: Application Security starts during the development phase
+description: Anwendungssicherheit beginnt in der Entwicklungsphase
 exl-id: c4f7f45f-224b-4fc3-b4b0-f5b21b8a466f
-source-git-commit: c55b70ec11842d3f7d82adbf552b2624c1dcc599
-workflow-type: ht
-source-wordcount: '426'
-ht-degree: 100%
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+workflow-type: tm+mt
+source-wordcount: '416'
+ht-degree: 27%
 
 ---
 
 # Sicherheit{#security}
 
-Anwendungssicherheit beginnt während der Entwicklung. Adobe empfiehlt die folgenden Best Practices, um die Sicherheit zu verbessern.
+Anwendungssicherheit beginnt in der Entwicklungsphase. Adobe empfiehlt die Anwendung der folgenden Best Practices für die Sicherheit.
 
-## Verwenden Sie Sitzungsanfragen {#use-request-session}
+## Anforderungssitzung verwenden {#use-request-session}
 
 Gemäß dem Prinzip der geringsten Rechte empfiehlt Adobe, dass jeder Zugriff auf das Repository über die an die Benutzeranfrage gebundene Sitzung und eine angemessene Zugriffskontrolle erfolgt.
 
-## Schutz vor Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
+## Protect gegen Cross-Site Scripting (XSS) {#protect-against-cross-site-scripting-xss}
 
-Mit Cross-Site Scripting (XSS) können Angreifer Code in Webseiten einfügen, die von anderen Benutzern aufgerufen werden. Diese Sicherheitslücke kann von böswilligen Nutzern ausgenutzt werden, um die Zugriffssteuerung zu umgehen.
+Cross-Site Scripting (XSS) ermöglicht es Angreifern, Code in Webseiten einzufügen, die von anderen Benutzern angesehen werden. Diese Sicherheitslücke kann von böswilligen Webbenutzern ausgenutzt werden, um Zugriffskontrollen zu umgehen.
 
-AEM filtert prinzipiell sämtliche vom Benutzer bereitgestellten Inhalte bei der Ausgabe. Bei Entwicklung und Tests hat das Vermeiden von XSS höchste Priorität.
+AEM filtert prinzipiell sämtliche vom Benutzer bereitgestellten Inhalte bei der Ausgabe. Die Prävention von XSS hat sowohl bei der Entwicklung als auch beim Testen höchste Priorität.
 
-Der XSS-Schutzmechanismus, der von AEM bereitgestellt wird, basiert auf der [AntiSamy Java Library](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) von [OWASP (Open Web Application Security Project). ](https://www.owasp.org/) Die standardmäßige AntiSamy-Konfiguration finden Sie unter
+Der von AEM bereitgestellte XSS-Schutzmechanismus basiert auf dem [AntiSamy Java™ Library](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) von [OWASP (Open Web Application Security Project)](https://owasp.org/). Die standardmäßige AntiSamy-Konfiguration finden Sie unter
 
 `/libs/cq/xssprotection/config.xml`
 
-Es ist wichtig, dass Sie diese Konfiguration an Ihre eigenen Sicherheitsanforderungen anpassen, indem Sie die Konfigurationsdatei überlagern. Die offizielle [AntiSamy-Dokumentation](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) bietet alle notwendigen Informationen, um Ihre Sicherheitsanforderungen zu implementieren.
+Es ist wichtig, dass Sie diese Konfiguration an Ihre eigenen Sicherheitsanforderungen anpassen, indem Sie die Konfigurationsdatei überlagern. Der Beamte [AntiSamy-Dokumentation](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) liefert Ihnen alle Informationen, die Sie zur Implementierung Ihrer Sicherheitsanforderungen benötigen.
 
 >[!NOTE]
 >
->Wir empfehlen Ihnen dringend, immer mit der [von AEM bereitgestellten XSSAPI](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/xss/XSSAPI.html) auf die XSS-Schutz-API zuzugreifen.
+>Adobe empfiehlt, immer auf die XSS-Schutz-API zuzugreifen, indem Sie die [Von AEM bereitgestellte XSSAPI](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/xss/XSSAPI.html).
 
-Zusätzlich kann eine Firewall in der Web-Anwendung wie [mod_security für Apache](https://www.modsecurity.org) die Sicherheit der Bereitstellungsumgebung zuverlässig und zentral steuern und diese vor bisher unerkannten Cross-Site-Scripting-Angriffen schützen.
+Außerdem eine Webanwendungs-Firewall, z. B. [mod_security für Apache](https://www.modsecurity.org)kann eine zuverlässige, zentrale Kontrolle über die Sicherheit der Bereitstellungsumgebung bieten und vor zuvor nicht erkannten Cross-Site-Scripting-Angriffen schützen.
 
-## Zugriff auf Cloud-Service-Informationen {#access-to-cloud-service-information}
+## Zugang zu Cloud Service-Informationen {#access-to-cloud-service-information}
 
 >[!NOTE]
 >
->ACLs für die Cloud-Service-Information sowie die OSGi-Einstellungen, die zum Sichern Ihrer Instanz erforderlich sind, sind im [produktionsbereiten Modus](/help/sites-administering/production-ready.md) automatisiert. Das bedeutet, dass Sie die Konfigurationsänderungen nicht manuell vornehmen müssen. Sie sollten sie dennoch überprüfen, bevor Sie Ihre Bereitstellung live schalten.
+>ACLs für die Cloud Service-Informationen und die OSGi-Einstellungen, die zum Sichern Ihrer Instanz erforderlich sind, werden im Rahmen der [Produktionsbereiter Modus](/help/sites-administering/production-ready.md). Dies bedeutet zwar, dass Sie die Konfiguration nicht manuell ändern müssen, es wird jedoch empfohlen, sie zu überprüfen, bevor Sie mit Ihrer Implementierung live gehen.
 
-Wenn Sie [Ihre AEM-Instanz mit Adobe Marketing Cloud integrieren](/help/sites-administering/marketing-cloud.md), verwenden Sie [die Cloud-Service-Konfigurationen](/help/sites-developing/extending-cloud-config.md). Informationen über diese Konfigurationen sowie sämtliche erfassten Statistiken werden im Repository gespeichert. Wenn Sie diese Funktion verwenden, empfehlen wir Ihnen, zu überprüfen, ob die Standard-Sicherheitseinstellungen für diese Daten Ihren Anforderungen entsprechen.
+Wenn Sie [Integrieren Ihrer AEM-Instanz mit Adobe Experience Cloud](/help/sites-administering/marketing-cloud.md), verwenden Sie [Cloud Service-Konfigurationen](/help/sites-developing/extending-cloud-config.md). Informationen zu diesen Konfigurationen sowie alle erfassten Statistiken werden im Repository gespeichert. Adobe empfiehlt, dass Sie bei Verwendung dieser Funktion überprüfen, ob die Standardsicherheit für diese Informationen Ihren Anforderungen entspricht.
 
 Das webservicesupport-Modul schreibt Statistiken und Konfigurationsinformationen unter:
 

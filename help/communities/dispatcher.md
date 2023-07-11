@@ -1,19 +1,15 @@
 ---
 title: Konfigurieren des Dispatchers für Communities
-seo-title: Configuring Dispatcher for Communities
 description: Konfigurieren des Dispatchers für AEM Communities
-seo-description: Configure the dispatcher for AEM Communities
-uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '636'
-ht-degree: 14%
+source-wordcount: '644'
+ht-degree: 12%
 
 ---
 
@@ -25,25 +21,25 @@ Für AEM Communities ist es erforderlich, den Dispatcher zu konfigurieren, um da
 
 So erfahren Sie, was für Ihre spezifische Implementierung und Ihr Site-Design erforderlich ist
 
-* Kontaktieren Sie die [Kundenunterstützung](https://helpx.adobe.com/de/marketing-cloud/contact-support.html)
+* Kontaktieren Sie die [Kundenunterstützung](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support)
 
-Siehe auch die [Dispatcher-Dokumentation](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher.html).
+Siehe auch die [Dispatcher-Dokumentation](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de).
 
 ## Dispatcher-Caching {#dispatcher-caching}
 
 ### Übersicht {#overview}
 
-Das Dispatcher-Caching für AEM Communities ermöglicht es dem Dispatcher, vollständig zwischengespeicherte Versionen der Seiten einer Community-Site bereitzustellen.
+Die Dispatcher-Zwischenspeicherung für AEM Communities ermöglicht es dem Dispatcher, vollständig zwischengespeicherte Versionen der Seiten einer Community-Site bereitzustellen.
 
 Derzeit wird sie nur für anonyme Site-Besucher, wie z. B. Benutzer, die die Community-Site durchsuchen, oder für Besucher, die infolge einer Suche auf einer Community-Seite landen, sowie für Suchmaschinen unterstützt, die Seiten indizieren. Der Vorteil besteht darin, dass anonyme Benutzer und Suchmaschinen eine verbesserte Leistung erleben.
 
-Bei angemeldeten Mitgliedern umgeht der Dispatcher den Cache und leitet Anforderungen direkt an den Publisher weiter, sodass alle Seiten dynamisch generiert und bereitgestellt werden.
+Bei angemeldeten Mitgliedern umgeht der Dispatcher den Cache und leitet Anforderungen direkt an den Herausgeber weiter, sodass alle Seiten dynamisch generiert und bereitgestellt werden.
 
-Wenn dies zur Unterstützung der Dispatcher-Zwischenspeicherung konfiguriert ist, wird der Kopfzeile ein TTL-basierter Ablaufzeitraum &quot;max age&quot;hinzugefügt, um sicherzustellen, dass die im Dispatcher zwischengespeicherten Seiten aktuell sind.
+Wenn diese Konfiguration zur Unterstützung der Dispatcher-Zwischenspeicherung konfiguriert ist, wird der Kopfzeile eine TTL-basierte Ablaufzeit für &quot;max age&quot;hinzugefügt, um sicherzustellen, dass die im Dispatcher zwischengespeicherten Seiten aktuell sind.
 
 ### Voraussetzungen {#requirements}
 
-* Dispatcher-Version 4.1.2 oder höher (siehe [Installieren des Dispatchers](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-install.html) für die neueste Version)
+* Dispatcher-Version 4.1.2 oder höher (siehe [Installieren des Dispatchers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en) für die neueste Version)
 * [ACS AEM Commons-Paket](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Version 3.3.2 oder neuer
@@ -53,45 +49,45 @@ Wenn dies zur Unterstützung der Dispatcher-Zwischenspeicherung konfiguriert ist
 
 Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max. Alter** legt den Ablauf zwischengespeicherter Seiten fest, die unter einem angegebenen Pfad angezeigt werden.
 
-* Aus dem [Web-Konsole](../../help/sites-deploying/configuring-osgi.md)
+* Aus dem [Web-Konsole](../../help/sites-deploying/configuring-osgi.md).
 
    * Beispiel: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Suchen `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
-* Wählen Sie das Symbol &quot;+&quot;aus, um eine neue Verbindungskonfiguration zu erstellen
+* Wählen Sie das Symbol &quot;+&quot;aus, um eine Verbindungskonfiguration zu erstellen.
 
-   ![dispatcher](assets/dispatcher.png)
+  ![dispatcher](assets/dispatcher.png)
 
 * **Filtermuster**
-
-   *(erforderlich)* Ein oder mehrere Pfade zu Community-Seiten. Beispiel: `/content/sites/engage/(.*)`.
+  *(erforderlich)* Ein oder mehrere Pfade zu Community-Seiten. Beispiel: `/content/sites/engage/(.*)`.
 
 * **Max. Alter der Cache-Steuerung**
-
-   *(erforderlich)* Das maximale Alter (in Sekunden), das zum Header &quot;Cache Control&quot;hinzugefügt werden soll. Der Wert muss größer als null (0) sein.
+  *(erforderlich)* Das maximale Alter (in Sekunden), das zum Cache Control-Header hinzugefügt werden soll. Der Wert muss größer als null (0) sein.
 
 ## Dispatcher-Filter {#dispatcher-filters}
 
-Der /filter -Abschnitt der `dispatcher.any` -Datei dokumentiert in [Konfigurieren des Zugriffs auf Inhalte - /filter](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+Der /filter -Abschnitt der `dispatcher.any` -Datei dokumentiert in [Konfigurieren des Zugriffs auf Inhalte - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de).
 
 In diesem Abschnitt werden Einträge beschrieben, die wahrscheinlich für das ordnungsgemäße Funktionieren der Communities-Funktionen erforderlich sind.
 
-Die Namen der Filtereigenschaften folgen der Konvention, eine vierstellige Zahl zu verwenden, um die Reihenfolge anzugeben, in der Filtermuster angewendet werden. Wenn mehrere Filtermuster auf eine Anforderung zutreffen, wird das letzte passende Filtermuster verwendet. So wird häufig das allererste Filtermuster verwendet, um alles zu verweigern, sodass die folgenden Muster dazu dienen, den Zugriff auf eine kontrollierte Weise wiederherzustellen.
+Die Namen der Filtereigenschaften folgen der Konvention, eine vierstellige Zahl zu verwenden, um die Reihenfolge anzugeben, in der Filtermuster angewendet werden. Wenn mehrere Filtermuster auf eine Anforderung zutreffen, ist das letzte angewendete Filtermuster effektiv. Daher wird das erste Filtermuster häufig verwendet, um alles zu verweigern, sodass die folgenden Muster dazu dienen, den Zugriff auf kontrollierte Weise wiederherzustellen.
 
-In den folgenden Beispielen werden Eigenschaftsnamen verwendet, die wahrscheinlich geändert werden müssen, um in eine bestimmte Datei &quot;dispatcher.any&quot;zu passen.
+Die folgenden Beispiele verwenden Eigenschaftsnamen, die wahrscheinlich geändert werden müssen, um in eine bestimmte `dispatcher.any` -Datei.
 
 Siehe auch:
 
-* [Dispatcher-Sicherheitscheckliste](https://helpx.adobe.com/de/experience-manager/dispatcher/using/security-checklist.html)
+* [Dispatcher-Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=de)
 
 >[!NOTE]
 >
 >**Beispiele für Eigenschaftsnamen**
->Alle angezeigten Eigenschaftsnamen, z. B. **/0050** und **/0170**, sollte an eine vorhandene dispatcher.any-Konfigurationsdatei angepasst werden.
+>Alle angezeigten Eigenschaftsnamen, z. B. **/0050** und **/0170**, sollten an die bestehenden `dispatcher.any` Konfigurationsdatei.
+>
 
 >[!CAUTION]
 >
->In der [Dispatcher-Sicherheits-Checkliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) finden Sie weitere Aspekte, wenn der Zugriff unter Verwendung des Dispatchers eingeschränkt ist. Lesen Sie auch den Abschnitt [AEM Sicherheitscheckliste](https://helpx.adobe.com/experience-manager/6-3/sites/administring/using/security-checklist.html) für zusätzliche Sicherheitsdetails bezüglich Ihrer AEM Installation.
+>In der [Dispatcher-Sicherheits-Checkliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) finden Sie weitere Aspekte, wenn der Zugriff unter Verwendung des Dispatchers eingeschränkt ist. Lesen Sie auch den Abschnitt [AEM Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de) für zusätzliche Sicherheitsdetails bezüglich Ihrer AEM Installation.
+>
 
 Die folgenden Einträge sollten am Ende des /filter -Abschnitts hinzugefügt werden, insbesondere nach allen Einträgen, die verweigert werden.
 
@@ -273,9 +269,9 @@ Der Regelabschnitt von `dispatcher.any` definiert, welche Antworten basierend au
 
 ## Fehlerbehebung {#troubleshooting}
 
-Eine Hauptquelle für Probleme ist das Einfügen von Filterregeln, ohne auf die Auswirkungen auf frühere Regeln zu achten, insbesondere wenn eine Regel hinzugefügt wird, um den Zugriff zu verweigern.
+Eine Hauptquelle für Probleme ist das Einfügen von Filterregeln, ohne die Auswirkungen auf frühere Regeln zu beachten, insbesondere wenn eine Regel hinzugefügt wird, um den Zugriff zu verweigern.
 
-Das allererste Filtermuster wird häufig verwendet, um alles zu verweigern, sodass die folgenden Filter den Zugriff kontrolliert wiederherstellen. Wenn mehrere Filter auf eine Anforderung angewendet werden, ist der letzte Filter, der angewendet wird.
+Das erste Filtermuster wird häufig verwendet, um alles zu verweigern, sodass die folgenden Filter den Zugriff kontrolliert wiederherstellen. Wenn mehrere Filter auf eine Anforderung angewendet werden, ist der letzte angewendete Filter derjenige, der tatsächlich angewendet wird.
 
 ## Beispiel für dispatcher.any {#sample-dispatcher-any}
 

@@ -1,20 +1,16 @@
 ---
 title: Analyse mit externen Anbietern
-seo-title: Analytics with External Providers
 description: Erfahren Sie mehr über Analytics mit externen Anbietern.
-seo-description: Learn about Analytics with External Providers.
-uuid: 31a773ca-901e-45f2-be8f-951c26f9dbc5
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: ec4f24528089fe3de639b974ff4ab6f8807fc7fc
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '448'
-ht-degree: 70%
+source-wordcount: '435'
+ht-degree: 35%
 
 ---
 
@@ -28,13 +24,13 @@ Verschiedene vordefinierte Konfigurationen stehen Ihnen zur Integration in den e
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-Sie können auch Ihre eigene Instanz der **Allgemeine Analytics-Snippets** , um neue Dienstkonfigurationen zu definieren.
+Sie können auch Ihre eigene Instanz der **Allgemeine Analytics-Snippets** , um eine neue Dienstkonfiguration zu definieren.
 
-Die Informationen werden dann mithilfe kleiner Codefragmente erfasst, die den Webseiten hinzugefügt werden. Beispiel:
+Die Informationen werden dann von kleinen Codeausschnitten erfasst, die zu den Webseiten hinzugefügt werden. Beispiel:
 
 >[!CAUTION]
 >
->Skripte dürfen nicht in `script`-Tags eingeschlossen werden.
+>Skripte nicht einschließen in `script` Tags.
 
 ```
 var _gaq = _gaq || [];
@@ -57,27 +53,27 @@ Diese Snippets ermöglichen die Erfassung von Daten und die Erstellung von Beric
 
 >[!CAUTION]
 >
->Die Demo-Site von Geometrixx-Outdoors ist so konfiguriert, dass die in den Seiteneigenschaften bereitgestellten Attribute dem HTML-Quell-Code (direkt über dem `</html>`-End-Tag) im entsprechenden `js`-Skript angehängt werden.
+>Die Demosite &quot;Geometrixx-Outdoors&quot;ist so konfiguriert, dass die in den Seiteneigenschaften angegebenen Attribute an den HTML-Quellcode angehängt werden (direkt über dem `</html>` -Tag) im entsprechenden `js` Skript.
 >
 >Wenn der eigene Ordner `/apps` nicht von der Standardseitenkomponente (`/libs/foundation/components/page`) übernommen wird, müssen Sie (oder Ihre Entwickler) sicherstellen, dass die entsprechenden `js`-Skripte enthalten sind, z. B. indem Sie `cq/cloudserviceconfigs/components/servicescomponents` einschließen oder einen ähnlichen Mechanismus verwenden.
 >
->Ohne diese Komponente funktioniert keiner der Dienste (generisch, Analytics, Target usw.).
+>Ohne diese Funktion funktioniert keiner der Dienste (generisch, Analytics, Target usw.).
 
-## Erstellen von neuen Diensten mit einem generischen Snippet {#creating-a-new-service-with-a-generic-snippet}
+## Erstellen eines Dienstes mit einem generischen Snippet {#creating-a-new-service-with-a-generic-snippet}
 
 Für die Grundkonfiguration:
 
 1. Öffnen Sie die **Tools-Konsole**.
-1. Erweitern Sie im linken Bereich die Option **Cloud Service-Konfigurationen**.
-1. Doppelklicken Sie auf **Generisches Analyse-Snippet**, um die Seite zu öffnen:
+1. Erweitern Sie im linken Bereich die **Cloud Services-Konfigurationen**.
+1. Doppelklicken **Generisches Analytics-Snippet** , um die Seite zu öffnen:
 
    ![Generisches Analyse-Snippet](assets/analytics_genericoverview.png)
 
-1. Klicken Sie auf das Plussymbol (+), um eine neue Konfiguration mithilfe des Dialogfelds hinzuzufügen. Sie müssen mindestens einen Namen, z. B. Google Analytics, zuweisen:
+1. Klicken Sie auf + , um eine neue Konfiguration über das Dialogfeld hinzuzufügen. Weisen Sie mindestens einen Namen zu, z. B. Google Analytics:
 
    ![Erstellen einer Konfiguration](assets/analytics_addconfig.png)
 
-1. Klicken Sie auf **Erstellen**, woraufhin sofort das Snippet-Dialogfeld geöffnet wird, und fügen Sie das entsprechende Javascript-Snippet in das Feld ein.
+1. Klicken **Erstellen**, wird das Dialogfeld &quot;Snippet&quot;sofort geöffnet. Fügen Sie das entsprechende JavaScript-Snippet in das Feld ein:
 
    ![Bearbeiten der Komponente](assets/analytics_snippet.png)
 
@@ -85,16 +81,16 @@ Für die Grundkonfiguration:
 
 ## Verwenden des neuen Dienstes auf Seiten {#using-your-new-service-on-pages}
 
-Nach der Erstellung der Dienstkonfiguration müssen Sie nun die erforderlichen Seiten konfigurieren, um sie zu nutzen:
+Nachdem Sie die Dienstkonfiguration erstellt haben, müssen Sie jetzt die erforderlichen Seiten konfigurieren, um sie zu verwenden:
 
 1. Navigieren Sie zu der Seite.
 1. Öffnen Sie die **Seiteneigenschaften** im Sidekick und wählen Sie dann die Registerkarte **Cloud-Services** aus.
-1. Klicken Sie auf **Service hinzufügen** und wählen Sie dann den erforderlichen Dienst aus, zum Beispiel den Dienst **Generisches Analyse-Snippet**:
+1. Klicken **Dienst hinzufügen** und wählen Sie dann den gewünschten Dienst aus. Beispiel: die **Generisches Analytics-Snippet**:
 
    ![Hinzufügen eines Cloud-Service](assets/analytics_selectservice.png)
 
 1. Klicken Sie zum Speichern auf **OK**.
-1. Sie werden zur Registerkarte **Cloud-Services** zurückgeleitet. Der Dienst **Generisches Analyse-Snippet** wird nun mit der Meldung `Configuration reference missing` angezeigt. Wählen Sie in der Dropdown-Liste die spezifische Dienstinstanz aus, zum Beispiel Google Analytics:
+1. Sie kehren zum **Cloud Services** Registerkarte. Der Dienst **Generisches Analyse-Snippet** wird nun mit der Meldung `Configuration reference missing` angezeigt. Wählen Sie über die Dropdown-Liste Ihre spezifische Dienstinstanz aus. Beispiel: google-analytics:
 
    ![Hinzufügen der Cloud Service-Konfiguration](assets/analytics_selectspecificservice.png)
 
@@ -102,7 +98,7 @@ Nach der Erstellung der Dienstkonfiguration müssen Sie nun die erforderlichen S
 
    Das Snippet kann jetzt angezeigt werden, wenn Sie die Seitenquelle für die Seite anzeigen.
 
-   Nach Ablauf eines angemessenen Zeitraums können Sie die gesammelten Statistiken anzeigen.
+   Nach Ablauf einer gewissen Zeit können Sie die gesammelten Statistiken anzeigen.
 
    >[!NOTE]
    >

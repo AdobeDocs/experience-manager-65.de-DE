@@ -1,48 +1,44 @@
 ---
 title: OWASP – Top 10
-seo-title: OWASP Top 10
-description: Erfahren Sie, wie AEM mit den 10 häufigsten OWASP-Sicherheitsrisiken umgeht.
-seo-description: Learn how AEM deals with the top 10 OWASP security risks.
-uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
+description: Erfahren Sie, wie AEM mit den zehn wichtigsten OWASP-Sicherheitsrisiken umgeht.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 exl-id: 8b2a2f1d-8286-4ba5-8fe2-627509c72a45
 feature: Security
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
-workflow-type: ht
-source-wordcount: '496'
-ht-degree: 100%
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 32%
 
 ---
 
 # OWASP – Top 10{#owasp-top}
 
-Das [Open Web Application Security Project](https://www.owasp.org) (OWASP) führt eine Liste zu den ihrer Meinung nach [10 häufigsten Sicherheitsrisiken für Webanwendungen](https://www.owasp.org/index.php/OWASP_Top_Ten_Project).
+Die [Webanwendungs-Sicherheitsprojekt öffnen](https://owasp.org/) (OWASP) verwaltet eine Liste dessen, was sie als [Die zehn häufigsten Sicherheitsrisiken für Webanwendungen](https://owasp.org/www-project-top-ten/).
 
-Diese sind unten aufgeführt – zusammen mit einer Erläuterung, wie CRX mit ihnen umgeht.
+Diese sind unten aufgeführt, zusammen mit einer Erläuterung, wie CRX mit ihnen umgeht.
 
-## 1. Injection {#injection}
+## 1. Injektion {#injection}
 
-* SQL – Vorbeugung durch konstruktive Maßnahmen: Das Standard-Repository umfasst und erfordert keine herkömmliche Datenbank, denn alle Daten werden im Inhalts-Repository gespeichert. Der Zugriff ist komplett auf authentifizierte Benutzer beschränkt und kann nur durch die JCR-API durchgeführt werden. SQL wird nur für Suchanfragen unterstützt (Auswählen). Darüber hinaus bietet SQL Unterstützung für Werte-Binding.
-* LDAP – Die LDAP-Injection ist nicht möglich, da das Authentifizierungsmodul die Eingaben filtert und den Benutzerimport mithilfe der bind-Methode durchführt.
-* BS – Aus der Anwendung heraus wird keine Shell-Ausführung durchgeführt.
+* SQL - Vorsichtshinweis: Die standardmäßige Repository-Einrichtung umfasst keine traditionelle Datenbank und erfordert auch keine solche. Alle Daten werden im Inhalts-Repository gespeichert. Der Zugriff ist auf authentifizierte Benutzer beschränkt und kann nur über die JCR-API erfolgen. SQL wird nur für Suchabfragen (SELECT) unterstützt. Darüber hinaus bietet SQL Unterstützung für die Wertbindung.
+* LDAP - Eine LDAP-Injektion ist nicht möglich, da das Authentifizierungsmodul die Eingabe filtert und den Benutzerimport mithilfe der Bindungsmethode durchführt.
+* BS - In der Anwendung wird keine Shell-Ausführung ausgeführt.
 
 ## 2. Cross-Site Scripting (XSS) {#cross-site-scripting-xss}
 
-Die allgemeine Praxis zur Schadensbegrenzung besteht in der Codierung aller Ausgaben benutzergenerierter Inhalte mithilfe einer Server-seitigen XSS-Schutzbibliothek, die auf dem [OWASP Encoder](https://www.owasp.org/index.php/OWASP_Java_Encoder_Project) und [AntiSamy](https://www.owasp.org/index.php/Category:OWASP_AntiSamy_Project) basiert.
+Die allgemeine Praxis zur Schadensbegrenzung besteht in der Codierung aller Ausgaben benutzergenerierter Inhalte mithilfe einer Server-seitigen XSS-Schutzbibliothek, die auf dem [OWASP Encoder](https://owasp.org/www-project-java-encoder/) und [AntiSamy](https://wiki.owasp.org/index.php/Category:OWASP_AntiSamy_Project) basiert.
 
 XSS hat sowohl bei den Tests als auch bei der Entwicklung eine hohe Priorität und alle festgestellten Probleme werden (in der Regel) umgehend behoben.
 
 ## 3. Fehler in Authentifizierung und Session Management {#broken-authentication-and-session-management}
 
-AEM nutzt fundierte, bewährte Authentifizierungstechniken und greift hierzu auf [Apache Jackrabbit](https://jackrabbit.apache.org/) und [Apache Sling](https://sling.apache.org/) zurück. In AEM werden keine Browser-/HTTP-Sitzungen verwendet.
+AEM nutzt fundierte, bewährte Authentifizierungstechniken und greift hierzu auf [Apache Jackrabbit](https://jackrabbit.apache.org/jcr/index.html) und [Apache Sling](https://sling.apache.org/) zurück. In AEM werden keine Browser-/HTTP-Sitzungen verwendet.
 
 ## 4. Unsichere direkte Objektreferenzen {#insecure-direct-object-references}
 
-Jeglicher Zugriff auf Datenobjekte wird durch ein Repository vermittelt und daher durch die rollenbasierte Zugriffssteuerung beschränkt.
+Der Zugriff auf Datenobjekte wird vom Repository vermittelt und daher durch rollenbasierte Zugriffskontrolle eingeschränkt.
 
 ## 5. Cross-Site Request Forgery (CSRF) {#cross-site-request-forgery-csrf}
 
@@ -50,25 +46,25 @@ Auf das Risiko der Cross-Site Request Forgery (CSRF) wird durch die automatisch
 
 Darüber hinaus ist AEM mit einem Referrer-Header-basierten Filter ausgestattet, der so konfiguriert werden kann, dass er *nur* POST-Anforderungen von bestimmten Hosts (in einer Liste definiert) zulässt.
 
-## 6. Sicherheitsrelevante Fehlkonfiguration {#security-misconfiguration}
+## 6. Sicherheitsfehler {#security-misconfiguration}
 
-Es kann nicht garantiert werden, dass sämtliche Software immer korrekt konfiguriert ist. Allerdings versuchen wir, so viel Hilfe wie möglich bereitzustellen und die Konfiguration so einfach wie möglich zu gestalten. Darüber hinaus ist AEM mit [integrierten Sicherheitsintegritätsprüfungen](/help/sites-administering/operations-dashboard.md) ausgestattet, die Ihnen bei der Überwachung der Sicherheitskonfiguration auf einen Blick helfen.
+Es ist unmöglich zu garantieren, dass alle Software immer korrekt konfiguriert ist. Adobe bemüht sich jedoch, möglichst viele Anleitungen bereitzustellen und die Konfiguration so einfach wie möglich zu gestalten. AEM [Integrierte Sicherheits-Konsistenzprüfungen](/help/sites-administering/operations-dashboard.md) die Ihnen dabei helfen, die Sicherheitskonfiguration auf einen Blick zu verfolgen.
 
-In der [Sicherheitsprüfliste](/help/sites-administering/security-checklist.md) finden Sie weitere Informationen, die Ihnen Schritt für Schritt Härtungsanweisungen bereitstellen.
+Überprüfen Sie die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md) für weitere Informationen, die Ihnen schrittweise Anleitungen zum Härten bieten.
 
 ## 7. Unsicherer kryptografischer Speicher {#insecure-cryptographic-storage}
 
-Die Kennwörter werden als kryptografische Hashes im Benutzerknoten gespeichert. Solche Knoten können standardmäßig nur vom Administrator und vom Benutzer selbst gelesen werden.
+Passwörter werden als kryptografische Hashes im Benutzerknoten gespeichert. Standardmäßig sind solche Knoten nur vom Administrator und vom Benutzer selbst lesbar.
 
-Sensible Daten wie die Drittanbieteranmeldedaten sind in verschlüsselter Form mithilfe einer FIPS 140-2-zertifizierten kryptografischen Bibliothek gespeichert
+Sensible Daten wie Drittanbieter-Anmeldeinformationen werden in verschlüsselter Form mit einer FIPS 140-2-zertifizierten kryptografischen Bibliothek gespeichert.
 
-## 8. Fehlgeschlagene Beschränkung des URL-Zugriffs {#failure-to-restrict-url-access}
+## 8. Fehler beim Einschränken des URL-Zugriffs {#failure-to-restrict-url-access}
 
-Das Repository ermöglicht die Einstellung von [feinabgestimmten Rechten (wie durch JCR angegeben)](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) für jeden Benutzer bzw. jede Gruppe unter jedem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
+Das Repository ermöglicht die Festlegung von [Präzise Berechtigungen (gemäß JCR)](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/16_Access_Control_Management.html) für jeden einzelnen Benutzer oder jede Gruppe an einem beliebigen Pfad über Zugriffssteuerungseinträge. Zugriffbeschränkungen werden durch das Repository durchgesetzt.
 
 ## 9. Unzureichende Transportschichtsicherheit {#insufficient-transport-layer-protection}
 
-Dieses Risiko wird durch die Server-Konfiguration gemindert (z. B. nur HTTPS).
+Wird durch die Serverkonfiguration abgemildert (z. B. nur HTTPS verwenden).
 
 ## 10. Ungeprüfte Um- und Weiterleitungen {#unvalidated-redirects-and-forwards}
 
