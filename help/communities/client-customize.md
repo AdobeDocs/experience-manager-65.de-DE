@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 | **[⇐ Funktionsgrundlagen](essentials.md)** | **[Server-seitige Anpassung imetall](server-customize.md)** |
 |---|---|
-|  | **[SCF-Handlebars Helpers imetall](handlebars-helpers.md)** |
+|   | **[SCF-Handlebars Helpers imetall](handlebars-helpers.md)** |
 
 Um das Erscheinungsbild und/oder Verhalten einer AEM Communities-Komponente Client-seitig anzupassen, gibt es mehrere Ansätze.
 
@@ -41,7 +41,7 @@ Das Verzeichnis /apps ist der erste Ort, der zum Auflösen von Anforderungen ges
 
 Die Standardkomponente im Verzeichnis /libs darf nie geändert werden, da zukünftige Patches und Upgrades das Verzeichnis /libs auf jede erforderliche Weise ändern können, während öffentliche Schnittstellen beibehalten werden.
 
-Dies unterscheidet sich von [Erweiterung](#extensions) eine Standardkomponente, deren Ziel darin besteht, Änderungen für einen bestimmten Verwendungszweck vorzunehmen, einen eindeutigen Pfad zur Komponente zu erstellen und sich darauf zu verlassen, dass im Verzeichnis /libs auf die ursprüngliche Standardkomponente als Superressourcentyp verwiesen wird.
+Dies unterscheidet sich von [Erweiterung](#extensions) eine Standardkomponente, deren Ziel darin besteht, Änderungen für eine bestimmte Verwendung vorzunehmen, einen eindeutigen Pfad zur Komponente zu erstellen und sich darauf zu verlassen, dass im Verzeichnis /libs auf die ursprüngliche Standardkomponente als Superressourcentyp verwiesen wird.
 
 Ein kurzes Beispiel für das Überlagern der Kommentarkomponente finden Sie in der [Tutorial zur Überlagerungskomponente](overlay-comments.md).
 
@@ -63,9 +63,9 @@ Um eine Komponente zu binden, muss das gesamte Komponentenskript in einer &lt;di
 
 * `data-component-id`=&quot;{{id}}&quot;
 
-   wird aus dem Kontext in die ID-Eigenschaft aufgelöst
+  wird aus dem Kontext in die ID-Eigenschaft aufgelöst
 
-* `data-scf-component`=&quot;*&lt;resourceType>*
+* `data-scf-component`=&quot;*&lt;resourcetype>*
 
 Beispiel: von `/apps/weretail/components/hbs/rating/rating.hbs`:
 
@@ -87,7 +87,7 @@ Auf alle Eigenschaften einer Komponente/Ressource kann über die Eigenschaftensc
 
 ## Gestalten von CSS {#skinning-css}
 
-Das Anpassen von Komponenten an das allgemeine Thema der Website kann durch eine &quot;Skinning&quot;-Änderung von Farben, Schriftarten, Bildern, Schaltflächen, Links, Abständen und sogar Positionierung in einem bestimmten Umfang erreicht werden.
+Das Anpassen von Komponenten an das allgemeine Thema der Website kann durch eine &quot;Skinning&quot;-Funktion erreicht werden - das Ändern von Farben, Schriftarten, Bildern, Schaltflächen, Links, Abständen und sogar der Positionierung in einem bestimmten Umfang.
 
 Skinning kann durch selektives Überschreiben der Framework-Stile oder durch Schreiben völlig neuer Stylesheets erreicht werden. Die SCF-Komponenten definieren Namespace-, modulare und semantische CSS-Klassen, die sich auf die verschiedenen Elemente auswirken, aus denen eine Komponente besteht.
 
@@ -106,14 +106,14 @@ Die benutzerdefinierten Stile überschreiben jetzt die standardmäßigen Framewo
 >
 >Jeder CSS-Klassenname, dem das Präfix `scf-js` hat eine bestimmte Verwendung im JavaScript-Code. Diese Klassen wirken sich auf den Status einer Komponente aus (z. B. Umschalten von ausgeblendet auf sichtbar) und sollten weder überschrieben noch entfernt werden.
 >
->Während `scf-js` -Klassen keinen Einfluss auf Stile haben, können die Klassennamen in Stylesheets mit dem Vorbehalt verwendet werden, dass es, da sie die Status von Elementen steuern, möglicherweise Nebenwirkungen geben kann.
+>Während `scf-js` -Klassen keinen Einfluss auf Stile haben, können die Klassennamen in Stylesheets verwendet werden, mit dem Vorbehalt, dass es, da sie die Status von Elementen steuern, möglicherweise Nebenwirkungen geben kann.
 
-## JavaScript erweitern {#extending-javascript}
+## JavaScript-Erweiterung {#extending-javascript}
 
-Um eine JavaScript-Implementierung der Komponenten zu erweitern, müssen Sie:
+Um eine JavaScript-Implementierung der Komponenten zu erweitern, gehen Sie folgendermaßen vor:
 
 1. Erstellen Sie eine Komponente für Ihre App, deren jcr:resourceSuperType auf den Wert des jcr:resourceType der erweiterten Komponente festgelegt ist, z. B. social/forum/components/hbs/forum.
-1. Überprüfen Sie das JavaScript der standardmäßigen SCF-Komponente, um zu ermitteln, welche Methoden mit SCF.registerComponent() registriert werden müssen.
+1. Untersuchen Sie das JavaScript der standardmäßigen SCF-Komponente, um festzustellen, welche Methoden mit SCF.registerComponent() registriert werden müssen.
 1. Kopieren Sie entweder das JavaScript der erweiterten Komponente oder beginnen Sie von Grund auf neu.
 1. Erweitern Sie die -Methode.
 1. Verwenden Sie SCF.registerComponent() , um alle Methoden entweder mit den Standardeinstellungen oder mit den angepassten Objekten und Ansichten zu registrieren.
@@ -151,7 +151,7 @@ Skript-Tags in SCF-Skripten sollten beim Überlagern oder Überschreiben von Kom
 
 ## Clientlibs für SCF {#clientlibs-for-scf}
 
-Die Verwendung von [Client-seitige Bibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs) bietet eine Möglichkeit, JavaScript und CSS zu organisieren und zu optimieren, die zum Rendern von Inhalten auf dem Client verwendet werden.
+Die Verwendung von [Client-seitige Bibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs) bietet eine Möglichkeit zur Organisation und Optimierung von JavaScript und CSS, die zum Rendern von Inhalten auf dem Client verwendet werden.
 
 Die clientlibs für SCF folgen einem sehr spezifischen Benennungsmuster für zwei Varianten, die nur durch das Vorhandensein von &quot;author&quot;im Kategorienamen variieren:
 
@@ -179,7 +179,7 @@ Die [Handbuch zu Community-Komponenten](components-guide.md) listet die vollstä
 
 ### Autor-Clientlibs {#author-clientlibs}
 
-Die clientlibs für die Autorenversion werden auf das für die Implementierung der Komponente erforderliche JavaScript-Minimum reduziert.
+Die clientlibs der Autorenversion werden auf das für die Implementierung der Komponente erforderliche JavaScript-Minimum beschränkt.
 
 Diese Client-seitigen Bibliotheken sollten niemals direkt eingeschlossen werden, sondern stehen stattdessen zur Einbettung in andere Client-Bibliotheken zur Verfügung, die für eine Site handgefertigt sind.
 
@@ -200,10 +200,10 @@ Die erforderlichen Autoren-Client-Bibliotheken können identifiziert werden, ind
 
 Jede Site verwaltet Client-Bibliotheken anders. Verschiedene Faktoren sind:
 
-* Gesamtgeschwindigkeit: Vielleicht ist der Wunsch, dass die Site responsiv ist, aber es ist akzeptabel, dass die erste Seite etwas langsam geladen wird. Wenn viele der Seiten dasselbe JavaScript verwenden, können die verschiedenen JavaScript-Elemente in eine clientlib eingebettet und von der ersten zu ladenden Seite aus referenziert werden. Das JavaScript in diesem einzigen Download bleibt zwischengespeichert, wodurch die Menge der herunterzuladenden Daten für nachfolgende Seiten minimiert wird.
+* Gesamtgeschwindigkeit: Vielleicht ist der Wunsch, dass die Site responsiv ist, aber es ist akzeptabel, dass die erste Seite etwas langsam geladen wird. Wenn viele der Seiten dasselbe JavaScript verwenden, können die verschiedenen JavaScript-Elemente in eine clientlib eingebettet und von der ersten zu ladenden Seite aus referenziert werden. Das JavaScript in diesem einzelnen Download bleibt zwischengespeichert, wodurch die Menge der herunterzuladenden Daten für nachfolgende Seiten minimiert wird.
 * Kurzzeit bis zur ersten Seite: Vielleicht ist der Wunsch, dass die erste Seite schnell geladen wird. In diesem Fall befindet sich das JavaScript in mehreren kleinen Dateien, auf die nur bei Bedarf verwiesen wird.
 * Ein Gleichgewicht zwischen dem ersten Seitenladevorgang und nachfolgenden Downloads.
 
 | **[⇐ Funktionsgrundlagen](essentials.md)** | **[Server-seitige Anpassung imetall](server-customize.md)** |
 |---|---|
-|  | **[SCF-Handlebars Helpers imetall](handlebars-helpers.md)** |
+|   | **[SCF-Handlebars Helpers imetall](handlebars-helpers.md)** |

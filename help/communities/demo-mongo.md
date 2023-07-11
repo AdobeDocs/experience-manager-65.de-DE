@@ -1,9 +1,6 @@
 ---
 title: Einrichten von MongoDB für Demo
-seo-title: How to Setup MongoDB for Demo
 description: Einrichten von MSRP für eine Autoreninstanz und eine Veröffentlichungsinstanz
-seo-description: How to setup MSRP for one author instance and one publish instance
-uuid: d2035a9e-f05c-4f90-949d-7cdae9646750
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -11,16 +8,16 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '767'
 ht-degree: 1%
 
 ---
 
 # Einrichten von MongoDB für Demo {#how-to-setup-mongodb-for-demo}
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
 In diesem Tutorial wird beschrieben, wie Sie [MSRP](msrp.md) für *ein Autor* Instanz und *eine Veröffentlichung* -Instanz.
 
@@ -38,27 +35,27 @@ Diese Konfiguration eignet sich für *Nicht-Produktion* Umgebungen, z. B. für E
 
 ### MongoDB installieren {#install-mongodb}
 
-* MongoDB herunterladen von [https://www.mongodb.org/](https://www.mongodb.org/)
+* MongoDB herunterladen von [https://www.mongodb.com/](https://www.mongodb.com/)
 
    * Wahl des Betriebssystems:
 
-      * Linux
+      * Linux®
       * Mac 10.8
       * Windows 7
+
    * Wahl der Version:
 
       * Verwenden Sie mindestens Version 2.6
 
-
-* Grundkonfiguration
+* Grundlegende Konfiguration
 
    * Befolgen Sie die MongoDB-Installationsanweisungen.
    * Für mongod konfigurieren:
 
       * Es ist nicht erforderlich, Mongos oder die Freigabe zu konfigurieren.
-   * Der installierte MongoDB-Ordner wird als &lt;mongo-install>.
-   * Der definierte Datenordnerpfad wird als &lt;mongo-dbpath>.
 
+   * Der installierte Ordner MongoDB heißt &lt;mongo-install>.
+   * Der definierte Datenordnerpfad wird als &lt;mongo-dbpath>.
 
 * MongoDB kann auf demselben Host wie AEM ausgeführt oder remote ausgeführt werden.
 
@@ -100,13 +97,13 @@ Die folgenden Befehle sind ein Beispiel für die Einrichtung einer Replikatgrupp
 
    * Für jedes Betriebssystem geeignet.
    * Solr Version 7.0.
-   * Solr erfordert Java 1.7 oder höher.
+   * Solr erfordert Java™ 1.7 oder höher.
 
-* Grundkonfiguration
+* Grundlegende Konfiguration
 
    * Folgen Sie dem Solr-Setup &quot;example&quot;.
    * Es ist kein Dienst erforderlich.
-   * Der installierte Solr-Ordner wird als &lt;solr-install>.
+   * Der installierte Solr-Ordner heißt &lt;solr-install>.
 
 ### Solr für AEM Communities konfigurieren {#configure-solr-for-aem-communities}
 
@@ -122,20 +119,21 @@ Die Methode zum Ausführen von Solr kann je nach Version und Art der Installatio
 Zur Vereinfachung und zur Verwendung von Version 4.10 als Beispiel starten Sie Solr im eigenständigen Modus:
 
 * cd bis &lt;solrinstall>/example
-* java -jar start.jar
+* Java™ -jar start.jar
 
-Dadurch wird ein Solr-HTTP-Server mit dem Standardanschluss 8983 gestartet. Sie können zur Solr-Konsole navigieren, um eine Solr-Konsole zum Testen zu erhalten.
+Dieser Prozess startet einen Solr-HTTP-Server mit dem Standardanschluss 8983. Sie können zur Solr-Konsole navigieren, um eine Solr-Konsole zum Testen zu erhalten.
 
 * Standard-Solr-Konsole: [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
 >[!NOTE]
 >
->Wenn die Solr-Konsole nicht verfügbar ist, überprüfen Sie die Protokolle unter &lt;solrinstall>/example/logs. Überprüfen Sie, ob SOLR versucht, an einen bestimmten Hostnamen zu binden, der nicht aufgelöst werden kann (z. B. &quot;user-macbook-pro&quot;).
-Falls ja, aktualisieren Sie die Datei etc/hosts mit einem neuen Eintrag für diesen Hostnamen (z.B. 127.0.0.1 user-macbook-pro) und Solr wird ordnungsgemäß gestartet.
+>Wenn die Solr-Konsole nicht verfügbar ist, überprüfen Sie die Protokolle unter &lt;solrinstall>/example/logs. Überprüfen Sie, ob SOLR versucht, sich an einen bestimmten Hostnamen zu binden, der nicht aufgelöst werden kann (z. B. &quot;user-macbook-pro&quot;).
+>
+Wenn ja, aktualisieren Sie `etc/hosts` -Datei mit einem neuen Eintrag für diesen Hostnamen (z. B. 127.0.0.1 user-macbook-pro), um Solr richtig zu starten.
 
 ### SolrCloud {#solrcloud}
 
-Um ein sehr einfaches SolrCloud-Setup (nicht die Produktion) auszuführen, starten Sie solr mit:
+Um ein einfaches SolrCloud-Setup (nicht die Produktion) auszuführen, starten Sie solr mit:
 
 * `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
@@ -161,7 +159,7 @@ Um den gemeinsamen MongoDB-Speicher zu testen und zu überprüfen, posten Sie ei
 
    ![view-comment](assets/view-comment.png)
 
-   Hinweis: Während es JCR-Knoten unter der *asipath* auf der Autoreninstanz, sind diese für das SCF-Framework bestimmt. Die tatsächliche UGC befindet sich nicht in JCR, sondern in der MongoDB.
+   Hinweis: Während es JCR-Knoten unter der *asipath* Auf der Autoreninstanz sind diese Knoten für das SCF-Framework vorgesehen. Die tatsächliche UGC befindet sich nicht in JCR, sondern in der MongoDB.
 
 1. Anzeigen der benutzergenerierten Inhalte in mongodb **[!UICONTROL Communities]** > **[!UICONTROL Sammlungen]** > **[!UICONTROL Inhalt]**
 
@@ -171,8 +169,8 @@ Um den gemeinsamen MongoDB-Speicher zu testen und zu überprüfen, posten Sie ei
 
    * Navigieren Sie zum Solr-Dashboard: [http://localhost:8983/solr/](http://localhost:8983/solr/).
    * Benutzer `core selector` auswählen `collection1`.
-   * Wählen Sie nun eine der folgenden Optionen aus `Query`.
-   * Wählen Sie nun eine der folgenden Optionen aus `Execute Query`.
+   * Klicken Sie auf `Query`.
+   * Klicken Sie auf `Execute Query`.
 
    ![ugc-solr](assets/ugc-solr.png)
 
@@ -184,9 +182,9 @@ Um den gemeinsamen MongoDB-Speicher zu testen und zu überprüfen, posten Sie ei
 
 1. Stellen Sie sicher, dass MSRP als Standardanbieter konfiguriert wurde:
 
-   * Rufen Sie auf allen Autoren- und Veröffentlichungsinstanzen AEM erneut die [Speicherkonfigurationskonsole](srp-config.md) oder überprüfen Sie das AEM Repository:
+   * Rufen Sie auf allen Autoren- und Veröffentlichungsinstanzen AEM erneut die [Speicherkonfigurationskonsole](srp-config.md)oder überprüfen Sie das AEM Repository:
 
-   * Wenn in JCR [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) enthält keine [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) -Knoten bedeutet, dass der Speicheranbieter JSRP ist.
+   * Wenn in JCR [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) enthält keine [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) Knoten bedeutet dies, dass der Speicheranbieter JSRP ist.
    * Wenn der Knoten srpc vorhanden ist und den Knoten enthält [defaultconfiguration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), sollten die Eigenschaften der Standardkonfiguration MSRP als Standardanbieter definieren.
 
 1. Stellen Sie sicher, dass AEM nach Auswahl von MSRP neu gestartet wurde.

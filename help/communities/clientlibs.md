@@ -1,32 +1,28 @@
 ---
 title: Clientlibs für Communities-Komponenten
-seo-title: Clientlibs for Communities Components
 description: Client-seitige Bibliotheken für Communities
-seo-description: Client-side libraries for Communities
-uuid: d2a9f986-96cf-4ee8-81e6-36a96f45ddcb
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '373'
 ht-degree: 2%
 
 ---
 
 # Clientlibs für Communities-Komponenten {#clientlibs-for-communities-components}
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
 In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie clientseitige Bibliotheken (clientlibs) zu einer Seite für Communities-Komponenten hinzufügen.
 
 Grundlegende Informationen finden Sie unter :
 
-* [Verwenden Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md) , das Nutzungsdetails sowie Debugging-Tools bereitstellt
+* [Verwenden Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md) , das Nutzungsdetails und Debugging-Tools bereitstellt
 * [Clientlibs für SCF](/help/communities/client-customize.md#clientlibs) , die nützliche Informationen beim Anpassen von SCF-Komponenten bietet
 
 
@@ -36,7 +32,7 @@ Clientlibs sind für die ordnungsgemäße Funktion (JavaScript) und Formatierung
 
 Wenn eine [Community-Funktion](/help/communities/functions.md) für eine Funktion sind alle erforderlichen Komponenten und Konfigurationen, einschließlich der erforderlichen clientlibs, auf der Community-Site vorhanden. Nur wenn Autoren zusätzliche Komponenten zur Verfügung stehen sollen, müssen zusätzliche Client-Bibliotheken hinzugefügt werden.
 
-Wenn die erforderlichen clientlibs fehlen, [Hinzufügen einer Communities-Komponente zu einer Seite](/help/communities/author-communities.md) kann zu JavaScript-Fehlern sowie einem unerwarteten Erscheinungsbild führen.
+Wenn die erforderlichen clientlibs fehlen, [Hinzufügen einer Communities-Komponente zu einer Seite](/help/communities/author-communities.md) kann zu JavaScript-Fehlern und einem unerwarteten Erscheinungsbild führen.
 
 ### Beispiel : Platzierte Prüfungen ohne Clientlibs {#example-placed-reviews-without-clientlibs}
 
@@ -52,7 +48,7 @@ Die grundlegenden Funktionsinformationen für Entwickler identifizieren die erfo
 
 Darüber hinaus navigieren Sie von einer AEM-Instanz zum [Handbuch zu Community-Komponenten](/help/communities/components-guide.md) bietet Zugriff auf eine Liste von clientlib-Kategorien, die für eine Komponente erforderlich sind.
 
-Beispiel: ganz oben im [Überprüfungsseite](https://localhost:4502/content/community-components/en/reviews.html) die aufgelisteten erforderlichen clientlibs
+Beispiel: oben im [Überprüfungsseite](https://localhost:4502/content/community-components/en/reviews.html) die aufgelisteten erforderlichen clientlibs
 
 * cq.ckeditor
 * cq.social.hbs.reviews
@@ -82,13 +78,13 @@ So fügen Sie eine Clientlib für eine Community-Site hinzu: [CRXDE Lite](/help/
 
          * Wiederholen Sie dies, um weitere Client-Bibliotheken hinzuzufügen.
 
-         * Klicken Sie auf **OK**.
-   * Wählen Sie **Alle speichern** aus.
+         * Wählen Sie **OK** aus.
 
+   * Klicken Sie auf **Alle speichern**.
 
 >[!NOTE]
 >
->Wenn es sich bei der Site nicht um eine Community-Site handelt, müssen die Existenz oder der Speicherort der Client-Bibliotheken, die für die Site verwendet werden, ermittelt werden.
+>Wenn es sich bei der Site nicht um eine Community-Site handelt, muss das Vorhandensein oder der Speicherort der Client-Bibliotheken ermittelt werden, die für die Site verwendet werden.
 
 Verwenden der [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) Beispiel, wobei `site-name` is *interagieren* festgelegt ist, wird die clientliblist so angezeigt, wenn die Reviews-Komponente hinzugefügt wird:
 
