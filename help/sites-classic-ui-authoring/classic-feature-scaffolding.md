@@ -1,26 +1,24 @@
 ---
 title: Strukturvorlage
-description: Manchmal muss eine große Anzahl von Seiten erstellt werden, die zwar die gleiche Struktur, aber unterschiedliche Inhalte haben. Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dessen Felder die gewünschte Seitenstruktur bilden. Anhand dieses Formulars können Sie ganz einfach auf dieser Struktur basierende Seiten erstellen.
-uuid: 5904abc0-b256-4da4-a7d7-3c17ea299648
+description: Manchmal müssen Sie eine große Anzahl von Seiten erstellen, die zwar eine gemeinsame Struktur aufweisen, aber unterschiedliche Inhalte haben. Mit Strukturvorlage können Sie ein Formular (eine Grundlage) mit Feldern erstellen, die die gewünschte Struktur für Ihre Seiten widerspiegeln. Mithilfe dieses Formulars können Sie dann einfach Seiten erstellen, die auf dieser Struktur basieren.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1448'
-ht-degree: 100%
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+workflow-type: tm+mt
+source-wordcount: '1432'
+ht-degree: 59%
 
 ---
 
 # Strukturvorlage{#scaffolding}
 
-Manchmal muss eine große Anzahl von Seiten erstellt werden, die zwar die gleiche Struktur, aber unterschiedliche Inhalte haben. Über die standardmäßige AEM-Benutzeroberfläche müssten Sie jede Seite erstellen, die entsprechenden Komponenten auf die Seite ziehen und sie einzeln ausfüllen.
+Manchmal müssen Sie eine große Anzahl von Seiten erstellen, die zwar eine gemeinsame Struktur aufweisen, aber unterschiedliche Inhalte haben. Über die Standard-Benutzeroberfläche von Adobe Experience Manager (AEM) müssten Sie jede Seite erstellen, die entsprechenden Komponenten auf die Seite ziehen und jede einzelne davon einzeln ausfüllen.
 
-Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dessen Felder die gewünschte Seitenstruktur bilden. Anhand dieses Formulars können Sie ganz einfach auf dieser Struktur basierende Seiten erstellen.
+Mit Strukturvorlage können Sie ein Formular (eine Grundlage) mit Feldern erstellen, die die gewünschte Struktur für Ihre Seiten widerspiegeln. Mithilfe dieses Formulars können Sie dann einfach Seiten erstellen, die auf dieser Struktur basieren.
 
 >[!NOTE]
 >
@@ -30,9 +28,9 @@ Eine Strukturvorlage dient zur Erstellung eines Formulars (einer Struktur), dess
 
 Strukturvorlagen sind über die **Tools**-Konsole des SiteAdmin-Bereichs verfügbar.
 
-* Öffnen Sie die **Tools**-Konsole und klicken Sie auf **Strukturvorlage der Standardseite**.
+* Öffnen Sie die **Instrumente** und klicken Sie auf **Strukturvorlage der Standardseite**.
 * Klicken Sie darunter auf **Geometrixx**.
-* Unter **Geometrixx** finden Sie eine *Strukturvorlagen-Seite* namens **Nachrichten**. Doppelklicken Sie, um diese Seite zu öffnen.
+* under **Geometrixx**, finden Sie *Strukturseite* aufgerufen **Nachrichten**. Doppelklicken Sie, um diese Seite zu öffnen.
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
 
@@ -42,10 +40,10 @@ Die Strukturvorlage besteht aus einem Formular mit einem Feld für jedes Inhalts
 
 Die Eigenschaften der Strukturvorlagen-Seite sind:
 
-* **Titeltext**: Dies ist der Name dieser Strukturvorlagen-Seite selbst. In diesem Beispiel heißt sie „Nachrichten“.
+* **Titeltext**: Dies ist der Name dieser Strukturvorlagen-Seite selbst. In diesem Beispiel heißt es &quot;News&quot;.
 * **Beschreibung**: Dies wird unter dem Titel auf der Strukturvorlagen-Seite angezeigt.
-* **Zielvorlage**: Dies ist die Vorlage, die diese Strukturvorlage beim Erstellen einer neuen Seite verwenden wird. In diesem Beispiel handelt es sich um eine Vorlage für eine *Geometrixx-Inhaltsseite*.
-* **Zielpfad**: Dies ist der Pfad der übergeordneten Seite, unter der diese Strukturvorlage neue Seiten erstellt. In diesem Beispiel lautet der Pfad */content/geometrixx/de/news*.
+* **Zielvorlage**: Dies ist die Vorlage, die diese Grundlage beim Erstellen einer Seite verwenden wird. In diesem Beispiel handelt es sich um eine *Geometrixx-Inhaltsseite* Vorlage.
+* **Zielpfad**: Dies ist der Pfad der übergeordneten Seite, unter der diese Grundlage Seiten erstellt. In diesem Beispiel lautet der Pfad */content/geometrixx/en/news*.
 
 Der Textkörper der Strukturvorlage ist das Formular. Wenn ein Benutzer eine Seite mithilfe der Strukturvorlage erstellen möchte, füllt er das Formular aus und klickt unten auf *Erstellen*. Im Beispiel **Nachrichten** oben weist das Formular die folgenden Felder auf:
 
@@ -60,15 +58,15 @@ Der Textkörper der Strukturvorlage ist das Formular. Wenn ein Benutzer eine Sei
 
 ### Erstellen einer Strukturvorlage {#creating-a-scaffold}
 
-Um eine Strukturvorlage zu erstellen, wählen Sie in der **Tools**-Konsole die Option **Standardseiten-Strukturvorlage** aus und erstellen Sie eine neue Seite. Eine *Strukturvorlagen-Vorlage* ist als einseitige Vorlage verfügbar.
+Um eine neue Grundlage zu erstellen, navigieren Sie zum **Instrumente** Console, dann **Strukturvorlage der Standardseite** und erstellen Sie eine Seite. Ein einseitiger Vorlagentyp ist verfügbar. *Strukturvorlage.*
 
-Legen Sie in den **Seiteneigenschaften** der neuen Seite die Optionen *Titeltext*, *Beschreibung*, *Zielvorlage* und *Zielpfad* wie oben beschrieben fest.
+Navigieren Sie zu **Seiteneigenschaften** der neuen Seite und legen Sie die *Titeltext*, *Beschreibung*, *Zielvorlage* und *Zielpfad*, wie oben beschrieben.
 
-Als nächstes müssen Sie die Struktur der Seite festlegen, die mithilfe der Strukturvorlage erstellt wird. Um dies zu tun, wechseln Sie auf der Strukturvorlagenseite in den **[Designmodus](/help/sites-authoring/page-authoring.md#sidekick)**. Es wird ein Link angezeigt, mit dessen Hilfe Sie die Strukturvorlage im **Dialog-Editor** bearbeiten können.
+Als nächstes müssen Sie die Struktur der Seite festlegen, die mithilfe der Strukturvorlage erstellt wird. Gehen Sie dazu in **[Designmodus](/help/sites-authoring/page-authoring.md#sidekick)** auf der Strukturvorlagenseite. Es wird ein Link angezeigt, mit dessen Hilfe Sie die Strukturvorlage im **Dialog-Editor** bearbeiten können.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
-Im Dialog-Editor legen Sie die Eigenschaften fest, die für jede Seite gelten, die mithilfe der Strukturvorlage erstellt wird.
+Im Dialog-Editor legen Sie die Eigenschaften fest, die bei jeder Erstellung einer neuen Seite mithilfe dieser Grundlage erstellt werden.
 
 Die Dialogdefinition für eine Strukturvorlage funktioniert ähnlich wie bei einer Komponente (siehe [Komponenten](/help/sites-developing/components.md)). Es gibt jedoch einige wichtige Unterschiede:
 
@@ -78,11 +76,11 @@ Die Dialogdefinition für eine Strukturvorlage funktioniert ähnlich wie bei ein
 
 Ein Blick auf die Beispiel-Strukturvorlage **Nachrichten** im Dialog-Editor hilft zu erklären, wie dies funktioniert. Wechseln Sie in den Designmodus auf der Strukturvorlagen-Seite und klicken Sie auf den Link des Dialogfeldeditors.
 
-Klicken Sie nun auf das Dialogfeld **Dialogfeld > Registerfeld > Text > Text**, wie in der folgenden Abbildung zu sehen:
+Klicken Sie jetzt auf das Dialogfeld **Dialogfeld > Registerkartenfeld > Text > Text**, wie folgt:
 
 ![textedit](assets/textedit.png)
 
-Daraufhin wird die Eigenschaftenliste für dieses Feld auf der rechten Seite des Dialog-Editors wie folgt angezeigt:
+Die Eigenschaftsliste für dieses Feld wird rechts im Dialogfeldeditor wie folgt angezeigt:
 
 ![list_of_properties](assets/list_of_properties.png)
 
@@ -97,9 +95,9 @@ Dies definiert den Speicherort des Inhaltsspeichers für den Text, der in dieses
 * Die Tatsache, dass die hier gespeicherte Zeichenfolge als *Rich-Text* interpretiert werden muss, und
 * welche Komponente zum Rendern dieses Inhalts auf der resultierenden Seite verwendet werden soll.
 
-Beachten Sie, dass Sie in einem normalen Komponentendialogfeld diese Informationen nicht angeben müssen, da dies dadurch impliziert wird, dass das Dialogfeld bereits an eine bestimmte Komponente gebunden ist.
+In einem normalen Komponentendialogfeld müssen Sie diese Informationen nicht angeben, da dies dadurch impliziert wird, dass das Dialogfeld bereits an eine bestimmte Komponente gebunden ist.
 
-Zur Angabe dieser beiden Informationen verwenden Sie ausgeblendete Felder. Klicken Sie auf das erste ausgeblendete Feld **Dialogfeld > Registerfeld > Text > Ausgeblendet**, wie in der folgenden Abbildung zu sehen:
+Um diese beiden Informationen anzugeben, verwenden Sie ausgeblendete Felder. Klicken Sie auf das erste ausgeblendete Feld **Dialogfeld > Registerkartenfeld > Text > Ausgeblendet**, wie folgt:
 
 ![hidden](assets/hidden.png)
 
@@ -113,13 +111,13 @@ Die Namenseigenschaft dieses ausgeblendeten Felds lautet:
 
 Hierbei handelt es sich um eine boolesche Eigenschaft für die Auswertung der Textzeichenfolge, die unter `./jcr:content/par/text/text` gespeichert ist.
 
-Da wir wissen, dass der Text als Rich-Text ausgewertet werden soll, setzen wir die Eigenschaft `value` dieses Felds auf `true`.
+Da wir wissen, dass der Text als Rich-Text interpretiert werden soll, legen wir die `value` Eigenschaft dieses Felds als `true`.
 
 >[!CAUTION]
 >
->Der Dialog-Editor ermöglicht die Änderung der Werte *bestehender* Eigenschaften in der Dialogdefinition. Um eine neue Eigenschaft hinzuzufügen, muss die Benutzerin oder der Benutzer [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) verwenden. Wenn beispielsweise ein neues ausgeblendetes Feld zu einer Dialogfelddefinition mit dem Dialogfeldeditor hinzugefügt wird, verfügt es über keine *Wert*-Eigenschaft (d. h. eine Eigenschaft mit dem Namen „Wert“). Wenn das betreffende ausgeblendete Feld die Standardeigenschaft *Wert* erfordert, muss diese Eigenschaft manuell mit einem der CRX-Tools hinzugefügt werden. Der Wert kann nicht mit dem Dialogfeldeditor selbst hinzugefügt werden. Sobald die Eigenschaft jedoch vorhanden ist, kann ihr Wert mit dem Dialogfeldeditor bearbeitet werden.
+>Der Dialog-Editor ermöglicht die Änderung der Werte *bestehender* Eigenschaften in der Dialogdefinition. Um eine neue Eigenschaft hinzuzufügen, muss die Benutzerin oder der Benutzer [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) verwenden. Wenn beispielsweise ein neues ausgeblendetes Feld zu einer Dialogfelddefinition mit dem Dialogfeldeditor hinzugefügt wird, verfügt es über keine *value* -Eigenschaft (d. h. eine Eigenschaft mit dem Namen &quot;value&quot;). Wenn für das betreffende ausgeblendete Feld eine Standardwerteigenschaft festgelegt werden muss, muss diese Eigenschaft manuell mit einem der CRX-Tools hinzugefügt werden. Der Wert kann nicht mit dem Dialogfeldeditor selbst hinzugefügt werden. Sobald die Eigenschaft jedoch vorhanden ist, kann ihr Wert mit dem Dialogfeldeditor bearbeitet werden.
 
-Das zweite ausgeblendete Feld kann wie folgt angezeigt werden, indem Sie draufklicken:
+Das zweite ausgeblendete Feld kann durch Klicken wie folgt angezeigt werden:
 
 ![hidden2](assets/hidden2.png)
 
@@ -131,7 +129,7 @@ Die Namenseigenschaft dieses ausgeblendeten Felds lautet:
 
 `./jcr:content/par/text/sling:resourceType`
 
-Der feste Wert für diese Eigenschaft lautet:
+Der für diese Eigenschaft angegebene feste Wert lautet
 
 `foundation/components/textimage`
 
@@ -143,10 +141,10 @@ Auf der klassischen Benutzeroberfläche sind Strukturvorlagen vollständig in di
 
 Wenn Sie eine Seite im **Strukturvorlagenmodus** öffnen (über das Symbol im unteren Sidekick-Bereich), werden alle Komponenten, für die Vererbung gilt, folgendermaßen gekennzeichnet:
 
-* ein Vorhängeschloss-Symbol (für die meisten Komponenten, z. B. Text und Titel)
+* ein Sperrsymbol (für die meisten Komponenten; z. B. Text und Titel)
 * eine Maske mit dem Text **Klicken Sie, um die Vererbung abzubrechen** (für Bildkomponenten)
 
-Diese zeigen an, dass die Komponente erst bearbeitet werden kann, wenn die Vererbung abgebrochen wird.
+Diese zeigen, dass die Komponente erst bearbeitet werden kann, wenn die Vererbung abgebrochen wurde.
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -156,13 +154,13 @@ Diese zeigen an, dass die Komponente erst bearbeitet werden kann, wenn die Verer
 
 Durch Klicken auf das Sperrsymbol oder das Bildsymbol können Sie die Vererbung unterbrechen:
 
-* Das Symbol ändert sich in ein geöffnetes Vorhängeschloss.
+* das Symbol wird in ein geöffnetes Vorhängeschloss geändert.
 * Nach erfolgter Entsperrung können Sie den Inhalt bearbeiten.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-Nach dem Entsperren können Sie die Vererbung wiederherstellen, indem Sie auf das Symbol des geöffneten Vorhängeschlosses klicken. Dabei gehen jedoch alle vorgenommenen Änderungen verloren.
+Nach dem Entsperren können Sie die Vererbung wiederherstellen, indem Sie auf das Entsperrte Vorhängeschloss-Symbol klicken. Dadurch gehen alle von Ihnen vorgenommenen Änderungen verloren.
 
 >[!NOTE]
 >
->Wenn die Vererbung auf Seitenebene (über die Registerkarte „Live Copy“ der Seiteneigenschaften) abgebrochen wird, können alle Komponenten im **Strukturvorlagenmodus** bearbeitet werden (sie werden in entsperrtem Status angezeigt).
+>Wenn die Vererbung auf Seitenebene abgebrochen wird (über die Registerkarte Live Copy der Seiteneigenschaften), sind alle Komponenten in **Strukturvorlage** -Modus (sie werden im entsperrten Status angezeigt).
