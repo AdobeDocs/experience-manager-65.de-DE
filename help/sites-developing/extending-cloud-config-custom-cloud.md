@@ -1,41 +1,37 @@
 ---
 title: Erstellen eines individuellen Cloud-Services
-seo-title: Creating a Custom Cloud Service
-description: Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services erweitert werden
-seo-description: The default set of Cloud Services can be extended with custom Cloud Service types
-uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
+description: Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-Typen erweitert werden
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '418'
-ht-degree: 100%
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+workflow-type: tm+mt
+source-wordcount: '406'
+ht-degree: 51%
 
 ---
 
 # Erstellen eines individuellen Cloud-Services{#creating-a-custom-cloud-service}
 
-Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services erweitert werden. So können Sie auf strukturierte Weise eigenes Markup in die Seite einfügen. Diese Funktion ist hauptsächlich für externe Analyseanbieter hilfreich, z. B. Google Analytics, Chartbeat usw. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf jeder Ebene unterbrochen werden.
+Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-Typen erweitert werden. Auf diese Weise können Sie benutzerdefiniertes Markup strukturiert in die Seite einfügen. Dies ist vor allem für Analytics-Anbieter von Drittanbietern, wie z. B. Google Analytics, CharterBeat usw., nützlich. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf jeder Ebene unterbrochen werden.
 
 >[!NOTE]
 >
->In dieser Schritt-für-Schritt-Anleitung zum Erstellen eines neuen Cloud-Service wird Google Analytics als Beispiel verwendet. Einige Informationen treffen auf Ihren Anwendungsfall möglicherweise nicht zu.
+>Diese schrittweise Anleitung zum Erstellen eines Cloud Service ist ein Beispiel für die Verwendung von Google Analytics. Alles trifft möglicherweise nicht auf Ihren Anwendungsfall zu.
 
-1. Erstellen Sie in CRXDE Lite einen neuen Knoten unter `/apps`:
+1. Erstellen Sie in CRXDE Lite einen Knoten unter `/apps`:
 
    * **Name**: `acs`
    * **Typ**: `nt:folder`
 
-1. Erstellen Sie einen neuen Knoten unter `/apps/acs`:
+1. Erstellen Sie einen Knoten unter `/apps/acs`:
 
    * **Name**: `analytics`
    * **Typ**: `sling:Folder`
 
-1. Erstellen Sie zwei neue Knoten unter `/apps/acs/analytics`:
+1. Erstellen Sie zwei Knoten unter `/apps/acs/analytics`:
 
    * **Name**: components
    * **Typ**: `sling:Folder`
@@ -45,8 +41,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
    * **Name**: templates
    * **Typ**: `sling:Folder`
 
-
-1. Klicken Sie mit der rechten Maustaste auf `/apps/acs/analytics/components`. Wählen Sie **Erstellen...** und dann **Komponente erstellen...** aus. Im Dialogfeld, das sich öffnet, können Sie Folgendes angeben:
+1. Rechtsklick auf `/apps/acs/analytics/components`. Wählen Sie **Erstellen...** und dann **Komponente erstellen...** aus. Im Dialogfeld, das sich öffnet, können Sie Folgendes angeben:
 
    * **Bezeichnung**: `googleanalyticspage`
    * **Titel**: `Google Analytics Page`
@@ -64,7 +59,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
    * **Name:** `cq:defaultView`
    * **Wert:** `html`
 
-1. Erstellen Sie eine neue Datei mit dem Namen `content.jsp` unter `/apps/acs/analytics/components/googleanalyticspage` mit dem folgenden Inhalt:
+1. Erstellen Sie eine Datei mit dem Namen `content.jsp` under `/apps/acs/analytics/components/googleanalyticspage`mit folgendem Inhalt:
 
    ```xml
    <%@page contentType="text/html"
@@ -79,7 +74,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
    </div>
    ```
 
-1. Erstellen Sie einen neuen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/`:
+1. Erstellen Sie einen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/`:
 
    * **Name**: `dialog`
    * **Typ**: `cq:Dialog`
@@ -92,7 +87,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
       * **Typ**: `String`
       * **Wert**: `dialog`
 
-1. Erstellen Sie einen neuen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/dialog`:
+1. Erstellen Sie einen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/dialog`:
 
    * **Name**: `items`
    * **Typ**: `cq:Widget`
@@ -102,12 +97,12 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
       * **Typ**: `String`
       * **Wert**: `tabpanel`
 
-1. Erstellen Sie einen neuen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
+1. Erstellen Sie einen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
 
    * **Name**: `items`
    * **Typ**: `cq:WidgetCollection`
 
-1. Erstellen Sie einen neuen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
+1. Erstellen Sie einen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
 
    * **Name**: tab1
    * **Typ**: `cq:Panel`
@@ -117,15 +112,15 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
       * **Typ**: `String`
       * **Wert**: `Config`
 
-1. Erstellen Sie einen neuen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
+1. Erstellen Sie einen Knoten unter `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
    * **Name**: items
    * **Typ**: `nt:unstructured`
    * **Eigenschaften**:
 
       * **Name**: `fieldLabel`
-      * **Typ**: String
-      * **Wert**: Account ID
+      * **Typ**: Zeichenfolge
+      * **Wert**: Konto-ID
 
       * **Name**: `fieldDescription`
       * **Typ**: `String`
@@ -142,7 +137,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
       * **Wert**: `textfield`
 
 1. Kopieren Sie `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` nach `/apps/acs/analytics/components/googleanalyticspage/body.jsp`, ändern Sie `libs` in Zeile 34 in `apps` und ändern Sie die Skriptreferenz in Zeile 79 in einen vollständig qualifizierten Pfad.
-1. Erstellen Sie eine neue Vorlage unter `/apps/acs/analytics/templates/`:
+1. Erstellen Sie eine Vorlage unter `/apps/acs/analytics/templates/`:
 
    * **Ressourcentyp** = `acs/analytics/components/googleanalyticspage`
    * **Titel** = `googleanalytics`
@@ -152,7 +147,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
    * **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (im Vorlagenknoten, nicht im jcr:content-Knoten)
    * **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (in jcr:content)
 
-1. Erstellen Sie eine neue Komponente: `/apps/acs/analytics/components/googleanalytics`.
+1. Erstellen einer Komponente: `/apps/acs/analytics/components/googleanalytics`.
 
    Fügen Sie den folgenden Inhalt zu `googleanalytics.jsp` hinzu:
 
@@ -195,7 +190,7 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
 
    Dadurch sollte das benutzerdefinierte Markup basierend auf den Konfigurationseigenschaften ausgegeben werden.
 
-1. Navigieren Sie zu `http://localhost:4502/miscadmin#/etc/cloudservices` und erstellen Sie eine neue Seite:
+1. Navigieren Sie zu `http://localhost:4502/miscadmin#/etc/cloudservices` und erstellen Sie eine Seite:
 
    * **Titel**: `Google Analytics`
    * **Name**: `googleanalytics`
@@ -206,14 +201,13 @@ Die standardmäßigen Cloud-Services können durch individuelle Cloud-Services e
    * **Typ**: `String`
    * **Wert**: `acs/analytics/components/googleanalytics`
 
-
-1. Navigieren Sie zur neu erstellten Service-Seite (`http://localhost:4502/etc/cloudservices/googleanalytics.html`) und klicken Sie auf **+**, um eine neue Konfiguration zu erstellen:
+1. Navigieren Sie zur neu erstellten Dienstseite ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) und klicken Sie auf die **+** , um eine Konfiguration zu erstellen:
 
    * **Übergeordnete Konfiguration**: `/etc/cloudservices/googleanalytics`
    * **Titel:**  `My First GA Config`
 
    Wählen Sie **Google Analytics Configuration** und klicken Sie auf **Erstellen**.
 
-1. Geben Sie eine **Konto-ID** ein, z. B. `AA-11111111-1`. Klicken Sie auf **OK**.
-1. Navigieren Sie zu einer Seite und fügen Sie die neu erstellte Konfiguration in den Seiteneigenschaften unter der Registerkarte **Cloud-Services** hinzu.
-1. Das benutzerdefinierte Markup wird der Seite hinzugefügt.
+1. Geben Sie eine **Konto-ID** beispielsweise `AA-11111111-1`. Klicken Sie auf **OK**.
+1. Navigieren Sie zu einer Seite und fügen Sie die neu erstellte Konfiguration in den Seiteneigenschaften unter dem **Cloud Services** Registerkarte.
+1. Der Seite wird das benutzerdefinierte Markup hinzugefügt.

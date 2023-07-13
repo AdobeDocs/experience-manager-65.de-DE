@@ -1,18 +1,14 @@
 ---
 title: Grundlagen zu Kommentaren
-seo-title: Comments Essentials
 description: Komponentenübersicht Kommentare
-seo-description: Comments component overview
-uuid: 58b7bb58-f598-4bcb-93ae-b7795cab51cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '335'
 ht-degree: 5%
 
 ---
@@ -32,7 +28,7 @@ Die Kommentarkomponente erstellt ein Kommentarsystem, bei dem jeder einzelne Bei
    <td> social/commons/components/hbs/comments</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
    <td>Ja - Eigenschaften können bearbeitet werden in <i>Design </i>mode</td>
   </tr>
   <tr>
@@ -66,8 +62,8 @@ Andere Funktionen beinhalten bereits das Kommentarsystem. Diese sind:
 * [Kalender](calendar-basics-for-developers.md)
 * [Dateibibliothek](essentials-file-library.md)
 * [Forum](essentials-forum.md)
-* [Frage und Antwort](qna-essentials.md)
-* [Reviews](reviews-basics.md)
+* [Fragen und Antworten](qna-essentials.md)
+* [Bewertungen](reviews-basics.md)
 
 ### Liste mit Kenn-zeichnungsgründen {#flag-reason-list}
 
@@ -79,9 +75,9 @@ Dies gilt für alle Komponenten, die ein Kommentarsystem erweitern.
 
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
-* [Kommentar-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
+* [Kommentar-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [Kommentare Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [Kommentare Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
@@ -90,7 +86,7 @@ Dies gilt für alle Komponenten, die ein Kommentarsystem erweitern.
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
 
