@@ -1,26 +1,22 @@
 ---
 title: Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften
-seo-title: Mapping Component Data with Adobe Analytics Properties
-description: Erfahren Sie, wie Sie Komponentendaten zu SiteCatalyst-Eigenschaften zuordnen.
-seo-description: Learn how to map component data with SiteCatalyst properties.
-uuid: b08ab37f-ad58-4c04-978f-8e21a3823ae8
+description: Erfahren Sie, wie Sie Komponentendaten mit SiteCatalyst-Eigenschaften zuordnen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: ht
-source-wordcount: '1445'
-ht-degree: 100%
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+workflow-type: tm+mt
+source-wordcount: '1440'
+ht-degree: 53%
 
 ---
 
 # Zuordnen von Komponentendaten zu Adobe Analytics-Eigenschaften{#mapping-component-data-with-adobe-analytics-properties}
 
-Fügen Sie Komponenten zum Framework hinzu, die Daten sammeln, um sie an Adobe Analytics zu senden. Komponenten zur Sammlung von Analysedaten speichern die Daten in der entsprechenden **CQ-Variablen**. Wenn Sie solch eine Komponente zu einem Framework hinzufügen, zeigt das Framework die Liste der CQ-Variablen an, sodass Sie jede Variable der entsprechenden **Analytics-Variablen** zuordnen können.
+Fügen Sie Komponenten zum Framework hinzu, die die Daten erfassen, die an Adobe Analytics gesendet werden sollen. Komponenten, die zum Sammeln von Analysedaten entwickelt wurden, speichern die Daten in den entsprechenden **CQ-Variable**. Wenn Sie solch eine Komponente zu einem Framework hinzufügen, zeigt das Framework die Liste der CQ-Variablen an, sodass Sie jede Variable der entsprechenden **Analytics-Variablen** zuordnen können.
 
 ![aa-11](assets/aa-11.png)
 
@@ -35,11 +31,11 @@ Sie können auch mehrere Analytics-Variablen derselben **CQ-Variablen** zuordnen
 Die zugeordneten Daten werden an Adobe Analytics gesendet, wenn die Seite geladen wird und die folgenden Bedingungen erfüllt sind:
 
 * Die Seite ist mit dem Framework verknüpft.
-* Die Seite nutzt die Komponenten, die zum Framework hinzugefügt werden.
+* Die Seite verwendet die Komponenten, die dem Framework hinzugefügt werden.
 
 Mit der folgenden Vorgehensweise können Sie Variablen von CQ-Komponenten den Eigenschaften von Adobe Analytics-Berichten zuordnen.
 
-1. Ziehen Sie in der **AEM-Ansicht** eine Tracking-Komponente vom Sidekick auf das Framework. Wählen Sie z. B. die Komponente **Seite** aus der Kategorie **Allgemein.**
+1. Ziehen Sie in der **AEM-Ansicht** eine Tracking-Komponente vom Sidekick auf das Framework. Ziehen Sie beispielsweise die **Seite** -Komponente aus **Allgemein** Kategorie.
 
    ![aa-13](assets/aa-13.png)
 
@@ -57,7 +53,7 @@ Mit der folgenden Vorgehensweise können Sie Variablen von CQ-Komponenten den Ei
 
    >[!NOTE]
    >
-   >Sie können mehrere Analytics-Variablen (z. B. `events`, `props`, `eVars`) derselben CQ-Variablen (z. B. `pagedata.title`) zuordnen.
+   >Sie können mehrere Analytics-Variablen zuordnen (z. B. `props`, `eVars`, `events`) auf dieselbe CQ-Variable (z. B. `pagedata.title`)
 
    >[!CAUTION]
    >
@@ -65,7 +61,6 @@ Mit der folgenden Vorgehensweise können Sie Variablen von CQ-Komponenten den Ei
    >
    >* `eVars` und `props` werden CQ-Variablen zugeordnet, die entweder mit `pagedata.X` oder mit `eventdata.X` beginnen.
    >* Ereignisse werden dagegen Variablen zugeordnet, die mit `eventdata.events.X` beginnen.
-
 
 1. Um das Framework auf der Veröffentlichungsinstanz Ihrer Website bereitzustellen, öffnen Sie im Sidekick die Registerkarte **Seite** und klicken Sie auf **Framework aktivieren**.
 
@@ -94,7 +89,7 @@ Mehrere AEM Commerce-Komponenten nutzen diese Variablennamen.
 1. Stellen Sie sicher, dass Sie dieselbe RSID nutzen wie im vorherigen Schritt.
 1. Wählen Sie unter **Berichte** (auf der linken Seite der Seite) die Option **Benutzerspezifische Konversion** und dann **Benutzerspezifische Konversion 1–10** aus. Wählen Sie die Variable aus, die `eVar7` entspricht.
 
-1. Je nach genutzter Adobe Analytics-Version müssen Sie durchschnittlich 45 Minuten warten, bis der Bericht mit dem verwendeten Suchbegriff („aubergine“ im Beispiel) aktualisiert wurde.
+1. Abhängig von der verwendeten Adobe Analytics-Version müssen Sie durchschnittlich 45 Minuten warten, bis der Bericht mit dem verwendeten Suchbegriff aktualisiert wird. Beispiel: Aubergine im Beispiel
 
 ## Verwenden des Content Finder (cf#) mit Adobe Analytics-Frameworks {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
@@ -105,105 +100,106 @@ Wenn Sie ein Adobe Analytics-Framework zum ersten Mal öffnen, enthält der Cont
 * Ereignisse
 
 Wenn Sie eine RSID auswählen, werden alle zu dieser RSID gehörenden Variablen zur Liste hinzugefügt.\
-`cf#` wird benötigt, um Analytics-Variablen den CQ-Variablen in den verschiedenen Tracking-Komponenten zuzuordnen. Siehe „Einrichten eines Frameworks für das grundlegende Tracking“.
+Die `cf#` ist erforderlich, um Analytics-Variablen den CQ-Variablen zuzuordnen, die in den verschiedenen Tracking-Komponenten vorhanden sind. Siehe „Einrichten eines Frameworks für das grundlegende Tracking“.
 
 Je nach für das Framework ausgewählter Ansicht enthält der Content Finder entweder Analytics-Variablen (in der AEM-Ansicht) oder CQ-Variablen (in der Analytics-Ansicht).
 
-Sie können mit der Liste wie folgt arbeiten:
+Die Liste kann wie folgt bearbeitet werden:
 
-1. In der **AEM-Ansicht** können Sie abhängig vom ausgewählten Variablentyp die Liste mit drei Filterschaltflächen filtern:
+1. Wann **AEM** kann die Liste anhand der drei Filterschaltflächen nach ausgewähltem Variablentyp gefiltert werden:
 
    * Wenn die *Schaltfläche „Nein“* ausgewählt ist, wird die komplette Liste angezeigt.
    * Wenn die Schaltfläche **Traffic** ausgewählt ist, werden in der Liste nur die Variablen angezeigt, die zum Bereich „Traffic“ gehören.
    * Wenn die Schaltfläche **Konversion** ausgewählt ist, werden in der Liste nur die Variablen angezeigt, die zum Bereich „Konversion“ gehören.
-   * Wenn die Schaltfläche **Ereignisse** ausgewählt ist, werden in der Liste nur die Variablen angezeigt, die zum Bereich „Ereignisse“ gehören.
+   * Wenn die Variable **Veranstaltungen** ausgewählt ist, werden in der Liste nur die Variablen angezeigt, die zum Bereich Ereignisse gehören.
 
    >[!NOTE]
    >
    >Sie können immer nur eine Filterschaltfläche aktivieren.
 
-   1. Die Liste bietet auch eine Suchfunktion, die die Elemente entsprechend dem im Suchfeld eingegebenen Text filtert.
-   1. Wenn bei der Suche nach Elementen in der Liste eine Filteroption aktiviert ist, werden auch die angezeigten Ergebnisse gemäß der aktivierten Schaltfläche gefiltert.
-   1. Über die Schaltfläche mit den runden Pfeilen können Sie die Liste jederzeit neu laden.
-   1. Wenn Sie mehrere RSIDs im Framework auswählen, werden alle Variablen in der Liste angezeigt. Dabei werden alle Beschriftungen verwendet, die in den ausgewählten RSIDs genutzt werden.
-
+   1. Die Liste verfügt außerdem über eine Suchfunktion, mit der die Elemente nach dem im Suchfeld eingegebenen Text gefiltert werden.
+   1. Wenn bei der Suche nach Elementen in der Liste eine Filteroption aktiviert ist, werden die angezeigten Ergebnisse auch nach der aktiven Schaltfläche gefiltert.
+   1. Die Liste kann jederzeit mit der Schaltfläche mit den kreisförmigen Pfeilen neu geladen werden.
+   1. Wenn mehrere RSIDs im Framework ausgewählt sind, werden alle Variablen in der Liste mit allen Beschriftungen angezeigt, die innerhalb der ausgewählten RSIDs verwendet werden.
 
 1. In der Adobe Analytics-Ansicht zeigt der Content Finder alle CQ-Variablen an, die zu den Tracking-Komponenten gehören, die in die CQ-Ansicht gezogen wurden.
 
-   * Wenn beispielsweise als einzige Komponente die **Download-Komponente** in die CQ-Ansicht *gezogen wurde* (diese Ansicht umfasst zwei zuordnungsfähige Variablen: *eventdata.downloadLink* und *eventdata.events.startDownload*), sieht der Content Finder nach dem Wechsel zur Adobe Analytics-Ansicht wie folgt aus:
+   * Beispiel: Wenn die Variable **Komponente herunterladen** ist die *nur eine gezogen* in der CQ-Ansicht (die über zwei zuordnbare Variablen verfügt) *eventdata.downloadLink* und *eventdata.events.startDownload*), sieht der Content Finder beim Wechsel zur Adobe Analytics-Ansicht wie folgt aus:
 
    ![aa-22](assets/aa-22.png)
 
-   * Sie können die Variablen auf jede beliebige Adobe Analytics-Variable ziehen, die zu einer der drei Variablenbereiche (**Traffic**, **Konversion** und **Ereignisse**) gehört.
+   * Die Variablen können per Drag-and-Drop auf eine beliebige Adobe Analytics-Variable gezogen werden, die zu einem der drei Variablenabschnitte (**Traffic**, **Konversion** und **Veranstaltungen**).
 
    * Wenn Sie in der CQ-Ansicht eine neue Tracking-Komponente auf das Framework ziehen, werden die zur Komponente gehörenden CQ-Variablen automatisch zum Content Finder (cf#) in der Adobe Analytics-Ansicht hinzugefügt.
 
    >[!NOTE]
    >
-   >Sie können immer nur eine CQ-Variable auf einmal einer Adobe Analytics-Variable zuordnen.
+   >Es kann immer nur eine CQ-Variable einer Adobe Analytics-Variablen zugeordnet werden.
 
 ## Verwenden der AEM-Ansicht und der Analytics-Ansicht {#using-aem-view-and-analytics-view}
 
-Auf einer Framework-Seite können Benutzende jederzeit zwischen zwei Ansichten der Adobe Analytics-Zuordnungen wechseln. Diese beiden Ansichten bieten mit ihren beiden unterschiedlichen Perspektiven einen besseren Überblick über die Zuordnungen im Framework.
+Benutzer können jederzeit zwischen zwei Möglichkeiten wechseln, die Adobe Analytics-Zuordnungen auf einer Framework-Seite anzuzeigen. Die beiden Ansichten bieten aus zwei unterschiedlichen Perspektiven einen besseren Überblick über die Zuordnungen innerhalb des Frameworks.
 
-### AEM-Ansicht {#aem-view}
+### AEM {#aem-view}
 
 ![aa-23](assets/aa-23.png)
 
-Das obige Bild dient als Beispiel. Die **AEM-Ansicht** hat die folgenden Eigenschaften:
+Wenn Sie das obige Bild als Beispiel verwenden, wird das **AEM** weist die folgenden Eigenschaften auf:
 
-1. Dies ist die Standardansicht, wenn das Framework geöffnet wird.
+1. Dies ist die Standardansicht beim Öffnen des Frameworks.
 1. Linke Seite: Der Content Finder (cf#) zeigt basierend auf den ausgewählten RSIDs die Adobe Analytics-Variablen an.
 1. Registerkartenkopfzeilen (**AEM-Ansicht** und **Analytics-Ansicht**): Verwenden Sie diese, um zwischen den beiden Ansichten zu wechseln.
 
 1. **AEM-Ansicht**:
 
-   1. Wenn das Framework Komponenten enthält, die vom übergeordneten Framework vererbt wurden, werden sie hier aufgeführt, zusammen mit den Variablen, die den Komponenten zugeordnet sind.
+   1. Wenn das Framework Komponenten enthält, die von seinem übergeordneten Framework vererbt werden, werden sie hier aufgeführt, zusammen mit den den Komponenten zugeordneten Variablen.
 
       1. Vererbte Komponenten sind gesperrt.
-      1. Um eine geerbte Komponente zu entsperren, doppelklicken Sie einfach auf das Schlosssymbol neben dem Namen der Komponente.
-      1. Um die Vererbung rückgängig zu machen, müssen Sie die entsperrte Komponente löschen. Sie erhält daraufhin den Status „gesperrt“ zurück.
-   1. **Ziehen Sie Komponenten in diesen Bereich, um sie zum Analytics-Framework hinzuzufügen**: Komponenten können aus dem Sidekick hierhin gezogen werden.
-   1. Hier finden Sie alle Komponenten, die derzeit im Analytics-Framework enthalten sind:
+      1. Doppelklicken Sie zum Entsperren einer geerbten Komponente auf das Vorhängeschloss neben dem Namen der Komponente
+      1. Um die Vererbung wiederherzustellen, löschen Sie die entsperrte Komponente. danach wird er wieder gesperrt.
 
-      1. Um eine Komponente hinzuzufügen, ziehen Sie sie aus der Registerkarte „Komponenten“ vom Sidekick in das Framework.
+   1. **Komponenten hierher ziehen, um sie in das Analytics-Framework einzuschließen**: Komponenten können aus dem Sidekick gezogen und hier abgelegt werden.
+   1. Sie finden alle Komponenten, die derzeit im Analytics-Framework enthalten sind:
+
+      1. Um eine Komponente hinzuzufügen, ziehen Sie sie aus der Registerkarte Komponenten des Sidekicks
       1. Um eine Komponente und alle zugehörigen Zuordnungen zu löschen, wählen Sie im Kontextmenü der Komponente die Option „Löschen“ und akzeptieren Sie den Löschvorgang im Bestätigungsdialogfeld.
-      1. Beachten Sie, dass Sie eine Komponente nur aus dem Framework löschen können, in dem sie erstellt wurde, und sie nicht im eigentlichen Sinne aus untergeordneten Frameworks löschen können. (Sie können sie dort nur überschreiben.)
-
+      1. Beachten Sie, dass eine Komponente nur aus dem Framework gelöscht werden kann, in dem sie erstellt wurde, und nicht aus untergeordneten Frameworks im herkömmlichen Sinne gelöscht werden kann (sie kann nur überschrieben werden).
 
 ### Analytics-Ansicht {#analytics-view}
 
 ![aa-24](assets/aa-24.png)
 
 1. Um auf diese Ansicht zuzugreifen, wechseln Sie im Framework zur Registerkarte **Analytics-Ansicht**.
-1. Linke Seite: Content Finder (cf#) mit CQ-Variablen, basierend auf den Komponenten, die in der CQ-Ansicht zum Framework hinzugefügt wurden.
+1. Linke Seite: Content Finder (cf#) wird von CQ-Variablen basierend auf den Komponenten, die in der CQ-Ansicht auf das Framework gezogen wurden, gefüllt.
 1. Registerkartenkopfzeilen (**AEM-Ansicht** und **Analytics-Ansicht**): Verwenden Sie diese, um zwischen den beiden Ansichten zu wechseln.
 
-1. In den drei Tabellen („Traffic“, „Konversion“, „Ereignis“) sind alle verfügbaren Adobe Analytics-Variablen aufgeführt, die zu den ausgewählten RSIDs gehören. Die hier angezeigten Zuordnungen sollten dieselben sein wie in der AEM-Ansicht:
+1. In den drei Tabellen („Traffic“, „Konversion“, „Ereignis“) sind alle verfügbaren Adobe Analytics-Variablen aufgeführt, die zu den ausgewählten RSIDs gehören. Die hier gezeigten Zuordnungen sollten mit denen in der AEM übereinstimmen:
 
    * **Traffic**:
 
       * Traffic-Variable (`prop1`), die einer CQ-Variablen (`eventdata.downloadLink`) zugeordnet ist
 
-      * Wenn neben der Komponente ein Schlosssymbol angezeigt wird, weist dies darauf hin, dass die Komponente von einem übergeordneten Framework geerbt wurde und daher nicht bearbeitet werden kann.
+      * Wenn neben der Komponente ein Vorhängeschloss steht, bedeutet dies, dass sie von einem übergeordneten Framework übernommen wird und daher nicht bearbeitet werden kann
+
    * **Konversion**:
 
       * Konversionsvariable (`eVar1`), die einer CQ-Variablen (`pagedata.title`) zugeordnet ist
 
-      * Konversionsvariable (`eVar3`), die einem JavaScript-Ausdruck zugeordnet ist, der inline hinzugefügt wurde (durch Doppelklicken auf das CQ-Variablen-Feld und manuelles Eingeben des Codes)
+      * Konversionsvariable ( `eVar3`), die einem inline hinzugefügten JavaScript-Ausdruck zugeordnet sind, indem Sie auf das CQ-Variablenfeld doppelklicken und den Code manuell eingeben
+
    * **Ereignis**:
 
       * Ereignisvariable (`event1`), die einem CQ-Ereignis (`eventdata.events.pageView`) zugeordnet ist
 
-
-
 >[!NOTE]
 >
->Die Spalte der CQ-Variablen in jeder Tabelle kann auch inline ausgefüllt werden, indem auf das Feld doppelgeklickt und dann der gewünschte Text eingegeben wird. Diese Felder akzeptieren JavaScript als Eingabe.
+>Die Spalte &quot;CQ-Variable&quot;einer beliebigen Tabelle kann auch inline ausgefüllt werden, indem Sie auf das Feld doppelklicken und Text hinzufügen. Diese Felder akzeptieren JavaScript als Eingabe.
 >
 >Beispiel: Neben `prop3` können Sie Folgendes hinzufügen:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
->, um den *Titel* einer Seite und ihre *sitesection* verkettet mit einem *:* (Doppelpunkt) und mit dem Präfix *Adobe* als `prop3` zu übermitteln.
+, um den *Titel* einer Seite und ihre *sitesection* verkettet mit einem *:* (Doppelpunkt) und mit dem Präfix *Adobe* als `prop3` zu übermitteln.
+>
 
 >[!CAUTION]
->Sie können immer nur eine CQ-Variable auf einmal einer Adobe Analytics-Variable zuordnen.
+>
+Es kann immer nur eine CQ-Variable einer Adobe Analytics-Variablen zugeordnet werden.

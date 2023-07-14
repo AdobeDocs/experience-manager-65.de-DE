@@ -1,25 +1,23 @@
 ---
 title: Standardkomponenten
-description: Adobe Experience Manager ist mit einer Vielzahl vorkonfigurierter Komponenten ausgestattet, die Website-Autorinnen und -Autoren umfangreiche Funktionen bieten.
-uuid: 55caeec3-add7-4d05-a620-07e33901adb7
+description: Adobe Experience Manager verfügt über verschiedene vordefinierte Komponenten, die Website-Autoren umfangreiche Funktionen bieten.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '430'
-ht-degree: 100%
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+workflow-type: tm+mt
+source-wordcount: '425'
+ht-degree: 75%
 
 ---
 
 # Komponenten{#components}
 
-Adobe Experience Manager (AEM) ist mit einer Vielzahl einsatzbereiter Komponenten ausgestattet, die Website-Autoren umfangreiche Funktionen bieten. Diese sind beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) verfügbar und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um die Filterung zu erleichtern.
+Adobe Experience Manager (AEM) verfügt über verschiedene vordefinierte Komponenten, die Website-Autoren umfangreiche Funktionen bieten. Diese sind beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) verfügbar und werden nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um die Filterung zu erleichtern.
 
-Die Komponenten sind beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) verfügbar. Die Komponenten sind nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert, um das Filtern zu erleichtern.
+Die Komponenten sind beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) verfügbar. Zur Erleichterung der Filterung werden die Komponenten nach Hauptfunktionsbereich (d. h. Komponentengruppe) gruppiert.
 
 >[!NOTE]
 >
@@ -38,14 +36,14 @@ Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer S
 
 * [Inhalt bearbeiten – Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie im Artikel [Bearbeiten von Seiteninhalten](/help/sites-authoring/editing-content.md).
+Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md).
 Die Komponenten sind nach verschiedenen Kategorien (Komponentengruppen) sortiert. Beispiele für solche Gruppen sind:
 
 * **We.Retail**: Enthält die Kernkomponenten, die für die Verwendung mit der [We.Retail-Referenzimplementierung](/help/sites-developing/we-retail.md) zugänglich sind.
 
 * **We.Retail Commerce**: Enthält Commerce-Komponenten wie Einkaufswagen und Produktraster
 
-* **Allgemein**: Enthält den Layout-Container und das Experience Fragment
+* **Allgemein**: Umfasst Layout-Container und Experience Fragment
 
 ## Übersicht über alle Komponenten {#overview-of-all-components}
 
@@ -55,7 +53,7 @@ Die [Komponentenkonsole](/help/sites-authoring/default-components-console.md) bi
 
 Die folgenden Seiten enthalten Links zu einigen zusätzlichen, wichtigen Informationen zu Komponenten:
 
-* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) – Die Kernkomponenten bieten flexible und vielseitige Authoring-Funktionen, die wichtige Inhaltstypen zur Erstellung von Seiten bereitstellen.
+* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) - Die Kernkomponenten bieten flexible und funktionsreiche Authoring-Funktionen, die wichtige Inhaltstypen zur Erstellung von Seiten bereitstellen.
 
 * [Communities](/help/communities/author-communities.md) – Komponenten bieten interaktive Funktionen für eine Website, z. B. Foren und Kommentare. Viele dieser Komponenten sind enthalten, wenn Sie eine [Community-Site](/help/communities/overview.md) erstellen.
 

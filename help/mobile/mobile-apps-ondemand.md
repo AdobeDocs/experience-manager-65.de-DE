@@ -1,19 +1,15 @@
 ---
 title: Mobile On-Demand
-seo-title: Mobile On-Demand
-description: Auf dieser Seite erfahren Sie mehr über die Rollen und Zuständigkeiten AEM Autors mobiler On-Demand-Dienste.
-seo-description: Follow this page to learn about the roles and responsibilities for AEM mobile On-Demand services author.
-uuid: dd0184d8-1220-4f6a-96b2-acdb31caae17
+description: Auf dieser Seite erfahren Sie mehr über die Rollen und Zuständigkeiten für den Autor mobiler On-Demand-Dienste in Adobe Experience Manager.
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 2ae7ea8d-fc58-4647-bc83-915d9f4b7dd8
 exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 11%
+source-wordcount: '273'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 >[!NOTE]
 >
@@ -35,9 +31,9 @@ ht-degree: 11%
 
 ## AEM Mobile Author {#aem-mobile-author}
 
-Ein ***AEM-Autor* (oder *Marketer*)**verwendet benutzerdefinierte oder vordefinierte Vorlagen und Komponenten, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag-and-Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente). AEM integrierte Inhaltseditor wird dann von *AEM-Autoren* , um umfangreiche und relevante Erlebnisse innerhalb der App zu erstellen, einschließlich der Integration in die restliche Adobe Marketing Cloud.
+Ein ***AEM-Autor* (oder *Marketer*)**verwendet benutzerdefinierte oder vordefinierte Vorlagen und Komponenten, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag-and-Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente). AEM integrierte Inhaltseditor wird dann von *AEM-Autoren* , um umfangreiche und relevante Erlebnisse innerhalb der App zu erstellen, einschließlich der Integration in die restliche Adobe Experience Cloud.
 
-Ein AEM-Autor ist für die folgenden Aufgaben beim Erstellen einer App mit AEM Mobile On Demand Services verantwortlich.
+Ein AEM-Autor ist für die folgenden Aufgaben beim Erstellen einer App mit AEM Mobile On-demand Services verantwortlich.
 
 **Inhaltserstellung AEM AEM Mobile On-demand Services App** umfasst folgende Aktionen:
 
@@ -55,7 +51,6 @@ Weitere Informationen **Content Services**, siehe [Übersicht über Content Serv
 >* [Vorlagen](/help/sites-developing/templates.md)
 >* [Komponenten](/help/sites-developing/components.md)
 >
-
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

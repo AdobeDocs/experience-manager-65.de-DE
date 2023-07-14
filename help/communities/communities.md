@@ -1,18 +1,14 @@
 ---
 title: Entwickeln von Communities
-seo-title: Developing Communities
-description: Community-Funktionen wie Foren, Benutzergruppen und mehr erstellen und anpassen
-seo-description: Create and customize community features such as forums, user groups, and more
-uuid: 51dc54da-9090-4d36-adf9-72d5479062a5
+description: Erstellen und passen Sie Community-Funktionen wie Foren, Benutzergruppen und mehr an.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
 exl-id: 3ed3768a-1b3c-45a1-a34c-61694cd407d9
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '391'
 ht-degree: 6%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 6%
 
 ## Übersicht {#overview}
 
-AEM Communities vereinfacht die Erstellung und Anpassung von Community-Funktionen wie Foren, Benutzergruppen, Blogs, Fragen und Antworten, Kalendern, Kommentaren, Rezensionen, Abstimmungen, Bewertungen und Zuweisungen. Diese Funktionen führen dazu, dass benutzergenerierte Inhalte (UGC) in die Veröffentlichungsumgebung eingegeben werden.
+Adobe Experience Manager (AEM) Communities vereinfachen die Erstellung und Anpassung von Community-Funktionen wie Foren, Benutzergruppen, Blogs, Fragen und Antworten, Kalendern, Kommentaren, Rezensionen, Abstimmungen, Bewertungen und Zuweisungen. Diese Funktionen führen dazu, dass benutzergenerierte Inhalte (UGC) in die Veröffentlichungsumgebung eingegeben werden.
 
 Die Grundlage eines [Community-Site](overview.md#communitiessites) ist die [Social-Komponenten-Framework](scf.md) (SCF). Die Erstellung einer Community-Site beginnt mit der Auswahl eines [Community-Site-Vorlage](sites-console.md) , das aus [Community-Funktionen](functions.md).
 
@@ -36,7 +32,7 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 
 ## Empfohlene Bereitstellungen {#recommended-deployments}
 
-* [Community-Inhaltsspeicherung](working-with-srp.md): beschreibt die verfügbaren SRP-Optionen für einen UGC Common Store
+* [Community-Inhaltsspeicherung](working-with-srp.md): beschreibt die verfügbaren Optionen des Social Resource Providers (SRP) für einen UGC Common Store
 * [Empfohlene Topologien für Communities](topologies.md): Erörtert Topologien basierend auf Anwendungsfall und SRP-Auswahl
 
 ## Social Component Framework {#social-component-framework}
@@ -49,7 +45,7 @@ Einen Überblick und die ersten Schritte finden Sie unter:
 * [Kodierungsrichtlinien](code-guide.md): Richtlinien, Tipps und Tricks.
 * [Handbuch zu Community-Komponenten](components-guide.md): interaktives Entwicklungstool.
 
-## Komponenten, Funktionen und Funktionsgrundlagen {#component-function-and-feature-essentials}
+## Komponenten-, Funktionen- und Funktionsgrundlagen {#component-function-and-feature-essentials}
 
 AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine für [Community-Sites](sites-console.md).
 
@@ -62,11 +58,11 @@ AEM Communities-Komponenten, -Funktionen und -Funktionen stellen die Bausteine f
 ## Community-Mitglieder {#community-members}
 
 * [Verwalten von Benutzern und Benutzergruppen](users.md)
-* [Anmeldung über Social Media mit Facebook und Twitter](social-login.md)
+* [Anmeldung über Social Media bei Facebook und Twitter](social-login.md)
 
 ## Community-Gruppen {#community-groups}
 
-[Community-Gruppen](overview.md#communitygroups) ist das Konzept, es Community-Mitgliedern zu ermöglichen, Untergruppen innerhalb der Community-Site zu bilden. Die Erstellung einer Community-Gruppe kann in der Veröffentlichungs- oder Autorenumgebung erfolgen.
+[Community-Gruppen](overview.md#communitygroups) sind das Konzept, es Community-Mitgliedern zu ermöglichen, Untergruppen innerhalb der Community-Site zu bilden. Die Erstellung einer Community-Gruppe kann in der Veröffentlichungs- oder Autorenumgebung erfolgen.
 
 * [Community-Gruppengrundlagen](essentials-groups.md)
 * [Gruppenfunktion](functions.md#groups-function)

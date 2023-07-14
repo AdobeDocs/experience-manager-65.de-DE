@@ -1,18 +1,14 @@
 ---
 title: Anfänglicher Sandbox-Inhalt
-seo-title: Initial Sandbox Content
-description: Inhalt erstellen
-seo-description: Create content
-uuid: 9810fe47-8d1a-4238-9b9c-0cc47c63d97a
+description: Erstellen von Inhalten
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '467'
+source-wordcount: '462'
 ht-degree: 5%
 
 ---
@@ -21,17 +17,17 @@ ht-degree: 5%
 
 In diesem Abschnitt erstellen Sie die folgenden Seiten, die alle die [Seitenvorlage](initial-app.md#createthepagetemplate):
 
-* SCF-Sandbox-Site, die zur englischen Version der Hauptseite umleitet.
+* SCF-Sandbox-Site, die zur englischen Version der Hauptseite weiterleitet.
 
    * SCF Sandbox - Die Hauptseite für die englische Version der Site.
 
    * SCF Play - Untergeordnetes Element der Hauptseite, auf der abgespielt werden soll.
 
-Auch wenn dieses Tutorial sich nicht mit [Sprachkopien](../../help/sites-administering/tc-prep.md), so entworfen, dass die Stammseite die Erkennung der bevorzugten Sprache für den Benutzer über die HTML-Kopfzeile implementieren und zur entsprechenden Hauptseite für die weiterleiten kann. Die Konvention besteht darin, den aus zwei Buchstaben bestehenden Ländercode für den Knotennamen der Seite zu verwenden, z. B. &quot;en&quot;für Englisch, &quot;fr&quot;für Französisch usw.
+Auch wenn dieses Tutorial sich nicht mit [Sprachkopien](../../help/sites-administering/tc-prep.md), so entworfen, dass die Stammseite die Erkennung der bevorzugten Sprache für den Benutzer über die HTML-Kopfzeile implementieren und zur entsprechenden Hauptseite für die weiterleiten kann. Die Konvention besteht darin, den aus zwei Buchstaben bestehenden Ländercode für den Knotennamen der Seite zu verwenden, z. B. &quot;en&quot;für Englisch und &quot;fr&quot;für Französisch.
 
 ## Erste Seiten erstellen {#create-first-pages}
 
-Jetzt gibt es eine [Seitenvorlage](initial-app.md#createthepagetemplate), können wir die Stammseite der Website im Verzeichnis /content einrichten.
+Jetzt gibt es eine [Seitenvorlage](initial-app.md#createthepagetemplate), können Sie die Stammseite der Website im Verzeichnis /content einrichten.
 
 1. Die Standard-Benutzeroberfläche bietet derzeit Blueprints zum Erstellen von Sites. Da in diesem Tutorial eine einfache Site erstellt wird, ist die klassische Benutzeroberfläche nützlich.
 
@@ -58,14 +54,14 @@ Jetzt gibt es eine [Seitenvorlage](initial-app.md#createthepagetemplate), könne
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
-1. Wählen Sie im Explorer-Bereich die soeben erstellte Seite aus. `/Websites/SCF Sandbox Site`und klicken Sie auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**:
+1. Wählen Sie im Explorer-Bereich die von Ihnen erstellte Seite aus. `/Websites/SCF Sandbox Site`und klicken Sie auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**:
 
    * Titel: `SCF Sandbox`
    * Name: `en`
    * Auswählen **[!UICONTROL Eine SCF-Sandbox-Abspielvorlage]**
    * Klicken Sie auf **[!UICONTROL Erstellen]**.
 
-1. Wählen Sie im Explorer-Bereich die soeben erstellte Seite aus. `/Websites/SCF Sandbox Site/SCF Sandbox`und klicken Sie auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**
+1. Wählen Sie im Explorer-Bereich die von Ihnen erstellte Seite aus. `/Websites/SCF Sandbox Site/SCF Sandbox`und klicken Sie auf **[!UICONTROL Neu]** > **[!UICONTROL Neue Seite]**
 
    * Titel: `SCF Play`
    * Name: `play`
@@ -86,7 +82,7 @@ Wann ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcdesig
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
-definiert wurde, was die optionale Möglichkeit bietet, Design-Assets in einem Skript mit `currentDesign.getPath()`. Beispiel
+wurde definiert, was die optionale Möglichkeit bietet, Design-Assets in einem Skript mit `currentDesign.getPath()`. Beispiel
 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
@@ -97,14 +93,14 @@ definiert wurde, was die optionale Möglichkeit bietet, Design-Assets in einem S
 
 * Klicken Sie auf Grün `[+] Add`
 
-Das Repository sollte wie folgt aussehen:
+Das Repository sollte wie folgt angezeigt werden:
 
 ![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 * Klicken Sie auf **[!UICONTROL Alle speichern]**
 
-Falls Probleme beim Speichern der Konfiguration auftreten, melden Sie sich erneut an und konfigurieren Sie sie erneut.
+Wenn beim Speichern der Konfiguration Probleme auftreten, melden Sie sich erneut an und konfigurieren Sie sie erneut.
 
 >[!NOTE]
 >
->Die Verwendung von `cq:designPath` ist optional und nicht mit dem [Verwendung von clientlibs](develop-app.md#includeclientlibsintemplate), die im Wesentlichen erforderlich sind, da die SCF-Komponenten [clientlibs](client-customize.md#clientlibs-for-scf) um ihre JS und CSS zu verwalten.
+>Die Verwendung von `cq:designPath` ist optional und nicht mit dem [Verwendung von clientlibs](develop-app.md#includeclientlibsintemplate), die erforderlich sind, da die SCF-Komponenten [clientlibs](client-customize.md#clientlibs-for-scf) um ihre JS und CSS zu verwalten.

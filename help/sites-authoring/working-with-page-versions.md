@@ -1,18 +1,16 @@
 ---
 title: Arbeiten mit Inhaltsseitenversionen
 description: Erstellen, Vergleichen und Wiederherstellen von Versionen einer Seite
-uuid: 29e049f0-532c-4e3b-b64f-5be88ee6b08c
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 0a06837576e102d0e46f7afd0f5a197c292ddae7
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1496'
-ht-degree: 59%
+source-wordcount: '1497'
+ht-degree: 58%
 
 ---
 
@@ -56,7 +54,7 @@ Sie können eine Version Ihrer Ressource folgendermaßen erstellen:
 1. Navigieren Sie zu der Seite, für die Sie eine Version erstellen möchten.
 1. Wählen Sie die Seite im [Auswahlmodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Wählen Sie die **Erstellen** in der Symbolleiste, um das Dialogfeld zu öffnen.
-1. Im Dialogfeld können Sie eine **Titel** und **Kommentar** falls erforderlich:
+1. Im Dialogfeld können Sie eine **Titel** und **Kommentar**, falls erforderlich:
 
    ![Titel und Kommentar eingeben](assets/screen_shot_2012-02-15at105050am.png)
 

@@ -1,27 +1,23 @@
 ---
 title: Ressourcenzuordnung
-seo-title: Resource Mapping
-description: Erfahren Sie, wie Sie mit der Ressourcenzuordnung Umleitungen, Vanity-URLs und virtuelle Hosts für AEM definieren.
-seo-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
-uuid: 2ca2d0e4-6f90-4ecc-82db-26991f08c66f
+description: Erfahren Sie, wie Sie mithilfe der Ressourcenzuordnung Umleitungen, Vanity-URLs und virtuelle Hosts für Adobe Experience Manager definieren.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: 7c24379c01f247f5ad45e3ecd40f3edef4ac3cfb
-workflow-type: ht
-source-wordcount: '519'
-ht-degree: 100%
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 64%
 
 ---
 
 # Ressourcenzuordnung{#resource-mapping}
 
-Die Ressourcenzuordnung wird zur Definition von Umleitungen, Vanity-URLs und virtuellen Hosts für AEM verwendet.
+Die Ressourcenzuordnung wird verwendet, um Umleitungen, Vanity-URLs und virtuelle Hosts für Adobe Experience Manager (AEM) zu definieren.
 
 Diese Zuordnungen können Sie beispielsweise verwenden, um:
 
@@ -32,11 +28,11 @@ Bei einer möglichen HTTP-Zuordnung wird allen Anfragen an `localhost:4503` das 
 
 `localhost:4503/content/we-retail/en/products.html`
 
-mithilfe von:
+Der Zugriff erfolgt über:
 
 `localhost:4503/we-retail/en/products.html`
 
-da die Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.html` hinzufügt.
+Da die Zuordnung automatisch das Präfix hinzufügt `/content` nach `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -44,11 +40,11 @@ da die Zuordnung automatisch das Präfix `/content` zu `/we-retail/en/products.h
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie in der Sling-Dokumentation sowie unter [Zuordnungen für die Ressourcenauflösung](https://sling.apache.org/site/resources.html) und [Ressourcen](https://sling.apache.org/site/mappings-for-resource-resolution.html).
+>Weitere Informationen finden Sie in der Sling-Dokumentation sowie unter [Zuordnungen für die Ressourcenauflösung](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) und [Ressourcen](https://sling.apache.org/documentation/the-sling-engine/resources.html).
 
 ## Anzeigen von Zuordnungsdefinitionen {#viewing-mapping-definitions}
 
-Die Zuordnungen bilden zwei Listen, die der JCR-Ressourcen-Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
+Die Zuordnungen bilden zwei Listen, die der JCR Resource Resolver auswertet (von oben nach unten), um eine Übereinstimmung zu finden.
 
 Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option **JCR ResourceResolver** der Felix-Konsole angezeigt werden. Beispiel: `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
@@ -64,23 +60,23 @@ Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die 
 * **Mapping Map Entries**
 Die Liste der Einträge, die von den ResourceResolver.map-Methoden für die Zuordnung von Ressourcenpfaden zu URLs verwendet wird.
 
-Die beiden Listen enthalten verschiedene Einträge, darunter die von der/den Anwendung/en als Standardwerte definierten. Sie dienen häufig dazu, URLs für die Benutzer zu vereinfachen.
+Die beiden Listen zeigen verschiedene Einträge an, einschließlich der von den Anwendungen als Standard definierten. Diese zielen häufig darauf ab, URLs für den Benutzer zu vereinfachen.
 
-Die Listen verbinden ein **Muster**, d. h. einen auf die Anforderung abgestimmten regulären Ausdruck, mit einer **Ersetzung**, die die anzuwendende Umleitung definiert.
+Das Listen-Paar enthält eine **Muster**, einen regulären Ausdruck, der mit der Anfrage übereinstimmt, mit einer **Ersatz** die die Umleitung definiert, die durchgesetzt werden soll.
 
-So löst beispielsweise das
+Beispiel:
 
 **Muster** `^[^/]+/[^/]+/welcome$`
 
-das
+Trigger Folgendes:
 
 **Ersatz** `/libs/cq/core/content/welcome.html`.
 
-aus, um die Anforderung
+So leiten Sie eine Anforderung um:
 
 `https://localhost:4503/welcome` ``
 
-in:
+An:
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -88,11 +84,11 @@ Neue Zuordnungsdefinitionen werden im Repository erstellt.
 
 >[!NOTE]
 >
->Es stehen eine Vielzahl von Ressourcen zur Verfügung, die das Definieren regulärer Ausdrücke erläutern, z. B. [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Es stehen viele Ressourcen zur Verfügung, die die Definition regulärer Ausdrücke erläutern. Beispiel: [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Erstellen von Zuordnungsdefinitionen in AEM {#creating-mapping-definitions-in-aem}
 
-Eine Standardinstallation von AEM umfasst folgenden Ordner:
+In einer Standardinstallation von AEM finden Sie den Ordner:
 
 `/etc/map/http`
 
@@ -104,7 +100,7 @@ So erstellen Sie eine Zuordnung, die allen Anfragen an https://localhost:4503/ d
 
 1. Navigieren Sie mithilfe von CRXDE zu `/etc/map/http`.
 
-1. Erstellen Sie einen neuen Knoten:
+1. Erstellen Sie einen Knoten:
 
    * **Typ** `sling:Mapping`
 Der Knotentyp ist für diese Zuordnungen bestimmt, seine Verwendung ist jedoch nicht obligatorisch.
@@ -119,25 +115,25 @@ Der Knotentyp ist für diese Zuordnungen bestimmt, seine Verwendung ist jedoch n
       * **Typ** `String`
 
       * **Wert** `localhost.4503/`
+
    * **Name** `sling:internalRedirect`
 
       * **Typ** `String[]`
 
       * **Wert** `/content/`
 
-
 1. Klicken Sie auf **Alle speichern**.
 
-Damit wird eine Anfrage wie die folgende behandelt:
+Dadurch wird eine Anfrage verarbeitet, z. B.:
 `localhost:4503/geometrixx/en/products.html`
-als ob:
+wie wenn:
 `localhost:4503/content/geometrixx/en/products.html`
-angefragt worden wäre.
+wurden beantragt.
 
 >[!NOTE]
 >
->Weitere Informationen zu den verfügbaren Sling-Eigenschaften und wie diese konfiguriert werden können, finden Sie in der Sling-Dokumentation unter [Ressourcen](https://sling.apache.org/site/mappings-for-resource-resolution.html)
+>Weitere Informationen zu den verfügbaren Sling-Eigenschaften und wie diese konfiguriert werden können, finden Sie in der Sling-Dokumentation unter [Ressourcen](https://sling.apache.org/documentation/the-sling-engine/resources.html)
 
 >[!NOTE]
 >
->Die Konfigurationen für die Veröffentlichungsumgebung können unter `/etc/map.publish` gespeichert werden. Diese müssen dann repliziert und der neue Speicherort (`/etc/map.publish`) muss für den **Zuordnungs-Speicherort** des [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungsumgebung konfiguriert werden.
+>Die Konfigurationen für die Veröffentlichungsumgebung können unter `/etc/map.publish` gespeichert werden. Diese müssen repliziert werden und der neue Speicherort ( `/etc/map.publish`) für die **Zuordnungsort** des [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) der Veröffentlichungsumgebung.
