@@ -1,27 +1,23 @@
 ---
 title: Testen von Inhaltsfragmenten in We.Retail
-seo-title: Trying out Content Fragments in We.Retail
 description: Testen von Inhaltsfragmenten in We.Retail
-seo-description: null
-uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '452'
-ht-degree: 90%
+source-wordcount: '455'
+ht-degree: 72%
 
 ---
 
 # Testen von Inhaltsfragmenten in We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail** (in einer vorkonfigurierten Instanz von AEM) stellt das Fragment **Surfen in der Arktis auf den Lofoten** als einfaches Beispiel bereit. Dies zeigt Folgendes:
+Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail** (wie in einer vordefinierten Instanz von Adobe Experience Manager verfügbar) stellt das Fragment bereit **Arktisches Surfen in Lofoten** als Grundmuster. Dies zeigt Folgendes:
 
-* Inhaltsfragmente für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen.
+* Inhaltsfragmente für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Damit können Sie kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten erstellen.
 
    * Siehe [Suche nach Inhaltsfragment-Assets in We.Retail](#where-to-find-content-fragments-in-we-retail).
 
@@ -29,7 +25,7 @@ Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (mög
 
    * Siehe [Verwendung von Inhaltsfragmenten in We.Retail](#where-content-fragments-are-used-in-we-retail).
 
-Die vollständige Dokumentation zum Erstellen, Verwalten, Nutzen und Entwickeln von Inhaltsfragmenten:
+Die vollständige Dokumentation zum Erstellen, Verwalten, Verwenden und Entwickeln von Inhaltsfragmenten finden Sie unter:
 
 * Siehe [Weitere Informationen](#further-information).
 
@@ -48,7 +44,7 @@ Es gibt mehrere Beispielinhaltsfragmente in We.Retail. Navigieren Sie zu **Asset
 
 Diese enthalten **Surfen in der Arktis auf den Lofoten**, ein Fragment mit den zugehörigen visuellen Assets:
 
-* Navigieren Sie zu **Assets** > **Dateien** > **We.Retail** > **Deutsch** > **Erlebnisse** > **Surfen in der Arktis auf den Lofoten**:
+* Navigieren über **Assets**, **Dateien**, **We.Retail**, **englisch**, **Erlebnisse**, **Arktisches Surfen in Lofoten**:
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten ) 
 
@@ -88,7 +84,7 @@ Weitere Informationen finden Sie unter:
 
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md)
 
-   * Hier erfahren Sie, wie Sie Ihre Inhaltsfragment-Assets erstellen, bearbeiten und verwalten.
+   * Erfahren Sie, wie Sie Ihre Inhaltsfragment-Assets erstellen, bearbeiten und verwalten.
 
 * [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md)
 
