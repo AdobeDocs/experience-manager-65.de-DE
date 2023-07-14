@@ -2,10 +2,10 @@
 title: Veraltete und entfernte Funktionen in Adobe Experience Manager Version 6.5.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: ht
-source-wordcount: '1675'
-ht-degree: 100%
+source-git-commit: 11e848d93964b5f8e45ccd7388a48953a3148e35
+workflow-type: tm+mt
+source-wordcount: '1727'
+ht-degree: 90%
 
 ---
 
@@ -28,7 +28,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 
 | Bereich | Funktion | Ersatz | Version (SP) |
 |---|---|---|---|
-| [!DNL Sites] | Experience Fragments-Eigenschaften für **Social-Media-Status**. |  | 6.5.11.0 |
+| [!DNL Sites] | Experience Fragments-Eigenschaften für **Social-Media-Status**. |   | 6.5.11.0 |
 | [!DNL Sites] | Inhaltsfragmentvorlagen zum Erstellen einfacher Inhaltsfragmente. | Jetzt [Modellbasierte strukturierte Inhaltsfragmente](/help/assets/content-fragments/content-fragments-models.md). | 6.5.11.0 |
 | Creative Cloud-Integration | Die Ordnerfreigabe aus AEM in Creative Cloud wurde mit AEM 6.2 eingeführt. Kreative Anwender können hierdurch auf AEM-Assets zugreifen und diese in [!DNL Creative Cloud]-Anwendungen öffnen sowie neue Dateien in AEM hochladen oder dort Änderungen speichern. Eine neue Funktion des Creative Cloud-Programms, Adobe Asset Link, bietet ein wesentlich besseres Benutzererlebnis und einen leistungsfähigeren Zugriff auf Assets aus AEM direkt aus Photoshop, InDesign und Illustrator heraus. Adobe plant keine weiteren Verbesserungen an der Integration der Ordnerfreigabe aus AEM in Creative Cloud. Obwohl die Funktion in AEM enthalten ist, wird Kundinnen und Kunden der Einsatz von Ersatzlösungen empfohlen. | Kunden sollten auf neue Creative Cloud-Integrationsfunktionen wie Adobe Asset Link oder AEM Desktop-App umsteigen. |  |
 | Assets | `AssetDownloadServlet` ist bei den Veröffentlichungsinstanzen standardmäßig deaktiviert. Weitere Informationen finden Sie unter [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md). | Konfiguration, wie unter [Checkliste für die AEM-Sicherheit](/help/sites-administering/security-checklist.md) beschrieben. |  |
@@ -50,7 +50,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 |Entwickler|Verwendung von YUI zum Komprimieren/Minimieren der JavaScript-Client-Bibliotheken. Adobe plant keine weitere Aktualisierung der YUI-Bibliothek. Bis AEM 6.4 wurde YUI standardmäßig verwendet, um JavaScript zu minimieren – mit optionalem Wechsel zu Google Closure Compiler (GCC). Ab AEM 6.5 ist GCC der Standard.|Adobe empfiehlt Kundinnen und Kunden, die auf AEM 6.5 aktualisieren, für ihre Implementierung auf GCC zu wechseln.||
 |Entwickler|Dialog-Editor für die klassische Benutzeroberfläche in CRXDE Lite. Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Distribution (Quickstart) bereitgestellt wird.| Es ist kein Ersatz verfügbar. ||
 |Forms|Die Integration von AEM Forms in AEM Mobile ist veraltet. | Es ist kein Ersatz verfügbar. ||Entwickler|Dialog-Editor für klassische Benutzeroberflächen in CRXDE Lite. Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Distribution (Quickstart) bereitgestellt wird.| Es ist kein Ersatz verfügbar. ||
-|Developers|Lodash/Underscore-Client-Bibliothek. Adobe plant nicht, die Lodash-/Unterstrich-Client-Bibliothek, die im Rahmen der Distribution (Quickstart) bereitgestellt wird, weiter zu pflegen und zu aktualisieren. | Adobe empfiehlt Kundinnen und Kunden, die für ihren Code weiterhin einen Lodash/Unterstrich benötigen, diesen in die Code-Basis ihrer Projekte einzufügen. ||
+|Developers|Lodash/Underscore-Client-Bibliothek. Adobe plant nicht, die Lodash-/Unterstrich-Client-Bibliothek, die im Rahmen der Distribution (Quickstart) bereitgestellt wird, weiter zu pflegen und zu aktualisieren. | Adobe empfiehlt Kundinnen und Kunden, die für ihren Code weiterhin einen Lodash/Unterstrich benötigen, diesen in die Code-Basis ihrer Projekte einzufügen. || |Screens|Adobe plant nicht, das com.adobe.cq.screens.mq.activemq-Bundle und die damit verbundenen Konfigurationen, die für die Einrichtung von 2Publishern verwendet werden, weiter zu verwalten und zu aktualisieren.| Adobe empfiehlt Kunden, die weiterhin die Einrichtung von 2Publishern benötigen, die [Lastenausgleich](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=screens&amp;title=AEM+Screens+publish+environment+horizontal+scaling+through+Load+Balancer+session+stickiness) Ansatz. ||
 
 ## Entfernte Funktionen {#removed-features}
 
@@ -59,15 +59,15 @@ In diesem Abschnitt werden die Merkmale und Funktionen aufgelistet, die aus AEM�
 | Bereich | Funktion | Ersatz | Version (SP) |
 |--- |--- |--- |--- |
 | Integration mit [!DNL Experience Cloud] | Sie können Ihre Assets mit [!DNL Experience Cloud] synchronisieren, mithilfe einer Konfiguration über [!DNL Adobe I/O]. [!DNL Adobe Experience Cloud] hieß zuvor [!DNL Adobe Experience Cloud]. | Bei Fragen [wenden Sie sich an den Kunden-Support von Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;lang=de#support). |  |
-| Analytics Activity Map | Die Version der Activity Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Verwenden Sie das [von Adobe Analytics bereitgestellte Activity Map-Plug-in](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de). |  |
+| Analytics-Activity Map | Die Version der Activity Map, die in AEM enthalten ist. | Aufgrund von Sicherheitsänderungen in der Adobe Analytics-API ist es nicht mehr möglich, die in AEM enthaltene Version von Activity Map zu verwenden. Verwenden Sie das [von Adobe Analytics bereitgestellte Activity Map-Plug-in](https://experienceleague.adobe.com/docs/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html?lang=de). |  |
 | Integrationen | Die ExactTarget-Integration wurde aus der Standardverteilung (Quickstart) entfernt und ist nicht mehr verfügbar. | Kein Ersatz. |  |
 | Integrationen | Die Salesforce Force-API-Integration wurde aus der Standardverteilung (Quickstart) entfernt und ist jetzt ein zusätzliches, über [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) zu installierendes Paket. | Die Funktion ist immer noch verfügbar. |
-| Formulare | Die Unterstützung für den Adobe Central Migration Bridge-Service wurde eingestellt, da Adobe Central nicht länger unterstützt wird. | Kein Ersatz. |  |
+| Formulare | Die Unterstützung für den Adobe Central Migration Bridge-Dienst wurde entfernt, da das Adobe Central-Produkt nicht mehr unterstützt wird. | Kein Ersatz. |  |
 | Formulare | `com.adobe.fd.df.fdinternal.model.ConfigurationInstance` | Kein Ersatz. |  |
 | Formulare | `com.adobe.fd.ccm.channels.print.fdinternal.api.service.PrintDataTransformer` | Kein Ersatz vorhanden. |  |
 | Formulare | Ein einmaliges Upgrade von LiveCycle ES4 SP1 auf AEM 6.5 Forms on JEE ist nicht verfügbar. | In der Dokumentation zu AEM Forms-Upgrades finden Sie die [verfügbaren Upgrade-Pfade](../forms/using/upgrade.md). |  |
 | Formulare | Unterstützung für UPD-basiertes Clustering wurde von AEM Forms on JEE entfernt | Sie können nur TCP-basiertes Clustering in AEM Forms on JEE verwenden. Wenn Sie für einen UDP-Multicast-Server ein Upgrade von einer früheren Version auf AEM 5.5 Forms on JEE durchführen, führen Sie manuelle Konfigurationen durch, um zum TCP-basierten Gemfire-Clustering zu wechseln. Detaillierte Anweisungen finden Sie unter [Upgrade auf AEM 6.5 Forms on JEE](../forms/using/upgrade-forms-jee.md) |  |
-| Entwickler  | Firebug Lite wurde aus der Standardverteilung (Quickstart) entfernt. | Verwenden Sie die im Browser integrierten Entwicklerkonsolen. |
+| Entwickler  | Firebug Lite wurde aus der Standardverteilung (Quickstart) entfernt | Verwenden der integrierten Entwicklerkonsolen des Browsers |
 | Entwickler  | Die Unterstützung für `customJavaScriptPath` wurde im HTML Client Library Manager eingestellt. | Kein Ersatz vorhanden. |  |
 | [!DNL Assets] | Die Asset-Auslagerungsfunktion wurde in [!DNL Adobe Experience Manager] 6.5 entfernt. | Es steht kein Ersatz zur Verfügung. |  |
 | Cache | `system/console/slingjsp` wurde entfernt und ist nicht mehr in AEM 6.5 verfügbar. | Klassen und Slightly-Cache werden im Apache Sling Commons FileSystem ClassLoader-Bundle gespeichert. Sie können die Bundle-Nummer in der AEM-Web-Konsole überprüfen und den Cache-Ordner direkt aus dem Dateisystem entfernen (`crx-quickstart/launchpad/felix/bundle<ID>`). |  |
@@ -78,4 +78,4 @@ Dieser Abschnitt wird verwendet, um die bevorstehenden Änderungen in zukünftig
 
 | Bereich | Funktion | Ankündigung |
 |--- |--- |--- |
-| Foundation | UI-Framework | Adobe plant, die Coral UI 2-Komponenten im Jahr 2019 als veraltet zu kennzeichnen. Coral UI 3 wurde mit AEM 6.2 eingeführt und AEM 6.5 basiert vollständig auf Coral 3. Adobe empfiehlt Kunden und Partnern, die benutzerdefinierte UIs mit Coral 2 erstellt haben, ihre UIs für Coral 3 neu zu strukturieren. Adobe stellt ein Tool zur Konvertierung von Coral 2-Dialogfeldern in Coral 3 bereit. [Klicken Sie hier, um mehr zu erfahren.](/help/sites-developing/modernization-tools.md) |
+| Foundation | UI-Framework | Adobe plant, die Coral UI 2-Komponenten 2 im Jahr 2019 zu veraltet zu machen. Coral UI 3 wurde mit AEM 6.2 eingeführt und AEM 6.5 basiert vollständig auf Coral 3. Adobe empfiehlt Kunden und Partnern, die benutzerdefinierte Benutzeroberflächen mit Coral 2 erstellt haben, diese auf Coral 3 umzugestalten. Adobe stellt ein Tool zum Konvertieren von Coral 2-Dialogfeldern in Coral 3 bereit - [Mehr dazu](/help/sites-developing/modernization-tools.md). |
