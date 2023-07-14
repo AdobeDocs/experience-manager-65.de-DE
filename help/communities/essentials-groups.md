@@ -1,25 +1,21 @@
 ---
 title: Community-Gruppengrundlagen
-seo-title: Community Group Essentials
 description: Dynamisches Erstellen von Community-Sites
-seo-description: Creating community sites dynamically
-uuid: 168e7aeb-6e9a-468d-8ac4-274007cea252
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 2%
+source-wordcount: '407'
+ht-degree: 1%
 
 ---
 
 # Community-Gruppengrundlagen  {#community-group-essentials}
 
-Die Funktion &quot;Community-Gruppen&quot;ermöglicht es einer Unter-Community, von autorisierten Benutzern aus der Veröffentlichungs- und Autorenumgebung dynamisch auf einer Community-Site erstellt zu werden.
+Die Funktion &quot;Community-Gruppen&quot;ermöglicht die dynamische Erstellung einer Subcommunity auf einer Community-Site durch autorisierte Benutzer aus der Veröffentlichungs- und Autorenumgebung.
 
 Als Communitys [Feature Pack 1](deploy-communities.md#latestfeaturepack)kann es sein, dass Gruppen in anderen Gruppen verschachtelt sind
 
@@ -79,17 +75,17 @@ Als Communitys [Feature Pack 1](deploy-communities.md#latestfeaturepack)kann es 
 
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
-* [Community-Gruppen-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [Community-Gruppen-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Community-Gruppenendpunkte](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [Community-Gruppenendpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
 ### Gruppenfunktion {#groups-function}
 
-Eine Community-Site-Struktur mit [Gruppenfunktion](functions.md#groups-function) wird die Schaffung neuer `community groups` aus der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe umfasst eine `community groups member list` -Komponente, die die Mitglieder der Gruppe auflistet.
+Eine Community-Site-Struktur mit [Gruppenfunktion](functions.md#groups-function) unterstützt die Erstellung neuer `community groups` aus der Veröffentlichungs- und Autorenumgebung. Die erstellte Community-Gruppe umfasst eine `community groups member list` -Komponente, die die Mitglieder der Gruppe auflistet.
 
-Ein oder mehrere [Community-Gruppenvorlagen](tools-groups.md), die das Design der Community-Gruppenseite(n) bereitstellen, kann für die Funktion Gruppen konfiguriert werden, wenn die Funktion zu einem [Community-Site-Vorlage](sites.md) oder in einer Community-Gruppenvorlage verschachtelt sind.
+Ein oder mehrere [Community-Gruppenvorlagen](tools-groups.md), die das Design der Community-Gruppenseiten bereitstellen, kann für die Funktion Gruppen konfiguriert werden, wenn die Funktion zu einem [Community-Site-Vorlage](sites.md) oder in einer Community-Gruppenvorlage verschachtelt sind.
 
 Durch die Einbeziehung mehrerer Community-Gruppenvorlagen wird dem autorisierten Benutzer zum Zeitpunkt der Erstellung einer neuen Community-Gruppe für die Community-Site ein Design angezeigt, wie im Abschnitt zu [Community-Gruppen](creating-groups.md) für Autoren.
 
@@ -99,11 +95,11 @@ Als Communitys [FP1](deploy-communities.md#latestfeaturepack)kann eine Gruppenfu
 
 Wenn eine Community-Site oder eine Gruppenvorlage die Funktion Gruppen enthält, können Sie Folgendes tun:
 
-* Erstellen Sie eine Unter-Community in der Autorenumgebung.
+* Erstellen Sie eine Subcommunity in der Autorenumgebung.
 
 * Erstellen Sie eine Gruppe in der Veröffentlichungsumgebung, sofern diese so konfiguriert ist, dass sie dies zulässt.
 
-Beim Erstellen einer Gruppe in der Autorenumgebung ist es erforderlich, zuerst die Community-Site zu veröffentlichen und dann die Gruppe zu veröffentlichen. Durch das Veröffentlichen der Community-Site werden die Seiten der Gruppe veröffentlicht, ohne dass die Mitgliedergruppen der Unter-Community erstellt werden, für die ACLs festgelegt sind. Daher kann eine eingeschränkte (geheime) Gruppe sichtbar sein, bis die Gruppe explizit veröffentlicht wird.
+Beim Erstellen einer Gruppe in der Autorenumgebung ist es erforderlich, zuerst die Community-Site zu veröffentlichen und dann die Gruppe zu veröffentlichen. Durch das Veröffentlichen der Community-Site werden die Seiten der Gruppe veröffentlicht, ohne dass die Mitgliedergruppen der Subcommunity erstellt werden, für die ACLs festgelegt sind. Daher kann eine eingeschränkte (geheime) Gruppe sichtbar sein, bis die Gruppe explizit veröffentlicht wird.
 
 ## Links und zugehörige Informationen {#links-and-related-information}
 

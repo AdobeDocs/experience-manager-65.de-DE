@@ -1,18 +1,14 @@
 ---
 title: Forumsgrundlagen
-seo-title: Forum Essentials
 description: Forumsübersicht
-seo-description: Forum overview
-uuid: 68849582-8742-40be-9e7e-0b574ae38815
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '246'
 ht-degree: 2%
 
 ---
@@ -30,7 +26,7 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
    <td>social/forum/components/hbs/forum<br /> social/forum/components/hbs/topic<br /> social/forum/components/hbs/post</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>einschließen</strong></a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component"><strong>include</strong></a></td>
    <td>Nein</td>
   </tr>
   <tr>
@@ -56,22 +52,22 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
 
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
-* [Forum-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
+* [Forum-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
-* [Forum-Endpunkte](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
+* [Forum-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
 ### Forumsfunktion {#forum-function}
 
-Eine Community-Site-Struktur mit [Forumsfunktion](functions.md#forum-function)enthält eine konfigurierte `forum` sowie Einstellungen, die sich auf Moderation, Tagging und Übersetzung auswirken.
+Eine Community-Site-Struktur mit [Forumsfunktion](functions.md#forum-function)enthält eine konfigurierte `forum` -Komponente und Einstellungen, die sich auf Moderation, Tagging und Übersetzung auswirken.
 
 ### Zugriff auf Forumbeiträge (UGC) {#accessing-forum-posts-ugc}
 
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
+Ab Adobe Experience Manager 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
 
 **Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
 
