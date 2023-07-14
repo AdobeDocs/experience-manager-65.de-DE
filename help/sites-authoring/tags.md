@@ -1,5 +1,5 @@
 ---
-title: Klassifizieren von Inhalten auf einer Website mithilfe von Tags
+title: Verwenden von Tags
 description: Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website.
 uuid: 5d922443-f924-426e-acf4-27dffd1053f6
 contentOwner: Chris Bohnert
@@ -9,14 +9,15 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '575'
+source-git-commit: 8dafa901bc628ee5e4823e9f8811bf4d09b7e072
+workflow-type: tm+mt
+source-wordcount: '569'
 ht-degree: 100%
 
 ---
 
-# Verwenden von Tags{#using-tags}
+
+# Verwenden von Tags {#using-tags}
 
 Tags bieten eine schnelle und einfache Methode zur Klassifizierung von Inhalten innerhalb einer Website. Tags können als Schlüsselwörter oder Beschriftungen betrachtet werden, die an eine Seite, ein Asset oder andere Inhalte angehängt werden können, um Suchen zu ermöglichen, mit denen diese und zugehörige Inhalte gefunden werden können.
 
@@ -54,7 +55,7 @@ Wie bei Seiten können Sie Folgendes für Tags und Namespaces durchführen:
 
 * Einzelne Tags können aktiviert werden.
 
-   Genau wie Seiten müssen neu erstellte Tags zuerst aktiviert werden, bevor sie in einer Veröffentlichungsumgebung verfügbar sind.
+  Genau wie Seiten müssen neu erstellte Tags zuerst aktiviert werden, bevor sie in einer Veröffentlichungsumgebung verfügbar sind.
 
 >[!NOTE]
 >
