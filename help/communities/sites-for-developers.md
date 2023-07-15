@@ -1,18 +1,14 @@
 ---
 title: Community-Site-Grundlagen
-seo-title: Community Site Essentials
 description: Exportieren und Löschen von Community-Sites und Erstellen benutzerdefinierter Site-Vorlagen
-seo-description: Exporting and deleting community sites and creating custom site templates
-uuid: f0ec0e71-64e9-415a-b14a-939a9b1611c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '497'
 ht-degree: 2%
 
 ---
@@ -73,19 +69,19 @@ Identifizieren Sie die benutzerdefinierte Vorlage, indem Sie eine `page-template
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Stellen Sie sicher, dass **Alle speichern** und replizieren benutzerspezifischen Code für alle AEM Instanzen (benutzerspezifischer Code ist nicht enthalten, wenn der Community-Site-Inhalt über die Konsole veröffentlicht wird).
+Stellen Sie sicher, dass **Alle speichern** und replizieren benutzerspezifischen Code für alle Adobe Experience Manager (AEM)-Instanzen (benutzerspezifischer Code ist nicht enthalten, wenn der Community-Site-Inhalt über die Konsole veröffentlicht wird).
 
 Es wird empfohlen, benutzerdefinierten Code zu replizieren, indem Sie [Package erstellen](../../help/sites-administering/package-manager.md#creating-a-new-package) und stellen Sie sie auf allen Instanzen bereit.
 
 ## Exportieren einer Community-Site {#exporting-a-community-site}
 
-Nachdem eine Community-Site erstellt wurde, ist es möglich, die Site als AEM Package zu exportieren, das im Paketmanager gespeichert und zum Herunterladen und Hochladen verfügbar ist.
+Nachdem eine Community-Site erstellt wurde, ist es möglich, die Site als AEM Package zu exportieren, das im Package Manager gespeichert und zum Herunterladen und Hochladen verfügbar ist.
 
 Dies ist im Abschnitt [Communities Sites-Konsole](sites-console.md#exporting-the-site).
 
-Beachten Sie, dass benutzerspezifischer Code und benutzerspezifischer Code nicht im Community-Site-Paket enthalten sind.
+UGC und benutzerspezifischer Code sind nicht im Community-Site-Paket enthalten.
 
-Verwenden Sie zum Exportieren von benutzergenerierten Inhalten die [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), ein Open-Source-Migrationstool, das auf GitHub verfügbar ist.
+Verwenden Sie zum Exportieren von benutzergenerierten Inhalten die [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), ein Open-Source-Migrationstool, das auf GitHub verfügbar ist.
 
 ## Löschen einer Community-Site {#deleting-a-community-site}
 
@@ -105,7 +101,7 @@ So identifizieren Sie die eindeutige Site-ID, die mit der Community-Site verknü
 
 * Die Site-ID ist die dritte Komponente von `rep:principalName`
 
-   Wenn beispielsweise `rep:principalName = community-enable-nrh9h-members`
+  Wenn beispielsweise `rep:principalName = community-enable-nrh9h-members`
 
    * **Site-Name** = *enable*
    * **Site-ID** = *nrh9h*
@@ -113,9 +109,9 @@ So identifizieren Sie die eindeutige Site-ID, die mit der Community-Site verknü
 
 ### Benutzergenerierte Inhalte {#user-generated-content}
 
-Rufen Sie das Projekt communities-srp-tools von Github ab:
+Rufen Sie das Projekt communities-srp-tools von GitHub ab:
 
-* [https://github.com/Adobe-Marketing-Cloud/communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/communities-srp-tools)
+* [https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 Dies enthält ein Servlet zum Löschen aller benutzergenerierten Inhalte aus einem SRP.
 

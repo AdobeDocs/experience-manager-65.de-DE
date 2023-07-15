@@ -1,16 +1,12 @@
 ---
 title: Komponenten, Funktionen und Funktionsgrundlagen
-seo-title: Component, Function and Feature Essentials
 description: Funktionsweise von Community-Sites, -Vorlagen und -Gruppen
-seo-description: How community sites, templates, and groups function
-uuid: 6edfca2d-fe5b-4261-b033-51dc2f9dbfd7
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 2d308756-79d1-4d69-b51c-d4b6e692a137
 exl-id: a43c1c4d-a6c2-4ef9-9047-a945978e618b
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 18%
@@ -19,9 +15,9 @@ ht-degree: 18%
 
 # Komponenten, Funktionen und Funktionsgrundlagen  {#component-function-and-feature-essentials}
 
-AEM Communities-Funktionen erfordern, dass Besucher der Site Mitglieder werden und sich bei der [Community-Site](overview.md#communitiessites) vor dem Posten von Inhalten. Daher [Community-Site-Vorlagen](sites.md), von der aus eine Community-Site [created](sites-console.md), die so konzipiert sind, dass sie eine Anmeldefunktion sowie Benutzerprofile, Messaging, Suche, Moderation und Übersetzung enthalten.
+Adobe Experience Manager (AEM) Communities-Funktionen erfordern, dass Besucher der Site Mitglieder werden und sich bei der [Community-Site](overview.md#communitiessites) vor dem Posten von Inhalten. Daher [Community-Site-Vorlagen](sites.md), von der aus eine Community-Site [created](sites-console.md), die so konzipiert sind, dass sie eine Anmeldefunktion und Benutzerprofile, Messaging, Suche, Moderation und Übersetzung enthalten.
 
-Auf einer Community-Site werden Mitglieder unterstützt, die Community-Gruppen erstellen, wenn die [Community-Gruppen-Funktion](functions.md#groups-function) ist in der ausgewählten Community-Site-Vorlage enthalten.
+Eine Community-Site unterstützt Mitglieder, die Community-Gruppen erstellen, wenn die [Community-Gruppen-Funktion](functions.md#groups-function) ist in der ausgewählten Community-Site-Vorlage enthalten.
 
 Im Folgenden finden Sie Links zu wichtigen Informationen zu Communities-Komponenten, -Funktionen und -Funktionen.
 

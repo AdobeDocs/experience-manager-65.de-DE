@@ -11,9 +11,9 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '1972'
+source-wordcount: '1973'
 ht-degree: 62%
 
 ---
@@ -143,7 +143,7 @@ Die Verbindung von AEM Forms mit Adobe Acrobat Sign Solutions für Behörden ist
 * Anmeldeinformationen vom Adobe Sign-Team erhalten
 * Verwenden der erhaltenen Anmeldeinformationen, um AEM Forms mit Adobe Acrobat Sign Solutions for Government zu verbinden
 
-![](/help/forms/using/assets/adobe-acrobat-sign-govt-workflow.png)
+![adobe-acrobat-sign-govt-workflow](/help/forms/using/assets/adobe-acrobat-sign-govt-workflow.png)
 
 ### Bevor Sie beginnen {#prerequisites-for-adobe-sign-for-acrobat-sign-for-government}
 

@@ -8,9 +8,9 @@ contentOwner: khsingh
 discoiquuid: 600d13e7-6655-41c5-aab4-c8e9e2a8d14f
 role: Admin
 exl-id: 4a4bad4a-3e68-43cb-b55c-03b509a5d304
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '610'
+source-wordcount: '614'
 ht-degree: 87%
 
 ---
@@ -35,9 +35,9 @@ Die Funktion Dokumentensicherheit ist nur in AEM Forms auf JEE verfügbar. Sie b
 
 ![Document Security-Servertopologie](do-not-localize/document-security-server_topology.png)
 
-Die folgende Abbildung zeigt die typische Architektur für AEM Forms Document Security:
+Die folgende Abbildung zeigt die typische Architektur für die Dokumentensicherheit in AEM Forms:
 
-![](do-not-localize/document-security-typical-environment.png)
+![Document Security-typische Umgebung](do-not-localize/document-security-typical-environment.png)
 
 ## Installieren von AEM Forms auf JEE {#installing-aem-forms-on-jee}
 

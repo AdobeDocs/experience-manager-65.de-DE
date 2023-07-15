@@ -11,10 +11,10 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '894'
-ht-degree: 26%
+source-wordcount: '898'
+ht-degree: 25%
 
 ---
 
@@ -96,7 +96,7 @@ Die Offline-Datenerfassung und die Synchronisierung der Daten bei der nächsten 
 * Anpassbare Dashboards für Echtzeiteinblicke in Geschäftsvorgänge
 * API für die Verbindung mit Reporting-Tools von Drittanbietern
 
-![](do-not-localize/3rd-draft.gif)
+![Dritter Entwurf](do-not-localize/3rd-draft.gif)
 
 ## Personalisierte Kommunikation {#personalized-communication}
 
@@ -115,6 +115,6 @@ Personalisierte Dokumente wie Empfangsbestätigungen, Willkommenskits und Anweis
 * Unterstützung für digitale Signaturen zur Überprüfung der Inhaltsintegrität und der Identität des Unterzeichners
 * Document Security-Add-on für AEM Forms, einschließlich Verschlüsselung, Nutzungsrichtlinien, Verfolgung und Prüfung
 
-![](do-not-localize/layout-02.png)
+![Layout 2](do-not-localize/layout-02.png)
 
 Optimierter Workflow für personalisierte Kommunikation

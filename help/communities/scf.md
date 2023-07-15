@@ -1,18 +1,14 @@
 ---
 title: Social Component Framework
-seo-title: Social Component Framework
 description: Das Social Component Framework (SCF) vereinfacht den Prozess der Konfiguration, Anpassung und Erweiterung von Communities-Komponenten
-seo-description: The social component framework (SCF) simplifies the process of configuring, customizing, and extending Communities components
-uuid: 23b4418d-b91c-46fc-bf42-1154ef79fe5a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1478'
 ht-degree: 1%
 
 ---
@@ -26,7 +22,7 @@ Vorteile des Frameworks:
 * **Funktionell**: Native Integration mit wenig oder gar keiner Anpassung für 80 % der Anwendungsfälle.
 * **Skinnierfähig**: Konsistente Verwendung von HTML-Attributen für CSS-Stile.
 * **Erweiterbar**: Die Komponentenimplementierung ist objektorientiert und basiert auf der Geschäftslogik - einfach hinzuzufügen, inkrementelle Geschäftsanmeldungen auf dem Server.
-* **Flexibel**: Einfache JavaScript-Vorlagen ohne Logik, die einfach überlagert und angepasst werden können.
+* **Flexibel**: Einfache JavaScript-Templates ohne Logik, die einfach überlagert und angepasst werden können.
 * **Zugänglich**: Die HTTP-API unterstützt das Posten von jedem Client, einschließlich mobiler Apps.
 * **Tragbar**: Integrieren/einbetten Sie in jede Webseite, die auf einer beliebigen Technologie basiert.
 
@@ -55,29 +51,29 @@ Um die Komponenten anzupassen oder zu erweitern, schreiben Sie nur die Überlage
 * Für Look and Feel:
    * Ändern Sie die JS-Vorlage und CSS.
 * Für Look, Feel und UX:
-   * JS-Vorlage, CSS und [Javascript erweitern/überschreiben](client-customize.md#extending-javascript).
-* So ändern Sie die Informationen, die für die JS-Vorlage oder für den GET-Endpunkt verfügbar sind:
+   * JS-Vorlage, CSS und [JavaScript erweitern/überschreiben](client-customize.md#extending-javascript).
+* So ändern Sie die Informationen, die für die JS-Vorlage oder den GET-Endpunkt verfügbar sind:
    * Erweitern Sie die [SocialComponent](server-customize.md#socialcomponent-interface).
 * So fügen Sie benutzerdefinierte Verarbeitung während Vorgängen hinzu:
    * Eine [OperationExtension](server-customize.md#operationextension-class).
-* So fügen Sie einen neuen benutzerdefinierten Vorgang hinzu:
+* So fügen Sie einen benutzerdefinierten Vorgang hinzu:
    * Erstellen Sie eine neue [Sling Post Operation](server-customize.md#postoperation-class).
    * Vorhandene verwenden [OperationServices](server-customize.md#operationservice-class) nach Bedarf.
-   * Fügen Sie nach Bedarf JavaScript-Code hinzu, um Ihren Vorgang vom Client aus aufzurufen.
+   * Fügen Sie nach Bedarf JavaScript-Code hinzu, um den Vorgang vom Client aus aufzurufen.
 
 ## Server-seitiges Framework {#server-side-framework}
 
 Das Framework stellt APIs für den Zugriff auf Funktionen auf dem Server und die Interaktion zwischen Client und Server bereit.
 
-### Java-APIs {#java-apis}
+### Java™-APIs {#java-apis}
 
-Die Java-APIs bieten abstrakte Klassen und Schnittstellen, die einfach geerbt oder unterteilt werden können.
+Die Java™-APIs bieten abstrakte Klassen und Schnittstellen, die einfach geerbt oder unterteilt werden können.
 
 Die Hauptklassen werden im Abschnitt [Serverseitige Anpassung](server-customize.md) Seite.
 
 Besuch [Übersicht über den Speicheranbieter](srp.md) , um mehr über die Arbeit mit UGC zu erfahren.
 
-### -HTTP-API {#http-api}
+### HTTP-API {#http-api}
 
 Die HTTP-API unterstützt die einfache Anpassung und Auswahl von Client-Plattformen für PhoneGap-Apps, native Apps und andere Integrationen und Mashups. Darüber hinaus ermöglicht die HTTP-API es einer Community-Site, als Dienst ohne Client ausgeführt zu werden, sodass Framework-Komponenten in jede auf einer beliebigen Technologie aufbauende Webseite integriert werden können.
 
@@ -101,7 +97,7 @@ Ein standardmäßiges GET-Servlet überwacht .social.json -Anfragen, auf die die
 
 ### HTTP-API - POST-Anfragen {#http-api-post-requests}
 
-Zusätzlich zu den GET (Lesen)-Vorgängen definiert das Framework ein Endpunktmuster, um andere Vorgänge für eine Komponente zu aktivieren, darunter Erstellen, Aktualisieren und Löschen. Diese Endpunkte sind HTTP-APIs, die Eingaben akzeptieren und entweder mit HTTP-Statuscodes oder mit einem JSON-Antwortobjekt antworten.
+Zusätzlich zu den GET (Lesen)-Vorgängen definiert das Framework ein Endpunktmuster, um andere Vorgänge für eine Komponente zu aktivieren, darunter Erstellen, Aktualisieren und Löschen. Diese Endpunkte sind HTTP-APIs, die Eingaben akzeptieren und entweder mit einem HTTP-Statuscode oder mit einem JSON-Antwortobjekt antworten.
 
 Dieses Framework-Endpunktmuster macht CUD-Vorgänge erweiterbar, wiederverwendbar und prüfbar.
 
@@ -127,11 +123,11 @@ Besuch [Serverseitige Anpassungen](server-customize.md) Informationen zum Anpass
 
 Eine der auffälligsten Änderungen im neuen Framework ist die Verwendung der `Handlebars JS` (HBS) Vorlagensprache, eine beliebte Open-Source-Technologie für Server-Client-Rendering.
 
-HBS-Skripte sind einfach, logiklos, auf dem Server und Client kompiliert, einfach zu überlagern und anzupassen und sind natürlich mit der Client-UX verbunden, da HBS das Client-seitige Rendering unterstützt.
+HBS-Skripte sind einfach, logiklos, auf dem Server und Client kompiliert, einfach zu überlagern und anzupassen und sind natürlich mit der Client-UX verbunden, da HBS clientseitiges Rendering unterstützt.
 
 Das Framework bietet mehrere [Handlebars-Helfer](handlebars-helpers.md) die bei der Entwicklung von SocialComponents nützlich sind.
 
-Wenn Sling auf dem Server eine GET-Anfrage auflöst, identifiziert er das Skript, das zur Beantwortung der Anfrage verwendet wird. Wenn das Skript eine HBS-Vorlage (.hbs) ist, delegiert Sling die Anforderung an die Handlebars-Engine. Die Handlebars-Engine ruft dann die SocialComponent von der entsprechenden SocialComponentFactory ab, erstellt einen Kontext und rendert die HTML.
+Wenn Sling auf dem Server eine GET-Anforderung auflöst, identifiziert er das Skript, das für die Antwort auf die Anfrage verwendet wird. Wenn das Skript eine HBS-Vorlage (.hbs) ist, delegiert Sling die Anforderung an die Handlebars-Engine. Die Handlebars-Engine ruft dann die SocialComponent von der entsprechenden SocialComponentFactory ab, erstellt einen Kontext und rendert die HTML.
 
 ### Keine Zugriffsbeschränkung {#no-access-restriction}
 
@@ -143,7 +139,7 @@ HTTP-Zugriff auf .hbs-Dateien ist möglicherweise nicht verboten.
 
 ### Hinzufügen oder Einschließen einer Communities-Komponente {#add-or-include-a-communities-component}
 
-Die meisten Communities-Komponenten müssen *hinzugefügt* als adressierbare Sling-Ressource. Einige der Communities-Komponenten können *enthalten* in einer Vorlage als nicht vorhandene Ressource, um eine dynamische Einbindung und Anpassung des Speicherorts zu ermöglichen, an dem benutzergenerierte Inhalte geschrieben werden (UGC).
+Die meisten Communities-Komponenten müssen *hinzugefügt* als adressierbare Sling-Ressource. Einige der Communities-Komponenten können *enthalten* in einer Vorlage als nicht vorhandene Ressource enthalten, um eine dynamische Einbindung und Anpassung des Speicherorts zu ermöglichen, an dem benutzergenerierte Inhalte geschrieben werden (UGC).
 
 In beiden Fällen wird die [erforderliche Client-Bibliotheken](clientlibs.md) auch vorhanden sein.
 
@@ -157,16 +153,16 @@ Das Ergebnis ist ein untergeordneter JCR-Knoten unter einem par -Knoten, der Sli
 
 Das Einschließen einer Komponente bezieht sich auf den Prozess des Hinzufügens eines Verweises zu einer [&quot;nicht vorhandene&quot;Ressource](srp.md#for-non-existing-resources-ners) (kein JCR-Knoten) innerhalb der Vorlage, z. B. mithilfe einer Skriptsprache.
 
-Ab AEM 6.1 ist es möglich, die Eigenschaften der Komponente im Authoring *design *mode zu bearbeiten, wenn eine Komponente dynamisch eingeschlossen statt hinzugefügt wird.
+Ab Adobe Experience Manager (AEM) 6.1 ist es möglich, die Komponenteneigenschaften im Autor zu bearbeiten, wenn eine Komponente dynamisch eingeschlossen statt hinzugefügt wird *Design* -Modus.
 
 Es können nur einige ausgewählte AEM Communities-Komponenten dynamisch eingeschlossen werden. Sie sind:
 
 * [Kommentare](essentials-comments.md)
 * [Bewertung](rating-basics.md)
-* [Reviews](reviews-basics.md)
+* [Bewertungen](reviews-basics.md)
 * [Abstimmung](essentials-voting.md)
 
-Die [Handbuch zu Community-Komponenten](components-guide.md) ermöglicht es, einbeziehbare Komponenten von der Hinzufügung zur Einbindung umzuschalten.
+Die [Handbuch zu Community-Komponenten](components-guide.md) ermöglicht, dass integrative Komponenten von der Hinzufügung zur Einbindung umgeschaltet werden.
 
 **Bei Verwendung von Handlebars** Vorlagensprache: Die nicht vorhandene Ressource wird mithilfe der [include helper](handlebars-helpers.md#include) durch Angabe des Ressourcentyps:
 
@@ -191,16 +187,16 @@ Siehe [SCF Handlebars Helpers](handlebars-helpers.md) für eine Liste und Beschr
 
 ### JavaScript-Framework für Modellansichten {#model-view-javascript-framework}
 
-Das Framework umfasst eine Erweiterung von [Backbone.js](https://www.backbonejs.org/), ein JavaScript-Framework zur Modellansicht, um die Entwicklung von komplexen, interaktiven Komponenten zu erleichtern. Die objektorientierte Natur unterstützt ein erweiterbares/wiederverwendbares Framework. Die Kommunikation zwischen Client und Server wird mithilfe der HTTP-API vereinfacht.
+Das Framework umfasst eine Erweiterung von [Backbone.js](https://backbonejs.org/), ein JavaScript-Framework zur Modellansicht, um die Entwicklung von komplexen, interaktiven Komponenten zu erleichtern. Die objektorientierte Natur unterstützt ein erweiterbares/wiederverwendbares Framework. Die Kommunikation zwischen Client und Server wird mit der HTTP-API vereinfacht.
 
-Das Framework nutzt serverseitige Handlebars-Vorlagen, um die Komponenten für den Client zu rendern. Die Modelle basieren auf den von der HTTP-API generierten JSON-Antworten. Die Ansichten binden sich an HTML, die von den Handlebars-Vorlagen generiert wurde, und bieten Interaktivität.
+Das Framework verwendet serverseitige Handlebars-Vorlagen, um die Komponenten für den Client zu rendern. Die Modelle basieren auf den von der HTTP-API generierten JSON-Antworten. Die Ansichten binden sich an HTML, die von den Handlebars-Vorlagen generiert wurde, und bieten Interaktivität.
 
 ### CSS-Konventionen {#css-conventions}
 
 Die folgenden Konventionen werden zum Definieren und Verwenden von CSS-Klassen empfohlen:
 
-* Verwenden Sie eindeutig Namespace-CSS-Klassenselektornamen und vermeiden Sie allgemeine Namen wie &quot;Überschrift&quot;, &quot;Bild&quot;usw.
-* Definieren Sie bestimmte Stile für Klassenselektoren, damit die CSS-Stylesheets mit anderen Elementen und Stilen auf der Seite gut funktionieren. Beispiel: `.social-forum .topic-list .li { color: blue; }`
+* Verwenden Sie eindeutig Namespace-CSS-Klassenselektornamen und vermeiden Sie allgemeine Namen wie &quot;Überschrift&quot;und &quot;Bild&quot;.
+* Definieren Sie bestimmte Stile für die Klassenauswahl, damit die CSS-Stylesheets gut mit anderen Elementen und Stilen auf der Seite funktionieren. Beispiel: `.social-forum .topic-list .li { color: blue; }`
 * Halten Sie CSS-Klassen für die Formatierung getrennt von CSS-Klassen für UX, die von JavaScript gesteuert werden.
 
 ### Clientseitige Anpassungen {#client-side-customizations}
@@ -211,7 +207,7 @@ Informationen zum Anpassen des Erscheinungsbilds und Verhaltens einer Communitie
 * [Erweiterungen](client-customize.md#extensions)
 * [HTML Markup](client-customize.md#htmlmarkup)
 * [Gestalten von CSS](client-customize.md#skinning-css)
-* [JavaScript erweitern](client-customize.md#extending-javascript)
+* [JavaScript-Erweiterung](client-customize.md#extending-javascript)
 * [Clientlibs für SCF](client-customize.md#clientlibs-for-scf)
 
 ## Funktionen und Komponentengrundlagen {#feature-and-component-essentials}

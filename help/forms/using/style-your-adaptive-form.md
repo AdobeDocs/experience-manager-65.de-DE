@@ -9,9 +9,9 @@ topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2041'
 ht-degree: 68%
 
 ---
@@ -97,7 +97,7 @@ Sie können [Design-Editor](/help/forms/using/themes.md) um benutzerdefinierte D
 
 Ein Design ist eine separate Entität wie adaptive Formulare. Sie enthält Stile (CSS) für die Komponenten und Bedienfelder eines adaptiven Formulars. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, wird der angegebene Stil auf die entsprechenden Komponenten eines adaptiven Formulars angewendet.
 
-In diesem Tutorial gestalten Sie Kopf- und Fußzeilen, Text- und numerische Komponenten, Anlagenkomponenten und Schaltflächen. Beginnen wir mit dem Erstellen eines Designs: 
+In diesem Tutorial gestalten Sie Kopf- und Fußzeilen, Text- und numerische Komponenten, Anlagenkomponenten und Schaltflächen. Beginnen wir mit der Erstellung eines Designs:
 
 ### Erstellen von Designs {#create-a-theme}
 
@@ -234,7 +234,7 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
 
 1. Tippen Sie zunächst auf den leeren Bereich über dem Feld **[!UICONTROL Kunden-ID]** und dann auf **[!UICONTROL Responsive Bereichscontainer]**. Legen Sie den **[!UICONTROL Hintergrund]** > **[!UICONTROL Hintergrundfarbe]** auf F1F2F2 fest. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-   ![](do-not-localize/responsive-panel-container.png)
+   ![Responsive Bedienfeld-Container](do-not-localize/responsive-panel-container.png)
 
 ### Gestalten Sie die Schaltflächen {#style-the-buttons}
 
