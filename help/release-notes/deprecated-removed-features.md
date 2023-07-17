@@ -2,10 +2,10 @@
 title: Veraltete und entfernte Funktionen in Adobe Experience Manager Version 6.5.
 description: Spezifische Versionshinweise zu veralteten und entfernten Funktionen von Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 9be9bb1706df750ede3f804012442bd73dc462ee
+source-git-commit: 728069a863fb93b1bebcb1f243ebffc6ec833464
 workflow-type: tm+mt
-source-wordcount: '1730'
-ht-degree: 89%
+source-wordcount: '1712'
+ht-degree: 90%
 
 ---
 
@@ -50,7 +50,7 @@ Kunden wird empfohlen zu überprüfen, ob sie die Funktion in ihrer aktuellen Im
 |Entwickler|Verwendung von YUI zum Komprimieren/Minimieren der JavaScript-Client-Bibliotheken. Adobe plant keine weitere Aktualisierung der YUI-Bibliothek. Bis AEM 6.4 wurde YUI standardmäßig verwendet, um JavaScript zu minimieren – mit optionalem Wechsel zu Google Closure Compiler (GCC). Ab AEM 6.5 ist GCC der Standard.|Adobe empfiehlt Kundinnen und Kunden, die auf AEM 6.5 aktualisieren, für ihre Implementierung auf GCC zu wechseln.||
 |Entwickler|Dialog-Editor für die klassische Benutzeroberfläche in CRXDE Lite. Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Distribution (Quickstart) bereitgestellt wird.| Es ist kein Ersatz verfügbar. ||
 |Forms|Die Integration von AEM Forms in AEM Mobile ist veraltet. | Es ist kein Ersatz verfügbar. ||Entwickler|Dialog-Editor für klassische Benutzeroberflächen in CRXDE Lite. Adobe plant keine weitere Pflege und Aktualisierung des Dialog-Editors für klassische UI, der im Rahmen der Distribution (Quickstart) bereitgestellt wird.| Es ist kein Ersatz verfügbar. ||
-|Developers|Lodash/Underscore-Client-Bibliothek. Adobe plant nicht, die Lodash-/Unterstrich-Client-Bibliothek, die im Rahmen der Distribution (Quickstart) bereitgestellt wird, weiter zu pflegen und zu aktualisieren. | Adobe empfiehlt Kundinnen und Kunden, die für ihren Code weiterhin einen Lodash/Unterstrich benötigen, diesen in die Code-Basis ihrer Projekte einzufügen. || |Screens|Adobe plant nicht, das com.adobe.cq.screens.mq.activemq-Bundle und die damit verbundenen Konfigurationen, die für die Einrichtung von 2Publishern verwendet werden, weiter zu verwalten und zu aktualisieren.| Adobe empfiehlt Kunden, die weiterhin die Einrichtung von 2Publishern benötigen, die [Lastenausgleich](https://wiki.corp.adobe.com/pages/viewpage.action?spaceKey=screens&amp;title=AEM+Screens+publish+environment+horizontal+scaling+through+Load+Balancer+session+stickiness) Ansatz. ||
+|Developers|Lodash/Underscore-Client-Bibliothek. Adobe plant nicht, die Lodash-/Unterstrich-Client-Bibliothek, die im Rahmen der Distribution (Quickstart) bereitgestellt wird, weiter zu pflegen und zu aktualisieren. | Adobe empfiehlt Kundinnen und Kunden, die für ihren Code weiterhin einen Lodash/Unterstrich benötigen, diesen in die Code-Basis ihrer Projekte einzufügen. || |Screens|Adobe plant nicht, das com.adobe.cq.screens.mq.activemq-Bundle und die damit verbundenen Konfigurationen, die für die Einrichtung von 2Publishern verwendet werden, weiter zu verwalten und zu aktualisieren.| Adobe empfiehlt Kunden, die weiterhin die Einrichtung von 2Publishern benötigen, den Lastenausgleich zu verwenden. ||
 
 ## Entfernte Funktionen {#removed-features}
 
