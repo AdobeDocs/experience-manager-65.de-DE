@@ -1,17 +1,15 @@
 ---
 title: Konfigurieren von Benutzern und Benutzergruppen
 description: Auf dieser Seite erhalten Sie Informationen zu den Benutzerrollen und dazu, wie Sie Ihre Benutzer und Gruppen konfigurieren, um die Bearbeitung und Verwaltung Ihrer mobilen On-Demand-Dienste-App zu unterstützen.
-uuid: 461e1725-41dd-4883-92b9-a7e175660401
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
 workflow-type: tm+mt
-source-wordcount: '515'
-ht-degree: 5%
+source-wordcount: '512'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +17,7 @@ ht-degree: 5%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 In diesem Kapitel werden die Benutzerrollen und die Konfiguration Ihrer Benutzer und Gruppen zur Unterstützung der Erstellung und Verwaltung Ihrer Apps beschrieben.
 
@@ -27,15 +25,15 @@ In diesem Kapitel werden die Benutzerrollen und die Konfiguration Ihrer Benutzer
 
 ### AEM Mobile Application Content Authors (Gruppe &quot;app-author&quot;) {#aem-mobile-application-content-authors-app-author-group}
 
-Mitglieder der Gruppe &quot;App-Autor&quot;sind für die Bearbeitung AEM Inhalte mobiler Anwendungen verantwortlich, einschließlich Seiten, Text, Bildern und Videos.
+Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring AEM Inhalte mobiler Anwendungen verantwortlich, einschließlich Seiten, Text, Bildern und Videos.
 
 #### Gruppenkonfiguration - app-authors {#group-configuration-app-authors}
 
-1. Erstellen Sie eine neue Benutzergruppe mit dem Namen &quot;app-authors&quot;:
+1. Erstellen Sie eine Benutzergruppe mit dem Namen &quot;app-authors&quot;:
 
    Navigieren Sie zur Admin Console Benutzer : [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
-   Wählen Sie in der Benutzergruppenkonsole die Schaltfläche &quot;+&quot;aus, um eine Gruppe zu erstellen.
+   Wählen Sie in der Benutzergruppenkonsole die Schaltfläche &quot;+&quot;, um eine Gruppe zu erstellen.
 
    Setzen Sie die ID dieser Gruppe auf &quot;app-authors&quot;, um anzugeben, dass es sich um einen bestimmten Typ von Autoren-Benutzergruppe handelt, die für das Authoring von Mobile Apps in AEM spezifisch ist.
 
@@ -43,7 +41,7 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für die Bearbeitung AEM Inhalte
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Nachdem Sie die Benutzergruppe &quot;app-authors&quot;erstellt haben, können Sie dieser neuen Gruppe einzelne Teammitglieder über die [Benutzer-Admin Console](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nachdem Sie die Benutzergruppe &quot;app-authors&quot;erstellt haben, können Sie dieser neuen Gruppe einzelne Teammitglieder über die [Admin Console des Benutzers](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -66,11 +64,11 @@ Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit den gl
 >
 >Berechtigungen bestimmen die Verfügbarkeit einiger Benutzeraktionen im AEM App Command Center.
 >
->Sie werden feststellen, dass einige Optionen nicht für App-Autoren verfügbar sind, die für App-Administratoren verfügbar sind.
+>Beachten Sie, dass einige Optionen nicht für App-Autoren verfügbar sind, die für App-Administratoren verfügbar sind.
 
 ### Gruppenkonfiguration - app-admins {#group-configuration-app-admins}
 
-1. Erstellen Sie eine neue Gruppe namens &quot;app-admins&quot;.
+1. Erstellen Sie eine Gruppe namens &quot;app-admins&quot;.
 1. Fügen Sie Ihrer neuen Gruppe &quot;app-admins&quot;die folgenden Gruppen hinzu:
 
    * content-authors
@@ -105,7 +103,7 @@ Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit den gl
 1. So exportieren Sie Inhalte oder laden sie hoch
 
    * (Lesen Sie unter /etc/contentsync für den Zugriff auf Exportvorlagen.)
-   * (Lesen) auf /var zu für Pfad-Traversal bei Lesevorgängen
+   * (Lesen) auf /var zum Pfad traversal bei Lesevorgängen
    * (Lesen, Schreiben, Ändern, Löschen) unter /var/contentsync zum Schreiben, Lesen und Bereinigen zwischengespeicherter ContentSync-Exportinhalte
 
 ### Zusätzliche Ressourcen {#additional-resources}

@@ -1,19 +1,15 @@
 ---
 title: Arbeiten mit Startpunkten
-seo-title: Working with Startpoints
-description: Schritte zum Arbeiten mit einem AEM Forms-Prozess von Ihrem in Workbench definierten Mobilgerät aus.
-seo-description: Steps to work with a AEM Forms process from your Mobile device defined in Workbench.
-uuid: 1c4b4c86-cbdb-4e72-b0eb-7f8a2f5dcdde
+description: Schritte zum Arbeiten mit einem Adobe Experience Manager Forms-Prozess von Ihrem in Workbench definierten Mobilgerät aus.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 1ea60fb2-cf9f-4a87-bd8e-98150e668456
 docset: aem65
 exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '235'
-ht-degree: 100%
+source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 40%
 
 ---
 
@@ -23,15 +19,15 @@ Ein Startpunkt ruft einen in der Workbench erstellten Prozess auf. Ein ist mit e
 
 >[!NOTE]
 >
->Die Begriffe „Startpunkte“, „Startprozess“ und „Formular“ werden wechselweise verwendet, wenn von diesem Konzept die Rede ist.
+>Die Begriffe &quot;Startpunkte&quot;, &quot;Startprozess&quot;und &quot;Formular&quot;werden synonym verwendet, wenn auf dieses Konzept verwiesen wird.
 
-Um einen Prozess aus der AEM Forms-Anwendung zu initiieren, müssen Sie einen Startpunkt des Typs **Arbeitsbereich** in Ihrem Prozess haben. Außerdem müssen Sie für den Startpunkt die Option **[!UICONTROL Visible in Mobile Workspace]** auswählen.
+Um einen Prozess aus der Adobe Experience Manager (AEM) Forms App zu starten, benötigen Sie einen Startpunkt vom Typ **Arbeitsbereich** in Ihrem Prozess. Außerdem müssen Sie die **[!UICONTROL In Mobile Workspace sichtbar]** für den Startpunkt.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 
 **Starten eines in Workbench definierten Prozesses**
 
-1. Um die in der AEM Forms-App verfügbaren Startpunkte anzuzeigen, gehen Sie zum [Startbildschirm](../../forms/using/home-screen.md).
+1. Um die in der AEM Forms-App verfügbaren Startpunkte anzuzeigen, navigieren Sie zu [Startbildschirm](../../forms/using/home-screen.md).
 1. Auf dem Bildschirm **[!UICONTROL Startseite]** wird standardmäßig die Liste **[!UICONTROL Alle Formulare]** angezeigt.
 
    Der Startpunkt ist mit einem Formular verknüpft. Tippen Sie in der Liste auf das mit dem Startpunkt verknüpfte Formular, um es zu öffnen.
@@ -44,8 +40,8 @@ Um einen Prozess aus der AEM Forms-Anwendung zu initiieren, müssen Sie einen St
 
 1. Nachdem Sie das Formular ausgefüllt haben, tippen Sie auf **[!UICONTROL Senden.]**
 
-Wenn die App offline ist, werden das Formular und die Daten im Ordner „Outbox“ gespeichert.
+Wenn die App offline ist, werden das Formular und die zugehörigen Daten im Ordner &quot;Outbox&quot;gespeichert.
 
 Wenn die App online ist, wird die Aufgabe mit dem AEM Forms-Server synchronisiert und dem im Prozess angegebenen Benutzer zugewiesen.
 
-Informationen zum Bearbeiten der Aufgabe in Ihrer Aufgabenliste finden Sie unter [Öffnen einer Aufgabe](/help/forms/using/open-task.md).
+Informationen zum Arbeiten mit der Aufgabe in der Aufgabenliste finden Sie unter [Öffnen einer Aufgabe](/help/forms/using/open-task.md).
