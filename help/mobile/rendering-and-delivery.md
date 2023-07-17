@@ -1,18 +1,14 @@
 ---
 title: Rendering und Versand
-seo-title: Rendering and Delivery
 description: Rendering und Versand
-seo-description: null
-uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '573'
-ht-degree: 11%
+source-wordcount: '580'
+ht-degree: 7%
 
 ---
 
@@ -20,9 +16,9 @@ ht-degree: 11%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM Inhalte können einfach über gerendert werden. [Sling-Standard-Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) zum Rendern [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und anderen Formaten.
+Adobe Experience Manager (AEM)-Inhalte können einfach über [Sling-Standard-Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) zum Rendern [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und anderen Formaten.
 
 Diese vordefinierten Renderer führen normalerweise das Repository durch und geben Inhalt unverändert zurück.
 
@@ -159,7 +155,7 @@ Die folgende Tabelle zeigt die Eigenschaften:
    <td>Zeichenfolge[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Für die folgenden Sling-Ressourcentypen sollten Sie nicht den standardmäßigen CaaS-JSON-Export zurückgeben.<br /> Geben Sie einen Customer JSON-Export zurück, indem Sie die Ressource als rendern.<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>Für die folgenden Sling-Ressourcentypen geben Sie nicht den standardmäßigen CAAs-JSON-Export zurück.<br /> Geben Sie einen Customer JSON-Export zurück, indem Sie die Ressource als rendern.<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -220,7 +216,7 @@ Die standardmäßige Exportkonfiguration für Content Services wird angewendet, 
 
 #### Seitenexportkonfiguration {#page-export-configuration}
 
-Diese Konfiguration erweitert die Standardeinstellung, um die Gruppierung von untergeordneten Elementen unter einem untergeordneten Knoten einzuschließen.
+Diese Konfiguration erweitert die Standardeinstellung, um die Gruppierung von untergeordneten Elementen unter einem untergeordneten Knoten einzubeziehen.
 
 &lt;site_page>.caas.page[.&lt;depth-int>].json
 

@@ -1,17 +1,13 @@
 ---
 title: Massenverarbeitungsvorgänge
-seo-title: Bulk Processing Operations
 description: null
-seo-description: null
 page-status-flag: never-activated
-uuid: 62a6c379-a460-4f8f-a909-03d04fa8944b
 contentOwner: sarchiz
-discoiquuid: 47c2a80f-78ac-4372-86b4-06351a1dd58f
 docset: aem65
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '511'
-ht-degree: 69%
+source-wordcount: '503'
+ht-degree: 34%
 
 ---
 
@@ -20,15 +16,15 @@ ht-degree: 69%
 
 ## Einführung {#introduction}
 
-Seit der neuesten Version von AEM ist die Schaltfläche „Alle auswählen“ in allen Ansichten verfügbar: Listen-, Spalten- und Kartenansicht. Über die Schaltfläche „Alle auswählen“ werden jetzt alle Inhalte eines bestimmten Ordners oder einer bestimmten Sammlung ausgewählt und nicht nur die Assets und Seiten, die im Client-Browser geladen und angezeigt werden.
+Mit der neuesten Version von Adobe Experience Manager (AEM) wurde die Schaltfläche Alle auswählen auf alle Ansichten erweitert: Listen-, Spalten- und Kartenansicht. Über die Schaltfläche „Alle auswählen“ werden jetzt alle Inhalte eines bestimmten Ordners oder einer bestimmten Sammlung ausgewählt und nicht nur die Assets und Seiten, die im Client-Browser geladen und angezeigt werden.
 
-Wichtige Aktionen wurden Massenverarbeitung aktiviert: **Verschieben**, **Löschen** und **Kopieren**. In einem neuen Dialogfeld erfahren Kunden, für welche Aktionen die Massenverarbeitung nicht verfügbar ist.
+Schlüsselaktionen wurden für den Massenvorgang aktiviert: **Verschieben**, **Löschen** und **Kopieren**. Ein neues Dialogfeld informiert Kunden darüber, für welche Aktionen die Massenverarbeitung nicht verfügbar ist.
 
 ## Verwendung {#how-to-use}
 
 Eine neue Schaltfläche namens **Alle auswählen** wurde der Karten-, Listen- oder Spaltenansicht hinzugefügt. Diese Schaltfläche kann in allen Ansichten verwendet werden, um alle Elemente im Datensatz auszuwählen.
 
-In früheren Versionen von AEM war die Auswahl darauf begrenzt, was im Client-Browser geladen war. Diese neuen Änderungen wurden eingeführt, um Verwirrung in Bezug auf die Anzahl der Elemente zu vermeiden, für die ein Massenvorgang durchgeführt wird.
+In früheren Versionen von AEM war die Auswahl darauf begrenzt, was im Client-Browser geladen war. Diese neue Änderung wurde eingeführt, um Verwirrung in Bezug auf die Anzahl der Elemente zu vermeiden, für die ein Massenvorgang durchgeführt wird.
 
 Vorerst wurden drei Vorgänge zur Massenverarbeitung hinzugefügt:
 
@@ -37,7 +33,7 @@ Vorerst wurden drei Vorgänge zur Massenverarbeitung hinzugefügt:
 * Löschen
 
 Künftig werden weitere Vorgänge unterstützt.
-Um diese Funktion verwenden zu können, müssen Sie zu dem Ordner oder der Sammlung navigieren, in dem bzw. der Sie Massenvorgänge für Seiten oder Assets durchführen möchten.
+Um diese Funktion zu verwenden, navigieren Sie zu dem Ordner oder der Sammlung, in dem Sie einen Massenvorgang auf Seiten oder Assets durchführen möchten.
 
 Wählen Sie dann eine der Ansichten aus, wie unten dargestellt:
 
@@ -75,10 +71,10 @@ Verwenden Sie in der Listenansicht entweder die Schaltfläche **Alle auswählen*
 
 Nach der Auswahl kann eine der drei Massenaktionen ausgeführt werden: **Verschieben**, **Kopieren** oder **Löschen**.
 
-Hier wird der Vorgang **Verschieben** für die oben ausgewählten Assets ausgeführt. In allen Ansichten führt dies dazu, dass alle Assets an den ausgewählten Speicherort verschoben werden und nicht nur die Assets, die auf dem Bildschirm geladen sind.
+Hier wird der Vorgang **Verschieben** für die oben ausgewählten Assets ausgeführt. In allen Ansichten führt dies dazu, dass alle Assets an den ausgewählten Speicherort verschoben werden und nicht nur die Assets, die auf dem Bildschirm geladen werden.
 
 ![Verschieben von Assets, die einen ausgewählten Ordner in der Spaltenansicht anzeigen.](assets/noua.png)
 
-Bei anderen Vorgängen, bei denen keine Massenvorgänge unterstützt werden, z. B. **Herunterladen**, wird ein Warnhinweis angezeigt, dass nur im Browser geladene Elemente in den Vorgang einbezogen werden.
+Bei anderen Vorgängen, bei denen keine Massenvorgänge aktiviert sind, z. B. **Herunterladen,** Es wird eine Warnung angezeigt, die besagt, dass nur Elemente im Browser geladen werden.
 
 ![Asset-Ansicht mit ausgewählten Bild-Assets und dem Popup-Dialogfeld &quot;Massenaktion nicht unterstützt&quot;.](assets/zece.png)

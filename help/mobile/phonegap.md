@@ -1,16 +1,14 @@
 ---
-title: Authoring für Adobe PhoneGap Enterprise in AEM
+title: Authoring für Adobe PhoneGap Enterprise in Adobe Experience Manager
 description: PhoneGap
-uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
 source-wordcount: '207'
-ht-degree: 13%
+ht-degree: 4%
 
 ---
 
@@ -18,11 +16,11 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Adobe Experience Manager (AEM) Mobile ist nur eine Säule, die die gesamte AEM Plattform bildet.
 
-Für den Start eines neuen AEM Mobile-App-Erlebnisses müssen mehrere Rollen kodiert werden, bevor es für die Inhaltsbearbeitung bereit ist. Die folgenden Rollen bieten einen Ausgangspunkt für die Erstellung einer neuen AEM Mobile-Anwendung:
+Für den Start eines neuen AEM Mobile-App-Erlebnisses müssen mehrere Rollen kodiert werden, bevor es für die Inhaltsbearbeitung bereit ist. Die folgenden Rollen bieten einen Ausgangspunkt für die Erstellung einer AEM Mobile-Anwendung:
 
 * **Administrator**
 * **Entwickler**
@@ -39,7 +37,7 @@ Erste Schritte finden Sie in den folgenden Ressourcen:
 * [App-Kachel verwalten](/help/mobile/phonegap-app-details-tile.md)
 * [Bearbeiten von App-Metadaten](/help/mobile/phonegap-editmetadata.md)
 * [App-Definitionen](/help/mobile/phonegap-app-definitions.md)
-* [Erstellen einer neuen AEM Mobile-App mit dem Assistenten zum Erstellen](/help/mobile/phonegap-create-new-app.md)
+* [Erstellen einer AEM Mobile-App mit dem Assistenten zum Erstellen](/help/mobile/phonegap-create-new-app.md)
 * [Vorhandene Hybrid-App importieren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
 Weitere Informationen **Content Services**, siehe [Übersicht über Content Services](/help/mobile/develop-content-as-a-service.md) um zu beginnen.

@@ -1,19 +1,15 @@
 ---
 title: App-Leistung mit Adobe Mobile Analytics verfolgen
-seo-title: Track App Performance with Adobe Mobile Analytics
-description: Mit Adobe Mobile Services können Sie durch Nachverfolgung der Nutzung, App-Abstürze, Gerätedetails und so vieler anderer wichtiger Metriken für Ihre mobilen Apps Einblicke in die Verwendung Ihrer mobilen Apps erhalten. Auf dieser Seite erfahren Sie mehr.
-seo-description: With Adobe Mobile Services you can gain insight on how your users are using your mobile apps by tracking usage, app crashes, device details and so many other critical metrics for your mobile apps. Follow this page to learn more.
-uuid: 139858c7-66a1-4fea-9f7e-4671b86f67e6
+description: Mit Adobe Mobile Services können Sie durch Tracking der Nutzung, von App-Abstürzen, von Gerätedetails und vielen weiteren wichtigen Metriken für Ihre mobilen Apps Einblicke in die Verwendung Ihrer mobilen Apps erhalten. Auf dieser Seite erfahren Sie mehr.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 377548fa-987a-4a59-84a3-067a3541b6b2
 exl-id: 7e358660-bc2f-4d8f-8d74-6cdb6c1ea7b5
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '1072'
-ht-degree: 10%
+source-wordcount: '1052'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 10%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Sie möchten höhere Kundenkonversionen und -loyalität fördern.
 
@@ -31,13 +27,13 @@ Was macht Ihre AEM Mobile-App für Ihre Marketingkampagnen?
 
 Wie können Sie Ihre Mobile Apps anpassen, um den Benutzern das beste Erlebnis zu bieten?
 
-Mit Adobe Mobile Services können Sie durch Nachverfolgung der Nutzung, App-Abstürze, Gerätedetails und so vieler anderer wichtiger Metriken für Ihre mobilen Apps Einblicke in die Verwendung Ihrer mobilen Apps erhalten.
+Mit Adobe Mobile Services können Sie durch Tracking der Nutzung, von App-Abstürzen, von Gerätedetails und vielen weiteren wichtigen Metriken für Ihre mobilen Apps Einblicke in die Verwendung Ihrer mobilen Apps erhalten.
 
-Adobe Experience Manager Mobile bietet einen Einblick in die Details Ihrer mobilen Analyse direkt über das AEM Mobile Application Dashboard. Die **Mobilmetrikbereich** im Dashboard bietet Echtzeitanalysen für Ihre Mobile App, sodass Entwickler, Autoren und Administratoren einen schnellen Überblick über den Zustand Ihrer Mobile App erhalten. Unter den Überschriften wird die Analyse durch die [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK. Das Adobe Mobile Analytics-SDK kann nativ oder über ein PhoneGap-Bridge-Plug-in für Webansichten an Ihre Anwendungen angeschlossen werden. Metriken werden erfasst und auf dem Gerät zwischengespeichert, bis das Gerät verbunden ist, an dem die Daten zur Berichterstellung und Analyse an die Adobe Mobile Services Cloud gesendet werden.
+Adobe Experience Manager Mobile bietet einen Einblick in die Details Ihrer mobilen Analyse direkt über das AEM Mobile Application Dashboard. Die **Mobilmetrikbereich** im Dashboard bietet Real-Time Analytics für Ihre Mobile App, sodass Entwickler, Autoren und Administratoren einen schnellen Überblick über den Zustand Ihrer Mobile App erhalten. Unter den Abdeckung ist die Aktivierung der Analyse die [Adobe Mobile Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) SDK. Das Adobe Mobile Analytics-SDK kann nativ oder über ein PhoneGap Bridge-Plug-in für Webansichten an Ihre Anwendungen angeschlossen werden. Metriken werden erfasst und auf dem Gerät zwischengespeichert, bis das Gerät verbunden ist, an dem die Daten zur Berichterstellung und Analyse an die Adobe Mobile Services Cloud gesendet werden.
 
-Das Adobe Mobile Analytics-SDK bietet Folgendes:
+Adobe Mobile Analytics SDK bietet Folgendes:
 
-1. **Datenerfassung für mobile Kanäle** - Erfassen Sie umfassende Daten zu Ihren mobilen Websites und Apps auf allen wichtigen Betriebssystemen.
+1. **Datenerfassung für mobile Kanäle** - Erfassen Sie umfassende Daten für Ihre mobilen Websites und Apps auf allen gängigen Betriebssystemen.
 1. **Mobile Interaktionsanalyse** - Erfahren Sie mehr über die Benutzerinteraktion innerhalb Ihrer mobilen App, Website oder Videos, einschließlich der Häufigkeit, mit der Verbraucher den Kanal starten, ob sie Käufe darüber tätigen und mehr.
 1. **Dashboards und Berichte für mobile Apps** - Rufen Sie Nutzungsberichte ab, die Lebenszyklusmetriken für Ihre Apps und App Store-Metriken enthalten - siehe Trends für Benutzer, Starts, durchschnittliche Sitzungslänge, Aufbewahrungsdauer und Abstürze.
 1. **Analyse mobiler Kampagnen** - Quantifizieren Sie die Effektivität mobiler Kampagnen wie SMS, mobile Suchanzeigen, mobile Display-Anzeigen und QR-Codes.
@@ -58,17 +54,17 @@ Schließlich [AEM Administratoren](#administrators) Lernen Sie:
 
 **Voraussetzung:** AEM Administratoren müssen die Cloud-Konfiguration der Adobe Mobile Services konfigurieren. [wie unten beschrieben](#amscloudserviceconfig).
 
-Entwickler sind für [Hinzufügen von Analysen zu einer AEM Mobile-App](/help/mobile/phonegap-add-analytics-to-apps.md) bei Bedarf verfolgen, berichten und verstehen, wie Sie mit Ihren mobilen App-Inhalten interagieren und wichtige Lebenszyklusmetriken wie Starts, Zeit in der App und Absturzhäufigkeit messen.
+Entwickler sind für [Hinzufügen von Analysen zu einer AEM Mobile-App](/help/mobile/phonegap-add-analytics-to-apps.md) , um zu verfolgen, darüber zu berichten und zu verstehen, wie Ihre Benutzer mit Ihren mobilen App-Inhalten interagieren, und wichtige Lebenszyklusmetriken wie Starts, Zeit in der App und Absturzhäufigkeit zu messen.
 
 ## Für Administratoren - Adobe Mobile Services Cloud Service konfigurieren {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 
 Um Adobe Mobile Services nutzen zu können, müssen Sie den Cloud Service für AEM Adobe Mobile Services mit Ihren Adobe Analytics-Kontoinformationen konfigurieren. Das Apps-Befehlszentrum bietet eine **Metriken analysieren** Kachel, in der Sie den Cloud-Service erstellen und mit Ihrer mobilen App verknüpfen können.
 
-Konfigurieren Sie den Cloud-Service für Ihre mobile App, indem Sie auf das Zahnradsymbol in der Kachel Metriken analysieren klicken.
+Konfigurieren Sie den Cloud-Service für Ihre mobile App, indem Sie auf das Zahnradsymbol auf der Kachel Metriken analysieren klicken.
 
 ![chlimage_1-125](assets/chlimage_1-125.png)
 
-Wenn Sie auf das Zahnradsymbol in der Kachel Metriken analysieren klicken, wird das modale Dialogfeld &quot;Mobile Services Analytics konfigurieren&quot;geöffnet. Wählen Sie Ihre Konfiguration aus der Dropdown-Liste &quot;Mobile Service-Konfiguration auswählen&quot;aus. Wenn Sie eine neue Konfiguration erstellen müssen, klicken Sie auf die Schraubenschlüssel-Schaltfläche.
+Wenn Sie auf das Zahnradsymbol in der Kachel Metriken analysieren klicken, wird das modale Dialogfeld &quot;Mobile Services Analytics konfigurieren&quot;geöffnet. Wählen Sie Ihre Konfiguration aus der Dropdown-Liste &quot;Mobile Service-Konfiguration auswählen&quot;aus. Wenn Sie eine Konfiguration erstellen müssen, klicken Sie auf die Schraubenschlüsselschaltfläche .
 
 Um einen Adobe Mobile Service-Cloud-Service zu erstellen, sind zwei Schritte erforderlich: die Verbindung zum Dienst und die Auswahl der Report Suite, die der Konfiguration zugewiesen werden soll.
 
@@ -76,7 +72,7 @@ Klicken Sie zunächst auf die Schaltfläche &quot;+&quot;auf der Kachel Cloud Se
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
-Beim Klicken auf &quot;**+**&quot;, die **Cloud Service hinzufügen** angezeigt.
+Nachdem Sie auf &quot;**+**&quot;, die **Cloud Service hinzufügen** angezeigt.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
@@ -94,25 +90,25 @@ Nachdem Sie die Konfiguration des mobilen Dienstes mit der AEM Mobile-App verkn�
 
 ### Adobe Mobile Services SDK-Konfigurationsdatei {#adobe-mobile-services-sdk-config-file}
 
-Zu diesem Zeitpunkt ist Ihre Mobile App mit einem Cloud-Service verknüpft. Die Mobile App weiß jedoch noch nicht, wie die erfassten Mobile-Metriken an Adobe Analytics zurückgegeben werden können. Um die App mit Adobe Analytics zu verknüpfen, muss die Adobe Mobile Services SDK-Konfigurationsdatei zu Adobe Experience Manager hinzugefügt werden.
+Zu diesem Zeitpunkt ist Ihre Mobile App mit einem Cloud-Service verknüpft. Die Mobile App weiß jedoch noch nicht, wie die erfassten Mobile-Metriken an Adobe Analytics zurückgesendet werden können. Um die mobile App mit Adobe Analytics zu verknüpfen, muss die Adobe Mobile Services SDK-Konfigurationsdatei zu Adobe Experience Manager hinzugefügt werden.
 
 Klicken Sie in der Kachel Metriken analysieren auf das Pfeilsymbol, um die Menüeinträge AMS SDK-Konfiguration herunterladen/hochladen anzuzeigen.
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
-Der erste Schritt besteht darin, die SDK-Konfiguration von Adobe Mobile Services abzurufen. Wenn Sie auf &quot;AMS SDK-Konfiguration herunterladen&quot;klicken, werden Sie zur Adobe Mobile Services-Website weitergeleitet, von der Sie die Konfigurationsdatei herunterladen können. Nachdem Sie die Datei ADBMobileConfig.json erhalten haben, klicken Sie auf &quot;AMS-SDK-Konfiguration hochladen&quot;, um die Konfigurationsdatei in AEM hochzuladen.
+Der erste Schritt besteht darin, die SDK-Konfiguration von Adobe Mobile Services abzurufen. Klicken Sie auf &quot;AMS SDK-Konfiguration herunterladen&quot;, um zur Adobe Mobile Services-Website weitergeleitet zu werden, von der Sie die Konfigurationsdatei herunterladen können. Nachdem Sie die Datei ADBMobileConfig.json erhalten haben, klicken Sie auf &quot;AMS SDK-Konfiguration hochladen&quot;, um die Konfigurationsdatei in AEM hochzuladen.
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
 
 Klicken Sie auf die Schaltfläche &quot;Adobe Mobile Services Application Config hochladen&quot;, suchen Sie die Datei &quot;ADBMobileConfig.json&quot;und klicken Sie auf &quot;Hochladen&quot;.
 
-Jetzt, da die mobile App Zugriff auf die Datei ADBMobileConfig.json hat, verfügt sie über die nötigen Kenntnisse, um mit Adobe Analytics zu kommunizieren und Berichte zu diesen wichtigen Metrikwerten zu erstellen, die Ihnen helfen, Ihren App-Erfolg zu fördern.
+Jetzt, da die mobile App Zugriff auf die Datei ADBMobileConfig.json hat, verfügt sie über die nötigen Kenntnisse, um mit Adobe Analytics zu kommunizieren und Berichte zu diesen wichtigen Metrikwerten zu erstellen, die den Erfolg Ihrer Apps fördern.
 
 ## Wie geht es weiter? {#what-s-next}
 
-1. [Mein AEM Mobile App-Erlebnis ](/help/mobile/starting-aem-phonegap-app.md)
-1. [Verwalten des App-Inhalts ](/help/mobile/phonegap-manage-app-content.md)
-1. [Erstellen meiner Anwendung ](/help/mobile/building-app-mobile-phonegap.md)
-1. [Messen der Leistung meiner App mit Adobe Mobile Analytics ](/help/mobile/phonegap-intro-to-app-analytics.md)
-1. [Ein personalisiertes App-Erlebnis mit Adobe Target ](/help/mobile/phonegap-aem-mobile-content-personalization.md)
-1. [Senden wichtiger Nachrichten an meine Benutzer ](/help/mobile/phonegap-push-notifications.md)
+1. [Mein AEM Mobile-App-Erlebnis starten](/help/mobile/starting-aem-phonegap-app.md)
+1. [Inhalt meiner App verwalten](/help/mobile/phonegap-manage-app-content.md)
+1. [Meine Anwendung erstellen](/help/mobile/building-app-mobile-phonegap.md)
+1. [Verfolgen der Leistung meiner App mit Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
+1. [Bereitstellen eines personalisierten App-Erlebnisses mit Adobe Target](/help/mobile/phonegap-aem-mobile-content-personalization.md)
+1. [Senden wichtiger Nachrichten an meine Benutzer](/help/mobile/phonegap-push-notifications.md)
