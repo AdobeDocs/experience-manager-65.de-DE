@@ -8,7 +8,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 6%
@@ -150,6 +150,6 @@ Wenn die adaptiven Forms-Kernkomponenten für Ihre Umgebung aktiviert sind, werd
 ## Wie geht es weiter
 
 * [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Erstellen von Designs für auf Kernkomponenten basierende adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Erstellen einer Vorlage für auf Kernkomponenten basierende adaptive Forms](template-editor.md)

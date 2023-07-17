@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5, Forms-Anleitung
 breadcrumb-title: Forms-Anleitung
 user-guide-description: Erstellen, Verwalten, Veröffentlichen und Aktualisieren von digitalen Formularen.
 role: User
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
-source-wordcount: '3870'
+source-wordcount: '3881'
 ht-degree: 99%
 
 ---
@@ -127,10 +127,13 @@ ht-degree: 99%
    + [Einführung in die AEM Forms-Datenintegration](using/data-integration.md)
    + [Konfigurieren von Datenquellen](using/configure-data-sources.md)
    + [Microsoft Dynamics-OData-Konfiguration](using/ms-dynamics-odata-configuration.md)
-   + [Salesforce-Integration mithilfe des OAuth 2.0-Client-Anmeldedatenflusses](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Erstellen des Formulardatenmodells](using/create-form-data-models.md)
    + [Arbeiten mit einem Formulardatenmodell](using/work-with-form-data-model.md)
    + [Verwenden eines Formulardatenmodells](using/using-form-data-model.md)
++ Adaptive Forms - Kernkomponenten {#adaptive-forms-core-components}
+   + [Aktivieren von Kernkomponenten für Ihre Umgebung](/help/forms/using/enable-adaptive-forms-core-components.md)
+   + [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/using/create-an-adaptive-form-core-components.md)
+   + [Erstellen von Designs für auf Kernkomponenten basierende adaptive Forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
 + Adaptiv Forms- einfaches Authoring {#adaptive-forms-basic-authoring}
    + [Best Practices für die Arbeit mit adaptiven Formularen](using/adaptive-forms-best-practices.md)
    + [Erstellen eines adaptiven Formulars](using/creating-adaptive-form.md)
@@ -692,7 +695,6 @@ ht-degree: 99%
    + [CRX-Repository kann nicht wiederhergestellt werden](/help/forms/using/restore-crx-repository.md)
    + [Fehler „Dienst nicht verfügbar“ nach der Installation von AEM 6.5.15.0 Service Pack](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Installationsproblem mit dem Service Pack von AEM Forms JEE 6.5.15.0 in der JBoss Linux-Umgebung](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-   + [EAR-Bereitstellung auf JEE WebLogic Server fehlgeschlagen](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
 + Alte Dokumentation {#legacy-documentation}
    + [Verwenden des Service „execute script“ in AEM Forms on JEE Workbench zum Erstellen von XML-Daten](developing/building-xml.md)
    + [Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms auf JEE](developing/compressing-decompressing-custom-dsc.md)

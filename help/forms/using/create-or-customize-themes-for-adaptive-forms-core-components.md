@@ -8,10 +8,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
-source-wordcount: '2066'
-ht-degree: 12%
+source-wordcount: '2072'
+ht-degree: 11%
 
 ---
 
@@ -68,7 +68,7 @@ Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Person
 
 ### Voraussetzungen für die Anpassung eines Designs {#prerequisites}
 
-* [Aktivieren der adaptiven Forms-Kernkomponenten](/help/forms/using/installing-core-components.md) für Ihre Umgebung.
+* [Aktivieren der adaptiven Forms-Kernkomponenten](/help/forms/using/enable-adaptive-forms-core-components.md) für Ihre Umgebung.
 
 * Installieren Sie die neueste Version von [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven ist ein Werkzeug zur Automatisierung von Builds, das häufig für Java™-Projekte verwendet wird. Durch die Installation der neuesten Version wird sichergestellt, dass Sie über die erforderlichen Abhängigkeiten für die Designanpassung verfügen.
 
@@ -145,20 +145,17 @@ Die `variable.scss` -Datei enthält die globalen Variablen des Designs. Durch Ak
 
 1. Öffnen Sie die Datei `<your-theme-sources>/src/site/_variables.scss`, um sie zu bearbeiten.
 1. Ändern Sie den Wert einer beliebigen Eigenschaft. Beispielsweise ist die Standardfehlerfarbe Rot. Um die Fehlerfarbe von Rot in Blau zu ändern, ändern Sie den Farb-Hex-Code der `$error`-Variable. Beispiel: `$error: #196ee5`.
+
+   ![Beispiel: Fehlerfarbe auf blau eingestellt](/help/forms/using/assets/theme-level-changes.png)
+
 1. Speichern und schließen Sie die Datei.
 
-<!--
-
-![Example: Error color set to blue](/help/forms/using/assets/variable-customization.png)
-
--->
 
 Auf ähnliche Weise können Sie die `variable.scss` -Datei, um Schriftfamilie und -typ, Design- und Schriftfarben, Schriftgröße, Designabstand, Fehlersymbol, Designrahmenstile und mehr Variablen festzulegen, die sich auf mehrere adaptive Formularkomponenten auswirken.
 
 ##### Festlegen von Stilen auf Komponentenebene {#component-based-customization}
 
 Sie können auch die Schriftart, Farbe, Größe und andere CSS-Eigenschaften bestimmter Kernkomponenten des adaptiven Formulars anpassen, z. B. Schaltflächen, Kontrollkästchen, Container, Fußzeilen und mehr. Durch Bearbeiten der CSS-Datei, die mit der jeweiligen Komponente verknüpft ist, können Sie deren Stil an das Branding Ihres Unternehmens anpassen. Gehen Sie wie folgt vor, um den Stil einer Komponente anzupassen:
-
 
 1. Öffnen Sie die Datei `<your-theme-sources>/src/components/<component>/<component.scss>` zur Bearbeitung. Um beispielsweise die Schriftfarbe der Schaltflächenkomponente zu ändern, öffnen Sie die `<your-theme-sources>/src/components/button/button.scss`, Datei .
 1. Ändern Sie den Wert von beliebig gemäß Ihren Anforderungen. Um beispielsweise die Farbe der Schaltflächenkomponente beim Bewegen der Maus auf Grün zu ändern, ändern Sie den Wert der `color: $white` -Eigenschaft in `cmp-adaptiveform-button__widget:hover` -Klasse zu Hexadezimalcode 12b453 oder einer anderen grünen Schattierung. Der endgültige Code sieht wie folgt aus:
@@ -326,9 +323,9 @@ So entfernen Sie nicht verwendete oder unerwünschte Designs:
 
 ## Siehe auch
 
-* [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](create-an-adaptive-form-core-components.md)
 * [Verwenden Sie den Regeleditor, um dem Formular dynamisches Verhalten hinzuzufügen](rule-editor.md)
 * [Erstellen oder Anpassen von Designs für auf Kernkomponenten basierende adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Erstellen einer Vorlage für auf Kernkomponenten basierende adaptive Forms](template-editor.md)
-* [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 

@@ -9,7 +9,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '1869'
 ht-degree: 37%
@@ -30,13 +30,13 @@ Bevor Sie beginnen, erfahren Sie mehr über die Arten der Formular-Komponenten, 
 
 * [Kernkomponenten adaptiver Formulare](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de): Dies sind standardisierte Datenerfassungskomponenten. Diese Komponenten bieten Anpassungsfunktionen, kürzere Entwicklungszeiten und niedrigere Wartungskosten für Ihre Erlebnisse bei der digitalen Registrierung. Entwickelnde können diese Komponenten einfach anpassen und gestalten. Adobe empfiehlt die Nutzung dieser modernen und erweiterbaren Komponenten zur Entwicklung von adaptiven Formularen.
 
-* [Foundation-Komponenten adaptiver Formulare](creating-adaptive-form.md): Hierbei handelt es sich um klassische (alte) Datenerfassungskomponenten. Sie können diese weiterhin verwenden, um Ihre vorhandenen Foundation-Komponenten auf Grundlage des adaptiven Formulars zu bearbeiten. Wenn Sie Formulare erstellen, empfiehlt Adobe die Verwendung von  [Adaptive Forms-Kernkomponenten](creating-adaptive-form-core-components.md) , um eine adaptive Forms zu erstellen.
+* [Foundation-Komponenten adaptiver Formulare](creating-adaptive-form.md): Hierbei handelt es sich um klassische (alte) Datenerfassungskomponenten. Sie können diese weiterhin verwenden, um Ihre vorhandenen Foundation-Komponenten auf Grundlage des adaptiven Formulars zu bearbeiten. Wenn Sie Formulare erstellen, empfiehlt Adobe die Verwendung von  [Adaptive Forms-Kernkomponenten](/help/forms/using/create-adaptive-form.md) , um eine adaptive Forms zu erstellen.
 
 ## Voraussetzungen
 
 Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
-* **Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung**: AEM Projektarchetyp Version 41 oder höher ist erforderlich, um [Kernkomponenten für Ihre Umgebung aktivieren](/help/forms/using/installing-core-components.md). Wenn Sie die Kernkomponenten für Ihre Umgebung aktivieren, wird die **Adaptive Forms (Kernkomponente)** Vorlage und Arbeitsflächendesign werden Ihrer Umgebung hinzugefügt.
+* **Aktivieren der adaptiven Forms-Kernkomponenten für Ihre Umgebung**: AEM Projektarchetyp Version 41 oder höher ist erforderlich, um [Kernkomponenten für Ihre Umgebung aktivieren](/help/forms/using/enable-adaptive-forms-core-components.md). Wenn Sie die Kernkomponenten für Ihre Umgebung aktivieren, wird die **Adaptive Forms (Kernkomponente)** Vorlage und Arbeitsflächendesign werden Ihrer Umgebung hinzugefügt.
 
 * **Eine adaptive Formularvorlage**: Eine Vorlage liefert eine Grundstruktur und definiert das Erscheinungsbild (Layouts und Stile) eines adaptiven Formulars. Es enthält vorformatierte Komponenten einschließlich bestimmter Eigenschaften und einer Struktur für Inhalte. Es bietet außerdem die Optionen zum Definieren eines Designs und einer Übermittlungsaktion. Das Design definiert den Look-and-Feel und die Übermittlungsaktion definiert die Aktion, die bei der Übermittlung eines adaptiven Formulars ausgeführt werden soll. Senden der erfassten Daten an eine Datenquelle. Die Vorlage mit dem Namen `blank` wird OOTB unterstützt:
 
@@ -46,7 +46,7 @@ Zum Erstellen eines adaptiven Formulars benötigen Sie Folgendes:
 
   >[!NOTE]
   >
-  > Wenn Sie über keine Vorlage für **adaptive Formulare (Kernkomponente)** in Ihrer Umgebung verfügen, [aktivieren Sie die Kernkomponenten für adaptive Formulare für Ihre Umgebung](/help/forms/using/installing-core-components.md). Sobald Sie die Kernkomponenten für Ihre Umgebung aktivieren, wird die Vorlage für **adaptive Formulare (Kernkomponente)** zu Ihrer Umgebung hinzugefügt.
+  > Wenn Sie über keine Vorlage für **adaptive Formulare (Kernkomponente)** in Ihrer Umgebung verfügen, [aktivieren Sie die Kernkomponenten für adaptive Formulare für Ihre Umgebung](/help/forms/using/enable-adaptive-forms-core-components.md). Sobald Sie die Kernkomponenten für Ihre Umgebung aktivieren, wird die Vorlage für **adaptive Formulare (Kernkomponente)** zu Ihrer Umgebung hinzugefügt.
 
 * **Ein adaptives Formular**: Ein Design enthält Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider.  Die `Canvas` -Design wird standardmäßig hinzugefügt, wenn Sie Kernkomponenten für Ihre Umgebung aktivieren. Sie können auch [Herunterladen und Anpassen der Referenzthemen](create-or-customize-themes-for-adaptive-forms-core-components.md).
 
@@ -91,7 +91,7 @@ Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die ü
 
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld Container für adaptive Formulare zu öffnen und eine Sendeaktion zu konfigurieren.](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
-1. Auswählen und Konfigurieren eines **[!UICONTROL Übermittlungsaktion]**, basierend auf Ihren Anforderungen. Detaillierte Informationen zu Übermittlungsaktionen finden Sie unter [Übermittlungsaktion für adaptive Formulare](/help/forms/configuring-submit-actions.md)
+1. Auswählen und Konfigurieren eines **[!UICONTROL Übermittlungsaktion]**, basierend auf Ihren Anforderungen. Detaillierte Informationen zu Übermittlungsaktionen finden Sie unter [Übermittlungsaktion für adaptive Formulare](/help/forms/using/configuring-submit-actions.md)
 
 <!--
     
@@ -117,8 +117,8 @@ Beim Senden eines Formulars können Sie den Benutzer zu einer anderen Webseite o
 
 Sie können das Formulardatenmodell verwenden, um ein Formular mit einer Datenquelle zu verbinden und Daten basierend auf Benutzeraktionen zu senden und zu empfangen. Sie können auch ein Formular mit einem JSON-Schema verbinden, um die gesendeten Daten in einem vordefinierten Format zu empfangen. Verbinden Sie basierend auf der Anforderung Ihr Formular mit einem JSON-Schema oder Formulardatenmodell:
 
-* [Erstellen eines JSON-Schemas und Hochladen in Ihre Umgebung](/help/forms/adaptive-form-json-schema-form-model.md)
-* [Formulardatenmodell erstellen](/help/forms/create-form-data-models.md)
+* [Erstellen eines JSON-Schemas und Hochladen in Ihre Umgebung](/help/forms/using/adaptive-form-json-schema-form-model.md)
+* [Formulardatenmodell erstellen](/help/forms/using/create-form-data-models.md)
 
 ### JSON-Schema oder Formulardatenmodell für Ihr Formular konfigurieren
 
@@ -141,7 +141,7 @@ So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell für Ihr Formu
 
 Sie können den Vorbefüllungs-Dienst verwenden, um Felder eines adaptiven Formulars mit vorhandenen Daten automatisch auszufüllen. Wenn ein Benutzer ein Formular öffnet, werden die Werte für diese Felder vorbefüllt. Sie haben folgende Möglichkeiten:
 
-* [Erstellen eines benutzerdefinierten Vorbefüllungs-Dienstes](/help/forms/prepopulate-adaptive-form-fields.md)
+* [Erstellen eines benutzerdefinierten Vorbefüllungs-Dienstes](/help/forms/using/prepopulate-adaptive-form-fields.md)
 * [Vorfülldienst für Formulardatenmodell verwenden](#fdm-prefill-service)
 
 ### Verwenden Sie den Vorbefüllungs-Dienst für Formulardatenmodelle, um Felder eines adaptiven Formulars im Voraus auszufüllen. {#fdm-prefill-service}
@@ -171,6 +171,6 @@ Sie können den Vorbefüllungs-Dienst für Formulardatenmodelle verwenden, um Fe
 
 ## Siehe auch
 
-* [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](create-an-adaptive-form-core-components.md)
+* [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 

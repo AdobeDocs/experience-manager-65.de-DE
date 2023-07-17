@@ -3,7 +3,7 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: d244fb50ad0f165d31bc51ee671b80bdd13c860e
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '3777'
 ht-degree: 31%
@@ -58,7 +58,7 @@ Einige der wichtigsten Funktionen und Verbesserungen in dieser Version sind:
    * Fügen Sie mehrere Formulare zu einer Sites-Seite hinzu, optimieren Sie das Benutzererlebnis und bieten Sie mehr Flexibilität.
 * **[Unterstützung von reCAPTCHA Enterprise in Experience Manager Forms](/help/forms/using/captcha-adaptive-forms.md)**: Unterstützung für reCAPTCHA Enterprise in Experience Manager Forms hinzugefügt, die zusätzlich zur Unterstützung von Google reCAPTCHA v2 einen verbesserten Schutz vor betrügerischer Aktivität und Spam bietet.
 * **[Unterstützung von Adobe Acrobat Sign für Behörden mit Experience Manager Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)**: AEM Forms ist jetzt mit Adobe Acrobat Sign for Government integriert (FedRAMP-kompatibel). Diese Integration bietet eine erweiterte Kompatibilität und Sicherheit für e-Signaturen mit adaptiven Formularen für staatlich verbundene Konten (Regierungsabteilungen und Behörden). Durch die Integration mit Adobe Acrobat Sign for Government können Partner und Regierungskunden der Adobe elektronische Signaturen in Adaptive Forms für einige der wichtigsten und sensibelsten Geschäftsbereiche verwenden. Diese zusätzliche Sicherheitsschicht stellt sicher, dass alle E-Signaturen vollständig mit der Einhaltung der FedRAMP Moderate-Richtlinien konform sind, was den Regierungskunden der Adobe einen gesunden Menschenverstand verschafft.
-* **[Salesforce-Integration mit Experience Manager Forms für den Datenaustausch aktivieren](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)**: Konfigurieren Sie die Integration zwischen Experience Manager Forms und der Salesforce-Anwendung mithilfe des Workflows OAuth 2.0-Client-Anmeldeinformationen. Diese Funktion ermöglicht eine sichere und direkte Authentifizierung und Autorisierung der Anwendung und ermöglicht eine nahtlose Kommunikation ohne Einbindung der Benutzer.
+* **Salesforce-Integration mit Experience Manager Forms für den Datenaustausch aktivieren**: Konfigurieren Sie die Integration zwischen Experience Manager Forms und der Salesforce-Anwendung mithilfe des Workflows OAuth 2.0-Client-Anmeldeinformationen. Diese Funktion ermöglicht eine sichere und direkte Authentifizierung und Autorisierung der Anwendung und ermöglicht eine nahtlose Kommunikation ohne Einbindung der Benutzer.
 * **Optimierung und verbesserte Funktionalität der Workflow-Engine**: Erhöhen Sie die Leistung der Workflow-Engines, indem Sie die Anzahl der Workflow-Instanzen minimieren. Zusätzlich zu `COMPLETED` und `RUNNING` -Statuswerte unterstützt der Workflow auch drei neue Statuswerte: `ABORTED`, `SUSPENDED`und `FAILED`.
 
 
