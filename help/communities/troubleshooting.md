@@ -1,16 +1,14 @@
 ---
 title: Problembehebung in der Community
 description: Fehlerbehebung in der Community einschließlich bekannter Probleme
-uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 1%
 
 ---
@@ -23,7 +21,7 @@ Dieser Abschnitt enthält häufige Probleme und bekannte Probleme bei der Fehler
 
 ### Dispatcher-Neuabruf schlägt fehl {#dispatcher-refetch-fails}
 
-Bei Verwendung von Dispatcher 4.1.5 mit einer neueren Version von Jetty kann eine Refektion dazu führen, dass &quot;Antwort vom Remote-Server kann nicht empfangen&quot;angezeigt wird, nachdem auf die Anfrage zum Timeout gewartet wurde.
+Bei Verwendung von Dispatcher 4.1.5 mit einer neueren Version von Jetty kann eine Refektion dazu führen, dass &quot;Antwort vom Remote-Server kann nicht empfangen&quot;angezeigt wird, nachdem auf die Zeitüberschreitung bei der Anfrage gewartet wurde.
 
 Durch die Verwendung von Dispatcher 4.1.6 oder höher wird dieses Problem behoben.
 
@@ -47,23 +45,23 @@ Daher muss jeder Code, der die RelativeTimeFormat()-API verwendet, Folgendes än
 * Von: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * An: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-Der Fehler unterscheidet sich bei der Autoren- und Veröffentlichungsinstanz. Beim Autor schlägt es still fehl und zeigt die Forenthemen einfach nicht an. Beim Veröffentlichen wird der Fehler auf der Seite ausgegeben.
+Der Fehler unterscheidet sich bei der Autoren- und Veröffentlichungsinstanz. Auf der Autoreninstanz schlägt es still fehl und zeigt die Forenthemen einfach nicht an. Beim Veröffentlichen wird der Fehler auf der Seite ausgegeben.
 
-Siehe [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API für weitere Informationen.
+Siehe [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API für weitere Informationen.
 
 ## Häufige Bedenken {#common-concerns}
 
 ### Warnung in Protokollen: Handlebars - veraltet {#warning-in-logs-handlebars-deprecated}
 
-Während des Starts (nicht der 1., sondern alle darauf folgenden) kann die folgende Warnung in den Protokollen angezeigt werden:
+Während des Starts (nicht beim ersten, sondern bei jedem weiteren Start) kann die folgende Warnung in den Protokollen angezeigt werden:
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` ersetzt durch `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Diese Warnung kann sicher ignoriert werden als `jknack.handlebars.Handlebars`verwendet von [SCF](scf.md#handlebarsjavascripttemplatinglanguage), ist mit einem eigenen i18n Helper-Dienstprogramm ausgestattet. Beim Start wird er durch eine AEM spezifische [i18n Helper](handlebars-helpers.md#i-n). Diese Warnung wird von der Bibliothek eines Drittanbieters generiert, um das Außerkraftsetzen eines vorhandenen Helfers zu bestätigen.
+Diese Warnung kann sicher ignoriert werden als `jknack.handlebars.Handlebars`verwendet von [SCF](scf.md#handlebarsjavascripttemplatinglanguage), ist mit einem eigenen i18n Helper-Dienstprogramm ausgestattet. Beim Start wird er durch eine AEM-spezifische [i18n Helper](handlebars-helpers.md#i-n). Diese Warnung wird von der Bibliothek eines Drittanbieters generiert, um das Außerkraftsetzen eines vorhandenen Helfers zu bestätigen.
 
 ### Warnung in Protokollen: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
-Das Posten einer Reihe von Forumsthemen in Social Communities kann zu einer großen Menge an Warn- und Infoprotokollen aus OakResourceListener processOsgiEventQueue führen.
+Das Posten mehrerer Forumsthemen in Social Communities kann zu großen Mengen von Warn- und Infoprotokollen aus OakResourceListener processOsgiEventQueue führen.
 
 Diese Warnungen können ignoriert werden.
 

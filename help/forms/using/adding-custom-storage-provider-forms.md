@@ -1,19 +1,15 @@
 ---
 title: Benutzerdefinierter Speicher für die Komponente „Entwürfe und Sendungen“
-seo-title: Custom storage for drafts and submissions component
-description: Erfahren Sie, wie Sie die Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen können.
-seo-description: See how to customize the storage of user data for drafts and submissions.
-uuid: ac2e80ee-a9c7-44e6-801e-fe5a840cb7f8
+description: Erfahren Sie, wie Sie die Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: Configuration
-discoiquuid: 154255e7-468a-42e6-a33d-eee691cf854d
 feature: Forms Portal
 exl-id: b1300eeb-2653-4bb5-b2fd-88048c9c43b9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '335'
-ht-degree: 100%
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+workflow-type: tm+mt
+source-wordcount: '332'
+ht-degree: 28%
 
 ---
 
@@ -21,20 +17,20 @@ ht-degree: 100%
 
 ## Übersicht {#overview}
 
-Mit AEM Forms können Sie ein Formular als Entwurf speichern. Mit der Entwurfsfunktion können Sie ein aktuelles Formular beibehalten, welches Sie zu einem späteren Zeitpunkt auf einem anderen Gerät abschließen und senden können.
+Mit AEM Forms können Sie ein Formular als Entwurf speichern. Mit der Entwurfsfunktion können Sie ein laufendes Formular verwalten, das Sie später von jedem Gerät aus abschließen und senden können.
 
-Standardmäßig speichert AEM Forms die Benutzerdaten, die mit dem Entwurf und der Übermittlung eines Formulars verknüpft sind, im `/content/forms/fp`-Knoten in der Publish-Instanz. Darüber hinaus stellen die AEM Forms-Portalkomponenten Datendienste bereit, die Sie zum Anpassen des Speicherns der Benutzerdaten für Entwürfe und Übermittlungen verwenden können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
+Standardmäßig speichert AEM Forms die Benutzerdaten, die mit dem Entwurf und der Übermittlung eines Formulars verknüpft sind, im `/content/forms/fp` -Knoten in der Veröffentlichungsinstanz. Darüber hinaus stellen die AEM Forms Portal-Komponenten Datendienste bereit, mit denen Sie die Implementierung zum Speichern von Benutzerdaten für Entwürfe und Übermittlungen anpassen können. Beispielsweise können Sie Benutzerdaten in einem Datenspeicher speichern.
 
 ## Voraussetzungen  {#prerequisites}
 
-* Aktivieren von [Formularportalkomponenten](/help/forms/using/enabling-forms-portal-components.md)
-* Erstellen einer [Formularportalseite](/help/forms/using/creating-form-portal-page.md)
-* Aktivieren von [adaptiven Formularen für das Formularportal](/help/forms/using/draft-submission-component.md)
+* Aktivieren [Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
+* Erstellen Sie eine [Forms Portal-Seite](/help/forms/using/creating-form-portal-page.md)
+* Aktivieren [adaptive Formulare für Forms Portal](/help/forms/using/draft-submission-component.md)
 * Erfahren Sie mehr über [Implementierungsdetails für benutzerdefiniertes Speichern](/help/forms/using/draft-submission-component.md#customizing-the-storage)
 
 ## Entwurfsdatendienst {#draft-data-service}
 
-Um das Speichern der Benutzerdaten für Entwürfe anzupassen, müssen Sie alle Methoden der `DraftDataService`-Schnittstelle implementieren. Im Folgenden Beispielcode werden die Methoden und die Argumente beschrieben.
+Um die Speicherung von Benutzerdaten für Entwürfe anzupassen, müssen Sie alle Methoden der `DraftDataService` -Schnittstelle. Im Folgenden Beispielcode werden die Methoden und die Argumente beschrieben.
 
 ```java
 /**
@@ -103,7 +99,7 @@ public interface DraftDataService {
 
 ## Übermittlungsdatendienst {#submission-data-service}
 
-Um das Speichern der Benutzerdaten für Übermittlungen anzupassen, müssen Sie alle Methoden der `SubmitDataService`-Schnittstelle implementieren. Im Folgenden Beispiel-Code werden die Methoden und die Argumente beschrieben.
+Um die Speicherung von Benutzerdaten für Übermittlungen anzupassen, müssen Sie alle Methoden der `SubmitDataService` -Schnittstelle. Im Folgenden Beispiel-Code werden die Methoden und die Argumente beschrieben.
 
 ```java
 /**
@@ -188,7 +184,7 @@ public interface SubmitDataService {
 }
 ```
 
-Forms Portal verwendet das Konzept eines UUID (Universally Unique Identifier), um eine eindeutige ID für die einzelnen Entwürfe und übermittelten Formulare zu generieren. Sie können auch selbst eine eindeutige ID generieren. Sie können die FPKeyGeneratorService-Schnittstelle implementieren, ihre Methoden überschreiben und eine benutzerdefinierte Logik entwickeln, um eine benutzerdefinierte eindeutige ID für jeden Entwurf und jedes übermittelte Formular zu generieren. Legen Sie außerdem den Dienstrang der benutzerdefinierten ID-Generierungsimplementierung auf einen Wert über 0. Dies stellt sicher, dass die benutzerdefinierte Implementierung anstelle der Standardimplementierung verwendet wird.
+Forms Portal verwendet das UUID-Konzept (Universally Unique IDentifier), um eine eindeutige ID für jeden Entwurf und jedes gesendete Formular zu generieren. Sie können auch eine eigene eindeutige ID generieren. Sie können die FPKeyGeneratorService-Schnittstelle implementieren, ihre Methoden überschreiben und eine benutzerdefinierte Logik entwickeln, um eine benutzerdefinierte eindeutige ID für jeden Entwurf und jedes übermittelte Formular zu generieren. Legen Sie außerdem den Dienstrang der Implementierung der benutzerdefinierten ID-Generierung auf über 0 fest. Dadurch wird sichergestellt, dass die benutzerdefinierte Implementierung anstelle der Standardimplementierung verwendet wird.
 
 ```java
 public interface FPKeyGeneratorService {
@@ -203,11 +199,11 @@ public interface FPKeyGeneratorService {
 }
 ```
 
-Mit der folgenden Anmerkung können Sie die Servicebewertung für die mit dem obigen Code generierte benutzerdefinierte ID erhöhen:
+Sie können die folgende Anmerkung verwenden, um das Dienstranking für benutzerdefinierte IDs zu erhöhen, die mit dem obigen Code generiert wurden:
 
 `@Properties(value = { @Property(name = "service.ranking", intValue = 15) } )`
 
-Um die obige Anmerkung zu verwenden, importieren Sie das Folgende in Ihr Projekt: 
+Um die obige Anmerkung zu verwenden, importieren Sie Folgendes in Ihr Projekt:
 
 ```java
 import org.apache.felix.scr.annotations.Properties;
