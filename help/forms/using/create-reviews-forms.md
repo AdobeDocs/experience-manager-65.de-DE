@@ -8,14 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 docset: aem65
 feature: Adaptive Forms
-source-git-commit: 0ca7d76d0f5a3e440e5df9c986e3bb0efec368c1
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '651'
-ht-degree: 44%
+source-wordcount: '673'
+ht-degree: 56%
 
 ---
 
 # Erstellen und Verwalten von Überprüfungen von Formularen{#creating-and-managing-reviews-to-forms}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html?lang=de) |
+| AEM 6.5 | Dieser Artikel |
 
 ## Überprüfung {#review}
 
@@ -39,13 +45,12 @@ Bei einer Überprüfung handelt es sich um einen Mechanismus, mit dem ein oder m
    >* Der Administrator kann auf alle Gruppen zugreifen, die mit den Formularbenutzern verknüpft sind.
    >* Die Gruppe der Dienstbenutzenden steht für die Überprüfung nicht zur Auswahl.
 
-
 ### Aktionen beim Einrichten von Überprüfungen {#actions-that-occur-when-a-review-is-set-up}
 
 In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erstellt bzw. eingerichtet wird.
 
 1. Eine neue Überprüfungsaufgabe wird erstellt und dem/der ausgewählten Überprüfenden zugewiesen.
-1. Allen Reviewern wird eine Überprüfungsaufgabe zugeteilt. Die Aufgabe wird im Abschnitt Benachrichtigungen angezeigt. Reviewer können auf eine Benachrichtigung klicken oder zum Posteingang wechseln, um die Aufgabe anzuzeigen. Reviewer können per Klick die Überprüfungsaufgabe öffnen, das Formular anzeigen und Kommentare hinzufügen.
+1. Allen Reviewern wird eine Überprüfungsaufgabe zugeteilt. Die Aufgabe wird in ihrem Benachrichtigungsabschnitt angezeigt. Reviewer können auf eine Benachrichtigung klicken oder zum Posteingang wechseln, um die Aufgabe anzuzeigen. Reviewer können per Klick die Überprüfungsaufgabe öffnen, das Formular anzeigen und Kommentare hinzufügen.
 
    ![Warnung bei Reviewerbenachrichtigungen](assets/review-notification-img.png)
 
@@ -59,7 +64,6 @@ In diesem Abschnitt wird beschrieben, was passiert, wenn eine Überprüfung erst
 >
 >* Nur laufende Überprüfungen können geändert werden.
 >* Abgeschlossene Überprüfungen können nicht geändert werden.
-
 
 1. Navigieren Sie zur Registerkarte &quot;Formulare&quot;und wählen Sie ein Formular aus.
 
@@ -109,6 +113,7 @@ In diesem Abschnitt wird beschrieben, was passiert **Überprüfungsaktualisierun
 1. Wenn eine Überprüfung abgeschlossen wird:
 
    1. **Reviewer**: Bei allen Reviewern werden zugewiesene unvollständige Aufgaben beendet. Die Aufgabe wird im Benachrichtigungsabschnitt des Reviewers nicht mehr als „Ausstehend“ angezeigt.
-   1. **Initiator**: Die dem Initiator der Überprüfung zugewiesene Aufgabe ist als abgeschlossen markiert. Die Aufgabe wird aus dem Benachrichtigungsabschnitt des Initiators der Überprüfung entfernt.
-   1. **Alle**: Die Überprüfung wird im Abschnitt Frühere Prüfungen angezeigt. Es können keine weiteren Kommentare hinzugefügt werden.
+   1. **Initiator**: Die dem Initiator der Überprüfung zugewiesene Aufgabe wird als abgeschlossen markiert. Die Aufgabe wird aus dem Benachrichtigungsabschnitt des Initiators von Überprüfungen entfernt.
+   1. **Alle**: Die Überprüfung wird im Abschnitt für die vorherigen Überprüfungen angezeigt. Es können keine weiteren Kommentare hinzugefügt werden.
+
    ![Überprüfung abgeschlossen](assets/review-complete-imgg.png)

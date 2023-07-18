@@ -10,14 +10,19 @@ topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: ht
-source-wordcount: '1616'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '1639'
+ht-degree: 99%
 
 ---
 
 # Schreiben benutzerdefinierter Übermittlungsaktionen für adaptive Formulare{#writing-custom-submit-action-for-adaptive-forms}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
+| AEM 6.5 | Dieser Artikel |
 
 Adaptive Formulare benötigen Übermittlungsaktionen für die Verarbeitung der von Benutzern angegebenen Daten. Eine Übermittlungsaktion bestimmt die Aufgabe, die auf die mithilfe eines adaptiven Formulars übermittelten Daten angewendet wird. Adobe Experience Manager (AEM) umfasst [OOTB-Übermittlungsaktionen](../../forms/using/configuring-submit-actions.md), die benutzerdefinierte Aufgaben zeigen, die Sie auf die vom Benutzer übermittelten Daten anwenden können. Sie können beispielsweise Aufgaben wie das Senden von E-Mails oder das Speichern von Daten durchführen.
 

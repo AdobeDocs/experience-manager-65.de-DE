@@ -3,15 +3,21 @@ title: Salesforce-Integration mit AEM Forms mithilfe des OAuth 2.0-Client-Anmeld
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 description: Schritte zur Integration von Salesforce mit AEM Forms mithilfe des Workflows für OAuth 2.0-Client-Anmeldeinformationen
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
-source-git-commit: cc0375f5b5616f82a73bd983a9da95225c51db99
+exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '502'
-ht-degree: 0%
+source-wordcount: '524'
+ht-degree: 3%
 
 ---
 
-
 # Integration von Salesforce mithilfe des OAuth 2.0-Client-Anmeldedatenflusses  {#configure-salesforce-with-ouath-2.0-client-credential}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html) |
+| AEM 6.5 | Dieser Artikel |
+
 
 Zur Integration von AEM Forms in die Salesforce-Anwendung wird der Ablauf der OAuth 2.0-Client-Anmeldeinformationen verwendet. Es handelt sich um eine standardisierte und sichere Methode für die direkte Kommunikation ohne Benutzerbeteiligung. In diesem Ablauf tauscht die Client-Anwendung (AEM Formular) die in der Salesforce Connect-Anwendung definierten Client-Anmeldeinformationen aus, um ein Zugriffstoken zu erhalten. Die erforderlichen Client-Anmeldeinformationen umfassen den Consumer-Schlüssel und das Consumer-Geheimnis.
 
@@ -74,5 +80,3 @@ Swagger ist ein Open-Source-Satz von Regeln, Spezifikationen und Tools zur Entwi
 1. Wenn die Verbindung erfolgreich hergestellt wurde, klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]** Schaltfläche.
 
 Jetzt können Sie [Formulardatenmodell erstellen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) , um die konfigurierte Datenquelle in Ihr adaptives Formular zu integrieren.
-
-

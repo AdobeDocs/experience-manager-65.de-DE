@@ -1,7 +1,7 @@
 ---
 title: Integration mit Adobe Analytics
 seo-title: Integrating with Adobe Analytics
-description: Hier erfahren Sie, wie Sie AEM mit Adobe Analytics integrieren.
+description: Erfahren Sie, wie Sie AEM in Adobe Analytics integrieren.
 seo-description: Learn how to integrate AEM with Adobe Analytics.
 uuid: d8548263-6ac5-45fb-8c70-52ecd4161bbb
 contentOwner: Guillaume Carlino
@@ -11,14 +11,20 @@ content-type: reference
 discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
 docset: aem65
 exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '292'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '314'
+ht-degree: 89%
 
 ---
 
 # Integration mit Adobe Analytics{#integrating-with-adobe-analytics}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/integrate-aem-forms-with-adobe-analytics.html) |
+| AEM 6.5 | Dieser Artikel |
+
 
 Die Integration von Adobe Analytics und AEM ermöglicht es Ihnen, Web-Seiten-Aktivität zu erfassen:
 
@@ -44,7 +50,7 @@ Der [Opt-in-Assistent](/help/sites-administering/opt-in.md) erleichtert die Durc
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie im Artikel [Integrieren von AEM mit Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/de/experience-manager/using/integrate-digital-marketing-solutions.html).
+>Siehe auch den Artikel: [Integrieren von AEM mit Adobe Target und Adobe Analytics mithilfe von DTM](https://helpx.adobe.com/de/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 ## Weiterführende Informationen {#further-information}
 
@@ -63,4 +69,3 @@ Siehe:
 >* **Apache HTTP Components Proxy Configuration** zum Konfigurieren der 4.x-API;
 >  Beispiel: [https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](https://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-

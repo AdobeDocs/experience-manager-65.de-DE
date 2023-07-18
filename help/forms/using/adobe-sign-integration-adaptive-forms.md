@@ -11,14 +11,19 @@ discoiquuid: 1f28b257-5419-4a21-a54a-b20bf35530ac
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: 52146038-1582-41b8-aee0-215d04bb91d7
-source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1998'
 ht-degree: 62%
 
 ---
 
 # Integrieren von [!DNL Adobe Sign] in AEM [!DNL Forms]{#integrate-adobe-sign-with-aem-forms}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/adobe-sign-integration-adaptive-forms.html?lang=en#adobe-acrobat-sign-for-government) |
+| AEM 6.5 | Dieser Artikel |
 
 [!DNL Adobe Sign] aktiviert für adaptive Formulare Arbeitsabläufe für E-Signaturen. E-Signaturen verbessern die Workflows bei der Verarbeitung von Dokumenten in den Bereichen Recht, Vertrieb, Gehaltsabrechnung, Personalverwaltung u. v. a..
 

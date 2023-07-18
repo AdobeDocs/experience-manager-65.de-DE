@@ -9,16 +9,22 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1224'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '1245'
+ht-degree: 99%
 
 ---
 
 # Übersicht über die neuen Funktionen | AEM 6.5 Forms{#new-features-summary-aem-forms}
 
 ## Transaktionsberichte {#transaction-reports}
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html) |
+| AEM 6.5 | Dieser Artikel |
+
 
 Mit Transaktionsberichten können Sie die Anzahl der übermittelten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und verfolgen. Das Ziel bei der Verfolgung dieser Transaktionen ist es, eine fundierte Entscheidung über die Produktnutzung und die Neugewichtung der Investitionen in Hardware und Software treffen zu können. Beispiele für Transaktionen:
 
@@ -135,7 +141,7 @@ AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssyste
  <tbody>
   <tr>
    <td>Komponente</td>
-   <td>Unterstützung entfernt</td>
+   <td>Support entfernt</td>
   </tr>
   <tr>
    <td>Betriebssysteme</td>

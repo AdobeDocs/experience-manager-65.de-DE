@@ -12,22 +12,27 @@ docset: aem65
 feature: Adaptive Forms
 role: Admin
 exl-id: 2ed4d99e-0e90-4b21-ac17-aa6707a3ba7d
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
-source-wordcount: '794'
-ht-degree: 100%
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 93%
 
 ---
 
 # Unterstützung neuer Gebietsschemata zum Lokalisieren von adaptiven Formularen{#supporting-new-locales-for-adaptive-forms-localization}
 
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/supporting-new-language-localization.html) |
+| AEM 6.5 | Dieser Artikel |
+
 ## Informationen zu Gebietsschema-Wörterbüchern {#about-locale-dictionaries}
 
-Die Lokalisierung von adaptiven Formularen beruht auf zwei Arten von Gebietsschemawörterbüchern:
+Die Lokalisierung von adaptiven Formularen beruht auf zwei Arten von Gebietsschema-Wörterbüchern:
 
 **Formularspezifisches Wörterbuch** Enthält Zeichenfolgen, die in adaptiven Formularen verwendet werden. Zum Beispiel Beschriftungen, Feldnamen, Fehlermeldungen, Hilfebeschreibungen usw. Wird für jedes Gebietsschema in Form eines Satzes von XLIFF-Dateien für die einzelnen Gebietsschemas verwaltet und ist unter `https://<host>:<port>/libs/cq/i18n/translator.html` verfügbar.
 
-**Globale Wörterbücher** In der AEM-Client-Bibliothek gibt es zwei globale Wörterbücher, die als JSON-Objekte verwaltet werden. Diese Wörterbücher enthalten Standardfehlermeldungen, Monatsnamen, Währungssymbole, Datums- und Uhrzeitmuster usw. Diese Wörterbücher finden Sie in CRXDe Lite unter /libs/fd/xfaforms/clientlibs/I18N. Diese Speicherorte enthalten für jedes Gebietsschema separate Ordner. Da globale Wörterbücher in der Regel nicht oft aktualisiert werden, können Browser separate JavaScript-Dateien für jedes Gebietsschema im Cache zwischenspeichern und die Beanspruchung der Netzwerkbandbreite reduzieren, wenn auf demselben Server auf verschiedene adaptive Formulare zugegriffen wird.
+**Globale Wörterbücher** In der AEM-Client-Bibliothek gibt es zwei globale Wörterbücher, die als JSON-Objekte verwaltet werden. Diese Wörterbücher enthalten Standardfehlermeldungen, Monatsnamen, Währungssymbole, Datums- und Uhrzeitmuster usw. Diese Wörterbücher finden Sie in CRXDe Lite unter /libs/fd/xfaforms/clientlibs/I18N. Diese Speicherorte enthalten für jedes Gebietsschema separate Ordner. Da globale Wörterbücher in der Regel nicht häufig aktualisiert werden, können Browser separate JavaScript-Dateien für jedes Gebietsschema zwischenspeichern und die Nutzung der Netzwerkbandbreite reduzieren, wenn auf demselben Server auf verschiedene adaptive Formulare zugegriffen wird.
 
 ### Funktionsweise der Lokalisierung von adaptiven Formularen {#how-localization-of-adaptive-form-works}
 
@@ -38,9 +43,8 @@ Es gibt zwei Methoden, das Gebietsschema eines adaptiven Formulars zu identifizi
 * Überprüfung der folgenden Parameter in der angegebenen Reihenfolge:
 
    * Abfrageparameter `afAcceptLang`
-Um das Browser-Gebietsschema von Benutzern zu überschreiben, können Sie den 
-`afAcceptLang`-Abfrageparameter übergeben, um das Gebietsschema zu erzwingen. Beispielsweise erzwingt die folgende URL die Wiedergabe des Formulars im japanischen Gebietsschema:
-      `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
+Um das Browser-Gebietsschema von Benutzern zu überschreiben, können Sie den `afAcceptLang`-Abfrageparameter übergeben, um das Gebietsschema zu erzwingen. Beispielsweise erzwingt die folgende URL die Wiedergabe des Formulars im japanischen Gebietsschema:
+     `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 
    * Das für den Benutzer festgelegte Browser-Gebietsschema, das in der Abfrage mit dem `Accept-Language`-Header angegeben ist.
 
@@ -95,7 +99,7 @@ I18N.js
 
 ### Clientbibliothek für adaptive Formulare für ein Gebietsschema hinzufügen {#add-adaptive-form-client-library-for-a-locale-br}
 
-Erstellen Sie einen Knoten vom Typ `cq:ClientLibraryFolder` unter `etc/<folderHierarchy>` mit der Kategorie `guides.I18N.<locale>` und den Abhängigkeiten `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` und `guide.common`.
+Erstellen Sie einen Knoten des Typs `cq:ClientLibraryFolder` under `etc/<folderHierarchy>`, wobei Kategorie `guides.I18N.<locale>` und Abhängigkeiten als `xfaforms.3rdparty`, `xfaforms.I18N.<locale>` und `guide.common`. &quot;
 
 Fügen Sie die folgenden Dateien der Client-Bibliothek hinzu:
 

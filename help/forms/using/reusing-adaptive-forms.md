@@ -1,7 +1,7 @@
 ---
 title: Wiederverwenden adaptiver Formulare
 seo-title: Reusing adaptive forms
-description: Sie können ein vorhandenes adaptives Formular verwenden, um neue adaptive Formulare zu erstellen.
+description: Sie können ein vorhandenes adaptives Formular wiederverwenden, um neue adaptive Formulare zu erstellen.
 seo-description: You can reuse an existing adaptive form to create new adaptive forms.
 uuid: f1d0fb70-e255-4dd9-8e6d-fd65eaf2e81a
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -9,26 +9,31 @@ topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 feature: Adaptive Forms
 exl-id: d8ee4e82-3137-430e-aa47-b00191f2729c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '538'
-ht-degree: 100%
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 65%
 
 ---
 
 # Wiederverwenden adaptiver Formulare {#reusing-adaptive-forms}
 
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/reusing-adaptive-forms.html) |
+| AEM 6.5 | Dieser Artikel |
+
 ## Einführung {#introduction}
 
-Wenn Sie für ein neues adaptives Formular einige der Eigenschaften eines vorhandenen adaptiven Formulars verwenden möchten, können Sie einfach die Kopieren/Einfügen-Funktion verwenden. Darüber hinaus können Sie das neue adaptive Formular in den gewünschten Ordnerpfad einfügen. Alle Metadateneigenschaften werden repliziert und die XFAs und XSDs für XFA- und XSD-basierte adaptive Formulare werden ebenfalls kopiert.
+Wenn Sie einige Eigenschaften eines vorhandenen adaptiven Formulars verwenden möchten, um ein neues zu generieren, können Sie einfach die Funktion zum Kopieren und Einfügen verwenden. Darüber hinaus können Sie das neue adaptive Formular in den gewünschten Ordnerpfad einfügen. Alle Metadateneigenschaften werden repliziert und die XFAs und XSDs für XFA- und XSD-basierte adaptive Formulare werden ebenfalls kopiert.
 
 >[!NOTE]
 >
->Status- und Überprüfungsdetails werden nicht kopiert. Wenn Ihr adaptives Formular zum Beispiel veröffentlicht wird und Sie es dann kopieren, befindet sich das eingefügte adaptive Formular im unveröffentlichten Status. Ebenso wenig wird, wenn ein kopiertes Asset überprüft wird, das eingefügte Asset derselben Überprüfung unterzogen.
+>Status- und Überprüfungsdetails werden nicht kopiert. Wenn Ihr adaptives Formular beispielsweise veröffentlicht wird und Sie es dann kopieren, befindet sich das eingefügte adaptive Formular im unveröffentlichten Status. Ebenso wenig wird, wenn ein kopiertes Asset überprüft wird, das eingefügte Asset derselben Überprüfung unterzogen.
 
 ### Kopieren adaptiver Formulare {#copy-an-adaptive-form}
 
-Kopieren Sie ein adaptives Formular mithilfe eines der folgenden Verfahren:
+Kopieren Sie ein adaptives Formular mit einem der folgenden Methoden:
 
 1. Klicken Sie in Schnellaktionen auf das Symbol ![aem6forms_copy](assets/aem6forms_copy.png) zum Kopieren.
 
@@ -52,13 +57,13 @@ Kopieren Sie ein adaptives Formular mithilfe eines der folgenden Verfahren:
 
 Wenn Sie auf die Kopieraktion klicken, wird der Auswahlmodus automatisch beendet und das Symbol zum Einfügen ![aem6forms_paste](assets/aem6forms_paste.png) wird sichtbar. Gehen Sie nun zum gewünschten Ordnerpfad und klicken Sie auf das Symbol ![aem6forms_paste](assets/aem6forms_paste.png), um das kopierte adaptive Formular einzufügen.
 
-Wenn Sie in denselben Ordner einfügen oder sich im Zielordner eine weitere Datei mit demselben Knotennamen (mit dem sie im CRX-Repository gespeichert ist) befindet, wird am Suffix eine 1 angehängt (zum Beispiel wird „myaf“ zu „myaf1“ und wenn sich „myaf1“ am selben Speicherort befindet, wird „myaf“ zu „myaf2“). Alle anderen Eigenschaften bleiben genauso wie beim ursprünglichen adaptiven Formular.
+Wenn Sie in denselben Ordner einfügen oder sich im Zielordner eine weitere Datei mit demselben Knotennamen (mit dem sie im CRX-Repository gespeichert ist) befindet, wird am Suffix eine 1 angehängt (zum Beispiel wird „myaf“ zu „myaf1“ und wenn sich „myaf1“ am selben Speicherort befindet, wird „myaf“ zu „myaf2“). Alle anderen Eigenschaften bleiben mit dem ursprünglichen adaptiven Formular identisch.
 
 Nachdem Sie auf das Einfugen-Symbol ![aem6forms_paste](assets/aem6forms_paste.png) geklickt haben, wird es wieder ausgeblendet. Sie können jeweils nur einmal einfügen. Wenn Sie vom selben Asset erneut eine Kopie erstellen möchten, kopieren Sie es erneut.
 
-### Ändern der Inhalte eines neuen adaptiven Formulars {#change-contents-of-new-adaptive-form}
+### Inhalt des neuen adaptiven Formulars ändern {#change-contents-of-new-adaptive-form}
 
-Wenn Sie eingefügte adaptive Formulare anders als das kopierte Formular gestalten möchten, können ihre Inhalte mithilfe der folgenden Methoden geändert werden:
+Der Inhalt eingefügter adaptiver Formulare kann mithilfe der folgenden Methoden geändert werden, um ihn vom kopierten Formular zu unterscheiden:
 
 1. **Ändern der Metadateneigenschaften:**
 
@@ -66,8 +71,8 @@ Wenn Sie eingefügte adaptive Formulare anders als das kopierte Formular gestalt
 
 1. **Ändern von XFA/XSD für XFA-/XSD-basierte adaptive Formulare:**
 
-   Sie können die in adaptiven Formularen verwendete XFA/XSD ändern. Informationen zum Ändern dieser adaptiven Formulare finden Sie unter [Verwalten von Formularmetadaten](/help/forms/using/manage-form-metadata.md).
+   Sie können die in adaptiven Formularen verwendete XFA/XSD ändern. Informationen zum Ändern dieser adaptiven Formulare finden Sie unter [Verwalten von Formularmetadaten](/help/forms/using/manage-form-metadata.md)
 
 1. **Neu veröffentlichen:**
 
-   Das eingefügte Asset unterscheidet sich vom kopierten. Sie können es als neues Asset veröffentlichen, um es Endbenutzern zur Verfügung zu stellen. Informationen zum Veröffentlichen von Assets finden Sie unter [Veröffentlichen von Formularen und Veröffentlichungen rückgängig machen](/help/forms/using/publishing-unpublishing-forms.md).
+   Das eingefügte Asset unterscheidet sich vom kopierten. Sie können es als neues Asset veröffentlichen, um es für Endbenutzer verfügbar zu machen. Informationen zum Veröffentlichen eines Assets finden Sie unter [Veröffentlichen und Rückgängigmachen der Veröffentlichung von Formularen](/help/forms/using/publishing-unpublishing-forms.md)
