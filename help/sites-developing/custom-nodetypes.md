@@ -1,32 +1,28 @@
 ---
 title: Benutzerdefinierte Knotentypen
-seo-title: Custom Node Types
-description: AEM basiert auf Sling und verwendet ein JCR-Repository mit von AEM und JCR bereitgestellten Knotentypen. Darüber hinaus bietet AEM aber auch eine Reihe benutzerdefinierter Knotentypen.
-seo-description: AEM is based on Sling and uses a JCR repository with node types offered by both, but AEM also provides a range of custom node types
-uuid: f2022504-e433-4b42-9cc1-eef41086483a
+description: Adobe Experience Manager (AEM) basiert auf Sling und verwendet ein JCR-Repository mit Knotentypen, die von beiden angeboten werden, AEM bietet aber auch eine Reihe benutzerdefinierter Knotentypen
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: aae186eb-e059-4a9d-b02d-86a86c86589d
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
-workflow-type: ht
-source-wordcount: '1877'
-ht-degree: 100%
+source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
+workflow-type: tm+mt
+source-wordcount: '1883'
+ht-degree: 93%
 
 ---
 
 # Benutzerdefinierte Knotentypen{#custom-node-types}
 
-Da AEM auf Sling basiert und ein JCR-Repository verwendet, sind von beiden bereitgestellte Knotentypen für die Verwendung verfügbar:
+Da Adobe Experience Manager (AEM) auf Sling basiert und ein JCR-Repository verwendet, sind Knotentypen verfügbar, die von beiden bereitgestellt werden:
 
 * [JCR-Knotentypen](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling-Knotentypen](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
 Darüber hinaus stellt AEM stellt eine Reihe benutzerdefinierter Knotentypen bereit.
 
-## Audit {#audit}
+## Prüfung {#audit}
 
 ### cq:AuditEvent {#cq-auditevent}
 
@@ -318,7 +314,7 @@ Definiert die Konfiguration für „EditBar“.
 
 **Beschreibung**
 
-Konfiguriert ein Ablageziel einer Komponente. Der Name dieses Knotens wird als ID für per Drag-and-Drop zu verschiebende Komponenten verwendet.
+Konfiguriert ein Ablageziel einer Komponente. Der Name dieses Knotens wird als ID zum Ziehen und Ablegen verwendet.
 
 * `@prop accept` - Liste der MIME-Typen, die von diesem Ablageziel akzeptiert werden, beispielsweise `["image/*"]`
 * `@prop groups` - Liste der Drag-and-Drop-Gruppen, die eine Quelle akzeptieren.
@@ -336,7 +332,7 @@ Konfiguriert ein Ablageziel einer Komponente. Der Name dieses Knotens wird als I
 
 **Beschreibung**
 
-Definiert eine virtuelle CQ-Komponente. Diese werden derzeit nur für den neuen Assistenten zum Verschieben von Komponenten per Drag-and-Drop verwendet.
+Definiert eine virtuelle CQ-Komponente. Diese werden derzeit nur für den neuen Komponenten-Drag-and-Drop-Assistenten verwendet.
 
 * `@prop jcr:title` - Titel dieser Komponente.
 * `@prop jcr:description` - Beschreibung dieser Komponente.
@@ -429,7 +425,7 @@ Miniaturansicht zur Darstellung eines DAM-Assets
    * `mixin`
    * `+ dam:thumbnails (nt:folder)`
 
-## Bereitstellungs-Container-Liste {#delivery-container-list}
+## Versandcontainer-Liste {#delivery-container-list}
 
 ### cq:containerList {#cq-containerlist}
 
