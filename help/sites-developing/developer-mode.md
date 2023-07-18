@@ -1,30 +1,26 @@
 ---
 title: Entwicklermodus
-seo-title: Developer Mode
-description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwicklerinnen und Entwickler zur aktuellen Seite.
-seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
-uuid: 8301ab51-93d6-44f9-a813-ba7f03f54485
+description: Der Entwicklermodus öffnet einen Seitenbereich mit mehreren Registerkarten mit Informationen für Entwickler zur aktuellen Seite..
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '688'
-ht-degree: 100%
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+workflow-type: tm+mt
+source-wordcount: '686'
+ht-degree: 72%
 
 ---
 
 # Entwicklermodus{#developer-mode}
 
-Beim Bearbeiten von Seiten in AEM sind diverse [Modi](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) verfügbar, u. a. auch der Entwicklermodus. In diesem Modus wird ein Seitenbereich mit mehreren Registerkarten geöffnet, die Entwicklerinnen und Entwicklern Informationen über die aktuelle Seite liefern. Die drei Registerkarten sind:
+Beim Bearbeiten von Seiten in Adobe Experience Manager (AEM) werden mehrere [Modi](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) verfügbar sind, einschließlich des Entwicklermodus. Dadurch wird ein seitliches Bedienfeld mit mehreren Registerkarten geöffnet, über die Entwickler Informationen zur aktuellen Seite erhalten. Die drei Registerkarten sind:
 
-* **[Komponenten](#components)** zum Anzeigen von Struktur- und Leistungsdaten.
+* **[Komponenten](#components)** zum Anzeigen von Struktur- und Leistungsinformationen.
 * **[Tests](#tests)** für die Durchführung von Tests und die Analyse der Ergebnisse.
-* **[Fehler](#errors)** zur Anzeige auftretender Probleme.
+* **[Fehler](#errors)** um alle auftretenden Probleme zu sehen.
 
 Diese Informationen unterstützen Entwickler bei Folgendem:
 
@@ -42,12 +38,11 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >   * Dies gilt bei einer Breite von weniger als 1024 Pixel.
 >* Ist nur für Benutzer verfügbar, die Mitglieder der Gruppe `administrators` sind.
 
-
 >[!CAUTION]
 >
 >Der Entwicklermodus ist nur für eine Standard-Authoring-Instanz verfügbar, die nicht den Ausführungsmodus „nosamplecontent“ verwendet.
 >
->Falls nötig, kann der Modus konfiguriert werden für die Verwendung:
+>Bei Bedarf kann er für die Verwendung konfiguriert werden:
 >
 >* auf einer Autoreninstanz mit dem Ausführungsmodus „nosamplecontent“
 >* auf einer Veröffentlichungsinstanz
@@ -59,9 +54,8 @@ Diese Informationen unterstützen Entwickler bei Folgendem:
 >Siehe:
 >
 >* Knowledgebase-Artikel zum [Beheben von Fehlern in der Touch-optimierten AEM-Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kb/troubleshooting-aem-touchui-issues.html) für weitere Tipps und Tools.
->* AEM-Gems-Sitzung [AEM 6.0 Entwicklermodus](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=de).
+>* AEM-Gems-Sitzung [AEM 6.0 Entwicklermodus](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
 >
-
 
 ## Öffnen des Entwicklermodus {#opening-developer-mode}
 
@@ -81,14 +75,14 @@ Der Bereich ist in zwei Registerkarten unterteilt:
 
 Diese Registerkarte enthält eine Komponentenstruktur mit folgenden Attributen:
 
-* Zeigt die Kette der Komponenten und Vorlagen, die auf dieser Seite gerendert wurden (SLY, JSP usw.). Die Struktur kann erweitert werden, sodass sie Kontext innerhalb der Hierarchie anzeigt.
-* Zeigt die Server-seitige Verarbeitungszeit, die zum Rendern der Komponente benötigt wird.
-* Sie können die Struktur erweitern und spezifische Komponenten innerhalb der Struktur auswählen. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
+* Erläutert die Kette von Komponenten und Vorlagen, die auf der Seite gerendert werden (SLY, JSP usw.). Die Struktur kann erweitert werden, sodass sie Kontext innerhalb der Hierarchie anzeigt.
+* Zeigt die Server-seitige Berechnungszeit zum Rendern der Komponente an.
+* Ermöglicht das Erweitern der Baumstruktur und Auswählen bestimmter Komponenten innerhalb der Baumstruktur. Die Auswahl bietet Zugriff auf Komponentendetails, z. B.:
 
    * Repository-Pfad
    * Links zu den Skripten (Zugriff über CRXDE Lite)
 
-* Die ausgewählten Komponenten (im Inhaltsfluss, durch einen blauen Rahmen gekennzeichnet) werden in der Inhaltsstruktur hervorgehoben (und umgekehrt).
+* Die ausgewählten Komponenten (im Inhaltsfluss durch einen blauen Rahmen gekennzeichnet) werden in der Inhaltsstruktur hervorgehoben (und umgekehrt).
 
 Dies kann Folgendes erleichtern:
 
@@ -105,7 +99,7 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
    * Alle zum Rendern der Komponente verwendeten Komponentenskripte
    * Den Repository-Inhaltspfad für diese spezifische Komponente
 
-   ![chlimage_1-14](assets/chlimage_1-14.png)
+  ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Skript bearbeiten**: ein Link, der
 
@@ -116,11 +110,11 @@ Jeder Komponenteneintrag kann (z. B.) Folgendes beinhalten:
    * Die Hierarchie innerhalb der ausgewählten Komponente.
    * Die Render-Zeiten nur für die ausgewählte Komponente, für einzelne darin verschachtelte Komponenten und für alle Komponenten insgesamt.
 
-   ![chlimage_1-15](assets/chlimage_1-15.png)
+  ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
 >
->Einige Links zeigen auf das Skript unter `/libs`. Diese sind allerdings nur für Referenzzwecke bestimmt. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da von Ihnen gemachte Änderungen möglicherweise verloren gehen. Grund dafür ist, dass diese Verzweigung jedes Mal geändert wird, wenn Sie ein Upgrade durchführen oder ein Hotfix/Feature Pack anwenden. Alle erforderlichen Änderungen sollten unter `/apps` erfolgen. Weitere Informationen hierzu finden Sie in [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
+>Einige Links zeigen auf das Skript unter `/libs`. Diese sind allerdings nur für Referenzzwecke bestimmt. Sie dürfen **keine** Elemente unter `/libs` bearbeiten, da von Ihnen gemachte Änderungen möglicherweise verloren gehen. Dies liegt daran, dass sich diese Verzweigung bei jedem Upgrade oder Anwenden eines Hotfixes oder Feature Packs ändern kann. Nehmen Sie alle Änderungen vor, die Sie unter `/apps`. Siehe [Überlagerungen und Überschreibungen](/help/sites-developing/overlays.md).
 
 ### Fehler {#errors}
 
@@ -131,7 +125,7 @@ Zwar ist zu hoffen, dass die Registerkarte **Fehler** niemals Daten anzeigt (wie
 * Eine Warnung, falls die Komponente einen Eintrag in das Fehlerprotokoll schreibt, und Details zum Fehler sowie direkte Links zum entsprechenden Code in CRXDE Lite.
 * Eine Warnung, falls die Komponente eine Admin-Sitzung öffnet.
 
-Wird beispielsweise eine nicht definierte Methode aufgerufen, wird der daraus resultierende Fehler auf der Registerkarte **Fehler** angezeigt:
+Wenn beispielsweise eine nicht definierte Methode aufgerufen wird, wird der resultierende Fehler im **Fehler** tab:
 
 ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -141,6 +135,6 @@ Der Komponenteneintrag in der Struktur auf der Registerkarte „Komponenten“ w
 
 >[!CAUTION]
 >
->In AEM 6.2 wurden die Testfunktionen des Entwicklermodus als eigenständige Tool-Anwendung neu implementiert.
+>In AEM 6.2 wurden die Testfunktionen des Entwicklermodus als eigenständige Tools-Anwendung neu implementiert.
 >
->Ausführliche Informationen finden Sie in [Testen der Benutzeroberfläche](/help/sites-developing/hobbes.md).
+>Ausführliche Informationen finden Sie unter [Testen der Benutzeroberfläche](/help/sites-developing/hobbes.md).

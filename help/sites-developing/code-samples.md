@@ -1,32 +1,28 @@
 ---
 title: Code-Beispiele
-seo-title: Code Samples
-description: Das Beratungs-Team für Services von Adobe hat eine Reihe von AEM-Code-Beispielen erstellt.
-seo-description: The Adobe Consulting Services Team has generated a series of AEM code samples.
-uuid: 16f23fa6-5a3c-4697-87de-86db37b3ec1b
+description: Das Adobe Consulting Services-Team hat eine Reihe von Adobe Experience Manager-Codebeispielen erstellt.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 07bf0224-6744-42d4-861f-d656ccfad171
 exl-id: d77e9e39-6117-4d09-b34b-a97ab347397e
-source-git-commit: 317c0a50631a983469729d5eb37760d8a3c30e98
-workflow-type: ht
-source-wordcount: '149'
-ht-degree: 100%
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+workflow-type: tm+mt
+source-wordcount: '154'
+ht-degree: 29%
 
 ---
 
-# Codebeispiele{#code-samples}
+# Code-Beispiele{#code-samples}
 
-Das Beratungs-Team für Services von Adobe hat eine Reihe von AEM-Code-Beispielen erstellt. Diese Beispiele sind ausführlich kommentierte Codeausschnitte, die AEM-Entwicklern helfen sollen, die zentralen Bestandteile von AEM zu verstehen. Sie finden die Beispiele hier: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
+Das Adobe Consulting Services-Team hat eine Reihe von Adobe Experience Manager-Codebeispielen (AEM) erstellt. Diese Beispiele sind gut kommentierte Codeabschnitte, die Entwicklern dabei helfen, die wichtigsten Bausteine von AEM zu verstehen. Sie finden die Beispiele hier: [https://adobe-consulting-services.github.io/acs-aem-samples/](https://adobe-consulting-services.github.io/acs-aem-samples/).
 
-Ein mehrteiliges Tutorial, das sich an neue AEM-Entwickler richtet und grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung behandelt: [Erste Schritte mit AEM Sites – WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)
+Ein mehrteiliges Tutorial, das für Entwickler konzipiert wurde, die neu AEM sind und grundlegende Themen wie Projekteinrichtung, Kernkomponenten, bearbeitbare Vorlagen, Client-Bibliotheken und Komponentenentwicklung behandeln: [Erste Schritte mit AEM Sites - WKND-Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de)
 
-Eine Maven-Vorlage zur Erstellung eines neuen AEM-Projekts als Ausgangspunkt zur Entwicklung Ihrer eigenen Funktionen ist [hier](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype) verfügbar.
+Eine Maven-Vorlage zum Erstellen eines AEM-Projekts als Ausgangspunkt für die Entwicklung Ihrer eigenen Funktionalität ist verfügbar. [here](https://github.com/adobe/aem-project-archetype).
 
-Codebeispiele für die Touch-optimierte Standard-Benutzeroberfläche sind [hier](/help/sites-developing/developing-components.md) verfügbar.
+Standardmäßige, Touch-optimierte Codebeispiele für die Benutzeroberfläche sind verfügbar [here](/help/sites-developing/developing-components.md).
 
 >[!NOTE]
 >
->Die Code-Beispiele dienen nur zu Informationszwecken und sollten nicht in einer Produktionsinstanz von AEM eingesetzt werden.
+>Die Code-Beispiele dienen nur zu Informationszwecken und sollten nicht in einer Produktionsinstanz von AEM bereitgestellt werden.

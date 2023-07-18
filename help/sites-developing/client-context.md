@@ -1,19 +1,17 @@
 ---
 title: Client-Kontext im Detail
-description: ClientContext stellt eine dynamisch zusammengestellte Sammlung von Benutzerdaten dar
-uuid: 95b08fbd-4f50-44a1-80fb-46335fe04a40
+description: ClientContext stellt eine dynamisch zusammengestellte Sammlung von Benutzerdaten dar.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: c881ad66-bcc3-4f99-b77f-0944c23e2d29
 docset: aem65
 feature: Context Hub
 exl-id: 38b9a795-1c83-406c-ab13-b4456da938dd
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '3017'
-ht-degree: 36%
+source-wordcount: '3001'
+ht-degree: 33%
 
 ---
 
@@ -31,7 +29,7 @@ ClientContext umfasst im Wesentlichen die folgenden Aspekte:
 * Die Benutzeroberfläche, die die Benutzerdaten anzeigt und Tools zur Simulation des Benutzererlebnisses bietet.
 * A [JavaScript-API](/help/sites-developing/ccjsapi.md) für die Interaktion mit Sitzungsspeichern.
 
-So erstellen Sie einen eigenständigen Sitzungsspeicher und fügen ihn zu ClientContext hinzu oder erstellen einen Sitzungsspeicher, der mit einer Kontextspeicherkomponente verknüpft ist. AEM installiert mehrere Kontextspeicherkomponenten, die Sie sofort verwenden können. Sie können diese Komponenten als Grundlage für Ihre Komponenten verwenden.
+So erstellen Sie einen eigenständigen Sitzungsspeicher und fügen ihn zu ClientContext hinzu oder erstellen einen Sitzungsspeicher, der mit einer Kontextspeicherkomponente verknüpft ist. Adobe Experience Manager (AEM) installiert mehrere Kontextspeicherkomponenten, die Sie sofort verwenden können. Sie können diese Komponenten als Grundlage für Ihre Komponenten verwenden.
 
 Weitere Informationen zum Öffnen von ClientContext, zum Konfigurieren der angezeigten Inhalte und zur Simulation des Benutzererlebnisses finden Sie unter [ClientContext](/help/sites-administering/client-context.md).
 
@@ -46,7 +44,7 @@ Das ClientContext-Framework bietet eine [JavaScript-API](/help/sites-developing/
 
 Sitzungsspeicherdaten bleiben auf dem Client. ClientContext schreibt keine Daten zurück an den Server. Verwenden Sie zum Senden von Daten an den Server ein Formular oder entwickeln Sie benutzerdefiniertes JavaScript.
 
-Jeder Sitzungsspeicher besteht aus Eigenschaft-Wert-Paaren. Der Sitzungsspeicher stellt eine Zusammenstellung verschiedener Daten dar, deren kontextspezifische Bedeutung vom Designer bzw. Entwickler festgelegt werden kann. Der folgende JavaScript-Beispielcode definiert ein Objekt, das die Profildaten darstellt, die der Sitzungsspeicher möglicherweise enthält:
+Jeder Sitzungsspeicher besteht aus Eigenschaft-Wert-Paaren. Der Sitzungsspeicher stellt eine Sammlung von Daten (beliebiger Art) dar, deren konzeptionelle Bedeutung vom Designer, Entwickler oder beidem bestimmt werden kann. Der folgende JavaScript-Beispielcode definiert ein Objekt, das die Profildaten darstellt, die der Sitzungsspeicher möglicherweise enthält:
 
 ```
 {
@@ -66,7 +64,7 @@ Ein Sitzungsspeicher kann über mehrere Browser-Sitzungen hinweg oder nur für d
 >
 >Für die Beibehaltung wird der Browser-Speicher oder Cookies verwendet (das `SessionPersistence`-Cookie). Browser-Speicher ist häufiger.
 >
->Wenn der Browser geschlossen und erneut geöffnet wird, kann ein Sitzungsspeicher mit den Werten aus einem persistenten Speicher geladen werden. Um die bisherigen Werte zu entfernen, müssen Sie dann den Browsercache löschen.
+>Wenn der Browser geschlossen und erneut geöffnet wird, kann ein Sitzungsspeicher mit den Werten aus einem persistenten Speicher geladen werden. Das Löschen des Browser-Caches ist erforderlich, um die alten Werte zu entfernen.
 
 ### Kontextspeicherkomponenten {#context-store-components}
 
@@ -151,7 +149,7 @@ Die API bietet außerdem Erweiterungen der Klassen, die sich speziell zum Speich
 
 #### Erstellen des Sitzungsspeicherobjekts {#creating-the-session-store-object}
 
-Das JavaScript Ihres Client-Bibliotheksordners erstellt und initialisiert den Sitzungsspeicher. Der Sitzungsspeicher muss dann mit dem Context Store Manager registriert werden. Im folgenden Beispiel wird ein [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)-Objekt erstellt und registriert.
+Das JavaScript Ihres Client-Bibliotheksordners erstellt und initialisiert den Sitzungsspeicher. Der Sitzungsspeicher muss mit dem Context Store Manager registriert werden. Im folgenden Beispiel wird ein [CQ_Analytics.SessionStore](/help/sites-developing/ccjsapi.md#cq-analytics-sessionstore)-Objekt erstellt und registriert.
 
 ```
 //Create the session store
@@ -190,9 +188,9 @@ AEM stellt die Kontextspeicherkomponenten genericstore und genericstorepropertie
 
 * Eigenschaft-Wert-Paare: `GenericStoreProperties`-Komponente erweitern. Diese Komponente rendert automatisch Speicher von Eigenschaft-Wert-Paaren. Es werden mehrere Interaktionspunkte bereitgestellt:
 
-   * `prolog.jsp` und `epilog.jsp`: Komponenteninteraktion, die das Hinzufügen von serverseitiger Logik vor oder nach dem Komponenten-Rendering ermöglicht.
+   * `prolog.jsp` und `epilog.jsp`: Komponenteninteraktion, mit der Sie serverseitige Logik vor oder nach dem Komponenten-Rendering hinzufügen können.
 
-* Komplexe Daten: `GenericStore`-Komponente erweitern. Ihr Sitzungsspeicher benötigt dann eine &quot;Renderer&quot;-Methode, die jedes Mal aufgerufen wird, wenn die Komponente gerendert werden muss. Die Renderer-Funktion wird mit zwei Parametern aufgerufen:
+* Komplexe Daten: `GenericStore`-Komponente erweitern. Ihr Sitzungsspeicher benötigt eine &quot;Renderer&quot;-Methode, die jedes Mal aufgerufen wird, wenn die Komponente gerendert werden muss. Die Renderer-Funktion wird mit zwei Parametern aufgerufen:
 
    * `@param {String} store`
 Der zu rendernde Speicher
@@ -300,7 +298,7 @@ Die Kontextspeicherkomponente `/libs/cq/personalization/components/contextstores
 
 ### Rendern von Sitzungsspeicherdaten für genericstore-Komponenten {#rendering-session-store-data-for-genericstore-components}
 
-Um Store-Daten mithilfe einer genericstore-Komponente zu rendern, müssen Sie:
+Gehen Sie wie folgt vor, um Store-Daten mithilfe einer genericstore-Komponente zu rendern:
 
 * der JSP-Skriptkomponete das Tag personalization:storeRendererTag hinzufügen, um den Namen des Sitzungsspeichers zu identifizieren.
 * Implementieren Sie eine Renderer-Methode in die Sitzungsspeicherklasse.
@@ -321,7 +319,7 @@ Das Tag weist folgendes Format auf:
 
 #### Implementieren der Renderer-Methode für den Sitzungsspeicher {#implementing-the-session-store-renderer-method}
 
-Ihr Sitzungsspeicher benötigt dann eine &quot;Renderer&quot;-Methode, die jedes Mal aufgerufen wird, wenn die Komponente gerendert werden muss. Die Renderer-Funktion wird mit zwei Parametern aufgerufen:
+Ihr Sitzungsspeicher benötigt eine &quot;Renderer&quot;-Methode, die jedes Mal aufgerufen wird, wenn die Komponente gerendert werden muss. Die Renderer-Funktion wird mit zwei Parametern aufgerufen:
 
 * @param {String} store
 Der zu rendernde Speicher
@@ -417,7 +415,7 @@ function getName(){
 
 ### Ausschließen einer Eigenschaft aus dem sessionpersistence-Cookie {#excluding-a-property-from-the-sessionpersistence-cookie}
 
-Um zu verhindern, dass eine Eigenschaft eines `PersistedSessionStore` beibehalten wird (um sie aus dem Cookie `sessionpersistence` auszuschließen), fügen Sie die Eigenschaft der Liste der nicht permanenten Eigenschaften des permanenten Sitzungsspeichers hinzu.
+So verhindern Sie eine -Eigenschaft von `PersistedSessionStore` aus der Persistenz ausgeschlossen werden (d. h. schließen Sie sie aus der `sessionpersistence` -Cookie), fügen Sie die -Eigenschaft zur nicht persistenten Eigenschaftsliste des beibehaltenen Sitzungsspeichers hinzu.
 
 Siehe ` [CQ_Analytics.PersistedSessionStore.setNonPersisted(propertyName)](/help/sites-developing/ccjsapi.md#setnonpersisted-name)`
 
@@ -443,7 +441,7 @@ Beim Wechseln von der Desktop-Seite zur mobilen Entsprechung:
 * Das DOM der mobilen Seite wird geladen.
 * Das `div`-Hauptelement (erforderlich) mit dem Inhalt wird extrahiert und in die aktuelle Desktop-Seite eingefügt.
 
-* Die CSS- und Hauptteilklassen, die geladen werden müssen, müssen manuell konfiguriert werden.
+* Die CSS- und Textklassen, die geladen werden, müssen manuell konfiguriert werden.
 
 Beispiel:
 
@@ -505,7 +503,7 @@ Erstellen Sie eine CQ-Anwendung und fügen Sie die geoloc-Komponente hinzu.
 
 ### Erstellen des Dialogfelds &quot;Geoloc-Bearbeitung&quot; {#create-the-geoloc-edit-dialog}
 
-Die Kontextspeicherkomponente erfordert ein Dialogfeld &quot;Bearbeiten&quot;. Das Dialogfeld zur geoloc-Bearbeitung enthält eine statische Meldung, die anzeigt, dass keine Eigenschaften zum Konfigurieren vorhanden sind.
+Die Kontextspeicherkomponente erfordert ein Dialogfeld &quot;Bearbeiten&quot;. Das Dialogfeld &quot;Geoloc-Bearbeitung&quot;enthält eine statische Meldung, die anzeigt, dass keine Eigenschaften zum Konfigurieren vorhanden sind.
 
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `/libs/cq/personalization/components/contextstores/genericstoreproperties/dialog` und klicken Sie auf „Kopieren“.
 1. Klicken Sie mit der rechten Maustaste auf den Knoten `/apps/myapp/contextstores/geoloc` und klicken Sie auf „Einfügen“.
@@ -612,17 +610,17 @@ Fügen Sie die Komponente &quot;Location Store&quot;zu ClientContext hinzu, dami
 
 ## Erstellen eines benutzerdefinierten ClientContext {#creating-a-customized-client-context}
 
-Um einen zweiten Client-Kontext zu erstellen, müssen Sie die Verzweigung duplizieren:
+Um einen zweiten Client-Kontext zu erstellen, duplizieren Sie die Verzweigung:
 
 `/etc/clientcontext/default`
 
 * Der Unterordner:
   `/content`
-enthält den Inhalt des benutzerdefinierten ClientContext.
+enthält den Inhalt des angepassten Client-Kontexts.
 
 * Der Ordner:
   `/contextstores`
-ermöglicht es Ihnen, verschiedene Konfigurationen für die Kontextspeicher festzulegen.
+ermöglicht die Definition verschiedener Konfigurationen für die Kontextspeicher.
 
 Um Ihren benutzerdefinierten ClientContext zu verwenden, bearbeiten Sie die Eigenschaft
 `path`
