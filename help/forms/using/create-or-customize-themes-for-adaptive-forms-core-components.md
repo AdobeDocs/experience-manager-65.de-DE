@@ -8,7 +8,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
+source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
 workflow-type: tm+mt
 source-wordcount: '1968'
 ht-degree: 9%
@@ -179,10 +179,9 @@ Sie können auch die Schriftart, Farbe, Größe und andere CSS-Eigenschaften bes
 
 -->
 
->
+>[!NOTE]
 >
 > Wenn ein Stil sowohl auf Design- als auch auf Komponentenebene definiert ist, hat der auf Komponentenebene definierte Stil Priorität.
-
 
 #### 3. Bereiten Sie das Design für die Bereitstellung vor. {#generate-the-clientlib}
 
@@ -275,9 +274,10 @@ Nachdem das Paket installiert wurde, ist das Design zur Auswahl verfügbar.
 
 ![Themen-Clientbibliothek](/help/forms/using/assets/themeclientlibrary.png)
 
+>[!NOTE]
 >
 >
->Falls Sie Schwierigkeiten beim Zugriff auf das Anmeldedialogfeld auf einer Veröffentlichungsinstanz haben, um das Paket über Package Manager zu installieren, versuchen Sie, sich über die folgende URL anzumelden: `http://[Publish Server URL]:[PORT]/system/console`. Dies ermöglicht den Zugriff auf die Anmeldung bei der Veröffentlichungsinstanz, sodass Sie mit dem Installationsprozess fortfahren können.
+> Falls Sie Schwierigkeiten beim Zugriff auf das Anmeldedialogfeld auf einer Veröffentlichungsinstanz haben, um das Paket über Package Manager zu installieren, versuchen Sie, sich über die folgende URL anzumelden: `http://[Publish Server URL]:[PORT]/system/console`. Dies ermöglicht den Zugriff auf die Anmeldung bei der Veröffentlichungsinstanz, sodass Sie mit dem Installationsprozess fortfahren können.
 
 ## Anwenden eines Designs auf ein adaptives Formular {#using-theme-in-adaptive-form}
 
