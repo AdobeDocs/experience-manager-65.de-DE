@@ -1,20 +1,16 @@
 ---
 title: SPA- und Adobe Experience Platform Launch-Integration
-seo-title: SPA and Adobe Experience Platform Launch Integration
 description: Adobe Experience Platform Launch ist die empfohlene Methode zur Implementierung von Analytics, Target und Audience Manager in SPAs.
-seo-description: Adobe Experience Platform Launch is the recommended way to implement Analytics, Target, and Audience Manager within SPAs.
-uuid: 5e13ad32-bb84-4a60-ba72-6ecc9ed36f3b
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: spa
-discoiquuid: 6c320633-ce0b-4eb1-bb54-05e1a514d139
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
 workflow-type: tm+mt
-source-wordcount: '192'
-ht-degree: 81%
+source-wordcount: '190'
+ht-degree: 50%
 
 ---
 
@@ -28,10 +24,10 @@ Adobe Experience Platform Launch ist die empfohlene Methode zur Implementierung 
 
 ## Tutorial {#tutorial}
 
-Um zu verstehen, wie Sie SPAs mit Adobe Experience Platform Launch integrieren können, konsultieren Sie [diesen Knowledge Base-Artikel und das Tutorial](https://helpx.adobe.com/de/experience-manager/kt/integration/using/launch-reference-architecture-SPA-tutorial-implement.html), das Sie durch die Einrichtung von Launch und die Implementierung von Experience Cloud mit Angular oder React führen wird.
+Informationen zur Integration Ihrer SPA in Adobe Experience Platform Launch finden Sie unter [diesem Knowledgebase-Artikel und -Tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de), der Sie durch die Launch-Einrichtung führt und das Experience Cloud in implementiert, das mit Angular oder React erstellt wurde.
 
 >[!NOTE]
 >
->Der referenzierte KB-Artikel wurde erstellt, um eine Adobe Experience Platform Launch-Integration mit SPAs zu ermöglichen, die nicht den AEM-SPA-Editor nutzen. Die Methoden sollten eine Adobe Experience Platform Launch-Integration auch mit SPAs ermöglichen, die für die Verwendung des SPA-Editors erstellt wurden.
+>Die referenzierte KB wurde erstellt, um die Adobe Experience Platform Launch-Integration in SPA zu aktivieren, die nicht den Adobe Experience Manager SPA Editor verwenden. Die Methoden sollten eine Adobe Experience Platform Launch-Integration auch mit SPAs ermöglichen, die für die Verwendung des SPA-Editors erstellt wurden.
 >
 >Die Verwendung von Redux zusammen mit den JavaScript-SPA-Bibliotheken wurde noch nicht vollständig untersucht. Unterstützung für Redux ist in einer zukünftigen Version des SPA-Editors geplant.

@@ -1,11 +1,11 @@
 ---
-title: AEM Content and Commerce – Versionshinweise 2021
-description: AEM Content and Commerce – Versionshinweise 2021
+title: Versionshinweise zu Adobe Experience Manager Content and Commerce 2021
+description: Versionshinweise zu Adobe Experience Manager Content and Commerce 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: ht
-source-wordcount: '1314'
-ht-degree: 100%
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+workflow-type: tm+mt
+source-wordcount: '1318'
+ht-degree: 86%
 
 ---
 
@@ -13,15 +13,15 @@ ht-degree: 100%
 
 ## Übersicht über die Systemanforderungen
 
-Überprüfen Sie die minimalen Systemanforderungen in der folgenden Tabelle für die CIF-Version, die Sie derzeit verwenden oder in Zukunft verwenden möchten.
+Überprüfen Sie die Mindestanforderungen in der folgenden Tabelle für die CIF-Version, die Sie derzeit verwenden oder in Zukunft verwenden möchten.
 
 | Komponente | Systemanforderungen |
 |:-------|:-----:|
-| CIF-Add-on | Minimum: AEM 6.5.7, Adobe Commerce 2.3.5-GraphQL-Schemata |
+| CIF-Add-on | Minimum: Adobe Experience Manager (AEM) 6.5.7, Adobe Commerce 2.3.5 GraphQL-Schemas |
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Veröffentlichungsdatum: November 2021
+## Releasedatum: November 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -39,7 +39,7 @@ ht-degree: 100%
 
 * Unterstützung für Geschenkgutscheine in der AEM-Storefront
 
-## Veröffentlichungsdatum: Oktober 2021
+## Releasedatum: Oktober 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -51,7 +51,7 @@ ht-degree: 100%
 
 * Das CIF-Add-on unterstützt die neueste Commerce-Version 2.4.3 mit neuen GraphQL-APIs und -Schemata
 
-* Autoren können mithilfe des Rich-Text-Editors (RTE) Links zu Produkt- und Katalogseiten in Textfeldern hinzufügen. Es wurde ein CIF-Symbol zur RTE-Symbolleiste hinzugefügt, mit dem sich die Auswahlwerkzeuge öffnen lassen, um das Produkt oder die Kategorie schnell zu suchen und auszuwählen, ohne den Kontext zu verlassen.
+* Autoren können mithilfe des Rich-Text-Editors (RTE) Links zu Produkt- und Katalogseiten in Textfeldern hinzufügen. Der RTE-Symbolleiste wurde ein CIF-Symbol hinzugefügt, über das die Auswahl geöffnet wird, um das Produkt oder die Kategorie schnell zu suchen und auszuwählen, ohne den Kontext zu verlassen.
 
 * Bestehende Popups für Warenkorb- und Kassenvorgänge wurden durch spezielle AEM-Seiten für Warenkorb und Checkout ersetzt. Die Komponenten auf diesen Seiten werden mithilfe der erweiterbaren Peregrine-Komponenten von Adobe Commerce erstellt
 
@@ -59,7 +59,7 @@ ht-degree: 100%
 
 * AEM Storefront Venia gibt den HTTP 404-Fehler zurück, wenn keine Kategorie- oder Produktseite gefunden wird
 
-## Veröffentlichungsdatum: September 2021
+## Releasedatum: September 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -71,11 +71,11 @@ ht-degree: 100%
 
 * Die neue Registerkarte „Zugehörige Commerce-Inhalte“ im Sites-Editor erhöht die Autoreneffizienz, indem schnell auf relevante AEM-Produktinhalte für den aktuellen Kontext zugegriffen werden kann.
 
-   ![Zugehörige Commerce-Inhalte](/help/assets/CIF/associated-commerce-content.png)
+  ![Zugehörige Commerce-Inhalte](/help/assets/CIF/associated-commerce-content.png)
 
-* Verbesserte Benutzeroberfläche für die Produktauswahl für ein besseres Benutzererlebnis, höhere Effizienz und Unterstützung für einen komplexen Produktkatalog
+* Verbesserte Benutzeroberfläche für die Produktauswahl für bessere Benutzererfahrung, höhere Effizienz und Unterstützung für komplexen Produktkatalog
 
-   ![Neue Produktauswahl](/help/assets/CIF/product-picker.png)
+  ![Neue Produktauswahl](/help/assets/CIF/product-picker.png)
 
 * Berücksichtigung der Eigenschaft „include_in_menu“ in der Navigationskomponente
 
@@ -83,11 +83,11 @@ ht-degree: 100%
 
 * Das Leeren des Menücache funktioniert jetzt erwartungsgemäß
 
-* JS-Fehler während AEM CS-Bereitstellungsschritts und bei Nichtverwendung Client-seitiger Komponenten tritt nicht mehr auf
+* JS-Fehler während AEM CS-Bereitstellungsschritts und bei Nichtverwendung clientseitiger Komponenten
 
 * CIF-Cloud-Konfiguration kann jetzt auch in Ordnern erstellt werden, die einen sling:configs-Knoten haben
 
-## Veröffentlichungsdatum: August 2021
+## Releasedatum: August 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -97,9 +97,9 @@ ht-degree: 100%
 
 ### Neue Funktionen {#what-is-new-august}
 
-* Neue Kategorieauswahl-Benutzeroberfläche für ein verbessertes Benutzererlebnis, höhere Effizienz und bessere Unterstützung komplexer Produktkataloge
+* Neue Kategorieauswahl-Benutzeroberfläche für verbesserte Benutzererfahrung, höhere Effizienz und bessere Unterstützung für komplexen Produktkatalog
 
-   ![Neue Kategorieauswahl](/help/assets/CIF/category-picker.png)
+  ![Neue Kategorieauswahl](/help/assets/CIF/category-picker.png)
 
 * Bessere A11Y-Unterstützung für CIF-Kernkomponenten
 
@@ -111,9 +111,9 @@ ht-degree: 100%
 
 * CIF-JS-Fehler während des AEM CS-Bereitstellungsschritts
 
-* Fehlerbehebung für den Produktzugriff für zugeordnete Produktlistenelemente
+* Fehlerbehebung für den Rohproduktzugriff für zugeordnete Produktlistenelemente
 
-## Veröffentlichungsdatum: Juli 2021
+## Releasedatum: Juli 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -130,7 +130,7 @@ ht-degree: 100%
 
 * Unterstützung für [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/de/products/magento/product-recommendations.html) in der AEM-Storefront mit vordefinierten oder direkt erstellten Empfehlungen
 
-## Veröffentlichungsdatum: Juni 2021
+## Releasedatum: Juni 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -147,7 +147,7 @@ ht-degree: 100%
 * Verbesserte SEO-freundliche URLs für Kategorieseiten
 * Unterstützung benutzerdefinierter HTTP-Header pro Website/Konfiguration
 
-## Veröffentlichungsdatum: Mai 2021
+## Releasedatum: Mai 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -165,7 +165,7 @@ ht-degree: 100%
 
 * Breadcrumb setzt Vorschaudaten in der Produktkonsole zurück.
 
-## Veröffentlichungsdatum: April 2021
+## Releasedatum: April 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -175,7 +175,7 @@ ht-degree: 100%
 
 ### Neue Funktionen {#what-is-new-april}
 
-* Unterstützung für Kategorie-UID – Dadurch werden Commerce-Integrationen von Drittanbietern für Systeme freigeschaltet, die Zeichenfolgen für Kategorie-IDs verwenden
+* Unterstützung für Kategorie-UID - Dadurch werden Commerce-Integrationen von Drittanbietern für Systeme freigeschaltet, die Zeichenfolgen für Kategorie-IDs verwenden
 
 * AEM-Erweiterung für PWA Studio inkl. Beispielintegration
 
@@ -185,7 +185,7 @@ ht-degree: 100%
 
 * Das Feld „Stammkategorie“ wurde auf der Registerkarte „Commerce“ in den Seiteneigenschaften von Kategorieseiten nicht angezeigt
 
-## Veröffentlichungsdatum: März 2021 {#what-is-new-march}
+## Releasedatum: März 2021 {#what-is-new-march}
 
 | GitHub | Version | Detaillierte Versionshinweise |
 |:-------|:-----:|---------------------:|
@@ -205,7 +205,7 @@ ht-degree: 100%
 
 * Mehrere Fehlerbehebungen.
 
-## Veröffentlichungsdatum: Februar 2021
+## Releasedatum: Februar 2021
 
 | GitHub | Version | Detaillierte Versionshinweise |
 |:-------|:-----:|---------------------:|
@@ -225,7 +225,7 @@ ht-degree: 100%
 
 * Mehrere Fehlerbehebungen.
 
-## Veröffentlichungsdatum: Januar 2021
+## Releasedatum: Januar 2021
 
 | GitHub | Version | Detaillierte Versionshinweise |
 |:-------|:-----:|---------------------:|
