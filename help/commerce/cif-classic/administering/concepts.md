@@ -6,9 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4483'
+source-wordcount: '4484'
 ht-degree: 31%
 
 ---
@@ -161,7 +161,7 @@ Der Ordner unter dem entsprechenden `importers`-Ordner muss mit dem Namen des Im
 
 * `.../importproductswizard/importers/geometrixx/.content.xml`
 
-Das Format der Quell-Importdatei wird vom Import-Tool definiert. Alternativ kann das Import-Tool eine Verbindung (z. B. WebDAV oder HTTP) zur Commerce-Engine herstellen.
+Das Format der Quell-Importdatei wird vom Import-Tool definiert. Oder der Importeur stellt eine Verbindung (z. B. WebDAV oder http) zur Commerce-Engine her.
 
 ## Rollen {#roles}
 

@@ -4,9 +4,9 @@ description: Installieren und konfigurieren Sie ein AEM Forms-Demopaket und pass
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4622'
+source-wordcount: '4626'
 ht-degree: 68%
 
 ---
@@ -155,7 +155,7 @@ Dieser Abschnitt enthält Details und Anweisungen zur Konfiguration des Demopake
 
 1. Konfigurieren Sie den Service für die Verbindung mit dem gewünschten SMTP-Server:
 
-   1. **Host-Name des SMTP-Servers**: z. B. (smtp.gmail.com)
+   1. **Hostname des SMTP-Servers**: z. B. (smtp.gmail.com)
    1. **Server-Port**: z. B. (465) für Gmail mit SSL
    1. **SMTP-Benutzer:** demo@ &lt;firmenname> .com
    1. **„Von“-Adresse**: aemformsdemo@adobe.com
@@ -240,7 +240,7 @@ Dieser Abschnitt enthält Details und Anweisungen zur MS® Dynamics Cloud-Konfig
 1. Navigieren Sie zur Registerkarte „Authentifizierungseinstellungen“.
 1. Geben Sie die folgenden Details ein:
 
-   1. **Service-Stamm**: z. B. `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
+   1. **Dienststamm:** Beispiel: `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **Authentifizierungstyp**: OAuth 2.0
    1. **Authentifizierungseinstellungen** (siehe [MS® Dynamics-Cloud-Konfigurationseinstellungen](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) um diese Informationen zu sammeln):
 
@@ -251,7 +251,7 @@ Dieser Abschnitt enthält Details und Anweisungen zur MS® Dynamics Cloud-Konfig
       1. Zugriffstoken-URL - z. B. [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. Genehmigungsumfang – **openid**
       1. Authentifizierungs-Header – **Autorisierungsanbieter**
-      1. Ressource – z. B. `https://msdynamicsserver.api.crm3.dynamics.com`
+      1. Ressource - z. B. `https://msdynamicsserver.api.crm3.dynamics.com`
 
    1. Klicken Sie auf „Mit OAuth verbinden“.
 
@@ -277,7 +277,7 @@ Die in diesem Abschnitt beschriebenen Schritte enthalten Informationen dazu, wie
 1. Um die Ressourcen-URL/Dienststamm-URL zu finden, navigieren Sie zum Dashboard der MS® Dynamics-Instanz.
 1. Klicken Sie in der oberen Navigationsleiste auf „Verkauf“ oder Ihren eigenen Instanztyp und dann auf „Einstellungen auswählen“.
 1. Klicken Sie unten rechts auf &quot;Anpassungen&quot;und &quot;Entwicklungsressourcen&quot;.
-1. Dort finden Sie die Dienststamm-URL: z. B.
+1. Dort finden Sie die Dienststamm-URL: Beispiel:
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 

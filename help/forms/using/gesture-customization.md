@@ -1,7 +1,7 @@
 ---
 title: Gestenanpassung
 seo-title: Gesture customization
-description: Anpassen der Gesten in Ihrer AEM Forms-App
+description: Gesten in Ihrer AEM Forms-App anpassen
 seo-description: Customize the gestures on your AEM Forms app
 uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '296'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -47,29 +47,29 @@ In der AEM Forms-App wird durch das Wischen nach links eine neue Aufgabe bzw. ei
 
    `"EventName Selector": "Function"`
 
-   Wenn Sie ein Javascript-Ereignis mit dem Namen `EventName` für ein von `Selector` festgelegtes HTML-Element auslösen, wird `Function` aufgerufen.
+   Wenn Sie ein JavaScript-Ereignis mit dem Namen `EventName`auf einem HTML-Element, das von `Selector`, die `Function`aufgerufen wird.
 
 1. Suchen
 
    * „tap .taskContentArea“ : „onTaskClick“,
 
-      „tap .taskOpenArea“ : „onTaskClick“,
+     „tap .taskOpenArea“ : „onTaskClick“,
 
-      „tap .task-content“ : „onTaskClick“,
+     „tap .task-content“ : „onTaskClick“,
 
-      „tap .last_empty_div“ : „onTaskClick“,
+     „tap .last_empty_div“ : „onTaskClick“,
+
    und ersetzen Sie diese durch
 
    * „swipe .taskContentArea“ : „onTaskClick“,
 
-      „swipe .taskOpenArea“ : „onTaskClick“,
+     „swipe .taskOpenArea“ : „onTaskClick“,
 
-      „swipe .task-content“ : „onTaskClick“,
+     „swipe .task-content“ : „onTaskClick“,
 
-      „swipe .last_empty_div“ : „onTaskClick“,
-
+     „swipe .last_empty_div“ : „onTaskClick“,
 
 1. Speichern und schließen Sie die Datei `task.js`.
-1. Erstellen Sie die AEM Forms-App und führen Sie sie aus. Jetzt können Sie eine Aufgabe mit einem Wischen nach links und rechts öffnen.
+1. Erstellen Sie die AEM Forms-App und führen Sie sie aus. Jetzt können Sie eine mithilfe mit einem Wischen nach links und rechts öffnen.
 
 Auf ähnliche Weise können Sie Änderungen in anderen Ansichten für verschiedene Kombinationen von Gesten, HTML-Elementen und Funktionen vornehmen.

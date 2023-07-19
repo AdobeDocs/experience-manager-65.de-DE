@@ -8,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '1194'
-ht-degree: 100%
+ht-degree: 95%
 
 ---
 
@@ -24,7 +24,6 @@ ht-degree: 100%
 >* Einige Funktionen sind nicht auf allen Konsolen verfügbar, und/oder zusätzliche Funktionen sind auf einigen Konsolen verfügbar. Spezifische Informationen zu den einzelnen Konsolen und den zugehörigen Funktionen werden auf anderen Seiten ausführlicher behandelt.
 >* In AEM stehen verschiedene Tastaturbefehle zur Verfügung, insbesondere bei [der Verwendung von Konsolen](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) und [der Bearbeitung von Seiten](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
-
 
 ## Der Begrüßungsbildschirm {#the-welcome-screen}
 
@@ -87,13 +86,13 @@ Die Konsole **Websites** bietet zwei Bereiche zum Navigieren und Verwalten Ihrer
 
 * Linker Bereich
 
-   Zeigt die Baumstruktur Ihrer Websites und die darin enthaltenen Seiten.
+  Zeigt die Baumstruktur Ihrer Websites und die darin enthaltenen Seiten.
 
-   Er enthält außerdem Informationen zu anderen Optionen in AEM, einschließlich Projekten, Blueprints und Assets.
+  Er enthält außerdem Informationen zu anderen Optionen in AEM, einschließlich Projekten, Blueprints und Assets.
 
 * Rechter Bereich
 
-   Zeigt die Seiten (an der im linken Bereich gewählten Position) und kann für die Durchführung von Aktionen genutzt werden.
+  Zeigt die Seiten (an der im linken Bereich gewählten Position) und kann für die Durchführung von Aktionen genutzt werden.
 
 Von hier aus können Sie [Ihre Seiten verwalten](/help/sites-authoring/managing-pages.md), entweder über die Symbolleiste, ein Kontextmenü oder indem Sie eine Seite für weitere Aktionen öffnen.
 
@@ -105,7 +104,7 @@ Von hier aus können Sie [Ihre Seiten verwalten](/help/sites-authoring/managing-
 
 ## Zugreifen auf die Hilfe {#accessing-help}
 
-In verschiedenen Konsolen (z. B. Websites) ist auch eine Schaltfläche **Hilfe** verfügbar. Diese öffnet entweder Package Share oder die Dokumentations-Site.
+In verschiedenen Konsolen (z. B. Websites) gibt es auch **Hilfe** verfügbar ist, wird entweder Package Share oder die Dokumentations-Site geöffnet.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
@@ -120,9 +119,9 @@ Die Konsole **Websites** listet Ihre Inhaltsseiten in einer Baumstruktur auf (li
    * Untergeordnete Seiten werden im rechten Bereich aufgelistet
    * Die Struktur wird auch im linken Bereich erweitert.
 
-      Aus Leistungsgründen hängt diese Aktion von der Anzahl der untergeordneten Knoten ab. Bei einer Standardinstallation wird die Baumstruktur eingeblendet, wenn höchstens `30` untergeordnete Knoten vorhanden sind.
+     Aus Leistungsgründen hängt diese Aktion von der Anzahl der untergeordneten Knoten ab. Bei einer Standardinstallation wird die Baumstruktur eingeblendet, wenn höchstens `30` untergeordnete Knoten vorhanden sind.
 
-* Durch Doppelklicken auf den Seitennamen (linker Bereich) wird die Baumstruktur ebenfalls eingeblendet, durch das gleichzeitige Öffnen der Seite ist dieser Effekt aber nicht so offensichtlich.
+* Durch einen Doppelklick auf den Seitennamen (linker Bereich) wird auch der Baum erweitert, auch wenn die Seite gleichzeitig geöffnet wird. Dieser Effekt ist jedoch nicht so offensichtlich.
 
 >[!NOTE]
 >

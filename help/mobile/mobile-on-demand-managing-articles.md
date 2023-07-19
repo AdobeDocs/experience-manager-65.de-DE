@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '678'
-ht-degree: 4%
+source-wordcount: '679'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 4%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Sie Artikel in einer Anwendung erstellen und verwalten können. Die folgenden Aktionen werden für Artikel in der Anwendung ausgeführt.
 
@@ -33,11 +33,10 @@ Artikel repräsentieren den Text, der auf Kunst basiert, um Informationen zu ver
 >
 >Weitere Informationen zu den folgenden Themen in AEM Mobile-Apps finden Sie in den folgenden Ressourcen der Online-Hilfe:
 >
->* [Betrachtungen zum Entwurf](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
+>* [Designüberlegungen](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html)
 >
 >* [Verwalten von Artikeln](https://helpx.adobe.com/digital-publishing-solution/help/creating-articles.html)
 >
-
 
 ## Artikel erstellen {#creating-an-article}
 

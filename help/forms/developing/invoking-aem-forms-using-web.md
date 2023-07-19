@@ -11,10 +11,10 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: ht
-source-wordcount: '9905'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '9902'
+ht-degree: 98%
 
 ---
 
@@ -231,7 +231,7 @@ Das Übermittlungsprotokoll für zurückgesendete `BLOB`-Objekte hängt von mehr
 
    * Der SOAP-Endpunktparameter des Standardprotokoll-Dienstes für Ausgabe-Blob-Objekte ist auf Smart gesetzt.
 
-      Für jeden Dienst mit einem SOAP-Endpunkt können Sie in der Administrationskonsole das Übertragungsprotokoll für alle zurückgegebenen Blobs festlegen. (Siehe [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).)
+     Für jeden Dienst mit einem SOAP-Endpunkt können Sie in der Administrationskonsole das Übertragungsprotokoll für alle zurückgegebenen Blobs festlegen. (Siehe [Administration-Hilfe](https://www.adobe.com/go/learn_aemforms_admin_63_de).)
 
    * Der AEM Forms-Dienst akzeptiert ein oder mehrere Dokumente als Eingabe.
 
@@ -537,7 +537,7 @@ Sie können Java-Bibliotheksdateien für Axis generieren, indem Sie die folgende
 1. Fügen Sie die folgenden Axis-JAR-Dateien zum Klassenpfad Ihres Java-Projekts hinzu:
 
    * activation.jar
-   * achse.jar
+   * axis.jar
    * commons-codec-1.3.jar
    * commons-collections-3.1.jar
    * commons-discovery.jar
@@ -672,7 +672,7 @@ Sie können einen AEM Forms-Service mithilfe von Java-Proxy-Klassen und Base64 a
    >
    >Ersetzen Sie `hiro-xp` *durch die IP-Adresse des J2EE-Anwendungsservers, der als Host für AEM Forms dient.*
 
-1. Verpacken Sie die mit JAX-WS erstellten Java-Proxy-Klassen in einer JAR-Datei.
+1. Verpacken Sie die mit JAX-WS erstellten Java-Proxyklassen in eine JAR-Datei.
 1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien im Pfad
 
    &lt;Installationsverzeichnis>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
@@ -685,7 +685,7 @@ Sie können einen AEM Forms-Service mithilfe von Java-Proxy-Klassen und Base64 a
 
    * Weisen Sie den WSDL-Endpunkt und den Codierungstyp zum `ENDPOINT_ADDRESS_PROPERTY`-Feld des `javax.xml.ws.BindingProvider`-Objekts zu. Um den `MyApplication/EncryptDocument`-Service mit Base64-Codierung aufzurufen, geben Sie den folgenden URL-Wert an:
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
 
    * Weisen Sie den AEM Forms-Benutzer zum `USERNAME_PROPERTY`-Feld des `javax.xml.ws.BindingProvider`-Objekts zu.
    * Weisen Sie dem Feld `PASSWORD_PROPERTY` des Objekts `javax.xml.ws.BindingProvider` den entsprechenden Kennwortwert zu.
@@ -867,7 +867,7 @@ Um den `MyApplication/EncryptDocument`-Prozess mithilfe von Java-Proxy-Dateien a
    >
    >Ersetzen `hiro-xp` *mit der IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet wird.*
 
-1. Verpacken Sie die mit JAX-WS erstellten Java-Proxy-Klassen in einer JAR-Datei.
+1. Verpacken Sie die mit JAX-WS erstellten Java-Proxyklassen in eine JAR-Datei.
 1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien im Pfad
 
    &lt;Installationsverzeichnis>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
@@ -880,7 +880,7 @@ Um den `MyApplication/EncryptDocument`-Prozess mithilfe von Java-Proxy-Dateien a
 
    * Weisen Sie den WSDL-Endpunkt und den Kodierungstyp dem `ENDPOINT_ADDRESS_PROPERTY`-Feld des `javax.xml.ws.BindingProvider`-Objekts zu. Um den `MyApplication/EncryptDocument`-Dienst mit SwaRef-Kodierung aufzurufen, geben Sie den folgenden URL-Wert an:
 
-      ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
+     ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
 
    * Weisen Sie den Benutzer von AEM Forms dem Feld `USERNAME_PROPERTY` des Objekts `javax.xml.ws.BindingProvider` zu.
    * Weisen Sie dem Feld `PASSWORD_PROPERTY` des Objekts `javax.xml.ws.BindingProvider` den entsprechenden Kennwortwert zu.
@@ -990,7 +990,7 @@ Sie können einen AEM Forms-Dienst mit Java-Proxy-Klassen und BLOB-Daten über H
    >
    >Ersetzen `hiro-xp` *mit der IP-Adresse des J2EE-Anwendungsservers, auf dem AEM Forms gehostet wird.*
 
-1. Verpacken Sie die mit JAX-WS erstellten Java-Proxy-Klassen in einer JAR-Datei.
+1. Verpacken Sie die mit JAX-WS erstellten Java-Proxyklassen in eine JAR-Datei.
 1. Schließen Sie die Java-Proxy-JAR-Datei und die JAR-Dateien im Pfad
 
    &lt;Installationsverzeichnis>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
@@ -1003,7 +1003,7 @@ Sie können einen AEM Forms-Dienst mit Java-Proxy-Klassen und BLOB-Daten über H
 
    * Weisen Sie den WSDL-Endpunkt und den Kodierungstyp dem `ENDPOINT_ADDRESS_PROPERTY`-Feld des `javax.xml.ws.BindingProvider`-Objekts zu. Um den `MyApplication/EncryptDocument`-Dienst mit BLOB über HTTP-Kodierung aufzurufen, geben Sie den folgenden URL-Wert an:
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
 
    * Weisen Sie den AEM Forms-Benutzer dem `USERNAME_PROPERTY`-Feld des `javax.xml.ws.BindingProvider`-Objekts zu.
    * Weisen Sie dem Feld `PASSWORD_PROPERTY` des Objekts `javax.xml.ws.BindingProvider` den entsprechenden Kennwortwert zu.

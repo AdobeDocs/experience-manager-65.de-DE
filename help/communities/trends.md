@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '346'
-ht-degree: 30%
+source-wordcount: '345'
+ht-degree: 7%
 
 ---
 
 # Aktivitätstrends {#activity-trends}
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
 Die `Community Activity List` -Komponente bietet die Möglichkeit, Trendinformationen zu Beiträgen und Ansichten von Mitgliedern sowie Beiträgen und Ansichten von Inhalten hinzuzufügen.
 
@@ -42,11 +42,11 @@ So fügen Sie eine `Community Activity List` Komponente auf einer Seite im Autor
 
 * `Communities / Community Activity List`
 
-und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
+und ziehen Sie sie an die gewünschte Stelle auf einer Seite.
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
+Wenn die Komponente zum ersten Mal auf einer Seite einer Community-Site platziert wird, wird sie wie folgt angezeigt:
 
 ![community-activity](assets/community-activity.png)
 
@@ -56,45 +56,45 @@ Wählen Sie die platzierte `Community Activity List` -Komponente, die aufgerufen
 
 ![konfigurieren](assets/configure-new.png)
 
-Legen Sie auf der Registerkarte **Kommentare** fest, ob und wie Kommentare zu hochgeladenen Dateien angezeigt werden:
+Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hochgeladene Dateien angezeigt werden:
 
 ![Eigenschaften](assets/activity-list-properties.png)
 
 * **Typ**
 
-   Geben Sie an, ob Daten zu Community-Mitgliedern oder benutzergenerierten Inhalten (UGC) angezeigt werden sollen.
+  Geben Sie an, ob Daten zu Community-Mitgliedern oder benutzergenerierten Inhalten (UGC) angezeigt werden sollen.
 
-   Die folgenden Optionen stehen zur Auswahl:
+  Die folgenden Optionen stehen zur Auswahl:
 
    * `Members`
    * `Content`
 
-   Der Standardwert ist `Members`.
+  Der Standardwert ist `Members`.
 
 * **Anzeigetitel**
 
-   Ein beschreibender Titel, der über den Daten angezeigt werden soll, z. B. `Trending Content`.
-Standardmäßig ist kein Name eingegeben.
+  Ein beschreibender Titel, der über den Daten angezeigt werden soll, z. B. `Trending Content`.
+Standardmäßig ist kein Titel angegeben.
 
 * **Anzeigezahl**
 
-   Die Anzahl der aufzulistenden Elemente.
+  Die Anzahl der aufzulistenden Elemente.
 Der Standardwert ist 10.
 
 * **Aktivitätstyp**
 
-   Wählen Sie eine der folgenden Optionen aus:
+  Wählen Sie eine der folgenden Optionen aus:
 
    * `Views`(Seitenbesuche)
    * `Posts`(Erstellen von benutzergenerierten Inhalten)
    * `Follows`
    * `Likes`
 
-   Die Standardeinstellung lautet „Ansichten“.
+  Der Standardwert ist &quot;Ansichten&quot;.
 
 * **Zeitraum**
 
-   Wählen Sie eine der folgenden Optionen aus:
+  Wählen Sie eine der folgenden Optionen aus:
 
    * `Last 24 hours`
    * `Last 7 days`
@@ -103,21 +103,21 @@ Der Standardwert ist 10.
    * `This year (since Jan 1st)`
    * `Total`
 
-   Der Standardwert ist `Total`.
+  Der Standardwert ist `Total`.
 
 * **Kontextpfad**
 
-   Bietet die Möglichkeit, die Aktivität auf eine Teilmenge der Site zu beschränken, z. B. einen bestimmten Blog.
-Standardmäßig ist die Community-Site ausgewählt.
+  Bietet die Möglichkeit, die Aktivität auf eine Teilmenge der Site zu beschränken, z. B. einen bestimmten Blog.
+Der Standardwert ist die gesamte Community-Site.
 
 * **Gesammelte Mitgliederzahl**
 
-   Wenn diese Option deaktiviert (deaktiviert) ist, werden nur Beiträge der obersten Ebene gezählt. Wenn der Kontext beispielsweise die Stammseite ist (die Standardeinstellung), wird ein `Activity Type` von `Posts` werden nie Aktivitäten angezeigt, da keine Möglichkeit besteht, Inhalte auf der Stammseite zu posten. Ist diese Option aktiviert, werden auch die Ergebnisse aller untergeordneten Seiten eingeschlossen.
-Diese Option ist standardmäßig aktiviert.
+  Wenn diese Option deaktiviert (deaktiviert) ist, werden nur Beiträge der obersten Ebene gezählt. Wenn der Kontext beispielsweise die Stammseite ist (die Standardeinstellung), wird ein `Activity Type` von `Posts` werden nie Aktivitäten angezeigt, da keine Möglichkeit besteht, Inhalte auf der Stammseite zu posten. Wenn diese Option aktiviert ist, werden die Zählungen auf allen untergeordneten Seiten einbezogen.
+Die Option Standard ist aktiviert.
 
-### Beispielseite mit vier Komponenten {#example-page-with-components}
+### Beispielseite mit 4 Komponenten {#example-page-with-components}
 
-Konfiguration **Wichtigste Besucher** (Top Visitors): Typ = Mitglieder, Aktivitätstyp = Ansichten
+**Top-Besucher** config: Typ = Mitglieder, Aktivitätstyp = Ansichten
 
 **Wichtigste Mitwirkende** config: Typ = Mitglieder, Aktivitätstyp = Beiträge
 

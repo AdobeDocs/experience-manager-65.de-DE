@@ -3,10 +3,10 @@ title: Konfigurieren Sie den Rich-Text-Editor, um barrierefrei zugängliche Web-
 description: Konfigurieren Sie den Rich-Text-Editor, um barrierefrei zugängliche Web-Seiten und Websites zu erstellen.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '933'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 84%
 
 ---
 
@@ -45,21 +45,21 @@ Durch das Konfigurieren eines Plug-ins innerhalb des entsprechenden `rtePlugins`
 
 ### Beispiel – Angeben von im RTE-Auswahlfeld verfügbaren Absatzformaten {#example-specifying-paragraph-formats-available-in-rte-selection-field}
 
-Es können wie folgt neue semantische Blockformate zur Auswahl bereitgestellt werden:
+Neue semantische Blockformate können wie folgt zur Auswahl bereitgestellt werden:
 
 1. Legen Sie den [Konfigurationsspeicherort](/help/sites-administering/rich-text-editor.md#understand-the-configuration-paths-and-locations) abhängig von Ihrem RTE fest und navigieren Sie dorthin.
-1. [Aktivieren Sie das Absatzauswahlfeld](/help/sites-administering/rich-text-editor.md) durch die [Aktivierung des Plug-ins](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
-1. [Geben Sie die Formate an, die Sie im Absatzauswahlfeld zur Verfügung haben möchten](/help/sites-administering/rich-text-editor.md).
+1. [Absatzauswahlfeld aktivieren](/help/sites-administering/rich-text-editor.md); von [Aktivieren des Plug-ins](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins).
+1. [Geben Sie die Formate an, die im Absatzauswahlfeld verfügbar sein sollen](/help/sites-administering/rich-text-editor.md).
 1. Die Absatzformate sind dann für den Autor der Inhalte aus den Auswahlfeldern im RTE verfügbar. Auf sie kann wie folgt zugegriffen werden:
 
    * Mithilfe des Absatzzeichens (Pilcrow-Symbol) in der Touch-optimierten Benutzeroberfläche.
    * Mithilfe des Feldes **Format** (Popup-Auswahl) in der klassischen Benutzeroberfläche.
 
-Mit Strukturelementen, die im RTE über die Absatzformatoptionen verfügbar sind, stellt AEM eine gute Grundlage für die Entwicklung barrierefreier Inhalte bereit. Inhaltsautoren können den RTE für die Formatierung der Schriftgröße, der Farben oder anderer verwandter Attribute verwenden und dadurch die Erstellung einer Inline-Formatierung verhindern. Stattdessen müssen sie entsprechende Strukturelemente wie Überschriften auswählen und über die Option „Arten“ ausgewählte globale Formatarten verwenden. Dies sorgt für ein sauberes Markup, mehr Optionen für Benutzer, die die Suche mit ihren eigenen Formatvorlagen durchführen, sowie korrekt strukturierte Inhalte.
+Mit Strukturelementen, die im RTE über die Absatzformatoptionen verfügbar sind, bietet AEM eine gute Grundlage für die Entwicklung barrierefreier Inhalte. Inhaltsautoren können den RTE für die Formatierung der Schriftgröße, der Farben oder anderer verwandter Attribute verwenden und dadurch die Erstellung einer Inline-Formatierung verhindern. Stattdessen müssen sie die entsprechenden Strukturelemente wie Überschriften auswählen und globale Stile verwenden, die über die Option Stile ausgewählt wurden. Dadurch wird das Markup bereinigt, Benutzer, die mit ihren eigenen Stylesheets navigieren, erhalten bessere Optionen und korrekt strukturierte Inhalte.
 
 ## Verwenden der Funktion „Quellenbearbeitung“ {#use-of-the-source-edit-feature}
 
-In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quell-Code zu untersuchen und anzupassen. So kann beispielsweise ein innerhalb des RTE erstellter Inhalt ein zusätzliches Markup erfordern, um Compliance mit WCAG 2.0 sicherzustellen. Dies lässt sich mit der Option [Quellenbearbeitung](/help/sites-administering/rich-text-editor.md#aboutplugins) des RTE umsetzen. Sie können die Funktion [`sourceedit` im Plug-in `misctools` angeben](/help/sites-administering/rich-text-editor.md#aboutplugins).
+In einigen Fällen halten Inhaltsautoren es für erforderlich, den mithilfe des RTE erstellten HTML-Quell-Code zu untersuchen und anzupassen. Beispielsweise kann ein innerhalb des RTE erstellter Inhalt zusätzliches Markup erfordern, um die Einhaltung von WCAG 2.0 sicherzustellen. Dies kann mit dem [Quellbearbeitung](/help/sites-administering/rich-text-editor.md#aboutplugins) -Option des RTE. Sie können die Funktion [`sourceedit` im Plug-in `misctools` angeben](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
@@ -83,7 +83,7 @@ Unter **Tabelle** müssen Sie das Attribut explizit zum/vom DOM-Element festlege
 
 ### Beispiel – Erstellen von barrierefrei zugänglichem HTML-Code, wenn Hervorhebungen im Text verwendet werden {#create-accessible-html-for-text}
 
-RTE kann `strong`- und `em`-Tags anstelle von `b` und `i` verwenden. Fügen Sie den folgenden Knoten als gleichrangiges Element der Knoten `uiSettings` und `rtePlugins` im Dialogfeld hinzu.
+RTE kann `strong`- und `em`-Tags anstelle von `b` und `i` verwenden. Fügen Sie den folgenden Knoten als gleichrangiges Element zum `uiSettings` und `rtePlugins` -Knoten im Dialogfeld.
 
 ```HTML
 <htmlRules jcr:primaryType="nt:unstructured">
@@ -100,7 +100,7 @@ RTE kann `strong`- und `em`-Tags anstelle von `b` und `i` verwenden. Fügen Sie 
 
 ### Schrittweise Anleitungen {#step-by-step-instructions}
 
-1. Starten Sie CRXDE Lite. Zum Beispiel: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
+1. Starten Sie die CRXDE Lite. Beispiel: [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/)
 1. Kopieren Sie:
 
    `/libs/cq/ui/widgets/source/widgets/form/rte/commands/Table.js`
@@ -193,9 +193,7 @@ RTE kann `strong`- und `em`-Tags anstelle von `b` und `i` verwenden. Fügen Sie 
 >* Die `itemId`-Eigenschaft zu jedem entsprechenden Feld auf den Namen des entsprechenden DOM-Attributs (`TablePropertiesDialog`) eingestellt ist.
 >* Das Attribut explizit für das DOM-Element festgelegt und/oder entfernt wird (`Table`).
 
-
 >[!MORELIKETHIS]
 >
 >* [Kurzanleitung zu WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Erstellen barrierefreier Inhalte (gemäß WCAG 2.0)](/help/sites-authoring/creating-accessible-content.md)
-

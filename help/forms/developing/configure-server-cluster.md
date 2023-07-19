@@ -2,10 +2,10 @@
 title: Konfigurieren und Fehlerbehebung für einen AEM Forms on JEE-Servercluster
 description: Erfahren Sie, wie Sie einen AEM Forms on JEE-Servercluster konfigurieren und Fehler beheben.
 exl-id: 230fc2f1-e6e5-4622-9950-dae9449ed3f6
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
-workflow-type: ht
-source-wordcount: '4033'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '4032'
+ht-degree: 99%
 
 ---
 
@@ -19,7 +19,7 @@ Vertrautheit mit AEM Forms on JEE-, JBoss-, WebSphere- und WebLogic-Anwendungsse
 
 Erweitert
 
-Ein AEM Forms on JEE-Cluster ist eine Topologie, die so konzipiert ist, dass AEM Forms on JEE gegenüber dem Ausfall eines Clusterknotens widerstandsfähig ist und die Systemkapazität über die Möglichkeiten eines einzelnen Knotens hinaus skalieren kann. Ein Cluster kombiniert mehrere Knoten in einem einzigen logischen System, das Daten teilt und es Transaktionen ermöglicht, sich in ihrer Ausführung über mehrere Knoten zu erstrecken. Ein Cluster ist die gängigste Methode zur Skalierung von AEM Forms on JEE, da jede Kombination von Services, die eine beliebige Kombination von Arbeitslasten verarbeitet, unterstützt werden kann. Ein AEM Forms on JEE-Cluster eignet sich nicht unbedingt für alle Implementierungsarten, insbesondere kann in vielen Fällen eine nicht geclusterte Server-Architektur mit einem Lastenausgleich geeignet sein.
+Ein AEM Forms on JEE-Cluster ist eine Topologie, die so konzipiert ist, dass AEM Forms on JEE gegenüber dem Ausfall eines Clusterknotens widerstandsfähig ist und die Systemkapazität über die Möglichkeiten eines einzelnen Knotens hinaus skalieren kann. Ein Cluster kombiniert mehrere Knoten in einem einzigen logischen System, das Daten teilt und es Transaktionen ermöglicht, sich in ihrer Ausführung über mehrere Knoten zu erstrecken. Ein Cluster ist die gängigste Methode zur Skalierung von AEM Forms on JEE, da jede Kombination von Services, die eine beliebige Kombination von Arbeitslasten verarbeitet, unterstützt werden kann. Ein AEM Forms on JEE-Cluster eignet sich nicht unbedingt für alle Bereitstellungsarten, insbesondere kann in vielen Fällen eine nicht geclusterte Server-Architektur mit einem Lastenausgleich geeignet sein.
 
 In diesem Dokument werden die spezifischen Konfigurationsanforderungen und potenziellen Problembereiche besprochen, auf die Sie mit einem AEM Forms on JEE-Cluster stoßen können.
 

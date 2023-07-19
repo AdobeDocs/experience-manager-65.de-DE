@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 78ec31362f3aceb5cfc9cc0735bccb88082b8e2d
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '1787'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -48,7 +48,6 @@ or
 >* `/libs/settings/cloudsettings`
 >* `/conf/global/settings/cloudsettings`
 >* `/conf/<tenant>/settings/cloudsettings`
-
 
 ## Ein- und Ausblenden der ContextHub-Benutzeroberfläche {#showing-and-hiding-the-contexthub-ui}
 
@@ -189,7 +188,7 @@ Der Store „contexthub.generic-jsonp“ wird so konfiguriert, dass Daten für d
 
 Mit dem Store-Beispielkandidaten „contexthub.generic-jsonp“ können Sie Daten aus einem JSONP-Service oder einem Webservice abrufen, der JSON-Daten zurückgibt. Verwenden Sie für diesen Store-Kandidaten die Store-Konfiguration, um Details zu dem JSONP-Service anzugeben, der genutzt werden soll.
 
-Mit der Funktion [init](/help/sites-developing/contexthub-api.md#init-name-config) der JavaScript-Klasse `ContextHub.Store.JSONPStore` wird ein `config`-Objekt definiert, das diesen Store-Kandidaten initialisiert. Das `config`-Objekt enthält ein `service`-Objekt mit Details zum JSONP-Service. Zum Konfigurieren des Stores geben Sie das `service`-Objekt im JSON-Format als Wert für die Eigenschaft „Detailkonfiguration“ an.
+Die [init](/help/sites-developing/contexthub-api.md#init-name-config) Funktion der `ContextHub.Store.JSONPStore` Die JavaScript-Klasse definiert eine `config` -Objekt, das diesen Store-Kandidaten initialisiert. Das `config`-Objekt enthält ein `service`-Objekt mit Details zum JSONP-Service. Zum Konfigurieren des Stores geben Sie das `service`-Objekt im JSON-Format als Wert für die Eigenschaft „Detailkonfiguration“ an.
 
 Verwenden Sie zum Speichern von Daten aus dem MD5-Service der Website „jsontest.com“ das Verfahren unter [Erstellen eines ContextHub-Store](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store) mit den folgenden Eigenschaften:
 
@@ -199,21 +198,21 @@ Verwenden Sie zum Speichern von Daten aus dem MD5-Service der Website „jsontes
 * **Aktiviert:** Wählen Sie diese Option aus.
 * **Detailkonfiguration (JSON):**
 
-   ```xml
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```xml
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### Hinzufügen eines Benutzeroberflächenmoduls für die md5-Daten {#adding-a-ui-module-for-the-md-data}
 
@@ -227,15 +226,15 @@ Nutzen Sie das Verfahren unter [Hinzufügen eines Benutzeroberflächenmoduls](#a
 * **Modultyp:** contexthub.base
 * **Detailkonfiguration (JSON):**
 
-   ```xml
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Converstion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```xml
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Converstion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## Debuggen von ContextHub {#debugging-contexthub}
 

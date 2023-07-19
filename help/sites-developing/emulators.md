@@ -1,7 +1,7 @@
 ---
 title: Emulatoren
 seo-title: Emulators
-description: AEM ermöglicht es Autoren, eine Seite in einem Emulator anzuzeigen, der die Umgebung simuliert, in der ein Benutzer die Seite aufruft.
+description: AEM ermöglicht es Autoren, eine Seite in einem Emulator anzuzeigen, der die Umgebung simuliert, in der ein Endbenutzer die Seite anzeigt
 seo-description: AEM enables authors to view a page in an emulator that simulates the environment in which an end-user will view the page
 uuid: ee1496a5-be68-4318-b5ce-b11c41e4485c
 contentOwner: Guillaume Carlino
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '631'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '634'
+ht-degree: 64%
 
 ---
 
@@ -22,13 +22,13 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Mit Adobe Experience Manager (AEM) können Autoren eine Seite in einem Emulator anzeigen, der die Umgebung simuliert, in der ein Benutzer die Seite aufruft, z. B. auf einem mobilen Gerät oder in einem E-Mail-Client.
+Mit Adobe Experience Manager (AEM) können Autoren eine Seite in einem Emulator anzeigen, der die Umgebung simuliert, in der ein Endbenutzer die Seite anzeigt, z. B. auf einem Mobilgerät oder in einem E-Mail-Client.
 
 Das AEM-Emulator-Framework:
 
-* ermöglicht Content-Authoring in einer simulierten Benutzeroberfläche, z. B. auf einem mobilen Gerät oder in einem E-Mail-Client (zum Erstellen von Newslettern).
+* Ermöglicht die Erstellung von Inhalten in einer simulierten Benutzeroberfläche (Benutzeroberfläche), z. B. einem Mobilgerät oder einem E-Mail-Client (zum Erstellen von Newslettern).
 * passt den Seiteninhalt entsprechend der simulierten Benutzeroberfläche an.
 * ermöglicht das Erstellen benutzerdefinierter Emulatoren.
 
@@ -36,20 +36,20 @@ Das AEM-Emulator-Framework:
 >
 >Diese Funktion wird nur in der klassischen Benutzeroberfläche unterstützt.
 
-## Emulatoren-Eigenschaften {#emulators-characteristics}
+## Emulatormerkmale {#emulators-characteristics}
 
-Emulatoren haben folgende Eigenschaften:
+Emulator:
 
-* Sie basieren auf ExtJS.
-* Sie werden auf dem Seiten-DOM ausgeführt.
-* Die Darstellung erfolgt mithilfe von CSS.
-* Sie unterstützten Plug-ins (z. B. für die Drehung auf mobilen Geräten).
-* Sie sind nur im author-Modus aktiviert.
+* basiert auf ExtJS.
+* Bearbeitet das Seiten-DOM.
+* Das Erscheinungsbild wird über CSS geregelt.
+* Unterstützt Plug-ins (z. B. das Plug-in für die Mobilgeräterotation).
+* Ist nur auf der Autoreninstanz aktiv.
 * Die Basiskomponente befindet sich unter `/libs/wcm/emulator/components/base`.
 
-### Konvertieren von Inhalten mit einem Emulator {#how-the-emulator-transforms-the-content}
+### Umwandlung des Inhalts durch den Emulator {#how-the-emulator-transforms-the-content}
 
-Der Emulator sorgt dafür, dass die Emulator-DIVs den HTML-Hauptteilinhalt umschließen. Der folgende HTML-Code:
+Der Emulator funktioniert durch Einschließen des HTML-Hauptinhalts in Emulator-DIVs. Der folgende HTML-Code:
 
 ```xml
 <body>
@@ -101,39 +101,39 @@ So kann die vollständige Darstellung des Emulators durch die Verwendung von CSS
 
 >[!NOTE]
 >
->Es wird empfohlen, dass die Projekt-HTML den Hauptteilinhalt wie im obigen Beispiel in einer einzigen DIV umschließt. Wenn der Hauptteilinhalt mehrere Tags enthält, kann es zu unvorhergesehenen Ergebnissen kommen.
+>Es wird empfohlen, dass die Projekt-HTML den Hauptteilinhalt wie im obigen Beispiel in ein div einbindet. Wenn der Hauptteilinhalt mehrere Tags enthält, kann es zu unvorhersehbaren Ergebnissen kommen.
 
 ### Mobile Emulatoren {#mobile-emulators}
 
 Die vorhandenen mobilen Emulatoren:
 
-* befinden sich unter /libs/wcm/mobile/components/emulators.
+* Sie befinden sich unter /libs/wcm/mobile/components/emulators.
 * sind über dasJSON-Servlet verfügbar unter:
 
-   http://localhost:4502/bin/wcm/mobile/emulators.json
+  http://localhost:4502/bin/wcm/mobile/emulators.json
 
 Wenn die Seitenkomponente auf die mobile Seitenkomponente (`/libs/wcm/mobile/components/page`) angewiesen ist, ist die Emulatorfunktion automatisch durch folgenden Mechanismus in die Seite integriert:
 
 * Die mobile Seitenkomponente `head.jsp` beinhaltet die der Gerätegruppe zugeordnete Initialisierungskomponente des Emulators (nur im author-Modus) und Rendering-CSS durch:
 
-   `deviceGroup.drawHead(pageContext);`
+  `deviceGroup.drawHead(pageContext);`
 
 * Die Methode `DeviceGroup.drawHead(pageContext)` enthält die Inititialisierungskomponente des Emulators, d. h., sie ruft die `init.html.jsp` der Emulatorkomponente auf. Falls die Emulatorkomponente nicht über eine eigene `init.html.jsp` verfügt, sondern auf den mobilen Basisemulator (`wcm/mobile/components/emulators/base)`) angewiesen ist, wird das Initialisierungsskript des mobilen Basisemulators (`/libs/wcm/mobile/components/emulators/base/init.html.jsp`) aufgerufen.
 
-* Das Initialisierungsskript des mobilen Basisemulators definiert über JavaScript Folgendes:
+* Das Init-Skript des mobilen Basisemulators definiert über JavaScript:
 
    * Die Konfiguration für alle Emulatoren, die für die Seite definiert sind (emulatorConfigs)
    * Der Emulator-Manager, der die Funktionalität des Emulators in die Seite über Folgendes integriert:
 
-      `emulatorMgr.launch(config)`;
+     `emulatorMgr.launch(config)`;
 
-      Der Emulator-Manager wird durch Folgenders definiert:
+     Der Emulator-Manager wird durch Folgenders definiert:
 
-      `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
-#### Erstellen eines benutzerdefinierten mobilen Emulators {#creating-a-custom-mobile-emulator}
+#### Erstellen eines benutzerdefinierten Mobile Emulators {#creating-a-custom-mobile-emulator}
 
-Gehen Sie zum Erstellen eines benutzerdefinierten mobilen Emulators wie folgt vor:
+So erstellen Sie einen benutzerdefinierten mobilen Emulator:
 
 1. Erstellen Sie unterhalb von `/apps/myapp/components/emulators` die Komponente `myemulator` (Knotentyp: `cq:Component`).
 
@@ -152,4 +152,5 @@ Gehen Sie zum Erstellen eines benutzerdefinierten mobilen Emulators wie folgt vo
    * Name = `canRotate`, Typ = `Boolean`, Wert = `true`: um die Rotationsfunktion einzuschließen.
 
    * Name = `touchScrolling`, Typ = `Boolean`, Wrt = `true`: fum die Funktion „Touch-Scrolling“ einzuschließen.
+
    Sie können weitere Funktionen hinzufügen, indem Sie eigene Plug-ins definieren.

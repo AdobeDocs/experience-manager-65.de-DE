@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1162'
-ht-degree: 45%
+source-wordcount: '1165'
+ht-degree: 44%
 
 ---
 
@@ -46,7 +46,7 @@ Bei Bereitstellung geschieht standardmäßig Folgendes:
 * Der Ausführungsmodus lautet `author`.
 * Die Instanz (Repository, Felix OSGI-Umgebung, Bundles usw.) wird in installiert. `${user.dir}/crx-quickstart`where `${user.dir}` das aktuelle Arbeitsverzeichnis ist, wird dieser Pfad zu crx-quickstart aufgerufen `sling.home`
 
-* Der Kontextstamm ist der Name der WAR-Datei, z. B.: `aem-6`.
+* Der Kontextstamm ist der Name der WAR-Datei, z. B. : `aem-6`
 
 #### Konfiguration {#configuration}
 
@@ -241,7 +241,7 @@ Lesen Sie oben [Allgemeine Beschreibung](#general-description), bevor Sie eine B
       * Entfernen Sie die Kommentarzeichen für den ursprünglichen Parameter „sling.home“ und legen Sie diesen Pfad nach Bedarf fest.
       * Packen Sie die Datei „web.xml“ erneut.
 
-   * Benennen Sie AEM WAR-Datei in ROOT.war um, wenn Sie sie als Root-Webapp bereitstellen möchten, benennen Sie sie z. B. in aemauthor.war um, wenn Sie aemauthor als Kontextstamm verwenden möchten.
+   * Benennen Sie AEM WAR-Datei in ROOT.war um, wenn Sie sie als Root-Webapp bereitstellen möchten. Benennen Sie sie beispielsweise in aemauthor.war um, wenn Sie aemauthor als Kontextstamm verwenden möchten.
    * Kopieren Sie es in den Ordner webapps von Tomcat.
    * warten, bis AEM installiert ist
 

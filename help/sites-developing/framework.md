@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 8dafa901bc628ee5e4823e9f8811bf4d09b7e072
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1642'
+source-wordcount: '1645'
 ht-degree: 47%
 
 ---
@@ -38,7 +38,7 @@ So taggen Sie Inhalte und verwenden die AEM Tagging-Infrastruktur:
 
 Die Funktion eines Tags wird im Repository in einem Knoten vom Typ `cq:Tag` erfasst..
 
-Ein Tag kann ein einfaches Wort sein (z. B. `sky`) oder eine hierarchische Taxonomie darstellen (z. B. `fruit/apple`, d. h. sowohl das generische `fruit` und spezifischere `apple`).
+Ein Tag kann ein einfaches Wort sein (z. B. `sky`) oder stellen eine hierarchische Taxonomie dar (z. B. `fruit/apple`, d. h. sowohl das generische `fruit` und spezifischere `apple`).
 
 Tags werden durch eine eindeutige Tag-ID identifiziert.
 

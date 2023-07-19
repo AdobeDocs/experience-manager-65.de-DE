@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: ht
-source-wordcount: '3324'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '3327'
+ht-degree: 98%
 
 ---
 
@@ -137,8 +137,8 @@ Mit Sling geben Sie an, welches Skript eine bestimmte Entität rendert (indem Si
 
 Die Anfrage wird zerlegt und die notwendigen Informationen werden extrahiert. Das Repository wird nach der angeforderten Ressource (Inhaltsknoten) durchsucht:
 
-* Das erste Sling prüft, ob ein Knoten an dem in der Anfrage angegebenen Ort existiert; z. B.: `../content/corporate/jobs/developer.html`
-* Wenn kein Knoten gefunden wird, wird die Erweiterung entfernt und die Suche wiederholt; z. B. `../content/corporate/jobs/developer`
+* Das erste Sling überprüft, ob ein Knoten an dem in der Anfrage angegebenen Speicherort vorhanden ist. Beispiel: `../content/corporate/jobs/developer.html`
+* Wenn kein Knoten gefunden wird, wird die Erweiterung verworfen und die Suche wiederholt. Beispiel: `../content/corporate/jobs/developer`
 * Wenn kein Knoten gefunden wird, gibt Sling den HTTP-Code „404 (Nicht gefunden)“ zurück.
 
 Sling erlaubt auch anderen Elementen als JCR-Knoten, als Ressourcen zu fungieren, dies ist jedoch eine erweiterte Funktion.
@@ -152,7 +152,7 @@ Der vom `sling:resourceType` angegebene Pfad kann wie folgt sein:
 * absolut oder
 * relativ zu einem Konfigurationsparameter
 
-   Relative Pfade werden von Adobe empfohlen, da sie die Portabilität erhöhen.
+  Relative Pfade werden von Adobe empfohlen, da sie die Portabilität erhöhen.
 
 Alle Sling-Skripte werden in Unterordnern von entweder `/apps` oder `/libs` gespeichert. Diese werden in dieser Reihenfolge durchsucht (siehe [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -175,39 +175,39 @@ Unter Verwendung des obigen Beispiels, wenn der `sling:resourceType` `hr/jobs` l
 
 * GET/HEAD-Anfragen und URLs, die auf .HTML enden (Standardanfragetypen, Standardformat)
 
-   Das Skript lautet „/apps/hr/jobs/jobs.esp“. Der letzte Abschnitt von „sling:resourceType“ bildet den Dateinamen.
+  Das Skript lautet „/apps/hr/jobs/jobs.esp“. Der letzte Abschnitt von „sling:resourceType“ bildet den Dateinamen.
 
 * POST-Anfragen (alle Anfragetypen außer GET/HEAD, der Methodenname muss in Großbuchstaben angegeben werden)
 
-   POST wird im Skriptnamen verwendet.
+  POST wird im Skriptnamen verwendet.
 
-   Das Skript ist `/apps/hr/jobs/jobs.POST.esp`.
+  Das Skript ist `/apps/hr/jobs/jobs.POST.esp`.
 
 * URLs in anderen Formaten, die nicht auf .html enden
 
-   Beispiel: `../content/corporate/jobs/developer.pdf`
+  Beispiel: `../content/corporate/jobs/developer.pdf`
 
-   Das Skript wäre `/apps/hr/jobs/jobs.pdf.esp`. Das Suffix wird zum Skriptnamen hinzugefügt.
+  Das Skript wäre `/apps/hr/jobs/jobs.pdf.esp`. Das Suffix wird zum Skriptnamen hinzugefügt.
 
 * URLs mit Selektoren
 
-   Selektoren können verwendet werden, um denselben Inhalt in einem alternativen Format anzuzeigen. Zum Beispiel eine druckerfreundliche Version, einen RSS-Feed oder eine Zusammenfassung.
+  Selektoren können verwendet werden, um denselben Inhalt in einem alternativen Format anzuzeigen. Zum Beispiel eine druckerfreundliche Version, einen RSS-Feed oder eine Zusammenfassung.
 
-   Bei einer druckerfreundlichen Version wäre der Selektor *print* wie in `../content/corporate/jobs/developer.print.html`.
+  Bei einer druckerfreundlichen Version wäre der Selektor *print* wie in `../content/corporate/jobs/developer.print.html`.
 
-   Das Skript wäre `/apps/hr/jobs/jobs.print.esp`. Der Selektor wird zum Skriptnamen hinzugefügt.
+  Das Skript wäre `/apps/hr/jobs/jobs.print.esp`. Der Selektor wird zum Skriptnamen hinzugefügt.
 
 * Wenn kein „sling:resourceType“ definiert wurde, gilt Folgendes:
 
    * Der Inhaltspfad wird für die Suche nach einem geeigneten Skript verwendet (wenn der pfadbasierte „ResourceTypeProvider“ aktiv ist).
 
-      Zum Beispiel würde das Skript für `../content/corporate/jobs/developer.html` eine Suche in `/apps/content/corporate/jobs/` erzeugen.
+     Zum Beispiel würde das Skript für `../content/corporate/jobs/developer.html` eine Suche in `/apps/content/corporate/jobs/` erzeugen.
 
    * Der primäre Knotentyp wird verwendet.
 
 * Wenn kein Skript gefunden wird, wird das Standard-Skript verwendet.
 
-   Die Standardversion wird derzeit als Klartext (.txt), HTML (.html) und JSON (.json) unterstützt, welche alle die Eigenschaften des Knotens auflisten (passend formatiert). Die Standardversion für die Erweiterung „.res“ oder für Anfragen ohne Anfrageerweiterung besteht darin, die Ressource (sofern möglich) zu spoolen.
+  Die Standardversion wird derzeit als Klartext (.txt), HTML (.html) und JSON (.json) unterstützt, welche alle die Eigenschaften des Knotens auflisten (passend formatiert). Die Standardversion für die Erweiterung „.res“ oder für Anfragen ohne Anfrageerweiterung besteht darin, die Ressource (sofern möglich) zu spoolen.
 * Für die HTTP-Fehlerbehandlung (Codes 403 oder 404) sucht Sling nach einem Skript, entweder:
 
    * am Speicherort „/apps/sling/servlet/errorhandler“ für [angepasste Skripte](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -250,19 +250,19 @@ Beispiel:
    * b
 
       * sling:resourceSuperType = a
+
    * c
 
       * sling:resourceSuperType = b
+
    * x
 
       * sling:resourceType = c
+
    * y
 
       * sling:resourceType = c
       * sling:resourceSuperType = a
-
-
-
 
 Die Typhierarchie von:
 
@@ -329,7 +329,7 @@ Auf diese Weise können Sie die folgenden Aktionen für beliebige Pakete innerha
 * Aktualisieren
 * uninstall
 * Den aktuellen Status anzeigen
-* Zugreifen auf detailliertere Informationen (z. B. symbolischer Name, Version, Ort usw.) über die spezifischen Bundles
+* Zugriff auf detailliertere Informationen (z. B. symbolischer Name, Version, Standort usw.) zu den jeweiligen Bundles
 
 Weitere Informationen finden Sie unter [Web-Konsole](/help/sites-deploying/web-console.md), [OSGI-Konfiguration](/help/sites-deploying/configuring-osgi.md) und [OSGi-Konfigurationseinstellungen](/help/sites-deploying/osgi-configuration-settings.md).
 
@@ -420,29 +420,29 @@ Die folgende Liste gibt einen Überblick über die Struktur, die Sie im Reposito
 
 * `/apps`
 
-    Anwendungsbezogen; enthält für Ihre Website spezifische Komponentendefinitionen. Die von Ihnen entwickelten Komponenten können auf den Standardkomponenten basieren, die unter `/libs/foundation/components` verfügbar sind.
+   Anwendungsbezogen; enthält für Ihre Website spezifische Komponentendefinitionen. Die von Ihnen entwickelten Komponenten können auf den Standardkomponenten basieren, die unter `/libs/foundation/components` verfügbar sind.
 
 * `/content`
 
-   Inhalt, der für Ihre Website erstellt wurde.
+  Inhalt, der für Ihre Website erstellt wurde.
 
 * `/etc`
 
 * `/home`
 
-   Benutzer- und Gruppeninformationen.
+  Benutzer- und Gruppeninformationen.
 
 * `/libs`
 
-    Bibliotheken und Definitionen, die zum Kern von AEM gehören. Die Unterordner in `/libs` repräsentieren die vordefinierten AEM-Funktionen wie Suche oder Replikation. Inhalte in `/libs` sollten nicht geändert werden, da dies die Funktionsweise von AEM beeinflusst. Spezielle Funktionen für Ihre Website sollten unter `/apps` entwickelt werden (siehe [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+   Bibliotheken und Definitionen, die zum Kern von AEM gehören. Die Unterordner in `/libs` repräsentieren die vordefinierten AEM-Funktionen wie Suche oder Replikation. Inhalte in `/libs` sollten nicht geändert werden, da dies die Funktionsweise von AEM beeinflusst. Spezielle Funktionen für Ihre Website sollten unter `/apps` entwickelt werden (siehe [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
-   Temporärer Arbeitsbereich.
+  Temporärer Arbeitsbereich.
 
 * `/var`
 
-    Dateien, die sich ändern und vom System aktualisiert werden; wie Audit-Logs, Statistiken, Event-Handling.
+   Dateien, die sich ändern und vom System aktualisiert werden; wie Audit-Logs, Statistiken, Event-Handling.
 
 ## Umgebungen {#environments}
 

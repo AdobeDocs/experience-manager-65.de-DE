@@ -1,7 +1,7 @@
 ---
 title: Single Sign-On und Zeitüberschreitungs-Handler
 seo-title: Single Sign On and timeout handlers
-description: Gehen Sie wie folgt vor, um einen Sitzungs-Timeout-Wert für AEM Forms festzulegen.
+description: So legen Sie den Wert für das Sitzungs-Timeout für AEM Forms Workspace fest.
 seo-description: How-to set the session timeout value for AEM Forms workspace.
 uuid: 17583fd5-6453-41d3-bb63-a639983fbea9
 contentOwner: robhagat
@@ -10,32 +10,32 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 exl-id: 4f824d80-f3f8-4010-9583-5a9ab1151a7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '189'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 40%
 
 ---
 
 # Single Sign-On und Zeitüberschreitungs-Handler {#single-sign-on-and-timeout-handlers}
 
-AEM Forms Workspace ist SSO-fähig. Wenn sich ein Benutzer bei einer AEM Forms-Anwendung wie Forms Manager, der PDF Generator-Benutzeroberfläche oder AEM Forms-Arbeitsbereich angemeldet hat und in derselben Browsersitzung auf AEM Forms-Arbeitsbereich zugreift, wird der Benutzer bei AEM Forms-Arbeitsbereich angemeldet und umgekehrt.
+AEM Forms Workspace ist SSO-aktiviert. Wenn sich ein Benutzer bei einer AEM Forms-Anwendung wie Forms Manager oder der PDF Generator-Benutzeroberfläche angemeldet hat und in derselben Browsersitzung auf AEM Forms Workspace zugreift, wird der Benutzer in AEM Forms Workspace angemeldet und umgekehrt.
 
-## Das Bearbeiten des Serverzeitlimits in AEM Forms bildet Arbeitsbereich {#handling-server-timeout-in-nbsp-aem-forms-workspace}
+## Umgang mit Server-Timeouts in AEM Forms Workspace {#handling-server-timeout-in-nbsp-aem-forms-workspace}
 
-Sitzungs-Timeouts für einen Benutzer können in der Administration Console konfiguriert werden.
+Sitzungs-Timeout für einen Benutzer kann in der Administration Console konfiguriert werden.
 
 Um den Timeout festzulegen, melden Sie sich bei `https://'[server]:[port]'/adminui` an, navigieren zu **Einstellungen > Benutzerverwaltung > Konfiguration > Erweiterte Systemattribute konfigurieren** und nehmen die gewünschten Einstellungen vor.
 
 In AEM Forms wird die Zeitüberschreitung im Arbeitsbereich wie folgt behandelt:
 
 * Die Sitzungsdauer für einen Benutzer ist in der Antwort auf den Aufruf `initialize` verfügbar, der die Benutzersitzung initialisiert.
-* Ein Popup-Fenster informiert den Benutzer 15 Sekunden im Voraus, dass die Sitzung gleich ablaufen wird.
+* Ein Popup-Dialogfeld benachrichtigt den Benutzer 15 Sekunden vor Ablauf der Sitzung über den bevorstehenden Ablauf der Sitzung.
 
-In diesem Popup-Dialog:
+In diesem Popup-Dialogfeld:
 
-* Klicken Sie auf „OK“, um die Benutzersitzung zu beenden.
-* Klicken Sie auf „Abbrechen“, um die Benutzersitzung neu zu initialisieren.
+* Klicken Sie auf OK , um die Benutzersitzung zu beenden.
+* Klicken Sie auf Abbrechen , um die Benutzersitzung erneut zu initialisieren.
 
 >[!NOTE]
 >

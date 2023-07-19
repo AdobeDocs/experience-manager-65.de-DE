@@ -11,39 +11,39 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: a547b2e24205c63284a0e77f2e7f5678ae24968b
-workflow-type: ht
-source-wordcount: '1657'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1659'
+ht-degree: 78%
 
 ---
 
 # SPA-Editor – Übersicht{#spa-editor-overview}
 
-Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA-Frameworks erstellen und Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die mit diesen Frameworks erstellt wurde.
+Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA Frameworks erstellen können und Autoren möchten Inhalte in AEM für eine Site, die mit solchen Frameworks erstellt wurde, nahtlos bearbeiten.
 
-Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. Auf dieser Seite finden Sie einen Überblick über die Unterstützung von SPA in AEM, die Funktionsweise des SPA-Editors und die Synchronisation des SPA-Frameworks und AEM.
+Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. Auf dieser Seite erhalten Sie einen Überblick darüber, wie SPA Support in AEM strukturiert ist, wie der SPA Editor funktioniert und wie das SPA Framework und AEM synchronisiert bleiben.
 
 >[!NOTE]
 >
->Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendering auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
+>Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
 ## Einführung {#introduction}
 
 Sites, die mit gängigen SPA-Frameworks wie React und Angular erstellt wurden, laden ihren Inhalt über dynamisches JSON und weisen nicht die HTML-Struktur auf, die für den Seiteneditor von AEM erforderlich ist, um Steuerelemente zur Bearbeitung platzieren zu können.
 
-Um die Bearbeitung von SPAs innerhalb von AEM zu ermöglichen, ist eine Zuordnung zwischen der JSON-Ausgabe der SPA und dem Inhaltsmodell im AEM-Repository erforderlich, damit Änderungen am Inhalt gespeichert werden können.
+Um die Bearbeitung von SPA in AEM zu aktivieren, ist eine Zuordnung zwischen der JSON-Ausgabe der SPA und dem Inhaltsmodell im AEM Repository erforderlich, um Änderungen am Inhalt zu speichern.
 
-Mit der SPA-Unterstützung wird in AEM ein JS-Thin Layer eingeführt. Dieses interagiert mit dem SPA-JS-Code, wenn es in den Seiten-Editor geladen wird, mit dem Ereignisse gesendet und der Speicherort für die Steuerelemente zur Bearbeitung aktiviert werden kann, um eine kontextbezogene Bearbeitung zu ermöglichen. Diese Funktion baut auf dem Content Services API Endpoint-Konzept auf, da die Inhalte aus der SPA über Content Services geladen werden müssen.
+SPA Unterstützung in AEM führt eine dünne JS-Ebene ein, die mit dem SPA JS-Code interagiert, wenn sie im Seiteneditor geladen wird, mit dem Ereignisse gesendet werden können und der Speicherort für die Bearbeitungssteuerelemente aktiviert werden kann, um eine kontextbezogene Bearbeitung zu ermöglichen. Diese Funktion baut auf dem Content Services API-Endpoint-Konzept auf, da die Inhalte der SPA über Content Services geladen werden müssen.
 
-Weitere Informationen zu SPAs in AEM finden Sie in den folgenden Dokumenten:
+Weitere Informationen zu SPA in AEM finden Sie in den folgenden Dokumenten:
 
-* [SPA-Blueprint](/help/sites-developing/spa-blueprint.md) für die technischen Anforderungen an SPAs
+* [SPA Blueprint](/help/sites-developing/spa-blueprint.md) für die technischen Anforderungen eines SPA
 * [Einstieg in die Verwendung von SPAs in AEM](/help/sites-developing/spa-getting-started-react.md) für eine schnelle Übersicht über eine einfache SPA
 
 ## Design {#design}
 
-Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordneten Komponenten nicht über die JSP- oder HTL-Datei bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten oder von Modellen wird als JSON-Datenstruktur von JCR abgerufen. Die SPA-Komponenten werden dann entsprechend dieser Struktur zur Seite hinzugefügt. Durch dieses Verhalten unterscheidet sich die anfängliche Hauptteilkomposition der Seitenkomponente von entsprechenden Kompositionen, bei denen es sich nicht um SPA-Komponenten handelt.
+Die Seitenkomponente für einen SPA stellt die HTML-Elemente seiner untergeordneten Komponenten nicht über die JSP- oder HTL-Datei bereit. Dieser Vorgang wird an das SPA-Framework delegiert. Die Darstellung der untergeordneten Komponenten oder von Modellen wird als JSON-Datenstruktur von JCR abgerufen. Die SPA Komponenten werden dann der Seite entsprechend dieser Struktur hinzugefügt. Durch dieses Verhalten wird die anfängliche Textkörperzusammensetzung der Seitenkomponente von SPA unterschieden.
 
 ### Seitenmodellverwaltung  {#page-model-management}
 
@@ -63,7 +63,7 @@ Für jede Ressource im exportierten Modell ordnet die SPA eine tatsächliche Kom
 
 ### Kommunikationsdatentyp {#communication-data-type}
 
-Wenn der Seite die Kategorie `cq.authoring.pagemodel.messaging` hinzugefügt wird, sendet sie eine Nachricht an den Seiteneditor, um den JSON-Kommunikationsdatentyp festzulegen. Wenn der Kommunikationsdatentyp auf JSON festgelegt ist, kommunizieren die GET-Anfragen mit den Endpunkten des Sling-Modells einer Komponente. Nach einer Aktualisierung im Seiteneditor wird die JSON-Repräsentation der aktualisierten Komponente an die PageModel-Bibliothek gesendet. Die PageModel-Bibliothek informiert dann die SPA über Aktualisierungen.
+Wenn der Seite die Kategorie `cq.authoring.pagemodel.messaging` hinzugefügt wird, sendet sie eine Nachricht an den Seiteneditor, um den JSON-Kommunikationsdatentyp festzulegen. Wenn der Kommunikationsdatentyp auf JSON festgelegt ist, kommunizieren die GET-Anfragen mit den Sling-Modell-Endpunkten einer Komponente. Nach einer Aktualisierung im Seiteneditor wird die JSON-Repräsentation der aktualisierten Komponente an die PageModel-Bibliothek gesendet. Die Seitenmodellbibliothek informiert dann über die SPA von Aktualisierungen.
 
 ![screen_shot_2018-08-20at143628](assets/screen_shot_2018-08-20at143628.png)
 
@@ -71,9 +71,9 @@ Wenn der Seite die Kategorie `cq.authoring.pagemodel.messaging` hinzugefügt wir
 
 Der Interaktionsfluss zwischen SPA und AEM lässt sich leichter verstehen, wenn der SPA-Editor als Vermittler zwischen den beiden betrachtet wird.
 
-* Die Kommunikation zwischen dem Seiten-Editor und der SPA erfolgt über JSON statt über HTML.
-* Der Seiten-Editor stellt die neueste Version des Seitenmodells für die SPA über die iFrame- und Messaging-API bereit.
-* Der Seitenmodell-Manager informiert den Editor, dass er zur Bearbeitung bereit ist, und übergibt das Seitenmodell als JSON-Struktur.
+* Die Kommunikation zwischen dem Seiteneditor und dem SPA erfolgt über JSON anstelle von HTML.
+* Der Seiteneditor stellt die neueste Version des Seitenmodells über die iFrame- und Messaging-API für die SPA bereit.
+* Der Seitenmodellmanager benachrichtigt den Editor, dass er zur Bearbeitung bereit ist, und übergibt das Seitenmodell als JSON-Struktur.
 * Der Editor verändert weder die DOM-Struktur der zu erstellenden Seite, noch greift er darauf zu, sondern stellt vielmehr das neueste Seitenmodell bereit.
 
 ![screen_shot_2018-08-20at144324](assets/screen_shot_2018-08-20at144324.png)
@@ -102,7 +102,6 @@ Unter Berücksichtigung der Schlüsselelemente des SPA-Editors erscheint der all
 >* In der Produktion (Veröffentlichung) wird der SPA-Editor nie geladen.
 >
 
-
 ### Client-Server-Workflow zur Seitenbearbeitung {#client-server-page-editing-workflow}
 
 Dies ist ein detaillierterer Überblick über die Interaktion zwischen Client und Server beim Bearbeiten einer SPA.
@@ -114,11 +113,11 @@ Dies ist ein detaillierterer Überblick über die Interaktion zwischen Client un
 1. Das Repository gibt die Ressourcen zurück.
 1. Der Sling Model Exporter gibt das Modell der Seite zurück.
 1. Die SPA instanziiert ihre Komponenten auf Grundlage des Seitenmodells.
-1. **6a** Der Inhalt teilt dem Editor mit, dass er für das Authoring bereit ist.
+1. **6a** Der Inhalt informiert den Editor darüber, dass er für die Bearbeitung bereit ist.
 
-   **6b** Der Seiten-Editor fordert die Konfigurationen für das Komponenten-Authoring an.
+   **6b** Der Seiteneditor fordert die Konfigurationen für die Komponentenbearbeitung an.
 
-   **6c** Der Seiten-Editor empfängt die Konfigurationen.
+   **6c** Der Seiteneditor erhält die Komponentenkonfigurationen.
 1. Wenn der Autor eine Komponente bearbeitet, sendet der Seiteneditor eine Änderungsanfrage an das standardmäßige POST-Servlet.
 1. Die Ressource wird im Repository aktualisiert.
 1. Die aktualisierte Ressource wird für das POST-Servlet bereitgestellt.
@@ -183,7 +182,7 @@ Zusätzliche benutzerdefinierte Selektoren können als Teil einer für das AEM S
 Wenn Sie den Editor einer Textkomponente verwenden möchten, die in der SPA erstellt wurde, ist eine zusätzliche Konfiguration erforderlich.
 
 1. Legen Sie ein Attribut (das beliebig sein kann) für das Container-Wrapper-Element fest, das die Text-HTML enthält. Im Falle des WKND-Journal-Beispielinhalts ist dies ein `<div>`-Element und der verwendete Selektor ist `data-rte-editelement`.
-1. Legen Sie die Konfiguration `editElementQuery` für die entsprechende AEM-Textkomponente `cq:InplaceEditingConfig` fest, die auf diesen Selektor verweist, z. B. `data-rte-editelement`. Dadurch weiß der Editor, welches HTML-Element den HTML-Text umschließt.
+1. Legen Sie die `editElementQuery`-Konfiguration für die entsprechende `cq:InplaceEditingConfig` der AEM-Textkomponente fest, die auf diesen Selektor verweist, z. B. `data-rte-editelement`. Dadurch weiß der Editor, welches HTML-Element den HTML-Text umschließt.
 
 Ein Beispiel dafür finden Sie im [WKND-Journal-Beispielinhalt](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files).
 

@@ -2,9 +2,9 @@
 title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '891'
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '895'
 ht-degree: 100%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 100%
 
 Um negative Auswirkungen auf die Leistung einzuschränken, werden bestimmte lang laufende und ressourcenintensive Vorgänge in Adobe Experience Manager asynchron verarbeitet. Die asynchrone Verarbeitung umfasst den Aufbau einer Warteschlange mit mehreren Aufträgen und schließlich deren serielle Ausführung gemäß der Verfügbarkeit von Systemressourcen.
 
-Zu diesen Vorgängen gehören u. a.:
+Zu diesen Vorgängen gehören:
 
 * Löschen vieler Assets
 * Verschieben vieler Assets oder Assets mit vielen Verweisen
@@ -42,11 +42,11 @@ Um den Status der asynchronen Vorgänge detailliert anzuzeigen, navigieren Sie z
 
    ![Status und Details asynchroner Vorgänge](assets/async-operation-status.png)
 
-   Den Fortschritt einzelner Vorgänge finden Sie als Wert in der Spalte **[!UICONTROL Status]**. Abhängig vom Fortschritt wird eine der folgenden Statusmeldungen angezeigt:
+   Den Fortschritt einzelner Vorgänge finden Sie als Wert in der Spalte **[!UICONTROL Status]**. Je nach Fortschritt wird einer der folgenden Status angezeigt:
 
    * **[!UICONTROL Aktiv]**: Der Vorgang wird verarbeitet
 
-   * **[!UICONTROL Erfolg]**: Der Vorgang wurde abgeschlossen
+   * **[!UICONTROL Erfolg]**: Der Vorgang ist abgeschlossen.
 
    * **[!UICONTROL Fehlschlag]** oder **[!UICONTROL Fehler]**: Der Vorgang konnte nicht bearbeitet werden.
 
@@ -101,7 +101,7 @@ Wenn die Anzahl der Assets oder der zu löschenden Ordner den Schwellenwert übe
 
    ![Schwellenwert zum Löschen von Assets](assets/async-delete-threshold.png)
 
-1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Z. B. Erfolg, fehlgeschlagen.
+1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 1. Speichern Sie die Änderungen.
 
 ### Konfigurieren von asynchronen Vorgängen zum Verschieben von Assets {#configuring-asynchronous-move-operations}
@@ -114,7 +114,7 @@ Wenn die Anzahl der zu verschiebenden Anlagen/Ordner oder Referenzen den Schwell
 
    ![Schwellenwert für das Verschieben von Assets](assets/async-move-threshold.png)
 
-1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Z. B. Erfolg, fehlgeschlagen.
+1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 1. Speichern Sie die Änderungen.
 
 ### Konfigurieren von asynchronen Seitenverschiebungsvorgängen {#configuring-asynchronous-page-move-operations}
@@ -127,14 +127,14 @@ Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenw
 
    ![Schwellenwert für Seitenverschiebungen](assets/async-page-move.png)
 
-1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Z. B. Erfolg, fehlgeschlagen.
+1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 1. Speichern Sie die Änderungen.
 
 ### Konfigurieren asynchroner MSM-Vorgänge {#configuring-asynchronous-msm-operations}
 
 1. Klicken Sie in der globalen Navigation auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
 1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Verarbeitung asynchroner Seitenverschiebeaufträge]**.
-1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Z. B. Erfolg, fehlgeschlagen.
+1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 
    ![Konfigurieren eines MSM](assets/async-msm.png)
 
@@ -147,5 +147,4 @@ Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenw
 >* [Konfigurieren von E-Mail in Experience Manager](/help/sites-administering/notification.md)
 >* [Importieren von Asset-Metadaten](/help/assets/metadata.md#import-metadata)
 >* [Exportieren von Asset-Metadaten](/help/assets/metadata.md#export-metadata)
->* [Verwenden von verbundenen Assets, um DAM-Assets aus Remote-Implementierungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md)
-
+>* [Verwenden Sie verbundene Assets, um DAM-Assets aus Remote-Bereitstellungen freizugeben](/help/assets/use-assets-across-connected-assets-instances.md).

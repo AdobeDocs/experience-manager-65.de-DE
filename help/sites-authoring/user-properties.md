@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '517'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '519'
+ht-degree: 76%
 
 ---
 
@@ -28,11 +28,11 @@ Beginnen Sie, indem Sie in der Kopfzeile auf die Option [Benutzer](/help/sites-a
 
 ## Benutzereinstellungen {#user-settings}
 
-Im Dialogfeld **Benutzereinstellungen** haben Sie Zugriff auf folgende Optionen:
+Die **Benutzer** Über das Dialogfeld &quot;Einstellungen&quot;haben Sie Zugriff auf:
 
 * Identität annehmen als
 
-   * Mit der Funktion [Stellvertretend agieren](/help/sites-administering/security.md#impersonating-another-user) kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
+   * Mit dem [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) -Funktion kann ein Benutzer im Namen eines anderen Benutzers arbeiten.
 
 * Profil
 
@@ -54,38 +54,38 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Sprache**
 
-   Hiermit wird die Sprache definiert, in der die Benutzeroberfläche der Autorenumgebung angezeigt werden soll. Wählen Sie die gewünschte Sprache aus der Liste der verfügbaren Sprachen aus.
+  Dadurch wird die Sprache definiert, die für die Benutzeroberfläche der Authoring-Umgebung verwendet werden soll. Wählen Sie in der Liste die gewünschte Sprache aus.
 
-   Diese Konfiguration wird ebenfalls für die klassische Benutzeroberfläche verwendet.
+  Diese Konfiguration wird auch für die klassische Benutzeroberfläche verwendet.
 
 * **Fensterverwaltung**
 
-   Hiermit wird das Verhalten oder das Öffnen von Fenstern definiert. Wählen Sie eine der folgenden beiden Optionen aus:
+  Dies definiert das Verhalten oder das Öffnen von Fenstern. Wählen Sie eine der folgenden beiden Optionen aus:
 
    * **Mehrere Fenster** (Standard)
 
       * Seiten werden in einem neuen Fenster geöffnet.
+
    * **Einfaches Fenster**
 
       * Seiten werden im aktuellen Fenster geöffnet.
 
-
 * **Desktop-Aktionen für Assets anzeigen**
 
-   Für diese Option ist das AEM-Desktop-Programm erforderlich.
+  Für diese Option ist das AEM-Desktop-Programm erforderlich.
 
 * **Anmerkungsfarbe**
 
-   Hiermit wird die Standardfarbe für Anmerkungen definiert.
+  Dadurch wird die Standardfarbe definiert, die beim Erstellen von Anmerkungen verwendet wird.
 
-   * Klicken Sie auf den Farbblock, um die Musterauswahl zur Festlegung einer Farbe zu öffnen.
+   * Klicken Sie auf den Farbblock, um die Musterauswahl zu öffnen und eine Farbe auszuwählen.
    * Alternativ dazu können Sie in das Feld den Hexcode für die gewünschte Farbe eingeben.
 
 * **Darstellung des relativen Datums**
 
-   Zur besseren Lesbarkeit rendert AEM Daten der letzten sieben Tage als relative Daten (z. B. „vor drei Tagen“) und ältere Daten als genaue Datumsangaben (z. B. 20. März 2017).
+  Zur besseren Lesbarkeit rendert AEM Daten der letzten sieben Tage als relative Datumsangaben (z. B. „vor drei Tagen“) und ältere Daten als genaue Datumsangaben (z. B. 20. März 2017).
 
-   Diese Option definiert, wie Daten im System angezeigt werden. Die folgenden Optionen sind verfügbar:
+  Diese Option definiert, wie Daten im System angezeigt werden. Die folgenden Optionen sind verfügbar:
 
    * **Immer exaktes Datum anzeigen**: Es wird immer das genaue Datum angezeigt (niemals ein relatives Datum).
    * **1 Tag**: Das relative Datum wird für Datumsangaben innerhalb eines Tages angezeigt; ansonsten wird das genaue Datum angegeben.
@@ -100,21 +100,21 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Tastaturbefehle aktivieren**
 
-   AEM unterstützt verschiedene Tastaturbefehle, die eine effizientere Bearbeitung ermöglichen.
+  AEM unterstützt verschiedene Tastaturbefehle, die eine effizientere Bearbeitung ermöglichen.
 
    * [Tastaturbefehle für die Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
 
-   Diese Option aktiviert Tastaturbefehle. Diese sind zwar standardmäßig aktiviert, können aber deaktiviert werden, etwa wenn für einen Benutzer bestimmte Anforderungen in Bezug auf die Barrierefreiheit bestehen.
+  Diese Option aktiviert Tastaturbefehle. Sie sind standardmäßig aktiviert, können aber deaktiviert werden, z. B. wenn ein Benutzer bestimmte Barrierefreiheitsanforderungen hat.
 
 * **Klassisches Authoring-Erlebnis verwenden**
 
-   Diese Option ermöglicht eine auf der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) basierende Seitenbearbeitung. Im Normalfall wird die Standard-Benutzeroberfläche verwendet.
+  Diese Option ermöglicht eine auf der [klassischen Benutzeroberfläche](/help/sites-classic-ui-authoring/home.md) basierende Seitenbearbeitung. Im Normalfall wird die Standard-Benutzeroberfläche verwendet.
 
 * **Asset-Homepage aktivieren**
 
-   Diese Option ist nur verfügbar, wenn der Systemadministrator die Asset-Homepage-Nutzung für das gesamte Unternehmen aktiviert hat.
+  Diese Option ist nur verfügbar, wenn der Systemadministrator die Asset-Homepage-Nutzung für das gesamte Unternehmen aktiviert hat.
 
 * **Stock-Konfiguration**
 
-   Mit dieser Option können Sie die bevorzugte Adobe Stock-Konfiguration angeben. Sie ist nur verfügbar, wenn Ihr Systemadministrator die [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) aktiviert hat.
+  Mit dieser Option können Sie die bevorzugte Adobe Stock-Konfiguration angeben. Sie ist nur verfügbar, wenn Ihr Systemadministrator die [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) aktiviert hat.

@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Asset Management
 role: User, Architect, Admin
 exl-id: d167cf97-6829-45a7-ba46-2239d530b060
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
-workflow-type: ht
-source-wordcount: '987'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 84%
 
 ---
 
 # Konfigurieren der AEM Assets-Integration mit Experience Cloud {#configure-aem-assets-integration-with-experience-cloud-and-creative-cloud}
 
-Wenn Sie Adobe Experience Cloud-Kunde sind, können Sie Ihre Assets innerhalb von Adobe Experience Manager Assets mit Adobe Creative Cloud synchronisieren und umgekehrt. Sie können Ihre Assets auch mit Experience Cloud synchronisieren und umgekehrt. Sie können diese Synchronisierung durch [!DNL Adobe I/O] einrichten. Der Name [!DNL Adobe Marketing Cloud] wurde in [!DNL Adobe Experience Cloud] geändert.
+Wenn Sie Adobe Experience Cloud-Kunde sind, können Sie Ihre Assets in Adobe Experience Manager Assets mit Adobe Creative Cloud synchronisieren und umgekehrt. Sie können Ihre Assets auch mit Experience Cloud und umgekehrt synchronisieren. Sie können diese Synchronisierung durch [!DNL Adobe I/O] einrichten. Der Name [!DNL Adobe Marketing Cloud] wurde in [!DNL Adobe Experience Cloud] geändert.
 
 Der Workflow zur Einrichtung dieser Integration ist:
 
@@ -38,7 +38,7 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 ## Erstellen eines Programms {#create-an-application}
 
-1. Greifen Sie auf die Adobe Developer Gateway-Schnittstelle zu, indem Sie sich unter [https://legacy-oauth.cloud.adobe.io](https://legacy-oauth.cloud.adobe.io/) einloggen.
+1. Greifen Sie über die Anmeldung bei der Adobe Developer Gateway-Oberfläche auf [https://legacy-oauth.cloud.adobe.io](https://legacy-oauth.cloud.adobe.io/).
 
    >[!NOTE]
    >
@@ -57,11 +57,11 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
    ![Benachrichtigung über die erfolgreiche Erstellung der Anwendung, die AEM Assets mit Creative Cloud integrieren soll](assets/chlimage_1-50.png)
 
-1. Kopieren Sie die **[!UICONTROL Anwendungs-ID]**, die für die neue Anwendung generiert wird.
+1. Kopieren Sie die **[!UICONTROL Bewerbungs-ID]** wird für die neue Anwendung generiert.
 
    >[!CAUTION]
    >
-   >Achten Sie darauf, dass Sie nicht versehentlich das **[!UICONTROL Anwendungsgeheimnis]** anstelle der **[!UICONTROL Anwendungs-ID]** kopieren.
+   >Vergewissern Sie sich, dass Sie die **[!UICONTROL Anwendungsgeheimnis]** anstelle der **[!UICONTROL Bewerbungs-ID]**.
 
 ## Hinzufügen einer neuen Konfiguration zu Experience Cloud {#add-a-new-configuration}
 
@@ -91,7 +91,7 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 1. Klicken Sie auf der Konfigurationsseite auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**, um den für Ihre Instanz generierten öffentlichen Schlüssel anzuzeigen. Klicken Sie alternativ dazu auf **[!UICONTROL Öffentlichen Schlüssel für OAuth Gateway herunterladen]**, um die Datei mit dem öffentlichen Schlüssel herunterzuladen. Öffnen Sie dann die Datei, um den öffentlichen Schlüssel anzuzeigen.
 
-## Aktivieren der Synchronisierung {#enable-synchronization}
+## Synchronisierung aktivieren {#enable-synchronization}
 
 1. Zeigen Sie den öffentlichen Schlüssel mit einer der folgenden Methoden an, die im letzten Schritt des Verfahrens [Hinzufügen einer neuen Konfiguration zu Experience Cloud](#add-a-new-configuration) erwähnt werden. Klicken Sie auf **[!UICONTROL Öffentlichen Schlüssel anzeigen]**.
 
@@ -105,7 +105,7 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 
 1. Klicken Sie auf das AEM-Logo in der Benutzeroberfläche in Ihrer lokalen AEM Assets-Instanz und gehen Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Replikation]**, um die für die Synchronisierung erstellten Replikationsprofile zu suchen.
 1. Klicken Sie auf der Seite **[!UICONTROL Replikation]** auf **[!UICONTROL Agenten auf Autor]**.
-1. Klicken Sie in der Liste der Profile auf das Standardreplikationsprofil zu Ihrer Organisation, um es zu öffnen.
+1. Klicken Sie in der Profilliste auf das standardmäßige Replikationsprofil für Ihr Unternehmen, um es zu öffnen.
 1. Klicken Sie im Dialogfeld auf **[!UICONTROL Verbindung testen]**.
 
    ![Testen der Verbindung und Festlegen des Standardreplikationsprofils zu Ihrer Organisation](assets/chlimage_1-54.png)
@@ -130,7 +130,7 @@ Am Backend authentifiziert der AEM-Server Ihr Profil gegenüber dem Gateway und 
 ## Austauschen von Assets zwischen AEM Assets und Experience Cloud {#exchange-assets-between-aem-and-experience-cloud}
 
 1. Melden Sie sich bei AEM Assets an.
-1. Erstellen Sie in der Assets-Konsole einen Ordner und laden Sie einige Assets dort hoch. Erstellen Sie zum Beispiel einen Ordner **mc-demo** und laden Sie ein Asset dort hoch.
+1. Erstellen Sie in der Konsole &quot;Assets&quot;einen Ordner und laden Sie einige Assets hoch. Erstellen Sie beispielsweise einen Ordner **mc-demo** und laden Sie ein Asset hoch.
 1. Wählen Sie den Ordner aus und klicken Sie dann auf **Freigeben.** ![assets_share](assets/do-not-localize/assets_share.png).
 1. Wählen Sie im Menü **[!UICONTROL Adobe Experience Cloud]** aus und klicken Sie dann auf **[!UICONTROL Freigeben]**. Eine Meldung benachrichtigt Sie, dass der Ordner für Experience Cloud freigegeben wird.
 
@@ -165,10 +165,9 @@ AEM Assets lets you share folders containing assets with Adobe Creative Cloud us
 
 The AEM Assets-Marketing Cloud synchronization is designed in a way that the user machine instance from where the asset is uploaded retains the right to modify the asset. Only these changes are propagated to the other instance.
 
-For example, if an asset is uploaded from an AEM Assets (on premises) instance, the changes to the asset from this instance are propagated to the Marketing Cloud instance. However, the changes done from the Marketing Cloud instance to the same asset aren’t propagated to the AEM instance and vice versa for asset uploaded from Marketing Cloud.
+For example, if an asset is uploaded from an AEM Assets (on premises) instance, the changes to the asset from this instance are propagated to the Marketing Cloud instance. However, the changes done from the Marketing Cloud instance to the same asset aren’t propagated to the AEM instance and conversely for asset uploaded from Marketing Cloud.
 -->
 
 >[!MORELIKETHIS]
 >
 >* [Best Practices für die Integration von Assets und Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)
-

@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '313'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 94%
 
 ---
 
@@ -30,7 +30,6 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 >* Windows: Strg + Klick auf die gewünschten Komponenten.
 >* Mac: Klicken Sie bei gedrückter Befehlstaste auf die erforderlichen Komponenten.
 >
-
 
 ## Tastaturbefehle für die Bearbeitung {#editing-keyboard-shortcuts}
 
@@ -64,17 +63,17 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-C</code></strong></td>
-   <td>Kopieren der ausgewählten Absätze.</td>
+   <td>Ausgewählte Absätze kopieren</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Ausschneiden der ausgewählten Absätze.<strong><br /> Hinweis:</strong> Der ausgeschnittene Absatz wird weiter angezeigt, bis er an einer anderen Stelle eingefügt wurde.</td>
+   <td>Ausgewählte Absätze ausschneiden<strong><br /> Hinweis:</strong> Der ausgeschnittene Absatz wird weiter angezeigt, bis er an einer anderen Stelle eingefügt wurde.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-V</code></strong></td>
-   <td>Einfügen von Absätzen aus der Zwischenablage.</td>
+   <td>Fügen Sie Absätze aus der Zwischenablage ein.</td>
   </tr>
   <tr>
    <td> </td>
@@ -84,12 +83,12 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
   <tr>
    <td> </td>
    <td><strong><code>Super-Del (fn-delete)</code></strong></td>
-   <td>Löschen ausgewählter Absätze.</td>
+   <td>Ausgewählte Absätze löschen</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Cmd-Backspace</code></strong></td>
-   <td>Löschen ausgewählter Absätze.</td>
+   <td>Ausgewählte Absätze löschen</td>
   </tr>
   <tr>
    <td> </td>

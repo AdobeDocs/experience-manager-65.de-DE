@@ -2,9 +2,9 @@
 title: Erstellen und Organisieren von Seiten mit AEM
 description: So erstellen und verwalten Sie Seiten mit AEM
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '2525'
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '2526'
 ht-degree: 100%
 
 ---
@@ -37,10 +37,10 @@ Die Struktur einer Website kann als Baumstruktur gesehen werden, die die Inhalts
 Im Folgenden sehen Sie ein Beispiel von der Website We.Retail, auf der eine Seite mit Cargo-Shorts (`desert-sky-shorts`) aufgerufen wird:
 
 * Authoring-Umgebung
-   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Publishing-Umgebung
-   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Je nach Konfiguration Ihrer Instanz kann die Verwendung von `/content` in der Publishing-Umgebung optional sein.
 
@@ -102,7 +102,7 @@ Der **Seitentitel** und der **Seitenname** können separat erstellt werden, sind
 >
 >Beim Definieren eines Seitennamens ist es sinnvoll, den Seitennamen so kurz wie möglich zu halten, aber so ausdruckstark und erinnerungsstark wie möglich, um ihn für den Leser verständlich zu machen. Weitere Informationen zum `title`-Element finden Sie im [W3C-Styleguide](https://www.w3.org/Provider/Style/TITLE.html).
 >
->Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technisch Gründe für die Verwendung von kurzen Seitennamen bestehen.
+>Denken Sie auch daran, dass einige Browser (z. B. ältere Versionen von IE) nur URLs bis zu einer bestimmten Länge akzeptieren, sodass auch technische Gründe für die Verwendung von kurzen Seitennamen bestehen.
 
 Beim Erstellen einer neuen Seite [validiert AEM den Seitennamen entsprechend den AEM- und JCR-Konventionen](/help/sites-developing/naming-conventions.md).
 
@@ -209,12 +209,14 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
    * **Titel**:
 
       * Dieser wird den Benutzenden angezeigt und ist obligatorisch.
+
    * **Name**:
 
       * Mit diesem Wert wird der URI generiert. Wenn kein Name angegeben ist, wird der Name vom Titel abgeleitet.
       * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, [validiert AEM den Namen entsprechend den Konventionen von AEM und JCR](/help/sites-developing/naming-conventions.md).
 
       * Die **Eingabe von ungültigen Zeichen** im Feld **Name** ist nicht zulässig. Wenn AEM ungültige Zeichen erkennt, wird das Feld markiert und eine erklärende Meldung angezeigt, die angibt, welche Zeichen entfernt/ersetzt werden müssen.
+
    >[!NOTE]
    >
    >Siehe [Seitenbenennungskonventionen](#page-naming-conventions).
@@ -341,6 +343,7 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
       * Wählen Sie das Ziel für die Seite aus, indem Sie auf die Miniatur des Ziels klicken.
       * Klicken Sie auf **Weiter**, um fortzufahren.
+
    * Auf **Zurück** klicken, um zur Angabe des Seitennamens zurückzukehren.
 
    >[!NOTE]
@@ -386,7 +389,7 @@ Liegt die Anzahl der betroffenen Seiten jedoch über einer definierten Grenze, w
       * **Jetzt** startet die Ausführung des asynchronen Auftrags sofort.
       * **Später** erlaubt es dem Benutzer zu definieren, wann der asynchrone Auftrag starten wird.
 
-         ![Asynchrone Seitenverschiebung](assets/asynchronous-page-move.png)
+        ![Asynchrone Seitenverschiebung](assets/asynchronous-page-move.png)
 
 Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträge**](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** überprüft werden.
 
@@ -441,7 +444,6 @@ Sie können Ordner erstellen, um Ihre Dateien und Seiten zu organisieren.
 >* Für einen Ordner können folgende Standardaktionen ausgeführt werden: Verschieben, Kopieren, Einfügen, Löschen, Veröffentlichen, Rückgängigmachen der Veröffentlichung und Anzeigen/Bearbeiten von Eigenschaften.
 >* Ordner sind in einer Live Copy nicht als Auswahl verfügbar.
 >
-
 
 1. Öffnen Sie die **Sites**-Konsole und navigieren Sie zum gewünschten Speicherort.
 1. Um die Optionsliste zu öffnen, wählen Sie **Erstellen** in der Symbolleiste aus.

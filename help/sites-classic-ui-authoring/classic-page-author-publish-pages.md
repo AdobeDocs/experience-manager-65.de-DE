@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1036'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1037'
+ht-degree: 97%
 
 ---
 
@@ -35,9 +35,8 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt 
 >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
 >
 >* **Replizieren/Replikation**
->  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, z. B. beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
+>  Dies sind die technischen Begriffe, die die Verschiebung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere beschreiben, z. B. bei der Veröffentlichung oder umgekehrten Replizierung von Benutzerkommentaren.
 >
-
 
 >[!NOTE]
 >
@@ -46,7 +45,6 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt 
 >* wird ein Workflow ausgelöst, der die entsprechende Person über Ihre Veröffentlichungsanfrage informiert.
 >* wird (für einen kurzen Zeitraum) eine Meldung angezeigt, um Sie darüber zu informieren.
 >
-
 
 ## Veröffentlichen einer Seite {#publishing-a-page}
 
@@ -73,6 +71,8 @@ Sie können Seiten in der Websites-Konsole aktivieren. Nachdem Sie eine Seite ge
    >[!NOTE]
    >
    >Gegebenenfalls werden Sie von AEM aufgefordert, alle Assets zu aktivieren bzw. zu reaktivieren, die mit der Seite verknüpft sind. Sie können die Aktivierung der Assets steuern, indem Sie die zugehörigen Kontrollkästchen markieren bzw. die Markierung aufheben.
+   >
+   >
 
 1. Gegebenenfalls werden Sie von AEM aufgefordert, alle Assets zu aktivieren bzw. zu reaktivieren, die mit der Seite verknüpft sind. Sie können die Aktivierung der Assets steuern, indem Sie die zugehörigen Kontrollkästchen markieren bzw. die Markierung aufheben.
 

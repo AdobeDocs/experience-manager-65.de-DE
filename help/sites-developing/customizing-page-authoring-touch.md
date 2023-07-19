@@ -1,7 +1,7 @@
 ---
 title: Anpassung des Seiten-Authorings
 seo-title: Customizing Page Authoring
-description: AEM bietet verschiedene Möglichkeiten zum Anpassen der Funktionsweise des Seiten-Authorings.
+description: AEM bietet verschiedene Mechanismen, mit denen Sie die Seitenbearbeitungsfunktionen anpassen können
 seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
 uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
 contentOwner: User
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: ht
-source-wordcount: '1354'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1357'
+ht-degree: 70%
 
 ---
 
@@ -21,37 +21,36 @@ ht-degree: 100%
 
 >[!CAUTION]
 >
->In diesem Dokument wird beschrieben, wie Sie das Seiten-Authoring in der modernen Touch-optimierten Benutzeroberfläche anpassen. Es gilt nicht für die klassische Benutzeroberfläche.
+>In diesem Dokument wird beschrieben, wie Sie die Seitenbearbeitung in der modernen, Touch-optimierten Benutzeroberfläche anpassen. Es gilt nicht für die klassische Benutzeroberfläche.
 
-AEM bietet verschiedene Möglichkeiten zum Anpassen der Funktionsweise des Seiten-Authorings (und der [Konsolen](/help/sites-developing/customizing-consoles-touch.md)) Ihrer Authoring-Instanz.
+AEM bietet verschiedene Mechanismen, mit denen Sie die Seitenbearbeitungsfunktion (und die [Konsolen](/help/sites-developing/customizing-consoles-touch.md)) Ihrer Authoring-Instanz.
 
 * Clientbibliotheken
 
-   Mit Clientbibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Bei der Anpassung können Sie unter `/apps.` Ihre eigene Clientbibliothek erstellen. Die neue Clientbibliothek muss:
+  Mit Clientbibliotheken können Sie die Standardimplementierung um neue Funktionen erweitern und gleichzeitig Standardfunktionen, -objekte und -methoden wiederverwenden. Bei der Anpassung können Sie unter `/apps.` Ihre eigene Clientbibliothek erstellen. Die neue Clientbibliothek muss:
 
    * die Authoring-clientlib `cq.authoring.editor.sites.page` als Abhängigkeit aufweisen
    * der entsprechenden `cq.authoring.editor.sites.page.hook`-Kategorie angehören
 
 * Überlagerungen
 
-   Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die [Sling-Ressourcenzusammenführung](/help/sites-developing/sling-resource-merger.md) das Vererben zulässt.
+  Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die [Sling-Ressourcenzusammenführung](/help/sites-developing/sling-resource-merger.md) das Vererben zulässt.
 
 >[!NOTE]
 >
->Weitere Informationen finden Sie in der [JS-Dokumentation](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
+>Weitere Informationen finden Sie unter [JS-Dokumentationssatz](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
 
-Diese Funktionen können auf verschiedene Arten verwendet werden, um die Seiten-Authoring-Funktionen in Ihrer AEM-Instanz zu erweitern. Unten behandeln wir allgemein eine Auswahl von Möglichkeiten.
+Diese können auf viele Arten verwendet werden, um die Seitenbearbeitungsfunktion in Ihrer AEM-Instanz zu erweitern. Eine Auswahl wird im Folgenden (auf hoher Ebene) behandelt.
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter:
 >
->* Verwenden und Erstellen von [Clientbibliotheken](/help/sites-developing/clientlibs.md).
->* Verwenden und Erstellen von [Überlagerungen](/help/sites-developing/overlays.md).
+>* Verwenden und Erstellen [clientlibs](/help/sites-developing/clientlibs.md).
+>* Verwenden und Erstellen [Overlays](/help/sites-developing/overlays.md).
 >* [Granite](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Struktur der Touch-optimierten Benutzeroberfläche von AEM](/help/sites-developing/touch-ui-structure.md) für Details zu den strukturellen Bereichen, die beim Seiten-Authoring verwendet werden.
 >
-
 
 
 >[!CAUTION]
@@ -65,14 +64,13 @@ Diese Funktionen können auf verschiedene Arten verwendet werden, um die Seiten-
 >1. Erstellen Sie das erforderliche Element (d. h., wie unter `/libs`) unter `/apps` neu.
 >1. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
-
 ## Neue Ebene hinzufügen (Modus) {#add-new-layer-mode}
 
-Wenn Sie eine Seite bearbeiten, gibt es verschiedene verfügbare [Modi](/help/sites-authoring/author-environment-tools.md#page-modes). Diese Modi werden mithilfe von [Ebenen](/help/sites-developing/touch-ui-structure.md#layer) implementiert. Sie ermöglichen Zugriff auf verschiedene Funktionen für denselben Seiteninhalt. Die Standardebenen sind: Bearbeiten, Vorschau, Anmerken, Entwickler und Targeting.
+Beim Bearbeiten einer Seite gibt es verschiedene [Modi](/help/sites-authoring/author-environment-tools.md#page-modes) verfügbar. Diese Modi werden mithilfe von [Ebenen](/help/sites-developing/touch-ui-structure.md#layer). Diese ermöglichen den Zugriff auf verschiedene Funktionstypen für denselben Seiteninhalt. Die Standardschichten sind: Bearbeiten, Vorschau, Anmerkungen, Entwickler und Targeting.
 
 ### Ebenenbeispiel: Live Copy-Status {#layer-example-live-copy-status}
 
-Eine Standard-AEM-Instanz stellt die MSM-Ebene bereit. Diese Ebene greift auf Daten für [Multi-Site-Management](/help/sites-administering/msm.md) zu und hebt sie in der Ebene hervor.
+Eine standardmäßige AEM-Instanz stellt die MSM-Ebene bereit. Auf Daten im Zusammenhang mit [Multi-Site-Management](/help/sites-administering/msm.md) und hebt sie in der Ebene hervor.
 
 Um sie im Einsatz zu sehen, bearbeiten Sie eine beliebige [We.Retail-Sprachkopie](/help/sites-developing/we-retail-globalized-site-structure.md)-Seite (oder eine beliebige andere Live Copy-Seite) und wählen Sie den Modus **Live Copy-Status** aus.
 
@@ -82,7 +80,7 @@ Sie finden die MSM-Ebenendefinition (als Referenz) in:
 
 ### Codebeispiel {#code-sample}
 
-Dies ist ein Beispielpaket, das die Erstellung einer neuen Ebene (Modus) zeigt. Hier ist es eine neue Ebene zur MSM-Ansicht.
+Dies ist ein Beispielpaket, das zeigt, wie eine neue Ebene (Modus) erstellt wird, die eine neue Ebene für die MSM-Ansicht ist.
 
 CODE AUF GITHUB
 
@@ -91,9 +89,9 @@ Den Code dieser Seite finden Sie auf GitHub.
 * [Öffnen Sie das Projekt aem-authoring-new-layer-mode in GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-new-layer-mode/archive/master.zip) herunter.
 
-## Hinzufügen einer neuen Auswahl-Kategorie zum Asset-Browser {#add-new-selection-category-to-asset-browser}
+## Neue Auswahlkategorie zum Asset-Browser hinzufügen {#add-new-selection-category-to-asset-browser}
 
-Der Asset-Browser zeigt Assets verschiedener Arten und Kategorien (z. B. Bilder, Dokumente usw.). Die Assets können auch anhand dieser Asset-Kategorien gefiltert werden.
+Der Asset-Browser zeigt Assets verschiedener Typen/Kategorien an (z. B. Bild, Dokumente usw.). Die Assets können auch anhand dieser Asset-Kategorien gefiltert werden.
 
 ### Codebeispiel {#code-sample-1}
 
@@ -106,11 +104,11 @@ Den Code dieser Seite finden Sie auf GitHub.
 * [Öffnen Sie das Projekt aem-authoring-extension-assetfinder-flickr in GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-assetfinder-flickr/archive/master.zip) herunter.
 
-## Filtern von Ressourcen {#filtering-resources}
+## Ressourcen filtern {#filtering-resources}
 
-Beim Authoring von Seiten muss der Benutzer oft aus verschiedenen Ressourcen (z. B. Seiten, Komponenten, Assets usw.) auswählen. Dabei kann beispielsweise eine Liste verwendet werden, aus der der Autor ein Element auswählen muss.
+Beim Erstellen von Seiten muss der Benutzer häufig aus Ressourcen auswählen (z. B. Seiten, Komponenten, Assets usw.). Dies kann in Form einer Liste erfolgen, aus der der Autor beispielsweise ein Element auswählen muss.
 
-Um die Größe der Liste (auf die relevanten Einsatzszenarios) zu beschränken, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Wenn z. B. der Benutzer durch die [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)-[Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)-Komponente den Pfad zu einer bestimmten Ressource auswählen kann, können die gezeigten Pfade auf folgende Art gefiltert werden:
+Um die Liste in einer angemessenen Größe und auch für den Anwendungsfall relevant zu halten, kann ein Filter in Form eines benutzerdefinierten Prädikats implementiert werden. Wenn z. B. der Benutzer durch die [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html)-[Granite](/help/sites-developing/touch-ui-concepts.md#granite-ui)-Komponente den Pfad zu einer bestimmten Ressource auswählen kann, können die gezeigten Pfade auf folgende Art gefiltert werden:
 
 * Implementieren Sie das benutzerdefinierte Prädikat, indem Sie die Schnittstelle [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html) implementieren.
 * Geben Sie einen Namen für die Eigenschaft an und verwenden Sie diesen Namen, wenn Sie `pathbrowser` verwenden.
@@ -121,11 +119,11 @@ Weitere Details zum Erstellen einer benutzerdefinierten Eigenschaft finden Sie i
 >
 >Die Implementierung einer benutzerdefinierten Eigenschaft durch die Implementierung der Schnittstelle `com.day.cq.commons.predicate.AbstractNodePredicate` funktioniert auch in der klassischen Benutzeroberfläche.
 >
->In diesem [Knowledge Base-Artikel](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) finden Sie ein Beispiel für die Implementierung einer benutzerdefinierten Eigenschaft in der klassischen Benutzeroberfläche.
+>Siehe [dieser Knowledgebase-Artikel](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) ein Beispiel für die Implementierung eines benutzerdefinierten Prädikats in der klassischen Benutzeroberfläche.
 
-## Hinzufügen neuer Aktionen zu Komponenten-Symbolleisten {#add-new-action-to-a-component-toolbar}
+## Hinzufügen einer neuen Aktion zu einer Komponenten-Symbolleiste {#add-new-action-to-a-component-toolbar}
 
-Jede Komponente hat (in der Regel) eine Symbolleiste, die Zugriff auf eine Reihe von Aktionen bietet, die mit dieser Komponente durchgeführt werden können.
+Jede Komponente verfügt (in der Regel) über eine Symbolleiste, die Zugriff auf eine Reihe von Aktionen bietet, die für diese Komponente durchgeführt werden können.
 
 ### Codebeispiel {#code-sample-2}
 
@@ -138,9 +136,9 @@ Den Code dieser Seite finden Sie auf GitHub.
 * [Öffnen Sie das Projekt aem-authoring-extension-toolbar-screenshot in GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip) herunter.
 
-## Hinzufügen eines neuen Editors für Bearbeitung im Kontext {#add-new-in-place-editor}
+## Neuen Editor für Bearbeitung im Kontext hinzufügen {#add-new-in-place-editor}
 
-### Standardmäßiger Editor für Bearbeitung im Kontext {#standard-in-place-editor}
+### Standard-Editor für Bearbeitung im Kontext {#standard-in-place-editor}
 
 Bei der Standardinstallation von AEM:
 
@@ -148,18 +146,18 @@ Bei der Standardinstallation von AEM:
 
    Enthält Definitionen der verschiedenen verfügbaren Editoren.
 
-1. Es gibt eine Verknüpfung zwischen dem Editor und den einzelnen Ressourcenarten (wie Komponenten), die ihn verwenden können:
+1. Es besteht eine Verbindung zwischen dem Editor und jedem Ressourcentyp (wie in der Komponente), der ihn verwenden kann:
 
    * `cq:inplaceEditing`
 
-      Beispiel:
+     Beispiel:
 
       * `/libs/foundation/components/text/cq:editConfig`
       * `/libs/foundation/components/image/cq:editConfig`
 
          * property: `editorType`
 
-            Definiert die Art des Inline-Editors, der verwendet wird, wenn die Bearbeitung im Kontext für diese Komponente ausgelöst wird, z. B. `text`, `textimage`, `image`, `title`.
+           Definiert den Typ des Inline-Editors, der verwendet wird, wenn die Bearbeitung im Kontext für diese Komponente ausgelöst wird; Beispiel: `text`, `textimage`, `image`, `title`.
 
 1. Weitere Einstellungen des Editors können mit einem `config`-Knoten, der Konfigurationen enthält, sowie einem weiteren `plugin`-Knoten mit notwendigen Plug-in-Konfigurationsdetails konfiguriert werden.
 
@@ -207,7 +205,7 @@ So erstellen Sie einen neuen Editor für Bearbeitung im Kontext (innerhalb Ihrer
 
    * `editor.register`
 
-1. Geben Sie die Verknüpfung zwischen dem Editor und jedem Ressourcentyp an (wie in der Komponente), der ihn verwenden kann.
+1. Stellen Sie die Verbindung zwischen dem Editor und jedem Ressourcentyp (wie in der Komponente) bereit, der ihn verwenden kann.
 
 #### Codebeispiel zum Erstellen eines neuen Editors für Bearbeitung im Kontext {#code-sample-for-creating-a-new-in-place-editor}
 
@@ -226,7 +224,7 @@ Es ist möglich, eine Komponente so zu konfigurieren, dass sie über mehrere Edi
 
 ## Hinzufügen einer neuen Seitenaktion {#add-a-new-page-action}
 
-So fügen Sie eine neue Aktion zur Seitensymbolleiste hinzu, z. B. eine Aktion **Zurück zu Sites** (Konsole).
+So fügen Sie der Seitensymbolleiste eine neue Seitenaktion hinzu, z. B. eine **Zurück zu Sites** Aktion (Konsole).
 
 ### Codebeispiel {#code-sample-3}
 

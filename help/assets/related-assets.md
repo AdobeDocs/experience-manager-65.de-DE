@@ -5,16 +5,16 @@ contentOwner: AG
 role: User
 feature: Collaboration,Asset Management
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '632'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '631'
+ht-degree: 77%
 
 ---
 
 # Verknüpfte Assets {#related-assets}
 
-Mit [!DNL Adobe Experience Manager Assets] können Sie Assets manuell entsprechend den Anforderungen Ihres Unternehmens verknüpfen. Verwenden Sie hierfür die Funktion „Verknüpfte Assets“. Beispielsweise können Sie einem Asset oder einem Bild/Video mit einer Lizenzdatei zu einem ähnlichen Thema verknüpfen. Sie können Assets verknüpfen, die bestimmte Attribute gemeinsam haben. Mit der Funktion können Sie außerdem Quellbeziehungen/abgeleitete Beziehungen zwischen Assets erstellen. Beispielsweise können Sie PDF-Dateien, die aus einer INDD-Datei generiert wurden, mit der INDD-Quelldatei verknüpfen.
+Mit [!DNL Adobe Experience Manager Assets] können Sie Assets manuell entsprechend den Anforderungen Ihres Unternehmens verknüpfen. Verwenden Sie hierfür die Funktion „Verknüpfte Assets“. Beispielsweise können Sie einem Asset oder einem Bild/Video mit einer Lizenzdatei zu einem ähnlichen Thema verknüpfen. Sie können Assets verknüpfen, die bestimmte Attribute gemeinsam haben. Sie können die Funktion auch verwenden, um Quell-/abgeleitete Beziehungen zwischen Assets zu erstellen. Beispielsweise können Sie PDF-Dateien, die aus einer INDD-Datei generiert wurden, mit der INDD-Quelldatei verknüpfen.
 
 Mit dieser Funktion können Sie eine PDF- oder JPG-Datei mit niedriger Auflösung für Anbieter oder Agenturen freigeben und die hochauflösende INDD-Datei nur auf Anfrage verfügbar machen.
 
@@ -30,7 +30,7 @@ Mit dieser Funktion können Sie eine PDF- oder JPG-Datei mit niedriger Auflösun
 
    *Abbildung: [!DNL Assets] Seite [!UICONTROL Eigenschaften], um Assets zu verknüpfen.*
 
-   Wählen Sie alternativ das gewünschte Asset in der Liste aus.
+   Wählen Sie alternativ das gewünschte Asset in der Listenansicht aus.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
@@ -41,11 +41,11 @@ Mit dieser Funktion können Sie eine PDF- oder JPG-Datei mit niedriger Auflösun
 1. Um das ausgewählte Asset mit einem anderen Asset zu verknüpfen, klicken Sie in der Symbolleiste auf **[!UICONTROL Verknüpfen]** ![Assets verknüpfen](assets/do-not-localize/link-relate.png).
 1. Führen Sie einen der folgenden Schritte aus:
 
-   * Um die Quelldatei des Elements zuzuordnen, wählen Sie **[!UICONTROL Quelle]** aus der Liste aus.
+   * Um die Quelldatei für das Asset zuzuordnen, wählen Sie **[!UICONTROL Quelle]** aus der Liste.
    * Um eine abgeleitete Datei zuzuordnen, wählen Sie **[!UICONTROL Abgeleitet]** aus der Liste aus.
-   * Um eine Zweiwege-Beziehung zwischen den Assets zu erstellen, wählen Sie **[!UICONTROL Andere]** aus der Liste aus.
+   * Um eine bidirektionale Beziehung zwischen den Assets zu erstellen, wählen Sie **[!UICONTROL sonstige]** aus der Liste.
 
-1. Navigieren Sie im Bildschirm **[!UICONTROL Assets auswählen]** zum Speicherort des Elements, das Sie zuordnen möchten, und wählen Sie es aus.
+1. Aus dem **[!UICONTROL Asset auswählen]** navigieren Sie zum Speicherort des Assets, das Sie zuordnen möchten, und wählen Sie es aus.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
@@ -56,7 +56,7 @@ Mit dieser Funktion können Sie eine PDF- oder JPG-Datei mit niedriger Auflösun
 
 1. Um die Verknüpfung eines Assets aufzuheben, klicken Sie in der Symbolleiste auf **[!UICONTROL Verknüpfung aufheben]** ![Verknüpfung von Assets aufheben](assets/do-not-localize/link-unrelate-icon.png).
 
-1. Wählen Sie das/die Asset(s), dessen/deren Verknüpfung Sie aufheben möchten, im Dialogfeld **[!UICONTROL Verknüpfungen aufheben]** aus, und klicken Sie auf **[!UICONTROL Verknüpfung aufheben]**.
+1. Wählen Sie die Assets aus, für die Sie die Zuordnung aufheben möchten. **[!UICONTROL Relationen entfernen]** und klicken Sie auf **[!UICONTROL Nicht zuordnen]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
@@ -64,7 +64,7 @@ Mit dieser Funktion können Sie eine PDF- oder JPG-Datei mit niedriger Auflösun
 
 ## Übersetzen verknüpfter Assets {#translating-related-assets}
 
-Für die Übersetzungs-Workflows ist die Erstellung von Quellbeziehungen / abgeleiteten Beziehungen zwischen Assets mit der Funktion „Verknüpfte Assets“ nützlich. Wenn Sie für ein abgeleitetes Asset einen Übersetzungs-Workflow ausführen, ruft [!DNL Experience Manager Assets] automatisch beliebige Assets ab, die von der Quelldatei referenziert werden, und nimmt sie in die Übersetzung auf. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit dem Quell-Asset und den abgeleiteten Assets übersetzt. Beispiel: In einem Szenario enthält die Kopie in englischer Sprache ein abgeleitetes Asset und die entsprechende Quelldatei wie gezeigt.
+Für die Übersetzungs-Workflows ist die Erstellung von Quellbeziehungen / abgeleiteten Beziehungen zwischen Assets mit der Funktion „Verknüpfte Assets“ nützlich. Wenn Sie für ein abgeleitetes Asset einen Übersetzungs-Workflow ausführen, ruft [!DNL Experience Manager Assets] automatisch beliebige Assets ab, die von der Quelldatei referenziert werden, und nimmt sie in die Übersetzung auf. Auf diese Weise wird das vom Quell-Asset referenzierte Asset zusammen mit der Quelle und den abgeleiteten Assets übersetzt. Angenommen, Ihre englischsprachige Kopie enthält ein abgeleitetes Asset und dessen Quelldatei wie gezeigt.
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
@@ -74,7 +74,7 @@ Ist die Quelldatei mit einem anderen Asset verknüpft, ruft [!DNL Experience Man
 
 *Abbildung: Quell-Asset der verknüpften Assets, die zur Übersetzung hinzugefügt werden sollen.*
 
-1. Übersetzen Sie die Assets im Quellordner für eine Zielsprache, indem Sie die Schritte unter [Neues Übersetzungsprojekt erstellen](translation-projects.md#create-a-new-translation-project) befolgen. Übersetzen Sie in diesem Fall zum Beispiel Ihre Assets ins Französische.
+1. Übersetzen Sie die Assets im Quellordner in eine Zielsprache, indem Sie die Schritte unter [Neues Übersetzungsprojekt erstellen](translation-projects.md#create-a-new-translation-project). Übersetzen Sie in diesem Fall beispielsweise Ihre Assets auf Französisch.
 
 1. Öffnen Sie auf der Seite [!UICONTROL Projekte] den Übersetzungsordner.
 

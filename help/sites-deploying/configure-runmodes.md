@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 7d91fbdaae7ade27e9d6bf42bbcd5b16d3f6e358
-workflow-type: ht
-source-wordcount: '747'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '748'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Sie haben folgende Möglichkeiten:
 
 * [Kollektionen von Konfigurationsparametern für jeden Ausführungsmodus definieren](#defining-configuration-properties-for-a-run-mode).
 
-   Ein Grundbestand an Konfigurationsparametern wird auf alle Ausführungsmodi angewendet. Sie können dann zusätzliche Parameter entsprechend den Anforderungen Ihrer spezifischen Umgebung einstellen. Diese werden nach Bedarf angewendet.
+  Ein Grundbestand an Konfigurationsparametern wird auf alle Ausführungsmodi angewendet. Sie können dann zusätzliche Parameter entsprechend den Anforderungen Ihrer spezifischen Umgebung einstellen. Diese werden nach Bedarf angewendet.
 
 * [Definieren von zusätzlichen Bundles, die für einen bestimmten Modus installiert werden sollen](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
@@ -89,25 +89,25 @@ Der Ausführungsmodus wird durch ein Suffix nach dem Ordnernamen angegeben. Auf 
 
 * `config`
 
-   Wird für alle Ausführungsmodi verwendet
+  Wird für alle Ausführungsmodi verwendet
 
 * `config.author`
 
-   Wird für den author-Ausführungsmodus verwendet
+  Wird für den author-Ausführungsmodus verwendet
 
 * `config.publish`
 
-   Wird für den publish-Ausführungsmodus verwendet
+  Wird für den publish-Ausführungsmodus verwendet
 
 * `config.<run-mode>`
 
-   Wird für die den entsprechenden Ausführungsmodus verwendet. z. B. config
+  Wird für die den entsprechenden Ausführungsmodus verwendet. z. B. config
 
 Siehe [OSGi-Konfiguration im Repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) für weitere Informationen zum Definieren der einzelnen Konfigurationsknoten in diesen Ordnern und zum Erstellen von Konfigurationen für Kombinationen aus mehreren Ausführungsmodi.
 
 >[!NOTE]
 >
->Für [Ausführungsmodi der Installation](#installation-run-modes) (z. B. author) kann der Ausführungsmodus nach der Installation nicht mehr geändert werden. Änderungen an den einzelnen Konfigurationseigenschaften werden jedoch bei einem Neustart wirksam.
+>Für [Ausführungsmodi der Installation](#installation-run-modes) (z. B. author) Der Ausführungsmodus kann nach der Installation nicht mehr geändert werden. Änderungen an den einzelnen Konfigurationseigenschaften werden jedoch bei einem Neustart wirksam.
 
 ## Definieren von zusätzlichen Bundles, die für einen Ausführungsmodus installiert werden sollen {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
@@ -123,8 +123,8 @@ Diese Ordner sich vom Typ `nt:folder` und sollten das entsprechende Bundle entha
 Wenn Sie Konfigurationen für mehrere Ausführungsmodi definiert haben, müssen Sie definieren, welcher beim Start verwendet werden soll. Es gibt mehrere Methoden, um festzulegen, welcher Ausführungsmodus verwendet werden soll. Die Reihenfolge der Auflösung lautet:
 
 1. [Systemeigenschaften (](#using-a-system-property-in-the-start-script)
-1. [ ](#using-the-sling-properties-file)
-1. [ ](#using-the-r-option)
+1. [](#using-the-sling-properties-file)
+1. [](#using-the-r-option)
 1. [Erkennung von Dateinamen ](#filename-detection-renaming-the-jar-file)
 
 Wenn Sie einen Anwendungsserver verwenden, können Sie auch [den Ausführungsmodus in web.xml](#defining-the-run-mode-in-web-xml-with-application-server) definieren.
@@ -155,7 +155,7 @@ Mit einer Systemeigenschaft im Startskript kann der Ausführungsmodus spezifizie
 
 * Beispielsweise können Sie Folgendes verwenden, um eine Instanz als Produktionsveröffentlichungsinstanz zu starten, die sich in den USA befindet:
 
-   `-Dsling.run.modes=publish,prod,us`
+  `-Dsling.run.modes=publish,prod,us`
 
 ### Erkennen von Dateinamen – Umbenennen der JAR-Datei {#filename-detection-renaming-the-jar-file}
 

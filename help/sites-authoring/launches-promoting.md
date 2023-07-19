@@ -10,9 +10,9 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '774'
 ht-degree: 97%
 
 ---
@@ -56,7 +56,7 @@ Sie können Launches über die Konsolen **Sites** oder **Launches** hochstufen.
 
       1. Öffnen Sie die Leiste [Verweise](/help/sites-authoring/author-environment-tools.md#showingpagereferences) und wählen Sie die gewünschte Quellseite mithilfe des [Auswahlmodus](/help/sites-authoring/basic-handling.md) aus. (Oder wählen Sie die Seite aus und öffnen die Verweisleiste. Die Reihenfolge ist nicht wichtig.) Alle Verweise werden angezeigt.
 
-      1. Wählen Sie **Launches** aus (z. B. „Launches (1)“), um eine Liste der spezifischen Launches anzuzeigen.
+      1. Wählen Sie **Launches** aus (z. B. „Launches (1)“), um eine Liste der spezifischen Launches anzuzeigen.
       1. Wählen Sie den gewünschten Launch aus, damit die verfügbaren Aktionen angezeigt werden.
       1. Wählen Sie **Launch bewerben** aus, um den Assistenten zu öffnen.
 

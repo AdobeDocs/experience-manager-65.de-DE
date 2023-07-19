@@ -1,7 +1,7 @@
 ---
 title: Entwickeln von AEM-Projekten mit Eclipse
 seo-title: How to Develop AEM Projects Using Eclipse
-description: In dieser Anleitung erfahren Sie, wie Sie Eclipse zur Entwicklung von AEM-basierten Projekten verwenden
+description: In diesem Handbuch wird die Verwendung von Eclipse zur Entwicklung AEM Projekte beschrieben.
 seo-description: This guide describes how to use Eclipse for developing AEM based projects
 uuid: 79fee76f-6bcc-498f-af46-530816b41bbe
 contentOwner: msm-service
@@ -10,16 +10,16 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aa58cfb8-ec15-4698-a8f0-97683b0de51c
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '435'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 66%
 
 ---
 
 # Entwickeln von AEM-Projekten mit Eclipse{#how-to-develop-aem-projects-using-eclipse}
 
-In dieser Anleitung erfahren Sie, wie Sie Eclipse zur Entwicklung von AEM-basierten Projekten verwenden.
+In diesem Handbuch wird die Verwendung von Eclipse zur Entwicklung AEM Projekte beschrieben.
 
 >[!NOTE]
 >
@@ -27,9 +27,9 @@ In dieser Anleitung erfahren Sie, wie Sie Eclipse zur Entwicklung von AEM-basier
 
 ## Übersicht {#overview}
 
-Die folgenden Schritte sind erforderlich, um mit der AEM-Entwicklung unter Eclipse zu beginnen.
+Um mit AEM Entwicklung auf Eclipse zu beginnen, sind die folgenden Schritte erforderlich.
 
-Im Rest dieser Anleitung werden die einzelnen Schritte genauer ausgeführt.
+Im weiteren Verlauf dieses Anleitungen werden sie ausführlicher erläutert.
 
 * Installieren von Eclipse 4.3 (Kepler)
 * Einrichten Ihres AEM-Projekts auf Grundlage von Maven
@@ -38,13 +38,13 @@ Im Rest dieser Anleitung werden die einzelnen Schritte genauer ausgeführt.
 
 >[!NOTE]
 >
->Diese Anleitung basiert auf Eclipse 4.3 (Kepler) und AEM 5.6.1.
+>Dieses Handbuch basiert auf Eclipse 4.3 (Kepler) und AEM 5.6.1.
 
 ## Installieren von Eclipse {#install-eclipse}
 
 Laden Sie „Eclipse IDE for Java EE Developers“ von der [Eclipse-Downloadseite](https://www.eclipse.org/downloads/) herunter.
 
-Installieren Sie Eclipse anhand der [Installationsanweisungen](https://wiki.eclipse.org/Eclipse/Installation).
+Installieren Sie Eclipse nach dem [Installationsanweisungen](https://wiki.eclipse.org/Eclipse/Installation).
 
 ## Einrichten Ihres AEM-Projekts auf Grundlage von Maven {#set-up-your-aem-project-based-on-maven}
 
@@ -52,17 +52,17 @@ Richten Sie Ihr Projekt anschließend wie in [So erstellen Sie AEM-Projekte mit 
 
 ## Vorbereiten der JSP-Unterstützung für Eclipse {#prepare-jsp-support-for-eclipse}
 
-Eclipse bietet darüber hinaus Unterstützung für die Arbeit mit JSP, z. B.
+Eclipse kann auch die Arbeit mit JSP unterstützen, z. B.
 
-* automatische Vervollständigung von Tag-Bibliotheken,
+* automatische Vervollständigung von Tag-Bibliotheken
 * Eclipse-Präsenz von durch &lt;cq:defineObjects /> und &lt;sling:defineObjects /> definierten Objekten
 
-Damit das funktioniert:
+Damit dies funktioniert:
 
 1. Folgen Sie den Anweisungen im Abschnitt [So arbeiten Sie mit JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [So erstellen Sie AEM-Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
 1. Fügen Sie Folgendes zum &lt;build />-Abschnitt im POM Ihres Inhaltsmoduls hinzu.
 
-   Das Eclipse-Plug-in zur Unterstützung von Maven, m2e, bietet keine Unterstützung für das Plug-in maven-jspc und diese Konfiguration weist m2e an, das Plug-in und die zugehörige Aufgabe zur Bereinigung der temporären Kompilierungsergebnisse zu ignorieren.
+   Das Maven-Support-Plug-in m2e von Eclipse bietet keine Unterstützung für das maven-jspc-Plugin und diese Konfiguration weist m2e an, das Plug-in und die damit verbundene Aufgabe zu ignorieren, die temporären Kompilierungsergebnisse zu bereinigen.
 
    Dies stellt kein Problem dar, denn wie in [So arbeiten Sie mit JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) beschrieben, wird das maven-jspc-Plug-in bei dieser Konfiguration nur verwendet, um zu überprüfen, dass JSPs im Zuge des Build-Prozesses kompiliert werden. Eclipse meldet sämtliche Probleme in JSPs bereits und ist dazu nicht von diesem Maven-Plug-in abhängig.
 

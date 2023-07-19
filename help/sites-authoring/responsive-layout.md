@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1805'
+source-wordcount: '1806'
 ht-degree: 99%
 
 ---
@@ -24,7 +24,7 @@ Dies bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raste
 Der Layout-Container:
 
 * Bietet horizontale Ausrichtung am Raster sowie die Möglichkeit, Komponenten nebeneinander im Raster zu platzieren und zu definieren, wann sie reduziert/umfließen sollen.
-* Verwendet vordefinierte Breakpoints (z. B. für Smartphones, Tablets usw.), damit Sie das erforderliche Verhalten von Inhalten für zugehörige Geräte/Ausrichtungen definieren können.
+* Verwendet vordefinierte Haltepunkte (z. B. für Smartphones, Tablets usw.), damit Sie das erforderliche Verhalten von Inhalten für zugehörige Geräte/Ausrichtungen definieren können.
 
    * Sie können beispielsweise die Komponentengröße anpassen oder festlegen, ob die Komponente auf bestimmten Geräten angezeigt werden soll.
 

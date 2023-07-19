@@ -2,9 +2,9 @@
 title: Bearbeiten externer SPA in Adobe Experience Manager
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine Adobe Experience Manager-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren der Bearbeitung beschrieben.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2441'
+source-wordcount: '2440'
 ht-degree: 78%
 
 ---
@@ -343,7 +343,7 @@ Um die Bearbeitung in AEM für diese Beispiel-SPA zu aktivieren, sind die folgen
 
 1. Fügen Sie Helfer innerhalb des SPA-Routings hinzu.
 
-   * Die neu erstellte Seite wird noch nicht mit dem erwarteten Inhalt in AEM gerendert. Dies liegt daran, dass der Router den Pfad `/test` erwartet, während der aktive Pfad in AEM `/wknd-spa-react/us/en/test` ist. Um den AEM-spezifischen Teil der URL aufzunehmen, müssen wir einige Helfer auf der SPA Seite hinzufügen.
+   * Die neu erstellte Seite gibt den erwarteten Inhalt noch nicht in AEM wieder. Dies liegt daran, dass der Router den Pfad `/test` erwartet, während der aktive Pfad in AEM `/wknd-spa-react/us/en/test` ist. Um den AEM-spezifischen Teil der URL aufzunehmen, müssen wir einige Helfer auf der SPA Seite hinzufügen.
 
    ![Routing-Helfer](assets/external-spa-router-helper.png)
 

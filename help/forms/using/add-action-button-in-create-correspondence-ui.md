@@ -1,7 +1,7 @@
 ---
 title: Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu
 seo-title: Add custom action/button in Create Correspondence UI
-description: Erfahren Sie, wie Sie benutzerdefinierte Aktionen/Schaltflächen in der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen
+description: Erfahren Sie, wie Sie benutzerdefinierte Aktionen/Schaltflächen in der Benutzeroberfläche "Korrespondenz erstellen"hinzufügen
 seo-description: Learn how to add custom action/button in Create Correspondence UI
 uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
 content-type: reference
@@ -11,10 +11,10 @@ discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: ba2c753cfd041ccfcd6ba7a45648234290b99d25
-workflow-type: ht
-source-wordcount: '1881'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1880'
+ht-degree: 80%
 
 ---
 
@@ -22,22 +22,22 @@ ht-degree: 100%
 
 ## Übersicht {#overview}
 
-Correspondence Management Solution ermöglicht es Ihnen, benutzerdefinierte Aktionen der Benutzeroberfläche „Korrespondenz erstellen“ hinzufügen.
+Mit der Correspondence Management-Lösung können Sie benutzerdefinierte Aktionen zur Benutzeroberfläche &quot;Korrespondenz erstellen&quot;hinzufügen.
 
 In dem Szenario in diesem Dokument wird erklärt, wie Sie eine Schaltfläche in der Benutzeroberfläche „Korrespondenz erstellen“ einfügen können, um einen Brief als Überprüfungs-PDF im Anhang einer E-Mail zu teilen.
 
 ### Voraussetzungen {#prerequisites}
 
-Um dieses Beispiel auszuführen, benötigen Sie Folgendes:
+Um dieses Szenario abzuschließen, benötigen Sie Folgendes:
 
-* Kenntnisse von CRX und JavaScript
-* LiveCycle-Server
+* Kenntnisse über CRX und JavaScript
+* LiveCycle Server
 
-## Szenario: Erstellen Sie die Schaltfläche in der Benutzeroberfläche „Korrespondenz erstellen“, um ein Schreiben zum Review zu senden {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Szenario: Erstellen Sie die Schaltfläche in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;, um einen Brief zur Überprüfung zu senden. {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
-Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review senden) zur Benutzeroberfläche „Korrespondenz erstellen“. Diese enthält Folgendes:
+Das Hinzufügen einer Schaltfläche mit einer Aktion (hier Brief zur Überprüfung senden) zur Benutzeroberfläche &quot;Korrespondenz erstellen&quot;umfasst Folgendes:
 
-1. Hinzufügen der Schaltfläche „Korrespondenz erstellen“ zur Benutzeroberfläche 
+1. Hinzufügen der Schaltfläche zur Benutzeroberfläche &quot;Korrespondenz erstellen&quot;
 1. Hinzufügen der Aktionsbearbeitung zur Schaltfläche
 1. Hinzufügen eines LiveCycle-Prozesses, um die Aktionsbearbeitung zu aktivieren
 
@@ -69,14 +69,14 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
    1. Wechseln Sie zu „/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml“
 
-   1. Klicken Sie mit der rechten Maustaste auf die Datei „acmExtensionsConfig.xml“ und wählen Sie **Kopieren**.
+   1. Klicken Sie mit der rechten Maustaste auf die Datei &quot;acmExtensionsConfig.xml&quot;und wählen Sie **Kopieren**.
 
       ![Kopieren Sie acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 
-   1. Klicken Sie mit der rechten Maustaste auf den Ordner **defaultApp** unter „/apps/fd/cm/config/defaultApp/,“ und wählen Sie **Einfügen**.
+   1. Klicken Sie mit der rechten Maustaste auf die **defaultApp** Ordner unter &quot;/apps/fd/cm/config/defaultApp/&quot; und wählen Sie **Einfügen**.
    1. Klicken Sie auf **Alle speichern**.
 
-1. Doppelklicken Sie auf die Kopie von „acmExtentionsConfig.xml“, die Sie im Apps-Ordner neu erstellten haben. Die Datei wird zur Bearbeitung geöffnet.
+1. Doppelklicken Sie auf die Kopie von acmExtentionsConfig.xml, die Sie neu im Apps-Ordner erstellt haben. Die Datei wird zur Bearbeitung geöffnet.
 1. Suchen Sie folgenden Code:
 
    ```xml
@@ -103,13 +103,13 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
    ![customAction-Tag](assets/5_acmextensionsconfig_xml.png)
 
-   Das modelExtension-Tag besitzt eine Reihe von untergeordneten customAction-Tags, die die Aktion, die Berechtigungen und das Erscheinungsbild der Aktionsschaltfläche konfigurieren. Im Folgenden finden Sie eine Liste der customAction Konfigurations-Tags:
+   Das modelExtension-Tag verfügt über einen Satz von untergeordneten customAction-Tags, die die Aktion, die Berechtigungen und das Erscheinungsbild der Aktionsschaltfläche konfigurieren. Im Folgenden finden Sie eine Liste der customAction-Konfigurations-Tags:
 
    | **Name** | **Beschreibung** |
    |---|---|
    | name | Der alphanumerische Name für die auszuführende Aktion. Der Wert dieses Tags wird benötigt, muss eindeutig sein (d. h. innerhalb des modelExtension-Tags) und muss mit einem Buchstaben beginnen. |
-   | label | Die Beschriftung der Aktionsschaltfläche |
-   | tooltip | QuickInfo-Text der Schaltfläche, der angezeigt wird, wenn der Benutzer den Cursor auf der Schaltfläche bewegt. |
+   | label | Die Bezeichnung, die auf der Aktionsschaltfläche angezeigt werden soll |
+   | tooltip | QuickInfo-Text der Schaltfläche, der angezeigt wird, wenn der Benutzer den Mauszeiger über die Schaltfläche bewegt. |
    | styleName | Name des benutzerdefinierten Stils, der auf die Aktionsschaltfläche angewendet wird. |
    | permissionName | Die entsprechende Aktion wird nur angezeigt, wenn der Benutzer über die von permissionName festgelegte Berechtigung verfügt. Wenn Sie permissionName als `forms-users` angeben, erhalten alle Benutzer Zugriff auf diese Option. |
    | actionHandler | Vollqualifizierter Name der Klasse „ActionHandler“, die aufgerufen wird, wenn der Benutzer auf die Schaltfläche klickt. |
@@ -124,7 +124,7 @@ Hinzufügen einer Schaltfläche mit einer Aktion (hier Buchstaben zum Review sen
 
 1. Klicken Sie auf **Alle speichern**.
 
-#### Erstellen Sie einen lokalen Ordner mit der Eigenschaftendatei in der /apps-Verzweigung {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
+#### Erstellen eines Gebietsschemaordners mit einer Eigenschaftendatei in der /apps-Verzweigung {#create-a-locale-folder-with-properties-file-in-the-apps-branch}
 
 Die Datei „ACMExtensionsMessages.properties“ beinhaltet Beschriftungen und Quickinfo-Meldungen von verschiedenen Feldern in der Benutzeroberfläche zur Korrespondenzerstellung. Damit die benutzerdefinierten Aktionen/Schaltflächen funktionieren, müssen Sie eine Kopie dieser Datei in der /apps-Verzweigung erstellen.
 
@@ -162,9 +162,9 @@ Die Datei „ACMExtensionsMessages.properties“ beinhaltet Beschriftungen und 
 
 1. Klicken Sie auf **Alle speichern**.
 
-#### Starten Sie das Asset Composer-Baustein-Bundle von Adobe neu {#restart-the-adobe-asset-composer-building-block-bundle}
+#### Starten Sie das Adobe Asset Composer-Baustein-Bundle neu {#restart-the-adobe-asset-composer-building-block-bundle}
 
-Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Asset Composer-Baustein-Bundle von Adobe neu. In diesem Szenario werden die Dateien „acmExtensionsConfig.xml“ und „ACMExtensionsMessages.properties“ auf der Server-Seite bearbeitet, und folglich erfordert das Asset Composer-Baustein-Bundle von Adobe einen Neustart.
+Nachdem Sie alle serverseitigen Änderungen vorgenommen haben, starten Sie das Adobe Asset Composer-Baustein-Bundle neu. In diesem Szenario werden die Dateien „acmExtensionsConfig.xml“ und „ACMExtensionsMessages.properties“ auf der Server-Seite bearbeitet, und folglich erfordert das Asset Composer-Baustein-Bundle von Adobe einen Neustart.
 
 >[!NOTE]
 >
@@ -176,11 +176,11 @@ Nachdem Sie serverseitige Änderungen vorgenommen haben, starten Sie das Asset C
 
    ![Asset Composer-Baustein von Adobe ](assets/6_assetcomposerbuildingblockbundle.png)
 
-Nachdem das Asset Composer-Baustein-Bundle von Adobe neu gestartet wurde, wird die benutzerdefinierte Schaltfläche in der Benutzeroberfläche „Korrespondenz erstellen“ angezeigt. Sie können ein Schreiben in der Benutzeroberfläche „Korrespondenz erstellen“ öffnen, um eine benutzerdefinierte Schaltfläche in der Vorschau anzuzeigen.
+Nach dem Neustart des Adobe Asset Composer-Baustein-Bundles wird die benutzerdefinierte Schaltfläche in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;angezeigt. Sie können einen Brief in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;öffnen, um eine Vorschau der benutzerdefinierten Schaltfläche anzuzeigen.
 
 ### Hinzufügen der Aktionsbearbeitung zur Schaltfläche {#add-action-handling-to-the-button}
 
-Die Benutzeroberfläche „Korrespondenz erstellen“ ist standardmäßig in der Implementierung der ActionHandler cm.domain.js-Datei am folgenden Speicherort:
+Die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;verfügt standardmäßig über die Implementierung von ActionHandler in der Datei cm.domain.js am folgenden Speicherort:
 
 /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccr/js/cm.domain.js
 
@@ -223,8 +223,8 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
 
       Benennen Sie die Datei als ccrcustomization.js.
 
-   1. Doppelklicken Sie auf die ccrcustomization.js-Datei, um sie in CRX zu öffnen.
-   1. Fügen Sie in die Datei den folgenden Code und klicken Sie auf **Alle speichern**:
+   1. Doppelklicken Sie auf die Datei ccrcustomization.js , um sie in CRX zu öffnen.
+   1. Fügen Sie in die Datei den folgenden Code ein und klicken Sie auf **Alle speichern**:
 
       ```javascript
       /* for adding and handling custom actions in Extensible Toolbar.
@@ -323,12 +323,12 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
       '</div>';
       ```
 
-### Fügen Sie den LiveCycle-Prozess hinzu, um die Aktions <span class="acrolinxCursorMarker"></code>bearbeitung zu aktivieren {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Hinzufügen des LiveCycle-Prozesses zum Aktivieren der Aktion <span class="acrolinxCursorMarker"></code>Handhabung {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Aktivieren Sie in diesem Szenario die folgenden Komponenten, die ein Teil der angehängten Datei „components.zip“ sind:
 
-* DSC-Komponente JAR-Datei (DSCSample.jar)
-* Brief zum Review-Prozess LCA senden(SendLetterForReview.lca)
+* DSC-Komponenten-JAR (DSCSample.jar)
+* Brief zum Review-Prozess senden LCA (SendLetterForReview.lca)
 
 Laden Sie die Datei „components.zip“ herunter und extrahieren Sie daraus die Dateien „DSCSample.jar“ und „SendLetterForReview.lca“. Verwenden Sie diese Dateien, wie in den folgenden Verfahren angegeben.
 [Datei laden](assets/components.zip)
@@ -430,9 +430,9 @@ Weitere Informationen finden Sie unter [Verbinden von AEM Forms mit Adobe LiveCy
 
 #### Importieren von DSC in LiveCycle {#import-dsc-to-livecyle}
 
-Die Datei „DSCSample.jar“ verwendet die renderLetter-API, um ein Schreiben als PDF-Bytes aus XML-Daten zu generieren, die von DSC als Eingabe gegeben werden. Weitere Informationen zu renderLetter und andere APIs finden Sie unter[ Brief-Render-Dienst](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
+Die Datei „DSCSample.jar“ verwendet die renderLetter-API, um ein Schreiben als PDF-Bytes aus XML-Daten zu generieren, die von DSC als Eingabe gegeben werden. Weitere Informationen zum renderLetter und anderen APIs finden Sie unter [Brief-Render-Dienst](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
-1. Anfang Workbench und melden Sie sich an.
+1. Starten Sie Workbench und melden Sie sich an.
 1. Wählen Sie **Fenster > Ansicht anzeigen > Komponenten**. Die Komponentenansicht wird in Workbench ES2 hinzugefügt.
 
 1. Klicken Sie mit der rechten Maustaste auf **Komponenten** und wählen Sie **Komponente installieren**.
@@ -440,9 +440,9 @@ Die Datei „DSCSample.jar“ verwendet die renderLetter-API, um ein Schreiben a
 1. Wählen Sie die Datei **DSCSample.jar** über den Datei-Browser aus und klicken Sie auf **Öffnen**.
 1. Klicken Sie mit der rechten Maustaste auf **RenderWrapper** und wählen Sie **Komponente starten**. Wenn die Komponente gestartet wird, erscheint ein grüner Pfeil neben dem Komponentennamen.
 
-## Schreiben an Review senden {#send-letter-for-review}
+## Brief zur Überprüfung senden {#send-letter-for-review}
 
-Nachdem Sie die Aktion und Schaltfläche zum Versenden des Schreibens an den Review konfiguriert haben:
+Nachdem Sie die Aktion und Schaltfläche zum Senden des Briefs zur Überprüfung konfiguriert haben:
 
 1. Löschen Sie den Browsercache.
 

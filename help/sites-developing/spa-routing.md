@@ -10,10 +10,10 @@ topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 exl-id: eaef65ec-2e4d-490f-8158-d48d738e3409
-source-git-commit: 509ea0945e6c80e50f6f5bffd4c68282d586504a
-workflow-type: ht
-source-wordcount: '491'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '493'
+ht-degree: 85%
 
 ---
 
@@ -23,7 +23,7 @@ Bei Single Page Applications in AEM ist die App für das Routing verantwortlich.
 
 >[!NOTE]
 >
->Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendering auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
+>Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
 ## Projekt-Routing {#project-routing}
 
@@ -57,13 +57,13 @@ Die aktuelle Implementierung basiert auf der Annahme, dass das SPA-Projekt die H
 
 `ModelRouter` unterstützt das Konzept des Modell-Routings, da es auf `pushState`- und `replaceState`-Aufrufe wartet, um Modellfragmente vorab abzurufen. Intern triggert es den `PageModelManager`, das Modell zu laden, das einer bestimmten URL entspricht, und löst ein `cq-pagemodel-route-changed`-Ereignis aus, das andere Module überwachen können.
 
-Standardmäßig ist dieses Verhalten automatisch aktiviert. Um es zu deaktivieren, sollte die SPA die folgende Meta-Eigenschaft rendern:
+Standardmäßig ist dieses Verhalten automatisch aktiviert. Um sie zu deaktivieren, sollte der SPA die folgende Meta-Eigenschaft rendern:
 
 ```
 <meta property="cq:pagemodel_router" content="disabled"\>
 ```
 
-Beachten Sie, das jede Route der SPA einer vorhandenen Seite in AEM entsprechen sollte (z. B. `/content/mysite/mypage"`), da der `PageModelManager` automatisch versucht, das entsprechende Seitenmodell zu laden, wenn die Route ausgewählt wird. Bei Bedarf kann die SPA jedoch auch eine Blockierungsliste mit Routen definieren, die der `PageModelManager` ignorieren soll:
+Beachten Sie, dass jede Route des SPA einer zugänglichen Ressource in AEM entsprechen sollte (z. B. &quot; `/content/mysite/mypage"`), da die `PageModelManager` versucht automatisch, das entsprechende Seitenmodell zu laden, sobald die Route ausgewählt ist. Bei Bedarf kann die SPA jedoch auch eine „Blockierungsliste“ mit Routen definieren, die der `PageModelManager` ignorieren soll:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>

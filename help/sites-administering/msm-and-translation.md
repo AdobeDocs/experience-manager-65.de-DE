@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '351'
 ht-degree: 57%
 
 ---
@@ -40,7 +40,7 @@ Sie können durch den kombinierten Einsatz von Multi Site Manager und Übersetzu
 * Verwenden Sie [Multi Site Manager](/help/sites-administering/msm.md) für Folgendes:
 
    * Verwenden Sie Inhalte von der Übergeordneten Site und den Übersetzungen erneut, um Seiten für andere Länder und Kulturen zu erstellen.
-   * Stellen Sie sicher, dass Sie die Verwendung von Multi Site Manager auf Inhalte in einer Sprache beschränken, z. B. auf Englisch Übergeordnet -> Englisch Sprachzweige auf Länderseiten, Französisch Übergeordnet -> Französisch Sprachzweige auf Länderseiten.
+   * Stellen Sie sicher, dass Sie die Verwendung von Multi Site Manager auf Inhalte in einer Sprache beschränken, z. B. auf Englisch Übergeordnet -> englische Sprachzweige auf Länderseiten, Französisch Übergeordnet -> französische Sprachzweige auf Länderseiten.
    * Trennen Sie bei Bedarf die Elemente der Live Copies, um Lokalisierungsdetails hinzuzufügen.
 
 Das folgende Diagramm veranschaulicht, wie sich die Hauptkonzepte überschneiden (es sind jedoch nicht alle beteiligten Ebenen/Elemente dargestellt):

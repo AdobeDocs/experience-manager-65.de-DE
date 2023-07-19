@@ -11,10 +11,10 @@ topic-tags: spa
 discoiquuid: 6c320633-ce0b-4eb1-bb54-05e1a514d139
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '191'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '192'
+ht-degree: 81%
 
 ---
 
@@ -24,7 +24,7 @@ Adobe Experience Platform Launch ist die empfohlene Methode zur Implementierung 
 
 >[!NOTE]
 >
->Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendering auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
+>Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
 ## Tutorial {#tutorial}
 
@@ -34,4 +34,4 @@ Um zu verstehen, wie Sie SPAs mit Adobe Experience Platform Launch integrieren k
 >
 >Der referenzierte KB-Artikel wurde erstellt, um eine Adobe Experience Platform Launch-Integration mit SPAs zu ermöglichen, die nicht den AEM-SPA-Editor nutzen. Die Methoden sollten eine Adobe Experience Platform Launch-Integration auch mit SPAs ermöglichen, die für die Verwendung des SPA-Editors erstellt wurden.
 >
->Der Einsatz von Redux zusammen mit den JavaScript-SPA-Bibliotheken wurde noch nicht vollständig untersucht. Unterstützung für Redux ist in einer zukünftigen Version des SPA-Editors geplant.
+>Die Verwendung von Redux zusammen mit den JavaScript-SPA-Bibliotheken wurde noch nicht vollständig untersucht. Unterstützung für Redux ist in einer zukünftigen Version des SPA-Editors geplant.

@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '222'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 87%
 
 ---
 
@@ -32,8 +32,8 @@ In AEM stehen verschiedene Tastaturbefehle zur Verfügung. Einige gelten für di
 |  | `Ctrl-y` | [Letzte Änderung wiederholen](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Mehrere Absätze auswählen |
 |  | `Ctrl-c` | Ausgewählte Absätze kopieren |
-|  | `Ctrl-x` | Ausgewählte Absätze ausschneiden (ausgeschnittene Absätze werden in der Benutzeroberfläche erst nach dem Einfügen ausgeblendet.) |
-|  | `Ctrl-v` | Zuvor ausgeschnittene oder kopierte Absätze einfügen |
+|  | `Ctrl-x` | Ausgewählte Absätze ausschneiden (ausgeschnittene Absätze werden in der Benutzeroberfläche erst nach dem Einfügen ausgeblendet) |
+|  | `Ctrl-v` | Einfügen von Absätzen, die zuvor ausgeschnitten oder kopiert wurden |
 |  | `Ctrl-Backspace` | Ausgewählte Absätze löschen |
 | Modus **Bearbeiten** – Rich-Text-Editor | `Ctrl-b` | Fett |
 |  | `Ctrl-I` | Kursiv |

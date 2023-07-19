@@ -1,7 +1,7 @@
 ---
 title: E-Commerce-Übersicht
 seo-title: eCommerce Overview
-description: Der generische AEM-E-Commerce ist als Teil der Standardinstallation verfügbar und bietet Ihnen alle Funktionen des E-Commerce-Frameworks.
+description: AEM generische eCommerce ist als Teil der Standardinstallation verfügbar und bietet Ihnen die volle Funktionalität des eCommerce-Frameworks.
 seo-description: AEM generic eCommerce is available as part of the standard installation and provides you with the full functionality of the eCommerce framework.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
@@ -9,10 +9,10 @@ content-type: reference
 docset: aem65
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '261'
-ht-degree: 100%
+ht-degree: 85%
 
 ---
 
@@ -22,11 +22,11 @@ Der generische AEM-E-Commerce ist als Teil einer Standardinstallation verfügbar
 
 Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
 
-|  | CIF On-Premise | CIF Cloud |
+|                         | CIF On-Premise | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Unterstützte AEM-Versionen | AEM On-Premise oder AMS 6.x | AEM AMS 6.4 und 6.5 |
 | Back-End | - AEM, Java <br>- Monolithische Integration, voreingestellte Zuordnung (Vorlage)<br>- JCR-Repository | - Adobe Commerce <br>- Java und JavaScript <br>- Keine Commerce-Daten im JCR-Repository gespeichert |
-| Frontend | Server-seitig wiedergegebene AEM-Seiten | Gemischte Seitenanwendung (hybrides Rendering) |
+| Frontend | In AEM Server-seitig gerenderte Seiten | Gemischte Seitenanwendung (Hybrid-Rendering) |
 | Produktkatalog | - Produktimport-Tool, Editor, Zwischenspeicherung in AEM <br>- Standardkataloge mit AEM- oder Proxy-Seiten | - Kein Produktimport <br>- Generische Vorlagen <br>- On-Demand-Daten über Connector |
 | Skalierbarkeit | - Unterstützt bis zu mehrere Millionen Produkte (je nach Anwendungsfall) <br>- Zwischenspeicherung im Dispatcher | - Keine Volumenbegrenzung <br>- Zwischenspeicherung im Dispatcher oder im CDN |
 | Standardisiertes Datenmodell | Nein | Ja, das Adobe Commerce GraphQL-Schema |
@@ -34,7 +34,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
 | Verwendungsbereiche | Eingeschränkte Anwendungsfälle: wenn kleine, statische Kataloge importiert werden müssen | Bevorzugte Lösung in den meisten Anwendungsfällen |
 
 
-## Bereitstellen weiterer Implementierungen {#deploying-other-implementations}
+## Bereitstellen anderer Implementierungen {#deploying-other-implementations}
 
 Für AEM und Adobe Commerce lesen Sie [Integration von AEM und Adobe Commerce](/help/commerce/cif/integrating/magento.md) mithilfe des [Commerce-Integration-Frameworks](/help/commerce/cif/introduction.md).
 

@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 discoiquuid: c08729f6-1512-4aee-82bb-7cc05749a72f
 exl-id: 5d2b9743-9601-46e6-9d73-3bf734e04a30
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '259'
-ht-degree: 8%
+source-wordcount: '260'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +23,7 @@ Auf dieser Seite wird die Vorschau mit der Preflight-App erläutert.
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes Client-seitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Die folgenden Aktionen werden für die Anwendung als Ganzes ausgeführt.
 
@@ -46,6 +46,7 @@ Mit der Mobile On Demand Preflight-App können Sie alle Projekte anzeigen, auf d
 >[!NOTE]
 >
 >Die AEM Preflight-App wird für die Vorschau von Inhalten und Durchsuchen von Seiten verwendet. Um mehr über die Preflight-App zu erfahren, klicken Sie auf [here](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html).
+>
 
 ### Erste Schritte {#getting-ahead}
 

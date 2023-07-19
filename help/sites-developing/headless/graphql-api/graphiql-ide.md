@@ -2,10 +2,10 @@
 title: Verwenden der GraphiQL-IDE in AEM
 description: Erfahren Sie, wie Sie die GraphiQL IDE in Adobe Experience Manager verwenden.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: b8c9e5cd3192b51954091b677d700c51617c9460
-workflow-type: ht
-source-wordcount: '792'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 98%
 
 ---
 
@@ -25,9 +25,9 @@ Eine Implementierung der standardmäßigen [GraphQL](https://graphql.org/learn/s
 Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu debuggen, indem es Ihnen folgendes ermöglicht:
 
 * Auswahl des **Endpunkts**, der der Sites-Konfiguration entspricht, die Sie für Ihre Abfragen verwenden möchten
-* direkte Eingabe neuer Abfragen
+* Direkte Eingabe neuer Abfragen
 * Erstellen und Zugreifen auf **[Persistente Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md)**
-* Ausführen von Abfragen mit sofortiger Anzeige der Ergebnisse
+* Führen Sie Ihre Abfragen aus, um die Ergebnisse sofort anzuzeigen
 * Verwalten von **Abfragevariablen**
 * Speichern und Verwalten von **Persistenten Abfragen**
 * Veröffentlichen oder Aufheben der Veröffentlichung von **Persistenten Abfragen** (z. B. nach/von `dev-publish`)
@@ -37,7 +37,7 @@ Das **GraphiQL**-Tool erlaubt es Ihnen, Ihre GraphQL-Abfragen zu testen und zu d
 Sie können auf den Abfrage-Editor wie folgt zugreifen:
 
 * **Tools** > **Allgemein** > **GraphQL-Abfrage-Editor**
-* direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
+* Direkt, zum Beispiel: `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL-Oberfläche](assets/cfm-graphiql-interface.png "GraphiQL-Oberfläche")
 
@@ -59,7 +59,7 @@ Sie können Ihre neue Abfrage im Editor eingeben, der sich im Bereich links in d
 
 Fangen Sie einfach an zu tippen, im Editor ist auch folgendes möglich:
 
-* Verwenden von Mouse-over, um zusätzliche Informationen über Elemente anzuzeigen
+* verwenden von Mouse-over, um zusätzliche Informationen über Elemente anzuzeigen
 * bietet Funktionen wie Syntax-Hervorhebung, Autovervollständigung, Auto-Vorschlag
 
 >[!NOTE]

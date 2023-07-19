@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1193'
-ht-degree: 2%
+source-wordcount: '1194'
+ht-degree: 1%
 
 ---
 
@@ -107,7 +107,6 @@ Beachten Sie, dass die Kalenderseite die Startseite ist, da die ausgewählte Ref
 >* [Communities-Komponenten](/help/communities/author-communities.md) (für Autoren)
 >* [Komponenten-, Funktionen- und Funktionsgrundlagen](/help/communities/essentials.md) (für Entwickler)
 
-
 ### Forum-Link {#forum-link}
 
 Klicken Sie auf den Link Forum , um die grundlegende Forumsfunktion anzuzeigen.
@@ -131,7 +130,7 @@ Gruppen können auch in der Autorenumgebung erstellt und innerhalb der Community
 Erstellen einer Referenzgruppe:
 
 1. Auswählen **Neue Gruppe**
-1. **Registerkarte „Settings“**
+1. **Registerkarte Einstellungen**
 
    * Gruppenname : `Sports`
    * Beschreibung : `A parent group for various sporting groups`.
@@ -213,8 +212,8 @@ Verwenden Sie die Zurück-Schaltfläche des Browsers, um zur veröffentlichten S
 
 Nach dem Abmelden ist es möglich, eine neue Benutzerregistrierung zu erstellen.
 
-* Wählen Sie nun eine der folgenden Optionen aus `Log In`
-* Wählen Sie nun eine der folgenden Optionen aus `Sign up for a new account`
+* Klicken Sie auf `Log In`
+* Klicken Sie auf `Sign up for a new account`
 
 ![registrierung](assets/registration.png)
 

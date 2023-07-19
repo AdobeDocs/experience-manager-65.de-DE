@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '455'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '460'
+ht-degree: 95%
 
 ---
 
@@ -76,7 +76,7 @@ Die OSGi-Konfiguration lautet:
   <tr>
    <td><strong>Ressourcentyp</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>Der zu registrierende Ressourcentyp; z. B. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>Der zu registrierende Ressourcentyp; z. B. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Verweiseigenschaft</strong></td>
@@ -86,7 +86,7 @@ Die OSGi-Konfiguration lautet:
   <tr>
    <td><strong>Elementeigenschaft</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>Der Name der Eigenschaft, die die Namen der Elemente enthält, die gerendert werden sollen; z. B.<code>elementName</code></td>
+   <td>Der Name der Eigenschaft, die die Namen der zu rendernden Elemente enthält; z. B.<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Varianteneigenschaft</strong><br /> </td>
@@ -96,7 +96,7 @@ Die OSGi-Konfiguration lautet:
  </tbody>
 </table>
 
-Für einige Funktionen (z. B. um nur einen Absatzbereich zu rendern) müssen Sie einige Konventionen einhalten:
+Für einige Funktionen (z. B. um nur einen Absatzbereich zu rendern) müssen Sie einige Konventionen einhalten:
 
 <table>
  <tbody>

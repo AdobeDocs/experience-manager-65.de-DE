@@ -8,10 +8,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '1228'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1227'
+ht-degree: 99%
 
 ---
 
@@ -50,6 +50,7 @@ Weitere Informationen hierzu finden Sie in der [Vorlagendokumentation](/help/sit
 >[!NOTE]
 >
 >Stellen Sie sicher, dass die Eigenschaft **acMapping** im Knoten **jcr:content** der Seite auf den Wert **mapRecipient** bzw. **Profil** eingestellt ist, wenn Sie mit Adobe Campaign 6.1.x oder Adobe Campaign Standard arbeiten.
+>
 
 ### Erstellen von Formularen {#creating-a-form}
 
@@ -100,7 +101,7 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
-1. Konfigurieren Sie die hinzugefügten Felder, indem Sie doppelt darauf klicken. Auf der Registerkarte **Adobe Campaign** können Sie das Feld mit einem Feld in der Empfängertabelle von Adobe Campaign verknüpfen. Sie können zudem ebenfalls festlegen, ob das Feld Teil des Abstimmschlüssels ist, mit dessen Hilfe bereits in der Adobe Campaign-Datenbank erfasste Empfänger identifiziert werden können.
+1. Konfigurieren Sie die hinzugefügten Felder durch Doppelklick. Auf der Registerkarte **Adobe Campaign** können Sie das Feld mit einem Feld in der Empfängertabelle von Adobe Campaign verknüpfen. Sie können zudem ebenfalls festlegen, ob das Feld Teil des Abstimmschlüssels ist, mit dessen Hilfe bereits in der Adobe Campaign-Datenbank erfasste Empfänger identifiziert werden können.
 
    >[!CAUTION]
    >

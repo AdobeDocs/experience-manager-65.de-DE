@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '1176'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
@@ -27,21 +27,21 @@ Informationen zum Hinzufügen von UI-Modulen zu ContextHub finden Sie unter [Hin
 
 ## UI-Modultyp contexthub.base {#contexthub-base-ui-module-type}
 
-Der UI-Modultyp contexthub.base ist der Basistyp für alle anderen UI-Modultypen. Als solches stellt er allgemeine Funktionen zum Rendern von Storedaten bereit.
+Der UI-Modultyp contexthub.base ist der Basistyp für alle anderen UI-Modultypen. Sie bietet daher allgemeine Funktionen zum Rendern von Store-Daten.
 
-Die folgenden Eigenschaften sind verfügbar:
+Die folgenden Funktionen sind verfügbar:
 
-* **Titel und Symbol:** Geben Sie einen Titel für das UI-Modul und ein Symbol an. Das Symbol kann über eine URL oder über die Coral-Benutzeroberflächensymbolbibliothek referenziert werden.
-* **Storedaten:** Identifizieren Sie einen oder mehrere Stores, von denen Daten abgerufen werden sollen.
+* **Titel und Symbol:** Geben Sie einen Titel für das UI-Modul und ein Symbol an. Auf das Symbol kann über eine URL oder aus der Coral-UI-Symbolbibliothek verwiesen werden.
+* **Daten speichern:** Identifizieren Sie einen oder mehrere Stores, aus denen Daten abgerufen werden sollen.
 * **Inhalt:** Geben Sie den Inhalt an, der im UI-Modul angezeigt wird, so wie er in der ContextHub-Symbolleiste angezeigt wird.
 * **Popover-Inhalt:** Geben Sie den Inhalt an, der in einem Popover angezeigt wird, wenn auf das UI-Modul geklickt oder getippt wird.
-* **Vollbildmodus:** Kontrollieren Sie, ob der Vollbildmodus erlaubt ist.
+* **Vollbildmodus:** Steuern Sie, ob der Vollbildmodus zulässig ist.
 
 Der Quell-Code befindet sich unter /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
 
 ### Konfiguration {#configuration}
 
-Konfigurieren Sie das UI-Modul contexthub.base mithilfe eines JavaScript-Objekts im JSON-Format. Fügen Sie eine der folgenden Eigenschaften zum Konfigurieren der UI-Modulfunktionen hinzu:
+Konfigurieren Sie das Benutzeroberflächenmodul contexthub.base mithilfe eines JavaScript-Objekts im JSON-Format. Fügen Sie eine der folgenden Eigenschaften zum Konfigurieren der UI-Modulfunktionen hinzu:
 
 * **image:** eine URL zu einem Bild, das als Symbol angezeigt werden soll.
 * **icon:** der Name einer [Coral-Benutzeroberflächensymbolklasse](https://helpx.adobe.com/de/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html). Wenn Sie einen Wert für das Symbol und die Bildeigenschaften angeben, wird das Bild verwendet.
@@ -52,11 +52,11 @@ Konfigurieren Sie das UI-Modul contexthub.base mithilfe eines JavaScript-Objekts
 * **template:** Eine [Handlebars](https://handlebarsjs.com/)-Vorlage, die den Inhalt angibt, der in der ContextHub-Symbolleiste gerendert werden soll. Verwenden Sie höchstens zwei `<p>`-Tags.
 
 * **storeMapping:** Ein Schlüssel-/Store-Diagramm. Verwenden Sie den Schlüssel in den Handlebar-Vorlagen, um auf die zugehörigen ContextHub-Store-Daten zuzugreifen.
-* **list:** ein Array von Elementen, die beim Klicken auf das UI-Modul als Liste in einem Popover angezeigt werden. Wenn Sie diesen Artikel einschließen, schließen Sie popoverTemplate nicht ein. Der Wert ist ein Array von Objekten mit folgenden Schlüsseln:
+* **list:** ein Array von Elementen, die beim Klicken auf das UI-Modul als Liste in einem Popover angezeigt werden. Wenn Sie diesen Artikel einschließen, schließen Sie popoverTemplate nicht ein. Der Wert ist ein Array von Objekten mit den folgenden Schlüsseln:
 
-   * title: Der Text, der für diesen Artikel angezeigt werden soll
-   * image: (optional) Eine URL zu einem Bild, das links angezeigt werden soll
-   * icon: (optional) Eine CUI-Symbolklasse, die auf der linken Seite angezeigt werden soll. wird ignoriert, wenn ein Bild angegeben wird
+   * title: Der für dieses Element anzuzeigende Text
+   * image: (Optional) Eine URL zu einem Bild, das links angezeigt werden soll
+   * Symbol: (Optional) Eine CUI-Symbolklasse, die links angezeigt werden soll. ignoriert , wenn ein Bild angegeben ist
    * selected: (optional) Ein boolescher Wert, der angibt, ob dieses Element als ausgewählt angezeigt werden soll (true=ausgewählt). Standardmäßig werden ausgewählte Elemente in Fettschrift angezeigt. Verwenden Sie eine `listType`-Eigenschaft, um andere Erscheinungen zu konfigurieren (siehe unten).
 
 * **listType:** Der für Popover-Listenelemente zu verwendende Stil. Verwenden Sie einen der folgenden Werte:
@@ -107,7 +107,7 @@ Instanzen des UI-Moduls contexthub.browserinfo benötigen keinen Wert für die D
 
 ## UI-Modultyp contexthub.datetime {#contexthub-datetime-ui-module-type}
 
-Das Benutzeroberflächenmodul contexthub.datetime zeigt das Datum und die Uhrzeit an, die in einem Store mit dem Namen datetime gespeichert sind, der auf dem Storekandidaten [contexhub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) basiert.
+Das UI-Modul contexthub.datetime zeigt das Datum und die Uhrzeit an, die in einem Store mit dem Namen datetime gespeichert sind, der auf der [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) Store-Kandidat.
 
 ![chlimage_1-78](assets/chlimage_1-78a.png)
 
@@ -199,7 +199,7 @@ Instanzen des Benutzeroberflächenmoduls contexthub.screen-orientation benötige
 
 ## Benutzeroberflächenmodultyp contexthub.tagcloud {#contexthub-tagcloud-ui-module-type}
 
-Das Benutzeroberflächenmodul contexthub.tagcloud zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popupmenü zeigt eine Tagcloud und ein Textfeld zum Hinzufügen neuer Tags an. Das Benutzeroberflächenmodul ruft Informationen aus einem ContextHub-Store namens tagcloud ab, der auf dem der Storekandidat [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) basiert.
+Das Benutzeroberflächenmodul contexthub.tagcloud zeigt Informationen zu Tags an. Auf der Symbolleiste zeigt das UI-Modul die Anzahl der Tags an. Das Popup zeigt eine Tagcloud und eine Texbox zum Hinzufügen neuer Tags an. Das UI-Modul erhält Informationen von einem ContextHub-Store namens &quot;tagcloud&quot;, der auf dem [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) Store-Kandidat.
 
 ![chlimage_1-82](assets/chlimage_1-82a.png)
 
@@ -223,7 +223,7 @@ Für Instanzen des Benutzeroberflächenmoduls contexthub.tagcloud ist kein Wert 
 
 ## UI-Modultyp granite.profile {#granite-profile-ui-module-type}
 
-Das ContextHub-Benutzeroberflächenmodul granite.profile zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popupmenü zeigt den Anmeldenamen des Benutzers auf, was Ihnen ermöglicht, den Wert der Anzeigename zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) basiert.
+Das ContextHub-Benutzeroberflächenmodul granite.profile zeigt den Anzeigenamen des aktuellen Benutzers an. Das Popup-Fenster zeigt den Anmeldenamen des Benutzers an und ermöglicht es Ihnen, den Wert des Anzeigenamens zu ändern. Das UI-Modul erhält Informationen von einem ContextHub-Store namens Profile, der auf dem Store-Kandidaten [granite.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) basiert.
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 

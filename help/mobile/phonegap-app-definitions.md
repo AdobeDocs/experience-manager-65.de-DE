@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 860dde0b-7cb4-4668-9fac-6f954f1ec0a7
 exl-id: 4c1c44fd-e685-462c-83a0-3cd2f74ab5c7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '227'
-ht-degree: 12%
+source-wordcount: '228'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 12%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Mit App-Definitionen können Sie ermitteln, welche Bereiche und andere Konfigurationen für die App geeignet sind. Mit App-Definitionen kann der Benutzer Speicherplatz hinzufügen, ohne die App neu kompilieren zu müssen. Die App-Definition wird aktualisiert und enthält die Informationen zu neuen Platzierungen.
 

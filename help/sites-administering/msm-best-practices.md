@@ -1,13 +1,13 @@
 ---
 title: Best Practices für MSM
-description: Hier finden Sie Best Practices für die Einrichtung und Verwendung von AEM MSM (Multi Site Manager) – zusammengestellt von Technik- und Beratungsteams von Adobe.
+description: Finden Sie Best Practices, die von Adobe-Engineering- und Beratungsteams zusammengestellt werden, um den AEM Multi-Site-Manager einzurichten und zu nutzen.
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: ht
-source-wordcount: '1616'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1617'
+ht-degree: 78%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 100%
 
 ## Allgemein {#general}
 
-MSM ist ein konfigurierbares Framework für die Automatisierung der Inhaltsbereitstellung. Implementierungen umfassen häufig große Teile einer Website und erstrecken sich über Organisationen und geografische Regionen. Es wird daher dringend empfohlen, MSM-Implementierungen mit der gleichen Sorgfalt zu planen wie Ihre Website:
+MSM ist ein konfigurierbares Framework zur Automatisierung der Inhaltsbereitstellung. Implementierungen umfassen häufig große Teile einer Website und umfassen Organisationen und Regionen. Daher wird dringend empfohlen, MSM-Implementierungen so sorgfältig zu planen, wie Sie Ihre Website planen:
 
 * **Planen Sie zunächst sorgfältig die Struktur und den Inhaltsfluss**, bevor Sie mit der Implementierung beginnen.
 * **Halten Sie die Anzahl der Live Copies auf ein Minimum beschränkt.** Die Verarbeitung von Live Copies ist eine ressourcenintensive Aufgabe. Je mehr Live Copies in Ihrem System vorhanden sind, desto mehr kann die Leistung beeinträchtigt werden: von der Verarbeitung interner Live Copy-Indizes über Live Copy-Vorgänge wie Rollouts bis hin zu Benutzeroberflächen-Vorgängen wie der Anzeige von Live Copy-Beziehungen in der Sites Admin-Referenzleiste. Es empfiehlt sich, Live Copies von Websites oder Verzweigungen einer Website zu erstellen, wobei die Beziehungen der Live Copy auf die Seiten der Website oder Verzweigung vererbt werden. Vermeiden Sie die Erstellung einzelner Live Copies für Seiten in einer Website oder einer Verzweigung, wenn die gesamte Struktur in eine Live Copy umgewandelt werden kann.
-* **Beschränken Sie Anpassungen auf das Nötigste.** MSM unterstützt zwar ein hohes Maß an Anpassungen (beispielsweise Rollout-Konfigurationen). Es empfiehlt sich jedoch, nicht zu viele Anpassungen vorzunehmen, um die Leistung und Zuverlässigkeit Ihrer Website nicht zu beeinträchtigen und Website-Upgrades durchführen zu können.
+* **Beschränken Sie Anpassungen auf das Nötigste.** MSM unterstützt zwar ein hohes Maß an Anpassung (z. B. Rollout-Konfigurationen), doch ist es in der Regel die Best Practice für die Leistung, Zuverlässigkeit und Upgrade Ihrer Website, die Anpassung zu minimieren.
 * Etablieren Sie frühzeitig ein **Governance-Modell** und schulen Sie die Benutzer entsprechend. Bei der Governance empfiehlt es sich, die **Autorität zu minimieren, über die lokale Inhaltsersteller verfügen**, um Inhalt anderen lokalen Benutzern oder ihren jeweiligen Live Copies zuzuordnen oder mit ihnen zu verknüpfen. Das liegt daran, dass nicht regulierte verkettete Vererbungen die Komplexität einer MSM-Struktur erheblich erhöhen und ihre Leistung und Zuverlässigkeit beeinträchtigen.
 
 * Wenn Sie über einen Plan für Ihre Struktur, Ihren Inhaltsfluss, Ihre Automatisierung und die Governance verfügen, **erstellen Sie einen Prototyp und testen Sie Ihr System sorgfältig**, bevor Sie mit der Live-Implementierung beginnen.
@@ -32,21 +32,19 @@ MSM ist ein konfigurierbares Framework für die Automatisierung der Inhaltsberei
 >* [Beheben von Problemen mit MSM und häufig gestellte Fragen](troubleshoot-msm.md)
 >
 
-
 >[!NOTE]
 >
 >Sie können auch die [Bezugskomponente](/help/sites-authoring/default-components-foundation.md#reference) verwenden, um eine einzelne Seite oder einen Absatz wiederzuverwenden. Bedenken Sie jedoch Folgendes:
 >
->* MSM ist flexibler und ermöglicht eine differenziertere Steuerung von Art und Zeitpunkt der Inhaltssynchronisierung.
+>* MSM ist flexibler und ermöglicht eine präzisere Kontrolle darüber, welche Inhalte wann synchronisiert werden.
 >* [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) werden nun anstelle der Foundation-Komponenten empfohlen.
 >
 
-
 ## Live Copy-Quellen und Blueprint-Konfigurationen {#live-copy-sources-and-blueprint-configurations}
 
-Eine Live Copy kann entweder unter Verwendung [regulärer Seiten](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) oder unter Verwendung einer [Blueprint-Konfiguration](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) erstellt werden. Beide Varianten sind zulässig.
+Eine Live Copy kann entweder unter Verwendung [regulärer Seiten](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page) oder unter Verwendung einer [Blueprint-Konfiguration](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) erstellt werden. Beide sind gültige Anwendungsfälle.
 
-Die Verwendung einer Blueprint-Konfiguration hat allerdings folgende Vorteile:
+Die Verwendung einer Blueprint-Konfiguration bietet darüber hinaus folgende Vorteile:
 
 * Der Autor kann für eine Blueprint die Option **Rollout** verwenden und so (explizit) Änderungen an Live Copies pushen, die von dieser Blueprint erben.
 * Der Autor kann **Website erstellen** nutzen, wodurch der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren kann;
@@ -54,7 +52,7 @@ Die Verwendung einer Blueprint-Konfiguration hat allerdings folgende Vorteile:
 
 Ohne Verweis auf eine Blueprint-Konfiguration können Rollouts nur von Live Copies selbst initiiert werden, wobei im Wesentlichen Inhalt aus der Quelle abgerufen wird.
 
-Wenn Sie eine neue Website mit Live Copy erstellen, empfiehlt es sich, Blueprint-Konfigurationen zu erstellen, um die Verfügbarkeit sämtlicher MSM-Features sicherzustellen.
+Wenn Sie eine neue Site mit einer Live Copy erstellen, ist es von Vorteil, Blueprint-Konfigurationen zu erstellen, um die Verfügbarkeit des vollständigen MSM-Funktionssatzes sicherzustellen.
 
 >[!NOTE]
 >
@@ -62,14 +60,14 @@ Wenn Sie eine neue Website mit Live Copy erstellen, empfiehlt es sich, Blueprint
 
 ## Komponenten- und Container-Synchronisierung {#components-and-container-synchronization}
 
-Für die Synchronisierung von Komponenten gilt in MSM im Allgemeinen folgende Rollout-Regel:
+Im Allgemeinen lautet die Rollout-Regel in MSM bezüglich der Synchronisierung von Komponenten:
 
 * Beim Rollout der Komponenten werden alle in der Blueprint enthaltenen Ressourcen synchronisiert.
 * Container synchronisieren nur die aktuelle Ressource.
 
-Das bedeutet, dass Komponenten als Aggregat behandelt und bei einem Rollout die Komponente selbst und alle ihre untergeordneten Elemente durch die Elemente aus den Blueprints ersetzt werden. Wenn also eine Ressource einer solchen Komponente lokal hinzugefügt wird, geht sie beim Rollout der Blueprint verloren.
+Dies bedeutet, dass Komponenten als Aggregat behandelt werden und die Komponente selbst und alle untergeordneten Elemente in einem Rollout durch die Komponenten in den Blueprints ersetzt werden. Wenn also eine Ressource einer solchen Komponente lokal hinzugefügt wird, geht sie beim Rollout der Blueprint verloren.
 
-Um die Schachtelung von Komponenten zu unterstützen, sodass lokal hinzugefügte Komponenten bei einem Rollout erhalten bleiben, muss die Komponente als Container deklariert werden. Ein Beispiel: Die parsys-Standardkomponente wird als Container deklariert, um lokal hinzugefügten Inhalt zu unterstützen.
+Um die Schachtelung von Komponenten zu unterstützen, sodass lokal hinzugefügte Komponenten bei einem Rollout erhalten bleiben, muss die Komponente als Container deklariert werden. Beispielsweise wird das standardmäßige parsys als Container deklariert, damit es lokal hinzugefügte Inhalte unterstützen kann.
 
 >[!NOTE]
 >
@@ -81,11 +79,11 @@ Live Copies können mit AEM auf zwei Arten erstellt werden:
 
 * Beim [Erstellen einer Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
-   Hierbei handelt es sich um den allgemeineren Ansatz, mit dem Sie Live Copies von einer beliebigen Seite aus erstellen können. Die Inhaltsstruktur einer Live Copy entspricht exakt der Quelle.
+  Hierbei handelt es sich um den allgemeineren Ansatz, mit dem Sie Live Copies von einer beliebigen Seite aus erstellen können. Die Inhaltsstruktur einer Live Copy entspricht exakt der Quelle.
 
 * Beim [Erstellen einer Website](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
 
-   Dies ist ein speziellerer Ansatz, der hauptsächlich für die Erstellung von Websites mit einer mehrsprachigen Struktur gedacht ist.
+  Dies ist ein speziellerer Ansatz, der hauptsächlich für die Erstellung von Websites mit einer mehrsprachigen Struktur gedacht ist.
 
 Berücksichtigen Sie beim Erstellen einer Website folgende Punkte:
 
@@ -93,7 +91,7 @@ Berücksichtigen Sie beim Erstellen einer Website folgende Punkte:
 * Um das Auswählen von Sprachpfaden zu ermöglichen, die für eine neue Website erstellt werden sollen, muss die Blueprint (Quelle) die entsprechenden Sprachstämme enthalten.
 * Nach der [Erstellung einer neuen Website als Live Copy](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (mithilfe von **Erstellen** > **Website**) sind die ersten beiden Ebenen dieser Live Copy *flach*. Untergeordnete Elemente der Seite sind nicht Teil der Live-Beziehung, werden bei einem Rollout aber trotzdem berücksichtigt, wenn eine dem Auslöser entsprechende Live-Beziehung gefunden wird.
 
-   Dadurch lässt sich Folgendes vermeiden:
+  Dadurch lässt sich Folgendes vermeiden:
 
    * Manuelles Hinzufügen von Sprachen in der Blueprint (unterhalb der ersten Ebene)
    * Manuelles Hinzufügen von Inhalt unmittelbar unter dem Sprach-Stamm
@@ -105,12 +103,12 @@ MSM kann Sie auf zwei Arten beim Erstellen mehrsprachiger Websites unterstützen
 
 * Beim Erstellen von primären Sprachdateien
 
-   * MSM bietet zwar selbst **keine Inhaltsübersetzung**, kann jedoch mit entsprechenden Übersetzungs-Connectors von Dritten integriert werden. Beachten Sie Folgendes:
+   * Während MSM selbst **bietet keine Inhaltsübersetzung**, kann sie mit Übersetzungs-Connectoren von Drittanbietern integriert werden, die dies tun. Beachten Sie Folgendes:
 
-      * Mit MSM können Sie die Vererbung auf Seiten- und/oder Komponentenebene unterbinden. So können Sie verhindern, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einer Blueprint überschrieben wird.
+      * Mit MSM können Sie die Vererbung auf Seiten- und/oder Komponentenebene abbrechen. So können Sie verhindern, dass übersetzter Inhalt aus einer Live Copy beim nächsten Rollout durch noch nicht übersetzten Inhalt aus einer Blueprint überschrieben wird.
       * Einige Übersetzungs-Connectoren von Dritten bieten eine automatisierte Verwaltung der MSM-Vererbung.
 
-         Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
+        Weitere Informationen erhalten Sie von Ihrem Übersetzungsdienstleister.
 
       * Eine Alternative für die Erstellung und Übersetzung von Sprachstämmen ist die Verwendung von Sprachkopien in Verbindung mit dem vorgefertigten AEM-Framework für die Übersetzungsintegration.
 
@@ -142,9 +140,9 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
    * Diese neue Konfiguration muss die folgende Aktion enthalten:
 
-      `PageMoveAction`
+     `PageMoveAction`
 
-      Fügen Sie dieser Konfiguration keine anderen Aktionen hinzu.
+     Fügen Sie dieser Konfiguration keine anderen Aktionen hinzu.
 
 * Positionieren Sie die neue Konfiguration:
 
@@ -152,17 +150,17 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
       * Positionieren Sie die neu erstellte Konfiguration vor der standardmäßigen Rollout-Konfiguration.
 
-         Die Löschung der Seiten an ihrem alten Ort wird durch die standardmäßige Rollout-Konfiguration übernommen.
+        Die Löschung der Seiten an ihrem alten Ort wird durch die standardmäßige Rollout-Konfiguration übernommen.
+
    * Gehen Sie wie folgt vor, um das Rollout der Seitenverschiebung durchzuführen und dabei die entsprechenden Seiten an ihrem alten Ort beizubehalten (und somit im Grunde den Inhalt zu duplizieren):
 
       * Positionieren Sie die neu erstellte Konfiguration nach der standardmäßigen Rollout-Konfiguration.
 
-         Dadurch wird sichergestellt, dass in der Live Copy kein Inhalt gelöscht oder für die Veröffentlichung deaktiviert wird.
-
+        Dadurch wird sichergestellt, dass in der Live Copy kein Inhalt gelöscht oder für die Veröffentlichung deaktiviert wird.
 
 ## Anpassen von Rollouts {#customizing-rollouts}
 
-Die Rollout-Konfigurationen von MSM sind in hohem Maße anpassbar. Beachten Sie, dass die Automatisierung von Rollouts weitreichende Folgen haben kann. Aus diesem Grund sollte unter anderem den folgenden Schritten eine *sehr* sorgfältige Planung vorausgehen:
+MSM-Rollout-Konfigurationen können in hohem Maße angepasst werden. Beachten Sie, dass die Automatisierung von Rollouts weit reichende Folgen haben kann. Als Best Practice sollten Sie *very* sorgfältig vor, z. B.:
 
 * Automatisieren von Rollouts (etwa mit [onModify-Auslösern](#onmodify))
 * Anpassen von [Knotentypen/-eigenschaften](#node-types-properties)
@@ -175,12 +173,12 @@ Beachten Sie bei Verwendung des [Rollout-Auslösers](/help/sites-administering/m
 
 * Die Automatisierung von Rollouts mit Auslösern vom Typ `onModify` kann die Leistung bei der Bearbeitung beeinträchtigen, da nach *jeder* Seitenbearbeitung Rollouts ausgelöst werden.
 
-* Das Rollout-Ergebnis entspricht aus folgenden Gründen möglicherweise nicht den Erwartungen:
+* Das Rollout-Ergebnis kann sich von dem erwarteten unterscheiden:
 
-   * Die Reihenfolge der resultierenden Änderungsereignisse kann nicht angegeben werden.
-   * Die ereignisbasierte Architektur kann die Reihenfolge der an den Rollout-Manager übergebenen Ereignisse nicht garantieren.
+   * Sie können die Reihenfolge der resultierenden Änderungsereignisse nicht angeben.
+   * Die ereignisbasierte Architektur kann die Reihenfolge der Ereignisse, die an den Rollout-Manager übergeben werden, nicht garantieren.
 
-* Die Verwendung einer solchen Rollout-Konfiguration kann im Falle von parallelen Aktualisierungen derselben Ressource zu Bestätigungskonflikten führen.
+* Die Verwendung einer solchen Rollout-Konfiguration kann zu Commitkonflikten führen, wenn gleichzeitige Aktualisierungen derselben Ressource auftreten.
 
 Auslöser vom Typ `onModify` sollten daher *nur* verwendet werden, wenn die Vorteile einer automatischen Rollout-Initiierung die potenziellen Leistungsprobleme überwiegen.
 
@@ -188,11 +186,11 @@ Auslöser vom Typ `onModify` sollten daher *nur* verwendet werden, wenn die Vort
 
 Zur Erinnerung:
 
-* Neben der Anpassung von Rollout-Aktionen ermöglicht MSM auch die Anpassung von Knoteneigenschaften, für die ein Rollout durchgeführt wird. Die [MSM-OSGi-Konfiguration ermöglicht das Ausschließen von Knotentypen](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization), sodass diese nicht aus der Quelle in die Live Copy kopiert werden.
+* Neben der Anpassung von Rollout-Aktionen ermöglicht MSM auch die Anpassung von Knoteneigenschaften, für die ein Rollout durchgeführt wird. Die [Mit der MSM OSGi-Konfiguration können Sie Knotentypen ausschließen](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) aus der Quelle in die Live Copy kopiert werden.
 
 ## Weiterführende Informationen {#further-information}
 
-Die entsprechenden Themen werden auf dieser Seite sowie auf den folgenden Seiten behandelt:
+Diese und die folgenden Seiten behandeln die zugehörigen Probleme:
 
 * [Erstellen und Synchronisieren von Live Copies](/help/sites-administering/msm-livecopy.md)
 * [Konsole „Live Copy-Übersicht“](/help/sites-administering/msm-livecopy-overview.md)

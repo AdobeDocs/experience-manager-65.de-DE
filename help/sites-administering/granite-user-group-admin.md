@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 4dd216167f97eb6f6181586b57694b139872c5ef
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '958'
-ht-degree: 67%
+source-wordcount: '959'
+ht-degree: 64%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 67%
 
 Da Granite die CRX-Repository-Implementierung der JCR-API-Spezifikation enthält, verfügt es über eine eigene Benutzer- und Gruppenverwaltung.
 
-Diese Konten bilden die Grundlage der [AEM-Konten](/help/sites-administering/security.md). Sämtliche in der Granite-Verwaltung durchgeführten Kontoänderungen werden widergespiegelt, falls/wenn auf die Konten über die [AEM-Benutzerkonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (z.B. `http://localhost:4502/useradmin`) zugegriffen wird. In der Konsole AEM Benutzer können Sie auch die Berechtigungen und andere AEM verwalten.
+Diese Konten bilden die Grundlage der [AEM](/help/sites-administering/security.md) und alle Kontoänderungen, die mit der Granite-Verwaltung vorgenommen werden, werden angezeigt, wenn/wenn der Zugriff auf die Konten über die [AEM-Benutzerkonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (z. B. `http://localhost:4502/useradmin`). In der Konsole AEM Benutzer können Sie auch die Berechtigungen und andere AEM verwalten.
 
 Granite-Benutzer- und Gruppenverwaltungskonsolen sind beide über das **[Instrumente](/help/sites-administering/tools-consoles.md)** Konsole der Touch-optimierten Benutzeroberfläche:
 

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 17c198c744111753ffffcc0758f98859524c964e
-workflow-type: ht
-source-wordcount: '730'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '732'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ In einer SPA stellt die Seitenkomponente die HTML-Elemente ihrer untergeordneten
 
 >[!NOTE]
 >
->Der SPA-Editor ist die empfohlene Lösung für Projekte, bei denen Client-seitiges Rendering auf Basis eines SPA-Frameworks (z. B. React oder Angular) erforderlich ist.
+>Der SPA Editor ist die empfohlene Lösung für Projekte, die SPA Framework-basiertes Client-seitiges Rendering erfordern (z. B. React oder Angular).
 
 ## Einführung {#introduction}
 
@@ -32,7 +32,7 @@ Die Seitenkomponente für eine SPA stellt die HTML-Elemente ihrer untergeordnete
 
 ## Seitenmodellverwaltung {#page-model-management}
 
-Die Auflösung und Verwaltung des Seitenmodells wird an ein bereitgestelltes [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager)-Modul delegiert. Die SPA muss mit dem `PageModelManager`-Modul interagieren, wenn es initialisiert wird, um das anfängliche Seitenmodell abzurufen und sich für Modellaktualisierungen zu registrieren – die meistens auftreten, wenn der Autor die Seite über den Seiteneditor bearbeitet. Der `PageModelManager` ist für das SPA-Projekt als NPM-Paket zugänglich. Als Dolmetscher zwischen AEM und der SPA soll der `PageModelManager` die SPA begleiten.
+Die Auflösung und Verwaltung des Seitenmodells wird an ein bereitgestelltes [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager)-Modul delegiert. Die SPA muss mit dem `PageModelManager`-Modul interagieren, wenn es initialisiert wird, um das anfängliche Seitenmodell abzurufen und sich für Modellaktualisierungen zu registrieren – die meistens auftreten, wenn der Autor die Seite über den Seiteneditor bearbeitet. Der `PageModelManager` ist für das SPA-Projekt als NPM-Paket zugänglich. Als Dolmetscher zwischen AEM und der SPA soll der `PageModelManager` die SPA begleiten.
 
 Damit die Seite erstellt werden kann, muss eine Client-Bibliothek mit dem Namen `cq.authoring.pagemodel.messaging` hinzugefügt werden, um einen Kommunikationskanal zwischen der SPA und dem Seiteneditor bereitzustellen. Wenn die SPA-Seitenkomponente von der page wcm/core-Komponente erbt, gibt es folgende Optionen, um die Kategorie der `cq.authoring.pagemodel.messaging`-Client-Bibliothek verfügbar zu machen:
 

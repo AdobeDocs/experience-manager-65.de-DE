@@ -10,32 +10,32 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 13f15bee38b6b4af4cd59376849810a788f0c467
-workflow-type: ht
-source-wordcount: '3583'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '3584'
+ht-degree: 70%
 
 ---
 
 # Erweitern der Workflow-Funktionen{#extending-workflow-functionality}
 
-In diesem Kapitel wird beschrieben, wie Sie angepasste Schritt-Komponenten für Ihre Workflows entwickeln und programmatisch mit den Workflows interagieren können.
+Hier wird beschrieben, wie Sie benutzerdefinierte Schritt-Komponenten für Ihre Workflows entwickeln und wie Sie programmatisch mit Workflows interagieren.
 
-Das Erstellen eines angepassten Workflow-Schritts umfasst die folgenden Aktivitäten:
+Die Erstellung eines benutzerdefinierten Workflow-Schritts umfasst die folgenden Aktivitäten:
 
-* Entwickeln der Komponente des Workflow-Schritts
-* Implementieren der Schrittfunktionalität als OSGi-Dienst oder ECMA-Skript
+* Entwickeln Sie die Workflow-Schritt-Komponente.
+* Implementieren Sie die Schrittfunktion als OSGi-Dienst oder ECMA-Skript.
 
-Sie können auch [mit Ihren Workflows von Ihren Programmen und Skripten interagieren](/help/sites-developing/workflows-program-interaction.md).
+Sie können auch [mit Ihren Workflows aus Ihren Programmen und Skripten interagieren](/help/sites-developing/workflows-program-interaction.md).
 
-## Workflow-Schritt-Komponenten – die Grundlagen {#workflow-step-components-the-basics}
+## Workflow-Schritt-Komponenten - Grundlagen {#workflow-step-components-the-basics}
 
-Eine Workflow-Schritt-Komponente definiert das Erscheinungsbild und das Verhalten des Schritts beim Erstellen von Workflow-Modellen:
+Eine Workflow-Schritt-Komponente definiert das Erscheinungsbild und Verhalten des Schritts beim Erstellen von Workflow-Modellen:
 
-* Kategorie und Schrittname im Workflow-Sidekick
-* Erscheinungsbild des Schritts in Workflow-Modellen
-* Dialogfeld „Bearbeiten“ für die Konfiguration der Komponenteneigenschaften
-* Dienst oder Skript, der bzw. das zur Laufzeit ausgeführt wird
+* Die Kategorie und der Schrittname im Workflow-Sidekick.
+* Das Erscheinungsbild des Schritts in Workflow-Modellen.
+* Das Dialogfeld &quot;Bearbeiten&quot;zum Konfigurieren der Komponenteneigenschaften.
+* Der Dienst oder das Skript, der/das zur Laufzeit ausgeführt wird.
 
 Wie [alle Komponenten](/help/sites-developing/components.md) erben Workflow-Schritt-Komponenten von der Komponente, die für die Eigenschaft `sling:resourceSuperType` festgelegt ist. Das folgende Diagramm zeigt die Hierarchie von `cq:component`-Knoten, die die Grundlage aller Workflow-Schritt-Komponenten bilden. Das Diagramm enthält auch die Komponenten **Prozess-Schritt**, **Teilnehmer-Schritt** und **Dynamischer-Teilnehmer-Schritt**, da sie die gängigsten (und grundlegendsten) Ausgangspunkte für die Entwicklung angepasster Schritt-Komponenten darstellen.
 
@@ -52,27 +52,26 @@ Wie [alle Komponenten](/help/sites-developing/components.md) erben Workflow-Schr
 >1. Erstellen Sie das erforderliche Element erneut (d. h. wie es in `/libs` unter `/apps` existiert.
 >2. Nehmen Sie die gewünschten Änderungen in `/apps` vor.
 
-
 Die Komponente `/libs/cq/workflow/components/model/step` ist der nächste gemeinsame Vorgänger von **Prozess-Schritt**, **Teilnehmer-Schritt** und **Dynamischer-Teilnehmer-Schritt**, die alle die folgenden Elemente erben:
 
 * `step.jsp`
 
-   Das Skript `step.jsp` rendert den Titel der Schritt-Komponente, wenn sie zu einem Modell hinzugefügt wird.
+  Das Skript `step.jsp` rendert den Titel der Schritt-Komponente, wenn sie zu einem Modell hinzugefügt wird.
 
-   ![wf-22-1](assets/wf-22-1.png)
+  ![wf-22-1](assets/wf-22-1.png)
 
 * [cq:dialog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
 
-   Ein Dialogfeld mit den folgenden Registerkarten:
+  Ein Dialogfeld mit den folgenden Registerkarten:
 
-   * **Allgemein**: für die Bearbeitung von Titel und Beschreibung
-   * **Erweitert**: für die Bearbeitung von E-Mail-Benachrichtigungseigenschaften
+   * **Häufig**: zum Bearbeiten des Titels und der Beschreibung.
+   * **Erweitert**: zum Bearbeiten der Eigenschaften von E-Mail-Benachrichtigungen.
 
-   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
+  ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
-   >[!NOTE]
-   >
-   >Wenn die Registerkarten des Dialogfelds „Bearbeiten“ nicht mit diesem Standard-Erscheinungsbild übereinstimmen, werden diese geerbten Registerkarten von den definierten Skripten, Knoteneigenschaften oder Dialogfeld-Registerkarten der Schritt-Komponente überschrieben.
+  >[!NOTE]
+  >
+  >Wenn die Registerkarten des Bearbeitungsdialogfelds einer Schritt-Komponente nicht mit diesem standardmäßigen Erscheinungsbild übereinstimmen, verfügt die Schritt-Komponente über definierte Skripte, Knoteneigenschaften oder Registerkarten für Dialogfelder, die diese geerbten Registerkarten überschreiben.
 
 ### ECMA-Skripte {#ecma-scripts}
 
@@ -88,17 +87,17 @@ Die folgenden Objekte sind (abhängig vom Schritttyp) bei ECMA-Skripten verfügb
 
 ### MetaDataMaps {#metadatamaps}
 
-Sie können mit Workflow-Metadaten Daten speichern, die während des Lebenszyklus des Workflows benötigt werden. Eine häufig vorkommende Anforderung bei Workflow-Schritten besteht im Speichern von Daten für die zukünftige Verwendung im Workflow oder im Abrufen der gespeicherten Daten.
+Sie können Workflow-Metadaten verwenden, um Informationen beizubehalten, die während der Lebensdauer des Workflows benötigt werden. Eine gängige Anforderung an Workflow-Schritte besteht darin, Daten für die zukünftige Verwendung im Workflow beizubehalten oder die gespeicherten Daten abzurufen.
 
 Es gibt drei Typen von MetaDataMap-Objekten – für `Workflow`-, `WorkflowData`- und `WorkItem`-Objekte. Sie alle sollen demselben Zweck dienen- dem Speichern von Metadaten.
 
-Ein WorkItem verfügt über seine eigene MetaDataMap, die nur verwendet werden kann, während das WorkItem (z. B. der Schritt) ausgeführt wird.
+Ein WorkItem verfügt über eine eigene MetaDataMap , die nur verwendet werden kann, während dieses Arbeitselement (z. B. Schritt) ausgeführt wird.
 
 Die MetaDataMaps von `Workflow` sowie von `WorkflowData` werden über den gesamten Workflow hinweg gemeinsam verwendet. In diesen Fällen empfiehlt es sich, nur die MetaDataMap von `WorkflowData` zu nutzen.
 
-## Erstellen von angepassten Workflow-Schritt-Komponenten {#creating-custom-workflow-step-components}
+## Erstellen benutzerdefinierter Workflow-Schrittkomponenten {#creating-custom-workflow-step-components}
 
-Workflow-Schritt-Komponenten können [auf dieselbe Weise erstellt werden wie jede andere Komponente](/help/sites-developing/components.md).
+Workflow-Schritt-Komponenten können [auf die gleiche Weise erstellt wie jede andere Komponente](/help/sites-developing/components.md).
 
 Für das Erben von einer der (vorhandenen) Basis-Schritt-Komponenten fügen Sie die folgende Eigenschaft zum Knoten `cq:Component` hinzu:
 
@@ -110,13 +109,13 @@ Für das Erben von einer der (vorhandenen) Basis-Schritt-Komponenten fügen Sie 
    * `cq/workflow/components/model/participant`
    * `cq/workflow/components/model/dynamic_participant`
 
-### Festlegen von Standardtitel und -Beschreibung für Schrittinstanzen {#specifying-the-default-title-and-description-for-step-instances}
+### Angeben des Standardtitels und der Beschreibung für Schrittinstanzen {#specifying-the-default-title-and-description-for-step-instances}
 
-Mit dem folgenden Verfahren können Sie die Standardwerte für die Felder **Titel** und **Beschreibung** auf der Registerkarte **Allgemein** festlegen.
+Gehen Sie wie folgt vor, um Standardwerte für die **Titel** und **Beschreibung** -Felder auf **Häufig** Registerkarte.
 
 >[!NOTE]
 >
->Die Feldwerte werden auf der Schrittinstanz angezeigt, wenn die beiden folgenden Voraussetzungen erfüllt sind:
+>Die Feldwerte werden in der Schrittinstanz angezeigt, wenn die beiden folgenden Anforderungen erfüllt sind:
 >
 >* Das Dialogfeld „Bearbeiten“ des Schritts speichert den Titel und die Beschreibung in den folgenden Orten: >
 >* `./jcr:title`
@@ -125,7 +124,6 @@ Mit dem folgenden Verfahren können Sie die Standardwerte für die Felder **Tite
 >  Diese Anforderung gilt als erfüllt, wenn das Dialogfeld „Bearbeiten“ die Registerkarte „Gemeinsam“ verwendet, die von der Komponente `/libs/cq/flow/components/step/step` implementiert wird.
 >
 >* Die Schritt-Komponente oder ein Vorgänger der Komponente überschreibt das Skript `step.jsp` nicht, das von der Komponente `/libs/cq/flow/components/step/step` implementiert wird.
-
 
 1. Fügen Sie unter dem Knoten `cq:Component` den folgenden Knoten hinzu:
 
@@ -150,7 +148,7 @@ Mit dem folgenden Verfahren können Sie die Standardwerte für die Felder **Tite
 
 >[!NOTE]
 >
->Siehe [Aufbewahren von Daten und Zugreifen auf Daten](#persisting-and-accessing-data). Insbesondere Informationen zum Zugreifen auf die Eigenschaftswerte zur Laufzeit finden Sie unter [Zugreifen auf Dialogfeld-Eigenschaftswerte zur Laufzeit](#accessing-dialog-property-values-at-runtime).
+>Siehe [Beständige Daten und Zugriff](#persisting-and-accessing-data). Insbesondere Informationen zum Zugriff auf den Eigenschaftswert zur Laufzeit finden Sie unter [Zugreifen auf Dialogfeldeigenschaftswerte zur Laufzeit](#accessing-dialog-property-values-at-runtime).
 
 Die name-Eigenschaft von `cq:Widget`-Elementen gibt den JCR-Knoten an, der den Wert des Widgets speichert. Wenn Widgets im Dialog der Schrittkomponenten des Workflows Werte unterhalb des Knotens `./metaData` speichern, wird der Wert zum Workflow `MetaDataMap` hinzugefügt.
 
@@ -174,9 +172,9 @@ Jede Basis-Schritt-Komponente ermöglicht es den Entwicklern der Workflow-Modell
 
 * Prozess-Schritt: der Dienst oder das ECMA-Skript, das zur Laufzeit ausgeführt werden soll
 * Teilnehmer-Schritt: die ID des Benutzers, dem das erzeugte Arbeitselement zugewiesen wird
-* Dynamischer-Teilnehmer-Schritt: der Dienst oder das ECMA-Skript, das die ID des Benutzers auswählt, dem das Arbeitselement zugewiesen wird
+* Dynamischer Teilnehmer - Schritt: Der Dienst oder das ECMA-Skript, das die ID des Benutzers auswählt, dem das Arbeitselement zugewiesen ist.
 
-Um die Komponente auf die Verwendung in einem bestimmten Workflow-Szenario auszurichten, konfigurieren Sie die wichtige Funktion bei der Entwicklung und entfernen Sie die Möglichkeit für Modellentwickler, sie zu ändern.
+Um die Komponente auf die Verwendung in einem bestimmten Workflow-Szenario zu fokussieren, konfigurieren Sie die Schlüsselfunktion im Design und entfernen Sie die Möglichkeit für Modellentwickler, sie zu ändern.
 
 1. Fügen Sie unter dem Knoten cq:component den folgenden Knoten hinzu:
 
@@ -235,9 +233,9 @@ Führen Sie das folgende Verfahren auf der neuen Komponente durch (siehe [Erstel
 
    * Name: `DIALOG_PATH`
    * Typ: `String`
-   * Wert: der Pfad, der zum Dialogfeld führt
+   * Wert: Der Pfad, der zum Dialogfeld aufgelöst wird
 
-### Konfigurieren des Laufzeitverhaltens des Workflow-Schritts {#configuring-the-workflow-step-runtime-behavior}
+### Konfigurieren des Laufzeitverhaltens von Workflow-Schritten {#configuring-the-workflow-step-runtime-behavior}
 
 Fügen Sie unter dem Knoten `cq:Component` den Knoten `cq:EditConfig` hinzu. Fügen Sie darunter einen `nt:unstructured`-Knoten hinzu (er muss den Namen `cq:formParameters` aufweisen) und fügen Sie zu diesem Knoten die folgenden Eigenschaften hinzu:
 
@@ -252,19 +250,19 @@ Fügen Sie unter dem Knoten `cq:Component` den Knoten `cq:EditConfig` hinzu. Fü
 * Name: `DO_NOTIFY`
 
    * Typ: `Boolean`
-   * Wert: gibt an, ob E-Mail-Benachrichtigungen für Benutzerteilnahme-Schritte versendet werden sollen (und geht davon aus, dass der E-Mail-Server korrekt konfiguriert ist)
+   * Wert: gibt an, ob E-Mail-Benachrichtigungen für Schritte zur Benutzerbeteiligung gesendet werden sollen (und geht davon aus, dass der Mailserver korrekt konfiguriert ist)
 
-## Aufbewahren von Daten und Zugreifen auf Daten {#persisting-and-accessing-data}
+## Beständige Daten und Zugriff {#persisting-and-accessing-data}
 
-### Aufbewahren von Daten für nachfolgende Workflow-Schritte {#persisting-data-for-subsequent-workflow-steps}
+### Beständige Daten für nachfolgende Workflow-Schritte {#persisting-data-for-subsequent-workflow-steps}
 
-Sie können mit Workflow-Metadaten Daten speichern, die während des Lebenszyklus des Workflows – und zwischen einzelnen Schritten – benötigt werden. Eine häufig vorkommende Anforderung bei Workflow-Schritten besteht im Speichern von Daten für die zukünftige Verwendung oder im Abrufen der gespeicherten Daten von vorhergehenden Schritten.
+Sie können Workflow-Metadaten verwenden, um Informationen beizubehalten, die während der Lebensdauer des Workflows - und zwischen Schritten - erforderlich sind. Eine gängige Anforderung an Workflow-Schritte besteht darin, Daten für die zukünftige Verwendung beizubehalten oder die beibehaltenen Daten aus vorherigen Schritten abzurufen.
 
 Workflow-Metadaten werden in einem [`MetaDataMap`](#metadatamaps)-Objekt gespeichert. Die Java-API stellt die Methode [`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) bereit, die ein [`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html)-Objekt zurückgibt, das das entsprechende `MetaDataMap`-Objekt bereitstellt. Dieses `WorkflowData``MetaDataMap`-Objekt ist für den OSGi-Dienst oder das ECMA-Skript einer Schritt-Komponente verfügbar.
 
 #### Java {#java}
 
-Die Ausführungsmethode der `WorkflowProcess`-Implementierung wird an das Objekt `WorkItem` weitergegeben. Mit diesem Objekt können Sie das `WorkflowData`-Objekt für die aktuelle Workflow-Instanz abrufen. Im folgenden Beispiel wird ein Element zum Workflow-Objekt `MetaDataMap` hinzugefügt und jedes Element protokolliert. Das Element (&quot;mykey&quot;, &quot;My Step Value&quot;) ist für nachfolgende Schritte im Workflow verfügbar.
+Die Ausführungsmethode der `WorkflowProcess`-Implementierung wird an das Objekt `WorkItem` weitergegeben. Mit diesem Objekt können Sie das `WorkflowData`-Objekt für die aktuelle Workflow-Instanz abrufen. Im folgenden Beispiel wird ein Element zum Workflow-Objekt `MetaDataMap` hinzugefügt und jedes Element protokolliert. Das Element (&quot;mykey&quot;, &quot;My Step Value&quot;) steht für nachfolgende Schritte im Workflow zur Verfügung.
 
 ```java
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
@@ -288,7 +286,7 @@ Die Variable `graniteWorkItem` ist die ECMA-Skript-Repräsentation des aktuellen
 
 >[!NOTE]
 >
->Die Variable `metaData`, die dem Schritt-Skript unmittelbar zur Verfügung steht, enthält die Metadaten des Schritts. Die Schrittmetadaten unterscheiden sich von den Workflow-Metadaten.
+>Die Variable `metaData`, die dem Schritt-Skript unmittelbar zur Verfügung steht, enthält die Metadaten des Schritts. Die Schritt-Metadaten unterscheiden sich von den Workflow-Metadaten.
 
 ```
 var currentDateInMillis = new Date().getTime();
@@ -304,7 +302,7 @@ while (iterator.hasNext()){
 }
 ```
 
-### Zugreifen auf Dialog-Eigenschaftswerte zur Laufzeit {#accessing-dialog-property-values-at-runtime}
+### Zugreifen auf Dialogfeldeigenschaftswerte zur Laufzeit {#accessing-dialog-property-values-at-runtime}
 
 Das Objekt `MetaDataMap` der Workflow-Instanzen ist nützlich, um Daten während des Workflow-Lebenszyklus zu speichern und abzurufen. Bei Implementierungen von Workflow-Schritt-Komponenten ist `MetaDataMap` besonders hilfreich, um Eigenschaftswerte der Komponenten zur Laufzeit abzurufen.
 
@@ -338,7 +336,7 @@ public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) th
     }
 ```
 
-Wenn ein Prozess-Schritt, der diese Java-Implementierung nutzt, ausgeführt wird, enthält das Protokoll den folgenden Eintrag:
+Wenn ein Prozessschritt, der diese Java-Implementierung verwendet, ausgeführt wird, enthält das Protokoll den folgenden Eintrag:
 
 ```xml
 16.02.2018 12:07:39.566 *INFO* [JobHandler: /var/workflow/instances/server0/2018-02-16/model_855140139900189:/content/we-retail/de] com.adobe.example.workflow.impl.process.LogArguments workflow metadata for key PROCESS_ARGS and value argument1, argument2
@@ -346,7 +344,7 @@ Wenn ein Prozess-Schritt, der diese Java-Implementierung nutzt, ausgeführt wird
 
 #### ECMA-Skript {#ecma-script-1}
 
-Das folgende ECMA-Skript wird als Prozess für den **Prozess-Schritt** genutzt. Es protokolliert die Anzahl an Argumenten und die Argumentwerte:
+Das folgende ECMA-Skript wird als Prozess für die **Prozessschritt**. Es protokolliert die Anzahl der Argumente und die Argumentwerte:
 
 ```
 var iterator = graniteWorkItem.getWorkflowData().getMetaDataMap().keySet().iterator();
@@ -360,7 +358,7 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 
 >[!NOTE]
 >
->In diesem Abschnitt wird die Verwendung von Argumenten für Prozess-Schritte beschrieben. Diese Erklärung gilt auch für die Auswahl von dynamischen Teilnehmern.
+>In diesem Abschnitt wird die Verwendung von Argumenten für Prozess-Schritte beschrieben. Die Informationen gelten auch für dynamische Teilnehmer.
 
 >[!NOTE]
 >Ein weiteres Beispiel für das Speichern von Komponenteneigenschaften in Workflow-Metadaten finden Sie unter Beispiel: Erstellen eines Logger-Workflow-Schritts. Dieses Beispiel enthält ein Dialogfeld, das den Metadatenwert mit einem anderen Schlüssel als PROCESS_ARGS verknüpft.
@@ -371,15 +369,15 @@ In einem Skript für eine **Prozess-Schritt-Komponente** sind die Argumente übe
 
 Beim Erstellen einer benutzerdefinierten Schritt-Komponente ist das Objekt `metaData` in einem Skript verfügbar. Dieses Objekt ist auf ein einziges String-Argument beschränkt.
 
-## Entwickeln von Prozess-Schrittimplementierungen {#developing-process-step-implementations}
+## Entwickeln von Implementierungen von Prozessschritten {#developing-process-step-implementations}
 
-Wenn Prozess-Schritte während eines Workflow-Prozesses gestartet werden, senden die Schritte eine Anfrage an einen OSGi-Dienst oder führen ein ECMA-Skript aus. Entwickeln Sie den Dienst oder das ECMA-Skript, der bzw. das die Aktionen ausführt, die für Ihren Workflow erforderlich sind.
+Wenn Prozessschritte während des Prozesses gestartet werden, senden die Schritte eine Anfrage an einen OSGi-Dienst oder führen ein ECMA-Skript aus. Entwickeln Sie den Dienst oder das ECMA-Skript, das die für Ihren Workflow erforderlichen Aktionen ausführt.
 
 >[!NOTE]
 >
->Informationen zum Verknüpfen der Prozess-Schritt-Komponente mit dem Dienst oder Skript finden Sie unter [Prozess-Schritt](/help/sites-developing/workflows-step-ref.md#process-step) oder [Überschreiben der Schritt-Implementierung](#overriding-the-step-implementation).
+>Informationen zum Verknüpfen der Prozessschritt-Komponente mit dem Dienst oder Skript finden Sie unter [Prozessschritt](/help/sites-developing/workflows-step-ref.md#process-step) oder [Überschreiben der Schrittimplementierung](#overriding-the-step-implementation).
 
-### Implementieren eines Prozess-Schritts mit einer Java-Klasse {#implementing-a-process-step-with-a-java-class}
+### Implementieren eines Prozessschritts mit einer Java-Klasse {#implementing-a-process-step-with-a-java-class}
 
 So definieren Sie einen Prozess-Schritt als OSGi-Dienstkomponente (Java-Paket):
 
@@ -397,9 +395,9 @@ So definieren Sie einen Prozess-Schritt als OSGi-Dienstkomponente (Java-Paket):
 1. Fügen Sie im Editor für **Modelle** über die allgemeine **Prozess-Schritt**-Komponente den Prozess-Schritt zum Workflow hinzu.
 1. Wechseln Sie im Dialogfeld „Bearbeiten“ (vom **Prozess-Schritt**) zur Registerkarte **Prozess** und wählen Sie Ihre Prozessimplementierung aus.
 1. Wenn Sie Argumente in Ihrem Code verwenden, legen Sie die **Prozessargumente** fest. Beispiel: false.
-1. Speichern Sie die Änderungen für den Schritt und das Workflow-Modell (obere linke Ecke des Modell-Editors).
+1. Speichern Sie die Änderungen sowohl für den Schritt als auch für das Workflow-Modell (obere linke Ecke des Modell-Editors).
 
-Die Java-Methoden, respektive die Klassen, die ausführbare Java-Methoden implementieren, werden als OSGi-Dienste implementiert, sodass Sie Methoden jederzeit während der Laufzeit hinzufügen können.
+Die Java-Methoden bzw. die Klassen, die die ausführbare Java-Methode implementieren, werden als OSGi-Dienste registriert, sodass Sie Methoden jederzeit während der Laufzeit hinzufügen können.
 
 Die folgende OSGi-Komponente fügt die Eigenschaft `approved` zum Seiteninhaltsknoten hinzu, wenn die Payload eine Seite ist:
 
@@ -465,13 +463,13 @@ public class MyProcess implements WorkflowProcess {
 
 >[!NOTE]
 >
->Wenn der Prozess drei Mal hintereinander fehlschlägt, wird ein Element im Posteingang des Workflow-Administrators platziert.
+>Wenn der Prozess dreimal hintereinander fehlschlägt, wird ein Element im Posteingang des Workflow-Administrators platziert.
 
-### Verwenden von ECMA-Skripten {#using-ecmascript}
+### Verwenden von ECMAScript {#using-ecmascript}
 
-Mit ECMA-Skripten können Skriptentwickler Prozess-Schritte implementieren. Die Skripte befinden sich im JCR-Repository und werden von dort aus ausgeführt.
+ECMA-Skripte ermöglichen es Skriptentwicklern, Prozessschritte zu implementieren. Die Skripte befinden sich im JCR-Repository und werden von dort aus ausgeführt.
 
-In der folgenden Tabelle sind die Variablen aufgeführt, die Prozess-Skripten unmittelbar zur Verfügung stehen und Zugriff auf Objekte der Workflow-Java-API bieten.
+In der folgenden Tabelle sind die Variablen aufgeführt, die unmittelbar für Prozessskripte verfügbar sind und Zugriff auf Objekte der Workflow-Java-API bieten.
 
 | Java-Klasse | Name der Skriptvariablen | Beschreibung |
 |---|---|---|
@@ -538,26 +536,26 @@ So verwenden Sie das Skript:
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | Der Name, der im Dialogfeld „Bearbeiten“ angezeigt werden soll. |
 
-1. Bearbeiten Sie die **Prozess-Schritt**-Instanz und legen Sie das zu verwendende Skript fest.
+1. Bearbeiten Sie die **Prozessschritt** und geben Sie das zu verwendende Skript an.
 
-## Entwickeln von Teilnehmer-Auswahlen {#developing-participant-choosers}
+## Entwickeln von Teilnehmerauswahl {#developing-participant-choosers}
 
-Sie können Teilnehmer-Auswahlen für **Dynamischer-Teilnehmer-Schritt**-Komponenten entwickeln.
+Sie können Teilnehmerentscheidungen für **Dynamischer Teilnehmer - Schritt** Komponenten.
 
 Wenn eine **Dynamischer-Teilnehmer-Schritt**-Komponente während eines Workflows gestartet wird, muss der Schritt feststellen, welchem Teilnehmer das erzeugte Arbeitselement zugewiesen werden kann. Dazu geht der Schritt auf eine der folgenden Weisen vor:
 
 * Er sendet eine Anfrage an einen OSGi-Dienst.
-* Er führt ein ECMA-Skript zur Auswahl des Teilnehmers aus.
+* führt ein ECMA-Skript aus, um den Teilnehmer auszuwählen
 
-Sie können einen Dienst oder ein ECMA-Skript entwickeln, der bzw. das den Teilnehmer basierend auf den Anforderungen des Workflows auswählt.
+Sie können einen Dienst oder ein ECMA-Skript entwickeln, das den Teilnehmer entsprechend den Anforderungen Ihres Workflows auswählt.
 
 >[!NOTE]
 >
->Informationen zum Verknüpfen der Komponente **Dynamic Participant Step** mit dem Dienst oder dem Skript finden Sie unter [Dynamischer-Teilnehmer-Schritt](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) oder [Überschreiben der Schritt-Implementierung](#persisting-and-accessing-data).
+>Weitere Informationen zur Zuordnung Ihrer **Dynamischer Teilnehmer - Schritt** -Komponente mit dem Dienst oder Skript, siehe [Dynamischer Teilnehmer - Schritt](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) oder [Überschreiben der Schrittimplementierung](#persisting-and-accessing-data).
 
-### Entwickeln einer Teilnehmer-Auswahl mit einer Java-Klasse {#developing-a-participant-chooser-using-a-java-class}
+### Entwickeln einer Teilnehmerauswahl mit einer Java-Klasse {#developing-a-participant-chooser-using-a-java-class}
 
-So definieren Sie einen Teilnehmer-Schritt als OSGi-Dienstkomponente (Java-Bundle):
+So definieren Sie einen Teilnehmerschritt als OSGi-Dienstkomponente (Java-Klasse):
 
 1. Die OSGi-Komponente muss die `ParticipantStepChooser`-Schnittstelle mit ihrer `getParticipant()`-Methode implementieren. Siehe Beispiel-Code unten.
 
@@ -615,15 +613,15 @@ So definieren Sie einen Teilnehmer-Schritt als OSGi-Dienstkomponente (Java-Bundl
 1. Fügen Sie im Editor für **Modelle** über die allgemeine **Dynamischer-Teilnehmer-Schritt**-Komponente den Dynamischer-Teilnehmer-Schritt zum Workflow hinzu.
 1. Wählen Sie im Dialogfeld „Bearbeiten“ auf der Registerkarte **Teilnehmer-Auswahl** Ihre Auswahlimplementierung aus.
 1. Wenn Sie Argumente in Ihrem Code verwenden, legen Sie die **Prozessargumente** fest. In diesem Beispiel: `/content/we-retail/de`.
-1. Speichern Sie die Änderungen für den Schritt und das Workflow-Modell.
+1. Speichern Sie die Änderungen sowohl für den Schritt als auch für das Workflow-Modell.
 
-### Entwickeln einer Teilnehmer-Auswahl mit einem ECMA-Skript {#developing-a-participant-chooser-using-an-ecma-script}
+### Entwickeln einer Teilnehmerauswahl mit einem ECMA-Skript {#developing-a-participant-chooser-using-an-ecma-script}
 
-Sie können ein ECMA-Skript erstellen, das den Benutzer auswählt, dem das vom **Teilnehmer-Schritt** erzeugte Arbeitselement zugewiesen wird. Das Skript muss eine Funktion namens `getParticipant` enthalten, das keine Argumente benötigt und einen `String` zurückgibt, der die ID eines Benutzers oder einer Gruppe enthält.
+Sie können ein ECMA-Skript erstellen, das den Benutzer auswählt, dem das Arbeitselement zugewiesen ist, dem die **Teilnehmer-Schritt** generiert. Das Skript muss eine Funktion namens `getParticipant` enthalten, das keine Argumente benötigt und einen `String` zurückgibt, der die ID eines Benutzers oder einer Gruppe enthält.
 
-Die Skripte befinden sich im JCR-Repository und werden von dort aus ausgeführt.
+Skripte befinden sich im JCR-Repository und werden von dort aus ausgeführt.
 
-In der folgenden Tabelle sind die Variablen aufgeführt, die unmittelbaren Zugriff auf Workflow-Java-Objekte in Ihren Skripten bereitstellen.
+In der folgenden Tabelle sind die Variablen aufgeführt, die sofortigen Zugriff auf Workflow-Java-Objekte in Ihren Skripten bieten.
 
 | Java-Klasse | Name der Skriptvariablen |
 |---|---|
@@ -657,18 +655,17 @@ function getParticipant() {
 
 1. Bearbeiten Sie die [Dynamischer-Teilnehmer-Schritt](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step)-Instanz und legen Sie das zu verwendende Skript fest.
 
-## Verarbeiten von Workflow-Paketen {#handling-workflow-packages}
+## Handhabung von Workflow-Paketen {#handling-workflow-packages}
 
-[Workflow-Pakete](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) können zur Verarbeitung an einen Workflow weitergegeben werden. Workflow-Pakete enthalten Verweise auf Ressourcen wie Seiten und Assets.
+[Workflow-Pakete](/help/sites-authoring/workflows-applying.md#specifying-workflow-details-in-the-create-workflow-wizard) kann zur Verarbeitung an einen Workflow übergeben werden. Workflow-Pakete enthalten Verweise auf Ressourcen wie Seiten und Assets.
 
 >[!NOTE]
 >
->Die folgenden Workflow-Prozess-Schritte akzeptieren Workflow-Pakete für die Massen-Seitenaktivierung:
+>Die folgenden Workflow-Prozessschritte akzeptieren Workflow-Pakete für die Massenaktivierung von Seiten:
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
-
 
 Sie können Workflow-Schritte entwickeln, die die Paketressourcen abrufen und verarbeiten. Die folgenden Elemente des Pakets `com.day.cq.workflow.collection` bieten Zugriff auf Workflow-Pakete:
 
@@ -676,7 +673,7 @@ Sie können Workflow-Schritte entwickeln, die die Paketressourcen abrufen und ve
 * `ResourceCollectionUtil`: Zum Abrufen von ResourceCollection-Objekten
 * `ResourceCollectionManager`: Erstellt Sammlungen und ruft sie ab. Eine Implementierung wird als OSGi-Dienst. bereitgestellt.
 
-Die folgende Beispiel-Java-Klasse zeigt, wie Paketressourcen abgerufen werden:
+Die folgende Java-Beispielklasse zeigt, wie Paketressourcen abgerufen werden:
 
 ```java
 package com.adobe.example;
@@ -780,15 +777,15 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 }
 ```
 
-## Beispiel: Erstellen eines angepassten Schritts {#example-creating-a-custom-step}
+## Beispiel: Erstellen eines benutzerspezifischen Schritts {#example-creating-a-custom-step}
 
-Eine einfache Möglichkeit, einen eigenen angepassten Schritt zu erstellen, besteht darin, einen vorhandenen Schritt aus folgendem Verzeichnis zu kopieren:
+Eine einfache Möglichkeit, mit der Erstellung Ihres eigenen benutzerdefinierten Schritts zu beginnen, besteht darin, einen vorhandenen Schritt aus folgenden Quellen zu kopieren:
 
 `/libs/cq/workflow/components/model`
 
-### Erstellen des Basisschritts {#creating-the-basic-step}
+### Erstellen des grundlegenden Schritts {#creating-the-basic-step}
 
-1. Erstellen Sie den Pfad unter /apps erneut, z. B.:
+1. Erstellen Sie den Pfad unter /apps neu. Beispiel:
 
    `/apps/cq/workflow/components/model`
 
@@ -804,9 +801,9 @@ Eine einfache Möglichkeit, einen eigenen angepassten Schritt zu erstellen, best
 
    >[!NOTE]
    >
-   >Dieser Schritt gilt nicht für den Modell-Editor in der klassischen Benutzeroberfläche
+   >Dieser Schritt gilt nicht für den Modell-Editor der klassischen Benutzeroberfläche.
 
-1. Fügen Sie dann den kopierten Schritt in den Ordner /apps ein, z. B. als:
+1. Platzieren Sie dann den kopierten Schritt in den Ordner /apps . Beispiel:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -826,21 +823,21 @@ Eine einfache Möglichkeit, einen eigenen angepassten Schritt zu erstellen, best
 
    * `sling:resourceSuperType`
 
-      Muss von einem vorhandenen Schritt erben.
+     Muss von einem vorhandenen Schritt erben.
 
-      In diesem Beispiel erbt er vom Basisschritt unter `cq/workflow/components/model/step`, aber Sie können auch andere Supertypen wie `participant`, `process` usw. verwenden.
+     In diesem Beispiel erbt er vom Basisschritt unter `cq/workflow/components/model/step`, aber Sie können auch andere Supertypen wie `participant`, `process` usw. verwenden.
 
    * `jcr:title`
 
-      Das ist der Titel, der angezeigt wird, wenn die Komponente im Schritt-Browser aufgeführt wird (linkes Feld im Workflow-Modell-Editor).
+     Das ist der Titel, der angezeigt wird, wenn die Komponente im Schritt-Browser aufgeführt wird (linkes Feld im Workflow-Modell-Editor).
 
    * `cq:icon`
 
-      Zum Festlegen eines [Coral-Symbols](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) für den Schritt
+     Zum Festlegen eines [Coral-Symbols](https://helpx.adobe.com/de/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) für den Schritt
 
    * `componentGroup`
 
-      Muss eine der folgenden sein:
+     Muss eine der folgenden sein:
 
       * Kollaboration-Workflow
       * DAM-Workflow
@@ -863,9 +860,9 @@ Eine einfache Möglichkeit, einen eigenen angepassten Schritt zu erstellen, best
 
    ![wf-38](assets/wf-38.png)
 
-#### Definieren des Schritt-Dialogfelds „Konfigurieren“ {#defining-the-step-configure-dialog}
+#### Definieren des Dialogfelds &quot;Schritt konfigurieren&quot; {#defining-the-step-configure-dialog}
 
-Nach dem [Erstellen des Basisschritts](#creating-the-basic-step) definieren Sie den Schritt **Konfigurieren** wie folgt:
+Nachher [Erstellen des grundlegenden Schritts](#creating-the-basic-step), definieren Sie den Schritt . **Konfigurieren** Dialogfeld wie folgt:
 
 1. Konfigurieren Sie die Eigenschaften auf dem Knoten `cq:editConfig` wie folgt:
 
@@ -873,11 +870,12 @@ Nach dem [Erstellen des Basisschritts](#creating-the-basic-step) definieren Sie 
 
    * `cq:inherit`
 
-      Bei `true` erbt die Schritt-Komponente Eigenschaften von dem Schritt, den Sie im `sling:resourceSuperType` festgelegt haben.
+     Bei `true` erbt die Schritt-Komponente Eigenschaften von dem Schritt, den Sie im `sling:resourceSuperType` festgelegt haben.
 
    * `cq:disableTargeting`
 
-      Nach Bedarf festlegen
+     Nach Bedarf festlegen
+
    ![wf-39](assets/wf-39.png)
 
 1. Konfigurieren Sie die Eigenschaften auf dem Knoten `cq:formsParameter` wie folgt:
@@ -886,7 +884,7 @@ Nach dem [Erstellen des Basisschritts](#creating-the-basic-step) definieren Sie 
 
    * `jcr:title`
 
-      Legt den Standardtitel auf der Schritt-Karte in der Modellzuordnung und im Feld **Titel** des Konfigurationsdialogfelds **Mein angepasster Schritt – Eigenschaften** fest.
+     Legt den Standardtitel auf der Schritt-Karte in der Modellzuordnung und im Feld **Titel** des Konfigurationsdialogfelds **Mein angepasster Schritt – Eigenschaften** fest.
 
    * Sie können auch Ihre eigenen angepassten Eigenschaften definieren.
 
@@ -903,7 +901,7 @@ Nach dem [Erstellen des Basisschritts](#creating-the-basic-step) definieren Sie 
    * `afteredit: CQ.workflow.flow.Step.afterEdit`
    * `afterinsert: CQ.workflow.flow.Step.afterInsert`
 
-   Diese Konfiguration ist für das einwandfreie Funktionieren des Editors unabdingbar. In den meisten Fällen darf diese Konfiguration nicht geändert werden.
+   Diese Konfiguration ist für das ordnungsgemäße Funktionieren des Editors von wesentlicher Bedeutung. In den meisten Fällen darf diese Konfiguration nicht geändert werden.
 
    Wenn Sie jedoch `cq:inherit` auf „true“ festlegen (auf dem Knoten `cq:editConfig`, s. o.), können Sie diese Konfiguration erben, ohne sie explizit in die Schrittdefinition einschließen zu müssen. Wenn keine Vererbung vorliegt, müssen Sie diesen Knoten mit den folgenden Eigenschaften und Werten hinzufügen.
 
@@ -1026,7 +1024,7 @@ Die in diesem Beispiel verwendete Datei `_cq_dialog/.content.xml`:
 
 >[!NOTE]
 >
->Beachten Sie die allgemeinen und die Prozessknoten in der Dialogfeld-Definition. Sie werden von dem Prozess-Schritt geerbt, den wir als Supertyp für den angepassten Schritt verwendet haben:
+>Beachten Sie die allgemeinen Knoten und Prozessknoten in der Dialogfelddefinition. Diese werden aus dem Prozessschritt übernommen, den wir als Supertyp für unseren benutzerdefinierten Schritt verwendet haben:
 >
 >`sling:resourceSuperType : cq/workflow/components/model/process`
 

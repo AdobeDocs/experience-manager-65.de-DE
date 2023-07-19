@@ -13,10 +13,10 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1678'
-ht-degree: 2%
+source-wordcount: '1677'
+ht-degree: 3%
 
 ---
 
@@ -60,15 +60,15 @@ So greifen Sie auf die Gruppenkonsole zu:
    * Die Struktur der Community-Site muss eine Gruppenfunktion enthalten.
    * Diese Screenshots stammen aus dem Tutorial Erste Schritte nach [Erstellen von Gruppen in der Veröffentlichungsinstanz](/help/communities/published-site.md).
 
-   ![create-group](assets/create-group.png)
+  ![create-group](assets/create-group.png)
 
 * Wählen Sie die **Gruppenordner** um es zu öffnen.
 
-   Beim Öffnen werden alle vorhandenen Gruppen angezeigt, unabhängig davon, ob sie im Autor- oder Veröffentlichungsmodus erstellt wurden.
+  Beim Öffnen werden alle vorhandenen Gruppen angezeigt, unabhängig davon, ob sie im Autor- oder Veröffentlichungsmodus erstellt wurden.
 
-   In dieser Gruppenkonsole ist es möglich, neue Gruppen zu erstellen.
+  In dieser Gruppenkonsole ist es möglich, neue Gruppen zu erstellen.
 
-   ![create-new-group](assets/create-new-group.png)
+  ![create-new-group](assets/create-new-group.png)
 
 * Wählen Sie die **Gruppe erstellen** Schaltfläche.
 
@@ -78,34 +78,34 @@ So greifen Sie auf die Gruppenkonsole zu:
 
 * **Community-Gruppenname**
 
-   Ein Anzeigetitel für die Gruppe.
+  Ein Anzeigetitel für die Gruppe.
 Der Titel wird auf der veröffentlichten Site für die Gruppe angezeigt.
 
 * **Community-Gruppenbeschreibung**
 
-   Eine Beschreibung der Gruppe.
+  Eine Beschreibung der Gruppe.
 
 * **Community-Gruppen-Stammverzeichnis**
 
-   Der Stammpfad zur Gruppe.
+  Der Stammpfad zur Gruppe.
 Der Standardstamm ist die übergeordnete Site, der Stammordner kann jedoch an einen beliebigen Speicherort auf der Website verschoben werden. Es wird nicht empfohlen, sie zu ändern.
 
 * **Zusätzliche verfügbare Community-Gruppensprachen** Menü
 
-   Wählen Sie in der Dropdown-Liste die verfügbaren Gemeinschaftsgruppensprachen aus. Im Menü werden alle Sprachen angezeigt, in denen die übergeordnete Community-Site erstellt wird. Benutzer können in diesem Schritt unter diesen Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Gruppenkonsole der jeweiligen Community-Sites erstellt.
+  Wählen Sie in der Dropdown-Liste die verfügbaren Gemeinschaftsgruppensprachen aus. Im Menü werden alle Sprachen angezeigt, in denen die übergeordnete Community-Site erstellt wird. Benutzer können in diesem Schritt unter diesen Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Gruppenkonsole der jeweiligen Community-Sites erstellt.
 
 * **Community-Gruppenname**
 
-   Der Name der Stammseite der Gruppe, der in der URL angezeigt wird. Vermeiden Sie Unterstrichzeichen (_) und Suchbegriffe wie Ressourcen und Konfiguration im Gruppennamen.
+  Der Name der Stammseite der Gruppe, der in der URL angezeigt wird. Vermeiden Sie Unterstrichzeichen (_) und Suchbegriffe wie Ressourcen und Konfiguration im Gruppennamen.
 
    * Überprüfen Sie den Namen, da er nach der Erstellung der Gruppe nicht einfach geändert werden kann.
    * Die Basis-URL wird unter dem `Community Group Name`.
    * Hängen Sie für eine gültige URL &quot;.html&quot;an.
-      *Beispiel*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+     *Beispiel*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Community-Gruppenvorlage** Menü
 
-   Verwenden Sie das Dropdown-Menü, um eine verfügbare [Community-Gruppenvorlage](/help/communities/tools.md).
+  Verwenden Sie das Dropdown-Menü, um eine verfügbare [Community-Gruppenvorlage](/help/communities/tools.md).
 
 ### Schritt 2: Design {#step-design}
 
@@ -166,15 +166,15 @@ Die Mitgliedschaftseinstellung ermöglicht die Auswahl einer der drei Möglichke
 
 * **Optionale Mitgliedschaft**
 
-   Wenn diese Option ausgewählt ist, ist die Community-Gruppe eine öffentliche Gruppe. Mitglieder der Site können an der Gruppe teilnehmen und Beiträge posten, ohne sich explizit der Gruppe anzuschließen. Diese Option ist standardmäßig ausgewählt.
+  Wenn diese Option ausgewählt ist, ist die Community-Gruppe eine öffentliche Gruppe. Mitglieder der Site können an der Gruppe teilnehmen und Beiträge posten, ohne sich explizit der Gruppe anzuschließen. Standardmäßig ist ausgewählt.
 
 * **Erforderliche Mitgliedschaft**
 
-   Wenn diese Option ausgewählt ist, ist die Community-Gruppe eine offene Gruppe. Community-Site-Mitglieder können den Inhalt der Gruppe anzeigen, müssen jedoch der Gruppe beitreten, um Inhalte zu posten. Mitglieder werden durch Auswahl von `Join` in der Veröffentlichungsumgebung. Die Option Standard ist nicht ausgewählt.
+  Wenn diese Option ausgewählt ist, ist die Community-Gruppe eine offene Gruppe. Community-Site-Mitglieder können den Inhalt der Gruppe anzeigen, müssen jedoch der Gruppe beitreten, um Inhalte zu posten. Mitglieder werden durch Auswahl von `Join` in der Veröffentlichungsumgebung. Die Option Standard ist nicht ausgewählt.
 
 * **Eingeschränkte Mitgliedschaft**
 
-   Wenn diese Option ausgewählt ist, ist die Community-Gruppe eine geheime Gruppe. Die Mitglieder der Gemeinschaft müssen ausdrücklich eingeladen werden. Eingeladene Mitglieder werden in das Suchfeld eingegeben. Mitglieder können später mithilfe der [Mitglieder und Gruppenkonsolen](/help/communities/members.md) die Autorenumgebung. Die Option Standard ist nicht ausgewählt.
+  Wenn diese Option ausgewählt ist, ist die Community-Gruppe eine geheime Gruppe. Die Mitglieder der Gemeinschaft müssen ausdrücklich eingeladen werden. Eingeladene Mitglieder werden in das Suchfeld eingegeben. Mitglieder können später mithilfe der [Mitglieder und Gruppenkonsolen](/help/communities/members.md) die Autorenumgebung. Die Option Standard ist nicht ausgewählt.
 
 **MINIATUR**
 

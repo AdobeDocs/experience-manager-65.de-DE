@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 071bc0e36ed2d8eb4ce7bd0ba46823adc0e43095
-workflow-type: ht
-source-wordcount: '5238'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '5241'
+ht-degree: 74%
 
 ---
 
@@ -50,12 +50,12 @@ Für die mit AEM bereitgestellten Standardberichte gilt Folgendes:
 >In den hier aufgeführten Beispielen und Definitionen wird die folgende Notation verwendet:
 >
 >* Jede Zeile definiert einen Knoten oder eine Eigenschaft, wobei:
->  `N:<name> [<nodeType>]`: einen Knoten mit dem Namen `<*name*>` und des Knotentyps `<*nodeType*>`*beschreibt.*
->  `P:<name> [<propertyType]`: eine Eigenschaft mit dem Namen `<*name*>` und des Eigenschaftentyps `<*propertyType*>` beschreibt.
->  `P:<name> = <value>`: eine Eigenschaft mit dem Namen `<name>` beschreibt, deren Wert auf `<value>` festgelegt sein muss.
+>  `N:<name> [<nodeType>]` : einen Knoten mit dem Namen `<*name*>` und des Knotentyps `<*nodeType*>`*beschreibt.*
+>  `P:<name> [<propertyType]` : eine Eigenschaft mit dem Namen `<*name*>` und des Eigenschaftentyps `<*propertyType*>` beschreibt.
+>  `P:<name> = <value>` : eine Eigenschaft mit dem Namen `<name>` beschreibt, deren Wert auf `<value>` festgelegt sein muss.
 >
 >* Die Einrückung veranschaulicht die hierarchischen Abhängigkeiten zwischen den Knoten.
->* Durch „|“ getrennte Elemente kennzeichnen eine Liste möglicher Elemente wie Typen oder Namen; `String|String[]` bedeutet beispielsweise, dass die Eigenschaft entweder „String“ oder „String[]“ lauten kann.
+>* Elemente, getrennt durch | eine Liste möglicher Elemente; beispielsweise Typen oder Namen; Beispiel: `String|String[]` bedeutet, dass die Eigenschaft entweder &quot;String&quot;oder &quot;String&quot;sein kann[].
 >
 >* `[]` stellt ein Array dar, beispielsweise „String[]“ oder ein Array von Knoten wie in der [Abfragedefinition](#query-definition) festgelegt.
 >
@@ -64,17 +64,16 @@ Für die mit AEM bereitgestellten Standardberichte gilt Folgendes:
 >* Knoten – `nt:unstructured`
 >* Eigenschaften - `String`
 
-
 ## Framework für das Reporting {#reporting-framework}
 
 Dem Framework für das Reporting liegen die folgenden Prinzipien zugrunde:
 
-* Es basiert vollständig auf Ergebnissätzen, die von einer vom CQ5-QueryBuilder ausgeführten Abfrage zurückgegeben werden.
-* Der Ergebnissatz definiert die im Bericht angezeigten Daten. Jede Zeile des Ergebnissatzes entspricht einer Zeile in der Tabellenansicht des Berichts.
-* Die für die Ausführung für den Ergebnissatz zur Verfügung stehenden Vorgänge ähneln RDBMS-Konzepten, allen voran die *Gruppierung* und *Aggregation*.
+* Sie basiert vollständig auf Ergebnismengen, die von einer vom CQ5 QueryBuilder ausgeführten Abfrage zurückgegeben werden.
+* Der Ergebnissatz definiert die im Bericht angezeigten Daten. Jede Zeile in der Ergebnismenge entspricht einer Zeile in der Tabellenansicht des Berichts.
+* Die für die Ausführung des Ergebnissatzes verfügbaren Vorgänge ähneln RDBMS-Konzepten. primär *grouping* und *aggregation*.
 
 * Der Datenabruf und die Datenverarbeitung erfolgen größtenteils serverseitig.
-* Der Client ist allein für die Anzeige der vorverarbeiteten Daten zuständig. Nur kleinere Verarbeitungsaufgaben (z. B. das Erstellen von Links im Zellinhalt) werden Client-seitig ausgeführt.
+* Der Kunde ist allein für die Anzeige der vorverarbeiteten Daten verantwortlich. Nur kleinere Verarbeitungsaufgaben (z. B. das Erstellen von Links im Zellinhalt) werden Client-seitig ausgeführt.
 
 Das Framework für das Reporting (am Beispiel der Struktur eines Standardberichts veranschaulicht) nutzt die folgenden Bausteine, die von der Verarbeitungswarteschlange gespeist werden:
 
@@ -82,12 +81,12 @@ Das Framework für das Reporting (am Beispiel der Struktur eines Standardbericht
 
 ### Berichtseite {#report-page}
 
-Die Berichtseite:
+Berichtsseite:
 
-* ist eine CQ5-Standardseite.
-* basiert auf einer [CQ5-Standardvorlage, die für den Bericht konfiguriert wurde](#report-template).
+* ist eine standardmäßige CQ5-Seite.
+* basiert auf einer [Standard-CQ5-Vorlage, für den Bericht konfiguriert](#report-template).
 
-### Die reportbase-Komponente {#report-base}
+### Berichtsbasis {#report-base}
 
 Die [`reportbase`-Komponente](#report-base-component) bildet die Grundlage eines jeden Berichts:
 
@@ -102,51 +101,51 @@ Die [`reportbase`-Komponente](#report-base-component) bildet die Grundlage eines
 Jede Spalte ist eine Instanz der [`columnbase`-Komponente](#column-base-component):
 
 * Sie ist ein Absatz, der vom Absatzsystem (`reportbase`) des entsprechenden Berichts verwendet wird.
-* Sie definiert den Link zum [zugrunde liegenden Ergebnissatz](#the-query-and-data-retrieval), d. h. sie definiert die spezifischen Daten, auf die im Ergebnissatz verwiesen wird, und wie diese verarbeitet werden.
-* Sie enthält neben jeglichen Standardwerten zusätzliche Definitionen, beispielsweise die verfügbaren Aggregate und Filter.
+* Definiert den Link zum [zugrunde liegender Ergebnissatz](#the-query-and-data-retrieval); d. h. definiert die spezifischen Daten, auf die in diesem Ergebnissatz verwiesen wird, und wie sie verarbeitet werden.
+* enthält zusätzliche Definitionen; wie die verfügbaren Aggregate und Filter sowie alle Standardwerte.
 
-### Die Abfrage und der Datenabruf {#the-query-and-data-retrieval}
+### Abfrage und Datenabruf {#the-query-and-data-retrieval}
 
 Die Abfrage:
 
 * ist als Teil der [`reportbase`](#report-base)-Komponente definiert.
-* basiert auf dem [QueryBuilder von CQ](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html).
-* ruft die Daten ab, die als Grundlage für den Bericht dienen. Jede Zeile des Ergebnissatzes (Tabelle) ist an einen Knoten gebunden, der von der Abfrage zurückgegeben wird. Aus diesem Datensatz werden dann spezifische Informationen für [einzelne Spalten](#column-base-component) extrahiert.
+* basiert auf der [CQ QueryBuilder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html).
+* Ruft die Daten ab, die als Grundlage für den Bericht verwendet werden. Jede Zeile der Ergebnismenge (Tabelle) ist an einen Knoten gebunden, der von der Abfrage zurückgegeben wird. Aus diesem Datensatz werden dann spezifische Informationen für [einzelne Spalten](#column-base-component) extrahiert.
 
-* besteht meist aus:
+* Besteht normalerweise aus:
 
-   * einem Stammpfad.
+   * Ein Stammpfad.
 
-      Dieser gibt die Unterbaumstruktur des zu durchsuchenden Repositorys an.
+     Dieser gibt die Unterbaumstruktur des zu durchsuchenden Repositorys an.
 
-      Um eine Beeinträchtigung der Leistung zu vermeiden, empfiehlt es sich, die Abfrage wenn möglich auf eine bestimmte Unterbaumstruktur des Repositorys zu beschränken. Der Stammpfad kann entweder in der [Berichtsvorlage](#report-template) vordefiniert oder vom Benutzer im [Konfigurationsdialogfeld („Bearbeiten“)](#configuration-dialog) vordefiniert werden.
+     Um eine Beeinträchtigung der Leistung zu vermeiden, empfiehlt es sich, die Abfrage wenn möglich auf eine bestimmte Unterbaumstruktur des Repositorys zu beschränken. Der Stammpfad kann entweder in der [Berichtsvorlage](#report-template) vordefiniert oder vom Benutzer im [Konfigurationsdialogfeld („Bearbeiten“)](#configuration-dialog) vordefiniert werden.
 
    * [einem Kriterium oder mehreren Kriterien](#query-definition).
 
-      Diese werden angewendet, um den (anfänglichen) Ergebnissatz zu generieren. Sie umfassen u. a. Einschränkungen hinsichtlich des Knotentyps oder Eigenschaftsbeschränkungen.
+     Diese werden angewendet, um den (anfänglichen) Ergebnissatz zu generieren. Sie umfassen u. a. Einschränkungen hinsichtlich des Knotentyps oder Eigenschaftsbeschränkungen.
 
-**Entscheidend hierbei ist, dass jeder einzelne im Ergebnissatz der Abfrage zurückgegebene Knoten verwendet wird, um eine einzelne Zeile im Bericht zu generieren (also eine 1:1-Beziehung).**
+**Der zentrale Punkt hier ist, dass jeder einzelne Knoten, der in der Ergebnismenge der Abfrage zurückgegeben wird, zum Generieren einer einzelnen Zeile im Bericht verwendet wird (also eine 1:1-Beziehung).**
 
-Der Entwickler muss sicherstellen, dass die für einen Bericht definierte Abfrage eine für diesen Bericht geeignete Knotengruppe zurückgibt. Der Knoten selbst muss jedoch nicht alle erforderlichen Informationen enthalten, diese können auch von über- und/oder untergeordneten Knoten abgeleitet werden. Beispielsweise wählt die für den [Benutzerbericht](/help/sites-administering/reporting.md#user-report) verwendete Abfrage Knoten auf Basis des Knotentyps aus (in diesem Fall `rep:user`). Die meisten Spalten dieses Berichts beziehen ihre Daten jedoch nicht direkt von diesen Knoten, sondern vom Unterknoten `profile`..
+Der Entwickler muss sicherstellen, dass die für einen Bericht definierte Abfrage einen für diesen Bericht geeigneten Knotensatz zurückgibt. Der Knoten selbst muss jedoch nicht alle erforderlichen Informationen enthalten. Dies kann auch von übergeordneten und/oder untergeordneten Knoten abgeleitet werden. Beispielsweise wählt die für den [Benutzerbericht](/help/sites-administering/reporting.md#user-report) verwendete Abfrage Knoten auf Basis des Knotentyps aus (in diesem Fall `rep:user`). Die meisten Spalten dieses Berichts beziehen ihre Daten jedoch nicht direkt von diesen Knoten, sondern vom Unterknoten `profile`..
 
 ### Verarbeitungswarteschlange {#processing-queue}
 
-Die [Abfrage](#the-query-and-data-retrieval) gibt einen Ergebnissatz von Daten zurück, die als Zeilen im Bericht angezeigt werden. Jede Zeile des Ergebnissatzes wird (serverseitig) in [mehreren Phasen](#phases-of-the-processing-queue) verarbeitet, bevor sie an den Client zur Anzeige im Bericht übergeben wird.
+Die [Abfrage](#the-query-and-data-retrieval) gibt einen Ergebnissatz mit Daten zurück, die als Zeilen im Bericht angezeigt werden. Jede Zeile des Ergebnissatzes wird (serverseitig) in [mehreren Phasen](#phases-of-the-processing-queue) verarbeitet, bevor sie an den Client zur Anzeige im Bericht übergeben wird.
 
 Dies ermöglicht Folgendes:
 
 * das Extrahieren und Ableiten von Werten aus dem zugrunde liegenden Ergebnissatz.
 
-   Beispielsweise lassen sich zwei Eigenschaftswerte als Einzelwert verarbeiten, indem die Differenz zwischen beiden berechnet wird.
+  Beispielsweise lassen sich zwei Eigenschaftswerte als Einzelwert verarbeiten, indem die Differenz zwischen beiden berechnet wird.
 
 * das Auflösen der extrahierten Werte. Dies kann auf unterschiedliche Weise erfolgen.
 
-   Beispielsweise können Pfade einem Titel zugeordnet werden (wie im menschenlesbareren Inhalt der entsprechenden Eigenschaft *jcr:title*).
+  Beispielsweise können Pfade einem Titel zugeordnet werden (wie im menschenlesbareren Inhalt der entsprechenden Eigenschaft *jcr:title*).
 
-* das Anwenden von Filtern an verschiedenen Stellen.
-* das Erstellen zusammengesetzter Werte, falls erforderlich.
+* Anwenden von Filtern an verschiedenen Punkten.
+* Erstellen Sie bei Bedarf zusammengesetzte Werte.
 
-   Beispielsweise Werte, die aus einem Text bestehen, der den Benutzern angezeigt wird, einem Wert, nach dem sortiert werden soll, und einer zusätzlichen URL, die (Client-seitig) zum Erstellen eines Links verwendet wird.
+  Beispielsweise Werte, die aus einem Text bestehen, der den Benutzern angezeigt wird, einem Wert, nach dem sortiert werden soll, und einer zusätzlichen URL, die (Client-seitig) zum Erstellen eines Links verwendet wird.
 
 #### Workflow der Verarbeitungswarteschlange {#workflow-of-the-processing-queue}
 
@@ -162,21 +161,21 @@ Die Schritte und Elemente lauten im Detail:
 
    Die Werteextraktionsfunktionen werden automatisch abhängig vom [Spaltentyp](#column-specific-definitions) ausgewählt. Sie dienen dazu, Werte aus der zugrunde liegenden JCR-Abfrage zu lesen und daraus einen Ergebnissatz zu erstellen. Danach kann eine weitere Verarbeitung erfolgen. Beispielsweise liest die Werteextraktionsfunktion für den Typ `diff` zwei Eigenschaften und berechnet den Einzelwert, der dann zum Ergebnissatz hinzugefügt wird. Die Werteextraktionsfunktionen können nicht konfiguriert werden.
 
-1. Auf diesen ersten Ergebnissatz, der Rohdaten enthält, wird eine [anfängliche Filterung](#column-specific-definitions) (Phase *raw*) angewendet.
+1. Zu dieser anfänglichen Ergebnismenge, die Rohdaten enthält, [Erstfilterung](#column-specific-definitions) (*raw* Phase) angewendet wird.
 
-1. Die Werte werden [vorverarbeitet](#processing-queue), wie für die Phase *apply* definiert.
+1. Werte sind [vorverarbeitet](#processing-queue); wie für *apply* Phase.
 
-1. Die vorverarbeiteten Werte werden (während der Phase *preprocessed*) [gefiltert](#column-specific-definitions).
+1. [Filter](#column-specific-definitions) (zugewiesen wird der *vorverarbeitet* phase) für die vorverarbeiteten Werte ausgeführt.
 
 1. Die Werte werden entsprechend dem [definierten Resolver](#processing-queue) aufgelöst.
-1. Die aufgelösten Werte werden (während der Phase *resolved*) [gefiltert](#column-specific-definitions).
+1. [Filter](#column-specific-definitions) (zugewiesen wird der *resolved* phase) wird für die aufgelösten Werte ausgeführt.
 
-1. Die Daten werden [gruppiert und aggregiert](#column-specific-definitions).
-1. Array-Daten werden durch Konvertierung in eine (zeichenfolgenbasierte) Liste aufgelöst.
+1. Daten sind [gruppiert und aggregiert](#column-specific-definitions).
+1. Array-Daten werden aufgelöst, indem sie in eine (zeichenfolgenbasierte) Liste konvertiert werden.
 
    Dies ist ein impliziter Schritt, bei dem ein mehrwertiges Ergebnis in eine anzeigbare Liste umgewandelt wird. Dies ist für (nicht aggregierte) Zellwerte erforderlich, die auf mehrwertigen JCR-Eigenschaften basieren.
 
-1. Die Werte werden wieder [vorverarbeitet](#processing-queue), wie für die Phase *afterApply* definiert.
+1. Werte werden erneut angezeigt [vorverarbeitet](#processing-queue); wie für *afterApply* Phase.
 
 1. Die Daten werden sortiert.
 1. Die verarbeiteten Daten werden an den Client übertragen.
@@ -187,18 +186,18 @@ Die Schritte und Elemente lauten im Detail:
 >
 >Andere Elemente der Verarbeitungswarteschlange sind in den `columnbase`-Komponenten definiert.
 
-## Aufbau und Konfiguration von Berichten {#report-construction-and-configuration}
+## Berichtaufbau und -konfiguration {#report-construction-and-configuration}
 
-Um einen Bericht zu erstellen und zu konfigurieren, wird Folgendes benötigt:
+Um einen Bericht zu erstellen und zu konfigurieren, ist Folgendes erforderlich:
 
-* Ein [Speicherort für die Definition Ihrer Berichtskomponenten](#location-of-report-components)
-* Eine [ `reportbase`-Komponente](#report-base-component)
+* a [Speicherort für die Definition Ihrer Berichtskomponenten](#location-of-report-components)
+* Eine [`reportbase` -Komponente](#report-base-component)
 * Mindestens eine [`columnbase`-Komponente](#column-base-component)
-* Eine [Seitenkomponente](#page-component)
-* Ein [Bereichtsdesign](#report-design)
-* Eine [Berichtsvorlage](#report-template)
+* a [Seitenkomponente](#page-component)
+* a [Berichtsentwurf](#report-design)
+* a [Berichtsvorlage](#report-template)
 
-### Speicherort von Berichtskomponenten {#location-of-report-components}
+### Speicherort der Berichtskomponenten {#location-of-report-components}
 
 Die standardmäßigen Berichtskomponenten befinden sich unter `/libs/cq/reporting/components`.
 
@@ -229,17 +228,17 @@ N:apps
 
 Eine Berichtseite muss den `sling:resourceType` von `/libs/cq/reporting/components/reportpage` verwenden.
 
-Eine benutzerdefinierte Seitenkomponente sollte (in den meisten Fällen) nicht erforderlich sein.
+Eine angepasste Seitenkomponente sollte nicht erforderlich sein (in den meisten Fällen).
 
-## reportbase-Komponente {#report-base-component}
+## Berichtsgrundkomponente {#report-base-component}
 
 Jeder Berichtstyp benötigt eine von `/libs/cq/reporting/components/reportbase` abgeleitete Container-Komponente.
 
-Diese Komponente dient als Container für den gesamten Bericht und stellt Informationen für Folgendes bereit:
+Diese Komponente fungiert als Container für den gesamten Bericht und bietet Informationen für:
 
-* Die [Abfragedefinition](#query-definition)
-* Ein [(optionales) Dialogfeld](#configuration-dialog) für die Konfiguration des Berichts
-* Sämtliche in den Bericht eingebundenen [Diagramme](#chart-definitions)
+* Die [Abfragedefinition](#query-definition).
+* Ein [(optional) Dialogfeld](#configuration-dialog) zum Konfigurieren des Berichts.
+* Alle [Diagramme](#chart-definitions) in den Bericht aufgenommen.
 
 ```
 N:<reportname> [cq:Component]
@@ -266,31 +265,31 @@ N:queryBuilder
 
 * `propertyConstraints`
 
-   Kann verwendet werden, um den Ergebnissatz auf Knoten zu beschränken, die bestimmte Eigenschaften mit bestimmten Werten aufweisen. Wenn mehrere Beschränkungen angegeben sind, muss der Knoten allen Beschränkungen entsprechen (AND-Vorgang).
+  Kann verwendet werden, um den Ergebnissatz auf Knoten zu beschränken, die bestimmte Eigenschaften mit bestimmten Werten aufweisen. Wenn mehrere Beschränkungen angegeben sind, muss der Knoten allen Beschränkungen entsprechen (AND-Vorgang).
 
-   Beispiel:
+  Beispiel:
 
-   ```
-   N:propertyConstraints
-    [
-    N:0
-    P:sling:resourceType
-    P:foundation/components/textimage
-    N:1
-    P:jcr:modifiedBy
-    P:admin
-    ]
-   ```
+  ```
+  N:propertyConstraints
+   [
+   N:0
+   P:sling:resourceType
+   P:foundation/components/textimage
+   N:1
+   P:jcr:modifiedBy
+   P:admin
+   ]
+  ```
 
-   Gibt alle `textimage`-Komponenten zurück, die zuletzt vom `admin`-Benutzer geändert wurden.
+  Gibt alle `textimage`-Komponenten zurück, die zuletzt vom `admin`-Benutzer geändert wurden.
 
 * `nodeTypes`
 
-   Wird verwendet, um den Ergebnissatz auf die angegebenen Knotentypen zu beschränken. Es können mehrere Knotentypen angegeben werden.
+  Wird verwendet, um den Ergebnissatz auf die angegebenen Knotentypen zu beschränken. Es können mehrere Knotentypen angegeben werden.
 
 * `mandatoryProperties`
 
-   Kann verwendet werden, um den Ergebnissatz auf Knoten zu beschränken, die *alle* der angegebenen Eigenschaften aufweisen. Der Wert der Eigenschaften wird nicht berücksichtigt.
+  Kann verwendet werden, um den Ergebnissatz auf Knoten zu beschränken, die *alle* der angegebenen Eigenschaften aufweisen. Der Wert der Eigenschaften wird nicht berücksichtigt.
 
 Alle Definitionen sind optional und können beliebig kombiniert werden, aber Sie müssen mindestens eine davon definieren.
 
@@ -315,74 +314,74 @@ N:charting
 
 * `settings`
 
-   Enthält Definitionen für die aktiven Diagramme.
+  Enthält Definitionen für die aktiven Diagramme.
 
    * `active`
 
-      Da sich mehrere Einstellungen definieren lassen, können Sie damit festlegen, welche gerade aktiv sind. Diese werden durch ein Array von Knoten definiert (es gibt keine obligatorische Benennungskonvention für diese Knoten, für die Standardberichte wird aber häufig `0`, `1`.. `x` verwendet), die jeweils die folgende Eigenschaft aufweisen:
+     Da sich mehrere Einstellungen definieren lassen, können Sie damit festlegen, welche gerade aktiv sind. Diese werden durch ein Array von Knoten definiert (es gibt keine obligatorische Benennungskonvention für diese Knoten, für die Standardberichte wird aber häufig `0`, `1`.. `x` verwendet), die jeweils die folgende Eigenschaft aufweisen:
 
       * `id`
 
-         Zum Identifizieren der aktiven Diagramme. Diese muss mit der ID einer der `definitions` des Diagramms übereinstimmen.
+        Zum Identifizieren der aktiven Diagramme. Diese muss mit der ID einer der `definitions` des Diagramms übereinstimmen.
 
 * `definitions`
 
-   Definiert die Diagrammtypen, die für den Bericht verfügbar sein können. Die zu verwendenden `definitions` werden durch die `active` Einstellungen angeben.
+  Definiert die Diagrammtypen, die für den Bericht verfügbar sein können. Die zu verwendenden `definitions` werden durch die `active` Einstellungen angeben.
 
-   Die Definitionen werden mithilfe eines Arrays von Knoten angegeben (auch in diesem Fall meist mit dem Namen `0`, `1`.. `x`), die jeweils die folgenden Eigenschaften aufweisen:
+  Die Definitionen werden mithilfe eines Arrays von Knoten angegeben (auch in diesem Fall meist mit dem Namen `0`, `1`.. `x`), die jeweils die folgenden Eigenschaften aufweisen:
 
    * `id`
 
-      Die Diagrammidentifizierung.
+     Die Diagrammidentifizierung.
 
    * `type`
 
-      Der Typ des verfügbaren Diagramms. Die folgenden Optionen stehen zur Auswahl:
+     Der Typ des verfügbaren Diagramms. Die folgenden Optionen stehen zur Auswahl:
 
       * `pie`
 Tortendiagramm. Wird nur aus aktuellen Daten generiert.
 
       * `lineseries`
-Eine Reihe von Linien (die Punkte verbinden, welche die eigentlichen Momentaufnahmen darstellen). Wird nur aus Verlaufsdaten generiert.
-   * Je nach Diagrammtyp stehen weitere Eigenschaften zur Verfügung:
+Eine Reihe von Linien (die Punkte verbinden, welche die eigentlichen Momentaufnahmen darstellen). Wird nur aus historischen Daten generiert.
+
+   * Je nach Diagrammtyp sind zusätzliche Eigenschaften verfügbar:
 
       * für den Diagrammtyp `pie`:
 
          * `maxRadius` ( `Double/Long`)
 
-            Der maximal zulässige Radius für das Kreisdiagramm, daher die maximal zulässige Größe für das Diagramm (ohne Legende). Dieser wird ignoriert, wenn `fixedRadius` definiert ist.
+           Der maximal zulässige Radius für das Kreisdiagramm, daher die maximal zulässige Größe für das Diagramm (ohne Legende). Dieser wird ignoriert, wenn `fixedRadius` definiert ist.
 
          * `minRadius` ( `Double/Long`)
 
-            Der minimal zulässige Radius für das Kreisdiagramm. Dieser wird ignoriert, wenn `fixedRadius` definiert ist.
+           Der minimal zulässige Radius für das Kreisdiagramm. Dieser wird ignoriert, wenn `fixedRadius` definiert ist.
 
          * `fixedRadius` ( `Double/Long`)
 Definiert einen festen Radius für das Kreisdiagramm.
+
       * für den Diagrammtyp [`lineseries`](/help/sites-administering/reporting.md#display-limits):
 
          * `totals` ( `Boolean`)
 
-            Sollte auf „true“ festgelegt sein, wenn eine zusätzliche Zeile mit der **Gesamtsumme** angezeigt werden soll.
+           Sollte auf „true“ festgelegt sein, wenn eine zusätzliche Zeile mit der **Gesamtsumme** angezeigt werden soll.
 Standardwert: `false`
 
          * `series` ( `Long`)
 
-            Anzahl der anzuzeigenden Zeilen/Reihen.
+           Anzahl der anzuzeigenden Zeilen/Reihen.
 Standardwert: `9` (dies ist auch der maximal zulässige Wert)
 
          * `hoverLimit` ( `Long`)
 
-            Maximale Anzahl aggregierter Momentaufnahmen (Punkte auf jeder horizontalen Linie, die für unterschiedliche Werte stehen), für die Popups angezeigt werden sollen, wenn Benutzer mit der Maus über einen bestimmten Wert oder eine entsprechende Beschriftung in der Legende des Diagramms fahren.
+           Maximale Anzahl aggregierter Momentaufnahmen (Punkte auf jeder horizontalen Linie, die für unterschiedliche Werte stehen), für die Popups angezeigt werden sollen, wenn Benutzer mit der Maus über einen bestimmten Wert oder eine entsprechende Beschriftung in der Legende des Diagramms fahren.
 
-            Standardwert: `35` (d. h. es werden überhaupt keine Popups angezeigt, wenn mehr als 35 verschiedene Werte für die aktuellen Diagrammeinstellungen gelten).
+           Standardwert: `35` (d. h. es werden überhaupt keine Popups angezeigt, wenn mehr als 35 verschiedene Werte für die aktuellen Diagrammeinstellungen gelten).
 
-            Es gilt zusätzlich eine maximale Anzahl von 10 Popups, die parallel angezeigt werden können (es können mehrere Popups angezeigt werden, wenn mit der Maus über die Legendentexte gefahren wird).
-
-
+           Es gilt zusätzlich eine maximale Anzahl von 10 Popups, die parallel angezeigt werden können (es können mehrere Popups angezeigt werden, wenn mit der Maus über die Legendentexte gefahren wird).
 
 ### Konfigurationsdialogfeld {#configuration-dialog}
 
-Jeder Bericht kann ein Konfigurationsdialogfeld aufweisen, in dem die Benutzer verschiedene Parameter für den Bericht angeben können. Auf dieses Dialogfeld kann über die Schaltfläche **Bearbeiten** zugegriffen werden, wenn die Berichtseite geöffnet ist.
+Jeder Bericht kann über ein Konfigurationsdialogfeld verfügen, in dem der Benutzer verschiedene Parameter für den Bericht angeben kann. Auf dieses Dialogfeld kann über die Schaltfläche **Bearbeiten** zugegriffen werden, wenn die Berichtseite geöffnet ist.
 
 Dieses Dialogfeld ist ein CQ-[Standarddialogfeld](/help/sites-developing/components-basics.md#dialogs) und kann als solches konfiguriert werden (weitere Informationen finden Sie unter [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)).
 
@@ -429,27 +428,27 @@ Es stehen mehrere vorkonfigurierte Komponenten zur Verfügung, auf die im Dialog
 
 * **`title`**
 
-   `/libs/cq/reporting/components/commons/title`
+  `/libs/cq/reporting/components/commons/title`
 
-   Textfeld, das den Berichtstitel definiert.
+  Textfeld, das den Berichtstitel definiert.
 
 * **`description`**
 
-   `/libs/cq/reporting/components/commons/description`
+  `/libs/cq/reporting/components/commons/description`
 
-   Textfeld, das die Berichtbeschreibung definiert. 
+  Textfeld, das die Berichtbeschreibung definiert. 
 
 * **`processing`**
 
-   `/libs/cq/reporting/components/commons/processing`
+  `/libs/cq/reporting/components/commons/processing`
 
-   Auswahl für den Verarbeitungsmodus des Berichts (manuelles/automatisches Laden von Daten)
+  Auswahl für den Verarbeitungsmodus des Berichts (manuelles/automatisches Laden von Daten)
 
 * **`scheduling`**
 
-   `/libs/cq/reporting/components/commons/scheduling`
+  `/libs/cq/reporting/components/commons/scheduling`
 
-   Auswahl zum Planen von Momentaufnahmen für das historische Diagramm.
+  Auswahl zum Planen von Momentaufnahmen für das historische Diagramm.
 
 >[!NOTE]
 >
@@ -461,24 +460,24 @@ Zusätzlich kann ein Stammpfad für den Bericht definiert werden:
 
 * **`rootPath`**
 
-   Damit wird der Bericht auf einen bestimmten Abschnitt (Baum oder Unterbaumstruktur) des Repositorys beschränkt, was sich zur Leistungsoptimierung empfiehlt. Der Stammpfad wird durch die Eigenschaft `rootPath` des Knotens `report` jeder Berichtseite angegeben (wird bei der Seitenerstellung aus der Vorlage übernommen).
+  Damit wird der Bericht auf einen bestimmten Abschnitt (Baum oder Unterbaumstruktur) des Repositorys beschränkt, was sich zur Leistungsoptimierung empfiehlt. Der Stammpfad wird durch die Eigenschaft `rootPath` des Knotens `report` jeder Berichtseite angegeben (wird bei der Seitenerstellung aus der Vorlage übernommen).
 
-   Er kann durch Folgendes angegeben werden:
+  Er kann durch Folgendes angegeben werden:
 
-   * Die [Berichtsvorlage](#report-template) (entweder als fester Wert oder als Standardwert für das Konfigurationsdialogfeld).
-   * Den Benutzer (mithilfe dieses Parameters).
+   * die [Berichtsvorlage](#report-template) (entweder als fester Wert oder als Standardwert für das Konfigurationsdialogfeld).
+   * Benutzer (mithilfe dieses Parameters)
 
-## columnbase-Komponente {#column-base-component}
+## Spaltenbasiskomponente {#column-base-component}
 
 Jeder Spaltentyp benötigt eine von `/libs/cq/reporting/components/columnbase` abgeleitete Komponente.
 
-Eine Spaltenkomponente definiert eine Kombination folgender Elemente:
+Eine Spaltenkomponente definiert eine Kombination aus folgenden Elementen:
 
-* Die Konfiguration der [spaltenspezifischen Abfrage](#column-specific-query).
-* Die [Resolver und die Vorverarbeitung](#resolvers-and-preprocessing).
+* Die [Spaltenspezifische Abfrage](#column-specific-query) Konfiguration.
+* Die [Resolver und Vorverarbeitung](#resolvers-and-preprocessing).
 * Die [spaltenspezifischen Definitionen](#column-specific-definitions) (beispielsweise Filter und Aggregate; untergeordneter Knoten `definitions`).
 * [Spaltenstandardwerte](#column-default-values).
-* Den [Client-Filter](#client-filter), der die anzuzeigenden Informationen aus den vom Server zurückgegebenen Daten extrahiert.
+* Die [Client-Filter](#client-filter) , um die anzuzeigenden Informationen aus den vom Server zurückgegebenen Daten zu extrahieren.
 * Darüber hinaus muss eine Spaltenkomponente eine geeignete Instanz von `cq:editConfig` bereitstellen, um nach Bedarf [Ereignisse und Aktionen](#events-and-actions) zu definieren.
 * Die Konfiguration für [generische Spalten](#generic-columns).
 
@@ -523,32 +522,32 @@ N:definitions
 
 * `property`
 
-   Definiert die Eigenschaft, die für die Berechnung des tatsächlichen Zellwerts verwendet werden soll.
+  Definiert die Eigenschaft, die für die Berechnung des tatsächlichen Zellwerts verwendet werden soll.
 
-   Wenn die Eigenschaft als „String“[] definiert ist, werden mehrere Eigenschaften (in Folge) überprüft, um den aktuellen Wert zu finden.
+  Wenn die Eigenschaft als „String“[] definiert ist, werden mehrere Eigenschaften (in Folge) überprüft, um den aktuellen Wert zu finden.
 
-   Zum Beispiel wird im Fall von:
+  Zum Beispiel wird im Fall von:
 
-   `property = [ "jcr:lastModified", "jcr:created" ]`
+  `property = [ "jcr:lastModified", "jcr:created" ]`
 
-   Der entsprechende Werteextraktor (der hier unter Kontrolle ist):
+  Der entsprechende Werteextraktor (der hier unter Kontrolle ist):
 
    * Er prüft, ob eine jcr:lastModified-Eigenschaft verfügbar ist. Falls ja, verwendet er sie.
    * Wenn keine jcr:lastModified-Eigenschaft verfügbar ist, wird stattdessen der Inhalt von „jcr:created“ verwendet.
 
 * `subPath`
 
-   Wenn sich das Ergebnis nicht auf dem Knoten befindet, der von der Abfrage zurückgegeben wird, definiert `subPath`, wo sich die Eigenschaft tatsächlich befindet.
+  Wenn sich das Ergebnis nicht auf dem Knoten befindet, der von der Abfrage zurückgegeben wird, definiert `subPath`, wo sich die Eigenschaft tatsächlich befindet.
 
 * `secondaryProperty`
 
-    Definiert eine zweite Eigenschaft, die auch für die Berechnung des tatsächlichen Zellwerts verwendet werden muss. Diese wird nur für bestimmte Spaltentypen („diff“ und „sortable“) verwendet.
+   Definiert eine zweite Eigenschaft, die auch für die Berechnung des tatsächlichen Zellwerts verwendet werden muss. Diese wird nur für bestimmte Spaltentypen („diff“ und „sortable“) verwendet.
 
-   Beispielsweise wird beim Bericht der Workflow-Instanz die angegebene Eigenschaft verwendet, um den tatsächlichen Wert der Zeitdifferenz (in Millisekunden) zwischen Start- und Endzeit zu speichern.
+  Beispielsweise wird beim Bericht der Workflow-Instanz die angegebene Eigenschaft verwendet, um den tatsächlichen Wert der Zeitdifferenz (in Millisekunden) zwischen Start- und Endzeit zu speichern.
 
 * `secondarySubPath`
 
-   Ähnelt „subPath“, wenn `secondaryProperty` verwendet wird.
+  Ähnelt „subPath“, wenn `secondaryProperty` verwendet wird.
 
 In den meisten Fällen wird nur `property` verwendet.
 
@@ -599,89 +598,89 @@ N:definitions
 
 * `resolver`
 
-   Definiert den zu verwendenden Resolver. Die folgenden Resolver sind verfügbar:
+  Definiert den zu verwendenden Resolver. Die folgenden Resolver sind verfügbar:
 
    * `const`
 
-       Ordnet Werte anderen Werten zu, beispielsweise um Konstanten wie `en` in den entsprechenden Wert `English` aufzulösen.
+      Ordnet Werte anderen Werten zu, beispielsweise um Konstanten wie `en` in den entsprechenden Wert `English` aufzulösen.
 
    * `default`
 
-      Der Standard-Resolver. Dies ist ein Platzhalter-Resolver, der eigentlich nichts auflöst.
+     Der Standard-Resolver. Dies ist ein Platzhalter-Resolver, der eigentlich nichts auflöst.
 
    * `page`
 
-        Löst einen Pfadwert zum Pfad der entsprechenden Seite auf, genauer gesagt zum entsprechenden Knoten `jcr:content`. Zum Beispiel wird `/content/.../page/jcr:content/par/xyz` nach `/content/.../page/jcr:content` aufgelöst.
+       Löst einen Pfadwert zum Pfad der entsprechenden Seite auf, genauer gesagt zum entsprechenden Knoten `jcr:content`. Zum Beispiel wird `/content/.../page/jcr:content/par/xyz` nach `/content/.../page/jcr:content` aufgelöst.
 
    * `path`
 
-      Löst einen Pfadwert auf, indem optional ein Unterpfad angehängt und der aktuelle Wert aus einer Eigenschaft des Knotens (wie durch `resolverConfig` definiert) unter dem aufgelösten Pfad übernommen wird. Beispielsweise kann ein `path`, der `/content/.../page/jcr:content` lautet, zum Inhalt der Eigenschaft `jcr:title` aufgelöst werden. Dies würde bedeuten, dass ein Seitenpfad zum Seitentitel aufgelöst wird.
+     Löst einen Pfadwert auf, indem optional ein Unterpfad angehängt und der aktuelle Wert aus einer Eigenschaft des Knotens (wie durch `resolverConfig` definiert) unter dem aufgelösten Pfad übernommen wird. Beispielsweise kann ein `path`, der `/content/.../page/jcr:content` lautet, zum Inhalt der Eigenschaft `jcr:title` aufgelöst werden. Dies würde bedeuten, dass ein Seitenpfad zum Seitentitel aufgelöst wird.
 
    * `pathextension`
 
-      Löst einen Wert auf, indem ein Pfad vorangestellt wird und der aktuelle Wert aus einer Eigenschaft des Knotens unter dem aufgelösten Pfad übernommen wird. Einem Wert `de` könnte beispielsweise ein Pfad wie `/libs/wcm/core/resources/languages` vorangestellt werden, der den Wert aus der Eigenschaft `language` übernimmt, um den Länder-Code `de` in die Sprachbeschreibung `German` aufzulösen.
+     Löst einen Wert auf, indem ein Pfad vorangestellt wird und der aktuelle Wert aus einer Eigenschaft des Knotens unter dem aufgelösten Pfad übernommen wird. Einem Wert `de` könnte beispielsweise ein Pfad wie `/libs/wcm/core/resources/languages` vorangestellt werden, der den Wert aus der Eigenschaft `language` übernimmt, um den Länder-Code `de` in die Sprachbeschreibung `German` aufzulösen.
 
 * `resolverConfig`
 
-    Enthält Definitionen für den Resolver. Die verfügbaren Optionen hängen vom gewählten `resolver` ab:.
+   Enthält Definitionen für den Resolver. Die verfügbaren Optionen hängen vom gewählten `resolver` ab:.
 
    * `const`
 
-      Verwenden Sie Eigenschaften, um die Konstanten zum Auflösen anzugeben. Der Name der Eigenschaft definiert die aufzulösende Konstante. Der Wert der Eigenschaft definiert den aufgelösten Wert.
+     Verwenden Sie Eigenschaften, um die Konstanten zum Auflösen anzugeben. Der Name der Eigenschaft definiert die aufzulösende Konstante. Der Wert der Eigenschaft definiert den aufgelösten Wert.
 
-      Beispielsweise löst eine Eigenschaft mit **Name**= `1` und dem **Wert** `=One` 1 zu „One“ auf.
+     Beispielsweise löst eine Eigenschaft mit **Name**= `1` und dem **Wert** `=One` 1 zu „One“ auf.
 
    * `default`
 
-      Keine Konfiguration verfügbar.
+     Keine Konfiguration verfügbar.
 
    * `page`
 
       * `propertyName` (optional)
 
-         Definiert den Namen der Eigenschaft, die für die Auflösung des Werts verwendet werden soll. Wenn kein Wert angegeben ist, wird der Standardwert *jcr:title* (der Seitentitel) verwendet. Für den Resolver `page` bedeutet dies, dass der Pfad zuerst zum Seitenpfad, dann weiter zum Seitentitel aufgelöst wird.
+        Definiert den Namen der Eigenschaft, die für die Auflösung des Werts verwendet werden soll. Wenn kein Wert angegeben ist, wird der Standardwert *jcr:title* (der Seitentitel) verwendet. Für den Resolver `page` bedeutet dies, dass der Pfad zuerst zum Seitenpfad, dann weiter zum Seitentitel aufgelöst wird.
+
    * `path`
 
       * `propertyName` (optional)
 
-         Gibt den Namen der Eigenschaft an, die für die Auflösung des Werts verwendet werden soll. Wenn kein Wert angegeben ist, wird der Standardwert `jcr:title` verwendet.
+        Gibt den Namen der Eigenschaft an, die für die Auflösung des Werts verwendet werden soll. Wenn kein Wert angegeben ist, wird der Standardwert `jcr:title` verwendet.
 
       * `subPath` (optional)
 
-         Mit dieser Eigenschaft kann ein Suffix angegeben werden, das an den Pfad angehängt wird, bevor der Wert aufgelöst wird.
+        Mit dieser Eigenschaft kann ein Suffix angegeben werden, das an den Pfad angehängt wird, bevor der Wert aufgelöst wird.
+
    * `pathextension`
 
       * `path` (mandatory)
 
-         Definiert den Pfad, der vorangestellt werden soll.
+        Definiert den Pfad, der vorangestellt werden soll.
 
       * `propertyName` (mandatory)
 
-         Definiert die Eigenschaft für den aufgelösten Pfad, unter dem sich der aktuelle Wert befindet.
+        Definiert die Eigenschaft für den aufgelösten Pfad, unter dem sich der aktuelle Wert befindet.
 
       * `i18n` (optional; Typ Boolesch)
 
-         Legt fest, ob der aufgelöste Wert *internationalisiert* werden soll (d. h. mithilfe der [Internationalisierungsdienste von CQ5](/help/sites-administering/tc-manage.md)).
-
-
+        Legt fest, ob der aufgelöste Wert *internationalisiert* werden soll (d. h. mithilfe der [Internationalisierungsdienste von CQ5](/help/sites-administering/tc-manage.md)).
 
 * `preprocessing`
 
-   Die Vorverarbeitung ist optional und kann (separat) an die Verarbeitungsphasen *apply* oder *applyAfter* gebunden werden:
+  Die Vorverarbeitung ist optional und kann (separat) an die Verarbeitungsphasen *apply* oder *applyAfter* gebunden werden:
 
    * `apply`
 
-      Die anfängliche Vorverarbeitungsphase ([Schritt 3 in der Darstellung der Verarbeitungswarteschlange](#processing-queue)).
+     Die anfängliche Vorverarbeitungsphase ([Schritt 3 in der Darstellung der Verarbeitungswarteschlange](#processing-queue)).
 
    * `applyAfter`
 
-      Zum Anwenden nach der Vorverarbeitung ([Schritt 9 in der Darstellung der Verarbeitungswarteschlange](#processing-queue)).
+     Zum Anwenden nach der Vorverarbeitung ([Schritt 9 in der Darstellung der Verarbeitungswarteschlange](#processing-queue)).
 
 #### Resolver {#resolvers}
 
 Die Resolver werden verwendet, um die erforderlichen Informationen zu extrahieren. Beispiele für die verschiedenen Resolver:
 
-**Const**
+**Kosten**
 
 Im folgenden Beispiel wird ein konstanter Wert von `VersionCreated` in die Zeichenfolge `New version created` aufgelöst.
 
@@ -741,13 +740,13 @@ Die Definition `preprocessing` kann wahlweise auf Folgendes angewendet werden:
 
 * Originalwert:
 
-   Die Vorverarbeitungsdefinition für den ursprünglichen Wert wird für `apply` und/oder `applyAfter` direkt angegeben.
+  Die Vorverarbeitungsdefinition für den ursprünglichen Wert wird für `apply` und/oder `applyAfter` direkt angegeben.
 
 * Wert in seinem aggregierten Status:
 
-   Bei Bedarf kann für jede Aggregation eine eigene Definition angegeben werden.
+  Bei Bedarf kann für jede Aggregation eine eigene Definition angegeben werden.
 
-   Um eine explizite Vorverarbeitung für aggregierte Werte festzulegen, müssen sich die Vorverarbeitungsdefinitionen auf einem entsprechenden `aggregated` untergeordneten Knoten (`apply/aggregated`, `applyAfter/aggregated`) befinden. Wenn eine explizite Vorverarbeitung für verschiedene Aggregate erforderlich ist, befindet sich die Vorverarbeitungsdefinition auf einem untergeordneten Knoten mit dem Namen des jeweiligen Aggregates (z. B. `apply/aggregated/min/max` oder anderen Aggregaten).
+  Um eine explizite Vorverarbeitung für aggregierte Werte festzulegen, müssen sich die Vorverarbeitungsdefinitionen auf einem entsprechenden `aggregated` untergeordneten Knoten (`apply/aggregated`, `applyAfter/aggregated`) befinden. Wenn eine explizite Vorverarbeitung für verschiedene Aggregate erforderlich ist, befindet sich die Vorverarbeitungsdefinition auf einem untergeordneten Knoten mit dem Namen des jeweiligen Aggregates (z. B. `apply/aggregated/min/max` oder anderen Aggregaten).
 
 Sie können eine der folgenden bei der Vorverarbeitung zu verwendenden Optionen angeben:
 
@@ -755,7 +754,7 @@ Sie können eine der folgenden bei der Vorverarbeitung zu verwendenden Optionen 
 
 * [Datentypformatierer](#preprocessing-data-type-formatters)
 
-   Konvertiert einen numerischen Wert in eine relative Zeichenfolge. Beispielsweise würde der Wert, der eine Zeitdifferenz von einer Stunde repräsentiert, in eine Zeichenfolge wie `1:24PM (1 hour ago)` aufgelöst werden.
+  Konvertiert einen numerischen Wert in eine relative Zeichenfolge. Beispielsweise würde der Wert, der eine Zeitdifferenz von einer Stunde repräsentiert, in eine Zeichenfolge wie `1:24PM (1 hour ago)` aufgelöst werden.
 
 Beispiel:
 
@@ -770,17 +769,17 @@ N:definitions
                 P:format          // data type formatter
 ```
 
-#### Vorverarbeitung – Muster zum Suchen und Ersetzen {#preprocessing-find-and-replace-patterns}
+#### Vorverarbeitung - Suchen und Ersetzen von Mustern {#preprocessing-find-and-replace-patterns}
 
 Für die Vorverarbeitung können Sie ein `pattern` (definiert als [regulärer Ausdruck](https://de.wikipedia.org/wiki/Regulärer_Ausdruck) oder RegEx) angeben, das durch das Muster `replace` ersetzt wird:
 
 * `pattern`
 
-   Der reguläre Ausdruck, der verwendet wird, um eine Teilzeichenfolge zu finden.
+  Der reguläre Ausdruck, der verwendet wird, um eine Teilzeichenfolge zu finden.
 
 * `replace`
 
-   Die Zeichenkette oder Darstellung der Zeichenkette, die als Ersatz für die ursprüngliche Zeichenkette verwendet wird. Häufig handelt es sich dabei um eine Teilzeichenfolge der Zeichenfolge, die durch den regulären Ausdruck `pattern` gefunden wird.
+  Die Zeichenkette oder Darstellung der Zeichenkette, die als Ersatz für die ursprüngliche Zeichenkette verwendet wird. Häufig handelt es sich dabei um eine Teilzeichenfolge der Zeichenfolge, die durch den regulären Ausdruck `pattern` gefunden wird.
 
 Ein Ersetzungsmuster kann beispielsweise wie folgt aufgeschlüsselt werden:
 
@@ -804,29 +803,29 @@ Ein Ersetzungsmuster kann beispielsweise wie folgt aufgeschlüsselt werden:
 
    * `/content/geometrixx/en/services`
 
-#### Vorverarbeitung – Datentypformatierer {#preprocessing-data-type-formatters}
+#### Vorverarbeitung - Datentypforthemen {#preprocessing-data-type-formatters}
 
 Diese Formatierer konvertieren einen numerischen Wert in eine relative Zeichenfolge.
 
-Dies kann beispielsweise für eine Zeitspalte verwendet werden, die die Aggregate `min`, `avg` und `max` zulässt. Da die Aggregate `min`/ `avg`/ `max` als *Zeitdifferenz* angezeigt werden (z. B. `10 days ago`), benötigen sie einen Datenformatierer. Dazu wird auf die aggregierten Werte `min`/ `avg`/ `max` ein Formatierer `datedelta` angewendet. Wenn auch ein Aggregat `count` verfügbar ist, dann ist dafür kein Formatierer erforderlich, ebenso wenig wie für den ursprünglichen Wert..
+Dies kann beispielsweise für eine Zeitspalte verwendet werden, die die Aggregate `min`, `avg` und `max` zulässt. As `min`/ `avg`/ `max` Aggregate werden als *Zeitunterschied* (z. B. `10 days ago`), benötigen sie einen Datenformatierer. Dazu wird auf die aggregierten Werte `min`/ `avg`/ `max` ein Formatierer `datedelta` angewendet. Wenn auch ein Aggregat `count` verfügbar ist, dann ist dafür kein Formatierer erforderlich, ebenso wenig wie für den ursprünglichen Wert..
 
 Derzeit sind die folgenden Datentypformatierer verfügbar:
 
 * `format`
 
-   Datentypformatierer:
+  Datentypformatierer:
 
    * `duration`
 
-      Die Dauer ist die Zeitspanne zwischen zwei definierten Terminen. Beispiel: Beginn und Ende einer Workflow-Aktion, die eine Stunde gedauert hat – sie hat am 13.02.11 um 11:23 Uhr begonnen und endete eine Stunde später am 13.02.11 um 12:23 Uhr.
+     Die Dauer ist die Zeitspanne zwischen zwei definierten Terminen. Beispiel: Beginn und Ende einer Workflow-Aktion, die eine Stunde gedauert hat – sie hat am 13.02.11 um 11:23 Uhr begonnen und endete eine Stunde später am 13.02.11 um 12:23 Uhr.
 
-      Der Formatierer konvertiert einen numerischen Wert (interpretiert als Millisekunden) in eine Dauerzeichenfolge, z. B. wird `30000` als * `30s`* formatiert.
+     Der Formatierer konvertiert einen numerischen Wert (interpretiert als Millisekunden) in eine Dauerzeichenfolge, z. B. wird `30000` als * `30s`* formatiert.
 
    * `datedelta`
 
-      Ein Datendelta ist die Zeitspanne zwischen einem in der Vergangenheit liegenden Datum und dem jetzigen Zeitpunkt (entsprechend fällt das Ergebnis anders aus, wenn der Bericht zu einem späteren Zeitpunkt angezeigt wird).
+     Ein Datendelta ist die Zeitspanne zwischen einem in der Vergangenheit liegenden Datum und dem jetzigen Zeitpunkt (entsprechend fällt das Ergebnis anders aus, wenn der Bericht zu einem späteren Zeitpunkt angezeigt wird).
 
-      Es konvertiert den numerischen Wert (interpretiert als Zeitdifferenz in Tagen) in eine relative Datumszeichenfolge. Beispielsweise wird „1“ als „1 day ago“ formatiert.
+     Es konvertiert den numerischen Wert (interpretiert als Zeitdifferenz in Tagen) in eine relative Datumszeichenfolge. Beispielsweise wird „1“ als „1 day ago“ formatiert.
 
 Im folgenden Beispiel wird die Formatierung `datedelta` für die Aggregate `min` und `max` definiert:
 
@@ -867,7 +866,7 @@ N:definitions
 
 * `type`
 
-   Die folgenden Optionen sind standardmäßig verfügbar:
+  Die folgenden Optionen sind standardmäßig verfügbar:
 
    * `string`
    * `number`
@@ -876,16 +875,17 @@ N:definitions
    * `diff`
    * `timeslot`
 
-      Diese Option wird verwendet, um Teile eines Datums zu extrahieren, das für die Aggregation benötigt wird (gruppieren Sie beispielsweise nach Jahr, um die Daten für die einzelnen Jahre zu aggregieren).
+     Diese Option wird verwendet, um Teile eines Datums zu extrahieren, das für die Aggregation benötigt wird (gruppieren Sie beispielsweise nach Jahr, um die Daten für die einzelnen Jahre zu aggregieren).
 
    * `sortable`
 
-      Diese Option wird für Werte verwendet, die unterschiedliche Werte (aus unterschiedlichen Eigenschaften) zum Sortieren und Anzeigen verwenden.
-   Zusätzlich gilt Folgendes: jeder der oben genannten Werte kann als Mehrfachwert definiert werden, beispielsweise definiert `string[]` ein Array von Zeichenfolgen.
+     Diese Option wird für Werte verwendet, die unterschiedliche Werte (aus unterschiedlichen Eigenschaften) zum Sortieren und Anzeigen verwenden.
 
-   Der Werte-Extractor wird durch den Spaltentyp ausgewählt. Wenn für einen Spaltentyp ein Werte-Extractor verfügbar ist, dann wird dieser verwendet. Andernfalls wird der standardmäßige Werte-Extractor verwendet.
+  Zusätzlich gilt Folgendes: jeder der oben genannten Werte kann als Mehrfachwert definiert werden, beispielsweise definiert `string[]` ein Array von Zeichenfolgen.
 
-   Ein Typ kann (optional) einen Parameter heranziehen. Beispielsweise extrahiert `timeslot:year` das Jahr aus einem Datumsfeld. Typen mit ihren Parametern:
+  Der Werte-Extractor wird durch den Spaltentyp ausgewählt. Wenn für einen Spaltentyp ein Werteextraktor verfügbar ist, wird dieser Extractor verwendet. Andernfalls wird der Standardwert-Extractor verwendet.
+
+  Ein Typ kann (optional) einen Parameter heranziehen. Beispielsweise extrahiert `timeslot:year` das Jahr aus einem Datumsfeld. Typen mit ihren Parametern:
 
    * `timeslot` – Die Werte sind mit den entsprechenden Konstanten von `java.utils.Calendar` vergleichbar.
 
@@ -898,86 +898,85 @@ N:definitions
       * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
       * `timeslot:minute-of-hour` - `Calendar.MINUTE`
 
-
 * `groupable`
 
-   Legt fest, ob der Bericht nach dieser Spalte gruppiert werden kann.
+  Legt fest, ob der Bericht nach dieser Spalte gruppiert werden kann.
 
 * `filters`
 
-   Filterdefinitionen.
+  Filterdefinitionen.
 
    * `filterType`
 
-      Die verfügbaren Filter sind:
+     Die verfügbaren Filter sind:
 
       * `string`
 
-         Ein zeichenfolgenbasierter Filter.
+        Ein zeichenfolgenbasierter Filter.
+
    * `id`
 
-      Filter-Kennung.
+     Filter-Kennung.
 
    * `phase`
 
-      Verfügbare Phasen:
+     Verfügbare Phasen:
 
       * `raw`
 
-         Der Filter wird auf Rohdaten angewendet.
+        Der Filter wird auf Rohdaten angewendet.
 
       * `preprocessed`
 
-         Der Filter wird auf vorverarbeitete Daten angewendet.
+        Der Filter wird auf vorverarbeitete Daten angewendet.
 
       * `resolved`
 
-         Der Filter wird auf aufgelöste Daten angewendet.
-
+        Der Filter wird auf aufgelöste Daten angewendet.
 
 * `aggregates`
 
-   Aggregatdefinitionen.
+  Aggregatdefinitionen.
 
    * `text`
 
-      Textdarstellung des Namens des Aggregats. Wenn `text` nicht angegeben ist, dann wird die Standardbeschreibung des Aggregats verwendet, beispielsweise wird `minimum` für das Aggregat `min` verwendet.
+     Textdarstellung des Namens des Aggregats. Wenn `text` nicht angegeben ist, dann wird die Standardbeschreibung des Aggregats verwendet, beispielsweise wird `minimum` für das Aggregat `min` verwendet.
 
    * `type`
 
-      Aggregattyp. Die verfügbaren Aggregate sind:
+     Aggregattyp. Die verfügbaren Aggregate sind:
 
       * `count`
 
-         Zählt die Anzahl der Zeilen.
+        Zählt die Anzahl der Zeilen.
 
       * `count-nonempty`
 
-         Zählt die Anzahl der nicht leeren Zeilen.
+        Zählt die Anzahl der nicht leeren Zeilen.
 
       * `min`
 
-         Stellt den Mindestwert bereit.
+        Stellt den Mindestwert bereit.
 
       * `max`
 
-         Stellt den Höchstwert bereit.
+        Stellt den Höchstwert bereit.
 
       * `average`
 
-         Stellt den Durchschnittswert bereit.
+        Stellt den Durchschnittswert bereit.
 
       * `sum`
 
-         Stellt die Summe aller Werte bereit.
+        Stellt die Summe aller Werte bereit.
 
       * `median`
 
-         Stellt den Medianwert bereit.
+        Stellt den Medianwert bereit.
 
       * `percentile95`
 
-         Zieht das 95. Perzentil aller Werte heran.
+        Zieht das 95. Perzentil aller Werte heran.
 
 ### Spaltenstandardwerte {#column-default-values}
 
@@ -990,11 +989,11 @@ N:defaults
 
 * `aggregate`
 
-   Die gültigen `aggregate`-Werte sind dieselben wie für `type` unter `aggregates` (siehe [Spaltenspezifische Definitionen (Definitionen – Filter/Aggregate)](#column-specific-definitions)).
+  Die gültigen `aggregate`-Werte sind dieselben wie für `type` unter `aggregates` (siehe [Spaltenspezifische Definitionen (Definitionen – Filter/Aggregate)](#column-specific-definitions)).
 
 ### Ereignisse und Aktionen {#events-and-actions}
 
-Die Bearbeitungskonfiguration definiert sowohl die erforderlichen Ereignisse, die die Listener erkennen müssen, als auch die Aktionen, die nach dem Auftreten dieser Ereignisse ausgeführt werden sollen. Weitere Informationen finden Sie in der [Einführung zur Komponentenentwicklung](/help/sites-developing/components.md).
+&quot;Konfiguration bearbeiten&quot;definiert die Ereignisse, die die Listener erkennen müssen, und die Aktionen, die angewendet werden sollen, nachdem diese Ereignisse aufgetreten sind. Weitere Informationen finden Sie in der [Einführung zur Komponentenentwicklung](/help/sites-developing/components.md).
 
 Die folgenden Werte müssen definiert werden, um sicherzustellen, dass alle erforderlichen Aktionen berücksichtigt werden:
 
@@ -1014,9 +1013,9 @@ N:cq:editConfig [cq:EditConfig]
 
 ### Generische Spalten {#generic-columns}
 
-Generische Spalten sind eine Erweiterung, bei der (die meisten) Spaltendefinitionen auf der Instanz des Spaltenknotens (und nicht auf dem Komponentenknoten) gespeichert werden.
+Generische Spalten sind eine Erweiterung, bei der (die meisten) die Spaltendefinitionen in der Instanz des Spaltenknotens (und nicht im Komponentenknoten) gespeichert werden.
 
-Sie weisen ein (standardmäßiges) Dialogfeld auf, das Sie für eine einzelne generische Komponente anpassen. Über dieses Dialogfeld können Berichtsbenutzer die Spalteneigenschaften einer generischen Spalte auf der Berichtsseite definieren (über den Menüpunkt **Spalteneigenschaften**).
+Sie verwenden ein (standardmäßiges) Dialogfeld, das Sie für die jeweilige generische Komponente anpassen. In diesem Dialogfeld kann der Berichtsbenutzer die Spalteneigenschaften einer generischen Spalte auf der Berichtsseite definieren (mithilfe der Menüoption **Spalteneigenschaften...**).
 
 Ein Beispiel hierfür ist die Spalte **Generisch** des **Benutzerberichts**. Siehe `/libs/cq/reporting/components/userreport/genericcol`.
 
@@ -1024,27 +1023,27 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
 
 * Legen Sie die Eigenschaft `type` des Knotens `definition` der Spalte auf `generic` fest.
 
-   Siehe `/libs/cq/reporting/components/userreport/genericcol/definitions`
+  Siehe `/libs/cq/reporting/components/userreport/genericcol/definitions`
 
 * Geben Sie eine für das (standardmäßige) Dialogfeld unter dem Knoten `definition`definition der Spalte an.
 
-   Siehe `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
+  Siehe `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
    * Die Felder des Dialogfelds müssen sich auf die gleichen Namen beziehen wie die entsprechende Komponenteneigenschaft (einschließlich ihres Pfads).
 
-       Wenn Sie beispielsweise den Typ der generischen Spalte über das Dialogfeld als konfigurierbar festlegen möchten, verwenden Sie ein Feld mit dem Namen `./definitions/type`
+      Wenn Sie beispielsweise den Typ der generischen Spalte über das Dialogfeld als konfigurierbar festlegen möchten, verwenden Sie ein Feld mit dem Namen `./definitions/type`
 
    * Eigenschaften, die über die Benutzeroberfläche/das Dialogfeld definiert wurden, haben Vorrang vor denen, die in der `columnbase`-Komponente definiert wurden.
 
 * Definieren Sie die Bearbeitungskonfiguration.
 
-   Siehe `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
+  Siehe `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
 
 * Verwenden Sie AEM-Standardmethoden, um (zusätzliche) Spalteneigenschaften zu definieren.
 
-   Beachten Sie, dass bei Eigenschaften, die sowohl für die Komponenten- als auch für Spalteninstanz definiert sind, der Wert für die Spalteninstanz Vorrang hat.
+  Beachten Sie, dass bei Eigenschaften, die sowohl für die Komponenten- als auch für Spalteninstanz definiert sind, der Wert für die Spalteninstanz Vorrang hat.
 
-   Die für eine generische Spalte zur Verfügung stehenden Eigenschaften lauten:
+  Die für eine generische Spalte zur Verfügung stehenden Eigenschaften lauten:
 
    * `jcr:title` – Spaltenname
    * `definitions/aggregates` – Aggregate
@@ -1054,15 +1053,15 @@ Gehen Sie wie folgt vor, um eine Spalte als generisch zu definieren:
    * `definitions/queryBuilder` – die QueryBuilder-Konfiguration
    * `defaults/aggregate` – das Standardaggregat
 
-   Bei einer neuen Instanz der generischen Spalte im **Benutzerbericht** werden die über das Dialogfeld definierten Eigenschaften unter folgendem Pfad beibehalten:
+  Bei einer neuen Instanz der generischen Spalte im **Benutzerbericht** werden die über das Dialogfeld definierten Eigenschaften unter folgendem Pfad beibehalten:
 
-   `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
+  `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
 
 ## Berichtsdesign {#report-design}
 
-Mit dem Design wird festgelegt, welche Spaltentypen für die Erstellung eines Berichts zur Verfügung stehen. Außerdem wird damit das Absatzsystem definiert, dem die Spalten hinzugefügt werden.
+Der Entwurf definiert, welche Spaltentypen für die Erstellung eines Berichts verfügbar sind. Außerdem wird das Absatzsystem definiert, dem die Spalten hinzugefügt werden.
 
-Es wird dringend empfohlen, für jeden Bericht ein eigenes Design zu erstellen. Damit ist eine umfassende Flexibilität gewährleistet. Siehe auch [Definieren neuer Berichte](#defining-your-new-report).
+Es wird dringend empfohlen, für jeden Bericht ein individuelles Design zu erstellen. Dadurch wird volle Flexibilität gewährleistet. Siehe auch [Definieren neuer Berichte](#defining-your-new-report).
 
 Die standardmäßigen Berichtskomponenten befinden sich unter `/etc/designs/reports`.
 
@@ -1076,13 +1075,13 @@ Erforderliche Designeigenschaften werden unter `jcr:content/reportpage/report/co
 
 * `components`
 
-   Alle Komponenten und/oder Komponentengruppen, die für den Bericht zulässig sind.
+  Alle Komponenten und/oder Komponentengruppen, die für den Bericht zulässig sind.
 
 * `sling:resourceType`
 
-   Eigenschaft mit Wert dem Wert `cq/reporting/components/repparsys`.
+  Eigenschaft mit Wert dem Wert `cq/reporting/components/repparsys`.
 
-Ein Beispiel für ein Designsnippet (aus dem Design des Komponentenberichts):
+Ein Beispiel für ein Design-Snippet (aus dem Entwurf des Komponentenberichts entnommen) ist:
 
 ```xml
 <!-- ... -->
@@ -1102,17 +1101,17 @@ Ein Beispiel für ein Designsnippet (aus dem Design des Komponentenberichts):
 <!-- ... -->
 ```
 
-Die Angabe von Designs für einzelne Spalten ist nicht erforderlich. Verfügbare Spalten können im Design-Modus definiert werden.
+Es ist nicht erforderlich, Designs für einzelne Spalten anzugeben. Verfügbare Spalten können im Design-Modus definiert werden.
 
 >[!NOTE]
 >
->Es wird empfohlen, keine Änderungen an den Standardberichtsdesigns vorzunehmen. Dadurch wird sichergestellt, dass keine Änderungen beim Aktualisieren oder Installieren von Hotfixes verloren gehen.
+>Es wird empfohlen, keine Änderungen an den Standardberichtsdesigns vorzunehmen. Dadurch soll sichergestellt werden, dass Sie beim Aktualisieren oder Installieren von Hotfixes keine Änderungen verlieren.
 >
 >Kopieren Sie den Bericht und das entsprechende Design, wenn Sie einen Standardbericht anpassen möchten.
 
 >[!NOTE]
 >
->Standardspalten können beim Erstellen eines Berichts automatisch erstellt werden. Diese werden in der Vorlage angegeben.
+>Standardspalten können bei der Berichterstellung automatisch erstellt werden. Diese werden in der Vorlage angegeben.
 
 ## Berichtsvorlage {#report-template}
 
@@ -1125,7 +1124,7 @@ Die Vorlage muss:
 * das zu verwendende Design angeben
 * einen untergeordneten Knoten `report` erstellen, der über die Eigenschaft `sling:resourceType` auf die Container-Komponente (`reportbase`) verweist.
 
-Ein Beispiel für ein Vorlagensnippet (aus der Komponentenberichtsvorlage):
+Ein Beispiel für ein Vorlagenfragment (aus der Komponentenberichtsvorlage entnommen) ist:
 
 ```xml
 <!-- ... -->
@@ -1140,7 +1139,7 @@ Ein Beispiel für ein Vorlagensnippet (aus der Komponentenberichtsvorlage):
 <!-- .. -->
 ```
 
-Beispiel für ein Vorlagensnippet, das die Definition des Stammpfads (aus der Benutzerberichtsvorlage) zeigt:
+Ein Beispiel für einen Vorlagenausschnitt, der die Definition des Stammpfads (aus der Benutzerberichtsvorlage) anzeigt:
 
 ```xml
 <!-- ... -->
@@ -1179,18 +1178,18 @@ N:apps
                 N:<reportname> [sling:Folder]
 ```
 
-## Erstellen eigener Berichte – Beispiel {#creating-your-own-report-an-example}
+## Erstellen eines eigenen Berichts - ein Beispiel {#creating-your-own-report-an-example}
 
 ### Definieren neuer Berichte {#defining-your-new-report}
 
 Um einen neuen Bericht zu definieren, müssen Sie Folgendes erstellen und konfigurieren:
 
-1. den Stamm für Ihre Berichtskomponenten.
-1. die reportbase-Komponente.
-1. mindestens eine columnbase-Komponente.
-1. das Berichtsdesign.
-1. den Stamm für Ihre Berichtsvorlage.
-1. die Berichtsvorlage.
+1. Der Stamm für Ihre Berichtskomponenten.
+1. Die ReportBase-Komponente.
+1. Eine oder mehrere Spaltengrundkomponenten.
+1. Der Berichtsentwurf.
+1. Der Stamm für Ihre Berichtsvorlage.
+1. Die Berichtsvorlage.
 
 Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht definiert, der alle OSGi-Konfigurationen im Repository aufführt, d. h. alle Instanzen des Knotens `sling:OsgiConfig`.
 
@@ -1259,9 +1258,9 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
 
    * nach allen Knoten des Typs `sling:OsgiConfig` sucht.
    * sowohl `pie`- als auch `lineseries`-Diagramme anzeigt.
-   * den Benutzern ein Dialogfeld zum Konfigurieren des Berichts bereitstellt.
+   * stellt ein Dialogfeld bereit, in dem der Benutzer den Bericht konfigurieren kann
 
-1. Definieren Sie Ihre erste Spaltenkomponente („columnbase“). Zum Beispiel `bundlecol[cq:Component]` unter `/apps/cq/reporting/components/osgireport`.
+1. Definieren Sie die Komponente für die erste Spalte (columnbase) . Zum Beispiel `bundlecol[cq:Component]` unter `/apps/cq/reporting/components/osgireport`.
 
    ```xml
    N:osgireport [sling:Folder]
@@ -1360,15 +1359,15 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
    * Titel und Beschreibungen für die Vorlage bereitstellt.
    * eine Miniaturansicht für die Verwendung in der Vorlagenliste bereitstellt (die vollständige Definition dieses Knotens ist oben nicht aufgeführt – am einfachsten lässt sich eine Instanz von „thumbnail.png“ aus einem vorhandenen Bericht kopieren).
 
-### Erstellen von Instanzen neuer Berichte {#creating-an-instance-of-your-new-report}
+### Erstellen einer Instanz Ihres neuen Berichts {#creating-an-instance-of-your-new-report}
 
-Sie können nun eine Instanz Ihres neuen Berichts erstellen:
+Eine Instanz Ihres neuen Berichts kann jetzt erstellt werden:
 
 1. Öffnen Sie die **Tools-Konsole**.
 
-1. Wählen Sie im linken Bedienfeld **Berichte** aus.
-1. Klicken Sie dann in der Symbolleiste auf **Neu**. Definieren Sie einen **Titel** und **Namen**, wählen Sie Ihren neuen Berichtstyp (die **OSGi-Berichtsvorlage**) aus der Liste der Vorlagen aus und klicken Sie anschließen auf **Erstellen**.
-1. Ihre neue Berichtsinstanz wird in der Liste angezeigt. Doppelklicken Sie darauf, um sie zu öffnen.
+1. Auswählen **Berichte** im linken Bereich.
+1. Dann **Neu...** aus der Symbolleiste. Definieren Sie eine **Titel** und **Name**, wählen Sie Ihren neuen Berichtstyp (die **OSGi-Berichtsvorlage**) in der Liste der Vorlagen klicken Sie auf **Erstellen**.
+1. Ihre neue Berichtsinstanz wird in der Liste angezeigt. Doppelklicken Sie auf diesen Link, um ihn zu öffnen.
 1. Ziehen Sie eine Komponente (in diesem Beispiel **Bundle** in der Gruppe **OSGi Report**) aus dem Sidekick, um die erste Spalte zu erstellen, und [beginnen Sie mit dem Definieren des Berichts](/help/sites-administering/reporting.md#the-basics-of-report-customization)..
 
    >[!NOTE]
@@ -1381,6 +1380,7 @@ Sie können nun eine Instanz Ihres neuen Berichts erstellen:
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
+   >
 
 ## Konfigurieren der Dienste für das Framework für das Reporting {#configuring-the-report-framework-services}
 
@@ -1388,41 +1388,40 @@ In diesem Abschnitt werden die erweiterten Konfigurationsoptionen für die OSGi-
 
 Diese können über das Konfigurationsmenü der Web-Konsole eingesehen werden (beispielsweise verfügbar unter `http://localhost:4502/system/console/configMgr`). Bei der Verwendung von AEM gibt es mehrere Methoden zum Verwalten der Konfigurationseinstellungen für solche Services. Weitere Informationen und empfohlene Praktiken finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-### Grundlegender Dienst („Day CQ Reporting Configuration“) {#basic-service-day-cq-reporting-configuration}
+### Grundlegender Dienst (Day CQ Reporting Configuration) {#basic-service-day-cq-reporting-configuration}
 
-* **Zeitzone** definiert die Zeitzone, für die Verlaufsdaten erstellt werden. Damit soll sichergestellt werden, dass das Diagramm mit den Verlaufsdaten für jeden Benutzer weltweit dieselben Daten anzeigt.
-* **Gebietsschema** definiert das Gebietsschema, das in Verbindung mit der **Zeitzone** für Verlaufsdaten verwendet werden soll. Das Gebietsschema wird verwendet, um einige gebietsschemaspezifische Kalendereinstellungen festzulegen (z. B. ob der erste Tag der Woche Sonntag oder Montag ist).
+* **Zeitzone** definiert die Zeitzone, für die historische Daten erstellt werden. Dadurch soll sichergestellt werden, dass das historische Diagramm für jeden Benutzer auf der ganzen Welt dieselben Daten anzeigt.
+* **Gebietsschema** definiert das Gebietsschema, das zusammen mit dem **Zeitzone** für historische Daten. Das Gebietsschema wird verwendet, um einige gebietsschemaspezifische Kalendereinstellungen zu bestimmen (z. B. ob der erste Tag einer Woche Sonntag oder Montag ist).
 
-* **Momentaufnahmenpfad** definiert den Stammpfad, unter dem Momentaufnahmen für Diagramme mit Verlaufsdaten gespeichert werden.
-* **Pfad zu Berichten** definiert den Pfad, unter dem sich die Berichte befinden. Dieser wird vom Momentaufnahmendienst verwendet, um die Berichte zu bestimmen, für die tatsächlich Momentaufnahmen erstellt werden sollen.
-* **Tägliche Momentaufnahmen** definiert die Stunde jedes Tages, in der die täglichen Momentaufnahmen gemacht werden. Die angegebene Stunde bezieht sich auf die lokale Zeitzone des Servers.
+* **Snapshot-Pfad** definiert den Stammpfad, in dem Momentaufnahmen für historische Diagramme gespeichert werden.
+* **Pfad zu Berichten** definiert den Pfad, in dem sich die Berichte befinden. Dies wird vom Snapshot-Dienst verwendet, um die Berichte zu bestimmen, für die Momentaufnahmen erstellt werden sollen.
+* **Tägliche Momentaufnahmen** definiert die Stunde jedes Tages, in der täglich Momentaufnahmen gemacht werden. Die angegebene Stunde befindet sich in der lokalen Zeitzone des Servers.
 * **Stündliche Momentaufnahmen** definiert die Minute jeder Stunde, in der stündliche Momentaufnahmen gemacht werden.
-* **Zeilen (max.)** definiert die maximale Anzahl von Zeilen, die für jede Momentaufnahme gespeichert werden. Dieser Wert sollte mit Bedacht gewählt werden. Wenn er zu hoch ist, wirkt sich dies auf die Größe des Repositorys aus, wenn er zu niedrig ist, können Daten aufgrund der Art und Weise, wie Verlaufsdaten verarbeitet werden, ungenau sein.
+* **Zeilen (max.)** definiert die maximale Anzahl von Zeilen, die für jede Momentaufnahme gespeichert werden. Dieser Wert sollte nach vernünftigem Ermessen ausgewählt werden. Wenn es zu hoch ist, wirkt sich dies auf die Größe des Repositorys aus. Wenn es zu niedrig ist, sind die Daten aufgrund der Art und Weise, wie historische Daten verarbeitet werden, möglicherweise nicht genau.
 * **Falsche Daten** – wenn diese Option aktiviert ist, können falsche Verlaufsdaten mithilfe der `fakedata`-Auswahl erstellt werden. Wenn diese Option deaktiviert ist, wird bei Verwendung der `fakedata`-Auswahl eine Ausnahme ausgelöst.
 
-   Da es sich um falsche Daten handelt, dürfen sie *ausschließlich* zu Test- und Debugging-Zwecken verwendet werden.
+  Da es sich um falsche Daten handelt, dürfen sie *ausschließlich* zu Test- und Debugging-Zwecken verwendet werden.
 
-   Bei Verwendung der `fakedata`-Auswahl wird das Reporting implizit beendet, sodass alle vorhandenen Daten verloren gehen. Daten können manuell wiederhergestellt werden, aber dies kann sehr zeitaufwendig sein.
+  Bei Verwendung der `fakedata`-Auswahl wird das Reporting implizit beendet, sodass alle vorhandenen Daten verloren gehen. Daten können manuell wiederhergestellt werden, aber dies kann sehr zeitaufwendig sein.
 
 * **Momentaufnahmenbenutzer** definiert einen optionalen Benutzer, der für die Aufnahme von Momentaufnahmen verwendet werden kann.
 
-   Grundsätzlich werden Momentaufnahmen für den Benutzer erstellt, der das Reporting beendet hat. Unter Umständen (beispielsweise in einem Veröffentlichungssystem, in dem dieser Benutzer nicht existiert, da das Konto nicht repliziert wurde) empfiehlt es sich, einen Ausweichbenutzer anzugeben, der stattdessen verwendet wird.
+  Grundsätzlich werden Momentaufnahmen für den Benutzer erstellt, der das Reporting beendet hat. Unter Umständen (beispielsweise in einem Veröffentlichungssystem, in dem dieser Benutzer nicht existiert, da das Konto nicht repliziert wurde) empfiehlt es sich, einen Ausweichbenutzer anzugeben, der stattdessen verwendet wird.
 
-   Darüber hinaus kann die Angabe eines Benutzers ein Sicherheitsrisiko darstellen.
+  Darüber hinaus kann die Angabe eines Benutzers ein Sicherheitsrisiko darstellen.
 
 * **Momentaufnahmenbenutzer erzwingen** – wenn diese Option aktiviert ist, werden alle Momentaufnahmen mit dem unter *Momentaufnahmenbenutzer* angegebenen Benutzer gemacht. Dies kann bei unsachgemäßem Vorgehen schwerwiegende Auswirkungen auf die Sicherheit haben.
 
-### Cache-Einstellungen („Day CQ Reporting Cache“) {#cache-settings-day-cq-reporting-cache}
+### Cache-Einstellungen (Day CQ Reporting Cache) {#cache-settings-day-cq-reporting-cache}
 
-* **Aktivieren** ermöglicht es Ihnen, das Caching von Berichtsdaten zu aktivieren bzw. zu deaktivieren. Das Aktivieren des Berichtcaches hält die Berichtsdaten während mehrerer Anforderungen im Speicher vor. Damit lässt sich zwar die Leistung steigern, allerdings wird auch mehr Speicherplatz beansprucht, was in unter extremen Umständen zu Speicherausfällen führen kann.
-* **TTL** definiert die Zeit (in Sekunden), für die Berichtsdaten zwischengespeichert werden. Mit einem höheren Wert wird zwar die Leistung gesteigert, ggf. werden dann aber ungenaue Daten zurückgegeben, wenn sich die Daten innerhalb des Zeitraums ändern.
-* **Max. Anzahl an Einträgen** definiert die maximale Anzahl an Berichten, die gleichzeitig zwischengespeichert werden.
+* **Aktivieren** ermöglicht es Ihnen, das Zwischenspeichern von Berichtsdaten zu aktivieren oder zu deaktivieren. Durch Aktivierung des Berichts-Caches bleiben Berichtsdaten bei mehreren Anforderungen im Speicher. Dies kann die Leistung steigern, führt jedoch zu einem höheren Speicherverbrauch und kann unter extremen Umständen zu Speicherausfällen führen.
+* **TTL** definiert die Zeit (in Sekunden), für die Berichtsdaten zwischengespeichert werden. Eine höhere Zahl erhöht die Leistung, kann aber auch ungenaue Daten zurückgeben, wenn sich die Daten innerhalb des Zeitraums ändern.
+* **Max. Einträge** definiert die maximale Anzahl von Berichten, die gleichzeitig zwischengespeichert werden sollen.
 
 >[!NOTE]
 >
->Die Berichtsdaten können je nach Benutzer und Sprache unterschiedlich sein. Daher werden die Berichtsdaten pro Bericht, Benutzer und Sprache zwischengespeichert. Dies bedeutet, dass ein Wert für **Max. Anzahl an Einträgen** von `2` Daten für Folgendes zwischenspeichert:
+>Berichtsdaten können für jeden Benutzer und jede Sprache unterschiedlich sein. Daher werden Berichtsdaten pro Bericht, Benutzer und Sprache zwischengespeichert. Dies bedeutet, dass ein Wert für **Max. Anzahl an Einträgen** von `2` Daten für Folgendes zwischenspeichert:
 >
 >* entweder für einen Bericht für zwei Benutzer mit unterschiedlichen Spracheinstellungen
 >* oder für einen Benutzer und zwei Berichte
 >
-

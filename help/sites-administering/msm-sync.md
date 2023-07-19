@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2702'
+source-wordcount: '2701'
 ht-degree: 64%
 
 ---
@@ -88,7 +88,7 @@ In der folgenden Tabelle sind die Rollout-Konfigurationen aufgeführt, die mit A
   </tr>
   <tr>
    <td>Push bei Bearbeitung (leicht)</td>
-   <td><p>Pusht Inhalt auf die Live Copy, wenn die Blueprint-Seite geändert wird, ohne Verweise zu aktualisieren (z. B. für flache Kopien).</p> <p>Verwenden Sie diese Rollout-Konfiguration sparsam, da sie den Trigger "Bei Änderung"verwendet.</p> </td>
+   <td><p>Gibt Inhalt bei Änderung der Blueprint-Seite in die Live Copy weiter, ohne Verweise zu aktualisieren (z. B. für flache Kopien).</p> <p>Verwenden Sie diese Rollout-Konfiguration sparsam, da sie den Trigger "Bei Änderung"verwendet.</p> </td>
    <td>Bei Modifizierung</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> orderChildren</td>
   </tr>

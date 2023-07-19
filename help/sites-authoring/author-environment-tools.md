@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2242'
+source-wordcount: '2245'
 ht-degree: 99%
 
 ---
@@ -252,7 +252,7 @@ Sie können beispielsweise einen beschädigten Verweis innerhalb einer Verweisko
 
 ## Ereignisse: Zeitleiste {#events-timeline}
 
-Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites-Konsole** oder Assets aus der **Asset-Konsole**) kann die [Zeitleiste dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-authoring/basic-handling.md#timeline).
+Bei bestimmten Ressourcen (z. B. Seiten aus der **Sites**-Konsole oder Assets aus der **Asset**-Konsole) kann die [Timeline dazu verwendet werden, die zuletzt durchgeführten Aktivitäten für ausgewählte Elemente anzuzeigen](/help/sites-authoring/basic-handling.md#timeline).
 
 Öffnen Sie die gewünschte Konsole, navigieren Sie zur gewünschten Ressource und öffnen Sie die **Zeitleiste** wie folgt:
 
@@ -317,7 +317,7 @@ Sie können darauf über das Symbol oben rechts im Bildschirm zugreifen. Das Sym
 >* Abhängig von den Merkmalen der Seite sind einige Modi ggf. nicht verfügbar.
 >* Für den Zugriff auf einige Modi sind die entsprechenden Berechtigungen erforderlich.
 >* Aus Platzgründen steht der Entwicklermodus auf Mobilgeräten nicht zur Verfügung.
->* Mit dem [Tastaturbefehl](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Shift-M` (Strg+Umschalt+M) können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
+>* Mit dem [Tastaturbefehl](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) `Ctrl-Shift-M` können Sie zwischen der **Vorschau** und dem aktuell ausgewählten Modus (z. B. **Bearbeiten**, **Layout** usw.) wechseln.
 >
 
 ## Pfadauswahl {#path-selection}

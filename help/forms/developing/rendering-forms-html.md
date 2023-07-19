@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '4150'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 
@@ -94,7 +94,8 @@ Achten Sie beim Rendern von HTML-Formularen, die sowohl Seitennavigationsfunktio
 Formularskripte, die sich im form:ready-Ereignis befinden, werden nur einmal während der ersten Wiedergabe des Formulars ausgeführt und nicht für nachfolgende Seitenabrufe. Im Gegensatz dazu wird das form:calculate-Ereignis für jede Seitennavigation ausgeführt, in der das Formular wiedergegeben wird.
 
 >[!NOTE]
->In einem mehrseitigen Formular werden Änderungen, die von JavaScript an einer Seite vorgenommen werden, nicht beibehalten, wenn Sie zu einer anderen Seite wechseln.
+>
+In einem mehrseitigen Formular werden Änderungen, die von JavaScript an einer Seite vorgenommen werden, nicht beibehalten, wenn Sie zu einer anderen Seite wechseln.
 
 Sie können benutzerdefinierte Skripte vor dem Senden eines Formulars aufrufen. Diese Funktion funktioniert in allen verfügbaren Browsern. Sie kann jedoch nur verwendet werden, wenn Benutzer das HTML-Formular wiedergeben, dessen `Output Type`-Eigenschaft auf `Form Body` gesetzt ist. Dies wird nicht funktionieren, wenn `Output Type` `Full HTML` ist. Die Schritte zur Konfiguration dieser Funktion finden Sie unter Konfigurieren von Formularen in der Administrationshilfe.
 
@@ -167,7 +168,8 @@ Das folgende Skript erhält die `fillColor` eines Feldes auf der Grundlage des W
 ```
 
 >[!NOTE]
->Statische Objekte werden nicht in einem wiedergegebenen HTML-Formular angezeigt, wenn sie in einer Tabellenzelle verschachtelt sind. Beispielsweise werden ein in einer Tabellenzelle verschachtelter Kreis und Rechteck nicht in einem Render-HTML-Formular angezeigt. Dieselben statischen Objekte werden jedoch korrekt angezeigt, wenn sie sich außerhalb der Tabelle befinden.
+>
+Statische Objekte werden nicht in einem wiedergegebenen HTML-Formular angezeigt, wenn sie in einer Tabellenzelle verschachtelt sind. Beispielsweise werden ein in einer Tabellenzelle verschachtelter Kreis und Rechteck nicht in einem Render-HTML-Formular angezeigt. Dieselben statischen Objekte werden jedoch korrekt angezeigt, wenn sie sich außerhalb der Tabelle befinden.
 
 ## HTML-Formulare digital signieren {#digitally-signing-html-forms}
 
@@ -189,7 +191,8 @@ Sie können ein vollständiges HTML-Formular wiedergeben, das den Richtlinien f�
 Es wird empfohlen, die Verwendung von Validierungsregeln für Formularfelder bei der Wiedergabe des Formulars als HTML-Formular zu beschränken. Einige Validierungsregeln werden für HTML-Formulare möglicherweise nicht unterstützt. Wenn beispielsweise ein Validierungsmuster MM-TT-JJJJ auf ein `Date/Time`-Feld angewendet wird, das sich in einem Formularentwurf befindet, der als HTML-Formular wiedergegeben wird, funktioniert es nicht richtig, selbst wenn das Datum richtig eingegeben wird. Bei Formularen, die im PDF-Format dargestellt werden, funktioniert dieses Validierungsmuster jedoch ordnungsgemäß.
 
 >[!NOTE]
->Weitere Informationen über den Forms-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>
+Weitere Informationen über den Forms-Dienst finden Sie unter [Dienstreferenz für AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Zusammenfassung der Schritte {#summary-of-steps}
 
@@ -217,17 +220,19 @@ Sie legen beim Rendern eines HTML-Formulars HTML-Laufzeitoptionen fest. So könn
 * `Upload`: Bietet eine Benutzeroberfläche zum Auswählen von Dateien, die an das aktuelle Formular angehängt werden sollen.
 * `Download`: Bietet eine Benutzeroberfläche zum Anzeigen der angehängten Dateien.
 
-Wenn eine HTML-Symbolleiste auf einem HTML-Formular erscheint, kann ein Benutzer maximal zehn Dateien auswählen, die zusammen mit den Formulardaten übermittelt werden sollen. Nachdem die Dateien übermittelt wurden, kann der Forms-Dienst die Dateien abrufen.
+Wenn eine HTML-Symbolleiste auf einem HTML-Formular angezeigt wird, kann ein Benutzer maximal zehn Dateien auswählen, die zusammen mit Formulardaten gesendet werden sollen. Nachdem die Dateien übermittelt wurden, kann der Forms-Dienst die Dateien abrufen.
 
 Wenn Sie ein Formular als HTML wiedergeben, können Sie einen User-Agent-Wert angeben. Ein User-Agent-Wert liefert Browser- und Systeminformationen. Dies ist ein optionaler Wert, und Sie können einen leeren Zeichenfolgenwert übergeben. Die Kurzanleitung zum Rendern eines HTML-Formulars mithilfe der Java-API zeigt, wie ein Benutzeragentenwert abgerufen und zum Rendern eines Formulars als HTML verwendet wird.
 
 HTTP-URLs, an die Formulardaten gesendet werden, können durch Festlegen der Ziel-URL mithilfe der Forms Service Client-API angegeben werden oder in der im XDP-Formularentwurf enthaltenen Senden-Schaltfläche angegeben werden. Wenn die Ziel-URL im Formularentwurf angegeben ist, legen Sie einen Wert nicht mithilfe der Forms Service Client-API fest.
 
 >[!NOTE]
->Das Rendern eines HTML-Formulars mit einer Symbolleiste ist optional.
+>
+Das Rendern eines HTML-Formulars mit einer Symbolleiste ist optional.
 
 >[!NOTE]
->Wenn Sie ein AHTML-Formular rendern, wird empfohlen, keine Symbolleiste zum Formular hinzuzufügen.
+>
+Wenn Sie ein AHTML-Formular rendern, wird empfohlen, keine Symbolleiste zum Formular hinzuzufügen.
 
 **Rendern eines HTML-Formulars**
 
@@ -278,7 +283,8 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Java):
    * Um das HTML-Formular innerhalb vollständiger HTML-Tags zu rendern, rufen Sie die Methode `setOutputType` des `HTMLRenderSpec`-Objekts auf und übergeben `OutputType.FullHTMLTags`. (Diese Einstellung ist optional.)
 
    >[!NOTE]
-   >Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Programm-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `FormsServiceClient` des `(Deprecated) renderHTMLForm`-Objekts übergeben wird). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
+   >
+   Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Programm-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `FormsServiceClient` des `(Deprecated) renderHTMLForm`-Objekts übergeben wird). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
 
 1. Rendern Sie ein HTML-Formular
 
@@ -335,7 +341,8 @@ So rendern Sie ein HTML-Formular mithilfe der Forms-API (Webservice):
    * Um das HTML-Formular innerhalb vollständiger HTML-Tags zu rendern, rufen Sie die Methode `setOutputType` des `HTMLRenderSpec`-Objekts auf und übergeben `OutputType.FullHTMLTags`.
 
    >[!NOTE]
-   >Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Programm-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `(Deprecated) renderHTMLForm` des `FormsServiceClient`-Objekts übergeben wird). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
+   >
+   Formulare werden nicht erfolgreich in HTML gerendert, wenn die Option `StandAlone` `true` ist und `ApplicationWebRoot` auf einen anderen Server als den J2EE-Programm-Server verweist, auf dem AEM Forms gehostet wird (der Wert von `ApplicationWebRoot` wird mithilfe des `URLSpec`-Objekts angegeben, das an die Methode `(Deprecated) renderHTMLForm` des `FormsServiceClient`-Objekts übergeben wird). Wenn die `ApplicationWebRoot` ein anderer Server ist, der als Host für AEM Forms dient, muss der URI-Wert des Web-Stamms in der Administration Console als URI-Wert für das Web-Programm des Formulars festgelegt werden. Dazu können Sie sich bei Administration Console anmelden, auf „Services“ > „Forms“ klicken und den URI des Web-Stamms auf https://server-name:port/FormServer setzen. Speichern Sie dann Ihre Einstellungen.
 
 1. Rendern Sie ein HTML-Formular
 

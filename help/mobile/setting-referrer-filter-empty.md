@@ -1,5 +1,5 @@
 ---
-title: Einrichten eines Referrer-Filters, um leere zu erlauben
+title: Einstellen des Referrer-Filters auf "Leere erlauben"
 seo-title: Setting Your Referrer Filter to Allow Empty
 description: Auf dieser Seite erfahren Sie mehr über den Referrer-Filter. Damit der AEM Mobile Application Viewer Apps in Ihrer Autoreninstanz anzeigen kann, müssen Sie Ihren HTML-Referrer-Filter auf "Leer zulassen"einstellen.
 seo-description: Follow this page to learn about Referrer Filter. In order to allow the AEM Mobile Application Viewer to view apps on your Author instance, you'll need to set your HTML referrer filter to 'allow empty'.
@@ -10,23 +10,23 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 8fb7d088-94bf-4799-98b3-8fa58eef83df
 exl-id: 2f02f541-92db-469b-bf23-ec64d2e282ff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '181'
-ht-degree: 54%
+source-wordcount: '182'
+ht-degree: 3%
 
 ---
 
-# Einrichten eines Referrer-Filters, um leere zu erlauben{#setting-your-referrer-filter-to-allow-empty}
+# Einstellen des Referrer-Filters auf &quot;Leere erlauben&quot;{#setting-your-referrer-filter-to-allow-empty}
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Damit der AEM Mobile Application Viewer Apps in Ihrer Autoreninstanz anzeigen kann, müssen Sie Ihren HTML-Referrer-Filter auf &quot;Leer zulassen&quot;einstellen.
 
-Wenn Sie nicht beabsichtigen, den Anwendungs-Viewer zu verwenden, um Anwendungen im Entwicklungs- und Bereitstellungsstatus zu überprüfen, müssen Sie die Standardeinstellung des Referrer-Filters nicht ändern.
+Wenn Sie nicht beabsichtigen, mit dem Anwendungs-Viewer Anwendungen in Entwicklungs- und Staging-Status zu überprüfen, müssen Sie die Standardeinstellung des Referrer-Filters nicht ändern.
 
-Navigieren Sie in der laufenden Autoreninstanz von AEM zu: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr) und suchen Sie nach &quot;Apache Sling Referrer Filter&quot;. Klicken Sie, um den Referrer-Filter bearbeiten, und aktivieren Sie das Kontrollkästchen „leere erlauben“ (siehe folgende Abbildung). Klicken Sie anschließend auf die Schaltfläche „Speichern“ und schließen Sie die Browserseite.
+Navigieren Sie in der laufenden Autoreninstanz von AEM zu: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr) und suchen Sie nach &quot;Apache Sling Referrer Filter&quot;. Klicken Sie auf , um den Referrer-Filter zu bearbeiten, und aktivieren Sie das Kontrollkästchen &quot;Leere erlauben&quot;(siehe Abbildung unten). Klicken Sie anschließend auf die Schaltfläche &quot;Speichern&quot;und schließen Sie die Browser-Seite.
 
-![Referrer-Filtereinstellungen](assets/chlimage_1-106.png)
+![Einstellungen für Referrer-Filter](assets/chlimage_1-106.png)

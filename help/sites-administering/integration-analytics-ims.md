@@ -2,9 +2,9 @@
 title: Integration mit Adobe Analytics mithilfe von IMS
 description: Erfahren Sie mehr über die Integration von AEM mit Adobe Analytics mithilfe von IMS.
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: 5789954afea2d42444b6f6f9f185d7926624e7f0
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1057'
 ht-degree: 98%
 
 ---
@@ -154,7 +154,7 @@ Zurück in AEM können Sie die IMS-Konfiguration abschließen, indem Sie erforde
 1. Hier können Sie die [für das Integrationsprojekt in der Adobe-Entwicklerkonsole gespeicherten Details](#details-stored-for-the-ims-integration-project) verwenden:
 
    * **Titel**: Ihr Text.
-   * **Autorisierungsserver**: Übernehmen Sie dies per Kopieren und Einfügen aus der `aud`-Zeile im Abschnitt **Payload** unten, z. B. `https://ims-na1.adobelogin.com`.
+   * **Autorisierungs-Server**: Übernehmen Sie diese Angabe per Kopieren und Einfügen aus der `aud`-Zeile im Abschnitt **Payload** unten, z. B. `https://ims-na1.adobelogin.com` im nachstehenden Beispiel.
    * **API-Schlüssel**: Kopieren Sie dies aus dem Abschnitt **Anmeldedaten** in der [Projektübersicht](#details-stored-for-the-ims-integration-project).
    * **Client-Geheimnis**: Generieren Sie dies auf der [Registerkarte „Client-Geheimnis“ im Abschnitt „Dienstkonto (JWT)“](#details-stored-for-the-ims-integration-project) und kopieren Sie es.
    * **Payload**: Kopieren Sie dies von der [Registerkarte „JWT generieren“ im Abschnitt „Dienstkonto (JWT)“](#details-stored-for-the-ims-integration-project).

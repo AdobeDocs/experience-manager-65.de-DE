@@ -3,9 +3,9 @@ title: Erstellen und Synchronisieren von Live Copies
 description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren können.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4230'
+source-wordcount: '4229'
 ht-degree: 66%
 
 ---
@@ -154,7 +154,7 @@ So erstellen Sie eine Live Copy einer Site aus einer Blueprint-Konfiguration:
 
    ![Auswählen der Blueprint-Konfiguration als Quelle der Live Copy](assets/blueprint-configuration-select.png)
 
-1. Verwenden Sie die **Ausgangssprachen** Auswahl, um die Sprache(n) der Blueprint-Site anzugeben, die für die Live Copy verwendet werden soll.
+1. Verwenden Sie die **Ausgangssprachen** Auswahl, um die Sprachen der Blueprint-Site anzugeben, die für die Live Copy verwendet werden soll.
 
    Alle verfügbaren Sprachen sind standardmäßig ausgewählt. Um eine Sprache zu entfernen, klicken oder tippen Sie auf **X** neben der Sprache.
 

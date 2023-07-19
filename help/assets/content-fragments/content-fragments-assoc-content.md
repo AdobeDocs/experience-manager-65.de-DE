@@ -4,10 +4,10 @@ description: Erfahren Sie, wie die AEM-Funktion für zugehörige Inhalte eine Ve
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
-source-git-commit: de38dbb9d0ce523543c11e665c02034f4b38f1e6
-workflow-type: ht
-source-wordcount: '244'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 93%
 
 ---
 
@@ -19,7 +19,7 @@ Die AEM-Funktion für zugehörige Inhalte stellt die Verbindung bereit, mit der 
 
 >[!NOTE]
 >
->Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen.
+>Es gibt diverse Methoden, um [visuelle Assets (zum Beispiel Fotos)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zum Fragment und/oder der Seite hinzuzufügen.
 
 Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer Sammlung hinzugefügt werden](/help/assets/manage-collections.md). Danach können Sie Folgendes tun:
 
@@ -46,7 +46,7 @@ Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer
 
 Nachdem Sie eine Sammlung zugewiesen haben, können Sie Folgendes tun:
 
-* Die Verknüpfung **entfernen**.
-* Der Sammlung **Assets hinzufügen**.
-* Ein Asset für weitere Aktionen auswählen.
-* Das Asset bearbeiten.
+* **Entfernen** den Verband.
+* **Hinzufügen von Assets** in die Sammlung ein.
+* Wählen Sie ein Asset für weitere Aktionen aus.
+* Bearbeiten Sie das Asset.

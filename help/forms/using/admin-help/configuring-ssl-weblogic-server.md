@@ -1,7 +1,7 @@
 ---
-title: SSL für WebLogic Server konfigurieren
+title: Konfigurieren von SSL für WebLogic Server
 seo-title: Configuring SSL for WebLogic Server
-description: Erfahren Sie, wie Sie eine SSL-Berechtigung für die Verwendung auf dem WebLogic Server erstellen und wie Sie SSL für WebLogic Server konfigurieren.
+description: Erfahren Sie, wie Sie eine SSL-Berechtigung für die Verwendung auf WebLogic-Server erstellen und SSL für WebLogic Server konfigurieren.
 seo-description: Learn how to create an SSL credential for use on WebLogic server and how to configure SSL for WebLogic Server.
 uuid: 8ee979fd-2615-451b-a607-4f73ecfed4f9
 contentOwner: admin
@@ -9,26 +9,26 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '1049'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1048'
+ht-degree: 35%
 
 ---
 
 
-# SSL für WebLogic Server konfigurieren {#configuring-ssl-for-weblogic-server}
+# Konfigurieren von SSL für WebLogic Server {#configuring-ssl-for-weblogic-server}
 
-Zum Konfigurieren von SSL unter WebLogic Server benötigen Sie eine SSL-Berechtigung für die Authentifizierung. Sie können das Java-Keytool zum Ausführen der folgenden Aufgaben zum Erstellen einer Berechtigung verwenden:
+Zum Konfigurieren von SSL auf WebLogic Server benötigen Sie eine SSL-Berechtigung für die Authentifizierung. Sie können das Java-Keytool verwenden, um die folgenden Aufgaben zum Erstellen einer Berechtigung auszuführen:
 
-* Erstellen Sie ein Schlüsselpaar (öffentlich/privat) und fügen Sie den öffentlichen Schlüssel in ein selbst signiertes Zertifikat des Typs X.509 v1 ein, das als eingliedrige Zertifikatskette gespeichert wird. Speichern Sie die Zertifikatskette und den privaten Schlüssel in einem neuen Keystore. Bei diesem Keystore handelt es sich um den benutzerdefinierten Identitäts-Keystore des Anwendungsservers.
-* Extrahieren Sie das Zertifikat und fügen Sie es in einen neuen Keystore ein. Bei diesem Keystore handelt es sich um den benutzerdefinierten Trust-Keystore des Anwendungsservers.
+* Erstellen Sie ein Schlüsselpaar aus öffentlichem/privatem Schlüssel, schließen Sie den öffentlichen Schlüssel in ein selbst signiertes Zertifikat aus X.509 v1 ein, das als Zertifikatskette mit einem einzelnen Element gespeichert wird, und speichern Sie dann die Zertifikatskette und den privaten Schlüssel in einem neuen Keystore. Dieser Keystore ist der benutzerdefinierte Identitäts-Keystore des Anwendungsservers.
+* Extrahieren Sie das Zertifikat und fügen Sie es in einen neuen Keystore ein. Dieser Keystore ist der benutzerdefinierte Trust-Keystore des Anwendungsservers.
 
-Konfigurieren Sie WebLogic anschließend so, dass Ihr benutzerdefinierter Identitäts-Keystore und Ihr benutzerdefinierter Trust-Keystore verwendet werden. Deaktivieren Sie außerdem die Überprüfungsfunktion des Hostnamens in WebLogic, da der Name des Computers, der als Host für WebLogic dient, nicht in dem eindeutigen Namen enthalten ist, mit dem die Keystore-Dateien erstellt wurden.
+Konfigurieren Sie dann WebLogic so, dass der von Ihnen erstellte benutzerdefinierte Identitäts-Keystore und der benutzerdefinierte Trust-Keystore verwendet werden. Deaktivieren Sie außerdem die Überprüfungsfunktion für Hostnamen in WebLogic, da der Distinguished Name zum Erstellen der Keystore-Dateien nicht den Namen des Computers enthält, der als Host für WebLogic dient.
 
-## SSL-Berechtigung für die Verwendung unter WebLogic Server erstellen {#creating-an-ssl-credential-for-use-on-weblogic-server}
+## SSL-Berechtigung zur Verwendung auf WebLogic Server erstellen {#creating-an-ssl-credential-for-use-on-weblogic-server}
 
-Der Keytool-Befehl befindet sich in der Regel im Java-Ordner „jre/bin“ und muss mehrere Optionen und Optionswerte enthalten, die in der folgenden Tabelle aufgeführt sind.
+Der Keytool-Befehl befindet sich normalerweise im Ordner &quot;Java jre/bin&quot;und muss mehrere Optionen und Optionswerte enthalten, die in der folgenden Tabelle aufgeführt sind.
 
 <table>
  <thead>
@@ -50,12 +50,12 @@ Der Keytool-Befehl befindet sich in der Regel im Java-Ordner „jre/bin“ und m
   </tr>
   <tr>
    <td><p>-keyalg</p></td>
-   <td><p>Der zum Erstellen des Schlüsselpaars zu verwendende Algorithmus.</p></td>
-   <td><p>RSA</p><p>Sie können abhängig von den firmeninternen Richtlinien einen anderen Algorithmus verwenden.</p></td>
+   <td><p>Der Algorithmus zum Generieren des Schlüsselpaars.</p></td>
+   <td><p>RSA</p><p>Je nach Richtlinie Ihres Unternehmens können Sie einen anderen Algorithmus verwenden.</p></td>
   </tr>
   <tr>
    <td><p>-keystore</p></td>
-   <td><p>Der Speicherort und der Name der Keystore-Datei.</p><p>Der Speicherort kann den absoluten Pfad der Datei enthalten. Er kann auch relativ zum aktuellen Ordner der Eingabeaufforderung angegeben werden, an der der Keytool-Befehl eingegeben wird.</p></td>
+   <td><p>Speicherort und Name der Keystore-Datei.</p><p>Der Speicherort kann den absoluten Pfad der Datei enthalten. Oder sie kann relativ zum aktuellen Verzeichnis der Eingabeaufforderung sein, an der der Keytool-Befehl eingegeben wird.</p></td>
    <td>
     <ul>
      <li><p>Benutzerdefinierter Identitäts-Keystore: <code>[</code><i>appserverdomain<code>]</code></i><code>/adobe/</code><i>[Server-Name]</i><code>/ads-ssl.jks</code></p></li>
@@ -64,31 +64,31 @@ Der Keytool-Befehl befindet sich in der Regel im Java-Ordner „jre/bin“ und m
   </tr>
   <tr>
    <td><p>-file</p></td>
-   <td><p>Der Speicherort und der Name der Zertifikatdatei.</p></td>
+   <td><p>Speicherort und Name der Zertifikatdatei.</p></td>
    <td><code> ads-ca.cer</code></td>
   </tr>
   <tr>
    <td><p>-validity</p></td>
-   <td><p>Die Gültigkeitsdauer des Zertifikats (in Tagen).</p></td>
-   <td><p>3650</p><p>Sie können abhängig von den firmeninternen Richtlinien einen anderen Wert verwenden.</p></td>
+   <td><p>Die Anzahl der Tage, in denen das Zertifikat als gültig betrachtet wird.</p></td>
+   <td><p>3650</p><p>Sie können je nach Richtlinie Ihres Unternehmens einen anderen Wert verwenden.</p></td>
   </tr>
   <tr>
    <td><p>-storepass</p></td>
-   <td><p>Das Kennwort, das den Keystore-Inhalt schützt. </p></td>
+   <td><p>Das Kennwort, das den Inhalt des Keystore schützt. </p></td>
    <td>
     <ul>
-     <li><p>Benutzerdefinierter Identitäts-Keystore: Das Keystore-Kennwort muss mit dem SSL-Berechtigungskennwort übereinstimmen, das für die Trust Store-Komponente von Administration Console festgelegt wurde.</p></li>
+     <li><p>Benutzerdefinierter Identitäts-Keystore: Das Keystore-Kennwort muss mit dem SSL-Berechtigungskennwort übereinstimmen, das für die Trust Store-Komponente in Administration Console angegeben wurde.</p></li>
      <li><p>Benutzerdefinierter Trust-Keystore: Verwenden Sie dasselbe Kennwort wie für den benutzerdefinierten Identitäts-Keystore.</p></li>
     </ul></td>
   </tr>
   <tr>
    <td><p>-keypass</p></td>
    <td><p>Das Kennwort, das den privaten Schlüssel des Schlüsselpaars schützt.</p></td>
-   <td><p>Verwenden Sie das gleiche Kennwort wie für die Option <code>-storepass</code>. Das Schlüsselkennwort muss mindestens sechs Zeichen aufweisen.</p></td>
+   <td><p>Verwenden Sie das gleiche Kennwort wie für die Option <code>-storepass</code>. Das Schlüsselkennwort muss mindestens sechs Zeichen lang sein.</p></td>
   </tr>
   <tr>
    <td><p>-dname</p></td>
-   <td><p>Der Distinguished Name, der den Eigentümer des Keystore kennzeichnet.</p></td>
+   <td><p>Der Distinguished Name, der die Person identifiziert, der der Keystore gehört.</p></td>
    <td><p><code>"CN=</code><code>[User name]</code><code>,OU=</code><code>[Group Name]</code><code>, O=</code><code>[Company Name]</code><code>, L=</code><code>[City Name]</code><code>, S=</code><code>[State or province]</code><code>, C=</code><code>[Country Code]</code><code>"</code></p>
     <ul>
      <li><p><code><i>[User name]</i></code> ist die Kennung des Benutzers, dem der Keystore gehört.</p></li>
@@ -102,9 +102,9 @@ Der Keytool-Befehl befindet sich in der Regel im Java-Ordner „jre/bin“ und m
  </tbody>
 </table>
 
-Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei „keytool.html“, die sich in der JDK-Dokumentation befindet.
+Weitere Informationen zur Verwendung des Keytool-Befehls finden Sie in der Datei &quot;keytool.html&quot;, die Teil Ihrer JDK-Dokumentation ist.
 
-## Benutzerdefinierte Identitäts- und Trust-Keystores erstellen {#create-the-custom-identity-and-trust-keystores}
+## Erstellen von benutzerdefinierten Identitäts- und Trust-Keystores {#create-the-custom-identity-and-trust-keystores}
 
 1. Navigieren Sie in einer Eingabeaufforderung zu *[appserverdomain]*/adobe/*[Server-Name]*.
 1. Geben Sie den folgenden Befehl ein:
@@ -143,8 +143,8 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
 
    Die Zertifikatsdatei mit dem Namen „ads-ca.cer“ wird im Verzeichnis [appserverdomain]/adobe/[*Server-Name*] erstellt.
 
-1. Kopieren Sie die Datei „ads-ca.cer“ auf alle Hostcomputer, für die eine sichere Kommunikation mit dem Anwendungsserver erforderlich ist.
-1. Fügen Sie das Zertifikat mit dem folgenden Befehl in eine neue Keystore-Datei ein (d. h. in den benutzerdefinierten Trust-Keystore):
+1. Kopieren Sie die Datei &quot;ads-ca.cer&quot;auf alle Hostcomputer, die sichere Kommunikation mit dem Anwendungsserver benötigen.
+1. Fügen Sie das Zertifikat in eine neue Keystore-Datei (den benutzerdefinierten Trust-Keystore) ein, indem Sie den folgenden Befehl eingeben:
 
    [JAVA_HOME] `/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
 
@@ -160,24 +160,24 @@ Weitere Informationen zum Verwenden des Keytool-Befehls finden Sie in der Datei 
 
 Die benutzerdefinierte Trust-Keystore-Datei „ads-ca.jks“ wird im Verzeichnis [appserverdomain]/adobe/[Server] erstellt.
 
-Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore und Ihr benutzerdefinierter Trust-Keystore verwendet werden. Deaktivieren Sie außerdem die Überprüfungsfunktion des Hostnamens in WebLogic, da der Name des Computers, der als Host für WebLogic Server dient, nicht in dem eindeutigen Namen enthalten ist, mit dem die Keystore-Dateien erstellt wurden.
+Konfigurieren Sie WebLogic so, dass es den von Ihnen erstellten benutzerdefinierten Identitäts-Keystore und benutzerdefinierten Trust-Keystore verwendet. Deaktivieren Sie außerdem die Überprüfungsfunktion für Hostnamen in WebLogic, da der Distinguished Name zum Erstellen der Keystore-Dateien nicht den Namen des Computers enthält, der als Host für WebLogic Server dient.
 
-## WebLogic zur Verwendung mit SSL konfigurieren {#configure-weblogic-to-use-ssl}
+## WebLogic für die Verwendung von SSL konfigurieren {#configure-weblogic-to-use-ssl}
 
 1. Starten Sie die WebLogic Server-Administrationskonsole, indem Sie `https://`*[Host-Name ]*`:7001/console` in die URL-Zeile eines Webbrowsers eingeben.
 1. Wählen Sie unter „Umgebung“ in „Domain-Konfigurationen“ die Option **Server > [Server] > Konfiguration > Allgemein**.
-1. Vergewissern Sie sich, dass unter „General“ im Bereich „Configuration“die Optionen **Listen Port Enabled** und **SSL Listen Port Enabled** ausgewählt sind. Ist es nicht aktiviert, führen Sie folgende Schritte aus:
+1. Stellen Sie unter &quot;Allgemein&quot;in &quot;Konfiguration&quot;sicher, dass **Listen Port Enabled** und **SSL Listen Port aktiviert** ausgewählt sind. Wenn diese Option nicht aktiviert ist, gehen Sie wie folgt vor:
 
    1. Klicken Sie im Change Center auf **Sperren und bearbeiten**, um Auswahlen und Werte zu ändern.
-   1. Vergewissern Sie sich, dass die Kontrollkästchen **Listen Port Enabled** und **SSL Listen Port Enabled** aktiviert sind.
+   1. Überprüfen Sie die **Listen Port Enabled** und **SSL Listen Port aktiviert** aktivieren.
 
-1. Wenn es sich hierbei um einen Managed Server handelt, ändern Sie den Wert für „Listen Port“ in einen nicht verwendeten Anschlusswert (z. B. 8001) und „SSL Listen Port“ in einen nicht verwendeten Anschlusswert (z. B. 8002). Bei einem eigenständigen Server ist der standardmäßige SSL-Anschluss 7002.
-1. Klicken Sie auf **Release Configuration**.
+1. Wenn es sich bei diesem Server um einen verwalteten Server handelt, ändern Sie Listen Port in einen nicht verwendeten Anschlusswert (z. B. 8001) und SSL Listen Port in einen nicht verwendeten Anschlusswert (z. B. 8002). Auf einem eigenständigen Server ist der standardmäßige SSL-Anschluss 7002.
+1. Klicken **Versionskonfiguration**.
 1. Klicken Sie unter „Umgebung“ in „Domain-Konfigurationen“ auf **Server > [*Managed Server*] > Konfiguration > Allgemein**.
 1. Wählen Sie in den Konfigurationen unter „Allgemein“ die Option **Keystores**.
 1. Klicken Sie im Change Center auf **Sperren und bearbeiten**, um Auswahlen und Werte zu ändern.
-1. Klicken Sie auf **Change**, um eine Keystore-Liste als Dropdown-Liste anzuzeigen und wählen Sie **Custom Identity And Custom Trust**.
-1. Geben Sie unter „Identity“ die folgenden Werte an:
+1. Klicken **Änderung** , um die Keystore-Liste als Dropdown-Liste abzurufen, und wählen Sie **Benutzerdefinierte Identität und benutzerdefinierter Vertrauen**.
+1. Geben Sie unter Identität die folgenden Werte an:
 
    **Bennitzerdefinierter Identitäts-Keystore**: *[appserverdomain]*/adobe/*[Server-Nname]*/ads-credentials.jks, wobei *[appserverdomain] *der aktuelle Pfad und *[Server-Name]* der Name des Anwendungs-Servers ist.
 
@@ -185,7 +185,7 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
 
    **Custom Identity Keystore Passphrase**: *mypassword*  (Custom Identity Keystore Password)
 
-1. Geben Sie unter „Trust“ die folgenden Werte an:
+1. Geben Sie unter &quot;Trust&quot;die folgenden Werte an:
 
    **Benutzerdefinierter Trust-Keystore-Dateiname**: `*[appserverdomain]*/adobe/*'server'*/ads-ca.jks`, wobei `*[appserverdomain]*` der tatsächliche Pfad ist
 
@@ -193,23 +193,23 @@ Konfigurieren Sie WebLogic so, dass Ihr benutzerdefinierter Identitäts-Keystore
 
    **Custom Trust Keystore Pass Phrase**: *mypassword*  (Custom Trust Key Password)
 
-1. Wählen Sie unter „General“ im Bereich „Configuration“ den Eintrag **SSL** aus.
-1. Standardmäßig wird für Identity and Trust Locations „Keystore“ ausgewählt. Wenn nicht, ändern Sie es auf Keystore.
-1. Geben Sie unter „Identity“ die folgenden Werte an:
+1. Wählen Sie unter &quot;Allgemein&quot;unter &quot;Konfiguration&quot;die Option **SSL**.
+1. Standardmäßig ist Keystore für Identity and Trust Locations ausgewählt. Wenn nicht, ändern Sie es in Keystore.
+1. Geben Sie unter Identität die folgenden Werte an:
 
-   **Private Key Alias**: ads-credentials
+   **Alias für privaten Schlüssel**: ads-credentials
 
    **Passphrase**: *mypassword*
 
-1. Klicken Sie auf **Release Configuration**.
+1. Klicken **Versionskonfiguration**.
 
-## Überprüfungsfunktion des Hostnamens deaktivieren {#disable-the-hostname-verification-feature}
+## Überprüfungsfunktion für Hostnamen deaktivieren {#disable-the-hostname-verification-feature}
 
-1. Klicken Sie auf der Registerkarte „Configuration“ auf „SSL“.
-1. Wählen Sie unter „Advanced“ in der Liste „Hostname Verification“ den Eintrag „None“.
+1. Klicken Sie auf der Registerkarte Configuration auf SSL.
+1. Wählen Sie unter &quot;Erweitert&quot;in der Liste &quot;Überprüfung des Hostnamens&quot;die Option Keine aus.
 
-   Wenn die Überprüfung des Hostnamens nicht deaktiviert wird, muss unter „Common Name (CN)“ der Hostname des Servers angegeben werden.
+   Wenn die Überprüfung des Hostnamens nicht deaktiviert ist, muss der allgemeine Name (CN) den Hostnamen des Servers enthalten.
 
-1. Klicken Sie unter „Change Center“ auf „Lock &amp; Edit“, um Auswahlen und Werte zu ändern.
+1. Klicken Sie unter &quot;Change Center&quot;auf Lock &amp; Edit , um Auswahlen und Werte zu ändern.
 1. Starten Sie den Anwendungs-Server neu.
 

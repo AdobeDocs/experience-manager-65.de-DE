@@ -1,11 +1,11 @@
 ---
-title: Persistente GraphQL-Abfragen
+title: Persistierte GraphQL-Abfragen
 description: Erfahren Sie, wie Sie GraphQL-Abfragen in Adobe Experience Manager beibehalten, um die Leistung zu optimieren. Persistierte Abfragen können von Client-Programmen mithilfe der HTTP-GET-Methode angefragt werden. Die Antwort kann dann auf der Dispatcher- und CDN-Ebene zwischengespeichert werden, was letztendlich die Leistung der Client-Programme verbessert.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: a8616b3b30ac04ea24c4a869cabd47518af1a35f
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1424'
-ht-degree: 98%
+source-wordcount: '1423'
+ht-degree: 97%
 
 ---
 

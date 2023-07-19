@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1409'
-ht-degree: 2%
+source-wordcount: '1410'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Beachten Sie die folgenden Richtlinien für die Entwicklung von Content Sync Handlern:
 
@@ -42,17 +42,17 @@ Im Folgenden werden vordefinierte App-Handler aufgeführt:
 
 * ***selector - String*** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele: *touch* zum Rendern mobiler Versionen einer Seite.
 
-* ***deep - Boolesch*** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert lautet *true.*
+* ***deep - Boolesch*** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert ist *wahr.*
 
-* ***includeImages - Boolean*** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert lautet *true*.
+* ***includeImages - Boolean*** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert ist *true*.
 
    * Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp foundation/components/image zur Aufnahme berücksichtigt.
 
-* ***includeVideos - Boolean*** - Optionale boolesche Eigenschaft bestimmt, ob Videos einbezogen werden sollen. Der Standardwert lautet *true*.
+* ***includeVideos - Boolean*** - Optionale boolesche Eigenschaft bestimmt, ob Videos einbezogen werden sollen. Der Standardwert ist *true*.
 
 * ***includeModifiedPagesOnly - Boolean*** - Wenn false oder ausgelassen, werden alle Seiten gerendert und Aktualisierungen im Rendering überprüft. Wenn &quot;true&quot;, unterscheidet sich die Basis von Änderungen an Seiten lastModified.
 * ***+ rewrite (Knoten)***
-   ***- relativeParentPath - String*** - der Pfad zum Schreiben aller anderen Pfade relativ zu.
+  ***- relativeParentPath - String*** - der Pfad zum Schreiben aller anderen Pfade relativ zu.
 
 >[!NOTE]
 >

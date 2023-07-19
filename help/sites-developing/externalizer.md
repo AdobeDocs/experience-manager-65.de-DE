@@ -1,7 +1,7 @@
 ---
 title: Externalisieren von URLs
 seo-title: Externalizing URLs
-description: Der Externalizer ist ein OSGi-Dienst, der es Ihnen ermöglicht, Ressourcenpfade programmgesteuert in externe, absolute URLs umzuwandeln.
+description: Der Externalizer ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert in eine externe und absolute URL umwandeln können.
 seo-description: The Externalizer is an OSGI service that allows you to programmatically transform a resource path into an external and absolute URL
 uuid: 65bcc352-fc8c-4aa0-82fb-1321a035602d
 contentOwner: Guillaume Carlino
@@ -11,22 +11,22 @@ content-type: reference
 discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '500'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 83%
 
 ---
 
 # Externalisieren von URLs{#externalizing-urls}
 
-In AEM ist der **Externalizer** ein OSGI-Service, der es Ihnen ermöglicht, einen Ressourcenpfad (z. B. `/path/to/my/page`) programmgesteuert in eine externe und absolute URL umzuwandeln (z. B. `https://www.mycompany.com/path/to/my/page`), indem der Pfad mit einem vorangestellten vorkonfigurieren DNS versehen wird.
+In AEM **Externalizer** ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert umwandeln können (z. B. `/path/to/my/page`) in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`), indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird.
 
 Dieser Dienst bietet einen zentralen Ort für die Konfiguration und Erstellung von externen URLs, weil eine Instanz ihre extern sichtbare URL nicht kennen kann, wenn sie hinter einer Web-Layer läuft, und weil manchmal ein Link außerhalb des Anfrageumfangs erstellt werden muss.
 
-Auf dieser Seite wird beschrieben, wie Sie den **Externalizer**-Dienst konfigurieren und verwenden. Weitere Informationen finden Sie in den [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+Auf dieser Seite wird beschrieben, wie Sie die **Externalizer** und wie Sie ihn verwenden. Weitere Informationen finden Sie im Abschnitt [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
 
-## Konfigurieren des Externalizer-Diensts {#configuring-the-externalizer-service}
+## Konfigurieren des Externalizer-Dienstes {#configuring-the-externalizer-service}
 
 Der **Externalizer**-Dienst ermöglicht es Ihnen, zentral mehrere Domains zu definieren, die für das programmgesteuerte Voranstellen von Präfixen für Ressourcenpfade verwendet werden können. Alle Domains werden anhand eines eindeutigen Namens zum programmgesteuerten Verweisen auf die Domain identifiziert.
 
@@ -54,6 +54,7 @@ Definieren Sie eine Domain-Zuordnung für den **Externalizer**-Service wie folgt
 
       * Verwenden Sie bei Bedarf HTTPS, um HTTPS-Links zu erzwingen.
       * Es wird verwendet, wenn der Client-Code das Schema nicht überschreibt, wenn er die Externalisierung einer URL anfordert.
+
    * **Server** ist der Host-Name (kann ein Domain-Name oder eine IP-Adresse sein).
    * **Port** (optional) ist die Portnummer.
    * **Kontextpfad** (optional) wird nur festgelegt, wenn AEM als Web-App unter einem anderen Kontextpfad installiert wird.
@@ -100,7 +101,6 @@ Dieser Abschnitt zeigt einige Beispiele dafür, wie der **Externalizer**-Dienst 
 
    * `https://www.website.com/contextpath/my/page.html`
 
-
 1. **So externalisieren Sie einen Pfad mit der Domain „author“:**
 
    ```java
@@ -115,7 +115,6 @@ Dieser Abschnitt zeigt einige Beispiele dafür, wie der **Externalizer**-Dienst 
 
    * `https://author.website.com/contextpath/my/page.html`
 
-
 1. **So externalisieren Sie einen Pfad mit der Domain „local“:**
 
    ```java
@@ -129,6 +128,5 @@ Dieser Abschnitt zeigt einige Beispiele dafür, wie der **Externalizer**-Dienst 
    `myExternalizedUrl` endet mit dem Wert:
 
    * `https://publish-3.internal/contextpath/my/page.html`
-
 
 1. Weitere Beispiele finden Sie in den [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).

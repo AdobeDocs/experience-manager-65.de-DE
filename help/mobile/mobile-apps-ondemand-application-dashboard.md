@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '597'
-ht-degree: 13%
+source-wordcount: '598'
+ht-degree: 5%
 
 ---
 
@@ -21,11 +21,11 @@ ht-degree: 13%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Sie können Ihre App- und App-Inhalte über das AEM Mobile Application Dashboard oder das Control Center verwalten.
 
-Sie können für jeden Baustein im Kontrollzentrum Details anzeigen oder bearbeiten, indem Sie auf die Schaltfläche „…“ rechts unten klicken.
+Sie können die einzelnen Kacheln im Kontrollzentrum detailliert untersuchen, um Details anzuzeigen oder zu bearbeiten, indem Sie auf &quot;...&quot;klicken in der unteren rechten Ecke.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -37,7 +37,7 @@ Die Verwaltung von App-Inhalten erfordert kollektive Anstrengungen von Entwickle
 
 Schließlich veröffentlichen Administratoren strategisch den aktualisierten App-Inhalt.
 
-## Bereich „App verwalten“ {#the-manage-app-tile}
+## Die Kachel App verwalten {#the-manage-app-tile}
 
 Die **App verwalten** In der Kachel werden verfügbare Anwendungsinformationen angezeigt:
 
@@ -45,7 +45,7 @@ Die **App verwalten** In der Kachel werden verfügbare Anwendungsinformationen a
 * Beschreibung
 * Symbol
 * Zuletzt geändert
-* Last Modified By
+* Zuletzt geändert von
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 

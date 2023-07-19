@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2583'
-ht-degree: 99%
+source-wordcount: '2585'
+ht-degree: 98%
 
 ---
 
@@ -694,11 +694,11 @@ Wenn `cq-msm-lockable` definiert wurde, interagiert das Öffnen oder Schließen 
 
 * wenn der Wert von `cq-msm-lockable` folgendermaßen ist:
 
-   * **relativ** (z. B. `myProperty` oder `./myProperty`),
+   * **Relativ** (z. B. `myProperty` oder `./myProperty`)
 
       * dann fügt er die Eigenschaft von `cq:propertyInheritanceCancelled` hinzu und entfernt sie.
 
-   * **absolut** (z. B. `/image`),
+   * **Absolut** (z. B. `/image`)
 
       * dann führt das Unterbrechen der Kette zu einem Abbruch der Vererbung, indem das Mixin `cq:LiveSyncCancelled` zu `./image` hinzugefügt und `cq:isCancelledForChildren` auf `true` gesetzt wird.
 

@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
-workflow-type: ht
-source-wordcount: '1424'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1423'
+ht-degree: 99%
 
 ---
 
@@ -71,7 +71,7 @@ Dieses Verfahren weist Ähnlichkeiten mit dem [Hinzufügen digitaler Assets als 
 
 ## [!DNL Adobe Photoshop]: Hinzufügen digitaler Assets als Referenzen {#refps}
 
-1. Verwenden Sie das [!DNL Experience Manager]-Desktop-Programm, um auf [!DNL Experience Manager Assets] zuzugreifen. Laden Sie die Assets herunter und zeigen Sie sie im lokalen Dateisystem an. Verwenden Sie die Funktion [!UICONTROL Platzieren von Links] in [!DNL Adobe Photoshop]. Siehe [Platzieren von Assets im Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#place-assets-in-native-documents).
+1. Verwenden Sie das [!DNL Experience Manager]-Desktop-Programm, um auf [!DNL Experience Manager Assets] zuzugreifen. Laden Sie die Assets herunter und zeigen Sie sie im lokalen Dateisystem an. Verwenden Sie die [!UICONTROL Platzieren von Links] Funktionalität in [!DNL Adobe Photoshop]. Siehe [Platzieren von Assets im Desktop-Programm](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#place-assets-in-native-documents).
 
 1. Speichern Sie die [!DNL Photoshop]-Datei auf dem bereitgestellten Laufwerk oder [laden](/help/assets/manage-assets.md#uploading-assets) Sie sie in das [!DNL Experience Manager]-Repository hoch.
 1. Nach Abschluss des Workflows werden die Verweise auf vorhandene [!DNL Experience Manager]-Assets auf der Asset-Detailseite aufgeführt.
@@ -136,7 +136,7 @@ Die folgenden Optionen sind auf der Symbolleiste, in der linken Leiste und in de
 
 ## Best Practices und Einschränkungen {#best-practice-limitation-tips}
 
-* Die Erstellung von Unter-Assets kann bei jeder [!DNL Experience Manager]-Implementierung äußerst ressourcenintensiv sein. Wenn Sie Unter-Assets generieren, während komplexe Assets hochgeladen werden, fügen Sie den Schritt im Workflow „DAM-Update-Asset“ hinzu. Wenn Sie Unter-Assets On-Demand generieren, erstellen Sie einen separaten Workflow, um Unter-Assets zu generieren. Mit einem speziellen Workflow können Sie die anderen Schritte im Workflow „DAM-Update-Asset“ überspringen und Rechenressourcen sparen.
+* Die Erstellung von Unter-Assets kann bei jeder [!DNL Experience Manager]-Bereitstellung äußerst ressourcenintensiv sein. Wenn Sie Unter-Assets generieren, während komplexe Assets hochgeladen werden, fügen Sie den Schritt im Workflow „DAM-Update-Asset“ hinzu. Wenn Sie Unter-Assets On-Demand generieren, erstellen Sie einen separaten Workflow, um Unter-Assets zu generieren. Mit einem speziellen Workflow können Sie die anderen Schritte im Workflow „DAM-Update-Asset“ überspringen und Rechenressourcen sparen.
 
 >[!MORELIKETHIS]
 >
@@ -144,4 +144,3 @@ Die folgenden Optionen sind auf der Symbolleiste, in der linken Leiste und in de
 >* [Konfigurieren von Desktop-Aktionen in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#desktopactions-v2)
 >* [Erstellen von verknüpften Smart-Objekten in Adobe Photoshop](https://helpx.adobe.com/de/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Platzieren von Grafiken in Adobe InDesign](https://helpx.adobe.com/de/indesign/using/placing-graphics.html)
-

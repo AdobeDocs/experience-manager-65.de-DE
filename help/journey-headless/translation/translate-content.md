@@ -2,10 +2,10 @@
 title: Übersetzen von Inhalten
 description: Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Headless-Inhalte zu übersetzen.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '2174'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '2173'
+ht-degree: 99%
 
 ---
 
@@ -93,7 +93,7 @@ Für Übersetzungsprojekt-Manager ist es oft erforderlich, bestimmte Inhalte, di
 
    ![Registerkarte „Allgemein“ des Projekts](assets/project-basic-tab.png)
 
-1. Verwenden Sie in der Registerkarte **Erweitert** die Dropdown-Liste **Zielsprache**, um die Sprache auszuwählen, in die der Inhalt übersetzt werden soll. Tippen oder klicken Sie auf **Erstellen**.
+1. Im **Erweitert** Registerkarte, verwenden Sie die **Zielsprache** die Sprachen auswählen, in die der Inhalt übersetzt werden soll. Tippen oder klicken Sie auf **Erstellen**.
 
    ![Registerkarte „Erweitert“ des Projekts](assets/project-advanced-tab.png)
 

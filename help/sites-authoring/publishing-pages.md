@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1662'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1663'
+ht-degree: 98%
 
 ---
 
@@ -35,9 +35,8 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt 
 >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
 >
 >* **Replizieren/Replikation**
->  Dies sind technische Begriffe, die für die Verschiebung von Daten (z. B. Seiteninhalten, Dateien, Code, Benutzerkommentaren) zwischen Umgebungen verwendet werden, z. B. beim Veröffentlichen oder Zurückreplizieren von Benutzerkommentaren.
+>  Dies sind die technischen Begriffe, die die Verschiebung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere beschreiben, z. B. bei der Veröffentlichung oder umgekehrten Replizierung von Benutzerkommentaren.
 >
-
 
 >[!NOTE]
 >
@@ -47,7 +46,6 @@ Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt 
 >* wurde dieser [Workflow möglicherweise angepasst](/help/sites-developing/workflows-models.md#main-pars-procedure-6fe6) von Ihrem Entwicklungsteam.
 >* Sie werden in einer Mitteilung darüber informiert, dass der Workflow ausgelöst wurde.
 >
-
 
 ## Veröffentlichen von Seiten {#publishing-pages-1}
 
@@ -270,14 +268,14 @@ Sie können den Veröffentlichungsstatus einer Seite bestimmen:
 
 * In der [Ressourcenübersicht in der Sites-Konsole](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
-   ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
+  ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
 
-   Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-authoring/basic-handling.md#card-view), [Spalte](/help/sites-authoring/basic-handling.md#column-view) und [Liste](/help/sites-authoring/basic-handling.md#list-view) angezeigt.
+  Der Veröffentlichungsstatus wird in der Sites-Konsole in der Ansicht [Karte](/help/sites-authoring/basic-handling.md#card-view), [Spalte](/help/sites-authoring/basic-handling.md#column-view) und [Liste](/help/sites-authoring/basic-handling.md#list-view) angezeigt.
 
 * in der [Zeitleisten](/help/sites-authoring/basic-handling.md#timeline)
 
-   ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
+  ![screen_shot_2018-03-21at154420](assets/screen_shot_2018-03-21at154420.png)
 
 * im Menü [Seiteninformationen](/help/sites-authoring/author-environment-tools.md#page-information) beim Bearbeiten einer Seite
 
-   ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)
+  ![screen_shot_2018-03-21at154456](assets/screen_shot_2018-03-21at154456.png)

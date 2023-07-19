@@ -11,8 +11,8 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 100%
 
@@ -1974,7 +1974,7 @@ Im folgenden Code-Beispiel wird ein Formular mit einer dynamischen Datenquelle v
 * `convertDataSource`: Konvertiert ein `org.w3c.dom.Document`-Objekt in ein `com.adobe.idp.Document`-Objekt. Diese Methode akzeptiert ein `org.w3c.dom.Document`-Objekt als Eingabeparameter und gibt ein `com.adobe.idp.Document`-Objekt zurück.
 * `renderPOForm`: Verwendet die Java-API des Forms-Service zum Rendern eines dynamischen Bestellformulars. Das `com.adobe.idp.Document`-Objekt, das von der `convertDataSource`-Methode zum Vorausfüllen des Formulars verwendet wird.
 
-   Alle diese Methoden werden innerhalb der `doPost`-Methode des Java-Servlets aufgerufen. (Siehe [Vorausfüllen von Formularen mit flexiblen Layouts](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
+  Alle diese Methoden werden innerhalb der `doPost`-Methode des Java-Servlets aufgerufen. (Siehe [Vorausfüllen von Formularen mit flexiblen Layouts](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
 
 ```java
 /*
@@ -2346,7 +2346,7 @@ Im folgenden Code-Beispiel wird ein Formular verarbeitet, das ein Berechnungsskr
              if (processState == 1)
              {
  
-                 //Write the data back to to the client web browser
+                 //Write the data back to the client web browser
                  ServletOutputStream oOutput = resp.getOutputStream();
                  Document calData = formOut.getOutputContent();
  

@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1159'
-ht-degree: 2%
+source-wordcount: '1160'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 AEM Mobile On-Demand bietet eine vollständig konfigurierte App-Vorlage, eine Artikelvorlage und Artikelkomponenten.
 
@@ -62,6 +62,7 @@ Nachdem Sie eine App mit dieser Vorlage erstellt haben, können Sie Ihrer App Ar
 >Die ***redirectTarget*** wird als Teil des Vorgangs &quot;create app&quot;berechnet und versucht, einen Pfad aufzulösen, wenn eine redirectTarget -Eigenschaft als Teil der App-Vorlage verfügbar ist und der Wert von &quot;redirectTarget&quot;als relativ definiert ist. Wenn der Prozess zum Erstellen einer App einen relativen Wert für redirectTarget in der App-Vorlage findet, wird der Wert an den aufgelösten Speicherort angehängt, an dem die App erstellt wurde.
 >
 >Wenn beispielsweise eine App-Vorlage eine ***redirectTarget*** mit dem Wert &quot;*language-masters/en* und die App in erstellt wurde.*/content/mobileapps/fooApp*&quot;, lautet der Endwert für redirectTarget nach der Erstellung der App &quot;*/content/mobileapps/fooApp/language-masters/en*&quot;.
+>
 
 ## Erstellen von Inhaltsvorlagen {#creating-content-templates}
 
@@ -124,6 +125,7 @@ Eine einfache Komponente ist im Code-Repository enthalten, dessen Quelle in AEM 
 >[!NOTE]
 >
 >Für AEM Mobile stehen derzeit keine nativen Komponenten zur Verfügung.
+>
 
 Sie können Komponenten zu Ihrer Seite hinzufügen. Jede Komponente kann in einer AEM Mobile-App verwendet werden, wird jedoch bei Anwendung möglicherweise nicht ordnungsgemäß gerendert.
 

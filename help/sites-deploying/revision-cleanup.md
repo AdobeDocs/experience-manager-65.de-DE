@@ -11,10 +11,10 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
-workflow-type: ht
-source-wordcount: '5903'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '5902'
+ht-degree: 99%
 
 ---
 
@@ -182,7 +182,7 @@ In einigen Fällen verzögert der Wechsel zwischen dem Tail- und dem vollständi
   </tr>
   <tr>
    <td><strong>Was passiert, wenn ich versehentlich das falsche Repository-Format verwende?</strong></td>
-   <td>Wenn Sie versuchen, das Oak-Segment-Modul mit einem Oak-Segment-Tar-Repository auszuführen (oder umgekehrt), schlägt der Start mit dem Fehler <em>IllegalStateException</em> und der Meldung fehl, dass das Segmentformat ungültig ist. Daten werden jedoch nicht beschädigt.</td>
+   <td>Wenn Sie versuchen, das Oak-Segment-Modul für ein Oak-Segment-Tar-Repository auszuführen (oder umgekehrt), schlägt der Start mit einem <em>IllegalStateException</em> mit der Meldung "Ungültiges Segmentformat". Daten werden jedoch nicht beschädigt.</td>
    <td> </td>
   </tr>
   <tr>

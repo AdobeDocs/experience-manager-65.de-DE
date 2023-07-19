@@ -1,7 +1,7 @@
 ---
 title: Ausführen von AEM mit der TarMK-Cold-Standby-Funktion
 seo-title: How to Run AEM with TarMK Cold Standby
-description: Erfahren Sie, wie Sie eine TarMK-Cold-Standby-Instanz erstellen, konfigurieren und verwalten.
+description: Erfahren Sie, wie Sie ein TarMK Cold Standby-Setup erstellen, konfigurieren und verwalten.
 seo-description: Learn how to create, configure and maintain a TarMK Cold Standby setup.
 uuid: 004fdf3e-517c-452b-8db1-a47d6b31d8ba
 contentOwner: User
@@ -12,10 +12,10 @@ discoiquuid: 9559e837-a87e-4ee7-8ca6-13b42c74e6bf
 docset: aem65
 feature: Configuring
 exl-id: dadde3ee-d60c-4b87-9af0-a12697148161
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '2730'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '2729'
+ht-degree: 67%
 
 ---
 
@@ -23,17 +23,17 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-Durch die Cold-Standby-Funktionalität des Tar-Mikrokernels können eine oder mehr AEM-Standby-Instanzen eine Verbindung mit einer primären Instanz herstellen. Die Synchronisierung ist dabei unidirektional, d. h. sie verläuft nur von der primären zur Standby-Instanz.
+Durch die Cold-Standby-Funktionalität des Tar-Mikrokernels können eine oder mehr AEM-Standby-Instanzen eine Verbindung mit einer primären Instanz herstellen. Der Synchronisierungsprozess ist nur eine Möglichkeit, was bedeutet, dass er nur von der primären zu den Standby-Instanzen ausgeführt wird.
 
-Die Standby-Instanz dient dazu sicherzustellen, dass eine Live-Datenkopie des Master-Repositorys vorhanden ist und ein schneller Wechsel ohne Datenverluste durchgeführt wird, wenn das Master-Repository aus irgendeinem Grund nicht verfügbar ist.
+Die Standby-Instanzen sollen eine Live-Datenkopie des Übergeordneten Repositorys garantieren und einen schnellen Wechsel ohne Datenverlust sicherstellen, falls das Übergeordnete aus irgendeinem Grund nicht verfügbar ist.
 
-Inhalte werden linear zwischen der primären Instanz und den Standby-Instanzen synchronisiert. Dabei werden keine Integritätsprüfungen auf mögliche Datei- oder Repository-Beschädigungen durchgeführt. Aufgrund dieser Konfiguration sind die Standby-Instanzen exakte Kopien der primären Instanz. Sie können nicht dazu beitragen, Inkonsistenzen auf primären Instanzen zu verhindern.
+Inhalte werden linear zwischen der primären Instanz und den Standby-Instanzen synchronisiert. Dabei werden keine Integritätsprüfungen auf mögliche Datei- oder Repository-Beschädigungen durchgeführt. Aufgrund dieses Designs sind Standby-Instanzen exakte Kopien der primären Instanz und können nicht dazu beitragen, Inkonsistenzen auf primären Instanzen zu vermeiden.
 
 >[!NOTE]
 >
->Die Cold-Standby-Funktion ist für Szenarien bestimmt, in denen eine hohe Verfügbarkeit für **author**-Instanzen erforderlich ist. In Situationen, in den eine hohe Verfügbarkeit für **publish**-Instanzen unter Verwendung des Tar-Mikrokernels erforderlich ist, empfiehlt Adobe den Einsatz einer Veröffentlichungsfarm.
+>Die Cold-Standby-Funktion ist für Szenarien bestimmt, in denen eine hohe Verfügbarkeit für **author**-Instanzen erforderlich ist. Für Situationen, in denen eine hohe Verfügbarkeit erforderlich ist **publish** -Instanzen, die den Tar-Mikrokernel verwenden, empfiehlt Adobe die Verwendung einer Veröffentlichungsfarm.
 >
->Weitere Informationen zu verfügbaren Implementierungen finden Sie auf der Seite [Verfügbare Implementierungen](/help/sites-deploying/recommended-deploys.md). 
+>Weitere Informationen zu verfügbaren Bereitstellungen finden Sie auf der Seite [Verfügbare Bereitstellungen](/help/sites-deploying/recommended-deploys.md). 
 
 >[!NOTE]
 >
@@ -45,53 +45,53 @@ Inhalte werden linear zwischen der primären Instanz und den Standby-Instanzen s
 
 ## Funktionsweise {#how-it-works}
 
-Auf der primären AEM-Instanz ist ein TCP-Port geöffnet, der eingehende Nachrichten überwacht. Derzeit senden die Slaves zwei Arten von Nachrichten an den Master:
+Auf der primären AEM-Instanz ist ein TCP-Port geöffnet, der eingehende Nachrichten überwacht. Derzeit gibt es zwei Arten von Nachrichten, die die Slaves an den Übergeordneten senden:
 
-* Eine Nachricht, die die Segment-ID des aktuellen Heads anfordert.
-* Eine Nachricht, die Segmentdaten mit einer angegebenen ID anfordert.
+* eine Meldung, die die Segment-ID der aktuellen Kopfzeile anfordert
+* eine Meldung, die Segmentdaten mit einer angegebenen ID anfordert
 
-Die Standby-Instanz fordert regelmäßig die Segment-ID des aktuellen Heads der primären Instanz an. Wenn das Segment ein lokal unbekanntes Segment ist, wird es abgerufen. Ist es bereits vorhanden, werden die Segmente verglichen und referenzierte Segmente werden bei Bedarf ebenfalls angefordert.
+Die Standby-Instanz fordert regelmäßig die Segment-ID des aktuellen Heads der primären Instanz an. Wenn das Segment ein lokal unbekanntes Segment ist, wird es abgerufen. Wenn sie bereits vorhanden ist, werden die Segmente verglichen und referenzierte Segmente werden bei Bedarf ebenfalls angefordert.
 
 >[!NOTE]
 >
 >Standby-Instanzen empfangen keine Anforderungen, da sie nur im Synchronisierungsmodus ausgeführt werden. Der einzige auf einer Standby-Instanz verfügbare Bereich ist die Web-Konsole, um die Konfiguration von Bundles und Diensten zu vereinfachen.
 
-Eine typische TarMK-Cold-Standby-Implementierung: 
+Eine typische TarMK-Cold-Standby-Bereitstellung: 
 
 ![chlimage_1](assets/chlimage_1.png)
 
-## Weitere Merkmale {#other-characteristics}
+## Sonstige Merkmale {#other-characteristics}
 
 ### Stabilität {#robustness}
 
-Der Datenfluss soll Verbindungs- und Netzwerkprobleme automatisch erkennen und beheben. Alle Pakete sind mit Prüfsummen gebündelt und sobald Verbindungsprobleme oder beschädigte Pakete auftreten, werden Wiederholungsmechanismen ausgelöst.
+Der Datenfluss soll Verbindungs- und Netzwerkprobleme automatisch erkennen und beheben. Alle Pakete werden mit Prüfsummen gebündelt und sobald Probleme mit der Verbindung oder beschädigten Paketen auftreten, werden Wiederholungsmechanismen ausgelöst.
 
 #### Leistung {#performance}
 
-Die Aktivierung der TarMK-Cold-Standby-Funktion auf der primären Instanz hat fast keine messbaren Auswirkungen auf die Leistung. Der zusätzliche CPU-Verbrauch ist äußerst gering und die zusätzliche Festplatte bzw. die zusätzlichen Netzwerk-I/O dürften keine Leistungsprobleme verursachen.
+Die Aktivierung der TarMK-Cold-Standby-Funktion auf der primären Instanz hat fast keine messbaren Auswirkungen auf die Leistung. Der zusätzliche CPU-Verbrauch ist sehr gering und die zusätzliche Festplatte und Netzwerk-I/O sollte keine Leistungsprobleme verursachen.
 
-Auf der Standby-Instanz muss während des Synchronisierungsvorgangs mit einer hohen CPU-Nutzung gerechnet werden. Da es sich nicht um einen Multithread-Prozess handelt, kann dieser nicht durch mehrere Kerne beschleunigt werden. Werden keine Daten geändert oder übertragen, tritt keine messbare Aktivität auf. Die Verbindungsgeschwindigkeit variiert je nach Hardware und Netzwerkumgebung. Sie hängt jedoch nicht von der Größe des Repositorys oder der SSL-Nutzung ab. Dies sollte berücksichtigt werden, wenn die erforderliche Zeit für die Erstsynchronisierung geschätzt wird oder wenn zwischenzeitlich auf dem primären Knoten eine große Menge von Daten geändert wurde.
+Auf der Standby-Instanz muss während des Synchronisierungsvorgangs mit einer hohen CPU-Nutzung gerechnet werden. Da es sich nicht um einen Multithread-Prozess handelt, kann dieser nicht durch mehrere Kerne beschleunigt werden. Werden keine Daten geändert oder übertragen, tritt keine messbare Aktivität auf. Die Verbindungsgeschwindigkeit variiert je nach Hardware und Netzwerkumgebung. Sie hängt jedoch nicht von der Größe des Repositorys oder der SSL-Nutzung ab. Beachten Sie dies bei der Schätzung der für eine Erstsynchronisierung benötigten Zeit oder bei der zwischenzeitlichen Änderung vieler Daten auf dem primären Knoten.
 
 #### Sicherheit {#security}
 
-Wird davon ausgegangen, dass alle Instanzen, in derselben Intranet-Sicherheitszone ausgeführt werden, ist die Gefahr einer Sicherheitsverletzung deutlich geringer. Sie können trotzdem eine zusätzliche Sicherheitsebene hinzufügen, indem Sie SSL-Verbindungen zwischen den Slaves und dem Master aktivieren. So wird die Wahrscheinlichkeit reduziert, dass Daten durch einen Man-in-the-Middle-Angriff kompromittiert werden.
+Wird davon ausgegangen, dass alle Instanzen, in derselben Intranet-Sicherheitszone ausgeführt werden, ist die Gefahr einer Sicherheitsverletzung deutlich geringer. Sie können trotzdem eine zusätzliche Sicherheitsebene hinzufügen, indem Sie SSL-Verbindungen zwischen den Slaves und dem Master aktivieren. Dadurch wird die Möglichkeit verringert, dass die Daten von einem Mann in der Mitte kompromittiert werden.
 
-Darüber hinaus können Sie festlegen, welche Standby-Instanzen eine Verbindung herstellen dürfen, indem Sie die IP-Adressen eingehender Anforderungen beschränken. Damit dürfte sichergestellt sein, dass niemand im Intranet das Repository kopieren kann.
+Darüber hinaus können Sie festlegen, welche Standby-Instanzen eine Verbindung herstellen dürfen, indem Sie die IP-Adressen eingehender Anforderungen beschränken. Dies sollte helfen sicherzustellen, dass niemand im Intranet das Repository kopieren kann.
 
 >[!NOTE]
 >
->Es wird empfohlen, einen Lastenausgleich zwischen dem Dispatcher und den Servern hinzuzufügen, die Teil der Cold-Standby-Konfiguration bilden. Der Lastenausgleich sollte so konfiguriert werden, dass Benutzer-Traffic nur an die **primäre** Instanz weitergeleitet wird. Dies soll die Konsistenz fördern und verhindern, dass Inhalte auf der Standby-Instanz mit anderen Mitteln als dem Cold-Standby-Mechanismus kopiert werden.
+>Es wird empfohlen, einen Lastenausgleich zwischen dem Dispatcher und den Servern hinzuzufügen, die Teil der Cold-Standby-Konfiguration bilden. Der Lastenausgleich sollte so konfiguriert werden, dass der Benutzer-Traffic nur zum **primary** -Instanz, um Konsistenz zu gewährleisten und zu verhindern, dass Inhalte auf der Standby-Instanz mit anderen Mitteln als dem Cold Standby-Mechanismus kopiert werden.
 
-## Erstellen einer TarMK-Cold-Standby-Konfiguration für AEM {#creating-an-aem-tarmk-cold-standby-setup}
+## Erstellen eines AEM TarMK Cold Standby-Setups {#creating-an-aem-tarmk-cold-standby-setup}
 
 >[!CAUTION]
 >
->Die PID für den Segment-Knotenspeicher und den Standby-Speicherdienst in AEM 6.3 wurde im Vergleich zu Vorgängerversionen wie folgt geändert:
+>Die PID für den Segment-Knotenspeicher und den Standby-Store-Dienst wurde in AEM 6.3 im Vergleich zu den vorherigen Versionen wie folgt geändert:
 >
 >* von org.apache.jackrabbit.oak.**plugins**.segment.standby.store.StandbyStoreService für org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService
 >* von org.apache.jackrabbit.oak.**plugins**.segment.SegmentNodeStoreService für org.apache.jackrabbit.oak.segment.SegmentNodeStoreService
 >
->Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um dieser Änderung Rechnung zu tragen.
+>Stellen Sie sicher, dass Sie die erforderlichen Konfigurationsanpassungen vornehmen, um diese Änderung widerzuspiegeln.
 
 Um eine TarMK-Cold-Standby-Konfiguration zu erstellen, müssen Sie zuerst die Standby-Instanzen erstellen. Erstellen Sie hierzu an einem neuen Speicherort eine Dateisystemkopie des gesamten Installationsordners der primären Instanz. Anschließend können Sie jede Instanz mit einem Ausführungsmodus starten, der die Rolle der Instanz angibt (`primary` oder `standby`).
 
@@ -99,8 +99,8 @@ Nachfolgend sind die erforderlichen Schritte zum Erstellen einer Konfiguration m
 
 1. Installieren Sie AEM.
 
-1. Beenden Sie die Instanz und kopieren Sie deren Installationsordner an den Speicherort, von dem aus die Cold-Standby-Instanz ausgeführt werden soll. Selbst wenn sie auf unterschiedlichen Rechnern ausgeführt wird, müssen Sie jedem Ordner einen aussagekräftigen Namen zuweisen (z. B. *aem-primary* oder *aem-standby*), um zwischen den Instanzen zu unterscheiden.
-1. Navigieren Sie zum Installationsordner der primären Instanz und führen Sie folgende Schritte aus:
+1. Beenden Sie die Instanz und kopieren Sie deren Installationsordner an den Speicherort, von dem aus die Cold-Standby-Instanz ausgeführt werden soll. Selbst wenn sie von verschiedenen Computern ausgeführt werden, geben Sie jedem Ordner einen beschreibenden Namen (wie *aem-primary* oder *aem-standby*), um zwischen den Instanzen zu unterscheiden.
+1. Wechseln Sie zum Installationsordner der primären Instanz und gehen Sie wie folgt vor:
 
    1. Prüfen Sie, ob unter `aem-primary/crx-quickstart/install` möglicherweise vorherige OSGi-Konfigurationen vorhanden sind, und löschen Sie diese.
 
@@ -145,16 +145,16 @@ Nachfolgend sind die erforderlichen Schritte zum Erstellen einer Konfiguration m
    minRecordLength=I"16384"
    ```
 
-1. Starten Sie die primäre Instanz und stellen Sie dabei sicher, dass Sie den Ausführungsmodus „primary“ festlegen:
+1. Starten Sie die Primärprüfung, um sicherzustellen, dass Sie den primären Ausführungsmodus angeben:
 
    ```shell
    java -jar quickstart.jar -r primary,crx3,crx3tar
    ```
 
 1. Erstellen Sie einen neuen Apache Sling Logging Logger für das Paket **org.apache.jackrabbit.oak.segment**. Setzen Sie die Protokollierungsstufe auf „Debug“ und legen Sie fest, dass die Protokollausgabe in einer separaten Datei, z. B. */logs/tarmk-coldstandby.log*, gespeichert wird. Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md).
-1. Navigieren Sie zum Speicherort der Instanz **standby** und starten Sie diese durch Ausführen der JAR-Datei.
-1. Erstellen Sie dieselbe Protokollierungskonfiguration wie für die primäre Instanz. Beenden Sie anschließend die Instanz.
-1. Bereiten Sie dann die Standby-Instanz vor. Hierzu können Sie dieselben Schritte wie für die primäre Instanz ausführen:
+1. Navigieren Sie zum Speicherort der **Standby** und starten Sie sie, indem Sie die JAR-Datei ausführen.
+1. Erstellen Sie dieselbe Protokollierungskonfiguration wie für die primäre Instanz. Beenden Sie dann die Instanz.
+1. Bereiten Sie dann die Standby-Instanz vor. Führen Sie dazu die gleichen Schritte wie für die primäre Instanz aus:
 
    1. Löschen Sie alle Dateien, die möglicherweise unter `aem-standby/crx-quickstart/install` gespeichert sind.
    1. Erstellen Sie unter `install.standby` den neuen Ordner `aem-standby/crx-quickstart/install`.
@@ -163,11 +163,13 @@ Nachfolgend sind die erforderlichen Schritte zum Erstellen einer Konfiguration m
 
       * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config`
       * `org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService.config`
+
    1. Erstellen Sie unter `crx3` den neuen Ordner `aem-standby/crx-quickstart/install`.
 
    1. Erstellen Sie die Datenspeicherkonfiguration und speichern Sie sie unter `aem-standby/crx-quickstart/install/crx3`. Für dieses Beispiel müssen Sie die folgende Datei erstellen:
 
       * org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config
+
    1. Bearbeiten Sie die Dateien und erstellen Sie die erforderlichen Konfigurationen.
 
    Nachfolgend finden Sie Beispiel-Konfigurationsdateien für eine typische Standby-Instanz:
@@ -202,16 +204,16 @@ Nachfolgend sind die erforderlichen Schritte zum Erstellen einer Konfiguration m
    minRecordLength=I"16384"
    ```
 
-1. Starten Sie die **standby**-Instanz über den Ausführungsmodus „standby“:
+1. Starten Sie die **Standby** -Instanz mithilfe des Ausführungsmodus standby :
 
    ```xml
    java -jar quickstart.jar -r standby,crx3,crx3tar
    ```
 
-Der Dienst kann auch über die Web-Konsole konfiguriert werden. Führen Sie hierzu folgende Schritte aus:
+Der Dienst kann auch über die Web-Konsole konfiguriert werden, indem Sie:
 
 1. Wechseln Sie zur Web-Konsole unter: *https://Server-Adresse:Serverport/system/console/configMgr*.
-1. Suchen Sie nach einem Dienst mit dem Namen **Apache Jackrabbit Oak Segment Tar Cold Standby Service** und doppelklicken Sie darauf, um die Einstellungen zu bearbeiten.
+1. Suchen nach einem Dienst namens **Apache Jackrabbit Oak Segment Tar Cold Standby Service** und doppelklicken Sie darauf, um die Einstellungen zu bearbeiten.
 1. Speichern Sie die Einstellungen und starten Sie die Instanzen neu, damit die neuen Einstellungen übernommen werden.
 
 >[!NOTE]
@@ -222,7 +224,7 @@ Der Dienst kann auch über die Web-Konsole konfiguriert werden. Führen Sie hier
 
 ## Erstsynchronisierung {#first-time-synchronization}
 
-Wenn die Vorbereitung abgeschlossen ist und die Standby-Instanz zum ersten Mal gestartet wird, tritt erhöhter Netzwerk-Traffic zwischen den Instanzen auf, da die Standby-Instanzen mit der primären Instanz synchronisiert werden. Anhand der Protokolle können Sie den Status der Synchronisierung überprüfen.
+Wenn die Vorbereitung abgeschlossen ist und die Standby-Instanz zum ersten Mal gestartet wird, tritt erhöhter Netzwerk-Traffic zwischen den Instanzen auf, da die Standby-Instanzen mit der primären Instanz synchronisiert werden. Sie können die Protokolle konsultieren, um den Status der Synchronisation zu beobachten.
 
 Im Protokoll *tarmk-coldstandby.log* werden dabei Einträge wie die folgenden angezeigt:
 
@@ -236,15 +238,15 @@ Im Protokoll *tarmk-coldstandby.log* werden dabei Einträge wie die folgenden an
     *DEBUG* [defaultEventExecutorGroup-2-1] org.apache.jackrabbit.oak.segment.file.TarWriter Writing segment ec1f739c-0e3c-41b8-be2e-5417efc05266 to /mnt/crx/author/crx-quickstart/repository/segmentstore/data00016a.tar
 ```
 
-Im Protokoll *error.log* der Standby-Instanz wird folgender Eintrag angezeigt:
+Im Standby *error.log* sollten Sie einen Eintrag wie den folgenden sehen:
 
 ```xml
 *INFO* [FelixStartLevel] org.apache.jackrabbit.oak.segment.standby.store.StandbyStoreService started standby sync with 10.20.30.40:8023 at 5 sec.
 ```
 
-Im obigen Protokollausschnitt ist *10.20.30.40* die IP-Adresse der primären Instanz.
+Im obigen Protokollausschnitt *10 20 30 40* ist die IP-Adresse der primären Instanz.
 
-Im Protokoll *tarmk-coldstandby.log* der Instanz **primary** werden Einträge wie die folgenden angezeigt:
+Im **primary** *tarmk-coldstandby.log*, werden Einträge wie die folgenden angezeigt:
 
 ```xml
     *DEBUG* [nioEventLoopGroup-3-2] org.apache.jackrabbit.oak.segment.standby.store.CommunicationObserver got message ‘s.d45f53e4-0c33-4d4d-b3d0-7c552c8e3bbd’ from client c7a7ce9b-1e16-488a-976e-627100ddd8cd
@@ -256,9 +258,9 @@ Im Protokoll *tarmk-coldstandby.log* der Instanz **primary** werden Einträge wi
     *DEBUG* [nioEventLoopGroup-3-2] org.apache.jackrabbit.oak.segment.standby.store.CommunicationObserver did send segment with 262144 bytes to client c7a7ce9b-1e16-488a-976e-627100ddd8cd
 ```
 
-In diesem Fall ist der im Protokoll genannte „Client“ die Instanz **standby**.
+In diesem Fall ist der im Protokoll erwähnte &quot;Client&quot;der **Standby** -Instanz.
 
-Wenn diese Einträge nicht mehr im Protokoll angezeigt werden, können Sie davon ausgehen, dass der Synchronisierungsvorgang abgeschlossen ist.
+Sobald diese Einträge nicht mehr im Protokoll angezeigt werden, können Sie sicher davon ausgehen, dass der Synchronisierungsprozess abgeschlossen ist.
 
 Obwohl die obigen Einträge zeigen, dass der Abrufmechanismus ordnungsgemäß funktioniert, ist es häufig hilfreich festzustellen, ob bei Abrufvorgängen Daten synchronisiert werden. Suchen Sie hierzu nach Einträgen wie den folgenden:
 
@@ -274,7 +276,7 @@ Darüber hinaus werden bei der Ausführung über einen nicht freigegebenen `File
 
 ### Konfiguration {#configuration}
 
-Die folgenden OSGi-Einstellungen sind für den Cold-Standby-Dienst verfügbar:
+Die folgenden OSGi-Einstellungen sind für den Cold Standby-Dienst verfügbar:
 
 * **Konfiguration beibehalten:** Bei Aktivierung dieser Option wird die Konfiguration im Repository anstatt wie üblich in den OSGi-Konfigurationsdateien gespeichert. Es wird empfohlen, diese Einstellung auf Produktionssystemen zu deaktivieren, damit die Konfiguration der primären Instanz nicht von der Standby-Instanz abgerufen wird.
 
@@ -293,9 +295,9 @@ Die folgenden OSGi-Einstellungen sind für den Cold-Standby-Dienst verfügbar:
 
 >[!NOTE]
 >
->Es wird dringend empfohlen, den primären und Standby-Instanzen unterschiedliche Repository-IDs zuzuweisen, damit sie für Dienste wie die Abladung einzeln identifizierbar sind.
+>Es wird dringend empfohlen, dass die primäre und die Standby-Instanz über verschiedene Repository-IDs verfügen, damit sie für Dienste wie die Abladung separat indizierbar sind.
 >
->Am einfachsten geschieht dies durch Löschen der Datei *sling.id* auf der Standby-Instanz und Neustarten der Instanz.
+>Die beste Möglichkeit, dies sicherzustellen, besteht darin, die *sling.id* -Datei auf der Standby-Instanz speichern und die Instanz neu starten.
 
 ## Failover-Verfahren {#failover-procedures}
 
@@ -319,26 +321,26 @@ Für den Fall, dass die primäre Instanz aus irgendeinem Grund ausfällt, könne
 1. Fügen Sie die neue primäre Instanz zum Lastenausgleich hinzu.
 1. Erstellen und starten Sie eine neue Standby-Instanz. Weitere Informationen finden Sie im oben beschriebenen Verfahren [Erstellen einer TarMK-Cold-Standby-Konfiguration für AEM](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
 
-## Anwenden von Hotfixes auf eine Cold-Standby-Konfiguration {#applying-hotfixes-to-a-cold-standby-setup}
+## Anwenden von Hotfixes auf ein Cold Standby-Setup {#applying-hotfixes-to-a-cold-standby-setup}
 
-Die empfohlene Methode zum Anwenden von Hotfixes auf eine Cold-Standby-Konfiguration besteht darin, sie auf der primären Instanz zu installieren und diese dann mit den installierten Hotfixes als neue Cold-Standby-Instanz zu klonen.
+Die empfohlene Methode zum Anwenden von Hotfixes auf ein Cold-Standby-Setup besteht darin, sie auf der primären Instanz zu installieren und sie dann in einer neuen Cold-Standby-Instanz mit installierten Hotfixes zu klonen.
 
-Führen Sie hierzu die nachfolgend beschriebenen Schritte aus:
+Gehen Sie dazu wie folgt vor:
 
 1. Beenden Sie den Synchronisierungsvorgang auf der Cold-Standby-Instanz. Wechseln Sie dazu zur JMX-Konsole und verwenden Sie das Bean **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**. Weitere Informationen finden Sie im Abschnitt [Monitoring](#monitoring).
 1. Beenden Sie die Cold-Standby-Instanz.
 1. Installieren Sie den Hotfix auf der primären Instanz. Weitere Einzelheiten zum Installieren eines Hotfixes finden Sie unter [Arbeiten mit Paketen](/help/sites-administering/package-manager.md).
 1. Testen Sie die Instanz nach der Installation auf mögliche Probleme.
-1. Entfernen Sie die Cold-Standby-Instanz durch Löschen des entsprechenden Installationsordners.
-1. Beenden Sie die primäre Instanz und klonen Sie sie. Erstellen Sie hierzu eine Dateisystemkopie des gesamten Installationsordners am Speicherort der Cold-Standby-Instanz.
-1. Konfigurieren Sie den neu erstellten Klon so, dass er als Cold-Standby-Instanz fungiert. Weitere Einzelheiten hierzu finden Sie unter [Erstellen einer TarMK-Cold-Standby-Konfiguration für AEM](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup).
-1. Starten Sie die primäre und die Cold-Standby-Instanzen.
+1. Entfernen Sie die Cold-Standby-Instanz, indem Sie den Installationsordner löschen.
+1. Beenden Sie die primäre Instanz und klonen Sie sie, indem Sie eine Dateisystemkopie des gesamten Installationsordners an den Speicherort der Cold-Standby-Instanz erstellen.
+1. Konfigurieren Sie den neu erstellten Klon so, dass er als Cold-Standby-Instanz fungiert. Weitere Informationen finden Sie unter [Erstellen eines AEM TarMK Cold Standby-Setups.](/help/sites-deploying/tarmk-cold-standby.md#creating-an-aem-tarmk-cold-standby-setup)
+1. Starten Sie sowohl die primäre Instanz als auch die Cold-Standby-Instanz.
 
 ## Monitoring {#monitoring}
 
-Diese Funktion stellt Informationen mithilfe von JMX oder MBeans bereit. So können Sie den aktuellen Status der Standby- und Master-Instanz mithilfe der [JMX-Konsole](/help/sites-administering/jmx-console.md) überprüfen. Die entsprechenden Informationen sind in einem MBean vom Typ `type org.apache.jackrabbit.oak:type="Standby"` namens `Status` enthalten.
+Diese Funktion stellt Informationen mithilfe von JMX oder MBeans bereit. So können Sie den aktuellen Status der Standby-Instanz und des Übergeordneten mithilfe der [JMX-Konsole](/help/sites-administering/jmx-console.md). Die entsprechenden Informationen sind in einem MBean vom Typ `type org.apache.jackrabbit.oak:type="Standby"` namens `Status` enthalten.
 
-**Standby**-Instanz
+**Standby**
 
 Beim Überwachen einer Standby-Instanz wird ein Knoten angezeigt. Die ID ist normalerweise eine generische UUID.
 
@@ -361,11 +363,11 @@ Darüber hinaus gibt es drei aufrufbare Methoden:
 
 **Primäre Instanz**
 
-Beim Überwachen der primären Instanz wird eine Reihe allgemeiner Informationen über ein MBean angezeigt, dessen ID-Value die Port-Nummer ist, die vom TarMK-Standby-Dienst verwendet wird (standardmäßig 8023). Die meisten Methoden und Attribute sind dieselben wie für die Standby-Instanz, mit einigen Ausnahmen:
+Beim Überwachen der primären Instanz wird eine Reihe allgemeiner Informationen über ein MBean angezeigt, dessen ID-Value die Port-Nummer ist, die vom TarMK-Standby-Dienst verwendet wird (standardmäßig 8023). Die meisten Methoden und Attribute sind mit denen der Standby-Instanz identisch, einige unterscheiden sich jedoch:
 
 * `Mode:` Dieses Attribut zeigt immer den Wert `primary`.
 
-Desweiteren können Informationen für bis zu 10 Clients (Standby-Instanzen) abgerufen werden, die mit der Master-Instanz verbunden sind. Die MBean-ID ist die UUID der Instanz. Für diese MBeans sind keine aufrufbaren Methoden vorhanden, jedoch einige nützliche, schreibgeschützte Attribute:
+Desweiteren können Informationen für bis zu 10 Clients (Standby-Instanzen) abgerufen werden, die mit der Master-Instanz verbunden sind. Die MBean-ID ist die UUID der Instanz. Es gibt keine aufrufbaren Methoden für diese MBeans, aber einige sehr nützliche schreibgeschützte Attribute:
 
 * `Name:` Dies ist die ID des Clients.
 * `LastSeenTimestamp:` Der Zeitstempel der letzten Anforderungen in Textform.
@@ -387,20 +389,20 @@ Desweiteren können Informationen für bis zu 10 Clients (Standby-Instanzen) ab
 >
 >Führen Sie auf der Standby-Instanz keine Offline-Revisionsbereinigung aus. Dies ist nicht erforderlich und die Größe des Segmentspeichers wird dadurch nicht reduziert.
 
-Adobe empfiehlt, regelmäßige Wartungen durchzuführen, um zu verhindern, dass das Repository im Laufe der Zeit zu groß wird. Führen Sie zum manuellen Warten des Cold-Standby-Repositorys die folgenden Schritte aus:
+Adobe empfiehlt, regelmäßige Wartungen durchzuführen, um zu verhindern, dass das Repository im Laufe der Zeit zu groß wird. Gehen Sie wie folgt vor, um die Wartung des Cold-Standby-Repositorys manuell durchzuführen:
 
 1. Beenden Sie den Standby-Prozess auf der Standby-Instanz. Wechseln Sie dazu zur JMX-Konsole und verwenden Sie das Bean **org.apache.jackrabbit.oak: Status (&quot;Standby&quot;)**. Weitere Informationen finden Sie im obigen Abschnitt zum [Monitoring](/help/sites-deploying/tarmk-cold-standby.md#monitoring).
 
-1. Beenden Sie die primäre AEM-Instanz.
+1. Beenden Sie die primäre AEM.
 1. Führen Sie auf der primären Instanz das Oak-Komprimierungs-Tool aus. Weitere Informationen finden Sie unter [Wartung des Repositorys](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 1. Starten Sie die primäre Instanz.
-1. Starten Sie den Standby-Prozess auf der Standby-Instanz. Verwenden Sie dazu dasselbe JMX-Bean wie im ersten Schritt beschrieben.
+1. Starten Sie den Standby-Prozess auf der Standby-Instanz mit demselben JMX-Bean, wie im ersten Schritt beschrieben.
 1. Überwachen Sie die Protokolle und warten Sie, bis die Synchronisierung abgeschlossen ist. Möglicherweise nimmt die Größe des Standby-Repositorys jetzt erheblich zu.
 1. Führen Sie auf der Standby-Instanz den `cleanup()`-Vorgang aus. Verwenden Sie dazu dasselbe JMX-Bean wie im ersten Schritt beschrieben.
 
 Es kann länger als üblich dauern, bis die Synchronisierung der Standby-Instanz mit der primären Instanz abgeschlossen ist, da bei der Offline-Komprimierung der Repository-Verlauf neu geschrieben wird und die Berechnung von Änderungen in den Repositorys deshalb länger dauert. Ebenfalls zu beachten ist, dass das Repository auf der Standby-Instanz nach Abschluss des Vorgangs etwa dieselbe Größe hat wie das Repository auf der primären Instanz.
 
-Alternativ dazu kann das Repository der primären Instanz nach Durchführung der Komprimierung auf der primären Instanz manuell auf die Standby-Instanz kopiert werden, wodurch die Standby-Instanz bei jeder Komprimierung neu erstellt wird.
+Alternativ kann das primäre Repository nach der Komprimierung auf der primären Instanz manuell in die Standby-Instanz kopiert werden, wodurch die Standby-Instanz bei jeder Ausführung der Komprimierung neu erstellt wird.
 
 ### Datenspeicherbereinigung {#data-store-garbage-collection}
 

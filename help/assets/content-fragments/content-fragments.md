@@ -4,9 +4,9 @@ description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Man
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: ht
-source-wordcount: '1989'
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1991'
 ht-degree: 100%
 
 ---
@@ -55,11 +55,10 @@ Hier und auf den folgenden Seiten werden die Aufgaben zum Erstellen, Konfigurier
 >* [Unterstützung von Inhaltsfragmenten in der AEM Assets-HTTP-API](/help/assets/assets-api-content-fragments.md)
 >* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
-
 Die Anzahl der Kommunikationskanäle nimmt jährlich zu. Typischerweise beziehen sich Kanäle auf den Bereitstellungsmechanismus, und zwar wie folgt:
 
-* Physische Kanäle, z. B. Desktop, Mobilgerät
-* Bereitstellung in einem physischen Kanal, z. B. als „Produktdetailseite“ oder „Produktkategorieseite“ für Desktops bzw. als „mobiles Internet“ oder „Mobile App“ für mobile Geräte
+* Physischer Kanal; z. B. Desktop, Mobilgerät.
+* Form der Bereitstellung in einem physischen Kanal; z. B. die Produktdetailseite, die Produktkategorieseite für Desktops oder „mobiles Web“, „Mobile App“ für Mobilgeräte.
 
 Wahrscheinlich möchten Sie jedoch nicht dieselben Inhalte für alle Kanäle verwenden. Daher müssen Sie Ihre Inhalte je nach Kanal optimieren.
 
@@ -156,9 +155,9 @@ Assets können auf verschiedene Weise mit einem Inhaltsfragment verwendet werden
    * definieren die Position des Assets;
    * Weitere Informationen finden Sie unter [Einfügen von Assets in Fragmente](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) im Fragment-Editor.
 
-   >[!NOTE]
-   >
-   >Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Beim Hinzufügen des Fragments zu einer Seite werden diese Assets in Beziehung zu diesem Absatz verschoben, wenn Übergangsinhalte hinzugefügt werden.
+  >[!NOTE]
+  >
+  >Die in das Inhaltsfragment eingefügten visuellen Assets werden mit dem vorangehenden Absatz verbunden. Beim Hinzufügen des Fragments zu einer Seite werden diese Assets in Beziehung zu diesem Absatz verschoben, wenn Übergangsinhalte hinzugefügt werden.
 
 * **Zugehörige Inhalte**
 
@@ -204,13 +203,13 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
    * können nur zu mehrzeiligen Textelementen hinzugefügt werden (beliebiger Fragmenttyp);
    * werden mit dem vorangehenden Text (Absatz) verbunden;
 
-      >[!CAUTION]
-      >
-      >Assets können (versehentlich) aus dem Fragment gelöscht werden, wenn in das Nur-Text-Format gewechselt wird.
+     >[!CAUTION]
+     >
+     >Assets können (versehentlich) aus dem Fragment gelöscht werden, wenn in das Nur-Text-Format gewechselt wird.
 
-      >[!NOTE]
-      >
-      >Assets können auch als [zusätzlicher (Übergangs) Inhalt](/help/sites-authoring/content-fragments.md#using-associated-content) hinzugefügt werden, wenn ein Fragment auf einer Seite verwendet wird (bei Nutzung von zugehörigen Inhalten oder Assets aus dem Assets-Browser).
+     >[!NOTE]
+     >
+     >Assets können auch als [zusätzlicher (Übergangs) Inhalt](/help/sites-authoring/content-fragments.md#using-associated-content) hinzugefügt werden, wenn ein Fragment auf einer Seite verwendet wird (bei Nutzung von zugehörigen Inhalten oder Assets aus dem Assets-Browser).
 
 * **Zugehörige Inhalte**
 
@@ -233,9 +232,9 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
          * Durch Anzeigen/Bearbeiten der **Fragmenteigenschaften** über die Konsole
          * Durch Bearbeiten der **Metadaten** im Fragment-Editor
 
-   >[!CAUTION]
-   >
-   >Profile für die Metadatenverarbeitung sind nicht für Inhaltsfragmente geeignet.
+  >[!CAUTION]
+  >
+  >Profile für die Metadatenverarbeitung sind nicht für Inhaltsfragmente geeignet.
 
 * **Vorlage**
 
@@ -243,9 +242,9 @@ Inhaltsfragment-Assets setzen sich aus folgenden Teilen zusammen (entweder direk
 
       * Jedes Inhaltsfragment hat eine Vorlageninstanz.
       * Die Vorlage kann gelöscht werden.
+
    * Auf die primäre Vorlage kann über den Fragment-Editor unter **[Varianten](/help/assets/content-fragments/content-fragments-variations.md)** zugegriffen werden.
    * Die Vorlage ist keine Variante an sich, sondern die Grundlage aller Varianten.
-
 
 * **Varianten**
 

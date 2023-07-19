@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
 exl-id: 897a04b9-e357-4f1c-8aa0-2c2528f8556d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '369'
-ht-degree: 27%
+source-wordcount: '370'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 27%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Die **App verwalten** Die Kachel und die Seite &quot;App verwalten&quot;bieten eine Möglichkeit, Anwendungsmetadaten anzuzeigen und zu bearbeiten. App-Metadaten sind erforderliche Details, um eine Anwendung für den Store eines Anbieters freizugeben. Dazu können gängige Metadaten, iOS-Metadaten und Screenshots gehören. Siehe [App-Kachel verwalten](/help/mobile/phonegap-app-details-tile.md) Weitere Informationen zu allgemeinen und iOS-Metadaten.
 
@@ -29,7 +29,7 @@ Die **App verwalten** Die Kachel und die Seite &quot;App verwalten&quot;bieten e
 
 So bearbeiten Sie die Metadaten der App:
 
-1. Gehen Sie zur Dashboard-Seite für die App.
+1. Navigieren Sie zur Dashboard-Seite für die App.
 
    ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -50,7 +50,7 @@ Sie können die allgemeinen und IOS-Metadaten bearbeiten:
 
 ## Hinzufügen und Entfernen von Screenshots {#add-and-remove-screenshots}
 
-Sie können App-Screenshots in das Metadaten-Rollup einbeziehen. Einige Anbieter benötigen präzise Screenshots, wenn Sie eine App an den App Store senden. Diese Bilder müssen bereits in Assets vorhanden sein. Informationen zum Hochladen Ihrer Screenshots finden Sie unter [Asset-Auswahl](../assets/search-assets.md#assetpicker).
+Sie können App-Screenshots in die Metadaten-Datenaggregation aufnehmen. Einige Anbieter benötigen genaue Screenshots, wenn sie eine App an ihren Appstore senden. Diese Bilder müssen bereits in Assets vorhanden sein. Siehe [Asset-Auswahl](../assets/search-assets.md#assetpicker) , um Ihre Screenshots hochzuladen.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -81,7 +81,7 @@ Klicken Sie auf den Löschvorgang für das Asset.
 
 Weitere Informationen zu anderen Authoring-Rollen finden Sie in den folgenden Ressourcen:
 
-* [Bereich „App verwalten“](/help/mobile/phonegap-app-details-tile.md)
+* [Die Kachel App verwalten](/help/mobile/phonegap-app-details-tile.md)
 * [App-Definitionen](/help/mobile/phonegap-app-definitions.md)
 * [Erstellen einer neuen App mit dem Assistenten zum Erstellen einer App](/help/mobile/phonegap-create-new-app.md)
 * [Vorhandene Hybrid-App importieren](/help/mobile/phonegap-adding-content-to-imported-app.md)

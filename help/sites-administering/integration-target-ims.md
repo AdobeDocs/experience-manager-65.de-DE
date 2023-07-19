@@ -2,9 +2,9 @@
 title: Integration mit Adobe Target mithilfe von IMS
 description: Erfahren Sie mehr über die Integration von AEM mit Adobe Target mithilfe von IMS.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1548'
+source-wordcount: '1549'
 ht-degree: 97%
 
 ---
@@ -162,7 +162,7 @@ Zurück in AEM können Sie die IMS-Konfiguration abschließen, indem Sie erforde
 1. Hier können Sie die [Details aus der Projektkonfiguration in der Adobe-Entwicklerkonsole](#details-stored-for-the-ims-integration-project) verwenden:
 
    * **Titel**: Ihr Text.
-   * **Autorisierungsserver**: Übernehmen Sie dies per Kopieren und Einfügen aus der `aud`-Zeile im Abschnitt **Payload** unten, z. B. `https://ims-na1.adobelogin.com`.
+   * **Autorisierungs-Server**: Übernehmen Sie diese Angabe per Kopieren und Einfügen aus der `aud`-Zeile im Abschnitt **Payload** unten, z. B. `https://ims-na1.adobelogin.com` im nachstehenden Beispiel.
    * **API-Schlüssel**: Kopieren Sie dies aus dem Abschnitt [Übersicht](#details-stored-for-the-ims-integration-project).
    * **Client-Geheimnis**: Generieren Sie dies im Abschnitt [Übersicht](#details-stored-for-the-ims-integration-project) und kopieren Sie es.
    * **Payload**: Kopieren Sie diese aus dem Abschnitt [JWT generieren](#details-stored-for-the-ims-integration-project)

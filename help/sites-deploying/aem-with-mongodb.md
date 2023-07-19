@@ -9,8 +9,8 @@ content-type: reference
 discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '6408'
 ht-degree: 100%
 
@@ -165,7 +165,7 @@ mongodburi=mongodb://aem:aempassword@mongodbserver1.customer.com:27000,mongodbse
 #Name of MongoDB database to use
 db=aem
 
-#Store binaries in custom BlobStore e.g. FileDataStore
+#Store binaries in custom BlobStore for example, FileDataStore
 customBlobStore=true
 
 cache=2048
@@ -178,16 +178,13 @@ Dabei gilt:
 Der MongoDB-AEM, zu dem AEM eine Verbindung herstellen muss. Verbindungen werden zu allen bekannten Mitgliedern des standardmäßigen Replikatsatzes hergestellt. Wenn MongoDB Cloud Manager verwendet wird, ist die Serversicherheit aktiviert. Daher muss die Verbindungszeichenfolge einen geeigneten Benutzernamen und ein passendes Passwort enthalten. Nicht-Enterprise-Versionen von MongoDB unterstützen nur die Authentifizierung von Benutzernamen und Passwörtern. Weitere Informationen zur Syntax der Verbindungszeichenfolge finden Sie im Abschnitt [Dokumentation](https://docs.mongodb.org/manual/reference/connection-string/).
 
 * `db`
-Der Name der Datenbank. Der Standardwert für AEM lautet 
-`aem-author`.
+Der Name der Datenbank. Der Standardwert für AEM lautet `aem-author`.
 
 * `customBlobStore`
-Wenn Binärdateien im Zuge der Bereitstellung in der Datenbank gespeichert werden, werden sie Teil des Workingsets. Aus diesem Grund sollten Binärdateien nicht in MongoDB gespeichert werden. Stattdessen werden alternative Datenspeicher empfohlen, z. B. 
-`FileSystem`-Datenspeicher in einem NAS.
+Wenn Binärdateien im Zuge der Bereitstellung in der Datenbank gespeichert werden, werden sie Teil des Workingsets. Aus diesem Grund sollten Binärdateien nicht in MongoDB gespeichert werden. Stattdessen werden alternative Datenspeicher empfohlen, z. B. `FileSystem`-Datenspeicher in einem NAS.
 
 * `cache`
-Die Cache-Größe in Megabyte. Dieser Wert ist verteilt über diverse Cache-Speicher im 
-`DocumentNodeStore`. Die Standardgröße ist 256 MB. Die Leistung des Oak-Lesens profitiert jedoch von einem größeren Cache.
+Die Cache-Größe in Megabyte. Dieser Wert ist verteilt über diverse Cache-Speicher im `DocumentNodeStore`. Die Standardgröße ist 256 MB. Die Leistung des Oak-Lesens profitiert jedoch von einem größeren Cache.
 
 * `blobCacheSize`
 Häufig verwendete Blobs können von AEM im Cache gespeichert werden. So wird vermieden, dass sie erneut aus dem Datenspeicher abgerufen werden. Dies wirkt sich stärker auf die Leistung aus, insbesondere beim Speichern von Blobs in der MongoDB-Datenbank. Alle dateisystembasierten Datenspeicher profitieren vom Datenträger-Cache auf Betriebssystemebene.
@@ -210,16 +207,13 @@ cacheSizeInMB=128
 Dabei gilt:
 
 * `minRecordLength`
-Größe in Byte. Binärdateien, die gleich wie oder kleiner als diese Größe sind, werden mit dem Knotenspeicher „Dokument“ gespeichert. Anstatt die Kennung des Blob zu speichern, wird der Inhalt der Binärdatei gespeichert. Bei Binärdateien, die größer als diese Größe sind, wird die ID der Binärdatei als Eigenschaft des Dokuments in der Knotensammlung gespeichert. Gespeichert wird der Hauptteil der Binärdatei 
-`FileDataStore` auf der Festplatte. 4096 Byte entspricht einer typischen Dateisystem-Blockgröße.
+Größe in Byte. Binärdateien, die gleich wie oder kleiner als diese Größe sind, werden mit dem Knotenspeicher „Dokument“ gespeichert. Anstatt die Kennung des Blob zu speichern, wird der Inhalt der Binärdatei gespeichert. Bei Binärdateien, die größer als diese Größe sind, wird die ID der Binärdatei als Eigenschaft des Dokuments in der Knotensammlung gespeichert. Gespeichert wird der Hauptteil der Binärdatei `FileDataStore` auf der Festplatte. 4096 Byte entspricht einer typischen Dateisystem-Blockgröße.
 
 * `path`
-Der Pfad zum Stamm des Datenspeichers. Bei einer MongoMK-Bereitstellung muss dieser Pfad ein freigegebenes Dateisystem sein, das für alle AEM-Instanzen verfügbar ist. Normalerweise wird ein NAS-Server (Network Attached Storage) verwendet. Bei Cloud-Implementierungen wie Amazon Web Services ist der 
-`S3DataFileStore` ebenfalls verfügbar.
+Der Pfad zum Stamm des Datenspeichers. Bei einer MongoMK-Bereitstellung muss dieser Pfad ein freigegebenes Dateisystem sein, das für alle AEM-Instanzen verfügbar ist. Normalerweise wird ein NAS-Server (Network Attached Storage) verwendet. Bei Cloud-Bereitstellungen wie Amazon Web Services ist der `S3DataFileStore` ebenfalls verfügbar.
 
 * `cacheSizeInMB`
-Die Gesamtgröße des Binärdatencache in Megabyte. Damit werden Binärdateien im Cache gespeichert, deren Wert unterhalb der 
-Einstellung `maxCacheBinarySize` liegt.
+Die Gesamtgröße des Binärdatencache in Megabyte. Damit werden Binärdateien im Cache gespeichert, deren Wert unterhalb der Einstellung `maxCacheBinarySize` liegt.
 
 * `maxCachedBinarySize`
 Die maximale Größe in Byte der im Binärdatencache gespeicherten Binärdatei. Wenn ein dateisystembasierter Datenspeicher verwendet wird, wird die Verwendung hoher Werte für den Datenspeicher-Cache nicht empfohlen, da die Binärdateien bereits vom Betriebssystem zwischengespeichert werden.
@@ -550,7 +544,8 @@ echo "{nThreads:32,fileSizeMB:1000,r:true,mmf:true}" | mongoperf
 Die Ausgabe des zweiten Tests sollte deutlich höher sein als die erste und die Leistung in Bezug auf die Speicherübertragung angeben.
 
 >[!NOTE]
->Überprüfen Sie während der Tests die I/O-Nutzungsstatistik für die fraglichen virtuellen Maschinen in Ihrem zur Betriebssystemüberwachung eingesetzten System. Wenn für die I/O-Lesevorgänge ein Testergebnis von unter 100 % ausgegeben wird, liegt womöglich ein Problem bei der virtuellen Maschine vor.
+>
+Überprüfen Sie während der Tests die I/O-Nutzungsstatistik für die fraglichen virtuellen Maschinen in Ihrem zur Betriebssystemüberwachung eingesetzten System. Wenn für die I/O-Lesevorgänge ein Testergebnis von unter 100 % ausgegeben wird, liegt womöglich ein Problem bei der virtuellen Maschine vor.
 
 **Testen der Schreibleistung der primären MongoDB-Instanz**
 
@@ -660,7 +655,8 @@ Es ist wünschenswert einzuschränken, von wo Ressourcen geladen werden können,
 CSP ermöglicht eine Feinabstimmung von Richtlinien. In einer komplexen Anwendung müssen CSP-Header jedoch mit Vorsicht entwickelt werden, da zu restriktive Richtlinien Teile der Benutzeroberfläche beschädigen können.
 
 >[!NOTE]
->Weitere Informationen zur Funktionsweise finden Sie auf der [OWASP-Seite zum Thema Inhaltssicherheitsrichtline](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>
+Weitere Informationen zur Funktionsweise finden Sie auf der [OWASP-Seite zum Thema Inhaltssicherheitsrichtline](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Dimensionierung {#sizing}
 
@@ -683,4 +679,5 @@ Um dieses Problem zu umgehen, führen Sie zuerst die Installation mit nur einer 
 Wenn AEM auf einer MongoMK-Persistenz-Manager-Bereitstellung ausgeführt wird, sind [Seitennamen auf 150 Zeichen beschränkt](/help/sites-authoring/managing-pages.md).
 
 >[!NOTE]
->Lesen Sie die [MongoDB-Dokumentation](https://docs.mongodb.com/manual/reference/limits/), damit Sie sich mit den bekannten Einschränkungen und Schwellenwerten von MongoDB vertraut machen können.
+>
+Lesen Sie die [MongoDB-Dokumentation](https://docs.mongodb.com/manual/reference/limits/), damit Sie sich mit den bekannten Einschränkungen und Schwellenwerten von MongoDB vertraut machen können.

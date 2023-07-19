@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1140'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 97%
 
 ---
 
@@ -74,6 +74,7 @@ Die Inhaltsfragmente ermöglichen Folgendes:
    * Öffnen Sie den **Assets**-Browser und filtern Sie nach der Option **Inhaltsfragmente** (die Standardeinstellung ist „Bilder“). Ziehen Sie dann das gewünschte Fragment auf die entsprechende Komponente.
 
    * Wählen Sie die Inhaltsfragmentkomponente und dann **Konfigurieren** aus der Symbolleiste. Im daraufhin angezeigten Dialogfeld können Sie das Auswahldialogfeld zum Durchsuchen und Auswählen des gewünschten **Inhaltsfragments** öffnen.
+
    >[!NOTE]
    >
    >Eine alternative Methode besteht darin, ein bestimmtes Inhaltsfragment direkt auf die Seite zu ziehen. Dabei wird automatisch die zugehörige Komponente (Inhaltsfragment) erstellt.
@@ -90,7 +91,8 @@ Die Inhaltsfragmente ermöglichen Folgendes:
    >
    >    * [Responsives Layout](/help/sites-authoring/responsive-layout.md)
    >    * [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md)
-
+   >
+   >
 
 ### Auswählen des Elements oder der Variante {#selecting-the-element-or-variation}
 
@@ -100,7 +102,7 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
 
 * **Inhaltsfragment**
 
-   Geben Sie das zu verwendende Fragment an.
+  Geben Sie das zu verwendende Fragment an.
 
 * **Anzeigemodus**:
 
@@ -113,16 +115,16 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
    * Die Standardoption **Primär** ist immer verfügbar.
    * Eine Auswahl ist verfügbar, wenn das Fragment mit einer entsprechenden Vorlage erstellt wurde.
 
-   >[!NOTE]
-   >
-   >Die verfügbaren Elemente hängen von der verwendeten Vorlage ab.
+  >[!NOTE]
+  >
+  >Die verfügbaren Elemente hängen von der verwendeten Vorlage ab.
 
 * **Variante**
 
    * Die Standardversion **Primär** ist immer verfügbar.
    * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden.
 
-* **Absätze**: Geben Sie den Bereich der aufzunehmenden Absätze an:
+* **Absätze**: den Bereich der Absätze angeben, die einbezogen werden sollen:
 
    * **Alle**
    * **Bereich**: Zum Beispiel `1`, `3-5`, `9-*`
@@ -175,18 +177,17 @@ Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 >* Wenn zwischen zwei Absatzstrukturen ein Konflikt besteht, wird der Zwischeninhalt nicht angezeigt (obwohl er intern noch vorhanden ist).
 >
 
-
 ### Verwenden von zugehörigen Inhalten {#using-associated-content}
 
 Wenn Sie [verknüpften Inhalt](/help/assets/content-fragments/content-fragments-assoc-content.md) für das [Inhaltsfragment](/help/assets/content-fragments/content-fragments.md) haben, stehen diese Elemente im Seitenbedienfeld zur Verfügung (nachdem Sie das Fragment auf der Inhaltsseite platziert haben). Verknüpfte Inhalte sind im Grunde eine besondere Inhaltsquelle für [dazwischen liegende Inhalte](#adding-in-between-content).
 
 >[!NOTE]
 >
->Es gibt verschiedene Methoden, um [visuelle Assets (z. B. Bilder)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) einem Fragment und/oder einer Seite hinzuzufügen.
+>Es gibt verschiedene Methoden zum Hinzufügen von [visuellen Assets (z. B. Bildern)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) zu einem Fragment und/oder zu einer Seite.
 
 >[!NOTE]
 >
->Wenn sich auf einer Seite mehrere Inhaltsfragmente befinden, zeigt die Registerkarte **Verknüpfte Inhalte** Assets an, die für alle Fragmente geeignet sind.
+>Wenn Sie mehrere Inhaltsfragmente auf einer Seite haben, werden auf der Registerkarte **Zugehörige Inhalte** die zu allen Fragmenten gehörenden Assets angezeigt.
 
 Nachdem Sie ein Fragment mit verknüpftem Inhalt zu Ihrer Seite hinzugefügt haben, wird eine neue Registerkarte (**Verknüpfte Inhalte**) im Seitenbereich geöffnet.
 
@@ -196,7 +197,7 @@ Von hier aus können Sie die Assets an die gewünschte Position ziehen (entweder
 
 ### In das Fragment eingefügte Assets {#assets-inserted-into-the-fragment}
 
-Wenn Assets (z. B. Bilder) in das Fragment eingefügt wurden, sind die Optionen zur Bearbeitung dieser Assets im Seiten-Editor eingeschränkt. <!-- Removed link as it was a 404 on helpx -->
+Wenn Assets (z. B. Bilder) in das Fragment eingefügt wurden, sind die Optionen zum Bearbeiten dieser Assets im Seiteneditor eingeschränkt. <!-- Removed link as it was a 404 on helpx -->
 
 Beispielsweise haben Sie zur Bearbeitung eines Bildes folgende Möglichkeiten:
 

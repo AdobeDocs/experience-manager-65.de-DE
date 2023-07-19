@@ -1,7 +1,7 @@
 ---
 title: Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder
 seo-title: Implementing a Custom Predicate Evaluator for the Query Builder
-description: Mit dem Query Builder können Sie problemlos das Inhalts-Repository abfragen.
+description: Query Builder bietet eine einfache Möglichkeit, das Inhalts-Repository abzurufen
 seo-description: The Query Builder offers an easy way of querying the content repository
 uuid: e71be518-027c-4792-9e02-06405804d9d2
 contentOwner: Guillaume Carlino
@@ -11,26 +11,26 @@ content-type: reference
 discoiquuid: ef253905-87da-4fa2-9f6c-778f1b12bd58
 docset: aem65
 exl-id: 72cbe589-14a1-40f5-a7cb-8960f02e0ebb
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
-source-wordcount: '774'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '776'
+ht-degree: 79%
 
 ---
 
 # Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
-In diesem Abschnitt ist beschrieben, wie Sie den [Query Builder](/help/sites-developing/querybuilder-api.md) durch Implementieren eines benutzerdefinierten Prädikat-Auswerters erweitern können.
+In diesem Abschnitt wird beschrieben, wie Sie die [Query Builder](/help/sites-developing/querybuilder-api.md) durch Implementierung eines benutzerdefinierten Prädikat-Auswerters.
 
 ## Übersicht {#overview}
 
-Mit dem [Query Builder](/help/sites-developing/querybuilder-api.md) können Sie problemlos das Inhalts-Repository abfragen. Im Lieferumfang sind eine Reihe Prädikat-Auswerter enthalten, die Ihnen den Umgang mit Daten erleichtern.
+Die [Query Builder](/help/sites-developing/querybuilder-api.md) bietet eine einfache Möglichkeit, das Inhalts-Repository abzufragen. CQ bietet eine Reihe von Prädikat-Auswertern, die Ihnen beim Umgang mit Ihren Daten helfen.
 
 Sie möchten jedoch vielleicht Abfragen vereinfachen, indem Sie einen benutzerdefinierten Prädikat-Auswerter implementieren, der weniger komplex ist und für eine bessere Semantik sorgt.
 
 Ein benutzerdefiniertes Prädikat ist auch für andere Aufgaben nützlich, die nicht direkt mit XPath ausgeführt werden können, z. B.:
 
-* Suchen nach Daten und Services
+* Suchen nach Daten aus einem Dienst
 * Benutzerdefiniertes Filtern basierend auf Berechnungen
 
 >[!NOTE]
@@ -52,7 +52,7 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 Ein Prädikat-Auswerter ist für die Auswertung bestimmter Prädikate zuständig, die eine Abfrage einschränken.
 
-Dabei wird eine allgemeinere Sucheinschränkung (z. B. &quot;width > 200&quot;) einer spezifischen JCR-Abfrage zugeordnet, die mit dem tatsächlichen Inhaltsmodell übereinstimmt (z. B. metadata/@width > 200). Es können auch Knoten manuell gefiltert und deren Einschränkungen überprüft werden.
+Er ordnet eine Suchbegrenzung auf höherer Ebene (z. B. &quot;Breite > 200&quot;) einer bestimmten JCR-Abfrage zu, die dem tatsächlichen Inhaltsmodell entspricht (z. B. metadata/@width > 200). Es können auch Knoten manuell gefiltert und deren Einschränkungen überprüft werden.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ In diesem Abschnitt wird anhand eines Beispiels beschrieben, wie Sie einen benut
 
 * `cq:lastReplicatedBy` speichert die ID des Benutzers, der die letzte Replikationsaktion ausgelöst hat.
 
-* `cq:lastReplicationAction` speichert die letzte Replikationsaktion (z. B. Aktivierung, Deaktivierung).
+* `cq:lastReplicationAction` speichert die letzte Replikationsaktion (z. B. Aktivierung, Deaktivierung)
 
 #### Abfragen von Replikationsmetadaten mit Standard-Prädikat-Auswertern {#querying-replication-metadata-with-default-predicate-evaluators}
 
@@ -106,7 +106,7 @@ Das Gruppieren von Metadatenprädikaten einer Replikation mit einem benutzerdefi
 
 >[!NOTE]
 >
->Informationen zum Einrichten neuer AEM-Projekte mit Maven finden Sie in der Dokumentation [Erstellen von AEM-Projekten mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
+>Die Einrichtung neuer AEM mit Maven wird dokumentiert durch [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 Sie müssen zunächst die Maven-Abhängigkeiten Ihres Projekts aktualisieren. `PredicateEvaluator` ist Teil des `cq-search`-Artefakts und muss zur POM-Datei von Maven hinzugefügt werden.
 

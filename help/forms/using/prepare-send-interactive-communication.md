@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2021'
-ht-degree: 82%
+source-wordcount: '2020'
+ht-degree: 81%
 
 ---
 
@@ -51,7 +51,7 @@ Beim Vorbereiten der interaktiven Kommunikation über die Agent-Benutzeroberflä
 
 1. Geben Sie auf der Registerkarte &quot;Daten&quot;die Daten für Variablen, Formulardatenmodelleigenschaften und XDP-Felder (Druckvorlage) ein. Füllen Sie alle erforderlichen Felder (mit einem Sternchen (*) gekennzeichnet) aus, um die Schaltfläche **Senden** zu aktivieren.
 
-   Tippen Sie auf einen Datenfeldwert in der Vorschau der interaktiven Kommunikation, um das entsprechende Datenfeld auf der Registerkarte „Daten“ hervorzuheben.
+   Tippen Sie auf einen Datenfeldwert in der Vorschau der interaktiven Kommunikation, um das entsprechende Datenfeld auf der Registerkarte Daten oder umgekehrt zu markieren.
 
 ### Inhalt verwalten {#manage-content}
 

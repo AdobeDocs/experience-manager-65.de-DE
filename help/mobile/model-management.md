@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 exl-id: 50785534-5784-4354-b123-5e640b7c0242
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '783'
-ht-degree: 3%
+source-wordcount: '784'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, für die ein frameworkbasiertes clientseitiges Rendering für einzelne Seiten (z. B. React) erforderlich ist. [Weitere Informationen](/help/sites-developing/spa-overview.md)
+>Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
 Die Modellverwaltung umfasst die Erstellung und Verwaltung von Modellen zum Zweck der Zuordnung zu Datenobjekten. Jedes Modell enthält alle Eigenschaften und Felddefinitionen, die zur Erleichterung der Erstellung und Darstellung von Objekten erforderlich sind.
 
@@ -49,6 +49,7 @@ Modelle werden verwendet, um zu bestimmen, wie Entitäten erstellt werden. Sie d
 >[!NOTE]
 >
 >Ein Modell existiert außerhalb einer App, da mehrere Apps es verwenden können.
+>
 
 Siehe **[Modelle](/help/mobile/administer-mobile-apps.md)** , um Modelle im Dashboard und Repository zu erstellen und zu verwalten.
 
@@ -65,6 +66,7 @@ Siehe **[Arbeiten mit Entitäten](/help/mobile/spaces-and-entities.md)** , um be
 >[!NOTE]
 >
 >Wenn das Modell keinem vorhandenen AEM-Inhalt entspricht, z. B. wenn der Kunde ein neues Modell erstellt hat, gibt es eine Benutzeroberfläche, über die ein Kunde eine neue Entität erstellen kann.
+>
 
 ### Leerzeichen im Inhaltsmodell {#spaces-in-content-model}
 

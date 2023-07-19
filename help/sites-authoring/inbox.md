@@ -8,10 +8,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1143'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '1144'
+ht-degree: 99%
 
 ---
 
@@ -29,8 +29,8 @@ Sie können Benachrichtigungen aus verschiedenen Bereichen von AEM (darunter auc
    * Arbeitselemente, die Aktionen darstellen, die Sie für Seiteninhalte ausführen müssen.
 
       * Diese sind das Ergebnis von **Teilnehmer**-Workflow-Schritten
-   * Fehlgeschlagene Elemente, um Admins zu ermöglichen, einen fehlgeschlagenen Schritt erneut auszuführen.
 
+   * Fehlgeschlagene Elemente, um Admins zu ermöglichen, einen fehlgeschlagenen Schritt erneut auszuführen.
 
 Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, wo Sie sie anzeigen und dann Maßnahmen ergreifen können.
 
@@ -47,7 +47,6 @@ Sie erhalten diese Benachrichtigungen in Ihrem eigenen Posteingang, wo Sie sie a
 >* [Workflows](/help/sites-authoring/workflows.md)
 >* [Formulare](/help/forms/home.md)
 >
-
 
 ## Posteingang in der Kopfzeile {#inbox-in-the-header}
 
@@ -114,22 +113,22 @@ Für beide Ansichten (Liste und Kalender) können Sie Einstellungen festlegen:
 
 * **Kalenderansicht**
 
-   Für die **Kalenderansicht** können Sie Folgendes konfigurieren:
+  Für die **Kalenderansicht** können Sie Folgendes konfigurieren:
 
    * **Gruppieren nach**
    * **Zeitplan** oder **Ohne**
    * **Kartengröße**
 
-   ![wf-92](assets/wf-92.png)
+  ![wf-92](assets/wf-92.png)
 
 * **Listenansicht**
 
-   Für die **Listenansicht** können Sie den Sortiermechanismus konfigurieren:
+  Für die **Listenansicht** können Sie den Sortiermechanismus konfigurieren:
 
    * **Sortierfeld**
    * **Sortierreihenfolge**
 
-   ![wf-83](assets/inbox-settings.png)
+  ![wf-83](assets/inbox-settings.png)
 
 ### Posteingang – Admin-Kontrolle {#inbox-admin-control}
 
@@ -149,7 +148,7 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
    * **Spalte löschen**: Tippen Sie auf das Symbol ![Löschen](assets/delete_updated.svg), um die Spalte aus dem AEM-Posteingang zu löschen.
    * **Spalte verschieben**: Ziehen Sie das Symbol ![Verschieben](assets/move_updated.svg), um eine Spalte im AEM-Posteingang an eine neue Position zu verschieben.
 
-   ![Admin-Kontrolle](assets/admin-control-column-customize.png)
+  ![Admin-Kontrolle](assets/admin-control-column-customize.png)
 
 * **Branding-Anpassung**
 
@@ -181,6 +180,7 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
       * Anzeige der Elementeigenschaften
       * Öffnen des entsprechenden Dashboards oder Assistenten für weitere Aktionen
       * Aufrufen einer zugehörigen Dokumentation
+
    * **Schritt zurück** zu einem vorherigen Schritt.
    * Anzeigen der Payload eines Workflows.
    * Erstellen eines Projekts auf Basis des Elements.
@@ -190,7 +190,6 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
    >Weitere Informationen finden Sie unter:
    >
    >* Workflow-Elemente – [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md)
-
 
 1. Abhängig vom ausgewählten Element wird eine bestimmte Aktion gestartet, z. B.:
 
@@ -204,10 +203,9 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
 
    Je nachdem, ob ein Dialogfeld, ein Assistent oder eine Dokumentationsseite geöffnet wurde, können Sie Folgendes durchführen:
 
-   * Die entsprechende Aktion (z. B. „Neu zuweisen“) bestätigen.
+   * die geeigneten Maßnahmen zu bestätigen; z. B. Neu zuweisen.
    * Die Aktion abbrechen.
    * Den Rückwärtspfeil verwenden: Wenn beispielsweise ein Aktionsassistent oder eine Dokumentationsseite geöffnet wurde, können Sie zum Posteingang zurückkehren.
-
 
 ## Erstellen einer Aufgabe {#creating-a-task}
 
@@ -260,9 +258,11 @@ Bei einigen Aufgaben besteht die Möglichkeit, auf deren Basis ein [Projekt](/he
       * **Startdatum**
       * **Fälligkeitsdatum**
       * **Benutzer** und Rolle
+
    * **Erweitert**
 
       * **Name**
+
    >[!NOTE]
    >
    >Ausführliche Informationen finden Sie unter [Erstellen eines Projekts](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project).

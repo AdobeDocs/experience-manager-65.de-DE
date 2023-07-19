@@ -4,9 +4,9 @@ description: Hier erfahren Sie, wie Sie die häufigsten Probleme mit MSM beheben
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
-source-git-commit: a323e6c30bf2c226f6613d1b9b037a0beedbfc0d
-workflow-type: ht
-source-wordcount: '762'
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '764'
 ht-degree: 100%
 
 ---
@@ -26,16 +26,16 @@ MSM enthält mehrere Servlets, die mit Selektoren in den Ressourcen-URLs angefor
 
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Verwenden Sie diesen Code auf einer Blueprint-Seite, um die Liste aller mit ihr verknüpften Live Copies mit zusätzlichen Live Copy-Statusinformationen abzurufen.
-   * Beispiel:
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+   * zum Beispiel:
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Verwenden Sie diesen Code auf Live Copy-Seiten, um erweiterte Informationen über die Verbindung mit den Blueprint-Seiten abzurufen. Wenn es sich bei der Seite nicht um eine Live Copy handelt, erhalten Sie kein Ergebnis.
-   * Beispiel:
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+   * zum Beispiel:
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
-Diese Servlets generieren DEBUG-Protokollmeldungen über den Logger `com.day.cq.wcm.msm`, die ebenfalls hilfreich sein können.
+Diese Servlets generieren DEBUG-Protokollmeldungen über den `com.day.cq.wcm.msm`-Logger, die ebenfalls hilfreich sein können.
 
 ## Abrufen MSM-spezifischer Informationen im Repository {#checking-repo}
 
@@ -81,7 +81,7 @@ Stattdessen können Sie Folgendes tun:
 
 ### Warum sehe ich Live Copy-Seiten mit dem Suffix „_msm_move“? {#moved-pages}
 
-Bei einem Rollout einer Blueprint-Seite wird entweder die entsprechende Live Copy-Seite aktualisiert oder eine neue Live Copy-Seite erstellt, falls diese noch nicht vorhanden ist (z. B. wenn sie zum ersten Mal ausgerollt wird oder die Live Copy-Seite manuell gelöscht wurde).
+Bei einem Rollout einer Blueprint-Seite wird entweder die entsprechende Live Copy-Seite aktualisiert oder es wird eine neue Live Copy-Seite erstellt, falls diese noch nicht vorhanden ist (z. B. wenn sie zum ersten Mal ausgerollt wird oder die Live Copy-Seite manuell gelöscht wurde).
 
 Wenn in letzterem Fall jedoch eine Seite ohne `cq:LiveRelationship`-Eigenschaft mit demselben Namen vorhanden ist, wird diese Seite entsprechend umbenannt, bevor die Live Copy-Seite erstellt wird.
 

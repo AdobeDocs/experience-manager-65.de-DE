@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '788'
 ht-degree: 1%
 
 ---
@@ -42,7 +42,7 @@ Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz ang
 
 Verwenden der [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) Site erstellt, wenn [Erste Schritte mit AEM Communities](getting-started.md)können Sie schnell einen Thread in einem Forum einrichten, in dem Sie verschiedene Moderationsaktivitäten in der Veröffentlichungsumgebung erleben können, wie unten dargestellt.
 
-Aaron McDonald (aaron.mcdonald@mailinator.com) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er ihn bei der Erstellung der Website zur Community-Interaktion-Moderatoren-Gruppe hinzufügte.
+Aaron McDonald (aaron.mcdonald@mailinator.com) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er ihn bei der Erstellung der Website zur Gruppe Community-Interaktion-Moderatoren hinzufügte.
 
 Rebekah Larsen (rebekah.larsen@trashymail.com) kann als Mitglied der Community-Engagement-Mitgliedergruppe hinzugefügt werden, indem die [Mitgliederkonsole](members.md).
 
@@ -56,11 +56,11 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
    * Neuen Beitrag auswählen
    * Betreff eingeben
 
-      Wann wird der Nektar in der Humming-Vogelzucht geändert?
+     Wann wird der Nektar in der Humming-Vogelzucht geändert?
 
    * Textkörper eingeben
 
-      Ich hatte nicht viel Erfolg, wenn ich jedes Jahr eine Kolibris aufhänge. Anscheinend kommen sie an ein oder zwei Tagen, dann ist es so. Ich ändere es einmal in der Woche ist das zu lang? Muss ich es früher ändern?
+     Ich hatte nicht viel Erfolg, wenn ich jedes Jahr eine Kolibris aufhänge. Anscheinend kommen sie an ein oder zwei Tagen, dann ist es so. Ich ändere es einmal in der Woche ist das zu lang? Muss ich es früher ändern?
 
    * Beitrag auswählen
    * Log Out auswählen
@@ -71,7 +71,7 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
    * Wählen Sie für das Thema &quot;Hummingbird&quot;die Option &quot;Mehr lesen&quot;
    * Geben Sie den Kommentar für Antwort posten ein.
 
-      Ich wechsele meine Woche einmal und bekomme sie von Mai bis Oktober.
+     Ich wechsele meine Woche einmal und bekomme sie von Mai bis Oktober.
 
    * Antwort auswählen
    * Log Out auswählen
@@ -82,7 +82,7 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
    * Wählen Sie für das Thema &quot;Hummingbird&quot;die Option &quot;Mehr lesen&quot;
    * Geben Sie den Kommentar für Antwort posten ein.
 
-      Ich verkaufe Nektar und Feeds - besuchen Sie https://my.viral.url/
+     Ich verkaufe Nektar und Feeds - besuchen Sie https://my.viral.url/
 
    * Antwort auswählen
    * Log Out auswählen

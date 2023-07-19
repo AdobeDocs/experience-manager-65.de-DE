@@ -12,16 +12,16 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2483'
-ht-degree: 12%
+source-wordcount: '2482'
+ht-degree: 7%
 
 ---
 
 # Communities-Benutzersynchronisierung {#communities-user-synchronization}
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
 In AEM Communities über die Veröffentlichungsumgebung (abhängig von den konfigurierten Berechtigungen), *Site-Besucher* kann *members*, erstellen *Benutzergruppen* und ihre *Mitgliederprofil* .
 
@@ -53,13 +53,13 @@ Detaillierte schrittweise Anweisungen zum Aktivieren der Synchronisierung über 
 
 * **vlt-Paket**
 
-   Es handelt sich um eine ZIP-Datei aller Änderungen, die an einem Herausgeber vorgenommen werden und die über Herausgeber verteilt werden müssen. Änderungen an einem Herausgeber generieren Ereignisse, die vom Ereignis-Listener &quot;change&quot;ausgewählt werden. Dadurch wird ein vlt-Paket erstellt, das alle Änderungen enthält.
+  Es handelt sich um eine ZIP-Datei aller Änderungen, die an einem Herausgeber vorgenommen werden und die über Herausgeber verteilt werden müssen. Änderungen an einem Herausgeber generieren Ereignisse, die vom Ereignis-Listener &quot;change&quot;ausgewählt werden. Dadurch wird ein vlt-Paket erstellt, das alle Änderungen enthält.
 
 * **Verteilungspaket**
 
-   Es enthält Verteilungsinformationen für Sling. Dies sind Informationen darüber, wo der Inhalt verteilt werden muss und wann er zuletzt verteilt wurde.
+  Es enthält Verteilungsinformationen für Sling. Dies sind Informationen darüber, wo der Inhalt verteilt werden muss und wann er zuletzt verteilt wurde.
 
-## Verfahren bei … {#what-happens-when}
+## Was passiert, wenn ... {#what-happens-when}
 
 ### Veröffentlichen von Websites über die Communities Sites-Konsole {#publish-site-from-communities-sites-console}
 
@@ -69,7 +69,7 @@ Wenn eine Community-Site vom [Communities Sites-Konsole](/help/communities/sites
 
 Standardmäßig werden Benutzer und Profile, die in der Veröffentlichungsumgebung erstellt wurden (z. B. durch Selbstregistrierung, Anmeldung bei sozialen Netzwerken, LDAP-Authentifizierung), nicht in der Autorenumgebung angezeigt.
 
-Wenn die Topologie eine [Veröffentlichungsfarm](/help/communities/topologies.md) und die Benutzersynchronisierung korrekt konfiguriert wurde, wird die *Benutzer* und *Benutzerprofil* wird über die Veröffentlichungsfarm hinweg mithilfe der Sling-Verteilung synchronisiert.
+Wenn es sich bei der Topologie um eine [Veröffentlichungsfarm](/help/communities/topologies.md) handelt und die Benutzersynchronisierung korrekt konfiguriert wurde, werden *Benutzende* und *Benutzerprofil* über die Veröffentlichungsfarm hinweg mittels Sling Distribution synchronisiert.
 
 ### Neue Community-Gruppe wird auf der Veröffentlichungsinstanz erstellt {#new-community-group-is-created-on-publish}
 
@@ -77,11 +77,11 @@ Obwohl von einer Veröffentlichungsinstanz initiiert, erfolgt die Erstellung ein
 
 Im Rahmen dieses Prozesses werden die neuen Seiten der Site auf allen Veröffentlichungsinstanzen repliziert. Die dynamisch erstellte Community-Benutzergruppe und ihre Mitglieder werden an alle Veröffentlichungsinstanzen verteilt.
 
-### Erstellung von Benutzern oder Benutzergruppen über die Sicherheitskonsole {#users-or-user-groups-are-created-using-security-console}
+### Benutzer oder Benutzergruppen werden über die Sicherheitskonsole erstellt {#users-or-user-groups-are-created-using-security-console}
 
-Per Design werden die in der Veröffentlichungsumgebung erstellten Benutzerdaten nicht in der Autorenumgebung angezeigt (und umgekehrt).
+Standardmäßig werden in der Veröffentlichungsumgebung erstellte Benutzerdaten nicht in der Autorenumgebung und umgekehrt angezeigt.
 
-Wenn in der Veröffentlichungsumgebung neue Benutzer über die Konsole [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md) hinzugefügt werden, werden die neuen Benutzer und ihre Gruppenmitgliedschaft im Rahmen der Benutzersynchronisierung ggf. mit anderen Veröffentlichungsinstanzen synchronisiert. Bei der Benutzersynchronisierung werden auch die über die Sicherheitskonsole erstellten Benutzergruppen synchronisiert.
+Wenn die [Benutzerverwaltung und Sicherheit](/help/sites-administering/security.md) wird verwendet, um neue Benutzer in der Veröffentlichungsumgebung hinzuzufügen. Die Benutzersynchronisierung synchronisiert die neuen Benutzer und deren Gruppenmitgliedschaft ggf. mit anderen Veröffentlichungsinstanzen. Bei der Benutzersynchronisierung werden auch die über die Sicherheitskonsole erstellten Benutzergruppen synchronisiert.
 
 ### Benutzer postet Inhalte auf Veröffentlichungsinstanz {#user-posts-content-on-publish}
 
@@ -89,9 +89,9 @@ Bei benutzergenerierten Inhalten (UGC) werden die in einer Veröffentlichungsins
 
 ## Best Practices {#bestpractices}
 
-Standardmäßig ist die Benutzersynchronisierung **deaktiviert**. Die Aktivierung der Benutzersynchronisierung beinhaltet die Änderung *vorhandener* OSGi-Konfigurationen. Aufgrund der Aktivierung der Benutzersynchronisierung sollten keine neuen Konfigurationen hinzugefügt werden.
+Standardmäßig ist die Benutzersynchronisierung **disabled**. Die Aktivierung der Benutzersynchronisierung umfasst das Ändern von *vorhandene* OSGi-Konfigurationen. Aufgrund der Aktivierung der Benutzersynchronisierung sollten keine neuen Konfigurationen hinzugefügt werden.
 
-Die Benutzersynchronisierung ist davon abhängig, dass die Autorenumgebung die Verteilung der Benutzerdaten verwaltet, auch wenn die Benutzerdaten nicht in der Autoreninstanz erstellt werden .
+Die Benutzersynchronisierung beruht bei der Verwaltung der Benutzerdatenverteilung auf der Autorenumgebung, auch wenn die Benutzerdaten nicht in der Autorenumgebung erstellt werden.
 
 **Voraussetzungen**
 
@@ -99,9 +99,9 @@ Die Benutzersynchronisierung ist davon abhängig, dass die Autorenumgebung die V
 
    Sobald die Benutzersynchronisierung aktiviert wurde, werden nur neu erstellte Benutzer und Gruppen synchronisiert .
 
-1. Stellen Sie sicher, dass der neueste Code installiert wurde:
+1. Vergewissern Sie sich, dass der neueste Code installiert wurde:
 
-   * [AEM-Plattformupdates](https://helpx.adobe.com/de/experience-manager/kb/aem62-available-hotfixes.html)
+   * [AEM-Plattform-Updates](https://helpx.adobe.com/de/experience-manager/kb/aem62-available-hotfixes.html)
    * [AEM Communities-Updates](/help/communities/deploy-communities.md#latestfeaturepack)
 
 Die folgenden Konfigurationen sind erforderlich, um die Benutzersynchronisierung in AEM Communities zu aktivieren. Stellen Sie sicher, dass diese Konfigurationen korrekt sind, um zu verhindern, dass die Sling-Inhaltsverteilung fehlschlägt.
@@ -124,16 +124,17 @@ Konfigurieren der Konfiguration von Apache Sling Sync Agents :
 
    * Wählen Sie die vorhandene Konfiguration aus, um sie zur Bearbeitung zu öffnen (Bleistiftsymbol).
 
-      Überprüfungsname: **socialpubsync.**
+     Überprüfungsname: **socialpubsync.**
 
-   * Wählen Sie die **Aktiviert** aktivieren.
+   * Aktivieren Sie das Kontrollkästchen **Aktiviert**.
    * Auswählen **Verwenden Sie mehrere Warteschlangen.**
    * Angeben **Exporter Endpoints** und **Importer Endpoints** (Sie können weitere Exporter- und Importtool-Endpunkte hinzufügen).
 
-      Diese Endpunkte definieren, woher der Inhalt abgerufen werden soll und wo der Inhalt gepusht werden soll. Der Autor ruft den Inhalt vom angegebenen Exportendpunkt ab und sendet ihn an die Herausgeber (außer den Herausgeber, von dem er den Inhalt abgerufen hat).
+     Diese Endpunkte definieren, woher der Inhalt abgerufen werden soll und wo der Inhalt gepusht werden soll. Der Autor ruft den Inhalt vom angegebenen Exportendpunkt ab und sendet ihn an die Herausgeber (außer den Herausgeber, von dem er den Inhalt abgerufen hat).
+
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
-### Adobe Granite Distribution – Encrypted Password Transport Secret Provider {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
+### Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 Dadurch kann der Autor den autorisierten Benutzer identifizieren, da er berechtigt ist, Benutzerdaten vom Autor zur Veröffentlichung zu synchronisieren.
 
@@ -158,7 +159,7 @@ So verbinden Sie Autoren mit Herausgebern mit autorisierten Benutzern:
 
 ![granite-paswrd-trans](assets/granite-paswrd-trans.png)
 
-### Apache Sling Distribution Agent – Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
+### Apache Sling Distribution Agent - Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
 Diese Konfiguration wird verwendet, um die Daten zu konfigurieren, die Sie über Publisher hinweg synchronisieren möchten. Wenn Daten in Pfaden erstellt/aktualisiert werden, die in **Zulässige Roots**, wird &quot;var/community/distribution/diff&quot;aktiviert und der erstellte Replikator ruft die Daten von einem Herausgeber ab und installiert sie auf anderen Herausgebern.
 
@@ -180,7 +181,7 @@ So konfigurieren Sie die zu synchronisierenden Daten (Knotenpfade):
 
    ![queue-agents-fact](assets/queue-agents-fact.png)
 
-### Adobe Granite Distribution – Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
+### Adobe Granite Distribution - Diff Observer Factory {#adobe-granite-distribution-diff-observer-factory}
 
 Mit dieser Konfiguration wird die Gruppenmitgliedschaft über Publisher hinweg synchronisiert.
 Wenn die Änderung der Mitgliedschaft in einer Gruppe in einem Herausgeber die Mitgliedschaft nicht in anderen Herausgebern aktualisiert, stellen Sie sicher, dass **ref :members** wird hinzugefügt zu **Namen der angezeigten Eigenschaften**.
@@ -197,12 +198,12 @@ So stellen Sie die Mitgliedersynchronisierung sicher:
 
    Überprüfen **Agentenname: socialpubsync -reverse**.
 
-1. Wählen Sie die **Aktiviert** aktivieren.
+1. Aktivieren Sie das Kontrollkästchen **Aktiviert**.
 1. Angeben **rep:members** als Beschreibung für propertyName in **Namen der angezeigten Eigenschaften** und Speichern.
 
    ![diff-obs](assets/diff-obs.png)
 
-### Apache Sling Distribution Trigger – Scheduled Triggers Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
+### Apache Sling Distribution Trigger - Scheduled Trigger Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 Mit dieser Konfiguration können Sie das Abrufintervall konfigurieren (nach dem Publisher gepingt und Änderungen vom Autor abgerufen werden), um die Änderungen über Publisher hinweg zu synchronisieren.
 
@@ -216,13 +217,13 @@ So ändern Sie das Abrufintervall:
 
    * Wählen Sie die vorhandene Konfiguration aus, um sie zur Bearbeitung zu öffnen (Bleistiftsymbol).
 
-      Überprüfen **socialpubsync -scheduled-Trigger**
+     Überprüfen **socialpubsync -scheduled-Trigger**
 
    * Stellen Sie das Intervall in Sekunden auf das gewünschte Intervall ein und speichern Sie es.
 
-   ![scheduled-trigger](assets/scheduled-trigger.png)
+   ![scheduled-Trigger](assets/scheduled-trigger.png)
 
-### AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
+### AEM Communities-Listener für Benutzersynchronisierung {#aem-communities-user-sync-listener}
 
 Bei Problemen in der Sling-Distribution, bei denen es eine Diskrepanz bei Abonnements gibt und die darauf folgen, überprüfen Sie, ob die folgenden Eigenschaften in **AEM Communities-Listener für Benutzersynchronisierung** -Konfigurationen festgelegt sind:
 

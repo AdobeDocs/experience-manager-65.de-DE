@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '315'
-ht-degree: 100%
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
+source-wordcount: '314'
+ht-degree: 91%
 
 ---
 
@@ -47,8 +47,8 @@ Links auf einer bearbeitbaren Seite kann ein Browser eingeblendet werden. Von hi
 * **[Asset-Browser](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
 Links auf einer bearbeitbaren Seite kann ein Browser eingeblendet werden. Von hier können Assets auf die Seite gezogen werden, z. B. wenn Sie Assets positionieren oder Links zu anderen Seiten erstellen möchten.
 
-* **Komponenten-Symbolleiste**
-Sowohl mit einem einfachen als auch mit einem doppelten Klicken/Tippen wird die entsprechende Symbolleiste angezeigt (einfach für Symbolleiste für die Bearbeitung im Kontext, dann langsam doppelt für die vollständige Symbolleiste).
+* **Komponentensymbolleiste**
+Sowohl ein einfaches als auch ein langsames Doppelklick/Tippen zeigen die entsprechende Symbolleiste an (einfach für die Symbolleiste der Bearbeitung im Kontext, dann langsam doppelt für die volle Symbolleiste).
 
 * **[Responsives Layout](/help/sites-authoring/responsive-layout.md)** Damit steht Ihnen ein Absatzsystem zur Verfügung, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können.
 

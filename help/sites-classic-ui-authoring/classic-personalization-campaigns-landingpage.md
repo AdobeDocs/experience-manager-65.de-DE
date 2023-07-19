@@ -11,52 +11,52 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+workflow-type: tm+mt
 source-wordcount: '3335'
-ht-degree: 100%
+ht-degree: 61%
 
 ---
 
 # Einstiegsseiten{#landing-pages}
 
-Mit der Funktion für Einstiegsseiten können Sie schnell und einfach ein Design und Inhalte direkt in eine AEM-Seite importieren. Ein Web-Entwickler kann das HTML und zusätzliche Assets vorbereiten, die als komplette Seite oder nur als Teil einer Seite importiert werden können. Diese Funktion ist hilfreich beim Erstellen von Marketing-Einstiegsseiten, die nur für begrenzte Zeit aktiv sind und schnell erstellt werden müssen.
+Mit der Funktion für Einstiegsseiten können Sie schnell und einfach ein Design und Inhalte direkt in eine AEM-Seite importieren. Ein Web-Entwickler kann das HTML und zusätzliche Assets vorbereiten, die als komplette Seite oder nur als Teil einer Seite importiert werden können. Die Funktion ist nützlich, um Marketing-Landingpages zu erstellen, die nur für eine begrenzte Zeit aktiv sind und schnell erstellt werden müssen.
 
 Auf dieser Seite wird Folgendes beschrieben:
 
-* Aussehen von Einstiegsseiten in AEM einschließlich verfügbarer Komponenten
-* Erstellen einer Einstiegsseite und Importieren eines Designpakets
-* Arbeiten mit Einstiegsseiten in AEM
-* Einrichten mobiler Einstiegsseiten
+* Wie Landingpages aussehen AEM Komponenten einschließen?
+* Erstellen einer Landingpage und Importieren eines Designpakets
+* So arbeiten Sie mit Landingpages in AEM
+* Einrichten mobiler Landingpages
 
-Das Vorbereiten des Designpakets für den Import wird unter [Erweitern und Konfigurieren des Design Importers](/help/sites-administering/extending-the-design-importer-for-landingpages.md) erläutert. Informationen zur Integration mit Adobe Analytics finden Sie unter [Einstiegsseiten mit Analytics integrieren](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md).
+Die Vorbereitung des Designpakets für den Import wird im Abschnitt [Erweitern und Konfigurieren des Design Importers](/help/sites-administering/extending-the-design-importer-for-landingpages.md). Die Integration mit Adobe Analytics wird im Abschnitt [Integrieren von Einstiegsseiten in Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
 
 >[!CAUTION]
 >
->Das Design-Importtool, das zum Import von Landingpages verwendet wurde, [ist ab AEM 6.5 nicht mehr verfügbar](/help/release-notes/deprecated-removed-features.md#deprecated-features).
+>Der Design Importer, der zum Importieren von Landingpages verwendet wird, [ist seit AEM 6.5 veraltet](/help/release-notes/deprecated-removed-features.md#deprecated-features).
 
 >[!CAUTION]
 >
 >Da das Design-Import-Tool Zugriff auf `/apps` erfordert, funktioniert es in containerisierten Cloud-Umgebungen nicht, in denen `/apps` unveränderlich ist.
 
-## Was sind Einstiegsseiten? {#what-are-landing-pages}
+## Was sind Landingpages? {#what-are-landing-pages}
 
-Einstiegsseiten sind Websites mit einer oder mehreren Seiten, die den „Endpunkt“ einer Marketingkampagne darstellen – beispielsweise mit E-Mail, Adwords/Bannern oder sozialen Medien. Eine Einstiegsseite kann verschiedenen Zwecken dienen, denen jedoch immer eins gemeinsam ist: Der Besucher soll eine Aufgabe erfüllen und dadurch wird der Erfolg der Einstiegsseite definiert.
+Einstiegsseiten sind Websites mit einer oder mehreren Seiten, die den „Endpunkt“ einer Marketingkampagne darstellen – beispielsweise mit E-Mail, Adwords/Bannern oder sozialen Medien. Eine Landingpage kann verschiedenen Zwecken dienen, hat jedoch alle eine gemeinsame Sache - der Besucher sollte eine Aufgabe erfüllen und den Erfolg einer Landingpage definieren.
 
-Mit der Funktion „Einstiegsseiten“ in AEM können Marketingexperten mit Web-Designern in Agenturen oder internen Kreativteams gemeinsam Seitendesigns entwickeln, die ganz einfach in AEM importiert und weiterhin von den Marketingexperten bearbeitet und gemeinsam mit den anderen AEM-gestützten Websites veröffentlicht werden können.
+Die Landingpage-Funktion in AEM ermöglicht es Marketingexperten, mit Web-Designern in Agenturen oder internen Kreativteams zusammenzuarbeiten, um Seitenentwürfe zu erstellen, die einfach in AEM importiert und von Marketing-Experten bearbeitbar sind und unter der gleichen Verwaltung wie die anderen AEM veröffentlicht werden können.
 
-In AEM erstellen Sie Einstiegsseiten mithilfe der folgenden Schritte:
+Gehen Sie AEM wie folgt vor, um Landingpages zu erstellen:
 
 1. Erstellen Sie eine Seite in AEM, die die Leinwandseite für die Einstiegsseiten enthält. Im Lieferumfang von AEM ist ein Beispiel namens **Import-Tool-Seite** enthalten.
 
 1. [Bereiten Sie HTML und Assets vor.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Komprimieren Sie die Ressourcen in einer ZIP-Datei, die hier als „Designpaket“ bezeichnet wird.
 1. Importieren Sie das Designpaket in die Import-Tool-Seite. 
-1. Bearbeiten und veröffentlichen Sie die Seite.
+1. Ändern und veröffentlichen Sie die Seite.
 
 ### Desktop-Einstiegsseiten {#desktop-landing-pages}
 
-Eine Beispiel-Einstiegsseite in AEM sieht wie folgt aus:
+Eine Einstiegsseite in AEM sieht wie folgt aus:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
@@ -66,34 +66,34 @@ Eine Einstiegsseite kann auch über eine mobile Version der Seite verfügen. Wen
 
 Der Importvorgang für die Einstiegsseite ist identisch mit jenem für eine normale Einstiegsseite, das Einstiegsseiten-Design verfügt über eine zusätzliche HTML-Datei, die der mobilen Einstiegsseite entspricht. Diese HTML-Datei muss genau wie die Desktop-Einstiegsseiten-HTML ebenfalls über ein Leinwand-`div` mit `id=cqcanvas` verfügen und sie unterstützt sämtliche bearbeitbaren Komponenten, die für die Desktop-Einstiegsseite beschrieben sind.
 
-Die mobile Einstiegsseite wird als untergeordnetes Element der Desktop-Einstiegsseite erstellt. Um Sie zu öffnen, navigieren Sie in „Websites“ zur Einstiegsseite und öffnen Sie die untergeordnete Seite.
+Die mobile Einstiegsseite wird als untergeordnetes Element der Desktop-Einstiegsseite erstellt. Um sie zu öffnen, navigieren Sie zur Landingpage in Websites und öffnen Sie die untergeordnete Seite.
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
 >[!NOTE]
 >
->Die mobile Einstiegsseite wird zusammen mit der Desktop-Einstiegsseite gelöscht/deaktiviert, wenn diese gelöscht oder deaktiviert wird.
+>Die mobile Landingpage wird zusammen mit der Desktop-Landingpage gelöscht/deaktiviert, wenn die Desktop-Landingpage gelöscht oder deaktiviert wird.
 
-## Komponenten der Einstiegsseite {#landing-page-components}
+## Komponenten der Landingpage {#landing-page-components}
 
-Um Teile des HTML zu markieren, damit diese beim Import in AEM bearbeitbar bleiben, können Sie Inhalt im Einstiegsseiten-HTML direkt AEM-Komponenten zuweisen. Das Design-Importtool erkennt standardmäßig die folgenden Komponenten:
+Um Teile des HTML zu markieren, damit diese beim Import in AEM bearbeitbar bleiben, können Sie Inhalt im Einstiegsseiten-HTML direkt AEM-Komponenten zuweisen. Das Design Importer versteht standardmäßig die folgenden Komponenten:
 
-* Text, für beliebigen Text
-* Title, für Inhalt in H1-6-Tags
-* Image, für Bilder, die austauschbar sein sollen
-* Aktionsaufrufe
+* Text, für Text
+* Titel, für Inhalt in H1-6-Tags
+* Bild, für Bilder, die austauschbar sein sollen
+* Aktionsaufruf:
 
    * Clickthrough-Link
    * Grafischer Link
 
-* CTA-Lead-Formular, zum Erfassen von Benutzerinformationen
-* Paragraph System (Parsys), um das Hinzufügen beliebiger Komponenten bzw. das Konvertieren der obenstehenden Komponente zuzulassen
+* CTA-Lead-Formular, um Benutzerinformationen zu erfassen
+* Absatzsystem (Parsys), um das Hinzufügen einer beliebigen Komponente oder das Konvertieren der oben genannten Komponente zu ermöglichen
 
-Außerdem ist es möglich, dies zu erweitern und benutzerdefinierte Komponenten zu unterstützen. In diesem Abschnitt werden die Komponenten im Detail beschrieben.
+Außerdem ist es möglich, dies zu erweitern und benutzerdefinierte Komponenten zu unterstützen. In diesem Abschnitt werden die Komponenten detailliert beschrieben.
 
 ### Text {#text}
 
-Mit der Text-Komponente können Sie über einen WYSIWYG-Editor einen Textblock eingeben. Weitere Informationen finden Sie unter [Text-Komponente](/help/sites-authoring/default-components.md#text).
+Mit der Text-Komponente können Sie über einen WYSIWYG-Editor einen Textblock eingeben. Siehe [Textkomponente](/help/sites-authoring/default-components.md#text) für weitere Informationen.
 
 ![chlimage_1-23](assets/chlimage_1-23.png)
 
@@ -103,7 +103,7 @@ Im Folgenden finden Sie ein Beispiel für eine Text-Komponente auf einer Einstie
 
 #### Titel {#title}
 
-In der title-Komponente können Sie einen Titel anzeigen und die Größe konfigurieren (h1-6). Weitere Informationen finden Sie unter [Titel-Komponente](/help/sites-authoring/default-components.md#title).
+In der title-Komponente können Sie einen Titel anzeigen und die Größe konfigurieren (h1-6). Siehe [Titelkomponente](/help/sites-authoring/default-components.md#title) für weitere Informationen.
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
@@ -113,7 +113,7 @@ Im Folgenden finden Sie ein Beispiel für eine Titel-Komponente auf einer Einsti
 
 #### Bild {#image}
 
-Die image-Komponente zeigt ein Bild an, das Sie entweder per Drag-and-Drop aus dem Content Finder ziehen oder per Klick hochladen können. Weitere Informationen finden Sie unter [Bild-Komponente](/help/sites-authoring/default-components.md).
+Die image-Komponente zeigt ein Bild an, das Sie entweder per Drag-and-Drop aus dem Content Finder ziehen oder per Klick hochladen können. Siehe [Bildkomponente](/help/sites-authoring/default-components.md) für weitere Informationen.
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -123,18 +123,18 @@ Im Folgenden finden Sie ein Beispiel für eine Bild-Komponenten auf einer Einsti
 
 #### Aktionsaufruf (CTA) {#call-to-action-cta}
 
-Ein Einstiegsseiten-Design kann mehrere Links enthalten, einige davon können als Aktionsaufruf angelegt sein.
+Ein Landingpage-Entwurf kann mehrere Links enthalten - einige davon können als &quot;Aktionsaufrufe&quot;gedacht sein.
 
-Ein Aktionsaufruf („Call to Action“, CTA) wird dazu verwendet, den Besucher unmittelbar zu einer Handlung aufzufordern. Beispiele hierfür sind „Jetzt abonnieren“, „Dieses Video ansehen“, „Nur für kurze Dauer“ und Ähnliches.
+Aktionsaufrufe (CTA) werden verwendet, um Besucher dazu zu bringen, sofort auf der Landingpage Maßnahmen zu ergreifen, z. B. &quot;Jetzt anmelden&quot;, &quot;Dieses Video anzeigen&quot;, &quot;Nur für begrenzte Zeit&quot;usw.
 
-* Click Through-Link – Sie können einen Textlink hinzufügen. Wenn der Besucher auf diesen klickt, wird er zu einer Ziel-URL weitergeleitet.
-* Grafischer Link - Sie können ein Bild hinzufügen. Wenn der Besucher darauf klickt, wird er zu einer Ziel-URL weitergeleitet.
+* Clickthrough-Link - Ermöglicht den Zusatz eines Textlinks, der den Besucher bei Klick zu einer Ziel-URL führt.
+* Grafischer Link - Ermöglicht das Hinzufügen eines Bildes, das den Besucher durch Klicken auf eine Ziel-URL weiterleitet.
 
-Beide CTA-Komponenten verfügen über ähnliche Optionen. Der Click Through-Link verfügt über zusätzliche Rich-Text-Optionen. Diese Komponenten werden im Detail in den folgenden Absätzen beschrieben.
+Beide CTA-Komponenten verfügen über ähnliche Optionen. Der Click Through-Link verfügt über zusätzliche Rich-Text-Optionen. Die Komponenten werden in den folgenden Absätzen ausführlich beschrieben.
 
 #### Click Through-Link {#click-through-link}
 
-Diese CTA-Komponente kann dazu verwendet werden, der Einstiegsseite einen Textlink hinzuzufügen. Der Benutzer kann auf den Link klicken und wird dann zur in den Komponenteneigenschaften angegebenen URL weitergeleitet. All diese Beispiele sind Teil der Gruppe „Aktionsaufruf“.
+Diese CTA-Komponente kann dazu verwendet werden, der Einstiegsseite einen Textlink hinzuzufügen. Der Benutzer kann auf den Link klicken und wird dann zur in den Komponenteneigenschaften angegebenen URL weitergeleitet. Sie ist Teil der Gruppe &quot;Aktionsaufruf&quot;.
 
 ![chlimage_1-29](assets/chlimage_1-29.png)
 
@@ -142,12 +142,12 @@ Diese CTA-Komponente kann dazu verwendet werden, der Einstiegsseite einen Textli
 
 **Ziel-URL**: Geben Sie den URI ein, zu dem Benutzer beim Klicken auf den Text weitergeleitet werden sollen.
 
-**Rendering-Optionen**: Beschreibt Render-Optionen. Wählen Sie aus den Folgenden:
+**Rendering-Optionen**: Beschreibt Render-Optionen. Sie können aus folgenden Optionen auswählen:
 
 * Seite in neuem Browserfenster laden
 * Seite in aktuellem Fenster laden
 * Seite im übergeordneten Frame laden
-* Alle Frames abbrechen und Seite im Vollbild-Browserfenster laden
+* Alle Frames abbrechen und Seite im vollständigen Browser-Fenster laden
 
 **CSS**: Geben Sie auf der Registerkarte „Stil“ einen Pfad zu Ihrem CSS-Stylesheet ein.
 
@@ -159,7 +159,7 @@ Im Folgenden finden Sie ein Beispiel für einen Clickthrough-Link:
 
 #### Grafischer Link {#graphical-link}
 
-Diese CTA-Komponente kann dazu verwendet werden, ein beliebiges grafisches Bild mit Link auf der Einstiegsseite hinzuzufügen. Beim Bild kann es sich um eine einfache Schaltfläche oder um ein grafisches Bild als Hintergrund handeln. Wenn der Benutzer auf das Bild klickt, wird er zur in den Komponenteneigenschaften angegebenen Ziel-URL weitergeleitet. Es ist Teil der Gruppe **Aktionsaufruf**.
+Diese CTA-Komponente kann dazu verwendet werden, ein beliebiges grafisches Bild mit Link auf der Einstiegsseite hinzuzufügen. Beim Bild kann es sich um eine einfache Schaltfläche oder um ein grafisches Bild als Hintergrund handeln. Wenn der Benutzer auf das Bild klickt, wird er zur in den Komponenteneigenschaften angegebenen Ziel-URL weitergeleitet. Es ist Teil der **Aktionsaufruf** hinzugefügt.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
@@ -167,12 +167,12 @@ Diese CTA-Komponente kann dazu verwendet werden, ein beliebiges grafisches Bild 
 
 **Ziel-URL**: Geben Sie den URI ein, zu dem Benutzer beim Klicken auf das Bild weitergeleitet werden sollen.
 
-**Rendering-Optionen**: Beschreibt Render-Optionen. Wählen Sie aus den Folgenden:
+**Rendering-Optionen**: Beschreibt Render-Optionen. Sie können aus folgenden Optionen auswählen:
 
 * Seite in neuem Browserfenster laden
 * Seite in aktuellem Fenster laden
 * Seite im übergeordneten Frame laden
-* Alle Frames abbrechen und Seite im Vollbild-Browserfenster laden
+* Alle Frames abbrechen und Seite im vollständigen Browser-Fenster laden
 
 **CSS**: Geben Sie auf der Registerkarte „Stil“ einen Pfad zu Ihrem CSS-Stylesheet ein.
 
@@ -182,18 +182,18 @@ Im Folgenden finden Sie ein Beispiel für einen grafischen Link:
 
 ![chlimage_1-32](assets/chlimage_1-32.png)
 
-### Lead-Formular für Aktionsaufruf (CTA) {#call-to-action-cta-lead-form}
+### Lead-Formular für Aktionsaufrufe (CTA) {#call-to-action-cta-lead-form}
 
-Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen eines Besuchers/Leads zu sammeln. Diese Informationen können gespeichert und später dazu verwendet werden, anhand dieser Informationen effizientes Marketing durchzuführen. Die Informationen enthalten im Allgemeinen Titel, Namen, E-Mail, Geburtsdatum, Adresse, Interessen usw. Sie sind Teil der Gruppe **CTA-Lead-Formular**.
+Ein Lead-Formular ist ein Formular, das dazu verwendet wird, die Informationen eines Besuchers/Leads zu sammeln. Diese Informationen können gespeichert und später dazu verwendet werden, anhand dieser Informationen effizientes Marketing durchzuführen. Die Informationen enthalten im Allgemeinen Titel, Namen, E-Mail, Geburtsdatum, Adresse, Interessen usw. Es ist Teil der **CTA-Lead-Formular** hinzugefügt.
 
-Im Folgenden finden Sie ein Beispiel für ein CTA-Lead-Formular:
+Ein Beispiel für ein CTA-Lead-Formular sieht wie folgt aus:
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
-CTA-Lead-Formulare bestehen aus mehreren verschiedenen Komponenten:
+CTA-Lead-Formulare bestehen aus verschiedenen Komponenten:
 
 * **Lead-Formular**
-Die Lead-Formular-Komponente definiert den Beginn und das Ende eines neuen Lead-Formulars auf einer Seite. Andere Komponenten können dann zwischen diesen Elementen eingefügt werden, z. B. E-Mail-ID und Vorname.
+Die Lead-Formular-Komponente definiert den Anfang und das Ende eines neuen Lead-Formulars auf einer Seite. Andere Komponenten können dann zwischen diesen Elementen eingefügt werden, z. B. E-Mail-ID und Vorname.
 
 * **Formularfelder und -elemente**
 Formularfelder und -elemente können Textfelder, Optionsschaltflächen, Bilder usw. umfassen. Der Benutzer führt oft eine Aktion in einem Formularfeld aus, z. B. Eingabe von Text. Unter den Abschnitten für die einzelnen Formularelemente finden Sie weitere Informationen.
@@ -207,14 +207,14 @@ Im Sidekick sind folgende Komponenten für das CTA-Lead-Formular verfügbar:
 
 ![chlimage_1-34](assets/chlimage_1-34.png)
 
-#### Gemeinsame Einstellungen vieler Formular-Komponenten {#settings-common-to-many-lead-form-components}
+#### Allgemeine Einstellungen für viele Lead-Formular-Komponenten {#settings-common-to-many-lead-form-components}
 
-Zwar dient jede Lead-Formular-Komponente einem anderen Zweck, viele enthalten jedoch ähnliche Optionen und Parameter.
+Obwohl jede der Lead-Formular-Komponenten einen anderen Zweck hat, bestehen viele aus ähnlichen Optionen und Parametern.
 
-Wenn Sie eine beliebige Formular-Komponente konfigurieren, sind im Dialogfeld die folgenden Registerkarten verfügbar:
+Wenn Sie eine der Formularkomponenten konfigurieren, stehen die folgenden Registerkarten im Dialogfeld zur Verfügung:
 
 * **Titel und Text**
-Hier müssen Sie grundlegende Informationen angeben, wie den Titel der Komponente und begleitenden Text. Gegebenenfalls können Sie hier auch andere Schlüsselinformationen definieren, z. B. ob für das Feld mehrere Optionen möglich sind und welche Elemente ausgewählt werden können.
+Hier müssen Sie die grundlegenden Informationen angeben, wie den Titel der Komponente und begleitenden Text. Gegebenenfalls können Sie hier auch andere Schlüsselinformationen definieren, z. B. ob für das Feld mehrere Optionen möglich sind und welche Elemente ausgewählt werden können.
 
 * **Anfangswerte**
 Ermöglicht Ihnen das Festlegen eines Standardwerts.
@@ -227,13 +227,13 @@ Gibt die Größe und den Stil der Felder an.
 
 >[!NOTE]
 >
->Die angezeigten Felder können je nach Komponente unterschiedlich groß sein.
+>Die angezeigten Felder variieren je nach Komponente.
 >
->Nicht alle Optionen stehen für alle Lead-Formular-Komponenten zur Verfügung. Unter „Formulare“ finden Sie weitere Informationen zu diesen [allgemeinen Einstellungen](/help/sites-authoring/default-components.md#formsgroup).
+>Nicht alle Optionen stehen für alle Lead-Formular-Komponenten zur Verfügung. Weitere Informationen finden Sie unter Forms . [Allgemeine Einstellungen](/help/sites-authoring/default-components.md#formsgroup).
 
-#### Lead-Formular-Komponenten {#lead-form-components}
+#### Lead-Formularkomponenten {#lead-form-components}
 
-Im folgenden Abschnitt werden die Komponenten beschrieben, die in CTA-Lead-Formularen verfügbar sind.
+Im folgenden Abschnitt werden die Komponenten beschrieben, die für Aktionsaufruf-Lead-Formulare verfügbar sind.
 
 **Über**: Bietet Benutzern die Möglichkeit, Informationen hinzuzufügen.
 
@@ -267,9 +267,9 @@ Im folgenden Abschnitt werden die Komponenten beschrieben, die in CTA-Lead-Formu
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
-Die Lead-Formular-Komponente definiert den Beginn und das Ende eines Formulars mithilfe der Elemente **Formular-Start** und **Formular-Ende**. Diese treten immer gemeinsam auf, damit das Formular ordnungsgemäß definiert wird.
+Die Lead-Formular-Komponente definiert den Beginn und das Ende eines Formulars mithilfe der Elemente **Formular-Start** und **Formular-Ende**. Diese werden immer gepaart, um sicherzustellen, dass das Formular korrekt definiert ist.
 
-Wenn Sie das Lead-Formular bearbeitet haben, können Sie den Start oder das Ende des Formulars konfigurieren, indem Sie in der entsprechenden Leiste auf **Bearbeiten** klicken.
+Nachdem Sie das Lead-Formular hinzugefügt haben, können Sie den Beginn des Formulars oder das Ende des Formulars konfigurieren, indem Sie auf **Bearbeiten** in der entsprechenden Leiste.
 
 **Beginn des Lead-Formulars**
 
@@ -286,9 +286,9 @@ Für die Konfiguration sind zwei Registerkarten verfügbar: **Formular** und **E
 **Post-Optionen** Die folgenden Post-Optionen sind verfügbar:
 
 * Lead erstellen
-* E-Mail-Dienst: Abonnenten erstellen und zu Liste hinzufügen - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget nutzen.
-* E-Mail-Dienst: Abwesenheitsnachricht senden – Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget nutzen.
-* E-Mail-Dienst: Benutzer von Liste entfernen – Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget nutzen.
+* Email Service: Abonnenten erstellen und zur Liste hinzufügen - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget verwenden.
+* Email Service: Automatische Antwort-E-Mail senden - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget verwenden.
+* Email Service: Benutzer von Liste abmelden - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget verwenden.
 * Benutzer entfernen
 
 **Formular-ID**: Mit der Formular-ID wird das Formular eindeutig gekennzeichnet. Verwenden Sie die Formular-ID, wenn sich mehrere Formulare auf einer Seite befinden. Achten Sie darauf, dass die Formulare unterschiedliche IDs haben.
@@ -304,10 +304,10 @@ Dies ist ein optionales Feld, das den Pfad zu einem Knoten im Repository angibt.
 Wenn Sie das gesamte Formular überprüfen, führen Sie auch eine der folgenden Aufgaben aus:
 
 * Ein Skript zur Client-Überprüfung:
-   ` /apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
 
 * Ein Skript zur Überprüfung auf der Server-Seite:
-   ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+  ` /apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
 
 **Aktionskonfiguration**: Je nach Auswahl unter Post-Optionen ändert sich die Aktionskonfiguration. Wenn Sie z. B. „Lead erstellen“ auswählen, können Sie konfigurieren, welcher Liste der Lead hinzugefügt werden soll.
 
@@ -331,15 +331,15 @@ Der Name, der auf der Schaltfläche zum Zurücksetzen angezeigt wird.
 * **Beschreibung**
 Informationen, die unter der Schaltfläche angezeigt werden.
 
-## Erstellen einer Einstiegsseite {#creating-a-landing-page}
+## Erstellen einer Landingpage {#creating-a-landing-page}
 
-Beim Erstellen einer Einstiegsseite müssen Sie drei Schritte ausführen:
+Beim Erstellen einer Landingpage müssen Sie drei Schritte ausführen:
 
 1. Erstellen Sie eine Importtool-Seite.
 1. [Bereiten Sie den HTML-Code für den Import vor.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Importieren Sie das Designpaket.
 
-### Verwendung des Design-Importtools {#use-of-the-design-importer}
+### Verwendung des Design Importers {#use-of-the-design-importer}
 
 Da der Import von Seiten die Vorbereitung von HTML umfasst, wird die Überprüfung und das Testen der Seiten sowie der Import von Landingpages als Admin-Aufgabe betrachtet. Die bzw. der Admin, die bzw. der den Import ausführt, benötigt Lese-, Schreib-, Erstellungs- und Löschberechtigungen für `/apps`. Wenn der Benutzer nicht über diese Berechtigungen verfügt, schlägt der Import fehl.
 
@@ -347,20 +347,20 @@ Da der Import von Seiten die Vorbereitung von HTML umfasst, wird die Überprüfu
 >
 >Da das Design-Import-Tool als Admin-Tool gedacht ist, das Lese-, Schreib-, Erstellungs- und Löschberechtigungen für `/apps` erfordert, empfiehlt Adobe, das Design-Import-Tool nicht in der Produktion zu verwenden.
 
-Adobe empfiehlt, das Design-Importtool auf einer Staging-Instanz zu verwenden. Auf einer Staging-Instanz kann der Import von einem Entwickler getestet und geprüft werden, der dann für die Bereitstellung des Codes für die Produktionsinstanz zuständig ist.
+Adobe empfiehlt die Verwendung des Design Importers in einer Staging-Instanz. Auf einer Staging-Instanz kann der Import von einem Entwickler getestet und validiert werden, der dann für die Bereitstellung des Codes in der Produktionsinstanz zuständig ist.
 
 ### Erstellen einer Importtool-Seite {#creating-an-importer-page}
 
-Damit Sie Ihr Einstiegsseitendesign importieren können, müssen Sie eine Importtool-Seite erstellen. Dies ist z. B. unter einer Kampagne möglich. Mit der Vorlage „Importtool-Seite“ können Sie Ihre komplette HTML-Einstiegsseite importieren. Die Seite enthält einen Ablagebereich, in den das Designpaket für die Einstiegsseite per Drag-and-Drop importiert werden kann.
+Damit Sie Ihr Einstiegsseitendesign importieren können, müssen Sie eine Importtool-Seite erstellen. Dies ist z. B. unter einer Kampagne möglich. Mit der Vorlage „Importtool-Seite“ können Sie Ihre komplette HTML-Einstiegsseite importieren. Die Seite enthält ein Dropdown-Feld, in das das Designpaket der Landingpage per Drag &amp; Drop importiert werden kann.
 
 >[!NOTE]
 >
 >Standardmäßig kann eine Import-Tool-Seite nur unter Kampagnen erstellt werden. Sie können diese Vorlage jedoch auch überlagern, um eine Einstiegsseite unter `/content/mysite` zu erstellen.
 
-So erstellen Sie eine neue Einstiegsseite:
+So erstellen Sie eine neue Landingpage:
 
-1. Wechseln Sie zur **Websites-Konsole**.
-1. Wählen Sie im linken Bereich Ihre Kampagne aus.
+1. Navigieren Sie zu **Websites** Konsole.
+1. Wählen Sie Ihre Kampagne im linken Bereich aus.
 1. Wählen Sie **Neu** aus, um das Fenster **Seite erstellen** zu öffnen.
 1. Wählen Sie die Vorlage **Import-Tool-Seite** aus, fügen Sie einen Titel und optional einen Namen hinzu und klicken Sie auf **Erstellen**.
 
@@ -368,62 +368,62 @@ So erstellen Sie eine neue Einstiegsseite:
 
    Ihre neue Importtool-Seite wird angezeigt.
 
-### Vorbereiten des HTML für den Import {#preparing-the-html-for-import}
+### Vorbereiten der HTML für den Import {#preparing-the-html-for-import}
 
-Vor dem Import des Designpakets muss das HTML vorbereitet werden. Weitere Informationen finden Sie unter [Erweitern und Konfigurieren des Design-Importtools](/help/sites-administering/extending-the-design-importer-for-landingpages.md).
+Vor dem Import des Designpakets muss das HTML vorbereitet werden. Siehe [Erweitern und Konfigurieren des Design-Imports](/help/sites-administering/extending-the-design-importer-for-landingpages.md) für weitere Informationen.
 
 ### Importieren des Designpakets {#importing-the-design-package}
 
-Wenn Sie eine Importtool-Seite erstellt haben, können Sie ein Designpaket importieren. Details zum Erstellen des Designpakets und der empfohlenen Struktur werden unter [Erweitern und Konfigurieren des Design Importers](/help/sites-administering/extending-the-design-importer-for-landingpages.md) erläutert.
+Wenn Sie eine Importtool-Seite erstellt haben, können Sie ein Designpaket importieren. Details zum Erstellen des Designpakets und der empfohlenen Struktur werden im Abschnitt [Erweitern und Konfigurieren des Design-Imports](/help/sites-administering/extending-the-design-importer-for-landingpages.md).
 
-Nachdem Sie das Designpaket fertiggestellt haben, können Sie es folgendermaßen in eine Importtool-Seite importieren.
+Wenn Sie das Designpaket fertig haben, beschreiben die folgenden Schritte, wie Sie das Designpaket auf eine Importtool-Seite importieren.
 
-1. Öffnen Sie die Importtool-Seite, [die Sie zuvor erstellt haben](#creatingablankcanvaspage).
+1. Öffnen Sie die Importtool-Seite, die Sie [früher erstellt](#creatingablankcanvaspage).
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. Ziehen Sie das Designpaket per Drag-and-Drop auf den Ablagebereich. Beachten Sie, dass die Richtung des Pfeiles sich ändert, wenn ein Paket darüber gezogen wird.
+1. Ziehen Sie das Designpaket per Drag-and-Drop auf den Ablagebereich. Der Pfeil ändert die Richtung, wenn ein Paket darüber gezogen wird.
 1. Als Ergebnis des Drag-and-Drop-Vorgangs sehen Sie Ihre Einstiegsseite anstatt der Importtool-Seite. Ihre HTML-Einstiegsseite wurde erfolgreich importiert.
 
    ![chlimage_1-2-1](assets/chlimage_1-2-1.png)
 
 >[!NOTE]
 >
->Nach dem Importieren wird das Markup aus Sicherheitsgründen bereinigt, um den Import und die Veröffentlichung von ungültigem Markup zu verhindern. Dabei wird davon ausgegangen, dass sämtliches reines HTML-Markup und alle anderen Elemente Wie Inline-SVG oder Webkomponenten herausgefiltert werden.
+>Nach dem Importieren wird das Markup aus Sicherheitsgründen bereinigt, um den Import und die Veröffentlichung von ungültigem Markup zu verhindern. Dabei wird davon ausgegangen, dass das reine HTML-Markup und alle anderen Elementformen wie Inline-SVG oder Webkomponenten herausgefiltert werden.
 
 >[!NOTE]
 >
->Wenn Sie Probleme beim Importieren des Designpakets haben, finden Sie weitere Informationen unter [Fehlerbehebung](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
+>Wenn Sie Probleme beim Importieren des Designpakets haben, lesen Sie [Fehlerbehebung](/help/sites-administering/extending-the-design-importer-for-landingpages.md#troubleshooting).
 
-## Arbeiten mit Einstiegsseiten {#working-with-landing-pages}
+## Arbeiten mit Landingpages {#working-with-landing-pages}
 
-Das Design und die Assets für eine Einstiegsseite werden im Allgemeinen von einem Designer, häufig in einer Agentur, in branchenüblichen Tools wie Adobe Photoshop oder Adobe Dreamweaver erstellt. Wenn das Design vollständig ist, sendet der Designer eine Zip-Datei mit sämtlichen Assets an die Marketing-Abteilung. Der Kontakt in der Marketing-Abteilung ist dann für das Ablegen der Zip-Datei in AEM und die Veröffentlichung des Inhalts verantwortlich.
+Das Design und die Assets für eine Einstiegsseite werden im Allgemeinen von einem Designer, häufig in einer Agentur, in branchenüblichen Tools wie Adobe Photoshop oder Adobe Dreamweaver erstellt. Wenn das Design vollständig ist, sendet der Designer eine Zip-Datei mit sämtlichen Assets an die Marketing-Abteilung. Der Kontakt im Marketing ist dann dafür verantwortlich, die ZIP-Datei in AEM abzulegen und den Inhalt zu veröffentlichen.
 
-Außerdem muss der Designer unter Umständen nach dem Import Veränderungen an der Einstiegsseite vornehmen, indem er Inhalte bearbeitet oder löscht und die Aktionsaufruf-Komponenten konfiguriert. Schließlich möchte der Marketing-Experte eine Vorschau der Einstiegsseite anzeigen und die Kampagne dann aktivieren, um sicherzustellen, dass die Einstiegsseite darin veröffentlicht ist.
+Außerdem muss der Designer unter Umständen nach dem Import Veränderungen an der Einstiegsseite vornehmen, indem er Inhalte bearbeitet oder löscht und die Aktionsaufruf-Komponenten konfiguriert. Schließlich möchte der Marketing-Experte die Landingpage in der Vorschau ansehen und dann die Kampagne aktivieren, um sicherzustellen, dass die Landingpage veröffentlicht wird.
 
-In diesem Abschnitt werden folgende Vorgänge beschrieben:
+In diesem Abschnitt werden die folgenden Schritte beschrieben:
 
-* Löschen einer Einstiegsseite
+* Landingpage löschen
 * Herunterladen des Designpakets
-* Anzeigen wichtiger Informationen
-* Zurücksetzen einer Einstiegsseite
+* Importinformationen anzeigen
+* Zurücksetzen einer Landingpage
 * [Konfigurieren der CTA-Komponenten und Hinzufügen von Inhalt zur Seite](#call-to-action-cta)
-* Vorschau der Einstiegsseite anzeigen
-* Aktivieren/Veröffentlichen der Einstiegsseite
+* Landingpage-Vorschau
+* Landingpage aktivieren/publizieren
 
-Wenn Sie das Designpaket importieren, stehen die Optionen **Design löschen** und **Importierte ZIP-Datei herunterladen** im Einstellungsmenü der Seite zur Verfügung:
+Wenn Sie das Designpaket importieren, **Design löschen** und **Importierte Zip herunterladen** sind im Einstellungsmenü der Seite verfügbar:
 
 ![chlimage_1-3-1](assets/chlimage_1-3-1.png)
 
 ### Herunterladen des importierten Designpakets {#downloading-the-imported-design-package}
 
-Beim Herunterladen der Zip-Datei können Sie aufzeichnen, welche Zip-Datei mit einer bestimmten Einstiegsseite importiert wurde. Beachten Sie, dass an einer Seite vorgenommene Änderungen nicht der Zip-Datei hinzugefügt werden.
+Beim Herunterladen der Zip-Datei können Sie aufzeichnen, welche Zip-Datei mit einer bestimmten Einstiegsseite importiert wurde. Beachten Sie, dass auf einer Seite vorgenommene Änderungen nicht der ZIP-Datei hinzugefügt werden.
 
-Klicken Sie zum Herunterladen des importierten Designpakets in der Symbolleiste der Einstiegsseite auf **ZIP-Datei herunterladen**.
+Um das importierte Designpaket herunterzuladen, klicken Sie auf **Zip herunterladen** in der Symbolleiste der Einstiegsseite.
 
-### Anzeigen wichtiger Informationen {#viewing-import-information}
+### Importinformationen anzeigen {#viewing-import-information}
 
-Sie können zu jedem Zeitpunkt Informationen zum letzten Import anzeigen, indem Sie in der klassischen Benutzeroberfläche oben auf der Einstiegsseite auf das blaue Ausrufezeichen klicken.
+Sie können jederzeit Informationen zum letzten Import anzeigen, indem Sie auf das blaue Ausrufezeichen oben auf der Landingpage in der klassischen Benutzeroberfläche klicken.
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
@@ -441,26 +441,26 @@ Wenn Sie die Einstiegsseite entfernen, können Sie die Inhaltsänderungen lösch
 >
 >Wenn Sie sich entscheiden, sämtliche Inhaltsänderungen zu löschen, gehen sämtliche Änderungen, die Sie an der importierten Einstiegsseite vorgenommen haben, sowie sämtliche Seiteneigenschaften verloren, wenn Sie auf **Entfernen** klicken.
 
-### Bearbeiten und Hinzufügen von Komponenten auf einer Einstiegsseite {#modifying-and-adding-components-on-a-landing-page}
+### Ändern und Hinzufügen von Komponenten auf einer Landingpage {#modifying-and-adding-components-on-a-landing-page}
 
-Um Komponenten auf der Einstiegsseite zu bearbeiten, doppelklicken Sie darauf, um sie zu öffnen, und bearbeiten Sie sie wie jede andere Komponente.
+Um Komponenten auf der Landingpage zu ändern, doppelklicken Sie darauf, um sie zu öffnen und wie jede andere Komponente zu bearbeiten.
 
-Sie können Komponenten per Drag-and-Drop auf der Einstiegsseite hinzufügen – entweder aus dem Sidekick in der klassischen Benutzeroberfläche oder aus der Komponentenseite in der Touch-optimierten Benutzeroberfläche – und diese bearbeiten.
+Um Komponenten zur Landingpage hinzuzufügen, ziehen Sie Komponenten per Drag-and-Drop auf die Landingpage - entweder aus dem Sidekick in der klassischen Benutzeroberfläche oder aus dem Bereich Komponenten in der Touch-optimierten Benutzeroberfläche - und bearbeiten Sie sie entsprechend.
 
 >[!NOTE]
 >
->Wenn eine Komponente auf der Einstiegsseite nicht bearbeitet werden kann, müssen Sie die ZIP-Datei erneut importieren, nachdem Sie die [HTML-Datei bearbeitet haben.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Dies bedeutet, dass die nicht bearbeitbaren Teile während des Imports nicht in AEM-Komponenten konvertiert wurden.
+>Wenn eine Komponente auf der Landingpage nicht bearbeitet werden kann, müssen Sie die ZIP-Datei erneut importieren, nachdem [Ändern der HTML-Datei.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Das bedeutet, dass die nicht bearbeitbaren Teile während des Imports nicht in AEM Komponenten konvertiert wurden.
 
-### Löschen einer Einstiegsseite {#deleting-a-landing-page}
+### Landingpage löschen {#deleting-a-landing-page}
 
-Einstiegsseiten werden genau wie normale AEM-Seiten gelöscht.
+Das Löschen einer Landingpage entspricht dem Löschen einer normalen AEM.
 
-Der einzige Unterschied liegt darin, dass Sie bei Löschen einer Desktop-Einstiegsseite auch die entsprechende mobile Einstiegsseite (sofern vorhanden) löschen, nicht jedoch umgekehrt.
+Die einzige Ausnahme besteht darin, dass beim Löschen einer Desktop-Landingpage auch die entsprechende mobile Landingpage gelöscht wird (sofern vorhanden), nicht aber umgekehrt.
 
-### Veröffentlichen einer Einstiegsseite {#publishing-a-landing-page}
+### Landingpage veröffentlichen {#publishing-a-landing-page}
 
 Sie können die Einstiegsseite und sämtliche abhängigen Elemente genau wie eine normale Seite veröffentlichen.
 
 >[!NOTE]
 >
->Beim Veröffentlichen einer Desktop-Einstiegsseite wird auch die entsprechende mobile Version veröffentlicht (sofern vorhanden). Wenn Sie eine mobile Einstiegsseite veröffentlichen, wird die Desktop-Version jedoch nicht veröffentlicht.
+>Beim Veröffentlichen einer Desktop-Einstiegsseite wird auch die entsprechende mobile Version veröffentlicht (sofern vorhanden). Bei der Veröffentlichung einer mobilen Landingpage wird die Desktop-Version jedoch nicht veröffentlicht.
