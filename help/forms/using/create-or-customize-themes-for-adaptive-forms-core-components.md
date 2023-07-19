@@ -8,17 +8,15 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
+source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
 workflow-type: tm+mt
-source-wordcount: '1988'
-ht-degree: 8%
+source-wordcount: '1968'
+ht-degree: 9%
 
 ---
 
 
 # Erstellen oder Anpassen eines Designs für ein adaptives Formular {#introduction-to-theme}
-
-<span class="preview"> Adobe empfiehlt die Verwendung von Kernkomponenten für [Adaptive Forms zu einer AEM Sites-Seite hinzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) oder [eigenständige adaptive Forms erstellen](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -290,6 +288,7 @@ Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 1. Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
 1. Wählen Sie eine Vorlage für adaptive Forms-Kernkomponenten aus und klicken Sie auf **Nächste**. Die **Eigenschaften hinzufügen** erscheint
 1. Geben Sie die **Name** für Ihr adaptives Formular.
+
 
    >[!NOTE]
    >
