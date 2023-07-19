@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
+source-git-commit: a5d38ef6b3281992fd9ac3121cdb6c998631b205
 workflow-type: tm+mt
-source-wordcount: '1968'
+source-wordcount: '1961'
 ht-degree: 9%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 9%
 
 In AEM Forms 6.5 ist ein Design eine AEM Client-Bibliothek, mit der Sie die Stile (Erscheinungsbild) für ein adaptives Formular definieren. Zu einem Design gehören Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Ein Design wird unabhängig voneinander ohne Verweis auf ein adaptives Formular verwaltet und kann über mehrere adaptive Forms hinweg wiederverwendet werden.
 
-## Verfügbare Designs {#available-standard-theme}
+## Verfügbare Designs {#available-theme}
 
 AEM Umgebung 6.5 bietet die folgenden aufgelisteten Designs für Kernkomponenten-basierte adaptive Forms:
 
@@ -51,13 +51,13 @@ Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (
 
 ## Erstellen von Designs
 
-AEM Forms 6.5 bietet die folgenden Standardthemen für Kernkomponenten-basierte adaptive Forms.
+AEM Forms 6.5 bietet die folgenden aufgelisteten Designs für Kernkomponenten-basierte adaptive Forms.
 
 * [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
-Sie können [Anpassen dieser Standarddesigns, um ein Design zu erstellen](#customize-a-theme-core-components).
+Sie können [Anpassen dieser Designs, um ein Design zu erstellen](#customize-a-theme-core-components).
 
 ## Anpassen eines Designs {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -92,7 +92,7 @@ Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Person
 
 Das Erstellen oder Anpassen eines Designs ist ein mehrstufiger Prozess. Führen Sie die Schritte in der angegebenen Reihenfolge aus, um das Design zu erstellen/anzupassen:
 
-1. [Klonen eines Standarddesigns](#clone-git-repo-of-theme)
+1. [Klonen eines Designs](#clone-git-repo-of-theme)
 1. [Anpassen der Darstellung des Designs](#customize-the-theme)
 1. [Design für lokale Bereitstellung bereitstellen](#generate-the-clientlib)
 1. [Bereitstellen des Designs in einer lokalen Umgebung](#deploy-the-theme-on-a-local-environment)
@@ -102,17 +102,17 @@ Das Erstellen oder Anpassen eines Designs ist ein mehrstufiger Prozess. Führen 
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
 -->
 
-Die im Dokument bereitgestellten Beispiele basieren auf dem **Arbeitsfläche** -Design, Sie können jedoch jedes Standarddesign klonen und es mit denselben Anweisungen anpassen. Diese Anweisungen gelten für jedes Thema, sodass Sie Designs entsprechend Ihren spezifischen Anforderungen ändern können.
+Die im Dokument bereitgestellten Beispiele basieren auf dem **Arbeitsfläche** -Design, Sie können jedoch jedes Design klonen und es mit denselben Anweisungen anpassen. Diese Anweisungen gelten für jedes Thema, sodass Sie Designs entsprechend Ihren spezifischen Anforderungen ändern können.
 
 #### 1. Klonen Sie das Git-Repository des Designs {#clone-git-repo-of-theme}
 
-Um ein Standarddesign für auf Kernkomponenten basierende adaptive Forms zu klonen, wählen Sie eines der folgenden Standardthemen aus:
+Um ein Design für die auf Kernkomponenten basierende adaptive Forms zu klonen, wählen Sie eines der folgenden Designs:
 
 * [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
-Führen Sie die folgenden Anweisungen aus, um ein Standarddesign zu klonen:
+Führen Sie die folgenden Anweisungen aus, um ein Design zu klonen:
 
 1. Öffnen Sie die Eingabeaufforderung oder das Terminal-Fenster in Ihrer lokalen Entwicklungsumgebung.
 
