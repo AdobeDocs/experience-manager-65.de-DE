@@ -8,26 +8,30 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '2072'
-ht-degree: 11%
+source-wordcount: '1988'
+ht-degree: 8%
 
 ---
 
 
-# Einführung in das Design {#introduction-to-theme}
+# Erstellen oder Anpassen eines Designs für ein adaptives Formular {#introduction-to-theme}
+
+<span class="preview"> Adobe empfiehlt die Verwendung von Kernkomponenten für [Adaptive Forms zu einer AEM Sites-Seite hinzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) oder [eigenständige adaptive Forms erstellen](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
 | AEM 6.5 | Dieser Artikel |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 
+**Gilt für:** ✅ Kernkomponenten des adaptiven Formulars ❎ [Foundation-Komponenten für adaptive Formulare](/help/forms/using/themes.md).
+
 In AEM Forms 6.5 ist ein Design eine AEM Client-Bibliothek, mit der Sie die Stile (Erscheinungsbild) für ein adaptives Formular definieren. Zu einem Design gehören Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Ein Design wird unabhängig voneinander ohne Verweis auf ein adaptives Formular verwaltet und kann über mehrere adaptive Forms hinweg wiederverwendet werden.
 
-## Verfügbare Referenzthemen {#available-reference-theme}
+## Verfügbare Designs {#available-standard-theme}
 
-AEM Umgebung 6.5 bietet die folgenden aufgelisteten Referenzthemen für Kernkomponenten-basierte adaptive Forms:
+AEM Umgebung 6.5 bietet die folgenden aufgelisteten Designs für Kernkomponenten-basierte adaptive Forms:
 
 * [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
@@ -49,13 +53,13 @@ Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (
 
 ## Erstellen von Designs
 
-AEM Forms 6.5 bietet die unten aufgeführten Referenzthemen für Kernkomponenten-basierte adaptive Forms.
+AEM Forms 6.5 bietet die folgenden Standardthemen für Kernkomponenten-basierte adaptive Forms.
 
 * [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
-Sie können [Anpassen dieser Referenzdesigns, um ein Design zu erstellen](#customize-a-theme-core-components).
+Sie können [Anpassen dieser Standarddesigns, um ein Design zu erstellen](#customize-a-theme-core-components).
 
 ## Anpassen eines Designs {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -90,26 +94,27 @@ Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Person
 
 Das Erstellen oder Anpassen eines Designs ist ein mehrstufiger Prozess. Führen Sie die Schritte in der angegebenen Reihenfolge aus, um das Design zu erstellen/anzupassen:
 
-1. [Klonen eines Referenzthemas](#clone-git-repo-of-theme)
+1. [Klonen eines Standarddesigns](#clone-git-repo-of-theme)
 1. [Anpassen der Darstellung des Designs](#customize-the-theme)
 1. [Design für lokale Bereitstellung bereitstellen](#generate-the-clientlib)
-1. [Bereitstellen des Designs in einer lokalen Testumgebung](#deploy-the-theme-on-a-local-testing-environment)
-1. [Testen des Designs mit einem lokalen adaptiven Formular](#test-the-theme-with-a-local-adaptive-form)
-1. Bereitstellen des Designs in der Produktionsumgebung
+1. [Bereitstellen des Designs in einer lokalen Umgebung](#deploy-the-theme-on-a-local-environment)
+1. [Bereitstellen des Designs in der Produktionsumgebung](#5-deploy-a-theme-on-your-production-environment)
 
-![Workflow für Designanpassung](/help/forms/using/assets/custom-theme-steps.png)
+<!--
+ ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
+-->
 
-Die im Dokument bereitgestellten Beispiele basieren auf dem **Arbeitsfläche** -Design, Sie können jedoch jedes Referenzthema klonen und es mit denselben Anweisungen anpassen. Diese Anweisungen gelten für jedes Thema, sodass Sie Designs entsprechend Ihren spezifischen Anforderungen ändern können.
+Die im Dokument bereitgestellten Beispiele basieren auf dem **Arbeitsfläche** -Design, Sie können jedoch jedes Standarddesign klonen und es mit denselben Anweisungen anpassen. Diese Anweisungen gelten für jedes Thema, sodass Sie Designs entsprechend Ihren spezifischen Anforderungen ändern können.
 
 #### 1. Klonen Sie das Git-Repository des Designs {#clone-git-repo-of-theme}
 
-Um ein Referenzthema für Kernkomponenten-basierte adaptive Forms zu klonen, wählen Sie eines der folgenden Referenzthemen:
+Um ein Standarddesign für auf Kernkomponenten basierende adaptive Forms zu klonen, wählen Sie eines der folgenden Standardthemen aus:
 
 * [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
-Führen Sie die folgenden Anweisungen aus, um ein Referenzthema zu klonen:
+Führen Sie die folgenden Anweisungen aus, um ein Standarddesign zu klonen:
 
 1. Öffnen Sie die Eingabeaufforderung oder das Terminal-Fenster in Ihrer lokalen Entwicklungsumgebung.
 
@@ -206,7 +211,7 @@ Um ein Design in einer AEM-Instanz bereitzustellen, muss es in eine Client-Bibli
 
    ![Client-Bibliotheksspeicherort](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Bereitstellen des Designs in einer lokalen Testumgebung {#deploy-the-theme-on-a-local-testing-environment}
+#### 4. Bereitstellen des Designs in einer lokalen Umgebung {#deploy-the-theme-on-a-local-environment}
 
 Gehen Sie wie folgt vor, um das Design in Ihrer lokalen Entwicklungs- oder Testumgebung bereitzustellen:
 
@@ -222,38 +227,40 @@ Gehen Sie wie folgt vor, um das Design in Ihrer lokalen Entwicklungs- oder Testu
 
    ![Client-Bibliotheks-Build](/help/forms/using/assets/mvndeploy.png)
 
-#### 5. Testen des Designs mit einem lokalen adaptiven Formular {#test-the-theme-with-a-local-adaptive-form}
+<!--
 
-So wenden Sie das benutzerdefinierte Design mit einem adaptiven Formular an und testen es:
+#### 5. Test the theme with a local Adaptive Form {#test-the-theme-with-a-local-adaptive-form}
 
-**Anwenden eines Designs beim Erstellen eines adaptiven Formulars**
+To apply and test the customized theme with an Adaptive Form:
 
-1. Melden Sie sich bei Ihrer AEM Forms-Autoreninstanz an.
+**Apply theme while creating an Adaptive Form**
 
-1. Tippen Sie auf **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**. 
+1. Log in to your AEM Forms author instance. 
 
-1. Klicken Sie auf **Erstellen** > **Adaptive Formulare**. Der Assistent zum Erstellen des adaptiven Formulars wird geöffnet.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. Wählen Sie die Kernkomponentenvorlage auf der Registerkarte **Quelle**.
-1. Wählen Sie das Design im **Stil** Registerkarte.
-1. Klicken Sie auf **Erstellen**.
+1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
-Ein adaptives Formular mit dem ausgewählten Design wird erstellt.
+1. Select the core component template in the **Source** tab.
+1. Select the theme in the **Style** tab.
+1. Click **Create**.
 
-**Anwenden eines Designs auf ein vorhandenes adaptives Formular**
+An Adaptive Form with the selected theme is created. 
 
-1. Melden Sie sich bei Ihrer AEM Forms-Autoreninstanz an.
+**Apply theme to an existing Adaptive Form**
 
-1. Tippen Sie auf **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**. 
+1. Log in to your AEM Forms author instance. 
 
-1. Wählen Sie ein adaptives Formular aus und klicken Sie auf Eigenschaften.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. Für **Design-Client-Bibliothek** auswählen, wählen Sie das Design aus.
+1. Select an Adaptive Form and click Properties. 
 
-1. Klicken Sie auf **Speichern und schließen**.
+1. For the **Theme Client Library** option, select the theme. 
 
-Das ausgewählte Design wird auf das adaptive Formular angewendet.
+1. Click **Save & Close**.
 
+The selected theme is applied to the Adaptive Form. 
+-->
 
 #### 5. Bereitstellen eines Designs in Ihrer Produktionsumgebung {#deploy-theme}
 
@@ -278,14 +285,17 @@ Nachdem das Paket installiert wurde, ist das Design zur Auswahl verfügbar.
 
 Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 
-1. Melden Sie sich bei Ihrer AEM Forms-Autoreninstanz an.
+1. Melden Sie sich bei Ihrer lokalen AEM-Autoreninstanz an.
+1. Geben Sie Ihre Anmeldedaten auf der Experience Manager-Anmeldeseite ein. Tippen Sie auf **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**. 
+1. Klicken Sie auf **Erstellen** > **Adaptive Formulare**.
+1. Wählen Sie eine Vorlage für adaptive Forms-Kernkomponenten aus und klicken Sie auf **Nächste**. Die **Eigenschaften hinzufügen** erscheint
+1. Geben Sie die **Name** für Ihr adaptives Formular.
 
-1. Tippen Sie auf **Adobe Experience Manager** > **Formulare** > **Formulare und Dokumente**. 
+   >[!NOTE]
+   >
+   > * Standardmäßig wird die `adaptiveform.theme.canvas3` Design ausgewählt ist.
+   > * Sie können ein anderes Design als das **Design-Client-Bibliothek** Dropdown-Menü.
 
-1. Klicken Sie auf **Erstellen** > **Adaptive Formulare**. Der Assistent zum Erstellen des adaptiven Formulars wird geöffnet.
-
-1. Wählen Sie die Kernkomponentenvorlage auf der Registerkarte **Quelle**.
-1. Wählen Sie das Design im **Stil** Registerkarte.
 1. Klicken Sie auf **Erstellen**.
 
 Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Formulare verwendet, um beim Erstellen eines adaptiven Formulars Stile zu definieren.

@@ -8,15 +8,24 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '858'
-ht-degree: 6%
+source-wordcount: '911'
+ht-degree: 7%
 
 ---
 
 
 # Aktivieren der adaptiven Forms-Kernkomponenten in AEM 6.5 Forms {#enable-adaptive-forms-core-components}
+
+<span class="preview"> Adobe empfiehlt die Verwendung von Kernkomponenten für [Adaptive Forms zu einer AEM Sites-Seite hinzufügen](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) oder [eigenständige adaptive Forms erstellen](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
+
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM 6.5 | Dieser Artikel |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+
+**Gilt für:** ✅ Kernkomponenten für adaptive Formulare ❎ Foundation-Komponenten für adaptive Formulare.
 
 Durch die Aktivierung der adaptiven Forms-Kernkomponenten können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von [Auf Kernkomponenten basierende adaptive Forms](create-an-adaptive-form-core-components.md) und [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de) aus Ihrer AEM 6.5 Forms-Umgebung.
 
