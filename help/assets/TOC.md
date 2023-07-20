@@ -6,8 +6,10 @@ audience: end-user
 user-guide-title: Assets-Anleitung
 breadcrumb-title: Assets-Anleitung
 user-guide-description: Erstellen, verwalten, verarbeiten und verteilen Sie digitale Assets.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: ht
+role: User
+feature: Asset Management
+source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 100%
 
@@ -17,7 +19,7 @@ ht-degree: 100%
 # Assets-Anleitung {#assets}
 
 + [[!DNL Assets]-Benutzerhandbuch](home.md)
-+ [Versionshinweise zu [!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=de)
++ Versionshinweise zu [[!DNL Experience Manager]  6.5 Assets](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/assets.html?lang=de)
 + [Über DAM](assets.md)
 + [Best Practices für Assets](best-practices-for-assets.md)
 + [Barrierefreiheit in  [!DNL Assets]](accessibility.md)
