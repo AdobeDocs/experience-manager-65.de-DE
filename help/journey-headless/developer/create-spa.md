@@ -2,10 +2,10 @@
 title: Optional - Erstellen von Einzelseiten-Apps (SPA) mit Adobe Experience Manager
 description: In dieser optionalen Fortsetzung der Adobe Experience Manager (AEM) Headless-Entwickler-Journey erfahren Sie, wie AEM Headless-Bereitstellung mit herkömmlichen Full-Stack-CMS-Funktionen kombinieren und wie Sie bearbeitbare SPA mit AEM Editor-Framework erstellen können.
 exl-id: 91eadda2-b881-4e4a-867f-8c5c54e8f8b4
-source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '1267'
-ht-degree: 57%
+source-wordcount: '1264'
+ht-degree: 54%
 
 ---
 
@@ -24,9 +24,9 @@ An dieser Stelle sollten Sie die gesamte [AEM Headless-Entwickler-Tour](overview
 * Abrufen und Aktualisieren von Headless-Inhalten in AEM
 * Live-Schaltung mit einem AEM Headless-Projekt
 
-Sie haben inzwischen Ihr ersten AEM Headless-Projekt live geschaltet bzw. verfügen über die entsprechenden Kenntnisse. Herzlichen Glückwunsch!
+Also sind Sie jetzt entweder mit Ihrem ersten AEM Headless-Projekt live gegangen oder haben das Wissen, dies zu tun. Herzlichen Glückwunsch!
 
-Warum lesen Sie also diese optionale Fortsetzung der Tour? Wahrscheinlich erinnern Sie sich daran in der [Erste Schritte](getting-started.md#integration-levels) Wir haben kurz besprochen, wie AEM nicht nur Headless-Versand und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren. Obwohl es sich hierbei nicht um das traditionelle Headless-Modell handelt, können derartige Hybridmodelle für bestimmten Projekte eine beispiellose Flexibilität bieten.
+Warum lesen Sie also diese optionale Fortsetzung der Tour? Wahrscheinlich erinnern Sie sich daran in der [Erste Schritte](getting-started.md#integration-levels), gab es eine kurze Diskussion darüber, wie AEM nicht nur Headless-Versand und herkömmliche Full-Stack-Modelle unterstützt, sondern auch Hybridmodelle unterstützen kann, die die Vorteile beider Modelle kombinieren. Obwohl es sich hierbei nicht um das traditionelle Headless-Modell handelt, können derartige Hybridmodelle für bestimmten Projekte eine beispiellose Flexibilität bieten.
 
 Dieser Artikel baut auf Ihren Kenntnissen von AEM Headless auf, indem Sie eingehend untersuchen, wie Sie Ihre eigenen Single-Page-Anwendungen (SPA) erstellen können, die in AEM bearbeitbar sind. Auf diese Weise können Sie Inhalte erstellen und sie an einen SPA senden, dieser SPA bleibt jedoch in AEM bearbeitbar.
 
@@ -125,6 +125,6 @@ Im Folgenden finden Sie einige zusätzliche Ressourcen, die näher auf einige de
 * [Entwickeln von SPAs für AEM](/help/sites-developing/spa-architecture.md) – Orientierungshilfe für die Entwicklung von SPAs für AEM
 * [SPA-Editor – Überblick](/help/sites-developing/spa-overview.md) – Details zur Funktionsweise des SPA-Editors
 * [Serverseitiges Rendering](/help/sites-developing/spa-ssr.md) - So konfigurieren Sie SSR für AEM SPA
-* [Single Page Applications (SPAs) und Server-seitiges Rendering](/help/sites-developing/spa-reference-materials.md) – JavaScript-API-Referenzen und Links zu den Open-Source-Projekten in GitHub für SPAs in AEM
+* [SPA](/help/sites-developing/spa-reference-materials.md) - JavaScript-API-Referenzen und -Links zu den Open-Source-AEM SPA GitHub-Projekten
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) –Anleitung zur Erstellung von Inhaltsfragmenten
 * Der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) ist eine Maven-Vorlage, anhand derer ein minimales, auf Best Practices basierendes Adobe Experience Manager (AEM)-Projekt als Ausgangspunkt für Ihre Website erstellt wird.

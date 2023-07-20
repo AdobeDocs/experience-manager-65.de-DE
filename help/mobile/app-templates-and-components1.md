@@ -1,18 +1,14 @@
 ---
 title: App-Vorlagen und -Komponenten
-seo-title: App Templates and Components
 description: Auf dieser Seite erfahren Sie mehr über App-Vorlagen und -Komponenten. Es enthält detaillierte Informationen zur Struktur von Vorlagen.
-seo-description: Follow this page to learn about App Templates and Components. It provides detailed information on the structure of templates.
-uuid: ba2fd91b-de5a-4f39-a976-5455f9983669
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 exl-id: 58d95325-7cb1-4204-842d-17add70e1fbf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '408'
 ht-degree: 9%
 
 ---
@@ -32,7 +28,7 @@ Jede Vorlage stellt Ihnen eine Auswahl an Komponenten zur Verfügung, die Sie ve
 
 >[!NOTE]
 >
->Informationen zum Entwickeln Ihrer AEM-Anwendung mithilfe von CRXDE Lite finden Sie unter [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Informationen zum Entwickeln Ihrer Adobe Experience Manager (AEM)-Anwendung mithilfe von CRXDE Lite finden Sie unter [Entwickeln mit CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
 Eine Vorlage ist die Basis einer Seite.
 
@@ -54,7 +50,7 @@ Verschiedene Eigenschaften können festgelegt werden, insbesondere:
 * **jcr:title** - Titel der Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
 * **jcr:description** - Beschreibung der Vorlage; wird beim Erstellen einer Seite im Dialogfeld angezeigt.
 
-Dieser Knoten enthält *a jcr:content (cq:PageContent)* Knoten, der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird; diese Referenz verwendet, *sling:resourceType*, die Komponente, die zum Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden soll.
+Dieser Knoten enthält *a jcr:content (cq:PageContent)* -Knoten, der als Grundlage für den Inhaltsknoten der resultierenden Seiten verwendet wird. Diese verweisen auf die Verwendung von *sling:resourceType*, die Komponente, die zum Rendern des tatsächlichen Inhalts einer neuen Seite verwendet werden soll.
 
 >[!NOTE]
 >
