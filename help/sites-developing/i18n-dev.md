@@ -1,36 +1,32 @@
 ---
 title: Internationalisierung von UI-Zeichenfolgen
-seo-title: Internationalizing UI Strings
-description: Mit Java- und JavaScript-APIs können Sie Zeichenfolgen internationalisieren
-seo-description: Java and JavaScript APIs enable you to internationalize strings
-uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
+description: Java&trade; und JavaScript-APIs ermöglichen es Ihnen, Zeichenfolgen zu internationalisieren.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '1100'
-ht-degree: 45%
+source-wordcount: '1097'
+ht-degree: 35%
 
 ---
 
 # Internationalisierung von UI-Zeichenfolgen {#internationalizing-ui-strings}
 
-Mit Java- und JavaScript-APIs können Sie Zeichenfolgen in den folgenden Ressourcentypen internationalisieren:
+Mit Java™- und JavaScript-APIs können Sie Zeichenfolgen in den folgenden Ressourcentypen internationalisieren:
 
-* Java-Quelldateien.
+* Java™-Quelldateien.
 * JSP-Skripte.
 * JavaScript in clientseitigen Bibliotheken oder in der Seitenquelle.
 * JCR-Knoteneigenschaftswerte, die in Dialogfeldern und Komponentenkonfigurationseigenschaften verwendet werden.
 
 Einen Überblick über den Internationalisierungs- und Lokalisierungsprozess finden Sie unter [Internationalisierung von Komponenten](/help/sites-developing/i18n.md).
 
-## Internationalisieren von Zeichenfolgen in Java- und JSP-Code {#internationalizing-strings-in-java-and-jsp-code}
+## Internationalisieren von Zeichenfolgen in Java™- und JSP-Code {#internationalizing-strings-in-java-and-jsp-code}
 
-Mit dem Java-Paket `com.day.cq.i18n` können Sie lokalisierte Zeichenfolgen in Ihrer Benutzeroberfläche anzeigen. Die `I18n`-Klasse stellt die `get`-Methode zur Verfügung, die lokalisierte Zeichenfolgen aus dem AEM-Wörterbuch abruft. Der einzige erforderliche Parameter der `get`-Methode ist das Literal des Zeichenfolgen in englischer Sprache. Englisch ist die standardmäßige Sprache der UI. Im folgenden Beispiel wird das Wort `Search` lokalisiert:
+Die `com.day.cq.i18n` Mit dem Java™-Paket können Sie lokalisierte Zeichenfolgen in Ihrer Benutzeroberfläche anzeigen. Die `I18n` -Klasse stellt die `get` -Methode, die lokalisierte Zeichenfolgen aus dem Adobe Experience Manager (AEM)-Wörterbuch abruft. Der einzige erforderliche Parameter der `get`-Methode ist das Literal des Zeichenfolgen in englischer Sprache. Englisch ist die Standardsprache für die Benutzeroberfläche. Im folgenden Beispiel wird das Wort `Search` lokalisiert:
 
 `i18n.get("Search");`
 
@@ -48,7 +44,7 @@ Es gibt zwei Möglichkeiten, die Sprache zu bestimmen, die der Benutzer bevorzug
 
 Die Spracheigenschaft des Benutzerkontos ist die bevorzugte Methode, da sie zuverlässiger ist. Der Benutzer muss jedoch angemeldet sein, um diese Methode verwenden zu können.
 
-#### I18n-Java-Objekt erstellen {#creating-the-i-n-java-object}
+#### I18n Java™-Objekt erstellen {#creating-the-i-n-java-object}
 
 Die I18n-Klasse stellt zwei Konstruktoren bereit. Wie Sie die bevorzugte Sprache des Benutzers bestimmen, bestimmt den zu verwendenden Konstruktor.
 
@@ -60,7 +56,7 @@ I18n i18n = new I18n(slingRequest);
 
 Der Konstruktor verwendet `SlingHTTPRequest`, um die Spracheinstellung des Benutzers abzurufen.
 
-Um mithilfe des Gebietsschemas der Seite die Sprache zu bestimmen, müssen Sie zunächst das ResourceBundle für die Sprache der angeforderten Seite abrufen:
+Um das Gebietsschema der Seite zur Bestimmung der Sprache zu verwenden, rufen Sie zunächst das ResourceBundle für die Sprache der angeforderten Seite ab:
 
 ```java
 Locale pageLang = currentPage.getLanguage(false);
@@ -75,7 +71,7 @@ Verwenden Sie die `get`-Methode des `I18n`-Objekts, um eine Zeichenfolge zu inte
 Das erste Argument der `get`-Methode muss folgende Regeln einhalten:
 
 * Der Wert muss ein Zeichenfolgenliteral sein. Eine Variable des Typs `String` ist nicht zulässig.
-* Das Zeichenfolgenliteral muss in einer einzigen Zeile ausdrücken.
+* Das Zeichenfolgenliteral muss in einer einzigen Zeile ausgedrückt werden.
 * Bei der Zeichenfolge wird zwischen Groß- und Kleinschreibung unterschieden.
 
 ```xml
@@ -94,7 +90,7 @@ i18n.get("Request","A noun, as in a request for a web page");
 
 #### Einschließen von Variablen in lokalisierten Sätzen {#including-variables-in-localized-sentences}
 
-Sie können Variablen in die lokalisierte Zeichenfolge einfügen, um dem Satz Kontextbedeutung zu geben. Ein Beispiel: Nach der Anmeldung bei einer Webanwendung wird auf der Homepage folgende Nachricht angezeigt: „Willkommen zurück, Administrator. Sie haben zwei Nachrichten in Ihrem Posteingang.“ Der Seitenkontext bestimmt den Benutzernamen und die Anzahl der Nachrichten.
+Sie können Variablen in die lokalisierte Zeichenfolge einfügen, um dem Satz Kontextbedeutung zu geben. Ein Beispiel: Nach der Anmeldung bei einer Webanwendung wird auf der Homepage folgende Nachricht angezeigt: „Willkommen zurück, Administrator. Sie haben zwei Nachrichten in Ihrem Posteingang.&quot; Der Seitenkontext bestimmt den Benutzernamen und die Anzahl der Nachrichten.
 
 [Im Wörterbuch](/help/sites-developing/i18n-translator.md#adding-changing-and-removing-strings)festgelegt ist, werden die Variablen in Zeichenfolgen in Klammern als Indizes dargestellt. Geben Sie die Werte der Variablen als Argumente der `get`-Methode an. Die Argumente werden nach dem Übersetzungshinweis platziert und die Indizes entsprechen der Reihenfolge der Argumente:
 
@@ -106,7 +102,7 @@ Die internationalisierte Zeichenfolge und der Übersetzungshinweis müssen genau
 
 #### Verwendung der statischen get-Methode {#using-the-static-get-method}
 
-Die `I18N`-Klasse definiert eine statische `get`-Methode, die sich zur Lokalisierung einer kleinen Anzahl von Zeichenfolgen eignet. Zusätzlich zu den Parametern der `get`-Methode eines Objekts benötigt die statische Methode das Objekt `SlingHttpRequest` oder das `ResourceBundle`, das Sie verwenden, je nachdem, wie Sie die bevorzugte Sprache des Nutzers bestimmen:
+Die `I18N` -Klasse definiert eine statische `get` -Methode, die nützlich ist, wenn Sie einige Zeichenfolgen lokalisieren müssen. Zusätzlich zu den Parametern der `get`-Methode eines Objekts benötigt die statische Methode das Objekt `SlingHttpRequest` oder das `ResourceBundle`, das Sie verwenden, je nachdem, wie Sie die bevorzugte Sprache des Nutzers bestimmen:
 
 * Wenn Sie die Spracheinstellungen des Nutzers verwenden, geben Sie das SlingHttpRequest-Objekt als ersten Parameter an.
 
@@ -117,11 +113,11 @@ Die `I18N`-Klasse definiert eine statische `get`-Methode, die sich zur Lokalisie
 
 ### Internationalisieren von Zeichenfolgen in JavaScript-Code {#internationalizing-strings-in-javascript-code}
 
-Mit der JavaScript-API können Sie Zeichenfolgen auf dem Client lokalisieren. Als [Java und JSP](#internationalizing-strings-in-java-and-jsp-code) -Code, können Sie mit der JavaScript-API zu lokalisierende Zeichenfolgen identifizieren, Lokalisierungshinweise bereitstellen und Variablen in die lokalisierten Zeichenfolgen aufnehmen.
+Mit der JavaScript-API können Sie Zeichenfolgen auf dem Client lokalisieren. Als [Java™ und JSP](#internationalizing-strings-in-java-and-jsp-code) -Code, können Sie mit der JavaScript-API zu lokalisierende Zeichenfolgen identifizieren, Lokalisierungshinweise bereitstellen und Variablen in die lokalisierten Zeichenfolgen aufnehmen.
 
 Die `granite.utils` [Client-Bibliotheksordner](/help/sites-developing/clientlibs.md) stellt die JavaScript-API bereit. Um die API zu verwenden, fügen Sie diesen Client-Bibliotheksordner in Ihre Seite ein. Lokalisierungsfunktionen verwenden den `Granite.I18n`-Namespace.
 
-Bevor Sie lokalisierte Zeichenfolgen darstellen, müssen Sie das Gebietsschema mithilfe der `Granite.I18n.setLocale`-Funktion festlegen. Diese Funktion erfordert den Sprach-Code des Gebietsschemas als Argument:
+Bevor Sie lokalisierte Zeichenfolgen präsentieren, legen Sie das Gebietsschema mit der `Granite.I18n.setLocale` -Funktion. Diese Funktion erfordert den Sprach-Code des Gebietsschemas als Argument:
 
 ```
 Granite.I18n.setLocale("fr");
@@ -140,13 +136,13 @@ Granite.I18n.setLocale("fr");
 Granite.I18n.get("string to localize", [variables], "localization hint");
 ```
 
-Die Funktionsparameter unterscheiden sich von der Java I18n.get -Methode:
+Die Funktionsparameter unterscheiden sich von der Java™ I18n.get -Methode:
 
 * Der erste Parameter ist das zu lokalisierende Zeichenfolgenliteral.
 * Der zweite Parameter ist ein Array von Werten, die in das Zeichenfolgenliteral eingefügt werden sollen.
 * Der dritte Parameter ist der Lokalisierungshinweis.
 
-Im folgenden Beispiel wird JavaScript verwendet, um den &quot;Welcome back Administrator&quot;zu lokalisieren. Sie haben zwei Nachrichten in Ihrem Posteingang.“ Satz:
+Im folgenden Beispiel wird JavaScript verwendet, um den &quot;Welcome back Administrator&quot;zu lokalisieren. Sie haben zwei Nachrichten in Ihrem Posteingang.&quot; Satz:
 
 ```
 Granite.I18n.setLocale("fr");
@@ -166,7 +162,7 @@ Das folgende JSP-Skriptbeispiel ruft die `jcr:title`-Eigenschaft aus dem Reposit
 
 #### Festlegen von Übersetzungshinweisen für JCR-Knoten {#specifying-translation-hints-for-jcr-nodes}
 
-Ähnlich wie [Übersetzungshinweise in der Java-API](#using-translation-hints)können Sie Übersetzungshinweise bereitstellen, um doppelte Zeichenfolgen im Wörterbuch zu unterscheiden. Geben Sie den Übersetzungshinweis als Eigenschaft des Knotens an, der die internationalisierte Eigenschaft enthält. Der Name der Hinweiseigenschaft besteht aus dem Namen der internationalisierten Eigenschaft mit dem Suffix `_commentI18n`:
+Ähnlich wie [Übersetzungshinweise in der Java™-API](#using-translation-hints)können Sie Übersetzungshinweise bereitstellen, um doppelte Zeichenfolgen im Wörterbuch zu unterscheiden. Geben Sie den Übersetzungshinweis als Eigenschaft des Knotens an, der die internationalisierte Eigenschaft enthält. Der Name der hint-Eigenschaft besteht aus dem Namen der internationalisierten Eigenschaft mit dem `_commentI18n` suffix:
 
 `${prop}_commentI18n`
 

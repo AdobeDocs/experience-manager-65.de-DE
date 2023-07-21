@@ -1,25 +1,21 @@
 ---
 title: Editor-Einschränkungen
-seo-title: Editor Limitations
-description: Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
-seo-description: The editor in the touch-enabled UI makes use of overlays to interact with content confined in an iframe. This interaction creates some limitations in both usage of the editor and also for developers.
-uuid: ff524530-3f3a-4c5b-9f94-4aa9aeb9d461
+description: Der Editor in der Touch-optimierten Benutzeroberfläche verwendet Überlagerungen, um mit Inhalten zu interagieren, die in einem iframe enthalten sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: d748decb-a614-4c9e-a502-d6176b720f1a
 exl-id: fd64f5dc-dfff-466b-8cdd-3c24ea1a15c8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '316'
-ht-degree: 100%
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+workflow-type: tm+mt
+source-wordcount: '306'
+ht-degree: 51%
 
 ---
 
 # Editor-Einschränkungen{#editor-limitations}
 
-Der Editor in der Touch-optimierten Benutzeroberfläche nutzt Überlagerungen, um mit dem Inhalt eines iframe zu interagieren. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Auf dieser Seite werden diese Einschränkungen zusammengefasst und, wo möglich, Lösungen bzw. Problemumgehungen zur Verfügung gestellt.
+Der Editor in der Touch-optimierten Benutzeroberfläche verwendet Überlagerungen, um mit Inhalten zu interagieren, die in einem iframe enthalten sind. Diese Interaktion verursacht einige Einschränkungen für die Verwendung des Editors sowie für Entwickler. Diese Seite fasst diese Einschränkungen zusammen und bietet nach Möglichkeit Lösungen oder Umgehungen.
 
 ## Funktionale Einschränkungen {#functional-limitations}
 
@@ -33,7 +29,7 @@ Beim [Bearbeiten einer Seite](/help/sites-authoring/editing-content.md) sind Lin
 
 ### Strukturseiten {#structure-pages}
 
-Seiten dürfen nicht `structure` genannt werden. Seiten mit dem Namen `structure` können im Seiteneditor nicht bearbeitet werden.
+Seiten können nicht benannt werden `structure`. Seiten, die `structure` im Seiteneditor nicht bearbeitbar sind.
 
 ## CSS-Einschränkungen {#css-limitations}
 
@@ -41,17 +37,17 @@ Entwickler sehen sich hinsichtlich der Interaktionen des Editors mit CSS möglic
 
 ### Absolut positionierte Elemente {#absolutely-positioned-elements}
 
-Absolut positionierte Elemente können Probleme bei der Positionierung ihrer Überlagerung verursachen.
+Absolut positionierte Elemente können Probleme bei der Position ihrer Überlagerung verursachen.
 
-* Ist dies der Fall, müssen Sie darauf achten, dass die Abmessungen des absolut positionierten Elements korrekt sind, weil der Editor eine Überlagerung mit den gleichen Abmessungen erstellt.
+* Stellen Sie in diesem Fall sicher, dass die Dimensionen des absolut positionierten Elements korrekt sind, da der Editor eine Überlagerung mit exakt denselben Dimensionen erstellt.
 
 ### vh-Einheiten {#vh-units}
 
-`vh`-Einheiten werden nicht unterstützt, da die iframe-Höhe von AEM automatisch angepasst werden muss.
+`vh` -Einheiten werden nicht unterstützt, da die iframe-Höhe automatisch von Adobe Experience Manager (AEM) angepasst werden muss.
 
 ### Feste Hintergrundbilder {#fixed-background-images}
 
-Feste Hintergrundbilder werden beim Scrollen nicht als fest angezeigt, weil sie in einen iframe eingebettet sind.
+Feste Hintergrundbilder werden beim Scrollen möglicherweise nicht als fest angezeigt, da sie in einen iframe eingebettet sind.
 
 * Wird in der Kopfzeile **Seite als veröffentlicht anzeigen** ausgewählt, wird die Seite korrekt angezeigt.
 
@@ -59,7 +55,7 @@ Feste Hintergrundbilder werden beim Scrollen nicht als fest angezeigt, weil sie 
 
 100 % Höhe wird im Hauptteilelement einer Seite nicht unterstützt.
 
-* Dieses Problem kann umgangen werden, um einen Vollbildhauptteil zu implementieren, indem das Hauptteilelement wie folgt gestreckt wird:
+* Eine Problemumgehung ist möglich, einen Vollbildtext zu implementieren, indem das Hauptteilelement wie folgt &quot;gestreckt&quot;wird:
 
 ```xml
 body {

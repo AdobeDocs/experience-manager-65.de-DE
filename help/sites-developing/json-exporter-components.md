@@ -1,19 +1,15 @@
 ---
 title: Aktivieren eines JSON-Exports für eine Komponente
-seo-title: Enabling JSON Export for a Component
 description: Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basierend auf einem Modeler-Framework zu generieren.
-seo-description: Components can be adapted to generate JSON export of their content based on a modeler framework.
-uuid: d7cc3347-2adb-4ea5-94a4-a847a2e66d28
 contentOwner: User
 content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 exl-id: 6d127e14-767e-46ad-aaeb-0ce9dd14d553
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
-workflow-type: ht
-source-wordcount: '536'
-ht-degree: 100%
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 68%
 
 ---
 
@@ -25,7 +21,7 @@ Komponenten können angepasst werden, um einen JSON-Export ihrer Inhalte basiere
 
 Der JSON-Export basiert auf [Sling-Modellen](https://sling.apache.org/documentation/bundles/models.html) und auf dem Framework des [Sling Model Exporter](https://sling.apache.org/documentation/bundles/models.html#exporter-framework-since-130) (der sich wiederum auf [Jackson-Anmerkungen](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) stützt).
 
-Das bedeutet, dass die Komponente über ein Sling-Modell verfügen muss, wenn JSON exportiert werden soll. Deshalb müssen Sie diese beiden Schritte befolgen, um einen JSON-Export für eine beliebige Komponente zu aktivieren.
+Das bedeutet, dass die Komponente über ein Sling-Modell verfügen muss, wenn sie JSON exportieren muss. Führen Sie daher diese beiden Schritte aus, um den JSON-Export für jede Komponente zu aktivieren.
 
 * [Definieren eines Sling-Modells für die Komponente](/help/sites-developing/json-exporter-components.md#define-a-sling-model-for-the-component)
 * [Kommentieren der Sling-Modell-Oberfläche](#annotate-the-sling-model-interface)
@@ -36,7 +32,7 @@ Zunächst muss ein Sling-Modell für die Komponente definiert werden.
 
 >[!NOTE]
 >
->Ein Beispiel für die Verwendung von Sling-Modellen finden Sie im Artikel [Entwickeln von Sling Model Exportern in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/sling-model-exporter-tutorial-develop.html).
+>Ein Beispiel für die Verwendung von Sling-Modellen finden Sie unter [Entwickeln von Sling Model Exportern in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/development/develop-sling-model-exporter.html?lang=de).
 
 Die Implementierungsklasse des Sling-Modells muss wie folgt kommentiert werden:
 
@@ -52,7 +48,7 @@ Außerdem kann die Sling-Modell-Klasse dadurch in der `ComponentExporter`-Oberfl
 
 >[!NOTE]
 >
->Jackson-Anmerkungen werden in der Regel nicht auf der Ebene der Sling-Modell-Klasse festgelegt, sondern auf der Ebene der Modell-Oberfläche. Damit wird sichergestellt, dass der JSON-Export als Teil der Komponenten-API gewertet wird.
+>Jackson-Anmerkungen werden nicht auf der Ebene der Sling-Modell-Klasse, sondern auf der Ebene der Modell-Oberfläche angegeben. Dadurch soll sichergestellt werden, dass der JSON-Export als Teil der Komponenten-API betrachtet wird.
 
 >[!NOTE]
 >
@@ -70,15 +66,15 @@ In einem solchen Fall muss der `model`-Selektor jedoch der erste Selektor und `.
 
 ## Kommentieren der Sling-Modell-Oberfläche {#annotate-the-sling-model-interface}
 
-Damit sie im JSON Exporter-Framework beachtet wird, sollte die `ComponentExporter`-Oberfläche (oder `ContainerExporter` bei Container-Komponenten) in der Modelloberfläche implementiert werden.
+Um vom JSON Exporter-Framework berücksichtigt zu werden, sollte die Modellschnittstelle die `ComponentExporter` -Schnittstelle (oder `ContainerExporter`, wenn eine Container-Komponente vorhanden ist).
 
 Für die entsprechende Sling-Modell-Oberfläche (`MyComponent`) wird in diesem Fall über [Jackson-Anmerkungen](https://github.com/FasterXML/jackson-annotations/wiki/Jackson-Annotations) definiert, wie sie exportiert (serialisiert) werden soll.
 
-Es müssen die richtigen Anmerkungen für die Modell-Oberfläche angewendet werden, um zu definieren, welche Methoden serialisiert werden sollen. Standardmäßig werden alle Methoden serialisiert, die die gängigen Benennungskonventionen für Abfragemethoden einhalten. Ihre JSON-Eigenschaftsnamen werden dabei naturgemäß von den Namen der Abfragemethode abgeleitet. Um dies zu vermeiden bzw. zu überschreiben, benennen Sie die JSON-Eigenschaft mit `@JsonIgnore` oder `@JsonProperty` um.
+Die Modellschnittstelle muss ordnungsgemäß kommentiert werden, um zu definieren, welche Methoden serialisiert werden sollen. Standardmäßig werden alle Methoden, die die übliche Benennungskonvention für Getter einhalten, serialisiert und leiten ihre JSON-Eigenschaftsnamen von den Getter-Namen aus. Um dies zu vermeiden bzw. zu überschreiben, benennen Sie die JSON-Eigenschaft mit `@JsonIgnore` oder `@JsonProperty` um.
 
 ## Beispiel {#example}
 
-Die Kernkomponenten unterstützen den JSON-Export seit der Version [1.1.0 der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de). Sie können als Referenz verwendet werden.
+Die Kernkomponenten haben seit der Veröffentlichung den JSON-Export unterstützt [1.1.0 der Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) und kann als Referenz verwendet werden.
 
 Ein Beispiel ist die Sling-Modell-Implementierung der Bild-Kernkomponente und deren kommentierte Oberfläche.
 
@@ -91,7 +87,7 @@ Den Code dieser Seite finden Sie auf GitHub.
 
 ## Verwandte Dokumentation {#related-documentation}
 
-Weitere Informationen finden Sie unter:
+Weitere Informationen finden Sie unter folgenden Themen:
 
 * Das [Thema „Inhaltsfragmente“ im Assets-Benutzerhandbuch](https://helpx.adobe.com/de/experience-manager/6-4/assets/user-guide.html?topic=/experience-manager/6-4/assets/morehelp/content-fragments.ug.js)
 

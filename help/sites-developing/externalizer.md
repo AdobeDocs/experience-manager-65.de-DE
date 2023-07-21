@@ -1,30 +1,26 @@
 ---
 title: Externalisieren von URLs
-seo-title: Externalizing URLs
 description: Der Externalizer ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert in eine externe und absolute URL umwandeln können.
-seo-description: The Externalizer is an OSGI service that allows you to programmatically transform a resource path into an external and absolute URL
-uuid: 65bcc352-fc8c-4aa0-82fb-1321a035602d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '501'
-ht-degree: 83%
+source-wordcount: '495'
+ht-degree: 58%
 
 ---
 
 # Externalisieren von URLs{#externalizing-urls}
 
-In AEM **Externalizer** ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert umwandeln können (z. B. `/path/to/my/page`) in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`), indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird.
+In Adobe Experience Manager (AEM) wird die **Externalizer** ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert umwandeln können (z. B. `/path/to/my/page`) in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`), indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird.
 
 Dieser Dienst bietet einen zentralen Ort für die Konfiguration und Erstellung von externen URLs, weil eine Instanz ihre extern sichtbare URL nicht kennen kann, wenn sie hinter einer Web-Layer läuft, und weil manchmal ein Link außerhalb des Anfrageumfangs erstellt werden muss.
 
-Auf dieser Seite wird beschrieben, wie Sie die **Externalizer** und wie Sie ihn verwenden. Weitere Informationen finden Sie im Abschnitt [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+Auf dieser Seite wird beschrieben, wie Sie die **Externalizer** und wie Sie ihn verwenden. Weitere Informationen finden Sie im Abschnitt [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## Konfigurieren des Externalizer-Dienstes {#configuring-the-externalizer-service}
 
@@ -44,16 +40,16 @@ Definieren Sie eine Domain-Zuordnung für den **Externalizer**-Service wie folgt
 
    ![aem-externalizer-01](assets/aem-externalizer-01.png)
 
-1. Definieren einer **Domain**-Zuordnung: Eine Zuordnung besteht aus einem eindeutigen Namen, der im Code verwendet werden kann, um auf die Domain, ein Leerzeichen und die Domain zu verweisen:
+1. Definieren Sie eine **Domänen** mapping: Eine Zuordnung besteht aus einem eindeutigen Namen, der im Code verwendet werden kann, um auf die Domäne, ein Leerzeichen und die Domäne zu verweisen:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
    Dabei gilt:
 
-   * **Schema** ist normalerweise „http“ oder „https“, kann aber auch z. B. „ftp“ sein.
+   * **schema** ist http oder https, kann aber auch ftp sein usw.
 
       * Verwenden Sie bei Bedarf HTTPS, um HTTPS-Links zu erzwingen.
-      * Es wird verwendet, wenn der Client-Code das Schema nicht überschreibt, wenn er die Externalisierung einer URL anfordert.
+      * wird verwendet, wenn der Client-Code das Schema bei der Anforderung der Externalisierung einer URL nicht außer Kraft setzt.
 
    * **Server** ist der Host-Name (kann ein Domain-Name oder eine IP-Adresse sein).
    * **Port** (optional) ist die Portnummer.
@@ -61,7 +57,7 @@ Definieren Sie eine Domain-Zuordnung für den **Externalizer**-Service wie folgt
 
    Beispiel: `production https://my.production.instance`
 
-   Die folgenden Zuordnungsnamen sind vordefiniert und müssen immer festgelegt werden, da AEM auf sie angewiesen ist:
+   Die folgenden Zuordnungsnamen sind vordefiniert und müssen festgelegt werden, da AEM von ihnen abhängt:
 
    * `local` – die lokale Instanz
    * `author` – das DNS des Bearbeitungssystems
@@ -69,7 +65,7 @@ Definieren Sie eine Domain-Zuordnung für den **Externalizer**-Service wie folgt
 
    >[!NOTE]
    >
-   >Mit einer benutzerdefinierten Konfiguration können Sie eine neue Kategorie hinzufügen, z. B. `production`, `staging` oder sogar externe Nicht-AEM-Systeme wie `my-internal-webservice`. Es ist nützlich, die Hartkodierung solcher URLs an verschiedenen Stellen in der Code-Basis eines Projekts zu vermeiden.
+   >Mit einer benutzerdefinierten Konfiguration können Sie eine Kategorie hinzufügen, z. B. `production`, `staging`, oder sogar externe AEM, wie z. B. `my-internal-webservice`. Es ist nützlich, die Hartkodierung solcher URLs an verschiedenen Stellen in der Code-Basis eines Projekts zu vermeiden.
 
 1. Klicken Sie auf **Speichern**, um Ihre Änderungen zu speichern.
 
@@ -129,4 +125,4 @@ Dieser Abschnitt zeigt einige Beispiele dafür, wie der **Externalizer**-Dienst 
 
    * `https://publish-3.internal/contextpath/my/page.html`
 
-1. Weitere Beispiele finden Sie in den [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).
+1. Weitere Beispiele finden Sie in den [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).

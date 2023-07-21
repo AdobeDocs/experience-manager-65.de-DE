@@ -1,34 +1,30 @@
 ---
 title: Hosten von zwei AEM Forms Workspace-Instanzen auf einem Server
-seo-title: Hosting two AEM Forms workspace instances on one server
-description: Wie können LC-Adminstratoren HTML Workspace anpassen, um zwei Instanzen auf einem Server zu hosten, auf die über unterschiedliche URLs zugegriffen werden kann?
-seo-description: How LC administrators can customize HTML WS to host two instances on a single server accessible via different URLs.
-uuid: 0584f512-6b92-4418-b71c-93605cfa1927
+description: Wie LC-Administratoren HTML WS anpassen können, um zwei Instanzen auf einem Server zu hosten, auf den über verschiedene URLs zugegriffen werden kann.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '299'
-ht-degree: 100%
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 60%
 
 ---
 
 # Hosten von zwei AEM Forms Workspace-Instanzen auf einem Server {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
-Die Standardinstallation und -einstellungen von AEM Forms lassen nur die Bereitstellung einer AEM Forms Workspace-Instanz auf dem Server zu. Möglicherweise müssen Sie jedoch zwei verschiedene Instanzen von AEM Forms Workspace auf einem AEM Forms-Server hosten. Sie können auf die beiden Instanzen über unterschiedliche URLs zugreifen.
+Die Standardinstallation und -einstellungen von AEM Forms lassen nur die Bereitstellung einer AEM Forms Workspace-Instanz auf dem Server zu. Möglicherweise müssen Sie jedoch zwei verschiedene Instanzen von AEM Forms Workspace auf einem AEM Forms-Server hosten. Auf die beiden Instanzen kann über verschiedene URLs zugegriffen werden.
 
-AEM Forms-Administratoren passen Workspace an, um zwei unterschiedliche URLs zu erstellen und zwei Workspace-Instanzen auf demselben Server bereitzustellen. In diesem Artikel zum Thema benutzerdefinierte Anpassung gehen wir davon aus, dass die beiden Arbeitsbereiche unter `https://'[server]:[port]'/lc/ws` und `https://'[server]:[port]':/lc/ws2` bereitstehen.
+AEM Forms-Administratoren passen Workspace an, um zwei unterschiedliche URLs zu erstellen und zwei Workspace-Instanzen auf demselben Server bereitzustellen. In diesem Anpassungsartikel können Sie davon ausgehen, dass die beiden Arbeitsbereiche unter `https://'[server]:[port]'/lc/ws` und `https://'[server]:[port]':/lc/ws2`.
 
-Führen Sie folgende Schritte aus, um AEM Forms Workspace zu konfigurieren.
+Führen Sie diese Schritte aus, um AEM Forms Workspace zu konfigurieren.
 
-1. Installieren Sie das Dev-Paket von AEM Forms Workspace auf dem Server. Anweisungen zum Erstellen finden Sie unter [Dev-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
-1. Melden Sie sich bei CRXDE Lite als Administrator an, indem Sie auf `https://'[server]:[port]'/lc/crx/de/index.jsp` zugreifen.
-1. Kopieren Sie den Knoten „ws“ unter „/content“ und fügen Sie ihn unter „/content“ ein. Benennen Sie den Knoten in „ws2“ um. Klicken Sie auf **[!UICONTROL Alle speichern]**. Ändern Sie in den Eigenschaften dieses Knotens den Wert `sling:resourceType` in „ws2“. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Installieren Sie das Dev-Paket von AEM Forms Workspace auf dem Server. Siehe [dev-Paket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), um Anweisungen zur Erstellung zu erhalten.
+1. Melden Sie sich bei CRXDE Lite als Administrator an, indem Sie auf `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Kopieren Sie den Knoten unter /content und fügen Sie ihn unter /content ein. Benennen Sie den Knoten in &quot;ws2&quot;um. Klicken Sie auf **[!UICONTROL Alle speichern]**. Ändern Sie in den Eigenschaften dieses Knotens den Wert `sling:resourceType` in „ws2“. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
-1. Kopieren Sie den Ordner „ws“ unter „/libs“ und fügen Sie ihn unter „/apps “ein. Benennen Sie den Ordner in „ws2“ um. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Kopieren Sie die Ordner aus /libs und fügen Sie sie unter /apps ein. Benennen Sie den Ordner in &quot;ws2&quot;um. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. Ändern Sie den Code in der Datei `GET.jsp` in der Zeile `/apps/ws2` folgendermaßen. Ersetzen Sie den Code
 
    ```html
@@ -89,7 +85,7 @@ Führen Sie folgende Schritte aus, um AEM Forms Workspace zu konfigurieren.
 
 1. Um auf `pdf.html` des neuen Arbeitsbereichs zu verweisen, ändern Sie die Pfade von `pdf.html` und `WsNextAdapter.swf` auf `startprocess.html`, `taskdetails.html` und `processinstancehistory.html` in der Zeile `/apps/ws2/js/runtime/templates`.
 
-1. Kopieren Sie den Ordner `/etc/map/ws` und fügen Sie ihn unter `/etc/map` ein. Benennen Sie den neuen Ordner in „ws2“ um. Klicken Sie auf „Alle speichern“.
+1. Kopieren Sie den Ordner `/etc/map/ws` und fügen Sie ihn unter `/etc/map` ein. Benennen Sie den neuen Ordner in &quot;ws2&quot;um. Klicken Sie auf Alle speichern.
 
 1. Ändern Sie in den Eigenschaften von `ws2` den Wert von `sling:redirect` auf `content/ws2`.
 
