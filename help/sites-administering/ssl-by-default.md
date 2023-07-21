@@ -11,10 +11,10 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 9273282b26aeab5f65f0f05aa8ad754962dc59ec
-workflow-type: ht
-source-wordcount: '853'
-ht-degree: 100%
+source-git-commit: 7edd848bbdbadfb387bd4d880b24931ad6758dbd
+workflow-type: tm+mt
+source-wordcount: '856'
+ht-degree: 96%
 
 ---
 
@@ -237,8 +237,8 @@ Sie können dem Servlet eine Kette von Zertifikaten senden, indem Sie den Parame
 
 `-F "certificateFile=@root.crt" -F "certificateFile=@localhost.crt"..`
 
-Stellen Sie nach Ausführung des Befehls sicher, dass alle Zertifikate an den KeyStore gesendet wurden. Überprüfen Sie den KeyStore:
-[http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/userEditor.html/home/users/system/security/ssl-service)
+Stellen Sie nach Ausführung des Befehls sicher, dass alle Zertifikate an den KeyStore gesendet wurden. Überprüfen Sie die **Keystore** Einträge aus:
+[http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service](http://localhost:4502/libs/granite/security/content/v2/usereditor.html/home/users/system/security/ssl-service)
 
 ### Aktivieren einer TLS 1.3-Verbindung {#enabling-tls-connection}
 
