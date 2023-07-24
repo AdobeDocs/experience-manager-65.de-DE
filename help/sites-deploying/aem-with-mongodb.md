@@ -545,7 +545,7 @@ Die Ausgabe des zweiten Tests sollte deutlich höher sein als die erste und die 
 
 >[!NOTE]
 >
-Überprüfen Sie während der Tests die I/O-Nutzungsstatistik für die fraglichen virtuellen Maschinen in Ihrem zur Betriebssystemüberwachung eingesetzten System. Wenn für die I/O-Lesevorgänge ein Testergebnis von unter 100 % ausgegeben wird, liegt womöglich ein Problem bei der virtuellen Maschine vor.
+>Überprüfen Sie während der Tests die I/O-Nutzungsstatistik für die fraglichen virtuellen Maschinen in Ihrem zur Betriebssystemüberwachung eingesetzten System. Wenn für die I/O-Lesevorgänge ein Testergebnis von unter 100 % ausgegeben wird, liegt womöglich ein Problem bei der virtuellen Maschine vor.
 
 **Testen der Schreibleistung der primären MongoDB-Instanz**
 
@@ -656,7 +656,7 @@ CSP ermöglicht eine Feinabstimmung von Richtlinien. In einer komplexen Anwendun
 
 >[!NOTE]
 >
-Weitere Informationen zur Funktionsweise finden Sie auf der [OWASP-Seite zum Thema Inhaltssicherheitsrichtline](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
+>Weitere Informationen zur Funktionsweise finden Sie auf der [OWASP-Seite zum Thema Inhaltssicherheitsrichtline](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Dimensionierung {#sizing}
 
@@ -680,4 +680,4 @@ Wenn AEM auf einer MongoMK-Persistenz-Manager-Bereitstellung ausgeführt wird, s
 
 >[!NOTE]
 >
-Lesen Sie die [MongoDB-Dokumentation](https://docs.mongodb.com/manual/reference/limits/), damit Sie sich mit den bekannten Einschränkungen und Schwellenwerten von MongoDB vertraut machen können.
+>Lesen Sie die [MongoDB-Dokumentation](https://docs.mongodb.com/manual/reference/limits/), damit Sie sich mit den bekannten Einschränkungen und Schwellenwerten von MongoDB vertraut machen können.
