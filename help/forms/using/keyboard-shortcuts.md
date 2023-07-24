@@ -10,14 +10,16 @@ topic-tags: author, correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1147'
-ht-degree: 100%
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+workflow-type: tm+mt
+source-wordcount: '1204'
+ht-degree: 43%
 
 ---
 
 # Tastaturbefehle für AEM Forms {#aem-forms-keyboard-shortcuts}
+
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
 In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für adaptive Formulare, im Design-Editor, im Inhaltsbrowser und in Correspondence Management für Windows und Macintosh verwendet werden können.
 
@@ -25,11 +27,11 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 | **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter macOS** |
 |---|---|---|
-| Öffnen des Eigenschaften-Browsers für die ausgewählte Komponente eines adaptiven Formulars | Alt+Eingabe | Alt+Eingabe |
-| Eigenschaftenbrowser für die ausgewählte Komponente eines adaptiven Formulars schließen | Strg+Alt+W | Befehl+Alt+W |
-| Änderungen im Eigenschaftenbrowser für die ausgewählte Komponente eines adaptiven Formulars speichern | Strg+S | Befehl+S |
-| Bearbeiten der Regel für die ausgewählte Komponente eines adaptiven Formulars | Strg+Alt+Eingabe | Befehl+Alt+Eingabe |
-| Zwischen Vorschau und dem aktuell ausgewählten Modus (z. B. Bearbeiten, Strukturvorlage usw.) wechseln | Strg+Umschalt+M | Strg+Umschalt+M |
+| Öffnen des Eigenschaften-Browsers für die ausgewählte Komponente eines adaptiven Formulars | Alt+Eingabetaste | Alt+Rückgabe |
+| Eigenschaftenbrowser für die ausgewählte Komponente des adaptiven Formulars schließen | Strg+Alt+W | Befehl+Alt+W |
+| Speichern von Änderungen im Eigenschaftenbrowser für die ausgewählte Komponente des adaptiven Formulars | Strg+S | Befehl+S |
+| Bearbeiten der Regel für die ausgewählte Komponente eines adaptiven Formulars | Strg+Alt+Eingabe | Befehl+Alt+Rückgabe |
+| Zwischen Vorschau und dem aktuell ausgewählten Modus (z. B. Bearbeiten, Strukturvorlage usw.) wechseln | Strg+Umschalt+M | Strg+Umschalt+M |
 | Letzte Änderung rückgängig machen | Strg+Z | Strg+Z |
 | Letzte Änderung wiederholen | Strg+Y | Strg+Y |
 | Mehrere Komponenten auswählen | Umschalt+Klick | Umschalt+Klick |
@@ -50,17 +52,16 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 >
 >Mehrfachauswahl auf einem Desktop-Gerät:
 >
->* Windows: Strg+Klick auf benötigte Komponenten
->* Mac OS: Befehlstaste+Klick auf benötigte Komponenten
+>* Windows: Strg+Klicken Sie auf die erforderlichen Komponenten.
+>* Mac OS: Befehl+Klicken Sie auf die erforderlichen Komponenten.
 >
-
 
 ## Themen-Editor  {#themeeditor}
 
 | **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter macOS** |
 |---|---|---|
-| Eigenschaftenbrowser für die ausgewählte Komponente in einem Design öffnen | Alt+Eingabe | Alt+Eingabe |
-| Eigenschaftenbrowser für die ausgewählte Komponente in einem Design schließen | Strg+Alt+W | Befehl+Alt+W |
+| Eigenschaftenbrowser für die ausgewählte Komponente in einem Design öffnen | Alt+Eingabetaste | Alt+Rückgabe |
+| Eigenschaftenbrowser für die ausgewählte Komponente in einem Design schließen | Strg+Alt+W | Befehl+Alt+W |
 | Letzte Änderung rückgängig machen | Strg+Z | Strg+Z |
 | Letzte Änderung wiederholen | Strg+Y | Strg+Y&amp;ast; |
 | Speichern von Änderungen im Eigenschaften-Browser für die ausgewählte Komponente in einem Design | Strg+S | Strg+S&amp;ast; |
@@ -73,19 +74,19 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 
 | **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter macOS** |
 |---|---|---|
-| Alle Akkordeons in der Formularobjektstruktur anzeigen, wenn im Fokus | Strg+A, um alle Akkordeons auszuwählen, dann nach-rechts-Taste zum Erweitern | Befehl+A, um alle Akkordeons auszuwählen, dann nach-rechts-Taste zum Erweitern |
+| Erweitern Sie alle Akkordeons im Formularobjektbaum des Inhaltsbrowsers im Fokus | Strg+A, um alle Akkordeons auszuwählen, dann nach-rechts-Taste zum Erweitern | Befehl+A, um alle Akkordeons auszuwählen, dann nach-rechts-Taste zum Erweitern |
 | Alle Akkordeons in der Formularobjektstruktur ausblenden, wenn im Fokus | Strg+A, um alle Akkordeons auszuwählen, dann nach-links-Taste zum Ausblenden | Befehl+A, um alle Akkordeons auszuwählen, dann nach-links-Taste zum Ausblenden |
-| Ausgewähltes Akkordeon in der Formularobjektstruktur erweitern | Nach-rechts-Taste | Nach-rechts-Taste |
+| Erweitern Sie das ausgewählte Accordion in der Formularobjektstruktur. | Nach-rechts-Taste | Nach-rechts-Taste |
 | Ausgewähltes Akkordeon in der Formularobjektstruktur ausblenden | Nach-links-Taste | Nach-links-Taste |
-| Nächsten Eintrag in der Formularobjektstruktur auswählen | Nach-unten-Taste | Nach-unten-Taste |
-| Vorherigen Eintrag in der Formularobjektstruktur auswählen | Nach-oben-Taste | Nach-oben-Taste |
+| Auswählen des nächsten Elements in der Forms-Objektstruktur | Nach-unten-Taste | Nach-unten-Taste |
+| Vorheriges Element in der Struktur &quot;Forms-Objekte&quot;auswählen | Nach-oben-Taste | Nach-oben-Taste |
 
 [1] ersetzt Strg+Pfeil nach rechts für Windows bzw. Befehl+Pfeil nach rechts für macOS.\
 [2] ersetzt Strg+Pfeil nach links für Windows bzw. Befehl+Pfeil nach links für macOS.
 
 ## Korrespondenzverwaltung {#correspondence-management}
 
-In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tastaturbefehl aufgeführt, die Sie im Correspondence Management-Texteditor verwenden können. Diese Tastaturkürzel können Sie wie folgt verwenden:
+In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskürzel aufgeführt, die Sie im Correspondence Management-Texteditor verwenden können. Sie können diese Verknüpfungen wie folgt verwenden:
 
 * Erstellen oder Bearbeiten eines [Text](texts-interactive-communications.md)-Assets
 * Bearbeiten eines Textmoduls nach Tippen auf das entsprechende Bearbeitungssymbol (![edittextmodule](assets/edittextmodule.png)) beim [Erstellen einer Korrespondenz](/help/forms/using/create-correspondence.md).
@@ -110,99 +111,99 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
    <td>Befehl+Umschalt+Linkspfeil</td> 
   </tr>
   <tr>
-   <td><p>Erweitern einer Auswahl bis zum Anfang eines Absatzes</p> </td> 
+   <td><p>Auswahl auf den Anfang eines Absatzes erweitern</p> </td> 
    <td><p>Strg+Umschalt+Aufwärtspfeil</p> </td> 
-   <td>Befehl+Umschalt+Nach-oben-Pfeil</td> 
+   <td>Befehl+Umschalt+Aufwärtspfeil</td> 
   </tr>
   <tr>
    <td><p>Erweitern einer Auswahl bis zum Ende eines Absatzes</p> </td> 
    <td><p>Strg+Umschalt+Abwärtspfeil</p> </td> 
-   <td>Befehl+Umschalt+Nach-unten-Pfeil</td> 
+   <td>Befehl+Umschalt+Abwärtspfeil</td> 
   </tr>
   <tr>
-   <td><p>Wählen Sie den gesamten Text im Texteditor</p> </td> 
+   <td><p>Gesamten Text im Texteditor auswählen</p> </td> 
    <td><p>Strg+A</p> </td> 
-   <td>Befehlstaste+A</td> 
+   <td>Befehl+A</td> 
   </tr>
   <tr>
-   <td><p>Cursors an den Anfang des nächsten Wortes verschieben</p> </td> 
+   <td><p>Cursor an den Anfang des nächsten Worts verschieben</p> </td> 
    <td><p>Strg+Rechtspfeil</p> </td> 
-   <td>Option+Nach-rechts-Pfeil<em><sup>[1]</sup></em></td> 
+   <td>Option+Rechtspfeil <em><sup>[1]</sup></em></td> 
   </tr>
   <tr>
-   <td><p>Cursors an den Anfang des vorherigen Wortes verschieben</p> </td> 
+   <td><p>Cursor an den Anfang des vorherigen Worts verschieben</p> </td> 
    <td><p>Strg+Linkspfeil </p> </td> 
-   <td>Option+ Nach-links-Pfeil</td> 
+   <td>Option+Linkspfeil</td> 
   </tr>
   <tr>
-   <td><p>Cursor zum nächsten Absatz verschieben.</p> </td> 
+   <td><p>Bewegen Sie den Cursor zum nächsten Absatz.</p> </td> 
    <td><p>Strg+Abwärtspfeil</p> </td> 
-   <td>Option+Nach-unten-Pfeil</td> 
+   <td>Option+Abwärtspfeil</td> 
   </tr>
   <tr>
-   <td><p>Cursor zum vorherigen Absatz verschieben.</p> </td> 
+   <td><p>Verschieben Sie den Cursor zum vorherigen Absatz.</p> </td> 
    <td><p>Strg+Aufwärtspfeil</p> </td> 
-   <td>Option+Nach-oben-Pfeil</td> 
+   <td>Option+Aufwärtspfeil</td> 
   </tr>
   <tr>
-   <td><p>Wählen Sie Text ein Zeichen nach dem anderen in Rückwärtsrichtung</p> </td> 
+   <td><p>Text ein Zeichen nach dem anderen in Rückwärtsrichtung auswählen</p> </td> 
    <td><p>Umsch+Nach-links-Taste</p> </td> 
    <td>Umsch+Nach-links-Taste</td> 
   </tr>
   <tr>
-   <td><p>Wählen Sie Text ein Zeichen nach dem anderen in Vorwärtsrichtung</p> </td> 
+   <td><p>Text ein Zeichen nach dem anderen in Vorwärtsrichtung auswählen</p> </td> 
    <td><p>Umsch+Nach-rechts-Taste</p> </td> 
    <td>Umsch+Nach-rechts-Taste</td> 
   </tr>
   <tr>
    <td><p>Wählen Sie Text ein Absatz nach dem anderen in Rückwärtsrichtung</p> </td> 
-   <td><p>Umschalt+Aufwärtspfeil</p> </td> 
-   <td>Umschalt+Aufwärtspfeil</td> 
+   <td><p>Umschalt+Nach-oben-Taste</p> </td> 
+   <td>Umschalt+Nach-oben-Taste</td> 
   </tr>
   <tr>
    <td><p>Wählen Sie Text ein Absatz nach dem anderen in Vorwärtsrichtung</p> </td> 
-   <td><p>Umschalt+Nach-unten-Taste</p> </td> 
-   <td>Umschalt+Nach-unten-Taste</td> 
+   <td><p>Umschalt+Abwärtstaste</p> </td> 
+   <td>Umschalt+Abwärtspfeil</td> 
   </tr>
   <tr>
-   <td><p>Wählen Sie Text bis zum Beginn der aktuellen Position der Seite</p> </td> 
-   <td><p>Umschalt+Bild-auf-Taste</p> </td> 
-   <td>Fn+Umschalt+Nach-oben-Pfeil</td> 
+   <td><p>Text bis zum Beginn der aktuellen Position der Seite auswählen</p> </td> 
+   <td><p>Umschalt+Seite nach oben</p> </td> 
+   <td>Fn+Umschalt+Aufwärtspfeil</td> 
   </tr>
   <tr>
-   <td><p>Wählen Sie Text bis zum Ende der aktuellen Position der Seite</p> </td> 
-   <td><p>Umschalt+Bild-ab-Taste</p> </td> 
-   <td>Fn+Umschalt+Nach-unten-Pfeil</td> 
+   <td><p>Text bis zum Ende der Endposition der Seite auswählen</p> </td> 
+   <td><p>Umschalt+Seite nach unten</p> </td> 
+   <td>Fn+Umschalt+Abwärtspfeil</td> 
   </tr>
   <tr>
    <td><p>Cursor an das Seitenende verschieben</p> </td> 
-   <td><p>Bild-ab-Taste</p> </td> 
-   <td>Fn+Nach-unten-Pfeil</td> 
+   <td><p>Bild nach unten</p> </td> 
+   <td>Fn+Abwärtspfeil</td> 
   </tr>
   <tr>
-   <td><p>Cursor zum Seitenanfang verschieben</p> </td> 
-   <td><p>Bild-auf-Taste</p> </td> 
-   <td>Fn+Nach-oben-Pfeil</td> 
+   <td><p>Cursor an den Anfang der Seite verschieben</p> </td> 
+   <td><p>Page Up</p> </td> 
+   <td>Pfeil nach oben</td> 
   </tr>
   <tr>
-   <td><p>Wählen Sie Text von der aktuellen Position bis zum Ende (des Moduls)</p> </td> 
+   <td><p>Text von der aktuellen Position bis zum Ende (des Moduls) auswählen</p> </td> 
    <td><p>Umschalt+Strg+Ende</p> </td> 
-   <td>Befehl+Umschalt+Nach-unten-Pfeil<br /> </td> 
+   <td>Befehl+Umschalt+Abwärtspfeil<br /> </td> 
   </tr>
   <tr>
-   <td><p>Wählen Sie Text von der aktuellen Position bis zum Anfang (des Moduls)</p> </td> 
-   <td><p>Umschalt+Strg+Pos1</p> </td> 
-   <td>Befehl+Umschalt+Nach-oben-Pfeil</td> 
+   <td><p>Text von der aktuellen Position bis zum Anfang (des Moduls) auswählen</p> </td> 
+   <td><p>Umschalt+Strg+Startseite</p> </td> 
+   <td>Befehl+Umschalt+Aufwärtspfeil</td> 
   </tr>
   <tr>
    <td><p>Cursor an die Startposition verschieben</p> </td> 
-   <td><p>Strg+Pos1</p> </td> 
-   <td>Befehlstaste-+Nach-oben-Pfeil</td> 
+   <td><p>Strg+Startseite</p> </td> 
+   <td>Befehl+Aufwärtspfeil</td> 
   </tr>
   <tr>
    <td><p>Cursor an die Endposition verschieben</p> </td> 
    <td><p>Strg+Ende</p> </td> 
-   <td>Befehlstaste+Nach-unten-Pfeil</td> 
+   <td>Befehl+Abwärtspfeil</td> 
   </tr>
  </tbody>
 </table>
@@ -218,29 +219,29 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
    <th><strong>Tastaturbefehl unter Mac OS</strong></th> 
   </tr>
   <tr>
-   <td><p>Abschnitt mittig ausrichten</p> </td> 
+   <td><p>Absatzmitte ausrichten</p> </td> 
    <td><p>Strg+E</p> </td> 
    <td>Strg+Befehl+E</td> 
   </tr>
   <tr>
-   <td><p>Abschnitt links ausrichten</p> </td> 
+   <td><p>Absatz linksbündig ausrichten</p> </td> 
    <td><p>Strg+L</p> </td> 
    <td>Strg+Befehl+L</td> 
   </tr>
   <tr>
-   <td><p>Abschnitt rechts ausrichten</p> </td> 
+   <td><p>Festlegen einer Ausrichtung für einen Absatz</p> </td> 
    <td><p>Strg+R</p> </td> 
    <td>Strg+Befehl+R</td> 
   </tr>
   <tr>
-   <td><p>Abschnitt im Blocksatz ausrichten</p> </td> 
+   <td><p>Abschnitt ausrichten</p> </td> 
    <td><p>Strg+J</p> </td> 
    <td>Strg+Befehl+J</td> 
   </tr>
  </tbody>
 </table>
 
-### Aktionen für Rückgängig und Wiederherstellen {#undo-and-redo-actions}
+### Aktionen zum Rückgängigmachen und Wiederholen {#undo-and-redo-actions}
 
 <table> 
  <tbody>
@@ -262,7 +263,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
  </tbody>
 </table>
 
-### Ändern der Schriftgröße {#changing-font-size}
+### Schriftgröße ändern {#changing-font-size}
 
 <table> 
  <tbody>
@@ -294,19 +295,19 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
    <th><strong>Tastaturbefehl unter Mac OS</strong></th> 
   </tr>
   <tr>
-   <td><p>Löschen des Wortes links neben dem Cursor</p> </td> 
+   <td><p>Wort links vom Cursor löschen</p> </td> 
    <td><p>Strg+Rücktaste</p> </td> 
-   <td>Option+Entf</td> 
+   <td>Option+Löschen</td> 
   </tr>
   <tr>
-   <td><p>Löschen des Wortes rechts neben dem Cursor</p> </td> 
-   <td><p>Strg+Entf</p> </td> 
-   <td>Strg+Entf</td> 
+   <td><p>Wort rechts vom Cursor löschen</p> </td> 
+   <td><p>Strg+Löschen</p> </td> 
+   <td>Strg+Löschen</td> 
   </tr>
  </tbody>
 </table>
 
-### Kopieren und einfügen {#copy-and-paste}
+### Kopieren und Einfügen {#copy-and-paste}
 
 <table> 
  <tbody>
@@ -317,7 +318,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
   </tr>
   <tr>
    <td><p>Text einfügen  </p> </td> 
-   <td><p>Strg+V/Shift+Insert</p> </td> 
+   <td><p>Strg+V/Umschalt+Einfügen</p> </td> 
    <td>Befehl+V</td> 
   </tr>
   <tr>
@@ -355,7 +356,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheit-Tas
   <tr>
    <td><p>Unterstrichene Buchstaben </p> </td> 
    <td><p>Strg+Alt+U/Strg+U</p> </td> 
-   <td>Befehl+I</td> 
+   <td>Befehl+U</td> 
   </tr>
  </tbody>
 </table>
