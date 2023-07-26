@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: f620966974b0f535d30a17a5fa3175a593e52fec
+source-git-commit: 654dcb7c9bbb73420df7494b21fddb8cb4fdd39a
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1936'
 ht-degree: 59%
 
 ---
@@ -16,7 +16,10 @@ ht-degree: 59%
 
 <span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
-
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form.html?lang=de) |
+| AEM 6.5 | Dieser Artikel |
 
 ## Erstellen eines adaptiven Formulars {#strong-create-an-adaptive-form-strong}
 
@@ -163,7 +166,7 @@ Adaptive Formulare werden ohne Formularmodell (unter Verwendung der Option &quot
 
 1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Eigenschaften zu speichern.
 
-## Automatisches Speichern eines adaptiven Formulars {#auto-save-an-adaptive-form}
+## Adaptives Formular automatisch speichern {#auto-save-an-adaptive-form}
 
 Standardmäßig werden die Inhalte eines adaptiven Formulars in einer Benutzeraktion gespeichert, z. B. durch Drücken der Schaltfläche &quot;Speichern&quot;. Sie können auch ein adaptives Formular so konfigurieren, dass Inhalt basierend auf einem Ereignis oder einem Zeitintervall automatisch gespeichert wird. Die Option &quot;Automatisches Speichern&quot;ist in folgenden Bereichen hilfreich:
 
@@ -177,8 +180,8 @@ Standardmäßig werden die Inhalte eines adaptiven Formulars in einer Benutzerak
 Die Option „Automatisches Speichern“ ist standardmäßig nicht aktiviert. Sie können die Option „Automatisches Speichern“ über die Registerkarte „Automatisches Speichern“ eines adaptiven Formulars aktivieren. Die Registerkarte „Automatisches Speichern“ bietet mehrere weitere Konfigurationsoptionen. Führen Sie zum Aktivieren und Konfigurieren der Option „Automatisches Speichern“ für ein adaptives Formular folgende Schritte durch: 
 
 1. Um auf den Abschnitt für das automatische Speichern in den Eigenschaften zuzugreifen, wählen Sie eine Komponente aus und tippen Sie auf ![Feldebene](assets/field-level.png) > **[!UICONTROL Container für ein adaptives Formular]** und anschließend auf ![cmppr](assets/cmppr.png).
-1. Im **[!UICONTROL Automatisches Speichern]** Abschnitt **[!UICONTROL Aktivieren]** die Option &quot;Automatisches Speichern&quot;.
-1. Im **[!UICONTROL Adaptives Formularereignis]** Geben Sie 1 oder TRUE ein, um das Formular automatisch zu speichern, wenn es in den Browser geladen wird. Sie können auch einen bedingten Ausdruck für ein Ereignis angeben, das, wenn es ausgelöst wird und &quot;true&quot;zurückgibt, mit dem Speichern des Formularinhalts beginnt.
+1. Im **[!UICONTROL Automatisches Speichern]** Abschnitt, **[!UICONTROL Aktivieren]** die Option &quot;Automatisches Speichern&quot;.
+1. Im **[!UICONTROL Adaptives Formularereignis]** geben Sie 1 oder TRUE an, um das Formular automatisch zu speichern, wenn es in den Browser geladen wird. Sie können auch einen bedingten Ausdruck für ein Ereignis angeben, das, wenn es ausgelöst wird und &quot;true&quot;zurückgibt, mit dem Speichern des Formularinhalts beginnt.
 1. Geben Sie den Trigger an. Das automatische Speichern wird basierend auf Ihrer Konfiguration ausgelöst. Ihre Optionen sind:
 
    * **[!UICONTROL Zeitbasiert:]** Wählen Sie diese Option, um den Inhalt anhand eines bestimmtes Zeitintervalls zu speichern.
