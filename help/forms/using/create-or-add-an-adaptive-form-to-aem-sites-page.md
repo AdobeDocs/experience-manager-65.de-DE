@@ -4,7 +4,7 @@ description: Erfahren Sie, wie Sie mühelos ein adaptives Formular erstellen ode
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 4992416c0deec7eab51920fd9c7e1e2b10887ea5
+source-git-commit: 600dcc52829ff2c5e54176bda7631845ef24f986
 workflow-type: tm+mt
 source-wordcount: '2970'
 ht-degree: 2%
@@ -45,17 +45,17 @@ Mit dem Container für adaptive Formulare in AEM Seiteneditor können Sie nahtlo
 
 Sie können diese Funktion voll nutzen, indem Sie die folgenden Optionen verwenden:
 
-* **Fügen Sie ein benutzerdefiniertes adaptives Formular zu einer AEM Sites-Seite hinzu:** Erstellen Sie ein ganz neues Formular, passen Sie es speziell an Ihre Anforderungen und Designvorlieben an.
+* **[Fügen Sie ein benutzerdefiniertes adaptives Formular zu einer AEM Sites-Seite hinzu:](#create-an-adaptive-form-in-sites-editor)** Erstellen Sie ein ganz neues Formular, passen Sie es speziell an Ihre Anforderungen und Designvorlieben an.
 
-* **Fügen Sie ein benutzerdefiniertes adaptives Formular zu einem Experience Fragments hinzu:** Erweitern Sie die Reichweite Ihrer Formulare, indem Sie sie zu AEM Experience Fragments hinzufügen, sodass sie nahtlos über mehrere Seiten oder Sites hinweg wiederverwendet werden können.
+* **[Fügen Sie ein benutzerdefiniertes adaptives Formular zu einem Experience Fragments hinzu:](#create-an-adaptive-form-in-experience-fragment)** Erweitern Sie die Reichweite Ihrer Formulare, indem Sie sie zu AEM Experience Fragments hinzufügen, sodass sie nahtlos über mehrere Seiten oder Sites hinweg wiederverwendet werden können.
 
-* **Fügen Sie einer AEM Sites-Seite oder einem Experience Fragment mehrere Formulare hinzu:**  Fügen Sie einer Seite mehrere Formulare hinzu, um Benutzern basierend auf ihren Voreinstellungen und Anforderungen mehrere Optionen zur Verfügung zu stellen. Diese können eine Kombination aus neuen und vorhandenen Formularen darstellen.
-
-* **Konvertieren eines adaptiven Formulars in Experience Fragment:** Konvertieren Sie ein adaptives Formular, das zu einer AEM Sites-Seite hinzugefügt wurde, in ein Experience Fragment, um das Formular auf mehreren AEM Sites-Seiten wiederzuverwenden.
+* **[Konvertieren eines adaptiven Formulars in Experience Fragment:](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)** Konvertieren Sie ein adaptives Formular, das zu einer AEM Sites-Seite hinzugefügt wurde, in ein Experience Fragment, um das Formular auf mehreren AEM Sites-Seiten wiederzuverwenden.
 
 * **Erstellen Sie Formulare basierend auf genehmigten Vorlagen und fügen Sie sie einer AEM Sites-Seite hinzu:** Nutzen Sie vorab genehmigte Vorlagen, um schnell Formulare zu erstellen, die den Branding-Richtlinien und Designstandards Ihres Unternehmens entsprechen. Die Option ist nur für adaptive Forms verfügbar, die mit dem Adaptiven Forms-Editor oder der Adaptiven Forms - Einbettungskomponente erstellt wurde.
 
 * **Fügen Sie vorhandene Formulare zu einer AEM Sites-Seite hinzu:** Einfache Integration von bereits erstellten Formularen in Ihre Websites, sodass Besucher direkt mit ihnen interagieren können. Die Option ist nur für adaptive Forms verfügbar, die mit dem Adaptiven Forms-Editor oder der Adaptiven Forms - Einbettungskomponente erstellt wurde.
+
+* **Fügen Sie einer AEM Sites-Seite oder einem Experience Fragment mehrere Formulare hinzu:**  Fügen Sie einer Seite mehrere Formulare hinzu, um Benutzern basierend auf ihren Voreinstellungen und Anforderungen mehrere Optionen zur Verfügung zu stellen. Diese können eine Kombination aus neuen und vorhandenen Formularen darstellen.
 
 ## Überlegungen {#consideration}
 
