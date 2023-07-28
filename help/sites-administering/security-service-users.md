@@ -7,12 +7,13 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: f317783f3320e3987c7468aa0b2471e525b0387a
 workflow-type: tm+mt
-source-wordcount: '1766'
-ht-degree: 37%
+source-wordcount: '1797'
+ht-degree: 35%
 
 ---
+
 
 # Dienstbenutzer in Adobe Experience Manager (AEM) {#service-users-in-aem}
 
@@ -24,7 +25,7 @@ Allerdings waren diese beiden Methoden um das sogenannte [Principle of Least Pri
 
 ## Ausstieg aus Admin-Sitzungen {#how-to-phase-out-admin-sessions}
 
-### Priorität 0: Ist die Funktion aktiv/erforderlich/entfällt sie? {#priority-is-the-feature-active-needed-derelict}
+### Priorität 0: Ist die Funktion aktiv/erforderlich/entfällt? {#priority-is-the-feature-active-needed-derelict}
 
 Es kann vorkommen, dass die Adminsitzung nicht verwendet wird oder die Funktion vollständig deaktiviert ist. Ist dies mit Ihrer Implementierung der Fall, entfernen Sie die Funktion vollständig oder bauen Sie [Nulloperations-Code](https://en.wikipedia.org/wiki/NOP) darin ein.
 
@@ -79,7 +80,12 @@ Unabhängig davon, ob Sie Zugriffssteuerung bei der Umstrukturierung von Inhalte
 
 ## Dienstbenutzende und Zuordnungen {#service-users-and-mappings}
 
-Falls das oben Genannte fehlschlägt, bietet Sling 7 einen Dienst für die Zuordnung von Dienstbenutzenden, der die Konfiguration einer Bundle-zu-Benutzenden-Zuordnung und zweier entsprechender API-Methoden ermöglicht: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` und ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)`, die eine Sitzung bzw. einen Resource Resolver mit ausschließlich den Berechtigungen einer konfigurierten Benutzerin oder eines konfigurierten Benutzers zurückgeben. Diese Methoden verfügen über die folgenden Merkmale:
+Wenn der oben genannte Fehler auftritt, bietet Sling 7 einen Dienst für die Benutzerzuordnung, der die Konfiguration einer Bundle-zu-Benutzer-Zuordnung und zweier entsprechender API-Methoden ermöglicht:
+
+* [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
+* [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
+
+Die Methoden geben nur einen Sitzungs-/Ressourcen-Resolver mit den Berechtigungen eines konfigurierten Benutzers zurück. Diese Methoden verfügen über die folgenden Merkmale:
 
 * Sie ermöglichen die Zuordnung von Diensten zu Benutzenden.
 * Sie ermöglichen die Definition von Subdienstbenutzern
@@ -145,7 +151,7 @@ Vergewissern Sie sich beim Hinzufügen der entsprechenden „.content.xml“ zum
 
 ## Hinzufügen einer Konfigurationsänderung zur ServiceUserMapper-Konfiguration {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Um eine Zuordnung von Ihrem Dienst zu den entsprechenden Systembenutzern hinzuzufügen, erstellen Sie eine Werkskonfiguration für die ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` Dienst. Um diesen modularen Aufbau beizubehalten, kann eine solche Konfiguration mithilfe des [Sling-Änderungsmechanismus](https://issues.apache.org/jira/browse/SLING-3578). Die empfohlene Methode zur Installation solcher Konfigurationen mit Ihrem Bundle ist die Verwendung von [Laden anfänglicher Inhalte von Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+Um eine Zuordnung von Ihrem Dienst zu den entsprechenden Systembenutzern hinzuzufügen, erstellen Sie eine Werkskonfiguration für die [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) -Dienst. Um diesen modularen Aufbau beizubehalten, kann eine solche Konfiguration mithilfe des [Sling-Änderungsmechanismus](https://issues.apache.org/jira/browse/SLING-3578). Die empfohlene Methode zur Installation solcher Konfigurationen mit Ihrem Bundle ist die Verwendung von [Laden anfänglicher Inhalte von Sling](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Erstellen Sie unterhalb des Ordners „src/main/resources“ des Bundles einen Unterordner „SLING-INF/content“.
 1. Erstellen Sie in diesem Ordner eine Datei mit dem Namen org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml mit dem Inhalt Ihrer Factory-Konfiguration (einschließlich aller Subservice-Benutzerzuordnungen). Beispiel:
@@ -236,8 +242,8 @@ Der dritte Ansatz ist die bevorzugte Verarbeitungstechnik.
 
 Bei Workflow-Prozessimplementierungen geht die entsprechende Benutzersitzung verloren, die den Workflow ausgelöst hat. Dies führt zu Workflow-Prozessen, die häufig administrative Sitzungen verwenden, um ihre Arbeit auszuführen.
 
-Um diese Probleme zu beheben, wird empfohlen, dieselben Ansätze wie unter [Verarbeitungsereignisse, Replikations-Präprozessoren und Aufträge](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) verwendet werden.
+Um diese Probleme zu beheben, wird empfohlen, dieselben Ansätze zu verwenden, die unter [Verarbeitungsereignisse, Replikations-Präprozessoren und Aufträge](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) verwendet werden.
 
 ## Sling POST Processors und gelöschte Seiten {#sling-post-processors-and-deleted-pages}
 
-Es gibt einige Verwaltungssitzungen, die in Sling POST Processor-Implementierungen verwendet werden. In der Regel werden Admin-Sitzungen verwendet, um auf Knoten zuzugreifen, die innerhalb der verarbeiteten POST noch gelöscht werden müssen. Daher sind sie nicht mehr über die Anforderungssitzung verfügbar. Es kann auf einen Knoten zugegriffen werden, der gelöscht werden muss, um Metadaten anzuzeigen, auf die andernfalls nicht zugegriffen werden sollte.
+Es gibt einige Verwaltungssitzungen, die in Sling POST Processor-Implementierungen verwendet werden. In der Regel werden Admin-Sitzungen verwendet, um auf Knoten zuzugreifen, die innerhalb der verarbeiteten POST noch gelöscht werden müssen. Daher sind sie nicht mehr über die Anforderungssitzung verfügbar. Auf einen Knoten, dessen Löschung aussteht, kann zugegriffen werden, um Metadaten anzuzeigen, auf die andernfalls nicht zugegriffen werden sollte.
