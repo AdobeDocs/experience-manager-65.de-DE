@@ -5,10 +5,10 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: f11bb43d914a43431cab408ca77690b6ba528a06
 workflow-type: tm+mt
-source-wordcount: '1798'
-ht-degree: 51%
+source-wordcount: '1861'
+ht-degree: 50%
 
 ---
 
@@ -77,7 +77,7 @@ Diese Zuordnung von JSON-Elementen zu adaptiven Formularkomponenten lautet wie f
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Zeichenfolgeneigenschaft mit Formateinschränkung. Beispielsweise E-Mail und Datum.</p> <p>Syntax,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
+   <td><p>Zeichenfolgeneigenschaft mit Formateinschränkung. Zum Beispiel E-Mail und Datum.</p> <p>Syntax,</p> <p><code>{</code></p> <p><code>"type" : "string",</code></p> <p><code>"format" : "email"</code></p> <p><code>}</code></p> <p> </p> </td>
    <td>
     <ul>
      <li>Die E-Mail-Komponente wird zugeordnet, wenn der Typ Zeichenfolge und das Format E-Mail ist.</li>
@@ -106,7 +106,7 @@ Diese Zuordnung von JSON-Elementen zu adaptiven Formularkomponenten lautet wie f
   </tr>
   <tr>
    <td>Array-Eigenschaft</td>
-   <td>Wiederholbares Bedienfeld mit Mindest- und Höchstwert gleich "minItems"bzw. "maxItems". Nur homogene Arrays werden unterstützt. Daher muss die Elementbeschränkung ein Objekt sein, kein Array.<br /> </td>
+   <td>Wiederholbares Bedienfeld mit Mindest- und Höchstwert gleich "minItems"und "maxItems". Nur homogene Arrays werden unterstützt. Daher muss die Elementbeschränkung ein Objekt sein, kein Array.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -727,6 +727,20 @@ Sie können die folgenden Einschränkungen zu JSON-Schemaelementen hinzufügen, 
   </tr>
  </tbody>
 </table>
+
+
+
+## Schemakompatible Daten aktivieren {#enablig-schema-compliant-data}
+
+So aktivieren Sie, dass das adaptive Formular die schemakompatiblen Daten bei der Formularübermittlung generiert, führen die folgenden Schritte aus:
+
+1. Navigieren Sie zur Experience Manager-Webkonsole unter `https://server:host/system/console/configMgr`.
+1. Suchen **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und Interaktionskommunikation]**.
+1. Tippen Sie auf die Konfiguration, um sie im Bearbeitungsmodus zu öffnen.
+1. Wählen Sie die **[!UICONTROL Schema-kompatible Daten generieren]** aktivieren.
+1. Speichern Sie die Einstellungen.
+
+![Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation](/help/forms/using/assets/af-ic-web-channel-configuration.png)
 
 ## Nicht unterstützte Konstrukte  {#non-supported-constructs}
 
