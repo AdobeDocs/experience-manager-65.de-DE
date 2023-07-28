@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
-workflow-type: ht
-source-wordcount: '920'
-ht-degree: 100%
+source-git-commit: 061af6f3318d68b50c5f606ad50db7a39da0f4fd
+workflow-type: tm+mt
+source-wordcount: '917'
+ht-degree: 99%
 
 ---
 
@@ -35,7 +35,7 @@ Das Plug-in bestimmt automatisch, welche Pakete importiert werden sollen, und li
 
 * Geben Sie im POM an, dass die Pakete optional sind. Verwenden Sie diese Lösung, wenn die JDBC-Verbindung nicht die Paketmitglieder benötigt. Verwenden Sie das Import-Paketelement, um wie im folgenden Beispiel optionale Pakete anzugeben:
 
-   `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
+  `<Import-Package>org.jboss.*;resolution:=optional,*</Import-Package>`
 * Verpacken Sie die JAR-Dateien, die die Pakete enthalten, in einem OSGi-Bundle, das die Pakete exportiert, und stellen Sie das Bundle bereit. Verwenden Sie diese Lösung, wenn die Paketmitglieder während der Ausführung des Codes erforderlich sind.
 
 Entscheiden Sie anhand Ihrer Kenntnis des Quellcodes, welche Lösung geeignet ist. Sie können auch beide Lösungen ausprobieren und Tests durchführen, um sie zu validieren.
@@ -86,7 +86,7 @@ Entscheiden Sie anhand Ihrer Kenntnis des Quellcodes, welche Lösung geeignet is
 
 Die folgenden Links öffnen die Download-Seiten für einige beliebte Datenbankprodukte:
 
-* [Microsoft® SQL Server](https://www.microsoft.com/de-de/download/details.aspx?displaylang=en&amp;id=11774)
+* [Microsoft® SQL Server](https://www.microsoft.com/en-us/sql-server/sql-server-downloads)
 * [Oracle](https://www.oracle.com/database/technologies/appdev/jdbc-downloads.html)
 * [IBM® DB2®](https://www.ibm.com/support/pages/download-db2-fix-packs-version-db2-linux-unix-and-windows)
 
@@ -170,6 +170,7 @@ Der folgende JSP-Beispiel-Code ruft eine Instanz der hsqldbds-Datenquelle ab, f�
 >[!NOTE]
 >
 >Wenn die getDataSource-Methode eine Ausnahme ausgibt, da die Datenquelle nicht gefunden wird, stellen Sie sicher, dass die Konfiguration des Connections Pool-Diensts korrekt ist. Überprüfen Sie die Eigenschaftsnamen, Werte und Datentypen.
+>
 
 <!-- Link below redirects to the "Get started with AEM Sites - WKND tutorial"
 >[!NOTE]
