@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Zwei Hauptansätze sind das Überlagern oder Erweitern einer Komponente.
 
 Das Überlagern einer Komponente ist eine Methode, Änderungen an einer Standardkomponente vorzunehmen und alle Instanzen zu betreffen, die den Standard verwenden.
 
-Die Überlagerung erfolgt durch Ändern einer Kopie der Standardkomponente im /**apps** Verzeichnis, anstatt die ursprüngliche Komponente im / zu ändern **libs** Verzeichnis. Die Komponente wird mit einem identischen relativen Pfad erstellt, mit der Ausnahme, dass &quot;libs&quot;durch &quot;apps&quot;ersetzt wird.
+Die Überlagerung wird durch Ändern einer Kopie der Standardkomponente im / erreicht **apps** Verzeichnis, anstatt die ursprüngliche Komponente im / zu ändern **libs** Verzeichnis. Die Komponente wird mit einem identischen relativen Pfad erstellt, mit der Ausnahme, dass &quot;libs&quot;durch &quot;apps&quot;ersetzt wird.
 
 Das Verzeichnis /apps ist der erste Ort, der zum Auflösen von Anforderungen gesucht wird. Wenn es nicht gefunden wird, wird die Standardversion im Verzeichnis /libs verwendet.
 
@@ -61,7 +61,7 @@ Der Wert der `data-scf-component` -Attribut ist möglicherweise der Standardwert
 
 Um eine Komponente zu binden, muss das gesamte Komponentenskript in einer &lt;div> -Element mit den folgenden Attributen:
 
-* `data-component-id`=&quot;{{id}}&quot;
+* `data-component-id`=&quot;`{{id}}`&quot;
 
   wird aus dem Kontext in die ID-Eigenschaft aufgelöst
 
@@ -70,7 +70,7 @@ Um eine Komponente zu binden, muss das gesamte Komponentenskript in einer &lt;di
 Beispiel: von `/apps/weretail/components/hbs/rating/rating.hbs`:
 
 ```xml
-<div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
+<div class="we-Rating" data-component-id="`{{id}}`" data-scf-component="weretail/components/hbs/rating">
 
      <!-- HTML with HBS accessing the rating component -->
 
@@ -118,7 +118,7 @@ Um eine JavaScript-Implementierung der Komponenten zu erweitern, gehen Sie folge
 1. Erweitern Sie die -Methode.
 1. Verwenden Sie SCF.registerComponent() , um alle Methoden entweder mit den Standardeinstellungen oder mit den angepassten Objekten und Ansichten zu registrieren.
 
-### forum.js: Beispielerweiterung des Forums - HBS  {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Beispielerweiterung von Forum - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -145,7 +145,7 @@ Um eine JavaScript-Implementierung der Komponenten zu erweitern, gehen Sie folge
 
 ## Skript-Tags {#script-tags}
 
-Skript-Tags sind ein wesentlicher Bestandteil des clientseitigen Frameworks. Sie sind der Kleber, der dazu beiträgt, das auf der Serverseite erzeugte Markup mit den Modellen und Ansichten auf der Clientseite zu binden.
+Skript-Tags sind ein wesentlicher Bestandteil des clientseitigen Frameworks. Sie sind der Kleber, der dazu beiträgt, das auf der Server-Seite generierte Markup mit den Modellen und Ansichten auf der Client-Seite zu binden.
 
 Skript-Tags in SCF-Skripten sollten beim Überlagern oder Überschreiben von Komponenten nicht entfernt werden. SCF-Skript-Tags, die automatisch zum Einfügen von JSON in die HTML erstellt werden, werden mit dem -Attribut identifiziert `data-scf-json=true`.
 
@@ -192,7 +192,7 @@ Beispiel:
 * Client-Ordnerknoten: `/libs/social/forum/hbs/forum/clientlibs`
 * categories-Eigenschaft: `cq.social.author.hbs.forum`
 
-Hinweis: Während Client-Bibliotheken vom Typ Autor nie andere Bibliotheken einbetten, führen sie ihre Abhängigkeiten auf. Wenn sie in andere Bibliotheken eingebettet sind, werden die Abhängigkeiten nicht automatisch abgerufen und müssen auch eingebettet werden.
+Hinweis: Während Client-Bibliotheken von Autoren nie andere Bibliotheken einbetten, werden ihre Abhängigkeiten aufgelistet. Wenn sie in andere Bibliotheken eingebettet sind, werden die Abhängigkeiten nicht automatisch abgerufen und müssen auch eingebettet werden.
 
 Die erforderlichen Autoren-Client-Bibliotheken können identifiziert werden, indem &quot;author&quot;in die clientlibs eingefügt wird, die für jede SCF-Komponente in der Liste [Handbuch zu Community-Komponenten](components-guide.md).
 
@@ -201,7 +201,7 @@ Die erforderlichen Autoren-Client-Bibliotheken können identifiziert werden, ind
 Jede Site verwaltet Client-Bibliotheken anders. Verschiedene Faktoren sind:
 
 * Gesamtgeschwindigkeit: Vielleicht ist der Wunsch, dass die Site responsiv ist, aber es ist akzeptabel, dass die erste Seite etwas langsam geladen wird. Wenn viele der Seiten dasselbe JavaScript verwenden, können die verschiedenen JavaScript-Elemente in eine clientlib eingebettet und von der ersten zu ladenden Seite aus referenziert werden. Das JavaScript in diesem einzelnen Download bleibt zwischengespeichert, wodurch die Menge der herunterzuladenden Daten für nachfolgende Seiten minimiert wird.
-* Kurzzeit bis zur ersten Seite: Vielleicht ist der Wunsch, dass die erste Seite schnell geladen wird. In diesem Fall befindet sich das JavaScript in mehreren kleinen Dateien, auf die nur bei Bedarf verwiesen wird.
+* Short Time to First Page: Vielleicht ist der Wunsch, dass die erste Seite schnell geladen wird. In diesem Fall befindet sich das JavaScript in mehreren kleinen Dateien, auf die nur bei Bedarf verwiesen wird.
 * Ein Gleichgewicht zwischen dem ersten Seitenladevorgang und nachfolgenden Downloads.
 
 | **[⇐ Funktionsgrundlagen](essentials.md)** | **[Server-seitige Anpassung imetall](server-customize.md)** |

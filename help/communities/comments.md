@@ -1,5 +1,5 @@
 ---
-title: Verwenden von Kommentaren
+title: Kommentare verwenden
 description: Mit der Kommentarfunktion können angemeldete Site-Besucher ihre Meinungen und ihr Wissen austauschen
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -7,14 +7,14 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 7%
 
 ---
 
-# Verwenden von Kommentaren {#using-comments}
+# Kommentare verwenden {#using-comments}
 
 ## Einführung {#introduction}
 
@@ -39,7 +39,7 @@ und ziehen Sie sie an die gewünschte Stelle auf einer Seite, z. B. an die Posit
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/essentials-comments.md#essentials-for-client-side) eingeschlossen sind, wird die `Comments` -Komponente angezeigt.
+Wenn die Variable [erforderliche clientseitige Bibliotheken](/help/communities/essentials-comments.md#essentials-for-client-side) eingeschlossen sind, wird die `Comments` -Komponente angezeigt.
 
 ![comments-component](assets/comments-component.png)
 
@@ -47,9 +47,9 @@ Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/essentials
 >
 >Nur eine `Comments` -Komponente auf einer Seite vorhanden sein. Beachten Sie, dass mehrere Communities-Funktionen bereits Kommentare enthalten, wie z. B. Blog, Kalender, Forum, Fragen und Antworten.
 
-### Konfigurieren von Kommentaren {#configuring-comments}
+### Kommentare konfigurieren {#configuring-comments}
 
-Wählen Sie die platzierte `Comments` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Auswählen der platzierten `Comments` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![Symbol zum Konfigurieren](assets/configure.png)
 
@@ -57,7 +57,7 @@ Wählen Sie die platzierte `Comments` -Komponente, die aufgerufen und ausgewähl
 
 #### Registerkarte &quot;Kommentare&quot; {#comments-tab}
 
-Unter dem **Kommentare** -Registerkarte angeben, wie Kommentare von Besuchern eingegeben werden.
+Unter dem **Kommentare** -Tab angeben, wie Kommentare von Besuchern eingegeben werden.
 
 * **Antworten zulassen**
 
@@ -137,7 +137,7 @@ Unter dem **Benutzermoderation** Registerkarte angeben, wie die veröffentlichte
 
 * **Kennzeichnungslimit**
 
-  Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich der **Schwellenwert für Moderation**. Der Standardwert ist 5.
+  Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich der Zahl **Schwellenwert für Moderation**. Der Standardwert ist 5.
 
 #### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
@@ -175,7 +175,7 @@ Unter dem **Ressourcentypen** Registerkarte den benutzerdefinierten resourceType
 
 * **Ressourcentyp des Kommentars**
 
-  Navigieren Sie zum resourceType eines erweiterten `comments`-Komponente (Kommentarsystem) in /apps. Leer lassen, es sei denn, die Seitenvorlage [dynamisch enthält](/help/communities/scf.md#add-or-include-a-communities-component) das Kommentar-System im zugrunde liegenden Skript, anstatt als Ressource (Kommentarknoten) zur Seite hinzugefügt zu werden. Weitere Informationen finden Sie unter [{{include}} Helper](/help/communities/handlebars-helpers.md#include).
+  Navigieren Sie zum resourceType eines erweiterten `comments`-Komponente (Kommentarsystem) in /apps. Leer lassen, es sei denn, die Seitenvorlage [dynamisch enthält](/help/communities/scf.md#add-or-include-a-communities-component) das Kommentar-System im zugrunde liegenden Skript, anstatt als Ressource (Kommentarknoten) zur Seite hinzugefügt zu werden. Weitere Informationen finden Sie unter [`{{include}}` Helper](/help/communities/handlebars-helpers.md#include).
 
 ### Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -198,7 +198,7 @@ Besucher der Website, die nicht angemeldet sind, dürfen veröffentlichte Kommen
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Grundlagen zu Kommentaren](/help/communities/essentials-comments.md) für Entwickler.
+Weitere Informationen finden Sie unter [Kommentare Grundlagen](/help/communities/essentials-comments.md) -Seite für Entwickler.
 
 Informationen zur Moderation von geposteten Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

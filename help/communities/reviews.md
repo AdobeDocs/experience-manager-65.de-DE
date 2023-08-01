@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '1293'
 ht-degree: 4%
@@ -33,13 +33,13 @@ So fügen Sie eine `Reviews` -Komponente auf einer Seite im Autorenmodus verwend
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderliche clientseitige Bibliotheken](reviews-basics.md#essentials-for-client-side) eingeschlossen sind, wird die `Reviews` wird angezeigt.
+Wenn die Variable [erforderliche clientseitige Bibliotheken](reviews-basics.md#essentials-for-client-side) eingeschlossen sind, wird die `Reviews` -Komponente angezeigt.
 
 ![create-review](assets/create-review.png)
 
 ## Konfigurieren von Überprüfungen {#configuring-reviews}
 
-Wählen Sie die platzierte `Reviews` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Auswählen der platzierten `Reviews` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
@@ -53,7 +53,7 @@ Unter dem **[!UICONTROL Zulässige Bewertungen]** -Tab die vollständige Liste d
 
   Verwenden Sie die Schaltflächen nach oben, nach unten und zum Löschen, um die sichtbaren Auswahlen zu ändern.
 
-  Klicken **[!UICONTROL Element hinzufügen]** , um eine weitere Bewertungsoption hinzuzufügen.
+  Klicks **[!UICONTROL Element hinzufügen]** , um eine weitere Bewertungsoption hinzuzufügen.
 
 Unter dem **[!UICONTROL Erforderliche Bewertungen]** Registerkarte erneut Elemente aus der Liste der **[!UICONTROL Zulässige Bewertungen]** die bewertet werden müssen. Wenn ein Element nur auf der Registerkarte Zulässige Bewertungen angegeben wird, kann es beim Senden durch das Mitglied nicht markiert bleiben.
 
@@ -63,15 +63,15 @@ Auf der Website sind erforderliche Bewertungen mit einem Sternchen gekennzeichne
 
 * **[!UICONTROL Erforderliche Bewertungen]**
 
-  Eine Untergruppe zulässiger Ratings, die angibt, welche Ratings erforderlich sind.
+  Eine Untergruppe zulässiger Bewertungen, die angibt, welche Bewertungen erforderlich sind.
 
   Verwenden Sie die Schaltflächen nach oben, nach unten und zum Löschen, um die sichtbaren Auswahlen zu ändern.
 
-  Klicken **[!UICONTROL Element hinzufügen]** , um eine weitere Antwortoption hinzuzufügen.
+  Klicks **[!UICONTROL Element hinzufügen]** , um eine weitere Antwortoption hinzuzufügen.
 
 >[!NOTE]
 >
->Wenn ein Element in der Variablen **[!UICONTROL Erforderliche Bewertungen]** Registerkarte, die nicht im **[!UICONTROL Zulässige Bewertungen]** und dann nicht in den zu bewertenden Elementen enthalten ist.
+>Wenn ein Element in der Variablen **[!UICONTROL Erforderliche Bewertungen]** -Registerkarte, die nicht im **[!UICONTROL Zulässige Bewertungen]** und dann nicht in den zu bewertenden Elementen enthalten ist.
 
 Unter dem **[!UICONTROL Überprüfungen]** -Registerkarte angeben, wie Überprüfungen verarbeitet werden.
 
@@ -147,7 +147,7 @@ Unter dem **[!UICONTROL Benutzermoderation]** Registerkarte angeben, wie die ver
 
 * **[!UICONTROL Kennzeichnungslimit]**
 
-  Geben Sie an, wie oft eine Überprüfung gekennzeichnet werden muss, bevor sie in der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich der **[!UICONTROL Schwellenwert für Moderation]**. Der Standardwert ist 5.
+  Geben Sie an, wie oft eine Überprüfung gekennzeichnet werden muss, bevor sie in der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich der Zahl **[!UICONTROL Schwellenwert für Moderation]**. Der Standardwert ist 5.
 
 ### Hinzufügen einer Bewertungszusammenfassung (Anzeige) zu einer Seite {#adding-a-review-summary-display-to-a-page}
 
@@ -159,7 +159,7 @@ und ziehen Sie sie an eine Stelle auf einer Seite, auf der eine Zusammenfassung 
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderliche clientseitige Bibliotheken](reviews-basics.md#essentials-for-client-side) eingeschlossen sind, wird die `Reviews Summary (Display)`wird angezeigt.
+Wenn die Variable [erforderliche clientseitige Bibliotheken](reviews-basics.md#essentials-for-client-side) eingeschlossen sind, wird die `Reviews Summary (Display)`-Komponente angezeigt.
 
 ![review-summary](assets/configure-review5.png)
 
@@ -169,7 +169,7 @@ Wenn die [erforderliche clientseitige Bibliotheken](reviews-basics.md#essentials
 
 ### Konfigurieren der Bewertungszusammenfassung (Anzeige) {#configuring-reviews-summary-display}
 
-Wählen Sie die platzierte `Reviews Summary (Display)` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Auswählen der platzierten `Reviews Summary (Display)` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -213,7 +213,7 @@ Unter dem **[!UICONTROL Ressourcentypen]** Registerkarte den benutzerdefinierten
 
 * **[!UICONTROL Ressourcentyp des Kommentars]**
 
-  Navigieren Sie zum resourceType eines erweiterten `comments`-Komponente (Kommentarsystem) in /apps. Leer lassen, es sei denn, die Seitenvorlage [dynamisch enthält](scf.md#add-or-include-a-communities-component) das Kommentar-System im zugrunde liegenden Skript, anstatt als Ressource (Kommentarknoten) zur Seite hinzugefügt zu werden. Weitere Informationen finden Sie unter [{{include}} Helper](handlebars-helpers.md#include).
+  Navigieren Sie zum resourceType eines erweiterten `comments`-Komponente (Kommentarsystem) in /apps. Leer lassen, es sei denn, die Seitenvorlage [dynamisch enthält](scf.md#add-or-include-a-communities-component) das Kommentar-System im zugrunde liegenden Skript, anstatt als Ressource (Kommentarknoten) zur Seite hinzugefügt zu werden. Weitere Informationen finden Sie unter [`{{include}}` Helper](handlebars-helpers.md#include).
 
 ## Site-Besuchererlebnis {#site-visitor-experience}
 
@@ -238,7 +238,7 @@ Besucher der Website, die nicht angemeldet sind, dürfen veröffentlichte Rezens
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Grundlagen überprüfen](reviews-basics.md) für Entwickler.
+Weitere Informationen finden Sie unter [Grundlagen überprüfen](reviews-basics.md) -Seite für Entwickler.
 
 Informationen zur Moderation von geposteten Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
