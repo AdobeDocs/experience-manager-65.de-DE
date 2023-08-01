@@ -1,6 +1,6 @@
 ---
 title: Bereitstellen von Dynamic Media-Assets
-description: Informationen zum Bereitstellen von Dynamic Media-Assets
+description: Informationen zum Bereitstellen von Dynamic Media-Assets, wie z. B. Videos und Bilder, auf Ihren Webseiten angezeigt werden.
 uuid: 23eddf83-34f5-4aae-8b81-d1cd7a098a7e
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,10 +11,10 @@ docset: aem65
 role: User, Admin
 exl-id: 274af114-845a-46bd-b091-802cf589687a
 feature: Asset Management,Renditions
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
-workflow-type: ht
-source-wordcount: '310'
-ht-degree: 100%
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 83%
 
 ---
 
@@ -49,6 +49,6 @@ Weitere Informationen finden Sie in den folgenden Themen:
 
 ## Bereitstellung von Dynamic Media-Assets über HTTP/2 {#http-delivery-of-dynamic-media-assets}
 
-Experience Manager unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
+Experience Manager unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Das veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Diese Bereitstellungsmethode verbessert die Kommunikation von Browsern und Servern, sodass die Antwort- und Ladezeiten aller Dynamic Media-Assets verbessert werden.
 
 Weitere Informationen finden Sie unter [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](/help/sites-administering/scene7-http2faq.md).

@@ -1,6 +1,6 @@
 ---
 title: Veröffentlichen von Dynamic Media-Assets
-description: Anleitung zum Veröffentlichen von Dynamic Media-Assets
+description: Erfahren Sie, wie Sie Dynamic Media-Assets wie Videos und Bilder veröffentlichen, einschließlich der HTTP/2-Bereitstellung solcher Assets.
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +10,10 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publishing
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
-workflow-type: ht
-source-wordcount: '461'
-ht-degree: 100%
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+workflow-type: tm+mt
+source-wordcount: '474'
+ht-degree: 88%
 
 ---
 
@@ -42,11 +42,10 @@ Siehe auch [Einbetten des Dynamic Media- oder Bild-Viewers auf einer Web-Seite](
 >* Bild- und Viewer-Vorgaben müssen für die Live-Bereitstellung aktiviert und veröffentlicht sein.
 >
 
-
 Ausführliche Informationen zum Veröffentlichen von Sets oder des Assets finden Sie unter [Veröffentlichen von Assets](manage-assets.md).
 
 ## Bereitstellung von Dynamic Media-Assets über HTTP/2 {#http-delivery-of-dynamic-media-assets}
 
-Experience Manager unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Dieses veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Dieses Bereitstellungsverfahren verbessert die Kommunikation zwischen Browser und Server und verbessert die Antwort- und Ladezeiten aller Dynamic Media-Assets.
+Experience Manager unterstützt jetzt die Bereitstellung aller Dynamic Media-Inhalte (Bilder und Videos) über HTTP/2. Das heißt, dass eine veröffentlichte URL oder ein eingebetteter Code für ein Bild oder Video verfügbar ist und in beliebige Programme integriert werden kann, die gehostete Assets akzeptiert. Das veröffentlichte Asset wird dann über das HTTP/2-Protokoll bereitgestellt. Diese Bereitstellungsmethode verbessert die Kommunikation von Browsern und Servern, sodass die Antwort- und Ladezeiten aller Dynamic Media-Assets verbessert werden.
 
 Weitere Informationen finden Sie unter [Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)](/help/sites-administering/scene7-http2faq.md).

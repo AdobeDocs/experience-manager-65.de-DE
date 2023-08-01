@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren der Dynamic Media-Veröffentlichungseinstellungen für Imageserver
-description: Erfahren Sie, wie Sie Publishing in Dynamic Media einrichten.
+description: Erfahren Sie, wie Sie die Dynamic Media-Veröffentlichungseinstellungen für Image-Server konfigurieren, damit Sie Assets veröffentlichen können. Sie können Ihre Assets auch testen, bevor Sie sie veröffentlichen.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,10 +9,10 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
-source-git-commit: 25fe5e240fd7404cb07375325e1f7b6a32923bfd
-workflow-type: ht
-source-wordcount: '3494'
-ht-degree: 100%
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+workflow-type: tm+mt
+source-wordcount: '3511'
+ht-degree: 99%
 
 ---
 
@@ -86,7 +86,7 @@ Diese Einstellungen beziehen sich auf das standardmäßige Erscheinungsbild von 
 | **[!UICONTROL Maximale Größe des Antwortbildes]** | Erforderlich.<br>Nur für neue Dynamic Media-Konten wird die Standardgrößenbeschränkung automatisch auf „Breite: `3000`“ und „Höhe: `3000`“ sowohl für **[!UICONTROL Bildbereitstellung]** als auch für **[!UICONTROL Testbildbereitstellung]** festgelegt.<br>Gibt die maximale Breite und Höhe des Antwortbildes an, das an den Client zurückgegeben wird. Der Server gibt einen Fehler zurück, wenn eine Anfrage zu einem Antwortbild führt, dessen Breite und/oder Höhe größer als diese Einstellung ist.<br>Siehe auch den Parameter [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Verschleierungsmodus für Anfragen]** | Aktivieren Sie diese Option, wenn die base64-Codierung auf gültige Anfragen angewendet werden soll.<br>Siehe auch den Parameter [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Verschlüsselungsmodus für Anfragen]** | Aktivieren Sie diese Option, wenn in Anfragen eine einfache Hash-Sperre enthalten sein soll.<br>Siehe auch den Parameter [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch. |
-| **[!UICONTROL Standardattribute für Anfragen]** |  |
+| **[!UICONTROL Standardattribute für Anfragen]** | |
 | **[!UICONTROL Standarderweiterung für Bilddatei]** | Erforderlich.<br>Standard-Datendateierweiterung, die an die Werte für Katalogpfad und Maskenpfad angehängt wird, wenn der Pfad keine Dateiendung enthält.<br>Siehe auch den Parameter [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Name der Standardschriftart]** | Gibt an, welche Schriftart verwendet wird, wenn keine Schriftart durch eine Textebenenanforderung bereitgestellt wird. Falls angegeben, muss es sich um einen gültigen Schriftnamenwert in der Schriftartenkarte dieses Bildkatalogs oder in der Schriftartenkarte des Standardkatalogs handeln.<br>Siehe auch den Parameter [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch. |
 | **[!UICONTROL Standardbild]** | Legt fest, welches Standardbild angezeigt werden soll, wenn ein angefordertes Bild nicht gefunden werden kann.<br>Siehe auch den Parameter [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html?lang=de) im Dynamic Media Viewer-Referenzhandbuch.<br>**HINWEIS**: Wenn für Ihr Dynamic Media Classic-Konto bereits ein **[!UICONTROL Standardbild]** ausgewählt ist (wie in der Gruppe **[!UICONTROL Standard-Anfrage-Attribute]** unter **[!UICONTROL Einrichtung]** > **[!UICONTROL Anwendung]** > **[!UICONTROL Veröffentlichungseinstellungen]** festgelegt), ruft Ihr Dynamic Media-Konto in Experience Manager die Datei von Dynamic Media Classic ab. Die Datei wird dann gespeichert und in diesem Feld verfügbar gemacht, wenn Sie die **[!UICONTROL Veröffentlichungseinstellungen für Dynamic Media]** zum ersten Mal öffnen. |
@@ -143,7 +143,7 @@ Siehe auch [IccRenderIntent-Parameter](https://experienceleague.adobe.com/docs/d
 
 ## Testen von Assets vor der Veröffentlichung {#test-assets-before-making-public}
 
-Mit Secure Testing können Sie eine sichere Testumgebung definieren und eine robuste Business-to-Business-Lösung erstellen, die auf einem konfigurierbaren Satz von IP-Adressen und -Bereichen basiert. Mit dieser Funktion können Sie Ihre Adobe Dynamic Media-Implementierungen mit der Architektur Ihres Content-Management- und Business-Systems abgleichen.
+Mit Secure Testing können Sie eine sichere Testumgebung definieren und eine robuste Business-to-Business-Lösung erstellen, die auf einem konfigurierbaren Satz von IP-Adressen und -Bereichen basiert. Mit dieser Funktion können Sie Ihre Adobe Dynamic Media-Bereitstellungen mit der Architektur Ihres Content-Management- und Business-Systems abgleichen.
 
 Mit Secure Testing können Sie eine Vorschau der Staging-Version der Website mit unveröffentlichten Inhalten anzeigen.
 
@@ -192,13 +192,13 @@ Die folgenden Asset-Typen und -Funktionen werden derzeit nicht unterstützt:
 * Web-to-Print
 * UGC-Services (benutzergenerierte Inhalte)
 
-   >[!IMPORTANT]
-   >
-   >Ab dem 1. Mai 2023 stehen UGC-Assets in Dynamic Media bis zu 60 Tage ab dem Datum des Uploads zur Verfügung. Nach 60 Tagen werden die Assets entfernt.
+  >[!IMPORTANT]
+  >
+  >Ab dem 1. Mai 2023 stehen UGC-Assets in Dynamic Media bis zu 60 Tage ab dem Datum des Uploads zur Verfügung. Nach 60 Tagen werden die Assets entfernt.
 
-   >[!NOTE]
-   >
-   >Die Unterstützung für neue oder vorhandene UGC-Vektorbild-Assets in Adobe Dynamic Media wurde am 30. September 2021 eingestellt.
+  >[!NOTE]
+  >
+  >Die Unterstützung für neue oder vorhandene UGC-Vektorbild-Assets in Adobe Dynamic Media wurde am 30. September 2021 eingestellt.
 
 ### Testen des Secure Testing-Services {#test-secure-testing-service}
 
