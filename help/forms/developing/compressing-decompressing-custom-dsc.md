@@ -2,10 +2,10 @@
 title: Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms on JEE
 description: Erfahren Sie, wie Sie Dateien mit einem benutzerdefinierten DSC von AEM Forms on JEE komprimieren und entpacken können.
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '485'
-ht-degree: 100%
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+workflow-type: tm+mt
+source-wordcount: '483'
+ht-degree: 90%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 100%
 
 ## Vorausgesetztes Wissen {#prerequisites}
 
-Erfahrung mit dem Prozess-Management in AEM Forms auf JEE, grundlegender Java-Programmierung und dem Erstellen benutzerdefinierter Komponenten.
+Erfahren Sie mehr über AEM Forms on JEE Process Management, grundlegende Java™-Programmierung und die Erstellung benutzerdefinierter Komponenten.
 
 **Weitere erforderliche Produkte**
 
-Java-Editor, z. B. [Eclipse](https://www.eclipse.org/) oder [Netbeans IDE](https://netbeans.apache.org/)
+Java™-Editor, z. B. [Eclipse](https://www.eclipse.org/) oder [Netbeans IDE](https://netbeans.apache.org/)
 
 ## Benutzerebene {#user-level}
 
@@ -187,7 +187,7 @@ Die Datei component.xml wird hier gezeigt:
 
 ## Kompilieren und Bereitstellen der Komponente {#packaging-deploying-component}
 
-1. Kompilieren Sie das Java-Projekt und erstellen Sie eine JAR-Datei.
+1. Kompilieren Sie das Java™-Projekt und erstellen Sie eine JAR-Datei.
 1. Stellen Sie die Komponente (.JAR-Datei) über Workbench für die Laufzeit von AEM Forms auf JEE bereit.
 1. Starten Sie den Service von Workbench aus (siehe Abbildung unten).
 
@@ -213,7 +213,7 @@ Sie können diesen ZIP-Service für die folgenden Anwendungsfälle verwenden:
 
 * Suchen Sie alle Dateien in einem bestimmten Ordner und geben Sie die Dateien als komprimiertes Dokument zurück.
 
-* Stellen Sie eine ZIP-Datei mit einer Reihe von PDF-Dokumenten bereit, die nach der Dekomprimierung der Dokumente durch einen Leser erweitert werden können. Dies erfordert das Modul Reader Extensions für AEM Forms auf JEE.
+* Geben Sie eine ZIP-Datei mit mehreren PDF-Dokumenten an, die nach der Dekomprimierung der-Dokumente durch einen Leser erweitert werden können. Dies erfordert das Modul Reader Extensions für AEM Forms auf JEE.
 
 * Geben Sie eine ZIP-Datei mit heterogenem Dokumenttyp an, die mithilfe des Generate-PDF-Service dekomprimiert und zu einem PDF-Dokument konvertiert werden kann.
 

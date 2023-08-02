@@ -1,33 +1,29 @@
 ---
 title: Angeben der XCI-Konfigurationsoptionen
-seo-title: Specifying XCI configuration options
-description: Erfahren Sie, wie Sie XCI-Konfigurationsoptionen festlegen.
-seo-description: Learn how to specify XCI configuration options.
-uuid: 5d3c10c1-4a93-4336-b311-20faaf835b9f
+description: Erfahren Sie, wie Sie XCI-Konfigurationsoptionen angeben.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 162c9fda-f4d4-4ad5-a9ab-7554828e821c
 exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '130'
-ht-degree: 100%
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+workflow-type: tm+mt
+source-wordcount: '128'
+ht-degree: 7%
 
 ---
 
 # Angeben der XCI-Konfigurationsoptionen {#specifying-xci-configuration-options}
 
-Forms ermöglicht Ihnen, eine benutzerdefinierte XCI-Datei anzugeben, die für die Wiedergabe verwendet werden soll. (Siehe [Speicherorte für Forms konfigurieren](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Standardmäßig setzt Forms einige der in der XCI-Datei festgelegten Optionen außer Kraft:
+Mit Forms können Sie eine benutzerdefinierte XCI-Datei angeben, die für die Wiedergabe verwendet werden kann. (Siehe [Speicherorte für Forms konfigurieren](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms). Standardmäßig überschreibt Forms einige der in der XCI-Datei angegebenen Optionen, darunter die folgenden:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`
 * `config/present/pdf/producer`
 * `config/present/pdf/compression/compressObjectStream`
 
-Sie können Optionen auswählen, die das Außerkraftsetzen der oben angegebenen Optionen verhindern. In diesem Fall verwendet Forms die in der benutzerdefinierten XCI-Datei angegebenen Werte.
+Sie können Optionen auswählen, die das Außerkraftsetzen der oben aufgeführten Optionen verhindern. In diesem Fall verwendet Forms die in der benutzerdefinierten XCI-Datei angegebenen Werte.
 
-1. Klicken Sie in der Administration-Console auf „Dienste“ > „Formulare“.
-1. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen „XCI-Systemstandardoptionen verwenden“. Wenn diese Option ausgewählt ist, verwendet Forms seine Standardwerte für die packets-, creator-, producer- und compressObjectStream-Einstellungen. Bei deaktivierter Option verwendet Forms die in der benutzerdefinierten XCI-Datei angegebenen Werte.
-1. Klicken Sie auf Speichern.
+1. Klicken Sie in Administration Console auf **Dienste** > **Forms**.
+1. Aktivieren oder deaktivieren Sie das Kontrollkästchen &quot;XCI-Systemstandardoptionen verwenden&quot;. Wenn diese Option aktiviert ist, verwendet Forms seine Standardwerte für die Einstellungen &quot;packet&quot;, &quot;creator&quot;, &quot;manufacturer&quot;und &quot;compressObjectStream&quot;. Wenn diese Option deaktiviert ist, verwendet Forms die in der benutzerdefinierten XCI-Datei angegebenen Werte.
+1. Klicken Sie auf **Speichern**.
