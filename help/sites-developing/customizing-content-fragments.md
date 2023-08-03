@@ -1,15 +1,15 @@
 ---
 title: Anpassen und Erweitern von Inhaltsfragmenten
 seo-title: Customizing and Extending Content Fragments
-description: Ein Inhaltsfragment erweitert ein Standard-Asset.
-seo-description: A content fragment extends a standard asset.
+description: Ein Inhaltsfragment erweitert ein Standard-Asset. Erfahren Sie, wie Sie sie anpassen können.
+seo-description: A content fragment extends a standard asset. Learn how you can customize them.
 topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ada61b87753f3f3e70acdca0e946428511bd7b00
 workflow-type: tm+mt
-source-wordcount: '2782'
+source-wordcount: '2788'
 ht-degree: 72%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 72%
 
 # Anpassen und Erweitern von Inhaltsfragmenten{#customizing-and-extending-content-fragments}
 
-Ein Inhaltsfragment erweitert ein Standard-Asset. siehe:
+Ein Inhaltsfragment erweitert ein Standard-Asset. Siehe:
 
 * [Erstellen und Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) und [Seitenbearbeitung mit Inhaltsfragmenten](/help/sites-authoring/content-fragments.md).
 
@@ -61,7 +61,7 @@ Je nach Fragmenttyp werden außerdem Modelle oder Vorlagen verwendet:
 
    * wird zum Definieren von einfachen Inhaltsfragmenten verwendet.
    * Vorlagen definieren die (einfache, schreibgeschützte) Struktur eines Inhaltsfragments bei seiner Erstellung.
-   * Die Vorlage wird beim Erstellen in das Fragment kopiert. sodass weitere Änderungen an der Vorlage nicht in vorhandenen Fragmenten übernommen werden.
+   * Die Vorlage wird beim Erstellen in das Fragment kopiert, sodass weitere Änderungen an der Vorlage nicht in vorhandenen Fragmenten übernommen werden.
    * Funktionen zum Hinzufügen neuer Varianten und dergleichen müssen das Fragment entsprechend aktualisieren.
    * [Inhaltsfragmentvorlagen](/help/sites-developing/content-fragment-templates.md) auf andere Weise als andere Vorlagenkomponenten innerhalb des AEM Ökosystems (z. B. Seitenvorlagen usw.) arbeiten. Daher sollten sie getrennt betrachtet werden.
    * Wenn der MIME-Typ des Inhalts auf einer Vorlage basiert, wird er anhand des tatsächlichen Inhalts verwaltet. Dies bedeutet, dass jedes Element und jede Variante einen anderen MIME-Typ haben kann.
@@ -137,13 +137,13 @@ AEM-Seiten können auf Inhaltsfragmente verweisen, ähnlich wie bei allen andere
 
 * Mit der Komponente können Sie die Variante auswählen, die angezeigt werden soll.
 * Außerdem kann eine Reihe von Absätzen ausgewählt werden, um die Ausgabe zu beschränken, z. B. für die Ausgabe in mehreren Spalten.
-* Die Komponente ermöglicht [Zwischeninhalt](/help/sites-developing/components-content-fragments.md#in-between-content):
+* Die Komponente ermöglicht [Übergangsinhalte](/help/sites-developing/components-content-fragments.md#in-between-content):
 
    * Die Komponente ermöglicht es Ihnen, andere Assets (Bilder usw.) zwischen den Absätzen des Fragments zu platzieren, auf das verwiesen wird.
    * Bei Zwischeninhalten müssen Sie:
 
       * beachten, dass Verweise möglicherweise instabil sind. Bei der Seitenbearbeitung hinzugefügte Zwischeninhalte haben keine feste Beziehung zu dem Absatz, neben dem sie platziert werden; es wird ein neuer Absatz (im Inhaltsfragment-Editor) eingefügt, bevor der Zwischeninhalt die relative Position verlieren kann.
-      * die zusätzlichen Parameter (z. B. Varianten und Absatzfilter) berücksichtigen, um falsche Positivwerte in Suchergebnissen zu vermeiden
+      * die zusätzlichen Parameter (wie Varianten- und Absatzfilter) berücksichtigen, um falsche Positivwerte in Suchergebnissen zu vermeiden
 
 >[!NOTE]
 >
@@ -270,7 +270,7 @@ Die folgenden drei Schnittstellen können als Einstiegspunkte dienen:
   Diese Daten können Folgendes beinhalten:
 
    * Zugriff auf grundlegende Daten (Titel, Beschreibung)
-   * Zugriff auf Vorlagen/Modelle für die Elemente des Fragments:
+   * Greifen Sie auf Vorlagen/Modelle für die Elemente des Fragments zu:
 
       * Listenelementvorlagen
       * Abrufen von Strukturinformationen für ein bestimmtes Element
@@ -415,7 +415,7 @@ Für das Steuern einer Bearbeitungssitzung gelten folgende Voraussetzungen:
 
 * Das Bearbeiten eines Inhaltsfragments, das mehrere Ansichten (d. h. HTML-Seiten) umspannen kann, sollte atomisch sein.
 * Die Bearbeitung sollte auch *transactional*; am Ende der Bearbeitungssitzung müssen die Änderungen entweder übernommen (gespeichert) oder zurückgesetzt (abgebrochen) werden.
-* Edge-Fälle sollten ordnungsgemäß behandelt werden. Dazu gehören Situationen, z. B. wenn der Benutzer die Seite verlässt, indem er manuell eine URL eingibt oder die globale Navigation verwendet.
+* Edge-Fälle sollten ordnungsgemäß verarbeitet werden. Dazu gehören Situationen wie das Verlassen der Seite durch manuelles Eingeben einer URL oder die Verwendung der globalen Navigation.
 * Es sollte eine regelmäßige automatische Speicherung (alle x Minuten) verfügbar sein, um Datenverlust zu vermeiden.
 * Wenn ein Inhaltsfragment von zwei Benutzern gleichzeitig bearbeitet wird, sollten diese die Änderungen der anderen Benutzer nicht überschreiben.
 
@@ -451,9 +451,9 @@ Folgende Prozesse sind involviert:
 
 Die möglichen Aktionen sind:
 
-* Einstieg in eine Seite
+* Seite aufrufen
 
-   * Überprüfen Sie, ob bereits eine Bearbeitungssitzung vorhanden ist. durch Überprüfung des entsprechenden Cookies.
+   * Überprüfen Sie, ob bereits eine Bearbeitungssitzung vorhanden ist, indem Sie das entsprechende Cookie überprüfen.
 
       * Wenn eine existiert, überprüfen Sie, ob die Bearbeitungssitzung für das Inhaltsfragment gestartet wurde, das derzeit bearbeitet wird.
 
@@ -462,7 +462,7 @@ Die möglichen Aktionen sind:
 
       * Wenn keine Bearbeitungssitzung vorhanden ist, warten Sie auf die erste vom Benutzer vorgenommene Änderung (siehe unten).
 
-   * Überprüfen Sie, ob das Inhaltsfragment bereits auf einer Seite referenziert ist, und zeigen Sie entsprechende Informationen an, falls dies der Fall ist.
+   * Überprüfen Sie, ob das Inhaltsfragment bereits auf einer Seite referenziert ist, und zeigen Sie gegebenenfalls entsprechende Informationen an.
 
 * Inhaltsänderung
 
