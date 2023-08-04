@@ -9,10 +9,10 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 000ab7bc9a686b62fcfc122f9cf09129101ec9a8
 workflow-type: tm+mt
-source-wordcount: '4586'
-ht-degree: 47%
+source-wordcount: '4738'
+ht-degree: 45%
 
 ---
 
@@ -69,7 +69,7 @@ Nachdem Sie Ihr AEM Projekt eingerichtet haben, definieren Sie eine Strategie f�
 
    * **Keines**: Adaptive Formulare, die mit dieser Option erstellt wurden, verwenden kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
    * **XML- oder JSON-Schema**: XML- und JSON-Schemata stellen die Struktur dar, in der Daten vom Back-End-System in Ihrer Organisation produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und dem adaptiven Formular mithilfe der Elemente aus dem Schema dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen auf der Registerkarte „Datenmodellobjekt“ des Inhalts-Browsers für das Erstellen von adaptiven Formularen zur Verfügung. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
-   * **XFA-Formularvorlage**: Es ist ein ideales Formularmodell, wenn Sie in XFA-basierte HTML5-Formulare investieren. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln werden in den zugehörigen adaptiven Formularen beibehalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte wie Überprüfungen, Ereignisse, Eigenschaften und Muster.
+   * **XFA-Formularvorlage**: Es ist ein ideales Formularmodell, wenn Sie Investitionen in XFA-basierte HTML5-Formulare haben. Es bietet eine direkte Möglichkeit, Ihre XFA-basierten Formulare in adaptive Formulare zu konvertieren. Alle vorhandenen XFA-Regeln werden in den zugehörigen adaptiven Formularen beibehalten. Die resultierenden adaptiven Formulare unterstützen XFA-Konstrukte wie Überprüfungen, Ereignisse, Eigenschaften und Muster.
    * **Formulardatenmodell**: Dies ist das bevorzugte Formularmodell, wenn Sie Ihre Backend-Systeme wie Datenbanken, Web-Services und AEM-Benutzerprofile integrieren möchten, um adaptive Formulare vorauszufüllen und übermittelte Formulardaten zurück in die Backend-Systeme zu schreiben. Mit einem Formulardatenmodell-Editor können Sie Entitäten und Dienste in einem Formulardatenmodell definieren und konfigurieren, das Sie zum Erstellen adaptiver Formulare verwenden können. Weitere Informationen finden Sie unter [AEM Forms-Datenintegration](/help/forms/using/data-integration.md).
 
 Es ist wichtig, das Datenmodell mit Bedacht auszuwählen, das nicht nur Ihren Anforderungen entspricht, aber Ihre bereits getätigten Investitionen in XSD-Asset XFA-Assets erweitert. Es wird empfohlen, das XSD-Modell zu verwenden, um Formularvorlagen zu erstellen, weil die generiert XML-Daten enthält, die per XPFAD vom Schema definiert wurden. Die Verwendung des XSD-Modells als Standardoption für das Formulardatenmodell ist ebenfalls hilfreich, da es den Formularentwurf vom Back-End-System entkoppelt, das Daten verarbeitet und verbraucht, und die Leistung des Formulars verbessert, da das Formularfeld einer zu einer Zuordnung zugeordnet wird. Außerdem kann BindRef des Felds den XPATH seines Datenwerts in XML erstellen.
@@ -93,7 +93,7 @@ Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](/he
 * Sie können auch bestimmte adaptive Formularkomponenten wie Felder und Bedienfeldlayout anpassen.
 
    * Verwenden Sie die [Überlagerung](/help/sites-developing/overlays.md) Funktionalität von AEM , um eine Kopie einer Komponente zu ändern. Es wird nicht empfohlen, Standardkomponenten zu ändern.
-   * Um das Layout von vordefinierten adaptiven Formularkomponenten in /libs anzupassen, [Erstellen benutzerdefinierter Layoutkomponenten](/help/forms/using/custom-layout-components-forms.md) zusätzlich zu [Standardlayouts](/help/forms/using/layout-capabilities-adaptive-forms.md).
+   * Um das Layout von vordefinierten adaptiven Formularkomponenten in /libs anzupassen, [Erstellen benutzerdefinierter Layoutkomponenten](/help/forms/using/custom-layout-components-forms.md) zusätzlich zu den [Standardlayouts](/help/forms/using/layout-capabilities-adaptive-forms.md).
    * Stellen Sie benutzerdefinierte Interaktivitäten ein, indem Sie benutzerdefinierte Widgets oder Erscheinungsbilder erstellen. Es wird nicht empfohlen, Standardkomponenten zu ändern. Weitere Informationen finden Sie unter [Erscheinungsbild-Framework](/help/forms/using/introduction-widgets.md).
 
 * Weitere Informationen finden Sie unter[ Bearbeiten von persönlichen identifizierbaren Informationen](/help/forms/using/adaptive-forms-best-practices.md#p-handling-personally-identifiable-information-p) für Vorschläge zum Umgang mit PII-Daten.
@@ -103,6 +103,7 @@ Weitere Informationen finden Sie unter [Erstellen eines adaptiven Formulars](/he
 Sie können ein adaptives Formular mithilfe der in **Konfigurations-Browser** aktivierten Formularvorlagen erstellen. Informationen zum Aktivieren der Formularvorlagen finden Sie unter [Erstellen einer adaptiven Formularvorlage](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=de).
 
 Die Formularvorlagen können auch aus Paketen mit adaptiven Formularen, die auf einem anderen Autoren-Computer erstellt werden, hochgeladen werden. Formularvorlagen werden durch die Installation von [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) verfügbar gemacht. Zu den empfohlenen Best Practices gehören:
+
 * Der Ausführungsmodus **nosamplecontent** wird nur für Autor- und nicht für Veröffentlichungsknoten empfohlen.
 * Die Bearbeitung von Assets wie adaptiven Formularen, Designs, Vorlagen oder Cloud-Konfigurationen erfolgt nur über Autorknoten, die auf den konfigurierten Veröffentlichungsknoten veröffentlicht werden können.
 Weitere Informationen finden Sie unter [Veröffentlichung von Formularen und Dokumenten und Veröffentlichungen rückgängig machen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=de)
@@ -121,7 +122,7 @@ Weitere Informationen finden Sie im Abschnitt zu empfohlenen Vorgehensweisen unt
 
 * Adaptive Formularkomponenten werden nur zur Verwendung auf Seiten mit adaptiven Formularen empfohlen. Die Komponenten hängen von ihrer übergeordneten Hierarchie ab. Daher dürfen Sie diese nicht auf der AEM-Seite verwenden.
 
-Weitere Informationen finden Sie unter Komponentenbeschreibungen und Best Practices in [Einführung in das Authoring adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md).
+Siehe auch Komponentenbeschreibungen und Best Practices in [Einführung in das Authoring adaptiver Formulare](/help/forms/using/introduction-forms-authoring.md).
 
 ### Verwenden von Regeln in adaptiven Formularen {#using-rules-in-adaptive-forms}
 
@@ -155,9 +156,42 @@ Der Regeleditor bietet einen visuellen Editor und einen Code-Editor zum Schreibe
 * Autoren adaptiver Formulare müssen möglicherweise JavaScript-Code schreiben, um Geschäftslogik in einem Formular zu erstellen. JavaScript ist zwar leistungsstark und effektiv, aber kann die Sicherheit beeinflussen. Daher müssen Sie sicherstellen, dass der Formularautor eine vertrauenswürdige Person ist und dass Prozesse zum Überprüfen und Genehmigen des JavaScript-Codes vorhanden sind, bevor ein Formular in Produktion genommen wird. Der Administrator kann den Zugriff auf den Regeleditor auf Benutzergruppen je nach Rolle oder Funktion beschränken. Siehe [Zugriff des Regeleditors auf ausgewählte Benutzergruppen gewähren](/help/forms/using/rule-editor-access-user-groups.md).
 * Sie können Ausdrücke in Regeln verwenden, um adaptive Formulare dynamisch zu gestalten. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Weitere Informationen zu Ausdrücken und optimalen Verfahren finden Sie unter[ Adaptive Formularausdrücke](/help/forms/using/adaptive-form-expressions.md). 
 
+* Adobe empfiehlt die Verwendung von synchronen JavaScript-Vorgängen im Vergleich zu asynchronen Vorgängen beim Erstellen von Regeln mit dem Regeleditor. Es wird dringend davon abgeraten, asynchrone Vorgänge zu verwenden. Wenn Sie sich jedoch in einer Situation befinden, in der asynchrone Vorgänge unvermeidbar sind, müssen Sie JavaScript Closure-Funktionen implementieren. Auf diese Weise können Sie wirksam vor potenziellen Race-Bedingungen schützen und sicherstellen, dass Ihre Regelimplementierungen eine optimale Leistung erzielen und die Stabilität im gesamten System erhalten.
+
+  Nehmen wir beispielsweise an, wir müssen Daten aus einer externen API abrufen und dann einige Regeln anwenden, die auf diesen Daten basieren. Wir verwenden einen Abschluss, um den asynchronen API-Aufruf zu verarbeiten und sicherzustellen, dass die Regeln angewendet werden, nachdem die Daten abgerufen wurden. Hier finden Sie den Beispielcode:
+
+  ```JavaScript
+       function fetchDataFromAPI(apiEndpoint, callback) {
+        // Simulate asynchronous API call with setTimeout
+        setTimeout(() => {
+          // Assuming the API call is successful, we receive some data
+          const data = {
+            someValue: 42,
+          };
+          // Invoke the callback with the fetched data
+          callback(data);
+        }, 2000); // Simulate a 2-second delay for the API call
+      }
+      // Rule implementation using Closure
+      function ruleImplementation(apiEndpoint) {
+        // Using a closure to handle the asynchronous API call and rule application
+        // say you have set this value in street field inside address panel
+        var streetField = address.street;
+        fetchDataFromAPI(apiEndpoint, (data) => {
+          streetField.value = data.someValue;
+        });
+      }
+      // Example usage of the rule implementation
+      const apiEndpoint = "https://example-api.com/data";
+      ruleImplementation(apiEndpoint);
+  ```
+
+  In diesem Beispiel `fetchDataFromAPI` simuliert einen asynchronen API-Aufruf mit `setTimeout`. Nachdem die Daten abgerufen wurden, ruft sie die bereitgestellte Callback-Funktion auf, die den Abschluss zur Verarbeitung der nachfolgenden Regelanwendung darstellt. Die `ruleImplementation` -Funktion enthält die Regellogik.
+
+
 ### Arbeiten mit Designs {#working-with-themes}
 
-Adaptiv für Designs ermöglicht es Ihnen, wiederverwendbare Stile zu erstellen, die über Formulare hinweg angewendet werden können, um ein konsistentes Erscheinungsbild und Stile zu erhalten. Es wird empfohlen, Designs zu verwenden, um Formatierung für Formularkomponenten und Bedienfelder zu definieren. Einige Best Practices rund um Themen lauten wie folgt:
+Adaptiv für Designs ermöglicht es Ihnen, wiederverwendbare Stile zu erstellen, die über Formulare hinweg angewendet werden können, um ein konsistentes Erscheinungsbild und Stile zu erhalten. Es wird empfohlen, Designs zu verwenden, um Formatierung für Formularkomponenten und Bedienfelder zu definieren. Einige Best Practices rund um Themen sind:
 
 * Verwenden Sie die Asset-Bibliothek für die schnelle Anwendung von Textstilen, Hintergrund und Bildern. Wenn ein Stil in der Asset-Bibliothek hinzugefügt wird, ist er für andere Designs und im Stilmodus des Formular-Editors verfügbar.
 * Wenden Sie globale Einstellungen wie Schriftart und Seitenhintergrund mithilfe der Seitenebenenauswahl an.
@@ -227,7 +261,7 @@ Ein Datensatzdokument (DoR) ist eine reduzierte PDF-Version eines adaptiven Form
    * **XSD-Schema**: Verwenden Sie die zugeordnete XFA-Vorlage, die dasselbe XML-Schema wie das adaptive Formular verwendet.
    * **Keines**: Verwenden Sie automatisch generierte DoR.
 
-* Konfigurieren Sie Kopf- und Fußzeile, Bilder, Farbe, Schriftart usw. direkt auf der Registerkarte &quot;Datensatzdokument&quot;des adaptiven Formulareditors.
+* Konfigurieren Sie Kopf- und Fußzeile, Bilder, Farbe, Schriftart usw. direkt auf der Registerkarte Datensatzdokument des adaptiven Formulareditors.
 * Verwenden Sie `DoRService`, um das DoR programmatisch zu generieren.
 * Ausgeblendete Felder aus DoR ausschließen.
 * Verwenden Sie den Aufforderungsparameter `afAcceptLang`; um DoR in einem anderen Gebietsschema anzuzeigen.
@@ -320,9 +354,9 @@ In einer Produktionsumgebung wird empfohlen, keine gesendeten Formulardaten in A
 
 ### Umgang mit personenbezogenen Daten {#handling-personally-identifiable-information}
 
-Eine der wichtigsten Herausforderungen für Unternehmen besteht darin, wie personenbezogene Daten (PII) verarbeitet werden können. Einige Best Practices, die Ihnen bei der Verarbeitung solcher Daten helfen, lauten wie folgt:
+Eine der wichtigsten Herausforderungen für Unternehmen besteht darin, wie personenbezogene Daten (PII) verarbeitet werden. Einige Best Practices, die Ihnen bei der Verarbeitung solcher Daten helfen, lauten wie folgt:
 
 * Verwenden Sie einen sicheren externen Speicher wie eine Datenbank, um Daten aus Entwürfen und gesendeten Formularen zu speichern. Siehe [Konfigurieren von externem Speicher für Entwürfe und eingereichte Formulardaten](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
-* Verwenden Sie die Formularkomponente &quot;Bedingungen&quot;, um die ausdrückliche Zustimmung des Benutzers zu erhalten, bevor Sie die automatische Speicherung aktivieren. Aktivieren Sie in diesem Fall die automatische Speicherung nur, wenn der Benutzer den Bedingungen in der Komponente &quot;Allgemeine Geschäftsbedingungen&quot;zustimmt.
+* Verwenden Sie die Formularkomponente &quot;Allgemeine Geschäftsbedingungen&quot;, um die ausdrückliche Zustimmung des Benutzers zu erhalten, bevor Sie die automatische Speicherung aktivieren. Aktivieren Sie in diesem Fall die automatische Speicherung nur, wenn der Benutzer den Bedingungen in der Komponente &quot;Allgemeine Geschäftsbedingungen&quot;zustimmt.
 
 
