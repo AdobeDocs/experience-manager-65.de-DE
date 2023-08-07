@@ -8,9 +8,9 @@ role: Architect, Leader
 exl-id: c630709a-7e8b-417c-83a4-35ca9be832a0
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2359'
-ht-degree: 93%
+ht-degree: 100%
 
 ---
 
@@ -73,7 +73,7 @@ XMP-Writeback wird für die unter [Technische Anforderungen](/help/sites-deployi
 
 Mit [!DNL Adobe Enterprise Manager Assets] können Sie die Metadaten mehrerer Assets gleichzeitig bearbeiten, sodass Sie allgemeine Metadatenänderungen an Assets zusammen vornehmen können. Sie können die Metadaten für mehrere Sammlungen zusammen bearbeiten. Verwenden Sie die Eigenschaftenseite, um Metadatenänderungen an mehreren Assets oder Sammlungen durchzuführen:
 
-* Ändern von Metadateneigenschaften in einen gemeinsamen Wert
+* Metadateneigenschaften in einen gemeinsamen Wert ändern
 * Tags hinzufügen oder ändern
 
 Verwenden Sie zum Anpassen der Seite mit Metadateneigenschaften, einschließlich Hinzufügen, Ändern und Löschen von Metadateneigenschaften, den [Schemaeditor](metadata-config.md#folder-metadata-schema).
@@ -100,7 +100,7 @@ Verwenden Sie zum Anpassen der Seite mit Metadateneigenschaften, einschließlich
 
 Mit [!DNL Assets] können Sie Asset-Metadaten mithilfe einer CSV-Datei in Massen importieren. Sie können für die kürzlich hochgeladenen Assets oder die vorhandenen Assets eine Massenaktualisierung durchführen, indem Sie eine CSV-Datei importieren. Außerdem können Sie Asset-Metadaten von Drittanbietersystemen mithilfe des CSV-Formats in Batches erfassen.
 
-Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann ressourcenintensiv sein, da XMP Writeback-Aktivität aktiviert ist. Planen Sie einen solchen Import während der schlanken Server-Nutzung, damit die Leistung für andere Benutzer nicht beeinträchtigt wird.
+Die Metadaten werden asynchron importiert, sodass der Import die Systemleistung nicht beeinträchtigt. Die gleichzeitige Aktualisierung der Metadaten für mehrere Assets kann aufgrund der XMP-Writeback-Aktivität ressourcenintensiv sein, wenn die Hervorhebung für die Workflows gesetzt ist. Planen Sie einen solchen Import während Zeiten geringer Server-Nutzung, um Leistungseinbußen für andere Benutzende zu vermeiden.
 
 >[!NOTE]
 >
@@ -167,7 +167,7 @@ Weitere Informationen finden Sie unter [Anzeigen und Bearbeiten von Sammlungsmet
 <!-- TBD: Review this overview.
 -->
 
-Wenn Sie ein Metadatenprofil zu einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Das bedeutet, dass Sie einem Ordner nur ein Metadatenprofil zuweisen können. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
+Wenn Sie ein Metadatenprofil zu einem Ordner zuweisen, erben automatisch alle Unterordner das Profil vom übergeordneten Ordner. Demzufolge können Sie einem Ordner nur ein Metadatenprofil zuweisen. Daher sollten Sie die Ordnerstruktur sorgfältig planen, in der Sie Assets hochladen, speichern, verwenden und archivieren.
 
 Wenn Sie einem Ordner ein anderes Metadatenprofil zugewiesen haben, überschreibt das neue Profil das vorherige Profil. Die zuvor vorhandenen Ordner-Assets bleiben unverändert. Das neue Profil wird auf die Assets angewendet, die dem Ordner später hinzugefügt werden.
 
@@ -210,7 +210,7 @@ For details, see [configuration to apply metadata profile globally](/help/assets
 
 ### Entfernen eines Metadatenprofils aus Ordnern {#removing-a-metadata-profile-from-folders}
 
-Wenn Sie ein Metadatenprofil aus einem Ordner entfernen, erben automatisch alle Unterordner das Entfernen des Profils aus dem übergeordneten Ordner. Die Verarbeitung von Dateien, die in den Ordnern stattgefunden hat, bleibt jedoch intakt.
+Wenn Sie ein Metadatenprofil aus einem Ordner entfernen, übernehmen alle Unterordner automatisch die Entfernung des Profils aus dem übergeordneten Ordner. Die Verarbeitung von Dateien, die in den Ordnern stattgefunden hat, bleibt jedoch intakt.
 
 Sie können ein Metadatenprofil aus einem Ordner über das Menü **[!UICONTROL Tools]** oder über die **[!UICONTROL Eigenschaften]** im Ordner entfernen.
 
@@ -241,7 +241,6 @@ Sie können ein Metadatenprofil aus einem Ordner über das Menü **[!UICONTROL T
 >* [Konzepte und Grundlagen von Metadaten](metadata-concepts.md).
 >* [Bearbeiten von Metadateneigenschaften mehrerer Sammlungen](manage-collections.md#editing-collection-metadata-in-bulk)
 >* [Importieren und Exportieren von Metadaten in Experience Manager Assets](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/metadata-import-feature-video-use.html?lang=de)
-
 
 <!-- TBD: Try filling the available information in these topics to the extent possible. As and when complete, publish the sections live.
 
