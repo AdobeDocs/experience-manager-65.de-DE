@@ -8,10 +8,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: a5d38ef6b3281992fd9ac3121cdb6c998631b205
+source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
 workflow-type: tm+mt
-source-wordcount: '1961'
-ht-degree: 9%
+source-wordcount: '1975'
+ht-degree: 10%
 
 ---
 
@@ -20,16 +20,17 @@ ht-degree: 9%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM 6.5 | Dieser Artikel |
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+| AEM 6.5 | Dieser Artikel |
 
-**Gilt für:** ✅ Kernkomponenten des adaptiven Formulars ❎ [Foundation-Komponenten für adaptive Formulare](/help/forms/using/themes.md).
+
+**Gilt für:** ✅ Kernkomponenten des adaptiven Formulars ❎ [Adaptive Form Foundation-Komponenten](/help/forms/using/themes.md).
 
 In AEM Forms 6.5 ist ein Design eine AEM Client-Bibliothek, mit der Sie die Stile (Erscheinungsbild) für ein adaptives Formular definieren. Zu einem Design gehören Stildetails für die Komponenten und Bedienfelder. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, spiegeln die entsprechenden Komponenten den angegebenen Stil wider. Ein Design wird unabhängig voneinander ohne Verweis auf ein adaptives Formular verwaltet und kann über mehrere adaptive Forms hinweg wiederverwendet werden.
 
 ## Verfügbare Designs {#available-theme}
 
-AEM Umgebung 6.5 bietet die folgenden aufgelisteten Designs für Kernkomponenten-basierte adaptive Forms:
+AEM 6.5-Umgebung bietet die folgenden aufgelisteten Designs für Kernkomponenten-basierte adaptive Forms:
 
 * [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
@@ -39,11 +40,11 @@ AEM Umgebung 6.5 bietet die folgenden aufgelisteten Designs für Kernkomponenten
 
 Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (wie Symbole) umfasst, die den Stil Ihres adaptiven Forms definieren. Ein Design für adaptives Formular folgt einer bestimmten Organisation, die aus den folgenden Komponenten besteht:
 
-* `src/theme.scss`: Dieser Ordner enthält die CSS-Datei, die sich auf das gesamte Design auswirkt. Es dient als zentralisierter Ort zur Definition und Verwaltung des Stils und Verhaltens Ihres Designs. Durch Bearbeitung dieser Datei können Sie Änderungen vornehmen, die im gesamten Design allgemein angewendet werden und das Erscheinungsbild und die Funktionalität Ihrer adaptiven Forms- und AEM Sites-Seiten beeinflussen.
+* `src/theme.scss`: Dieser Ordner enthält die CSS-Datei, die einen breiten Einfluss auf das gesamte Design hat. Es dient als zentralisierter Ort zur Definition und Verwaltung des Stils und Verhaltens Ihres Designs. Durch Bearbeitung dieser Datei können Sie Änderungen vornehmen, die im gesamten Design allgemein angewendet werden und das Erscheinungsbild und die Funktionalität Ihrer adaptiven Forms- und AEM Sites-Seiten beeinflussen.
 
 * `src/site`: Dieser Ordner enthält CSS-Dateien, die auf die Seite einer gesamten AEM Site angewendet werden. Diese Dateien bestehen aus Code und Stilen, die sich auf die Funktionalität und das Layout der Seite Ihrer AEM auswirken. Alle hier vorgenommenen Änderungen werden auf allen Seiten Ihrer Site übernommen.
 
-* `src/components`: Die CSS-Dateien in diesem Ordner sind für einzelne AEM Kernkomponenten konzipiert. Jeder dedizierte Ordner für eine Komponente enthält eine `.scss` -Datei, die diese bestimmte Komponente in einem adaptiven Formular formatiert. Beispielsweise wird die `/src/components/button/_button.scss` -Datei enthält Stilinformationen für die Komponente &quot;Adaptive Forms-Schaltfläche&quot;.
+* `src/components`: Die CSS-Dateien in diesem Ordner sind für einzelne AEM Kernkomponenten entwickelt. Jeder dedizierte Ordner für eine Komponente enthält `.scss` -Datei, die diese bestimmte Komponente in einem adaptiven Formular formatiert. Beispielsweise wird die `/src/components/button/_button.scss` -Datei enthält Stilinformationen für die Komponente &quot;Adaptive Forms-Schaltfläche&quot;.
 
   ![Canvas-Design-Struktur](/help/forms/using/assets/component-based-theme-folder-structure.png)
 
@@ -70,9 +71,9 @@ Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Person
 
 ### Voraussetzungen für die Anpassung eines Designs {#prerequisites}
 
-* [Aktivieren der adaptiven Forms-Kernkomponenten](/help/forms/using/enable-adaptive-forms-core-components.md) für Ihre Umgebung.
+* [Aktivieren der Kernkomponenten adaptiver Formulare für Ihre Umgebung.](/help/forms/using/enable-adaptive-forms-core-components.md)
 
-* Installieren Sie die neueste Version von [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven ist ein Werkzeug zur Automatisierung von Builds, das häufig für Java™-Projekte verwendet wird. Durch die Installation der neuesten Version wird sichergestellt, dass Sie über die erforderlichen Abhängigkeiten für die Designanpassung verfügen.
+* Installieren Sie die neueste Version von [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven ist ein Werkzeug zur Automatisierung von Builds, das häufig für Java™-Projekte verwendet wird. Durch die Installation der neuesten Version stellen Sie sicher, dass Sie über die erforderlichen Abhängigkeiten für die Designanpassung verfügen.
 
 * Erfahren Sie, wie Sie eine [Client-Bibliothek in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/clientlibs.html?lang=de). AEM bietet Client-Bibliotheken, mit denen Sie Ihren clientseitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll.
 
@@ -147,7 +148,7 @@ Sie haben die Flexibilität, einzelne Komponenten anzupassen oder Änderungen au
 Die `variable.scss` -Datei enthält die globalen Variablen des Designs. Durch Aktualisierung dieser Variablen können Sie stilistisch relevante Änderungen auf der Designebene vornehmen. Gehen Sie wie folgt vor, um Stile auf Designebene anzuwenden:
 
 1. Öffnen Sie die Datei `<your-theme-sources>/src/site/_variables.scss`, um sie zu bearbeiten.
-1. Ändern Sie den Wert einer beliebigen Eigenschaft. Beispielsweise ist die Standardfehlerfarbe Rot. Um die Fehlerfarbe von Rot in Blau zu ändern, ändern Sie den Farb-Hex-Code der `$error`-Variable. Beispiel: `$error: #196ee5`.
+1. Ändern Sie den Wert einer beliebigen Eigenschaft. Beispielsweise ist die Standardfehlerfarbe Rot. Um die Fehlerfarbe von Rot in Blau zu ändern, ändern Sie den Farb-Hex-Code der `$error`-Variable. Zum Beispiel: `$error: #196ee5`.
 
    ![Beispiel: Fehlerfarbe auf blau eingestellt](/help/forms/using/assets/theme-level-changes.png)
 
@@ -161,7 +162,7 @@ Auf ähnliche Weise können Sie die `variable.scss` -Datei, um Schriftfamilie un
 Sie können auch die Schriftart, Farbe, Größe und andere CSS-Eigenschaften bestimmter Kernkomponenten des adaptiven Formulars anpassen, z. B. Schaltflächen, Kontrollkästchen, Container, Fußzeilen und mehr. Durch Bearbeiten der CSS-Datei, die mit der jeweiligen Komponente verknüpft ist, können Sie deren Stil an das Branding Ihres Unternehmens anpassen. Gehen Sie wie folgt vor, um den Stil einer Komponente anzupassen:
 
 1. Öffnen Sie die Datei `<your-theme-sources>/src/components/<component>/<component.scss>` zur Bearbeitung. Um beispielsweise die Schriftfarbe der Schaltflächenkomponente zu ändern, öffnen Sie die `<your-theme-sources>/src/components/button/button.scss`, Datei .
-1. Ändern Sie den Wert von beliebig gemäß Ihren Anforderungen. Um beispielsweise die Farbe der Schaltflächenkomponente beim Bewegen der Maus auf Grün zu ändern, ändern Sie den Wert der `color: $white` -Eigenschaft in `cmp-adaptiveform-button__widget:hover` -Klasse zu Hexadezimalcode 12b453 oder einer anderen grünen Schattierung. Der endgültige Code sieht wie folgt aus:
+1. Ändern Sie den Wert von beliebig gemäß Ihren Anforderungen. Um beispielsweise die Farbe der Schaltflächenkomponente beim Bewegen der Maus auf Grün zu ändern, ändern Sie den Wert der `color: $white` -Eigenschaft in der `cmp-adaptiveform-button__widget:hover` -Klasse zu Hexadezimalcode 12b453 oder einer anderen grünen Schattierung. Der endgültige Code sieht wie folgt aus:
 
    ```
     .cmp-adaptiveform-button__widget:hover {
@@ -188,7 +189,7 @@ Sie können auch die Schriftart, Farbe, Größe und andere CSS-Eigenschaften bes
 Um ein Design in einer AEM-Instanz bereitzustellen, muss es in eine Client-Bibliothek konvertiert werden. Führen Sie die folgenden Schritte aus, um das Design in eine Client-Bibliothek zu konvertieren:
 
 1. Öffnen Sie die Eingabeaufforderung oder das Terminal-Fenster.
-1. Navigieren Sie zum Ordner `<your-theme-sources>`. Beispiel: `C:\aem-forms-theme-canvas`
+1. Navigieren Sie zum Ordner `<your-theme-sources>`. Zum Beispiel: `C:\aem-forms-theme-canvas`
 1. Führen Sie den folgenden Befehl aus:
 
    ```
@@ -265,8 +266,8 @@ Nachdem Sie das Design in Ihrer lokalen Entwicklungsumgebung erfolgreich geteste
 
 1. Melden Sie sich bei Ihrer AEM an.
 1. Öffnen Sie Package Manager. Die Standard-URL ist `https://localhost:4502/crx/packmgr/index.jsp`.
-1. Klicken **Paket hochladen** und klicken Sie auf **Durchsuchen**.
-1. Navigieren Sie zu und wählen Sie `[AEM Archetype Project Folder]\all\target[appid].all-[version].zip`. Klicken **Öffnen**.
+1. Klicks **Paket hochladen** und klicken **Durchsuchen**.
+1. Navigieren Sie zu und wählen Sie `[AEM Archetype Project Folder]\all\target[appid].all-[version].zip`. Klicks **Öffnen**.
 1. Klicken Sie auf Installieren. Wiederholen Sie diesen Schritt für alle Produktionsumgebungen.
 
 
@@ -292,7 +293,7 @@ Schritte zum Anwenden eines Designs auf ein adaptives Formular:
 
    >[!NOTE]
    >
-   > * Standardmäßig wird die `adaptiveform.theme.canvas3` Design ausgewählt ist.
+   > * Standardmäßig wird die Variable `adaptiveform.theme.canvas3` Design ausgewählt ist.
    > * Sie können ein anderes Design als das **Design-Client-Bibliothek** Dropdown-Menü.
 
 1. Klicken Sie auf **Erstellen**.
@@ -303,7 +304,7 @@ Designs für adaptive Formulare werden als Teil einer Vorlage für adaptive Form
 
 So entfernen Sie nicht verwendete oder unerwünschte Designs:
 
-1. Melden Sie sich bei Ihrer -Autoreninstanz an.
+1. Melden Sie sich bei Ihrer Authoring-Instanz an.
 1. Öffnen Sie `http://[Publish Server URL]:[PORT]/crx/de/index.jsp`
 1. Navigieren Sie zu `apps/[AEM Archetype Project Folder]/clientlibs/[yourtheme]`.
 1. Löschen Sie den Designordner und speichern Sie die Änderungen.
@@ -337,4 +338,5 @@ So entfernen Sie nicht verwendete oder unerwünschte Designs:
 * [Erstellen oder Anpassen von Designs für auf Kernkomponenten basierende adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Erstellen einer Vorlage für auf Kernkomponenten basierende adaptive Forms](template-editor.md)
 * [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Vorlagen für Musterdesigns und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
 

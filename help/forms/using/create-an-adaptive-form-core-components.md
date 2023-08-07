@@ -9,10 +9,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
 workflow-type: tm+mt
-source-wordcount: '1725'
-ht-degree: 32%
+source-wordcount: '1730'
+ht-degree: 51%
 
 ---
 
@@ -83,7 +83,7 @@ Nachdem Sie das Formular zur Bearbeitung geöffnet haben, können Sie verfügbar
 
 ## Konfigurieren der Sendeaktion für ein adaptives Formular {#configure-submit-action-for-form}
 
-Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die über ein adaptives Formular erfasst werden. Sie wird ausgelöst, wenn ein Benutzer in einem adaptiven Formular auf die Schaltfläche Senden klickt. Adaptive Formulare enthalten einige vordefinierte Übermittlungsaktionen. Sie können auch eine standardmäßige Übermittlungsaktion erweitern, um eine eigene benutzerdefinierte Übermittlungsaktion zu erstellen. So konfigurieren Sie eine Sendeaktion für Ihr Formular:
+Mit einer Sendeaktion können Sie das Ziel der Daten auswählen, die über ein adaptives Formular erfasst werden. Eine Sendeaktion wird ausgelöst, wenn eine Benutzerin bzw. ein Benutzer in einem adaptiven Formular auf die Schaltfläche „Senden“ klickt. Adaptive Formulare enthalten einige vordefinierte Sendeaktionen. Sie können außerdem die standardmäßigen Sendeaktionen erweitern, um Ihre eigene benutzerdefinierte Sendeaktion zu erstellen. So konfigurieren Sie eine Sendeaktion für Ihr Formular:
 
 1. Öffnen Sie den Inhaltsbrowser und wählen Sie die **[!UICONTROL Guide Container]** -Komponente Ihres adaptiven Formulars.
 1. Klicken Sie auf die Guide Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/using/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare wird geöffnet.
@@ -102,24 +102,24 @@ Mit einer Übermittlungsaktion können Sie das Ziel der Daten auswählen, die ü
 
 ## Leiten Sie den Benutzer auf eine Seite um oder zeigen Sie bei der Formularübermittlung eine Dankesnachricht an
 
-Beim Senden eines Formulars können Sie den Benutzer zu einer anderen Webseite oder Nachricht umleiten. So leiten Sie den Benutzer um oder konfigurieren die Dankesnachricht:
+Beim Senden eines Formulars können Sie die Benutzenden zu einer anderen Web-Seite oder Nachricht umleiten. So leiten Sie die Benutzenden um oder konfigurieren die Dankesnachricht:
 
 1. Öffnen Sie den Inhaltsbrowser und wählen Sie die **[!UICONTROL Guide Container]** -Komponente Ihres adaptiven Formulars.
 1. Klicken Sie auf die Guide Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/using/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare wird geöffnet.
-1. Öffnen Sie die **[!UICONTROL Einsendung]** Registerkarte.
+1. Öffnen Sie die Registerkarte **[!UICONTROL Übermittlung]**.
 
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld Container für adaptives Formular zu öffnen, um eine Umleitungsseite oder Dankesnachricht zu konfigurieren.](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
    * Um eine Umleitungs-URL zu konfigurieren, wählen Sie für die Option &quot;Beim Senden&quot;die Option **[!UICONTROL Zu URL umleiten]** und eine AEM Sites-Seite durchsuchen und auswählen oder die URL einer externen Seite angeben.
 
-   * Um eine benutzerdefinierte Nachricht oder Dankesnachricht zu konfigurieren, wählen Sie für die Option &quot;Senden&quot;die Option **[!UICONTROL Nachricht anzeigen]** und geben Sie eine Nachricht im **[!UICONTROL Nachrichteninhalt]** ankreuzen. Dies ist ein Rich-Text-Feld. Sie können die Vollbildoption verwenden, um alle verfügbaren Rich-Text-Elemente anzuzeigen.
+   * Um eine benutzerdefinierte Nachricht oder Dankesnachricht zu konfigurieren, wählen Sie für die Option &quot;Senden&quot;die Option **[!UICONTROL Nachricht anzeigen]** und geben Sie eine Nachricht im **[!UICONTROL Nachrichteninhalt]** ankreuzen. Es handelt sich um ein Rich-Text-Feld. Sie können die Vollbildoption verwenden, um alle verfügbaren Rich-Text-Elemente anzuzeigen.
 
 ## Schema oder Formulardatenmodell für ein adaptives Formular konfigurieren {#configure-schema-or-data-model-for-form}
 
 Sie können das Formulardatenmodell verwenden, um ein Formular mit einer Datenquelle zu verbinden und Daten basierend auf Benutzeraktionen zu senden und zu empfangen. Sie können auch ein Formular mit einem JSON-Schema verbinden, um die gesendeten Daten in einem vordefinierten Format zu empfangen. Verbinden Sie basierend auf der Anforderung Ihr Formular mit einem JSON-Schema oder Formulardatenmodell:
 
-* [Erstellen eines JSON-Schemas und Hochladen in Ihre Umgebung](/help/forms/using/adaptive-form-json-schema-form-model.md)
-* [Formulardatenmodell erstellen](/help/forms/using/create-form-data-models.md)
+* [Erstellen Sie ein JSON-Schema und laden Sie es in Ihre Umgebung hoch](/help/forms/using/adaptive-form-json-schema-form-model.md)
+* [Erstellen eines Formulardatenmodells](/help/forms/using/create-form-data-models.md)
 
 ### JSON-Schema oder Formulardatenmodell für Ihr Formular konfigurieren
 
@@ -131,10 +131,10 @@ So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell für Ihr Formu
 
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld Container für adaptives Formular zu öffnen, um ein JSON-Schema oder Formulardatenmodell zu konfigurieren.](/help/forms/using/assets/adaptive-forms-select-form-data-model-or-json-schema.png)
 
-1. Wählen und konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell basierend auf Ihren Anforderungen:
+1. Wählen Sie ein JSON-Schema oder ein Formulardatenmodell aus und konfigurieren Sie es entsprechend Ihren Anforderungen:
 
-   * Wenn Sie die **[!UICONTROL Formularmodell]** verwenden, verwenden Sie die **[!UICONTROL Formulardatenmodell auswählen]** -Option, um ein vorkonfiguriertes Formulardatenmodell auszuwählen.
-   * Wenn Sie die **[!UICONTROL Schema]** verwenden, verwenden Sie die **[!UICONTROL Schema]** -Option, um ein JSON-Schema für Ihr Formular auszuwählen.
+   * Wenn Sie die Option **[!UICONTROL Formularmodell]** wählen, können Sie mit der Option **[!UICONTROL Formulardatenmodell auswählen]** ein vorkonfiguriertes Formulardatenmodell auswählen.
+   * Wenn Sie die Option **[!UICONTROL Schema]** wählen, verwenden Sie die Option **[!UICONTROL Schema]**, um ein JSON-Schema für Ihr Formular auszuwählen.
 
 1. Klicken Sie auf **[!UICONTROL Fertig]**.
 
@@ -144,20 +144,20 @@ So konfigurieren Sie ein JSON-Schema oder ein Formulardatenmodell für Ihr Formu
 
 ## Konfigurieren eines Vorbefüllungs-Dienstes  {#configure-prefill-service-for-form}
 
-Sie können den Vorbefüllungs-Dienst verwenden, um Felder eines adaptiven Formulars mit vorhandenen Daten automatisch auszufüllen. Wenn ein Benutzer ein Formular öffnet, werden die Werte für diese Felder vorbefüllt. Sie haben folgende Möglichkeiten:
+Sie können den Vorbefüllungsdienst verwenden, um Felder eines adaptiven Formulars mit vorhandenen Daten automatisch auszufüllen. Wenn ein Benutzer ein Formular öffnet, werden die Werte für diese Felder vorbefüllt. Sie haben folgende Möglichkeiten:
 
-* [Erstellen eines benutzerdefinierten Vorbefüllungs-Dienstes](/help/forms/using/prepopulate-adaptive-form-fields.md)
-* [Vorfülldienst für Formulardatenmodell verwenden](#fdm-prefill-service)
+* [Erstellen eines benutzerdefinierten Vorbefüllungsdienstes](/help/forms/using/prepopulate-adaptive-form-fields.md)
+* [Verwenden des Vorbefüllungsdienstes für Formulardatenmodelle](#fdm-prefill-service)
 
 ### Verwenden Sie den Vorbefüllungs-Dienst für Formulardatenmodelle, um Felder eines adaptiven Formulars im Voraus auszufüllen. {#fdm-prefill-service}
 
-Sie können den Vorbefüllungs-Dienst für Formulardatenmodelle verwenden, um Felder eines adaptiven Formulars mit einem Formulardatenmodell oder einem benutzerdefinierten Vorbefüllungs-Dienst im Voraus auszufüllen. Der Vorbefüllungs-Dienst für Formulardatenmodelle verwendet die [Dienst für konfiguriertes Formulardatenmodell abrufen](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) , um Daten abzurufen. So verwenden Sie den Vorbefüllungs-Dienst für Formulardatenmodelle für ein adaptives Formular:
+Sie können den Vorbefüllungs-Dienst für Formulardatenmodelle verwenden, um Felder eines adaptiven Formulars mit einem Formulardatenmodell oder einem benutzerdefinierten Vorbefüllungs-Dienst im Voraus auszufüllen. Der Vorbefüllungsdienst für das Formulardatenmodell verwendet den [Get-Dienst des konfigurierten Formulardatenmodells](work-with-form-data-model.md#add-data-model-objects-and-services-add-data-model-objects-and-services) zum Abrufen von Daten. So verwenden Sie den Vorbefüllungsdienst für Formulardatenmodelle eines adaptiven Formulars:
 
 1. Öffnen Sie den Inhaltsbrowser und wählen Sie die **[!UICONTROL Guide Container]** -Komponente Ihres adaptiven Formulars.
 1. Klicken Sie auf die Guide Container-Eigenschaften ![Guide-Eigenschaften](/help/forms/using/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare wird geöffnet.
-1. Klicken Sie auf die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/using/assets/configure-icon.svg) Symbol. Das Dialogfeld Container für adaptive Formulare zum Konfigurieren von Datenmodellen wird geöffnet.
+1. Klicken Sie auf das Symbol für die Eigenschaften des Containers für adaptive Formulare ![Eigenschaften des Containers für adaptive Formulare](/help/forms/using/assets/configure-icon.svg). Das Dialogfeld zum Konfigurieren von Datenmodellen der Container adaptiver Formulare wird geöffnet.
    ![Klicken Sie auf das Schraubenschlüsselsymbol, um das Dialogfeld Container für adaptives Formular zu öffnen, um eine Umleitungsseite oder Dankesnachricht zu konfigurieren.](/help/forms/using/assets/adaptive-forms-container-prefill-service.png)
-1. Formulardatenmodell auswählen. Öffnen Sie die **[!UICONTROL Allgemein]** Registerkarte. Wählen Sie im Vorbefüllungs-Dienst die Option **[!UICONTROL Vorfüllservice für Formulardatenmodell]**.
+1. Formulardatenmodell auswählen. Öffnen Sie die Registerkarte **[!UICONTROL Allgemein]**. Wählen Sie im Vorbefüllungs-Dienst die Option **[!UICONTROL Vorfüllservice für Formulardatenmodell]**.
 1. Klicken Sie auf **[!UICONTROL Fertig]**. Ihr adaptives Formular ist jetzt so konfiguriert, dass es das Vorfüllen des Formulardatenmodells verwendet. Sie können jetzt die [Regeleditor](rule-editor.md) , um Regeln zum Vorausfüllen von Formularfeldern zu erstellen.
 
 <!--
@@ -174,10 +174,10 @@ Sie können den Vorbefüllungs-Dienst für Formulardatenmodelle verwenden, um Fe
 
 * [Verwenden Sie den Regeleditor, um dem Formular dynamisches Verhalten hinzuzufügen](rule-editor.md)
 * [Erstellen oder Anpassen von Designs für auf Kernkomponenten basierende adaptive Forms](create-or-customize-themes-for-adaptive-forms-core-components.md)
-* Erstellen einer Vorlage für auf Kernkomponenten basierende adaptive Forms
+
 
 ## Siehe auch
 
 * [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](create-an-adaptive-form-core-components.md)
 * [Erstellen oder Hinzufügen eines adaptiven Formulars zu einer AEM Sites-Seite oder einem Experience Fragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
+* [Vorlagen für Musterdesigns und Formulardatenmodelle](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
