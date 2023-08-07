@@ -7,9 +7,9 @@ feature: Link Sharing,Asset Management
 exl-id: 20370b00-862e-4d04-af2f-7d1c74a842dd
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1031'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
@@ -26,7 +26,6 @@ ht-degree: 94%
 >
 >* Sie benötigen für die Ordner bzw. Assets, die Sie als Link freigeben möchten, zunächst die Berechtigung `Edit ACL`.
 >* Um E-Mails an Benutzerinnen und Benutzer zu senden, konfigurieren Sie die SMTP-Serverdetails unter [Day CQ Mail Service](#configmailservice).
-
 
 ## Freigeben von Assets {#share-assets}
 
@@ -49,9 +48,9 @@ Die URL für Assets, die Sie freigeben möchten, generieren Sie im Dialogfeld [!
    >
    >Wenn Sie die E-Mail-ID von Benutzerinnen und Benutzern eingeben, die nicht zu Ihrem Unternehmen gehören, wird die E-Mail-ID den Worten [!UICONTROL Externer Benutzer] vorangestellt.
 
-1. Im **[!UICONTROL Betreff]** Geben Sie einen Betreff für das Asset ein, das Sie freigeben möchten.
+1. Geben Sie in das Feld **[!UICONTROL Betreff]** einen Betreff für das freizugebende Asset ein.
 
-1. Im **[!UICONTROL Nachricht]** eine optionale Meldung eingeben.
+1. Geben Sie in das Feld **[!UICONTROL Nachricht]** eine optionale Nachricht ein.
 
 1. Geben Sie im Feld **[!UICONTROL Ablauf]** ein Ablaufdatum und eine Ablaufuhrzeit für den Link an. Die Standard-Ablaufzeit für den Link beträgt einen Tag.
 
@@ -83,8 +82,8 @@ Die URL für Assets, die Sie freigeben möchten, generieren Sie im Dialogfeld [!
 1. Wählen Sie in der Liste der Dienste **[!UICONTROL Day CQ Mail Service]** aus.
 1. Klicken Sie neben dem Service auf **[!UICONTROL Bearbeiten]** und konfigurieren Sie die folgenden Parameter für den **[!UICONTROL Day CQ Mail Service]** mit den angegebenen Details zu ihren Namen:
 
-   * Hostname des SMTP-Servers: Hostname des E-Mail-Servers
-   * SMTP-Server-Anschluss: E-Mail-Server-Anschluss
+   * Host-Name des SMTP-Servers: Host-Name des E-Mail-Servers
+   * SMTP-Server-Port: E-Mail-Server-Port
    * SMTP-Benutzer: Benutzername des E-Mail-Servers
    * SMTP-Kennwort: email server password
 
@@ -106,7 +105,7 @@ Wenn Sie Assets herunterladen, die mithilfe der Linkfreigabe-Funktion freigegebe
 
 ## Best Practices und Fehlerbehebung {#best-practices-and-troubleshooting}
 
-* Asset-Ordner oder Sammlungen, die ein Leerzeichen in ihrem Namen enthalten, werden möglicherweise nicht freigegeben.
+* Asset-Ordner oder Sammlungen, die ein Leerzeichen im Namen enthalten, werden möglicherweise nicht freigegeben.
 * Wenn Benutzerinnen und Benutzer die freigegebenen Assets nicht herunterladen können, fragen Sie bei Ihrem [!DNL Experience Manager]-Admin nach den [Download-Beschränkungen](#configure-maximum-data-size).
 * Wenn Sie keine E-Mail mit Links zu freigegebenen Assets senden oder die anderen Benutzerinnen und Benutzer Ihre E-Mail nicht empfangen können, fragen Sie Ihren [!DNL Experience Manager]-Admin, ob der [E-Mail-Dienst](#configure-day-cq-mail-service) konfiguriert wurde.
 * Wenn Sie Assets nicht mit der Funktion zum Freigeben von Links freigeben können, stellen Sie sicher, dass Sie über die entsprechenden Berechtigungen verfügen. Siehe [Freigeben von Assets](#share-assets).
@@ -117,4 +116,5 @@ Wenn Sie Assets herunterladen, die mithilfe der Linkfreigabe-Funktion freigegebe
    * `http://[aem_server]:[port]/linkshare.html`
    * `http://[aem_server]:[port]/linksharepreview.html`
    * `http://[aem_server]:[port]/linkexpired.html`
-   Rufen Sie in der [!DNL Experience Manager]-Benutzeroberfläche **[!UICONTROL Tools]** > **[!UICONTROL Aktivitäten]** > **[!UICONTROL Web-Konsole]** auf. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]** und ändern Sie die folgenden Eigenschaften im Feld **[!UICONTROL Domains]** in die hier genannten Werte für `local`, `author` und `publish`. Geben Sie für die Eigenschaften `local` und `author` die URL für die lokale und die Autoreninstanz an. Wenn Sie eine einzelne [!DNL Experience Manager]-Autoreninstanz verwenden, geben Sie für die Eigenschaften `local` und `author` denselben Wert an. Geben Sie für Veröffentlichungsinstanzen die URL der [!DNL Experience Manager]-Veröffentlichungsinstanz an.
+
+  Rufen Sie in der [!DNL Experience Manager]-Benutzeroberfläche **[!UICONTROL Tools]** > **[!UICONTROL Aktivitäten]** > **[!UICONTROL Web-Konsole]** auf. Öffnen Sie die Konfiguration **[!UICONTROL Day CQ Link Externalizer]** und ändern Sie die folgenden Eigenschaften im Feld **[!UICONTROL Domains]** in die hier genannten Werte für `local`, `author` und `publish`. Geben Sie für die Eigenschaften `local` und `author` die URL für die lokale und die Autoreninstanz an. Wenn Sie eine einzelne [!DNL Experience Manager]-Autoreninstanz verwenden, geben Sie für die Eigenschaften `local` und `author` denselben Wert an. Geben Sie für Veröffentlichungsinstanzen die URL der [!DNL Experience Manager]-Veröffentlichungsinstanz an.
