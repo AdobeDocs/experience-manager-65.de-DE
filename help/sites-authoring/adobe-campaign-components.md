@@ -10,9 +10,9 @@ discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
 source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2839'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -85,7 +85,7 @@ Sie können ein Bild direkt aus dem [Asset-Browser](/help/sites-authoring/author
 
 Nachdem das Bild hochgeladen wurde (und nicht vorher), können Sie es mittels [Direktbearbeitung](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) zuschneiden und drehen:
 
-![Symbolleiste für die Bearbeitung im Kontext](do-not-localize/chlimage_1-10.png)
+![Symbolleiste für Kontext-Bearbeitung](do-not-localize/chlimage_1-10.png)
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Nachdem das Bild hochgeladen wurde (und nicht vorher), können Sie es mittels [D
 
 Im Vollbildbearbeitungsmodus stehen verschiedene zusätzliche Optionen zur Verfügung, beispielsweise Karte und Zoom:
 
-![Vollbildbearbeitungsmodus](do-not-localize/chlimage_1-11.png)
+![Vollbild-Bearbeitungsmodus](do-not-localize/chlimage_1-11.png)
 
 Wenn ein Bild geladen wird, können folgende Konfigurationen durchgeführt werden:
 
