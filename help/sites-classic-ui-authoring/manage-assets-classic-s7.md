@@ -10,9 +10,9 @@ discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
 source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3532'
-ht-degree: 92%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Weitere Informationen über die Verwendung von Videokomponenten mit Experience M
 
 >[!NOTE]
 >
->Wenn Dynamic Media Classic (Scene7)-Assets nicht ordnungsgemäß angezeigt werden, stellen Sie sicher, dass Dynamic Media [disabled](/help/assets/config-dynamic.md#disabling-dynamic-media) und aktualisieren Sie dann die Seite.
+>Wenn Dynamic Media Classic (Scene7)-Assets nicht korrekt angezeigt werden, stellen Sie sicher, dass Dynamic Media [deaktiviert](/help/assets/config-dynamic.md#disabling-dynamic-media) ist und aktualisieren Sie dann die Seite.
 
 ## Manuelles Veröffentlichen in Dynamic Media Classic (Scene7) aus Assets {#manually-publishing-to-scene-from-assets}
 
@@ -57,7 +57,7 @@ Sie können über die Assets-Konsole in Dynamic Media Classic (Scene7) veröffen
 
 1. Wählen Sie auf der klassischen Experience Manager-Benutzeroberfläche **[!UICONTROL Digitale Assets]** aus, um auf den Digital Asset Manager zuzugreifen.
 
-1. Wählen Sie das Asset (oder die Assets) oder den Ordner aus dem Zielordner aus, den Sie in Dynamic Media Classic (Scene7) veröffentlichen möchten, klicken Sie mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL In Dynamic Media Classic veröffentlichen (Scene7)]**. Alternativ können Sie **[!UICONTROL In Dynamic Media Classic (Scene7) veröffentlichen]** auch im Menü **[!UICONTROL Tools]** auswählen.
+1. Wählen Sie das Asset (oder die Assets) oder den Ordner innerhalb des Zielordners aus, den Sie in Dynamic Media Classic (Scene7) veröffentlichen möchten. Klicken Sie dann mit der rechten Maustaste darauf und wählen Sie **[!UICONTROL In Dynamic Media Classic (Scene7) veröffentlichen]** aus. Alternativ können Sie **[!UICONTROL In Dynamic Media Classic (Scene7) veröffentlichen]** auch im Menü **[!UICONTROL Tools]** auswählen.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
@@ -193,8 +193,8 @@ So fügen Sie ein interaktives Anwendererlebnis zu einer responsiven Website auf
 Auch wenn sich die Konfigurationsoptionen unterscheiden, sind folgende für alle Dynamic Media Classic (Scene7)-Komponenten gleich:
 
 * **Dateiverweis**: Navigieren Sie zu einer Datei, die Sie referenzieren möchten. Der Dateiverweis zeigt die Asset-URL und nicht zwangsläufig die vollständige Dynamic Media Classic (Scene7)-URL, einschließlich der URL-Befehle und -Parameter. Das Hinzufügen von Dynamic Media Classic (Scene7)-Befehlen und -Parametern ist in diesem Feld nicht möglich. Sie müssen über die entsprechende Funktionalität in der Komponente hinzugefügt werden.
-* **Breite** - Hier können Sie die Breite festlegen.
-* **Höhe** - Hier können Sie die Höhe festlegen.
+* **Breite**: Hier können Sie die Breite festlegen.
+* **Höhe**: Hier können Sie die Höhe festlegen.
 
 Sie können diese Konfigurationsoptionen festlegen, indem Sie eine Dynamic Media Classic (Scene7)-Komponente (per Doppelklick) öffnen. Beispiel: Beim Öffnen einer **Zoom**-Komponente:
 
@@ -204,9 +204,9 @@ Sie können diese Konfigurationsoptionen festlegen, indem Sie eine Dynamic Media
 
 Die HTML5-Zoom-Komponente zeigt ein größeres Bild an, wenn Sie die Taste „+“ drücken.
 
-Das Asset verfügt unten über Zoomwerkzeuge. Wählen Sie **[!UICONTROL +]** zum Vergrößern aus. Wählen Sie **[!UICONTROL -]** zum Verkleinern aus. Auswählen der **[!UICONTROL x]** oder der Pfeil zum Zurücksetzen des Zooms bringt das Bild wieder in die Originalgröße zurück, als es importiert wurde. Wählen Sie die diagonalen Pfeile aus, um den Vollbildmodus zu aktivieren. Wählen Sie **[!UICONTROL Bearbeiten]** aus, um die Komponente zu konfigurieren. Mit dieser Komponente können Sie die [für alle Dynamic Media Classic (Scene7)-Komponenten gemeinsamen Einstellungen](#settings-common-to-all-scene-components) konfigurieren.
+Das Asset verfügt unten über Zoomwerkzeuge. Wählen Sie **[!UICONTROL +]** zum Vergrößern aus. Wählen Sie **[!UICONTROL -]** zum Verkleinern aus. Durch Auswählen von **[!UICONTROL x]** oder des Pfeils zum Zurücksetzen des Zooms wird das Bild auf die ursprüngliche Größe zurückgesetzt, wie es importiert wurde. Wählen Sie die diagonalen Pfeile aus, um den Vollbildmodus zu aktivieren. Wählen Sie **[!UICONTROL Bearbeiten]** aus, um die Komponente zu konfigurieren. Mit dieser Komponente können Sie die [für alle Dynamic Media Classic (Scene7)-Komponenten gemeinsamen Einstellungen](#settings-common-to-all-scene-components) konfigurieren.
 
-![Bild der Tulpenblumen in der HTML5-Zoom-Komponente.](do-not-localize/chlimage_1-3.png)
+![Bild von Tulpenblumen in der HTML5-Zoom-Komponente.](do-not-localize/chlimage_1-3.png)
 
 ### Flyout {#flyout}
 
@@ -224,7 +224,7 @@ In der HTML5 Flyout-Komponente wird das Asset als geteilter Bildschirm angezeig
 
 Mit der Dynamic Media Classic (Scene7)-Bildkomponente können Sie Ihren Bildern Dynamic Media Classic (Scene7)-Funktionen hinzufügen, z. B. Dynamic Media Classic (Scene7)-Modifikatoren, Bild- oder Viewer-Vorgaben und Scharfzeichnung. Die Dynamic Media Classic (Scene7)-Bildkomponente ähnelt anderen Bildkomponenten in Experience Manager mit speziellen Dynamic Media Classic (Scene7)-Funktionen. In diesem Beispiel enthält das Bild den URL-Modifikator Dynamic Media Classic (Scene7) mit `&op_invert=1`.
 
-![Bild einer Kugel in der Dynamic Media Classic-Bildkomponente (Scene7)](do-not-localize/chlimage_1-4.png)
+![Bild einer Kugel in der Bildkomponente von Dynamic Media Classic (Scene7)](do-not-localize/chlimage_1-4.png)
 
 **Titel, ALT-Text**: Fügen Sie auf der Registerkarte „Erweitert“ einen Titel zum Bild und alternativen Text für die Benutzerinnen und Benutzer hinzu, die Grafiken deaktiviert haben.
 
@@ -234,7 +234,7 @@ Mit der Dynamic Media Classic (Scene7)-Bildkomponente können Sie Ihren Bildern 
 
 **Viewer-Vorgabe**: Wählen Sie im Dropdown-Menü eine vorhandene Viewer-Vorgabe aus. Wenn die gewünschte Viewer-Vorgabe nicht sichtbar ist, müssen Sie sie möglicherweise sichtbar machen. Siehe „Verwalten von Viewer-Vorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
-**Konfiguration von Dynamic Media Classic (Scene7)** - Wählen Sie die Dynamic Media Classic (Scene7)-Konfiguration aus, die Sie zum Abrufen aktiver Bildvorgaben aus dem SPS verwenden möchten.
+**Dynamic Media Classic (Scene7)-Konfiguration**: Wählen Sie die Dynamic Media Classic (Scene7)-Konfiguration aus, die Sie verwenden möchten, um aktive Bildvorgaben aus dem SPS abzurufen.
 
 **Bildvorgabe**: Wählen Sie im Dropdown-Menü eine vorhandene Bildvorgabe aus. Wenn die gewünschte Bildvorgabe nicht sichtbar ist, müssen Sie sie sichtbar machen. Siehe „Verwalten von Bildvorgaben“. Es ist nicht möglich, eine Viewer-Vorgabe auszuwählen, wenn Sie eine Bildvorgabe verwenden, und umgekehrt.
 
@@ -313,7 +313,7 @@ Weitere Informationen darüber, wie Videos mit Dynamic Media Classic (Scene7)-In
 
 ### Bekannte Einschränkungen für die Videokomponente {#known-limitations-for-the-video-component}
 
-Adobe DAM und WCM zeigen an, ob ein Primärvideo hochgeladen wurde. Sie zeigen diese Proxy-Assets nicht an:
+Adobe DAM und WCM zeigen, ob ein primäres Quellvideo hochgeladen wurde. Sie zeigen diese Proxy-Assets nicht an:
 
 * Dynamic Media Classic (Scene7)-kodierte Ausgabedarstellungen
 * Adaptive Dynamic Media Classic (Scene7)-Videosets 
@@ -340,11 +340,11 @@ Wenn Sie über mehrere Konfigurationen verfügen, zeigt Experience Manager stand
 
 Durchsuchen von Inhalten in Dynamic Media Classic (Scene7) durch Auswahl der Registerkarte **[!UICONTROL S7]**.
 
-Sie können die Konfiguration, auf die Sie zugreifen, ändern, indem Sie die Konfiguration auswählen. Die Ordner ändern sich je nach ausgewählter Konfiguration.
+Sie können die Konfiguration, auf die Sie zugreifen, ändern, indem Sie die Konfiguration auswählen. Die Ordner ändern sich je nach der ausgewählten Konfiguration.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Wie beim Content Finder für Assets können Sie nach Assets suchen und Ergebnisse filtern. Im Gegensatz zum Asset-Finder jedoch bei der Eingabe eines Suchbegriffs in der **S7** tab, den Dateinamen **beginnt mit** die von Ihnen eingegebene Zeichenfolge anstelle der **contain** das Schlüsselwort im Dateinamen.
+Wie bei der Inhaltssuche für Assets können Sie nach Assets suchen und Ergebnisse filtern. Im Gegensatz zur Assets-Suche **beginnt** der Dateiname bei der Eingabe eines Schlüsselworts auf der Registerkarte **S7** jedoch mit der eingegebenen Zeichenfolge, anstatt das Schlüsselwort im Dateinamen zu **enthalten**.
 
 Standardmäßig werden Assets nach Dateinamen angezeigt. Sie können die Ergebnisse aber auch nach Asset-Typ filtern.
 
@@ -365,11 +365,11 @@ Sie können entweder die klassische oder die Touch-optimierte Benutzeroberfläch
 
 Wenn Sie auf einer der Benutzeroberflächen suchen, können Sie nach den folgenden Kriterien filtern (wird hier in der Touch-optimierten Benutzeroberfläche gezeigt):
 
-**Keywords eingeben**: Sie können Assets nach Namen suchen. Bei der Suche entsprechen die von Ihnen eingegebenen Keywords dem Beginn des Dateinamens. Zum Beispiel führt die Eingabe des Worts „schwimmen“ dazu, dass nach Asset-Dateinamen gesucht wird, die mit diesen Buchstaben in dieser Reihenfolge beginnen. Stellen Sie sicher, dass Sie `Enter` nachdem Sie den Begriff eingegeben haben, um das Asset zu finden.
+**Keywords eingeben**: Sie können Assets nach Namen suchen. Bei der Suche entsprechen die von Ihnen eingegebenen Keywords dem Beginn des Dateinamens. Zum Beispiel führt die Eingabe des Worts „schwimmen“ dazu, dass nach Asset-Dateinamen gesucht wird, die mit diesen Buchstaben in dieser Reihenfolge beginnen. Achten Sie darauf, dass Sie `Enter` drücken, nachdem Sie den Begriff eingegeben haben, um das Asset zu finden.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
-**Ordner/Pfad** - Der Name des Ordners basiert auf der von Ihnen ausgewählten Konfiguration. Sie können ein Drilldown in niedrigere Ebenen durchführen, indem Sie auf das Ordnersymbol klicken, einen Unterordner auswählen und dann auf das Häkchen klicken, um ihn auszuwählen.
+**Ordner/Pfad**: Der Name des Ordners basiert auf der von Ihnen ausgewählten Konfiguration. Sie können ein Drilldown in niedrigere Ebenen durchführen, indem Sie auf das Ordnersymbol klicken, einen Unterordner auswählen und dann auf das Häkchen klicken, um ihn auszuwählen.
 
 Wenn Sie ein Keyword eingeben und einen Ordner auswählen, durchsucht Experience Manager diesen Ordner und die zugehörigen Unterordner. Wenn Sie jedoch bei der Suche keine Keywords eingeben, werden durch die Auswahl des Ordners nur die Assets in diesem Ordner angezeigt und nicht in Unterordnern.
 
