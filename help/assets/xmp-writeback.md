@@ -1,15 +1,15 @@
 ---
 title: XMP-Writeback zu Ausgabedarstellungen
-description: Erfahren Sie, wie die XMP-Writeback-Funktion die Metadatenänderungen für ein Asset in alle oder bestimmte Ausgabeformate des Assets propagiert.
+description: Die Funktion „XMP Writeback“ kopiert die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets.
 contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 82148ae5-37e9-4fc5-ada9-db3d91b29c33
 hide: true
 source-git-commit: 8bd103e392bf5630cb2db654dedcfe4f926b2c9d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '808'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 88%
 
 Die XMP-Writeback-Funktion in [!DNL Adobe Experience Manager Assets] repliziert Änderungen von Metadaten in den Ausgabedarstellungen des Original-Assets. Wenn Sie die Metadaten für ein Asset aus Assets heraus ändern oder das Asset hochladen, werden die Änderungen zuerst im Metadaten-Knoten in der Asset-Hierarchie gespeichert.
 
-Mit der XMP-Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets kopieren. Die Funktion schreibt nur die Metadateneigenschaften zurück, die registrierte Namespaces verwenden, d. h. eine Eigenschaft mit dem Namen `dc:title` zurückgeschrieben wird, aber eine Eigenschaft mit dem Namen `mytitle` ist nicht.
+Mit der XMP-Writeback-Funktion können Sie die Metadatenänderungen in alle oder nur in bestimmte Ausgabedarstellungen des Assets kopieren. Die Funktion schreibt nur die Metadateneigenschaften zurück, die den Namespace verwenden, d. h. eine Eigenschaft namens `dc:title` wird zurückgeschrieben, eine Eigenschaft namens `mytitle` jedoch nicht.
 
 Stellen Sie sich vor, Sie ändern die Eigenschaft [!UICONTROL Titel] des Assets `Classic Leather` in `Nylon`.
 
@@ -48,7 +48,7 @@ Um Metadatenänderungen beim Hochladen des Assets in die Ausgabeformate zu propa
 
 Damit die XMP-Writeback-Funktion die Metadatenänderungen in die Ausgabedarstellungen kopieren kann, müssen Sie diese Ausgabeformate im Workflow-Schritt „XMP-Writeback-Vorgang“ des Workflows [!UICONTROL DAM-Metadaten-Writeback] angeben. Standardmäßig ist dieser Schritt mit dem ursprünglichen Format konfiguriert.
 
-Führen Sie die folgenden Schritte aus, damit die XMP Writeback-Funktion Metadaten in die Ausgabedarstellungsminiaturansichten 140.100.png und 319.319.png propagiert.
+Führen Sie folgende Schritte aus, damit die Funktion „XMP Writeback“ Metadaten in die Miniaturansichten „140.100.png“ und „319.319.png“ der Ausgabedarstellung überträgt.
 
 1. Gehen Sie in der Experience Manager-Benutzeroberfläche zu **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]**.
 1. Öffnen Sie über die Seite „Modelle“ das Workflow-Modell **[!UICONTROL DAM-Metadaten-Writeback]**.
@@ -83,7 +83,7 @@ Durch Filtern von XMP-Metadaten über die Zulassungsliste wird dieses Problem be
 
 >[!NOTE]
 >
->Die Filterung funktioniert nur für die Eigenschaften, die aus XMP Quellen in Asset-Binärdateien abgeleitet wurden. Für Eigenschaften, die aus nicht XMP Quellen wie EXIF- und IPTC-Formaten abgeleitet wurden, funktioniert die Filterung nicht. Beispielsweise wird das Datum der Asset-Erstellung in der Eigenschaft `CreateDate` in EXIF TIFF gespeichert. Experience Manager speichert diesen Wert in einem Metadatenfeld namens `exif:DateTimeOriginal`. Da es sich um eine andere Quelle als XMP handelt, funktioniert die Filterung nicht bei dieser Eigenschaft.
+>Die Filterung funktioniert nur für die Eigenschaften, die aus XMP-Quellen in Asset-Binärdateien abgeleitet wurden. Für Eigenschaften, die aus nicht XMP-Quellen abgeleitet werden, wie etwa EXIF- und IPTC-Formate, funktioniert die Filterung nicht. Beispielsweise wird das Datum der Asset-Erstellung in der Eigenschaft `CreateDate` in EXIF TIFF gespeichert. Experience Manager speichert diesen Wert in einem Metadatenfeld namens `exif:DateTimeOriginal`. Da es sich um eine andere Quelle als XMP handelt, funktioniert die Filterung nicht bei dieser Eigenschaft.
 
 1. Um Configuration Manager zu öffnen, rufen Sie `https://[aem_server]:[port]/system/console/configMgr` auf.
 1. Öffnen Sie die Konfiguration **[!UICONTROL Adobe CQ DAM XmpFilter]**.
