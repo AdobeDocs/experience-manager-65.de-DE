@@ -1,7 +1,7 @@
 ---
 title: Verwenden von Adobe Sign in einem adaptiven Formular
 seo-title: Using Adobe Sign in an adaptive form
-description: Aktivieren Sie Workflows für die elektronische Signatur (Adobe Sign) für adaptive Formulare, um Signatur-Workflows zu automatisieren, Prozesse mit einer und mehreren Signaturen zu vereinfachen und Formulare elektronisch von Mobilgeräten zu signieren.
+description: Indem Sie Workflows mit E-Signatur (Adobe Sign) für ein adaptives Formular aktivieren, können Sie Signatur-Workflows automatisieren, Prozesse mit mehreren Signaturen vereinfachen und Formulare von Mobilgeräten aus elektronisch signieren.
 seo-description: Enable e-signature (Adobe Sign) workflows for an adaptive form to automate signing workflows, simplify single and multi-signature processes, and to electronically sign forms from mobile devices.
 uuid: cc3012ed-c318-4529-9adc-61aa5b5761a0
 contentOwner: khsingh
@@ -14,7 +14,7 @@ exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
 source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
 source-wordcount: '3935'
-ht-degree: 84%
+ht-degree: 98%
 
 ---
 
@@ -32,16 +32,16 @@ ht-degree: 84%
 
 In einem typischen Szenario mit [!DNL Adobe Sign] und adaptiven Formularen füllt der Benutzer ein adaptives Formular aus, um eine Dienstleistung zu beantragen. Beispielsweise sind für einen Hypotheken- und Kreditkartenantrag rechtskräftige Signaturen von allen Kreditnehmern und Mitantragstellern erforderlich. Um Workflows für elektronische Signaturen in ähnlichen Szenarien zu aktivieren, können Sie [!DNL Adobe Sign] mit AEM [!DNL Forms] integrieren. Einige weitere Anwendungsbeispiele für [!DNL Adobe Sign] sind:
 
-* Schließt Geschäfte von jedem Gerät mit vollautomatisierten Angebots-, Anführungszeichen- und Vertragsprozessen.
-* Schnelle Fertigstellung von Personalprozessen und Bereitstellung digitaler Erlebnisse für Ihre Mitarbeiter.
-* Verkürzen Sie die Vertragszykluszeiten und integrieren Sie Ihre Anbieter schneller.
+* Geschäftsabschlüsse von jedem Gerät aus mit vollautomatischen Prozessen für Vorschlag, Angebot und Vertrag.
+* Schnelle Fertigstellung von Personalprozessen und Bereitstellung digitaler Erlebnisse für Ihre Angestellten.
+* Kürzere Vertragszyklen und schnelleres Onboarding Ihrer Lieferanten.
 * Erstellen digitaler Workflows zur Automatisierung häufig verwendeter Prozesse.
 
 Die Integration von [!DNL Adobe Sign] in AEM [!DNL Forms] unterstützt folgende Funktionen:
 
 * Workflows für Signaturen eines einzelnen oder mehrerer Benutzer
 * Workflows mit sequenzieller und simultaner Signatur
-* Formularinterne und nicht-formulare Signaturerlebnisse
+* Formularinterne und -externe Signiererlebnisse
 * Signieren von Formularen als anonymer oder angemeldeter Benutzer
 * Dynamische Signaturvorgänge (Integration mit AEM [!DNL Forms]-Workflow)
 * Authentifizierung über Wissensdatenbank, Telefon und Social Media-Profile
@@ -53,7 +53,7 @@ Lernen Sie die [Best Practices für die Verwendung von Adobe Sign mit adaptiven 
 Stellen Sie sicher, dass folgende Voraussetzungen erfüllt sind, bevor Sie [!DNL Adobe Sign] in einem adaptiven Formular verwenden:
 
 * Vergewissern Sie sich, dass der AEM [!DNL Forms]-Cloud-Service für die Verwendung von [!DNL Adobe Sign] konfiguriert ist. Weitere Informationen finden Sie unter [Integrieren von Adobe Sign mit AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
-* Halten Sie die Liste der Unterzeichner bereit. Sie benötigen mindestens eine E-Mail-Adresse für jeden Unterzeichner.
+* Halten Sie die Liste der Unterzeichnenden bereit. Sie benötigen mindestens eine E-Mail-Adresse für jede unterzeichnende Person.
 
 ## Konfigurieren von [!DNL Adobe Sign] für adaptive Formulare {#configure-adobe-sign-for-an-adaptive-form}
 
@@ -118,7 +118,7 @@ Führen Sie die folgenden Schritte aus, um [!DNL Adobe Sign] in einem bestehende
 
 [!DNL Adobe Sign] verfügt über verschiedene Felder, die in einem adaptiven Formular platziert werden können. In diese Felder können verschiedene Datentypen wie Signaturen, Initialen, Firma oder Titel eingegeben werden. Sie helfen dabei, beim Signieren zusätzliche Informationen zusammen mit den Signaturen zu erfassen. Sie können die [!DNL Adobe Sign]-Blockkomponente verwenden, um [!DNL Adobe Sign]-Felder an verschiedenen Stellen in einem adaptiven Formular zu platzieren.
 
-Führen Sie die folgenden Schritte aus, um einem adaptiven Formular Felder hinzuzufügen und verschiedene Optionen im Zusammenhang mit diesen Feldern anzupassen:
+Gehen Sie wie folgt vor, um einem adaptiven Formular Felder hinzuzufügen und verschiedene Optionen für diese Felder anzupassen:
 
 1. Ziehen Sie die Komponente **[!UICONTROL Adobe Sign Block]** per Drag-and-Drop aus dem Komponenten-Browser in das adaptive Formular. Die Komponente [!DNL Adobe Sign]-Block verfügt über alle unterstützten [!DNL Adobe Sign]-Felder. Standardmäßig fügt sie dem adaptiven Formular ein **Signatur**-Feld hinzu.
 
@@ -163,9 +163,9 @@ Führen Sie die folgenden Schritte aus, um einem adaptiven Formular Felder hinzu
 
 Sie können mehrere [!DNL Adobe Sign]-Services für eine Instanz von AEM [!DNL Forms] konfigurieren. Es empfiehlt sich, für jede Funktion (Personalwesen, Finanzen usw.) eine eigene Gruppe von Services zu verwenden. Dies erleichtert das Tracking und die Berichterstellung für signierte Dokumente. So könnte beispielsweise eine Bank mehrere Abteilungen umfassen. In diesem Fall können Sie für jede Abteilung eine eigene Konfiguration einrichten, damit die Dokumente leichter zu verfolgen sind.
 
-Ein Dokument kann auch mehrere Unterzeichner enthalten. Beispielsweise können bei einem Kreditkartenantrag mehrere Antragsteller vorhanden sein. Die Bank benötigt die Unterschriften aller Antragsteller, bevor sie mit der Bearbeitung beginnt. Bei Szenarien mit mehreren Unterzeichnern können Sie festlegen, dass das Dokument in sequenzieller oder simultaner Reihenfolge signiert werden soll.
+Ein Dokument kann auch mehrere Unterzeichnende haben. Beispielsweise können bei einem Kreditkartenantrag mehrere Antragsteller vorhanden sein. Die Bank benötigt die Unterschriften aller Antragsteller, bevor sie mit der Bearbeitung beginnt. Bei Szenarien mit mehreren Unterzeichnenden können Sie wählen, ob diese das Dokument nacheinander oder simultan unterschreiben sollen.
 
-Führen Sie die folgenden Schritte aus, um einen Cloud-Dienst und die Reihenfolge der Signierung auszuwählen:
+Führen Sie die folgenden Schritte aus, um einen Cloud-Service und die Reihenfolge für die Unterzeichnung zu wählen:
 
 ![Cloud-Service](assets/cloud-service.png)
 
@@ -179,16 +179,16 @@ Führen Sie die folgenden Schritte aus, um einen Cloud-Dienst und die Reihenfolg
 
 1. Wählen Sie die Signaturreihenfolge im Dialogfeld **[!UICONTROL Unterzeichner können signieren]**. Die [!DNL Adobe Sign]-Signierer können ein adaptives Formular entweder **[!UICONTROL sequentiell]**, d. h. ein Signierer nach dem anderen, oder **[!UICONTROL gleichzeitig]** in beliebiger Reihenfolge signieren.
 
-   In sequentieller Reihenfolge erhält jeweils nur ein Unterzeichner das Formular zum Signieren. Nachdem ein Unterzeichner das Dokument signiert hat, wird das Formular an den nächsten Unterzeichner gesendet usw.
+   In sequentieller Reihenfolge erhält jeweils nur ein Unterzeichner das Formular zum Signieren. Nachdem die erste Unterzeichnungsperson das Signieren des Dokuments abgeschlossen hat, wird das Dokument an die zweite gesendet usw.
 
-   In gleichzeitiger Reihenfolge können mehrere Unterzeichner ein Formular gleichzeitig signieren.
+   Bei simultaner Reihenfolge können mehrere Unterzeichnende ein Formular gleichzeitig signieren.
 
 1. [Fügen Sie Signierer zu einem adaptiven Formular hinzu](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform) und tippen Sie auf das Symbol „Fertig“ ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), um die Änderungen zu speichern.
 
 
-### Hinzufügen von Unterzeichnern zu einem adaptiven Formular {#addsignerstoanadaptiveform}
+### Hinzufügen von Unterzeichnenden zu einem adaptiven Formular {#addsignerstoanadaptiveform}
 
-Sie können nur einen Unterzeichner oder mehrere Unterzeichner für ein adaptives Formular haben. Wenn Sie einen Unterzeichner hinzufügen, können Sie auch Authentifizierungsdetails für den Unterzeichner konfigurieren. Sie können auch auswählen, ob der Formularbenutzer und der Sänger dieselbe Person sind. Führen Sie die folgenden Schritte aus, um verschiedene Details zu einem Unterzeichner hinzuzufügen und anzugeben:
+Sie können für ein adaptives Formular eine einzelne oder mehrere Unterzeichnungspersonen festlegen. Wenn Sie eine Unterzeichnungsperson hinzufügen, können Sie auch Authentifizierungsdetails für sie konfigurieren. Sie können weiterhin wählen, ob die Person, die das Formular ausfüllt, zugleich die Unterzeichnungsperson ist. Führen Sie die folgenden Schritte durch, um Unterzeichnende hinzuzufügen und ihre Details anzugeben:
 
 1. Tippen Sie im Inhaltsbrowser auf **[!UICONTROL Formular-Container]** und dann auf das Symbol **[!UICONTROL Konfigurieren]** ![configure](assets/configure.png). Dadurch wird der Eigenschaftenbrowser geöffnet, der Eigenschaften des Containers für adaptive Formulare anzeigt.
 1. Erweitern Sie im Eigenschaftenbrowser das Akkordeon **[!UICONTROL Elektronische Signatur]** und wählen Sie die Option **[!UICONTROL Adobe Sign aktivieren]**. Dadurch wird [!DNL Adobe Sign] für ein adaptives Formular aktiviert.
@@ -201,9 +201,9 @@ Sie können nur einen Unterzeichner oder mehrere Unterzeichner für ein adaptive
 
    * **[!UICONTROL Wird das Formular von derselben Person ausgefüllt und signiert?]:** Wählen Sie **Ja**, wenn die Person, die das Formular ausfüllt, auch der erste Unterzeichner ist. Wenn für die Option **Nein** eingestellt ist, können Sie die Komponente für den Signaturschritt nicht im adaptiven Formular verwenden. Wenn im Formular eine Komponente „Unterschriftsschritt“ enthalten ist, wird automatisch „Ja“ für das Feld festgelegt.
 
-   * **[!UICONTROL E-Mail-Adresse des Unterzeichners]:** Geben Sie die E-Mail-Adresse des Unterzeichners an. Der Unterzeichner erhält die zu unterschreibenden Dokumente/das Formular unter der angegebenen E-Mail-Adresse. Sie können entweder eine E-Mail-Adresse in einem Formularfeld, in AEM Benutzerprofil des angemeldeten Benutzers oder manuell eine E-Mail-Adresse eingeben. Dieser Schritt ist obligatorisch. Stellen Sie sicher, dass die E-Mail-Adresse des ersten Signierers oder des einzigen Signierers (im Falle eines einzigen Signierers) nicht mit dem [!DNL Adobe Sign]-Konto identisch ist, das zur Konfiguration der AEM-Cloud-Services verwendet wird.
+   * **[!UICONTROL E-Mail-Adresse des Unterzeichners]:** Geben Sie die E-Mail-Adresse des Unterzeichners an. Der Unterzeichner erhält die zu unterschreibenden Dokumente/das Formular unter der angegebenen E-Mail-Adresse. Sie können eine E-Mail-Adresse verwenden, die in einem Formularfeld im AEM-Benutzerprofil der angemeldeten Person angegeben ist, oder manuell eine E-Mail-Adresse eingeben. Dieser Schritt ist obligatorisch. Stellen Sie sicher, dass die E-Mail-Adresse des ersten Signierers oder des einzigen Signierers (im Falle eines einzigen Signierers) nicht mit dem [!DNL Adobe Sign]-Konto identisch ist, das zur Konfiguration der AEM-Cloud-Services verwendet wird.
 
-   * **[!UICONTROL Authentifizierungsmethode für Unterzeichner]:** Geben Sie die Methode zum Authentifizieren eines Benutzers vor dem Öffnen eines Formulars zum Signieren an. Sie können Authentifizierung per Telefon, Wissensdatenbank und Social Media-Profil wählen. Für Adobe Acrobat Sign Solutions for Government stehen nur Telefon- und wissensbasierte Authentifizierungsoptionen zur Verfügung.
+   * **[!UICONTROL Authentifizierungsmethode für Unterzeichner]:** Geben Sie die Methode zum Authentifizieren einer Person vor dem Öffnen eines Formulars zum Signieren an. Sie können zwischen Authentifizierung per Telefon, Wissensdatenbank und Social Media-Profil wählen. Für Adobe Acrobat Sign Solutions für Behörden stehen nur Telefon- und wissensbasierte Authentifizierungsoptionen zur Verfügung.
 
    >[!NOTE]
    >
@@ -231,7 +231,7 @@ Ein für [!DNL Adobe Sign] aktiviertes adaptives Formular wird darüber hinaus e
 >Data of the adaptive form is stored temporarily on Forms Portal. It is recommended to use [custom storage for Forms Portal](/help/forms/using/configuring-draft-submission-storage.md). It ensures that the PII (personally identifiable information) data is not stored on AEM servers. 
 -->
 
-Ihr Formular-Signiererlebnis ist bereit. Sie können das Formular in der Vorschau anzeigen, um das Signiererlebnis zu überprüfen. Im veröffentlichten Formular werden [!DNL Adobe Sign]-Blockfelder angezeigt, wenn ein Unterzeichner das Formular per E-Mail zum Signieren erhält. Dieses Erlebnis wird auch als nicht formulardefiniertes Signiererlebnis bezeichnet. Sie können für den ersten Unterzeichner auch ein Formular-Signaturerlebnis konfigurieren. Ausführliche Anweisungen finden Sie unter [Erstellen eines Formulars zum Signieren](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
+Damit ist der Ablauf zur Formularunterzeichnung vollständig. Sie können das Formular in der Vorschau anzeigen, um das Signiererlebnis zu überprüfen. Im veröffentlichten Formular werden [!DNL Adobe Sign]-Blockfelder angezeigt, wenn ein Unterzeichner das Formular per E-Mail zum Signieren erhält. Dieses Erlebnis wird auch als formularexternes Signiererlebnis bezeichnet. Sie können für die erste Unterzeichnungsperson auch ein formularinternes Signiererlebnis konfigurieren. Ausführliche Anweisungen dazu finden Sie unter [Erstellen eines formularinternen Signaturvorgangs](../../forms/using/working-with-adobe-sign.md#create-in-form-signing-experience).
 
 ## Konfigurieren von Cloud-Signaturen für ein adaptives Formular {#configure-cloud-signatures-for-an-adaptive-form}
 
@@ -259,7 +259,7 @@ Nachdem Sie die [Eigenschaften des adaptiven Formulars für Adobe Sign bearbeite
 
    Anwenden digitaler Signaturen auf das adaptive Formular mithilfe von:
 
-   * Cloud-Signaturen: Signieren Sie mit einer [digitalen ID](https://helpx.adobe.com/de/sign/kb/digital-certificate-providers.html), die von einem Trust-Dienstleister gehostet wird. Die Option Cloud-Signatur steht Adobe Acrobat Sign Solutions nicht für Behörden zur Verfügung.
+   * Cloud-Signaturen: Signieren Sie mit einer [digitalen ID](https://helpx.adobe.com/de/sign/kb/digital-certificate-providers.html), die von einem Vertrauens-Dienstleister gehostet wird. Die Option der Cloud-Signatur steht bei Adobe Acrobat Sign Solutions für Behörden nicht zur Verfügung.
 
    * Adobe Acrobat oder Reader: Laden Sie das Dokument herunter und öffnen Sie es mit Adobe Acrobat oder Reader, um es mit einer Smart Card, einem USB-Token oder einer dateibasierten digitalen ID zu signieren.
 
@@ -270,22 +270,22 @@ Nachdem Sie die [Eigenschaften des adaptiven Formulars für Adobe Sign bearbeite
    * [Adobe Sign-Unterzeichner zu adaptivem Formular hinzufügen](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)
    * [Senden-Aktion für adaptives Formular wählen](../../forms/using/working-with-adobe-sign.md#selectsubmitactionforanadaptiveform)
 
-## Erstellen eines Formulars zum Signieren {#create-in-form-signing-experience}
+## Erstellen eines formularinternen Signaturvorgangs {#create-in-form-signing-experience}
 
-Ein Benutzer kann auch ein adaptives Formular signieren, während er das Formular ausfüllt. Dieses Erlebnis wird auch als formularinternes Signieren bezeichnet. Das Signiererlebnis im Formular ist nur für den ersten Sänger in einer Umgebung mit mehreren Unterzeichnern verfügbar. Führen Sie die folgenden Schritte aus, um ein Formular-Signiererlebnis für ein adaptives Formular zu erstellen:
+Benutzende können auch ein adaptives Formular direkt signieren, während sie das Formular ausfüllen. Dieses Erlebnis wird auch als formularinternes Signieren bezeichnet. Das formularinterne Signieren ist in einer Umgebung mit mehreren Unterzeichnungspersonen nur für die erste von ihnen verfügbar. Führen Sie die folgenden Schritte aus, um ein formularinternes Signiererlebnis für ein adaptives Formular zu erstellen:
 
-1. [Hinzufügen und Konfigurieren der Signaturschritt-Komponente](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
-1. [Komponente &quot;Zusammenfassungsschritt&quot;hinzufügen](../../forms/using/working-with-adobe-sign.md#configure-the-thank-you-page-or-summary-step-component).
+1. [Fügen Sie die Signaturschritt-Komponente hinzu und konfigurieren Sie sie](../../forms/using/working-with-adobe-sign.md#add-and-configure-the-signature-step-component).
+1. [Fügen Sie die Zusammenfassungsschritt-Komponente hinzu](../../forms/using/working-with-adobe-sign.md#configure-the-thank-you-page-or-summary-step-component).
 
 ![Formularinternes Signierungs-Erlebnis](assets/in_form_signing_experience_new.png)
 
 ### Hinzufügen und Konfigurieren der Signaturschritt-Komponente {#add-and-configure-the-signature-step-component}
 
-Verwenden Sie die Komponente &quot;Signaturschritt&quot;, um einen Bereich bereitzustellen, in dem das ausgefüllte Formular elektronisch signiert werden kann. Wenn der Abschnitt mit der Signaturschritt-Komponente wiedergegeben wird, wird eine signierbare PDF-Version des ausgefüllten Formulars angezeigt. Die Komponente „Signaturschritt“ nimmt die gesamte für das Formular verfügbare Breite ein. Wir empfehlen, keine anderen Komponenten in dem Abschnitt zu platzieren, der die Komponente „Signaturschritt“ enthält.
+Mit der Signaturschritt-Komponente können Sie einen Bereich für die elektronische Unterschrift unter dem ausgefüllten Formular bereitstellen. Wenn der Abschnitt mit der Signaturschritt-Komponente gerendert wird, wird eine signierbare PDF-Version des ausgefüllten Formulars angezeigt. Die Komponente „Signaturschritt“ nimmt die gesamte für das Formular verfügbare Breite ein. Wir empfehlen, keine anderen Komponenten in dem Abschnitt zu platzieren, der die Komponente „Signaturschritt“ enthält.
 
 Führen Sie die folgenden Schritte aus, um die Signaturschritt-Komponente zu konfigurieren:
 
-1. Ziehen Sie die **[!UICONTROL Signaturschritt]** -Komponente aus dem Komponenten-Browser in das Formular ein.
+1. Ziehen Sie die **[!UICONTROL Signaturschritt]**-Komponente per Drag-and-Drop aus dem Komponenten-Browser in das Formular.
 1. Wählen Sie die neu hinzugefügte Komponente „Signaturschritt“ und tippen Sie auf das Symbol **Konfigurieren** ![configure](assets/configure.png). Dadurch wird der Eigenschaftenbrowser geöffnet, der die Eigenschaften des Signaturschritts anzeigt. Konfigurieren Sie die folgenden Eigenschaften:
 
    * **[!UICONTROL Name]**: Geben Sie den Namen der Komponente an.
@@ -320,9 +320,9 @@ Führen Sie die folgenden Schritte aus, um die Signaturschritt-Komponente zu kon
 
 ### Konfigurieren der Komponente für Danksagungsseite oder Zusammenfassungsschritt {#configure-the-thank-you-page-or-summary-step-component}
 
-Die Komponente **Zusammenfassungsschritt** übermittelt automatisch das Formular, befüllt die Informationen auf der angepassten Zusammenfassungsseite und zeigt die Zusammenfassung des übermittelten Formulars an. Sie ruft auch die erforderlichen Informationen in der Rückgabezuordnung ab. Die Komponente „Zusammenfassungsschritt“ nimmt die vollständige für das Formular verfügbare Breite ein. Wir empfehlen, keine anderen Komponenten in dem Abschnitt zu platzieren, der die Komponente „Zusammenfassungsschritt“ enthält.
+Die Komponente **Zusammenfassungsschritt** übermittelt automatisch das Formular, befüllt die Informationen auf der angepassten Zusammenfassungsseite und zeigt die Zusammenfassung des übermittelten Formulars an. Sie ruft darüber hinaus die erforderlichen Informationen in der Rückgabezuordnung ab. Die Komponente „Zusammenfassungsschritt“ nimmt die vollständige für das Formular verfügbare Breite ein. Wir empfehlen, keine anderen Komponenten in dem Abschnitt zu platzieren, der die Komponente „Zusammenfassungsschritt“ enthält.
 
-Jetzt ist die Formularsignaturerfahrung fertig. Sie können das Formular in der Vorschau anzeigen, um das Signiererlebnis zu überprüfen.
+Damit ist der Ablauf zur formularinternen Unterzeichnung vollständig. Sie können das Formular in der Vorschau anzeigen, um das Signiererlebnis zu überprüfen.
 
 ## Häufig gestellte Fragen  {#frequently-asked-questions}
 
@@ -333,14 +333,14 @@ Jetzt ist die Formularsignaturerfahrung fertig. Sie können das Formular in der 
 **A:** Adaptive Formulare, die die erweiterte Vorlage nutzen, sind für die Verwendung von [!DNL Adobe Sign] konfiguriert. Um den Fehler zu beheben, erstellen Sie eine [!DNL Adobe Sign]-Cloud-Konfiguration, wählen Sie sie aus und konfigurieren Sie einen [!DNL Adobe Sign]-Unterzeichner für das adaptive Formular.
 
 **F:** Kann ich [!DNL Adobe Sign]-Text-Tags in einer statischen Textkomponente eines adaptiven Formulars verwenden?
-**A:** Ja, Sie können Text-Tags in einer Textkomponente verwenden, um [!DNL Adobe Sign]-Felder einem adaptiven Formular mit [Datensatzdokument](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) hinzuzufügen (nur Option für automatisch generiertes Datensatzdokument). Informationen zu den Verfahren und Regeln zum Erstellen eines Text-Tags finden Sie in der [Adobe Sign-Dokumentation](https://helpx.adobe.com/de/sign/using/text-tag.html). Beachten Sie außerdem, dass adaptive Formulare nur eingeschränkt für Text-Tags unterstützt werden. Sie können die Text-Tags verwenden, um nur die von [Adobe Sign-Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) unterstützten Felder zu erstellen.
+**A:** Ja, Sie können Text-Tags in einer Textkomponente verwenden, um [!DNL Adobe Sign]-Felder einem adaptiven Formular mit [Datensatzdokument](../../forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) hinzuzufügen (nur Option für automatisch generiertes Datensatzdokument). Informationen zu den Verfahren und Regeln zum Erstellen eines Text-Tags finden Sie in der [Adobe Sign-Dokumentation](https://helpx.adobe.com/de/sign/using/text-tag.html). Beachten Sie außerdem, dass adaptive Formulare Text-Tags nur begrenzt unterstützen. Sie können die Text-Tags verwenden, um nur die von [Adobe Sign-Block](../../forms/using/working-with-adobe-sign.md#configure-cloud-signatures-for-an-adaptive-form) unterstützten Felder zu erstellen.
 
 **F:** AEM [!DNL Forms] stellt sowohl den [!UICONTROL Adobe Sign Block] als auch die Signaturschritt-Komponenten zur Verfügung. Können beide zusammen in einem adaptiven Formular verwendet werden?
 **Antwort:** Sie können beide Komponenten gleichzeitig in einem Formular verwenden. Beachten Sie die folgenden Empfehlungen für die Verwendung dieser Komponenten:
 
-**Adobe Sign Block:** Sie können den [!UICONTROL Adobe Sign-Block] verwenden, um [!UICONTROL Adobe Sign]-Felder an beliebigen Stellen im adaptiven Formular zu platzieren. Dies ermöglicht es auch, den Unterzeichnern bestimmte Felder zuzuweisen. Bei der Vorschau oder Veröffentlichung eines adaptiven Formulars ist [!UICONTROL Adobe Sign Block] standardmäßig nicht sichtbar. Diese Bausteine sind nur im Unterschriftsdokument aktiviert. Im Unterschriftsdokument werden nur die einem Unterzeichner zugewiesenen Felder aktiviert. [!UICONTROL Der Adobe Sign-Block für den ersten und die folgenden Unterzeichner verwendet werden.]
+**Adobe Sign Block:** Sie können den [!UICONTROL Adobe Sign-Block] verwenden, um [!UICONTROL Adobe Sign]-Felder an beliebigen Stellen im adaptiven Formular zu platzieren. Dies ermöglicht es auch, den Unterzeichnern bestimmte Felder zuzuweisen. Bei der Vorschau oder Veröffentlichung eines adaptiven Formulars ist [!UICONTROL Adobe Sign Block] standardmäßig nicht sichtbar. Diese Bausteine sind nur im Signaturdokument aktiviert. Im Signaturdokument werden nur die einer Unterzeichnungsperson zugewiesenen Felder aktiviert. [!UICONTROL Der Adobe Sign-Block für den ersten und die folgenden Unterzeichner verwendet werden.]
 
-**Signaturschrittkomponente:** Sie können die Signaturschritt-Komponente verwenden, um eine Formularunterschriftserfahrung zu erstellen. Dadurch kann nur der erste Unterzeichner unterschreiben, während das Formular ausgefüllt wird. Wenn der Abschnitt mit der Signaturschritt-Komponente wiedergegeben wird, wird eine signierbare PDF-Version des Formulars angezeigt. In der Regel ist dies der letzte oder der vorletzte Abschnitt, auf den die Übersichtskomponente eines Formulars folgt.
+**Signaturschritt-Komponente:** Sie können die Signaturschritt-Komponente verwenden, um eine formularinterne Signaturfunktion zu erstellen. In dem Fall kann nur die erste Unterzeichnungsperson unterschreiben, während das Formular ausgefüllt wird. Wenn der Abschnitt mit der Signaturschritt-Komponente gerendert wird, wird eine signierbare PDF-Version des Formulars angezeigt. In der Regel ist dies der letzte oder der vorletzte Abschnitt, auf den die Übersichtskomponente eines Formulars folgt.
 
 ## Fehlerbehebung {#troubleshoot}
 

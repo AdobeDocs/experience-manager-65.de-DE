@@ -12,7 +12,7 @@ exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
 source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
 source-wordcount: '1040'
-ht-degree: 92%
+ht-degree: 95%
 
 ---
 
@@ -68,7 +68,7 @@ Sie können den Launch über die Sites- oder Launches-Konsole erstellen oder sta
    >
    >Wenn eine Site Sprachstämme unterhalb der obersten Ebene enthält, müssen die Seiten und Verzweigungen für einen Launch unter einem gemeinsamen Sprachstamm liegen.
    >
-   >Wenn Sie versuchen, einen Launch mit einer übergeordneten oder untergeordneten Seite im Quellpfad zu erstellen, schlägt er fehl und gibt den Fehler &quot;Ziel ist bereits unter :path to the page&quot;zurück.
+   >Wenn Sie versuchen, einen Launch mit einer übergeordneten oder untergeordneten Seite im Quellpfad zu erstellen, schlägt er fehl und gibt den Fehler „Ziel existiert bereits unter :Pfad der Seite“ zurück.
 
 1. Für jeden Eintrag können Sie angeben, ob Sie Folgendes möchten:
 
@@ -108,7 +108,7 @@ Wann [Erstellen eines Launches](/help/sites-authoring/launches-creating.md#creat
 >
 >Diese Option ist nur verfügbar, wenn ein Launch über die Konsole **Sites** erstellt wird. Sie steht nicht zur Verfügung, wenn ein Launch über die Konsole **Launches** erstellt wird.
 
-![Verwenden Sie eine neue Vorlage, um die Seite zu ersetzen.](assets/chlimage_1-228.png)
+![Neue Vorlage verwenden, um die Seite zu ersetzen](assets/chlimage_1-228.png)
 
 Die Auswahl dieser Option bewirkt Folgendes:
 

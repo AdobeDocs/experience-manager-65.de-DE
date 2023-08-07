@@ -14,14 +14,14 @@ exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
 source-git-commit: 1036127ae508ec76c868db5fb67709c104c51123
 workflow-type: tm+mt
 source-wordcount: '1250'
-ht-degree: 50%
+ht-degree: 96%
 
 ---
 
 
 # Identitäts-Management{#identity-management}
 
-Einzelne Besucher Ihrer Website können nur identifiziert werden, wenn Sie ihnen die Möglichkeit geben, sich anzumelden. Es gibt verschiedene Gründe, warum Sie eine Anmeldefunktion bereitstellen möchten:
+Einzelne Besucherinnen bzw. Besucher Ihrer Website können nur identifiziert werden, wenn Sie ihnen die Möglichkeit geben, sich anzumelden. Es gibt verschiedene Gründe, warum Sie eine Anmeldemöglichkeit bieten sollten:
 
 * Besuchende der [AEM Communities](/help/communities/overview.md)-Website müssen sich anmelden, um Inhalte an die Community posten zu können.
 * [Geschlossene Benutzergruppen](/help/sites-administering/cug.md)
@@ -44,20 +44,20 @@ Die Anmelde- (und Abmelde)-Funktion wird von einem [Konto mit einem **Profil**](
 
   Wenn Sie nur über eine geringe Anzahl von Profilen verfügen, die ohnehin autorisiert werden müssen, können Sie diese auch direkt registrieren.
 
-Damit sich Besucher registrieren können, können eine Reihe von Komponenten und Formularen verwendet werden, um die erforderlichen Identifizierungsinformationen und dann die zusätzlichen (oft optionalen) Profilinformationen zu erfassen. Nachdem sie sich registriert haben, sollten sie auch in der Lage sein, die von ihnen übermittelten Details zu überprüfen und zu aktualisieren.
+Damit sich Besuchende registrieren können, können eine Reihe von Komponenten und Formularen verwendet werden, um die erforderlichen Identifizierungsinformationen und dann die zusätzlichen (oft optionalen) Profilinformationen zu erfassen. Nachdem sie sich registriert haben, sollten sie auch in der Lage sein, die von ihnen übermittelten Details zu überprüfen und zu aktualisieren.
 
 Zusätzliche Funktionen können konfiguriert oder entwickelt werden:
 
 * Konfigurieren Sie alle erforderlichen Rückwärtsreplikationen.
-* Benutzer können ihr Profil entfernen, indem sie ein Formular zusammen mit einem Workflow entwickeln.
+* Ermöglichen Sie Benutzenden das Entfernen deren Profile, indem Sie ein Formular zusammen mit einem Workflow entwickeln.
 
 >[!NOTE]
 >
->Die im Profil angegebenen Informationen können auch verwendet werden, um dem Benutzer zielgerichtete Inhalte über [Segmente](/help/sites-administering/campaign-segmentation.md) und [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+>Die im Profil angegebenen Informationen können auch verwendet werden, um den Benutzenden über [Segmente](/help/sites-administering/campaign-segmentation.md) und [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) gezielte Inhalte zu liefern.
 
-## Forms registrieren {#registration-forms}
+## Registrierungsformulare {#registration-forms}
 
-A [Formular](/help/sites-authoring/default-components.md#form-component) kann verwendet werden, um die Registrierungsinformationen zu erfassen und dann das neue Konto und Profil zu generieren.
+Ein [Formular](/help/sites-authoring/default-components.md#form-component) kann verwendet werden, um die Registrierungsinformationen zu erfassen und dann das neue Konto und Profil zu generieren.
 
 Benutzerinnen und Benutzer können beispielsweise mithilfe der folgenden Geometrixx-Seite ein neues Profil anfordern:
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
@@ -84,11 +84,11 @@ Benutzende können sich beispielsweise entweder anmelden oder mithilfe der Optio
 
 ## Abmelden {#logging-out}
 
-Da es einen Anmeldemechanismus gibt, ist auch ein Abmeldemechanismus erforderlich. Dies ist als **Abmelden** in Geometrixx.
+Da es einen Anmeldemechanismus gibt, ist auch ein Abmeldemechanismus erforderlich. Dieser ist als Option **Abmelden** in Geometrixx verfügbar.
 
 ## Anzeigen und Aktualisieren eines Profils {#viewing-and-updating-a-profile}
 
-Je nach Ihrem Registrierungsformular kann der Besucher registrierte Informationen in seinem Profil haben. Sie sollten in der Lage sein, dies zu einem späteren Zeitpunkt anzuzeigen und/oder zu aktualisieren. Dies kann mithilfe eines ähnlichen Formulars erfolgen, beispielsweise in Geometrixx:
+Je nach Ihrem Registrierungsformular können die Besuchenden registrierte Informationen in ihren Profilen haben. Sie sollten in der Lage sein, dies zu einem späteren Zeitpunkt anzuzeigen und/oder zu aktualisieren. Dies kann mithilfe eines ähnlichen Formulars erfolgen, beispielsweise in Geometrixx:
 
 ```
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
@@ -103,19 +103,19 @@ Sie können mit dem [ClientContext](/help/sites-administering/client-context.md)
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. Klicken **Mein Profil** in der oberen rechten Ecke. Sie sehen das Profil Ihres aktuellen Kontos. z. B. der Administrator.
-1. Presse **control-alt-C** , um den Client-Kontext zu öffnen.
-1. Klicken Sie oben links im ClientContext auf das **Profil laden** Schaltfläche.
+1. Klicken Sie auf **Mein Profil** in der oberen rechten Ecke. Sie sehen das Profil Ihres aktuellen Kontos. z. B. Admin.
+1. Drücken Sie **Strg+Alt+C**, um den Client-Kontext zu öffnen.
+1. Klicken Sie in der oberen linken Ecke des Client-Kontextes auf die Schaltfläche **Profil laden**.
 
    ![Symbol &quot;Profil laden&quot;](do-not-localize/loadprofile.png)
 
-1. Wählen Sie ein anderes Profil aus der Dropdown-Liste im Dialogfeld aus. Beispiel: **Alison Parker**.
+1. Wählen Sie ein anderes Profil aus der Dropdown-Liste im Dialogfenster aus, zum Beispiel **Alina Schmidt**.
 1. Klicken Sie auf **OK**.
-1. Klicken Sie erneut auf **Mein Profil**. Das Formular wird mit den Details von Alison aktualisiert.
+1. Klicken Sie erneut auf **Mein Profil**. Das Formular wird mit den Details von Alina aktualisiert.
 
    ![Beispielprofil von Alison](assets/profilealison.png)
 
-1. Sie können jetzt **Profil bearbeiten** oder **Kennwort ändern** um die Details zu aktualisieren.
+1. Sie können nun **Profil bearbeiten** oder **Kennwort ändern** verwenden, um die Details zu aktualisieren.
 
 ## Hinzufügen von Feldern zur Profildefinition {#adding-fields-to-the-profile-definition}
 
@@ -150,10 +150,10 @@ Es gibt eine Reihe von Nutzungsszenarien, bei denen es wichtig ist zu wissen, ob
 Dazu gehört das Definieren einer entsprechenden Eigenschaft im Benutzerprofil auf eine Weise, die:
 
 * für den Benutzer sichtbar und zugänglich ist
-* definiert zwei Status für jede Eigenschaft
-* ermöglicht das Umschalten zwischen den beiden definierten Status
+* zwei Status für jede Eigenschaft definiert
+* das Umschalten zwischen den beiden definierten Status ermöglicht
 
-Dies geschieht mit:
+Dies geschieht mithilfe von:
 
 * [Statusanbieter](#state-providers)
 
@@ -174,14 +174,14 @@ Ein Statusanbieter verwaltet den aktuellen Status der betreffenden Eigenschaft z
 
 Statusanbieter werden als Komponenten implementiert und können daher für Ihr Projekt angepasst werden. In Geometrixx umfassen diese Folgendes:
 
-* Forum abonnieren/kündigen (Thema)
-* Freund hinzufügen/entfernen
+* Forumthema abonnieren/kündigen
+* Freund bzw. Freundin hinzufügen/entfernen
 
 ### Workflows {#workflows}
 
 Statusanbieter verwalten eine Profileigenschaft und deren Status.
 
-Es ist ein Workflow erforderlich, um die den Status betreffenden Aktionen zu implementieren. Beispiel: Beim Abonnieren von Benachrichtigungen handhabt der Workflow die tatsächliche Abonnementaktion; bei der Aufhebung des Benachrichtigungsabonnements handhabt der Workflow das Entfernen des Benutzers bzw. der Benutzerin von der Abonnementliste.
+Ein Workflow ist erforderlich, um die statusbezogenen Aktionen zu implementieren. Beispiel: Beim Abonnieren von Benachrichtigungen handhabt der Workflow die tatsächliche Abonnementaktion; bei der Aufhebung des Benachrichtigungsabonnements handhabt der Workflow das Entfernen des Benutzers bzw. der Benutzerin von der Abonnementliste.
 
 ## Profile und Benutzerkonten {#profiles-and-user-accounts}
 
@@ -191,7 +191,7 @@ Das Profil ist unter `/home/users/geometrixx` zu finden:
 
 ![Profile wie in CRXDE angezeigt](assets/chlimage_1-138.png)
 
-Bei einer Standardinstallation (Autor oder Veröffentlichung) hat jeder Lesezugriff auf die gesamten Profilinformationen aller Benutzer. Jeder ist ein &quot;*Integrierte Gruppe, die automatisch alle vorhandenen Benutzer und Gruppen enthält. Die Mitgliederliste kann nicht bearbeitet werden*&quot;.
+Bei einer Standardinstallation (Author oder Publish) hat jeder Lesezugriff auf die gesamten Profilinformationen aller Benutzenden. Jeder ist eine „*Integrierte Gruppe, die automatisch alle vorhandenen Benutzenden und Gruppen enthält. Die Mitgliederliste kann nicht bearbeitet werden*“.
 
 Diese Zugriffsberechtigungen werden durch die folgende Platzhalter-ACL definiert:
 
@@ -217,7 +217,7 @@ Es stehen auch verschiedene Profilkomponenten zur Definition der Profilanforderu
 Diese Komponente bietet Ihnen zwei Felder für:
 
 * die Eingabe eines Passworts
-* eine Überprüfung, um sicherzustellen, dass das Kennwort korrekt eingegeben wurde.
+* eine Überprüfung, um sicherzustellen, dass das Passwort korrekt eingegeben wurde.
 
 Mit den Standardeinstellungen wird die Komponente wie folgt angezeigt:
 
@@ -225,18 +225,18 @@ Mit den Standardeinstellungen wird die Komponente wie folgt angezeigt:
 
 ### Profil – Avatar-Foto {#profile-avatar-photo}
 
-Diese Komponente bietet dem Benutzer einen Mechanismus zum Auswählen und Hochladen einer Avatar-Fotodatei.
+Diese Komponente bietet den Benutzenden einen Mechanismus zum Auswählen und Hochladen einer Avatar-Fotodatei.
 
 ![Avatar-Selektor](assets/dc_profiles_avatarphoto.png)
 
 ### Profil – Genauer Name {#profile-detailed-name}
 
-Mit dieser Komponente kann der Benutzer einen detaillierten Namen eingeben.
+Mit dieser Komponente können die Benutzenden einen detaillierten Namen eingeben.
 
 ![Dialogfeld &quot;Detailname&quot;](assets/dc_profiles_detailedname.png)
 
 ### Profil – Geschlecht {#profile-gender}
 
-Mit dieser Komponente kann der Benutzer sein Geschlecht eingeben.
+Mit dieser Komponente können die Benutzenden ihr Geschlecht eingeben.
 
 ![Geschlechterauswahl](assets/dc_profiles_gender.png)

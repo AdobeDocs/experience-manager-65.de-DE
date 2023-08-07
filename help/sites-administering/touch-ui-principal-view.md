@@ -14,7 +14,7 @@ exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '773'
-ht-degree: 26%
+ht-degree: 95%
 
 ---
 
@@ -23,29 +23,29 @@ ht-degree: 26%
 
 ## Übersicht {#overview}
 
-AEM 6.5 führt die Berechtigungsverwaltung für Benutzer und Gruppen ein. Die Hauptfunktionalität bleibt mit der klassischen Benutzeroberfläche identisch, ist jedoch benutzerfreundlicher und effizienter.
+AEM 6.5 führt die Berechtigungsverwaltung für Benutzende und Gruppen ein. Die Hauptfunktionalität bleibt mit der klassischen Benutzeroberfläche identisch, ist jedoch benutzerfreundlicher und effizienter.
 
 ## Verwendung {#how-to-use}
 
 ### Zugriff auf die Benutzeroberfläche {#accessing-the-ui}
 
-Der Zugriff auf die neue benutzeroberflächenbasierte Berechtigungsverwaltung erfolgt über die Karte Berechtigungen unter Sicherheit , wie unten dargestellt:
+Die Berechtigungsverwaltung, die auf der neuen Benutzeroberfläche basiert, wird wie unten dargestellt unter „Sicherheit“ auf der Karte für Berechtigungen aufgerufen:
 
 ![Benutzeroberfläche für die Berechtigungsverwaltung](assets/screen_shot_2019-03-17at63333pm.png)
 
 Die neue Ansicht erleichtert die Anzeige aller Berechtigungen und Einschränkungen für einen bestimmten Prinzipal auf allen Pfaden, auf denen Berechtigungen explizit gewährt wurden. Dadurch entfällt die Notwendigkeit,
 
-CRXDE zum Verwalten erweiterter Berechtigungen und Einschränkungen. Sie wurde in der gleichen Ansicht konsolidiert. In der Ansicht wird standardmäßig die Gruppe &quot;everyone&quot;verwendet.
+CRXDE zum Verwalten erweiterter Berechtigungen und Einschränkungen zu verwenden. Dies wurde in derselben Ansicht konsolidiert. Standardmäßig wird die Gruppe „alle“ angezeigt.
 
-![Ansicht der Gruppe &quot;Alle&quot;](assets/unu-1.png)
+![Ansicht der Gruppe „alle“](assets/unu-1.png)
 
-Es gibt einen Filter, mit dem der Benutzer den Typ der Prinzipale auswählen kann, die betrachtet werden sollen **Benutzer**, **Gruppen** oder **Alle** und nach einem beliebigen Prinzipal suchen **.**
+Es gibt einen Filter, mit dem die Art der Prinzipale ausgewählt werden kann, um **Benutzende**, **Gruppen** oder **Alle** anzuzeigen und nach jedem Prinzipal zu suchen **.**
 
 ![Suche nach Prinzipaltypen](assets/image2019-3-20_23-52-51.png)
 
 ### Anzeigen von Berechtigungen für einen Prinzipal {#viewing-permissions-for-a-principal}
 
-Im linken Rahmen können Benutzer nach unten scrollen, um einen Prinzipal zu finden oder basierend auf dem ausgewählten Filter nach einer Gruppe oder einem Benutzer zu suchen:
+Im linken Rahmen können Benutzende nach unten scrollen, um einen Prinzipal zu finden oder basierend auf dem ausgewählten Filter nach einer Gruppe oder einer Einzelperson zu suchen:
 
 ![Berechtigungen für einen Prinzipal anzeigen](assets/doi-1.png)
 
@@ -53,9 +53,9 @@ Wenn Sie auf den Namen klicken, werden die zugewiesenen Berechtigungen auf der r
 
 ![ACL-Liste anzeigen](assets/trei-1.png)
 
-### Hinzufügen eines neuen Zugriffssteuerungseintrags für einen Prinzipal {#adding-new-access-control-entry-for-a-principal}
+### Hinzufügen eines neuen Zugriffssteuerungseintrags (Access Control Entry, ACE) für einen Prinzipal {#adding-new-access-control-entry-for-a-principal}
 
-Neue Berechtigungen können hinzugefügt werden, indem Sie einen neuen Zugriffssteuerungseintrag hinzufügen, indem Sie auf die Schaltfläche ACE hinzufügen klicken.
+Neue Berechtigungen können hinzugefügt werden, indem Sie einen neuen Zugriffssteuerungseintrag hinzufügen, wozu Sie auf die Schaltfläche „ACE hinzufügen“ klicken.
 
 ![Neue ACL für einen Prinzipal hinzufügen](assets/patru.png)
 
@@ -73,11 +73,11 @@ Berechtigungen können hinzugefügt werden, indem Sie mithilfe des Textfelds suc
 
 >[!NOTE]
 >
->Eine vollständige Liste der Berechtigungen und Beschreibungen finden Sie unter [diese Seite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Eine vollständige Liste der Berechtigungen und Beschreibungen finden Sie [auf dieser Seite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ![Suchberechtigung für einen bestimmten Pfad.](assets/image2019-3-21_0-5-47.png) ![Fügen Sie neuen Eintrag für &quot;dam-users&quot;hinzu, wie durch einen in vertikalen Spalten ausgewählten Pfad gezeigt.](assets/image2019-3-21_0-6-53.png)
 
-Nachdem die Liste der Berechtigungen ausgewählt wurde, kann der Benutzer den Berechtigungstyp auswählen: Ablehnen oder Zulassen, wie unten dargestellt.
+Nachdem die Liste der Berechtigungen ausgewählt wurde, lässt sich der Berechtigungstyp auswählen: „Ablehnen“ oder „Zulassen“, wie unten dargestellt.
 
 ![Berechtigung auswählen](assets/screen_shot_2019-03-17at63938pm.png) ![Berechtigung auswählen](assets/screen_shot_2019-03-17at63947pm.png)
 
@@ -91,7 +91,7 @@ Zusätzlich zur Liste der Berechtigungen und des Berechtigungstyps für einen be
 >
 >Weitere Informationen zu den einzelnen Beschränkungen finden Sie in der [Jackrabbit Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
-Einschränkungen können wie unten dargestellt hinzugefügt werden, indem Sie den Einschränkungstyp auswählen, den Wert eingeben und auf die **+** Symbol.
+Einschränkungen können wie unten dargestellt hinzugefügt werden, indem Sie den Einschränkungstyp auswählen, den Wert eingeben und auf das **+**-Symbol klicken.
 
 ![Einschränkungstyp hinzufügen](assets/sapte-1.png) ![Einschränkungstyp hinzufügen](assets/opt-1.png)
 
@@ -99,9 +99,9 @@ Der neue ACE wird in der Zugriffssteuerungsliste wie unten dargestellt angezeigt
 
 ### Bearbeiten von ACEs {#editing-aces}
 
-Zugriffssteuerungseinträge können bearbeitet werden, indem Sie einen Prinzipal auswählen und den zu bearbeitenden ACE auswählen.
+Zugriffssteuerungseinträge können bearbeitet werden, indem Sie einen Prinzipal auswählen und dann den zu bearbeitenden ACE.
 
-Hier können wir beispielsweise den folgenden Eintrag für **dam-users** durch Klicken auf das Stiftsymbol auf der rechten Seite:
+Hier können wir beispielsweise den unten stehenden Eintrag für **dam-users** bearbeiten, indem wir auf das Bleistiftsymbol rechts klicken:
 
 ![Einschränkung hinzufügen](assets/image2019-3-21_0-35-39.png)
 
@@ -113,27 +113,27 @@ Hier fügen wir die Berechtigung `addChildNodes` für **dam-users** im angegeben
 
 ![Berechtigung hinzufügen](assets/image2019-3-21_0-45-35.png)
 
-Änderungen können gespeichert werden, indem Sie auf **Speichern** oben rechts, und die Änderungen werden in den neuen Berechtigungen für **dam-users** wie unten gezeigt:
+Änderungen können gespeichert werden, indem Sie oben rechts auf die Schaltfläche **Speichern** klicken. Die geänderten Berechtigungen für **dam-users** werden wie unten dargestellt übernommen:
 
 ![Speichern Sie die Änderungen](assets/zece-1.png)
 
 ### Löschen von ACEs {#deleting-aces}
 
-Zugriffssteuerungseinträge können gelöscht werden, um alle Berechtigungen zu entfernen, die einem Prinzipal für einen bestimmten Pfad erteilt wurden. Das X-Symbol neben ACE kann wie unten gezeigt zum Löschen verwendet werden:
+Zugriffssteuerungseinträge können gelöscht werden, um alle Berechtigungen zu entfernen, die einem Prinzipal für einen bestimmten Pfad erteilt wurden. Das X-Symbol neben dem ACE kann wie unten gezeigt zum Löschen verwendet werden:
 
 ![Löschen von ACEs](assets/image2019-3-21_0-53-19.png) ![Löschen von ACEs](assets/unspe.png)
 
-### Berechtigungskombinationen für die klassische Benutzeroberfläche {#classic-ui-privilege-combinations}
+### Berechtigungskombinationen in der klassischen Benutzeroberfläche {#classic-ui-privilege-combinations}
 
-Beachten Sie, dass die neue Berechtigungs-Benutzeroberfläche explizit den grundlegenden Satz von Berechtigungen anstelle vordefinierter Kombinationen verwendet, die nicht wirklich exakte zugrunde liegende Berechtigungen widerspiegeln, die gewährt wurden.
+Beachten Sie, dass die neue Berechtigungs-Benutzeroberfläche explizit den grundlegenden Satz von Berechtigungen anstelle vordefinierter Kombinationen verwendet, die nicht wirklich exakt die zugrunde liegenden Berechtigungen widerspiegeln, die gewährt wurden.
 
-Dies führte zu Verwirrung darüber, was genau konfiguriert wird. In der folgenden Tabelle finden Sie die Zuordnung zwischen den Berechtigungskombinationen aus der klassischen Benutzeroberfläche zu den tatsächlichen Berechtigungen, aus denen sie bestehen:
+Das führte in der Vergangenheit zu Unklarheit, was genau konfiguriert wird. In der folgenden Tabelle finden Sie die Zuordnung zwischen den Berechtigungskombinationen aus der klassischen Benutzeroberfläche und den tatsächlichen Berechtigungen, aus denen sie bestehen:
 
 <table>
  <tbody>
   <tr>
-   <th>Berechtigungskombinationen für die klassische Benutzeroberfläche</th>
-   <th>Berechtigungen der Benutzeroberfläche für Berechtigungen</th>
+   <th>Berechtigungskombinationen in der klassischen Benutzeroberfläche</th>
+   <th>Berechtigungen der Berechtigungs-Benutzeroberfläche</th>
   </tr>
   <tr>
    <td>Lesen</td>

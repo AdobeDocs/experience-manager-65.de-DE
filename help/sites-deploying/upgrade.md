@@ -11,7 +11,7 @@ exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
 source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
 source-wordcount: '678'
-ht-degree: 48%
+ht-degree: 63%
 
 ---
 
@@ -34,8 +34,8 @@ Dieser Abschnitt behandelt die Aktualisierung einer AEM auf AEM 6.5:
 
 Für ein einfacheres Verständnis der in diesen Verfahren verwendeten AEM-Instanzen werden die folgenden Begriffe in diesen Artikeln verwendet:
 
-* Die *source* -Instanz ist die AEM Instanz, von der Sie ein Upgrade durchführen.
-* Die *target* -Instanz ist die Instanz, auf die Sie aktualisieren.
+* Die Instanz *Quelle* ist die AEM-Instanz, von der Sie aktualisieren.
+* Die Instanz *Ziel* ist diejenige, auf die Sie aktualisieren.
 
 >[!NOTE]
 >
@@ -45,7 +45,7 @@ Für ein einfacheres Verständnis der in diesen Verfahren verwendeten AEM-Instan
 
 Im Folgenden werden die wichtigsten Änderungen der letzten Versionen von AEM beschrieben:
 
-In AEM 6.0 wurde das neue Jackrabbit-Oak-Repository eingeführt. Persistenz-Manager wurden durch [Mikrokernel](/help/sites-deploying/platform.md#contentbody_title_4) ersetzt. Ab Version 6.1 wird CRX2 nicht mehr unterstützt. Ein Migrationstool namens crx2oak muss ausgeführt werden, um CRX2-Repositorys von 5.6.1-Instanzen zu migrieren. Weitere Informationen finden Sie unter [Verwenden des CRX2OAK-Migrationstools](/help/sites-deploying/using-crx2oak.md).
+In AEM 6.0 wurde das neue Jackrabbit-Oak-Repository eingeführt. Persistenz-Manager wurden durch [Mikrokernel](/help/sites-deploying/platform.md#contentbody_title_4) ersetzt. Ab Version 6.1 wird CRX2 nicht mehr unterstützt. Ein Migrationstool namens crx2oak muss ausgeführt werden, um CRX2-Repositorys von 5.6.1-Instanzen zu migrieren. Weitere Informationen finden Sie unter [Verwenden des CRX2OAK-Migrations-Tools](/help/sites-deploying/using-crx2oak.md).
 
 Wenn Assets Insights verwendet wird und Sie von einer Version aktualisieren, die älter als AEM 6.2 ist, müssen Assets migriert werden und IDs über ein JMX-Bean generiert werden. Für interne Tests der Adobe wurden 125.000 Assets in einer TarMK-Umgebung in einer Stunde migriert, die Ergebnisse können jedoch variieren.
 
@@ -65,7 +65,7 @@ Regelmäßige Speicherbereinigung von Revisionen und Datenspeicherbereinigung si
 
 Neu in AEM ist der [Musterdetektor](/help/sites-deploying/pattern-detector.md), mit dem Sie bei der Planung des Upgrades die Komplexität der Aktualisierung ermitteln können. In 6.5 liegt der Fokus auf der [Abwärtskompatibilität](/help/sites-deploying/backward-compatibility.md) der Funktionen. Außerdem wurden Best Practices für [nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md) hinzugefügt.
 
-Weitere Informationen zu den Änderungen der letzten AEM finden Sie in den vollständigen Versionshinweisen:
+Weitere Informationen zu den Änderungen der letzten AEM Versionen finden Sie in den vollständigen Versionshinweisen:
 
 * [Versionshinweise zum neuesten Service Pack von Adobe Experience Manager 6.5](/help/release-notes/release-notes.md)
 
@@ -79,7 +79,7 @@ Die Aktualisierung von AEM ist ein mehrstufiger Prozess, der in manchen Fällen 
 
 Das folgende Diagramm zeigt den für das Upgrade empfohlenen Ablauf. Beachten Sie den Verweis auf die neuen Funktionen, die von Adobe eingeführt wurden. Das Upgrade sollte damit starten, dass mit dem Musterdetektor ein Bericht über vorhandene Muster erstellt wird (siehe [Bewertung der Komplexität des Upgrades mit dem Musterdetektor](/help/sites-deploying/pattern-detector.md)), mit dessen Hilfe Sie entscheiden können, welchem Pfad Sie für die Kompatibilität mit AEM 6.4 folgen möchten.
 
-In Version 6.5 gab es einen wichtigen Fokus darauf, alle neuen Funktionen abwärtskompatibel zu halten. In Fällen, in denen jedoch noch einige Abwärtskompatibilitätsprobleme auftreten, können Sie mit dem Kompatibilitätsmodus die Entwicklung zeitweise verschieben, um Ihren benutzerdefinierten Code mit 6.5 kompatibel zu halten. Dieser Ansatz hilft Ihnen, Entwicklungsaufwand unmittelbar nach der Aktualisierung zu vermeiden (siehe [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
+In Version 6.5 wurde der Fokus darauf gelegt, alle neuen Funktionen abwärtskompatibel zu halten. In Fällen, in denen jedoch noch einige Abwärtskompatibilitätsprobleme auftreten, können Sie mit dem Kompatibilitätsmodus die Entwicklung zeitweise verschieben, um Ihren benutzerdefinierten Code mit Version 6.5 konform zu halten. Dieser Ansatz hilft Ihnen, Entwicklungsaufwand unmittelbar nach der Aktualisierung zu vermeiden (siehe [Abwärtskompatibilität in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
 In Ihrem 6.5-Entwicklungszyklus helfen Ihnen abschließend die unter „Nachhaltige Upgrades“ eingeführten Funktionen (siehe [Nachhaltige Upgrades](/help/sites-deploying/sustainable-upgrades.md)), Best Practices einzuhalten, um zukünftige Upgrades sogar noch effizienter und nahtloser durchzuführen.
 

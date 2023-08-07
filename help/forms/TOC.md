@@ -12,7 +12,7 @@ feature: Forms Service
 source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
 workflow-type: tm+mt
 source-wordcount: '3889'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -128,7 +128,7 @@ ht-degree: 98%
    + [Einführung in die AEM Forms-Datenintegration](using/data-integration.md)
    + [Konfigurieren von Datenquellen](using/configure-data-sources.md)
    + [Microsoft Dynamics-OData-Konfiguration](using/ms-dynamics-odata-configuration.md)
-   + [Salesforce-Integration mit OAuth 2.0-Client-Anmeldeinformationen Fluss-Autorisierung](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
+   + [Salesforce-Integration mithilfe des OAuth 2.0-Client-Anmeldedatenflusses Autorisierung](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Erstellen des Formulardatenmodells](using/create-form-data-models.md)
    + [Arbeiten mit einem Formulardatenmodell](using/work-with-form-data-model.md)
    + [Verwenden eines Formulardatenmodells](using/using-form-data-model.md)
@@ -521,7 +521,7 @@ ht-degree: 98%
       + [Einzubettende Schriften angeben](/help/forms/using/admin-help/specify-fonts-embed.md)
       + [Sicherheitseinstellungen angeben](/help/forms/using/admin-help/specify-security-settings.md)
       + [Den Zeichensatz ändern](/help/forms/using/admin-help/change-character-set.md)
-   + Konfigurieren des Arbeitsablaufs für Formulare {#configure-forms-workflow}
+   + Konfigurieren des Arbeitsablaufs für Formulare{#configure-forms-workflow}
       + [Informationen zur Administrations- und Prozessterminologie](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Prozesse verwalten](/help/forms/using/admin-help/processes.md)
       + [Konfigurieren von Geschäftskalendern](/help/forms/using/admin-help/configuring-business-calendars.md)

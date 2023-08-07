@@ -11,7 +11,7 @@ exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1806'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -113,7 +113,7 @@ Wenn Sie z. B. das Gerät **iPhone 6 Plus** für die Emulation und das Layout a
 
      ![Gerät drehen](do-not-localize/screen_shot_2018-03-23at084612.png) ![Gerät drehen](do-not-localize/screen_shot_2018-03-23at084637.png)
 
-   * **Gerät auswählen** – Ermöglicht es Ihnen, ein bestimmtes Gerät anzugeben, das aus einer Liste emuliert werden soll (Einzelheiten dazu werden im nächsten Schritt beschrieben).
+   * **Gerät auswählen**: Ermöglicht es Ihnen, ein bestimmtes Gerät anzugeben, das aus einer Liste emuliert werden soll (Einzelheiten dazu werden im nächsten Schritt beschrieben).
 
      ![Gerät auswählen](do-not-localize/screen_shot_2018-03-23at084743.png)
 
@@ -246,7 +246,7 @@ Im Layout-Modus können Sie verschiedene Aktionen für ein Raster ausführen:
 
    * **Breakpoint-Layout zurücksetzen**: Ermöglicht die Rückkehr zum Standard-Layout. Dies bedeutet, dass kein benutzerdefiniertes Layout vorgegeben wird.
 
-     ![Breakpoint-Layout wiederherstellen](do-not-localize/screen_shot_2018-03-23at091013.png)
+     ![Breakpoint-Layout zurücksetzen](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **In neue Zeile verschieben**: Verschiebt die Komponente um eine Position nach oben, wenn der Leerraum dies erlaubt.
 

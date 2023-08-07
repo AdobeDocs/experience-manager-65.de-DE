@@ -12,7 +12,7 @@ exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
 source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
 source-wordcount: '5375'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -865,13 +865,13 @@ Verwenden Sie für jeden Bereich von Darstellungsfeldbreiten eine statische Seit
 
 Verwenden Sie Raster zum Skalieren von Inhaltsblöcken, um sie an verschiedene Darstellungsfeldgrößen anzupassen. Inhaltsblöcke erstrecken sich über eine bestimmte Anzahl von Spalten. Wenn Spalten breiter oder schmaler werden, um sich verschiedenen Darstellungsfeldgrößen anzupassen, werden Inhaltsblöcke ebenso entsprechend breiter oder schmaler. Skalierung kann sowohl große als auch mittelgroße Darstellungsfelder unterstützen, die breit genug sind, um Inhaltsblöcke nebeneinander zu platzieren.
 
-![Bild zweier Raster, eines, das kleiner skaliert ist als das andere.](do-not-localize/chlimage_1-1a.png)
+![Bild zweier Raster, von denen das eine kleiner als das andere skaliert ist.](do-not-localize/chlimage_1-1a.png)
 
 #### Neupositionieren von Inhalten im Raster {#repositioning-content-in-the-grid}
 
 Die Größe der Inhaltsblöcke kann durch eine Mindestbreite beschränkt werden, bei deren Überschreitung die Skalierung nicht mehr wirksam ist. Bei kleineren Darstellungsfeldern kann das Raster verwendet werden, um Inhaltsblöcke vertikal statt horizontal zu verteilen.
 
-![Bild von zwei Rastern, die kleiner als das andere positioniert werden.](do-not-localize/chlimage_1-2a.png)
+![Bild zweier Raster, von denen das eine kleiner als das andere positioniert ist.](do-not-localize/chlimage_1-2a.png)
 
 ### Entwerfen des Rasters {#designing-the-grid}
 

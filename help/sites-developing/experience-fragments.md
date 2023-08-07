@@ -14,7 +14,7 @@ ht-degree: 80%
 
 ---
 
-# Experience Fragments {#experience-fragments}
+# Experience Fragments{#experience-fragments}
 
 ## Grundlagen {#the-basics}
 
@@ -69,7 +69,7 @@ Es wird empfohlen, den Rewriter mit einer Überlagerung zu konfigurieren. Siehe 
 
 ## Social-Varianten {#social-variations}
 
-Social-Varianten können in Social Media (Text und Bild) veröffentlicht werden. In Adobe Experience Manager (AEM) können diese Social-Varianten Komponenten enthalten. z. B. Textkomponenten, Bildkomponenten.
+Social-Varianten können in Social Media (Text und Bild) veröffentlicht werden. In Adobe Experience Manager (AEM) können diese Social-Varianten Komponenten enthalten, z. B. Textkomponenten und Bildkomponenten.
 
 Das Bild und der Text für den Social-Beitrag können aus jedem beliebigen Bild- oder Textressourcentyp in beliebiger Tiefe entnommen werden (entweder im Baustein oder im Layout-Container).
 
@@ -144,7 +144,7 @@ Mit der Funktion [Nach Target exportieren](/help/sites-administering/experience-
 
 Diese Funktion kann [in einer Autoreninstanz von AEM aktiviert werden](/help/sites-administering/experience-fragments-target.md#Prerequisites). Sie erfordert eine gültige Adobe Target-Konfiguration und Konfigurationen für den Link Externalizer.
 
-Der Link Externalizer wird verwendet, um die richtigen URLs zu ermitteln, die beim Erstellen der HTML-Version des Target-Angebots erforderlich sind, das dann an Adobe Target gesendet wird. Dies ist erforderlich, da Adobe Target erfordert, dass alle Links im Target-HTML-Angebot öffentlich zugänglich sind. Dies bedeutet, dass alle Ressourcen, auf die die Links verweisen, und das Experience Fragment selbst veröffentlicht werden müssen, bevor sie verwendet werden können.
+Der Link Externalizer wird verwendet, um die richtigen URLs zu bestimmen, die beim Erstellen der HTML-Version des Target-Angebots erforderlich sind, das dann an Adobe Target gesendet wird. Dies ist erforderlich, da Adobe Target erfordert, dass alle Links im Target-HTML-Angebot öffentlich zugänglich sind. Dies bedeutet, dass alle Ressourcen, auf die die Links verweisen, und das Experience Fragment selbst veröffentlicht werden müssen, bevor sie verwendet werden können.
 
 Wenn Sie ein Target-HTML-Angebot erstellen, wird standardmäßig eine Anfrage an einen benutzerdefinierten Sling-Selektor in AEM gesendet. Dieser Selektor heißt `.nocloudconfigs.html`. Wie der Name schon sagt, erstellt er ein einfaches HTML-Rendering eines Experience Fragment, enthält jedoch keine Cloud-Konfigurationen (die überflüssige Informationen wären).
 
@@ -161,7 +161,7 @@ Nachdem Sie die HTML-Seite generiert haben, nimmt die Sling Rewriter-Pipeline Ä
    1. `src`-Attribute
    1. `href`-Attribute
    1. `*-src` -Attribute (z. B. data-src, custom-src usw.)
-   1. `*-href` -Attribute (z. B. `data-href`, `custom-href`, `img-href`usw.)
+   1. `*-href` -Attribute (wie `data-href`, `custom-href`, `img-href`usw.)
 
    >[!NOTE]
    >

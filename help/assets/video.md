@@ -15,7 +15,7 @@ exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
 source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
 source-wordcount: '8066'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -714,7 +714,7 @@ Siehe [WebVTT: The Web Video Text Tracks format](https://w3c.github.io/webvtt/).
 
 ## Informationen zu Videominiaturen im Dynamic Media-Scene7-Modus {#about-video-thumbnails-in-dynamic-media-scene-mode}
 
-Eine Videominiatur ist eine verkleinerte Version eines Videoframes oder eines Bild-Assets, in dem das Video dem Kunden vorgestellt wird. Die Miniaturansicht dient dazu, einen Kunden zur Auswahl des Videos zu ermutigen.
+Eine Videominiatur ist eine verkleinerte Version eines Videoframes oder eines Bild-Assets, in dem das Video dem Kunden vorgestellt wird. Das Miniaturbild dient als Anreiz für eine Kundin bzw. einen Kunden, das Video auszuwählen.
 
 Alle Videos in Experience Manager müssen ein zugehöriges Miniaturbild enthalten. Sie können ein Miniaturbild nicht löschen, ohne es zu ersetzen. Wenn Sie ein Video in Experience Manager hochladen, wird standardmäßig der erste Frame als Miniaturansicht verwendet. Sie können jedoch die Miniaturansicht anpassen, z. B. für Branding oder visuelle Suche. Wenn Sie eine Videominiatur anpassen, können Sie das Video abspielen und bei dem Frame anhalten, den Sie verwenden möchten. Sie können auch ein Bild-Asset auswählen, das Sie bereits in Ihrem Digital Asset Manager hochgeladen und *veröffentlicht* haben.
 

@@ -13,7 +13,7 @@ feature: Security
 source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
 source-wordcount: '5402'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -391,7 +391,7 @@ Führen Sie einen der folgenden Schritte aus, um auf AEM WCM-Sicherheit zuzugrei
 
 * Klicken Sie im Begrüßungsbildschirm oder in verschiedenen anderen Bereichen in AEM auf das Sicherheitssymbol:
 
-![Registerkarte &quot;WCM-Sicherheit&quot;](do-not-localize/wcmtoolbar.png)
+![Registerkarte „AEM-WCM-Sicherheit“](do-not-localize/wcmtoolbar.png)
 
 * Navigieren Sie direkt zu `https://<server>:<port>/useradmin`. Achten Sie darauf, sich als Admin bei AEM anzumelden.
 

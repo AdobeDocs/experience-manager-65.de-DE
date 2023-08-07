@@ -1,7 +1,7 @@
 ---
 title: Granite-Vorgänge – Benutzer- und Gruppenverwaltung
 seo-title: Granite Operations - User and Group Administration
-description: Erfahren Sie mehr über die Benutzer- und Gruppenverwaltung von Granite.
+description: Erfahren Sie mehr über die Benutzer- und Gruppenverwaltung in Granite.
 seo-description: Learn about Granite user and group administration.
 uuid: 7b6b7767-712c-4cc8-8d90-36f26280d6e3
 contentOwner: Guillaume Carlino
@@ -14,7 +14,7 @@ feature: Security
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '959'
-ht-degree: 64%
+ht-degree: 94%
 
 ---
 
@@ -23,21 +23,21 @@ ht-degree: 64%
 
 Da Granite die CRX-Repository-Implementierung der JCR-API-Spezifikation enthält, verfügt es über eine eigene Benutzer- und Gruppenverwaltung.
 
-Diese Konten bilden die Grundlage der [AEM](/help/sites-administering/security.md) und alle Kontoänderungen, die mit der Granite-Verwaltung vorgenommen werden, werden angezeigt, wenn/wenn der Zugriff auf die Konten über die [AEM-Benutzerkonsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (z. B. `http://localhost:4502/useradmin`). In der Konsole AEM Benutzer können Sie auch die Berechtigungen und andere AEM verwalten.
+Diese Konten bilden die Grundlage der [AEM](/help/sites-administering/security.md) und alle Kontoänderungen, die mit der Granite-Verwaltung vorgenommen werden, werden angezeigt, wenn/wenn der Zugriff auf die Konten über die [AEM-Konsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (zum Beispiel: `http://localhost:4502/useradmin`). In der AEM-Benutzerkonsole können Sie auch die Berechtigungen und andere AEM-Eigenschaften verwalten.
 
-Granite-Benutzer- und Gruppenverwaltungskonsolen sind beide über das **[Instrumente](/help/sites-administering/tools-consoles.md)** Konsole der Touch-optimierten Benutzeroberfläche:
+Die Konsolen für die Benutzer- und Gruppenverwaltung sind jeweils über die **[Tools](/help/sites-administering/tools-consoles.md)**-Konsole der Touch-optimierten Benutzeroberfläche verfügbar:
 
 ![Tools-Konsole](assets/chlimage_1-72a.png)
 
-Entweder **Benutzer** oder **Gruppen** über die Tools-Konsole die entsprechende Konsole öffnen. In beiden können Sie entweder über das Kontrollkästchen und dann über Aktionen in der Symbolleiste oder durch Öffnen der Kontodetails über den Link unter **Name**.
+Durch Auswahl von **Benutzer** oder **Gruppen** in der Tools-Konsole wird die entsprechende Konsole geöffnet. In beiden können Sie Aktionen durchführen, indem Sie entweder das Kontrollkästchen und dann Aktionen aus der Symbolleiste verwenden oder indem Sie die Kontodetails über den Link unter **Name** aufrufen.
 
 * [Benutzerverwaltung](#user-administration)
 
   ![chlimage_1-73](assets/chlimage_1-73a.png)
 
-  Die **Benutzer** Konsolenlisten:
+  In der **Benutzerkonsole** finden Sie:
 
-   * Benutzername
+   * den Benutzernamen;
    * den Anmeldenamen (Kontonamen) des Benutzers;
    * Titel, die dem Konto zugewiesen wurden.
 
@@ -45,21 +45,21 @@ Entweder **Benutzer** oder **Gruppen** über die Tools-Konsole die entsprechende
 
   ![Benutzerverwaltungskonsole](assets/chlimage_1-74a.png)
 
-  Die **Gruppen** Konsolenlisten:
+  In der **Gruppenkonsole** finden Sie:
 
-   * den Gruppennamen
-   * die Gruppenbeschreibung
-   * die Anzahl der Benutzer/Gruppen in der Gruppe
+   * den Gruppennamen;
+   * die Gruppenbeschreibung;
+   * die Anzahl der Benutzenden/Gruppen in der Gruppe.
 
 ## Benutzerverwaltung {#user-administration}
 
-### Hinzufügen neuer Benutzer {#adding-a-new-user}
+### Hinzufügen von neuen Benutzenden {#adding-a-new-user}
 
-1. Verwenden Sie die **Benutzer hinzufügen** Symbol:
+1. Verwenden Sie das Symbol **Benutzer hinzufügen**:
 
    ![Symbol &quot;Benutzer hinzufügen&quot;](do-not-localize/chlimage_1-1.png)
 
-1. Die **Benutzer erstellen** Das Formular wird geöffnet:
+1. Das Formular **Benutzer erstellen** wird geöffnet:
 
    ![Formular &quot;Benutzerdetails&quot;](assets/chlimage_1-75a.png)
 
@@ -81,11 +81,11 @@ Entweder **Benutzer** oder **Gruppen** über die Tools-Konsole die entsprechende
    * **Vorname**
    * **Nachname**
    * **Telefonnummer**
-   * **Titel des Auftrags**
+   * **Berufsbezeichnung**
    * **Straße**
    * **Mobilgerät**
    * **Stadt**
-   * **PLZ**
+   * **Postleitzahl**
    * **Land**
    * **Status**
    * **Titel**
@@ -110,12 +110,12 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
    * **Gruppen**
 
-     Eine Liste der Gruppen, in denen der Benutzer derzeit Mitglied ist. Verwenden Sie die **X** durch den Namen, der vor dem Speichern deaktiviert werden soll.
+     Eine Liste der Gruppen, in denen der Benutzer derzeit Mitglied ist. Verwenden Sie das **X** neben dem Namen, um die Auswahl vor dem Speichern aufzuheben.
 
 1. Wenn Sie das Benutzerkonto definiert haben, verwenden Sie:
 
-   * **Abbrechen** , um die Registrierung abzubrechen.
-   * **Speichern** , um die Registrierung abzuschließen. Die Erstellung des Benutzerkontos wird mit einer Meldung bestätigt.
+   * **Abbrechen** zum Abbruch der Registrierung.
+   * **Speichern**, um die Registrierung abzuschließen. Die Erstellung des Benutzerkontos wird mit einer Meldung bestätigt.
 
 ### Bearbeiten vorhandener Benutzer {#editing-an-existing-user}
 
@@ -135,18 +135,18 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
    ![Dialogfeld &quot;Kontoeinstellungen&quot;](assets/chlimage_1-76a.png)
 
-1. Das Dialogfeld **Kennwort ändern** wird geöffnet. Geben Sie das neue Kennwort zusammen mit Ihrem Kennwort ein und geben Sie es erneut ein. Bestätigen Sie die Änderungen mit **OK**.
+1. Das Dialogfeld **Kennwort ändern** wird geöffnet. Geben Sie das neue Kennwort, die Kennwortwiederholung und Ihr Kennwort ein. Bestätigen Sie die Änderungen mit **OK**.
 
    ![Dialogfeld &quot;Kennwort ändern&quot;](assets/chlimage_1-77a.png)
 
    Über eine Meldung wird bestätigt, dass das Kennwort geändert wurde.
 
-### Schnellgruppenzuweisung {#quick-group-assignment}
+### Schnelle Gruppenzuweisung {#quick-group-assignment}
 
-1. Verwenden Sie das Kontrollkästchen, um einen oder mehrere Benutzer zu kennzeichnen.
+1. Verwenden Sie das Kontrollkästchen, um einen oder mehrere Benutzende zu kennzeichnen.
 1. Verwenden Sie das Symbol **Gruppen**:
 
-   ![Verwenden des Symbols Gruppen](do-not-localize/chlimage_1-2.png)
+   ![Verwenden des Gruppensymbols](do-not-localize/chlimage_1-2.png)
 
    Hierdurch wird die Dropdown-Liste für die Gruppenauswahl geöffnet:
 
@@ -161,7 +161,7 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
 ### Löschen vorhandener Benutzerdetails {#deleting-existing-user-details}
 
-1. Verwenden Sie das Kontrollkästchen, um einen oder mehrere Benutzer zu kennzeichnen.
+1. Verwenden Sie das Kontrollkästchen, um einen oder mehrere Benutzende zu kennzeichnen.
 1. Löschen Sie Benutzerdetails mit dem Symbol **Löschen**:
 
    ![Löschen vorhandener Benutzerdetails](do-not-localize/chlimage_1-3.png)
@@ -172,11 +172,11 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
 ### Hinzufügen einer neuen Gruppe {#adding-a-new-group}
 
-1. Verwenden Sie das Symbol Gruppe hinzufügen :
+1. Verwenden Sie das Symbol „Gruppe hinzufügen“:
 
    ![Neue Gruppe hinzufügen](do-not-localize/chlimage_1-4.png)
 
-1. Die **Gruppe erstellen** Das Formular wird geöffnet:
+1. Das Formular **Gruppe erstellen** wird geöffnet:
 
    ![Gruppendetails-Formular](assets/chlimage_1-79a.png)
 
@@ -200,12 +200,12 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
    * **Gruppenmitglieder**
 
-     Eine Liste der Benutzer in der Gruppe. Verwenden Sie die **X** durch den Namen, der vor dem Speichern deaktiviert werden soll.
+     Eine Liste der Benutzer in der Gruppe. Verwenden Sie das **X** neben dem Namen, um die Auswahl vor dem Speichern aufzuheben.
 
 1. Wenn Sie die Gruppe definiert haben, verwenden Sie:
 
-   * **Abbrechen** , um die Registrierung abzubrechen.
-   * **Speichern** , um die Registrierung abzuschließen. Die Erstellung der Gruppe wird mit einer Meldung bestätigt.
+   * **Abbrechen** zum Abbruch der Registrierung.
+   * **Speichern**, um die Registrierung abzuschließen. Die Erstellung der Gruppe wird mit einer Meldung bestätigt.
 
 ### Bearbeiten vorhandener Gruppen {#editing-an-existing-group}
 
@@ -213,12 +213,12 @@ Sie können das Konto als **aktiv** oder **inaktiv** markieren.
 
 1. Sie können nun die Details wie unter [Hinzufügen neuer Gruppen](#adding-a-new-group) bearbeiten.
 
-### Kopieren einer vorhandenen Gruppe {#copying-an-existing-group}
+### Kopieren einer bestehenden Gruppe {#copying-an-existing-group}
 
 1. Verwenden Sie das Kontrollkästchen, um eine Gruppe zu kennzeichnen.
 1. Kopieren Sie Gruppendetails mit dem Symbol **Kopieren**:
 
-   ![Vorhandene Gruppe kopieren](do-not-localize/chlimage_1-5.png)
+   ![Kopieren einer bestehenden Gruppe](do-not-localize/chlimage_1-5.png)
 
 1. Das Formular **Gruppeneinstellungen bearbeiten** wird geöffnet.
 

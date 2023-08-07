@@ -10,7 +10,7 @@ exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
 source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
 source-wordcount: '2386'
-ht-degree: 49%
+ht-degree: 78%
 
 ---
 
@@ -32,9 +32,9 @@ Die klassische Benutzeroberfläche nutzt ExtJS, um Widgets zu erstellen, die das
 
 Die grundlegende Struktur einer Komponente wird auf der Seite [AEM-Komponenten – die Grundlagen](/help/sites-developing/components-basics.md#structure) behandelt, die für Touch-optimierte und klassische Benutzeroberflächen gelten. Selbst wenn Sie die Einstellungen für die Touch-optimierte Benutzeroberfläche in Ihrer neuen Komponente nicht verwenden müssen, kann es hilfreich sein, sie beim Erben von vorhandenen Komponenten zu beachten.
 
-## JSP Scripts {#jsp-scripts}
+## JSP-Skripte {#jsp-scripts}
 
-JSP Scripts oder Servlets können zum Rendern von Komponenten verwendet werden. Gemäß den Anforderungsverarbeitungsregeln von Sling lautet der Name des Standardskripts:
+JSP-Skripte oder -Servlets können verwendet werden, um Komponenten zu rendern. Gemäß den Anforderungsverarbeitungsregeln von Sling lautet der Name des Standardskripts:
 
 `<*componentname*>.jsp`
 
@@ -101,7 +101,7 @@ Es gibt drei Methoden für den Zugriff auf Inhalte in AEM WCM:
 
 ## JSP-Tag-Bibliotheken {#jsp-tag-libraries}
 
-Die Tag-Bibliotheken CQ und Sling bieten Zugriff auf bestimmte Funktionen, die im JSP-Skript Ihrer Vorlagen und Komponenten verwendet werden können.
+Die Tag-Bibliotheken von CQ und Sling verleihen Ihnen Zugriff auf spezifische Funktionen für die Verwendung im JSP-Skript der Vorlagen und Komponenten.
 
 Weitere Informationen finden Sie im Dokument [Tag-Bibliotheken](/help/sites-developing/taglib.md).
 
@@ -121,7 +121,7 @@ Weitere Details finden Sie unter [AEM-Komponenten – die Grundlagen](/help/site
 
 ## Konfigurieren des Bearbeitungsverhaltens {#configuring-the-edit-behavior}
 
-Sie können das Bearbeitungsverhalten einer Komponente konfigurieren. Dazu gehören Attribute wie für die Komponente verfügbare Aktionen, Eigenschaften des Editors für die Bearbeitung im Kontext und Listener, die sich auf Ereignisse in der Komponente beziehen. Die Konfiguration ist sowohl für die Touch-optimierte als auch für die klassische Benutzeroberfläche üblich, allerdings mit bestimmten spezifischen Unterschieden.
+Sie können das Bearbeitungsverhalten einer Komponente konfigurieren. Hierzu zählen Attribute wie Aktionen, die für die Komponente verfügbar sind, Eigenschaften des integrierten Editors für die Bearbeitung und des Listeners in Zusammenhang mit Ereignissen bei der Komponente. Die Konfiguration ist für die Touch-optimierte und die klassische Benutzeroberfläche die gleiche, wenn auch mit einigen spezifischen Unterschieden.
 
 Um das [Bearbeitungsverhalten einer Komponente zu konfigurieren](/help/sites-developing/components-basics.md#edit-behavior), fügen Sie einen `cq:editConfig`-Knoten des Typs `cq:EditConfig` unter dem Komponentenknoten (des Typs `cq:Component`) hinzu sowie spezifische Eigenschaften und untergeordnete Knoten.
 
@@ -131,7 +131,7 @@ Weitere Details finden Sie unter [Verwenden und Erweitern von ExtJS-Widgets](/he
 
 ## Verwenden von xtypes für ExtJS-Widgets {#using-xtypes-for-extjs-widgets}
 
-Siehe [Verwenden von xtypes](/help/sites-developing/xtypes.md) für weitere Details.
+Weitere Details finden Sie unter [Verwenden von xtypes](/help/sites-developing/xtypes.md).
 
 ## Entwickeln neuer Komponenten {#developing-new-components}
 
@@ -139,9 +139,9 @@ In diesem Abschnitt wird beschrieben, wie Sie eigene Komponenten erstellen und z
 
 Eine schnelle Möglichkeit für den Einstieg ist das Kopieren einer vorhandenen Komponente, um anschließend die gewünschten Änderungen vorzunehmen.
 
-Ein Beispiel für die Entwicklung einer Komponente wird ausführlich unter [Erweitern der Text- und Bildkomponente - ein Beispiel.](#extending-the-text-and-image-component-an-example)
+Ein Beispiel für die Entwicklung einer Komponente wird in [Erweitern der Text- und Bildkomponente – ein Beispiel](#extending-the-text-and-image-component-an-example) ausführlich beschrieben.
 
-### Entwickeln einer neuen Komponente (Anpassen vorhandener Komponenten) {#develop-a-new-component-adapt-existing-component}
+### Entwickeln einer neuen Komponente (Anpassen einer vorhandenen Komponente) {#develop-a-new-component-adapt-existing-component}
 
 Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwickeln, können Sie die Komponente kopieren, eine JavaScript-Datei für die neue Komponente erstellen und sie an einem Speicherort speichern, auf den AEM zugreifen können (siehe auch [Anpassen von Komponenten und anderen Elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
 
@@ -149,7 +149,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 
    / `apps/<myProject>/components/<myComponent>`
 
-   Erstellen Sie die Knotenstruktur wie in libs und kopieren Sie dann die Definition einer vorhandenen Komponente, z. B. der Textkomponente . Um beispielsweise die Textkomponente anzupassen, kopieren Sie diese
+   Erstellen Sie die Knotenstruktur wie in den Bibliotheken neu und kopieren Sie dann die Definition einer vorhandenen Komponente, wie etwa die Textkomponente. Um beispielsweise die Textkomponente anzupassen, kopieren Sie diese
 
    * von `/libs/foundation/components/text`
    * nach `/apps/myProject/components/text`
@@ -157,7 +157,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 1. Ändern Sie `jcr:title`, um den neuen Namen anzugeben.
 1. Öffnen Sie den neuen Komponentenordner und nehmen Sie die erforderlichen Änderungen vor. Löschen Sie außerdem alle irrelevanten Informationen im Ordner.
 
-   Sie können Änderungen vornehmen, z. B.:
+   Sie können Änderungen vornehmen, wie etwa:
 
    * Hinzufügen eines Felds im Dialogfeld
 
@@ -174,7 +174,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
    >Eine Komponente für:
    >
    >* Die Touch-optimierte Benutzeroberfläche verwendet [Granite](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)-Komponenten
-   >* Klassische Benutzeroberfläche [ExtJS-Widgets](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
+   >* Die klassische Benutzeroberfläche verwendet [ExtJS-Widgets](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
    >[!NOTE]
    >
@@ -188,13 +188,13 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 
    * `cq:dialog` – Dialogfeld für die Touch-optimierte Benutzeroberfläche
    * `dialog` – Dialogfeld für die klassische Benutzeroberfläche
-   * `cq:editConfig` - Verhalten von Komponenten in der Bearbeitungsumgebung (z. B. per Drag-and-Drop)
+   * `cq:editConfig` - Verhalten von Komponenten in der Bearbeitungsumgebung (z. B. per Drag &amp; Drop)
    * `design_dialog` – Dialogfeld für den Design-Modus (nur klassische Benutzeroberfläche)
 
 1. Aktivieren Sie die neue Komponente in Ihrem Absatzsystem anhand folgender Optionen:
 
    * Verwenden von CRXDE Lite zum Hinzufügen des Werts `<path-to-component>` (Beispiel: `/apps/geometrixx/components/myComponent`) zu den Eigenschaftenkomponenten des Knotens `/etc/designs/geometrixx/jcr:content/contentpage/par`
-   * den Anweisungen unter [Hinzufügen neuer Komponenten zu Absatzsystemen](#adding-a-new-component-to-the-paragraph-system-design-mode)
+   * Beachten der Anweisungen in [Hinzufügen neuer Komponenten zu Absatzsystemen](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
 1. Öffnen Sie in AEM WCM eine Seite auf Ihrer Website und fügen Sie einen Absatz des soeben erstellten Typs ein, um sicherzustellen, dass die Komponente ordnungsgemäß funktioniert.
 
@@ -204,7 +204,7 @@ Um neue Komponenten für AEM basierend auf einer vorhandenen Komponente zu entwi
 
 ### Hinzufügen einer neuen Komponente zum Absatzsystem (Design-Modus) {#adding-a-new-component-to-the-paragraph-system-design-mode}
 
-Nachdem die Komponente entwickelt wurde, fügen Sie sie zum Absatzsystem hinzu, wodurch Autoren die Komponente auswählen und beim Bearbeiten einer Seite verwenden können.
+Nachdem die Komponente entwickelt wurde, fügen Sie sie zum Absatzsystem hinzu, wodurch Autorinnen und Autoren die Komponente auswählen und beim Bearbeiten einer Seite verwenden können.
 
 1. Rufen Sie eine Seite in Ihrer Autorenumgebung auf, die das Absatzsystem verwendet, zum Beispiel `<contentPath>/Test.html`.
 1. Wechseln Sie auf eine der folgenden Arten zum Design-Modus:
@@ -213,7 +213,7 @@ Nachdem die Komponente entwickelt wurde, fügen Sie sie zum Absatzsystem hinzu, 
 
      `<contextPath>/ Test.html?wcmmode=design`
 
-   * Klicken auf Design in Sidekick
+   * Durch Klicken auf „Design“ im Sidekick
 
    Sie befinden sich jetzt im Design-Modus und können das Absatzsystem bearbeiten.
 
@@ -221,25 +221,25 @@ Nachdem die Komponente entwickelt wurde, fügen Sie sie zum Absatzsystem hinzu, 
 
    Eine Liste der Komponenten, die zum Absatzsystem gehören, wird angezeigt. Ihre neue Komponente wird ebenfalls aufgelistet.
 
-   Die Komponenten können aktiviert (oder deaktiviert) werden, um zu bestimmen, welche dem Autor beim Bearbeiten einer Seite angeboten werden.
+   Die Komponenten können aktiviert (oder deaktiviert) werden, um zu bestimmen, welche der Autorin oder dem Autor beim Bearbeiten einer Seite angeboten werden.
 
 1. Aktivieren Sie die Komponente und kehren Sie dann zum normalen Bearbeitungsmodus zurück, um zu bestätigen, dass sie verfügbar ist.
 
-### Erweitern der Text- und Bildkomponente - ein Beispiel {#extending-the-text-and-image-component-an-example}
+### Erweitern der Text- und Bildkomponente – ein Beispiel {#extending-the-text-and-image-component-an-example}
 
 In diesem Abschnitt finden Sie ein Beispiel dafür, wie die häufig verwendete Text- und Bildstandard-Komponente mit einer konfigurierbaren Bildplatzierungsfunktion erweitert werden kann.
 
-Die Erweiterung der Text- und Bildkomponente ermöglicht es Editoren, alle vorhandenen Funktionen der Komponente zu verwenden. Außerdem bietet sie eine zusätzliche Option, um die Platzierung des Bildes anzugeben:
+Die Erweiterung der Text- und Bildkomponente ermöglicht es Editorinnen bzw. Editoren, alle vorhandenen Funktionen der Komponente zu verwenden. Außerdem bietet sie eine zusätzliche Option, um die Platzierung des Bildes anzugeben:
 
-* Links im Text (aktuelles Verhalten und neuer Standard)
-* Und auf der rechten Seite
+* Auf der linken Seite des Texts (aktuelles Verhalten und der neue Standard)
+* Und rechts
 
 Nachdem Sie diese Komponente erweitert haben, können Sie die Bildplatzierung über das Dialogfeld der Komponente konfigurieren.
 
 In dieser Übung werden die folgenden Techniken beschrieben:
 
-* Kopieren des vorhandenen Komponentenknotens und Ändern der Metadaten
-* Ändern des Komponentendialogfelds, einschließlich der Vererbung von Widgets aus übergeordneten Dialogfeldern
+* Kopieren des vorhandenen Komponentenknotens und Ändern seiner Metadaten
+* Ändern des Dialogfelds der Komponente, einschließlich der Vererbung von Widgets aus den übergeordneten Dialogfeldern
 * Ändern des Skripts der Komponente zur Implementierung der neuen Funktion
 
 >[!NOTE]
@@ -294,7 +294,7 @@ Um die Komponente zu erstellen, verwenden Sie die standardmäßige textimage-Kom
 
    Auf diese Weise wird beim Ablegen eines Bilds in der Komponente auf der Seite die `sling:resourceType`-Eigenschaft der erweiterten textimage-Komponente auf `geometrixx/components/textimage.` festgelegt.
 
-1. Ändern Sie das Dialogfeld der Komponente, um die neue Option einzuschließen. Die neue Komponente übernimmt die Teile des Dialogfelds, die mit denen im Original übereinstimmen. Der einzige Zusatz, den Sie machen, besteht darin, die **Erweitert** Registerkarte, um eine **Bildposition** Dropdown-Liste mit Optionen **Left** und **Right**:
+1. Ändern Sie das Dialogfeld der Komponente, um die neue Option einzubinden. Die neue Komponente erbt die Teile des Dialogfelds, die dem Original entsprechen. Der einzige Zusatz, den Sie machen, besteht darin, die **Erweitert** Registerkarte, um eine **Bildposition** Dropdown-Liste mit Optionen **Left** und **Right**:
 
    * Lassen Sie die `textimage/dialog`-Eigenschaften unverändert.
 
@@ -302,7 +302,7 @@ Um die Komponente zu erstellen, verwenden Sie die standardmäßige textimage-Kom
 
    * Für die ersten beiden Registerkarten (tab1 und tab2):
 
-      * Ändern Sie xtype in cqinclude (um von der Standardkomponente zu übernehmen).
+      * Ändern Sie „xtype“ in „cqinclude“ (um von der Standardkomponente zu erben).
       * Fügen Sie eine Pfadeigenschaft mit Werten `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json` bzw. `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json` hinzu.
       * Entfernen Sie alle anderen Eigenschaften oder Unterknoten.
 
@@ -352,20 +352,20 @@ Um die Komponente zu erstellen, verwenden Sie die standardmäßige textimage-Kom
 
 #### Überprüfen der neuen Komponente {#checking-the-new-component}
 
-Nachdem die Komponente entwickelt wurde, können Sie sie dem Absatzsystem hinzufügen, wodurch Autoren die Komponente auswählen und beim Bearbeiten einer Seite verwenden können. Mit diesen Schritten können Sie die Komponente testen.
+Nachdem die Komponente entwickelt wurde, können Sie sie dem Absatzsystem hinzufügen, wodurch Autorinnen und Autoren die Komponente auswählen und beim Bearbeiten einer Seite verwenden können. Mit diesen Schritten können Sie die Komponente testen.
 
-1. Öffnen Sie eine Seite in Geometrixx wie Englisch / Firma.
+1. Öffnen Sie eine Seite in Geometrixx, wie etwa „English / Company“.
 1. Wechseln Sie in den Design-Modus, indem Sie im Sidekick auf „Design“ klicken.
-1. Bearbeiten Sie das Absatzsystemdesign, indem Sie in der Mitte der Seite im Absatzsystem auf Bearbeiten klicken. Eine Liste von Komponenten, die im Absatzsystem platziert werden können, wird angezeigt. Sie sollte die neu entwickelte Komponente Textbild (erweitert) enthalten. Aktivieren Sie sie für das Absatzsystem, indem Sie sie auswählen und auf OK klicken.
+1. Bearbeiten Sie das Design des Absatzsystems, indem Sie in der Mitte der Seite im Absatzsystem auf „Bearbeiten“ klicken. Eine Liste der Komponenten, die im Absatzsystem platziert werden können, wird angezeigt und sollte Ihre neu entwickelte Komponente „Textbild (erweitert)“ enthalten. Aktivieren Sie diese für das Absatzsystem, indem Sie sie auswählen und auf „OK“ klicken.
 1. Wechseln Sie zurück in den Bearbeitungsmodus.
-1. Fügen Sie den Absatz Textbild (erweitert) zum Absatzsystem hinzu, initialisieren Sie Text und Bild mit Beispielinhalt. Speichern Sie die Änderungen.
-1. Öffnen Sie das Dialogfeld des Text- und Bildabsatzes, ändern Sie die Bildposition auf der Registerkarte &quot;Erweitert&quot;in &quot;Rechts&quot;und klicken Sie auf &quot;OK&quot;, um die Änderungen zu speichern.
+1. Fügen Sie dem Absatzsystem den Absatz „Textbild (erweitert)“ hinzu und initialisieren Sie Text und Bild mit Beispielinhalten. Speichern Sie die Änderungen.
+1. Öffnen Sie das Dialogfeld des Text- und Bildabsatzes, ändern Sie die Bildposition auf der Registerkarte „Erweitert“ in „Rechts“ und klicken Sie auf „OK“, um die Änderungen zu speichern.
 1. Der Absatz wird mit dem Bild auf der rechten Seite gerendert.
 1. Die Komponente ist jetzt einsatzbereit.
 
 Die Komponente speichert ihren Inhalt in einem Absatz auf der Unternehmensseite.
 
-### Deaktivieren der Upload-Funktion der Bildkomponente {#disable-upload-capability-of-the-image-component}
+### Deaktivieren der Upload-Fähigkeit der Bildkomponente {#disable-upload-capability-of-the-image-component}
 
 Um diese Funktion zu deaktivieren, verwenden Sie die standardmäßige Bildkomponente als Grundlage und ändern Sie sie. Sie speichern die neue Komponente in der Geometrixx-Beispielanwendung.
 
@@ -387,11 +387,11 @@ Um diese Funktion zu deaktivieren, verwenden Sie die standardmäßige Bildkompon
    ![chlimage_1-63](assets/chlimage_1-63a.png)
 
 1. Klicken Sie auf **Alle speichern**. Die Komponente kann jetzt getestet werden.
-1. Öffnen Sie eine Seite in Geometrixx wie Englisch / Firma.
+1. Öffnen Sie eine Seite in Geometrixx, wie etwa „English / Company“.
 1. Wechseln Sie in den Design-Modus und aktivieren Sie „Bild (erweitert)“.
 1. Wechseln Sie zurück in den Bearbeitungsmodus und fügen Sie ihn zum Absatzsystem hinzu. Auf den nächsten Bildern sehen Sie die Unterschiede zwischen der ursprünglichen Bildkomponente und der von Ihnen erstellten.
 
-   Originalbildkomponente:
+   Ursprüngliche Bildkomponente:
 
    ![chlimage_1-64](assets/chlimage_1-64a.png)
 

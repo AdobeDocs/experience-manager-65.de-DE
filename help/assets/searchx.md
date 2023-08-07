@@ -8,7 +8,7 @@ exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '825'
-ht-degree: 88%
+ht-degree: 100%
 
 ---
 
@@ -53,7 +53,7 @@ Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie in der Ad
 
 Um benutzerdefinierte Eigenschaften erstellen zu können, benötigen Sie Grundlagenkenntnisse über das [Widget-Framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?lang=de).
 
-Es empfiehlt sich, ein vorhandenes Prädikat zu kopieren und anzupassen. Beispielprädikate finden Sie unter **/libs/cq/search/components/predicates**.
+Es sich als Best Practice erwiesen, eine vorhandene Eigenschaft zu kopieren und anzupassen. Beispieleigenschaften finden Sie unter **/libs/cq/search/components/predicates**.
 
 ### Beispiel: Einfaches Eigenschaftsprädikat erstellen   {#example-build-a-simple-property-predicate}
 
@@ -140,7 +140,7 @@ So erstellen Sie ein Eigenschaftsprädikat:
    ```
 
 1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE den Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft **cq:actions** mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
-1. Navigieren Sie zu Ihrem Browser und auf Ihrer Beispielseite (z. B. **press.html**) in den Designmodus wechseln und Ihre neue Komponente für das Prädikat-Absatzsystem aktivieren (z. B. **left**).
+1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. **press.html**) in den Design-Modus. Aktivieren Sie Ihre neue Komponente für das Absatzsystem der Eigenschaft (z. B. **links**).
 
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein, geben Sie einen Suchbegriff – z. B. **Raute** – ein und klicken Sie auf das Lupensymbol, um die Suche zu starten.
 
@@ -165,7 +165,7 @@ So erstellen Sie eine Gruppeneigenschaft:
        componentGroup="Search"/>
    ```
 
-1. Hinzufügen **titlepredicate.jsp**:
+1. Fügen Sie **titlepredicate.jsp** hinzu:
 
    ```java
    <%--
@@ -244,7 +244,7 @@ So erstellen Sie eine Gruppeneigenschaft:
    ```
 
 1. Sie müssen die Komponente bearbeiten, um sie verfügbar zu machen. Um eine Komponente bearbeiten zu können, fügen Sie in CRXDE den Knoten **cq:editConfig** des primären Typs **cq:EditConfig** hinzu. Damit Sie Absätze entfernen können, fügen Sie die Eigenschaft **cq:actions** mit mehreren Werten mit dem einzelnen Wert **LÖSCHEN** hinzu.
-1. Navigieren Sie zu Ihrem Browser und auf Ihrer Beispielseite (z. B. **press.html**) in den Designmodus wechseln und Ihre neue Komponente für das Prädikat-Absatzsystem aktivieren (z. B. **left**).
+1. Navigieren Sie zu Ihrem Browser und wechseln Sie auf Ihrer Beispielseite (z. B. **press.html**) in den Design-Modus. Aktivieren Sie Ihre neue Komponente für das Absatzsystem der Eigenschaft (z. B. **links**).
 1. Im Modus **Bearbeiten** ist die neue Komponente jetzt im Sidekick verfügbar (in der **Suchgruppe**). Fügen Sie die Komponente in die Spalte **Eigenschaften** ein.
 
 ## Installierte Eigenschaften-Widgets {#installed-predicate-widgets}

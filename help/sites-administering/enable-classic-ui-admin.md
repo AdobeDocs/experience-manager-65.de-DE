@@ -1,6 +1,6 @@
 ---
 title: Admin Consoles
-description: Erfahren Sie, wie Sie die in AEM verfügbaren Admin Consolen verwenden.
+description: Erfahren Sie, wie Sie die in AEM verfügbaren Admin Consoles verwenden.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
@@ -10,7 +10,7 @@ exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
 source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
 source-wordcount: '226'
-ht-degree: 38%
+ht-degree: 75%
 
 ---
 
@@ -31,7 +31,7 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
    [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
-1. Wählen Sie den Knoten aus, der der Konsole entspricht, für die Sie die klassische Benutzeroberfläche erneut aktivieren möchten. In unserem Beispiel wird die klassische Benutzeroberfläche für die Sites-Konsole erneut aktiviert.
+1. Wählen Sie den entsprechenden Knoten der Konsole aus, für die Sie die klassische Benutzeroberfläche wieder aktivieren möchten. In unserem Beispiel wird die klassische Benutzeroberfläche für die Sites-Konsole erneut aktiviert.
 
    `/libs/cq/core/content/nav/sites`
 
@@ -39,7 +39,7 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
    * **Pfad**: `/apps/cq/core/content/nav/sites`
    * **Pfad für Überlagerung**: `/apps/`
-   * **Knotentypen abgleichen**: active (aktivieren Sie das Kontrollkästchen)
+   * **Knotentypen abgleichen**: aktiv (aktivieren Sie das Kontrollkästchen)
 
 1. Fügen Sie dem überlagerten Knoten die folgende boolesche Eigenschaft hinzu:
 
@@ -47,6 +47,6 @@ In diesem Beispiel aktivieren wir die klassische Benutzeroberfläche wieder für
 
 1. Die **Klassische Benutzeroberfläche** ist in der Admin Console wieder als Popover-Option verfügbar.
 
-   ![Popupoption &quot;klassische Benutzeroberfläche&quot;](assets/syui-01-2019-02-27-15-16-55.png)
+   ![Popover-Option „klassische Benutzeroberfläche“](assets/syui-01-2019-02-27-15-16-55.png)
 
 Wiederholen Sie diese Schritte für jede Konsole, für die Sie den Zugriff auf die klassische Benutzeroberfläche erneut aktivieren möchten.

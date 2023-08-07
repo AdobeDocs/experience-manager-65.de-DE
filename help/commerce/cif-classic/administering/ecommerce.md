@@ -8,7 +8,7 @@ exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 93%
+ht-degree: 95%
 
 ---
 
@@ -90,7 +90,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
   </tr>
   <tr>
    <td>Wann ist sie einzusetzen?</td>
-   <td>Eingeschränkte Anwendungsfälle: Beispielsweise Szenarien, in denen kleine, statische Kataloge importiert werden müssen</td>
+   <td>Eingeschränkte Anwendungsfälle: z. B. Szenarien, in denen kleine, statische Kataloge importiert werden müssen</td>
    <td>Bevorzugte Lösung in den meisten Anwendungsfällen</td>
   </tr>
  </tbody>
@@ -167,11 +167,11 @@ AEM eCommerce bietet:
 
   Im folgenden Beispiel wird ein Teaser angezeigt, da der Inhalt des Warenkorbs weniger als 75 USD beträgt:
 
-  ![Warenkorb mit ClientContext](/help/sites-administering/assets/chlimage_1-133.png)
+  ![Warenkorb mit Client Context](/help/sites-administering/assets/chlimage_1-133.png)
 
   Dies kann geändert werden, wenn der Inhalt des Warenkorbs 75 USD überschreitet:
 
-  ![Warenkorb mit ClientContext nach Änderung](/help/sites-administering/assets/chlimage_1-134.png)
+  ![Warenkorb mit Client Context nach Änderung](/help/sites-administering/assets/chlimage_1-134.png)
 
 * Und andere Funktionen wie:
 

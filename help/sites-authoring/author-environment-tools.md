@@ -12,7 +12,7 @@ exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '2245'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -166,7 +166,7 @@ Das tatsächliche Aussehen und die Nutzung hängen vom verwendeten Gerätetyp ab
 
 Wenn Sie eine Änderung an einem der Assets vornehmen möchten, können Sie den [Asset-Editor](/help/assets/manage-assets.md) auch direkt über den Browser starten. Klicken Sie dazu einfach auf das Bearbeitungssymbol neben dem Asset-Namen.
 
-![Assets Browser Desktop-Gerät](do-not-localize/screen_shot_2018-03-22at142448.png)
+![Assets-Browser-Desktop-Gerät](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Inhaltsstruktur {#content-tree}
 
@@ -202,7 +202,7 @@ Durch Klicken auf die Komponente wird diese im Seiteneditor markiert. Die verfü
 
   Wenn Sie in der Struktur auf eine Komponente klicken, die bearbeitbar ist, wird rechts neben ihrem Namen ein Schraubenschlüssel-Symbol angezeigt. Durch Klicken auf dieses Symbol können Sie das Dialogfeld für die Bearbeitung der Komponente direkt aufrufen.
 
-  ![Schraubenschlüsselsymbol - Bearbeiten](do-not-localize/screen_shot_2018-03-22at142725.png)
+  ![Schraubenschlüsselsymbol – Bearbeiten](do-not-localize/screen_shot_2018-03-22at142725.png)
 
 * Oder bei einer Seite, die Teil einer [Live Copy](/help/sites-administering/msm.md) ist, wobei Komponenten von einer anderen Seite übernommen werden, zum Beispiel
 

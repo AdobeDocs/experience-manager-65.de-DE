@@ -5,7 +5,7 @@ exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1549'
-ht-degree: 97%
+ht-degree: 98%
 
 ---
 
@@ -167,7 +167,7 @@ Zurück in AEM können Sie die IMS-Konfiguration abschließen, indem Sie erforde
    * **Client-Geheimnis**: Generieren Sie dies im Abschnitt [Übersicht](#details-stored-for-the-ims-integration-project) und kopieren Sie es.
    * **Payload**: Kopieren Sie diese aus dem Abschnitt [JWT generieren](#details-stored-for-the-ims-integration-project)
 
-   ![Technische Kontokonfiguration](assets/integrate-target-io-10.png)
+   ![Konfiguration des technischen Kontos](assets/integrate-target-io-10.png)
 
 1. Bestätigen Sie mit **Erstellen**.
 

@@ -10,11 +10,11 @@ hide: true
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '5739'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
-# Suchen nach digitalen Assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
+# Suche nach digitalen Assets in [!DNL Adobe Experience Manager] {#search-assets-in-aem}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -38,7 +38,7 @@ ht-degree: 96%
 | [Einschränkungen](#limitations) und [Tipps](#tips) | | |
 | [Illustrierte Beispiele](#samples) | | |
 
-Suchen nach digitalen Assets mithilfe des OmniSearch-Felds oben im [!DNL Experience Manager] Web-Schnittstelle. Gehen Sie in [!DNL Experience Manager] zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, klicken Sie in der oberen Leiste auf ![Suchsymbol](assets/do-not-localize/search_icon.png), geben Sie den Suchbegriff ein und wählen Sie `Return` aus. Alternativ können Sie die Keyword-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. [!DNL Experience Manager] liefert Vorschläge, sobald Sie mit der Eingabe eines Suchbegriffs beginnen.
+Suchen Sie mithilfe des OmniSearch-Felds oben in der [!DNL Experience Manager]-Web-Oberfläche nach digitalen Assets. Gehen Sie in [!DNL Experience Manager] zu **[!UICONTROL Assets]** > **[!UICONTROL Dateien]**, klicken Sie in der oberen Leiste auf ![Suchsymbol](assets/do-not-localize/search_icon.png), geben Sie den Suchbegriff ein und wählen Sie `Return` aus. Alternativ können Sie die Keyword-Tastenkombination `/` (Schrägstrich) verwenden, um das OmniSearch-Feld zu öffnen. `Location:Assets` ist vorausgewählt, um die Suche auf DAM-Assets zu begrenzen. [!DNL Experience Manager] liefert Vorschläge, sobald Sie mit der Eingabe eines Suchbegriffs beginnen.
 
 Verwenden Sie das Bedienfeld **[!UICONTROL Filter]**, um nach Assets, Ordnern, Tags und Metadaten zu suchen. Sie können Suchergebnisse anhand der verschiedenen Optionen (Prädikate) filtern, z. B. Dateityp, Dateigröße, Datum der letzten Änderung, Status des Assets, Einblicke und Adobe Stock-Lizenzierung. Sie können das Bedienfeld „Filter“ anpassen und Suchprädikate über [Suchfacetten](/help/assets/search-facets.md) hinzufügen oder entfernen. Der Filter [!UICONTROL Dateityp] im Bedienfeld [!UICONTROL Filter] verfügt über Kontrollkästchen für gemischte Status. Wenn Sie also nicht alle verschachtelten Prädikate (oder Formate) auswählen, werden die Kontrollkästchen der ersten Ebene teilweise markiert.
 
@@ -159,7 +159,7 @@ Sie können nach Dynamic Media-Bildern filtern, indem Sie die Option **[!UICONTR
 
 ### GQL – Mit bestimmten Werten in Metadatenfeldern suchen {#gql-search}
 
-Sie können digitale Assets basierend auf exakten Werten von Metadatenfeldern wie Titel, Beschreibung und Ersteller suchen. Die Volltextsuchfunktion GQL ruft nur jene Assets ab, deren Metadatenwert exakt mit Ihrer Suchanfrage übereinstimmt. Bei den Namen der Eigenschaften (z. B. Ersteller, Titel usw.) und Werten wird zwischen Groß- und Kleinschreibung unterschieden.
+Anhand exakter Werte bestimmter Metadatenfelder wie Titel, Beschreibung und Ersteller bzw. Erstellerin können Sie nach digitalen Assets suchen. Die Volltextsuchfunktion GQL ruft nur jene Assets ab, deren Metadatenwert exakt mit Ihrer Suchanfrage übereinstimmt. Bei den Namen der Eigenschaften (z. B. Ersteller, Titel usw.) und Werten wird zwischen Groß- und Kleinschreibung unterschieden.
 
 | Metadatenfeld | Facettenwert und Nutzung |
 |---|---|
@@ -202,15 +202,15 @@ Im Folgenden finden Sie einige Beispiele für Suchformate für komplexe Abfragen
 * So zeigen Sie Assets mit einem Eigenschaftswert an, der eine bestimmte Zeichenfolge enthält (wie: title=Basel Meeting Room): `title:*Meeting*`
 * So zeigen Sie Assets an, die eine bestimmte Zeichenfolge enthalten und einen bestimmten Eigenschaftswert aufweisen (wie die Suche nach der Zeichenfolge „Adobe“ in Assets mit title=John Doe): `*Adobe* title:"John Doe"`
 
-## Suchen nach digitalen Assets aus anderen [!DNL Experience Manager] Angebote oder Schnittstellen {#search-assets-other-surfaces}
+## Suchen nach digitalen Assets über andere [!DNL Experience Manager]-Angebote oder -Oberflächen {#search-assets-other-surfaces}
 
 [!DNL Adobe Experience Manager] verbindet das DAM-Repository mit verschiedenen anderen [!DNL Experience Manager]-Lösungen, um den Zugriff auf digitale Assets zu beschleunigen und die Kreativ-Workflows zu optimieren. Jede Asset-Erkennung beginnt mit dem Durchsuchen oder Suchen. Das Suchverhalten ist über die verschiedenen Oberflächen und Lösungen hinweg weitgehend gleich. Einige Suchmethoden ändern sich je nach Zielgruppe, Anwendungsfällen und Benutzeroberfläche der jeweiligen [!DNL Experience Manager]-Lösung. Die genauen Methoden für die einzelnen Lösungen sind unter den unten stehenden Links dokumentiert. Die allgemein anwendbaren Tipps und Verhaltensweisen werden in diesem Artikel beschrieben.
 
-### Suchen nach digitalen Assets über das Bedienfeld &quot;Adobe Asset Link&quot; {#aal}
+### Suchen nach digitalen Assets über das Bedienfeld „Adobe Asset Link“ {#aal}
 
 Mit Adobe Asset Link können Kreativprofis jetzt auf in [!DNL Experience Manager Assets] gespeicherte Inhalte zugreifen, ohne die unterstützten Adobe Creative Cloud-Programme verlassen zu müssen. Kreative können mit dem In-App-Bedienfeld in folgenden [!DNL Adobe Creative Cloud]-Programmen Assets nahtlos suchen, durchsuchen sowie ein- und auschecken: [!DNL Adobe Photoshop], [!DNL Adobe Illustrator] und [!DNL Adobe InDesign]. Asset Link ermöglicht es Benutzern auch, nach visuell ähnlichen Ergebnissen zu suchen. Die Ergebnisse der visuellen Suchanzeige basieren auf den maschinellen Lernalgorithmen von Adobe Sensei und helfen Benutzern dabei, optisch ähnliche Bilder zu finden. Siehe [Assets suchen und durchsuchen](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html#UseAdobeAssetLink) mit Adobe Asset Link.
 
-### Suchen nach digitalen Assets in [!DNL Experience Manager] Desktop-Programm {#desktop-app}
+### Suchen nach digitalen Assets in der [!DNL Experience Manager]-Desktop-App {#desktop-app}
 
 Kreativprofis verwenden das Desktop-Programm, um auf ihrem lokalen Desktop (Windows oder Mac) das [!DNL Experience Manager Assets] bequem zu durchsuchen und verfügbar zu machen. Kreative können die gewünschten Assets in Mac Finder oder Windows Explorer leicht anzeigen, in Desktop-Programmen öffnen und lokal ändern. Die Änderungen werden dann wiederum unter einer neuen, im Repository erstellten Version in [!DNL Experience Manager] gespeichert. Das Programm unterstützt einfache Suchvorgänge mit einem oder mehreren Keywords, den Platzhaltern `*` und `?` sowie dem Operator `AND`. Siehe [Assets durchsuchen und suchen sowie Vorschau für Assets anzeigen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=de#browse-search-preview-assets) im Desktop-Programm.
 
@@ -419,10 +419,10 @@ Mit den in [!DNL Experience Manager] gesuchten Assets können Sie Folgendes tun:
 * Ein oder mehrere Assets herunterladen.
 * Desktop-Aktionen verwenden, um die Assets im Desktop-Programm zu öffnen.
 * Smart-Sammlungen erstellen.
-* Version erstellen
+* eine Version erstellen
 * einen Workflow starten
-* Zuordnen oder Aufheben der Zuordnung von Assets
-* Wenden Sie mithilfe des Bedienfelds Filter an, das nach der Durchführung der Suche automatisch angezeigt wird, um die Suchergebnisse einzugrenzen.
+* eine Zuordnung für Assets herstellen oder aufheben
+* Filter anwenden, um die Suchergebnisse einzugrenzen. Verwenden Sie dazu das Filter-Bedienfeld, das nach der Suche automatisch angezeigt wird.
 
 ### Sortieren von Suchergebnissen {#sort}
 
@@ -463,17 +463,17 @@ Eine Sammlung ist ein geordneter Satz von Assets, der Assets von verschiedenen S
 
 Sie können Smart-Sammlungen auf Grundlage der Suchkriterien erstellen. Wählen Sie im Bedienfeld **[!UICONTROL Filter]** die Option **[!UICONTROL Dateien]** und klicken Sie auf **[!UICONTROL Smart-Sammlung speichern]**. Siehe [Verwalten von Sammlungen](/help/assets/manage-collections.md).
 
-### Version erstellen {#create-version}
+### Erstellen einer Version {#create-version}
 
 Erstellen Sie eine Version für die Assets, die in den Suchergebnissen angezeigt werden. Wählen Sie das Asset aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Version]**. Fügen Sie eine optionale Bezeichnung oder einen Kommentar hinzu und klicken Sie auf **[!UICONTROL Erstellen]**. Sie können auch mehrere Assets auswählen und gleichzeitig Versionen für sie erstellen.
 
 ### Workflow erstellen {#create-workflow}
 
-Ähnlich wie bei der Funktion &quot;Version erstellen&quot;können Sie auch einen Workflow für die Assets erstellen, die in den Suchergebnissen angezeigt werden. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Erstellen]** > **[!UICONTROL Workflow]**. Wählen Sie das Workflow-Modell aus, geben Sie einen Titel für den Workflow an und klicken Sie auf **[!UICONTROL Starten]**.
+Ähnlich wie bei der Funktion „Version erstellen“ können Sie auch einen Workflow für die Assets erstellen, die in den Suchergebnissen angezeigt werden. Auswählen der Assets und Klicken auf **[!UICONTROL Erstellen]** > **[!UICONTROL Workflow]**. Wählen Sie das Workflow-Modell aus, geben Sie einen Titel für den Workflow an und klicken Sie auf **[!UICONTROL Starten]**.
 
-### Zuordnen und Aufheben der Zuordnung von Assets {#relate-unrelate-assets}
+### Zuordnung für Assets herstellen und aufheben {#relate-unrelate-assets}
 
-Ordnen Sie Assets zu, die in den Suchergebnissen angezeigt werden, und heben Sie deren Zuordnung auf. Wählen Sie die Assets aus und klicken Sie auf **[!UICONTROL Relation]** oder **[!UICONTROL Nicht zuordnen]**.
+Ordnen Sie Assets, die in den Suchergebnissen angezeigt werden, einander zu und heben Sie die Zuordnung auf. Auswählen der Assets und Klicken auf **[!UICONTROL Relation]** oder **[!UICONTROL Nicht zuordnen]**.
 
 ## Unerwartete Suchergebnisse und Probleme {#unexpected-results}
 

@@ -15,7 +15,7 @@ exl-id: 0899e497-88e9-4fc3-a6be-b3a149fb5b32
 source-git-commit: a95255594ec03c152cd96df48597ced5fce4b315
 workflow-type: tm+mt
 source-wordcount: '4519'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -60,7 +60,7 @@ Weitere Informationen zum Einbetten responsiver Viewer auf Webseiten finden Sie 
 
 >[!NOTE]
 >
->Veröffentlichen Sie alle standardmäßigen Viewer, bevor Sie sie zum ersten Mal verwenden.
+>Veröffentlichen Sie alle vorkonfigurierten Viewer, bevor Sie sie zum ersten Mal verwenden.
 >Siehe [Veröffentlichen von Viewer-Vorgaben].(#publishing-viewer-presets)
 
 ### Systemkompatibilität der Viewer-Vorgaben {#viewer-preset-system-compatibility}
@@ -499,7 +499,7 @@ Beispiel: Beim *VideoPlayer*-Typ können Sie unter **[!UICONTROL Modifikatoren]*
 
 **Über Anzeigemodi für Bildminiaturansichten im Anzeigefeld**
 
-Beim Erstellen oder Bearbeiten einer Viewer-Vorgabe für interaktive Videos können Sie die zu verwendende Anzeigemodus-Einstellung festlegen, wenn Sie `InteractiveSwatches` aus dem Menü **[!UICONTROL Ausgewählte Komponente]** unter der Registerkarte **[!UICONTROL Verhalten]** auswählen. Der gewählte Anzeigemodus beeinflusst, wie und wann Miniaturansichten während der Videowiedergabe angezeigt werden. Sie können entweder den Anzeigemodus `segment` (Standard) oder den Anzeigemodus `continuous` auswählen.
+Beim Erstellen oder Bearbeiten einer Viewer-Vorgabe für interaktive Videos können Sie die zu verwendende Anzeigemodus-Einstellung festlegen, wenn Sie `InteractiveSwatches` aus dem Menü **[!UICONTROL Ausgewählte Komponente]** unter der Registerkarte **[!UICONTROL Verhalten]** auswählen. Der von Ihnen gewählte Anzeigemodus beeinflusst, wie und wann Miniaturansichten während der Videowiedergabe angezeigt werden. Sie können entweder den Anzeigemodus `segment` (Standard) oder den Anzeigemodus `continuous` auswählen.
 
 <table>
  <tbody>

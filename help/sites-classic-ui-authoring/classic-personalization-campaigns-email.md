@@ -1,7 +1,7 @@
 ---
 title: E-Mail-Marketing
 seo-title: E-mail Marketing
-description: E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus vorhandenen AEM erstellen sowie neue, für die Newsletter spezifische Inhalte hinzufügen.
+description: E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus bestehendem AEM-Inhalt erstellen und neue, für die Newsletter spezifische Inhalte hinzufügen.
 seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
 uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
 contentOwner: User
@@ -14,7 +14,7 @@ exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
 source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
 workflow-type: tm+mt
 source-wordcount: '1770'
-ht-degree: 40%
+ht-degree: 97%
 
 ---
 
@@ -26,15 +26,15 @@ ht-degree: 40%
 >Adobe plant nicht, die E-Mail-Verfolgung von über den AEM-SMTP-Dienst gesendeten offenen/zurückgesendeten (nicht zustellbaren) Nachrichten weiter auszubauen.
 >Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
-E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus vorhandenen AEM erstellen sowie neue, für die Newsletter spezifische Inhalte hinzufügen.
+E-Mail-Marketing (z. B. Newsletter) ist ein wichtiger Bestandteil jeder Marketingkampagne, da Sie auf diese Weise Ihren Leads Inhalte zukommen lassen können. In AEM können Sie Newsletter aus bestehendem AEM-Inhalt erstellen und neue, für die Newsletter spezifische Inhalte hinzufügen.
 
-Nach der Erstellung können Sie Newsletter entweder sofort oder zu einem anderen geplanten Zeitpunkt (mithilfe eines Workflows) an die jeweilige Benutzergruppe senden. Darüber hinaus können Benutzer Newsletter in dem Format abonnieren, das sie wählen.
+Nach der Erstellung können Sie die Newsletter entweder sofort oder zu einem anderen geplanten Zeitpunkt (mithilfe eines Workflows) an die jeweilige Benutzergruppe senden. Darüber hinaus können Benutzende Newsletter im gewünschten Format abonnieren.
 
-Darüber hinaus können AEM die Newsletter-Funktion verwalten, einschließlich der Pflege von Themen, der Archivierung von Newslettern und der Anzeige von Newsletter-Statistiken.
+AEM ermöglicht es Ihnen auch, die Newsletter-Funktion zu verwalten, z. B. durch die Verwaltung von Themen, Archivierung von Newslettern und Anzeigen von Newsletter-Statistiken.
 
 >[!NOTE]
 >
->In Geometrixx wird die Newsletter-Vorlage automatisch im E-Mail-Editor geöffnet. Sie können den E-Mail-Editor auch für andere Vorlagen verwenden, die Sie per E-Mail versenden möchten, z. B. Einladungen. Der E-Mail-Editor wird immer dann angezeigt, wenn eine Seite von **mcm/components/newsletter/page**.
+>In Geometrixx wird die Newsletter-Vorlage automatisch im E-Mail-Editor geöffnet. Sie können den E-Mail-Editor auch für andere Vorlagen verwenden, die Sie per E-Mail versenden möchten, z. B. Einladungen. Der E-Mail-Editor wird immer dann angezeigt, wenn eine Seite aus **mcm/components/newsletter/page** vererbt wird.
 
 In diesem Dokument werden die Grundlagen zum Erstellen von Newslettern in AEM beschrieben. Weitere Informationen zur Verwendung von E-Mail-Marketing finden Sie in den folgenden Dokumenten:
 
@@ -45,29 +45,29 @@ In diesem Dokument werden die Grundlagen zum Erstellen von Newslettern in AEM be
 
 >[!NOTE]
 >
->Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Veröffentlichungsinstanz veröffentlicht wird oder die Veröffentlichungsinstanz nicht verfügbar ist. Veröffentlichen Sie Ihren Newsletter und stellen Sie sicher, dass die Veröffentlichungsinstanz aktiv ist.
+>Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Publishing-Instanz veröffentlicht wird oder die Publishing-Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Publishing-Instanz ordnungsgemäß funktioniert.
 
 ## Erstellen eines Newsletter-Erlebnisses {#creating-a-newsletter-experience}
 
 >[!NOTE]
 >
->E-Mail-Benachrichtigungen müssen über die OSGi-Konfiguration konfiguriert werden. Siehe [Konfigurieren der E-Mail-Benachrichtigung.](/help/sites-administering/notification.md)
+>E-Mail-Benachrichtigungen müssen mit der OSGi-Konfiguration bearbeitet werden. Weitere Informationen finden Sie unter [Konfigurieren von E-Mail-Benachrichtigungen.](/help/sites-administering/notification.md)
 
 1. Wählen Sie Ihre neue Kampagne im linken Bereich aus oder doppelklicken Sie im rechten Bereich darauf.
 
-1. Wählen Sie die Listenansicht mithilfe des Symbols aus:
+1. Wählen Sie die Listenansicht mithilfe des folgenden Symbols:
 
    ![Symbol für Listenansicht](do-not-localize/mcm_icon_listview-1.png)
 
 1. Klicken Sie auf **Neu...**
 
-   Sie können die **Titel**, **Name** und Art des zu erstellenden Erlebnisses; in diesem Fall Newsletter.
+   Sie können den **Titel**, **Namen** und die Art des zu erstellenden Erlebnisses angeben; in diesem Fall „Newsletter“.
 
    ![Dialogfeld &quot;Erlebnis erstellen&quot;](assets/mcm_createnewsletter.png)
 
 1. Klicken Sie auf **Erstellen**.
 
-1. Ein neues Dialogfeld wird geöffnet. Hier können Sie Eigenschaften für den Newsletter eingeben.
+1. Ein neues Dialogfeld wird geöffnet. Hier können Sie die Eigenschaften des Newsletters festlegen.
 
    Das Feld **Standard-Empfängerliste** muss ausgefüllt werden, da es den Touchpoint für den Newsletter bildet (weitere Informationen zu Listen finden Sie unter [Arbeiten mit Listen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists)).
 
@@ -94,13 +94,13 @@ Die Einschaltzeit für den Versand des Newsletters.
    * **Standard-Empfängerliste**
 Standardliste der Empfänger, die den Newsletter erhalten sollen.
 
-   Diese können zu einem späteren Zeitpunkt im Abschnitt **Eigenschaften...** angezeigt.
+   Diese können zu einem späteren Zeitpunkt im Dialog **Eigenschaften…** aktualisiert werden.
 
 1. Klicken Sie zum Speichern auf **OK**.
 
-## Hinzufügen von Inhalten zu Newslettern {#adding-content-to-newsletters}
+## Hinzufügen von Newsletter-Inhalten {#adding-content-to-newsletters}
 
-Sie können Ihrem Newsletter wie bei jeder anderen AEM-Komponente Inhalt hinzufügen, darunter auch dynamischen Inhalt. In Geometrixx sind für die Vorlage Newsletter bestimmte Komponenten zum Hinzufügen und Ändern von Inhalt in Newslettern verfügbar.
+Sie können Ihrem Newsletter wie bei jeder anderen AEM-Komponente Inhalt hinzufügen, darunter auch dynamischen Inhalt. Die Newsletter-Vorlage in Geometrixx verfügt über bestimmte Komponenten, mit denen Inhalt in Newslettern hinzugefügt und geändert werden kann.
 
 1. Klicken Sie im MCM auf die Registerkarte **Kampagnen** und doppelklicken Sie dann auf den Newsletter, dem Sie Inhalt hinzufügen möchten oder dessen Inhalt Sie bearbeiten möchten. Der Newsletter wird geöffnet.
 
@@ -121,19 +121,19 @@ Sie können die Newsletter anpassen, indem Sie vordefinierte Variablen in die Te
 
 Sie können auch simulieren, wie ein Newsletter personalisiert wird, indem Sie den Client-Kontext verwenden und ein Profil laden.
 
-So personalisieren Sie einen Newsletter und simulieren sein Aussehen:
+So personalisieren Sie einen Newsletter und simulieren das Erscheinungsbild:
 
 1. Öffnen Sie im MCM den Newsletter, für den Sie Einstellungen anpassen möchten.
 
 1. Öffnen Sie die Textkomponente, die Sie personalisieren möchten.
 
-1. Platzieren Sie den Cursor an die Stelle, an der die Variable angezeigt werden soll, wählen Sie eine Variable aus der Dropdownliste aus und klicken Sie auf **Einfügen**. Führen Sie diese Schritte für so viele Variablen wie erforderlich aus und klicken Sie auf **OK**.
+1. Platzieren Sie den Cursor an die Stelle, an der die Variable angezeigt werden soll, und wählen Sie eine Variable aus der Dropdown-Liste aus. Klicken Sie dann auf **Einfügen**. Führen Sie diesen Schritt für so viele Variablen wie erforderlich aus und klicken Sie auf **OK**.
 
    ![Variablen hinzufügen](assets/mcm_newsletter_variables.png)
 
-1. Drücken Sie Strg+Alt+C, um ClientContext zu öffnen, und wählen Sie **Laden**, um zu simulieren, wie die Variable beim Versenden dargestellt wird. Wählen Sie den Benutzer aus der Liste aus, dessen Profil Sie laden möchten, und klicken Sie auf **OK**.
+1. Drücken Sie Strg+Alt+C, um ClientContext zu öffnen, und wählen Sie **Laden**, um zu simulieren, wie die Variable beim Versenden dargestellt wird. Wählen Sie die Person aus der Liste aus, deren Profil Sie laden möchten, und klicken Sie auf **OK**.
 
-   Die Informationen aus dem von Ihnen geladenen Profil haben die Variablen gefüllt.
+   Die Informationen des geladenen Profils werden in die Variablen eingefügt.
 
    ![Testen von Variablen](assets/mc_newsletter_testvariables.png)
 
@@ -149,7 +149,7 @@ Schalten Sie zwischen allgemeinen E-Mail-Clients um, um eine Ansicht des Newslet
 
 Derzeit können Sie Newsletter in den folgenden E-Mail-Clients anzeigen:
 
-* Yahoo Mail
+* Yahoo-E-Mail
 * Gmail
 * Hotmail
 * Thunderbird
@@ -170,9 +170,9 @@ Um zwischen Clients zu wechseln, klicken Sie auf das entsprechende Symbol, um de
 
 ## Anpassen der Newsletter-Einstellungen {#customizing-newsletter-settings}
 
-Obwohl nur autorisierte Benutzer einen Newsletter versenden können, sollten Sie Folgendes anpassen:
+Obwohl nur autorisierte Benutzende einen Newsletter tatsächlich versenden können, sollten Sie Folgendes anpassen:
 
-* Betreffzeile, damit Benutzer Ihre E-Mail öffnen und sicherstellen können, dass Ihr Newsletter nicht als Spam gekennzeichnet wird.
+* Die Betreffzeile, damit Benutzende Ihre E-Mail öffnen und sichergestellt wird, dass Ihr Newsletter nicht als Spam gekennzeichnet wird.
 * Die Von-Adresse, z. B. noreply@geometrixx.com, damit Benutzer die E-Mail von einer bestimmten Adresse erhalten.
 
 So passen Sie Newsletter-Einstellungen an:
@@ -184,39 +184,39 @@ So passen Sie Newsletter-Einstellungen an:
 1. Klicken Sie oben im Newsletter auf **Einstellungen**.
 
    ![Bearbeiten der Einstellungen für Newsletter](assets/mcm_newsletter_settings.png)
-1. Geben Sie die **Von** E-Mail-Adresse
+1. Geben Sie unter **Von** die E-Mail-Adresse ein
 
-1. Ändern Sie die **Betreff** der E-Mail, falls erforderlich.
+1. Ändern Sie den **Betreff** der E-Mail, falls erforderlich.
 
-1. Wählen Sie eine **Standard-Empfängerliste** aus der Dropdown-Liste aus.
+1. Wählen Sie aus der Dropdown-Liste eine **Standard-Empfängerliste** aus.
 
 1. Klicken Sie auf **OK**.
 
-   Wenn Sie den Newsletter testen oder versenden, erhalten Empfänger E-Mails mit der angegebenen E-Mail-Adresse und dem angegebenen Betreff.
+   Wenn Sie den Newsletter testen oder versenden, erhalten Empfängerinnen und Empfänger E-Mails mit der angegebenen E-Mail-Adresse und dem angegebenen Betreff.
 
-## Newsletter zum Testen von Flugzeugen {#flight-testing-newsletters}
+## Newsletter-Testlauf {#flight-testing-newsletters}
 
-Während Flugtests nicht obligatorisch sind, sollten Sie vor dem Versand eines Newsletters testen, ob der Newsletter wie gewünscht angezeigt wird.
+Ein Testlauf vor dem Versand des Newsletters ist nicht zwingend erforderlich, aber bietet sich an, um sicherzustellen, dass er wie gewünscht dargestellt wird.
 
-Mithilfe von Flugtests können Sie Folgendes durchführen:
+Mit Testläufen haben Sie folgende Möglichkeiten:
 
-* Sehen Sie sich den Newsletter an unter [alle vorgesehenen Kunden](#testing-newsletters-in-different-e-mail-clients).
-* Überprüfen Sie, ob der E-Mail-Server ordnungsgemäß eingerichtet ist.
+* Sie können sich den Newsletter in [allen gewünschten Clients](#testing-newsletters-in-different-e-mail-clients) ansehen.
+* Sie können überprüfen, ob der E-Mail-Server ordnungsgemäß eingerichtet ist.
 * Ermitteln Sie, ob Ihre E-Mail als Spam eingestuft wird. (Stellen Sie sicher, dass Sie sich selbst in die Empfängerliste aufnehmen.)
 
 >[!NOTE]
 >
->Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Veröffentlichungsinstanz veröffentlicht wird oder die Veröffentlichungsinstanz nicht verfügbar ist. Veröffentlichen Sie Ihren Newsletter und stellen Sie sicher, dass die Veröffentlichungsinstanz aktiv ist.
+>Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Publishing-Instanz veröffentlicht wird oder die Publishing-Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Publishing-Instanz ordnungsgemäß funktioniert.
 
-Newsletter zu Testflügen:
+So führen Sie einen Testlauf für Newsletter durch:
 
 1. Öffnen Sie im MCM den Newsletter, den Sie testen und senden möchten.
 
-1. Klicken Sie oben im Newsletter auf **Test** vor dem Versand testen.
+1. Klicken Sie oben im Newsletter auf **Testen**, um vor dem Versand einen Test durchzuführen.
 
    ![Einstellungen zum Testen eines Newsletters](assets/mcm_newsletter_testsettings.png)
 
-1. Geben Sie die Test-E-Mail-Adresse ein, an die der Newsletter geschickt werden soll und klicken Sie auf **Senden**. Wenn Sie das Profil ändern möchten, laden Sie ein anderes Profil in ClientContext. Drücken Sie dazu Strg+Alt+C und wählen Sie Laden und Laden eines Profils aus.
+1. Geben Sie die Test-E-Mail-Adresse ein, an die der Newsletter geschickt werden soll und klicken Sie auf **Senden**. Wenn Sie das Profil ändern möchten, laden Sie ein anderes Profil in ClientContext. Drücken Sie dazu Strg+Alt+C und wählen Sie die Option „Laden“ aus. Laden Sie dann das gewünschte Profil.
 
 ## Versenden von Newslettern {#sending-newsletters}
 
@@ -225,7 +225,7 @@ Newsletter zu Testflügen:
 >Adobe plant nicht, die E-Mail-Verfolgung von über den AEM-SMTP-Dienst gesendeten offenen/zurückgesendeten (nicht zustellbaren) Nachrichten weiter auszubauen.
 >Es wird deshalb empfohlen, [Adobe Campaign und dessen Integration mit AEM zu nutzen](/help/sites-administering/campaign.md).
 
-Sie können einen Newsletter entweder aus dem Newsletter selbst oder aus der Liste versenden. Beide Verfahren werden beschrieben.
+Sie können einen Newsletter entweder aus dem Newsletter selbst oder aus der Liste versenden. Beide Verfahren werden im Folgenden beschrieben.
 
 >[!NOTE]
 >
@@ -235,11 +235,11 @@ Sie können einen Newsletter entweder aus dem Newsletter selbst oder aus der Lis
 
 >[!NOTE]
 >
->Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Veröffentlichungsinstanz veröffentlicht wird oder die Veröffentlichungsinstanz nicht verfügbar ist. Veröffentlichen Sie Ihren Newsletter und stellen Sie sicher, dass die Veröffentlichungsinstanz aktiv ist.
+>Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Publishing-Instanz veröffentlicht wird oder die Publishing-Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Publishing-Instanz ordnungsgemäß funktioniert.
 
-### Senden von Newslettern aus einer Kampagne {#sending-newsletters-from-a-campaign}
+### Senden von Newslettern aus einer Kampagne heraus {#sending-newsletters-from-a-campaign}
 
-So senden Sie einen Newsletter aus der Kampagne heraus:
+So versenden Sie einen Newsletter im Rahmen einer Kampagne:
 
 1. Öffnen Sie im MCM den Newsletter, den Sie versenden möchten.
 
@@ -252,27 +252,27 @@ So senden Sie einen Newsletter aus der Kampagne heraus:
 
 1. Klicken Sie oben im Newsletter auf **Senden**. Der Newsletter-Assistent wird geöffnet.
 
-1. Wählen Sie in der Empfängerliste die Liste aus, die den Newsletter erhalten soll, und klicken Sie auf **Nächste**.
+1. Wählen Sie in der Empfängerliste die Liste aus, die den Newsletter erhalten soll, und klicken Sie auf **Weiter**.
 
    ![Versenden eines Newsletters](assets/mcm_newslettersend.png)
 
-1. Es wird eine Bestätigung angezeigt, dass die Einrichtung abgeschlossen wurde. Klicken **Senden** um den Newsletter zu versenden.
+1. Es wird eine Bestätigung angezeigt, dass die Einrichtung abgeschlossen wurde. Klicken Sie auf **Senden**, um den Newsletter dann tatsächlich zu versenden.
 
    ![Newsletter-Bestätigung gesendet](assets/mcm_newslettersendconfirm.png)
 
    >[!NOTE]
    >
-   >Vergewissern Sie sich, dass Sie einer der Empfänger sind, damit Sie sicherstellen können, dass der Newsletter empfangen wurde.
+   >Vergewissern Sie sich, dass Sie selbst zur Empfängerliste gehören, damit Sie sicherstellen können, dass der Newsletter empfangen wurde.
 
-### Versenden von Newslettern aus einer Liste {#sending-newsletters-from-a-list}
+### Senden von Newslettern aus einer Liste {#sending-newsletters-from-a-list}
 
 So versenden Sie einen Newsletter aus einer Liste:
 
-1. Klicken Sie im MCM auf **Listen** im linken Bereich.
+1. Klicken Sie im MCM im linken Bereich auf **Listen**.
 
    >[!NOTE]
    >
-   >Stellen Sie vor dem Senden sicher, dass Sie den Betreff und die Absender-E-Mail-Adresse durch [Anpassen der Einstellungen](#customizing-newsletter-settings) personalisiert haben. Sie können einen Newsletter nicht testen, wenn Sie ihn aus der Liste versenden. Sie können [Flugprüfung](#flight-testing-newsletters) es, wenn Sie es aus dem Newsletter versenden.
+   >Stellen Sie vor dem Senden sicher, dass Sie den Betreff und die Absender-E-Mail-Adresse durch [Anpassen der Einstellungen](#customizing-newsletter-settings) personalisiert haben. Sie können einen Newsletter nicht testen, wenn Sie ihn aus der Liste versenden. Sie können nur dann einen [Testlauf](#flight-testing-newsletters) durchführen, wenn Sie ihn aus dem Newsletter versenden.
 
 1. Aktivieren Sie das Kontrollkästchen neben der Liste der Leads, an die Sie den Newsletter senden möchten.
 
@@ -284,7 +284,7 @@ So versenden Sie einen Newsletter aus einer Liste:
 
    ![Dialogfeld &quot;Newsletter senden&quot;](assets/mcm_newslettersenddialog.png)
 
-1. Es wird eine Bestätigung angezeigt, dass die Einrichtung abgeschlossen wurde. Klicken **Senden** , um den ausgewählten Newsletter an die angegebene Liste von Leads zu senden.
+1. Es wird eine Bestätigung angezeigt, dass die Einrichtung abgeschlossen wurde. Klicken Sie auf **Senden**, um den ausgewählten Newsletter an die angegebene Liste der Leads zu senden.
 
    ![Versandbestätigung](assets/mcm_newslettersenddialog_confirmation.png)
 
@@ -294,12 +294,12 @@ So versenden Sie einen Newsletter aus einer Liste:
 
 In diesem Abschnitt wird beschrieben, wie Sie einen Newsletter abonnieren.
 
-### Newsletter abonnieren {#subscribing-to-a-newsletter-1}
+### Abonnieren eines Newsletters {#subscribing-to-a-newsletter-1}
 
 So abonnieren Sie einen Newsletter (unter Verwendung der Geometrixx-Website als Beispiel):
 
-1. Klicken **Websites** und zum Geometrixx navigieren **Symbolleiste** und öffnen Sie sie.
+1. Klicken Sie auf **Websites**, navigieren Sie zur Geometrixx-**Symbolleiste** und öffnen Sie sie.
 
    ![Abonnement-Beispiel](assets/chlimage_1-121.png)
 
-1. Geben Sie in dem Feld **Registrieren** in dem Geometrixx-Newsletter Ihre E-Mail-Adresse ein und klicken Sie auf **Registrieren**. Sie haben jetzt den Newsletter abonniert.
+1. Geben Sie in dem Feld **Registrieren** in dem Geometrixx-Newsletter Ihre E-Mail-Adresse ein und klicken Sie auf **Registrieren**. Sie haben nun den Newsletter abonniert.

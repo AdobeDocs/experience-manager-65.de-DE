@@ -5,13 +5,13 @@ exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1423'
-ht-degree: 97%
+ht-degree: 99%
 
 ---
 
 # Persistierte GraphQL-Abfragen {#persisted-queries-caching}
 
-Beständige Abfragen sind GraphQL-Abfragen, die auf dem Adobe Experience Manager-Server (AEM) erstellt und gespeichert werden. Sie können von Client-Programmen mit einer GET-Anfrage angefragt werden. Die Antwort auf eine GET-Anfrage kann auf der Ebene des Dispatchers und des Content Delivery Network (CDN) zwischengespeichert werden, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mithilfe von POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
+Persistierte Abfragen sind GraphQL-Abfragen, die auf dem Server mit Adobe Experience Manager (AEM) erstellt und gespeichert werden. Sie können von Client-Programmen mit einer GET-Anfrage angefragt werden. Die Antwort auf eine GET-Anfrage kann auf der Ebene des Dispatchers und des Content Delivery Network (CDN) zwischengespeichert werden, was letztendlich die Leistung der anfragenden Client-Anwendung verbessert. Dies unterscheidet sich von standardmäßigen GraphQL-Abfragen, die mithilfe von POST-Anfragen ausgeführt werden, bei denen die Antwort nicht einfach zwischengespeichert werden kann.
 
 <!--
 >[!NOTE]

@@ -9,7 +9,7 @@ hide: true
 source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
 source-wordcount: '804'
-ht-degree: 75%
+ht-degree: 76%
 
 ---
 
@@ -20,9 +20,9 @@ ht-degree: 75%
 | Adobe Experience Manager (AEM) as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/organize-assets.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
-Alle digitalen Assets, Metadaten und Inhalte von Microsoft® Office- und PDF-Dokumenten werden extrahiert und für die Suche aufbereitet. Die Suche ermöglicht ein ausgefeiltes Filtern von Assets und respektiert vollständig die entsprechenden Berechtigungen. Metadaten werden in „Metadaten in Digital Asset Management“ ausführlich behandelt.
+Alle digitalen Assets, Metadaten und Inhalte von Microsoft® Office- und PDF-Dokumenten werden extrahiert und für die Suche aufbereitet. Die Suche ermöglicht weitreichende Filtermöglichkeiten für Assets und hält dabei vollständig die korrekten Berechtigungen ein. Metadaten werden in „Metadaten in Digital Asset Management“ ausführlich behandelt.
 
-[!DNL Experience Manager Assets] unterstützt verschiedene Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch mithilfe von Ordnern organisieren oder ungeordnet und ad hoc organisieren, beispielsweise mithilfe von Tags. Benutzer können Tags im DAM-Asset-Editor bearbeiten, in dem Teil-Assets, Ausgabedarstellungen und Metadaten angezeigt werden.
+[!DNL Experience Manager Assets] unterstützt verschiedene Methoden zum Organisieren von Inhalten. Sie können sie hierarchisch mithilfe von Ordnern organisieren oder ungeordnet und ad hoc organisieren, z. B. mithilfe von Tags. Benutzer können Tags im DAM-Asset-Editor bearbeiten, in dem Teil-Assets, Ausgabedarstellungen und Metadaten angezeigt werden.
 
 ## Organisieren von Assets in Ordnern {#organize-using-folders}
 

@@ -11,7 +11,7 @@ exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
 source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
 source-wordcount: '915'
-ht-degree: 98%
+ht-degree: 99%
 
 ---
 
@@ -121,7 +121,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
 1. Öffnen Sie das Dialogfeld, indem Sie das Symbol **Konfigurieren** verwenden.
 
-   ![Symbol &quot;Konfigurieren&quot;](do-not-localize/screen_shot_2018-03-22at103256-1.png)
+   ![Konfigurationssymbol](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
    Im Dialogfeld für den Entwurf können Sie die Komponente entsprechend den verfügbaren Designparametern konfigurieren.
 
@@ -151,7 +151,7 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    ![Zusätzlichen Eintrag hinzufügen](assets/chlimage_1-94.png)
 
-   Verwenden Sie die **Löschen** -Symbol, um einen Eintrag aus einer Dialogfeldliste mit mehreren Einträgen zu entfernen.
+   Verwenden Sie das Symbol **Löschen**, um einen Eintrag aus einer Dialogfeldliste mit mehreren Einträgen zu entfernen.
 
    ![Löschen](do-not-localize/screen_shot_2018-03-22at103809.png)
 

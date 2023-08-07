@@ -13,7 +13,7 @@ exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
 source-git-commit: 498fb5f6f923710a907e1cf525f56f49850e16b2
 workflow-type: tm+mt
 source-wordcount: '1188'
-ht-degree: 89%
+ht-degree: 95%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 89%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 
@@ -88,7 +88,7 @@ Bevor Sie einen benutzerdefinierten Handler hinzufügen, müssen Sie das adaptiv
 
 ### Hinzufügen eines benutzerdefinierten Fehler-Handlers bei der Übermittlung des adaptiven Formulars {#add-custom-error-handler-af-submission}
 
-AEM Forms bietet vordefinierte Erfolgs- und Fehler-Handler für die Formularübermittlung. Handler sind clientseitige Funktionen, die basierend auf der Serverantwort ausgeführt werden. Wenn ein Formular gesendet wird, werden die Daten zur Validierung an den Server übermittelt, der eine Antwort mit Informationen zum Erfolgs- oder Fehlerereignis für die Übermittlung an den Client zurückgibt. Die Informationen werden als Parameter an den relevanten Handler übergeben, um die Funktion auszuführen.
+AEM Forms bietet standardmäßig Handler zur Verarbeitung von erfolgreichen und fehlgeschlagenen Formularübermittlungen an. Handler sind Client-seitige Funktionen, die basierend auf der Server-Antwort ausgeführt werden. Wenn ein Formular gesendet wird, werden die Daten zur Validierung an den Server übermittelt, der eine Antwort mit Informationen zum Erfolgs- oder Fehlerereignis für die Übermittlung an den Client zurückgibt. Die Informationen werden als Parameter an den relevanten Handler übergeben, um die Funktion auszuführen.
 
 Führen Sie die folgenden Schritte aus, um beim Übermitteln des adaptiven Formulars einen benutzerdefinierten Fehler-Handler hinzuzufügen: 
 

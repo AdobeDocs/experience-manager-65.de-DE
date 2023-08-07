@@ -8,7 +8,7 @@ hide: true
 source-git-commit: 6f01f5725ed2b0533756830c1a5e55b7464708f6
 workflow-type: tm+mt
 source-wordcount: '489'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -35,7 +35,7 @@ Gehen Sie wie folgt vor, um den Connector zu installieren:
 
 1. Laden Sie den Connector von [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip) herunter.
 1. [Konfigurieren der Firewall](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html?lang=de).
-1. Lassen Sie im Dispatcher HTTP-Header zu, die `authorization`, `username`und `apikey`. Lassen Sie `GET`-, `POST`- und `PUT`-Anfragen an `/bin/workfront-tools` zu.
+1. Erlauben Sie auf dem Dispatcher die HTTP-Header `authorization`, `username` und `apikey`. Lassen Sie `GET`-, `POST`- und `PUT`-Anfragen an `/bin/workfront-tools` zu.
 1. Stellen Sie sicher, dass die folgenden Pfade nicht im [!DNL Experience Manager]-Repository vorhanden sind:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`

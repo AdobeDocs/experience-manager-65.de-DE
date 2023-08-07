@@ -12,7 +12,7 @@ exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
 source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '3025'
-ht-degree: 96%
+ht-degree: 99%
 
 ---
 
@@ -146,7 +146,7 @@ Die Kopfzeile befindet sich immer oben im Bildschirm. Die meisten Optionen in de
 
   Wählen Sie den Link **Adobe Experience Manager** aus, um zwischen Konsolen zu navigieren.
 
-  ![Adobe Experience Manager-Link](assets/screen_shot_2018-03-23at103615.png)
+  ![Der Adobe Experience Manager-Link](assets/screen_shot_2018-03-23at103615.png)
 
 * [Suchen](/help/sites-authoring/search.md)
 
@@ -184,7 +184,7 @@ Die Kopfzeile befindet sich immer oben im Bildschirm. Die meisten Optionen in de
 
   ![Leistenauswahl](assets/screen_shot_2018-03-23at104029.png)
 
-* Breadcrumb
+* Breadcrumbs
 
   ![Breadcrumbs](assets/bh-05.png)
 
@@ -196,7 +196,7 @@ Die Kopfzeile befindet sich immer oben im Bildschirm. Die meisten Optionen in de
 
 * Auswahl des Analysezeitraums
 
-  ![Analytics-Zeitraum](assets/screen_shot_2018-03-23at104126.png)
+  ![Analysezeitraum](assets/screen_shot_2018-03-23at104126.png)
 
   Diese Option ist nur in der Listenansicht verfügbar. Weitere Informationen dazu finden Sie unter [Listenansicht](#list-view).
 
@@ -212,7 +212,7 @@ Die Kopfzeile befindet sich immer oben im Bildschirm. Die meisten Optionen in de
 
   ![Spaltenansicht](assets/bh-07.png)
 
-  Sie können zwischen der Spalten-, Karten- und Listenansicht wechseln; in der Listenansicht werden auch die Ansichtseinstellungen angezeigt.
+  Sie können zwischen der Spalten-, Karten- und Listenansicht wechseln. In der Listenansicht werden auch die Ansichtseinstellungen angezeigt.
 
   ![Ansichten wechseln](assets/bh-09.png)
 
@@ -232,7 +232,7 @@ Ihnen stehen verschiedene Hilferessourcen zur Verfügung:
 
   Durch Auswahl des Symbols **Hilfe** werden abhängig von Ihrer Position die geeigneten Ressourcen geöffnet:
 
-  ![Symbolleiste der Konsole](assets/bh-10.png)
+  ![Konsolensymbolleiste](assets/bh-10.png)
 
 * **Navigation**
 
@@ -391,7 +391,7 @@ In allen Ansichten kann die Auswahl aller Elemente aufgehoben werden, indem Sie 
 
 1. Beispiel für die Kartenansicht:
 
-   ![Select - Kartenansicht](assets/bh-15.png)
+   ![Auswählen – Kartenansicht](assets/bh-15.png)
 
 1. Nach Auswahl einer Ressource wird die obere Kopfzeile von der [Aktionssymbolleiste](#actionstoolbar) überdeckt, die Zugriff auf die Aktionen bietet, die für die ausgewählte Ressource verfügbar sind.
 
@@ -447,7 +447,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
 * [Schnellaktionen](#quick-actions) sind auch in dieser Ansicht verfügbar, z. B. Auswahl und allgemeine Aktionen wie Bearbeiten.
 
-  ![Kartenansicht - Schnellaktionen](assets/bh-13-1.png)
+  ![Kartenansicht – Schnellaktionen](assets/bh-13-1.png)
 
 * Sie können in der Struktur nach unten navigieren, indem Sie auf die Karten tippen/klicken (vermeiden Sie dabei die Schnellaktionen), und über die [Breadcrumbs in der Kopfzeile](/help/sites-authoring/basic-handling.md#the-header) wieder nach oben navigieren.
 
@@ -460,7 +460,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
 * Um alle Elemente in der Liste auszuwählen, verwenden Sie das Kontrollkästchen links oben in der Liste.
 
-  ![Listenansicht - Alle auswählen](assets/bh-20.png)
+  ![Listenansicht – Alle auswählen](assets/bh-20.png)
 
    * Wenn alle Elemente in der Liste ausgewählt sind, wird dieses Kontrollkästchen aktiviert.
 
@@ -483,9 +483,9 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
    * **Unique visitors**
    * **Zeit auf Seite**
 
-  ![Anzeigeeinstellungen - Spalten konfigurieren](assets/bh-21.png)
+  ![Anzeigeeinstellungen – Spalten konfigurieren](assets/bh-21.png)
 
-  Standardmäßig wird die Spalte **Name** angezeigt, die Teil der URL der Seite ist. In einigen Fällen muss der Autor möglicherweise auf Seiten zugreifen, die in einer anderen Sprache verfasst sind. Es kann hilfreich sein, den Namen der Seite zu sehen (was in der Regel unverändert ist), wenn der Autor die Sprache der Seite nicht kennt.
+  Standardmäßig wird die Spalte **Name** angezeigt, die Teil der URL der Seite ist. Unter Umständen muss die Autorin oder der Autor auf Seiten zugreifen, die in einer anderen Sprache verfasst sind. In diesem Fall ist die Anzeige des Seitennamens (der sich normalerweise nicht ändert) äußerst hilfreich, wenn die Person die Sprache der Seite nicht kennt.
 
 * Ändern Sie die Reihenfolge der Elemente mithilfe des vertikalen gepunkteten Balkens am rechten Rand jedes Elements.
 
@@ -497,7 +497,7 @@ Wenn Sie eine Ressource in der Spalte ganz links auswählen, werden die untergeo
 
   Klicken oder tippen Sie auf die vertikale Auswahlleiste und ziehen Sie das Element an die gewünschte Position in der Liste.
 
-  ![Reihenfolge ändern - Ziehen](assets/bh-23.png)
+  ![Reihenfolge ändern – Ziehen](assets/bh-23.png)
 
 * Sie können Analytics-Daten anzeigen, indem Sie die entsprechenden Spalten mit dem Dialogfeld **Anzeigeeinstellungen** anzeigen.
 
@@ -561,7 +561,7 @@ Die Zeitleistenspalte bietet folgende Möglichkeiten:
    * [eine Version speichern](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [einen Workflow starten](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
 
-Auf diese Optionen kann über den Pfeil neben dem **Kommentar** -Feld.
+Diese Optionen sind über den Pfeil neben dem **Kommentarfeld** aufrufbar.
 
 ![Zeitleiste](assets/bh-27.png)
 

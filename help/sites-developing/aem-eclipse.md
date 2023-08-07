@@ -11,13 +11,13 @@ exl-id: 00473769-c447-4966-a71e-117c669e0151
 source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
 source-wordcount: '788'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
 # AEM Developer Tools for Eclipse{#aem-developer-tools-for-eclipse}
 
-![Zirkuläres Bildmotiv für AEM Entwicklertools für Eclipse.](do-not-localize/chlimage_1-9.png)
+![Zirkuläres Bildmotiv für AEM-Entwickler-Tools für Eclipse.](do-not-localize/chlimage_1-9.png)
 
 ## Übersicht {#overview}
 

@@ -300,7 +300,7 @@ Die tatsächlichen für den Benutzer verfügbaren Aktionen werden abhängig von 
 
   Hierüber können Sie ein neues [Experience Fragment](/help/sites-authoring/experience-fragments.md) aus der ausgewählten Komponente erstellen oder einem bestehenden Experience Fragment hinzufügen.
 
-  ![In Experience Fragment-Variante konvertieren](do-not-localize/screen_shot_2018-03-22at113033.png)
+  ![In Experience-Fragment-Variante umwandeln](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## Bearbeiten (Inhalt) {#edit-content}
 
@@ -437,7 +437,7 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
   ![Vererbung erneut aktivieren](do-not-localize/screen_shot_2018-03-22at134417.png)
 
-  Die Rollout-Aktion steht auch in der Blueprint oder in der Live Copy-Quelle zur Verfügung:
+  Die Rollout-Aktion steht auch im Blueprint oder in der Live Copy-Quelle zur Verfügung:
 
   ![Rollout](do-not-localize/screen_shot_2018-03-22at134516.png)
 
@@ -551,7 +551,7 @@ Im Menü „Seiteninformationen“ steht dann die Option **Entsperren** zur Verf
 
 Mit den folgenden Symbolen können Sie eine Aktion rückgängig machen oder wiederholen. Diese werden gegebenenfalls in der Symbolleiste angezeigt:
 
-![Rückgängig und Wiederherstellen](do-not-localize/screen_shot_2018-03-23at093614.png)
+![Rückgängig machen und wiederholen](do-not-localize/screen_shot_2018-03-23at093614.png)
 
 >[!NOTE]
 >

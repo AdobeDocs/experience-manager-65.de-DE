@@ -34,7 +34,7 @@ Dieses Paket enthält eine Cloud-Konfiguration, die die folgenden Plattformversi
 | Adobe Analytics | v1.4-Rest-API | **Unterstützt** |
 **Überlegungen zur Paketinstallation:**
 
-* Das Paket wird voraussichtlich auf einem sauberen Server installiert, der frei von anderen Demopaketen oder älteren Demopaketversionen ist
+* Es wird erwartet, dass das Paket auf einem sauberen Server installiert wird, der frei von anderen Demopaketen oder älteren Demopaketversionen ist
 * Es wird erwartet, dass das Paket auf einem OSGI-Server installiert wird, der im Autorenmodus ausgeführt wird
 
 ### Was enthält dieses Paket? {#what-does-this-package-include}
@@ -45,9 +45,9 @@ Das [AEM Forms-We.Gov-Demopaket](https://experience.adobe.com/#/downloads/conten
 
    * **we-gov-forms.ui.apps-&lt;version>.zip** *- Enthält alle Komponenten, Client-Bibliotheken, Beispielbenutzer, Workflow-Modelle usw.*
 
-      * **we-gov-forms.core-&lt;version>.jar** - *Enthält alle OSGi-Dienste, die Implementierung benutzerdefinierter Workflow-Schritte usw.*
+      * **we-gov-forms.core-&lt;version>.jar** - *Enthält alle OSGi-Dienste, benutzerdefinierte Implementierung von Workflow-Schritten usw.*
 
-      * **we-gov-forms.derby&lt;version>.jar** - *Enthält alle OSGi-Dienste, Datenbankschemata usw.*
+      * **we-gov-forms.derby&lt;version>.jar** - *Enthält alle OSGI-Dienste, Datenbankschemata usw.*
 
       * **core.wcm.components.all-2.0.4.zip** – *Sammlung von WCM-Beispielkomponenten*
 
@@ -111,7 +111,7 @@ Dieser Abschnitt enthält Informationen zur Installation des Demopakets.
 
 ### Installieren neuer Paketversionen {#installing-new-package-versions}
 
-Um eine neue Paketversion zu installieren, führen Sie die in den Abschnitten 4.1 und 4.2 definierten Schritte aus. Es ist zwar möglich, eine neuere Paketversion zu installieren, während bereits ein älteres Paket installiert ist, es wird jedoch empfohlen, die ältere Paketversion zuerst zu deinstallieren. Gehen Sie dazu wie folgt vor.
+Um eine neue Paketversion zu installieren, führen Sie die in 4.1 und 4.2 definierten Schritte aus. Es ist möglich, eine neuere Paketversion zu installieren, während bereits ein anderes älteres Paket installiert ist. Es wird jedoch empfohlen, die ältere Paketversion zuerst zu deinstallieren. Gehen Sie dazu wie folgt vor.
 
 1. Navigieren Sie zu *https://&lt;aemserver>:&lt;port>/crx/packmgr/index.jsp*
 1. Suchen Sie die ältere Datei **we-gov-forms.pkg.all-&lt;version>.zip**.
@@ -155,8 +155,8 @@ Dieser Abschnitt enthält Details und Anweisungen zur Konfiguration des Demopake
 
 1. Konfigurieren Sie den Service für die Verbindung mit dem gewünschten SMTP-Server:
 
-   1. **Hostname des SMTP-Servers**: z. B. (smtp.gmail.com)
-   1. **Server-Port**: z. B. (465) für Gmail mit SSL
+   1. **Hostname des SMTP-Servers**: zum Beispiel (smtp.gmail.com)
+   1. **Server-Port**: zum Beispiel (465) für Gmail mit SSL
    1. **SMTP-Benutzer:** demo@ &lt;firmenname> .com
    1. **„Von“-Adresse**: aemformsdemo@adobe.com
 
@@ -222,7 +222,7 @@ Dieser Abschnitt enthält Details und Anweisungen zur MS® Dynamics Cloud-Konfig
 **Verweise:**
 
 1. [Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md)
-1. [Konfigurieren von Microsoft® Dynamics für AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html)
+1. [Konfigurieren von Microsoft® Dynamics für AEM Forms](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/using-ms-dynamics-with-aem-forms.html?lang=de)
 
 #### MS® Dynamics OData-Cloud-Dienst {#ms-dynamics-odata-cloud-service}
 
@@ -246,12 +246,12 @@ Dieser Abschnitt enthält Details und Anweisungen zur MS® Dynamics Cloud-Konfig
 
       1. Client-ID – auch als Programm-ID bezeichnet
       1. Client-Geheimnis
-      1. OAuth-URL - z. B. [https://login.microsoftonline.com/common/oauth2/authorize](https://login.microsoftonline.com/common/oauth2/authorize)
+      1. OAuth-URL - beispielsweise [https://login.microsoftonline.com/common/oauth2/authorize](https://login.microsoftonline.com/common/oauth2/authorize)
       1. Aktualisieren der Token-URL - z. B. [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. Zugriffstoken-URL - z. B. [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. Genehmigungsumfang – **openid**
       1. Authentifizierungs-Header – **Autorisierungsanbieter**
-      1. Ressource - z. B. `https://msdynamicsserver.api.crm3.dynamics.com`
+      1. Ressource - zum Beispiel `https://msdynamicsserver.api.crm3.dynamics.com`
 
    1. Klicken Sie auf „Mit OAuth verbinden“.
 
@@ -277,7 +277,7 @@ Die in diesem Abschnitt beschriebenen Schritte enthalten Informationen dazu, wie
 1. Um die Ressourcen-URL/Dienststamm-URL zu finden, navigieren Sie zum Dashboard der MS® Dynamics-Instanz.
 1. Klicken Sie in der oberen Navigationsleiste auf „Verkauf“ oder Ihren eigenen Instanztyp und dann auf „Einstellungen auswählen“.
 1. Klicken Sie unten rechts auf &quot;Anpassungen&quot;und &quot;Entwicklungsressourcen&quot;.
-1. Dort finden Sie die Dienststamm-URL: Beispiel:
+1. Dort finden Sie beispielsweise die Dienststamm-URL:
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 
@@ -425,7 +425,7 @@ AEM Forms Analytics-Daten sind verfügbar, wenn sie offline sind, oder ohne Adob
 
    ![Analyse und Recommendations](assets/analytics_recommendations.jpg)
 
-1. Auf dieser Seite werden abgerufene Informationen aus Adobe Analytics angezeigt, die sich auf die AEM Sites-Seite beziehen (Hinweis: Diese Informationen werden regelmäßig von Adobe Analytics aktualisiert und nicht in Echtzeit angezeigt.
+1. Auf dieser Seite werden abgerufene Informationen aus Adobe Analytics angezeigt, die sich auf die AEM Sites-Seite beziehen (Hinweis: Diese Informationen werden standardmäßig regelmäßig von Adobe Analytics aktualisiert und nicht in Echtzeit angezeigt).
 
    ![AEM Sites-Analyse](assets/sites_analysis.jpg)
 
@@ -612,7 +612,7 @@ Nach dem Einrichten der Konfiguration können Benutzer sie testen, indem sie ein
 
 1. Wählen Sie die PDF der We.Gov Enrollment Application aus.
 
-1. Klicken **Automatische Konversion starten** in der oberen rechten Ecke.
+1. Klicks **Automatische Konversion starten** in der oberen rechten Ecke.
 
 1. Benutzer sollten die Option wie unten dargestellt sehen können.
 
@@ -712,7 +712,7 @@ Diese Formulare können an bestimmte Anwendungsfälle angepasst werden. Bestimmt
 
 **Anmeldeformular für Gesundheitsleistungen:**
 
-* contact_id - Ausgeblendetes Feld, das zum Empfangen der MS® Dynamics-Kontakt-ID während der Übermittlung verwendet wird
+* contact_id - Ausgeblendetes Feld zum Empfangen der MS® Dynamics-Kontakt-ID während der Übermittlung
 * Senden - Die Logik der Schaltfläche „Senden“ muss angepasst werden, um Rückrufe zu unterstützen. Die Anpassung wird dokumentiert, es war jedoch ein großes Skript erforderlich, um das Formular zu senden, während sowohl eine POST als auch ein GET über das Forms-Datenmodell an MS® Dynamics durchgeführt werden.
 * Stammbereich - Das Initialisierungsereignis wird verwendet, um dem AEM Posteingang eine MS® Dynamics-Schaltfläche hinzuzufügen, da alle Komponenten der Benutzeroberfläche von Inbox Granite nicht geändert werden können.
 
@@ -729,7 +729,7 @@ Das adaptive Anmeldungsformular sendet zur Verarbeitung an einen OSGi-Workflow. 
 
 Aufgrund bestimmter Einschränkungen enthält dieser Workflow mehrere Skripte und benutzerdefinierte OSGi-Workflow-Prozessschritte. Diese Workflow-Schritte wurden als generische Schritte und nicht mit Konfigurationsdialogen erstellt. Derzeit beruht die Konfiguration der Workflow-Schritte auf Prozessargumenten.
 
-Der Java™-Code des gesamten Workflow-Schritts ist im **we-gov-forms.core-&lt;version>.jar** Bundle.
+Der Java™-Code des gesamten Workflow-Schritts ist im **we-gov-forms.core-&lt;version>.jar** Bundle
 
 ## Überlegungen zur Demo und bekannte Probleme {#demo-considerations-and-known-issues}
 
@@ -749,7 +749,7 @@ Dieser Abschnitt enthält Informationen zu Demo-Funktionen und Design-Entscheidu
 
 ### Aktivieren des Chrome-Add-ons für Zugänglichkeitstests {#enable-chrome-add-on}
 
-Installieren Sie das Chrome-Plug-in hier , um Zugriffstests durchzuführen. `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
+Um Zugänglichkeitstests durchzuführen, installieren Sie das Chrome-Plug-in, das hier zu finden ist: `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
 Laden Sie nach der Installation die Seite, die Sie im Chrome-Browser testen möchten. (Hinweis: Wenn mehrere Registerkarten geöffnet sind, kann sich dies auf Ihr Scoring auswirken. Es empfiehlt sich deswegen, nur eine Registerkarte zu öffnen.) Sobald die Seite geladen wurde, **Rechtsklick** auf der Seite und wählen Sie **Prüfungen** Registerkarte. Dort können Entwickler die Art der Prüfung auswählen, die vom Zugänglichkeits-Plug-in durchgeführt werden soll. Nachdem alle gewünschten Optionen ausgewählt sind, können die Benutzenden auf die Schaltfläche „Bericht erstellen“ klicken. Dadurch wird ein PDF-Dokument generiert, das die Gesamtbewertung der Barrierefreiheit und die Möglichkeiten zur Steigerung der Barrierefreiheit insgesamt anzeigt.
 
@@ -776,7 +776,7 @@ Package Manager, Anwender können auf das Ultramarine-Design in AEM Forms zugrei
 
 Anwender haben die Möglichkeit, verschiedene Workflow-Service-Optionen zu konfigurieren, darunter die folgenden:
 
-1. Microsoft® Dynamics-Einstieg
+1. Microsoft® Dynamics Entry
 1. Adobe Sign
 1. AEM Custom Communication Management
 1. Adobe Analytics
