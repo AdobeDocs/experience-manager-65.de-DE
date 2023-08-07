@@ -10,9 +10,9 @@ discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '771'
-ht-degree: 51%
+ht-degree: 100%
 
 ---
 
@@ -24,9 +24,9 @@ ht-degree: 51%
 >
 >Siehe [Veraltete und entfernte Funktionen](/help/release-notes/deprecated-removed-features.md).
 
-AEM bietet ein Framework für die Automatisierung von Tests für Ihre AEM Benutzeroberfläche. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework stellt eine JavaScript-API zum Erstellen von Tests bereit.
+AEM bietet ein Framework für die Automatisierung von Tests für Ihre AEM-Benutzeroberfläche. Mit diesem Framework können Sie Tests der Benutzeroberfläche direkt in einem Webbrowser schreiben und ausführen. Das Framework umfasst eine JavaScript-API für das Erstellen von Tests.
 
-Das AEM-Test-Framework verwendet Hobbes.js, eine in JavaScript geschriebene Testbibliothek. Das Hobbes.js-Framework wurde für AEM-Tests als Teil des Entwicklungsprozesses entwickelt. Das Framework steht jetzt zur allgemeinen Verwendung zum Testen Ihrer AEM-Anwendungen zur Verfügung.
+Das AEM-Test-Framework nutzt Hobbes.js, eine Testbibliothek, die in JavaScript geschrieben wurde. Das Hobbes.js-Framework wurde für AEM-Tests als Teil des Entwicklungsprozesses entwickelt. Das Framework steht jetzt zur allgemeinen Verwendung zum Testen Ihrer AEM-Anwendungen zur Verfügung.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Das AEM-Test-Framework verwendet Hobbes.js, eine in JavaScript geschriebene Test
 
 ## Struktur von Tests {#structure-of-tests}
 
-Bei der Verwendung automatisierter Tests in AEM sind die folgenden Begriffe wichtig, um sie zu verstehen:
+Bei der Verwendung automatisierter Tests in AEM ist es wichtig, die folgenden Begriffe zu verstehen:
 
 | Aktion | Eine **Aktion** ist eine bestimmte Aktivität auf einer Web-Seite, z. B. das Klicken auf einen Link oder eine Schaltfläche. |
 |---|---|
@@ -45,13 +45,13 @@ Bei der Verwendung automatisierter Tests in AEM sind die folgenden Begriffe wich
 
 ### Anzeigen von Test-Suites {#viewing-test-suites}
 
-Öffnen Sie die Testkonsole , um die registrierten Test-Suites anzuzeigen. Das Testbedienfeld enthält eine Liste von Test-Suites und deren Testfälle.
+Öffnen Sie die Testkonsole, um die registrierten Test-Suites anzuzeigen. Das Testfeld enthält eine Liste von Test-Suites und deren Testfälle.
 
 Navigieren Sie zur Tools-Konsole über **Globale Navigation -> Tools > Vorgänge -> Tests**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
-Beim Öffnen der Konsole werden die Test-Suites links neben einer Option aufgeführt, mit der sie alle nacheinander ausgeführt werden können. Der rechts angezeigte Bereich mit einem gecheckten Hintergrund ist ein Platzhalter für die Anzeige des Seiteninhalts während der Testausführung.
+Beim Öffnen der Konsole werden die Test-Suites auf der linken Seite aufgeführt, zusammen mit der Option, sie alle nacheinander auszuführen. Der rechts angezeigte Bereich mit einem gecheckten Hintergrund ist ein Platzhalter für die Anzeige des Seiteninhalts während der Testausführung.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -65,37 +65,37 @@ Das Häkchen-Symbol kennzeichnet einen erfolgreichen Test:
 
 Eine X-Symbol zeigt einen fehlgeschlagenen Test an:
 
-![Symbol &quot;Fehlgeschlagener Test&quot;, gekennzeichnet durch ein X innerhalb eines Kreises.](do-not-localize/chlimage_1-3.png)
+![Symbol „Fehlgeschlagener Test“, gekennzeichnet durch ein X in einem Kreis.](do-not-localize/chlimage_1-3.png)
 
-So führen Sie eine Test Suite aus:
+So führen Sie eine Test-Suite aus:
 
 1. Klicken oder tippen Sie im Testfeld auf den Namen des Testfalls, den Sie ausführen möchten, um die Details der Aktionen zu erweitern.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Klicken **Ausführen eines Tests**.
+1. Klicken Sie auf **Test ausführen**.
 
-   ![Ein Bild der Schaltfläche &quot;Tests ausführen&quot;, gekennzeichnet durch einen rechts zeigenden Zeiger in einem Kreis.](do-not-localize/chlimage_1-4.png)
+   ![Ein Bild der Schaltfläche „Tests ausführen“, gekennzeichnet durch einen nach rechts zeigenden Zeiger in einem Kreis.](do-not-localize/chlimage_1-4.png)
 
 1. Der Platzhalter wird durch Seiteninhalte ersetzt, wenn der Test ausgeführt wird.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Überprüfen Sie die Ergebnisse des Testfalls, indem Sie auf die Beschreibung tippen oder klicken, um die **Ergebnis** Bereich. Tippen oder klicken Sie auf den Namen Ihres Testfalls im **Ergebnis** -Bedienfeld werden alle Details angezeigt.
+1. Um die Ergebnisse des Testfalls anzuzeigen, tippen oder klicken Sie auf die Beschreibung, um das Bedienfeld **Ergebnis** zu öffnen. Wenn Sie im Bedienfeld **Ergebnis** auf den Namen des Testfalls tippen oder klicken, werden alle Details angezeigt.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
 ### Ausführen mehrerer Tests {#running-multiple-tests}
 
-Test-Suites werden nacheinander in der Reihenfolge ausgeführt, in der sie in der Konsole angezeigt werden. Sie können einen Test detailliert untersuchen, um die detaillierten Ergebnisse anzuzeigen.
+Test-Suites werden nacheinander in der Reihenfolge ausgeführt, in der sie in der Konsole angezeigt werden. Sie können einen Drilldown durchführen, um die detaillierten Ergebnisse anzuzeigen.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
 1. Tippen oder klicken Sie im Testfeld auf die Schaltfläche **Alle Tests ausführen** oder auf die Schaltfläche **Tests ausführen** unter dem Titel der Test-Suite, die Sie ausführen möchten.
 
-   ![Ein Bild der Schaltfläche Alle Tests ausführen und der Schaltfläche Tests ausführen , gekennzeichnet durch einen rechts zeigenden Zeiger in einem Kreis.](do-not-localize/chlimage_1-5.png)
+   ![Ein Bild der Schaltfläche „Alle Tests ausführen“ und der Schaltfläche „Tests ausführen“, gekennzeichnet durch einen nach rechts zeigenden Zeiger in einem Kreis.](do-not-localize/chlimage_1-5.png)
 
-1. Um die Ergebnisse der einzelnen Testfälle anzuzeigen, klicken Sie auf den Titel des Testfalls. Klicken Sie auf den Namen Ihres Tests im **Ergebnis** -Bedienfeld werden alle Details angezeigt.
+1. Um die Ergebnisse jedes Testfalls anzuzeigen, tippen oder klicken Sie auf den Titel des Testfalls. Wenn Sie im Bedienfeld **Ergebnis** auf den Namen des Tests klicken, werden alle Details angezeigt.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
