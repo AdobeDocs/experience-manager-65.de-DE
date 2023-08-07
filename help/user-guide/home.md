@@ -1,11 +1,11 @@
 ---
 title: AEM 6.5 Benutzerhandbuch – Hub
-description: Eine Übersicht über die wichtigsten Ressourcen für das Verständnis, Installieren, Verwalten und Verwenden von AEM 6.5
+description: Ein Überblick über die wichtigsten Ressourcen für das Verständnis, die Installation, die Verwaltung und die Verwendung von AEM 6.5
 exl-id: 51788662-6214-408e-98d9-692950c366be
 source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '212'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -40,7 +40,7 @@ Support-Beauftragte erhalten Unterstützung über:
 
 >[!NOTE]
 >
->Nicht sicher, ob Sie ein **Support-Delegate**? Finden Sie heraus, ob dies [Der Benutzertyp gilt für Sie](https://helpx.adobe.com/de/experience-cloud/supported-users.html) und erfahren Sie mehr über die Adobe [Enterprise-Supportbedingungen](https://helpx.adobe.com/de/support/programs/enterprise-support-terms.html).
+>Nicht sicher, ob Sie **Support-Beauftragte(r)** sind? Finden Sie heraus, ob dieser [Benutzertyp auf Sie zutrifft](https://helpx.adobe.com/de/experience-cloud/supported-users.html), und erfahren Sie mehr über unsere [Supportbedingungen für Unternehmen](https://helpx.adobe.com/de/support/programs/enterprise-support-terms.html).
 
 ## Community {#community}
 
