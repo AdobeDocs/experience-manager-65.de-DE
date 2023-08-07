@@ -7,9 +7,9 @@ feature: Collaboration
 exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '595'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -62,7 +62,7 @@ So erstellen Sie einen privaten Ordner und geben ihn frei:
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**. Je nach zugewiesener Rolle erhält der Benutzer eine Reihe von Berechtigungen für den privaten Ordner, wenn er sich bei [!DNL Assets] anmeldet.
 1. Klicken Sie auf **[!UICONTROL OK]**, um die Bestätigungsmeldung zu schließen.
-1. Der Benutzer, für den Sie den Ordner freigeben, erhält eine Freigabebenachrichtigung. Melden Sie sich bei [!DNL Assets] mit den Anmeldedaten des Benutzers an, um die Benachrichtigung anzuzeigen.
+1. Die Nutzerin bzw. der Nutzer, für die bzw. den Sie den Ordner freigeben, erhält eine Freigabebenachrichtigung. Melden Sie sich bei [!DNL Assets] mit den Anmeldedaten des Benutzers an, um die Benachrichtigung anzuzeigen.
 
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
