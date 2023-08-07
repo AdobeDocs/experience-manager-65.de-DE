@@ -7,9 +7,9 @@ feature: Search
 exl-id: acaf46e6-ff70-4825-8922-ce8f82905a92
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2417'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -22,17 +22,17 @@ ht-degree: 82%
 
 Eine organisationsweite Bereitstellung von [!DNL Adobe Experience Manager Assets] bietet die Möglichkeit, eine große Anzahl von Assets zu speichern. Allein mit den generischen Suchfunktionen von [!DNL Experience Manager] kann es anstrengend und zeitraubend sein, das richtige Asset zu finden.
 
-Verwenden Sie Suchfacetten im Bedienfeld &quot;Filter&quot;, um Ihrer Suche mehr Granularität hinzuzufügen und die Suchfunktion effizienter und vielseitiger zu gestalten. Suchfacetten fügen mehrere Dimensionen (Prädikate) hinzu, mit denen Sie komplexere Suchvorgänge durchführen können. Der Bereich &quot;Filter&quot;enthält einige Standardfacetten. Sie können auch benutzerdefinierte Suchfacetten hinzufügen.
+Verwenden Sie Suchfacetten im Bedienfeld „Filter“, um Ihrer Suche ein höheres Maß an Granularität zu verleihen und die Suchfunktion effizienter und vielseitiger zu gestalten. Suchfacetten fügen mehrere Dimensionen (Prädikate) hinzu, mit denen Sie komplexere Suchen durchführen können. Das Bedienfeld „Filter“ enthält einige Standardfacetten. Sie können auch benutzerdefinierte Suchfacetten hinzufügen.
 
 Zusammengefasst bieten Suchfacetten Ihnen die Möglichkeit, auf verschiedene Arten nach Assets zu suchen, statt in einer einzigen, vorab bestimmten taxonomischen Reihenfolge. Sie können für eine zielgerichtetere Suche einfach einen Drilldown zur gewünschten Detailtiefe durchführen.
 
-Wenn Sie beispielsweise nach einem Bild suchen, können Sie auswählen, ob Sie eine Bitmap oder ein Vektorbild wünschen. Sie können den Suchbereich weiter reduzieren, indem Sie den MIME-Typ für das Bild angeben. Ebenso können Sie bei der Suche nach Dokumenten das Format angeben, z. B. PDF oder MS Word.
+Wenn Sie beispielsweise nach einem Bild suchen, können Sie auswählen, ob Sie ein Bitmap- oder ein Vektorbild möchten. Sie können den Umfang der Suche weiter einschränken, indem Sie den MIME-Typ des Bildes angeben. Auch bei der Suche nach Dokumenten können Sie das Format angeben, z. B. PDF oder MS Word.
 
 ## Hinzufügen von Prädikaten {#adding-a-predicate}
 
 Die Suchfacetten, die im Bedienfeld „Filter“ angezeigt werden, werden im zugrunde liegenden Suchformular mithilfe von Prädikaten definiert. Um weitere oder andere Facetten anzuzeigen, fügen Sie dem standardmäßigen Formular Prädikate hinzu oder verwenden Sie ein benutzerdefiniertes Formular, das Facetten Ihrer Wahl enthält.
 
-Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat **[!UICONTROL Volltext]** hinzu. Mit dem Eigenschaftsprädikat können Sie nach Assets suchen, die mit einer einzelnen von Ihnen angegebenen Eigenschaft übereinstimmen. Verwenden Sie das Options-Prädikat, um nach Assets zu suchen, die mit einem oder mehreren Werten für eine bestimmte Eigenschaft übereinstimmen. Fügen Sie das Datumsbereichsprädikat hinzu, um Assets zu suchen, die innerhalb eines bestimmten Datumsbereichs erstellt wurden.
+Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat **[!UICONTROL Volltext]** hinzu. Mit dem Eigenschaftsprädikat können Sie nach Assets suchen, die mit einer einzelnen von Ihnen angegebenen Eigenschaft übereinstimmen. Verwenden Sie das Optionsprädikat, um nach Assets zu suchen, die mit einem oder mehreren Werten für eine bestimmte Eigenschaft übereinstimmen. Fügen Sie das Datumsbereichsprädikat hinzu, um Assets zu suchen, die innerhalb eines bestimmten Datumsbereichs erstellt wurden.
 
 1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Suchformulare]**.
 1. Wählen Sie auf der Seite [!UICONTROL Suchformulare] die Option **[!UICONTROL Asset-Admin-Suchleiste]** aus, und klicken Sie dann auf **[!UICONTROL Bearbeiten]** ![Symbol „Bearbeiten“](assets/do-not-localize/aemassets_edit.png).
@@ -45,7 +45,6 @@ Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat **[!
    >1. Löschen Sie den `type`-Knoten.
    >1. Kopieren Sie im Pfad `/libs/settings/dam/search/facets/assets/jcr:content/items` die Knoten `asset`, `directory`, `typeor`, `excludepaths` und `searchtype` in den in Schritt 1 genannten Pfad.
    >1. Speichern Sie die Änderungen.
-
 
 1. Ziehen Sie auf der Seite [!UICONTROL Suchformulare bearbeiten] eine Eigenschaft von der Registerkarte **[!UICONTROL Eigenschaft auswählen]** in den Hauptbereich. Ziehen Sie beispielsweise **[!UICONTROL Eigenschaftsprädikat]**.
 
@@ -77,7 +76,7 @@ Um eine Volltextsuche durchzuführen, fügen Sie dem Formular das Prädikat **[!
 
 ## Hinzufügen eines Options-Prädikats {#adding-an-options-predicate}
 
-Mit der Options-Eigenschaft können Sie mehrere Suchoptionen im Bereich Filter hinzufügen. Sie können eine oder mehrere dieser Optionen im Bereich Filter auswählen, um nach Assets zu suchen. Um beispielsweise anhand des Dateityps nach Assets zu suchen, konfigurieren Sie im Suchformular Optionen wie Bilder, Multimedia, Dokumente und Archive. Nachdem Sie diese Optionen konfiguriert haben, wird die Suche für Assets vom Typ GIF, JPEG, PNG usw. ausgeführt, wenn Sie im Bedienfeld „Filter“ die Option „Bilder“ auswählen.
+Mit dem Optionsprädikat können Sie im Filterbereich mehrere Suchoptionen hinzufügen. Sie können eine oder mehrere dieser Optionen im Bedienfeld „Filter“ auswählen, um nach Assets zu suchen. Um beispielsweise nach Assets auf der Basis von Dateitypen zu suchen, konfigurieren Sie Optionen wie Bilder, Multimedia, Dokumente und Archive im Suchformular. Nachdem Sie diese Optionen konfiguriert haben, wird die Suche für Assets vom Typ GIF, JPEG, PNG usw. ausgeführt, wenn Sie im Bedienfeld „Filter“ die Option „Bilder“ auswählen.
 
 Um die Optionen der jeweiligen Eigenschaft zuzuordnen, erstellen Sie eine Knotenstruktur für die Optionen und geben Sie den Pfad des übergeordneten Knotens in der Eigenschaft „Eigenschaftsname“ des Options-Prädikats an. Der übergeordnete Knoten sollte den Typ `sling`: `OrderedFolder` aufweisen. Die Optionen sollten den Typ `nt:unstructured` aufweisen. Die Eigenschaften `jcr:title` und `value` sollten für den Optionsknoten konfiguriert sein.
 
@@ -140,24 +139,24 @@ Mit dem Mehrwert-Eigenschaftsprädikat können Sie für mehrere Werte nach Asset
 1. Stellen Sie sicher, dass die **[!UICONTROL Trennzeichen-Unterstützung]** aktiviert ist. Geben Sie im Feld **[!UICONTROL Eingabe-Trennzeichen]** bestimmte Trennzeichen an, um einzelne Werte voneinander zu trennen. Standardmäßig sind Kommata als Trennzeichen angegeben. Sie können auch ein anderes Trennzeichen festlegen.
 1. Geben Sie eine optionale Beschreibung in das Feld **Beschreibung** ein und klicken Sie auf **[!UICONTROL Fertig]**.
 1. Navigieren Sie in der [!DNL Assets]-Benutzeroberfläche zum Bedienfeld „Filter“. Das Prädikat **[!UICONTROL Mehrwert-Eigenschaft]** wird zum Bereich hinzugefügt.
-1. Geben Sie im Feld Mehrwert mehrere Werte getrennt durch die Trennzeichen an und führen Sie die Suche durch. Das Prädikat ruft eine exakte Textübereinstimmung für die angegebenen Werte ab.
+1. Geben Sie im Mehrwertfeld mehrere Werte getrennt durch die Trennzeichen an und führen Sie die Suche durch. Das Prädikat ruft eine exakte Textübereinstimmung für die angegebenen Werte ab.
 
 ## Hinzufügen von Tag-Prädikaten {#adding-a-tags-predicate}
 
-Mit dem Tag-Prädikat können Sie anhand von Tags nach Assets suchen. Standardmäßig sucht [!DNL Assets] nach Assets, die eines oder mehrere der von Ihnen angegebenen Tags enthalten. Anders ausgedrückt: Die Suchabfrage führt einen ODER-Vorgang mit den angegebenen Tags aus. Sie können jedoch die Option &quot;Übereinstimmung mit allen Tags&quot;verwenden, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
+Mit dem Tag-Prädikat können Sie anhand von Tags nach Assets suchen. Standardmäßig sucht [!DNL Assets] nach Assets, die eines oder mehrere der von Ihnen angegebenen Tags enthalten. Mit anderen Worten: Die Suchanfrage führt einen ODER-Vorgang mit den angegebenen Tags durch. Sie können jedoch die Option „Übereinstimmung mit allen Tags“ verwenden, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
 1. Klicken Sie auf das [!DNL Experience Manager]-Logo und navigieren Sie zu **[!UICONTROL Tools]** > **[!UICONTROL Allgemein]** > **[!UICONTROL Suchformulare]**.
 1. Wählen Sie auf der Seite „Suchformulare“ die Option **[!UICONTROL Asset-Admin-Suchleiste]** aus und klicken Sie dann auf **[!UICONTROL Bearbeiten]** ![Symbol „Bearbeiten“](assets/do-not-localize/aemassets_edit.png).
 1. Ziehen Sie auf der Seite „Suchformular bearbeiten“ den Eintrag **[!UICONTROL Tag-Eigenschaft]** von der Registerkarte „Eigenschaft auswählen“ in den Hauptbereich.
 1. Geben Sie auf der Registerkarte „Einstellungen“ einen Platzhaltertext für die Eigenschaft ein. Geben Sie den Eigenschaftsnamen, über den die Suche durchgeführt werden soll, im Eigenschaftsfeld an, beispielsweise *jcr:content/metadata/cq:tags*. Alternativ können Sie einen Knoten in CRXDE aus dem Auswahldialogfeld auswählen.
-1. Konfigurieren Sie die Eigenschaft Pfad für Stamm-Tags dieses Prädikats, um verschiedene Tags in der Liste Tags zu füllen.
+1. Konfigurieren Sie die Eigenschaft „Pfad für Stamm-Tags“ dieses Prädikats, um die Tag-Liste mit verschiedenen Tags zu füllen.
 1. Aktivieren Sie **[!UICONTROL Option „Übereinstimmung mit allen Tags“ anzeigen]**, um nach Assets zu suchen, die alle angegebenen Tags enthalten.
 
 1. Geben Sie eine optionale Beschreibung in das Feld **[!UICONTROL Beschreibung]** ein und klicken Sie auf **[!UICONTROL Fertig]**.
 1. Navigieren Sie zum Bereich „Suchen“. Das Prädikat **[!UICONTROL Tags]** wird zum Bereich „Suchen“ hinzugefügt.
 1. Geben Sie Tags an, anhand derer Sie nach Assets suchen möchten, oder wählen Sie aus der Liste mit Vorschlägen aus.
 
-1. Auswählen **[!UICONTROL Alle abgleichen]** , um nach Übereinstimmungen zu suchen, die alle angegebenen Tags enthalten.
+1. Wählen Sie **[!UICONTROL Übereinstimmung mit allen Tags]**, um nach Übereinstimmungen zu suchen, die alle von Ihnen angegebenen Tags enthalten.
 
 ## Hinzufügen anderer Prädikate {#adding-other-predicates}
 
@@ -167,18 +166,18 @@ Sie können die folgenden zusätzlichen Prädikate auf ähnliche Weise wie Eigen
 |---|---|---|
 | [!UICONTROL Volltext] | Suchprädikat für das Ausführen einer Volltextsuche für einen ganzen Asset-Knoten. Dieses Suchprädikat wird mit dem Operator jcr:contains verknüpft. Sie können einen relativen Pfad angeben, wenn Sie eine Volltextsuche für einen bestimmten Teil des Asset-Knotens durchführen möchten. | <ul><li>Bezeichnung</li><li>Platzhalter</li><li>Eigenschaftsname</li><li>Beschreibung</li></ul> |
 | [!UICONTROL Pfad-Browser] | Suchprädikat für die Suche nach Assets in Ordnern und Unterordnern in einem vorab konfigurierten Stammpfad | <ul><li>Platzhalter</li><li>Stammpfad</li><li>Beschreibung</li></ul> |
-| [!UICONTROL Pfad] | Filtern Sie die Ergebnisse anhand des Standorts. Sie können verschiedene Pfade als Optionen angeben. | <ul><li>Bezeichnung</li><li>Pfad</li><li>Beschreibung</li></ul> |
-| [!UICONTROL Veröffentlichungsstatus] | Sucheigenschaft, um Assets basierend auf ihrem Veröffentlichungsstatus zu suchen | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Beschreibung</li></ul> |
-| [!UICONTROL Relatives Datum] | Suchprädikat, um Assets basierend auf dem relativen Datum ihrer Erstellung zu suchen. Sie können beispielsweise Optionen konfigurieren, z. B. vor 2 Monaten, vor 3 Wochen usw. | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Relatives Datum</li></ul> |
+| [!UICONTROL Pfad] | Filtern Sie die Ergebnisse anhand des Speicherorts. Sie können verschiedene Pfade als Optionen angeben. | <ul><li>Bezeichnung</li><li>Pfad</li><li>Beschreibung</li></ul> |
+| [!UICONTROL Veröffentlichungsstatus] | Suchprädikat, um Assets basierend auf ihrem Veröffentlichungsstatus zu suchen | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Beschreibung</li></ul> |
+| [!UICONTROL Relatives Datum] | Suchprädikat, um Assets basierend auf dem relativen Datum ihrer Erstellung zu suchen. Sie können beispielsweise Optionen wie „vor 2 Monaten“, „vor 3 Wochen“ usw. konfigurieren. | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Relatives Datum</li></ul> |
 | [!UICONTROL Bereich] | Sucheigenschaft, um Assets innerhalb eines bestimmten Bereichs zu suchen. Im Suchbereich können Sie den Mindest- und den Höchstwert für den Bereich angeben. | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Beschreibung</li></ul> |
-| [!UICONTROL Datumsbereich] | Suchprädikat, um Assets zu suchen, die innerhalb eines bestimmten Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie Start- und Enddaten mithilfe der Datumsauswahl festlegen. | <ul><li>Bezeichnung</li><li>Platzhalter</li><li>Eigenschaftsname</li><li>Textbereich (von)</li><li>Textbereich (bis)</li><li>Beschreibung</li></ul> |
+| [!UICONTROL Datumsbereich] | Suchprädikat, um Assets zu suchen, die innerhalb eines bestimmten Bereichs für eine Datumseigenschaft erstellt wurden. Im Suchbereich können Sie mithilfe der Datumsauswahl das Start- und das Enddatum angeben. | <ul><li>Bezeichnung</li><li>Platzhalter</li><li>Eigenschaftsname</li><li>Textbereich (von)</li><li>Textbereich (bis)</li><li>Beschreibung</li></ul> |
 | [!UICONTROL Datum] | Suchprädikat für eine Regler-basierte Suche nach Assets basierend auf einer Datumseigenschaft. | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Beschreibung</li></ul> |
 | [!UICONTROL Dateigröße] | Suchprädikat, um Assets basierend auf ihrer Größe zu suchen. Es handelt sich um eine Regler-basierte Eigenschaft, bei der Sie die Regleroptionen aus einem konfigurierbaren Knoten auswählen. Die Standardoptionen werden unter /libs/dam/options/predicates/filesize im CRXDE-Repository definiert. Die Dateigröße wird in Byte angegeben. | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Pfad</li><li>Beschreibung</li></ul> |
 | [!UICONTROL Asset zuletzt geändert] | Suchprädikat für die Suche nach kürzlich geänderten Assets | <ul><li>Eigenschaftsname</li><li>Eigenschaftenwert</li><li>Beschreibung</li></ul> |
 | [!UICONTROL Veröffentlichungsstatus] | Suchprädikat für die Suche nach Assets basierend auf ihrem Veröffentlichungsstatus | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Beschreibung</li></ul> |
 | [!UICONTROL Bewertung] | Suchprädikat für die Suche nach Assets basierend auf ihrer durchschnittlichen Bewertung | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Optionspfad</li><li>Beschreibung</li></ul> |
 | [!UICONTROL Gültigkeitsstatus] | Suchprädikat für die Suche nach Assets basierend auf ihrem Ablaufstatus | <ul><li>Bezeichnung</li><li>Eigenschaftsname</li><li>Beschreibung</li></ul> |
-| [!UICONTROL Ausgeblendet] | Sucheigenschaft, die eine Eigenschaft für ausgeblendete Felder definiert, um nach Assets zu suchen | <ul><li>Eigenschaftsname</li><li>Eigenschaftenwert</li><li>Beschreibung</li></ul> |
+| [!UICONTROL Ausgeblendet] | Suchprädikat, das eine versteckte Feldeigenschaft für die Suche nach Assets definiert | <ul><li>Eigenschaftsname</li><li>Eigenschaftenwert</li><li>Beschreibung</li></ul> |
 
 ## Standard-Suchfacetten wiederherstellen {#restoring-default-search-facets}
 
@@ -208,4 +207,3 @@ Wenn Ihnen nicht die Rolle eines Administrators zugewiesen wurde, finden Sie hie
 >
 >* [Erweitern der Asset-Suchfunktion](searchx.md)
 >* [Suchen von Assets](search-assets.md)
-
