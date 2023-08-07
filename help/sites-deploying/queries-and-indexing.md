@@ -8,10 +8,10 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
 workflow-type: tm+mt
-source-wordcount: '2619'
-ht-degree: 35%
+source-wordcount: '3033'
+ht-degree: 31%
 
 ---
 
@@ -97,7 +97,7 @@ Der Eigenschaftsindex verfügt über die folgenden Konfigurationsoptionen:
 * Falls für die Kennzeichnung **unique** der Wert **true** festgelegt ist, wird dadurch eine Eindeutigkeitsbeschränkung auf den Eigenschaften-Index angewendet.
 
 * Die **deklarierenNodeTypes** -Eigenschaft können Sie einen bestimmten Knotentyp angeben, auf den der Index nur angewendet werden soll.
-* Die **reindex** Markierung, die, wenn **true**, Trigger eine vollständige Neuindizierung des Inhalts.
+* Die **reindex** Markierung, die, wenn auf **true**, Trigger eine vollständige Neuindizierung des Inhalts.
 
 ### Der sortierte Index {#the-ordered-index}
 
@@ -131,6 +131,84 @@ Der Lucene-Index verfügt über die folgenden Konfigurationsoptionen:
 * Die **includePropertyTypes** -Eigenschaft, die definiert, welche Untergruppe von Eigenschaftstypen im Index enthalten sind.
 * Die **excludePropertyNames** -Eigenschaft, die eine Liste von Eigenschaftsnamen definiert - Eigenschaften, die aus dem Index ausgeschlossen werden sollen.
 * Die **reindex** Markierung, die bei Festlegung auf **true**, Trigger eine vollständige Neuindizierung des Inhalts.
+
+### Volltextsuche {#understanding-fulltext-search}
+
+Die Dokumentation in diesem Abschnitt bezieht sich auf Apache Lucene, Elasticsearch, sowie Volltext-Indizes von z. B. PostgreSQL, SQLite und MySQL. Das folgende Beispiel ist für AEM / Oak / Lucene.
+
+<b>Zu indizierende Daten</b>
+
+Der Ausgangspunkt sind die Daten, die indiziert werden müssen. Nehmen wir als Beispiel die folgenden Dokumente:
+
+| <b>Dokument-ID</b> | <b>Pfad</b> | <b>Volltext</b> |
+| --- | --- | --- |
+| 100 | /content/rubik | &quot;Rubik ist eine finnische Marke.&quot; |
+| 200 | /content/rubiksCube | &quot;Der Rubikwürfel wurde 1974 erfunden.&quot; |
+| 300 | /content/cube | &quot;Ein Cube ist ein dreidimensionales Objekt.&quot; |
+
+
+<b>Invertierter Index</b>
+
+Der Indizierungsmechanismus teilt den Volltext in Wörter namens &quot;Token&quot;auf und erstellt einen Index namens &quot;inverted index&quot;. Dieser Index enthält die Liste der Dokumente, in denen er für jedes Wort angezeigt wird.
+
+Sehr kurze, häufige Wörter (auch &quot;Stoppwörter&quot; genannt) werden nicht indiziert. Alle Token werden in Kleinbuchstaben umgewandelt und die Zeichenfolge wird angewendet.
+
+Beachten Sie Sonderzeichen wie *&quot;-&quot;* nicht indiziert sind.
+
+| <b>Token</b> | <b>Dokument-IDs</b> |
+| --- | --- |
+| 194 | ..., 200,... |
+| Marke | ..., 100,... |
+| Cube | ..., 200, 300,... |
+| Dimension | 300 |
+| finnish | ..., 100,... |
+| erfinden | 200 |
+| Objekt | ..., 300,... |
+| Rubik | .., 100, 200,... |
+
+Die Liste der Dokumente wird sortiert. Dies wird bei Abfragen nützlich.
+
+<b>Suchen</b>
+
+Nachfolgend finden Sie ein Beispiel für eine Abfrage. Beachten Sie, dass alle Sonderzeichen (z. B. *&#39;*) durch ein Leerzeichen ersetzt wurden:
+
+```
+/jcr:root/content//element(\*; cq:Page)`[` jcr:contains('Rubik s Cube')`]`
+```
+
+Die Wörter werden auf die gleiche Weise wie bei der Indizierung eingetauscht und gefiltert (z. B. wenn einzelne Zeichen entfernt werden). In diesem Fall ist die Suche also nach:
+
+```
++:fulltext:rubik +:fulltext:cube
+```
+
+Der Index wird dann die Liste der Dokumente für diese Wörter einsehen. Wenn es viele Dokumente gibt, können die Listen sehr groß sein. Nehmen wir als Beispiel an, dass sie Folgendes enthalten:
+
+
+| <b>Token</b> | <b>Dokument-IDs</b> |
+| --- | --- |
+| Rubik | 10, 100, 200, 1000 |
+| Cube | 30, 200, 300, 2000 |
+
+
+Lucene wechselt zwischen den beiden Listen (oder rundes Papierkorb) `n` Listen bei der Suche nach `n` Wörter):
+
+* Lesen in der &quot;rubik&quot; bekommt den ersten Eintrag: es findet 10
+* Lesen in &quot;Cube&quot;erhält den ersten Eintrag `>` = 10. 10 wird nicht gefunden, dann ist der nächste 30.
+* Lesen in &quot;rubik&quot; erhält den ersten Eintrag `>` = 30: es findet 100.
+* Lesen in &quot;Cube&quot;erhält den ersten Eintrag `>` = 100: es findet 200.
+* Lesen in &quot;rubik&quot; erhält den ersten Eintrag `>` = 200. 200 wurde gefunden. Also ist Dokument 200 eine Übereinstimmung für beide Begriffe. Das erinnert sich.
+* Lesen Sie in der &quot;rubik&quot; erhält den nächsten Eintrag: 1000.
+* Lesen in &quot;Cube&quot;erhält den ersten Eintrag `>` = 1000: es findet 2000.
+* Lesen in &quot;rubik&quot; erhält den ersten Eintrag `>` = 2000: Ende der Liste.
+* Schließlich können wir mit der Suche aufhören.
+
+Das einzige Dokument, das beide Begriffe enthält, ist 200, wie im folgenden Beispiel gezeigt:
+
+| 200 | /content/rubiksCube | &quot;Der Rubikwürfel wurde 1974 erfunden.&quot; |
+| --- | --- | --- |
+
+Wenn mehrere Einträge gefunden werden, werden sie nach Punktzahl sortiert.
 
 ### Der Lucene-Eigenschaftsindex {#the-lucene-property-index}
 
@@ -301,7 +379,7 @@ AEM kann auch mit einer Remote-Solr-Server-Instanz konfiguriert werden:
 
    `<solrunpackdirectory>\aemsolr2\node2`
 
-1. Suchen Sie die Beispiel-Instanz im Solr-Paket. Sie befindet sich im Ordner &quot; `example`&quot; im Stammverzeichnis des Pakets.
+1. Suchen Sie die Beispiel-Instanz im Solr-Paket. Sie befindet sich im Ordner &quot; `example`&quot; in der Wurzel des Pakets.
 1. Kopieren Sie die folgenden Ordner von der Beispiel-Instanz in die Ordner der zwei Shards (`aemsolr1\node1` und `aemsolr2\node2`):
 
    * `contexts`
@@ -338,7 +416,7 @@ AEM kann auch mit einer Remote-Solr-Server-Instanz konfiguriert werden:
 
    * Solr-HTTP-URL: `http://localhost:8983/solr/`
 
-1. Auswählen **Remote Solr** in der Dropdown-Liste unter **Oak Solr** Server-Anbieter.
+1. Auswählen **Remote Solr** in der Dropdownliste unter **Oak Solr** Server-Anbieter.
 
 1. Gehen Sie zu CRXDE und melden Sie sich als Administrator an.
 1. Erstellen Sie einen Knoten mit dem Namen **solrIndex** under **oak:index** und legen Sie die folgenden Eigenschaften fest:
@@ -392,7 +470,7 @@ Wenn dies aus irgendeinem Grund nicht möglich ist, können Sie die Indizierungs
 
 #### Aktivieren der Protokollierung {#enable-logging}
 
-Um die Protokollierung zu aktivieren, müssen Sie **DEBUG** Ebenenprotokolle für die Kategorien, die sich auf Oak-Indizierung und -Abfragen beziehen. Diese Kategorien sind: 
+Zum Aktivieren der Protokollierung müssen Sie **DEBUG** Ebenenprotokolle für die Kategorien, die sich auf Oak-Indizierung und -Abfragen beziehen. Diese Kategorien sind: 
 
 * org.apache.jackrabbit.oak.plugins.index
 * org.apache.jackrabbit.oak.query
@@ -402,21 +480,21 @@ Die **com.day.cq.search** -Kategorie ist nur anwendbar, wenn Sie das AEM bereitg
 
 >[!NOTE]
 >
->Es ist wichtig, dass die Protokolle nur für die Dauer der Ausführung der Abfrage, die Sie beheben möchten, auf DEBUG gesetzt werden. Andernfalls werden im Laufe der Zeit große Mengen von Ereignissen in den Protokollen generiert. Daher wechseln Sie nach der Erfassung der erforderlichen Protokolle für die oben genannten Kategorien zurück zur Protokollierung auf INFO-Ebene.
+>Es ist wichtig, dass die Protokolle nur für die Dauer der Ausführung der Abfrage, die Sie beheben möchten, auf DEBUG gesetzt werden. Andernfalls werden im Laufe der Zeit große Mengen von Ereignissen in den Protokollen generiert. Aus diesem Grund wechseln Sie nach der Erfassung der erforderlichen Protokolle für die oben genannten Kategorien zurück zur Protokollierung auf INFO-Ebene.
 
 Sie können die Protokollierung aktivieren, indem Sie folgende Schritte ausführen:
 
 1. Lassen Sie Ihren Browser auf `https://serveraddress:port/system/console/slinglog` verweisen.
 1. Klicken Sie auf die Schaltfläche **Neue Protokollierung hinzufügen** unten in der Konsole.
 1. Fügen Sie die oben genannten Kategorien in der neu erstellten Reihe hinzu. Verwenden Sie das **+**-Symbol, um einer Protokollierung mehr als eine Kategorie hinzuzufügen. 
-1. Auswählen **DEBUG** von **Protokollebene** Dropdown-Liste.
+1. Auswählen **DEBUG** aus dem **Protokollebene** Dropdown-Liste.
 1. Geben Sie als Ausgabedatei `logs/queryDebug.log` an. Dadurch werden alle DEBUG-Ereignisse in einer Protokolldatei zusammengeführt.
 1. Führen Sie die Abfrage aus oder geben Sie die Seite aus, auf der die Abfrage verwendet wird, die Sie debuggen möchten.
 1. Wenn Sie die Abfrage ausgeführt haben, wechseln Sie zurück zur Protokollierungskonsole und ändern Sie die Protokollierungsebene der neu erstellten Protokollierung in **INFO**.
 
 #### Indexkonfiguration {#index-configuration}
 
-Die Art und Weise, wie die Abfrage ausgewertet wird, wird durch die Indexkonfiguration stark beeinflusst. Es ist wichtig, die Indexkonfiguration zu analysieren oder an die Unterstützung zu senden. Sie können die Konfiguration entweder als Inhaltspaket abrufen oder eine JSON-Ausgabedarstellung abrufen.
+Die Art und Weise, wie die Abfrage ausgewertet wird, wird durch die Indexkonfiguration stark beeinflusst. Es ist wichtig, die Indexkonfiguration zu analysieren oder an die Unterstützung zu senden. Sie können die Konfiguration entweder als Inhaltspaket abrufen oder eine JSON-Ausgabe abrufen.
 
 Normalerweise wird die Indizierungskonfiguration unter dem `/oak:index` -Knoten in CRXDE können Sie die JSON-Version abrufen unter:
 
