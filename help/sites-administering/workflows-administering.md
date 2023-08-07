@@ -1,7 +1,7 @@
 ---
 title: Verwalten der Workflow-Instanzen
 seo-title: Administering Workflow Instances
-description: Erfahren Sie, wie Sie Workflow-Instanzen verwalten.
+description: Erfahren Sie, wie Workflow-Instanzen verwaltet werden.
 seo-description: Lear how to administer Workflow Instances.
 uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
 contentOwner: User
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 source-git-commit: 25f7218355b7715949273c84eb72ddde3d6a0a65
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '994'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -88,7 +88,6 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
    >* nach der Verwendung der Aktion **Beenden** oder
    >* wenn eine von einem Workflow betroffene Seite (erzwungenermaßen) gelöscht wird, wird der Workflow beendet
 
-
 1. Wählen Sie ein spezifisches Element und dann **Offener Verlauf** aus, um mehr Details anzuzeigen:
 
    ![wf-99](assets/wf-99.png)
@@ -98,8 +97,7 @@ Für die Verwaltung Ihrer Workflows steht eine Reihe von Konsolen bereit. Verwen
 Schlägt ein Workflow fehl, ermöglicht Ihnen AEM mit der **Fehler-Konsole** die Untersuchung und das Ergreifen entsprechender Maßnahmen, sobald die ursprüngliche Ursache behoben wurde:
 
 * **Fehlerdetails**
-Öffnet ein Fenster zum Anzeigen von 
-**Fehlermeldung**, **Schritt** und **Fehlerstapel**.
+Öffnet ein Fenster zum Anzeigen von **Fehlermeldung**, **Schritt** und **Fehlerstapel**.
 
 * **Offener Verlauf** Die Details des Workflow-Verlaufs werden angezeigt.
 
