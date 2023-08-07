@@ -7,9 +7,9 @@ feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1746'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 98%
 
 ## Übersicht {#overview}
 
-Die [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Asstes, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierter Inhalte mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Er umfasst [Unterstützung für Inhaltsfragmente](/help/assets/assets-api-content-fragments.md).
+Die [!DNL Assets]-HTTP-API ermöglicht CRUD-Vorgänge (Create-Read-Update-Delete, Erstellen/Lesen/Aktualisieren/Löschen) für digitale Asstes, einschließlich Metadaten, Ausgabedarstellungen und Kommentaren sowie strukturierter Inhalte mit [!DNL Experience Manager]-Inhaltsfragmenten. Sie wird unter `/api/assets` bereitgestellt und als REST-API implementiert. Dazu gehört die [Unterstützung für Inhaltsfragmente](/help/assets/assets-api-content-fragments.md).
 
 So greifen Sie auf die API zu:
 
@@ -47,11 +47,11 @@ Weitere Informationen finden Sie unter [Unterstützung von Inhaltsfragmenten in 
 
 Die [!DNL Assets]-HTTP-API stellt zwei wichtige Elemente bereit: Ordner und Assets (für Standard-Assets).
 
-Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Siehe [Inhaltsfragmentdatenmodelle](/help/assets/assets-api-content-fragments.md#content-fragments) für weitere Informationen.
+Außerdem stellt sie ausführlichere Elemente für die benutzerdefinierten Datenmodelle bereit, die strukturierte Inhalte in Inhaltsfragmenten beschreiben. Weitere Informationen finden Sie im Abschnitt [Datenmodelle für Inhaltsfragmente](/help/assets/assets-api-content-fragments.md#content-fragments).
 
 ### Ordner {#folders}
 
-Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie sind Container für andere Ordner oder Asserts. Ordner enthalten folgende Komponenten:
+Ordner verhalten sich wie Verzeichnisse in traditionellen Dateisystemen. Sie sind Container für andere Ordner oder Assets. Ordner enthalten folgende Komponenten:
 
 **Entitäten**: Zu den Entitäten eines Ordners zählen die untergeordneten Elemente, z. B. die Ordner und Assets.
 
