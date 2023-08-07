@@ -11,7 +11,7 @@ docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
 source-git-commit: bb27c7dfedd5a16728674f7584b0c462a92646e6
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5934'
 ht-degree: 100%
 
@@ -237,7 +237,7 @@ Hier werden alle Zugriffsanfragen zusammen mit der Antwort registriert.
    * [`s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html?lang=de)
 Dieses Protokoll wird nur verwendet, wenn [!DNL Dynamic Media] aktiviert ist. Das s7access-Protokoll zeichnet alle Anfragen auf, die an [!DNL Dynamic Media] bis `/is/image` und `/is/content` gemacht wurden.
 
-   * `stderr.log` Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. Standardmäßig wird für die Protokollebene Folgendes festgelegt `Warning` ( `WARN`)
+   * `stderr.log` Enthält Fehlermeldungen (ebenfalls mit unterschiedlichem Schweregrad), die beim Starten generiert werden. Standardmäßig wird für die Protokollebene Folgendes festgelegt `Warning` (`WARN`)
 
    * `stdout.log`
 Enthält Protokollmeldungen, die auf Ereignisse beim Starten verweisen.
@@ -1095,12 +1095,12 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 
 >[!NOTE]
 >
->In folgenden Artikeln finden Sie weitere Informationen:
+In folgenden Artikeln finden Sie weitere Informationen:
 >
->* [Thread-Dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=de)
->* [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
->* [Analyse mit dem integrierten Profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=de)
->* [Analyse langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+* [Thread-Dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=de)
+* [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
+* [Analyse mit dem integrierten Profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=de)
+* [Analyse langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU bei 100 % {#cpu-at}
@@ -1193,6 +1193,6 @@ Hier können Sie sehen, wie viel Arbeitsspeicher belegt ist, welche GC-Algorithm
 
 >[!NOTE]
 >
->Informationen zu VM von Oracle finden Sie unter:
+Informationen zu VM von Oracle finden Sie unter:
 >
->[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
+[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
