@@ -12,9 +12,9 @@ discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
 source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '6036'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -170,7 +170,7 @@ Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nicht
       * **Optionen für Liste fester Werte**
 
          * **Seiten**
-Wählen Sie eine Liste von Seiten aus. Verwendung `+` um weitere Einträge und die Nach-oben-/Nach-unten-Schaltflächen hinzuzufügen, um die Reihenfolge anzupassen.
+Wählen Sie eine Liste mit Seiten aus. Fügen Sie mit `+` weitere Einträge hinzu und passen Sie mit den Schaltflächen nach oben und unten die Reihenfolge an.
 
       * **Optionen für die Suche**
 
