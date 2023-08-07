@@ -10,9 +10,9 @@ discoiquuid: e6b01ade-7ea3-42a7-872d-cc35a3d2782a
 docset: aem65
 exl-id: 1d1f9db2-83cf-4612-ac8c-d2638c3bbaea
 source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '207'
-ht-degree: 22%
+ht-degree: 100%
 
 ---
 
@@ -24,11 +24,11 @@ Sie benötigen die folgende Hardware, Software und Lizenzen, um die AEM Forms-Ap
 
 * Microsoft® Windows 10
 * Microsoft® Visual Studio 2015
-* Microsoft® Visual Studio Tools for Apache Cordova
+* Microsoft® Visual Studio Tools für Apache Cordova
 
 ## Für iOS-Geräte {#for-ios-devices}
 
-* Intel-basierte Apple Mac mit macOS X 10.9.5 oder höher
+* Intel-basierter Apple Mac mit macOS X 10.9.5 oder höher
 * iOS SDK 8.4 oder höher
 * Xcode-Version: Xcode 6.4 für OS X oder höher
 * Mitgliedschaft im iOS Developer Enterprise Program
@@ -37,9 +37,9 @@ Sie benötigen die folgende Hardware, Software und Lizenzen, um die AEM Forms-Ap
 
 ## Für Android™-Geräte {#for-android-devices}
 
-* Android™ Development Toolkit (ADT bundle), das heruntergeladen werden kann von [https://developer.android.com/studio](https://developer.android.com/studio)
-* Wenn die Umgebung auf einem Mac-System eingerichtet ist, sollte ADT im Ordner &quot;Applications&quot;installiert werden.
-* Wenn die ADT an einem anderen Speicherort auf Mac installiert ist oder die Umgebung auf einem Windows-System eingerichtet ist, muss der ADT SDK-Pfad in `local.properties` -Datei. Diese Datei ist im `src\android` Ordner im extrahierten Quellarchiv `mobileworkspace-src.zip`. Zeigen Sie in dieser Datei die Variable `sdk.dir` auf den ADT SDK-Speicherort auf Ihrem Desktop.
+* Android™ Development Toolkit (ADT-Bundle), das unter [https://developer.android.com/studio](https://developer.android.com/studio) heruntergeladen werden kann
+* Wenn diese Umgebung auf einem Mac-System eingerichtet wird, sollte die ADT im Applikationsordner installiert werden.
+* Wenn die ADT an einem anderen Speicherort auf dem Mac installiert ist oder die Umgebung auf einem Windows-System eingerichtet ist, muss der ADT SDK-Pfad in der Datei `local.properties` aktualisiert werden. Diese Datei ist im Ordner `src\android` im extrahierten Quellarchiv `mobileworkspace-src.zip` verfügbar. Zeigen Sie in dieser Datei die Variable `sdk.dir` auf den ADT SDK-Speicherort auf Ihrem Desktop.
 
 >[!NOTE]
 >
