@@ -6,9 +6,9 @@ role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
 source-git-commit: 48131c5accfe73b83197bd581ed5a22bc4890a56
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1957'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -57,7 +57,7 @@ Die Assets-REST-API:
 
 ## Voraussetzungen {#prerequisites}
 
-Die Assets-REST-API ist bei jeder nativen Installation einer aktuellen AEM verfügbar.
+Die Assets-REST-API ist in jeder standardmäßigen Installation einer aktuellen AEM-Version verfügbar.
 
 ## Wichtige Konzepte {#key-concepts}
 
