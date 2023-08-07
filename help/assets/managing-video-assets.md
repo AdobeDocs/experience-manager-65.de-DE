@@ -7,7 +7,7 @@ feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
 source-git-commit: d6587ef59332d6b4d419c7d7b6e29930f366d171
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '5499'
 ht-degree: 100%
 
@@ -635,4 +635,3 @@ Wie Sie Benachrichtigungen konfigurieren, hängt davon ab, ob Sie Benachrichtigu
 >* [Verwalten digitaler Assets in Experience Manager Assets](/help/assets/manage-assets.md)
 >* [Verwalten von Sammlungen in Experience Manager Assets](/help/assets/manage-collections.md)
 >* [Dokumentation zu Dynamic Media-Videos](/help/assets/video.md).
-
