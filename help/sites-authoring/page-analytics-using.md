@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
 source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '449'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -83,7 +83,7 @@ Mitglieder der Benutzergruppe „Analytics-Administratoren“ können die Sites-
 1. Wählen Sie in der Sites-Konsole die Seite aus, für die Sie Inhaltseinblicke anzeigen möchten.
 1. Klicken Sie in der Symbolleiste auf das Symbol „Analysen und Empfehlungen“.
 
-   ![Symbol &quot;Analytics and Recommendations&quot;](do-not-localize/chlimage_1-14.png)
+   ![Symbol „Analytics und Empfehlungen“](do-not-localize/chlimage_1-14.png)
 
 ## Im Seiten-Editor sichtbare Analysen (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
