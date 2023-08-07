@@ -6,9 +6,9 @@ role: Admin
 feature: Tagging,Smart Tags
 exl-id: 9f68804f-ba15-4f83-ab1b-c249424b1396
 source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2245'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -21,7 +21,6 @@ Bevor Sie mit dem Tagging Ihrer Assets mit dem Smart Content Services beginnen k
 >* Smart Content Services ist nicht mehr für neue Kunden von [!DNL Experience Manager Assets] On-Premise verfügbar. Bestehende On-Premise-Kunden, die diese Funktion bereits aktiviert haben, können Smart Content Services weiterhin nutzen.
 >* Smart Content Services ist für bestehende Kunden von [!DNL Experience Manager Assets] Managed Services verfügbar, für die diese Funktion bereits aktiviert ist.
 >* Neue Kunden von [!DNL Experience Manager Assets] Managed Services können die in diesem Artikel beschriebenen Anweisungen zum Einrichten von Smart Content Services befolgen.
-
 
 Bevor Sie den Smart Content Service verwenden, führen Sie Folgendes aus:
 
@@ -91,11 +90,11 @@ Ein öffentliches Zertifikat ermöglicht Ihnen die Authentifizierung Ihres Profi
 
 Wenn ein Zertifikat abläuft, ist es nicht mehr vertrauenswürdig. Sie können ein abgelaufenes Zertifikat nicht verlängern. Um ein Zertifikat hinzuzufügen, führen Sie diese Schritte aus.
 
-1. Melden Sie sich bei Ihrer [!DNL Experience Manager]-Implementierung als Administrator an. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
+1. Melden Sie sich bei Ihrer [!DNL Experience Manager]-Bereitstellung als Administrator an. Klicken Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
 
-1. Suchen und finden Sie **[!UICONTROL dam-update-service]**-Benutzer und klicken Sie darauf. Klicken **[!UICONTROL Keystore]** Registerkarte.
+1. Suchen und finden Sie **[!UICONTROL dam-update-service]**-Benutzer und klicken Sie darauf. Klicken Sie auf die Registerkarte **[!UICONTROL Keystore]**.
 
-1. Vorhandene löschen **[!UICONTROL similaritysearch]** Keystore mit dem abgelaufenen Zertifikat. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
+1. Löschen Sie den vorhandenen Keystore **[!UICONTROL Similaritysearch]** mit dem abgelaufenen Zertifikat. Klicken Sie auf **[!UICONTROL Speichern und schließen]**.
 
    ![Löschen Sie den vorhandenen Eintrag der Ähnlichkeitssuche in KeyStore, um ein Sicherheitszertifikat hinzuzufügen.](assets/smarttags_delete_similaritysearch_keystore.png)
 
@@ -106,7 +105,7 @@ Wenn ein Zertifikat abläuft, ist es nicht mehr vertrauenswürdig. Sie können e
 
 1. Um ein öffentliches Zertifikat herunterzuladen, klicken Sie auf **[!UICONTROL Öffentliches Zertifikat für OAuth-Integration herunterladen]**.
 
-1. Zugriff [https://console.adobe.io](https://console.adobe.io) und navigieren Sie zu den vorhandenen Smart Content Services auf der **[!UICONTROL Integrationen]** Seite. Laden Sie das neue Zertifikat hoch. Weitere Informationen finden Sie in den Anweisungen unter [Erstellen einer Integration in der Adobe Developer Console](#create-adobe-i-o-integration).
+1. Gehen Sie zu [https://console.adobe.io](https://console.adobe.io) und dann zu den vorhandenen Smart Content Services auf der Seite **[!UICONTROL Integrationen]**. Laden Sie das neue Zertifikat hoch. Weitere Informationen finden Sie in den Anweisungen unter [Erstellen einer Integration in der Adobe Developer Console](#create-adobe-i-o-integration).
 
 ### Erstellen einer Integration in der Adobe Developer Console {#create-adobe-i-o-integration}
 
@@ -139,7 +138,7 @@ Verwenden Sie zum Konfigurieren der Integration die Werte der Felder [!UICONTROL
 
 1. Gehen Sie in [!DNL Experience Manager] zu **[!UICONTROL Tools]** > **[!UICONTROL Cloud Service]** > **[!UICONTROL Ältere Cloud-Services]**, um die [!UICONTROL Cloud Services]-Konsole zu öffnen.
 
-1. Unter dem **[!UICONTROL Smart-Tags für Assets]**, öffnen Sie die oben erstellte Konfiguration. Klicken Sie auf der Seite &quot;Diensteinstellungen&quot;auf **[!UICONTROL Bearbeiten]**.
+1. Öffnen Sie unter **[!UICONTROL Smart-Tags für Assets]** die oben erstellte Konfiguration. Klicken Sie auf der Seite „Diensteinstellungen“ auf **[!UICONTROL Bearbeiten]**.
 
 1. Verwenden Sie im Dialogfeld **[!UICONTROL AEM Smart Content Service]** die vorausgefüllten Werte für die Felder **[!UICONTROL Service-URL]** und **[!UICONTROL Autorisierungsserver]**.
 
@@ -207,9 +206,9 @@ Das Überprüfungsergebnis wird im selben Dialogfeld angezeigt.
 
 Damit der Smart Content Service die Taxonomie Ihres Unternehmens erkennen kann, sollten Sie den Dienst auf einen Asset-Satz ausführen, der bereits für Ihr Unternehmen relevante Tags enthält. Damit Sie Ihre Markenbilder effektiv mit Tags versehen können, müssen die zum Trainieren des Smart Content Service verwendeten Bilder bestimmten Richtlinien entsprechen. Nach dem Training kann der Dienst dieselbe Taxonomie auf einen ähnlichen Satz von Assets anwenden.
 
-Sie können den Dienst mehrmals trainieren, um die Fähigkeit zu verbessern, relevante Tags anzuwenden. Führen Sie nach jedem Trainings-Zyklus einen Tagging-Workflow aus und überprüfen Sie, ob Ihre Assets angemessen mit Tags versehen sind.
+Sie können den Dienst mehrmals trainieren, um die Fähigkeit zu verbessern, relevante Tags anzuwenden. Führen Sie nach jedem Trainings-Zyklus einen Tagging-Workflow aus und überprüfen Sie, ob Ihre Assets mit den richtigen Tags versehen sind.
 
-Sie können den Smart Content Service regelmäßig oder auf Anforderung trainieren.
+Sie können den Smart Content Service regelmäßig oder bei Bedarf trainieren.
 
 >[!NOTE]
 >
@@ -247,15 +246,15 @@ Beispiel: Für das Tag *casual-shoe* ist das zweite Bild kein guter Kandidat fü
 >
 >Die Fähigkeit des Smart Content Service, aus Ihren Tags zu lernen und diese Tags auf andere Bilder anzuwenden, hängt von der Qualität der für das Training verwendeten Bilder ab. Um die bestmöglichen Ergebnisse zu erzielen, empfiehlt Adobe die Verwendung visuell ähnlicher Bilder, um den Service für die einzelnen Tags zu trainieren.
 
-### Regelmäßige Ausbildung {#periodic-training}
+### Regelmäßiges Training {#periodic-training}
 
 Sie können festlegen, dass der Smart Content Service regelmäßig mit den Assets und zugewiesenen Tags in einem Ordner trainiert wird. Öffnen Sie die Seite [!UICONTROL Eigenschaften] Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** in der Registerkarte **[!UICONTROL Details]** aus und speichern Sie die Änderungen.
 
 ![enable_smart_tags](assets/enable_smart_tags.png)
 
-Wenn Sie diese Option für einen Ordner auswählt haben, führt [!DNL Experience Manager] automatisch einen Trainings-Workflow aus, um den Smart Content Service mit den Assets im Ordner und deren Tags zu trainieren. Standardmäßig wird der Trainings-Workflow samstags um 12:30 Uhr wöchentlich ausgeführt.
+Wenn Sie diese Option für einen Ordner auswählt haben, führt [!DNL Experience Manager] automatisch einen Trainings-Workflow aus, um den Smart Content Service mit den Assets im Ordner und deren Tags zu trainieren. Standardmäßig wird der Trainings-Workflow jede Woche samstags um 00:30 Uhr ausgeführt.
 
-### On-Demand-Schulung {#on-demand-training}
+### Training bei Bedarf {#on-demand-training}
 
 Sie können den Smart Content Service bei Bedarf über die Workflow-Konsole trainieren.
 
@@ -283,16 +282,16 @@ Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Traini
 
    Der Bericht zeigt den Trainings-Status der von Ihnen trainierten Tags an. Grün gibt in der Spalte **[!UICONTROL Trainingsstatus]** an, dass der Smart Content Service für das Tag trainiert wird. Gelb bedeutet, dass der Service für ein bestimmtes Tag nicht vollständig trainiert ist. Fügen Sie in diesem Fall weitere Bilder mit dem jeweiligen Tag hinzu und führen Sie den Trainings-Workflow aus, um den Service vollständig für das Tag zu trainieren.
 
-   Wenn Ihre Tags in diesem Bericht nicht angezeigt werden, führen Sie den Trainings-Workflow für diese Tags erneut aus.
+   Wenn Ihre Tags nicht in diesem Bericht angezeigt werden, führen Sie den Trainings-Workflow für diese Tags erneut aus.
 
 1. Um den Bericht herunterzuladen, wählen Sie ihn aus der Liste aus und klicken Sie in der Symbolleiste auf **[!UICONTROL Herunterladen]**. Der Bericht kann als Microsoft Excel-Tabellenkalkulation heruntergeladen werden.
 
 ## Beschränkungen {#limitations}
 
-* Optimiertes Smart-Tagging basiert auf Lernmodellen von Bildern und den zugehörigen Tags. Diese Modelle können Tags nicht immer perfekt identifizieren. Die aktuelle Version des Smart Content Service weist die folgenden Einschränkungen auf:
+* Optimiertes Smart-Tagging basiert auf Lernmodellen von Bildern und den zugehörigen Tags. Diese Modelle können Tags nicht immer perfekt identifizieren. Bei der aktuellen Version des Smart Content Service bestehen folgende Einschränkungen:
 
    * Subtile Unterschiede in Bildern können nicht erkannt werden. Beispiel: T-Shirts mit schmalem oder normalem Schnitt.
-   * Es ist nicht möglich, Tags basierend auf winzigen Mustern/Teilen eines Bildes zu identifizieren. Zum Beispiel Logos auf T-Shirts.
+   * Tags können nicht anhand von winzigen Mustern oder Teilen eines Bildes identifiziert werden. Beispiel: Logos auf T-Shirts.
    * Tagging wird in den Gebietsschemata unterstützt, in denen [!DNL Experience Manager] unterstützt wird.
 
 * Verwenden Sie [!DNL Assets]-OmniSearch (Volltextsuche), um nach Assets mit Smart-Tags (normal oder erweitert) zu suchen. Es gibt kein separates Suchprädikat für Smart-Tags.
@@ -301,4 +300,3 @@ Um sicherzustellen, dass der Smart Content Service auf Ihre Tags im Asset-Traini
 >
 >* [Überblick über Smart Tags und deren Training](enhanced-smart-tags.md)
 >* [Video-Tutorial zu Smart-Tags](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/metadata/image-smart-tags.html?lang=de)
-
