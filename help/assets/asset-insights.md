@@ -7,9 +7,9 @@ feature: Asset Insights,Asset Reports
 exl-id: 0130ac40-a72b-4caf-a10f-3c7d76eaa1e6
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '779'
-ht-degree: 89%
+ht-degree: 100%
 
 ---
 
@@ -37,14 +37,14 @@ Damit Assets Insights Nutzungsstatistiken für Assets anzeigen kann, konfigurier
 Sie können die Asset Insights-Bewertungen über die Metadatenseite anzeigen.
 
 1. [!DNL Assets]Wählen Sie in der-Benutzeroberfläche das Bild aus und klicken Sie dann in der Symbolleiste auf **[!UICONTROL Eigenschaften]**.
-1. Klicken Sie auf der Seite Eigenschaften auf die **[!UICONTROL Insights]** Registerkarte.
+1. Klicken Sie auf der Seite „Eigenschaften“ auf die Registerkarte **[!UICONTROL Insights]**.
 1. Überprüfen Sie die Nutzungsdetails für das Asset auf der Registerkarte **[!UICONTROL Insights]**. Der Abschnitt **[!UICONTROL Bewertung]** beschreibt die gesamte Asset-Nutzung und die Leistungsbewertungen eines Assets.
 
    Die Nutzungsbewertung beschreibt, wie oft ein Asset in verschiedenen Lösungen verwendet wird.
 
-   Die **[!UICONTROL Impressionen]** score ist die Anzahl der Ladevorgänge des Assets auf der Website. Die unter **[!UICONTROL Klicks]** ist die Anzahl der Klicks auf das Asset.
+   Die **[!UICONTROL Impressionen]**-Bewertung ist die Anzahl der Ladevorgänge des Assets auf der Website. Die unter **[!UICONTROL Klicks]** angezeigte Zahl beschreibt die Anzahl der Klicks auf das Asset.
 
-1. Im Abschnitt **[!UICONTROL Nutzungsstatistiken]** können Sie ermitteln, in welchen Elementen das Asset enthalten war und in welchen Kreativlösungen es vor Kurzem verwendet wurde. Je höher die Nutzung ist, desto größer ist die Wahrscheinlichkeit, dass das Asset bei Benutzern beliebt ist. Nutzungsdaten werden unter den folgenden Überschriften angezeigt:
+1. Im Abschnitt **[!UICONTROL Nutzungsstatistiken]** können Sie ermitteln, in welchen Elementen das Asset enthalten war und in welchen Kreativlösungen es vor Kurzem verwendet wurde. Je höher die Nutzung ist, desto größer ist die Wahrscheinlichkeit, dass das Asset bei Benutzenden beliebt ist. Nutzungsdaten werden unter den folgenden Überschriften angezeigt:
 
    * **Asset**: Wie oft war das Asset Teil einer Sammlung oder eines zusammengesetzten Assets
    * **Web und Mobile**: Wie oft wurde das Asset in Websites und Apps verwendet
@@ -86,4 +86,4 @@ Assets Insights ruft Nutzungsdaten für Assets regelmäßig aus den Adobe Analyt
 
    ![chlimage_1-99](assets/chlimage_1-304.png)
 
-1. Geben Sie die gewünschte Planungsfrequenz und die Startzeit für den Auftrag im Ausdruck für die Eigenschaftsplanung an. Speichern Sie die Änderungen.
+1. Geben Sie im Ausdruck für die Eigenschaftsplanung die gewünschte Planungsfrequenz und die Startzeit für den Vorgang an. Speichern Sie die Änderungen.
