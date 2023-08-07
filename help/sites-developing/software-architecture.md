@@ -1,6 +1,6 @@
 ---
 title: Software-Architektur
-description: Best Practices für die Architektur Ihrer Software
+description: Best Practices für die Entwicklung der Architektur Ihrer Software
 uuid: a557f6ca-c3f1-486e-a45e-6e1f986fab41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,21 +9,21 @@ topic-tags: best-practices
 discoiquuid: 92971747-1c74-4917-b5a0-7b79b3ae1e68
 exl-id: cd4f3b4c-5488-4ca7-9c1e-b4c819fda8e8
 source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '614'
-ht-degree: 41%
+ht-degree: 100%
 
 ---
 
 # Software-Architektur{#software-architecture}
 
-## Design für Upgrades {#design-for-upgrades}
+## Auslegen des Designs auf Upgrades {#design-for-upgrades}
 
-Bei der Erweiterung der OOTB-Verhaltensweisen ist es wichtig, Upgrades zu berücksichtigen. Nehmen Sie Anpassungen immer im Verzeichnis /apps vor und überlagern Sie entweder die entsprechenden Knoten im Verzeichnis /libs oder verwenden Sie „sling:resourceSuperType“, um das Standardverhalten zu erweitern. Zwar können einige Änderungen erforderlich sein, um eine neue AEM zu unterstützen, doch sollte die neue Version Ihre Anpassungen nicht überschreiben, wenn diese Vorgehensweise befolgt wird.
+Bei der Erweiterung der OOTB-Verhaltensweisen ist es wichtig, Upgrades zu berücksichtigen. Nehmen Sie Anpassungen immer im Verzeichnis /apps vor und überlagern Sie entweder die entsprechenden Knoten im Verzeichnis /libs oder verwenden Sie „sling:resourceSuperType“, um das Standardverhalten zu erweitern. Zwar können Änderungen erforderlich sein, um neue AEM-Versionen zu unterstützen, doch die neue Version sollte Ihre Anpassungen nicht überschreiben, wenn diese Best Practice befolgt wird.
 
 ### Wiederverwenden von Vorlagen und Komponenten, sofern möglich {#reuse-template-and-components-when-possible}
 
-Auf diese Weise kann die Site ein konsistenteres Erscheinungsbild erhalten und die Codewartung vereinfachen. Wenn eine neue Vorlage benötigt wird, stellen Sie sicher, dass sie von einer gemeinsam verwendeten Basisvorlage erweitert wird, sodass globale Anforderungen wie die clientlib-Einbindung an zentraler Stelle kodiert werden können. Wenn eine neue Komponente benötigt wird, sollten Sie versuchen, eine bestehenden Komponente zu erweitern.
+Dadurch lässt sich das Look-and-Feel der Website vereinheitlichen und die Codepflege vereinfachen. Wenn eine neue Vorlage benötigt wird, stellen Sie sicher, dass sie von einer gemeinsam verwendeten Basisvorlage erweitert wird, sodass globale Anforderungen wie die clientlib-Einbindung an zentraler Stelle kodiert werden können. Wenn eine neue Komponente benötigt wird, sollten Sie versuchen, eine bestehenden Komponente zu erweitern.
 
 ### Gestalten von Vorlagen-Designs {#design-template-designs}
 
@@ -31,34 +31,34 @@ Indem Sie die Komponenten definieren, die in den einzelnen Absatzsystemen auf de
 
 ### Entwickeln einer SOLID-Architektur {#develop-a-solid-architecture}
 
-SOLID ist ein Akronym, das fünf architektonische Prinzipien beschreibt, die beachtet werden sollten:
+SOLID ist ein Akronym, das fünf architektonische Prinzipien beschreibt, die Sie einhalten sollten:
 
-* **S** Single Responsibility-Prinzip - Jedes Modul, jede Klasse, jede Methode usw. sollte nur eine Verantwortung haben.
+* **E** faches Responsibility-Prinzip: Jedes Modul, jede Klasse, jede Methode usw. sollte nur eine einzige Verantwortung haben.
 * **O** pen/Closed-Prinzip: Module sollten sowohl offen (für Erweiterungen) als auch geschlossen (für Änderungen) sein.
 * **L** iskovsches Substitutionsprinzip: Typen sollten durch ihre Untertypen ersetzbar sein.
 * **Interface Segregation-Prinzip:** Clients sollten nicht gezwungen werden, von Methoden abzuhängen, die sie nicht verwenden.
-* **D** ependency Inversion-Prinzip: Module höherer Ebenen sollten nicht von Modulen niedriger Ebenen abhängig sein. Beide sollten von Abstraktionen abhängen. Abstraktionen sollten nicht von Details abhängig sein. Details sollten von Abstraktionen abhängen.
+* **D** ependency Inversion-Prinzip: Module höherer Ebenen sollten nicht von Modulen niedriger Ebenen abhängig sein. Beide sollten von Abstraktionen abhängen. Abstraktionen sollten nicht von Details abhängen. Details sollten von Abstraktionen abhängen.
 
-Das Streben nach Einhaltung dieser fünf Grundsätze sollte zu einem System führen, das eine strikte Trennung der Bedenken aufweist.
+Durch die Berücksichtigung dieser fünf Prinzipien lässt sich ein System erzielen, in dem eine strikte Trennung der Anliegen gegeben ist.
 
 >[!TIP]
 >
->SOLID ist ein häufig verwendetes Konzept für objektorientierte Programmierung und jedes Element wird in der Fachliteratur umfassend diskutiert.
+>SOLID ist ein häufig verwendetes Konzept der objektorientierten Programmierung und jedes Element wird in der Fachliteratur umfassend diskutiert.
 >
->Diese Information ist nur eine kurze Zusammenfassung, die für das Bewusstsein präsentiert wird, und Sie sollten sich mit diesen Konzepten besser vertraut machen.
+>Dies ist nur eine kurze Zusammenfassung, um Sie darauf aufmerksam zu machen. Wir empfehlen, sich intensiver mit diesen Konzepten zu beschäftigen.
 
 ### Befolgen des Robustheitsgrundsatzes {#follow-the-robustness-principle}
 
-Das Robustness-Prinzip besagt, dass Sie bei dem, was Sie senden, konservativ sein sollten, aber bei dem, was Sie akzeptieren, liberal sein sollten. Anders ausgedrückt: Wenn Sie Nachrichten an einen Drittanbieter senden, sollten Sie die Spezifikationen vollständig einhalten. Wenn Sie jedoch Nachrichten von einem Drittanbieter erhalten, sollten Sie nicht konforme Nachrichten akzeptieren, solange die Bedeutung der Nachricht klar ist.
+Der Robustheitsgrundsatz besagt, dass Sie streng sein sollten, bei dem, was Sie senden, und offen bei dem, was Sie von anderen akzeptieren. Anders ausgedrückt: Wenn Sie Nachrichten an Dritte senden, sollten Sie die Spezifikationen vollständig einhalten. Wenn Sie jedoch Nachrichten von einem Drittanbieter erhalten, sollten Sie nicht konforme Nachrichten akzeptieren, solange die Bedeutung der Nachricht klar ist.
 
 ### Implementierung von Sammlungen in eigenen Modulen {#implement-spikes-in-their-own-modules}
 
-Spitzen und Testcode sind Teil jeder Agile Software-Implementierung. Sie möchten jedoch sicherstellen, dass sie nicht ohne angemessene Aufsicht in die Produktions-Code-Basis gelangen. Daher wird empfohlen, Spitzen in ihrem eigenen Modul zu erstellen.
+Sammlungen und Testcode sind Teil jeder agilen Software-Implementierung. Sie sollten allerdings sicherstellen, dass sie nicht ohne entsprechende Kontrolle in die Produktions-Codebasis gelangen. Daher wird empfohlen, Sammlungen in ihrem eigenen Modul zu erstellen.
 
 ### Implementieren von Datenmigrationsskripten in ihrem eigenen Modul {#implement-data-migration-scripts-in-their-own-module}
 
-Datenmigrationsskripte werden während des Produktionscodes nur einmal beim ersten Start einer Site ausgeführt. Wenn die Site live ist, werden die Skripte daher zu totem Code. Um sicherzustellen, dass Sie keinen Implementierungscode erstellen, der von den Migrationsskripten abhängig ist, sollten diese in ihrem eigenen Modul implementiert werden. Auf diese Weise können wir diesen Code unmittelbar nach dem Start entfernen und zurücksetzen, wodurch toter Code aus dem System entfernt wird.
+Bei Datenmigrationsskripten handelt es sich zwar um Produktions-Code, doch diese werden nur einmal beim ersten Start einer Site ausgeführt. Wenn die Site live ist, werden die Skripte daher zu totem Code. Um sicherzustellen, dass Sie keinen Implementierungs-Code erstellen, der von den Migrationsskripten abhängig ist, sollten diese in einem eigenen Modul implementiert werden. Auf diese Weise können wir diesen Code sofort nach dem Start entfernen und aus dem System entfernen, sodass kein toter Code mehr im System vorhanden ist.
 
 ### Befolgen veröffentlichter Maven-Konventionen in POM-Dateien {#follow-published-maven-conventions-in-pom-files}
 
-Apache hat unter [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html) Stilkonventionen veröffentlicht. Es ist am besten, diese Konventionen zu befolgen, da es für neue Ressourcen einfacher ist, schnell zu arbeiten.
+Apache hat unter [https://maven.apache.org/developers/conventions/code.html](https://maven.apache.org/developers/conventions/code.html) Stilkonventionen veröffentlicht. Es empfiehlt sich, diese Konventionen zu befolgen, da es damit neuen Mitarbeiterinnen bzw. Mitarbeitern erleichtert wird, sich schnell zurechtzufinden.
