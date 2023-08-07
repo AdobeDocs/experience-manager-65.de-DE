@@ -7,9 +7,9 @@ feature: DRM,Asset Management
 exl-id: a49cfd25-e8d9-492f-be5e-acab0cf67a28
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1421'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -82,7 +82,7 @@ Damit die [!DNL Assets]-Konsole die verweisenden ebenenübergreifenden Assets ne
    >
    >Nur der Ersteller eines Assets (die Person, die ein bestimmtes Asset in [!DNL Assets] hochlädt) erhält eine E-Mail, wenn das Asset abläuft. Machen Sie sich damit vertraut, [wie Sie E-Mail-Benachrichtigungen konfigurieren können](/help/sites-administering/notification.md), um weitere Einzelheiten zur Konfiguration von E-Mail-Benachrichtigungen in [!DNL Experience Manager] im Allgemeinen zu erhalten.
 
-1. Geben Sie im Feld **[!UICONTROL Vorabbenachrichtigung in Sekunden]** den Zeitpunkt in Sekunden vor dem Ablauf eines Assets an, zu dem Sie über den bevorstehenden Ablauf benachrichtigt werden möchten. Asset-Ersteller erhalten vor Ablauf des Assets eine Nachricht, die Sie darüber informiert, dass das Asset nach der angegebenen Zeit abläuft. Nach Ablauf des Assets erhalten Sie eine weitere Benachrichtigung, die den Ablauf bestätigt. Darüber hinaus werden die abgelaufenen Assets deaktiviert.
+1. Geben Sie im Feld **[!UICONTROL Vorabbenachrichtigung in Sekunden]** den Zeitpunkt in Sekunden vor dem Ablauf eines Assets an, zu dem Sie über den bevorstehenden Ablauf benachrichtigt werden möchten. Asset-Ersteller erhalten vor Ablauf des Assets eine Nachricht, die Sie darüber informiert, dass das Asset nach der angegebenen Zeit abläuft. Nach Ablauf des Assets erhalten Sie eine weitere Benachrichtigung, die seinen Ablauf bestätigt. Darüber hinaus werden die abgelaufenen Assets deaktiviert.
 
 1. Klicken Sie auf **[!UICONTROL Speichern]**.
 
