@@ -1,5 +1,5 @@
 ---
-title: Integration von AEM 6.5 in Adobe Campaign Standard
+title: Integrieren von AEM 6.5 mit Adobe Campaign Standard
 description: Erfahren Sie, wie Sie AEM 6.5 mit Adobe Campaign Standard integrieren.
 uuid: ef31339e-d925-499c-b8fb-c00ad01e38ad
 contentOwner: User
@@ -9,22 +9,22 @@ content-type: reference
 discoiquuid: 5c0fec99-7b1e-45d6-a115-e498d288e9e1
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
 source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1834'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
 
-# Integration von AEM 6.5 in Adobe Campaign Standard {#integrating-with-adobe-campaign-standard}
+# Integrieren von AEM 6.5 mit Adobe Campaign Standard {#integrating-with-adobe-campaign-standard}
 
-Durch die Integration von AEM 6.5 mit Adobe Campaign Standard (ACS) können Sie E-Mail-Versand, -Inhalt und -Formulare direkt in AEM verwalten. Zur bidirektionalen Kommunikation zwischen Lösungen sind Konfigurationsschritte sowohl in Adobe Campaign Standard als auch AEM erforderlich.
+Durch die Integration von AEM 6.5 mit Adobe Campaign Standard (ACS) können Sie E-Mail-Versand, Inhalte und Formulare direkt in AEM verwalten. Zur bidirektionalen Kommunikation zwischen Lösungen sind Konfigurationsschritte sowohl in Adobe Campaign Standard als auch AEM erforderlich.
 
 Durch diese Integration können AEM und Adobe Campaign Standard unabhängig voneinander verwendet werden. Marketing-Experten können in Adobe Campaign Kampagnen erstellen und Targeting verwenden, während Ersteller von Inhalten parallel an der Inhaltserstellung in AEM arbeiten können. Durch die Integration können Inhalt und Design der in AEM erstellten Kampagne zielgerichtet über Adobe Campaign bereitgestellt werden.
 
 >[!INFO]
 >
->In diesem Dokument wird beschrieben, wie Sie Adobe Campaign Standard in AEM 6.5 integrieren. Weiterführende Informationen zu anderen Campaign-Integrationen finden Sie im Dokument . [Integration von AEM 6.5 in Adobe Campaign.](campaign.md)
+>In diesem Dokument wird beschrieben, wie Sie Adobe Campaign Standard mit AEM 6.5 integrieren. Weiterführende Informationen zu anderen Campaign-Integrationen finden Sie im Dokument [Integrieren von AEM 6.5 in Adobe Campaign](campaign.md).
 
 ## Integrationsschritte {#integration-steps}
 
