@@ -1,18 +1,18 @@
 ---
-title: Verwendung von GraphQL mit AEM - Beispielinhalt und Abfragen
-description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden können, um Inhalte Headless bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
+title: Erfahren Sie, wie Sie GraphQL mit AEM verwenden – Beispielinhalt und Abfragen
+description: Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um „headless“-Inhalte bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 feature: Content Fragments,GraphQL API
 exl-id: 91c5f61c-9c15-4d72-9b9b-0c23f31e7cdc
 source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1586'
-ht-degree: 76%
+ht-degree: 100%
 
 ---
 
 # Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen {#learn-graphql-with-aem-sample-content-queries}
 
-Erfahren Sie, wie Sie GraphQL mit AEM verwenden können, um Inhalte Headless bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
+Erfahren Sie, wie Sie GraphQL mit AEM verwenden, um „headless“-Inhalte bereitzustellen, indem Sie Beispielinhalte und Abfragen untersuchen.
 
 >[!NOTE]
 >
@@ -22,8 +22,7 @@ Erfahren Sie, wie Sie GraphQL mit AEM verwenden können, um Inhalte Headless ber
 >* [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
 >* [AEM GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
-
-Für die ersten Schritte mit GraphQL-Abfragen und deren Funktionsweise mit AEM Inhaltsfragmenten ist es hilfreich, einige praktische Beispiele anzuzeigen.
+Für den Einstieg in GraphQL-Abfragen und deren Verwendung mit AEM-Inhaltsfragmenten sind einige praktische Beispiele hilfreich.
 
 Sehen Sie dazu:
 
@@ -38,7 +37,7 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 
 >[!NOTE]
 >
->Je nach Instanz können Sie direkt auf die [Die mit AEM GraphQL-API enthaltene Grafik-QL-Schnittstelle](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) zum Senden und Testen von Abfragen.
+>Abhängig von Ihrer Instanz können Sie direkt auf die in der [AEM-GraphQL-API enthaltene GraphiQL-Schnittstelle](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) zugreifen, um Abfragen zu senden und zu testen.
 >
 >Beispiel: `http://localhost:4502/content/graphiql.html`
 
@@ -48,7 +47,7 @@ In diesen Beispielabfragen wird das Erstellen von Abfragen zusammen mit Beispiel
 
 ### Beispielabfrage – Alle verfügbaren Schemata und Datentypen {#sample-all-schemes-datatypes}
 
-Diese Beispielabfrage gibt alle `types` für alle verfügbaren Schemas.
+Diese Beispielabfrage gibt alle `types` für alle verfügbaren Schemata zurück.
 
 **Beispielabfrage**
 
@@ -141,7 +140,7 @@ Diese Beispielabfrage gibt alle `types` für alle verfügbaren Schemas.
 
 ### Beispielabfrage – Alle Informationen zu allen Städten {#sample-all-information-all-cities}
 
-Um alle Informationen über alle Städte abzurufen, können Sie die grundlegende Abfrage verwenden:
+Um alle Informationen zu allen Städten abzurufen, können Sie die grundlegende Abfrage verwenden:
 **Beispielabfrage**
 
 ```graphql
@@ -152,7 +151,7 @@ Um alle Informationen über alle Städte abzurufen, können Sie die grundlegende
 }
 ```
 
-Bei Ausführung erweitert das System die Abfrage automatisch, um alle Felder einzuschließen:
+Wenn die Abfrage ausgeführt wird, erweitert das System sie automatisch, um alle Felder einzuschließen:
 
 ```graphql
 {
@@ -224,7 +223,7 @@ Bei Ausführung erweitert das System die Abfrage automatisch, um alle Felder ein
 
 ### Beispielabfrage – Namen aller Städte {#sample-names-all-cities}
 
-Diese Beispielabfrage ist eine einfache Abfrage, um die `name`aller Einträge in `city`Schema.
+Diese Beispielabfrage ist eine unkomplizierte Abfrage, um den `name`aller Einträge im `city`-Schema zurückzugeben.
 
 **Beispielabfrage**
 
@@ -315,7 +314,7 @@ Diese Beispielabfrage ist eine Abfrage, um die Details eines einzelnen Fragmente
 
 ### Beispielabfrage – alle Städte mit einer gegebenen Variante {#sample-cities-named-variation}
 
-Wenn Sie eine Variante mit dem Namen &quot;Berlin Center&quot;erstellen (`berlin_centre`), für die `city` Berlin können Sie eine Abfrage verwenden, um Details der Variante zurückzugeben.
+Wenn Sie eine Variante mit dem Namen „Berlin Centre“ (`berlin_centre`) für `city` Berlin erstellen, können Sie eine Abfrage verwenden, um Details zur Variante zurückzugeben.
 
 **Beispielabfrage**
 
@@ -360,8 +359,8 @@ Wenn Sie eine Variante mit dem Namen &quot;Berlin Center&quot;erstellen (`berlin
 
 Wenn Sie:
 
-* Erstellen Sie verschiedene Tags namens `Tourism` : `Business`, `City Break`, `Holiday`
-* und weisen diese Tags der Übergeordneten Variante verschiedener `City` Instanzen
+* eine Vielzahl von Tags namens `Tourism` erstellen: `Business`, `City Break`, `Holiday`
+* und sie diese Tags der übergeordneten Variante verschiedener `City`-Instanzen zuweisen
 
 Dann können Sie eine Abfrage verwenden, um Details zu `name` und `tags` aller Einträge mit dem Tag „Städtereisen“ im Schema `city` herauszugeben.
 
@@ -538,7 +537,7 @@ query {
 
 ### Beispielabfrage – Alle Personen mit dem Namen „Jobs“ oder „Smith“ {#sample-all-persons-jobs-smith}
 
-Diese Beispielabfrage filtert alle `persons` für alle, die über einen Namen verfügen `Jobs`oder `Smith`.
+Diese Beispielabfrage filtert alle `persons` nach allen, die den Namen `Jobs` oder `Smith` haben.
 
 **Beispielabfrage**
 
@@ -592,7 +591,7 @@ query {
 
 ### Beispielabfrage – Alle Personen, die nicht den Namen „Jobs“ haben  {#sample-all-persons-not-jobs}
 
-Diese Beispielabfrage filtert alle `persons` für alle, die über einen Namen verfügen `Jobs`oder `Smith`.
+Diese Beispielabfrage filtert alle `persons` nach allen, die den Namen `Jobs` oder `Smith` haben.
 
 **Beispielabfrage**
 
@@ -702,9 +701,9 @@ query {
 }
 ```
 
-### Beispielabfrage - Alle Städte in Deutschland oder der Schweiz mit einer Bevölkerung von 400000 bis 999999 {#sample-all-cities-d-ch-population}
+### Beispielabfrage – Alle Städte in Deutschland oder der Schweiz mit einer Einwohnerzahl zwischen 400.000 und 999.999 {#sample-all-cities-d-ch-population}
 
-Hier wird eine Kombination von Feldern gefiltert. Ein `AND` (implizit) wird verwendet, um den `population`-Bereich auszuwählen, während ein `OR` (explizit) zur Auswahl der erforderlichen Städte verwendet wird.
+Hier wird nach einer Kombination von Feldern gefiltert. Ein `AND` (implizit) wird verwendet, um den `population`-Bereich auszuwählen, während ein `OR` (explizit) zur Auswahl der erforderlichen Städte verwendet wird.
 
 **Beispielabfrage**
 
@@ -1146,17 +1145,17 @@ query {
 
 ## Beispielabfragen unter Verwendung des WKND-Projekts {#sample-queries-using-wknd-project}
 
-Diese Beispielabfragen basieren auf dem WKND-Projekt. Sie hat Folgendes:
+Diese Beispielabfragen basieren auf dem WKND-Projekt. Sie umfasst Folgendes:
 
 * Inhaltsfragmentmodelle verfügbar unter:
-   `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
+  `http://<hostname>:<port>/libs/dam/cfm/models/console/content/models.html/conf/wknd`
 
 * Inhaltsfragmente (und anderere Inhalte) verfügbar unter:
-   `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
+  `http://<hostname>:<port>/assets.html/content/dam/wknd/en`
 
 >[!NOTE]
 >
->Da die Ergebnisse umfangreich sein können, werden sie hier nicht reproduziert.
+>Da die Ergebnisse sehr umfangreich sein können, werden sie hier nicht wiedergegeben.
 
 ### Beispielabfrage für alle Inhaltsfragmente eines bestimmten Modells mit den angegebenen Eigenschaften {#sample-wknd-all-model-properties}
 
@@ -1244,7 +1243,7 @@ Diese Abfrage untersucht:
 Diese Beispielabfrage untersucht:
 
 * Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
-   * innerhalb dieses Pfads alle Inhaltsformate:
+   * innerhalb dieses Pfades alle Formate des Inhalts:
       * HTML
       * Markdown
       * Nur Text
@@ -1293,12 +1292,12 @@ Diese Beispielabfrage untersucht:
 }
 ```
 
-### Beispielabfrage für ein verschachteltes Inhaltsfragment – Typ mit einem einzigen Modell {#sample-wknd-nested-fragment-single-model}
+### Beispielabfrage für ein verschachteltes Inhaltsfragment – Typ mit einem einzigen Modell{#sample-wknd-nested-fragment-single-model}
 
 Diese Abfrage untersucht:
 
 * Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
-   * in diesem Pfad den Pfad und den Autor des referenzierten (verschachtelten) Fragments
+   * innerhalb dieses Pfades, den Pfad und die Autorin bzw. der Autor des referenzierten (verschachtelten) Fragments
 
 >[!NOTE]
 >
@@ -1321,18 +1320,18 @@ Diese Abfrage untersucht:
 }
 ```
 
-### Beispielabfrage für ein verschachteltes Inhaltsfragment – Typ mit mehreren Modellen {#sample-wknd-nested-fragment-multiple-model}
+### Beispielabfrage für ein verschachteltes Inhaltsfragment – Typ mit mehreren Modellen{#sample-wknd-nested-fragment-multiple-model}
 
 #### Einzelner referenzierter Modelltyp
 
 Diese Abfrage untersucht:
 
 * Mehrere Inhaltsfragmente vom Typ `bookmark`
-   * mit Fragmentverweisen auf andere Fragmente des spezifischen Modelltyps `Article`
+   * Mit Fragmentverweisen auf andere Fragmente des spezifischen Modelltyps `Article`
 
 >[!NOTE]
 >
->Das Feld `fragments` hat den Datentyp `fragment-reference`mit dem Modell `Article` ausgewählt ist. Abfrage liefert `fragments` als Array von `[Article]`.
+>Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei das Modell `Article` ausgewählt wurde. Die Abfrage liefert `fragments` als ein Array von `[Article]`.
 
 ```graphql
 {
@@ -1356,7 +1355,7 @@ Diese Abfrage untersucht:
 
 >[!NOTE]
 >
->Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind. Abfrage liefert `fragments` als Array von `[AllFragmentModels]`, der vom Vereinigungstyp ausgeschlossen wird.
+>Das Feld `fragments` hat den Datentyp `fragment-reference`, wobei die Modelle `Article`, `Adventure` ausgewählt sind. Die Abfrage liefert `fragments` als ein Array von `[AllFragmentModels]`, das mit Vereinigungstyp dereferenziert wird.
 
 ```graphql
 {
@@ -1377,7 +1376,7 @@ Diese Abfrage untersucht:
 }
 ```
 
-### Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit Inhaltsreferenzen {#sample-wknd-fragment-specific-model-content-reference}
+### Beispielabfrage für ein Inhaltsfragment eines bestimmten Modells mit Inhaltsreferenzen{#sample-wknd-fragment-specific-model-content-reference}
 
 Es gibt zwei Varianten dieser Abfrage:
 
@@ -1427,7 +1426,7 @@ Die folgende Abfrage gibt alle Inhaltsreferenzen mit `_references` zurück:
 
 #### Beispielabfrage für mehrere Inhaltsfragmente mit Anhängen {#sample-wknd-multiple-fragments-attachments}
 
-Die folgende Abfrage gibt alle `attachments` - ein spezifisches Feld (Untergruppe) des Typs `content-reference`:
+Die folgende Abfrage gibt alle `attachments` zurück – ein bestimmtes Feld (Untergruppe) vom Typ `content-reference`:
 
 >[!NOTE]
 >
@@ -1515,7 +1514,7 @@ Diese Abfrage untersucht:
 Diese Abfrage untersucht:
 
 * Ein einzelnes Inhaltsfragment vom Typ `article` an einem bestimmten Pfad
-   * innerhalb dieses Pfads die mit der Variante zusammenhängenden Daten: `variation1`
+   * innerhalb dieses Pfades die Daten, die sich auf die folgende Variante beziehen: `variation1`
 
 **Beispielabfrage**
 
@@ -1652,7 +1651,7 @@ Die Abfragen basieren auf der folgenden Struktur, die Folgendes verwendet:
 
 ### Beispielmodelle für Inhaltsfragmente (Schemata) {#sample-content-fragment-models-schemas}
 
-Verwenden Sie für die Beispielabfragen die folgenden Inhaltsmodelle und ihre Beziehungen (Referenzen ->):
+Für die Beispielabfragen verwenden wir die folgenden Inhaltsmodelle und ihre Wechselbeziehungen (Verweise ->):
 
 * [Unternehmen](#model-company)
 > [Person](#model-person)
@@ -1666,7 +1665,7 @@ Die grundlegenden Felder, die das Unternehmen definieren, sind:
 
 | Feldname | Datentyp | Verweis |
 |--- |--- |--- |
-| Unternehmensname | Einzelzeilentext |  |
+| Unternehmensname | Einzeiliger Text | |
 | CEO | Fragmentreferenz (Einzelfeld) | [Person](#model-person) |
 | Mitarbeiter | Fragmentreferenz (Mehrfeld) | [Person](#model-person) |
 
@@ -1676,8 +1675,8 @@ Die Felder, die eine Person definieren, die auch ein Mitarbeiter sein kann:
 
 | Feldname | Datentyp | Verweis |
 |--- |--- |--- |
-| Name | Einzelzeilentext |  |
-| Vorname | Einzelzeilentext |  |
+| Name | Einzeiliger Text | |
+| Vorname | Einzeiliger Text | |
 | Auszeichnungen | Fragmentreferenz (Mehrfeld) | [Auszeichnung](#model-award) |
 
 #### Auszeichnung {#model-award}
@@ -1686,8 +1685,8 @@ Die Felder, die eine Auszeichnung definieren, sind:
 
 | Feldname | Datentyp | Verweis |
 |--- |--- |--- |
-| Kürzel/Kennung | Einzelzeilentext |  |
-| Titel | Einzelzeilentext |  |
+| Kürzel/Kennung | Einzeiliger Text | |
+| Titel | Einzeiliger Text | |
 
 #### Stadt {#model-city}
 
@@ -1695,10 +1694,10 @@ Die Felder zur Definition einer Stadt sind:
 
 | Feldname | Datentyp | Verweis |
 |--- |--- |--- |
-| Name | Einzelzeilentext |  |
-| Land | Einzelzeilentext |  |
-| Einwohnerzahl | Zahl |  |
-| Kategorien | Tags |  |
+| Name | Einzeiliger Text | |
+| Land | Einzeiliger Text | |
+| Einwohnerzahl | Zahl | |
+| Kategorien | Tags | |
 
 ### Beispielinhaltsfragmente {#sample-content-fragments}
 
@@ -1716,7 +1715,7 @@ Die folgenden Fragmente werden für das entsprechende Modell verwendet.
 
 | Name | Vorname | Auszeichnungen |
 |--- |--- |--- |
-| Lincoln |  Abe |  |
+| Lincoln |  Abe | |
 | Smith | Adam |   |
 | Slade |  Cutter |  Gameblitz<br>Gamestar |
 | Marsh |  Duke |   |   |
