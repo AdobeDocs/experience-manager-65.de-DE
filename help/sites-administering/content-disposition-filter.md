@@ -9,26 +9,26 @@ topic-tags: Security
 discoiquuid: badfaa18-472e-4777-a7dc-9c28441b38b7
 exl-id: 1c3d0d48-5c31-42a8-8698-922d7c2127e9
 source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '239'
-ht-degree: 34%
+ht-degree: 100%
 
 ---
 
 # Content-Disposition-Filter {#content-disposition-filter}
 
-Der Inhaltsdispositionsfilter ist eine Sicherheitsfunktion gegen XSS-Angriffe auf SVG-Dateien.
+Der Content-Disposition-Filter ist eine Sicherheitsfunktion gegen XSS-Angriffe auf SVG-Dateien.
 
-Nach der Installation blockiert der Filter den Zugriff auf alle Assets. Sie können dann beispielsweise keine PDF-Dateien online anzeigen. In diesem Abschnitt wird beschrieben, wie Sie den Filter nach Bedarf konfigurieren.
+Nach der Installation blockiert der Filter den Zugriff auf alle Assets. Sie können dann beispielsweise keine PDF-Dateien online anzeigen. In diesem Abschnitt wird beschrieben, wie Sie den Filter Ihren Bedürfnissen entsprechend konfigurieren können.
 
-## Inhaltsdispositionsfilter konfigurieren {#configure-content-disposition-filter}
+## Konfigurieren des Content-Disposition-Filters {#configure-content-disposition-filter}
 
 Sie können den [Apache Sling Content Disposition Filter in GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java) anzeigen.
 
 Die Optionen für den Content-Disposition-Filter bieten die folgenden Funktionen:
 
-* **Content Disposition Paths:** Eine Liste der Pfade, auf die der Filter angewendet wird, gefolgt von einer Liste der MIME-Typen, die für diesen Pfad ausgeschlossen werden sollen. Dieser Pfad muss ein absoluter Pfad sein und kann einen Platzhalter (`*`), um jeden Ressourcenpfad mit dem angegebenen Pfadpräfix abzugleichen. Beispiel: `/content/*:image/jpeg,image/svg+xml` wendet den Filter auf jeden Knoten in `/content?` mit Ausnahme von JPG- und SVG-Bildern.
+* **Content-Disposition-Pfade:** Eine Liste der Pfade, auf die der Filter angewendet wird, gefolgt von einer Liste der MIME-Typen, die für diesen Pfad ausgeschlossen werden sollen. Dieser Pfad muss ein absoluter Pfad sein und kann am Ende einen Platzhalter (`*`) enthalten, um mit jedem Ressourcenpfad mit dem angegebenen Pfadpräfix übereinzustimmen. So wird der Filter mit „`/content/*:image/jpeg,image/svg+xml`“ beispielsweise auf alle Knoten unter „`/content?`“ angewendet, mit Ausnahme von JPEG- und SVG-Bildern.
 
-* **Ausgeschlossene Ressourcenpfade:** Eine Liste der ausgeschlossenen Ressourcen. Jeder Ressourcenpfad muss als absoluter und vollständig qualifizierter Pfad angegeben werden. Präfixabgleiche/Platzhalter werden nicht unterstützt.
+* **Ausgeschlossene Ressourcenpfade:** Eine Liste der ausgeschlossenen Ressourcen. Alle Ressourcenpfade müssen als absolute und voll qualifizierte Pfade angegeben werden. Präfixabgleiche/Platzhalter werden nicht unterstützt.
 
-* **Aktivieren Sie für alle Ressourcenpfade:** Diese Markierung steuert, ob dieser Filter für alle Pfade aktiviert werden soll, mit Ausnahme der ausgeschlossenen Pfade, die von Ausgeschlossenen Ressourcenpfaden definiert werden. Wenn dieses Flag auf &quot;true&quot;gesetzt wird, werden die Inhaltserstellungspfade ignoriert. Unabhängig von der Konfiguration werden nur Ressourcenpfade berücksichtigt, die eine Eigenschaft namens `jcr:data` oder `jcr:content/jcr:data` enthalten.
+* **Für alle Ressourcenpfade aktivieren:** Diese Markierung steuert, ob dieser Filter für alle Pfade aktiviert werden soll. Ausgenommen sind dabei die durch „Ausgeschlossene Ressourcenpfade“ definierten ausgeschlossenen Pfade. Ist diese Markierung auf „true“ festgelegt, werden die Content-Disposition-Pfade ignoriert. Unabhängig von der Konfiguration werden nur Ressourcenpfade berücksichtigt, die eine Eigenschaft namens `jcr:data` oder `jcr:content/jcr:data` enthalten.
