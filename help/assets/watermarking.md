@@ -7,9 +7,9 @@ feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '328'
-ht-degree: 90%
+ht-degree: 100%
 
 ---
 
@@ -37,8 +37,8 @@ Um Wasserzeichen auf Assets anwenden zu können, fügen Sie den Schritt „Wasse
    >
    >Ordnen Sie den Schritt [!UICONTROL Wasserzeichen hinzufügen] an beliebiger Stelle vor dem Schritt [!UICONTROL Miniaturansichten verarbeiten] ein.
 
-1. Öffnen Sie die **[!UICONTROL Wasserzeichen hinzufügen]** Schritt zum Anzeigen der Eigenschaften.
-1. Im **[!UICONTROL Argumente]** -Registerkarte gültige Werte in den verschiedenen Feldern angeben, einschließlich Text, Schriftart, Größe, Farbe, Position, Ausrichtung usw. Um die Änderungen zu bestätigen, klicken Sie auf **[!UICONTROL Fertig]**.
+1. Öffnen Sie den Schritt **[!UICONTROL Wasserzeichen hinzufügen]** zum Anzeigen der Eigenschaften.
+1. Geben Sie auf der Registerkarte **[!UICONTROL Argumente]** gültige Werte in den verschiedenen Feldern an, einschließlich Text, Schriftart, Größe, Farbe, Position, Ausrichtung usw. Um die Änderungen zu bestätigen, klicken Sie auf **[!UICONTROL Fertig]**.
 
    ![Bereitstellen der Argumente im Schritt „Wasserzeichen hinzufügen“ in [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
 
