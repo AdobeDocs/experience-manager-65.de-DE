@@ -14,9 +14,9 @@ legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/ed
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
 source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '7210'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -200,7 +200,7 @@ Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nicht
       * **Optionen für Liste fester Werte**
 
          * **Seiten**
-Wählen Sie eine Liste von Seiten aus. Verwendung `+` um weitere Einträge und die Nach-oben-/Nach-unten-Schaltflächen hinzuzufügen, um die Reihenfolge anzupassen.
+Wählen Sie eine Liste von Seiten. Fügen Sie mit `+` weitere Einträge hinzu und passen Sie mit den Schaltflächen nach oben und unten die Reihenfolge an.
 
       * **Optionen für die Suche**
 
@@ -392,7 +392,7 @@ Sie können ein Bild entweder aus dem [Asset-Browser](/help/sites-authoring/auth
 
 Nachdem das Bild hochgeladen wurde (und nicht vorher), können Sie es mittels [Direktbearbeitung](/help/sites-authoring/editing-content.md#edit-content) wie erforderlich zuschneiden und drehen:
 
-![Symbolleiste für die Bearbeitung im Kontext](do-not-localize/chlimage_1-15.png)
+![Symbolleiste für die Kontext-Bearbeitung](do-not-localize/chlimage_1-15.png)
 
 >[!NOTE]
 >
@@ -402,7 +402,7 @@ Nachdem das Bild hochgeladen wurde (und nicht vorher), können Sie es mittels [D
 
 Im Vollbildbearbeitungsmodus stehen verschiedene zusätzliche Optionen zur Verfügung, beispielsweise Karte und Zoom:
 
-![Vollbildbearbeitungsmodus - Karte und Zoom](do-not-localize/chlimage_1-16.png)
+![Vollbildbearbeitungsmodus – Karte und Zoom](do-not-localize/chlimage_1-16.png)
 
 >[!NOTE]
 >
