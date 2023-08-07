@@ -10,9 +10,9 @@ discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
 source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '246'
-ht-degree: 40%
+ht-degree: 100%
 
 ---
 
@@ -20,21 +20,21 @@ ht-degree: 40%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-Java™ API Quick Start (SOAP) ist für die Backup and Restore Service API verfügbar.
+Für die API des Sicherungs- und Wiederherstellungs-Service ist Java™ API Quick Start (SOAP) verfügbar.
 
-[Schnellstart: Aktivieren des Sicherungsmodus mithilfe des Java](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
+[Quick Start: Aufrufen des Sicherungsmodus mit Java](backup-restore-service-api-quick.md#quick-start-soap-mode-entering-backup-mode-using-the-java-api)
 
-[Schnellstart: Verlassen des Sicherungsmodus mithilfe des Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
+[Quick Start: Verlassen des Sicherungsmodus mit Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden und der Verbindungsmodus sollte auf SOAP festgelegt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
 
 >[!NOTE]
 >
->Die Lernprogramme für AEM Forms basieren auf dem Forms-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX® verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Starts in der Programmierung mit AEM Forms basieren auf dem Forms-Betriebssystem. Wenn Sie jedoch ein anderes Betriebssystem wie UNIX® verwenden, ersetzen Sie Windows-spezifische Pfade durch Pfade, die vom jeweiligen Betriebssystem unterstützt werden. Wenn Sie einen anderen J2EE-Anwendungs-Server verwenden, müssen Sie ebenfalls sicherstellen, dass Sie gültige Verbindungseigenschaften angeben. Siehe [Einstellung von Verbindungseigenschaften](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Schnellstart (SOAP-Modus): Aktivieren des Sicherungsmodus mithilfe der Java™-API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
+## Quick Start (SOAP-Modus): Aufrufen des Sicherungsmodus über die Java™-API {#quick-start-soap-mode-entering-backup-mode-using-the-java-api}
 
-Im folgenden Java™-Codebeispiel wird der Sicherungsmodus mit einer eindeutigen Beschriftung für zwei Stunden gestartet. Wenn die Sicherungsdauer abgelaufen ist oder der Sicherungsmodus explizit beendet wird, kehrt der Forms-Server zum Bereinigen von Dateien aus dem globalen Dokumentenspeicher zurück. (Siehe [Aufrufen des Sicherungsmodus auf dem Forms-Server](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).
+Das folgende Java™-Code-Beispiel schaltet für zwei Stunden in den Sicherungsmodus mit einer eindeutigen Bezeichnung. Nach Ablauf der Sicherungszeit oder wenn der Sicherungsmodus explizit verlassen wird, kehrt der Formular-Server zur Bereinigung von Dateien aus dem globalen Dokumentenspeicher zurück. (Siehe [Aufrufen des Sicherungsmodus auf dem Formular-Server](/help/forms/developing/preparing-aem-forms-backup.md#entering-backup-mode-on-the-forms-server).)
 
 ```java
  /*
@@ -147,9 +147,9 @@ Im folgenden Java™-Codebeispiel wird der Sicherungsmodus mit einer eindeutigen
  
 ```
 
-## Schnellstart (SOAP-Modus): Verlassen des Sicherungsmodus mithilfe der Java™-API {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
+## Quick Start (SOAP-Modus): Verlassen des Sicherungsmodus über die Java™-API {#quick-start-soap-mode-leaving-backup-mode-using-the-java-api}
 
-Das folgende Java™-Codebeispiel bewirkt explizit, dass ein Forms-Server den Sicherungsmodus verlässt und zum Bereinigen von Dateien aus dem globalen Dokumentenspeicher zurückkehrt. (Siehe [Verlassen des Sicherungsmodus auf dem Forms-Server](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).
+Das folgende Java™-Code-Beispiel veranlasst einen Formular-Server explizit, den Sicherungsmodus zu verlassen und zum Löschen von Dateien aus dem globalen Dokumentenspeicher zurückzukehren. (Siehe [Verlassen des Sicherungsmodus auf dem Formular-Server](/help/forms/developing/preparing-aem-forms-backup.md#leaving-backup-mode-on-the-forms-server).)
 
 ```java
  /*
