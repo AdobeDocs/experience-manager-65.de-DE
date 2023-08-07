@@ -3,9 +3,9 @@ title: AEM Content and Commerce – Versionshinweise 2022
 description: AEM Content and Commerce – Versionshinweise 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
 source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '816'
-ht-degree: 82%
+ht-degree: 100%
 
 ---
 
@@ -13,7 +13,7 @@ ht-degree: 82%
 
 ## Übersicht über die Systemanforderungen
 
-Überprüfen Sie die Mindestanforderungen in der folgenden Tabelle für die CIF-Version, die Sie derzeit verwenden oder in Zukunft verwenden möchten.
+Überprüfen Sie die Mindestsystemanforderungen in der folgenden Tabelle für die CIF-Version, die Sie derzeit verwenden oder in Zukunft verwenden möchten.
 
 | Komponente | Systemanforderungen |
 |:-------|:-----:|
@@ -21,7 +21,7 @@ ht-degree: 82%
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
-## Releasedatum: September 2022
+## Veröffentlichungsdatum: September 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -36,7 +36,7 @@ ht-degree: 82%
 * Unterstützung für Peregrine 12.5-Komponenten
 * Unterstützung für Client-seitiges Laden von Preisen in Produkt-Teaser und Karussell
 
-## Releasedatum: Juli 2022
+## Veröffentlichungsdatum: Juli 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -47,7 +47,7 @@ ht-degree: 82%
 * Zuordnung von AEM-Seiten zu Produkten und Kategorien über AEM-Seiteneigenschaften plus Übersicht im Produkt-Cockpit
   ![Produkt-Cockpit-Seitenzuordnung](/help/assets/CIF/product_cockpit_page_association.png)
 
-## Releasedatum: Juni 2022
+## Veröffentlichungsdatum: Juni 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -57,7 +57,7 @@ ht-degree: 82%
 
 ### Neue Funktionen {#what-is-new-june}
 
-* Die Anreicherung von Produktkatalogen unterstützt jetzt AEM Seiten, sodass Autoren die Zuordnung von Seite und Produkt verwalten können.
+* Die Produktkataloganreicherung unterstützt jetzt AEM-Seiten, sodass Autorinnen und Autoren die Zuordnung zwischen Seite und Produkt verwalten können.
 
 * Verschiedene Verbesserungen der CIF-Kernkomponenten
 
@@ -67,7 +67,7 @@ ht-degree: 82%
 
 * Falsche Seitenkomponente in der Datenschicht.
 
-## Releasedatum: Mai 2022
+## Veröffentlichungsdatum: Mai 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -83,15 +83,15 @@ ht-degree: 82%
 
 * Verbesserte Kompatibilität und Stabilität für Connectoren von Drittanbietern in I/O Runtime
 
-* Verbessern der Unterstützung für Überschreibungen der GQL-Client-Konfiguration (z. B. Festlegen des benutzerdefinierten Caching-Verhaltens)
+* Verbesserte Unterstützung für Überschreibungen der GQL-Client-Konfiguration (z. B. Festlegen des benutzerdefinierten Caching-Verhaltens)
 
 ### Fehlerbehebungen {#bug-fixes-may}
 
-* Das Feld für die Produktauswahl mit mehreren Werten zeigt ein zweites und zusätzliche Produkte als ungültig an
+* Das Feld für die Produktauswahl mit mehreren Werten zeigt das zweite und die weiteren Produkte als ungültig an
 
 * Die Produktauswahl ist gelegentlich hinter Komponenten verborgen.
 
-## Releasedatum: April 2022
+## Veröffentlichungsdatum: April 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -109,7 +109,7 @@ ht-degree: 82%
 
   ![Verknüpfung mit dem Produkt-Cockpit im Sites-Editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
-## Releasedatum: Februar 2022
+## Veröffentlichungsdatum: Februar 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -121,11 +121,11 @@ ht-degree: 82%
 
 * Beta: AEM CIF-Kernkomponente für die Suche unterstützt Commerce LiveSearch
 * Verbessertes SEO für Multi-Store-Szenarien: URL-Formate für PDP/PLP können jetzt auf Store-Ebene über die CIF-Cloud-Konfigurationseigenschaften konfiguriert werden
-* Die Produktauswahl unterstützt Staging-Produkte über die neue Filteroption in der Benutzeroberfläche. Ermöglicht es Inhaltspraktikern, das Content Management für bevorstehende Produktstarts vorzubereiten.
+* Die Produktauswahl unterstützt Staging-Produkte über die neue Filteroption in der Benutzeroberfläche. Dadurch können Content-Fachleute das Product Content Management für bevorstehende Produkteinführungen vorbereiten
 * Vereinfachte CIF-Konfigurationsverwaltung und Fehlerbehandlung durch Verwendung des CIF-Cloud-Konfigurationsnamens anstelle der Proxy-URL für die Konfiguration
-* Manuelle Kategorieauswahl für Produktlisten- und Karussellkomponenten. Ermöglicht es Inhaltspraktikern, diese Komponenten auf Inhaltsseiten außerhalb des Katalogerlebnisses zu verwenden
+* Manuelle Kategorieauswahl für Produktlisten- und Karussellkomponenten. Dadurch können Content-Fachleute diese Komponenten auf Inhaltsseiten außerhalb des Katalogs verwenden
 
-## Releasedatum: Januar 2022
+## Veröffentlichungsdatum: Januar 2022
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
