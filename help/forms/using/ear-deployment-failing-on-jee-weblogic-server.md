@@ -1,40 +1,38 @@
 ---
-title: EAR-Bereitstellung auf JEE WebLogic Server fehlgeschlagen
+title: EAR-Bereitstellung auf JEE WebLogic-Server fehlgeschlagen
 seo-title: EAR Deployment failing on JEE Weblogic Server
-description: Schritte zum Beheben eines Fehlers bei der EAR-Bereitstellung auf JEE WebLogic Server
+description: Schritte zum Beheben eines Fehlers bei der EAR-Bereitstellung auf JEE-WebLogic-Server
 seo-description: Steps to resolve EAR Deployment failing on JEE Weblogic Server
-source-git-commit: 45bb54a2666c2c196a8fb52795a7f428aa751e4d
-workflow-type: tm+mt
+exl-id: b87a9eee-ee56-4dca-b4a3-a42c91db0b4f
+source-git-commit: 1022e2676297141d5635ebbca49e170aee55367b
+workflow-type: ht
 source-wordcount: '103'
-ht-degree: 10%
+ht-degree: 100%
 
 ---
 
-
-# Fehler bei der EAR-Bereitstellung auf JEE WebLogic Server {#ear-deployment-failing-on-jee-weblogic-server}
+# Fehler bei der EAR-Bereitstellung auf JEE-WebLogic-Server {#ear-deployment-failing-on-jee-weblogic-server}
 
 ## Problem {#issue}
 
-Wenn ein Benutzer versucht, die `adobe-livecycle-weblogic.ear`, die `Null Pointer` Ausnahmefehler .
+Bei dem Versuch, die `adobe-livecycle-weblogic.ear` bereitzustellen, tritt die `Null Pointer`-Ausnahme auf.
 
 ## Gilt für {#applies-to}
 
 Diese Lösung gilt für:
 
-* AEM Forms auf WebLogic JEE-Server, Version 12.2.1.x.
+* AEM Forms auf WebLogic-JEE-Server, Version 12.2.1.x.
 
 ## Lösung {#solution}
 
 Gehen Sie wie folgt vor, um das Problem zu beheben:
 
-1. Navigieren Sie zu `<domain_home>\bin` Ordner des installierten WebLogic JEE-Servers.
+1. Wechseln Sie in das Verzeichnis `<domain_home>\bin` des installierten WebLogic-JEE-Servers.
 
-1. Bearbeiten Sie die `setDomainEnv.cmd` oder `setDomainEnv.sh` als `applicable`.
+1. Bearbeiten Sie die Datei `setDomainEnv.cmd` oder `setDomainEnv.sh` als `applicable`.
 
-1. Suchen Sie nach dem letzten Vorkommen von `JAVA_OPTS` und hinzufügen `-DANTLR_USE_DIRECT_CLASS_LOADING=true` zu. Die aktualisierte Zeichenfolge wird beispielsweise wie folgt angezeigt:
+1. Suchen Sie das letzte Vorkommen von `JAVA_OPTS` und fügen Sie `-DANTLR_USE_DIRECT_CLASS_LOADING=true` hinzu. Die aktualisierte Zeichenfolge wird beispielsweise wie folgt angezeigt:
 
        set `JAVA_OPTIONS=%JAVA_OPTIONS% -DANTLR_USE_DIRECT_CLASS_LOADING=true`
    
 1. Speichern Sie die Änderungen.
-
-
