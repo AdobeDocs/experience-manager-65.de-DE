@@ -1,7 +1,7 @@
 ---
 title: Target-Angebote
 seo-title: Target offers
-description: Erstellen von Zielangeboten
+description: Erstellen von Target-Angeboten
 seo-description: Create target offers
 uuid: 88206181-9708-454a-a22a-05e3fc0247c2
 contentOwner: User
@@ -11,18 +11,18 @@ content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
 source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '93'
-ht-degree: 66%
+ht-degree: 100%
 
 ---
 
 # Target-Angebote{#target-offers}
 
-## Erstellen eines Test&amp;Target-Angebotserlebnisses {#creating-a-test-target-offer-experience}
+## Erstellen eines Test&amp;Target-Angeboterlebnisses {#creating-a-test-target-offer-experience}
 
 1. Wählen Sie Ihre neue Kampagne im linken Bereich aus oder doppelklicken Sie im rechten Bereich darauf.
-1. Wählen Sie die Listenansicht mithilfe des Symbols aus:
+1. Wählen Sie die Listenansicht mit folgendem Symbol:
 
    ![Listenansicht](do-not-localize/chlimage_1-11.png)
 
