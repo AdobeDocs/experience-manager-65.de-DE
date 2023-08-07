@@ -10,9 +10,9 @@ discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
 source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1836'
-ht-degree: 95%
+ht-degree: 100%
 
 ---
 
@@ -207,19 +207,19 @@ Sie können die Vererbung deaktivieren (und dann wieder aktivieren). Abhängig v
 
 Es gibt zwei Symbole im unteren Rand des Sidekicks, die für die Vorschau von Seiten wichtig sind:
 
-![Unterer Rand des Sidekicks mit einer horizontalen Zeile von sieben Symbolen. Zwei der Symbole am Anfang der Zeile, das Bearbeitungssymbol und das Vorschaumodussymbol, werden durch ein Stiftsymbol bzw. ein Lupensymbol gekennzeichnet.](do-not-localize/chlimage_1-5.png)
+![Unterer Rand des Sidekicks mit einer horizontalen Zeile mit sieben Symbolen. Zwei der Symbole am Anfang der Zeile, das Symbol „Bearbeiten“ und das Symbol „Vorschaumodus“, werden durch ein Bleistiftsymbol bzw. ein Lupensymbol dargestellt.](do-not-localize/chlimage_1-5.png)
 
 * Das Bleistiftsymbol zeigt an, dass Sie sich derzeit im Bearbeitungsmodus befinden, in dem Sie Inhalte hinzufügen, ändern, verschieben oder löschen können.
 
-  ![Bearbeitungssymbol, gekennzeichnet durch ein Bleistiftsymbol.](do-not-localize/chlimage_1-6.png)
+  ![Symbol „Bearbeiten“, dargestellt durch ein Bleistiftsymbol.](do-not-localize/chlimage_1-6.png)
 
 * Mit dem Lupensymbol können Sie den Vorschaumodus auswählen, in dem die Seite so angezeigt wird, wie sie in der Publishing-Umgebung angezeigt wird (manchmal ist auch eine Seitenaktualisierung erforderlich):
 
-  ![Symbol für den Vorschaumodus, gekennzeichnet durch ein Lupensymbol.](do-not-localize/chlimage_1-7.png)
+  ![Symbol „Vorschaumodus“, dargestellt durch ein Lupensymbol.](do-not-localize/chlimage_1-7.png)
 
   Im Vorschaumodus wird der Sidekick minimiert. Klicken Sie auf den Pfeil nach unten, um in den Bearbeitungsmodus zurückzukehren:
 
-  ![Balken mit AEM als Titel und einem Bearbeitungsmodussymbol rechts neben dem Titel, gekennzeichnet durch ein Abwärtspfeilsymbol.](do-not-localize/chlimage_1-8.png)
+  ![Balken mit AEM als Titel und einem Symbol „Bearbeiten“ rechts neben dem Titel, dargestellt durch ein Abwärtspfeilsymbol.](do-not-localize/chlimage_1-8.png)
 
 ## Suchen und Ersetzen {#find-replace}
 
