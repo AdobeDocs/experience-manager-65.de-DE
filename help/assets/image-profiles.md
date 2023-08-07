@@ -11,9 +11,9 @@ feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
 source-git-commit: 16ea73e9e75ddee25d7d348d4220a0e0f96a9ae8
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '3033'
-ht-degree: 97%
+ht-degree: 100%
 
 ---
 
@@ -53,9 +53,10 @@ Um die Verwendung von smartem Zuschneiden unter Kontrolle zu halten und die Vera
 * Ein Bildprofil, das doppelte smarte Zuschnittdimensionen enthält, ist nicht zulässig.
 * Duplizierte Bildprofile mit Namen, für die Optionen für das smarte Zuschneiden festgelegt sind, sind nicht zulässig.
 
-Sie haben zwei Optionen zum Zuschneiden von Bildern, aus denen Sie wählen können: Pixelzuschnitt oder smartes Zuschneiden. Sie können auch die Erstellung von Farb- und Bildmustern automatisieren.
+Sie haben zwei Optionen zum Zuschneiden von Bildern, aus denen Sie wählen können: Pixelzuschnitt und smartes Zuschneiden. Sie können außerdem die Erstellung von Farb- und Bildmustern automatisieren.
 
 >[!IMPORTANT]
+>
 • Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
 • Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
 
@@ -70,6 +71,7 @@ Sie haben zwei Optionen zum Zuschneiden von Bildern, aus denen Sie wählen könn
 Mit **[!UICONTROL Unscharf maskieren]** können Sie einen Scharfzeichnungsfiltereffekt für das endgültige heruntergesampelte Bild optimieren. Sie können die Intensität des Effekts, den Radius des Effekts (gemessen in Pixel) und einen Schwellenwert für den Kontrast festlegen, der ignoriert werden soll. Dieser Effekt verwendet die gleichen Optionen wie der Filter *Unscharf maskieren* von Adobe Photoshop.
 
 >[!NOTE]
+>
 Die Unschärfemaske wird nur auf herunterskalierte Ausgabedarstellungen im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Daher werden die größten Ausgabedarstellungen im PTIFF nicht durch die Unschärfemaske beeinflusst. Demgegenüber werden kleinere Ausgabedarstellungen wie Miniaturansichten geändert (dabei wird die Unschärfemaske angezeigt).
 
 In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar:
@@ -164,17 +166,18 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
    * Navigieren Sie zu `https://&lt;AEM server&gt;/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam` und wenden Sie das entsprechende Profil an und wählen Sie **[!UICONTROL Speichern]** aus.
 
-      ![chlimage_1-257](assets/chlimage_1-257.png)
+     ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * Navigieren Sie in CRXDE Lite zum folgenden Knoten: `/content/dam/jcr:content`.
 
-      Fügen Sie die Eigenschaft `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` hinzu und wählen Sie **[!UICONTROL Alle speichern]**.
+     Fügen Sie die Eigenschaft `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` hinzu und wählen Sie **[!UICONTROL Alle speichern]**.
 
-      ![configure_image_profiles](assets/configure_image_profiles.png)
+     ![configure_image_profiles](assets/configure_image_profiles.png)
 
 ## Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern eines einzelnen Bildes {#editing-the-smart-crop-or-smart-swatch-of-a-single-image}
 
 >[!IMPORTANT]
+>
 • Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
 
 Sie können das Fenster für das smarte Zuschneiden eines Bildes manuell neu ausrichten oder seine Größe ändern, um den Fokus weiter zu verfeinern.
@@ -205,6 +208,7 @@ Siehe auch [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern me
 ## Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern mehrerer Bilder {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
 >[!IMPORTANT]
+>
 • Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
 
 Nachdem Sie ein Bildprofil (mit der Funktion „Smartes Zuschneiden“) auf einen Ordner angewendet haben, wird der Zuschnitt auf alle Bilder in diesem Ordner angewendet. Sie können das Zuschnittsfenster in mehreren Bildern *manuell* neu ausrichten oder die Größe verändern, um den Fokus präziser zu bestimmen.
@@ -222,37 +226,35 @@ Sie können einen smarten Zuschnitt erneut ausführen, um die zusätzlichen Zusc
 
    * Passen Sie die Anzeigegröße von Bildern auf der Seite an.
 
-      Ziehen Sie den Schieberegler rechts neben der Dropdown-Liste mit Breakpoint-Namen nach links oder rechts, um den sichtbaren Bildbereich anzupassen.
+     Ziehen Sie den Schieberegler rechts neben der Dropdown-Liste mit Breakpoint-Namen nach links oder rechts, um den sichtbaren Bildbereich anzupassen.
 
-      ![edit_smart_products-sliderbar](assets/edit_smart_crops-sliderbar.png)
+     ![edit_smart_products-sliderbar](assets/edit_smart_crops-sliderbar.png)
 
    * Filtern Sie die Liste der sichtbaren Bilder anhand von Breakpoint-Namen. Im folgenden Beispiel werden die Bilder nach dem Breakpoint-Namen „Medium“ gefiltert.
 
-      Wählen Sie aus der Dropdown-Liste in der oberen rechten Ecke der Seite einen Breakpoint-Namen aus, um zu filtern, welche Bilder Ihnen angezeigt werden. (Siehe Abbildung oben.)
+     Wählen Sie aus der Dropdown-Liste in der oberen rechten Ecke der Seite einen Breakpoint-Namen aus, um zu filtern, welche Bilder Ihnen angezeigt werden. (Siehe Abbildung oben.)
 
-      ![edit_smart_products-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
+     ![edit_smart_products-dropdownlist](assets/edit_smart_crops-dropdownlist.png)
 
    * Ändern Sie die Rahmengröße für den smarten Zuschnitt. Führen Sie einen der folgenden Schritte aus:
 
       * Wenn das Bild nur über entweder einen smarten Zuschnitt oder ein smartes Farbfeld verfügt, ziehen Sie im Bild die Ecke des Zuschnittsfeldes, um die Größe des sichtbaren Bereichs des Zuschnitts anzupassen.
       * Wenn das Bild sowohl über einen smarten Zuschnitt als auch über ein smartes Farbfeld verfügt, ziehen Sie im Bild die Ecke des Zuschnittsfeldes, um die Größe des sichtbaren Bereichs des Zuschnitts anzupassen. Oder wählen Sie das smarte Bildmuster unter dem Bild (Farbmuster sind statisch) aus und ziehen Sie die Ecke des Zuschnittsfeldes, um die Größe des sichtbaren Bereichs des Bildmusters anzupassen.
 
-      ![Größenänderung des smarten Zuschnitts eines Bildes](assets/edit_smart_crops-resize.png)
+     ![Größenänderung des smarten Zuschnitts eines Bildes](assets/edit_smart_crops-resize.png)
 
    * Verschieben Sie das Feld für den smarten Zuschnitt. Führen Sie einen der folgenden Schritte aus:
 
       * Wenn das Bild nur über entweder einen smarten Zuschnitt oder einen smarten Musterabschnitt verfügt, ziehen Sie das Zuschnittsfeld auf dem Bild an eine neue Position.
       * Wenn das Bild sowohl über einen smarten Zuschnitt als auch über einen smarten Musterabschnitt verfügt, ziehen Sie das Feld für den smarten Zuschnitt auf dem Bild an eine neue Position. Oder wählen Sie unter dem Bild das smarte Bildmuster (Farbmuster sind statisch) aus und ziehen Sie das smarte Zuschnittsfeld an eine neue Position.
 
-      ![edit_smart_cards-move](assets/edit_smart_crops-move.png)
+     ![edit_smart_cards-move](assets/edit_smart_crops-move.png)
 
    * Machen Sie all Ihre Änderungen rückgängig und stellen Sie den ursprünglichen smarten Zuschnitt bzw. das smarte Farb-/Bildmuster wieder her (gilt nur für die aktuelle Bearbeitungssitzung).
 
-      Wählen Sie über dem Bild **[!UICONTROL Wiederherstellen]** aus.
+     Wählen Sie über dem Bild **[!UICONTROL Wiederherstellen]** aus.
 
-      ![edit_smart_cards-revert](assets/edit_smart_crops-revert.png)
-
-
+     ![edit_smart_cards-revert](assets/edit_smart_crops-revert.png)
 
 1. Wählen Sie in der oberen rechten Ecke der Seite **[!UICONTROL Speichern]** und anschließend **[!UICONTROL Schließen]** aus, um zum Asset-Ordner zurückzukehren.
 
