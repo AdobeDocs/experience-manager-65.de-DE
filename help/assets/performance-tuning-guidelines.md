@@ -7,9 +7,9 @@ role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
 source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '2746'
-ht-degree: 75%
+ht-degree: 100%
 
 ---
 
@@ -73,15 +73,15 @@ Legen Sie die folgenden JVM Parameter fest:
 
 ### Dateidatenspeicherkonfiguration {#file-data-store-configuration}
 
-Allen [!DNL Experience Manager Assets]-Benutzern von wird angeraten, Datenspeicher und Segmentspeicher zu trennen. Außerdem kann die Leistung durch die Konfiguration der Parameter `maxCachedBinarySize` und `cacheSizeInMB` maximiert werden. Stellen Sie `maxCachedBinarySize` auf die kleinste im Cache unterstützte Dateigröße ein. Geben Sie die Größe des Arbeitsspeicher-Cache für den Datenspeicher in `cacheSizeInMB` ein. Adobe empfiehlt, diesen Wert zwischen 2 und 10 % der gesamten Heap-Größe festzulegen. Lasttests können jedoch bei der Ermittlung der optimalen Einstellung helfen.
+Allen [!DNL Experience Manager Assets]-Benutzern von wird angeraten, Datenspeicher und Segmentspeicher zu trennen. Außerdem kann die Leistung durch die Konfiguration der Parameter `maxCachedBinarySize` und `cacheSizeInMB` maximiert werden. Stellen Sie `maxCachedBinarySize` auf die kleinste im Cache unterstützte Dateigröße ein. Geben Sie die Größe des Arbeitsspeicher-Cache für den Datenspeicher in `cacheSizeInMB` ein. Adobe empfiehlt, diesen Wert zwischen 2 und 10 % der gesamten Heap-Größe festzulegen. Mithilfe von Last- bzw. Leistungstests lässt sich die ideale Einstellung herausfinden.
 
 ### Konfigurieren der Maximalgröße des gepufferten Bilder-Caches   {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Verringern Sie beim Hochladen großer Mengen an Assets in [!DNL Adobe Experience Manager] zur Berücksichtigung unerwarteter Spitzen bei der Speichernutzung und zur Verhinderung von JVM-Fehlern mit OutOfMemoryErrors die konfigurierte Maximalgröße des gepufferten Bilder-Caches. Betrachten wir ein Beispiel mit einem System, das über eine maximale Heap-Größe (-`Xmx`param) von 5 GB verfügt und bei dem der Oak-Blob-Cache auf 1 GB und der Dokumenten-Cache auf 2 GB eingestellt ist. In diesem Fall würde der gepufferte Cache maximal 1,25 GB und Arbeitsspeicher belassen, was bei unerwarteten Spitzen nur 0,75 GB Arbeitsspeicher belassen würde.
+Verringern Sie beim Hochladen großer Mengen an Assets in [!DNL Adobe Experience Manager] zur Berücksichtigung unerwarteter Spitzen bei der Speichernutzung und zur Verhinderung von JVM-Fehlern mit OutOfMemoryErrors die konfigurierte Maximalgröße des gepufferten Bilder-Caches. Betrachten wir ein Beispiel mit einem System, das über eine maximale Heap-Größe (-`Xmx`param) von 5 GB verfügt und bei dem der Oak-Blob-Cache auf 1 GB und der Dokumenten-Cache auf 2 GB eingestellt ist. In diesem Fall würde der gepufferte Cache das Maximum von 1,25 GB Speicher in Anspruch nehmen, wodurch nur 0,75 GB Speicher für unerwartete Spitzen verblieben.
 
-Konfigurieren Sie die gepufferte Cachegröße in der OSGi-Web-Konsole. Legen Sie bei `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache` die Eigenschaft `cq.dam.image.cache.max.memory` in Byte fest. 1073741824 entspricht beispielsweise 1 GB (1024 x 1024 x 1024 = 1 GB).
+Konfigurieren Sie die Größe des gepufferten Cache in der OSGi-Web-Konsole. Legen Sie bei `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache` die Eigenschaft `cq.dam.image.cache.max.memory` in Byte fest. 1073741824 entspricht beispielsweise 1 GB (1024 x 1024 x 1024 = 1 GB).
 
-Wenn Sie über Experience Manager 6.1 SP1 einen `sling:osgiConfig`-Knoten zur Konfiguration dieser Eigenschaft verwenden, stellen Sie sicher, dass Sie diesen Datentyp auf „Long“ einstellen. Weitere Informationen finden Sie unter [CQBufferedImageCache nutzt Heap während Asset-Uploads](https://helpx.adobe.com/de/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
+Wenn Sie über Experience Manager 6.1 SP1 einen `sling:osgiConfig`-Knoten zur Konfiguration dieser Eigenschaft verwenden, stellen Sie sicher, dass Sie diesen Datentyp auf „Long“ einstellen. Weitere Details finden Sie unter [CQBufferedImageCache belegt beim Asset-Upload den Heap](https://helpx.adobe.com/de/experience-manager/kb/cqbufferedimagecache-consumes-heap-during-asset-uploads.html).
 
 ### Gemeinsame Datenspeicher   {#shared-data-stores}
 
@@ -116,12 +116,12 @@ accessKey=<snip>
 
 Adobe empfiehlt die Aktivierung von HTTPS, da viele Unternehmen über Firewalls verfügen, die den HTTP-Verkehr überprüfen und sich dadurch negativ auf Uploads auswirken und Dateien beschädigen. Stellen Sie bei großen Datei-Uploads sicher, dass Benutzer über Kabelverbindungen zum Netzwerk verfügen, da ein WLAN-Netzwerk schnell überfordert ist. Richtlinien zur Ermittlung von Engpässen im Netzwerk finden Sie in der [Anleitung zur Größenänderung von Assets](/help/assets/assets-sizing-guide.md). Informationen zur Beurteilung der Netzwerkleistung mit einer Analyse der Netzwerktopologie finden Sie unter [Überlegungen zum Assets-Netzwerk](/help/assets/assets-network-considerations.md).
 
-Welche Strategie der Netzwerkoptimierung Sie verwenden, hängt in erster Linie von der verfügbaren Bandbreite und der Last auf Ihrer [!DNL Experience Manager]-Instanz ab. Allgemeine Konfigurationsoptionen wie Firewalls oder Proxys können zur Verbesserung der Netzwerkleistung beitragen. Im Folgenden sind einige wichtige Punkte zu beachten:
+Welche Strategie der Netzwerkoptimierung Sie verwenden, hängt in erster Linie von der verfügbaren Bandbreite und der Last auf Ihrer [!DNL Experience Manager]-Instanz ab. Allgemeine Konfigurationsoptionen wie Firewalls oder Proxys können zur Verbesserung der Netzwerkleistung beitragen. Die folgenden Aspekte sollten berücksichtigt werden:
 
 * Stellen Sie je nach Instanztyp (klein, mittel, groß) sicher, dass die Netzwerkbandbreite für Ihre Experience Manager-Instanz ausreichend ist. Dies ist besonders wichtig, wenn [!DNL Experience Manager] auf AWS gehostet wird.
-* Wird Ihre [!DNL Experience Manager]-Instanz auf AWS gehostet, können Sie von einer flexiblen Skalierung profitieren. Vergrößern Sie die Instanz, wenn Benutzer eine hohe Belastung erwarten. Vergrößern Sie die Größe für mäßige/niedrige Auslastung.
-* HTTPS: Die meisten Benutzer verfügen über Firewalls, die den HTTP-Traffic aufspüren. Dies kann sich negativ auf das Hochladen von Dateien auswirken oder Dateien während des Upload-Vorgangs beschädigen.
-* Uploads großer Dateien: Stellen Sie sicher, dass Benutzer über Kabelverbindungen zum Netzwerk verfügen (WLAN-Verbindungen sind schnell gesättigt).
+* Wird Ihre [!DNL Experience Manager]-Instanz auf AWS gehostet, können Sie von einer flexiblen Skalierung profitieren. Vergrößern Sie die Instanz, wenn Benutzer eine hohe Belastung erwarten. Verkleinern Sie die Instanz, wenn nur eine mäßige/geringe Belastung erwartet wird.
+* HTTPS: Die meisten Benutzenden verfügen über Firewalls, die den HTTP-Traffic überwachen. Dies kann sich negativ auf das Hochladen von Dateien auswirken oder sogar Dateien beim Hochladen beschädigen.
+* Uploads großer Dateien: Stellen Sie sicher, dass die Benutzenden über Kabelverbindungen zum Netzwerk verfügen (WLAN-Verbindungen sind schnell gesättigt).
 
 ## Workflows {#workflows}
 
@@ -145,9 +145,9 @@ Wenn keine Übergangs-Workflows verwendet werden können, führen Sie regelmäß
 
 Führen Sie die Bereinigungs-Workflows normalerweise wöchentlich aus. In ressourcenintensiven Szenarien wie z. B. einer umfangreichen Asset-Erfassung kann die Bereinigung auch häufiger ausgeführt werden.
 
-Um die Workflow-Bereinigung zu konfigurieren, fügen Sie über die OSGi-Konsole eine neue Adobe Granite Workflow Purge-Konfiguration hinzu. Konfigurieren und planen Sie anschließend den Workflow als Teil des wöchentlichen Wartungsfensters.
+Um die Workflow-Bereinigung zu konfigurieren, fügen Sie über die OSGi-Konsole eine neue Adobe Granite-Workflow-Purge-Konfiguration hinzu. Konfigurieren und planen Sie anschließend den Workflow als Teil des wöchentlichen Wartungsfensters.
 
-Wenn die Bereinigung zu lange läuft, wird die Zeit überschritten. Daher sollten Sie sicherstellen, dass Ihre Bereinigungsaufträge abgeschlossen sind, um zu vermeiden, dass Bereinigungs-Workflows aufgrund der hohen Anzahl an Workflows nicht abgeschlossen werden können.
+Dauert die Bereinigung zu lange, kommt es zu einem Timeout. Daher sollten Sie sicherstellen, dass Ihre Bereinigungsvorgänge abgeschlossen sind, um zu vermeiden, dass Bereinigungs-Workflows aufgrund der hohen Anzahl an Workflows nicht abgeschlossen werden können.
 
 Wenn Sie zahlreiche Nicht-Übergangs-Workflows ausgeführt haben, die Workflow-Instanzknoten erstellen, können Sie das Tool [ACS AEM Commons Workflow Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) auf Ad-hoc-Basis ausführen. Es entfernt redundante, abgeschlossene Workflow-Instanzen sofort, ohne dass Sie auf die Ausführung des Adobe Granite-Workflow-Bereinigungsplaners warten müssen.
 
@@ -161,15 +161,15 @@ Standardmäßig kann [!DNL Experience Manager] maximal so viele Aufträge parall
 
 1. Ändern Sie den Wert der **[!UICONTROL maximal parallel ausführbaren Aufträge]** und klicken Sie auf **[!UICONTROL Speichern]**.
 
-Das Festlegen einer Warteschlange auf die Hälfte der verfügbaren Prozessoren ist eine praktikable Lösung, mit der begonnen werden kann. Möglicherweise müssen Sie diese Zahl jedoch erhöhen oder verringern, um den maximalen Durchsatz zu erzielen und sie nach Umgebung zu verfeinern. Es gibt separate Warteschlangen für Übergangs- und Nicht-Übergangs-Workflows sowie für andere Prozesse wie beispielsweise externe Workflows. Wenn mehrere Warteschlangen, die auf 50 % der Prozessoren eingestellt sind, gleichzeitig aktiv sind, kann das System schnell überlastet werden. Die stark verwendeten Warteschlangen variieren je nach Benutzerimplementierung erheblich. Daher müssen Sie sie möglicherweise sorgfältig für maximale Effizienz konfigurieren, ohne die Serverstabilität zu beeinträchtigen.
+Das Festlegen einer Warteschlange auf die Hälfte der verfügbaren Prozessoren ist eine praktikable Lösung, mit der begonnen werden kann. Möglicherweise müssen Sie diese Zahl jedoch erhöhen oder verringern, um den maximalen Durchsatz zu erzielen, und sie je nach Umgebung verfeinern. Es gibt separate Warteschlangen für Übergangs- und Nicht-Übergangs-Workflows sowie für andere Prozesse wie beispielsweise externe Workflows. Sind mehrere Warteschlangen, die auf 50 % der Prozessoren gesetzt sind, gleichzeitig aktiv, kann es schnell zu einer Überlastung des Systems kommen. Welche Warteschlangen stark ausgelastet sind, hängt in hohem Maße von den Benutzerimplementierungen ab. Sie müssen daher sorgfältig und mit Bedacht konfiguriert werden, um eine maximale Effizienz zu erreichen, ohne dass dies zulasten der Server-Stabilität geht.
 
 ### Konfiguration von DAM-Update-Asset {#dam-update-asset-configuration}
 
 Der [!UICONTROL DAM-Update-Asset]-Workflow enthält eine vollständige Suite an für Aufgaben konfigurierten Schritten, beispielsweise Dynamic Media PTIFF-Generierung und [!DNL Adobe InDesign Server]-Integration. Die meisten Benutzer benötigen jedoch nicht alle diese Schritte. Adobe empfiehlt die Erstellung einer benutzerdefinierten Kopie des [!UICONTROL DAM-Update-Asset]-Workflow-Modells, in der alle unnötigen Schritte entfernt wurden. Ändern Sie dann die Launcher für [!UICONTROL DAM-Update-Asset] so, dass sie auf das neue Modell zeigen.
 
-Wenn Sie den Workflow [!UICONTROL DAM-Update-Asset] häufig ausführen, kann hierdurch die Größe Ihres Dateidatenspeichers deutlich ansteigen. Die Ergebnisse eines von Adobe durchgeführten Experiments haben gezeigt, dass die Datenspeichergröße um ca. 400 GB erhöht werden kann, wenn innerhalb von 8 Stunden etwa 5.500 Workflows ausgeführt werden.
+Wenn Sie den Workflow [!UICONTROL DAM-Update-Asset] häufig ausführen, kann hierdurch die Größe Ihres Dateidatenspeichers deutlich ansteigen. Die Ergebnisse eines von Adobe durchgeführten Experiments haben gezeigt, dass die Datenspeichergröße um ca. 400 GB ansteigt, wenn innerhalb von 8 Stunden etwa 5.500 Workflows ausgeführt werden.
 
-Es handelt sich um eine vorübergehende Erhöhung, und der Datenspeicher wird nach Ausführung der Speicherbereinigungsaufgabe wieder in seiner ursprünglichen Größe angezeigt.
+Hierbei handelt es sich um einen vorübergehenden Anstieg. Nach Ausführung der Aufgabe zur Speicherbereinigung weist der Datenspeicher wieder seine ursprüngliche Größe auf.
 
 In der Regel wird die Speicherbereinigung wöchentlich zusammen mit anderen geplanten Wartungsaufgaben ausgeführt.
 
@@ -177,9 +177,9 @@ Wenn Sie nur über eingeschränkten Speicherplatz verfügen und den Workflow [!U
 
 #### Ausgabegenerierung zur Laufzeit {#runtime-rendition-generation}
 
-Kunden verwenden Bilder unterschiedlicher Größe und Formate auf ihrer Website oder zur Weitergabe an Geschäftspartner. Da jede Ausgabedarstellung den Platzbedarf des Assets im Repository erhöht, empfiehlt Adobe, diese Funktion umsichtig zu verwenden. Um die für die Verarbeitung und Speicherung von Bildern erforderliche Ressourcenmenge zu reduzieren, können Sie diese Bilder zur Laufzeit und nicht als Ausgabeformate während der Aufnahme generieren.
+Kundinnen und Kunden verwenden Bilder unterschiedlicher Größe und Formate auf ihrer Website oder zur Weitergabe an Geschäftspartnerinnen und -partner. Da jede Ausgabedarstellung den Platzbedarf des Assets im Repository erhöht, empfiehlt Adobe, diese Funktion mit Bedacht zu verwenden. Um die für die Verarbeitung und Speicherung von Bildern erforderliche Ressourcenmenge zu reduzieren, können Sie diese Bilder zur Laufzeit und nicht als Ausgabeformate während der Aufnahme generieren.
 
-Viele Sites-Kunden implementieren ein Bildservlet, das die Größe von Bildern zum Zeitpunkt ihrer Anforderung ändert und zuschneidet. Dadurch wird die Veröffentlichungsinstanz zusätzlich geladen. Solange diese Bilder jedoch zwischengespeichert werden können, kann die Herausforderung abgemildert werden.
+Viele Sites-Kundinnen und -Kunden implementieren ein Bild-Servlet, das die Größe von Bildern zum Zeitpunkt ihrer Anforderung ändert oder sie zuschneidet. Dadurch wird der Publishing-Instanz eine zusätzliche Belastung auferlegt. Solange diese Bilder jedoch zwischengespeichert werden können, lässt sich dieses Problem abmildern.
 
 Ein alternativer Ansatz besteht darin, die Dynamic Media-Technologie zu verwenden, um die Bildbearbeitung vollständig abzugeben. Darüber hinaus können Sie Brand Portal bereitstellen, das nicht nur die Verantwortung für die Generierung von Ausgabedarstellungen von der [!DNL Experience Manager]-Infrastruktur übernimmt, sondern auch die gesamte Veröffentlichungsebene.
 
@@ -224,21 +224,21 @@ XMP-Writeback aktualisiert das Original-Asset, sobald Metadaten in [!DNL Experie
 
 Die aufgeführten Ergebnisse beanspruchen umfangreiche Ressourcen. Adobe empfiehlt daher, die XMP Writeback zu deaktivieren, wenn sie nicht erforderlich ist. Weitere Informationen finden Sie unter [XMP Writeback](/help/assets/xmp-writeback.md).
 
-Das Importieren einer großen Menge an Metadaten kann zu ressourcenintensiven XMP Writeback-Aktivitäten führen, wenn das Flag &quot;Workflows ausführen&quot;aktiviert ist. Planen Sie einen solchen Import während der schlanken Server-Nutzung, damit die Leistung für andere Benutzer nicht beeinträchtigt wird.
+Das Importieren einer großen Menge an Metadaten kann zu ressourcenintensiven XMP Writeback-Aktivitäten führen, wenn das Flag „Workflows ausführen“ aktiviert ist. Planen Sie einen solchen Import während Zeiten geringer Server-Nutzung, um Leistungseinbußen für andere Benutzende zu vermeiden.
 
 ## Replikation {#replication}
 
-Beim Replizieren von Assets auf eine große Anzahl von Veröffentlichungsinstanzen, z. B. in einer Sites-Implementierung, empfiehlt Adobe die Verwendung der Kettenreplikation. In diesem Fall repliziert die Autoreninstanz auf eine einzelne Veröffentlichungsinstanz, die wiederum auf die anderen Veröffentlichungsinstanzen repliziert, wodurch die Autoreninstanz freigeschaltet wird.
+Beim Replizieren von Assets auf eine große Anzahl von Publishing-Instanzen, z. B. in einer Sites-Implementierung, empfiehlt Adobe die Verwendung der Kettenreplikation. In diesem Fall repliziert die Authoring-Instanz auf eine einzelne Publishing-Instanz, die wiederum auf die anderen Publishing-Instanzen repliziert, wodurch die Authoring-Instanz freigehalten wird.
 
 ### Konfiguration der Kettenreplikation   {#configure-chain-replication}
 
 1. Wählen Sie die Veröffentlichungsinstanz, mit der Sie die Replikationen verketten möchten.
-1. Fügen Sie in dieser Veröffentlichungsinstanz Replikationsagenten hinzu, die auf die anderen Veröffentlichungsinstanzen verweisen
-1. Aktivieren Sie für jeden dieser Replikationsagenten auf der Registerkarte &quot;Trigger&quot;die Option &quot;On Receive&quot;
+1. Fügen Sie in dieser Publishing-Instanz Replikationsagenten hinzu, die auf die anderen Publishing-Instanzen verweisen
+1. Aktivieren Sie für alle anderen Replikationsagenten die Option „Bei Empfang“ auf der Registerkarte „Auslöser“.
 
 >[!NOTE]
 >
->Adobe rät von der automatischen Aktivierung von Assets ab. Bei Bedarf empfiehlt Adobe jedoch, dies als letzten Schritt in einem Workflow zu tun, normalerweise DAM Update Asset .
+>Adobe rät von der automatischen Aktivierung von Assets ab. Falls jedoch notwendig, sollte dies der letzte Schritt in einem Workflow, normalerweise „DAM-Update-Asset“, sein.
 
 ## Durchsuchen von Indizes   {#search-indexes}
 
@@ -268,23 +268,23 @@ Verwenden Sie beim Erstellen von Abfragen mit großen Ergebnismengen den Paramet
 
 ### Große Dateien {#large-files}
 
-Zwei bekannte Probleme beziehen sich auf große Dateien in [!DNL Experience Manager]. Wenn Dateien größer als 2 GB sind, kann es bei der Cold-Standby-Synchronisation zu Speicherausfällen kommen. In einigen Fällen verhindert dies die Ausführung der Standby-Synchronisation. In anderen Fällen führt dies zum Absturz der primären Instanz. Dieses Szenario gilt für alle Dateien in [!DNL Experience Manager], die größer als 2 GB sind, darunter auch Inhaltspakete.
+Zwei bekannte Probleme beziehen sich auf große Dateien in [!DNL Experience Manager]. Wenn Dateien größer als 2 GB sind, kann es bei einer Cold-Standby-Synchronisation zu einem Speicherengpass kommen. In einigen Fällen verhindert dies die Ausführung der Standby-Synchronisation. In anderen Fällen führt dies zum Absturz der primären Instanz. Dieses Szenario gilt für alle Dateien in [!DNL Experience Manager], die größer als 2 GB sind, darunter auch Inhaltspakete.
 
 Entsprechend kann es bei Dateien, die in einem gemeinsamen S3-Datenspeicher eine Größe von 2 GB erreichen, einige Zeit dauern, bis die Datei vollständig aus dem Cache in das Dateisystem gespeichert werden kann. Wenn Sie die Binaryless-Replikation verwenden, kann es passieren, dass die binären Daten vor dem Abschluss der Replikation nicht dauerhaft gespeichert werden. Diese Situation kann zu Problemen führen, insbesondere wenn es auf hohe Datenverfügbarkeit ankommt.
 
 ## Leistungstests {#performance-testing}
 
-Erstellen Sie für jede [!DNL Experience Manager]-Implementierung einen Plan für Leistungstests, der Engpässe schnell identifizieren und beseitigen kann. Konzentrieren Sie sich dabei auf die folgenden Schlüsselaspekte.
+Erstellen Sie für jede [!DNL Experience Manager]-Bereitstellung einen Plan für Leistungstests, der Engpässe schnell identifizieren und beseitigen kann. Konzentrieren Sie sich dabei auf die folgenden Schlüsselaspekte.
 
 ### Netzwerktests   {#network-testing}
 
-Führen Sie für alle vom Kunden angesprochenen Probleme mit der Netzwerkleistung die folgenden Aufgaben aus:
+Führen Sie für alle von Kundenseite angesprochenen Probleme mit der Netzwerkleistung die folgenden Aufgaben aus:
 
 * Testen Sie die Netzwerkleistung innerhalb des Kundennetzwerks.
 * Testen Sie die Netzwerkleistung im Adobe-Netzwerk. Arbeiten Sie bei AMS-Kunden mit CSE, um Tests innerhalb des Adobe-Netzwerks durchzuführen.
-* Testen der Netzwerkleistung von einem anderen Access Point
-* Verwenden eines Netzwerk-Benchmark-Tools
-* Testen mit dem Dispatcher
+* Testen Sie die Netzwerkleistung an anderen Zugriffspunkten.
+* Unter Verwendung eines Netzwerk-Benchmark-Tools.
+* Testen Sie mit dem Dispatcher.
 
 ### [!DNL Experience Manager]-Bereitstellungstests {#aem-deployment-testing}
 
@@ -297,7 +297,7 @@ Führen Sie für alle vom Kunden angesprochenen Probleme mit der Netzwerkleistun
 
 * Aktivieren Sie „HTTPS“, um alle vom Unternehmen installierten Sniffer für HTTP-Traffic zu umgehen.
 * Verwenden Sie eine Kabelverbindung, um umfangreiche Assets hochzuladen.
-* Bereitstellen auf Java 8.
+* Implementieren Sie die Bereitstellung auf Java 8.
 * Legen Sie optimale JVM-Parameter fest.
 * Konfigurieren Sie einen Dateisystem-DataStore oder einen S3-DataStore.
 * Deaktivieren Sie das Erzeugen von Unter-Assets. Ist diese Option aktiviert, erstellt der Workflow in AEM für jede Seite eines mehrseitigen Assets ein separates Asset. Jede dieser Seiten ist selbst Asset, das zusätzlichen Speicherplatz belegt sowie Versionierung und zusätzliche Workflow-Verarbeitung erfordert. Wenn Sie keine separaten Seiten benötigen, deaktivieren Sie das Erzeugen von Unter-Assets und die Seitenextraktion.
