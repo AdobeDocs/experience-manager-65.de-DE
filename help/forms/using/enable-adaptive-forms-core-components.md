@@ -8,10 +8,10 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
+source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
 workflow-type: tm+mt
-source-wordcount: '891'
-ht-degree: 7%
+source-wordcount: '889'
+ht-degree: 9%
 
 ---
 
@@ -20,8 +20,8 @@ ht-degree: 7%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 
 **Gilt für:** ✅ Kernkomponenten für adaptive Formulare ❎ Foundation-Komponenten für adaptive Formulare.
 
@@ -83,7 +83,7 @@ So erstellen Sie einen AEM Archetyp 41 oder [later](https://github.com/adobe/aem
 
    * Legen Sie die `archetypeVersion` Eigenschaft auf `41` oder höher. Die neueste Version finden Sie im Abschnitt zu den Systemanforderungen unter [AEM Projektarchetyp](https://github.com/adobe/aem-project-archetype) Dokumentation.
 
-   * Aktualisieren Sie den Befehl, um die spezifischen Werte für Ihre Umgebung widerzuspiegeln, einschließlich der `appTitle`, `appId`und `groupId`. Legen Sie außerdem den Wert der  `includeFormsenrollment` Eigenschaft auf `y`. Wenn Sie Forms Portal verwenden, legen Sie die `includeExamples=y` , um die Kernkomponenten von Forms Portal in Ihr Projekt aufzunehmen.
+   * Aktualisieren Sie den Befehl, um die spezifischen Werte für Ihre Umgebung widerzuspiegeln, einschließlich der `appTitle`, `appId`, und `groupId`. Legen Sie außerdem den Wert der  `includeFormsenrollment` Eigenschaft auf `y`. Wenn Sie Forms Portal verwenden, legen Sie die `includeExamples=y` , um die Kernkomponenten von Forms Portal in Ihr Projekt aufzunehmen.
 
 
 1. (Nur für Projekte, die auf Archetyp Version 41 basieren) Nachdem das AEM Archetyp-Projekt erstellt wurde, aktivieren Sie Designs für auf Kernkomponenten basierende adaptive Forms. So aktivieren Sie Designs:
@@ -152,7 +152,7 @@ Wenn die adaptiven Forms-Kernkomponenten für Ihre Umgebung aktiviert sind, werd
 * Erstellen Sie auf Kernkomponenten basierende adaptive Forms.
 * Erstellen Sie auf Kernkomponenten basierende Vorlagen für adaptive Formulare.
 * Erstellen Sie benutzerdefinierte Designs für auf Kernkomponenten basierende Vorlagen für adaptive Formulare.
-* Bereitstellung der JSON-Darstellungen des auf Kernkomponenten basierenden adaptiven Formulars in Kanälen wie Mobilgeräten, Web, nativen Apps und Diensten, für die die Headless-Darstellung eines Formulars erforderlich ist.
+* Bereitstellung der JSON-Darstellungen des auf Kernkomponenten basierenden adaptiven Formulars in Kanälen wie Mobilgeräten, Web, nativen Apps und Diensten, die die Headless-Darstellung eines Formulars erfordern.
 
 ## Wie geht es weiter
 

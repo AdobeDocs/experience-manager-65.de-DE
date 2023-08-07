@@ -12,16 +12,21 @@ discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
-workflow-type: ht
-source-wordcount: '261'
-ht-degree: 100%
+source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 53%
 
 ---
 
 # AEM Forms für OSGi-Gruppen und -Berechtigungen{#aem-forms-on-osgi-groups-and-privileges}
 
-Sie können [Gruppen erstellen](/help/sites-administering/user-group-ac-admin.md#group-administration) und Richtlinien zuweisen und [Benutzer](/help/sites-administering/user-group-ac-admin.md#user-administration) zu den Gruppen in AEM zuweisen. Diese Richtlinien steuern die Berechtigungen der Benutzer, die Teil der Gruppe sind.
+| Version | Artikel-Link |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
+| AEM 6.5 | Dieser Artikel |
+
+Sie können [Gruppen erstellen](/help/sites-administering/user-group-ac-admin.md#group-administration) und Richtlinien zuweisen und [Benutzer](/help/sites-administering/user-group-ac-admin.md#user-administration) zu den Gruppen in AEM. Diese Richtlinien steuern Berechtigungen der Benutzer, die Teil der Gruppe sind.
 
 Sobald Sie das [AEM Forms-Add-On-Paket](../../forms/using/installing-configuring-aem-forms-osgi.md) installiert haben, werden die in diesem Artikel genannten Gruppen, wie „forms-users“ und „forms-power-user“ automatisch für die Zuweisung zur Verfügung gestellt. In der folgenden Tabelle sind die Aufgaben aufgeführt, die ein Benutzer für AEM Forms auf OSGi basierend auf den Gruppenzuweisungen ausführen kann:
 
@@ -35,26 +40,26 @@ Sobald Sie das [AEM Forms-Add-On-Paket](../../forms/using/installing-configuring
    <td>forms-users <sup>[1]</sup></td> 
    <td>
     <ul> 
-     <li>Erstellen Sie eine Vorschau, veröffentlichen und senden Sie adaptive Formulare</li> 
+     <li>Erstellen, Anzeigen einer Vorschau, Veröffentlichen und Senden adaptiver Formulare</li> 
      <li>Interaktive Kommunikation und Dokumentfragmente erstellen, in der Vorschau anzeigen und veröffentlichen</li> 
-     <li>Assets in eine AEM-Instanz hochladen</li> 
-     <li>Themen erstellen</li> 
+     <li>Hochladen von Assets in eine AEM-Instanz</li> 
+     <li>Erstellen von Designs</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td>forms-power-users</td> 
    <td>
     <ul> 
-     <li>Erstellen Sie eine Vorschau, veröffentlichen und senden Sie adaptive Formulare</li> 
+     <li>Erstellen, Anzeigen einer Vorschau, Veröffentlichen und Senden adaptiver Formulare</li> 
      <li>Interaktive Kommunikation und Dokumentfragmente erstellen, in der Vorschau anzeigen und veröffentlichen</li> 
-     <li>Erstellen Sie Skripte für adaptive Formulare mit dem Code-Editor</li> 
-     <li>Laden Sie Assets einschließlich Skripte hoch</li> 
-     <li>Themen erstellen</li> 
-     <li>Importieren Sie Pakete, die XDP enthalten</li> 
+     <li>Erstellen von Skripten für adaptive Formulare mithilfe des Code-Editors</li> 
+     <li>Hochladen von Assets einschließlich Skripten</li> 
+     <li>Erstellen von Designs</li> 
+     <li>Importieren von Paketen, die XDP enthalten</li> 
     </ul> </td> 
   </tr>
   <tr>
-   <td>Reviewer für Formularübermittlung</td> 
+   <td>forms-submission-reviewers</td> 
    <td>
     <ul> 
      <li>Übermittlungen überprüfen</li> 
@@ -79,14 +84,14 @@ Sobald Sie das [AEM Forms-Add-On-Paket](../../forms/using/installing-configuring
    <td>cm-agent-users</td> 
    <td>
     <ul> 
-     <li>Auf Correspondence Management-Briefe oder interaktive Kommunikation über die Benutzeroberfläche des Agenten zugreifen</li> 
+     <li>Zugriff auf Correspondence Management-Briefe oder interaktive Kommunikation über die Benutzeroberfläche für Agenten</li> 
     </ul> </td> 
   </tr>
   <tr>
    <td><p>workflow-editors</p> </td> 
    <td>
     <ul> 
-     <li>Erstellen einer Posteingangs-Anwendung</li> 
+     <li>Posteingangsanwendung erstellen</li> 
      <li>Erstellen Sie ein Workflow-Modell</li> 
     </ul> </td> 
   </tr>
@@ -95,7 +100,7 @@ Sobald Sie das [AEM Forms-Add-On-Paket](../../forms/using/installing-configuring
    <td>
     <ul> 
      <li>Verwenden Sie AEM-Posteingangs-Anwendungen<br /> <strong>Hinweis: </strong>Sie müssen über Gruppenzuweisungen für „cm-agent-users“ und „workflow-users“ verfügen, um in dem AEM-Posteingang auf die Benutzeroberfläche vom Interactive Communications Agent zuzugreifen.</li> 
-     <li>Workflow-Instanzen verwalten</li> 
+     <li>Verwalten von Workflow-Instanzen</li> 
     </ul> </td> 
   </tr>
   <tr>
