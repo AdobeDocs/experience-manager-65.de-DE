@@ -7,9 +7,9 @@ feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1162'
-ht-degree: 91%
+ht-degree: 100%
 
 ---
 
@@ -20,15 +20,15 @@ ht-degree: 91%
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/admin/asset-reports.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
-Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Bereitstellung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte enthalten nützliche Informationen zur Nutzung Ihres Systems, zur Interaktion der Benutzer mit Assets sowie dazu, welche Assets heruntergeladen und freigegeben werden.
+Mit Asset-Berichten können Sie die Nützlichkeit Ihrer [!DNL Adobe Experience Manager Assets]-Bereitstellung bewerten. Mit [!DNL Assets] können Sie verschiedene Berichte für Ihre digitalen Assets erstellen. Die Berichte bieten hilfreiche Informationen über die Nutzung Ihres Systems, über die Art und Weise, wie Benutzerinnen und Benutzer mit Assets interagieren, und die Frage, welche Assets heruntergeladen und freigegeben werden.
 
 Verwenden Sie die Informationen aus den Berichten, um wesentliche Erfolgsmetriken abzuleiten und so festzustellen, wie gut [!DNL Assets] innerhalb Ihrer Organisation und von Ihren Kunden angenommen wird.
 
-Das [!DNL Assets]-Reporting-Framework nutzt [!DNL Sling]-Aufträge, um Berichtsanfragen auf überschaubare Art asynchron zu verarbeiten. Sie ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung erhöht die Effizienz und Geschwindigkeit der Berichterstellung.
+Das [!DNL Assets]-Reporting-Framework nutzt [!DNL Sling]-Aufträge, um Berichtsanfragen auf überschaubare Art asynchron zu verarbeiten. Es ist für große Repositorys skalierbar. Die asynchrone Berichtsverarbeitung erhöht die Effizienz und Geschwindigkeit der Berichterstellung.
 
-Die Berichtverwaltungsoberfläche ist intuitiv und enthält detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und die Anzeige des Ausführungsstatus von Berichten (Erfolg, fehlgeschlagen und in der Warteschlange).
+Die Berichtsverwaltungsoberfläche ist intuitiv und umfasst detaillierte Optionen und Steuerelemente für den Zugriff auf archivierte Berichte und das Anzeigen des Ausführungsstatus von Berichten („Erfolg“, „Fehlgeschlagen“ und „In Warteschlange“).
 
-Bei der Erstellung eines Berichts werden Sie per E-Mail (optional) und Posteingang über eine Benachrichtigung benachrichtigt. Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
+Wenn ein Bericht erstellt wird, werden Sie per E-Mail (optional) und eine Posteingangsbenachrichtigung benachrichtigt. Sie können einen Bericht auf der Berichtslistenseite anzeigen, herunterladen oder löschen. Dort werden alle zuvor generierten Berichte angezeigt.
 
 ## Voraussetzung {#prerequisite-for-reporting}
 
@@ -121,7 +121,7 @@ Gehen Sie wie folgt vor, um Berichte zu erstellen:
 
 ## Hinzufügen benutzerdefinierter Spalten {#add-custom-columns}
 
-Sie können den folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre benutzerdefinierten Anforderungen anzuzeigen:
+Sie können folgenden Berichten benutzerdefinierte Spalten hinzufügen, um weitere Daten für Ihre speziellen Anforderungen anzuzeigen:
 
 * Hochladen
 * Download
