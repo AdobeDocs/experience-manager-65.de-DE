@@ -7,9 +7,9 @@ role: User
 exl-id: 5eff4a0f-30b1-4753-ad0b-002656eed972
 hide: true
 source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1567'
-ht-degree: 87%
+ht-degree: 100%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 87%
 | AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/smart-tags.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
-Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Sie enthält im Wesentlichen eine Liste von Keywords, mit denen Mitarbeiter, Partner und Kunden häufig auf digitale Assets einer bestimmten Klasse verweisen und nach ihnen suchen. Das Tagging von Assets mit taxonomiegesteuertem Vokabular stellt sicher, dass die Assets leicht identifiziert und abgerufen werden können.
+Organisationen, die mit digitalen Assets arbeiten, verwenden zunehmend taxonomiegesteuertes Vokabular in Asset-Metadaten. Im Wesentlichen handelt es sich um eine Liste von Schlüsselwörtern, die Angestellte, Partner bzw. Partnerinnen und Kunden bzw. Kundinnen üblicherweise verwenden, um sich auf digitale Assets einer bestimmten Klasse zu beziehen und danach zu suchen. Das Tagging von Assets mit taxonomiegesteuertem Vokabular stellt sicher, dass die Assets leicht identifiziert und abgerufen werden können.
 
 Verglichen mit dem Vokabular natürlicher Sprachen hilft das Tagging digitaler Assets anhand einer Geschäftstaxonomie dabei, sie am Geschäft eines Unternehmens auszurichten, und stellt dabei sicher, dass nur die relevantesten Assets bei der Suche angezeigt werden.
 
@@ -96,10 +96,9 @@ Fügen Sie die Assets zu einem Ordner hinzu und wenden Sie die Tags auf jedes As
 
 >[!NOTE]
 >
->1. Training ist ein unwiderruflicher Prozess. Adobe empfiehlt, die Tags im kuratierten Satz von Assets lange vor dem Trainieren des Smart Content Service für die Tags zu überprüfen.
+>1. Training ist ein unwiderruflicher Prozess. Adobe empfiehlt Ihnen, die Tags im Asset-Satz zu überprüfen, bevor Sie den Smart Content Service mit den Tags trainieren.
 >1. Bevor Sie ein Tag trainieren, lesen Sie [Trainings-Richtlinien für den Smart Content Service](/help/assets/config-smart-tagging.md#training-the-smart-content-service).
 >1. Adobe empfiehlt Ihnen, mindestens zwei unterschiedliche Tags zu verwenden, wenn Sie den Smart Content Service zum ersten Mal trainieren.
-
 
 ## Grundlegendes zu [!DNL Experience Manager]-Suchergebnissen mit Smart-Tags {#understandsearch}
 
@@ -121,15 +120,15 @@ Die Suchergebnisse, die in Metadatenfeldern alle Suchbegriffe aufweisen, werden 
 
 ## Automatisches Taggen von Assets {#tagging-assets-automatically}
 
-Nachdem Sie den Smart Content Service trainiert haben, können Sie im Tagging-Workflow automatisch passende Tags auf einen anderen Satz ähnlicher Assets anwenden.
+Wenn Sie den Smart Content Service trainiert haben, können Sie den Tagging-Workflow starten, um automatisch passende Tags auf einen anderen Satz ähnlicher Assets anzuwenden.
 
-Sie können den Tagging-Workflow regelmäßig oder bei Bedarf ausführen.
+Sie können den Tagging-Workflow periodisch oder nur bei Bedarf ausführen.
 
 >[!NOTE]
 >
 >Der Tagging-Workflow wird sowohl für Assets als auch für Ordner ausgeführt.
 
-### Periodisches Tagging {#periodic-tagging}
+### Regelmäßiges Tagging {#periodic-tagging}
 
 Sie können den Smart Content Service aktivieren, um Assets in einem Ordner regelmäßig mit Tags zu versehen. Öffnen Sie die Eigenschaftsseite Ihres Asset-Ordners, wählen Sie **[!UICONTROL Smart-Tags aktivieren]** in der Registerkarte **[!UICONTROL Details]** aus und speichern Sie die Änderungen.
 
@@ -176,7 +175,7 @@ Sie können den Tagging-Workflow über die Workflow-Konsole oder die Zeitleiste 
 
 Sie können Smart-Tags kuratieren, um ungenaue Tags zu entfernen, die Ihren Markenbildern zugewiesen sind, damit nur die relevantesten Tags angezeigt werden.
 
-Mithilfe der Moderation von Smart-Tags können Sie Tag-basierte Suchen nach Bildern verfeinern, indem Sie sicherstellen, dass Ihr Bild nur in den Suchergebnissen für die relevantesten Tags angezeigt wird. Im Wesentlichen hilft es, die Wahrscheinlichkeit zu vermeiden, dass nicht verwandte Bilder in Suchergebnissen angezeigt werden.
+Mithilfe der Moderation von Smart-Tags können Sie Tag-basierte Suchen nach Bildern verfeinern, indem Sie sicherstellen, dass Ihr Bild nur in den Suchergebnissen für die relevantesten Tags angezeigt wird. Damit wird verhindert, dass Bilder ohne Zusammenhang in den Suchergebnissen auftauchen.
 
 Darüber hinaus können Sie Tags einen höheren Rang zuweisen, um ihre Relevanz in Bezug auf ein Bild zu erhöhen. Das Hochstufen eines Tags für ein Bild erhöht die Wahrscheinlichkeit, dass das Bild in den Suchergebnissen erscheint, wenn nach dem betreffenden Tag gesucht wird.
 
