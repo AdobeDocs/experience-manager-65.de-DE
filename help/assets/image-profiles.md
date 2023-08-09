@@ -24,7 +24,7 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 >[!IMPORTANT]
 >
 >• Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
-• Bildprofile können nicht auf PDF-, animierte GIF- oder INDD-Dateien (Adobe InDesign) angewendet werden.
+>• Bildprofile können nicht auf PDF-, animierte GIF- oder INDD-Dateien (Adobe InDesign) angewendet werden.
 
 ## Optionen für das Zuschneiden {#crop-options}
 
@@ -57,8 +57,8 @@ Sie haben zwei Optionen zum Zuschneiden von Bildern, aus denen Sie wählen könn
 
 >[!IMPORTANT]
 >
-• Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
-• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
+>• Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
+>• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
 
 | Option | Wann ist sie einzusetzen? | Beschreibung |
 | --- | --- | --- |
@@ -72,7 +72,7 @@ Mit **[!UICONTROL Unscharf maskieren]** können Sie einen Scharfzeichnungsfilter
 
 >[!NOTE]
 >
-Die Unschärfemaske wird nur auf herunterskalierte Ausgabedarstellungen im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Daher werden die größten Ausgabedarstellungen im PTIFF nicht durch die Unschärfemaske beeinflusst. Demgegenüber werden kleinere Ausgabedarstellungen wie Miniaturansichten geändert (dabei wird die Unschärfemaske angezeigt).
+>Die Unschärfemaske wird nur auf herunterskalierte Ausgabedarstellungen im PTIFF (Pyramiden-TIFF) angewendet, die mehr als 50 % heruntergesampelt sind. Daher werden die größten Ausgabedarstellungen im PTIFF nicht durch die Unschärfemaske beeinflusst. Demgegenüber werden kleinere Ausgabedarstellungen wie Miniaturansichten geändert (dabei wird die Unschärfemaske angezeigt).
 
 In **[!UICONTROL Unschärfemaske]** sind die folgenden Filteroptionen verfügbar:
 
@@ -178,7 +178,7 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 >[!IMPORTANT]
 >
-• Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
+>• Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
 
 Sie können das Fenster für das smarte Zuschneiden eines Bildes manuell neu ausrichten oder seine Größe ändern, um den Fokus weiter zu verfeinern.
 
@@ -209,7 +209,7 @@ Siehe auch [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern me
 
 >[!IMPORTANT]
 >
-• Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
+>• Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
 
 Nachdem Sie ein Bildprofil (mit der Funktion „Smartes Zuschneiden“) auf einen Ordner angewendet haben, wird der Zuschnitt auf alle Bilder in diesem Ordner angewendet. Sie können das Zuschnittsfenster in mehreren Bildern *manuell* neu ausrichten oder die Größe verändern, um den Fokus präziser zu bestimmen.
 
