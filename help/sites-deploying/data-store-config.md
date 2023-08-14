@@ -6,10 +6,10 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '3521'
-ht-degree: 100%
+source-git-commit: 2ed19ac8c60dbf49422b8f1f665be4004689e00e
+workflow-type: tm+mt
+source-wordcount: '3550'
+ht-degree: 99%
 
 ---
 
@@ -139,6 +139,10 @@ Die folgenden Konfigurationsoptionen sind verfügbar:
 
 AEM kann so konfiguriert werden, dass Daten im Simple Storage Service (S3) von Amazon gespeichert werden. Zur Konfiguration wird die PID `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` verwendet.
 
+>[!NOTE]
+>
+>AEM 6.5 unterstützt das Speichern von Daten in Amazon S3. Die Unterstützung wird jedoch nicht auf das Speichern von Daten auf anderen Plattformen erweitert, deren Anbieter möglicherweise eigene Implementierungen der Amazon S3-APIs haben.
+
 Zur Aktivierung der S3-Datenspeicherfunktionalität muss ein Feature Pack mit dem S3-Datenspeicher-Connector heruntergeladen und installiert werden. Gehen Sie zum [Adobe-Repository](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) und laden Sie die neueste Version der 1.10.x-Versionen des Feature Packs herunter (z. B. com.adobe.granite.oak.s3connector-1.10.0.zip). Darüber hinaus müssen Sie auch das neueste AEM Service Pack herunterladen und installieren, das auf der Seite [Versionshinweise zu AEM 6.5](/help/release-notes/release-notes.md) aufgeführt ist.
 
 >[!NOTE]
@@ -230,8 +234,8 @@ Sie können die Konfigurationsdatei mit den unten beschriebenen Optionen verwend
 
 | Schlüssel | Beschreibung | Standard | Erforderlich |
 | --- | --- | --- | --- |
-| accessKey | Greifen Sie auf die Schlüssel-ID für den IAM-Benutzer zu, der Zugriff auf den Bucket hat. |  | Ja, wenn keine IAM-Rollen verwendet werden. |
-| secretKey | Geheimer Zugriffsschlüssel für den IAM-Benutzer mit Zugriff auf den Bucket. |  | Ja, wenn keine IAM-Rollen verwendet werden. |
+| accessKey | Greifen Sie auf die Schlüssel-ID für den IAM-Benutzer zu, der Zugriff auf den Bucket hat. | | Ja, wenn keine IAM-Rollen verwendet werden. |
+| secretKey | Geheimer Zugriffsschlüssel für den IAM-Benutzer mit Zugriff auf den Bucket. | | Ja, wenn keine IAM-Rollen verwendet werden. |
 | cacheSize | Die Größe (in Byte) des lokalen Caches. | 64 GB | Anzahl  |
 | connectionTimeout | Legen Sie die Wartezeit (in Millisekunden) bis zum Timeout beim erstmaligen Herstellen einer Verbindung fest. | 10000 | Anzahl  |
 | maxCachedBinarySize | Binärdateien mit einer Größe kleiner oder gleich diesem Wert (in Bytes) werden im Speichercache gespeichert. | 17408 (17 KB) | Anzahl  |
@@ -239,10 +243,10 @@ Sie können die Konfigurationsdatei mit den unten beschriebenen Optionen verwend
 | maxErrorRetry | Legen Sie die maximale Anzahl von Wiederholungsversuchen für fehlgeschlagene (wiederholbare) Anfragen fest. | 3 | Anzahl  |
 | minRecordLength | Die Mindestgröße eines Objekts (in Bytes), das im Datenspeicher gespeichert werden soll. | 16384 | Anzahl  |
 | path | Der lokale Pfad des AEM-Datenspeichers. | `crx-quickstart/repository/datastore` | Anzahl  |
-| proxyHost | Legen Sie den optionalen Proxy-Host fest, über den der Client eine Verbindung herstellen soll. |  | Anzahl  |
-| proxyPort | Legen Sie den optionalen Proxy-Port fest, über den der Client eine Verbindung herstellen soll. |  | Anzahl  |
-| s3Bucket | Name des S3-Buckets. |  | Ja |
-| s3EndPoint | Endpunkt der S3 REST-API. |  | Anzahl  |
+| proxyHost | Legen Sie den optionalen Proxy-Host fest, über den der Client eine Verbindung herstellen soll. | | Anzahl  |
+| proxyPort | Legen Sie den optionalen Proxy-Port fest, über den der Client eine Verbindung herstellen soll. | | Anzahl  |
+| s3Bucket | Name des S3-Buckets. | | Ja |
+| s3EndPoint | Endpunkt der S3 REST-API. | | Anzahl  |
 | s3Region | Region, in der sich der Bucket befindet. Weitere Informationen finden Sie auf dieser [Seite](https://docs.aws.amazon.com/general/latest/gr/s3.html). | Region, in der die AWS-Instanz ausgeführt wird. | Anzahl  |
 | socketTimeout | Legen Sie die Wartezeit (in Millisekunden) für Daten fest, die über eine eingerichtete, offene Verbindung übertragen werden sollen, bevor die Verbindung unterbrochen und geschlossen wird. | 50000 | Anzahl  |
 | stagingPurgeInterval | Das Intervall (in Sekunden) zum endgültigen Löschen fertiggestellter Uploads aus dem Staging-Cache. | 300 | Anzahl  |
@@ -391,7 +395,8 @@ Die folgenden Schritte sind erforderlich, um nicht binäre Replikationen mit S3 
    >
    >    * Setzen Sie für die Oak-Versionen **1.2.x** das oak-run-Tool der Version **1.2.12 oder höher** ein.
    >    * Für **neuere** Oak-Versionen verwenden Sie die oak-run-Version, die dem Oak-Core der AEM-Installation entspricht.
-
+   >
+   >
 
 1. Validieren Sie abschließend die Konfiguration. Suchen Sie zur Validierung nach einer eindeutigen Datei, die dem Datenspeicher von jedem Repository hinzugefügt wird, das sie freigibt. Das Format der Dateien ist `repository-[UUID]`, wobei die UUID für eine eindeutige Kennung jedes Repositorys steht.
 
@@ -500,7 +505,6 @@ Sie können die automatische Datenspeicherbereinigung wie folgt ausführen:
 >2. Fügen Sie den `blobTrackSnapshotIntervalInSecs=L"0"`-Parameter in der Datei `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` hinzu. Für diesen Parameter ist Oak 1.12.0, 1.10.2 oder höher erforderlich.
 >3. Starten Sie die AEM-Instanz neu.
 
-
 In neueren AEM-Versionen kann die automatische Datenspeicherbereinigung auch in einem Datenspeicher durchgeführt werden, der von mehreren Repositorys genutzt wird. Führen Sie die folgenden Schritte aus, um eine automatische Datenspeicherbereinigung in einem freigegebenen Datenspeicher durchführen zu können:
 
 1. Stellen Sie sicher, dass etwaige für die automatische Datenspeicherbereinigung konfigurierten Wartungsaufgaben auf allen Repository-Instanzen, die denselben Datenspeicher nutzen, deaktiviert sind.
@@ -513,4 +517,5 @@ In neueren AEM-Versionen kann die automatische Datenspeicherbereinigung auch in 
    1. Wechseln Sie zur JMX-Konsole und wählen Sie das MBean „Repository Manager“ aus.
    1. Klicken Sie auf den Link **Click startDataStoreGC(boolean markOnly)**.
    1. Geben Sie im folgenden Dialogfeld für den Parameter `false` erneut den Wert `markOnly` ein.
+
    Hierdurch werden alle in der zuvor verwendeten Markierungsphase gefundenen Dateien ausgeblendet, und die restlichen nicht verwendeten Dateien werden aus dem Datenspeicher gelöscht.
