@@ -1,13 +1,13 @@
 ---
 title: Durchführen einer ersetzenden Aktualisierung
-description: Erfahren Sie, wie Sie ein Upgrade durchführen.
+description: Erfahren Sie, wie Sie eine ersetzende Aktualisierung durchführen.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
-workflow-type: ht
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
 source-wordcount: '1244'
-ht-degree: 100%
+ht-degree: 54%
 
 ---
 
@@ -15,19 +15,19 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Auf dieser Seite wird das Aktualisierungsverfahren für AEM 6.5 beschrieben. Wenn Ihre Installation auf einem Anwendungsserver bereitgestellt wird, lesen Sie [Upgrade-Schritte für Anwendungsserverinstallationen](/help/sites-deploying/app-server-upgrade.md).
+>Auf dieser Seite wird das Aktualisierungsverfahren für AEM 6.5 beschrieben. Wenn Sie eine Installation haben, die auf einem Anwendungsserver bereitgestellt wird, lesen Sie [Aktualisierungsschritte für Anwendungsserverinstallationen](/help/sites-deploying/app-server-upgrade.md).
 
-## Vorbereitung des Upgrades {#pre-upgrade-steps}
+## Schritte vor der Aktualisierung {#pre-upgrade-steps}
 
-Vor der Durchführung eines Upgrades müssen einige Schritte ausgeführt werden. Weitere Informationen erhalten Sie unter [Aktualisieren von Codes und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) sowie [Wartungsmaßnahmen vor dem Upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md). Achten Sie außerdem darauf, dass Ihr System die Anforderungen für die aktuelle Version von AEM erfüllt. Erfahren Sie, wie Sie mit dem Musterdetektor die Komplexität Ihres Upgrades abschätzen können. Weitere Informationen finden Sie auch im Abschnitt „Aktualisierungsumfang und -anforderungen“ unter [Planung der Aktualisierung](/help/sites-deploying/upgrade-planning.md).
+Vor der Durchführung des Upgrades müssen einige Schritte ausgeführt werden. Siehe [Aktualisieren von Code und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md) und [Wartungsaufgaben vor einer Aktualisierung](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) für weitere Informationen. Stellen Sie außerdem sicher, dass Ihr System die Anforderungen für die neue Version von AEM erfüllt. Erfahren Sie, wie Sie mit der Mustererkennung die Komplexität Ihrer Aktualisierung abschätzen können, und lesen Sie auch den Abschnitt &quot;Aktualisierungsumfang und -anforderungen&quot;unter [Planung der Aktualisierung](/help/sites-deploying/upgrade-planning.md) für weitere Informationen.
 
 <!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
-## Voraussetzungen für die Migration {#migration-prerequisites}
+## Migrationsvoraussetzungen {#migration-prerequisites}
 
-* **Mindestanforderung an die Java-Version:** Das Migrationstool funktioniert nur mit Java-Version 7 und höher. Beachten Sie, dass für AEM 6.3 und höher die einzigen unterstützten Versionen JRE 8 von Oracle und JRE 7 und 8 von IBM sind.
+* **Erforderliche Java-Mindestversion:** Das Migrationstool funktioniert nur mit Java-Versionen 7 und höher. Beachten Sie, dass für AEM 6.3 und höher die einzigen unterstützten Versionen JRE 8 von Oracle und JRE 7 und 8 von IBM sind.
 
-* **Aktualisierte Instanz:** Wenn Sie eine Version aktualisieren, die **älter als 5.6 ist**, überprüfen Sie, ob Sie gemäß dem in der Upgradedokumentation für Version 6.0 beschriebenen Verfahren ein Upgrade auf AEM 6.0 durchgeführt haben.
+* **Aktualisierte Instanz:** Wenn Sie ein Upgrade von einer Version durchführen **älter als 5.6** müssen Sie sicherstellen, dass Sie eine ersetzende Aktualisierung auf AEM 6.0 durchgeführt haben, indem Sie das in der Aktualisierungsdokumentation für 6.0 beschriebene Verfahren befolgen.
 
 ## Vorbereitung der „AEM Quickstart“-JAR-Datei {#prep-quickstart-file}
 
@@ -43,7 +43,7 @@ Vor der Durchführung eines Upgrades müssen einige Schritte ausgeführt werden.
 
 ## Migration des Content-Repositorys {#content-repository-migration}
 
-Diese Migration ist nicht erforderlich, wenn Sie eine Aktualisierung von AEM 6.3 durchführen. Für Versionen vor 6.3 bietet Adobe ein Tool, mit dem Sie das Repository in die neue Version von Oak Segment Tar von AEM 6.3 migrieren können. Es befindet sich im Schnellstartpaket und muss für alle Upgrades eingesetzt werden, die TarMK verwenden sollen. Upgrades für Umgebungen, die MongoMK verwenden, erfordern keine Repository-Migration. Weitere Informationen zu den Vorteilen des neuen Segment-Tar-Formats finden Sie unter [FAQ zur Migration zu Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
+Diese Migration ist nicht erforderlich, wenn Sie ein Upgrade von AEM 6.3 durchführen. Für Versionen, die älter als 6.3 sind, bietet Adobe ein Tool, mit dem das Repository zur neuen Version des Oak Segment Tar in AEM 6.3 migriert werden kann. Sie wird als Teil des Schnellstartpakets bereitgestellt und ist für alle Upgrades, die TarMK verwenden, obligatorisch. Upgrades für Umgebungen, die MongoMK verwenden, erfordern keine Repository-Migration. Weitere Informationen zu den Vorteilen des neuen Segment-TAR-Formats finden Sie unter [Häufig gestellte Fragen zur Migration zu Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
 Die tatsächliche Migration wird mithilfe der standardmäßigen quickstart-JAR-Datei für AEM durchgeführt, und zwar mit der neuen Option `-x crx2oak`, mit der das crx2oak-Tool ausgeführt wird, um die Aktualisierung einfacher und zuverlässiger zu machen.
 
@@ -53,7 +53,6 @@ Die tatsächliche Migration wird mithilfe der standardmäßigen quickstart-JAR-D
 >
 >* `--promote-runmode nosamplecontent`
 >
-
 
 Um den Befehl zu ermitteln, den Sie ausführen sollten, verwenden Sie den folgenden Befehl:
 
@@ -75,7 +74,7 @@ Dabei werden `<<YOUR_PROFILE>>` und `<<ADDITIONAL_FLAGS>>` durch das Profil und 
    <td>crx2 oder TarMK mit <code>FileDataStore</code></td>
    <td>TarMK</td>
    <td>segment-fds</td>
-   <td>Siehe Abschnitt zur Fehlerbehebung unten</td>
+   <td>Siehe Fehlerbehebung unten</td>
   </tr>
   <tr>
    <td>crx2</td>
@@ -87,7 +86,7 @@ Dabei werden `<<YOUR_PROFILE>>` und `<<ADDITIONAL_FLAGS>>` durch das Profil und 
    <td>TarMK oder crx2 mit <code>S3DataStore</code></td>
    <td>TarMK</td>
    <td>segment-custom-ds</td>
-   <td>Siehe Abschnitt zur Fehlerbehebung unten</td>
+   <td>Siehe Fehlerbehebung unten</td>
   </tr>
   <tr>
    <td>TarMK ohne Datenspeicher</td>
@@ -120,19 +119,19 @@ Weitere Informationen über die Verwendung des crx2oak-Tools finden Sie unter �
 
 Wenn die Migration erfolgreich abgeschlossen wurde, wird das Tool mit einem Exit Code von null beendet. Beachten Sie zusätzlich etwaige WARN- und ERROR-Meldungen in der Datei `upgrade.log` im AEM-Installationsverzeichnis unter `crx-quickstart/logs`. Diese Meldungen führen Fehler auf, die nicht schwerwiegend sind und bei der Migration auftraten.
 
-Prüfen Sie die Konfigurationsdateien unter dem Ordner `crx-quickstart/install`. Wenn eine Migration erforderlich war, werden diese auf das Ziel-Repository aktualisiert.
+Prüfen Sie die Konfigurationsdateien unter dem Ordner `crx-quickstart/install`. Wenn eine Migration erforderlich war, werden diese entsprechend dem Ziel-Repository aktualisiert.
 
-**Ein Hinweis zu Datenspeichern:** 
+**Hinweis zu Datenspeichern:**
 
-`FileDataStore` ist der neue Standard für Installationen von AEM 6.3 und es ist kein externer Datenspeicher erforderlich. Während ein externer Datenspeicher für Produktionsbereitstellungen empfohlen wird, ist er bei Upgrades nicht Voraussetzung. Aufgrund der gegebenen Komplexität beim Upgrade von AEM empfehlen wir, das Upgrade ohne Datenspeicher-Migration durchzuführen. Falls erwünscht, kann danach eine separate Datenspeicher-Migration ausgeführt werden.
+`FileDataStore` ist der neue Standard für Installationen von AEM 6.3 und es ist kein externer Datenspeicher erforderlich. Die Verwendung eines externen Datenspeichers wird als Best Practice für Produktionsimplementierungen empfohlen. Eine Aktualisierung ist jedoch nicht erforderlich. Aufgrund der Komplexität, die bereits bei der Aktualisierung von AEM vorhanden ist, empfiehlt Adobe, die Aktualisierung durchzuführen, ohne eine Datenspeichermigration vorzunehmen. Bei Bedarf kann anschließend eine Datenspeichermigration als separater Vorgang ausgeführt werden.
 
-## Problembehebung bei der Migration {#troubleshooting-migration-issues}
+## Fehlerbehebung bei Migrationsproblemen {#troubleshooting-migration-issues}
 
-Überspringen Sie diesen Abschnitt, wenn Sie von 6.3 aktualisieren. Die bereitgestellten crx2oak-Profile erfüllen die Anforderungen der meisten Kunden. In einigen Fällen sind jedoch zusätzliche Parameter erforderlich. Wenn während der Migration ein Fehler auftritt, sind für manche Aspekte Ihrer Umgebung möglicherweise zusätzliche Konfigurationsoptionen nötig. In diesem Fall tritt wahrscheinlich folgender Fehler auf:
+Bitte überspringen Sie diesen Abschnitt, wenn Sie ein Upgrade von 6.3 durchführen. Während die bereitgestellten crx2oak-Profile den Anforderungen der meisten Kunden entsprechen sollten, sind manchmal zusätzliche Parameter erforderlich. Wenn während der Migration ein Fehler auftritt, sind für manche Aspekte Ihrer Umgebung möglicherweise zusätzliche Konfigurationsoptionen nötig. In diesem Fall tritt wahrscheinlich der folgende Fehler auf:
 
-**Checkpoints werden nicht kopiert, da kein externer Datenspeicher spezifiziert wurde. Dadurch wird das gesamte Repository beim ersten Start neu indiziert. Verwenden Sie „Checkpoints überspringen“, um die Migration zu erzwingen, oder lesen Sie https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration für weitere Informationen.** 
+**Checkpoints werden nicht kopiert, da kein externer Datenspeicher angegeben wurde. Dadurch wird das gesamte Repository beim ersten Start neu indiziert. Verwenden Sie —skip-checkpoints , um die Migration zu erzwingen, oder finden Sie weitere Informationen unter https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration .**
 
-Während des Migrationsprozesses muss auf Binärdateien im Datenspeicher zugegriffen werden, was misslingt. Um Ihre Datenspeicher-Konfiguration zu spezifizieren, fügen Sie die folgenden Flags in den Abschnitt `<<ADDITIONAL_FLAGS>>` Ihres Migrationsbefehls ein:
+Aus irgendeinem Grund benötigt der Migrationsprozess Zugriff auf Binärdateien im Datenspeicher und kann ihn nicht finden. Um Ihre Datenspeicher-Konfiguration zu spezifizieren, fügen Sie die folgenden Flags in den Abschnitt `<<ADDITIONAL_FLAGS>>` Ihres Migrationsbefehls ein:
 
 **Für S3-Datenspeicher:**
 
@@ -150,9 +149,9 @@ Dabei entspricht `/path/to/SharedS3DataStore.config` dem Pfad zur Konfigurations
 
 Dabei entspricht `/path/to/datastore` dem Pfad zu Ihrem Datei-Datenspeicher.
 
-## Durchführen der Aktualisierung {#performing-the-upgrade}
+## Durchführen des Upgrades {#performing-the-upgrade}
 
-**Wenn S3 verwendet wird:**
+**Bei Verwendung von S3:**
 
 1. Entfernen Sie etwaige JARs unter `crx-quickstart/install`, die mit einer früheren Version des S3 Connectors verknüpft sind.
 
@@ -162,13 +161,13 @@ Dabei entspricht `/path/to/datastore` dem Pfad zu Ihrem Datei-Datenspeicher.
 
 ### Bestimmen des korrekten Befehls zum Starten des Upgrades {#determining-the-correct-upgrade-start-command}
 
-Um das Upgrade durchzuführen, muss AEM mithilfe der JAR-Datei gestartet werden, um die Instanz zu öffnen. Lesen Sie für die Aktualisierung auf 6.5 auch die Informationen zu den Optionen für die Neustrukturierung und Migration des Inhalts unter [Lazy-Content-Migration](/help/sites-deploying/lazy-content-migration.md), die Sie mit dem Upgrade-Befehl auswählen können.
+Um das Upgrade auszuführen, ist es wichtig, mit der Verwendung der JAR-Datei zu beginnen, AEM die Instanz aufzurufen. Lesen Sie für die Aktualisierung auf 6.5 auch die Informationen zu den Optionen für die Neustrukturierung und Migration des Inhalts unter [Lazy-Content-Migration](/help/sites-deploying/lazy-content-migration.md), die Sie mit dem Upgrade-Befehl auswählen können.
 
 >[!IMPORTANT]
 >
 >Wenn Sie Oracle Java 11 ausführen (oder generell Java-Versionen aktueller als 8), werden zusätzliche Parameter zu Ihrer Befehlszeile hinzugefügt, sobald AEM gestartet wird. Weitere Informationen finden Sie unter [Überlegungen zu Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Beachten Sie, dass beim Starten von AEM mit dem Start-Skript das Upgrade nicht gestartet wird. Die meisten Kunden starten AEM mithilfe des Start-Skripts und haben dieses Start-Skript so angepasst, dass Schalter für Umgebungskonfigurationen wie Speichereinstellungen, Sicherheitszertifikate usw. eingeschlossen sind. Aus diesem Grund empfehlen wir, dieser Anleitung zu folgen, um den korrekten Upgrade-Befehl zu bestimmen:
+Beachten Sie, dass das Starten von AEM ab dem Startskript die Aktualisierung nicht startet. Die meisten Kunden beginnen AEM mit der Verwendung des Startskripts und haben dieses Startskript so angepasst, dass es Switches für Umgebungskonfigurationen wie Speichereinstellungen, Sicherheitszertifikate usw. enthält. Daher empfiehlt Adobe, dieses Verfahren zu befolgen, um den richtigen Aktualisierungsbefehl zu ermitteln:
 
 1. Führen Sie in einer aktiven AEM-Instanz Folgendes in der Befehlszeile aus: 
 
@@ -188,12 +187,12 @@ Beachten Sie, dass beim Starten von AEM mit dem Start-Skript das Upgrade nicht g
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar cq-quickstart-6.5.0.jar -c crx-quickstart -p 4502 -Dsling.properties=conf/sling.properties
    ```
 
-   Dadurch wird sichergestellt, dass alle nötigen Speichereinstellungen, benutzerdefinierten Ausführungsmodi und andere Umgebungsparameter auf das Upgrade angewendet werden. Nach Abschluss des Upgrades kann die Instanz in Zukunft mit dem Start-Skript gestartet werden.
+   Dadurch wird sichergestellt, dass alle richtigen Speichereinstellungen, benutzerdefinierten Ausführungsmodi und anderen Umgebungsparametern für die Aktualisierung angewendet werden. Nach Abschluss des Upgrades kann die Instanz bei zukünftigen Starts vom Startskript gestartet werden.
 
-## Bereitstellen der aktualisierten Codebasis {#deploy-upgraded-codebase}
+## Aktualisierte Codebase bereitstellen {#deploy-upgraded-codebase}
 
-Nachdem der Upgrade-Prozess abgeschlossen ist, sollte die aktualisierte Codebasis bereitgestellt werden. Informationen zur Aktualisierung der Code-Basis, sodass sie in der Zielversion von AEM funktioniert, finden Sie auf der Seite [Aktualisieren von Codes und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md).
+Sobald die ersetzende Aktualisierung abgeschlossen ist, sollte die aktualisierte Codebasis bereitgestellt werden. Informationen zur Aktualisierung der Code-Basis, sodass sie in der Zielversion von AEM funktioniert, finden Sie auf der Seite [Aktualisieren von Codes und Anpassungen](/help/sites-deploying/upgrading-code-and-customizations.md).
 
-## Überprüfungen und Fehlerbehebungen nach dem Upgrade {#perform-post-upgrade-check-troubleshooting}
+## Prüfungen und Fehlerbehebung nach der Aktualisierung durchführen {#perform-post-upgrade-check-troubleshooting}
 
-Weitere Informationen finden Sie unter [Überprüfungen und Fehlerbehebungen nach dem Upgrade](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).
+Siehe [Prüfungen und Fehlerbehebung nach einem Upgrade](/help/sites-deploying/post-upgrade-checks-and-troubleshooting.md).

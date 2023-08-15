@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '2534'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '2531'
+ht-degree: 98%
 
 ---
 
@@ -113,6 +113,7 @@ Legt die Höhe und Breite des Bildes fest.
 >Sie müssen im Feld **ALT-Text** der Registerkarte **Erweitert** Informationen eingeben, da das Bild sonst nicht gespeichert werden kann und die folgende Fehlermeldung ausgegeben wird:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Bild (Kampagne)“ dargestellt wird.
 
@@ -133,8 +134,7 @@ Die Beschriftung des Links. Dies ist der Text, der den Benutzern angezeigt wird.
 Mit dieser Option werden weitere Informationen zur Verwendung des Links hinzugefügt.
 
 * **LinkType**
-Wählen Sie in der Dropdown-Liste zwischen 
-**Benutzerdefinierte URL** und **Adaptives Dokument**. Dieses Feld ist obligatorisch. Wenn Sie „Benutzerdefinierte URL“ auswählen, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
+Wählen Sie in der Dropdown-Liste zwischen **Benutzerdefinierte URL** und **Adaptives Dokument**. Dieses Feld ist obligatorisch. Wenn Sie „Benutzerdefinierte URL“ auswählen, können Sie die URL des Links angeben. Entscheiden Sie sich für ein adaptives Dokument, können Sie den Dokumentenpfad festlegen.
 
 * **Zusätzlicher URL-Parameter**
 Fügen Sie weitere URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen“, um mehrere Elemente hinzuzufügen.
@@ -144,6 +144,7 @@ Fügen Sie weitere URL-Parameter hinzu. Klicken Sie auf „Element hinzufügen�
 >Sie müssen im Feld **Verknüpfungstyp** auf der Registerkarte **URL-Info** Daten eingeben, da die Komponente sonst nicht gespeichert werden kann und folgende Fehlermeldung ausgegeben wird:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Link (Kampagne)“ dargestellt wird.
 
@@ -171,8 +172,7 @@ Geben Sie einen Text ein. Verwenden Sie die Symbolleiste, um die Formatierung zu
 * **Bild**
 Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um zu einem Bild zu navigieren. Schneiden Sie es gegebenenfalls zu oder drehen Sie es.
 
-* **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
-Sie können Folgendes festlegen:
+* **Bildeigenschaften** (**Erweiterte Bildeigenschaften**) Hier können Sie Folgendes angeben:
 
    * **Titel**
 Der Titel des Blocks, der angezeigt wird, wenn Sie mit der Maus darauf zeigen.
@@ -194,6 +194,7 @@ Legt die Höhe und Breite des Bildes fest.
 >Das Feld **ALT-Text** auf der Registerkarte **Erweitert** muss ausgefüllt werden, da die Komponente anderenfalls nicht gespeichert werden kann und folgende Fehlermeldung ausgegeben wird:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 Im folgenden Beispiel sehen Sie, wie die Komponente „Text und Bild (Kampagne)“ dargestellt wird.
 
@@ -203,7 +204,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Text und Bild (Kampagne)�
 
 Mit der Komponente „Text-und-Personalisierung (Kampagne)“ können Sie über einen WYSIWYG-Editor, dessen Funktionen der [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) bereitstellt, einen Textblock eingeben. Darüber hinaus können Sie mit dieser Komponente die Kontextfelder und Personalisierungsblöcke verwenden, die in Adobe Campaign verfügbar sind. Siehe auch [Einfügen von Personalisierung](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#inserting-personalization).
 
-Über mehrere Symbole können Sie den Text formatieren, darunter Schriftmerkmale, Ausrichtung, Links, Listen und Einzug.
+Mithilfe der Symbole können Sie Ihren Text formatieren, einschließlich Schriftmerkmale, Ausrichtung, Links, Listen und Einzügen.
 
 Fügen Sie Text wie gewohnt im Rich-Text-Editor hinzu. Fügen Sie Personalisierungen hinzu, indem Sie aus dem Dropdown-Menü von Adobe Campaign die gewünschten Optionen auswählen.
 
@@ -364,7 +365,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Fehleranzeige (Campaign)�
 
 ### Ausgeblendeter Abstimmschlüssel (Kampagne) {#hidden-reconciliation-key-campaign}
 
-Mit der Komponente „Ausgeblendeter Abstimmschlüssel (Kampagne)“ können Sie einem Formular ausgeblendete Felder als Teil des Abstimmschlüssels hinzuzufügen.
+Mit der Komponente Ausgeblendeter Abstimmschlüssel (Kampagne) können Sie einem Formular ausgeblendete Felder als Teil des Abstimmschlüssels hinzufügen.
 
 In der Komponente „Ausgeblendeter Abstimmschlüssel (Kampagne)“ können Sie Folgendes konfigurieren:
 

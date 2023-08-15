@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '522'
-ht-degree: 64%
+source-wordcount: '521'
+ht-degree: 61%
 
 ---
 
@@ -51,8 +51,7 @@ Diese Listen können (zusammen mit Konfigurationsinformationen) unter der Option
 * Configuration
 Zeigt die aktuelle Konfiguration (wie für den [Apache Sling-Ressourcen-Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) definiert) an.
 
-* Configuration Test
-Hiermit können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken Sie auf **Resolve** oder **Map**, um festzulegen, wie das System den Eintrag transformiert.
+* Konfigurationstest Hier können Sie eine URL oder einen Ressourcenpfad eingeben. Klicken Sie auf **Resolve** oder **Map**, um festzulegen, wie das System den Eintrag transformiert.
 
 * **Resolver Map Entries**
 Die Liste der Einträge, die von den ResourceResolver.resolve-Methoden für die Zuordnung von URLs zu Ressourcen verwendet wird.
@@ -62,7 +61,7 @@ Die Liste der Einträge, die von den ResourceResolver.map-Methoden für die Zuor
 
 Die beiden Listen zeigen verschiedene Einträge an, einschließlich der von den Anwendungen als Standard definierten. Diese zielen häufig darauf ab, URLs für den Benutzer zu vereinfachen.
 
-Das Listen-Paar enthält eine **Muster**, einen regulären Ausdruck, der mit der Anfrage übereinstimmt, mit einer **Ersatz** die die Umleitung definiert, die durchgesetzt werden soll.
+Die Listen paaren eine **Muster**, einen regulären Ausdruck, der mit der Anfrage übereinstimmt, mit einer **Ersatz** die die Umleitung definiert, die durchgesetzt werden soll.
 
 Beispiel:
 
@@ -124,7 +123,7 @@ Der Knotentyp ist für diese Zuordnungen bestimmt, seine Verwendung ist jedoch n
 
 1. Klicken Sie auf **Alle speichern**.
 
-Dadurch wird eine Anfrage verarbeitet, z. B.:
+Dies verarbeitet eine Anfrage wie:
 `localhost:4503/geometrixx/en/products.html`
 wie wenn:
 `localhost:4503/content/geometrixx/en/products.html`

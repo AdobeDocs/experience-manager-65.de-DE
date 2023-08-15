@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '9117'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '9113'
+ht-degree: 99%
 
 ---
 
@@ -154,7 +154,6 @@ Erstellen Sie einen Ordner mit der Repository Service-API (Java):
    Legen Sie die Beschreibung des Ordners mithilfe der `setDescription`-Methode fest und übergeben Sie die folgenden Parameter:
 
    * Eine `String`, die die Ressourcenkollektion beschreibt. In diesem Beispiel wird `"test Folder"` `.` benutzt
-
 
 1. Den Ordner in das Repository schreiben
 
@@ -479,10 +478,10 @@ Sie können Ressourcen von einem bestimmten Speicherort im Repository abrufen, u
 
 Das Repository verfügt über die folgenden vier Berechtigungstypen:
 
-* **traverse**: ermöglicht es, Ressourcen aufzulisten, genauer, Ressourcenmetadaten zu lesen, jedoch keine Ressourceninhalte
-* **read**: ermöglicht das Lesen des Ressourceninhalts
-* **write**: ermöglicht das Schreiben von Ressourceninhalten
-* **Verwalten von Zugriffssteuerungslisten (ACLs)**: ermöglicht die Bearbeitung von ACLs für Ressourcen
+* **traverse**: dient der Auflistung von Ressourcen, d. h. dem Lesen von Metadaten der Ressource, jedoch nicht des Ressourceninhalts
+* **lesen**: dient dem Lesen des Ressourceninhalts.
+* **schreiben**: ermöglicht das Schreiben von Ressourceninhalten
+* **Verwalten von Zugriffssteuerungslisten (ACLs)**: dient der Bearbeitung von ACLs für Ressourcen.
 
 Benutzer können Prozesse nur ausführen, wenn sie über die Berechtigung zum Ausführen des Prozesses verfügen. IDE-Benutzer benötigen Berechtigungen zum Durchlaufen und Lesen, damit mit dem Repository synchronisiert werden kann. ACLs gelten nur zur Entwurfszeit, da die Laufzeit im Systemkontext erfolgt.
 

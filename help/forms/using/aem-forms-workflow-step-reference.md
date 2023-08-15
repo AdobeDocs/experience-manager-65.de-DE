@@ -1,22 +1,18 @@
 ---
 title: Formularzentrierte Workflows in OSGi – Schritt-Referenz
-seo-title: Forms-centric workflow on OSGi - Step Reference
-description: Forms-zentrierte Workflows auf OSGi-Schritte ermöglichen Ihnen das schnelle Erstellen adaptiver formularbasierter Workflows.
-seo-description: Forms-centric workflow on OSGi steps allow you rapidly build adaptive forms based workflows.
-uuid: 6f791c45-0e35-4c55-9106-5340caab94b7
+description: Forms-zentrierter Workflow für OSGi-Schritte ermöglicht Ihnen, schnell auf adaptiven Formularen basierende Workflows zu erstellen.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '7594'
-ht-degree: 83%
+source-wordcount: '7589'
+ht-degree: 82%
 
 ---
 
-# Formularzentrierte Workflows in OSGi - Schritt-Referenz {#forms-centric-workflow-on-osgi-step-reference}
+# Formularzentrierte Workflows in OSGi – Schritt-Referenz {#forms-centric-workflow-on-osgi-step-reference}
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
@@ -27,9 +23,9 @@ Mit Workflow-Modelle können Sie eine Business-Logik in einen automatisierten, s
 
 ## Schritte für den Forms-Workflow {#forms-workflow-steps}
 
-Forms-Workflow-Schritte führen AEM Forms-spezifische Vorgänge in einem AEM Workflow aus. Diese Schritte ermöglichen Ihnen das schnelle Erstellen eines Forms-zentrierten Workflows für adaptive Formulare auf OSGi. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- und Genehmigungs-Workflows sowie interner und firmenübergreifender Geschäftsprozesse verwendet werden. Sie können auch Forms Workflow-Schritte verwenden, um Document Services zu starten, in den Adobe Sign-Signatur-Workflow zu integrieren und andere AEM Forms-Vorgänge auszuführen. Sie benötigen [AEM Forms-Add-on](https://www.adobe.com/go/learn_aemforms_documentation_63_de) , um diese Schritte in einem Workflow zu verwenden.
+Forms-Workflow-Schritte führen AEM Forms-spezifische Vorgänge in einem AEM Workflow aus. Mit diesen Schritten können Sie schnell einen Forms-orientierten Workflow für adaptive Formulare auf OSGi erstellen. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- und Genehmigungs-Workflows sowie interner und firmenübergreifender Geschäftsprozesse verwendet werden. Sie können auch Forms Workflow-Schritte verwenden, um Document Services zu starten, in den Adobe Sign-Signatur-Workflow zu integrieren und andere AEM Forms-Vorgänge durchzuführen. Sie benötigen [AEM Forms-Add-on](https://www.adobe.com/go/learn_aemforms_documentation_63_de) , um diese Schritte in einem Workflow zu verwenden.
 
-Durch Forms-zentrierte Workflow-Schritte werden AEM Forms-spezifische Vorgänge in einem AEM-Workflow ausgeführt. Mit diesen Schritten können Sie schnell einen auf adaptiven Formularen basierenden Forms-zentrierten Workflow auf OSGi erstellen. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- und Genehmigungs-Workflows, interner und Firewall-übergreifender Geschäftsprozesse verwendet werden.
+Durch Forms-zentrierte Workflow-Schritte werden AEM Forms-spezifische Vorgänge in einem AEM-Workflow ausgeführt. Mit diesen Schritten können Sie schnell einen adaptiven Forms-basierten Forms-orientierten Workflow auf OSGi erstellen. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- und Genehmigungs-Workflows, interner und Firewall-übergreifender Geschäftsprozesse verwendet werden.
 
 >[!NOTE]
 >
@@ -92,11 +88,11 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Erstel
 * **Beauftragter > Optionen zuweisen:** Geben Sie die Methode an, mit der die Aufgabe einem Benutzer zugewiesen werden soll. Sie können die Aufgabe dynamisch einem Benutzer oder einer Gruppe zuweisen, indem Sie das Skript „Teilnehmerauswahl“ verwenden oder die Aufgabe einem bestimmten AEM-Benutzer oder einer bestimmten Gruppe zuweisen.
 * **Teilnehmerauswahl:** Die Option ist verfügbar, wenn die **Dynamisch für einen Benutzer oder eine Gruppe** im Feld Optionen zuweisen ausgewählt ist. Sie können ein ECMAScript oder einen Service verwenden, um einen Benutzer oder eine Gruppe dynamisch auszuwählen. Weitere Informationen finden Sie unter [Dynamisches Zuweisen eines Workflows zu Benutzenden](https://helpx.adobe.com/de/experience-manager/kb/HowToAssignAWorkflowDynamicallyToParticipants.html) und [Erstellen eines benutzerdefinierten Schritts „Dynamischer Teilnehmer in Adobe Experience Manager“.](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=de&amp;CID=RedirectAEMCommunityKautuk)
 
-* **Teilnehmer:** Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **Teilnehmerauswahl** ausgewählt ist. In diesem Feld können Sie Benutzer oder Gruppen für die Option „RandomParticipantChooser“ auswählen.
+* **Teilnehmer:** Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.granite.workflow.core.process.RandomParticipantChooser]** im Feld **Teilnehmerauswahl** ausgewählt ist. Im Feld können Sie Benutzer oder Gruppen für die Option RandomParticipantChooser auswählen.
 
-* **Beauftragter**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** im Feld **Teilnehmerauswahl** ausgewählt ist. Mit dem Feld können Sie eine Variable des Datentyps „Zeichenfolge“ auswählen, um den Verantwortlichen zu definieren.
+* **Beauftragter**: Das Feld ist verfügbar, wenn die Option **[!UICONTROL com.adobe.fd.workspace.step.service.VariableParticipantChooser]** im Feld **Teilnehmerauswahl** ausgewählt ist. Im Feld können Sie eine Variable des Datentyps String auswählen, um den Verantwortlichen zu definieren.
 
-* **Argumente:** Das Feld ist verfügbar, wenn ein anderes als das Skript „RandomParticipantChoose“ im Feld „Teilnehmerauswahl“ ausgewählt wurde. In diesem Feld können Sie eine Liste mit durch Kommas getrennten Argumenten für das im Feld „Teilnehmerauswahl“ ausgewählte Skript angeben.
+* **Argumente:** Das Feld ist verfügbar, wenn ein anderes als das Skript „RandomParticipantChoose“ im Feld „Teilnehmerauswahl“ ausgewählt wurde. Im Feld können Sie eine Liste mit kommagetrennten Argumenten für das im Feld Teilnehmerauswahl ausgewählte Skript angeben.
 
 * **Benutzer oder Gruppe:** Die Aufgabe wurde dem ausgewählten Benutzer oder der Gruppe zugewiesen. Die Option ist verfügbar, wenn die Option **Zu einem bestimmten Benutzer bzw. einer bestimmten Gruppe** im Feld **Optionen zuweisen** ausgewählt ist. Das Feld listet alle Benutzer und Gruppen der Workflow-Benutzergruppe auf.\
   Das Dropdownmenü **Benutzer oder Gruppe** führt die Benutzer und Gruppen auf, auf die der angemeldete Benutzer Zugriff hat. Die Anzeige des Benutzernamens hängt davon ab, ob Sie über Zugriffsberechtigungen für den Knoten **users** im CRX-Repository für diesen bestimmten Benutzer verfügen.
@@ -120,7 +116,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Erstel
 * **Zulassen, dass Verantwortlicher Kommentare hinzufügt**: Wählen Sie diese Option, um Kommentare für die Aufgabe zu aktivieren. Ein Verantwortlicher kann die Kommentare innerhalb des AEM-Posteingangs zum Zeitpunkt der Aufgabenübermittlung hinzufügen.
 * **Kommentar in Variable speichern**: Speichern des Kommentars in einer Variablen des Datentyps „String“. Diese Option wird nur angezeigt, wenn Sie das Kontrollkästchen **Zulassen, dass Verantwortlicher Kommentare hinzufügt** aktivieren.
 
-* **Bevollmächtigten erlauben, Anlagen zur Aufgabe hinzuzufügen**: Wählen Sie diese Option aus, um Anlagen für die Aufgabe zu aktivieren. Ein Verantwortlicher kann die Anhänge im AEM-Posteingang zum Zeitpunkt der Aufgabenübermittlung hinzufügen.
+* **Bevollmächtigten erlauben, Anlagen zur Aufgabe hinzuzufügen**: Wählen Sie diese Option, um Anlagen für die Aufgabe zu aktivieren. Ein Verantwortlicher kann die Anhänge im AEM-Posteingang zum Zeitpunkt der Aufgabenübermittlung hinzufügen.
 * **Aufgabenanhänge speichern mit**: Geben Sie den Speicherort des Anhangsordners an. Sie können Ausgabeaufgabenanhänge mit einem Pfad relativ zur Payload oder in einer Variablen des Arrays des Datentyps „Dokument“ speichern. Diese Option wird nur angezeigt, wenn Sie das Kontrollkästchen **Bevollmächtigtem erlauben, Anhänge zur Aufgabe hinzuzufügen** aktivieren und **Adaptives Formular**, **Schreibgeschütztes adaptives Formular** oder **Nicht interaktives PDF-Dokument** aus der Dropdown-Liste **Typ** auf der Registerkarte **Formular/Dokument** auswählen.
 
 >[!NOTE]
@@ -139,9 +135,9 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Erstel
 
 ## Schritt „E-Mail senden“ {#send-email-step}
 
-Verwenden Sie den E-Mail-Schritt, um eine E-Mail zu senden, z. B. eine E-Mail mit einem Datensatzdokument, eine Verknüpfung eines adaptiven Formulars, eine Verknüpfung einer interaktiven Kommunikation oder ein angehängtes PDF-Dokument. Der Schritt „E-Mail senden“ unterstützt [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). HTML-E-Mails sind responsiv und passen sich an den E-Mail-Client und die Bildschirmgröße der Empfängerinnen und Empfänger an. Sie können eine HTML-E-Mail-Vorlage verwenden, um das Erscheinungsbild, das Farbschema und das Verhalten der E-Mail zu definieren.
+Verwenden Sie den E-Mail-Schritt, um eine E-Mail zu senden, beispielsweise eine E-Mail mit einem Datensatzdokument, eine Verknüpfung eines adaptiven Formulars, eine Verknüpfung einer interaktiven Kommunikation oder ein angehängtes PDF-Dokument. Der Schritt „E-Mail senden“ unterstützt [HTML-E-Mail](https://en.wikipedia.org/wiki/HTML_email). HTML-E-Mails sind responsiv und passen sich an den E-Mail-Client und die Bildschirmgröße der Empfängerinnen und Empfänger an. Sie können eine HTML-E-Mail-Vorlage verwenden, um das Erscheinungsbild, das Farbschema und das Verhalten der E-Mail zu definieren.
 
-Beim E-Mail-Schritt wird der Day CQ Mail Service zum Senden von E-Mails verwenden. Stellen Sie vor Verwendung des E-Mail-Schritts sicher, dass die Variable [E-Mail-Dienst](../../forms/using/aem-forms-workflow.md) konfiguriert ist. Der E-Mail-Schritt hat folgende Eigenschaften:
+Beim E-Mail-Schritt wird der Day CQ Mail Service zum Senden von E-Mails verwenden. Stellen Sie vor Verwendung des E-Mail-Schritts sicher, dass die Variable [Email Service](../../forms/using/aem-forms-workflow.md) konfiguriert ist. Der E-Mail-Schritt hat folgende Eigenschaften:
 
 **Titel:** Der Titel des Schritts hilft, den Schritt im Workflow-Editor zu identifizieren.
 
@@ -329,7 +325,7 @@ Konvertiert ein PDF-Dokument mithilfe der bereitgestellten Optionen in das PDF/A
 
 ### Schritt &quot;In PS konvertieren&quot; {#convert-to-ps-step}
 
-Konvertieren von PDF-Dokumenten in PostScript – Beim Konvertieren in PostScript können Sie den Konvertierungsvorgang verwenden, um das Quelldokument anzugeben und festzulegen, ob es in PostScript Level 2 oder 3 konvertiert werden soll. Das PDF-Dokument, das Sie in eine PostScript-Datei konvertieren, muss nicht interaktiv sein.
+Konvertieren von PDF-Dokumenten in PostScript – Beim Konvertieren in PostScript können Sie den Konvertierungsvorgang verwenden, um das Quelldokument anzugeben und festzulegen, ob es in PostScript-Ebene 2 oder 3 konvertiert werden soll. Das PDF-Dokument, das Sie in eine PostScript-Datei konvertieren, muss nicht interaktiv sein.
 
 ### Schritt &quot;PDF erstellen&quot;mit dem angegebenen Typ {#create-pdf-from-specified-type-step}
 
@@ -339,11 +335,11 @@ Generieren Sie ein PDF-Dokument aus einer Eingabedatei. Das Eingabedokument kann
 
 Generiert ein PDF-Dokument aus der bereitgestellten URL-, HTML- und ZIP-Datei.
 
-### Schritt &quot;Daten exportieren&quot; {#export-data-step}
+### Schritt Daten exportieren {#export-data-step}
 
-Exportiert Daten aus einer PDF forms- oder XDP-Datei. Sie müssen den Dateipfad des Eingabedokuments und das Exportdatenformat eingeben. Die Optionen für &quot;Datenformat exportieren&quot;sind &quot;Auto&quot;, &quot;XDP&quot;und &quot;XmlData&quot;.
+Exportiert Daten aus einer PDF forms- oder XDP-Datei. Sie müssen den Dateipfad des Eingabedokuments und das Exportdatenformat eingeben. Die Optionen für &quot;Datenformat exportieren&quot;sind Auto, XDP und XmlData.
 
-### Export PDF zum angegebenen Typschritt {#export-pdf-to-specified-type-step}
+### Schritt &quot;Export PDF zu angegebenem Typ&quot; {#export-pdf-to-specified-type-step}
 
 Konvertiert ein PDF-Dokument in ein ausgewähltes Format.
 
@@ -367,7 +363,7 @@ Führt die DDX-Datei auf der angegebenen Zuordnung von Eingabedokumenten aus und
 >
 >Sie können Variablen verwenden, um die DDX-Datei für Eingabedokumente anzugeben. Speichern Sie die DDX-Datei in einer Variablen des Datentyps „Document“ oder „XML“.
 
-### Optimize PDF {#optimize-pdf-step}
+### Optimize PDF-Schritt {#optimize-pdf-step}
 
 Optimiert PDF-Dateien durch Reduzierung ihrer Größe. Als Ergebnis dieser Konvertierung erhalten Sie PDF-Dateien, die eventuell kleiner sind als die Originalversionen. Bei diesem Vorgang werden auch PDF-Dokumente in die in den Optimierungsparametern angegebene PDF-Version konvertiert.
 
@@ -398,7 +394,7 @@ Verschlüsseln, Signieren und Zertifizieren eines Dokuments. AEM Forms unterstü
 Senden Sie ein Dokument direkt an einen Drucker. Es unterstützt die folgenden Druckerzugriffsmechanismen:
 
 * **Drucker mit direktem Zugriff**: Ein Drucker, der auf demselben Computer installiert ist, wird als Drucker mit direktem Zugriff bezeichnet und der Computer heißt Druckerhost. Dieser Druckertyp kann ein lokaler Drucker sein, der direkt mit dem Computer verbunden ist.
-* **Drucker mit indirektem Zugriff**: Auf den Drucker, der auf einem Druckserver installiert ist, kann von anderen Computern aus zugegriffen werden. Es stehen Technologien wie das Common UNIX® Printing System (CUPS) und das LPD-Protokoll (Line Printer Daemon) zur Verfügung, um eine Verbindung zu einem Netzwerkdrucker herzustellen. Um auf einen Drucker mit indirektem Zugriff zuzugreifen, geben Sie die IP-Adresse oder den Hostnamen des Druckservers an. Mit diesem Mechanismus können Sie ein Dokument an einen LPD-URI senden, wenn das Netzwerk über eine LPD verfügt. Mit dem Mechanismus können Sie das Dokument zu jedem Drucker weiterleiten, der mit dem Netzwerk verbunden ist, auf dem ein LPD ausgeführt wird.
+* **Drucker mit indirektem Zugriff**: Der Zugriff auf den Drucker, der auf einem Druckserver installiert ist, erfolgt über andere Computer. Es stehen Technologien wie das Common UNIX® Printing System (CUPS) und das LPD-Protokoll (Line Printer Daemon) zur Verfügung, um eine Verbindung zu einem Netzwerkdrucker herzustellen. Um auf einen Drucker mit indirektem Zugriff zuzugreifen, geben Sie die IP-Adresse oder den Hostnamen des Druckservers an. Mit diesem Mechanismus können Sie ein Dokument an einen LPD-URI senden, wenn das Netzwerk über eine LPD verfügt. Mit dem Mechanismus können Sie das Dokument zu jedem Drucker weiterleiten, der mit dem Netzwerk verbunden ist, auf dem ein LPD ausgeführt wird.
 
 ### Generieren des Schritts für die gedruckte Ausgabe {#generatePrintedOutput}
 

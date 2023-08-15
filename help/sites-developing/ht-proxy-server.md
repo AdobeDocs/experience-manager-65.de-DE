@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '937'
-ht-degree: 27%
+source-wordcount: '936'
+ht-degree: 26%
 
 ---
 
@@ -28,7 +28,7 @@ Sie können den Proxy-Server verwenden, um alle Interaktionen zwischen Client un
 * SMTP für E-Mail-Nachrichten
 * LDAP für die Benutzerverwaltung
 
-Sie können beispielsweise den Proxyserver zwischen zwei Anwendungen positionieren, die über ein TCP/IP-Netzwerk kommunizieren. z. B. einen Webbrowser und AEM. So können Sie genau überprüfen, was passiert, wenn Sie eine CQ-Seite anfragen.
+Sie können beispielsweise den Proxyserver zwischen zwei Anwendungen positionieren, die über ein TCP/IP-Netzwerk kommunizieren, z. B. einem Webbrowser und AEM. Auf diese Weise können Sie genau überwachen, was passiert, wenn Sie eine CQ-Seite anfordern.
 
 ## Starten des Proxyserver-Tools {#starting-the-proxy-server-tool}
 
@@ -48,7 +48,7 @@ Hierbei handelt es sich um den Port der CRX-Zielinstanz. Der Standardport für e
 
 `<localport>`
 
-Dies ist der Port auf Ihrem lokalen Computer, den Sie verbinden möchten, um über den Proxy auf die CRX-Instanz zuzugreifen.
+Dies ist der Anschluss auf Ihrem lokalen Computer, über den Sie eine Verbindung zum Zugriff auf die CRX-Instanz herstellen möchten.
 
 **Optionen**
 
@@ -96,7 +96,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 Zeigt die Anzahl der Bytes an, die zwischen dem Client ( `C`) und dem Server ( `S`) bei der sechsten Verbindung und bei der durchschnittlichen Geschwindigkeit.
 
-**Beispiel einer Protokollausgabe**
+**Beispiel für eine Protokollausgabe**
 
 Stellen Sie sich als Beispiel eine Seite vor, die bei einer Anfrage den folgenden Code ausgibt:
 
@@ -128,7 +128,7 @@ Angenommen, die AEM-Instanz läuft auf `localhost:4502`, wird der Proxy wie folg
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-Die CQ-/CRX-Instanz kann jetzt über den Proxy unter `localhost:4444` und alle Kommunikation über diesen Port protokolliert wird an `test.log`.
+Die CQ-/CRX-Instanz kann jetzt über den Proxy unter `localhost:4444` und die gesamte Kommunikation über diesen Port protokolliert wird an `test.log`.
 
 Wenn Sie nun die Ausgabe des Proxys sehen, sehen Sie die Interaktion zwischen dem Browser und der AEM Instanz.
 

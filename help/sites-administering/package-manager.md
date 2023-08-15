@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: b48b7631c501cea7e4ef1133a452fb6984e4547f
-workflow-type: ht
-source-wordcount: '3573'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3572'
+ht-degree: 91%
 
 ---
 
@@ -32,7 +32,7 @@ Ein Paket enthält auch Vault-Metadaten, einschließlich der Filterdefinitionen 
 
 >[!NOTE]
 >
->Pakete repräsentieren die aktuelle Version der Inhalte zum Zeitpunkt der Erstellung des Pakets. Sie umfassen keine früheren Versionen der Inhalte, die AEM im Repository speichert.
+>Pakete stellen die aktuelle Version des Inhalts zum Zeitpunkt der Erstellung des Pakets dar. Sie enthalten keine früheren Versionen des Inhalts, die AEM im Repository speichert.
 
 ## Package Manager {#package-manager}
 
@@ -55,7 +55,7 @@ Um Pakete erstellen, ändern, hochladen und installieren zu können, müssen Ben
 
 Sie haben drei Möglichkeiten, auf Package Manager zuzugreifen:
 
-1. Vom AEM Hauptmenü > **Tools** > **Implementierung** > **Pakete**
+1. Vom AEM Hauptmenü > **Tools** > **Bereitstellung** > **Pakete**
 1. Von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) unter Verwendung der oberen Umschaltleiste
 1. Direkt durch Zugreifen auf `http://<host>:<port>/crx/packmgr/`
 
@@ -63,7 +63,7 @@ Sie haben drei Möglichkeiten, auf Package Manager zuzugreifen:
 
 Package Manager ist in vier Hauptfunktionsbereiche unterteilt:
 
-* **Linker Navigationsbereich**: In diesem Bereich können Sie die Liste der Packages filtern und sortieren.
+* **Linke Navigationsleiste** - In diesem Bereich können Sie die Liste der Packages filtern und sortieren.
 * **Paketliste**: Dies ist die Liste der Pakete in Ihrer Instanz, die entsprechend der Auswahl im linken Navigationsbereich gefiltert und sortiert wurden.
 * **Aktivitätsprotokoll**: Dieses Bedienfeld ist zunächst minimiert und wird erweitert, um die Aktivität von Package Manager detailliert zu beschreiben, z. B. wenn ein Paket aufgebaut oder installiert wird. Unter der Registerkarte „Aktivitätsprotokoll“ sind weitere Schaltflächen für Folgendes verfügbar:
    * **Protokoll löschen**
@@ -370,7 +370,7 @@ Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt 
 
 **Fehlerstatus**
 
-Sind die Abhängigkeiten nicht erfüllt, werden die OSGi-Bundles im Paket mit diesen Abhängigkeiten nicht gestartet. Dies führt zu einer fehlerhaften Implementierung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
+Wenn Abhängigkeiten nicht erfüllt sind, starten die OSGi-Bundles im Paket mit diesen Abhängigkeiten nicht. Dies führt zu einer fehlerhaften Bereitstellung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
 
 **Fehlerbehebung**
 
@@ -380,7 +380,7 @@ Um Fehler aufgrund nicht erfüllter OSGi-Bundles zu beheben, muss die Abhängigk
 
 **Prüfumfang**
 
-Diese Validierung ermittelt, ob das zu installierende Paket eine Datei enthält, die bereits in der AEM-Zielinstanz überlagert ist.
+Diese Validierung ermittelt, ob das installierte Paket eine Datei enthält, die bereits in der Ziel-AEM-Instanz überlagert ist.
 
 Beispiel: Bei einer bestehenden Überlagerung unter `/apps/sling/servlet/errorhandler/404.jsp` ändert ein Paket, das `/libs/sling/servlet/errorhandler/404.jsp` enthält, die vorhandene Datei unter `/libs/sling/servlet/errorhandler/404.jsp`.
 
@@ -390,7 +390,7 @@ Solche Überlagerungen werden im Aktivitätsprotokoll von Package Manager beschr
 
 **Fehlerstatus**
 
-Ein Fehlerstatus bedeutet, dass das Paket versucht, eine bereits überlagerte Datei bereitzustellen. Die Änderungen im Paket werden somit durch die Überlagerung überschrieben (und „ausgeblendet“) und nicht umgesetzt.
+Ein Fehlerstatus bedeutet, dass das Paket versucht, eine bereits überlagerte Datei bereitzustellen. Daher werden die Änderungen im Paket durch die Überlagerung überschrieben (und daher &quot;ausgeblendet&quot;) und nicht übernommen.
 
 **Fehlerbehebung**
 
@@ -404,7 +404,7 @@ Zur Behebung dieses Problems muss der Verantwortliche für die Überlagerungsdat
 
 **Prüfumfang**
 
-Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie diese verarbeitet werden (zusammenführen/ersetzen) und ob sie sich auf aktuelle Berechtigungen auswirken.
+Diese Validierung prüft, welche Berechtigungen hinzugefügt werden, wie sie verarbeitet werden (Zusammenführen/Ersetzen) und ob die aktuellen Berechtigungen betroffen sind.
 
 **Reporting**
 
@@ -412,11 +412,11 @@ Die Berechtigungen werden im Aktivitätsprotokoll von Package Manager beschriebe
 
 **Fehlerstatus**
 
-Die Angabe von expliziten Fehlern ist nicht möglich. Die Validierung gibt lediglich an, ob durch Installieren des Pakets neue ACL-Berechtigungen hinzugefügt oder aktuelle beeinträchtigt werden.
+Es können keine expliziten Fehler angegeben werden. Die Validierung gibt lediglich an, ob durch die Installation des Pakets neue ACL-Berechtigungen hinzugefügt oder beeinträchtigt werden.
 
 **Fehlerbehebung**
 
-Anhand der von der Validierung bereitgestellten Informationen können die betroffenen Knoten in CRXDE überprüft und die ACLs nach Bedarf im Paket angepasst werden.
+Mithilfe der von der Validierung bereitgestellten Informationen können die betroffenen Knoten in CRXDE überprüft werden und die ACLs können im Paket nach Bedarf angepasst werden.
 
 >[!CAUTION]
 >
@@ -424,9 +424,9 @@ Anhand der von der Validierung bereitgestellten Informationen können die betrof
 
 #### Durchführen der Validierung {#performing-validation}
 
-Die Validierung von Paketen kann auf zweierlei Weise erfolgen:
+Die Validierung von Paketen kann auf zwei verschiedene Arten erfolgen:
 
-* [Über die Benutzeroberfläche von Package Manager](#via-package-manager)
+* [Über die Package Manager-Benutzeroberfläche](#via-package-manager)
 * [Über HTTP-POST-Anfragen, wie z. B. mit cURL](#via-post-request)
 
 Führen Sie die Validierung stets nach dem Hochladen und vor dem Installieren eines Pakets durch.
@@ -485,19 +485,19 @@ Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt
 
 >[!CAUTION]
 >
->Beim Installieren eines Pakets können vorhandene Inhalte überschrieben oder gelöscht werden. Laden Sie ein Paket nur hoch, wenn Sie sich sicher sind, dass dadurch keine benötigten Inhalte gelöscht oder überschrieben werden.
+>Durch die Installation eines Pakets können vorhandene Inhalte überschrieben oder gelöscht werden. Laden Sie ein Paket nur hoch, wenn Sie sicher sind, dass es keine benötigten Inhalte löscht oder überschreibt.
 
 Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den Inhalt enthält, der überschrieben wird. Dieser Snapshot wird wieder installiert, wenn Sie das Paket deinstallieren.
 
 >[!CAUTION]
 >
 >* Wenn Sie digitale Assets installieren, müssen Sie:
->  als Erstes den WorkflowLauncher deaktivieren.
+>  Deaktivieren Sie zunächst den WorkflowLauncher.
 >  Verwenden Sie die Menüoption „Komponenten“ der OSGi-Konsole zur Deaktivierung der Option
 >  `com.day.cq.workflow.launcher.impl.WorkflowLauncherImpl.`
->* als Nächstes den WorkflowLauncher reaktivieren, wenn die Installation abgeschlossen ist.
+>* Wenn die Installation abgeschlossen ist, reaktivieren Sie den WorkflowLauncher erneut.
 >
->Die Deaktivierung des WorkflowLauncher gewährleistet, dass die Assets nach der Installation nicht (versehentlich) vom Asset-Importer-Framework verändert werden.
+>Durch Deaktivieren des WorkflowLauncher wird sichergestellt, dass das Assets Importer-Framework die Assets bei der Installation nicht (unbeabsichtigt) manipuliert.
 
 1. [Greifen Sie auf Package Manager zu.](#accessing)
 

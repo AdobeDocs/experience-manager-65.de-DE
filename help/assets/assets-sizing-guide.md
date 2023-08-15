@@ -5,38 +5,38 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
-workflow-type: ht
-source-wordcount: '1615'
-ht-degree: 100%
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
+source-wordcount: '1614'
+ht-degree: 56%
 
 ---
 
 # Anleitung zur Dimensionierung in [!DNL Assets] {#assets-sizing-guide}
 
-Beim Dimensionieren der Umgebung für eine [!DNL Adobe Experience Manager Assets]-Implementierung gilt es sicherzustellen, dass hinsichtlich Festplatte, CPU, Arbeitsspeicher, I/O und Netzwerkdurchsatz genügend Ressourcen verfügbar sind. Zur Dimensionierung dieser Ressourcen muss bekannt sein, wie viele Assets in das System geladen werden. Wenn keine bessere Metrik verfügbar ist, können Sie die Größe der vorhandenen Bibliothek durch das Alter der Bibliothek dividieren, um die Rate zu ermitteln, mit der Assets erstellt werden.
+Beim Dimensionieren der Umgebung für eine [!DNL Adobe Experience Manager Assets]-Implementierung gilt es sicherzustellen, dass hinsichtlich Festplatte, CPU, Arbeitsspeicher, I/O und Netzwerkdurchsatz genügend Ressourcen verfügbar sind. Die Größe vieler dieser Ressourcen erfordert ein Verständnis davon, wie viele Assets in das System geladen werden. Wenn keine bessere Metrik verfügbar ist, können Sie die Größe der vorhandenen Bibliothek durch das Alter der Bibliothek dividieren, um die Rate zu ermitteln, mit der Assets erstellt werden.
 
 ## Festplatte {#disk}
 
-### Datenspeicher {#datastore}
+### DataStore {#datastore}
 
-Ein häufiger Fehler bei der Dimensionierung des erforderlichen Festplattenspeichers für eine [!DNL Assets]-Implementierung besteht darin, die Berechnungen auf der Größe der in das System aufzunehmenden Rohbilder zu basieren. Standardmäßig erstellt [!DNL Experience Manager] zum Rendern der Benutzeroberflächenelemente von [!DNL Experience Manager] zusätzlich zum Originalbild drei Ausgabedarstellungen. In vorherigen Implementierungen haben sich diese Wiedergaben als doppelt so groß wie die aufgenommenen Assets herausgestellt. 
+Ein häufiger Fehler bei der Dimensionierung des erforderlichen Festplattenspeichers für eine [!DNL Assets]-Implementierung besteht darin, die Berechnungen auf der Größe der in das System aufzunehmenden Rohbilder zu basieren. Standardmäßig erstellt [!DNL Experience Manager] zum Rendern der Benutzeroberflächenelemente von [!DNL Experience Manager] zusätzlich zum Originalbild drei Ausgabedarstellungen. In früheren Implementierungen wurde festgestellt, dass diese Ausgabedarstellungen die doppelte Größe der aufgenommenen Assets annehmen.
 
-Die meisten Benutzer definieren benutzerdefinierte Wiedergaben neben den standardmäßig verfügbaren Wiedergaben. Zusätzlich zu den Ausgabedarstellungen können Sie mit [!DNL Assets] Unter-Assets aus gängigen Dateitypen wie [!DNL Adobe InDesign] und [!DNL Adobe Illustrator] extrahieren.
+Die meisten Benutzer definieren benutzerdefinierte Ausgabeformate zusätzlich zu den vordefinierten Ausgabeformaten. Zusätzlich zu den Ausgabedarstellungen können Sie mit [!DNL Assets] Unter-Assets aus gängigen Dateitypen wie [!DNL Adobe InDesign] und [!DNL Adobe Illustrator] extrahieren.
 
-Schließlich sorgen Versionierungsfunktionen in [!DNL Experience Manager] dafür, dass Duplikate der Assets im Versionsverlauf gespeichert werden. Sie können die Versionen so konfigurieren, dass Bereinigungen häufig durchgeführt werden. Jedoch entscheiden sich viele Benutzer für eine längere Aufbewahrung der Versionen im System, wodurch zusätzlicher Speicherplatz belegt wird.
+Schließlich sorgen Versionierungsfunktionen in [!DNL Experience Manager] dafür, dass Duplikate der Assets im Versionsverlauf gespeichert werden. Sie können die Versionen so konfigurieren, dass Bereinigungen häufig durchgeführt werden. Viele Benutzer entscheiden sich jedoch dafür, die Versionen lange im System zu behalten, was zusätzlichen Speicherplatz beansprucht.
 
-Angesichts dieser Faktoren benötigen Sie eine Methodik für eine ausreichend genaue Berechnung des Speicherplatzes, um Benutzer-Assets aufbewahren zu können.
+In Anbetracht dieser Faktoren benötigen Sie eine Methode zur Berechnung eines akzeptabel präzisen Speicherplatzes zum Speichern von Benutzer-Assets.
 
-1. Bestimmen Sie die Größe und die Anzahl der Assets, die in das System geladen werden.
-1. Beschaffen Sie sich eine repräsentative Stichprobe der Assets, die in [!DNL Experience Manager] hochgeladen werden sollen. Wenn Sie beispielsweise PSD-, JPG-, AI- und PDF-Dateien in das System laden möchten, benötigen Sie mehrere Beispielbilder für jedes Dateiformat. Außerdem sollten diese Stichproben repräsentativ für die verschiedenen Dateigrößen und die Komplexität der Bilder sein.
-1. Definieren Sie die zu verwendenden Wiedergaben.
+1. Bestimmen Sie die Größe und Anzahl der Assets, die in das System geladen werden.
+1. Beschaffen Sie sich eine repräsentative Stichprobe der Assets, die in [!DNL Experience Manager] hochgeladen werden sollen. Wenn Sie beispielsweise PSD-, JPG-, AI- und PDF-Dateien in das System laden möchten, benötigen Sie mehrere Beispielbilder für jedes Dateiformat. Darüber hinaus sollten diese Muster für die verschiedenen Dateigrößen und Komplexität von Bildern repräsentativ sein.
+1. Definieren Sie die zu verwendenden Ausgabedarstellungen.
 1. Erstellen Sie die Ausgabedarstellungen in [!DNL Experience Manager] unter Verwendung von [!DNL ImageMagick] oder [!DNL Adobe Creative Cloud]. Erstellen Sie neben den von den Benutzern angegebenen Ausgabedarstellungen sofort einsetzbare Standard-Ausgabedarstellungen. Für Benutzende, die Dynamic Media implementieren, können Sie mithilfe der IC-Binärdatei die in Experience Manager zu speichernden PTIFF-Ausgabedarstellungen generieren.
 1. Wenn Sie die Verwendung von Unter-Assets beabsichtigen, generieren Sie diese für die entsprechenden Dateitypen.
-1. Vergleichen Sie die Größe der Ausgabebilder, Ausgabedarstellungen und Unter-Assets mit den Originalbildern. So können Sie den erwarteten Wachstumsfaktor beim Laden des Systems generieren. Wenn Sie z. B. Ausgabedarstellungen und Unter-Assets mit einer kombinierten Größe von 3 GB nach der Verarbeitung von 1 GB an Assets erzeugen, lautet der Ausgabedarstellungs-Wachstumsfaktor 3.
-1. Ermitteln Sie, wie lange die einzelnen Asset-Versionen maximal im System aufbewahrt werden sollen.
-1. Ermitteln Sie, wie oft vorhandene Assets im System geändert werden. Wenn [!DNL Experience Manager] als Collaboration-Hub in kreativen Workflows dient, gibt es viele Änderungen. Wenn nur fertiggestellte Assets in das System hochgeladen werden, ist diese Zahl wesentlich niedriger.
-1. Ermitteln Sie, wie viele Assets jeden Monat in das System geladen werden. Wenn Sie sich nicht sicher sind, bestimmen Sie die Anzahl der aktuell verfügbaren Assets und dividieren Sie diese Zahl durch das Alter des ältesten Assets, um einen ungefähren Wert zu berechnen. 
+1. Vergleichen Sie die Größe der Ausgabebilder, Ausgabedarstellungen und Unter-Assets mit den Originalbildern. Damit können Sie beim Laden des Systems einen erwarteten Wachstumsfaktor generieren. Wenn Sie z. B. Ausgabedarstellungen und Unter-Assets mit einer kombinierten Größe von 3 GB nach der Verarbeitung von 1 GB an Assets erzeugen, lautet der Ausgabedarstellungs-Wachstumsfaktor 3.
+1. Legen Sie die maximale Zeit fest, für die Asset-Versionen im System gepflegt werden sollen.
+1. Bestimmen Sie, wie oft vorhandene Assets im System geändert werden. Wenn [!DNL Experience Manager] als Collaboration-Hub in kreativen Workflows dient, gibt es viele Änderungen. Wenn nur fertige Assets in das System hochgeladen werden, ist diese Zahl viel niedriger.
+1. Bestimmen Sie, wie viele Assets jeden Monat in das System geladen werden. Wenn Sie sich nicht sicher sind, ermitteln Sie die Anzahl der derzeit verfügbaren Assets und teilen Sie die Zahl durch das Alter des ältesten Assets, um eine ungefähre Zahl zu berechnen.
 
 Mithilfe der oben genannten Schritte können Sie Folgendes ermitteln:
 
@@ -56,46 +56,46 @@ Die in das Tool aufgefüllten Beispieldaten zeigen, wie wichtig die Ausführung 
 
 ### Freigegebene Datenspeicher {#shared-datastores}
 
-Für große Datenspeicher können Sie einen freigegebenen Datenspeicher implementieren, und zwar entweder über einen gemeinsam genutzten Dateidatenspeicher auf einem Netzlaufwerk oder über einen Amazon S3-Datenspeicher. In diesem Fall müssen einzelne Instanzen keine Kopie der Binärdateien aufbewahren. Außerdem unterstützt ein freigegebener Datenspeicher Binaryless-Replikationen und reduziert die Bandbreite zum Replizieren von Assets in Veröffentlichungsumgebungen.
+Für große Datenspeicher können Sie einen freigegebenen Datenspeicher implementieren, und zwar entweder über einen gemeinsam genutzten Dateidatenspeicher auf einem Netzlaufwerk oder über einen Amazon S3-Datenspeicher. In diesem Fall müssen einzelne Instanzen keine Kopie der Binärdateien verwalten. Außerdem unterstützt ein freigegebener Datenspeicher Binaryless-Replikationen und reduziert die Bandbreite zum Replizieren von Assets in Veröffentlichungsumgebungen.
 
 #### Anwendungsfälle {#use-cases}
 
-Der Datenspeicher kann gemeinsam von primärer und Standby-Autoreninstanz genutzt werden, um den zeitlichen Aufwand zum Aktualisieren der Standby-Instanz mit Änderungen der primären Instanz zu minimieren. Sie können den Datenspeicher zudem zwischen Autor- und Veröffentlichungsinstanzen freigeben, um den Traffic während der Replikation zu minimieren.
+Der Datenspeicher kann gemeinsam von primärer und Standby-Autoreninstanz genutzt werden, um den zeitlichen Aufwand zum Aktualisieren der Standby-Instanz mit Änderungen der primären Instanz zu minimieren. Sie können den Datenspeicher auch zwischen der Autoren- und der Veröffentlichungsinstanz freigeben, um den Traffic während der Replikation zu minimieren.
 
 #### Nachteile {#drawbacks}
 
-Aufgrund gewisser Fallstricke wird die Freigabe eines Datenspeichers nicht in allen Fällen empfohlen.
+Aufgrund einiger Fallstricke wird die Freigabe eines Datenspeichers nicht in allen Fällen empfohlen.
 
 #### Single Point of Failure {#single-point-of-failure}
 
-Mit einem freigegebenen Datenspeicher entsteht ein Single Point of Failure in einer Infrastruktur. Stellen Sie sich ein Szenario vor, bei dem Ihr System eine Autoreninstanz und zwei Veröffentlichungsinstanzen aufweist, jeweils mit einem eigenen Datenspeicher. Stürzt einer der Datenspeicher ab, können die beiden anderen nach wie vor ausgeführt werden. Wenn der Datenspeicher jedoch gemeinsam genutzt wird, kann der Ausfall einer einzigen Festplatte die gesamte Infrastruktur zum Erliegen bringen. Stellen Sie daher sicher, dass Sie eine Sicherung des freigegebenen Datenspeichers aufbewahren, über die Sie den Datenspeicher schnell wiederherstellen können.
+Ein freigegebener Datenspeicher führt einen einzelnen Fehlerpunkt in einer Infrastruktur ein. Stellen Sie sich ein Szenario vor, in dem Ihr System über eine Autoren- und zwei Veröffentlichungsinstanzen mit jeweils einem eigenen Datenspeicher verfügt. Wenn einer von ihnen abstürzt, können die beiden anderen weiterhin ausgeführt werden. Wenn der Datenspeicher jedoch freigegeben ist, kann ein einzelner Datenträgerfehler die gesamte Infrastruktur beeinträchtigen. Stellen Sie daher sicher, dass Sie eine Sicherung des freigegebenen Datenspeichers aufbewahren, aus dem Sie den Datenspeicher schnell wiederherstellen können.
 
-Den AWS S3-Dienst für freigegebene Datenspeicher bereitzustellen, wird vorgezogen, weil hierdurch die Wahrscheinlichkeit eines Ausfalls gegenüber normalen Festplattenarchitekturen deutlich reduziert wird.
+Die Bereitstellung des AWS S3-Diensts für freigegebene Datenspeicher wird bevorzugt, da dadurch die Wahrscheinlichkeit eines Fehlschlagens im Vergleich zu normalen Festplattenarchitekturen erheblich verringert wird.
 
 #### Höhere Komplexität {#increased-complexity}
 
-Freigegebene Datenspeicher erhöhen ebenfalls die Komplexität solcher Vorgänge, etwa der automatischen Speicherbereinigung. Normalerweise kann die automatische Speicherbereinigung für einen Standalone-Datenspeicher mit einem einzigen Klick initiiert werden. Allerdings setzen freigegebene Datenspeicher zusätzlich zu der auf jedem Knoten tatsächlich durchgeführten Bereinigung Mark-Sweep-Vorgänge auf jedem Mitglied voraus, das den Datenspeicher nutzt.
+Freigegebene Datenspeicher erhöhen auch die Komplexität von Vorgängen, wie z. B. der Speicherbereinigung. Normalerweise kann die Speicherbereinigung für einen eigenständigen Datenspeicher mit nur einem Klick initiiert werden. Freigegebene Datenspeicher erfordern jedoch zusätzlich zur Ausführung der tatsächlichen Sammlung auf einem einzelnen Knoten auch die Aktion zum Durchsuchen von Markierungen für jedes Element, das den Datenspeicher verwendet.
 
 Im AWS-Betrieb können, wenn statt eines RAID-Arrays mit EBS-Volumes ein zentraler Speicherort (über Amazon S3) implementiert wird, die Komplexität und die Betriebsrisiken auf dem System deutlich kompensiert werden.
 
 #### Leistungsprobleme {#performance-concerns}
 
-Bei einem freigegebenen Datenspeicher müssen die Binärdateien auf einem Laufwerk gespeichert werden, das an ein Netzwerk angebunden und für alle Instanzen freigegeben ist. Da der Zugriff auf diese Binärdateien über ein Netzwerk erfolgt, wird die Systemleistung beeinträchtigt. Eine schnelle Netzwerkverbindung zu einem schnellen Festplattenarray kann diesen Effekt teilweise auffangen. Dies ist jedoch eine teure Angelegenheit. Im Falle von AWS-Vorgängen liegen alle Festplatten remote vor, sodass eine Netzwerkanbindung erforderlich ist. Auf flüchtigen Volumes gehen Daten beim Starten und Stoppen von Instanzen verloren.
+Bei einem freigegebenen Datenspeicher müssen die Binärdateien auf einem Laufwerk gespeichert werden, das an ein Netzwerk angebunden und für alle Instanzen freigegeben ist. Da der Zugriff auf diese Binärdateien über ein Netzwerk erfolgt, wird die Systemleistung beeinträchtigt. Eine schnelle Netzwerkverbindung zu einem schnellen Festplattenarray kann diesen Effekt teilweise auffangen. Dies ist jedoch eine teure Angelegenheit. Im Falle von AWS-Vorgängen liegen alle Festplatten remote vor, sodass eine Netzwerkanbindung erforderlich ist. Bei temporären Volumes gehen Daten verloren, wenn die Instanz gestartet oder angehalten wird.
 
 #### Latenz {#latency}
 
-Latenz in S3-Implementierungen ist auf die im Hintergrund durchgeführten Schreibthreads zurückzuführen. Bei Sicherungsverfahren muss diese Latenz berücksichtigt werden. Außerdem bleiben Lucene-Indizes möglicherweise unvollständig, wenn eine Sicherung durchgeführt wird. Dies gilt für alle zeitempfindlichen Dateien, die in einen S3-Datenspeicher geschrieben werden und auf die von einer anderen Instanz zugegriffen wird.
+Die Latenz in S3-Implementierungen wird durch die Schreibthreads im Hintergrund eingeführt. Bei Sicherungsverfahren muss diese Latenz berücksichtigt werden. Darüber hinaus können Lucene-Indizes beim Erstellen einer Sicherung unvollständig bleiben. Dies gilt für alle zeitkritischen Dateien, die in den S3-Datenspeicher geschrieben und von einer anderen Instanz aus aufgerufen werden.
 
 ### Knotenspeicher oder Dokumentspeicher {#node-store-document-store}
 
-Es ist schwierig, genaue Dimensionierungszahlen für einen Knotenspeicher oder Dokumentspeicher zu ermitteln, da Ressourcen durch Folgendes verbraucht werden:
+Aufgrund der Ressourcen, die von den folgenden Benutzern benötigt werden, ist es schwierig, präzise Größenangaben für einen NodeStore oder DocumentStore zu erhalten:
 
 * Asset-Metadaten
 * Asset-Versionen
 * Auditprotokolle
 * Archivierte und aktive Workflows
 
-Binärdateien in einem Datenspeicher aufzubewahren bedeutet, dass entsprechender Speicherplatz belegt wird. Die meisten Repositorys sind zwar kleiner als 100 GB, aber es sind auch größere Repositorys mit bis zu 1 TB möglich. Zusätzlich zur Offlinekomprimierung muss genügend freier Speicher auf dem Volume vorhanden sein, damit das komprimierte Repository neben der vorab komprimierten Version neu geschrieben werden kann. Eine geeignete Faustregel: Dimensionieren Sie die Festplatte so, dass sie 1,5-mal so groß ist wie die erwartete Repository-Größe.
+Da die Binärdateien im Datenspeicher gespeichert werden, belegt jede Binärdatei etwas Platz. Die meisten Repositorys sind kleiner als 100 GB. aber es sind auch größere Repositorys mit bis zu 1 TB möglich. Um eine Offline-Komprimierung durchzuführen, benötigen Sie ausreichend freien Speicherplatz auf dem Volume, um das komprimierte Repository neben der vorab komprimierten Version neu zu schreiben. Eine geeignete Faustregel: Dimensionieren Sie die Festplatte so, dass sie 1,5-mal so groß ist wie die erwartete Repository-Größe.
 
 Setzen Sie für das Repository SSDs oder Festplatten mit einem IOPS-Level von mehr als 3000 ein. Damit im Zuge der IOPS keine Leistungsengpässe entstehen, überwachen Sie die CPU-I/O-Wartelevel auf frühe Problemanzeichen.
 
@@ -107,20 +107,20 @@ Für [!DNL Assets] gibt es eine Reihe von Anwendungsbeispielen, in denen die Net
 
 ## Beschränkungen {#limitations}
 
-Beim Dimensionieren einer Implementierung ist es wichtig, Systembeschränkungen zu bedenken. Wenn die vorgeschlagene Implementierung über diese Beschränkungen hinausgeht, setzen Sie auf kreative Strategien wie die Partitionierung der Assets über mehrere [!DNL Assets]-Implementierungen hinweg.
+Bei der Größenanpassung einer Implementierung müssen die Systembeschränkungen beachtet werden. Wenn die vorgeschlagene Implementierung über diese Beschränkungen hinausgeht, setzen Sie auf kreative Strategien wie die Partitionierung der Assets über mehrere [!DNL Assets]-Implementierungen hinweg.
 
-Die Dateigröße ist nicht der einzige Faktor, der bei OOM-Problemen (Out of Memory, nicht genügend Arbeitsspeicher) eine Rolle spielt. Es kommt auch auf die Bildabmessungen an. Sie können OOM-Probleme durch eine höhere Heap-Größe beim Starten von [!DNL Experience Manager] vermeiden. 
+Die Dateigröße ist nicht der einzige Faktor, der zu OOM-Problemen (Out of Memory) beiträgt. Es hängt auch von den Abmessungen des Bildes ab. Sie können OOM-Probleme durch eine höhere Heap-Größe beim Starten von [!DNL Experience Manager] vermeiden. 
 
 Außerdem können Sie die Eigenschaft für die Schwellenwertgröße der `com.day.cq.dam.commons.handler.StandardImageHandler`-Komponente in Configuration Manager so bearbeiten, dass eine temporäre Zwischendatei größer als null verwendet wird.
 
 ## Maximale Anzahl von Assets {#maximum-number-of-assets}
 
-Die maximale Anzahl von Dateien in einem Datenspeicher kann sich aufgrund von Dateisystembeschränkungen auf 2,1 Milliarden belaufen. Wahrscheinlich trifft das Repository aufgrund der großen Anzahl von Knoten auf Probleme, lange bevor der Datenspeicher an seine Grenzen stößt.
+Die Anzahl der Dateien, die in einem Datenspeicher vorhanden sein können, kann aufgrund von Dateisystembeschränkungen auf 2,1 Milliarden begrenzt sein. Es ist wahrscheinlich, dass das Repository aufgrund einer großen Anzahl von Knoten Probleme hat, lange bevor das Datenspeicherlimit erreicht wurde.
 
-Wurden die Wiedergaben nicht korrekt generiert, verwenden Sie die Camera Raw-Bibliothek. In diesem Fall sollte jedoch die längste Bildseite nicht größer sein als 65.000 Pixel. Außerdem sollte das Bild höchstens 512 MP (512 x 1024 x 1024 Pixel) enthalten. Die Größe des Assets spielt keine Rolle.
+Wenn die Ausgabedarstellungen falsch generiert werden, verwenden Sie die Camera Raw Bibliothek. In diesem Fall sollte die längste Seite des Bildes jedoch nicht größer als 65.000 Pixel sein. Außerdem sollte das Bild höchstens 512 MP (512 x 1024 x 1024 Pixel) enthalten. Die Größe des Assets spielt keine Rolle.
 
 Die bei einem bestimmten Heap standardmäßig unterstützte TIFF-Dateigröße für [!DNL Experience Manager] lässt sich nur schwer abschätzen, weil die Verarbeitung durch zusätzliche Faktoren wie die Pixelgröße beeinflusst wird. Es ist möglich, dass [!DNL Experience Manager] eine 255 MB große Datei standardmäßig verarbeiten kann, aber eine 18 MB große Datei nicht, weil letztere gegenüber der ersteren eine ungewöhnlich hohe Anzahl an Pixel aufweist.
 
 ## Größe der Assets {#size-of-assets}
 
-Standardmäßig ermöglicht [!DNL Experience Manager] das Hochladen von Assets mit einer Dateigröße von bis zu 2 GB. Zum Hochladen sehr großer Assets in [!DNL Experience Manager], lesen Sie [Konfiguration zum Hochladen sehr großer Assets](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
+Standardmäßig ist [!DNL Experience Manager] ermöglicht das Hochladen von Assets mit einer Dateigröße von bis zu 2 GB. Zum Hochladen sehr großer Assets in [!DNL Experience Manager], lesen Sie [Konfiguration zum Hochladen sehr großer Assets](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).

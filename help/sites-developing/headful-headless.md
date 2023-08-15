@@ -2,10 +2,10 @@
 title: Headful und Headless in AEM
 description: AEM-Projekte können in einem Headful- und in einem Headless-Modell implementiert werden, Sie müssen sich jedoch nicht entscheiden. AEM bietet die Flexibilität, die Vorteile beider Modelle in einem Projekt zu nutzen.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
-workflow-type: ht
-source-wordcount: '1011'
-ht-degree: 100%
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
+source-wordcount: '1014'
+ht-degree: 96%
 
 ---
 
@@ -19,7 +19,7 @@ AEM bietet leistungsstarke Tools zur Verwaltung der Inhaltserstellung und der Be
 
 AEM kann auch zur einfachen Verwaltung von Inhalten verwendet werden, sodass ihre Präsentation und Bereitstellung über eine andere Plattform verwaltet werden können. Dies ist das „Headless“-Modell für das Content-Management, bei dem Autoren und Entwickler von Content auf verschiedenen Plattformen arbeiten, um Erlebnisse für Nutzer bereitzustellen.
 
-Das muss aber keine Entweder-Oder-Entscheidung sein. AEM bietet beispiellose Flexibilität, sodass Sie die Vorteile beider Modelle für Ihr Projekt nutzen können.
+Aber dies muss keine binäre Wahl sein. AEM bietet beispiellose Flexibilität, sodass Sie die Vorteile beider Modelle für Ihr Projekt nutzen können.
 
 ![AEM-Implementierungsmodelle](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
@@ -27,7 +27,7 @@ In einem Headful- oder Full-Stack-Modell wird der Content im AEM-Repository verw
 
 Bei einem Headless-Modell wird der Content im AEM-Repository verwaltet, aber über APIs wie REST und GraphQL an ein anderes System gesendet, um ihn für das Anwendererlebnis wiederzugeben. In diesem Modell wird Content in AEM erstellt, aber die Formatierung, Präsentation und Bereitstellung erfolgen auf einer anderen Plattform.
 
-Single Page Applications (SPAs) sind häufig das Ziel für Content, der von AEM im Headless-Modell bereitgestellt wird. Diese SPAs müssen jedoch nicht vollständig von AEM abgekoppelt sein. AEM ermöglicht es Ihnen, zu entscheiden, in welchem Umfang Ihre SPAs in AEM integriert sind. Nehmen wir ein Beispiel.
+Single Page Applications (SPAs) sind häufig das Ziel für Content, der von AEM im Headless-Modell bereitgestellt wird. Diese SPA müssen jedoch nicht vollständig AEM sein. Mit AEM können Sie entscheiden, in welchem Umfang Ihre SPA in AEM integriert sind. Nehmen wir ein Beispiel.
 
 ## Webshop-Beispiel {#web-shop-example}
 

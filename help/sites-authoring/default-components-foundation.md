@@ -13,10 +13,10 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
-workflow-type: ht
-source-wordcount: '7210'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '7198'
+ht-degree: 97%
 
 ---
 
@@ -120,7 +120,7 @@ Wenn es sich bei dem Bild um ein JPEG-Bild handelt, kann die Anzeigegröße sich
 
 #### Eigenschaften {#properties}
 
-Das Dialogfeld erlaubt das Bearbeiten der Eigenschaften Ihrer Instanz der adaptiven Bildkomponente, von denen viele mit denen der Bild-Komponente übereinstimmen, auf der sie basieren. Die Eigenschaften werden auf zwei Registerkarten angezeigt:
+Über das Dialogfeld können Sie Eigenschaften für Ihre Instanz der Komponente Adaptives Bild bearbeiten, von denen viele mit der Bildkomponente übereinstimmen, auf der sie basiert. Die Eigenschaften sind auf zwei Registerkarten verfügbar:
 
 * **Bild**
 
@@ -160,7 +160,7 @@ Informationen zum Anpassen der Adaptive Image-Komponente finden Sie unter [Grund
 >
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Kernkomponente „Karussell“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html?lang=de) zu verwenden.
 
-Mit der Komponente „Karussell“ können Sie Bilder anzeigen, die einzelnen Seiten zugeordnet sind:
+Mit der Karussellkomponente können Sie Bilder anzeigen, die einzelnen Seiten zugeordnet sind:
 
 * jeweils eines
 * für eine kurze Zeit
@@ -200,7 +200,7 @@ Geben Sie den Pfad entweder manuell oder mithilfe der Auswahl an. Wenn Sie nicht
       * **Optionen für Liste fester Werte**
 
          * **Seiten**
-Wählen Sie eine Liste von Seiten. Fügen Sie mit `+` weitere Einträge hinzu und passen Sie mit den Schaltflächen nach oben und unten die Reihenfolge an.
+Wählen Sie eine Liste mit Seiten aus. Fügen Sie mit `+` weitere Einträge hinzu und passen Sie mit den Schaltflächen nach oben und unten die Reihenfolge an.
 
       * **Optionen für die Suche**
 
@@ -474,7 +474,7 @@ Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in eine
 >
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [ Kernkomponente „Liste“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=de) zu verwenden.
 
-Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste konfigurieren:
+Mit der Komponente Liste können Sie Suchkriterien für die Anzeige einer Liste konfigurieren:
 
 * **Liste**
 
@@ -823,7 +823,7 @@ Weitere Informationen zum Anwenden von Tags finden Sie unter [Verwenden von Tags
 >
 >Die Foundation-Komponente **Text** basiert ebenso wie die Foundation-Komponente **Tabelle** auf dem [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md).
 
-Mit der Textkomponente können Sie einen Textblock unter Verwendung eines WYSIWYG-Editors eingeben, dessen Funktionalität vom [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) bereitgestellt wird. Über mehrere Symbole können Sie den Text formatieren, darunter Schriftmerkmale, Ausrichtung, Links, Listen und Einzug.
+Mit der Textkomponente können Sie einen Textblock unter Verwendung eines WYSIWYG-Editors eingeben, dessen Funktionalität vom [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) bereitgestellt wird. Über eine Auswahl von Symbolen können Sie Ihren Text formatieren, einschließlich Schriftmerkmale, Ausrichtung, Links, Listen und Einzügen.
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -860,7 +860,7 @@ Sie können Folgendes konfigurieren:
 
 * **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
 
-  Dies ermöglicht die Festlegung des Folgenden:
+  Hier können Sie Folgendes angeben:
 
    * **Bild-Asset**
 
@@ -1021,11 +1021,11 @@ Beim Konfigurieren einer jeden Formularkomponente sind die folgenden Registerkar
 
 * **Titel und Text**
 
-  Hier müssen Sie grundlegende Informationen angeben, wie den Titel des Formulars und begleitenden Text. Gegebenenfalls können Sie hier auch andere Schlüsselinformationen definieren, z. B. ob für das Feld mehrere Optionen möglich sind und welche Elemente ausgewählt werden können.
+  Hier müssen Sie grundlegende Informationen angeben, wie den Titel des Formulars und begleitenden Text. Gegebenenfalls können Sie auch andere Schlüsselinformationen definieren, z. B. ob das Feld mehrmals ausgewählt werden kann und welche Elemente ausgewählt werden können.
 
 * **Anfangswerte**
 
-  Ermöglicht Ihnen das Festlegen eines Standardwerts.
+  Hier können Sie einen Standardwert angeben.
 
 * **Begrenzungen**
 
@@ -1371,7 +1371,7 @@ Sie können verschiedene Parameter für diese Komponente konfigurieren, einschli
 >
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Kernkomponente „Formularoptionen“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html?lang=de) zu verwenden.
 
-Mit einem Kontrollkästchen können Sie eine Liste aus einem oder mehreren Kontrollkästchen erstellen, von denen mehrere gleichzeitig aktiviert werden können.
+Mit einem Kontrollkästchen können Sie eine Liste mehrerer Kontrollkästchen erstellen, von denen mehrere gleichzeitig ausgewählt werden können.
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
@@ -1447,7 +1447,7 @@ Ermöglicht das Erstellen eines ausgeblendeten Felds. Diese ausgeblendeten Felde
 >
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Kernkomponente „Formularschaltfläche“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=de) zu verwenden.
 
-Mit einer Bild-Schaltfläche können Sie eine Schaltfläche mit Ihrem eigenem Bild und Text erstellen:
+Mit einer Bild-Schaltfläche können Sie eine Schaltfläche mit Ihrem eigenen Bild und Text erstellen:
 
 ![dc_form_imagebutton](assets/dc_form_imagebutton.png)
 
@@ -1522,7 +1522,7 @@ Sie können den Elementnamen zusammen mit einem Titel und einer Beschreibung ang
 >
 >Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Kernkomponente „Formularschaltfläche“](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html?lang=de) zu verwenden.
 
-Mit dieser Komponente können Sie eine Schaltfläche „Übermitteln“ mit Standardtext erstellen:
+Mit dieser Komponente können Sie eine Senden-Schaltfläche mit dem Standardtext erstellen:
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 
@@ -1534,9 +1534,9 @@ Oder Sie können Ihren eigenen Text eingeben:
 
 >[!CAUTION]
 >
->Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de) zu verwenden.
+>Diese Foundation-Komponente ist veraltet. Adobe empfiehlt, stattdessen die [Kernkomponenten zu verwenden](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de).
 
-Über dieses Feld können Sie Tags auswählen:
+In diesem Feld können Sie Tags auswählen:
 
 ![dc_form_tags_use](assets/dc_form_tags_use.png)
 

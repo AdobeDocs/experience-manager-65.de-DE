@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3502'
-ht-degree: 48%
+source-wordcount: '3501'
+ht-degree: 47%
 
 ---
 
@@ -67,7 +67,7 @@ Das Layout basiert auf dem Boilerplate-Layout für HTML5. Lesen Sie mehr unter [
 
 >[!NOTE]
 >
->Mindestens das Designpaket **must** enthält **index.html** -Datei auf der Stammebene. Wenn die zu importierende Landingpage auch eine mobile Version aufweist, muss die ZIP-Datei eine **mobile.index.html** zusammen mit **index.html** auf der Stammebene.
+>Mindestens das Designpaket **must** enthalten **index.html** -Datei auf der Stammebene. Wenn die zu importierende Landingpage auch eine mobile Version aufweist, muss die ZIP-Datei eine **mobile.index.html** zusammen mit **index.html** auf der Stammebene.
 
 ### Vorbereiten der HTML-Landingpage {#preparing-the-landing-page-html}
 
@@ -97,7 +97,7 @@ Ein Beispielausschnitt der Landingpage-HTML nach dem Hinzufügen des Leinwand-di
 
 Beim Import einer Landingpage haben Sie die Möglichkeit, die Seite unverändert zu importieren. Das bedeutet, dass Sie nach dem Import der Landingpage keines der importierten Elemente in AEM bearbeiten können (Sie können auf der Seite noch weitere AEM hinzufügen).
 
-Bevor Sie die Einstiegsseite importieren, empfiehlt es sich, einige Teile der Einstiegsseite in bearbeitbare AEM-Komponenten zu konvertieren. Dadurch können Sie auch nach dem Import des Einstiegsseitendesigns Teile der Einstiegsseite schnell bearbeiten.
+Bevor Sie die Einstiegsseite importieren, empfiehlt es sich, einige Teile der Einstiegsseite in bearbeitbare AEM-Komponenten zu konvertieren. Auf diese Weise können Sie Teile der Landingpage auch nach dem Import des Landingpage-Designs schnell bearbeiten.
 
 Sie tun dies, indem Sie in der zu importierenden HTML-Datei der entsprechenden Komponente die `data-cq-component` hinzufügen.
 
@@ -152,7 +152,7 @@ Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 <p data-cq-component="text">Text component shorthand</p>
 ```
 
-**Text mit Liste**
+**Text mit einer Liste**
 
 So fügen Sie einen Text mit einer Liste hinzu:
 
@@ -220,7 +220,7 @@ Durch die Integration des oben genannten Markups in das HTML passiert Folgendes:
 <img data-cq-component="image" src="test.png" alt="Image component shorthand"/>
 ```
 
-#### Absolute URL img src wird in der Bildkomponente &quot;Div&quot;nicht unterstützt {#absolute-url-img-src-not-supported-within-image-component-div}
+#### Absolute URL img src wird in der Bildkomponente Div nicht unterstützt {#absolute-url-img-src-not-supported-within-image-component-div}
 
 Wenn ein `<img>`-Tag mit einer absoluten URL-src für die Komponenten-Konverstierung ausgewählt wird, wird ein entsprechender Ausnahmefehler **UnsupportedTagContentException** ausgegeben. So wird das folgende Beispiel nicht unterstützt:
 
@@ -236,7 +236,7 @@ Andernfalls werden jedoch absolute URL-Bilder für img-Tags unterstützt, die ni
 
 Sie können einen Teil der zu importierenden Landingpage als &quot;bearbeitbare Aktionsaufruf-Komponente&quot;markieren. Solche importierten Aktionsaufruf-Komponenten können nach dem Import der Landingpage bearbeitet werden. AEM enthält die folgenden CTA-Komponenten:
 
-* Clickthrough-Link - Ermöglicht den Zusatz eines Textlinks, der den Besucher bei Klick zu einer Ziel-URL führt.
+* Clickthrough-Link - Ermöglicht den Zusatz eines Textlinks, der den Besucher zu einer Ziel-URL führt, wenn er darauf klickt.
 * Grafischer Link - Ermöglicht das Hinzufügen eines Bildes, das den Besucher durch Klicken auf eine Ziel-URL weiterleitet.
 
 #### Click Through-Link {#click-through-link}
@@ -300,7 +300,7 @@ HTML-Tag mit in der importierten Zip enthaltenem grafischen Link: Hier ordnet hr
 >
 >Um einen Link „clickthroughgraphical“ zu erstellen, müssen Sie ein Anchortag und das Bild-Tg in einem div mit dem Attribut `data-cq-component="clickthroughgraphicallink"` einschließen.
 >
->Beispiel: `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
+>Zum Beispiel: `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
 >Andere Möglichkeiten zum Verknüpfen eines Bildes mit einem Anker-Tag mithilfe von CSS werden nicht unterstützt. Beispielsweise funktioniert das folgende Markup nicht:
 >
@@ -382,7 +382,7 @@ Das Einschließen des obigen Markups in die HTML führt zu folgenden Aufgaben:
 
 * Fügt eine AEM parsys-Komponente (foundation/components/parsys) in die Landingpage ein, die nach dem Import des Designpakets erstellt wurde.
 * Startet den Sidekick mit Standardkomponenten. Neue Komponenten können zur Landingpage hinzugefügt werden, indem Komponenten aus dem Sidekick auf die parsys-Komponente gezogen werden.
-* Zwei Titelkomponenten sind ebenfalls Teil des parsys.
+* Zwei title-Komponenten sind ebenfalls Teil des parsys.
 
 ### Ziel {#target}
 
@@ -506,7 +506,7 @@ In der folgenden Tabelle werden die Eigenschaften kurz beschrieben:
   <tr>
    <td> </td>
    <td>Gerätegruppen</td>
-   <td>Die Liste der Gerätegruppen, die unterstützt werden sollen.</td>
+   <td>Die Liste der zu unterstützenden Gerätegruppen.</td>
   </tr>
   <tr>
    <td>Eintrags-Präprozessor für Landingpages</td>
@@ -515,7 +515,7 @@ In der folgenden Tabelle werden die Eigenschaften kurz beschrieben:
   </tr>
   <tr>
    <td> </td>
-   <td>Muster ersetzen</td>
+   <td>Ersetzungsmuster</td>
    <td>Das Muster, das die gefundenen Übereinstimmungen ersetzt. Sie können Gruppenreferenzen für reguläre Ausdrücke wie $1, $2 verwenden. Außerdem unterstützt dieses Muster Suchbegriffe wie {designPath} die beim Import mit dem tatsächlichen Wert aufgelöst werden.</td>
   </tr>
  </tbody>

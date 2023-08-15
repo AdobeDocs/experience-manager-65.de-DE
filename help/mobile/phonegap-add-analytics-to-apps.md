@@ -1,14 +1,14 @@
 ---
 title: Hinzufügen von Adobe Analytics zu einer Mobile App
-description: Auf dieser Seite erfahren Sie, wie Sie Mobile App Analytics in Ihren Adobe Experience Manager-Apps verwenden können, indem Sie sie mit Adobe Mobile Services integrieren.
+description: Auf dieser Seite erfahren Sie, wie Sie Mobile App Analytics in Ihren Adobe Experience Manager-Apps verwenden können, indem Sie sie in Adobe Mobile Services integrieren.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '939'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ ht-degree: 0%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Möchten Sie ansprechende und relevante Erlebnisse für Ihre Mobile App-Benutzer erstellen? Wenn Sie das Adobe Mobile Services SDK nicht zur Überwachung und Messung des Lebenszyklus und der Nutzung von Anwendungen verwenden, auf welcher Grundlage basieren Sie dann Ihre Entscheidungen? Wo sind Ihre treusten Kunden? Wie können Sie garantieren, dass Sie relevant bleiben und Konversionen optimieren?
+Möchten Sie ansprechende und relevante Erlebnisse für Ihre Mobile App-Benutzer erstellen? Wenn Sie das Adobe Mobile Services SDK nicht verwenden, um den Lebenszyklus und die Nutzung von Anwendungen zu überwachen und zu messen, worauf basieren Sie dann auf Ihren Entscheidungen? Wo sind Ihre treusten Kunden? Wie können Sie garantieren, dass Sie relevant bleiben und Konversionen optimieren?
 
 Haben Ihre Benutzer Zugriff auf alle Inhalte? Verlassen sie die App, und wenn ja, wo? Wie oft bleiben sie in der App und wie oft kommen sie zurück, um die App zu verwenden? Welche Änderungen können eingeführt und dann gemessen werden, um die Bindung zu erhöhen? Wie sieht es mit den Absturzraten aus, stürzt Ihre App für Ihre Benutzer ab?
 
-Nutzen Sie die Vorteile von [Mobile App Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) in Ihren Adobe Experience Manager-Apps (AEM) durch Integration in [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
+Nutzen Sie die Vorteile [Mobile App Analytics](https://business.adobe.com/products/analytics/mobile-marketing.html) in Ihren Adobe Experience Manager-Apps (AEM) durch Integration in [Adobe Mobile Services](https://business.adobe.com/products/campaign/mobile-marketing.html).
 
 Instrumentieren Sie Ihre AEM-Apps, um zu verfolgen, darüber zu berichten und zu verstehen, wie Ihre Benutzer mit Ihrer mobilen App und Ihren Inhalten interagieren, und um wichtige Lebenszyklusmetriken wie Starts, Zeit in der App und Absturzhäufigkeit zu messen.
 
@@ -45,7 +45,7 @@ AEM Mobile benötigt ein Adobe Analytics-Konto, um Tracking-Daten in Ihrer App z
 
 Nachdem das Analytics-Konto eingerichtet wurde, erstellen Sie eine Konfiguration zur Inhaltssynchronisierung , um den Inhalt in Ihre Mobile App zu übernehmen.
 
-Weitere Informationen finden Sie unter Konfigurieren des Inhalts der Inhaltssynchronisierung . Die Konfiguration muss die Inhaltssynchronisierung anweisen, um ADBMobileConfig im Verzeichnis /www abzulegen. In der Geometrixx Outdoors App befindet sich beispielsweise die Konfiguration Inhaltssynchronisierung unter: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Es gibt auch eine Konfiguration für die Entwicklung. Sie ist jedoch bei Geometrixx Outdoors identisch mit der Nicht-Entwicklungs-Konfiguration.
+Weitere Informationen finden Sie unter Konfigurieren des Inhalts der Inhaltssynchronisierung . Die Konfiguration muss die Inhaltssynchronisierung anweisen, um ADBMobileConfig im Verzeichnis /www abzulegen. In der Geometrixx Outdoors App befindet sich beispielsweise die Konfiguration Inhaltssynchronisierung unter: */content/phonegap/geometrixx-outdoors/shell/jcr:content/page-app/app-config/ams-ADBMobileConfig*. Es gibt auch eine Entwicklungs-Konfiguration. Sie ist jedoch bei Geometrixx Outdoors identisch mit der Nicht-Entwicklungs-Konfiguration.
 
 Weitere Informationen zum Herunterladen der ADBMobileConfig über das Dashboard für Mobile Apps AEM Apps finden Sie unter Analytics - Mobile Services - Adobe Mobile Services SDK-Konfigurationsdatei.
 
@@ -63,7 +63,7 @@ Für jede Plattform muss ADBMobileConfig an einen bestimmten Speicherort kopiert
 
 Beim Erstellen mit der PhoneGap-CLI kann dies mit Cordova-Build-Hook-Skripten durchgeführt werden. Dies wird in der Geometrixx Outdoors App unter folgender Adresse angezeigt:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js*
 
-Für iOS muss die Datei in die **Ressourcen** Verzeichnis (z. B. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Wenn die App für Android™ vorgesehen ist, lautet der Pfad, in den kopiert werden soll, &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Weitere Informationen zur Verwendung von Hooks während des PhoneGap-CLI-Builds finden Sie unter [Drei Hooks für Ihr Cordova-/PhoneGap-Projekt](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
+Für iOS muss die Datei in die **Ressourcen** Verzeichnis (z. B. &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Wenn die App für Android™ vorgesehen ist, lautet der Pfad zum Kopieren nach &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Weitere Informationen zur Verwendung von Hooks während des PhoneGap-CLI-Builds finden Sie unter [Drei Hooks für Ihr Cordova-/PhoneGap-Projekt](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

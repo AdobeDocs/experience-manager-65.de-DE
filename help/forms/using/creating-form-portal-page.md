@@ -11,10 +11,10 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1663'
-ht-degree: 58%
+source-wordcount: '1661'
+ht-degree: 57%
 
 ---
 
@@ -126,7 +126,7 @@ Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurations
   <tr>
    <td> </td>
    <td>HTML-Profil</td>
-   <td>Konfiguriert das HTML-Profil, das für die Wiedergabe verwendet werden soll. Alle verfügbaren Profile werden in der Dropdown-Liste aufgeführt.</td>
+   <td>Konfiguriert das HTML-Profil, das für das Rendering verwendet werden soll. Alle verfügbaren Profile werden in der Dropdown-Liste aufgeführt.</td>
   </tr>
   <tr>
    <td> </td>
@@ -151,7 +151,7 @@ Das Dialogfeld **Bearbeiten** enthält mehrere Registerkarten mit Konfigurations
   <tr>
    <td><span class="uicontrol"><strong>Stil</strong></code></td>
    <td>Style Type (Stiltyp)</td>
-   <td>Ermöglicht es Ihnen, für die Auflistung der Formulare <strong>Kein Stil, Standardstil</strong> oder <strong>Benutzerdefinierter Stil</strong> anzugeben.</td>
+   <td>Ermöglicht Ihnen die Auswahl von <strong>Kein Stil, Standardstil</strong>oder <strong>Benutzerdefinierter Stil </strong>für die Auflistung der Formulare.</td>
   </tr>
   <tr>
    <td> </td>
@@ -218,9 +218,9 @@ So konfigurieren Sie die Komponente Eigenschaftsprädikat :
 
 #### Tag-Eigenschaft {#tags-predicate}
 
-Die Komponente &quot;Tags Predicate&quot;implementiert die Suche nach Formularen anhand von in Forms Manager definierten Tags.
+Die Komponente &quot;Tag-Eigenschaft&quot;implementiert die Suche nach Formularen anhand von in Forms Manager definierten Tags.
 
-So konfigurieren Sie die Komponente Tag-Eigenschaft :
+So konfigurieren Sie die Komponente &quot;Tags Predicate&quot;:
 
 1. Tippen Sie auf die Komponente und dann auf ![Einstellungen_Symbol](assets/settings_icon.png). Das Dialogfeld „Edit “ wird geöffnet.
 1. Tippen Sie neben dem Feld „Tags“ auf den Abwärtspfeil.
@@ -235,7 +235,7 @@ Um Formulare auf einer Seite aufzulisten, fügen Sie die Komponente **[!UICONTRO
 
 Verwenden Sie die Komponente Link , um ein Formular von einer beliebigen Stelle auf der Seite aus zu verknüpfen. Weitere Informationen zu Link-Komponenten finden Sie unter [Einbetten einer Link-Komponente in eine Seite](../../forms/using/embedding-link-component-page.md).
 
-Um die Formulare aufzulisten, die sich im Entwurfsstatus befinden, und die bereits gesendeten Formulare aufzulisten, verwenden Sie die **[!UICONTROL Entwürfe und Übermittlungen]** -Komponente. Weitere Informationen finden Sie unter [Anpassen der Komponente &quot;Drafts and Submissions&quot;](../../forms/using/draft-submission-component.md).
+Verwenden Sie zum Auflisten der Formulare, die sich im Entwurfsstatus befinden, und der bereits gesendeten Formulare die **[!UICONTROL Entwürfe und Übermittlungen]** -Komponente. Weitere Informationen finden Sie unter [Anpassen der Komponente &quot;Drafts and Submissions&quot;](../../forms/using/draft-submission-component.md).
 
 ## Mobilgerätefreundlichkeit {#mobile-device-friendliness}
 
@@ -251,9 +251,9 @@ Komponente „Search &amp; Lister“
 
 Sie können eine Forms Portal-Seite anpassen und ihr ein unverwechselbares Erscheinungsbild verleihen. Sie können auch Metadaten hinzufügen, um die Suchabfrage zu verbessern, das Layout der Seite zu ändern und benutzerdefinierte CSS-Stile hinzuzufügen. Weitere Informationen finden Sie unter [Anpassen von Vorlagen für Formularportalkomponenten](../../forms/using/customizing-templates-forms-portal-components.md).
 
-In der AEM Forms-Benutzeroberfläche können Sie benutzerdefinierte Metadaten zu Formularen hinzufügen. Benutzerdefinierte Metadaten sind nützlich, um Endbenutzern eine Auflistung und ein Sucherlebnis für Formulare bereitzustellen. Weitere Informationen zu benutzerdefinierten Metadaten finden Sie unter [Anpassen von Vorlagen für Formularportalkomponenten](../../forms/using/customizing-templates-forms-portal-components.md).
+Über die AEM Forms-Benutzeroberfläche können Sie benutzerdefinierte Metadaten zu Formularen hinzufügen. Benutzerdefinierte Metadaten sind nützlich, um Endbenutzern eine Auflistung und ein Sucherlebnis für Formulare bereitzustellen. Weitere Informationen zu benutzerdefinierten Metadaten finden Sie unter [Anpassen von Vorlagen für Formularportalkomponenten](../../forms/using/customizing-templates-forms-portal-components.md).
 
-Standardmäßig bietet Forms Portal Renderaktionen. Sie können Forms Portal anpassen, um weitere Aktionen hinzuzufügen. Detaillierte Informationen finden Sie unter [Hinzufügen benutzerdefinierter Aktionen zu Formularlistenelementen.](../../forms/using/add-custom-action-form-lister.md)
+Standardmäßig bietet das Forms Portal Renderaktionen. Sie können Forms Portal anpassen, um weitere Aktionen hinzuzufügen. Detaillierte Informationen finden Sie unter [Hinzufügen benutzerdefinierter Aktionen zu Formularlistenelementen.](../../forms/using/add-custom-action-form-lister.md)
 
 ## Ähnliche Artikel
 

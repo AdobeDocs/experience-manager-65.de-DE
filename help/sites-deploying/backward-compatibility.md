@@ -1,7 +1,7 @@
 ---
 title: Abwärtskompatibilität in AEM 6.5
 seo-title: Backward Compatibility in AEM 6.5
-description: Erfahren Sie, wie Sie Ihre Applikationen und Konfigurationen mit AEM 6.5 kompatibel machen.
+description: Erfahren Sie, wie Sie Ihre Apps und Konfigurationen mit AEM 6.5 kompatibel halten.
 seo-description: Learn how to keep your apps and configurations compatible with AEM 6.5
 uuid: 81dc2771-f59b-4b24-8932-9e938cba05e0
 contentOwner: sarchiz
@@ -12,10 +12,10 @@ discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 feature: Upgrading
 exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
-source-git-commit: 50a11e30ccd720065962e8dd03cbcc71ec9f715a
-workflow-type: ht
-source-wordcount: '500'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 53%
 
 ---
 
@@ -25,7 +25,7 @@ ht-degree: 100%
 
 >[!NOTE]
 >
->Eine Liste der Änderungen am Inhalt und an der Konfiguration, die das Kompatibilitätspaket nicht betreffen, finden Sie unter [Repository-Neustrukturierung in AEM](/help/sites-deploying/repository-restructuring.md).
+>Eine Liste der Inhalts- und Konfigurationsänderungen, die nicht unter das Kompatibilitätspaket fallen, finden Sie unter [Repository-Neustrukturierung in AEM](/help/sites-deploying/repository-restructuring.md).
 
 In AEM 6.5 wurden alle Funktionen im Hinblick auf die Abwärtskompatibilität entwickelt.
 
@@ -33,31 +33,31 @@ In den meisten Fällen sollten Kunden, die mit AEM 6.3 arbeiten, weder ihren Co
 
 Für die Ausnahmen, in denen Funktionen nicht abwärtskompatibel realisiert werden konnten, kann die Abwärtskompatibilität für Pakete und Inhalte erzielt werden, indem ein Kompatibilitätspaket für 6.4 installiert wird (im Folgenden finden Sie weitere Informationen und erfahren, wo Sie das Paket herunterladen können). Dieses Kompatibilitätspaket wird in den meisten Fällen dazu beitragen, die Kompatibilität für Programme, die mit AEM 6.4 kompatibel sind, wiederherzustellen.
 
-Mit dem Kompatibilitätspaket können Sie AEM im Kompatibilitätsmodus ausführen und so die benutzerdefinierte Entwicklung für neue AEM-Funktionen zurückstellen:
+Mit dem Kompatibilitätspaket können Sie AEM im Kompatibilitätsmodus ausführen und die benutzerdefinierte Entwicklung für neue AEM Funktionen verschieben:
 
 >[!NOTE]
 >
->Bitte beachten Sie, dass das Kompatibilitätspaket nur eine Zwischenlösung ist, um die für die Kompatibilität mit AEM 6.5 erforderliche Entwicklung aufzuschieben. Es wird nur als letzte Option empfohlen, falls Sie Kompatibilitätsprobleme nicht direkt nach der Aktualisierung durch Eigenentwicklungen beheben können. Es wird dringend empfohlen, in den nativen Modus zu wechseln und das Kompatibilitätspaket zu deinstallieren, sobald Sie auf 6.5 basierende Eigenentwicklungen vornehmen, damit Sie den vollen Funktionsumfang von 6.5 nutzen können.
+>Bitte beachten Sie, dass das Kompatibilitätspaket nur eine Zwischenlösung ist, um die für die Kompatibilität mit AEM 6.5 erforderliche Entwicklung aufzuschieben. Es wird nur als letzte Option empfohlen, falls Sie Kompatibilitätsprobleme nicht direkt nach der Aktualisierung durch Eigenentwicklungen beheben können. Es wird dringend empfohlen, in den nativen Modus zu wechseln und das Kompatibilitätspaket zu deinstallieren, sobald Sie sich für eine 6.5-basierte benutzerdefinierte Entwicklung entscheiden und die vollständige 6.5-Funktionalität nutzen.
 
 ![sase](assets/sase.png)
 
-Das Kompatibilitätspaket bietet zwei Modi: **Routing aktiviert** und **Routing deaktiviert**.
+Das Kompatibilitätspaket umfasst zwei Modi: **Routing aktiviert** und **Routing deaktiviert**.
 
-Damit kann AEM 6.5 in drei Modi ausgeführt werden:
+Dadurch kann AEM 6.5 in drei Modi ausgeführt werden:
 
 **Nativer Modus:**
 
-Der native Modus eignet sich für Kunden, die alle neuen Funktionen von AEM 6.5 nutzen möchten und bereit sind, ihre Anpassungen durch Entwicklungsarbeiten an alle neuen Funktionen anzupassen.
+Der native Modus richtet sich an Kunden, die alle neuen Funktionen von AEM 6.5 nutzen möchten und bereit sind, einige Entwicklungsschritte vorzunehmen, damit ihre Anpassungen mit allen neuen Funktionen funktionieren.
 
-Dies bedeutet, dass Sie die Korrekturen in Ihrer Anwendung sofort nach der Aktualisierung durchführen müssen.
+Dies bedeutet, dass Sie möglicherweise sofort nach der Aktualisierung Anpassungen in Ihrer Anwendung vornehmen müssen.
 
-**Kompatibilitätsmodus: Kompatibilitätspaket mit aktiviertem Routing installiert** 
+**Kompatibilitätsmodus: Kompatibilitätspaket mit aktiviertem Routing installiert**
 
-Der Kompatibilitätsmodus eignet sich für Kunden, die Schnittstellen angepasst haben, die nicht abwärtskompatibel sind. Damit kann AEM im Kompatibilitätsmodus ausgeführt und die für nicht mit Ihrem benutzerdefinierten Code kompatible neue AEM-Funktionen erforderliche Eigenentwicklung zurückgestellt werden.
+Der Kompatibilitätsmodus eignet sich für Kunden, die Benutzeroberflächen anpassen, die nicht abwärtskompatibel sind. Dies ermöglicht AEM Ausführung im Kompatibilitätsmodus und verzögert die benutzerdefinierte Entwicklung, die für neue AEM Funktionen erforderlich ist, die nicht mit einigen Ihrem benutzerdefinierten Code kompatibel sind.
 
-**Legacy-Modus: Kompatibilitätspaket mit deaktiviertem Routing installiert** 
+**Legacy-Modus: Kompatibilitätspaket mit deaktiviertem Routing installiert**
 
-Der Legacy-Modus eignet sich für Kunden, die benutzerdefinierte Schnittstellen besitzen, die auf Legacy- oder veraltetem Code von AEM basieren, der in das Kompatibilitätspaket ausgelagert wurde.
+Der alte Modus richtet sich an Kunden mit benutzerdefinierten Schnittstellen, die auf veraltetem oder veraltetem Code aus AEM basieren, der im Kompatibilitätspaket entfernt wurde.
 
 ![sapte](assets/sapte.png)
 

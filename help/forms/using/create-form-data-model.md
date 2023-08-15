@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: e147605ff4d5c3d2403632285956559db235c084
-workflow-type: ht
-source-wordcount: '1512'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1511'
+ht-degree: 97%
 
 ---
 
@@ -24,7 +24,7 @@ Dieses Tutorial ist ein Teil der Serie [Erstellen Ihres ersten adaptives Formula
 
 ## Über das Tutorial {#about-the-tutorial}
 
-Mit dem AEM [!DNL Forms]-Datenintegrationsmodul können Sie ein Formulardatenmodell aus verschiedenen Backend-Datenquellen wie AEM-Benutzerprofil, RESTful-Web-Services, SOAP-basierten Web-Services, OData-Services und relationalen Datenbanken erstellen. Sie können Datenmodellobjekte und -dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekt-Eigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
+AEM [!DNL Forms] Mit dem Datenintegrationsmodul können Sie ein Formulardatenmodell aus unterschiedlichen Backend-Datenquellen erstellen, z. B. AEM Benutzerprofil, RESTful-Webdienste, SOAP-basierte Webdienste, OData-Dienste und relationale Datenbanken. Sie können Datenmodellobjekte und -dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekt-Eigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
 
 Weitere Informationen zum Formulardatenmodell und zur Formulardatenintegration finden Sie unter [Datenintegration für AEM Forms](../../forms/using/data-integration.md).
 
@@ -88,16 +88,14 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
       * **Test on Borrow**: Aktivieren Sie die Option **[!UICONTROL Test on Borrow]**.
       * **Test on Return:** Aktivieren Sie die Option **[!UICONTROL Test on Return.]**
-      * **Validierungsabfrage**: Geben Sie eine SQL SELECT-Abfrage an, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Zum Beispiel **select &#42; from customerdetails**.
+      * **Validierungsabfrage:** Geben Sie eine SQL SELECT-Abfrage an, damit Verbindungen aus dem Pool validiert werden. Die Abfrage muss mindestens eine Zeile zurückgeben. Zum Beispiel **select &#42; from customerdetails**.
       * **Transaktions-Isolierung**: Setzen Sie den Wert auf **READ_COMMITTED**.
 
-         Belassen Sie die anderen Eigenschaften auf den [Standardwerten](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) und tippen Sie auf **[!UICONTROL Speichern]**.
+        Belassen Sie die anderen Eigenschaften auf den [Standardwerten](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) und tippen Sie auf **[!UICONTROL Speichern]**.
 
-         Eine Konfiguration ähnlich der folgenden wird erstellt.
+        Eine Konfiguration ähnlich der folgenden wird erstellt.
 
-         ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
-
-
+        ![relational-database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
 ## Schritt 2: Erstellen eines Formulardatenmodells {#create-fdm}
 
@@ -140,6 +138,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
       * Ort
       * state
       * Postleitzahl
+
    * **Dienste:**
 
       * Abrufen
@@ -182,11 +181,11 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
       * **Titel**: Geben Sie den Titel des Dienstes an. Zum Beispiel: Versandadresse abrufen.
       * **Beschreibung**: Geben Sie eine Beschreibung an, die eine detaillierte Funktionsweise des Dienstes enthält. Beispiel:
 
-         Dieser Service ruft die Lieferadresse und andere Kundendaten aus der [!DNL MySQL]-Datenbank ab.
+        Dieser Service ruft die Lieferadresse und andere Kundendaten aus der [!DNL MySQL]-Datenbank ab.
 
       * **Ausgabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 
-         customerdetail schema
+        customerdetail schema
 
       * **Array zurückgeben**: Deaktivieren Sie die Option **Array zurückgeben**.
       * **Argumente**: Wählen Sie das Argument mit dem Namen **ID** aus.
@@ -202,20 +201,19 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
       * **Titel**: Geben Sie den Titel des Dienstes an. Beispiel: Versandadresse aktualisieren.
       * **Beschreibung**: Geben Sie eine Beschreibung an, die eine detaillierte Funktionsweise des Dienstes enthält. Beispiel:
 
-         Dieser Service aktualisiert die Lieferadresse und die zugehörigen Felder in der MySQL-Datenbank
+        Dieser Service aktualisiert die Lieferadresse und die zugehörigen Felder in der MySQL-Datenbank
 
       * **Eingabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 
-         customerdetail schema
+        customerdetail schema
 
       * **Ausgabetyp**: Wählen Sie **BOOLEAN**.
 
       * **Argumente**: Wählen Sie das Argument mit dem Namen **ID** und **customerdetails**.
+
       Tippen Sie auf **[!UICONTROL Fertig]**. Der Service **[!UICONTROL update]** zur Aktualisierung der Kundendaten in der [!DNL MySQL]-Datenbank ist konfiguriert.
 
       ![shiiping-address-update](assets/shiiping-address-update.png)
-
-
 
 Das Datenmodellobjekt und die Dienste im Formulardatenmodell sind konfiguriert. Sie können das Formulardatenmodell jetzt testen.
 

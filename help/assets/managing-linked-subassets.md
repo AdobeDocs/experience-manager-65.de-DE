@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1423'
-ht-degree: 99%
+source-wordcount: '1421'
+ht-degree: 97%
 
 ---
 
@@ -128,7 +128,7 @@ Die folgenden Optionen sind auf der Symbolleiste, in der linken Leiste und in de
 
 * Die Option **[!UICONTROL Eigenschaften]** öffnet die Seite [!UICONTROL Eigenschaften] des Unter-Assets.
 
-* Mit der Option **[!UICONTROL Anmerken]** können Sie das spezifische Unter-Asset kommentieren. Die Anmerkungen, die Sie für separate Unter-Assets verwenden, werden erfasst und zusammen angezeigt, wenn das übergeordnete Asset zur Anzeige geöffnet wird.
+* **[!UICONTROL Anmerken]** -Option können Sie das spezifische Unter-Asset kommentieren. Die Anmerkungen, die Sie für separate Unter-Assets verwenden, werden erfasst und zusammen angezeigt, wenn das übergeordnete Asset zur Anzeige geöffnet wird.
 
 * Die Option **[!UICONTROL Seitenübersicht]** zeigt alle Unter-Assets gleichzeitig an.
 
@@ -136,7 +136,7 @@ Die folgenden Optionen sind auf der Symbolleiste, in der linken Leiste und in de
 
 ## Best Practices und Einschränkungen {#best-practice-limitation-tips}
 
-* Die Erstellung von Unter-Assets kann bei jeder [!DNL Experience Manager]-Bereitstellung äußerst ressourcenintensiv sein. Wenn Sie Unter-Assets generieren, während komplexe Assets hochgeladen werden, fügen Sie den Schritt im Workflow „DAM-Update-Asset“ hinzu. Wenn Sie Unter-Assets On-Demand generieren, erstellen Sie einen separaten Workflow, um Unter-Assets zu generieren. Mit einem speziellen Workflow können Sie die anderen Schritte im Workflow „DAM-Update-Asset“ überspringen und Rechenressourcen sparen.
+* Die Erstellung von Unter-Assets kann bei jeder [!DNL Experience Manager]-Bereitstellung äußerst ressourcenintensiv sein. Wenn Sie Unter-Assets generieren, während komplexe Assets hochgeladen werden, fügen Sie den Schritt im Workflow „DAM-Update-Asset“ hinzu. Wenn Sie Unter-Assets On-Demand generieren, erstellen Sie einen separaten Workflow, um Unter-Assets zu generieren. Mit einem dedizierten Workflow können Sie die anderen Schritte im Workflow DAM-Update-Asset überspringen und Rechenressourcen speichern.
 
 >[!MORELIKETHIS]
 >

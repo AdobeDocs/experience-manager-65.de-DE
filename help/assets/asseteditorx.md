@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '688'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '687'
+ht-degree: 85%
 
 ---
 
@@ -52,7 +52,7 @@ Das Beispiel lädt diese JavaScript-Quelle in `head.jsp` (`/apps/geometrixx/comp
 
 ### Zusätzliche Stylesheets {#additional-style-sheets}
 
-Einige der Komponenten von [!DNL Assets] verwenden die Widget-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Die Tag-Aktionskomponente erfordert ein weiteres zusätzliches Stylesheet.
+Einige der Komponenten von [!DNL Assets] verwenden die Widget-Bibliothek. Damit sie im Inhaltskontext ordnungsgemäß gerendert werden, muss ein zusätzliches Stylesheet geladen werden. Für die Tag-Aktionskomponente ist eine weitere erforderlich.
 
 ```css
 <link href="/etc/designs/geometrixx/ui.widgets.css" rel="stylesheet" type="text/css">
@@ -64,7 +64,7 @@ Die Komponenten der Beispielseite erfordern, dass alle Selektoren mit `.assetedi
 
 ### FormChooser: Anpassungen für eventuell geladene Ressourcen {#formchooser-adjustments-for-eventually-loaded-resources}
 
-Der Asset-Editor verwendet die Formularauswahl, mit der Sie Ressourcen – in diesem Fall Assets – auf derselben Formularseite bearbeiten können, indem Sie der URL des Assets einfach einen Formularselektor und den Pfad des Formulars hinzufügen.
+Der Asset-Editor verwendet die Formularauswahl, mit der Sie Ressourcen - in diesem Fall Assets - auf derselben Formularseite bearbeiten können, indem Sie einfach eine Formularauswahl und den Pfad des Formulars zur URL des Assets hinzufügen.
 
 Beispiel:
 
@@ -208,16 +208,16 @@ Sie können die im [Metadatenformular](assets-finder-editor.md#metadata-form-and
 
 Aktuell verfügbare Metadaten sind in `/libs/dam/options/metadata` definiert:
 
-* Die erste Ebene innerhalb dieses Verzeichnisses enthält die Namespaces.
-* Die Elemente in den einzelnen Namespaces stellen Metadaten dar, beispielsweise Ergebnisse in einem lokalen Teilelement.
-* Die Metadaten enthalten die Informationen für den Typ und die Optionen mit mehreren Werten.
+* Die erste Ebene in diesem Ordner enthält die Namespaces.
+* Die Elemente in jedem Namespace stellen Metadaten dar, z. B. Ergebnisse in einem lokalen Teil-Element.
+* Der Metadateninhalt enthält die Informationen für den Typ und die Optionen mit mehreren Werten.
 
 Die Optionen können in `/apps/dam/options/metadata` überschrieben werden:
 
 1. Kopieren Sie das Verzeichnis von `/libs` nach `/apps`.
 
-1. Sie können Elemente entfernen, ändern und hinzufügen.
+1. Entfernen, Ändern oder Hinzufügen von Elementen.
 
 >[!NOTE]
 >
->Wenn Sie neue Namespaces hinzufügen, müssen diese in Ihrem Repository/CRX registriert sein. Andernfalls tritt beim Übermitteln des Metadatenformulars ein Fehler auf.
+>Wenn Sie neue Namespaces hinzufügen, müssen diese in Ihrem Repository/CRX registriert sein. Andernfalls führt das Senden des Metadatenformulars zu einem Fehler.

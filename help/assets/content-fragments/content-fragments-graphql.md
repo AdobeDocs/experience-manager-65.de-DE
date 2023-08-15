@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie AEM-Inhaltsfragmente mit GraphQL für die Hea
 feature: Content Fragments
 role: User
 exl-id: 2debd678-2d73-41f2-b33c-c29d661f6a6b
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: ht
-source-wordcount: '687'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '684'
+ht-degree: 91%
 
 ---
 
 # Headless-Bereitstellung von Inhalten mithilfe von Inhaltsfragmenten mit GraphQL {#headless-content-delivery-using-content-fragments-with-graphQL}
 
-Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente zusammen mit der AEM-GraphQL-API (eine auf GraphQL basierende benutzerdefinierte Implementierung) verwenden, um strukturierte Inhalte für Ihre Programme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie den spezifischen Inhalt, den Sie rendern möchten/benötigen (als Antwort auf die einzelne API-Abfrage), abrufen und bereitstellen.
+Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente zusammen mit der AEM-GraphQL-API (eine auf GraphQL basierende benutzerdefinierte Implementierung) verwenden, um strukturierte Inhalte für Ihre Programme „headless“ bereitzustellen. Durch die Möglichkeit, eine einzelne API-Abfrage anzupassen, können Sie bestimmte Inhalte abrufen und bereitstellen, die gerendert werden sollen/müssen (als Antwort auf die einzelne API-Abfrage).
 
 <!--
 >[!NOTE]
@@ -28,14 +28,13 @@ Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente zusammen mit der
 >* [AEM Commerce nutzt Daten von einer Commerce-Plattform über GraphQL](/help/commerce/cif/integrating/magento.md).
 >* [AEM-Inhaltsfragmente stellen in Kombination mit der AEM-GraphQL-API (einer auf GraphQL basierenden benutzerdefinierten Implementierung) strukturierte Inhalte für die Verwendung in Ihren Programmen](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) bereit.
 
-
 ## Headless-CMS {#headless-cms}
 
 Ein Headless-Content-Management-System (CMS) ist:
 
 * „*Ein Headless-Content-Management-System oder Headless-CMS ist ein Backend-Content-Management-System (CMS), das von Grund auf als Content-Repository erstellt wurde und Inhalte über eine API für die Anzeige auf jedem Gerät zugänglich macht.*“
 
-   Weitere Informationen finden Sie in [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
+  Weitere Informationen finden Sie in [Wikipedia](https://en.wikipedia.org/wiki/Headless_content_management_system).
 
 In Bezug auf das Erstellen von Inhaltsfragmenten in AEM bedeutet dies Folgendes:
 
@@ -49,9 +48,9 @@ GraphQL ist:
 
 * „*... eine Abfragesprache für APIs und eine Laufzeitumgebung zur Erfüllung dieser Abfragen mit Ihren vorhandenen Daten.*“
 
-   Weitere Informationen finden Sie unter [GraphQL.org](https://graphql.org)
+  Weitere Informationen finden Sie unter [GraphQL.org](https://graphql.org)
 
-Mit der [AEM-GraphQL-API](#aem-graphql-api) können Sie (komplexe) Abfragen für Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md) durchführen, wobei jede Abfrage einem bestimmten Modelltyp entspricht. Die zurückgegebenen Inhalte können dann von Ihren Programmen verwendet werden.
+Die [GraphQL-API AEM](#aem-graphql-api) ermöglicht Ihnen, (komplexe) Abfragen an Ihre [Inhaltsfragmente](/help/assets/content-fragments/content-fragments.md); wobei jede Abfrage einem bestimmten Modelltyp entspricht. Die zurückgegebenen Inhalte können dann von Ihren Programmen verwendet werden.
 
 ## AEM-GraphQL-API {#aem-graphql-api}
 
@@ -97,7 +96,7 @@ Die **[Fragmentreferenz](/help/assets/content-fragments/content-fragments-models
 
 * verweist auf ein anderes Fragment, abhängig von einem bestimmten Inhaltsfragmentmodell,
 
-* ermöglicht Ihnen das Abrufen strukturierter Daten.
+* Ermöglicht den Abruf strukturierter Daten.
 
    * Wenn als **multifeed** definiert, können mehrere Unterfragmente vom primären Fragment referenziert (abgerufen) werden.
 

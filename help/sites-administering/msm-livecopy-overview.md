@@ -1,7 +1,7 @@
 ---
 title: Konsole „Live Copy-Übersicht“
 seo-title: Live Copy Overview Console
-description: Erfahren Sie mehr über die Grundlagen der Konsole "Live Copy-Übersicht".
+description: Lernen Sie die Grundlagen der Konsole "Live Copy-Übersicht"kennen.
 seo-description: Learn about the basics of the Live Copy Overview Console.
 uuid: 6b1841ec-950e-455b-9b30-b5f5050a67b8
 contentOwner: AEM Docs
@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '553'
-ht-degree: 52%
+source-wordcount: '551'
+ht-degree: 50%
 
 ---
 
@@ -25,7 +25,7 @@ Die **Live Copy-Übersicht** ermöglicht Ihnen Folgendes:
 * Anzeigen/Verwalten der Vererbung auf einer Site:
 
    * Anzeigen des Blueprint-Baums und der entsprechenden Live Copy-Struktur sowie des Vererbungsstatus
-   * den Vererbungsstatus ändern; z. B. aussetzen, fortsetzen
+   * Ändern Sie den Vererbungsstatus, z. B. Aussetzen, Fortsetzen
    * Anzeigen von Blueprint- und Live Copy-Eigenschaften
 
 * Rollout-Aktionen durchführen
@@ -75,7 +75,7 @@ Die **Live Copy-Übersicht** kann beim Anzeigen der Eigenschaften einer Blueprin
 Die **Live Copy-Übersicht** kann auch verwendet werden, um Aktionen für die Live Copy durchzuführen:
 
 1. Öffnen Sie die **Live Copy-Übersicht**.
-1. Wählen Sie die erforderliche Blueprint- oder Live Copy-Seite aus. Die Symbolleiste wird aktualisiert und zeigt die verfügbaren Aktionen an. Die [Aktionen](/help/sites-administering/msm.md#terms-used) Welche verfügbar sind, hängt davon ab, ob Sie eine [Blueprint](#actions-for-a-blueprint-page) oder [Live Copy](#actions-for-a-live-copy-page) Seite:
+1. Wählen Sie die erforderliche Blueprint- oder Live Copy-Seite aus. Die Symbolleiste wird aktualisiert und zeigt die verfügbaren Aktionen an. Die [Aktionen](/help/sites-administering/msm.md#terms-used) Je nachdem, ob Sie eine [Blueprint](#actions-for-a-blueprint-page) oder [Live Copy](#actions-for-a-live-copy-page) Seite:
 
 ### Aktionen für Blueprint-Seiten {#actions-for-a-blueprint-page}
 
@@ -119,7 +119,7 @@ Wenn Sie eine Live Copy-Seite auswählen, sind die folgenden Aktionen verfügbar
 
 * [Fortsetzen ](/help/sites-administering/msm-livecopy.md#resuming-inheritance-for-a-page)
 
-   * Reaktiviert eine ausgesetzte Beziehung.
+   * Mit der Wiederaufnahme können Sie eine ausgesetzte Beziehung reaktivieren.
 
 * [Trennen](/help/sites-administering/msm.md#detaching-a-live-copy)
 

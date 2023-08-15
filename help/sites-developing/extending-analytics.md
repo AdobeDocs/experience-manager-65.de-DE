@@ -1,8 +1,8 @@
 ---
 title: Erweitern der Ereignisverfolgung
 seo-title: Extending Event Tracking
-description: Mit AEM Analytics können Sie Benutzerinteraktionen auf Ihrer Website verfolgen
-seo-description: AEM Analytics allows you to track user interaction on your website
+description: Mit AEM Analytics können Sie Benutzerinteraktionen auf Ihrer Website verfolgen.
+seo-description: AEM Analytics lets you track user interaction on your website
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '487'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 75%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 100%
 
 Mit AEM Analytics können Sie Benutzerinteraktionen auf Ihrer Website verfolgen. Als Entwickler müssen Sie möglicherweise:
 
-* verfolgen, wie Besucher mit Ihren Komponenten interagieren. Hierfür können Sie [benutzerspezifische Ereignisse](#custom-events) verwenden.
+* Verfolgen Sie, wie Besucher mit Ihren Komponenten interagieren. Hierfür können Sie [benutzerspezifische Ereignisse](#custom-events) verwenden.
 * [Zugriff auf Werte im ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
 * [Datensatzrückrufe hinzufügen](#adding-record-callbacks).
 
@@ -33,9 +33,9 @@ Mit AEM Analytics können Sie Benutzerinteraktionen auf Ihrer Website verfolgen.
 
 ## Benutzerspezifische Ereignisse {#custom-events}
 
-Benutzerspezifische Ereignisse verfolgen alles, was von der Verfügbarkeit einer bestimmten Komponente auf der Seite abhängt. Hierzu gehören auch vorlagenspezifische Ereignisse, da die Seitenkomponente als eine weitere Komponente behandelt wird.
+Benutzerspezifische Ereignisse verfolgen alles, was von der Verfügbarkeit einer bestimmten Komponente auf der Seite abhängt. Dies umfasst auch vorlagenspezifische Ereignisse, da die Seitenkomponente als eine andere Komponente behandelt wird.
 
-### Verfolgen von benutzerspezifischen Ereignissen beim Laden einer Seite {#tracking-custom-events-on-page-load}
+### Tracking benutzerspezifischer Ereignisse beim Laden der Seite {#tracking-custom-events-on-page-load}
 
 Dies kann mit dem Pseudo-Attribut `data-tracking` erfolgen (das ältere Datensatzattribut wird weiter unterstützt, um die Abwärtskompatibilität sicherzustellen). Sie können dieses einem beliebigen HTML-Tag hinzufügen.
 
@@ -45,7 +45,7 @@ Die Syntax für `data-tracking` lautet
 
 Sie können eine beliebige Anzahl von Schlüssel-Wert-Paaren als zweiten Parameter übergeben, der als Payload bezeichnet wird.
 
-Ein Beispiel kann wie folgt aussehen:
+Ein Beispiel könnte wie folgt aussehen:
 
 ```xml
 <span data-tracking="{event:'blogEntryView',
@@ -112,6 +112,6 @@ Speicherspezifisch:
 
 Rückrufe vor und nach dem Laden werden mit den Funktionen `CQ_Analytics.registerBeforeCallback(callback,rank)` und `CQ_Analytics.registerAfterCallback(callback,rank)` registriert.
 
-Bei beiden Funktionen wird als erstes Argument eine Funktion und als zweites Argument ein Rang verwendet, der die Reihenfolge der auszuführenden Rückrufe angibt.
+Beide Funktionen nehmen eine Funktion als erstes Argument und einen Rang als zweites Argument an, was die Reihenfolge bestimmt, in der Rückrufe ausgeführt werden.
 
-Falls ein Rückruf den Wert „false“ zurückgibt, werden die darauf folgenden Rückrufe in der Ausführungskette nicht ausgeführt.
+Wenn der Rückruf &quot;false&quot;zurückgibt, werden die in der Ausführungskette folgenden Rückrufe nicht ausgeführt.

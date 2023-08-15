@@ -7,16 +7,16 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 58%
+source-wordcount: '492'
+ht-degree: 55%
 
 ---
 
 # Externalisieren von URLs{#externalizing-urls}
 
-In Adobe Experience Manager (AEM) wird die **Externalizer** ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert umwandeln können (z. B. `/path/to/my/page`) in eine externe und absolute URL (z. B. `https://www.mycompany.com/path/to/my/page`), indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird.
+In Adobe Experience Manager (AEM) wird die **Externalizer** ist ein OSGi-Dienst, mit dem Sie einen Ressourcenpfad programmgesteuert umwandeln können (z. B. `/path/to/my/page`) in eine externe und absolute URL (zum Beispiel `https://www.mycompany.com/path/to/my/page`), indem dem Pfad ein vorkonfiguriertes DNS vorangestellt wird.
 
 Dieser Dienst bietet einen zentralen Ort für die Konfiguration und Erstellung von externen URLs, weil eine Instanz ihre extern sichtbare URL nicht kennen kann, wenn sie hinter einer Web-Layer läuft, und weil manchmal ein Link außerhalb des Anfrageumfangs erstellt werden muss.
 
@@ -24,7 +24,7 @@ Auf dieser Seite wird beschrieben, wie Sie die **Externalizer** und wie Sie ihn 
 
 ## Konfigurieren des Externalizer-Dienstes {#configuring-the-externalizer-service}
 
-Der **Externalizer**-Dienst ermöglicht es Ihnen, zentral mehrere Domains zu definieren, die für das programmgesteuerte Voranstellen von Präfixen für Ressourcenpfade verwendet werden können. Alle Domains werden anhand eines eindeutigen Namens zum programmgesteuerten Verweisen auf die Domain identifiziert.
+Die **Externalizer** Mit dem -Dienst können Sie zentral mehrere Domänen definieren, mit denen Ressourcenpfade programmgesteuert vorangestellt werden können. Alle Domains werden anhand eines eindeutigen Namens zum programmgesteuerten Verweisen auf die Domain identifiziert.
 
 Definieren Sie eine Domain-Zuordnung für den **Externalizer**-Service wie folgt:
 

@@ -1,15 +1,15 @@
 ---
 title: Anpassung des Seiten-Authorings
-description: Adobe Experience Manager (AEM) bietet verschiedene Möglichkeiten, die Seitenbearbeitung anzupassen.
+description: Adobe Experience Manager (AEM) bietet verschiedene Mechanismen, mit denen Sie die Seitenbearbeitungsfunktionen anpassen können.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1340'
-ht-degree: 52%
+source-wordcount: '1339'
+ht-degree: 50%
 
 ---
 
@@ -30,13 +30,13 @@ Adobe Experience Manager (AEM) bietet verschiedene Mechanismen, mit denen Sie di
 
 * Überlagerungen
 
-  Überlagerungen basieren auf Knotendefinitionen und ermöglichen es Ihnen, Standardfunktionen (in `/libs`) mit Ihren eigenen benutzerdefinierten Funktionen (in `/apps`) zu überlagern. Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die [Sling-Ressourcenzusammenführung](/help/sites-developing/sling-resource-merger.md) das Vererben zulässt.
+  Überlagerungen basieren auf Knotendefinitionen und ermöglichen das Überlagern der Standardfunktionen (in `/libs`) mit Ihrer eigenen benutzerdefinierten Funktionalität (in `/apps`). Wenn Sie eine Überlagerung erstellen, ist keine 1:1-Kopie des Originals erforderlich, da die [Sling-Ressourcenzusammenführung](/help/sites-developing/sling-resource-merger.md) das Vererben zulässt.
 
 >[!NOTE]
 >
 >Weitere Informationen finden Sie unter [JS-Dokumentationssatz](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
-Diese können auf viele Arten verwendet werden, um die Seitenbearbeitungsfunktion in Ihrer AEM-Instanz zu erweitern. Eine Auswahl wird im Folgenden behandelt (auf hoher Ebene).
+Diese können auf viele Arten verwendet werden, um die Seitenbearbeitungsfunktion in Ihrer AEM zu erweitern. Eine Auswahl wird im Folgenden behandelt (auf hoher Ebene).
 
 >[!NOTE]
 >
@@ -62,7 +62,7 @@ Diese können auf viele Arten verwendet werden, um die Seitenbearbeitungsfunktio
 
 ## Neue Ebene hinzufügen (Modus) {#add-new-layer-mode}
 
-Beim Bearbeiten einer Seite gibt es verschiedene [Modi](/help/sites-authoring/author-environment-tools.md#page-modes) verfügbar. Diese Modi werden mithilfe von [Ebenen](/help/sites-developing/touch-ui-structure.md#layer). Diese ermöglichen den Zugriff auf verschiedene Funktionstypen für denselben Seiteninhalt. Die Standardschichten sind: Bearbeiten, Vorschau, Anmerkungen, Entwickler und Targeting.
+Beim Bearbeiten einer Seite gibt es verschiedene [Modi](/help/sites-authoring/author-environment-tools.md#page-modes) verfügbar. Diese Modi werden mithilfe von [Ebenen](/help/sites-developing/touch-ui-structure.md#layer). Diese ermöglichen den Zugriff auf verschiedene Funktionstypen für denselben Seiteninhalt. Die Standardebenen sind: Bearbeiten, Vorschau, Anmerkungen, Entwickler und Targeting.
 
 ### Ebenenbeispiel: Live Copy-Status {#layer-example-live-copy-status}
 
@@ -115,7 +115,7 @@ Weitere Details zum Erstellen einer benutzerdefinierten Eigenschaft finden Sie i
 >
 >Die Implementierung einer benutzerdefinierten Eigenschaft durch die Implementierung der Schnittstelle `com.day.cq.commons.predicate.AbstractNodePredicate` funktioniert auch in der klassischen Benutzeroberfläche.
 >
->Siehe [dieser Knowledgebase-Artikel](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) ein Beispiel für die Implementierung eines benutzerdefinierten Prädikats in der klassischen Benutzeroberfläche.
+>Siehe [dieser Knowledge Base-Artikel](https://helpx.adobe.com/experience-manager/using/creating-custom-cq-tree.html) ein Beispiel für die Implementierung eines benutzerdefinierten Prädikats in der klassischen Benutzeroberfläche.
 
 ## Hinzufügen einer neuen Aktion zu einer Komponenten-Symbolleiste {#add-new-action-to-a-component-toolbar}
 
@@ -153,7 +153,7 @@ Bei der Standardinstallation von AEM:
 
          * property: `editorType`
 
-           Definiert den Typ des Inline-Editors, der verwendet wird, wenn die Bearbeitung im Kontext für diese Komponente ausgelöst wird; Beispiel: `text`, `textimage`, `image`, `title`.
+           Definiert den Typ des Inline-Editors, der verwendet wird, wenn die Bearbeitung im Kontext für diese Komponente ausgelöst wird. Beispiel: `text`, `textimage`, `image`, `title`.
 
 1. Zusätzliche Konfigurationsdetails des Editors können mit einer `config` Knoten, der Konfigurationen enthält, und ein `plugin` -Knoten, der die erforderlichen Konfigurationsdetails des Plug-ins enthält.
 

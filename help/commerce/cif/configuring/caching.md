@@ -2,10 +2,10 @@
 title: Caching und Leistung
 description: Erfahren Sie mehr über die verschiedenen verfügbaren Konfigurationen, um GraphQL und Inhalts-Caching zu aktivieren und die Leistung Ihrer Commerce-Implementierung zu optimieren.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: ht
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
 source-wordcount: '849'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
@@ -27,7 +27,7 @@ Bevor der Client eine GraphQL-Anfrage sendet, prüft er, ob **exakt** diese Grap
 
 ### Beispiele
 
-Es wird empfohlen, zum Konfigurieren des Cachings für den Such-Service alle verfügbaren Aggregations-/Facettenwerte abzurufen, die auf den Produktsuchen- und Kategorieseiten angezeigt werden. Diese Werte ändern sich normalerweise nur, wenn beispielsweise ein neues Attribut zu Produkten hinzugefügt wird. Daher kann die Dauer für diesen Cache-Eintrag auf „groß“ festgelegt sein, wenn die Produktattribute nur selten geändert werden. Auch wenn diese Einstellungen vom jeweiligen Projekt abhängen, empfiehlt es sich für Projektentwicklungsphasen die Werte auf wenige Minuten und für stabile Produktionssysteme auf einige Stunden festzulegen.
+Es wird empfohlen, zum Konfigurieren des Cachings für den Such-Service alle verfügbaren Aggregations-/Facettenwerte abzurufen, die auf den Produktsuchen- und Kategorieseiten angezeigt werden. Diese Werte ändern sich normalerweise nur, wenn beispielsweise ein neues Attribut zu Produkten hinzugefügt wird. Daher kann die Dauer für diesen Cache-Eintrag auf „groß“ festgelegt sein, wenn die Produktattribute nur selten geändert werden. Obwohl dies projektspezifisch ist, empfiehlt Adobe Werte von einigen Minuten in Projektentwicklungsphasen und einige Stunden in stabilen Produktionssystemen.
 
 Dies wird in der Regel mit dem folgenden Cache-Eintrag konfiguriert:
 

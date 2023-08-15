@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '1910'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1909'
+ht-degree: 99%
 
 ---
 
@@ -40,13 +40,13 @@ Der folgende Auszug stammt aus der Geometrixx-Website, über die z. B. die `Tri
 
 * Autorenumgebung
 
-   `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
+  `http://localhost:4502/cf#/content/geometrixx/en/products/triangle.html`
 
 * Publishing-Umgebung
 
-   `http://localhost:4503/content/geometrixx/en/products/triangle.html`
+  `http://localhost:4503/content/geometrixx/en/products/triangle.html`
 
-   Abhängig von der Konfiguration Ihrer Instanz kann die Verwendung von `/content` in der Veröffentlichungsumgebung optional sein.
+  Abhängig von der Konfiguration Ihrer Instanz kann die Verwendung von `/content` in der Veröffentlichungsumgebung optional sein.
 
 ```xml
   /content
@@ -167,16 +167,18 @@ Falls nicht alle Seiten für Sie erstellt wurden, müssen Sie eine Seite erstell
 
    Wenn Sie einfach auf **Neu…** klicken, wird ebenfalls die Option **Neue Seite…** ausgewählt.
 
-1. Im Dialogfeld **Seite erstellen** haben Sie folgende Möglichkeiten:
+1. Die **Seite erstellen** -Dialogfeld können Sie:
 
    * Angabe eines **Titels**, der für die Benutzenden angezeigt wird.
    * Angabe eines **Namens**, der für die Erzeugung des URI verwendet wird. Wenn kein Name angegeben wird, wird der Name aus dem Titel abgeleitet.
 
       * Wenn Sie beim Erstellen einer neuen Seite einen **Namen** für die Seite angeben, validiert AEM [den Namen entsprechend den Konventionen](/help/sites-developing/naming-conventions.md) von AEM und JCR.
       * In der klassischen Benutzeroberfläche ist **die Eingabe von ungültigen Zeichen** im Feld **Name** unzulässig.
+
    * Klicken Sie auf die Vorlage, die Sie zum Erstellen der neuen Seite verwenden möchten.
 
-      Die Vorlage wird als Grundlage für die neue Seite verwendet, z. B. um das grundlegende Layout einer Inhaltsseite zu bestimmen.
+     Die Vorlage wird als Grundlage für die neue Seite verwendet, z. B. um das grundlegende Layout einer Inhaltsseite zu bestimmen.
+
    >[!NOTE]
    >
    >Siehe [Seitenbenennungskonventionen](#page-naming-conventions).
@@ -269,27 +271,28 @@ So verschieben oder benennen Sie eine Seite um:
 
    * **Ziel**
 
-      Verwenden Sie die Sitemap (verfügbar über die Dropdown-Auswahl), um den Ort auszuwählen, an den die Seite verschoben werden soll.
+     Verwenden Sie die Sitemap (verfügbar über die Dropdown-Auswahl), um den Ort auszuwählen, an den die Seite verschoben werden soll.
 
-      Wenn Sie die Seite nur umbenennen, ignorieren Sie dieses Feld.
+     Wenn Sie die Seite nur umbenennen, ignorieren Sie dieses Feld.
 
    * **Verschieben**
 
-      Geben Sie die zu verschiebende Seite an. Dieses Feld ist in der Regel bereits ausgefüllt, je nachdem, wie Sie den Verschiebevorgang gestartet haben.
+     Geben Sie die zu verschiebende Seite an. Dieses Feld ist in der Regel bereits ausgefüllt, je nachdem, wie Sie den Verschiebevorgang gestartet haben.
 
    * **Umbenennen in**
 
-      Die aktuelle Seitenbeschriftung wird standardmäßig angezeigt. Geben Sie bei Bedarf die neue Seitenbeschriftung an.
+     Die aktuelle Seitenbeschriftung wird standardmäßig angezeigt. Geben Sie bei Bedarf die neue Seitenbeschriftung an.
 
    * **Anpassen**
 
-      Aktualisieren Sie die Links auf der aufgelisteten Seite, die auf die verschobene Seite verweisen: Wenn beispielsweise Seite A über Links zu Seite B verfügt, passt AEM die Links auf Seite A an, falls Sie Seite B verschieben.
+     Aktualisieren Sie die Links auf der aufgelisteten Seite, die auf die verschobene Seite verweisen: Wenn beispielsweise Seite A über Links zu Seite B verfügt, passt AEM die Links auf Seite A an, falls Sie Seite B verschieben.
 
-      Diese Option kann für jede einzelne verweisende Seite ausgewählt/deaktiviert werden.
+     Diese Option kann für jede einzelne verweisende Seite ausgewählt/deaktiviert werden.
 
    * **Neu veröffentlichen**
 
-      Veröffentlichen Sie die verweisende Seite neu. Diese Funktion kann ebenfalls für jede Seite einzeln aktiviert bzw. deaktiviert werden.
+     Veröffentlichen Sie die verweisende Seite neu. Diese Funktion kann ebenfalls für jede Seite einzeln aktiviert bzw. deaktiviert werden.
+
    >[!NOTE]
    >
    >Wenn die Seite bereits aktiviert war, wird sie durch Verschieben automatisch deaktiviert. Standardmäßig wird sie nach dem Verschieben wieder aktiviert. Dies lässt sich jedoch ändern, indem Sie im Fenster **Verschieben** das Kontrollkästchen **Neu veröffentlichen** für die Seite deaktivieren.

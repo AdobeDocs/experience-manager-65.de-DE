@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3682'
-ht-degree: 59%
+source-wordcount: '3681'
+ht-degree: 58%
 
 ---
 
@@ -45,13 +45,13 @@ Das folgende Diagramm zeigt den kompletten Ablauf zum Erstellen, Ausführen und 
 * Ein Workflow ist eine Darstellung eines realen Geschäftsprozesses. Halten Sie Ihren realen Geschäftsprozess und die Liste der Teilnehmer des Geschäftsprozesses bereit. Außerdem sollten Sie die Begleitmaterialien (adaptive Formulare, PDF-Dokumente und mehr) vor der Erstellung eines Workflows aufbewahren.
 * Ein Workflow kann mehrere Phasen aufweisen. Diese Schritte werden im AEM Posteingang angezeigt und helfen, den Fortschritt des Workflows zu melden. Teilen Sie Ihren Geschäftsprozess in logische Phasen auf.
 * Sie können den Schritt &quot;Aufgabe zuweisen&quot;AEM Workflows konfigurieren, um E-Mail-Benachrichtigungen an Benutzer oder Bevollmächtigte zu senden. Also, [E-Mail-Benachrichtigungen aktivieren](#configure-email-service).
-* Ein Workflow kann auch die Adobe für digitale Signaturen verwenden. Wenn Sie planen, Adobe Sign in einem Workflow zu verwenden, wird die [Adobe Sign für AEM Forms konfigurieren](../../forms/using/adobe-sign-integration-adaptive-forms.md) vor der Verwendung in einem Workflow.
+* Ein Workflow kann auch Adobe signieren für digitale Signaturen verwenden. Wenn Sie planen, Adobe Sign in einem Workflow zu verwenden, wird die [Adobe Sign für AEM Forms konfigurieren](../../forms/using/adobe-sign-integration-adaptive-forms.md) vor der Verwendung in einem Workflow.
 
 ## Erstellen Sie ein Workflow-Modell {#create-a-workflow-model}
 
 Ein Workflow-Modell besteht aus Logik und Fluss eines Geschäftsprozesses. Er besteht aus einer Reihe von Schritten. Diese Schritte sind AEM Komponenten. Sie können Workflow-Schritte nach Bedarf mit Parametern und Skripten erweitern, um einen größeren Funktionsumfang und mehr Kontrollmöglichkeiten zu erzielen. AEM Forms bietet einige Schritte zusätzlich zu AEM vordefinierten Schritten. Eine detaillierte Liste der AEM- und AEM Forms-Schritte finden Sie in der [Referenz zu Workflow-Schritten](/help/sites-developing/workflows-step-ref.md) und unter [Formularzentrierte Workflows in OSGi – Schritt-Referenz](../../forms/using/aem-forms-workflow.md).
 
-AEM bietet eine intuitive Benutzeroberfläche zum Erstellen eines Workflow-Modells mithilfe der bereitgestellten Workflow-Schritte. Eine schrittweise Anleitung zum Erstellen eines Workflow-Modells finden Sie unter [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md). Das folgende Beispiel enthält eine schrittweise Anleitung zum Erstellen eines Workflow-Modells für einen Genehmigungs- und Überprüfungs-Workflow:
+AEM bietet eine intuitive Benutzeroberfläche zum Erstellen eines Workflow-Modells mithilfe der bereitgestellten Workflow-Schritte. Eine schrittweise Anleitung zum Erstellen eines Workflow-Modells finden Sie unter [Erstellen von Workflow-Modellen](/help/sites-developing/workflows-models.md). Im folgenden Beispiel finden Sie eine schrittweise Anleitung zum Erstellen eines Workflow-Modells für einen Genehmigungs- und Überprüfungs-Workflow:
 
 >[!NOTE]
 >
@@ -205,11 +205,11 @@ Die von Ihnen erstellte Workflow-Anwendung ist als Antrag im Posteingang verfüg
 
 ### Senden einer Anwendung aus der AEM Forms-App {#afa}
 
-Die AEM Forms-App synchronisiert die Daten mit einem AEM Forms-Server und ermöglicht es Ihnen, Änderungen an den Formulardaten an Aufgaben, an Workflow-Anwendungen und gespeicherten Informationen (Entwürfe/Vorlagen) in Ihrem Konto vorzunehmen. Weitere Informationen finden Sie unter [AEM Forms-App](/help/forms/using/aem-forms-app.md) und in ähnlichen Artikeln.
+Die AEM Forms-App wird mit einem AEM Forms-Server synchronisiert und ermöglicht Ihnen das Vornehmen von Änderungen an Formulardaten, Aufgaben, Workflow-Anwendungen und gespeicherten Informationen (Entwürfe/Vorlagen) in Ihrem Konto. Weitere Informationen finden Sie unter [AEM Forms-App](/help/forms/using/aem-forms-app.md) und in ähnlichen Artikeln.
 
 ### Senden eines adaptiven Formulars {#af}
 
-Sie können die Sendeaktionen eines adaptiven Formulars konfigurieren, um einen Workflow beim Senden des adaptiven Formulars zu starten. Adaptive Formulare stellen die **Aufrufen eines AEM-Workflows** Übermittlungsaktion zum Starten eines Workflows bei Übermittlung eines adaptiven Formulars. Detaillierte Informationen zur Übermittlungsaktion finden Sie unter [Konfigurieren der Sendeaktion](../../forms/using/configuring-submit-actions.md). Um ein adaptives Formular über die AEM Forms-App zu senden, aktivieren Sie in den Eigenschaften des adaptiven Formulars die Option Mit AEM Forms-App synchronisieren .
+Sie können die Sendeaktionen eines adaptiven Formulars konfigurieren, um einen Workflow beim Senden des adaptiven Formulars zu starten. Adaptive Formulare stellen die **Aufrufen eines AEM Workflows** Übermittlungsaktion zum Starten eines Workflows bei Übermittlung eines adaptiven Formulars. Detaillierte Informationen zur Übermittlungsaktion finden Sie unter [Konfigurieren der Sendeaktion](../../forms/using/configuring-submit-actions.md). Um ein adaptives Formular über die AEM Forms-App zu senden, aktivieren Sie in den Eigenschaften des adaptiven Formulars die Option Mit AEM Forms-App synchronisieren .
 
 Sie können ein adaptives Formular so konfigurieren, dass ein Workflow über die AEM Forms-App synchronisiert, gesendet und Trigger wird. Weitere Informationen finden Sie unter [Arbeiten mit einem Formular](/help/forms/using/working-with-form.md).
 
@@ -255,7 +255,7 @@ Ein Administrator (ein Mitglied der Gruppe &quot;fd-administrators&quot;) kann e
    |---|---|
    | Nutzlast Mapper Filter | Wenn Sie einen überwachten Ordner erstellen, wird eine Ordnerstruktur im CRX-Repository erstellt. Die Ordnerstruktur kann als Nutzlast für den Workflow dienen. Sie können ein Skript schreiben, um einen AEM Workflow zuzuordnen und Eingaben aus der Struktur des überwachten Ordners zu akzeptieren. Eine vordefinierte Implementierung ist verfügbar und im Payload Mapper-Filter aufgeführt. Wenn Sie keine benutzerdefinierte Implementierung haben, wählen Sie die Standardimplementierung aus. |
 
-   Die Registerkarte Erweitert enthält weitere Felder. Die meisten dieser Felder enthalten einen Standardwert. Weitere Informationen zu allen Feldern finden Sie unter [Erstellen oder Konfigurieren eines überwachten Ordners](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) Artikel.
+   Die Registerkarte Erweitert enthält weitere Felder. Die meisten dieser Felder enthalten einen Standardwert. Weitere Informationen zu allen Feldern finden Sie unter [Überwachten Ordner erstellen oder konfigurieren](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md) Artikel.
 
 ### Senden einer interaktiven Kommunikation oder eines Briefes {#letter}
 

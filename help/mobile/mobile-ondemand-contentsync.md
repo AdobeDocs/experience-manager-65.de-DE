@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2976'
+source-wordcount: '2974'
 ht-degree: 1%
 
 ---
@@ -36,9 +36,9 @@ Die folgende Schrittfolge zeigt einen typischen Anwendungsfall für die Inhaltss
 
 Einige Richtlinien zur Entwicklung von Content Sync Handlern lauten wie folgt:
 
-* Handler müssen implementieren *com.day.cq.contentsync.handler.ContentUpdateHandler* (entweder direkt oder durch Erweitern einer Klasse, die dies tut)
+* Handler müssen implementieren *com.day.cq.contentsync.handler.ContentUpdateHandler* (entweder direkt oder erweitert eine Klasse, die dies tut)
 * Handler können *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* Der Handler darf nur &quot;true&quot;melden, wenn er den ContentSync-Cache aktualisiert. Falsche Meldung von &quot;true&quot;hat AEM eine Aktualisierung erstellt, wenn keine Aktualisierung tatsächlich vorgenommen wurde.
+* Der Handler darf nur &quot;true&quot;melden, wenn er den ContentSync-Cache aktualisiert. Falsche Berichterstellung von &quot;true&quot;hat AEM eine Aktualisierung erstellt, wenn keine Aktualisierung stattgefunden hat.
 * Handler sollte den Cache nur aktualisieren, wenn der Inhalt geändert wurde. Schreiben Sie nicht in den Cache, wenn kein Weiß erforderlich ist. Dadurch wird eine unnötige Aktualisierung erstellt.
 
 >[!NOTE]
@@ -49,7 +49,7 @@ Einige Richtlinien zur Entwicklung von Content Sync Handlern lauten wie folgt:
 
 Erstellen Sie eine Konfiguration zur Inhaltssynchronisierung , um den Inhalt der ZIP-Datei anzugeben, die an den Client gesendet wird. Sie können beliebig viele Konfigurationen zur Inhaltssynchronisierung erstellen. Jede Konfiguration hat einen Namen zu Identifizierungszwecken.
 
-Um eine Konfiguration für die Inhaltssynchronisierung zu erstellen, fügen Sie eine `cq:ContentSyncConfig` Knoten zum Repository mit dem `sling:resourceType` Eigenschaft auf `contentsync/config`. Die `cq:ContentSyncConfig` -Knoten können sich an einer beliebigen Stelle im Repository befinden. Der Knoten muss jedoch für Benutzer in der AEM Veröffentlichungsinstanz zugänglich sein. Daher sollten Sie den Knoten unten hinzufügen `/content`.
+Um eine Konfiguration für die Inhaltssynchronisierung zu erstellen, fügen Sie eine `cq:ContentSyncConfig` Knoten zum Repository mit dem `sling:resourceType` Eigenschaft festgelegt auf `contentsync/config`. Die `cq:ContentSyncConfig` -Knoten können sich an einer beliebigen Stelle im Repository befinden. Der Knoten muss jedoch für Benutzer in der AEM Veröffentlichungsinstanz zugänglich sein. Daher sollten Sie den Knoten unten hinzufügen `/content`.
 
 Um den Inhalt der ZIP-Datei für die Inhaltssynchronisierung anzugeben, fügen Sie dem Knoten cq:ContentSyncConfig untergeordnete Knoten hinzu. Die folgenden Eigenschaften jedes untergeordneten Knotens identifizieren ein einzuschließendes Inhaltselement und dessen Verarbeitung beim Hinzufügen:
 
@@ -118,14 +118,14 @@ Die Verarbeitung kann von der Darstellung einfacher JSON bis zur vollständigen 
 **content** Inhalt mit Standard rendern [Verarbeitung von Sling-Anforderungen](/help/sites-developing/the-basics.md#sling-request-processing).
 
 * **path** - Pfad zur Ressource, die ausgegeben werden soll.
-* **Erweiterung** - Erweiterung, die in der Anfrage verwendet werden soll. Häufige Beispiele: *html* und *json*, aber jede andere Erweiterung ist möglich.
+* **Erweiterung** - Erweiterung, die in der Anfrage verwendet werden soll. Häufige Beispiele *html* und *json*, aber jede andere Erweiterung ist möglich.
 
-* **selector** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele: *touch* zum Rendern mobiler Versionen einer Seite oder *Unendlichkeit* für die JSON-Ausgabe.
+* **selector** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele *touch* zum Rendern mobiler Versionen einer Seite oder *Unendlichkeit* für die JSON-Ausgabe.
 
 **clientlib** - Verpacken Sie eine JavaScript- oder CSS-Client-Bibliothek.
 
 * **path** - Pfad zum Stammverzeichnis der Client-Bibliothek.
-* **Erweiterung** - Typ der Client-Bibliothek. Dies sollte auf *js* oder *css* im Moment.
+* **Erweiterung** - Typ der Client-Bibliothek. Dies sollte auf Folgendes festgelegt werden: *js* oder *css* im Moment.
 
 **Assets**
 
@@ -144,13 +144,13 @@ Der Bildtyp wird verwendet, um das We Retail-Logo in die ZIP-Datei einzuschließ
 * **path** - Pfad zu einer Seite.
 * **Erweiterung** - Erweiterung, die in der Anfrage verwendet werden soll. Für Seiten ist dies fast immer *html*, aber andere sind noch möglich.
 
-* **selector** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele: *touch* zum Rendern mobiler Versionen einer Seite.
+* **selector** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele *touch* zum Rendern mobiler Versionen einer Seite.
 
 * **deep** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert ist *wahr.*
 
 * **includeImages** - Optionale boolesche Eigenschaft, die bestimmt, ob Bilder einbezogen werden sollen. Der Standardwert ist *true*.
 
-  Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp foundation/components/image zur Aufnahme berücksichtigt. Sie können weitere Ressourcentypen hinzufügen, indem Sie die **Day CQ WCM Pages Update Handler** in der Webkonsole.
+  Standardmäßig werden nur Bildkomponenten mit dem Ressourcentyp foundation/components/image zur Aufnahme berücksichtigt. Durch die Konfiguration der Variablen **Day CQ WCM Pages Update Handler** in der Webkonsole.
 
 **rewrite** - Der Knoten rewrite definiert, wie die Links auf der exportierten Seite neu geschrieben werden. Die neu geschriebenen Links können entweder auf die Dateien in der ZIP-Datei oder auf die Ressourcen auf dem Server verweisen.
 
@@ -169,7 +169,7 @@ Jede Eigenschaft kann einen der folgenden Werte aufweisen:
 
 * `REWRITE_EXTERNAL`: schreibt den Pfad neu, indem er mithilfe des AEM auf die Ressource auf dem Server verweist. [Externalizer-Dienst](/help/sites-developing/externalizer.md).
 
-Der AEM-Dienst namens **PathRewriterTransformerFactory** ermöglicht es Ihnen, die spezifischen HTML-Attribute zu konfigurieren, die neu geschrieben werden. Der Dienst kann in der Web-Konsole konfiguriert werden und verfügt über eine Konfiguration für jede Eigenschaft des `rewrite` node: `clientlibs`, `images`und `links`.
+Der AEM-Dienst namens **PathRewriterTransformerFactory** können Sie die spezifischen HTML-Attribute konfigurieren, die neu geschrieben werden. Der Dienst kann in der Web-Konsole konfiguriert werden und verfügt über eine Konfiguration für jede Eigenschaft des `rewrite` node: `clientlibs`, `images`, und `links`.
 
 Diese Funktion wurde in AEM 5.5 hinzugefügt.
 
@@ -223,11 +223,11 @@ Die folgende Liste zeigt eine Beispielkonfiguration für die Inhaltssynchronisie
 
 Im Beispiel soll die Ereignisauflistungsseite die Anfangsseite sein. Diese Informationen werden im Abschnitt **indexPage** -Eigenschaft und kann daher jederzeit problemlos geändert werden. Eine zweite Eigenschaft definiert den Pfad der *events.plist* -Datei. Wie Sie später sehen, kann die Client-Anwendung jetzt das Manifest lesen und entsprechend handeln.
 
-Wenn die Konfiguration eingerichtet ist, kann der Inhalt mit einem Browser oder einem anderen HTTP-Client heruntergeladen werden. Wenn Sie für iOS entwickeln, können Sie die dedizierte WAppKitSync-Client-Bibliothek verwenden. Der Download-Speicherort besteht aus dem Pfad der Konfiguration und dem *.zip* -Erweiterung, z. B. beim Arbeiten mit einer lokalen AEM-Instanz: *http://localhost:4502/content/weretail_go.zip*
+Wenn die Konfiguration eingerichtet ist, kann der Inhalt mit einem Browser oder einem anderen HTTP-Client heruntergeladen werden. Wenn Sie für iOS entwickeln, können Sie die dedizierte WAppKitSync-Client-Bibliothek verwenden. Der Download-Speicherort besteht aus dem Pfad der Konfiguration und dem *.zip* -Erweiterung, beispielsweise bei der Arbeit mit einer lokalen AEM-Instanz: *http://localhost:4502/content/weretail_go.zip*
 
 ### Die Konsole &quot;Inhaltssynchronisierung&quot; {#the-content-sync-console}
 
-Die Konsole &quot;Inhaltssynchronisierung&quot;listet alle Konfigurationen der Inhaltssynchronisierung im Repository auf (alle Knoten des Typs `cq:ContentSyncConfig`) und für jede Konfiguration können Sie Folgendes tun:
+Die Konsole &quot;Inhaltssynchronisierung&quot;listet alle Konfigurationen der Inhaltssynchronisierung im Repository auf (alle Knoten des Typs `cq:ContentSyncConfig`) und ermöglicht für jede Konfiguration Folgendes:
 
 * Aktualisieren Sie den Cache.
 * Löschen Sie den Cache.
@@ -240,7 +240,7 @@ Auf die Konsole kann unter folgender Adresse zugegriffen werden:
 
 `http://localhost:4502/libs/cq/contentsync/content/console.html`
 
-Sie sieht wie folgt aus:
+Dies sieht wie folgt aus:
 
 ![chlimage_1-50](assets/chlimage_1-50.png)
 
@@ -251,7 +251,7 @@ Obwohl die Anzahl der Konfigurationsoptionen bereits umfangreich ist, deckt sie 
 Für jeden Konfigurationstyp gibt es eine *Content Update Handler*, eine OSGi-Komponentenfabrik, die für diesen bestimmten Typ registriert ist. Diese Handler erfassen Inhalte, verarbeiten sie und fügen sie einem Cache hinzu, der vom Content Sync-Framework verwaltet wird. Implementieren Sie die folgende Schnittstelle oder abstrakte Basisklasse:
 
 * `com.day.cq.contentsync.handler.ContentUpdateHandler` - Schnittstelle, die alle Update-Handler implementieren müssen
-* `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Eine abstrakte Klasse, die das Rendering von Ressourcen mithilfe von Sling vereinfacht
+* `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Eine abstrakte Klasse, die die Darstellung von Ressourcen mithilfe von Sling vereinfacht
 
 Registrieren Sie Ihre Klasse als OSGi-Komponentenfabrik und stellen Sie sie im OSGi-Container in einem Bundle bereit. Dies kann mithilfe der [Maven SCR-Plug-in](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) entweder mit JavaDoc-Tags oder Anmerkungen. Das folgende Beispiel zeigt die JavaDoc-Version:
 
@@ -361,9 +361,9 @@ Um den benutzerdefinierten Handler zu implementieren, erstellen Sie zunächst ei
 
 ## Verwenden des Inhalts auf dem Client {#using-the-content-on-the-client}
 
-Um Inhalte in einer mobilen App zu verwenden, die von der Inhaltssynchronisierung bereitgestellt wird, müssen Sie Inhalte über eine HTTP- oder HTTPS-Verbindung anfordern. Daher können abgerufene Inhalte (in einer ZIP-Datei verpackt) lokal auf dem Mobilgerät extrahiert und gespeichert werden. Inhalt bezieht sich nicht nur auf Daten, sondern auch auf Logik, d. h. vollständige Webanwendungen. Dadurch kann der mobile Benutzer abgerufene Webanwendungen und die entsprechenden Daten auch ohne Netzwerkverbindung ausführen.
+Um Inhalte in einer mobilen App zu verwenden, die von der Inhaltssynchronisierung bereitgestellt wird, müssen Sie Inhalte über eine HTTP- oder HTTPS-Verbindung anfordern. Daher können abgerufene Inhalte (in einer ZIP-Datei verpackt) lokal auf dem Mobilgerät extrahiert und gespeichert werden. Inhalt bezieht sich nicht nur auf Daten, sondern auch auf Logik, d. h. vollständige Webanwendungen. Daher ermöglicht es der mobile Benutzer, abgerufene Webanwendungen und entsprechende Daten auch ohne Netzwerkverbindung auszuführen.
 
-Die Inhaltssynchronisierung liefert Inhalte auf intelligente Weise: Es werden nur Datenänderungen seit der letzten erfolgreichen Datensynchronisation bereitgestellt, wodurch die für die Datenübertragung erforderliche Zeit verkürzt wird. Beim ersten Ausführen einer Anwendung werden seit dem 01. Januar 1970 Datenänderungen angefordert, während später nur Daten angefordert werden, die sich seit der letzten erfolgreichen Synchronisation geändert haben. AEM verwendet ein Client-Kommunikationsframework für iOS, um die Datenkommunikation und -übertragung zu vereinfachen, sodass für die Aktivierung einer iOS-basierten Webanwendung nur ein minimaler systemeigener Code erforderlich ist.
+Die Inhaltssynchronisierung liefert Inhalte auf intelligente Weise: Nur Datenänderungen seit der letzten erfolgreichen Datensynchronisation werden bereitgestellt, was die für die Datenübertragung erforderliche Zeit verkürzt. Beim ersten Ausführen einer Anwendung werden seit dem 01. Januar 1970 Datenänderungen angefordert, während später nur Daten angefordert werden, die sich seit der letzten erfolgreichen Synchronisation geändert haben. AEM verwendet ein Client-Kommunikationsframework für iOS, um die Datenkommunikation und -übertragung zu vereinfachen, sodass für die Aktivierung einer iOS-basierten Webanwendung nur ein minimaler systemeigener Code erforderlich ist.
 
 Alle übertragenen Daten können in dieselbe Verzeichnisstruktur extrahiert werden. Beim Extrahieren von Daten sind keine zusätzlichen Schritte (z. B. Abhängigkeitsprüfungen) erforderlich. Wenn iOS vorhanden ist, werden alle Daten in einem Unterordner im Ordner &quot;Dokumente&quot;der iOS App gespeichert.
 

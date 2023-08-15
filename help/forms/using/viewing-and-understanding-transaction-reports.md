@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 75e1697c301dca3a649833a45caa1753fdc81514
-workflow-type: ht
-source-wordcount: '859'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '858'
+ht-degree: 98%
 
 ---
 
 # Anzeigen und Verstehen von Transaktionsberichten{#viewing-and-understanding-transaction-reports}
 
-Mit Transaktionsberichten können Sie die Anzahl der übermittelten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und verfolgen. Das Ziel bei der Verfolgung dieser Transaktionen ist es, eine fundierte Entscheidung über die Produktnutzung und die Neugewichtung der Investitionen in Hardware und Software treffen zu können. Weitere Informationen finden Sie unter [Übersicht über AEM Forms-Transaktionsberichte](../../forms/using/transaction-reports-overview.md).
+Mit Transaktionsberichten können Sie die Anzahl der gesendeten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und verfolgen. Das Ziel bei der Verfolgung dieser Transaktionen ist es, eine fundierte Entscheidung über die Produktnutzung und die Neugewichtung der Investitionen in Hardware und Software treffen zu können. Weitere Informationen finden Sie unter [Übersicht über AEM Forms-Transaktionsberichte](../../forms/using/transaction-reports-overview.md).
 
 ## Transaktionsberichte einrichten  {#setting-up-transaction-reports}
 
@@ -35,7 +35,6 @@ Die Funktion Transaktionsberichte ist als Teil des Zusatzpakets für AEM Forms v
 >* Bevor Sie Transaktionsberichte verwenden, stellen Sie sicher, dass die Rückwärtsreplikation für alle Veröffentlichungsinstanzen aktiviert ist.
 >* Transaktionsdaten werden von einer Veröffentlichungsinstanz in nur die entsprechende Autoren- oder Verarbeitungsinstanz rückwärts repliziert. Die Autoren- oder Verarbeitungsinstanz kann keine Daten in einer anderen Instanz weiter replizieren.
 >
-
 
 ### Aktivieren Sie die Rückwärtsreplikation auf allen Veröffentlichungsinstanzen. {#enable-reverse-replication-on-all-the-publish-instances}
 

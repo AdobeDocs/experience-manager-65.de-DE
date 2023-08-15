@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: e3afffd0-d90c-4bd0-b814-f7aeac6ceb6d
 docset: aem65
 exl-id: 8de78bde-2fcb-4221-873e-59e347ff2d74
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
-workflow-type: ht
-source-wordcount: '3246'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3242'
+ht-degree: 97%
 
 ---
 
@@ -32,10 +32,9 @@ Workflow-Modelle beinhalten eine Reihe von Schritten unterschiedlichen Typs. Je 
 >* [Verarbeiten von Assets mithilfe von Medien-Handlern und Workflows](/help/assets/media-handlers.md)
 >
 
-
 ## Schritt-Eigenschaften {#step-properties}
 
-Jede Schrittkomponente beinhaltet ein Dialogfeld **Schritt-Eigenschaften**, in dem Sie die erforderlichen Eigenschaften definieren und bearbeiten können.
+Jede Schritt-Komponente verfügt über eine **Schritt-Eigenschaften** -Dialogfeld, in dem Sie die erforderlichen Eigenschaften definieren und bearbeiten können.
 
 ### Schritteigenschaften – Registerkarte „Allgemein“ {#step-properties-common-tab}
 
@@ -48,20 +47,20 @@ Eine Beschreibung des Schritts.
 
 * **Workflow-Phase**
 
-   Eine Dropdown-Auswahl, mit der Sie dem Schritt eine [Phase](/help/sites-developing/workflows.md#workflow-stages) zuweisen können.
+  Eine Dropdown-Auswahl, mit der Sie dem Schritt eine [Phase](/help/sites-developing/workflows.md#workflow-stages) zuweisen können.
 
 * **Zeitüberschreitung**
 
-   Der Zeitraum, nach dem für den Schritt eine Zeitüberschreitung auftritt.
+  Der Zeitraum, nach dem für den Schritt eine Zeitüberschreitung auftritt.
 Folgende Optionen stehen zur Auswahl: **Aus**, **Unmittelbar**, **1 h**, **6 h**, **12 h**, **24 h**.
 
 * **Zeitüberschreitungs-Handler**
 
-   Der Handler, der den Workflow steuert, wenn bei dem Schritt eine Zeitüberschreitung auftritt. Beispiel: `Auto Advancer`
+  Der Handler, der den Workflow steuert, wenn bei dem Schritt eine Zeitüberschreitung auftritt. Beispiel: `Auto Advancer`
 
 * **Handler-Fortschritt**
 
-   Wählen Sie diese Option aus, um den Workflow nach dem Ausführen automatisch mit dem nächsten Schritt fortzuführen. Wenn diese Option nicht ausgewählt ist, muss das Implementierungsskript den Workflow fortführen.
+  Wählen Sie diese Option aus, um den Workflow nach dem Ausführen automatisch mit dem nächsten Schritt fortzuführen. Wenn diese Option nicht ausgewählt ist, muss das Implementierungsskript den Workflow fortführen.
 
 ### Schritteigenschaften – Registerkarte „Benutzer/Gruppe“ {#step-properties-user-group-tab}
 
@@ -96,13 +95,13 @@ So konfigurieren Sie die Aufspaltung:
 
 * Fügen Sie den Verzweigungen Workflow-Schritte hinzu, falls erforderlich.
 
-   ![wf-27](assets/wf-27.png)
+  ![wf-27](assets/wf-27.png)
 
 ## Container-Schritt {#container-step}
 
 Ein Container-Schritt startet ein anderes Workflow-Modell, das als untergeordneter Workflow ausgeführt wird.
 
-Mit diesem Container können Sie Workflow-Modelle wiederverwenden, um häufig verwendete Schrittfolgen zu implementieren. Beispielsweise kann ein Übersetzung-Workflow-Modell in mehreren Bearbeitung-Workflows verwendet werden.
+Mit diesem Container können Sie Workflow-Modelle wiederverwenden, um häufige Schrittfolgen zu implementieren. Beispielsweise kann ein Übersetzung-Workflow-Modell in mehreren Bearbeitung-Workflows verwendet werden.
 
 ![wf-28](assets/wf-28.png)
 
@@ -117,7 +116,7 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 
 ## Zum Schritt wechseln {#goto-step}
 
-Die Option **Zum Schritt wechseln** ermöglicht Ihnen, den nächsten Schritt anzugeben, der im Workflow-Modell ausgeführt werden soll. Sie können eine Regeldefinition, ein externes Skript oder ein ECMA-Skript als Routing-Ausdruck angeben, um den nächsten Schritt für das Workflow-Modell zu bewerten.
+Die **Zum Schritt wechseln** können Sie den nächsten Schritt angeben, der im Workflow-Modell ausgeführt werden soll. Sie können eine Regeldefinition, ein externes Skript oder ein ECMA-Skript als Routing-Ausdruck angeben, um den nächsten Schritt für das Workflow-Modell zu bewerten.
 
 * Wenn die von Ihnen angegebene Bedingung erfüllt ist, wird **Zum Schritt wechseln** abgeschlossen und die Workflow-Engine führt den angegebenen Schritt aus.
 * Wenn die von Ihnen angegebene Bedingung nicht zutrifft, wird **Zum Schritt wechseln** abgeschlossen und die normale Routing-Logik bestimmt den nächsten auszuführenden Schritt.
@@ -202,6 +201,7 @@ So konfigurieren Sie die Aufspaltung:
    * **Allgemein**
 
       * Geben Sie den Namen der Teilung an.
+
    * **Verzweigungen (*x)***
 
       * **Verzweigung hinzufügen:** Fügen Sie dem Schritt weitere Verzweigungen hinzu.
@@ -211,17 +211,18 @@ So konfigurieren Sie die Aufspaltung:
       * **Skript**: Fügen Sie das Skript in das Feld ein, um die aktive Verzweigung zu bewerten, wenn Sie **ECMA-Skript** als Routing-Ausdruck auswählen.
       * **Standardroute**: Im Falle mehrerer Verzweigungen wird die Standardverzweigung befolgt. Sie können nur eine Verzweigung als Standard festlegen.
 
-   >[!NOTE]
-   >
-   >    * Es wird jeweils ein Zweig auf der Grundlage des Routing-Ausdrucks bewertet.
-   >    * Die Verzweigungen werden von oben nach unten bewertet.
-   >    * Das erste Skript, das als „true“ bewertet wird, wird ausgeführt.
-   >    * Falls keine Verzweigung als „true“ bewertet wird, wird der Workflow nicht fortgeführt.
+  >[!NOTE]
+  >
+  >    * Es wird jeweils ein Zweig auf der Grundlage des Routing-Ausdrucks bewertet.
+  >    * Die Verzweigungen werden von oben nach unten bewertet.
+  >    * Das erste Skript, das als „true“ bewertet wird, wird ausgeführt.
+  >    * Falls keine Verzweigung als „true“ bewertet wird, wird der Workflow nicht fortgeführt.
+  >
+  >
 
-
-   >[!NOTE]
-   >
-   >Siehe [Definieren einer Regel für eine ODER-Teilung](/help/sites-developing/workflows-models.md#defineruleecmascript).
+  >[!NOTE]
+  >
+  >Siehe [Definieren einer Regel für eine ODER-Teilung](/help/sites-developing/workflows-models.md#defineruleecmascript).
 
 * Fügen Sie den Verzweigungen Workflow-Schritte hinzu, falls erforderlich.
 
@@ -247,7 +248,6 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
 >* Der Workflow abgeschlossen (beendet) wurde.
 >* Der Workflow wurde abgebrochen (vorzeitig beendet).
 >
-
 
 >[!NOTE]
 >
@@ -285,7 +285,7 @@ Sie können Widget-Daten in der Workflow-Payload oder in den Metadaten des Arbei
 * **Daten mit der Payload speichern**
 
    * Um Widget-Daten als Eigenschaft der Workflow-Payload zu speichern, verwenden Sie folgendes Format für den Wert der name-Eigenschaft des Widget-Knotens:
-      `./jcr:content/nodename`
+     `./jcr:content/nodename`
 
    * Die Daten werden in der `nodename`-Eigenschaft des Payload-Knotens gespeichert. Wenn der Knoten diese Eigenschaft nicht enthält, wird die Eigenschaft erstellt.
    * Wenn Daten bei der Payload gespeichert werden, wird der Wert der Eigenschaft bei nachfolgender Verwendung des Dialogfelds mit derselben Payload überschrieben.
@@ -293,7 +293,7 @@ Sie können Widget-Daten in der Workflow-Payload oder in den Metadaten des Arbei
 * **Speichern von Daten mit dem Arbeitselement**
 
    * Um Widget-Daten als Eigenschaft der Metadaten des Arbeitselements zu speichern, verwenden Sie das folgende Format für den Wert der name-Eigenschaft:
-      `nodename`
+     `nodename`
 
    * Die Daten werden in der `nodename`-Eigenschaft der `metadata` des Arbeitselements gespeichert. Die Daten werden beibehalten, wenn das Dialogfeld anschließend mit derselben Payload verwendet wird.
 
@@ -401,50 +401,51 @@ Erstellen Sie einen OSGi-Dienst oder ein ECMAScript, das Benutzer bzw. Benutzeri
 
 * **ECMA-Skript**
 
-   Skripte müssen eine getParticipant-Funktion enthalten, mit der eine Benutzer-ID als `String`-Wert zurückgegeben wird. Speichern Sie die benutzerdefinierten Skripte beispielsweise im Ordner `/apps/myapp/workflow/scripts` oder in einem Unterordner.
+  Skripte müssen eine getParticipant-Funktion enthalten, mit der eine Benutzer-ID als `String`-Wert zurückgegeben wird. Speichern Sie die benutzerdefinierten Skripte beispielsweise im Ordner `/apps/myapp/workflow/scripts` oder in einem Unterordner.
 
-   Ein Beispielskript ist in einer Standard-AEM-Instanz enthalten:
+  Ein Beispielskript ist in einer Standard-AEM-Instanz enthalten:
 
-   `/libs/workflow/scripts/initiator-participant-chooser.ecma`
+  `/libs/workflow/scripts/initiator-participant-chooser.ecma`
 
-   >[!CAUTION]
-   >
-   >Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen.
-   >
-   >
-   >Der Grund dafür ist, dass der Inhalt von `/libs` überschrieben wird, wenn Sie Ihre Instanz das nächste Mal aktualisieren (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
+  >[!CAUTION]
+  >
+  >Sie dürfen keinerlei Änderungen im Pfad `/libs` vornehmen.
+  >
+  >
+  >Der Grund dafür ist, dass der Inhalt von `/libs` überschrieben wird, wenn Sie Ihre Instanz das nächste Mal aktualisieren (und möglicherweise überschrieben wird, wenn Sie einen Hotfix oder ein Feature Pack anwenden).
 
-   Mit diesem Skript wird der Workflow-Initiator als Teilnehmer ausgewählt:
+  Mit diesem Skript wird der Workflow-Initiator als Teilnehmer ausgewählt:
 
-   ```
-   function getParticipant() {
-       return workItem.getWorkflow().getInitiator();
-   }
-   ```
+  ```
+  function getParticipant() {
+      return workItem.getWorkflow().getInitiator();
+  }
+  ```
 
-   >[!NOTE]
-   >
-   >Die Komponente **Workflow-Initiator-Teilnehmerauswahl** erweitert die Komponente **Dynamischer-Teilnehmer-Schritt** und verwendet dieses Skript für die Implementierung des Schritts.
+  >[!NOTE]
+  >
+  >Die Komponente **Workflow-Initiator-Teilnehmerauswahl** erweitert die Komponente **Dynamischer-Teilnehmer-Schritt** und verwendet dieses Skript für die Implementierung des Schritts.
 
 * **OSGi-Dienst**
 
-   Dienste müssen die Schnittstelle [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) implementieren. Die Schnittstelle definiert die folgenden Mitglieder:
+  Dienste müssen die Schnittstelle [com.day.cq.workflow.exec.ParticipantStepChooser](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) implementieren. Die Schnittstelle definiert die folgenden Mitglieder:
 
    * `SERVICE_PROPERTY_LABEL`-Feld: Geben Sie in diesem Feld den Namen der Teilnehmerauswahl an. Der Name wird in einer Liste der verfügbaren Teilnehmerauswahlen in den Eigenschaften **Dynamischer Teilnehmer – Schritt** angezeigt.
 
    * `getParticipant`-Methode: Gibt die dynamisch aufgelöste Prinzipal-ID als `String`-Wert zurück.
-   >[!CAUTION]
-   >
-   >Die `getParticipant`-Methode gibt die dynamisch aufgelöste Prinzipal-ID zurück. Diese ID kann entweder eine Gruppen-ID oder eine Benutzer-ID sein.
-   >
-   >
-   >Eine Gruppen-ID kann jedoch nur für einen **Teilnehmerschritt** verwendet werden, wenn eine Liste der Teilnehmenden zurückgegeben wird. Für einen **Dynamischen Teilnehmerschritt** wird eine leere Liste zurückgegeben und kann nicht für die Delegierung verwendet werden.
 
-   Um die Implementierung für **Dynamische Teilnehmerschritt**-Komponenten verfügbar zu machen, fügen Sie die Java™-Klasse zum OSGi-Bundle hinzu, das den Dienst exportiert, und stellen Sie das Bundle auf dem AEM-Server bereit.
+  >[!CAUTION]
+  >
+  >Die `getParticipant`-Methode gibt die dynamisch aufgelöste Prinzipal-ID zurück. Diese ID kann entweder eine Gruppen-ID oder eine Benutzer-ID sein.
+  >
+  >
+  >Eine Gruppen-ID kann jedoch nur für einen **Teilnehmerschritt** verwendet werden, wenn eine Liste der Teilnehmenden zurückgegeben wird. Für einen **Dynamischen Teilnehmerschritt** wird eine leere Liste zurückgegeben und kann nicht für die Delegierung verwendet werden.
 
-   >[!NOTE]
-   >
-   >Die **zufallsbasierte Teilnehmerauswahl** ist ein Sampling-Dienst, der willkürlich einen Benutzer auswählt ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). Das Beispiel der Schrittkomponente **Zufällige Teilnehmerwahl** erweitert den **Dynamischen Teilnehmerschritt** und verwendet diesen Dienst für die Implementierung des Schritts.
+  Um die Implementierung für **Dynamische Teilnehmerschritt**-Komponenten verfügbar zu machen, fügen Sie die Java™-Klasse zum OSGi-Bundle hinzu, das den Dienst exportiert, und stellen Sie das Bundle auf dem AEM-Server bereit.
+
+  >[!NOTE]
+  >
+  >Die **zufallsbasierte Teilnehmerauswahl** ist ein Sampling-Dienst, der willkürlich einen Benutzer auswählt ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`). Das Beispiel der Schrittkomponente **Zufällige Teilnehmerwahl** erweitert den **Dynamischen Teilnehmerschritt** und verwendet diesen Dienst für die Implementierung des Schritts.
 
 #### Dynamischer Teilnehmerschritt – Beispiel für einen Teilnehmerauswahldienst {#dynamic-participant-step-example-participant-chooser-service}
 
@@ -523,7 +524,7 @@ Erstellen Sie wie gewohnt ein Formular mit einem **Formular „Teilnehmerschritt
 * Die Komponente **Beginn des Formulars** muss einen Wert für die Eigenschaft `Form Identifier` enthalten.
 * Für die Formularkomponenten muss die Eigenschaft **Elementname** auf den Pfad des Knotens verweisen, in dem die Felddaten gespeichert werden. Der Pfad muss auf einen Knoten im Payload-Inhalt des Workflows verweisen. Der Wert verwendet das folgende Format:
 
-   `./jcr:content/path_to_node`
+  `./jcr:content/path_to_node`
 
 * Das Formular muss die Komponente **Workflow-Senden-Schaltfläche** enthalten. Sie konfigurieren keine Eigenschaften der Komponente.
 
@@ -582,13 +583,13 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
       * Die standardmäßigen ECMAScripts und OSGi-Dienste finden Sie unter [Integrierte Prozesse für Prozessschritte](/help/sites-developing/workflows-process-ref.md).
       * Weitere Informationen zum Erstellen von ECMAScripts für einen Prozessschritt finden Sie unter [Implementieren eines Prozessschritts mit einem ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * Weitere Informationen zum Erstellen von OSGi-Diensten für einen Prozessschritt finden Sie unter [Implementieren eines Prozessschritts mit einer Java™-Klasse](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
+
    * **Handler-Fortschritt**: Wählen Sie diese Option aus, um den Workflow nach der Ausführung automatisch mit dem nächsten Schritt fortzuführen. Wenn diese Option nicht ausgewählt ist, muss das Implementierungsskript den Workflow fortführen.
    * **Argumente**: An den Prozess zu übergebende Argumente.
 
-
 ## Variable festlegen {#set-variable}
 
-Mit dem Schritt „Variable festlegen“ können Sie den Wert einer Variablen festlegen und die Reihenfolge definieren, in der die Werte festgelegt werden. Die Variable wird in der Reihenfolge festgelegt, in der die Variablenzuordnungen im Schritt „Variable festlegen“ aufgeführt sind.
+Im Schritt Variable festlegen können Sie den Wert einer Variablen festlegen und die Reihenfolge definieren, in der die Werte festgelegt werden. Die Variable wird in der Reihenfolge festgelegt, in der die Variablenzuordnungen im Schritt „Variable festlegen“ aufgeführt sind.
 
 ![Hinzufügen einer Zuordnung zum Festlegen einer Variablen](assets/set_variable_addmappingnew.png)
 
@@ -608,5 +609,6 @@ Verwenden und bearbeiten Sie die folgenden Registerkarten, um den Schritt zu kon
       * **XPATH:** Verwenden Sie die Option, um einen Wert aus einer Variablen vom Typ XML abzurufen.
       * **Relativ zur Payload:** Verwenden Sie die Option, wenn der Wert, der in einer Variablen gespeichert werden soll, unter einem Pfad relativ zur Payload verfügbar ist.
       * **Absoluter Pfad:** Verwenden Sie die Option, wenn der Wert, der in einer Variablen gespeichert werden soll, unter einem absoluten Pfad verfügbar ist.
+
    * **Wert angeben:** Um die Variable zuzuordnen, geben Sie einen Wert an. Der Wert, den Sie in diesem Feld angeben, hängt vom Zuordnungsmodus ab.
    * **Zuordnung hinzufügen:** Verwenden Sie diese Option, um weitere Zuordnungen hinzuzufügen, um einen Wert für die Variable festzulegen.

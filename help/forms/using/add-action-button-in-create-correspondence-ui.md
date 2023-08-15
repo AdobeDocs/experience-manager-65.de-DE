@@ -1,17 +1,13 @@
 ---
 title: Fügen Sie benutzerdefinierte Aktionen/Schaltflächen der Benutzeroberfläche „Korrespondenz erstellen“ hinzu
-seo-title: Add custom action/button in Create Correspondence UI
 description: Erfahren Sie, wie Sie benutzerdefinierte Aktionen/Schaltflächen in der Benutzeroberfläche "Korrespondenz erstellen"hinzufügen
-seo-description: Learn how to add custom action/button in Create Correspondence UI
-uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1880'
 ht-degree: 80%
@@ -33,7 +29,7 @@ Um dieses Szenario abzuschließen, benötigen Sie Folgendes:
 * Kenntnisse über CRX und JavaScript
 * LiveCycle Server
 
-## Szenario: Erstellen Sie die Schaltfläche in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;, um einen Brief zur Überprüfung zu senden. {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Szenario: Erstellen Sie die Schaltfläche in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;, um einen Brief zur Überprüfung zu senden {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
 Das Hinzufügen einer Schaltfläche mit einer Aktion (hier Brief zur Überprüfung senden) zur Benutzeroberfläche &quot;Korrespondenz erstellen&quot;umfasst Folgendes:
 
@@ -73,7 +69,7 @@ Das Hinzufügen einer Schaltfläche mit einer Aktion (hier Brief zur Überprüfu
 
       ![Kopieren Sie acmExtensionsConfig.xml](assets/3_acmextensionsconfig_xml_copy.png)
 
-   1. Klicken Sie mit der rechten Maustaste auf die **defaultApp** Ordner unter &quot;/apps/fd/cm/config/defaultApp/&quot; und wählen Sie **Einfügen**.
+   1. Rechtsklicken Sie auf die **defaultApp** Ordner unter &quot;/apps/fd/cm/config/defaultApp/&quot; und wählen Sie **Einfügen**.
    1. Klicken Sie auf **Alle speichern**.
 
 1. Doppelklicken Sie auf die Kopie von acmExtentionsConfig.xml, die Sie neu im Apps-Ordner erstellt haben. Die Datei wird zur Bearbeitung geöffnet.
@@ -108,7 +104,7 @@ Das Hinzufügen einer Schaltfläche mit einer Aktion (hier Brief zur Überprüfu
    | **Name** | **Beschreibung** |
    |---|---|
    | name | Der alphanumerische Name für die auszuführende Aktion. Der Wert dieses Tags wird benötigt, muss eindeutig sein (d. h. innerhalb des modelExtension-Tags) und muss mit einem Buchstaben beginnen. |
-   | label | Die Bezeichnung, die auf der Aktionsschaltfläche angezeigt werden soll |
+   | label | Die auf der Aktionsschaltfläche anzuzeigende Bezeichnung |
    | tooltip | QuickInfo-Text der Schaltfläche, der angezeigt wird, wenn der Benutzer den Mauszeiger über die Schaltfläche bewegt. |
    | styleName | Name des benutzerdefinierten Stils, der auf die Aktionsschaltfläche angewendet wird. |
    | permissionName | Die entsprechende Aktion wird nur angezeigt, wenn der Benutzer über die von permissionName festgelegte Berechtigung verfügt. Wenn Sie permissionName als `forms-users` angeben, erhalten alle Benutzer Zugriff auf diese Option. |
@@ -323,7 +319,7 @@ Das Bearbeiten der Aktion/der Schaltfläche beim Klicken auf die Aktion/Schaltfl
       '</div>';
       ```
 
-### Hinzufügen des LiveCycle-Prozesses zum Aktivieren der Aktion <span class="acrolinxCursorMarker"></code>Handhabung {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### LiveCycle-Prozess hinzufügen, um die Aktion zu aktivieren <span class="acrolinxCursorMarker"></code>Handhabung {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 Aktivieren Sie in diesem Szenario die folgenden Komponenten, die ein Teil der angehängten Datei „components.zip“ sind:
 

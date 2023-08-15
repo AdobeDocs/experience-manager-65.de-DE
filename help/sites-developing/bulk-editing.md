@@ -1,8 +1,8 @@
 ---
 title: Konfigurieren Ihrer Seite für die Massenbearbeitung von Seiteneigenschaften
 seo-title: Configuring your Page for Bulk Editing of Page Properties
-description: Die Massenbearbeitung von Seiteneigenschaften ermöglicht es Ihnen, die Eigenschaften mehrerer Seiten gleichzeitig zu bearbeiten
-seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
+description: Durch Massenbearbeitung von Seiteneigenschaften können Sie die Eigenschaften mehrerer Seiten gleichzeitig bearbeiten
+seo-description: Bulk editing of page properties lets you edit the properties of multiple pages at once
 uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '413'
 ht-degree: 56%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 56%
 
 Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften für die Massenbearbeitung nicht standardmäßig aktiviert. Sie müssen explizit zugelassen sein (aktiviert). Beim Definieren der Seiteneigenschaften, die für die Massenbearbeitung verfügbar sein sollen, müssen Sie bestimmte Auswirkungen berücksichtigen, z. B.:
 
-* Bestimmte Felder sind in der Regel eindeutig. z. B. ein Seitentitel. Sie müssen entscheiden, ob es sinnvoll ist, diese Felder für die Massenbearbeitung zu aktivieren, wenn ein Wert angewendet wird.
+* Bestimmte Felder sind normalerweise eindeutig, z. B. ein Seitentitel. Sie müssen entscheiden, ob es sinnvoll ist, diese Felder für die Massenbearbeitung zu aktivieren, wenn ein Wert angewendet wird.
 * Bestimmte Felder können mehrere Werte haben - dies erfordert eine sinnvolle Darstellung beim Rendern.
 
   Zum Beispiel ein Kontrollkästchen, das „Bereit zur Veröffentlichung“ anzeigt. Dies kann mehrere Werte vor der Massenbearbeitung aufweisen (z. B. &quot;Bereit&quot;, &quot;In Überprüfung&quot;, &quot;In Bearbeitung&quot;).
@@ -57,7 +57,7 @@ Aufgrund der Möglichkeit unterschiedlicher Werte sind die Seiteneigenschaften f
 
 Felder sind in der Seitenkomponente (*not* auf der Vorlage):
 
-1. Öffnen Sie die Seitenkomponente mithilfe der CRXDE Lite (oder einer entsprechenden Methode).
+1. Öffnen Sie die Seitenkomponente mit CRXDE Lite (oder einer entsprechenden Methode).
 
    Beispiel: `/apps/core/wcm/components/page/v1/page`
 

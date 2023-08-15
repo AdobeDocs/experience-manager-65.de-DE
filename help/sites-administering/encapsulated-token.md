@@ -1,7 +1,7 @@
 ---
 title: Unterstützung von Encapsulated Tokens
 seo-title: Encapsulated Token Support
-description: Informieren Sie sich über die Unterstützung von Encapsulated Tokens in AEM.
+description: Erfahren Sie mehr über die Unterstützung von Encapsulated Token in AEM.
 seo-description: Learn about the Encapsulated Token support in AEM.
 uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: ed2cb35593780cd627c15f493e58d3b68c55519b
-workflow-type: ht
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
 source-wordcount: '801'
-ht-degree: 100%
+ht-degree: 36%
 
 ---
 
@@ -21,25 +21,25 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-Standardmäßig verwendet AEM den Token Authentication Handler, um jede Abfrage zu authentifizieren. Um Authentifizierungsabfragen verarbeiten zu können, benötigt der Token Authentication Handler jedoch bei jeder Abfrage Zugriff auf das Repository. Das liegt daran, dass Cookies zur Beibehaltung des Authentifizierungsstatus verwendet werden. Logischerweise muss der Status im Repository beibehalten werden, um nachfolgende Abfragen zu validieren. Daher ist der Authentifizierungsmechanismus „stateful“.
+Standardmäßig verwendet AEM den Token-Authentifizierungs-Handler, um jede Anfrage zu authentifizieren. Um Authentifizierungsanfragen zu erfüllen, benötigt der Token Authentication Handler jedoch Zugriff auf das Repository für jede Anfrage. Dies geschieht, weil Cookies zur Aufrechterhaltung des Authentifizierungsstatus verwendet werden. Logischerweise muss der Status im Repository beibehalten werden, um nachfolgende Anfragen zu validieren. Das bedeutet, dass der Authentifizierungsmechanismus stateful ist.
 
-Dies ist für die horizontale Skalierbarkeit besonders wichtig. Bei einer Bereitstellung mit mehreren Instanzen, wie bei der unten abgebildeten Veröffentlichen-Farm, kann der Lastenausgleich nicht optimal erfolgen. Bei der „stateful“-Authentifizierung ist der beibehaltene Authentifizierungsstatus nur auf der Instanz verfügbar, auf der der Benutzer zuerst authentifiziert wird.
+Dies ist von besonderer Bedeutung für die horizontale Skalierbarkeit. Bei einer Einrichtung mit mehreren Instanzen wie der unten dargestellten Veröffentlichungsfarm kann der Lastenausgleich nicht optimal erreicht werden. Bei der stateful-Authentifizierung ist der beibehaltene Authentifizierungsstatus nur in der Instanz verfügbar, in der der Benutzer zum ersten Mal authentifiziert wird.
 
 ![chlimage_1-33](assets/chlimage_1-33a.png)
 
-Nehmen wir das folgende Szenario als Beispiel:
+Nehmen Sie das folgende Szenario als Beispiel:
 
-Ein Benutzer wird auf der Veröffentlichungsinstanz 1 authentifiziert. Wenn eine nachfolgende Abfrage an die Veröffentlichungsinstanz 2 erfolgt, ist auf dieser Instanz der beibehaltene Authentifizierungsstatus nicht verfügbar, weil der Status im Repository von Veröffentlichen 1 beibehalten wurde und Veröffentlichen 2 ein eigenes Repository hat.
+Ein Benutzer kann in der Veröffentlichungsinstanz 1 authentifiziert werden. Wenn jedoch eine nachfolgende Anfrage an die Veröffentlichungsinstanz 2 gesendet wird, hat diese Instanz diesen beibehaltenen Authentifizierungsstatus nicht, da dieser Status im Repository der Veröffentlichungsinstanz 1 beibehalten wurde und zwei die Veröffentlichungsinstanz ihr eigenes Repository hat.
 
-Die Lösung besteht darin, dauerhafte Verbindungen auf der Ebene des Load-Balancers zu konfigurieren. Mit solchen dauerhaften Verbindungen wird ein Benutzer immer zur selben Veröffentlichungsinstanz geleitet. Dadurch ist ein wirklich optimaler Lastenausgleich nicht möglich.
+Die Lösung dafür besteht darin, Sticky-Verbindungen auf der Ebene des Lastenausgleichs zu konfigurieren. Bei Sticky-Verbindungen wird ein Benutzer immer zur selben Veröffentlichungsinstanz weitergeleitet. Daher ist ein wirklich optimaler Lastenausgleich nicht möglich.
 
-Wenn eine Veröffentlichungsinstanz nicht mehr verfügbar ist, gehen die Sitzungen aller auf dieser Instanz authentifizierten Benutzer verloren. Dies liegt daran, dass der Zugriff auf das Repository zur Validierung des Authentifizierungs-Cookies erforderlich ist.
+Wenn eine Veröffentlichungsinstanz nicht verfügbar ist, verlieren alle Benutzer, die sich auf dieser Instanz authentifiziert haben, ihre Sitzung. Dies liegt daran, dass zum Überprüfen des Authentifizierungs-Cookies Repository-Zugriff erforderlich ist.
 
-## „Stateless“-Authentifizierung mit dem Encapsulated Token {#stateless-authentication-with-the-encapsulated-token}
+## Statuslose Authentifizierung mit dem Encapsulated Token {#stateless-authentication-with-the-encapsulated-token}
 
 Die Lösung für die horizontale Skalierbarkeit besteht in der „Stateless“-Authentifizierung, bei der die neue Unterstützung von Encapsulated Tokens in AEM genutzt wird.
 
-Das Encapsulated Token ist ein kryptografisches Element, das AEM die sichere Erstellung und Validierung von Authentifizierungsdaten offline ermöglicht, ohne dass ein Zugriff auf das Repository nötig ist. So kann eine Authentifizierungsabfrage auf allen Veröffentlichungsinstanzen ohne dauerhafte Verbindung erfolgen. Außerdem bietet dieser Ansatz den Vorteil, dass die Authentifizierungsleistung verbessert wird, da nicht bei jeder Authentifizierungsabfrage ein Zugriff auf das Repository vonnöten ist.
+Das Encapsulated Token ist ein kryptografisches Element, das AEM die sichere Erstellung und Validierung von Authentifizierungsdaten offline ermöglicht, ohne dass ein Zugriff auf das Repository nötig ist. Auf diese Weise kann eine Authentifizierungsanfrage auf allen Veröffentlichungsinstanzen ohne Sticky-Verbindungen erfolgen. Außerdem bietet sie den Vorteil, dass die Authentifizierungsleistung verbessert wird, da nicht bei jeder Authentifizierungsanfrage auf das Repository zugegriffen werden muss.
 
 Wie dies in einer geografisch verteilten Bereitstellung mit MongoMK-Autoren und TarMK-Veröffentlichungsinstanzen funktioniert, sehen Sie in der folgenden Grafik:
 
@@ -47,11 +47,12 @@ Wie dies in einer geografisch verteilten Bereitstellung mit MongoMK-Autoren und 
 
 >[!NOTE]
 >
->Beachten Sie, dass das Encapsulated Token zur Authentifizierung dient. Es stellt sicher, dass das Cookie validiert werden kann, ohne dass ein Zugriff auf das Repository nötig ist. Dennoch ist es erforderlich, dass der Benutzer auf allen Instanzen vorhanden ist und die unter diesem Benutzer gespeicherten Daten für jede Instanz zugänglich sind.
+>Beachten Sie, dass es beim Encapsulated Token um die Authentifizierung geht. Dadurch wird sichergestellt, dass das Cookie validiert werden kann, ohne auf das Repository zugreifen zu müssen. Es ist jedoch weiterhin erforderlich, dass der Benutzer in allen Instanzen vorhanden ist und dass die unter diesem Benutzer gespeicherten Informationen von jeder Instanz aufgerufen werden können.
 >
->Wenn beispielsweise ein neuer Benutzer auf der Veröffentlichungsinstanz 1 erstellt wird, wird er mit dem Encapsulated Token auf der Veröffentlichen-Instanz 2 erfolgreich authentifiziert. Wenn der Benutzer auf der zweiten Veröffentlichungsinstanz nicht vorhanden ist, ist die Abfrage dennoch nicht erfolgreich.
+>Wenn beispielsweise ein neuer Benutzer auf der Veröffentlichungsinstanz Nr. 1 erstellt wird, wird er aufgrund der Funktionsweise des Encapsulated Token erfolgreich auf der Veröffentlichungsinstanz Nr. 2 authentifiziert. Wenn der Benutzer nicht in der zweiten Veröffentlichungsinstanz vorhanden ist, ist die Anfrage trotzdem nicht erfolgreich.
+>
 
-## Konfigurieren des Encapsulated Tokens {#configuring-the-encapsulated-token}
+## Konfigurieren des gekapselten Tokens {#configuring-the-encapsulated-token}
 
 >[!NOTE]
 >Alle Authentifizierungs-Handler, die Benutzer synchronisieren und auf Token-Authentifizierung (wie SAML und OAuth) angewiesen sind, funktionieren nur mit verkapselten Token, wenn:
@@ -60,11 +61,10 @@ Wie dies in einer geografisch verteilten Bereitstellung mit MongoMK-Autoren und 
 >
 >* Benutzer bereits in AEM erstellt werden, wenn die Synchronisierung beginnt. Das bedeutet, dass gekapselte Token in Situationen, in denen die Handler während des Synchronisierungsprozesses Benutzer **erstellen**, nicht unterstützt werden.
 
+Beim Konfigurieren des Encapsulated Tokens müssen einige Aspekte beachtet werden:
 
-Bei der Konfiguration des Encapsulated Tokens müssen Sie einige Aspekte berücksichtigen:
-
-1. Wegen der Verschlüsselung müssen alle Instanzen denselben HMAC-Schlüssel aufweisen. Seit AEM 6.3 werden die Schlüsseldaten nicht mehr im Repository, sondern im Dateisystem selbst gespeichert. Daher besteht die beste Möglichkeit zum Replizieren der Schlüssel darin, sie vom Dateisystem der Quellinstanz zum Dateisystem der Zielinstanz(en) zu kopieren, auf die Sie die Schlüssel replizieren möchten. Weitere Informationen dazu finden Sie unter „Replizieren des HMAC-Schlüssels“.
-1. Das Encapsulated Token muss aktiviert werden. Dies ist über die Web-Konsole möglich.
+1. Aufgrund der Verschlüsselung müssen alle Instanzen denselben HMAC-Schlüssel haben. Seit AEM 6.3 wird das Schlüsselmaterial nicht mehr im Repository, sondern im eigentlichen Dateisystem gespeichert. Vor diesem Hintergrund besteht die beste Möglichkeit, die Schlüssel zu replizieren, darin, sie aus dem Dateisystem der Quellinstanz in das Dateisystem der Zielinstanz(en) zu kopieren, in die Sie die Schlüssel replizieren möchten. Weitere Informationen finden Sie unten unter &quot;Replizieren des HMAC-Schlüssels&quot;.
+1. Das Encapsulated Token muss aktiviert sein. Dies kann über die Web-Konsole erfolgen.
 
 ### Replizieren des HMAC-Schlüssels {#replicating-the-hmac-key}
 
@@ -81,7 +81,7 @@ Um den Schlüssel auf weitere Instanzen zu replizieren, führen Sie die folgende
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
-1. Kopieren Sie die HMAC- und die Master-Dateien.
+1. die HMAC- und Master-Dateien kopieren.
 1. Navigieren Sie dann zur Zielinstanz, auf der Sie den HMAC-Schlüssel duplizieren möchten, und dann zum Ordner „data“. Beispiel:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`

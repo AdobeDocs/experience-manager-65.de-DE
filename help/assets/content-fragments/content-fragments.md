@@ -1,19 +1,19 @@
 ---
 title: Arbeiten mit Inhaltsfragmenten
-description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) seitenunabhängige Inhalte für die Headless-Bereitstellung entwerfen, erstellen, kuratieren und verwenden können.
+description: Erfahren Sie, wie Sie mit Inhaltsfragmenten in Adobe Experience Manager (AEM) seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und verwenden können, die sich ideal für die Headless-Bereitstellung eignen.
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1991'
-ht-degree: 100%
+source-wordcount: '1986'
+ht-degree: 96%
 
 ---
 
 # Arbeiten mit Inhaltsfragmenten {#working-with-content-fragments}
 
-Mit Adobe Experience Manager (AEM) können Sie mit Inhaltsfragmenten [seitenunabhängige Inhalte veröffentlichen](/help/sites-authoring/content-fragments.md), entwerfen, erstellen und kuratieren. Diese ermöglichen Ihnen die Vorbereitung von Inhalten, die an mehreren Stellen / über mehrere Kanäle hinweg verwendet werden können und ideal für die Headless-Bereitstellung sind.
+Mit Adobe Experience Manager (AEM) können Sie Inhaltsfragmente entwerfen, erstellen, kuratieren und [seitenunabhängige Inhalte veröffentlichen](/help/sites-authoring/content-fragments.md) Sie ermöglichen die Vorbereitung von Inhalten, die an mehreren Orten/über mehrere Kanäle hinweg verwendet werden können und ideal für die Headless-Bereitstellung sind.
 
 Inhaltsfragmente enthalten strukturierten Inhalt:
 
@@ -26,7 +26,7 @@ Inhaltsfragmente enthalten strukturierten Inhalt:
       * Eine Kombination aus vielen Feldern unterschiedlicher Datentypen, u. a. Text, Zahl, boolesch, Daten und Zeit.
       * Kann entweder zur Vorbereitung von strukturierteren Inhalten für die Seitenerstellung oder zur Bereitstellung für Ihr Programm verwendet werden.
    * Verschachtelt
-      * Mit den verfügbaren Referenzdatentypen können Sie Ihre Inhalte verschachteln.
+      * Mit den verfügbaren Referenzdatentypen können Sie Ihren Inhalt verschachteln.
       * Wird in der Regel für die Bereitstellung an Ihr Programm verwendet.
 
 Mit der Sling Model (JSON)-Exportfunktion der AEM-Kernkomponenten können Inhaltsfragmente auch im JSON-Format bereitgestellt werden. Diese Form der Bereitstellung:

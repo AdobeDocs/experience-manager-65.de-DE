@@ -10,10 +10,10 @@ discoiquuid: 30aa3177-bcf4-4260-8f64-e73bc907942a
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 2d441820-b394-47c8-b4ca-a8aede590937
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
-source-wordcount: '524'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 95%
 
 ---
 
@@ -32,7 +32,6 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
 >
 >* Warnung: Bei dieser Seite handelt es sich um die Quellseite eines Launches. Das Verschieben der Seite ist nicht zulässig.
 
-
 ### Bearbeiten von Launch-Seiten auf der Basis einer Live Copy {#editing-launch-pages-subject-to-a-live-copy}
 
 Wenn Ihr Launch auf einer [Live Copy](/help/sites-administering/msm.md) basiert, sehen Sie Folgendes:
@@ -44,7 +43,7 @@ Eine Live Copy wird verwendet, um Inhalte *von* der Quellverzweigung *mit* Ihrer
 
 Sie können Änderungen auf dieselbe Weise vornehmen, wie eine standardmäßige Live Copy. Beispiel:
 
-* Durch Klicken auf ein geschlossenes Schloss wird die Synchronisierung unterbrochen und Sie haben die Möglichkeit, neue Aktualisierungen am Inhalt Ihres Launches vorzunehmen. Nach dem Entsperren (Vorhängeschloss öffnen) werden Ihre Änderungen nicht durch Änderungen überschrieben, die an derselben Stelle innerhalb des Quellzweigs vorgenommen werden.
+* Wenn Sie auf ein geschlossenes Vorhängeschloss klicken, wird die Synchronisation unterbrochen und Sie können neue Aktualisierungen am Inhalt in Ihrem Launch vornehmen. Nach dem Entsperren (Vorhängeschloss öffnen) werden Ihre Änderungen nicht durch Änderungen überschrieben, die an derselben Stelle innerhalb des Quellzweigs vorgenommen werden.
 * Sie können die Vererbung für eine bestimmte Seite **aussetzen** (und **fortsetzen**).
 
 Siehe [Ändern des Live-Copy-Inhalts](/help/sites-administering/msm-livecopy.md#changing-live-copy-content).
@@ -72,6 +71,7 @@ Sie können jederzeit Seiten zum Bereich der Quellseiten für einen Launch hinzu
    * über die [Konsole „Launches“](/help/sites-authoring/launches.md#the-launches-console):
 
       * Wählen Sie **Bearbeiten** aus.
+
    * [Verweise (Sites-Konsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console), um die verfügbaren Aktionen anzuzeigen:
 
       * Wählen Sie **Launch bearbeiten** aus.
@@ -93,6 +93,7 @@ Sie können die Eigenschaften für einen Launch jederzeit bearbeiten:
    * über die [Konsole „Launches“](/help/sites-authoring/launches.md#the-launches-console):
 
       * Wählen Sie **Eigenschaften** aus.
+
    * [Verweise (Sites-Konsole)](/help/sites-authoring/launches.md#launches-in-references-sites-console), um die verfügbaren Aktionen anzuzeigen:
 
       * Wählen Sie **Eigenschaften bearbeiten** aus.

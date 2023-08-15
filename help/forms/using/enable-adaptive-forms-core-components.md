@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '888'
 ht-degree: 9%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 9%
 
 **Gilt für:** ✅ Kernkomponenten für adaptive Formulare ❎ Foundation-Komponenten für adaptive Formulare.
 
-Durch die Aktivierung der adaptiven Forms-Kernkomponenten können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von [Auf Kernkomponenten basierende adaptive Forms](create-an-adaptive-form-core-components.md) und [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de) aus Ihrer AEM 6.5 Forms-Umgebung.
+Durch die Aktivierung der Kernkomponenten der adaptiven Forms können Sie mit der Erstellung, Veröffentlichung und Bereitstellung von [Auf Kernkomponenten basierende adaptive Forms](create-an-adaptive-form-core-components.md) und [Headless Adaptive Forms](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html?lang=de) aus Ihrer AEM 6.5 Forms-Umgebung.
 
 Um HAdaptive Forms-Kernkomponenten in Ihrer AEM 6.5 Forms-Umgebung zu aktivieren, richten Sie eine [AEM Archetyp 41 oder höher](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) Basiertes Projekt (mit aktivierten Formularoptionen) auf allen Autoren- und Veröffentlichungsinstanzen.
 

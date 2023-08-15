@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: ht
-source-wordcount: '6036'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '6026'
+ht-degree: 97%
 
 ---
 
@@ -95,7 +95,7 @@ Wenn es sich bei dem Bild um ein JPEG-Bild handelt, kann die Anzeigegröße sich
 
 #### Eigenschaften {#properties}
 
-Das Dialogfeld erlaubt das Bearbeiten der Eigenschaften Ihrer Instanz der adaptiven Bildkomponente, von denen viele mit denen der Bild-Komponente übereinstimmen, auf der sie basieren. Die Eigenschaften werden auf zwei Registerkarten angezeigt:
+Über das Dialogfeld können Sie Eigenschaften für Ihre Instanz der Komponente Adaptives Bild bearbeiten, von denen viele mit der Bildkomponente übereinstimmen, auf der sie basiert. Die Eigenschaften sind auf zwei Registerkarten verfügbar:
 
 * **Bild**
 
@@ -131,7 +131,7 @@ Informationen zum Anpassen der Adaptive Image-Komponente finden Sie unter [Grund
 
 ### Karussell {#carousel}
 
-Mit der Komponente „Karussell“ können Sie Bilder anzeigen, die einzelnen Seiten zugeordnet sind:
+Mit der Karussellkomponente können Sie Bilder anzeigen, die einzelnen Seiten zugeordnet sind:
 
 * jeweils eines
 * für eine kurze Zeit
@@ -397,7 +397,7 @@ Das endgültige Bild (mit **Titel** und **Beschreibung**) sieht beispielsweise w
 
 ### Liste {#list}
 
-Mit der Komponente „Liste“ können Sie Suchkriterien zur Anzeige einer Liste konfigurieren:
+Mit der Komponente Liste können Sie Suchkriterien für die Anzeige einer Liste konfigurieren:
 
 * **Liste**
 
@@ -697,7 +697,7 @@ Weitere Informationen zum Anwenden von Tags finden Sie unter [Verwenden von Tags
 >
 >Adobe empfiehlt, für Tabellen die **Tabellenkomponente** zu verwenden. Sie können jedoch auch mit der **Textkomponente** erstellt werden.
 
-Mit der Textkomponente können Sie einen Textblock unter Verwendung eines WYSIWYG-Editors eingeben, dessen Funktionalität vom [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) bereitgestellt wird. Über mehrere Symbole können Sie den Text formatieren, darunter Schriftmerkmale, Ausrichtung, Links, Listen und Einzug.
+Mit der Textkomponente können Sie einen Textblock unter Verwendung eines WYSIWYG-Editors eingeben, dessen Funktionalität vom [Rich-Text-Editor](/help/sites-classic-ui-authoring/classic-page-author-rich-text-editor.md) bereitgestellt wird. Über eine Auswahl von Symbolen können Sie Ihren Text formatieren, einschließlich Schriftmerkmale, Ausrichtung, Links, Listen und Einzügen.
 
 ![dc_text](assets/dc_text.png)
 
@@ -730,7 +730,7 @@ Sie können Folgendes konfigurieren:
 
 * **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
 
-  Dies ermöglicht die Festlegung des Folgenden:
+  Hier können Sie Folgendes angeben:
 
    * **Bild-Asset**
 
@@ -876,11 +876,11 @@ Beim Konfigurieren einer jeden Formularkomponente sind die folgenden Registerkar
 
 * **Titel und Text**
 
-  Hier müssen Sie grundlegende Informationen angeben, wie den Titel des Formulars und begleitenden Text. Gegebenenfalls können Sie hier auch andere Schlüsselinformationen definieren, z. B. ob für das Feld mehrere Optionen möglich sind und welche Elemente ausgewählt werden können.
+  Hier müssen Sie grundlegende Informationen angeben, wie den Titel des Formulars und begleitenden Text. Gegebenenfalls können Sie auch andere Schlüsselinformationen definieren, z. B. ob das Feld mehrmals ausgewählt werden kann und welche Elemente ausgewählt werden können.
 
 * **Anfangswerte**
 
-  Ermöglicht Ihnen das Festlegen eines Standardwerts.
+  Hier können Sie einen Standardwert angeben.
 
 * **Begrenzungen**
 
@@ -1193,7 +1193,7 @@ Sie können verschiedene Parameter für diese Komponente konfigurieren, einschli
 
 ### Kontrollkästchen-Gruppe {#checkbox-group}
 
-Mit einem Kontrollkästchen können Sie eine Liste aus einem oder mehreren Kontrollkästchen erstellen, von denen mehrere gleichzeitig aktiviert werden können.
+Mit einem Kontrollkästchen können Sie eine Liste mehrerer Kontrollkästchen erstellen, von denen mehrere gleichzeitig ausgewählt werden können.
 
 ![dc_form_checkboxgroupuse](assets/dc_form_checkboxgroupuse.png)
 
@@ -1298,7 +1298,7 @@ Sie können den Elementnamen zusammen mit einem Titel und einer Beschreibung ang
 
 ### Senden-Schaltfläche {#submit-button}
 
-Mit dieser Komponente können Sie eine Schaltfläche „Übermitteln“ mit Standardtext erstellen:
+Mit dieser Komponente können Sie eine Senden-Schaltfläche mit dem Standardtext erstellen:
 
 ![dc_form_submitbutton](assets/dc_form_submitbutton.png)
 
@@ -1308,7 +1308,7 @@ Oder Sie können Ihren eigenen Text eingeben:
 
 ### Feld „Tags“ {#tags-field}
 
-Über dieses Feld können Sie Tags auswählen:
+In diesem Feld können Sie Tags auswählen:
 
 ![dc_form_tags_use](assets/dc_form_tags_use.png)
 

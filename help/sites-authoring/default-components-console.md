@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 61%
 
 ---
@@ -49,7 +49,7 @@ Um Details zu einer bestimmten Komponente anzuzeigen, tippen/klicken Sie auf die
    * Ansehen der allgemeinen Eigenschaften der Komponente
    * Anzeigen der [Symbol oder Abkürzung wurde definiert](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) für die Komponente.
 
-      * Durch Klicken auf die Quelle des Symbols gelangen Sie zu dieser Komponente.
+      * Wenn Sie auf die Quelle des Symbols klicken, gelangen Sie zu dieser Komponente.
 
    * Anzeigen der **Ressourcentyp** und **Resource Super Type** (sofern definiert) für die Komponente.
 

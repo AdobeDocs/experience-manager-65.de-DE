@@ -2,10 +2,10 @@
 title: Wie lassen sich Hashes in dynamischen PDF-Formularen erzeugen und verwenden?
 description: Erzeugen und Verwenden von Hashes in dynamischen PDF-Formularen.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1247'
-ht-degree: 70%
+source-wordcount: '1246'
+ht-degree: 69%
 
 ---
 
@@ -69,7 +69,7 @@ Abhängig von der ausgewählten Hash-Funktion variiert die Länge des Hashs:
 
 ## Ausprobieren der PDF-Beispielformulare {#try-sample-pdf-forms}
 
-Die Beispieldateien für diesen Artikel enthalten zwei PDF-Formulare. Im ersten Beispiel können Sie eine Zeichenfolge eingeben und dann MD4-, MD5-, SHA-1- und SHA-256-Hash-Werte für die Zeichenfolge generieren. Das zweite Beispiel ist ein einfaches Formular, auf dem Textfelder entsperrt werden, wenn das korrekte Kennwort eingegeben wird.
+Die Beispieldateien für diesen Artikel enthalten zwei PDF-Formulare. Im ersten Beispiel können Sie eine Zeichenfolge eingeben und dann MD4, MD5, SHA-1 und SHA-256 Hash-Werte für die Zeichenfolge generieren. Das zweite Beispiel ist ein einfaches Formular, auf dem Textfelder entsperrt werden, wenn das korrekte Kennwort eingegeben wird.
 
 ### Beispiel 1: Generieren von Hash-Werten {#generating-dashes}
 

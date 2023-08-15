@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
 source-wordcount: '2163'
-ht-degree: 100%
+ht-degree: 81%
 
 ---
 
@@ -118,7 +118,7 @@ Erstellen Sie dynamisch ein DDX-Dokument und zerlegen Sie ein PDF-Dokument mithi
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-assembler-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-assembler-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen PDF Assembler-Client.
 
@@ -127,30 +127,30 @@ Erstellen Sie dynamisch ein DDX-Dokument und zerlegen Sie ein PDF-Dokument mithi
 
 1. Erstellen Sie das DDX-Dokument.
 
-   * Erstellen Sie ein Java-`DocumentBuilderFactory`-Objekt, indem Sie die Methode `newInstance` der Klasse `DocumentBuilderFactory` aufrufen.
+   * Java erstellen `DocumentBuilderFactory` -Objekt durch Aufruf der `DocumentBuilderFactory` class&#39; `newInstance` -Methode.
    * Java erstellen `DocumentBuilder` -Objekt durch Aufruf der `DocumentBuilderFactory` -Objekt `newDocumentBuilder` -Methode.
-   * Rufen Sie die Methode `newDocument` des `DocumentBuilder`-Objekts auf, um ein `org.w3c.dom.Document`-Objekt zu instanziieren.
-   * Erstellen Sie das Stammelement des DDX-Dokuments, indem Sie die Methode `createElement` des `org.w3c.dom.Document`-Objekts aufrufen. Diese Methode erstellt ein `Element`-Objekt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen Methode `setAttribute` aufrufen. Hängen Sie schließlich das Element an das Kopfzeilenelement an, indem Sie die Methode `appendChild` des Kopfzeilenelements aufrufen und das Objekt des untergeordneten Elements als Argument übergeben. Die folgenden Code-Zeilen zeigen diese Programmlogik:
-      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
+   * Rufen Sie die `DocumentBuilder` -Objekt `newDocument` -Methode zur Instanziierung einer `org.w3c.dom.Document` -Objekt.
+   * Erstellen Sie das Stammelement des DDX-Dokuments, indem Sie die `org.w3c.dom.Document` -Objekt `createElement` -Methode. Diese Methode erstellt ein `Element`-Objekt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen Methode `setAttribute` aufrufen. Hängen Sie das Element schließlich an das Kopfzeilenelement an, indem Sie die `appendChild` -Methode und übergeben Sie das untergeordnete Element-Objekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
+     ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
-   * Erstellen Sie das Element `PDFsFromBookmarks`, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie einen Wert für das Element `PDFsFromBookmarks` fest, indem Sie seine `setAttribute`-Methode aufrufen. Hängen Sie das Element `PDFsFromBookmarks` an das `DDX`-Element an, indem Sie die Methode `appendChild` des DDX-Elements aufrufen. Übergeben Sie das Objekt des Elements `PDFsFromBookmarks` als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
+   * Erstellen Sie die `PDFsFromBookmarks` -Element durch Aufruf der `Document` -Objekt `createElement` -Methode. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die Methode `createElement`. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie einen Wert für das Element `PDFsFromBookmarks` fest, indem Sie seine `setAttribute`-Methode aufrufen. Hängen Sie die `PDFsFromBookmarks` -Element zu `DDX` -Element durch Aufruf des DDX-Elements `appendChild` -Methode. Übergeben Sie das `PDFsFromBookmarks`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
 
-      ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
+     ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
 
-   * Erstellen Sie ein `PDF`-Element, indem Sie die Methode `createElement` des `Document`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie einen Wert für das `PDF`-Element fest, indem Sie seine `setAttribute`-Methode aufrufen. Hängen Sie das `PDF`-Element an das `PDFsFromBookmarks`-Element an, indem Sie die Methode `appendChild` des `PDFsFromBookmarks`-Elements aufrufen. Übergeben Sie das `PDF`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
+   * Erstellen Sie eine `PDF` -Element durch Aufruf der `Document` -Objekt `createElement` -Methode. Übergeben Sie einen string -Wert, der den Namen des Elements darstellt. Wandeln Sie den Rückgabewert in `Element` um. Legen Sie einen Wert für das Element `PDF` fest, indem Sie seine `setAttribute`-Methode aufrufen. Hängen Sie die `PDF` -Element zu `PDFsFromBookmarks` -Element durch Aufruf der `PDFsFromBookmarks` -Element `appendChild` -Methode. Übergeben Sie das `PDF`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
 
-      ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
+     ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
 
 1. Konvertieren Sie das DDX-Dokument.
 
-   * Erstellen Sie ein `javax.xml.transform.Transformer`-Objekt, indem Sie die statische Methode `newInstance` des `javax.xml.transform.Transformer`-Objekts aufrufen.
-   * Erstellen Sie ein `Transformer`-Objekt, indem Sie die Methode `newTransformer` des `TransformerFactory`-Objekts aufrufen.
+   * Erstellen Sie eine `javax.xml.transform.Transformer` -Objekt durch Aufrufen der `javax.xml.transform.Transformer` Statisches Objekt `newInstance` -Methode.
+   * Erstellen Sie eine `Transformer` -Objekt durch Aufrufen der `TransformerFactory` -Objekt `newTransformer` -Methode.
    * Erstellen Sie ein Objekt `ByteArrayOutputStream`, indem Sie den Konstruktor verwenden.
    * Erstellen Sie ein Objekt `javax.xml.transform.dom.DOMSource`, indem Sie den Konstruktor verwenden. Übergeben Sie das `org.w3c.dom.Document`-Objekt, das das DDX-Dokument darstellt.
    * Erstellen Sie ein `javax.xml.transform.dom.DOMSource`-Objekt, indem Sie seinen Konstruktor verwenden und das `ByteArrayOutputStream`-Objekt übergeben.
-   * Füllen Sie das Java-`ByteArrayOutputStream`-Objekt, indem Sie die Methode `transform` des `javax.xml.transform.Transformer`-Objekts aufrufen. Übergeben Sie das `javax.xml.transform.dom.DOMSource`- und das `javax.xml.transform.stream.StreamResult`-Objekt.
+   * Java ausfüllen `ByteArrayOutputStream` -Objekt durch Aufrufen der `javax.xml.transform.Transformer` -Objekt `transform` -Methode. Übergeben Sie das `javax.xml.transform.dom.DOMSource`- und das `javax.xml.transform.stream.StreamResult`-Objekt.
    * Erstellen Sie ein Byte-Array und weisen Sie ihm die Größe des `ByteArrayOutputStream`-Objekts zu.
-   * Füllen Sie das Byte-Array, indem Sie die Methode `toByteArray` des `ByteArrayOutputStream`-Objekts aufrufen.
+   * Füllen Sie das Byte-Array, indem Sie die `ByteArrayOutputStream` -Objekt `toByteArray` -Methode.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie dessen Konstruktor verwenden und das Byte-Array übergeben.
 
 1. Referenzieren Sie ein zu zerlegendes PDF-Dokument.
@@ -166,11 +166,11 @@ Erstellen Sie dynamisch ein DDX-Dokument und zerlegen Sie ein PDF-Dokument mithi
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Service anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, rufen Sie die Methode `setFailOnError` des `AssemblerOptionSpec`-Objekts auf und übergeben `false`.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie eine Methode aufrufen, die zum `AssemblerOptionSpec`-Objekt gehört. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, rufen Sie die `AssemblerOptionSpec` -Objekt `setFailOnError` -Methode und -übergabe `false`.
 
 1. Zerlegen Sie das PDF-Dokument.
 
-   Rufen Sie die Methode `invokeDDX` des `AssemblerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `AssemblerServiceClient` -Objekt `invokeDDX` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein `com.adobe.idp.Document`-Objekt, das das dynamisch erstellte DDX-Dokument darstellt
    * Ein `java.util.Map`-Objekt, das das zu zerlegende PDF-Dokument enthält
@@ -182,9 +182,9 @@ Erstellen Sie dynamisch ein DDX-Dokument und zerlegen Sie ein PDF-Dokument mithi
 
    Führen Sie die folgenden Schritte aus, um die zerlegten PDF-Dokumente abzurufen:
 
-   * Rufen Sie die `getDocuments`-Methode des `AssemblerResult`-Objekts auf. Diese Methode gibt ein `java.util.Map`-Objekt zurück.
+   * Rufen Sie die `AssemblerResult` -Objekt `getDocuments` -Methode. Diese Methode gibt ein `java.util.Map`-Objekt zurück.
    * Iterieren Sie durch das `java.util.Map`-Objekt, bis Sie das resultierende `com.adobe.idp.Document`-Objekt finden.
-   * Rufen Sie die `copyToFile`-Methode des `com.adobe.idp.Document`-Objekts auf, um das PDF-Dokument zu extrahieren.
+   * Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode, um das PDF-Dokument zu extrahieren.
 
 **Siehe auch**
 
@@ -211,7 +211,7 @@ Erstellen Sie ein DDX-Dokument dynamisch und zerlegen Sie ein PDF-Dokument mithi
    * Erstellen Sie ein `AssemblerServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
    * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` -Objekt mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekr, indem Sie den Wert des Felds `AssemblerServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -222,44 +222,44 @@ Erstellen Sie ein DDX-Dokument dynamisch und zerlegen Sie ein PDF-Dokument mithi
 1. Erstellen Sie das DDX-Dokument.
 
    * Erstellen Sie ein Objekt `System.Xml.XmlElement`, indem Sie den Konstruktor verwenden.
-   * Erstellen Sie das Stammelement des DDX-Dokuments, indem Sie die `CreateElement`-Methode des `XmlElement`-Objekts aufrufen. Diese Methode erstellt ein `Element`-Objekt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `CreateElement`-Methode. Legen Sie einen Wert für das DDX-Element fest, indem Sie dessen `SetAttribute`-Methode aufrufen. Fügen Sie abschließend das Element an das DDX-Dokument an, indem Sie die `AppendChild`-Methode des `XmlElement`-Objekts aufrufen. Übergeben Sie das DDX-Objekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
+   * Erstellen Sie das Stammelement des DDX-Dokuments, indem Sie die `XmlElement` -Objekt `CreateElement` -Methode. Diese Methode erstellt ein `Element`-Objekt, das das Stammelement darstellt. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `CreateElement`-Methode. Legen Sie einen Wert für das DDX-Element fest, indem Sie dessen `SetAttribute`-Methode aufrufen. Hängen Sie abschließend das Element an das DDX-Dokument an, indem Sie die `XmlElement` -Objekt `AppendChild` -Methode. Übergeben Sie das DDX-Objekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
 
-      ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
+     ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
 
-   * Erstellen Sie das `PDFsFromBookmarks`-Element des DDX-Dokuments, indem Sie die `CreateElement`-Methode des `XmlElement`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `CreateElement`-Methode. Legen Sie anschließend einen Wert für das Element fest, indem Sie dessen `SetAttribute`-Methode aufrufen. Fügen Sie das `PDFsFromBookmarks`-Element an das Stammelement an, indem Sie die `AppendChild`-Methode des `DDX`-Elements aufrufen. Übergeben Sie das `PDFsFromBookmarks`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
+   * Erstellen des DDX-Dokuments `PDFsFromBookmarks` -Element durch Aufruf der `XmlElement` -Objekt `CreateElement` -Methode. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `CreateElement`-Methode. Legen Sie anschließend einen Wert für das Element fest, indem Sie dessen `SetAttribute`-Methode aufrufen. Hängen Sie die `PDFsFromBookmarks` -Element durch Aufruf der `DDX` -Element `AppendChild` -Methode. Übergeben Sie das `PDFsFromBookmarks`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
 
-      ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
+     ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
 
-   * Erstellen Sie das `PDF`-Element des DDX-Dokuments, indem Sie die `CreateElement`-Methode des `XmlElement`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `CreateElement`-Methode. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen `SetAttribute`-Methode aufrufen. Fügen Sie das `PDF`-Element an das `PDFsFromBookmarks`-Element an, indem Sie die `AppendChild`-Methode des `PDFsFromBookmarks`-Elements aufrufen. Übergeben Sie das `PDF`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
+   * Erstellen des DDX-Dokuments `PDF` -Element durch Aufruf der `XmlElement` -Objekt `CreateElement` -Methode. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Elements darstellt, an die `CreateElement`-Methode. Legen Sie anschließend einen Wert für das untergeordnete Element fest, indem Sie dessen `SetAttribute`-Methode aufrufen. Hängen Sie die `PDF` -Element zu `PDFsFromBookmarks` -Element durch Aufruf der `PDFsFromBookmarks` -Element `AppendChild` -Methode. Übergeben Sie das `PDF`-Elementobjekt als Argument. Die folgenden Code-Zeilen zeigen diese Programmlogik:
 
-      ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
+     ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
 
 1. Konvertieren Sie das DDX-Dokument.
 
    * Erstellen Sie ein Objekt `System.IO.MemoryStream`, indem Sie den Konstruktor verwenden.
-   * Füllen Sie das `MemoryStream`-Objekt mit dem DDX-Dokument, indem Sie das `XmlElement`-Objekt verwenden, das das DDX-Dokument darstellt. Rufen Sie die `Save`-Methode des `XmlElement`-Objekts auf, und übergeben Sie das `MemoryStream`-Objekt.
+   * Füllen Sie das `MemoryStream`-Objekt mit dem DDX-Dokument, indem Sie das `XmlElement`-Objekt verwenden, das das DDX-Dokument darstellt. Rufen Sie die Methode `Save` des `XmlElement`-Objekts auf und übergeben Sie das `MemoryStream`-Objekt.
    * Erstellen Sie ein Byte-Array und füllen Sie es mit den Daten im `MemoryStream`-Objekt. Der folgende Code zeigt diese Programmlogik:
 
-      ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
+     ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
 
-   * Erstellen Sie ein `BLOB`-Objekt. Weisen Sie das Byte-Array dem Feld `MTOM` des `BLOB`-Objekts zu.
+   * Erstellen Sie ein `BLOB`-Objekt. Weisen Sie das Byte-Array dem `BLOB` -Objekt `MTOM` -Feld.
 
 1. Referenzieren Sie ein zu zerlegendes PDF-Dokument.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Eingabedokuments verwendet. Dieses `BLOB`-Objekt wird an `invokeOneDocument` als Argument übergeben.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie dessen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort des PDF-Eingabedokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen und das Byte-Array, die Startposition und die Länge des zu lesenden Streams übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
 
 1. Legen Sie Laufzeitoptionen fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen speichert, indem Sie seinen Konstruktor verwenden.
-   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Service anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, weisen Sie `false` dem `failOnError`-Datenelement des `AssemblerOptionSpec`-Objekts zu.
+   * Legen Sie Laufzeitoptionen fest, um Ihre Geschäftsanforderungen zu erfüllen, indem Sie einem Datenelement, das zum `AssemblerOptionSpec`-Objekt gehört, einen Wert zuweisen. Um beispielsweise den Assembler-Dienst anzuweisen, die Verarbeitung eines Auftrags fortzusetzen, wenn ein Fehler auftritt, weisen Sie `false` der `AssemblerOptionSpec` -Objekt `failOnError` Datenelement.
 
 1. Zerlegen Sie das PDF-Dokument.
 
-   Rufen Sie die Methode `invokeDDX` des `AssemblerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `AssemblerServiceClient` -Objekt `invokeDDX` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein `BLOB`-Objekt, das das dynamisch erstellte DDX-Dokument darstellt
    * Das `mapItem`-Array, das das PDF-Eingabedokument enthält
@@ -271,9 +271,9 @@ Erstellen Sie ein DDX-Dokument dynamisch und zerlegen Sie ein PDF-Dokument mithi
 
    Führen Sie die folgenden Schritte aus, um die neu erstellten PDF-Dokumente abzurufen:
 
-   * Greifen Sie auf das `documents`-Feld des `AssemblerResult`-Objekts zu. Dies ist ein `Map`-Objekt, das die zerlegten PDF-Dokumente enthält.
-   * Iterieren Sie durch das `Map`-Objekt, um alle Zieldokumente abzurufen. Wandeln Sie dann `value` der Array-Elemente in `BLOB` um.
-   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf die `MTOM`-Eigenschaft von dessen `BLOB`-Objekt zugreifen. Dadurch wird ein Array von Bytes zurückgegeben, die Sie in eine PDF-Datei schreiben können.
+   * Zugriff auf `AssemblerResult` -Objekt `documents` -Feld, das ein `Map` -Objekt, das die zerlegten PDF-Dokumente enthält.
+   * Iterieren Sie durch das `Map`-Objekt, um alle Zieldokumente abzurufen. Dann das Array-Element `value` zu `BLOB`.
+   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf dessen `BLOB` -Objekt `MTOM` -Eigenschaft. Dadurch wird ein Array von Bytes zurückgegeben, die Sie in eine PDF-Datei schreiben können.
 
 **Siehe auch**
 

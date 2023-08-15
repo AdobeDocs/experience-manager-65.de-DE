@@ -4,10 +4,10 @@ description: Erfahren Sie, wie die AEM-Funktion für zugehörige Inhalte eine Ve
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '245'
-ht-degree: 93%
+ht-degree: 89%
 
 ---
 
@@ -30,7 +30,7 @@ Um zugehörige Inhalte zu verknüpfen, müssen zunächst [Medien-Assets zu einer
 1. Je nachdem, ob bereits Sammlungen zugeordnet wurden oder nicht, wählen Sie eine der folgenden Optionen aus:
 
    * **Inhalt verknüpfen**: dies wird die erste zugehörige Sammlung
-   * **Sammlung verknüpfen**: Zugehörige Sammlungen sind bereits konfiguriert
+   * **Sammlung verknüpfen** - verknüpfte Sammlungen, die bereits konfiguriert sind
 
 1. Wählen Sie die erforderliche Sammlung aus.
 

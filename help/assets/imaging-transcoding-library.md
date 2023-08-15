@@ -1,25 +1,25 @@
 ---
 title: Imaging Transcoding Library
-description: Erfahren Sie, wie Sie die Adobe Imaging Transcoding Library – eine Lösung zur Bildverarbeitung, die essenzielle Bildfunktionen wie Bildkodierung, -transkodierung, -Resampling und Größenanpassung übernimmt – konfigurieren und verwenden.
+description: Erfahren Sie, wie Sie die Adobe Imaging Transcoding Library konfigurieren und verwenden, eine Bildverarbeitungslösung, die Bildverarbeitungsfunktionen wie Kodierung, Transkodierung, Bildneubearbeitung und Bildgröße übernimmt.
 contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
 source-wordcount: '992'
-ht-degree: 100%
+ht-degree: 77%
 
 ---
 
 # Imaging Transcoding Library {#imaging-transcoding-library}
 
-Die Adobe Imaging Transcoding Library ist eine proprietäre Bildverarbeitungslösung, die grundlegende Bildbearbeitungsfunktionen ausführen kann, wie:
+Adobe Imaging Transcoding Library ist eine proprietäre Bildverarbeitungslösung, die zentrale Bildbearbeitungsfunktionen durchführen kann, darunter:
 
 * Kodierung
-* Transkodierung (unterstützte Formate konvertieren)
-* Resampling von Bildern, über PS- und Intel IPP-Algorithmen
-* Beibehaltung von Bittiefe und Farbprofil
+* Transkodierung (Konvertieren unterstützter Formate)
+* Bildneubearbeitung mit PS- und Intel IPP-Algorithmen
+* Beibehaltung der Bittiefe und des Farbprofils
 * JPEG-Qualitätskomprimierung
 * Ändern der Bildgröße
 
@@ -27,8 +27,8 @@ Die Imaging Transcoding Library bietet CMYK-Unterstützung und vollständige Alp
 
 Neben der Unterstützung einer Vielzahl von Dateiformaten und Profilen bietet die Imaging Transcoding Library signifikante Vorteile im Vergleich zu anderen Lösungen von Drittanbietern hinsichtlich Leistung, Skalierbarkeit und Qualität. Hier nur einige Vorteile der Verwendung der Imaging Transcoding Library:
 
-* **Skaliert mit zunehmender Dateigröße oder Auflösung**: Die Skalierung wird primär über die patentierte Fähigkeit der Imaging Transcoding Library erzielt, die Größe während der Dekodierung von Dateien anzupassen. Dadurch wird sichergestellt, dass die Speicherverwendung während der Laufzeit immer optimal und keine quadratische Funktion der steigenden Dateigröße oder der Megapixel der Auflösung ist. Die Imaging Transcoding Library kann größere Dateien sowie Dateien mit hoher Auflösung (mit mehr Megapixel) verarbeiten. Tools von Drittanbietern, z. B. ImageMagick, können keine großen Dateien bearbeiten und stürzen bei der Verarbeitung solcher Dateien ab.
-* **Komprimierung in Photoshop-Qualität und Algorithmen für die Größenänderung**: Entspricht dem Branchenstandard hinsichtlich der Qualität des Downsamplings (glatt, scharf und automatisch bikubisch) und der Komprimierungsqualität. Die Imaging Transcoding Library ermittelt außerdem den Qualitätsfaktor des Eingabebildes und setzt für das Ausgabebild intelligent Optimierungstabellen und Qualitätseinstellungen ein. Dies erzeugt Dateien in optimaler Größe, ohne Abstriche bei der visuellen Qualität.
+* **Skaliert mit zunehmender Dateigröße oder Auflösung**: Die Skalierung wird hauptsächlich durch die patentierte Fähigkeit der Imaging Transcoding Library erreicht, die Größe beim Dekodieren von Dateien zu ändern. Diese Funktion stellt sicher, dass die Speicherauslastung der Laufzeitumgebung immer optimal ist und keine quadratische Funktion zur Erhöhung der Dateigröße oder der Auflösung von Megapixeln ist. Die Imaging Transcoding Library kann größere und hochauflösende Dateien (mit höheren Megapixeln) verarbeiten. Drittanbieter-Tools wie ImageMagick können große Dateien nicht verarbeiten und stürzen bei der Verarbeitung solcher Dateien ab.
+* **Algorithmen zur Qualitätskomprimierung und Größenanpassung von Photoshop**: Konsistenz mit dem Branchenstandard in Bezug auf die Qualität der Downsampling (glatt, scharf und automatisch bikubisch) und der Komprimierungsqualität. Die Imaging Transcoding Library ermittelt außerdem den Qualitätsfaktor des Eingabebildes und setzt für das Ausgabebild intelligent Optimierungstabellen und Qualitätseinstellungen ein. Dies erzeugt Dateien in optimaler Größe, ohne Abstriche bei der visuellen Qualität.
 * **Hoher Durchsatz:** Die Antwortzeit ist kürzer und der Durchsatz ist durchgängig höher als bei ImageMagick. Daher verringern sich mit der Imaging Transcoding Library die Wartezeiten für Benutzerinnen und Benutzer und die Kosten für das Hosting.
 * **Bessere Skalierung bei gleichzeitiger Last:** Die Imaging Transcoding Library liefert optimale Leistung bei gleichzeitiger Last. Sie bietet hohen Durchsatz mit optimaler CPU-Leistung, Speichernutzung und niedriger Antwortzeit, was die Kosten für das Hosting verringert.
 
@@ -42,11 +42,11 @@ Die Imaging Transcoding Library ist nur für RHEL 7- und CentOS 7-Distribution
 
 ## Nutzung {#usage}
 
-Die Imaging Transcoding Library bietet unter anderem folgende Befehlszeilenargumente:
+Die Befehlszeilenargumente für die Imaging Transcoding Library können Folgendes umfassen:
 
 ```shell
  -destMime PNG/JPEG: Mime type of output rendition
- -BitDepth 8/16: Preserves Bit Depth. Bitdepth ‘4’ is automatically converted to ‘8’
+ -BitDepth 8/16: Preserves Bit Depth. Bitdepth '4' is automatically converted to '8'
  -preserveBitDepth: Downscales Bit Depth (No upscaling)
  -preserveCMYK: Preserves CMYK color space
  -jpegQuality: Provides jpeg quality parameter (0-12 , corresponding to Photoshop qualities)
@@ -130,7 +130,7 @@ Wenn Sie z. B. Miniaturansichten für ein TIFF-Bild mit der Imaging Transcoding
 
    ![chlimage](assets/chlimage_1-199.png)
 
-1. (Optional) Generieren Sie mit einem einzelnen Befehl Miniaturansichten aus einer Zwischenausgabe. Die Zwischenausgabe dient als Quelle, um statische und Web-Ausgaben zu generieren. Diese Methode ist schneller als die frühere Methode. Sie können mit dieser Methode jedoch keine benutzerdefinierten Parameter auf Miniaturen anwenden.
+1. (Optional) Generieren Sie mit einem einzelnen Befehl Miniaturansichten aus einer Zwischenausgabe. Die Zwischenausgabe dient als Quelle, um statische und Web-Ausgaben zu generieren. Diese Methode ist schneller als die frühere Methode. Mit dieser Methode können Sie jedoch keine benutzerdefinierten Parameter auf Miniaturansichten anwenden.
 
    ![chlimage](assets/chlimage_1-200.png)
 
@@ -138,9 +138,8 @@ Wenn Sie z. B. Miniaturansichten für ein TIFF-Bild mit der Imaging Transcoding
 
 1. Synchronisieren Sie das aktualisierte Workflow-Modell [!UICONTROL DAM-Update-Asset]. Speichern Sie den Workflow.
 
-Überprüfen Sie die Konfiguration, laden Sie ein TIFF-Bild hoch und überwachen Sie die Datei error.log. Ihnen werden `INFO`-Nachrichten auffallen, in denen `SwitchEngineHandlingProcess execute: executing command line` vorkommt. In den Protokollen werden die generierten Ausgabedarstellungen genannt. Sobald der Workflow abgeschlossen ist, können Sie die neuen Ausgabedarstellungen in [!DNL Experience Manager] anzeigen.
+Um die Konfiguration zu überprüfen, laden Sie ein TIFF-Bild hoch und überwachen Sie die Datei error.log . Ihnen werden `INFO`-Nachrichten auffallen, in denen `SwitchEngineHandlingProcess execute: executing command line` vorkommt. In den Protokollen werden die generierten Ausgabedarstellungen genannt. Sobald der Workflow abgeschlossen ist, können Sie die neuen Ausgabedarstellungen in [!DNL Experience Manager] anzeigen.
 
 >[!MORELIKETHIS]
 >
 >* [Artikel zu unterstützten MIME-Typen](assets-formats.md#supported-image-transcoding-library)
-

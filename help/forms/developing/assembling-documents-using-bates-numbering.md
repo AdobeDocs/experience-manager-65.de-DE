@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 77e9b895-1313-4a5b-a2d5-cdb65bdc1966
 role: Developer
 exl-id: 2a4e21c4-f2f5-44cd-b8ed-7b572782a2f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
 source-wordcount: '1922'
-ht-degree: 100%
+ht-degree: 86%
 
 ---
 
@@ -23,13 +23,13 @@ ht-degree: 100%
 
 **Die Beispiele in diesem Dokument gelten nur für eine AEM Forms on JEE-Umgebung.**
 
-Mithilfe der Bates-Nummerierung können Sie PDF-Dokumente zusammenstellen, die eindeutige Seitenkennungen enthalten. *Bates-Nummerierung* ist eine Methode zur Anwendung von eindeutigen Identifikatoren auf einen Stapel verwandter Dokumente. Jede Seite im Dokument (oder in einer Gruppe von Dokumenten) erhält eine Bates-Nummer, mit der die Seite eindeutig identifiziert wird. Beispielsweise Produktionsdokumente, die Materialaufstellungsinformationen enthalten und der Herstellung einer Baugruppe zugeordnet sind, können einen Bezeichner enthalten. Eine Bates-Nummer enthält einen sequenziell erhöhten numerischen Wert sowie ein optionales Präfix und Suffix. Das Präfix + numerisch + Suffix wird als *Bates-Muster* bezeichnet.
+Mithilfe der Bates-Nummerierung können Sie PDF-Dokumente zusammenstellen, die eindeutige Seitenkennungen enthalten. *Bates-Nummerierung* ist eine Methode zur Anwendung von eindeutigen Identifikatoren auf einen Stapel verwandter Dokumente. Jede Seite im Dokument (oder in einer Gruppe von Dokumenten) erhält eine Bates-Nummer, mit der die Seite eindeutig identifiziert wird. Beispielsweise können Fertigungsdokumente, die Materialaufstellungsinformationen enthalten und mit der Herstellung einer Baugruppe verbunden sind, einen Bezeichner enthalten. Eine Bates-Nummer enthält einen sequenziell inkrementierten numerischen Wert sowie ein optionales Präfix und Suffix. Das Präfix + numerisch + Suffix wird als *Bates-Muster* bezeichnet.
 
-Die folgende Illustration zeigt ein PDF-Dokument, das einen eindeutigen Bezeichner enthält, der sich in der Kopfzeile des Dokuments befindet.
+Die folgende Abbildung zeigt ein PDF-Dokument, das eine eindeutige Kennung enthält, die sich in der Kopfzeile des Dokuments befindet.
 
 ![au_au_batesnumber](assets/au_au_batesnumber.png)
 
-Für die Zwecke dieser Ausführungen wird die eindeutige Seitenkennung in der Kopfzeile eines Dokuments platziert. Angenommen, das folgende DDX-Dokument wird verwendet.
+Für diese Diskussion wird die eindeutige Seitenkennung in der Kopfzeile eines Dokuments platziert. Angenommen, das folgende DDX-Dokument wird verwendet.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8"?>
@@ -52,7 +52,7 @@ Dieses DDX-Dokument führt zwei PDF-Dokumente mit dem Namen *map.pdf* und *instr
 
 >[!NOTE]
 >
->Bevor Sie diesen Abschnitt lesen, sollten Sie sich mit dem Zusammenstellen von PDF-Dokumenten mit dem Assembler-Dienst vertraut machen. In diesem Abschnitt werden die Konzepte nicht erläutert, wie z. B. das Erstellen eines Sammlungsobjekts, das Eingabedokumente enthält, oder das Extrahieren der Ergebnisse aus dem zurückgegebenen Sammlungsobjekt. (Siehe [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Bevor Sie diesen Abschnitt lesen, sollten Sie mit dem Zusammenstellen von PDF-Dokumenten mithilfe des Assembler-Dienstes vertraut sein. In diesem Abschnitt werden die Konzepte nicht erläutert, wie z. B. das Erstellen eines Sammlungsobjekts, das Eingabedokumente enthält, oder das Extrahieren der Ergebnisse aus dem zurückgegebenen Sammlungsobjekt. (Siehe [Programmgesteuertes Zusammenstellen von PDF-Dokumenten](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
@@ -130,7 +130,7 @@ So stellen Sie mithilfe der Assembler Service-API (Java) ein PDF-Dokument zusamm
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-assembler-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-assembler-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie einen PDF Assembler-Client.
 
@@ -155,11 +155,11 @@ So stellen Sie mithilfe der Assembler Service-API (Java) ein PDF-Dokument zusamm
 1. Legen Sie den Anfangswert der Bates-Nummer fest.
 
    * Erstellen Sie ein `AssemblerOptionSpec`-Objekt, das Laufzeitoptionen mithilfe seines Konstruktors speichert.
-   * Legen Sie die anfängliche Bates-Nummer fest, indem Sie die `setFirstBatesNumber` des `AssemblerOptionSpec`-Objekts aufrufen und einen numerischen Wert übergeben, der den Anfangswert angibt.
+   * Legen Sie die Anfangszahl der Bates fest, indem Sie die `AssemblerOptionSpec` -Objekt `setFirstBatesNumber` und übergeben einen numerischen Wert, der den Anfangswert angibt.
 
 1. Stellen Sie die PDF-Eingabedokumente zusammen.
 
-   Rufen Sie die `AssemblerServiceClient`-Methode des `invokeDDX`-Objekts auf und übergeben Sie die folgenden erforderlichen Werte:
+   Rufen Sie die `AssemblerServiceClient` -Objekt `invokeDDX` -Methode verwenden und die folgenden erforderlichen Werte übergeben:
 
    * Ein `com.adobe.idp.Document`-Objekt, das das DDX-Dokument darstellt.
    * Ein `java.util.Map`-Objekt, das die ungesicherte PDF-Eingabedatei enthält.
@@ -171,9 +171,9 @@ So stellen Sie mithilfe der Assembler Service-API (Java) ein PDF-Dokument zusamm
 
    Führen Sie die folgenden Schritte aus, um das neu erstellte PDF-Dokument abzurufen:
 
-   * Rufen Sie die `getDocuments`-Methode des `AssemblerResult`-Objekts auf. Diese Aktion gibt ein `java.util.Map`-Objekt zurück.
+   * Rufen Sie die `AssemblerResult` -Objekt `getDocuments` -Methode. Diese Aktion gibt ein `java.util.Map`-Objekt zurück.
    * Gehen Sie schrittweise durch das `java.util.Map`-Objekt, bis Sie das `com.adobe.idp.Document`-Objekt finden.
-   * Rufen Sie die`copyToFile`-Methode des `com.adobe.idp.Document`-Objekts auf, um das PDF-Dokument zu extrahieren.
+   * Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode, um das PDF-Dokument zu extrahieren.
 
 **Siehe auch**
 
@@ -200,7 +200,7 @@ Stellen Sie mithilfe der Assembler-Service-API (Web-Service) ein PDF-Dokument zu
    * Erstellen Sie ein `AssemblerServiceClient`-Objekt, indem Sie seinen standardmäßigen Konstruktor verwenden.
    * Erstellen Sie ein `AssemblerServiceClient.Endpoint.Address` -Objekt mithilfe des `System.ServiceModel.EndpointAddress`-Konstruktors. Übergeben Sie einen Zeichenfolgenwert mit der WSDL an den AEM Forms-Service (z. B. `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekr, indem Sie den Wert des Felds `AssemblerServiceClient.Endpoint.Binding` abrufen. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `AssemblerServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
@@ -212,16 +212,16 @@ Stellen Sie mithilfe der Assembler-Service-API (Web-Service) ein PDF-Dokument zu
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des DDX-Dokuments verwendet.
    * Erstellen Sie ein Objekt `System.IO.FileStream`, indem Sie den Konstruktor aufrufen und einen String-Wert übergeben, der den Dateispeicherort des DDX-Dokuments und den Modus, in dem die Datei geöffnet werden soll, repräsentiert.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen `MTOM`-Feld den Inhalt des Byte-Arrays zuweisen.
 
 1. Referenzieren Sie die PDF-Eingabedokumente.
 
    * Erstellen Sie für jedes PDF-Eingabedokument ein `BLOB`-Objekt, indem Sie seinen Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des PDF-Eingabedokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Speicherort des PDF-Eingabedokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seiner `MTOM`-Eigenschaft den Inhalt des Byte-Arrays zuweisen.
    * Erstellen Sie ein `MyMapOf_xsd_string_To_xsd_anyType`-Objekt. Dieses Sammlungsobjekt wird zum Speichern der PDF-Eingabedokumente verwendet.
    * Erstellen Sie für jedes PDF-Eingabedokument ein `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt. Wenn beispielsweise zwei PDF-Eingabedokumente verwendet werden, erstellen Sie zwei `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekte.
@@ -236,7 +236,7 @@ Stellen Sie mithilfe der Assembler-Service-API (Web-Service) ein PDF-Dokument zu
 
 1. Stellen Sie die PDF-Eingabedokumente zusammen.
 
-   Rufen Sie die Methode `invoke` des `AssemblerServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+   Rufen Sie die `AssemblerServiceClient` -Objekt `invoke` -Methode verwenden und die folgenden Werte übergeben:
 
    * Ein `BLOB`-Objekt, das das DDX-Dokument darstellt.
    * das `MyMapOf_xsd_string_To_xsd_anyType`-Objekt, das die PDF-Eingabedokumente enthält. Seine Schlüssel müssen mit den Namen der PDF-Quelldateien übereinstimmen, und seine Werte müssen die `BLOB`-Objekte sein, die diesen Dateien entsprechen.
@@ -248,9 +248,9 @@ Stellen Sie mithilfe der Assembler-Service-API (Web-Service) ein PDF-Dokument zu
 
    Führen Sie die folgenden Schritte aus, um das neu erstellte PDF-Dokument abzurufen:
 
-   * Greifen Sie auf das Feld `documents` des `AssemblerResult`-Objekts zu, das ein `Map`-Objekt ist, welches die PDF-Ergebnisdokumente enthält.
-   * Iterieren Sie durch das `Map`-Objekt, bis Sie den Schlüssel finden, der dem Namen des Ergebnisdokuments entspricht. Dann wandeln Sie das `value` dieses Array-Elements in ein `BLOB` um.
-   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf die `MTOM`-Eigenschaft seines `BLOB`-Objekts zugreifen. Dadurch wird ein Array von Bytes zurückgegeben, die Sie in eine PDF-Datei schreiben können.
+   * Zugriff auf `AssemblerResult` -Objekt `documents` -Feld, das ein `Map` -Objekt, das die PDF-Ergebnisdokumente enthält.
+   * Iterieren Sie durch das `Map`-Objekt, bis Sie den Schlüssel finden, der dem Namen des Ergebnisdokuments entspricht. Dann das Array-Element `value` zu `BLOB`.
+   * Extrahieren Sie die Binärdaten, die das PDF-Dokument darstellen, indem Sie auf dessen `BLOB` -Objekt `MTOM` -Eigenschaft. Dadurch wird ein Array von Bytes zurückgegeben, die Sie in eine PDF-Datei schreiben können.
 
 **Siehe auch**
 

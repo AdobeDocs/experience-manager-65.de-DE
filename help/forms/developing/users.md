@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: ht
-source-wordcount: '6228'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '6226'
+ht-degree: 99%
 
 ---
 
@@ -519,7 +519,7 @@ Bevor Sie einen Directory Manager Service-Vorgang programmgesteuert durchführen
 
 **Aufrufen der entsprechenden Benutzer- oder Gruppenvorgänge**
 
-Nachdem Sie den Service-Client erstellt haben, können Sie die Benutzer- oder Gruppenverwaltungsvorgänge aufrufen. Mit dem Service-Client können Sie Domains, Benutzer und Gruppen zuweisen, entfernen und abfragen. Beachten Sie, dass es möglich ist, entweder einen Verzeichnisprinzipal oder einen lokalen Prinzipal zu einer lokalen Gruppe hinzuzufügen. Es ist jedoch nicht möglich, einen lokalen Prinzipal zu einer Verzeichnisgruppe hinzuzufügen.
+Nachdem Sie den Service-Client erstellt haben, können Sie die Benutzer- oder Gruppenverwaltungsvorgänge aufrufen. Mit dem Dienst-Client können Sie Domänen, Benutzer und Gruppen zuweisen, entfernen und abfragen. Beachten Sie, dass es möglich ist, entweder einen Verzeichnisprinzipal oder einen lokalen Prinzipal zu einer lokalen Gruppe hinzuzufügen. Es ist jedoch nicht möglich, einen lokalen Prinzipal zu einer Verzeichnisgruppe hinzuzufügen.
 
 **Siehe auch**
 
@@ -628,7 +628,7 @@ Bevor Sie einen AuthorizationManagerService-Vorgang für User Management program
 
 **Aufrufen der entsprechenden Rollen- oder Berechtigungsvorgänge**
 
-Nachdem Sie den Service-Client erstellt haben, können Sie die Rollen- oder Berechtigungsvorgänge aufrufen. Mit dem Service-Client können Sie Rollen und Berechtigungen zuweisen, entfernen und bestimmen.
+Nachdem Sie den Service-Client erstellt haben, können Sie die Rollen- oder Berechtigungsvorgänge aufrufen. Mit dem Dienstclient können Sie Rollen und Berechtigungen zuweisen, entfernen und festlegen.
 
 **Siehe auch**
 
@@ -665,7 +665,6 @@ Führen Sie die folgenden Aufgaben aus, um Rollen und Berechtigungen mithilfe de
 
    * ein `java.lang.String`-Objekt, das die Rollenkennung enthält.
    * Ein Array von `java.lang.String`-Objekten, die die Prinzipalkennungen enthalten.
-
 
 **Siehe auch**
 
@@ -713,7 +712,6 @@ Verwalten Sie Rollen und Berechtigungen mithilfe der Authorization Manager Servi
 
    * ein `string`-Objekt, das die Rollenkennung enthält.
    * Ein Array von `string`-Objekten, die die Prinzipalkennungen enthalten.
-
 
 **Siehe auch**
 

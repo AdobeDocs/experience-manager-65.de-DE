@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 85e993000c016240c0fbf398ec8192990e60eee6
-workflow-type: ht
-source-wordcount: '1366'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1365'
+ht-degree: 98%
 
 ---
 
@@ -56,7 +56,7 @@ Sie können die Leistenauswahl verwenden, um zwischen den Konsolenmodi zu wechse
 
 #### Zeitleiste {#timeline}
 
-In der Zeitleistenansicht können Sie ein einzelnes Projekt auswählen und die Aktivität darauf anzeigen. Verwenden Sie die Leistenauswahl oder den Hotkey `alt+1`, um zu dieser Ansicht zu wechseln.
+In der Timeline-Ansicht können Sie ein einzelnes Projekt auswählen und die Aktivität darauf anzeigen. Verwenden Sie die Leistenauswahl oder den Hotkey `alt+1`, um zu dieser Ansicht zu wechseln.
 
 ![Zeitleistenmodus](assets/project-timeline.png)
 
@@ -175,7 +175,7 @@ In der Kachel **E-Mails** können Sie E-Mail-Anfragen verwalten. Hierüber läss
 
 ![E-Mail-Kachel](assets/project-tile-email.png)
 
-Weitere Informationen finden Sie unter [Workflow „E-Mail anfordern“](/help/sites-authoring/projects-with-workflows.md#request-email-workflow).
+Weitere Informationen finden Sie im Abschnitt [Workflow &quot;E-Mail anfordern&quot;.](/help/sites-authoring/projects-with-workflows.md#request-email-workflow)
 
 ### Workflows {#workflows}
 

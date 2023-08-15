@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2465'
-ht-degree: 53%
+source-wordcount: '2462'
+ht-degree: 51%
 
 ---
 
@@ -43,7 +43,7 @@ Es weist folgende Attribute auf:
 
 Entspricht: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
-**theme**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies umfasst alle themenbezogenen Bibliotheken (CSS und JS) für die jeweiligen Kategorien. Der Designname wird aus der Abfrage extrahiert.
+**theme**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies umfasst alle themenbezogenen Bibliotheken (sowohl CSS als auch JS) für die angegebenen Kategorien. Der Designname wird aus der Abfrage extrahiert.
 
 Entspricht: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
@@ -117,7 +117,7 @@ Es weist die folgenden optionalen Attribute auf:
 
 **tagName**: Name des Elements, das eine nicht leere Ausgabe umgibt. Standardmäßig ist DIV eingestellt.
 
-**Platzhalter** - Standardwert, der für null oder leeren Text im Bearbeitungsmodus, d. h. den Platzhalter, verwendet wird. Beachten Sie, dass die Standardprüfung nach der optionalen Formatierung und Maskierung durchgeführt wird, d. h. nach der Schreibweise in die Ausgabe geschrieben wird. Standardwert ist:
+**Platzhalter** - Standardwert, der für null oder leeren Text im Bearbeitungsmodus, d. h. den Platzhalter, verwendet wird. Beachten Sie, dass die Standardprüfung nach der optionalen Formatierung und Maskierung durchgeführt wird, d. h. nach der Ausgabe unverändert geschrieben wird. Standardwert ist:
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 
@@ -216,7 +216,7 @@ Es weist folgende Attribute auf:
 
 **resourceType**
 
-* Der Ressourcentyp der einzuschließenden Ressource. Wenn der Ressourcentyp festgelegt ist, muss der Pfad der exakte Pfad zu einem Ressourcenobjekt sein: In diesem Fall wird das Hinzufügen von Parametern, Selektoren und Erweiterungen zum Pfad nicht unterstützt.
+* Der Ressourcentyp der einzuschließenden Ressource. Wenn der Ressourcentyp festgelegt ist, muss der Pfad der genaue Pfad zu einem Ressourcenobjekt sein: In diesem Fall wird das Hinzufügen von Parametern, Selektoren und Erweiterungen zum Pfad nicht unterstützt.
 * Wenn die einzuschließende Ressource mit dem Attribut path angegeben ist, das nicht in eine Ressource aufgelöst werden kann, kann das Tag ein synthetisches Ressourcenobjekt aus dem Pfad und diesem Ressourcentyp erstellen.
 * „path“ und „resourceType“ oder „script“ müssen angegeben sein.
 
@@ -248,7 +248,7 @@ Verwenden Sie `<%@ include file="myScript.jsp" %>` oder `<cq:include script="myS
 Sollten Sie `<cq:include>` oder `<sling:include>` verwenden?
 
 * Bei der Entwicklung von AEM-Komponenten empfiehlt Adobe die Verwendung von `<cq:include>`.
-* `<cq:include>` ermöglicht das direkte Einfügen von Skriptdateien anhand ihres Namens, wenn Sie das script-Attribut verwenden. Dabei werden Komponenten- und Ressourcentypvererbung berücksichtigt. Diese ist häufig einfacher als die strikte Einhaltung der Skriptauflösung von Sling mithilfe von Selektoren und Erweiterungen.
+* `<cq:include>` ermöglicht es Ihnen, Skriptdateien bei Verwendung des Skriptattributs direkt nach ihrem Namen einzuschließen. Dabei werden Komponenten- und Ressourcentypvererbung berücksichtigt. Diese ist häufig einfacher als die strikte Einhaltung der Skriptauflösung von Sling mithilfe von Selektoren und Erweiterungen.
 
 ### &lt;cq:includeClientLib> {#cq-includeclientlib}
 
@@ -264,7 +264,7 @@ Es weist folgende Attribute auf:
 
 Entspricht: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
-**theme**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies umfasst alle themenbezogenen Bibliotheken (CSS und JS) für die jeweiligen Kategorien. Der Designname wird aus der Abfrage extrahiert.
+**theme**: Eine durch Kommas getrennte Liste der Client-Bibliothekskategorien. Dies umfasst alle themenbezogenen Bibliotheken (sowohl CSS als auch JS) für die angegebenen Kategorien. Der Designname wird aus der Abfrage extrahiert.
 
 Entspricht: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
@@ -440,7 +440,7 @@ Das Tag `<cq:defineObjects>` macht die folgenden, regelmäßig verwendeten Skrip
 
 Das Tag `<cq:requestURL>` schreibt die aktuelle Anforderungs-URL in JspWriter. Die beiden Tags [`<cq:addParam>`](#amp-lt-cq-addparam)  und [`<cq:removeParam>`](#amp-lt-cq-removeparam)  können innerhalb dieses Tags verwendet werden, um die aktuelle Anforderungs-URL zu bearbeiten, bevor sie geschrieben wird.
 
-Dadurch können Sie Links zur aktuellen Seite mit variierenden Parametern erstellen. So können Sie beispielsweise die Anforderung umwandeln:
+Damit können Sie Links zur aktuellen Seite mit unterschiedlichen Parametern erstellen. So können Sie beispielsweise die Anforderung umwandeln:
 
 `mypage.html?mode=view&query=something` in `mypage.html?query=something`.
 
@@ -528,7 +528,7 @@ Es weist folgende Attribute auf:
 
 **resourceType**
 
-* Der Ressourcentyp der einzuschließenden Ressource. Wenn der Ressourcentyp festgelegt ist, muss der Pfad der exakte Pfad zu einem Ressourcenobjekt sein: In diesem Fall wird das Hinzufügen von Parametern, Selektoren und Erweiterungen zum Pfad nicht unterstützt.
+* Der Ressourcentyp der einzuschließenden Ressource. Wenn der Ressourcentyp festgelegt ist, muss der Pfad der genaue Pfad zu einem Ressourcenobjekt sein: In diesem Fall wird das Hinzufügen von Parametern, Selektoren und Erweiterungen zum Pfad nicht unterstützt.
 * Wenn die einzuschließende Ressource mit dem Attribut path angegeben ist, das nicht in eine Ressource aufgelöst werden kann, kann das Tag ein synthetisches Ressourcenobjekt aus dem Pfad und diesem Ressourcentyp erstellen.
 
 **replaceSelectors**
@@ -545,7 +545,7 @@ Es weist folgende Attribute auf:
 
 >[!NOTE]
 >
->Die Auflösung der Ressource und des Skripts, das im Tag `<sling:include>` enthalten ist, ist dieselbe wie bei einer normalen URL-Auflösung in Sling. Standardmäßig werden die Selektoren, Erweiterungen usw. aus der aktuellen Anforderung auch für das eingeschlossene Skript verwendet. Sie können durch die Tag-Attribute geändert werden: Beispielsweise ermöglicht Ihnen `replaceSelectors="foo.bar"` das Überschreiben der Selektoren.
+>Die Auflösung der Ressource und des Skripts, das im Tag `<sling:include>` enthalten ist, ist dieselbe wie bei einer normalen URL-Auflösung in Sling. Standardmäßig werden die Selektoren, Erweiterungen usw. aus der aktuellen Anforderung auch für das eingeschlossene Skript verwendet. Sie können über die Tag-Attribute geändert werden: z. B. `replaceSelectors="foo.bar"` können Sie die Selektoren überschreiben.
 
 Beispiele:
 
@@ -605,7 +605,7 @@ Das Tag `<sling:defineObjects>` macht die folgenden, regelmäßig verwendeten Sk
 
 **log**
 
-* Bietet einen SLF4J Logger für die Protokollierung in das Sling-Protokollsystem aus Skripten, z. B. log.info(&quot;Ausführen des Skripts&quot;).
+* Bietet einen SLF4J-Logger für die Protokollierung in das Sling-Protokollsystem aus Skripten, z. B. log.info(&quot;Executing my script&quot;).
 
 * Es weist folgende Attribute auf:
 

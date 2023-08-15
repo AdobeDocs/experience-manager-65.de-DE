@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1054'
-ht-degree: 47%
+source-wordcount: '1050'
+ht-degree: 45%
 
 ---
 
@@ -50,7 +50,7 @@ AEM Forms stellt standardmäßig die folgenden Portalkomponenten bereit, gruppie
 
 ### Suche und Auflister {#search-amp-lister}
 
-Mit der Komponente &quot;Search &amp; Lister&quot;können Sie Formulare aus dem Formular-Repository auf Ihrer Portalseite auflisten und Konfigurationsoptionen bereitstellen, um Formulare basierend auf angegebenen Kriterien aufzulisten. Außerdem können Sie mit der Komponente Suchkriterien angeben, damit die Portalbenutzer die gesamte Liste der Formulare durchsuchen können.
+Mit der Komponente &quot;Search &amp; Lister&quot;können Sie Formulare aus dem Formular-Repository auf Ihrer Portalseite auflisten und Konfigurationsoptionen bereitstellen, um Formulare basierend auf bestimmten Kriterien aufzulisten. Außerdem können Sie Suchkriterien angeben, damit Ihre Portal-Benutzer in der Formularliste suchen können.
 
 ### Entwürfe und Einsendungen {#drafts-amp-submissions}
 
@@ -69,7 +69,7 @@ Mit Forms Portal können Sie Formulare aus dem Formular-Repository auf Ihrer Por
 
    1. **Auflisten von Formularen auf einer AEM Sites-Seite**: Fügen Sie der Seite die Komponente **[Search &amp; Lister](../../forms/using/creating-form-portal-page.md)** hinzu und konfigurieren Sie den darin enthaltenen **[Listenbereich](../../forms/using/creating-form-portal-page.md#p-list-pane-p)**, sodass Formulare auf einer Seite aufgelistet werden. Fügen Sie der Komponente **Search &amp; Lister** auch die Komponente **Suchbereich** hinzu und konfigurieren Sie diese, um der Seite Suchfunktionen hinzuzufügen. Die Seite mit der Forms Portal-Komponente wird als [Forms Portal-Seite](../../forms/using/creating-form-portal-page.md).
 
-   1. **Auflisten von Formularen auf einer Nicht-AEM Sites-Seite:** Verwenden Sie die [Forms Portal-Such-APIs](/help/forms/using/listing-forms-webpage-using-apis.md) , um Formulare auf Nicht-AEM Sites-Seiten abzufragen, abzurufen und aufzulisten.
+   1. **Auflisten von Formularen auf einer Seite ohne AEM Sites:** Verwenden Sie die [Forms Portal-Such-APIs](/help/forms/using/listing-forms-webpage-using-apis.md) , um Formulare auf Nicht-AEM Sites-Seiten abzufragen, abzurufen und aufzulisten.
 
 1. **Auflisten von Entwurfs- und gesendeten Formularen auf einer Forms Portal-Seite**: Fügen Sie die Komponente Drafts &amp; Submissions zur Forms Portal-Seite hinzu und konfigurieren Sie sie. Mit der Komponente „“ können Sie alle Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden.
 
@@ -82,7 +82,7 @@ Mit Forms Portal können Sie Formulare aus dem Formular-Repository auf Ihrer Por
 
 ## Verwandte Artikel {#related-articles}
 
-* [Aktivieren von Forms Portal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
+* [Aktivieren von Formularportal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
 * [Forms Portal-Seite erstellen](../../forms/using/creating-form-portal-page.md)
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Verwenden der Komponente „Entwurf und Übermittlung“](../../forms/using/draft-submission-component.md)

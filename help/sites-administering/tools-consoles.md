@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
-source-wordcount: '607'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '604'
+ht-degree: 93%
 
 ---
 
@@ -210,7 +210,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
    <td>Entwicklungsressourcen</td>
   </tr>
   <tr>
-   <td>Implementierung</td>
+   <td>Bereitstellung</td>
    <td> </td>
   </tr>
   <tr>
@@ -394,7 +394,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td>Dashboards</td>
-   <td>Ermöglicht die Erstellung von Reporting-Dashboards. Diese bieten eine anpassbare Möglichkeit zur Festlegung von Seiten, die konsolidierte Daten anzeigen.</td>
+   <td>Ermöglicht die Erstellung von Berichterstellungs-Dashboards, die eine anpassbare Möglichkeit bieten, Seiten zu definieren, die konsolidierte Daten anzeigen.</td>
   </tr>
   <tr>
    <td>Benutzerdefinierte Dokumentation</td>
@@ -454,7 +454,7 @@ Die **Tools-Konsolen** bieten Zugriff auf viele spezialisierte Tools, mit denen 
   </tr>
   <tr>
    <td>Versionierung – Versionen bereinigen</td>
-   <td>Ermöglicht die Bereinigung der Seitenversionen nach Bedarf.</td>
+   <td>Hiermit können Sie Seitenversionen nach Bedarf bereinigen.</td>
   </tr>
   <tr>
    <td>Workflow</td>

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '191'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '190'
+ht-degree: 85%
 
 ---
 
@@ -30,7 +30,7 @@ Mit **CSV-Bericht erstellen** können Sie Informationen über Ihre Seiten in ein
 >
 >Die Download-Funktion (und der Standard-Zielordner) Ihres Browsers werden verwendet.
 
-Der Assistent zum **Erstellen von CSV**-Exporten bietet Ihnen folgende Auswahlmöglichkeiten:
+Die **CSV-Export erstellen** -Assistent ermöglicht die Auswahl von:
 
 * Zu exportierende Eigenschaften
    * Metadaten
@@ -43,7 +43,7 @@ Der Assistent zum **Erstellen von CSV**-Exporten bietet Ihnen folgende Auswahlm�
       * Übersetzt
    * Analyse
       * Seitenansichten
-      * Individuelle Besucher
+      * Unique Visitors
       * Zeit auf Seite
 * Tiefe
    * Übergeordneter Pfad
@@ -66,5 +66,5 @@ So erstellen Sie einen CSV-Export:
 
    ![etc-03](assets/etc-03.png)
 
-1. Wählen Sie die gewünschten Eigenschaften aus, die Sie exportieren möchten.
+1. Wählen Sie die erforderlichen Eigenschaften aus, die exportiert werden sollen.
 1. Wählen Sie **Erstellen**.

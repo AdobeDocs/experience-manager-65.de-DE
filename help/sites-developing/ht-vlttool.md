@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2716'
+source-wordcount: '2715'
 ht-degree: 85%
 
 ---
@@ -34,7 +34,7 @@ Um VLT verwenden zu können, müssen Sie Folgendes tun:
 1. Installieren Sie VLT, aktualisieren Sie die Umgebungsvariablen und aktualisieren Sie die globalen ignorierten Subversion-Dateien.
 1. Richten Sie das AEM-Repository ein (falls noch nicht geschehen).
 1. Sehen Sie sich das AEM Repository an.
-1. Mit dem Repository synchronisieren.
+1. Synchronisieren Sie mit dem Repository.
 1. Testen Sie, ob die Synchronisierung funktioniert hat.
 
 ### Installieren des VLT-Tools {#installing-the-vlt-tool}
@@ -554,7 +554,7 @@ Entfernt den **Konfliktstatus** in Arbeitskopie-Dateien oder Verzeichnissen.
 
 >[!NOTE]
 >
->Mit diesem Befehl werden Konflikte nicht semantisch gelöst oder Konfliktmarkierungen entfernt. Es entfernt lediglich die konfliktbezogenen Artefaktdateien und ermöglicht die erneute Übertragung des PATH.
+>Mit diesem Befehl werden Konflikte nicht semantisch gelöst oder Konfliktmarken entfernt. Es werden lediglich die konfliktbezogenen Artefaktdateien entfernt, sodass PATH erneut übertragen werden kann.
 
 #### Syntax {#syntax-9}
 
@@ -860,7 +860,7 @@ Sobald der Dienst ausgeführt wird, kann er mit den folgenden Parametern konfigu
 >
 >In AEM können Sie die Konfigurationseinstellungen für solche Services auf unterschiedliche Weise vornehmen. Umfassende Informationen finden Sie unter [Konfigurieren von OSGi](/help/sites-deploying/configuring-osgi.md).
 
-#### Ordnerkonfiguration synchronisieren {#sync-folder-configuration}
+#### Konfiguration des Synchronisierungsordners {#sync-folder-configuration}
 
 Jeder Synchronisierungsordner speichert Konfiguration und Status in drei Dateien:
 
@@ -869,7 +869,7 @@ Jeder Synchronisierungsordner speichert Konfiguration und Status in drei Dateien
 * `.vlt-sync.log`: Protokolldatei, die Informationen über die Vorgänge enthält, die beim Synchronisieren durchgeführt werden.
 * `.vlt-sync-filter.xml`: Filter, die definieren, welche Teile des Repositorys synchronisiert werden. Das Format dieser Datei wird im Abschnitt [Durchführen eines gefilterten Auscheckens](#performing-a-filtered-checkout) beschrieben.
 
-Die Datei `.vlt-sync-config.properties` ermöglicht es Ihnen, die folgenden Eigenschaften zu konfigurieren:
+Die `.vlt-sync-config.properties` -Datei können Sie die folgenden Eigenschaften konfigurieren:
 
 **Deaktiviert** Schaltet die Synchronisierung ein oder aus. Standardmäßig ist dieser Parameter auf false gesetzt, um die Synchronisierung zu ermöglichen.
 

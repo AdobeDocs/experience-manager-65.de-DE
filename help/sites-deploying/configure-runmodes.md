@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '748'
-ht-degree: 97%
+source-wordcount: '745'
+ht-degree: 92%
 
 ---
 
 # Ausführungsmodi{#run-modes}
 
-Mit Ausführungsmodi können Sie Ihre AEM-Instanz auf einen bestimmten Zweck ausrichten, zum Beispiel auf Author oder Publish, Tests, Entwicklung, Intranet usw.
+Mit Ausführungsmodi können Sie Ihre AEM für einen bestimmten Zweck anpassen, z. B. für Autoren- oder Veröffentlichungsinstanz, Test, Entwicklung, Intranet oder andere.
 
 Sie haben folgende Möglichkeiten:
 
@@ -85,7 +85,7 @@ Der Ausführungsmodus nosamplecontent wurde für Produktionsinstallationen entwi
 
 Eine Sammlung von Werten für Konfigurationseigenschaften, die für einen bestimmten Ausführungsmodus verwendet werden, kann im Repository gespeichert werden.
 
-Der Ausführungsmodus wird durch ein Suffix nach dem Ordnernamen angegeben. Auf diese Weise können Sie alle Konfigurationen in einem Repository speichern. Beispiel:
+Der Ausführungsmodus wird durch ein Suffix nach dem Ordnernamen angegeben. Auf diese Weise können Sie alle Konfigurationen in einem Repository speichern, als. Beispiel:
 
 * `config`
 

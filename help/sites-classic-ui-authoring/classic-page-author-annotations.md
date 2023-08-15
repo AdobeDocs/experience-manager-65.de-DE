@@ -1,16 +1,16 @@
 ---
 title: Anmerkungen beim Bearbeiten einer Seite
-description: Das Hinzufügen von Inhalten zu den Seiten Ihrer Website kann oft diskutiert werden, bevor sie tatsächlich veröffentlicht werden. Viele Komponenten, die direkt zur Handhabung von Inhalten verwendet werden, ermöglichen das Hinzufügen von Anmerkungen.
+description: Das Hinzufügen von Inhalten zu den Seiten Ihrer Website kann oft diskutiert werden, bevor sie tatsächlich veröffentlicht werden. Um dies zu unterstützen, können Sie mit vielen Komponenten, die sich direkt auf den Inhalt beziehen, Anmerkungen hinzufügen.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '767'
-ht-degree: 53%
+source-wordcount: '764'
+ht-degree: 46%
 
 ---
 
@@ -30,7 +30,7 @@ Bei einer Anmerkung wird eine farbige Markierung/Haftnotiz auf der Seite platzie
 
 >[!CAUTION]
 >
->Beim Löschen einer Ressource (z. B. eines Absatzes) werden alle Anmerkungen und Zeichnungen gelöscht, die mit dieser Ressource verbunden sind. unabhängig von ihrer Position auf der Seite als Ganzes.
+>Beim Löschen einer Ressource (z. B. eines Absatzes) werden alle Anmerkungen und Zeichnungen gelöscht, die mit dieser Ressource verbunden sind, unabhängig von ihrer Position auf der Seite als Ganzes.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ Zu Tracking-Zwecken gibt die Fußzeile den Benutzer an, der die Anmerkung erstel
 
 Eine Bestätigung wird angefordert, wenn Sie die Anmerkung löschen (beim Löschen einer Anmerkung werden auch alle mit dieser Anmerkung verknüpften Zeichnungen gelöscht).
 
-Über die drei Symbole oben links können Sie die Anmerkung (zusammen mit allen damit verbundenen Zeichnungen) minimieren, die Farbe ändern und Zeichnungen hinzufügen.
+Mit den drei Symbolen oben links können Sie die Anmerkung (zusammen mit allen zugehörigen Zeichnungen) minimieren, die Farbe ändern und Zeichnungen hinzufügen.
 
 >[!NOTE]
 >

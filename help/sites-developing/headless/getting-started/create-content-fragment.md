@@ -2,10 +2,10 @@
 title: Schnellstartanleitung zum Erstellen von Inhaltsfragmenten per Headless-Implementierung
 description: Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhalte für die Headless-Bereitstellung entwerfen, erstellen, kuratieren und verwenden können.
 exl-id: 5787204d-bcce-447e-b98c-2bc1c0d744c3
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
-workflow-type: ht
-source-wordcount: '387'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 93%
 
 ---
 
@@ -17,7 +17,7 @@ Erfahren Sie, wie Sie mit den Inhaltsfragmenten von AEM seitenunabhängige Inhal
 
 [Nachdem Sie einen Asset-Ordner erstellt haben](create-assets-folder.md), in dem Ihre Inhaltsfragmente gespeichert werden sollen, können Sie nun Fragmente erstellten.
 
-Inhaltsfragmente ermöglichen Ihnen das Entwerfen, Erstellen, Kuratieren und Verwenden von seitenunabhängigen Inhalten. Außerdem können Sie Inhalte zur Verwendung an mehreren Orten und über mehrere Kanäle hinweg vorbereiten.
+Mit Inhaltsfragmenten können Sie seitenunabhängige Inhalte entwerfen, erstellen, kuratieren und veröffentlichen. Sie ermöglichen die Vorbereitung von Inhalten, die an mehreren Orten und über mehrere Kanäle hinweg verwendet werden können.
 
 Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bereitgestellt werden.
 

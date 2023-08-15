@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1863'
-ht-degree: 55%
+source-wordcount: '1860'
+ht-degree: 53%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 55%
 >
 >[API-Dokumentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) ist ebenfalls verfügbar.
 
-Das Integrations-Framework enthält eine Integrationsebene mit einer API. Dies ermöglicht es Ihnen, AEM-Komponenten für eCommerce-Funktionen (unabhängig von einer bestimmten eCommerce-Engine) zu erstellen. Außerdem können Sie die interne CRX-Datenbank verwenden oder ein eCommerce-System einbinden und Produktdaten in AEM abrufen.
+Das Integrations-Framework enthält eine Integrationsebene mit einer API. Auf diese Weise können Sie AEM Komponenten für eCommerce-Funktionen erstellen (unabhängig von Ihrer spezifischen eCommerce-Engine). Außerdem können Sie die interne CRX-Datenbank verwenden oder ein eCommerce-System einbinden und Produktdaten in AEM abrufen.
 
 Eine Reihe vorkonfigurierter AEM-Komponenten wird zur Verwendung der Integrationsebene bereitgestellt. Derzeit sind dies:
 
@@ -33,7 +33,7 @@ Eine Reihe vorkonfigurierter AEM-Komponenten wird zur Verwendung der Integration
 * Checkout
 * Suchen
 
-Für die Suche wird ein Integrations-Hook zur Verfügung gestellt, mit dem Sie die AEM-Suche, eine Suche von Drittanbietern oder eine Kombination daraus verwenden können.
+Für die Suche wird ein Integrations-Hook bereitgestellt, mit dem Sie die AEM, eine Drittanbietersuche oder eine Kombination daraus verwenden können.
 
 ## Auswahl der eCommerce-Engine {#ecommerce-engine-selection}
 
@@ -82,7 +82,7 @@ In einer Standard-AEM-Installation wird eine spezifische Implementierung benöti
 
 >[!NOTE]
 >
->Mithilfe der CRXDE Lite können Sie sehen, wie dies in der Produktkomponente für die AEM allgemeine Implementierung gehandhabt wird:
+>Mithilfe von CRXDE Lite können Sie sehen, wie dies in der Produktkomponente für die AEM allgemeine Implementierung gehandhabt wird:
 >
 >`/apps/geometrixx-outdoors/components/product`
 
@@ -104,16 +104,16 @@ Die **CommerceSession**:
   `CommerceSession.getUserContext()`
 
 * Kann Versanddetails über `updateOrder(Map<String, Object> delta)` abrufen oder aktualisieren.
-* Eigentümer des **payment** Verarbeitungsverbindung
+* Eigentümer ist auch das **payment** Verarbeitungsverbindung
 * Sie steuert ebenfalls die Verbindung für die **Auftragserfüllung**.
 
 ### Architektur {#architecture}
 
 #### Architektur von Produkt und Varianten {#architecture-of-product-and-variants}
 
-Ein einzelnes Produkt kann mehrere Varianten aufweisen. Beispielsweise kann es je nach Farbe und/oder Größe variieren. Ein Produkt muss definieren, welche Eigenschaften die Variante beeinflussen. wir diese *Variantenachsen*.
+Ein einzelnes Produkt kann mehrere Variationen aufweisen, z. B. kann es je nach Farbe und/oder Größe variieren. Ein Produkt muss definieren, welche Eigenschaften die Variante beeinflussen; wir nennen diese *Variantenachsen*.
 
-Es sind jedoch nicht alle Eigenschaften Variantenachsen. Varianten können sich auch auf andere Eigenschaften auswirken. Beispielsweise kann der Preis von der Größe abhängen. Diese Eigenschaften können nicht vom Käufer ausgewählt werden und werden daher nicht als Variantenachsen betrachtet.
+Es sind jedoch nicht alle Eigenschaften Variantenachsen. Varianten können sich auch auf andere Eigenschaften auswirken, z. B. kann der Preis von der Größe abhängen. Diese Eigenschaften können nicht vom Käufer ausgewählt werden und werden daher nicht als Variantenachsen betrachtet.
 
 Jedes Produkt bzw. jede Variante steht für eine Ressource und ist daher im Verhältnis 1:1 einem Repository-Knoten zugeordnet. Eine Folge ist, dass ein bestimmtes Produkt und/oder eine bestimmte Variante durch ihren Pfad eindeutig identifiziert werden kann.
 
@@ -241,12 +241,12 @@ public class AxisFilter implements VariantFilter {
 * **Allgemeiner Speichermechanismus**
 
    * Produktknoten sind nt:unstructured.
-   * Ein Produktknoten kann entweder:
+   * Ein Produktknoten kann Folgendes sein:
 
       * Referenz mit den an anderer Stelle gespeicherten Produktdaten:
 
          * Produktverweise enthalten eine `productData`-Eigenschaft, die auf die Produktdaten verweist (in der Regel unter `/etc/commerce/products`).
-         * Die Produktdaten sind hierarchisch; Produktattribute werden von den Vorgängern eines Produktdatenknotens vererbt.
+         * Die Produktdaten sind hierarchisch. Produktattribute werden von den Vorgängern eines Produktdatenknotens übernommen.
          * Produktverweise können auch lokale Eigenschaften enthalten, die die in ihren Produktdaten angegebenen überschreiben.
 
       * Ein Produkt selbst:
@@ -315,7 +315,7 @@ public class AxisFilter implements VariantFilter {
 
 * Obwohl dies nicht direkt mit dem Warenkorb zusammenhängt, muss die `CommerceSession` auch Kataloginformationen angeben (da sie die Preise steuert).
 
-   * Preise können mehrere Modifikatoren aufweisen:
+   * Die Preise können mehrere Modifikatoren aufweisen:
 
       * Mengenrabatte.
       * Verschiedene Währungen.
@@ -343,7 +343,7 @@ public class AxisFilter implements VariantFilter {
 
 ![chlimage_1-33](/help/sites-developing/assets/chlimage_1-33a.png)
 
-#### Architektur des Auscheckens {#architecture-of-checkout}
+#### Architektur des Checkout {#architecture-of-checkout}
 
 **Warenkorb- und Bestelldaten**
 
@@ -440,7 +440,7 @@ Einstiegspunkt für die Such-API ist die `CommerceService#search`-Methode, die e
       * Ein Promotionpfad (der die Aktion definiert, die der Gutschein anwendet).
 
    * Gutscheine verfügen nicht über eigene Ein- und Ausschaltzeiten, sondern über die ihrer übergeordneten Kampagnen.
-   * Externe Commerce-Engines können auch Gutscheine bereitstellen. diese erfordern mindestens:
+   * Externe Commerce-Engines können auch Gutscheine bereitstellen. Diese erfordern mindestens Folgendes:
 
       * Ein Gutscheincode
       * eine `isValid()`-Methode
@@ -521,7 +521,7 @@ Die bereitgestellte `AbstractJcrCommerceSession` kann Gutscheine beantragen. Die
 
 * `jcr:title` (String) - für die Beschreibung des Gutscheins
 * `code` (String) - der Code, den der Benutzer eingeben muss, um den Gutschein anwenden
-* `promotion` (String) - die anzuwendende Promotion; Beispiel: `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (String) - die anzuwendende Promotion, beispielsweise `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 Promotion-Handler sind OSGi-Dienste, die den Warenkorb verändern. Der Warenkorb unterstützt mehrere Hooks, die in der `PromotionHandler`-Schnittstelle definiert werden.
 

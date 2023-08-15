@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: aaeef8fcc0ed5f205aeb7ab40cc61f60912c9869
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1969'
 ht-degree: 49%
 
 ---
@@ -31,13 +31,13 @@ ClientContext ist ein Mechanismus, der Ihnen bestimmte Informationen zur aktuell
 
 Sowohl in der Veröffentlichungs- als auch in der Autorenumgebung werden Informationen zu folgenden Themen angezeigt:
 
-* Besucher; je nach Instanz bestimmte Informationen angefordert oder abgeleitet werden.
+* Der Besucher; abhängig von Ihrer Instanz werden bestimmte Informationen angefordert oder abgeleitet.
 * Seiten-Tags und die Häufigkeit, mit der der aktuelle Besucher auf diese Tags zugegriffen hat (wird angezeigt, wenn Sie den Mauszeiger über ein bestimmtes Tag bewegen) .
 * Seiteninformationen.
-* Informationen über das technische Umfeld; wie IP-Adresse, Browser- und Bildschirmauflösung.
+* Informationen zur technischen Umgebung, wie IP-Adresse, Browser und Bildschirmauflösung.
 * Alle Segmente, die derzeit aufgelöst sind.
 
-Die Symbole (nur in der Autorenumgebung verfügbar) ermöglichen es Ihnen, die Details des ClientContext zu konfigurieren:
+Mit den Symbolen (nur in der Autorenumgebung verfügbar) können Sie die Details des ClientContext konfigurieren:
 
 ![Die Symbole Bearbeiten, Laden und Zurücksetzen des Fensters ClientContext](do-not-localize/clientcontext_icons.png)
 
@@ -74,7 +74,7 @@ Die Kampagnenauflösung basiert normalerweise auf der Prioritätseigenschaft der
 
 Der Sitzungsspeicher des Warenkorbs benachrichtigt den Server auch über aufgelöste Promotion-Änderungen (basierend auf Segmentierungsänderungen) mit dem ClientContextCartServlet.
 
-**Generischer Store**: Eine generische Komponente, die den Inhalt eines Stores angezeigt. Es handelt sich um eine Version der Komponente &quot;Generische Store-Eigenschaften&quot;auf niedrigerer Ebene.
+**Generischer Store**: Eine generische Komponente, die den Inhalt eines Stores angezeigt. Es handelt sich um eine Version der Komponente &quot;Generische Store-Eigenschaften&quot;.
 
 Der generische Store muss mit einem JS-Renderer konfiguriert werden, der die Daten auf benutzerdefinierte Weise anzeigt.
 
@@ -122,7 +122,7 @@ Auf DAM-Assets gesetzte Tags, die auf besuchten Seiten angezeigt werden, werden 
 
 **Technografie-Store**: Diese Komponente hängt von Ihrer Installation ab.
 
-**ViewedProducts**: Verfolgt die vom Einkäufer angesehenen Produkte. Kann für das zuletzt angezeigte Produkt oder das zuletzt angezeigte Produkt, das noch nicht im Warenkorb ist, abgefragt werden.
+**ViewedProducts**: Verfolgt die vom Einkäufer angesehenen Produkte. Kann für das zuletzt angezeigte Produkt oder das zuletzt angezeigte Produkt abgerufen werden, das noch nicht im Warenkorb ist.
 
 Dieser Sitzungsspeicher verfügt über keine standardmäßige ClientContext-Komponente.
 
@@ -134,12 +134,12 @@ Die Seitendaten sind keine Standardkomponenten in ClientContext mehr. Sie könne
 
 ## Ändern des ClientContext-Profils {#changing-the-client-context-profile}
 
-ClientContext ermöglicht es Ihnen, Details interaktiv zu ändern:
+Mit ClientContext können Sie Details interaktiv ändern:
 
-* Wenn Sie das in ClientContext verwendete Profil ändern, können Sie die verschiedenen Erlebnisse sehen, die den verschiedenen Benutzern für die aktuelle Seite angezeigt werden.
+* Wenn Sie das in ClientContext verwendete Profil ändern, können Sie die unterschiedlichen Erlebnisse sehen, die den verschiedenen Benutzern für die aktuelle Seite angezeigt werden.
 * Abgesehen vom Ändern des Benutzerprofils können Sie auch bestimmte Profildetails ändern, um nachzuvollziehen, wie sich das Seitenerlebnis unter verschiedenen Bedingungen verändert.
 
-### Laden eines neuen Benutzerprofils {#loading-a-new-user-profile}
+### Laden neuer Benutzerprofile {#loading-a-new-user-profile}
 
 Sie können das Profil wie folgt ändern:
 
@@ -148,7 +148,7 @@ Sie können das Profil wie folgt ändern:
 
 Wenn Sie fertig sind, können Sie [Profil zurücksetzen](#resetting-the-profile-to-the-current-user).
 
-#### Laden eines neuen Besucherprofils mit dem Symbol &quot;Profil laden&quot; {#loading-a-new-visitor-profile-with-the-load-profile-icon}
+#### Laden eines neuen Besucherprofils mit dem Symbol Profil laden {#loading-a-new-visitor-profile-with-the-load-profile-icon}
 
 1. Klicken Sie auf das Symbol „Profil laden“:
 
@@ -166,7 +166,7 @@ Sie können ein Profil auch mit dem Auswahlregler auswählen:
 
 1. Doppelklicken Sie auf das Symbol für den aktuellen Benutzer. Daraufhin wird die Auswahl geöffnet. Navigieren Sie mit den Pfeilen und sehen Sie sich die verfügbaren Profile an:
 
-   ![Die Benutzerauswahl](assets/clientcontext_profileselector.png)
+   ![Der Benutzerselektor](assets/clientcontext_profileselector.png)
 
 1. Klicken Sie auf das zu ladende Profil. Wenn die Details geladen wurden, klicken Sie auf eine Stelle außerhalb der Auswahl, um diese zu schließen.
 
@@ -206,7 +206,7 @@ Die Bearbeitung eines Client-Kontexts kann verwendet werden, um die Werte bestim
 
 ### Bearbeiten von Eigenschaftendetails {#editing-property-details}
 
-Mittels ClientContext-Bearbeitung können die Werte bestimmter Eigenschaften festgelegt (zurückgesetzt) werden. So können Sie bestimmte Szenarien testen. (Dies ist besonders nützlich bei [Segmentierungen](/help/sites-administering/campaign-segmentation.md) und [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).)
+Mittels ClientContext-Bearbeitung können die Werte bestimmter Eigenschaften festgelegt (zurückgesetzt) werden. Damit können Sie bestimmte Szenarien testen (besonders nützlich für [Segmentierung](/help/sites-administering/campaign-segmentation.md) und [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
 ![Bearbeiten des ClientContext](assets/clientcontext_alisonparker_edit.png)
 
@@ -232,7 +232,7 @@ Fügen Sie die JSONP Store-Komponente zu ClientContext hinzu und verwenden Sie s
 
 1. Öffnen Sie die englische Homepage der Geometrixx Outdoors-Site in der AEM-Autoreninstanz. ([https://localhost:4502/content/geometrixx-outdoors/en.html](https://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Drücken Sie zum Öffnen von ClientContext die Tastenkombination Strg+Alt+C (Windows) oder Ctrl+Wahl+C (Mac).
-1. Klicken Sie auf das Bearbeitungssymbol oben in ClientContext, um ClientContext Designer zu öffnen.
+1. Klicken Sie auf das Bearbeitungssymbol oben in Client Context, um Client Context-Designer zu öffnen.
 
    ![Link-Symbol](do-not-localize/chlimage_1.png)
 
@@ -273,11 +273,11 @@ Verwenden Sie die Daten aus dem Sitzungsspeicher, den Sie mit der JSONP-Store-Ko
 1. Klicken Sie mit der rechten Maustaste auf das Segment Winter und klicken Sie auf Öffnen .
 1. Ziehen Sie die generische Store-Eigenschaft in den standardmäßigen UND-Container.
 
-   ![Hinzufügen einer Komponente zum Segmenteditor](assets/chlimage_1-5.jpeg)
+   ![Hinzufügen einer Komponente zum Segment-Editor](assets/chlimage_1-5.jpeg)
 
 1. Doppelklicken Sie auf die Komponente, um das Dialogfeld &quot;Bearbeiten&quot;zu öffnen, geben Sie die folgenden Eigenschaftswerte an und klicken Sie dann auf &quot;OK&quot;:
 
-   * Store: Wupmanie
+   * Store: wipmania
    * Eigenschaftsname: latitude
    * Operator: größer als
    * Eigenschaftswert: 30

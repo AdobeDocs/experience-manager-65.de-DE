@@ -10,10 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3327'
-ht-degree: 98%
+source-wordcount: '3325'
+ht-degree: 97%
 
 ---
 
@@ -137,7 +137,7 @@ Mit Sling geben Sie an, welches Skript eine bestimmte Entität rendert (indem Si
 
 Die Anfrage wird zerlegt und die notwendigen Informationen werden extrahiert. Das Repository wird nach der angeforderten Ressource (Inhaltsknoten) durchsucht:
 
-* Das erste Sling überprüft, ob ein Knoten an dem in der Anfrage angegebenen Speicherort vorhanden ist. Beispiel: `../content/corporate/jobs/developer.html`
+* Das erste Sling überprüft, ob ein Knoten an dem in der Anfrage angegebenen Speicherort vorhanden ist, z. B. `../content/corporate/jobs/developer.html`
 * Wenn kein Knoten gefunden wird, wird die Erweiterung verworfen und die Suche wiederholt. Beispiel: `../content/corporate/jobs/developer`
 * Wenn kein Knoten gefunden wird, gibt Sling den HTTP-Code „404 (Nicht gefunden)“ zurück.
 
@@ -304,7 +304,7 @@ Dazu können Sie den Befehl sling:include(&quot;/&lt;path>/&lt;resource>&quot;) 
 
 ## OSGI {#osgi}
 
-OSGi definiert eine Architektur für die Entwicklung und Bereitstellung modularer Anwendungen und Bibliotheken (es wird auch als Dynamic Module System für Java bezeichnet). OSGi-Container erlauben es Ihnen, Ihr Programm in einzelne Module aufzuteilen (JAR-Dateien mit zusätzlichen Metainformationen und sogenannten Bundles in OSGi-Terminologie) und die Querabhängigkeiten zwischen ihnen zu verwalten mit:
+OSGi definiert eine Architektur für die Entwicklung und Bereitstellung modularer Anwendungen und Bibliotheken (es wird auch als Dynamic Module System für Java bezeichnet). Mit OSGi-Containern können Sie Ihre Anwendung in einzelne Module unterteilen (es handelt sich um JAR-Dateien mit zusätzlichen Metainformationen und in der OSGi-Terminologie als Bundles bezeichnet) und die Querabhängigkeiten zwischen ihnen verwalten mit:
 
 * Services, die innerhalb des Containers implementiert sind
 * ein Vertrag zwischen dem Container und Ihrer Anwendung
@@ -319,7 +319,7 @@ Ein OSGi-Framework bietet Ihnen dann dynamisches Laden/Entladen, Konfiguration u
 >
 >Speziell die Seite mit grundlegenden Informationen beinhaltet eine Sammlung von Präsentationen und Tutorials.
 
-Diese Architektur ermöglicht es Ihnen, Sling um programmspezifische Module zu erweitern. Sling, und daher CQ5, verwendet die [Apache Felix](https://felix.apache.org/documentation/index.html)-Implementierung von OSGI (Open Services Gateway Initiative) und basiert auf der OSGi Service Platform Release 4 Version 4.2. Beides sind Sammlungen von OSGi-Bundles, die in einem OSGi-Framework ausgeführt werden.
+Mit dieser Architektur können Sie Sling mit anwendungsspezifischen Modulen erweitern. Sling, und daher CQ5, verwendet die [Apache Felix](https://felix.apache.org/documentation/index.html)-Implementierung von OSGI (Open Services Gateway Initiative) und basiert auf der OSGi Service Platform Release 4 Version 4.2. Beides sind Sammlungen von OSGi-Bundles, die in einem OSGi-Framework ausgeführt werden.
 
 Auf diese Weise können Sie die folgenden Aktionen für beliebige Pakete innerhalb Ihrer Installation durchführen:
 

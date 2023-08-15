@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1169'
+source-wordcount: '1168'
 ht-degree: 53%
 
 ---
@@ -127,7 +127,7 @@ Siehe [Adobe Campaign-Komponenten](/help/sites-classic-ui-authoring/classic-pers
 >
 
 1. Fügen Sie eine neue Komponente aus **Newsletter** > **Text und Personalisierung (Kampagne)** ein.
-1. Öffnen Sie die Komponente, indem Sie darauf doppelklicken. Die **Bearbeiten** verfügt über eine Funktion zum Einfügen von Personalisierungselementen.
+1. Öffnen Sie die Komponente, indem Sie darauf doppelklicken. Die **Bearbeiten** verfügt über eine Funktion, mit der Sie Personalisierungselemente einfügen können.
 
    >[!NOTE]
    >
@@ -160,7 +160,7 @@ Sie können eine Vorschau des Newsletters sowie eine Vorschau der Personalisieru
 
 Nach Abschluss des Inhalts können Sie den Genehmigungsprozess starten. Rufen Sie in der Toolbox die Registerkarte **Workflow** auf und wählen Sie den Workflow **Für Adobe Campaign genehmigen** aus.
 
-Dieser vordefinierte Workflow umfasst zwei Schritte: Revision, dann Genehmigung oder Revision und dann Ablehnung. Dieser Workflow kann jedoch erweitert und an einen komplexeren Prozess angepasst werden.
+Dieser vordefinierte Workflow besteht aus zwei Schritten: Änderung, Validierung oder Revision, dann Ablehnung. Dieser Workflow kann jedoch erweitert und an einen komplexeren Prozess angepasst werden.
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 

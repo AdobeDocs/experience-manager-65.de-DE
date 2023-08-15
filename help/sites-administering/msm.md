@@ -10,10 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2668'
-ht-degree: 59%
+source-wordcount: '2663'
+ht-degree: 57%
 
 ---
 
@@ -81,7 +81,7 @@ Es gibt viele Nutzungsszenarios für MSM und Live Copies. Einige der Szenarios u
 
   Alternativ kann ein Unternehmen mit einem Händlernetz separate Websites für seine einzelnen Händler anbieten, wobei es sich jeweils um eine Abwandlung der Hauptsite handelt, die vom Hauptbüro bereitgestellt wird. Dies könnte für ein einzelnes Unternehmen mit mehreren regionalen Niederlassungen oder ein nationales Franchisesystem mit einem zentralen Franchisegeber und mehreren lokalen Franchisenehmern gelten.
 
-  Die Hauptverwaltung kann die zentralen Informationen bereitstellen, während die regionalen Stellen lokale Informationen wie Kontaktdaten, Öffnungszeiten und Veranstaltungen hinzufügen können.
+  Die Hauptverwaltung kann die zentralen Informationen bereitstellen, während die regionalen Stellen lokale Informationen hinzufügen können, wie z. B. Kontaktdaten, Öffnungszeiten und Veranstaltungen.
 
   ```xml
   /content
@@ -113,7 +113,7 @@ Es gibt viele Nutzungsszenarios für MSM und Live Copies. Einige der Szenarios u
   >
   >Es gibt ein Gleichgewicht zwischen:
   >
-  >  * Wie viel des Kerninhalts muss über mehrere Versionen aktualisiert werden?
+  >  * Wie viel des Kerninhalts muss über die verschiedenen Versionen aktualisiert werden?
   >
   >und
   >
@@ -125,14 +125,14 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 * **Website erstellen** (**Sites**)
 
-   * Mit MSM können Sie mehrere Websites verwalten, die gemeinsame Inhalte haben. Beispielsweise werden Websites häufig für internationale Zielgruppen bereitgestellt, sodass der Großteil der Inhalte in allen Ländern verwendet wird und nur eine Untergruppe der Inhalte für jedes Land bereitgestellt wird. MSM ermöglicht Ihnen die [Erstellung von Live Copies, die automatisch eine oder mehrere Websites basierend auf Ihrer Quell-Site aktualisieren](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Dies hilft Ihnen auch dabei, eine gemeinsame Basisstruktur zu erzwingen, die gemeinsamen Inhalte auf mehreren Sites zu nutzen, ein gemeinsames Erscheinungsbild zu erreichen und die Maßnahmen auf die Verwaltung der Inhalte zu konzentrieren, die sich auf den verschiedenen Sites tatsächlich unterscheiden.
+   * MSM unterstützt Sie bei der Verwaltung mehrerer Websites, die gemeinsame Inhalte haben. So werden beispielsweise Websites häufig für internationale Zielgruppen bereitgestellt, sodass der Großteil der Inhalte in allen Ländern verwendet wird und nur eine Untergruppe der Inhalte für die einzelnen Länder bereitgestellt wird. Mit MSM können Sie [Erstellen von Live Copies, die basierend auf Ihrer Quellsite automatisch eine oder mehrere Sites aktualisieren](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration). Dies hilft Ihnen auch dabei, eine gemeinsame Basisstruktur zu erzwingen, die gemeinsamen Inhalte auf mehreren Sites zu nutzen, ein gemeinsames Erscheinungsbild zu erreichen und die Maßnahmen auf die Verwaltung der Inhalte zu konzentrieren, die sich auf den verschiedenen Sites tatsächlich unterscheiden.
    * Für die Angabe der Quelle ist eine vordefinierte Blueprint-Konfiguration erforderlich.
-   * Erstellt eine Live Copy der (vordefinierten) Quelle.
+   * Erstellt eine Live Copy der vordefinierten Quelle.
    * Stellt dem Benutzer die **Rollout** Schaltfläche.
 
 * **Erstellen einer Live Copy** (**Sites**)
 
-   * MSM ermöglicht Ihnen Folgendes: [eine Ad-hoc-Live Copy (einmalig) einer einzelnen Seite oder Unterverzweigung einer Website erstellen](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page); zum Beispiel das Duplizieren einer Unterverzweigung, um Informationen über eine neue/aktualisierte Version eines Produkts bereitzustellen.
+   * Mit MSM können Sie [Erstellen einer Ad-hoc-Live Copy (einmalig) einer einzelnen Seite oder Unterverzweigung einer Website](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)zum Beispiel das Duplizieren einer Unterverzweigung, um Informationen über eine neue/aktualisierte Version eines Produkts bereitzustellen.
    * Erstellt eine Ad-hoc-Live Copy (keine Blueprint-Konfiguration erforderlich).
    * Kann verwendet werden, um (sofort) eine Live Copy einer beliebigen Seite/Verzweigung zu erstellen.
    * Erfordert die Option **Synchronisieren** (die **Rollout**-Schaltfläche wird nicht bereitgestellt).
@@ -147,19 +147,19 @@ Auf MSM kann mithilfe verschiedener Optionen der jeweiligen Konsole direkt über
 
 * **Live Copy-Übersicht** (**Sites**)
 
-   * Diese Konsole ermöglicht Ihnen die [Ansicht und Verwaltung Ihrer Blueprint und deren Live Copies](/help/sites-administering/msm-livecopy-overview.md).
+   * Mithilfe dieser Konsole können Sie [Anzeigen und Verwalten Ihres Blueprints und seiner Live Copies](/help/sites-administering/msm-livecopy-overview.md).
 
 * **Blueprints** (**Tools** – **Sites**)
 
-   * Diese Konsole ermöglicht Ihnen die [Erstellung und Verwaltung Ihrer Blueprint-Konfigurationen](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
+   * Mithilfe dieser Konsole können Sie [Erstellen und Verwalten von Blueprint-Konfigurationen](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration).
 
 >[!NOTE]
 >
->Aspekte der MSM-Funktionalität werden in mehreren anderen AEM-Funktionen verwendet (z. B. Launches, Catalog). in diesen Fällen wird die Live Copy von dieser Funktion verwaltet.
+>Aspekte der MSM-Funktionalität werden in mehreren anderen AEM-Funktionen verwendet (z. B. Launches, Catalog). In diesen Fällen wird die Live Copy von dieser Funktion verwaltet.
 
 ### Verwendete Begriffe {#terms-used}
 
-Als Einführung bietet die folgende Tabelle einen Überblick über die wichtigsten Begriffe, die mit MSM verwendet werden. Diese werden in den folgenden Abschnitten und Seiten ausführlicher behandelt:
+Als Einführung bietet die folgende Tabelle einen Überblick über die wichtigsten Begriffe, die mit MSM verwendet werden. Diese werden in den nachfolgenden Abschnitten und Seiten ausführlicher behandelt:
 
 <table>
  <tbody>
@@ -337,7 +337,7 @@ Eine Live Copy wird als gestapelte Live Copy bezeichnet, wenn sie als untergeord
 
 Jede Seite oder jeder Zweig von Seiten kann als Quelle einer Live Copy verwendet werden.
 
-MSM ermöglicht Ihnen allerdings die Definition einer Blueprint-Konfiguration, die einen Quellpfad angibt. Eine Blueprint-Konfiguration hat die folgenden Vorteile:
+Mit MSM können Sie jedoch auch eine Blueprint-Konfiguration definieren, die einen Quellpfad angibt. Eine Blueprint-Konfiguration hat die folgenden Vorteile:
 
 * Der Autor kann für eine Blueprint die Option **Rollout** verwenden und so (explizit) Änderungen an Live Copies pushen, die von dieser Blueprint erben.
 * Der Autor kann **Website erstellen** nutzen, wodurch der Benutzer einfach Sprachen auswählen und die Struktur der Live Copy konfigurieren kann;

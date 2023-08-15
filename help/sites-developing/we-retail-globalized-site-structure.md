@@ -6,21 +6,21 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '413'
 ht-degree: 27%
 
 ---
 
 # Testen der globalisierten Site-Struktur von We.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
-We.Retail wurde mit einer globalisierten Site-Struktur erstellt, die eine Übergeordnete Sprache anbietet, die live auf länderspezifische Websites kopiert werden kann. Alles ist vorkonfiguriert, damit Sie mit dieser Struktur und den integrierten Übersetzungsfunktionen experimentieren können.
+We.Retail wurde mit einer globalisierten Site-Struktur erstellt, die einen Sprach-Master bietet, der live auf länderspezifische Websites kopiert werden kann. Alles ist vorkonfiguriert, damit Sie mit dieser Struktur und den integrierten Übersetzungsfunktionen experimentieren können.
 
 ## Testen {#trying-it-out}
 
 1. Öffnen Sie die Sites-Konsole über **Globale Navigation -> Sites**.
-1. Wechseln Sie zur Spaltenansicht (falls noch nicht aktiv) und wählen Sie We.Retail aus. Beachten Sie die Beispiellandstruktur mit der Schweiz, den Vereinigten Staaten, Frankreich usw. neben der Übergeordneten Sprachstruktur.
+1. Wechseln Sie zur Spaltenansicht (falls noch nicht aktiv) und wählen Sie We.Retail aus. Beachten Sie die Beispiellandstruktur mit der Schweiz, den USA, Frankreich usw. neben dem Sprachmaster.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
 
@@ -32,7 +32,7 @@ We.Retail wurde mit einer globalisierten Site-Struktur erstellt, die eine Überg
 
    ![chlimage_1-89](assets/chlimage_1-89a.png)
 
-1. Kehren Sie zur Spaltenansicht zurück und klicken Sie auf Übergeordnete Sprache und sehen Sie sich die Übergeordneten Sprachstämme mit Inhalt an. Nur Englisch hat Inhalt.
+1. Kehren Sie zur Spaltenansicht zurück, klicken Sie auf den Sprach-Master und sehen Sie sich die Sprach-Master-Stämme mit Inhalt an. Nur Englisch hat Inhalt.
 
    We.Retail enthält keine übersetzten Inhalte, doch die Struktur und Konfiguration sind vorhanden, um Ihnen die Übersetzungsdienste zu demonstrieren.
 

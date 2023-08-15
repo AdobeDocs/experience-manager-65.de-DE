@@ -5,10 +5,10 @@ contentOwner: Vishabh Gupta
 role: Admin
 feature: Asset Management
 exl-id: 3a9b44d4-1756-4ad5-91df-df8d53e82193
-source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
-workflow-type: ht
-source-wordcount: '3149'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3148'
+ht-degree: 99%
 
 ---
 
@@ -46,7 +46,7 @@ Adobe empfiehlt die Installation des Konfigurationspakets [adobe-asset-link-conf
 >
 >Wenn Ihre Experience Manager-Instanz für die Benutzeranmeldung mit Adobe IMS-Konten konfiguriert ist, verwenden Sie nicht das Konfigurationspaket. Stattdessen müssen Sie Ihre Experience Manager-Instanz [manuell konfigurieren](#manual-configuration).
 
-1. Um den Package Manager in der Experience Manager-Web-Benutzeroberfläche zu öffnen, greifen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Package Share]** zu. Installieren Sie das Paket `adobe-asset-link-config`.
+1. Um den Package Manager in der Experience Manager-Web-Benutzeroberfläche zu öffnen, greifen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Bereitstellung]** > **[!UICONTROL Package Share]** zu. Installieren Sie das Paket `adobe-asset-link-config`.
 
 1. Öffnen Sie **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**. Suchen Sie die Konfiguration für **[!UICONTROL Adobe Granite OAuth IMS Provider]** und klicken Sie darauf, um sie zu bearbeiten.
 
@@ -125,7 +125,6 @@ Eine zusätzliche Konfiguration ist nur erforderlich, wenn Sie verschiedene Adob
 >* Die vorhandene Konfiguration funktioniert weiterhin, wenn Sie dieselbe Adobe IMS-Organisation mit Experience Manager und CCE verwenden.
 
 
-
 **Voraussetzungen**
 
 1. Eine betriebsbereite Experience Manager-Instanz mit für AAL konfigurierter Bearer-Authentifizierung.
@@ -179,9 +178,9 @@ Die folgenden Regeln gelten für Gruppenzuordnungen in Experience Manager:
 * Die Zugehörigkeit zu einer Adobe Asset Link-Benutzergruppe wird geprüft, wenn sich der Benutzer authentifiziert und die Zeitspanne, die in der Eigenschaft **[!UICONTROL Benutzerablaufzeit]** in der Konfiguration für **[!UICONTROL Apache Jackrabbit Oak Default Sync Handler]** angegeben ist, verstrichen ist. Derzeit können Benutzer in Experience Manager Gruppen hinzugefügt und aus ihnen entfernt werden, um sie mit den in Adobe IMS vorhandenen zu synchronisieren.
 * Vermeiden Sie Konflikte mit Gruppennamen. Stellen Sie sicher, dass sich die Namen für in Adobe IMS erstellte Experience Manager-Benutzergruppen (zur Benutzerverwaltung) von denen aller Systemgruppennamen unterscheiden.
 
-   Stellen Sie beispielsweise sicher, dass sie sich von der Gruppe `dam-users` und den vom Experience Manager-Admin erstellten Gruppen unterscheiden.
+  Stellen Sie beispielsweise sicher, dass sie sich von der Gruppe `dam-users` und den vom Experience Manager-Admin erstellten Gruppen unterscheiden.
 
-   Eine Adobe IMS-Gruppe, deren Name mit dem Namen einer Experience Manager-Systemgruppe oder einer manuell erstellten Gruppe kollidiert, wird nicht zur Steuerung von Benutzerberechtigungen verwendet.
+  Eine Adobe IMS-Gruppe, deren Name mit dem Namen einer Experience Manager-Systemgruppe oder einer manuell erstellten Gruppe kollidiert, wird nicht zur Steuerung von Benutzerberechtigungen verwendet.
 * Wenn ein Adobe IMS-Benutzer eine Verbindung zu einer Experience Manager-Instanz herstellt, bei der der Name des Benutzers mit einem zuvor erstellten Experience Manager-Benutzer kollidiert, erhält der Adobe IMS-Benutzer einen anderen Namen, dem Zahlen hinzugefügt werden, um ihn eindeutig zu machen.
 
 **Erstmaliges Einrichten der Zugriffssteuerung**
@@ -261,7 +260,7 @@ Experience Manager enthält Indizes, die für Abfragen verwendet werden. Erstell
 
 ## Konfigurieren der visuellen oder Ähnlichkeitssuche {#configure-visual-similarity-search}
 
-Mit der Funktion „Visuelle Suche“ können Sie über das Adobe Asset Link-Bedienfeld im AEM Assets-Repository nach visuell ähnlichen Assets suchen. Diese Funktion ist ab Version 6.5.0 verfügbar, und es werden nur die indizierten Assets durchsucht. Weitere Informationen finden Sie unter [Konfigurieren der visuellen Suche](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=de#configvisualsearch).
+Mit der Funktion für die visuelle Suche können Sie im AEM Assets-Repository mithilfe des Bereichs Adobe-Asset-Link nach visuell ähnlichen Assets suchen. Diese Funktion ist ab Version 6.5.0 verfügbar, und es werden nur die indizierten Assets durchsucht. Weitere Informationen finden Sie unter [Konfigurieren der visuellen Suche](https://experienceleague.adobe.com/docs/experience-manager-65/assets/using/search-assets.html?lang=de#configvisualsearch).
 
 ## Erzeugen von FPO (For Placement Only)-Ausgabedarstellungen (also nur für die Platzierung) für Adobe InDesign {#fpo-renditions}
 
@@ -280,7 +279,7 @@ Informationen zur Integration mit Adobe Stock finden Sie unter [Adobe Stock-Asse
 
 Wenn Sie Probleme bei der Konfiguration oder Verwendung von Adobe Asset Link haben, versuchen Sie Folgendes:
 
-* Vergewissern Sie sich, dass Ihre Implementierung die Voraussetzungen erfüllt. Stellen Sie insbesondere sicher, dass die entsprechenden Feature Packs oder Pakete installiert sind.
+* Vergewissern Sie sich, dass Ihre Bereitstellung die Voraussetzungen erfüllt. Stellen Sie insbesondere sicher, dass die entsprechenden Feature Packs oder Pakete installiert sind.
 * Wenden Sie sich an den Partner oder Systemintegrator Ihrer Organisation.
 * Wenn sich Ihre Creative Cloud-Benutzer nicht bei den ausgecheckten Assets verifizieren können, überprüfen Sie die Groß-/Kleinschreibung der Domain-Namen in den E-Mail-IDs. Zur Behebung siehe [Manuelle Konfiguration](#manual-configuration).
 * Weitere Informationen finden Sie unter [Fehlerbehebung bei Asset Link](https://helpx.adobe.com/de/enterprise/kb/asset-link-troubleshooting.html).
@@ -291,4 +290,3 @@ Wenn Sie Probleme bei der Konfiguration oder Verwendung von Adobe Asset Link hab
 >* [Über Adobe Asset Link](https://helpx.adobe.com/de/enterprise/using/adobe-asset-link.html)
 >* [Verwenden von Asset Link in der Creative Cloud-Desktop-Anwendung und Verwalten von Assets](https://helpx.adobe.com/de/enterprise/using/manage-assets-using-adobe-asset-link.html)
 >* [Konfigurieren von Adobe Experience Manager Assets as a Cloud Service](https://helpx.adobe.com/de/enterprise/using/configure-aem-assets-for-asset-link.html).
-

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '511'
 ht-degree: 2%
 
 ---
@@ -56,7 +56,7 @@ Mitglieder der Gruppe &quot;App-Autor&quot;sind für das Authoring AEM Inhalte m
 
 ### AEM Mobile-Gruppe &quot;Anwendungsadministratoren&quot;(Gruppe &quot;app-admins&quot;) {#aem-mobile-application-administrators-group-app-admins-group}
 
-Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit den gleichen Berechtigungen erstellen, die auch für &quot;app-authors&quot;vorhanden sind **UND** Darüber hinaus sind folgende Aufgaben zuständig:
+Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit denselben Berechtigungen erstellen, die auch für App-Autoren vorhanden sind **UND** Darüber hinaus sind folgende Aufgaben zuständig:
 
 * Staging, Publishing und Deaktivieren der Anwendung ContentSync OTA-Aktualisierungen
 
@@ -66,7 +66,7 @@ Mitglieder der Gruppe &quot;app-admins&quot;können Anwendungsinhalte mit den gl
 >
 >Beachten Sie, dass einige Optionen nicht für App-Autoren verfügbar sind, die für App-Administratoren verfügbar sind.
 
-### Gruppenkonfiguration - app-admins {#group-configuration-app-admins}
+### Gruppenkonfiguration - App-Administratoren {#group-configuration-app-admins}
 
 1. Erstellen Sie eine Gruppe namens &quot;app-admins&quot;.
 1. Fügen Sie Ihrer neuen Gruppe &quot;app-admins&quot;die folgenden Gruppen hinzu:

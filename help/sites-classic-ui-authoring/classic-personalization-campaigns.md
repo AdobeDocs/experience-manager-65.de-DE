@@ -1,14 +1,14 @@
 ---
 title: Kampagnen-Management
-description: Das Kampagnen-Management bietet E-Marketing-Fachleuten die Möglichkeit, personalisierte Inhalte bereitzustellen und so individuelle Erlebnisse für Besucher zu schaffen. Damit können Sie Ihre Marketing-Kampagnen im Web, in E-Mail und in Mobile Services koordinieren und so Ihre Besucher binden.
+description: Das Kampagnen-Management bietet E-Marketing-Fachleuten die Möglichkeit, personalisierte Inhalte bereitzustellen und so individuelle Erlebnisse für Besucher zu schaffen. Damit können Sie Ihre Marketing-Kampagnen über das Web, die E-Mail und Mobile Services hinweg koordinieren und so Ihre Besucher binden.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '621'
 ht-degree: 28%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 28%
 
 Das Kampagnen-Management bietet E-Marketing-Fachleuten die Möglichkeit, personalisierte Inhalte bereitzustellen und so individuelle Erlebnisse für Besucher zu schaffen.
 
-Damit können Sie Ihre Marketing-Kampagnen im Web, in E-Mail und in Mobile Services koordinieren und so Ihre Besucher binden. Sie können Inhalte erstellen, Besucher segmentieren, zielgerichtete Inhalte für bestimmte Benutzerprofile pushen und bewerben und Kampagnen über mehrere Kanäle hinweg verwalten.
+Damit können Sie Ihre Marketing-Kampagnen über das Web, die E-Mail und Mobile Services hinweg koordinieren und so Ihre Besucher binden. Sie können Inhalte erstellen, Besucher segmentieren, zielgerichtete Inhalte für bestimmte Benutzerprofile pushen und bewerben und Kampagnen über mehrere Kanäle hinweg verwalten.
 
 In diesem Dokument werden die verschiedenen Elemente der Kampagnen beschrieben. Weitere Informationen finden Sie in den folgenden Dokumenten:
 
@@ -53,7 +53,7 @@ Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher unt
 
    * **Newsletter**
 
-     [E-Mail-Nachrichten](#emailmarketing) werden verwendet, um Benutzer einzubinden und sie zum Besuchen der Website anzuregen. Diese werden normalerweise in Form eines Newsletters versendet, der an Ihre **Leads** (die in **Listen**). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen. Empfehlung [Verwenden Sie Adobe Campaign und die Integration, um AEM](/help/sites-administering/campaign.md).
+     [E-Mail-Nachrichten](#emailmarketing) werden verwendet, um Benutzer einzubinden und sie zum Besuchen der Website anzuregen. Diese werden normalerweise in Form eines Newsletters versendet, der an Ihre **Leads** (die in **Listen**). **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen. Die Empfehlung [Verwenden Sie Adobe Campaign und die Integration, um AEM](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -69,13 +69,13 @@ Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher unt
 
   Die Informationen, die Sie über Ihre Besucher und die Kontaktaufnahme mit ihnen gesammelt haben, bildet die Grundlage für Ihre Leads. **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
 
-  Empfehlung [Verwenden Sie Adobe Campaign und die Integration, um AEM](/help/sites-administering/campaign.md).
+  Die Empfehlung [Verwenden Sie Adobe Campaign und die Integration, um AEM](/help/sites-administering/campaign.md).
 
 * **Listen**
 
   Leads werden in Listen gruppiert, sodass Sie kollektive Maßnahmen ergreifen können. Hinweis: **Hinweis:** Adobe plant nicht, diese Funktion weiter auszubauen.
 
-  Empfehlung [Verwenden Sie Adobe Campaign und die Integration, um AEM.](/help/sites-administering/campaign.md)
+  Die Empfehlung [Verwenden Sie Adobe Campaign und die Integration, um AEM.](/help/sites-administering/campaign.md)
 
 * **Segmente**
 
@@ -85,6 +85,6 @@ Der fokussierte Inhalt bildet die verschiedenen Erlebnisse, die dem Besucher unt
 
   Der Marketing Campaign Manager (MCM) ist eine Konsole, mit der Sie auf alle Funktionen zugreifen können, die Sie zum Erstellen und Steuern Ihrer Kampagnen, Marken, Erlebnisse, Touchpoints, Leads, Listen, Segmente und Berichte benötigen.
 
-  Der Zugriff erfolgt über verschiedene Orte (mit der Bezeichnung **Kampagnen**) oder mit der URL:
+  Er kann von verschiedenen Orten aus aufgerufen werden (mit der Bezeichnung **Kampagnen**) oder mit der URL:
 
   `http://localhost:4502/libs/mcm/content/admin.html`

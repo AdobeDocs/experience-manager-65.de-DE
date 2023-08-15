@@ -1,8 +1,8 @@
 ---
 title: Verwalten von Formularanwendungen und Aufgaben im AEM-Posteingang
 seo-title: Manage Forms applications and tasks in AEM Inbox
-description: Mit dem AEM-Posteingang können Sie formularzentrierte Workflows starten, indem Sie Anwendungen senden und Aufgaben verwalten.
-seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
+description: Mit AEM Posteingang können Sie Forms-orientierte Workflows starten, indem Sie Anwendungen senden und Aufgaben verwalten.
+seo-description: AEM Inbox lets you launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '1098'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1096'
+ht-degree: 97%
 
 ---
 
@@ -25,7 +25,7 @@ Darüber hinaus führt der AEM-Posteingang Benachrichtigungen und Aufgaben aus v
 
 Die Benutzeroberfläche des Posteingangs bietet Listen- und Kalenderansichten zum Anzeigen von Aufgaben. Sie können außerdem die Einstellungen für die Anzeige konfigurieren. Sie können Aufgaben nach verschiedenen Parametern filtern. Weitere Informationen zum Anzeigen und Filtern finden Sie unter [Ihr Posteingang](/help/sites-authoring/inbox.md).
 
-Kurz zusammengefasst: Mit dem Posteingang können Sie neue Anwendungen erstellen und zugewiesene Aufgaben verwalten.
+Zusammenfassend können Sie mit dem Posteingang eine neue Anwendung erstellen und zugewiesene Aufgaben verwalten.
 
 >[!NOTE]
 >
@@ -132,16 +132,16 @@ Der Eigentümerin bzw. dem Eigentümer eines Workflow-Modells können die Elemen
 
    * Erstellen Sie die folgenden Knoten in CRX DE bei `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` mit den entsprechenden Eigenschaften, die in folgender Tabelle angegeben sind:
 
-      | Knoten | Eigenschaft | Typ |
-      |---|---|---|
-      | sharedWith | sharedWith | ZEICHENFOLGE |
-      | locked | locked | BOOLESCH |
-      | returned | returned | BOOLESCH |
-      | allowInboxSharing | allowInboxSharing | BOOLESCH |
-      | allowExplicitSharing | allowExplicitSharing | BOOLESCH |
+     | Knoten | Eigenschaft | Typ |
+     |---|---|---|
+     | sharedWith | sharedWith | ZEICHENFOLGE |
+     | locked | locked | BOOLESCH |
+     | returned | returned | BOOLESCH |
+     | allowInboxSharing | allowInboxSharing | BOOLESCH |
+     | allowExplicitSharing | allowExplicitSharing | BOOLESCH |
 
 
-   * Stellen Sie die Indizes über ein AEM-Paket bereit. Sie können ein implementierbares AEM-Paket mithilfe eines [AEM-Archteyps](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=de)-Projekts erstellen. Verwenden Sie den folgenden Beispiel-Code, um einem AEM-Archetyp-Projekt Indizes hinzuzufügen:
+   * Stellen Sie die Indizes über ein AEM-Paket bereit. Sie können ein bereitstellbares AEM-Paket mithilfe eines [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=de)-Projekts erstellen. Verwenden Sie den folgenden Beispiel-Code, um einem AEM-Archetyp-Projekt Indizes hinzuzufügen:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

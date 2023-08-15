@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4614'
-ht-degree: 62%
+source-wordcount: '4613'
+ht-degree: 61%
 
 ---
 
@@ -152,7 +152,7 @@ Die erste Frage, die beim Erstellen oder Optimieren von Indizes gestellt werden 
 
 Wenn ein Index erstellt wurde, muss mit jeder Aktualisierung der indizierten Daten auch der Index aktualisiert werden. Da dies Auswirkungen auf die Leistung des Systems hat, sollten Indizes nur erstellt werden, wenn sie erforderlich sind.
 
-Außerdem sind Indizes nur nützlich, wenn die im Index enthaltenen Daten eindeutig genug sind, um sie zu rechtfertigen. Denken Sie in diesem Zusammenhang an einen Index in einem Buch und die Themen, die er abdeckt: Bei der Indizierung verschiedener Themen in einem Text gibt es gewöhnlich Hunderte oder Tausende von Einträgen, über die Sie schnell zu einzelnen Seiten und damit zur gesuchten Information springen können. Wenn dieser Index nur zwei oder drei Einträge hätte, von denen jeder auf mehrere Hundert Seiten verweist, wäre der Index nicht nützlich. Dasselbe Konzept gilt für Datenbankindizes. Wenn es nur einige eindeutige Werte gibt, ist der Index nicht nützlich. Trotzdem kann ein Index auch zu groß werden, um nützlich zu sein. Informationen zu Indexstatistiken finden Sie weiter oben unter [Indexstatistiken](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics).
+Außerdem sind Indizes nur nützlich, wenn die im Index enthaltenen Daten eindeutig genug sind, um sie zu rechtfertigen. Denken Sie in diesem Zusammenhang an einen Index in einem Buch und die Themen, die er abdeckt: Beim Indizieren einer Reihe von Themen in einem Text gibt es in der Regel Hunderte oder Tausende von Einträgen, mit denen Sie schnell zu einer Untergruppe von Seiten springen können, um die gesuchten Informationen schnell zu finden. Wenn dieser Index nur zwei oder drei Einträge hätte, von denen jeder auf mehrere Hundert Seiten verweist, wäre der Index nicht nützlich. Dasselbe Konzept gilt für Datenbankindizes. Wenn es nur einige eindeutige Werte gibt, ist der Index nicht nützlich. Trotzdem kann ein Index auch zu groß werden, um nützlich zu sein. Informationen zu Indexstatistiken finden Sie weiter oben unter [Indexstatistiken](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics).
 
 ### Lucene- oder Eigenschaftenindizes? {#lucene-or-property-indexes}
 
@@ -469,7 +469,7 @@ Der gesamte Knotenspeicher wird jedes Mal durchlaufen (wie durch die Pfade im oa
 
 2c. Extrahierter Text wird im Dateisystem in einem Format gespeichert, das vom Oak-Neuindizierungsprozess (3a) erfasst werden kann
 
-Vorextrahierter Text ist in der CSV-Datei durch einen binären Fingerabdruck gekennzeichnet. Wenn die Binärdatei identisch ist, kann derselbe vorextrahierte Text über mehrere AEM-Instanzen hinweg verwendet werden. Da AEM Publish normalerweise eine Untergruppe von AEM Author ist, kann der vorab extrahierte Text aus AEM Author häufig auch zur Neuindizierung von AEM Publish verwendet werden (vorausgesetzt, die AEM-Veröffentlichung hat Dateisystemzugriff auf die extrahierten Textdateien).
+Vorextrahierter Text ist in der CSV-Datei durch einen binären Fingerabdruck gekennzeichnet. Wenn die Binärdatei identisch ist, kann derselbe vorextrahierte Text über mehrere AEM-Instanzen hinweg verwendet werden. Da AEM Veröffentlichung normalerweise eine Untergruppe von AEM Author ist, kann der vorab extrahierte Text aus AEM Author häufig auch zur Neuindizierung AEM Publish verwendet werden (vorausgesetzt, die AEM Publish haben Zugriff auf das Dateisystem der extrahierten Textdateien).
 
 Vorextrahierter Text kann im Laufe der Zeit schrittweise hinzugefügt werden. Bei der Textvorextraktion wird die Extraktion für zuvor extrahierte Binärdateien übersprungen. Daher empfiehlt es sich, vorab extrahierten Text beizubehalten, falls in Zukunft eine Neuindizierung erforderlich ist (vorausgesetzt, der extrahierte Inhalt ist nicht unnötig groß). Ziehen Sie sonst eine zwischenzeitliche Zip-Komprimierung des Inhalts in Betracht, da Text gut komprimiert werden kann.)
 

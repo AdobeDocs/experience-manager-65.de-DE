@@ -10,10 +10,10 @@ topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: 294d12e7d1b5293f165a164ff1fcc624f7b2b648
-workflow-type: ht
-source-wordcount: '1568'
-ht-degree: 100%
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+workflow-type: tm+mt
+source-wordcount: '1567'
+ht-degree: 96%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 100%
 
 Ihre Kunden werden ein Formular wahrscheinlich verlassen, wenn sie nicht davon angesprochen fühlen. Für die Kunden ist dies ein frustrierendes Erlebnis. Für Ihr Unternehmen kann es zusätzlichen Supportaufwand und Mehrkosten bedeuten. Das Kundenerlebnis optimal zu gestalten und dadurch eine höhere Konvertierungsrate zu erzielen, ist absolut unverzichtbar und stellt zugleich eine große Herausforderung dar. Adobe Experience Manager Forms ist der Schlüssel zu diesem Problem.
 
-AEM Forms kann mit der Adobe Marketing Cloud-Lösung Adobe Target integriert werden, um den Kunden ein personalisiertes und ansprechendes Erlebnis über verschiedene digitale Kanäle zu bieten. Eine der Schlüsselfunktionen von Target sind A/B-Tests. Sie können schnell parallel durchführbare A/B-Tests einrichten, mit denen Sie speziell ausgewählten Personen relevante Inhalte präsentieren können, um zu ermitteln, welche Variante zu besseren Konversionsraten führt.
+AEM Forms kann mit der Adobe Marketing Cloud-Lösung Adobe Target integriert werden, um den Kunden ein personalisiertes und ansprechendes Erlebnis über verschiedene digitale Kanäle zu bieten. Eine der wichtigsten Funktionen von Target sind A/B-Tests, mit denen Sie schnell gleichzeitige A/B-Tests einrichten, zielgruppenrelevante Inhalte präsentieren und Erlebnisse ermitteln können, die zu einer besseren Konversionsrate führen.
 
 Mit AEM Forms können Sie A/B-Tests für adaptive Formulare in Echtzeit durchführen. Es bietet außerdem vordefinierte und anpassbare Berichtsfunktionen, mit denen Sie die Wirkung Ihrer Formulare in Echtzeit visualisieren und dasjenige identifizieren können, das zur stärksten Benutzerinteraktion und maximalen Konversionen führt.
 
@@ -84,6 +84,7 @@ Zusätzlich zum JBoss-Server können Sie das JVM-Argument „-Dabtesting.enabled
 >[!NOTE]
 >
 >Wenn Sie die konfigurierten Target-URLs später aktualisieren, achten Sie darauf, etwaige laufende A/B-Tests ebenfalls zu aktualisieren, sodass sie auf die aktuellen URLs verweisen. Informationen zum Aktualisieren von A/B-Tests finden Sie unter [Aktualisieren von A/B-Tests](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
+>
 
 ## Erstellen von Zielgruppen in AEM {#create-audiences-within-aem}
 
@@ -113,7 +114,7 @@ Führen Sie die folgenden Schritte aus, um einen A/B-Test für ein adaptives For
 1. Klicken Sie auf das **Auswählen**-Tool in der Symbolleiste und wählen Sie das adaptive Formular aus.
 1. Klicken Sie auf **Mehr** in der Symbolleiste und wählen Sie **A/B-Test konfigurieren** aus. Die Seite „A/B-Test konfigurieren“ wird geöffnet.
 
-[ ](assets/ab-test-configure-1.png)
+[](assets/ab-test-configure-1.png)
 
 1. Geben Sie für **Name der Aktivität** den Namen des A/B-Tests ein.
 
@@ -134,7 +135,7 @@ Führen Sie die folgenden Schritte aus, um einen A/B-Test für ein adaptives For
 
 1. Wechseln Sie zur Benutzeroberfläche „Formulare und Dokumente“, wählen Sie das adaptive Formular aus, klicken Sie auf **Mehr** und wählen Sie **A/B-Tests starten** aus.
 
-Ihr A/B-Test wird jetzt ausgeführt und der angegebenen Zielgruppe werden auf der Grundlage der angegebenen Verteilung zufällig die Erlebnisse bereitgestellt.
+Ihr A/B-Test wird jetzt ausgeführt und die angegebene Zielgruppe wird basierend auf der angegebenen Verteilung nach dem Zufallsprinzip den Erlebnissen bereitgestellt.
 
 ## Aktualisieren von A/B-Tests {#update-a-b-test}
 
@@ -153,7 +154,7 @@ Nachdem der A/B-Test für den gewünschten Zeitraum durchgeführt wurde, können
 
 1. Wählen Sie das adaptive Formular aus, klicken Sie auf **Mehr** und klicken Sie anschließend auf **A/B-Testbericht**. Der Bericht wird angezeigt.
 
-[ ](assets/ab-test-report-3.png)
+[](assets/ab-test-report-3.png)
 
 1. Analysieren Sie den Bericht und prüfen Sie, ob genügend Datenpunkte vorhanden sind, um eines der Erlebnisse mit besseren Werten als Gewinner zu wählen. Sie können denselben A/B-Test länger laufen lassen oder einen Gewinner wählen und den A/B-Test beenden.
 1. Um einen Gewinner zu bestimmen und den A/B-Test zu beenden, klicken Sie auf die Schaltfläche **A/B-Test beenden** im Berichts-Dashboard. Sie werden in einem Dialogfeld aufgefordert, eines der beiden Erlebnisse als Gewinner zu wählen. Wählen Sie einen Gewinner und bestätigen Sie, dass Sie den A/B-Test beenden möchten.

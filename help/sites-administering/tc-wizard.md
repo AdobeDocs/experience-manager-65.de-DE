@@ -12,24 +12,24 @@ discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '214'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '213'
+ht-degree: 65%
 
 ---
 
 # Assistent „Sprachkopie erstellen“{#language-copy-wizard}
 
-Der Assistent „Sprachkopie erstellen“ führt Sie durch die Erstellung und Verwendung einer mehrsprachigen Inhaltsstruktur. Es ist jetzt wesentlich einfacher und schneller, eine Sprachkopie zu erstellen.
+Der Sprachkopie-Assistent ist ein geführtes Erlebnis zum Erstellen und Verwenden einer mehrsprachigen Inhaltsstruktur. Es ist jetzt viel einfacher und schneller, eine Sprachkopie zu erstellen.
 
 >[!NOTE]
 >
 >Anwendende müssen Mitglieder der Gruppe „Projekt-Admins“ sein, um eine Sprachkopie einer Seite zu erstellen.
 
-Sie können wie folgt auf diesen Assistenten zugreifen:
+So greifen Sie auf diesen Assistenten zu:
 
-1. Wählen Sie in Sites eine Seite aus und tippen/klicken Sie auf „Erstellen“.
+1. Wählen Sie in Sites eine Seite aus und tippen/klicken Sie auf Erstellen .
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
@@ -37,7 +37,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. Der Schritt **Quelle auswählen** innerhalb des Assistenten ermöglicht Ihnen das Hinzufügen/Entfernen von Seiten. Sie haben außerdem die Option, die Unterseiten ein- oder auszuschließen.
+1. Die **Quelle auswählen** im Schritt des Assistenten können Sie Seiten hinzufügen/entfernen. Sie haben außerdem die Option, die Unterseiten ein- oder auszuschließen.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
@@ -49,7 +49,7 @@ Sie können wie folgt auf diesen Assistenten zugreifen:
    >
    >Standardmäßig gibt es nur eine Übersetzungs-Einstellung. Um die Auswahl anderer Einstellungen zu ermöglichen, müssen Sie zuerst die Cloud-Einstellungen konfigurieren. Siehe [Konfigurieren des Übersetzungsintegrations-Frameworks](/help/sites-administering/tc-tic.md).
 
-1. Über die Schaltfläche **Weiter** gelangen Sie zum Schritt **Übersetzen** des Assistenten. Hier können Sie auswählen, ob nur die Struktur oder ein neues Übersetzungsprojekt erstellt werden soll oder ob einem vorhandenen Übersetzungsprojekt etwas hinzugefügt werden soll.
+1. Über die Schaltfläche **Weiter** gelangen Sie zum Schritt **Übersetzen** des Assistenten. Hier können Sie zwischen der Erstellung der Struktur, der Erstellung eines neuen Übersetzungsprojekts oder dem Hinzufügen zu einem vorhandenen Übersetzungsprojekt wählen.
 
    >[!NOTE]
    >

@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1108'
-ht-degree: 52%
+source-wordcount: '1107'
+ht-degree: 57%
 
 ---
 
@@ -33,7 +33,7 @@ Um Ihre E-Mail beim E-Mail-Dienstleister zu veröffentlichen, müssen Sie die fo
 
 >[!NOTE]
 >
->Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Veröffentlichungsinstanz veröffentlicht wird oder die Veröffentlichungsinstanz nicht verfügbar ist. Veröffentlichen Sie Ihren Newsletter und stellen Sie sicher, dass die Veröffentlichungsinstanz aktiv ist.
+>Wenn Sie E-Mail-Anbieter aktualisieren, einen Testlauf durchführen oder einen Newsletter versenden, schlagen diese Vorgänge fehl, wenn der Newsletter nicht zuerst in der Publishing-Instanz veröffentlicht wird oder die Publishing-Instanz nicht verfügbar ist. Stellen Sie sicher, dass Sie Ihren Newsletter veröffentlichen und die Publishing-Instanz ordnungsgemäß funktioniert.
 
 ## E-Mail erstellen {#creating-an-email}
 
@@ -92,7 +92,7 @@ Mit der Komponente **E-Mail-Tools** für ExactTarget können Sie Ihrer E-Mail/Ih
   </tr>
   <tr>
    <td>Öffnen der E-Mail verfolgen</td>
-   <td>Eine verborgene Komponente, mit der Sie die Tracking-Funktion von ExactTarget verwenden können.<br /> </td>
+   <td>Eine verborgene Komponente, mit der Sie die ExactTarget-Tracking-Funktion verwenden können.<br /> </td>
   </tr>
  </tbody>
 </table>

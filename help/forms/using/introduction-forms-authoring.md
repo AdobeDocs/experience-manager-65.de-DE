@@ -11,9 +11,9 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3161'
+source-wordcount: '3156'
 ht-degree: 62%
 
 ---
@@ -62,7 +62,7 @@ Wenn Sie ein neues adaptives Formular erstellen oder ein vorhandenes bearbeiten,
 
 ### Randleiste {#sidebar}
 
-Die Seitenleiste ermöglicht Ihnen Folgendes:
+In der Seitenleiste können Sie
 
 * Anzeigen von Formularinhalt wie Bereichen, Komponenten, Feldern und Layout.
 * Bearbeiten von Komponenteneigenschaften.
@@ -86,7 +86,7 @@ Im Inhalt-Browser können Sie Folgendes anzeigen
 
    * **Datenmodellobjekte**
 Hiermit können Sie die Formularmodellhierarchie anzeigen.
-Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das adaptive Formular ziehen. Die hinzugefügten Elemente werden automatisch in Formularkomponenten konvertiert, während ihre ursprünglichen Eigenschaften beibehalten werden. Sie können Datenmodellobjekte anzeigen, wenn Ihr Formular ein XML-Schema, ein JSON-Schema oder eine XDP-Vorlage verwendet.
+Damit können Sie Formularmodellelemente per Drag-and-Drop in das adaptive Formular ziehen. Die hinzugefügten Elemente werden automatisch in Formularkomponenten konvertiert, während ihre ursprünglichen Eigenschaften beibehalten werden. Sie können Datenmodellobjekte anzeigen, wenn Ihr Formular ein XML-Schema, ein JSON-Schema oder eine XDP-Vorlage verwendet.
 
 * **Eigenschaften-Browser**
 
@@ -170,7 +170,7 @@ Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das adaptive Fo
   </tr>
   <tr>
    <td>Bild</td>
-   <td>Ermöglicht es Ihnen, ein Bild einzufügen.</td>
+   <td>Ermöglicht das Einfügen eines Bildes.</td>
   </tr>
   <tr>
    <td>Bildauswahl</td>
@@ -226,10 +226,10 @@ Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das adaptive Fo
   </tr>
   <tr>
    <td>Text</td>
-   <td>Ermöglicht die Angabe von statischem Text.</td>
+   <td>Hier können Sie statischen Text angeben.</td>
   </tr>
   <tr>
-   <td>Senden-Schaltfläche</td>
+   <td>Schaltfläche „Senden“</td>
    <td>Fügt eine Senden-Schaltfläche hinzu, um das Formular an die konfigurierte Sendeaktion zu senden.</td>
   </tr>
   <tr>
@@ -364,13 +364,13 @@ Wenn Sie beispielsweise für ein Textfeld auf **[!UICONTROL Übergeordnet]** tip
 * Unterabschnitt
 * Abschnitt
 * guideRootPanel
-* Container für adaptive Formulare
+* Adaptiver Formularcontainer
 
 J. **sonstige**: Bietet weitere Optionen zum Arbeiten mit der ausgewählten Komponente.
 
 * SOM-Ausdruck anzeigen
-* Speichern eines Bedienfelds als Fragment (nur für Bedienfelder)
-* Untergeordnetes Bedienfeld hinzufügen (nur für Bedienfelder)
+* Bereich als Fragment speichern (nur für Bereiche)
+* Untergeordneten Bereich hinzufügen (nur für Bereiche)
 * Bedienfeld-Symbolleiste hinzufügen (nur für Bereiche)
 * Ersetzen (nicht für Bedienfelder)
 
@@ -384,12 +384,12 @@ Die Inhaltsstruktur enthält in der Regel die folgenden Hauptkomponenten:
 
 * **guideContainer**: Der Stamm eines adaptiven Formulars, der als **[!UICONTROL Beginn eines adaptiven Formulars]** in der Benutzeroberfläche des adaptiven Formulars markiert ist. In dieser Komponente können Sie Folgendes angeben:
 
-   * *Mobiles Layout des adaptiven Formulars*: Definiert das Erscheinungsbild des Formulars auf Mobilgeräten.
+   * *Mobiles Layout des adaptiven Formulars*: Definiert die Darstellung des Formulars auf Mobilgeräten.
    * *Dankeseite*: Definiert die Seite, auf die der Benutzer nach dem Senden des Formulars umgeleitet wird.
-   * *Übermittlungsaktion*: Definiert, wie das Formular auf dem Server verarbeitet wird, sobald der Benutzer das Formular sendet.
+   * *Übermittlungsaktion*: Definiert, wie das Formular auf dem Server verarbeitet wird, nachdem der Benutzer das Formular gesendet hat.
    * *Formatierung*: Gibt den Pfad zur CSS-Datei an, die zum Anpassen des Erscheinungsbilds des Formulars verwendet wird.
 
-* **rootPanel:** Der Stammbereich eines adaptiven Formulars. Sie kann Unterbereiche unter dem Elementknoten enthalten. Jedem Bedienfeld einschließlich des Stammbereichs kann ein Layout zugeordnet sein. Das Layout des Bedienfelds bestimmt das Layout des Formulars. Im Akkordeonlayout beispielsweise werden die Elemente als Akkordeonschritte angeordnet.
+* **rootPanel:** Der Stammbereich eines adaptiven Formulars. Sie kann Unterbereiche unter dem Elementknoten enthalten. Jedem Bedienfeld, einschließlich des Stammbereichs, kann ein Layout zugeordnet sein. Das Layout des Bedienfelds bestimmt das Layout des Formulars. Im Akkordeonlayout beispielsweise werden die Elemente als Akkordeonschritte angeordnet.
 
 * **Symbolleiste:** Ein Container für ein adaptives Formular verfügt über eine zugehörige globale Symbolleiste, die global für das Formular gilt. Diese Symbolleiste kann mit der Aktion **[!UICONTROL Symbolleiste hinzufügen]** in der Bearbeitungsleiste hinzugefügt werden. Damit können Autoren Aktionen wie Übermitteln, Speichern, Zurücksetzen usw. hinzufügen.
 

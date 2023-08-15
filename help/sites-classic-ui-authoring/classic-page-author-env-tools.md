@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: ht
-source-wordcount: '902'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '897'
+ht-degree: 91%
 
 ---
 
@@ -22,7 +22,7 @@ Die Autorenumgebung von AEM bietet verschiedene Mechanismen für das Organisiere
 
 ## Site-Administration {#site-administration}
 
-Die Konsole **Websites** ermöglicht es Ihnen, Ihre Website zu verwalten und darin zu navigieren. Mithilfe der beiden Bereiche können die Struktur Ihrer Website erweitert und Aktionen für das gewünschte Element durchgeführt werden:
+Die **Websites** -Konsole können Sie Ihre Website verwalten und darin navigieren. Mithilfe der beiden Bereiche können die Struktur Ihrer Website erweitert und Aktionen für das gewünschte Element durchgeführt werden:
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -46,7 +46,7 @@ Alternativ können Sie die Schaltfläche **Hilfe** im Bearbeitungsdialogfeld bes
 
 ## Sidekick {#sidekick}
 
-Auf der Registerkarte **Komponenten** im Sidekick können Sie die Komponenten durchsuchen, die Sie der aktuellen Seite hinzufügen können. Sie können die gewünschte Gruppe erweitern und anschließend eine Komponente an die gewünschte Position auf der Seite ziehen.
+Die **Komponenten** im Sidekick können Sie die Komponenten durchsuchen, die zur aktuellen Seite hinzugefügt werden können. Sie können die gewünschte Gruppe erweitern und anschließend eine Komponente an die gewünschte Position auf der Seite ziehen.
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
@@ -106,7 +106,7 @@ Auf dieser Registerkarte werden alle Seiten aufgelistet. Doppelklicken Sie auf e
 
 ### Verweisen auf Absätze von anderen Seiten {#referencing-paragraphs-from-other-pages}
 
-Auf dieser Registerkarte können Sie nach einer anderen Seite suchen. Alle Absätze der betreffenden Seite werden aufgelistet. Anschließend können Sie einen Absatz auf die aktuelle Seite ziehen. Dadurch wird ein Verweis auf den ursprünglichen Absatz erstellt.
+In diesem Tab können Sie nach einer anderen Seite suchen. Alle Absätze der betreffenden Seite werden aufgelistet. Anschließend können Sie einen Absatz auf die aktuelle Seite ziehen. Dadurch wird ein Verweis auf den ursprünglichen Absatz erstellt.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -192,11 +192,11 @@ Beim Bearbeiten einer Seite in der klassischen Benutzeroberfläche können Sie v
 
 Die Reihe von Symbolen am unteren Rand des Sidekick wird verwendet, um den Bearbeitungsmodus für Seiten umzuschalten:
 
-* [Bearbeiten:](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
-Dies ist der Standardmodus; er ermöglicht die Bearbeitung der Seite durch Hinzufügen oder Entfernen von Komponenten sowie andere Änderungen.
+* [Bearbeiten](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
+Dies ist der Standardmodus und ermöglicht die Bearbeitung der Seite, das Hinzufügen oder Löschen von Komponenten und andere Änderungen.
 
-* [Vorschau:](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
-In diesem Modus können Sie eine Seite in der finalen Form betrachten, in der sie auf der Website erscheint.
+* [Vorschau](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
+In diesem Modus können Sie eine Vorschau der Seite anzeigen, als ob sie auf Ihrer Website in ihrer endgültigen Form erscheint.
 
 * [Design:](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
 In diesem Modus können Sie das Design der Seite bearbeiten, indem Sie die verfügbaren Komponenten konfigurieren.

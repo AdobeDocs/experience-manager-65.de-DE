@@ -10,10 +10,10 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: bb27c7dfedd5a16728674f7584b0c462a92646e6
-workflow-type: ht
-source-wordcount: '5934'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '5933'
+ht-degree: 99%
 
 ---
 
@@ -681,7 +681,7 @@ Einige dieser Tools hängen von Ihrem Betriebssystem ab.
 
 In dieser Datei werden grundlegende Informationen zu allen Anforderungen an AEM registriert. Sie können wertvolle Schlüsse daraus ziehen.
 
-`request.log` ist eine integrierte Möglichkeit, um herauszufinden, wie lange Anforderungen brauchen. Zu Entwicklungszwecken ist es hilfreich, `tail -f` auf den `request.log` anzuwenden und nach langsamen Systemreaktionen zu suchen. Für die Analyse eines größeren `request.log` empfiehlt sich die [Verwendung von `rlog.jar`, damit Sie nach Systemreaktionszeiten filtern und diese sortieren können](#using-rlog-jar-to-find-requests-with-long-duration-times).
+`request.log` ist eine integrierte Möglichkeit, um herauszufinden, wie lange Anforderungen brauchen. Zu Entwicklungszwecken ist es hilfreich, `tail -f` auf den `request.log` anzuwenden und nach langsamen Systemreaktionen zu suchen. So analysieren Sie eine größere `request.log`, empfiehlt Adobe die [Verwendung von `rlog.jar` die die Sortierung und Filterung der Antwortzeiten ermöglicht](#using-rlog-jar-to-find-requests-with-long-duration-times).
 
 Es wird empfohlen, „langsame“ Seiten aus dem `request.log` zu isolieren und einzeln für eine bessere Leistung zu optimieren. Schließen Sie Leistungsmetriken pro Komponente ein oder verwenden Sie ein Leistungs-Profilierungs-Tool, z. B. ` [yourkit](https://www.yourkit.com/)`.
 
@@ -1095,12 +1095,12 @@ Im Folgenden finden Sie eine Liste mit Vorschlägen, was Sie überprüfen sollte
 
 >[!NOTE]
 >
->In folgenden Artikeln finden Sie weitere Informationen:
+In folgenden Artikeln finden Sie weitere Informationen:
 >
->* [Thread-Dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=de)
->* [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
->* [Analyse mit dem integrierten Profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=de)
->* [Analyse langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+* [Thread-Dumps](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17452.html?lang=de)
+* [Analyse von Speicherproblemen](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17482.html?lang=de)
+* [Analyse mit dem integrierten Profiler](https://experienceleague.adobe.com/docs/experience-cloud-kcs/kbarticles/KA-17499.html?lang=de)
+* [Analyse langsamer und blockierter Prozesse](https://helpx.adobe.com/de/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
 >
 
 ### CPU bei 100 % {#cpu-at}
@@ -1193,6 +1193,6 @@ Hier können Sie sehen, wie viel Arbeitsspeicher belegt ist, welche GC-Algorithm
 
 >[!NOTE]
 >
->Informationen zu VM von Oracle finden Sie unter:
+Informationen zu VM von Oracle finden Sie unter:
 >
->[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)
+[https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/8/docs/technotes/guides/vm/server-class.html)

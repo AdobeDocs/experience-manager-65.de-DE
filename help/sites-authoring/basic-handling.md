@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3025'
-ht-degree: 99%
+source-wordcount: '3017'
+ht-degree: 95%
 
 ---
 
@@ -30,7 +30,7 @@ ht-degree: 99%
 
 ### Touch-optimierte Benutzeroberfläche {#a-touch-enabled-ui}
 
-Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Berührungen – Tippen, Berühren und Halten sowie Wischen – mit der Software zu interagieren. Im Gegensatz dazu werden auf herkömmlichen Desktop-Benutzeroberflächen Mausaktionen verwendet, wie z. B. Klicken, Doppelklicken, mit der rechten Maustaste klicken und Bewegen der Maus über ein Objekt.
+Die Benutzeroberfläche für AEM wurde für Touchscreens optimiert. Eine Touch-optimierte Benutzeroberfläche ermöglicht es Ihnen, mithilfe von Gesten wie Tippen, Berühren und Halten und Wischen mit der Software zu interagieren. Im Gegensatz dazu werden auf herkömmlichen Desktop-Benutzeroberflächen Mausaktionen verwendet, wie z. B. Klicken, Doppelklicken, mit der rechten Maustaste klicken und Bewegen der Maus über ein Objekt.
 
 Da die AEM-Benutzeroberfläche Touch-optimiert ist, können Sie auf Ihren Touch-Geräten (z. B. einem Smartphone oder Tablet) Touch-Gesten und auf einem traditionellen Desktop-Gerät Mausaktionen nutzen.
 
@@ -97,11 +97,11 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
   </tr>
   <tr>
    <td>Communities</td>
-   <td>In dieser Konsole können Sie <a href="/help/communities/sites-console.md">Community-Sites</a> für die <a href="/help/communities/overview.md#engagement-community">Interaktion</a> und die <a href="/help/communities/overview.md#enablement-community">Aktivierung</a> erstellen und verwalten.</td>
+   <td>In dieser Konsole können Sie <a href="/help/communities/sites-console.md">Community-Sites</a> für <a href="/help/communities/overview.md#engagement-community">Interaktion</a> und <a href="/help/communities/overview.md#enablement-community">Aktivierung</a>.</td>
   </tr>
   <tr>
-   <td>Commerce</td>
-   <td>Damit können Sie Produkte, Produktkataloge und Bestellungen verwalten, die zu Ihren <a href="/help/commerce/cif-classic/administering/ecommerce.md">Commerce</a>-Sites gehören.</td>
+   <td>Commerce </td>
+   <td>Damit können Sie Produkte, Produktkataloge und Bestellungen verwalten, die mit Ihren <a href="/help/commerce/cif-classic/administering/ecommerce.md">Handel</a> Sites.</td>
   </tr>
   <tr>
    <td>Experience Fragments</td>
@@ -109,7 +109,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
   </tr>
   <tr>
    <td>Formulare</td>
-   <td>In dieser Konsole können Sie Ihre <a href="/help/forms/home.md">Formulare und Dokumente</a> erstellen und verwalten.</td>
+   <td>Mit dieser Konsole können Sie Ihre <a href="/help/forms/home.md">Formulare und Dokumente</a>.</td>
   </tr>
   <tr>
    <td>Personalisierung</td>
@@ -121,7 +121,7 @@ Im Navigationsfenster stehen folgende Konsolen zur Verfügung:
   </tr>
   <tr>
    <td>Screens</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=de">Screens</a> ermöglicht Ihnen die Verwaltung aller Ihrer kundenorientierten Bildschirme, unabhängig von Größe und Speicherort.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html?lang=de">Screens</a> ermöglicht Ihnen die Verwaltung aller Ihrer kundenorientierten Bildschirme, unabhängig von Größe und Standort.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -188,7 +188,7 @@ Die Kopfzeile befindet sich immer oben im Bildschirm. Die meisten Optionen in de
 
   ![Breadcrumbs](assets/bh-05.png)
 
-  Breadcrumbs befinden sich immer in der Mitte der Leiste und zeigen die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen Ihnen damit die Navigation innerhalb einer bestimmten Konsole. In der Sites-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
+  Die Breadcrumbs befinden sich immer in der Mitte der Leiste und zeigen die Beschreibung des aktuell ausgewählten Elements an. Sie ermöglichen die Navigation innerhalb einer bestimmten Konsole. In der Sites-Konsole können Sie damit durch die Ebenen Ihrer Website navigieren.
 
   Klicken Sie einfach auf den Breadcrumb-Text, um eine Dropdown-Liste mit den Hierarchieebenen des aktuell ausgewählten Elements anzuzeigen. Klicken Sie auf einen Eintrag, um zu dieser Stelle zu springen.
 
@@ -537,7 +537,7 @@ Mithilfe des Seitenbereichs der Inhaltsstruktur in Verbindung mit einer Listen- 
 
 Die Zeitleiste kann zur Anzeige und/oder Einleitung von Ereignissen in Verbindung mit der ausgewählten Ressource verwendet werden. So öffnen Sie die Zeitleistenspalte mithilfe der Schienenauswahl:
 
-Die Zeitleistenspalte bietet folgende Möglichkeiten:
+In der Timeline-Spalte können Sie:
 
 * [Anzeigen verschiedener Ereignisse im Zusammenhang mit einem ausgewählten Element](#timelineviewevents)
 

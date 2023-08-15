@@ -10,10 +10,10 @@ discoiquuid: 2fd2276e-cfe3-47ad-94c1-9c7af56b7a17
 docset: aem65
 feature: Adaptive Forms
 exl-id: 048bd9e8-ef34-40fb-9f46-73743d7b47c8
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2803'
-ht-degree: 63%
+source-wordcount: '2802'
+ht-degree: 62%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 63%
 
 <span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
-Adaptive Formulare bieten ein optimiertes und vereinfachtes Ausfüllen von Formularen für Endbenutzer mit dynamischen Skriptfunktionen. So können Sie hiermit Ausdrücke schreiben, um verschiedene Verhaltensweisen hinzuzufügen (z. B. dynamisch eingeblendete bzw. ausgeblendete Felder und Bereiche). Außerdem können Sie auch berechnete Felder oder Überprüfungslogik hinzufügen, Felder als schreibgeschützt festlegen und vieles mehr. Das dynamische Verhalten basiert auf den vom Benutzer eingegebenen oder vorab eingetragenen Daten.
+Adaptive Formulare bieten ein optimiertes und vereinfachtes Ausfüllen von Formularen für Endbenutzer mit dynamischen Skriptfunktionen. Sie können damit Ausdrücke schreiben, um verschiedene Verhaltensweisen hinzuzufügen, z. B. dynamische Ein-/Ausblendfelder und Bedienfelder. Außerdem können Sie auch berechnete Felder oder Überprüfungslogik hinzufügen, Felder als schreibgeschützt festlegen und vieles mehr. Das dynamische Verhalten basiert auf den vom Benutzer eingegebenen oder vorab eingetragenen Daten.
 
 JavaScript ist die Ausdruckssprache für adaptive Formulare. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Eine vollständige Liste der Klassen, Ereignisse, Objekte und öffentlichen APIs für adaptive Formulare finden Sie unter [API-Referenz der JavaScript-Bibliothek für adaptive Formulare](https://helpx.adobe.com/de/experience-manager/6-5/forms/javascript-api/index.html).
 
@@ -54,7 +54,7 @@ In adaptiven Formularen können Sie Ausdrücke zum Hinzufügen von Verhaltenswei
 * **[Ausdrücke für die Berechnung](#calculate-expression)**: Zum automatischen Berechnen des Werts eines Felds.
 * **[Ausdruck für ein Klickereignis](#click-expression)**: Zum Verarbeiten von Aktionen beim Klicken auf eine Schaltfläche.
 * **[Initialisierungsskript](#initialization-script):** Zum Durchführen einer Aktion beim Initialisieren eines Felds.
-* **[Optionsausdruck](#options-expression)**: um eine Dropdown-Liste dynamisch auszufüllen.
+* **[Optionsausdruck](#options-expression)**: zum dynamischen Ausfüllen einer Dropdown-Liste.
 * **[Ausdruck für die Zusammenfassung](#summary)**: Zum dynamischen Berechnen des Titels eines Akkordeons.
 * **[Ausdrücke für die Überprüfung](#validate-expression)**: Zum Überprüfen eines Felds.
 * **[Skript zum Bestätigen von Werten](#value-commit-script):** Zum Ändern der Komponenten eines Formulars, nachdem der Wert eines Felds geändert wurde.
@@ -65,7 +65,7 @@ In adaptiven Formularen können Sie Ausdrücke zum Hinzufügen von Verhaltenswei
 
 Mit dem Ausdruck für den Zugriff können Sie ein Feld aktivieren oder deaktivieren. Wenn der Ausdruck den Wert eines Felds verwendet, wird der Ausdruck erneut ausgelöst, sobald der Wert des Felds sich ändert.
 
-**Gilt für**: fields
+**Gilt für**: Felder
 
 **Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der angibt, ob das Feld aktiviert oder deaktiviert ist. **true** bedeutet, dass das Feld aktiviert ist und **false** steht für die Deaktivierung des Felds.
 
@@ -75,7 +75,7 @@ Mit dem Ausdruck für den Zugriff können Sie ein Feld aktivieren oder deaktivie
 
 Der Ausdruck für Berechnungen wird verwendet, um den Wert eines Felds unter Verwendung eines Ausdrucks automatisch zu berechnen. Normalerweise verwendet ein solcher Ausdruck die Werteigenschaft anderer Felder. Beispiel: `field2.value + field3.value`. Sobald sich der Wert von `field2` oder `field3` ändert, wird der Ausdruck erneut ausgelöst und der Wert neu berechnet.
 
-**Gilt für**: fields
+**Gilt für**: Felder
 
 **Rückgabetyp**: Der Ausdruck gibt einen Wert zurück, der mit dem Feld kompatibel ist, in dem das Ausdrucksergebnis angezeigt wird (z. B. Dezimalzahl).
 
@@ -115,7 +115,7 @@ Der Ausdruck für Optionen wird zum dynamischen Ausfüllen von Optionen in einem
 
 **Rückgabetyp**: Der Optionsausdruck gibt ein Array von Zeichenfolgenwerten zurück. Jeder Wert kann eine einfache Zeichenfolge sein, z. B. **Männlich** oder in einem Schlüssel-Wert-Paarformat, z. B. **1=Männlich**
 
-**Beispiel**: Wenn Sie den Wert eines Felds basierend auf dem Wert eines anderen Felds ausfüllen möchten, geben Sie einen einfachen Ausdruck für Optionen an. Beispiel: Um ein Feld **Anzahl der Kinder** basierend auf dem Wert **Familienstand** eines anderen Felds auszufüllen, lautet der Ausdruck wie folgt:
+**Beispiel**: Verwenden Sie einen einfachen Optionsausdruck, um den Wert eines Felds basierend auf dem Wert eines anderen Felds auszufüllen. Beispiel: Um ein Feld **Anzahl der Kinder** basierend auf dem Wert **Familienstand** eines anderen Felds auszufüllen, lautet der Ausdruck wie folgt:
 
 **`marital_status.value == "married" ? ["1=One", "2=two"] : ["0=Zero"]`.**
 
@@ -137,7 +137,7 @@ Der Zusammenfassungsausdruck wird in der Regel für das Wiederholen von untergeo
 
 Der Ausdruck für die Überprüfung wird zur Überprüfung der Felder unter Verwendung des entsprechenden Ausdrucks verwendet. Normalerweise verwenden solche Ausdrücke reguläre Ausdrücke zusammen mit dem Feldwert, um ein Feld zu überprüfen. Bei jeder Änderung am Wert des Felds wird der Ausdruck erneut ausgelöst und der Überprüfungsstatus des Felds erneut berechnet.
 
-**Gilt für**: fields
+**Gilt für**: Felder
 
 **Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der den Überprüfungsstatus des Felds wiedergibt. Der Wert **false** bedeutet, dass das Feld ungültig ist, und **true** bedeutet, dass das Feld gültig ist.
 **Beispiel**: Für ein Feld, das eine britische Postleitzahl enthalten soll, lautet der Ausdruck für die Überprüfung wie folgt:
@@ -182,16 +182,16 @@ Der Ausdruck für die Sichtbarkeit wird verwendet, um die Sichtbarkeit des Felds
 
 Der Ausdruck zum Abschluss von Schritten wird verwendet, um zu verhindern, dass ein Benutzer zum nächsten Schritt eines Assistenten-Layouts geht. Diese Ausdrücke werden verwendet, wenn Bedienfelder über ein Assistentenlayout verfügen (Formulare mit mehreren Schritten, die jeweils einen Schritt zeigen). Der Benutzer kann nur dann in den nächsten Schritt, Bereich oder Unterabschnitt wechseln, wenn im aktuellen Abschnitt alle erforderlichen Werte eingetragen wurden und gültig sind.
 
-**Gilt für**: Bedienfelder mit Layout des Elements auf &quot;Assistent&quot;eingestellt.
+**Gilt für**: Bedienfelder mit dem Layout des Elements auf &quot;Assistent&quot;eingestellt.
 
-**Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der angibt, dass das aktuelle Bedienfeld gültig ist oder nicht. **True** bedeutet, dass der aktuelle Bereich gültig ist und der Benutzer zum nächsten Fenster navigieren kann.
+**Rückgabetyp**: Der Ausdruck gibt einen booleschen Wert zurück, der für das aktuelle Bedienfeld gültig ist oder nicht. **True** bedeutet, dass der aktuelle Bereich gültig ist und der Benutzer zum nächsten Fenster navigieren kann.
 
 **Beispiel**: In einem Formular, das in verschiedenen Bereichen organisiert ist, wird das aktuelle Bedienfeld vor der Navigation zum nächsten Bedienfeld überprüft. In solchen Fällen werden die Ausdrücke zum Abschluss von Schritten verwendet. Im Allgemeinen verwenden diese Ausdrücke die GuideBridge-Validierungs-API. Beispiel für einen Ausdruck zum Abschluss von Schritten:
 `window.guideBridge.validate([],this.panel.navigationContext.currentItem.somExpression)`
 
 ## Überprüfungen in adaptiven Formularen {#validations-in-adaptive-form}
 
-Es gibt mehrere Methoden, um einem adaptiven Formular eine Feldüberprüfung hinzuzufügen. Wenn einem Feld eine Überprüfung hinzugefügt wird, bedeutet **True**, dass der in das Feld eingegebene Wert gültig ist. **False** bedeutet, dass der Wert ungültig ist. Wenn Sie die Tabulatortaste in ein und aus einem Feld springen, wird die Fehlermeldung nicht generiert.
+Es gibt mehrere Methoden, um einem adaptiven Formular Feldvalidierungen hinzuzufügen. Wenn einem Feld eine Überprüfung hinzugefügt wird, bedeutet **True**, dass der in das Feld eingegebene Wert gültig ist. **False** bedeutet, dass der Wert ungültig ist. Wenn Sie die Tabulatortaste in ein und aus einem Feld springen, wird die Fehlermeldung nicht generiert.
 
 Die Methoden zum Hinzufügen von Überprüfungen zu einem Feld sind:
 

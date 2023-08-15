@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1141'
-ht-degree: 97%
+source-wordcount: '1138'
+ht-degree: 92%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 Inhaltsfragmente für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md).
 
-Sie ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
+Damit können Sie kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten erstellen. Sie können diese Fragmente und ihre Varianten bei der Erstellung Ihrer Inhaltsseiten verwenden.
 
 In Verbindung mit dem aktualisierten JSON Exporter können strukturierte Inhaltsfragmente auch verwendet werden, um AEM-Inhalte über Content Services anderen Kanälen als AEM-Seiten bereitzustellen.
 
@@ -124,7 +124,7 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
    * Die Standardversion **Primär** ist immer verfügbar.
    * Eine Auswahl ist verfügbar, wenn Varianten für das Fragment erstellt wurden.
 
-* **Absätze**: den Bereich der Absätze angeben, die einbezogen werden sollen:
+* **Absätze**: Geben Sie den Bereich der Absätze an, die einbezogen werden sollen:
 
    * **Alle**
    * **Bereich**: Zum Beispiel `1`, `3-5`, `9-*`
@@ -135,7 +135,7 @@ Im entsprechenden Konfigurationsdialogfeld können Sie die verfügbaren Paramete
 
 ### Schnelle Verbindung zum Fragmenteditor     {#quick-connection-to-fragment-editor}
 
-Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Auf diese Weise können Sie [das Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md).
+Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols **Bearbeiten** in der Komponenten-Symbolleiste öffnen. Dadurch können Sie [Inhaltsfragment bearbeiten und verwalten](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -145,7 +145,7 @@ Sie können die Fragmentquelle zur Bearbeitung (das Asset) mithilfe des Symbols 
 
 Wenn ein bestimmtes Inhaltsfragment zur Seite hinzugefügt wird, gibt es einen Platzhalter **Komponenten hierher ziehen** zwischen jedem HTML-Absatz (und am oberen/unteren Rand) des Fragments.
 
-Damit können Sie zusätzliche Inhalte [zwischen (d. h. Zwischeninhalte)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) dem Fragmentinhalt (an einer der verfügbaren Stellen) hinzufügen, ohne das Stammfragment ändern zu müssen.
+Damit können Sie zusätzlichen Inhalt hinzufügen [Zwischeninhalt (d. h. Zwischeninhalt)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) den Fragmentinhalt (an einem der verfügbaren Punkte), ohne das Stammfragment ändern zu müssen.
 
 Für Zwischeninhalte haben Sie folgende Möglichkeiten:
 

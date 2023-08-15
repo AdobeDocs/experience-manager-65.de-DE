@@ -1,7 +1,7 @@
 ---
 title: Komponente „Entwürfe und Sendungen“
 seo-title: Drafts and submissions component
-description: Mit der Komponente „Drafts and Submissions“ können Sie Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Sie können die Darstellung und den Stil der Komponente anpassen.
+description: Mit der Komponente „Drafts and Submissions“ können Sie Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Sie können das Erscheinungsbild und den Stil der Komponente anpassen.
 seo-description: Drafts and submissions component lists forms that are in the draft state and are already submitted. You can customize appearance and style of the component.
 uuid: 42c205b5-3141-4b80-85d9-dad921e223a2
 content-type: reference
@@ -10,33 +10,33 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '747'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '745'
+ht-degree: 77%
 
 ---
 
 # Komponente „Entwürfe und Sendungen“{#drafts-and-submissions-component}
 
-Mit der Komponente „Drafts &amp;Submissions“ können Sie alle Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Die Komponente bietet separate Bereiche (Registerkarten) für Entwürfe und für gesendete Formulare. Die Benutzer können lediglich ihre eigenen Entwürfe und gesendeten Formulare anzeigen.
+Mit der Komponente „Drafts &amp;Submissions“ können Sie alle Formulare auflisten, die den Status „Entwurf“ aufweisen, und diejenigen, die bereits gesendet wurden. Die Komponente bietet separate Bereiche (Registerkarten) für Entwürfe und für gesendete Formulare. Benutzer können nur ihre Entwürfe und gesendeten Formulare anzeigen.
 
-## Komponente konfigurieren {#configuring-the-component}
+## Konfigurieren der Komponente {#configuring-the-component}
 
-In der Komponente „Drafts and Submissions“ stehen die beiden Registerkarten „Drafts“ und „Submissions“ zur Verfügung.
+Die Komponente &quot;Drafts &amp; Submissions&quot;verfügt über zwei Registerkarten: Entwürfe und Übermittlungen.
 
 Damit ein übermitteltes adaptives Formular auf der Registerkarte für Übermittlungen angezeigt werden kann, definieren Sie als **Übermittlungsaktion** die Option **[Übermittlungsaktion für Formularportal](../../forms/using/configuring-submit-actions.md). Sie können stattdessen auch die** Option „Forms Portal Submit“ aktivieren. Wenn ein Benutzer das Formular übermittelt, wird dieses der Registerkarte „Submissions“ hinzugefügt.
 
-Die Entwurfsfunktion ist standardmäßig aktiviert. Wenn der Benutzer in einem adaptiven Formular auf **Speichern** klickt, wird dieses der Registerkarte „Drafts“ hinzugefügt.
+Die Entwurfsfunktion ist standardmäßig aktiviert. Klickt ein Benutzer auf **Speichern** in einem adaptiven Formular wird das Formular der Registerkarte Entwürfe hinzugefügt.
 
-Führen Sie die folgenden Schritte durch, um eine Komponente „Drafts and Submissions“ hinzuzufügen:
+Führen Sie die folgenden Schritte aus, um eine Komponente &quot;Drafts &amp; Submissions&quot;hinzuzufügen und zu konfigurieren:
 
-1. Ziehen Sie die Komponente **Drafts &amp; Submissions** unter Document Services-Kategorie im Komponenten-Browser zu Ihrer Seite per Drag &amp; Drop.
+1. Ziehen Sie die **Entwürfe und Übermittlungen** -Komponente unter Document Services-Kategorie im Komponenten-Browser auf Ihrer Seite.
 1. Tippen Sie auf die Komponente und dann auf ![settings_icon](assets/settings_icon.png), um das Dialogfeld „Bearbeiten“ für die Komponente zu öffnen.
 
    ![Komponente „Drafts &amp; Submissions“](assets/drafts-submissions-edit.png)
 
-1. Geen Sie im Dialogfeld „Bearbeiten“ die folgenden Details an und tippen Sie auf **Fertig**, um die Einstellungen zu speichern.
+1. Geben Sie im Dialogfeld &quot;Bearbeiten&quot;die folgenden Details an und tippen Sie auf **Fertig** , um die Einstellungen zu speichern.
 
 <table>
  <tbody>
@@ -68,22 +68,22 @@ Führen Sie die folgenden Schritte durch, um eine Komponente „Drafts and Submi
   <tr>
    <td> </td>
    <td>Standardregisterkarte</td>
-   <td>Gibt an, welche Registerkarte beim Laden der Forms Portal-Seite angezeigt werden soll. Sie können eine der Registerkarten <strong>Draft Forms</strong> und <strong>Submitted Forms</strong> wählen.</td>
+   <td>Gibt an, welche Registerkarte beim Laden der Forms Portal-Seite angezeigt werden soll. Sie können zwischen <strong>Registerkarte "Forms-Entwurf"</strong> und <strong>Registerkarte "Gesendete Forms"</strong>.</td>
   </tr>
   <tr>
-   <td>Konfiguration der Registerkarte für Formularentwürfe</td>
+   <td>Konfiguration der Registerkarte "Forms"</td>
    <td>Benutzerdefinierter Titel</td>
-   <td>Geben Sie den Titel der Registerkarte für <strong>Formularentwürfe</strong> an. Der Standardwert ist <strong>Draft Forms.</strong></td>
+   <td>Geben Sie den Titel der Registerkarte für <strong>Formularentwürfe</strong> an. Der Standardwert ist <strong>Forms-Entwurf.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Layout-Vorlage</td>
-   <td>Gibt das für die Liste der Formularentwürfe zu verwendende Layout an.</td>
+   <td>Gibt das Layout an, das für die Liste "Entwurf Forms"verwendet werden soll.</td>
   </tr>
   <tr>
-   <td>Konfiguration der Registerkarte für übermittelte Formulare</td>
+   <td>Konfig. für Registerkarte mit übermittelten Formularen</td>
    <td>Benutzerdefinierter Titel </td>
-   <td>Geben Sie den Titel der Registerkarte für <strong>übermittelte Formulare</strong> an. Der Standardwert ist <strong>Submitted Forms.</strong></td>
+   <td>Geben Sie den Titel der Registerkarte für <strong>übermittelte Formulare</strong> an. Der Standardwert ist <strong>Gesendete Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>
@@ -97,7 +97,7 @@ Führen Sie die folgenden Schritte durch, um eine Komponente „Drafts and Submi
 
 Wenn Sie die Forms Portal Aktion-Übermittlungsaktion verwenden oder die Store-Daten über die Forms-Portal-Optionen im adaptiven Formular aktivieren, werden die Formulardaten im AEM-Repository gespeichert. In einer Produktionsumgebung wird empfohlen, keine Entwurfs- oder gesendete Formulardaten nicht im AEM-Repository zu speichern. Stattdessen müssen Sie die Entwurfs- und Übermittlungskomponente mit einem sicheren Speicher wie der Unternehmensdatenbank integrieren, um Entwürfe und übermittelte Formulardaten zu speichern.
 
-Mit dem Forms-Portal können Sie Daten im lokalen AEM-Repository, im Remote-AEM oder in einer Datenbank speichern. Mit AEM Forms können Sie den implementierten Speicherort für Benutzerdaten aus Entwürfen und Übermittlungen anpassen. Sie können Standardmethoden überschreiben, um festzulegen, wie Entwurfs- und Übermittlungsdaten an einem Speicherort Ihrer Wahl gespeichert werden. Beispiel: Sie können die Daten in einem Datenspeicher speichern, der derzeit in Ihrem Unternehmen implementiert ist.
+Mit dem Forms-Portal können Sie Daten im lokalen AEM-Repository, im Remote-AEM oder in einer Datenbank speichern. Mit AEM Forms können Sie die Implementierung der Speicherung von Benutzerdaten für Entwürfe und Übermittlungen anpassen. Sie können Standardmethoden überschreiben, um festzulegen, wie Entwurfs- und Übermittlungsdaten an einem Speicherort Ihrer Wahl gespeichert werden. Beispiel: Sie können die Daten in einem Datenspeicher speichern, der derzeit in Ihrem Unternehmen implementiert ist.
 
 Das Forms-Portal bietet vordefinierte Services (APIs) zum Speichern von Daten im CRX-Repository lokaler und entfernter Instanzen für die Veröffentlichung von AEM Forms. Sie können die Standardimplementierungen durch benutzerdefinierte Implementierungen ersetzen, wie es im Artikel [Konfiguration von Services für die Speicherung von Entwürfem und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md) beschrieben wird, um die standardmäßige Funkion zu ersetzen. Detaillierte Informationen zu den Methoden, die für eine benutzerdefinierte Implementierung zum Speichern von Inhalten an einem gesicherten Speicherort erforderlich sind, finden Sie unter [Anpassen von Services für Entwurfs- und Übermittlungsdaten](/help/forms/using/custom-draft-submission-data-services.md) und [Benutzerdefinierter Speicher für die Komponente der Entwürfe und Übermittlungen.](/help/forms/using/adding-custom-storage-provider-forms.md)
 

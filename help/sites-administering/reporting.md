@@ -1,7 +1,7 @@
 ---
 title: Reporting
 seo-title: Reporting
-description: Erfahren Sie, wie Sie mit der Berichterstellung in AEM arbeiten können.
+description: Erfahren Sie, wie Sie mit Reporting in AEM arbeiten.
 seo-description: Learn how to work with Reporting in AEM.
 uuid: eee4befd-5fa9-4ebc-8eea-56e1534a6b9b
 contentOwner: Guillaume Carlino
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
-workflow-type: ht
-source-wordcount: '2806'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '2804'
+ht-degree: 62%
 
 ---
 
 # Reporting {#reporting}
 
-Um Ihnen bei der Überwachung und Analyse des Status Ihrer Instanz zu helfen, stellt AEM eine Auswahl an Standardberichten bereit, die für Ihre individuellen Anforderungen konfiguriert werden können:
+Um Ihnen bei der Überwachung und Analyse des Status Ihrer Instanz zu helfen, bietet AEM eine Auswahl von Standardberichten, die für Ihre individuellen Anforderungen konfiguriert werden können:
 
 * [Komponentenbericht](#component-report)
 * [Speichernutzung](#disk-usage)
@@ -37,13 +37,13 @@ Um Ihnen bei der Überwachung und Analyse des Status Ihrer Instanz zu helfen, st
 
 Über die Konsole **Tools** kann auf alle Berichte zugegriffen werden. Wählen Sie im linken Bereich **Berichte** aus und doppelklicken Sie dann im rechten Bereich auf den benötigten Bericht, um ihn zur Anzeige und/oder Konfiguration zu öffnen.
 
-Neue Instanzen eines Berichts können auch über die Konsole **Tools** erstellt werden. Wählen Sie im linken Bereich **Berichte** aus und anschließend **Neu...** in der Symbolleiste. Legen Sie **Titel** und **Name** fest, wählen Sie den benötigten Berichtstyp aus und klicken Sie dann auf **Erstellen**. Ihre neue Berichtsinstanz wird in der Liste angezeigt. Doppelklicken Sie darauf, um Sie zu öffnen, und ziehen Sie dann eine Komponente aus dem Sidekick, um die erste Spalte zu erstellen und mit der Berichtsdefinition zu beginnen.
+Neue Instanzen eines Berichts können auch über die **Instrumente** Konsole. Auswählen **Berichte** im linken Bereich, dann **Neu...** aus der Symbolleiste. Definieren Sie eine **Titel** und **Name**, wählen Sie den gewünschten Berichtstyp aus und klicken Sie auf **Erstellen**. Ihre neue Berichtsinstanz wird in der Liste angezeigt. Doppelklicken Sie darauf, um Sie zu öffnen, und ziehen Sie dann eine Komponente aus dem Sidekick, um die erste Spalte zu erstellen und mit der Berichtsdefinition zu beginnen.
 
 >[!NOTE]
 >
->Zusätzlich zu den standardmäßigen AEM-Berichten können Sie auch [Ihren eigenen (vollständig neuen) Bericht entwickeln](/help/sites-developing/dev-reports.md).
+>Zusätzlich zu den standardmäßigen AEM Berichten, die standardmäßig verfügbar sind, können Sie [eigene (völlig neue) Berichte erstellen](/help/sites-developing/dev-reports.md).
 
-## Die Grundlagen der Berichtsanpassung. {#the-basics-of-report-customization}
+## Die Grundlagen der Berichtsanpassung {#the-basics-of-report-customization}
 
 Es stehen verschiedene Berichtsformate zur Verfügung. Die folgenden Berichte nutzen alle Spalten, die wie in den folgenden Abschnitten beschrieben angepasst werden können:
 
@@ -59,30 +59,30 @@ Es stehen verschiedene Berichtsformate zur Verfügung. Die folgenden Berichte nu
 >
 >
 >* Die [Konsistenzprüfung](#health-check) nutzt Auswahlfelder, um die Daten anzugeben, zu denen Sie einen Bericht erstellen möchten.
->* Die [Speichernutzung](#disk-usage) verwendet Verknüpfungen für einen Drilldown durch die Repository-Struktur.
->* Der [Workflow-Bericht](/help/sites-administering/reporting.md#workflow-report) bietet einen Überblick über die Workflows, die auf Ihrer Instanz ausgeführt werden.
+>* [Festplattenauslastung](#disk-usage) verwendet Links zum Drilldown in der Repository-Struktur.
+>* [Workflow-Bericht](/help/sites-administering/reporting.md#workflow-report) bietet einen Überblick über die Workflows, die auf Ihrer Instanz ausgeführt werden.
 >
->Die folgenden Verfahren zur Spaltenkonfiguration sind also nicht geeignet. Weitere Informationen finden Sie in den Beschreibungen der einzelnen Berichte.
+>Die folgenden Verfahren für die Spaltenkonfiguration sind daher nicht angemessen. Details dazu finden Sie in den Beschreibungen der einzelnen Berichte.
 
 ### Auswählen und Positionieren der Datenspalten {#selecting-and-positioning-the-data-columns}
 
-Spalten können in allen Berichten hinzugefügt, neu positioniert oder entfernt werden – sowohl in standardmäßigen als auch in angepassten Berichten.
+Spalten können zu allen Berichten hinzugefügt, neu positioniert oder aus ihnen entfernt werden, entweder standardmäßig oder individuell.
 
-Auf der Registerkarte **Komponenten** des Sidekicks (verfügbar auf der Berichtsseite) sind alle Kategorien von Daten aufgeführt, die als Spalten ausgewählt werden können.
+Die **Komponenten** im Sidekick (auf der Berichtsseite verfügbar) werden alle Datenkategorien aufgelistet, die als Spalten ausgewählt werden können.
 
-Zum Ändern der Datenauswahl gehen Sie wie folgt vor:
+So ändern Sie die Datenauswahl:
 
 * Ziehen Sie zum Hinzufügen einer neuen Spalte die erforderliche Komponente aus dem Sidekick und legen Sie sie in der gewünschten Position ab.
 
-   * Ein grünes Häkchen zeigt an, wenn die Position gültig ist, und zwei Pfeile zeigen genau an, wo die Platzierung erfolgen wird.
-   * Ein rotes Kreuzsymbol zeigt an, wenn die Position ungültig ist.
+   * Ein grünes Häkchen zeigt an, wann die Position gültig ist, und ein Pfeile zeigt genau an, wo sie platziert wird
+   * Ein rotes &quot;No-go&quot;-Symbol zeigt an, wenn die Position ungültig ist.
 
-* Um eine Spalte zu verschieben, klicken Sie auf die Kopfzeile, halten Sie sie gedrückt und ziehen Sie sie an die neue Position.
-* Um eine Spalte zu entfernen, klicken Sie auf den Spaltentitel, halten Sie ihn gedrückt und ziehen Sie ihn nach oben in den Bereich der Berichtskopfzeile (ein rotes Minussymbol zeigt an, dass die Position gültig ist) und lassen Sie die Maustaste los. Das Dialogfeld „Komponente(n) löschen“ fordert Sie nun auf, die Löschung der Spalte zu bestätigen.
+* Um eine Spalte zu verschieben, klicken Sie auf die Kopfzeile, halten Sie die Taste gedrückt und ziehen Sie sie an die neue Position
+* Um eine Spalte zu entfernen, klicken Sie auf den Spaltentitel, halten Sie die Maustaste gedrückt und ziehen Sie sie in den Kopfzeilenbereich des Berichts (ein rotes Minuszeichen weist darauf hin, dass die Position ungültig ist). Lassen Sie die Maustaste los, und das Dialogfeld Komponente(n) löschen fordert Sie auf zu bestätigen, dass Sie die Spalte wirklich löschen möchten.
 
-### Dropdown-Menü der Spalte {#column-drop-down-menu}
+### Dropdown-Menü &quot;Spalte&quot; {#column-drop-down-menu}
 
-Jede Spalte des Berichts verfügt über ein Dropdown-Menü. Es wird angezeigt, wenn der Mauszeiger über die Zelle mit dem Spaltentitel bewegt wird.
+Jede Spalte im Bericht verfügt über ein Dropdown-Menü. Es wird angezeigt, wenn der Mauszeiger über die Zelle mit dem Spaltentitel bewegt wird.
 
 Ganz rechts neben der Zelle mit dem Titel wird eine Pfeilspitze angezeigt (die nicht mit der Pfeilspitze direkt rechts neben dem Titeltext verwechselt werden sollte, die den [aktuellen Sortiermechanismus](#sorting-the-data) anzeigt).
 
@@ -92,14 +92,14 @@ Die im Menü verfügbaren Optionen hängen von der (während der Projektentwickl
 
 ### Sortieren der Daten {#sorting-the-data}
 
-Die Daten können mithilfe folgender Möglichkeiten nach einer bestimmten Spalte angezeigt werden:
+Die Daten können nach einer bestimmten Spalte sortiert werden:
 
 * Durch das Klicken auf die jeweilige Spaltenkopfzeile wechselt die Sortierung von einer aufsteigenden zu einer absteigenden Sortierung, was durch eine Pfeilspitze direkt neben dem Titeltext angezeigt wird.
-* Verwenden Sie das [Dropdown-Menü der Spalte](#column-drop-down-menu), um zwischen **Aufsteigend sortieren** und **Absteigend sortieren** auszuwählen. Dies wird erneut durch eine Pfeilspitze direkt neben dem Titeltext angezeigt.
+* die [Dropdown-Menü der Spalte](#column-drop-down-menu) zur Auswahl von **Aufsteigende Sortierung** oder **Absteigende Sortierung** Auch dies wird durch eine Pfeilspitze direkt neben dem Titeltext angezeigt.
 
 ### Gruppen und das aktuelle Datendiagramm {#groups-and-the-current-data-chart}
 
-In geeigneten Spalten können Sie **Nach Spalte gruppieren** im [Dropdown-Menü der Spalte](#column-drop-down-menu) auswählen. Hierdurch werden die Daten nach jedem einzelnen Wert innerhalb dieser Spalte gruppiert. Sie können mehrere Spalten für die Gruppierung auswählen. Die Option wird ausgegraut, wenn in der Spalte keine geeigneten Daten vorhanden sind, d. h. wenn jeder Eintrag einzeln zu betrachten und einzigartig ist, sodass keine Gruppen gebildet werden können. Dies gilt zum Beispiel für die Spalte mit der Benutzer-ID im Benutzerbericht.
+In den entsprechenden Spalten können Sie **Nach dieser Spalte gruppieren** aus dem [Dropdown-Menü der Spalte](#column-drop-down-menu). Dadurch werden die Daten nach jedem eindeutigen Wert in dieser Spalte gruppiert. Sie können mehrere Spalten auswählen, die gruppiert werden sollen. Die Option wird ausgegraut, wenn in der Spalte keine geeigneten Daten vorhanden sind, d. h. wenn jeder Eintrag einzeln zu betrachten und einzigartig ist, sodass keine Gruppen gebildet werden können. Dies gilt zum Beispiel für die Spalte mit der Benutzer-ID im Benutzerbericht.
 
 Nach der Gruppierung mindestens einer Spalte wird auf Grundlage dieser Gruppierung ein Tortendiagramm der **aktuellen Daten** generiert. Wenn mehrere Spalten gruppiert werden, wird dies ebenfalls im Diagramm angegeben.
 
@@ -107,13 +107,13 @@ Nach der Gruppierung mindestens einer Spalte wird auf Grundlage dieser Gruppieru
 
 Wenn Sie Ihren Mauszeiger über das Tortendiagramm bewegen, wird der zusammengefasste Wert zum entsprechenden Segment angezeigt. Hierbei wird die aktuell zu der Spalte festgelegte Zusammenfassung verwendet, so zum Beispiel Anzahl, Minimum oder Durchschnitt.
 
-### Filter und Zusammenfassungen {#filters-and-aggregates}
+### Filter und Aggregate {#filters-and-aggregates}
 
-In geeigneten Spalten können Sie außerdem die **Filtereinstellungen** und/oder **Zusammenfassungen** im [Dropdown-Menü der Spalte](#column-drop-down-menu) konfigurieren.
+In den entsprechenden Spalten können Sie auch **Filtereinstellungen** und/oder **Aggregate** aus dem [Dropdown-Menü der Spalte](#column-drop-down-menu).
 
 #### Filter {#filters}
 
-Mithilfe der Filtereinstellungen können Sie die Kriterien für anzuzeigende Einträge festlegen. Die verfügbaren Operatoren lauten:
+Mit den Filtereinstellungen können Sie die Kriterien für die anzuzeigenden Einträge festlegen. Folgende Operatoren stehen zur Verfügung:
 
 * `contains`
 * `equals`
@@ -123,15 +123,15 @@ Mithilfe der Filtereinstellungen können Sie die Kriterien für anzuzeigende Ein
 Sie können wie folgt einen Filter festlegen:
 
 1. Wählen Sie den gewünschten Operator aus der Dropdown-Liste aus.
-1. Geben Sie den Text ein, nach dem gefiltert werden soll.
+1. Geben Sie den zu filternden Text ein.
 1. Klicken Sie auf **Übernehmen**.
 
-Sie können den Filter wie folgt deaktivieren:
+So deaktivieren Sie den Filter:
 
 1. Entfernen Sie den Filtertext.
 1. Klicken Sie auf **Übernehmen**.
 
-#### Zusammenfassungen {#aggregates}
+#### Aggregate {#aggregates}
 
 Sie können auch eine Zusammenfassungsmethode auswählen (diese können je nach ausgewählter Spalte variieren):
 
@@ -143,18 +143,18 @@ Diese Option ist nur verfügbar, wenn [Generische Spalte](#generic-column) im [B
 
 ### Frühere Daten {#historic-data}
 
-Ein Diagramm zu den Änderungen an Ihren Daten im Zeitverlauf kann unter **Frühere Daten** angezeigt werden. Dieses wird aus in regelmäßigen Intervallen aufgenommenen Momentaufnahmen abgeleitet.
+Eine Grafik der Änderungen Ihrer Daten im Zeitverlauf finden Sie unter **Historische Daten**. Dies wird aus Momentaufnahmen abgeleitet, die in regelmäßigen Abständen erstellt werden.
 
-Die Daten werden:
+Die Daten sind:
 
-* Wenn verfügbar von der ersten sortierten Spalte erfasst bzw. andernfalls von der ersten (nicht gruppierten) Spalte
-* Nach der entsprechenden Spalte sortiert
+* Wird, sofern verfügbar, von der ersten sortierten Spalte erfasst, andernfalls von der ersten (nicht gruppierten) Spalte
+* Nach der entsprechenden Spalte gruppiert
 
 Der Bericht kann wie folgt generiert werden:
 
-1. Legen Sie zur erforderlichen Spalte **Gruppierung** fest.
-1. **Bearbeiten** Sie die Konfiguration, um festzulegen, wie häufig Momentaufnahmen erstellt werden sollten – stündlich oder täglich.
-1. **Beenden...** Sie die Definition, um die Sammlung von Momentaufnahmen zu starten.
+1. Satz **Gruppierung** in der erforderlichen Spalte.
+1. **Bearbeiten** die Konfiguration, um festzulegen, wie oft die Momentaufnahmen erstellt werden sollen, stündlich oder täglich.
+1. **Beenden...** die Definition, um die Sammlung von Momentaufnahmen zu starten.
 
    Die roten/grünen Reglerschaltflächen oben links zeigen an, wenn Momentaufnahmen erfasst werden.
 
@@ -166,13 +166,13 @@ Sobald die Datenerfassung begonnen hat, können Sie Folgendes auswählen:
 
 * **Zeitraum**
 
-   Sie können Ab- und Bis-Daten für die angezeigten Berichtsdaten auswählen.
+  Sie können Ab- und Bis-Daten für die angezeigten Berichtsdaten auswählen.
 
 * **Intervall**
 
-   Monat, Woche, Tag oder Stunde können für die Skalierung und Zusammenfassung des Berichts ausgewählt werden.
+  Monat, Woche, Tag oder Stunde können für die Skalierung und Zusammenfassung des Berichts ausgewählt werden.
 
-   Wenn zum Beispiel für Februar 2011 tägliche Momentaufnahmen verfügbar sind:
+  Wenn zum Beispiel für Februar 2011 tägliche Momentaufnahmen verfügbar sind:
 
    * Wenn das Intervall auf `Day` festgelegt ist, wird jede Momentaufnahme als einzelner Wert im Diagramm angezeigt.
    * Wenn das Intervall auf `Month` festgelegt ist, werden alle Momentaufnahmen aus dem Monat Februar in einem einzelnen Wert zusammengefasst (der im Diagramm als einzelner „Punkt“ angezeigt wird).
@@ -181,15 +181,15 @@ Wählen Sie Ihre Anforderungen aus und klicken Sie dann auf **Los**, um sie auf 
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
 
-Wenn die Momentaufnahmen erfasst werden, können Sie:
+Wenn Momentaufnahmen erfasst werden, können Sie Folgendes tun:
 
-* **Beenden...** verwenden, um die Sammlung erneut zu initialisieren.
+* Verwendung **Beenden...** erneut, um die Sammlung neu zu initialisieren.
 
-   Durch **Beenden** wird die Berichtsstruktur (d. h. die dem Bericht zugewiesenen Spalten und welche gruppiert, sortiert, gefiltert sind usw.) „eingefroren“. und es wird mit dem Anfertigen von Momentaufnahmen begonnen.
+  Durch **Beenden** wird die Berichtsstruktur (d. h. die dem Bericht zugewiesenen Spalten und welche gruppiert, sortiert, gefiltert sind usw.) „eingefroren“. und beginnt mit der Aufnahme von Momentaufnahmen.
 
-* Öffnen Sie das Dialogfeld **Bearbeiten**, um **Keine Datenmomentaufnahmen** auszuwählen und die Sammlung zu beenden, bis sie erforderlich ist.
+* Öffnen Sie die **Bearbeiten** Dialogfeld auswählen **Keine Daten-Momentaufnahmen** , um die Sammlung zu beenden, bis sie erforderlich ist.
 
-   Durch **Bearbeiten** wird lediglich das Anfertigen von Momentaufnahmen ein- oder ausgeschaltet. Wenn das Anfertigen von Momentaufnahmen erneut eingeschaltet wird, wird der Status des Berichts bei dessen letzter Fertigstellung zum Anfertigen weiterer Momentaufnahmen verwendet.
+  Durch **Bearbeiten** wird lediglich das Anfertigen von Momentaufnahmen ein- oder ausgeschaltet. Wenn das Anfertigen von Momentaufnahmen erneut eingeschaltet wird, wird der Status des Berichts bei dessen letzter Fertigstellung zum Anfertigen weiterer Momentaufnahmen verwendet.
 
 >[!NOTE]
 >
@@ -202,24 +202,24 @@ Wenn die Momentaufnahmen erfasst werden, können Sie:
 >
 >Die vorkonfigurierten Berichte sind nicht leistungsintensiv, es wird jedoch dennoch empfohlen, in einer Produktionsumgebung tägliche Momentaufnahmen zu verwenden. Führen Sie diese täglichen Momentaufnahmen möglichst zu einer Tageszeit durch, zu der nicht viel Aktivität auf Ihrer Website stattfindet. Dies lässt sich mithilfe des Parameters `Daily snapshots (repconf.hourofday)` für **Day CQ Reporting Configuration** festlegen. Unter [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) erhalten Sie weitere Informationen dazu, wie Sie dies konfigurieren können.
 
-#### Anzeigelimits {#display-limits}
+#### Anzeigebeschränkungen {#display-limits}
 
-Die Darstellung des Berichts zu den früheren Daten kann sich aufgrund von festlegbaren Beschränkungen auch leicht ändern – je nach der Anzahl der Ergebnisse zum ausgewählten Zeitraum.
+Der Bericht zu historischen Daten kann sich aufgrund von Beschränkungen, die je nach Anzahl der Ergebnisse für den ausgewählten Zeitraum festgelegt werden können, auch geringfügig ändern.
 
 Jede horizontale Zeile wird als Reihe bezeichnet (und entspricht einem Eintrag in der Diagrammlegende) und jede vertikale Spalte von Punkten stellt die zusammengefassten Momentaufnahmen dar.
 
 ![chlimage_1-44](assets/chlimage_1-44.png)
 
-Damit das Diagramm über längere Zeiträume hinweg aufgeräumt bleibt, können Beschränkungen festgelegt werden. Für die Standardberichte sind dies:
+Um das Diagramm über längere Zeiträume hinweg sauber zu halten, können Einschränkungen festgelegt werden. Für die Standardberichte sind dies:
 
 * horizontale Reihe – Standardwert und Systemmaximum ist `9`
 
 * vertikale zusammengefasste Momentaufnahmen – Standardwert ist `35` (pro horizontaler Reihe)
 
-Wenn die entsprechenden Beschränkungen überschritten werden:
+Wenn also die (entsprechenden) Grenzwerte überschritten werden, gilt Folgendes:
 
 * werden die Punkte nicht angezeigt
-* zeigt die Legende zu den früheren Daten gegebenenfalls eine andere Anzahl an Einträgen als das aktuelle Datendiagramm
+* Die Legende für das historische Datendiagramm zeigt möglicherweise eine andere Anzahl von Einträgen als die des aktuellen Datendiagramms.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -231,7 +231,7 @@ In benutzerspezifischen Berichten kann auch der Wert **Insgesamt** für die ganz
 
 ### Bearbeiten (Bericht) {#edit-report}
 
-Über die Schaltfläche **Bearbeiten** wird das Dialogfeld **Bericht bearbeiten** geöffnet.
+Die **Bearbeiten** -Schaltfläche öffnet die **Bericht bearbeiten** Dialogfeld.
 
 Dies ist ein Speicherort, an dem der Zeitraum für die Erfassung von Momentaufnahmen für [frühere Daten](#historic-data) festgelegt wird. Es können jedoch auch diverse andere Einstellungen festgelegt werden:
 
@@ -239,29 +239,29 @@ Dies ist ein Speicherort, an dem der Zeitraum für die Erfassung von Momentaufna
 
 * **Titel**
 
-   Sie können Ihren eigenen Titel festlegen.
+  Sie können Ihren eigenen Titel festlegen.
 
 * **Beschreibung**
 
-   Sie können Ihre eigene Beschreibung festlegen.
+  Sie können Ihre eigene Beschreibung festlegen.
 
 * **Stammpfad** (*nur für bestimmte Berichte aktiv*)
 
-   Verwenden Sie diese Einstellung, um den Bericht auf einen Abschnitt oder Unterabschnitt des Repositorys zu beschränken.
+  Verwenden Sie diese Einstellung, um den Bericht auf einen Abschnitt oder Unterabschnitt des Repositorys zu beschränken.
 
 * **Berichtsverarbeitung**
 
    * **Daten automatisch aktualisieren**
 
-      Die Berichtsdaten werden bei jeder Aktualisierung der Berichtsdefinition aktualisiert.
+     Die Berichtsdaten werden bei jeder Aktualisierung der Berichtsdefinition aktualisiert.
 
    * **Daten manuell aktualisieren**
 
-      Diese Option kann verwendet werden, um bei einer großen Datenmenge durch automatische Aktualisierungsvorgänge verursachte Verzögerungen zu verhindern.
+     Diese Option kann verwendet werden, um bei einer großen Datenmenge durch automatische Aktualisierungsvorgänge verursachte Verzögerungen zu verhindern.
 
-      Diese Auswahl zeigt an, dass die Berichtsdaten manuell aktualisiert werden müssen, wenn sich ein beliebiger Aspekt der Berichtskonfiguration verändert hat. Außerdem bedeutet dies, dass die Berichtstabelle bei jeder Änderung eines Aspekts der Konfiguration ausgeblendet wird.
+     Diese Auswahl zeigt an, dass die Berichtsdaten manuell aktualisiert werden müssen, wenn sich ein beliebiger Aspekt der Berichtskonfiguration verändert hat. Außerdem bedeutet dies, dass die Berichtstabelle bei jeder Änderung eines Aspekts der Konfiguration ausgeblendet wird.
 
-       Wenn dies ausgewählt ist, wird die Schaltfläche **[Daten laden](#load-data)** (neben **Bearbeiten** im Bericht) angezeigt. Mithilfe von **Daten laden** werden die Daten geladen und die angezeigten Berichtsdaten werden aktualisiert.
+      Wenn dies ausgewählt ist, wird die Schaltfläche **[Daten laden](#load-data)** (neben **Bearbeiten** im Bericht) angezeigt. Mithilfe von **Daten laden** werden die Daten geladen und die angezeigten Berichtsdaten werden aktualisiert.
 
 * **Momentaufnahmen**
 Sie können festlegen, wie oft Momentaufnahmen angefertigt werden sollen: täglich, stündlich oder gar nicht.
@@ -280,21 +280,21 @@ Die Auswahl von „Daten manuell aktualisieren“ bedeutet Folgendes:
 
    Wenn Sie beispielsweise den Sortiermechanismus einer Spalte ändern, werden die Daten nicht angezeigt.
 
-1. Wenn Sie möchten, dass die Berichtsdaten erneut angezeigt werden, müssen Sie zum erneuten Laden der Daten auf **Daten laden** klicken.
+1. Wenn die Berichtsdaten erneut angezeigt werden sollen, müssen Sie auf **Daten laden** , um die Daten neu zu laden.
 
 ### Beenden (Bericht) {#finish-report}
 
-Wenn Sie den Bericht **beenden**, geschieht Folgendes:
+Wenn Sie **Beenden** Bericht:
 
 * Die Berichtsdefinition *ab diesem Zeitpunkt* wird für die Aufnahme von Momentaufnahmen verwendet (anschließend können Sie weiter an einer Berichtsdefinition arbeiten, da sie dann von den Momentaufnahmen getrennt ist).
 * Alle vorhandenen Momentaufnahmen werden entfernt.
-* Für [Frühere Daten](#historic-data) werden neue Momentaufnahmen erfasst.
+* Neue Momentaufnahmen für die [Historische Daten](#historic-data).
 
 Mit diesem Dialogfeld können Sie Ihren eigenen Titel und Ihre eigene Beschreibung für den resultierenden Bericht definieren oder aktualisieren.
 
 ![reportfinish](assets/reportfinish.png)
 
-## Berichttypen {#report-types}
+## Berichtstypen {#report-types}
 
 ### Komponentenbericht {#component-report}
 
@@ -308,26 +308,26 @@ Der Komponentenbericht stellt Informationen dazu bereit, wie Ihre Website die Ko
 * Zuletzt geändert
 * Seite
 
-Bedeutet, dass Sie zum Beispiel Folgendes sehen können:
+Mittel, das Sie beispielsweise sehen können:
 
-* Welche Komponenten wo verwendet werden
+* Welche Komponenten werden dort verwendet?
 
-   Dies ist beispielsweise bei Tests nützlich.
+  Dies ist beispielsweise bei Tests nützlich.
 
 * Wie Instanzen einer bestimmten Komponente verteilt sind
 
-   Dies kann interessant sein, wenn bei bestimmten Seiten (d. h. „umfangreichen Seiten“) Leistungsprobleme auftreten.
+  Dies kann interessant sein, wenn bei bestimmten Seiten (d. h. „umfangreichen Seiten“) Leistungsprobleme auftreten.
 
-* Teile der Website mit häufigen/weniger häufigen Veränderungen
-* Wie ein Seiteninhalt sich im Laufe der Zeit verändert
+* Identifizieren Sie Teile der Site mit häufigen/weniger häufigen Änderungen.
+* Erfahren Sie, wie sich der Seiteninhalt im Laufe der Zeit entwickelt.
 
-Alle Komponenten werden als Produktstandard und projektspezifisch einbezogen. Mithilfe des Dialogfelds **Bearbeiten** kann der Benutzer auch einen **Stammpfad** festlegen, der den Startpunkt des Berichts definiert. Alle Komponenten unter diesem Stammpfad werden für den Bericht berücksichtigt.
+Alle Komponenten sind enthalten, dem Produktstandard und dem Projekt entsprechend. Mithilfe des Dialogfelds **Bearbeiten** kann der Benutzer auch einen **Stammpfad** festlegen, der den Startpunkt des Berichts definiert. Alle Komponenten unter diesem Stammpfad werden für den Bericht berücksichtigt.
 
 ![reportcomponent](assets/reportcomponent.png) ![reportcompentall](assets/reportcompentall.png)
 
 ### Speichernutzung {#disk-usage}
 
-Der Bericht zur Speichernutzung zeigt Informationen zu den innerhalb Ihres Repositorys gespeicherten Daten an.
+Der Bericht zur Festplattenauslastung zeigt Informationen zu den in Ihrem Repository gespeicherten Daten an.
 
 Der Bericht beginnt im Stamm ( / ) des Repositorys. Durch das Klicken auf einen bestimmten Zweig können Sie innerhalb des Repositorys einen Drilldown durchführen (der aktuelle Pfad wird im Berichtstitel wiedergegeben).
 
@@ -344,33 +344,33 @@ Zum Generieren des Berichts können Sie Folgendes festlegen:
 
 * **Zeitraum (Stunden)**
 
-   Die zu analysierende Anzahl von (vergangenen) Stunden.
+  Die zu analysierende Anzahl von (vergangenen) Stunden.
 
-   Standard: `24`
+  Standard: `24`
 
 * **max. Ergebnisse**
 
-   Maximale Anzahl an Ausgabezeilen.
+  Maximale Anzahl an Ausgabezeilen.
 
-   Standard: `50`
+  Standard: `50`
 
 * **max. Anforderungen**
 
-   Maximale Anzahl an zu analysierenden Anforderungen.
+  Maximale Anzahl an zu analysierenden Anforderungen.
 
-   Standard: `-1` (alle)
+  Standard: `-1` (alle)
 
 * **E-Mail-Adresse**
 
-   Senden Sie die Ergebnisse an eine E-Mail-Adresse.
+  Senden Sie die Ergebnisse an eine E-Mail-Adresse.
 
-   Optional; Standard: leer
+  Optional; Standard: leer
 
 * **Täglich ausführen um (hh:mm)**
 
-   Geben Sie eine Zeit an, zu der der Bericht automatisch täglich ausgeführt werden soll.
+  Geben Sie eine Zeit an, zu der der Bericht automatisch täglich ausgeführt werden soll.
 
-   Optional; Standard: leer
+  Optional; Standard: leer
 
 ![reporthhealth](assets/reporthealth.png)
 
@@ -385,15 +385,15 @@ Im Seitenaktivitätsbericht werden die Seiten und die auf ihnen vorgenommenen Ak
 * Typ
 * Benutzer
 
-Bedeutet, dass Sie Folgendes überwachen können:
+Das bedeutet, dass Sie überwachen können:
 
-* Die neuesten Änderungen
-* Autoren, die an spezifischen Seiten arbeiten
-* Seiten, die in letzter Zeit nicht geändert wurden und daher gegebenenfalls eine Aktion erfordern
-* Seiten, die am häufigsten/seltensten geändert wurden
-* Aktivste/am wenigsten aktive Benutzer
+* Die neuesten Änderungen.
+* Autoren, die auf bestimmten Seiten arbeiten.
+* Seiten, die in letzter Zeit nicht geändert wurden, sodass möglicherweise Handlungsbedarf besteht.
+* Seiten, die am häufigsten/am seltensten geändert werden.
+* Die meisten/am wenigsten aktiven Benutzer.
 
-Der Seitenaktivitätsbericht bezieht alle Informationen aus dem Auditprotokoll. Standardmäßig wird der Stammpfad im Administratorprotokoll unter `/var/audit/com.day.cq.wcm.core.page` konfiguriert.
+Der Seitenaktivitätsbericht übernimmt alle Informationen aus dem Auditprotokoll. Standardmäßig wird der Stammpfad im Administratorprotokoll unter `/var/audit/com.day.cq.wcm.core.page` konfiguriert.
 
 ![reportpageactivity](assets/reportpageactivity.png)
 
@@ -401,7 +401,7 @@ Der Seitenaktivitätsbericht bezieht alle Informationen aus dem Auditprotokoll. 
 
 Dieser Bericht stellt Informationen zu benutzergenerierten Inhalten bereit – seien es Kommentare, Bewertungen oder Foren.
 
-[Spalten mit Informationen](#selecting-and-positioning-the-data-columns) zu:
+[Spalten mit Informationen](#selecting-and-positioning-the-data-columns) auf:
 
 * Datum
 * IP-Adresse
@@ -410,9 +410,9 @@ Dieser Bericht stellt Informationen zu benutzergenerierten Inhalten bereit – s
 * Typ
 * Benutzer Kennung
 
-Damit können Sie:
+Ermöglicht Ihnen Folgendes:
 
-* Sehen, welche Seiten die meisten Kommentare erhalten
+* Ermitteln Sie, welche Seiten die meisten Kommentare erhalten.
 * Einen Überblick über alle Kommentare gewinnen, die bestimmte Besucher der Website hinterlassen, und ob die Themen miteinander zusammenhängen
 * Beurteilen, ob neue Inhalte Kommentare zur Folge haben, indem überwacht wird, wann Kommentare auf einer Seite vorgenommen werden
 
@@ -422,13 +422,13 @@ Damit können Sie:
 
 Dieser Bericht bietet Informationen zu allen Benutzern, die sich mit einem Konto und/oder Profil registriert haben. Dies umfasst sowohl Autoren innerhalb Ihrer Organisation als auch externe Besucher.
 
-[Spalten mit Informationen](#selecting-and-positioning-the-data-columns) (sofern verfügbar) zu:
+[Spalten mit Informationen](#selecting-and-positioning-the-data-columns) (sofern verfügbar) über:
 
 * Alter
 * Land
 * Domain
 * E-Mail
-* Familienname
+* Nachname
 * Geschlecht
 * [Generisch](#generic-column)
 * Vorname
@@ -436,23 +436,23 @@ Dieser Bericht bietet Informationen zu allen Benutzern, die sich mit einem Konto
 * Interesse
 * Sprache
 * NTLM-Hashcode
-* Benutzer-ID
+* Benutzer-ID 
 
-Damit können Sie:
+Ermöglicht Ihnen Folgendes:
 
-* Die demografische Verteilung Ihrer Benutzer anzeigen
-* Berichte zu benutzerdefinierten Feldern erstellen, die Sie den Profilen hinzugefügt haben
+* Sehen Sie die demografische Ausbreitung Ihrer Benutzer.
+* Berichte zu benutzerdefinierten Feldern, die Sie den Profilen hinzugefügt haben.
 
 ![reportusercanned](assets/reportusercanned.png)
 
-#### Generische Spalte {#generic-column}
+#### Allgemeine Spalte {#generic-column}
 
-Die **Generische Spalte** ist im Benutzerbericht verfügbar, sodass Sie auf benutzerdefinierte Informationen zugreifen können – in der Regel über die [Benutzerprofile](/help/sites-administering/identity-management.md#profiles-and-user-accounts), wie zum Beispiel [Lieblingsfarbe. Dies erfolgt, wie unter „Hinzufügen von Feldern zur Profildefinition“ erläutert](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
+Die **Generisch** -Spalte ist im Benutzerbericht verfügbar, sodass Sie auf benutzerdefinierte Informationen zugreifen können, die normalerweise über die [Benutzerprofile](/help/sites-administering/identity-management.md#profiles-and-user-accounts); zum Beispiel [Favoritenfarbe, wie unter Felder zur Profildefinition hinzufügen beschrieben](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
 
-Das Dialogfeld „Generische Spalte“ wird geöffnet, wenn Sie entweder:
+Das Dialogfeld Generische Spalte wird geöffnet, wenn Sie entweder:
 
-* Die Komponente „Generisch“ vom Sidekick in den Bericht ziehen
-* Die Spalteneigenschaften zu einer vorhandenen generischen Spalte auswählen
+* Ziehen Sie die Komponente &quot;Generisch&quot;aus dem Sidekick in den Bericht.
+* Wählen Sie die Spalteneigenschaften für eine vorhandene generische Spalte aus.
 
 ![reportusrgenericcolm](assets/reportusrgenericcolm.png)
 
@@ -460,25 +460,25 @@ Das Dialogfeld „Generische Spalte“ wird geöffnet, wenn Sie entweder:
 
 * **Titel**
 
-   Ihr eigener Titel für die generische Spalte.
+  Ihr eigener Titel für die generische Spalte.
 
 * **Eigenschaft**
 
-   Der Name der Eigenschaft wie er im Repository gespeichert wird, in der Regel innerhalb des Benutzerprofils.
+  Der Name der Eigenschaft wie er im Repository gespeichert wird, in der Regel innerhalb des Benutzerprofils.
 
 * **Pfad**
 
-   Diese Eigenschaft wird in der Regel aus `profile` entnommen.
+  Diese Eigenschaft wird in der Regel aus `profile` entnommen.
 
 * **Typ**
 
-   Wählen Sie den Feldtyp als `String`, `Number`, `Integer` oder `Date` aus.
+  Wählen Sie den Feldtyp als `String`, `Number`, `Integer` oder `Date` aus.
 
 * **Standardaggregat**
 
-   Dies legt die standardmäßig verwendete Zusammenfassung fest, wenn die Spalte in einem Bericht mit mindestens einer gruppierten Spalte nicht gruppiert ist. Wählen Sie die gewünschte Zusammenfassung als `Count`, `Minimum`, `Average`, `Maximum` oder `Sum` aus.
+  Dies legt die standardmäßig verwendete Zusammenfassung fest, wenn die Spalte in einem Bericht mit mindestens einer gruppierten Spalte nicht gruppiert ist. Wählen Sie die gewünschte Zusammenfassung als `Count`, `Minimum`, `Average`, `Maximum` oder `Sum` aus.
 
-   *Anzahl* bedeutet bei einem `String`-Feld zum Beispiel, dass die Anzahl der einzelnen `String`-Werte für die Spalte im zusammengefassten Zustand angezeigt wird.
+  *Anzahl* bedeutet bei einem `String`-Feld zum Beispiel, dass die Anzahl der einzelnen `String`-Werte für die Spalte im zusammengefassten Zustand angezeigt wird.
 
 In der Spalte **Erweitert** können Sie außerdem die verfügbaren Zusammenfassungen und Filter festlegen:
 
@@ -486,7 +486,7 @@ In der Spalte **Erweitert** können Sie außerdem die verfügbaren Zusammenfassu
 
 ### Bericht der Workflow-Instanz {#workflow-instance-report}
 
-Dies bietet Ihnen einen knappen Überblick und stellt Ihnen Informationen zu den einzelnen Instanzen der Workflows bereit – sowohl zu den laufenden als auch zu den abgeschlossenen.
+Auf diese Weise erhalten Sie einen kurzen Überblick über die einzelnen Instanzen von Workflows, die sowohl ausgeführt als auch abgeschlossen werden.
 
 [Spalten mit Informationen](#selecting-and-positioning-the-data-columns) zu:
 
@@ -498,9 +498,9 @@ Dies bietet Ihnen einen knappen Überblick und stellt Ihnen Informationen zu den
 * Gestartet
 * Status
 
-Dies bedeutet, dass Sie:
+Sie können:
 
-* die durchschnittliche Dauer der Workflows überwachen können. Wenn dies regelmäßig passiert, können Probleme innerhalb des Workflows hervorgehoben werden.
+* Überwachen Sie die durchschnittliche Dauer von Workflows. In diesem Fall kann es zu Problemen mit dem Workflow kommen.
 
 ![reportworkflowintance](assets/reportworkflowintance.png)
 
@@ -516,7 +516,7 @@ Sobald Sie die Berichte für Ihre spezifischen Anforderungen konfiguriert haben,
 
 >[!CAUTION]
 >
->Wenn Sie **frühere Daten** für die Veröffentlichungsumgebung möchten, **beenden** Sie vor dem Aktivieren der Seite den Bericht in der Autorenumgebung.
+>Wenn Sie möchten **Historische Daten** für die Veröffentlichungsumgebung, dann **Beenden** den Bericht in der Autorenumgebung vor der Aktivierung der Seite.
 
 Der entsprechende Bericht wird dann unter
 
@@ -534,35 +534,35 @@ Da in der Veröffentlichungsumgebung keine Berichtskonfiguration zulässig ist, 
 
 >[!CAUTION]
 >
->Der Zugriff auf diese Berichte kann ein Sicherheitsproblem darstellen. Daher empfehlen wir die Konfiguration des Dispatchers, sodass `/etc/reports` für externe Besucher nicht verfügbar ist. Weitere Informationen finden Sie unter [Sicherheitscheckliste](security-checklist.md).
+>Der Zugriff auf diese Berichte kann ein Sicherheitsproblem sein. Daher empfiehlt Adobe, den Dispatcher so zu konfigurieren, dass `/etc/reports` steht externen Besuchern nicht zur Verfügung. Weitere Informationen finden Sie unter [Sicherheitscheckliste](security-checklist.md).
 
-## Für die Ausführung von Berichten benötigte Berechtigungen {#permissions-needed-for-running-reports}
+## Für die Ausführung von Berichten erforderliche Berechtigungen {#permissions-needed-for-running-reports}
 
 Die benötigten Berechtigungen hängen von der Aktion ab:
 
-* Berichtsdaten werden in der Regel mithilfe der Berechtigungen des aktuellen Benutzers erfasst.
-* Frühere Daten werden mithilfe der Berechtigungen des Benutzers erfasst, der den Bericht fertiggestellt hat.
+* Berichtsdaten werden im Grunde mit den Berechtigungen des aktuellen Benutzers erfasst.
+* Historische Daten werden mit den Berechtigungen des Benutzers erfasst, der den Bericht abgeschlossen hat.
 
-In einer standardmäßigen AEM-Installation werden die folgenden Berechtigungen für die Berichte voreingestellt:
+In einer standardmäßigen AEM-Installation sind die folgenden Berechtigungen für die Berichte voreingestellt:
 
 * **Benutzerbericht**
 
-   `user administrators`: Lesen und Schreiben
+  `user administrators`: Lesen und Schreiben
 
 * **Seitenaktivitätsbericht**
 
-   `contributors`: Lesen und Schreiben
+  `contributors`: Lesen und Schreiben
 
 * **Komponentenbericht**
 
-   `contributors`: Lesen und Schreiben
+  `contributors`: Lesen und Schreiben
 
 * **Bericht für benutzergenerierte Inhalte**
 
-   `contributors`: Lesen und Schreiben
+  `contributors`: Lesen und Schreiben
 
 * **Bericht der Workflow-Instanz**
 
-   `workflow-users`: Lesen und Schreiben
+  `workflow-users`: Lesen und Schreiben
 
 Alle Mitglieder der Gruppe `administrators` verfügen über die erforderlichen Rechte zur Erstellung neuer Berichte.

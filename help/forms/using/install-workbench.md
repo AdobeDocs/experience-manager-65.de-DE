@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: 18cfefb794382b5314b18a62645f1fba28d314a2
-workflow-type: ht
-source-wordcount: '2232'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '2231'
+ht-degree: 99%
 
 ---
 
@@ -159,12 +159,14 @@ Stellen Sie vor der Installation von Workbench sicher, dass die Umgebung über d
 1. (Optional) Wählen Sie Adobe Designer installieren, wenn Sie dieses Werkzeug benötigen, um Formulare zu erstellen und zu ändern.
 
    >[!NOTE]
-   >Sie können weiterhin den mit Acrobat 10 installierten Designer verwenden, indem Sie diese Option deaktiviert lassen.
+   >
+   Sie können weiterhin den mit Acrobat 10 installierten Designer verwenden, indem Sie diese Option deaktiviert lassen.
 
 1. Akzeptieren Sie den angegebenen Standardordner oder klicken Sie auf „Auswählen“ und wechseln Sie zu dem Ordner, in dem Sie Workbench installieren möchten. Dann klicken Sie auf „Weiter“.
 
    >[!NOTE]
-   >Der Installationsordnerpfad darf keine #- (Raute-) und $- (Dollar-)Zeichen enthalten.
+   >
+   Der Installationsordnerpfad darf keine #- (Raute-) und $- (Dollar-)Zeichen enthalten.
 
 1. Lesen Sie die Vorinstallationsübersicht und klicken Sie auf Installieren. Das Installationsprogramm zeigt den Fortschritt der Installation an.
 1. Überprüfen Sie die Installationsübersicht. Wählen Sie „AEM Forms Workbench starten“, um Workbench zu starten, und klicken Sie dann auf „Weiter“.
@@ -183,7 +185,8 @@ Die Prozesse von AEM Forms auf JEE können mithilfe des Aktualisierungsassistent
 Um Workbench zu verwenden, muss eine Instanz von AEM Forms laufen, normalerweise auf einem separaten Computer. Sie müssen über einen Benutzernamen und ein Passwort verfügen, um sich bei AEM Forms anzumelden, außerdem müssen Ihnen Details über den Speicherort des Servers bekannt sein.
 
 >[!NOTE]
->Wenn Sie AEM Forms für die Verwendung des Repository-Anbieters EMC Documentum® oder IBM® FileNet konfiguriert haben und Sie sich bei einem anderen Repository als dem Repository anmelden möchten, das in Administration-Console von AEM Forms als Standard konfiguriert ist, geben Sie den Benutzernamen in der Form „Benutzername@Repository“ an.
+>
+Wenn Sie AEM Forms für die Verwendung des Repository-Anbieters EMC Documentum® oder IBM® FileNet konfiguriert haben und Sie sich bei einem anderen Repository als dem Repository anmelden möchten, das in Administration-Console von AEM Forms als Standard konfiguriert ist, geben Sie den Benutzernamen in der Form „Benutzername@Repository“ an.
 
 ### Konfigurieren von Zeitlimiteinstellungen {#configuring-timeout-settings}
 
@@ -194,7 +197,8 @@ Standardmäßig beträgt das Zeitlimit von Workbench, unabhängig von Aktivität
 Um Workbench über HTTPS mit einem AEM Forms-Server zu verbinden, müssen Sie sicherstellen, dass die Zertifizierungsstelle (CA), die den öffentlichen Schlüssel ausgestellt hat, von Workbench als vertrauenswürdig anerkannt wird. Wenn das Zertifikat nicht als von einer vertrauenswürdigen Quelle stammend erkannt wird, müssen Sie die Datei „cacert“ im Verzeichnis „[Workbench_HOME]/workbench/jre/lib/security“ aktualisieren.
 
 >[!NOTE]
->[Workbench_HOME] ist dabei der Ordner, in dem Sie Workbench installiert haben. Der standardmäßige Speicherort ist C:\Programme (x86)\Adobe Experience Manager Forms Workbench.
+>
+[Workbench_HOME] ist dabei der Ordner, in dem Sie Workbench installiert haben. Der standardmäßige Speicherort ist C:\Programme (x86)\Adobe Experience Manager Forms Workbench.
 
 Stellen Sie sicher, dass Sie eine Verbindung mit HTTPS herstellen, indem Sie den im Zertifikat angegebenen Namen verwenden. Dieser Name ist normalerweise der vollständig qualifizierte Hostname.
 
@@ -202,7 +206,8 @@ Stellen Sie sicher, dass Sie eine Verbindung mit HTTPS herstellen, indem Sie den
 1. Stellen Sie sicher, dass Sie über eine Kopie des SSL-Zertifikats (Secure Sockets Layer) verfügen. Wenden Sie sich entweder an die Person, die als Admin den SSL-Server konfiguriert hat, oder exportieren Sie das Zertifikat über einen Webbrowser.
 
    >[!NOTE]
-   >Um das Zertifikat zu exportieren, öffnen Sie einen Webbrowser und melden Sie sich bei der Administration-Console an, installieren Sie dann das Zertifikat im Browser und exportieren Sie das Zertifikat vom Browser in einen temporären Speicherort (oder direkt in den Ordner [Workbench_HOME]/workbench/jre/lib/security).
+   >
+   Um das Zertifikat zu exportieren, öffnen Sie einen Webbrowser und melden Sie sich bei der Administration-Console an, installieren Sie dann das Zertifikat im Browser und exportieren Sie das Zertifikat vom Browser in einen temporären Speicherort (oder direkt in den Ordner [Workbench_HOME]/workbench/jre/lib/security).
 
 1. Kopieren Sie das Zertifikat in den Ordner [Workbench_HOME]/workbench/jre/lib/security.
 
@@ -227,8 +232,8 @@ Wenn der Formulargenerator oder die Ausgabe nach Einträgen im Cache für eine b
 * **Zeitstempel**: Die Vorlagendatei enthält einen Zeitstempel, mit dem die letzte Aktualisierungszeit des Formulars ermittelt wird.
 * **Vorlagen-UUID**: Designer fügt in jede Vorlage eine eindeutige Kennung (UUID) für das Formular und dessen Version ein. Jedes Mal, wenn das Formular aktualisiert wird, wird die eingebettete UUID ebenfalls aktualisiert. Eine XDP-Vorlage kann beispielsweise den folgenden Inhalt enthalten:
 
-   `<?xml version="1.0" encoding="UTF-8"?>`
-   `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
+  `<?xml version="1.0" encoding="UTF-8"?>`
+  `<?xfa generator="AdobeAEM formsDesignerES_V8.2" APIVersion="2.6.7185.0"?><xdp:xdp xmlns:xdp=https://ns.adobe.com/xdp/ timeStamp="2008-07-29T21:22:12Z" uuid="823e538f-ff6c-4961-b759-f7626978a223"><template xmlns="https://www.xfa.org/schema/xfa-template/2.6/">`
 
 * **Render-Optionen**: Im Cache des wiedergegebenen Formulars werden die Cache-Inhalte für jeden Satz eindeutiger Render-Optionen separat gespeichert.
 

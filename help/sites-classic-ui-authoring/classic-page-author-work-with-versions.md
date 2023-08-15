@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1353'
-ht-degree: 72%
+source-wordcount: '1352'
+ht-degree: 71%
 
 ---
 
@@ -33,7 +33,7 @@ So erstellen Sie eine neue Version einer Seite:
 
 1. Geben Sie einen **Kommentar** ein (optional).
 1. Um eine Bezeichnung für die Version anzugeben (optional), klicken Sie auf die Schaltfläche **Mehr >>** und geben Sie unter **Bezeichnung** einen Namen für die Version ein. Wird keine Bezeichnung festgelegt, wird die Version automatisch nummeriert.
-1. Klicken Sie auf **Version erstellen**. Auf der Seite wird eine grau hinterlegte Meldung angezeigt. Beispiel: Version 1.2 erstellt für: Hemden.
+1. Klicken Sie auf **Version erstellen**. Auf der Seite wird eine grau unterlegte Meldung angezeigt, z. B.: Version 1.2 erstellt für: Hemden.
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Sie können diese Methode verwenden, um eine Seitenversion wiederherzustellen. S
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
-1. Wählen Sie die Version aus, die Sie wiederherstellen möchten, und klicken Sie auf **Wiederherstellen**. AEM stellt die ausgewählten Versionen (bzw. Bäume) wieder her.
+1. Wählen Sie die wiederherzustellende Version aus und klicken Sie auf **Wiederherstellen**. AEM stellt die ausgewählten Versionen (bzw. Bäume) wieder her.
 
 ### Wiederherstellen einer Baumstruktur über die Konsole {#restoring-a-tree-from-the-console}
 
@@ -101,7 +101,7 @@ So vergleichen Sie die aktuelle Version einer Seite mit einer früheren Version:
 
 Timewarp ist eine Funktion, die den ***Veröffentlichungsstatus*** einer Seite zu einer bestimmten Zeit in der Vergangenheit simuliert.
 
-Ziel ist es, Ihnen die Nachverfolgung der veröffentlichten Website zu einem bestimmten Zeitpunkt zu ermöglichen. Hierbei werden die Seitenaktivierungen verwendet, um den Status der Publishing-Umgebung zu ermitteln.
+Damit können Sie die veröffentlichte Website zum ausgewählten Zeitpunkt verfolgen. Hierbei werden die Seitenaktivierungen verwendet, um den Status der Publishing-Umgebung zu ermitteln.
 
 Gehen Sie hierfür wie folgt vor:
 
@@ -159,7 +159,7 @@ Wenn Sie die Zeitleiste im Dokument anzeigen möchten:
 
    1. Verwenden Sie das Sidekick-Dialogfeld, das nach [Verwenden des Timewarp-Kalenders](#using-the-timewarp-calendar).
 
-1. Klicken **Timeline anzeigen** - die Timeline des Dokuments angezeigt wird; Beispiel:
+1. Klicks **Timeline anzeigen** - Die Timeline des Dokuments wird angezeigt, z. B.:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 

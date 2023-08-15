@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '570'
-ht-degree: 8%
+source-wordcount: '572'
+ht-degree: 7%
 
 ---
 
@@ -27,7 +27,7 @@ Das Standardskript, das erstellt wird, wenn die Komponente, die die PayPage-Vorl
 
 ### Superressourcentyp {#super-resource-type}
 
-Der erste Schritt besteht darin, der Eigenschaft `/apps/an-scf-sandbox/components/playpage` -Knoten, damit er die Skripte und Eigenschaften des Supertyps übernimmt.
+Der erste Schritt besteht darin, eine Eigenschaft vom Typ Ressource Supertype zum `/apps/an-scf-sandbox/components/playpage` -Knoten, damit er die Skripte und Eigenschaften des Supertyps übernimmt.
 
 Verwenden von CRXDE Lite:
 
@@ -66,7 +66,7 @@ Verwenden von CRXDE Lite:
    %>
    ```
 
-1. Da Sie Skript-Tags zum Öffnen/Schließen kennen, ersetzen Sie &quot; // TODO ...&quot;. mit Skripten für die Kopf- und Körperteile von &lt;html>.
+1. Ersetzen Sie &quot; // TODO ...&quot;durch Skripte für den Kopf- und Hauptteil von &lt;html>.
 
    Mit einem Supertyp von `foundation/components/page`, wird jedes Skript, das nicht in diesem Ordner definiert ist, in ein Skript in `/apps/foundation/components/page` Ordner (sofern vorhanden), andernfalls ein Skript in `/libs/foundation/components/page` Ordner.
 
@@ -88,15 +88,16 @@ Verwenden von CRXDE Lite:
    </html>
    ```
 
-1. Das Foundation-Skript `head.jsp` müssen nicht überlagert werden, aber das Foundation-Skript `body.jsp` leer ist.
+1. Das Foundation-Skript `head.jsp` muss nicht überlagert werden, aber das Foundation-Skript `body.jsp` leer ist.
 
    So richten Sie für das Authoring eine Überlagerung ein `body.jsp` mit einem lokalen Skript und ein Absatzsystem (parsys) im Text einschließen:
 
    1. Navigieren Sie zu `/apps/an-scf-sandbox/components`.
-   1. Wählen Sie die `playpage` Knoten.
-   1. Klicken Sie mit der rechten Maustaste und wählen Sie `Create > Create File...`
+   1. Wählen Sie den `playpage`-Knoten aus.
+   1. Rechtsklicken Sie auf und wählen Sie `Create > Create File...`
 
       * Name: **body.jsp**
+
    1. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 
    Öffnen `/apps/an-scf-sandbox/components/playpage/body.jsp` und fügen Sie Folgendes ein:
@@ -139,14 +140,14 @@ Im Folgenden wird gezeigt, wie die Wiedergabeseite in der klassischen Benutzerob
 
 Um Communities-Komponenten für das Authoring zu aktivieren, befolgen Sie die folgenden Anweisungen:
 
-* [Auf Communities-Komponenten zugreifen](basics.md#accessing-communities-components)
+* [Zugreifen auf Communities-Komponenten](basics.md#accessing-communities-components)
 
-Beginnen Sie für diese Sandbox mit diesen **Communities** Komponenten (aktivieren, indem Sie das Kontrollkästchen aktivieren):
+Beginnen Sie für die Zwecke dieser Sandbox mit diesen **Communities** Komponenten (aktivieren, indem Sie das Kontrollkästchen aktivieren):
 
 * Kommentare
 * Forum
 * Bewertung
-* Reviews
+* Bewertungen
 * Bewertungszusammenfassung (Anzeige)
 * Abstimmung
 
@@ -155,13 +156,13 @@ Wählen Sie außerdem **[!UICONTROL Allgemein]** Komponenten wie
 * Bild
 * Tabelle
 * Text
-* Titel (Foundation)
+* Titel (Fundament)
 
 >[!NOTE]
 >
 >Die für die Seitenpar aktivierten Komponenten werden im Repository als Wert der Variablen `components` -Eigenschaft der
 >
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` node.
+>`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` Knoten.
 
 ## Landingpage {#landing-page}
 
@@ -182,4 +183,4 @@ In diesem einfachen Beispiel wird die Stammseite statisch so eingestellt, dass s
 
 Sobald die Site veröffentlicht wurde, wird das Browsen zur Stammseite in einer Veröffentlichungsinstanz zur englischen Seite weitergeleitet.
 
-Der letzte Schritt vor dem Abspielen mit den SCF-Communities-Komponenten besteht darin, einen Client-Bibliotheksordner (clientlibs) hinzuzufügen .... [Hinzufügen von ClientLibs](add-clientlibs.md)
+Der letzte Schritt vor dem Abspielen mit den SCF-Communities-Komponenten besteht darin, einen Client Library Folder (clientlibs) hinzuzufügen ... [Hinzufügen von ClientLibs](add-clientlibs.md)

@@ -7,9 +7,9 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1158'
 ht-degree: 27%
 
 ---
@@ -32,7 +32,7 @@ In diesem Abschnitt wird beschrieben, wie Sie mit dem Bulk Editor im **Instrumen
 
 >[!CAUTION]
 >
->Mit dem [Einstellung der klassischen Benutzeroberfläche](/help/release-notes/deprecated-removed-features.md) In AEM 6.4 ist der Bulk Editor ebenfalls veraltet und die Adobe plant daher nicht, den Bulk Editor weiter zu verbessern.
+>Mit dem [Einstellung der klassischen Benutzeroberfläche](/help/release-notes/deprecated-removed-features.md) In AEM 6.4 ist der Bulk Editor ebenfalls veraltet und Adobe plant daher keine weitere Verbesserung des Bulk Editors.
 
 ## Anwendungsbeispiel für den Bulk Editor {#example-use-case-for-the-bulk-editor}
 
@@ -41,7 +41,7 @@ Wenn Sie beispielsweise alle Namen und E-Mail-Adressen von Benutzern benötigen,
 Ein Beispiel zur Veranschaulichung eines solchen Anwendungsfalls finden Sie auf der Geometrixx-Website:
 
 1. Navigieren Sie zum **Support** und dann zum **Zufriedenheit des Kundendienstes** Umfrage.
-1. **Bearbeiten** die **Beginn des Formulars** Absatz. Klicken Sie im Dialogfeld auf das **Erweitert** Registerkarte, erweitern Sie die **Aktionskonfiguration** Klicken Sie auf **Daten anzeigen...**.
+1. **Bearbeiten** die **Formularstart** Absatz. Klicken Sie im Dialogfeld auf das **Erweitert** Registerkarte, erweitern Sie die **Aktionskonfiguration** Klicken Sie auf **Daten anzeigen...**.
 
    ![Beispiel für eine Umfrage zur Kundenzufriedenheit](assets/custsatsurvey.png)
 
@@ -63,7 +63,7 @@ Mit dem Bulk Editor können Sie:
 So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
 
 1. Im **Instrumente** klicken Sie auf die **Importtools** Ordner, um ihn zu erweitern.
-1. Doppelklicken Sie auf die **Bulk Editor** um es zu öffnen.
+1. Doppelklicken Sie auf die **Bulk Editor** , um es zu öffnen.
 1. Geben Sie Ihre Auswahlanforderungen an:
 
 <table>
@@ -78,7 +78,7 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
   </tr>
   <tr>
    <td>Abfrageparameter</td>
-   <td>Geben Sie mithilfe der GQL-Parameter die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll. Beispiel: <code>type:Page</code> sucht nach allen Seiten im Stammpfad, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td>
+   <td>Geben Sie mithilfe von GQL-Parametern die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll, z. B. <code>type:Page</code> sucht nach allen Seiten im Stammpfad, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td>
   </tr>
   <tr>
    <td>Kontrollkästchen „Inhaltsmodus“</td>
@@ -102,7 +102,7 @@ Beispiel:
 1. Klicken Sie auf **Suchen**. Der Bulk Editor zeigt die Suchergebnisse an.
 Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurückgegeben und in den geforderten Spalten angezeigt.
 
-   ![Ergebnisse des Masseneditors](assets/chlimage_1-39.png)
+   ![Ergebnisse des Bulk Editors](assets/chlimage_1-39.png)
 
 1. Nehmen Sie alle erforderlichen Änderungen vor, indem Sie auf eine Zelle doppelklicken.
 
@@ -123,12 +123,12 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 
 ### Inhalt exportieren {#exporting-content}
 
-Möglicherweise müssen Sie Inhalte exportieren und in einer Excel-Tabelle ändern. Beispielsweise können Sie eine Mailingliste exportieren und den Bereichscode aller aufgelisteten Telefonnummern direkt in Excel ändern oder zusätzliche Zeilen hinzufügen usw.
+Möglicherweise müssen Sie Inhalte exportieren und in einer Excel-Tabelle ändern. Sie können beispielsweise eine Mailingliste exportieren und den Bereichscode aller aufgelisteten Telefonnummern direkt in Excel ändern oder zusätzliche Zeilen hinzufügen usw.
 
 So exportieren Sie Inhalte:
 
 1. Suchen Sie nach Inhalt, wie unter [Suchen und Bearbeiten von Inhalten](#searching-and-editing-content).
-1. Klicken **Export** um die Änderungen in eine tabulatorgetrennte Excel-Tabelle zu exportieren. AEM WCM fragt Sie, wo Sie die Datei herunterladen möchten.
+1. Klicks **Export** um die Änderungen in eine tabulatorgetrennte Excel-Tabelle zu exportieren. AEM WCM fragt Sie, wo Sie die Datei herunterladen möchten.
 
    >[!NOTE]
    >
@@ -152,7 +152,7 @@ Standardmäßig ist die Importfunktion beim Öffnen des Bulk Editors ausgeblende
 So importieren Sie Inhalte:
 
 1. Öffnen Sie den Bulk Editor.
-1. Hinzufügen `?hib=false` zur URL hinzu, z. B.:
+1. Hinzufügen `?hib=false` zur URL hinzu, beispielsweise:
    `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 1. Wählen Sie **Importieren** aus.
 1. Wählen Sie die `.tsv`-Datei aus. Die Daten werden in das Repository importiert.

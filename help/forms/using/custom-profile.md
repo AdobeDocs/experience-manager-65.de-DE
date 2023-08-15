@@ -1,7 +1,7 @@
 ---
 title: Erstellen eines benutzerdefinierten Profils für HTML5-Formulare
 seo-title: Creating a custom profile for HTML5 forms
-description: Ein HTML5-Formularprofil ist ein Ressourcenknoten in Apache Sling. Es enthält eine benutzerdefinierte Version von HTML5-Formularen-Render-Diensten.
+description: Ein HTML5 Forms-Profil ist ein Ressourcenknoten in Apache Sling. Es stellt eine angepasste Version des HTML5 Forms Render-Dienstes dar.
 seo-description: A HTML5 forms profile is a resource node in Apache Sling. It represents a customized version of HTML5 forms Render service.
 uuid: b9938280-a92c-4dde-b465-04372db3ca8d
 content-type: reference
@@ -10,10 +10,10 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 feature: Mobile Forms
 exl-id: cf86c810-c466-4894-acc2-d4faf49754cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '660'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '659'
+ht-degree: 71%
 
 ---
 
@@ -23,7 +23,7 @@ Ein Profil ist ein Ressourcenknoten in [Apache Sling](https://sling.apache.org/)
 
 Der Profilknoten hat die **sling:resourceSuperType**-Eigenschaft und der Standardwert ist **xfaforms/profile**. Das Render-Skript für den Knoten ist unter /libs/xfaforms/profile verfügbar.
 
-Die Sling-Skripte sind JSP-Skripte. Diese JSP-Skripte dienen als Container für den HTML-Code für das angeforderte Formular und die erforderlichen JS-/CSS-Artefakte. Die Sling-Skripte werden auch als **Profil-Renderer-Skripte bezeichnet**. Der Profil-Renderer ruft den Forms-OSGi-Service auf, um das angeforderte Formular zu rendern.
+Die Sling-Skripte sind JSP-Skripte. Diese JSP-Skripte dienen als Container für die Zusammenstellung des HTML für das angeforderte Formular und der erforderlichen JS-/CSS-Artefakte. Die Sling-Skripte werden auch als **Profil-Renderer-Skripte bezeichnet**. Der Profil-Renderer ruft den Forms-OSGi-Service auf, um das angeforderte Formular zu rendern.
 
 Das Profilskript für GET- und POST-Anfragen befindet sich in „html.jsp“ und „html.POST.jsp“. Sie können eine oder mehrere Dateien kopieren und verändern, um Ihre Anpassungen zu überschreiben. Nehmen Sie keine Änderungen an Ort und Stelle vor, denn die Aktualisierung des Patches überschreibt solche Änderungen.
 
@@ -35,11 +35,11 @@ Die „formRuntime.jsp“-Module enthalten Verweise auf die Client-Bibliotheken.
 
 ## config.jsp {#config-jsp}
 
-Das config.jsp-Modul enthält verschiedene Konfigurationen wie Protokollierung, Proxy-Dienste und Verhaltensversion. Sie können Ihre eigene benutzerdefinierte Konfiguration und das benutzerdefinierte Widget zum config.jsp-Modul hinzufügen. Sie können auch Konfigurationen wie beispielsweise benutzerdefinierte Widget-Registrierung zum „config.jsp“-Modul hinzufügen.
+Das config.jsp-Modul enthält verschiedene Konfigurationen wie Protokollierung, Proxy-Dienste und Verhaltensversion. Sie können Ihre eigene Konfiguration und Widget-Anpassung zum config.jsp-Modul hinzufügen. Sie können auch Konfigurationen wie beispielsweise benutzerdefinierte Widget-Registrierung zum „config.jsp“-Modul hinzufügen.
 
 ## toolbar.jsp {#toolbar-jsp}
 
-Die Datei „toolbar.jsp“ enthält den Code zur Erstellung von farbigen Symbolleisten. Um die Symbolleiste zu entfernen, müssen Sie toolbar.jsp aus der html.jsp entfernen.
+Die Datei „toolbar.jsp“ enthält den Code zur Erstellung von farbigen Symbolleisten. Entfernen Sie die Symbolleiste toolbar.jsp aus der HTML.jsp
 
 ## formBody.jsp {#formbody-jsp}
 
@@ -47,11 +47,11 @@ Das Modul „formBody.jsp“ dient zur HTML-Darstellung des XFA-Formulars.
 
 ## nav_footer.jsp {#nav-footer-jsp}
 
-Zunächst rendert das HTML5-Formular nur die erste Seite des Formulars. Wenn ein Benutzer das Formular scrollt, wird der Rest des Formulars geladen. Dadurch wird der Ladevorgang verkürzt. Die Komponente „nav_footer.jsp“ enthält alle Stile und erforderlichen Elemente, um das schrittweise Laden der Seiten beim Scrollen zu erleichtern.
+Zunächst gibt das HTML5-Formular nur die erste Formularseite wieder. Wenn ein Benutzer durch das Formular blättert, wird der Rest der Formulare geladen. Dadurch wird das Laden schneller. Die Komponente „nav_footer.jsp“ enthält alle Stile und erforderlichen Elemente, um das schrittweise Laden der Seiten beim Scrollen zu erleichtern.
 
 ## footer.jsp {#footer-jsp}
 
-Das Modul „footer.jsp“ ist leer. Damit können Sie Skripte hinzufügen, die ausschließlich für die Interaktion mit dem Benutzer dienen.
+Das Modul footer.jsp ist leer. Damit können Sie Skripte hinzufügen, die nur für Benutzerinteraktionen verwendet werden.
 
 ## Erstellen von benutzerdefinierten Profilen {#creating-custom-profiles}
 
@@ -69,9 +69,9 @@ Um ein benutzerdefiniertes Profil zu erstellen, führen Sie die folgenden Schrit
 
 1. Klicken Sie im Symbolleistenmenü auf Alle speichern, um die Änderungen zu speichern.
 
-### Das Profil-Renderer-Skript erstellen {#create-the-profile-renderer-script}
+### Erstellen Sie das Profil-Renderer-Skript {#create-the-profile-renderer-script}
 
-Nachdem Sie ein benutzerdefiniertes Profil erstellt haben, fügen Sie Render-Informationen zu diesem Profil hinzu. Nach Erhalt einer Anfrage für das neue Profil prüft CRX das Vorhandensein des Ordners „/apps“, damit die JSP-Seite wiedergegeben werden kann. Erstellen Sie die JSP-Seite im Ordner „/apps“.
+Nachdem Sie ein benutzerdefiniertes Profil erstellt haben, fügen Sie diesem Profil Renderinformationen hinzu. Nach Erhalt einer Anfrage für das neue Profil überprüft CRX, ob der Ordner /apps vorhanden ist, damit die JSP-Seite gerendert werden kann. Erstellen Sie die JSP-Seite im Ordner /apps .
 
 1. Navigieren Sie im linken Fensterbereich zum Ordner `/apps`.
 1. Klicken Sie mit der rechten Maustaste auf den Ordner `/apps` und wählen Sie die Erstellung eines Ordners mit dem Namen **hrform**.

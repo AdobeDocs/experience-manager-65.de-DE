@@ -7,10 +7,10 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
-workflow-type: ht
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
 source-wordcount: '871'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -41,7 +41,7 @@ Folgendes sollte lokal installiert werden:
 - [AEM 6.5 Service Pack](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) 7 oder höher
 - [Java 11](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/general.html)
 - [Apache Maven](https://maven.apache.org/) (3.3.9 oder höher)
-- [Node LTS](https://nodejs.org/en/)
+- [Node LTS](https://nodejs.org/de/)
 - [npm 6+](https://www.npmjs.com/)
 - [Git](https://git-scm.com/)
 
@@ -57,7 +57,7 @@ Das CIF-Add-on kann über [Software Distribution](https://experience.adobe.com/#
 
 Für die lokale CIF-Projektentwicklung mit dem AEM und dem CIF-Add-on gehen Sie wie folgt vor:
 
-1. Laden Sie AEM Version 6.5 herunter und installieren Sie das AEM 6.5 Service Pack. Das AEM 6.5 Service Pack 7 ist erforderlich. Wir empfehlen jedoch, das letzte verfügbare Service Pack zu installieren.
+1. Laden Sie AEM Version 6.5 herunter und installieren Sie das AEM 6.5 Service Pack. AEM 6.5 Service Pack 7 ist erforderlich, Adobe empfiehlt jedoch, das letzte verfügbare Service Pack zu installieren.
 
 1. Entpacken Sie die AEM.jar, um den `crx-quickstart`-Ordner zu erstellen, und führen Sie Folgendes aus:
 

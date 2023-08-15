@@ -4,16 +4,16 @@ description: Erfahren Sie, wie Sie mit Varianten Ihre Headless-Inhalte in AEM no
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2428'
-ht-degree: 84%
+source-wordcount: '2422'
+ht-degree: 81%
 
 ---
 
 # Varianten – Erstellen von Fragmentinhalten{#variations-authoring-fragment-content}
 
-[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion für Inhaltsfragmente in AEM, da sie Ihnen die Möglichkeit bieten, Kopien des primären Inhalts für die Verwendung in bestimmten Kanälen und/oder Szenarien zu erstellen und zu bearbeiten, was die Bereitstellung von Headless-Inhalten noch flexibler macht.
+[Varianten](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) sind eine wichtige Funktion AEM Inhaltsfragmente, da sie es Ihnen ermöglichen, Kopien des Master-Inhalts für die Verwendung in bestimmten Kanälen und/oder Szenarien zu erstellen und zu bearbeiten, wodurch die Bereitstellung Headless Content noch flexibler wird.
 
 Aus dem **Varianten** können Sie Folgendes tun:
 
@@ -116,7 +116,7 @@ Das Format kann im Vollbild-Editor ausgewählt werden.
 
 ### Rich-Text {#rich-text}
 
-Mit der Rich-Text-Bearbeitung können Sie Folgendes formatieren:
+Die Rich-Text-Bearbeitung ermöglicht das Formatieren:
 
 * Fett
 * Kursiv
@@ -128,7 +128,7 @@ Mit der Rich-Text-Bearbeitung können Sie Folgendes formatieren:
 * Hyperlinks erstellen/unterbrechen
 * Text/aus Word einfügen
 * Tabelle einfügen
-* Absatzstil: Absatz 1 Überschrift 1/2/3
+* Absatzformat: Absatz, Überschrift 1/2/3
 * [Asset einfügen](#inserting-assets-into-your-fragment)
 * Öffnen Sie den Vollbild-Editor, in dem die folgenden Formatierungsoptionen zur Verfügung stehen:
    * Suchen
@@ -194,7 +194,7 @@ Selecting the original tab again (for example, **Little Pony Inc.**), will close
 
 #### Neues Inhaltsfragment {#fragment-references-new-content-fragment}
 
-Mit der Option **Neues Inhaltsfragment** können Sie ein komplett neues Fragment erstellen. Dazu öffnet sich im Editor eine Variante des Assistenten zum Erstellen von Inhaltsfragmenten.
+Die Option **Neues Inhaltsfragment** können Sie ein völlig neues Fragment erstellen. Dazu öffnet sich im Editor eine Variante des Assistenten zum Erstellen von Inhaltsfragmenten.
 
 Anschließend können Sie wie folgt ein neues Fragment erstellen:
 
@@ -308,7 +308,7 @@ So kommentieren Sie ein Fragment:
 
 Anmerkungen:
 
-* Sie werden durch die Markierung auf dem Text sowohl im Vollbildmodus als auch im normalen Modus des Editors angezeigt. Vollständige Details einer Anmerkung können angezeigt, bearbeitet und/oder gelöscht werden, indem Sie auf den markierten Text klicken, der das Dialogfeld erneut öffnet.
+* Sie werden durch die Markierung auf dem Text sowohl im Vollbildmodus als auch im normalen Modus des Editors angezeigt. Vollständige Details einer Anmerkung können angezeigt, bearbeitet und/oder gelöscht werden, indem Sie auf den hervorgehobenen Text klicken, um das Dialogfeld erneut zu öffnen.
 
   >[!NOTE]
   >
@@ -326,7 +326,7 @@ Anmerkungen:
 
 Um die Erstellung von Inhaltsfragmenten zu vereinfachen, können Sie [Assets](/help/assets/manage-assets.md) (Bilder) direkt zum Fragment hinzufügen.
 
-Sie werden der Absatzsequenz des Fragments ohne Formatierung hinzugefügt. Formatierung kann durchgeführt werden, wenn die [Fragment wird auf einer Seite verwendet/referenziert](/help/sites-authoring/content-fragments.md).
+Sie werden der Absatzsequenz des Fragments ohne Formatierung hinzugefügt. Formatierungen können vorgenommen werden, wenn die [Fragment wird auf einer Seite verwendet/referenziert](/help/sites-authoring/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -402,7 +402,7 @@ Es gibt verschiedene Methoden, um [Bilder](/help/assets/content-fragments/conten
 
 ### Erstellen einer Variante {#creating-a-variation}
 
-Varianten ermöglichen die Abänderung von **primärem** Inhalt für einen bestimmten Zweck (sofern notwendig).
+Mithilfe von Varianten können Sie die **Master** Inhalt und variieren sie je nach Zweck (falls erforderlich).
 
 So erstellen Sie eine neue Variante:
 
@@ -463,7 +463,7 @@ So löschen Sie eine vorhandene Variante:
 
 **Primäre Version** ist ein wesentlicher Bestandteil eines Inhaltsfragments und enthält die primäre Version des Inhalts, während die Varianten einzelne aktualisierte und maßgeschneiderten Versionen des Inhalts enthalten. Wenn die primäre Version aktualisiert wird, können diese Änderungen auch für die Varianten relevant sein und müssen daher auf diese übertragen werden.
 
-Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Dadurch können Sie an der primären Version vorgenommene Änderungen automatisch in die entsprechende Variante kopieren.
+Beim Bearbeiten einer Variante haben Sie Zugriff auf die Aktion zur Synchronisierung des aktuellen Elements der Variante mit der primären Version. Auf diese Weise können Sie Änderungen, die an Master vorgenommen wurden, automatisch in die gewünschte Variante kopieren.
 
 >[!CAUTION]
 >

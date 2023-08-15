@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '470'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '469'
+ht-degree: 94%
 
 ---
 
@@ -49,7 +49,6 @@ Im Suchbereich können Sie alle Seiten Ihrer Website durchsuchen. Er enthält Fe
 >* [Verstärken](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
-
 Starten Sie die Suche, indem Sie unten im Bereich auf **Suchen** klicken. Klicken Sie auf **Zurücksetzen**, um die Suchkriterien zu löschen.
 
 ## Filter {#filter}
@@ -60,7 +59,7 @@ An verschiedenen Stellen kann ein Filter festgelegt (und gelöscht) werden, um I
 
 ## Suchen und Ersetzen {#find-and-replace}
 
-In der Konsole **Websites** ermöglicht Ihnen die Menüoption **Suchen und Ersetzen**, innerhalb eines Bereichs der Website nach mehreren Vorkommen einer Zeichenfolge zu suchen und diese zu ersetzen.
+Im **Websites** Konsole **Suchen und Ersetzen** -Menüoption können Sie innerhalb eines Bereichs der Website nach mehreren Instanzen einer Zeichenfolge suchen und diese ersetzen.
 
 1. Wählen Sie die Stammseite bzw. den Stammordner aus, in dem die Aktion „Suchen und Ersetzen“ stattfinden soll.
 1. Wählen Sie **Tools** und dann **Suchen und Ersetzen**:

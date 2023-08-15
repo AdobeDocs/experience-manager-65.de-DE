@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3335'
-ht-degree: 61%
+source-wordcount: '3333'
+ht-degree: 60%
 
 ---
 
@@ -86,7 +86,7 @@ Um Teile des HTML zu markieren, damit diese beim Import in AEM bearbeitbar bleib
    * Clickthrough-Link
    * Grafischer Link
 
-* CTA-Lead-Formular, um Benutzerinformationen zu erfassen
+* CTA-Lead-Formular zum Erfassen von Benutzerinformationen
 * Absatzsystem (Parsys), um das Hinzufügen einer beliebigen Komponente oder das Konvertieren der oben genannten Komponente zu ermöglichen
 
 Außerdem ist es möglich, dies zu erweitern und benutzerdefinierte Komponenten zu unterstützen. In diesem Abschnitt werden die Komponenten detailliert beschrieben.
@@ -127,7 +127,7 @@ Ein Landingpage-Entwurf kann mehrere Links enthalten - einige davon können als 
 
 Aktionsaufrufe (CTA) werden verwendet, um Besucher dazu zu bringen, sofort auf der Landingpage Maßnahmen zu ergreifen, z. B. &quot;Jetzt anmelden&quot;, &quot;Dieses Video anzeigen&quot;, &quot;Nur für begrenzte Zeit&quot;usw.
 
-* Clickthrough-Link - Ermöglicht den Zusatz eines Textlinks, der den Besucher bei Klick zu einer Ziel-URL führt.
+* Clickthrough-Link - Ermöglicht den Zusatz eines Textlinks, der den Besucher zu einer Ziel-URL führt, wenn er darauf klickt.
 * Grafischer Link - Ermöglicht das Hinzufügen eines Bildes, das den Besucher durch Klicken auf eine Ziel-URL weiterleitet.
 
 Beide CTA-Komponenten verfügen über ähnliche Optionen. Der Click Through-Link verfügt über zusätzliche Rich-Text-Optionen. Die Komponenten werden in den folgenden Absätzen ausführlich beschrieben.
@@ -214,10 +214,10 @@ Obwohl jede der Lead-Formular-Komponenten einen anderen Zweck hat, bestehen viel
 Wenn Sie eine der Formularkomponenten konfigurieren, stehen die folgenden Registerkarten im Dialogfeld zur Verfügung:
 
 * **Titel und Text**
-Hier müssen Sie die grundlegenden Informationen angeben, wie den Titel der Komponente und begleitenden Text. Gegebenenfalls können Sie hier auch andere Schlüsselinformationen definieren, z. B. ob für das Feld mehrere Optionen möglich sind und welche Elemente ausgewählt werden können.
+Hier müssen Sie die grundlegenden Informationen angeben, wie den Titel der Komponente und begleitenden Text. Gegebenenfalls können Sie auch andere wichtige Informationen definieren, z. B. ob das Feld mehrmals ausgewählt werden kann und welche Elemente ausgewählt werden können.
 
 * **Anfangswerte**
-Ermöglicht Ihnen das Festlegen eines Standardwerts.
+Hier können Sie einen Standardwert angeben.
 
 * **Beschränkungen**
 Hier können Sie angeben, ob ein Feld erforderlich ist, und diese Beschränkungen für dieses Feld platzieren (z. B. ob nur numerische Werte zulässig sind).
@@ -269,7 +269,7 @@ Im folgenden Abschnitt werden die Komponenten beschrieben, die für Aktionsaufru
 
 Die Lead-Formular-Komponente definiert den Beginn und das Ende eines Formulars mithilfe der Elemente **Formular-Start** und **Formular-Ende**. Diese werden immer gepaart, um sicherzustellen, dass das Formular korrekt definiert ist.
 
-Nachdem Sie das Lead-Formular hinzugefügt haben, können Sie den Beginn des Formulars oder das Ende des Formulars konfigurieren, indem Sie auf **Bearbeiten** in der entsprechenden Leiste.
+Nachdem Sie das Lead-Formular hinzugefügt haben, können Sie den Beginn oder das Ende des Formulars konfigurieren, indem Sie auf **Bearbeiten** in der entsprechenden Leiste.
 
 **Beginn des Lead-Formulars**
 
@@ -286,9 +286,9 @@ Für die Konfiguration sind zwei Registerkarten verfügbar: **Formular** und **E
 **Post-Optionen** Die folgenden Post-Optionen sind verfügbar:
 
 * Lead erstellen
-* Email Service: Abonnenten erstellen und zur Liste hinzufügen - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget verwenden.
-* Email Service: Automatische Antwort-E-Mail senden - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget verwenden.
-* Email Service: Benutzer von Liste abmelden - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget verwenden.
+* E-Mail-Dienst: Abonnenten erstellen und zur Liste hinzufügen - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget verwenden.
+* E-Mail-Dienst: automatische Antwort-E-Mail senden - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget verwenden.
+* E-Mail-Dienst: Benutzer von Liste abmelden - Verwenden Sie diese Option, wenn Sie einen E-Mail-Dienstanbieter wie ExactTarget verwenden.
 * Benutzer entfernen
 
 **Formular-ID**: Mit der Formular-ID wird das Formular eindeutig gekennzeichnet. Verwenden Sie die Formular-ID, wenn sich mehrere Formulare auf einer Seite befinden. Achten Sie darauf, dass die Formulare unterschiedliche IDs haben.

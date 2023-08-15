@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: e57a6971-6a6f-427b-a8cd-a2f2e8cdf9e2
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '604'
 ht-degree: 37%
 
 ---
@@ -60,13 +60,13 @@ Seit AEM 6.0 wurden Änderungen an der Implementierung und Verwendung von Überl
 
 Überlagerungen sind die empfohlene Methode für viele Änderungen, z. B. [Konfigurieren der Konsolen](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) oder [Erstellen der Auswahlkategorie für den Asset-Browser im Seitenbereich](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (wird beim Erstellen von Seiten verwendet). Sie sind aus folgenden Gründen erforderlich:
 
-* ***Nicht* Änderungen in `/libs` Verzweigung **Alle Änderungen, die Sie vornehmen, können verloren gehen, da sich diese Verzweigung ändern kann, wenn Sie:
+* ***Nicht* Änderungen in der `/libs` Verzweigung **Alle Änderungen, die Sie vornehmen, können verloren gehen, da sich diese Verzweigung ändern kann, wenn Sie:
 
    * Aktualisierung auf Ihrer Instanz
    * Hotfix anwenden
    * Feature Pack installieren
 
-* Sie konzentrieren Ihre Änderungen an einem Ort. Dies erleichtert es Ihnen, Ihre Änderungen bei Bedarf zu verfolgen, zu migrieren, zu sichern oder zu debuggen.
+* Sie konzentrieren Ihre Änderungen an einem Ort, wodurch Sie Ihre Änderungen bei Bedarf leichter verfolgen, migrieren, sichern oder debuggen können.
 
 ## Konfigurieren der Suchpfade {#configuring-the-search-paths}
 
@@ -75,7 +75,7 @@ Bei Überlagerungen handelt es sich bei der bereitgestellten Ressource um ein Ag
 * Der **Suchpfad des Ressourcen-Resolvers** wie in der [OSGi-Konfiguration](/help/sites-deploying/configuring-osgi.md) für die **Apache Sling-Resource Resolver Factory** definiert
 
    * Die von oben nach unten sortierte Reihenfolge der Suchpfade gibt die jeweiligen Prioritäten an.
-   * Bei einer Standardinstallation sind die Hauptstandardwerte: `/apps`, `/libs` - der Inhalt der `/apps` hat eine höhere Priorität als die von `/libs` (d. h. es *Overlays* ).
+   * Bei einer Standardinstallation sind die Hauptstandardwerte `/apps`, `/libs` - der Inhalt der `/apps` hat eine höhere Priorität als `/libs` (d. h., es *Overlays* es).
 
 * Zwei Dienstbenutzer benötigen JCR:READ-Zugriff auf den Speicherort der Skripte. Diese Benutzer sind: „components-search-service“ (verwendet von den com.day.cq.wcm.coreto access/cache-Komponenten) und „sling-scripting“ (verwendet von „org.apache.sling.servlets.resolver“, um Servlets zu finden).
 * Die folgende Konfiguration muss außerdem so konfiguriert werden, dass sie dem Speicherort für Ihre Skripte entspricht (in diesem Beispiel unter /etc, /libs oder /apps).

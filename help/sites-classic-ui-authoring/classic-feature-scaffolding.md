@@ -1,22 +1,22 @@
 ---
 title: Strukturvorlage
-description: Manchmal müssen Sie eine große Anzahl von Seiten erstellen, die zwar eine gemeinsame Struktur aufweisen, aber unterschiedliche Inhalte haben. Mit Strukturvorlage können Sie ein Formular (eine Grundlage) mit Feldern erstellen, die die gewünschte Struktur für Ihre Seiten widerspiegeln. Mithilfe dieses Formulars können Sie dann einfach Seiten erstellen, die auf dieser Struktur basieren.
+description: Manchmal müssen Sie möglicherweise eine große Gruppe von Seiten erstellen, die zwar eine gemeinsame Struktur aufweisen, aber unterschiedliche Inhalte haben. Mit Strukturvorlage können Sie ein Formular (eine Grundlage) mit Feldern erstellen, die die gewünschte Struktur für Ihre Seiten widerspiegeln. Mithilfe dieses Formulars können Sie dann einfach Seiten erstellen, die auf dieser Struktur basieren.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1431'
 ht-degree: 59%
 
 ---
 
 # Strukturvorlage{#scaffolding}
 
-Manchmal müssen Sie eine große Anzahl von Seiten erstellen, die zwar eine gemeinsame Struktur aufweisen, aber unterschiedliche Inhalte haben. Über die Standard-Benutzeroberfläche von Adobe Experience Manager (AEM) müssten Sie jede Seite erstellen, die entsprechenden Komponenten auf die Seite ziehen und jede einzelne davon einzeln ausfüllen.
+Manchmal müssen Sie möglicherweise eine große Gruppe von Seiten erstellen, die zwar eine gemeinsame Struktur aufweisen, aber unterschiedliche Inhalte haben. Über die Standard-Benutzeroberfläche von Adobe Experience Manager (AEM) müssten Sie jede Seite erstellen, die entsprechenden Komponenten auf die Seite ziehen und jede einzelne davon einzeln ausfüllen.
 
 Mit Strukturvorlage können Sie ein Formular (eine Grundlage) mit Feldern erstellen, die die gewünschte Struktur für Ihre Seiten widerspiegeln. Mithilfe dieses Formulars können Sie dann einfach Seiten erstellen, die auf dieser Struktur basieren.
 
@@ -28,8 +28,8 @@ Mit Strukturvorlage können Sie ein Formular (eine Grundlage) mit Feldern erstel
 
 Strukturvorlagen sind über die **Tools**-Konsole des SiteAdmin-Bereichs verfügbar.
 
-* Öffnen Sie die **Instrumente** und klicken Sie auf **Strukturvorlage der Standardseite**.
-* Klicken Sie darunter auf **Geometrixx**.
+* Öffnen Sie die **Instrumente** und klicken Sie auf **Strukturvorlage für Standardseite**.
+* Klicken Sie unter diesem Link auf **Geometrixx**.
 * under **Geometrixx**, finden Sie *Strukturseite* aufgerufen **Nachrichten**. Doppelklicken Sie, um diese Seite zu öffnen.
 
 ![howscaffolds_work](assets/howscaffolds_work.png)
@@ -58,9 +58,9 @@ Der Textkörper der Strukturvorlage ist das Formular. Wenn ein Benutzer eine Sei
 
 ### Erstellen einer Strukturvorlage {#creating-a-scaffold}
 
-Um eine neue Grundlage zu erstellen, navigieren Sie zum **Instrumente** Console, dann **Strukturvorlage der Standardseite** und erstellen Sie eine Seite. Ein einseitiger Vorlagentyp ist verfügbar. *Strukturvorlage.*
+Um eine neue Grundlage zu erstellen, navigieren Sie zum **Instrumente** Console, dann **Strukturvorlage für Standardseite** und erstellen Sie eine Seite. Ein einseitiger Vorlagentyp ist verfügbar. *Strukturvorlage.*
 
-Navigieren Sie zu **Seiteneigenschaften** der neuen Seite und legen Sie die *Titeltext*, *Beschreibung*, *Zielvorlage* und *Zielpfad*, wie oben beschrieben.
+Navigieren Sie zu **Seiteneigenschaften** und legen Sie die *Titeltext*, *Beschreibung*, *Zielvorlage*, und *Zielpfad*, wie oben beschrieben.
 
 Als nächstes müssen Sie die Struktur der Seite festlegen, die mithilfe der Strukturvorlage erstellt wird. Gehen Sie dazu in **[Designmodus](/help/sites-authoring/page-authoring.md#sidekick)** auf der Strukturvorlagenseite. Es wird ein Link angezeigt, mit dessen Hilfe Sie die Strukturvorlage im **Dialog-Editor** bearbeiten können.
 
@@ -141,7 +141,7 @@ Auf der klassischen Benutzeroberfläche sind Strukturvorlagen vollständig in di
 
 Wenn Sie eine Seite im **Strukturvorlagenmodus** öffnen (über das Symbol im unteren Sidekick-Bereich), werden alle Komponenten, für die Vererbung gilt, folgendermaßen gekennzeichnet:
 
-* ein Sperrsymbol (für die meisten Komponenten; z. B. Text und Titel)
+* ein Sperrsymbol (für die meisten Komponenten, z. B. Text und Titel)
 * eine Maske mit dem Text **Klicken Sie, um die Vererbung abzubrechen** (für Bildkomponenten)
 
 Diese zeigen, dass die Komponente erst bearbeitet werden kann, wenn die Vererbung abgebrochen wurde.

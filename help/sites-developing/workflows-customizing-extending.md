@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3584'
-ht-degree: 70%
+source-wordcount: '3582'
+ht-degree: 68%
 
 ---
 
@@ -33,7 +33,7 @@ Sie können auch [mit Ihren Workflows aus Ihren Programmen und Skripten interagi
 Eine Workflow-Schritt-Komponente definiert das Erscheinungsbild und Verhalten des Schritts beim Erstellen von Workflow-Modellen:
 
 * Die Kategorie und der Schrittname im Workflow-Sidekick.
-* Das Erscheinungsbild des Schritts in Workflow-Modellen.
+* Die Darstellung des Schritts in Workflow-Modellen.
 * Das Dialogfeld &quot;Bearbeiten&quot;zum Konfigurieren der Komponenteneigenschaften.
 * Der Dienst oder das Skript, der/das zur Laufzeit ausgeführt wird.
 
@@ -65,7 +65,7 @@ Die Komponente `/libs/cq/workflow/components/model/step` ist der nächste gemein
   Ein Dialogfeld mit den folgenden Registerkarten:
 
    * **Häufig**: zum Bearbeiten des Titels und der Beschreibung.
-   * **Erweitert**: zum Bearbeiten der Eigenschaften von E-Mail-Benachrichtigungen.
+   * **Erweitert**: zur Bearbeitung der Eigenschaften von E-Mail-Benachrichtigungen.
 
   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
@@ -73,7 +73,7 @@ Die Komponente `/libs/cq/workflow/components/model/step` ist der nächste gemein
   >
   >Wenn die Registerkarten des Bearbeitungsdialogfelds einer Schritt-Komponente nicht mit diesem standardmäßigen Erscheinungsbild übereinstimmen, verfügt die Schritt-Komponente über definierte Skripte, Knoteneigenschaften oder Registerkarten für Dialogfelder, die diese geerbten Registerkarten überschreiben.
 
-### ECMA-Skripte {#ecma-scripts}
+### ECMA Scripts {#ecma-scripts}
 
 Die folgenden Objekte sind (abhängig vom Schritttyp) bei ECMA-Skripten verfügbar:
 
@@ -250,13 +250,13 @@ Fügen Sie unter dem Knoten `cq:Component` den Knoten `cq:EditConfig` hinzu. Fü
 * Name: `DO_NOTIFY`
 
    * Typ: `Boolean`
-   * Wert: gibt an, ob E-Mail-Benachrichtigungen für Schritte zur Benutzerbeteiligung gesendet werden sollen (und geht davon aus, dass der Mailserver korrekt konfiguriert ist)
+   * Wert: Gibt an, ob E-Mail-Benachrichtigungen für Schritte zur Benutzerbeteiligung gesendet werden sollen (und geht davon aus, dass der Mailserver korrekt konfiguriert ist)
 
 ## Beständige Daten und Zugriff {#persisting-and-accessing-data}
 
 ### Beständige Daten für nachfolgende Workflow-Schritte {#persisting-data-for-subsequent-workflow-steps}
 
-Sie können Workflow-Metadaten verwenden, um Informationen beizubehalten, die während der Lebensdauer des Workflows - und zwischen Schritten - erforderlich sind. Eine gängige Anforderung an Workflow-Schritte besteht darin, Daten für die zukünftige Verwendung beizubehalten oder die beibehaltenen Daten aus vorherigen Schritten abzurufen.
+Sie können Workflow-Metadaten verwenden, um Informationen beizubehalten, die während der Lebensdauer des Workflows - und zwischen Schritten - erforderlich sind. Eine gängige Anforderung an Workflow-Schritte besteht darin, Daten für die zukünftige Verwendung beizubehalten oder die gespeicherten Daten aus vorherigen Schritten abzurufen.
 
 Workflow-Metadaten werden in einem [`MetaDataMap`](#metadatamaps)-Objekt gespeichert. Die Java-API stellt die Methode [`Workflow.getWorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/Workflow.html) bereit, die ein [`WorkflowData`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/exec/WorkflowData.html)-Objekt zurückgibt, das das entsprechende `MetaDataMap`-Objekt bereitstellt. Dieses `WorkflowData``MetaDataMap`-Objekt ist für den OSGi-Dienst oder das ECMA-Skript einer Schritt-Komponente verfügbar.
 
@@ -395,7 +395,7 @@ So definieren Sie einen Prozess-Schritt als OSGi-Dienstkomponente (Java-Paket):
 1. Fügen Sie im Editor für **Modelle** über die allgemeine **Prozess-Schritt**-Komponente den Prozess-Schritt zum Workflow hinzu.
 1. Wechseln Sie im Dialogfeld „Bearbeiten“ (vom **Prozess-Schritt**) zur Registerkarte **Prozess** und wählen Sie Ihre Prozessimplementierung aus.
 1. Wenn Sie Argumente in Ihrem Code verwenden, legen Sie die **Prozessargumente** fest. Beispiel: false.
-1. Speichern Sie die Änderungen sowohl für den Schritt als auch für das Workflow-Modell (obere linke Ecke des Modell-Editors).
+1. Speichern Sie die Änderungen für den Schritt und das Workflow-Modell (obere linke Ecke des Modell-Editors).
 
 Die Java-Methoden bzw. die Klassen, die die ausführbare Java-Methode implementieren, werden als OSGi-Dienste registriert, sodass Sie Methoden jederzeit während der Laufzeit hinzufügen können.
 
@@ -467,7 +467,7 @@ public class MyProcess implements WorkflowProcess {
 
 ### Verwenden von ECMAScript {#using-ecmascript}
 
-ECMA-Skripte ermöglichen es Skriptentwicklern, Prozessschritte zu implementieren. Die Skripte befinden sich im JCR-Repository und werden von dort aus ausgeführt.
+Mit ECMA-Skripten können Skriptentwickler Prozessschritte implementieren. Die Skripte befinden sich im JCR-Repository und werden von dort aus ausgeführt.
 
 In der folgenden Tabelle sind die Variablen aufgeführt, die unmittelbar für Prozessskripte verfügbar sind und Zugriff auf Objekte der Workflow-Java-API bieten.
 
@@ -777,7 +777,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 }
 ```
 
-## Beispiel: Erstellen eines benutzerspezifischen Schritts {#example-creating-a-custom-step}
+## Beispiel: Erstellen eines benutzerdefinierten Schritts {#example-creating-a-custom-step}
 
 Eine einfache Möglichkeit, mit der Erstellung Ihres eigenen benutzerdefinierten Schritts zu beginnen, besteht darin, einen vorhandenen Schritt aus folgenden Quellen zu kopieren:
 
@@ -803,7 +803,7 @@ Eine einfache Möglichkeit, mit der Erstellung Ihres eigenen benutzerdefinierten
    >
    >Dieser Schritt gilt nicht für den Modell-Editor der klassischen Benutzeroberfläche.
 
-1. Platzieren Sie dann den kopierten Schritt in den Ordner /apps . Beispiel:
+1. Platzieren Sie dann den kopierten Schritt in den Ordner /apps , z. B.:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -892,7 +892,7 @@ Nachher [Erstellen des grundlegenden Schritts](#creating-the-basic-step), defini
 
 1. Konfigurieren Sie die Eigenschaften auf dem Knoten `cq:listeners`.
 
-   Mit dem Knoten `cq:listener` und seinen Eigenschaften können Sie Ereignis-Handler festlegen, die auf Ereignisse im Modell-Editor der Touch-optimierten Benutzeroberfläche reagieren, z. B. wenn ein Schritt auf eine Modellseite gezogen wird oder Schritteigenschaften bearbeitet werden.
+   Die `cq:listener` -Knoten und dessen Eigenschaften können Sie Ereignis-Handler festlegen, die auf Ereignisse im Touch-optimierten UI-Modell-Editor reagieren, z. B. das Ziehen eines Schritts auf eine Modellseite oder Bearbeiten von Schritteigenschaften.
 
    **Relevante Eigenschaften:**
 
@@ -903,7 +903,7 @@ Nachher [Erstellen des grundlegenden Schritts](#creating-the-basic-step), defini
 
    Diese Konfiguration ist für das ordnungsgemäße Funktionieren des Editors von wesentlicher Bedeutung. In den meisten Fällen darf diese Konfiguration nicht geändert werden.
 
-   Wenn Sie jedoch `cq:inherit` auf „true“ festlegen (auf dem Knoten `cq:editConfig`, s. o.), können Sie diese Konfiguration erben, ohne sie explizit in die Schrittdefinition einschließen zu müssen. Wenn keine Vererbung vorliegt, müssen Sie diesen Knoten mit den folgenden Eigenschaften und Werten hinzufügen.
+   Die Einstellung `cq:inherit` auf &quot;true&quot;(im `cq:editConfig` -Knoten (siehe oben) können Sie diese Konfiguration übernehmen, ohne sie explizit in Ihre Schrittdefinition aufnehmen zu müssen. Wenn keine Vererbung vorliegt, müssen Sie diesen Knoten mit den folgenden Eigenschaften und Werten hinzufügen.
 
    In diesem Beispiel wurde die Vererbung aktiviert, sodass wir den Knoten `cq:listeners` entfernen könnten und der Schritt trotzdem funktionieren würde.
 

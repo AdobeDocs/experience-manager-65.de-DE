@@ -9,10 +9,10 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
-workflow-type: ht
-source-wordcount: '2839'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '2836'
+ht-degree: 98%
 
 ---
 
@@ -214,8 +214,7 @@ Geben Sie einen Text ein. Verwenden Sie die Symbolleiste, um die Formatierung zu
 * **Bild**
 Ziehen Sie ein Bild aus dem Content Finder oder klicken Sie, um zu einem Bild zu navigieren. Schneiden Sie es gegebenenfalls zu oder drehen Sie es.
 
-* **Bildeigenschaften** (**Erweiterte Bildeigenschaften**)
-Sie können Folgendes festlegen:
+* **Bildeigenschaften** (**Erweiterte Bildeigenschaften**) Hier können Sie Folgendes angeben:
 
    * **Titel**
 Der Titel des Blocks, der angezeigt wird, wenn Sie mit der Maus darauf zeigen.
@@ -245,9 +244,9 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Text und Bild (Kampagne)�
 
 ### Text und Personalisierung (Kampagne) {#text-personalization-campaign}
 
-Mit der Komponente „Text-und-Personalisierung (Kampagne)“ können Sie über einen WYSIWYG-Editor, dessen Funktionen der [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) bereitstellt, einen Textblock eingeben. Darüber hinaus können Sie mithilfe dieser Komponente Kontextfelder und Personalisierungsblöcke aus Adobe Campaign verwenden. Weitere Informationen hierzu finden Sie unter [Personalisierungen einfügen](/help/sites-authoring/campaign.md#inserting-personalization).
+Mit der Komponente „Text-und-Personalisierung (Kampagne)“ können Sie über einen WYSIWYG-Editor, dessen Funktionen der [Rich-Text-Editor](/help/sites-authoring/rich-text-editor.md) bereitstellt, einen Textblock eingeben. Darüber hinaus können Sie mit dieser Komponente die Kontextfelder und Personalisierungsblöcke verwenden, die in Adobe Campaign verfügbar sind. Siehe auch [Einfügen von Personalisierung](/help/sites-authoring/campaign.md#inserting-personalization).
 
-Über mehrere Symbole können Sie den Text formatieren, darunter Schriftmerkmale, Ausrichtung, Links, Listen und Einzüge: Die Funktionalität ist für [beide Benutzeroberflächen](/help/sites-authoring/editing-content.md) grundsätzlich identisch, Aussehen und Verhalten unterscheiden sich jedoch:
+Mithilfe der Symbole können Sie Ihren Text formatieren, einschließlich Schriftmerkmale, Ausrichtung, Links, Listen und Einzügen. Die Funktionalität ist für [beide Benutzeroberflächen](/help/sites-authoring/editing-content.md) grundsätzlich identisch, Aussehen und Verhalten unterscheiden sich jedoch:
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -427,7 +426,7 @@ Im folgenden Beispiel sehen Sie, wie die Komponente „Fehleranzeige (Campaign)�
 
 ### Ausgeblendeter Abstimmschlüssel (Kampagne) {#hidden-reconciliation-key-campaign}
 
-Mit der Komponente „Ausgeblendeter Abstimmschlüssel (Kampagne)“ können Sie einem Formular ausgeblendete Felder als Teil des Abstimmschlüssels hinzuzufügen.
+Mit der Komponente Ausgeblendeter Abstimmschlüssel (Kampagne) können Sie einem Formular ausgeblendete Felder als Teil des Abstimmschlüssels hinzufügen.
 
 In der Komponente „Ausgeblendeter Abstimmschlüssel (Kampagne)“ können Sie Folgendes konfigurieren:
 

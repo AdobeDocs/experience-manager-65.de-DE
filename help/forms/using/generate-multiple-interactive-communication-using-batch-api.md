@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
-workflow-type: ht
-source-wordcount: '2207'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '2206'
+ht-degree: 98%
 
 ---
 
@@ -171,7 +171,7 @@ Sie kombinieren in einer externen Datenquelle gespeicherte Daten (Datensätze) m
 
 ## Rufen Sie die Batch-API mithilfe von REST-Anfragen auf.
 
-Sie können [die Batch-API](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/index.html) durch REST-Anfragen (Representational State Transfer) aufrufen. Damit können Sie anderen Benutzern einen REST-Endpunkt bereitstellen, um auf die API zuzugreifen und Ihre eigenen Methoden zur Verarbeitung, Speicherung und Anpassung der interaktiven Kommunikation zu konfigurieren. Sie können Ihr eigenes benutzerdefiniertes Java-Servlet entwickeln, um die API auf Ihrer AEM-Instanz bereitzustellen.
+Sie können [die Batch-API](https://helpx.adobe.com/de/experience-manager/6-5/forms/javadocs/index.html) durch REST-Anfragen (Representational State Transfer) aufrufen. Damit können Sie anderen Benutzern einen REST-Endpunkt bereitstellen, über den sie auf die API zugreifen und eigene Methoden zur Verarbeitung, Speicherung und Anpassung der interaktiven Kommunikation konfigurieren können. Sie können Ihr eigenes benutzerdefiniertes Java-Servlet entwickeln, um die API auf Ihrer AEM-Instanz bereitzustellen.
 
 Stellen Sie vor der Bereitstellung des Java-Servlets sicher, dass Sie über eine interaktive Kommunikation und entsprechende Datendateien verfügen. Führen Sie die folgenden Schritte aus, um das Java-Servlet zu erstellen und bereitzustellen:
 

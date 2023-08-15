@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1843'
-ht-degree: 99%
+source-wordcount: '1840'
+ht-degree: 95%
 
 ---
 
@@ -161,7 +161,7 @@ Ein Link zu einer URL (entweder innerhalb der Website oder zu einer externen Adr
 
 ![Hyperlink-Symbol](do-not-localize/chlimage_1-9.png)
 
-Daraufhin wird ein Dialogfeld angezeigt, in dem Sie die Ziel-URL angeben können, außerdem ob sie in einem neuen Fenster geöffnet werden soll.
+In einem Dialogfeld können Sie die Ziel-URL angeben sowie festlegen, ob sie in einem neuen Fenster geöffnet werden soll.
 
 ![cq55_rte_link_use](assets/cq55_rte_link_use.png)
 
@@ -207,7 +207,7 @@ Die Suche beginnt immer an der aktuellen Cursor-Position im Text. Wenn das Ende 
 
 ![cq55_rte_find_use](assets/cq55_rte_find_use.png)
 
-Mit der Option **Ersetzen** können Sie **Suchen** und dann **Ersetzen** auf eine einzelne Instanz des angegebenen Texts oder **Alles ersetzen** auf alle Instanzen des angegebenen Texts innerhalb der aktuellen Komponente anwenden.
+Die **Ersetzen** -Option **Suchen**, dann **Ersetzen** einer einzelnen Instanz mit dem angegebenen Text oder **Alle ersetzen** Instanzen in der aktuellen Komponente.
 
 ![cq55_rte_findreplace_use](assets/cq55_rte_findreplace_use.png)
 

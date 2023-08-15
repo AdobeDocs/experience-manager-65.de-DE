@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b0a544e2-2ce4-48e2-a721-82f481d36004
 docset: aem65
 exl-id: a096eea0-b2fb-4d86-b729-ca47611135b2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1673'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1672'
+ht-degree: 98%
 
 ---
 
@@ -155,6 +155,7 @@ Verwenden Sie die Optionen im Bedienfeld **Meine Filter** zum **Hinzufügen** ![
    * **Aktualisieren**: Aktualisiert den Bericht mit den neuesten Daten im Speicher
 
    * **In CSV exportieren**: Exportieren der Berichtsdaten in eine kommagetrennte Datei.
+
    >[!NOTE]
    >
    >Wenn Sie einen Bericht exportieren, wird das gesamte Suchergebnis in eine CSV-Datei exportiert, nicht nur in die aktuelle Seite
@@ -248,11 +249,6 @@ Sie können die Details eines bestimmten AEM Forms-Prozesses oder einer bestimmt
    * Aufgabenbesitzer
    * Erstellungsdatum der Aufgabenzuweisung
    * Zeitpunkt der Aufgabenaktualisierung
-
-
-
-
-
 
 1. Klicken Sie auf **Zurück zur Prozess-/Aufgabensuche**, um zu dem Suchergebnis zurückzukehren, von dem aus die Prozess-/Aufgabendetails aufgeschlüsselt wurden.
 

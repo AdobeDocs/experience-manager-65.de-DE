@@ -6,22 +6,22 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '406'
-ht-degree: 51%
+source-wordcount: '404'
+ht-degree: 48%
 
 ---
 
 # Erstellen eines individuellen Cloud-Services{#creating-a-custom-cloud-service}
 
-Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-Typen erweitert werden. Auf diese Weise können Sie benutzerdefiniertes Markup strukturiert in die Seite einfügen. Dies ist vor allem für Analytics-Anbieter von Drittanbietern, wie z. B. Google Analytics, CharterBeat usw., nützlich. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf jeder Ebene unterbrochen werden.
+Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-Typen erweitert werden. Auf diese Weise können Sie benutzerdefiniertes Markup strukturiert in die Seite einfügen. Dies ist vor allem für Analytics-Anbieter von Drittanbietern, z. B. Google Analytics, CharterBeat usw., nützlich. Cloud-Services werden von übergeordneten Seiten auf untergeordnete Seiten übernommen. Dabei kann die Übernahme auf jeder Ebene unterbrochen werden.
 
 >[!NOTE]
 >
 >Diese schrittweise Anleitung zum Erstellen eines Cloud Service ist ein Beispiel für die Verwendung von Google Analytics. Alles trifft möglicherweise nicht auf Ihren Anwendungsfall zu.
 
-1. Erstellen Sie in CRXDE Lite einen Knoten unter `/apps`:
+1. Erstellen Sie unter CRXDE Lite einen Knoten unter `/apps`:
 
    * **Name**: `acs`
    * **Typ**: `nt:folder`
@@ -41,7 +41,7 @@ Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-T
    * **Name**: templates
    * **Typ**: `sling:Folder`
 
-1. Rechtsklick auf `/apps/acs/analytics/components`. Wählen Sie **Erstellen...** und dann **Komponente erstellen...** aus. Im Dialogfeld, das sich öffnet, können Sie Folgendes angeben:
+1. Rechtsklick auf `/apps/acs/analytics/components`. Auswählen **Erstellen...** gefolgt von **Komponente erstellen...** Im sich öffnenden Dialogfeld können Sie Folgendes angeben:
 
    * **Bezeichnung**: `googleanalyticspage`
    * **Titel**: `Google Analytics Page`
@@ -119,7 +119,7 @@ Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-T
    * **Eigenschaften**:
 
       * **Name**: `fieldLabel`
-      * **Typ**: Zeichenfolge
+      * **Typ**: String
       * **Wert**: Konto-ID
 
       * **Name**: `fieldDescription`
@@ -208,6 +208,6 @@ Der Standardsatz von Cloud Services kann mit benutzerdefinierten Cloud Service-T
 
    Wählen Sie **Google Analytics Configuration** und klicken Sie auf **Erstellen**.
 
-1. Geben Sie eine **Konto-ID** beispielsweise `AA-11111111-1`. Klicken Sie auf **OK**.
-1. Navigieren Sie zu einer Seite und fügen Sie die neu erstellte Konfiguration in den Seiteneigenschaften unter dem **Cloud Services** Registerkarte.
+1. Geben Sie eine **Konto-ID**, beispielsweise `AA-11111111-1`. Klicken Sie auf **OK**.
+1. Navigieren Sie zu einer Seite und fügen Sie die neu erstellte Konfiguration in den Seiteneigenschaften unter dem **Cloud Service** Registerkarte.
 1. Der Seite wird das benutzerdefinierte Markup hinzugefügt.

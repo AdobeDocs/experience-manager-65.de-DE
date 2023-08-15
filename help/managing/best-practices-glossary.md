@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: f21b0b5cb4246ffb22c9d9a219a622f36741d9b8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6949'
+source-wordcount: '6948'
 ht-degree: 6%
 
 ---
@@ -45,19 +45,19 @@ Stellen Sie sicher, dass alle Rollen die erforderlichen Systemzugriffsstufen erh
 
 Die [Adobe-Sicherheitscheckliste](/help/sites-administering/security-checklist.md) ist die offizielle Checkliste, die bereitgestellt wird, um sicherzustellen, dass Adobe Experience Manager (AEM) bei der Installation sicher ist. Es enthält die Sicherheitsmaßnahmen und Überprüfungsschritte, die Sie durchführen müssen, um die Integrität Ihrer Instanz sicherzustellen.
 
-### Einrichten von Adobe Support Portal-Projekten {#adobe-support-portal-project-set-up}
+### Einrichten von Adobe Support-Portal-Projekten {#adobe-support-portal-project-set-up}
 
-Das Adobe Support Portal ermöglicht es Implementierungspartnern und Kunden, die AEM-Implementierung als Projekt im Support-Portal einzurichten.
+Das Adobe Support-Portal ermöglicht es Implementierungspartnern und Kunden, die AEM-Implementierung als Projekt im Support-Portal einzurichten.
 
-Details können registriert werden; z. B. über die implementierten Technologien und Versionen. Diese sorgen für Transparenz zwischen dem Kunden und der Adobe.
+Details können registriert werden, z. B. über die implementierten Technologien und Versionen. Diese sorgen für Transparenz zwischen dem Kunden und der Adobe.
 
 ### AEM Administratorschulung {#aem-administrator-training}
 
-Schulung für Verwaltungspersonal der Lösung. Siehe [Adobe Training Services](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) für weitere Informationen.
+Schulung für Verwaltungsmitarbeiter der Lösung. Siehe [Adobe-Schulungsdienste](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) für weitere Informationen.
 
-### AEM-Autorenschulung {#aem-author-training}
+### AEM Authoring-Schulung {#aem-author-training}
 
-Schulung für Mitarbeiter, die Inhalte für die Lösung erstellen (Authoring). Siehe [Adobe Training Services](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) für weitere Informationen.
+Schulung für Mitarbeiter, die Inhalte für die Lösung erstellen (Authoring). Siehe [Adobe-Schulungsdienste](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) für weitere Informationen.
 
 ### AEM Zertifizierungsprüfung {#aem-certification-exam}
 
@@ -69,7 +69,7 @@ Stellen Sie sicher, dass die entsprechende Person die entsprechenden [Zertifizie
 
 ### AEM technische Schulung {#aem-technical-training}
 
-Ausbildung der entsprechenden Person; z. B. Entwickler, Architekten, Ingenieure und Geschäftsleute.
+Bereitstellung technischer Schulungen für die entsprechende Person, z. B. Entwickler, Architekten, Ingenieure und Geschäftsleute.
 
 ### Vereinbarung über KPIs, die als Ziele für das Projekt definiert wurden {#agreement-on-kpis-defined-as-goals-for-the-project}
 
@@ -93,8 +93,8 @@ Die [Anwendungsarchitektur](/help/managing/best-practices.md#development-prepara
 
 Der Schwerpunkt liegt auf Folgendem:
 
-* Art und Weise, wie sie miteinander und mit Benutzern interagieren.
-* Die Daten, die von Anwendungen genutzt und erzeugt werden sollen, und nicht von ihrer internen Struktur.
+* Interaktion der Benutzer untereinander und mit den Benutzern.
+* Die Daten, die von Anwendungen genutzt und erzeugt werden sollen, anstatt ihrer internen Struktur.
 
 ### Anwendungsspezifische Wartungsaufgaben definiert {#application-specific-maintenance-tasks-defined}
 
@@ -144,13 +144,13 @@ Diese Strategie definiert ein Framework für wiederverwendbare automatisierte Sk
 * Mehr Testabdeckung
 * erhöhte Testzuverlässigkeit mit Qualitätswiederholungen
 
-### Automatisierte Teststrategie, die mit realistischer und erwarteter Last validiert wurde {#automated-testing-strategy-validated-against-realistic-and-expected-load}
+### Automatisierte Teststrategie, die mit realistischer und erwarteter Auslastung validiert wurde {#automated-testing-strategy-validated-against-realistic-and-expected-load}
 
 Die automatisierte Teststrategie muss entsprechend dem Inhalt und der erwarteten Belastung der Lösung validiert und angepasst werden.
 
 ### Automatisierungsstrategie {#automation-strategy}
 
-Die Automatisierung von Bereitstellungen sorgt für eine schnellere und konsistente Bereitstellung. In der Automatisierungsstrategie wird die Konfiguration solcher Automatisierungsmechanismen beschrieben. einschließlich:
+Die Automatisierung von Bereitstellungen sorgt für eine schnellere und konsistente Bereitstellung. In der Automatisierungsstrategie wird die Konfiguration solcher Automatisierungsmechanismen beschrieben, einschließlich:
 
 * Häufigkeit
 * Zu verwendende Tools
@@ -187,7 +187,7 @@ Ein Falldokument sollte eine klare Definition aller Optionen enthalten und mit e
 
 ### Business Analyst versteht Projektumfang und Erwartungen {#business-analyst-understands-scope-of-project-and-expectations}
 
-Geschäftsanalyst sollten bestätigen, dass sie Folgendes vollständig verstehen:
+Der Business Analyst sollte bestätigen, dass er Folgendes vollständig versteht:
 
 * Umfang des Projekts
 * alle Kundenerwartungen
@@ -226,7 +226,7 @@ Die Kodierungsrichtlinien definieren grundlegende Prinzipien, die die Entwickler
 * Dienstnutzung
 * Bibliotheksverwendung
 
-### Kommunikationshandbuch {#communicate-operations-manual}
+### Betriebshandbuch für Kommunikation {#communicate-operations-manual}
 
 Stellen Sie sicher, dass alle entsprechenden Rollen das Betriebshandbuch erhalten haben.
 
@@ -242,7 +242,7 @@ Stellen Sie sicher, dass alle relevanten Rollen die Versionshinweise erhalten ha
 
 Stellen Sie sicher, dass das Projekt-Team den Projektumfang und die Bereitstellungsanforderungen vollständig kennt und mit ihnen im Einklang steht.
 
-### Kommunizieren von Schulungsmaterial und Benutzerhandbüchern {#communicate-training-materials-and-user-guides}
+### Kommunikation von Schulungsmaterial und Benutzerhandbüchern {#communicate-training-materials-and-user-guides}
 
 Stellen Sie sicher, dass alle entsprechenden Rollen die Schulungsmaterialien und Benutzerhandbücher erhalten.
 
@@ -292,7 +292,7 @@ Ein erster Entwurf des Rechtsvertrags.
 
 Dokumentation der aktuellen Inhaltsarchitektur und -format. Damit wird die zukünftige Inhaltsarchitektur generiert. Es wird auch für das Migrationskonzept verwendet.
 
-### Richtlinie zur Kundensicherung und -wiederherstellung {#customer-backup-and-restore-policy}
+### Richtlinie zur Kundensicherung und Wiederherstellung {#customer-backup-and-restore-policy}
 
 Richtlinien des Kunden bezüglich:
 
@@ -301,7 +301,7 @@ Richtlinien des Kunden bezüglich:
 * Bestätigung, dass das Backup erwartungsgemäß funktioniert
 * Wiederherstellung, wenn ein Fehler vorliegt
 
-### Richtlinien zur Kundenkodierung {#customer-coding-guidelines}
+### Richtlinien für die Kundenkodierung {#customer-coding-guidelines}
 
 Alle Richtlinien/Anforderungen des Kunden, wie die Entwicklung erfolgen soll.
 
@@ -321,7 +321,7 @@ Der Zeitplan, der vom Kunden für Versionen in den Produktionsumgebungen definie
 
 ### Richtlinien und Anforderungen für Kundenberichte {#customer-reporting-policies-and-requirements}
 
-Alle Richtlinien, Anforderungen oder beides, die der Kunde hinsichtlich der Berichterstellung hat. Dazu können gehören:
+Alle Richtlinien, Anforderungen oder beides, die der Kunde in Bezug auf die Berichterstellung hat. Dazu können gehören:
 
 * wie oft bestimmte Berichte bereitgestellt werden sollten
 * Format für bestimmte Berichte
@@ -337,7 +337,7 @@ Der Kunde (Business und IT) verfügt über Richtlinien, die die erforderlichen S
 
 * Anforderungen an die Übergabe einer Risikobewertung.
 * Anforderungen an Durchdringungstests.
-* alle besonderen Sicherheitsanforderungen; wie das Escapen aller Eingabefelder, die Verschlüsselungsnutzung (SSL), Zertifikate sowie die Authentifizierung und Sitzungserstellung.
+* Alle spezifischen Sicherheitsanforderungen, wie z. B. die Maskierung aller Eingabefelder, die Verschlüsselungsnutzung (SSL), Zertifikate sowie Authentifizierung und Sitzungserstellung.
 
 ### Richtlinien für Kundenspezifikationen {#customer-specification-guidelines}
 
@@ -347,12 +347,12 @@ Alle Richtlinien des Kunden, die sich auf Format, Bereitstellung und Abnahme von
 
 Berichte des Kunden an den Qualitätsleiter während des Zeitraums des Benutzerakzeptanztests (UAT).
 
-### Dokumentierte Anpassungen und Hotfixes mit Auswirkungen auf Upgrades {#customizations-and-hotfixes-that-affect-upgrades-documented}
+### Dokumentierte Anpassungen und Hotfixes für Upgrades {#customizations-and-hotfixes-that-affect-upgrades-documented}
 
 Alle angewendeten Anpassungen und/oder angewendeten Hotfixes müssen dokumentiert werden, da sie sich auf zukünftige Upgrades auswirken können:
 
 * AEM können stark an geschäftliche Anforderungen angepasst werden. Alle Anpassungen, die sich auf Upgrades auswirken können, müssen vollständig dokumentiert werden. Zum Beispiel alle wichtigen Änderungen an der Benutzeroberfläche (UI) von AEM.
-* Alle für die aktuelle Lösung erforderlichen Aktualisierungen müssen vollständig dokumentiert sein. Diese können Folgendes umfassen:
+* Alle für die aktuelle Lösung erforderlichen Aktualisierungen müssen vollständig dokumentiert sein. Dazu können gehören:
 
    * Cumulative Fix Packs (CFP)
    * Service Packs (SP)
@@ -363,8 +363,8 @@ Alle angewendeten Anpassungen und/oder angewendeten Hotfixes müssen dokumentier
 
 Berichte oder Sitzungen, die aus dem Benutzerakzeptanztest (UAT) resultieren. Sie sollten detailliert sein:
 
-* gemeldete Probleme
-* Prioritätensetzung
+* die gemeldeten Probleme
+* Prioritätensetzung bei diesen Fragen
 
 ### Standardsicherheit aktiviert {#default-security-enabled}
 
@@ -506,10 +506,10 @@ Vor der Fortführung des Projekts ist ein abgeschlossener und unterzeichneter Ve
 
 Bestätigung, dass die Interessenträger Folgendes vollständig akzeptieren:
 
-* Lösungsfunktionen
+* Lösungsfunktionalität
 * bekannte Probleme in der Lösung
 
-### Aufrufen des Live-Zeitplans {#go-live-schedule}
+### Live-Zeitplan {#go-live-schedule}
 
 Zeitlicher Ablauf und Zeitplan für die erforderlichen Aktivitäten für:
 
@@ -518,13 +518,13 @@ Zeitlicher Ablauf und Zeitplan für die erforderlichen Aktivitäten für:
 
 ### Definierte glückliche Pfade {#happy-paths-defined}
 
-Ein Happy Path ist ein Standardszenario ohne außergewöhnliche oder fehlerhafte Bedingungen. Er besteht aus der Folge von Aktivitäten, die ausgeführt werden, wenn alles wie erwartet funktioniert.
+Ein Happy Path ist ein Standardszenario ohne außergewöhnliche oder fehlerhafte Bedingungen. Er besteht aus der Folge von Aktivitäten, die ausgeführt werden, wenn alles erwartungsgemäß funktioniert.
 
 ### Hardwareschätzungen {#hardware-estimates}
 
 Anfängliche Schätzungen von:
 
-* die Hardware, die für die grundlegende AEM benötigt wird
+* die Hardware, die für die AEM Basisinstallation benötigt wird
 * alle zusätzlichen Anforderungen, basierend auf dem allgemeinen Lösungsentwurf
 
 ### Die Hardware steht zur Erfüllung der Anforderungen zur Verfügung {#hardware-will-be-available-to-fulfill-requirements}
@@ -546,11 +546,11 @@ Das Lösungsdesign auf hoher Ebene erklärt die Architektur, die für die Entwic
 
 ### Hochrangige Systemkarte {#high-level-system-map}
 
-Diese Systemkarte sollte ein allgemeines Diagramm des Systems enthalten. Es unterscheidet sich vom Lösungskontext insofern, als es sich um eine allgemeine Karte aller beteiligten Systeme handelt. Es gibt keine Schnittstellen auf diesem Diagramm.
+Diese Systemkarte sollte ein allgemeines Diagramm des Systems enthalten. Sie unterscheidet sich vom Lösungskontext insofern, als es sich um eine allgemeine Karte aller beteiligten Systeme handelt. Auf diesem Diagramm gibt es keine Schnittstellen.
 
 ### Historische Inhaltsstruktur {#historical-content-structure}
 
-Definition der Inhaltsstruktur des Legacy-Systems. Dies dient als Referenz und auch bei der Vorbereitung der Migrationsstrategie.
+Definition der Inhaltsstruktur des alten Systems. Dies dient als Referenz und auch bei der Vorbereitung der Migrationsstrategie.
 
 ### Historische Leistungs- und historische Leistungs-KPIs {#historical-performance-and-historical-performance-kpis}
 
@@ -629,11 +629,11 @@ Das Implementierungskonzept bietet die Leitlinien für die gesamte Implementieru
 
 Dieses Konzept beschreibt auch die in der Lösung verwendeten Frameworks, Bibliotheken und anderen Artefakte.
 
-### Unterstützung von Adoben über den Zeitplan für die Live-Schaltung informieren {#inform-adobe-support-about-the-go-live-schedule}
+### Informieren der Adobe-Unterstützung über den Zeitplan für die Live-Schaltung {#inform-adobe-support-about-the-go-live-schedule}
 
-Wenden Sie sich an den Support, um sicherzustellen, dass jeder erforderliche Support während der Live-Schaltung aktiviert werden kann.
+Wenden Sie sich an den Adobe-Support , um sicherzustellen, dass jeder erforderliche Support während der Live-Schaltung aktiviert werden kann.
 
-### Erste Erlebnis-Designs {#initial-experience-designs}
+### Erste Erlebnisdesigns {#initial-experience-designs}
 
 Vorläufige Konzepte für die Entwürfe der Erlebnisse.
 
@@ -667,7 +667,7 @@ Details zum alten System sollten erfasst werden, damit Sie wissen, was zurückge
 
 ### Liste der zu verwendenden Entwicklungstools {#list-of-development-tools-to-be-used}
 
-einen Überblick über die bei der Implementierung verwendeten Tools; Die Instrumente sollten Folgendes umfassen:
+Ein Überblick über die bei der Implementierung verwendeten Tools; die Tools sollten Folgendes umfassen:
 
 * Dokumentationstools
 * Problemverfolgungswerkzeuge
@@ -676,7 +676,7 @@ einen Überblick über die bei der Implementierung verwendeten Tools; Die Instru
 
 ### Liste der Benutzer, die Zugriff auf das Adobe Support-Portal benötigen {#list-of-users-that-require-access-to-adobe-support-portal}
 
-Eine Liste aller Benutzer und Rollen, die Zugriff auf das Adobe Support Portal benötigen.
+Eine Liste aller Benutzer und Rollen, die Zugriff auf das Adobe Support-Portal benötigen.
 
 Die Liste besteht normalerweise aus dem Lösungsarchitekten und/oder IT-Personal des Kunden.
 
@@ -698,14 +698,14 @@ Testen und aktivieren Sie AEM Wartungsaufgaben wie:
 
 ### Migrationsplan {#migration-plan}
 
-die Migration dokumentieren; einschließlich
+Dokumentieren Sie die Migration, einschließlich
 
 * Zeitleiste für die Migration
 * Content-Wartungsplan gemäß der Migrationsstrategie
 
 ### Migrationsstrategie {#migration-strategy}
 
-Eine vollständige Beschreibung des vorhandenen Inhalts, der Inhaltsarchitektur und der Formate, die der neuen Lösung zugeordnet sind. Sie sollte Folgendes umfassen:
+Eine vollständige Beschreibung des vorhandenen Inhalts, der Inhaltsarchitektur und der der neuen Lösung zugeordneten Formate. Sie sollte Folgendes umfassen:
 
 * technische Details der automatisierten Migration, sofern möglich
 * Nach der Migration durchzuführende Rauchtests zur Validierung des migrierten Inhalts
@@ -742,7 +742,7 @@ Sie sollten die Verwendung überwachen, indem Sie:
 
 Überwachen Sie alle Verbindungen zwischen der Lösung und externen Systemen:
 
-* Traffic-Rate
+* Verkehrsrate
 * Spitzen
 * Stabilität
 
@@ -764,7 +764,7 @@ Sie sollten die Verwendung überwachen, indem Sie:
 
 ### Überwachung - System {#monitoring-system}
 
-Überwachen des Gesamtsystems; Beispiel:
+Überwachen Sie das gesamte System, z. B.:
 
 * Verfügbarkeit
 * durchschnittliche Leistung
@@ -777,13 +777,13 @@ Sie sollten die Verwendung überwachen, indem Sie:
 
 ### Überwachungskonzept {#monitoring-concept}
 
-die Überwachungskonzepte, die auf Ihre Lösung angewendet werden sollen; mit:
+Die Überwachungskonzepte, die auf Ihre Lösung angewendet werden sollen, einschließlich:
 
 * AEM Standardüberwachung
 * Systemüberwachung
 * kundenspezifische Überwachungsanforderungen
 
-### Überwachung potenzieller Schwachpunkte {#monitoring-potential-weak-points}
+### Überwachen potenzieller Schwachpunkte {#monitoring-potential-weak-points}
 
 Bestimmte Punkte, die für einen Fehler anfällig sein könnten, sollten identifiziert und definiert werden. Die damit verbundenen Überwachungsaufgaben sollten ebenfalls festgelegt werden.
 
@@ -793,7 +793,7 @@ Beispiele sind (unter anderem):
 * Transaktionsverarbeitung
 * Integrationspunkte
 
-### Überwachungspolitik für Systemtechniker {#monitoring-policy-communicated-to-system-engineer}
+### Überwachungspolitik an Systemtechniker weitergeleitet {#monitoring-policy-communicated-to-system-engineer}
 
 Stellen Sie sicher, dass die Systemtechniker und Betriebspersonal alle Überwachungsrichtlinien kennen und verstehen.
 
@@ -956,7 +956,7 @@ Der Projektmanager koordiniert alle Rollen, die für die Veröffentlichung in de
 Versionshinweise sind Teil der Dokumentation für die Version. Die Versionshinweise sollten Folgendes umfassen:
 
 * Voraussetzungen
-* Enthaltene Anforderungen
+* einschließlich
 * gelöste Probleme
 * bekannte Probleme in der Version
 
@@ -972,7 +972,7 @@ Die endgültige Version wird ausgeführt und ist in der Produktion aktiv.
 
 ### Relevante Vertragsbedingungen {#relevant-contract-terms}
 
-Spezifische Vertragsbedingungen hervorheben, die für die Durchführung des Projekts relevant sind; wie vertragliche Meilensteine, Rechnungszeiträume oder Personalanforderungen.
+Spezifische Vertragsbedingungen hervorheben, die für die Durchführung des Projekts relevant sind, z. B. vertragliche Meilensteine, Rechnungszeiträume oder Personalanforderungen.
 
 ### Berichtsfrequenz {#reporting-cadence}
 
@@ -984,7 +984,7 @@ Daten werden nie in einer Tar-Datei überschrieben. Die Festplattenauslastung st
 
 Um der immer größer werdenden Größe des Repositorys entgegenzuwirken, wird eine Optimierungsstrategie eingeführt, um veraltete Daten zu entfernen.
 
-### Anforderung zum Einrichten des Projektabschnitts im Adobe Support-Portal {#request-for-setting-up-project-section-in-adobe-support-portal}
+### Anfrage zum Einrichten des Projektabschnitts im Adobe Support-Portal {#request-for-setting-up-project-section-in-adobe-support-portal}
 
 Die offizielle Anfrage zum Einrichten Ihres Projekts im Adobe Support-Portal.
 
@@ -1066,7 +1066,7 @@ Eine allgemeine Übersicht über die Sicherheitseinstellungen der folgenden Komp
 
 ### Aufgeführte und bewertete Sicherheitsprobleme {#security-issues-listed-and-assessed}
 
-alle Sicherheitsprobleme der aufgelisteten und bewerteten Lösung; einschließlich Aufwandsschätzungen.
+Alle Sicherheitsprobleme der Lösung aufgelistet und bewertet, einschließlich Aufwandsschätzungen.
 
 ### Sicherheitsabnahme von Geschäftspartnern {#security-sign-off-from-business-stakeholders}
 
@@ -1090,9 +1090,9 @@ Sie werden nach der Installation oder Bereitstellung in jeder Umgebung ausgefüh
 
 Rauchtests sollten auf allen Systemen durchgeführt werden, um sicherzustellen, dass die grundlegenden Funktionen der Lösung bei der Installation oder Bereitstellung in jeder Umgebung ordnungsgemäß funktionieren.
 
-### Software Architecture Strategy {#software-architecture-strategy}
+### Strategie zur Softwarearchitektur {#software-architecture-strategy}
 
-die allgemeine Strategie für die Softwarearchitektur; einschließlich Diensten, Servlets, Frameworks und anderen Implementierungsentscheidungen.
+Die allgemeine Strategie für die Softwarearchitektur, einschließlich Services, Servlets, Frameworks und anderen Implementierungsentscheidungen.
 
 ### Lösungsüberprüfungsgremium eingerichtet und Sitzungskatalog festgelegt {#solution-review-board-established-and-meeting-cadence-set}
 
@@ -1104,7 +1104,7 @@ Die Kommission hält regelmäßig Sitzungen ab, um die aktuellen Anforderungen u
 
 Installationsanweisungen für die Lösung sowie grundlegende Betriebsaufgaben, die bei der Installation ausgeführt werden.
 
-### Abnahme der Lösung und Annahme {#solution-sign-off-and-acceptance-process}
+### Lösungsanmeldung und Akzeptanzvorgang {#solution-sign-off-and-acceptance-process}
 
 Der Abnahme- und Akzeptanzprozess beschreibt die Kriterien, die erfüllt sein müssen, bevor die Lösung in eine produktive Umgebung freigegeben werden kann.
 
@@ -1120,7 +1120,7 @@ Details zu speziellen Funktionen, die außerhalb des normalen Entwicklungsbereic
 
 ### Spezifikationsrichtlinien {#specification-guidelines}
 
-Alle Richtlinien des Kunden zur Durchführung der Spezifikation.
+Alle Richtlinien des Kunden, wie die Spezifikation durchgeführt werden soll.
 
 ### Definierter und kommunizierter Prozess zur Überprüfung und Genehmigung von Spezifikationen {#specification-review-and-approval-process-defined-and-communicated}
 
@@ -1130,7 +1130,7 @@ Es sollte ein eindeutiges Verfahren für die Abnahme von Spezifikationen durch d
 
 Interne Mitarbeiter, die für die Verwaltung der Lösung geschult werden müssen.
 
-### Für die Autoren- und Endbenutzerschulung ausgewählte Mitarbeiter {#staff-selected-for-author-and-end-user-training}
+### Für die Autoren- und Endanwenderschulung ausgewählte Mitarbeiter {#staff-selected-for-author-and-end-user-training}
 
 Interne Mitarbeiter, die für die Bearbeitung der Lösung geschult werden müssen.
 
@@ -1140,7 +1140,7 @@ Interessenträger sind die wichtigsten Personen und/oder Rollen, die ein erhebli
 
 Die Projektbeteiligten können intern und/oder extern sein.
 
-### Interessengruppen sind sich der Erfolgsdefinitionen und -kriterien bewusst {#stakeholders-are-aware-of-success-definitions-and-criteria}
+### Die Interessengruppen kennen Erfolgsdefinitionen und -kriterien {#stakeholders-are-aware-of-success-definitions-and-criteria}
 
 Bestätigung, dass alle Interessengruppen außerhalb des eigentlichen Implementierungsteams über Folgendes informiert sind:
 
@@ -1165,15 +1165,15 @@ Der Kunde, der Projektsponsor und der Projektmanager oder Berater sollten Folgen
 Diese werden verwendet, um sicherzustellen, dass die Erfolgskriterien erfüllt sind:
 
 * Als Grundlage für KPIs.
-* Bei Entscheidungen während der Implementierung.
+* Bei Entscheidungen während der gesamten Implementierung.
 
 ### Unterstützung bei der Validierung gemeldeter Probleme {#support-in-validation-of-reported-issues}
 
 Ein Teil der Verantwortung des Qualitätsleiters besteht darin, sicherzustellen, dass Ressourcen zur Verfügung stehen, um Benutzer beim Testen zu unterstützen. So können Sie beispielsweise den Benutzer beim Testen, beim Reporting von Problemen und bei der Überprüfung der Probleme in der Testumgebung unterstützen.
 
-### Support-Prozesse und Zugriff auf das Support-Portal für Adoben {#support-processes-and-access-to-adobe-support-portal}
+### Support-Prozesse und Zugriff auf das Adobe-Support-Portal {#support-processes-and-access-to-adobe-support-portal}
 
-Der Zugriff auf das Support-Portal für Adoben ist für die Übermittlung von Tickets zu produktbasierten Problemen, die während der Implementierung auftreten können, von entscheidender Bedeutung.
+Der Zugriff auf das Adobe Support-Portal ist für die Übermittlung von Tickets zu produktbasierten Problemen, die während der Implementierung auftreten können, von entscheidender Bedeutung.
 
 Der Zugriff sollte wichtigen Mitgliedern des Teams gewährt werden.
 
@@ -1183,7 +1183,7 @@ Ein erster Vorschlag und eine Definition der Architektur für alle Umgebungen de
 
 ### Dokumentation zur Systemarchitektur {#system-architecture-documentation}
 
-Ein Dokument, das die Systemarchitektur detailliert beschreibt; , einschließlich Schnittstellen, Netzwerkstandort und Integrationen für alle Umgebungen, unter anderem.
+Ein Dokument, das die Systemarchitektur detailliert beschreibt, einschließlich Schnittstellen, Netzwerkstandort und Integrationen für alle Umgebungen, unter anderem Informationen.
 
 ### Sicherheitskonzept der Systemarchitektur {#system-architecture-security-concept}
 
@@ -1258,7 +1258,7 @@ Stellen Sie sicher, dass die Testumgebung bereit ist und automatisierte Bereitst
 
 ### Testberichte {#test-reports}
 
-Berichte mit detaillierten Angaben zu den Testergebnissen; einschließlich:
+Berichte mit detaillierten Angaben zu den Testergebnissen, darunter:
 
 * aufgetretene Mängel
 * Status der ausgeführten Testfälle
@@ -1279,7 +1279,7 @@ Automatisierungs-Suite und -Tools für die Anwendungsfallautomatisierung und and
 
 ### Testkonzept {#testing-concept}
 
-Das Testkonzept ist die allgemeine Testumgebung für das Projekt. einschließlich Tests zu Qualitätssicherung, UAT, Leistung, Sicherheit und Integration.
+Das Testkonzept ist die allgemeine Übersicht über Tests für das Projekt, einschließlich QA, UAT, Leistung, Sicherheit und Integrationstests.
 
 ### Testpläne {#testing-plans}
 
@@ -1318,7 +1318,7 @@ Erforderliche Zugriffsrechte, die den jeweiligen Rollen gewährt werden, die mit
 Definiert:
 
 * Anwendungsfälle für das Testen der Integrationen
-* Funktionen im Zusammenhang mit Anwendungen von Drittanbietern
+* Funktionen für Anwendungen von Drittanbietern
 
 ### Schwellendefinition {#threshold-definition}
 
@@ -1338,7 +1338,7 @@ Dies sollte die Projektzeitpläne und vertraglichen Meilensteine definieren, die
 
 ### Gesamtprojektaufwand {#total-project-efforts}
 
-Sämtliche Aufwandsschätzungen, die aus jedem Interessenten des Projekts stammen, sollten konsolidiert werden. einschließlich Aufwand, Entwicklung, System-Engineering, Architektur und Tests.
+Sämtliche Aufwandsschätzungen, die aus jedem der Leads im Projekt stammen, sollten konsolidiert werden, einschließlich Aufwand, Entwicklung, System-Engineering, Architektur- und Testbemühungen.
 
 Ist in der Vereinbarung ein Unterstützungsniveau enthalten, sollten auch Unterstützungs- und Einsatzbemühungen einbezogen werden.
 
@@ -1408,7 +1408,7 @@ Die Spezifikationen der einzelnen Workflows sollten (mindestens) Folgendes umfas
 
 ### Workflow-Konzept {#workflows-concept}
 
-Workflows ermöglichen die Automatisierung AEM Aktivitäten. Das Workflow-Konzept beschreibt Folgendes:
+Mit Workflows können Sie AEM Aktivitäten automatisieren. Das Workflow-Konzept beschreibt Folgendes:
 
 * die Prozesse, die automatisiert werden müssen
-* die betroffenen Dienste und Rollen in AEM
+* die Dienste und Rollen in AEM, die betroffen sein werden

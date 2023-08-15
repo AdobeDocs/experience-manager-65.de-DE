@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
-workflow-type: ht
-source-wordcount: '5390'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '5388'
+ht-degree: 98%
 
 ---
 
@@ -298,7 +298,7 @@ Möchten Sie Targeting-Inhalte bearbeiten, müssen Sie zunächst auf **Targeting
    >Administratoren können unter **festlegen, ob diese Einstellung zwingend vorgenommen werden muss.https://&lt;Host>:&lt;Port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
    >
    >
-   >Um Benutzer zur Eingabe eines Pfads aufzufordern, aktivieren Sie das Kontrollkästchen **Ortsangabe erzwingen**.
+   Um Benutzer zur Eingabe eines Pfads aufzufordern, aktivieren Sie das Kontrollkästchen **Ortsangabe erzwingen**.
 
 1. Wählen Sie das Erlebnis aus, für das Sie das Angebot erstellen möchten.
 1. Erstellen Sie das Angebot:
@@ -398,7 +398,7 @@ Konvertieren Sie ein Bibliotheksangebot in ein individuelles Angebot, um das Ang
 
 ## Target: Konfigurieren der Zielgruppen {#target-configuring-the-audiences}
 
-Im Target-Schritt des [Targeting-Verfahrens](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) werden Zielgruppen mit den Erlebnissen verknüpft, die Sie während des Erstellungsschritts bearbeitet haben. Auf der Target-Seite sind die Zielgruppen aufgeführt, die durch das Erlebnis angesprochen werden sollen. Sie können die Zielgruppe für jedes Erlebnis festlegen oder ändern. Wenn Sie Adobe Target verwenden, können Sie A/B-Tests erstellen, mit denen Sie einen Prozentsatz des Traffics einer Zielgruppe zu einem bestimmten Erlebnis leiten.
+Im Target-Schritt des [Targeting-Verfahrens](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) werden Zielgruppen mit den Erlebnissen verknüpft, die Sie während des Erstellungsschritts bearbeitet haben. Auf der Target-Seite sind die Zielgruppen aufgeführt, die durch das Erlebnis angesprochen werden sollen. Sie können die Zielgruppe für jedes Erlebnis festlegen oder ändern. Wenn Sie Adobe Target verwenden, können Sie auch A/B-Tests erstellen, mit denen Sie einen bestimmten Prozentsatz des Traffics für eine Zielgruppe auf ein bestimmtes Erlebnis ausrichten können.
 
 ### Wenn Sie AEM-Targeting oder Adobe Target (Erlebnis-Targeting) verwenden …    {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -580,13 +580,13 @@ So konfigurieren Sie Ziele und Einstellungen bei Verwendung von Adobe Target:
 
    >[!NOTE]
    >
-   >Sie müssen mindestens eine Zielmetrik definieren.
+   Sie müssen mindestens eine Zielmetrik definieren.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
    >
-   >Sollten Daten Ihrer Metrik fehlen, wird die zugehörige Metrik rot umrandet.
+   Sollten Daten Ihrer Metrik fehlen, wird die zugehörige Metrik rot umrandet.
 
 1. Klicken Sie auf **Neue Metrik hinzufügen**, um weitere Erfolgsmetriken zu konfigurieren.
 
@@ -594,7 +594,7 @@ So konfigurieren Sie Ziele und Einstellungen bei Verwendung von Adobe Target:
 
    >[!NOTE]
    >
-   >Sie können andere Ziele entfernen, indem Sie entweder auf die drei Punkte oder auf **Löschen** klicken oder tippen. Für AEM müssen Sie mindestens ein Ziel definieren.
+   Sie können andere Ziele entfernen, indem Sie entweder auf die drei Punkte oder auf **Löschen** klicken oder tippen. Für AEM müssen Sie mindestens ein Ziel definieren.
 
 1. Möchten Sie weitere Steuermöglichkeiten für die Messung von Erfolgsmetriken nutzen, klicken oder tippen Sie auf **Erweiterte Einstellungen**.
 1. Klicken Sie auf **Speichern**.
@@ -617,7 +617,7 @@ Wenn beim Laden eines Profils unerwarteter Inhalt auf der Seite angezeigt wird, 
 
 >[!NOTE]
 >
->Wenn Sie A/B-Tests verwenden, werden bei der Simulation von Erlebnissen basierend auf dem Traffic-Prozentsatz angezeigt. Dies wird von Adobe Target kontrolliert, was zu unerwarteten Ergebnissen für Autorinnen bzw. Autoren führen kann. (Die Aktivität „_author“ wird mit bestimmten Eigenschaften synchronisiert, die während der Simulation eine Neubewertung ermöglichen.) Autorinnen bzw. Autoren müssen möglicherweise aktualisiert werden, um die anderen Erlebnisse basierend auf ihren Traffic-Einstellungen anzuzeigen.
+Wenn Sie A/B-Tests verwenden, werden bei der Simulation von Erlebnissen basierend auf dem Traffic-Prozentsatz angezeigt. Dies wird von Adobe Target kontrolliert, was zu unerwarteten Ergebnissen für Autorinnen bzw. Autoren führen kann. (Die Aktivität „_author“ wird mit bestimmten Eigenschaften synchronisiert, die während der Simulation eine Neubewertung ermöglichen.) Autorinnen bzw. Autoren müssen möglicherweise aktualisiert werden, um die anderen Erlebnisse basierend auf ihren Traffic-Einstellungen anzuzeigen.
 
 Verwenden Sie die folgenden Tools, um das Besuchererlebnis zu simulieren:
 
@@ -711,7 +711,7 @@ Wenn Sie Adobe Target als Engine auswählen:
 
 >[!NOTE]
 >
->Wenn Sie eine Komponente auswählen und als Ziel festlegen, ersetzt AEM auch die Komponente und injiziert eine Adobe Target-Komponente. (Die Adobe Target-Komponente wird nicht nur verwendet, wenn Sie sie der Seite manuell hinzufügen, sondern auch, wenn Sie eine vorhandene Komponente als Ziel auswählen.)
+Wenn Sie eine Komponente auswählen und als Ziel festlegen, ersetzt AEM auch die Komponente und injiziert eine Adobe Target-Komponente. (Die Adobe Target-Komponente wird nicht nur verwendet, wenn Sie sie der Seite manuell hinzufügen, sondern auch, wenn Sie eine vorhandene Komponente als Ziel auswählen.)
 
 Wenn Sie Client Context (clientseitig) als Engine auswählen:
 

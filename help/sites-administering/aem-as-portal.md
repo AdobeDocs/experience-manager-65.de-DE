@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6088'
+source-wordcount: '6086'
 ht-degree: 27%
 
 ---
@@ -47,7 +47,7 @@ Informationen zum Konfigurieren AEM Inhalts für die Anzeige in einem Portal fin
 
 >[!CAUTION]
 >
->Das AEM Portal Director ist ab AEM 6.4 veraltet. Siehe [Eingestellte und entfernte Funktionen](https://helpx.adobe.com/de/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>Die AEM Portal Director wird ab AEM 6.4 nicht mehr unterstützt. Siehe [Eingestellte und entfernte Funktionen](https://helpx.adobe.com/de/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
 ## Verwalten des AEM Content Portlet {#administering-the-aem-content-portlet}
 
@@ -110,7 +110,7 @@ Das Portlet kann mit den folgenden Voreinstellungen konfiguriert werden:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Dies ist der Startpfad des Portlets: definiert den anfänglich angezeigten Inhalt.</p> <p><strong>Wichtig</strong>: Wenn das Portlet für die Verbindung mit AEM Autoren- und Veröffentlichungsinstanzen konfiguriert ist, die auf einem anderen Kontextpfad als<strong> /</strong>, müssen Sie die Kraft aktivieren <strong>CQUrlInfo</strong> in der HTML Library Manager-Konfiguration dieser AEM Instanzen (z. B. über die Felix Webconsole) funktioniert die Bearbeitung nicht und das Dialogfeld "Voreinstellungen"wird nicht angezeigt.</p> </td>
+   <td><p>Dies ist der Startpfad des Portlets: Er definiert den anfänglich angezeigten Inhalt.</p> <p><strong>Wichtig</strong>: Wenn das Portlet für die Verbindung mit AEM Autoren- und Veröffentlichungsinstanzen konfiguriert ist, die auf einem anderen Kontextpfad als<strong> /</strong>, müssen Sie die Kraft aktivieren <strong>CQUrlInfo</strong> in der HTML Library Manager-Konfiguration dieser AEM Instanzen (z. B. über die Felix Webconsole) funktioniert die Bearbeitung nicht und das Dialogfeld "Voreinstellungen"wird nicht angezeigt.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -125,7 +125,7 @@ Das Portlet kann mit den folgenden Voreinstellungen konfiguriert werden:
    <td>Standardmäßig wird eine Symbolleiste innerhalb des Inhalts-Portlets gerendert, um Verwaltungsfunktionen zu nutzen. Durch Deaktivieren dieser Option wird keine Symbolleiste gerendert.</td>
   </tr>
   <tr>
-   <td>urlParameterNames</td>
+   <td>urlParameterName</td>
    <td><p>Liste der alternativen URL-Parameternamen, die die neue Inhalts-URL enthalten können, die für das Portlet angezeigt werden soll. Die Liste wird von oben nach unten verarbeitet, der erste Parameter, der einen Wert enthält, wird verwendet. Wenn keine URL gefunden wird, wird der Standard-URL-Parameter verwendet. Die bereitgestellte URL wird unverändert ohne weitere Änderungen verwendet.</p> <p>Diese Einstellung erfolgt pro bereitgestelltem Portlet. Es dient auch der globalen Konfiguration einiger URL-Parameter in der OSGi-Konfiguration für die "Day Portal Director Portlet Bridge".</p> </td>
   </tr>
   <tr>
@@ -239,7 +239,7 @@ Das Portal ist der treibende Authentifizierungsmechanismus. Sie können sich bei
 
 In diesem Abschnitt werden die verfügbaren Authentifizierungsmodi beschrieben, die das Portlet für die Kommunikation mit den zugrunde liegenden AEM WCM-Instanzen verwenden kann.
 
-Standardmäßig werden keine Benutzerinformationen an die Veröffentlichungsinstanz der AEM gesendet. der Inhalt wird immer als anonymer Benutzer angezeigt. Wenn benutzerspezifische Informationen von AEM bereitgestellt werden sollen oder eine Benutzerauthentifizierung für die Veröffentlichung erforderlich ist, muss dies aktiviert sein.
+Standardmäßig werden keine Benutzerinformationen an die Veröffentlichungsinstanz von AEM gesendet. Der Inhalt wird immer als anonymer Benutzer angezeigt. Wenn benutzerspezifische Informationen von AEM bereitgestellt werden sollen oder eine Benutzerauthentifizierung für die Veröffentlichung erforderlich ist, muss dies aktiviert sein.
 
 #### Zugriff auf die Authentifizierungskonfiguration des Portlets {#accessing-the-portlet-s-authentication-configuration}
 
@@ -337,7 +337,7 @@ Um die einmalige Anmeldung in AEM WCM zu aktivieren, greifen Sie auf den entspre
    |---|---|---|
    | Cookie-Namen | cqpsso | Name des vom Portlet bereitgestellten Cookies, wie in der OSGi-Konsole des Portlets konfiguriert. |
 
-1. Klicken **Speichern** um die einmalige Anmeldung zu aktivieren. SSO ist jetzt das primäre Authentifizierungsschema.
+1. Klicks **Speichern** um die einmalige Anmeldung zu aktivieren. SSO ist jetzt das primäre Authentifizierungsschema.
 
 Bei jeder Anfrage, die AEM WCM erhält, wird zunächst die SSO-basierte Authentifizierung versucht. Bei einem Fehler wird ein Fallback zum üblichen grundlegenden Authentifizierungsschema durchgeführt. Daher bleiben normale Verbindungen zu AEM WCM ohne SSO möglich.
 
@@ -397,11 +397,11 @@ Um die Administrationsseite der Website zu öffnen oder eine Seite vom Portlet a
 
 Einige Funktionen des Portlets sind durch Privilegien geschützt. Der aktuelle Benutzer muss über diese Berechtigung verfügen, um auf diese Funktion zugreifen zu können. Folgende Berechtigungen sind vordefiniert:
 
-* &quot;toolbar&quot;: Dies ist die allgemeine Berechtigung zum Anzeigen/Verwenden der Symbolleiste im Portlet.
+* &quot;toolbar&quot; : Dies ist die allgemeine Berechtigung zum Anzeigen/Verwenden der Symbolleiste im Portlet.
 * &quot;prefs&quot;: Wenn der Benutzer über diese Berechtigung verfügt, kann der Benutzer die Voreinstellungen des Portlets anzeigen/ändern.
-* &quot;cq-author:edit&quot;: Mit dieser Berechtigung kann der Benutzer die Bearbeitungsansicht des Inhalts aufrufen.
-* &quot;cq-author:preview&quot;: Mit dieser Berechtigung kann der Benutzer die Vorschau anzeigen.
-* &quot;cq-author:siteadmin&quot;: Mit dieser Berechtigung kann der Benutzer den Siteadmin in AEM öffnen.
+* &quot;cq-author:edit&quot; : Mit dieser Berechtigung kann der Benutzer die Bearbeitungsansicht des Inhalts aufrufen.
+* &quot;cq-author:preview&quot; : Mit dieser Berechtigung kann der Benutzer die Vorschau anzeigen.
+* &quot;cq-author:siteadmin&quot;: Mit dieser Berechtigung kann der Benutzer den Site-Administrator in AEM öffnen.
 
 Der beste Ansatz zur Verwaltung der Berechtigungen besteht darin, Portalrollen zu verwenden und diesen Berechtigungen Rollen zuzuweisen. Dies kann über eine OSGi-Konfiguration erfolgen. Der &quot;Day Portal Director Privilege Manager&quot;kann mit einer Reihe von Rollen für jede Berechtigung konfiguriert werden. Wenn der Benutzer über eine der Rollen verfügt, hat der Benutzer die entsprechende Berechtigung.
 
@@ -419,13 +419,13 @@ Die bereitgestellte AEM Portlet-Anwendung startet einen OSGi-Container in der We
 
 Die Symbolleiste und ihre Schaltflächen sind konfigurierbar und können angepasst werden. Sie können der Symbolleiste eigene Schaltflächen hinzufügen oder festlegen, welche Schaltflächen in welchem Modus angezeigt werden. Jede Schaltfläche ist ein OSGi-Dienst, der über eine OSGi-Konfiguration konfiguriert werden kann.
 
-Die OSGi-Web-Konsole listet alle Schaltflächenkonfigurationen auf der **Konfiguration** Registerkarte. Für jede Schaltfläche können Sie festlegen, in welchem Modus diese Schaltfläche angezeigt wird. Dadurch können Sie eine Schaltfläche deaktivieren, indem Sie beispielsweise alle Modi entfernen.
+Die OSGi-Web-Konsole listet alle Schaltflächenkonfigurationen auf der **Konfiguration** Registerkarte. Für jede Schaltfläche können Sie festlegen, in welchem Modus diese Schaltfläche angezeigt wird. Auf diese Weise können Sie eine Schaltfläche deaktivieren, indem Sie beispielsweise alle Modi entfernen.
 
 Standardmäßig verwendet das AEM-Inhalts-Portlet die Inline-Bearbeitungsfunktion. Wenn Sie jedoch lieber zur Bearbeitung in die AEM-Autoreninstanz wechseln möchten, aktivieren Sie die **SiteAdmin-Schaltfläche** und **Schaltfläche &quot;ContentFinder&quot;**, aber deaktivieren Sie die **Schaltfläche &quot;Bearbeiten&quot;**. Vergewissern Sie sich in diesem Fall, dass die PIN-Authentifizierung in AEM korrekt konfiguriert ist.
 
 Das Symbolleistenlayout des Portlets kann angepasst werden, indem ein Bundle über die Felix Web Console des Portlets installiert wird, die benutzerdefinierte CSS/HTML an einem vordefinierten Speicherort enthält.
 
-#### Bundle-Struktur {#bundle-structure}
+#### Bundlestruktur {#bundle-structure}
 
 Im Folgenden finden Sie ein Beispiel für eine Bundle-Struktur:
 
@@ -468,7 +468,7 @@ Die Tatsache, dass sich die HTML/CSS/images im Ordner /com/day/cq/portlet/toolba
 
 Sie können sie mit einem Tool wie Maven erstellen oder eine solche JAR-Datei manuell mit dem entsprechenden Header erstellen, wie in diesem Abschnitt gezeigt.
 
-#### Portlet-Symbolleistenansichten {#portlet-toolbar-views}
+#### Ansichten der Portlet-Symbolleiste {#portlet-toolbar-views}
 
 Die Symbolleiste des Portlets weist im Grunde zwei Ansichtsstatus auf. Jede Ansicht und die zugehörigen Schaltflächen können mit einer entsprechenden HTML-Datei angepasst werden.
 
@@ -484,14 +484,14 @@ Die Veröffentlichungsansicht verfügt nur über eine Schaltfläche, mit der die
 
 #### Verwaltungsansicht {#manage-view}
 
-Die Verwaltungsansicht verfügt über vier Schaltflächen: Bearbeiten, Registerkarte Websites, Aktualisieren und Zurück. Die Verwaltungsansicht wird im [vorherigen Bundle](/help/sites-deploying/configuring-osgi.md#bundles) durch die Datei manage.html repräsentiert. Im HTML können Sie die folgenden Platzhalter verwenden, die beim Rendern durch das Portlet mit dem entsprechenden Inhalt ersetzt werden:
+Die Verwaltungsansicht verfügt über vier Schaltflächen: &quot;Bearbeiten&quot;, &quot;Websites&quot;, &quot;Aktualisieren&quot;und &quot;Zurück&quot;. Die Verwaltungsansicht wird im [vorherigen Bundle](/help/sites-deploying/configuring-osgi.md#bundles) durch die Datei manage.html repräsentiert. Im HTML können Sie die folgenden Platzhalter verwenden, die beim Rendern durch das Portlet mit dem entsprechenden Inhalt ersetzt werden:
 
 #### Verwalten von Platzhaltern in der Ansicht {#manage-view-placeholders}
 
 | Platzhalter-Zeichenfolge | Beschreibung |
 |---|---|
 | {buttonEdit} | Der Platzhalter wird durch die Schaltfläche **Bearbeiten** ersetzt, mit der Sie die aktuelle Seite im AEM-Bearbeitungsmodus in einem neuen Fenster öffnen. |
-| {buttonWebsites tab} | Platzhalter, ersetzt durch eine Schaltfläche, mit der die Registerkarte &quot;Websites&quot;von AEM WCM geöffnet wird. |
+| {buttonWebsites tab} | Platzhalter, ersetzt durch eine Schaltfläche, die die Registerkarte &quot;Websites&quot;von AEM WCM öffnet. |
 | {buttonRefresh} | Aktualisiert die aktuelle Ansicht. |
 | {buttonBack} | Wechselt das Portlet wieder in die Veröffentlichungsansicht. |
 
@@ -562,7 +562,7 @@ Optionale OSGi-Dienste können implementiert werden, um verschiedene Teile des P
  <tbody>
   <tr>
    <td>RequestTracker</td>
-   <td>Der Anforderungs-Tracker wird benachrichtigt, sobald der Inhalt vom Portlet angezeigt wird. Dadurch können Sie die Aufrufe des Portlets verfolgen.</td>
+   <td>Der Anforderungs-Tracker wird benachrichtigt, sobald der Inhalt vom Portlet angezeigt wird. Auf diese Weise können Sie die Aufrufe des Portlets verfolgen.</td>
   </tr>
   <tr>
    <td>InvocationContextListener</td>
@@ -664,7 +664,7 @@ Die AEM Quickstart-JAR-Datei enthält die Portlet-Komponentendateien. Um die Dat
 1. Kopieren Sie cq-portlet-director-sharedlibs-x.x.x.jar auf Ihre Festplatte. Verwenden Sie eine beliebige Methode, um die Datei abzurufen, z. B. FileVault oder einen WebDAV-Client.
 1. Verschieben Sie die Datei cq-portlet-director-sharedlibs.x.x.x.jar in den Ordner der freigegebenen Bibliothek Ihres Anwendungsservers, sodass die Klassen für bereitgestellte Portlet-Anwendungen verfügbar sind.
 
-### Hinzufügen der Portlet-Komponente zu Sidekick {#adding-the-portlet-component-to-sidekick}
+### Hinzufügen der Portlet-Komponente zum Sidekick {#adding-the-portlet-component-to-sidekick}
 
 Fügen Sie die Portlet-Komponente zum Absatzsystem hinzu, damit sie für Autoren verfügbar ist.
 
@@ -741,7 +741,7 @@ Standardmäßig stellt das Portlet eine Verbindung zur Veröffentlichungsinstanz
 
 >[!NOTE]
 >
->Diese Verfahren verwenden das Websphere-Portal als Beispiel, obwohl sie möglichst allgemein gehalten sind. Bitte beachten Sie, dass die Verfahren für andere Webportale variieren. Obwohl die Schritte im Wesentlichen für alle Webportale identisch sind, müssen Sie die Schritte für Ihr bestimmtes Webportal erneut verwenden.
+>Diese Verfahren verwenden das Websphere-Portal als Beispiel, obwohl sie so allgemein wie möglich sind. Bitte beachten Sie, dass die Verfahren für andere Webportale variieren. Obwohl die Schritte im Wesentlichen für alle Webportale identisch sind, müssen Sie die Schritte für Ihr bestimmtes Webportal erneut verwenden.
 
 #### Installieren des Portlets {#installing-the-portlet}
 

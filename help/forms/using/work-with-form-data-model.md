@@ -10,10 +10,10 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4187'
-ht-degree: 72%
+source-wordcount: '4184'
+ht-degree: 71%
 
 ---
 
@@ -26,7 +26,7 @@ ht-degree: 72%
 
 ![data-integration](do-not-localize/data-integeration.png)
 
-Der Formulardatenmodell-Editor bietet eine intuitive Benutzeroberfläche und Werkzeuge zum Bearbeiten und Konfigurieren eines Formulardatenmodells. Mithilfe des Editors können Sie Datenmodellobjekte, Eigenschaften und Services aus verknüpften Datenquellen im Formulardatenmodell hinzufügen und konfigurieren. Darüber hinaus können Sie Datenmodellobjekte und -eigenschaften ohne Datenquellen erstellen und später mit entsprechenden Datenmodellobjekten und -eigenschaften verbinden. Sie können auch Beispieldaten für Datenmodellobjekteigenschaften generieren und bearbeiten, mit denen Sie adaptive Formulare und interaktive Kommunikation bei der Vorschau vorbefüllen können. Sie können Datenmodellobjekte und Dienste testen, die in einem Formulardatenmodell konfiguriert sind, um sicherzustellen, dass es ordnungsgemäß in Datenquellen integriert ist.
+Der Formulardatenmodell-Editor bietet eine intuitive Benutzeroberfläche und Werkzeuge zum Bearbeiten und Konfigurieren eines Formulardatenmodells. Mithilfe des Editors können Sie Datenmodellobjekte, Eigenschaften und Services aus verknüpften Datenquellen im Formulardatenmodell hinzufügen und konfigurieren. Darüber hinaus können Sie Datenmodellobjekte und Eigenschaften ohne Datenquellen erstellen und sie später mit den entsprechenden Datenmodellobjekten und Eigenschaften verknüpfen. Sie können auch Beispieldaten für Datenmodellobjekteigenschaften generieren und bearbeiten, mit denen Sie adaptive Formulare und interaktive Kommunikation bei der Vorschau vorbefüllen können. Sie können Datenmodellobjekte und Dienste testen, die in einem Formulardatenmodell konfiguriert sind, um sicherzustellen, dass es ordnungsgemäß in Datenquellen integriert ist.
 
 Wenn Sie mit der Forms-Datenintegration noch nicht vertraut sind und keine Datenquelle konfiguriert oder kein Formulardatenmodell erstellt haben, lesen Sie folgende Themen:
 
@@ -80,7 +80,7 @@ Hinzufügen von Datenmodellobjekten und Services:
    >
    >Das OData-Service-Metadatendokument enthält außer den Datenmodellobjekten und Services Navigationseigenschaften, die die Verknüpfung zwischen zwei Datenmodellobjekten definieren. Weitere Informationen finden Sie unter [Arbeiten mit Navigationseigenschaften von OData-Services](#work-with-navigation-properties-of-odata-services).
 
-1. Tippen **[!UICONTROL Speichern]** , um das Formularmodellobjekt zu speichern.
+1. Tippen **[!UICONTROL Speichern]** zum Speichern des Formularmodellobjekts.
 
    >[!NOTE]
    >
@@ -281,12 +281,12 @@ So fügen Sie eine Verknüpfung hinzu:
 
    Tippen **[!UICONTROL Fertig]** , um das -Argument zu speichern.
 
-1. Tippen **[!UICONTROL Fertig]** , um die Zuordnung zu speichern, und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
+1. Tippen **[!UICONTROL Fertig]** zum Speichern der Zuordnung und dann **[!UICONTROL Speichern]** , um das Formulardatenmodell zu speichern.
 1. Wiederholen Sie die Schritte, um nach Bedarf weitere Zuordnungen zu erstellen.
 
 >[!NOTE]
 >
->Die hinzugefügte Verknüpfung wird im Objektfeld des Datenmodells mit dem angegebenen Titel und einer Linie angezeigt, die die verknüpften Datenmodellobjekte verbindet.
+>Die hinzugefügte Verknüpfung wird im Objektfeld des Datenmodells mit dem angegebenen Titel und einer Zeile angezeigt, die die verknüpften Datenmodellobjekte verbindet.
 >
 >Sie können eine Verknüpfung bearbeiten, indem Sie das Kontrollkästchen neben der Verknüpfung auswählen und auf **[!UICONTROL Verknüpfung bearbeiten]** tippen.
 
@@ -327,7 +327,7 @@ Beispielsweise können Sie eine berechnete Eigenschaft **FullName** erstellen, d
    ![calculate-prop](assets/computed-prop.png)
 
 1. Wählen Sie die FullName-Eigenschaft aus und tippen Sie auf **[!UICONTROL Regel bearbeiten]**. Ein Fenster des Regeleditors wird geöffnet.
-1. Tippen Sie im Fenster des Regeleditors auf **[!UICONTROL Erstellen]**. A **[!UICONTROL Wert einstellen]** Regelfenster geöffnet.
+1. Tippen Sie im Fenster des Regeleditors auf **[!UICONTROL Erstellen]**. A **[!UICONTROL Wert einstellen]** Das Regelfenster wird geöffnet.
 
    Wählen Sie in der Dropdownliste **[!UICONTROL Mathematischer Ausdruck]**. Weitere verfügbare Optionen sind **[!UICONTROL Formulardatenmodell-Objekt]** und **[!UICONTROL Zeichenfolge]**.
 
@@ -411,7 +411,7 @@ Als Nächstes können Sie die Beispieldaten verwenden, um interaktive Kommunikat
 
 Ihr Formulardatenmodell ist konfiguriert. Bevor Sie es jedoch verwenden, sollten Sie testen, ob die konfigurierten Datenmodellobjekte und Dienste erwartungsgemäß funktionieren. Testen von Datenmodellobjekten und Services
 
-1. Wählen Sie ein Datenmodellobjekt oder einen Dienst im Formulardatenmodell aus und tippen Sie auf **[!UICONTROL Testmodell-Objekt]** oder **[!UICONTROL Testdienst]** zurück.
+1. Wählen Sie ein Datenmodellobjekt oder einen Dienst im Formulardatenmodell aus und tippen Sie auf **[!UICONTROL Testmodell-Objekt]** oder **[!UICONTROL Testdienst]**, bzw.
 
    Das Fenster „Formulardatenmodell testen“ wird geöffnet.
 
@@ -557,4 +557,4 @@ Eine Ausnahme wird angezeigt, wenn die Eingabedaten die Validierungskriterien ni
 
 ## Nächste Schritte {#next-steps}
 
-Sie verfügen über ein funktionierendes Formulardatenmodell, das jetzt für die Verwendung in adaptiven Formularen und interaktiven Kommunikations-Workflows bereit ist. Weitere Informationen finden Sie unter [Verwenden eines Formulardatenmodells](/help/forms/using/using-form-data-model.md).
+Sie verfügen über ein funktionierendes Formulardatenmodell, das jetzt zur Verwendung in adaptiven Formularen und interaktiven Kommunikations-Workflows bereit ist. Weitere Informationen finden Sie unter [Verwenden eines Formulardatenmodells](/help/forms/using/using-form-data-model.md).

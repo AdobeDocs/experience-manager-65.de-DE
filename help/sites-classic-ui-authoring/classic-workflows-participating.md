@@ -8,10 +8,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
-workflow-type: ht
-source-wordcount: '543'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 97%
 
 ---
 
@@ -25,13 +25,13 @@ Sie können die folgenden Aktionen ausführen, um ein Arbeitselement zu bearbeit
 
 * **Fertig stellen**
 
-   Sie können ein Element abschließen, damit der Workflow mit dem nächsten Schritt fortfahren kann.
+  Sie können ein Element abschließen, damit der Workflow mit dem nächsten Schritt fortfahren kann.
 
 * **Delegieren**
 
-   Wenn Ihnen ein Schritt zugewiesen wurde, Sie jedoch aus irgendeinem Grund die Aktion nicht ausführen können, können Sie den Schritt an eine andere Person oder Gruppe delegieren.
+  Wenn Ihnen ein Schritt zugewiesen wurde, Sie jedoch aus irgendeinem Grund die Aktion nicht ausführen können, können Sie den Schritt an eine andere Person oder Gruppe delegieren.
 
-   An welche Benutzenden delegiert werden kann, hängt davon ab, wem das Arbeitselement zugewiesen wurde:
+  An welche Benutzenden delegiert werden kann, hängt davon ab, wem das Arbeitselement zugewiesen wurde:
 
    * Wenn das Arbeitselement einer Gruppe zugewiesen wurde, sind die Gruppenmitglieder verfügbar.
    * Wenn das Arbeitselement einer Gruppe zugewiesen und dann an einen Benutzer delegiert wurde, sind die Gruppenmitglieder und die Gruppe verfügbar.
@@ -39,7 +39,7 @@ Sie können die folgenden Aktionen ausführen, um ein Arbeitselement zu bearbeit
 
 * **Schritt zurück**
 
-   Wenn Sie erkennen, dass ein Schritt oder eine Reihe von Schritten wiederholt werden muss, können Sie zu einem vorherigen Schritt zurückkehren. Auf diese Weise können Sie einen früheren Schritt im Workflow zur erneuten Verarbeitung auswählen. Der Workflow kehrt zu dem von Ihnen angegebenen Schritt zurück und fährt dann von dort fort.
+  Wenn Sie erkennen, dass ein Schritt oder eine Reihe von Schritten wiederholt werden muss, können Sie zu einem vorherigen Schritt zurückkehren. Auf diese Weise können Sie einen Schritt zur erneuten Verarbeitung auswählen, der zuvor im Workflow aufgetreten ist. Der Workflow kehrt zu dem von Ihnen angegebenen Schritt zurück und fährt dann von dort fort.
 
 ## Teilnehmen an einem Workflow {#participating-in-a-workflow}
 
@@ -49,11 +49,11 @@ Wenn Ihnen ein Arbeitselement zugewiesen wird (z. B. **Inhalte genehmigen**), w
 
 * Die Spalte **Status** der Websites-Konsole zeigt an, wenn eine Seite in einem Workflow enthalten ist:
 
-   ![workflowstatus-1](assets/workflowstatus-1.png)
+  ![workflowstatus-1](assets/workflowstatus-1.png)
 
 * Wenn Ihnen oder einer Gruppe, der Sie angehören, ein Arbeitselement im Rahmen eines Workflows zugewiesen wird, wird das Arbeitselement in Ihrem AEM-Workflow-Posteingang angezeigt.
 
-   ![workflowinbox](assets/workflowinbox.png)
+  ![workflowinbox](assets/workflowinbox.png)
 
 ### Fertigstellen eines Teilnehmerschritts {#completing-a-participant-step}
 

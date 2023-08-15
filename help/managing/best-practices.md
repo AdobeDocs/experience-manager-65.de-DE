@@ -7,9 +7,9 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3251'
 ht-degree: 17%
 
 ---
@@ -20,16 +20,16 @@ Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (
 
 Die Best Practices beinhalten Folgendes:
 
-* Ein [interaktive Checkliste](/help/managing/best-practices-checklist.md) ermöglicht es Ihnen, den Fortschritt mit diesen Best Practices zu verfolgen und zu überwachen.
+* Ein [interaktive Checkliste](/help/managing/best-practices-checklist.md) mit dem Sie den Fortschritt bei diesen Best Practices verfolgen und überwachen können.
 
-   * Definiert Eingaben und Ergebnisse nach Phase, Meilenstein und Persona.
+   * Definiert Eingaben und Lieferziele nach Phase, Meilenstein und Persona.
    * Bietet automatisierte Übersichten (Qualität, Zustand und Vollständigkeit) zur Angabe des Fortschritts und des Projektstatus.
 
-* Dokumentation basierend auf der [Checkliste](/help/managing/best-practices-checklist.md), der Folgendes beschreibt:
+* Dokumentation, basierend auf der [Checkliste](/help/managing/best-practices-checklist.md), der Folgendes beschreibt:
 
    * [Projekt-Heartbeat](#projectheartbeat)-Analyse
    * Überblick über den [Status nach Rolle](#status-by-role)
-   * [Phasen und Milestones](#phases-and-milestones).
+   * [Phasen und Meilensteine](#phases-and-milestones).
    * [Schlüsselrolle](#persona) und ihre Beteiligung an allen (relevanten) Phasen.
    * [Glossar](/help/managing/best-practices-glossary.md) der [erforderlichen Dokumente und Ergebnisse](#required-documents-and-deliverables)
 
@@ -45,7 +45,7 @@ Die **Projekt-Heartbeat** Das Arbeitsblatt bietet einen grafischen Überblick ü
 
 * **Phasenkonsistenz**
 
-   * einen allgemeinen Statusindikator für Ihr Projekt; nützlich sein, um gefährdete Bereiche hervorzuheben.
+   * Ein allgemeiner Statusindikator für Ihr Projekt, der nützlich ist, um gefährdete Bereiche hervorzuheben.
 
 * **Phasenvollständigkeit**
 
@@ -55,7 +55,7 @@ Die **Projekt-Heartbeat** Das Arbeitsblatt bietet einen grafischen Überblick ü
 
 Die **Status nach Rolle** Das Arbeitsblatt zeigt eine detaillierte Aufschlüsselung der [**Gesundheit**, **Qualität und **Vollständigkeit**](#projectheartbeat) von **[Phase](#phases-and-milestones)** und **[Persona](#persona)**.
 
-## Phasen und Milestones {#phases-and-milestones}
+## Phasen und Meilensteine {#phases-and-milestones}
 
 Der Projektplan ist in verschiedene (allgemeine) Phasen unterteilt.
 
@@ -75,7 +75,7 @@ Die Vorbereitung des Projekts bildet die Grundlage für das gesamte Projekt. Def
 
 * **Umfang und Zeitplan**
 
-   * Es sollte ein grundlegender Umfang und ein grober Zeitplan zur Verfügung gestellt werden, um festzulegen, was erforderlich ist und innerhalb welcher Frist; Wenn dies zur Klärung der Situation beiträgt, können Sie auch festlegen, was außerhalb des Anwendungsbereichs liegt.
+   * Es sollten ein grundlegender Umfang und ein grober Zeitplan zur Verfügung gestellt werden, um festzulegen, was erforderlich ist und in welchem Zeitrahmen. Wenn dies zur Klärung der Situation beiträgt, können Sie auch festlegen, was außerhalb des Anwendungsbereichs liegt.
 
 Die Art und Weise, wie Sie Ihr Projekt vorbereiten, planen und ausführen und Ihre Lösung implementieren, ist von den Einschränkungen betroffen, unter denen Sie arbeiten. Beispielsweise festes Budget, feste Zeitleiste, Inhaltsmenge, erforderliche Qualität.
 
@@ -161,29 +161,29 @@ Die Planung der Entwicklung ist entscheidend, um sicherzustellen, dass Ihr Proje
 
 * **Entwicklungsteam - Fortbildung**
 
-  Bevor Sie mit einem Projekt beginnen, sollten Sie sicherstellen, dass Ihr Entwicklungsteam angemessen besetzt ist und alle Teammitglieder für die vorliegende Aufgabe geschult sind.
+  Bevor Sie mit einem Projekt beginnen, sollten Sie sicherstellen, dass Ihr Entwicklungsteam angemessen besetzt ist und dass alle Teammitglieder für die vorliegende Aufgabe geschult sind.
 
 * **Inhaltsarchitektur**
 
-  Die Inhaltsarchitektur definiert und beschreibt die zukünftige Architektur des Inhalts. einschließlich:
+  Die Inhaltsarchitektur definiert und beschreibt die zukünftige Architektur des Inhalts, einschließlich:
 
-   * die Inhaltsstruktur; einschließlich Assets
-   * Grundstrukturen; einschließlich Kampagnen usw.
+   * Inhaltsstruktur, einschließlich Assets
+   * Grundstrukturen, einschließlich Kampagnen usw.
    * Multisite- und mehrsprachige Strukturen (MSM, Übersetzung usw.)
    * Unterstützende Inhalte (einschließlich Tags und Tagging-Konzepten)
    * Caching und Strategien zur Wiederverwendung von Inhalten
 
 * **Systemarchitektur**
 
-  Die Systemarchitektur definiert die konzeptionelle Ansicht Ihres Systems. einschließlich (unter anderem):
+  Die Systemarchitektur definiert die konzeptionelle Ansicht Ihres Systems, einschließlich (unter anderem):
 
    * [Systemstruktur](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) für alle erforderlichen Umgebungen
    * Subsysteme
    * Drittanbietersysteme
-   * Schnittstellen; Hardware, Software und menschliche Interaktion
+   * Schnittstellen, Hardware, Software und menschliche Interaktionen
    * Server für jede Umgebung; siehe [Technische Anforderungen](/help/sites-deploying/technical-requirements.md) und [Hardware-Skalierungsrichtlinien](/help/managing/hardware-sizing-guidelines.md);
 
-   * Prozesse für jede Umgebung; z. B. Bereitstellungs- und Wartungsanforderungen
+   * Prozesse für jede Umgebung, z. B. Bereitstellungs- und Wartungsanforderungen
    * Wartungsaktivitäten (Datastore GC, TarPM-Optimierung usw.)
    * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)-Caching
    * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) beim Veröffentlichen/automatischen Teilen;
@@ -196,12 +196,12 @@ Die Planung der Entwicklung ist entscheidend, um sicherzustellen, dass Ihr Proje
   Der Schwerpunkt liegt auf Folgendem:
 
    * Wie sie miteinander und mit Benutzern interagieren werden.
-   * Die Daten, die von Anwendungen genutzt und erzeugt werden sollen, und nicht von ihrer internen Struktur.
+   * Die Daten, die von Anwendungen genutzt und erzeugt werden sollen, anstatt ihrer internen Struktur.
 
-  Die Definitionen sollten Folgendes umfassen:
+  Die Begriffsbestimmungen sollten Folgendes umfassen:
 
    * Grundlegende Code-Struktur für das Projekt
-   * Code-Artefakte (Bundles, Pakete usw.)
+   * Code-Artefakte (Pakete, Pakete usw.)
    * Aufschlüsselung der Vorlagen/Komponenten und ihrer Beziehungen
    * Allgemeine Details der erforderlichen Anpassungen (spezifische Überlagerungen werden später folgen)
    * Entwurf der für die Lösung erforderlichen Workflows (z. B. Inhaltserstellung, Genehmigung, Veröffentlichung, Transformationen, Importe und Exporte)
@@ -212,7 +212,7 @@ Die Planung der Entwicklung ist entscheidend, um sicherzustellen, dass Ihr Proje
   Für die Systemintegration müssen Sie Folgendes planen (und dann implementieren):
 
    * Wie alle Teilsysteme und [Lösungsintegrationen](/help/sites-administering/integration.md) zusammengeführt werden, um als einheitliches System zu funktionieren
-   * Integration von Drittanbietersystemen; zusammen mit etwaigen besonderen Überlegungen, z. B. Offline-/Online-, Client-/Browser-seitig oder Fallover-Handhabung bei Ausfall eines Drittanbietersystems
+   * Integration von Drittanbietersystemen zusammen mit besonderen Überlegungen wie Offline-/Online-, Client-/Browser-seitig oder Fallover-Handhabung bei Ausfall eines Drittanbietersystems
 
 * **Testkonzept**
 
@@ -223,8 +223,8 @@ Die Planung der Entwicklung ist entscheidend, um sicherzustellen, dass Ihr Proje
    * Details aller durchzuführenden Tests
    * Vorbereitung des für diese Tests erforderlichen Inhalts
    * Angaben zu den zu verwendenden Testwerkzeugen
-   * allgemeine Angabe, wer an den Tests beteiligt sein wird; besonders Gruppen außerhalb des Qualitätssicherungsteams
-   * Details zur Testautomatisierung; Beispielsweise im Selenium- oder AEM Entwicklermodus
+   * Allgemeine Angabe, wer an Tests beteiligt sein wird, insbesondere Gruppen außerhalb des Qualitätssicherungsteams
+   * Details zur Testautomatisierung, z. B. mit Selenium oder AEM Entwicklermodus
 
 * **Experience Design**
 
@@ -236,7 +236,7 @@ Die Planung der Entwicklung ist entscheidend, um sicherzustellen, dass Ihr Proje
 
   Vor der Entwicklung sollten alle erforderlichen Support-Prozesse für die Bereitstellung, Freigabe, Prüfung und Berichterstellung eingerichtet werden.
 
-  Siehe auch [Adobe Support-Portal](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support).
+  Siehe auch [Adobe Support Portal](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support).
 
 ### Betriebsplanung und -betrieb {#operations-planning-and-operations}
 
@@ -246,11 +246,11 @@ Auf ähnlicher Grundlage müssen die Vorgänge entsprechend geplant werden, um s
 
 * **Berechtigungen**
 
-  Sie müssen für alle Benutzer/Gruppen, die die Lösung verwenden, ein Rollen- und Berechtigungskonzept planen und dann implementieren.
+  Sie müssen ein Rollen- und Berechtigungskonzept für alle Benutzer/Gruppen planen und implementieren, die die Lösung verwenden.
 
   Beispiel:
 
-   * Eine Liste von Rollen (d. h. Gruppen) mit `read`/ `write` Zugriffsdefinitionen für jede
+   * Eine Liste der Rollen (d. h. Gruppen) mit `read`/ `write` Zugriffsdefinitionen für jede
 
    * Festlegung der Verwendung von Berechtigungen, die einen Einfluss auf die Veröffentlichungsumgebung haben, z. B. `replicate`
    * Für Benutzer mit minimalen Berechtigungen sollten Workflows definiert werden
@@ -263,7 +263,7 @@ Auf ähnlicher Grundlage müssen die Vorgänge entsprechend geplant werden, um s
   Überwachung und Wartung sind Schlüsselaspekte, um den reibungslosen Ablauf der Lösung nach der Einführung zu gewährleisten. Dazu müssen Sie Folgendes definieren:
 
    * Was muss überwacht werden?
-   * Wartungsaufgaben; regulären und Sonderfällen
+   * Wartungsaufgaben, sowohl für reguläre als auch für Sonderfälle
 
   Siehe auch [Überwachung und Wartung](/help/sites-deploying/monitoring-and-maintaining.md) für weitere Informationen.
 
@@ -290,12 +290,12 @@ Entwicklung ist eine entscheidende Phase, die mehr erfordert als nur Programmier
 
       * Eine typische Umgebung besteht aus:
 
-         * ein System zur Problemverfolgung; wie Jira
-         * eine IDE, wie Eclipse
-         * ein Buildmanagement-Tool; wie Maven
+         * ein System zur Problemverfolgung, z. B. Jira
+         * eine IDE, z. B. Eclipse
+         * ein Build-Management-Tool, wie Maven
          * einem Werkzeug für die fortwährende Integration, wie etwa Jenkins;
-         * ein Werkzeug zur Versionskontrolle; wie GIT/SVN
-         * einen Repository-Manager für Build-Artefakte; wie Archiva/Nexus
+         * ein Tool zur Versionskontrolle, wie GIT/SVN
+         * einen Repository-Manager für Build-Artefakte, z. B. Archiva/Nexus
 
    * Integration/Abhängigkeiten von Software von Drittanbietern
    * [Integration/Abhängigkeiten von der Lösung;](/help/sites-administering/integration.md)
@@ -306,7 +306,7 @@ Entwicklung ist eine entscheidende Phase, die mehr erfordert als nur Programmier
   Planen und dokumentieren Sie Ihre Testumgebung, einschließlich:
 
    * Architektur
-   * Abhängigkeiten von Entwicklungs-Builds; einschließlich nächtlicher Builds
+   * Abhängigkeiten von Entwicklungs-Builds, einschließlich nächtlicher Builds
    * Möglichkeiten oder Einschränkungen zum Testen der Softwareintegration/Abhängigkeiten von Drittanbietern
    * Testwerkzeuge
    * Automatisierte Teststrategie
@@ -320,7 +320,7 @@ Entwicklung ist eine entscheidende Phase, die mehr erfordert als nur Programmier
    * Integration/Abhängigkeiten von Software von Drittanbietern
    * Sicherheitseinstellungen
    * Bestätigung der Grundleistung durch Ausführen eines [Tough Day](/help/sites-developing/tough-day.md)-Tests bei der Produktionskonfiguration;
-   * Anforderungen an Leistungstests; see [Best Practices für Qualitätssicherung](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * Anforderungen an Leistungstests, siehe [Best Practices für Qualitätssicherung](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integration**
 
@@ -332,7 +332,7 @@ Entwicklung ist eine entscheidende Phase, die mehr erfordert als nur Programmier
 
 * **Migration**
 
-  Planen, dokumentieren und testen Sie alle Aspekte der Inhaltsmigration; einschließlich:
+  Planen, dokumentieren und testen Sie alle Aspekte der Inhaltsmigration, einschließlich:
 
    * Inhaltsarchitektur
    * Migrationsstrategie
@@ -343,7 +343,7 @@ Entwicklung ist eine entscheidende Phase, die mehr erfordert als nur Programmier
 
 * **Dokumentation**
 
-  Dokumentieren Sie die Lösung vollständig. einschließlich:
+  Dokumentieren Sie die Lösung vollständig, einschließlich:
 
    * Betriebshandbuch
    * Alle Anpassungen, die sich auf Aktualisierungen auswirken können
@@ -405,7 +405,7 @@ Der Rollout einer neuen Anwendung bedarf sorgfältiger Planung, um einen reibung
 
   Stellen Sie sicher, dass Ihre Lösungsadministratoren über Folgendes verfügen:
 
-   * entsprechend ausgebildet wurden
+   * entsprechend geschult wurden
    * Das entsprechende Lehrmaterial erhalten
    * Die entsprechende Dokumentation erhalten
 
@@ -413,9 +413,9 @@ Der Rollout einer neuen Anwendung bedarf sorgfältiger Planung, um einen reibung
 
   Stellen Sie sicher, dass Ihre Autoren über Folgendes verfügen:
 
-   * entsprechend ausgebildet wurden
+   * entsprechend geschult wurden
    * Das entsprechende Lehrmaterial erhalten
-   * die entsprechenden Unterlagen erhalten haben; Beispiel: das Benutzerhandbuch
+   * die entsprechende Dokumentation erhalten haben, z. B. das Benutzerhandbuch
 
 * **Penetrationstests**
 
@@ -468,7 +468,7 @@ Es gibt auch einige [andere Person](#other-persona) die an bestimmten Aufgaben b
 Der Projektsponsor ist:
 
 * Zuständig für die Bereitstellung/Präsentation des Geschäftsszenarios für das Projekt.
-* Schlüssel zur Gestaltung und Definition des Projektumfangs; einschließlich:
+* Schlüssel zur Gestaltung und Definition des Projektumfangs, einschließlich:
 
    * Definition und Kriterien für den Erfolg
    * die wichtigsten KPIs
@@ -481,7 +481,7 @@ Der Projekt-Manager ist:
 
 * Zuständig für die Gesamtbereitstellung des Projekts basierend auf den Anforderungen (z. B. Umfang, KPIs, Erfolgskriterien und Definition), die vom Projektsponsor bereitgestellt werden.
 * Zuständig für die Festlegung des Budgets und die Bereitstellung der Ressourcen für das Projekt auf der Grundlage dieses Budgets.
-* Hauptkommunikation für alle am Projekt beteiligten Personen.
+* Der zentrale Punkt der Kommunikation für alle am Projekt beteiligten Personen.
 
 ### Architekt {#architect}
 
@@ -504,7 +504,7 @@ Geschäftsanalyst:
 
    * Die Definition von Erfolg.
    * Die Erfolgskriterien.
-   * KPIs (sowohl geschäftlich als auch leistungsbasiert).
+   * KPIs (geschäftlich und leistungsbasiert).
 
 ### Entwicklungsleiter {#development-lead}
 
@@ -523,7 +523,7 @@ Der Entwicklungsvorsprung:
 
 Qualitätsvorsprung:
 
-* ist für die Qualität der Lieferung verantwortlich; sicherstellen, dass es die Erfolgskriterien und alle vom Kunden definierten KPIs erfüllt.
+* ist für die Qualität des Versands verantwortlich; stellt sicher, dass er die Erfolgskriterien und alle vom Kunden definierten KPIs erfüllt.
 * Definiert die Qualitätsmetriken, passt sie an alle Interessengruppen an, erstellt die Testpläne und stellt sicher, dass sie ausgeführt werden.
 * Erstellt Berichte und stellt sie an Projektbeteiligte bereit.
 
@@ -535,7 +535,7 @@ Der Systemtechniker:
 * ist verantwortlich für:
 
    * Einrichtung interner Entwicklungs- und Testumgebungen
-   * zur Anpassung dieser Systeme an die Client-Systeme
+   * für die Anpassung dieser Systeme an die Client-Systeme
 
 * Bietet Hardware-Empfehlungen, überwacht die verschiedenen Implementierungen und bietet Betriebsunterstützung sowohl vor als auch nach der Live-Schaltung.
 
@@ -544,13 +544,13 @@ Der Systemtechniker:
 Der Sicherheitsleiter:
 
 * ist für das Gesamtsicherheitskonzept der Lösung verantwortlich und stellt sicher, dass sie mit allen Anforderungen und Richtlinien des Kunden übereinstimmt.
-* liefert ein Sicherheitskonzept, Sicherheitsvorgänge und Empfehlungen für hardwarebasierte Sicherheitskonzepte; wie Zonen und Firewalls.
+* Bietet ein Sicherheitskonzept, Sicherheitsoperationen und Empfehlungen für hardwarebasierte Sicherheitskonzepte wie Zonen und Firewalls.
 
 ### Sonstige Persona {#other-persona}
 
 * Interessenträger
 
-   * Personen (häufig aus dem Unternehmen), die ein Interesse am Erfolg des Projekts haben. Sie tragen oft zum Budget bei.
+   * Personen (häufig aus dem Unternehmen), die ein Interesse am Erfolg des Projekts haben (Anteil). Sie tragen oft zum Budget bei.
 
 * Legal
 
@@ -576,7 +576,7 @@ Der Sicherheitsleiter:
 
 Die Checklisten enthalten die **erforderlichen Dokumente** und **Ergebnisse** für jeden Milestone.
 
-* Es gibt keine 1:1-Beziehung zwischen diesen beiden. Beispielsweise kann eine Gruppe erforderlicher Dokumente zu einem einzelnen Versand führen.
+* Es besteht keine 1:1-Beziehung zwischen diesen Dokumenten. Beispielsweise kann eine Gruppe erforderlicher Dokumente zu einem einzelnen Versand führen.
 * Ein von einer Person bereitstellbares Dokument kann während desselben Meilensteins für eine andere Person erforderlich sein.
 
 ### Erforderliche Dokumente {#required-documents}
@@ -585,8 +585,8 @@ Die **Erforderliche Dokumente** werden von der entsprechenden Person bei der Pro
 
 Für jeden **Erforderliches Dokument**, sollte die Persona Folgendes angeben:
 
-* **Y/N**: ob sie eingegangen ist.
-* **1-3**: einen Hinweis auf die Qualität des erhaltenen Dokuments.
+* **Y/N**: ob sie empfangen wurde.
+* **1-3**: ein Hinweis auf die Qualität des empfangenen Dokuments.
 
 ### Lieferziele {#deliverables}
 

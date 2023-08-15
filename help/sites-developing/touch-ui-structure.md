@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 40%
+source-wordcount: '855'
+ht-degree: 38%
 
 ---
 
@@ -41,7 +41,7 @@ Die Kopfzeilenleiste zeigt globale Elemente, z. B.:
 
 * das Logo und das spezifische Produkt/die spezifische Lösung, das/die Sie derzeit verwenden; AEM bildet dies auch einen Link zur globalen Navigation
 * Suchen
-* Symbol für den Zugriff auf die Hilferessourcen
+* Symbol für den Zugriff auf die Hilfe-Ressourcen
 * Symbol für Zugriff auf andere Lösungen
 * Anzeige (und Zugriff) aller Warnungen oder Posteingangselemente, die auf Sie warten
 * Benutzersymbol mit einem Link zum Profil-Management
@@ -89,9 +89,9 @@ Der Editor-Frame erkennt die Bearbeitungsfunktionen.
 Der Editor-Frame ist ein Container (abstrakt) für alle *Seitenbearbeitungselemente*. Er wird über dem Inhalts-Frame angezeigt und enthält:
 
 * die obere Symbolleiste
-* Seitenbereich
+* das seitliche Bedienfeld
 * alle Überlagerungen
-* alle anderen Seitenbearbeitungselemente; z. B. die Komponenten-Symbolleiste
+* jedes andere Seitenbearbeitungselement, z. B. die Komponenten-Symbolleiste
 
 ![chlimage_1-149](assets/chlimage_1-149.png)
 
@@ -99,7 +99,7 @@ Der Editor-Frame ist ein Container (abstrakt) für alle *Seitenbearbeitungseleme
 
 Diese enthält zwei Standardregisterkarten, auf denen Sie Assets und Komponenten auswählen können. Sie können von hier auf die Seite gezogen und dort abgelegt werden.
 
-Der Seitenbereich ist standardmäßig ausgeblendet. Wenn diese Option ausgewählt ist, wird sie entweder auf der linken Seite angezeigt oder über das gesamte Fenster eingeblendet (wenn die Fenstergröße unter einer Breite von 1024 Pixel liegt). z. B. auf einem Mobilgerät).
+Der Seitenbereich ist standardmäßig ausgeblendet. Wenn diese Option ausgewählt ist, wird sie entweder auf der linken Seite angezeigt oder über das gesamte Fenster eingeblendet (wenn die Fenstergröße unter einer Breite von 1024 Pixel liegt, z. B. auf einem Mobilgerät).
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -134,11 +134,11 @@ Die Überlagerungen befinden sich im Editor-Frame (neben allen anderen Seitenbea
 Eine Ebene ist eine unabhängige Funktionsgruppe, die Sie aktivieren können, um Folgendes auszuführen:
 
 * eine andere Ansicht der Seite aufrufen
-* ermöglichen die Bearbeitung und/oder Interaktion mit einer Seite
+* Sie können eine Seite bearbeiten und/oder damit interagieren
 
 Anders als spezifische Aktionen zu einzelnen Komponenten bieten die Ebenen komplexe Funktionen für die gesamte Seite.
 
-AEM enthält mehrere bereits für die Seitenbearbeitung implementierte Ebenen. , z. B. Bearbeiten, Vorschau, Anmerkungen.
+AEM enthält mehrere bereits für die Seitenbearbeitung implementierte Ebenen, z. B. Bearbeiten, Vorschau, Anmerkungen.
 
 >[!NOTE]
 >

@@ -11,9 +11,9 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3545'
+source-wordcount: '3544'
 ht-degree: 76%
 
 ---
@@ -214,7 +214,7 @@ Die Tabellenkomponenten für adaptive Formulare wie Kopf- und Fußzeile sowie Ze
 
 ## Basisvorlage eines Datensatzdokuments {#base-template-of-a-document-of-record}
 
-Die Basisvorlage stellt Formatierungs- und Darstellungsinformationen für das Datensatzdokument bereit. Damit können Sie das standardmäßige Erscheinungsbild des automatisch generierten Datensatzdokuments anpassen. Beispiel: Sie möchten Ihr Firmenlogo in der Kopfzeile und Copyright-Informationen in der Fußzeile des Datensatzdokuments hinzufügen. Die Übergeordnete Seite aus der Basisvorlage wird als Übergeordnete Seite für die Datensatzdokumentvorlage verwendet. Die Übergeordnete Seite kann Informationen wie Seitenkopf, Seitenfußzeile und Seitenzahl enthalten, die Sie auf das Datensatzdokument anwenden können. Sie können solche Informationen mithilfe der Basisvorlage für die automatische Erstellung des Datensatzdokuments auf das Datensatzdokument anwenden. Die Verwendung der Basisvorlage ermöglicht es Ihnen, die Standardeinstellungen von Feldern zu ändern.
+Die Basisvorlage stellt Formatierungs- und Darstellungsinformationen für das Datensatzdokument bereit. Damit können Sie die standardmäßige Darstellung des automatisch erstellten Datensatzdokuments anpassen. Beispiel: Sie möchten Ihr Firmenlogo in der Kopfzeile und Copyright-Informationen in der Fußzeile des Datensatzdokuments hinzufügen. Die Masterseite aus der Basisvorlage wird als Masterseite für die Datensatzdokumentvorlage verwendet. Die Masterseite kann Informationen wie Seitenkopf, Seitenfußzeile und Seitenzahl enthalten, die Sie auf das Datensatzdokument anwenden können. Sie können solche Informationen mithilfe der Basisvorlage für die automatische Erstellung des Datensatzdokuments auf das Datensatzdokument anwenden. Die Verwendung der Basisvorlage ermöglicht es Ihnen, die Standardeinstellungen von Feldern zu ändern.
 
 Bitte folgen Sie bei der Entwicklung Ihrer Basisvorlage den [Konventionen für Basisvorlagen](#base-template-conventions).
 
@@ -374,7 +374,7 @@ Die Datensatzdokument-Einstellungen einer Komponente sind unter den Eigenschafte
 
 **Einstellungen auf Feldebene**
 
-* **Aus Datensatzdokument ausschließen**: Wenn Sie die Eigenschaft true festlegen, wird das Feld aus dem Datensatzdokument ausgeschlossen. Dies ist eine skriptfähige Eigenschaft namens `excludeFromDoR`. Ihr Verhalten ist von der auf Formularebene befindlichen Eigenschaft **Felder aus DoR ausschließen, wenn sie ausgeblendet sind** abhängig.
+* **Aus Datensatzdokument ausschließen**: Wenn Sie die Eigenschaft &quot;true&quot;festlegen, wird das Feld aus dem Datensatzdokument ausgeschlossen. Dies ist eine skriptfähige Eigenschaft namens `excludeFromDoR`. Ihr Verhalten ist von der auf Formularebene befindlichen Eigenschaft **Felder aus DoR ausschließen, wenn sie ausgeblendet sind** abhängig.
 
 * **Bereich als Tabelle anzeigen:** Durch die Aktivierung dieser Eigenschaft wird der Bereich im Datensatzdokument als Tabelle angezeigt, wenn er weniger als 6 Felder enthält. Gilt nur für den Bereich.
 * **Titel aus Datensatzdokument ausschließen:** Wird diese Eigenschaft aktiviert, erscheint der Titel des Bereichs bzw. der Tabelle im Datensatzdokument nicht. Gilt nur für Bereiche und Tabellen.

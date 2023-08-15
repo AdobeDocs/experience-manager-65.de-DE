@@ -2,9 +2,9 @@
 title: Verwalten von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in AEM verwalten.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 106fc0e1ef6d65f13bd3875783102da44694581e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3587'
+source-wordcount: '3586'
 ht-degree: 53%
 
 ---
@@ -31,7 +31,7 @@ Wenn Ressourcen zu einem Übersetzungsprojekt hinzugefügt werden, wird ein Übe
 
 >[!NOTE]
 >
->Option 3 ist nicht mit dem Übersetzungsauftrag/Projekt verwandt. Dadurch können Sie Inhalte und strukturelle Änderungen in der Übergeordneten Sprache in (nicht übersetzte) Sprachkopien kopieren. Sie können diese Option verwenden, um Ihren Sprachstamm auch ohne Übersetzung zu synchronisieren.
+>Option 3 ist nicht mit dem Übersetzungsauftrag/Projekt verwandt. Sie können Inhalte und strukturelle Änderungen im Sprach-Master in (nicht übersetzte) Sprachkopien kopieren. Sie können diese Option verwenden, um Ihren Sprachstamm auch ohne Übersetzung zu synchronisieren.
 
 ## Durchführen von Erstübersetzungen und Aktualisieren vorhandener Übersetzungen {#performing-initial-translations-and-updating-existing-translations}
 
@@ -43,7 +43,7 @@ AEM erkennt, ob ein Übersetzungsprojekt für die Erstübersetzung von Inhalten 
    * Wenn die übersetzte Seite in AEM importiert wird, wird die Seite im Launch überschrieben.
    * Die übersetzte Seite überschreibt die Sprachkopie nur, wenn der Launch weitergeleitet (beworben) wird.
 
-Beispielsweise wird der Sprachstamm /content/geometrixx/fr für die französische Übersetzung der Übergeordneten Sprache /content/geometrixx/en erstellt. Es gibt keine anderen Seiten in der französischen Sprachkopie.
+Beispielsweise wird der Sprachstamm /content/geometrixx/fr für die französische Übersetzung der Master-Sprache /content/geometrixx/en erstellt. Es gibt keine anderen Seiten in der französischen Sprachkopie.
 
 * Es wird ein Übersetzungsprojekt für die Seite /content/geometrixx/en/products und alle untergeordneten Seiten erstellt, das mit der französischen Sprachkopie verknüpft ist. Da die Sprachkopie die Seite /content/geometrixx/fr/products nicht enthält, kopiert AEM die Seite /content/geometrixx/en/products und alle untergeordneten Seiten sofort in die französische Sprachkopie. Die Kopien werden auch in das Übersetzungsprojekt eingefügt.
 * Es wird ein Übersetzungsprojekt für die Seite /content/geometrixx/en/ und alle untergeordneten Seiten erstellt, das als Ziel die französische Sprachkopie hat. Da die Sprachkopie die Seite enthält, die der Seite /content/geometrixx/en (dem Sprach-Stamm) entspricht, kopiert AEM die Seite /content/geometrixx/en und alle untergeordneten Seiten und fügt sie einem Launch hinzu. Die Kopien werden auch in das Übersetzungsprojekt eingefügt.
@@ -54,7 +54,7 @@ Erstellen Sie Übersetzungsprojekte so, dass Sie den Workflow zur Übersetzung d
 
 * Die Cloud-Konfiguration des Übersetzungsintegrations-Frameworks, das mit der ausgewählten Seite verknüpft ist, bestimmt viele Eigenschaften der Übersetzungsprojekte, z. B. den zu verwendenden Übersetzungs-Workflow.
 * Für jede ausgewählte Sprachkopie wird ein Projekt erstellt.
-* Eine Kopie der ausgewählten Seite und der zugehörigen Assets werden erstellt und jedem Projekt hinzugefügt. Diese Kopien werden später zur Übersetzung an den Übersetzungsanbieter gesendet.
+* Eine Kopie der ausgewählten Seite und der zugehörigen Assets werden erstellt und zu jedem Projekt hinzugefügt. Diese Kopien werden später zur Übersetzung an den Übersetzungsanbieter gesendet.
 
 Sie können festlegen, dass auch die untergeordneten Seiten der ausgewählten Seite ausgewählt werden. In diesem Fall werden jedem Projekt auch die Kopien der untergeordneten Seiten hinzugefügt, sodass sie übersetzt werden. Wenn alle untergeordneten Seiten mit unterschiedlichen Übersetzungsintegrations-Framework-Konfigurationen verknüpft sind, erstellt AEM weitere Projekte.
 
@@ -175,7 +175,7 @@ Ihre Seiten und/oder Assets werden zum Übersetzungsauftrag hinzugefügt.
 
 ## Hinzufügen von i18n-Wörterbüchern zu einem Übersetzungsauftrag {#adding-i-n-dictionaries-to-a-translation-job}
 
-Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftrag Ihres Übersetzungsprojektes hinzufügen. So fügen Sie ein i18n-Wörterbuch hinzu:
+Sie können Seiten, Assets, Tags oder i18n-Wörterbücher dem Übersetzungsauftrag Ihres Übersetzungsprojektes hinzufügen. Hinzufügen eines i18n-Wörterbuchs:
 
 1. Klicken oder tippen Sie unten auf der Kachel Übersetzungsauftrag des Übersetzungsprojekts auf das Auslassungszeichen.
 
@@ -365,10 +365,10 @@ Wenn Inhalte für eine vorhandene Sprachkopie übersetzt werden, überprüfen Si
 
 ## Vergleichen von Sprachkopien {#comparing-language-copies}
 
-So vergleichen Sie Sprachkopien mit der Übergeordneten Sprache:
+So vergleichen Sie Sprachkopien mit dem Sprach-Master:
 
 1. Im **Sites** Navigieren Sie zu der Sprachkopie, die Sie vergleichen möchten.
-1. Öffnen Sie die **[Verweise](/help/sites-authoring/basic-handling.md#references)** Bereich.
+1. Öffnen Sie die **[Verweise](/help/sites-authoring/basic-handling.md#references)** Bedienfeld.
 1. Wählen Sie unter der Überschrift **Kopien** die Option **Sprachkopien** aus.
 1. Wählen Sie Ihre spezifische Sprachkopie aus und klicken Sie dann entweder auf **Mit Stamm vergleichen** oder auf **Mit vorherigen vergleichen**, falls zutreffend.
 
@@ -376,7 +376,7 @@ So vergleichen Sie Sprachkopien mit der Übergeordneten Sprache:
 
 1. Die beiden Seiten (Start und Quelle) werden nebeneinander geöffnet.
 
-   Umfassende Informationen zur Verwendung dieser Funktion finden Sie unter [Seitenvergleich](/help/sites-authoring/page-diff.md).
+   Vollständige Informationen zur Verwendung der Vergleichsfunktion finden Sie unter [Seitenvergleich](/help/sites-authoring/page-diff.md).
 
 ## Abschließen und Archivieren von Übersetzungsaufträgen {#completing-and-archiving-translation-jobs}
 
@@ -392,7 +392,7 @@ Archivieren Sie einen Übersetzungsauftrag, nachdem er abgeschlossen ist und Sie
 
 Füllen Sie Ihre Sprachkopie so, dass sie Inhalte aus der Stammsprache enthält, die Sie übersetzen. Bevor Sie Ihre Sprachkopie füllen, müssen Sie [den Sprachstamm der Sprachkopie erstellt haben](/help/sites-administering/tc-prep.md#creating-a-language-root).
 
-1. Verwenden Sie die Sites-Konsole, um den Sprachstamm der Übergeordneten Sprache auszuwählen, die Sie als Quelle verwenden. Um beispielsweise die englischen Seiten der Demo-Site zu übersetzen, wählen Sie &quot;Content&quot;> &quot;Geometrixx Demo Site&quot;> &quot;English&quot;.
+1. Verwenden Sie die Sites-Konsole, um den Sprachstamm der Master-Sprache auszuwählen, die Sie als Quelle verwenden. Um beispielsweise die englischen Seiten der Demo-Site zu übersetzen, wählen Sie &quot;Content&quot;> &quot;Geometrixx Demo Site&quot;> &quot;English&quot;.
 1. Klicken oder tippen Sie in der Symbolleiste auf Verweise .
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
@@ -416,13 +416,13 @@ Wenn eine bereits übersetzte Quellseite [umbenannt oder verschoben](/help/sites
 
 1. Verschieben Sie eine Seite mit einer Sprachkopie.
 1. Wählen Sie den Sprach-Copy-Stamm aus.
-1. Öffnen Sie die **Verweise** Bereich.
+1. Öffnen Sie die **Verweise** Bedienfeld.
 1. Auswählen **Sprachkopien**.
 1. Wählen Sie die Zielsprachen aus, die Sie aktualisieren möchten.
 1. Auswählen **Sprachkopien aktualisieren**.
-1. Klicken Sie auf **Aktualisieren**. A [Launch](/help/sites-authoring/launches-promoting.md) erstellt.
+1. Klicken Sie auf **Aktualisieren**. A [Launch](/help/sites-authoring/launches-promoting.md) wird erstellt.
 1. Navigieren Sie zum gewünschten Sprachstamm und wählen Sie ihn aus.
-1. Verwenden der **Verweise** Bereich, wählen Sie **Starts**.
+1. Verwenden der **Verweise** Bereich, wählen Sie **Launches**.
 1. Klicken Sie auf den soeben erstellten Launch und dann auf **Launch bewerben**.
 
 Jetzt wurden die Quellseite sowie die zugehörige Sprachkopie verschoben.
@@ -454,7 +454,7 @@ Sie können die Inhalte eines Übersetzungsauftrags herunterladen, um sie z. B.
 
 1. Klicken oder tippen Sie im Dropdown-Menü der Kachel Übersetzungsauftrag auf Exportieren .
 1. Klicken oder tippen Sie im Dialogfeld &quot;Exportieren&quot;auf &quot;Exportierte Datei herunterladen&quot;und speichern Sie die Datei bei Bedarf im Webbrowser-Dialogfeld.
-1. Klicken oder tippen Sie im Dialogfeld &quot;Exportieren&quot;auf &quot;Schließen&quot;.
+1. Klicken oder tippen Sie im Dialogfeld &quot;Exportieren&quot;auf Schließen.
 
 ## Importieren von Übersetzungsaufträgen {#importing-a-translation-job}
 
@@ -462,4 +462,4 @@ Sie können übersetzte Inhalte in AEM importieren, zum Beispiel wenn Ihr Übers
 
 1. Klicken oder tippen Sie im Dropdown-Menü der Kachel Übersetzungsauftrag auf Importieren.
 1. Wählen Sie im Dialogfeld des Webbrowsers die zu importierende Datei aus.
-1. Klicken oder tippen Sie im Dialogfeld &quot;Importieren&quot;auf &quot;Schließen&quot;.
+1. Klicken oder tippen Sie im Dialogfeld &quot;Importieren&quot;auf Schließen.

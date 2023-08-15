@@ -8,10 +8,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '915'
-ht-degree: 99%
+source-wordcount: '912'
+ht-degree: 94%
 
 ---
 
@@ -135,15 +135,15 @@ So aktivieren oder deaktivieren Sie eine Komponente:
 
    **Eigenschaften**
 
-   Auf der Registerkarte **Eigenschaften** können Sie die wichtigsten Design-Parameter der Komponente konfigurieren. Beispielsweise können Sie für eine Bildkomponente die maximal und minimal zulässige Größe des Bildes festlegen.
+   Die **Eigenschaften** -Tab können Sie die wichtigen Design-Parameter der Komponente konfigurieren. Beispielsweise können Sie für eine Bildkomponente die maximal und minimal zulässige Größe des Bildes festlegen.
 
    **Funktionen**
 
-   Auf der Registerkarte **Funktionen** können Sie zusätzliche Funktionen der Komponente aktivieren oder deaktivieren. Beispielsweise können Sie für eine Bildkomponente die Ausrichtung des Bildes und die verfügbaren Zuschneideoptionen definieren und festlegen, ob ein Bild hochgeladen werden kann.
+   Die **Funktionen** -Tab können Sie zusätzliche Funktionen der Komponente aktivieren oder deaktivieren. Beispielsweise können Sie für eine Bildkomponente die Ausrichtung des Bildes und die verfügbaren Zuschneideoptionen definieren und festlegen, ob ein Bild hochgeladen werden kann.
 
    **Stile**
 
-   Auf der Registerkarte **Stile** können Sie die CSS-Klassen und -Stile definieren, die mit der Komponente verwendet werden sollen.
+   Die **Stile** -Tab können Sie die CSS-Klassen und -Stile definieren, die mit der Komponente verwendet werden sollen.
 
    ![screen_shot_2018-03-22at103741](assets/screen_shot_2018-03-22at103741.png)
 

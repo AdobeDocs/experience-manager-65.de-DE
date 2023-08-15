@@ -1,17 +1,13 @@
 ---
-title: Benutzer hinzufügen und konfigurieren
-seo-title: Adding and configuring users
-description: Mit den Benutzerverwaltungs-Einstellungen in der Administration Console können Sie Benutzer erstellen oder löschen sowie weitere Benutzereinstellungen konfigurieren.
-seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
-uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
+title: Hinzufügen und Konfigurieren von Benutzenden
+description: Mit den Benutzerverwaltungseinstellungen in der Administration Console können Sie Benutzer erstellen oder löschen und andere Benutzereinstellungen konfigurieren.
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
-discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: ht
-source-wordcount: '1735'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1733'
+ht-degree: 97%
 
 ---
 
@@ -74,7 +70,7 @@ Vermeiden Sie den Unterstrich (_) in kanonischen Namen z. B. `sample_user`. Wen
 
 Wenn Sie eine lokale oder Hybrid-Domain verwenden, werden Informationen zu Benutzern nur in der User Management-Datenbank gespeichert. Legen Sie für diese Benutzer bzw. Benutzerinnen den Geschäftskalenderschlüssel auf eine Zeichenfolge fest. Ordnen Sie dann den Geschäftskalenderschlüssel (die Zeichenfolge) einem Geschäftskalender im Arbeitsablauf für Formulare zu.
 
-Wenn Sie eine Unternehmens-Domain verwenden, befinden sich Informationen zu Benutzern in einem Speichersystem von Drittanbietern (z. B. einem LDAP-Ordner). User Management synchronisiert Benutzerinformationen aus dem Verzeichnis mit der User Management-Datenbank. Mit dieser Funktion können Sie einen Geschäftskalenderschlüssel einem Feld im LDAP-Verzeichnis zuordnen. Angenommen, jeder Benutzerdatensatz in Ihrem Verzeichnis enthält das Feld „Land“, und Sie möchten Geschäftskalender auf Grundlage des Landes zuweisen, in dem sich die Benutzerin bzw. der Benutzer befindet. In diesem Fall geben Sie den Feldnamen „Land“ als Wert für die Einstellung „Geschäftskalenderschlüssel“ an. Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld „Land“ im LDAP-Verzeichnis definierten Werte) Geschäftskalendern im Arbeitsablauf für Formulare zuordnen.
+Wenn Sie eine Unternehmens-Domain verwenden, befinden sich Informationen zu Benutzern in einem Speichersystem von Drittanbietern (z. B. einem LDAP-Ordner). User Management synchronisiert Benutzerinformationen aus dem Verzeichnis mit der User Management-Datenbank. Mit dieser Funktion können Sie einen Geschäftskalenderschlüssel einem Feld im LDAP-Ordner zuordnen. Angenommen, jeder Benutzerdatensatz in Ihrem Verzeichnis enthält das Feld „Land“, und Sie möchten Geschäftskalender auf Grundlage des Landes zuweisen, in dem sich die Benutzerin bzw. der Benutzer befindet. In diesem Fall geben Sie den Feldnamen „Land“ als Wert für die Einstellung „Geschäftskalenderschlüssel“ an. Anschließend können Sie die Geschäftskalenderschlüssel (die für das Feld „Land“ im LDAP-Verzeichnis definierten Werte) Geschäftskalendern im Arbeitsablauf für Formulare zuordnen.
 
 Weitere Informationen zu Geschäftskalendern, einschließlich der Zuordnung von Geschäftskalenderschlüsseln zu Geschäftskalendern, finden Sie unter [Konfigurieren von Geschäftskalendern](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
 
@@ -136,7 +132,6 @@ Vermeiden Sie das Erstellen von Benutzernamen, die mit einem Nummernzeichen (#) 
 
    * Um den Benutzer aus einer Gruppe zu entfernen, aktivieren Sie das Kontrollkästchen für die Gruppe, klicken auf **[!UICONTROL Löschen]** und anschließend auf **[!UICONTROL Speichern]**.
 
-
 1. Um die Rollen der Benutzerin bzw. des Benutzers zu bearbeiten, klicken Sie auf die Registerkarte **[!UICONTROL Rollenzuweisungen]** und führen die folgenden Aufgaben aus:
 
    * Um eine Liste der Rollen anzuzeigen, klicken Sie auf **[!UICONTROL Rollen suchen]**.
@@ -166,7 +161,7 @@ Wenn eine Benutzerin oder ein Benutzer ohne die erforderlichen Berechtigungen f�
 * Lösung „Correspondence Management“
 * AEM Forms Workspace
 
-   ***Hinweis **: Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.*
+  ***Hinweis **: Der Flex-Workspace für die AEM Forms-Version wird nicht mehr unterstützt.*
 
 * Forms Manager
 * Prozessberichterstellung

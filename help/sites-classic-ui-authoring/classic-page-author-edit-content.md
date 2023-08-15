@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
-workflow-type: ht
-source-wordcount: '1836'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1832'
+ht-degree: 95%
 
 ---
 
@@ -83,7 +83,7 @@ So fügen Sie eine neue Komponente ein:
 
    Abhängig von Ihrer Produktionsumgebung können diese Optionen unterschiedlich sein. Ausführliche Informationen zu Komponenten finden Sie unter [Standardkomponenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
-1. Fügen Sie die gewünschte Komponente auf der Seite ein. Doppelklicken Sie dann auf den Absatz. Daraufhin wird ein Fenster geöffnet, in dem Sie Ihren Absatz konfigurieren und Inhalte hinzufügen können.
+1. Fügen Sie die gewünschte Komponente auf der Seite ein. Doppelklicken Sie dann auf den Absatz. Daraufhin wird ein Fenster geöffnet, in dem Sie Ihren Absatz konfigurieren und Inhalt hinzufügen können.
 
 ### Einfügen einer Komponente mit der Inhaltssuche {#inserting-a-component-using-the-content-finder}
 
@@ -213,7 +213,7 @@ Es gibt zwei Symbole im unteren Rand des Sidekicks, die für die Vorschau von Se
 
   ![Symbol „Bearbeiten“, dargestellt durch ein Bleistiftsymbol.](do-not-localize/chlimage_1-6.png)
 
-* Mit dem Lupensymbol können Sie den Vorschaumodus auswählen, in dem die Seite so angezeigt wird, wie sie in der Publishing-Umgebung angezeigt wird (manchmal ist auch eine Seitenaktualisierung erforderlich):
+* Mit dem Lupensymbol können Sie den Vorschaumodus auswählen, in dem die Seite so angezeigt wird, wie sie in der Veröffentlichungsumgebung angezeigt wird (manchmal ist auch eine Seitenaktualisierung erforderlich):
 
   ![Symbol „Vorschaumodus“, dargestellt durch ein Lupensymbol.](do-not-localize/chlimage_1-7.png)
 
@@ -223,11 +223,11 @@ Es gibt zwei Symbole im unteren Rand des Sidekicks, die für die Vorschau von Se
 
 ## Suchen und Ersetzen {#find-replace}
 
-Für umfangreichere Bearbeitungen desselben Satzes können Sie mit der Menüoption **[Suchen und Ersetzen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** nach mehreren Instanzen einer Zeichenfolge innerhalb eines Abschnitts der Website suchen und diese ersetzen.
+Bei umfangreicheren Bearbeitungen desselben Satzes wird ein **[Suchen und Ersetzen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** -Menüoption können Sie innerhalb eines Bereichs der Website nach mehreren Instanzen einer Zeichenfolge suchen und diese ersetzen.
 
 ## Sperren einer Seite {#locking-a-page}
 
-AEM bietet Ihnen die Möglichkeit, eine Seite zu sperren, sodass niemand außer Ihnen den Inhalt bearbeiten kann. Dies ist hilfreich, wenn Sie eine Vielzahl von Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren möchten.
+AEM ermöglicht das Sperren einer Seite, sodass niemand außer Ihnen den Inhalt ändern kann. Dies ist hilfreich, wenn Sie eine Vielzahl von Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren möchten.
 
 >[!CAUTION]
 >

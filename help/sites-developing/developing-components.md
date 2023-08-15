@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
-workflow-type: ht
-source-wordcount: '3456'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3454'
+ht-degree: 98%
 
 ---
 
@@ -95,17 +95,17 @@ Der Mechanismus zum Trennen der Logik von der Erscheinung hilft zu verdeutlichen
 
 ### Verwendung von Java {#using-java}
 
-[Mit der Java-Anwendungs-API von HTL kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen. ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=de?lang=de) Dies ermöglicht es Ihnen, Java-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
+[Mit der Java-Anwendungs-API von HTL kann eine HTL-Datei auf Hilfsmethoden in einer benutzerdefinierten Java-Klasse zugreifen. ](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=de) Dies ermöglicht es Ihnen, Java-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
 
 ### Verwenden von JavaScript {#using-javascript}
 
-[Die HTL JavaScript Use-API ermöglicht es einer HTL-Datei, auf den in JavaScript geschriebenen Hilfscode zuzugreifen](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=de). Dies ermöglicht es Ihnen, JavaScript-Code zu verwenden, um die Logik zum Auswählen und Konfigurieren des Komponenteninhalts zu implementieren.
+[Die HTL JavaScript Use-API ermöglicht es einer HTL-Datei, auf den in JavaScript geschriebenen Hilfscode zuzugreifen](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=de). Auf diese Weise können Sie JavaScript-Code verwenden, um die Logik für die Auswahl und Konfiguration des Komponenteninhalts zu implementieren.
 
 ### Verwendung Client-seitiger HTML-Bibliotheken {#using-client-side-html-libraries}
 
 Moderne Websites beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein.
 
-Um Abhilfe zu schaffen, stellt AEM **Client-seitige Bibliotheksordner** zur Verfügung, mit denen Sie Ihren Client-seitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das Client-seitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
+Um dieses Problem zu beheben, bietet AEM **Clientseitige Bibliotheksordner**, mit dem Sie Ihren clientseitigen Code im Repository speichern, in Kategorien organisieren und definieren können, wann und wie jede Code-Kategorie dem Client bereitgestellt werden soll. Das Client-seitige Bibliotheksystem übernimmt dann das Herstellen der richtigen Links auf der endgültigen Webseite, um den korrekten Code zu laden.
 
 Lesen Sie [Verwendung Client-seitiger HTML-Bibliotheken](/help/sites-developing/clientlibs.md) für weitere Informationen.
 
@@ -201,7 +201,6 @@ Beispiele finden Sie hier:
 >* AEM-Gems-Session zum [Anpassen von Dialogfeldern](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-customizing-dialog-fields-in-touch-ui.html?lang=de).
 >* Der zugehörige Beispiel-Code wird unter [Codebeispiel – So passen Sie Dialogfelder an](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields) behandelt.
 >
-
 
 #### Erstellen eines neuen Feldes {#creating-a-new-field}
 
@@ -379,7 +378,6 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
    * Name: `cq:authoring`
    * Typ: `nt:unstructured`
 
-
 1. Erstellen Sie unter diesem einen neuen Knoten, der alle Zuordnungen zwischen Asset und Komponente enthält:
 
    * Name: `assetToComponentMapping`
@@ -396,27 +394,26 @@ Dieses Verhalten und die erforderliche Beziehung zwischen Asset und Komponente k
 
       * Typ: `String`
       * Wert: die Gruppe, zu der das zugehörige Asset gehört; zum Beispiel `media`
+
    * `assetMimetype`:
 
       * Typ: `String`
       * Wert: der mime-Typ des zugehörigen Assets; zum Beispiel `image/*`
+
    * `droptarget`:
 
       * Typ: `String`
       * Wert: das Ablageziel; zum Beispiel, `image`
+
    * `resourceType`:
 
       * Typ: `String`
       * Wert: die zugehörige Komponentenressource; zum Beispiel `foundation/components/image`
+
    * `type`:
 
       * Typ: `String`
       * Wert: der Typ, z. B. `Images`
-
-
-
-
-
 
 Beispiele finden Sie unter:
 

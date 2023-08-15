@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: b7ac457d-3689-4f5d-9ceb-ff6a9944e7eb
 exl-id: 57303608-c3e1-4201-8054-1a1798613e2c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '489'
 ht-degree: 43%
 
 ---
@@ -34,19 +34,19 @@ Der Dialogknoten wird anschließend im **Dialogfeldeditor** geöffnet:
 Die Benutzeroberfläche des Dialogfeldeditors besteht aus vier Bereichen:
 
 * **Palette** links oben Dieser Bereich enthält die Widgets, die zum Erstellen eines Dialogfelds verfügbar sind, z. B. Registerkarten-Bedienfelder, Textfelder, Auswahllisten und Schaltflächen. Sie können die verschiedenen Kategorien in der Palette erweitern, indem Sie auf die gewünschte Trennleiste klicken.
-* **Struktur** links unten Dieser Bereich zeigt die hierarchische Struktur von Knoten, aus denen die Dialogfelddefinition besteht. Sie können dieselbe Struktur sehen, indem Sie den Dialogfeldknoten in CRXDE Lite oder CRX Content Explorer erweitern.
+* **Struktur** links unten Dieser Bereich zeigt die hierarchische Struktur von Knoten, aus denen die Dialogfelddefinition besteht. Dieselbe Struktur können Sie sehen, indem Sie den Dialogfeldknoten in CRXDE Lite oder CRX Content Explorer erweitern.
 * Der Fensterbereich **Rendern** befindet sich in der Mitte des Fensters. Dieser Bereich zeigt, wie die im Strukturbereich definierte Dialogfelddefinition als tatsächliches Dialogfeld dargestellt wird.
 * Der Fensterbereich **Eigenschaften**. Dieser Bereich zeigt die Eigenschaften des Knotens an, der derzeit im Strukturbereich hervorgehoben ist.
 
 ### Verwenden des Dialogfeldeditors {#using-the-dialog-editor}
 
-Um ein Dialogfeld zu erstellen, zieht der Benutzer Elemente aus der Palette in den Strukturbereich und legt sie innerhalb der Dialogfelddefinitionshierarchie an die gewünschte Position ab.
+Um ein Dialogfeld zu erstellen, zieht der Benutzer Elemente aus der Palette in den Strukturbereich und legt sie innerhalb der Dialogfelddefinitionshierarchie ab.
 
 Sobald die gewünschte Struktur abgeschlossen ist, klickt der Benutzer auf **Speichern**, am oberen Rand des Renderbereichs.
 
 >[!CAUTION]
 >
->Beachten Sie, dass der Dialogfeldeditor für die Erstellung relativ einfache Dialogfelder vorgesehen ist und möglicherweise keine komplexeren Dialogfelddefinitionen bearbeiten kann. Wenn der Dialogfeldeditor die Bearbeitung einer Dialogfeldstruktur nicht zulässt, muss die Dialogfelddefinition manuell erstellt und/oder bearbeitet werden, indem die Knotenstruktur direkt bearbeitet wird, z. B. mit CRXDE Lite oder CRX Content Explorer.
+>Beachten Sie, dass der Dialogfeldeditor für die Erstellung relativ einfache Dialogfelder vorgesehen ist und möglicherweise keine komplexeren Dialogfelddefinitionen bearbeiten kann. Wenn der Dialog-Editor die Bearbeitung einer Dialogfeldstruktur nicht zulässt, muss die Dialogfelddefinition manuell erstellt und/oder bearbeitet werden, indem die Knotenstruktur direkt bearbeitet wird, z. B. mit CRXDE Lite oder CRX Content Explorer.
 
 ### Erstellen eines neuen Dialogfelds {#creating-a-new-dialog}
 

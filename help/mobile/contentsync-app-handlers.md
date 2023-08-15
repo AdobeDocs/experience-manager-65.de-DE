@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1409'
 ht-degree: 0%
 
 ---
@@ -25,9 +25,9 @@ ht-degree: 0%
 
 Beachten Sie die folgenden Richtlinien für die Entwicklung von Content Sync Handlern:
 
-* Handler müssen implementieren *com.day.cq.contentsync.handler.ContentUpdateHandler* (entweder direkt oder durch Erweitern einer Klasse, die dies tut)
+* Handler müssen implementieren *com.day.cq.contentsync.handler.ContentUpdateHandler* (entweder direkt oder erweitert eine Klasse, die dies tut)
 * Handler können *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* Handler dürfen nur &quot;true&quot;melden, wenn sie den ContentSync-Cache aktualisiert haben. Falsche Berichterstellung &quot;true&quot;ermöglicht AEM die Erstellung einer Aktualisierung.
+* Der Handler darf nur &quot;true&quot;melden, wenn er den ContentSync-Cache aktualisiert hat. Falsche Berichterstellung &quot;true&quot;ermöglicht AEM die Erstellung einer Aktualisierung.
 * Der Handler sollte den Cache nur aktualisieren, wenn der Inhalt tatsächlich geändert wurde. Schreiben Sie nicht in den Cache, wenn kein Leerzeichen erforderlich ist, und vermeiden Sie eine unnötige Aktualisierung.
 
 ## Vordefinierte Handler {#out-of-the-box-handlers}
@@ -40,7 +40,7 @@ Im Folgenden werden vordefinierte App-Handler aufgeführt:
 * ***path - String*** - Pfad zu einer Seite
 * ***extension - String*** - Erweiterung, die in der Anfrage verwendet werden soll. Für Seiten ist dies fast immer *html*, aber andere sind noch möglich.
 
-* ***selector - String*** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele: *touch* zum Rendern mobiler Versionen einer Seite.
+* ***selector - String*** - Optionale Selektoren, getrennt durch Punkt. Häufige Beispiele *touch* zum Rendern mobiler Versionen einer Seite.
 
 * ***deep - Boolesch*** - Optionale boolesche Eigenschaft, die bestimmt, ob auch untergeordnete Seiten einbezogen werden sollen. Der Standardwert ist *wahr.*
 
@@ -62,7 +62,7 @@ Im Folgenden werden vordefinierte App-Handler aufgeführt:
 
 **mobilecontentlisting** Führt den Inhalt der ZIP-Datei ContentSync auf. Dies wird von der clientseitigen js auf dem Gerät verwendet, um die anfängliche Dateikopie zu erstellen, die für AEM Apps erforderlich ist.
 
-Dieser Handler sollte jeder AEM Apps ContentSync-Konfiguration hinzugefügt werden.
+Dieser Handler sollte zu jeder AEM Apps ContentSync-Konfiguration hinzugefügt werden.
 
 * ***type - String - mobilecontentlisting***
 * ***path*** - Zeichenfolge - Leer bleiben, muss als gültiger Handler vorhanden sein, aber der Pfad wird als aktueller ContentSync-Cache abgeleitet. Dieser Wert wird ignoriert.
@@ -94,7 +94,7 @@ Der Handler sollte in AEM App Shell ContentSync Config (Knoten mit page-type=app
 * ***type - String - mobilecontentpackageslisting***
 * ***path **-**Zeichenfolge*** - Pfad zu einer App-Shell (Knoten mit page-type=app-instance).
 * ***targetRootDirectory - String*** - das Präfix, das Pfaden als Zielstamm für die Inhaltsaktualisierung für diesen Handler hinzugefügt werden soll.
-* ***order - Long* -**Reihenfolge, in der ContentSync diesen Handler ausführt. Diese Zahl sollte höher als alle anderen Handler wie 100 eingestellt werden. Sie sollte nach herkömmlichen Content-Handlern ausgeführt werden.
+* ***order - Long* -**Reihenfolge für ContentSync zum Ausführen dieses Handlers. Diese Zahl sollte höher als alle anderen Handler wie 100 eingestellt werden. Sie sollte nach herkömmlichen Content-Handlern ausgeführt werden.
 
 >[!NOTE]
 >
@@ -148,12 +148,12 @@ Nicht AEM-Eigenschaften im Knoten jcr:content des Cloud-Dienstes werden extrahie
 AEM Eigenschaften sind diejenigen, die mit &quot;cq&quot;, &quot;sling&quot;oder &quot;jcr&quot;benannt werden. Andere Eigenschaften können mithilfe der Eigenschaft &quot;excludeProperties&quot;im Konfigurationsknoten content-sync ausgeschlossen werden.
 
 * ***type - String*** - notificationsconfig
-* ***excludeProperties - String[]*** - Eigenschaften, die ausgeschlossen werden sollen
+* ***excludeProperties - String[]*** - Eigenschaften, die ausgeschlossen werden
 
 **contentsyncconfigcontent** Erfasst Inhalte aus einer vorhandenen ContentSync-Konfiguration.
 
 * ***type - String*** - contentsyncconfigcontent
-* ***path - String*** - Pfad zu einem der folgenden Elemente:
+* ***path - String*** - Pfad zu einem von:
 
    * andere ContentSync-Konfiguration
    * zu einem Inhaltspaket hinzu (verwendet seine phonegap-exportTemplate-Eigenschaft, um die ContentSync-Konfiguration zu finden)
@@ -200,9 +200,9 @@ Es ist möglich, mehrere mobileAppconfig-Handler zu konfigurieren, die jeweils e
 
 * Ausführen der Konfiguration
 * Exportieren Sie Ihre Konfiguration oder Überprüfung auf dem Gerät
-* Wenn das Rendern fehlschlägt, suchen Sie nach fehlenden *styles/assets/libs* oder überprüfen Sie, ob die Pfade zu *styles/assets/libs*
+* Wenn das Rendern fehlschlägt, suchen Sie nach fehlenden *styles/assets/libs* oder überprüfen Sie, ob der Pfad zu *styles/assets/libs*
 
-**Protokollierung** Aktivieren Sie die ContentSync-Debug-Protokollierung über OSGi-Logger-Konfigurationen im Paket `com.day.cq.contentsync` Auf diese Weise können Sie verfolgen, welche Handler ausgeführt haben und ob sie den Cache aktualisiert und die Aktualisierung des Caches gemeldet haben.
+**Protokollierung** Aktivieren Sie die ContentSync-Debug-Protokollierung über OSGi-Logger-Konfigurationen im Paket `com.day.cq.contentsync` Auf diese Weise können Sie verfolgen, welche Handler ausgeführt haben und ob sie den Cache aktualisiert und den Cache aktualisiert haben.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

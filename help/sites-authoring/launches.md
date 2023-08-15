@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '846'
-ht-degree: 97%
+source-wordcount: '843'
+ht-degree: 93%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 97%
 
 Launches helfen Ihnen, Inhalte für eine künftige Version effizient zu entwickeln.
 
-Ein Launch wird erstellt, damit Sie (unter Beibehaltung der aktuellen Seiten) Änderungen für eine spätere Veröffentlichung vornehmen können. Wenn Sie die Launch-Seiten bearbeitet und aktualisiert haben, leiten Sie diese wieder zurück in die Quelle und aktivieren dann die Quellseiten (auf der obersten Ebene). Durch die Weiterleitung wird der Launch-Inhalt wieder auf die Quellseiten kopiert und kann entweder manuell oder automatisch ausgeführt werden (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden).
+Ein Launch wird erstellt, damit Sie Änderungen für die zukünftige Veröffentlichung vornehmen können (unter Beibehaltung der aktuellen Seiten). Wenn Sie die Launch-Seiten bearbeitet und aktualisiert haben, leiten Sie diese wieder zurück in die Quelle und aktivieren dann die Quellseiten (auf der obersten Ebene). Durch die Weiterleitung wird der Launch-Inhalt wieder auf die Quellseiten kopiert und kann entweder manuell oder automatisch ausgeführt werden (abhängig von den Feldern, die beim Erstellen und Bearbeiten des Launches festgelegt wurden).
 
 Beispiel: Die saisonalen Produktseiten in Ihrem Online-Shop werden einmal pro Quartal aktualisiert, damit die präsentierten Produkte der aktuellen Saison entsprechen. Zur Vorbereitung auf die nächste Quartals-Aktualisierung können Sie einen Launch der relevanten Web-Seiten erstellen. Während des Quartals werden die folgenden Änderungen in der Launch-Kopie gesammelt:
 
@@ -44,7 +44,7 @@ In diesem Abschnitt wird beschrieben, wie Sie Launch-Seiten innerhalb der Sites-
 
 Mit Launches können Sie effizient den Inhalt für eine zukünftige Veröffentlichung einer oder mehrerer aktivierter Web-Seiten entwickeln.
 
-Launches ermöglichen Folgendes:
+Mit Launches können Sie:
 
 * Erstellen Sie eine Kopie Ihrer Quellseiten:
 
@@ -109,7 +109,7 @@ Launches ermöglichen Folgendes:
 
 ### Die Konsole „Launches“  {#the-launches-console}
 
-Die Konsole „Launches“ bietet eine Zusammenfassung Ihrer Launches und ermöglicht es Ihnen, die aufgeführten Aktionen auszuführen. Auf die Konsole kann wie folgt zugegriffen werden:
+Die Konsole &quot;Launches&quot;bietet einen Überblick über Ihre Launches und ermöglicht es Ihnen, Aktionen für die aufgelisteten Launches durchzuführen. Auf die Konsole kann wie folgt zugegriffen werden:
 
 * über die Konsole **Tools**: **Tools** > **Sites** > **Launches**.
 

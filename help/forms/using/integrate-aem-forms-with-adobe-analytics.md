@@ -3,16 +3,16 @@ title: Integrieren von AEM Forms mit Adobe Analytics
 description: AEM Forms lässt sich mit Adobe Analytics integrieren, um Leistungsdaten für Ihre veröffentlichten Formulare zu erfassen und zu verfolgen.
 docset: aem65
 exl-id: 030fe9f2-cd41-4290-b8a6-2f9ade6b5789
-source-git-commit: 45ca98ffb68e1e31e2f45f352e86f5aa1b6f0f00
-workflow-type: ht
-source-wordcount: '1806'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1805'
+ht-degree: 99%
 
 ---
 
 # Analytics mit [!DNL Adobe Launch] {#analyticsusingadobelaunch}
 
-AEM Forms lässt sich mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de) integrieren, damit Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und verfolgen können. Ziel der Analyse dieser Metriken ist es, Geschäftsanwendern Einblicke in das Verhalten der Endbenutzer zu geben und das Erlebnis der Datenerfassung zu optimieren. Sie können das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für adaptive Formulare erfassen und verfolgen.
+AEM Forms ist mit [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/overview.html?lang=de) , damit Sie Leistungsmetriken für Ihre veröffentlichten Formulare erfassen und verfolgen können. Ziel der Analyse dieser Metriken ist es, Geschäftsanwendern Einblicke in das Verhalten der Endbenutzer zu geben und das Erlebnis der Datenerfassung zu optimieren. Sie können das Verhalten sowohl angemeldeter als auch nicht angemeldeter (anonymer) Benutzer über Adobe Analytics für adaptive Formulare erfassen und verfolgen.
 
 Sie können auch Analysen mithilfe des Cloud Service-Frameworks durchführen. Weitere Informationen über die Integration von AEM Forms mit Cloud Service Framework finden Sie unter [Analytics mit Cloud Service-Framework](/help/forms/using/configure-analytics-forms-documents.md). Der Hauptvorteil von Adobe Launch gegenüber Analytics mit dem Cloud Service-Framework ist, dass Sie zusätzlich zu den Standardereignissen auch vorkonfigurierte Ereignisse definieren können. Die benutzerdefinierten Ereignisse werden mit dem Regeleditor oder den Kunden-Clientlibs definiert und den Ereignissen in [!DNL Adobe Analytics] zugeordnet.
 
@@ -143,7 +143,7 @@ Führen Sie die folgenden Schritte aus, um Regeln auf der Grundlage der Erweiter
 
    * **[!UICONTROL Variablen löschen]**: Verwenden Sie diesen Aktionstyp, um den Datenpfad zu löschen, damit das Ereignis nur einmal in [!DNL Adobe Analytics] registriert wird.
 
-      Es wird empfohlen, den Aktionstyp **[!UICONTROL Variablen festlegen]** zu verwenden, um die Ereignis- und Datenelemente zu konfigurieren, dann **[!UICONTROL Beacon senden]** zu verwenden, um Daten zu senden, und dann **[!UICONTROL Variablen löschen]** zu verwenden, um den Datenpfad zu löschen.
+     Es wird empfohlen, den Aktionstyp **[!UICONTROL Variablen festlegen]** zu verwenden, um die Ereignis- und Datenelemente zu konfigurieren, dann **[!UICONTROL Beacon senden]** zu verwenden, um Daten zu senden, und dann **[!UICONTROL Variablen löschen]** zu verwenden, um den Datenpfad zu löschen.
 
 1. Im Abschnitt **[!UICONTROL Props]** ordnen Sie die in der Dropdown-Liste verfügbaren Report Suite-Optionen den Datenelementen zu, die mit [Datenelemente konfigurieren](#configure-data-elements) definiert wurden.
 
@@ -232,6 +232,7 @@ Nachdem Sie [!DNL Adobe Analytics] für ein adaptives Formular aktiviert haben, 
 
 >[!NOTE]
 >Wenn beide Funktionen [Analytics mit Cloud Service Framework](/help/forms/using/configure-analytics-forms-documents.md) und **Analytics mit Adobe Launch** gleichzeitig aktiviert sind, hat **Analytics mit Adobe Launch** Vorrang.
+> 
 
 ### Erstellen von Regeln zur Erfassung benutzerdefinierter Ereignisse (optional) {#capture-custom-events}
 

@@ -11,10 +11,10 @@ topic-tags: configuring
 discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
-source-git-commit: a17b25e55a0bf16a0df42a7ba4768503618a19e2
-workflow-type: ht
-source-wordcount: '722'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 95%
 
 ---
 
@@ -52,11 +52,11 @@ Auf die Registerkarte **Konfiguration** kann unter anderem wie folgt zugegriffen
 
 * über das Dropdown-Menü:
 
-   **OSGi >**
+  **OSGi >**
 
 * Die URL; Beispiel:
 
-   `http://localhost:4502/system/console/configMgr`
+  `http://localhost:4502/system/console/configMgr`
 
 Eine Liste der Konfigurationen wird angezeigt:
 
@@ -64,14 +64,16 @@ Eine Liste der Konfigurationen wird angezeigt:
 
 Es gibt zwei Arten von Konfigurationen, die in den Dropdown-Listen auf dem Bildschirm verfügbar sind:
 
-* **Konfigurationen** Ermöglicht die Aktualisierung der vorhandenen Konfigurationen. Diese weisen eine persistente Identität (PID) auf und können Folgendes sein:
+* **Konfigurationen**
+Ermöglicht die Aktualisierung der vorhandenen Konfigurationen. Diese weisen eine persistente Identität (PID) auf und können Folgendes sein:
 
    * Standard und integraler Bestandteil von AEM – diese sind erforderlich. Durch Löschen werden die Werte auf die Standardeinstellungen zurückgesetzt.
    * Instanzen, die von Werkskonfigurationen erstellt wurden – diese Instanzen werden von Benutzenden erstellt. Durch Löschen wird die Instanz entfernt.
 
-* **Factory-Konfigurationen** Diese Konfigurationen ermöglichen die Erstellung einer Instanz des erforderlichen Funktionsobjekts.
+* **Factory-Konfigurationen**
+Ermöglicht die Erstellung einer Instanz des erforderlichen Funktionsobjekts.
 
-   Diesem Objekt wird eine Persistent Identity (PID) zugewiesen und es wird dann in der Dropdown-Liste „Konfigurationen“ aufgeführt.
+  Diesem Objekt wird eine Persistent Identity (PID) zugewiesen und es wird dann in der Dropdown-Liste „Konfigurationen“ aufgeführt.
 
 Bei Auswahl eines Eintrags aus den Listen werden die Parameter für die Konfiguration angezeigt:
 
@@ -81,25 +83,25 @@ Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgen
 
 * **Speichern**
 
-   Speichert die vorgenommenen Änderungen.
+  Speichert die vorgenommenen Änderungen.
 
-    Für eine Factory-Konfiguration wird hierdurch eine neue Instanz mit einer Persistent Identity erstellt. Die neue Instanz wird dann unter „Konfigurationen“ aufgelistet.
+   Für eine Factory-Konfiguration wird hierdurch eine neue Instanz mit einer Persistent Identity erstellt. Die neue Instanz wird dann unter „Konfigurationen“ aufgelistet.
 
 * **Zurücksetzen**
 
-   Setzt die auf dem Bildschirm gezeigten Parameter auf die zuletzt gespeicherten zurück.
+  Setzt die auf dem Bildschirm gezeigten Parameter auf die zuletzt gespeicherten zurück.
 
 * **Löschen**
 
-   Löscht die aktuelle Konfiguration. Bei einer Standardinstanz werden die Parameter auf die Standardeinstellungen zurückgesetzt. Wenn sie über eine Werkskonfiguration erstellt wurde, wird die spezifische Instanz gelöscht.
+  Löscht die aktuelle Konfiguration. Bei einer Standardinstanz werden die Parameter auf die Standardeinstellungen zurückgesetzt. Wenn sie über eine Werkskonfiguration erstellt wurde, wird die spezifische Instanz gelöscht.
 
 * **Bindung aufheben**
 
-   Hebt die Bindung zwischen der aktuellen Konfiguration und dem Bundle auf.
+  Hebt die Bindung zwischen der aktuellen Konfiguration und dem Bundle auf.
 
 * **Abbrechen**
 
-   Verwirft alle aktuellen Änderungen.
+  Verwirft alle aktuellen Änderungen.
 
 ## Bundles {#bundles}
 
@@ -107,11 +109,11 @@ Die Registerkarte **Pakete** stellt den Mechanismus zum Installieren der für A
 
 * über das Dropdown-Menü:
 
-   **OSGi >**
+  **OSGi >**
 
 * Die URL; Beispiel:
 
-   `http://localhost:4502/system/console/bundles`
+  `http://localhost:4502/system/console/bundles`
 
 Eine Liste mit Paketen wird angezeigt:
 
@@ -121,33 +123,33 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 * **Installieren oder aktualisieren**
 
-   Hiermit können Sie nach der Datei mit Ihrem Bundle **suchen** und festlegen, ob dieses sofort **gestartet** werden soll, und mit welcher **Startebene**.
+  Hiermit können Sie nach der Datei mit Ihrem Bundle **suchen** und festlegen, ob dieses sofort **gestartet** werden soll, und mit welcher **Startebene**.
 
 * **Neu laden**
 
-   Aktualisiert die angezeigte Liste.
+  Aktualisiert die angezeigte Liste.
 
 * **Pakete aktualisieren**
 
-   Diese Option prüft die Verweise aller Pakete und aktualisiert sie ggf.
+  Diese Option prüft die Verweise aller Pakete und aktualisiert sie ggf.
 
-    So werden möglicherweise nach einer Aktualisierung die alte und die neue Version aufgrund vorheriger Verweise weiter ausgeführt, Diese Option prüft und transferiert alle Verweise auf die neue Version, sodass die alte Version beendet werden kann.
+   So werden möglicherweise nach einer Aktualisierung die alte und die neue Version aufgrund vorheriger Verweise weiter ausgeführt, Diese Option prüft und transferiert alle Verweise auf die neue Version, sodass die alte Version beendet werden kann.
 
 * **Starten**
 
-   Startet ein Bundle gemäß der angegebenen Startebene.
+  Startet ein Bundle gemäß der angegebenen Startebene.
 
 * **Anhalten**
 
-   Stoppt das Bundle.
+  Stoppt das Bundle.
 
 * **Deinstallieren**
 
-   Deinstalliert das Bundle vom System.
+  Deinstalliert das Bundle vom System.
 
 * **Status anzeigen**
 
-   Die Liste gibt den aktuellen Status des Bundles an. Klicken Sie auf den Namen eines bestimmten Bundles, um weitere Informationen anzuzeigen.
+  Die Liste gibt den aktuellen Status des Bundles an. Klicken Sie auf den Namen eines bestimmten Bundles, um weitere Informationen anzuzeigen.
 
 >[!NOTE]
 >
@@ -155,15 +157,15 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 ## Komponenten {#components}
 
-Auf der Registerkarte **Komponenten** können die verschiedenen Komponenten aktiviert und/oder deaktiviert werden. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
+Die **Komponenten** können Sie die verschiedenen Komponenten aktivieren bzw. deaktivieren. Sie können mit einer der beiden folgenden Methoden auf die Registerkarte zugreifen:
 
 * über das Dropdown-Menü:
 
-   **Main >**
+  **Main >**
 
 * Die URL; Beispiel:
 
-   `http://localhost:4502/system/console/components`
+  `http://localhost:4502/system/console/components`
 
 Eine Liste der Komponenten wird angezeigt. Eine Reihe von Symbolen steht zur Verfügung, mit denen Sie die Komponenten aktivieren, deaktivieren oder ggf. Konfigurationsdetails für eine bestimmte Komponente öffnen können.
 

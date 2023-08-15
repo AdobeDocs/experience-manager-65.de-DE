@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2297'
+source-wordcount: '2296'
 ht-degree: 36%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 36%
 
 >[!NOTE]
 >
->Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden. Bestimmte Einzelheiten und Beispiele, die hier behandelt werden, beziehen sich auf die [hybris](https://www.sap.com/products/crm.html) Lösung.
+>Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden. Bestimmte Einzelheiten und Beispiele, die hier behandelt werden, beziehen sich auf die [hybris](https://www.sap.com/products/crm.html) -Lösung.
 
-Das Integrations-Framework enthält eine Integrationsebene mit einer API. Dies ermöglicht Ihnen Folgendes:
+Das Integrations-Framework enthält eine Integrationsebene mit einer API. Damit können Sie:
 
 * ein eCommerce-System einbinden und Produktdaten in AEM abrufen
 
@@ -59,7 +59,7 @@ Das eCommerce-Framework kann mit jeder eCommerce-Lösung verwendet werden. Die v
 
 * Die `cq:commerceProvider`-Eigenschaft wird auch als Verweis auf die geeignete Commerce-Factory-Definition verwendet.
 
-   * Beispiel: eine `cq:commerceProvider` -Eigenschaft mit dem Wert `hybris` korreliert mit der OSGi-Konfiguration für **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - wobei der Parameter `commerceProvider` hat auch den Wert `hybris`.
+   * Beispiel: eine `cq:commerceProvider` -Eigenschaft mit dem Wert `hybris` entspricht der OSGi-Konfiguration für **Day CQ Commerce Factory for Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - wobei der Parameter `commerceProvider` hat auch den Wert `hybris`.
 
    * In diesem Fall können weitere Eigenschaften wie **Catalog version** konfiguriert werden (falls zutreffend und verfügbar).
 
@@ -115,13 +115,13 @@ Um für Hybris 4 zu entwickeln, ist Folgendes erforderlich:
 
    * Deaktivieren Sie die Hybris 5-Unterstützung für den Default Response Parser-Service.
 
-   * Stellen Sie sicher, dass der Hybris Basic Authentication Handler-Dienst einen niedrigeren Dienstrang als der Hybris OAuth Handler-Dienst aufweist.
+   * Stellen Sie sicher, dass der Hybris Basic Authentication Handler-Dienst ein niedrigeres Dienstranking als der Hybris OAuth Handler-Dienst aufweist.
 
 ### Session-Handling {#session-handling}
 
 Hybris verwendet eine Benutzersitzung, um Informationen wie den Warenkorb des Kunden zu speichern. Die Sitzungs-ID wird von Hybris in einer `JSESSIONID` -Cookie, das bei nachfolgenden Anfragen an hybris gesendet werden muss. Um zu verhindern, dass die Sitzungs-ID im Repository gespeichert wird, ist sie in einem anderen Cookie kodiert, das im Browser des Käufers gespeichert ist. Die folgenden Schritte werden ausgeführt:
 
-* Bei der ersten Anfrage wird kein Cookie für die Anfrage des Käufers gesetzt. , sodass eine Anfrage an die Hybris-Instanz gesendet wird, um eine Sitzung zu erstellen.
+* Bei der ersten Anfrage wird kein Cookie für die Anfrage des Käufers gesetzt. Daher wird eine Anfrage an die hybris-Instanz gesendet, eine Sitzung zu erstellen.
 
 * Die Sitzungs-Cookies werden aus der Antwort extrahiert, als Code in ein neues Cookie (z. B. `hybris-session-rest`) eingebettet und in der Antwort an den Erstkäufer festgelegt. Die Kodierung in einem neuen Cookie ist erforderlich, da das ursprüngliche Cookie nur für einen bestimmten Pfad gültig ist und ansonsten in nachfolgenden Anfragen nicht vom Browser zurückgesendet wird. Die Pfadinformationen müssen auch dem -Wert des Cookies hinzugefügt werden.
 
@@ -145,7 +145,7 @@ Hybris verwendet eine Benutzersitzung, um Informationen wie den Warenkorb des Ku
 
   `CommerceSession.getUserContext()`
 
-* Eigentümer des **payment** Verarbeitungsverbindung
+* Eigentümer ist auch das **payment** Verarbeitungsverbindung
 
 * Sie steuert ebenfalls die Verbindung für die **Auftragserfüllung**.
 
@@ -187,7 +187,7 @@ Produktdaten, die in Hybris gepflegt werden, müssen in AEM verfügbar sein. Der
 
    * Hinzufügen eines Produkts zu einem **Online** -Katalogversion erfordert die Aktivierung der Produktseite.
 
-   * Das Entfernen eines Produkts erfordert eine Deaktivierung.
+   * Das Entfernen eines Produkts muss deaktiviert werden.
 
 * Die Aktivierung einer Seite in AEM c erfordert eine Prüfung (b) und ist nur möglich, wenn
 
@@ -203,9 +203,9 @@ Produktdaten, die in Hybris gepflegt werden, müssen in AEM verfügbar sein. Der
 
 #### Architektur von Produkt und Varianten {#architecture-of-product-and-variants}
 
-Ein einzelnes Produkt kann mehrere Varianten aufweisen. Beispielsweise kann es je nach Farbe und/oder Größe variieren. Ein Produkt muss definieren, welche Eigenschaften die Variante beeinflussen. Adobe bezeichnet diese Begriffe *Variantenachsen*.
+Ein einzelnes Produkt kann mehrere Variationen aufweisen, z. B. kann es je nach Farbe und/oder Größe variieren. Ein Produkt muss definieren, welche Eigenschaften die Variante beeinflussen; Adobe bezeichnet diese Eigenschaften *Variantenachsen*.
 
-Es sind jedoch nicht alle Eigenschaften Variantenachsen. Varianten können sich auch auf andere Eigenschaften auswirken. Beispielsweise kann der Preis von der Größe abhängen. Diese Eigenschaften können nicht vom Käufer ausgewählt werden und werden daher nicht als Variantenachsen betrachtet.
+Es sind jedoch nicht alle Eigenschaften Variantenachsen. Varianten können sich auch auf andere Eigenschaften auswirken, z. B. kann der Preis von der Größe abhängen. Diese Eigenschaften können nicht vom Käufer ausgewählt werden und werden daher nicht als Variantenachsen betrachtet.
 
 Jedes Produkt bzw. jede Variante steht für eine Ressource und ist daher im Verhältnis 1:1 einem Repository-Knoten zugeordnet. Eine Folge ist, dass ein bestimmtes Produkt und/oder eine bestimmte Variante durch ihren Pfad eindeutig identifiziert werden kann.
 
@@ -332,13 +332,13 @@ public class AxisFilter implements VariantFilter {
 
    * Produktknoten weisen die Eigenschaft „`nt:unstructured`“ auf.
 
-   * Ein Produktknoten kann entweder:
+   * Ein Produktknoten kann Folgendes sein:
 
       * Referenz mit den an anderer Stelle gespeicherten Produktdaten:
 
          * Produktverweise enthalten eine `productData`-Eigenschaft, die auf die Produktdaten verweist (in der Regel unter `/etc/commerce/products`).
 
-         * Die Produktdaten sind hierarchisch; Produktattribute werden von den Vorgängern eines Produktdatenknotens vererbt.
+         * Die Produktdaten sind hierarchisch. Produktattribute werden von den Vorgängern eines Produktdatenknotens übernommen.
 
          * Produktverweise können auch lokale Eigenschaften enthalten, die die in ihren Produktdaten angegebenen überschreiben.
 
@@ -410,7 +410,7 @@ public class AxisFilter implements VariantFilter {
 
 * Obwohl dies nicht direkt mit dem Warenkorb zusammenhängt, muss `CommerceSession` auch Katalogpreisinformationen angeben (da sie die Preise steuert).
 
-   * Preise können mehrere Modifikatoren aufweisen:
+   * Die Preise können mehrere Modifikatoren aufweisen:
 
       * Mengenrabatte.
       * Verschiedene Währungen.
@@ -439,7 +439,7 @@ public class AxisFilter implements VariantFilter {
 
 ![chlimage_1-13](/help/sites-developing/assets/chlimage_1-13a.png)
 
-#### Architektur des Auscheckens {#architecture-of-checkout}
+#### Architektur des Checkout {#architecture-of-checkout}
 
 **Warenkorb- und Bestelldaten**
 

@@ -4,10 +4,10 @@ description: Finden Sie Best Practices, die von Adobe-Engineering- und Beratungs
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1617'
-ht-degree: 78%
+source-wordcount: '1614'
+ht-degree: 77%
 
 ---
 
@@ -160,7 +160,7 @@ Weitere Informationen finden Sie unter [Übersetzen von Inhalt für mehrsprachig
 
 ## Anpassen von Rollouts {#customizing-rollouts}
 
-MSM-Rollout-Konfigurationen können in hohem Maße angepasst werden. Beachten Sie, dass die Automatisierung von Rollouts weit reichende Folgen haben kann. Als Best Practice sollten Sie *very* sorgfältig vor, z. B.:
+MSM-Rollout-Konfigurationen können in hohem Maße angepasst werden. Beachten Sie, dass die Automatisierung von Rollouts weit reichende Folgen haben kann. Als Best Practice sollten Sie *very* sorgfältig vor, beispielsweise:
 
 * Automatisieren von Rollouts (etwa mit [onModify-Auslösern](#onmodify))
 * Anpassen von [Knotentypen/-eigenschaften](#node-types-properties)
@@ -186,7 +186,7 @@ Auslöser vom Typ `onModify` sollten daher *nur* verwendet werden, wenn die Vort
 
 Zur Erinnerung:
 
-* Neben der Anpassung von Rollout-Aktionen ermöglicht MSM auch die Anpassung von Knoteneigenschaften, für die ein Rollout durchgeführt wird. Die [Mit der MSM OSGi-Konfiguration können Sie Knotentypen ausschließen](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) aus der Quelle in die Live Copy kopiert werden.
+* Neben der Anpassung von Rollout-Aktionen können Sie mit MSM auch die Knoteneigenschaften anpassen, für die ein Rollout durchgeführt wird. Die [Mit der MSM-OSGi-Konfiguration können Sie Knotentypen ausschließen](/help/sites-administering/msm-sync.md#excluding-properties-and-node-types-from-synchronization) aus der Quelle in die Live Copy kopiert werden.
 
 ## Weiterführende Informationen {#further-information}
 

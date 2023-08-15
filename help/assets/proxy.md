@@ -4,10 +4,10 @@ description: Ein Proxy ist eine [!DNL Experience Manager] -Instanz, die Proxy-Wo
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
-workflow-type: ht
-source-wordcount: '844'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '843'
+ht-degree: 88%
 
 ---
 
@@ -21,15 +21,15 @@ Wenn der Proxy eine separate [!DNL Experience Manager]-Instanz ist, wird die Las
 
 ## Proxy (HTTP-Zugriff) {#proxy-http-access}
 
-Proxys, deren Konfiguration Verarbeitungsaufträge zulässt, sind über das HTTP-Servlet verfügbar:   `/libs/dam/cloud/proxy`. Dieses Servlet erstellt einen Sling-Auftrag aus den geposteten Parametern. Der Auftrag wird dann der Proxy-Auftragswarteschlange hinzugefügt und mit dem entsprechenden Proxy-Worker verbunden.
+Proxys, deren Konfiguration Verarbeitungsaufträge zulässt, sind über das HTTP-Servlet verfügbar:   `/libs/dam/cloud/proxy`. Dieses Servlet erstellt einen Sling-Auftrag aus den veröffentlichten Parametern. Der Auftrag wird dann der Proxy-Auftragswarteschlange hinzugefügt und mit dem entsprechenden Proxy-Worker verbunden.
 
 ### Unterstützte Vorgänge {#supported-operations}
 
 * `job`
 
-   **Anforderungen**: Der Parameter `jobevent` muss als serialisierte Wertezuordnung festgelegt werden. Damit wird ein `Event` für einen Auftragsprozessor erstellt.
+  **Anforderungen**: Der Parameter `jobevent` muss als serialisierte Wertezuordnung festgelegt werden. Damit wird ein `Event` für einen Auftragsprozessor erstellt.
 
-   **Ergebnis**: Fügt einen neuen Auftrag hinzu. Wenn der Vorgang erfolgreich ist, wird eine eindeutige Auftrags-ID zurückgegeben.
+  **Ergebnis**: Fügt einen neuen Auftrag hinzu. Wenn der Vorgang erfolgreich ist, wird eine eindeutige Auftrags-ID zurückgegeben.
 
 ```shell
 curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
@@ -38,9 +38,9 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
 * `result`
 
-   **Anforderungen**: Der Parameter `jobid` muss festgelegt werden.
+  **Anforderungen**: Der Parameter `jobid` muss festgelegt werden.
 
-   **Ergebnis:** Gibt die JSON-Darstellung des Ergebnisknotens zurück, wie er durch den Auftragsprozessor erstellt wurde.
+  **Ergebnis:** Gibt die JSON-Darstellung des Ergebnisknotens zurück, wie er durch den Auftragsprozessor erstellt wurde.
 
 ```shell
 curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
@@ -49,9 +49,9 @@ curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
 
 * `resource`
 
-   **Anforderungen**: Der Parameter „jobid“ must festgelegt sein.
+  **Anforderungen**: Der Parameter „jobid“ must festgelegt sein.
 
-   **Ergebnis**: Gibt eine Ressource zurück, die dem jeweiligen Auftrag zugeordnet ist.
+  **Ergebnis**: Gibt eine Ressource zurück, die dem jeweiligen Auftrag zugeordnet ist.
 
 ```shell
 curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
@@ -60,9 +60,9 @@ curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
 
 * `remove`
 
-   **Anforderungen**: Der Parameter „jobid“ must festgelegt sein.
+  **Anforderungen**: Der Parameter „jobid“ must festgelegt sein.
 
-   **Ergebnisse:**: Entfernt einen gefundenen Auftrag.
+  **Ergebnisse:**: Entfernt einen gefundenen Auftrag.
 
 ```shell
 curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
@@ -142,17 +142,17 @@ Für die Einrichtung eines eigenen benutzerdefinierten Proxy-Workers müssen Sie
 
 * Einrichten und Implementieren (mit Sling Eventing): 
 
-   * benutzerdefiniertes Auftragsthema
-   * benutzerdefinierter Auftrags-Ereignishandler
+   * ein benutzerdefiniertes Auftragsthema
+   * einen benutzerdefinierten Auftragsereignishandler
 
-* Führen Sie mit der JobService-API die folgenden Aufgaben aus:
+* Verwenden Sie dann die JobService-API, um:
 
    * benutzerdefinierten Auftrag an Proxy senden
    * Auftrag verwalten
 
-* Wenn Sie den Proxy aus einem Workflow verwenden möchten, müssen Sie einen externen benutzerdefinierten Schritt implementieren. Verwenden Sie dafür die WorkflowExternalProcess-API und die JobService-API.
+* Wenn Sie den Proxy aus einem Workflow verwenden möchten, müssen Sie einen benutzerdefinierten externen Schritt mithilfe der WorkflowExternalProcess-API und der JobService-API implementieren.
 
-Die Vorgehensweise wird im folgenden Diagramm erläutert:
+Das folgende Diagramm und die folgenden Schritte beschreiben den weiteren Ablauf:
 
 ![chlimage_1-249](assets/chlimage_1-249.png)
 
@@ -174,7 +174,7 @@ Die Vorgehensweise wird im folgenden Diagramm erläutert:
 
    Als Beispiel dient `IDSJobProcessor.java` für den IDS-Proxy-Worker.
 
-1. Verwenden Sie `ProxyUtil.java` in dam-commons. Damit können Sie Aufträge mit dem dam-Proxy an Worker senden.
+1. Verwenden Sie `ProxyUtil.java` in dam-commons. Auf diese Weise können Sie Aufträge mithilfe des dam-Proxys an Worker senden.
 
 >[!NOTE]
 >

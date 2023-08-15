@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5241'
-ht-degree: 74%
+source-wordcount: '5239'
+ht-degree: 73%
 
 ---
 
@@ -55,7 +55,7 @@ Für die mit AEM bereitgestellten Standardberichte gilt Folgendes:
 >  `P:<name> = <value>` : eine Eigenschaft mit dem Namen `<name>` beschreibt, deren Wert auf `<value>` festgelegt sein muss.
 >
 >* Die Einrückung veranschaulicht die hierarchischen Abhängigkeiten zwischen den Knoten.
->* Elemente, getrennt durch | eine Liste möglicher Elemente; beispielsweise Typen oder Namen; Beispiel: `String|String[]` bedeutet, dass die Eigenschaft entweder &quot;String&quot;oder &quot;String&quot;sein kann[].
+>* Elemente getrennt durch | bezeichnet eine Liste möglicher Elemente, z. B. Typen oder Namen; `String|String[]` bedeutet, dass die Eigenschaft entweder String oder String sein kann[].
 >
 >* `[]` stellt ein Array dar, beispielsweise „String[]“ oder ein Array von Knoten wie in der [Abfragedefinition](#query-definition) festgelegt.
 >
@@ -70,7 +70,7 @@ Dem Framework für das Reporting liegen die folgenden Prinzipien zugrunde:
 
 * Sie basiert vollständig auf Ergebnismengen, die von einer vom CQ5 QueryBuilder ausgeführten Abfrage zurückgegeben werden.
 * Der Ergebnissatz definiert die im Bericht angezeigten Daten. Jede Zeile in der Ergebnismenge entspricht einer Zeile in der Tabellenansicht des Berichts.
-* Die für die Ausführung des Ergebnissatzes verfügbaren Vorgänge ähneln RDBMS-Konzepten. primär *grouping* und *aggregation*.
+* Die für die Ausführung der Ergebnismenge verfügbaren Vorgänge ähneln RDBMS-Konzepten, in erster Linie *grouping* und *aggregation*.
 
 * Der Datenabruf und die Datenverarbeitung erfolgen größtenteils serverseitig.
 * Der Kunde ist allein für die Anzeige der vorverarbeiteten Daten verantwortlich. Nur kleinere Verarbeitungsaufgaben (z. B. das Erstellen von Links im Zellinhalt) werden Client-seitig ausgeführt.
@@ -81,7 +81,7 @@ Das Framework für das Reporting (am Beispiel der Struktur eines Standardbericht
 
 ### Berichtseite {#report-page}
 
-Berichtsseite:
+Die Berichtsseite:
 
 * ist eine standardmäßige CQ5-Seite.
 * basiert auf einer [Standard-CQ5-Vorlage, für den Bericht konfiguriert](#report-template).
@@ -102,7 +102,7 @@ Jede Spalte ist eine Instanz der [`columnbase`-Komponente](#column-base-componen
 
 * Sie ist ein Absatz, der vom Absatzsystem (`reportbase`) des entsprechenden Berichts verwendet wird.
 * Definiert den Link zum [zugrunde liegender Ergebnissatz](#the-query-and-data-retrieval); d. h. definiert die spezifischen Daten, auf die in diesem Ergebnissatz verwiesen wird, und wie sie verarbeitet werden.
-* enthält zusätzliche Definitionen; wie die verfügbaren Aggregate und Filter sowie alle Standardwerte.
+* Enthält zusätzliche Definitionen, z. B. die verfügbaren Aggregate und Filter sowie alle Standardwerte.
 
 ### Abfrage und Datenabruf {#the-query-and-data-retrieval}
 
@@ -114,7 +114,7 @@ Die Abfrage:
 
 * Besteht normalerweise aus:
 
-   * Ein Stammpfad.
+   * Ein Stammverzeichnis.
 
      Dieser gibt die Unterbaumstruktur des zu durchsuchenden Repositorys an.
 
@@ -136,7 +136,7 @@ Dies ermöglicht Folgendes:
 
 * das Extrahieren und Ableiten von Werten aus dem zugrunde liegenden Ergebnissatz.
 
-  Beispielsweise lassen sich zwei Eigenschaftswerte als Einzelwert verarbeiten, indem die Differenz zwischen beiden berechnet wird.
+  Beispielsweise können Sie zwei Eigenschaftswerte als einen einzigen Wert verarbeiten, indem Sie die Differenz zwischen den beiden berechnen.
 
 * das Auflösen der extrahierten Werte. Dies kann auf unterschiedliche Weise erfolgen.
 
@@ -165,7 +165,7 @@ Die Schritte und Elemente lauten im Detail:
 
 1. Werte sind [vorverarbeitet](#processing-queue); wie für *apply* Phase.
 
-1. [Filter](#column-specific-definitions) (zugewiesen wird der *vorverarbeitet* phase) für die vorverarbeiteten Werte ausgeführt.
+1. [Filter](#column-specific-definitions) (zugewiesen wird der *vorverarbeitet* phase) für die vorverarbeiteten Werte ausgeführt wird.
 
 1. Die Werte werden entsprechend dem [definierten Resolver](#processing-queue) aufgelöst.
 1. [Filter](#column-specific-definitions) (zugewiesen wird der *resolved* phase) wird für die aufgelösten Werte ausgeführt.
@@ -769,7 +769,7 @@ N:definitions
                 P:format          // data type formatter
 ```
 
-#### Vorverarbeitung - Suchen und Ersetzen von Mustern {#preprocessing-find-and-replace-patterns}
+#### Vorverarbeitung - Muster suchen und ersetzen {#preprocessing-find-and-replace-patterns}
 
 Für die Vorverarbeitung können Sie ein `pattern` (definiert als [regulärer Ausdruck](https://de.wikipedia.org/wiki/Regulärer_Ausdruck) oder RegEx) angeben, das durch das Muster `replace` ersetzt wird:
 
@@ -807,7 +807,7 @@ Ein Ersetzungsmuster kann beispielsweise wie folgt aufgeschlüsselt werden:
 
 Diese Formatierer konvertieren einen numerischen Wert in eine relative Zeichenfolge.
 
-Dies kann beispielsweise für eine Zeitspalte verwendet werden, die die Aggregate `min`, `avg` und `max` zulässt. As `min`/ `avg`/ `max` Aggregate werden als *Zeitunterschied* (z. B. `10 days ago`), benötigen sie einen Datenformatierer. Dazu wird auf die aggregierten Werte `min`/ `avg`/ `max` ein Formatierer `datedelta` angewendet. Wenn auch ein Aggregat `count` verfügbar ist, dann ist dafür kein Formatierer erforderlich, ebenso wenig wie für den ursprünglichen Wert..
+Dies kann beispielsweise für eine Zeitspalte verwendet werden, die die Aggregate `min`, `avg` und `max` zulässt. As `min`/ `avg`/ `max` Aggregate werden als *Zeitunterschied* (zum Beispiel: `10 days ago`), benötigen sie einen Datenformatierer. Dazu wird auf die aggregierten Werte `min`/ `avg`/ `max` ein Formatierer `datedelta` angewendet. Wenn auch ein Aggregat `count` verfügbar ist, dann ist dafür kein Formatierer erforderlich, ebenso wenig wie für den ursprünglichen Wert..
 
 Derzeit sind die folgenden Datentypformatierer verfügbar:
 
@@ -1258,7 +1258,7 @@ Um diese Schritte zu veranschaulichen, wird im folgenden Beispiel ein Bericht de
 
    * nach allen Knoten des Typs `sling:OsgiConfig` sucht.
    * sowohl `pie`- als auch `lineseries`-Diagramme anzeigt.
-   * stellt ein Dialogfeld bereit, in dem der Benutzer den Bericht konfigurieren kann
+   * bietet ein Dialogfeld zum Konfigurieren des Berichts
 
 1. Definieren Sie die Komponente für die erste Spalte (columnbase) . Zum Beispiel `bundlecol[cq:Component]` unter `/apps/cq/reporting/components/osgireport`.
 
@@ -1397,7 +1397,7 @@ Diese können über das Konfigurationsmenü der Web-Konsole eingesehen werden (b
 * **Pfad zu Berichten** definiert den Pfad, in dem sich die Berichte befinden. Dies wird vom Snapshot-Dienst verwendet, um die Berichte zu bestimmen, für die Momentaufnahmen erstellt werden sollen.
 * **Tägliche Momentaufnahmen** definiert die Stunde jedes Tages, in der täglich Momentaufnahmen gemacht werden. Die angegebene Stunde befindet sich in der lokalen Zeitzone des Servers.
 * **Stündliche Momentaufnahmen** definiert die Minute jeder Stunde, in der stündliche Momentaufnahmen gemacht werden.
-* **Zeilen (max.)** definiert die maximale Anzahl von Zeilen, die für jede Momentaufnahme gespeichert werden. Dieser Wert sollte nach vernünftigem Ermessen ausgewählt werden. Wenn es zu hoch ist, wirkt sich dies auf die Größe des Repositorys aus. Wenn es zu niedrig ist, sind die Daten aufgrund der Art und Weise, wie historische Daten verarbeitet werden, möglicherweise nicht genau.
+* **Zeilen (max.)** definiert die maximale Anzahl von Zeilen, die für jede Momentaufnahme gespeichert werden. Dieser Wert sollte vernünftig gewählt werden. Wenn er zu hoch ist, wirkt sich dies auf die Größe des Repositorys aus, wenn er zu niedrig ist, sind die Daten aufgrund der Art und Weise, wie historische Daten verarbeitet werden, möglicherweise nicht genau.
 * **Falsche Daten** – wenn diese Option aktiviert ist, können falsche Verlaufsdaten mithilfe der `fakedata`-Auswahl erstellt werden. Wenn diese Option deaktiviert ist, wird bei Verwendung der `fakedata`-Auswahl eine Ausnahme ausgelöst.
 
   Da es sich um falsche Daten handelt, dürfen sie *ausschließlich* zu Test- und Debugging-Zwecken verwendet werden.
@@ -1414,7 +1414,7 @@ Diese können über das Konfigurationsmenü der Web-Konsole eingesehen werden (b
 
 ### Cache-Einstellungen (Day CQ Reporting Cache) {#cache-settings-day-cq-reporting-cache}
 
-* **Aktivieren** ermöglicht es Ihnen, das Zwischenspeichern von Berichtsdaten zu aktivieren oder zu deaktivieren. Durch Aktivierung des Berichts-Caches bleiben Berichtsdaten bei mehreren Anforderungen im Speicher. Dies kann die Leistung steigern, führt jedoch zu einem höheren Speicherverbrauch und kann unter extremen Umständen zu Speicherausfällen führen.
+* **Aktivieren** ermöglicht die Aktivierung oder Deaktivierung der Zwischenspeicherung von Berichtsdaten. Durch Aktivierung des Berichts-Caches bleiben Berichtsdaten bei mehreren Anforderungen im Speicher. Dies kann die Leistung steigern, führt jedoch zu einem höheren Speicherverbrauch und kann unter extremen Umständen zu Speicherausfällen führen.
 * **TTL** definiert die Zeit (in Sekunden), für die Berichtsdaten zwischengespeichert werden. Eine höhere Zahl erhöht die Leistung, kann aber auch ungenaue Daten zurückgeben, wenn sich die Daten innerhalb des Zeitraums ändern.
 * **Max. Einträge** definiert die maximale Anzahl von Berichten, die gleichzeitig zwischengespeichert werden sollen.
 

@@ -7,10 +7,10 @@ topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '841'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 97%
 
 ---
 
@@ -26,7 +26,7 @@ Der angemeldete Benutzer muss Mitglied der Gruppe `workflow-users` sein. Der Ben
 
 ## Teilen eines einzelnen oder aller Elemente Ihres Posteingangs mit einem anderen Benutzer
 
-Mit dem AEM-Posteingang können Sie einzelne oder alle Elemente in Ihrem Posteingang für einen anderen Benutzer freigeben.
+Mit AEM Posteingang können Sie ein einzelnes oder alle Elemente in Ihrem Posteingang für einen anderen Benutzer freigeben.
 
 ### Alle Posteingangselemente freigeben
 

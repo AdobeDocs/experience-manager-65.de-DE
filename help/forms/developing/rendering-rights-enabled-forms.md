@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1463'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1459'
+ht-degree: 95%
 
 ---
 
@@ -104,7 +104,7 @@ So rendern Sie ein Formular mit aktivierten Nutzungsrechten mithilfe der Forms-A
 
    * Erstellen Sie ein Objekt `ReaderExtensionSpec`, indem Sie den Konstruktor verwenden.
    * Geben Sie den Alias der Anmeldeinformationen an, indem Sie die `setReCredentialAlias`-Methode des `ReaderExtensionSpec`-Objekts aufrufen und geben Sie einen Zeichenfolgenwert an, der den Alias-Wert darstellt.
-   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Nutzungsrecht festlegen, wenn die von Ihnen referenzierten Anmeldeinformationen dies zulassen. Das heißt, Sie können keine Nutzungsrechte festlegen, wenn die Anmeldeinformationen es Ihnen nicht erlauben, sie festzulegen. Beispiel. Um die Nutzungsrechte festzulegen, mit denen ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `setReFillIn`-Methode des `ReaderExtensionSpec`-Objekt auf und übergeben `true`.
+   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können kein Verwendungsrecht festlegen, wenn die Berechtigung es nicht erlaubt, es festzulegen. Beispiel. Um die Nutzungsrechte festzulegen, mit denen ein Benutzer Formularfelder ausfüllen und das Formular speichern kann, rufen Sie die `setReFillIn`-Methode des `ReaderExtensionSpec`-Objekt auf und übergeben `true`.
 
    >[!NOTE]
    >
@@ -157,7 +157,7 @@ Rendering eines Formulars mit aktivierten Rechten mithilfe der Forms API (Webser
 
    * Erstellen Sie ein Objekt `ReaderExtensionSpec`, indem Sie den Konstruktor verwenden.
    * Geben Sie den Alias der Anmeldeinformationen an, indem Sie die `setReCredentialAlias`-Methode des `ReaderExtensionSpec`-Objekts aufrufen und geben Sie einen Zeichenfolgenwert an, der den Alias-Wert darstellt.
-   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Nutzungsrecht festlegen, wenn die von Ihnen referenzierten Anmeldeinformationen dies zulassen. Das heißt, Sie können keine Nutzungsrechte festlegen, wenn die Berechtigung Ihnen nicht erlaubt, diese festzulegen. Um die Nutzungsrechte festzulegen, die es einem Benutzer erlauben Formularfelder auszufüllen und das Formular zu speichern, rufen Sie die `setReFillIn`-Methode des `ReaderExtensionSpec`-Objekts auf und übergeben Sie `true`.
+   * Legen Sie die einzelnen Nutzungsrechte fest, indem Sie die entsprechende Methode aufrufen, die zum `ReaderExtensionSpec`-Objekt gehört. Sie können jedoch nur dann ein Verwendungsrecht festlegen, wenn die von Ihnen referenzierte Berechtigung dies zulässt. Das heißt, Sie können kein Verwendungsrecht festlegen, wenn die Berechtigung es nicht erlaubt, es festzulegen. Um die Nutzungsrechte festzulegen, die es einem Benutzer erlauben Formularfelder auszufüllen und das Formular zu speichern, rufen Sie die `setReFillIn`-Methode des `ReaderExtensionSpec`-Objekts auf und übergeben Sie `true`.
 
 1. Rendern eines Formulars mit aktivierten Rechten
 

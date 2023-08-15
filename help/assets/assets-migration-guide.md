@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '1799'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1797'
+ht-degree: 55%
 
 ---
 
@@ -18,17 +18,17 @@ Beim Migrieren von Assets nach [!DNL Adobe Experience Manager] sind verschiedene
 
 ## Voraussetzungen {#prerequisites}
 
-Bevor Sie einen Schritt dieser Methodik tatsächlich ausführen, lesen Sie sich die Anleitungen in den [Tipps zur Assets-Leistungsoptimierung](performance-tuning-guidelines.md) durch und setzen Sie diese um. Viele dieser Schritte, etwa die Konfiguration einer maximalen Anzahl gleichzeitiger Aufträge, führt zu einer deutlich höheren Stabilität und Leistung der Server unter Last. Andere Schritte wie die Konfiguration eines Dateidatenspeichers erweisen sich als wesentlich schwieriger, nachdem Assets in das System geladen wurden.
+Bevor Sie einen Schritt dieser Methodik tatsächlich ausführen, lesen Sie sich die Anleitungen in den [Tipps zur Assets-Leistungsoptimierung](performance-tuning-guidelines.md) durch und setzen Sie diese um. Viele der Schritte, z. B. die Konfiguration der maximalen Anzahl gleichzeitiger Aufträge, verbessern die Stabilität und Leistung des Servers unter Last erheblich. Andere Schritte wie das Konfigurieren eines Dateidatenspeichers sind nach dem Laden des Systems mit Assets viel schwieriger durchzuführen.
 
 >[!NOTE]
 >
 >Die folgenden Tools zur Asset-Migration sind nicht Teil von [!DNL Experience Manager] und werden von Adobe nicht unterstützt: 
 >
->* Tag Maker von ACS AEM-Tools
->* CSV Asset Importer von ACS AEM-Tools
+>* Tag Maker für ACS AEM Tools
+>* CSV Asset Importer für ACS AEM Tools
 >* Bulk Workflow Manager von ACS Commons
->* Fast Action Manager von ACS Commons
->* Synthetic Workflow
+>* ACS Commons Fast Action Manager
+>* Synthetischer Workflow
 >
 >Hierbei handelt es sich um eine Open-Source-Software. Sie wird mit der [Apache v2-Lizenz](https://adobe-consulting-services.github.io/pages/license.html) abgedeckt. Um eine Frage zu stellen oder ein Problem zu melden, besuchen Sie den Bereich für die entsprechenden [GitHub-Probleme für ACS AEM-Tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) und [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
 
@@ -47,7 +47,7 @@ Die Migration von Assets nach [!DNL Experience Manager] erfolgt in mehreren Schr
 
 ### Deaktivieren von Workflows {#disabling-workflows}
 
-Deaktivieren Sie vor der Migration die Starter für den Workflow [!UICONTROL DAM-Update-Asset]. Am besten nehmen Sie zunächst alle Assets in das System auf und führen dann die Workflows stapelweise aus. Wenn Ihr System bereits „live“ ist, während die Migration durchgeführt wird, können Sie diese Aktivitäten so planen, dass sie außerhalb der Arbeitszeiten ausgeführt werden.
+Deaktivieren Sie vor der Migration die Starter für den Workflow [!UICONTROL DAM-Update-Asset]. Am besten nehmen Sie alle Assets in das System auf und führen Sie dann die Workflows in Batches aus. Wenn Sie bereits aktiv sind, während die Migration stattfindet, können Sie diese Aktivitäten so planen, dass sie außerhalb der Arbeitszeiten ausgeführt werden.
 
 ### Laden von Tags {#loading-tags}
 
@@ -55,26 +55,26 @@ Womöglich verfügen Sie bereits über eine Tag-Taxonomie für Ihre Bilder. Zwar
 
 ### Aufnehmen von Assets {#ingesting-assets}
 
-Leistung und Stabilität sind wichtige Faktoren bei der Aufnahme von Assets in das System. Da Sie eine große Datenmenge in das System laden, sollten Sie eine möglichst optimale Systemleistung sicherstellen, um den erforderlichen Zeitaufwand zu minimieren und eine Überlastung des Systems zu vermeiden, die zu einem Systemabsturz führen kann. Dies gilt insbesondere für Systeme, die bereits produktiv eingesetzt werden.
+Leistung und Stabilität sind bei der Aufnahme von Assets in das System von großer Bedeutung. Da Sie eine große Menge an Daten in das System laden, sollten Sie sicherstellen, dass das System so gut wie möglich funktioniert, um die erforderliche Zeit zu minimieren und eine Überlastung des Systems zu vermeiden, was zu einem Systemabsturz führen kann, insbesondere bei Systemen, die bereits in Produktion sind.
 
-Es gibt zwei Herangehensweisen zum Laden von Assets in das System: ein Push-basierter Ansatz mit HTTP oder ein Pull-basierter Ansatz mit JCR-APIs.
+Es gibt zwei Ansätze zum Laden der Assets in das System: einen Push-basierten Ansatz mit HTTP oder einen Pull-basierten Ansatz mit den JCR-APIs.
 
 #### Senden über HTTP {#pushing-through-http}
 
-Das Managed Services-Team von Adobe lädt Daten mit einem Tool namens Glutton in Kundenumgebungen. Glutton ist eine kleine Java-Anwendung, die alle Assets von einem Verzeichnis in ein anderes Verzeichnis einer [!DNL Experience Manager]-Implementierung lädt. Statt Glutton können Sie auch Tools wie Perl-Skripts zum Posten der Assets in das Repository verwenden.
+Das Managed Services-Team von Adobe lädt Daten mit einem Tool namens Glutton in Kundenumgebungen. Glutton ist eine kleine Java-Anwendung, die alle Assets von einem Verzeichnis in ein anderes Verzeichnis einer [!DNL Experience Manager]-Bereitstellung lädt. Statt Glutton können Sie auch Tools wie Perl-Skripts zum Posten der Assets in das Repository verwenden.
 
 Der Push-basierte Ansatz mit HTTP hat zwei wesentliche Nachteile:
 
-1. Die Assets müssen über HTTP an den Server übertragen werden. Dies ist mit einem gewissen (zeitlichen) Mehraufwand verbunden, sodass die Migration länger dauert.
-1. Wenn Tags und benutzerdefinierte Metadaten auf die Assets angewendet werden müssen, erfordert dieser Ansatz einen zweiten benutzerdefinierten Prozess, der zum Anwenden dieser Metadaten auf die Assets durchgeführt werden muss (nach dem Asset-Import).
+1. Die Assets müssen über HTTP an den Server übertragen werden. Dies erfordert einen gewissen Mehraufwand und ist zeitaufwendig, wodurch die Dauer der Migration verlängert wird.
+1. Wenn Sie über Tags und benutzerdefinierte Metadaten verfügen, die auf die Assets angewendet werden müssen, erfordert dieser Ansatz einen zweiten benutzerdefinierten Prozess, den Sie ausführen müssen, um diese Metadaten nach dem Import auf die Assets anzuwenden.
 
-Der andere Ansatz zur Aufnahme von Assets sieht einen Pull der Assets aus dem lokalen Dateisystem vor. Kann jedoch kein externes Laufwerk bzw. keine Netzwerkfreigabe an den Server angebunden werden, um den Pull-basierten Ansatz durchzuführen, sollten die Assets am besten über HTTP gepostet werden.
+Der andere Ansatz bei der Aufnahme von Assets besteht darin, Assets aus dem lokalen Dateisystem abzurufen. Wenn Sie jedoch kein externes Laufwerk oder keine Netzwerkfreigabe auf den Server bereitstellen können, um einen Pull-basierten Ansatz durchzuführen, ist die Veröffentlichung der Assets über HTTP die beste Option.
 
 #### Abrufen aus dem lokalen Dateisystem {#pulling-from-the-local-filesystem}
 
-[CSV Asset Importer von ACS AEM-Tools](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ruft Assets aus dem Dateisystem sowie Asset-Metadaten aus einer CSV-Datei zwecks Asset-Import ab. Die Experience Manager Asset Manager-API dient zum Importieren der Assets in das System und zum Anwenden der konfigurierten Metadateneigenschaften. Im Idealfall werden die Assets über eine Netzwerkdateibereitstellung oder über ein externes Laufwerk auf dem Server bereitgestellt.
+[CSV Asset Importer von ACS AEM-Tools](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ruft Assets aus dem Dateisystem sowie Asset-Metadaten aus einer CSV-Datei zwecks Asset-Import ab. Die Experience Manager Asset Manager-API dient zum Importieren der Assets in das System und zum Anwenden der konfigurierten Metadateneigenschaften. Idealerweise werden Assets über eine Netzwerkdateibereitstellung oder über ein externes Laufwerk auf dem Server bereitgestellt.
 
-Da Assets nicht über ein Netzwerk übertragen werden müssen, verbessert sich die Gesamtleistung erheblich, sodass diese Methode allgemein als effizienteste Möglichkeit zum Laden von Assets in das Repository gilt. Des Weiteren unterstützt das Tool auch die Aufnahme von Metadaten. Daher können Sie alle Assets und Metadaten in einem einzigen Schritt importieren und müssen keinen zusätzlichen zweiten Schritt zum Anwenden der Metadaten durch ein separates Tool erstellen.
+Da Assets nicht über ein Netzwerk übertragen werden müssen, verbessert sich die Gesamtleistung erheblich, und diese Methode wird im Allgemeinen als die effizienteste Methode zum Laden von Assets in das Repository betrachtet. Da das Tool die Metadatenaufnahme unterstützt, können Sie alle Assets und Metadaten in einem Schritt importieren, anstatt auch einen zweiten Schritt zu erstellen, um die Metadaten über ein separates Tool anzuwenden.
 
 ### Verarbeiten von Ausgabedarstellungen {#processing-renditions}
 
@@ -82,53 +82,53 @@ Nachdem Sie die Assets in das System geladen haben, müssen Sie sie über den Wo
 
 Wenn Sie den Workflow den Anforderungen entsprechend konfiguriert haben, stehen Ihnen zwei Optionen zur Ausführung zur Verfügung:
 
-1. Die einfachste Herangehensweise bietet [Bulk Workflow Manager von ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Mit diesem Tool können Sie eine Abfrage ausführen und die Ergebnisse der Abfrage durch einen Workflow verarbeiten. Darüber hinaus gibt es auch Optionen zum Festlegen von Stapelgrößen.
+1. Die einfachste Herangehensweise bietet [Bulk Workflow Manager von ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Mit diesem Tool können Sie eine Abfrage ausführen und die Ergebnisse der Abfrage mithilfe eines Workflows verarbeiten. Es gibt auch Optionen zum Festlegen von Stapelgrößen.
 1. Sie können [Fast Action Manager von ACS Commons](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) zusammen mit [Synthetic Workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html) verwenden. Dieser Ansatz erfordert zwar viel mehr Mitwirkung, Sie können jedoch den Verwaltungsaufwand für die [!DNL Experience Manager]-Workflow-Engine verringern und gleichzeitig die Verwendung von Server-Ressourcen optimieren. Darüber hinaus steigert der Fast Action Manager die Leistung durch die dynamische Überwachung der Serverressourcen und die Einschränkung der Systemlast. Beispielskripte wurden auf der Seite mit den ACS Commons-Funktionen bereitgestellt.
 
 ### Aktivieren von Assets {#activating-assets}
 
-Bei Bereitstellungen mit einer Veröffentlichungsstufe müssen Sie die Assets für die Veröffentlichungsfarm aktivieren. Zwar empfiehlt Adobe die Ausführung von mehr als einer Veröffentlichungsinstanz, dennoch ist es am effizientesten, alle Assets in einer Veröffentlichungsinstanz zu replizieren und dann diese Instanz zu klonen. Wird eine große Anzahl von Assets nach Auslösen einer Strukturaktivierung aktiviert, müssen Sie ggf. eingreifen. Der Grund: Beim Auslösen von Aktivierungen werden Elemente der Sling-Auftrags-/Even-Warteschlange hinzugefügt. Bei einer Warteschlangengröße von mehr als ca. 40.000 Elementen wird die Verarbeitung deutlich langsamer. Wenn die Größe dieser Warteschlange die Zahl von 100.000 Elementen übersteigt, wird die Systemstabilität beeinträchtigt.
+Bei Bereitstellungen mit einer Veröffentlichungsstufe müssen Sie die Assets in der Veröffentlichungsfarm aktivieren. Obwohl Adobe empfiehlt, mehr als eine Veröffentlichungsinstanz auszuführen, ist es am effizientesten, alle Assets in einer Veröffentlichungsinstanz zu replizieren und diese Instanz dann zu klonen. Wenn Sie eine große Anzahl von Assets aktivieren, müssen Sie nach dem Auslösen einer Strukturaktivierung möglicherweise eingreifen. Der Grund: Beim Auslösen von Aktivierungen werden Elemente der Sling-Auftrags-/Even-Warteschlange hinzugefügt. Nachdem die Größe dieser Warteschlange etwa 40.000 Elemente überschreitet, verlangsamt sich die Verarbeitung drastisch. Wenn die Größe dieser Warteschlange 100.000 Elemente überschreitet, leidet die Systemstabilität.
 
-Um hier Abhilfe zu schaffen, können Sie [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) für die Asset-Verwaltung einsetzen. Dies funktioniert ohne Sling-Warteschlangen und sorgt für weniger Mehraufwand, während der Workload gedrosselt wird, um eine Überlastung des Servers zu vermeiden. Ein Beispiel für die Verwendung von FAM zur Replikationsverwaltung finden Sie auf der Dokumentationsseite für die Funktion.
+Um dieses Problem zu umgehen, können Sie die [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) zur Verwaltung der Asset-Replikation. Dies funktioniert ohne die Sling-Warteschlangen, wodurch der Overhead verringert und gleichzeitig die Arbeitslast reduziert wird, um zu verhindern, dass der Server überlastet wird. Ein Beispiel für die Verwendung von FAM zur Verwaltung der Replikation finden Sie auf der Dokumentationsseite der Funktion.
 
 Zu weiteren Optionen zum Übertragen von Assets in die Veröffentlichungsfarm gehören u. a. [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) und [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), die als Tools mit Jackrabbit bereitgestellt werden. Eine andere Möglichkeit ist zudem [Grabbit](https://github.com/TWCable/grabbit), ein Open-Source-Tool für Ihre [!DNL Experience Manager]-Infrastruktur, das schneller sein soll als vlt.
 
-Jeder dieser Ansätze ist dahingehend eingeschränkt, dass die Assets in der Autoreninstanz nicht als aktiviert angezeigt werden. Um diese Assets mit dem korrekten Aktivierungsstatus zu kennzeichnen, müssen Sie ein Skript ausführen, damit die Assets als aktiviert markiert werden.
+Bei jedem dieser Ansätze besteht der Nachteil darin, dass die Assets in der Autoreninstanz nicht als aktiviert angezeigt werden. Um die Kennzeichnung dieser Assets mit dem korrekten Aktivierungsstatus zu verarbeiten, müssen Sie auch ein Skript ausführen, um die Assets als aktiviert zu markieren.
 
 >[!NOTE]
 >
->Adobe bietet weder Wartung noch Unterstützung für Grabbit.
+>Adobe verwaltet oder unterstützt Grabbit nicht.
 
 ### Klonen der Veröffentlichungsinstanz {#cloning-publish}
 
-Nach Aktivierung der Assets können Sie Ihre Veröffentlichungsinstanz klonen, um die zur Bereitstellung benötigte Anzahl an Kopien zu erstellen. Einen Server zu klonen, ist ein relativ unkomplizierter Vorgang. Dabei müssen jedoch einige wichtige Schritte berücksichtigt werden. So klonen Sie eine Veröffentlichungsinstanz:
+Nachdem die Assets aktiviert wurden, können Sie Ihre Veröffentlichungsinstanz klonen, um so viele Kopien zu erstellen, wie für die Bereitstellung erforderlich sind. Das Klonen eines Servers ist relativ einfach, es gibt jedoch einige wichtige Schritte, die Sie sich merken müssen. So klonen Sie die Veröffentlichung:
 
 1. Sichern Sie die Quellinstanz und den Datenspeicher.
-1. Stellen Sie die Sicherung der Instanz und des Datenspeichers am Zielspeicherort wieder her. Die folgenden Schritte beziehen sich allesamt auf diese neue Instanz.
+1. Stellen Sie die Sicherung der Instanz und des Datenspeichers am Zielspeicherort wieder her. Die folgenden Schritte beziehen sich alle auf diese neue Instanz.
 1. Führen Sie unter `crx-quickstart/launchpad/felix` eine Dateisystemsuche nach `sling.id` durch. Löschen Sie diese Datei.
 1. Suchen und löschen Sie etwaig vorhandene `repository-XXX`-Dateien im Stammverzeichnis.
 1. Bearbeiten Sie `crx-quickstart/install/org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` und `crx-quickstart/launchpad/config/org/apache/jackrabbit/oak/plugins/blob/datastore/FileDataStore.config`, um auf den Speicherort des Datenspeichers in der neuen Umgebung zu zeigen.
 1. Starten Sie die Umgebung.
-1. Aktualisieren Sie die Konfiguration aller Replikationsagenten auf Autorseite so, dass auf die korrekten Veröffentlichungsinstanzen verwiesen wird, bzw. die Agenten „Dispatcher leeren“ der neuen Instanz so, dass auf die korrekten Dispatcher für die neue Umgebung verwiesen wird.
+1. Aktualisieren Sie die Konfiguration von Replikationsagenten auf der/den Autoreninstanz(en), um auf die richtigen Veröffentlichungsinstanzen zu verweisen, oder die Dispatcher-Flush-Agenten auf der neuen Instanz, um auf die richtigen Dispatcher für die neue Umgebung zu verweisen.
 
 ### Aktivieren von Workflows {#enabling-workflows}
 
 Nach abgeschlossener Migration sollten die Starter für die Workflows [!UICONTROL DAM-Update-Asset] neu aktiviert werden, um die Ausgabegenerierung und Metadatenextraktion für die laufende, tagtägliche Systemnutzung zu unterstützen.
 
-## Migrieren zwischen zwei [!DNL Experience Manager]-Implementierungen {#migrating-between-aem-instances}
+## Migrieren zwischen zwei [!DNL Experience Manager]-Bereitstellungen {#migrating-between-aem-instances}
 
-Wenn es auch nicht so häufig vorkommt, müssen dennoch manchmal große Datenmengen zwischen zwei [!DNL Experience Manager]-Implementierungen migriert werden, etwa wenn Sie ein [!DNL Experience Manager]- bzw. Hardware-Upgrade durchführen oder auf ein neues Rechenzentrum migrieren, wie bei der AMS-Migration.
+Wenn es auch nicht so häufig vorkommt, müssen dennoch manchmal große Datenmengen zwischen zwei [!DNL Experience Manager]-Bereitstellungen migriert werden, etwa wenn Sie ein [!DNL Experience Manager]- bzw. Hardware-Upgrade durchführen oder auf ein neues Rechenzentrum migrieren, wie bei der AMS-Migration.
 
-In diesem Fall sind die Assets schon mit Metadaten aufgefüllt und Ausgabedarstellungen sind bereits generiert. Sie können sich einfach darauf konzentrieren, Assets zwischen Instanzen zu verschieben. Führen Sie beim Migrieren zwischen zwei [!DNL Experience Manager]-Implementierungen die folgenden Schritte aus:
+In diesem Fall sind die Assets schon mit Metadaten aufgefüllt und Ausgabedarstellungen sind bereits generiert. Sie können sich einfach darauf konzentrieren, Assets von einer Instanz in eine andere zu verschieben. Führen Sie beim Migrieren zwischen zwei [!DNL Experience Manager]-Bereitstellungen die folgenden Schritte aus:
 
 1. Deaktivieren von Workflows: Da Ausgabedarstellungen zusammen mit den Assets migriert werden, sollten Sie die Workflow-Starter für den Workflow [!UICONTROL DAM-Update-Asset] deaktivieren.
 
 1. Migrieren von Tags: Da Sie bereits Tags in die [!DNL Experience Manager]-Quellbereitstellung geladen haben, können Sie diese in einem Inhaltspaket erstellen und das Paket in der Zielinstanz installieren.
 
-1. Migrieren von Assets: Es werden zwei Tools zum Verschieben von Assets von einer [!DNL Experience Manager]-Implementierung zur anderen empfohlen:
+1. Migrieren von Assets: Es werden zwei Tools zum Verschieben von Assets von einer [!DNL Experience Manager]-Bereitstellung zur anderen empfohlen:
 
-   * Mit **Vault Remote Copy** (oder vlt rcp) können Sie vlt netzwerkübergreifend einsetzen. Nach Angabe eines Quell- und Zielverzeichnisses lädt vlt alle Repository-Daten von einer Instanz herunter und lädt diese in die andere Instanz. Die Dokumentation zum vlt rcp-Tool finden Sie unter [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **Grabbit** ist ein Open-Source-Tool zur Inhaltssynchronisierung, das von Time Warner Cable für die eigene [!DNL Experience Manager]-Implementierung entwickelt wurde. Durch die Nutzung kontinuierlicher Datenströme weist das Tool im Vergleich zu vlt rcp eine geringere Latenz auf. Darüber hinaus soll es zwei- bis zehnmal schneller sein als vlt rcp. Grabbit unterstützt zudem die alleinige Synchronisierung von Delta-Inhalten, sodass Änderungen nach erfolgreich abgeschlossener Erstmigration synchronisiert werden.
+   * **Vault Remote Copy** oder vlt rcp, ermöglicht Ihnen die Verwendung von vlt in einem Netzwerk. Nach Angabe eines Quell- und Zielverzeichnisses lädt vlt alle Repository-Daten von einer Instanz herunter und lädt diese in die andere Instanz. Die Dokumentation zum vlt rcp-Tool finden Sie unter [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
+   * **Grabbit** ist ein Open-Source-Tool zur Inhaltssynchronisierung, das von Time Warner Cable für die eigene [!DNL Experience Manager]-Implementierung entwickelt wurde. Da es kontinuierliche Datenströme verwendet, weist es im Vergleich zu vlt rcp eine geringere Latenz auf und beansprucht eine Geschwindigkeitsverbesserung von zwei- bis zehnmal schneller als vlt rcp. Grabbit unterstützt auch nur die Synchronisierung von Delta-Inhalten, wodurch Änderungen synchronisiert werden können, nachdem ein erster Migrationsdurchgang abgeschlossen wurde.
 
 1. Aktivieren von Assets: Befolgen Sie die Anweisungen zum [Aktivieren von Assets](#activating-assets) in der Dokumentation zur Erstmigration nach [!DNL Experience Manager].
 

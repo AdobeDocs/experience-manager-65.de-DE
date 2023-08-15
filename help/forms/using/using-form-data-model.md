@@ -10,10 +10,10 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1275'
-ht-degree: 49%
+source-wordcount: '1273'
+ht-degree: 47%
 
 ---
 
@@ -57,7 +57,7 @@ Sie können [adaptive Formulare](../../forms/using/creating-adaptive-form.md) un
 
    ![Create-af-2-1](assets/create-af-2-1.png)
 
-1. (**Nur adaptive Formularfragmente**) Sie können ein adaptives Formularfragment erstellen, das auf nur einem Datenmodellobjekt in einem Formulardatenmodell basiert. Erweitern **[!UICONTROL Definitionen des Formulardatenmodells]** Dropdown-Liste. Es listet alle Datenmodellobjekte im angegebenen Formulardatenmodell auf. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
+1. (**Nur adaptive Formularfragmente**) Sie können ein adaptives Formularfragment erstellen, das auf nur einem Datenmodellobjekt in einem Formulardatenmodell basiert. Erweitern **[!UICONTROL Definitionen des Formulardatenmodells]** angezeigt. Es listet alle Datenmodellobjekte im angegebenen Formulardatenmodell auf. Wählen Sie ein Datenmodellobjekt aus der Liste aus.
 
    ![create-af-3](assets/create-af-3.png)
 
@@ -111,7 +111,7 @@ Um ein adaptives Formular mit Beispieldaten in der Vorschau anzuzeigen, öffnen 
 
 AEM Forms bietet einen vordefinierten Vorbefüllungs-Dienst für Formulardatenmodelle, den Sie für adaptive Formulare und interaktive Kommunikation basierend auf dem Formulardatenmodell aktivieren können. Der Vorbefüllungs-Dienst fragt Datenquellen für Datenmodellobjekte im adaptiven Formular und in der interaktiven Kommunikation ab und füllt dementsprechend beim Rendern des Formulars oder der Kommunikation Daten vorab.
 
-Um den Vorbefüllungs-Dienst für Formulardatenmodell für ein adaptives Formular zu aktivieren, öffnen Sie die Eigenschaften des Containers für adaptive Formulare und wählen Sie **[!UICONTROL Vorfüllservice für Formulardatenmodell]** von **[!UICONTROL Vorbefüllungs-Dienst]** im Akkordeon Allgemein angezeigt. Speichern Sie anschließend die Eigenschaften.
+Um den Vorbefüllungs-Dienst für Formulardatenmodelle für ein adaptives Formular zu aktivieren, öffnen Sie die Eigenschaften des Containers für adaptive Formulare und wählen Sie **[!UICONTROL Vorfüllservice für Formulardatenmodell]** aus dem **[!UICONTROL Vorbefüllungs-Dienst]** im Akkordeon Allgemein angezeigt. Speichern Sie anschließend die Eigenschaften.
 
 ![prefill-service](assets/prefill-service.png)
 
@@ -125,7 +125,7 @@ Dialogfeld &quot;Eigenschaften bearbeiten&quot;für eine interaktive Kommunikati
 
 Sie können ein auf einem Formulardatenmodell basierendes Formular so konfigurieren, dass die vom Benutzer im Formular übermittelten Daten für ein Datenmodellobjekt bei der Übermittlung in dessen Datenquellen geschrieben werden. Um diesen Anwendungsfall zu erreichen, stellt AEM Forms [Übermittlungsaktion für Formulardatenmodell](../../forms/using/configuring-submit-actions.md), ist standardmäßig nur für adaptive Formulare verfügbar, die auf einem Formulardatenmodell basieren. Durch diese Aktion werden übermittelte Daten für ein Datenmodellobjekt in dessen Datenquelle geschrieben.
 
-Um die Übermittlungsaktion für Formulardatenmodelle zu konfigurieren, öffnen Sie die Adaptive Form-Container-Eigenschaften und wählen Sie **[!UICONTROL Übermitteln mit dem Formulardatenmodell]** aus dem Dropdown-Menü „Übermittlungsaktion“ unter dem Akkordeon „Übermittlung“. Suchen Sie dann ein Datenmodellobjekt und wählen Sie es aus dem **[!UICONTROL Name des zu sendenden Datenmodellobjekts]** Dropdown-Liste. Speichern Sie die Eigenschaften.
+Um die Übermittlungsaktion für Formulardatenmodelle zu konfigurieren, öffnen Sie die Adaptive Form-Container-Eigenschaften und wählen Sie **[!UICONTROL Übermitteln mit dem Formulardatenmodell]** aus dem Dropdown-Menü „Übermittlungsaktion“ unter dem Akkordeon „Übermittlung“. Suchen Sie dann ein Datenmodellobjekt aus dem **[!UICONTROL Name des zu sendenden Datenmodellobjekts]** angezeigt. Speichern Sie die Eigenschaften.
 
 Beim Senden des Formulars werden die Daten für das konfigurierte Datenmodellobjekt in die entsprechende Datenquelle geschrieben.
 
@@ -144,7 +144,7 @@ Sie können auch Formularanhänge mit der Objekteigenschaft des binären Datenmo
 
 ## Dienste in adaptiven Formularen mithilfe von Regeln aufrufen {#invoke-services}
 
-In einem auf einem Formulardatenmodell basierenden adaptiven Formular können Sie [Regeln erstellen](../../forms/using/rule-editor.md), um die im Formulardatenmodell konfigurierten Dienste aufzurufen. Für die Operation **[!UICONTROL Dienste aufrufen]** werden alle verfügbaren Dienste im Formulardatenmodell aufgelistet und Sie können die Eingabe- und Ausgabefelder für den Dienst wählen. Sie können auch die **Wert einstellen** Regeltyp zum Aufrufen eines Formulardatenmodelldienstes und zum Festlegen des Werts eines Felds auf die vom Dienst zurückgegebene Ausgabe.
+In einem auf einem Formulardatenmodell basierenden adaptiven Formular können Sie [Regeln erstellen](../../forms/using/rule-editor.md), um die im Formulardatenmodell konfigurierten Dienste aufzurufen. Die **[!UICONTROL Dienste aufrufen]** -Vorgang in einer Regel listet alle verfügbaren Dienste im Formulardatenmodell auf und ermöglicht die Auswahl von Eingabe- und Ausgabefeldern für den Dienst. Sie können auch die **Wert einstellen** Regeltyp zum Aufrufen eines Formulardatenmodelldienstes und zum Festlegen des Werts eines Felds auf die vom Dienst zurückgegebene Ausgabe.
 
 Beispielsweise ruft folgende Regel einen Get-Service auf, für den die Mitarbeiter-ID als Eingabe angegeben werden muss und der die entsprechenden Werte in den Feldern für die Angehörigen-ID, den Nachnamen, den Vornamen und das Geschlecht zurückgibt.
 

@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren der Sendeaktion
 seo-title: Configuring the Submit action
-description: Mit Forms können Sie eine Übermittlungsaktion konfigurieren, um zu definieren, wie ein adaptives Formular nach der Übermittlung verarbeitet wird. Sie können integrierte Übermittlungsaktionen verwenden oder eigene von Grund auf neu schreiben.
+description: Mit Forms können Sie eine Sendeaktion konfigurieren, um festzulegen, wie ein adaptives Formular nach der Übermittlung verarbeitet wird. Sie können integrierte Übermittlungsaktionen verwenden oder eigene von Grund auf neu schreiben.
 uuid: 4368d648-88ea-4f84-a051-46296a1a084e
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -9,10 +9,10 @@ discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1950'
-ht-degree: 84%
+source-wordcount: '1949'
+ht-degree: 83%
 
 ---
 
@@ -79,7 +79,7 @@ Konfigurieren der Übermittlungsaktion „An REST-Endpunkt übermitteln“
 >
 Alle Felder müssen über verschiedene Elementnamen verfügen, um als Parameter in der REST-URL weitergeleitet zu werden, auch dann, wenn die Felder in verschiedenen Bereichen platziert sind.
 
-### Veröffentlichen Sie gesendete Daten an eine Ressource oder einen externen REST-Endpunkt  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
+### Veröffentlichen Sie die übermittelten Daten an eine Ressource oder einen externen REST-Endpunkt  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
 
 Verwenden Sie die Aktion **An REST-Endpunkt übermitteln**, um die übertragenen Daten an eine Rest-URL zu veröffentlichen. Die URL kann sich auf einem internen (dem Server, auf dem das Formular gerendert wird) oder auf einem externen Server befinden.
 
@@ -136,7 +136,7 @@ Weitere Informationen zum Formulardatenmodell finden Sie unter [Datenintegration
 
 Mit der Option **Übermittlungsaktion für Forms Portal** werden über das AEM Forms-Portal Formulardaten zur Verfügung gestellt.
 
-Weitere Informationen zur Übermittlungsaktion für Forms Portal finden Sie unter [Komponente &quot;Drafts and Submissions&quot;](../../forms/using/draft-submission-component.md).
+Weitere Informationen zur Übermittlungsaktion für Forms Portal finden Sie unter [Komponente für Entwurf und Übermittlung](../../forms/using/draft-submission-component.md).
 
 ## AEM-Workflow aufrufen {#invoke-an-aem-workflow}
 

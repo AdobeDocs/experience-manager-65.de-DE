@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2068'
-ht-degree: 83%
+source-wordcount: '2067'
+ht-degree: 82%
 
 ---
 
@@ -437,11 +437,11 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
 1. Wählen Sie das Vorschausymbol aus:
 
-   ![Suchformulare in der Vorschau anzeigen](do-not-localize/chlimage_1-31.png)
+   ![Vorschau von Suchformularen anzeigen](do-not-localize/chlimage_1-31.png)
 
 1. Daraufhin werden die Suchformulare so angezeigt, wie sie in der Suchspalte der jeweiligen Konsole (vollständig eingeblendet) zu sehen sein werden.
 
-   ![Anzeigen einer Vorschau des Suchformulars](assets/chlimage_1-377.png)
+   ![Suchformular-Vorschau anzeigen](assets/chlimage_1-377.png)
 
 1. **Schließen** Sie die Vorschau, um zur Konfiguration zurückzukehren und sie fertigzustellen.
 
@@ -468,13 +468,13 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
 1. Wählen Sie die benötigte Konfiguration (z. B. **Seiten-Editor (Absatzsuche)**) und anschließend das Symbol **Löschen** in der Symbolleiste aus:
 
-   ![Löschen eines Formulars](assets/chlimage_1-378.png)
+   ![Formular löschen](assets/chlimage_1-378.png)
 
 1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
 
 ### Hinzufügen von Optionsprädikaten {#adding-options-predicates}
 
-Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein Element konfigurieren, nach dem gesucht werden soll. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
+Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein zu suchendes Element konfigurieren. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
 
 Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstellt wird) verdeutlicht die einzelnen Schritte:
 

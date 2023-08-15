@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3080'
-ht-degree: 97%
+source-wordcount: '3067'
+ht-degree: 91%
 
 ---
 
@@ -76,7 +76,7 @@ Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nach aktuelle
 
 * **Modusauswahl**
 
-  Zeigt den aktuellen [Modus](/help/sites-authoring/author-environment-tools.md#page-modes) an und ermöglicht die Auswahl eines anderen Modus, z. B. Bearbeiten, Layout, Timewarp oder Targeting.
+  Zeigt den aktuellen [mode](/help/sites-authoring/author-environment-tools.md#page-modes) und ermöglicht die Auswahl eines anderen Modus wie Bearbeiten, Layout, Timewarp oder Targeting.
 
   ![Modusauswahl](assets/chlimage_1-120.png)
 
@@ -88,7 +88,7 @@ Die Symbolleiste bietet Zugriff auf eine Vielzahl von Optionen. Je nach aktuelle
 
 * **Anmerken**
 
-  Hierüber können Sie die Seite mit [Anmerkungen](/help/sites-authoring/annotations.md) versehen (z. B. zu Prüfungszwecken). Nach der ersten Anmerkung ändert sich das Symbol in eine Zahl, die die Anzahl der Anmerkungen auf der Seite anzeigt.
+  Ermöglicht das Hinzufügen von [Anmerkungen](/help/sites-authoring/annotations.md) auf der Seite, wenn Sie eine Seite überprüfen. Nach der ersten Anmerkung ändert sich das Symbol in eine Zahl, die die Anzahl der Anmerkungen auf der Seite anzeigt.
 
   ![Anmerken](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -112,7 +112,7 @@ In der Benachrichtigung ist der Workflow aufgeführt, dem die Seite zugeordnet i
 
 Das Fertigstellen und Delegieren von Workflow-Schritten über die Benachrichtigungsleiste erfolgt auf die gleiche Art und Weise wie beim [Teilnehmen an Workflows](/help/sites-authoring/workflows-participating.md) über den Benachrichtigungs-Posteingang.
 
-Wenn die Seite mehreren Workflows unterliegt, werden in der Benachrichtigung rechts außen die Anzahl der Workflows sowie Pfeilschaltflächen angezeigt, über die Sie durch die einzelnen Workflows scrollen können.
+Wenn die Seite mehreren Workflows unterliegt, wird die Anzahl der Workflows am rechten Ende der Benachrichtigung zusammen mit Pfeiltasten angezeigt, sodass Sie durch die Workflows scrollen können.
 
 ![Benachrichtigung bezüglich der Anzahl an Workflows](assets/chlimage_1-122.png)
 
@@ -157,7 +157,7 @@ Sie können eine neue Komponente über das Feld **Komponenten hierher ziehen** d
 
    * Wenn Sie ein Desktop-Gerät verwenden, können Sie die Aktion per Doppelklick auf das Feld **Komponenten hierher ziehen** durchführen.
 
-   Das Dialogfeld **Neue Komponente einfügen** wird geöffnet. Dort können Sie die erforderliche Komponente auswählen:
+   Die **Neue Komponente einfügen** wird geöffnet, in dem Sie die gewünschte Komponente auswählen können:
 
    ![Neue Komponente einfügen](assets/screen_shot_2018-03-22at112650.png)
 
@@ -230,13 +230,13 @@ Die tatsächlichen für den Benutzer verfügbaren Aktionen werden abhängig von 
 
 * **Bearbeiten**
 
-  [Abhängig vom Komponententyp](/help/sites-authoring/default-components.md) können Sie hierüber den [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste angezeigt.
+  [Abhängig vom Komponententyp](/help/sites-authoring/default-components.md) Sie können [Inhalt der Komponente bearbeiten](#edit-content). Häufig wird eine Symbolleiste angezeigt.
 
   ![Bearbeiten](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Konfigurieren**
 
-  [Abhängig vom Komponententyp](/help/sites-authoring/default-components.md) können Sie hierüber die Eigenschaften der Komponente bearbeiten und konfigurieren. Häufig wird ein Dialogfeld geöffnet.
+  [Abhängig vom Komponententyp](/help/sites-authoring/default-components.md) Auf diese Weise können Sie die Eigenschaften der Komponente bearbeiten und konfigurieren. Häufig wird ein Dialogfeld geöffnet.
 
   ![Konfigurieren](do-not-localize/screen_shot_2018-03-22at112955.png)
 
@@ -280,25 +280,25 @@ Die tatsächlichen für den Benutzer verfügbaren Aktionen werden abhängig von 
 
 * **Gruppe**
 
-  Mit dieser Aktion können Sie mehrere Komponenten gleichzeitig auswählen. Dasselbe kann auf einem Desktop-Gerät durch **Strg+Klicken** bzw. **Befehl+Klicken** erreicht werden.
+  Damit können Sie mehrere Komponenten gleichzeitig auswählen. Dasselbe kann auf einem Desktop-Gerät durch **Strg+Klicken** bzw. **Befehl+Klicken** erreicht werden.
 
   ![Gruppe](do-not-localize/screen_shot_2018-03-22at113240.png)
 
-* **Übergeordnet**
+* **Übergeordnetes Element**
 
-  Hiermit können Sie die Komponente auswählen, die der ausgewählten Komponente übergeordnet ist.
+  Ermöglicht die Auswahl der übergeordneten Komponente der ausgewählten Komponente.
 
   ![Übergeordnetes Element](assets/screen_shot_2018-03-22at113028.png)
 
 * **Layout**
 
-  Hierüber können Sie das [Layout](/help/sites-authoring/editing-content.md#edit-component-layout) der ausgewählten Komponente ändern. Dies gilt nur für die ausgewählte Komponente und aktiviert nicht den [Layout-Modus](/help/sites-authoring/author-environment-tools.md#page-modes) für die gesamte Seite.
+  Auf diese Weise können Sie die [layout](/help/sites-authoring/editing-content.md#edit-component-layout) der ausgewählten Komponente. Dies gilt nur für die ausgewählte Komponente und aktiviert nicht den [Layout-Modus](/help/sites-authoring/author-environment-tools.md#page-modes) für die gesamte Seite.
 
   ![Layout](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **In Experience Fragment-Variante umwandeln**
 
-  Hierüber können Sie ein neues [Experience Fragment](/help/sites-authoring/experience-fragments.md) aus der ausgewählten Komponente erstellen oder einem bestehenden Experience Fragment hinzufügen.
+  Damit können Sie eine neue [Experience Fragment](/help/sites-authoring/experience-fragments.md) aus der ausgewählten Komponente oder fügen Sie sie einem vorhandenen Experience Fragment hinzu.
 
   ![In Experience-Fragment-Variante umwandeln](do-not-localize/screen_shot_2018-03-22at113033.png)
 
@@ -494,7 +494,7 @@ Für die Anzeige einer Seitenvorschau stehen zwei Optionen zur Verfügung:
 Beim Bearbeiten von Inhalt können Sie mithilfe des [Vorschaumodus](/help/sites-authoring/author-environment-tools.md#page-modes) eine Vorschau der Seite anzeigen. Dieser Modus:
 
 * Blendet diverse Bearbeitungsmechanismen aus, damit Sie einen schnellen Überblick darüber erhalten, wie die Seite veröffentlicht aussehen wird.
-* ermöglicht die Verwendung von Links zur Navigation.
+* Ermöglicht die Verwendung von Links zur Navigation.
 * aktualisiert **nicht** den Seiteninhalt.
 
 Bei der Bearbeitung einer Seite können Sie den Vorschaumodus über das Symbol rechts oben im Seiteneditor aufrufen:
@@ -507,7 +507,7 @@ Die Option **Als veröffentlicht anzeigen** ist über das Menü [Seiteninformati
 
 ## Sperren einer Seite   {#locking-a-page}
 
-AEM bietet Ihnen die Möglichkeit, eine Seite zu sperren, sodass niemand außer Ihnen den Inhalt bearbeiten kann. Dies ist hilfreich, wenn Sie eine Vielzahl von Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren möchten.
+AEM ermöglicht das Sperren einer Seite, sodass niemand außer Ihnen den Inhalt ändern kann. Dies ist hilfreich, wenn Sie eine Vielzahl von Bearbeitungen an einer bestimmten Seite vornehmen oder wenn Sie eine Seite für eine kurze Zeit einfrieren möchten.
 
 Eine Seite kann gesperrt werden durch:
 

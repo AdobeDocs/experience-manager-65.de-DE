@@ -10,10 +10,10 @@ discoiquuid: 1a32eb24-db3b-4fad-b1c7-6326b5af4e5e
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2f276e9d-b3c1-48f7-a94a-bdf7eb15a031
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 41%
+source-wordcount: '2111'
+ht-degree: 40%
 
 ---
 
@@ -32,7 +32,7 @@ Sie können ein adaptives Formularfragment von Grund auf neu erstellen oder ein 
 ### Neuerstellen von Fragmenten {#create-fragment-from-scratch}
 
 1. Melden Sie sich bei der Author-Instanz von AEM Forms unter https://[*Hostname*]:[*Port*]/aem/forms.html an.
-1. Klicken **Erstellen > Adaptives Formularfragment**.
+1. Klicks **Erstellen > Adaptives Formularfragment**.
 1. Geben Sie Titel, Namen, Beschreibung und Tags für das Fragment an.
 
    >[!NOTE]
@@ -64,7 +64,7 @@ Sie können ein adaptives Formularfragment von Grund auf neu erstellen oder ein 
 
 Im Bearbeitungsmodus können Sie eine beliebige adaptive Formularkomponente aus dem AEM Sidekick auf das Fragment ziehen. Weitere Informationen zu adaptiven Formularkomponenten finden Sie unter [Einführung in das Authoring adaptiver Formulare](../../forms/using/introduction-forms-authoring.md).
 
-Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Sie können dann Formularmodellelemente auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus der zugehörigen XDP oder XSD beibehalten werden.
+Wenn Sie außerdem ein XML-Schema oder eine XDP-Formularvorlage als Formularmodell für Ihr Fragment ausgewählt haben, wird in der Inhaltssuche eine neue Registerkarte mit der Formularmodellhierarchie angezeigt. Damit können Sie Formularmodellelemente per Drag &amp; Drop auf das Fragment ziehen. Die hinzugefügten Formularmodellelemente werden in Formularkomponenten konvertiert, während die ursprünglichen Eigenschaften aus der zugehörigen XDP oder XSD beibehalten werden.
 
 ### Bereich als Fragment speichern {#save-panel-as-a-fragment}
 
@@ -126,7 +126,7 @@ Führen Sie die folgenden Schritte aus, um vollständige Fragmente in Formularen
 
 ### Einfügen eines Fragments in ein adaptives Formular {#insert-a-fragment-in-an-adaptive-form}
 
-Die von Ihnen erstellten adaptiven Formularfragmente werden auf der Registerkarte Adaptive Formularfragmente in der AEM Inhaltssuche angezeigt. So fügen Sie ein adaptives Formularfragment in ein adaptives Formular ein:
+Die von Ihnen erstellten adaptiven Formularfragmente werden auf der Registerkarte Adaptive Formularfragmente in der AEM Inhaltssuche angezeigt. Einfügen eines adaptiven Formularfragments in ein adaptives Formular:
 
 1. Öffnen Sie das adaptive Formular im Bearbeitungsmodus, in das Sie ein adaptives Formularfragment einfügen möchten.
 1. Klicken Sie in der Seitenleiste auf **Assets** ![assets-browser](assets/assets-browser.png). Wählen Sie im Assets-Browser **Adaptive Formularfragmente** aus der Dropdown-Liste.
@@ -157,7 +157,7 @@ Sie können verschachtelte adaptive Formularfragmente erstellen, d. h. Sie könn
 
 ### Ändern von Fragmenten {#change-fragments}
 
-Sie können ein adaptives Formularfragment durch ein anderes ersetzen oder ändern, indem Sie die **Fragment-Asset auswählen** -Eigenschaft im Dialogfeld &quot;Komponente bearbeiten&quot;für ein adaptives Formularfragment-Bedienfeld.
+Sie können ein adaptives Formularfragment durch ein anderes ersetzen oder ändern, indem Sie **Fragment-Asset auswählen** -Eigenschaft im Dialogfeld &quot;Komponente bearbeiten&quot;für ein adaptives Formularfragment-Bedienfeld.
 
 ## Automatisches Zuordnen von Fragmenten für die Datenbindung {#auto-mapping-of-fragments-for-data-binding}
 
@@ -175,7 +175,7 @@ Sie können mithilfe der AEM Forms-Benutzeroberfläche mehrere Vorgänge für ad
 
 1. Rufen Sie `https://[hostname]:'port'/aem/forms.html` auf.
 
-1. Klicken **Auswählen** Wählen Sie in der Symbolleiste der AEM Forms-Benutzeroberfläche ein adaptives Formularfragment aus. In der Symbolleiste werden die folgenden Vorgänge angezeigt, die Sie für das ausgewählte adaptive Formularfragment ausführen können.
+1. Klicks **Auswählen** Wählen Sie in der Symbolleiste der AEM Forms-Benutzeroberfläche ein adaptives Formularfragment aus. In der Symbolleiste werden die folgenden Vorgänge angezeigt, die Sie für das ausgewählte adaptive Formularfragment ausführen können.
 
 <table>
  <tbody>

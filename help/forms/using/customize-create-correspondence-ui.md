@@ -11,10 +11,10 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1087'
-ht-degree: 58%
+source-wordcount: '1086'
+ht-degree: 56%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 58%
 
 ## Übersicht {#overview}
 
-Mit der Correspondence Management können Sie die dazugehörige Lösungsvorlage so umbenennen, dass Sie einen besseren Markenwert erzielen und die Markenstandards Ihres Unternehmens erfüllt werden. Das Rebranding der Benutzeroberfläche umfasst das Ändern des Organisationslogos, das oben links in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;angezeigt wird.
+Mit Correspondence Management können Sie die zugehörige Lösungsvorlage umbenennen, um einen besseren Markenwert zu erzielen und die Branding-Standards Ihres Unternehmens einzuhalten. Das Rebranding der Benutzeroberfläche umfasst das Ändern des Organisationslogos, das oben links in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;angezeigt wird.
 
 Sie können das Logo in der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;mit dem Logo Ihres Unternehmens ändern.
 
@@ -80,8 +80,8 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
       >    
       >    
       >    * Aktualisierung Ihrer Instanz
-      >    * Anwenden eines Hotfixes
-      >    * Installieren eines Feature Packs
+      >    * Hotfix anwenden
+      >    * Feature Pack installieren
       >    
       >
 
@@ -149,7 +149,7 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf 
 
    ![Beispiele für benutzerdefinierte Logodatei](assets/geometrixx-outdoors.png)
 
-   Beispiel: CustomLogo.png wird als benutzerdefiniertes Logo verwendet
+   Beispiel: CustomLogo.png als benutzerdefiniertes Logo
 
 1. Klicken Sie auf **Alle speichern**.
 
@@ -166,7 +166,7 @@ Führen Sie die folgenden Schritte aus, um das Stylesheet für die Wiedergabe de
 
    Schritte zum Erstellen der Datei customcss.css :
 
-   1. Klicken Sie mit der rechten Maustaste auf die **css** Ordner und wählen Sie **Erstellen > Datei erstellen**.
+   1. Rechtsklicken Sie auf die **css** Ordner und auswählen **Erstellen > Datei erstellen**.
    1. Geben Sie im Dialogfeld „Neue Datei“ als Namen des CSS `customcss.css` an (Sie können keinen anderen Dateinamen verwenden) und klicken Sie auf **OK**.
    1. Fügen Sie der neu erstellten CSS-Datei den folgenden Code hinzu. Geben Sie in content:url im Code den Bildnamen an, den Sie in den imgs-Ordner in CRXDE hochgeladen haben.
 

@@ -12,31 +12,31 @@ discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
 feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '728'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 66%
 
 ---
 
 # Versionsbereinigung{#version-purging}
 
-Bei einer Standardinstallation erstellt AEM eine neue Version einer Seite oder eines Knotens, wenn Sie eine Seite nach der Aktualisierung des Inhalts aktivieren.
+In einer Standardinstallation erstellt AEM eine neue Version einer Seite oder eines Knotens, wenn Sie eine Seite nach der Aktualisierung des Inhalts aktivieren.
 
 >[!NOTE]
 >
->Werden keine Änderungen am Inhalt vorgenommen, wird eine Meldung angezeigt, dass die Seite aktiviert wurde. Es wird jedoch keine neue Version erstellt.
+>Wenn keine Inhaltsänderungen vorgenommen werden, wird die Meldung angezeigt, dass die Seite aktiviert wurde, aber keine neue Version erstellt wird
 
 Mit der Registerkarte **Versionierung** des Sidekicks können Sie auf Anforderung zusätzliche Versionen erstellen. Diese Versionen werden im Repository gespeichert und können bei Bedarf wiederhergestellt werden.
 
-Diese Versionen werden nie bereinigt. Daher wächst die Größe des Repositorys im Laufe der Zeit an und muss verwaltet werden.
+Diese Versionen werden nie gelöscht, sodass die Repository-Größe mit der Zeit zunimmt und daher verwaltet werden muss.
 
-AEM stellt eine Reihe von Mechanismen zum Verwalten Ihres Repositorys zur Verfügung:
+AEM wird mit verschiedenen Mechanismen geliefert, mit denen Sie Ihr Repository verwalten können:
 
 * [Versionsmanager](#version-manager) Der Manager kann so konfiguriert werden, dass alte Versionen bei der Erstellung von neuen Versionen entfernt werden.
 
 * das Tool [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) Dieses Tool wird im Rahmen der Überwachung und Wartung Ihres Repositorys verwendet.
-Hiermit können Sie alte Versionen eines Knotens oder eine Hierarchie von Knoten entsprechend den folgenden Parametern entfernen:
+Es ermöglicht Ihnen, gemäß den folgenden Parametern alte Versionen eines Knotens oder eine Hierarchie von Knoten zu entfernen:
 
    * Die maximale Anzahl der Versionen, die im Repository gespeichert werden sollen.
 Wird dieser Wert überschritten, wird die älteste Version entfernt.
@@ -48,11 +48,11 @@ Wenn das Alter einer Version diesen Wert überschreitet, wird sie aus dem Reposi
 
 >[!CAUTION]
 >
->Um die Größe des Repositorys zu optimieren, sollten Sie die Aufgabe zur Versionsbereinigung regelmäßig ausführen. Die Aufgabe sollte außerhalb der Geschäftszeiten geplant werden, wenn der Netzwerkverkehr begrenzt ist.
+>Um die Größe des Repositorys zu optimieren, sollten Sie die Aufgabe zur Versionsbereinigung regelmäßig ausführen. Die Aufgabe sollte außerhalb der Geschäftszeiten geplant werden, wenn nur ein begrenzter Traffic vorhanden ist.
 
-## Versions-Manager {#version-manager}
+## Version Manager {#version-manager}
 
-Zusätzlich zur expliziten Bereinigung mit dem Bereinigungs-Tool kann der Versions-Manager so konfiguriert werden, dass alte Versionen bei der Erstellung von neuen Versionen entfernt werden.
+Zusätzlich zur expliziten Bereinigung mithilfe des Bereinigungs-Tools kann der Versionsmanager so konfiguriert werden, dass alte Versionen bei der Erstellung neuer Versionen bereinigt werden.
 
 Um den Versions-Manager entsprechend zu konfigurieren, [erstellen Sie eine Konfiguration](/help/sites-deploying/configuring-osgi.md) für:
 
@@ -81,7 +81,7 @@ Legt fest, dass beim Bereinigen alle Versionen entfernt werden, die älter als d
 Legt fest, dass beim Bereinigen alle Versionen entfernt werden, die älter als die n-te neue Version sind. Ist der Wert kleiner als „1“, wird die Bereinigung nicht auf Basis der Anzahl der Versionen durchgeführt.
 
 * `versionmanager.minNumberVersions` (int, Standardeinstellung: 0)
-Die Mindestanzahl der Versionen, die unabhängig vom Alter beibehalten werden. Wenn hier ein Wert kleiner als 1 festgelegt wird, wird keine Mindestanzahl an Versionen beibehalten.
+Die Mindestanzahl der Versionen, die unabhängig vom Alter beibehalten werden. Wenn der Wert auf einen Wert kleiner als 1 gesetzt ist, wird keine Mindestanzahl von Versionen beibehalten.
 
 >[!NOTE]
 >
@@ -91,7 +91,7 @@ Die Mindestanzahl der Versionen, die unabhängig vom Alter beibehalten werden. W
 
 Die Optionen, mit denen definiert wird, welche Versionen aufbewahrt werden sollen (`maxAgeDays`, `maxNumberVersions`, `minNumberVersions`), können gemäß Ihren Anforderungen kombiniert werden.
 
-Wenn Sie z. B. die Anzahl der Versionen, die maximal aufbewahrt werden, UND die älteste aufzubewahrende Version definieren:
+Beispielsweise bei der Definition der maximalen Anzahl von Versionen, die beibehalten werden sollen, UND der ältesten Version, die beibehalten werden soll:
 
 * Einstellung:
 
@@ -99,16 +99,16 @@ Wenn Sie z. B. die Anzahl der Versionen, die maximal aufbewahrt werden, UND die 
 
    * `maxAgeDays` = 30
 
-* mit:
+* Mit:
 
-   * 10 Versionen, die in den letzten 60 Tagen erstellt wurden,
-   * von denen 3 Versionen innerhalb der letzten 30 Tage erstellt wurden,
+   * 10 Versionen, die in den letzten 60 Tagen erstellt wurden
+   * 3 dieser Versionen, die innerhalb der letzten 30 Tage erstellt wurden
 
-* bedeutet dies, dass:
+* bedeutet Folgendes:
 
-   * die letzten 3 Versionen aufbewahrt werden.
+   * Die letzten drei Versionen werden beibehalten
 
-Wenn Sie z. B. die maximale UND die minimale Anzahl von Versionen, die aufbewahrt werden, UND die älteste beizubehaltende Version definieren:
+Beispielsweise bei der Definition der maximalen UND minimalen Anzahl von Versionen, die beibehalten werden sollen, UND der ältesten Version, die beibehalten werden soll:
 
 * Einstellung:
 
@@ -116,14 +116,14 @@ Wenn Sie z. B. die maximale UND die minimale Anzahl von Versionen, die aufbewahr
    * `maxAgeDays` = 30
    * `minNumberVersions` = 3
 
-* mit:
+* Mit:
 
-   * 5 Versionen, die in den letzten 60 Tagen erstellt wurden
+   * 5 Versionen vor 60 Tagen
 
-* bedeutet dies, dass:
+* bedeutet Folgendes:
 
-   * 3 Versionen aufbewahrt werden.
+   * 3 Versionen werden beibehalten
 
-## Tool „Versionen bereinigen“ {#purge-versions-tool}
+## Versionsbereinigungs-Tool {#purge-versions-tool}
 
 Das Tool [Versionen bereinigen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) dient zum Bereinigen der Versionen eines Knotens oder einer Hierarchie von Knoten in Ihrem Repository. Der Hauptzweck ist die Verkleinerung des Repositorys durch Löschen alter Knotenversionen.

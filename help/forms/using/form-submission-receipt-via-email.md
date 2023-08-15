@@ -1,8 +1,8 @@
 ---
 title: Senden einer Formularsendebestätigung per E-Mail
 seo-title: Sending a form submission acknowledgement via email
-description: Mit AEM Forms können Sie die E-Mail-Übermittlungsaktion konfigurieren, die eine Bestätigung an einen Benutzer beim Senden des Formulars sendet.
-seo-description: AEM Forms allows you to configure the email submit action that sends an acknowledgement to a user on submitting the form.
+description: Mit AEM Forms können Sie die E-Mail-Sendeaktion konfigurieren, die eine Bestätigung an einen Benutzer beim Senden des Formulars sendet.
+seo-description: AEM Forms lets you configure the email submit action that sends an acknowledgement to a user on submitting the form.
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,22 +10,22 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '546'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '545'
+ht-degree: 74%
 
 ---
 
 # Senden einer Formularsendebestätigung per E-Mail {#sending-a-form-submission-acknowledgement-via-email}
 
-## Senden der Daten adaptiver Formulare {#adaptive-form-data-submission}
+## Datenübermittlung für adaptive Formulare {#adaptive-form-data-submission}
 
-Adaptive Formulare bieten mehrere standardmäßige [Übermittlungsaktionen](../../forms/using/configuring-submit-actions.md)-Workflows, um die Formulardaten an verschiedene Endpunkte zu senden.
+Adaptive Formulare bieten mehrere vordefinierte [Sendeaktionen](../../forms/using/configuring-submit-actions.md) Workflows zum Senden der Formulardaten an verschiedene Endpunkte.
 
 Zum Beispiel wird bei der Übermittlungsaktion **[!UICONTROL E-Mail senden]** eine E-Mail bei erfolgreicher Übermittlung eines adaptiven Formulars gesendet. Sie kann auch so konfiguriert werden, dass die Formulardaten und die PDF-Datei in die E-Mail eingefügt werden.
 
-In diesem Artikel werden die Schritte erläutert, mit denen die E-Mail-Aktion für ein adaptives Formular aktiviert wird, sowie die verschiedenen bereitgestellten Konfigurationen.
+In diesem Artikel werden die Schritte zum Aktivieren der E-Mail-Aktion für ein adaptives Formular und die verschiedenen bereitgestellten Konfigurationen beschrieben.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Mit der Aktion „E-Mail senden“ kann ein Autor automatisch eine E-Mail an ein
 
    Geben Sie den Betreff und den Text der E-Mail in den Feldern **[!UICONTROL Betreff]** bzw. **[!UICONTROL E-Mail-Vorlage]** an.
 
-   Sie können auch variable Platzhalter in den Feldern angeben. In diesem Fall werden die Feldwerte verarbeitet, wenn das Formular erfolgreich von einem Endbenutzer gesendet wurde. Weitere Informationen finden Sie unter [Verwenden der Feldnamen in adaptiven Formularen, um E-Mail-Inhalte dynamisch zu erstellen](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
+   Sie können auch variable Platzhalter in den Feldern angeben. In diesem Fall werden die Werte der Felder verarbeitet, wenn das Formular erfolgreich von einem Endbenutzer gesendet wurde. Weitere Informationen finden Sie unter [Verwenden der Feldnamen in adaptiven Formularen, um E-Mail-Inhalte dynamisch zu erstellen](../../forms/using/form-submission-receipt-via-email.md#p-using-adaptive-form-field-names-to-dynamically-create-email-content-p).
 
    Aktivieren Sie **[!UICONTROL Anhänge einschließen]**, wenn das Formular Dateianhänge enthält und Sie diese Dateien in der E-Mail anhängen möchten.
 
@@ -65,7 +65,7 @@ Mit der Aktion „E-Mail senden“ kann ein Autor automatisch eine E-Mail an ein
 
 ### Verwenden der Feldnamen in adaptiven Formularen, um E-Mail-Inhalte dynamisch zu erstellen {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
-Die Feldnamen in einem adaptiven Formular werden als Platzhalter bezeichnet, die durch den Wert dieses Felds ersetzt werden, wenn ein Benutzer das Formular sendet.
+Die Feldnamen in einem adaptiven Formular werden als Platzhalter bezeichnet, die durch den Wert dieses Felds ersetzt werden, nachdem ein Benutzer das Formular gesendet hat.
 
 In der Aktion **[!UICONTROL E-Mail senden]** können Sie Platzhalter verwenden, die verarbeitet werden, wenn die Aktion ausgeführt wird. Das bedeutet, dass die Header der E-Mail (**[!UICONTROL An]**, **[!UICONTROL CC]**, **[!UICONTROL BCC]**, **[!UICONTROL Betreff]**) dann erstellt werden, wenn der Benutzer das Formular sendet.
 

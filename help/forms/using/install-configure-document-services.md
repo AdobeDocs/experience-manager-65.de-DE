@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5530'
-ht-degree: 83%
+source-wordcount: '5529'
+ht-degree: 82%
 
 ---
 
@@ -56,7 +56,7 @@ Das AEM Forms Add-On-Paket ist eine Anwendung, die auf AEM bereitgestellt wird. 
 
 >[!NOTE]
 >
->Obwohl Sie in AEM Forms alle Funktionen von einem einzelnen Server einrichten und ausführen können, sollten Sie Kapazitätsplanung und Lastenausgleich durchführen und dedizierte Server für bestimmte Funktionen in einer Produktionsumgebung festlegen. So sollten Sie beispielsweise in einer Umgebung, in der mit dem PDF-Generator-Dienst Tausende von Seiten pro Tag konvertiert und mithilfe mehrerer adaptiver Formulare Daten erfasst werden, separate AEM Forms-Server für den PDF Generator-Dienst und adaptive Formularfunktionen einrichten. Dies bietet optimale Leistung und skaliert die Server unabhängig voneinander.
+>AEM Forms ermöglicht es Ihnen zwar, alle Funktionen von einem Server aus einzurichten und auszuführen, Sie sollten jedoch Kapazitätsplanung und Lastenausgleich durchführen und dedizierte Server für bestimmte Funktionen in einer Produktionsumgebung einrichten. Richten Sie beispielsweise für eine Umgebung, in der der PDF Generator-Dienst Tausende von Seiten pro Tag konvertiert, und für mehrere adaptive Formulare zur Datenerfassung separate AEM Forms-Server für den PDF Generator-Dienst und die Funktionen für adaptive Formulare ein. Dies bietet optimale Leistung und skaliert die Server unabhängig voneinander.
 
 ## Systemanforderungen {#system-requirements}
 
@@ -225,7 +225,7 @@ Legen Sie Umgebungsvariablen für das 32-Bit- und 64-Bit-Java Development Kit, A
   <tr>
    <td><p><strong>Adobe Acrobat</strong></p> </td>
    <td><p>Acrobat_PATH</p> </td>
-   <td><p>C:\Program Files (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
+   <td><p>C:\Program Dateien (x86)\Adobe\Acrobat 2015\Acrobat\Acrobat.exe</p> </td>
   </tr>
   <tr>
    <td><p><strong>Editor</strong></p> </td>
@@ -290,7 +290,7 @@ Führen Sie die folgenden Schritte aus, um den IBM® SSL-Socket-Anbieter zu konf
 
 1. Öffnen Sie eine Microsoft® Office-Anwendung. Beispiel: Microsoft® Word. Navigieren Sie zu **[!UICONTROL Datei]** > **[!UICONTROL Optionen]**. Das Dialogfeld „Optionen“ wird angezeigt.
 
-1. Klicken **[!UICONTROL Vertrauenscenter]** und klicken Sie auf **[!UICONTROL Einstellungen für das Sicherheitscenter]**.
+1. Klicks **[!UICONTROL Vertrauenscenter]** und klicken Sie auf **[!UICONTROL Einstellungen für das Sicherheitscenter]**.
 1. Im **[!UICONTROL Einstellungen für das Sicherheitscenter]** klicken **[!UICONTROL Dateiblockeinstellungen]**.
 1. Deaktivieren Sie in der Liste **[!UICONTROL Dateityp]** die Option **[!UICONTROL Öffnen]** für den Dateityp, für den es dem PDF Generator-Dienst erlaubt werden soll, Dateien in PDF-Dokumente zu konvertieren.
 
@@ -299,7 +299,7 @@ Führen Sie die folgenden Schritte aus, um den IBM® SSL-Socket-Anbieter zu konf
 Das Benutzerkonto, das zum Starten des Anwendungsservers verwendet wird, muss die Berechtigung **Ersetzen eines Tokens auf Prozessebene** haben. Das lokale Systemkonto hat standardmäßig die Berechtigung **Ersetzen eines Tokens auf Prozessebene**. Für den Server, die mit einem Benutzer der lokalen Administratorgruppe ausgeführt werden, muss die Berechtigung explizit gewährt werden. Führen Sie die folgenden Schritte durch, um die Berechtigung zu gewähren:
 
 1. Öffnen Sie den Gruppenrichtlinien-Editor für Microsoft® Windows. Klicken Sie zum Öffnen des Gruppenrichtlinien-Editors auf **[!UICONTROL Start]**, geben Sie im Suchfeld **gpedit.msc** ein und klicken Sie auf **[!UICONTROL Gruppenrichtlinien-Editor]**.
-1. Navigieren Sie zu **[!UICONTROL Lokale Computerpolitik]** > **[!UICONTROL Computerkonfiguration]** > **[!UICONTROL Windows-Einstellungen]** > **[!UICONTROL Sicherheitseinstellungen]** > **[!UICONTROL Lokale Richtlinien]** > **[!UICONTROL Zuweisung von Benutzerrechten]** und bearbeiten Sie die **[!UICONTROL Ersetzen eines Tokens auf Prozessebene]** und schließen Sie die Gruppe Administratoren ein.
+1. Navigieren Sie zu **[!UICONTROL Lokale Computerpolitik]** > **[!UICONTROL Computerkonfiguration]** > **[!UICONTROL Windows-Einstellungen]** > **[!UICONTROL Sicherheitseinstellungen]** > **[!UICONTROL Lokale Richtlinien]** > **[!UICONTROL Zuweisung von Benutzerrechten]** und bearbeiten Sie **[!UICONTROL Ersetzen eines Tokens auf Prozessebene]** und schließen Sie die Gruppe Administratoren ein.
 1. Fügen Sie den Benutzer zum Eintrag &quot;Token auf Prozessebene ersetzen&quot;hinzu.
 
 ### (Nur Windows) Aktivieren des PDF Generator-Services für Benutzer, die keine Administratoren sind {#enable-the-pdf-generator-service-for-non-administrators}

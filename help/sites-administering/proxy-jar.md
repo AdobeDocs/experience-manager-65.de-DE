@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1160'
 ht-degree: 22%
 
 ---
 
 # Proxy-Server-Tool (proxy.jar){#proxy-server-tool-proxy-jar}
 
-Der Proxyserver fungiert als Zwischenserver, der Anforderungen zwischen einem Client und einem Server weiterleitet. Der Proxy-Server verfolgt alle Interaktionen zwischen Client und Server und gibt ein Protokoll der gesamten TCP-Kommunikation aus. Dadurch können Sie genau überwachen, was passiert, ohne auf den Hauptserver zugreifen zu müssen.
+Der Proxyserver fungiert als Zwischenserver, der Anforderungen zwischen einem Client und einem Server weiterleitet. Der Proxy-Server verfolgt alle Interaktionen zwischen Client und Server und gibt ein Protokoll der gesamten TCP-Kommunikation aus. Auf diese Weise können Sie genau überwachen, was passiert, ohne auf den Hauptserver zugreifen zu müssen.
 
 Sie finden den Proxyserver im entsprechenden Installationsordner:
 
@@ -34,7 +34,7 @@ Sie können den Proxy-Server verwenden, um alle Interaktionen zwischen Client un
 * SMTP für E-Mail-Nachrichten
 * LDAP für die Benutzerverwaltung
 
-Sie können beispielsweise den Proxyserver zwischen zwei Anwendungen positionieren, die über ein TCP/IP-Netzwerk kommunizieren. z. B. einen Webbrowser und AEM. Auf diese Weise können Sie genau überwachen, was passiert, wenn Sie eine AEM Seite anfordern.
+Sie können beispielsweise den Proxyserver zwischen zwei Anwendungen positionieren, die über ein TCP/IP-Netzwerk kommunizieren, z. B. einem Webbrowser und AEM. Auf diese Weise können Sie genau überwachen, was bei der Anforderung einer AEM passiert.
 
 ## Starten des Proxyserver-Tools {#starting-the-proxy-server-tool}
 
@@ -128,7 +128,7 @@ S-6-Finished: 665 bytes (1.0 kb/s)
 
 Zeigt die Anzahl der Bytes an, die zwischen Client und Server bei der 6. Verbindung und mit der durchschnittlichen Geschwindigkeit übergeben wurden.
 
-## Beispiel einer Protokollausgabe {#an-example-of-log-output}
+## Beispiel für eine Protokollausgabe {#an-example-of-log-output}
 
 Wir werden eine einfache Vorlage überprüfen, die bei Bedarf folgenden Code erzeugt:
 
@@ -185,7 +185,7 @@ Der Proxy-Server ist ein gutes Tool, um zu überprüfen, ob Cookies richtig gese
 
 * von AEM generiertes cq3session -Cookie
 * das vom CFC generierte Switch-Cookie für den Anzeigemodus
-* ein Cookie mit dem Namen JSESSIONID; wird dies automatisch von JSP erstellt, wenn nicht explizit mit &lt;%@ page session=&quot;false&quot; %> deaktiviert wird:
+* ein Cookie mit dem Namen JSESSIONID; dieses wird automatisch von JSP erstellt, wenn es nicht explizit mit &lt;%@ page session=&quot;false&quot; %> deaktiviert wird:
 
 ```xml
 C-0-#000393 -> [Cookie: Show=ShowMode; cq3session=3bce15cf-1575-1b4e-8ea6-0d1a0c64738e; JSESSIONID=4161a56b-f193-d748-88a5-e09c5ff7ef2a ]

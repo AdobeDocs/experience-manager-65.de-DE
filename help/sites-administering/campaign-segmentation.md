@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1136'
 ht-degree: 44%
 
 ---
@@ -25,15 +25,15 @@ ht-degree: 44%
 >
 >Dieses Dokument behandelt die Konfiguration der Segmentierung, wie sie mit ClientContext verwendet wird. Informationen zum Konfigurieren von Segmenten mit ContextHub über die Touch-Benutzeroberfläche finden Sie unter [Konfigurieren der Segmentierung mit ContextHub](/help/sites-administering/segmentation.md).
 
-Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Siehe [Glossar zur Segmentierung](/help/sites-authoring/segmentation-overview.md) für Informationen zur Funktionsweise der Segmentierung und zu Schlüsselbegriffen.
+Die Segmentierung ist bei der Erstellung einer Kampagne eine grundlegende Überlegung. Siehe [Segmentierungsglossar](/help/sites-authoring/segmentation-overview.md) für Informationen zur Funktionsweise der Segmentierung und zu Schlüsselbegriffen.
 
 Je nach den von Ihnen bereits zu den Besuchern Ihrer Site erfassten Informationen sowie je nach Ihren angepeilten Zielen müssen Sie die erforderlichen Segmente und Strategien für Ihre zielgerichteten Inhalte festlegen.
 
 Diese Segmente werden dann verwendet, um einem Besucher gezielt bestimmte Inhalte anzuzeigen. Dieser Inhalt wird im Abschnitt [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) der Website verwaltet. Hier definierte Teaser-Seiten können als Teaser-Absätze auf jeder Seite eingefügt werden und definieren, für welches Besuchersegment die spezialisierten Inhalte gelten.
 
-AEM ermöglicht Ihnen das einfache Erstellen und Aktualisieren von Segmenten, Teasern und Kampagnen. Außerdem können Sie damit die Ergebnisse Ihrer Definitionen überprüfen.
+Mit AEM können Sie einfach Segmente, Teaser und Kampagnen erstellen und aktualisieren. Außerdem können Sie damit die Ergebnisse Ihrer Definitionen überprüfen.
 
-Der **Segment-Editor** ermöglicht Ihnen die einfache Definition eines Segments:
+Die **Segment-Editor** ermöglicht die einfache Definition eines Segments:
 
 ![Fenster &quot;Segment-Editor&quot;](assets/segmenteditor.png)
 
@@ -48,7 +48,7 @@ Jedes Segment verfügt über einen Parameter zum **Verstärken**, der als Gewich
 
 ## Segmentlogik {#segment-logic}
 
-Die folgenden logischen Container sind standardmäßig verfügbar und ermöglichen es Ihnen, die Logik Ihrer Segmentauswahl zu konstruieren. Sie können aus dem Sidekick in den Editor gezogen werden:
+Die folgenden logischen Container sind standardmäßig verfügbar und ermöglichen Ihnen das Erstellen der Logik Ihrer Segmentauswahl. Sie können aus dem Sidekick in den Editor gezogen werden:
 
 <table>
  <tbody>
@@ -65,7 +65,7 @@ Die folgenden logischen Container sind standardmäßig verfügbar und ermöglich
 
 ## Segmenteigenschaften {#segment-traits}
 
-Die folgenden Segmenteigenschaften sind standardmäßig verfügbar: sie können aus dem Sidekick in den Editor gezogen werden:
+Die folgenden Segmenteigenschaften sind standardmäßig verfügbar. Sie können aus dem Sidekick in den Editor gezogen werden:
 
 <table>
  <tbody>
@@ -87,7 +87,7 @@ Die folgenden Segmenteigenschaften sind standardmäßig verfügbar: sie können 
   </tr>
   <tr>
    <td> Skript</td>
-   <td>JavaScript-Ausdruck, der ausgewertet werden soll.<br /> </td>
+   <td>Zu bewertender JavaScript-Ausdruck.<br /> </td>
   </tr>
   <tr>
    <td> Segment-Referenz <br /> </td>
@@ -134,11 +134,11 @@ So legen Sie Ihr neues Segment fest:
    ![Der erste Schritt zum Erstellen eines neuen Segments im Segment-Editor](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Verwenden Sie entweder den Sidekick oder das Kontextmenü (in der Regel klicken Sie mit der rechten Maustaste auf die Schaltfläche und wählen Sie dann **Neu...** , um das Fenster Neue Komponente einfügen zu öffnen), um die benötigte Segmenteigenschaft zu finden. Ziehen Sie es dann auf die **Segment-Editor** wird er in der Standardeinstellung angezeigt **UND** Container.
-1. Doppelklicken Sie auf die neue Eigenschaft, um die spezifischen Parameter zu bearbeiten. z. B. Mausposition:
+1. Doppelklicken Sie auf die neue Eigenschaft, um die spezifischen Parameter zu bearbeiten, z. B. die Mausposition:
 
    ![Bearbeiten einer Komponente im Segment-Editor](assets/screen_shot_2012-02-02at103135am.png)
 
-1. Klicken **OK** , um Ihre Definition zu speichern:
+1. Klicks **OK** , um Ihre Definition zu speichern:
 1. Sie können **Bearbeiten** die Segmentdefinition, um ihr eine **Titel**, **Beschreibung** und **[Verstärken](#boost-factor)** Faktor:
 
    ![Bearbeiten der Segmenteinstellungen im Segment-Editor](assets/screen_shot_2012-02-02at103547am.png)
@@ -158,18 +158,18 @@ Männlich und zwischen 16 und 65 Jahren
 
 ODER
 
-Weiblich und zwischen 16 und 62 Jahren
+Frauen und zwischen 16 und 62 Jahren
 
 Da der Hauptoperator ODER ist, müssen Sie mit einem **ODER-Container**. Innerhalb dieses Abschnitts verfügen Sie über 2 UND-Anweisungen, für jede dieser müssen Sie eine **UND-Container**, zu dem Sie die einzelnen Eigenschaften hinzufügen können.
 
-![Beispiel für die UND- und ODER-Operatoren im Segmenteditor](assets/screen_shot_2012-02-02at105145am.png)
+![Beispiel für die UND- und ODER-Operatoren im Segment-Editor](assets/screen_shot_2012-02-02at105145am.png)
 
 ## Testen der Anwendung eines Segments {#testing-the-application-of-a-segment}
 
 Sobald das Segment definiert wurde, können die potenziellen Ergebnisse mithilfe der **[ClientContext](/help/sites-administering/client-context.md)**:
 
 1. Wählen Sie das zu testende Segment aus.
-1. Presse **[Strg+Alt+C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** , um **[ClientContext](/help/sites-administering/client-context.md)**, der die erfassten Daten anzeigt. Zu Testzwecken können Sie bestimmte Werte **bearbeiten** oder ein anderes Profil **laden**, um dort die Auswirkungen zu sehen.
+1. Presse **[Strg+Alt+C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** , um die **[ClientContext](/help/sites-administering/client-context.md)**, der die erfassten Daten anzeigt. Zu Testzwecken können Sie bestimmte Werte **bearbeiten** oder ein anderes Profil **laden**, um dort die Auswirkungen zu sehen.
 
 1. Je nach den definierten Eigenschaften können die zur aktuellen Seite verfügbaren Daten mit der Segmentdefinition übereinstimmen oder nicht. Der Status der Übereinstimmung wird unter der Definition angezeigt.
 
@@ -193,4 +193,4 @@ Wenn Sie den Mauszeiger über einen Teaser-Absatz bewegen, werden die angewendet
 
 ### Verwenden Ihres Segments {#using-your-segment}
 
-Segmente werden derzeit in [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md). Sie werden verwendet, um den tatsächlichen Inhalt zu steuern, der für bestimmte Zielgruppen sichtbar ist. Siehe [Grundlegendes zu Segmenten](/help/sites-authoring/segmentation-overview.md) für weitere Informationen.
+Segmente werden derzeit in [Kampagnen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md). Sie werden verwendet, um den tatsächlichen Inhalt zu steuern, der für bestimmte Zielgruppen sichtbar ist. Siehe [Segmente](/help/sites-authoring/segmentation-overview.md) für weitere Informationen.

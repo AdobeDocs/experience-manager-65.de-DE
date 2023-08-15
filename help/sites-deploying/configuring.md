@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2111'
 ht-degree: 29%
 
 ---
@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) wird mit Standardeinstellungen für alle Paramete
 Es gibt viele Aspekte von AEM, die konfiguriert werden können:
 
 * Einige sind [für jede Projektinstallation konfiguriert](#primary-configuration-considerations) und müssen überprüft werden, um festzustellen, ob sie auf Ihr Projekt zutreffen.
-* [Weitere Konfigurationen](#further-configuration-considerations) können häufig, jedoch nicht zwingend sein; im Zusammenhang mit Funktionen oder Systemleistung und -stabilität.
+* [Weitere Konfigurationen](#further-configuration-considerations) können häufig, jedoch nicht zwingend erforderlich sein; sie beziehen sich auf Funktionen oder die Systemleistung und -stabilität.
 * Andere sind nur für bestimmte optionale Funktionen von AEM erforderlich (diese werden zusammen mit der entsprechenden Funktion dokumentiert).
 
 Abhängig von der spezifischen Konfiguration können diese Änderungen mithilfe der folgenden Methoden vorgenommen werden:
@@ -116,14 +116,14 @@ Weitere Informationen hierzu finden Sie unter [Bereinigen der Version](/help/sit
 AEM bietet Ihnen die Möglichkeit, Folgendes zu konfigurieren:
 
 * globale Parameter für den zentralen Protokollierungsdienst
-* Anforderungsdatenprotokollierung; eine spezielle Protokollierungskonfiguration für Anfrageinformationen
+* Anfragedatenprotokollierung; eine spezielle Protokollierungskonfiguration für Anfrageinformationen
 * Spezifische Einstellungen für die einzelnen Dienste; zum Beispiel eine einzelne Protokolldatei und das Format für die Protokollmeldungen
 
 Weitere Informationen finden Sie unter [Protokollierung](/help/sites-deploying/configure-logging.md). 
 
 ### Ausführungsmodi {#run-modes}
 
-Mit Ausführungsmodi können Sie Ihre AEM für einen bestimmten Zweck anpassen. Zum Beispiel Autor oder Veröffentlichung, Test, Entwicklung, Intranet usw.
+Mit Ausführungsmodi können Sie Ihre AEM für einen bestimmten Zweck anpassen. Beispielsweise Autoren- oder Veröffentlichungsinstanz, Test, Entwicklung, Intranet usw.
 
 Dies geschieht durch Definition von Kollektionen von Konfigurationsparametern für jeden Ausführungsmodus. Ein Grundbestand an Konfigurationsparametern wird auf alle Ausführungsmodi angewendet. Sie können dann zusätzliche Parameter entsprechend den Anforderungen Ihrer spezifischen Umgebung einstellen. Diese werden dann nach Bedarf angewendet.
 
@@ -150,10 +150,10 @@ Siehe [Ressourcenzuordnung](/help/sites-deploying/resource-mapping.md) für weit
 
 ### Replikation, Rückwärtsreplikation und Replikationsagenten {#replication-reverse-replication-and-replication-agents}
 
-Replikationsagenten sind von zentraler Bedeutung für AEM als Mechanismus, der verwendet wird, um:
+Replikationsagenten sind von zentraler Bedeutung für AEM als Mechanismus für:
 
 * [Veröffentlichen (aktivieren)](/help/sites-authoring/publishing-pages.md) Inhalt von einem Autor in eine Veröffentlichungsumgebung.
-* Explizites Leeren von Inhalten aus dem Dispatcher-Cache.
+* Explizites Leeren von Inhalten aus dem Dispatcher-Cache
 * Gibt Benutzereingaben (z. B. Formulareingaben) aus der Veröffentlichungsumgebung an die Autorenumgebung zurück (unter Kontrolle der Autorenumgebung).
 
 Weitere Informationen finden Sie unter [Replikation](/help/sites-deploying/replication.md).
@@ -182,13 +182,13 @@ Weitere Informationen zur Konfiguration finden Sie unter [Dispatcher](https://ex
 
 ### Konfigurieren von AEM LiveCycle Connector {#configuring-aem-livecycle-connector}
 
-Mit der Veröffentlichung der AEM Doc Services und AEM Doc Security kann AEM jetzt die LiveCycle-Dokumentendienste aufrufen, um ein XFA-Formular wiederzugeben, ein Dokument in eine PDF zu konvertieren und ein Dokument durch Richtlinien zu schützen. Siehe [AEM LiveCycle Connector](https://helpx.adobe.com/de/livecycle/help/aem/aem-livecycle-connector.html) für weitere Details.
+Mit der Veröffentlichung der AEM Doc Services und AEM Doc Security kann AEM jetzt die LiveCycle doc-Dienste aufrufen, um ein XFA-Formular wiederzugeben, ein Dokument in eine PDF zu konvertieren und ein Dokument durch Richtlinien zu schützen. Siehe [AEM LiveCycle Connector](https://helpx.adobe.com/de/livecycle/help/aem/aem-livecycle-connector.html) für weitere Details.
 
 ### Auftragsabladung und Topologieverwaltung {#job-offloading-and-topology-administration}
 
 [Mit der Abladung werden Verarbeitungsaufgaben auf die Experience Manager-Instanzen in einer Topologie verteilt. ](/help/sites-deploying/offloading.md) Mit der Abladung können Sie bestimmte Experience Manager-Instanzen zur Durchführung bestimmter Verarbeitungsarten verwenden. Durch eine spezialisierte Verarbeitung können Sie die Nutzung der verfügbaren Serverressourcen maximieren.
 
-Topologien sind lose verknüpfte Experience Manager-Cluster, die an der Abladung beteiligt sind. Ein Cluster besteht aus einer oder mehreren Experience Manager-Serverinstanzen (eine Instanz gilt als Cluster).
+Topologien sind lose verknüpfte Experience Manager-Cluster, die an der Abladung beteiligt sind. Ein Cluster besteht aus einer oder mehreren Experience Manager-Serverinstanzen (eine einzelne Instanz gilt als Cluster).
 
 Weitere Informationen zum Anzeigen oder Ändern der Topologiemitgliedschaft finden Sie unter [Verwalten von Topologien](/help/sites-deploying/offloading.md#administering-topologies) Abschnitt.
 
@@ -263,7 +263,7 @@ Gehen Sie wie folgt vor, um solche Ausnahmen zu vermeiden:
 
 ### Konfigurieren des Rich-Text-Editors {#configuring-the-rich-text-editor}
 
-Die **Rich-Text-Editor** (**RTE**) bietet Autoren eine Vielzahl von [Funktion](/help/sites-authoring/rich-text-editor.md) zur Bearbeitung des Textinhalts; Bereitstellung von Symbolen, Auswahlfeldern und Menüs für ein WYSIWYG-Erlebnis.
+Die **Rich-Text-Editor** (**RTE**) bietet Autoren eine Vielzahl von [Funktion](/help/sites-authoring/rich-text-editor.md) für die Bearbeitung des Textinhalts und die Bereitstellung von Symbolen, Auswahlfeldern und Menüs für ein WYSIWYG-Erlebnis.
 
 Siehe [Konfigurieren des Rich-Text-Editors](/help/sites-administering/rich-text-editor.md) für weitere Informationen.
 
@@ -273,9 +273,9 @@ Es gibt mehrere Eigenschaften, mit denen das Verhalten der Befehle „Rückgäng
 
 ### Konfigurieren der Videokomponente {#configuring-the-video-component}
 
-Die [Videokomponente](/help/sites-authoring/default-components-foundation.md#video) ermöglicht es Ihnen, ein vordefiniertes, vordefiniertes Videoelement auf Ihrer Seite zu platzieren.
+Die [Videokomponente](/help/sites-authoring/default-components-foundation.md#video) können Sie ein vordefiniertes, natives Videoelement auf Ihrer Seite platzieren.
 
-Damit eine korrekte Transkodierung erfolgt, muss Ihr Administrator [Installieren von FFmpeg](/help/sites-administering/config-video.md#install-ffmpeg) getrennt. Sie können auch [Videoprofile konfigurieren](/help/sites-administering/config-video.md#configure-video-profiles) zur Verwendung mit HTML5-Elementen.
+Damit eine korrekte Transkodierung erfolgt, muss Ihr Administrator [Installieren von FFmpeg](/help/sites-administering/config-video.md#install-ffmpeg) getrennt. Sie können auch [Videoprofile konfigurieren](/help/sites-administering/config-video.md#configure-video-profiles) für die Verwendung mit HTML5-Elementen.
 
 ### Konfigurieren und Anpassen von Berichten {#configuring-and-customizing-reports}
 
@@ -303,8 +303,8 @@ Seitenimpressionen werden im **Impressionen** -Spalte der Siteadmin-Konsole der 
 
 * In der Autoreninstanz:
 
-   * [Adobe Page Impressions Tracker](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Adobe Seitenimpressions-Tracker](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >
->Die Adobe Page Impressions Tracker-Konfiguration in der Autorenumgebung ermöglicht anonyme Anfragen an den Tracking-Dienst.
+>Die Adobe-Seitenimpressions-Tracker-Konfiguration in der Autorenumgebung ermöglicht anonyme Anfragen an den Tracking-Dienst.

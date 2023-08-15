@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '1288'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1285'
+ht-degree: 97%
 
 ---
 
@@ -30,11 +30,11 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
 
 * [**Layout-Container-Komponente**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)
 
-   Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Sie können sie als Standard-ParSys für Ihre Seite nutzen und/oder sie anderen Autoren im Komponenten-Browser zur Verfügung stellen.
+  Diese Komponente liefert ein Rasterabsatzsystem, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können. Sie können sie als Standard-ParSys für Ihre Seite nutzen und/oder sie anderen Autoren im Komponenten-Browser zur Verfügung stellen.
 
    * Die standardmäßige **Layout-Container**-Komponente ist definiert unter:
 
-      /libs/wcm/foundation/components/responsivegrid
+     /libs/wcm/foundation/components/responsivegrid
 
    * Sie können Layout-Container definieren:
 
@@ -42,14 +42,13 @@ Das responsive Layout für Ihre Seiten wird von AEM mithilfe einer Kombination v
       * als Standard-Absatzsystem für die Seite.
       * Beide.
 
-         Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
+        Sie können den Layout-Container als Standard für die Seite festlegen und es den Benutzern gleichzeitig erlauben, weitere Layout-Container darin hinzuzufügen, z. B. für die Spaltensteuerung.
 
 * **[Layout-Modus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie den 
-**Layout**-Modus verwenden, um Inhalte im responsiven Raster zu positionieren.
+Sobald der Layout-Container auf Ihrer Seite positioniert ist, können Sie den **Layout**-Modus verwenden, um Inhalte im responsiven Raster zu positionieren.
 
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
-Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, die ihr Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpassen. Die Benutzerin bzw. der Benutzer kann dann mit dem Emulator sehen, wie der Inhalt wiedergegeben wird.
+Auf diese Weise können Sie responsive Websites erstellen und bearbeiten, die das Layout durch interaktive Größenanpassung der Komponenten an die Geräte-/Fenstergröße anpassen. Die Benutzerin bzw. der Benutzer kann dann mit dem Emulator sehen, wie der Inhalt wiedergegeben wird.
 
 >[!CAUTION]
 >
@@ -68,7 +67,7 @@ Mit diesen responsiven Rastermechanismen können Sie:
 
 ## Konfigurieren des responsiven Emulators {#configuring-the-responsive-emulator}
 
-Mit diesen Aufgaben können Sie den responsiven **Emulator** auf Ihrer Website anzeigen.
+Diese Aufgabe ermöglicht es Ihnen, die responsive **Emulator** auf Ihrer Site.
 
 ### Registrieren von Seitenkomponenten für die Emulation {#register-your-page-components-for-emulation}
 
@@ -188,15 +187,15 @@ Die folgenden beiden Beispiele veranschaulichen die Definition:
 
 * **HTL:**
 
-   ```xml
-   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
-   ```
+  ```xml
+  <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
+  ```
 
 * **JSP:**
 
-   ```
-   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
-   ```
+  ```
+  <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
+  ```
 
 ### Einschließen von responsivem CSS {#include-the-responsive-css}
 
@@ -282,11 +281,11 @@ Damit Autorinnen und Autoren weitere responsive Raster zu den Inhaltsseiten hinz
 
 * **Autorenumgebung**
 
-   Verwenden Sie den [Design-Modus](/help/sites-authoring/default-components-designmode.md), um die **Layout-Container**-Komponente für eine Seite zu aktivieren.
+  Verwenden Sie den [Design-Modus](/help/sites-authoring/default-components-designmode.md), um die **Layout-Container**-Komponente für eine Seite zu aktivieren.
 
 * **Komponentendefinition**
 
-   Nutzen Sie beim Definieren der Komponente `allowedComponent` oder ein Static Include.
+  Nutzen Sie beim Definieren der Komponente `allowedComponent` oder ein Static Include.
 
 ### Konfigurieren des Rasters des Layout-Containers {#configure-the-grid-of-the-layout-container}
 
@@ -309,6 +308,7 @@ Sie können die Anzahl der verfügbaren Spalten für jede spezifische Instanz de
    * Anzahl der verfügbaren Spalten:
 
       * `columns="{String}8"`
+
    * Komponenten, die zur aktuellen Komponente hinzugefügt werden können:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`

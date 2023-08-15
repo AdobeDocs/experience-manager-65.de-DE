@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Mit dem AEM Mobile Dashboard können Sie Ihre Mobile App erstellen, erstellen und bereitstellen sowie Metadaten für Anwendungen erstellen, löschen und bearbeiten. Sobald Ihre Anwendung live ist, können Sie Anwendungsanalysen einschließlich Lebenszyklus- und Nutzungsmetriken analysieren, um die Kundenkonvertierung und Markenloyalität zu verbessern.
+Mit dem AEM Mobile-Dashboard können Sie Ihre Mobile App erstellen, erstellen und bereitstellen sowie Metadaten für Anwendungen erstellen, löschen und bearbeiten. Sobald Ihre Anwendung live ist, können Sie Anwendungsanalysen einschließlich Lebenszyklus- und Nutzungsmetriken analysieren, um die Kundenkonvertierung und Markenloyalität zu verbessern.
 
 Informationen zum Erstellen Ihrer AEM Mobile-Anwendung finden Sie unter [Erstellen von Mobile Apps](/help/mobile/building-app-mobile-phonegap.md) Seite.
 
@@ -35,7 +35,7 @@ Stellen Sie sich diesen Katalog als &quot;Landingpage&quot;für AEM Mobile vor, 
 
 Gehen Sie wie folgt vor, um zur Landingpage des Apps-Katalogs zu gelangen:
 
-1. Navigieren Sie zu **Navigation** und wählen Sie dann **Mobile**.
+1. Navigieren Sie zu **Navigation** und wählen Sie dann **Mobilnummer**.
 
 1. Auswählen **Apps** , um den Apps-Katalog zu öffnen.
 
@@ -45,7 +45,7 @@ Gehen Sie wie folgt vor, um zur Landingpage des Apps-Katalogs zu gelangen:
 
 Wenn Sie eine AEM Mobile-App aus dem Katalog auswählen, wird ihr Dashboard angezeigt. Hier können Sie Ihre App verwalten, Statistiken anzeigen, Inhalte für Ihre Mobile App erstellen, bereitstellen und verwalten.
 
-Sie können jede Kachel im AEM Mobile Dashboard erweitern, um Details anzuzeigen oder zu bearbeiten, indem Sie auf &quot;...&quot;klicken unten rechts.
+Sie können in jede Kachel im AEM Mobile-Dashboard einblenden, um Details anzuzeigen oder zu bearbeiten, indem Sie rechts unten auf &quot;..&quot;klicken.
 
 ![AEM Mobile Applications Command Center](assets/chlimage_1-136.png)
 
@@ -53,13 +53,13 @@ Sie können jede Kachel im AEM Mobile Dashboard erweitern, um Details anzuzeigen
 
 Im Bereich App verwalten werden Ihr Anwendungssymbol, Ihr Name, Ihre Beschreibung, die unterstützten Plattformen sowie der Aufruf der Startseite mit Informationen zu Updates-URL und Version angezeigt. Sie können diese Kachel näher untersuchen, um die PhoneGap-Anwendungskonfiguration (config.xml) zu bearbeiten und zu verwalten und Ihre Anwendung für die Übermittlung an die verschiedenen Anwendungsspeicher zur Verteilung vorzubereiten.
 
-Klicken [here](/help/mobile/phonegap-app-details-tile.md) für Details.
+Klicks [here](/help/mobile/phonegap-app-details-tile.md) für Details.
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
 ### Kachel &quot;Seiteninhalt verwalten&quot; {#the-manage-page-content-tile}
 
-Inhalte können in AEM Mobile auf die gleiche Weise erstellt, aktualisiert und gelöscht werden wie in AEM Sites. Die **Kachel &quot;Seiteninhalt verwalten&quot;** zeigt die Anzahl der Seiten verwalteten Inhalts und der zuletzt geänderten Inhalte an. Sie können einen Drilldown in den Inhalt durchführen, um Seiten zu erstellen, zu kopieren, zu verschieben, zu löschen und zu aktualisieren, indem Sie auf jeden Datensatz in der Kachel klicken. Sobald der Inhalt aktualisiert wurde, können Sie Ihren Kunden eine Inhaltsaktualisierung über die **Kachel &quot;Inhaltspakete verwalten&quot;.**
+Inhalte können in AEM Mobile auf die gleiche Weise erstellt, aktualisiert und gelöscht werden wie in AEM Sites. Die **Kachel &quot;Seiteninhalt verwalten&quot;** zeigt die Anzahl der Seiten verwalteten Inhalts und der zuletzt geänderten Inhalte an. Sie können einen Drilldown in den Inhalt durchführen, um Seiten zu erstellen, zu kopieren, zu verschieben, zu löschen und zu aktualisieren, indem Sie auf jeden Datensatz in der Kachel klicken. Sobald der Inhalt aktualisiert wurde, können Sie Ihren Kunden eine Inhaltsaktualisierung über die **Kachel Inhaltspakete verwalten**
 
 ![Inhaltsbereich](assets/chlimage_1-138.png)
 
@@ -85,17 +85,17 @@ Die **Veröffentlicht** gibt an, wann die letzte Inhaltsaktualisierung veröffen
 
 Dieses Symbol stellt ein Inhaltsfreigabepaket für die App-Shell dar
 
-![Symbol für Inhaltsfreigabe-Package , das durch zwei quadratische, überlappende Paketsymbole angezeigt wird.](do-not-localize/chlimage_1-6.png)
+![Symbol für Inhaltsfreigabe-Paket , das durch zwei quadratische, überlappende Paketsymbole angezeigt wird.](do-not-localize/chlimage_1-6.png)
 
-Diese Symbole stellen ein Inhaltsfreigabepaket für App-Inhalte dar
+Diese Symbole stellen ein Inhaltsfreigabepaket für App-Inhalte dar.
 
 ### Der PhoneGap Build {#the-phonegap-build-tile}
 
-Die **PhoneGap Build** verbindet mit `https://build.phonegap.com` um Remote-Builds zu erstellen und zu hosten. Nach der Erstellung wird der Build entweder als Download oder direkt auf Ihrem Gerät über einen QR-Code bereitgestellt.
+Die **PhoneGap Build-Kachel** stellt `https://build.phonegap.com` um Remote-Builds zu erstellen und zu hosten. Nach der Erstellung wird der Build entweder als Download oder direkt auf Ihrem Gerät über einen QR-Code bereitgestellt.
 
 Alternativ können Sie die Gerätequelle herunterladen, um sie über die PhoneGap-CLI (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
-![PhoneGap Build](assets/chlimage_1-140.png)
+![PhoneGap Build-Kachel](assets/chlimage_1-140.png)
 
 ### Bereich &quot;Metriken&quot; {#the-metrics-tile}
 
@@ -107,17 +107,17 @@ Alternativ können Sie die Gerätequelle herunterladen, um sie über die PhoneGa
 
 AEM Mobile kann über [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) (AMS).
 
-Das Kontrollzentrum **Bereich &quot;Metriken&quot;** zeigt zusammenfassende Analysen an, die von AMS für Ihre Anwendung abgerufen wurden. Sie können einen Drilldown im Analyse-Dashboard durchführen, indem Sie auf &quot;...&quot;klicken unten rechts.
+Das Kontrollzentrum **Metrikbereich** zeigt zusammenfassende Analysen an, die von AMS für Ihre Anwendung abgerufen wurden. Sie können einen Drilldown im Analyse-Dashboard durchführen, indem Sie rechts unten auf &quot;...&quot;klicken.
 
-![Bereich &quot;Metriken&quot;](assets/chlimage_1-141.png)
+![Metrikbereich](assets/chlimage_1-141.png)
 
 ### Kachel &quot;Entitätsinhalt verwalten&quot; {#the-manage-entity-content-tile}
 
-Mit der Kachel &quot;Entitätsinhalt verwalten&quot;können Sie App-Definitionen hinzufügen und verwalten. Mit App-Definitionen können Sie ermitteln, welche Leerzeichen (und andere Konfigurationen) für die App geeignet sind. Auf diese Weise kann ein neues Leerzeichen hinzugefügt werden, ohne dass die App neu kompiliert werden muss. Die App-Definition wird aktualisiert und enthält die Informationen zu neuen Platzierungen.
+Über die Kachel &quot;Entitätsinhalt verwalten&quot;können Sie App-Definitionen hinzufügen und verwalten. Mit App-Definitionen können Sie ermitteln, welche Leerzeichen (und andere Konfigurationen) für die App geeignet sind. Auf diese Weise kann ein neues Leerzeichen hinzugefügt werden, ohne dass die App neu kompiliert werden muss. Die App-Definition wird aktualisiert und enthält die Informationen zu neuen Platzierungen.
 
-Klicken [here](/help/mobile/phonegap-app-definitions.md) , um Ihre App-Definitionen zu erstellen und zu verwalten.
+Klicks [here](/help/mobile/phonegap-app-definitions.md) , um Ihre App-Definitionen zu erstellen und zu verwalten.
 
-Sie können den Detaillierungsgrad des Dashboards zum Verwalten des Entitätsinhalts anzeigen, indem Sie auf &quot;...&quot;klicken unten rechts.
+Sie können einen Drilldown im Dashboard zum Verwalten von Entitätsinhalten durchführen, indem Sie rechts unten auf &quot;...&quot;klicken.
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 

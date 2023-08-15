@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 000ab7bc9a686b62fcfc122f9cf09129101ec9a8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4738'
+source-wordcount: '4734'
 ht-degree: 45%
 
 ---
@@ -65,7 +65,7 @@ Weitere Informationen finden Sie unter[ Erstellen von AEM-Projekten mit Apache M
 Nachdem Sie Ihr AEM Projekt eingerichtet haben, definieren Sie eine Strategie für das Authoring und Anpassen von Vorlagen und Komponenten für adaptive Formulare.
 
 * Eine adaptive Formularvorlage ist eine spezielle AEM, die die Struktur und die Kopf- und Fußzeileninformationen eines adaptiven Formulars definiert. Eine Vorlage verfügt über vorkonfigurierte Layouts, Stile und eine grundlegende Struktur für ein adaptives Formular. AEM Forms bietet Standardvorlagen und -Komponenten, die Sie verwenden können, um adaptive Formulare zu erstellen. Sie können jedoch benutzerdefinierte Vorlagen und Komponenten entsprechend Ihren Anforderungen erstellen. Es wird empfohlen, Anforderungen für zusätzliche Vorlagen und Komponenten zu erfassen, die Sie in Ihren adaptiven Formularen benötigen. Weitere Informationen finden Sie unter [Anpassen adaptiver Formulare und Komponenten](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
-* Mit AEM Forms können Sie adaptive Formulare erstellen, die auf den folgenden Formularmodellen basieren. Die Formularmodelle fungieren als Schnittstelle für den Datenaustausch zwischen einem Formular und AEM System und stellen eine XML-basierte Struktur für Datenfluss innerhalb und außerhalb eines adaptiven Formulars bereit. Darüber hinaus legen die Formularmodelle Regeln und Einschränkungen für adaptive Formulare in Form von Schema- und XFA-Beschränkungen fest.
+* Mit AEM Forms können Sie adaptive Formulare basierend auf den folgenden Formularmodellen erstellen. Die Formularmodelle fungieren als Schnittstelle für den Datenaustausch zwischen einem Formular und AEM System und stellen eine XML-basierte Struktur für Datenfluss innerhalb und außerhalb eines adaptiven Formulars bereit. Darüber hinaus legen die Formularmodelle Regeln und Einschränkungen für adaptive Formulare in Form von Schema- und XFA-Beschränkungen fest.
 
    * **Keines**: Adaptive Formulare, die mit dieser Option erstellt wurden, verwenden kein Formularmodell. Die XML-Datendatei, die aus diesen Formularen generiert wird, hat eine flache Struktur mit Feldern und entsprechenden Werten.
    * **XML- oder JSON-Schema**: XML- und JSON-Schemata stellen die Struktur dar, in der Daten vom Back-End-System in Ihrer Organisation produziert oder genutzt werden. Sie können ein Schema mit einem adaptiven Formular verknüpfen und dem adaptiven Formular mithilfe der Elemente aus dem Schema dynamische Inhalte hinzufügen. Die Elemente des Schemas stehen auf der Registerkarte „Datenmodellobjekt“ des Inhalts-Browsers für das Erstellen von adaptiven Formularen zur Verfügung. Sie können die Schemaelemente zum Erstellen des Formulars ziehen und ablegen.
@@ -126,7 +126,7 @@ Siehe auch Komponentenbeschreibungen und Best Practices in [Einführung in das A
 
 ### Verwenden von Regeln in adaptiven Formularen {#using-rules-in-adaptive-forms}
 
-AEM Forms bietet einen [Regeleditor](/help/forms/using/rule-editor.md), der es Ihnen ermöglicht, Regeln zu erstellen, um dynamisches Verhalten zu adaptiven Formularkomponenten hinzuzufügen. Unter Verwendung dieser Regeln können Bedingungen ausgewertet werden und Aktionen auf Komponenten ausgelöst werden, wie z. B. Felder anzeigen oder ausblenden, Werte berechnen, Dropdownlisten dynamisch ändern und so weiter.
+AEM Forms bietet eine [Regeleditor](/help/forms/using/rule-editor.md) , mit dem Sie Regeln erstellen können, um dynamisches Verhalten zu adaptiven Formularkomponenten hinzuzufügen. Unter Verwendung dieser Regeln können Bedingungen ausgewertet werden und Aktionen auf Komponenten ausgelöst werden, wie z. B. Felder anzeigen oder ausblenden, Werte berechnen, Dropdownlisten dynamisch ändern und so weiter.
 
 Der Regeleditor bietet einen visuellen Editor und einen Code-Editor zum Schreiben von Regeln. Beachten Sie beim Schreiben von Regeln im Code-Editor-Modus Folgendes:
 
@@ -156,7 +156,7 @@ Der Regeleditor bietet einen visuellen Editor und einen Code-Editor zum Schreibe
 * Autoren adaptiver Formulare müssen möglicherweise JavaScript-Code schreiben, um Geschäftslogik in einem Formular zu erstellen. JavaScript ist zwar leistungsstark und effektiv, aber kann die Sicherheit beeinflussen. Daher müssen Sie sicherstellen, dass der Formularautor eine vertrauenswürdige Person ist und dass Prozesse zum Überprüfen und Genehmigen des JavaScript-Codes vorhanden sind, bevor ein Formular in Produktion genommen wird. Der Administrator kann den Zugriff auf den Regeleditor auf Benutzergruppen je nach Rolle oder Funktion beschränken. Siehe [Zugriff des Regeleditors auf ausgewählte Benutzergruppen gewähren](/help/forms/using/rule-editor-access-user-groups.md).
 * Sie können Ausdrücke in Regeln verwenden, um adaptive Formulare dynamisch zu gestalten. Alle Ausdrücke sind gültige JavaScript-Ausdrücke und verwenden Skriptmodell-APIs für adaptive Formulare. Diese Ausdrücke geben Werte bestimmter Typen zurück. Weitere Informationen zu Ausdrücken und optimalen Verfahren finden Sie unter[ Adaptive Formularausdrücke](/help/forms/using/adaptive-form-expressions.md). 
 
-* Adobe empfiehlt die Verwendung von synchronen JavaScript-Vorgängen im Vergleich zu asynchronen Vorgängen beim Erstellen von Regeln mit dem Regeleditor. Es wird dringend davon abgeraten, asynchrone Vorgänge zu verwenden. Wenn Sie sich jedoch in einer Situation befinden, in der asynchrone Vorgänge unvermeidbar sind, müssen Sie JavaScript Closure-Funktionen implementieren. Auf diese Weise können Sie wirksam vor potenziellen Race-Bedingungen schützen und sicherstellen, dass Ihre Regelimplementierungen eine optimale Leistung erzielen und die Stabilität im gesamten System erhalten.
+* Adobe empfiehlt bei der Regelerstellung mit dem Regeleditor die Verwendung von synchronen JavaScript-Vorgängen im Vergleich zu asynchronen Vorgängen. Es wird dringend davon abgeraten, asynchrone Vorgänge zu verwenden. Wenn Sie sich jedoch in einer Situation befinden, in der asynchrone Vorgänge unvermeidbar sind, müssen Sie JavaScript Closure-Funktionen implementieren. Auf diese Weise können Sie wirksam vor potenziellen Race-Bedingungen schützen und sicherstellen, dass Ihre Regelimplementierungen eine optimale Leistung erzielen und die Stabilität im gesamten System erhalten.
 
   Nehmen wir beispielsweise an, wir müssen Daten aus einer externen API abrufen und dann einige Regeln anwenden, die auf diesen Daten basieren. Wir verwenden einen Abschluss, um den asynchronen API-Aufruf zu verarbeiten und sicherzustellen, dass die Regeln angewendet werden, nachdem die Daten abgerufen wurden. Hier finden Sie den Beispielcode:
 
@@ -191,7 +191,7 @@ Der Regeleditor bietet einen visuellen Editor und einen Code-Editor zum Schreibe
 
 ### Arbeiten mit Designs {#working-with-themes}
 
-Adaptiv für Designs ermöglicht es Ihnen, wiederverwendbare Stile zu erstellen, die über Formulare hinweg angewendet werden können, um ein konsistentes Erscheinungsbild und Stile zu erhalten. Es wird empfohlen, Designs zu verwenden, um Formatierung für Formularkomponenten und Bedienfelder zu definieren. Einige Best Practices rund um Themen sind:
+Mit Adaptive für Designs können Sie wiederverwendbare Stile erstellen, die über Formulare hinweg angewendet werden können, um ein konsistentes Erscheinungsbild und Stile zu erhalten. Es wird empfohlen, Designs zu verwenden, um Formatierung für Formularkomponenten und Bedienfelder zu definieren. Einige Best Practices rund um Themen sind:
 
 * Verwenden Sie die Asset-Bibliothek für die schnelle Anwendung von Textstilen, Hintergrund und Bildern. Wenn ein Stil in der Asset-Bibliothek hinzugefügt wird, ist er für andere Designs und im Stilmodus des Formular-Editors verfügbar.
 * Wenden Sie globale Einstellungen wie Schriftart und Seitenhintergrund mithilfe der Seitenebenenauswahl an.

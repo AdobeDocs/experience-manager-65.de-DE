@@ -11,10 +11,10 @@ discoiquuid: 66674e47-d19f-418f-857f-d91cf8660b6d
 docset: aem65
 exl-id: 5808b8f9-9b37-4970-b5c1-4d33404d3a8b
 feature: Security
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
-workflow-type: ht
-source-wordcount: '3120'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3118'
+ht-degree: 98%
 
 ---
 
@@ -40,7 +40,7 @@ In CRX ist jedes Benutzerkonto ein Knoten im Arbeitsbereich. Ein CRX-Benutzerkon
 
 * Sie können Zugriffsberechtigungen für das Benutzerkonto angeben.
 
-   Zur Vereinfachung der Verwaltung raten wir jedoch, (in der Mehrzahl der Fälle) Zugriffsrechte zu Gruppenkonten zuzuweisen. Bei der Zuweisung von Zugriffsrechten zu jedem einzelnen Benutzer kann die Verwaltung schnell sehr schwierig werden (Ausnahmen sind bestimmte Systembenutzer, wenn nur ein oder zwei Instanzen vorhanden sind).
+  Um die Verwaltung zu vereinfachen, empfiehlt es sich jedoch (in den meisten Fällen), Zugriffsrechte für Gruppenkonten zuzuweisen. Bei der Zuweisung von Zugriffsrechten zu jedem einzelnen Benutzer kann die Verwaltung schnell sehr schwierig werden (Ausnahmen sind bestimmte Systembenutzer, wenn nur ein oder zwei Instanzen vorhanden sind).
 
 **Gruppenkonten**: Gruppenkonten sind Sammlungen von Benutzern und/oder anderen Gruppen. Diese dienen zur Vereinfachung der Verwaltung, da eine Änderung der einer Gruppe zugewiesenen Zugriffsrechte automatisch auf alle Benutzenden dieser Gruppe angewendet wird. Eine Benutzerin bzw. ein Benutzer muss nicht unbedingt Mitglied einer Gruppe sein, gehört aber häufig zu mehreren.
 
@@ -56,7 +56,7 @@ In CRX hat eine Gruppe die folgenden Eigenschaften:
 
 Dies erfolgt über die Zuweisung von Berechtigungen, um den Zugriff auf eine Ressource (Knoten oder Pfad) im Repository zuzulassen oder abzulehnen. Da zahlreiche Berechtigungen zugewiesen werden können, müssen sie ausgewertet werden, um festzustellen, welche Kombination für die aktuelle Anfrage relevant ist.
 
-CRX ermöglicht es Ihnen, die Zugriffsrechte für Benutzer- und Gruppenkonten zu konfigurieren. Es werden dann dieselben grundlegenden Bewertungsprinzipien auf beide angewendet.
+Mit CRX können Sie die Zugriffsberechtigungen für Benutzer- und Gruppenkonten konfigurieren. Es werden dann dieselben grundlegenden Bewertungsprinzipien auf beide angewendet.
 
 ## Auswerten von Zugriffsrechten {#how-access-rights-are-evaluated}
 
@@ -75,20 +75,21 @@ CRX verwendet zwei Hauptkonzepte zur Bewertung der Zugriffsrechte:
    * Ein Benutzerkonto
    * Ein Gruppenkonto
 
-      Wenn ein Benutzerkonto zu einer oder mehreren Gruppen gehört, ist es auch mit jedem dieser Gruppenprinzipale verknüpft.
+     Wenn ein Benutzerkonto zu einer oder mehreren Gruppen gehört, ist es auch mit jedem dieser Gruppenprinzipale verknüpft.
 
 * Ein **Objekt** repräsentiert die Quelle einer Anfrage.
 
-   Es dient zur Konsolidierung der für diese Anfrage relevanten Zugriffsrechte. Diese stammen von:
+  Es dient zur Konsolidierung der für diese Anfrage relevanten Zugriffsrechte. Diese stammen von:
 
    * dem Benutzerprinzipal
 
-      den Rechten, die Sie dem Benutzerkonto direkt zuweisen
+     den Rechten, die Sie dem Benutzerkonto direkt zuweisen
 
    * allen mit diesem Benutzer verknüpften Gruppenprinzipalen
 
-      sowie allen Rechten, die Sie jeder der Gruppen zugewiesen haben, zu denen der Benutzer gehört.
-   Das Ergebnis wird dann verwendet, um den Zugriff auf die angeforderte Ressource zu erlauben oder zu verweigern.
+     sowie allen Rechten, die Sie jeder der Gruppen zugewiesen haben, zu denen der Benutzer gehört.
+
+  Das Ergebnis wird dann verwendet, um den Zugriff auf die angeforderte Ressource zu erlauben oder zu verweigern.
 
 #### Kompilieren der Liste der Zugriffsrechte für ein Subjekt {#compiling-the-list-of-access-rights-for-a-subject}
 
@@ -110,7 +111,6 @@ Die Liste der für das Subjekt geltenden Zugriffsrechte wird erstellt aus:
 >* CRX verwendet eine Gruppenhierarchie nur, wenn Sie eine Gruppe als Mitglied einer anderen Gruppe einbeziehen. Es gibt keine automatische Vererbung von Gruppenberechtigungen.
 >* Die Reihenfolge, in der Sie die Gruppen festlegen, hat keinen Einfluss auf die Zugriffsrechte.
 >
-
 
 ### Auflösen von Anfrage- und Zugriffsrechten {#resolving-request-and-access-rights}
 
@@ -223,19 +223,19 @@ Sie müssen beim entsprechenden Arbeitsbereich angemeldet sein und können dann 
 
 * **Benutzer-ID**
 
-   Kurzname für das Konto, der beim Zugriff auf CRX verwendet wird
+  Kurzname für das Konto, der beim Zugriff auf CRX verwendet wird
 
 * **Prinzipalname**
 
-   Vollständiger Name des Kontos
+  Vollständiger Name des Kontos
 
 * **Kennwort**
 
-   Erforderlich, wenn mit diesem Konto auf CRX zugegriffen wird
+  Erforderlich, wenn mit diesem Konto auf CRX zugegriffen wird
 
 * **ntlmhash**
 
-    Wird automatisch jedem neuen Konto zugewiesen und bei Änderung des Kennworts aktualisiert
+   Wird automatisch jedem neuen Konto zugewiesen und bei Änderung des Kennworts aktualisiert
 
 * Sie können neue Eigenschaften hinzufügen, indem Sie einen Namen, einen Typ und den Wert definieren. Klicken Sie für jede neue Eigenschaft auf „Speichern“ (grünes Häkchensymbol).
 
@@ -280,7 +280,6 @@ Wenn ein Konto stellvertretend für ein anderes agiert, ist dies sehr schwer zu 
 >* Benutzer
 >* Gruppen mit vielen Mitgliedern
 >
-
 
 ### Aktualisieren eines Benutzerkontos {#updating-a-user-account}
 
@@ -348,17 +347,17 @@ Sie müssen beim entsprechenden Arbeitsbereich angemeldet sein und können dann 
 
 * **Gruppen-ID**
 
-   Kurzname für das Gruppenkonto
+  Kurzname für das Gruppenkonto
 
 * **Prinzipalname**
 
-   Vollständiger Name des Gruppenkontos
+  Vollständiger Name des Gruppenkontos
 
 * Sie können neue Eigenschaften hinzufügen, indem Sie einen Namen, einen Typ und den Wert definieren. Klicken Sie für jede neue Eigenschaft auf „Speichern“ (grünes Häkchensymbol).
 
 * **Mitglieder**
 
-   Sie können Benutzer oder andere Gruppen als Mitglieder dieser Gruppe hinzufügen.
+  Sie können Benutzer oder andere Gruppen als Mitglieder dieser Gruppe hinzufügen.
 
 **Gruppenmitgliedschaft**
 
@@ -450,19 +449,19 @@ Die Richtlinien sind wie folgt kategorisiert:
 
 * **Gültige Richtlinien zur Zugriffssteuerung**
 
-   Diese Richtlinien können angewendet werden.
+  Diese Richtlinien können angewendet werden.
 
-   Dies sind Richtlinien, die für die Erstellung einer lokalen Richtlinie zur Verfügung stehen. Nachdem Sie eine gültige Richtlinie ausgewählt und hinzugefügt haben, wird sie zu einer lokalen Richtlinie.
+  Dies sind Richtlinien, die für die Erstellung einer lokalen Richtlinie zur Verfügung stehen. Nachdem Sie eine gültige Richtlinie ausgewählt und hinzugefügt haben, wird sie zu einer lokalen Richtlinie.
 
 * **Lokale Richtlinien zur Zugriffssteuerung**
 
-   Dies sind Richtlinien zur Zugriffssteuerung, die Sie angewendet haben. Sie können sie dann aktualisieren, sortieren oder entfernen.
+  Dies sind Richtlinien zur Zugriffssteuerung, die Sie angewendet haben. Sie können sie dann aktualisieren, sortieren oder entfernen.
 
-   Eine lokale Richtlinie überschreibt jedwede Richtlinien, die vom übergeordneten Element übernommen werden.
+  Eine lokale Richtlinie überschreibt jedwede Richtlinien, die vom übergeordneten Element übernommen werden.
 
 * **Gültige Richtlinien zur Zugriffssteuerung**
 
-   Dies sind Richtlinien zur Zugriffssteuerung, die jetzt für alle Zugriffsanfragen gelten. Sie zeigen die aggregierten Richtlinien an, die von den lokalen Richtlinien abgeleitet bzw. vom übergeordneten Element übernommenen werden.
+  Dies sind Richtlinien zur Zugriffssteuerung, die jetzt für alle Zugriffsanfragen gelten. Sie zeigen die aggregierten Richtlinien an, die von den lokalen Richtlinien abgeleitet bzw. vom übergeordneten Element übernommenen werden.
 
 ### Auswählen von Richtlinien {#policy-selection}
 
@@ -470,25 +469,25 @@ Sie können Richtlinien für Folgendes auswählen:
 
 * **Aktueller Pfad**
 
-   Wählen Sie wie im vorherigen Beispiel eine Ressource innerhalb des Repositorys aus. Die Richtlinien für diesen aktuellen Pfad werden angezeigt.
+  Wählen Sie wie im vorherigen Beispiel eine Ressource innerhalb des Repositorys aus. Die Richtlinien für diesen aktuellen Pfad werden angezeigt.
 
 * **Repository**
 
-   : Wählt die Zugriffssteuerung auf Repository-Ebene aus. Beispiel: Wenn Sie die Berechtigung `jcr:namespaceManagement` festlegen, die nur für das Repository und nicht für einen Knoten relevant ist.
+  : Wählt die Zugriffssteuerung auf Repository-Ebene aus. Beispiel: Wenn Sie die Berechtigung `jcr:namespaceManagement` festlegen, die nur für das Repository und nicht für einen Knoten relevant ist.
 
 * **Prinzipal**
 
-   Ein Prinzipal, der im Repository registriert ist.
+  Ein Prinzipal, der im Repository registriert ist.
 
-   Sie können entweder den **Prinzipal**-Namen eingeben oder auf das Symbol rechts neben dem Feld klicken, um das Dialogfeld **Prinzipal auswählen** zu öffnen.
+  Sie können entweder den **Prinzipal**-Namen eingeben oder auf das Symbol rechts neben dem Feld klicken, um das Dialogfeld **Prinzipal auswählen** zu öffnen.
 
-   Dort können Sie nach einem **Benutzer** oder einer **Gruppe** **suchen**. Wählen Sie den gewünschten Prinzipal aus der angezeigten Liste aus und klicken Sie dann auf **OK**, um den Wert in das vorherige Dialogfeld zu übernehmen.
+  Damit können Sie **Suche** für **Benutzer** oder **Gruppe**. Wählen Sie den gewünschten Prinzipal aus der angezeigten Liste aus und klicken Sie dann auf **OK**, um den Wert in das vorherige Dialogfeld zu übernehmen.
 
 ![crx_access_control_selectprincipal](assets/crx_accesscontrol_selectprincipal.png)
 
 >[!NOTE]
 >
->Um die Verwaltung zu vereinfachen, empfehlen wir, dass Sie Zugriffsrechte Gruppenkonten zuweisen, nicht einzelnen Benutzerkonten.
+>Um die Verwaltung zu vereinfachen, empfiehlt Adobe, dass Sie Gruppenkonten Zugriffsrechte zuweisen, nicht einzelnen Benutzerkonten.
 >
 >Es ist einfacher, einige wenige Gruppen anstatt vieler Benutzerkonten zu verwalten.
 

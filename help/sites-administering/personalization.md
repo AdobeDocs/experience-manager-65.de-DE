@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1687'
-ht-degree: 59%
+source-wordcount: '1685'
+ht-degree: 58%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 59%
 
 Heute stehen immer mehr Inhalte zur Verfügung, sei es im Internet, im Extranet oder im Intranet.
 
-Personalisierung konzentriert sich darauf, Benutzern eine maßgeschneiderte Umgebung mit dynamischen Inhalten bereitzustellen, die entsprechend ihren spezifischen Anforderungen ausgewählt werden. auf der Grundlage vordefinierter Profile, der Benutzerauswahl oder des interaktiven Benutzerverhaltens.
+Personalisierung konzentriert sich darauf, Benutzern eine maßgeschneiderte Umgebung mit dynamischen Inhalten bereitzustellen, die entsprechend ihren spezifischen Anforderungen ausgewählt werden. Dies kann anhand von vordefinierten Profilen, der Benutzerauswahl oder dem interaktiven Benutzerverhalten geschehen.
 
 Die Personalisierung umfasst drei Hauptelemente:
 
@@ -52,8 +52,8 @@ Es gibt zwei Arten von Personalisierung:
 
 #### Implizit {#implicit}
 
-* Regelbasiert: Business-Manager definieren spezifische Regeln für Aktionen, die auf bestimmten Profilen und/oder Verhaltensweisen basieren.
-* Einfache Filterung: Die Auswahl erfolgt auf Basis von vordefinierten Profilen auf Benutzer- und/oder Gruppenebene.
+* Regelbasiert: Geschäftsführer definieren spezifische Regeln für Aktionen, die auf bestimmten Profilen und/oder Verhaltensweisen basieren.
+* Einfache Filterung: Die Auswahl erfolgt auf Basis vordefinierter Profile auf Benutzer- und/oder Gruppenebene.
 * Kollaboratives Filtern/Empfehlungsfiltern: Das Benutzerverhalten wird unter Einhaltung vordefinierter Regeln registriert. Diese Regeln basieren auf dem Verhalten gleich gesinnter Personen. Die gesammelten Informationen werden verwendet, um die dem Benutzer angezeigten Informationen anzupassen, insbesondere in Form von Empfehlungen.
 
 ## Wie und wann kann die Personalisierung verwendet werden? {#how-and-when-can-personalization-be-used}
@@ -67,7 +67,7 @@ Die Personalisierung kann in vielen Fällen verwendet werden, wie zum Beispiel:
 
 ### Spezifische begrenzte Zielbenutzergruppen – Extranets {#extranets}
 
-* Benutzer benötigen zur Autorisierung einen Login. wird mit einem Profil verknüpft, das die für die Personalisierung erforderlichen Informationen enthält; gegebenenfalls Einzelheiten wie Standort, Beziehung zum Produkt, Nutzungsverlauf, Budgetierungsverpflichtungen usw.
+* Benutzer benötigen zur Autorisierung einen Login. Dieser wird mit einem Profil verknüpft, das für die Personalisierung erforderliche Informationen bereitstellt, möglicherweise Details wie Standort, Beziehung zum Produkt, Nutzungsverlauf, Budgetierungsaufgaben usw.
 * Solche Instanzen können sich auf Websites erstrecken, z. B.:
 * Unternehmen, die Websites für einen hochspezialisierten Bereich ihres Marktes bereitstellen, z. B. ein Pharmaunternehmen, das eine spezialisierte Website für Ärzte bereitstellt.
 * Unternehmen, die Websites bereitstellen, mit denen ihre Kunden aktuelle Konto- und Rechnungsinformationen anzeigen können, so zum Beispiel Telekommunikationsanbieter.
@@ -85,7 +85,7 @@ Die Personalisierung kann in vielen Fällen verwendet werden, wie zum Beispiel:
 Personalisierung sollte aus folgenden Gründen eingesetzt werden:
 
 * Ein Benutzer kann eine bequeme, fokussierte Website erleben.
-* Die Personalisierung kann verwendet werden, um automatisch den Zugriff auf die neueste Version des Inhalts zu propagieren.
+* Mit der Personalisierung kann der Zugriff automatisch auf die neueste Version des Inhalts erweitert werden.
 * Benutzer können über Social Collaboration-Funktionen miteinander kommunizieren, da sie anhand ihrer Profile identifiziert werden können.
 * Ein Benutzer kann den Inhalt erhalten, den er zur Erfüllung einer bestimmten Aufgabe benötigt. Innerhalb des Intranets eines Unternehmens kann dies ein unschätzbares Instrument zur Verbreitung von Informationen sein.
 * Ein Benutzer kann mit den benötigten/gewünschten Inhalten versorgt werden, wodurch die Zeit für die Durchführung von Suchvorgängen verkürzt wird.
@@ -130,7 +130,7 @@ Berücksichtigen Sie beim Einsetzen von Personalisierung Folgendes:
 
 Personalisierung sollte getrennt von der Zugriffskontrolle betrachtet werden, sie stehen jedoch in Wechselbeziehung zueinander.
 
-Die Personalisierung selbst erzeugt keine Form der Zugriffssteuerung. Es handelt sich lediglich um eine Methode zur Steuerung dessen, was der Benutzer sieht. der Benutzer nicht daran gehindert wird, auf andere Inhalte zuzugreifen, und wie bei allen Inhalten müssen ihm bereits die richtigen Zugriffssteuerungen zugewiesen sein.
+Die Personalisierung selbst erzeugt keine Form der Zugriffssteuerung. Es handelt sich lediglich um eine Methode zur Steuerung dessen, was der Benutzer sieht. Es schränkt den Benutzer nicht vom Zugriff auf andere Inhalte ein, und wie bei allen Inhalten müssen ihm bereits die richtigen Zugriffssteuerungen zugewiesen sein.
 
 Die Zugriffskontrolle kann jedoch verwendet werden, um eine Form der Personalisierung zu erstellen. Wenn Sie einem Benutzer den Zugriff auf Inhalte erlauben oder verweigern, wirkt sich dies unweigerlich auf die Auswahl der verfügbaren Inhalte aus - und personalisiert so sein Web-Erlebnis.
 
@@ -144,7 +144,7 @@ Zur Personalisierung stehen verschiedene Komponenten mit AEM zur Verfügung. Ein
 | Kombinierte Anmeldung und Registrierung | Ermöglicht dem Benutzer, sich entweder bei einem vorhandenen Konto anzumelden oder sich für ein neues Konto zu registrieren. |
 | Formular-Adressfeld | Ein komplexes Feld, das die Eingabe einer internationalen Adresse ermöglicht. |
 | Formular-Beginn | Startet eine Formulardefinition |
-| Formular-Captcha | Ein Feld, das aus einem alphanumerischen Wort besteht, das automatisch aktualisiert wird. Die Captcha-Komponente schützt Websites vor Bots. |
+| Formular-Captcha | Ein Feld, das aus einem automatisch aktualisierten alphanumerischen Wort besteht. Die Captcha-Komponente schützt Websites vor Bots. |
 | Formular-Kontrollkästchengruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Kontrollkästchen vorangestellt sind. Benutzer können mehrere Kontrollkästchen auswählen. |
 | Formular-Dropdownliste | Mehrere Elemente, die als Dropdown-Liste angeordnet sind. Der Schalter für die Mehrfachauswahl gibt an, ob mehrere Elemente aus der Liste ausgewählt werden können. |
 | Formular-Ende | Beendet die Formulardefinition |
@@ -155,7 +155,7 @@ Zur Personalisierung stehen verschiedene Komponenten mit AEM zur Verfügung. Ein
 | Formular-Optionsfeldgruppe | Mehrere Elemente, die als Liste angeordnet sind und denen Optionsschalter vorangestellt sind. Benutzer dürfen nur ein Optionsfeld auswählen. |
 | Formular-Senden-Schaltfläche | Eine zusätzliche Senden-Schaltfläche für das Formular, wobei der Titel als Text auf der Schaltfläche dargestellt wird. |
 | Formular-Textfeld | Ein Textfeld, in das Benutzer Informationen eingeben können. |
-| Meine Gadgets | Ermöglicht die Auswahl eines der verfügbaren Gadgets. |
+| Meine Gadgets | Hier können Sie eine Auswahl an verfügbaren Gadgets einbeziehen. |
 | Profil – Avatar-Foto | Ermöglicht die Eingabe eines Avatar-Fotos. |
 | Profil – Genauer Name | Eingabe von Namendetails, einschließlich Elemente wie Titel, zweiter Vorname und Suffix, falls erforderlich. |
 | Profil – Anzeigename | Anzuzeigender Name. |

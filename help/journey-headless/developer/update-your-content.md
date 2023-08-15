@@ -2,10 +2,10 @@
 title: Aktualisieren Ihres Inhalts über AEM Assets-APIs
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie mit der REST-API auf die Inhalte Ihrer Inhaltsfragmente zugreifen und diese aktualisieren können.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '1040'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1037'
+ht-degree: 94%
 
 ---
 
@@ -41,7 +41,7 @@ Im vorherigen Teil der Headless-Tour haben Sie erfahren, wie Sie mit der AEM-Gra
 
 Warum ist also eine weitere API erforderlich?
 
-Die Assets-HTTP-API ermöglicht nicht nur das **Lesen** Ihrer Inhalte, sondern auch das **Erstellen**, **Aktualisieren** und **Löschen** von Inhalten – Aktionen, die mit der GraphQL-API nicht möglich sind.
+Mit der Assets-HTTP-API können Sie **Lesen** Ihren Inhalt, aber auch **Erstellen**, **Aktualisieren** und **Löschen** content - Aktionen, die mit der GraphQL-API nicht möglich sind.
 
 Die Assets-REST-API ist in jeder vorkonfigurierten Installation einer aktuellen Adobe Experience Manager-Version verfügbar.
 
@@ -54,7 +54,7 @@ Die Assets-HTTP-API umfasst die:
 
 Die aktuelle Implementierung der Assets-HTTP-API basiert auf dem Architekturstil **REST** und ermöglicht den Zugriff auf (in AEM gespeicherte) Inhalte über **CRUD**-Vorgänge (Create, Read, Update, Delete, also Erstellen, Lesen, Aktualisieren, Löschen).
 
-Mit diesen Operationen ermöglicht die API es Ihnen, Adobe Experience Manager als Headless-CMS (Content-Management-System) auszuführen, indem Sie einem JavaScript-Frontend-Programm Inhalts-Services bereitstellen. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann. Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPAs) die über die API bereitgestellten Inhalte häufig im JSON-Format.
+Mit diesem Vorgang ermöglicht Ihnen die API den Betrieb von Adobe Experience Manager als Headless-CMS (Content Management System) durch Bereitstellung von Content Services für eine JavaScript-Frontend-Anwendung. Oder jedem anderen Programm, das HTTP-Anfragen ausführen und JSON-Antworten verarbeiten kann. Beispielsweise benötigen Framework-basierte oder benutzerdefinierte Single Page Applications (SPAs) die über die API bereitgestellten Inhalte häufig im JSON-Format.
 
 <!--
 >[!NOTE]
@@ -223,7 +223,6 @@ Um beispielsweise auf `/content/dam/wknd/en/adventures/cycling-tuscany`zuzugreif
 >
 >* `/api/assets` **erfordert keine** Verwendung des `.model`-Selektors.
 >* `/content/path/to/page` **erfordert** die Verwendung des `.model`-Selektors.
-
 
 ### Vorgang {#operation}
 

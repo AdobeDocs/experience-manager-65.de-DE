@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '455'
-ht-degree: 72%
+source-wordcount: '454'
+ht-degree: 70%
 
 ---
 
 # Testen von Inhaltsfragmenten in We.Retail{#trying-out-content-fragments-in-we-retail}
 
-Inhaltsfragmente ermöglichen es Ihnen, kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten zu erstellen. **We.Retail** (wie in einer vordefinierten Instanz von Adobe Experience Manager verfügbar) stellt das Fragment bereit **Arktisches Surfen in Lofoten** als Grundmuster. Dies zeigt Folgendes:
+Mit Inhaltsfragmenten können Sie kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten erstellen. **We.Retail** (wie in einer vordefinierten Instanz von Adobe Experience Manager verfügbar) stellt das Fragment bereit **Arktisches Surfen in Lofoten** als Grundmuster. Dies zeigt Folgendes:
 
 * Inhaltsfragmente für Adobe Experience Manager (AEM) werden [als seitenunabhängige Assets erstellt und verwaltet](/help/assets/content-fragments/content-fragments.md). Damit können Sie kanalneutrale Inhalte zusammen mit (möglicherweise kanalspezifischen) Varianten erstellen.
 
@@ -66,7 +66,7 @@ Hier können Sie [Bearbeiten und Verwalten](/help/assets/content-fragments/conte
 
 ## wo Inhaltsfragmente in We.Retail verwendet werden {#where-content-fragments-are-used-in-we-retail}
 
-Beispiel [Seitenbearbeitung mit einem Inhaltsfragment](/help/sites-authoring/content-fragments.md) Es gibt mehrere Beispielseiten, die unter bereitgestellt werden, z. B.:
+Beispiel [Seitenbearbeitung mit einem Inhaltsfragment](/help/sites-authoring/content-fragments.md) Es werden mehrere Beispielseiten bereitgestellt, z. B.:
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 

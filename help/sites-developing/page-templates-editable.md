@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
-workflow-type: ht
-source-wordcount: '3224'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3221'
+ht-degree: 98%
 
 ---
 
@@ -73,8 +73,9 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
    * Komponenten, die in der Vorlagenstruktur definiert sind, können nicht auf einer resultierenden Seite verschoben oder von den resultierenden Seiten gelöscht werden.
 
       * Wenn Sie eine Vorlage in einem benutzerdefinierten Ordner außerhalb des `We.Retail`-Beispielinhalts erstellen, können Sie Foundation-Komponenten wählen oder [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=de) verwenden.
+
    * Wenn Sie möchten, dass Seitenautorinnen und -autoren Komponenten hinzufügen und entfernen können, fügen Sie der Vorlage ein Absatzsystem hinzu.
-   * Komponenten lassen sich entsperren und erneut sperren, damit Sie den anfänglichen Inhalt definieren können.
+   * Komponenten können entsperrt und erneut gesperrt werden, damit Sie anfänglichen Inhalt definieren können.
 
    Einzelheiten dazu, wie Vorlagenautoren Strukturen definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
@@ -85,6 +86,7 @@ Gehen Sie zum Erstellen einer neuen bearbeitbaren Vorlage wie folgt vor:
    * Die Richtlinien für Inhalte definieren die Design-Eigenschaften einer Komponente.
 
       * Zum Beispiel die verfügbaren Komponenten oder minimale/maximale Abmessungen.
+
    * Diese Richtlinien sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden).
 
    Einzelheiten dazu, wie Vorlagenautorinnen und -autoren Richtlinien definieren können, finden Sie unter [Erstellen von Seitenvorlagen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
@@ -541,13 +543,13 @@ Beim [Bearbeiten einer Vorlage können Sie das Layout definieren](/help/sites-au
 Die Inhalts- (oder Design-) Richtlinien definieren die Design-Eigenschaften einer Komponente, wie z. B. die Verfügbarkeit der Komponente oder die minimalen/maximalen Abmessungen. Diese Richtlinien sind auf die Vorlage anwendbar (und auf Seiten, die mit der Vorlage erstellt wurden). Inhaltsrichtlinien können mit dem Vorlageneditor erstellt und ausgewählt werden.
 
 * Die Eigenschaft `cq:policy` im Knoten `root`
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem der Seite bereit.
 
 * Die Eigenschaft `cq:policy` der komponentenexpliziten Knoten unter `root` stellt Links zu den Richtlinien für die einzelnen Komponenten bereit.
 
 * Die tatsächlichen Richtliniendefinitionen werden gespeichert unter:
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -565,7 +567,7 @@ Stellt einen relativen Verweis auf die Inhaltsrichtlinie für das Absatzsystem d
 
 ### Seitenrichtlinien {#page-policies}
 
-Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) für die Seite (Hauptabsatzsystem) entweder in der Vorlage oder den resultierenden Seiten zu definieren.
+Mit Seitenrichtlinien können Sie die [Inhaltsrichtlinie](#content-policies) für die Seite (main parsys) in der Vorlage oder den resultierenden Seiten.
 
 ### Aktivieren und Zulassen einer Vorlage {#enabling-and-allowing-a-template-for-use}
 
@@ -578,7 +580,7 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
    * Durch Festlegen der Statuseigenschaft des Knotens `jcr:content`
 
       * Zum Beispiel unter:
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definieren Sie die Eigenschaft:
 
@@ -590,9 +592,9 @@ Seitenrichtlinien ermöglichen es, die [Inhaltsrichtlinie](#content-policies) f�
 
    * [Definieren Sie die Pfade zugelassener Vorlagen über die **Seiteneigenschaften**](/help/sites-authoring/templates.md#allowing-a-template-author) der entsprechenden Seite oder Stammseite einer Unterverzweigung.
    * Legen Sie die folgende Eigenschaft fest:
-      `cq:allowedTemplates`
-Im 
-`jcr:content`-Knoten der erforderlichen Verzweigung.
+     `cq:allowedTemplates`
+Im `jcr:content`-Knoten der erforderlichen Verzweigung.
+
    Beispielsweise mit dem Wert:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`

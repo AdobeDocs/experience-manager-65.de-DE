@@ -12,10 +12,10 @@ discoiquuid: ed3a858c-7a43-4515-a2ff-43ca465c7d7d
 docset: aem65
 feature: Configuring
 exl-id: 19eedcf2-140a-452d-aa8f-6fd7f219e5f8
-source-git-commit: d3923e5e693e7426ee57e81e203f31964a23af3a
-workflow-type: ht
-source-wordcount: '3430'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '3429'
+ht-degree: 99%
 
 ---
 
@@ -183,7 +183,7 @@ Siehe [AEM-Protokollierung](/help/sites-deploying/configure-logging.md) und [Sli
 
 **Apache Sling Referrer-Filter** Um bekannte Sicherheitsprobleme mit Cross-Site Request-Forgery (CSRF) in CRX WebDAV und Apache Sling zu beheben, müssen Sie den Referrer-Filter konfigurieren.
 
-Der Referrer-Filter-Service ist ein OSGi-Service, mit dem Sie Folgendes konfigurieren können:
+Der Referrer-Filterdienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurieren können:
 
 * welche HTTP-Methoden gefiltert werden sollen
 * Ob eine leere Referrer-Kopfzeile zulässig ist
@@ -318,15 +318,15 @@ Mit AEM Root Mapping können Sie die Benutzeroberfläche konfigurieren, die Sie 
 
 * Wenn Sie die Touch-optimierte Benutzeroberfläche als Standard-Benutzeroberfläche verwenden möchten, muss der **Zielpfad** auf Folgendes verweisen:
 
-   ```shell
-      /projects.html
-   ```
+  ```shell
+     /projects.html
+  ```
 
 * Wenn Sie die klassische Benutzeroberfläche als Standard-Benutzeroberfläche verwenden möchten, muss der **Zielpfad** auf Folgendes verweisen:
 
-   ```shell
-      /welcome.html
-   ```
+  ```shell
+     /welcome.html
+  ```
 
 >[!NOTE]
 >
@@ -339,8 +339,7 @@ Verschiedene Eigenschaften können konfiguriert werden:
 * **Pfad**
 Der Pfad, für den dieser Authentifizierungs-Handler aktiv ist. Wenn dieser Parameter nicht angegeben wird, ist der Authentifizierungs-Handler deaktiviert. Beispielsweise wird beim Pfad / der Authentifizierungs-Handler für das gesamte Repository verwendet.
 
-* **Service Ranking** Der Rangfolge-Wert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Dieser Wert ist ein 
-`int`-Wert, wobei höhere Werte eine höhere Priorität angeben.
+* **Service Ranking** Der Rangfolge-Wert für den OSGi-Framework-Dienst gibt die Reihenfolge an, in der dieser Dienst aufgerufen wird. Dieser Wert ist ein `int`-Wert, wobei höhere Werte eine höhere Priorität angeben.
 Der Standardwert ist `0`.
 
 * **Kopfzeilen-Namen**
@@ -352,8 +351,7 @@ Die Namen von Cookies, die möglicherweise eine Benutzer-ID enthalten.
 * **Parameter-Namen**
 Die Namen von Anfrageparametern, die möglicherweise eine Benutzer-ID angeben.
 
-* **User Map** Für bestimmte Benutzer kann der aus der HTTP-Anforderung extrahierte Benutzername im Anmeldedaten-Objekt durch einen anderen Namen ersetzt werden. Die Zuordnung ist hier definiert. Wenn der Benutzername 
-`admin` auf beiden Seiten der Zuordnung angezeigt wird, wird die Zuordnung ignoriert. Das Zeichen „=“ muss mit einem vorangestellten „\“ versehen werden.
+* **User Map** Für bestimmte Benutzer kann der aus der HTTP-Anforderung extrahierte Benutzername im Anmeldedaten-Objekt durch einen anderen Namen ersetzt werden. Die Zuordnung ist hier definiert. Wenn der Benutzername `admin` auf beiden Seiten der Zuordnung angezeigt wird, wird die Zuordnung ignoriert. Das Zeichen „=“ muss mit einem vorangestellten „\“ versehen werden.
 
 * **Format** Gibt das Format an, in dem die Benutzer-ID angegeben ist. Verwenden Sie:
 

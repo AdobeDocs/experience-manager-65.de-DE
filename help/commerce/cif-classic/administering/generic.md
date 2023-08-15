@@ -8,10 +8,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2979'
-ht-degree: 99%
+source-wordcount: '2977'
+ht-degree: 98%
 
 ---
 
@@ -254,7 +254,7 @@ Sie können mehrere Assets zur Produktkomponente hinzufügen und dann das Asset 
    ![Screenshot zum Hinzufügen von Produktdaten](/help/sites-administering/assets/chlimage_1-91.png)
 
 1. Tippen oder klicken Sie auf **Hinzufügen**. Ein neuer Asset-Platzhalter wird angezeigt.
-1. Wenn Sie auf **Ändern** klicken oder tippen, wird ein Dialogfeld geöffnet, in dem Sie ein Asset wählen können.
+1. Durch Tippen/Klicken auf &quot;Ändern&quot;wird ein Dialogfeld geöffnet, in dem Sie ein Asset auswählen können.
 1. Wählen Sie das Asset aus, das Sie hinzufügen möchten.
 
    >[!NOTE]
@@ -344,7 +344,7 @@ Die Auswahl des anzuzeigenden Bildes erfolgt wie folgt:
 
 <!-- Search&Promote is end of life as of September 1, 2022 ### Product Feed {#product-feed} -->
 
-<!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration allows you to: -->
+<!-- Search&Promote is end of life as of September 1, 2022 The Search&Promote integration lets you: -->
 
 <!-- Search&Promote is end of life as of September 1, 2022 * use the eCommerce API, independently of the underlying repository structure and commerce platform. -->
 <!-- Search&Promote is end of life as of September 1, 2022 * leverage the Index Connector feature of Search&Promote to provide a product feed in XML format. -->
@@ -376,7 +376,7 @@ Sie können diese in der Web-Konsole in den OSGi-Ereignissen (`/system/console/e
 
 ### Bild mit Links für Hinzufügen zum Warenkorb {#image-with-add-to-cart-links}
 
-Die Komponente „Bild mit ‚Zum Warenkorb hinzufügen‘-Links“ ermöglicht Ihnen das schnelle Hinzufügen eines Produkts zum Warenkorb, indem Sie einen Hotspot erstellen, der mit einem Produkt in einem Bild verknüpft ist.
+Mit der Komponente Bild mit Zum Warenkorb-Links hinzufügen können Sie schnell ein Produkt zum Warenkorb hinzufügen, indem Sie einen Hotspot erstellen, der mit einem Produkt auf einem Bild verknüpft ist.
 
 Beim Klicken auf den Hotspot wird ein Dialogfeld geöffnet, in dem Sie die Größe und Menge für das Produkt auswählen können.
 

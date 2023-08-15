@@ -1,15 +1,15 @@
 ---
 title: Grundlegende Handhabung
-description: Eine Übersicht über die grundlegende Handhabung bei der Verwendung der Adobe Experience Manager-Autorenumgebung. Als Grundlage wird die Sites-Konsole verwendet.
+description: Eine Übersicht über die grundlegende Handhabung der Adobe Experience Manager-Autorenumgebung. Als Grundlage wird die Sites-Konsole verwendet.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1167'
-ht-degree: 56%
+source-wordcount: '1166'
+ht-degree: 55%
 
 ---
 
@@ -102,7 +102,7 @@ Von hier aus können Sie [Ihre Seiten verwalten](/help/sites-authoring/managing-
 
 ## Zugreifen auf die Hilfe {#accessing-help}
 
-In verschiedenen Konsolen (z. B. Websites) wird eine **Hilfe** -Schaltfläche verfügbar. Klicken **Hilfe** öffnet entweder Package Share oder die Dokumentations-Site.
+In verschiedenen Konsolen (z. B. Websites) wird eine **Hilfe** -Schaltfläche verfügbar ist. Klicken **Hilfe** öffnet entweder Package Share oder die Dokumentations-Site.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 

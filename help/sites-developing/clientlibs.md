@@ -1,20 +1,16 @@
 ---
 title: Verwenden Client-seitiger Bibliotheken
-seo-title: Using Client-Side Libraries
-description: AEM stellt Client-seitige Bibliotheksordner zur Verfügung, mit denen Sie Ihren Client-seitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Code-Kategorie dem Client bereitgestellt werden soll.
-seo-description: AEM provides Client-side Library Folders, which allow you to store your client-side code in the repository, organize it into categories, and define when and how each category of code is to be served to the client
-uuid: f12b13cc-6651-4c9a-9c52-19a22bb82b28
+description: AEM bietet Client-seitige Bibliotheksordner, mit denen Sie Ihren clientseitigen Code im Repository speichern, ihn in Kategorien organisieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2862'
-ht-degree: 83%
+source-wordcount: '2860'
+ht-degree: 81%
 
 ---
 
@@ -22,7 +18,7 @@ ht-degree: 83%
 
 Moderne Websites beruhen in hohem Maße auf der Client-seitigen Verarbeitung durch einen komplexen JavaScript- und CSS-Code. Die Organisation und Optimierung der Bereitstellung dieses Codes kann äußerst kompliziert sein.
 
-Um Abhilfe zu schaffen, stellt AEM **Client-seitige Bibliotheksordner** zur Verfügung, mit denen Sie Ihren Client-seitigen Code im Repository speichern, in Kategorien gruppieren und definieren können, wann und wie jede Code-Kategorie dem Client bereitgestellt werden soll. Das Client-seitige Bibliothekssystem übernimmt dann das Erstellen der korrekten Links in der endgültigen Web-Seite, um den korrekten Code zu laden.
+Um dieses Problem zu beheben, bietet AEM **Clientseitige Bibliotheksordner**, mit dem Sie Ihren clientseitigen Code im Repository speichern, ihn in Kategorien organisieren und definieren können, wann und wie jede Codekategorie dem Client bereitgestellt werden soll. Das Client-seitige Bibliothekssystem übernimmt dann das Erstellen der korrekten Links in der endgültigen Web-Seite, um den korrekten Code zu laden.
 
 ## Funktionsweise Client-seitiger Bibliotheken in AEM {#how-client-side-libraries-work-in-aem}
 
@@ -171,7 +167,7 @@ Sie legen die Eigenschaft `allowProxy` für `foo` auf „true“ fest.
 
    * Name: categories
    * Typ: String
-   * Wert: Der Name der Kategorie
+   * Wert: Der Kategoriename
    * Multi: Auswählen
 
 1. Fügen Sie auf beliebige Weise Quelldateien zum Bibliotheksordner hinzu. Verwenden Sie beispielsweise einen WebDav-Client, um Dateien zu kopieren, oder erstellen Sie eine Datei und erstellen Sie den Inhalt manuell.
@@ -407,7 +403,7 @@ YUI ist in AEM als Standard-Miniaturansicht festgelegt. Gehen Sie wie folgt vor,
 
 AEM bietet eine Vielzahl von Tools zum Debuggen und Testen von Client-Bibliotheksordnern an.
 
-### Siehe Eingebettete Dateien . {#see-embedded-files}
+### Siehe Eingebettete Dateien {#see-embedded-files}
 
 Wenn Sie den Ursprung von eingebettetem Code nachvollziehen oder sicherstellen möchten, dass eingebettete Client-Bibliotheken die erwarteten Ergebnisse produzieren, können Sie die Namen der Dateien anzeigen, die zur Laufzeit eingebettet werden. Um die Dateinamen anzuzeigen, hängen Sie den Parameter `debugClientLibs=true` an die URL Ihrer Web-Seite an. Die Bibliothek, die generiert wird, enthält `@import`-Anweisungen anstelle des eingebetteten Codes.
 
@@ -457,8 +453,8 @@ Die Komponente `dumplibs` enthält einen Test-Selektor, der den für `ui:include
 
 Der HTML Library Manager-Service verarbeitet `cq:ClientLibraryFolder`-Tags und generiert die Bibliotheken zur Laufzeit. Der Umgebungs-, Entwicklungs- oder Produktionstyp bestimmt, wie der Dienst konfiguriert werden soll:
 
-* Erhöhen Sie die Sicherheit: Debugging deaktivieren
-* Leistungsverbesserung: Entfernen Sie Leerzeichen und komprimieren Sie Bibliotheken.
-* Lesbarkeit verbessern: Fügen Sie Leerzeichen ein und komprimieren Sie nicht.
+* Sicherheit erhöhen: Debugging deaktivieren
+* Verbesserung der Leistung: Entfernen Sie Leerzeichen und komprimieren Sie Bibliotheken.
+* Lesbarkeit verbessern: Fügen Sie Leerzeichen ein und komprimieren Sie diese nicht.
 
 Informationen zum Konfigurieren des Dienstes finden Sie unter [HTML Library Manager AEM](/help/sites-deploying/osgi-configuration-settings.md#aemhtmllibrarymanager).

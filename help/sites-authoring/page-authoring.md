@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '314'
-ht-degree: 91%
+source-wordcount: '313'
+ht-degree: 86%
 
 ---
 
@@ -47,10 +47,11 @@ Links auf einer bearbeitbaren Seite kann ein Browser eingeblendet werden. Von hi
 * **[Asset-Browser](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
 Links auf einer bearbeitbaren Seite kann ein Browser eingeblendet werden. Von hier können Assets auf die Seite gezogen werden, z. B. wenn Sie Assets positionieren oder Links zu anderen Seiten erstellen möchten.
 
-* **Komponentensymbolleiste**
+* **Komponenten-Symbolleiste**
 Sowohl ein einfaches als auch ein langsames Doppelklick/Tippen zeigen die entsprechende Symbolleiste an (einfach für die Symbolleiste der Bearbeitung im Kontext, dann langsam doppelt für die volle Symbolleiste).
 
-* **[Responsives Layout](/help/sites-authoring/responsive-layout.md)** Damit steht Ihnen ein Absatzsystem zur Verfügung, mit dem Sie Komponenten in einem responsiven Raster hinzufügen und positionieren können.
+* **[Responsives Layout](/help/sites-authoring/responsive-layout.md)**
+Dies bietet ein Absatzsystem, mit dem Sie Komponenten in einem responsiven Raster positionieren können.
 
 * **Suche während der Eingabe**
 In bestimmten Szenarios (z. B. bei der Pfadauswahl in Dialogfeldern für die Bearbeitung) liefert die Inhaltssuche in der AEM-Oberfläche bereits während der Eingabe dynamische Suchergebnisse.

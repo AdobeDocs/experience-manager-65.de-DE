@@ -4,9 +4,9 @@ description: Der Tough Day-Test simuliert die tägliche Belastung von etwa 1000 
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1824'
+source-wordcount: '1823'
 ht-degree: 54%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 54%
 
 ## Was ist Tough Day 2? {#what-is-tough-day}
 
-&quot;Tough Day 2&quot;ist eine Anwendung, mit der Sie die Grenzen Ihrer AEM testen können. Sie kann mit der standardmäßigen Test-Suite vorkonfiguriert oder entsprechend Ihren Testanforderungen konfiguriert werden. Du kannst zusehen [diese Aufzeichnung](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) für eine Darstellung des Antrags.
+&quot;Tough Day 2&quot;ist eine Anwendung, mit der Sie die Grenzwerte Ihrer AEM testen können. Sie kann mit der standardmäßigen Test-Suite vorkonfiguriert oder entsprechend Ihren Testanforderungen konfiguriert werden. Du kannst zusehen [diese Aufzeichnung](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2017/aem-toughday2-stress-testing-benchmarking-tool.html) für eine Darstellung des Antrags.
 
 >[!CAUTION]
 >
@@ -140,7 +140,7 @@ Die relevanten Parameter finden Sie in der folgenden Liste:
 
 ## Anpassen {#customizing}
 
-Die Anpassung kann auf zwei Arten erreicht werden: Befehlszeilenparameter oder YAML-Konfigurationsdateien. **Konfigurationsdateien werden für große benutzerdefinierte Suites verwendet und überschreiben die Standardparameter von Tough Day 2. Befehlszeilenparameter überschreiben sowohl Konfigurationsdateien als auch die Standardparameter.**
+Die Anpassung kann auf zwei Arten erfolgen: Befehlszeilenparameter oder YAML-Konfigurationsdateien. **Konfigurationsdateien werden für große benutzerdefinierte Suites verwendet und überschreiben die Standardparameter von Tough Day 2. Befehlszeilenparameter überschreiben sowohl Konfigurationsdateien als auch die Standardparameter.**
 
 Die einzige Möglichkeit, eine Testkonfiguration zu speichern, besteht darin, sie in das YAML-Format zu kopieren.
 
@@ -260,7 +260,7 @@ tests:
       title : NewAsset
 ```
 
-Sie können Tests auch aus vordefinierten Suites oder Herausgebern aus der Standardkonfiguration entfernen, indem Sie die `exclude` Parameter. Sie müssen auch den Suite-Namen und den tatsächlichen Namen des Tests angeben (nicht den Test C `lass` name). Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Im nachfolgenden Beispiel wird der Test `CreatePageTreeTest` (namens `UploadAsset`) von der Tough Day-Suite entfernt.
+Sie können Tests auch aus vordefinierten Suites oder Herausgebern aus der Standardkonfiguration entfernen, indem Sie `exclude` -Parameter. Sie müssen auch den Suite-Namen und den tatsächlichen Namen des Tests angeben (nicht den Test C `lass` name). Den Testnamen finden Sie in der Eigenschaft `name` der Testklasse. Im nachfolgenden Beispiel wird der Test `CreatePageTreeTest` (namens `UploadAsset`) von der Tough Day-Suite entfernt.
 
 Mithilfe von Befehlszeilenparametern:
 

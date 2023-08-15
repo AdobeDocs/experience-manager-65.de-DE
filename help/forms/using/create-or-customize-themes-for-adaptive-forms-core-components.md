@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1975'
+source-wordcount: '1973'
 ht-degree: 10%
 
 ---
@@ -62,7 +62,7 @@ Sie können [Anpassen dieser Designs, um ein Design zu erstellen](#customize-a-t
 
 ## Anpassen eines Designs {#customize-a-theme-core-components-based-adaptive-forms}
 
-Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Personalisierung des Erscheinungsbilds eines Designs. Wenn Sie ein Design anpassen, nehmen Sie Änderungen an seinen Designelementen, Layout, Farben, Typografie und manchmal am zugrunde liegenden Code vor. Dadurch können Sie ein einzigartiges und maßgeschneidertes Erscheinungsbild für Ihre Website oder Anwendung erstellen und dabei die grundlegende Struktur und Funktionalität des Designs beibehalten.
+Das Anpassen eines Designs bezieht sich auf den Prozess der Änderung und Personalisierung des Erscheinungsbilds eines Designs. Wenn Sie ein Design anpassen, nehmen Sie Änderungen an seinen Designelementen, Layout, Farben, Typografie und manchmal am zugrunde liegenden Code vor. Auf diese Weise können Sie ein einzigartiges und maßgeschneidertes Erscheinungsbild für Ihre Website oder Anwendung erstellen und dabei die grundlegende Struktur und Funktionalität des Designs beibehalten.
 
 >[!NOTE]
 >

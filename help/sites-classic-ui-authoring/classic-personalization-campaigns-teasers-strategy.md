@@ -7,10 +7,10 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1196'
-ht-degree: 31%
+source-wordcount: '1195'
+ht-degree: 29%
 
 ---
 
@@ -27,8 +27,8 @@ In Kampagnen werden häufig Teaser verwendet, um ein bestimmtes Segment der Besu
 
 Teaser in AEM bestehen aus mehreren Teilen:
 
-* **Teaser-Seiten** werden in der entsprechenden Kampagnenseite gespeichert und enthalten die Definitionen der Teaser-Absätze, die für die jeweilige Kampagne verfügbar sind. Diese Definitionen werden beim Anzeigen der Teaser-Absätze verwendet. einschließlich Inhaltsvarianten, das Segment, das zur Auswahl einer Variante und eines Verstärkungsfaktors verwendet werden soll.
-* Die **Teaser-Komponente** ist im Lieferumfang enthalten und ermöglicht Ihnen das Erstellen einer Instanz eines speziellen Teaser-Absatzes auf einer Inhaltsseite. Sie können die Teaser-Komponente aus dem Sidekick ziehen und dann Ihre Teaser-Definition angeben, um einen eigenen Teaser-Absatz zu erstellen. **Hinweis:** Die Teaser-Komponente wird in AEM 6.2 nicht mehr unterstützt. Verwenden Sie stattdessen die [Target-Komponente](/help/sites-authoring/content-targeting-touch.md).
+* **Teaser-Seiten** werden in der entsprechenden Kampagnenseite gespeichert und enthalten die Definitionen der Teaser-Absätze, die für die jeweilige Kampagne verfügbar sind. Diese Definitionen werden bei der Anzeige der Teaser-Absätze verwendet, einschließlich Inhaltsvarianten, des Segments, das zur Auswahl einer Variante verwendet werden soll, und des Verstärkungsfaktors.
+* Die **Teaser-Komponente** ist standardmäßig verfügbar und ermöglicht Ihnen das Erstellen einer Instanz Ihres spezifischen Teaser-Absatzes auf einer Inhaltsseite. Sie können die Teaser-Komponente aus dem Sidekick ziehen und dann Ihre Teaser-Definition angeben, um einen eigenen Teaser-Absatz zu erstellen. **Hinweis:** Die Teaser-Komponente wird in AEM 6.2 nicht mehr unterstützt. Verwenden Sie stattdessen die [Target-Komponente](/help/sites-authoring/content-targeting-touch.md).
 * **Teaser-Absätze** sind tatsächliche Instanzen Ihres Teasers innerhalb einer Inhaltsseite. Dadurch wird ein Segment von Besuchern zu Inhalten geleitet, die auf ihre Interessen ausgerichtet sind.
 * Seiten, die den Kampagneninhalt für ein spezifisches Besuchersegment enthalten. Normalerweise führen Teaser-Absätze den Besucher zu solchen Seiten.
 
@@ -108,7 +108,7 @@ Und wir verwenden die folgenden Teaser-Definitionen:
 
 Wenn wir dies auf einen Besucher anwenden, bei dem:
 
-* **S1**, **S2 und **S6** erfolgreich auflösen
+* **S1**, **S2 und **S6** erfolgreich
 
 * das Tag **Marketing** hat drei Treffer
 * das Tag **Business** hat sechs Treffer
@@ -201,7 +201,7 @@ Diese Werte werden verwendet, um die Teaser zu bestimmen, die dem Besucher je na
   <tr>
    <td>Erste(r)</td>
    <td>T5</td>
-   <td>Nur T5 und T6 werden berücksichtigt, da all ihre Segmente aufgelöst werden <i>und</i> sie den höchsten Verstärkungsfaktor aufweisen. Die zurückgegebene Liste weist die Reihenfolge T5, T6 auf. sodass T5 ausgewählt und angezeigt wird.</td>
+   <td>Nur T5 und T6 werden berücksichtigt, da all ihre Segmente aufgelöst werden <i>und</i> sie den höchsten Verstärkungsfaktor aufweisen. Die zurückgegebene Liste befindet sich in der Reihenfolge T5, T6; daher wird T5 ausgewählt und angezeigt.</td>
   </tr>
   <tr>
    <td>Willkürlich</td>
@@ -242,7 +242,7 @@ Nachdem Sie Ihre Marke und Kampagne erstellt haben, können Sie Ihr Teaser-Erleb
 1. Bearbeiten Sie die Teaser-Komponente, um Folgendes hinzuzufügen:
 
    * **Kampagnenpfad**
-Pfad zur Kampagnenseite, die die einzelne Teaser-Seite enthält; -Segmente bestimmen genau, welcher Teaser angezeigt wird.
+Pfad zur Kampagnenseite, auf der sich die einzelne Teaser-Seite befindet. Segmente bestimmen genau, welcher Teaser angezeigt wird.
 
    * **[Strategie](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
 Methode, die zur Auswahl verwendet wird, wenn ein Besucher die Kriterien mehrerer Segmente erfüllt.
@@ -261,7 +261,7 @@ Methode, die zur Auswahl verwendet wird, wenn ein Besucher die Kriterien mehrere
 
 Neben der Kampagnenansicht im MCM enthält die Kampagnenseite auch Informationen zu den mit ihr verbundenen Teasern:
 
-1. Aus dem **Websites** Konsole die Kampagnenseite öffnen; Beispiel:
+1. Aus dem **Websites** -Konsole öffnen Sie die Kampagnenseite. Beispiel:
 
    `https://localhost:4502/content/campaigns/geometrixx-outdoors/storefront/summer.html`
 

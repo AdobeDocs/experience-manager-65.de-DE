@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2692'
 ht-degree: 1%
 
 ---
@@ -77,8 +77,8 @@ Sie können auch eine Bilddatei bereitstellen, die als Anwendungsminiaturansicht
 
 Es gibt zusätzliche (und optionale) Registerkarten für den Build-Cloud-Service und die Integration des Adobe Mobile Services SDK-Plug-ins in Ihre App.
 
-* Build: Klicken Sie hier auf Konfigurationen verwalten und richten Sie Ihren Build-Dienst build.phonegap.com ein. Wählen Sie dann aus der Dropdown-Liste den neu erstellten PhoneGap Build-Cloud-Service aus.
-* Analytics: Klicken Sie auf Konfigurationen verwalten und richten Sie [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) Cloud Service. Wählen Sie dann aus der Dropdown-Liste den neu erstellten Mobile Service aus, der in Ihre Mobile App integriert werden soll.
+* Build: Klicken Sie hier auf Konfigurationen verwalten und richten Sie Ihren build.phonegap.com Build-Dienst ein. Wählen Sie dann aus der Dropdown-Liste den neu erstellten PhoneGap Build-Cloud-Service aus.
+* Analytics: Klicken Sie auf Konfigurationen verwalten und richten Sie Ihre [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) Cloud Service. Wählen Sie dann aus der Dropdown-Liste den neu erstellten Mobile Service aus, der in Ihre Mobile App integriert werden soll.
 
 >[!NOTE]
 >
@@ -158,7 +158,7 @@ Mobile Apps enthalten einen Aktualisierungsbefehl, mit dem aktualisierte Anwendu
 
 Um aktualisierte Inhalte für Anwendungen verfügbar zu machen, aktualisieren Sie den Cache für die Inhaltssynchronisierung. Wenn Sie den Cache zum ersten Mal aktualisieren, werden alle veröffentlichten Inhalte hinzugefügt. Nachfolgende Aktualisierungen fügen nur die veröffentlichten Inhalte hinzu, die sich seit der vorherigen Aktualisierung geändert haben.
 
-Die Inhaltssynchronisierung verfolgt auch, wann die Aktualisierungen stattfinden. Anhand dieser Informationen kann die Inhaltssynchronisierung bestimmen, welches Cache-Update an eine Mobile App gesendet werden soll.
+Bei der Inhaltssynchronisierung wird auch verfolgt, wann die Aktualisierungen erfolgen. Anhand dieser Informationen kann die Inhaltssynchronisierung bestimmen, welches Cache-Update an eine Mobile App gesendet werden soll.
 
 Führen Sie das folgende Verfahren für die Instanz durch, in der Sie den Cache aktualisieren möchten. Wenn Ihre Anwendung beispielsweise Aktualisierungen von der Veröffentlichungsinstanz anfordert, führen Sie das Verfahren auf der Veröffentlichungsinstanz durch.
 
@@ -209,7 +209,7 @@ Schritte zum Erstellen einer neuen App basierend auf einer App-Vorlage:
 >
 >Wenn Sie das Geometrixx Outdoors-Referenz-App-Paket aus AEM deinstallieren und eine App basierend auf ihrer Vorlage erstellt haben, ist diese App nicht mehr funktionsfähig. Die Geometrixx Outdoors App kann entfernt werden. Die App-Vorlage muss jedoch erhalten bleiben, wenn sie von anderen Mobile Apps verwendet wird.
 
-## Geometrixx Outdoors-Beispielanwendung {#exploring-the-sample-geometrixx-outdoors-app}
+## Beispielanwendung für Geometrixx Outdoors {#exploring-the-sample-geometrixx-outdoors-app}
 
 Geometrixx Outdoors App ist eine Beispielanwendung für PhoneGap, die die Funktionen des standardmäßigen PhoneGap-Anwendungsblueprints und der Beispielkomponenten für Mobilgeräte demonstriert.
 
@@ -279,7 +279,7 @@ Bei Verwendung der Anwendung ist die Seite Standorte in der Menüliste auf der e
 
 ## Beispiele für mobile Komponenten {#sample-mobile-components}
 
-Beim Verfassen der Seiten einer Mobile App stehen in Sidekick sofort mehrere Komponenten zur Verfügung. Die Komponenten gehören zur PhoneGap-Komponentengruppe.
+Beim Verfassen der Seiten einer Mobile App sind sofort mehrere Komponenten im Sidekick verfügbar. Die Komponenten gehören zur PhoneGap-Komponentengruppe.
 
 ### Karussell-Galerie {#swipe-carousel}
 
@@ -295,19 +295,19 @@ Verhalten des Karussells konfigurieren:
 
 * Abspielgeschwindigkeit: Die Zeit in Millisekunden, zu der jedes Bild angezeigt wird, bevor das nächste Bild angezeigt wird.
 * Übergangszeit: Die Dauer der Animation für Bildübergänge in Millisekunden.
-* Steuerelementstil: Die Art der Steuerelemente, die für das Verschieben zwischen Bildern bereitgestellt werden.
+* Steuerelementstil: Der Typ der Steuerelemente, die für das Verschieben zwischen Bildern bereitgestellt werden.
 
 **Registerkarte &quot;Listeneigenschaften&quot;**
 
 Geben Sie an, wie die Seitenliste generiert wird:
 
-* Erstellen einer Liste mithilfe von: Die Methode zum Angeben der Seiten, die in das Karussell aufgenommen werden sollen. Siehe Erstellen der Seitenliste .
+* Liste erstellen mit: Die Methode zum Festlegen der Seiten, die in das Karussell aufgenommen werden sollen. Siehe Erstellen der Seitenliste .
 * Sortieren nach: Wählen Sie eine Seiteneigenschaft aus, die zum Sortieren der Seitenliste verwendet werden soll. Wählen Sie beispielsweise jcr:title aus, um die Seiten alphabetisch nach Titel zu sortieren.
 * Limit: Die maximale Anzahl der einzuschließenden Seiten. Diese Eigenschaft eignet sich für suchbasierte Methoden zum Erstellen der Seitenliste.
 
 #### Erstellen der Seitenliste {#building-the-page-list}
 
-Die Komponente &quot;Karussell löschen&quot;stellt die folgenden Werte für die Eigenschaft &quot;Build List Using&quot;bereit. Das Dialogfeld &quot;Bearbeiten&quot;ändert sich entsprechend dem ausgewählten Wert:
+Die Komponente &quot;Karussell löschen&quot;stellt die folgenden Werte für die Eigenschaft &quot;Build List Using&quot;bereit. Das Dialogfeld &quot;Bearbeiten&quot;ändert sich je nach ausgewähltem Wert:
 
 **Untergeordnete Seiten**
 

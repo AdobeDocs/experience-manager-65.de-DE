@@ -1,17 +1,17 @@
 ---
 title: Das Seiten-Export-Tool
-description: Erfahren Sie, wie Sie das AEM-Seiten-Exporttool verwenden.
+description: Erfahren Sie, wie Sie den AEM Page Exporter verwenden.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1065'
-ht-degree: 100%
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+workflow-type: tm+mt
+source-wordcount: '1063'
+ht-degree: 93%
 
 ---
 
 # Das Seiten-Export-Tool{#the-page-exporter}
 
-AEM bietet Ihnen die Möglichkeit, eine Seite als vollständige Webseite einschließlich aller Grafiken, `.js`- und `.css`-Dateien zu exportieren.
+AEM ermöglicht den Export einer Seite als vollständige Webseite mit Bildern, `.js` und `.css` -Dateien.
 
 Nach der Konfiguration fordern Sie einen Seitenexport über Ihren Browser an, indem Sie in der URL `html` durch `export.zip`ersetzen. Dadurch wird eine Archivdatei (ZIP) generiert, die die gerenderte Seite im HTML-Format zusammen mit den referenzierten Assets enthält. Alle in der Seite enthaltenen Pfade (z. B. Pfade zu Grafiken) werden umgeschrieben und verweisen entweder auf die im Archiv enthaltenen Dateien oder auf die Ressourcen auf dem Server. Die Archivdatei (ZIP) kann dann von Ihrem Browser heruntergeladen werden.
 
@@ -20,7 +20,6 @@ Nach der Konfiguration fordern Sie einen Seitenexport über Ihren Browser an, in
 >Abhängig von Ihrem Browser und den Einstellungen wird der Download wie folgt ausgeführt:
 >* eine Archivdatei (`<page-name>.export.zip`)
 >* ein Ordner (`<page-name>`); die Archivdatei wurde effektiv bereits erweitert
-
 
 ## Exportieren einer Seite {#exporting-a-page}
 
@@ -47,7 +46,6 @@ Wählen Sie die erforderliche Vorlage für Ihre Website aus und bestätigen Sie 
    Der Zugriff erfolgt über:
    * localhost:4502/content/we-retail/language-masters/de.export.zip
 
-
 1. Laden Sie die Archivdatei auf Ihr Dateisystem herunter.
 
 1. Entpacken Sie ggfs. die Datei in Ihrem Dateisystem. Nach dem Erweitern wird ein Ordner mit demselben Namen wie die ausgewählte Seite angezeigt. Dieser Ordner enthält:
@@ -55,8 +53,8 @@ Wählen Sie die erforderliche Vorlage für Ihre Website aus und bestätigen Sie 
    * den Unterordner `content`, der das Stammverzeichnis einer Reihe von Unterordnern ist, die den Pfad zur Seite im Repository widerspiegeln
 
       * innerhalb dieser Struktur befindet sich die HTML-Datei für die ausgewählte Seite (`<page-name>.html`)
-   * sonstige Ressourcen (`.js`-Dateien, `.css`-Dateien, Bilder usw.) befinden sich gemäß den Einstellungen in der Exportvorlage
 
+   * sonstige Ressourcen (`.js`-Dateien, `.css`-Dateien, Bilder usw.) befinden sich gemäß den Einstellungen in der Exportvorlage
 
 1. Öffnen Sie die HTML-Datei der Seite (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) im Browser, um das Rendering zu überprüfen.
 
@@ -73,7 +71,7 @@ Eine vorkonfigurierte AEM-Installation enthält unter `/etc/contentsync/template
 * Die `default`-Vorlage zeigt Ihnen, wie ein Seitenexport konfiguriert werden kann, sodass er als Grundlage für eine neue Exportvorlage dienen kann.
 
 * Um die Knotenstruktur der Vorlage in Ihrem Browser im JSON-Format anzuzeigen, fragen Sie die folgenden URL an:
-   `http://localhost:4502/etc/contentsync/templates/default.json`
+  `http://localhost:4502/etc/contentsync/templates/default.json`
 
 Die einfachste Methode zum Erstellen einer neuen Seiten-Export-Tool-Vorlage besteht darin, Folgendes zu tun:
 
@@ -116,24 +114,23 @@ Mit den folgenden Knoten können Sie eine Export-Vorlage erstellen:
 * `page`
 Mit dem Knoten page wird die HTML-Seite in die ZIP-Datei kopiert. Er weist die folgenden Eigenschaften auf:
 
-   * Er ist ein obligatorischer Knoten.
+   * Ist ein obligatorischer Knoten.
    * Er befindet sich unterhalb von `/etc/contentsync/templates/<mysite>`.
    * Er wird mit der Eigenschaft `Name` definiert, die auf `page` gesetzt wird.
    * Der Knotentyp ist `nt:unstructured`
 
-   Der Knoten `page` hat folgende Eigenschaften:
+  Der Knoten `page` hat folgende Eigenschaften:
 
    * Die Eigenschaft `type` mit dem Wert `pages`.
 
    * Er verfügt nicht über die Eigenschaft `path`, da der aktuelle Seitenpfad dynamisch in die Konfiguration kopiert wird.
-
-   <!--
+  <!--
   * The other properties are described in the Overview of configuration types section of the Content Sync framework.
   -->
 
 * `rewrite`
 Der Knoten rewrite definiert, wie die Links in der exportierten Seite neu geschrieben werden. Die neu geschriebenen Links können entweder auf die Dateien in der ZIP-Datei oder auf die Ressourcen auf dem Server verweisen.
-   <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 Mit dem Knoten design wird das für die exportierte Seite genutzte Design kopiert. Er weist die folgenden Eigenschaften auf:
@@ -143,16 +140,14 @@ Mit dem Knoten design wird das für die exportierte Seite genutzte Design kopier
    * Er wird mit der Eigenschaft `Name` definiert, die auf `design` gesetzt wird.
    * Der Knotentyp ist `nt:unstructured`.
 
-   Der Knoten `design` hat folgende Eigenschaften:
+  Der Knoten `design` hat folgende Eigenschaften:
 
    * Die Eigenschaft `type` mit dem Wert `copy`.
 
    * Er verfügt nicht über die Eigenschaft `path`, da der aktuelle Seitenpfad dynamisch in die Konfiguration kopiert wird.
 
-
 * `generic`
-Ein generischer Knoten wird verwendet, um Ressourcen wie die 
-`.js`- oder `.css`-Dateien von Client-Bibliotheken in die Zip-Datei zu kopieren. Er weist die folgenden Eigenschaften auf:
+Ein generischer Knoten wird verwendet, um Ressourcen wie die `.js`- oder `.css`-Dateien von Client-Bibliotheken in die Zip-Datei zu kopieren. Er weist die folgenden Eigenschaften auf:
 
    * Er ist optional.
    * Er befindet sich unterhalb von `/etc/contentsync/templates/<mysite>`.
@@ -160,16 +155,16 @@ Ein generischer Knoten wird verwendet, um Ressourcen wie die
    * Der Knotentyp ist `nt:unstructured`.
    * Er hat eine `type`-Eigenschaft und mit `type` verwandte Eigenschaften. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-   Beispielsweise kopiert der folgende Konfigurationsknoten die `mysite.clientlibs.js`-Dateien in die ZIP-Datei:
+  Beispielsweise kopiert der folgende Konfigurationsknoten die `mysite.clientlibs.js`-Dateien in die ZIP-Datei:
 
-   ```xml
-   "mysite.clientlibs.js": {
-       "extension": "js",
-       "type": "clientlib",
-       "path": "/etc/designs/mysite/clientlibs",
-       "jcr:primaryType": "nt:unstructured"
-   }
-   ```
+  ```xml
+  "mysite.clientlibs.js": {
+      "extension": "js",
+      "type": "clientlib",
+      "path": "/etc/designs/mysite/clientlibs",
+      "jcr:primaryType": "nt:unstructured"
+  }
+  ```
 
 **Implementieren einer benutzerdefinierten Konfiguration**
 
@@ -184,12 +179,12 @@ Um bestimmte Anforderungen zu erfüllen, müssen Sie möglicherweise einen [benu
 <!-- To meet some specific requirements, you may need to implement a custom `type` property: to do so, refer to the Implementing a custom update handler section in the Content Sync page.
 -->
 
-## Programmatisches Exportieren einer Seite {#programmatically-exporting-a-page}
+## Programmgesteuertes Exportieren einer Seite {#programmatically-exporting-a-page}
 
-Um eine Seite programmatisch zu exportieren, können Sie den OSGi-Dienst [PageExporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) nutzen. Mit diesem Dienst können Sie:
+Um eine Seite programmgesteuert zu exportieren, können Sie die [PageExporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGi-Dienst. Mit diesem Dienst können Sie:
 
-* eine Seite exportieren und in die HTTP-Servlet-Antwort schreiben
-* eine Seite exportieren und die ZIP-Datei an einem bestimmten Ort speichern
+* Exportieren Sie eine Seite und schreiben Sie in die HTTP-Servlet-Antwort.
+* Exportieren Sie eine Seite und speichern Sie die ZIP-Datei an einem bestimmten Speicherort.
 
 Das Servlet, das an den Selektor `export` und die Erweiterung `zip` gebunden ist, nutzt den PageExporter-Service.
 

@@ -10,10 +10,10 @@ topic-tags: publish
 discoiquuid: cbf4e35a-7905-44ab-ab68-fb443443f02d
 docset: aem65
 exl-id: beb2b83e-e8db-40bb-915f-cb6ba3140947
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2230'
-ht-degree: 99%
+source-wordcount: '2229'
+ht-degree: 98%
 
 ---
 
@@ -55,7 +55,7 @@ Sie benötigen das [AEM Forms Add-On-Paket](https://helpx.adobe.com/de/aem-forms
 
 Führen Sie die folgenden Schritte aus, um eine Variable zu erstellen:
 
-1. Navigieren Sie in einer AEM-Instanz zu Tools . ![Instrumente](/help/forms/using/assets/hammer.png) > Workflow > Modelle.
+1. Navigieren Sie in einer AEM zu Tools . ![Instrumente](/help/forms/using/assets/hammer.png) > Workflow > Modelle.
 1. Tippen Sie auf **[!UICONTROL Erstellen]** und geben Sie den Titel und einen optionalen Namen für das Workflow-Modell an. Wählen Sie das Modell aus und tippen Sie auf **[!UICONTROL Bearbeiten]**.
 1. Tippen Sie auf das Variablensymbol im Sidekick des Workflow-Modells und tippen Sie dann auf **[!UICONTROL Variable hinzufügen]**.
 
@@ -181,7 +181,7 @@ Weitere Beispiele finden Sie unter [Erstellen eines Workflow-Modells](../../form
 
 #### GOTO-Schritt (Wechseln zu Schritt)  {#go-to-step}
 
-Mit **GOTO** (Wechseln zu Schritt) können Sie den nächsten Schritt im Workflow-Modell angeben, der je nach dem Ergebnis eines Routing-Ausdrucks ausgeführt werden soll.
+Die **Zum Schritt wechseln** können Sie den nächsten auszuführenden Schritt im Workflow-Modell abhängig vom Ergebnis eines Routing-Ausdrucks angeben.
 
 Ähnlich wie beim ODER-Teilungs-Schritt können Sie Routing-Ausdrücke für einen GOTO-Schritt (Wechseln zu Schritt) mithilfe einer Regeldefinition, eines ECMA-Skripts oder eines externen Skripts definieren.
 

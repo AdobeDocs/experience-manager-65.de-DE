@@ -11,10 +11,10 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2481'
-ht-degree: 83%
+source-wordcount: '2479'
+ht-degree: 79%
 
 ---
 
@@ -38,7 +38,7 @@ Die Architektur für AEM Forms umfasst die folgenden Komponenten:
 * **Weblayer:** JSPs oder Servlets, die auf allgemeine Services oder Formular-Services aufgesetzt wurden und folgende Funktionalität bieten:
 
    * **Authoring-Frontend**: Eine Benutzeroberfläche zum Erstellen und Verwalten von Formularen.
-   * **Formularwiedergabe und -übermittlungs-Frontend**: Eine Benutzeroberfläche für Endbenutzer, die von Endbenutzern der AEM Forms verwendet werden kann (z. B. Bürger, die auf eine Behördenseite zugreifen). Dadurch werden Formularwiedergabe (Formular in einem Webbrowser anzeigen) und Sendefunktionen bereitgestellt.
+   * **Formularwiedergabe und -übermittlungs-Frontend**: Eine Benutzeroberfläche für Endbenutzer der AEM Forms (z. B. Bürger, die auf eine Behördenseite zugreifen). Dadurch werden Formularwiedergabe (Formular in einem Webbrowser anzeigen) und Sendefunktionen bereitgestellt.
    * **REST APIs**: JSPs und Servlets exportieren einen Teil der Formula-Services zur Nutzung durch HTTP-basierte Clients wie das SDK für mobile Formulare.
 
 **AEM Forms on OSGi:** Bei einer AEM Forms on OSGi-Umgebung handelt es sich um ein standardmäßiges AEM-Autor- oder AEM-Veröffentlichungspaket, auf dem das AEM Forms-Paket bereitgestellt ist. Sie können AEM Forms on OSGi in [Einzel-Server-Umgebungen, Farm- und Cluster-Setups ausführen](/help/sites-deploying/recommended-deploys.md). Die Cluster-Setup ist nur für AEM Autoreninstanzen verfügbar. 
@@ -71,7 +71,7 @@ Das folgende Bild zeigt verschiedene AEM Forms-Server-Konfigurationen und ihre K
 **Veröffentlichen:** Eine Veröffentlichungsinstanz ist ein AEM Forms-Server, der im Standardmodus „Veröffentlichen“ ausgeführt wird. Veröffentlichungsinstanzen sind für Endbenutzer formularbasierter Anwendungen vorgesehen, z. B. Benutzer, die auf eine öffentliche Website zugreifen und Formulare senden. Ermöglicht werden folgende Funktionen:
 
 * Rendern und Senden von Forms für Endbenutzer
-* Transport von Formularrohdaten zur Verarbeitung an Instanzen zur weiteren Verarbeitung und Speicherung im endgültigen Aufzeichnungssystem. Die in AEM Forms bereitgestellte Standardimplementierung erreicht dies mithilfe der Reverse-Replizierungsfunktionen von AEM. Eine alternative Implementierung ist auch das direkte Senden der Formulardaten an Verarbeitungsserver, anstatt sie zunächst lokal zu speichern (letzteres ist eine Voraussetzung für die Aktivierung der Rückwärtsreplikation). Kunden, die Bedenken bei der Speicherung potenziell vertraulicher Daten auf Veröffentlichungsinstanzen haben, können diese [alternative Implementierung](/help/forms/using/configuring-draft-submission-storage.md) wählen, da die Verarbeitung üblicherweise in einer sichereren Zone erfolgt.
+* Transport von Formularrohdaten zur Verarbeitung an Instanzen zur weiteren Verarbeitung und Speicherung im endgültigen Aufzeichnungssystem. Die in AEM Forms bereitgestellte Standardimplementierung erreicht dies mithilfe der Reverse-Replizierungsfunktionen von AEM. Es gibt auch eine alternative Implementierung zum direkten Pushen der Formulardaten auf Verarbeitungsserver, anstatt sie zunächst lokal zu speichern (letzteres ist eine Voraussetzung für die Aktivierung der Rückwärtsreplikation). Kunden, die Bedenken bei der Speicherung potenziell vertraulicher Daten auf Veröffentlichungsinstanzen haben, können diese [alternative Implementierung](/help/forms/using/configuring-draft-submission-storage.md) wählen, da die Verarbeitung üblicherweise in einer sichereren Zone erfolgt.
 * Rendern und Übermitteln von interaktiven Kommunikationen und Briefen: Eine interaktive Kommunikation und Briefe werden auf Veröffentlichungsinstanzen gerendert und die entsprechenden Daten werden zur Speicherung und Nachbearbeitung an Verarbeitungsinstanzen übermittelt. Die Daten können entweder lokal in einer Veröffentlichungsinstanz gespeichert und später an eine Verarbeitungsinstanz rückrepliziert (Standardoption) oder ohne Speicherung auf der Veröffentlichungsinstanz direkt an die Verarbeitungsinstanz gesendet werden. Letztere Implementierung ist für sicherheitsbewusste Kunden nützlich.
 
 **Verarbeitung:** Eine Instanz von AEM Forms, die im Autorenmodus ausgeführt wird, wobei kein Benutzer der Gruppe „forms-manager“ zugewiesen ist. Sie können AEM Forms on JEE oder AEM Forms on OSGi als Verarbeitungsinstanz bereitstellen. Die Benutzer werden nicht zugewiesen, um sicherzustellen, dass Formularerstellungs- und -verwaltungsaktivitäten nicht in der Verarbeitungsinstanz ausgeführt werden, sondern nur in der Autoreninstanz stattfinden. Eine Verarbeitungsinstanz ermöglicht die folgenden Funktionen:
@@ -100,7 +100,7 @@ Die unten empfohlenen AEM Forms on JEE-Topologien richten sich vor allem an Kund
 
 AEM Forms-Kunden, die ausschließlich Document Services oder Document Security-Funktionen verwenden möchten, können eine ähnliche Topologie wie die unten angezeigte haben. Für diese Topologie wird die Verwendung einer einzigen Instanz von AEM Forms empfohlen. Sie können bei Bedarf auch einen Cluster oder eine Farm von AEM Forms-Servern erstellen. Diese Topologie wird empfohlen, wenn die meisten Benutzer programmgesteuert (über APIs) auf die Funktionen des AEM Forms-Servers zugreifen und nur minimal über die Benutzeroberfläche eingegriffen wird. Die Topologie ist bei Stapelverarbeitungsvorgängen von Dokumenten-Services sehr hilfreich. Verwenden Sie beispielsweise den Ausgabe-Service, um täglich Hunderte von nicht bearbeitbaren PDF-Dokumenten zu erstellen.
 
-Obwohl Sie in AEM Forms alle Funktionen auf einem einzelnen Server einrichten und von dort ausführen können, sollten Sie Kapazitätsplanung und Lastenausgleich berücksichtigen und dedizierte Server für bestimmte Funktionen in einer Produktionsumgebung einrichten. Für eine Umgebung, die den PDF Generator-Service zum Konvertieren von Tausenden von Seiten pro Tag und mehrere adaptive Formulare zum Erfassen von Daten verwendet, richten Sie beispielsweise separate AEM Forms-Server für den PDF Generator-Service und die Funktionen für adaptive Formulare ein. Dies erleichtert es, eine optimale Leistung zu erzielen und die Server unabhängig voneinander zu skalieren.
+AEM Forms ermöglicht es Ihnen zwar, alle Funktionen von einem Server aus einzurichten und auszuführen, Sie sollten jedoch Kapazitätsplanung und Lastenausgleich durchführen und dedizierte Server für bestimmte Funktionen in einer Produktionsumgebung einrichten. Für eine Umgebung, die den PDF Generator-Service zum Konvertieren von Tausenden von Seiten pro Tag und mehrere adaptive Formulare zum Erfassen von Daten verwendet, richten Sie beispielsweise separate AEM Forms-Server für den PDF Generator-Service und die Funktionen für adaptive Formulare ein. Dies erleichtert es, eine optimale Leistung zu erzielen und die Server unabhängig voneinander zu skalieren.
 
 ![basic-features](assets/basic-features.png)
 
@@ -147,6 +147,6 @@ AEM Forms-Kunden, die überwachte Ordner für die Stapelverarbeitung verwenden m
 
 AEM Forms-Kunden, die nur Document Services-Funktionen verwenden möchten, können über eine Topologie verfügen, die der unten dargestellten ähnelt. Diese Topologie empfiehlt die Verwendung eines Clusters von AEM Forms auf OSGi-Servern. Diese Topologie wird empfohlen, wenn die meisten Benutzer programmatisch (mithilfe von APIs) auf die AEM Forms-Server-Zugriffsfunktionen zugreifen und die Eingriffe über die Benutzeroberfläche minimal sind. Die Topologie ist in mehreren Software-Client-Szenarien sehr hilfreich. Beispiel: Mehrere Clients, die PDF Generator-Service verwenden, um PDF-Dokumente bei Bedarf zu erstellen.
 
-Obwohl Sie in AEM Forms alle Funktionen von einem einzelnen Server einrichten und ausführen können, sollten Sie Kapazitätsplanung und Lastenausgleich durchführen und dedizierte Server für bestimmte Funktionen in einer Produktionsumgebung festlegen. So sollten Sie beispielsweise in einer Umgebung, in der mit dem PDF-Generator-Service Tausende von Seiten pro Tag konvertiert und mithilfe mehrerer adaptiver Formulare Daten erfasst werden, separate AEM Forms-Server für den PDF Generator-Service und adaptive Formularfunktionen einrichten. Dies erleichtert es, eine optimale Leistung zu erzielen und die Server unabhängig voneinander zu skalieren.
+AEM Forms ermöglicht es Ihnen zwar, alle Funktionen von einem Server aus einzurichten und auszuführen, Sie sollten jedoch Kapazitätsplanung und Lastenausgleich durchführen und dedizierte Server für bestimmte Funktionen in einer Produktionsumgebung einrichten. Richten Sie beispielsweise für eine Umgebung, in der der PDF Generator-Dienst Tausende von Seiten pro Tag konvertiert, und für mehrere adaptive Formulare zur Datenerfassung separate AEM Forms-Server für den PDF Generator-Dienst und die Funktionen für adaptive Formulare ein. Dies erleichtert es, eine optimale Leistung zu erzielen und die Server unabhängig voneinander zu skalieren.
 
 ![offline-api-based-processing](assets/offline-api-based-processing.png)

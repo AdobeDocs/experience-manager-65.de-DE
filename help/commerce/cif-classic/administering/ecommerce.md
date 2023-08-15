@@ -5,10 +5,10 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 95%
+source-wordcount: '749'
+ht-degree: 89%
 
 ---
 
@@ -105,7 +105,7 @@ eCommerce übernimmt zusammen mit dem Produktinformations-Management (PIM) die A
 * Live- und zentralisierte Speicherdatensätze
 * Web-Schnittstellen
 
-AEM eCommerce hilft Marketing-Fachleuten bei der Bereitstellung von markenspezifischen, personalisierten Einkaufserlebnissen über Web-, mobile und soziale Touchpoints hinweg. Die AEM Authoring-Umgebung ermöglicht es Ihnen, Seiten und Komponenten basierend auf dem Zielgruppen-Besucherkontext und Merchandising-Strategien anzupassen. Zum Beispiel:
+AEM eCommerce hilft Marketing-Fachleuten bei der Bereitstellung von markenspezifischen, personalisierten Einkaufserlebnissen über Web-, mobile und soziale Touchpoints hinweg. In der AEM-Authoring-Umgebung können Sie Seiten und Komponenten basierend auf dem Zielgruppen-Besucherkontext und Merchandising-Strategien anpassen, beispielsweise:
 
 * Produktseiten
 * Warenkorbkomponenten
@@ -141,7 +141,7 @@ AEM eCommerce bietet:
 
   >[!NOTE]
   >
-  >Mit dem von AEM bereitgestellten Integrations-Framework können Sie auch zusätzliche AEM-Komponenten für Commerce-Funktionen erstellen, unabhängig von Ihrer spezifischen eCommerce-Engine.
+  >Mit dem von AEM bereitgestellten Integrations-Framework können Sie auch zusätzliche AEM für Commerce-Funktionen erstellen, unabhängig von Ihrer spezifischen eCommerce-Engine.
 
 * **Suche** – mit entweder:
 
@@ -163,7 +163,7 @@ AEM eCommerce bietet:
 * Die Möglichkeit der Entwicklung eines **erlebnisgesteuerten Handels, der auf Kundendaten und Aktivitäten basiert**. Auf diese Weise können Sie viele Szenarien umsetzen:
 
    * Beispielsweise können Sie einen Nachlass auf die Versandkosten anbieten, wenn der Gesamtbetrag der Bestellung einen bestimmten Wert überschreitet.
-   * Eine andere Möglichkeit bietet Ihnen die Bereitstellung saisonaler Angebote, die Profildaten verwenden (z. B. Ort). Diese können dann bei Bedarf hervorgehoben werden, auch hier abhängig von anderen Faktoren.
+   * Mit einem anderen können Sie Saisonangebote bereitstellen, die Profildaten verwenden (z. B. Ort). Diese können dann bei Bedarf hervorgehoben werden, auch hier abhängig von anderen Faktoren.
 
   Im folgenden Beispiel wird ein Teaser angezeigt, da der Inhalt des Warenkorbs weniger als 75 USD beträgt:
 
