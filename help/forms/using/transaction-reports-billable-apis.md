@@ -9,10 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1949'
-ht-degree: 100%
+source-git-commit: 4eb4a15961e7b6e83d9e8a38f34ad92d829cb9b6
+workflow-type: tm+mt
+source-wordcount: '2084'
+ht-degree: 90%
 
 ---
 
@@ -33,7 +33,7 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
 
 * **Übermittelte Formulare**: Wenn Daten von einem mit AEM Forms erstellten Formular beliebigen Typs gesendet werden und die Daten an ein Datenspeicher-Repository oder an eine Datenbank gesendet werden, gilt dies als Formularübermittlung. Beispielsweise werden das Übermitteln eines adaptiven Formulars, eines HTML5-Formulars, von PDF-Formularen und eines Formularsatzes als Übermittlungen von Formularen verbucht. Jedes Formular in einem Formularsatz gilt als Übermittlung. Wenn ein Formularsatz beispielsweise 5 Formulare umfasst, zählt der Transaktionsberichts-Service die Übermittlung des Formularsatzes als 5 Übermittlungen.
 
-* **Gerenderte Dokumente**: Das Generieren eines Dokuments durch Kombinieren einer Vorlage und von Daten, das digitale Signieren oder Zertifizieren eines Dokuments, die Verwendung kostenpflichtiger Document Services-APIs für Dokumenten-Services oder das Konvertieren eines Dokuments von einem Format in ein anderes werden als gerenderte Dokumente verbucht.
+* **Gerenderte Dokumente:** Das Generieren eines Dokuments durch Kombinieren einer Vorlage und von Daten, das digitale Signieren oder Zertifizieren eines Dokuments, die Verwendung einer abrechnungsfähigen Document Services-API für Document Services oder das Konvertieren eines Dokuments von einem Format in ein anderes werden als gerenderte Dokumente berücksichtigt.
 
 >[!NOTE]
 >
@@ -107,6 +107,26 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
   </tr>
  </tbody>
 </table>
+
+### DocAssurance-Dienst {#DocAssurance-Service}
+
+<table>
+ <tbody>
+  <tr>
+   <td><p>API</p> </td>
+   <td>Beschreibung</td>
+   <td>Kategorie des Transaktionsberichts</td>
+   <td>Zusätzliche Informationen</td>
+  </tr>
+  <tr>
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/docassurance/client/api/DocAssuranceService.html#secureDocument-com.adobe.aemfd.docmanager.Document-com.adobe.fd.docassurance.client.api.EncryptionOptions-com.adobe.fd.docassurance.client.api.SignatureOptions-com.adobe.fd.docassurance.client.api.ReaderExtensionOptions-com.adobe.fd.signatures.pdf.inputs.UnlockOptions-" target="_blank">secureDocument</a><br /> </td>
+   <td>Mit dieser API können Sie Ihr Dokument sichern. Sie können die API verwenden, um ein PDF-Dokument zu signieren, zu zertifizieren, zu lesen, zu erweitern oder zu verschlüsseln.</td>
+   <td>Verarbeitete Dokumente</td>
+   <td>Es werden nur die Vorgänge zum Signieren und Zertifizieren des secureDocument in Rechnung gestellt.</td>
+  </tr>
+ </tbody>
+</table>
+
 
 ### Distiller-Service {#distiller-service}
 
@@ -305,12 +325,16 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
  </tbody>
 </table>
 
+Aufrufen wird als Transaktion betrachtet, die von dem ausgeführten Vorgang abhängt. Es wird als Transaktion betrachtet, wenn Sie einen oder mehrere der folgenden Vorgänge ausführen:
+1. Konvertierung im PDF-Format ohne PDF-Format. Beispielsweise Konvertierung des XDP-Formats in das PDF-Format (für interaktive und nicht interaktive Kommunikation), Konvertierung von Word in PDF.
+1. Konvertierung des PDF-Formats in das PDF/A-Format.
+1. Konvertierung des PDF-Formats in das Nicht-PDF-Format. Beispielsweise die Konvertierung des PDF-Formats in das Bildformat, die Konvertierung des PDF-Formats in das Textformat.
+
+
 >[!NOTE]
 >
 >* Die invoke-API des Assembler-Services kann abhängig von der Eingabe intern eine kostenpflichtige API eines anderen Services aufrufen. Daher kann die invoke-API als keine, eine einzige oder auch mehrere Transaktionen verbucht werden. Die Anzahl der gezählten Transaktionen hängt von der Eingabe und den aufgerufenen internen APIs ab.
 >* Ein einzelnes PDF-Dokument, das mit dem Assembler-Service erstellt wurde, kann als keine, eine einzige oder auch mehrere Transaktionen erfasst werden. Die Anzahl der gezählten Transaktionen hängt vom bereitgestellten DDX-Code ab.
->
-
 
 ### PDF Utility-Service  {#pdf-utility-service}
 
