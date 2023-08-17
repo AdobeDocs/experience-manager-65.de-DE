@@ -80,17 +80,17 @@ Um die vollständige Funktionalität der adaptiven Formular-Container-Komponente
 
 1. Öffnen Sie die Datei `/apps/[your-sites-project]/components/page/customheaderlibs.html` und fügen Sie ihr den folgenden Code hinzu:
 
-       ```
+     ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
      &lt;/sly>
      
      ```
+     
+1. Öffnen Sie die Datei `/apps/[your-sites-project]/components/page/customfooterlibs.html` und fügen Sie ihr den folgenden Code hinzu:
 
-   1. Öffnen Sie die Datei `/apps/[your-sites-project]/components/page/customfooterlibs.html` und fügen Sie ihr den folgenden Code hinzu:
-
-       ```
+     ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
@@ -98,9 +98,9 @@ Um die vollständige Funktionalität der adaptiven Formular-Container-Komponente
      &lt;/sly>
      ```
 
-   1. Öffnen Sie die Datei `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` und fügen Sie ihr den folgenden Code hinzu:
+1. Öffnen Sie die Datei `/apps/[your-sites-project]/components/xfpage/customheaderlibs.html` und fügen Sie ihr den folgenden Code hinzu:
 
-       ```
+     ```
      //Customheaderlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
      &lt;sly data-sly-call=&quot;${clientlib.css @ categories=&#39;core.forms.components.runtime.all&#39;}&quot;/>
@@ -108,9 +108,9 @@ Um die vollständige Funktionalität der adaptiven Formular-Container-Komponente
      
      ```
 
-   1. Öffnen Sie die Datei `/apps/[your-sites-project]/components/customfooterlibs.html` und fügen Sie ihr den folgenden Code hinzu:
+1. Öffnen Sie die Datei `/apps/[your-sites-project]/components/customfooterlibs.html` und fügen Sie ihr den folgenden Code hinzu:
 
-       ```
+     ```
      
      //customfooterlibs.html
      &lt;sly data-sly-use.clientlib=&quot;core/wcm/components/commons/v1/templates/clientlib.html&quot;>
@@ -118,7 +118,7 @@ Um die vollständige Funktionalität der adaptiven Formular-Container-Komponente
      &lt;/sly>
      ```
 
-   1. Wiederholen Sie die obigen Schritte für alle Authoring- und Publishing-Instanzen in Ihrer Umgebung.
+1. Wiederholen Sie die obigen Schritte für alle Authoring- und Publishing-Instanzen in Ihrer Umgebung.
 
 +++
 
