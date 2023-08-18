@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
-source-git-commit: 4eb4a15961e7b6e83d9e8a38f34ad92d829cb9b6
+source-git-commit: d636d987f5d62c9169bc4015d7ac50090e362faa
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2089'
 ht-degree: 90%
 
 ---
@@ -325,11 +325,10 @@ Kostenpflichtige APIs berücksichtigen nicht die Anzahl der Seiten, die Länge e
  </tbody>
 </table>
 
-Aufrufen wird als Transaktion betrachtet, die von dem ausgeführten Vorgang abhängt. Es wird als Transaktion betrachtet, wenn Sie einen oder mehrere der folgenden Vorgänge ausführen:
-1. Konvertierung im PDF-Format ohne PDF-Format. Beispielsweise Konvertierung des XDP-Formats in das PDF-Format (für interaktive und nicht interaktive Kommunikation), Konvertierung von Word in PDF.
-1. Konvertierung des PDF-Formats in das PDF/A-Format.
-1. Konvertierung des PDF-Formats in das Nicht-PDF-Format. Beispielsweise die Konvertierung des PDF-Formats in das Bildformat, die Konvertierung des PDF-Formats in das Textformat.
-
+Die Verwendung der invoke-API wird als Transaktion gezählt, wenn Sie einen oder mehrere der folgenden Vorgänge ausführen:
+1. Konvertierung von Nicht-PDF-Formaten in PDF-Formate. Beispielsweise die Konvertierung vom XDP-Format in das PDF-Format, die sowohl interaktive als auch nicht interaktive Kommunikationsformen ermöglicht, und die Konvertierung von Word in PDF.
+1. Konvertierung vom PDF-Format in das PDF/A-Format.
+1. Konvertierung vom PDF-Format in Nicht-PDF-Formate. Beispiele sind die Umwandlung vom PDF in das Bildformat oder die Konvertierung vom PDF in das Textformat.
 
 >[!NOTE]
 >
