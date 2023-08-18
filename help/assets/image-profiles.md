@@ -10,8 +10,8 @@ discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 feature: Image Profiles
 role: User, Admin
 exl-id: 67240ad0-1a7c-4e58-a518-1e36d771f1a1
-source-git-commit: 16ea73e9e75ddee25d7d348d4220a0e0f96a9ae8
-workflow-type: ht
+source-git-commit: d4c2890b92678aff58119e76251b5d181c95a393
+workflow-type: tm+mt
 source-wordcount: '3033'
 ht-degree: 100%
 
@@ -23,8 +23,8 @@ Wenn Sie Bilder hochladen, können Sie das Bild nach dem Hochladen automatisch z
 
 >[!IMPORTANT]
 >
->• Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
->• Bildprofile können nicht auf PDF-, animierte GIF- oder INDD-Dateien (Adobe InDesign) angewendet werden.
+>* Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
+>* Bildprofile können nicht auf PDF-, animierte GIF- oder INDD-Dateien (Adobe InDesign) angewendet werden.
 
 ## Optionen für das Zuschneiden {#crop-options}
 
@@ -57,8 +57,8 @@ Sie haben zwei Optionen zum Zuschneiden von Bildern, aus denen Sie wählen könn
 
 >[!IMPORTANT]
 >
->• Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
->• Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
+>* Adobe empfiehlt, alle erzeugten Zuschnitte und Farbfelder zu überprüfen, um sicherzustellen, dass sie für Ihre Marke und Ihre Werte angemessen und relevant sind.
+>* Das CMYK-Bildformat wird beim smarten Zuschneiden nicht unterstützt.
 
 | Option | Wann ist sie einzusetzen? | Beschreibung |
 | --- | --- | --- |
@@ -178,9 +178,9 @@ Sie können Assets in einem Ordner erneut verarbeiten, der bereits über ein vor
 
 >[!IMPORTANT]
 >
->• Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
+>* Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
 
-Sie können das Fenster für das smarte Zuschneiden eines Bildes manuell neu ausrichten oder seine Größe ändern, um den Fokus weiter zu verfeinern.
+Sie können das Fenster zum smarten Zuschneiden eines Bildes manuell neu ausrichten oder seine Größe ändern, um den Fokuspunkt weiter zu verfeinern.
 
 Nachdem Sie einen smarten Zuschnitt bearbeitet und gespeichert haben, wird die Änderung überall dort angewendet, wo Sie den Zuschnitt für bestimmte Bilder verwenden.
 
@@ -209,7 +209,7 @@ Siehe auch [Bearbeiten von smarten Zuschnitten oder smarten Farb-/Bildmustern me
 
 >[!IMPORTANT]
 >
->• Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
+>* Smartes Zuschneiden ist nur im Scene7-Modus von Dynamic Media verfügbar.
 
 Nachdem Sie ein Bildprofil (mit der Funktion „Smartes Zuschneiden“) auf einen Ordner angewendet haben, wird der Zuschnitt auf alle Bilder in diesem Ordner angewendet. Sie können das Zuschnittsfenster in mehreren Bildern *manuell* neu ausrichten oder die Größe verändern, um den Fokus präziser zu bestimmen.
 
