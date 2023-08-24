@@ -2,10 +2,10 @@
 title: Integration mit Adobe Target mithilfe von IMS
 description: Erfahren Sie mehr über die Integration von AEM mit Adobe Target mithilfe von IMS.
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
 workflow-type: tm+mt
-source-wordcount: '1549'
-ht-degree: 98%
+source-wordcount: '1577'
+ht-degree: 96%
 
 ---
 
@@ -59,7 +59,7 @@ Der erste Schritt der Konfiguration besteht darin, in AEM eine IMS-Konfiguration
    >
    >Lassen Sie diese Konfiguration geöffnet. Sie wird beim [Abschließen der IMS-Konfiguration in AEM](#completing-the-ims-configuration-in-aem) erneut benötigt.
 
-   ![Informationsmeldung zum Hinzufügen eines Zertifikats zur Adobe I/O](assets/integrate-target-io-02.png)
+   ![Informationsmeldung zum Hinzufügen eines Zertifikats auf dem Adobe I/O](assets/integrate-target-io-02.png)
 
 ## Konfigurieren von IMS für die Adobe Target-Integration mit AEM {#configuring-ims-for-adobe-target-integration-with-aem}
 
@@ -68,6 +68,12 @@ Mithilfe der Adobe-Entwicklerkonsole müssen Sie ein Projekt (Integration) mit A
 ### Erstellen des Projekts {#creating-the-project}
 
 Öffnen Sie die Adobe-Entwicklerkonsole, um ein Projekt mit Adobe Target zu erstellen, das AEM verwenden wird:
+
+>[!CAUTION]
+>
+>Derzeit unterstützen wir nur die **Dienstkonto (JWT)** Berechtigungstyp.
+>
+>Verwenden Sie nicht das **OAuth Server-zu-Server** Berechtigungstyp, der in Zukunft unterstützt wird.
 
 1. Öffnen Sie die Adobe-Entwicklerkonsole für Projekte:
 

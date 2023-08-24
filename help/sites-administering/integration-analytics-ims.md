@@ -2,10 +2,10 @@
 title: Integration mit Adobe Analytics mithilfe von IMS
 description: Erfahren Sie mehr über die Integration von AEM mit Adobe Analytics mithilfe von IMS.
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
 workflow-type: tm+mt
-source-wordcount: '1057'
-ht-degree: 98%
+source-wordcount: '1085'
+ht-degree: 95%
 
 ---
 
@@ -60,7 +60,7 @@ Der erste Schritt der Konfiguration besteht darin, in AEM eine IMS-Konfiguration
    >
    >Lassen Sie diese Konfiguration geöffnet. Sie wird beim [Abschließen der IMS-Konfiguration in AEM](#completing-the-ims-configuration-in-aem) erneut benötigt.
 
-   ![Dialogfeld &quot;Info&quot;, um den Schlüssel zur Adobe I/O hinzuzufügen](assets/integrate-analytics-io-02.png)
+   ![Dialogfeld &quot;Info&quot;, um den Schlüssel zum Adobe I/O hinzuzufügen](assets/integrate-analytics-io-02.png)
 
 ## Konfigurieren von IMS für die Adobe Analytics-Integration mit AEM {#configuring-ims-for-adobe-analytics-integration-with-aem}
 
@@ -69,6 +69,12 @@ Mithilfe der Adobe-Entwicklerkonsole müssen Sie ein Projekt (Integration) mit A
 ### Erstellen des Projekts {#creating-the-project}
 
 Öffnen Sie die Adobe-Entwicklerkonsole, um ein Projekt mit Adobe Analytics zu erstellen, das AEM verwenden wird:
+
+>[!CAUTION]
+>
+>Derzeit unterstützen wir nur die **Dienstkonto (JWT)** Berechtigungstyp.
+>
+>Verwenden Sie nicht das **OAuth Server-zu-Server** Berechtigungstyp, der in Zukunft unterstützt wird.
 
 1. Öffnen Sie die Adobe-Entwicklerkonsole für Projekte:
 
