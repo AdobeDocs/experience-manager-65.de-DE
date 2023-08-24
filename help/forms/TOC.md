@@ -9,9 +9,9 @@ breadcrumb-title: Forms-Anleitung
 user-guide-description: Erstellen, Verwalten, Veröffentlichen und Aktualisieren von digitalen Formularen.
 role: User
 feature: Forms Service
-source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
+source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
 workflow-type: tm+mt
-source-wordcount: '3889'
+source-wordcount: '3897'
 ht-degree: 99%
 
 ---
@@ -163,6 +163,7 @@ ht-degree: 99%
    + [Verknüpfen von Übermittlungs-Reviewern mit einem Formular](using/adding-reviewers-form.md)
    + [Verfassen von kontextsensitiver Hilfe für Formularfelder](using/authoring-in-field-help.md)
    + [Verwenden des Layout-Modus zum Ändern der Größe von Komponenten](/help/forms/using/resize-using-layout-mode.md)
+   + [Verbinden und Senden von adaptiven Formulardaten an Microsoft](/help/forms/using/forms-microsoft-power-automate-integration.md)
 + Adaptive Formulare - Erweitertes Authoring {#adaptive-forms-advanced-authoring}
    + [Erstellen adaptiver Formulare mithilfe des JSON-Schemas](using/adaptive-form-json-schema-form-model.md)
    + [Adaptive Formulare mithilfe des XML-Schemas erstellen](using/adaptive-form-xml-schema-form-model.md)
