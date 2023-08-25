@@ -10,16 +10,16 @@ discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 role: User, Admin
 exl-id: 750627fc-2a29-43ff-867e-55cb2e371043
 feature: Publishing
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 4005e09349d22dbb70a7af378bed2a991ea7218d
 workflow-type: tm+mt
-source-wordcount: '474'
-ht-degree: 88%
+source-wordcount: '475'
+ht-degree: 81%
 
 ---
 
 # Veröffentlichen von Dynamic Media-Assets {#publishing-dynamic-media-assets}
 
-Sie veröffentlichen Ihre Dynamic Media-Assets, indem Sie die bereits hochgeladenen Assets auswählen und auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Quick Publish]** tippen. Nach dem Veröffentlichen Ihrer Dynamic Media-Assets können diese über eine URL oder einen Code in eine Web-Seite eingebettet werden.
+Sie veröffentlichen Ihre Dynamic Media-Assets, indem Sie die bereits hochgeladenen Assets auswählen und auf **[!UICONTROL Veröffentlichen]** oder **[!UICONTROL Quick Publish]** tippen. Nachdem Ihre Dynamic Media-Assets veröffentlicht wurden, können Sie sie über eine URL auf einer Web-Seite einbinden oder den Code auf die Web-Seite einbetten.
 
 Sie können hochgeladene Assets auch umgehend und ohne Anwenderinteraktion veröffentlichen. Siehe [Konfigurieren von Dynamic Media – Scene7-Modus](config-dms7.md).
 Sie können Assets für Dynamic Media oder Adobe Experience Manager auch selektiv veröffentlichen (sich gegenseitig ausschließend), indem Sie auf der Ordnerebene die Option **[!UICONTROL Selektive Veröffentlichung]** verwenden. Siehe [Arbeiten mit selektiver Veröffentlichung in Dynamic Media](/help/assets/selective-publishing.md).
