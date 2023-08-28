@@ -10,10 +10,10 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+source-git-commit: ee1a0866aafd56fa53f5d3b936beab8f500d335c
 workflow-type: tm+mt
-source-wordcount: '11269'
-ht-degree: 71%
+source-wordcount: '11363'
+ht-degree: 69%
 
 ---
 
@@ -33,7 +33,7 @@ Die folgende schrittweise Workflow-Beschreibung soll Ihnen den schnellen Einstie
 >
 >* Siehe [Konfigurieren von Dynamic Media-Cloud-Services](/help/assets/config-dynamic.md#configuring-dynamic-media-cloud-services) unter „Konfigurieren des Dynamic Media-Hybridmodus“.
 >
->Derzeit bekanntes Problem bei der Videowiedergabe in Dynamic Media *nur in Experience Manager 6.5.9.0*:
+>Aktuelles bekanntes Videowiedergabeproblem in Dynamic Media *nur zu Experience Manager 6.5.9.0*:
 >
 >* Wenn ein veröffentlichtes Video aktualisiert wird, muss es erneut veröffentlicht werden, um Änderungen beim Versand widerzuspiegeln.
 >
@@ -111,12 +111,12 @@ Weitere Informationen zu [Best Practices für die Organisation Ihrer digitalen A
       * Integrieren von Videos mithilfe der URL:
         [Verknüpfen von URLs mit Ihrer Web-Anwendung](linking-urls-to-yourwebapplication.md).
 
-      * Integrieren von Videos mithilfe von Einbettungs-Code auf der Web-Seite:
+      * Integrieren von Videos mithilfe von Einbettungscode auf einer Webseite:
         [Einbetten des Video-Viewer auf einer Web-Seite](embed-code.md).
 
    * [Erzeugen von Videoberichten](#viewing-video-reports).
 
-   * [Hinzufügen von Untertiteln zu Videos](#adding-captions-to-video).
+   * [Hinzufügen von Untertiteln zum Video](#adding-captions-to-video).
 
 ## Arbeiten mit Video in Dynamic Media {#working-with-video-in-dynamic-media}
 
@@ -128,10 +128,10 @@ Außerdem wird die Videoqualität automatisch geändert, wenn sich die Netzwerkb
 
 Die Logik, mit der Video-Player bestimmen, welches kodierte Video wiedergegeben oder während der Wiedergabe ausgewählt werden soll, basiert auf dem folgenden Algorithmus:
 
-1. Video-Player lädt das erste Videofragment auf Basis der Bitrate, die am nächsten an dem Wert liegt, der im Player selbst als „erste Bitrate“ festgelegt wurde.
+1. Der Videoplayer lädt das anfängliche Videofragment basierend auf der Bitrate, die dem für &quot;initiale Bitrate&quot;im Player selbst festgelegten Wert am nächsten ist.
 1. Video-Player wechselt auf Basis von Änderungen an der Bandbreitengeschwindigkeit anhand der folgenden Kriterien:
 
-   1. Player wählt den höchsten Bandbreitenstrom aus, der kleiner als die geschätzte Bandbreite oder gleich dieser ist.
+   1. Der Player wählt den höchsten Bandbreitenstream aus, der unter der geschätzten Bandbreite liegt oder dieser entspricht.
    1. Player berücksichtigt nur 80 % der verfügbaren Bandbreite. Beim Wechseln nach oben ist der Player mit nur 70 % konservativer, um Überschätzungen zu vermeiden und sofort zurückzuwechseln.
 
 Detaillierte technische Informationen zum Algorithmus finden Sie unter [https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp](https://android.googlesource.com/platform/frameworks/av/+/master/media/libstagefright/httplive/LiveSession.cpp)
@@ -145,7 +145,7 @@ Für das Verwalten von einzelnen Videos und adaptiven Videosets wird Folgendes u
 
 * Videountertitelung in allen HTML5-Video-Viewern
 * Organisieren und Durchsuchen von Videos mit kompletter Metadatenunterstützung für die effiziente Verwaltung von Video-Assets
-* Stellen Sie adaptive Videosets im Internet sowie für Desktops und Mobilgeräte bereit, einschließlich iPhone, iPad, Android™, BlackBerry® und Windows Phone.
+* Bereitstellen von adaptiven Videosets für das Web sowie für Desktops und Mobilgeräte, einschließlich iPhone, iPad, Android™, BlackBerry® und Windows Phone.
 
 Das adaptive Video-Streaming wird auf verschiedenen iOS-Plattformen unterstützt. Siehe [Dynamic Media Viewers-Referenzhandbuch](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/c-html5-video-reference.html?lang=de#video).
 
@@ -321,7 +321,7 @@ Sie können die Metadaten einer Datei abrufen, indem Sie diese mit einem Videobe
 
 Wenn Sie eine Videokodierungsvorgabe für die Primär-Videodatei auswählen oder erstellen, achten Sie darauf, dass die Vorgabe dasselbe Seitenverhältnis wie die Primär-Videodatei aufweist. Das Seitenverhältnis ist das Verhältnis zwischen Breite und Höhe des Videos.
 
-Um das Seitenverhältnis einer Videodatei zu ermitteln, rufen Sie die Metadaten der Datei ab und notieren Sie die Breite und Höhe der Datei (siehe „Abrufen der Metadaten von Dateien“ oben). Ermitteln Sie das Seitenverhältnis dann anhand der folgenden Formel:
+Um das Seitenverhältnis einer Videodatei zu ermitteln, rufen Sie die Metadaten der Datei ab und notieren Sie die Breite und Höhe der Datei (siehe Abrufen der Metadaten einer Datei oben). Verwenden Sie dann diese Formel, um das Seitenverhältnis zu ermitteln:
 
 Breite/Höhe = Seitenverhältnis
 
@@ -449,7 +449,7 @@ Gleichzeitig erstellen Sie eine Adobe-Support-Anfrage, damit DASH für Ihr Konto
 
 >[!IMPORTANT]
 >
->Alle hochgeladenen Videos *before* Aktivierung der Unterstützung von Multiuntertiteln und Multiaudio-Track für Ihr Dynamic Media-Konto, [muss erneut verarbeitet werden](/help/assets/processing-profiles.md#reprocessing-assets). Dieser Schritt zur erneuten Verarbeitung des Videos ist erforderlich, damit mehrere Untertitel und Multiaudio-Track verfügbar sind. Die Video-URLs funktionieren nach der erneuten Verarbeitung weiterhin und werden wie gewohnt wiedergegeben.
+>Alle hochgeladenen Videos *before* Aktivierung der Unterstützung für mehrere Untertitel und Multiaudio-Track in Ihrem Dynamic Media-Konto, [muss erneut verarbeitet werden](/help/assets/processing-profiles.md#reprocessing-assets). Dieser Schritt zur erneuten Verarbeitung des Videos ist erforderlich, damit mehrere Untertitel und Multiaudio-Track verfügbar sind. Die Video-URLs funktionieren nach der erneuten Verarbeitung weiterhin und werden wie gewohnt wiedergegeben.
 
 **So aktivieren Sie die Unterstützung von DASH-, Multi-Subtitle- und Multi-Audio-Track für Ihr Dynamic Media-Konto:**
 
@@ -625,7 +625,7 @@ Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Ad
 
 >[!IMPORTANT]
 >
->Alle hochgeladenen Videos *before* Aktivierung der Unterstützung von Multiuntertiteln und Multiaudio-Track für Ihr Dynamic Media-Konto, [muss erneut verarbeitet werden](/help/assets/processing-profiles.md#reprocessing-assets). Dieser Schritt zur erneuten Verarbeitung des Videos ist erforderlich, damit mehrere Untertitel und Multiaudio-Track verfügbar sind. Die Video-URLs funktionieren nach der erneuten Verarbeitung weiterhin und werden wie gewohnt wiedergegeben.
+>Alle hochgeladenen Videos *before* Aktivierung der Unterstützung für mehrere Untertitel und Multiaudio-Track in Ihrem Dynamic Media-Konto, [muss erneut verarbeitet werden](/help/assets/processing-profiles.md#reprocessing-assets). Dieser Schritt zur erneuten Verarbeitung des Videos ist erforderlich, damit mehrere Untertitel und Multiaudio-Track verfügbar sind. Die Video-URLs funktionieren nach der erneuten Verarbeitung weiterhin und werden wie gewohnt wiedergegeben.
 
 **So fügen Sie Ihrem Video mehrere Untertitel und Multiaudio-Tracks hinzu:**
 
@@ -637,9 +637,14 @@ Hinzugefügte Untertitel und Beschriftungen werden in den Formaten WebVTT und Ad
 1. Wählen Sie auf der Seite Eigenschaften des Videos die **[!UICONTROL Untertitel und Audio-Tracks]** Registerkarte.
 
    >[!TIP]
-   >Wenn die Variable **[!UICONTROL Untertitel und Audio-Tracks]** -Tab bedeutet dies, dass dem Ordner, in dem sich das ausgewählte Video befindet, kein Videoprofil zugewiesen ist. [Anwenden eines Videoprofils auf den Ordner](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders)und kehren Sie dann zu diesen Schritten zurück.
+   >Wenn die Variable **[!UICONTROL Untertitel und Audio-Tracks]** -Tab, bedeutet dies eine von zwei Dingen:
+   >
+   >* Dem Ordner, in dem sich das ausgewählte Video befindet, wird kein Videoprofil zugewiesen. In diesem Fall siehe [Anwenden eines Videoprofils auf den Ordner](/help/assets/video-profiles.md#applying-video-profiles-to-specific-folders).
+   >* Oder das Video muss von Dynamic Media erneut verarbeitet werden. In diesem Fall siehe [Neuverarbeitung von Assets in einem Ordner](/help/assets/processing-profiles.md#reprocessing-assets).
+   >
+   >Wenn Sie eine der oben genannten Aufgaben ausgeführt haben, kehren Sie zu diesen Schritten zurück.
 
-   ![Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;.](assets-dm/msma-audiotracks.png)*Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;des Videos. Beachten Sie, dass dem Video keine ursprüngliche Audiospur zugeordnet ist, wie durch ein leeres Listenfeld &quot;Audiospuren&quot;angegeben. Wenn die Videoverarbeitung abgeschlossen ist, wird der Track angezeigt.*
+   ![Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;.](assets-dm/msma-audiotracks.png)*Registerkarte &quot;Untertitel und Audiospuren&quot;auf der Seite &quot;Eigenschaften&quot;des Videos.*
 
 1. (Optional) Gehen Sie wie folgt vor, um einem Video eine oder mehrere Untertiteldateien (oder Untertiteldateien) hinzuzufügen:
    * Auswählen **[!UICONTROL Hochladen von Untertiteln]**.
@@ -721,15 +726,15 @@ Sie können den Lebenszyklusstatus jeder Untertitel- oder Audio-Track-Datei fest
 1. Navigieren Sie zum Video-Asset, dessen Lebenszyklusstatus Sie anzeigen möchten.
 1. Wählen Sie im Asset-Auswahlmodus entweder in der Listenansicht oder in der Kartenansicht das Video-Asset aus.
 1. Wählen Sie in der Symbolleiste das Symbol Eigenschaften aus (ein Kreis mit einem darin enthaltenen &quot;i&quot;).
-1. Wählen Sie auf den Seiten Eigenschaften die **[!UICONTROL Untertitel und Audio-Tracks]** Registerkarte. Notieren Sie in der Spalte Status den Status der einzelnen Untertitel oder Audiodateien.
+1. Wählen Sie auf der Seite Eigenschaften die **[!UICONTROL Untertitel und Audio-Tracks]** Registerkarte. Notieren Sie in der Spalte Status den Status der einzelnen Untertitel oder Audiodateien.
 
 | Untertitel oder Audio-Track-Status | Beschreibung |
 | --- | --- |
-| Verarbeitung | Die Verarbeitung läuft. |
-| Verarbeitet | Die Verarbeitung ist abgeschlossen. |
-| Veröffentlicht | Veröffentlicht in Dynamic Media. |
-| Fehlgeschlagen | Die Verarbeitung wurde nicht abgeschlossen. Löschen Sie die Datei und versuchen Sie erneut den Upload. |
-| Unveröffentlicht | Verarbeitung, aber noch nicht in Dynamic Media veröffentlicht. |
+| Verarbeitung | Wenn ein neuer Untertitel oder eine neue Audio-Track-Datei hinzugefügt und gespeichert wird, erhält sie den Status &quot;Verarbeitung&quot;. Dynamic Media verarbeitet die Datei, indem das Streaming-Manifest an das Hauptvideo angehängt wird. |
+| Verarbeitet | Nach Abschluss der Verarbeitung wird der Untertitel oder die Audiotrack-Datei in einem &quot;verarbeiteten&quot;Status angezeigt. Sie können eine Vorschau der Untertitel- und Audiotrack-Dateien anzeigen, die als &quot;Verarbeitet&quot;angezeigt werden. *before* Sie veröffentlichen das Video live. |
+| Veröffentlicht | Der Status &quot;Veröffentlicht&quot;stellt einen ähnlichen Status wie &quot;Veröffentlicht&quot;für ein primäres Video dar. Assets werden veröffentlicht, wenn das Hauptvideo veröffentlicht wird, und sind in der öffentlichen Dynamic Media-URL verfügbar. |
+| Fehlgeschlagen | Der Status &quot;Fehlgeschlagen&quot;bedeutet, dass die Verarbeitung eines Untertitels oder einer Audiotrack-Datei nicht abgeschlossen wurde. Löschen Sie den Untertitel oder die Audio-Track-Datei und laden Sie sie erneut hoch. |
+| Unveröffentlicht | Wenn die Veröffentlichung eines veröffentlichten primären Videos explizit rückgängig gemacht wird, werden auch alle Untertitel- oder Audiotrack-Dateien, die Sie zum Video hinzugefügt haben, depubliziert. |
 
 ![Spalte Status für die Felder Untertitel und Audiospuren hervorgehoben.](assets-dm/msma-lifecycle-status.png)*Lebenszyklusstatus jedes hochgeladenen Untertitels und jeder Audio-Track-Datei.*
 
@@ -751,7 +756,7 @@ Alle hochgeladenen Audio-Track-Dateien können jedoch als Standardaudio festgele
 1. Navigieren Sie zum Video-Asset, dessen standardmäßiger Audiotrack Sie festlegen möchten.
 1. Wählen Sie im Asset-Auswahlmodus entweder in der Listenansicht oder in der Kartenansicht das Video-Asset aus.
 1. Wählen Sie in der Symbolleiste das Symbol Eigenschaften aus (ein Kreis mit einem darin enthaltenen &quot;i&quot;).
-1. Wählen Sie auf den Seiten Eigenschaften die **[!UICONTROL Untertitel und Audio-Tracks]** Registerkarte.
+1. Wählen Sie auf der Seite Eigenschaften die **[!UICONTROL Untertitel und Audio-Tracks]** Registerkarte.
 1. Unter dem **Audio-Tracks** -Überschrift die Audiotrack-Datei auswählen, die Sie als Standard für das Video festlegen möchten.
 1. Auswählen **[!UICONTROL Als Standard festlegen]**.
 Im **Als Standard festlegen** Dialogfeld auswählen **[!UICONTROL Ersetzen]**.
@@ -763,7 +768,7 @@ Im **Als Standard festlegen** Dialogfeld auswählen **[!UICONTROL Ersetzen]**.
 
 ### Vorschau eines Videos mit mehreren Untertiteln und Audiospuren{#preview-video-audio-subtitle}
 
-Nachdem Untertiteldateien und Audio-Track-Dateien in ein Video hochgeladen und verarbeitet wurden, können Sie mit dem Dynamic Media-Video-Viewer eine Vorschau aller verschiedenen Spuren anzeigen. Auf diese Weise können Sie sehen, wie Ihr Video aussieht und wie es für Kunden klingt, und stellen sicher, dass es sich wie erwartet verhält.
+Nachdem Untertiteldateien und Audio-Track-Dateien in ein Video hochgeladen und verarbeitet wurden, können Sie mit dem Dynamic Media-Video-Viewer (oder ggf. anderen Viewer-Typen) eine Vorschau aller verschiedenen Spuren anzeigen. Durch die Vorschau können Sie sehen, wie Ihr Video aussieht und wie es für Kunden klingt, und stellen sicher, dass es sich wie erwartet verhält.
 
 Wenn Sie mit dem Video zufrieden sind, können Sie [Veröffentlichen](publishing-dynamicmedia-assets.md) eine der folgenden Methoden verwenden.
 
@@ -783,15 +788,15 @@ Auf der Standardregisterkarte für die Vorschau von Experience Managern werden n
 
    ![Dropdown-Liste mit der Option Viewer .](assets-dm/msma-selectviewers.png)
 
-1. Wählen Sie in der Viewer-Liste **[!UICONTROL Video]** aus.
+1. Wählen Sie in der Liste &quot;Viewer&quot;einen Viewer aus, den Sie für die Videovorschau verwenden möchten. Der folgende Screenshot zeigt beispielsweise die **[!UICONTROL Video]** ausgewählter Viewer.
 
    ![Auswahl des Video-Viewers aus der Dropdownliste &quot;Viewer&quot;.](assets-dm/msma-dmviewerselected.png)
 
-1. Wählen Sie in der rechten unteren Ecke links neben dem Lautstärkesymbol das Sprechblasensymbol aus und wählen Sie dann die Audio- oder Untertitel aus, die Sie hören oder sehen möchten, oder beides. Bei Bedarf können Sie unter Untertitel **[!UICONTROL Aus]** um keine Untertitel oder Untertitel anzuzeigen.
+1. Wählen Sie in der rechten unteren Ecke links neben dem Lautstärkesymbol das Sprechblasensymbol aus und wählen Sie dann die Audio- oder Untertitel aus, die Sie hören oder sehen oder beides. Bei Bedarf können Sie unter Untertitel **[!UICONTROL Aus]** um keine Untertitel oder Untertitel anzuzeigen.
 
    ![Die Popup-Liste Audio und Untertitel im Video-Viewer.](assets-dm/msma-selectaudiosubtitle.png)*Simulation eines Benutzers, der Audio und Untertitel für die Videowiedergabe auswählt.*
 
-1. Wählen Sie die **[!UICONTROL Play]** Schaltfläche, um die Wiedergabe zu starten.
+1. Um mit der Wiedergabe zu beginnen, wählen Sie die Schaltfläche **[!UICONTROL Wiedergabe]** des Videos.
 Beachten Sie die **[!UICONTROL URL]** und **[!UICONTROL Einbetten]** -Schaltflächen in der unteren linken Ecke. Verwenden Sie diese Schaltflächen, um [die URL des Videos mit Ihrer Webanwendung verknüpfen](/help/assets/linking-urls-to-yourwebapplication.md) oder [Einbetten des Videos auf einer Webseite](/help/assets/embed-code.md), bzw.
 1. Wählen Sie rechts oben auf der Vorschauseite die Option **[!UICONTROL Schließen]**.
 
@@ -806,7 +811,7 @@ Der ursprüngliche Audio-Track, der aus einem primären Video extrahiert wurde, 
 1. Navigieren Sie zum Video-Asset, dessen standardmäßiger Audiotrack Sie festlegen möchten.
 1. Wählen Sie im Asset-Auswahlmodus entweder in der Listenansicht oder in der Kartenansicht das Video-Asset aus.
 1. Wählen Sie in der Symbolleiste das Symbol Eigenschaften aus (ein Kreis mit einem darin enthaltenen &quot;i&quot;).
-1. Wählen Sie auf den Seiten Eigenschaften die **[!UICONTROL Untertitel und Audio-Tracks]** Registerkarte.
+1. Wählen Sie auf der Seite Eigenschaften die **[!UICONTROL Untertitel und Audio-Tracks]** Registerkarte.
 1. Führen Sie eine der folgenden Aktionen aus:
 
    * Untertitel - unter dem **Untertitel** -Überschrift eine oder mehrere Untertiteldateien auswählen, die Sie aus dem Video löschen möchten, und wählen Sie dann **[!UICONTROL Löschen]**.
@@ -826,7 +831,7 @@ Der ursprüngliche Audio-Track, der aus einer Primärdatei extrahiert wurde, kan
 1. Navigieren Sie zum Video-Asset, dessen standardmäßiger Audiotrack Sie festlegen möchten.
 1. Wählen Sie im Asset-Auswahlmodus entweder in der Listenansicht oder in der Kartenansicht das Video-Asset aus.
 1. Wählen Sie in der Symbolleiste das Symbol Eigenschaften aus (ein Kreis mit einem darin enthaltenen &quot;i&quot;).
-1. Wählen Sie auf den Seiten Eigenschaften die **[!UICONTROL Untertitel und Audio-Tracks]** Registerkarte.
+1. Wählen Sie auf der Seite Eigenschaften die **[!UICONTROL Untertitel und Audio-Tracks]** Registerkarte.
 1. Führen Sie eine der folgenden Aktionen aus:
 
    * Untertitel - unter dem **Untertitel** -Überschrift eine oder mehrere Untertiteldateien aus, die Sie aus dem Video herunterladen möchten, und wählen Sie dann **[!UICONTROL Herunterladen]**.
@@ -915,11 +920,7 @@ Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie
 
 ## Hinzufügen von Kapitelmarken zu Videos {#adding-chapter-markers-to-video}
 
->[!IMPORTANT]
->
-Dieses Thema wird nicht mehr aktiv gepflegt. Sie wird wie bisher für Benutzer von Dynamic Media bereitgestellt. Adobe empfiehlt, dass Sie [Multiuntertitel- und Multiaudio-Track-Funktion aktivieren](#enable-dash) auf Ihrem Dynamic Media-Konto. Auf diese Weise können Sie die neueste Dynamic Media-Backend-Architektur und einen vereinfachten Workflow zum Hinzufügen von Untertiteln, Untertiteln und Audiospuren zu Ihren Videos nutzen.
-
-Um das Ansehen von und Navigieren in langformatigen Videos zu vereinfachen, können Sie einzelnen Videos oder adaptiven Videosets Kapitelmarken hinzufügen. Wenn ein Benutzer das Video abspielt, kann er auf die Kapitelmarken in der Video-Zeitleiste (auch als Video-Scrubber bezeichnet) klicken, um einfach zu seinem Zielpunkt zu navigieren. Oder er kann sofort zu neuen Inhalten, Demonstrationen und Tutorials springen.
+Sie können die Wiedergabe und Navigation Ihrer Videos in langen Formularen vereinfachen, indem Sie einzelnen Videos oder adaptiven Videosets Kapitelmarken hinzufügen. Wenn ein Benutzer das Video abspielt, kann er auf die Kapitelmarken in der Video-Zeitleiste (auch als Video-Scrubber bezeichnet) klicken, um einfach zu seinem Zielpunkt zu navigieren. Oder er kann sofort zu neuen Inhalten, Demonstrationen und Tutorials springen.
 
 >[!NOTE]
 >
