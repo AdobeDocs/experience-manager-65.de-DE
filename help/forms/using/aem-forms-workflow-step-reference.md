@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
+source-git-commit: 3c7b46c20b2f34bd83941649cbff2ac16c3aade2
 workflow-type: tm+mt
 source-wordcount: '7690'
 ht-degree: 77%
@@ -303,6 +303,7 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
   >* Im Abschnitt Rolle können Sie die Empfängerrolle als Unterzeichner, Genehmiger, Akzeptor, zertifizierter Empfänger, Formularfilter und Delegator festlegen.
   >* Wenn Sie in der Option Rolle die Option Delegator auswählen, kann der Delegator die Unterschriftsaufgabe anderen Empfängern zuweisen.
   >* Wenn Sie eine Authentifizierungsmethode für [!DNL Adobe Sign], wählen Sie je nach Konfiguration eine Authentifizierungsmethode wie Phone-basierte Authentifizierung, Social Identity-basierte Authentifizierung, Knowledge-based Authentication, Government Identity-basierte Authentifizierung.
+
 * **Skript oder Dienst zur Auswahl von Empfängern:** Die Option ist nur verfügbar, wenn Sie im Feld Empfänger auswählen die Option Dynamisch auswählen auswählen auswählen. Sie können ein ECMAScript oder einen Dienst angeben, um Empfänger und Überprüfungsoptionen für ein Dokument auszuwählen.
 * **Empfängerdetails:** Die Option ist nur verfügbar, wenn im Feld Empfänger auswählen die Option Manuell ausgewählt wurde. Geben Sie die E-Mail-Adresse an und wählen Sie einen optionalen Verifizierungsmechanismus aus. Bevor Sie einen Zwei-Schritt-Bestätigungsmechanismus auswählen, vergewissern Sie sich, dass die entsprechende Verifizierungsoption für das konfigurierte Adobe Sign-Konto aktiviert ist. Sie können eine Variable vom Datentyp „String“ verwenden, um Werte für die Felder **[!UICONTROL E-Mail]**, **[!UICONTROL Länder-Code]** und **[!UICONTROL Telefonnummer]** zu definieren. Die Felder **[!UICONTROL Länder-Code]** und **[!UICONTROL Telefonnummer]** werden nur angezeigt, wenn Sie **[!UICONTROL Telefonüberprüfung]** aus der Dropdown-Liste **[!UICONTROL Zweistufenüberprüfung]** auswählen.
 * **Statusvariable**: Ein Dokument, für das Adobe Sign aktiviert ist, speichert den Signierstatus des Dokuments in einer Variablen vom Datentyp „String“. Geben Sie den Namen der Statusvariable (adobeSignStatus) an. Eine Statusvariable einer Instanz ist in CRXDE unter /etc/workflow/instances/&lt;Server>/&lt;Datum/Uhrzeit>/&lt;Instanz des Workflow-Modells>/workItems/&lt;Knoten>/metaData verfügbar und enthält den Status einer Variablen.
