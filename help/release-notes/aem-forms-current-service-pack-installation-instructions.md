@@ -2,10 +2,10 @@
 title: AEM Forms – Patch-Installationsanweisungen für AEM Forms
 description: Installationsanweisungen für AEM Forms Service Packs für OSGi- und JEE-Umgebungen
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
-workflow-type: ht
-source-wordcount: '1727'
-ht-degree: 100%
+source-git-commit: d179c45044bbc987d60e180debefb243a5ee7cc6
+workflow-type: tm+mt
+source-wordcount: '1733'
+ht-degree: 96%
 
 ---
 
@@ -15,9 +15,9 @@ ht-degree: 100%
 
 | Produkt | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Version | 6.5.17.0 |
+| Version | 6.5.18.0 |
 | Typ | Service Pack-Version |
-| Datum | 1. Juni 2023 |
+| Datum | 29. August 2023 |
 | Download-URL | [Neueste AEM Forms-Versionen](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) |
 
 >[!NOTE]
@@ -33,7 +33,7 @@ Das Service Pack für Adobe Experience Manager (AEM) Forms enthält neue und akt
 
 >[!NOTE]
 >
-> Adobe veröffentlicht mit jedem sechsten Service Pack ein vollständiges Installationsprogramm. AEM 6.5 Forms Service Pack 12 (6.5.12.0) auf JEE war das letzte vollständige Installationsprogramm. Das vollständige Installationsprogramm bietet Unterstützung für neue Plattformen, während das reguläre Service Pack-Installationsprogramm nur Fehlerbehebungen und allgemeine Verbesserungen enthält. Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms on JEE-Umgebung planen, empfiehlt Adobe die Verwendung des Vollinstallationsprogramms für AEM 6.5.12.0 Forms on JEE vom 03. März 2022 anstelle des AEM 6.5 Forms-Installationsprogramms vom 08. April 2019. Nachdem Sie das vollständige Installationsprogramm verwendet haben, installieren Sie das neueste Service Pack.
+> Adobe veröffentlicht mit jedem sechsten Service Pack ein vollständiges Installationsprogramm. AEM 6.5 Forms Service Pack 18 (6.5.18.0) ist das neueste Installationsprogramm für JEE. Das vollständige Installationsprogramm bietet Unterstützung für neue Plattformen, während das reguläre Service Pack-Installationsprogramm nur Fehlerbehebungen und allgemeine Verbesserungen enthält. Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms on JEE-Umgebung planen, empfiehlt Adobe die Verwendung des am 29. August 2023 veröffentlichten vollständigen Installationsprogramms für Forms on JEE AEM 6.5.18.0 anstelle des am 08. April 2019 veröffentlichten Forms Installationsprogramms für AEM 6.5.12. 2022 Nachdem Sie das vollständige Installationsprogramm verwendet haben, installieren Sie das neueste Service Pack.
 
 ## Service Pack herunterladen und auf einer Umgebung von AEM Forms on JEE installieren {#download-and-install-for-jee-service-pack}
 
@@ -151,7 +151,7 @@ Das Paket wird automatisch installiert.
 
   >[!NOTE]
   >
-  >Das Service Pack von Experience Manager unterstützt keine Bootstrap-Installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+  Das Service Pack von Experience Manager unterstützt keine Bootstrap-Installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validierung der Installation**
 
@@ -183,7 +183,7 @@ Das Paket wird automatisch installiert.
 
 >[!NOTE]
 >
->Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
+Wenn Sie das AEM Forms Service Pack für eine relationale Datenbank installieren, müssen Sie unbedingt ein Backup von DB_schema erstellen.
 
 +++
 
@@ -211,7 +211,7 @@ Es gibt zwei verschiedene Methoden, mit der Sie das Service Pack von [!DNL Exper
 
   >[!NOTE]
   >
-  >Das Service Pack von Experience Manager unterstützt keine Bootstrap-installation. <!-- UPDATE FOR EACH NEW RELEASE -->
+  Das Service Pack von Experience Manager unterstützt keine Bootstrap-installation. <!-- UPDATE FOR EACH NEW RELEASE -->
 
   **Validierung der Installation**
 

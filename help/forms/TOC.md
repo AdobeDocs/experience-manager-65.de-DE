@@ -9,10 +9,10 @@ breadcrumb-title: Forms-Anleitung
 user-guide-description: Erstellen, Verwalten, Veröffentlichen und Aktualisieren von digitalen Formularen.
 role: User
 feature: Forms Service
-source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
+source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
 workflow-type: tm+mt
-source-wordcount: '3897'
-ht-degree: 99%
+source-wordcount: '3912'
+ht-degree: 98%
 
 ---
 
@@ -136,6 +136,7 @@ ht-degree: 99%
    + [Aktivieren von Kernkomponenten für Ihre Umgebung](/help/forms/using/enable-adaptive-forms-core-components.md)
    + [Erstellen eines auf Kernkomponenten basierenden adaptiven Formulars](/help/forms/using/create-an-adaptive-form-core-components.md)
    + [Erstellen von Designs für auf Kernkomponenten basierende adaptive Forms](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+   + [Benutzerdefinierten Fehler-Handler für auf Kernkomponenten basierende adaptive Forms erstellen und verwenden](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
 + Adaptiv Forms- einfaches Authoring {#adaptive-forms-basic-authoring}
    + [Best Practices für die Arbeit mit adaptiven Formularen](using/adaptive-forms-best-practices.md)
    + [Erstellen eines adaptiven Formulars](using/creating-adaptive-form.md)
@@ -188,7 +189,7 @@ ht-degree: 99%
    + [Integrieren von Adobe Sign mit AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Erstellen und Verwalten von Assetüberprüfungen in Formularen](using/create-reviews-forms.md)
    + [Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in ein Einzelseiten-Programm von AEM Sites](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
-   + [Adaptive Formulare für standardmäßige Validierungsfehlermeldungen](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
+   + [Benutzerdefinierten Fehler-Handler für adaptive Forms erstellen und verwenden](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Interaktive Kommunikation {#interactive-communications}
    + [Einführung in die Benutzeroberfläche für interaktive Kommunikationserstellung](using/introduction-interactive-communication-authoring.md)
    + [Erstellen einer interaktiven Kommunikation](using/create-interactive-communication.md)

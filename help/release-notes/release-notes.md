@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
-source-git-commit: 2209ab8498072744091f5af22887c8f13dbb3ac6
+source-git-commit: d63355e1042f6ad63a848b97c26dc2f29bab47b1
 workflow-type: tm+mt
-source-wordcount: '3464'
-ht-degree: 41%
+source-wordcount: '4459'
+ht-degree: 33%
 
 ---
 
@@ -61,25 +61,24 @@ Zu den wichtigsten Funktionen und Verbesserungen in dieser Version gehören:
 
 **Formulare**
 
-* **Verbesserte Fehlerbehebung mit benutzerdefinierten Fehler-Handlern im Regeleditor:** Sie können jetzt eine benutzerdefinierte Funktion (mithilfe der Client-Bibliothek) aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine maßgeschneiderte Antwort für Endbenutzer bereitstellen. Sie können auch bestimmte Aktionen für Fehler ausführen, die von einem Dienst zurückgegeben werden. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehlercodes aufrufen oder den Kunden darüber informieren, dass der Dienst ausgefallen ist
+* **[Verbesserte Fehlerbehebung mit benutzerdefinierten Fehler-Handlern im Regeleditor](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** Sie können jetzt eine benutzerdefinierte Funktion (mithilfe der Client-Bibliothek) aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine maßgeschneiderte Antwort für Endbenutzer bereitstellen. Sie können auch bestimmte Aktionen für Fehler ausführen, die von einem Dienst zurückgegeben werden. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehlercodes aufrufen oder den Kunden darüber informieren, dass der Dienst ausgefallen ist
 
-* **Verbesserter Adobe Sign-Workflow-Schritt:** Der Adobe Sign-Workflow-Schritt in AEM Workflows ist mit den folgenden Verbesserungen verfügbar.
+* **[Verbesserter Workflow-Schritt in Adobe Sign](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html):** Der Adobe Sign-Workflow-Schritt in AEM Workflows ist mit den folgenden Verbesserungen verfügbar.
 
    * **Verbesserte Sicherheit mit ID-basierter Authentifizierung für Adobe Sign:** Adobe Acrobat Signs Authentifizierung mit einer öffentlichen ID bietet eine zusätzliche Überprüfungsebene, indem Benutzer ihre Identität mit staatlich ausgestellten Kennungen (Führerschein, nationale Kennung, Pass) authentifizieren können. Durch die Verwendung vertrauenswürdiger Identifizierungsdokumente fügt diese Verbesserung dem Signierungsprozess ein zusätzliches Maß an Konfidenz hinzu, wodurch sie sich ideal für Szenarien eignet, die eine erhöhte Sicherheit, Compliance und Benutzervalidierung erfordern.
 
    * **Verbesserte Transparenz mit dem Audit-Protokoll für Adobe Sign-Dokumente:** Verwenden Sie die Funktion &quot;Audit-Protokoll&quot;, um detaillierte Einblicke in den Lebenszyklus Ihrer Adobe Sign-Dokumente zu erhalten. Mit dem Audit-Protokoll können Sie jetzt einen umfassenden Datensatz aller Aktionen und Interaktionen verwalten, die mit Ihren Dokumenten verbunden sind. Dazu gehören Details wie der Benutzer, der das Dokument angesehen, bearbeitet oder unterschrieben hat, sowie Zeitstempel für jedes Ereignis. Diese Verbesserung ist von entscheidender Bedeutung für die Aufrechterhaltung der Compliance, die Beilegung von Streitigkeiten und die Sicherstellung der Integrität Ihrer digitalen Vereinbarungen.
 
 
-  **Erweitern Sie die Rollen für Empfänger der Vereinbarung über den Unterzeichner hinaus:** Adobe Acrobat Sign hat die Möglichkeit, die Rollen für Vertragsempfänger über den Unterzeichner hinaus zu erweitern, um die Anforderungen an den Workflow besser zu erfüllen. Wenn diese Option aktiviert ist, kann die Rolle jedes Empfängers in einem Vertrag einzeln konfiguriert werden, wobei der Unterzeichner die Standardeinstellung ist.
+   * **Die Rollen für Empfänger der Vereinbarung wurden über den Unterzeichner hinaus erweitert:** Adobe Acrobat Sign hat die Möglichkeit, die Rollen für Vertragsempfänger über den Unterzeichner hinaus zu erweitern, um die Anforderungen an den Workflow besser zu erfüllen. Wenn diese Option aktiviert ist, kann die Rolle jedes Empfängers in einem Vertrag einzeln konfiguriert werden, wobei der Unterzeichner die Standardeinstellung ist.
 
 
-* **AEM Forms on JEE-Vollinstallationsprogramm**: Das Service Pack enthält ein vollständiges Installationsprogramm für AEM Forms on JEE, das mehrere neue Softwarekombinationen unterstützt, darunter:
+* **[AEM Forms on JEE-Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)**: Das Service Pack enthält ein vollständiges Installationsprogramm für AEM Forms on JEE, das mehrere neue Softwarekombinationen unterstützt, darunter:
    * Microsoft Windows Server 2022
    * Microsoft Active Directory 2022
-   * Oracle WebLogic 14C und 12.2.1.4 unter Windows Server 2022
-   * RedHat JBoss 7.4.10 auf Windows Server 2022
+   * Oracle WebLogic 14C unter Windows Server 2022
+   * RedHat JBoss 7.4.10
    * MongoDB 4.4
-   * Microsoft JDBC-Treiber 12.2 für SQL Server
    * MySQL JDBC Connector 8
 
 Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms on JEE-Umgebung planen, empfiehlt Adobe die Verwendung des vollständigen Installationsprogramms für AEM 6.5.18.0 Forms on JEE. Die vollständige Liste der neu hinzugefügten und veralteten Software finden Sie in der Dokumentation zu AEM Forms on JEE oder AEM Forms on OSGi.
@@ -161,10 +160,58 @@ Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Soft
 
 ### [!DNL Forms]{#forms-6518}
 
-Fehlerbehebungen in [!DNL Experience Manager] Forms wird eine Woche nach der geplanten Bereitstellung über ein separates Add-On-Paket bereitgestellt [!DNL Experience Manager] Veröffentlichungsdatum des Service Packs. In diesem Fall ist die Veröffentlichung der AEM Add-On-Pakete für Forms 6.5.18.0 für Donnerstag, den 31. August 2023 geplant. Nach der Veröffentlichung wird diesem Abschnitt eine Liste mit Forms-Fehlerbehebungen und -Verbesserungen hinzugefügt.
 <!--
-* After Experience Manager, Service Pack 16 is installed on the servers, all the Interactive communication Letters starts to clock if they try to edit these letters. If they provide any sample payload to preview or view/edit the properties page, they work. However, they are not able to edit the letters. (FORMS-9067) 
+Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
 -->
+
+* **Document Services**
+   * Wenn ein Benutzer einen transformPDF-Dienst verwendet, schlägt er mit einer Ausnahme fehl: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957)
+   * Wenn der Server während der Erstellung von PDF-Dokumenten heruntergefahren wird, werden Fehler bei der Verarbeitung von Post-Server-Startaufträgen ausgegeben. Das Argument -Dcom.adobe.livecycle.dsc.deferServiceStart=true muss beim Serverstart hinzugefügt werden. (FORMS-9836)
+   * Wenn ein Benutzer versucht, PDF mithilfe der AssemblerService.Invoke-Methode zusammenzuführen, kann der Assembler die Aufgabe nicht durchführen. (FORMS-9550)
+   * Wenn Sie auf AEM 6.5.15.0 Service Pack in OSGI- und JEE-Umgebungen aktualisieren, funktioniert der Assembler-Dienst mit einer bestimmten Vorlage nicht mehr. (FORMS-9355, FORMS-9445, FORMS-9408)
+   * Die Java-Speicherbereinigung kann den alten Speicher auf einem AEM Forms-OSGi-Server nicht löschen, da das globale Timeout für XMLFormService nicht auf einen geeigneten Wert konfiguriert ist. (FORMS-9384, FORMS-9035)
+   * Beim Rendern der PDF-Vorschau eines adaptiven Formulars werden die unerwünschten Java-Stack-Dumps in den Fehlerprotokollen angezeigt. (FORMS-8865)
+   * Wenn ein Benutzer den Dokumentstatus für Dokumente im Abschnitt &quot;Dokumentdetails&quot;überprüft, wird er nicht korrekt angezeigt. (FORMS-8946, FORMS-10424)
+   * Wenn ein Benutzer ein Upgrade auf AEM Forms durchführt und den sendToPrinter-Dienst verwendet, nimmt die Heap-Auslastung kontinuierlich zu. (FORMS-10148)
+   * Auf dem JBoss 7.4 EAP-Server schlägt die E-Mail-Funktion mit `java.io.IOException`. (FORMS-10138)
+   * Wenn ein Benutzer den transformPDF-Dienst verwendet, schlägt er mit einem Fehler fehl: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml`(FORMS-9957)
+   * Nach dem Upgrade auf AEM Service Pack 6.5.14.0 tritt das Problem im Assembler-Dienst auf, während eine bestimmte Vorlage verwendet wird. (FORMS-9445, FORMS-9408)
+  <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
+* **Adaptive Formulare**.
+   * Wenn ein Benutzer versucht, eine benutzerdefinierte Funktion aufzurufen, ohne ein Feld zu ändern, z. B. den Wert eines anderen Felds festzulegen, schlägt dies fehl. (FORMS-9921)
+   * Beim Arbeiten mit der benutzerdefinierten Fehlerfunktion für den Regeleditor in einem adaptiven Formular treten die folgenden Fehler auf:
+      * Wenn ein Benutzer versucht, @param zu verwenden{boolean} mit einer -Funktion verwenden, lässt der Regeleditor nicht zu, dass boolesche Werte an eine Funktion übergeben werden.
+      * Wenn ein Benutzer versucht, @param zu verwenden{string} mit einer -Funktion verwenden, kann der Regeleditor die optionalen Werte nicht übergeben und gibt eine Warnung vor unvollständigen Regeln. (FORMS-9816, FORMS-9815)
+   * Die Formularbenutzergruppe kann den Regeleditor in einem adaptiven Formular nicht zweimal aufrufen. (FORMS-9051)
+   * Wenn ein Benutzer im Visual Editor ein Formularobjekt auswählt, wird das gesamte Feldinstanzobjekt an die benutzerdefinierte Funktion übergeben und nicht nur an den Wert des Felds. (FORMS-10015)
+   * Wenn ein Benutzer ein auf einer Kernkomponente basierendes adaptives Formular erstellt und eine Texteingabekomponente hinzufügt, `Is Empty` und `Is Not Empty` im Regeleditor nicht funktionieren. (FORMS-10098)
+   * Wenn ein Feld in einem auf einer Kernkomponente basierenden adaptiven Formular als ungültig markiert ist, startet es ein Änderungsereignis im Feld. (FORMS-10087)
+   * Wenn ein Benutzer versucht, ein adaptives Formular mit einem komplexen JSON-Schema zu erstellen, schlägt dies fehl. Der Fehler tritt wie folgt auf:
+     `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`. (FORMS-9639)
+   * Wenn ein Benutzer in einem adaptiven Formular das Kontrollkästchen &quot;Ich stimme den Bedingungen zu&quot;deaktiviert, wird es erneut aktiviert, sobald der Benutzer nach unten scrollt. (FORMS-9458)
+   * Wenn ein Benutzer ein adaptives Formular auf einem Android-Gerät mit Google Chrome/Firefox öffnet und die maximal zulässigen Zeichen in ein Textfeld eingibt, kann der Wert im Textfeld nicht gelöscht werden. (FORMS-9354)
+   * Wenn die Beschriftung des Kontrollkästchens Sonderzeichen wie &#39;,&#39;, &#39;/&#39; oder &#39;.&#39; enthält, wird durch Klicken auf den Text/die Beschriftung das entsprechende Kontrollkästchen nicht aktiviert. (FORMS-9313)
+   * Wenn ein Benutzer versucht, die Komponente &quot;Allgemeine Geschäftsbedingungen&quot;zu validieren, kann er nicht überprüfen, ob die Komponente nicht im Fokus ist, während die andere Komponente validiert wird. (FORMS-8725, FORMS-8913)
+   * Wenn ein adaptives Formular nach der Aktualisierung auf AEM 6.5.16.0 Service Pack neu geladen wird, schlägt der Abruf der Dateianlagen fehl. (FORMS-8906)
+   * Wenn in einem adaptiven Formular, das auf einer XDP basiert, eine Kontrollkästchenkomponente einen Texttitel enthält, dem ein numerischer Wert zugewiesen wurde, wird der Texttitel abgeschnitten und entspricht nicht dem zugewiesenen Wert. (FORMS-8743)
+   * Wenn ein Benutzer versucht, verzögertes Laden auf ein in ein adaptives Formular eingebettetes Fragment für die Autorenumgebung zu implementieren, werden die für das Fragment definierten Regeln/Logiken nicht im Formular übernommen. (FORMS-8554, FORMS-9182)
+   * Wenn Sie versuchen, ein Coral-Dialogfeld in AEM 6.5.16.0 Service Pack zu öffnen, wird das `error.log: cannot render resource` Ausnahmefehler. (FORMS-8942)
+   * Wenn ein Benutzer versucht, ein Kontrollkästchen mit einer einzigen Option in einem adaptiven Formular zu übersetzen, schlägt dies fehl. (FORMS-10181)
+* **Erreichbarkeit**
+   * Bei Verwendung der Scribble-Signatur-Komponente in einem adaptiven Formular treten die folgenden Fehler auf:
+      * Wenn nach der Scribble-Signatur-Komponente weitere Komponenten vorhanden sind, wird durch Drücken der Tabulatortaste nicht zum Signaturdialogfeld gewechselt. Stattdessen wird zur nächsten Komponente gewechselt. Erst nachdem alle Komponenten durchlaufen wurden, wird das Signaturdialogfeld geöffnet.
+      * Wenn sich ein Benutzer im Signaturdialogfeld mit einer Pinsel oder Tastatur anmeldet, wird das Dialogfeld durch Drücken der Eingabetaste nicht geschlossen.
+      * Der Zugriff auf das Dialogfeld zur Bestätigung einer klaren Signatur ist über eine Tastatur nicht möglich.
+      * Die Sprachausgabe kann die in einem Dialogfeld eingegebenen Informationen nicht lesen.
+      * Es ist nicht möglich, die Signatur ohne die Maus zu löschen.  (FORMS-9317)
+   * Wenn ein Benutzer ein adaptives Formular sendet, kann die Bildschirmlesehilfe keine Fehlermeldungen für die Pflichtfelder lesen. (FORMS-9316)
+   * Wenn eine Bildschirmlesehilfe ein HTML-Formular liest, tritt beim Lesen des Textes mit Kerning (Leerzeichen) das Problem auf. (FORMS-9258)
+   * In einem adaptiven Formular werden die mit dem Text verknüpften Verweise/Fußnoten nicht mit der Bildschirmlesehilfe aufgerufen. (FORMS-8920)
+   * Tags für die Barrierefreiheit werden in der neuesten Designer-Version nicht richtig erkannt. (FORMS-10139)
+* **Interaktive Kommunikation**
+   * In Correspondence Management funktioniert die Lokalisierung nicht. (FORMS-8926)
+   * Der Briefentwurf kann nicht geöffnet werden, wenn der publishAll-Dienst verwendet wird. (FORMS-8589)
+   * Nach dem Experience Manager wird Service Pack 16 auf den Servern installiert. Alle interaktiven Kommunikationsbriefe werden gestartet, wenn sie versuchen, diese Briefe zu bearbeiten. Wenn sie eine Beispiel-Payload bereitstellen, um die Eigenschaftenseite in der Vorschau anzuzeigen oder anzuzeigen/zu bearbeiten, funktionieren sie. Sie können die Briefe jedoch nicht bearbeiten. (FORMS-9067)
 
 
 <!-- ### [!DNL Commerce]{#commerce-6518}
@@ -380,13 +427,9 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
   "refresh": true
   ```
 
-* Da [!DNL Microsoft® Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft® Windows Server 2019] keine schlüsselfertigen Installationen für [!DNL Experience Manager Forms 6.5.10.0].
-
 * Wenn Sie Ihre [!DNL Experience Manager]-Instanz von 6.5.0 bis 6.5.4 auf das neueste Service Pack für Java™ 11 aktualisieren, sehen Sie `RRD4JReporter`-Ausnahmen in der Datei `error.log`. Um die Ausnahmen zu stoppen, starten Sie Ihre Instanz von [!DNL Experience Manager] neu. <!-- THIS BULLET POINT WAS UPDATED AS PER CQDOC-20021, JANUARY 23, 2023 -->
 
 * Benutzende können einen Ordner in einer Hierarchie in [!DNL Assets] umbenennen und einen verschachtelten Ordner in [!DNL Brand Portal] veröffentlichen. Der Titel des Ordners wird jedoch erst dann in [!DNL Brand Portal] aktualisiert, wenn der Stammordner erneut veröffentlicht wird.
-
-* Wenn Benutzende ein Feld erstmals in einem adaptiven Formular konfigurieren möchten, wird im Eigenschaften-Browser die Option zum Speichern einer Konfiguration nicht angezeigt. Das Konfigurieren eines anderen Feldes des adaptiven Formulars im selben Editor behebt das Problem.
 
 * Die folgenden Fehler und Warnmeldungen können während der Installation von [!DNL Experience Manager] 6.5.x.x angezeigt werden:
    * „Wenn die Adobe Target-Integration mithilfe der Target Standard-API (IMS-Authentifizierung) in [!DNL Experience Manager] konfiguriert wird, führt der Export von Experience Fragments nach Target dazu, dass falsche Angebotstypen erstellt werden.“ Anstelle des Typs „Experience Fragment“/source „Adobe Experience Manager“ erstellt Target mehrere Angebote mit dem Typ „HTML“/ Quelle „Adobe Target Classic“.
@@ -396,9 +439,29 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
    * Der Hotspot in einem interaktiven Dynamic Media-Bild ist nicht sichtbar, wenn Sie eine Vorschau des Assets mit dem Viewer für Banner mit Shopping-Funktion anzeigen.
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]`: Zeitüberschreitung beim Warten darauf, dass die Registrierung geändert wird, um das Aufheben der Registrierung abzuschließen.
 
-* Auf der Plattform JBoss® 7.1.4 schlägt die Bereitstellung fehl, wenn Benutzende Experience Manager 6.5.16.0 oder ein höheres Service Pack installieren. `adobe-livecycle-jboss.ear`
-* JDK-Versionen, die höher als 1.8.0_281 sind, werden für WebLogic JEE-Server nicht unterstützt.
-* Ab AEM 6.5.15 hat die von dem ```org.apache.servicemix.bundles.rhino```-Bundle bereitgestellte Rhino-JavaScript-Engine ein neues Hoisting-Verhalten. Skripte, die den strikten Modus (```use strict;```) müssen ihre Variablen korrekt deklarieren, andernfalls werden sie nicht ausgeführt, sondern es wird ein Laufzeitfehler ausgegeben.
+* Ab AEM 6.5.15 weist die vom ```org.apache.servicemix.bundles.rhino```-Bundle bereitgestellte Rhino-JavaScript-Engine ein neues Hosting-Verhalten auf. Skripte, die den strikten Modus (```use strict;```) müssen ihre Variablen korrekt deklarieren, andernfalls werden sie nicht ausgeführt, sondern es wird ein Laufzeitfehler ausgegeben.
+
+### Bekannte Probleme bei AEM Forms
+
+#### Unterstützte Plattformen
+
+* JDK-Versionen, die höher als 1.8.0_281 sind, werden für WebLogic JEE-Server nicht unterstützt. (FORMS-8498, CQDOC-20383)
+* Da [!DNL Microsoft® Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft® Windows Server 2019] keine schlüsselfertigen Installationen für [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
+* JDK 11.0.20 wird zur Installation des AEM Forms on JEE-Installationsprogramms nicht unterstützt. Nur JDK 11.0.19 oder frühere Versionen werden zur Installation des AEM Forms on JEE-Installationsprogramms unterstützt. (FORMS-10659)
+
+#### Installation
+
+* Auf der Plattform JBoss® 7.1.4 schlägt die Bereitstellung fehl, wenn Benutzende Experience Manager 6.5.16.0 oder ein höheres Service Pack installieren. `adobe-livecycle-jboss.ear` (CQ-4351522, CQDOC-20159)
+
+#### Adaptive Formulare
+
+* Wenn ein adaptives Formular veröffentlicht wird, werden alle Abhängigkeiten, einschließlich Richtlinien, erneut veröffentlicht, selbst wenn keine Änderungen an ihm vorgenommen wurden. (FORMS-10454)
+* Wenn Benutzende ein Feld erstmals in einem adaptiven Formular konfigurieren möchten, wird im Eigenschaften-Browser die Option zum Speichern einer Konfiguration nicht angezeigt. Wenn Sie im selben Editor ein anderes Feld des adaptiven Formulars konfigurieren, wird das Problem behoben.
+* Wenn eine Umleitungs-URL im Guide-Container eines adaptiven Formulars festgelegt ist, funktioniert die Inline-Signatur nicht mehr. (FORMS-10493)
+
+#### Interaktive Kommunikation
+
+* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, interaktive Kommunikationsbriefe zu bearbeiten. (FORMS-10578)
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
