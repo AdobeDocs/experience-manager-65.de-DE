@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
 workflow-type: tm+mt
-source-wordcount: '7589'
-ht-degree: 82%
+source-wordcount: '7690'
+ht-degree: 77%
 
 ---
 
@@ -23,13 +23,13 @@ Mit Workflow-Modelle können Sie eine Business-Logik in einen automatisierten, s
 
 ## Schritte für den Forms-Workflow {#forms-workflow-steps}
 
-Forms-Workflow-Schritte führen AEM Forms-spezifische Vorgänge in einem AEM Workflow aus. Mit diesen Schritten können Sie schnell einen Forms-orientierten Workflow für adaptive Formulare auf OSGi erstellen. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- und Genehmigungs-Workflows sowie interner und firmenübergreifender Geschäftsprozesse verwendet werden. Sie können auch Forms Workflow-Schritte verwenden, um Document Services zu starten, in den Adobe Sign-Signatur-Workflow zu integrieren und andere AEM Forms-Vorgänge durchzuführen. Sie benötigen [AEM Forms-Add-on](https://www.adobe.com/go/learn_aemforms_documentation_63_de) , um diese Schritte in einem Workflow zu verwenden.
+Forms Workflow-Schritte führen AEM Forms-spezifische Vorgänge in einem AEM-Workflow aus. Mit diesen Schritten können Sie schnell einen Forms-orientierten Workflow für adaptive Formulare auf OSGi erstellen. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- und Genehmigungs-Workflows sowie interner und firmenübergreifender Geschäftsprozesse verwendet werden. Sie können auch Forms Workflow-Schritte verwenden, um Document Services zu starten, in den Adobe Sign-Signatur-Workflow zu integrieren und andere AEM Forms-Vorgänge durchzuführen. Sie benötigen [AEM Forms-Add-on](https://www.adobe.com/go/learn_aemforms_documentation_63_de) , um diese Schritte in einem Workflow zu verwenden.
 
 Durch Forms-zentrierte Workflow-Schritte werden AEM Forms-spezifische Vorgänge in einem AEM-Workflow ausgeführt. Mit diesen Schritten können Sie schnell einen adaptiven Forms-basierten Forms-orientierten Workflow auf OSGi erstellen. Diese Workflows können für die Entwicklung grundlegender Überprüfungs- und Genehmigungs-Workflows, interner und Firewall-übergreifender Geschäftsprozesse verwendet werden.
 
 >[!NOTE]
 >
->Wenn das Workflow-Modell für einen externen Speicher markiert ist, können Sie für alle Schritte des Forms-Workflows nur die Variablenoption zum Speichern oder Abrufen von Datendateien und Anlagen auswählen.
+>Wenn das Workflow-Modell für einen externen Speicher markiert ist, können Sie für alle Forms Workflow-Schritte nur die Variablenoption zum Speichern oder Abrufen von Datendateien und Anlagen auswählen.
 
 ## Schritt „Aufgabe zuweisen“ {#assign-task-step}
 
@@ -58,7 +58,7 @@ Sie können mit dieser Komponente auch das Verhalten der Aufgabe steuern. Erstel
 
 >[!NOTE]
 >
->Sie müssen über Gruppenzuweisungen für cm-agent-users und workflow-users verfügen, um im AEM-Posteingang auf die Agenten-Benutzeroberfläche für interaktive Kommunikation zugreifen zu können.
+>Sie müssen über Gruppenzuweisungen für cm-agent-users und workflow-users verfügen, um in AEM Posteingang auf die Benutzeroberfläche von Interactive Communications Agent zuzugreifen.
 
 * **Adaptives Formular oder Pfad zur interaktiven Kommunikation**: Geben Sie den Pfad des adaptiven Formulars oder der interaktiven Kommunikation an. Sie können das adaptive Formular oder die interaktive Kommunikation verwenden, das/die an den Workflow übermittelt wird und unter einem absoluten Pfad verfügbar ist, oder das adaptive Formular von einem Pfad abrufen, der in einer Variablen vom Datentyp „String“ gespeichert ist.
 * **PDF-Eingabedatei auswählen mit**: Geben Sie den Pfad eines nicht interaktiven PDF-Dokuments an. Das Feld ist verfügbar, wenn Sie im Feld „Typ“ ein nicht interaktives PDF-Dokument auswählen. Sie können die PDF-Eingabedatei unter Verwendung des Pfads auswählen, der relativ zur Payload ist, unter einem absoluten Pfad gespeichert wird oder eine Variable des Datentyps „Dokument“ verwendet. Beispiel: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Der Pfad existiert nicht im CRX-Repository. Ein Admin erstellt den Pfad, bevor dieser verwendet wird. Sie benötigen eine Option &quot;Datensatzdokument&quot;aktiviert oder auf Formularvorlagen basierende adaptive Formulare, um die Option PDF-Pfad verwenden zu können.
@@ -268,7 +268,7 @@ Der Schritt „Formulardatenmodelldienst aufrufen“ enthält die folgenden Feld
 * **Auswahl des Eingabe-JSON-Dokuments mit**: Die JSON-Datei, die Werte für alle Dienstargumente enthält. Der Pfad der JSON-Datei kann **relativ zur Payload** oder einem **absoluten Pfad** sein. Sie können das JSON-Eingabedokument auch mit einer Variablen vom Typ „JSON“ oder „Formulardatenmodell“ abrufen.
 
 * **JSON Dot Notation:** Lassen Sie das Feld leer, um alle Objekte der angegebenen JSON-Datei als Eingabe für Dienstargumente zu verwenden. Um ein bestimmtes JSON-Objekt aus der angegebenen JSON-Datei als Eingabe für Service-Argumente zu lesen, geben Sie die Dot Notation für das JSON-Objekt an, z. B. wenn Sie eine JSON ähnlich wie am Anfang des Abschnitts aufgeführt haben, geben Sie „insurance.customerDetails“ an, um alle Details eines Kunden als Eingabe für den Service anzugeben.
-* **Ausgabe des Service > Ausgabewerte zu Variablen oder Metadaten zuordnen und schreiben**: Wählen Sie diese Option, um die Ausgabewerte als Eigenschaften des Metadatenknotens der Workflow-Instanz im CRX-Repository zu speichern. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Service-Ausgabeattribut, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Ausgabe-Service zurückgegebene Telefonnummer der Eigenschaft „phone_number“ der Workflow-Metadaten zu. Auf ähnliche Weise können Sie die Ausgabe in einer Variablen des Datentyps „Long“ speichern. Wenn Sie eine Eigenschaft für die Option **[!UICONTROL Ausgabeattribut des Services, das abgebildet werden soll]** auswählen, werden für die Option **[!UICONTROL Speichern der Ausgabe in]** nur Variablen ausgefüllt, die Daten der ausgewählten Eigenschaft speichern können.
+* **Ausgabe des Service > Ausgabewerte zu Variablen oder Metadaten zuordnen und schreiben**: Wählen Sie diese Option, um die Ausgabewerte als Eigenschaften des Metadatenknotens der Workflow-Instanz im CRX-Repository zu speichern. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Service-Ausgabeattribut, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Ausgabe-Service zurückgegebene Telefonnummer der Eigenschaft „phone_number“ der Workflow-Metadaten zu. In ähnlicher Weise können Sie die Ausgabe in einer Variablen vom Datentyp „Long“ speichern. Wenn Sie eine Eigenschaft für die Option **[!UICONTROL Zuzuordnendes Service-Ausgangsattribut]** auswählen, werden für die Option **[!UICONTROL Speichern der Ausgabe in]** nur Variablen ausgefüllt, die Daten der ausgewählten Eigenschaft speichern können.
 
 * **Ausgabe des Services > Ausgabe in Variable oder JSON-Datei speichern**: Wählen Sie diese Option, um die Ausgabewerte in einer JSON-Datei unter einem absoluten Pfad, einem Pfad relativ zur Payload oder in einer Variablen zu speichern.
 * **Ausgabe-JSON-Dokument mithilfe folgender Optionen speichern**: Speichern der JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein. Sie können die JSON-Ausgabedatei auch mit einer Variablen vom Typ „JSON“ oder „Formulardatenmodell“ speichern.
@@ -277,7 +277,7 @@ Der Schritt „Formulardatenmodelldienst aufrufen“ enthält die folgenden Feld
 
 Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren von Dokumenten verwenden. Der Schritt „Dokument signieren“ hat folgende Eigenschaften:
 
-* **Name der Vereinbarung:** Geben Sie den Titel der Vereinbarung an. Der Name der Vereinbarung wird Teil des Betreffs und des Textkörpers der E-Mail, die an die Unterzeichner gesendet wird. Sie können den Namen entweder in einer Variablen des Datentyps „Zeichenfolge“ speichern oder **Literal** auswählen, um den Namen manuell hinzuzufügen.
+* **Name der Vereinbarung:** Geben Sie den Titel der Vereinbarung an. Der Name der Vereinbarung wird Teil des Betreffs und Haupttextes der an die Empfänger gesendeten E-Mail. Sie können den Namen entweder in einer Variablen des Datentyps „Zeichenfolge“ speichern oder **Literal** auswählen, um den Namen manuell hinzuzufügen.
 
 * **Gebietsschema:** Geben Sie die Sprache für die E-Mail- und Bestätigungsoptionen an. Sie können das Gebietsschema entweder in einer Variablen des Datentyps „Zeichenfolge“ speichern oder **Literal** auswählen, um das Gebietsschema aus der Liste der verfügbaren Optionen auszuwählen. Sie müssen den Gebietsschema-Code definieren, während Sie den Wert für das Gebietsschema in einer Variablen speichern. Geben Sie beispielsweise **en_US** für Englisch und **fr_FR** für Französisch an.
 
@@ -293,20 +293,32 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
 
 * **Tage bis Abgabetermin:** Ein Dokument wird als „fällig“ (Abgabetermin überschritten) gekennzeichnet, nachdem für die im Feld **Tage bis Abgabetermin** angegebene Anzahl von Tagen keine Aktivität für die Aufgabe ermittelt wurde. Die Anzahl der Tage wird gezählt, nachdem das Dokument einem Benutzer zur Unterzeichnung zugewiesen wurde.
 * **Häufigkeit der E-Mail-Erinnerung:** Sie können eine Erinnerungs-E-Mail im täglichen oder wöchentlichen Intervall senden. Die Woche wird ab dem Tag gezählt, an dem das Dokument einem Benutzer zum Signieren zugewiesen wurde.
-* **Signaturprozess:** Sie können ein Dokument in einer sequenziellen oder parallelen Reihenfolge signieren. Bei sequenzieller Reihenfolge erhält jeweils nur ein Unterzeichner das Formular zur Unterzeichnung. Nachdem die erste Unterzeichnungsperson das Signieren des Dokuments abgeschlossen hat, wird das Dokument an die zweite gesendet usw. Bei paralleler Reihenfolge können mehrere Unterzeichner ein Formular gleichzeitig signieren.
+* **Signaturprozess:** Sie können ein Dokument in einer sequenziellen oder parallelen Reihenfolge signieren. In sequenzieller Reihenfolge erhält ein Empfänger das Dokument zum Signieren. Nachdem der erste Empfänger das Signieren des Dokuments abgeschlossen hat, wird das Dokument an den zweiten Empfänger gesendet usw. Parallel dazu können mehrere Empfänger ein Dokument gleichzeitig signieren.
 * **Umleitungs-URL:** Geben Sie eine Umleitungs-URL an. Nachdem das Dokument signiert wurde, können Sie den Verantwortlichen an eine URL umleiten. Normalerweise enthält diese URL eine Dankesnachricht oder weitere Anweisungen.
 * **Workflow-Phase:** Ein Workflow kann mehrere Phasen enthalten. Diese werden im AEM-Posteingang angezeigt. Sie können diese Schritte in den Eigenschaften des Modells definieren (Sidekick > Seite > Seiteneigenschaften > Schritte).
-* **Unterzeichner wählen:** Geben Sie die Methode zum Auswählen von Unterzeichnern für das Dokument an. Sie können den Workflow einem Benutzer oder einer Gruppe dynamisch zuweisen oder manuell Details zu einem Unterzeichner hinzufügen.
-* **Skript oder Dienst zur Auswahl von Unterzeichnern:** Die Option ist nur verfügbar, wenn im Feld Unterzeichner auswählen die Option Dynamisch ausgewählt ist. Sie können ein ECMAScript oder einen Service angeben, um Unterzeichner und Verifizierungsoptionen für ein Dokument auszuwählen.
-* **Unterzeichnerdetails:** Die Option ist nur verfügbar, wenn die Option „Manuell“ im Feld „Unterzeichner auswählen“ ausgewählt ist. Geben Sie die E-Mail-Adresse an und wählen Sie einen optionalen Verifizierungsmechanismus aus. Bevor Sie einen Zwei-Schritt-Bestätigungsmechanismus auswählen, vergewissern Sie sich, dass die entsprechende Verifizierungsoption für das konfigurierte Adobe Sign-Konto aktiviert ist. Sie können eine Variable vom Datentyp „String“ verwenden, um Werte für die Felder **[!UICONTROL E-Mail]**, **[!UICONTROL Länder-Code]** und **[!UICONTROL Telefonnummer]** zu definieren. Die Felder **[!UICONTROL Länder-Code]** und **[!UICONTROL Telefonnummer]** werden nur angezeigt, wenn Sie **[!UICONTROL Telefonüberprüfung]** aus der Dropdown-Liste **[!UICONTROL Zweistufenüberprüfung]** auswählen.
+* **Empfänger auswählen:** Geben Sie die Methode zur Auswahl des Empfängers für das Dokument an. Sie können den Workflow dynamisch einem Benutzer oder einer Gruppe zuweisen oder Details eines Empfängers manuell hinzufügen. Wenn Sie im Dropdown-Menü Manuell auswählen, fügen Sie Empfängerdetails wie E-Mail, Rolle und Authentifizierungsmethode hinzu.
+
+  >[!NOTE]
+  >
+  >* Im Abschnitt Rolle können Sie die Empfängerrolle als Unterzeichner, Genehmiger, Akzeptor, zertifizierter Empfänger, Formularfilter und Delegator festlegen.
+  >* Wenn Sie in der Option Rolle die Option Delegator auswählen, kann der Delegator die Unterschriftsaufgabe anderen Empfängern zuweisen.
+  >* Wenn Sie eine Authentifizierungsmethode für [!DNL Adobe Sign], wählen Sie je nach Konfiguration eine Authentifizierungsmethode wie Phone-basierte Authentifizierung, Social Identity-basierte Authentifizierung, Knowledge-based Authentication, Government Identity-basierte Authentifizierung.
+* **Skript oder Dienst zur Auswahl von Empfängern:** Die Option ist nur verfügbar, wenn Sie im Feld Empfänger auswählen die Option Dynamisch auswählen auswählen auswählen. Sie können ein ECMAScript oder einen Dienst angeben, um Empfänger und Überprüfungsoptionen für ein Dokument auszuwählen.
+* **Empfängerdetails:** Die Option ist nur verfügbar, wenn im Feld Empfänger auswählen die Option Manuell ausgewählt wurde. Geben Sie die E-Mail-Adresse an und wählen Sie einen optionalen Verifizierungsmechanismus aus. Bevor Sie einen Zwei-Schritt-Bestätigungsmechanismus auswählen, vergewissern Sie sich, dass die entsprechende Verifizierungsoption für das konfigurierte Adobe Sign-Konto aktiviert ist. Sie können eine Variable vom Datentyp „String“ verwenden, um Werte für die Felder **[!UICONTROL E-Mail]**, **[!UICONTROL Länder-Code]** und **[!UICONTROL Telefonnummer]** zu definieren. Die Felder **[!UICONTROL Länder-Code]** und **[!UICONTROL Telefonnummer]** werden nur angezeigt, wenn Sie **[!UICONTROL Telefonüberprüfung]** aus der Dropdown-Liste **[!UICONTROL Zweistufenüberprüfung]** auswählen.
 * **Statusvariable**: Ein Dokument, für das Adobe Sign aktiviert ist, speichert den Signierstatus des Dokuments in einer Variablen vom Datentyp „String“. Geben Sie den Namen der Statusvariable (adobeSignStatus) an. Eine Statusvariable einer Instanz ist in CRXDE unter /etc/workflow/instances/&lt;Server>/&lt;Datum/Uhrzeit>/&lt;Instanz des Workflow-Modells>/workItems/&lt;Knoten>/metaData verfügbar und enthält den Status einer Variablen.
-* **Signiertes Dokument mit folgenden Optionen speichern**: Geben Sie den Speicherort für signierte Dokumente an. Sie können den Payload-Ordner überschreiben, das Datensatzdokument an einem Speicherort im Payload-Verzeichnis ablegen oder es in einer Variablen des Datentyps „Document“ speichern.
+* **[!UICONTROL Signiertes Dokument]**: Sie können den Status des signierten Dokuments in Variable speichern. Um Ihrem signierten Dokument ein Audit-Protokoll für elektronische Signaturen hinzuzufügen, um die Sicherheit und Legalität zu erhöhen, können Sie den Audit-Bericht einbeziehen. Sie können das signierte Dokument mit der Variablen oder dem Ordner Payload speichern.
+  >[!NOTE]
+  >
+  > Der Audit-Bericht wird an die letzte Seite des signierten Dokuments angehängt.
+<!--
+* **Save signed document using below options:** Specify the location to keep signed documents. You can choose to overwrite the payload file, place the signed document at a location within the payload directory, or store the signed document in a variable of Document type.
+-->
 
 ## Document Services-Schritte {#document-services-steps}
 
 AEM Document Services sind eine Reihe von Diensten zum Erstellen, Zusammenstellen und Sichern von PDF-Dokumenten. AEM Forms stellt für jeden Dokumenten-Service einen separaten AEM-Workflow-Schritt bereit.
 
-Ähnlich wie bei anderen AEM Forms-Workflow-Schritten wie „Aufgabe zuweisen“, „E-Mail senden“ und „Dokument unterschreiben“ können Sie Variablen in allen Schritten von AEM Document Services verwenden. Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM-Workflows](../../forms/using/variable-in-aem-workflows.md).
+Ähnlich wie bei anderen AEM Forms-Workflow-Schritten wie &quot;Aufgabe zuweisen&quot;, &quot;E-Mail senden&quot;und &quot;Dokument unterschreiben&quot;können Sie Variablen in allen Schritten AEM Document Services verwenden. Informationen zum Erstellen und Verwalten von Variablen finden Sie unter [Variablen in AEM-Workflows](../../forms/using/variable-in-aem-workflows.md).
 
 ### Schritt &quot;Dokumentzeitstempel anwenden&quot; {#apply-document-time-stamp-step}
 
@@ -398,7 +410,7 @@ Senden Sie ein Dokument direkt an einen Drucker. Es unterstützt die folgenden D
 
 ### Generieren des Schritts für die gedruckte Ausgabe {#generatePrintedOutput}
 
-Dieser Schritt generiert eine PCL-, PostScript-, ZPL-, IPL-, TPCL- oder DPL-Ausgabe aus einem Formularentwurf und einer Datendatei. Die Datendatei wird mit dem Formularentwurf zusammengeführt und für den Druck formatiert. Die von diesem Schritt generierte Ausgabe kann direkt an einen Drucker gesendet oder als Datei gespeichert werden. Es wird empfohlen, diesen Schritt zu verwenden, wenn Sie Formularentwürfe oder Daten aus einem Programm verwenden möchten. Wenn sich Ihre Formularentwürfe oder Daten im Netzwerk, einem lokalen Dateisystem oder einem HTTP-Speicherort befinden, verwenden Sie den Vorgang generatePrintedOutput.
+Dieser Schritt generiert eine PCL-, PostScript-, ZPL-, IPL-, TPCL- oder DPL-Ausgabe aus einem Formularentwurf und einer Datendatei. Die Datendatei wird mit dem Formularentwurf zusammengeführt und für den Druck formatiert. Die von diesem Schritt generierte Ausgabe kann direkt an einen Drucker gesendet oder als Datei gespeichert werden. Es wird empfohlen, diesen Schritt zu verwenden, wenn Sie Formularentwürfe oder Daten aus einem Programm verwenden möchten. Wenn sich Ihre Formularentwürfe oder Formularentwürfe im Netzwerk, im lokalen Dateisystem oder im HTTP-Speicherort befinden, verwenden Sie den generatePrintedOutput-Vorgang.
 
 Beispielsweise erfordert Ihre Anwendung, dass Sie einen Formularentwurf mit einer Datendatei zusammenführen. Die Daten enthalten Hunderte von Datensätzen. Darüber hinaus soll die Ausgabe an einen Drucker gesendet werden, der ZPL unterstützt. Der Formularentwurf und Ihre Eingabedaten befinden sich in einer Anwendung. Verwenden Sie den Vorgang „generatePrintedOutput“, um jeden Datensatz mit einem Formularentwurf zusammenzuführen und die Ausgabe an einen Drucker zu senden, der ZPL unterstützt.
 
@@ -414,7 +426,7 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
    * **[!UICONTROL Benutzerdefinierte PCL]**: Verwenden Sie diese Option, um eine benutzerdefinierte XDC-Datei für PCL anzugeben.
    * **[!UICONTROL Benutzerdefiniertes PostScript]**: Verwenden Sie die Option, um eine benutzerdefinierte XDC-Datei für PostScript anzugeben.
-   * **[!UICONTROL Benutzerdefiniertes ZPL]**: Verwenden Sie die Option, um eine benutzerdefinierte XDC-Dateidatei für ZPL anzugeben.
+   * **[!UICONTROL Custom ZPL]**: Verwenden Sie die Option, um eine benutzerdefinierte XDC-Datei für ZPL anzugeben.
    * **[!UICONTROL Generische Farb-PCL (5c)]**: Verwenden Sie eine generische Farb-PCL (5c).
    * **[!UICONTROL Generisches PostScript Level3]**: Verwenden Sie generisches PostScript der Ebene 3.
    * **[!UICONTROL ZPL 300 DPI]**: Verwenden Sie ZPL mit 300 DPI. Die Datei zpl300.xdc wird verwendet.
@@ -432,7 +444,7 @@ Der Schritt „Gedruckte Ausgabe generieren“ hat die folgenden Eigenschaften:
 
 **Ausgabeeigenschaften**
 
-* **[!UICONTROL Ausgabedokument speichern mit]**: Geben Sie den Speicherort für die Ausgabedatei an. Sie können die Ausgabedatei an einem Speicherort speichern, der relativ zur Payload ist, in einer Variablen oder einen absoluten Speicherort für die Ausgabedatei angeben. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet.
+* **[!UICONTROL Ausgabedokument speichern mit]**: Geben Sie den Speicherort für die Ausgabedatei an. Sie können die Ausgabedatei an einem Speicherort speichern, der relativ zur Payload ist, in einer Variablen, oder einen absoluten Speicherort für die Ausgabedatei angeben. Wenn der Pfad nicht im CRX-Repository vorhanden ist, kann ein Administrator den Pfad erstellen, bevor er ihn verwendet.
 
 **Erweiterte Eigenschaften**
 
@@ -451,7 +463,7 @@ Geben Sie den Gebietsschema-Code in das Feld „Literal“ ein oder wählen Sie 
 
 * **[!UICONTROL Kopien]**: Ein ganzzahliger Wert, der die Anzahl der Kopien angibt, die für die Ausgabe generiert werden. Der Standardwert ist 1.
 
-* **[!UICONTROL Duplexdruck]**: Ein Paginierungswert, der angibt, ob zweiseitiger oder einseitiger Druck verwendet werden soll. Drucker, die PostScript und PCL unterstützen, verwenden diesen Wert. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte aus:
+* **[!UICONTROL Duplexdruck]**: Ein Paginierungswert, der angibt, ob zweiseitiger oder einseitiger Druck verwendet werden soll. Drucker, die PostScript und PCL unterstützen, verwenden diesen Wert. Wenn Sie einen Literalwert angeben, wählen Sie einen der folgenden Werte:
    * **[!UICONTROL Duplex, lange Kante]**: Verwenden Sie den zweiseitiger Druck und die Paginierung erfolgt an langen Kanten.
    * **[!UICONTROL Duplex, kurze Kante]**: Verwenden Sie den zweiseitigen Druck mit Paginierung an kurzen Kanten.
    * **[!UICONTROL Simplex]**: Verwenden Sie den einseitigen Druck.
