@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: d6e5684ee89d19ab0fc6d15038c22a4a5b816563
 workflow-type: tm+mt
-source-wordcount: '1776'
+source-wordcount: '1782'
 ht-degree: 79%
 
 ---
@@ -47,6 +47,8 @@ Beispiel:
 >[!NOTE]
 >
 >Links verweisen immer auf die Publishing-Instanz. Sie sind für die Nutzung durch Dritte bestimmt, sodass der Link immer von der Publishing-Instanz und nicht vom Authoring aufgerufen wird.
+>
+>Weitere Informationen finden Sie unter [Externalisieren von URLs](/help/sites-developing/externalizer.md).
 
 ![xf-14](assets/xf-14.png)
 
