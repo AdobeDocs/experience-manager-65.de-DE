@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: ee1a0866aafd56fa53f5d3b936beab8f500d335c
+source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
 workflow-type: tm+mt
-source-wordcount: '11363'
+source-wordcount: '11313'
 ht-degree: 69%
 
 ---
@@ -702,11 +702,7 @@ In dem Szenario, in dem Sie Dynamic Media für die sofortige Veröffentlichung k
 
 #### Hinzufügen mehrerer Beschriftungen zu einem Video, das über eine vorhandene URL mit dem Beschriftungs-Modifikator verfügt
 
-Dynamic Media unterstützt das Hinzufügen einer einzelnen Beschriftung mit einem Video über einen URL-Modifikator (siehe [caption](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=en)).
-
-<!-- IS THE CORRECT LINK THE ONE ABOVE OR IS IT THE LINK BELOW???? -->
-
-Weitere Informationen zur Verwendung der JSON-Funktion in einer URL erhalten Sie unter [Statische Inhalte (keine Bilder) bereitstellen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html?lang=de#image-serving-api) in der *API-Hilfe für die Bereitstellung und das Rendern von Bildern in Dynamic Media*.
+Dynamic Media unterstützt das Hinzufügen einer einzelnen Beschriftung mit Video über einen URL-Modifikator. Siehe [Hinzufügen von Untertiteln zu Videos](#adding-captions-to-video).
 
 Mehrere Beschriftungsänderungen haben Vorrang vor einer Beschriftung, die über einen URL-Modifikator für veröffentlichte Videos hinzugefügt wird.
 
@@ -731,7 +727,7 @@ Sie können den Lebenszyklusstatus jeder Untertitel- oder Audio-Track-Datei fest
 | Untertitel oder Audio-Track-Status | Beschreibung |
 | --- | --- |
 | Verarbeitung | Wenn ein neuer Untertitel oder eine neue Audio-Track-Datei hinzugefügt und gespeichert wird, erhält sie den Status &quot;Verarbeitung&quot;. Dynamic Media verarbeitet die Datei, indem das Streaming-Manifest an das Hauptvideo angehängt wird. |
-| Verarbeitet | Nach Abschluss der Verarbeitung wird der Untertitel oder die Audiotrack-Datei in einem &quot;verarbeiteten&quot;Status angezeigt. Sie können eine Vorschau der Untertitel- und Audiotrack-Dateien anzeigen, die als &quot;Verarbeitet&quot;angezeigt werden. *before* Sie veröffentlichen das Video live. |
+| Verarbeitet | Nach Abschluss der Verarbeitung wird der Untertitel oder die Audiospur-Datei bzw. der mit dem primären Video verknüpfte ursprüngliche Audio-Track in einem &quot;verarbeiteten&quot;Status angezeigt. Sie können eine Vorschau der Untertitel- und Audiotrack-Dateien anzeigen, die als &quot;Verarbeitet&quot;angezeigt werden. *before* Sie veröffentlichen das Video live. |
 | Veröffentlicht | Der Status &quot;Veröffentlicht&quot;stellt einen ähnlichen Status wie &quot;Veröffentlicht&quot;für ein primäres Video dar. Assets werden veröffentlicht, wenn das Hauptvideo veröffentlicht wird, und sind in der öffentlichen Dynamic Media-URL verfügbar. |
 | Fehlgeschlagen | Der Status &quot;Fehlgeschlagen&quot;bedeutet, dass die Verarbeitung eines Untertitels oder einer Audiotrack-Datei nicht abgeschlossen wurde. Löschen Sie den Untertitel oder die Audio-Track-Datei und laden Sie sie erneut hoch. |
 | Unveröffentlicht | Wenn die Veröffentlichung eines veröffentlichten primären Videos explizit rückgängig gemacht wird, werden auch alle Untertitel- oder Audiotrack-Dateien, die Sie zum Video hinzugefügt haben, depubliziert. |
@@ -857,7 +853,7 @@ Der ursprüngliche Audio-Track, der aus einer Primärdatei extrahiert wurde, kan
 
 >[!IMPORTANT]
 >
-Dieses Thema wird nicht mehr aktiv gepflegt. Sie wird wie bisher für Benutzer von Dynamic Media bereitgestellt. Adobe empfiehlt, dass Sie [Multiuntertitel- und Multiaudio-Track-Funktion aktivieren](#enable-dash) auf Ihrem Dynamic Media-Konto. Auf diese Weise können Sie die neueste Dynamic Media-Backend-Architektur und einen vereinfachten Workflow zum Hinzufügen von Untertiteln, Untertiteln und Audiospuren zu Ihren Videos nutzen.
+Adobe empfiehlt, dass Sie [Multiuntertitel- und Multiaudio-Track-Funktion aktivieren](#enable-dash) auf Ihrem Dynamic Media-Konto. Auf diese Weise können Sie die neueste Dynamic Media-Backend-Architektur und einen vereinfachten Workflow zum Hinzufügen von Untertiteln, Untertiteln und Audiospuren zu Ihren Videos nutzen.
 
 Sorgen Sie dafür, dass Ihre Videos Märkte auf der ganzen Welt erreichen, indem Sie Untertitel zu einzelnen Videos oder adaptiven Videosets hinzufügen. Wenn Sie verdeckte Untertitel hinzufügen, müssen Sie die Audiodaten nicht synchronisieren oder Muttersprachler bzw. Muttersprachlerinnen damit beauftragen, das Audio in einer anderen Sprache neu aufzuzeichnen. Das Video wird in der Sprache, in der es aufgenommen wurde, wiedergegeben. Fremdsprachliche Untertitel werden angezeigt, sodass auch Nutzer anderer Sprachen den Audioteil verstehen können.
 
