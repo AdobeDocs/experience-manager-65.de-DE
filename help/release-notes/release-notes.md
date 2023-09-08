@@ -4,8 +4,8 @@ description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsan
 mini-toc-levels: 4
 source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '4460'
+ht-degree: 33%
 
 ---
 
