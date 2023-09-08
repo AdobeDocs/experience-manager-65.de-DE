@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Headless-Inhaltsarchitekten-Tour
 description: Eine Einführung in die leistungsstarken und flexiblen Headless-Funktionen von Adobe Experience Manager und die Modellierung von Inhalten für Ihr Projekt.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '704'
-ht-degree: 100%
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 98%
 
 ---
 
@@ -81,3 +81,6 @@ Jetzt, da Sie die Konzepte und Terminologie gelernt haben, lautet der nächste S
 * AEM Headless-Entwickler-Tour
    * [Grundlegendes zur CMS-Headless-Entwicklung](/help/journey-headless/developer/learn-about.md)
    * [Hier erfahren Sie, wie Sie Ihre Inhalte modellieren](/help/journey-headless/developer/model-your-content.md)
+* [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
+source-git-commit: 0738f53564cb2e2607d739d97bdd1bb2fc64ac6e
 workflow-type: tm+mt
-source-wordcount: '11313'
+source-wordcount: '11310'
 ht-degree: 69%
 
 ---
@@ -605,7 +605,6 @@ Zu den Nutzungsszenarios für das Hinzufügen von Multiuntertiteln und Multi-Aud
 | **Untertitel** | Unterstützung mehrerer Sprachen |
 |  | Beschreibender Text für Barrierefreiheit |
 | **Audiospuren** | Unterstützung mehrerer Sprachen |
-|  | Stereo versus Multichannel (Surround Sound) |
 |  | Kommentarspuren |
 |  | Beschreibendes Audio |
 
@@ -698,7 +697,7 @@ In dem Szenario, in dem Sie Dynamic Media für die sofortige Veröffentlichung k
 
 >[!CAUTION]
 >
->Wenn Sie Untertiteldateien oder Audiodateien in ein bereits veröffentlichtes Video hochladen, werden diese Dateien gelöscht, wenn Sie [*reprocess*](/help/assets/processing-profiles.md#reprocessing-assets) das Video. Nur das ursprüngliche Audio des Videos bleibt intakt. In solchen Fällen müssen Sie die Untertiteldateien und Audio-Track-Dateien erneut in das Video hochladen.
+>Wenn Sie Untertiteldateien oder Audiodateien in ein Video hochladen, das entweder veröffentlicht ist oder dessen Veröffentlichung rückgängig gemacht wird, werden die Dateien gelöscht, wenn Sie [*reprocess*](/help/assets/processing-profiles.md#reprocessing-assets) das Video. Nur das ursprüngliche Audio des Videos bleibt intakt. In solchen Fällen müssen Sie die Untertiteldateien und Audio-Track-Dateien erneut in das Video hochladen.
 
 #### Hinzufügen mehrerer Beschriftungen zu einem Video, das über eine vorhandene URL mit dem Beschriftungs-Modifikator verfügt
 

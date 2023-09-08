@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über Headless-Inhalte und wie Sie sie in AEM übersetzen können.
 description: Lernen Sie die Headless-Konzepte, ihre Zuordnung zu AEM und die Theorie der Übersetzung in AEM kennen.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '727'
-ht-degree: 100%
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+workflow-type: tm+mt
+source-wordcount: '756'
+ht-degree: 98%
 
 ---
 
@@ -78,3 +78,6 @@ Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-T
 Es wird zwar empfohlen, mit dem nächsten Teil der Headless-Übersetzungs-Tour fortzufahren, indem Sie das Dokument [Erste Schritte mit der AEM Headless-Übersetzung](getting-started.md) lesen. Im Folgenden finden Sie jedoch einige zusätzliche, optionale Ressourcen, die einige der in diesem Dokument erwähnten Konzepte vertiefen, die aber nicht erforderlich sind, um mit der Headless-Tour fortzufahren.
 
 * [MSM und Übersetzung](/help/sites-administering/msm-and-translation.md) – Die Details des Multi-Site-Managers von AEM und wie er mit seinen Übersetzungs-Tools zusammenarbeitet.
+* Ein [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
+* Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

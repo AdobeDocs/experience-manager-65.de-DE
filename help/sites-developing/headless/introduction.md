@@ -2,10 +2,10 @@
 title: Headless-Entwicklung für AEM 6.5 Sites
 description: Erfahren Sie, wie die leistungsstarken Headless-Funktionen von AEM 6.5 wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API zusammenarbeiten, um Ihnen die zentrale Verwaltung Ihrer Erlebnisse und deren kanalübergreifende Bereitstellung zu ermöglichen.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 97%
+source-wordcount: '520'
+ht-degree: 93%
 
 ---
 
@@ -55,3 +55,4 @@ Es stehen eine Reihe von Ressourcen zur Verfügung, mit denen Sie mit AEM Headle
 | [Headless-Entwickler-Tour](/help/journey-headless/developer/overview.md) | **Benutzer, die noch nicht mit AEM- und Headless**-Technologien vertraut sind, erhalten hier eine umfassende Einführung in AEM und seine Headless-Funktionen, von der Theorie des Headless-Systems bis zum Go-Live Ihres ersten Headless-Projekts. | -Anleitung | Entwickler, die noch **nicht mit AEM und Headless vertraut** sind | 1 Stunde |
 | [Erste Schritte mit Headless](/help/sites-developing/headless/getting-started/introduction.md) | **Erfahrene AEM-Anwender**, die eine kurze Zusammenfassung der wichtigsten AEM-Headless-Funktionen benötigen, sollten sich diesen Schnellstart-Überblick ansehen. | Schnellstart | Entwickler, Administratoren **mit AEM-Erfahrung** | 20 Minuten |
 | [Praktisches Tutorial für die ersten Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html?lang=de) | **Wenn Sie einen praxisnahen Ansatz bevorzugen und mit AEM vertraut sind**: dieses Tutorial steigt direkt in die Erstellung eines einfachen Headless-Projekts ein. | Tutorial | Entwickler | 2 Stunden |
+| [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de) | Diese Sammlung von Ressourcen wird für beide **new** und **erfahrenen** Entwickler. | Sammlung von Ressourcen | Entwickler    | |

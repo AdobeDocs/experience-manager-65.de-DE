@@ -7,9 +7,9 @@ keywords: Fügen Sie einen benutzerdefinierten Fehler-Handler hinzu, fügen Sie 
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
+source-git-commit: f8e0ac45d98d6485ccb60e754657caf9d190c3ea
 workflow-type: tm+mt
-source-wordcount: '2284'
+source-wordcount: '2281'
 ht-degree: 6%
 
 ---
@@ -164,7 +164,7 @@ Einige der Optionen zur Anzeige der Fehlerantworten sind:
 
 Vor der Verwendung des Fehler-Handlers in einem adaptiven Forms:
 
-* [Aktivieren der adaptiven Forms-Kernkomponenten für Ihre AEM Cloud Service-Umgebung](enable-adaptive-forms-core-components.md).
+* [Aktivieren der Kernkomponenten adaptiver Formulare für Ihre Umgebung](enable-adaptive-forms-core-components.md).
 * Grundlegendes Wissen zu [Erstellen einer benutzerdefinierten Funktion](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Installieren Sie die neueste Version von [Apache Maven](https://maven.apache.org/download.cgi).
 

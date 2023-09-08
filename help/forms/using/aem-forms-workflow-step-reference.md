@@ -5,10 +5,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 3c7b46c20b2f34bd83941649cbff2ac16c3aade2
+source-git-commit: 5675d69a5bdf296782339f02162db8068daf29e3
 workflow-type: tm+mt
 source-wordcount: '7690'
-ht-degree: 77%
+ht-degree: 76%
 
 ---
 
@@ -268,7 +268,7 @@ Der Schritt „Formulardatenmodelldienst aufrufen“ enthält die folgenden Feld
 * **Auswahl des Eingabe-JSON-Dokuments mit**: Die JSON-Datei, die Werte für alle Dienstargumente enthält. Der Pfad der JSON-Datei kann **relativ zur Payload** oder einem **absoluten Pfad** sein. Sie können das JSON-Eingabedokument auch mit einer Variablen vom Typ „JSON“ oder „Formulardatenmodell“ abrufen.
 
 * **JSON Dot Notation:** Lassen Sie das Feld leer, um alle Objekte der angegebenen JSON-Datei als Eingabe für Dienstargumente zu verwenden. Um ein bestimmtes JSON-Objekt aus der angegebenen JSON-Datei als Eingabe für Service-Argumente zu lesen, geben Sie die Dot Notation für das JSON-Objekt an, z. B. wenn Sie eine JSON ähnlich wie am Anfang des Abschnitts aufgeführt haben, geben Sie „insurance.customerDetails“ an, um alle Details eines Kunden als Eingabe für den Service anzugeben.
-* **Ausgabe des Service > Ausgabewerte zu Variablen oder Metadaten zuordnen und schreiben**: Wählen Sie diese Option, um die Ausgabewerte als Eigenschaften des Metadatenknotens der Workflow-Instanz im CRX-Repository zu speichern. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Service-Ausgabeattribut, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Ausgabe-Service zurückgegebene Telefonnummer der Eigenschaft „phone_number“ der Workflow-Metadaten zu. In ähnlicher Weise können Sie die Ausgabe in einer Variablen vom Datentyp „Long“ speichern. Wenn Sie eine Eigenschaft für die Option **[!UICONTROL Zuzuordnendes Service-Ausgangsattribut]** auswählen, werden für die Option **[!UICONTROL Speichern der Ausgabe in]** nur Variablen ausgefüllt, die Daten der ausgewählten Eigenschaft speichern können.
+* **Ausgabe des Service > Ausgabewerte zu Variablen oder Metadaten zuordnen und schreiben**: Wählen Sie diese Option, um die Ausgabewerte als Eigenschaften des Metadatenknotens der Workflow-Instanz im CRX-Repository zu speichern. Geben Sie den Namen der Metadateneigenschaft an und wählen Sie das entsprechende Service-Ausgabeattribut, das der Metadateneigenschaft zugeordnet werden soll, ordnen Sie z. B. die vom Ausgabe-Service zurückgegebene Telefonnummer der Eigenschaft „phone_number“ der Workflow-Metadaten zu. In ähnlicher Weise können Sie die Ausgabe in einer Variablen vom Datentyp „Long“ speichern. Wenn Sie eine Eigenschaft für **[!UICONTROL Dienstausgabeattribut, das zugeordnet werden soll]** -Option, werden nur Variablen, die Daten der ausgewählten Eigenschaft speichern können, für die **[!UICONTROL Speichern Sie die Ausgabe in]** -Option.
 
 * **Ausgabe des Services > Ausgabe in Variable oder JSON-Datei speichern**: Wählen Sie diese Option, um die Ausgabewerte in einer JSON-Datei unter einem absoluten Pfad, einem Pfad relativ zur Payload oder in einer Variablen zu speichern.
 * **Ausgabe-JSON-Dokument mithilfe folgender Optionen speichern**: Speichern der JSON-Ausgabedatei. Der Pfad der JSON-Ausgabedatei kann relativ zur Payload oder einem absoluten Pfad sein. Sie können die JSON-Ausgabedatei auch mit einer Variablen vom Typ „JSON“ oder „Formulardatenmodell“ speichern.
@@ -303,6 +303,7 @@ Mit dem Schritt „Dokument signieren“ können Sie Adobe Sign zum Signieren vo
   >* Im Abschnitt Rolle können Sie die Empfängerrolle als Unterzeichner, Genehmiger, Akzeptor, zertifizierter Empfänger, Formularfilter und Delegator festlegen.
   >* Wenn Sie in der Option Rolle die Option Delegator auswählen, kann der Delegator die Unterschriftsaufgabe anderen Empfängern zuweisen.
   >* Wenn Sie eine Authentifizierungsmethode für [!DNL Adobe Sign], wählen Sie je nach Konfiguration eine Authentifizierungsmethode wie Phone-basierte Authentifizierung, Social Identity-basierte Authentifizierung, Knowledge-based Authentication, Government Identity-basierte Authentifizierung.
+
 
 * **Skript oder Dienst zur Auswahl von Empfängern:** Die Option ist nur verfügbar, wenn Sie im Feld Empfänger auswählen die Option Dynamisch auswählen auswählen auswählen. Sie können ein ECMAScript oder einen Dienst angeben, um Empfänger und Überprüfungsoptionen für ein Dokument auszuwählen.
 * **Empfängerdetails:** Die Option ist nur verfügbar, wenn im Feld Empfänger auswählen die Option Manuell ausgewählt wurde. Geben Sie die E-Mail-Adresse an und wählen Sie einen optionalen Verifizierungsmechanismus aus. Bevor Sie einen Zwei-Schritt-Bestätigungsmechanismus auswählen, vergewissern Sie sich, dass die entsprechende Verifizierungsoption für das konfigurierte Adobe Sign-Konto aktiviert ist. Sie können eine Variable vom Datentyp „String“ verwenden, um Werte für die Felder **[!UICONTROL E-Mail]**, **[!UICONTROL Länder-Code]** und **[!UICONTROL Telefonnummer]** zu definieren. Die Felder **[!UICONTROL Länder-Code]** und **[!UICONTROL Telefonnummer]** werden nur angezeigt, wenn Sie **[!UICONTROL Telefonüberprüfung]** aus der Dropdown-Liste **[!UICONTROL Zweistufenüberprüfung]** auswählen.

@@ -1,17 +1,17 @@
 ---
 title: Live-Schalten Ihres Headless-Programms
-description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie eine Headless-Anwendung live schalten.
+description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie eine Headless-Anwendung live bereitstellen.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
-workflow-type: ht
-source-wordcount: '1846'
-ht-degree: 100%
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+workflow-type: tm+mt
+source-wordcount: '1873'
+ht-degree: 99%
 
 ---
 
 # Live-Schalten Ihres Headless-Programms {#go-live}
 
-In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie eine Headless-Anwendung live schalten.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie eine Headless-Anwendung live bereitstellen.
 
 ## Die bisherige Entwicklung {#story-so-far}
 
@@ -225,3 +225,7 @@ Wenn Sie diese Flexibilität für Ihr Projekt benötigen, fahren Sie mit dem opt
    * [Steuern eines CDN-Cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de#controlling-a-cdn-cache)
 
    * Konfigurieren des [CDN Rewriters](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html?lang=de) (*suchen Sie nach CDN Rewriter*)
+
+* [Einführung in AEM als Headless-CMS](/help/sites-developing/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
+* [Headless-Tutorials für AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html?lang=de)

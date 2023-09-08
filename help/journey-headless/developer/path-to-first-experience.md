@@ -2,10 +2,10 @@
 title: Gestalten Ihres ersten Erlebnisses mit AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre ersten Headless-Erlebnisse in AEM implementieren, einschließlich Überlegungen zur Planung, und lernen Best Practices kennen, die für möglichst reibungslose Abläufe sorgen.
 exl-id: 64a87b6b-67ff-4d88-9dfb-c3e5de65bbe6
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
-workflow-type: ht
-source-wordcount: '1982'
-ht-degree: 100%
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+workflow-type: tm+mt
+source-wordcount: '1992'
+ht-degree: 99%
 
 ---
 
@@ -151,3 +151,4 @@ Sie können wie empfohlen mit dem nächsten Teil der AEM Headless-Entwickler-Tou
 * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) – technische Dokumentation zu Inhaltsfragmentmodellen
 * [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) – technische Dokumentation zu Inhaltsfragmenten
 * [AEM-GraphQL-API zur Verwendung mit Inhaltsfragmenten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) – technische Dokumentation zur GraphQL-API
+* Die [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html?lang=de)
