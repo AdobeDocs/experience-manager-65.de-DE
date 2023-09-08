@@ -2,10 +2,10 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
-source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
+source-git-commit: e330d69b7644e8f99498d0ed60afab009c649b40
 workflow-type: tm+mt
-source-wordcount: '4460'
-ht-degree: 33%
+source-wordcount: '4552'
+ht-degree: 32%
 
 ---
 
@@ -450,6 +450,8 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 #### Installation
 
 * Auf der Plattform JBoss® 7.1.4 schlägt die Bereitstellung fehl, wenn Benutzende Experience Manager 6.5.16.0 oder ein höheres Service Pack installieren. `adobe-livecycle-jboss.ear` (CQ-4351522, CQDOC-20159)
+* Nach der Installation des vollständigen Installationsprogramms für AEM Service Pack 6.5.18.0 schlägt die EAR-Bereitstellung auf JEE mit der JBoss-Turnkey-Methode fehl (CQDOC-20803).
+Suchen Sie zum Beheben des Problems die `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` Datei und Aktualisierung `Adobe_Adobe_JAVA_HOME` nach `Adobe_JAVA_HOME` für alle Vorkommnisse vor der Ausführung des Konfigurations-Managers.
 
 #### Adaptive Formulare
 
@@ -459,7 +461,12 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 
 #### Interaktive Kommunikation
 
-* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, interaktive Kommunikationsbriefe zu bearbeiten. (FORMS-10578)
+* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, interaktive Kommunikationsbriefe zu bearbeiten. (FORMS-10578) Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
+
+   1. Herunterladen [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) von SD-Link aus.
+   1. Extrahieren Sie die Hotfix-Archivdatei, um ein Experience Manager-Paket (.zip) und Bundle (.jar) abzurufen.
+   1. Laden Sie das Paket (.zip) über den Package Manager hoch und installieren Sie es.
+   1. Öffnen Sie die Konfigurations-Manager-Pakete. `https://server:host/system/console/bundles`, laden Sie das Bundle hoch und installieren Sie es (.jar).
 
 ## Enthaltene OSGi-Bundles und Inhaltspakete{#osgi-bundles-and-content-packages-included}
 
