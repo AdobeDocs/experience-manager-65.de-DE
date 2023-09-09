@@ -12,10 +12,10 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 823e756f470b0599f7d53a3e08fdf650b4e892d1
 workflow-type: tm+mt
 source-wordcount: '3454'
-ht-degree: 98%
+ht-degree: 97%
 
 ---
 
@@ -228,7 +228,7 @@ Sobald Sie Ihren Ressourcentyp erstellt haben, können Sie Ihr Feld instanziiere
 
 Wenn Sie Stil und Verhalten für Ihre Komponente definieren möchten, können Sie eine dedizierte [Client-Bibliothek](/help/sites-developing/clientlibs.md) erstellen, die Ihre benutzerdefinierte CSS/LESS- und JS-Datei definiert.
 
-Damit Ihre Client-Bibliothek nur für das Komponentendialogfeld geladen wird (d. h., sie wird nicht für eine andere Komponente geladen), müssen Sie die Eigenschaft **`extraClientlibs`** Ihres Dialogfelds auf den Kategorienamen der gerade erstellten Client-Bibliothek einstellen. Dies empfiehlt sich, wenn die Client-Bibliothek recht groß ist und/oder das Feld für dieses Dialogfeld spezifisch ist und nicht in anderen Dialogfeldern benötigt wird.
+Damit Ihre Client-Bibliothek ausschließlich für Ihr Komponentendialogfeld geladen wird (d. h. sie wird nicht für eine andere Komponente geladen), müssen Sie die -Eigenschaft festlegen `extraClientlibs` des Dialogfelds zum Kategorienamen der zuvor erstellten Client-Bibliothek. Dies empfiehlt sich, wenn die Client-Bibliothek recht groß ist und/oder das Feld für dieses Dialogfeld spezifisch ist und nicht in anderen Dialogfeldern benötigt wird.
 
 Um die Client-Bibliothek für alle Dialogfelder zu laden, legen Sie die Kategorieeigenschaft Ihrer Client-Bibliothek auf `cq.authoring.dialog` fest. Dies ist der Kategoriename der Client-Bibliothek, die beim Rendern aller Dialogfelder standardmäßig enthalten ist. Dies empfiehlt sich, wenn die Client-Bibliothek klein ist und/oder Ihr Feld generisch ist und in anderen Dialogfeldern wiederverwendet werden kann.
 
