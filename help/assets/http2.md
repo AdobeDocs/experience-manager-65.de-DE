@@ -51,7 +51,7 @@ Die folgende Demonstration zeigt den Unterschied zwischen Laden mit HTTP/1 und L
 Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfüllen:
 
 * Sie verwenden sicheres HTTPS für Ihre Rich Media-Anforderungen.
-* Verwenden Sie das im Adobe-Bundle enthaltene CDN (Content Delivery Network) als Teil Ihrer Dynamic Media-Lizenz.
+* Verwenden Sie das Adobe-gebündelte CDN (Content Delivery Network) als Teil Ihrer Dynamic Media-Lizenz.
 * Sie verwenden eine dedizierte (non- company-h.assetsadobe#.com) Domain.
 
   Wenn Sie bereits über eine dedizierte Domain verfügen, können Sie sich über den Kunden-Support von Adobe anmelden.

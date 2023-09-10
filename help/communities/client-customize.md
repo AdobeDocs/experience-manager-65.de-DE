@@ -168,7 +168,7 @@ Diese Versionen finden Sie unter:
 
 * `/etc/clientlibs/social/hbs/&lt;component name&gt;`
 
-Beispiel:
+Zum Beispiel:
 
 * Client-Ordnerknoten: `/etc/clientlibs/social/hbs/forum`
 * categories-Eigenschaft: `cq.social.hbs.forum`
@@ -187,7 +187,7 @@ Diese Versionen befinden sich im Ordner &quot;SCF libs&quot;:
 
 * `/libs/social/&lt;feature&gt;/components/hbs/&lt;component name&gt;/clientlibs`
 
-Beispiel:
+Zum Beispiel:
 
 * Client-Ordnerknoten: `/libs/social/forum/hbs/forum/clientlibs`
 * categories-Eigenschaft: `cq.social.author.hbs.forum`

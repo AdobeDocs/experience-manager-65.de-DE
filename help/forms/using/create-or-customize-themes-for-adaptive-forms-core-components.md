@@ -11,7 +11,7 @@ role: Admin, Developer
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1973'
-ht-degree: 10%
+ht-degree: 11%
 
 ---
 
@@ -20,7 +20,7 @@ ht-degree: 10%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 
@@ -32,8 +32,8 @@ In AEM Forms 6.5 ist ein Design eine AEM Client-Bibliothek, mit der Sie die Stil
 
 AEM 6.5-Umgebung bietet die folgenden aufgelisteten Designs für Kernkomponenten-basierte adaptive Forms:
 
-* [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
+* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
 ## Grundlegendes zur Struktur der Themen {#understanding-structure-of-theme}
@@ -54,8 +54,8 @@ Ein Design ist ein Paket, das die CSS-Datei, JavaScript-Dateien und Ressourcen (
 
 AEM Forms 6.5 bietet die folgenden aufgelisteten Designs für Kernkomponenten-basierte adaptive Forms.
 
-* [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
+* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
 Sie können [Anpassen dieser Designs, um ein Design zu erstellen](#customize-a-theme-core-components).
@@ -109,8 +109,8 @@ Die im Dokument bereitgestellten Beispiele basieren auf dem **Arbeitsfläche** -
 
 Um ein Design für die auf Kernkomponenten basierende adaptive Forms zu klonen, wählen Sie eines der folgenden Designs:
 
-* [Arbeitsflächendesign](https://github.com/adobe/aem-forms-theme-canvas)
-* [WKND-Design](https://github.com/adobe/aem-forms-theme-wknd)
+* [Design „Canvas“](https://github.com/adobe/aem-forms-theme-canvas)
+* [Design „WKND“](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-Design](https://github.com/adobe/aem-forms-theme-easel)
 
 Führen Sie die folgenden Anweisungen aus, um ein Design zu klonen:

@@ -1,6 +1,6 @@
 ---
 title: Angeben der XCI-Konfigurationsoptionen
-description: Erfahren Sie, wie Sie XCI-Konfigurationsoptionen angeben.
+description: Erfahren Sie, wie Sie XCI-Konfigurationsoptionen festlegen.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
@@ -9,7 +9,7 @@ exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
 source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
 source-wordcount: '128'
-ht-degree: 7%
+ht-degree: 21%
 
 ---
 
@@ -25,5 +25,5 @@ Mit Forms können Sie eine benutzerdefinierte XCI-Datei angeben, die für die Wi
 Sie können Optionen auswählen, die das Außerkraftsetzen der oben aufgeführten Optionen verhindern. In diesem Fall verwendet Forms die in der benutzerdefinierten XCI-Datei angegebenen Werte.
 
 1. Klicken Sie in Administration Console auf **Dienste** > **Forms**.
-1. Aktivieren oder deaktivieren Sie das Kontrollkästchen &quot;XCI-Systemstandardoptionen verwenden&quot;. Wenn diese Option aktiviert ist, verwendet Forms seine Standardwerte für die Einstellungen &quot;packet&quot;, &quot;creator&quot;, &quot;manufacturer&quot;und &quot;compressObjectStream&quot;. Wenn diese Option deaktiviert ist, verwendet Forms die in der benutzerdefinierten XCI-Datei angegebenen Werte.
+1. Aktivieren bzw. deaktivieren Sie das Kontrollkästchen „XCI-Systemstandardoptionen verwenden“. Wenn diese Option aktiviert ist, verwendet Forms seine Standardwerte für die Einstellungen &quot;packet&quot;, &quot;creator&quot;, &quot;manufacturer&quot;und &quot;compressObjectStream&quot;. Wenn diese Option deaktiviert ist, verwendet Forms die in der benutzerdefinierten XCI-Datei angegebenen Werte.
 1. Klicken Sie auf **Speichern**.

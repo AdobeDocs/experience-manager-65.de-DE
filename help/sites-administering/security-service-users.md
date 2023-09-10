@@ -106,7 +106,7 @@ Eine Verwaltungssitzung kann eingestellt werden, indem sie durch Service-Benutze
 Um die Admin-Sitzung durch einen Dienstbenutzer zu ersetzen, führen Sie die folgenden Schritte aus:
 
 1. Identifizieren Sie die erforderlichen Berechtigungen für Ihren Dienst unter Berücksichtigung des Prinzips der geringsten Berechtigung.
-1. Überprüfen Sie, ob bereits ein Benutzer mit genau den benötigten Berechtigungen verfügbar ist. Erstellen Sie einen Systemdienstbenutzer, wenn kein bestehender Benutzer Ihren Anforderungen entspricht. RTC ist erforderlich, um einen Dienstbenutzer zu erstellen. Manchmal ist es sinnvoll, mehrere Subservice-Benutzer zu erstellen (z. B. eine zum Schreiben und eine zum Lesen), um den Zugriff noch stärker zu gliedern.
+1. Überprüfen Sie, ob bereits ein Benutzer mit genau den benötigten Berechtigungen verfügbar ist. Erstellen Sie einen Systemdienstbenutzer, wenn kein bestehender Benutzer Ihren Anforderungen entspricht. RTC ist erforderlich, um einen Dienstbenutzer zu erstellen. Manchmal ist es sinnvoll, mehrere Subservice-Benutzer zu erstellen (z. B. einen für das Schreiben und einen für das Lesen), um den Zugriff noch stärker zu gliedern.
 1. Richten Sie ACEs ein und testen Sie sie für Ihren Benutzer.
 1. Fügen Sie eine `service-user`-Zuordnung für Ihren Dienst und für `user/sub-users` hinzu.
 

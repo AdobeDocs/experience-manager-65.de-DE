@@ -357,7 +357,7 @@ Wenn Sie mit einem einzelnen Beitrag arbeiten, wird beim Bewegen des Mauszeigers
 
 Um zum Inhaltsbereich zurückzukehren und mehrere UGC-Beiträge anzuzeigen, wählen Sie das X in der oberen rechten Ecke des Detailbereichs der Ansicht aus.
 
-Beispiel:
+Zum Beispiel:
 
 ![moderation-history](assets/moderation-history.png)
 
@@ -371,6 +371,6 @@ Bewegen Sie dazu den Mauszeiger über den Beitrag, um die `View Detail` und wäh
 
 Um zum Inhaltsbereich zurückzukehren und mehrere UGC-Beiträge anzuzeigen, wählen Sie das X in der oberen rechten Ecke des Detailbereichs der Ansicht aus.
 
-Beispiel:
+Zum Beispiel:
 
 ![view1](assets/view1.png)

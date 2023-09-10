@@ -51,7 +51,7 @@ Wenn die Variable [erforderliche clientseitige Bibliotheken](/help/communities/e
 
 Auswählen der platzierten `Comments` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
-![Symbol zum Konfigurieren](assets/configure.png)
+![Konfigurationssymbol](assets/configure.png)
 
 ![Kommentareinstellungen](assets/commentssettings.png)
 
@@ -163,13 +163,13 @@ Unter dem **Ressourcentypen** Registerkarte den benutzerdefinierten resourceType
 
 * **Kommentarressourcentyp**
 
-  Navigieren Sie zum resourceType eines erweiterten `comment` Komponente (einzelner Kommentar) in /apps. Beispiel: `/apps/social/commons/components/hbs/comments/comment`
+  Navigieren Sie zum resourceType eines erweiterten `comment` Komponente (einzelner Kommentar) in /apps. Zum Beispiel: `/apps/social/commons/components/hbs/comments/comment`
 
   Diese Ressource identifiziert den resourceType des UGC, der erstellt wurde, wenn ein Besucher einen Kommentar veröffentlicht.
 
 * **Abstimmungs-Ressourcentyp**
 
-  Navigieren Sie zum resourceType eines erweiterten `voting` -Komponente in /apps. Beispiel: `/apps/social/components/hbs/voting`
+  Navigieren Sie zum resourceType eines erweiterten `voting` -Komponente in /apps. Zum Beispiel: `/apps/social/components/hbs/voting`
 
   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wurde, wenn ein Besucher eine Stimme sendet.
 

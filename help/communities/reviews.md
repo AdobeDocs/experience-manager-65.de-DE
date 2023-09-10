@@ -201,13 +201,13 @@ Unter dem **[!UICONTROL Ressourcentypen]** Registerkarte den benutzerdefinierten
 
 * **[!UICONTROL Kommentarressourcentyp]**
 
-  Navigieren Sie zum resourceType eines erweiterten `comment`Komponente (einzelner Kommentar) in /apps. Beispiel: `/apps/social/commons/components/hbs/comments/comment`.
+  Navigieren Sie zum resourceType eines erweiterten `comment`Komponente (einzelner Kommentar) in /apps. Zum Beispiel: `/apps/social/commons/components/hbs/comments/comment`.
 
   Diese Ressource identifiziert den resourceType des UGC, der erstellt wurde, wenn ein Besucher einen Kommentar veröffentlicht.
 
 * **[!UICONTROL Abstimmungs-Ressourcentyp]**
 
-  Navigieren Sie zum resourceType eines erweiterten `voting`-Komponente in /apps. Beispiel: `/apps/social/components/hbs/voting`.
+  Navigieren Sie zum resourceType eines erweiterten `voting`-Komponente in /apps. Zum Beispiel: `/apps/social/components/hbs/voting`.
 
   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wurde, wenn ein Besucher eine Stimme sendet.
 

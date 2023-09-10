@@ -488,7 +488,7 @@ Sie sollten Mitglied der [forms-power-user-Gruppe](forms-groups-privileges-tasks
    <td><img alt="Symbol "Ja"" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
-   <td>Dropdown</td>
+   <td>Dropdown-Liste</td>
    <td><img alt="Symbol "Ja"" src="assets/yes_tick.png" /></td>
    <td><img alt="Symbol "Ja"" src="assets/yes_tick.png" /></td>
    <td><img alt="Symbol "Ja"" src="assets/yes_tick.png" /></td>
