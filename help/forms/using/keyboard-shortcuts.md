@@ -1,78 +1,74 @@
 ---
 title: Tastaturbefehle für AEM Forms
-seo-title: AEM Forms Keyboard Shortcuts
 description: In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für adaptive Formulare, im Design-Editor, im Inhaltsbrowser und in Correspondence Management für Windows und Macintosh verwendet werden können.
-seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
-uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
-discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '1204'
-ht-degree: 43%
+source-wordcount: '1208'
+ht-degree: 31%
 
 ---
 
 # Tastaturbefehle für AEM Forms {#aem-forms-keyboard-shortcuts}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird ein älterer Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
 In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für adaptive Formulare, im Design-Editor, im Inhaltsbrowser und in Correspondence Management für Windows und Macintosh verwendet werden können.
 
 ## Editor für adaptive Formulare {#adaptiveformeditor}
 
-| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter macOS** |
+| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl für macOS** |
 |---|---|---|
-| Öffnen des Eigenschaften-Browsers für die ausgewählte Komponente eines adaptiven Formulars | Alt+Eingabetaste | Alt+Rückgabe |
-| Eigenschaftenbrowser für die ausgewählte Komponente des adaptiven Formulars schließen | Strg+Alt+W | Befehl+Alt+W |
+| Öffnen Sie den Eigenschaftenbrowser für die ausgewählte Komponente des adaptiven Formulars | Alt+Eingabetaste | Alt+Rückgabe |
+| Schließen Sie den Eigenschaftenbrowser für die ausgewählte Komponente des adaptiven Formulars | Strg+Alt+W | Befehl+Alt+W |
 | Speichern von Änderungen im Eigenschaftenbrowser für die ausgewählte Komponente des adaptiven Formulars | Strg+S | Befehl+S |
 | Bearbeiten der Regel für die ausgewählte Komponente eines adaptiven Formulars | Strg+Alt+Eingabe | Befehl+Alt+Rückgabe |
-| Zwischen Vorschau und dem aktuell ausgewählten Modus (z. B. Bearbeiten, Strukturvorlage usw.) wechseln | Strg+Umschalt+M | Strg+Umschalt+M |
+| Zwischen Vorschau und dem aktuell ausgewählten Modus (z. B. Bearbeiten und Strukturvorlage) wechseln | Strg+Umschalt+M | Strg+Umschalt+M |
 | Letzte Änderung rückgängig machen | Strg+Z | Strg+Z |
 | Letzte Änderung wiederholen | Strg+Y | Strg+Y |
 | Mehrere Komponenten auswählen | Umschalt+Klick | Umschalt+Klick |
 | Ausgewählte Komponente kopieren | Strg-C | Strg+C |
-| Ausgewählte Komponente(n) ausschneiden. Die ausgeschnittene Komponente wird erst ausgeblendet, wenn sie an der neuen Position eingefügt wird. | Strg-X | Strg-X |
-| Komponente(n) einfügen | Strg+V | Strg+V |
-| Ausgewählte Komponente(n) löschen | Strg+Entf | Strg+Entf |
-| Ausgewählte Komponente(n) löschen | Strg+Rücktaste | Strg+Rücktaste |
-| Fettdruck von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschaumodus | Strg+B | Strg+B&amp;ast; |
-| Kursiv Formatieren von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschaumodus | Strg+I | Strg+I&amp;ast; |
-| Text in Rich-Text-Editor-Komponente im Vorschaumodus fett formatieren | Strg+U | Strg+U&amp;ast; |
+| Ausgewählte Komponenten ausschneiden Die ausgeschnittene Komponente wird erst ausgeblendet, wenn sie an der neuen Position eingefügt wird. | Strg-X | Strg-X |
+| Komponenten einfügen | Strg+V | Strg+V |
+| Ausgewählte Komponenten löschen | Strg+Entf | Strg+Entf |
+| Ausgewählte Komponenten löschen | Strg+Rücktaste | Strg+Rücktaste |
+| Formatieren von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschaumodus | Strg+B | Strg+B&amp;ast; |
+| Kuratieren von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschaumodus | Strg+I | Strg+I&amp;ast; |
+| Formatieren von Text bei Verwendung der Rich-Text-Editor-Komponente im Vorschaumodus | Strg+U | Strg+U&amp;ast; |
 
 >[!NOTE]
 >
->Für mit einem „&amp;ast;“ markierte Tastaturbefehle können unter Mac OS sowohl die Strg- als auch die Befehlstaste verwendet werden.
+>Tastaturbefehle, die mit &quot;&amp;ast;&quot;markiert sind, funktionieren in macOS sowohl mit der Strg- als auch mit der Befehlstaste.
 
 >[!NOTE]
 >
 >Mehrfachauswahl auf einem Desktop-Gerät:
 >
->* Windows: Strg+Klicken Sie auf die erforderlichen Komponenten.
->* Mac OS: Befehl+Klicken Sie auf die erforderlichen Komponenten.
+>* Windows: Strg+Klicken auf die erforderlichen Komponenten.
+>* macOS: Befehlstaste+Klick auf die erforderlichen Komponenten.
 >
 
 ## Themen-Editor  {#themeeditor}
 
-| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter macOS** |
+| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl für macOS** |
 |---|---|---|
-| Eigenschaftenbrowser für die ausgewählte Komponente in einem Design öffnen | Alt+Eingabetaste | Alt+Rückgabe |
-| Eigenschaftenbrowser für die ausgewählte Komponente in einem Design schließen | Strg+Alt+W | Befehl+Alt+W |
+| Öffnen Sie den Eigenschaftenbrowser für die ausgewählte Komponente in einem Design. | Alt+Eingabetaste | Alt+Rückgabe |
+| Schließen Sie den Eigenschaftenbrowser für die ausgewählte Komponente in einem Design. | Strg+Alt+W | Befehl+Alt+W |
 | Letzte Änderung rückgängig machen | Strg+Z | Strg+Z |
 | Letzte Änderung wiederholen | Strg+Y | Strg+Y&amp;ast; |
 | Speichern von Änderungen im Eigenschaften-Browser für die ausgewählte Komponente in einem Design | Strg+S | Strg+S&amp;ast; |
 
 >[!NOTE]
 >
->Für mit einem „&amp;ast;“ markierte Tastaturbefehle können unter Mac OS sowohl die Strg- als auch die Befehlstaste verwendet werden.
+>Tastaturbefehle, die mit &quot;&amp;ast;&quot;markiert sind, funktionieren in macOS sowohl mit der Strg- als auch mit der Befehlstaste.
 
 ## Inhaltsbrowser  {#contentbrowser}
 
-| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl unter macOS** |
+| **Aktion** | **Tastaturbefehl unter Windows** | **Tastaturbefehl für macOS** |
 |---|---|---|
 | Erweitern Sie alle Akkordeons im Formularobjektbaum des Inhaltsbrowsers im Fokus | Strg+A, um alle Akkordeons auszuwählen, dann nach-rechts-Taste zum Erweitern | Befehl+A, um alle Akkordeons auszuwählen, dann nach-rechts-Taste zum Erweitern |
 | Alle Akkordeons in der Formularobjektstruktur ausblenden, wenn im Fokus | Strg+A, um alle Akkordeons auszuwählen, dann nach-links-Taste zum Ausblenden | Befehl+A, um alle Akkordeons auszuwählen, dann nach-links-Taste zum Ausblenden |
@@ -81,8 +77,8 @@ In diesem Artikel werden die Tastaturbefehle aufgeführt, die im Editor für ada
 | Auswählen des nächsten Elements in der Forms-Objektstruktur | Nach-unten-Taste | Nach-unten-Taste |
 | Vorheriges Element in der Struktur &quot;Forms-Objekte&quot;auswählen | Nach-oben-Taste | Nach-oben-Taste |
 
-[1] ersetzt Strg+Pfeil nach rechts für Windows bzw. Befehl+Pfeil nach rechts für macOS.\
-[2] ersetzt Strg+Pfeil nach links für Windows bzw. Befehl+Pfeil nach links für macOS.
+[1] Ersetzt Strg + Rechtspfeil für Windows und Befehl + Rechtspfeil für macOS.\
+[2] Ersetzt Strg + Linkspfeil für Windows und Befehl + Linkspfeil für macOS.
 
 ## Korrespondenzverwaltung {#correspondence-management}
 
@@ -98,7 +94,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
   <tr>
    <th><strong>Vorgang</strong></th> 
    <th><strong>Tastaturbefehl unter Windows</strong></th> 
-   <th><strong>Tastaturbefehl unter Mac OS</strong><br /> </th> 
+   <th><strong>Tastaturbefehl für macOS</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>Aktuelles Wort auswählen</p> </td> 
@@ -111,7 +107,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
    <td>Befehl+Umschalt+Linkspfeil</td> 
   </tr>
   <tr>
-   <td><p>Auswahl auf den Anfang eines Absatzes erweitern</p> </td> 
+   <td><p>Erweitern einer Auswahl bis zum Anfang eines Absatzes</p> </td> 
    <td><p>Strg+Umschalt+Aufwärtspfeil</p> </td> 
    <td>Befehl+Umschalt+Aufwärtspfeil</td> 
   </tr>
@@ -141,7 +137,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
    <td>Option+Abwärtspfeil</td> 
   </tr>
   <tr>
-   <td><p>Verschieben Sie den Cursor zum vorherigen Absatz.</p> </td> 
+   <td><p>Cursor zum vorherigen Absatz verschieben</p> </td> 
    <td><p>Strg+Aufwärtspfeil</p> </td> 
    <td>Option+Aufwärtspfeil</td> 
   </tr>
@@ -166,7 +162,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
    <td>Umschalt+Abwärtspfeil</td> 
   </tr>
   <tr>
-   <td><p>Text bis zum Beginn der aktuellen Position der Seite auswählen</p> </td> 
+   <td><p>Text bis zum Start von der aktuellen Position der Seite auswählen</p> </td> 
    <td><p>Umschalt+Seite nach oben</p> </td> 
    <td>Fn+Umschalt+Aufwärtspfeil</td> 
   </tr>
@@ -176,7 +172,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
    <td>Fn+Umschalt+Abwärtspfeil</td> 
   </tr>
   <tr>
-   <td><p>Cursor an das Seitenende verschieben</p> </td> 
+   <td><p>Cursor an das Ende der Seite verschieben</p> </td> 
    <td><p>Bild nach unten</p> </td> 
    <td>Fn+Abwärtspfeil</td> 
   </tr>
@@ -192,16 +188,16 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
   </tr>
   <tr>
    <td><p>Text von der aktuellen Position bis zum Anfang (des Moduls) auswählen</p> </td> 
-   <td><p>Umschalt+Strg+Startseite</p> </td> 
+   <td><p>Umschalt+Strg+Home</p> </td> 
    <td>Befehl+Umschalt+Aufwärtspfeil</td> 
   </tr>
   <tr>
-   <td><p>Cursor an die Startposition verschieben</p> </td> 
-   <td><p>Strg+Startseite</p> </td> 
+   <td><p>Den Cursor an die Startposition verschieben</p> </td> 
+   <td><p>Strg+Start</p> </td> 
    <td>Befehl+Aufwärtspfeil</td> 
   </tr>
   <tr>
-   <td><p>Cursor an die Endposition verschieben</p> </td> 
+   <td><p>Den Cursor an die Endposition verschieben</p> </td> 
    <td><p>Strg+Ende</p> </td> 
    <td>Befehl+Abwärtspfeil</td> 
   </tr>
@@ -216,10 +212,10 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
   <tr>
    <th><p><strong>Vorgang</strong></p> </th> 
    <th><p><strong>Tastaturbefehl unter Windows<br /> </strong></p> </th> 
-   <th><strong>Tastaturbefehl unter Mac OS</strong></th> 
+   <th><strong>Tastaturbefehl für macOS</strong></th> 
   </tr>
   <tr>
-   <td><p>Absatzmitte ausrichten</p> </td> 
+   <td><p>Absatz zentriert ausrichten</p> </td> 
    <td><p>Strg+E</p> </td> 
    <td>Strg+Befehl+E</td> 
   </tr>
@@ -229,7 +225,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
    <td>Strg+Befehl+L</td> 
   </tr>
   <tr>
-   <td><p>Festlegen einer Ausrichtung für einen Absatz</p> </td> 
+   <td><p>Absatz rechtsbündig ausrichten</p> </td> 
    <td><p>Strg+R</p> </td> 
    <td>Strg+Befehl+R</td> 
   </tr>
@@ -248,7 +244,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
   <tr>
    <th><strong>Vorgang</strong></th> 
    <th><strong>Tastaturbefehl unter Windows </strong></th> 
-   <th><strong>Tastaturbefehl unter Mac OS</strong><br /> </th> 
+   <th><strong>Tastaturbefehl für macOS</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>Rückgängig machen </p> </td> 
@@ -270,7 +266,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
   <tr>
    <th><p><strong>Vorgang</strong></p> </th> 
    <th><p><strong>Tastaturbefehl unter Windows</strong></p> </th> 
-   <th><strong>Tastaturbefehl unter Mac OS</strong></th> 
+   <th><strong>Tastaturbefehl für macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Schrift vergrößern </p> </td> 
@@ -292,7 +288,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
   <tr>
    <th><strong>Vorgang</strong></th> 
    <th><strong>Tastaturbefehl unter Windows</strong></th> 
-   <th><strong>Tastaturbefehl unter Mac OS</strong></th> 
+   <th><strong>Tastaturbefehl für macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Wort links vom Cursor löschen</p> </td> 
@@ -301,8 +297,8 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
   </tr>
   <tr>
    <td><p>Wort rechts vom Cursor löschen</p> </td> 
-   <td><p>Strg+Löschen</p> </td> 
-   <td>Strg+Löschen</td> 
+   <td><p>Strg+Entf</p> </td> 
+   <td>Strg+Entf</td> 
   </tr>
  </tbody>
 </table>
@@ -314,7 +310,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
   <tr>
    <th><strong>Vorgang</strong></th> 
    <th><strong>Tastaturbefehl unter Windows<br /> </strong></th> 
-   <th><strong>Tastaturbefehl unter Mac OS</strong></th> 
+   <th><strong>Tastaturbefehl für macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Text einfügen  </p> </td> 
@@ -341,7 +337,7 @@ In diesem Abschnitt werden verschiedene Tastaturbefehle und Barrierefreiheitskü
   <tr>
    <th><strong>Vorgang</strong></th> 
    <th><strong>Tastaturbefehl unter Windows</strong></th> 
-   <th><strong>Tastaturbefehl unter Mac OS</strong></th> 
+   <th><strong>Tastaturbefehl für macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Buchstaben fett machen</p> </td> 

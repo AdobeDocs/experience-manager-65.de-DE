@@ -1,30 +1,26 @@
 ---
 title: SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse
-seo-title: SharePoint Connector Licenses, Copyright Notices, and Disclaimers
-description: Erfahren Sie mehr über SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse.
-seo-description: Learn about SharePoint Connector Licenses, Copyright Notices and Disclaimers.
-uuid: 182c8f0f-dcca-461a-9d8f-f05b376ad0cb
+description: Erfahren Sie mehr über SharePoint Connector-Lizenzen, Copyright-Hinweise und Haftungsausschlüsse.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 56849775-3ac7-44a2-ab17-a707b001470e
 docset: aem65
 exl-id: b9342330-31f6-49cb-965e-4bab61f98d4c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '362'
-ht-degree: 100%
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+workflow-type: tm+mt
+source-wordcount: '354'
+ht-degree: 62%
 
 ---
 
 # SharePoint Connector-Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse{#sharepoint-connector-licenses-copyright-notices-and-disclaimers}
 
-Dieser Abschnitt umfasst alle Lizenzen, Urheberrechtsvermerke und Haftungsausschlüsse, die in Zusammenhang mit dem Day JCR Connector für Microsoft SharePoint explizit aufgeführt sein müssen.
+In diesem Abschnitt werden alle Lizenzen, Copyright-Hinweise und Haftungsausschlüsse aufgelistet, die explizit mit Day JCR Connector für MS® SharePoint angegeben werden müssen.
 
-## Überblick über die Bibliotheken von Connector-Drittanbietern {#overview-of-connector-rd-party-libraries}
+## Übersicht über Connector-Drittanbieter-Bibliotheken {#overview-of-connector-rd-party-libraries}
 
-In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePoint Connector-Core-Bibliotheken genutzt werden, zusammen mit den Lizenzen, Urheberrechtsvermerken oder Haftungsausschlüssen, denen sie unterliegen, aufgeführt:
+In der folgenden Tabelle sind die Bibliotheken von Drittanbietern aufgeführt, die in den SharePoint Connector-Kernbibliotheken verwendet werden, sowie die Lizenzen, Urheberrechtshinweise oder Haftungsausschlüsse, unter die diese Bibliotheken fallen:
 
 | Bibliothek | Lizenztyp |
 |---|---|
@@ -63,9 +59,9 @@ In der folgenden Tabelle sind die Drittanbieter-Bibliotheken, die in den SharePo
 | xml-apis | [Apache](#apache) (enthält Teile, die von öffentlich zugänglichen und W3C-Software-Lizenzen abgedeckt sind) |
 | XmlSchema | [Apache](#apache) |
 
-## Überblick über die Bibliotheken von CRX-Drittanbietern {#overview-of-crx-rd-party-libraries}
+## Überblick über CRX-Drittanbieter-Bibliotheken {#overview-of-crx-rd-party-libraries}
 
-In der folgenden Tabelle sind die in CRX verwendeten Drittanbieter-Bibliotheken aufgeführt, zusammen mit den Lizenzen, Urheberschutzvermerken und Haftungsausschlüssen, unter die sie fallen:
+In der folgenden Tabelle sind die in CRX verwendeten Drittanbieterbibliotheken zusammen mit den Lizenzen, Urheberrechtshinweisen oder Haftungsausschlüssen aufgeführt, unter die sie fallen:
 
 <table>
  <colgroup>
@@ -155,9 +151,9 @@ In der folgenden Tabelle sind die in CRX verwendeten Drittanbieter-Bibliotheken 
  </tbody>
 </table>
 
-## Überblick über die Drittanbieter-Bibliotheken von CQSE 3. {#overview-of-cqse-rd-party-libraries}
+## Überblick über CQSE-Drittanbieter-Bibliotheken {#overview-of-cqse-rd-party-libraries}
 
-In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten Drittanbieter-Bibliotheken, zusammen mit den Lizenzen, Urheberrechtsvermerken oder Haftungsausschlüssen, denen sie unterliegen, aufgeführt:
+In der folgenden Tabelle sind die Bibliotheken von Drittanbietern aufgeführt, die in der Communiqué Servlet Engine verwendet werden, sowie die Lizenzen, Urheberrechtshinweise oder Haftungsausschlüsse, unter die sie fallen:
 
 <table>
  <colgroup>
@@ -1100,8 +1096,8 @@ In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten 
      This license came from: https://www.w3.org/Consortium/Legal/
      copyright-documents-19990405
 
-     W3C® DOCUMENT NOTICE AND LICENSE
-     Copyright © 1994-2001 World
+     W3C&reg; DOCUMENT NOTICE AND LICENSE
+     Copyright &copy; 1994-2001 World
      Wide Web Consortium, World
      Wide Web Consortium, (Massachusetts Institute of
      Technology, Institut National de
@@ -1125,7 +1121,7 @@ In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten 
      A link or URL to the original W3C document.
 
      The pre-existing copyright notice of the original author, or if
-     it doesn't exist, a notice of the form: "Copyright © [$date-of-document]
+     it doesn't exist, a notice of the form: "Copyright &copy; [$date-of-document]
      World Wide Web Consortium, (Massachusetts
      Institute of Technology, Institut National de Recherche en Informatique
      et en Automatique, Keio
@@ -1186,8 +1182,8 @@ In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten 
      This license came from: <a href="https://www.w3.org/Consortium/Legal/" TARGET="_blank" >https://www.w3.org/Consortium/Legal/</a>
      copyright-software-19980720
 
-     W3C® SOFTWARE NOTICE AND LICENSE
-     Copyright © 1994-2001 World
+     W3C&reg; SOFTWARE NOTICE AND LICENSE
+     Copyright &copy; 1994-2001 World
      Wide Web Consortium, World
      Wide Web Consortium, (Massachusetts Institute of
      Technology, Institut National de
@@ -1213,7 +1209,7 @@ In der folgenden Tabelle sind die in der Communiqué Servlet Engine verwendeten 
      terms and conditions. If none exist, a short notice of the
      following form (hypertext is preferred, text is permitted) should
      be used within the body of any redistributed or derivative code:
-     "Copyright © [$date-of-software] World Wide Web Consortium,
+     "Copyright &copy; [$date-of-software] World Wide Web Consortium,
      (Massachusetts Institute of Technology, Institut National de
      Recherche en Informatique et en Automatique, Keio University).
      All Rights Reserved.

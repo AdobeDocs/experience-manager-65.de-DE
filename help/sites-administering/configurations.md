@@ -2,10 +2,10 @@
 title: Konfigurationen und der Konfigurations-Browser
 description: Machen Sie sich mit AEM-Konfigurationen und der Verwaltung der Einstellungen für den Arbeitsbereich in AEM vertraut.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 84b16dd1a60f731b568dd87ef89699875cb86596
-workflow-type: ht
-source-wordcount: '1496'
-ht-degree: 100%
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+workflow-type: tm+mt
+source-wordcount: '1482'
+ht-degree: 58%
 
 ---
 
@@ -29,7 +29,7 @@ Unabhängig von Ihrem Blickwinkel dienen Konfigurationen in AEM zwei Hauptzwecke
 
 ## Konfigurationen als Administrator {#configurations-administrator}
 
-Sowohl der AEM-Administrator als auch die Autoren können Konfigurationen als Arbeitsbereiche betrachten. Diese Arbeitsbereiche können verwendet werden, um Gruppen von Einstellungen sowie deren zugehörigen Inhalt für organisatorische Zwecke zu zusammenzufassen, indem Zugriffsrechte für diese Funktionen implementiert werden.
+Der AEM Administrator und die Autoren können Konfigurationen als Arbeitsbereiche betrachten. Diese Arbeitsbereiche können verwendet werden, um Gruppen von Einstellungen und zugehörigen Inhalten für organisatorische Zwecke zu sammeln, indem Zugriffsberechtigungen für diese Funktionen implementiert werden.
 
 Konfigurationen können für viele verschiedene Funktionen in AEM erstellt werden.
 
@@ -40,7 +40,7 @@ Konfigurationen können für viele verschiedene Funktionen in AEM erstellt werde
 
 ### Beispiel {#administrator-example}
 
-Ein Administrator kann beispielsweise zwei Konfigurationen für bearbeitbare Vorlagen erstellen.
+Beispielsweise kann ein Administrator zwei Konfigurationen für bearbeitbare Vorlagen erstellen.
 
 * WKND-General
 * WKND-Magazin
@@ -51,8 +51,8 @@ Der Administrator kann dann „WKND-General“ mit allen Inhalten der WKND-Site 
 
 Dies geschieht folgendermaßen:
 
-* Wenn ein Inhaltsautor eine neue Seite für das Magazin erstellt, kann der Autor zwischen allgemeinen Vorlagen (WKND-General) oder Magazinvorlagen (WKND-Magazin) wählen.
-* Wenn ein Inhaltsautor eine neue Seite für einen anderen Teil der Website erstellt, der nicht das Magazin ist, kann der Autor nur aus den allgemeinen Vorlagen (WKND-General) auswählen.
+* Wenn ein Inhaltsautor eine Seite für die Zeitschrift erstellt, kann der Autor aus allgemeinen Vorlagen (WKND-General) oder Zeitschriftenvorlagen (WKND-Magazine) wählen.
+* Wenn ein Inhaltsautor eine Seite für einen anderen Teil der Site erstellt, der nicht das Magazin ist, kann der Autor nur aus den allgemeinen Vorlagen (WKND-General) wählen.
 
 Ähnliche Setups sind nicht nur für bearbeitbare Vorlagen möglich, sondern auch für Cloud-Konfigurationen, ContextHub-Segmente und Inhaltsfragmentmodelle.
 
@@ -62,11 +62,11 @@ Mit dem Konfigurations-Browser kann ein Administrator auf einfache Weise Zugriff
 
 >[!NOTE]
 >
->Es ist nur möglich, Konfigurationen mit dem Konfigurations-Browser zu erstellen, wenn der Benutzer über `admin`-Rechte verfügt. `admin`-Rechte sind auch erforderlich, um der Konfiguration Zugriffsrechte zuzuweisen oder eine Konfiguration anderweitig zu ändern.
+>Es ist nur möglich, Konfigurationen mit dem Konfigurations-Browser zu erstellen, wenn der Benutzer über `admin`-Rechte verfügt. Außerdem sind Administratorrechte erforderlich, um der Konfiguration Zugriffsrechte zuzuweisen oder eine Konfiguration anderweitig zu ändern.
 
 #### Erstellen einer Konfiguration {#creating-a-configuration}
 
-Es ist sehr einfach, mithilfe des Konfigurations-Browsers eine neue Konfiguration in AEM zu erstellen.
+Es ist einfach, eine Konfiguration in AEM mithilfe des Konfigurationsbrowsers zu erstellen.
 
 1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurationsbrowser** aus.
 1. Tippen oder klicken Sie auf **Erstellen**.
@@ -75,10 +75,10 @@ Es ist sehr einfach, mithilfe des Konfigurations-Browsers eine neue Konfiguratio
    ![Erstellen einer Konfiguration](assets/configuration-create.png)
 
    * Der **Titel** sollte beschreibend sein.
-   * Der **Name** wird zum Knotennamen im Repository.
-      * Er wird automatisch auf der Grundlage des Titels generiert und gemäß den [AEM-Benennungskonventionen](/help/sites-developing/naming-conventions.md) angepasst.
+   * Die **Name** wird zum Knotennamen im Repository.
+      * Sie wird automatisch anhand des Titels generiert und entsprechend angepasst [AEM Benennungskonventionen.](/help/sites-developing/naming-conventions.md)
       * Er kann bei Bedarf angepasst werden.
-1. Markieren Sie die Art der Konfigurationen, die Sie zulassen möchten.
+1. Überprüfen Sie den Konfigurationstyp, den Sie zulassen möchten.
    * [Cloud-Konfigurationen](/help/sites-administering/configurations.md)
    * [Context-Hub-Segmente](/help/sites-administering/segmentation.md)
    * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md)
@@ -91,24 +91,26 @@ Es ist sehr einfach, mithilfe des Konfigurations-Browsers eine neue Konfiguratio
 
 #### Bearbeiten von Konfigurationen und deren Zugriffsrechten {#access-rights}
 
-Wenn Sie Konfigurationen als Arbeitsbereiche betrachten, können Zugriffsrechte für diese Konfigurationen festgelegt werden, um zu erzwingen, wer auf diese Arbeitsbereiche zugreifen darf und wer nicht.
+Wenn Sie sich Konfigurationen als Arbeitsbereiche vorstellen, können Zugriffsberechtigungen für diese Konfigurationen festgelegt werden, um zu erzwingen, wer auf diese Arbeitsbereiche zugreifen darf und wer nicht.
 
 1. Melden Sie sich bei AEM as a Cloud Service an und wählen Sie im Hauptmenü **Tools** > **Allgemein** > **Konfigurationsbrowser** aus.
-1. Wählen Sie die zu ändernde Konfiguration aus und tippen oder klicken Sie in der Symbolleiste auf **Eigenschaften**.
-1. Wählen Sie alle zusätzlichen Funktionen aus, die Sie der Konfiguration hinzufügen möchten.
+1. Wählen Sie die zu ändernde Konfiguration aus und tippen oder klicken Sie auf **Eigenschaften** in der Symbolleiste.
+1. Wählen Sie zusätzliche Funktionen aus, die Sie der Konfiguration hinzufügen möchten.
+
    >[!NOTE]
    >
    >Es ist nicht möglich, die Auswahl einer Funktion aufzuheben, nachdem die Konfiguration erstellt wurde.
+
 1. Verwenden Sie die Schaltfläche **Gültige Berechtigungen**, um eine Matrix der Rollen und der ihnen derzeit gewährten Berechtigungen für Konfigurationen anzuzeigen.
    ![Fenster „Gültige Berechtigungen“](assets/configuration-effective-permissions.png)
 1. Um neue Berechtigungen zuzuweisen, geben Sie den Benutzer- oder Gruppennamen in das Feld **Benutzer oder Gruppe wählen** im Abschnitt **Neue Berechtigung hinzufügen** ein.
    * Das Feld **Benutzer oder Gruppe wählen** bietet eine automatische Vervollständigung basierend auf vorhandenen Benutzern und Rollen.
 1. Wählen Sie den entsprechenden Benutzer oder die entsprechende Rolle aus den Ergebnissen der automatischen Vervollständigung aus.
    * Sie können mehrere Benutzer oder Rollen auswählen.
-1. Markieren Sie die Zugriffsoptionen, die der/die ausgewählte(n) Benutzer/Rollen haben soll(en), und klicken Sie auf **Hinzufügen**.
+1. Überprüfen Sie die Zugriffsoptionen, die die ausgewählten Benutzer oder Rollen haben sollten, und klicken Sie auf **Hinzufügen**.
    ![Zugriffsrechte zu einer Konfiguration hinzufügen](assets/configuration-edit.png)
-1. Wiederholen Sie die Schritte, um Benutzer oder Rollen auszuwählen und nach Bedarf zusätzliche Zugriffsrechte zuzuweisen.
-1. Tippen oder klicken Sie auf **Speichern und schließen**, wenn Sie fertig sind.
+1. Wiederholen Sie die Schritte, damit Sie Benutzer oder Rollen auswählen und bei Bedarf zusätzliche Zugriffsberechtigungen zuweisen können.
+1. Auswählen **Speichern und schließen** wenn Sie fertig sind.
 
 ## Konfigurationen als Entwickler {#configurations-developer}
 
@@ -121,7 +123,7 @@ Obwohl der [Administrator und die Benutzer Konfigurationen möglicherweise als A
 * `/content` nimmt alle Inhalte auf.
 * `/conf` nimmt alle Konfigurationen auf.
 
-Inhalt referenziert seine zugehörige Konfiguration über eine `cq:conf`-Eigenschaft. AEM führt basierend auf dem Inhalt und seiner Kontexteigenschaft `cq:conf` eine Suche durch, um die entsprechende Konfiguration zu finden.
+Inhalt referenziert seine zugehörige Konfiguration über eine `cq:conf`-Eigenschaft. AEM führt eine Suche basierend auf dem Inhalt und dem Kontext durch `cq:conf` -Eigenschaft, um die entsprechende Konfiguration zu finden.
 
 ### Beispiel {#developer-example}
 
@@ -133,9 +135,9 @@ ValueMap imageServerSettings = conf.getItem("dam/imageserver");
 String bgkcolor = imageServerSettings.get("bgkcolor", "FFFFFF");
 ```
 
-Der Ausgangspunkt aller Konfigurationsabfragen ist eine Inhaltsressource, üblicherweise unter `/content`. Dies kann eine Seite, eine Komponente innerhalb einer Seite, ein Asset oder ein DAM-Ordner sein. Dies ist der eigentliche Inhalt, für den wir nach der richtigen Konfiguration suchen, die in diesem Zusammenhang gilt.
+Der Ausgangspunkt für die gesamte Konfigurationssuche ist eine Inhaltsressource, irgendwo unter `/content`. Dabei kann es sich um eine Seite, eine Komponente innerhalb einer Seite, ein Asset oder einen DAM-Ordner handeln. Dies ist der eigentliche Inhalt, für den Sie die richtige Konfiguration suchen, die in diesem Zusammenhang gilt.
 
-Mit dem `Conf`-Objekt können wir nun das spezifische Konfigurationselement abrufen, an dem wir interessiert sind. In diesem Fall ist es `dam/imageserver`, was eine Sammlung von Einstellungen im Zusammenhang mit `imageserver` ist. Der Aufruf `getItem` gibt ein `ValueMap` zurück. Anschließend lesen wir eine `bgkcolor`-Zeichenfolgeneigenschaft aus und geben den Standardwert „FFFFFF“ an, falls die Eigenschaft (oder das gesamte Konfigurationselement) nicht vorhanden ist.
+Jetzt mit dem `Conf` -Objekt, können Sie das spezifische Konfigurationselement abrufen, an dem Sie interessiert sind. In diesem Fall ist es `dam/imageserver`, eine Sammlung von Einstellungen, die sich auf die `imageserver`. Der Aufruf `getItem` gibt ein `ValueMap` zurück. Sie lesen dann `bgkcolor` Zeichenfolgeneigenschaft und geben Sie den Standardwert &quot;FFFF&quot;an, falls die Eigenschaft (oder das gesamte Konfigurationselement) nicht vorhanden ist.
 
 Sehen wir uns nun den entsprechenden JCR-Inhalt an:
 
@@ -153,19 +155,19 @@ Sehen wir uns nun den entsprechenden JCR-Inhalt an:
             - bgkcolor = "FF0000"
 ```
 
-In diesem Beispiel gehen wir von einem WKND-spezifischen DAM-Ordner und einer entsprechenden Konfiguration aus. Ausgehende von diesem Ordner `/content/dam/wknd` wird eine Zeichenfolgeneigenschaft mit dem Namen `cq:conf` angezeigt, die auf die Konfiguration verweist, die für den Unterbaum gelten soll. Die Eigenschaft wird normalerweise für den `jcr:content` eines Asset-Ordners oder einer Asset-Seite eingestellt. Diese `conf`-Links sind explizit, sodass es einfach ist, ihnen zu folgen, indem Sie sich den Inhalt in CRXDE ansehen.
+In diesem Beispiel können Sie von einem WKND-spezifischen DAM-Ordner hier und einer entsprechenden Konfiguration ausgehen. Beginnt bei diesem Ordner `/content/dam/wknd`, können Sie sehen, dass es eine Zeichenfolgeneigenschaft mit dem Namen `cq:conf` , der auf die Konfiguration verweist, die für die Unterstruktur gelten soll. Die Eigenschaft wird auf die `jcr:content` eines Asset-Ordners oder einer Seite. Diese `conf`-Links sind explizit, sodass es einfach ist, ihnen zu folgen, indem Sie sich den Inhalt in CRXDE ansehen.
 
-Wenn wir in `/conf` springen, folgen wir dem Verweis und sehen, dass es einen `/conf/wknd`-Knoten gibt. Dies ist eine Konfiguration. Beachten Sie, dass die Suche für den Programm-Code vollständig transparent ist. Der Beispiel-Code hat nie eine dedizierte Referenz darauf, sie ist hinter dem `Conf`-Objekt versteckt. Welche Konfiguration gilt, wird vollständig durch den JCR-Inhalt gesteuert.
+Springen hinein `/conf`können Sie der Referenz folgen und sehen, dass eine `/conf/wknd` Knoten. Dies ist eine Konfiguration. Die Suche ist für den Anwendungscode transparent. Der Beispiel-Code hat nie eine dedizierte Referenz darauf, sie ist hinter dem `Conf`-Objekt versteckt. Welche Konfiguration angewendet wird, wird über den JCR-Inhalt gesteuert.
 
-Wir sehen, dass die Konfiguration einen `settings`-Knoten mit festem Namen enthält, der die tatsächlichen Elemente enthält, einschließlich des in unserem Fall benötigten `dam/imageserver`. Ein solches Element kann als „Einstellungsdokument“ betrachtet werden und wird normalerweise durch eine `cq:Page` dargestellt, das einen `jcr:content` enthält, der den tatsächlichen Inhalt enthält.
+Sie können sehen, dass die Konfiguration einen fest benannten `settings` -Knoten, der die tatsächlichen Elemente enthält, einschließlich der `dam/imageserver` die Sie in diesem Fall benötigen. Ein solches Element kann als &quot;Einstellungsdokument&quot;betrachtet werden und wird durch ein `cq:Page` einschließlich `jcr:content` den tatsächlichen Inhalt enthalten.
 
-Schließlich sehen wir die Eigenschaft `bgkcolor`, die unser Beispiel-Code benötigt. Die `ValueMap`, die wir von `getItem` erhalten, basiert auf dem `jcr:content`-Knoten der Seite.
+Schließlich können Sie die Eigenschaft sehen `bgkcolor` den Beispielcode benötigt. Die `ValueMap` zurück von `getItem` basiert auf dem `jcr:content` Knoten.
 
 ### Konfigurationsauflösung {#configuration-resolution}
 
-Das grundlegende Beispiel oben zeigte eine einzelne Konfiguration. Es gibt jedoch viele Fälle, in denen Sie unterschiedliche Konfigurationen wünschen, z. B. eine globale Standardkonfiguration, eine andere für jede Marke und möglicherweise eine bestimmte für Ihre Unterprojekte.
+Das grundlegende Beispiel oben zeigte eine einzelne Konfiguration. Es gibt jedoch viele Fälle, in denen Sie unterschiedliche Konfigurationen haben möchten, z. B. eine standardmäßige globale Konfiguration, eine andere für jede Marke und möglicherweise eine spezifische für Ihre Unterprojekte.
 
-Um dies zu unterstützen, verfügt die Konfigurationssuche in AEM über einen Vererbungs- und Ausweichmechanismus in der folgenden Reihenfolge:
+Um dies zu unterstützen, verfügt das Konfigurations-Lookup in AEM über einen Vererbungs- und Ausweichmechanismus in der folgenden Reihenfolge der Voreinstellung:
 
 1. `/conf/<siteconfig>/<parentconfig>/<myconfig>`
    * Spezifische Konfiguration, auf die von `cq:conf` irgendwo in `/content` verwiesen wird
@@ -179,7 +181,7 @@ Um dies zu unterstützen, verfügt die Konfigurationssuche in AEM über einen Ve
    * Zur Laufzeit durch Benutzer mit Konfigurationsrechten änderbar
 1. `/conf/global`
    * Globale Systemeinstellungen
-   * Normalerweise globale Standardeinstellungen für Ihre Installation
+   * Globale Standardeinstellungen für Ihre Installation
    * Durch eine `admin`-Rolle festgelegt
    * Zur Laufzeit durch Benutzer mit Konfigurationsrechten änderbar
 1. `/apps`
@@ -210,7 +212,7 @@ Geben Sie einfach Folgendes an:
 * **Element**
 * **Benutzer**
 
-Klicken Sie auf **Auflösen**, um zu sehen, welche Konfigurationen aufgelöst werden, und um Beispiel-Code zu erhalten, mit dem diese Konfigurationen aufgelöst werden.
+Um zu sehen, welche Konfigurationen aufgelöst werden und einen Beispielcode erhalten, der diese Konfigurationen auflöst, wählen Sie **Auflösen**.
 
 ### Web-Konsole für kontextabhängige Konfigurationen {#context-aware-web-console}
 
@@ -223,4 +225,4 @@ Geben Sie einfach Folgendes an:
 * **Inhalts-Pfad**
 * **Konfigurationsname**
 
-Klicken Sie auf **Auflösen**, um die zugehörigen Kontextpfade und Eigenschaften für die ausgewählte Konfiguration abzurufen.
+Um die zugehörigen Kontextpfade und Eigenschaften für die ausgewählte Konfiguration abzurufen, wählen Sie **Auflösen**.

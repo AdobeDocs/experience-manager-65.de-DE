@@ -2,25 +2,24 @@
 cloud: Experience Cloud
 product: experience manager
 audience: end-user
-user-guide-title: Versionshinweise zu Adobe Experience Manager 6.5
+user-guide-title: Adobe Experience Manager 6.5 - Versionshinweise
 breadcrumb-title: Versionshinweise
 user-guide-description: In den Versionshinweisen finden Sie Informationen zu den neuesten Funktionen in AEM 6.5.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8a7ca99d896fd1ce2ace5b17a91987c6b8535615
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
 source-wordcount: '70'
-ht-degree: 100%
+ht-degree: 60%
 
 ---
 
 
-# Versionshinweise zu Adobe Experience Manager 6.5 {#release-notes}
+# Adobe Experience Manager 6.5 - Versionshinweise {#release-notes}
 
-+ [Versionshinweise zu AEM 6.5](home.md)
++ [AEM 6.5 – Versionshinweise](home.md)
 + [Aktuelle Versionshinweise](release-notes.md)
-+ [Installationsanweisungen für AEM Forms Service Pack](aem-forms-current-service-pack-installation-instructions.md)
-+ [Hinweise zu früheren Versionen ]{#service-pack}
++ [Frühere Versionshinweise]{#service-pack}
    + [6.5.17](previous/6.5.17.md)
    + [6.5.16](previous/6.5.16.md)
    + [6.5.15](previous/6.5.15.md)
@@ -39,6 +38,7 @@ ht-degree: 100%
    + [6.5.2](previous/6.5.2.md)
    + [6.5.1](previous/6.5.1.md)
    + [6.5.0](previous/ga.md)
++ [Installationsanweisungen für das AEM Forms Service Pack](aem-forms-current-service-pack-installation-instructions.md)
 + [AEM Forms JEE-Patch-Installationsprogramm](jee-patch-installer-65.md)
 + [Veraltete und entfernte Funktionen](deprecated-removed-features.md)
 + [Status der Funktionen der Touch-optimierten Benutzeroberfläche](touch-ui-features-status.md)

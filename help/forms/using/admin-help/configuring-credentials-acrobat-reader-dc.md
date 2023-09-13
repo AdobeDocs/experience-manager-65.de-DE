@@ -1,63 +1,59 @@
 ---
 title: Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC Extensions
-seo-title: Configuring credentials for use with Acrobat Reader DC extensions
-description: Erfahren Sie, wie Sie Berechtigungen für die Verwendung mit Acrobat Reader DC-Erweiterungen konfigurieren.
-seo-description: Learn how to configure credentials for use with Acrobat Reader DC extensions.
-uuid: 9210e6c9-6f5c-402d-b355-b104cdffd5eb
+description: Erfahren Sie, wie Sie Anmeldeinformationen für die Verwendung mit Acrobat Reader DC Extensions konfigurieren.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '555'
-ht-degree: 100%
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 5%
 
 ---
 
 # Konfigurieren von Berechtigungen für die Verwendung mit Acrobat Reader DC Extensions{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
-Um Verwendungsrechte in PDF-Dokumenten anzuwenden, konfigurieren Sie AEM Forms mit einer gültigen Berechtigung für Acrobat Reader DC Extensions. Bei der Installation von AEM Forms wurde eventuell eine Berechtigung konfiguriert. Wenn Sie Ihre Acrobat Reader DC Extensions-Berechtigung nicht mithilfe von Configuration Manager konfiguriert haben oder eine neue oder Ersatzberechtigung importieren müssen, können Sie dies mithilfe der Seiten der Trust Store-Verwaltung tun.
+Um Verwendungsrechte auf PDF-Dokumente anzuwenden, konfigurieren Sie AEM Formulare mit einer gültigen Berechtigung für Acrobat Reader DC-Erweiterungen. Während der Installation von AEM Formularen wurden möglicherweise Anmeldedaten konfiguriert. Wenn Sie Ihre Acrobat Reader DC Extensions-Berechtigung beim Ausführen von Configuration Manager nicht konfiguriert haben oder wenn Sie eine neue oder Ersatzberechtigung importieren müssen, können Sie dies über die Seiten &quot;Trust Store-Verwaltung&quot;tun.
 
-Wenn Sie eine Testberechtigung verwenden, müssen Sie diese nach dem Wechsel in die Produktionsumgebung durch eine Produktionsberechtigung ersetzen. Um eine abgelaufene oder Testberechtigung zu aktualisieren, müssen Sie zunächst die alte Acrobat Reader DC Extensions-Berechtigung löschen.
+Wenn Sie eine Testberechtigung verwenden, ersetzen Sie sie beim Wechsel in Ihre Produktionsumgebung durch eine Produktionsberechtigung. Um eine abgelaufene oder Testberechtigung zu aktualisieren, löschen Sie zunächst die alte Acrobat Reader DC Extensions-Berechtigung.
 
-Weitere Informationen zum Abrufen einer Berechtigung finden Sie unter [Vorbereiten der Installation von AEM Forms (Einzelserver)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63_de).
+Informationen zum Abrufen einer Berechtigung finden Sie unter [Vorbereiten der Installation von AEM Forms (Einzelserver)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
-Der Trust Store enthält möglicherweise mehr als eine Acrobat Reader DCExtensions-Berechtigung. Sie müssen eine dieser Berechtigungen als Standardberechtigung für Reader Extensions festlegen. Die Standardberechtigung wird verwendet, wenn ein Workbench-Benutzer nicht entscheiden kann, welche Berechtigung bei der Prozesserstellung verwendet werden soll. Diese Regeln gelten für Standardberechtigungen:
+Der Trust Store kann mehr als eine Acrobat Reader DC Extensions-Berechtigung enthalten. Legen Sie eine dieser Anmeldedaten als Standardberechtigung für Reader Extensions fest. Die Standardberechtigung wird verwendet, wenn ein Workbench-Benutzer nicht ermitteln kann, welche Berechtigung bei der Prozesserstellung verwendet werden soll. Diese Regeln gelten für Standardanmeldedaten:
 
-* Wenn Sie eine Acrobat Reader DC Extensions-Berechtigung importieren und der Trust Store keine weiteren Acrobat Reader DC Extensions-Berechtigungen enthält, wird diese als Standard festgelegt.
-* Wenn Sie eine Acrobat Reader DC Extensions-Berechtigung importieren und die Option „Standard“ ausgewählt ist, wird der Standardtyp von einer vorhandenen Standardberechtigung entfernt. Die importierte Berechtigung wird die Standardberechtigung.
-* Die Standardberechtigung für Acrobat Reader DC Extensions kann nicht gelöscht werden. Um die Standardberechtigung zu löschen, müssen Sie zunächst eine andere Berechtigung als Standard festlegen. Dabei gilt folgende Ausnahme: Wenn es nur eine Berechtigung gibt, können Sie diese löschen, obwohl es sich dabei um die Standardberechtigung handelt.
-* Die Standardberechtigung für Acrobat Reader DC Extensions kann nicht aktualisiert werden.
+* Wenn Sie eine Acrobat Reader DC Extensions-Berechtigung importieren und der Trust Store keine anderen Acrobat Reader DC Extensions-Anmeldeinformationen enthält, wird diese als Standard festgelegt.
+* Wenn Sie eine Acrobat Reader DC Extensions-Berechtigung importieren und die Option Standard ausgewählt ist, wird der Standardtyp aus einer vorhandenen Standardberechtigung entfernt. Die importierte Berechtigung wird die Standardberechtigung.
+* Sie können keine standardmäßigen Acrobat Reader DC Extensions-Berechtigungen löschen. Um die Standardberechtigung zu löschen, legen Sie zunächst eine andere Berechtigung als Standard fest. Eine Ausnahme von dieser Regel besteht darin, dass Sie, wenn nur eine Berechtigung vorhanden ist, diese löschen können, auch wenn es sich um die Standardberechtigung handelt.
+* Sie können keine standardmäßigen Acrobat Reader DC Extensions-Anmeldedaten aktualisieren.
 
 >[!NOTE]
 >
->Sie können Berechtigungen auch importieren und programmgesteuert löschen. (Weitere Informationen finden Sie unter [Programmieren mit AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63_de).)
+>Sie können Berechtigungen auch programmgesteuert importieren und löschen. (Siehe [Programmieren mit AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de).
 
-## Acrobat Reader DC Extensions-Berechtigungen importieren {#import-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions-Berechtigung importieren {#import-a-acrobat-reader-dc-extensions-credential}
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
-1. Klicken Sie auf „Importieren“ und wählen Sie unter „Trust Store-Typ“ die Option „Acrobat Reader DC Extensions-Berechtigung“.
-1. (Optional) Um anzugeben, dass dies die Standardberechtigung ist, die mit Acrobat Reader DC Extensions verwendet werden soll, wählen Sie „Standard“ aus.
-1. Geben Sie in das Feld „Alias“ einen Bezeichner für die Berechtigung ein. Dieser Bezeichner wird in Acrobat Reader DC Extensions als Anzeigename für die Berechtigung verwendet. Außerdem wird dieser Alias für den programmgesteuerten Zugriff auf die Berechtigung mithilfe des AEM Forms SDK verwendet.
+1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;Trust Store-Verwaltung&quot;> &quot;Lokale Berechtigungen&quot;.
+1. Klicken Sie auf &quot;Importieren&quot;und wählen Sie unter &quot;Trust Store-Typ&quot;die Option &quot;Acrobat Reader DC Extensions-Berechtigung&quot;aus.
+1. (Optional) Um anzugeben, dass diese Berechtigung die Standardberechtigung für die Verwendung mit Acrobat Reader DC Extensions ist, wählen Sie &quot;Standard&quot;aus.
+1. Geben Sie in das Feld &quot;Alias&quot;eine Kennung für die Berechtigung ein. Diese Kennung wird als Anzeigename für die Berechtigung in Acrobat Reader DC Extensions verwendet. Dieser Alias wird auch verwendet, um mithilfe des AEM Forms SDK programmgesteuert auf die Berechtigung zuzugreifen.
 
    >[!NOTE]
    >
-   >Der Aliasname wird zu Anzeigezwecken automatisch in Großschreibung konvertiert. Wenn Sie auf den Aliasnamen in einem Prozess verweisen, wird Groß-/Kleinschreibung nicht unterschieden.
+   >Der Aliasname wird zu Anzeigezwecken automatisch in Großbuchstaben umgewandelt. Beim Aliasnamen wird nicht zwischen Groß- und Kleinschreibung unterschieden, wenn Sie in einem Prozess darauf verweisen.
 
 1. Klicken Sie auf „Eine Datei auswählen“, um die Berechtigung zu suchen. Geben Sie das Kennwort der Berechtigung ein und klicken Sie auf „OK“.
 
-   Wenn die Fehlermeldung „Fehler beim Importieren einer Berechtigung aufgrund eines fehlerhaften Dateiformats oder eines falschen Kennworts“ angezeigt wird, müssen Sie sicherstellen, dass das Kennwort gültig ist.
+   Wenn die Fehlermeldung &quot;Berechtigung konnte nicht importiert werden aufgrund eines falschen Dateiformats oder eines falschen Kennworts&quot;angezeigt wird, überprüfen Sie, ob das Kennwort gültig ist.
 
-## Acrobat Reader DC Extensions-Berechtigungen entfernen {#remove-a-acrobat-reader-dc-extensions-credential}
+## Berechtigung für Acrobat Reader DC Extensions entfernen {#remove-a-acrobat-reader-dc-extensions-credential}
 
-1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
-1. Wählen Sie die Berechtigung und klicken Sie auf „Löschen“.
+1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;Trust Store-Verwaltung&quot;> &quot;Lokale Berechtigungen&quot;.
+1. Wählen Sie die Berechtigung aus und klicken Sie auf Löschen.
 
-## Acrobat Reader DC Extensions-Berechtigungen ersetzen {#replace-a-acrobat-reader-dc-extensions-credential}
+## Acrobat Reader DC Extensions-Berechtigung ersetzen {#replace-a-acrobat-reader-dc-extensions-credential}
 
-1. Klicken Sie in der Administration-Console auf „Einstellungen“ > „Trust Store-Verwaltung“ > „Lokale Berechtigungen“.
-1. Notieren Sie sich den Alias der vorhandenen Berechtigung, wählen Sie ihn aus und klicken Sie auf „Löschen“.
-1. Importieren Sie die neue Berechtigung unter Verwendung von exakt demselben Aliasnamen.
+1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;Trust Store-Verwaltung&quot;> &quot;Lokale Berechtigungen&quot;.
+1. Notieren Sie sich den Alias der vorhandenen Berechtigung, wählen Sie ihn aus und klicken Sie auf &quot;Löschen&quot;.
+1. Importieren Sie die neue Berechtigung mit exakt demselben Aliasnamen.

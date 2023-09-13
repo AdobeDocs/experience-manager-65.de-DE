@@ -1,20 +1,16 @@
 ---
 title: Konfigurieren der Kontoumgebung
-seo-title: Configuring Your Account Environment
 description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren
-seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
-uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '519'
-ht-degree: 76%
+source-wordcount: '514'
+ht-degree: 57%
 
 ---
 
@@ -24,7 +20,7 @@ AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenum
 
 Mit der Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) in der [Kopfzeile](/help/sites-authoring/basic-handling.md#the-header) und dem verbundenen Dialogfeld [Benutzereinstellungen](#userpreferences) können Sie Benutzeroptionen bearbeiten.
 
-Beginnen Sie, indem Sie in der Kopfzeile auf die Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) zugreifen.
+Beginnen Sie, indem Sie in der Kopfzeile die Option [Benutzer](/help/sites-authoring/user-properties.md#user-settings) aufrufen.
 
 ## Benutzereinstellungen {#user-settings}
 
@@ -72,18 +68,18 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Desktop-Aktionen für Assets anzeigen**
 
-  Für diese Option ist das AEM-Desktop-Programm erforderlich.
+  Für diese Option ist ein AEM Desktop-Programm erforderlich.
 
 * **Anmerkungsfarbe**
 
   Dadurch wird die Standardfarbe definiert, die beim Erstellen von Anmerkungen verwendet wird.
 
-   * Klicken Sie auf den Farbblock, um die Musterauswahl zu öffnen und eine Farbe auszuwählen.
+   * Klicken Sie auf den Farbblock, damit Sie die Musterauswahl öffnen und eine Farbe auswählen können.
    * Alternativ dazu können Sie in das Feld den Hexcode für die gewünschte Farbe eingeben.
 
 * **Darstellung des relativen Datums**
 
-  Zur besseren Lesbarkeit rendert AEM Daten der letzten sieben Tage als relative Datumsangaben (z. B. „vor drei Tagen“) und ältere Daten als genaue Datumsangaben (z. B. 20. März 2017).
+  Um die Lesbarkeit zu verbessern, rendert AEM Datumsangaben innerhalb der letzten sieben Tage als relative Daten (z. B. vor drei Tagen) und ältere Daten als exakte Datumswerte (z. B. 20. März 2017).
 
   Diese Option definiert, wie Daten im System angezeigt werden. Die folgenden Optionen sind verfügbar:
 
@@ -100,12 +96,12 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Tastaturbefehle aktivieren**
 
-  AEM unterstützt verschiedene Tastaturbefehle, die eine effizientere Bearbeitung ermöglichen.
+  AEM unterstützt mehrere Tastaturbefehle, die die Bearbeitung effizienter machen.
 
    * [Tastaturbefehle für die Seitenbearbeitung](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Tastaturbefehle für Konsolen](/help/sites-authoring/keyboard-shortcuts.md)
 
-  Diese Option aktiviert Tastaturbefehle. Sie sind standardmäßig aktiviert, können aber deaktiviert werden, z. B. wenn ein Benutzer bestimmte Barrierefreiheitsanforderungen hat.
+  Diese Option aktiviert Tastaturbefehle. Sie sind standardmäßig aktiviert, können jedoch deaktiviert werden, z. B. wenn ein Benutzer bestimmte Barrierefreiheitsanforderungen hat.
 
 * **Klassisches Authoring-Erlebnis verwenden**
 
@@ -113,8 +109,8 @@ Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen.
 
 * **Asset-Homepage aktivieren**
 
-  Diese Option ist nur verfügbar, wenn der Systemadministrator die Asset-Homepage-Nutzung für das gesamte Unternehmen aktiviert hat.
+  Diese Option ist nur verfügbar, wenn Ihr Systemadministrator das Asset-Homepage-Erlebnis für die gesamte Organisation aktiviert hat.
 
 * **Stock-Konfiguration**
 
-  Mit dieser Option können Sie die bevorzugte Adobe Stock-Konfiguration angeben. Sie ist nur verfügbar, wenn Ihr Systemadministrator die [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md) aktiviert hat.
+  Mit dieser Option können Sie die bevorzugte Adobe Stock-Konfiguration angeben. Sie ist nur verfügbar, wenn Ihr Systemadministrator die Option [Adobe Stock-Integration](/help/assets/aem-assets-adobe-stock.md).

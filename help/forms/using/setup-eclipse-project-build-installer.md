@@ -5,16 +5,16 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
-source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '720'
-ht-degree: 83%
+source-wordcount: '723'
+ht-degree: 72%
 
 ---
 
 # Erstellen Sie die AEM Forms Android-App {#build-the-aem-forms-android-app}
 
-Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die Android-App für AEM Forms zu erstellen.
+Um die Android-App für AEM Forms zu erstellen, führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus.
 
 1. [Laden Sie das Quellcode-Paket der AEM Forms-App herunter](#download-android-zip)
 1. [Legen Sie die Umgebungsvariable fest.](#set-environment-variable-android)
@@ -24,7 +24,7 @@ Führen Sie die folgenden Schritte in der empfohlenen Reihenfolge aus, um die An
 
 Das AEM Forms-App-Quellcodepaket verweist auf das Archiv `adobe-lc-mobileworkspace-src-<version>.zip`. Dieses Archiv enthält den Quellcode, der zum Erstellen einer benutzerdefinierten AEM Forms-App erforderlich ist. Das Archiv wird im Paket `adobe-aemfd-forms-app-src-pkg-<version>.zip` der Software Distribution bereitgestellt.
 
-Führen Sie folgende Schritte aus, um die Datei `adobe-aemfd-forms-app-src-pkg-<version>.zip` herunterzuladen:
+So laden Sie die `adobe-aemfd-forms-app-src-pkg-<version>.zip` -Datei, führen Sie die folgenden Schritte aus:
 
 1. Öffnen Sie [Software Distribution](https://experience.adobe.com/downloads). Zum Anmelden bei Software Distribution benötigen Sie eine Adobe ID.
 1. Tippen Sie im Kopfzeilenmenü auf **[!UICONTROL Adobe Experience Manager]**.
@@ -51,14 +51,14 @@ Legen Sie die folgenden Umgebungsvariablen fest, bevor Sie den Build-Prozess fü
 
 ## Standardmäßige AEM Forms-App erstellen {#set-up-the-xcode-project}
 
-Nachdem Sie die Datei adobe-lc-mobileworkspace-src-&lt;version>.zip im lokalen Dateisystem gespeichert und die Umgebungsvariablen festgelegt haben, erstellen Sie die standardmäßige AEM Forms Android-App mit einer der folgenden Optionen:
+Nachdem Sie die Datei adobe-lc-mobileworkspace-src- gespeichert haben&lt;version>ZIP-Datei auf dem lokalen Dateisystem erstellen und die Umgebungsvariablen festlegen, erstellen Sie eine standardmäßige AEM Forms Android-App mit einer der folgenden Optionen:
 
 * [Erstellen Sie die AEM Forms-App mit Android Studio](#using-android-studio)
 * [Generieren Sie die .apk-Datei mit Android Studio](#generate-apk-android-studio)
 
 ### Aufbauen der AEM Forms-App mit Android Studio {#using-android-studio}
 
-Führen Sie die folgenden Schritte aus, um die AEM Forms-App mit Android Studio zu erstellen:
+Um eine AEM Forms-App mit Android Studio zu erstellen, führen Sie die folgenden Schritte aus:
 
 1. Starten Sie die Android Studio-Anwendung auf Ihrem Computer.
 1. Klicken Sie auf **Öffnen Sie ein vorhandenes Android Studio-Projekt**. Wenn das Dialogfeld zum Öffnen eines vorhandenen Projekts nicht automatisch angezeigt wird, wählen Sie **Datei** > **Öffnen**.
@@ -81,7 +81,7 @@ Führen Sie die folgenden Schritte aus, um die AEM Forms-App mit Android Studio 
 
 ### Generieren der .apk-Datei mit Android Studio {#generate-apk-android-studio}
 
-Führen Sie die folgenden Schritte aus, um die APK-Datei mit Android Studio zu generieren:
+Gehen Sie wie folgt vor, um die APK-Datei mit Android Studio zu generieren:
 
 1. Starten Sie die Android Studio-Anwendung auf Ihrem Computer.
 1. Wählen Sie **Ein vorhandenes Android Studio-Projekt öffnen**. Wenn das Dialogfeld zum Öffnen eines vorhandenen Projekts nicht automatisch angezeigt wird, wählen Sie **Datei** > **Öffnen**.
@@ -89,7 +89,7 @@ Führen Sie die folgenden Schritte aus, um die APK-Datei mit Android Studio zu g
 
    Die android-Option im linken Fensterbereich angezeigt.
 
-1. Wählen Sie **Erstellen** > **APK erstellen**, um die APK-Datei zu generieren.
+1. Um die .apk-Datei zu generieren, wählen Sie **Build** > **Build-APK**.
 
    Wählen Sie optional **Erstellen** > **Signiertes APK generieren**, um eine [signierte Version](https://developer.android.com/studio/publish/app-signing) der APK-Datei zu generieren.
 

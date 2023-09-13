@@ -1,53 +1,49 @@
 ---
 title: Anpassen von Fehlermeldungen für HTML5-Formulare
-seo-title: Customizing error messages for HTML5 forms
-description: Erfahren Sie, wie Sie die Anzeige von Fehlermeldungen für HTML5-Formulare anpassen, einschließlich wie Sie deren Position und Aussehen ändern.
-seo-description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
-uuid: 6f48b64e-858f-4323-ad50-88e25f3c2e3d
+description: Erfahren Sie, wie Sie die Anzeige von Fehlermeldungen für HTML5-Formulare anpassen können, einschließlich der Änderung ihrer Position und ihres Erscheinungsbilds.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '515'
-ht-degree: 100%
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 33%
 
 ---
 
 # Anpassen von Fehlermeldungen für HTML5-Formulare {#customizing-error-messages-for-html-forms}
 
-In den HTML5-Formularen haben die Fehlermeldungen und Warnungen standardmäßig eine feste Position und ein festgelegtes Erscheinungsbild (Schriftart und Farbe). Der Fehler wird nur für ein ausgewähltes Feld angezeigt und es wird nur ein Fehler angezeigt.
+In HTML5-Formularen haben die Fehlermeldungen und Warnungen standardmäßig eine feste Position und ein festgelegtes Erscheinungsbild (Schriftart und Farbe). Der Fehler wird nur für ein ausgewähltes Feld angezeigt, und es wird nur ein Fehler angezeigt.
 
-Der Artikel stellt die Schritte bereit, um HTML5-Fehlermeldung anzupassen um,
+Der Artikel enthält die Schritte zum Anpassen von HTML5 forms-Fehlermeldungen, sodass Sie Folgendes tun können:
 
 * dass das Erscheinungsbild und die Position der Fehlermeldungen geändert werden. Die Fehlermeldung können oberhalb, unterhalb oder an der rechten Seite eines Felds angezeigt werden.
 * Anzeigen von Fehlermeldungen für mehrere Felder jederzeit.
-* Anzeigen der Fehlermeldung unabhängig davon, ob ein Feld ausgewählt ist oder nicht.
+* den Fehler unabhängig davon anzeigen, ob ein Feld ausgewählt ist oder nicht.
 
 ## Anpassen von Fehlermeldungen  {#customizing-error-messages-nbsp}
 
 Laden Sie vor dem Anpassen der Fehlermeldungen das angehängte Paket herunter und extrahieren Sie es (CustomErrorManager-1.0-SNAPSHOT.zip).
 
-Nachdem Sie das Paket entpackt haben, öffnen Sie den Ordner CustomErrorManager-1.0-SNAPSHOT. Er enthält die Ordner jcr_root und META-INF. Diese Ordner enthalten die CSS- und .JS-Dateien, die zum Anpassen der Fehlermeldung erforderlich sind.
+Öffnen Sie nach dem Extrahieren des Pakets den Ordner CustomErrorManager-1.0-SNAPSHOT . Sie enthält die Ordner jcr_root und META-INF. Diese Ordner enthalten die CSS- und JS-Dateien, die zum Anpassen der Fehlermeldung erforderlich sind.
 
 [Datei laden](assets/customerrormanager-1.0-snapshot.zip)
 
 ### Anpassen der Position der Fehlermeldungen  {#customizing-the-position-of-error-messages-nbsp}
 
-Fügen Sie zum Anpassen der Fehlermeldungsposition für jedes Fehler- und Warnfeld den Tag &lt;div> hinzu. Positionieren Sie den Tag &lt;div> auf der linken oder rechten Seite und wenden Sie auf den Tag &lt;div> CSS-Stile an. Ausführliche Anweisungen finden Sie in unten aufgeführtem Verfahren:
+Um die Position der Fehlermeldung anzupassen, fügen Sie eine &lt;div> Tag für jedes Fehler- und Warnfeld, positionieren Sie die &lt;div> -Tag auf der linken oder rechten Seite platzieren und CSS-Stile auf die &lt;div> -Tag. Ausführliche Anweisungen finden Sie im unten aufgeführten Verfahren:
 
 1. Navigieren Sie zum Ordner `CustomErrorManager-1.0-SNAPSHOT` und öffnen Sie den Ordner `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript`.
 1. Öffnen Sie die Datei `customErrorManager.js` zum Bearbeiten. Die `markError`-Funktion in der Datei akzeptiert folgende Parameter:
 
-   |  |  |
+   |   |  |
    |---|---|
-   | jqWidget | jqWidget ist der Griff für das Widget. |
+   | jqWidget | jqWidget ist das Handle für ein Widget. |
    | msg | enthält die Fehlermeldung |
    | Typ | gibt an, ob es sich um einen Fehler oder eine Warnung handelt |
 
-1. Bei der standardmäßigen Implementierung werden Fehlermeldungen auf der rechten Seite des Felds angezeigt. Verwenden Sie folgenden Code, um Fehlermeldungen oben anzuzeigen.
+1. Bei der vordefinierten Implementierung werden rechts im Feld Fehlermeldungen angezeigt. Verwenden Sie folgenden Code, um Fehlermeldungen oben anzuzeigen.
 
    ```javascript
    markError: function (jqWidget, msg, type) {
@@ -78,19 +74,19 @@ Fügen Sie zum Anpassen der Fehlermeldungsposition für jedes Fehler- und Warnfe
 
 1. Speichern und schließen Sie die Datei.
 1. Navigieren Sie zum Ordner `CustomErrorManager-1.0-SNAPSHOT` und erstellen Sie ein Archiv der Ordner jcr_root und META-INF. Benennen Sie das Archiv in CustomErrorManager-1.0-SNAPSHOT.zip um.
-1. Verwenden Sie den Package Manager, um das Paket herunterzuladen und zu installieren.
+1. Verwenden Sie Package Manager, um das Paket hochzuladen und zu installieren.
 
 ## Anzeigen von Fehlermeldungen für mehrere Felder  {#display-error-messages-for-multiple-fields-nbsp}
 
-Verwenden Sie das angehängte Paket, um die Fehlermeldungen für alle Felder gleichzeitig anzuzeigen. Verwenden Sie zum Anzeigen einer einzelnen Fehlermeldung das Standardprofil.
+Verwenden Sie das angehängte Paket, um Fehlermeldungen für alle Felder gleichzeitig anzuzeigen. Verwenden Sie zum Anzeigen einer einzelnen Fehlermeldung das Standardprofil.
 
-### Anpassen des Erscheinungsbilds der Fehlermeldungen.  {#customizing-the-appearance-of-error-messages-nbsp}
+### Anpassen der Darstellung von Fehlermeldungen  {#customizing-the-appearance-of-error-messages-nbsp}
 
 1. Navigieren Sie zum Ordner etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css.
 
-1. Öffnen Sie die Datei sample.css zur Bearbeitung. Die CSS-Datei enthält 2 IDs: #customError und #customWarning. Sie können diese IDs verwenden, um andere Eigenschaften zu ändern, z. B. Farbe, Schriftgrad usw.
+1. Öffnen Sie die Datei sample.css zur Bearbeitung. Die CSS-Datei enthält 2 IDs: #customError, #customWarning. Sie können diese IDs verwenden, um verschiedene Eigenschaften wie Farbe und Schriftgröße zu ändern.
 
-    Verwenden Sie den folgenden Code, um Schriftgröße und Farbe der Fehler-/Warnmeldungen zu ändern.
+   Verwenden Sie den folgenden Code, um die Schriftgröße und Farbe der Fehler-/Warnmeldungen zu ändern.
 
    ```css
    #customError {
@@ -116,13 +112,13 @@ Verwenden Sie das angehängte Paket, um die Fehlermeldungen für alle Felder gle
 
 1. Speichern und schließen Sie die Datei.
 1. Navigieren Sie zum Ordner CustomErrorManager-1.0-SNAPSHOT und erstellen Sie ein Archiv der Ordner jcr_root und META-INF. Benennen Sie das Archiv in CustomErrorManager-1.0-SNAPSHOT.zip um.
-1. Verwenden Sie den Package Manager, um das Paket herunterzuladen und zu installieren.
+1. Verwenden Sie Package Manager, um das Paket hochzuladen und zu installieren.
 
-## Geben Sie das Formular mit dem neuen Profil wieder.  {#render-the-form-with-the-new-profile-nbsp}
+## Rendern Sie das Formular mit dem neuen Profil.  {#render-the-form-with-the-new-profile-nbsp}
 
-Standardmäßig verwenden HTML5-Formulare ein Standardprofil: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
+Standardmäßig verwenden HTML5-Formulare ein Standardprofil: `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
-Rendern Sie zum Anzeigen eines Formulars mit den angepassten Fehlermeldungen das Formular mit dem Fehlerprofil: http://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location>&amp;template=&lt;name of the xdp>
+Um ein Formular mit den benutzerdefinierten Fehlermeldungen anzuzeigen, rendern Sie das Formular mit dem Fehlerprofil: `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
 >[!NOTE]
 >

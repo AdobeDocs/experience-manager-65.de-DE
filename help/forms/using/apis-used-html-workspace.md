@@ -1,24 +1,20 @@
 ---
-title: APIs im AEM Forms-arbeitsbereich
-seo-title: APIs used in AEM Forms workspace
-description: Öffentliche Java- und JavaScript-APIs und Methoden von LiveCycle AEM Forms Workspace zur Anpassung und Automatisierung.
-seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
-uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
+title: APIs in AEM Forms Workspace
+description: Public Java&trade sowie JavaScript-APIs und Methoden von LiveCycle AEM Forms Workspace, die zur Anpassung und Automatisierung verfügbar gemacht werden.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1059'
 ht-degree: 3%
 
 ---
 
-# APIs im AEM Forms-arbeitsbereich {#apis-used-in-aem-forms-workspace}
+# APIs in AEM Forms Workspace {#apis-used-in-aem-forms-workspace}
 
-Die folgenden APIs werden in AEM Forms Workspace verwendet.
+Die folgenden APIs werden im AEM Forms-Arbeitsbereich verwendet.
 
 <table>
  <tbody>
@@ -32,7 +28,7 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>getGroups</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getGroups</td>
-   <td>Sucht nach Gruppen. Gibt eine Liste aller Gruppen zurück, wenn nichts angegeben ist. Andernfalls werden Gruppen mit dem angegebenen Namen zurückgegeben.</td>
+   <td>Suchgruppen. Gibt eine Liste aller Gruppen zurück, wenn nichts angegeben ist. Andernfalls werden Gruppen mit dem angegebenen Namen zurückgegeben.</td>
   </tr>
   <tr>
    <td>getUsersAndGroups</td>
@@ -44,7 +40,7 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>prepareForSubmit</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>prepareForSubmit</td>
-   <td>Sie wird aufgerufen, bevor das Formular über DocumentSubmitServlet gesendet wird. Legt die Aufgaben-ID in einer Sitzungsvariablen fest (zusammen mit der Ablaufzeit), die beim tatsächlichen Senden abgerufen wird.</td>
+   <td>Sie wird aufgerufen, bevor ein Formular über DocumentSubmitServlet gesendet wird. Legt die Aufgaben-ID in einer Sitzungsvariablen fest (zusammen mit der Ablaufzeit), die während der tatsächlichen Übermittlung abgerufen wird.</td>
   </tr>
   <tr>
    <td>submitTask</td>
@@ -74,13 +70,13 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>invokeStartpoint</td>
    <td>ProcessManagementStartpointService</td>
    <td>invokeStartpoint</td>
-   <td>Dadurch wird ein Startpunkt aufgerufen und eine neue Aufgabe erstellt, die einem Startpunkt entspricht</td>
+   <td>Dadurch wird ein Startpunkt aufgerufen und eine Aufgabe erstellt, die einem Startpunkt entspricht.</td>
   </tr>
   <tr>
    <td>getAllTasks</td>
    <td>ProcessManagementTaskService</td>
    <td>getAllActionableTasks</td>
-   <td>Ruft alle Aufgaben ab, die für den angemeldeten Benutzer erstellt und weitergeleitet, gespeichert, zugewiesen, zugewiesen und gespeichert werden.</td>
+   <td>Ruft alle Aufgaben ab, die für den angemeldeten Benutzer erstellt, weitergeleitet oder konsultiert, gespeichert, zugewiesen, zugewiesen und gespeichert werden.</td>
   </tr>
   <tr>
    <td>getTask</td>
@@ -92,7 +88,7 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>renderTask</td>
    <td>ProcessManagementTaskService</td>
    <td>render</td>
-   <td>Gibt eine Aufgabe wieder und gibt bei Bedarf Informationen zurück, die zum Rendern von Formularen erforderlich sind, z. B. Formular-URL, Formulartyp, Daten-URL usw.</td>
+   <td>Gibt eine Aufgabe wieder und gibt bei Bedarf Informationen zurück, die erforderlich sind, um das Formular wie Formular-URL, Formulartyp und Daten-URL wiederzugeben.</td>
   </tr>
   <tr>
    <td>submitWithPriorData</td>
@@ -122,7 +118,7 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>getAttachment</td>
    <td>ProcessManagementTaskService</td>
    <td>getAttachment</td>
-   <td>Gibt die URL einer Anlage zurück, in der eine Anlage verfügbar ist.</td>
+   <td>Es wird eine URL eines Anhangs zurückgegeben, in dem der Anhang verfügbar ist.</td>
   </tr>
   <tr>
    <td>getAllAttachments</td>
@@ -152,43 +148,43 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>claim</td>
    <td>ProcessManagementTaskService</td>
    <td>claim</td>
-   <td>Fordert eine Aufgabe an, die in der freigegebenen Warteschlange verfügbar ist.</td>
+   <td>Er beansprucht eine Aufgabe, die in einer freigegebenen Warteschlange verfügbar ist.</td>
   </tr>
   <tr>
-   <td>unlock</td>
+   <td>entsperren</td>
    <td>ProcessManagementTaskService</td>
-   <td>unlock</td>
+   <td>entsperren</td>
    <td>Entsperrt eine Aufgabe.</td>
   </tr>
   <tr>
    <td>lock</td>
    <td>ProcessManagementTaskService</td>
    <td>lock</td>
-   <td>Sperrt eine Aufgabe und die Aufgabe kann von einem anderen Benutzer nicht angefordert werden, wenn sie freigegeben wird.</td>
+   <td>Sperrt eine Aufgabe und die Aufgabe kann von einem anderen Benutzer nicht angefordert werden, wenn sie freigegeben wurde.</td>
   </tr>
   <tr>
    <td>Ablehnen der Bedingungen</td>
    <td>ProcessManagementTaskService</td>
    <td>Ablehnen der Bedingungen</td>
-   <td>Gibt die Aufgabe an den vorherigen Eigentümer der Aufgabe zurück.</td>
+   <td>Gibt eine Aufgabe an den vorherigen Eigentümer der Aufgabe zurück.</td>
   </tr>
   <tr>
-   <td>Abbruch</td>
+   <td>abandon</td>
    <td>ProcessManagementTaskService</td>
-   <td>Abbruch</td>
+   <td>abandon</td>
    <td>Löscht eine Aufgabe.</td>
   </tr>
   <tr>
    <td>setVisibility</td>
    <td>ProcessManagementTaskService</td>
    <td>setVisibility</td>
-   <td>Er legt die Sichtbarkeit einer Aufgabe fest. Wenn die Sichtbarkeit auf "false"gesetzt ist, ist die Aufgabe für den Benutzer danach nicht mehr sichtbar.</td>
+   <td>Er legt die Sichtbarkeit einer Aufgabe fest. Wenn Sichtbarkeit auf "false"gesetzt ist, ist die Aufgabe für den Benutzer danach nicht mehr sichtbar.</td>
   </tr>
   <tr>
    <td>getUsers</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getUsers</td>
-   <td>Sie wird für die Suche nach Benutzern verwendet. Gibt alle Benutzer zurück, wenn kein Name angegeben ist. Andernfalls werden Benutzer mit dem angegebenen Namen zurückgegeben.</td>
+   <td>Sie wird für die Suche nach Benutzern verwendet. Gibt alle Benutzer zurück, wenn kein Name angegeben ist, sonst werden Benutzer mit einem angegebenen Namen zurückgegeben.</td>
   </tr>
   <tr>
    <td>getUsersInGroup</td>
@@ -200,19 +196,19 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>grantQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>grantQueueAccess</td>
-   <td>Gewährt dem angegebenen Benutzer Zugriff auf die Warteschlange des angemeldeten Benutzers. Im Grunde wird eine eigene Warteschlange für einen anderen Benutzer freigegeben.</td>
+   <td>Gewährt einem angegebenen Benutzer Zugriff auf die Warteschlange des angemeldeten Benutzers. Im Grunde wird Ihre eigene Warteschlange für einen anderen Benutzer freigegeben.</td>
   </tr>
   <tr>
    <td>requestQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>requestQueueAccess</td>
-   <td>Es stellt Zugriffsanfragen für die Warteschlange des angegebenen Benutzers für den angemeldeten Benutzer. Wenn der Benutzer die Anforderung genehmigt, wird die Warteschlange des Benutzers für den angemeldeten Benutzer freigegeben.</td>
+   <td>Stellt die Zugriffsanfrage einer Warteschlange eines bestimmten Benutzers für den angemeldeten Benutzer. Wenn der Benutzer die Anforderung genehmigt, wird die Warteschlange des Benutzers für den angemeldeten Benutzer freigegeben.</td>
   </tr>
   <tr>
    <td>getGrantedUsers</td>
    <td>ProcessManagementQueueService</td>
    <td>getGrantedUsers</td>
-   <td>Gibt alle Benutzer zurück, die Zugriff auf die Warteschlange des angemeldeten Benutzers haben.</td>
+   <td>Es werden alle Benutzer zurückgegeben, die Zugriff auf die Warteschlange des angemeldeten Benutzers haben.</td>
   </tr>
   <tr>
    <td>getUsersForAccessibleQueues</td>
@@ -242,13 +238,13 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>getOutOfOfficeSettings</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>getOutOfOfficeSettings</td>
-   <td>Die Abwesenheitseinstellungen eines Benutzers werden angezeigt.</td>
+   <td>Ruft die Abwesenheitseinstellungen eines Benutzers ab.</td>
   </tr>
   <tr>
    <td>saveOutOfOfficeSettingsJson</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>saveOutOfOfficeSettingsJson</td>
-   <td>Speichert Abwesenheitseinstellungen eines Benutzers.</td>
+   <td>Speichert die Abwesenheitseinstellungen eines Benutzers.</td>
   </tr>
   <tr>
    <td>getAllProcesses</td>
@@ -260,7 +256,7 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>getParticipatedProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getParticipatedProcesses</td>
-   <td>Gibt eine Liste aller Prozessnamen zurück, die vom angemeldeten Benutzer verwendet wurden.</td>
+   <td>Es wird eine Liste aller Prozessnamen zurückgegeben, die vom angemeldeten Benutzer verwendet wurden.</td>
   </tr>
   <tr>
    <td>getProcessInstance<br /> </td>
@@ -308,7 +304,7 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>getAssignmentsForTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getAssignmentsForTask</td>
-   <td>Ruft alle Zuweisungen für eine Aufgabe ab. Beispiel: :- Wenn ein Benutzer eine Aufgabe an einen anderen Benutzer weiterleitet oder mit ihm berät, ist dies eine Zuweisung für eine Aufgabe.</td>
+   <td>Ruft alle Zuweisungen für eine Aufgabe ab. Wenn ein Benutzer beispielsweise eine Aufgabe an einen anderen Benutzer weiterleitet oder sie mit ihm bespricht, ist dies eine Zuweisung für eine Aufgabe.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>
@@ -332,7 +328,7 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>getTaskOfDirectReport<br /> </td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getDirectReportTask</td>
-   <td>Es wird die Aufgabe des angegebenen direkten Berichts des angemeldeten Managers zurückgegeben.</td>
+   <td>Es wird eine Aufgabe eines bestimmten Direktberichts des angemeldeten Managers zurückgegeben.</td>
   </tr>
   <tr>
    <td>forwardTaskOfDirectReport</td>
@@ -344,7 +340,7 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>rejectTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>rejectTaskOfDirectReport</td>
-   <td>Gibt eine Aufgabe eines direkt unterstellten Mitarbeiters an den vorherigen Benutzer zurück.</td>
+   <td>Es wird eine Aufgabe eines direkt unterstellten Mitarbeiters an den vorherigen Benutzer zurückgegeben.</td>
   </tr>
   <tr>
    <td>getProperty</td>
@@ -395,10 +391,10 @@ Die folgenden APIs werden in AEM Forms Workspace verwendet.
    <td>Er lädt eine Anlage für eine Aufgabe auf den Server hoch.</td>
   </tr>
   <tr>
-   <td>getImageURL (es wird auch direkt von der HTML-Vorlage aufgerufen)</td>
+   <td>getImageURL (auch direkt über die HTML-Vorlage aufgerufen)</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>getImage</td>
-   <td>Ruft Bild für einen Prozess ab.</td>
+   <td>Ruft das Bild für einen Prozess ab.</td>
   </tr>
  </tbody>
 </table>
