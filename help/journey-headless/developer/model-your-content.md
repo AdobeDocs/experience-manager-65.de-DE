@@ -2,20 +2,20 @@
 title: Erfahren Sie, wie Sie Ihre Inhalte modellieren
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie, wie Sie Ihre Inhalte für die AEM Headless-Bereitstellung mithilfe der Inhaltsmodellierung mit Inhaltsfragmentmodellen und Inhaltsfragmenten modellieren.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1821'
-ht-degree: 95%
+source-wordcount: '1809'
+ht-degree: 70%
 
 ---
 
 # Erfahren Sie, wie Sie Ihre Inhalte modellieren {#model-your-content}
 
-In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie Ihre Inhaltsstruktur modellieren. Setzen Sie dann diese Struktur für Adobe Experience Manager (AEM) mithilfe von Inhaltsfragmentmodellen und Inhaltsfragmenten um, um sie kanalübergreifend wiederzuverwenden.
+In diesem Teil der [AEM Headless-Entwickler-Tour](overview.md) erfahren Sie, wie Sie Ihre Inhaltsstruktur modellieren. Beachten Sie dann, dass die Struktur für Adobe Experience Manager (AEM) mit Inhaltsfragmentmodellen und Inhaltsfragmenten zur kanalübergreifenden Wiederverwendung verwendet wird.
 
-## Die bisherige Entwicklung {#story-so-far}
+## Ihre bisherige Tour {#story-so-far}
 
-Zu Beginn wurde in [Erfahren Sie mehr über CMS-Headless-Bereitstellung](learn-about.md) die Headless-Bereitstellung von Inhalten behandelt und erläutert, warum diese eingesetzt werden sollte. Dann wurde in [Erste Schritte mit AEM Headless](getting-started.md) AEM Headless im Kontext Ihres eigenen Projekts beschrieben.
+Am Anfang [Erfahren Sie mehr über die Headless-Entwicklung von CMS](learn-about.md) die Bereitstellung von Headless Content und die Gründe für seine Verwendung. Dann wurde in [Erste Schritte mit AEM Headless](getting-started.md) AEM Headless im Kontext Ihres eigenen Projekts beschrieben.
 
 Im vorherigen Dokument der AEM Headless-Tour, [Der Weg zu Ihrem ersten Erlebnis mit AEM Headless](path-to-first-experience.md) haben Sie dann die Schritte kennengelernt, die zur Implementierung Ihres ersten Projekts erforderlich sind. Nach dem Lesen sollten Sie:
 
@@ -37,19 +37,19 @@ Dieser Artikel baut auf diesen Grundlagen auf, sodass Sie verstehen, wie Sie Ihr
 
 >[!NOTE]
 >
->Die Datenmodellierung ist ein sehr großes Feld, da sie bei der Entwicklung von relationalen Datenbanken verwendet wird. Es gibt viele Bücher und Online-Informationsquellen dazu.
+>Die Datenmodellierung ist ein großes Feld, da sie bei der Entwicklung von relationalen Datenbanken verwendet wird. Es gibt viele Bücher und Online-Informationsquellen, die verfügbar sind.
 >
->Wir werden nur die Aspekte berücksichtigen, die bei der Modellierung von Daten für die Verwendung mit AEM Headless von Interesse sind.
+>Die Aspekte, die bei der Modellierung von Daten für die Verwendung mit AEM Headless von Interesse sind, werden nur berücksichtigt.
 
 ## Inhaltsmodellierung {#content-modeling}
 
 *Die Welt da draußen ist groß und schlecht*.
 
-Vielleicht, vielleicht auch nicht, aber es ist sicherlich eine große ***komplizierte*** Welt da draußen und die Datenmodellierung wird verwendet, um eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts zu definieren, wobei die spezifischen Informationen verwendet werden, die für einen bestimmten Zweck benötigt werden.
+Vielleicht, vielleicht nicht, aber es ist sicherlich eine große ***kompliziert*** Welt da draußen. Mit der Datenmodellierung wird eine vereinfachte Darstellung eines sehr (sehr) kleinen Unterabschnitts unter Verwendung der spezifischen Informationen definiert, die für einen bestimmten Zweck benötigt werden.
 
 >[!NOTE]
 >
->Da sich AEM mit Inhalten beschäftigt, bezeichnen wir die Datenmodellierung als Inhaltsmodellierung.
+>Da AEM Inhalte behandelt, wird Datenmodellierung als Inhaltsmodellierung bezeichnet.
 
 Beispiel:
 
@@ -68,7 +68,7 @@ Es gibt viele Schulen, aber alle haben verschiedene Gemeinsamkeiten:
 * Viele Aktivitäten außerhalb des Lehrplans
 * und so weiter....
 
-Selbst in einem so kleinen Beispiel kann die Liste endlos erscheinen. Wenn Ihr Programm jedoch nur eine einfache Aufgabe ausführen soll, müssen Sie die Informationen auf das Wichtigste beschränken.
+Selbst in einem so kleinen Beispiel kann die Liste endlos erscheinen. Wenn Ihre Anwendung jedoch nur eine einfache Aufgabe ausführen soll, können Sie die Informationen auf die Grundlagen beschränken.
 
 Beispielsweise Werbung für Sonderveranstaltungen für alle Schulen in der Region:
 
@@ -81,9 +81,9 @@ Beispielsweise Werbung für Sonderveranstaltungen für alle Schulen in der Regio
 
 ### Konzepte {#concepts}
 
-Was Sie beschreiben möchten, wird als **Entitäten** bezeichnet – im Grunde die „Dinge“, über die wir Informationen speichern möchten.
+Was Sie beschreiben möchten, wird als **Entitäten** - im Grunde die &quot;Dinge&quot;, über die Sie Informationen speichern möchten.
 
-Die Informationen, die wir über sie speichern wollen, sind die **Attribute** (Eigenschaften), wie z. B. Name und Qualifikationen für die Lehrer.
+Die Informationen, die Sie über sie speichern möchten, sind die **Attribute** (Eigenschaften), z. B. Name und Qualifikationen für die Lehrkräfte.
 
 Dann gibt es verschiedene **Beziehungen** zwischen den Entitäten. Beispielsweise hat eine Schule in der Regel nur eine(n) Schulleiter(in) und viele Lehrkräfte (und normalerweise ist der Schulleiter auch Lehrer).
 
@@ -91,9 +91,9 @@ Der Prozess der Analyse und Definition dieser Informationen zusammen mit den Bez
 
 ### Grundlagen {#basics}
 
-Häufig müssen Sie zunächst ein **Konzeptschema** erstellen, in dem die Entitäten und ihre Beziehungen beschrieben werden. Normalerweise handelt es sich hierbei um einen allgemeinen (konzeptionellen) Ansatz.
+Oft können Sie mit der Erstellung eines **Konzeptionelles Schema** beschreibt die Entitäten und ihre Beziehungen. Normalerweise handelt es sich hierbei um einen allgemeinen (konzeptionellen) Ansatz.
 
-Sobald dies stabil ist, können Sie die Modelle in ein **logisches Schema** übersetzen, das die Entitäten zusammen mit den Attributen und den Beziehungen beschreibt. Auf dieser Ebene sollten Sie die Definitionen genau prüfen, um Duplikate zu vermeiden und Ihren Entwurf zu optimieren.
+Sobald dies stabil ist, können Sie die Modelle in ein **logisches Schema** übersetzen, das die Entitäten zusammen mit den Attributen und den Beziehungen beschreibt. Untersuchen Sie auf dieser Ebene die Definitionen genau, um Duplikate zu vermeiden und Ihr Design zu optimieren.
 
 >[!NOTE]
 >
@@ -132,7 +132,7 @@ Die Datenmodellierung ist eine Reihe etablierter Techniken, die häufig bei der 
 
 Um sicherzustellen, dass Ihr Programm die erforderlichen Inhalte konsistent und effizient von AEM anfragen und empfangen kann, müssen diese Inhalte strukturiert sein.
 
-Das bedeutet, dass Ihr Programm die Form der Antwort im Voraus kennt und daher weiß, wie sie verarbeitet wird. Dies ist viel einfacher als das Empfangen von Freiforminhalten, die geparst werden müssen, um festzustellen, was sie enthalten und wie sie daraus folgend verwendet werden können.
+Das bedeutet, dass Ihr Programm die Form der Antwort im Voraus kennt und daher weiß, wie sie verarbeitet wird. Dies ist einfacher als das Empfangen von Freiforminhalten, die analysiert werden müssen, um zu bestimmen, was sie enthält und daher, wie sie verwendet werden können.
 
 ### Einführung in das Wie? {#how}
 
@@ -158,7 +158,7 @@ Inhaltsfragmentmodelle bieten verschiedene Mechanismen, mit denen Sie die Strukt
 Ein Inhaltsfragmentmodell beschreibt eine Entität.
 
 >[!NOTE]
->Um neue Modelle erstellen zu können, müssen Sie die Funktion für Inhaltsfragmente im Konfigurations-Browser aktivieren.
+>Sie müssen die Funktion für Inhaltsfragmente im Konfigurationsbrowser aktivieren, damit Sie Modelle erstellen können.
 
 >[!TIP]
 >
@@ -178,8 +178,8 @@ Beispiel:
 
 AEM stellt die folgenden Datentypen bereit, mit denen Sie Ihren Inhalt modellieren können:
 
-* Einzeilentext
-* Mehrzeilentext
+* Einzeiliger Text
+* Mehrzeiliger Text
 * Zahl
 * Boolesch
 * Datum und Uhrzeit
@@ -202,11 +202,11 @@ Dies bietet Verweise auf andere Inhaltsfragmente.
 Dieser Referenztyp wird verwendet, um verschachtelte Inhalte zu erstellen und die Beziehungen einzuführen, die zum Modellieren Ihres Inhalts erforderlich sind.
 Der Datentyp kann so konfiguriert werden, dass Fragmentautoren folgende Möglichkeiten haben:
    * Direktes Bearbeiten des referenzierten Fragments
-   * Erstellen eines neuen Inhaltsfragments basierend auf dem entsprechenden Modell
+   * Erstellen Sie ein Inhaltsfragment, das auf dem entsprechenden Modell basiert.
 
 ### Erstellen von Inhaltsfragmentmodellen {#creating-content-fragment-models}
 
-Ganz am Anfang müssen Sie Inhaltsfragmentmodelle für Ihre Website aktivieren. Dies erfolgt im Konfigurations-Browser unter „Tools“ > „Allgemein“ > „Konfigurations-Browser“. Sie können entweder den globalen Eintrag konfigurieren oder eine neue Konfiguration erstellen. Beispiel:
+Am Anfang müssen Sie Inhaltsfragmentmodelle für Ihre Site aktivieren. Diese Aktivierung erfolgt im Konfigurationsbrowser unter Tools > Allgemein > Konfigurationsbrowser. Sie können entweder den globalen Eintrag konfigurieren oder eine Konfiguration erstellen. Beispiel:
 
 ![Konfiguration definieren](assets/cfm-configuration.png)
 
@@ -234,11 +234,11 @@ Ein Inhaltsfragment basiert auf einem bestimmten Inhaltsfragmentmodell, das Sie 
 
 ### Erstellen und Bearbeiten von strukturierten Inhalten {#create-edit-structured-content}
 
-Nachdem das Fragment erstellt wurde, können Sie es im Inhaltsfragment-Editor öffnen. Folgende Informationen/Optionen sind verfügbar:
+Nachdem das Fragment erstellt wurde, können Sie es im Inhaltsfragment-Editor öffnen. Hier haben Sie folgende Möglichkeiten:
 
-* Bearbeiten Ihrer Inhalte im normalen oder im Vollbildmodus.
-* Formatieren Ihrer Inhalte entweder als Volltext, Nur-Text oder Markdown.
-* Erstellen und Verwalten von Varianten Ihrer Inhalte.
+* Bearbeiten Sie den Inhalt im normalen oder im Vollbildmodus.
+* Formatieren Sie Ihren Inhalt entweder als Volltext, Nur Text oder Markdown.
+* Erstellen und verwalten Sie Varianten Ihres Inhalts.
 * Verknüpfen von Inhalten.
 * Bearbeiten von Metadaten.
 * Anzeigen der Baumstruktur.
@@ -266,15 +266,15 @@ Eine einfache Struktur als Beispiel finden Sie unter „Beispielstruktur für In
 
 ## Wie geht es weiter {#whats-next}
 
-Nachdem Sie nun gelernt haben, wie Sie Ihre Struktur modellieren und abhängig davon Inhalte erstellen, besteht der nächste Schritt hierin: [Erfahren Sie, wie Sie mit GraphQL-Abfragen auf Ihre Inhaltsfragmente zugreifen und diese abrufen können](access-your-content.md). Dort wird GraphQL eingeführt und besprochen und dann werden einige Beispielabfragen angezeigt, um zu zeigen, wie die Dinge in der Praxis funktionieren.
+Nachdem Sie nun gelernt haben, wie Sie Ihre Struktur modellieren und abhängig davon Inhalte erstellen, besteht der nächste Schritt hierin: [Erfahren Sie, wie Sie mit GraphQL-Abfragen auf Ihre Inhaltsfragmente zugreifen und diese abrufen können](access-your-content.md). Dadurch wird GraphQL eingeführt und besprochen. Anschließend werden einige Beispielabfragen angeschaut, um zu sehen, wie die Dinge in der Praxis funktionieren.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
-* [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) – die Einführungsseite für Inhaltsfragmente
-   * [Inhaltsfragmente im Konfigurations-Browser](/help/assets/content-fragments/content-fragments-configuration-browser.md) – Aktivieren der Funktion „Inhaltsfragment“ im Konfigurations-Browser
-   * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) – Erstellen und Bearbeiten von Inhaltsfragmentmodellen
-   * [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md) – Erstellen und Bearbeiten von Inhaltsfragmenten. Diese Seite führt Sie zu anderen detaillierten Abschnitten
-* [AEM-GraphQL-Schemata](access-your-content.md) – So setzt GraphQL Modelle um
+* [Arbeiten mit Inhaltsfragmenten](/help/assets/content-fragments/content-fragments.md) - Die Einstiegsseite für Inhaltsfragmente.
+   * [Inhaltsfragmente im Konfigurationsbrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md) - Aktivieren Sie die Funktion &quot;Inhaltsfragment&quot;im Konfigurationsbrowser.
+   * [Inhaltsfragmentmodelle](/help/assets/content-fragments/content-fragments-models.md) - Erstellen und Bearbeiten von Inhaltsfragmentmodellen.
+   * [Verwalten von Inhaltsfragmenten](/help/assets/content-fragments/content-fragments-managing.md) - Erstellen und Bearbeiten von Inhaltsfragmenten. Diese Seite führt Sie zu anderen detaillierten Abschnitten.
+* [GraphQL-Schemata AEM](access-your-content.md) - Wie GraphQL Modelle realisiert.
 * [Beispielstruktur für Inhaltsfragmente](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
-* [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) – Eine kurze Video-Tutorial-Reihe, die einen Überblick über die Verwendung von AEM Headless-Funktionen bietet, einschließlich Inhaltsmodellierung und GraphQL
+* [Erste Schritte mit AEM Headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html?lang=de) – eine kurze Video-Tutorial-Reihe, die einen Überblick über die Verwendung AEM Headless-Funktionen bietet, einschließlich Inhaltsmodellierung und GraphQL.
    * [Grundlagen der GraphQL-Modellierung](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/video-series/modeling-basics.html?lang=de) –- Erfahren Sie, wie Sie Inhaltsfragmente in Adobe Experience Manager (AEM) für die Verwendung mit GraphQL definieren und verwenden.

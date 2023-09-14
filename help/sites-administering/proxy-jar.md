@@ -1,26 +1,22 @@
 ---
 title: Proxy-Server-Tool (proxy.jar)
-seo-title: Proxy Server Tool (proxy.jar)
 description: Erfahren Sie mehr über das Proxy-Server-Tool in AEM.
-seo-description: Learn about the Proxy Server Tool in AEM.
-uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1160'
-ht-degree: 22%
+source-wordcount: '1156'
+ht-degree: 15%
 
 ---
 
 # Proxy-Server-Tool (proxy.jar){#proxy-server-tool-proxy-jar}
 
-Der Proxyserver fungiert als Zwischenserver, der Anforderungen zwischen einem Client und einem Server weiterleitet. Der Proxy-Server verfolgt alle Interaktionen zwischen Client und Server und gibt ein Protokoll der gesamten TCP-Kommunikation aus. Auf diese Weise können Sie genau überwachen, was passiert, ohne auf den Hauptserver zugreifen zu müssen.
+Der Proxyserver fungiert als Zwischenserver, der Anforderungen zwischen einem Client und einem Server weiterleitet. Der Proxyserver verfolgt alle Interaktionen zwischen Client und Server und gibt ein Protokoll der gesamten TCP-Kommunikation aus. Auf diese Weise können Sie genau überwachen, was passiert, ohne auf den Hauptserver zugreifen zu müssen.
 
 Sie finden den Proxyserver im entsprechenden Installationsordner:
 
@@ -47,10 +43,10 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 ### Optionen {#options}
 
 * **q (leiser Modus)** Die Anforderungen werden nicht in das Konsolenfenster geschrieben. Verwenden Sie dies, wenn Sie die Verbindung nicht verlangsamen möchten oder die Ausgabe in einer Datei protokollieren (siehe Option -logfile ).
-* **b (binärer Modus)** Wenn Sie nach bestimmten Byte-Kombinationen im Traffic suchen, aktivieren Sie den Binärmodus. Die Ausgabe enthält dann die Hexadezimal- und die Zeichenausgabe.
+* **b (binärer Modus)** Wenn Sie nach bestimmten Byte-Kombinationen im Traffic suchen, aktivieren Sie den Binärmodus. Die Ausgabe enthält die hexadezimale und die Zeichenausgabe.
 * **t (Zeitstempelprotokolleinträge)** Fügt jeder Protokollausgabe einen Zeitstempel hinzu. Der Zeitstempel wird in Sekunden angegeben, sodass er möglicherweise nicht für die Überprüfung einzelner Anforderungen geeignet ist. Verwenden Sie sie, um Ereignisse zu suchen, die zu einem bestimmten Zeitpunkt aufgetreten sind, wenn Sie den Proxyserver über einen längeren Zeitraum verwenden.
 * **logfile &lt;filename> (In Protokolldatei schreiben):** Verwenden Sie diese Option, um die Konversation zwischen Client und Server in eine Protokolldatei zu schreiben. Dieser Parameter funktioniert auch im stillen Modus.
-* **i &lt;numindentions> (Einzug hinzufügen)** Jede aktive Verbindung wird für eine bessere Lesbarkeit eingerückt. Der Standardwert ist 16 Ebenen. (Neu in proxy.jar Version 1.16).
+* **i &lt;numindentions> (Einzug hinzufügen)** Jede aktive Verbindung wird für eine bessere Lesbarkeit eingerückt. Der Standardwert beträgt 16 Ebenen. (Neu in proxy.jar Version 1.16).
 
 ## Verwendung des Proxyserver-Tools {#uses-of-the-proxy-server-tool}
 
@@ -58,7 +54,7 @@ In den folgenden Szenarien werden ein paar Einsatzzwecke demonstriert, für die 
 
 **Suchen nach Cookies und ihren Werten**
 
-Das folgende Beispiel für einen Protokolleintrag zeigt alle Cookies und deren Werte, die vom Client bei der 6. seit dem Proxy-Start geöffneten Verbindung gesendet wurden:
+Das folgende Beispiel für einen Protokolleintrag zeigt alle Cookies und deren Werte, die vom Client bei der sechsten seit dem Proxy-Start geöffneten Verbindung gesendet werden:
 
 ```xml
 C-6-#000635 -> [Cookie: cq3session=7e39bc51-ac72-3f48-88a9-ed80dbac0693; Show=ShowMode; JSESSIONID=68d78874-cabf-9444-84a4-538d43f5064d ]
@@ -86,7 +82,7 @@ So überprüfen Sie, ob Keep-Alive funktioniert:
 
 **Finden verlorener Anfragen**
 
-Sollten Anfragen in einer komplexen Serverumgebung, zum Beispiel einer mit Firewall und Dispatcher, verloren gehen, können Sie den Proxyserver verwenden, um herauszufinden, wo die Anfrage verloren ging. Bei einer Firewall:
+Wenn Sie Anforderungen in einer komplexen Servereinstellung verlieren, z. B. mit einer Firewall und einem Dispatcher, können Sie den Proxyserver verwenden, um herauszufinden, wo die Anforderung verloren ging. Wenn eine Firewall vorhanden ist:
 
 1. Proxy vor einer Firewall starten
 1. Starten Sie einen weiteren Proxy nach einer Firewall.
@@ -98,7 +94,7 @@ Gehen Sie wie folgt vor, wenn gelegentlich hängende Anfragen auftreten:
 
 1. Starten Sie proxy.jar.
 1. Warten oder schreiben Sie das Zugriffsprotokoll in eine Datei, wobei jeder Eintrag einen Zeitstempel aufweist.
-1. Wenn die Anfrage anfängt zu hängen, können Sie sehen, wie viele Verbindungen offen waren und welche Anfrage dafür verantwortlich ist.
+1. Wenn die Anfrage beginnt zu hängen, können Sie sehen, wie viele Verbindungen geöffnet waren und welche Anfrage Probleme verursacht.
 
 ## Das Format von Protokollmeldungen {#the-format-of-log-messages}
 
@@ -126,11 +122,11 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Zeigt die Anzahl der Bytes an, die zwischen Client und Server bei der 6. Verbindung und mit der durchschnittlichen Geschwindigkeit übergeben wurden.
+Dies zeigt die Anzahl der Bytes, die zwischen Client und Server bei der sechsten Verbindung und mit der durchschnittlichen Geschwindigkeit übergeben wurden.
 
 ## Beispiel für eine Protokollausgabe {#an-example-of-log-output}
 
-Wir werden eine einfache Vorlage überprüfen, die bei Bedarf folgenden Code erzeugt:
+Überprüfen Sie eine einfache Vorlage, die bei Bedarf den folgenden Code erzeugt:
 
 ```xml
 <html>
@@ -150,7 +146,7 @@ Wenn AEM auf localhost:4303 ausgeführt wird, starten Sie den Proxyserver wie fo
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-Sie können ohne den Proxyserver auf den Server zugreifen (`localhost:4303`), wenn Sie jedoch über `localhost:4444` auf ihn zugreifen, protokolliert der Proxyserver die Kommunikation. Öffnen Sie einen Browser und greifen Sie auf eine mit der obigen Vorlage erstellte Seite zu. Sehen Sie sich danach die Protokolldatei an.
+Sie können auf den Server zugreifen (`localhost:4303`) ohne den Proxy-Server, aber wenn Sie über darauf zugreifen `localhost:4444`, protokolliert der Proxyserver die Kommunikation. Öffnen Sie einen Browser und greifen Sie auf eine mit der obigen Vorlage erstellte Seite zu. Sehen Sie sich danach die Protokolldatei an.
 
 >[!NOTE]
 >
@@ -181,7 +177,7 @@ Der Client fordert eine Keep-Alive-Verbindung an, damit der Server mehrere Datei
 C-0-#000369 -> [Connection: Keep-Alive ]
 ```
 
-Der Proxy-Server ist ein gutes Tool, um zu überprüfen, ob Cookies richtig gesetzt sind oder nicht. Hier sehen wir Folgendes:
+Der Proxy-Server ist ein gutes Tool, um zu überprüfen, ob Cookies richtig gesetzt sind oder nicht. Hier sehen Sie Folgendes:
 
 * von AEM generiertes cq3session -Cookie
 * das vom CFC generierte Switch-Cookie für den Anzeigemodus
@@ -281,4 +277,4 @@ Das obige Beispiel ist vergleichsweise einfach, da die beiden Verbindungen nache
 * zuerst gibt der Server den HTML-Code zurück.
 * dann fordert der Browser das Bild an und öffnet eine neue Verbindung.
 
-In der Praxis kann eine Seite viele parallele Anforderungen für Bilder, Stylesheets, JavaScript-Dateien usw. generieren. Dies bedeutet, dass die Protokolle überlappende Einträge von parallelen offenen Verbindungen aufweisen. In diesem Fall wurde die Verwendung von Option -i zur Verbesserung der Lesbarkeit empfohlen.
+In der Praxis kann eine Seite viele parallele Anforderungen für Bilder, Stylesheets, JavaScript-Dateien usw. generieren. Dies bedeutet, dass die Protokolle überlappende Einträge von parallelen offenen Verbindungen aufweisen. In diesem Fall empfiehlt Adobe die Verwendung von Option -i, um die Lesbarkeit zu verbessern.

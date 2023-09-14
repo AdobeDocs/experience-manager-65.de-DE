@@ -1,17 +1,13 @@
 ---
 title: Inhaltsbereitstellung
-seo-title: Content Delivery
 description: Inhaltsbereitstellung
-seo-description: null
-uuid: 1e7bea34-ca50-41ed-8295-fa182c27fa69
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '969'
+source-wordcount: '961'
 ht-degree: 1%
 
 ---
@@ -22,15 +18,15 @@ ht-degree: 1%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Mobile Apps sollten nach Bedarf alle Inhalte in AEM verwenden können, um das Targeting-App-Erlebnis bereitzustellen.
+Mobile Apps sollten alle Inhalte in AEM nach Bedarf verwenden können, um das zielgerichtete App-Erlebnis bereitzustellen.
 
 Dazu gehören die Verwendung von Assets, Site-Inhalten, CAAs-Inhalten (Over-the-Air) und benutzerdefinierten Inhalten, die möglicherweise eine eigene Struktur aufweisen.
 
 >[!NOTE]
 >
->**Over-the-Air-Inhalt** kann über ContentSync -Handler von einem der oben genannten stammen. Sie kann zum Stapelgebungs- und Versand über Zips sowie zur Wartung von Updates oder Paketen verwendet werden.
+>**Over-the-Air-Inhalt** kann über ContentSync -Handler von einem der oben genannten stammen. Sie können sie verwenden, um ein Batch-Paket zu erstellen und mithilfe von ZIP-Dateien bereitzustellen und Aktualisierungen für diese Pakete zu verwalten.
 
-Content Services bietet drei Hauptmaterialtypen:
+Es gibt drei Hauptmaterialtypen, die Content Services bereitstellt:
 
 1. **Assets**
 1. **HTML-Inhalt verpackt (HTML/CSS/JS)**
@@ -42,26 +38,26 @@ Content Services bietet drei Hauptmaterialtypen:
 
 Asset-Sammlungen sind AEM Konstrukte, die Verweise auf andere Sammlungen enthalten.
 
-Eine Asset-Sammlung kann über Content Services verfügbar gemacht werden. Der Aufruf einer Asset-Sammlung in einer Anfrage gibt ein Objekt zurück, das eine Liste der Assets einschließlich ihrer URLs ist. Der Zugriff auf Assets erfolgt über eine URL. Die URL wird in einem Objekt bereitgestellt. Beispiel:
+Eine Asset-Sammlung kann über Content Services verfügbar gemacht werden. Der Aufruf einer Asset-Sammlung in einer Anfrage gibt ein Objekt zurück, das eine Liste der Assets einschließlich ihrer URLs ist. Der Zugriff auf Assets erfolgt über eine URL. Die URL wird in einem Objekt bereitgestellt. Zum Beispiel:
 
-* Eine Seitenentität gibt JSON (Seitenobjekt) zurück, das eine Bildreferenz enthält. Die Bildreferenz ist eine URL, mit der die Asset-Binärdatei für das Bild abgerufen wird.
-* Eine Anfrage nach einer Liste von Assets in einem Ordner gibt JSON mit Details zu allen Entitäten in diesem Ordner zurück. Diese Liste ist ein Objekt. Die JSON-Datei enthält URL-Verweise, die verwendet werden, um die Asset-Binärdatei für jedes Asset in diesem Ordner abzurufen.
+* Eine Seitenentität gibt die JSON (Seitenobjekt) zurück, die eine Bildreferenz enthält. Die Bildreferenz ist eine URL, mit der die Asset-Binärdatei für das Bild abgerufen wird.
+* Bei einer Anforderung einer Liste von Assets in einem Ordner wird die JSON-Datei mit Details zu allen Entitäten in diesem Ordner zurückgegeben. Diese Liste ist ein Objekt. Die JSON-Datei enthält URL-Verweise, mit denen die Asset-Binärdatei für jedes Asset in diesem Ordner abgerufen wird.
 
 ### Asset-Optimierung {#asset-optimization}
 
 Ein Schlüsselwert von Content Services ist die Möglichkeit, Assets zurückzugeben, die für das Gerät optimiert sind. Dadurch werden die Anforderungen an die lokale Gerätespeicherung reduziert und die App-Leistung verbessert.
 
-Die Asset-Optimierung ist eine serverseitige Funktion, die auf den in der API-Anfrage bereitgestellten Informationen basiert. Wo immer möglich, sollten die Asset-Ausgabedarstellungen zwischengespeichert werden, sodass ähnliche Anforderungen keine erneute Generierung der Asset-Ausgabedarstellung erfordern.
+Die Asset-Optimierung ist eine serverseitige Funktion, die auf den in der API-Anfrage bereitgestellten Informationen basiert. Wo immer möglich, sollten die Asset-Ausgabedarstellungen zwischengespeichert werden, sodass ähnliche Anforderungen keine Neuerstellung der Asset-Ausgabedarstellung erfordern.
 
 ### Assets-Workflow {#assets-workflow}
 
 Der Asset-Workflow sieht wie folgt aus:
 
 1. Asset-Referenz verfügbar in AEM nativen
-1. Erstellen einer Asset-Referenzentität anhand des Modells
+1. Erstellen einer Asset-Referenzentität anhand ihres Modells
 1. Entität bearbeiten
 
-   1. Asset oder Asset-Sammlung auswählen
+   1. Auswählen eines Assets oder einer Asset-Sammlung
    1. JSON-Rendering anpassen
 
 Das folgende Diagramm zeigt die **Asset-Referenz-Workflow**:
@@ -70,13 +66,13 @@ Das folgende Diagramm zeigt die **Asset-Referenz-Workflow**:
 
 ### Verwalten von Assets {#managing-assets}
 
-Content Services bieten Zugriff auf AEM verwalteten Assets, auf die möglicherweise nicht über andere AEM verwiesen wird.
+Content Services bieten Zugriff auf AEM verwaltete Assets, auf die möglicherweise nicht über andere AEM verwiesen wird.
 
 #### Vorhandene verwaltete Assets {#existing-managed-assets}
 
-Ein bestehender AEM Sites- und Assets-Benutzer verwendet AEM Assets, um alle digitalen Inhalte für alle Kanäle zu verwalten. Sie entwickeln eine native mobile App und müssen mehrere Assets verwenden, die von AEM Assets verwaltet werden. Zum Beispiel Logos, Hintergrundbilder, Schaltflächensymbole usw.
+Ein Benutzer von AEM Sites und Assets verwendet AEM Assets, um alle digitalen Inhalte für alle Kanäle zu verwalten. Sie entwickeln eine native mobile App und müssen mehrere Assets verwenden, die von AEM Assets verwaltet werden. Zum Beispiel Logos, Hintergrundbilder und Schaltflächensymbole.
 
-Derzeit sind diese auf das Assets-Repository verteilt. Die Dateien, auf die die App verweisen muss, befinden sich in:
+Derzeit sind diese auf das Assets-Repository verteilt. Die Dateien, auf die die App verweisen muss, lauten wie folgt:
 
 * /content/dam/geometrixx-outdoors/brand/logo_light.png
 * /content/dam/geometrixx-outdoors/brand/logo_dark.png
@@ -86,7 +82,7 @@ Derzeit sind diese auf das Assets-Repository verteilt. Die Dateien, auf die die 
 
 #### Zugreifen auf CS Asset-Entitäten {#accessing-cs-asset-entities}
 
-Lassen wir die Schritte beiseite, die zeigen, wie die Seite zunächst über die API zur Verfügung gestellt wird (sie wird von der Beschreibung der AEM UI abgedeckt), und gehen Sie davon aus, dass sie abgeschlossen ist. Asset-Entitäten wurden erstellt und zum Bereich &quot;appImages&quot;hinzugefügt. Zusätzliche Ordner wurden aus organisatorischen Gründen unter dem Bereich erstellt. Daher werden die Asset-Entitäten im AEM JCR wie folgt gespeichert:
+Lassen wir die Schritte beiseite, die zeigen, wie die Seite zunächst über die API zur Verfügung gestellt wird (sie wird durch die Beschreibung der AEM UI abgedeckt), und gehen Sie davon aus, dass sie abgeschlossen ist. Asset-Entitäten wurden erstellt und zum Bereich &quot;appImages&quot;hinzugefügt. Zusätzliche Ordner wurden aus organisatorischen Gründen unter dem Bereich erstellt. Daher werden die Asset-Entitäten im AEM JCR wie folgt gespeichert:
 
 * /content/entity/appImages/logos/logo_light
 * /content/entity/appImages/logos/logo_dark
@@ -104,7 +100,7 @@ Das Ergebnis wäre ein Objekt im JSON-Format, das eine Liste der Assets im Ordne
 
 #### Abrufen eines Bildes {#getting-an-image}
 
-Die JSON stellt für jedes Bild eine URL bereit, die von Content Services für das Bild generiert wird.
+Die JSON stellt für jedes von Content Services generierte Bild eine URL für das Bild bereit.
 
 Um die Binärdatei für das &quot;Warenkorb&quot;-Bild zu erhalten, wird die Client-Bibliothek erneut verwendet.
 
@@ -112,12 +108,12 @@ Um die Binärdatei für das &quot;Warenkorb&quot;-Bild zu erhalten, wird die Cli
 
 HTML-Inhalte sind für Kunden erforderlich, die das Layout des Inhalts beibehalten müssen. Dies ist nützlich für native Anwendungen, die einen Webcontainer verwenden (z. B. eine Cordova-Webansicht), um den Inhalt anzuzeigen.
 
-AEM Content Services kann der mobilen App über die API HTML-Inhalte bereitstellen. Kunden, die AEM Inhalt als HTML verfügbar machen möchten, erstellen eine HTML-Seitenentität, die auf die AEM Inhaltsquelle verweist.
+AEM Content Services stellt der mobilen App über die API HTML-Inhalte zur Verfügung. Kunden, die AEM Inhalt als HTML verfügbar machen möchten, können eine HTML-Seitenentität erstellen, die auf die AEM Inhaltsquelle verweist.
 
 Die folgenden Optionen werden berücksichtigt:
 
-* **Zip-Datei:** Damit das gesamte referenzierte Material der Seite am besten auf dem Gerät angezeigt werden kann - CSS, JavaScript, Assets usw. - wird in einer einzelnen komprimierten Datei mit der Antwort enthalten sein. Die Verweise auf der HTML-Seite werden angepasst, um einen relativen Pfad zu diesen Dateien zu verwenden.
-* **Streaming:** Abrufen eines Manifests der erforderlichen Dateien von AEM. Verwenden Sie dann dieses Manifest, um alle Dateien (HTML, CSS, JS usw.) anzufordern. mit nachfolgenden Anfragen.
+* **Zip-Datei:** Damit die beste Möglichkeit besteht, auf dem Gerät richtig anzuzeigen, werden die referenzierten Materialien (CSS, JavaScript, Assets usw. der Seite) in einer einzelnen komprimierten Datei mit der Antwort enthalten. Die Verweise auf der HTML-Seite können angepasst werden, um einen relativen Pfad zu diesen Dateien zu verwenden.
+* **Streaming:** Abrufen eines Manifests der erforderlichen Dateien von AEM. Verwenden Sie dann dieses Manifest, um alle Dateien (HTML, CSS, JS usw.) mit nachfolgenden Anfragen anzufordern.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 

@@ -1,32 +1,28 @@
 ---
 title: Ausgewählten Benutzergruppen Zugriff auf den Regel-Editor gewähren
-seo-title: Grant rule editor access to select user groups
 description: Gewähren Sie ausgewählten Benutzergruppen eingeschränkten Zugriff auf den Regeleditor.
-seo-description: Grant restricted access to rule editor to select user groups.
-uuid: efa2570a-20ac-4b43-8a0e-38247f84d02f
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 feature: Adaptive Forms
 exl-id: a1a2b277-3133-404b-a7fc-337cedddb12c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '374'
-ht-degree: 70%
+source-wordcount: '378'
+ht-degree: 45%
 
 ---
 
 # Ausgewählten Benutzergruppen Zugriff auf den Regel-Editor gewähren{#grant-rule-editor-access-to-select-user-groups}
 
-<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird der ältere Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
+<span class="preview"> Adobe empfiehlt die Verwendung der modernen und erweiterbaren Datenerfassung [Kernkomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=de) für [Erstellen neuer adaptiver Forms](/help/forms/using/create-an-adaptive-form-core-components.md) oder [Hinzufügen von Adaptive Forms zu AEM Sites-Seiten](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Diese Komponenten stellen einen bedeutenden Fortschritt bei der Erstellung adaptiver Forms dar und sorgen für beeindruckende Benutzererlebnisse. In diesem Artikel wird ein älterer Ansatz zum Erstellen von Adaptive Forms mithilfe von Foundation-Komponenten beschrieben. </span>
 
 ## Übersicht {#overview}
 
 Sie können verschiedene Arten von Benutzern mit unterschiedlichen Fähigkeiten haben, die mit Adaptive Forms arbeiten. Während professionelle Benutzer möglicherweise über die nötigen Kenntnisse zum Arbeiten mit Skripten und komplexen Regeln verfügen, genügt es für Benutzer, die nur über Grundkenntnisse verfügen, mit dem Layout und einfachen Eigenschaften adaptiver Formulare zu arbeiten.
 
-Mit AEM Forms können Sie den Zugriff des Regeleditors auf Benutzer anhand ihrer Rolle oder Funktion einschränken. In den Einstellungen für den Konfigurations-Service für adaptive Formular können Sie festlegen, welche [Benutzergruppen](/help/sites-administering/security.md) den Regeleditor anzeigen und auf ihn zugreifen können.
+Mit AEM Forms können Sie den Zugriff des Regeleditors auf Benutzer anhand ihrer Rolle oder Funktion einschränken. In den Einstellungen des Adaptive Forms Configuration Service können Sie die [Benutzergruppen](/help/sites-administering/security.md) die den Regeleditor anzeigen und darauf zugreifen können.
 
 ## Angeben von Benutzergruppen für Zugriff auf Regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
@@ -35,7 +31,7 @@ Mit AEM Forms können Sie den Zugriff des Regeleditors auf Benutzer anhand ihrer
 
    ![1–2](assets/1-2.png)
 
-1. Suchen Sie im Fenster „Web-Konsole“ nach **[!UICONTROL Konfiguration von adaptiven Formularen und Web-Kanälen für interaktive Kommunikation]** und klicken Sie darauf. Das Dialogfeld **[!UICONTROL Konfiguration von adaptiven Formularen und Web-Kanälen für interaktive Kommunikation]** wird angezeigt. Behalten Sie die Werte bei und klicken Sie auf **Speichern**.
+1. Suchen Sie im Fenster Web Console nach und klicken Sie auf **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]**. **[!UICONTROL Webkanalkonfiguration für adaptive Formulare und interaktive Kommunikation]** angezeigt. Behalten Sie die Werte bei und klicken Sie auf **Speichern**.
 
    Es wird eine Datei /apps/system/config/com.adobe.aemds.guide.service.impl.AdaptiveFormConfigurationServiceImpl.config im CRX-Repository erstellt.
 
@@ -44,13 +40,13 @@ Mit AEM Forms können Sie den Zugriff des Regeleditors auf Benutzer anhand ihrer
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup"]`
 
-   Um den Zugriff für mehrere Gruppen zu ermöglichen, geben Sie eine Liste durch Komma getrennter Werte an:
+   Um den Zugriff für mehrere Gruppen zu aktivieren, geben Sie eine Liste mit kommagetrennten Werten an:
 
    `af.ruleeditor.custom.groups=["RuleEditorsUserGroup", "PermittedUserGroup"]`
 
    ![Benutzer erstellen](assets/create_user_new.png)
 
-   Wenn jetzt ein Benutzer, der nicht zu einer angegebenen Benutzergruppe (hier: RuleEditorsUserGroup) gehört, auf ein Feld tippt, ist das Symbol „Regel bearbeiten“ (![edit-rules1](assets/edit-rules1.png)) für ihn nicht in der Komponentensymbolleiste verfügbar:
+   Wenn nun ein Benutzer, der nicht zur angegebenen Benutzergruppe (hier RuleEditorsUserGroup) gehört, auf ein Feld tippt, wird das Symbol Regel bearbeiten ( ![edit-rules1](assets/edit-rules1.png)) ist für sie nicht in der Komponenten-Symbolleiste verfügbar:
 
    ![componentstoolbarwithre](assets/componentstoolbarwithre.png)
 

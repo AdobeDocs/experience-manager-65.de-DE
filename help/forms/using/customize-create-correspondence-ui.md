@@ -1,20 +1,16 @@
 ---
 title: Anpassen der Benutzeroberfläche „Korrespondenz erstellen“
-seo-title: Customize create correspondence UI
 description: Erfahren Sie, wie Sie die Benutzeroberfläche "Korrespondenz erstellen"anpassen.
-seo-description: Learn how to customize create correspondence UI.
-uuid: 9dee9b6f-4129-4560-9bf8-db48110b76f7
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1086'
-ht-degree: 56%
+source-wordcount: '1084'
+ht-degree: 37%
 
 ---
 
@@ -35,7 +31,7 @@ Das benutzerdefinierte Symbol in der Benutzeroberfläche „Korrespondenz erstel
 Gehen Sie wie folgt vor, um ein Logo-Bild Ihrer Wahl einzurichten:
 
 1. Erstellen Sie die entsprechende [Ordnerstruktur in CRX](#creatingfolderstructure).
-1. [Laden Sie die neue Logodatei](#uploadlogo) in den Ordner hoch, den Sie in CRX erstellt haben.
+1. [Hochladen der neuen Logodatei](#uploadlogo) in dem Ordner, den Sie in CRX erstellt haben.
 
 1. [Legen Sie das CSS](#createcss) auf CRX fest, um auf das neue Logo zu verweisen.
 1. Löschen Sie den Browser-Verlauf und [aktualisieren Sie die Benutzeroberfläche „Korrespondenz erstellen“](#refreshccrui).
@@ -46,16 +42,16 @@ Erstellen Sie die Ordnerstruktur wie unten beschrieben für das Hosten des benut
 
 Erstellen Sie für jede Anpassung eine parallele Ordnerstruktur, wie unten beschrieben, in der Verzweigung /apps .
 
-Die /apps-Verzweigung (Ordnerstruktur):
+Die `/apps` Verzweigung (Ordnerstruktur):
 
-* Stellt sicher, dass Ihre Dateien im Falle eines System-Updates sicher sind. Bei einem Upgrade, Feature Pack oder Hotfix wird die /libs-Verzweigung aktualisiert. Wenn Sie Änderungen in der /libs-Verzweigung hosten, werden sie überschrieben.
-* Hilft Ihnen, das vorhandene System/die Verzweigung nicht zu stören, was Sie möglicherweise versehentlich aufheben können, wenn Sie die Standardspeicherorte zum Speichern der benutzerdefinierten Dateien verwenden.
-* Hilft Ihren Ressourcen, bei der Suche nach Ressourcen eine höhere Priorität AEM. AEM ist so konfiguriert, dass bei der Suche nach einer Ressource zuerst die /apps-Verzweigung und dann die /libs-Verzweigung durchsucht wird. Dieser Mechanismus bedeutet, dass das System Ihre Überlagerung (und alle dort definierten Anpassungen) verwendet.
+* Stellt sicher, dass Ihre Dateien sicher sind, wenn das System aktualisiert wird. Wenn ein Upgrade, ein Feature Pack oder ein Hotfix vorhanden ist, wird die `/libs` -Verzweigung aktualisiert wird und wenn Sie Ihre Änderungen in der `/libs` -Verzweigung, werden sie überschrieben.
+* Hilft, das vorhandene System/die Verzweigung nicht zu stören, was Sie möglicherweise versehentlich entschärfen können, wenn Sie die Standardspeicherorte zum Speichern der benutzerdefinierten Dateien verwenden.
+* Hilft Ihren Ressourcen bei der Suche nach Ressourcen eine höhere Priorität AEM. AEM ist so konfiguriert, dass die `/apps` zuerst verzweigen und dann `/libs` -Verzweigung, um eine Ressource zu finden. Dieser Mechanismus bedeutet, dass das System Ihre Überlagerung (und alle dort definierten Anpassungen) verwendet.
 
-Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der /apps-Verzweigung zu erstellen:
+Führen Sie die folgenden Schritte aus, um die erforderliche Ordnerstruktur im `/apps` branch:
 
 1. Wechseln Sie zu `https://'[server]:[port]'/[ContextPath]/crx/de` und melden Sie sich als „Administrator“ an.
-1. Erstellen Sie im Programmordner einen Ordner mit dem Namen `css` mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der css-Ordner (im ccrui-Ordner).
+1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen `css` mit Pfad/Struktur, die dem Ordner css ähnelt (im Ordner ccrui ).
 
    Schritte zum Erstellen des css-Ordners:
 
@@ -65,9 +61,9 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
 
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
 
-      **Pfad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Pfad:** `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-      **Überlagerungsspeicherort:** /apps/
+      **Pfad für Überlagerung:** `/apps/`
 
       **Knotentypen abgleichen:** Überprüft
 
@@ -75,7 +71,7 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
 
       >[!NOTE]
       >
-      >Ändern Sie die /libs-Verzweigung nicht. Alle Änderungen, die Sie vornehmen, können verloren gehen, da sich diese Verzweigung ändern kann, wenn Sie:
+      >Ändern Sie nicht die `/libs` -Verzweigung. Alle Änderungen, die Sie vornehmen, können verloren gehen, da sich diese Verzweigung ändern kann, wenn Sie:
       >
       >    
       >    
@@ -87,7 +83,7 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
 
    1. Klicken Sie auf **OK**. Der Ordner css wird im angegebenen Pfad erstellt.
 
-1. Erstellen Sie im Programmordner einen Ordner mit dem Namen `imgs` mit einem ähnlichen Pfad/einer ähnlichen Struktur wie der imgs-Ordner (im ccrui-Ordner).
+1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen `imgs` mit einem ähnlichen Pfad/einer ähnlichen Struktur zum imgs-Ordner (im ccrui-Ordner).
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **imgs** im folgenden Pfad und wählen Sie **Überlagerungsknoten**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
@@ -108,10 +104,10 @@ Führen Sie die folgenden Schritte aus, um die gewünschte Ordnerstruktur in der
 
 ## Hochladen des neuen Logos in CRX {#uploadlogo}
 
-Laden Sie Ihre benutzerdefinierte Logodatei in CRX hoch. Standard-HTML-Regeln steuern die Darstellung des Logos. Die unterstützten Bildformate werden vom Browser bestimmt, den Sie verwenden, um auf AEM Forms zuzugreifen. Alle Browser unterstützen JPEG, GIF und PNG. Weitere Informationen finden Sie in der Browser-spezifischen Dokumentation zu den unterstützten Bildformaten.
+Laden Sie Ihre benutzerdefinierte Logodatei in CRX hoch. Standard-HTML-Regeln steuern die Darstellung des Logos. Die unterstützten Bilddateiformate hängen vom Browser ab, den Sie für den Zugriff auf AEM Forms verwenden. Alle Browser unterstützen JPEG, GIF und PNG. Weitere Informationen finden Sie in der Browser-spezifischen Dokumentation zu den unterstützten Bildformaten.
 
 * Die Standardabmessungen des Logobilds sind 48 Pixel &#42; 48 Pixel. Stellen Sie sicher, dass Ihr Bild dieser Größe entspricht oder größer als 48 Pixel &#42; 48 Pixel ist.
-* Wenn die Höhe Ihres Logobilds mehr als 50 Pixel beträgt, skaliert die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;das Bild auf eine maximale Höhe von 50 Pixel, da dies die Höhe der Kopfzeile ist. Beim Verkleinern des Bildes behält die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;das Seitenverhältnis des Bildes bei.
+* Wenn die Höhe Ihres Logobilds größer als 50 Pixel ist, skaliert die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;das Bild auf eine maximale Höhe von 50 Pixel, da dies die Höhe der Kopfzeile ist. Beim Verkleinern des Bildes behält die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;das Seitenverhältnis des Bildes bei.
 * Die Benutzeroberfläche „Korrespondenz erstellen“ vergrößert Ihr Bild nicht, wenn es zu klein ist, daher sollten Sie ein Logobild mit einer Mindesthöhe von 48 Pixel und einer ausreichenden Breite verwenden.
 
 Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf CRX hochzuladen:
@@ -141,11 +137,11 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf 
 
    Das Dialogfeld „jcr:data bearbeiten“ wird angezeigt.
 
-   Klicken Sie nun auf den Ordner newlogo.png , doppelklicken Sie auf jcr:content (dim-Option) und legen Sie den Typ nt:resource fest. Sofern nicht vorhanden, erstellen Sie zuerst eine Eigenschaft mit dem Namen „jcr:content“.
+   Klicken Sie nun auf den Ordner newlogo.png , doppelklicken Sie auf jcr:content (dim-Option) und legen Sie den Typ nt:resource fest. Wenn sie nicht vorhanden ist, erstellen Sie eine Eigenschaft mit dem Namen jcr:content.
 
 1. Klicken Sie im Dialogfeld „jcr:data bearbeiten“, auf **Durchsuchen** und wählen Sie die Bilddatei, die Sie als Logo verwenden möchten (hier CustomLogo.png).
 
-   Die unterstützten Bildformate werden vom Browser bestimmt, den Sie verwenden, um auf AEM Forms zuzugreifen. Alle Browser unterstützen JPEG, GIF und PNG. Weitere Informationen finden Sie in der Browser-spezifischen Dokumentation zu den unterstützten Bildformaten.
+   Die unterstützten Bilddateiformate hängen vom Browser ab, den Sie für den Zugriff auf AEM Forms verwenden. Alle Browser unterstützen JPEG, GIF und PNG. Weitere Informationen finden Sie in der Browser-spezifischen Dokumentation zu den unterstützten Bildformaten.
 
    ![Beispiele für benutzerdefinierte Logodatei](assets/geometrixx-outdoors.png)
 
@@ -153,13 +149,13 @@ Führen Sie die folgenden Schritte aus, um die benutzerdefinierte Logodatei auf 
 
 1. Klicken Sie auf **Alle speichern**.
 
-## Erstellen Sie das CSS, um das Logo in die Benutzeroberfläche zu integrieren. {#createcss}
+## Erstellen Sie die CSS für das Rendern des Logos mit der Benutzeroberfläche {#createcss}
 
 Das benutzerdefinierte Logo-Bild erfordert das Laden eines zusätzlichen Stylesheets im Inhaltskontext.
 
-Führen Sie die folgenden Schritte aus, um das Stylesheet für die Wiedergabe des Logos einzurichten:
+Führen Sie die folgenden Schritte aus, um das Stylesheet zum Rendern des Logos in der Benutzeroberfläche zu erstellen:
 
-1. Wechseln Sie zu `https://'[server]:[port]'/[contextpath]/crx/de`. Falls erforderlich, melden Sie sich als Administrator an.
+1. Rufen Sie `https://'[server]:[port]'/[contextpath]/crx/de` auf. Falls erforderlich, melden Sie sich als Administrator an.
 1. Erstellen Sie eine Datei mit dem Namen customcss.css (Sie können keinen anderen Dateinamen verwenden) am folgenden Speicherort:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
@@ -178,9 +174,9 @@ Führen Sie die folgenden Schritte aus, um das Stylesheet für die Wiedergabe de
 
    1. Klicken Sie auf **Alle speichern**.
 
-## Aktualisieren Sie die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;, um das benutzerdefinierte Logo anzuzeigen. {#refreshccrui}
+## Aktualisieren Sie die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;, damit Sie das benutzerdefinierte Logo sehen können. {#refreshccrui}
 
-Löschen Sie den Browsercache und öffnen Sie dann die Instanz der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;in Ihrem Browser. Ihr benutzerdefiniertes Logo sollte angezeigt werden.
+Löschen Sie den Browsercache und öffnen Sie dann die Instanz der Benutzeroberfläche &quot;Korrespondenz erstellen&quot;in Ihrem Browser, damit Sie Ihr benutzerdefiniertes Logo sehen können.
 
 ![Benutzeroberfläche „Korrespondenz erstellen“ mit benutzerdefiniertem Logo](assets/0_1_introscreenshot-1.png)
 

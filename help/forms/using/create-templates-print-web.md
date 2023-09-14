@@ -1,19 +1,15 @@
 ---
 title: "Tutorial: Erstellen Sie Vorlagen"
-seo-title: Create Print and Web templates for Interactive Communication
 description: Erstellen Sie Druck- und Webvorlagen für die interaktive Kommunikation
-seo-description: Create Print and Web templates for Interactive Communication
-uuid: 22256a61-bcf6-4b02-9ee6-0ffb1cc20a6e
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 feature: Interactive Communication
 exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1796'
-ht-degree: 60%
+source-wordcount: '1819'
+ht-degree: 40%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 60%
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Es wird empfohlen, die Serie in chronologischer Reihenfolge zu durchlaufen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, durchzuführen und zu demonstrieren.
+Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Es wird empfohlen, die Reihe in chronologischer Reihenfolge zu befolgen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, auszuführen und zu demonstrieren.
 
 Um eine interaktive Kommunikation zu erstellen, müssen auf dem AEM-Server Vorlagen für Druck- und Webkanäle verfügbar sein.
 
@@ -37,20 +33,20 @@ Dieses Tutorial führt Sie durch die Schritte zum Erstellen von Vorlagen für Dr
 
 ## Vorlage für Druckkanal erstellen {#create-template-for-print-channel}
 
-Erstellen und verwalten Sie Vorlagen für den Druckkanal der interaktiven Kommunikation mit folgenden Aufgaben:
+Erstellen und verwalten Sie eine Vorlage für den Druckkanal der interaktiven Kommunikation mit folgenden Aufgaben:
 
-* [Erstellen Sie eine XDP-Vorlage mit dem Forms Designer](../../forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
-* [Laden Sie die XDP-Vorlagen auf den AEM Forms Server hoch](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
-* [XDP-Vorlage für Layoutfragmente erstellen](../../forms/using/create-templates-print-web.md#create-xdp-template-for-layout-fragments)
+* [Erstellen einer XDP-Vorlage mit Forms Designer](../../forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
+* [Hochladen einer XDP-Vorlage auf den AEM Forms-Server](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
+* [Erstellen einer XDP-Vorlage für Layout-Fragmente](../../forms/using/create-templates-print-web.md#create-xdp-template-for-layout-fragments)
 
-### Erstellen Sie eine XDP-Vorlage mit dem Forms Designer {#create-xdp-template-using-forms-designer}
+### Erstellen einer XDP-Vorlage mit Forms Designer {#create-xdp-template-using-forms-designer}
 
 Basierend auf dem [Anwendungsfall](/help/forms/using/create-your-first-interactive-communication.md) und der [Anatomie](/help/forms/using/planning-interactive-communications.md), erstellen Sie die folgenden Teilformulare in der XDP-Vorlage:
 
 * Rechnungsdetails: Enthält ein Dokumentfragment
 * Kundendetails: Enthält ein Dokumentfragment
 * Rechnungszusammenfassung: Enthält ein Dokumentfragment
-* Zusammenfassung: Enthält ein Dokumentfragment (Teilformular „Gebühren“) und ein Diagramm (Teilformular „Diagramme“).
+* Zusammenfassung: Enthält ein Dokumentfragment (Teilformular &quot;Gebühren&quot;) und ein Diagramm (Teilformular &quot;Diagramme&quot;)
 * Einzeln aufgeführte Anrufe: Enthält eine Tabelle (Layoutfragment)
 * Jetzt bezahlen: Enthält ein Bild
 * Mehrwert-Services: Enthält ein Bild
@@ -59,15 +55,15 @@ Basierend auf dem [Anwendungsfall](/help/forms/using/create-your-first-interacti
 
 Diese Teilformulare werden nach dem Hochladen der XDP-Datei auf den Forms-Server als Zielbereiche in der Druckvorlage angezeigt. Alle Entitäten wie Dokumentfragmente, Diagramme, Layout-Fragmente und Bilder werden beim Erstellen der interaktiven Kommunikation den Zielbereichen hinzugefügt.
 
-Führen Sie die folgenden Schritte aus, um eine XDP-Vorlage für den Druckkanal zu erstellen:
+Gehen Sie wie folgt vor, um eine XDP-Vorlage für den Druckkanal zu erstellen:
 
 1. Öffnen Sie den Forms Designer, wählen Sie **Datei** > **Neu** > **Verwenden Sie ein leeres Formular**,  tippen Sie auf **Weiter** und anschließend auf **Fertig stellen**, um das Formular für die Vorlagenerstellung zu öffnen.
 
    Stellen Sie sicher, dass die **Objektbibliothek** und die Option **Objekt** im Menü **Fenster** ausgewählt werden.
 
 1. Ziehen Sie die Komponente **Teilformular** aus der **Objektbibliothek** in das Formular.
-1. Wählen Sie das Teilformular aus, um die Optionen für das Teilformular im Fenster **Objekt** im rechten Bereich anzuzeigen.
-1. Wählen Sie die Registerkarte **Teilformular** und wählen Sie **Textfluss** aus der Dropdown-Liste **Inhalt** aus. Ziehen Sie den linken Endpunkt des Teilformulars, um die Länge anzupassen.
+1. Wählen Sie das Teilformular aus, damit Sie die Optionen für das Teilformular im **Objekt** im rechten Bereich.
+1. Wählen Sie die Registerkarte **Teilformular** und wählen Sie **Textfluss** aus der Dropdown-Liste **Inhalt** aus. Um die Länge anzupassen, ziehen Sie den linken Endpunkt des Teilformulars.
 1. Führen Sie auf der Registerkarte **Bindungen** folgende Schritte aus:
 
    1. Geben Sie **BillDetails** in das Feld **Name** ein.
@@ -98,9 +94,9 @@ Führen Sie die folgenden Schritte aus, um eine XDP-Vorlage für den Druckkanal 
    * PayNow
    * ValueAddedServices
 
-   Um Zeit zu sparen, können Sie auch vorhandene Teilformulare kopieren und einfügen, um neue Teilformulare zu erstellen.
+   Um Zeit zu sparen, können Sie auch vorhandene Teilformulare kopieren und einfügen, um zusätzliche Teilformulare zu erstellen.
 
-   Um das Teilformular **Diagramme** rechts neben das Teilformular „Gebühren“ zu verschieben, wählen Sie das Teilformular **Diagramme** im linken Bereich aus, wählen Sie die Registerkarte **Layout** und geben Sie einen Wert für das Feld **AnkerX** an. Der Wert muss größer als der Wert für das Feld **Breite** für das Teilformular **Gebühren** sein. Wählen Sie das Teilformular **Gebühren** und wählen Sie die Registerkarte **Layout**, um den Wert des Felds **Breite** anzuzeigen.
+   So verschieben Sie die **Diagramme** Teilformular rechts neben dem Teilformular &quot;Gebühren&quot;wählen Sie die **Diagramme** Teilformular aus dem linken Bereich, wählen Sie die **Layout** und geben Sie einen Wert für die **AnchorX** -Feld. Der Wert muss größer als der Wert für das Feld **Breite** für das Teilformular **Gebühren** sein. Wählen Sie die **Gebühren** Teilformular und wählen Sie die **Layout** -Registerkarte, damit Sie den Wert der **Breite** -Feld.
 
 1. Ziehen Sie das Objekt **Text** aus der **Objektbibliothek** in das Formular, und geben Sie den Text **XXXX zum Abonnieren wählen** in das Feld ein.
 1. Klicken Sie mit der rechten Maustaste auf das Textobjekt im linken Bereich, wählen Sie **Objekt umbenennen**, und geben Sie den Namen des Textobjekts als **Abonnieren** ein.
@@ -109,8 +105,8 @@ Führen Sie die folgenden Schritte aus, um eine XDP-Vorlage für den Druckkanal 
 
 1. Wählen Sie **Datei** > **Speichern unter**, um die Datei im lokalen Dateisystem zu speichern:
 
-   1. Navigieren Sie zum Speicherort der Datei und geben Sie den Namen **create_first_ic_print_template** ein.
-   1. Auswählen **.xdp** von **Dateityp** Dropdown-Liste.
+   1. Navigieren Sie zu dem Speicherort, an dem Sie die Datei speichern können, und geben Sie den Namen als **create_first_ic_print_template**.
+   1. Auswählen **.xdp** aus dem **Dateityp** Dropdown-Liste.
 
    1. Tippen Sie auf **Speichern**.
 
@@ -121,13 +117,13 @@ Nachdem Sie eine XDP-Vorlage mit Forms Designer erstellt haben, müssen Sie sie 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Formulare &amp; Dokumente]**.
 1. Tippen Sie auf **Erstellen** > **Datei hochladen**.
 
-   Navigieren Sie zur Vorlage **create_first_ic_print_template** (XDP) und wählen Sie sie aus. Tippen Sie auf **Öffnen**, um die XDP-Vorlage auf den AEM Forms-Server zu importieren.
+   Navigieren Sie zu und wählen Sie die **create_first_ic_print_template** Vorlage (XDP) und tippen Sie auf **Öffnen** , um die XDP-Vorlage in den AEM Forms-Server zu importieren.
 
 ### Erstellen einer XDP-Vorlage für Layout-Fragmente {#create-xdp-template-for-layout-fragments}
 
 Um ein Layout-Fragment für den Druckkanal der interaktiven Kommunikation zu erstellen, erstellen Sie eine XDP mit Forms Designer und laden Sie sie auf den AEM Forms-Server hoch.
 
-1. Öffnen Sie den Formular-Designer, wählen Sie **Datei** > **Neu** > **Leeres Formular verwenden**, und tippen Sie auf **Weiter**, und danach auf **Fertig stellen**, um das Formular für die Vorlagenerstellung zu öffnen.
+1. Öffnen Sie den Forms Designer, wählen Sie **Datei** > **Neu** > **Verwenden Sie ein leeres Formular**,  tippen Sie auf **Weiter** und anschließend auf **Fertig stellen**, um das Formular für die Vorlagenerstellung zu öffnen.
 
    Stellen Sie sicher, dass die **Objektbibliothek** und die Option **Objekt** im Menü **Fenster** ausgewählt werden.
 
@@ -139,7 +135,7 @@ Um ein Layout-Fragment für den Druckkanal der interaktiven Kommunikation zu ers
    1. Wählen Sie die **Kopfzeile in Tabelle einschließen** aktivieren.
    1. Registerkarte **OK**.
 
-1. Tippen **+** im linken Bereich neben **Verzeichnis** 1 und Rechtsklick **Cell1** und wählen Sie **Objekt umbenennen** nach **Datum**.
+1. Tippen **+** im linken Bereich neben **Verzeichnis** 1 und Rechtsklick **Cell1** und wählen **Objekt umbenennen** nach **Datum**.
 
    Benennen Sie **Zelle2**, **Zelle3**, **Zelle4** und **Zelle5** in **Zeit**, **Anzahl**, **Dauer** und **Kosten** um.
 
@@ -155,31 +151,31 @@ Um ein Layout-Fragment für den Druckkanal der interaktiven Kommunikation zu ers
 
    ![Textfeld für Layout-Fragment](assets/layout_fragment_print_text_field_new.png)
 
-   Ziehen Sie die Komponente **Textfeld** in die Zeilen **Zeit**, **Anzahl**, **Dauer** und **Kosten**.
+   Ziehen Sie die **Textfeld** -Komponente **Zeit**, **Zahl**, **Dauer**, und **Gebühren** Zeilen.
 
 1. Wählen Sie **Datei** > **Speichern unter**, um die Datei im lokalen Dateisystem zu speichern:
 
-   1. Navigieren Sie zum Speicherort der Datei und geben Sie den Namen **table_lf** ein.
-   1. Auswählen **.xdp** von **Dateityp** Dropdown-Liste.
+   1. Navigieren Sie zu dem Speicherort, an dem Sie die Datei speichern können, und geben Sie den Namen als **table_lf**.
+   1. Auswählen **.xdp** aus dem **Dateityp** Dropdown-Liste.
 
    1. Tippen Sie auf **Speichern**.
 
-   Nachdem Sie eine XDP-Vorlage mit dem Forms-Designer erstellt haben, müssen Sie sie auf den AEM Forms-Server [hochladen](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server), damit die Vorlage beim Erstellen der von Layout-Fragmenten verwendet werden kann.
+   Nachdem Sie mit Forms Designer eine XDP-Vorlage für Layoutfragmente erstellt haben, müssen Sie [hochladen](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) Sie wird auf den AEM Forms-Server geladen, damit die Vorlage beim Erstellen von Layout-Fragmenten verwendet werden kann.
 
-## Vorlage für Webkanal erstellen {#create-template-for-web-channel}
+## Erstellen einer Vorlage für einen Webkanal {#create-template-for-web-channel}
 
-Erstellen und verwalten Sie Vorlagen für den Webkanal der interaktiven Kommunikation mit folgenden Aufgaben:
+Erstellen und verwalten Sie eine Vorlage für den Webkanal der interaktiven Kommunikation mit folgenden Aufgaben:
 
 * [Ordner für Vorlagen erstellen](../../forms/using/create-templates-print-web.md#create-folder-for-templates)
 * [Vorlage erstellen](../../forms/using/create-templates-print-web.md#create-the-template)
 * [Vorlage aktivieren](../../forms/using/create-templates-print-web.md#enable-the-template)
 * [Aktivieren von Schaltflächen in interaktiven Kommunikationen](../../forms/using/create-templates-print-web.md#enabling-buttons-in-interactive-communications)
 
-### Erstellen eines Ordners für Vorlagen {#create-folder-for-templates}
+### Ordner für Vorlagen erstellen {#create-folder-for-templates}
 
-Um eine Webkanalvorlage zu erstellen, definieren Sie einen Ordner, in dem Sie die erstellten Vorlagen speichern können. Nachdem Sie eine Vorlage in diesem Ordner erstellt haben, aktivieren Sie die Vorlage, damit die Formularbenutzer den Webkanal einer interaktiven Kommunikation basierend auf der Vorlage erstellen können.
+Um eine Webkanalvorlage zu erstellen, definieren Sie einen Ordner, in dem Sie die erstellten Vorlagen speichern können. Nachdem Sie eine Vorlage in diesem Ordner erstellt haben, aktivieren Sie die Vorlage, damit die Formularbenutzer anhand der Vorlage einen Webkanal einer interaktiven Kommunikation erstellen können.
 
-Führen Sie die folgenden Schritte aus, um einen Ordner für die bearbeitbaren Vorlagen zu erstellen:
+Gehen Sie wie folgt vor, um einen Ordner für die bearbeitbaren Vorlagen zu erstellen:
 
 1. Tippen Sie auf **Tools** ![Hammersymbol](assets/hammer-icon.svg) > **Konfigurationsbrowser**.
    * Weitere Informationen finden Sie in der Dokumentation zum [Konfigurationsbrowser](/help/sites-administering/configurations.md).
@@ -197,8 +193,8 @@ Basierend auf dem [Anwendungsfall](/help/forms/using/create-your-first-interacti
 * Rechnungsdetails: Enthält ein Dokumentfragment
 * Kundendetails: Enthält ein Dokumentfragment
 * Rechnungszusammenfassung: Enthält ein Dokumentfragment
-* Kostenübersicht: Enthält ein Dokumentfragment und ein Diagramm (zweispaltiges Layout)
-* Einzeln aufgeführte Anrufe: Enthält eine Tabelle
+* Zusammenfassung der Gebühren: Enthält ein Dokumentfragment und ein Diagramm (zweispaltiges Layout)
+* Auflistungen: Enthält eine Tabelle
 * Jetzt bezahlen: Enthält die Schaltfläche **Jetzt bezahlen** und ein Bild
 * Mehrwert-Services: Enthält ein Bild und die Schaltfläche **Abonnieren**.
 
@@ -206,9 +202,9 @@ Basierend auf dem [Anwendungsfall](/help/forms/using/create-your-first-interacti
 
 Alle Entitäten wie Dokumentfragmente, Diagramme, Tabellen, Bilder und Schaltflächen werden beim Erstellen der interaktiven Kommunikation hinzugefügt.
 
-Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im **Create_First_IC_templates** Ordner:
+So erstellen Sie eine Vorlage für den Webkanal im **Create_First_IC_templates** Gehen Sie wie folgt vor:
 
-1. Navigieren Sie zum entsprechenden Vorlagenordner durch Auswahl von **Tools** > **Vorlagen** > **Create_First_IC_templates**.
+1. Navigieren Sie zum entsprechenden Vorlagenordner, indem Sie **Instrumente** > **Vorlagen** > **Create_First_IC_templates** Ordner.
 1. Tippen Sie auf **Erstellen**.
 1. Wählen Sie im Konfigurationsassistenten **Vorlagentyp wählen** den Typ **Interaktive Kommunikation - Webkanal** und tippen Sie auf **Weiter**.
 1. Geben Sie im Konfigurationsassistenten **Vorlagendetails** **Create_First_IC_Web_Template** als Vorlagentitel ein. Geben Sie eine optionale Beschreibung ein und tippen Sie auf **Erstellen**.
@@ -221,7 +217,7 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im **C
    ![Vorlagen-Editor](assets/template_editor_initial_content_new.png)
 
 1. Tippen Sie auf **Stammbereich** und dann auf **+**, um die Liste der Komponenten anzuzeigen, die Sie der Vorlage hinzufügen können.
-1. Auswählen **Bedienfeld** aus der Liste, um ein Bedienfeld über dem **Stammbereich**.
+1. So fügen Sie ein Bedienfeld über dem **Stammbereich** auswählen **Bedienfeld** aus der Liste.
 1. Wählen Sie die **Inhalt** im linken Bereich. Das neue Bedienfeld, das in Schritt 8 hinzugefügt wurde, wird unter dem **Stammbereich** in der Inhaltsstruktur.
 
    ![Inhaltsstruktur](assets/content_tree_root_panel_new.png)
@@ -231,9 +227,9 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im **C
 
    1. Angeben **billdetails** im Feld &quot;Name&quot;ein.
    1. Angeben **Rechnungsdetails** im Feld Titel .
-   1. Auswählen **1** von **Spaltenanzahl** Dropdown-Liste.
+   1. Auswählen **1** aus dem **Spaltenanzahl** Dropdown-Liste.
 
-   1. Tippen Sie auf ![Speichern](/help/forms/using/assets/done_icon.png), um die Eigenschaften zu speichern.
+   1. Tippen Sie zum Speichern der Eigenschaften auf ![Speichern](/help/forms/using/assets/done_icon.png).
 
    Der Name des Bedienfelds wird aktualisiert auf **Rechnungsdetails** in der Inhaltsstruktur.
 
@@ -246,7 +242,7 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im **C
    | Zusammenfassende Gebühren | Zusammenfassung der Gebühren | 2 |
    | itemisedcalls | Aufrufe | 1 |
    | paynow | Jetzt bezahlen | 2 |
-   | vas | Mehrwertdienste | 1 |
+   | vas | Mehrwert-Services | 1 |
 
    Die folgende Abbildung zeigt die Inhaltsstruktur, nachdem alle Bedienfelder zur Vorlage hinzugefügt wurden:
 
@@ -256,25 +252,25 @@ Führen Sie die folgenden Schritte aus, um eine Vorlage für den Webkanal im **C
 
 Nachdem Sie die Webvorlage erstellt haben, müssen Sie sie aktivieren, um die Vorlage beim Erstellen der interaktiven Kommunikation zu verwenden.
 
-Führen Sie die folgenden Schritte aus, um die Webvorlage zu aktivieren:
+Gehen Sie wie folgt vor, um die Webvorlage zu aktivieren:
 
 1. Tippen Sie auf **Tools** ![Hammersymbol](assets/hammer-icon.svg) > **Vorlagen**.
 1. Navigieren Sie zur Vorlage **Create_First_IC_Web_Template**, wählen Sie sie aus und tippen Sie auf **Aktivieren**.
-1. Registerkarte **Aktivieren** erneut zu bestätigen.
+1. Tippen **Aktivieren** erneut zu bestätigen.
 
    Die Vorlage ist aktiviert und ihr Status wird als Aktiviert angezeigt. Sie können diese Vorlage beim Erstellen der interaktiven Kommunikation für den Webkanal verwenden.
 
 ### Aktivieren von Schaltflächen in interaktiven Kommunikationen {#enabling-buttons-in-interactive-communications}
 
-Je nach Anwendungsfall müssen Sie die Variable **Jetzt bezahlen** und **Abonnieren** Schaltflächen (adaptive Formularkomponenten) in der interaktiven Kommunikation. Führen Sie die folgenden Schritte aus, um die Verwendung dieser Schaltflächen in der interaktiven Kommunikation zu aktivieren:
+Je nach Anwendungsfall müssen Sie die Variable **Jetzt bezahlen** und **Abonnieren** Schaltflächen (adaptive Formularkomponenten) in der interaktiven Kommunikation. Gehen Sie wie folgt vor, um die Verwendung dieser Schaltflächen in der interaktiven Kommunikation zu aktivieren:
 
 1. Wählen Sie **Struktur** aus der Dropdown-Liste neben der Option **Vorschau**.
 1. Wählen Sie im Stammbereich **Dokument-Container** mit der Inhaltsstruktur und tippen Sie auf **Richtlinie**, um die Komponenten auszuwählen, die für die Verwendung in der interaktiven Kommunikation erlaubt sind.
 
    ![Richtlinie konfigurieren](assets/structure_configure_policy_new.png)
 
-1. Wählen Sie auf der Registerkarte **Zugelassene Komponenten** im Abschnitt **Eigenschaften** die Option **Schaltfläche** aus den Komponenten **Adaptives Formular**.
+1. Im **Zugelassene Komponenten** des **Eigenschaften** Bereich, wählen Sie **Schaltfläche** aus dem **Adaptives Formular** Komponenten.
 
    ![Zugelassene Komponenten](assets/allowed_components_af_new.png)
 
-1. Tippen ![save](assets/done_icon.png) , um die Eigenschaften zu speichern.
+1. Tippen Sie zum Speichern der Eigenschaften auf ![save](assets/done_icon.png).

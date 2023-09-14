@@ -1,20 +1,16 @@
 ---
 title: Prinzipalansicht für die Berechtigungsverwaltung
-seo-title: Principal View for Permissions Management
 description: Erfahren Sie mehr über die neue Touch-Benutzeroberfläche, die die Berechtigungsverwaltung erleichtert.
-seo-description: Learn about the new Touch UI interface that facilitates permissions management.
-uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
-discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '773'
-ht-degree: 95%
+source-wordcount: '764'
+ht-degree: 65%
 
 ---
 
@@ -23,13 +19,13 @@ ht-degree: 95%
 
 ## Übersicht {#overview}
 
-AEM 6.5 führt die Berechtigungsverwaltung für Benutzende und Gruppen ein. Die Hauptfunktionalität bleibt mit der klassischen Benutzeroberfläche identisch, ist jedoch benutzerfreundlicher und effizienter.
+AEM 6.5 führt die Berechtigungsverwaltung für Benutzende und Gruppen ein. Die Hauptfunktion bleibt mit der klassischen Benutzeroberfläche identisch, ist jedoch benutzerfreundlicher und effizienter.
 
 ## Verwendung {#how-to-use}
 
 ### Zugriff auf die Benutzeroberfläche {#accessing-the-ui}
 
-Die Berechtigungsverwaltung, die auf der neuen Benutzeroberfläche basiert, wird wie unten dargestellt unter „Sicherheit“ auf der Karte für Berechtigungen aufgerufen:
+Der Zugriff auf die neue benutzeroberflächenbasierte Berechtigungsverwaltung erfolgt über die Karte Berechtigungen unter Sicherheit , wie unten dargestellt:
 
 ![Benutzeroberfläche für die Berechtigungsverwaltung](assets/screen_shot_2019-03-17at63333pm.png)
 
@@ -55,15 +51,15 @@ Wenn Sie auf den Namen klicken, werden die zugewiesenen Berechtigungen auf der r
 
 ### Hinzufügen eines neuen Zugriffssteuerungseintrags (Access Control Entry, ACE) für einen Prinzipal {#adding-new-access-control-entry-for-a-principal}
 
-Neue Berechtigungen können hinzugefügt werden, indem Sie einen neuen Zugriffssteuerungseintrag hinzufügen, wozu Sie auf die Schaltfläche „ACE hinzufügen“ klicken.
+Neue Berechtigungen können durch Hinzufügen eines Eintrags für die Zugriffskontrolle hinzugefügt werden. Klicken Sie einfach auf die Schaltfläche ACE hinzufügen .
 
 ![Neue ACL für einen Prinzipal hinzufügen](assets/patru.png)
 
-Dadurch wird das unten dargestellte Fenster angezeigt. Der nächste Schritt besteht in der Auswahl eines Pfades, in dem die Berechtigung konfiguriert werden muss.
+Dadurch wird das unten gezeigte Fenster angezeigt. Der nächste Schritt besteht darin, einen Pfad auszuwählen, in dem die Berechtigung konfiguriert werden muss.
 
 ![Berechtigungspfad konfigurieren](assets/cinci-1.png)
 
-Hier wählen wir einen Pfad aus, in dem wir eine Berechtigung für **dam-users** konfigurieren möchten:
+Hier wird ein Pfad ausgewählt, für den Sie eine Berechtigung konfigurieren können für **dam-users**:
 
 ![Beispielkonfiguration für dam-users](assets/sase-1.png)
 
@@ -73,7 +69,7 @@ Berechtigungen können hinzugefügt werden, indem Sie mithilfe des Textfelds suc
 
 >[!NOTE]
 >
->Eine vollständige Liste der Berechtigungen und Beschreibungen finden Sie [auf dieser Seite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
+>Eine vollständige Liste der Berechtigungen und Beschreibungen finden Sie unter [diese Seite](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
 ![Suchberechtigung für einen bestimmten Pfad.](assets/image2019-3-21_0-5-47.png) ![Fügen Sie neuen Eintrag für &quot;dam-users&quot;hinzu, wie durch einen in vertikalen Spalten ausgewählten Pfad gezeigt.](assets/image2019-3-21_0-6-53.png)
 
@@ -83,13 +79,13 @@ Nachdem die Liste der Berechtigungen ausgewählt wurde, lässt sich der Berechti
 
 ### Verwenden von Einschränkungen {#using-restrictions}
 
-Zusätzlich zur Liste der Berechtigungen und des Berechtigungstyps für einen bestimmten Pfad können in diesem Bildschirm auch Einschränkungen für eine detaillierte Zugriffskontrolle hinzugefügt werden, wie unten dargestellt:
+Neben der Liste der Berechtigungen und dem Berechtigungstyp für einen bestimmten Pfad können Sie in diesem Bildschirm auch Einschränkungen für eine detaillierte Zugriffskontrolle hinzufügen, wie unten dargestellt:
 
 ![Einschränkungen hinzufügen](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
->Weitere Informationen zu den einzelnen Beschränkungen finden Sie in der [Jackrabbit Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Weitere Informationen zu den einzelnen Einschränkungen finden Sie unter [Jackrabbit Oak-Dokumentation](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 Einschränkungen können wie unten dargestellt hinzugefügt werden, indem Sie den Einschränkungstyp auswählen, den Wert eingeben und auf das **+**-Symbol klicken.
 
@@ -101,7 +97,7 @@ Der neue ACE wird in der Zugriffssteuerungsliste wie unten dargestellt angezeigt
 
 Zugriffssteuerungseinträge können bearbeitet werden, indem Sie einen Prinzipal auswählen und dann den zu bearbeitenden ACE.
 
-Hier können wir beispielsweise den unten stehenden Eintrag für **dam-users** bearbeiten, indem wir auf das Bleistiftsymbol rechts klicken:
+Hier können Sie beispielsweise den folgenden Eintrag für **dam-users** durch Klicken auf das Stiftsymbol rechts:
 
 ![Einschränkung hinzufügen](assets/image2019-3-21_0-35-39.png)
 
@@ -109,11 +105,11 @@ Der Bearbeitungsbildschirm wird mit vorausgewählten konfigurierten ACEs-Voreins
 
 ![Eintrag bearbeiten](assets/noua-1.png)
 
-Hier fügen wir die Berechtigung `addChildNodes` für **dam-users** im angegebenen Pfad hinzu.
+Hier finden Sie die `addChildNodes` hinzugefügt wird für **dam-users** auf dem angegebenen Pfad.
 
 ![Berechtigung hinzufügen](assets/image2019-3-21_0-45-35.png)
 
-Änderungen können gespeichert werden, indem Sie oben rechts auf die Schaltfläche **Speichern** klicken. Die geänderten Berechtigungen für **dam-users** werden wie unten dargestellt übernommen:
+Änderungen können gespeichert werden, indem Sie auf **Speichern** oben rechts, und die Änderungen werden in den neuen Berechtigungen für **dam-users** wie unten gezeigt:
 
 ![Speichern Sie die Änderungen](assets/zece-1.png)
 
@@ -125,7 +121,7 @@ Zugriffssteuerungseinträge können gelöscht werden, um alle Berechtigungen zu 
 
 ### Berechtigungskombinationen in der klassischen Benutzeroberfläche {#classic-ui-privilege-combinations}
 
-Beachten Sie, dass die neue Berechtigungs-Benutzeroberfläche explizit den grundlegenden Satz von Berechtigungen anstelle vordefinierter Kombinationen verwendet, die nicht wirklich exakt die zugrunde liegenden Berechtigungen widerspiegeln, die gewährt wurden.
+Die neue Berechtigungs-Benutzeroberfläche verwendet explizit den grundlegenden Satz von Berechtigungen anstelle vordefinierter Kombinationen, die nicht wirklich die exakten zugrunde liegenden Berechtigungen widerspiegeln, die gewährt wurden.
 
 Das führte in der Vergangenheit zu Unklarheit, was genau konfiguriert wird. In der folgenden Tabelle finden Sie die Zuordnung zwischen den Berechtigungskombinationen aus der klassischen Benutzeroberfläche und den tatsächlichen Berechtigungen, aus denen sie bestehen:
 
