@@ -1,19 +1,15 @@
 ---
 title: Bereitstellen von Communities
-seo-title: Deploying Communities
 description: Bereitstellen von AEM Communities
-seo-description: How to deploy AEM Communities
-uuid: 18d9b424-004d-43b2-968a-318e27a93759
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: c8d7355f-5a70-40d1-bf22-62fab8002ea0
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1707'
 ht-degree: 4%
 
 ---
@@ -45,12 +41,12 @@ ht-degree: 4%
 
 **Für [Communities-Funktionen](/help/communities/overview.md)**
 
-* Bei Bereitstellung eines [Veröffentlichungsfarm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [den primären Herausgeber identifizieren](#primary-publisher)
+* Bei der Bereitstellung eines [Veröffentlichungsfarm](/help/sites-deploying/recommended-deploys.md#tarmk-farm), [den primären Herausgeber identifizieren](#primary-publisher)
 
 * [Tunneldienst aktivieren](#tunnel-service-on-author)
 * [Social-Anmeldung aktivieren](/help/communities/social-login.md#adobe-granite-oauth-authentication-handler)
 * [Konfigurieren von Adobe Analytics](/help/communities/analytics.md)
-* Einrichten einer [Standard-E-Mail-Dienst](/help/communities/email.md)
+* Richten Sie eine [Standard-E-Mail-Dienst](/help/communities/email.md)
 * Auswahl für [freigegebener UGC-Speicher](/help/communities/working-with-srp.md) (**SRP**)
 
    * Wenn MongoDB SRP [(MSRP)](/help/communities/msrp.md)
@@ -58,31 +54,31 @@ ht-degree: 4%
       * [MongoDB installieren und konfigurieren](/help/communities/msrp.md#mongodb-configuration)
       * [Solr konfigurieren](/help/communities/solr.md)
       * [MSRP auswählen](/help/communities/srp-config.md)
+
    * Wenn relationale Datenbank SRP [(DSRP)](/help/communities/dsrp.md)
 
       * [JDBC-Treiber für MySQL installieren](#jdbc-driver-for-mysql)
       * [MySQL für DSRP installieren und konfigurieren](/help/communities/dsrp-mysql.md)
       * [Solr konfigurieren](/help/communities/solr.md)
       * [DSRP auswählen](/help/communities/srp-config.md)
+
    * Wenn Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
       * Wenden Sie sich zur Bereitstellung an Ihren Kundenbetreuer
       * [ASRP auswählen](/help/communities/srp-config.md)
+
    * Wenn JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
-      * Kein freigegebener benutzergenerierter Speicher :
+      * Kein freigegebener UGC-Speicher (benutzergenerierter Inhalt) :
 
          * UGC wird nie repliziert
-         * UGC ist nur in AEM Instanz oder Cluster sichtbar, in dem sie eingegeben wurde
+         * UGC ist nur auf der AEM Instanz oder dem Cluster sichtbar, in dem sie eingegeben wurde
 
-         * Der Standardwert ist JSRP
-
-
-
+         * Die Standardeinstellung ist JSRP
 
 ## Neueste Versionen {#latest-releases}
 
-AEM 6.5 Communities GA umfasst Communities-Pakete. Informationen zu Updates auf AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), siehe [AEM 6.5 - Versionshinweise](/help/release-notes/release-notes.md#communities-release-notes.html).
+AEM 6.5 Communities GA umfasst Communities-Pakete. Weitere Informationen zu Updates für AEM 6.5 [Communities](/help/release-notes/release-notes.md#experiencemanagercommunities), siehe [AEM 6.5 - Versionshinweise](/help/release-notes/release-notes.md#communities-release-notes.html).
 
 ### AEM 6.5 Updates {#aem-updates}
 
@@ -98,7 +94,7 @@ Wie AEM 6.4 und höher sind AEM Communities-Funktionen und Hotfixes Teil von AEM
 
 Eine Communities-Funktion verwendet eine MySQL-Datenbank:
 
-* Für [DSRP](/help/communities/dsrp.md): Speichern benutzergenerierter Inhalte (UGC)
+* Für [DSRP](/help/communities/dsrp.md): Speichern von UGC
 
 Der MySQL-Connector muss separat abgerufen und installiert werden.
 
@@ -106,7 +102,7 @@ Die erforderlichen Schritte sind:
 
 1. Laden Sie das ZIP-Archiv herunter von [https://dev.mysql.com/downloads/connector/j/](https://dev.mysql.com/downloads/connector/j/)
 
-   * Version muss >= 5.1.38 sein.
+   * Die Version muss >= 5.1.38 sein.
 
 1. Extrahieren Sie mysql-connector-java-&lt;version>-bin.jar (Bundle) aus dem Archiv
 1. Verwenden Sie die Web-Konsole, um das Bundle zu installieren und zu starten:
@@ -114,7 +110,7 @@ Die erforderlichen Schritte sind:
    * Beispiel: https://localhost:4502/system/console/bundles
    * Klicken Sie auf **`Install/Update`**
    * Durchsuchen... , um das aus dem heruntergeladenen ZIP-Archiv extrahierte Bundle auszuwählen.
-   * Vergewissern Sie sich, dass *JDBC-Treiber der oracle Corporation für MySQLcom.mysql.jdbc* aktiv ist, und starten Sie es, falls nicht (oder überprüfen Sie die Protokolle)
+   * Überprüfen Sie, ob *JDBC-Treiber der oracle Corporation für MySQLcom.mysql.jdbc* aktiv ist, und starten Sie es, falls nicht (oder überprüfen Sie die Protokolle)
 
 1. Wenn Sie nach der Konfiguration von JDBC in einer vorhandenen Bereitstellung installieren, binden Sie JDBC erneut an den neuen Connector, indem Sie die JDBC-Konfiguration von der Web-Konsole aus erneut speichern:
    * Beispiel: https://localhost:4502/system/console/configMgr
@@ -126,7 +122,7 @@ Die erforderlichen Schritte sind:
 
 Weitere Informationen zur Installation von Bundles finden Sie auf der [Web-Konsole](/help/sites-deploying/web-console.md) Seite.
 
-#### Beispiel : MySQL Connector Bundle installiert {#example-installed-mysql-connector-bundle}
+#### Beispiel : MySQL Connector-Bundle installiert {#example-installed-mysql-connector-bundle}
 
 ![connector-bundle](assets/connector-bundle.png)
 
@@ -140,7 +136,7 @@ Der erweiterte MLS-Download (auch als &quot;Phasetwo&quot;bezeichnet) ist im Ado
 
 * AEM-SOLR-MLS-phasetwo
 
-   Informationen zum Abrufen des erweiterten MLS-Pakets finden Sie unter [AEM erweiterte MLS](deploy-communities.md#aem-advanced-mls) im Abschnitt &quot;Bereitstellung&quot;der Dokumentation.
+  Informationen zum Abrufen des erweiterten MLS-Pakets finden Sie unter [AEM erweiterte MLS](deploy-communities.md#aem-advanced-mls) im Abschnitt &quot;Bereitstellung&quot;der Dokumentation.
 
    * Version 1.2.40, 6. April 2016
    * AEM-SOLR-MLS-phasetwo-1.2.40.zip herunterladen
@@ -151,7 +147,7 @@ Weitere Informationen und Installationsinformationen finden Sie unter [Solr-Konf
 
 **In Adobe AEM Cloud sichtbare Pakete**
 
-Die Links zu Paketen auf dieser Seite erfordern keine laufende Instanz von AEM, da sie für die Paketfreigabe auf `adobeaemcloud.com`. Während die Pakete sichtbar sind, wird die `Install` -Schaltfläche ist für die Installation der Pakete auf einer Adobe gehosteten Site. Wenn Sie eine Installation auf einer lokalen AEM durchführen möchten, wählen Sie `Install` führt zu einem Fehler.
+Die Links zu Paketen auf dieser Seite erfordern keine laufende Instanz von AEM, da sie zu Package Share auf gehören `adobeaemcloud.com`. Während die Pakete sichtbar sind, wird die `Install` -Schaltfläche ist für die Installation der Pakete auf einer Adobe-gehosteten Site vorgesehen. Wenn Sie eine Installation auf einer lokalen AEM-Instanz durchführen möchten, wählen Sie `Install` führt zu einem Fehler.
 
 **Installieren auf einer lokalen AEM-Instanz**
 
@@ -160,9 +156,9 @@ So installieren Sie die Pakete, die in `adobeaemcloud.com` auf einer lokalen AEM
 * Wählen Sie die **Assets** tab
 * Auswählen **Herunterladen auf Festplatte**
 
-Verwenden Sie auf der lokalen AEM-Instanz den Package Manager (z. B. [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), um in das lokale AEM-Package-Repository hochzuladen.
+Verwenden Sie auf der lokalen AEM-Instanz Package Manager (z. B. [https://localhost:4502/crx/packmgr/](https://localhost:4502/crx/packmgr/)), um in das lokale AEM-Package-Repository hochzuladen.
 
-Alternativ können Sie über Package Share über die lokale AEM-Instanz auf das Paket zugreifen (z. B. [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), die `Download` -Schaltfläche in das Package-Repository der lokalen AEM-Instanz heruntergeladen.
+Alternativ können Sie über Package Share über die lokale AEM auf das Paket zugreifen (z. B. [https://localhost:4502/crx/packageshare/](https://localhost:4502/crx/packageshare/)), die `Download` -Schaltfläche wird in das Package-Repository der lokalen AEM-Instanz heruntergeladen.
 
 Sobald Sie sich im Package-Repository der lokalen AEM-Instanz befinden, installieren Sie das Package mit Package Manager.
 
@@ -170,7 +166,7 @@ Weitere Informationen finden Sie unter [Arbeiten mit Paketen](/help/sites-admini
 
 ## Empfohlene Bereitstellungen {#recommended-deployments}
 
-In AEM Communities wird ein gemeinsamer Speicher zum Speichern benutzergenerierter Inhalte verwendet, die häufig als [Storage Resource Provider (SRP)](/help/communities/working-with-srp.md). Die empfohlene Implementierung konzentriert sich auf die Auswahl einer SRP-Option für den gemeinsamen Speicher.
+In AEM Communities wird UGC mithilfe eines gemeinsamen Stores gespeichert, der häufig als [Storage Resource Provider (SRP)](/help/communities/working-with-srp.md). Die empfohlene Implementierung konzentriert sich auf die Auswahl einer SRP-Option für den gemeinsamen Speicher.
 
 Der gemeinsame Speicher unterstützt die Moderation von und die Analyse von benutzergenerierten Inhalten in der Veröffentlichungsumgebung, während die Notwendigkeit für [Replikation](/help/communities/sync.md) von UGC.
 
@@ -188,18 +184,18 @@ Lesen Sie neben der Aktualisierung der Plattform auch [Upgrade auf AEM Communiti
 
 ### Primärer Herausgeber {#primary-publisher}
 
-Wenn es sich bei der ausgewählten Bereitstellung um eine [Veröffentlichungsfarm](/help/communities/topologies.md#tarmk-publish-farm), muss eine AEM Veröffentlichungsinstanz als **`primary publisher`** für Aktivitäten, die nicht in allen Instanzen auftreten sollten, z. B. Funktionen, auf die **Benachrichtigungen** oder **Adobe Analytics**.
+Wenn es sich bei der ausgewählten Bereitstellung um eine [Veröffentlichungsfarm](/help/communities/topologies.md#tarmk-publish-farm), muss eine AEM Veröffentlichungsinstanz als **`primary publisher`** für Aktivitäten, die nicht in allen Instanzen auftreten sollten. Zum Beispiel Funktionen, die auf **Benachrichtigungen** oder **Adobe Analytics**.
 
-Standardmäßig wird die `AEM Communities Publisher Configuration` Die OSGi-Konfiguration wird mit der **`Primary Publisher`** -Kontrollkästchen aktiviert, sodass sich alle Veröffentlichungsinstanzen in einer Veröffentlichungsfarm selbst als primär identifizieren.
+Standardmäßig wird die Variable `AEM Communities Publisher Configuration` Die OSGi-Konfiguration wird mit der **`Primary Publisher`** -Kontrollkästchen aktiviert, sodass sich alle Veröffentlichungsinstanzen in einer Veröffentlichungsfarm selbst als primär identifizieren.
 
-Daher ist es notwendig, **Bearbeiten Sie die Konfiguration auf allen sekundären Veröffentlichungsinstanzen.** , um die **`Primary Publisher`** aktivieren.
+Daher ist es notwendig, **die Konfiguration auf allen sekundären Veröffentlichungsinstanzen bearbeiten** , um die **`Primary Publisher`** aktivieren.
 
 ![primary-publisher](assets/primary-publisher.png)
 
 Für alle anderen (sekundären) Veröffentlichungsinstanzen in einer Veröffentlichungsfarm:
 
 * Anmelden mit Administratorrechten
-* Zugriff auf [Webkonsole](/help/sites-deploying/configuring-osgi.md)
+* Zugriff auf [Web-Konsole](/help/sites-deploying/configuring-osgi.md)
 
    * Beispiel: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
 
@@ -210,15 +206,15 @@ Für alle anderen (sekundären) Veröffentlichungsinstanzen in einer Veröffentl
 
 ### Replikationsagenten auf der Autoreninstanz {#replication-agents-on-author}
 
-Die Replikation wird für Site-Inhalte verwendet, die in der Veröffentlichungsumgebung erstellt werden, z. B. Community-Gruppen, sowie für die Verwaltung von Mitgliedern und Mitgliedergruppen aus der Autorenumgebung mithilfe der [Tunneldienst](#tunnel-service-on-author).
+Die Replikation wird für Site-Inhalte verwendet, die in der Veröffentlichungsumgebung erstellt werden, z. B. Community-Gruppen, und für die Verwaltung von Mitgliedern und Mitgliedergruppen aus der Autorenumgebung mithilfe der [Tunneldienst](#tunnel-service-on-author).
 
 Stellen Sie für den primären Herausgeber sicher, dass die [Konfiguration des Replikationsagenten](/help/sites-deploying/replication.md) den Veröffentlichungsserver und den autorisierten Benutzer korrekt identifiziert. Der standardmäßig autorisierte Benutzer `admin,` verfügt bereits über die entsprechenden Berechtigungen (ist Mitglied von `Communities Administrators`).
 
-Damit andere Benutzer über die entsprechenden Berechtigungen verfügen können, müssen sie als Mitglied der `administrators` Benutzergruppe (ebenfalls Mitglied von `Communities Administrators`).
+Damit andere Benutzer über die entsprechenden Berechtigungen verfügen, müssen sie als Mitglied der `administrators` Benutzergruppe (auch Mitglied von `Communities Administrators`).
 
 Es gibt zwei Replikationsagenten in der Autorenumgebung, für die die Transportkonfiguration korrekt konfiguriert werden muss.
 
-* Zugriff auf die Replikationskonsole auf der Autoreninstanz
+* Zugriff auf die Replikationskonsole im Autorenmodus
 
    * Navigieren Sie von der globalen Navigation zu **[!UICONTROL Instrumente]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Replikation]** > **[!UICONTROL Agenten für Autor]**
 
@@ -227,12 +223,12 @@ Es gibt zwei Replikationsagenten in der Autorenumgebung, für die die Transportk
    * **Standardagent (publish)**
    * **Agenten für Rückwärtsreplikation (Rückwärts veröffentlichen)**
 
-      1. Wählen Sie den Agenten aus
+      1. Wählen Sie den Agenten
       1. Auswählen **edit**
       1. Wählen Sie die **Verkehr** tab
-      1. Wenn nicht Port `4503`, bearbeiten Sie die **URI** zum Angeben des richtigen Ports
+      1. Wenn dies nicht der Anschluss ist `4503`, bearbeiten Sie die **URI** zum Angeben des richtigen Ports
 
-      1. Wenn kein Benutzer `admin`, bearbeiten Sie die **Benutzer** und **Passwort** , um ein Mitglied der `administrators` Benutzergruppe
+      1. Wenn dies nicht der Benutzer ist `admin`, bearbeiten Sie die **Benutzer** und **Passwort** , um ein Mitglied der `administrators` Benutzergruppe
 
 Die folgenden Abbildungen zeigen die Ergebnisse einer Änderung des Ports von 4503 auf 6103 durch:
 
@@ -250,7 +246,7 @@ Bei Verwendung der Autorenumgebung zu [Erstellen von Sites](/help/communities/si
 
 Der Tunneldienst stellt diesen Zugriff mithilfe des Replikationsagenten auf der Autoreninstanz bereit.
 
-So aktivieren Sie den Tunneldienst:
+Aktivieren des Tunneldienstes:
 
 * Melden Sie sich mit Administratorrechten für Ihre Autoreninstanz an.
 * Wenn der Herausgeber nicht localhost:4503 ist oder der Transportbenutzer nicht `admin`, dann [Konfigurieren des Replikationsagenten](#replication-agents-on-author)
@@ -264,7 +260,7 @@ So aktivieren Sie den Tunneldienst:
 * Überprüfen Sie die **enable** box
 * Wählen Sie **Speichern** aus
 
-   ![Tunneldienst](assets/tunnel-service.png)
+  ![Tunneldienst](assets/tunnel-service.png)
 
 ### Replizieren des Crypto-Schlüssels {#replicate-the-crypto-key}
 
@@ -272,37 +268,37 @@ Es gibt zwei Funktionen von AEM Communities, für die alle AEM Serverinstanzen d
 
 Ab AEM 6.3 wird das Schlüsselmaterial im Dateisystem und nicht mehr im Repository gespeichert.
 
-Um das Schlüsselmaterial von der Autoreninstanz in alle anderen Instanzen zu kopieren, müssen Sie Folgendes tun:
+Um das Schlüsselmaterial aus der Autoreninstanz in alle anderen Instanzen zu kopieren, müssen Sie Folgendes tun:
 
-* Greifen Sie auf die AEM-Instanz zu, normalerweise eine Autoreninstanz, die das zu kopierende Schlüsselmaterial enthält
+* Greifen Sie auf die AEM-Instanz zu, in der sich normalerweise eine Autoreninstanz befindet, die das zu kopierende Schlüsselmaterial enthält
 
-   * Suchen Sie die `com.adobe.granite.crypto.file` Bundle im lokalen Dateisystem, z. B.
+   * Suchen Sie die `com.adobe.granite.crypto.file` Bundle im lokalen Dateisystem, beispielsweise
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * Die `bundle.info` -Datei identifiziert das Bundle
-   * Navigieren Sie zum Datenordner, z. B.
+
+   * Navigieren Sie zum Datenordner, beispielsweise
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
       * Kopieren Sie die Dateien hmac und primary .
 
-
 * Für jede AEM-Instanz
 
-   * Navigieren Sie zum Datenordner, z. B.
+   * Navigieren Sie zum Datenordner, beispielsweise
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
-   * Fügen Sie die beiden zuvor kopierten Dateien ein.
-   * Es ist erforderlich, [Aktualisieren des Granite Crypto-Bundles](#refresh-the-granite-crypto-bundle) , wenn die Ziel-AEM-Instanz derzeit ausgeführt wird
 
+   * Fügen Sie die beiden zuvor kopierten Dateien ein.
+   * Es ist erforderlich, [Aktualisieren des Granite Crypto-Bundles](#refresh-the-granite-crypto-bundle) wenn die AEM-Zielinstanz ausgeführt wird
 
 >[!CAUTION]
 >
->Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Verschlüsselungsschlüsseln basiert, kann die Replikation der Verschlüsselungsschlüssel die Konfiguration beschädigen. Hilfe: [Kundenunterstützung kontaktieren](https://helpx.adobe.com/de/marketing-cloud/contact-support.html).
+>Wenn bereits eine andere Sicherheitsfunktion konfiguriert wurde, die auf den Verschlüsselungsschlüsseln basiert, kann die Replikation der Verschlüsselungsschlüssel die Konfiguration beschädigen. Hilfe: [Kundenunterstützung kontaktieren](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support).
 
 #### Repository-Replikation {#repository-replication}
 
-Das Schlüsselmaterial, das wie bei AEM 6.2 und früher im Repository gespeichert ist, kann beibehalten werden, indem die folgende Systemeigenschaft beim ersten Start jeder AEM Instanz (durch die das anfängliche Repository erstellt wird) angegeben wird:
+Das Schlüsselmaterial, das im Repository gespeichert ist (wie bei AEM 6.2 und früher), kann beibehalten werden. Geben Sie die folgende Systemeigenschaft beim ersten Start jeder AEM-Instanz an (wodurch das anfängliche Repository erstellt wird):
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
@@ -321,7 +317,7 @@ Verwenden [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * [Aktualisieren des Granite Crypto-Bundles](#refresh-the-granite-crypto-bundle)
 
-   ![replicare-repository](assets/replicare-repository.png)
+  ![replicare-repository](assets/replicare-repository.png)
 
 #### Aktualisieren des Granite Crypto-Bundles {#refresh-the-granite-crypto-bundle}
 
@@ -332,10 +328,10 @@ Verwenden [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 * Suchen `Adobe Granite Crypto Support` Bundle (com.adobe.granite.crypto)
 * Auswählen **Aktualisieren**
 
-   ![granite-crypto](assets/granite-crypto.png)
+  ![granite-crypto](assets/granite-crypto.png)
 
 * Nach einem Moment **Erfolg** sollte angezeigt werden:
-   `Operation completed successfully.`
+  `Operation completed successfully.`
 
 ### Apache HTTP Server {#apache-http-server}
 
@@ -364,8 +360,8 @@ Achten Sie insbesondere darauf, den richtigen Servernamen zu verwenden, nicht `l
 
 Informationen zur Verwendung eines Dispatchers finden Sie unter:
 
-* AEM [Dispatcher](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher.html) Dokumentation
-* [Installieren des Dispatchers](https://helpx.adobe.com/de/experience-manager/dispatcher/using/dispatcher-install.html)
+* AEM [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Dokumentation
+* [Installieren des Dispatchers](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en)
 * [Konfigurieren des Dispatchers für Communities](/help/communities/dispatcher.md)
 * [Bekannte Probleme](/help/communities/troubleshooting.md#dispatcher-refetch-fails)
 
@@ -373,6 +369,6 @@ Informationen zur Verwendung eines Dispatchers finden Sie unter:
 
 * Besuch [Verwalten von Communities-Sites](/help/communities/administer-landing.md) , um mehr über die Erstellung einer Community-Site, die Konfiguration von Community-Site-Vorlagen, die Moderation von Community-Inhalten, die Verwaltung von Mitgliedern und die Konfiguration von Messaging zu erfahren.
 
-* Besuch [Entwickeln von Communities](/help/communities/communities.md) , um mehr über das Social-Komponenten-Framework (SCF) zu erfahren und Communities-Komponenten und -Funktionen anzupassen.
+* Besuch [Entwickeln von Communities](/help/communities/communities.md) Hier erfahren Sie mehr über das Social Component Framework (SCF) und das Anpassen von Communities-Komponenten und -Funktionen.
 
-* Besuch [Erstellen von Communities-Komponenten](/help/communities/author-communities.md) , um zu erfahren, wie Sie Communities-Komponenten erstellen und konfigurieren.
+* Besuch [Erstellen von Communities-Komponenten](/help/communities/author-communities.md) Hier erfahren Sie, wie Sie Communities-Komponenten erstellen und konfigurieren.

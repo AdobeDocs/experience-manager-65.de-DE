@@ -1,15 +1,15 @@
 ---
 title: Öffnen und Ausfüllen veröffentlichter Formulare
-description: Forms Portal bietet Webentwicklern Komponenten zum Erstellen und Anpassen eines Formularportals auf mit Adobe Experience Manager (AEM) erstellten Websites.
+description: Forms Portal bietet Webentwicklern Komponenten zum Erstellen und Anpassen eines Forms-Portals auf mit Adobe Experience Manager (AEM) erstellten Websites.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: aedf890c-a2f1-412f-8897-2492ffab335a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
 workflow-type: tm+mt
-source-wordcount: '924'
-ht-degree: 28%
+source-wordcount: '935'
+ht-degree: 18%
 
 ---
 
@@ -17,25 +17,25 @@ ht-degree: 28%
 
 In einer formularzentrierten Portal-Bereitstellung sind die Formularentwicklung und die Portalentwicklung zwei unterschiedliche Aktivitäten. Während Formularentwickler Formulare in einem Repository entwerfen und speichern, erstellen Webentwickler eine Webanwendung, um Formulare aufzulisten und Übermittlungen zu verarbeiten. Forms wird dann in die Webstufe kopiert, da keine Kommunikation zwischen dem Formular-Repository und der Webanwendung besteht.
 
-Dies führt häufig zu Problemen bei der Verwaltung der Einrichtung und zu Produktionsverzögerungen. Wenn beispielsweise eine neuere Version eines Formulars im Repository verfügbar ist, ersetzt der Formularentwickler das Formular auf der Webstufe, ändert die Webanwendung und stellt das Formular erneut auf der öffentlichen Website bereit. Eine erneute Bereitstellung der Webanwendung kann zu Serverausfällen führen. Da der Serverausfall eine geplante Aktivität ist, können die Änderungen nicht sofort an die öffentliche Site gesendet werden.
+Dies führt häufig zu Problemen bei der Verwaltung der Einrichtung und zu Produktionsverzögerungen. Wenn beispielsweise eine neuere Version eines Formulars im Repository verfügbar ist, ersetzt der Formular-Designer das Formular auf der Webstufe, ändert die Webanwendung und stellt das Formular erneut auf der öffentlichen Website bereit. Eine erneute Bereitstellung der Webanwendung kann zu Serverausfällen führen. Da der Serverausfall eine geplante Aktivität ist, können die Änderungen nicht sofort an die öffentliche Site gesendet werden.
 
-Forms Portal reduziert den Verwaltungsaufwand und Produktionsverzögerungen. Es bietet Webentwicklern Komponenten zum Erstellen und Anpassen eines Formularportals auf mit Adobe Experience Manager (AEM) erstellten Websites.
+Forms Portal reduziert den Verwaltungsaufwand und Produktionsverzögerungen. Sie bietet Webentwicklern Komponenten zum Erstellen und Anpassen eines Forms-Portals auf mit Adobe Experience Manager (AEM) erstellten Websites.
 
 Weitere Informationen zu Forms Portal und seinen Funktionen finden Sie unter [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md).
 
-## Erste Schritte mit dem Forms Portal {#getting-started-with-forms-portal}
+## Erste Schritte mit Forms Portal {#getting-started-with-forms-portal}
 
 Navigieren Sie zur veröffentlichten Forms Portal-Seite. Weitere Informationen zum Erstellen einer Forms Portal-Seite finden Sie unter [Erstellen einer Forms Portal-Seite](../../forms/using/creating-form-portal-page.md).
 
-Die Komponente „Search &amp; Lister“ von Forms Portal zeigt die in der Veröffentlichungsinstanz des AEM-Servers verfügbaren Formulare. Diese Liste enthält alle Formulare oder die im Filter zum Zeitpunkt der Erstellung der Forms Portal-Seite definierten Formulare. Eine Forms Portal-Seite sieht ähnlich aus wie in der folgenden Abbildung dargestellt:
+Die Komponente &quot;Search and Lister&quot;von Forms Portal zeigt die Formulare an, die auf der Veröffentlichungsinstanz des AEM-Servers verfügbar sind. Diese Liste enthält alle Formulare oder die im Filter zum Zeitpunkt der Erstellung der Forms Portal-Seite definierten Formulare. Eine Forms Portal-Seite sieht ähnlich aus wie in der folgenden Abbildung dargestellt:
 
 ![Beispiel für die Forms Portal-Seite ](assets/forms-portal-page.png)
 
-Beispiel für eine Forms Portal-Seite
+Beispielseite für Forms Portal
 
 ### Suche und Auflister {#search-and-lister}
 
-Mit der Komponente &quot;Search &amp; Lister&quot;können Sie Ihrem Formularportal die folgenden Funktionen hinzufügen:
+Mit der Komponente &quot;Search &amp; Lister&quot;können Sie Ihrem Forms-Portal die folgenden Funktionen hinzufügen:
 
 * Auflisten von Formularen in der Bedienfeld-, Karten- oder Rasteransicht, die standardmäßig verfügbar sind. Es werden auch benutzerdefinierte templatesList-Formulare aus bestimmten Ordnern in Forms Manager unterstützt.
 * Geben Sie an, wie Formulare wiedergegeben werden: HTML5, PDF oder beides.
@@ -58,7 +58,7 @@ Dialogfeld für die erweiterte Suche
 
 Mit der erweiterten Suche können Sie Formulare basierend auf angegebenen Formulareigenschaften suchen. Dies liefert ein spezifischeres Ergebnis als die Volltextsuche. Die erweiterte Suche umfasst die Suche anhand von Tags, Eigenschaften (wie Autor, Beschreibung und Titel), Änderungsdatum und Volltext.
 
-Lister zeigt Formulare anhand der Suchparameter. Jedes Formular im Suchergebnis wird mit einem Symbol angezeigt, das mit dem verknüpften Formular verknüpft ist. Sie können auf das Symbol klicken, um das zugehörige Formular zu öffnen und damit zu arbeiten.
+Der Lister zeigt Formulare basierend auf den Suchparametern an. Jedes Formular im Suchergebnis wird mit einem Symbol angezeigt, das mit dem verknüpften Formular verknüpft ist. Sie können auf das Symbol klicken, um das zugehörige Formular zu öffnen und damit zu arbeiten.
 
 ### Formular ausfüllen {#filling-a-form}
 
@@ -88,9 +88,9 @@ Komponente „Entwürfe und Sendungen“
 
 ## Ein neues Formular mit den gesendeten Formulardaten starten {#start-a-new-form-using-submitted-form-data}
 
-Es gibt bestimmte Formulare, die Sie häufig ausfüllen und senden müssen. So wird beispielsweise jedes Jahr das Formular für die Einreichung der Steuererklärung eingesendet. Dabei ändern sich zwar einige Angaben von Jahr zu Jahr, andere wie zur Person oder zur Familie jedoch nicht. Sie müssen jedoch das gesamte Formular von Grund auf neu ausfüllen.
+Es gibt bestimmte Formulare, die Sie ausfüllen und oft senden müssen. So wird beispielsweise jedes Jahr das Formular zur Abgabe einer Steuererklärung übermittelt. Dabei ändern sich zwar einige Angaben von Jahr zu Jahr, andere wie zur Person oder zur Familie jedoch nicht. Sie müssen jedoch das gesamte Formular von Grund auf neu ausfüllen.
 
-AEM Forms trägt zu einem optimierten Benutzererlebnis beim Ausfüllen von Formularen bei und reduziert dafür benötigte Zeit erheblich. Endbenutzer können für ein neues Formular die Daten von einem früher gesendeten Formular verwenden. Diese Funktion ist integriert in der [Komponente „Drafts and Submissions“](../../forms/using/draft-submission-component.md). Wenn Sie die Komponente &quot;Drafts and Submissions&quot;zu Ihrer Forms Portal-Seite hinzufügen und sie veröffentlichen, sehen Endbenutzer auf den Registerkarten &quot;Submitted Forms&quot;und &quot;Draft Forms&quot;eine Option, um ein neues Formular mit Daten aus einem gesendeten Formular zu starten. Die folgende Abbildung verdeutlicht diese Option.
+AEM Forms trägt zu einem optimierten Benutzererlebnis beim Ausfüllen von Formularen bei und reduziert dafür benötigte Zeit erheblich. Endbenutzer können ein neues Formular mit Daten aus einem gesendeten Formular starten. Diese Funktion ist in der [Komponente &quot;Drafts and Submissions](../../forms/using/draft-submission-component.md). Wenn Sie die Komponente &quot;Drafts and Submissions&quot;zu Ihrer Forms Portal-Seite hinzufügen und sie veröffentlichen, sehen Endbenutzer auf den Registerkarten &quot;Submitted Forms&quot;und &quot;Draft Forms&quot;eine Option. Mit dieser Option können Sie ein neues Formular mit Daten aus einem gesendeten Formular erstellen. Die folgende Abbildung verdeutlicht diese Option.
 
 ![start-a-new-form](assets/start-a-new-form.png)
 

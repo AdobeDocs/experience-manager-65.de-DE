@@ -3,10 +3,10 @@ title: Technische Anforderungen
 description: In diesem Dokument werden die unterstützten Client- und Server-Plattformen für Adobe Experience Manager aufgeführt.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 3b08d5001e7d3c683caa021ecf051f44762bb9ac
+source-git-commit: 8336a7257d3c5e75cd37381b0124c227c2d55dca
 workflow-type: tm+mt
-source-wordcount: '3526'
-ht-degree: 100%
+source-wordcount: '3544'
+ht-degree: 92%
 
 ---
 
@@ -97,7 +97,7 @@ Adobe Experience Manager funktioniert mit den folgenden Versionen der Java™ Vi
 | Azul Zulu OpenJDK 11 − 64 Bit | A: Unterstützt `[3]` | |
 | Azul Zulu OpenJDK 8 − 64 Bit | A: Unterstützt `[3]` | |
 
-1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10 und Java™ 12 sind Nicht-LTS-Versionen von Oracle (weitere Informationen finden Sie in der [Roadmap für Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in Produktionsumgebungen bereitzustellen, unterstützt Adobe ausschließlich LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
+1. Oracle ist auf ein LTS-Modell (Long Term Support) für Oracle Java™ SE-Produkte umgestiegen. Java™ 9, Java™ 10 und Java™ 12 sind Nicht-LTS-Versionen von Oracle (weitere Informationen finden Sie in der [Roadmap für Oracle Java™ SE-Support](https://www.oracle.com/technetwork/java/eol-135779.html)). Um AEM in einer Produktionsumgebung bereitzustellen, unterstützt Adobe nur die LTS-Versionen von Java™. Der Support und die Bereitstellung des Oracle Java™ SE JDK, einschließlich aller Wartungsupdates von LTS-Versionen, werden von Adobe direkt für alle AEM-Kundinnen und -Kunden unterstützt, die die Oracle Java™ SE-Technologie nutzen. Weitere Informationen finden Sie in der [Richtlinie zur Java™-Unterstützung für Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Wichtig: Oracle Java™ 11 wird noch mindestens bis September 2026 unterstützt. Unterstützung für Oracle Java™ 17 wird derzeit vorbereitet.**
 
 1. Die IBM® JRE wird nur zusammen mit WebSphere Application Server unterstützt.
@@ -135,35 +135,35 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 
 >[!NOTE]
 >
->Weitere Informationen zur Funktion von AEM Communities finden Sie unter [Bereitstellen von Communities](/help/communities/deploy-communities.md).
+Weitere Informationen zur Funktion von AEM Communities finden Sie unter [Bereitstellen von Communities](/help/communities/deploy-communities.md).
 
 >[!NOTE]
 >
->MongoDB ist eine Drittanbietersoftware und nicht im AEM-Lizenzierungspaket enthalten. Weitere Informationen finden Sie auf der Seite zur [MongoDB-Lizenzierungsrichtlinie](https://www.mongodb.com/community/licensing).
+MongoDB ist ein Software-Programm von Drittanbietern und ist nicht im AEM Lizenzierungspaket enthalten. Weitere Informationen finden Sie auf der Seite zur [MongoDB-Lizenzierungsrichtlinie](https://www.mongodb.com/licensing/server-side-public-license/faq).
 >
->Um Ihre AEM-Implementierung mit MongoDB optimal nutzen zu können, empfiehlt Adobe die Lizenzierung der MongoDB Enterprise-Version, um professionellen Support zu erhalten. Weitere Informationen finden Sie unter [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk).
+Um Ihre AEM-Implementierung mit MongoDB optimal nutzen zu können, empfiehlt Adobe die Lizenzierung der MongoDB Enterprise-Version, um professionellen Support zu erhalten. Weitere Informationen finden Sie unter [Empfohlene Bereitstellungen](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk).
 >
->Die Lizenz umfasst eine Standard-Replikatgruppe. Diese besteht aus einer primären und zwei sekundären Instanzen, die für die Autoren- oder Veröffentlichungsbereitstellungen verwendet werden können.
+Die Lizenz umfasst eine Standard-Replikatgruppe. Diese besteht aus einer primären und zwei sekundären Instanzen, die für die Autoren- oder Veröffentlichungsbereitstellungen verwendet werden können.
 >
->Wenn Sie sowohl Author als auch Publish in MongoDB ausführen möchten, müssen zwei separate Lizenzen erworben werden.
+Wenn Sie sowohl Author als auch Publish in MongoDB ausführen möchten, müssen zwei separate Lizenzen erworben werden.
 >
->Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von MongoDB mit AEM in Zusammenhang stehen.
+Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von MongoDB mit AEM in Zusammenhang stehen.
 >
->Weitere Informationen finden Sie auf der Seite für [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+Weitere Informationen finden Sie auf der Seite für [MongoDB für Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
 >[!NOTE]
 >
->Unterstützte relationale Datenbanken wie oben aufgeführt sind Software von Drittanbietern und sind nicht im AEM-Lizenzierungspaket enthalten.
+Unterstützte relationale Datenbanken wie oben aufgeführt sind Software von Drittanbietern und sind nicht im AEM-Lizenzierungspaket enthalten.
 >
->Um AEM 6.5 mit einer unterstützten relationalen Datenbank ausführen zu können, ist ein separater Support-Vertrag mit einem Datenbankanbieter erforderlich. Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von relationalen Datenbanken mit AEM 6.5 in Zusammenhang stehen.
+Um AEM 6.5 mit einer unterstützten relationalen Datenbank ausführen zu können, ist ein separater Support-Vertrag mit einem Datenbankanbieter erforderlich. Die Adobe-Kundenunterstützung hilft beim Qualifizieren von Problemen, die mit der Verwendung von relationalen Datenbanken mit AEM 6.5 in Zusammenhang stehen.
 >
->**Die meisten relationalen Datenbanken werden derzeit in Level-R auf AEM 6.5 unterstützt, das mit Support-Kriterien und einem Support-Programm geliefert wird, wie in der obigen Beschreibung zu Level-R angegeben.**
+**Die meisten relationalen Datenbanken werden derzeit in Level-R auf AEM 6.5 unterstützt, das mit Support-Kriterien und einem Support-Programm geliefert wird, wie in der obigen Beschreibung zu Level-R angegeben.**
 
 ### Servlet-Engines/Anwendungs-Server {#servlet-engines-application-servers}
 
-Adobe Experience Manager kann entweder als eigenständiger Server (die Schnellstart-JAR-Datei) oder als Web-Anwendung auf einem Drittanbieter-Anwendungs-Server (die WAR-Datei) ausgeführt werden.
+Adobe Experience Manager kann entweder als eigenständiger Server (die Schnellstart-JAR-Datei) oder als Webanwendung auf einem Drittanbieter-Anwendungsserver (die WAR-Datei) ausgeführt werden.
 
-Die mindestens erforderliche Servlet-API-Version ist Servlet 3.1
+Die erforderliche Mindestversion der Servlet-API ist Servlet 3.1
 
 | Plattform | Unterstützungsebene |
 |---|---|
@@ -185,7 +185,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 
 | **Plattform** | **Unterstützungsebene** |
 |---|---|
-| **Linux®, basierend auf der Red Hat®-Verteilung** | A: Unterstützt `[1]` `[3]` |
+| **Linux® basierend auf der Red Hat®-Distribution** | A: Unterstützt `[1]` `[3]` |
 | Linux®, auf Basis der Debian-Verteilung einschl. Ubuntu | A: Unterstützt `[1]` `[2]` |
 | Linux®, auf Basis der SUSE®-Verteilung | A: Unterstützt `[1]` |
 | Microsoft® Windows Server 2019 `[4]` | R: Eingeschränkte Unterstützung für neue Verträge `[5]` |
@@ -202,13 +202,13 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 
 >[!NOTE]
 >
->Wenn Sie AEM Forms 6.5 installieren, stellen Sie sicher, dass Sie die folgenden 32-Bit-Versionen von Microsoft Visual C++ Redistributable installiert haben.
+Wenn Sie AEM Forms 6.5 installieren, stellen Sie sicher, dass Sie die folgenden 32-Bit-Versionen von Microsoft Visual C++ Redistributable installiert haben.
 >
->* Microsoft® Visual C++ 2008 Redistributable
->* Microsoft® Visual C++ 2010 Redistributable
->* Microsoft® Visual C++ 2012 Redistributable
->* Microsoft® Visual C++ 2013 Redistributable
->* Microsoft® Visual C++ 2019 (VC14.28 oder höher) Redistributable
+* Microsoft® Visual C++ 2008 Redistributable
+* Microsoft® Visual C++ 2010 Redistributable
+* Microsoft® Visual C++ 2012 Redistributable
+* Microsoft® Visual C++ 2013 Redistributable
+* Microsoft® Visual C++ 2019 (VC14.28 oder höher) Redistributable
 
 
 
@@ -236,7 +236,7 @@ Die folgenden Web-Server werden für die Verwendung mit der Dispatcher-Version 4
 | Microsoft IIS® 10 (Internet Information Server) | A: Unterstützt |
 | Microsoft® IIS 8.5 (Internet Information Server) | Z: Nicht unterstützt |
 
-1. Auf Apache HTTPD-Quellcode basierende Webserver werden im gleichen Umfang unterstützt wie die HTTPD-Version, auf der sie basieren. Wenden Sie sich bei Zweifeln hinsichtlich der Unterstützungsebene des jeweiligen Serverprodukts zur Bestätigung an Adobe. Folgende Fälle:
+1. Webserver, die auf dem Apache httpd-Quellcode basieren, unterstützen genauso viel wie die HTTPD-Version, auf der sie basieren. Wenden Sie sich bei Zweifeln hinsichtlich der Unterstützungsebene des jeweiligen Serverprodukts zur Bestätigung an Adobe. Die folgenden Fälle:
 
    1. Der HTTP-Server wurde nur mit offiziellen Apache-Quellverteilungen erstellt, oder
    1. Der HTTP-Server wurde als Teil des Betriebssystems bereitgestellt, auf dem er ausgeführt wird. Beispiele: IBM® HTTP Server, Oracle HTTP Server
@@ -253,9 +253,9 @@ Die AEM-Benutzeroberfläche ist für größere Bildschirme (normalerweise Notebo
 
 >[!NOTE]
 >
->**Unterstützung für Browser mit schnellen Versionszyklen:**
+**Unterstützung für Browser mit schnellen Versionszyklen:**
 >
->Die Versionen von Mozilla Firefox, Google Chrome und Microsoft® Edge werden alle paar Monate aktualisiert. Adobe setzt sich dafür ein, Aktualisierungen für Adobe Experience Manager bereitzustellen, um die unten beschriebene Unterstützungsebene mit den kommenden Versionen dieser Browser beizubehalten.
+Die Versionen von Mozilla Firefox, Google Chrome und Microsoft® Edge werden alle paar Monate aktualisiert. Adobe setzt sich dafür ein, Aktualisierungen für Adobe Experience Manager bereitzustellen, um die unten beschriebene Unterstützungsebene mit den kommenden Versionen dieser Browser beizubehalten.
 
 <table>
  <tbody>
@@ -317,13 +317,13 @@ Die AEM-Benutzeroberfläche ist für größere Bildschirme (normalerweise Notebo
 
 ### Unterstützte Browser für Websites {#supported-browsers-for-websites}
 
-Im Allgemeinen hängt die Browser-Unterstützung für von AEM Sites gerenderte Websites von der Implementierung von Seitenvorlagen, Designs und der Komponentenausgabe von AEM ab und unterliegt daher der Kontrolle der Seite, die diese Teile implementiert.
+Im Allgemeinen hängt die Browserunterstützung für von AEM Sites gerenderte Websites von der Implementierung AEM Seitenvorlagen, Designs und Komponentenausgabe ab und liegt daher in der Verantwortung des Anbieters, der diese Teile implementiert.
 
 ### WebDAV-Clients {#webdav-clients}
 
 **Microsoft® Windows 7+**
 
-Um eine erfolgreiche Verbindung mit Microsoft Windows 7+ zu einer AEM-Instanz herzustellen, die nicht mit SSL gesichert ist, muss unter Windows die grundlegende Authentifizierung über ein ungesichertes Netzwerk aktiviert sein. Dies erfordert eine Änderung in der Windows-Registrierung des WebClient:
+Bei der Verbindung mit Microsoft® Windows 7+ mit einer AEM Instanz, die nicht mit SSL gesichert ist, muss unter Windows die grundlegende Authentifizierung über ein ungesichertes Netzwerk aktiviert werden. Dies erfordert eine Änderung in der Windows-Registrierung des WebClient:
 
 1. Suchen Sie den Registrierungsunterschlüssel:
 
@@ -359,9 +359,9 @@ Wenn Dynamic Media aktiviert ist, gelten die folgenden zusätzlichen technischen
 
 >[!NOTE]
 >
->Diese **Systemanforderungen** gelten, wenn Sie den Modus „Dynamic Media –Hybrid“ verwenden. Der Modus „Dynamic Media –Hybrid“ verfügt über einen eingebetteten Bildserver, der nur für bestimmte Betriebssysteme zertifiziert ist.
+Diese **Systemanforderungen** gelten, wenn Sie den Modus „Dynamic Media –Hybrid“ verwenden. Der Modus „Dynamic Media –Hybrid“ verfügt über einen eingebetteten Bildserver, der nur für bestimmte Betriebssysteme zertifiziert ist.
 >
->Für Dynamic Media-Kunden, die den Modus „Dynamic Media – Scene7“ ausführen (d. h. Ausführungsmodus **dynamicmedia_scene7**) gelten keine weiteren Systemanforderungen. Es gelten dieselben Systemanforderungen wie für AEM. Die Architektur des Dynamic Media Scene7-Modus verwendet den Cloud-basierten Bilddienst und nicht den in AEM eingebetteten Dienst.
+Für Dynamic Media-Kunden, die den Modus „Dynamic Media – Scene7“ ausführen (d. h. Ausführungsmodus **dynamicmedia_scene7**) gelten keine weiteren Systemanforderungen. Es gelten dieselben Systemanforderungen wie für AEM. Die Architektur des Dynamic Media Scene7-Modus verwendet den Cloud-basierten Bilddienst und nicht den in AEM eingebetteten Dienst.
 
 #### Hardware {#hardware}
 
@@ -381,27 +381,27 @@ Wenn Sie Dynamic Media auf Linux® verwenden, müssen die folgenden Voraussetzun
 
 >[!NOTE]
 >
->Falls das Gebietsschema so festgelegt ist, dass LC_CTYPE nicht `en_US.UTF-8` entspricht, funktioniert Dynamic Media nicht. Geben Sie bei der Eingabeaufforderung den Wert „locale“ ein, um den Wert zu ermitteln. Wenn er nicht richtig eingestellt ist, legen Sie die Umgebungsvariable LC_CTYPE auf die leere Zeichenfolge fest, indem Sie „export LC_CTYPE=“ eingeben, bevor Sie AEM ausführen.
+Falls das Gebietsschema so festgelegt ist, dass LC_CTYPE nicht `en_US.UTF-8` entspricht, funktioniert Dynamic Media nicht. Geben Sie bei der Eingabeaufforderung den Wert „locale“ ein, um den Wert zu ermitteln. Wenn sie nicht richtig festgelegt ist, legen Sie die Umgebungsvariable LC_CTYPE auf die leere Zeichenfolge fest, indem Sie &quot;export LC_CTYPE=&quot;eingeben, bevor Sie AEM ausführen.
 
 >[!NOTE]
 >
->**Deaktivieren von SELinux**: Die Bereitstellung von Bildern funktioniert nicht, wenn SELinux aktiviert ist. Diese Option ist standardmäßig aktiviert. Um dieses Problem zu beheben, bearbeiten Sie die Datei **/etc/selinux/config** und ändern Sie den SELinux-Wert von:
+**Deaktivieren von SELinux**: Die Bereitstellung von Bildern funktioniert nicht, wenn SELinux aktiviert ist. Diese Option ist standardmäßig aktiviert. Um dieses Problem zu beheben, bearbeiten Sie die Datei **/etc/selinux/config** und ändern Sie den SELinux-Wert von:
 >
->`SELINUX=enforcing` **nach** `SELINUX=disabled`
+`SELINUX=enforcing` **nach** `SELINUX=disabled`
 
 >[!NOTE]
 >
->**NUMA-Architektur:** Systeme mit Prozessoren mit AMD64 und Intel® EM64T sind normalerweise als NUMA-Plattformen (Non-Uniform Memory Architecture) konfiguriert. Das heißt, der Kernel erstellt mehrere Speicherknoten beim Booten, anstatt einen einzelnen Speicherknoten zu erstellen.
+**NUMA-Architektur:** Systeme mit Prozessoren mit AMD64 und Intel® EM64T sind normalerweise als NUMA-Plattformen (Non-Uniform Memory Architecture) konfiguriert. Das heißt, der Kernel erstellt mehrere Speicherknoten beim Booten, anstatt einen einzelnen Speicherknoten zu erstellen.
 >
->Das Konstrukt mit mehreren Knoten kann zu einer Speichererschöpfung auf einem oder mehreren Knoten führen, bevor andere Knoten erschöpft sind. Wenn die Speichererschöpfung eintritt, kann der Kernel Prozesse beenden (z. B. den Bild- oder Platform-Server), selbst wenn verfügbarer Speicher vorhanden ist.
+Das Konstrukt mit mehreren Knoten kann zu einer Speichererschöpfung auf einem oder mehreren Knoten führen, bevor andere Knoten erschöpft sind. Wenn die Speichererschöpfung eintritt, kann der Kernel Prozesse beenden (z. B. den Bild- oder Platform-Server), selbst wenn verfügbarer Speicher vorhanden ist.
 >
->Daher empfiehlt Adobe, dass Sie NUMA bei der Ausführung eines solchen Systems mit der Boot-Option **numa=off** ausschalten, um zu vermeiden, dass der Kernel diese Prozesse beendet.
+Daher empfiehlt Adobe, dass Sie NUMA bei der Ausführung eines solchen Systems mit der Boot-Option **numa=off** ausschalten, um zu vermeiden, dass der Kernel diese Prozesse beendet.
 
 >[!NOTE]
 >
->**Host-Name des Servers muss aufgelöst werden**: Stellen Sie sicher, dass der Host-Name des Servers in eine IP-Adresse aufgelöst werden kann. Wenn dies nicht möglich ist, fügen Sie zu **/etc/hosts** den vollqualifizierten Hostnamen und die IP-Adresse hinzu:
+**Host-Name des Servers muss aufgelöst werden**: Stellen Sie sicher, dass der Host-Name des Servers in eine IP-Adresse aufgelöst werden kann. Wenn dies nicht möglich ist, fügen Sie zu **/etc/hosts** den vollqualifizierten Hostnamen und die IP-Adresse hinzu:
 >
->`<ip address> <fully qualified hostname>`
+`<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
 
@@ -486,20 +486,20 @@ Windows x86:
 
 >[!NOTE]
 >
->PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
+PDF Generator unterstützt nur englische, französische, deutsche und japanische Versionen der unterstützten Betriebssysteme und Anwendungen.
 >
->Zusätzlich gilt Folgendes:
+Zusätzlich gilt Folgendes:
 >
->* PDF Generator erfordert die 32-Bit-Version der [klassischen Acrobat 2020-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder der Acrobat 2017-Version 17.011.30078, um die Konvertierung durchzuführen.
->* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
->* PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft® Office Professional Plus und andere für die Konvertierung unter einem Windows-Betriebssystem erforderliche Software.
->* PDF Generator unterstützt die 32-Bit- und 64-Bit-Versionen von OpenOffice auf dem Linux®-Betriebssystem.
->* PDF Generator unterstützt nicht Microsoft® Office 365.
->* Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
->* Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))
->* Der PDF Generator-Service unterstützt nicht Microsoft® Windows 10.
->* PDF Generator kann keine Dateien mit Microsoft® Visio 2019 konvertieren. Sie können weiterhin Microsoft® Visio 2016 verwenden, um `.VSD`- und `.VSDX`-Dateien zu konvertieren.
->* PDF Generator kann keine Dateien mit Microsoft® Project 2019 konvertieren. Sie können weiterhin Microsoft® Project 2016 verwenden, um `.VSD`- und `.VSDX`-Dateien zu konvertieren.
+* PDF Generator erfordert eine 32-Bit-Version von [Acrobat 2020 Klassische Track-Version 20.004.30006](https://helpx.adobe.com/de/acrobat/release-note/release-notes-acrobat-reader.html) oder Acrobat 2017, Version 17.011.30078, um die Konvertierung durchzuführen.
+* PDF Generator-Konvertierungen für OpenOffice werden nur unter Windows und Linux unterstützt®.
+* PDF Generator unterstützt nur die 32-Bit-Einzelhandelsversion von Microsoft® Office Professional Plus und andere für die Konvertierung auf dem Windows-Betriebssystem erforderliche Software.
+* PDF Generator unterstützt die 32-Bit- und 64-Bit-Versionen von OpenOffice unter Linux®.
+* PDF Generator unterstützt nicht Microsoft® Office 365.
+* Die Funktionen von OCR PDF, PDF optimieren und PDF erstellen werden nur unter Windows unterstützt.
+* Eine Version von Acrobat ist im Lieferumfang von AEM Forms enthalten, um die PDF Generator-Funktionalität zu aktivieren. Die gebündelte Version sollte während der Laufzeit der AEM Forms-Lizenz zur Verwendung mit AEM Forms PDF Generator nur programmatisch mit AEM Forms zugänglich sein. Weitere Informationen finden Sie in der AEM Forms-Produktbeschreibung für Ihre Bereitstellung ([On-Premise](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-on-premise.html) oder [Managed Services](https://helpx.adobe.com/de/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+* Der PDF Generator-Service unterstützt nicht Microsoft® Windows 10.
+* PDF Generator kann keine Dateien mit Microsoft® Visio 2019 konvertieren. Sie können weiterhin Microsoft® Visio 2016 verwenden, um `.VSD`- und `.VSDX`-Dateien zu konvertieren.
+* PDF Generator kann keine Dateien mit Microsoft® Project 2019 konvertieren. Sie können weiterhin Microsoft® Project 2016 verwenden, um `.VSD`- und `.VSDX`-Dateien zu konvertieren.
 >
 
 ### Anforderungen für AEM Forms Designer {#requirements-for-aem-forms-designer}
@@ -531,4 +531,4 @@ Das Zurückschreiben von XMP-Daten wird für die folgenden Plattformen und Datei
 
 ### Anforderungen für die Verarbeitung von Metadaten-lastigen Assets durch AEM Assets unter Linux® {#assetsonlinux}
 
-Für den XMPFilesProcessor-Prozess ist die Bibliothek GLIBC_2.14 erforderlich. Verwenden Sie einen Linux-Kernel, der GLIBC_2.14 enthält, zum Beispiel Linux-Kernel Version 3.1.x. Dies verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.
+Für den XMPFilesProcessor-Prozess muss die Bibliothek GLIBC_2.14 funktionieren. Verwenden Sie einen Linux-Kernel, der GLIBC_2.14 enthält, zum Beispiel Linux-Kernel Version 3.1.x. Dies verbessert die Leistung bei der Verarbeitung von Assets, die eine große Menge an Metadaten enthalten, z. B. PSD-Dateien. Die Verwendung einer früheren Version von GLIBC führt zu Fehlern in Protokollen, die mit `com.day.cq.dam.core.impl.handler.xmp.NCommXMPHandler Failed to read XMP` beginnen.
