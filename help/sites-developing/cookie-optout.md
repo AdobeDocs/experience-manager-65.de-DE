@@ -1,19 +1,15 @@
 ---
 title: Konfigurieren der Verwendung von Cookies
-seo-title: Configuring Cookie Usage
-description: AEM bietet einen Dienst, mit dem Sie konfigurieren und steuern können, wie Cookies mit Ihren Webseiten verwendet werden
-seo-description: AEM provides a service that enables you to configure and control how cookies are used with your web pages
-uuid: 10d95176-0a56-41f1-9d36-01dbdac757d4
+description: AEM bietet einen Dienst, mit dem Sie konfigurieren und steuern können, wie Cookies mit Ihren Webseiten verwendet werden.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: 5773ec1a-f15b-462d-8f9f-54ee1d7ead44
 exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '554'
-ht-degree: 40%
+source-wordcount: '550'
+ht-degree: 26%
 
 ---
 
@@ -28,23 +24,23 @@ Verwenden Sie diese Funktion, um sicherzustellen, dass Ihre Seiten die Zustimmun
 
 ## Konfigurieren zulässiger Cookies {#configuring-allowed-cookies}
 
-Konfigurieren Sie den Opt-out-Dienst der Adobe Granite , um festzulegen, wie Cookies auf Ihren Webseiten verwendet werden. In der folgenden Tabelle werden die Eigenschaften beschrieben, die Sie konfigurieren können.
+Konfigurieren Sie den Opt-out-Dienst von Adobe Granite, um festzulegen, wie Cookies auf Ihren Webseiten verwendet werden. In der folgenden Tabelle werden die Eigenschaften beschrieben, die Sie konfigurieren können.
 
 Zum Konfigurieren des Dienstes können Sie die [Web-Konsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) verwenden oder [eine OSGi-Konfiguration zum Repository hinzufügen](/help/sites-deploying/configuring-osgi.md#adding-a-new-configuration-to-the-repository). In der folgenden Tabelle werden die Eigenschaften beschrieben, die für beide Methoden erforderlich sind. Für eine OSGi-Konfiguration lautet die PID des Dienstes `com.adobe.granite.optout`.
 
 | Eigenschaftsname (Web-Konsole) | OSGi-Eigenschaftsname | Beschreibung |
 |---|---|---|
-| Opt-out-Cookies | optout.cookies | Die Namen von Cookies, die, wenn sie auf dem Gerät des Benutzers vorhanden sind, anzeigen, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
-| HTTP-Header für Opt-out | optout.headers | Die Namen der HTTP-Header, die, wenn vorhanden, anzeigen, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
+| Opt-out-Cookies | optout.cookies | Die Namen von Cookies, die darauf hinweisen, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat, sofern sie auf dem Gerät des Benutzers vorhanden sind. |
+| HTTP-Header für Opt-out | optout.headers | Die Namen von HTTP-Headern, die angeben, wenn vorhanden, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat. |
 | Cookies auf der Zulassungsliste | optout.whitelist.cookies | Eine Liste von Cookies, die für die Funktionalität der Website unerlässlich sind und ohne Zustimmung des Benutzers verwendet werden können. |
 
 ## Validieren der Cookie-Nutzung {#validating-cookie-usage}
 
-Verwenden Sie Client-seitiges JavaScript, um den Adobe Granite Opt-Out Service aufzurufen und zu überprüfen, ob Sie Cookies verwenden können. Verwenden Sie das JavaScript-Objekt Granite.OptOutUtil , um eine der folgenden Aufgaben auszuführen:
+Verwenden Sie clientseitiges JavaScript, um den Adobe Granite Opt-out-Dienst aufzurufen, um zu überprüfen, ob Sie ein Cookie verwenden können. Verwenden Sie das JavaScript-Objekt Granite.OptOutUtil , um eine der folgenden Aufgaben auszuführen:
 
 * Rufen Sie eine Liste mit Cookie-Namen ab, die darauf hinweisen, dass der Benutzer der Verwendung von Cookies zu Tracking-Zwecken nicht zustimmt.
 * Rufen Sie eine Liste von Cookies ab, die verwendet werden können.
-* Bestimmen Sie, ob der Webbrowser ein Cookie enthält, das anzeigt, dass der Benutzer der Verwendung von Cookies zum Tracking nicht zustimmt.
+* Stellen Sie fest, ob der Webbrowser ein Cookie enthält, das anzeigt, dass der Benutzer der Verwendung von Cookies zum Tracking nicht zustimmt.
 * Bestimmen Sie, ob ein bestimmtes Cookie verwendet werden kann.
 
 Die granite.utils [Client-Bibliotheksordner](/help/sites-developing/clientlibs.md#referencing-client-side-libraries) stellt das Objekt Granite.OptOutUtil bereit. Fügen Sie Ihrem Seitenkopf-JSP den folgenden Code hinzu, um einen Link zur JavaScript-Bibliothek einzuschließen:
@@ -70,7 +66,7 @@ Mit Granite.OptOutUtil können Sie bestimmen, ob die Verwendung von Cookies zul�
 
 ### Funktion &quot;getCookieNames()&quot; {#getcookienames-function}
 
-Gibt die Namen der Cookies zurück, die, sofern vorhanden, darauf hinweisen, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat.
+Die Namen der Cookies, die darauf hinweisen, dass der Benutzer der Verwendung von Cookies nicht zugestimmt hat.
 
 **Parameter**
 
@@ -82,7 +78,7 @@ Ein Array von Cookie-Namen.
 
 #### Funktion &quot;getWhitelistCookieNames()&quot; {#getwhitelistcookienames-function}
 
-Gibt die Namen der Cookies zurück, die unabhängig von der Zustimmung des Benutzers verwendet werden können.
+Die Namen der Cookies, die unabhängig von der Zustimmung des Benutzers verwendet werden können.
 
 **Parameter**
 
@@ -106,11 +102,11 @@ Einen booleschen Wert, der `true` lautet, wenn ein Cookie gefunden wird, das dar
 
 ### Funktion &quot;maySetCookie(cookieName)&quot; {#maysetcookie-cookiename-function}
 
-Bestimmt, ob ein bestimmtes Cookie im Browser des Benutzers verwendet werden kann. Diese Funktion entspricht der Verwendung der Funktion `isOptedOut`, wobei zusätzlich ermittelt wird, ob das angegebene Cookie in der Liste enthalten ist, die die Funktion `getWhitelistCookieNames` zurückgibt.
+Bestimmt, ob ein bestimmtes Cookie im Browser des Benutzers verwendet werden kann. Diese Funktion entspricht der Verwendung der `isOptedOut` -Funktion, mit der bestimmt wird, ob das angegebene Cookie in der Liste enthalten ist, in der die Variable `getWhitelistCookieNames` -Funktion zurückgibt.
 
 **Parameter**
 
-* cookieName: Zeichenfolge. Der Name des Cookies.
+* cookieName: String. Der Name des Cookies.
 
 **Rückgabe**
 
