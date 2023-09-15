@@ -12,9 +12,9 @@ discoiquuid: de7d7209-c194-4d19-853b-468ebf3fa4b2
 docset: aem65
 exl-id: 314a6409-398c-470b-8799-0c4e6f745141
 feature: Security
-source-git-commit: 41752e40f2bceae98d4a9ff8bf130476339fe324
-workflow-type: ht
-source-wordcount: '3025'
+source-git-commit: 465d3e956ecdd36eea5fe095e250652eedd4b3c5
+workflow-type: tm+mt
+source-wordcount: '3005'
 ht-degree: 100%
 
 ---
@@ -57,11 +57,11 @@ Diese Konten beinhalten:
 
 * Das `admin`-Konto von AEM
 
-   Sobald Sie das Passwort für das AEM-Admin-Konto geändert haben, müssen Sie für den Zugriff auf CRX das neue Passwort verwenden.
+  Sobald Sie das Passwort für das AEM-Admin-Konto geändert haben, müssen Sie für den Zugriff auf CRX das neue Passwort verwenden.
 
 * Das `admin`-Passwort für die OSGi-Web-Konsole
 
-   Diese Änderung wird auch für das Admin-Konto übernommen, das für den Zugriff auf die Web-Konsole verwendet wird. Daher müssen Sie dafür dasselbe Passwort verwenden.
+  Diese Änderung wird auch für das Admin-Konto übernommen, das für den Zugriff auf die Web-Konsole verwendet wird. Daher müssen Sie dafür dasselbe Passwort verwenden.
 
 Diese beiden Konten nutzen separate Kontoanmeldeinformationen und die Verwendung von unterschiedlichen sicheren Passwörtern für jedes Konto ist für eine sichere Bereitstellung von entscheidender Bedeutung.
 
@@ -132,7 +132,7 @@ Aus Sicherheitsgründen sollten beide geändert werden, um dem jeweiligen Anwend
 
 * **Transport-Benutzer** dürfen keine Admin-Benutzer sein. Richten Sie stattdessen einen Benutzer im Veröffentlichungssystem ein, der nur über Zugriffsrechte für die relevanten Teile des Veröffentlichungssystems verfügt, und verwenden Sie die Anmeldeinformationen dieses Benutzers für den Transport.
 
-     Sie können mit dem gebündelten Benutzer „Replikations-Empfänger“ beginnen und die Zugriffsrechte dieses Benutzenden so konfigurieren, dass sie Ihren Anforderungen entsprechen.
+    Sie können mit dem gebündelten Benutzer „Replikations-Empfänger“ beginnen und die Zugriffsrechte dieses Benutzenden so konfigurieren, dass sie Ihren Anforderungen entsprechen.
 
 * Der **Replikationsbenutzer** oder die **Agenten-Benutzer-ID** sollte auch nicht der Admin-Benutzer sein, sondern ein Benutzer, der nur replizierte Inhalte sehen kann. Der Replikationsbenutzende wird auch zum Erfassen von Inhalten verwendet, die auf dem Autorensystem repliziert werden sollen, bevor sie an den Publisher gesendet werden.
 
@@ -182,7 +182,7 @@ Der Referrer-Filterdienst ist ein OSGi-Dienst, mit dem Sie Folgendes konfigurier
 * Ob eine leere Referrer-Kopfzeile zulässig ist
 * Eine Whitelist von Servern, die zusätzlich zum Serverhost zugelassen werden sollen.
 
-   Standardmäßig sind alle Varianten von „localhost“ und die aktuellen Host-Namen, mit denen der Server verknüpft ist, in der Whitelist enthalten.
+  Standardmäßig sind alle Varianten von „localhost“ und die aktuellen Host-Namen, mit denen der Server verknüpft ist, in der Whitelist enthalten.
 
 So konfigurieren Sie den Referrer-Filterdienst:
 
@@ -262,17 +262,17 @@ Ein Denial-of-Service-Angriff (DoS) zielt darauf ab, eine Computer-Ressource fü
 * durch eine Flut von Anfragen von einer externen Quelle;
 * durch eine Anforderung von mehr Informationen, als das System erfolgreich bereitstellen kann.
 
-   Beispiel: Eine JSON-Darstellung des gesamten Repositorys.
+  Beispiel: Eine JSON-Darstellung des gesamten Repositorys.
 
 * Wenn eine Seite mit einer unbegrenzten Anzahl an URLs angefordert wird, kann die URL einen Handler, einige Selektoren, eine Erweiterung und einen Suffix enthalten. Diese Elemente können alle geändert werden.
 
-   So kann `.../en.html` angefordert werden als:
+  So kann `.../en.html` angefordert werden als:
 
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
 
-   Alle gültigen Varianten (geben z. B. die Antwort `200` zurück und werden zur Zwischenspeicherung konfiguriert) werden vom Dispatcher zwischengespeichert, was letztendlich zu einem vollen Dateisystem führt, sodass kein Dienst für weitere Anfragen verfügbar ist.
+  Alle gültigen Varianten (geben z. B. die Antwort `200` zurück und werden zur Zwischenspeicherung konfiguriert) werden vom Dispatcher zwischengespeichert, was letztendlich zu einem vollen Dateisystem führt, sodass kein Dienst für weitere Anfragen verfügbar ist.
 
 Es gibt viele Konfigurationsmöglichkeiten, um solche Angriffe zu verhindern. Hier gehen wir jedoch nur auf die ein, die direkt für AEM relevant sind.
 
@@ -300,17 +300,18 @@ So verhindern Sie einen Missbrauch infolge von DoS-Angriffen:
 
    * Insbesondere der JSON-Renderer, der die Baumstruktur über mehrere Ebenen hinweg durchlaufen kann.
 
-      Beispiel: Die Anfrage
+     Beispiel: Die Anfrage
 
-      `http://localhost:4502/.json`
+     `http://localhost:4502/.json`
 
-      könnte das gesamte Repository in einer JSON-Darstellung abbilden, was zu erheblichen Server-Problemen führen kann. Aus diesem Grund legt Sling eine Begrenzung für die maximale Anzahl der Ergebnisse fest. Um die Tiefe des JSON-Renderings zu begrenzen, können Sie den Wert für
+     könnte das gesamte Repository in einer JSON-Darstellung abbilden, was zu erheblichen Server-Problemen führen kann. Aus diesem Grund legt Sling eine Begrenzung für die maximale Anzahl der Ergebnisse fest. Um die Tiefe des JSON-Renderings zu begrenzen, können Sie den Wert für
 
-      **Max. JSON-Ergebnisse** (`json.maximumresults`)
+     **Max. JSON-Ergebnisse** (`json.maximumresults`)
 
-      in der Konfiguration für das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet) festlegen. Wenn dieser Grenzwert überschritten wird, wird das Rendering abgebrochen. Der Standardwert für Sling innerhalb von AEM ist `1000`.
+     in der Konfiguration für das [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet) festlegen. Wenn dieser Grenzwert überschritten wird, wird das Rendering abgebrochen. Der Standardwert für Sling innerhalb von AEM ist `1000`.
 
    * Deaktivieren Sie als vorbeugende Maßnahme die anderen Standard-Renderer (HTML, einfacher Text, XML). Dies erreichen Sie erneut, indem Sie das [Apache Sling-GET-Servlet](/help/sites-deploying/osgi-configuration-settings.md#apache-sling-get-servlet) konfigurieren.
+
    >[!CAUTION]
    >
    >Deaktivieren Sie nicht den JSON-Renderer, denn dieser ist für den normalen Betrieb von AEM erforderlich.
@@ -449,12 +450,6 @@ Im Einzelnen müssen Sie Folgendes tun:
 1. Fügen Sie die beiden zuvor kopierten Dateien ein.
 1. [Aktualisieren Sie das Crypto-Bundle](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle), wenn die Zielinstanz bereits ausgeführt wird.
 1. Wiederholen Sie die vorherigen Schritte für alle Instanzen, zu denen Sie den Schlüssel replizieren möchten.
-
->[!NOTE]
->
->Sie können die Methode der Speicherung von Schlüsseln vor Version 6.3 wiederherstellen, indem Sie bei der ersten Installation von AEM den folgenden Parameter hinzufügen:
->
->`-Dcom.adobe.granite.crypto.file.disable=true`
 
 #### Replizieren von Schlüsseln in AEM 6.2 und älteren Versionen {#replicating-keys-for-aem-and-older-versions}
 
