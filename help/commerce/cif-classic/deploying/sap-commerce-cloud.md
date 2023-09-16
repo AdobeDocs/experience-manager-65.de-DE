@@ -5,10 +5,10 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
 source-wordcount: '714'
-ht-degree: 69%
+ht-degree: 68%
 
 ---
 
@@ -95,7 +95,7 @@ Die Verwendung des Hybris-Servers erfordert eine separate Hybris-Lizenz.
 
 >[!NOTE]
 >
-Für Entwickler ist auch eine [API-Dokumentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) zum Herunterladen verfügbar.
+Für Entwickler [API-Dokumentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) kann auch heruntergeladen werden.
 
 ### Herunterladen und Erstellen Ihres Hybris-Servers {#download-and-build-your-hybris-server}
 
@@ -171,9 +171,9 @@ Um dies abzuschließen, benötigen Sie [Groovy](https://groovy-lang.org/) auf Ih
 
    [http://localhost:9002](http://localhost:9002)
 
-1. Klicken **Initialisieren** und bestätigen Sie dann die Initialisierungsaktion (da vorhandene Daten gelöscht werden).
+1. Klicks **Initialisieren** und bestätigen Sie dann die Initialisierungsaktion (da vorhandene Daten gelöscht werden).
 
-   Der Fortschritt wird in der Konsole angezeigt, mit `FINISHED` Angabe der Fertigstellung.
+   Der Fortschritt wird in der Konsole mit `FINISHED` Angabe der Fertigstellung.
 
    >[!NOTE]
    >

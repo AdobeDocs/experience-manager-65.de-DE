@@ -2,10 +2,10 @@
 title: Produkt-Cockpit
 description: Arbeiten mit dem Produkt-Cockpit
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
-source-wordcount: '424'
-ht-degree: 100%
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+workflow-type: tm+mt
+source-wordcount: '416'
+ht-degree: 72%
 
 ---
 
@@ -29,11 +29,11 @@ Das Aktivieren von gestaffelten Katalogfunktionen erfordert eine Authentifizieru
 
 >[!NOTE]
 >
->Gestaffelte Katalogfunktionen sind nur mit Adobe Commerce und Connectoren von Drittanbietern verfügbar, die eine Token-basierte Authentifizierung unterstützen.
+>Staging-Katalogfunktionen sind nur bei Adobe Commerce- und Drittanbieter-Connectoren verfügbar, die Token-basierte Authentifizierung unterstützen.
 
 ## Öffnen des Produkt-Cockpits {#opening-product-cockpit}
 
-Der einfachste Weg, auf das Produkt-Cockpit zuzugreifen, ist über das Menü „Commerce“ im AEM-Hauptmenü. Es ist auch möglich, Omnisearch (Suche nach „Commerce“) zu verwenden oder `https://<yourAEMInstance>/commerce.html` zu öffnen.
+Der einfachste Weg, um auf das Produkt-Cockpit zuzugreifen, ist über das &#39;Commerce&#39;-Menü in AEM Hauptmenü. Es ist auch möglich, Omnisearch (Suche nach „Commerce“) zu verwenden oder `https://<yourAEMInstance>/commerce.html` zu öffnen.
 
 ![AEM-Menü](/help/commerce/cif/assets/aem-menu.png)
 
@@ -63,13 +63,13 @@ Eine Volltextsuche über den gesamten Produktkatalog wird auf der linken Filter-
 
 ## Durchsuchen des gestaffelten Produktkatalogs {#staged-product-catalogs}
 
-Standardmäßig zeigt das Produkt-Cockpit Live-Produktkatalogdaten an. Mithilfe von „STAGED CATALOG“ auf der linken Filterseite wird der Produktkatalog für jedes ausgewählte Datum geladen.
+Standardmäßig zeigt das Produkt-Cockpit Live-Produktkatalogdaten an. Mithilfe des &quot;STAGED CATALOG&quot;auf der Registerkarte mit dem linken Filter wird der Produktkatalog für ein beliebiges Datum geladen.
 
 ![gestaffelter Katalog](/help/commerce/cif/assets/staged-cockpit.png)
 
 ## Eigenschaften des Produktkatalogs {#catalog-properties}
 
-Durch Klicken auf das Eigenschaftensymbol eines Produkts oder einer Kategorie wird die Eigenschaftenansicht des ausgewählten Objekts geöffnet. Das Öffnen der Eigenschaften einer Produktvariante ist gleichbedeutend mit dem Öffnen der Haupteigenschaften des Produkts.
+Durch Klicken auf das Eigenschaftensymbol eines Produkts oder einer Kategorie wird die Eigenschaftenansicht des ausgewählten Objekts geöffnet. Offene Eigenschaften einer Produktvariante sind gleich dem Öffnen der Hauptprodukteigenschaften.
 
 ### Registerkarten „Commerce“ {#tabs}
 
