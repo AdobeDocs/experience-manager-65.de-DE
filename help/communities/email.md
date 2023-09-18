@@ -1,21 +1,17 @@
 ---
 title: E-Mail konfigurieren
-seo-title: Configuring Email
 description: E-Mail-Konfiguration für Communities
-seo-description: Email configuration for Communities
-uuid: e8422cc2-1594-43b0-b587-82825636cec1
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '816'
-ht-degree: 8%
+source-wordcount: '815'
+ht-degree: 6%
 
 ---
 
@@ -51,33 +47,33 @@ Beispiel: (nur zu Veranschaulichungszwecken mit Werten gefüllt):
 
 * **[!UICONTROL Hostname des SMTP-Servers]**
 
-   *(Erforderlich)* Der zu verwendende SMTP-Server.
+  *(Erforderlich)* Der zu verwendende SMTP-Server.
 
 * **[!UICONTROL SMTP-Server-Anschluss]**
 
-   *(Erforderlich)* Der SMTP-Server-Port muss 25 oder höher sein.
+  *(Erforderlich)* Der SMTP-Server-Port muss 25 oder höher sein.
 
 * **[!UICONTROL SMTP-Benutzer]**
 
-   *(Erforderlich)* Der SMTP-Benutzer.
+  *(Erforderlich)* Der SMTP-Benutzer.
 
 * **[!UICONTROL SMTP-Kennwort]**
 
-   *(Erforderlich)* Das Kennwort des SMTP-Benutzers.
+  *(Erforderlich)* Das Kennwort des SMTP-Benutzers.
 
 * **[!UICONTROL &quot;Von&quot;-Adresse]**
 
-   Leer lassen
+  Leer lassen
 * **[!UICONTROL SMTP SSL verwenden]**
 
-   Wenn diese Option aktiviert ist, wird sichere E-Mail gesendet. Stellen Sie sicher, dass der Port auf 465 oder wie für den SMTP-Server erforderlich eingestellt ist.
+  Wenn diese Option aktiviert ist, wird eine sichere E-Mail gesendet. Stellen Sie sicher, dass der Port auf 465 oder wie für einen SMTP-Server erforderlich eingestellt ist.
 * **[!UICONTROL Debug-E-Mail]**
 
-   Ist diese Option aktiviert, wird die Protokollierung von SMTP-Serverinteraktionen aktiviert.
+  Wenn diese Option aktiviert ist, ermöglicht dies die Protokollierung von SMTP-Serverinteraktionen.
 
 ## AEM Communities-E-Mail-Konfiguration {#aem-communities-email-configuration}
 
-Einmal [Standard-E-Mail-Dienst](#default-mail-service-configuration) konfiguriert ist, werden die beiden vorhandenen Instanzen der `AEM Communities Email Reply Configuration` Die in der Version enthaltene OSGi-Konfiguration wird funktionsfähig.
+Einmal die [Standard-E-Mail-Dienst](#default-mail-service-configuration) konfiguriert ist, werden die beiden vorhandenen Instanzen der `AEM Communities Email Reply Configuration` Die in der Version enthaltene OSGi-Konfiguration wird funktionsfähig.
 
 Nur die Instanz für Abonnements muss weiter konfiguriert werden, wenn E-Mail-Antworten zugelassen werden.
 
@@ -103,13 +99,13 @@ So greifen Sie auf die Communities-E-Mail-Konfigurationsinstanzen zu:
 
 Die Instanz von `AEM Communities Email Reply Configuration` Die OSGi-Konfiguration mit der E-Mail &quot;Name&quot;ist die Benachrichtigungsfunktion. Diese Funktion enthält keine E-Mail-Antwort.
 
-Diese Konfiguration sollte nicht geändert werden.
+Ändern Sie diese Konfiguration nicht.
 
 * Suchen Sie die `AEM Communities Email Reply Configuration`.
 * Wählen Sie das Bearbeitungssymbol aus.
-* Überprüfen Sie die **Name** is `email`.
+* Stellen Sie sicher, dass **Name** is `email`.
 
-* Überprüfen **Beitrag aus Antwort-E-Mail erstellen** is `unchecked`.
+* Stellen Sie sicher, dass **Beitrag aus Antwort-E-Mail erstellen** is `unchecked`.
 
 ![configure-email-response](assets/configure-email-reply.png)
 
@@ -119,50 +115,50 @@ Bei Communities-Abonnements ist es möglich, die Möglichkeit für ein Mitglied 
 
 * Suchen Sie die `AEM Communities Email Reply Configuration`.
 * Wählen Sie das Bearbeitungssymbol aus.
-* Überprüfen Sie die **Name** is `subscriptions-email`.
+* Stellen Sie sicher, dass **Name** is `subscriptions-email`.
 
-   ![configure-email-subscription](assets/configure-email-subscriptions.png)
+  ![configure-email-subscription](assets/configure-email-subscriptions.png)
 
 * **[!UICONTROL Name]**
 
-   *(Erforderlich)* `subscriptions-email`. Nicht bearbeiten.
+  *(Erforderlich)* `subscriptions-email`. Nicht bearbeiten.
 
 * **[!UICONTROL Beitrag aus Antwort-E-Mail erstellen]**
 
-   Wenn diese Option aktiviert ist, kann der Empfänger der Abonnement-E-Mail Inhalte durch Senden einer Antwort posten. Diese Option ist standardmäßig aktiviert.
+  Wenn diese Option aktiviert ist, kann der Empfänger einer Abonnement-E-Mail Inhalte durch Senden einer Antwort posten. Die Option Standard ist aktiviert.
 * **[!UICONTROL Getrackte ID zur Kopfzeile hinzufügen]**
 
-   Der Standardwert ist `Reply-To`.
+  Der Standardwert ist `Reply-To`.
 
 * **[!UICONTROL Maximale Länge des Betreffs]**
 
-   Wenn die Tracker-ID zur Betreffzeile hinzugefügt wird, ist dies die maximale Länge des Betreffs, ausgenommen die verfolgte ID, nach der sie abgeschnitten wird. Beachten Sie, dass dies so klein wie möglich sein sollte, um zu verhindern, dass getrackte ID-Informationen verloren gehen. Der Standardwert ist 200.
+  Wenn die Tracker-ID zur Betreffzeile hinzugefügt wird, ist dies die maximale Länge des Betreffs, ausgenommen die verfolgte ID, nach der sie abgeschnitten wird. Dies sollte so klein wie möglich sein, um zu verhindern, dass getrackte ID-Informationen verloren gehen. Der Standardwert lautet 200.
 
 * **[!UICONTROL E-Mail-Adresse &quot;Antwort an&quot;]**
 
-   Adresse, die als E-Mail-Adresse &quot;Antwort&quot; verwendet wird. Der Standardwert ist `no-reply@example.com`.
+  Adresse, die als &quot;Antwort&quot;-E-Mail-Adresse verwendet wird. Der Standardwert ist `no-reply@example.com`.
 
 * **[!UICONTROL Antwort an Trennzeichen]**
 
-   Wenn die Tracker-ID zur Kopfzeile Antwort hinzugefügt wird, wird dieses Trennzeichen verwendet. Der Standardwert ist `+` (Pluszeichen).
+  Wenn die Tracker-ID zur Kopfzeile Antwort hinzugefügt wird, wird dieses Trennzeichen verwendet. Der Standardwert ist `+` (Pluszeichen).
 
 * **[!UICONTROL Tracker-ID-Präfix im Betreff]**
 
-   Wenn die Tracker-ID der Betreffzeile hinzugefügt wird, wird dieses Präfix verwendet. Der Standardwert ist `post#`.
+  Wenn die Tracker-ID der Betreffzeile hinzugefügt wird, wird dieses Präfix verwendet. Der Standardwert ist `post#`.
 
 * **[!UICONTROL Tracker-ID-Präfix im Nachrichtentext]**
 
-   Wenn die Tracker-ID zum Nachrichtentext hinzugefügt wird, wird dieses Präfix verwendet. Der Standardwert ist `Please do not remove this:`.
+  Wenn die Tracker-ID zum Nachrichtentext hinzugefügt wird, wird dieses Präfix verwendet. Der Standardwert ist `Please do not remove this:`.
 
-* **[!UICONTROL E-Mail als HTML]**: Wenn diese Option aktiviert ist, wird der Inhaltstyp der E-Mail als `"text/html;charset=utf-8"`. Diese Option ist standardmäßig aktiviert.
+* **[!UICONTROL E-Mail als HTML]**: Ist diese Option aktiviert, wird der Inhaltstyp der E-Mail auf `"text/html;charset=utf-8"`. Die Option Standard ist aktiviert.
 
 * **[!UICONTROL Standardbenutzername]**
 
-   Dieser Name wird für Benutzer ohne Namen verwendet. Der Standardwert ist `no-reply@example.com`.
+  Dieser Name wird für Benutzer ohne Namen verwendet. Der Standardwert ist `no-reply@example.com`.
 
 * **[!UICONTROL Vorlagen-Stammpfad]**
 
-   Die E-Mail wird mithilfe der Vorlage erstellt, die in diesem Stammverzeichnis gespeichert ist. Der Standardwert ist `/etc/community/templates/subscriptions-email`.
+  Die E-Mail wird mithilfe einer Vorlage erstellt, die in diesem Stammverzeichnis gespeichert ist. Der Standardwert ist `/etc/community/templates/subscriptions-email`.
 
 ## Abruf-Importtool konfigurieren {#configure-polling-importer}
 
@@ -172,38 +168,38 @@ Damit die E-Mail in das Repository geladen werden kann, muss ein Abruf-Importtoo
 
 * Melden Sie sich mit Administratorrechten beim primären Herausgeber an und navigieren Sie zur Abruf-Importtool-Konsole:
 
-   Beispiel: [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
+  Beispiel: [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
 * Klicken Sie auf **[!UICONTROL Hinzufügen]**
 
-   ![olling-importer](assets/polling-importer.png)
+  ![olling-importer](assets/polling-importer.png)
 
 * **[!UICONTROL Typ]**
 
-   *(Erforderlich)* Nach unten zur Auswahl ziehen `POP3 (over SSL)`.
+  *(Erforderlich)* Nach unten zur Auswahl ziehen `POP3 (over SSL)`.
 
 * **[!UICONTROL URL]**
 
-   *(Erforderlich)* Der ausgehende Mail-Server. Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
+  *(Erforderlich)* Der ausgehende Mail-Server. Zum Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
 * **[!UICONTROL Import in Pfad]**&amp;ast;
 
-   *(Erforderlich)* Legen Sie fest auf `/content/usergenerated/mailFolder/postEmails`
-durch Navigation zum `postEmails`Ordner und wählen Sie **OK**.
+  *(Erforderlich)* Legen Sie `/content/usergenerated/mailFolder/postEmails`
+durch Navigation zum `postEmails`Ordner und auswählen **OK**.
 
 * **[!UICONTROL Intervall in Sekunden aktualisieren]**
 
-   *(Optional)* Der für den Standard-E-Mail-Dienst konfigurierte Mailserver weist möglicherweise Anforderungen in Bezug auf den Wert des Aktualisierungsintervalls auf. Gmail erfordert beispielsweise möglicherweise ein Intervall von `300`.
+  *(Optional)* Der für den Standard-E-Mail-Dienst konfigurierte Mailserver weist möglicherweise Anforderungen in Bezug auf den Wert des Aktualisierungsintervalls auf. Gmail erfordert beispielsweise möglicherweise ein Intervall von `300`.
 
 * **[!UICONTROL Anmeldung]**
 
-   *(Optional)*
+  *(Optional)*
 
 * **[!UICONTROL Kennwort]**
 
-   *(Optional)*
+  *(Optional)*
 
-* Klicken Sie auf **[!UICONTROL OK]**.
+* Wählen Sie **[!UICONTROL OK]** aus.
 
 ### Anpassen des Protokolls für den neuen Abruf-Importtool {#adjust-protocol-for-new-polling-importer}
 
@@ -214,11 +210,11 @@ Verwenden [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
 * Melden Sie sich mit Administratorrechten beim primären Herausgeber an und navigieren Sie zu [https://&lt;server>:&lt;port>/crx/de/index.jsp#/etc/importers/olling](http://localhost:4503/crx/de/index.jsp#/etc/importers/polling).
 * Wählen Sie die neu erstellte Konfiguration aus und ändern Sie die folgenden Eigenschaften:
 
-   * **feedType**: Ersetzen `pop3s` mit **`emailreply`**
+   * **feedType**: Replace `pop3s` mit **`emailreply`**
    * **source**: Quellprotokoll ersetzen `pop3s://` mit **`emailreply://`**
 
 ![Polling-Protokoll](assets/polling-protocol.png)
 
 Die roten Dreiecke geben die geänderten Eigenschaften an. Achten Sie darauf, die Änderungen zu speichern:
 
-* Wählen Sie **[!UICONTROL Alle speichern]** aus.
+* Klicken Sie auf **[!UICONTROL Alle speichern]**.

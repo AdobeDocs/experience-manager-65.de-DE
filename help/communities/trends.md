@@ -1,19 +1,15 @@
 ---
 title: Aktivitätstrends
-seo-title: Activity Trends
 description: Hinzufügen einer Community-Aktivitätslisten-Komponente zu einer Seite
-seo-description: Adding a Community Activity List component to a page
-uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '344'
 ht-degree: 7%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 7%
 
 ## Einführung {#introduction}
 
-Die `Community Activity List` -Komponente bietet die Möglichkeit, Trendinformationen zu Beiträgen und Ansichten von Mitgliedern sowie Beiträgen und Ansichten von Inhalten hinzuzufügen.
+Die `Community Activity List` -Komponente können Sie Trendinformationen über Beiträge und Ansichten von Mitgliedern sowie Beiträge und Ansichten von Inhalten hinzufügen.
 
 Das Dokument beschreibt:
 
@@ -38,11 +34,7 @@ Siehe [Analytics-Konfiguration für Communities-Funktionen](/help/communities/an
 
 ### Hinzufügen einer Community-Aktivitätenliste zu einer Seite {#adding-a-community-activity-list-to-a-page}
 
-So fügen Sie eine `Community Activity List` Komponente auf einer Seite im Autorenmodus zu finden, die Komponente
-
-* `Communities / Community Activity List`
-
-und ziehen Sie sie an die gewünschte Stelle auf einer Seite.
+So fügen Sie eine `Community Activity List` Komponente auf einer Seite im Autorenmodus zu finden, die Komponente `Communities / Community Activity List` und ziehen Sie sie an die gewünschte Stelle auf einer Seite.
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
@@ -52,7 +44,7 @@ Wenn die Komponente zum ersten Mal auf einer Seite einer Community-Site platzier
 
 ### Konfigurieren der Community-Aktivitätenliste  {#configuring-community-activity-list}
 
-Wählen Sie die platzierte `Community Activity List` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Auswählen der platzierten `Community Activity List` -Komponente und wählen Sie dann die `Configure` -Symbol, damit Sie das Dialogfeld &quot;Bearbeiten&quot;öffnen können.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -62,7 +54,7 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
 * **Typ**
 
-  Geben Sie an, ob Daten zu Community-Mitgliedern oder benutzergenerierten Inhalten (UGC) angezeigt werden sollen.
+  Geben Sie an, ob Daten zu Community-Mitgliedern oder benutzergenerierten Inhalten angezeigt werden sollen.
 
   Die folgenden Optionen stehen zur Auswahl:
 
@@ -73,13 +65,13 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
 * **Anzeigetitel**
 
-  Ein beschreibender Titel, der über den Daten angezeigt werden soll, z. B. `Trending Content`.
+  einen beschreibenden Titel, der über den Daten angezeigt werden soll, z. B. `Trending Content`.
 Standardmäßig ist kein Titel angegeben.
 
 * **Anzeigezahl**
 
   Die Anzahl der aufzulistenden Elemente.
-Der Standardwert ist 10.
+Der Standardwert lautet 10.
 
 * **Aktivitätstyp**
 
@@ -90,7 +82,7 @@ Der Standardwert ist 10.
    * `Follows`
    * `Likes`
 
-  Der Standardwert ist &quot;Ansichten&quot;.
+  Die Standardeinstellung ist &quot;Ansichten&quot;.
 
 * **Zeitraum**
 
@@ -107,19 +99,19 @@ Der Standardwert ist 10.
 
 * **Kontextpfad**
 
-  Bietet die Möglichkeit, die Aktivität auf eine Teilmenge der Site zu beschränken, z. B. einen bestimmten Blog.
+  Auf diese Weise können Sie die Aktivität auf eine Teilmenge der Site einschränken, z. B. einen bestimmten Blog.
 Der Standardwert ist die gesamte Community-Site.
 
 * **Gesammelte Mitgliederzahl**
 
-  Wenn diese Option deaktiviert (deaktiviert) ist, werden nur Beiträge der obersten Ebene gezählt. Wenn der Kontext beispielsweise die Stammseite ist (die Standardeinstellung), wird ein `Activity Type` von `Posts` werden nie Aktivitäten angezeigt, da keine Möglichkeit besteht, Inhalte auf der Stammseite zu posten. Wenn diese Option aktiviert ist, werden die Zählungen auf allen untergeordneten Seiten einbezogen.
+  Wenn diese Option deaktiviert (deaktiviert) ist, werden nur Beiträge der obersten Ebene gezählt. Wenn der Kontext beispielsweise die Stammseite ist (die Standardeinstellung), wird ein `Activity Type` von `Posts` zeigt nie eine Aktivität an, da keine Möglichkeit besteht, Inhalte auf der Stammseite zu posten. Wenn diese Option aktiviert ist, werden die Zählungen auf allen untergeordneten Seiten einbezogen.
 Die Option Standard ist aktiviert.
 
-### Beispielseite mit 4 Komponenten {#example-page-with-components}
+### Beispielseite mit vier Komponenten {#example-page-with-components}
 
 **Top-Besucher** config: Typ = Mitglieder, Aktivitätstyp = Ansichten
 
-**Wichtigste Mitwirkende** config: Typ = Mitglieder, Aktivitätstyp = Beiträge
+**Wichtigste Mitarbeiter** config: Typ = Mitglieder, Aktivitätstyp = Beiträge
 
 **Top-Inhalt** config: Typ = Inhalt, Aktivitätstyp = Ansichten,
 

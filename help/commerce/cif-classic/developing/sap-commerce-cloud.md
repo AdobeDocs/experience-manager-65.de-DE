@@ -1,15 +1,15 @@
 ---
 title: Entwicklung mit SAP Commerce Cloud
-description: Das Integrations-Framework SAP Commerce Cloud enthält eine Integrationsebene mit einer API
+description: Das Integrations-Framework SAP Commerce Cloud enthält eine Integrationsebene mit einer API.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '2296'
-ht-degree: 36%
+source-wordcount: '2286'
+ht-degree: 33%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 36%
 
 Das Integrations-Framework enthält eine Integrationsebene mit einer API. Damit können Sie:
 
-* ein eCommerce-System einbinden und Produktdaten in AEM abrufen
+* ein eCommerce-System einbinden und Produktdaten in Adobe Experience Manager abrufen (AEM)
 
 * erstellen von AEM Komponenten für Commerce-Funktionen, unabhängig von der jeweiligen eCommerce-Engine
 
@@ -115,7 +115,7 @@ Um für Hybris 4 zu entwickeln, ist Folgendes erforderlich:
 
    * Deaktivieren Sie die Hybris 5-Unterstützung für den Default Response Parser-Service.
 
-   * Stellen Sie sicher, dass der Hybris Basic Authentication Handler-Dienst ein niedrigeres Dienstranking als der Hybris OAuth Handler-Dienst aufweist.
+   * Stellen Sie sicher, dass der Hybris Basic Authentication Handler-Dienst einen niedrigeren Dienstrang hat als der Hybris OAuth Handler-Dienst.
 
 ### Session-Handling {#session-handling}
 
@@ -123,7 +123,7 @@ Hybris verwendet eine Benutzersitzung, um Informationen wie den Warenkorb des Ku
 
 * Bei der ersten Anfrage wird kein Cookie für die Anfrage des Käufers gesetzt. Daher wird eine Anfrage an die hybris-Instanz gesendet, eine Sitzung zu erstellen.
 
-* Die Sitzungs-Cookies werden aus der Antwort extrahiert, als Code in ein neues Cookie (z. B. `hybris-session-rest`) eingebettet und in der Antwort an den Erstkäufer festgelegt. Die Kodierung in einem neuen Cookie ist erforderlich, da das ursprüngliche Cookie nur für einen bestimmten Pfad gültig ist und ansonsten in nachfolgenden Anfragen nicht vom Browser zurückgesendet wird. Die Pfadinformationen müssen auch dem -Wert des Cookies hinzugefügt werden.
+* Die Sitzungs-Cookies werden aus der Antwort extrahiert, als Code in ein neues Cookie (z. B. `hybris-session-rest`) eingebettet und in der Antwort an den Erstkäufer festgelegt. Die Kodierung in einem neuen Cookie ist erforderlich, da das ursprüngliche Cookie nur für einen bestimmten Pfad gültig ist und ansonsten in nachfolgenden Anfragen nicht vom Browser zurückgesendet wird. Die Pfadinformationen müssen zum -Wert des Cookies hinzugefügt werden.
 
 * Bei nachfolgenden Anfragen wird das Cookie aus den `hybris-session-<*xxx*>`-Cookies dekodiert und auf den HTTP-Client festgelegt, der zum Anfordern der Daten von Hybris verwendet wird.
 
@@ -145,9 +145,9 @@ Hybris verwendet eine Benutzersitzung, um Informationen wie den Warenkorb des Ku
 
   `CommerceSession.getUserContext()`
 
-* Eigentümer ist auch das **payment** Verarbeitungsverbindung
+* Besitzt die **payment** Verarbeitungsverbindung
 
-* Sie steuert ebenfalls die Verbindung für die **Auftragserfüllung**.
+* Besitzt die **Erfüllung** connection
 
 ### Produktsynchronisierung und -veröffentlichung {#product-synchronization-and-publishing}
 
@@ -209,7 +209,7 @@ Es sind jedoch nicht alle Eigenschaften Variantenachsen. Varianten können sich 
 
 Jedes Produkt bzw. jede Variante steht für eine Ressource und ist daher im Verhältnis 1:1 einem Repository-Knoten zugeordnet. Eine Folge ist, dass ein bestimmtes Produkt und/oder eine bestimmte Variante durch ihren Pfad eindeutig identifiziert werden kann.
 
-Die Produkt-/Variantenressource enthält nicht immer die tatsächlichen Produktdaten. Es kann sich um eine Darstellung von Daten handeln, die in einem anderen System (z. B. hybris) gespeichert sind. Beispielsweise werden Produktbeschreibungen, Preise usw. nicht in AEM gespeichert, sondern in Echtzeit von der eCommerce-Engine abgerufen.
+Die Produkt-/Variantenressource enthält nicht immer die tatsächlichen Produktdaten. Es kann sich um eine Darstellung von Daten handeln, die in einem anderen System (z. B. hybris) gespeichert sind. Produktbeschreibungen und Preise werden beispielsweise nicht in AEM gespeichert, sondern in Echtzeit von der eCommerce-Engine abgerufen.
 
 Jede Produktressource kann durch eine `Product API` dargestellt werden. Die meisten Aufrufe in der Produkt-API sind variationsspezifisch (obwohl Varianten möglicherweise gemeinsame Werte von einem Vorgänger erben), es gibt aber auch Aufrufe, in denen der Variantensatz aufgelistet wird ( `getVariantAxes()`, `getVariants()`usw.).
 
@@ -426,7 +426,7 @@ public class AxisFilter implements VariantFilter {
 * Speicher
 
    * Im hybris-Fall ist der hybris-Server Eigentümer des Warenkorbs.
-   * Im AEM generischen Fall werden Warenkörbe im [ClientContext](/help/sites-administering/client-context.md).
+   * Im AEM-generischen Fall werden Warenkörbe im [ClientContext](/help/sites-administering/client-context.md).
 
 **Personalisierung**
 
@@ -484,7 +484,7 @@ public class AxisFilter implements VariantFilter {
 
 **Versandberechnungen**
 
-* Bestellformulare müssen häufig mehrere Versandoptionen (und Preise) enthalten.
+* Bestellformulare müssen oft mehrere Versandoptionen (und Preise) enthalten.
 * Die Preise können auf Artikeln und Details der Bestellung basieren, wie Gewicht und/oder Lieferadresse.
 * `CommerceSession` hat Zugriff auf alle Abhängigkeiten und kann daher ähnlich wie Produktpreise behandelt werden:
 
@@ -507,12 +507,12 @@ public class AxisFilter implements VariantFilter {
 
 * `CommerceSession` steuert auch die Verbindung für die Zahlungsverarbeitung.
 
-* Implementierungsprogramme müssen spezifische Aufrufe (an den ausgewählten Zahlungsverarbeitungs-Service) zur `CommerceSession`-Implementierung hinzufügen.
+* Implementierer sollten bestimmte Aufrufe (zu ihrem ausgewählten Zahlungsverarbeitungsdienst) zum `CommerceSession` Implementierung.
 
 **Auftragserfüllung**
 
 * `CommerceSession` steuert auch die Verbindung für die Auftragserfüllung.
-* Implementierungprogramme müssen spezifische Aufrufe (an den ausgewählten Zahlungsverabeitungs-Service) zur `CommerceSession`-Implementierung hinzufügen.
+* Implementierer müssen bestimmte Aufrufe (zu ihrem ausgewählten Zahlungsverarbeitungsdienst) zum `CommerceSession` Implementierung.
 
 ### Suchdefinition {#search-definition}
 
@@ -524,13 +524,13 @@ Gemäß dem Standard-Service-API-Modell stellt das eCommerce-Projekt eine Reihe 
 >
 >Die Such-API ist jedoch generisch und kann von jedem CommerceService einzeln implementiert werden.
 
-Das eCommerce-Projekt enthält eine standardmäßige Suchkomponente, die sich unter:
+Das eCommerce-Projekt enthält eine Standardsuchkomponente in:
 
 `/libs/commerce/components/search`
 
 ![chlimage_1-14](/help/sites-developing/assets/chlimage_1-14a.png)
 
-Dadurch wird die Such-API zur Abfrage der ausgewählten Commerce-Engine verwendet (siehe [Auswahl der eCommerce-Engine](#ecommerce-engine-selection)):
+Hierbei wird die Such-API verwendet, um die ausgewählte Commerce-Engine abzufragen (siehe [Auswahl der eCommerce-Engine](#ecommerce-engine-selection)):
 
 #### Such-API {#search-api}
 
@@ -538,11 +538,11 @@ Es gibt mehrere generische / Helper-Klassen, die vom Kernprojekt bereitgestellt 
 
 1. `CommerceQuery`
 
-   Wird verwendet, um eine Suchabfrage zu beschreiben (enthält Informationen zum Abfragetext, zur aktuellen Seite, zur Seitengröße, zur Sortierung und zu ausgewählten Facetten). Alle eCommerce-Dienste, die die Such-API implementieren, erhalten Instanzen dieser Klasse, um ihre Suche durchzuführen. Es kann eine `CommerceQuery`-Instanz anhand eines Anfrageobjekts (`HttpServletRequest`) erstellt werden.
+   Beschreibt eine Suchabfrage (enthält Informationen zum Abfragetext, zur aktuellen Seite, zur Seitengröße, zur Sortierung und zu ausgewählten Facetten). Alle eCommerce-Dienste, die die Such-API implementieren, erhalten Instanzen dieser Klasse, um ihre Suche durchzuführen. Es kann eine `CommerceQuery`-Instanz anhand eines Anfrageobjekts (`HttpServletRequest`) erstellt werden.
 
 1. `FacetParamHelper`
 
-   Eine Hilfsprogramm-Klasse, die eine statische Methode (`toParams`) zum Erzeugen von `GET`-Parameterzeichenfolgen aus einer Facettenliste und einen umgeschalteten Wert bereitstellt. Dies ist auf der UI-Seite nützlich, wo Sie für jeden Wert einer Facette einen Hyperlink anzeigen müssen. Wenn der Benutzer auf den Hyperlink klickt, wird der entsprechende Wert umgeschaltet (d. h. wenn er ausgewählt wurde, wird er aus der Abfrage entfernt und andernfalls hinzugefügt). Dies übernimmt die gesamte Logik der Verarbeitung von Facetten mit mehreren/einzelnen Werten, der Außerkraftsetzung von Werten usw.
+   Eine Hilfsprogramm-Klasse, die eine statische Methode (`toParams`) zum Erzeugen von `GET`-Parameterzeichenfolgen aus einer Facettenliste und einen umgeschalteten Wert bereitstellt. Dies ist auf der UI-Seite nützlich, wo Sie für jeden Wert jeder Facette einen Hyperlink anzeigen müssen, sodass der entsprechende Wert umgeschaltet wird, wenn der Benutzer auf den Hyperlink klickt. Das heißt, wenn es ausgewählt wurde, wird es aus der Abfrage entfernt, andernfalls hinzugefügt. Dies übernimmt die gesamte Logik der Verarbeitung von Facetten mit mehreren/einzelnen Werten, der Außerkraftsetzung von Werten usw.
 
 Einstiegspunkt für die Such-API ist die `CommerceService#search`-Methode, die ein `CommerceResult`-Objekt zurückgibt. Siehe [API-Dokumentation](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) für weitere Informationen zu diesem Thema.
 
@@ -552,7 +552,7 @@ Die Integration zwischen AEM und verschiedenen E-Commerce-Systemen erfolgt. Dies
 
 * Authentifizierung
 
-  Es wird davon ausgegangen, dass AEM das *einzige* Web-Front-End ist und daher *alle* Authentifizierungen verarbeitet.
+  AEM wird als *only* Webfrontend und führt daher *all* Authentifizierung.
 
 * Konten in Hybris
 
@@ -566,7 +566,7 @@ Ein AEM Frontend kann vor einer vorhandenen Hybris-Implementierung positioniert 
 
    * Wenn Sie sich bei Hybris anmelden, wenn der AEM-Benutzer nicht vorhanden ist:
 
-      * Erstellen Sie einen neuen Hybris-Benutzer mit einem kryptografischen Zufallskennwort.
+      * Erstellen eines hybris-Benutzers mit einem kryptografischen zufälligen Kennwort
       * Speichern Sie den Hybris-Benutzernamen im Benutzerverzeichnis des AEM-Benutzers.
 
    * Siehe: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
@@ -575,8 +575,8 @@ Ein AEM Frontend kann vor einer vorhandenen Hybris-Implementierung positioniert 
 
    * Beim Anmelden bei AEM (falls das System einen Benutzer erkennt):
 
-      * Versuch, sich bei hybris mit dem angegebenen Benutzernamen/PWD anzumelden
-      * Wenn dies erfolgreich war, erstellen Sie den neuen Benutzer in AEM mit demselben Kennwort (AEM-spezifisches Salz führt zu AEM Hash).
+      * Versuch, sich mit dem angegebenen Benutzernamen/Pwd bei hybris anzumelden
+      * Wenn dies erfolgreich war, erstellen Sie den Benutzer in AEM mit demselben Kennwort (AEM-spezifische Salt-Ergebnisse führen zu AEM-spezifischem Hash).
 
    * Der obige Algorithmus wird in einem `AuthenticationInfoPostProcessor` von Sling implementiert.
 

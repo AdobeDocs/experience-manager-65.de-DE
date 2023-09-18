@@ -1,20 +1,16 @@
 ---
 title: Badges Console
-seo-title: Badges Console
 description: Mit der Communities Badges-Konsole können Sie benutzerdefinierte Abzeichen hinzufügen, die Mitgliedern angezeigt werden können, wenn sie eine bestimmte Rolle in der Community übernehmen (zugewiesen).
-seo-description: The Communities Badges console lets you add custom badges that can be displayed for members when earned (awarded) or when they take on a specific role in the community (assigned)
-uuid: 7103b133-ef3f-47d6-a2dc-4e6ff92e8fed
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 135b3077-5343-4888-858d-de5e9b1d4b04
 docset: aem65
 role: Admin
 exl-id: 50ed9ec4-ff04-4f9d-aefb-0837542a9455
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '283'
 ht-degree: 4%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 4%
 
 ## Über Abzeichen {#about-badges}
 
-Die Communities-Badges-Konsole bietet die Möglichkeit, benutzerdefinierte Abzeichen hinzuzufügen, die einem Mitglied angezeigt werden können, wenn es eine bestimmte Rolle in der Community spielt (zugewiesen).
+Mit der Communities Badges-Konsole können Sie benutzerdefinierte Abzeichen hinzufügen, die für ein Mitglied angezeigt werden können, wenn es eine bestimmte Rolle in der Community spielt (zugewiesen).
 
 ### Badge-Sichtbarkeit {#badge-visibility}
 
@@ -31,7 +27,7 @@ Derzeit werden Abzeichen, die ein Community-Mitglied erhält oder zugewiesen wir
 
 * Profile
 * [Foren](/help/communities/forum.md)
-* [Frage und Antwort](/help/communities/working-with-qna.md)
+* [Fragen und Antworten](/help/communities/working-with-qna.md)
 * [Leaderboards](/help/communities/enabling-leaderboard.md)
 * [Ideen](/help/communities/ideation-feature.md)
 
@@ -53,19 +49,19 @@ Wenn es sich bei der Veröffentlichungsumgebung um eine Farm von Herausgebern ha
 
 * **Bild hochladen**
 
-   (*Erforderlich*) Ein Badge-Bild mit einer empfohlenen Größe von 32 x 32 Pixel bei 72 dpi im JPEG- oder PNG-Format.
+  (*Erforderlich*) Ein Badge mit einer empfohlenen Größe von 32 x 32 Pixel bei 72 dpi im JPEG- oder PNG-Format.
 
 * **Name**
 
-   (*Erforderlich*) Der Badge-Name. Dies ist die Standardeinstellung `Display Name` sowie den Repository-Knotennamen. Wenn die Variable `Name` kein gültiger Repository-Knotenname ist, wird er geändert.
+  (*Erforderlich*) Der Badge-Name. Dies ist die Standardeinstellung `Display Name` und den Repository-Knotennamen. Wenn die Variable `Name` kein gültiger Repository-Knotenname ist, wird er geändert.
 
 * **Anzeigename**
 
-   (*Optional*) Der Name, der für das Zeichen in der Benutzeroberfläche angezeigt werden soll. Die Standardeinstellung ist der unveränderte Text, der für die `Name`.
+  (*Optional*) Der Name, der für das Zeichen in der Benutzeroberfläche angezeigt werden soll. Die Standardeinstellung ist der unveränderte Text, der für die `Name`.
 
 * **Beschreibung**
 
-   (*Optional*) Eine Beschreibung für das Zeichen.
+  (*Optional*) Eine Beschreibung für das Zeichen.
 
 ## Zusätzliche Informationen {#additional-information}
 

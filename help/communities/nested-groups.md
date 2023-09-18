@@ -1,19 +1,15 @@
 ---
 title: Verfassen verschachtelter Gruppen
-seo-title: Authoring Nested Groups
 description: Erstellen verschachtelter Gruppen
-seo-description: Create nested groups
-uuid: b377dc1b-bbb6-41c9-b0fc-8281e1410685
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 752235d2-21ac-46d2-82ed-5fec09c645e9
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '590'
 ht-degree: 4%
 
 ---
@@ -22,10 +18,10 @@ ht-degree: 4%
 
 ## Erstellen von Gruppen in der Autoreninstanz {#creating-groups-on-author}
 
-In der AEM-Autoreninstanz über die globale Navigation:
+In AEM -Autoreninstanz über die globale Navigation:
 
 * Auswählen **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
-* Auswählen **[!UICONTROL engagieren-Ordner]** um es zu öffnen.
+* Auswählen **[!UICONTROL engagieren-Ordner]** , um es zu öffnen.
 * Wählen Sie die Karte für die **[!UICONTROL Tutorial &quot;Erste Schritte&quot;]** englische Site.
 
    * Wählen Sie das Kartenbild aus.
@@ -35,13 +31,13 @@ Das Ergebnis ist, die [Gruppenkonsole](/help/communities/groups.md):
 
 ![create-group](assets/create-group.png)
 
-Die Funktion &quot;Gruppen&quot;wird als Ordner angezeigt, in dem Instanzen von Gruppen erstellt werden. Wählen Sie den Ordner Gruppen aus, um ihn zu öffnen. Die in der Veröffentlichung erstellte Gruppe ist sichtbar.
+Die Funktion &quot;Gruppen&quot;wird als Ordner angezeigt, in dem Instanzen von Gruppen erstellt werden. Wählen Sie zum Öffnen den Ordner Gruppen aus. Die in der Veröffentlichungsinstanz erstellte Gruppe ist sichtbar.
 
 ![create-new-group](assets/create-new-group.png)
 
 ## Erstellen einer Hauptdarstellungsgruppe {#create-main-arts-group}
 
-Diese Gruppe kann erstellt werden, da die Site-Struktur für die Interaktion eine Gruppenfunktion enthält. Die Konfiguration der Funktion im `Reference Template` erlaubt standardmäßig die Auswahl einer beliebigen aktivierten Gruppenvorlage. Die für diese neue Gruppe ausgewählte Vorlage ist daher die `Reference Group`.
+Diese Gruppe kann erstellt werden, da die Website-Struktur für die Interaktion eine Gruppenfunktion enthält. Die Konfiguration der Funktion im `Reference Template` erlaubt standardmäßig die Auswahl einer beliebigen aktivierten Gruppenvorlage. Die für diese neue Gruppe ausgewählte Vorlage ist daher die `Reference Group`.
 
 Diese Konsolen ähneln der Communities Sites-Konsole.
 
@@ -52,9 +48,9 @@ Diese Konsolen ähneln der Communities Sites-Konsole.
    * **[!UICONTROL Community-Gruppentitel]**: Kunst
    * **[!UICONTROL Community-Gruppenbeschreibung]**: Eine übergeordnete Gruppe für verschiedene Kunstgruppen
    * **[!UICONTROL Community-Gruppenstamm]**: *Lassen Sie als Standard*
-   * **[!UICONTROL Zusätzliche verfügbare Community-Gruppensprachen]**: Wählen Sie im Dropdown-Menü die verfügbaren Gemeinschaftsgruppensprachen aus. Im Menü werden alle Sprachen angezeigt, in denen die übergeordnete Community-Site erstellt wird. Benutzer können in diesem Schritt unter diesen Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Gruppenkonsole der jeweiligen Community-Sites erstellt.
-   * **[!UICONTROL Community-Gruppenname]**: Kunst
-   * **[!UICONTROL Vorlage]**: Dropdown-Liste auswählen `Reference Group`
+   * **[!UICONTROL Zusätzliche verfügbare Community-Gruppensprachen]**: Wählen Sie über das Dropdown-Menü die verfügbaren Gemeinschaftsgruppensprachen aus. Im Menü werden alle Sprachen angezeigt, in denen die übergeordnete Community-Site erstellt wird. Benutzer können in diesem Schritt unter diesen Sprachen auswählen, um Gruppen in mehreren Gebietsschemas zu erstellen. Dieselbe Gruppe wird in mehreren angegebenen Sprachen in der Gruppenkonsole der jeweiligen Community-Sites erstellt.
+   * **[!UICONTROL Community-Gruppenname]**: arts
+   * **[!UICONTROL Vorlage]**: Dropdown zur Auswahl `Reference Group`
    * Wählen Sie **[!UICONTROL Weiter]** aus
 
 ![Verschachtelte Community-Gruppen](assets/parent-to-nestedgroup.png)
@@ -83,9 +79,9 @@ Fahren Sie mit den folgenden Einstellungen durch die anderen Bedienfelder:
 
 * Wählen Sie **[!UICONTROL Erstellen]** aus.
 
-### Verschachteln von Gruppen innerhalb der Artgruppe {#nesting-groups-within-arts-group}
+### Verschachteln von Gruppen innerhalb der Artist Group {#nesting-groups-within-arts-group}
 
-Die `groups` -Ordner enthält nun zwei Gruppen (Seite aktualisieren).
+Die `groups` -Ordner enthält nun zwei Gruppen (aktualisieren Sie die Seite).
 
 ![Verschachteln der Gruppen](assets/create-community-group.png)
 
@@ -99,38 +95,38 @@ Warten Sie auf die Bestätigung, dass die Gruppe veröffentlicht wurde.
 
 ![group-publish](assets/group-published.png)
 
-Die `arts` -Gruppe sollte auch `groups` -Ordner, jedoch einer, der leer ist und in dem neue Gruppen erstellt werden können. Navigieren Sie zum Ordner &quot;Arts-Gruppe&quot;und erstellen Sie 3 verschachtelte Gruppen mit jeweils unterschiedlichen Mitgliedschaftseinstellungen:
+Die `arts` -Gruppe sollte auch `groups` -Ordner, jedoch einer, der leer ist und in dem neue Gruppen erstellt werden können. Navigieren Sie zum Ordner &quot;Arts-Gruppe&quot;und erstellen Sie drei verschachtelte Gruppen mit jeweils unterschiedlichen Mitgliedschaftseinstellungen:
 
 1. **[!UICONTROL Visuell]**
 
    * Titel: `Visual Arts`
    * Name: `visual`
    * Vorlage: `Reference Group`
-   * Mitgliedschaft: select `Optional Membership`, eine öffentliche Gruppe, die allen Mitgliedern offen steht.
+   * Mitgliedschaft: Auswahl `Optional Membership`, eine öffentliche Gruppe, die allen Mitgliedern offen steht.
 
 1. **[!UICONTROL Zielgruppe]**
 
    * Titel: `Auditory Arts`
    * Name: `auditory`
    * Vorlage: `Reference Group`
-   * Mitgliedschaft: select `Required Membership`, eine offene Gruppe, der Mitglieder beitreten können.
+   * Mitgliedschaft: Auswahl `Required Membership`, eine offene Gruppe, der Mitglieder beitreten können.
 
 1. **[!UICONTROL Verlauf]**
 
    * Titel: `Art History`
    * Name: `history`
    * Vorlage: `Reference Group`
-   * Mitgliedschaft: select `Restricted Membership`, eine geheime Gruppe, die nur für eingeladene Mitglieder sichtbar ist. Beispiel: Einladen [Demobenutzer](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
+   * Mitgliedschaft: Auswahl `Restricted Membership`, eine geheime Gruppe, die nur für eingeladene Mitglieder sichtbar ist. Beispiel: Einladen [Demobenutzer](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
-Aktualisieren Sie die Seite, um alle drei verschachtelten Gruppen (Untergruppen) anzuzeigen.
+Aktualisieren Sie die Seite, damit Sie alle drei verschachtelten Gruppen (Untergruppen) sehen können.
 
 So navigieren Sie über die Communities Sites-Konsole zu den verschachtelten Gruppen:
 
-* Auswählen **[!UICONTROL engagieren-Ordner]**
+* Wählen Sie die **[!UICONTROL engagieren-Ordner]**
 * Auswählen **[!UICONTROL Karte des Tutorials &quot;Erste Schritte&quot;]**
-* Auswählen **[!UICONTROL Gruppen]** Ordner
+* Wählen Sie die **[!UICONTROL Gruppen]** Ordner
 * Auswählen **[!UICONTROL Kundenkarte]**
-* Auswählen **[!UICONTROL Gruppen]** Ordner
+* Wählen Sie die **[!UICONTROL Gruppen]** Ordner
 
 ![create-new-group2](assets/create-new-group2.png)
 
@@ -142,7 +138,7 @@ Nach der Veröffentlichung der Haupt-Community-Site:
 
 * Jede Gruppe einzeln veröffentlichen:
 
-   * Warten auf die Bestätigung, dass die Gruppe veröffentlicht wurde.
+   * Warten auf die Bestätigung der Veröffentlichung der Gruppe.
 
 * Veröffentlichen Sie die übergeordnete Gruppe, bevor Sie verschachtelte Gruppen veröffentlichen:
 
@@ -154,15 +150,15 @@ Nach der Veröffentlichung der Haupt-Community-Site:
 
 Es ist möglich, die verschiedenen Gruppen bei der Anmeldung zu erleben, z. B. mit der [Demobenutzer](/help/communities/tutorials.md#demo-users) verwendet für:
 
-* Mitglied der Gruppe Kunst/Verlauf : emily.andrews@mailinator.com/password
+* Mitglied der Gruppe Kunst/Verlauf : `emily.andrews@mailinator.com/password`
    * Die eingeschränkte (geheime) Gruppe, Kunst/Verlauf, ist sichtbar:
-   * Kann optionale (öffentliche) Gruppen anzeigen.
-   * Können eingeschränkten (offenen) Gruppen beitreten.
+   * Möglichkeit, optionale (öffentliche) Gruppen anzuzeigen.
+   * Möglichkeit, eingeschränkten (offenen) Gruppen beizutreten.
 
-* Gruppenmanager: aaron.mcdonald@mailinator.com/password
+* Gruppenmanager: `aaron.mcdonald@mailinator.com/password`
 
-   * Kann optionale (öffentliche) Gruppen anzeigen.
-   * Können eingeschränkten (offenen) Gruppen beitreten.
-   * Eingeschränkte (geheime) Gruppen werden nicht angezeigt.
+   * Möglichkeit, optionale (öffentliche) Gruppen anzuzeigen.
+   * Möglichkeit, eingeschränkten (offenen) Gruppen beizutreten.
+   * Eingeschränkte (geheime) Gruppen können nicht angezeigt werden.
 
 Zugriff auf Communities [Mitglieder und Gruppenkonsolen](/help/communities/members.md) auf Autor , um weitere Benutzer zu verschiedenen Mitgliedergruppen hinzuzufügen, die den Community-Gruppen entsprechen.

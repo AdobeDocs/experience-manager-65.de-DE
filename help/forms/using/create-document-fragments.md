@@ -1,19 +1,15 @@
 ---
 title: '„Tutorial: Erstellen von Dokumentfragmenten“'
-seo-title: Create document fragments for Interactive Communication
 description: Erstellen von Dokumentfragmenten für die interaktive Kommunikation
-seo-description: Create document fragments for Interactive Communication
-uuid: 677d717e-e92e-434e-8266-6fbbf94f3867
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8ae97a21-83af-4615-9be3-61e2f8065081
 docset: aem65
 feature: Interactive Communication
 exl-id: 81429735-cd52-4621-8dc2-10dd89df3052
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1670'
-ht-degree: 100%
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+workflow-type: tm+mt
+source-wordcount: '1674'
+ht-degree: 56%
 
 ---
 
@@ -21,7 +17,7 @@ ht-degree: 100%
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Es wird empfohlen, der Serie in chronologischer Reihenfolge zu folgen, um den vollständigen Anwendungsfall zu verstehen, auszuführen und zu demonstrieren.
+Dieses Tutorial ist ein Schritt in der Reihe [Erstellen Sie Ihre erste interaktive Kommunikation](/help/forms/using/create-your-first-interactive-communication.md). Adobe empfiehlt, dass Sie der Reihe in chronologischer Abfolge folgen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, auszuführen und zu demonstrieren.
 
 Dokumentfragmente sind wiederverwendbare Komponenten einer Korrespondenz, die zum Erstellen einer interaktiven Kommunikation verwendet werden. Es gibt Dokumentfragmente der folgenden Typen:
 
@@ -29,9 +25,9 @@ Dokumentfragmente sind wiederverwendbare Komponenten einer Korrespondenz, die zu
 * Liste: Eine Liste ist eine Gruppe von Dokumentfragmenten, einschließlich Text, Listen, Bedingungen und Bildern.
 * Bedingung: Mithilfe von Bedingungen können Sie festlegen, welche Inhalte in die interaktive Kommunikation aufgenommen werden, und zwar basierend auf den Daten, die vom Formulardatenmodell empfangen werden.
 
-In diesem Tutorial werden Sie durch die einzelnen Schritte geführt, um mehrere Textdokumentfragmente zu erstellen, die auf der Anatomie im Abschnitt [Interaktive Kommunikation planen](/help/forms/using/planning-interactive-communications.md) basieren. Am Ende dieses Tutorials können Sie Folgendes:
+In diesem Tutorial werden Sie durch die einzelnen Schritte geführt, um mehrere Textdokumentfragmente zu erstellen, die auf der Anatomie im Abschnitt [Interaktive Kommunikation planen](/help/forms/using/planning-interactive-communications.md) basieren. Am Ende dieses Tutorials sollten Sie Folgendes tun können:
 
-* Erstellen Sie Dokumentfragmente
+* Dokumentfragmente erstellen
 * Erstellen von Variablen
 * Regeln erstellen und anwenden
 
@@ -44,57 +40,57 @@ Im Folgenden finden Sie eine Liste der Dokumentfragmente, die in diesem Tutorial
 * [Rechnungszusammenfassung](../../forms/using/create-document-fragments.md#step-create-bill-summary-text-document-fragment)
 * [Zusammenfassung der Gebühren](../../forms/using/create-document-fragments.md#step-create-summary-of-charges-text-document-fragment)
 
-Jedes Dokumentfragment enthält Felder mit statischem Text, Daten, die vom Formulardatenmodell empfangen wurden, und Daten, die über die Agentenbenutzeroberfläche eingegeben wurden. Alle diese Felder werden im Abschnitt [Interaktive Kommunikation planen](/help/forms/using/planning-interactive-communications.md) dargestellt.
+Jedes Dokumentfragment enthält Felder mit statischem Text, Daten, die vom Formulardatenmodell empfangen wurden, und Daten, die über die Benutzeroberfläche für Agenten eingegeben wurden. Alle diese Felder werden im Abschnitt [Interaktive Kommunikation planen](/help/forms/using/planning-interactive-communications.md) dargestellt.
 
 Beim Erstellen von Dokumentfragmenten in diesem Tutorial werden Variablen für Felder erstellt, die Daten über die Agentenbenutzeroberfläche empfangen.
 
 Verwenden Sie **FDM_Create_First_IC** wie im Abschnitt [Formulardatenmodell erstellen](../../forms/using/create-form-data-model0.md) beschrieben, als Formulardatenmodell, um in diesem Tutorial Dokumentfragmente zu erstellen.
 
-## Schritt 1: Erstellen Sie ein Textdokumentfragment für Rechnungsdetails {#step-create-bill-details-text-document-fragment}
+## Schritt 1: Erstellen des Textdokuments &quot;Rechnungsdetails&quot; {#step-create-bill-details-text-document-fragment}
 
-Das Dokumentfragment „Rechnungsdetails“ enthält die folgenden Felder:
+Das Dokumentfragment &quot;Rechnungsdetails&quot;enthält die folgenden Felder:
 
 | Feld | Datenquelle |
 |---|---|
-| Rechnungsnr. | Agent-Benutzeroberfläche |
+| Rechnungsnummer | Agent-Benutzeroberfläche |
 | Rechnungszeitraum | Agent-Benutzeroberfläche |
 | Rechnungsdatum | Agent-Benutzeroberfläche |
 | Ihr Plan | Formulardatenmodell |
 
-Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenutzeroberfläche als Datenquelle zu erstellen, statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
+Gehen Sie wie folgt vor, um Variablen für Felder mit der Benutzeroberfläche für Agenten als Datenquelle zu erstellen, statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Dokumentfragmente]**.
 
 1. Wählen Sie **Erstellen** > **Text**.
 1. Geben Sie die folgenden Daten an:
 
-   1. Geben Sie **bill_details_first_ic** als Name im Feld **Titel** ein. Der Titel wird im Feld **Name** automatisch ausgefüllt.
+   1. Geben Sie **bill_details_first_ic** als Name im Feld **Titel** ein. Der Titel wird automatisch im **Name** -Feld.
 
-   1. Wählen Sie **Formulardatenmodell** im Abschnitt **Datenmodell** aus.
+   1. Auswählen **Formulardatenmodell** aus dem **Datenmodell** Abschnitt.
 
-   1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
+   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
 
    1. Tippen Sie auf **Weiter**.
 
-1. Wählen Sie die Registerkarte **Variablen** im linken Fensterbereich und tippen Sie auf **Erstellen**.
-1. Im Abschnitt **Variable erstellen**:
+1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und tippen Sie auf **Erstellen**.
+1. Im **Variable erstellen** Abschnitt:
 
-   1. Geben Sie als Name der Variablen **Invoicenumber** ein.
-   1. Wählen Sie als Typ **String**.
+   1. Eingabe **Rechnungsnummer** als Namen der Variablen.
+   1. Auswählen **Zeichenfolge** als Typ.
    1. Tippen Sie auf **Erstellen**.
 
    ![Variable vom Typ String erstellen](assets/variable_create_string_new.png)
 
    Wiederholen Sie die Schritte 4 und 5, um die folgenden Variablen zu erstellen:
 
-   * Rechnungszeitraum: String-Typ
-   * Rechnungsdatum: Datumstyp
+   * Billperiod: String-Typ
+   * BillDate: Datumstyp
 
    ![Rechnungsdetails](assets/variable_bill_details_new.png)
 
-1. Erstellen Sie statischen Text für die folgenden Felder mit dem rechten Fensterbereich:
+1. Erstellen Sie statischen Text für die folgenden Felder mithilfe des rechten Bereichs:
 
-   * Rechnungsnr.
+   * Rechnungsnummer
    * Rechnungszeitraum
    * Rechnungsdatum
    * Ihr Plan
@@ -109,60 +105,59 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
-1. Klicken Sie auf **Speichern**, um das Textdokumentfragment „Rechnungsdetails“ zu erstellen.
+1. Klicks **Speichern** , um das Textdokumentfragment Rechnungsdetails zu erstellen.
 
-## Schritt 2: Erstellen Sie ein Textdokumentfragment für Kundendetails {#step-create-customer-details-text-document-fragment}
+## Schritt 2: Erstellen eines Textdokumentfragments mit Kundendetails {#step-create-customer-details-text-document-fragment}
 
-Das Dokumentfragment „Kundendetails“ enthält die folgenden Felder:
+Das Dokumentfragment &quot;Kundendetails&quot;enthält die folgenden Felder:
 
 | Feld | Datenquelle |
 |---|---|
-| Name des Kunden | Formulardatenmodell |
+| Kundenname | Formulardatenmodell |
 | Adresse | Formulardatenmodell |
 | Ort der Lieferung | Agent-Benutzeroberfläche |
-| Status-Code | Agent-Benutzeroberfläche |
-| Mobilfunknummer | Formulardatenmodell |
+| Statuscode | Agent-Benutzeroberfläche |
+| Mobiltelefonnummer | Formulardatenmodell |
 | Alternative Kontaktnummer | Formulardatenmodell |
-| Verhältnis-Nummer | Formulardatenmodell |
-| Anzahl von Verbindungen | Agent-Benutzeroberfläche |
+| Beziehungsnummer | Formulardatenmodell |
+| Anzahl der Verbindungen | Agent-Benutzeroberfläche |
 
-Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenutzeroberfläche als Datenquelle zu erstellen, statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
+Gehen Sie wie folgt vor, um Variablen für Felder mit der Benutzeroberfläche für Agenten als Datenquelle zu erstellen, statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Dokumentfragmente]**.
 1. Wählen Sie **Erstellen** > **Text**.
 1. Geben Sie die folgenden Daten an:
 
-   1. Geben Sie **customer_details_first_ic** als Name im Feld **Titel** ein. Der Titel wird im Feld **Name** automatisch ausgefüllt.
+   1. Geben Sie **customer_details_first_ic** als Name im Feld **Titel** ein. Der Titel wird automatisch im **Name** -Feld.
 
-   1. Wählen Sie **Formulardatenmodell** im Abschnitt **Datenmodell** aus.
+   1. Auswählen **Formulardatenmodell** aus dem **Datenmodell** Abschnitt.
 
-   1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
+   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
 
    1. Tippen Sie auf **Weiter**.
 
-1. Wählen Sie die Registerkarte **Variablen** im linken Fensterbereich und tippen Sie auf **Erstellen**.
-1. Im Abschnitt **Variable erstellen**:
+1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und tippen Sie auf **Erstellen**.
+1. Im **Variable erstellen** Abschnitt:
 
    1. Geben Sie als Name der Variablen **Placesupply** ein.
-   1. Wählen Sie als Typ **String**.
+   1. Auswählen **Zeichenfolge** als Typ.
    1. Tippen Sie auf **Erstellen**.
 
    Wiederholen Sie die Schritte 4 und 5, um die folgenden Variablen zu erstellen:
 
-   * Statuscode: Zahlentyp
-   * Anzahl von Verbindungen: Nummerntyp
-
+   * Statecode: Zahlentyp
+   * Numberconnections: Nummerntyp
 
 1. Wählen Sie im linken Fensterbereich die Registerkarte **Datenmodellobjekte** aus, bewegen Sie den Cursor in den rechten Fensterbereich und doppelklicken Sie auf die Eigenschaft **Kunde** > **Name**.
 1. Drücken Sie die Eingabetaste, um den Cursor in die nächste Zeile zu bewegen, und doppelklicken Sie auf die Eigenschaft **Kunde** > **Adresse**.
-1. Erstellen Sie statischen Text für die folgenden Felder mit dem rechten Fensterbereich:
+1. Erstellen Sie statischen Text für die folgenden Felder mithilfe des rechten Bereichs:
 
-   * Mobilfunknummer
+   * Mobiltelefonnummer
    * Alternative Kontaktnummer
    * Ort der Lieferung
-   * Verhältnis-Nummer
-   * Status-Code
-   * Anzahl von Verbindungen
+   * Beziehungsnummer
+   * Statuscode
+   * Anzahl der Verbindungen
 
    ![Statischer Text für Kundendetails](assets/customer_details_static_text_new.png)
 
@@ -175,37 +170,37 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 
    ![Kundendetails](assets/customer_details_df2_new.png)
 
-1. Klicken Sie auf **Speichern**, um das Textdokumentfragment „Kundendetails“ zu erstellen.
+1. Klicks **Speichern** , um das Textdokumentfragment Kundendetails zu erstellen.
 
-## Schritt 3: Erstellen Sie ein Textdokumentfragment für die Rechnungszusammenfassung {#step-create-bill-summary-text-document-fragment}
+## Schritt 3: Erstellen des Textdokuments &quot;Rechnungszusammenfassung&quot; {#step-create-bill-summary-text-document-fragment}
 
-Das Dokumentfragment „Rechnungszusammenfassung“ enthält die folgenden Felder:
+Das Dokumentfragment &quot;Rechnungszusammenfassung&quot;enthält die folgenden Felder:
 
 | Feld | Datenquelle |
 |---|---|
 | Vorheriger Saldo | Agent-Benutzeroberfläche |
 | Zahlungen | Agent-Benutzeroberfläche |
 | Anpassungen | Agent-Benutzeroberfläche |
-| Gebühren des aktuellen Rechnungszeitraums | Formulardatenmodell |
+| Gebühren für den laufenden Rechnungszeitraum | Formulardatenmodell |
 | Fälliger Betrag | Agent-Benutzeroberfläche |
 | Fälligkeitsdatum | Agent-Benutzeroberfläche |
 
-Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenutzeroberfläche als Datenquelle zu erstellen, statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
+Gehen Sie wie folgt vor, um Variablen für Felder mit der Benutzeroberfläche für Agenten als Datenquelle zu erstellen, statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Dokumentfragmente]**.
 1. Wählen Sie **Erstellen** > **Text**.
 1. Geben Sie die folgenden Daten an:
 
-   1. Geben Sie **bill_summary_first_ic** als Name in das Feld **Titel** ein. Der Titel wird im Feld **Name** automatisch ausgefüllt.
+   1. Geben Sie **bill_summary_first_ic** als Name in das Feld **Titel** ein. Der Titel wird automatisch im **Name** -Feld.
 
-   1. Wählen Sie **Formulardatenmodell** im Abschnitt **Datenmodell** aus.
+   1. Auswählen **Formulardatenmodell** aus dem **Datenmodell** Abschnitt.
 
-   1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
+   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
 
    1. Tippen Sie auf **Weiter**.
 
-1. Wählen Sie die Registerkarte **Variablen** im linken Fensterbereich und tippen Sie auf **Erstellen**.
-1. Im Abschnitt **Variable erstellen**:
+1. Wählen Sie die **Variablen** Registerkarte im linken Bereich und tippen Sie auf **Erstellen**.
+1. Im **Variable erstellen** Abschnitt:
 
    1. Geben Sie als Name der Variablen **Previousbalance** ein.
    1. Wählen Sie als Typ **Zahl**.
@@ -215,19 +210,18 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 
    * Zahlungen: Zahlentyp
    * Anpassungen: Zahlentyp
-   * Fälliger Betrag: Zahlentyp
-   * Fälligkeitsdatum: Datumstyp
+   * Betrag: Zahlentyp
+   * Datum: Typ
 
-
-1. Erstellen Sie statischen Text für die folgenden Felder mit dem rechten Fensterbereich:
+1. Erstellen Sie statischen Text für die folgenden Felder mithilfe des rechten Bereichs:
 
    * Vorheriger Saldo
    * Zahlungen
    * Anpassungen
-   * Gebühren des aktuellen Rechnungszeitraums
+   * Gebühren für den laufenden Rechnungszeitraum
    * Fälliger Betrag
    * Fälligkeitsdatum
-   * Gebühren für verspätete Zahlungen nach Fälligkeitsdatum betragen 20 USD
+   * Verspätete Gebühren nach Fälligkeitsdatum sind 20 $
 
    ![Statistischer Text zur Rechnungszusammenfassung](assets/bill_summary_static_new.png)
 
@@ -240,25 +234,25 @@ Führen Sie die folgenden Schritte aus, um Variablen für Felder mit Agentenbenu
 
    ![Rechnungszusammenfassung](assets/bill_summary_static_variables_new.png)
 
-1. Klicken Sie auf **Speichern**, um das Textdokumentfragment „Kundendetails“ zu erstellen.
+1. Klicks **Speichern** , um das Textdokumentfragment Kundendetails zu erstellen.
 
-## Schritt 4: Erstellen Sie ein Textdokumentfragment für „Zusammenfassung der Kosten“ {#step-create-summary-of-charges-text-document-fragment}
+## Schritt 4: Erstellen Sie die Zusammenfassung der Gebühren im Textfragment {#step-create-summary-of-charges-text-document-fragment}
 
-Das Dokumentfragment „Zusammenfassung der Gebühren“ enthält die folgenden Felder:
+Die Zusammenfassung der Gebühren im Dokumentfragment umfasst die folgenden Felder:
 
 | Feld | Datenquelle |
 |---|---|
 | Anrufgebühren | Formulardatenmodell |
-| Gebühren für Telefonkonferenz | Formulardatenmodell |
+| Gebühren für Konferenzanrufe | Formulardatenmodell |
 | SMS-Gebühren | Formulardatenmodell |
-| Mobile Internetgebühren | Formulardatenmodell |
+| Gebühren für das mobile Internet | Formulardatenmodell |
 | Nationale Roaming-Gebühren | Formulardatenmodell |
 | Internationale Roaming-Gebühren | Formulardatenmodell |
 | Mehrwert - Service-Gebühren | Formulardatenmodell |
-| Gesamgebühren | Formulardatenmodell |
-| GESAMT ZAHLBAR | Formulardatenmodell |
+| Gesamtkosten | Formulardatenmodell |
+| GESAMTZAHLBARER ZUSCHUSS | Formulardatenmodell |
 
-Führen Sie die folgenden Schritte aus, um statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
+Gehen Sie wie folgt vor, um statischen Text zu erstellen und Formulardatenmodellelemente im Dokumentfragment zu verwenden:
 
 1. Wählen Sie **[!UICONTROL Formulare]** > **[!UICONTROL Dokumentfragmente]**.
 1. Wählen Sie **Erstellen** > **Text**.
@@ -266,23 +260,23 @@ Führen Sie die folgenden Schritte aus, um statischen Text zu erstellen und Form
 
    1. Geben Sie **summary_charges_first_ic** als Name im Feld **Titel** ein. Der Titel wird automatisch in das Feld „Name“ eingetragen.
 
-   1. Wählen Sie **Formulardatenmodell** im Abschnitt **Datenmodell** aus.
+   1. Auswählen **Formulardatenmodell** aus dem **Datenmodell** Abschnitt.
 
-   1. Wählen Sie **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
+   1. Auswählen **FDM_Create_First_IC** als Formulardatenmodell und tippen Sie auf **Auswählen**.
 
    1. Tippen Sie auf **Weiter**.
 
-1. Erstellen Sie statischen Text für die folgenden Felder mit dem rechten Fensterbereich:
+1. Erstellen Sie statischen Text für die folgenden Felder mithilfe des rechten Bereichs:
 
    * Anrufgebühren
-   * Gebühren für Telefonkonferenz
+   * Gebühren für Konferenzanrufe
    * SMS-Gebühren
-   * Mobile Internetgebühren
+   * Gebühren für das mobile Internet
    * Nationale Roaming-Gebühren
    * Internationale Roaming-Gebühren
    * Mehrwert - Service-Gebühren
-   * Gesamgebühren
-   * GESAMT ZAHLBAR
+   * Gesamtkosten
+   * GESAMTZAHLBARER ZUSCHUSS
 
    ![Zusammenfassungsgebühren](assets/summary_charges_static_new.png)
 
@@ -300,15 +294,15 @@ Führen Sie die folgenden Schritte aus, um statischen Text zu erstellen und Form
    ![Zusammenfassung der Gebühren](assets/summary_charges_static_fdm_new.png)
 
 1. Wählen Sie den Text in der Zeile **Mehrwert - Service-Gebühren** aus und tippen Sie auf **Regel erstellen**, um eine Bedingung zu erstellen, auf deren Grundlage die Zeile in der interaktiven Kommunikation angezeigt wird:
-1. Im Popup-Fenster **Regel erstellen**:
+1. Im **Regel erstellen** Popup-Fenster:
 
-   1. Wählen Sie **Datenmodelle und Variablen** und dann **Rechnungen** > **callcharges**.
+   1. Auswählen **Datenmodelle und -variablen** und dann **Rechnungen** > **callcharges**.
 
-   1. Wählen Sie **ist weniger als** als Betreiber.
-   1. Wählen Sie **Anzahl** und geben Sie den Wert als **60** ein.
+   1. Auswählen **kleiner als** als Operator.
+   1. Auswählen **Zahl** und geben Sie den Wert als **60**.
 
-   Basierend auf dieser Bedingung wird die Zeile „Mehrwert - Service-Gebühren“ nur angezeigt, wenn der Wert für das Feld „Anrufkosten“ unter 60 liegt.
+   Basierend auf dieser Bedingung wird die Zeile Mehrwert-Services-Gebühren nur angezeigt, wenn der Wert für das Feld Anrufkosten unter 60 liegt.
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
-1. Klicken Sie auf **Speichern**, um das Textdokumentfragment „Zusammenfassung der Gebühren“ zu erstellen.
+1. Klicks **Speichern** , um die Zusammenfassung der Gebühren zu erstellen.

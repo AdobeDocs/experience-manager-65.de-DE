@@ -1,18 +1,14 @@
 ---
 title: Erstellen einer Beispielseite
-seo-title: Create a Sample Page
 description: Erstellen einer Beispiel-Community-Site
-seo-description: Create a Sample community site
-uuid: 04a8f027-b7d8-493a-a9bd-5c4a6715d754
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: developing
-discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 exl-id: d66fc1ff-a669-4a2c-b45a-093060facd97
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '411'
+source-wordcount: '408'
 ht-degree: 2%
 
 ---
@@ -21,40 +17,40 @@ ht-degree: 2%
 
 Ab AEM 6.1 Communities ist es am einfachsten, eine Beispielseite zu erstellen, indem eine einfache Community-Site erstellt wird, die aus einer Page-Funktion besteht.
 
-Dies umfasst eine parsys-Komponente, mit der Sie [Komponenten für die Bearbeitung aktivieren](basics.md#accessing-communities-components).
+Dazu gehört eine parsys-Komponente, mit der Sie [Komponenten für die Bearbeitung aktivieren](basics.md#accessing-communities-components).
 
-Eine weitere Möglichkeit zur Erforschung von Beispielkomponenten besteht darin, die Funktionen zu verwenden, die im Abschnitt [Handbuch zu Community-Komponenten](components-guide.md).
+Eine weitere Möglichkeit zur Erforschung mit Beispielkomponenten besteht darin, die Funktionen zu verwenden, die im Abschnitt [Handbuch zu Community-Komponenten](components-guide.md).
 
 ## Community-Site erstellen {#create-a-community-site}
 
-Dies ähnelt dem Erstellen einer neuen Site, die unter [Erste Schritte mit AEM Communities](getting-started.md).
+Dies ähnelt dem Erstellen einer Website, die unter [Erste Schritte mit AEM Communities](getting-started.md).
 
-Der Hauptunterschied besteht darin, dass dieses Tutorial eine neue Community-Site-Vorlage erstellt, die nur die [Seitenfunktion](functions.md#page-function) um eine einfache Community-Site zu erstellen, die frei von anderen Funktionen ist (außer den vorab verkabelten Funktionen, die für alle Community-Sites grundlegend sind).
+Der Hauptunterschied besteht darin, dass dieses Tutorial eine Community-Site-Vorlage erstellt, die nur die [Seitenfunktion](functions.md#page-function) , um eine einfache Community-Site zu erstellen. Dies erfolgt frei von anderen Funktionen (außer den vorverkabelten Funktionen, die für alle Community-Sites grundlegend sind).
 
 ### Neue Site-Vorlage erstellen {#create-new-site-template}
 
 Erstellen Sie zunächst eine einfache [Community-Site-Vorlage](sites.md).
 
-Wählen Sie in der globalen Navigation auf der Autoreninstanz die Option **[!UICONTROL Instrumente]** > **[!UICONTROL Communities]** > **[!UICONTROL Site-Vorlagen]**.
+Wählen Sie in der globalen Navigation einer Autoreninstanz die Option **[!UICONTROL Instrumente]** > **[!UICONTROL Communities]** > **[!UICONTROL Site-Vorlagen]**.
 
 ![create-site-template](assets/create-site-template1.png)
 
-* Wählen Sie nun eine der folgenden Optionen aus `Create button`
+* Klicken Sie auf `Create button`
 * GRUNDLEGENDE INFORMATIONEN
 
    * `Name`: Einzelseitenvorlage
    * `Description`: Eine Vorlage, die aus einer einzelnen Seitenfunktion besteht.
-   * Wählen Sie nun eine der folgenden Optionen aus `Enabled`
+   * Klicken Sie auf `Enabled`
 
 ![site-template-editor](assets/site-template-editor.png)
 
 * STRUKTUR
 
    * Ziehen Sie eine `Page` -Funktion zum Vorlagen-Builder
-   * Geben Sie für Details zur Konfigurationsfunktion ein.
+   * Geben Sie für Details zur Konfigurationsfunktion ein
 
       * `Title`: Einzelseite
-      * `URL`: page
+      * `URL`: Seite
 
 ![site-template-editor-structure](assets/site-template-editor1.png)
 
@@ -63,7 +59,7 @@ Wählen Sie in der globalen Navigation auf der Autoreninstanz die Option **[!UIC
 
 ### Neue Community-Site erstellen {#create-new-community-site}
 
-Erstellen Sie nun eine neue Community-Site basierend auf der einfachen Site-Vorlage.
+Erstellen Sie nun eine Community-Site basierend auf der einfachen Site-Vorlage.
 
 Wählen Sie nach der Erstellung der Site-Vorlage in der globalen Navigation die Option **[!UICONTROL Communities > Sites]**.
 
@@ -77,28 +73,27 @@ Wählen Sie nach der Erstellung der Site-Vorlage in der globalen Navigation die 
    * `Description`: Eine Community-Site, die aus einer einzelnen Seite zum Experimentieren besteht.
    * `Community Site Root: (leave blank)`
    * `Community Site Base Language: English`
-   * `Name`: Beispiel
+   * `Name`: sample
 
       * url = http://localhost:4502/content/sites/sample
 
-      * `Template`: Auswählen `Single Page Template`
+      * `Template`: select `Single Page Template`
 
-      ![create-community-site-template](assets/create-community-site-template.png)
+     ![create-community-site-template](assets/create-community-site-template.png)
 
-
-* Wählen Sie nun eine der folgenden Optionen aus `Next`
+* Klicken Sie auf `Next`
 * Schritt `2 - Design`
 
    * Entwurf auswählen
 
-* Wählen Sie nun eine der folgenden Optionen aus `Next`
-* Wählen Sie nun eine der folgenden Optionen aus `Next`
+* Klicken Sie auf `Next`
+* Klicken Sie auf `Next`
 
-   (Alle Standardeinstellungen akzeptieren)
+  (Alle Standardeinstellungen akzeptieren)
 
-* Wählen Sie nun eine der folgenden Optionen aus `Create`
+* Klicken Sie auf `Create`
 
-   ![create-community-site](assets/create-community-site.png)
+  ![create-community-site](assets/create-community-site.png)
 
 ## Veröffentlichen der Site {#publish-the-site}
 
@@ -110,7 +105,7 @@ Aus dem [Community-Sites-Konsole](sites-console.md)Wählen Sie das Veröffentlic
 
 ![open-site](assets/open-site.png)
 
-Wählen Sie das Symbol zum Öffnen der Site aus, um die Site im Bearbeitungsmodus anzuzeigen.
+Wählen Sie das Symbol zum Öffnen der Site aus, damit Sie die Site im Bearbeitungsmodus anzeigen können.
 
 Die URL lautet [http://localhost:4502/editor.html/content/sites/sample/en.html](http://localhost:4502/editor.html/content/sites/sample/en.html)
 
@@ -120,4 +115,4 @@ Auf der einfachen Startseite können Sie sehen, was über die Community-Funktion
 
 ## Site zur Veröffentlichung anzeigen {#view-site-on-publish}
 
-Öffnen Sie nach dem Veröffentlichen der Seite die Seite auf der [Veröffentlichungsinstanz](http://localhost:4503/content/sites/sample/en.html) , um mit den Funktionen als anonymer Site-Besucher, angemeldeter Mitglied oder Administrator zu experimentieren. Der in der Autorenumgebung angezeigte Link Administration wird in der Veröffentlichungsumgebung nur angezeigt, wenn sich ein Administrator anmeldet.
+Öffnen Sie nach dem Veröffentlichen der Seite die Seite auf der [Veröffentlichungsinstanz](http://localhost:4503/content/sites/sample/en.html) , um mit den Funktionen als anonymer Site-Besucher, angemeldeter Mitglied oder Administrator zu experimentieren. Der in der Autorenumgebung angezeigte Link Administration wird nur dann in der Veröffentlichungsumgebung angezeigt, wenn sich ein Administrator anmeldet.

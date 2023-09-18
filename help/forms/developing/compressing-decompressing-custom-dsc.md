@@ -2,10 +2,10 @@
 title: Komprimieren und Dekomprimieren von Dateien mithilfe eines benutzerdefinierten DSC von AEM Forms on JEE
 description: Erfahren Sie, wie Sie Dateien mit einem benutzerdefinierten DSC von AEM Forms on JEE komprimieren und entpacken können.
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '483'
-ht-degree: 90%
+source-wordcount: '484'
+ht-degree: 64%
 
 ---
 
@@ -23,11 +23,13 @@ Java™-Editor, z. B. [Eclipse](https://www.eclipse.org/) oder [Netbeans IDE](ht
 
 Fortgeschrittene Einsteiger
 
-Mit AEM Forms auf JEE können Entwickler benutzerdefinierte DSC (Document Service Container) erstellen, um umfangreiche, sofort einsatzbereite Funktionen zu entwickeln. Die Erstellung solcher Komponenten kann mit der Laufzeitumgebung von AEM Forms auf JEE verbunden werden und erfüllt den vorgesehenen Zweck. In diesem Artikel wird erläutert, wie Sie einen benutzerdefinierten ZIP-Service erstellen, mit dem Sie eine Liste von Dateien in eine ZIP-Datei komprimieren und eine ZIP-Datei in eine Liste von Dokumenten entpacken können.
+Mit AEM Forms on JEE können Entwickler benutzerdefinierte ASC-Elemente (Acrobat Services Container) erstellen, um native, angereicherte Funktionen zu erstellen. Die Erstellung solcher Komponenten kann mit der Laufzeitumgebung von AEM Forms auf JEE verbunden werden und erfüllt den vorgesehenen Zweck. In diesem Artikel wird erläutert, wie Sie einen benutzerdefinierten ZIP-Service erstellen, mit dem Sie eine Liste von Dateien in eine ZIP-Datei komprimieren und eine ZIP-Datei in eine Liste von Dokumenten entpacken können.
 
-## Erstellen einer benutzerdefinierten DSC-Komponente {#create-custom-dsc-component}
+## Erstellen einer benutzerdefinierten ASC-Komponente {#create-custom-dsc-component}
 
-Erstellen Sie eine benutzerdefinierte DSC-Komponente mit zwei Service-Vorgängen, um die Liste der Dokumente zu komprimieren und zu dekomprimieren. Diese Komponente verwendet das Paket java.util.zip für die Komprimierung und Dekomprimierung. Gehen Sie wie folgt vor, um eine benutzerdefinierte Komponente zu erstellen:
+Erstellen Sie eine benutzerdefinierte ASC-Komponente mit zwei Dienstvorgängen, damit Sie eine Liste von Dokumenten komprimieren und entpacken können. Diese Komponente verwendet das Paket java.util.zip für Komprimierung und Dekomprimierung.
+
+So erstellen Sie eine benutzerdefinierte ASC-Komponente:
 
 1. Fügen Sie die Datei adobe-livecycle-client.jar zur Bibliothek hinzu
 1. Fügen Sie die erforderlichen Symbole hinzu
@@ -215,8 +217,8 @@ Sie können diesen ZIP-Service für die folgenden Anwendungsfälle verwenden:
 
 * Geben Sie eine ZIP-Datei mit mehreren PDF-Dokumenten an, die nach der Dekomprimierung der-Dokumente durch einen Leser erweitert werden können. Dies erfordert das Modul Reader Extensions für AEM Forms auf JEE.
 
-* Geben Sie eine ZIP-Datei mit heterogenem Dokumenttyp an, die mithilfe des Generate-PDF-Service dekomprimiert und zu einem PDF-Dokument konvertiert werden kann.
+* Geben Sie eine ZIP-Datei mit einem heterogenen Dokumenttyp an, der mithilfe des Generate PDF-Dienstes dekomprimiert und als PDF-Dokument konvertiert werden kann.
 
 * Richtlinien schützen eine Liste von Dokumenten und geben sie als ZIP-Datei zurück.
 
-* Erlauben Sie Benutzern, alle Anlagen einer Prozessinstanz in einer einzigen ZIP-Datei herunterzuladen.
+* Ermöglicht Benutzern das Herunterladen aller Anlagen einer Prozessinstanz als einzelne ZIP-Datei.
