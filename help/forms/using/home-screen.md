@@ -1,19 +1,15 @@
 ---
 title: Startbildschirm
-seo-title: Home screen
-description: Beschreibung der Komponenten des Startbildschirms in der AEM Forms-App
-seo-description: Description of the components of the AEM Forms app Home screen
-uuid: abc95e58-a685-42a9-82ab-4990155945d3
+description: Beschreibung der Komponenten des Startbildschirms der AEM Forms-App
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: ba79479b-4159-4a39-95eb-2285e7ece9d4
 docset: aem65
 exl-id: 6c6fb516-1b11-4da4-b638-4388a070e397
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '331'
-ht-degree: 100%
+source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 20%
 
 ---
 
@@ -23,7 +19,7 @@ Wenn Sie sich bei der AEM Forms-App anmelden, werden Sie zum Startbildschirm wei
 
 ## Standardstartbildschirm {#default-home-screen}
 
-Auf dem Startbildschirm werden standardmäßig alle Formulare einschließlich Startpunkte und Aufgaben (wenn der verknüpfte Server mit dem Arbeitsablauf für AEM Forms aktiviert ist) zusammen mit den zugehörigen Miniaturbildern angezeigt. Sie können die Miniaturen im AEM Forms-Server angeben.
+Standardmäßig werden auf dem Startbildschirm alle Formulare einschließlich Startpunkten und Aufgaben (wenn der verbundene Server AEM Forms Workflow aktiviert ist) zusammen mit den zugehörigen Miniaturansichten angezeigt. Sie können die Miniaturansichten auf dem AEM Forms-Server angeben.
 
 In der folgenden Abbildung werden die wichtigsten Komponenten auf dem standardmäßigen Startbildschirm mit Anmerkungen erläutert.
 
@@ -33,10 +29,10 @@ In der folgenden Abbildung werden die wichtigsten Komponenten auf dem standardm�
 
 ![home-screen-1-1](assets/home-screen-1-1.png)-->
 
-1. **Menüschaltfläche**: Tippen Sie auf die Schaltfläche **Menü**, um zu Aufgaben, Formularen, Posteingang und Einstellungen zu navigieren. Wenn Ihre AEM Forms-App mit einem AEM Forms JEE-Server verbunden ist, wird die Option „Aufgaben“ angezeigt. Die Option „Aufgaben“ speichert auch die Entwürfe, die aus Aufgaben in einem Prozess erstellt wurden. Beim AEM Forms OSGi-Server ist die Option „Aufgaben“ ausgeblendet. Im Postausgang werden die gespeicherten Formulare und Entwürfe vor der Synchronisierung mit dem Server abgelegt. Alle gespeicherten Formulare und Entwürfe werden im Postausgang gespeichert und auf den AEM Forms-Server hochgeladen, wenn die App [mit dem Server synchronisiert wird. ](../../forms/using/sync-app.md) Weitere Informationen zu den Einstellungen finden Sie unter [Aktualisieren allgemeiner Einstellungen](../../forms/using/update-general-settings.md).
-1. **Aufgabe oder Formular**: Tippen Sie auf die aufgeführte Aufgabe oder das Formular, mit denen Sie arbeiten möchten.
-1. **Horizontale Auslassungspunkte**: gibt an, dass Aktionen für das Formular zur Verfügung stehen. Beim Tippen auf die Auslassungspunkte werden die Aktionen und Beschreibungen angezeigt, die vom Autor angegeben wurden. Die Optionen **Entwurf löschen** und **Abgeschlossen** sind nur sichtbar, wenn Sie auf die Auslassungspunkte tippen.
-1. **Aktualisieren-Symbol**: Tippen Sie auf dieses Symbol, um Ihre App mit dem AEM Forms-Server zu synchronisieren.
+1. **Menüschaltfläche**: Tippen Sie auf die Schaltfläche **Menü**, um zu Aufgaben, Formularen, Posteingang und Einstellungen zu navigieren. Wenn Ihre AEM Forms-App mit einem AEM Forms JEE-Server verbunden ist, wird die Option &quot;Aufgaben&quot;angezeigt. Die Option Aufgaben speichert auch die Entwürfe, die aus Aufgaben in einem Prozess erstellt wurden. Bei AEM Forms OSGi-Servern ist die Option Aufgaben ausgeblendet. Der Postausgang speichert die gespeicherten Formulare und Entwürfe, bevor sie mit dem Server synchronisiert werden. Alle im Postausgang gespeicherten Formulare und Entwürfe werden beim Hochladen der App auf den AEM Forms-Server hochgeladen [mit dem Server synchronisiert](../../forms/using/sync-app.md). Weitere Informationen zu den Einstellungen finden Sie unter [Aktualisieren allgemeiner Einstellungen](../../forms/using/update-general-settings.md).
+1. **Aufgabe oder Formular**: Tippen Sie auf die aufgelistete Aufgabe oder das Formular, mit der Sie arbeiten möchten.
+1. **Horizontale Ellipse**: Gibt an, dass Aktionen für das Formular verfügbar sind. Durch Tippen auf die Auslassungspunkte werden die vom Autor bereitgestellten Aktionen und Beschreibungen angezeigt. Die Optionen **Entwurf löschen** und **Abgeschlossen** sind nur sichtbar, wenn Sie auf die Auslassungspunkte tippen.
+1. **Aktualisierungssymbol**: Tippen Sie auf das Aktualisierungssymbol, damit Sie Ihre App mit dem AEM Forms-Server synchronisieren können.
 
 ### Anpassen des Startbildschirms {#customizing-the-home-screen}
 
@@ -44,6 +40,6 @@ In der folgenden Abbildung werden die wichtigsten Komponenten auf dem standardm�
 
 Sie können den Standardstartbildschirm der App entweder über die Registerkarte **[Allgemeine Einstellungen](../../forms/using/update-general-settings.md)** der App oder über die Registerkarte **Einstellungen** in HTML Workspace ändern.
 
-Die Änderung an den Einstellungen des Startbildschirms der App hat Auswirkungen auf den Startbildschirm für den derzeit angemeldeten Benutzer oder den Benutzer am aktuellen Mobilgerät.
+Die Änderung an der Einstellung des Startbildschirms in der App wirkt sich auf den Startbildschirm des aktuell angemeldeten Benutzers oder des Benutzers auf dem aktuellen Mobilgerät aus.
 
-Die in HTML Workspace vorgenommene Änderung hingegen hat Auswirkungen für alle AEM Forms-App-Benutzer, die beim AEM Forms-Server angemeldet sind.
+Die in HTML Workspace vorgenommene Änderung wirkt sich jedoch auf alle AEM Forms-App-Benutzer aus, die beim AEM Forms-Server angemeldet sind.

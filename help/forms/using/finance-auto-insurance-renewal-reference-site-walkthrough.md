@@ -1,15 +1,15 @@
 ---
 title: Anleitung zur Erneuerung der Kfz-Versicherung auf der Referenz-Site von We.Finance
-description: Anleitung zur Erneuerung der Kfz-Versicherung auf der Referenz-Site von We.Finance
+description: Erfahren Sie mehr über die Referenz-Site "We.Finance Auto Insurance Renewal", indem Sie sich eine exemplarische Vorgehensweise ansehen.
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
 workflow-type: tm+mt
-source-wordcount: '743'
-ht-degree: 67%
+source-wordcount: '757'
+ht-degree: 57%
 
 ---
 
@@ -17,24 +17,24 @@ ht-degree: 67%
 
 ## Szenario für We.Finance-Referenz-Site  {#we-finance-reference-site-scenario}
 
-Die Website von We.Finance ist eine Website für Finanzdienstleistungen, mit der Sie interaktive Kommunikationsfunktionen von AEM Forms erlernen können.
+Die Website We.Finance ist eine Website für Finanzdienstleistungen, die Ihnen dabei hilft, die interaktiven Kommunikationsfunktionen von AEM Forms kennenzulernen.
 
-Lesen Sie die ausführliche exemplarische Vorgehensweise des We.Finance-Anwendungsbeispiels für Kfz-Versicherungen, in dem erläutert wird, wie AEM Formulare und seine Integration mit Microsoft® Dynamics zur Personalisierung des Kundenerlebnisses in einem Finanzdienstleistungsunternehmen beitragen. Die interaktive Anleitung hat das Ziel, die Implementierung komplexer digitaler Transaktionen und Kundenkommunikationen in einem Finanzunternehmen zu erleichtern.
+Lesen Sie eine ausführliche exemplarische Vorgehensweise eines We.Finance-Anwendungsbeispiels für Kfz-Versicherungen, in dem erläutert wird, wie AEM Formulare und seine Integration mit Microsoft® Dynamics zur Personalisierung des Kundenerlebnisses in einem Finanzdienstleistungsunternehmen beitragen. Die interaktive Anleitung hat das Ziel, die Implementierung komplexer digitaler Transaktionen und Kundenkommunikationen in einem Finanzunternehmen zu erleichtern.
 
 **Das Ganze beginnt mit dem Benutzerszenario:** 
 
-Sarah Rose ist bereits We.Finance-Kundin und hat eine Kfz-Versicherungspolice erworben. Jetzt ist es an der Zeit, dass Sarahs Versicherungspolice erneuert wird. Gloria Rios, Versicherungs-Agent, We.Finance sendet eine Erinnerung an Sarah über die Verlängerung ihrer Police. Sarah folgt den Anweisungen in der E-Mail und schließt den Prozess erfolgreich ab.
+Sarah Rose ist bereits We.Finance-Kundin und hat eine Kfz-Versicherungspolice erworben. Es ist an dieser Jahreszeit, dass Sarah ihre Versicherungspolice erneuert. Gloria Rios ist ihre Versicherungsvermittlerin. We.Finance sendet eine Erinnerung an Sarah über ihre Richtlinienverlängerung. Sarah folgt den Anweisungen in der E-Mail und schließt den Prozess erfolgreich ab.
 
 ## Anleitung zur Anwendung für Kfz-Versicherungen {#auto-insurance-application-walkthrough}
 
 Das Szenario für den Antrag auf Kfz-Versicherung von We.Finance ist eine visuelle Schilderung für den Benutzer und basiert auf zwei Personen:
 
-* Sarah Rose, We.Finance-Kunde
+* Sarah Rose, eine We.Finance-Kundin
 * Gloria Rios, Versicherungs-Agent, We.Finance
 
 ### Gloria sendet eine Mitteilung zur Erneuerung einer Versicherungspolice von We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria meldet sich bei der AEM-Instanz an, klickt auf **Erneuerung der Kfz-Versicherung** und dann auf **Agent-Benutzeroberfläche öffnen.** Durch das Klicken wird das Versicherungsdokument mit den Vertragsdetails von Sarah Rose vorausgefüllt. Gloria klickt auf **Absenden**, woraufhin auf dem Bildschirm die Meldung „Absenden eingeleitet“ und nach einigen Sekunden „Erfolgreich abgesendet“ erscheint.
+Gloria meldet sich bei der AEM-Instanz an, klickt auf **Erneuerung der Kfz-Versicherung** und dann auf **Agent-Benutzeroberfläche öffnen**. Durch das Klicken wird das Versicherungsdokument mit den Vertragsdetails von Sarah Rose vorausgefüllt. Gloria-Klicks **Einsenden** und eine Meldung wird auf dem Bildschirm &quot;Sendung initiiert&quot;und dann in einigen Sekunden &quot;Gesendet erfolgreich gesendet&quot;angezeigt.
 
 Sarah erhält eine E-Mail mit dem Betreff „Erneuerung Ihrer Kfz-Versicherung“.
 
@@ -72,7 +72,7 @@ Sie können die detaillierte Zusammenfassung der Erneuerung Ihrer Kfz-Versicheru
 
 ### Sarah wird auf die Zahlungsseite geleitet. {#sarah-reaches-the-payment-page}
 
-We.Finance leitet Sarah zur Zahlungsseite. Sarah vergleicht ihre Police-Nummer und das Ablaufdatum mit ihren Unterlagen. Rechts auf der Seite prüft sie die Zahlungszusammenfassung ihrer Erneuerung mit 10 % Prämienrabatt auf den Gesamtbetrag.
+We.Finance leitet Sarah zur Zahlungsseite. Sarah vergleicht ihre Police-Nummer und das Ablaufdatum mit ihren Unterlagen. Auf der rechten Seite der Seite prüft Sarah die Zahlungszusammenfassung der Verlängerung mit einem Prämienrabatt von 10 % auf den Gesamtbetrag.
 
 #### Funktionsweise {#how-it-works-1}
 
