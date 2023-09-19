@@ -8,10 +8,10 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 923ec028679031c9ef9ea6ae2cf827e7a4cd00d8
 workflow-type: tm+mt
-source-wordcount: '5529'
-ht-degree: 82%
+source-wordcount: '5517'
+ht-degree: 81%
 
 ---
 
@@ -243,7 +243,7 @@ Legen Sie Umgebungsvariablen für das 32-Bit- und 64-Bit-Java Development Kit, A
 >[!NOTE]
 >
 >* Bei allen Umgebungsvariablen und den entsprechenden Pfaden wird zwischen Groß- und Kleinschreibung unterschieden.
->* JAVA_HOME, JAVA_HOME_32 und Acrobat_PATH (nur Windows) sind erforderliche Umgebungsvariablen.
+>* JAVA_HOME und Acrobat_PATH (nur Windows) sind obligatorische Umgebungsvariablen.
 >* Die Umgebungsvariable OpenOffice_PATH wird auf den Installationsordner statt auf den Pfad der ausführbaren Datei festgelegt.
 >* Richten Sie für Microsoft® Office-Programme wie Word, PowerPoint, Excel und Project oder für AutoCAD keine Umgebungsvariablen ein. Wenn diese Anwendungen auf dem Server installiert sind, startet der Generate PDF-Dienst diese Anwendungen automatisch.
 >* Installieren Sie auf UNIX-basierten Plattformen OpenOffice als /root. Wenn OpenOffice nicht als root installiert ist, kann der PDF Generator-Dienst OpenOffice-Dokumente nicht in PDF-Dokumente konvertieren. Falls Sie OpenOffice unter einem anderen Benutzer als /root installieren und ausführen müssen, gewähren Sie dem betreffenden Benutzer sudo-Rechte.
@@ -686,8 +686,6 @@ Stellen Sie vor der Durchführung der folgenden Prüfungen sicher, dass das [Sys
   ```
   ldd phantomjs | grep not
   ```
-
-* Stellen Sie sicher, dass die Umgebungsvariable JAVA_HOME_32 auf den richtigen Speicherort verweist.
 
 **Linux® und Solaris™ (WebKit-Konvertierungsroute)**
 
