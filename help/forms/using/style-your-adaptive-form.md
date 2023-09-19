@@ -1,41 +1,36 @@
 ---
 title: Adaptives Formular formatieren
-seo-title: Style your adaptive form
-description: Erfahren Sie, wie Sie ein benutzerdefiniertes Design erstellen, individuelle Komponenten formatieren und Webfonts in einem Design verwenden
-seo-description: Learn to create a custom theme, style individual components, and use web fonts in a theme
-page-status-flag: de-activated
-uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
+description: Erfahren Sie, wie Sie ein benutzerdefiniertes Design erstellen, individuelle Komponenten formatieren und Web Fonts in einem Design verwenden.
 topic-tags: introduction
-discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '2041'
-ht-degree: 68%
+source-wordcount: '2054'
+ht-degree: 59%
 
 ---
 
 # Adaptives Formular formatieren {#do-not-publish-style-your-adaptive-form}
 
-Erfahren Sie, wie Sie ein benutzerdefiniertes Design erstellen, individuelle Komponenten formatieren und Webfonts in einem Design verwenden
+Erfahren Sie, wie Sie ein benutzerdefiniertes Design erstellen, individuelle Komponenten formatieren und Web Fonts in einem Design verwenden.
 
 ![hero-image](do-not-localize/08-style_your_adaptiveformmain.png)
 
-Dieses Tutorial ist ein Teil der Serie [Erstellen Ihres ersten adaptives Formulars](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Es wird empfohlen, die Serie in chronologischer Reihenfolge zu durchlaufen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, durchzuführen und zu demonstrieren.
+Dieses Tutorial ist ein Teil der Serie [Erstellen Ihres ersten adaptives Formulars](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html). Adobe empfiehlt, dass Sie der Reihe in chronologischer Abfolge folgen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, auszuführen und zu demonstrieren.
 
 ## Über das Tutorial  {#about-the-tutorial}
 
-Sie können Designs verwenden, um ein adaptives Formular mit einem eindeutigen Erscheinungsbild und Stil zu versehen. Sie können Standarddesigns anwenden, die mit dem adaptiven Formulareditor bereitgestellt werden, oder eigene benutzerdefinierte Designs erstellen. AEM [!DNL Forms] bietet einen [Design-Editor](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html) zum Erstellen benutzerdefinierter Designs. Ein einzelnes Design kann für dasselbe adaptive Formular, das auf einem Mobilgerät, Tablet oder Desktop geöffnet wird, ein anderes Erscheinungsbild bieten. Frühere Kenntnisse über CSS oder LESS sind nicht erforderlich, um den Design-Editor zu verwenden, sind jedoch wünschenswert.
+Sie können Designs verwenden, um ein adaptives Formular mit einem eindeutigen Erscheinungsbild und Stil zu versehen. Sie können im adaptiven Formulareditor vordefinierte Designs anwenden oder eigene benutzerdefinierte Designs erstellen. AEM [!DNL Forms] bietet einen [Design-Editor](https://helpx.adobe.com/de/experience-manager/6-3/forms/using/themes.html) zum Erstellen benutzerdefinierter Designs. Ein einzelnes Design kann für dasselbe adaptive Formular, das auf einem Mobilgerät, Tablet oder Desktop geöffnet wird, ein anderes Erscheinungsbild bieten. Frühere Kenntnisse über CSS oder LESS sind für die Verwendung des Design-Editors nicht erforderlich, sind jedoch wünschenswert.
 
-Am Ende des Tutorials lernen Sie Folgendes:
+Am Ende des Tutorials sollten Sie Folgendes tun können:
 
 * Anwenden eines Standarddesigns auf ein adaptives Formular
 * Erstellen eines Designs für ein adaptives Formular mit dem Design-Editor
 * Gestalten einzelner Komponenten
-* Bonusabschnitt: Verwenden von Webfonts in einem benutzerdefinierten Design
+* Bonusabschnitt: Verwenden Sie Web Fonts in einem benutzerdefinierten Thema
 
-Das Formular sieht nach Abschluss des Tutorials wie folgt aus:
+Ihr Formular sollte nach Abschluss des Tutorials wie folgt aussehen:
 
 ![Formular mit einem benutzerdefinierten Thema](assets/styled-adaptive-form.png)
 
@@ -49,14 +44,16 @@ Laden Sie die unten aufgeführten Header- und Logo-Bilder auf Ihren lokalen Comp
 
 ## Schritt 1: Anwenden eines Designs auf Ihr adaptives Formular {#step-apply-a-theme-to-your-adaptive-form}
 
-Der Editor für adaptive Formulare bietet mehrere vordefinierte Designs. Wenn Sie planen, keinen benutzerdefinierten Stil für Ihr adaptives Formular zu verwenden, können Sie Ihre adaptiven Formulare auch mit einem vordefinierten Design veröffentlichen. Designs sind unabhängig von adaptiven Formularen. Sie können dasselbe Design auf mehrere adaptive Formulare anwenden. So wenden Sie ein Design auf ein adaptives Formular an:
+Der Editor für adaptive Formulare bietet mehrere Standarddesigns. Wenn Sie planen, keinen benutzerdefinierten Stil für Ihr adaptives Formular zu verwenden, können Sie Ihre adaptiven Formulare auch mit einem vordefinierten Design veröffentlichen. Designs sind unabhängig von adaptiven Formularen. Sie können dasselbe Design auf mehrere adaptive Formulare anwenden.
+
+**So wenden Sie ein Design auf Ihr adaptives Formular an:**
 
 1. Öffnen Sie das adaptive Formular zum Bearbeiten.
 
    [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html)
 
-1. Offene Eigenschaften von **[!UICONTROL Container für adaptive Formulare]**. Navigieren Sie im Eigenschaftenbrowser zu **[!UICONTROL Allgemein]** > **[!UICONTROL Adaptives Formulardesign]**. Das Feld **[!UICONTROL Adaptives Formulardesign]** listet alle vordefinierten und benutzerdefinierten Designs auf. Standardmäßig wird das Canvas-Design angewendet.
-1. Wählen Sie ein Design aus dem **[!UICONTROL Adaptives Formulardesign]** -Feld. Beispiel: **Umfragedesign**. Tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), um das ausgewählte Design anzuwenden.
+1. Offene Eigenschaften von **[!UICONTROL Adaptiver Formularcontainer]**. Navigieren Sie im Eigenschaftenbrowser zu **[!UICONTROL Allgemein]** > **[!UICONTROL Adaptives Formulardesign]**. Das Feld **[!UICONTROL Adaptives Formulardesign]** listet alle vordefinierten und benutzerdefinierten Designs auf. Standardmäßig wird das Canvas-Design angewendet.
+1. Wählen Sie ein Design aus dem **[!UICONTROL Adaptives Formulardesign]** -Feld. Beispiel: **Umfragedesign**. Tippen ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) damit Sie das ausgewählte Design anwenden können.
 
    ![Adaptives Formular mit dem Standarddesign](assets/default-adaptive-form.png)
 
@@ -68,7 +65,9 @@ Der Editor für adaptive Formulare bietet mehrere vordefinierte Designs. Wenn Si
 
 ## Schritt 2: Aktualisieren des adaptiven Formulars {#step-update-your-adaptive-form}
 
-Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und -logo des vorhandenen adaptiven Formulars. Führen Sie die folgenden Schritte aus, um die erforderlichen Änderungen vorzunehmen:
+Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und -logo des vorhandenen adaptiven Formulars.
+
+**So aktualisieren Sie Ihr adaptives Formular:**
 
 1. Ändern Sie das vorhandene Logo und den Text der Kopfzeile. So entfernen Sie das Logo:
 
@@ -93,7 +92,7 @@ Das oben angezeigte Design erfordert Änderungen am Platzhaltertext und -logo de
 
 ## Schritt 3: Erstellen eines benutzerdefinierten Designs für Ihr adaptives Formular {#step-create-a-custom-theme-for-your-adaptive-form}
 
-Sie können [Design-Editor](/help/forms/using/themes.md) um benutzerdefinierte Designs zu erstellen. Der Design-Editor ist ein allmächtiger WYSIWYG-Editor. Es ist eine visuelle Methode, CSS auf verschiedene Komponenten eines adaptiven Formulars anzuwenden. Es bietet feinere Steuerelemente zum Stilen von Komponenten und Bedienfeldern eines adaptiven Formulars.
+Sie können die [Design-Editor](/help/forms/using/themes.md) um benutzerdefinierte Designs zu erstellen. Der Design-Editor ist ein allmächtiger WYSIWYG-Editor. Es ist eine visuelle Methode, CSS auf verschiedene Komponenten eines adaptiven Formulars anzuwenden. Es bietet feinere Steuerelemente zum Stilen von Komponenten und Bedienfeldern eines adaptiven Formulars.
 
 Ein Design ist eine separate Entität wie adaptive Formulare. Sie enthält Stile (CSS) für die Komponenten und Bedienfelder eines adaptiven Formulars. Die Stile umfassen Eigenschaften wie Hintergrundfarben, Statusfarben, Transparenz, Ausrichtung und Größe. Wenn Sie ein Design anwenden, wird der angegebene Stil auf die entsprechenden Komponenten eines adaptiven Formulars angewendet.
 
@@ -105,11 +104,11 @@ In diesem Tutorial gestalten Sie Kopf- und Fußzeilen, Text- und numerische Komp
 1. Tippen Sie auf **[!UICONTROL Erstellen]** und wählen Sie **[!UICONTROL Design]**. Die Seite [!UICONTROL Design erstellen] mit den Feldern zum Erstellen eines Designs wird angezeigt. Die Felder **[!UICONTROL Titel]** und **[!UICONTROL Name]** sind obligatorisch.
 
    * **Titel:** Geben Sie einen Titel für das Design an. Zum Beispiel: **Globales Design.** Der Titel hilft Ihnen, das Design in der Liste der Designs zu identifizieren.
-   * **Name**: Geben Sie den Namen des Designs an. Beispiel: **Globales Thema.** Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe des Titels beginnen, wird automatisch ein Wert für das Feld „Name“ vorgeschlagen. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Alle ungültigen Eingaben werden durch Bindestriche ersetzt.
+   * **Name**: Geben Sie den Namen des Designs an. Beispiel: **Globales Thema.** Im Repository wird ein Knoten mit dem angegebenen Namen erstellt. Wenn Sie mit der Eingabe eines Titels beginnen, wird automatisch der Wert für das Namensfeld generiert. Sie können den vorgeschlagenen Wert gegebenenfalls ändern. Im Feld „Name“ dürfen nur alphanumerische Zeichen, Bindestriche und Unterstriche eingegeben werden. Alle ungültigen Eingaben werden durch Bindestriche ersetzt.
 
-1. Tippen Sie auf **[!UICONTROL Erstellen]**. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Tippen Sie auf **[!UICONTROL Öffnen]**, um das neu erstellte Design in einer neuen Registerkarte zu öffnen. Design wird im Design-Editor geöffnet. Zum Festlegen des Designs verwendet der Design-Editor ein adaptives Standardformular, das im Lieferumfang von AEM [!DNL Forms] enthalten ist.
+1. Tippen Sie auf **[!UICONTROL Erstellen]**. Ein Design wird erstellt und es wird ein Dialogfeld zum Öffnen des Formulars zur Bearbeitung angezeigt. Tippen Sie auf **[!UICONTROL Öffnen]**, um das neu erstellte Design in einer neuen Registerkarte zu öffnen. Das Design wird im Design-Editor geöffnet. Zum Festlegen des Designs verwendet der Design-Editor ein adaptives Standardformular, das im Lieferumfang von AEM [!DNL Forms] enthalten ist.
 
-   Informationen zur Verwendung der Benutzeroberfläche des Design-Editors finden Sie unter [Informationen zum Design-Editor](/help/forms/using/themes.md#aboutthethemeeditor).
+   Informationen zur Verwendung der Benutzeroberfläche des Design-Editors finden Sie unter [Über den Design-Editor](/help/forms/using/themes.md#aboutthethemeeditor).
 
 1. Tippen Sie auf **[!UICONTROL Designoptionen]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Konfigurieren]**. Wählen Sie im Feld **[!UICONTROL Vorschauformular]** das adaptive Formular **shipping-address-add-update-form** und tippen Sie zunächst auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png), dann auf **[!UICONTROL Speichern]**. Jetzt ist der Design-Editor konfiguriert, um Ihr eigenes adaptives Formular anstelle des adaptiven Standardformulars zu benutzen. Tippen Sie auf **[!UICONTROL Abbrechen]**, um zum Design-Editor zurückzukehren.
 
@@ -123,7 +122,7 @@ In diesem Tutorial gestalten Sie Kopf- und Fußzeilen, Text- und numerische Komp
 
 ### Stilkopfzeile und -fußzeile {#style-header-and-footer}
 
-Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbild für ein adaptives Formular. Im Allgemeinen enthält die Kopfzeile das Logo und den Namen der Organisation, die Fußzeile enthält Copyright-Informationen und diese bleiben in mehreren Formularen einer Organisation identisch. So gestalten Sie Kopf- und Fußzeile des adaptiven Formulars shipping-address-add-update-form :
+Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbild für ein adaptives Formular. Im Allgemeinen enthält die Kopfzeile das Logo und den Namen der Organisation, die Fußzeile enthält Copyright-Informationen und diese bleiben in mehreren Formularen einer Organisation identisch. So gestalten Sie die Kopf- und Fußzeile des adaptiven Formulars shipping-address-add-update-form :
 
 1. Navigieren Sie zum **[!UICONTROL Kopfzeile]** > **[!UICONTROL Text]** im Bedienfeld Selektoren . Das Bedienfeld Selektoren befindet sich auf der linken Seite des Design-Editors. Wenn das Bedienfeld nicht sichtbar ist, tippen Sie auf ![toggle-side-panel](assets/toggle-side-panel.png) – „Seitliches Bedienfeld ein/aus“.
 
@@ -131,7 +130,7 @@ Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbi
 
    | Eigenschaft | Wert |
    |---|---|
-   | Schriftfamilie | Arial |
+   | Schriftfamilie | Arial® |
    | Schriftfarbe | FFFFFF |
    | Schriftgrad | 54 px |
 
@@ -161,7 +160,7 @@ Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbi
         <li>Oben: 1,5rem</li> 
         <li>Unten: -35px</li> 
         <li>Links: 1rem<strong><br /> </strong></li> 
-       </ul> <p><strong>Tipp:</strong> Tippen Sie auf das Link-Symbol<img src="assets/link.png">, um einen anderen Wert für jedes Feld zur Verfügung zu stellen.<br /> </p> </td> 
+       </ul> <p><strong>Tipp:</strong> Tippen Sie auf <img src="assets/link.png"> Verknüpfungssymbol, um für jedes Feld einen anderen Wert bereitzustellen.<br /> </p> </td> 
      </tr> 
      <tr> 
       <td>Höhe</td> 
@@ -174,7 +173,7 @@ Kopf- und Fußzeile bieten ein konsistentes und unverwechselbares Erscheinungsbi
 
 ### Formatieren Sie die Datenerfassungskomponente und wenden Sie einen Hintergrund auf das adaptive Formular an {#style-the-data-capture-component-and-apply-a-background-to-the-adaptive-form}
 
-Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen. Beispiel: Textfeld und numerisches Feld. Sie können für alle Datenerfassungskomponenten einen identischen Stil bereitstellen oder jeder Komponente einen eigenen Stil zuweisen. In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Lieferadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
+Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten zu erfassen. Beispiel: Textfeld und numerisches Feld. Sie können einen identischen Stil für alle Datenerfassungskomponenten oder einen separaten Stil für jede Komponente bereitstellen. In diesem Lernprogramm wird ein identischer Stil auf numerische Felder (Kunden-ID, Postleitzahl) und Textfelder (Kunden-ID, Name, Lieferadresse, Status, E-Mail) angewendet. So gestalten Sie die Datenerfassungskomponenten:
 
 1. Tippen Sie zunächst auf das Feld **[!UICONTROL Kunden-ID]** und dann auf die Option **[!UICONTROL Feld-Widget]**. Legen Sie die folgenden Eigenschaften fest und tippen Sie auf ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
@@ -195,16 +194,16 @@ Sie können mehrere Komponenten in einem adaptiven Formular verwenden, um Daten 
       <td>Rahmenradius </td> 
       <td> 
        <ul> 
-        <li>Oben: 7px<br /> </li> 
-        <li>Rechts: 7px<br /> </li> 
-        <li>Unten: 7px<br /> </li> 
-        <li>Links: 7px<br /> </li> 
+        <li>Oben: 7 px<br /> </li> 
+        <li>Rechts: 7 px<br /> </li> 
+        <li>Unten: 7 px<br /> </li> 
+        <li>Links: 7 px<br /> </li> 
        </ul> </td> 
      </tr> 
      <tr> 
       <td>Text</td> 
       <td>Schriftfamilie</td> 
-      <td>Arial</td> 
+      <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Text</td> 
@@ -264,16 +263,16 @@ Sie können ein benutzerdefiniertes Design verwenden, um allen Schaltflächen de
       <td>Rahmenradius </td> 
       <td> 
        <ul> 
-        <li>Oben: 7px<br /> </li> 
-        <li>Rechts: 7px<br /> </li> 
-        <li>Unten: 7px<br /> </li> 
-        <li>Links: 7px</li> 
+        <li>Oben: 7 px<br /> </li> 
+        <li>Rechts: 7 px<br /> </li> 
+        <li>Unten: 7 px<br /> </li> 
+        <li>Links: 7 px</li> 
        </ul> </td> 
      </tr> 
      <tr> 
       <td>Text<br /> </td> 
       <td>Schriftfamilie</td> 
-      <td>Arial</td> 
+      <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Text</td> 
@@ -292,7 +291,7 @@ Sie können ein benutzerdefiniertes Design verwenden, um allen Schaltflächen de
 
    ![style-data-collection-components](assets/style-data-capture-components.png)
 
-## Schritt 4: Gestalten einzelner Komponenten {#step-style-individual-components}
+## Schritt 4: Gestalten Sie die einzelnen Komponenten. {#step-style-individual-components}
 
 Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten sind im Editor für adaptive Formulare formatiert.
 
@@ -332,7 +331,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten sind i
       <td>Auffüllung</td> 
       <td> 
        <ul> 
-        <li>Links: 10px</li> 
+        <li>Links: 10 px</li> 
        </ul> </td> 
      </tr> 
      <tr> 
@@ -345,7 +344,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten sind i
       <td>Rand</td> 
       <td><br /> 
        <ul> 
-        <li>Rechts: 2rem</li> 
+        <li>Rechts: 2 rem</li> 
         <li>Links: 10rem </li> 
        </ul> </td> 
      </tr> 
@@ -377,7 +376,7 @@ Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten sind i
      <tr> 
       <td>Text</td> 
       <td>Schriftfamilie</td> 
-      <td>Arial</td> 
+      <td>Arial®</td> 
      </tr> 
      <tr> 
       <td>Text</td> 
@@ -417,8 +416,8 @@ Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten sind i
       <td>Rand</td> 
       <td> 
        <ul> 
-        <li>Oben: 5rem</li> 
-        <li>Rechts: 14rem</li> 
+        <li>Oben: 5 rem</li> 
+        <li>Rechts: 14 rem</li> 
         <li>Unten: 20 px</li> 
         <li>Links: 20 px<br /> </li> 
        </ul> </td> 
@@ -438,21 +437,21 @@ Einige Stile gelten nur für eine bestimmte Komponente. Diese Komponenten sind i
 
    ![styled-adaptive-form-1](assets/styled-adaptive-form-1.png)
 
-## Schritt 5: Bonusabschnitt: Verwenden von Webfonts in einem benutzerdefinierten Design {#step-bonus-section-using-web-fonts-in-a-custom-theme}
+## Schritt 5: Bonusabschnitt: Verwenden von Webs Fonts in einem benutzerdefinierten Design {#step-bonus-section-using-web-fonts-in-a-custom-theme}
 
-Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu entwerfen. Auf allen Geräten, auf denen das adaptive Formular angezeigt wird, sind die Schriftarten zum Entwerfen des adaptiven Formulars möglicherweise nicht vorhanden. Sie können einen Webfont-Dienst verwenden, um erforderliche Schriftarten auf dem Zielgerät bereitzustellen.
+Sie können verschiedene Schriftarten verwenden, um ein adaptives Formular zu entwerfen. Auf allen Geräten, auf denen das adaptive Formular angezeigt wird, sind die Schriftarten zum Entwerfen des adaptiven Formulars möglicherweise nicht vorhanden. Sie können einen Webfont-Dienst verwenden, um die erforderlichen Schriftarten an das Zielgerät bereitzustellen.
 
-[!DNL Adobe Fonts] ist ein Webschriftartdienst. Sie können den Dienst mit adaptiven Formularen konfigurieren und verwenden. So verwenden Sie [!DNL Adobe Fonts] in einem adaptiven Formular:
+[!DNL Adobe Fonts] ist ein Web Fonts-Dienst. Sie können den Dienst mit adaptiven Formularen konfigurieren und verwenden. So verwenden Sie [!DNL Adobe Fonts] in einem adaptiven Formular:
 
 >[!NOTE]
 >
 >![typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) [!DNL Typekit] heißt jetzt Adobe Fonts und ist in Creative Cloud- und anderen Abonnements enthalten. [Weitere Informationen](https://fonts.adobe.com/)
 
-1. Erstellen Sie ein [Adobe Fonts](https://typekit.com/)-Konto, erstellen Sie ein Kit, fügen Sie dem Kit die Schriftart Myriad Pro hinzu, veröffentlichen Sie das Kit und erhalten Sie die Kit-ID. Es ist erforderlich, [!DNL Adobe Fonts] (Webfonts) in einem adaptiven Formular zu verwenden.
-1. Im AEM [!DNL Forms] Server, navigieren Sie zu ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Werkzeuge]** ![Hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Öffnen Sie jetzt einen Konfigurationsordner. Wenn eine Konfiguration bereits zur Verfügung steht, klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]**, um eine neue Instanz zu erstellen.
+1. Erstellen Sie ein [Adobe Fonts](https://fonts.adobe.com/?ref=tk.com)-Konto, erstellen Sie ein Kit, fügen Sie dem Kit die Schriftart Myriad Pro hinzu, veröffentlichen Sie das Kit und erhalten Sie die Kit-ID. Es muss [!DNL Adobe Fonts] (Webs Fonts) in einem adaptiven Formular.
+1. Im AEM [!DNL Forms] Server, navigieren Sie zu ![adobeexperiencemanager](assets/adobeexperiencemanager.png) **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Instrumente]** ![Hammer](assets/hammer.png) > **[!UICONTROL Adobe Fonts]**. Öffnen Sie jetzt einen Konfigurationsordner. Wenn bereits eine Konfiguration verfügbar ist, klicken Sie auf die Schaltfläche **[!UICONTROL Erstellen]** -Schaltfläche, um eine Instanz zu erstellen.
 
    Geben Sie im Dialogfeld „Konfiguration erstellen“ einen **Titel** für die Konfiguration an und klicken Sie auf **[!UICONTROL Erstellen]**. Daraufhin werden Sie zur Seite „Konfiguration“ geleitet. Geben Sie im Dialogfeld [!UICONTROL Komponente bearbeiten], das angezeigt wird, Ihre **Kit-ID** ein und klicken Sie auf **[!UICONTROL OK]**.
 
-1. Konfigurieren Sie Ihr Design für die Verwendung der [!DNL Adobe Fonts]-Konfiguration. Öffnen Sie in der Autorinstanz ein Design im Design-Editor **[!UICONTROL Globales Design]**. Navigieren Sie im Design-Editor zu **[!UICONTROL Themenoptionen]** ![Themenoptionen](assets/theme-options.png) > **[!UICONTROL Konfigurieren]**. Wählen Sie im Feld **[!UICONTROL Adobe Fonts-Konfiguration]** ein Kit aus und klicken Sie auf **[!UICONTROL Speichern]**.
+1. Konfigurieren Sie Ihr Design für die Verwendung der [!DNL Adobe Fonts]-Konfiguration. Öffnen Sie in der Autorinstanz ein Design im Design-Editor **[!UICONTROL Globales Design]**. Navigieren Sie im Design-Editor zu **[!UICONTROL Themenoptionen]** ![Themenoptionen](assets/theme-options.png) > **[!UICONTROL Konfigurieren]**. Im **[!UICONTROL Adobe Fonts-Konfiguration]** ein, wählen Sie das Kit aus und klicken Sie auf **[!UICONTROL Speichern]**.
 
    Die zu **[!UICONTROL Adobe Fonts]** hinzugefügten Schriftarten stehen im **[!UICONTROL Text]**-Akkordeon aller Komponenten zur Auswahl.

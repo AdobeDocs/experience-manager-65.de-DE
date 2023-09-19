@@ -1,14 +1,14 @@
 ---
 title: Best Practices für AEM Mobile On-demand Services
-description: Erfahren Sie mehr über Best Practices und Richtlinien, die erfahrenen AEM Entwicklern von Sites helfen, die Vorlagen und Komponenten für mobile Apps erstellen möchten.
+description: Erfahren Sie mehr über Best Practices und Richtlinien, die kompetenten Adobe Experience Manager-Entwicklern (AEM) bei Sites helfen, die Vorlagen und Komponenten für mobile Apps erstellen möchten.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Das Erstellen einer AEM Mobile On-demand Services-App unterscheidet sich vom Erstellen einer App, die direkt in der Cordova- (oder PhoneGap-)Shell ausgeführt wird. Die Entwickler sollten mit folgenden Themen vertraut sein:
 
-* Plugins, die standardmäßig unterstützt werden, und die AEM Mobile-spezifischen Plug-ins.
+* Plugins, die standardmäßig unterstützt werden, und Adobe Experience Manager (AEM) Mobile-spezifische Plug-ins.
 
 >[!NOTE]
 >
@@ -31,13 +31,13 @@ Das Erstellen einer AEM Mobile On-demand Services-App unterscheidet sich vom Ers
 >* [Verwenden von AEM Mobile-spezifischen Cordova-aktivierten Plug-ins](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
-* Vorlagen, die Plug-in-Funktionen verwenden, sollten so geschrieben werden, dass sie im Browser noch autorierbar sind, ohne dass die Plug-in-Verbindung vorhanden ist.
+* Vorlagen, die Plug-in-Funktionen verwenden, sollten so geschrieben werden, dass sie im Browser noch autorisiert werden können, ohne dass die Plug-in-Verbindung vorhanden ist.
 
    * Achten Sie beispielsweise darauf, auf die *Abflussgetreide* -Funktion, bevor versucht wird, auf die API eines Plug-ins zuzugreifen.
 
 ## Richtlinien für AEM Entwickler {#guidelines-for-aem-developers}
 
-Die folgenden Richtlinien helfen erfahrenen AEM-Entwicklern für Sites, die mobile App-Vorlagen und -Komponenten erstellen möchten:
+Die folgenden Richtlinien helfen zuständigen AEM-Entwicklern bei Sites, die mobile App-Vorlagen und -Komponenten erstellen möchten:
 
 **Strukturieren AEM Sites-Vorlagen zur Förderung der Wiederverwendung und Erweiterbarkeit**
 
@@ -48,7 +48,7 @@ Die folgenden Richtlinien helfen erfahrenen AEM-Entwicklern für Sites, die mobi
 
 * Sightly/HTL über JSP als Vorlagensprache bevorzugen
 
-   * Dadurch wird eine Trennung von Code und Markup gefördert, bietet integrierten XSS-Schutz und verfügt über eine vertrautere Syntax.
+   * Dadurch wird eine Trennung von Code und Markup gefördert, es bietet integrierten XSS-Schutz und eine vertrautere Syntax
 
 **Optimieren der Leistung auf dem Gerät**
 
@@ -63,7 +63,7 @@ Die folgenden Richtlinien helfen erfahrenen AEM-Entwicklern für Sites, die mobi
 **App-spezifische clientseitige JS- und CSS-Bibliotheken im Vergleich zu webspezifischen**
 
 * So vermeiden Sie Mehraufwand in Bibliotheken wie jQuery Mobile für die Verarbeitung einer großen Bandbreite von Geräten und Browsern
-* Wenn eine Vorlage in der Webansicht einer App ausgeführt wird, haben Sie die Kontrolle über die Plattformen und Versionen, die von der App unterstützt werden, sowie über das Wissen, dass JavaScript-Unterstützung vorhanden sein wird. Nehmen wir beispielsweise an, dass Sie Ionic (vielleicht nur CSS) gegenüber jQuery Mobile und Onsen UI vorziehen.
+* Wenn eine Vorlage in der Webansicht einer App ausgeführt wird, haben Sie die Kontrolle über die Plattformen und Versionen, die die App unterstützen wird, sowie über das Wissen, dass JavaScript-Unterstützung vorhanden sein wird. Nehmen wir beispielsweise an, dass Ionic (nur CSS) gegenüber jQuery Mobile und Onsen UI den Vorzug vor Bootstrap hat.
 
 >[!NOTE]
 >
@@ -72,13 +72,13 @@ Die folgenden Richtlinien helfen erfahrenen AEM-Entwicklern für Sites, die mobi
 **Mikrobibliotheken über Vollstapel bevorzugen**
 
 * Die Zeit, die benötigt wird, um Ihren Inhalt auf das Glas des Geräts zu bringen, wird von jeder Bibliothek verlangsamt, von der Ihre Artikel abhängen. Diese Verlangsamung wird verstärkt, wenn eine neue Webansicht zum Rendern jedes Artikels verwendet wird. Daher muss jede Bibliothek von Grund auf neu initialisiert werden
-* Wenn Ihre Artikel nicht als SPA (Einzelseiten-Apps) erstellt wurden, müssen Sie wahrscheinlich keine vollständige Stapelbibliothek wie Angular einschließen.
-* Verwenden Sie kleinere Bibliotheken mit einem Zweck, um die Interaktivität hinzuzufügen, die Ihre Seite benötigt, z. B. [Fastclick](https://github.com/ftlabs/fastclick) oder [Velocity.js](https://velocityjs.org)
+* Wenn Ihre Artikel nicht als SPA (Einzelseiten-Apps) erstellt wurden, müssen Sie wahrscheinlich keine Vollstapelbibliothek wie Angular einfügen
+* Verwenden Sie kleinere, einzweckige Bibliotheken, die dazu beitragen, die für Ihre Seite erforderliche Interaktivität hinzuzufügen, z. B. [Fastclick](https://github.com/ftlabs/fastclick) oder [Velocity.js](https://velocityjs.org)
 
 **Minimieren der Artikelnutzlast**
 
 * Verwenden Sie die kleinstmöglichen Assets, die mit einer angemessenen Auflösung effektiv den größten unterstützten Viewport abdecken können.
-* Verwenden Sie ein Tool wie *ImageOptim* auf Ihren Bildern, um überschüssige Metadaten zu entfernen
+* Verwenden Sie ein Tool wie *ImageOptim* auf Ihren Bildern, damit Sie überschüssige Metadaten entfernen können
 
 ## Erste Schritte {#getting-ahead}
 
