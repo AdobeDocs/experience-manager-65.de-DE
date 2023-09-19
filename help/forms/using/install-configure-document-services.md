@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 923ec028679031c9ef9ea6ae2cf827e7a4cd00d8
+source-git-commit: f41962faa0567ed99c1e2ab189e81fb978781af3
 workflow-type: tm+mt
-source-wordcount: '5517'
+source-wordcount: '5515'
 ht-degree: 81%
 
 ---
@@ -481,7 +481,7 @@ Unter Microsoft® Windows verwendet der PDF Generator-Service Adobe Acrobat, um 
 
 ### (Nur Windows) Konfigurieren der primären Route für die Konvertierung von HTML zu PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-Der PDF Generator-Dienst bietet mehrere Routen zum Konvertieren von HTML-Dateien in PDF-Dokumente: WebKit, Acrobat WebCapture (nur Windows) und PhantomJS. Adobe empfiehlt die PhantomJS-Route, weil sie über die Funktionen verfügt, um dynamische Inhalte zu verarbeiten, keine Abhängigkeiten von 32-Bit-Bibliotheken oder 32-Bit JDK aufweist und keine zusätzlichen Schriftarten erfordert. Außerdem erfordert die PhantomJS-Route keinen sudo- oder root-Zugriff, um die Konvertierung auszuführen.
+Der PDF Generator-Dienst bietet mehrere Routen zum Konvertieren von HTML-Dateien in PDF-Dokumente: WebKit, Acrobat WebCapture (nur Windows) und PhantomJS. Adobe empfiehlt die Verwendung der PhantomJS-Route, da sie über die Möglichkeit verfügt, dynamische Inhalte zu verarbeiten, keine Abhängigkeiten von 32-Bit-Bibliotheken aufweist oder keine zusätzlichen Schriftarten erfordert. Außerdem erfordert die PhantomJS-Route keinen sudo- oder root-Zugriff, um die Konvertierung auszuführen.
 
 Die standardmäßige primäre Route für die HTML-zu-PDF-Konversion ist Webkit. So ändern Sie die Konversionsroute:
 
