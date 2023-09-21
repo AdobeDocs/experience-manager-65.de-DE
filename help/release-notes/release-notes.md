@@ -2,7 +2,7 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
-source-git-commit: 4f6ef1a6cddec307af64ca888307f19c0450467d
+source-git-commit: ffda4927ddc8555564f33697fa81d1f8a0cd2cdc
 workflow-type: tm+mt
 source-wordcount: '4548'
 ht-degree: 27%
@@ -371,7 +371,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * **Seitenveröffentlichung funktioniert nicht im Seiteneditor nach dem Upgrade auf Service Pack 18 (6.5.18.0)**
 
-  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Nach dem Upgrade einer Instanz von AEM 6.5.0.0—6.5.17.0 auf AEM 6.5.18.0, wenn Sie auf **[!UICONTROL Seite veröffentlichen]** innerhalb des Seiten-Editors werden Sie zu einer URL umgeleitet, die nicht vorhanden ist.
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Nach dem Upgrade einer Instanz von AEM 6.5.0.0—6.5.17.0 auf AEM 6.5.18.0, wenn Sie auf **Seite veröffentlichen** innerhalb des Seiten-Editors werden Sie zu einer URL umgeleitet, die nicht vorhanden ist.
 
   Um dieses Problem zu umgehen, führen Sie einen der folgenden Schritte aus:
 
