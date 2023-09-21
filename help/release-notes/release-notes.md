@@ -2,9 +2,9 @@
 title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
-source-git-commit: a15b9dae5cc4405122ee95e036a83fdfbf34f9bd
+source-git-commit: 4f6ef1a6cddec307af64ca888307f19c0450467d
 workflow-type: tm+mt
-source-wordcount: '4490'
+source-wordcount: '4548'
 ht-degree: 27%
 
 ---
@@ -43,7 +43,7 @@ Zu den wichtigsten Funktionen und Verbesserungen in dieser Version gehören:
 
 * Assets, Dynamic Media - [Unterstützung für mehrere Untertitel und mehrere Audiospuren für Videos in Dynamic Media](/help/assets/video.md#about-msma)—Sie können jetzt einfach mehrere Untertitel und mehrere Audiospuren zu einem Hauptvideo hinzufügen. Diese Funktion bedeutet, dass Ihre Videos für eine globale Zielgruppe zugänglich sind. Sie können ein einzelnes veröffentlichtes primäres Video für eine globale Zielgruppe in mehreren Sprachen anpassen und die Richtlinien zur Barrierefreiheit für verschiedene geografische Regionen einhalten. Autoren können die Untertitel und Audiospuren auch über eine einzige Registerkarte in der Benutzeroberfläche verwalten.
 
-* Assets - Aus den Suchergebnissen können Sie jetzt zum Ordnerspeicherort navigieren, der ein Asset enthält. Auf diese Weise können Sie verschiedene Asset-Management-Aufgaben ausführen. (ASSETS-23182)
+* Assets - Aus den Suchergebnissen können Sie jetzt zum Speicherort des Ordners navigieren, der ein Asset enthält, damit Sie verschiedene Asset-Verwaltungsaufgaben ausführen können. (ASSETS-23182)
 
 **Wichtige Verbesserungen**
 
@@ -51,7 +51,7 @@ Zu den wichtigsten Funktionen und Verbesserungen in dieser Version gehören:
 
 * Der Seiteneditor/Bildkomponentenbenutzer von Sites wurde aktiviert, um auf Assets vom Remote-Assets-Cloud Service zu verweisen. (SITES-13448, SITES-13433)
 
-* Um in der Listenansicht schnell ein Projekt zu finden, in dem sich möglicherweise viele Projekte in Ihrem System befinden, unterstützt Adobe jetzt die serverseitige Sortierung. Projektknoten werden nach der vom Benutzer ausgewählten Spalte im Backend sortiert, bevor sie in der Benutzeroberfläche gerendert werden. (NPR-41027)
+* Um in der Listenansicht schnell ein Projekt zu finden, in dem sich möglicherweise viele Projekte im System befinden, unterstützt Adobe jetzt die serverseitige Sortierung. Projektknoten werden nach der vom Benutzer ausgewählten Spalte im Backend sortiert, bevor sie in der Benutzeroberfläche gerendert werden. (NPR-41027)
 
 * AEM 6.5.18.0 unterstützt MongoDB 5.0 bis 6.0.
 
@@ -61,19 +61,19 @@ Zu den wichtigsten Funktionen und Verbesserungen in dieser Version gehören:
 
 **Formulare**
 
-* **[Verbesserte Fehlerbehebung mit benutzerdefinierten Fehler-Handlern im Regeleditor](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** Sie können jetzt eine benutzerdefinierte Funktion (mithilfe der Client-Bibliothek) aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt, und eine maßgeschneiderte Antwort für Endbenutzer bereitstellen. Sie können auch bestimmte Aktionen für Fehler ausführen, die von einem Dienst zurückgegeben werden. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehlercodes aufrufen oder den Kunden darüber informieren, dass der Dienst ausgefallen ist
+* **[Verbesserte Fehlerbehebung mit benutzerdefinierten Fehler-Handlern im Regeleditor](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** - Sie können jetzt eine benutzerdefinierte Funktion (mithilfe der Client-Bibliothek) aufrufen, wenn ein von einem externen Dienst zurückgegebener Fehler auftritt. Und Sie können eine maßgeschneiderte Antwort für Endbenutzer bereitstellen. Sie können auch bestimmte Aktionen für Fehler ausführen, die von einem Dienst zurückgegeben werden. Sie können beispielsweise einen benutzerdefinierten Workflow im Backend für bestimmte Fehlercodes aufrufen oder den Kunden darüber informieren, dass der Dienst ausgefallen ist
 
-* **[Verbesserter Workflow-Schritt in Adobe Sign](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** Der Adobe Sign-Workflow-Schritt in AEM Workflows ist mit den folgenden Verbesserungen verfügbar.
+* **[Verbesserter Workflow-Schritt in Adobe Sign](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - Der Adobe Sign-Workflow-Schritt in AEM Workflows ist mit den folgenden Verbesserungen verfügbar.
 
-   * **Verbesserte Sicherheit mit ID-basierter Authentifizierung für Adobe Sign:** Die Adobe Acrobat Sign-Authentifizierung mit ID-basierter Regierungsauthentifizierung bietet eine zusätzliche Überprüfungsebene, indem sie es Benutzern ermöglicht, ihre Identität mit staatlich ausgestellten Kennungen (Führerschein, nationale Kennung, Pass) zu authentifizieren. Durch die Verwendung von vertrauenswürdigen Identifizierungsdokumenten erhöht diese Verbesserung das Vertrauen in den Signierungsprozess und eignet sich somit ideal für Szenarien, die eine erhöhte Sicherheit, Compliance und Benutzervalidierung erfordern.
+   * **Verbesserte Sicherheit mit ID-basierter Authentifizierung für Adobe Sign** - Adobe Acrobat Signs ID-basierte Authentifizierung bietet eine zusätzliche Verifizierungsebene. Sie ermöglicht Benutzern die Authentifizierung ihrer Identität mithilfe von staatlich ausgestellten Kennungen (Führerschein, nationale Kennung, Reisepass). Durch die Verwendung von vertrauenswürdigen Identifizierungsdokumenten erhöht diese Verbesserung das Vertrauen in den Signierungsprozess und eignet sich somit ideal für Szenarien, die eine erhöhte Sicherheit, Compliance und Benutzervalidierung erfordern.
 
-   * **Verbesserte Transparenz mit dem Audit-Protokoll für Adobe Sign-Dokumente:** Verwenden Sie die Funktion &quot;Audit-Protokoll&quot;, um detaillierte Einblicke in den Lebenszyklus Ihrer Adobe Sign-Dokumente zu erhalten. Mit dem Audit-Protokoll können Sie jetzt einen umfassenden Datensatz aller Aktionen und Interaktionen verwalten, die mit Ihren Dokumenten verbunden sind. Dazu gehören Details wie der Benutzer, der das Dokument angesehen, bearbeitet oder unterschrieben hat, sowie Zeitstempel für jedes Ereignis. Diese Verbesserung ist von entscheidender Bedeutung für die Aufrechterhaltung der Compliance, die Beilegung von Streitigkeiten und die Sicherstellung der Integrität Ihrer digitalen Vereinbarungen.
-
-
-   * **Die Rollen für Empfänger der Vereinbarung wurden über den Unterzeichner hinaus erweitert:** Adobe Acrobat Sign hat die Möglichkeit, die Rollen für Vertragsempfänger über den Unterzeichner hinaus zu erweitern, um die Anforderungen an den Workflow besser zu erfüllen. Wenn diese Option aktiviert ist, kann die Rolle jedes Empfängers in einem Vertrag einzeln konfiguriert werden, wobei der Unterzeichner die Standardeinstellung ist.
+   * **Verbesserte Transparenz mit dem Audit-Protokoll für Adobe Sign-Dokumente** - Verwenden Sie die Funktion &quot;Audit-Protokoll&quot;, um detaillierte Einblicke in den Lebenszyklus Ihrer Adobe Sign-Dokumente zu erhalten. Mit dem Audit-Protokoll können Sie jetzt einen umfassenden Datensatz aller Aktionen und Interaktionen verwalten, die mit Ihren Dokumenten verbunden sind. Dazu gehören Details wie der Benutzer, der das Dokument angesehen, bearbeitet oder unterschrieben hat, sowie Zeitstempel für jedes Ereignis. Diese Verbesserung ist von entscheidender Bedeutung für die Aufrechterhaltung der Compliance, die Beilegung von Streitigkeiten und die Sicherstellung der Integrität Ihrer digitalen Vereinbarungen.
 
 
-* **[AEM Forms on JEE-Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)**: Das Service Pack enthält ein vollständiges Installationsprogramm für AEM Forms on JEE, das mehrere neue Softwarekombinationen unterstützt, darunter:
+   * **Erweiterung der Rollen für Empfänger der Vereinbarung über den Unterzeichner hinaus** - Mit Adobe Acrobat Sign können Sie die Rollen für Vertragsempfänger über den Unterzeichner hinaus erweitern, um die Workflow-Anforderungen besser zu erfüllen. Wenn diese Option aktiviert ist, kann die Rolle jedes Empfängers in einer Vereinbarung einzeln konfiguriert werden, wobei der Unterzeichner die Standardeinstellung ist.
+
+
+* **[AEM Forms on JEE-Vollinstallationsprogramm](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)** - Das Service Pack enthält ein vollständiges Installationsprogramm für AEM Forms on JEE, das mehrere neue Softwarekombinationen unterstützt, darunter:
    * Microsoft® Windows Server 2022
    * Microsoft® Active Directory 2022
    * Oracle WebLogic 14C unter Windows Server 2022
@@ -81,7 +81,7 @@ Zu den wichtigsten Funktionen und Verbesserungen in dieser Version gehören:
    * MongoDB 4.4
    * MySQL JDBC Connector 8
 
-Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Software für Ihre AEM 6.5 Forms on JEE-Umgebung planen, empfiehlt Adobe die Verwendung des vollständigen Installationsprogramms für AEM 6.5.18.0 Forms on JEE. Die vollständige Liste der neu hinzugefügten und veralteten Software finden Sie in der Dokumentation zu AEM Forms on JEE oder AEM Forms on OSGi.
+Wenn Sie die neueste Software für Ihre AEM 6.5 Forms on JEE-Umgebung installieren oder verwenden möchten, empfiehlt Adobe die Verwendung des vollständigen Installationsprogramms für AEM 6.5.18.0 Forms on JEE. Die vollständige Liste der neu hinzugefügten und veralteten Software finden Sie in der Dokumentation zu AEM Forms on JEE oder AEM Forms on OSGi.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -179,7 +179,7 @@ Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Soft
    * Wenn ein Benutzer versucht, eine benutzerdefinierte Funktion aufzurufen, ohne ein Feld zu ändern, z. B. den Wert eines anderen Felds festzulegen, schlägt dies fehl. (FORMS-9921)
    * Beim Arbeiten mit der benutzerdefinierten Fehlerfunktion für den Regeleditor in einem adaptiven Formular treten die folgenden Fehler auf:
       * Wenn ein Benutzer versucht, @param zu verwenden{boolean} mit einer -Funktion verwenden, lässt der Regeleditor nicht zu, dass boolesche Werte an eine Funktion übergeben werden.
-      * Wenn ein Benutzer versucht, @param zu verwenden{string} mit einer -Funktion verwenden, kann der Regeleditor die optionalen Werte nicht übergeben und gibt eine Warnung vor unvollständigen Regeln. (FORMS-9816, FORMS-9815)
+      * Wenn ein Benutzer versucht, @param zu verwenden{string} mit einer -Funktion verwenden, kann der Regeleditor die optionalen Werte nicht übergeben und warnt vor unvollständigen Regeln. (FORMS-9816, FORMS-9815)
    * Die Formularbenutzergruppe kann den Regeleditor in einem adaptiven Formular nicht zweimal aufrufen. (FORMS-9051)
    * Wenn ein Benutzer in einem Visual Editor ein Formularobjekt auswählt, wird das gesamte Feldinstanzobjekt an die benutzerdefinierte Funktion übergeben und nicht nur an den Wert des Felds. (FORMS-10015)
    * Wenn ein Benutzer ein auf einer Kernkomponente basierendes adaptives Formular erstellt und eine Texteingabekomponente hinzufügt, `Is Empty` und `Is Not Empty` im Regeleditor nicht funktionieren. (FORMS-10098)
@@ -187,7 +187,7 @@ Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Soft
    * Wenn ein Benutzer versucht, ein adaptives Formular mit einem komplexen JSON-Schema zu erstellen, schlägt dies fehl. Der Fehler tritt wie folgt auf:
      `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`. (FORMS-9639)
    * Wenn ein Benutzer in einem adaptiven Formular das Kontrollkästchen &quot;Ich stimme den Nutzungsbedingungen zu&quot;deaktiviert, wird es erneut aktiviert, wenn der Benutzer nach unten blättert. (FORMS-9458)
-   * Wenn ein Benutzer ein adaptives Formular auf einem Android™-Gerät mit Google Chrome/Firefox öffnet und die maximal zulässigen Zeichen in ein Textfeld eingibt, kann der Wert im Textfeld nicht gelöscht werden. (FORMS-9354)
+   * Wenn ein Benutzer mithilfe von Google Chrome/Firefox ein adaptives Formular auf einem Android™-Gerät öffnet und die maximal zulässigen Zeichen in ein Textfeld eingibt, kann der Wert im Textfeld nicht gelöscht werden. (FORMS-9354)
    * Wenn die Beschriftung des Kontrollkästchens Sonderzeichen wie &#39;,&#39;, &#39;/&#39; oder &#39;.&#39; enthält, wird durch Klicken auf den Text/die Beschriftung das entsprechende Kontrollkästchen nicht aktiviert. (FORMS-9313)
    * Wenn ein Benutzer versucht, die Komponente &quot;Allgemeine Geschäftsbedingungen&quot;zu validieren, kann er nicht überprüfen, ob die Komponente nicht im Fokus ist, während die andere Komponente validiert wird. (FORMS-8725, FORMS-8913)
    * Wenn ein adaptives Formular nach der Aktualisierung auf AEM 6.5.16.0 Service Pack neu geladen wird, schlägt der Abruf der Dateianlagen fehl. (FORMS-8906)
@@ -203,7 +203,7 @@ Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Soft
       * Wenn sich ein Benutzer im Signaturdialogfeld mit einer Pinsel oder Tastatur anmeldet, wird das Dialogfeld durch Drücken der Eingabetaste nicht geschlossen.
       * Der Zugriff auf das Dialogfeld zur Bestätigung einer klaren Signatur ist über eine Tastatur nicht möglich.
       * Die Sprachausgabe kann die in einem Dialogfeld eingegebenen Informationen nicht lesen.
-      * Es ist nicht möglich, die Signatur ohne die Maus zu löschen.  (FORMS-9317)
+      * Es ist nicht möglich, die Signatur ohne die Maus zu löschen. (FORMS-9317)
    * Wenn ein Benutzer ein adaptives Formular sendet, kann die Bildschirmlesehilfe keine Fehlermeldungen für die Pflichtfelder lesen. (FORMS-9316)
    * Wenn eine Bildschirmlesehilfe ein HTML-Formular liest, tritt beim Lesen des Textes mit Kerning (Leerzeichen) das Problem auf. (FORMS-9258)
    * In einem adaptiven Formular werden die mit dem Text verknüpften Verweise/Fußnoten nicht mit der Bildschirmlesehilfe aufgerufen. (FORMS-8920)
@@ -235,7 +235,7 @@ Wenn Sie eine Neuinstallation durchführen oder die Verwendung der neuesten Soft
 #### Platform{#foundation-platform-6518}
 
 * Nach der Installation eines Vanilla-Experience Managers, Service Pack 17, treten Fehler im `stderr.log`. Vanilla-Installationen sollten keine Fehler erhalten. (CQ-4353637)
-* Schaltfläche &quot;Erstellen&quot;im Bildschirm &quot;Tagging&quot;unter Berücksichtigung von ACL (Zugriffssteuerungsliste). (NPR-40973)
+* Die Schaltfläche Erstellen im Bildschirm Tagging berücksichtigt nicht ACL (Access Control List). (NPR-40973)
 * Der Cache-Knoten von ContextHub auf dem Experience Manager kann weder erstellt noch darauf zugegriffen werden. (NPR-40515)
 
 #### Replikation{#foundation-replication-6518}
@@ -369,7 +369,24 @@ Siehe [Eingestellte und entfernte Funktionen](/help/release-notes/deprecated-rem
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* Im Zusammenhang mit Oak From Service Pack 13 und höher wird jetzt das folgende Fehlerprotokoll angezeigt, das sich auf den Persistenzcache auswirkt:
+* **Seitenveröffentlichung funktioniert nicht im Seiteneditor nach dem Upgrade auf Service Pack 18 (6.5.18.0)**
+
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Nach dem Upgrade einer Instanz von AEM 6.5.0.0—6.5.17.0 auf AEM 6.5.18.0, wenn Sie auf **[!UICONTROL Seite veröffentlichen]** innerhalb des Seiten-Editors werden Sie zu einer URL umgeleitet, die nicht vorhanden ist.
+
+  Um dieses Problem zu umgehen, führen Sie einen der folgenden Schritte aus:
+
+   * Entfernen Sie die folgende Eigenschaft &quot;path&quot;.
+
+     `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/publish/granite:data`
+
+   * Fügen Sie die richtige URL direkt in den Browser ein.
+
+     `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html`
+
+
+
+* **Im Zusammenhang mit Oak**
+Ab Service Pack 13 wird das folgende Fehlerprotokoll angezeigt, das sich auf den Persistenzcache auswirkt:
 
   ```shell
   org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
@@ -439,7 +456,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 #### Unterstützte Plattformen
 
 * JDK-Versionen über 1.8.0_281 werden für WebLogic JEE-Server nicht unterstützt. (FORMS-8498, CQDOC-20383)
-* Da [!DNL Microsoft®® Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss®® EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft®® Windows Server 2019] keine schlüsselfertigen Installationen für [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
+* Da [!DNL Microsoft® Windows Server 2019] [!DNL MySQL 5.7] und [!DNL JBoss® EAP 7.1] nicht unterstützt, unterstützt [!DNL Microsoft® Windows Server 2019] keine schlüsselfertigen Installationen für [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * JDK 11.0.20 wird zur Installation des AEM Forms on JEE-Installationsprogramms nicht unterstützt. Nur JDK 11.0.19 oder frühere Versionen werden zur Installation des AEM Forms on JEE-Installationsprogramms unterstützt. (FORMS-10659)
 
 #### Installation
@@ -460,7 +477,7 @@ Suchen Sie zum Beheben des Problems die `<AEM_Forms_Installation_dir>\jboss\bin\
 * Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, interaktive Kommunikationsbriefe zu bearbeiten. (FORMS-10578) Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
    1. Herunterladen [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) von SD-Link aus.
-   1. Extrahieren Sie die Hotfix-Archivdatei, um ein Experience Manager-Paket (.zip) und Bundle (.jar) abzurufen.
+   1. Extrahieren Sie die Hotfix-Archivdatei, damit Sie ein Experience Manager-Paket (.zip) und Bundle (.jar)-Dateien abrufen können.
    1. Laden Sie das Paket (.zip) über den Package Manager hoch und installieren Sie es.
    1. Öffnen Sie die Konfigurations-Manager-Pakete. `https://server:host/system/console/bundles`, laden Sie das Bundle hoch und installieren Sie es (.jar).
 
