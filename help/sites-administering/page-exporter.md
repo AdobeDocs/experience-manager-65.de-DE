@@ -1,29 +1,30 @@
 ---
 title: Das Seiten-Export-Tool
-description: Erfahren Sie, wie Sie den AEM Page Exporter verwenden.
+description: Erfahren Sie, wie Sie den Adobe Experience Manager (AEM) Page Exporter verwenden.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
 workflow-type: tm+mt
-source-wordcount: '1063'
-ht-degree: 93%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
 # Das Seiten-Export-Tool{#the-page-exporter}
 
-AEM ermöglicht den Export einer Seite als vollständige Webseite mit Bildern, `.js` und `.css` -Dateien.
+Mit Adobe Experience Manager (AEM) können Sie eine Seite als vollständige Webseite mit Bildern exportieren. `.js`, und `.css` -Dateien.
 
-Nach der Konfiguration fordern Sie einen Seitenexport über Ihren Browser an, indem Sie in der URL `html` durch `export.zip`ersetzen. Dadurch wird eine Archivdatei (ZIP) generiert, die die gerenderte Seite im HTML-Format zusammen mit den referenzierten Assets enthält. Alle in der Seite enthaltenen Pfade (z. B. Pfade zu Grafiken) werden umgeschrieben und verweisen entweder auf die im Archiv enthaltenen Dateien oder auf die Ressourcen auf dem Server. Die Archivdatei (ZIP) kann dann von Ihrem Browser heruntergeladen werden.
+Wenn Sie einen Seitenexport über Ihren Browser anfordern, ersetzen Sie `html` mit `export.zip` in der URL. Dadurch wird eine Archivdatei (ZIP) generiert, die die gerenderte Seite im HTML-Format zusammen mit den referenzierten Assets enthält. Alle in der Seite enthaltenen Pfade (z. B. Pfade zu Grafiken) werden umgeschrieben und verweisen entweder auf die im Archiv enthaltenen Dateien oder auf die Ressourcen auf dem Server. Die Archivdatei (ZIP) kann dann von Ihrem Browser heruntergeladen werden.
 
 >[!NOTE]
 >
->Abhängig von Ihrem Browser und den Einstellungen wird der Download wie folgt ausgeführt:
+>Abhängig von Ihrem Browser und den Einstellungen erfolgt der Download wie folgt:
+>
 >* eine Archivdatei (`<page-name>.export.zip`)
 >* ein Ordner (`<page-name>`); die Archivdatei wurde effektiv bereits erweitert
 
 ## Exportieren einer Seite {#exporting-a-page}
 
-Die folgenden Schritte beschreiben, wie Sie eine Seite exportieren können. Vorausgesetzt wird, dass für Ihre Website eine Vorlage für die Exportkonfiguration vorliegt: Eine Exportvorlage legt fest, wie eine Seite exportiert wird, und gilt speziell für Ihre Website. Informationen zum Erstellen einer Exportvorlage finden Sie im Abschnitt [Erstellen einer Seiten-Export-Tool-Konfiguration für Ihre Website](#creating-a-page-exporter-configuration-for-your-site).
+Die folgenden Schritte beschreiben, wie Sie eine Seite exportieren können. Vorausgesetzt wird, dass für Ihre Website eine Vorlage für die Exportkonfiguration vorliegt: Eine Exportvorlage definiert die Art und Weise, wie eine Seite exportiert wird, und ist spezifisch für Ihre Site. Informationen zum Erstellen einer Exportvorlage finden Sie unter [Erstellen einer Seiten-Exporter-Konfiguration für Ihre Site](#creating-a-page-exporter-configuration-for-your-site).
 
 So exportieren Sie eine Seite:
 
@@ -43,26 +44,26 @@ Wählen Sie die erforderliche Vorlage für Ihre Website aus und bestätigen Sie 
    Beispiel:
    * localhost:4502/content/we-retail/language-masters/de.html
 
-   Der Zugriff erfolgt über:
+   Zugriff über:
    * localhost:4502/content/we-retail/language-masters/de.export.zip
 
 1. Laden Sie die Archivdatei auf Ihr Dateisystem herunter.
 
-1. Entpacken Sie ggfs. die Datei in Ihrem Dateisystem. Nach dem Erweitern wird ein Ordner mit demselben Namen wie die ausgewählte Seite angezeigt. Dieser Ordner enthält:
+1. Entpacken Sie ggfs. die Datei in Ihrem Dateisystem. Wenn die Erweiterung erweitert wird, gibt es einen Ordner mit demselben Namen wie die ausgewählte Seite. Dieser Ordner enthält:
 
-   * den Unterordner `content`, der das Stammverzeichnis einer Reihe von Unterordnern ist, die den Pfad zur Seite im Repository widerspiegeln
+   * den Unterordner `content`, der Stamm einer Reihe von Unterordnern ist, die den Pfad zur Seite im Repository darstellen
 
       * innerhalb dieser Struktur befindet sich die HTML-Datei für die ausgewählte Seite (`<page-name>.html`)
 
-   * sonstige Ressourcen (`.js`-Dateien, `.css`-Dateien, Bilder usw.) befinden sich gemäß den Einstellungen in der Exportvorlage
+   * sonstige Ressourcen (`.js` Dateien, `.css` -Dateien, -Bilder usw.) entsprechend den Einstellungen in der Exportvorlage
 
-1. Öffnen Sie die HTML-Datei der Seite (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) im Browser, um das Rendering zu überprüfen.
+1. Öffnen Sie die HTML-Datei der Seite (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`), damit Sie das Rendering überprüfen können.
 
 ## Erstellen einer Seiten-Export-Tool-Konfiguration für Ihre Website {#creating-a-page-exporter-configuration-for-your-site}
 
-Das Seiten-Export-Tool basiert auf dem [Inhaltssynchronisierungs-Framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html). Die Konfigurationen, die im Dialogfeld **Seiteneigenschaften** verfügbar sind, sind Exportvorlagen, die die erforderlichen Abhängigkeiten für eine Seite definieren.
+Das Seiten-Export-Tool basiert auf dem [Inhaltssynchronisierungs-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Die Konfigurationen, die im Dialogfeld **Seiteneigenschaften** verfügbar sind, sind Exportvorlagen, die die erforderlichen Abhängigkeiten für eine Seite definieren.
 
-Wenn ein Seitenexport ausgelöst wird, wird auf die Exportvorlage verwiesen und der Seitenpfad und der Designpfad werden dynamisch angewendet. Anschließend wird die ZIP-Datei erstellt, indem die Standardfunktion zur Inhaltssynchronisierung genutzt wird.
+Wenn ein Seitenexport ausgelöst wird, wird auf die Exportvorlage verwiesen. Sowohl der Seitenpfad als auch der Designpfad werden dynamisch angewendet. Anschließend wird die ZIP-Datei erstellt, indem die Standardfunktion zur Inhaltssynchronisierung genutzt wird.
 
 Eine vorkonfigurierte AEM-Installation enthält unter `/etc/contentsync/templates/default` eine Standardvorlage.
 
@@ -73,7 +74,7 @@ Eine vorkonfigurierte AEM-Installation enthält unter `/etc/contentsync/template
 * Um die Knotenstruktur der Vorlage in Ihrem Browser im JSON-Format anzuzeigen, fragen Sie die folgenden URL an:
   `http://localhost:4502/etc/contentsync/templates/default.json`
 
-Die einfachste Methode zum Erstellen einer neuen Seiten-Export-Tool-Vorlage besteht darin, Folgendes zu tun:
+Die einfachste Methode zum Erstellen einer Vorlage für den Seiten-Exporter besteht darin,
 
 * kopieren Sie die `default`-Vorlage,
 
@@ -93,18 +94,18 @@ So erstellen Sie eine völlig neue Vorlage:
 
 ## Aktivieren einer Seiten-Export-Tool-Vorlage für Ihre Seiten {#activating-a-page-exporter-configuration-for-your-pages}
 
-Nachdem die Vorlage konfiguriert wurde, müssen Sie sie verfügbar machen:
+Wenn Ihre Vorlage konfiguriert ist, stellen Sie sie zur Verfügung:
 
-1. Gehen Sie in CRXDE zur gewünschten Seite in der `/content`-Verzweigung. Dies kann eine einzelne Seite oder die Stammseite einer Unterstruktur sein.
+1. Gehen Sie in CRXDE zur gewünschten Seite in der `/content`-Verzweigung. Dies kann eine einzelne Seite oder die Stammseite eines Unterbaums sein.
 
-1. Erstellen Sie im `jcr:content`-Knoten der Seite die Eigenschaft:
+1. Im `jcr:content` -Knoten der Seite erstellen Sie die Eigenschaft:
    * `Name`: `cq:exportTemplate`
    * `Type`: `String`
    * `Value`: Pfad zur Vorlage; Beispiel: `/etc/contentsync/templates/mysite`
 
 ### Konfigurationsknoten für das Seiten-Export-Tool {#page-exporter-configuration-nodes}
 
-Die Vorlage besteht aus einer Knotenstruktur, da sie das [Content Sync-Framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html) verwendet.  Jeder Knoten verfügt über die Eigenschaft `type`, die eine spezifische Aktion beim Erstellungsprozess der ZIP-Datei definiert.
+Die Vorlage besteht aus einer Knotenstruktur, da sie das [Content Sync-Framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html) verwendet. Jeder Knoten verfügt über die Eigenschaft `type`, die eine spezifische Aktion beim Erstellungsprozess der ZIP-Datei definiert.
 
 <!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
 -->
@@ -114,10 +115,10 @@ Mit den folgenden Knoten können Sie eine Export-Vorlage erstellen:
 * `page`
 Mit dem Knoten page wird die HTML-Seite in die ZIP-Datei kopiert. Er weist die folgenden Eigenschaften auf:
 
-   * Ist ein obligatorischer Knoten.
-   * Er befindet sich unterhalb von `/etc/contentsync/templates/<mysite>`.
-   * Er wird mit der Eigenschaft `Name` definiert, die auf `page` gesetzt wird.
-   * Der Knotentyp ist `nt:unstructured`
+   * Ein obligatorischer Knoten.
+   * Unten finden `/etc/contentsync/templates/<mysite>`.
+   * Definiert mit der -Eigenschaft `Name`auf `page`.
+   * Knotentyp ist `nt:unstructured`
 
   Der Knoten `page` hat folgende Eigenschaften:
 
@@ -135,10 +136,10 @@ Der Knoten rewrite definiert, wie die Links in der exportierten Seite neu geschr
 * `design`
 Mit dem Knoten design wird das für die exportierte Seite genutzte Design kopiert. Er weist die folgenden Eigenschaften auf:
 
-   * Er ist optional.
-   * Er befindet sich unterhalb von `/etc/contentsync/templates/<mysite>`.
-   * Er wird mit der Eigenschaft `Name` definiert, die auf `design` gesetzt wird.
-   * Der Knotentyp ist `nt:unstructured`.
+   * Optional.
+   * Unten finden `/etc/contentsync/templates/<mysite>`.
+   * Definiert mit der -Eigenschaft `Name` auf `design`.
+   * Knotentyp ist `nt:unstructured`.
 
   Der Knoten `design` hat folgende Eigenschaften:
 
@@ -149,10 +150,10 @@ Mit dem Knoten design wird das für die exportierte Seite genutzte Design kopier
 * `generic`
 Ein generischer Knoten wird verwendet, um Ressourcen wie die `.js`- oder `.css`-Dateien von Client-Bibliotheken in die Zip-Datei zu kopieren. Er weist die folgenden Eigenschaften auf:
 
-   * Er ist optional.
-   * Er befindet sich unterhalb von `/etc/contentsync/templates/<mysite>`.
-   * Er weist keinen bestimmten Namen auf.
-   * Der Knotentyp ist `nt:unstructured`.
+   * Optional.
+   * Unten finden `/etc/contentsync/templates/<mysite>`.
+   * Kein spezifischer Name.
+   * Knotentyp ist `nt:unstructured`.
    * Er hat eine `type`-Eigenschaft und mit `type` verwandte Eigenschaften. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
   Beispielsweise kopiert der folgende Konfigurationsknoten die `mysite.clientlibs.js`-Dateien in die ZIP-Datei:
@@ -174,14 +175,14 @@ Benutzerdefinierte Konfigurationen sind ebenfalls möglich.
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-Um bestimmte Anforderungen zu erfüllen, müssen Sie möglicherweise einen [benutzerspezifischer Update-Handler](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/handler/package-summary.html) implementieren.
+Um bestimmte Anforderungen zu erfüllen, implementieren Sie eine [benutzerspezifischer Update-Handler](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
 <!-- To meet some specific requirements, you may need to implement a custom `type` property: to do so, refer to the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Programmgesteuertes Exportieren einer Seite {#programmatically-exporting-a-page}
 
-Um eine Seite programmgesteuert zu exportieren, können Sie die [PageExporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGi-Dienst. Mit diesem Dienst können Sie:
+Um eine Seite programmgesteuert zu exportieren, können Sie die [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGi-Dienst. Mit diesem Dienst können Sie:
 
 * Exportieren Sie eine Seite und schreiben Sie in die HTTP-Servlet-Antwort.
 * Exportieren Sie eine Seite und speichern Sie die ZIP-Datei an einem bestimmten Speicherort.
