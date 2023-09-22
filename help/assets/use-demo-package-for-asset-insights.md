@@ -5,10 +5,10 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 13947513-da76-43e1-ae01-abd24a59752a
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '160'
-ht-degree: 100%
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+workflow-type: tm+mt
+source-wordcount: '162'
+ht-degree: 61%
 
 ---
 
@@ -19,7 +19,7 @@ Mithilfe des Demopakets können Sie Adobe Assets Insights aktivieren, um Daten a
 ## [!DNL Use Experience Manager Assets] Insights mit Beispiel-Webseite  {#using-aem-assets-insights-with-sample-web-page}
 
 1. Konfigurieren Sie Assets Insights anhand der Anleitungen unter [Konfigurieren von Assets Insights](configure-asset-insights.md).
-1. Laden Sie das Assets-Beispielpaket unten herunter und installieren Sie das Paket von CRXDE Package Manager.
+1. Laden Sie das Asset-Beispielpaket unten herunter und installieren Sie das Paket aus dem CRXDE Package Manager.
 
 [Datei laden](assets/insightsdemo.zip)
 
@@ -27,11 +27,11 @@ Mithilfe des Demopakets können Sie Adobe Assets Insights aktivieren, um Daten a
 
 [Datei laden](assets/demosite.zip)
 
-1. Klicken Sie auf die Webseite, um sie im Webbrowser zu öffnen.
+1. Klicken Sie auf die Webseite, die im Webbrowser geöffnet wird.
 
    >[!CAUTION]
    >
-   >Die Webseite ist für das Laden von Assets vom localhost-Server konfiguriert. Wenn Ihr Server an einer anderen Stelle ausgeführt wird, ändern Sie die Serveradresse von „localhost“ in die Serveradresse im HTML-Inhalt der Webseite.
+   >Die Webseite ist so konfiguriert, dass Assets vom localhost-Server geladen werden. Falls Ihr Server an einer anderen Stelle ausgeführt wird, ändern Sie im HTML-Inhalt der Webseite die Serveradresse von localhost in die Serveradresse.
 
    >[!NOTE]
    >

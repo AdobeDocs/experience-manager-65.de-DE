@@ -1,25 +1,21 @@
 ---
 title: Tutorials
-seo-title: Tutorials
-description: Beispiele zur Unterstützung beim Lernen und Arbeiten mit dem Social Component Framework (SCF) von AEM Communities
-seo-description: Examples to help in learning and working with AEM Communities social component framework (SCF)
-uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
+description: Beispiele zur Unterstützung beim Lernen und Arbeiten mit Adobe Experience Manager (AEM) Communities Social Component Framework (SCF)
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 exl-id: 061d3b1b-7ceb-4e57-8183-2062a76173f1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '253'
-ht-degree: 7%
+source-wordcount: '259'
+ht-degree: 4%
 
 ---
 
 # Tutorials {#tutorials}
 
-Dies sind Beispiele für das Lernen und die Arbeit mit AEM 6.1 Communities [Social Component Framework (SCF)](scf.md).
+Dies sind Beispiele für das Lernen und die Arbeit mit Adobe Experience Manager (AEM 6.1 Communities) [Social Component Framework (SCF)](scf.md).
 
 ## Clientseitige Anpassung {#client-side-customization}
 
@@ -29,7 +25,7 @@ Siehe auch:
 
 * [Handbuch zu Community-Komponenten](components-guide.md)
 
-* [Überlagerungskommentkomponente](overlay-comments.md)
+* [Komponente &quot;Overlay Comments&quot;](overlay-comments.md)
 
 * [Erweitern der Kommentarkomponente](extend-comments.md)
 
@@ -37,7 +33,7 @@ Siehe auch:
 
 Siehe auch [Serverseitige SCF-Anpassung](server-customize.md).
 
-Beispielcode ist im Abschnitt [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repository:
+Der Beispielcode ist im Abschnitt [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) repository:
 
 * [Beispiel für SCF-Komponenten anpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
@@ -49,9 +45,9 @@ Beispielcode ist im Abschnitt [Adobe Marketing Cloud GitHub](https://github.com/
 
 * [AEM Communities Todo MVC](https://github.com/Adobe-Marketing-Cloud/aem-communities-todomvc-sample)
 
-   ToDo MVC demonstriert, wie eine SCF+SRP-Komponente von Grund auf neu entwickelt wird.
+  ToDo MVC demonstriert, wie eine SCF+SRP-Komponente von Grund auf neu entwickelt wird.
 
-* [Einstieg in AEM Communities](getting-started.md)
+* [Erste Schritte mit AEM Communities](getting-started.md)
 
 * [Einrichten von MongoDB für Demo](demo-mongo.md)
 

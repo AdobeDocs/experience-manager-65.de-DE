@@ -1,31 +1,27 @@
 ---
 title: Generische Schritte zur Anpassung von AEM Forms Workspace
-seo-title: Generic steps for AEM Forms workspace customization
-description: Erste Schritte zur Anpassung der AEM Forms Workspace-Benutzeroberfläche.
-seo-description: How to get started customizing AEM Forms workspace user interface.
-uuid: da6310b4-1c58-468d-85c6-975fd2c141f9
+description: Erste Schritte zur Anpassung der Benutzeroberfläche von Adobe Experience Manager Forms Workspace.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 exl-id: 45e50b47-1b36-4937-9e1a-cc7bfb953861
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '300'
-ht-degree: 100%
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 68%
 
 ---
 
 # Generische Schritte zur Anpassung von AEM Forms Workspace {#generic-steps-for-aem-forms-workspace-customization}
 
-Für jede Anpassung gelten die folgenden generischen Schritte:
+Die allgemeinen Schritte zur Durchführung von Anpassungen sind:
 
 1. Melden Sie sich bei CRXDE Lite an, indem Sie auf `https://'[server]:[port]'/lc/crx/de/index.jsp` zugreifen.
-1. Erstellen Sie einen `sling:Folder`-Ordner mit dem Namen `ws` unter `/apps`, falls er noch nicht existiert. Um einen `sling:Folder`-Ordner zu erstellen, klicken Sie mit der rechten Maustaste auf den Ordner `apps` und wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Knoten erstellen]**. Geben Sie den Namen als `ws` an, wählen Sie den Typ `sling:Folder` und klicken Sie auf **[!UICONTROL OK]**. Klicken Sie auf **[!UICONTROL Alle speichern]**.
+1. Erstellen Sie eine `sling:Folder` Ordner mit dem Namen `ws` at `/apps`, wenn sie nicht vorhanden ist. Um einen `sling:Folder`-Ordner zu erstellen, klicken Sie mit der rechten Maustaste auf den Ordner `apps` und wählen Sie **[!UICONTROL Erstellen]** > **[!UICONTROL Knoten erstellen]**. Geben Sie den Namen als `ws`Wählen Sie Typ aus als `sling:Folder`und klicken Sie auf **[!UICONTROL OK]**. Klicken Sie auf **[!UICONTROL Alle speichern]**.
 1. Wechseln Sie zu `/apps/ws` und navigieren Sie zur Registerkarte **[!UICONTROL Zugriffssteuerung]**.
-1. Wählen Sie die Option **[!UICONTROL Repository]**. Klicken Sie in der Liste **[!UICONTROL Zugriffssteuerung]** auf **[!UICONTROL +]**, um einen neuen Eintrag hinzuzufügen. Klicken Sie erneut auf **[!UICONTROL +]**.
+1. Wählen Sie die Option **[!UICONTROL Repository]**. Im **[!UICONTROL Zugriffssteuerung]** Liste, klicken Sie **[!UICONTROL +]** , um einen Eintrag hinzuzufügen. Klicken Sie erneut auf **[!UICONTROL +]**.
 1. Suchen Sie den Prinzipal **PERM_WORKSPACE_USER** und wählen Sie ihn aus.
 
    ![Wählen Sie PERM_WORKSPACE_USER als Teil von allgemeinen Schritten, um HTML Workspace anzupassen](assets/perm_workspace_user.png)
@@ -42,9 +38,9 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 
 1. Führen Sie die folgenden Schritte für CSS-Anpassungen aus:
 
-   1. Navigieren Sie zum Ordner `/apps/ws` und erstellen Sie einen neuen Ordner mit dem Namen `css`.
+   1. Navigieren Sie zum `/apps/ws` Ordner erstellen und einen Ordner mit dem Namen `css`.
 
-   1. Erstellen Sie im Ordner `css` eine neue Datei mit dem Namen `newStyle.css`.
+   1. Im `css` Ordner erstellen, eine Datei mit dem Namen `newStyle.css`.
 
    1. Öffnen Sie `/apps/ws/html`.jsp und ändern Sie von
 
@@ -65,7 +61,7 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
    >
    >Platzieren Sie den Eintrag für die benutzerdefinierte CSS-Datei hinter demjenigen für die Datei „style.css“, wie oben gezeigt.
 
-1. Ändern Sie in der Datei „apps/ws/html.jsp“ von
+1. Ändern Sie in der Datei /apps/ws/html.jsp von
 
    ```jsp
    <script data-main="js/main" src="js/libs/require/require.js"></script>
@@ -95,6 +91,6 @@ Für jede Anpassung gelten die folgenden generischen Schritte:
 
    1. Kopieren Sie /libs/ws/js/registry.js nach `/apps/ws/js/registry.js`.
 
-1. Klicken Sie auf **[!UICONTROL Alle speichern]**, löschen Sie den Cache und aktualisieren Sie AEM Forms Workspace.
+1. Klicks **[!UICONTROL Alle speichern]**, leeren Sie den Cache und aktualisieren Sie den AEM Forms-Arbeitsbereich.
 
    Greifen Sie auf die URL `https://'[server]:[port]'/lc/ws` zu und melden Sie sich mit Administrator/Kennwort-Anmeldeinformationen an. Der Browser leitet Sie zu `https://'[server]:[port]'/lc/apps/ws/index.html` weiter.

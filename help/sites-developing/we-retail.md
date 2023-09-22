@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '749'
-ht-degree: 39%
+source-wordcount: '759'
+ht-degree: 38%
 
 ---
 
@@ -19,9 +19,9 @@ ht-degree: 39%
 
 We.Retail ist eine Referenzimplementierung und Beispielinhalte, die die empfohlene Methode zur Einrichtung einer Online-Präsenz mit Adobe Experience Manager veranschaulicht.
 
-We.Retail verwendet die neuesten AEM Technologien wie HTL, responsive Layouts, bearbeitbare Vorlagen, Kernkomponenten und vieles mehr.
+We.Retail verwendet die neuesten Adobe Experience Manager (AEM)-Technologien wie HTL, responsive Layouts, bearbeitbare Vorlagen, Kernkomponenten und vieles mehr.
 
-Obwohl es eine Einzelhandelsbranche veranschaulicht, kann die Einrichtung der Site auf jede Vertikale angewendet werden, und nur die Produktkatalog- und Warenkorbfunktionen sind für den Einzelhandel spezifisch.
+Obwohl es eine Einzelhandelsbranche veranschaulicht, kann die Site auf jede beliebige Vertikale angewendet werden, und nur die Produktkatalog- und Warenkorbfunktionen sind für den Einzelhandel spezifisch.
 
 ## Funktionen {#features}
 
@@ -30,8 +30,8 @@ Als AEM standardmäßige Referenzimplementierung zeigt We.Retail einige der leis
 | **Funktion** | **Beschreibung** | **Interessiert?** |
 |---|---|---|
 | [Globalisierte Site-Struktur](/help/sites-administering/tc-bp.md) | We.Retail enthält Sprach-Master, die live in länderspezifische Sites kopiert werden. | [Jetzt testen!](/help/sites-developing/we-retail-globalized-site-structure.md) |
-| [Responsives Layout](/help/sites-authoring/responsive-layout.md) | Alle Seiten verfügen über ein responsives Layout, um sich dynamisch an die Bildschirm- und Gerätegröße anzupassen. | [Jetzt testen!](/help/sites-developing/we-retail-responsive-layout.md) |
-| [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md) | Alle Seiten basieren auf bearbeitbaren Vorlagen, sodass Nicht-Entwickler die Vorlagen anpassen und anpassen können. | [Jetzt testen!](/help/sites-developing/we-retail-editable-templates.md) |
+| [Responsives Layout](/help/sites-authoring/responsive-layout.md) | Alle Seiten verfügen über ein responsives Layout, das sich dynamisch an die Bildschirm- und Gerätegröße anpasst. | [Jetzt testen!](/help/sites-developing/we-retail-responsive-layout.md) |
+| [Bearbeitbare Vorlagen](/help/sites-developing/page-templates-editable.md) | Alle Seiten basieren auf bearbeitbaren Vorlagen, sodass Nicht-Entwickler die Vorlagen anpassen können. | [Jetzt testen!](/help/sites-developing/we-retail-editable-templates.md) |
 | [HTML-Vorlagensprache](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html?lang=de) | Alle Komponenten basieren auf HTL |  |
 | [eCommerce-Funktionen](/help/commerce/cif-classic/developing/ecommerce.md) | Produktkatalog |  |
 | [Communities-Sites](/help/communities/overview.md) | Besucher können an Community-Diskussionen teilnehmen, Blogs lesen und vieles mehr |  |
@@ -45,7 +45,7 @@ We.Retail wird als AEM Beispielinhalt bereitgestellt. Zur Verwendung einfach [AE
 
 >[!CAUTION]
 >
->Installieren Sie We.Retail nicht auf Produktionsinstanzen. Produktionsinstanzen sollten in gestartet werden `nosamplecontent` [Ausführungsmodus](/help/sites-deploying/configure-runmodes.md).
+>Installieren Sie We.Retail nicht auf Produktionsinstanzen. Produktionsinstanzen sollten in `nosamplecontent` [Ausführungsmodus](/help/sites-deploying/configure-runmodes.md).
 
 >[!CAUTION]
 >
@@ -57,7 +57,7 @@ Obwohl We.Retail mit dem der AEM-Version bereitgestellt wird, werden die Inhalte
 
 ### Erste Schritte {#first-steps}
 
-1. Nachdem AEM gestartet wurde (und/oder We.Retail installiert ist), wird die Site **We.Retail** ist im Abschnitt [Sites-Konsole](/help/sites-authoring/basic-handling.md#global-navigation).
+1. Nachdem AEM gestartet wurde (und/oder We.Retail installiert ist), wird die Site **We.Retail** finden Sie im Abschnitt [Sites-Konsole](/help/sites-authoring/basic-handling.md#global-navigation).
 1. Die folgende Seite kann beispielsweise geöffnet werden und sollte so aussehen, wie sie in der [Anhang](#appendix) unten:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
@@ -70,7 +70,7 @@ We.Retail ist technisch robuster und nutzt die neueste AEM-Technologie, um flexi
 
 ### Funktionsvergleich {#feature-comparison}
 
-Die folgende Tabelle bietet einen Überblick über die wichtigsten Funktionen, die in We.Retail im Vergleich zu Geometrixx verfügbar sind.
+Die folgende Tabelle gibt einen Überblick über die wichtigsten Funktionen, die in We.Retail im Vergleich zu Geometrixx verfügbar sind.
 
 * **Verfügbar** bedeutet, dass im Beispielinhalt Beispiele für die Funktion gefunden werden.
 * **Nicht verfügbar** bedeutet, dass Beispiele für die Funktion nicht im Beispielinhalt verfügbar sind, aber nicht, dass die Funktion selbst nicht verfügbar ist.
@@ -87,7 +87,7 @@ Die folgende Tabelle bietet einen Überblick über die wichtigsten Funktionen, d
 | Screens | Verfügbar | Nicht verfügbar |
 | Mobilgerät | Nicht verfügbar | Verfügbar |
 | Manuskripte | Nicht verfügbar | Verfügbar |
-| Karussell, Download, Diagrammkomponenten | Nicht verfügbar | Verfügbar |
+| Karussell-Viewer, Downloads und Diagrammkomponenten | Nicht verfügbar | Verfügbar |
 | Spalten-Steuerung | Ersetzt durch Layout-Container | Verfügbar |
 | Formulare | Nicht verfügbar | Verfügbar |
 | Campaign | Keine E-Mail-Beispiele | Verfügbar |
@@ -102,7 +102,7 @@ We.Retail wurde als Open-Source-Projekt veröffentlicht und die neueste Version 
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub.
+Den Code dieser Seite finden Sie auf GitHub..
 
 * [Öffnen des Projekts aem-sample-we-retail auf GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
 * Laden Sie das Projekt als [ZIP-Datei](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master) herunter.

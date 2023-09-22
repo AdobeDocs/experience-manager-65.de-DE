@@ -1,21 +1,17 @@
 ---
 title: AEM Forms für OSGi-Gruppen und -Berechtigungen
-seo-title: AEM Forms on OSGi Groups and Privileges
-description: Weisen Sie den Gruppen Benutzer zu, um AEM Forms auf OSGi zu verwalten
-seo-description: Assign users to the groups to manage AEM Forms on OSGi
-uuid: f269a206-356d-4cee-b449-05c5da87121a
+description: Benutzer Gruppen zuweisen, um Adobe Experience Manager (AEM) Forms auf OSGi zu verwalten
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: Configuration
-discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '282'
-ht-degree: 53%
+source-wordcount: '293'
+ht-degree: 32%
 
 ---
 
@@ -23,12 +19,12 @@ ht-degree: 53%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
-Sie können [Gruppen erstellen](/help/sites-administering/user-group-ac-admin.md#group-administration) und Richtlinien zuweisen und [Benutzer](/help/sites-administering/user-group-ac-admin.md#user-administration) zu den Gruppen in AEM. Diese Richtlinien steuern Berechtigungen der Benutzer, die Teil der Gruppe sind.
+Sie können [Gruppen erstellen](/help/sites-administering/user-group-ac-admin.md#group-administration) und Richtlinien zuweisen und [Benutzer](/help/sites-administering/user-group-ac-admin.md#user-administration) zu den Gruppen in Adobe Experience Manager (AEM). Diese Richtlinien steuern die Berechtigungen der Benutzer, die Teil der Gruppe sind.
 
-Sobald Sie das [AEM Forms-Add-On-Paket](../../forms/using/installing-configuring-aem-forms-osgi.md) installiert haben, werden die in diesem Artikel genannten Gruppen, wie „forms-users“ und „forms-power-user“ automatisch für die Zuweisung zur Verfügung gestellt. In der folgenden Tabelle sind die Aufgaben aufgeführt, die ein Benutzer für AEM Forms auf OSGi basierend auf den Gruppenzuweisungen ausführen kann:
+Nach der Installation [AEM Forms Add-On-Paket](../../forms/using/installing-configuring-aem-forms-osgi.md), sind die in diesem Artikel erwähnten Gruppen, wie Formularbenutzer und Formular-Power-Benutzer, automatisch für die Zuweisung verfügbar. In der folgenden Tabelle sind die Aufgaben aufgeführt, die ein Benutzer je nach Gruppenzuweisung für AEM Forms unter OSGi ausführen kann:
 
 <table>
  <tbody>
@@ -52,7 +48,7 @@ Sobald Sie das [AEM Forms-Add-On-Paket](../../forms/using/installing-configuring
     <ul> 
      <li>Erstellen, Anzeigen einer Vorschau, Veröffentlichen und Senden adaptiver Formulare</li> 
      <li>Interaktive Kommunikation und Dokumentfragmente erstellen, in der Vorschau anzeigen und veröffentlichen</li> 
-     <li>Erstellen von Skripten für adaptive Formulare mithilfe des Code-Editors</li> 
+     <li>Erstellen von Skripten für adaptive Formulare mithilfe eines Code-Editors</li> 
      <li>Hochladen von Assets einschließlich Skripten</li> 
      <li>Erstellen von Designs</li> 
      <li>Importieren von Paketen, die XDP enthalten</li> 
@@ -99,7 +95,7 @@ Sobald Sie das [AEM Forms-Add-On-Paket](../../forms/using/installing-configuring
    <td>workflow-users</td> 
    <td>
     <ul> 
-     <li>Verwenden Sie AEM-Posteingangs-Anwendungen<br /> <strong>Hinweis: </strong>Sie müssen über Gruppenzuweisungen für „cm-agent-users“ und „workflow-users“ verfügen, um in dem AEM-Posteingang auf die Benutzeroberfläche vom Interactive Communications Agent zuzugreifen.</li> 
+     <li>Verwenden AEM Inbox-Anwendungen<br /> <strong>Hinweis: </strong>Sie müssen über Gruppenzuweisungen für cm-agent-users und workflow-users verfügen, um in AEM Posteingang auf die Benutzeroberfläche für interaktive Kommunikationsagenten zugreifen zu können.</li> 
      <li>Verwalten von Workflow-Instanzen</li> 
     </ul> </td> 
   </tr>

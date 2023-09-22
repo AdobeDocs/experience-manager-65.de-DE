@@ -1,18 +1,15 @@
 ---
 title: Integration mit Adobe Sign | Umgang mit Benutzerdaten
-seo-title: Integration with Adobe Sign | Handling user data
 description: Integration mit Adobe Sign | Umgang mit Benutzerdaten
-uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 feature: Acrobat Sign
 role: Admin
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
-source-git-commit: 28d092a7713438c27213766f0bb702b699305b88
-workflow-type: ht
-source-wordcount: '307'
-ht-degree: 100%
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 58%
 
 ---
 
@@ -26,12 +23,12 @@ Weitere Informationen zur Integration von [!DNL AEM Forms] mit [!DNL Adobe Sign]
 
 ## Benutzerdaten und Datenspeicher {#data}
 
-Das [!DNL Adobe Sign] für aktiviertes adaptives Formular enthält Informationen zu den Unterzeichnern und kann andere Benutzerdaten enthalten, die vom adaptiven Formular erfasst wurden. Der [!DNL Adobe Sign]-Service speichert Benutzerdaten mit der Signatur innerhalb der Vereinbarung. Die Vereinbarung wird auf dem [!DNL Adobe Sign]-Server gespeichert, der in den Cloud-Services von [!DNL AEM Forms] konfiguriert ist. Wenn das adaptive Formular für die Sendeaktion konfiguriert ist, werden die Vertragsdaten außerdem zusammen mit den Formulardaten im Datenspeicher des Forms-Portals gespeichert.
+Das [!DNL Adobe Sign] für aktiviertes adaptives Formular enthält Informationen zu den Unterzeichnern und kann andere Benutzerdaten enthalten, die vom adaptiven Formular erfasst wurden. Der [!DNL Adobe Sign]-Service speichert Benutzerdaten mit der Signatur innerhalb der Vereinbarung. Die Vereinbarung wird auf einer [!DNL Adobe Sign] Server konfiguriert in [!DNL AEM Forms] Cloud-Services. Wenn das adaptive Formular für die Verwendung der Übermittlungsaktion für Forms Portal konfiguriert ist, werden die Vertragsdaten zusammen mit den Formulardaten im Forms Portal-Datenspeicher gespeichert.
 
 ## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
-Benutzerdaten werden innerhalb der Vereinbarung gesammelt, aber nicht in einer der Servicetabellen gespeichert. [!DNL Adobe Sign]Mit können Administratoren ihre eigenen Entscheidungen bei der Verwaltung von Daten treffen, die sie im Dienst steuern. Datenschutzadministratoren im [!DNL Adobe Sign]-Service können Vereinbarungen basierend auf der E-Mail-Adresse eines Anforderers auflisten oder entfernen.
+Benutzerdaten werden innerhalb der Vereinbarung erfasst, aber nicht in einer der Service-Tabellen gespeichert. [!DNL Adobe Sign] ermöglicht es Administratoren, eigene Entscheidungen zur Verwaltung der Daten zu treffen, die sie im Dienst steuern. Datenschutzadministratoren im [!DNL Adobe Sign]-Service können Vereinbarungen basierend auf der E-Mail-Adresse eines Anforderers auflisten oder entfernen.
 
-[!DNL Adobe Sign] bietet eine Webanwendung, mit der Teilnehmer nach Vereinbarungen suchen und diese gegebenenfalls löschen können. Weitere Informationen finden Sie unter [Adobe Sign – Funktion: Benutzerinformationen löschen](https://helpx.adobe.com/de/sign/help/adobesign_gdpr_user_deletion.html).
+[!DNL Adobe Sign] bietet eine Web-Anwendung, die das Durchsuchen von Vereinbarungen durch Teilnehmer ermöglicht und diese bei Bedarf löscht. Weitere Informationen finden Sie unter [Adobe Sign – Funktion: Benutzerinformationen löschen](https://helpx.adobe.com/de/sign/help/adobesign_gdpr_user_deletion.html).
 
-Vereinbarungsdaten für adaptive Formulare, die für die Verwendung der Forms-Portal-Sendeaktion konfiguriert sind, werden ebenfalls im Forms-Portal-Datenspeicher gespeichert. Informationen zum Zugreifen auf und Löschen von Daten aus dem Forms-Portal-Datenspeicher finden Sie unter [Forms-Portal | Umgang mit Benutzerdaten](/help/forms/using/forms-portal-handling-user-data.md).
+Vereinbarungsdaten für adaptive Formulare, die für die Verwendung der Übermittlungsaktion für Forms Portal konfiguriert sind, werden ebenfalls im Forms Portal-Datenspeicher gespeichert. Informationen zum Zugreifen auf und Löschen von Daten aus dem Forms Portal-Datenspeicher finden Sie unter [Forms Portal | Umgang mit Benutzerdaten](/help/forms/using/forms-portal-handling-user-data.md).
