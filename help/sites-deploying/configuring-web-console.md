@@ -1,22 +1,20 @@
 ---
 title: Web-Konsole in AEM
-description: Erfahren Sie, wie Sie die Web-Konsole in AEM verwenden.
-uuid: 047274ff-4d7d-4c7d-95be-06f363beae2e
+description: Erfahren Sie, wie Sie die Web-Konsole in Adobe Experience Manager verwenden.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 exl-id: bdfeaf85-e832-40c1-8769-7d027cdb021e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '721'
-ht-degree: 96%
+source-wordcount: '705'
+ht-degree: 66%
 
 ---
 
 # Web-Konsole{#web-console}
 
-Die Web-Konsole in AEM (Adobe Experience Manager) basiert auf der [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix ist ein Gemeinschaftsprojekt zur Implementierung der OSGi R4-Dienstplattform, die das OSGi-Framework und Standarddienste umfasst.
+Die Web-Konsole in Adobe Experience Manager (AEM) basiert auf dem [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix ist ein Gemeinschaftsprojekt zur Implementierung der OSGi R4-Dienstplattform, die das OSGi-Framework und Standarddienste umfasst.
 
 >[!NOTE]
 >
@@ -58,7 +56,7 @@ Eine Liste der Konfigurationen wird angezeigt:
 
 ![screen_shot_2012-02-15at52308pm-1](assets/screen_shot_2012-02-15at52308pm-1.png)
 
-Es gibt zwei Arten von Konfigurationen, die in den Dropdown-Listen auf dem Bildschirm verfügbar sind:
+In den Dropdown-Listen auf diesem Bildschirm stehen zwei Arten von Konfigurationen zur Verfügung:
 
 * **Konfigurationen**
 
@@ -69,11 +67,11 @@ Es gibt zwei Arten von Konfigurationen, die in den Dropdown-Listen auf dem Bilds
 
 * **Werkskonfigurationen**
 
-  Ermöglicht die Erstellung einer Instanz des erforderlichen Funktionsobjekts.
+  Erstellen Sie eine Instanz des erforderlichen Funktionsobjekts.
 
-  Diesem Objekt wird eine Persistent Identity (PID) zugewiesen und es wird dann in der Dropdown-Liste „Konfigurationen“ aufgeführt.
+  Diese wird einer persistenten Identität zugewiesen und dann in der Dropdown-Liste Konfigurationen aufgeführt.
 
-Bei Auswahl eines Eintrags aus den Listen werden die Parameter für die Konfiguration angezeigt:
+Wenn Sie einen Eintrag aus der Liste auswählen, werden die Parameter für diese Konfiguration angezeigt:
 
 ![chlimage_1-61](assets/chlimage_1-61.png)
 
@@ -83,11 +81,11 @@ Die Parameter können dann ggf. aktualisiert werden und Sie können unter folgen
 
   Speichert die vorgenommenen Änderungen.
 
-   Für eine Factory-Konfiguration wird hierdurch eine neue Instanz mit einer Persistent Identity erstellt. Die neue Instanz wird dann unter „Konfigurationen“ aufgelistet.
+  Bei einer Factory-Konfiguration wird dadurch eine Instanz mit einer beständigen Identität erstellt. Die neue Instanz wird unter Konfigurationen aufgeführt.
 
 * **Zurücksetzen**
 
-  Setzt die auf dem Bildschirm gezeigten Parameter auf die zuletzt gespeicherten zurück.
+  Setzen Sie die auf dem Bildschirm angezeigten Parameter auf die zuletzt gespeicherten zurück.
 
 * **Löschen**
 
@@ -113,7 +111,7 @@ Die Registerkarte **Pakete** stellt den Mechanismus zum Installieren der für A
 
   `http://localhost:4502/system/console/bundles`
 
-Eine Liste mit Bundles wird angezeigt:
+Eine Liste von Bundles wird angezeigt:
 
 ![screen_shot_2012-02-15at44740pm-1](assets/screen_shot_2012-02-15at44740pm-1.png)
 
@@ -129,9 +127,9 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 * **Pakete aktualisieren**
 
-  Diese Option prüft die Verweise aller Pakete und aktualisiert sie ggf.
+  Dadurch werden die Referenzen aller Pakete überprüft und bei Bedarf aktualisiert.
 
-   So werden möglicherweise nach einer Aktualisierung die alte und die neue Version aufgrund vorheriger Verweise weiter ausgeführt, Diese Option prüft und transferiert alle Verweise auf die neue Version, sodass die alte Version beendet werden kann.
+   So werden möglicherweise nach einer Aktualisierung die alte und die neue Version aufgrund vorheriger Verweise weiter ausgeführt, Mit dieser Option werden alle Verweise auf die neue Version überprüft und verschoben, sodass die alte Version angehalten werden kann.
 
 * **Starten**
 
@@ -147,11 +145,11 @@ Auf dieser Registerkarte stehen folgende Optionen zur Verfügung:
 
 * **Status anzeigen**
 
-  Die Liste gibt den aktuellen Status des Bundles an. Klicken Sie auf den Namen eines bestimmten Bundles, um weitere Informationen anzuzeigen.
+  Die Liste gibt den Status des Bundles an. Durch Klicken auf den Namen eines bestimmten Bundles werden weitere Informationen angezeigt.
 
 >[!NOTE]
 >
->Nach dem **Update** wird empfohlen, die Aktion **Pakete aktualisieren** durchzuführen.
+>Nachher **Aktualisieren** empfiehlt Adobe, dass Sie eine **Aktualisieren von Paketen**.
 
 ## Komponenten {#components}
 
@@ -165,16 +163,16 @@ Die **Komponenten** können Sie die verschiedenen Komponenten aktivieren bzw. de
 
   `http://localhost:4502/system/console/components`
 
-Eine Liste der Komponenten wird angezeigt. Eine Reihe von Symbolen steht zur Verfügung, mit denen Sie die Komponenten aktivieren, deaktivieren oder ggf. Konfigurationsdetails für eine bestimmte Komponente öffnen können.
+Eine Liste von Komponenten wird angezeigt. Eine Reihe von Symbolen steht zur Verfügung, mit denen Sie die Komponenten aktivieren, deaktivieren oder ggf. Konfigurationsdetails für eine bestimmte Komponente öffnen können.
 
 ![screen_shot_2012-02-15at52144pm-1](assets/screen_shot_2012-02-15at52144pm-1.png)
 
-Klicken Sie auf den Namen einer bestimmten Komponente, um weitere Informationen zu deren Status anzuzeigen. Hier können Sie die Komponente auch aktivieren, deaktivieren oder neu laden.
+Wenn Sie auf den Namen einer bestimmten Komponente klicken, werden weitere Informationen zum Status angezeigt. Hier können Sie die Komponente auch aktivieren, deaktivieren oder neu laden.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
 >[!NOTE]
 >
->Das Aktivieren oder Deaktivieren einer Komponente gilt nur, bis AEM/CRX neu gestartet wird.
+>Die Aktivierung oder Deaktivierung einer Komponente gilt nur, bis AEM/CRX neu gestartet wird.
 >
 >Der Startstatus wird innerhalb des Komponentendeskriptors definiert, der während der Entwicklung generiert und zum Zeitpunkt der Bundle-Erstellung im Bundle gespeichert wird.

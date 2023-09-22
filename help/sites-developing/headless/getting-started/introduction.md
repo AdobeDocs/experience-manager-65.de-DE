@@ -1,17 +1,17 @@
 ---
 title: Erste Schritte mit Headless
-description: In dieser Kurzanleitung erfahren Sie mehr über die wichtigsten Headless-Funktionen von AEM 6.5 wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API.
+description: In dieser Kurzanleitung erfahren Sie mehr über die leistungsstarken Headless-Funktionen von Adobe Experience Manager (AEM) 6.5 wie Inhaltsmodelle, Inhaltsfragmente und die GraphQL-API.
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
-workflow-type: ht
-source-wordcount: '301'
-ht-degree: 100%
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 49%
 
 ---
 
 # Erste Schritte mit Headless {#introduction}
 
-Die Leitfäden „Erste Schritte mit Headless“ zeigen Benutzern, die bereits mit AEM und der Headless-Technologie vertraut sind, in fünf Schritten einen einfachen Weg zur Erstellung, Verwaltung und Bereitstellung von Erlebnissen mit AEM 6.5 auf. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
+Die Leitfäden für Headless-Einstieg enthalten einen einfachen Weg zum Erstellen, Verwalten und Bereitstellen von Erlebnissen mit Adobe Experience Manager (AEM) 6.5 in fünf Schritten für Benutzer, die bereits mit AEM und Headless-Technologie vertraut sind. Jedes Handbuch baut auf dem vorherigen auf, daher wird empfohlen, sie gründlich und in der richtigen Reihenfolge zu lesen.
 
 1. [Erstellen einer Konfiguration](create-configuration.md)
 1. [Erstellen eines Inhaltsfragmentmodells](create-content-model.md)
@@ -23,17 +23,17 @@ Die Leitfäden „Erste Schritte mit Headless“ zeigen Benutzern, die bereits m
 >
 >In diesem Erste-Schritte-Leitfaden werden Kenntnisse über AEM und Headless-Technologien vorausgesetzt.
 >
->Wenn Sie AEM oder Headless noch nicht kennen, finden Sie in unseren [Headless-Dokumentations-Touren](/help/journey-headless/home.md) eine umfassende Einführung in Headless und in die Unterstützung durch AEM.
+>Wenn Sie neu AEM oder Headless sind, lesen Sie den Abschnitt [Headless Documentation Journey](/help/journey-headless/home.md) für eine durchgängige Einführung in Headless und wie AEM sie unterstützt.
 
 ## Zielgruppe {#audience}
 
 Die in den ersten Schritten für Headless beschriebenen Aufgaben sind für eine grundlegende durchgängige Demonstration der Headless-Funktionen von AEM erforderlich. Jeder Benutzer mit Administratorzugriff auf eine AEM-Testinstanz kann diesen Handbüchern folgen, um die Headless-Bereitstellung in AEM zu verstehen, obwohl jemand mit Entwicklererfahrung ideal ist.
 
-In einer Produktionssituation werden die Aufgaben jedoch von verschiedenen Personen unterschiedlich oft ausgeführt. Beispiel:
+In einer Produktionssituation werden die Aufgaben jedoch in der Regel von verschiedenen Personen mit unterschiedlicher Häufigkeit ausgeführt. Zum Beispiel:
 
-* **Admins** müssen die anfängliche Konfiguration und Ordnerstruktur für den Inhalt normalerweise nur einmal oder sporadisch einrichten.
-* **Informationsarchitekten** fügen im Allgemeinen neue Modelle hinzu, wenn sich die Anforderungen der Organisation ändern.
-* **Inhaltsautoren** erstellen kontinuierlich neue Inhalte als Inhaltsfragmente basierend auf den von den Architekten definierten Modellen.
+* **Administratoren** muss die anfängliche Konfiguration und die Ordnerstruktur für den Inhalt normalerweise nur einmal oder sporadisch einrichten.
+* **Informationsarchitekten** Fügen Sie neue Modelle hinzu, wenn sich die Anforderungen der Organisation weiterentwickeln.
+* **Inhaltsautoren** kontinuierlich Inhalte als Inhaltsfragmente basierend auf den von den Architekten definierten Modellen erstellen.
 
 In den ersten Schritten für Headless wird aufgezeigt, wer die beschriebenen Aufgaben in der Regel und wie häufig durchführt.
 

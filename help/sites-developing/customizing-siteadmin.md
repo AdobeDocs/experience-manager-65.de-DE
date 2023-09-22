@@ -1,43 +1,38 @@
 ---
 title: Anpassen der Websites-Konsole (klassische Benutzeroberfläche)
-seo-title: Customizing the Websites Console (Classic UI)
-description: Die Websites-Administrationskonsole kann zum Anzeigen benutzerdefinierter Spalten erweitert werden.
-seo-description: The Websites Administration console can be extended to display custom columns
-uuid: 9163fdff-5351-477d-b91c-8a74f8b41d34
+description: Die Websites-Administrationskonsole kann erweitert werden, um benutzerdefinierte Spalten anzuzeigen
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '781'
-ht-degree: 100%
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+workflow-type: tm+mt
+source-wordcount: '779'
+ht-degree: 59%
 
 ---
 
 # Anpassen der Websites-Konsole (klassische Benutzeroberfläche){#customizing-the-websites-console-classic-ui}
 
-## Hinzufügen benutzerdefinierter Spalten zur Websites-Konsole (SiteAdmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
+## Hinzufügen einer benutzerdefinierten Spalte zur Websites-Konsole (siteadmin) {#adding-a-custom-column-to-the-websites-siteadmin-console}
 
-Die Websites-Administrationskonsole kann zum Anzeigen benutzerdefinierter Spalten erweitert werden. Die Konsole basiert auf einem JSON-Objekt, das erweitert werden kann, indem ein OSGi-Dienst erstellt wird, der die Schnittstelle `ListInfoProvider` implementiert. Ein solcher Dienst modifiziert das JSON-Objekt, das an den Client gesendet wird, um die Konsole zu erstellen.
+Die Websites-Administrationskonsole kann erweitert werden, um benutzerdefinierte Spalten anzuzeigen. Die Konsole basiert auf einem JSON-Objekt, das erweitert werden kann, indem ein OSGi-Dienst erstellt wird, der die Schnittstelle `ListInfoProvider` implementiert. Ein solcher Dienst modifiziert das JSON-Objekt, das an den Client gesendet wird, um die Konsole zu erstellen.
 
-In diesem Schritt-für-Schritt-Tutorial wird erläutert, wie Sie eine neue Spalte in der Websites-Administrationskonsole anzeigen, indem Sie die Schnittstelle `ListInfoProvider` implementieren. Dieser Vorgang umfasst die folgenden Schritte:
+In diesem Schritt-für-Schritt-Tutorial wird erläutert, wie Sie eine neue Spalte in der Websites-Administrationskonsole anzeigen, indem Sie die Schnittstelle `ListInfoProvider` implementieren. Er umfasst die folgenden Schritte:
 
-1. [Erstellen des OSGi-Diensts](#creating-the-osgi-service) und Bereitstellen des Bundles, das ihn enthält, auf dem AEM-Server
-1. (optional) [Testen des neuen Diensts](#testing-the-new-service) durch einen JSON-Aufruf, um das JSON-Objekt anzufordern, das zum Aufbau der Konsole verwendet wird
-1. [Anzeigen der neuen Spalte](#displaying-the-new-column) durch Erweitern der Knotenstruktur der Konsole im Repository
+1. [Erstellen des OSGi-Dienstes](#creating-the-osgi-service) und Bereitstellung des Bundles, das das Bundle enthält, auf dem AEM Server.
+1. (optional) [Testen des neuen Dienstes](#testing-the-new-service) durch einen JSON-Aufruf zum Anfordern des JSON-Objekts, das zum Erstellen der Konsole verwendet wird.
+1. [Anzeigen der neuen Spalte](#displaying-the-new-column) durch Erweiterung der Knotenstruktur der Konsole im Repository.
 
 >[!NOTE]
 >
->Mithilfe dieses Tutorials können auch die folgenden Administrationskonsolen erweitert werden:
+>Dieses Tutorial kann auch verwendet werden, um die folgenden Administrationskonsolen zu erweitern:
 >
->* die Konsole für digitale Assets
+>* die Digital Assets-Konsole
 >* die Community-Konsole
 >
-
 
 ### Erstellen von OSGi-Diensten {#creating-the-osgi-service}
 
@@ -52,16 +47,16 @@ Die Argumente für beide Methoden lauten:
 * `info`, das zu aktualisierende JSON-Objekt, bei dem es sich um die globale Liste bzw. das aktuelle Listenelement handelt,
 * `resource`, eine Sling-Ressource.
 
-Mit der unten aufgeführten Beispielimplementierung wird Folgendes erreicht:
+Die Beispielimplementierung sieht wie folgt aus:
 
 * Es wird eine Eigenschaft *starred* für jedes Element hinzugefügt, deren Wert auf `true` festgelegt ist, wenn der Seitenname mit *e* beginnt. Andernfalls ist der Wert auf `false` festgelegt.
 
-* Es wird eine Eigenschaft *starredCount* hinzugefügt, die global für die Liste gilt und die Anzahl der Listenelemente mit der Eigenschaft „starred“ enthält.
+* Fügt eine *starredCount* -Eigenschaft, die für die Liste global ist und die Anzahl der Listenelemente mit dem Sternchen enthält.
 
-Gehen Sie wie folgt vor, um den OSGi-Dienst zu erstellen:
+So erstellen Sie den OSGi-Dienst:
 
-1. Wechseln Sie zu CRXDE Lite und [erstellen Sie ein Bundle](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
-1. Fügen Sie den unten aufgeführten Beispielcode ein.
+1. CRXDE Lite: [Bundle erstellen](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
+1. Fügen Sie den Beispielcode unten hinzu.
 1. Erstellen Sie das Bundle.
 
 Der neue Dienste wird ordnungsgemäß ausgeführt.
@@ -109,13 +104,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >[!CAUTION]
 >
 >* Ihre Implementierung sollte anhand der bereitgestellten Anforderung und/oder Ressource bestimmen, ob die Informationen zum JSON-Objekt hinzugefügt werden sollen.
->* Wenn Ihre `ListInfoProvider`-Implementierung eine Eigenschaft definiert, die bereits im Antwortobjekt vorhanden ist, wird deren Wert durch den von Ihnen angegebenen Wert überschrieben.
+>* Wenn `ListInfoProvider` -Implementierung definiert eine Eigenschaft, die im Antwortobjekt vorhanden ist. Ihr Wert wird durch den von Ihnen angegebenen Wert überschrieben.
 >
->  Sie können [service ranking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) verwenden, um die Ausführungsreihenfolge mehrerer `ListInfoProvider` Implementierungen zu verwalten.
+>  Sie können [service ranking](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) verwenden, um die Ausführungsreihenfolge mehrerer `ListInfoProvider` Implementierungen zu verwalten.
 
-### Testen neuer Dienste {#testing-the-new-service}
+### Testen des neuen Dienstes {#testing-the-new-service}
 
-Wenn Sie die Website-Administrationskonsole öffnen und durch Ihre Website navigieren, gibt der Browser einen AJAX-Aufruf aus, um das JSON-Objekt zu erhalten, das zum Erstellen der Konsole verwendet wird. Wenn Sie beispielsweise zum Ordner `/content/geometrixx` navigieren, wird die folgende Anforderung an den AEM-Server gesendet, um die Konsole zu erstellen:
+Wenn Sie die Websites-Administrationskonsole öffnen und Ihre Site durchsuchen, gibt der Browser einen Ajax-Aufruf aus, um das JSON-Objekt abzurufen, das zum Erstellen der Konsole verwendet wird. Wenn Sie beispielsweise zum Ordner `/content/geometrixx` navigieren, wird die folgende Anforderung an den AEM-Server gesendet, um die Konsole zu erstellen:
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -140,14 +135,14 @@ Der letzte Schritt besteht darin, die Knotenstruktur der Websites-Administration
 
    * Entfernen Sie **pageText**.
 
-   * Legen Sie **pathRegex** auf `/content/geometrixx(/.*)?` fest
+   * Satz **pathRegex** nach `/content/geometrixx(/.*)?`
 Dadurch wird die Rasterkonfiguration für alle Geometrixx-Websites aktiviert.
 
    * Legen Sie **storeProxySuffix** auf `.pages.json` fest
 
    * Bearbeiten Sie die mehrwertige Eigenschaft **storeReaderFields** und fügen Sie den Wert `starred` hinzu.
 
-   * Um die MSM-Funktion zu aktivieren, fügen Sie die folgenden MSM-Parameter zu der aus mehreren Zeichenfolgen bestehenden Eigenschaft **storeReaderFields** hinzu:
+   * Um die MSM-Funktion zu aktivieren, fügen Sie die folgenden MSM-Parameter zur Eigenschaft &quot;multiString&quot;hinzu **storeReaderFields**:
 
       * **msm:isSource**
       * **msm:isInBlueprint**
@@ -161,10 +156,10 @@ Dadurch wird die Rasterkonfiguration für alle Geometrixx-Websites aktiviert.
 
    * **xtype**: `gridcolumn` des Typs „String“
 
-1. (optional) Verschieben Sie die Spalten, die Sie nicht anzeigen möchten, per Drag-and-Drop nach `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`.
+1. (optional) Legen Sie die Spalten ab, die nicht angezeigt werden sollen unter `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
 1. `/siteadmin` ist ein Vanity-Pfad, der standardmäßig auf `/libs/wcm/core/content/siteadmin` verweist.
-Um diesen an Ihre WebsiteAdmin-Version auf `/apps/wcm/core/content/siteadmin` umzuleiten, definieren Sie die Eigenschaft `sling:vanityOrder` so, dass sie einen höheren Wert aufweist, als auf `/libs/wcm/core/content/siteadmin` definiert. Der Standardwert lautet 300, also sind alle höheren Werte geeignet.
+So leiten Sie dies zu Ihrer Version von siteadmin auf `/apps/wcm/core/content/siteadmin`, definieren Sie die Eigenschaft . `sling:vanityOrder` , um einen höheren Wert als den für definierten zu haben. `/libs/wcm/core/content/siteadmin`. Der Standardwert lautet 300, also sind alle höheren Werte geeignet.
 
 1. Wechseln Sie zu Websites-Administrationskonsole und navigieren Sie zur folgenden Geometrixx-Website:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
@@ -175,7 +170,7 @@ Um diesen an Ihre WebsiteAdmin-Version auf `/apps/wcm/core/content/siteadmin` um
 
 >[!CAUTION]
 >
->Wenn mehrere Rasterkonfigurationen mit dem durch die Eigenschaft **pathRegex** definierten Pfad übereinstimmen, wird die erste und nicht die spezifischste Eigenschaft verwendet, was bedeutet, dass die Reihenfolge der Konfigurationen wichtig ist.
+>Wenn mehrere Rasterkonfigurationen mit dem angeforderten Pfad übereinstimmen, der von der **pathRegex** -Eigenschaft, wird die erste und nicht die spezifischste verwendet, was bedeutet, dass die Reihenfolge der Konfigurationen wichtig ist.
 
 ### Beispielpaket {#sample-package}
 

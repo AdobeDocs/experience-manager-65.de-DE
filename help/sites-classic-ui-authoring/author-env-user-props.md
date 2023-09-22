@@ -1,38 +1,33 @@
 ---
 title: Konfigurieren der Kontoumgebung
-seo-title: Configuring your account environment
-description: AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
-seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment.
-uuid: a4a408f4-e33e-4304-90ab-f564ae772b7d
+description: Adobe Experience Manager (AEM) bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: d6f55d2c-e7a9-4421-918c-6000c6961776
 docset: aem65
 exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '224'
-ht-degree: 100%
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+workflow-type: tm+mt
+source-wordcount: '227'
+ht-degree: 51%
 
 ---
 
 # Konfigurieren der Kontoumgebung{#configuring-your-account-environment}
 
-AEM bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
+Adobe Experience Manager (AEM) bietet Ihnen die Möglichkeit, Ihr Konto und bestimmte Aspekte der Autorenumgebung zu konfigurieren.
 
 Über die [Kontoeinstellungen](#account-settings) und [Benutzereinstellungen](#user-preferences) können die folgenden Optionen und Einstellungen definiert werden:
 
-* **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Auf dieser Symbolleiste oben im Browser-Fenster stehen die Schaltflächen 
-**Kopieren**, **Ausschneiden**, **Einfügen**, **Löschen** zur Verwendung mit den Absatzkomponenten auf dieser Seite zur Verfügung:
+* **Bearbeitungssymbolleiste** Legen Sie fest, ob die globale Bearbeitungssymbolleiste angezeigt werden soll. Auf dieser Symbolleiste oben im Browser-Fenster stehen die Schaltflächen **Kopieren**, **Ausschneiden**, **Einfügen**, **Löschen** zur Verwendung mit den Absatzkomponenten auf dieser Seite zur Verfügung:
 
    * Bei Bedarf anzeigen (Standardeinstellung)
    * Immer anzeigen
-   * Ausblendung beibehalten
+   * Ausgeblendet halten
 
 * **Identität annehmen als**
-Mit der Funktion [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) kann eine Benutzerin oder ein Benutzer im Namen eines anderen Benutzers arbeiten.
+Die Funktionalität von [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user) ermöglicht es einem Benutzer, im Namen eines anderen Benutzers zu arbeiten.
 
 * **Sprache**
 Die Sprache, die für die Benutzeroberfläche der Authoring-Umgebung verwendet werden soll. Wählen Sie in der Liste die gewünschte Sprache aus.
@@ -40,14 +35,12 @@ Die Sprache, die für die Benutzeroberfläche der Authoring-Umgebung verwendet w
 * **Fensterverwaltung**
 Wählen Sie entweder:
 
-   * Mehrere Fenster (Standard)
-Seiten werden in einem neuen Fenster geöffnet.
-   * Einfaches Fenster
-Seiten werden im aktuellen Fenster geöffnet.
+   * Mehrere Windows-Seiten (Standard) werden in einem neuen Fenster geöffnet.
+   * Einzelfenster Seiten werden im aktuellen Fenster geöffnet.
 
 ## Kontoeinstellungen {#account-settings}
 
-Über das Benutzersymbol haben Sie Zugang zu den folgenden Optionen:
+Über das Benutzersymbol haben Sie Zugriff auf die folgenden Optionen:
 
 * Abmelden
 * [Identität annehmen als](/help/sites-administering/security.md#impersonating-another-user)
@@ -58,7 +51,7 @@ Seiten werden im aktuellen Fenster geöffnet.
 
 ### Benutzereinstellungen {#user-preferences}
 
-Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen. Der Zugriff auf diese Funktion erfolgt über das Dialogfeld **Voreinstellungen** in der oberen rechten Ecke der Konsolen. 
+Jeder Benutzer kann bestimmte Eigenschaften für sich selbst festlegen. Dies ist im Abschnitt **Voreinstellungen** in der oberen rechten Ecke der Konsolen.
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 

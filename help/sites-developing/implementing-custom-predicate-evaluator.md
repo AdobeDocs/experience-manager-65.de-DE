@@ -1,20 +1,16 @@
 ---
 title: Implementieren eines benutzerdefinierten Prädikat-Auswerters für den Query Builder
-seo-title: Implementing a Custom Predicate Evaluator for the Query Builder
-description: Query Builder bietet eine einfache Möglichkeit, das Inhalts-Repository abzurufen
-seo-description: The Query Builder offers an easy way of querying the content repository
-uuid: e71be518-027c-4792-9e02-06405804d9d2
+description: Query Builder bietet eine einfache Möglichkeit, das Inhalts-Repository abzufragen
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: ef253905-87da-4fa2-9f6c-778f1b12bd58
 docset: aem65
 exl-id: 72cbe589-14a1-40f5-a7cb-8960f02e0ebb
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '776'
-ht-degree: 79%
+source-wordcount: '762'
+ht-degree: 58%
 
 ---
 
@@ -26,7 +22,7 @@ In diesem Abschnitt wird beschrieben, wie Sie die [Query Builder](/help/sites-de
 
 Die [Query Builder](/help/sites-developing/querybuilder-api.md) bietet eine einfache Möglichkeit, das Inhalts-Repository abzufragen. CQ bietet eine Reihe von Prädikat-Auswertern, die Ihnen beim Umgang mit Ihren Daten helfen.
 
-Sie möchten jedoch vielleicht Abfragen vereinfachen, indem Sie einen benutzerdefinierten Prädikat-Auswerter implementieren, der weniger komplex ist und für eine bessere Semantik sorgt.
+Möglicherweise möchten Sie Ihre Abfragen jedoch vereinfachen, indem Sie einen benutzerdefinierten Prädikat-Auswerter implementieren, der etwas Komplexität verbirgt und eine bessere Semantik gewährleistet.
 
 Ein benutzerdefiniertes Prädikat ist auch für andere Aufgaben nützlich, die nicht direkt mit XPath ausgeführt werden können, z. B.:
 
@@ -43,7 +39,7 @@ Ein benutzerdefiniertes Prädikat ist auch für andere Aufgaben nützlich, die n
 
 CODE AUF GITHUB
 
-Den Code dieser Seite finden Sie auf GitHub.
+Den Code dieser Seite finden Sie auf GitHub..
 
 * [Öffnen Sie das Projekt „aem-search-custom-predicate-evaluator“ auf GitHub](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator).
 * Laden Sie das Projekt als [ZIP-Datei](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/archive/master.zip) herunter.
@@ -56,7 +52,7 @@ Er ordnet eine Suchbegrenzung auf höherer Ebene (z. B. &quot;Breite > 200&quot;
 
 >[!NOTE]
 >
->Weitere Informationen zum `PredicateEvaluator` und dem Paket `com.day.cq.search` finden Sie in der [Java-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/search/package-summary.html).
+>Weitere Informationen zum `PredicateEvaluator` und `com.day.cq.search` -Paket finden Sie unter [Java™-Dokumentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/search/package-summary.html).
 
 ### Implementieren eines benutzerdefinierten Prädikat-Auswerters für Replikationsmetadaten {#implementing-a-custom-predicate-evaluator-for-replication-metadata}
 
@@ -86,7 +82,7 @@ daterange.lowerBound=2013-01-01T00:00:00.000+01:00
 daterange.lowerOperation=>=
 ```
 
-Diese Abfrage ist zwar gültig, jedoch schwer zu lesen. Außerdem wird die Beziehung zwischen den drei Replikationseigenschaften nicht hervorgehoben. Das Implementieren eines benutzerdefinierten Prädikat-Auswerters reduziert die Komplexität und verbessert die Semantik dieser Abfrage.
+Diese Abfrage ist zwar gültig, jedoch schwer zu lesen. Außerdem wird die Beziehung zwischen den drei Replikationseigenschaften nicht hervorgehoben. Die Implementierung eines benutzerdefinierten Prädikat-Auswerters reduziert die Komplexität und verbessert die Semantik dieser Abfrage.
 
 #### Ziele {#objectives}
 
@@ -106,17 +102,17 @@ Das Gruppieren von Metadatenprädikaten einer Replikation mit einem benutzerdefi
 
 >[!NOTE]
 >
->Die Einrichtung neuer AEM mit Maven wird dokumentiert durch [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Die Einrichtung neuer Adobe Experience Manager (AEM)-Projekte mithilfe von Maven wird dokumentiert durch [So erstellen Sie AEM Projekte mit Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-Sie müssen zunächst die Maven-Abhängigkeiten Ihres Projekts aktualisieren. `PredicateEvaluator` ist Teil des `cq-search`-Artefakts und muss zur POM-Datei von Maven hinzugefügt werden.
+Aktualisieren Sie zunächst die Maven-Abhängigkeiten Ihres Projekts. Die `PredicateEvaluator` ist Teil der `cq-search` -Artefakt, sodass es zu Ihrer Maven-Datei pom.xml hinzugefügt werden muss.
 
 >[!NOTE]
 >
->Für den Bereich der Abhängigkeit `cq-search` ist `provided` festgelegt, da `cq-search` vom `OSGi`-Container bereitgestellt wird.
+Der Anwendungsbereich der `cq-search` dependency ist auf `provided` because `cq-search` von `OSGi` Container.
 
 pom.xml
 
-Das folgende Snippet verdeutlicht die Unterschiede im [Unified Diff-Format](https://de.wikipedia.org/wiki/Diff#Unified_format)
+Das folgende Snippet zeigt die Unterschiede bei [einheitliches Vergleichsformat](https://de.wikipedia.org/wiki/Diff#Unified_format)
 
 ```
 @@ -120,6 +120,12 @@
@@ -133,7 +129,7 @@ Das folgende Snippet verdeutlicht die Unterschiede im [Unified Diff-Format](http
              <version>3.8.1</version></dependency>
 ```
 
-[aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)- [pom.xml](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/raw/7aed6b35b4c8dd3655296e1b10cf40c0dd1eaa61/pom.xml)
+[aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)- [pom.xml](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/7aed6b35b4c8dd3655296e1b10cf40c0dd1eaa61/pom.xml)
 
 #### Schreiben des ReplicationPredicateEvaluator {#writing-the-replicationpredicateevaluator}
 
@@ -141,14 +137,14 @@ Das `cq-search`-Projekt beinhaltet die abstrakte Klasse `AbstractPredicateEvalua
 
 >[!NOTE]
 >
->Im folgenden Abschnitt wird erläutert, wie Sie einen `Xpath`-Ausdruck zum Filtern von Daten erstellen. Eine andere Option ist das Implementieren einer `includes`-Methode, bei der Daten auf Zeilenbasis ausgewählt werden. Weitere Informationen finden Sie in der [Java-Dokumentation](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29).
+Im folgenden Abschnitt wird erläutert, wie Sie einen `Xpath`-Ausdruck zum Filtern von Daten erstellen. Eine andere Option ist das Implementieren einer `includes`-Methode, bei der Daten auf Zeilenbasis ausgewählt werden. Siehe [Java™-Dokumentation](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/search/eval/PredicateEvaluator.html#includes28comdaycqsearchpredicatejavaxjcrqueryrowcomdaycqsearchevalevaluationcontext29) für weitere Informationen.
 
-1. Erstellen Sie eine neue Java-Klasse zum Erweitern von `com.day.cq.search.eval.AbstractPredicateEvaluator`
+1. Erstellen einer Java™-Klasse, die `com.day.cq.search.eval.AbstractPredicateEvaluator`
 1. Kommentieren Sie die Klasse mit einer `@Component` wie
 
    src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java
 
-   Das folgende Snippet verdeutlicht die Unterschiede im [Unified Diff-Format](https://de.wikipedia.org/wiki/Diff#Unified_format)
+   Das folgende Snippet zeigt die Unterschiede bei [einheitliches Vergleichsformat](https://de.wikipedia.org/wiki/Diff#Unified_format)
 
 ```
 @@ -19,8 +19,11 @@
@@ -165,15 +161,15 @@ Das `cq-search`-Projekt beinhaltet die abstrakte Klasse `AbstractPredicateEvalua
  }
 ```
 
-[aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)- [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/raw/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
+[aem-search-custom-predicate-evaluator](https://github.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator)- [src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java](https://raw.githubusercontent.com/Adobe-Marketing-Cloud/aem-search-custom-predicate-evaluator/ec70fac35fbd0d132e00c6066a204804e9cbe70f/src/main/java/com/adobe/aem/docs/search/ReplicationPredicateEvaluator.java)
 
 >[!NOTE]
 >
->`factory` muss eine eindeutige Zeichenfolge sein, die mit `com.day.cq.search.eval.PredicateEvaluator/` beginnt und mit dem Namen des benutzerdefinierten `PredicateEvaluator` endet.
+`factory` muss eine eindeutige Zeichenfolge sein, die mit `com.day.cq.search.eval.PredicateEvaluator/` beginnt und mit dem Namen des benutzerdefinierten `PredicateEvaluator` endet.
 
 >[!NOTE]
 >
->Der Name des `PredicateEvaluator` ist der Name des Prädikats, das zum Erstellen von Abfragen verwendet wird.
+Der Name des `PredicateEvaluator` ist der Name des Prädikats, das zum Erstellen von Abfragen verwendet wird.
 
 1. Überschreiben:
 
@@ -181,7 +177,7 @@ Das `cq-search`-Projekt beinhaltet die abstrakte Klasse `AbstractPredicateEvalua
    public String getXPathExpression(Predicate predicate, EvaluationContext context)
    ```
 
-   Bei der Überschreibmethode erstellen Sie einen `Xpath`-Ausdruck basierend auf dem im Argument angegebenen `Predicate`.
+   In der Überschreibungsmethode erstellen Sie eine `Xpath` Ausdruck basierend auf dem `Predicate` im -Argument angegeben.
 
 ### Beispiel für einen benutzerdefinierten Prädikat-Auswerter für Replikationsmetadaten {#example-of-a-custom-predicate-evalutor-for-replication-metadata}
 
