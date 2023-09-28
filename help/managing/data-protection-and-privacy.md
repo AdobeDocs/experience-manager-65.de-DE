@@ -10,9 +10,9 @@ discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
 source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '907'
-ht-degree: 99%
+ht-degree: 100%
 
 ---
 
@@ -28,7 +28,7 @@ ht-degree: 99%
 >
 >Weitere Informationen über die Reaktion von Adobe auf Datenschutzprobleme und dazu, was dies für Sie als Kundin bzw. Kunde von Adobe bedeutet, finden Sie im [Datenschutzzentrum von Adobe](https://www.adobe.com/de/privacy.html).
 
-Adobe stellt Dokumentationen und Verfahren bereit (mit APIs, sofern verfügbar), damit AEM-Admins oder Admins für den Schutz von Kundendaten Datenschutzanfragen bearbeiten können. Es kann Ihnen dabei helfen, diese Vorschriften einzuhalten. Mit den dokumentierten Verfahren können Kundinnen und Kunden die Regulierungsanforderungen entweder manuell oder API-gestützt (sofern verfügbar) über ein externes Portal oder einen externen Service erfüllen.
+Adobe stellt Dokumentationen und Verfahren bereit (mit APIs, sofern verfügbar), damit AEM-Admins oder Admins für den Schutz von Kundendaten Datenschutzanfragen bearbeiten können. Dies kann Ihnen dabei helfen, diese Vorschriften einzuhalten. Mit den dokumentierten Verfahren können Kundinnen und Kunden die Regulierungsanforderungen entweder manuell oder API-gestützt (sofern verfügbar) über ein externes Portal oder einen externen Service erfüllen.
 
 >[!CAUTION]
 >

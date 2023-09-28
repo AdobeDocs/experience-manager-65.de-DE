@@ -10,9 +10,9 @@ discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
 source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '1243'
-ht-degree: 96%
+ht-degree: 100%
 
 ---
 
@@ -22,11 +22,11 @@ ht-degree: 96%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/latest-innovations.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 
-Mit Transaktionsberichten können Sie die Anzahl der gesendeten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und verfolgen. Das Ziel bei der Verfolgung dieser Transaktionen ist es, eine fundierte Entscheidung über die Produktnutzung und die Neugewichtung der Investitionen in Hardware und Software treffen zu können. Beispiele für Transaktionen:
+Mit Transaktionsberichten können Sie die Anzahl der übermittelten Formulare, verarbeiteten Dokumente und gerenderten Dokumente erfassen und nachverfolgen. Das Ziel bei der Verfolgung dieser Transaktionen ist es, eine fundierte Entscheidung über die Produktnutzung und die Neugewichtung der Investitionen in Hardware und Software treffen zu können. Beispiele für Transaktionen:
 
 * Übermittlung eines adaptiven Formulars, eines HTML5-Formulars oder eines Formularsatzes
 * Ausgabe einer Druck- oder Web-Version einer interaktiven Kommunikation
@@ -84,7 +84,7 @@ Das Layout des Web-Kanals, das mithilfe des Druckkanals automatisch generiert wi
 
 #### Einbetten eines adaptiven Formulars oder einer interaktiven Kommunikation in Einzelseiten-Programme von AEM Sites {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 
-Mit AEM Forms können Sie [nahtloses Einbetten eines adaptiven Formulars](../../forms/using/embed-adaptive-form-aem-sites-spa.md) oder interaktive Kommunikation in einer AEM Sites-Einzelseitenanwendung (SPA). Das eingebettete adaptive Formular ist voll funktionsfähig, und Benutzer können es ausfüllen und absenden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Web-Seite zu bleiben und gleichzeitig mit dem Formular oder der interaktiven Kommunkation zu interagieren.
+Mit AEM Forms können Sie ein adaptives Formular oder eine interaktive Kommunikation [nahtlos in ein Einzelseiten-Programm (SPA) von AEM Sites einbetten](../../forms/using/embed-adaptive-form-aem-sites-spa.md). Das eingebettete adaptive Formular ist voll funktionsfähig, und Benutzer können es ausfüllen und absenden, ohne die Seite zu verlassen. Es hilft Benutzern, im Kontext anderer Elemente auf der Web-Seite zu bleiben und gleichzeitig mit dem Formular oder der interaktiven Kommunkation zu interagieren.
 
 #### Sortieren von Tabellenspalten in adaptiven Formularen {#sort-columns-of-adaptive-form-tables}
 
@@ -141,7 +141,7 @@ AEM Forms kann mit einer beliebigen Kombination von unterstützten Betriebssyste
  <tbody>
   <tr>
    <td>Komponente</td>
-   <td>Support entfernt</td>
+   <td>Unterstützung entfernt</td>
   </tr>
   <tr>
    <td>Betriebssysteme</td>
