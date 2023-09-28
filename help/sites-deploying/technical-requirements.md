@@ -3,10 +3,10 @@ title: Technische Anforderungen
 description: In diesem Dokument werden die unterstützten Client- und Server-Plattformen für Adobe Experience Manager aufgeführt.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 8336a7257d3c5e75cd37381b0124c227c2d55dca
+source-git-commit: 0dd6e3fc2fa9539e5c3ce4e99ab367752dfeaad6
 workflow-type: tm+mt
-source-wordcount: '3544'
-ht-degree: 92%
+source-wordcount: '3597'
+ht-degree: 91%
 
 ---
 
@@ -132,6 +132,9 @@ Es gibt verschiedene Optionen zum Bereitstellen des Repositorys von Adobe Experi
 1. MongoDB Sharding wird in AEM nicht unterstützt.
 1. Nur MongoDB Storage Engine WiredTiger wird unterstützt.
 1. Wird für Kundinnen und Kunden von AEM Forms-Upgrades unterstützt. Wird für neue Installationen nicht unterstützt.
+1. Gilt nur für AEM Forms:
+   * Die Unterstützung für Oracle Database 12c wurde entfernt und die Unterstützung für Oracle Database 19c wurde hinzugefügt.
+   * Die Unterstützung für Microsoft® SQL Server 2016 wurde entfernt und die Unterstützung für Microsoft® SQL Server 2019 wurde hinzugefügt.
 
 >[!NOTE]
 >
@@ -178,6 +181,8 @@ Die erforderliche Mindestversion der Servlet-API ist Servlet 3.1
 
 1. Wird für Bereitstellungen mit AEM Forms empfohlen.
 1. Der Start von AEM 6.5-Bereitstellungen auf Anwendungs-Servern wird nun eingeschränkt unterstützt. Bestehende Kunden können auf AEM 6.5 aktualisieren und weiterhin Anwendungs-Server verwenden. Für neue Kundinnen und Kunden werden Support-Kriterien und ein Support-Programm zur Verfügung gestellt, wie oben in der Beschreibung zu Level-R angegeben.
+1. Gilt nur für AEM Forms:
+   * Unterstützung für JBoss® EAP 7.1.4 entfernt und Unterstützung für JBoss® EAP 7.4.10 hinzugefügt.
 
 ### Server-Betriebssysteme {#server-operating-systems}
 
@@ -199,6 +204,7 @@ Adobe Experience Manager arbeitet mit den folgenden Server-Plattformen für Prod
 1. Die Linux®-Verteilung wird von Adobe Managed Services unterstützt.
 1. Produktionsimplementierungen von Microsoft® Windows werden für Kundinnen und Kunden unterstützt, die ein Upgrade auf 6.5 durchführen, sowie für die Nutzung außerhalb der Produktion. Neue Bereitstellungen erfolgen auf Anfrage für AEM Sites und Assets.
 1. AEM Forms wird auf Microsoft Windows® Server ohne die Einschränkungen von Support-Level R unterstützt.
+1. AEM Forms unterstützt Microsoft® Windows Server 2016 nicht mehr.
 
 >[!NOTE]
 >
