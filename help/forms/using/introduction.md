@@ -1,25 +1,22 @@
 ---
 title: Einführung in HTML5-Formulare
 seo-title: Introduction to HTML5 forms
-description: „HTML5-Formulare“ ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die das Anzeigen von XFA-Formularvorlagen im HTML5-Format ermöglicht.
-seo-description: HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AEM 6.0) software that offers rendering of XFA form templates in HTML5 format.
-uuid: 63a2f000-c4c5-40e8-ab3f-c7c44c79ec09
+description: HTML5 forms ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die XFA-Formularvorlagen im HTML5-Format rendern kann.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '417'
-ht-degree: 42%
+source-wordcount: '415'
+ht-degree: 32%
 
 ---
 
 # Einführung in HTML5-Formulare{#introduction-to-html-forms}
 
-„HTML5-Formulare“ ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die das Anzeigen von XFA-Formularvorlagen im HTML5-Format ermöglicht. Diese Funktion ermöglicht die Wiedergabe von Formularen auf Mobilgeräten und Desktopbrowsern, auf denen XFA-basierte PDF nicht unterstützt werden. HTML5 forms unterstützt nicht nur die vorhandenen Funktionen von XFA-Formularvorlagen, sondern bietet auch neue Funktionen wie die Freihandsignatur für Mobilgeräte.
+HTML5 forms ist eine neue Funktion in Adobe Experience Manager 6.0 (AEM 6.0), die XFA-Formularvorlagen im HTML5-Format rendern kann. Diese Funktion ermöglicht die Wiedergabe von Formularen auf Mobilgeräten und Desktopbrowsern, auf denen XFA-basierte PDF nicht unterstützt werden. HTML5 forms unterstützt nicht nur die vorhandenen Funktionen von XFA-Formularvorlagen, sondern bietet auch neue Funktionen wie die Freihandsignatur für Mobilgeräte.
 
 „HTML5-Formulare“ generiert Dokumente basierend auf standardmäßigen HTML5-Konstrukten. Sie können HTML5-Formulare in allen modernen Browsern anzeigen, die HTML5 unterstützen. Es ist nicht erforderlich, zusätzliche Browser-Plug-ins für die Browser zu installieren. Weitere Informationen zu unterstützten Browsern finden Sie unter [Unterstützte Client-Plattformen](https://adobe.com/go/learn_aemforms_supportedplatforms_63_de).
 
@@ -33,7 +30,7 @@ ht-degree: 42%
 * Verwendet hochpräzises SVG-Textlayout (SVG 1.1), um es mit dem PDF-Textlayout abzugleichen.
 * Unterstützung von JavaScript und FormCalc.
 * Dynamische Zusammenstellung von Fragmenten in interaktiven Formularen basierend auf datengesteuerten Ereignissen oder Benutzereingaben.
-* Unterstützt benutzerdefiniertes CSS, um das Erscheinungsbild der Formulare gemäß Ihren Unternehmensstandards anzupassen.
+* Unterstützt benutzerdefinierte CSS, um das Erscheinungsbild der Formulare gemäß Ihren Unternehmensstandards anzupassen.
 * Ermöglicht benutzerdefinierte Widgets, ein umfassendes Datenerfassungserlebnis zu bieten.
 * Unterstützung für die Integration in Web-Apps.
 

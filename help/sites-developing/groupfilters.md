@@ -12,10 +12,10 @@ discoiquuid: 9fef1f91-a222-424a-8e20-3599bedb8b41
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 76%
+source-wordcount: '799'
+ht-degree: 74%
 
 ---
 
@@ -95,7 +95,7 @@ Die `matches`-Funktion gibt `true` zurück, wenn die Gerätefunktionen alle Filt
 
 * Ein DeviceGroup-Objekt
 * Der Name des Benutzeragenten
-* Ein Map-Objekt, das die Gerätefunktionen enthält. Die Map-Schlüssel sind die Namen der WURFL™ -Funktionalität und die Werte sind die entsprechenden Werte aus der WURFL™ -Datenbank.
+* Ein Map-Objekt, das die Gerätefunktionen enthält. Die Zuordnungsschlüssel sind die Namen der WURFL™-Funktionen und die Werte sind die entsprechenden Werte aus der WURFL™-Datenbank.
 
 Die Schnittstelle[ com.day.cq.wcm.mobile.api.devicespecs.DeviceSpecsConstants](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/mobile/api/device/DeviceGroupFilter.html) enthält eine Teilmenge der WURFL™ -Fähigkeitsnamen in statischen Feldern. Verwenden Sie diese Feldkonstanten als Schlüssel beim Abrufen von Werten aus der Karte der Gerätefunktionen.
 
@@ -179,8 +179,8 @@ Der folgende POM-Code ist nützlich, wenn Sie Maven zum Erstellen Ihrer Anwendun
 
 **Plug-ins:**
 
-* Apache Maven Compiler-Plug-in: Kompiliert Java-Klassen aus dem Quellcode.
-* Apache Felix Maven Bundle-Plug-in: Erstellt das Bundle und das Manifest
+* Apache Maven Compiler Plugin: Kompiliert Java-Klassen aus dem Quellcode.
+* Apache Felix Maven Bundle Plugin: Erstellt das Bundle und das Manifest
 * Apache Felix Maven SCR Plugin: Erstellt die Komponentendeskriptordatei und konfiguriert die Manifestkopfzeile der Dienstkomponente.
 
 **Abhängigkeiten:**

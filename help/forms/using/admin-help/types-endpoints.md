@@ -1,19 +1,15 @@
 ---
 title: Arten von Endpunkten
-seo-title: Types of endpoints
-description: Erfahren Sie mehr über die verschiedenen Arten von Endpunkten.
-seo-description: Learn about the different types of endpoints.
-uuid: c899245c-14cc-4035-9440-95a5b6c1e47f
+description: Erfahren Sie mehr über die verschiedenen Typen von Endpunkten.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8fe572e0-8a53-4129-940f-3fdb990073fe
 exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
 source-wordcount: '438'
-ht-degree: 100%
+ht-degree: 63%
 
 ---
 
@@ -23,9 +19,9 @@ Bevor ein Dienst verwendet werden kann, müssen Sie einen Endpunkt konfigurieren
 
 >[!NOTE]
 >
->In Workbench werden Endpunkte als „Startpunkte“ bezeichnet.
+>In Workbench werden Endpunkte als Startpunkte bezeichnet.
 
-Einem Dienst können die folgenden Typen von Endpunkten hinzugefügt werden: Nicht alle Dienste unterstützen alle Endpunkte:
+Die folgenden Typen von Endpunkten können Diensten hinzugefügt werden. Nicht alle Dienste unterstützen alle Endpunkte:
 
 **E-Mail**: Ermöglicht es einem Benutzer, einen Service durch Senden einer E-Mail mit einer oder mehreren Dateianlagen an ein angegebenes E-Mail-Konto aufzurufen. Bevor Sie einen Email-Endpunkt konfigurieren können, müssen Sie die erforderlichen E-Mail-Konten konfigurieren. (Siehe E-Mail-Endpunkte konfigurieren.)
 
@@ -33,7 +29,7 @@ Einem Dienst können die folgenden Typen von Endpunkten hinzugefügt werden: Nic
 
 **TaskManager**: Ermöglicht es einem Workspace-Benutzer, den Service aufzurufen.
 
-**Remoting**: Ermöglicht es einem Programm, das mit Flex erstellt wurde, den Service mithilfe von AEM Forms Remoting (für AEM Forms nicht mehr unterstützt) aufzurufen. Ein Remoting-Endpunkt wird automatisch für jeden aktivierten Dienst erstellt. Ein Flex-Ziel mit demselben Namen wie der Endpunkt wird erstellt und Flex-Clients können Remoteobjekte erstellen, die auf dieses Ziel verweisen, um Vorgänge für den entsprechenden Dienst aufzurufen.
+**Remoting**: Ermöglicht es einem Programm, das mit Flex erstellt wurde, den Service mithilfe von AEM Forms Remoting (für AEM Forms nicht mehr unterstützt) aufzurufen. Für jeden aktivierten Dienst wird automatisch ein Remoting-Endpunkt erstellt. Ein Flex-Ziel mit demselben Namen wie der Endpunkt wird erstellt. Flex-Clients können Remote-Objekte erstellen, die auf dieses Ziel verweisen, um Vorgänge für den entsprechenden Dienst aufzurufen.
 
 **SOAP**: Ermöglicht es einem Client-Programm, das mit den AEM Forms-Programmierungs-APIs entwickelt wurde, den Service mithilfe des SOAP-Modus aufzurufen. Ein SOAP-Endpunkt wird automatisch für jeden aktivierten Dienst erstellt. 
 
@@ -43,6 +39,6 @@ Einem Dienst können die folgenden Typen von Endpunkten hinzugefügt werden: Nic
 
 **WSDL**: Ermöglicht es einem Client-Programm, das mit den AEM Forms-Programmierungs-APIs entwickelt wurde, den Service mithilfe der Web Service Definition Language (WSDL) aufzurufen. Die Seite „Core-Konfigurationen“ enthält eine Option zum Aktivieren der WSDL-Generierung für alle AEM Forms-Dienste. (Siehe Allgemeine AEM Forms-Einstellungen konfigurieren.)
 
-**REST**: In Workbench erstellte Prozesse können so konfiguriert werden, dass sie über Representational State Transfer-Anforderungen (REST) aufgerufen werden können. REST-Anforderungen werden von HTML-Seiten aus gesendet. Das heißt, Sie können einen AEM Forms-Prozess direkt von einer Webseite mithilfe einer REST-Anforderung aufrufen.
+**REST**: In Workbench erstellte Prozesse können so konfiguriert werden, dass sie über Representational State Transfer-Anforderungen (REST) aufgerufen werden können. REST-Anfragen werden von HTML-Seiten gesendet. Das heißt, Sie können einen AEM Formularprozess direkt von einer Webseite aus mit einer REST-Anfrage aufrufen.
 
-Die Endpunkte E-Mail, TaskManager, überwachter Ordner und Remoting stellen nur einen bestimmten Vorgang des Dienstes zur Verfügung. Beim Hinzufügen dieser Endpunkte muss in einem zweiten Konfigurationsschritt eine Methode zum Aufrufen des Dienstes, zum Festlegen von Konfigurationsparametern und zum Angeben der Zuordnungen von Eingabe- und Ausgabeparameter ausgewählt werden.
+Die Endpunkte E-Mail, TaskManager, überwachter Ordner und Remoting stellen nur einen bestimmten Vorgang des Dienstes bereit. Das Hinzufügen dieser Endpunkte erfordert einen zweiten Konfigurationsschritt, um eine Methode zum Aufrufen des Dienstes, zum Festlegen von Konfigurationsparametern und zum Festlegen von Zuordnungen von Eingabe- und Ausgabeparametern auszuwählen.

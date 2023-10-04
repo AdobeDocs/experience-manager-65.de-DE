@@ -1,16 +1,14 @@
 ---
 title: Erstellen und Organisieren von Seiten
 description: In diesem Abschnitt wird beschrieben, wie Sie Seiten mit AEM erstellen und verwalten können, damit Sie anschließend Inhalte auf diesen Seiten erstellen können.
-uuid: 47ce137a-7a85-4b79-b4e0-fdf08a9e77bd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 14b8758b-f164-429a-b299-33b0703f8bec
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1909'
+source-wordcount: '1906'
 ht-degree: 99%
 
 ---
@@ -323,7 +321,7 @@ So verschieben oder benennen Sie eine Seite um:
 
 ### Sperren einer Seite {#locking-a-page}
 
-Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page). Informationen darüber, ob eine Seite gesperrt ist, werden ebenfalls an beiden Stellen angezeigt.
+Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#locking-a-page). Informationen zu gesperrten Seiten werden auch an beiden Orten angezeigt.
 
 ### Erstellen eines neuen Ordners {#creating-a-new-folder}
 

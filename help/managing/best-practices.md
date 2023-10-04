@@ -1,22 +1,22 @@
 ---
 title: Verwalten von Projekten – Checkliste mit Best Practices
-description: Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Know-how. Die Checklisten für Projekte bieten eine Zusammenstellung der Best Practices für die Projektabwicklung. Sie führen Sie durch alle Phasen des Projektlebenszyklus und bieten eine allgemeine Überwachung Ihres aktuellen Status.
+description: Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Know-how. Die Checklisten für Projekte bieten eine Zusammenstellung der Best Practices für die Projektabwicklung. Sie führen Sie durch alle Phasen des Projektlebenszyklus und bieten eine allgemeine Überwachung Ihres Status.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '3251'
+source-wordcount: '3240'
 ht-degree: 17%
 
 ---
 
 # Verwalten von Projekten – Checkliste mit Best Practices{#managing-projects-best-practices-checklist}
 
-Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Verständnis, um sicherzustellen, dass Sie sich der Probleme und (damit zusammenhängenden) Entscheidungen bewusst sind, die Sie vor und während der Implementierung des Projekts treffen müssen.
+Die Verwaltung eines Projekts zur Implementierung von Adobe Experience Manager (AEM) erfordert Planung und Verständnis, damit Sie sich der Probleme und (damit zusammenhängenden) Entscheidungen bewusst sind, die Sie vor und während der Implementierung des Projekts treffen müssen.
 
 Die Best Practices beinhalten Folgendes:
 
@@ -25,7 +25,7 @@ Die Best Practices beinhalten Folgendes:
    * Definiert Eingaben und Lieferziele nach Phase, Meilenstein und Persona.
    * Bietet automatisierte Übersichten (Qualität, Zustand und Vollständigkeit) zur Angabe des Fortschritts und des Projektstatus.
 
-* Dokumentation, basierend auf der [Checkliste](/help/managing/best-practices-checklist.md), der Folgendes beschreibt:
+* Die Dokumentation basiert auf der [Checkliste](/help/managing/best-practices-checklist.md) , die Folgendes beschreibt:
 
    * [Projekt-Heartbeat](#projectheartbeat)-Analyse
    * Überblick über den [Status nach Rolle](#status-by-role)
@@ -117,7 +117,7 @@ Die vier Faktoren:
 
 ### Planung {#planning}
 
-Die Planung des Projekts vertieft die Vorbereitung. Hier müssen Sie damit beginnen, die Ziele und Erwartungen in einen klar definierten Fahrplan umzuwandeln, der aus konkreten Aufgaben besteht, die durch klare Kommunikation verbunden sind, mit strengen Überprüfungen zur Messung des Fortschritts.
+Die Planung des Projekts vertieft die Vorbereitung. Hier sollten Sie damit beginnen, die Ziele und Erwartungen in einen klar definierten Fahrplan umzuwandeln, der aus konkreten Aufgaben besteht, die durch klare Kommunikation verbunden sind, mit strengen Überprüfungen zur Messung des Fortschritts.
 
 #### Milestones {#milestones-1}
 
@@ -135,7 +135,7 @@ Die Planung des Projekts vertieft die Vorbereitung. Hier müssen Sie damit begin
 
 * **Kommunikation**
 
-  Kommunikation ist immer der Schlüssel zum Erfolg eines jeden Projekts. Sie müssen klar und effizient kommunizieren, um sicherzustellen, dass jeder:
+  Kommunikation ist immer der Schlüssel zum Erfolg eines jeden Projekts. Vermitteln Sie klar und effizient, um sicherzustellen, dass alle:
 
    * Auf dieselben grundlegenden Ziele hinarbeiten
    * Aus derselben Informationsbasis
@@ -195,7 +195,7 @@ Die Planung der Entwicklung ist entscheidend, um sicherzustellen, dass Ihr Proje
 
   Der Schwerpunkt liegt auf Folgendem:
 
-   * Wie sie miteinander und mit Benutzern interagieren werden.
+   * Interaktion der Benutzer untereinander und mit den Benutzern.
    * Die Daten, die von Anwendungen genutzt und erzeugt werden sollen, anstatt ihrer internen Struktur.
 
   Die Begriffsbestimmungen sollten Folgendes umfassen:
@@ -203,7 +203,7 @@ Die Planung der Entwicklung ist entscheidend, um sicherzustellen, dass Ihr Proje
    * Grundlegende Code-Struktur für das Projekt
    * Code-Artefakte (Pakete, Pakete usw.)
    * Aufschlüsselung der Vorlagen/Komponenten und ihrer Beziehungen
-   * Allgemeine Details der erforderlichen Anpassungen (spezifische Überlagerungen werden später folgen)
+   * Allgemeine Details der erforderlichen Anpassungen (spezifische Überlagerungen folgen später)
    * Entwurf der für die Lösung erforderlichen Workflows (z. B. Inhaltserstellung, Genehmigung, Veröffentlichung, Transformationen, Importe und Exporte)
    * Besondere Berücksichtigung komplexer Module wie MSM, Commerce, Drittanbieterintegration
 
@@ -211,7 +211,7 @@ Die Planung der Entwicklung ist entscheidend, um sicherzustellen, dass Ihr Proje
 
   Für die Systemintegration müssen Sie Folgendes planen (und dann implementieren):
 
-   * Wie alle Teilsysteme und [Lösungsintegrationen](/help/sites-administering/integration.md) zusammengeführt werden, um als einheitliches System zu funktionieren
+   * Wie alle Teilsysteme und [Lösungsintegrationen](/help/sites-administering/integration.md) zusammengeführt werden, um als einheitliches System zu fungieren
    * Integration von Drittanbietersystemen zusammen mit besonderen Überlegungen wie Offline-/Online-, Client-/Browser-seitig oder Fallover-Handhabung bei Ausfall eines Drittanbietersystems
 
 * **Testkonzept**
@@ -570,7 +570,7 @@ Der Sicherheitsleiter:
 
 * Autoren und Endbenutzer
 
-   * Die Personen, die das System verwenden werden, um Ihre Website-Inhalte zu erstellen und zu verwalten.
+   * Die Personen, die das System zur Erstellung und Pflege Ihrer Website-Inhalte verwenden.
 
 ## Erforderliche Dokumente und Ergebnisse {#required-documents-and-deliverables}
 

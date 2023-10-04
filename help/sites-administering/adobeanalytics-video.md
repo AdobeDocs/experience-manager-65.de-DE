@@ -1,26 +1,22 @@
 ---
 title: Konfigurieren von Video-Tracking für Adobe Analytics
-seo-title: Configuring Video Tracking for Adobe Analytics
 description: Erfahren Sie mehr über die Konfiguration des Video-Trackings für SiteCatalyst.
-seo-description: Learn about configuring video tracking for SiteCatalyst.
-uuid: 5a862f05-abfa-42a2-ad40-4c1c32f1bd75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1747'
-ht-degree: 79%
+ht-degree: 73%
 
 ---
 
 # Konfigurieren von Video-Tracking für Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
-Es gibt verschiedene Methoden zum Verfolgen von Videoereignissen. Zwei davon sind veraltete Optionen für ältere Versionen von Adobe Analytics. Diese Legacy-Option ist: Legacy-Meilensteine und Legacy Seconds.
+Es gibt verschiedene Methoden zum Verfolgen von Videoereignissen. Zwei davon sind veraltete Optionen für ältere Versionen von Adobe Analytics. Diese veraltete Option sind: Legacy Milestones und Legacy Seconds.
 
 >[!NOTE]
 >
@@ -57,7 +53,7 @@ Mit der folgenden Vorgehensweise können Sie ein Framework für das Videotrackin
 
 Die Meilensteinmethode verfolgt die meisten Informationen über das Video, ist stark anpassbar und leicht zu konfigurieren.
 
-Um die Meilensteinmethode zu verwenden, geben Sie zeitbasierte Tracking-Offsets an, um die Meilensteine zu definieren. Wenn eine Videowiedergabe einen Milestone erreicht, ruft die Seite Adobe Analytics auf, um das Ereignis nachzuverfolgen. Für jeden Milestone, den Sie definieren, erstellt die Komponente eine CQ-Variable, die Sie einer Adobe Analytics-Eigenschaft zuordnen können. Der Name dieser CQ-Variablen verwendet das folgende Format:
+Um die Meilensteinmethode zu verwenden, geben Sie zeitbasierte Tracking-Offsets an, um die Meilensteine zu definieren. Wenn eine Videowiedergabe einen Milestone erreicht, ruft die Seite Adobe Analytics auf, um das Ereignis nachzuverfolgen. Für jeden von Ihnen definierten Meilenstein erstellt die Komponente eine CQ-Variable, die Sie einer Adobe Analytics-Eigenschaft zuordnen können. Der Name dieser CQ-Variablen verwendet das folgende Format:
 
 ```shell
 eventdata.events.milestoneXX
@@ -85,11 +81,11 @@ In der folgenden Tabelle sind die standardmäßigen CQ-Variablen beschrieben, di
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den Namen der Datei. Wird nur zusammen mit eventdata.events.a.media.view gesendet </td>
+   <td>Variablen, die diesem zugeordnet sind, enthalten den Namen der Datei. Wird nur zusammen mit eventdata.events.a.media.view gesendet </td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den Pfad der Datei auf dem Server. Wird nur zusammen mit eventdata.events.a.media.view gesendet </td>
+   <td>Variablen, die diesem zugeordnet sind, enthalten den Pfad der Datei auf dem Server. Wird nur zusammen mit eventdata.events.a.media.view gesendet </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.segmentView </td>
@@ -250,7 +246,7 @@ Die Nicht-Legacy-Meilensteinmethode ähnelt der Meilensteinmethode, mit der Ausn
 
 * Wenn eine Videowiedergabe einen Milestone erreicht, ruft die Seite Adobe Analytics auf, um das Ereignis nachzuverfolgen.
 * Der [statische Satz an CQ-Variablen](#cqvars), die für die Zuordnung zu Adobe Analytics-Eigenschaften definiert sind.
-* Für jeden Milestone, den Sie definieren, erstellt die Komponente eine CQ-Variable, die Sie einer Adobe Analytics-Eigenschaft zuordnen können.
+* Für jeden von Ihnen definierten Meilenstein erstellt die Komponente eine CQ-Variable, die Sie einer Adobe Analytics-Eigenschaft zuordnen können.
 
 Der Name dieser CQ-Variablen verwendet das folgende Format:
 
@@ -302,11 +298,11 @@ Diese Methode ähnelt der Milestones-Methode mit dem Unterschied, dass die in de
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Variablen, die dieser Eigenschaft zugeordnet sind, enthalten den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   <td>Variablen, die diesem zugeordnet sind, enthalten den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Hier zugeordnete Variablen enthalten den Dateipfad auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   <td>Die dieser Variablen zugeordnete Variable enthält den Pfad der Datei auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
   </tr>
  </tbody>
 </table>
@@ -359,11 +355,11 @@ Bei Nutzung der **Legacy Seconds**-Methode werden Adobe Analytics-Aufrufe alle N
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
-   <td>Die dieser Eigenschaft zugeordnete Variable enthält den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   <td>Die dieser Variablen zugeordnete Variable enthält den Namen der Datei. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
   </tr>
   <tr>
    <td>eventdata.videoFilePath </td>
-   <td>Hier zugeordnete Variablen enthalten den Dateipfad auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
+   <td>Die dieser Variablen zugeordnete Variable enthält den Pfad der Datei auf dem Server. Nur einmal gesendet, zu Beginn der Videowiedergabe.</td>
   </tr>
  </tbody>
 </table>
@@ -374,7 +370,7 @@ Bei Nutzung der **Legacy Seconds**-Methode werden Adobe Analytics-Aufrufe alle N
 
 1. Ordnen Sie diese Variablen prop1, prop2 und prop3 zu
 
-   Die **der übrigen einschlägigen Informationen** im Aufruf wird mit **one** Variable namens **pev3**.
+   Die **der übrigen einschlägigen Informationen** im Aufruf wird zusammen mit **one** Variable namens **pev3**.
 
    Aufrufe an Adobe Analytics mit dem gezeigten Beispiel sollten wie folgt aussehen, wenn Sie sie mit DigitalPulse Debugger anzeigen:
 

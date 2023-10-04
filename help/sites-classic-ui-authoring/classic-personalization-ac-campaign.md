@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1168'
-ht-degree: 53%
+source-wordcount: '1167'
+ht-degree: 50%
 
 ---
 
@@ -115,7 +115,7 @@ Sie können E-Mail-Inhalte in der klassischen oder der Touch-optimierten Benutze
 
 Beim Bearbeiten des Inhalts können Sie Folgendes einfügen:
 
-* Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Felder, die Sie in Ihren Text einfügen können und die sich automatisch je nach Daten des Empfängers ändern (beispielsweise Vor- und Nachname oder andere Daten der Zieldimension).
+* Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Felder, die Sie in Ihren Text einfügen können und die sich entsprechend den Empfängerdaten anpassen (z. B. Vorname, Nachname oder Daten der Zieldimension).
 * Adobe Campaign-Personalisierungsblöcke. Hierbei handelt es sich um Blöcke mit vorkonfiguriertem Inhalt, die sich nicht auf die Daten des Empfängers beziehen (beispielsweise Logo der Marke oder Link zu einer Mirrorseite).
 
 Siehe [Adobe Campaign-Komponenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) für eine vollständige Beschreibung der Kampagnenkomponenten.

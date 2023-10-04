@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1193'
 ht-degree: 1%
 
 ---
@@ -33,7 +33,7 @@ Bei der ersten Ankunft auf der veröffentlichten Site wäre der Site-Besucher in
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
-![authorVeröffentlicht](assets/authorpublished.png)
+![author veröffentlicht](assets/authorpublished.png)
 
 ## Anonymer Site-Besucher {#anonymous-site-visitor}
 
@@ -56,11 +56,11 @@ Bei einer bekannten Einschränkung wird der Community-Site-Inhalt anonymen Besuc
 
 Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff anonymer Benutzer durch jcr-Inhalte und JSON zu schützen:
 
-1. Wechseln Sie in der AEM-Autoreninstanz zu https:// Hostname: port/editor.html/content/site/sitename.html.
+1. Wechseln Sie auf AEM Autoreninstanz zu https:// Hostname: port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
-   >Gehen Sie nicht zur lokalisierten Site.
+   >Besuchen Sie nicht die lokalisierte Site.
 
 1. Navigieren Sie zu **Seiteneigenschaften**.
 
@@ -72,7 +72,7 @@ Gehen Sie wie folgt vor, um den Inhalt Ihrer Community-Site vor dem Zugriff anon
 
    ![site-authentication](assets/site-authentication.png)
 
-1. Fügen Sie den Pfad der Anmeldeseite hinzu. Beispiel: **/content/....../GetStarted**.
+1. Fügen Sie den Pfad der Anmeldeseite hinzu. Beispiel: **/content/........../GetStarted**.
 1. Veröffentlichen Sie die Seite.
 
 ## Vertrauenswürdiger Community-Mitglied {#trusted-community-member}
@@ -119,7 +119,7 @@ Besucher der Site können Beiträge auf verschiedene Weise anzeigen und sortiere
 
 ### Gruppenlink {#groups-link}
 
-Da Aaron ein Gruppenadministrator ist, kann Aaron mithilfe des Gruppenlinks eine neue Community-Gruppe erstellen, indem es eine Gruppenvorlage und ein Bild auswählt, ob die Gruppe offen oder geheim ist, und Mitglieder einlädt.
+Da Aaron ein Gruppenadministrator ist, kann Aaron durch Auswahl des Links Gruppen eine neue Community-Gruppe erstellen, indem es eine Gruppenvorlage und ein Bild auswählt, ob die Gruppe offen oder geheim ist, und Mitglieder einlädt.
 
 Dies ist ein Beispiel, bei dem eine Gruppe in der Veröffentlichungsumgebung erstellt wird.
 
@@ -130,7 +130,7 @@ Gruppen können auch in der Autorenumgebung erstellt und innerhalb der Community
 Erstellen einer Referenzgruppe:
 
 1. Auswählen **Neue Gruppe**
-1. **Registerkarte Einstellungen**
+1. **Registerkarte &quot;Einstellungen&quot;**
 
    * Gruppenname : `Sports`
    * Beschreibung : `A parent group for various sporting groups`.
@@ -145,7 +145,7 @@ Erstellen einer Referenzgruppe:
 
    ![creategroup](assets/creategroup.png)
 
-Nachdem eine neue Gruppe erstellt wurde, **die neue Gruppe &quot;Sport&quot;auswählen** , um zwei (verschachtelte) Gruppen darin zu erstellen. Da eine Site-Struktur nicht mit der Funktion &quot;Gruppen&quot;beginnen kann, müssen Sie nach dem Öffnen der Gruppe &quot;Sport&quot;den Link Gruppen auswählen:
+Nach Erstellung der neuen Gruppe **die neue Gruppe &quot;Sport&quot;auswählen** , um zwei (verschachtelte) Gruppen darin zu erstellen. Da eine Site-Struktur nicht mit der Funktion &quot;Gruppen&quot;beginnen kann, müssen Sie nach dem Öffnen der Gruppe &quot;Sport&quot;den Link Gruppen auswählen:
 
 ![grouplink1](assets/grouplink1.png)
 
@@ -188,11 +188,11 @@ Melden Sie sich weiterhin als Aaron McDonald an und sehen Sie sich die Gruppen i
 
 Nur die Baseballgruppe wird sichtbar sein.
 
-Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und navigieren Sie zum selben Speicherort. Beachten Sie, dass Weston `Join` die Öffnung `Baseball` Gruppe und entweder `enter or Leave` private `Gymnastics` hinzugefügt.
+Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und navigieren Sie zum selben Speicherort. Beachten Sie, dass Weston `Join` die Öffnung `Baseball` -Gruppe und entweder `enter or Leave` private `Gymnastics` hinzugefügt.
 
 ![grouplink3](assets/grouplink3.png)
 
-### Link zur Webseite {#web-page-link}
+### Web-Seiten-Link {#web-page-link}
 
 Zeigen Sie die grundlegende Webseite der Site an, indem Sie den Link Webseite auswählen. Die standardmäßigen AEM-Authoring-Tools können verwendet werden, um Inhalte zu dieser Seite in der Autorenumgebung hinzuzufügen.
 
@@ -202,7 +202,7 @@ Gehen Sie beispielsweise zu **author** -Instanz, öffnen Sie die `engage` im Ord
 
 ### Moderationslink {#moderationlink}
 
-Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, wird der Moderations-Link angezeigt und durch seine Auswahl wird der veröffentlichte Community-Inhalt angezeigt und kann [moderiert](/help/communities/moderate-ugc.md) in einer Weise, die dem [Moderationskonsole](/help/communities/moderation.md) in der Autorenumgebung.
+Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, wird der Moderations-Link angezeigt und durch seine Auswahl wird der veröffentlichte Community-Inhalt angezeigt und kann [moderiert](/help/communities/moderate-ugc.md) in ähnlicher Weise wie die [Moderationskonsole](/help/communities/moderation.md) in der Autorenumgebung.
 
 Verwenden Sie die Zurück-Schaltfläche des Browsers, um zur veröffentlichten Site zurückzukehren. Die meisten Konsolen können nicht über die globale Navigation in der Veröffentlichungsumgebung aufgerufen werden.
 

@@ -1,15 +1,13 @@
 ---
 title: Verwaltungskonsolen für Mitglieder und Gruppen
 description: Zugriff auf die Verwaltungskonsolen für Mitglieder und Gruppen
-uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 4%
@@ -29,7 +27,7 @@ Verwenden der Communitys Mitglieder und Gruppen, Mitglieder und Mitgliedergruppe
 
 ### Benutzer in der Autoreninstanz {#users-on-author}
 
-Für die Verwaltung von Benutzern und Gruppen, die im *author* ist erforderlich, um die Sicherheitskonsole der Plattform zu verwenden:
+Für die Verwaltung von Benutzern und Gruppen, die im *author* -Umgebung verwenden, ist es erforderlich, die Sicherheitskonsole der Plattform zu verwenden:
 
 * Wählen Sie in der globalen Navigation die Option **[!UICONTROL Instrumente]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Benutzer]**.
 * Wählen Sie in der globalen Navigation die Option **[!UICONTROL Instrumente]** > **[!UICONTROL Sicherheit]** > **[!UICONTROL Gruppen]**.
@@ -46,7 +44,7 @@ Um in der Autorenumgebung zur Mitgliederkonsole für die Verwaltung von in der V
 
 >[!CAUTION]
 >
->Die Mitgliederkonsole kann nicht verwendet werden, wenn die Variable [Tunneldienst](deploy-communities.md#tunnel-service-on-author) nicht aktiviert ist.
+>Es ist nicht möglich, die Mitgliederkonsole zu verwenden, wenn die [Tunneldienst](deploy-communities.md#tunnel-service-on-author) nicht aktiviert ist.
 
 ![Die Mitgliederkonsole](assets/member-console1.png)
 
@@ -59,7 +57,7 @@ Wählen Sie auf der linken Seite des `Members` -Kopfzeile, um das seitliche Such
 
 ![Filteroptionen für die Mitgliederkonsole](assets/member-console2.png)
 
-Wählen Sie auf der linken Seite des `Members` -Kopfzeile, um das seitliche Bedienfeld für die Suche zu deaktivieren.
+Wählen Sie das Suchsymbol auf der linken Seite des `Members` -Kopfzeile, um das seitliche Bedienfeld für die Suche zu deaktivieren.
 
 ### Mitgliederstatistiken {#member-statistics}
 
@@ -77,7 +75,7 @@ Die Spaltenüberschriften sind
 
 Auswählen `Create Member` , um einen Benutzer in der Veröffentlichungsumgebung zu erstellen.
 
-![Das Fenster Neues Mitglied erstellen](assets/create-member1.png)
+![Fenster &quot;Neues Mitglied erstellen&quot;](assets/create-member1.png)
 
 ### ALLGEMEINE - Mitgliederdetails {#general-member-details}
 
@@ -131,7 +129,7 @@ Siehe [Beitragsgrenzen der Mitgliedstaaten](limits.md).
 
 * **[!UICONTROL Kennwort ändern]**
 
-  Ein Link, der beim Ändern eines vorhandenen Mitglieds vorhanden ist. Bietet die Möglichkeit für einen Community-Administrator, ein Kennwort für ein Mitglied zurückzusetzen.
+  Ein Link, der beim Ändern eines vorhandenen Mitglieds vorhanden ist. Ermöglicht es einem Community-Administrator, ein Kennwort für ein Mitglied zurückzusetzen.
 
 ### ALLGEMEIN - Foto {#general-photo}
 
@@ -202,7 +200,7 @@ Die erforderlichen Felder zum Erstellen einer neuen veröffentlichungsseitigen M
 
 ## Autorisierte Administratoren {#authorized-administrators}
 
-Bei der Arbeit mit Mitgliedern in der Mitgliederkonsole von Communities ist es erforderlich, sich als Benutzer mit entsprechenden Berechtigungen und für den Replikationsagenten anzumelden, der von der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) korrekt konfiguriert werden.
+Bei der Arbeit mit Mitgliedern in der Mitgliederkonsole von Communities ist es erforderlich, sich als Benutzer mit entsprechenden Berechtigungen und für den Replikationsagenten, der von der [Tunneldienst](deploy-communities.md#tunnel-service-on-author) korrekt konfiguriert werden.
 
 Wenn nicht angemeldet als `admin`, muss der angemeldete Benutzer Mitglied der `administrators` Benutzergruppe.
 

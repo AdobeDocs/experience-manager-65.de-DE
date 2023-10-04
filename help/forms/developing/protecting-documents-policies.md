@@ -1,20 +1,16 @@
 ---
 title: Schützen von Dokumenten durch Richtlinien
-seo-title: Protecting Documents with Policies
 description: Verwenden Sie den Document Security-Service, um Vertraulichkeitseinstellungen dynamisch auf Adobe PDF-Dokumente anzuwenden und die Kontrolle über die Dokumente zu behalten. Der Document Security-Service ermöglicht es den Benutzern außerdem, die Kontrolle darüber zu behalten, wie Empfänger das richtliniengeschützte PDF-Dokument verwenden.
-seo-description: Use the Document Security service to dynamically apply confidentiality settings to Adobe PDF documents and to maintain control over the documents. The Document Security service also enables the users to maintain control over how recipients use the policy-protected PDF document.
-uuid: 6feb69ef-7b61-4d0b-8c87-d65d98bae9b5
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: ht
-source-wordcount: '15514'
-ht-degree: 100%
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
+source-wordcount: '15513'
+ht-degree: 84%
 
 ---
 
@@ -26,7 +22,7 @@ ht-degree: 100%
 
 Der Document Security-Service ermöglicht es Benutzern, Vertraulichkeitseinstellungen dynamisch auf Adobe PDF-Dokumente anzuwenden und die Kontrolle über die Dokumente zu behalten, unabhängig davon, wie weit sie verteilt werden.
 
-Der Document Security-Service verhindert, dass Informationen über die Reichweite des Benutzers hinweg verteilt werden, indem er es Benutzern ermöglicht, die Kontrolle darüber zu behalten, wie Empfänger das richtliniengeschützte PDF-Dokument verwenden. Benutzer können angeben, wer ein Dokument öffnen kann, einschränken, wie es verwendet werden kann, und das Dokument nach seiner Verteilung überwachen. Benutzer können auch den Zugriff auf ein richtliniengeschütztes Dokument dynamisch steuern und sogar den Zugriff auf das Dokument dynamisch sperren.
+Der Document Security-Dienst verhindert, dass Informationen über die Reichweite des Benutzers hinaus verbreitet werden, indem er es Benutzern ermöglicht, die Kontrolle darüber zu behalten, wie Empfänger das richtliniengeschützte PDF-Dokument verwenden. Benutzer können angeben, wer ein Dokument öffnen kann, einschränken, wie es verwendet werden kann, und das Dokument nach seiner Verteilung überwachen. Benutzer können auch den Zugriff auf ein richtliniengeschütztes Dokument dynamisch steuern und sogar den Zugriff auf das Dokument dynamisch sperren.
 
 Der Document Security-Service schützt auch andere Dateitypen wie Microsoft Word-Dateien (DOC-Dateien). Sie können die Document Security Client-API verwenden, um mit diesen Dateitypen zu arbeiten. Die folgenden Versionen werden unterstützt:
 
@@ -219,7 +215,7 @@ Erstellen Sie eine Richtlinie mithilfe der Document Security-API (Java):
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-rightsmanagement-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein Document Security-Client-API-Objekt.
 
@@ -228,32 +224,33 @@ Erstellen Sie eine Richtlinie mithilfe der Document Security-API (Java):
 
 1. Legen Sie die Attribute der Richtlinie fest.
 
-   * Erstellen Sie ein `Policy`-Objekt, indem Sie die statische `createPolicy`-Methode des `InfomodelObjectFactory`-Objekts aufrufen. Diese Methode gibt ein `Policy`-Objekt zurück.
-   * Legen Sie das Namensattribut der Richtlinie fest, indem Sie die `setName`-Methode des `Policy`-Objekts aufrufen und ihr einen Zeichenfolgenwert übergeben, der den Richtliniennamen angibt.
-   * Legen Sie die Beschreibung der Richtlinie fest, indem Sie die `setDescription`-Methode des `Policy`-Objekts aufrufen und ihr einen Zeichenfolgenwert übergeben, der die Beschreibung der Richtlinie enthält.
-   * Legen Sie den Richtliniensatz fest, zu dem die neue Richtlinie gehört, indem Sie die `setPolicySetName`-Methode des `Policy`-Objekts aufrufen und ihr einen Zeichenfolgenwert übergeben, der den Namen des Richtliniensatzes angibt. (Sie können für diesen Parameter den Wert `null` angeben, der dazu führt, dass die Richtlinie dem Richtliniensatz *Meine Richtlinien* hinzugefügt wird.)
-   * Erstellen Sie den Gültigkeitszeitraum der Richtlinie, indem Sie die statische `createValidityPeriod`-Methode des `InfomodelObjectFactory`-Objekts aufrufen. Diese Methode gibt ein `ValidityPeriod`-Objekt zurück.
-   * Legen Sie die Anzahl der Tage fest, die auf ein richtliniengeschütztes Dokument zugegriffen werden kann, indem Sie die `setRelativeExpirationDays`-Methode des `ValidityPeriod`-Objekts aufrufen und ihr einen ganzzahligen Wert übergeben, der die Anzahl der Tage angibt.
-   * Legen Sie den Gültigkeitszeitraum der Richtlinie fest, indem Sie die `setValidityPeriod`-Methode des `Policy`-Objekts aufrufen und ihr das `ValidityPeriod`-Objekt übergeben.
+   * Erstellen Sie eine `Policy` -Objekt durch Aufrufen der `InfomodelObjectFactory` Statisches Objekt `createPolicy` -Methode. Diese Methode gibt ein `Policy`-Objekt zurück.
+   * Legen Sie das Namensattribut der Richtlinie fest, indem Sie die `Policy` -Objekt `setName` -Methode verwenden und einen string -Wert übergeben, der den Richtliniennamen angibt.
+   * Legen Sie die Beschreibung der Richtlinie fest, indem Sie die `Policy` -Objekt `setDescription` -Methode verwenden und einen string -Wert übergeben, der die Beschreibung der Richtlinie angibt.
+   * Geben Sie den Richtliniensatz an, zu dem die neue Richtlinie gehört, indem Sie die `Policy` -Objekt `setPolicySetName` -Methode verwenden und einen string -Wert übergeben, der den Namen des Richtliniensatzes angibt. (Sie können für diesen Parameter den Wert `null` angeben, der dazu führt, dass die Richtlinie dem Richtliniensatz *Meine Richtlinien* hinzugefügt wird.)
+   * Erstellen Sie den Gültigkeitszeitraum der Richtlinie durch Aufrufen der `InfomodelObjectFactory` Statisches Objekt `createValidityPeriod` -Methode. Diese Methode gibt ein `ValidityPeriod`-Objekt zurück.
+   * Legen Sie die Anzahl der Tage fest, für die ein richtliniengeschütztes Dokument zugänglich ist, indem Sie die `ValidityPeriod` -Objekt `setRelativeExpirationDays` -Methode verwenden und einen ganzzahligen Wert übergeben, der die Anzahl der Tage angibt.
+   * Legen Sie den Gültigkeitszeitraum der Richtlinie fest, indem Sie die `Policy` -Objekt `setValidityPeriod` -Methode und Übergabe der `ValidityPeriod` -Objekt.
 
 1. Erstellen Sie einen Richtlinieneintrag.
 
-   * Erstellen Sie einen Richtlinieneintrag, indem Sie die statische `createPolicyEntry`-Methode des `InfomodelObjectFactory`-Objekts aufrufen. Diese Methode gibt ein `PolicyEntry`-Objekt zurück.
-   * Geben Sie die Berechtigungen der Richtlinie an, indem Sie die statische `createPermission`-Methode des `InfomodelObjectFactory`-Objekts aufrufen. Übergeben Sie ein statisches Datenelement, das zur `Permission`-Schnittstelle gehört, die die Berechtigung darstellt. Diese Methode gibt ein `Permission`-Objekt zurück. Um beispielsweise die Berechtigung hinzuzufügen, die es Benutzern ermöglicht, Daten aus einem richtliniengeschützten PDF-Dokument zu kopieren, übergeben Sie `Permission.COPY`. (Wiederholen Sie diesen Schritt für jede hinzuzufügende Berechtigung.)
-   * Fügen Sie die Berechtigung zum Richtlinieneintrag hinzu, indem Sie die `addPermission`-Methode des `PolicyEntry`-Objekts aufrufen und ihr das `Permission`-Objekt übergeben. (Wiederholen Sie diesen Schritt für jedes `Permission`-Objekt, das Sie erstellt haben.)
-   * Erstellen Sie den Richtlinienprinzipal, indem Sie die statische `createSpecialPrincipal`-Methode des `InfomodelObjectFactory`-Objekts aufrufen. Übergeben Sie ein Datenelement, das zu dem `InfomodelObjectFactory`-Objekt, das den Prinzipal darstellt, gehört. Diese Methode gibt ein `Principal`-Objekt zurück. Um beispielsweise den Herausgeber des Dokuments als Prinzipal hinzuzufügen, übergeben Sie `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
-   * Fügen Sie den Prinzipal zum Richtlinieneintrag hinzu, indem Sie die `setPrincipal`-Methode des `PolicyEntry`-Objekts aufrufen und ihr das `Principal`-Objekt übergeben.
-   * Fügen Sie den Richtlinieneintrag zur Richtlinie hinzu, indem Sie die `addPolicyEntry`-Methode des `Policy`-Objekts aufrufen und ihr das `PolicyEntry`-Objekt übergeben.
+   * Erstellen Sie einen Richtlinieneintrag durch Aufrufen der `InfomodelObjectFactory` Statisches Objekt `createPolicyEntry` -Methode. Diese Methode gibt ein `PolicyEntry`-Objekt zurück.
+   * Geben Sie die Berechtigungen der Richtlinie an, indem Sie die `InfomodelObjectFactory` Statisches Objekt `createPermission` -Methode. Übergeben Sie ein statisches Datenelement, das zur `Permission`-Schnittstelle gehört, die die Berechtigung darstellt. Diese Methode gibt ein `Permission`-Objekt zurück. Um beispielsweise die Berechtigung hinzuzufügen, die es Benutzern ermöglicht, Daten aus einem richtliniengeschützten PDF-Dokument zu kopieren, übergeben Sie `Permission.COPY`. (Wiederholen Sie diesen Schritt für jede hinzuzufügende Berechtigung.)
+   * Hinzufügen der Berechtigung zum Richtlinieneintrag durch Aufrufen der `PolicyEntry` -Objekt `addPermission` -Methode und Übergabe der `Permission` -Objekt. (Wiederholen Sie diesen Schritt für jedes `Permission`-Objekt, das Sie erstellt haben.)
+   * Erstellen Sie den Richtlinienprinzipal durch Aufrufen der `InfomodelObjectFactory` Statisches Objekt `createSpecialPrincipal` -Methode. Übergeben Sie ein Datenelement, das zu dem `InfomodelObjectFactory`-Objekt, das den Prinzipal darstellt, gehört. Diese Methode gibt ein `Principal`-Objekt zurück. Um beispielsweise den Herausgeber des Dokuments als Prinzipal hinzuzufügen, übergeben Sie `InfomodelObjectFactory.PUBLISHER_PRINCIPAL`.
+   * Fügen Sie den Prinzipal zum Richtlinieneintrag hinzu, indem Sie die `PolicyEntry` -Objekt `setPrincipal`-Methode und Übergabe der `Principal` -Objekt.
+   * Fügen Sie den Richtlinieneintrag zur Richtlinie hinzu, indem Sie die `Policy` -Objekt `addPolicyEntry` -Methode und Übergabe der `PolicyEntry` -Objekt.
 
 1. Registrieren Sie die Richtlinie.
 
-   * Erstellen Sie ein `PolicyManager`-Objekt, indem Sie die `getPolicyManager`-Methode des `DocumentSecurityClient`-Objekts aufrufen.
-   * Registrieren Sie die Richtlinie, indem Sie die `registerPolicy`-Methode des `PolicyManager`-Objekts aufrufen und ihr folgende Werte übergeben:
+   * Erstellen Sie eine `PolicyManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getPolicyManager` -Methode.
+   * Registrieren Sie die Richtlinie, indem Sie die `PolicyManager` -Objekt `registerPolicy` -Methode verwenden und die folgenden Werte übergeben:
 
       * Das `Policy`-Objekt, das die zu registrierende Richtlinie darstellt.
+
    * Einen Zeichenfolgenwert für den Richtliniensatz, zu dem die Richtlinie gehört.
 
-   Wenn Sie ein innerhalb der Verbindungseinstellungen ein AEM Forms-Administratorkonto verwenden, um das `DocumentSecurityClient`-Objekt zu erstellen, geben Sie den Namen des Richtliniensatzes an, wenn Sie die Methode `registerPolicy` aufrufen. Wenn Sie einen Wert `null` für den Richtliniensatz übergeben, wird die Richtlinie im Richtliniensatz *Meine Richtlinien* des Administrators erstellt.
+   Wenn Sie in den Verbindungseinstellungen ein AEM Forms-Administratorkonto verwenden, erstellen Sie die `DocumentSecurityClient` -Objekt ein und geben Sie dann den Namen des Richtliniensatzes an, wenn Sie die `registerPolicy` -Methode. Wenn Sie einen Wert `null` für den Richtliniensatz übergeben, wird die Richtlinie im Richtliniensatz *Meine Richtlinien* des Administrators erstellt.
 
    Wenn Sie einen Document Security-Benutzer in den Verbindungseinstellungen verwenden, können Sie die überladene Methode `registerPolicy` aufrufen, die nur die Richtlinie akzeptiert. Das heißt, Sie müssen den Richtliniensatznamen nicht angeben. Die Richtlinie wird jedoch zu dem Richtliniensatz mit dem Namen *Meine Richtlinien* hinzugefügt. Wenn Sie die neue Richtlinie nicht zu diesem Richtliniensatz hinzufügen möchten, geben Sie beim Aufrufen der Methode `registerPolicy` einen Richtliniensatznamen an.
 
@@ -282,23 +279,23 @@ So erstellen Sie eine Richtlinie mithilfe der Document Security-API (Webservice)
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Legen Sie die Attribute der Richtlinie fest.
 
    * Erstellen Sie ein Objekt `PolicySpec`, indem Sie den Konstruktor verwenden.
-   * Legen Sie den Namen der Richtlinie fest, indem Sie dem Datenelement `name` des `PolicySpec`-Objekts einen Zeichenfolgenwert zuweisen.
-   * Legen Sie die Beschreibung der Richtlinie fest, indem Sie dem Datenelement `description` des Objekts `PolicySpec` einen Zeichenfolgenwert zuweisen.
-   * Legen Sie den Richtliniensatz fest, zu dem die Richtlinie gehören soll, indem Sie dem Datenelement `policySetName` des `PolicySpec`-Objekts einen Zeichenfolgenwert zuweisen. Sie müssen den Namen eines bestehenden Richtliniensatzes angeben. (Sie können für diesen Parameterwert `null` angeben, was dazu führt, dass die Richtlinie zu *Meine Richtlinien* hinzugefügt wird).
-   * Legen Sie die Offline-Nutzungsdauer der Richtlinie fest, indem Sie dem Datenelement `offlineLeasePeriod` des `PolicySpec`-Objekts einen Ganzzahlwert zuweisen.
-   * Belegen Sie das Datenelement `policyXml` des `PolicySpec`-Objekts mit einem Zeichenfolgenwert, der PDRL-XML-Daten darstellt. Um diese Aufgabe durchzuführen, erstellen Sie ein .NET `StreamReader`-Objekt mithilfe seines Konstruktors. Übergeben Sie den Speicherort einer PDRL-XML-Datei, die die Richtlinie darstellt, an den `StreamReader`-Konstruktor. Rufen Sie anschließend die Methode `ReadLine` des `StreamReader`-Objekts auf und weisen Sie den Rückgabewert einer Zeichenfolgenvariablen zu. Iterieren Sie durch das `StreamReader`-Objekt, bis die Methode `ReadLine` null zurückgibt. Weisen Sie die Zeichenfolgenvariable dem Datenelement `policyXml` des `PolicySpec`-Objekts zu.
+   * Legen Sie den Namen der Richtlinie fest, indem Sie dem `PolicySpec` -Objekt `name` Datenelement.
+   * Legen Sie die Beschreibung der Richtlinie fest, indem Sie dem `PolicySpec` -Objekt `description` Datenelement.
+   * Geben Sie den Richtliniensatz an, zu dem die Richtlinie gehört, indem Sie dem `PolicySpec` -Objekt `policySetName` Datenelement. Sie müssen den Namen eines bestehenden Richtliniensatzes angeben. (Sie können für diesen Parameterwert `null` angeben, was dazu führt, dass die Richtlinie zu *Meine Richtlinien* hinzugefügt wird).
+   * Legen Sie die Offline-Nutzungsdauer der Richtlinie fest, indem Sie dem `PolicySpec` -Objekt `offlineLeasePeriod` Datenelement.
+   * Legen Sie die `PolicySpec` -Objekt `policyXml` -Datenelement mit einem string -Wert, der PDRL-XML-Daten darstellt. Um diese Aufgabe durchzuführen, erstellen Sie ein .NET `StreamReader`-Objekt mithilfe seines Konstruktors. Übergeben Sie den Speicherort einer PDRL-XML-Datei, die die Richtlinie darstellt, an den `StreamReader`-Konstruktor. Rufen Sie als Nächstes die `StreamReader` -Objekt `ReadLine` -Methode und weisen Sie den Rückgabewert einer Zeichenfolgenvariablen zu. Iterieren Sie durch das `StreamReader`-Objekt, bis die Methode `ReadLine` null zurückgibt. Weisen Sie die Zeichenfolgenvariable dem `PolicySpec` -Objekt `policyXml` Datenelement.
 
 1. Erstellen Sie einen Richtlinieneintrag.
 
@@ -306,12 +303,12 @@ So erstellen Sie eine Richtlinie mithilfe der Document Security-API (Webservice)
 
 1. Registrieren Sie die Richtlinie.
 
-   Registrieren Sie die Richtlinie, indem Sie die Methode `registerPolicy` des `DocumentSecurityServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
+   Registrieren Sie die Richtlinie, indem Sie die `DocumentSecurityServiceClient` -Objekt `registerPolicy` -Methode verwenden und die folgenden Werte übergeben:
 
    * Das `PolicySpec`-Objekt, das die zu registrierende Richtlinie darstellt.
    * Ein Zeichenfolgenwert, der den Richtliniensatz darstellt, zu dem die Richtlinie gehört. Sie können einen Wert `null` angeben, was dazu führt, dass die Richtlinie zum Richtliniensatz *Meine Richtlinien* hinzugefügt wird.
 
-   Wenn Sie innerhalb der Verbindungseinstellungen ein AEM Forms-Administratorkonto verwenden, um das `DocumentSecurityClient`-Objekt zu erstellen, geben Sie den Namen des Richtliniensatzes an, wenn Sie die Methode `registerPolicy` aufrufen.
+   Wenn Sie in den Verbindungseinstellungen ein AEM Forms-Administratorkonto verwenden, erstellen Sie die `DocumentSecurityClient` -Objekt, geben Sie den Richtliniensatznamen an, wenn Sie die `registerPolicy` -Methode.
 
    Wenn Sie in den Verbindungseinstellungen einen Document Security-Benutzer verwenden, können Sie die überladene `registerPolicy`-Methode aufrufen, die nur die Richtlinie akzeptiert. Das heißt, Sie müssen den Richtliniensatznamen nicht angeben. Die Richtlinie wird jedoch zu dem Richtliniensatz mit dem Namen *Meine Richtlinien* hinzugefügt. Wenn Sie die neue Richtlinie nicht zu diesem Richtliniensatz hinzufügen möchten, geben Sie beim Aufrufen der Methode `registerPolicy` einen Richtliniensatznamen an.
 
@@ -362,7 +359,7 @@ Sie müssen eine bestehende Richtlinie abrufen, um sie zu ändern. Um eine Richt
 
 Um eine Richtlinie zu ändern, ändern Sie den Wert von Richtlinienattributen. Das einzige Richtlinienattribut, das Sie nicht ändern können, ist das Namensattribut. Um beispielsweise die Offline-Nutzungsdauer der Richtlinie zu ändern, können Sie den Wert des Attributs für die Offline-Nutzungsdauer der Richtlinie ändern.
 
-Wenn Sie die Offline-Nutzungsdauer einer Richtlinie mithilfe eines Webservices ändern, wird das Feld `offlineLeasePeriod` an der Schnittstelle `PolicySpec` ignoriert. Um die Offline-Nutzungsdauer zu aktualisieren, ändern Sie die Element `OfflineLeasePeriod` im PDRL-XML-Dokument. Verweisen Sie dann auf das aktualisierte PDRL-XML-Dokument, indem Sie das Datenelement `policyXML` der Schnittstelle `PolicySpec` verwenden.
+Wenn Sie die Offline-Nutzungsdauer einer Richtlinie mithilfe eines Webdiensts ändern, wird die Variable `offlineLeasePeriod` im Feld `PolicySpec` -Benutzeroberfläche ignoriert wird. Um die Offline-Nutzungsdauer zu aktualisieren, ändern Sie die Element `OfflineLeasePeriod` im PDRL-XML-Dokument. Verweisen Sie dann mithilfe der `PolicySpec` -Benutzeroberfläche `policyXML` Datenelement.
 
 >[!NOTE]
 >
@@ -378,7 +375,7 @@ So ändern Sie eine bestehende Richtlinie mithilfe der Document Security-API (Ja
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-rightsmanagement-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein Document Security-Client-API-Objekt.
 
@@ -387,19 +384,19 @@ So ändern Sie eine bestehende Richtlinie mithilfe der Document Security-API (Ja
 
 1. Rufen Sie eine bestehende Richtlinie ab.
 
-   * Erstellen Sie ein `PolicyManager`-Objekt, indem Sie die Methode `getPolicyManager` des `RightsManagementClient`-Objekts aufrufen.
-   * Erstellen Sie ein `Policy`-Objekt, das die zu aktualisierende Richtlinie darstellt, indem Sie die Methode `PolicyManager` des `getPolicy`-Objekts aufrufen und die folgenden Werte übergeben:
+   * Erstellen Sie eine `PolicyManager` -Objekt durch Aufrufen der `RightsManagementClient` -Objekt `getPolicyManager` -Methode.
+   * Erstellen Sie eine `Policy` -Objekt, das die zu aktualisierende Richtlinie darstellt, indem das `PolicyManager` -Objekt `getPolicy` -Methode und Übergabe der folgenden Werte&quot;
 
       * Ein Zeichenfolgenwert, der den Namen des Richtliniensatzes darstellt, zu dem die Richtlinie gehört. Sie können `null` angeben, was dazu führt, dass der Richtliniensatz `MyPolicies` verwendet wird.
       * Ein Zeichenfolgenwert, der den Richtliniennamen darstellt.
 
 1. Legen Sie die Attribute der Richtlinie fest.
 
-   Ändern Sie die Attribute der Richtlinie entsprechend Ihren Geschäftsanforderungen. Um beispielsweise die Offline-Nutzungsdauer der Richtlinie zu ändern, rufen Sie die Methode `setOfflineLeasePeriod` des `Policy`-Objekts auf.
+   Ändern Sie die Attribute der Richtlinie entsprechend Ihren Geschäftsanforderungen. Um beispielsweise die Offline-Nutzungsdauer der Richtlinie zu ändern, rufen Sie die `Policy` -Objekt `setOfflineLeasePeriod` -Methode.
 
 1. Aktualisieren Sie die Richtlinie.
 
-   Aktualisieren Sie die Richtlinie, indem Sie die Methode `updatePolicy` des `PolicyManager`-Objekts aufrufen. Übergeben Sie das `Policy`-Objekt, das die zu aktualisierende Richtlinie darstellt.
+   Aktualisieren der Richtlinie durch Aufrufen von `PolicyManager` -Objekt `updatePolicy` -Methode. Übergeben Sie das `Policy`-Objekt, das die zu aktualisierende Richtlinie darstellt.
 
 **Code-Beispiele**
 
@@ -422,18 +419,18 @@ So ändern Sie eine bestehende Richtlinie mithilfe der Document Security-API (We
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Rufen Sie eine bestehende Richtlinie ab.
 
-   Erstellen Sie ein `PolicySpec`-Objekt, das die zu ändernde Richtlinie darstellt, indem Sie die Methode `getPolicy` des `RightsManagementServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
+   Erstellen Sie eine `PolicySpec` -Objekt, das die zu ändernde Richtlinie darstellt, indem das `RightsManagementServiceClient` -Objekt `getPolicy` -Methode verwenden und die folgenden Werte übergeben:
 
    * Einen Zeichenfolgenwert, der den Richtliniensatznamen angibt, zu dem die Richtlinie gehört. Sie können `null` angeben, was dazu führt, dass der Richtliniensatz `MyPolicies` verwendet wird.
    * Ein Zeichenfolgenwert, der den Namen der neuen Richtlinie angibt.
@@ -444,7 +441,7 @@ So ändern Sie eine bestehende Richtlinie mithilfe der Document Security-API (We
 
 1. Aktualisieren Sie die Richtlinie.
 
-   Aktualisieren Sie die Richtlinie, indem Sie die Methode `updatePolicyFromSDK` des `RightsManagementServiceClient`-Objekts aufrufen und das `PolicySpec`-Objekt übergeben, das die zu aktualisierende Richtlinie darstellt.
+   Aktualisieren Sie die Richtlinie, indem Sie die `RightsManagementServiceClient` -Objekt `updatePolicyFromSDK` -Methode und Übergabe der `PolicySpec` -Objekt, das die zu aktualisierende Richtlinie darstellt.
 
 **Code-Beispiele**
 
@@ -487,7 +484,7 @@ So löschen Sie eine Richtlinie mithilfe der Document Security-API (Java):
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-rightsmanagement-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein Document Security-Client-API-Objekt.
 
@@ -496,8 +493,8 @@ So löschen Sie eine Richtlinie mithilfe der Document Security-API (Java):
 
 1. Löschen Sie die Richtlinie.
 
-   * Erstellen Sie ein `PolicyManager`-Objekt, indem Sie die `getPolicyManager`-Methode des `RightsManagementClient` -Objekts aufrufen.
-   * Löschen Sie die Richtlinie, indem Sie die `deletePolicy`-Methode des `PolicyManager`-Objekts aufrufen und ihr folgende Werte übergeben:
+   * Erstellen Sie eine `PolicyManager` -Objekt durch Aufrufen der `RightsManagementClient` -Objekt `getPolicyManager` -Methode.
+   * Löschen Sie die Richtlinie, indem Sie die `PolicyManager` -Objekt `deletePolicy` -Methode verwenden und die folgenden Werte übergeben:
 
       * Einen Zeichenfolgenwert, der den Richtliniensatznamen angibt, zu dem die Richtlinie gehört. Sie können `null` angeben, wodurch der Richtliniensatz `MyPolicies` verwendet wird.
       * Einen Zeichenfolgenwert, der den Namen der zu löschenden Richtlinie angibt.
@@ -525,18 +522,18 @@ Löschen einer Richtlinie mithilfe der Document Security-API (Web Service):
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Löschen Sie die Richtlinie.
 
-   Löschen Sie eine Richtlinie, indem Sie die `deletePolicy`-Methode des `RightsManagementServiceClient`-Objekts aufrufen und ihr folgende Werte übergeben:
+   Löschen einer Richtlinie durch Aufrufen der `RightsManagementServiceClient` -Objekt `deletePolicy` -Methode verwenden und die folgenden Werte übergeben:
 
    * Einen Zeichenfolgenwert, der den Richtliniensatznamen angibt, zu dem die Richtlinie gehört. Sie können `null` angeben, wodurch der Richtliniensatz `MyPolicies` verwendet wird.
    * Einen Zeichenfolgenwert, der den Namen der zu löschenden Richtlinie angibt.
@@ -604,7 +601,7 @@ Wenden Sie mithilfe der Document Security-API (Java) eine Richtlinie auf ein PDF
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-rightsmanagement-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein Document Security-Client-API-Objekt.
 
@@ -618,8 +615,8 @@ Wenden Sie mithilfe der Document Security-API (Java) eine Richtlinie auf ein PDF
 
 1. Wenden Sie eine vorhandene Richtlinie auf das PDF-Dokument an.
 
-   * Erstellen Sie ein `DocumentManager`-Objekt, indem Sie die `getDocumentManager`-Methode des `RightsManagementClient`-Objekts aufrufen.
-   * Wenden Sie eine Richtlinie auf das PDF-Dokument an, indem Sie die `protectDocument`-Methode des `DocumentManager`-Objekts aufrufen und ihr folgende Werte übergeben:
+   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `RightsManagementClient` -Objekt `getDocumentManager` -Methode.
+   * Wenden Sie eine Richtlinie auf das PDF-Dokument an, indem Sie die `DocumentManager` -Objekt `protectDocument` -Methode verwenden und die folgenden Werte übergeben:
 
       * Das `com.adobe.idp.Document`-Objekt, das das PDF-Dokument enthält, auf das die Richtlinie angewendet wird.
       * Einen Zeichenfolgenwert, der die Versionsnummer des Dokuments angibt.
@@ -629,14 +626,13 @@ Wenden Sie mithilfe der Document Security-API (Java) eine Richtlinie auf ein PDF
       * Ein Zeichenfolgenwert für den kanonischen Namen des User Manager-Benutzers, der Herausgeber des Dokuments ist. Dieser Parameterwert ist optional und kann `null` sein. (Wenn dieser Parameter null ist, muss der vorherige Parameterwert `null` lauten.)
       * Ein `com.adobe.livecycle.rightsmanagement.Locale`-Element, das das Gebietsschema darstellt, das für die Auswahl der MS Office-Vorlage verwendet wird. Dieser Parameterwert ist optional und wird nicht für PDF-Dokumente verwendet. Um ein PDF-Dokument zu sichern, geben Sie `null` an.
 
-      Die `protectDocument`-Methode gibt ein `RMSecureDocumentResult`-Objekt zurück, das das richtliniengeschützte PDF-Dokument enthält.
-
+     Die `protectDocument`-Methode gibt ein `RMSecureDocumentResult`-Objekt zurück, das das richtliniengeschützte PDF-Dokument enthält.
 
 1. Speichern Sie das PDF-Dokument.
 
-   * Rufen Sie die `getProtectedDoc`-Methode des `RMSecureDocumentResult`-Objekts auf, um das richtliniengeschützte PDF-Dokument abzurufen. Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück.
+   * Rufen Sie die `RMSecureDocumentResult` -Objekt `getProtectedDoc` -Methode zum Abrufen des richtliniengeschützten PDF-Dokuments. Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück.
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung PDF lautet.
-   * Rufen Sie die `copyToFile`-Methode des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `getProtectedDoc`-Methode zurückgegeben wurde).
+   * Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode zum Kopieren des Inhalts der `Document` -Objekt auf die Datei verweist (stellen Sie sicher, dass Sie die `Document` -Objekt, das von der `getProtectedDoc` -Methode).
 
 **Code-Beispiele**
 
@@ -668,26 +664,26 @@ Wenden Sie mithilfe der Document Security-API (Web Service) eine Richtlinie auf 
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der dem Forms-Service die WSDL angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) Sie brauchen das Attribut `lc_version` nicht zu verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Rufen Sie ein PDF-Dokument ab.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines PDF-Dokuments verwendet, auf das eine Richtlinie angewendet wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Ermitteln Sie die Größe des Byte-Arrays, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Bestimmen Sie die Byte-Array-Größe, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
    * Füllen Sie das `BLOB`-Objekt, indem Sie dessen Feld `MTOM` mit dem Inhalt des Byte-Arrays belegen.
 
 1. Wenden Sie eine vorhandene Richtlinie auf das PDF-Dokument an.
 
-   Wenden Sie eine Richtlinie auf das PDF-Dokument an, indem Sie die Methode `protectDocument` des `RightsManagementServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
+   Wenden Sie eine Richtlinie auf das PDF-Dokument an, indem Sie die `RightsManagementServiceClient` -Objekt `protectDocument` -Methode verwenden und die folgenden Werte übergeben:
 
    * Das `BLOB`-Objekt, das das PDF-Dokument enthält, auf das die Richtlinie angewendet wird.
    * Einen Zeichenfolgenwert, der die Versionsnummer des Dokuments angibt.
@@ -705,9 +701,9 @@ Wenden Sie mithilfe der Document Security-API (Web Service) eine Richtlinie auf 
 1. Speichern Sie das PDF-Dokument.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des richtliniengeschützten PDF-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `protectDocument` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `MTOM`-Datenelements des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `protectDocument` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` Datenelement.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine PDF-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
 
 **Code-Beispiele**
 
@@ -768,7 +764,7 @@ Entfernen Sie mithilfe der Document Security-API (Java) eine Richtlinie aus eine
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-rightsmanagement-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein Document Security-Client-API-Objekt.
 
@@ -782,13 +778,13 @@ Entfernen Sie mithilfe der Document Security-API (Java) eine Richtlinie aus eine
 
 1. Entfernen Sie die Richtlinie aus dem PDF-Dokument.
 
-   * Erstellen Sie ein `DocumentManager`-Objekt, indem Sie die `getDocumentManager`-Methode des `DocumentSecurityClient`-Objekts aufrufen.
-   * Entfernen Sie eine Richtlinie aus dem PDF-Dokument, indem Sie die `removeSecurity`-Methode des `DocumentManager`-Objekts aufrufen und ihr das `com.adobe.idp.Document`-Objekt übergeben, das das richtliniengeschützte PDF-Dokument enthält. Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das ein nicht gesichertes PDF-Dokument enthält.
+   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getDocumentManager` -Methode.
+   * Entfernen Sie eine Richtlinie aus dem PDF-Dokument, indem Sie die `DocumentManager` -Objekt `removeSecurity` -Methode und Übergabe der `com.adobe.idp.Document` -Objekt, das das richtliniengeschützte PDF-Dokument enthält. Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das ein nicht gesichertes PDF-Dokument enthält.
 
 1. Speichern Sie das ungesicherte PDF-Dokument.
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung PDF lautet.
-   * Rufen Sie die `copyToFile`-Methode des `Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt verwenden, das von der `removeSecurity`-Methode zurückgegeben wurde).
+   * Rufen Sie die `Document` -Objekt `copyToFile` -Methode zum Kopieren des Inhalts der `Document` -Objekt auf die Datei verweist (stellen Sie sicher, dass Sie die `Document` -Objekt, das von der `removeSecurity` -Methode).
 
 **Code-Beispiele**
 
@@ -813,31 +809,31 @@ Entfernen Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie a
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Rufen Sie ein richtliniengeschütztes PDF-Dokument ab.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des richtliniengeschützten PDF-Dokuments verwendet, aus dem die Richtlinie entfernt wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Datenstromdaten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und ihr das Byte-Array, die Startposition und die zu lesende Datenstromlänge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem `MTOM`-Feld den Inhalt des Byte-Arrays zuweisen.
 
 1. Entfernen Sie die Richtlinie aus dem PDF-Dokument.
 
-   Entfernen Sie die Richtlinie aus dem PDF-Dokument, indem Sie die `removePolicySecurity`-Methode des `DocumentSecurityServiceClient`-Objekts aufrufen und ihr das `BLOB`-Objekt, das das richtliniengeschützte PDF-Dokument enthält, übergeben. Diese Methode gibt ein `BLOB`-Objekt zurück, das ein nicht gesichertes PDF-Dokument enthält.
+   Entfernen Sie die Richtlinie aus dem PDF-Dokument, indem Sie die `DocumentSecurityServiceClient` -Objekt `removePolicySecurity` -Methode und Übergabe der `BLOB` -Objekt, das das richtliniengeschützte PDF-Dokument enthält. Diese Methode gibt ein `BLOB`-Objekt zurück, das ein nicht gesichertes PDF-Dokument enthält.
 
 1. Speichern Sie das ungesicherte PDF-Dokument.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und ihm einen Zeichenfolgenwert, der den Dateispeicherort des ungesicherten PDF-Dokuments darstellt, übergeben.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des von der `removePolicySecurity`-Methode zurückgegebenen `BLOB`-Objekts enthält. Füllen Sie das Byte-Array, indem Sie den Wert aus dem `MTOM`-Feld des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des von der `removePolicySecurity`-Methode zurückgegebenen `BLOB`-Objekts enthält. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` -Feld.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 
 **Code-Beispiele**
@@ -910,7 +906,7 @@ So widerrufen Sie mithilfe der Document Security-API (Java) den Zugriff auf ein 
 
 1. Projektdateien einschließen
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-rightsmanagement-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines Document Security-Client-API-Objekts
 
@@ -924,12 +920,12 @@ So widerrufen Sie mithilfe der Document Security-API (Java) den Zugriff auf ein 
 
 1. Widerrufen des richtliniengeschützten Dokuments
 
-   * Erstellen Sie ein `DocumentManager`-Objekt, indem Sie die Methode `getDocumentManager` des `DocumentSecurityClient`-Objekts aufrufen.
-   * Rufen Sie den Wert der Lizenzkennung des richtliniengeschützten Dokuments ab, indem Sie die Methode `getLicenseId` des `DocumentManager`-Objekts aufrufen. Übergeben Sie das `com.adobe.idp.Document`-Objekt, das das richtliniengeschützte Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Wert der Lizenzkennung darstellt.
-   * Erstellen Sie ein `LicenseManager`-Objekt, indem Sie die Methode `getLicenseManager` des `DocumentSecurityClient`-Objekts aufrufen.
-   * Widerrufen Sie das richtliniengeschützte Dokument, indem Sie die Methode `revokeLicense` des `LicenseManager`-Objekts aufrufen und die folgenden Werte übergeben:
+   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getDocumentManager` -Methode.
+   * Rufen Sie den Wert der Lizenzkennung des richtliniengeschützten Dokuments ab, indem Sie die `DocumentManager` -Objekt `getLicenseId` -Methode. Übergeben Sie das `com.adobe.idp.Document`-Objekt, das das richtliniengeschützte Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Wert der Lizenzkennung darstellt.
+   * Erstellen Sie eine `LicenseManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getLicenseManager` -Methode.
+   * Das richtliniengeschützte Dokument durch Aufrufen der `LicenseManager` -Objekt `revokeLicense` -Methode verwenden und die folgenden Werte übergeben:
 
-      * Ein Zeichenfolgenwert, der den Wert der Lizenzkennung des richtliniengeschützten Dokuments angibt (geben Sie den Rückgabewert der Methode `getLicenseId` des `DocumentManager`-Objekts an).
+      * Ein string -Wert, der den Wert der Lizenzkennung des richtliniengeschützten Dokuments angibt (geben Sie den Rückgabewert von `DocumentManager` -Objekt `getLicenseId` -Methode).
       * Ein statisches Datenelement der `License`-Schnittstelle, die den Grund zum Widerrufen des Dokuments angibt. Sie können beispielsweise `License.DOCUMENT_REVISED` angeben.
       * Ein `java.net.URL`-Wert, der den Speicherort angibt, an dem sich ein überarbeitetes Dokument befindet. Wenn Sie einen Benutzer nicht zu einer anderen URL umleiten möchten, können Sie `null` übergeben.
 
@@ -956,29 +952,29 @@ So widerrufen Sie den Zugriff auf ein richtliniengeschütztes PDF-Dokument mithi
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Abrufen eines richtliniengeschützten PDF-Dokuments
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um ein richtliniengeschütztes PDF-Dokument zu speichern, das widerrufen wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des zu widerrufenden richtliniengeschützten PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Datenstromdaten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und ihr das Byte-Array, die Startposition und die zu lesende Datenstromlänge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Widerrufen des richtliniengeschützten Dokuments
 
-   * Rufen Sie den Wert der Lizenzkennung des richtliniengeschützten Dokuments ab, indem Sie die Methode `getLicenseID` des `DocumentSecurityServiceClient`-Objekts aufrufen und das `BLOB`-Objekt übergeben, das das richtliniengeschützte Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der die Lizenzkennung darstellt.
-   * Widerrufen Sie das richtliniengeschützte Dokument, indem Sie die Methode `revokeLicense` des `DocumentSecurityServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
+   * Rufen Sie den Wert der Lizenzkennung des richtliniengeschützten Dokuments ab, indem Sie die `DocumentSecurityServiceClient` -Objekt `getLicenseID` -Methode und Übergabe der `BLOB` -Objekt, das das richtliniengeschützte Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der die Lizenzkennung darstellt.
+   * Das richtliniengeschützte Dokument durch Aufrufen der `DocumentSecurityServiceClient` -Objekt `revokeLicense` -Methode verwenden und die folgenden Werte übergeben:
 
-      * Ein Zeichenfolgenwert, der den Wert der Lizenzkennung des richtliniengeschützten Dokuments angibt (geben Sie den Rückgabewert der Methode `DocumentSecurityServiceService` des `getLicenseId`-Objekts an).
+      * Ein string -Wert, der den Wert der Lizenzkennung des richtliniengeschützten Dokuments angibt (geben Sie den Rückgabewert von `DocumentSecurityServiceService` -Objekt `getLicenseId` -Methode).
       * Ein statisches Datenelement der Aufzählung `Reason`, das den Grund für das Widerrufen des Dokuments angibt. Sie können beispielsweise `Reason.DOCUMENT_REVISED` angeben.
       * Ein `string`-Wert, der den URL-Speicherort angibt, an dem sich ein überarbeitetes Dokument befindet. Wenn Sie einen Benutzer nicht zu einer anderen URL umleiten möchten, können Sie `null` angeben.
 
@@ -1046,7 +1042,7 @@ So stellen Sie den Zugriff auf ein widerrufenes Dokument mithilfe der Document S
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-rightsmanagement-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein Document Security-Client-API-Objekt.
 
@@ -1057,13 +1053,13 @@ So stellen Sie den Zugriff auf ein widerrufenes Dokument mithilfe der Document S
 
    * Erstellen Sie ein `java.io.FileInputStream`-Objekt, das das widerrufene PDF-Dokument darstellt, indem Sie seinen Konstruktor verwenden und einen Zeichenfolgenwert übergeben, der den Speicherort des PDF-Dokuments angibt.
    * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.FileInputStream`-Objekt übergeben.
-   * Erstellen Sie ein `DocumentManager`-Objekt, indem Sie die Methode `getDocumentManager` des `DocumentSecurityClient`-Objekts aufrufen.
-   * Rufen Sie den Wert der Lizenzkennung des widerrufenen Dokuments ab, indem Sie die Methode `getLicenseId` des `DocumentManager`-Objekts aufrufen und das `com.adobe.idp.Document`-Objekt übergeben, das das widerrufene Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der die Lizenzkennung darstellt.
+   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getDocumentManager` -Methode.
+   * Rufen Sie den Wert der Lizenzkennung des gesperrten Dokuments ab, indem Sie die `DocumentManager` -Objekt `getLicenseId` -Methode und Übergabe der `com.adobe.idp.Document` -Objekt, das das gesperrte Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der die Lizenzkennung darstellt.
 
 1. Reaktivieren Sie den Zugriff auf das widerrufene PDF-Dokument.
 
-   * Erstellen Sie ein `LicenseManager`-Objekt, indem Sie die Methode `getLicenseManager` des `DocumentSecurityClient`-Objekts aufrufen.
-   * Stellen Sie den Zugriff auf das widerrufene PDF-Dokument wieder her, indem Sie die Methode `unrevokeLicense` des `LicenseManager`-Objekts aufrufen und den Wert der Lizenzkennung des widerrufenen Dokuments übergeben.
+   * Erstellen Sie eine `LicenseManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getLicenseManager` -Methode.
+   * Den Zugriff auf das gesperrte PDF-Dokument durch Aufrufen der `LicenseManager` -Objekt `unrevokeLicense` -Methode verwenden und den Wert der Lizenzkennung des gesperrten Dokuments übergeben.
 
 **Code-Beispiele**
 
@@ -1088,27 +1084,27 @@ So stellen Sie den Zugriff auf ein widerrufenes Dokument mithilfe der Document S
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Rufen Sie die Lizenzkennung des widerrufenen PDF-Dokuments ab.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um ein widerrufenes PDF-Dokument zu speichern, auf das der Zugriff wiederhergestellt wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des widerrufenen PDF-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Datenstromdaten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und ihr das Byte-Array, die Startposition und die zu lesende Datenstromlänge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Reaktivieren Sie den Zugriff auf das widerrufene PDF-Dokument.
 
-   * Rufen Sie den Wert der Lizenzkennung des widerrufenen Dokuments ab, indem Sie die Methode `getLicenseID` des `DocumentSecurityServiceClient`-Objekts aufrufen und das `BLOB`-Objekt übergeben, das das widerrufene Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der die Lizenzkennung darstellt.
-   * Stellen Sie den Zugriff auf das widerrufene PDF-Dokument wieder her, indem Sie die Methode `unrevokeLicense` des `DocumentSecurityServiceClient`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Wert der Lizenzkennung des widerrufenen PDF-Dokuments angibt (übergeben Sie den Rückgabewert der Methode `getLicenseId` des `DocumentSecurityServiceClient`-Objekts).
+   * Rufen Sie den Wert der Lizenzkennung des gesperrten Dokuments ab, indem Sie die `DocumentSecurityServiceClient` -Objekt `getLicenseID` -Methode und Übergabe der `BLOB` -Objekt, das das gesperrte Dokument darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der die Lizenzkennung darstellt.
+   * Den Zugriff auf das gesperrte PDF-Dokument durch Aufrufen der `DocumentSecurityServiceClient` -Objekt `unrevokeLicense` -Methode verwenden und einen string -Wert übergeben, der den Lizenzkennungswert des gesperrten PDF-Dokuments angibt (geben Sie den Rückgabewert der `DocumentSecurityServiceClient` -Objekt `getLicenseId` -Methode).
 
 **Code-Beispiele**
 
@@ -1178,7 +1174,7 @@ So überprüfen Sie ein richtliniengeschütztes PDF-Dokument mithilfe der Docume
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein. Weitere Informationen über den Speicherort dieser Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+   Schließen Sie Client-JAR-Dateien wie die Datei &quot;adobe-rightsmanagement-client.jar&quot;in den Klassenpfad Ihres Java-Projekts ein. Weitere Informationen über den Speicherort dieser Dateien finden Sie unter [Einbeziehung von AEM Forms Java-Bibliotheksdateien](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
 1. Erstellen Sie ein Document Security-Client-API-Objekt.
 
@@ -1192,12 +1188,12 @@ So überprüfen Sie ein richtliniengeschütztes PDF-Dokument mithilfe der Docume
 
 1. Überprüfen Sie das Dokument.
 
-   * Erstellen Sie ein `DocumentManager`-Objekt, indem Sie die Methode `getDocumentManager` des `RightsManagementClient`-Objekts aufrufen.
-   * Überprüfen Sie das richtliniengeschützte Dokument, indem Sie die Methode `inspectDocument` des `LicenseManager`-Objekts aufrufen. Übergeben Sie das `com.adobe.idp.Document`-Objekt, das das richtliniengeschützte PDF-Dokument enthält. Diese Methode gibt ein `RMInspectResult`-Objekt zurück, das Informationen zum richtliniengeschützten Dokument enthält.
+   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `RightsManagementClient` -Objekt `getDocumentManager` -Methode.
+   * Inspect das richtliniengeschützte Dokument durch Aufrufen der `LicenseManager` -Objekt `inspectDocument` -Methode. Übergeben Sie das `com.adobe.idp.Document`-Objekt, das das richtliniengeschützte PDF-Dokument enthält. Diese Methode gibt ein `RMInspectResult`-Objekt zurück, das Informationen zum richtliniengeschützten Dokument enthält.
 
 1. Erhalten Sie Informationen zum richtliniengeschützten Dokument.
 
-   Um Informationen über das richtliniengeschützte Dokument zu erhalten, rufen Sie die entsprechende Methode auf, die zum `RMInspectResult`-Objekt gehört. Um beispielsweise den Namen der Richtlinie abzurufen, rufen Sie die Methode `getPolicyName` des `RMInspectResult`-Objekts auf.
+   Um Informationen über das richtliniengeschützte Dokument zu erhalten, rufen Sie die entsprechende Methode auf, die zum `RMInspectResult`-Objekt gehört. Um beispielsweise den Richtliniennamen abzurufen, rufen Sie die `RMInspectResult` -Objekt `getPolicyName` -Methode.
 
 **Code-Beispiele**
 
@@ -1222,30 +1218,30 @@ So überprüfen Sie ein richtliniengeschütztes PDF-Dokument mithilfe der Docume
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Rufen Sie ein richtliniengeschütztes Dokument zum Überprüfen ab.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines zu überprüfenden PDF-Dokuments verwendet.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor verwenden. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Dokuments und den Modus zum Öffnen der Datei darstellt.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die Eigenschaft `Length` des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die Länge des zu lesenden Streams.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode. Übergeben Sie das Byte-Array, die Startposition und die Länge des zu lesenden Streams.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Überprüfen Sie das Dokument.
 
-   Überprüfen Sie das richtliniengeschützte Dokument, indem Sie die Methode `inspectDocument` des `RightsManagementServiceClient`-Objekts aufrufen. Übergeben Sie das `BLOB`-Objekt, das das richtliniengeschützte PDF-Dokument enthält. Diese Methode gibt ein `RMInspectResult`-Objekt zurück, das Informationen zum richtliniengeschützten Dokument enthält.
+   Inspect das richtliniengeschützte Dokument durch Aufrufen der `RightsManagementServiceClient` -Objekt `inspectDocument` -Methode. Übergeben Sie das `BLOB`-Objekt, das das richtliniengeschützte PDF-Dokument enthält. Diese Methode gibt ein `RMInspectResult`-Objekt zurück, das Informationen zum richtliniengeschützten Dokument enthält.
 
 1. Erhalten Sie Informationen zum richtliniengeschützten Dokument.
 
-   Um Informationen über das richtliniengeschützte Dokument zu erhalten, rufen Sie den Wert des entsprechenden Feldes ab, das zum `RMInspectResult`-Objekt gehört. Um beispielsweise den Namen der Richtlinie abzurufen, rufen Sie den Wert des Feldes `policyName` des `RMInspectResult`-Objekts ab.
+   Um Informationen über das richtliniengeschützte Dokument zu erhalten, rufen Sie den Wert des entsprechenden Feldes ab, das zum `RMInspectResult`-Objekt gehört. Um beispielsweise den Richtliniennamen abzurufen, rufen Sie den Wert der `RMInspectResult` -Objekt `policyName` -Feld.
 
 **Code-Beispiele**
 
@@ -1262,7 +1258,7 @@ Code-Beispiele zur Verwendung des Document Security-Services finden Sie in den f
 
 ## Erstellen von Wasserzeichen {#creating-watermarks}
 
-Wasserzeichen tragen dazu bei, die Sicherheit eines Dokuments zu gewährleisten, indem sie das Dokument eindeutig identifizieren und die Verletzung des Urheberrechts kontrollieren. Sie können beispielsweise ein Wasserzeichen mit dem Wort „Vertraulich“ erstellen und auf jeder Seite eines Dokuments platzieren. Nachdem ein Wasserzeichen erstellt wurde, können Sie es als Teil einer Richtlinie einbeziehen. Das heißt, Sie können das Wasserzeichenattribut der Richtlinie auf das neu erstellten Wasserzeichen festlegen. Nachdem eine Richtlinie, die ein Wasserzeichen enthält, auf ein Dokument angewendet wurde, wird das Wasserzeichen im richtliniengeschützten Dokument angezeigt.
+Wasserzeichen tragen dazu bei, die Sicherheit eines Dokuments zu gewährleisten, indem sie das Dokument eindeutig identifizieren und die Verletzung des Urheberrechts kontrollieren. Sie können beispielsweise ein Wasserzeichen mit dem Wort „Vertraulich“ erstellen und auf jeder Seite eines Dokuments platzieren. Nachdem ein Wasserzeichen erstellt wurde, können Sie es als Teil einer Richtlinie einbeziehen. Das heißt, Sie können das Wasserzeichenattribut der Richtlinie mit dem neu erstellten Wasserzeichen festlegen. Nachdem eine Richtlinie, die ein Wasserzeichen enthält, auf ein Dokument angewendet wurde, wird das Wasserzeichen im richtliniengeschützten Dokument angezeigt.
 
 >[!NOTE]
 >
@@ -1399,7 +1395,7 @@ So erstellen Sie ein Wasserzeichen mithilfe der Document Security-API (Java):
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie `adobe-rightsmanagement-client.jar` in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien ein, z. B. die `adobe-rightsmanagement-client.jar`im Klassenpfad Ihres Java-Projekts.
 
 1. Erstellen Sie ein Document Security-Client-API-Objekt.
 
@@ -1408,16 +1404,16 @@ So erstellen Sie ein Wasserzeichen mithilfe der Document Security-API (Java):
 
 1. Festlegen der Wasserzeichenattribute
 
-   * Erstellen Sie ein `Watermark`-Objekt, indem Sie die statische `createWatermark`-Methode des `InfomodelObjectFactory`-Objekts aufrufen. Diese Methode gibt ein `Watermark`-Objekt zurück.
-   * Legen Sie das Namensattribut des Wasserzeichens fest, indem Sie die `setName`-Methode des `Watermark`-Objekts aufrufen und ihr einen Zeichenfolgenwert übergeben, der den Richtliniennamen angibt.
-   * Legen Sie das Hintergrundattribut des Wasserzeichens fest, indem Sie die `setBackground`-Methode des `Watermark`-Objekts aufrufen und ihr `true` übergeben. Wenn Sie dieses Attribut festlegen, wird das Wasserzeichen im Hintergrund des Dokuments angezeigt.
-   * Legen Sie das Attribut für den benutzerdefinierten Text des Wasserzeichens fest, indem Sie die `setCustomText`-Methode des `Watermark`-Objekts aufrufen und ihr einen Zeichenfolgenwert übergeben, der den Text des Wasserzeichens darstellt.
-   * Legen Sie das Attribut für die Deckkraft des Wasserzeichens fest, indem Sie die `setOpacity`-Methode des `Watermark`-Objekts aufrufen und ihr einen ganzzahligen Wert übergeben, der die Deckkraft angibt. Der Wert 100 bedeutet, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 bedeutet, dass das Wasserzeichen vollständig transparent ist.
+   * Erstellen Sie eine `Watermark` -Objekt durch Aufrufen der `InfomodelObjectFactory` Statisches Objekt `createWatermark` -Methode. Diese Methode gibt ein `Watermark`-Objekt zurück.
+   * Legen Sie das Attribut name des Wasserzeichens fest, indem Sie die `Watermark` -Objekt `setName` -Methode verwenden und einen string -Wert übergeben, der den Richtliniennamen angibt.
+   * Legen Sie das Hintergrundattribut des Wasserzeichens fest, indem Sie die `Watermark` -Objekt `setBackground` Methode und Übergabe `true`. Wenn Sie dieses Attribut festlegen, wird das Wasserzeichen im Hintergrund des Dokuments angezeigt.
+   * Festlegen des benutzerdefinierten Textattributs des Wasserzeichens durch Aufrufen der `Watermark` -Objekt `setCustomText` -Methode verwenden und einen string -Wert übergeben, der den Text des Wasserzeichens darstellt.
+   * Festlegen des Deckkraftattributs des Wasserzeichens durch Aufrufen der `Watermark` -Objekt `setOpacity` -Methode verwenden und einen ganzzahligen Wert übergeben, der die Deckkraft angibt. Der Wert 100 bedeutet, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 bedeutet, dass das Wasserzeichen vollständig transparent ist.
 
 1. Registrieren Sie das Wasserzeichen.
 
-   * Erstellen Sie ein `WatermarkManager`-Objekt, indem Sie die `getWatermarkManager`-Methode des `RightsManagementClient`-Objekts aufrufen. Diese Methode gibt ein `WatermarkManager`-Objekt zurück.
-   * Registrieren Sie das Wasserzeichen, indem Sie die `registerWatermark`-Methode des `WatermarkManager`-Objekts aufrufen und ihr das `Watermark`-Objekt, das das zu registrierende Wasserzeichen darstellt, übergeben. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Identifizierungswert des Wasserzeichens darstellt.
+   * Erstellen Sie eine `WatermarkManager` -Objekt durch Aufrufen der `RightsManagementClient` -Objekt `getWatermarkManager` -Methode. Diese Methode gibt ein `WatermarkManager`-Objekt zurück.
+   * Registrieren Sie das Wasserzeichen, indem Sie die `WatermarkManager` -Objekt `registerWatermark` -Methode und Übergabe der `Watermark` -Objekt, das das zu registrierende Wasserzeichen darstellt. Diese Methode gibt einen Zeichenfolgenwert zurück, der den Identifizierungswert des Wasserzeichens darstellt.
 
 **Code-Beispiele**
 
@@ -1442,29 +1438,29 @@ Erstellen Sie ein Wasserzeichen mithilfe der Document Security-API (Web-Service)
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Legen Sie die Wasserzeichenattribute fest.
 
    * Erstellen Sie ein `WatermarkSpec`-Objekt, indem Sie den Konstruktor `WatermarkSpec` aufrufen.
-   * Legen Sie den Namen des Wasserzeichens fest, indem Sie dem Datenelement `name` des `WatermarkSpec`-Objekts einen Zeichenfolgenwert zuweisen.
-   * Legen Sie das `id`-Attribut des Wasserzeichens fest, indem Sie dem Datenelement `id` des `WatermarkSpec`-Objekts einen Zeichenfolgenwert zuweisen.
+   * Legen Sie den Namen des Wasserzeichens fest, indem Sie dem `WatermarkSpec` -Objekt `name` Datenelement.
+   * Festlegen der `id` -Attribut durch Zuweisen eines Zeichenfolgenwerts zum `WatermarkSpec` -Objekt `id` Datenelement.
    * Erstellen Sie für jede festzulegende Wasserzeicheneigenschaft ein separates `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt.
-   * Legen Sie den Schlüsselwert fest, indem Sie dem Datenelement `key` des `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekts einen Wert zuweisen (z. B. `WaterBackCmd:OPACITY)`).
-   * Legen Sie den Wert fest, indem Sie dem Datenelement `value` des `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekts einen Wert zuweisen (z. B. `.25`).
-   * Erstellen Sie ein `MyArrayOf_xsd_anyType`-Objekt. Rufen Sie für jedes `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt die `Add`-Methode des `MyArrayOf_xsd_anyType`-Objekts auf. Übergeben Sie das `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt.
-   * Weisen Sie das `MyArrayOf_xsd_anyType`-Objekt dem Datenelement `values` des `WatermarkSpec`-Objekts zu.
+   * Legen Sie den Schlüsselwert fest, indem Sie dem `MyMapOf_xsd_string_To_xsd_anyType_Item` -Objekt `key` Datenelement (z. B. `WaterBackCmd:OPACITY)`.
+   * Legen Sie den Wert fest, indem Sie dem `MyMapOf_xsd_string_To_xsd_anyType_Item` -Objekt `value` Datenelement (z. B. `.25`).
+   * Erstellen Sie ein `MyArrayOf_xsd_anyType`-Objekt. Für jeden `MyMapOf_xsd_string_To_xsd_anyType_Item` -Objekt, rufen Sie die `MyArrayOf_xsd_anyType` -Objekt `Add` -Methode. Übergeben Sie das `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt.
+   * Zuweisen der `MyArrayOf_xsd_anyType` -Objekt `WatermarkSpec` -Objekt `values` Datenelement.
 
 1. Registrieren Sie das Wasserzeichen.
 
-   Registrieren Sie das Wasserzeichen, indem Sie die `registerWatermark`-Methode des `RightsManagementServiceClient`-Objekts aufrufen und ihr das `WatermarkSpec`-Objekt, das das zu registrierende Wasserzeichen darstellt, übergeben.
+   Registrieren Sie das Wasserzeichen, indem Sie die `RightsManagementServiceClient` -Objekt `registerWatermark` -Methode und Übergabe der `WatermarkSpec` -Objekt, das das zu registrierende Wasserzeichen darstellt.
 
 **Code-Beispiele**
 
@@ -1545,7 +1541,7 @@ So ändern Sie ein Wasserzeichen mithilfe der Document Security-API (Java):
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie die Datei &quot;adobe-rightsmanagement-client.jar&quot;in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein Document Security-Client-API-Objekt.
 
@@ -1554,11 +1550,11 @@ So ändern Sie ein Wasserzeichen mithilfe der Document Security-API (Java):
 
 1. Rufen Sie das zu ändernde Wasserzeichen ab.
 
-   Erstellen Sie ein `WatermarkManager`-Objekt, indem Sie die Methode `getWatermarkManager` des `DocumentSecurityClient`-Objekts aufrufen und einen Zeichenfolgenwert übergeben, der den Namen des Wasserzeichens angibt. Diese Methode gibt ein `Watermark`-Objekt zurück, das das zu ändernde Wasserzeichen darstellt.
+   Erstellen Sie eine `WatermarkManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getWatermarkManager` -Methode verwenden und einen string -Wert übergeben, der den Namen des Wasserzeichens angibt. Diese Methode gibt ein `Watermark`-Objekt zurück, das das zu ändernde Wasserzeichen darstellt.
 
 1. Legen Sie die Wasserzeichenattribute fest.
 
-   Legen Sie das Attribut für die Deckkraft des Wasserzeichens fest, indem Sie die Methode `setOpacity` des `Watermark`-Objekts aufrufen und einen ganzzahligen Wert übergeben, der die Deckkraftstufe angibt. Der Wert 100 bedeutet, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 bedeutet, dass das Wasserzeichen vollständig transparent ist.
+   Festlegen des Deckkraftattributs des Wasserzeichens durch Aufrufen der `Watermark` -Objekt `setOpacity` -Methode verwenden und einen ganzzahligen Wert übergeben, der die Deckkraft angibt. Der Wert 100 bedeutet, dass das Wasserzeichen vollständig undurchsichtig ist, und der Wert 0 bedeutet, dass das Wasserzeichen vollständig transparent ist.
 
    >[!NOTE]
    >
@@ -1566,7 +1562,7 @@ So ändern Sie ein Wasserzeichen mithilfe der Document Security-API (Java):
 
 1. Aktualisieren Sie das Wasserzeichen.
 
-   * Aktualisieren Sie das Wasserzeichen, indem Sie die Methode `updateWatermark` des `WatermarkManager`-Objekts aufrufen und das `Watermark`-Objekt übergeben, dessen Attribut geändert wurde.
+   * Aktualisieren Sie das Wasserzeichen, indem Sie die `WatermarkManager` -Objekt `updateWatermark` -Methode und übergeben Sie `Watermark` -Objekt, dessen -Attribut geändert wurde.
 
 **Code-Beispiele**
 
@@ -1589,30 +1585,30 @@ Code-Beispiele, die den Document Security-Service verwenden, finden Sie im Absch
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zum `BasicHttpBindingSecurity.Security.Mode`-Feld zu.
 
+   * Weisen Sie den Konstantenwert `BasicHttpSecurityMode.TransportCredentialOnly` zum `BasicHttpBindingSecurity.Security.Mode`-Feld zu.
 
 1. Rufen Sie das zu ändernde Wasserzeichen ab.
 
-   Rufen Sie das zu ändernde Wasserzeichen ab, indem Sie die `getWatermarkByName`-Methode des `DocumentSecurityServiceClient`-Objekts aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Wasserzeichens angibt. Diese Methode gibt ein `WatermarkSpec`-Objekt zurück, das das zu ändernde Wasserzeichen darstellt.
+   Rufen Sie das zu ändernde Wasserzeichen ab, indem Sie die `DocumentSecurityServiceClient` -Objekt `getWatermarkByName` -Methode. Übergeben Sie einen Zeichenfolgenwert, der den Namen des Wasserzeichens angibt. Diese Methode gibt ein `WatermarkSpec`-Objekt zurück, das das zu ändernde Wasserzeichen darstellt.
 
 1. Legen Sie die Wasserzeichenattribute fest.
 
    * Erstellen Sie für jede zu aktualisierende Wasserzeicheneigenschaft ein separates `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt.
-   * Legen Sie den Schlüsselwert fest, indem Sie dem `key`-Datenelement des `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekts einen Wert zuweisen (z. B. `WaterBackCmd:OPACITY)`).
-   * Legen Sie den Wert fest, indem Sie dem Datenelement `value` des `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekts einen Wert zuweisen (z. B. `.50`).
-   * Erstellen Sie ein `MyArrayOf_xsd_anyType`-Objekt. Rufen Sie für jedes `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt die `Add`-Methode des `MyArrayOf_xsd_anyType`-Objekts auf. Übergeben Sie das `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt.
-   * Weisen Sie das `MyArrayOf_xsd_anyType`-Objekt zum `values`-Datenelement des `WatermarkSpec`-Objekts zu.
+   * Legen Sie den Schlüsselwert fest, indem Sie dem `MyMapOf_xsd_string_To_xsd_anyType_Item` -Objekt `key` Datenelement (z. B. `WaterBackCmd:OPACITY)`.
+   * Legen Sie den Wert fest, indem Sie dem `MyMapOf_xsd_string_To_xsd_anyType_Item` -Objekt `value` Datenelement (z. B. `.50`).
+   * Erstellen Sie ein `MyArrayOf_xsd_anyType`-Objekt. Für jeden `MyMapOf_xsd_string_To_xsd_anyType_Item` -Objekt, rufen Sie die `MyArrayOf_xsd_anyType` -Objekt `Add` -Methode. Übergeben Sie das `MyMapOf_xsd_string_To_xsd_anyType_Item`-Objekt.
+   * Zuweisen der `MyArrayOf_xsd_anyType` -Objekt `WatermarkSpec` -Objekt `values` Datenelement.
 
 1. Aktualisieren Sie das Wasserzeichen.
 
-   Aktualisieren Sie das Wasserzeichen, indem Sie die `updateWatermark`-Methode des `DocumentSecurityServiceClient`-Objekts aufrufen und das `WatermarkSpec`-Objekt übergeben, das das zu ändernde Wasserzeichen darstellt.
+   Aktualisieren Sie das Wasserzeichen, indem Sie die `DocumentSecurityServiceClient` -Objekt `updateWatermark` -Methode und Übergabe der `WatermarkSpec` -Objekt, das das zu ändernde Wasserzeichen darstellt.
 
 **Code-Beispiele**
 
@@ -1674,7 +1670,7 @@ So suchen Sie mithilfe der Rights Management-API (Java) nach Ereignissen:
 
 1. Projektdateien einschließen
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-rightsmanagement-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines Rights Management-Client-API-Objekts
 
@@ -1682,9 +1678,9 @@ So suchen Sie mithilfe der Rights Management-API (Java) nach Ereignissen:
 
 1. Angeben der Ereignisse, nach denen gesucht werden soll
 
-   * Erstellen Sie ein `EventManager`-Objekt, indem Sie die Methode `getEventManager` des `DocumentSecurityClient`-Objekts aufrufen. Diese Methode gibt ein `EventManager`-Objekt zurück.
+   * Erstellen Sie eine `EventManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getEventManager` -Methode. Diese Methode gibt ein `EventManager`-Objekt zurück.
    * Erstellen Sie ein `EventSearchFilter`-Objekt, indem Sie seinen Konstruktor aufrufen.
-   * Geben Sie das Ereignis an, nach dem gesucht werden soll, indem Sie die Methode `setEventCode` des `EventSearchFilter`-Objekts aufrufen und ein statisches Datenelement der Klasse `EventManager` übergeben, das das Ereignis darstellt, nach dem gesucht werden soll. Um beispielsweise nach dem Richtlinienerstellungsereignis zu suchen, übergeben Sie `EventManager.POLICY_CREATE_EVENT`.
+   * Geben Sie das zu suchende Ereignis an, indem Sie die `EventSearchFilter` -Objekt `setEventCode` -Methode und Übergeben eines statischen Datenelements, das zu der `EventManager` -Klasse, die das zu suchende Ereignis darstellt. Um beispielsweise nach dem Richtlinienerstellungsereignis zu suchen, übergeben Sie `EventManager.POLICY_CREATE_EVENT`.
 
    >[!NOTE]
    >
@@ -1692,7 +1688,7 @@ So suchen Sie mithilfe der Rights Management-API (Java) nach Ereignissen:
 
 1. Suchen nach dem Ereignis
 
-   Suchen Sie nach dem Ereignis, indem Sie die Methode `searchForEvents` des `EventManager`-Objekts aufrufen und das `EventSearchFilter`-Objekt übergeben, das die Suchkriterien für das Ereignis definiert. Diese Methode gibt ein Array von `Event`-Objekten zurück.
+   Suchen Sie nach dem Ereignis, indem Sie die `EventManager` -Objekt `searchForEvents` -Methode und Übergabe der `EventSearchFilter` -Objekt, das die Ereignissuchkriterien definiert. Diese Methode gibt ein Array von `Event`-Objekten zurück.
 
 **Code-Beispiele**
 
@@ -1717,23 +1713,23 @@ So suchen Sie mithilfe der Rights Management-API (Webservice) nach Ereignissen:
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Angeben der Ereignisse, nach denen gesucht werden soll
 
    * Erstellen Sie ein `EventSpec`-Objekt, indem Sie seinen Konstruktor verwenden.
-   * Geben Sie den Beginn des Zeitraums an, in dem das Ereignis aufgetreten ist, indem Sie das Datenelement `firstTime.date` des `EventSpec`-Objekts auf die `DataTime`-Instanz festlegen, die den Beginn des Datumsbereichs zum Zeitpunkt des Ereignisses darstellt.
-   * Weisen Sie dem Datenelement `firstTime.dateSpecified` des `EventSpec`-Objekts den Wert `true` zu.
-   * Geben Sie das Ende des Zeitraums an, in dem das Ereignis aufgetreten ist, indem Sie das Datenelement `lastTime.date` des `EventSpec`-Objekts auf die `DataTime`-Instanz festlegen, die das Ende des Datumsbereichs zum Zeitpunkt des Ereignisses darstellt.
-   * Weisen Sie dem Datenelement `lastTime.dateSpecified` des `EventSpec`-Objekts den Wert `true` zu.
-   * Legen Sie das zu suchende Ereignis fest, indem Sie dem Datenelement `eventCode` des `EventSpec`-Objekts einen Zeichenfolgenwert zuweisen. In der folgenden Tabelle sind die numerischen Werte aufgeführt, die Sie dieser Eigenschaft zuweisen können:
+   * Geben Sie den Beginn des Zeitraums an, in dem das Ereignis aufgetreten ist, indem Sie die `EventSpec` -Objekt `firstTime.date` Datenelement mit `DataTime` -Instanz, die den Beginn des Datumsbereichs zum Zeitpunkt des Ereignisses darstellt.
+   * Wert zuweisen `true` der `EventSpec` -Objekt `firstTime.dateSpecified` Datenelement.
+   * Geben Sie das Ende des Zeitraums an, in dem das Ereignis aufgetreten ist, indem Sie die `EventSpec` -Objekt `lastTime.date` Datenelement mit `DataTime` -Instanz, die das Ende des Datumsbereichs zum Zeitpunkt des Ereignisses darstellt.
+   * Wert zuweisen `true` der `EventSpec` -Objekt `lastTime.dateSpecified` Datenelement.
+   * Legen Sie das zu suchende Ereignis fest, indem Sie dem `EventSpec` -Objekt `eventCode` Datenelement. In der folgenden Tabelle sind die numerischen Werte aufgeführt, die Sie dieser Eigenschaft zuweisen können:
 
    <table>
     <thead>
@@ -1936,7 +1932,7 @@ So suchen Sie mithilfe der Rights Management-API (Webservice) nach Ereignissen:
 
 1. Suchen nach dem Ereignis
 
-   Suchen Sie nach dem Ereignis, indem Sie die `searchForEvents`-Methode des `DocumentSecurityServiceClient`-Objekts aufrufen und ihr das `EventSpec`-Objekt übergeben, das das zu suchende Ereignis und die maximale Anzahl von Ergebnissen darstellt. Diese Methode gibt eine `MyArrayOf_xsd_anyType`-Sammlung zurück, in der jedes Element eine `AuditSpec`-Instanz ist. Mithilfe einer `AuditSpec`-Instanz können Sie Informationen zum Ereignis abrufen, z. B. den Zeitpunkt, zu dem es aufgetreten ist. Die `AuditSpec`-Instanz enthält ein `timestamp`-Datenelement, das diese Informationen angibt.
+   Suchen Sie nach dem Ereignis, indem Sie die `DocumentSecurityServiceClient` -Objekt `searchForEvents` -Methode und Übergabe der `EventSpec` -Objekt, das das Ereignis, für das gesucht werden soll, und die maximale Anzahl von Ergebnissen darstellt. Diese Methode gibt eine `MyArrayOf_xsd_anyType`-Sammlung zurück, in der jedes Element eine `AuditSpec`-Instanz ist. Mithilfe einer `AuditSpec`-Instanz können Sie Informationen zum Ereignis abrufen, z. B. den Zeitpunkt, zu dem es aufgetreten ist. Die `AuditSpec`-Instanz enthält ein `timestamp`-Datenelement, das diese Informationen angibt.
 
 **Code-Beispiele**
 
@@ -2005,7 +2001,7 @@ Wenden Sie mithilfe der Document Security-API (Java) eine Richtlinie auf ein Wor
 
 1. Schließen Sie Projektdateien ein.
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-rightsmanagement-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen Sie ein Document Security-Client-API-Objekt.
 
@@ -2019,8 +2015,8 @@ Wenden Sie mithilfe der Document Security-API (Java) eine Richtlinie auf ein Wor
 
 1. Wenden Sie eine vorhandene Richtlinie auf das Word-Dokument an.
 
-   * Erstellen Sie ein `DocumentManager`-Objekt, indem Sie die `getDocumentManager`-Methode des `DocumentSecurityClient`-Objekts aufrufen.
-   * Wenden Sie eine Richtlinie auf das Word-Dokument an, indem Sie die `protectDocument`-Methode des `DocumentManager`-Objekts aufrufen und die folgenden Werte übergeben:
+   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `DocumentSecurityClient` -Objekt `getDocumentManager` -Methode.
+   * Wenden Sie eine Richtlinie auf das Word-Dokument an, indem Sie die `DocumentManager` -Objekt `protectDocument` -Methode verwenden und die folgenden Werte übergeben:
 
       * Das `com.adobe.idp.Document`-Objekt, das das Word-Dokument enthält, auf das die Richtlinie angewendet wird.
       * Einen Zeichenfolgenwert, der die Versionsnummer des Dokuments angibt.
@@ -2030,14 +2026,13 @@ Wenden Sie mithilfe der Document Security-API (Java) eine Richtlinie auf ein Wor
       * Ein Zeichenfolgenwert für den kanonischen Namen des User Manager-Benutzers, der Herausgeber des Dokuments ist. Dieser Parameterwert ist optional und kann `null` sein (wenn dieser Parameter `null` ist, muss der vorherige Parameterwert `null` sein).
       * Ein `com.adobe.livecycle.rightsmanagement.Locale`-Objekt, die das Gebietsschema darstellt, das für die Auswahl der MS Office-Vorlage verwendet wird. Dieser Parameterwert ist optional und Sie können `null` angeben.
 
-      Die `protectDocument`-Methode gibt ein `RMSecureDocumentResult`-Objekt zurück, das das richtliniengeschützte Word-Dokument enthält.
-
+     Die `protectDocument`-Methode gibt ein `RMSecureDocumentResult`-Objekt zurück, das das richtliniengeschützte Word-Dokument enthält.
 
 1. Speichern Sie das Word-Dokument.
 
-   * Rufen Sie die `getProtectedDoc`-Methode des `RMSecureDocumentResult`-Objekts auf, um das richtliniengeschützte Word-Dokument abzurufen. Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück.
+   * Rufen Sie die `RMSecureDocumentResult` -Objekt `getProtectedDoc` -Methode zum Abrufen des richtliniengeschützten Word-Dokuments. Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück.
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung DOC lautet.
-   * Rufen Sie die `copyToFile`-Methode des `com.adobe.idp.Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt, das von der `getProtectedDoc`-Methode zurückgegeben wird, verwenden).
+   * Rufen Sie die `com.adobe.idp.Document` -Objekt `copyToFile` -Methode zum Kopieren des Inhalts der `Document` -Objekt auf die Datei verweist (stellen Sie sicher, dass Sie die `Document` -Objekt, das von der `getProtectedDoc` -Methode).
 
 **Code-Beispiele**
 
@@ -2062,26 +2057,26 @@ Wenden Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie auf 
    * Erstellen Sie ein `DocumentSecurityServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `DocumentSecurityServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/DocumentSecurityService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `DocumentSecurityServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `DocumentSecurityServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Rufen Sie ein Word-Dokument ab.
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern eines Word-Dokuments verwendet, auf das eine Richtlinie angewendet wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des Word-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Ermitteln Sie die Größe des Byte-Arrays, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die Methode `Read` des `System.IO.FileStream`-Objekts aufrufen. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Bestimmen Sie die Byte-Array-Größe, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode. Übergeben Sie das Byte-Array, die Startposition und die zu lesende Datenstromlänge.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Wenden Sie eine vorhandene Richtlinie auf das Word-Dokument an.
 
-   Wenden Sie eine Richtlinie auf das Word-Dokument an, indem Sie die Methode `protectDocument` des `DocumentSecurityServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
+   Wenden Sie eine Richtlinie auf das Word-Dokument an, indem Sie die `DocumentSecurityServiceClient` -Objekt `protectDocument` -Methode verwenden und die folgenden Werte übergeben:
 
    * Das `BLOB`-Objekt, das das Word-Dokument enthält, auf das die Richtlinie angewendet wird.
    * Einen Zeichenfolgenwert, der die Versionsnummer des Dokuments angibt.
@@ -2099,9 +2094,9 @@ Wenden Sie mithilfe der Document Security-API (Web-Service) eine Richtlinie auf 
 1. Speichern Sie das Word-Dokument.
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des richtliniengeschützten Word-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `protectDocument` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert des `MTOM`-Datenelements des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `protectDocument` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` Datenelement.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
-   * Schreiben Sie den Inhalt des Byte-Arrays in eine Word-Datei, indem Sie die Methode `Write` des `System.IO.BinaryWriter`-Objekts aufrufen und das Byte-Array übergeben.
+   * Schreiben Sie den Inhalt des Byte-Arrays in eine Word-Datei, indem Sie die `System.IO.BinaryWriter` -Objekt `Write` -Methode verwenden und das Byte-Array übergeben.
 
 **Code-Beispiele**
 
@@ -2161,7 +2156,7 @@ So entfernen Sie mithilfe der Document Security-API (Java) eine Richtlinie aus e
 
 1. Projektdateien einschließen
 
-   Fügen Sie Client-JAR-Dateien wie „adobe-rightsmanagement-client.jar“ in den Klassenpfad Ihres Java-Projekts ein.
+   Schließen Sie Client-JAR-Dateien wie adobe-rightsmanagement-client.jar in den Klassenpfad Ihres Java-Projekts ein.
 
 1. Erstellen eines Document Security-Client-API-Objekts
 
@@ -2175,13 +2170,13 @@ So entfernen Sie mithilfe der Document Security-API (Java) eine Richtlinie aus e
 
 1. Entfernen der Richtlinie aus dem Word-Dokument
 
-   * Erstellen Sie ein `DocumentManager`-Objekt, indem Sie die Methode `getDocumentManager` des `RightsManagementClient`-Objekts aufrufen.
-   * Entfernen Sie eine Richtlinie aus dem Word-Dokument, indem Sie die Methode `removeSecurity` des `DocumentManager`-Objekts aufrufen und das `com.adobe.idp.Document`-Objekt übergeben, das das richtliniengeschützte Word-Dokument enthält. Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das ein ungesichertes Word-Dokument enthält.
+   * Erstellen Sie eine `DocumentManager` -Objekt durch Aufrufen der `RightsManagementClient` -Objekt `getDocumentManager` -Methode.
+   * Entfernen Sie eine Richtlinie aus dem Word-Dokument, indem Sie die `DocumentManager` -Objekt `removeSecurity` -Methode und Übergabe der `com.adobe.idp.Document` -Objekt, das das richtliniengeschützte Word-Dokument enthält. Diese Methode gibt ein `com.adobe.idp.Document`-Objekt zurück, das ein ungesichertes Word-Dokument enthält.
 
 1. Speichern des ungesicherten Word-Dokuments
 
    * Erstellen Sie ein `java.io.File`-Objekt und stellen Sie sicher, dass die Dateierweiterung .doc ist.
-   * Rufen Sie die `copyToFile`-Methode des `Document`-Objekts auf, um den Inhalt des `Document`-Objekts in die Datei zu kopieren (stellen Sie sicher, dass Sie das `Document`-Objekt, das von der `removeSecurity`-Methode zurückgegeben wird, verwenden).
+   * Rufen Sie die `Document` -Objekt `copyToFile` -Methode zum Kopieren des Inhalts der `Document` -Objekt auf die Datei verweist (stellen Sie sicher, dass Sie die `Document` -Objekt, das von der `removeSecurity` -Methode).
 
 **Code-Beispiele**
 
@@ -2206,31 +2201,31 @@ So entfernen Sie mithilfe der Document Security-API (Webservice) eine Richtlinie
    * Erstellen Sie ein `RightsManagementServiceClient`-Objekt, indem Sie seinen Standardkonstruktor verwenden.
    * Erstellen Sie ein `RightsManagementServiceClient.Endpoint.Address`-Objekt, indem Sie den Konstruktor `System.ServiceModel.EndpointAddress` verwenden. Übergeben Sie einen Zeichenfolgenwert, der die WSDL für den AEM Forms-Service angibt (z. B. `http://localhost:8080/soap/services/RightsManagementService?WSDL`). Sie müssen das `lc_version`-Attribut nicht verwenden. Dieses Attribut wird verwendet, wenn Sie einen Service-Verweis erstellen.)
    * Erstellen Sie ein `System.ServiceModel.BasicHttpBinding`-Objekt durch Abrufen des Werts des Felds `RightsManagementServiceClient.Endpoint.Binding`. Wandeln Sie den Rückgabewert in `BasicHttpBinding` um.
-   * Legen Sie das `MessageEncoding`-Feld des `System.ServiceModel.BasicHttpBinding`-Objekts auf `WSMessageEncoding.Mtom` fest. Dieser Wert stellt sicher, dass MTOM verwendet wird.
+   * Legen Sie die `System.ServiceModel.BasicHttpBinding` -Objekt `MessageEncoding` -Feld zu `WSMessageEncoding.Mtom`. Dieser Wert stellt sicher, dass MTOM verwendet wird.
    * Aktivieren Sie die einfache HTTP-Authentifizierung, indem Sie die folgenden Schritte ausführen:
 
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.UserName` den AEM Forms-Benutzernamen zu.
       * Weisen Sie dem Feld `RightsManagementServiceClient.ClientCredentials.UserName.Password` den entsprechenden Passwortwert zu.
       * Weisen Sie dem Feld `BasicHttpBindingSecurity.Transport.ClientCredentialType` den konstanten Wert `HttpClientCredentialType.Basic` zu.
-   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
+   * Weisen Sie dem Feld `BasicHttpBindingSecurity.Security.Mode` den konstanten Wert `BasicHttpSecurityMode.TransportCredentialOnly` zu.
 
 1. Abrufen eines richtliniengeschützten Word-Dokuments
 
    * Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird zum Speichern des richtliniengeschützten Word-Dokuments verwendet, aus dem die Richtlinie entfernt wird.
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des Word-Dokuments und den Modus darstellt, in dem die Datei geöffnet werden soll.
-   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `Length`-Eigenschaft des `System.IO.FileStream`-Objekts abrufen.
-   * Füllen Sie das Byte-Array mit Datenstromdaten, indem Sie die `Read`-Methode des `System.IO.FileStream`-Objekts aufrufen und ihr das Byte-Array, die Startposition und die zu lesende Datenstromlänge übergeben.
+   * Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
+   * Füllen Sie das Byte-Array mit Stream-Daten, indem Sie die `System.IO.FileStream` -Objekt `Read` -Methode verwenden und das Byte-Array, die Startposition und die zu lesende Stream-Länge übergeben.
    * Füllen Sie das `BLOB`-Objekt, indem Sie seinem Feld `MTOM` den Inhalt des Byte-Arrays zuweisen.
 
 1. Entfernen der Richtlinie aus dem Word-Dokument
 
-   Entfernen Sie die Richtlinie aus dem Word-Dokument, indem Sie die Methode `removePolicySecurity` des `RightsManagementServiceClient`-Objekts aufrufen und das `BLOB`-Objekt übergeben, das das richtliniengeschützte Word-Dokument enthält. Diese Methode gibt ein `BLOB`-Objekt zurück, das ein ungesichertes Word-Dokument enthält.
+   Entfernen Sie die Richtlinie aus dem Word-Dokument, indem Sie die `RightsManagementServiceClient` -Objekt `removePolicySecurity` -Methode und Übergabe der `BLOB` -Objekt, das das richtliniengeschützte Word-Dokument enthält. Diese Methode gibt ein `BLOB`-Objekt zurück, das ein ungesichertes Word-Dokument enthält.
 
 1. Speichern des ungesicherten Word-Dokuments
 
    * Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen und einen Zeichenfolgenwert übergeben, der den Dateispeicherort des ungesicherten Word-Dokuments darstellt.
-   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `removePolicySecurity` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert aus dem `MTOM`-Feld des `BLOB`-Objekts abrufen.
+   * Erstellen Sie ein Byte-Array, das den Dateninhalt des `BLOB`-Objekts speichert, das von der Methode `removePolicySecurity` zurückgegeben wurde. Füllen Sie das Byte-Array, indem Sie den Wert der `BLOB` -Objekt `MTOM` -Feld.
    * Erstellen Sie ein `System.IO.BinaryWriter`-Objekt, indem Sie seinen Konstruktor aufrufen und das `System.IO.FileStream`-Objekt übergeben.
 
 **Code-Beispiele**

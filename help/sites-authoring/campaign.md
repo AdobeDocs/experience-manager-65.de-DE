@@ -1,19 +1,15 @@
 ---
 title: Arbeiten mit Adobe Campaign Classic und Adobe Campaign Standard
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: Sie können E-Mail-Inhalte in AEM erstellen und diese in Adobe Campaign-E-Mails verarbeiten
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails
-uuid: 23195f0b-71c0-4554-8c8b-b0e7704d71d7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2755'
-ht-degree: 46%
+source-wordcount: '2753'
+ht-degree: 44%
 
 ---
 
@@ -149,8 +145,8 @@ So bearbeiten Sie E-Mail-Inhalte:
 
 Beim Bearbeiten des Inhalts können Sie Folgendes einfügen:
 
-* Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Felder, die Sie in Ihren Text einfügen können und die sich automatisch je nach Daten des Empfängers ändern (beispielsweise Vor- und Nachname oder andere Daten der Zieldimension).
-* Adobe Campaign-Personalisierungsblöcke. Hierbei handelt es sich um Blöcke mit vorkonfiguriertem Inhalt, die sich nicht auf die Daten des Empfängers beziehen (beispielsweise Logo der Marke oder Link zu einer Mirrorseite).
+* Adobe Campaign-Kontextfelder. Hierbei handelt es sich um Felder, die Sie in Ihren Text einfügen können und die sich entsprechend den Empfängerdaten anpassen (z. B. Vorname, Nachname oder Daten der Zieldimension).
+* Adobe Campaign-Personalisierungsblöcke. Hierbei handelt es sich um vordefinierte Inhaltsbausteine, die nicht mit den Empfängerdaten in Zusammenhang stehen, wie z. B. ein Markenlogo oder ein Link zu einer Mirrorseite.
 
 Siehe [Adobe Campaign-Komponenten](/help/sites-authoring/adobe-campaign-components.md) für eine vollständige Beschreibung der Kampagnenkomponenten.
 
@@ -183,7 +179,7 @@ So fügen Sie Personalisierung ein:
    >* Informationen zum Hinzufügen oder Ausblenden von Personalisierungselementen finden Sie unter [Verwalten von Personalisierungsfeldern und -blöcken](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
    >* **Wichtig**: Alle Testtabellenfelder müssen sich ebenfalls in der Empfängertabelle (oder der entsprechenden Kontakttabelle) befinden.
 
-1. Text durch Eingabe einfügen Fügen Sie Kontextfelder oder Gestaltungsbausteine ein, indem Sie auf die Adobe Campaign-Komponenten klicken und sie auswählen. Wählen Sie das Häkchen aus, wenn Sie fertig sind.
+1. Text durch Eingabe einfügen Fügen Sie Kontextfelder oder Gestaltungsbausteine ein, indem Sie auf die Adobe Campaign-Komponenten klicken und sie auswählen. Wählen Sie zum Abschluss das Häkchen aus.
 
    ![chlimage_1-27](assets/chlimage_1-27a.png)
 

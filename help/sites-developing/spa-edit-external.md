@@ -2,7 +2,7 @@
 title: Bearbeiten externer SPA in Adobe Experience Manager
 description: In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenständigen SPA in eine Adobe Experience Manager-Instanz, zum Hinzufügen bearbeitbarer Inhaltsabschnitte und zum Aktivieren der Bearbeitung beschrieben.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2440'
 ht-degree: 78%
@@ -21,7 +21,7 @@ In diesem Dokument werden die empfohlenen Schritte zum Hochladen einer eigenstä
 
 Die Voraussetzungen sind einfach.
 
-* Stellen Sie sicher, dass eine Instanz von AEM lokal ausgeführt wird.
+* Stellen Sie sicher, dass eine AEM lokal ausgeführt wird.
 * Erstellen Sie ein AEM-SPA-Projekt mit [dem AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de#available-properties).
    * Dies bildet die Grundlage für das AEM Projekt, das aktualisiert wird, um die externe SPA aufzunehmen.
    * Die Beispiele in diesem Dokument verwenden den Ausgangspunkt von [das WKND-SPA](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html?lang=de#spa-editor).
@@ -188,7 +188,7 @@ Die `AEMText`-Komponente kann jetzt in AEM bearbeitet werden.
 ### In AEM bearbeitbare Seiten {#aem-authorable-pages}
 
 1. Identifizieren Sie eine Seite, die zur Bearbeitung in der SPA hinzugefügt werden soll. In diesem Beispiel wird `/content/wknd-spa-react/us/en/home.html` verwendet.
-1. Erstellen Sie eine Datei (z. B. `Page.js`) für die bearbeitbare Seitenkomponente. Hier kann die Seitenkomponente wiederverwendet werden, die in `@adobe/cq-react-editable-components`.
+1. Datei erstellen (z. B. `Page.js`) für die bearbeitbare Seitenkomponente. Hier kann die Seitenkomponente wiederverwendet werden, die in `@adobe/cq-react-editable-components`.
 1. Wiederholen Sie Schritt 4 im Abschnitt [Bearbeitbare AEM-Blattkomponenten](#authorable-leaf-components). Verwenden Sie die Wrapper-Funktion `withMappable` für die Komponente.
 1. Wenden Sie wie zuvor `MapTo` auf die AEM-Ressourcentypen für alle untergeordneten Komponenten in der Seite an.
 

@@ -1,20 +1,16 @@
 ---
 title: AEM Forms mit Web Services aufrufen
-seo-title: Invoking AEM Forms using Web Services
 description: Rufen Sie AEM Forms-Prozesse mithilfe von Web-Services mit vollständiger Unterstützung für die WSDL-Generierung auf.
-seo-description: Invoke AEM Forms processes using web services with full support for WSDL generation.
-uuid: 66bcd010-c476-4b66-831d-a48307d8d67a
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '9901'
-ht-degree: 90%
+ht-degree: 89%
 
 ---
 
@@ -648,7 +644,7 @@ Sie können den Service `MyApplication/EncryptDocument` (der in Workbench erstel
 1. Erstellen Sie eine Microsoft .NET-Client-Assembly, die die WSDL des Services `MyApplication/EncryptDocument` verwendet.
 1. Erstellen Sie ein Microsoft .NET-Client-Projekt. Verweisen Sie im Client-Projekt auf die Microsoft .NET-Client-Assembly. Verweisen Sie auch auf `System.Web.Services`.
 1. Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `MyApplication_EncryptDocumentService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen.
-1. Legen Sie die `MyApplication_EncryptDocumentService` -Objekt `Credentials` -Eigenschaft mit `System.Net.NetworkCredential` -Objekt. Geben Sie im `System.Net.NetworkCredential`-Konstruktor einen AEM Forms-Benutzernamen und das entsprechende Kennwort an. Legen Sie Authentifizierungswerte fest, damit Ihre .NET-Client-Anwendung erfolgreich SOAP-Nachrichten mit AEM Forms austauschen kann.
+1. Legen Sie die `MyApplication_EncryptDocumentService` -Objekt `Credentials` -Eigenschaft mit `System.Net.NetworkCredential` -Objekt. Innerhalb der `System.Net.NetworkCredential` -Konstruktor einen AEM Formular-Benutzernamen und das entsprechende Kennwort angeben. Legen Sie Authentifizierungswerte fest, damit Ihre .NET-Client-Anwendung erfolgreich SOAP-Nachrichten mit AEM Forms austauschen kann.
 1. Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um ein PDF-Dokument zu speichern, das an den Prozess `MyApplication/EncryptDocument` übergeben wird.
 1. Erstellen Sie ein `System.IO.FileStream`-Objekt, indem Sie seinen Konstruktor aufrufen. Übergeben Sie einen Zeichenfolgenwert, der den Dateispeicherort des PDF-Dokuments und den Modus angibt, in dem die Datei geöffnet werden soll.
 1. Erstellen Sie ein Byte-Array, das den Inhalt des `System.IO.FileStream`-Objekts speichert. Sie können die Größe des Byte-Arrays bestimmen, indem Sie die `System.IO.FileStream` -Objekt `Length` -Eigenschaft.
@@ -964,7 +960,7 @@ Sie können den `MyApplication/EncryptDocument`-Dienst (der in Workbench erstell
 1. Erstellen Sie die .NET-Client-Assembly.
 1. Referenzieren Sie die Microsoft .NET-Client-Assembly. Erstellen Sie ein Microsoft .NET-Client-Projekt. Verweisen Sie im Client-Projekt auf die Microsoft .NET-Client-Assembly. Verweisen Sie auch auf `System.Web.Services`.
 1. Erstellen Sie mithilfe der Microsoft .NET-Client-Assembly ein `MyApplication_EncryptDocumentService`-Objekt, indem Sie seinen Standardkonstruktor aufrufen.
-1. Legen Sie die `MyApplication_EncryptDocumentService` -Objekt `Credentials` -Eigenschaft mit `System.Net.NetworkCredential` -Objekt. Geben Sie im `System.Net.NetworkCredential`-Konstruktor einen AEM Forms-Benutzernamen und das entsprechende Kennwort an. Legen Sie Authentifizierungswerte fest, damit Ihre .NET-Client-Anwendung erfolgreich SOAP-Nachrichten mit AEM Forms austauschen kann.
+1. Legen Sie die `MyApplication_EncryptDocumentService` -Objekt `Credentials` -Eigenschaft mit `System.Net.NetworkCredential` -Objekt. Innerhalb der `System.Net.NetworkCredential` -Konstruktor einen AEM Formular-Benutzernamen und das entsprechende Kennwort angeben. Legen Sie Authentifizierungswerte fest, damit Ihre .NET-Client-Anwendung erfolgreich SOAP-Nachrichten mit AEM Forms austauschen kann.
 1. Erstellen Sie ein Objekt `BLOB`, indem Sie den Konstruktor verwenden. Das `BLOB`-Objekt wird verwendet, um Daten an den `MyApplication/EncryptDocument`-Prozess zu übergeben.
 1. Weisen Sie dem `BLOB` -Objekt `remoteURL` Datenelement, das den URI-Speicherort eines PDF-Dokuments angibt, das an die `MyApplication/EncryptDocument`-Dienst.
 1. Rufen Sie die `MyApplication/EncryptDocument` -Prozess durch Aufrufen der `MyApplication_EncryptDocumentService` -Objekt `invoke` -Methode und Übergabe der `BLOB` -Objekt. Dieser Prozess gibt ein verschlüsseltes PDF-Dokument innerhalb eines `BLOB`-Objekts zurück.
@@ -1231,7 +1227,7 @@ Ein Client-Programm kann die Bestätigung von jeder AuthenticationManager-API in
 * Authentifizieren des Benutzers mithilfe einer der Authentifizierungsmethoden, die von der AuthenticationManager-API verfügbar gemacht werden. Normalerweise würden der Benutzername und das Kennwort verwendet. Sie können jedoch auch die Zertifikatauthentifizierung verwenden.
 * Mithilfe der Methode `AuthenticationManager.getAuthResultOnBehalfOfUser`. Mithilfe dieser Methode kann ein Client-Programm für einen beliebigen AEM Forms-Benutzer ein `AuthResult`-Objekt abrufen.
 
-Ein AEM Forms-Benutzer kann mithilfe eines SAML-Tokens authentifiziert werden, das abgerufen wird. Diese SAML-Bestätigung (XML-Fragment) kann als Teil der WS-Security-Kopfzeile mit dem Aufruf des Web-Services zur Benutzerauthentifizierung gesendet werden. In der Regel hat ein Client-Programm einen Benutzer authentifiziert, aber die Anmeldeinformationen des Benutzers nicht gespeichert. (Oder der Benutzer hat sich bei diesem Client über einen anderen Mechanismus als die Verwendung eines Benutzernamens und Kennworts angemeldet.) In dieser Situation muss das Client-Programm AEM Forms aufrufen und einen bestimmten Benutzer verkörpern, der berechtigt ist, AEM Forms aufzurufen.
+Ein AEM forms-Benutzer kann mithilfe eines SAML-Tokens authentifiziert werden, das abgerufen wird. Diese SAML-Bestätigung (XML-Fragment) kann als Teil der WS-Security-Kopfzeile mit dem Aufruf des Web-Services zur Benutzerauthentifizierung gesendet werden. In der Regel hat ein Client-Programm einen Benutzer authentifiziert, aber die Anmeldeinformationen des Benutzers nicht gespeichert. (Oder der Benutzer hat sich bei diesem Client über einen anderen Mechanismus als die Verwendung eines Benutzernamens und Kennworts angemeldet.) In dieser Situation muss das Client-Programm AEM Forms aufrufen und einen bestimmten Benutzer verkörpern, der berechtigt ist, AEM Forms aufzurufen.
 
 Um einen bestimmten Benutzer zu verkörpern, rufen Sie die Methode `AuthenticationManager.getAuthResultOnBehalfOfUser` mithilfe eines Web-Services auf. Diese Methode gibt eine `AuthResult`-Instanz zurück, die die SAML-Bestätigung für diesen Benutzer enthält.
 

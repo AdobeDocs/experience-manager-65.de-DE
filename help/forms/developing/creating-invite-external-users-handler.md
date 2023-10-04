@@ -3,10 +3,10 @@ title: Erstellen eines Handlers zum Einladen externer Benutzer
 description: Erstellen eines Handlers zum Einladen externer Benutzer
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
-workflow-type: ht
-source-wordcount: '1116'
-ht-degree: 100%
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
+source-wordcount: '1117'
+ht-degree: 98%
 
 ---
 
@@ -50,7 +50,7 @@ Die `invitedUser`-Methode akzeptiert eine `java.util.List`-Instanz, die E-Mail-A
 
 Die Implementierung des Handlers zum Einladen externer Benutzer enthält eine benutzerdefinierte Methode namens `createLocalPrincipalAccount`. Diese Methode akzeptiert einen Zeichenfolgenwert, in dem eine E-Mail-Adresse als Parameter enthalten ist. Die `createLocalPrincipalAccount`-Methode setzt voraus, dass eine lokale Domain namens `EDC_EXTERNAL_REGISTERED` vorhanden ist. Sie können diesen Domain-Namen nach Belieben konfigurieren. Bei einem Produktionsprogramm sollten Sie diesen jedoch in eine Unternehmens-Domain integrieren.
 
-Die `createUsers`-Methode durchläuft die einzelnen E-Mail-Adressen und erstellt jeweils ein entsprechendes Benutzerobjekt (einen lokalen Benutzer in der Domain `EDC_EXTERNAL_REGISTERED`). Schließlich wird die `doEmails`-Methode aufgerufen. Diese Methode wird absichtlich als Stub in der Probe hinterlassen. In einer Produktionsimplementierung würde sie die Programmlogik zum Senden von Einladungs-E-Mail-Nachrichten an die neu erstellten Benutzer enthalten. Der logische Ablauf eines echten Programms wird im Beispiel demonstriert werden.
+Die `createUsers`-Methode durchläuft die einzelnen E-Mail-Adressen und erstellt jeweils ein entsprechendes Benutzerobjekt (einen lokalen Benutzer in der Domain `EDC_EXTERNAL_REGISTERED`). Schließlich wird die `doEmails`-Methode aufgerufen. Diese Methode wird absichtlich als Stub in der Probe hinterlassen. In einer Produktionsimplementierung würde dies die Anwendungslogik zum Senden von Einladungs-E-Mail-Nachrichten an die neu erstellten Benutzer enthalten. Der logische Ablauf eines echten Programms wird im Beispiel demonstriert werden.
 
 ### Definieren der Implementierung des Handlers zum Einladen externer Benutzer {#user-handler-implementation}
 

@@ -1,17 +1,15 @@
 ---
 title: Integration von AEM 6.5 mit Adobe Campaign Classic
 description: Erfahren Sie, wie Sie AEM 6.5 mit Adobe Campaign Classic integrieren können
-uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
-workflow-type: ht
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
 source-wordcount: '1583'
-ht-degree: 100%
+ht-degree: 98%
 
 ---
 
@@ -152,7 +150,7 @@ AEM kann jetzt mit Adobe Campaign kommunizieren.
 
 >[!NOTE]
 >
->Stellen Sie sicher, dass Ihr Adobe Campaign-Server über das Internet erreichbar ist. AEM kann nicht auf private Netzwerke zugreifen.
+>Stellen Sie sicher, dass Ihr Adobe Campaign-Server über das Internet erreichbar ist. AEM können nicht auf private Netze zugreifen.
 
 ## Konfigurieren der Replikation für die AEM-Veröffentlichungsinstanz {#replication}
 
@@ -190,7 +188,7 @@ Sie haben die Replikation zur AEM-Veröffentlichungsinstanz konfiguriert, damit 
 
 1. Melden Sie sich bei der AEM-Autoreninstanz als Admin an.
 1. Wählen Sie in der globalen Navigationsleiste die Option **Tools** > **Vorgänge** > **Web-Konsole** > **OSGi-Konfiguration** und suchen Sie nach **Day CQ Link Externalizer**.
-1. Standardmäßig ist der letzte Eintrag im Feld **Domains** für die Veröffentlichungsinstanz vorgesehen. Ändern Sie die URL von der Standardeinstellung `http://localhost:4503` auf Ihre öffentlich verfügbare Veröffentlichungsinstanz.
+1. Standardmäßig ist der letzte Eintrag im Feld **Domains** für die Veröffentlichungsinstanz vorgesehen. Ändern der URL von der Standardeinstellung `http://localhost:4503` an Ihre öffentlich verfügbare Veröffentlichungsinstanz.
 
    ![Konfigurieren des Externalizers](assets/acc-externalizer-config.png)
 
@@ -200,7 +198,7 @@ Sie haben den Externalizer konfiguriert, und Adobe Campaign kann nun auf Ihre In
 
 >[!NOTE]
 >
->Die Veröffentlichungsinstanz muss vom Adobe Campaign-Server aus erreichbar sein. Falls sie auf `localhost:4503` oder einen anderen Server verweist, den Adobe Campaign nicht erreichen kann, werden Bilder von AEM nicht auf der Adobe Campaign-Konsole angezeigt.
+Die Veröffentlichungsinstanz muss vom Adobe Campaign-Server aus erreichbar sein. Falls sie auf `localhost:4503` oder einen anderen Server verweist, den Adobe Campaign nicht erreichen kann, werden Bilder von AEM nicht auf der Adobe Campaign-Konsole angezeigt.
 
 ## Konfigurieren des Benutzers „campaign-remote“ in AEM {#configure-user}
 

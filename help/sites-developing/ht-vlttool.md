@@ -1,19 +1,15 @@
 ---
 title: Vewenden des VLT-Tools
-seo-title: How to use the VLT Tool
 description: Das Jackrabbit FileVault Tool (VLT) wurde von der Apache Foundation entwickelt, die den Inhalt einer Jackrabbit/AEM-Instanz Ihrem Dateisystem zuordnet
-seo-description: The Jackrabbit FileVault tool (VLT) is developed by The Apache Foundation that maps the content of a Jackrabbit/AEM instance to your file system
-uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2715'
-ht-degree: 85%
+ht-degree: 84%
 
 ---
 
@@ -333,7 +329,7 @@ Die folgende Tabelle beschreibt alle verfügbaren VLT-Befehle. Detaillierte Info
 | `diff` | `di` | Zeigt die Unterschiede zwischen zwei Pfaden an. |
 | `console` |  | Führt eine interaktive Konsole aus. |
 | `rcp` |  | Kopiert einen Knotenbaum von einem Remote-Repository in ein anderes. |
-| `sync` |  | Ermöglicht die Steuerung des Vault-Synchronisierungsdiensts. |
+| `sync` |  | Hiermit können Sie den Vault-Synchronisierungsdienst steuern. |
 
 ### Export {#export}
 
@@ -746,7 +742,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 ### Sync {#sync}
 
-Ermöglicht die Steuerung des Vault-Synchronisierungsdiensts. Dieser Befehl versucht ohne Argumente, das aktuelle Arbeitsverzeichnis unter Sync-Kontrolle zu stellen. Wenn es innerhalb des vlt-Auscheckens ausgeführt wird, verwendet es den entsprechenden Filter und den Host, um die Synchronisierung zu konfigurieren. Wenn sie außerhalb eines vlt-Auscheckens ausgeführt wird, wird der aktuelle Ordner nur dann zur Synchronisierung registriert, wenn der Ordner leer ist.
+Hiermit können Sie den Vault-Synchronisierungsdienst steuern. Dieser Befehl versucht ohne Argumente, das aktuelle Arbeitsverzeichnis unter Sync-Kontrolle zu stellen. Bei Ausführung in einem vlt-Checkout wird der entsprechende Filter und Host verwendet, um die Synchronisierung zu konfigurieren. Wenn sie außerhalb eines vlt-Auscheckens ausgeführt wird, wird der aktuelle Ordner nur dann zur Synchronisierung registriert, wenn der Ordner leer ist.
 
 #### Syntax {#syntax-18}
 

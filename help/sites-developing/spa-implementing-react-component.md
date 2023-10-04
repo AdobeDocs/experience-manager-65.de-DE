@@ -7,9 +7,9 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '551'
 ht-degree: 61%
 
 ---
@@ -59,7 +59,7 @@ Die Änderung wird gespeichert und die Komponente wird automatisch mit neuen Wet
 
 ### Implementierung der Wetterkomponente {#weather-component-implementation}
 
-Die Wetterkomponente basiert auf einer öffentlich zugänglichen React-Komponente namens [React Open Weather](https://www.npmjs.com/package/react-open-weather). Es wurde so angepasst, dass es als Komponente in der Beispielanwendung &quot;We.Retail Journal&quot;SPA.
+Die Wetterkomponente basiert auf einer öffentlich verfügbaren React-Komponente namens [React Open Weather](https://www.npmjs.com/package/react-open-weather). Es wurde so angepasst, dass es als Komponente in der Beispielanwendung &quot;We.Retail Journal&quot;SPA.
 
 Im Folgenden finden Sie Ausschnitte aus der NPM-Dokumentation zur Verwendung der Komponente „React Open Weather“.
 

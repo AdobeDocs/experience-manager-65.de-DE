@@ -1,5 +1,5 @@
 ---
-title: In-Context-Moderation
+title: Kontextbezogene Moderation
 seo-title: In-Context Moderation
 description: So führen Sie Moderatoraktionen durch
 seo-description: How to perform moderator actions
@@ -11,29 +11,29 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 1%
 
 ---
 
-# In-Context-Moderation {#in-context-moderation}
+# Kontextbezogene Moderation {#in-context-moderation}
 
 Für AEM Communities kann die Moderation von Administratoren und vertrauenswürdigen Community-Mitgliedern direkt auf der veröffentlichten Seite erfolgen, auf der die Community-Inhalte veröffentlicht wurden.
 
-Bei Verwendung von [Moderationskonsole](moderation.md)enthalten die für den Inhalt angezeigten Informationen einen Link zur veröffentlichten Seite, um den Zugriff auf zusätzliche Moderationsaktionen zu ermöglichen, die bei der Moderation im Kontext verfügbar sind.
+Bei der Verwendung von [Moderationskonsole](moderation.md)enthalten die für den Inhalt angezeigten Informationen einen Link zur veröffentlichten Seite, um den Zugriff auf zusätzliche Moderationsaktionen zu ermöglichen, die bei der Moderation im Kontext verfügbar sind.
 
 ## Moderationsaktionen {#moderation-actions}
 
-Eine Beschreibung der [Moderationsaktionen](moderate-ugc.md#moderation-actions).
+In der Moderationsübersicht finden Sie eine Beschreibung von [Moderationsaktionen](moderate-ugc.md#moderation-actions).
 
 ## Moderationsbenutzeroberfläche {#moderation-ui}
 
 Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz angezeigt wird, ist im Dialogfeld für die Veröffentlichung und Verwaltung benutzergenerierter Inhalte (UGC) enthalten. Die Elemente der Benutzeroberfläche werden durch den Status des Site-Besuchers bestimmt - unabhängig davon, ob sie ...
 
 1. Das Mitglied, das den Inhalt veröffentlicht hat.
-1. Moderator eines vertrauenswürdigen Mitglieds.
+1. Ein vertrauenswürdiger Moderator.
 1. Einen Administrator.
 1. Angemeldet, aber weder Administrator, Moderator noch Autor des Inhalts.
 1. Nicht angemeldet.
@@ -65,7 +65,7 @@ Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten v
    * Beitrag auswählen
    * Log Out auswählen
 
-* Als Aaron McDonald anmelden (aaron.mcdonald@mailinator.com)
+* Melden Sie sich als Aaron McDonald an (aaron.mcdonald@mailinator.com)
 
    * Forum auswählen
    * Wählen Sie für das Thema &quot;Hummingbird&quot;die Option &quot;Mehr lesen&quot;

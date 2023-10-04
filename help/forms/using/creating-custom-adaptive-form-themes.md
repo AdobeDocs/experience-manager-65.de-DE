@@ -5,10 +5,10 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '795'
-ht-degree: 42%
+source-wordcount: '789'
+ht-degree: 37%
 
 ---
 
@@ -59,13 +59,13 @@ Sie erstellen eine **adaptive Vorlage** und wenden Sie das Design auf die Vorlag
 
    * Ordner `less`: Enthält die Variablendateien `less`, in denen Sie die Variablen `less` und `less mixins` definieren, die für die Verwaltung der .css-Stile verwendet werden.
 
-     Dieser Ordner besteht aus `less` Variablendateien, `less` Mixin-Dateien, `less` -Dateien, die Stile mit Mixins und Variablen definieren. Diese Dateien werden dann alle in „styles.less“ importiert.
+     Dieser Ordner besteht aus `less` Variablendateien, `less` Mixin-Dateien, `less` -Dateien, die Stile mit Mixins und Variablen definieren. Und all diese `less` -Dateien werden dann in styles.less importiert.
 
    * Ordner `css`: Enthält die .css-Dateien, in denen Sie die im Thema zu verwendenden statischen Stile definieren.
 
    **Weniger Variablendateien**: Dies sind die Dateien, in denen Sie die Variablen definieren oder überschreiben, die beim Definieren von CSS-Stilen verwendet werden.
 
-   Adaptive Formulare stellen OOTB-Variablen bereit, die in den folgenden .less-Dateien definiert sind:
+   Adaptive Formulare stellen OOTB-Variablen bereit, die in den folgenden `.less` -Dateien:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -74,7 +74,7 @@ Sie erstellen eine **adaptive Vorlage** und wenden Sie das Design auf die Vorlag
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   Sie können die mit den adaptiven Formularen bereitgestellten „less“-Variablen verwenden, Sie können diese Variablen überschreiben oder Sie können neue „less“-Variablen erstellen.
+   Sie können die `less` Variablen, die mit adaptiven Formularen bereitgestellt werden, können Sie diese Variablen überschreiben oder Sie können neue `less` Variablen.
 
    >[!NOTE]
    >
@@ -131,11 +131,11 @@ Sie erstellen eine **adaptive Vorlage** und wenden Sie das Design auf die Vorlag
    }
    ```
 
-   **Styles.less-Datei:** Verwenden Sie diese Datei, um alle less -Dateien (Variablen, Mixins, Stile) einzuschließen, die Sie in der Client-Bibliothek verwenden müssen.
+   **Styles.less-Datei:** Verwenden Sie diese Datei, um alle `less` -Dateien (Variablen, Mixins, Stile), die Sie in der Client-Bibliothek verwenden müssen.
 
    In der folgenden Musterdatei `styles.less` kann die Importanweisung in jeder beliebigen Reihenfolge platziert werden.
 
-   Die Anweisungen zum Importieren der folgenden .less-Dateien sind obligatorisch:
+   Die Anweisungen zum Importieren der folgenden `.less` -Dateien sind obligatorisch:
 
    * `globalvariables.less`
    * `layoutvariables.less`

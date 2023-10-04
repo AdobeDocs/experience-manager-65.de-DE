@@ -1,16 +1,12 @@
 ---
 title: Verwalten von Sammlungen
-seo-title: Managing Collections
 description: Sammlungen stellen einen klar definierten Behälter dar, der mit Inhalten wie Artikeln oder Bannern gefüllt ist, die dem Titelthema entsprechen. Auf dieser Seite erfahren Sie mehr.
-seo-description: Collections represent a well defined bucket filled with content such as articles or banners that suits the cover's theme. Follow this page to learn more.
-uuid: 1d2e9769-d2cc-4d43-a428-e962a51eb5d0
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '798'
 ht-degree: 2%
@@ -27,7 +23,7 @@ Inhaltsverwaltungsaktionen sind die Bausteine, mit denen Inhalte in einer Anwend
 
 ## Sammlungen - Überblick {#collections-overview}
 
-Sammlungen stellen eine genau definierte *Behälter* mit Inhalten wie Artikeln oder Bannern gefüllt, die dem Titelthema entsprechen.
+Sammlungen stellen eine genau definierte *Bucket* mit Inhalten wie Artikeln oder Bannern gefüllt, die dem Titelthema entsprechen.
 
 >[!NOTE]
 >
@@ -42,9 +38,9 @@ Sammlungen stellen eine genau definierte *Behälter* mit Inhalten wie Artikeln o
 
 Der allgemeine Workflow zum Erstellen einer Kollektion lautet wie folgt:
 
-1. Auswählen **Mobile** über die Seitenleiste aus.
+1. Auswählen **Mobilnummer** über die Seitenleiste aus.
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Klicken Sie oben rechts im **Verwalten von Sammlungen** Kachel.
+1. Klicken Sie oben rechts in der **Verwalten von Sammlungen** Kachel.
 1. Führen Sie jeden Schritt des Assistenten durch, um mit der Erstellung des neuen Artikels fortzufahren.
 1. Wenn Sie bereit sind, klicken Sie auf **Erstellen**.
 1. Ihr neuer Artikel wird im **Verwalten von Sammlungen** Kachel.
@@ -62,8 +58,8 @@ Vorhandene On-Demand-Inhalte für Mobilgeräte können von Mobile On-Demand heru
 Der Workflow zum Importieren einer neuen Sammlung
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
-1. Klicken Sie oben rechts im **Verwalten von Sammlungen** und wählen Sie Sammlungen importieren aus.
-1. Klicken **Sammlungen importieren** im Dialogfeld und dann Schließen.
+1. Klicken Sie oben rechts in der **Verwalten von Sammlungen** und wählen Sie Sammlungen importieren aus.
+1. Klicks **Sammlungen importieren** im Dialogfeld und dann Schließen.
 1. Ihre On-Demand-Sammlungen für Mobilgeräte werden jetzt im **Verwalten von Sammlungen** Kachel.
 
 >[!CAUTION]
@@ -91,17 +87,17 @@ Allgemeiner Workflow zum Anzeigen/Bearbeiten einer Sammlung:
 1. Wählen Sie eine Sammlung aus der **Verwalten von Sammlungen** Kachel.
 
 1. Wählen Sie in der Aktionsleiste **Eigenschaften** aus.
-1. Zeigen Sie alle verfügbaren Metadaten für diesen Artikel an.
+1. Alle verfügbaren Metadaten für diesen Artikel anzeigen.
 1. Bearbeiten Sie die Metadaten nach Bedarf und klicken Sie auf **Speichern** wann geschehen.
 1. Optional können Sie die Änderungen sofort in Mobile On-Demand hochladen.
 
 ## Hochladen einer Sammlung {#uploading-a-collection}
 
-Mit der Aktion &quot;Hochladen&quot;wird der ausgewählte Inhalt kopiert und zu einem Mobile On-Demand-Projekt hinzugefügt. Bereits vorhandene mobile On-Demand-Inhalte werden durch die neue Version ersetzt.
+Mit der Aktion &quot;Hochladen&quot;wird der ausgewählte Inhalt kopiert und zu einem On-Demand-Projekt für Mobilgeräte hinzugefügt. Bereits vorhandene mobile On-Demand-Inhalte werden durch die neue Version ersetzt.
 
 Allgemeiner Workflow zum Hochladen einer Sammlung:
 
-1. Von **Mobile** wählen Sie Ihre Mobile On-Demand-App aus dem Katalog aus.
+1. Von **Mobilnummer** wählen Sie Ihre Mobile On-Demand-App aus dem Katalog aus.
 1. Im **Verwalten von Sammlungen** -Kachel einen Artikel zum Hochladen auf Mobile On-Demand auswählen.
 1. Fügen Sie bei Bedarf in der Listenansicht weitere Sammlungen hinzu.
 1. Auswählen **Hochladen** Klicken Sie in der Aktionsleiste auf Hochladen im Dialogfeld.
@@ -116,7 +112,7 @@ Der allgemeine Workflow zum Löschen einer Sammlung:
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
 1. Wählen Sie den zu löschenden Artikel im **Verwalten von Sammlungen** Kachel.
 1. Stellen Sie sicher, dass es in der Liste ausgewählt ist (wählen Sie nach Bedarf andere aus, die gelöscht werden sollen).
-1. Klicken **Löschen** in der Aktionsleiste aus.
+1. Klicks **Löschen** in der Aktionsleiste aus.
 1. Überprüfen Sie, ob Sie sowohl AEM als auch Mobile On-Demand löschen möchten.
 1. Klicken Sie auf **Löschen**.
 1. Ihre Sammlung wird jetzt aus der Liste entfernt.
@@ -129,13 +125,13 @@ Sammlungen sind im Wesentlichen eine Kategorie verwandter Inhalte. Sie sammeln I
 >
 >Inhalte müssen in Mobile On-Demand hochgeladen werden, bevor sie zu einer Sammlung hinzugefügt werden können.
 
-Sammlungen sind im Wesentlichen eine Kategorie verwandter Inhalte: Sie sammeln Inhalte wie Artikel und Banner in Paketen, die die Navigationsstruktur Ihrer Anwendung definieren. Sammlungen können verschachtelt werden.
+Kollektionen sind im Wesentlichen eine Kategorie verwandter Inhalte: Sie sammeln Inhalte wie Artikel und Banner in Paketen, die die Navigationsstruktur Ihrer Anwendung definieren. Sammlungen können verschachtelt werden.
 
 1. Wählen Sie in Mobile Ihre Mobile On-Demand-App aus dem Katalog aus.
 1. Wählen Sie einen zuvor hochgeladenen Artikel (oder Banner/Sammlung) aus.
 1. Wählen Sie in der Aktionsleiste Hinzufügen zu aus.
 1. Wählen Sie im Dialogfeld eine zuvor hochgeladene Sammlung aus.
-1. Klicken **Aktualisieren** , um Inhalte zur Sammlung hinzuzufügen.
+1. Klicks **Aktualisieren** , um Inhalte zur Sammlung hinzuzufügen.
 
 ![chlimage_1-2](assets/chlimage_1-2.gif)
 
@@ -143,7 +139,7 @@ Sammlungen sind im Wesentlichen eine Kategorie verwandter Inhalte: Sie sammeln I
 
 Informationen zum Verwalten von Sammlungen finden Sie unter
 
-* [Verwalten von Bannern](/help/mobile/mobile-on-demand-managing-banners.md)
+* [Banner verwalten](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verwalten von Artikeln](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Hochladen freigegebener Ressourcen](/help/mobile/mobile-on-demand-shared-resources.md)
 * [Veröffentlichen/Veröffentlichung des Inhalts rückgängig machen](/help/mobile/mobile-on-demand-publishing-unpublishing.md)

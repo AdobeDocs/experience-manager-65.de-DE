@@ -1,19 +1,15 @@
 ---
 title: Verbessern der Performance umfangreicher Formulare durch verzögertes Laden
-seo-title: Improve performance of large forms with lazy loading
 description: Verzögertes Laden verbessert die Leistung großer und komplexer adaptiver Formulare erheblich, indem die Initialisierung und das Laden von Formularfragmenten verzögert werden, bis sie sichtbar sind.
-seo-description: Lazy loading significantly improves the performance of large and complex adaptive forms by deferring initialization and loading of form fragments until they are visible.
-uuid: 6be3d2f0-1b2a-4090-af66-2b08487c31bc
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1090'
-ht-degree: 48%
+source-wordcount: '1089'
+ht-degree: 50%
 
 ---
 
@@ -90,7 +86,7 @@ Einige der folgenden Einschränkungen, Empfehlungen und wichtigen Aspekte sind b
 
 Weiterhin sollten Sie Folgendes beim Entwickeln von Skripten für das verzögerte Laden beachten:
 
-* Stellen Sie sicher, dass die in den Feldern eines verzögert geladenen Fragments verwendeten Initialisierungs- und Berechnungsskripten idempotent sind. Idempotent-Skripte sind solche, die dieselbe Wirkung auch nach mehreren Ausführungen haben.
+* Stellen Sie sicher, dass die initialisierten und berechneten Skripte, die in den Feldern des verzögert geladenen Fragments verwendet werden, idempotent sind. Idempotent-Skripte sind solche, die dieselbe Wirkung auch nach mehreren Ausführungen haben.
 * Verwenden Sie die global verfügbare Eigenschaft von Feldern, um den Wert von Feldern in einem Bereich für verzögertes Laden für alle anderen Bereiche eines Formulars verfügbar zu machen.
 * Weiterleiten Sie den Referenzwert eines Felds in einem verzögerten Bereich nicht weiter, unabhängig davon, ob das Feld global über Fragmente hinweg markiert ist oder nicht.
 * Verwenden Sie die Funktion zum Zurücksetzen des Bedienfelds, um alle im Bedienfeld sichtbaren Elemente mithilfe des folgenden Klickausdrucks zurückzusetzen.\

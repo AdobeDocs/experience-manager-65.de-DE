@@ -1,18 +1,14 @@
 ---
 title: Best Practices für die Arbeit mit adaptiven Formularen
-seo-title: Best practices for working with adaptive forms
 description: Erläutert Best Practices für die Einrichtung eines AEM Forms-Projekts, die Entwicklung adaptiver Formulare und die Optimierung der Leistung für das AEM Forms-System.
-seo-description: Explains best practices for setting up an AEM Forms project, developing adaptive forms, and optimizing the performance for AEM Forms system.
-uuid: ed95fc64-56b3-4ea1-a5ba-2e96953fca56
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
-discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '4734'
-ht-degree: 45%
+ht-degree: 44%
 
 ---
 
@@ -293,7 +289,7 @@ Einige Best Practices beim Lokalisieren von adaptiven Formularen lauten wie folg
 
 * Verwenden Sie adaptive Formularfragmente für gängige Elemente in Formularen und lokalisieren Sie Fragmente. Dadurch wird sichergestellt, dass Sie ein Fragment einmal lokalisieren und es in allen Formularen wiedergeben, in denen das lokalisierte Fragment verwendet wird.
 * Änderungen wie das Hinzufügen einer neuen Komponente oder das Anwenden eines Skripts in einem lokalisierten Formular werden nicht automatisch lokalisiert. Daher müssen Sie ein Formular vor der Lokalisierung fertigstellen, um mehrere Lokalisierungszyklen zu vermeiden.
-* Verwenden Sie den Anforderungsparameter `afAcceptLang`, um das Browsergebietsschemazu überschreiben und das Formular in einem spezifischen Gebietsschema zu lokalisieren. Die folgende URL erzwingt beispielsweise die Darstellung des Formulars im japanischen Gebietsschema, unabhängig vom Gebietsschema, das in den Browser-Einstellungen angegeben ist:
+* Verwenden Sie den Anforderungsparameter `afAcceptLang`, um das Browsergebietsschemazu überschreiben und das Formular in einem spezifischen Gebietsschema zu lokalisieren. Beispielsweise wird die folgende URL gezwungen, das Formular in japanischem Gebietsschema wiederzugeben, unabhängig von dem in der Browsereinstellung angegebenen Gebietsschema:
 
   `https://'[server]:[port]'/<contextPath>/<formFolder>/<formName>.html?wcmmode=disabled&afAcceptLang=ja`
 

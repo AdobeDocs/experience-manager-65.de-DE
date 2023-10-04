@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2327'
 ht-degree: 43%
@@ -45,7 +45,7 @@ Sie können die englischen und übersetzten Texte durchsuchen, filtern und bearb
 
 Sie können die i18n-Wörterbücher auch über diese Konsole zu einem Übersetzungsprojekt hinzufügen. Sie können entweder eine neue erstellen oder einem vorhandenen Projekt hinzufügen.
 
-1. Klicken **Wörterbuch übersetzen**.
+1. Klicks **Wörterbuch übersetzen**.
 
    ![chlimage_1-206](assets/chlimage_1-206.png)
 
@@ -137,7 +137,7 @@ Der folgende Kommentar beschreibt die Variablen:
 
 Gehen Sie wie folgt vor, um eine Zeichenfolge hinzuzufügen.
 
-1. Wählen Sie im Dropdown-Menü Wörterbücher das Wörterbuch aus, dem Sie eine Zeichenfolge hinzufügen möchten. Im Dropdown-Menü werden Wörterbücher durch ihren Pfad im Repository dargestellt.
+1. Wählen Sie im Dropdownmenü Wörterbücher das Wörterbuch aus, dem Sie eine Zeichenfolge hinzufügen möchten. Im Dropdown-Menü werden Wörterbücher durch ihren Pfad im Repository dargestellt.
 1. Klicken Sie über der Tabelle mit den Zeichenfolgen und Übersetzungen auf „Hinzufügen“.
 
    ![chlimage_1-209](assets/chlimage_1-209.png)
@@ -156,7 +156,7 @@ Gehen Sie wie folgt vor, um eine Zeichenfolge in einem Wörterbuch zu ändern.
 
    ![chlimage_1-211](assets/chlimage_1-211.png)
 
-1. Ändern Sie die Zeichenfolge oder den Kommentar und klicken Sie auf &quot;OK&quot;.
+1. Ändern Sie die Zeichenfolge oder den Kommentar und klicken Sie auf OK.
 1. Klicken Sie auf „Speichern“.
 
    ![chlimage_1-212](assets/chlimage_1-212.png)
@@ -179,7 +179,7 @@ Die Suchleiste am unteren Rand des Übersetzer-Tools bietet verschiedene Auswahl
 * **Nach Text filtern:** Ein Muster, das mit der englischen Zeichenfolge, mit dem Kommentar oder mit Übersetzungen abgeglichen wird. Nur Elemente, die dem Muster ganz oder teilweise entsprechen, werden in der Tabelle angezeigt.
 * **Änderungen: Beliebig, Geändert, Neu, Gelöscht:** Zeigt Elemente an, die geändert und nicht gespeichert wurden.
 
-   * Any: Zeigt Elemente an, die geändert, hinzugefügt oder entfernt wurden.
+   * Beliebig: Zeigt Elemente an, die geändert, hinzugefügt oder entfernt wurden.
    * Geändert: Zeigt geänderte Elemente an.
    * Neu: Zeigt hinzugefügte Elemente an.
    * Gelöscht: Zeigt Elemente an, die entfernt werden sollen.
@@ -192,7 +192,7 @@ Die Suchleiste am unteren Rand des Übersetzer-Tools bietet verschiedene Auswahl
 
 1. Wählen Sie in der Suchleiste die Filteroptionen aus.
 1. Um mithilfe der Optionen zu filtern, klicken Sie auf &quot;Filter&quot;.
-1. Um die Filter zu entfernen und alle Elemente im Wörterbuch anzuzeigen, klicken Sie auf &quot;Löschen&quot;.
+1. Um die Filter zu entfernen und alle Elemente im Wörterbuch anzuzeigen, klicken Sie auf Löschen.
 
 ### Bearbeiten übersetzter Zeichenfolgen {#editing-translated-strings}
 

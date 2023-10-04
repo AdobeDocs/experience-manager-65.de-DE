@@ -2,10 +2,10 @@
 title: Authoring von Commerce-Erlebnissen
 description: Arbeiten mit Commerce-Erlebnissen
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
-workflow-type: ht
-source-wordcount: '703'
-ht-degree: 100%
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
+source-wordcount: '705'
+ht-degree: 95%
 
 ---
 
@@ -21,7 +21,7 @@ Produkt- und Kategorieauswahloptionen sind Dialogfelder der modalen Benutzerober
 
 ### Produktauswahl {#product-picker}
 
-Diese Auswahl bietet die Möglichkeit, durch die Katalogstruktur oder die Volltextsuche zu navigieren, um das Produkt zu finden. Produkte mit Variante bieten in der Spalte „Typ“ ein Ordnersymbol. Durch Klicken auf das Ordnersymbol werden die Varianten des ausgewählten Produkts geöffnet.
+Diese Auswahl kann das Durchsuchen der Katalogstruktur oder die Volltextsuche anbieten, um das Produkt zu finden. Produkte mit Variante bieten in der Spalte „Typ“ ein Ordnersymbol. Durch Klicken auf das Ordnersymbol werden die Varianten des ausgewählten Produkts geöffnet.
 
 ![Produktauswahl](/help/commerce/cif/assets/authoring/product-picker.png)
 
@@ -39,7 +39,7 @@ Das Konfigurationsdialogfeld dieser Komponente erfordert ein Produkt. CIF verwen
 
 ### Kategorieauswahl {#category-picker}
 
-Mit dieser Auswahl können Sie die Katalogstruktur durchsuchen, um die Kategorie zu finden.
+Diese Auswahl kann das Durchsuchen der Katalogstruktur anbieten, um die Kategorie zu finden.
 
 ![Kategorieauswahl](/help/commerce/cif/assets/authoring/category-picker.png)
 

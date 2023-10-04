@@ -10,10 +10,10 @@ discoiquuid: 1e95c66b-d132-4c44-a1dc-31fd09af8113
 docset: aem65
 feature: Adaptive Forms
 exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2111'
-ht-degree: 71%
+ht-degree: 70%
 
 ---
 
@@ -50,7 +50,7 @@ ANDI funktioniert mit allen gängigen Internetbrowsern. Detaillierte Anweisungen
 
 ### Herunterladen und Installieren des „Ultramarine-Accessible“-Designs
 
-Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit“) ist ein Referenzdesign. Es hilft, zu veranschaulichen, wie Sie Farbkontrast- und andere Probleme mit der Barrierefreiheit in einem adaptiven Formular beheben können. Adobe empfiehlt, ein benutzerdefiniertes Design für die Produktionsumgebung zu erstellen, das auf den seitens Ihres Unternehmens zulässigen Stilen basiert. Führen Sie die folgenden Schritte aus, um das Thema in Ihre AEM-Instanz hochzuladen:
+Das „Ultramarine-Accessible“-Design („Ultramarinblau – Barrierefreiheit“) ist ein Referenzdesign. Es hilft, zu veranschaulichen, wie Sie Farbkontrast- und andere Probleme mit der Barrierefreiheit in einem adaptiven Formular beheben können. Adobe empfiehlt, dass Sie ein benutzerdefiniertes Design für die Produktionsumgebung erstellen, das auf den von Ihrem Unternehmen genehmigten Stilen basiert. Führen Sie die folgenden Schritte aus, um das Thema in Ihre AEM-Instanz hochzuladen:
 
 1. Laden Sie das Designpaket herunter.
 1. Navigieren Sie in Ihrer AEM-Instanz zu **[!UICONTROL Experience Manager]** > **[!UICONTROL Navigation]** ![Navigation](assets/Smock_Compass_18_N.svg) > **[!UICONTROL Formulare]**.
@@ -93,7 +93,7 @@ Nachdem Sie ein barrierefreies Design angewendet haben, führen Sie die folgende
 
 1. Legen Sie einen benutzerdefinierten barrierefreien Text für die Datumsauswahl-Komponente fest. Zum Beispiel: „Geben Sie Ihr Geburtsdatum ein.“ Bildschirmlesehilfen lesen diese benutzerdefinierten barrierefreien Texte.
 
-1. Verwenden Sie für Komponenten des adaptiven Formulars kurze statt langer Beschreibungen. Eine lange Beschreibung fügt die Schaltfläche „Hilfe“ hinzu. Vergewissern Sie sich, dass das adaptive Formular keine Schaltfläche „Hilfe“ aufweist.
+1. Verwenden Sie für Komponenten des adaptiven Formulars kurze statt langer Beschreibungen. Eine lange Beschreibung fügt die Schaltfläche „Hilfe“ hinzu. Stellen Sie sicher, dass die adaptiven Formulare keine Hilfesymbole haben.
 
 1. Fügen Sie allen schreibgeschützten Tabellenzellen einen benutzerdefinierten barrierefreien Text hinzu. Deaktivieren Sie außerdem alle schreibgeschützten Zellen von Tabellen.
 

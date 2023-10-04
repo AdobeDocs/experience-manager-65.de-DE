@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1431'
-ht-degree: 59%
+source-wordcount: '1429'
+ht-degree: 58%
 
 ---
 
@@ -62,7 +62,7 @@ Um eine neue Grundlage zu erstellen, navigieren Sie zum **Instrumente** Console,
 
 Navigieren Sie zu **Seiteneigenschaften** und legen Sie die *Titeltext*, *Beschreibung*, *Zielvorlage*, und *Zielpfad*, wie oben beschrieben.
 
-Als nächstes müssen Sie die Struktur der Seite festlegen, die mithilfe der Strukturvorlage erstellt wird. Gehen Sie dazu in **[Designmodus](/help/sites-authoring/page-authoring.md#sidekick)** auf der Strukturvorlagenseite. Es wird ein Link angezeigt, mit dessen Hilfe Sie die Strukturvorlage im **Dialog-Editor** bearbeiten können.
+Als nächstes müssen Sie die Struktur der Seite festlegen, die mithilfe der Strukturvorlage erstellt wird. Gehen Sie dazu in **[Designmodus](/help/sites-authoring/page-authoring.md#sidekick)** auf der Strukturvorlagenseite. Es wird ein Link angezeigt, über den Sie die Grundlage im **Dialog Editor**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 

@@ -1,21 +1,17 @@
 ---
 title: Anzeigen von Seitenanalysedaten zur Messung der Effektivität des Seiteninhalts
-seo-title: Seeing Page Analytics Data
 description: Verwenden Sie Seitenanalysedaten, um die Effektivität des Seiteninhalts zu messen.
-seo-description: Use page analytics data to gauge the effectiveness of their page content
-uuid: 5398a5d5-0239-4194-a403-77f5e6fcd741
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 5d192a48-c86f-4803-bb0d-0411ac7470f5
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
-workflow-type: ht
-source-wordcount: '449'
-ht-degree: 100%
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+workflow-type: tm+mt
+source-wordcount: '447'
+ht-degree: 89%
 
 ---
 
@@ -40,9 +36,9 @@ Jede Spalte zeigt einen Wert für den aktuellen Berichtszeitraum an und zeigt da
 >Um den Aktualisierungszeitraum zu ändern, [konfigurieren Sie das Importintervall](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Öffnen Sie die **Sites**-Konsole, z. B. [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content).
-1. Klicken oder tippen Sie ganz rechts oben in der Symbolleiste auf das Symbol, um **Listenansicht** auszuwählen. (Das angezeigte Symbol ist von der [aktuellen Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) abhängig.)
+1. Klicken oder tippen Sie ganz rechts in der Symbolleiste (obere rechte Ecke) auf das Symbol, um **Listenansicht** (Das angezeigte Symbol hängt von der [aktuelle Ansicht](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Klicken oder tippen Sie oben rechts in der Symbolleiste auf das Symbol und wählen Sie **Anzeigeeinstellungen** aus. Der Dialog **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
+1. Klicken oder tippen Sie oben rechts in der Symbolleiste auf das Symbol und wählen Sie **Anzeigeeinstellungen**. Der Dialog **Spalten konfigurieren** wird geöffnet. Nehmen Sie die erforderlichen Änderungen vor und bestätigen Sie den Vorgang mit **Aktualisieren**.
 
    ![spad-02](assets/spad-02.png)
 

@@ -1,19 +1,15 @@
 ---
 title: Überwachter Ordner in AEM Forms
-seo-title: Watched folder in AEM Forms
 description: Ein Administrator kann einen Ordner überwachen lassen und einen Workflow-, Dienst- oder Skriptvorgang starten, wenn eine Datei im überwachten Ordner abgelegt wird.
-seo-description: An administrator can put a folder on watch and start a workflow, service, or script operation when a file is placed in the folder being watched.
-uuid: 39eac0fd-8212-46ff-b75d-8b4320d448a9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: db38972c-be3f-49fd-8cc1-45b16ed244af
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '7148'
-ht-degree: 58%
+ht-degree: 57%
 
 ---
 
@@ -589,7 +585,7 @@ Zuordnungen von Ausgabeparametern können auch zusätzliche Muster angeben, z. B
 * %F = Quelldateiname
 * %E = Quelldateinamenerweiterung
 
-Wenn das Muster der Zuordnung von Ausgabeparametern mit „File.separator“ (dem Pfadtrennzeichen) endet, wird ein Ordner erstellt und der Inhalt in diesen Ordner kopiert. Endet das Muster nicht mit „File.separator“, wird der Inhalt (Ergebnisdatei oder -ordner) mit diesem Namen erstellt.
+Wenn das Zuordnungsmuster der Ausgabeparameter mit &quot;File.separator&quot;(dem Pfadtrennzeichen) endet, wird ein Ordner erstellt und der Inhalt in diesen Ordner kopiert. Endet das Muster nicht mit „File.separator“, wird der Inhalt (Ergebnisdatei oder -ordner) mit diesem Namen erstellt.
 
 ## Verwenden von PDF Generatoren mit einem überwachten Ordner {#using-pdf-generator-with-a-watched-folder}
 

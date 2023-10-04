@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: e17fc114-eba5-4e1b-8e70-ad6af7008018
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '972'
 ht-degree: 16%
@@ -23,11 +23,11 @@ Angenommen, Sie sind in einem Browser bei Administration Console angemeldet. Sie
 
 ## CSRF-bezogene Begriffe {#csrf-related-terms}
 
-**Referer:** Die Adresse der Quellseite, von der eine Anfrage kommt. Beispielsweise enthält eine Webseite auf site1.com einen Link zu site2.com. Durch Klicken auf den Link wird eine Anfrage an site2.com gesendet. Der Referrer dieser Anfrage ist &quot;site1.com&quot;, da die Anfrage von einer Seite stammt, deren Quelle &quot;site1.com&quot;ist.
+**Referer:** Die Adresse der Quellseite, von der eine Anfrage kommt. Beispielsweise enthält eine Webseite unter site1.com einen Link zu site2.com. Durch Klicken auf den Link wird eine Anfrage an site2.com gesendet. Der Referrer dieser Anfrage ist site1.com , da die Anfrage von einer Seite stammt, deren Quelle site1.com lautet.
 
 **Auf die Zulassungsliste gesetzt URIs:** URIs identifizieren Ressourcen auf dem Forms-Server, die angefordert werden, z. B. /adminui oder /contentspace. Einige Ressourcen ermöglichen einer Anforderung möglicherweise, von einer externen Site aus auf die Anwendung zuzugreifen. Diese Ressourcen gelten als auf die Zulassungsliste gesetzte URIs. Der Forms-Server führt keine Referrer-Prüfung aus den auf die Zulassungsliste gesetzt URIs durch.
 
-**Null-Referenz:** Wenn Sie ein neues Browser-Fenster oder eine neue Registerkarte öffnen, geben Sie eine Adresse ein und drücken Sie die Eingabetaste. Der Referrer ist null. Die Anfrage ist völlig neu und stammt nicht von einer übergeordneten Webseite. Daher gibt es keine verweisende Stelle für die Anfrage. Der Forms-Server kann einen Nullreferrer von erhalten:
+**Null-Referenz:** Wenn Sie ein neues Browser-Fenster oder eine neue Registerkarte öffnen, geben Sie eine Adresse ein und drücken Sie die Eingabetaste. Der Referrer ist null. Die Anfrage ist völlig neu und stammt nicht von einer übergeordneten Webseite. Daher gibt es keinen Referrer für die Anfrage. Der Forms-Server kann einen Nullreferrer von erhalten:
 
 * Anforderungen an SOAP- oder REST-Endpunkte von Acrobat
 * alle Desktop-Clients, die HTTP-Anforderungen an einen SOAP- oder REST-Endpunkt AEM Formulars senden
@@ -68,8 +68,8 @@ Wenn Sie Configuration Manager ausführen, werden der Standardhost und die IP-Ad
 1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Konfiguration&quot;> &quot;URLs für zulässige Referrer konfigurieren&quot;. Die Liste &quot;Zulässige verweisende Stelle&quot;wird unten auf der Seite angezeigt.
 1. Hinzufügen einer zulässigen verweisenden Stelle:
 
-   * Geben Sie einen Hostnamen oder eine IP-Adresse in das Feld &quot;Zulässige Referrer&quot;ein. Um mehr als einen zulässigen Referrer gleichzeitig hinzuzufügen, geben Sie jeden Hostnamen oder jede IP-Adresse in eine neue Zeile ein.
-   * Geben Sie in den Feldern HTTP-Anschluss und HTTPS-Anschluss an, welche Ports für HTTP, HTTPS oder beide zulässig sein sollen. Wenn Sie diese Felder leer lassen, werden die Standardanschlüsse (Port 80 für HTTP und Port 443 für HTTPS) verwendet. Wenn Sie den Wert `0` (null) in die Felder eingeben, werden alle Anschlüsse auf diesem Server aktiviert. Sie können auch eine bestimmte Portnummer eingeben, um nur diesen Port zu aktivieren.
+   * Geben Sie einen Hostnamen oder eine IP-Adresse in das Feld &quot;Zulässige Referrer&quot;ein. Um mehrere zulässige Referrer gleichzeitig hinzuzufügen, geben Sie jeden Hostnamen oder jede IP-Adresse in eine neue Zeile ein.
+   * Geben Sie in den Feldern &quot;HTTP-Anschluss&quot;und &quot;HTTPS-Anschluss&quot;an, welche Ports für HTTP, HTTPS oder beide zulässig sein sollen. Wenn Sie diese Felder leer lassen, werden die Standardanschlüsse (Port 80 für HTTP und Port 443 für HTTPS) verwendet. Wenn Sie den Wert `0` (null) in die Felder eingeben, werden alle Anschlüsse auf diesem Server aktiviert. Sie können auch eine bestimmte Portnummer eingeben, um nur diesen Port zu aktivieren.
    * Klicken Sie auf Hinzufügen.
 
 1. Um den Eintrag aus der Liste &quot;Zulässige verweisende Stelle&quot;zu entfernen, wählen Sie das Element aus der Liste aus und klicken Sie auf &quot;Löschen&quot;.

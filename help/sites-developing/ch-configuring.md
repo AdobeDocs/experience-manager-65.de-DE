@@ -1,18 +1,15 @@
 ---
 title: Konfigurieren von ContextHub
-seo-title: Configuring ContextHub
 description: Erfahren Sie, wie man ContextHub konfiguriert.
-seo-description: Learn how to configure Context Hub.
-uuid: f2988bb9-6878-42a2-bb51-c3f8683248c5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 99%
+source-wordcount: '1786'
+ht-degree: 98%
 
 ---
 
@@ -258,7 +255,7 @@ Verwenden Sie CRXDE Lite, um die Eigenschaft `debug` unter auf **true** festzule
 
 >[!NOTE]
 >
->Bei ContextHub-Konfigurationen, die sich noch unter ihren veralteten Pfaden befinden, muss der Speicherort für `debug property` auf `/libs/settings/cloudsettings/legacy/contexthub` festgelegt werden.
+>Bei ContextHub-Konfigurationen, die sich noch unter ihren veralteten Pfaden befinden, wird der Speicherort festgelegt, unter dem die `debug property` is `/libs/settings/cloudsettings/legacy/contexthub`.
 
 ### Unbeaufsichtigter Modus {#silent-mode}
 

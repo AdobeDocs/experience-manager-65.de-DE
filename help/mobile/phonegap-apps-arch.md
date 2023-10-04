@@ -1,17 +1,13 @@
 ---
 title: Die Anatomie einer App
-seo-title: The Anatomy of an App
 description: Auf dieser Seite finden Sie eine Beschreibung der Seitenkomponenten, die Sie für Ihre App erstellen, basierend auf der Komponente /libs/mobileapps/components/angular/ng-page (CRXDE Lite auf einem lokalen Server).
-seo-description: This page provides description of the page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component (CRXDE Lite on a local server).
-uuid: 4c1a74c1-85af-4a79-b723-e9fbfc661d35
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -44,7 +40,7 @@ Seitenkomponenten, die Sie für Ihre App erstellen, basieren auf der Komponente 
 
 Bestimmt den Namen der Anwendung mithilfe des `applicationName` -Eigenschaft und stellt sie über pageContext bereit.
 
-Enthält head.jsp und body.jsp.
+Umfasst head.jsp und body.jsp.
 
 ### head.jsp {#head-jsp}
 
@@ -62,7 +58,7 @@ Der Hauptteil einer Angular-Seite wird je nachdem, ob wcmMode erkannt wird (!= W
 
 Im Autorenmodus wird jede einzelne Seite separat gerendert. Angular behandelt weder das Routing zwischen Seiten noch eine NG-Ansicht zum Laden einer partiellen Vorlage, die die Komponenten der Seite enthält. Stattdessen wird der Inhalt der Seitenvorlage (template.jsp) serverseitig über die `cq:include` -Tag.
 
-Diese Strategie ermöglicht die Autorenfunktionen (z. B. Hinzufügen und Bearbeiten von Komponenten im Absatzsystem, Sidekick, Designmodus usw.) , um ohne Änderung zu funktionieren. Seiten, die auf der clientseitigen Wiedergabe basieren, wie z. B. Seiten für Apps, funktionieren im Autorenmodus nicht gut AEM.
+Diese Strategie ermöglicht die Autorenfunktionen (wie das Hinzufügen und Bearbeiten von Komponenten im Absatzsystem, Sidekick, Designmodus usw.) , um ohne Änderung zu funktionieren. Seiten, die auf der clientseitigen Wiedergabe basieren, wie z. B. Seiten für Apps, funktionieren im Autorenmodus nicht gut AEM.
 
 Beachten Sie, dass der Einschluss von template.jsp in einen `div` -Element, das die `ng-controller` Richtlinie. Diese Struktur ermöglicht die Verknüpfung der DOM-Inhalte mit dem Controller. Daher schlagen zwar Seiten fehl, die auf der Client-Seite selbst gerendert werden, doch funktionieren einzelne Komponenten, die dies tun, gut (siehe Abschnitt zu Komponenten unten).
 
@@ -76,7 +72,7 @@ Beachten Sie, dass der Einschluss von template.jsp in einen `div` -Element, das 
 
 Im Veröffentlichungsmodus (z. B. wenn die App mit der Inhaltssynchronisierung exportiert wird) werden alle Seiten zu einer Einzelseiten-App (SPA). (Um mehr über SPA zu erfahren, verwenden Sie das Angular-Tutorial, insbesondere [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).
 
-Es gibt nur eine HTML-Seite in einem SPA (eine Seite, die die `<html>` -Element). Diese Seite wird als &quot;Layoutvorlage&quot;bezeichnet. In der Angular-Terminologie ist es &quot;..eine Vorlage, die für alle Ansichten in unserer Anwendung verwendet wird.&quot; Betrachten Sie diese Seite als &quot;App-Seite der obersten Ebene&quot;. Die App-Seite der obersten Ebene ist standardmäßig die `cq:Page` -Knoten Ihrer Anwendung, der dem Stammverzeichnis am nächsten ist (und keine Umleitung ist).
+Es gibt nur eine HTML-Seite in einem SPA (eine Seite, die die `<html>` -Element). Diese Seite wird als &quot;Layoutvorlage&quot;bezeichnet. In der Angular-Terminologie ist es &quot;...eine Vorlage, die für alle Ansichten in unserer Anwendung üblich ist&quot;. Betrachten Sie diese Seite als &quot;App-Seite der obersten Ebene&quot;. Die App-Seite der obersten Ebene ist standardmäßig die `cq:Page` -Knoten Ihrer Anwendung, der dem Stammverzeichnis am nächsten ist (und keine Umleitung ist).
 
 Da sich der tatsächliche URI Ihrer App im Veröffentlichungsmodus nicht ändert, müssen Verweise auf externe Assets von dieser Seite relative Pfade verwenden. Daher wird eine spezielle Bildkomponente bereitgestellt, die diese Seite der obersten Ebene beim Rendern von Bildern für den Export berücksichtigt.
 
@@ -104,7 +100,7 @@ Dieses Attribut gibt Angular an, dass der Inhalt dieses DOM-Elements mit dem fol
 
 Dieses Modul definiert auch einen Controller der obersten Ebene mit dem Namen `AppController` , das die `wcmMode` zum Bereich hinzu und konfiguriert den URI, aus dem die Payloads für die Aktualisierung der Inhaltssynchronisierung abgerufen werden sollen.
 
-Schließlich durchläuft dieses Modul jede untergeordnete Seite (einschließlich der eigenen Seite) und rendert den Inhalt des Routenfragments jeder Seite (über den Selektor und die Erweiterung &quot;angular-route-fragment.js&quot;), einschließlich des Inhalts als Konfigurationseintrag zu Angular $routeProvider. Mit anderen Worten: Der $routeProvider teilt der App mit, welcher Inhalt gerendert werden soll, wenn ein bestimmter Pfad angefordert wird.
+Schließlich durchläuft dieses Modul jede untergeordnete Seite (einschließlich der eigenen Seite) und rendert den Inhalt des Routenfragments jeder Seite (über den Selektor und die Erweiterung angular-route-fragment.js ), einschließlich des Inhalts als Konfigurationseintrag zu Angular $routeProvider. Mit anderen Worten: Der $routeProvider teilt der App mit, welcher Inhalt gerendert werden soll, wenn ein bestimmter Pfad angefordert wird.
 
 ### angular-route-fragment.js.jsp {#angular-route-fragment-js-jsp}
 
@@ -155,7 +151,7 @@ Damit eine Komponente auf diese Weise Teil des Controllers sein kann, sollte sie
 
 Als Erstes, der in den Abschnitt body.jsp eingeführt wurde, enthält template.jsp einfach die ParSys der Seite. Im Veröffentlichungsmodus wird dieser Inhalt direkt referenziert (unter &lt;page-path>.template.html) und über die im $routeProvider konfigurierte templateUrl in die SPA geladen wurden.
 
-Die parsys in diesem Skript können so konfiguriert werden, dass sie jeden Komponententyp akzeptieren. Bei Komponenten, die für eine herkömmliche Website erstellt wurden (im Gegensatz zu SPA), ist jedoch Vorsicht geboten. Beispielsweise funktioniert die Foundation-Bildkomponente nur auf der App-Seite der obersten Ebene ordnungsgemäß, da sie nicht für Verweise auf Assets konzipiert ist, die sich in einer App befinden.
+Die parsys in diesem Skript können so konfiguriert werden, dass sie jeden Komponententyp akzeptieren. Bei Komponenten, die für eine herkömmliche Website erstellt wurden (im Gegensatz zu SPA), ist jedoch Vorsicht geboten. Beispielsweise funktioniert die Foundation-Bildkomponente nur auf der App-Seite auf der obersten Ebene ordnungsgemäß, da sie nicht für Verweise auf Assets konzipiert ist, die sich in einer App befinden.
 
 ### angular-module-list.js.jsp {#angular-module-list-js-jsp}
 
@@ -232,13 +228,13 @@ Dieses Skript zeigt entweder den Komponenteninhalt oder einen geeigneten Platzha
 
 #### template.jsp {#template-jsp-1}
 
-Das Skript template.jsp rendert das Markup der Komponente. Wenn die betreffende Komponente von JSON-Daten aus AEM (z. B. &quot;ng-text&quot;) gesteuert wird: /libs/mobileapps/components/angular/ng-text/template.jsp), dann ist dieses Skript für die Verkabelung des Markups mit Daten verantwortlich, die vom Controller-Bereich der Seite verfügbar gemacht werden.
+Das Skript template.jsp rendert das Markup der Komponente. Wenn die fragliche Komponente von JSON-Daten aus AEM (z. B. &quot;ng-text&quot;: /libs/mobileapps/components/angular/ng-text/template.jsp) gesteuert wird, ist dieses Skript für die Verkabelung des Markups mit Daten verantwortlich, die vom Controller-Bereich der Seite verfügbar gemacht werden.
 
-Leistungsanforderungen erfordern jedoch manchmal, dass keine clientseitige Vorlage (auch Datenbindung genannt) durchgeführt wird. In diesem Fall rendern Sie einfach das Markup der Komponente serverseitig und es ist im Inhalt der Seitenvorlage enthalten.
+Leistungsanforderungen erfordern jedoch manchmal, dass keine clientseitige Vorlage (auch Datenbindung genannt) durchgeführt wird. In diesem Fall rendern Sie einfach das Markup der Komponente auf der Server-Seite und es ist im Inhalt der Seitenvorlage enthalten.
 
 #### overhead.jsp {#overhead-jsp}
 
-In Komponenten, die von JSON-Daten gesteuert werden (z. B. &quot;ng-text&quot;): /libs/mobileapps/components/angular/ng-text), overhead.jsp kann verwendet werden, um den gesamten Java-Code aus template.jsp zu entfernen. Anschließend wird er von template.jsp referenziert und alle Variablen, die er in der Anfrage verfügbar macht, sind zur Verwendung verfügbar. Diese Strategie fördert die Trennung von Logik und Präsentation und schränkt die Menge des Codes ein, der kopiert und eingefügt werden muss, wenn eine neue Komponente von einer vorhandenen abgeleitet wird.
+In Komponenten, die von JSON-Daten gesteuert werden (z. B. &quot;ng-text&quot;: /libs/mobileapps/components/angular/ng-text), kann overhead.jsp verwendet werden, um den gesamten Java-Code aus template.jsp zu entfernen. Anschließend wird er von template.jsp referenziert und alle Variablen, die er in der Anfrage verfügbar macht, sind zur Verwendung verfügbar. Diese Strategie fördert die Trennung von Logik und Präsentation und schränkt die Menge des Codes ein, der kopiert und eingefügt werden muss, wenn eine neue Komponente von einer vorhandenen abgeleitet wird.
 
 #### controller.js.jsp {#controller-js-jsp-1}
 
@@ -317,7 +313,7 @@ Der Ordner after-platform_add enthält den `copy_AMS_Conifg.js` -Datei. Dieses S
 
 #### .cordova/hooks/after-prepare/ {#cordova-hooks-after-prepare}
 
-Das Verzeichnis &quot;after-prepare&quot;enthält die `copy_resource_files.js` -Datei. Dieses Skript kopiert eine Reihe von Symbol- und Begrüßungsbildschirmbildern an plattformspezifische Standorte.
+Das Verzeichnis &quot;after-prepare&quot;enthält die `copy_resource_files.js` -Datei. Dieses Skript kopiert mehrere Symbol- und Splash-Bildschirmbilder an plattformspezifische Standorte.
 
 #### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 
@@ -356,7 +352,7 @@ Schließen Sie bei Bedarf weitere Hooks ein. Die folgenden Hooks sind verfügbar
 
 #### platforms/ {#platforms}
 
-Dieser Ordner ist leer, bis Sie die `phonegap run <platform>` -Befehl im Projekt. Zurzeit `<platform>` kann `ios` oder `android`.
+Dieser Ordner ist leer, bis Sie die `phonegap run <platform>` -Befehl im Projekt. Zurzeit `<platform>` kann entweder `ios` oder `android`.
 
 Nachdem Sie die App für eine bestimmte Plattform erstellt haben, wird der entsprechende Ordner erstellt und der plattformspezifische App-Code enthält.
 
@@ -392,11 +388,11 @@ Das Verzeichnis res enthält Splash-Screen-Bilder und Symbole. Die `copy_resourc
 
 #### www/etc {#www-etc}
 
-Standardmäßig enthält AEM Knoten /etc statische clientlib-Inhalte. Das Verzeichnis &quot;etc&quot;enthält die Bibliotheken &quot;Topcoat&quot;, &quot;AngularJS&quot;und &quot;Geometrixx ng-clientlibsall&quot;.
+Standardmäßig enthält AEM Knoten /etc statische clientlib-Inhalte. Das Verzeichnis &quot;etc&quot;enthält die Bibliotheken Topcoat, AngularJS und Geometrixx ng-clientlibsall .
 
 #### www/apps {#www-apps}
 
-Der Apps-Ordner enthält Code, der mit der Splash-Seite in Verbindung steht. Das eindeutige Merkmal der Begrüßungsseite einer AEM App besteht darin, dass die App ohne Benutzerinteraktion initialisiert wird. Der clientlib-Inhalt (sowohl CSS als auch JS) der App ist daher minimal, um die Leistung zu maximieren.
+Der Apps-Ordner enthält Code, der mit der Splash-Seite in Verbindung steht. Das eindeutige Merkmal der Begrüßungsseite einer AEM App besteht darin, dass die App ohne Benutzerinteraktion initialisiert wird. Der clientlib-Inhalt (CSS und JS) der App ist daher minimal, um die Leistung zu maximieren.
 
 #### www/content {#www-content}
 
@@ -415,7 +411,7 @@ Die Datei &quot;package.json&quot;ist eine Manifestdatei, in der die Dateien auf
 
 Wenn diese Payload ein Download der gesamten App ist, enthält dieses Manifest die genaue Auflistung der Dateien als `package.json`.
 
-Wenn es sich bei dieser Payload jedoch um eine partielle Aktualisierung handelt, `package-update.json` enthält nur die Dateien, die in dieser bestimmten Payload enthalten sind.
+Wenn diese Payload jedoch eine partielle Aktualisierung ist, `package-update.json` enthält nur die Dateien, die in dieser bestimmten Payload enthalten sind.
 
 ### Die nächsten Schritte {#the-next-steps}
 

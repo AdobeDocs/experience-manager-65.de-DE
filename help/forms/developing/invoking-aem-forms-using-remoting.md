@@ -1,20 +1,16 @@
 ---
 title: Aufrufen von AEM Forms mithilfe von Remoting
-seo-title: Invoking AEM Forms using Remoting
 description: Verwenden Sie Remoting, um einen AEM Forms-Prozess aufzurufen, der in Workbench erstellte Prozesse aufruft. Sie können einen AEM Forms-Prozess aus einem mit Flex erstellten Client-Programm aufrufen.
-seo-description: Use Remoting to invoke an AEM Forms process to invoke processes created in Workbench. You can invoke a AEM Forms process from a client application built with Flex.
-uuid: 592d1519-c38b-4b33-8cf3-61e2bff81501
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '4597'
-ht-degree: 99%
+ht-degree: 98%
 
 ---
 
@@ -550,7 +546,7 @@ Sie können eine mit Flex erstellte Client-Anwendung starten und den zentralen A
 
 Sie können sichere Dokumente an AEM Forms übergeben, wenn Sie einen Prozess aufrufen, für den ein oder mehrere Dokumente erforderlich sind. Durch Übergabe eines sicheren Dokuments schützen Sie Geschäftsinformationen und vertrauliche Dokumente. In diesem Fall kann ein Dokument auf ein PDF-Dokument, ein XML-Dokument, ein Word-Dokument usw. verweisen. Die Übergabe eines sicheren Dokuments von einer in Flex geschriebenen Client-Anwendung an AEM Forms ist erforderlich, wenn AEM Forms für sichere Dokumente konfiguriert ist. (Weitere Informationen finden Sie unter [Konfigurieren von AEM Forms zum Akzeptieren sicherer und unsicherer Dokumente](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).)
 
-Verwenden Sie beim Übergeben eines sicheren Dokuments Single Sign-On und geben Sie einen AEM Forms-Benutzer an, der über die Rolle *Document Upload Application User* verfügt. Ohne diese Rolle kann der Benutzer kein sicheres Dokument hochladen. Sie können Benutzern programmgesteuert eine Rolle zuweisen. (Weitere Informationen finden Sie unter [Verwalten von Rollen und Berechtigungen](/help/forms/developing/users.md#managing-roles-and-permissions).)
+Verwenden Sie beim Übergeben eines sicheren Dokuments Single Sign-On und geben Sie einen AEM Forms-Benutzer an, der über die *Document Upload Application User* Rolle. Ohne diese Rolle kann der Benutzer kein sicheres Dokument hochladen. Sie können Benutzern programmgesteuert eine Rolle zuweisen. (Weitere Informationen finden Sie unter [Verwalten von Rollen und Berechtigungen](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
 >

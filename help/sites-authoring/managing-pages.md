@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten mit AEM
 description: So erstellen und verwalten Sie Seiten mit AEM
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 100%
+source-wordcount: '2523'
+ht-degree: 99%
 
 ---
 
@@ -426,7 +426,7 @@ Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträ
 
 ### Sperren einer Seite {#locking-a-page}
 
-Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-authoring/editing-content.md#locking-a-page). Informationen darüber, ob eine Seite gesperrt ist, werden ebenfalls an beiden Stellen angezeigt.
+Sie können entweder in einer Konsole oder beim Bearbeiten einer Seite eine [Seite sperren/entsperren](/help/sites-authoring/editing-content.md#locking-a-page). Informationen zu gesperrten Seiten werden auch an beiden Orten angezeigt.
 
 ![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 

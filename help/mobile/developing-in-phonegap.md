@@ -1,15 +1,15 @@
 ---
 title: PhoneGap
-description: Diese Seite dient als Ausgangspunkt für die Entwicklung von Apps mit PhoneGap Enterprise mit AEM. AEM ist mit PhoneGap integriert, sodass Sie einfach Apps mit AEM Seiten erstellen können. PhoneGap ermöglicht dem Benutzer das Erstellen von Dienstprogramm-Apps, mit denen der Benutzer mit dem Inhalt arbeiten kann.
+description: Diese Seite dient als Ausgangspunkt für die Entwicklung von Apps mit PhoneGap Enterprise mit AEM. AEM ist mit PhoneGap integriert, sodass Sie einfach Apps mit AEM Seiten erstellen können. Mit PhoneGap können Benutzer Dienstprogrammanwendungen erstellen, mit denen Benutzer mit dem Inhalt arbeiten können.
 uuid: c6ac02fa-d41c-4b57-95d8-171a96540dd6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '248'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM ist mit PhoneGap integriert, sodass Sie einfach Apps mit AEM Seiten erstellen können. PhoneGap ermöglicht dem Benutzer das Erstellen von Dienstprogramm-Apps, mit denen der Benutzer mit dem Inhalt arbeiten kann. Mit der Inhaltssynchronisierung können Sie versionierte Archive von Seiten für das Bundling mit Apps erstellen.
+AEM ist mit PhoneGap integriert, sodass Sie einfach Apps mit AEM Seiten erstellen können. Mit PhoneGap können Benutzer Dienstprogrammanwendungen erstellen, mit denen Benutzer mit dem Inhalt arbeiten können. Mit der Inhaltssynchronisierung können Sie versionierte Archive von Seiten für das Bundling mit Apps erstellen.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Die folgenden Ressourcen helfen Ihnen bei den ersten Schritten mit AEM Mobile mi
 * [Mobil mit Inhaltssynchronisierung](/help/mobile/phonegap-contentsync.md)
 * [Seitenvorlagen  ](/help/mobile/phonegap-apps-arch-page-templates.md)
 
-* [AEM Mobile Content Services: Eine Übersicht](/help/mobile/develop-content-as-a-service.md)
+* [AEM Mobile Content Services: Überblick](/help/mobile/develop-content-as-a-service.md)
 
    * Informationen zum Aktivieren von Content Services und Datenmodellen finden Sie unter [Verwalten von Content Services](/help/mobile/developing-content-services.md)
    * Weitere Informationen zum Erstellen von Modellen finden Sie unter [Entwicklung von Modellen](/help/mobile/administer-mobile-apps.md)

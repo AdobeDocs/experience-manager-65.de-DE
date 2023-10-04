@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: fbcdea8a-72e9-431b-9c32-dc02d4cdb9c8
 exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '487'
 ht-degree: 1%
 
 ---
@@ -23,17 +23,17 @@ ht-degree: 1%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-AEM ist mit PhoneGap integriert, sodass Sie einfach Apps mit AEM Seiten erstellen können. PhoneGap ermöglicht dem Benutzer das Erstellen von Dienstprogramm-Apps, mit denen der Benutzer mit dem Inhalt arbeiten kann. Mit der Inhaltssynchronisierung können Sie versionierte Archive von Seiten für das Bundling mit Apps erstellen.
+AEM ist mit PhoneGap integriert, sodass Sie einfach Apps mit AEM Seiten erstellen können. Mit PhoneGap können Benutzer Dienstprogrammanwendungen erstellen, mit denen Benutzer mit dem Inhalt arbeiten können. Mit der Inhaltssynchronisierung können Sie versionierte Archive von Seiten für das Bundling mit Apps erstellen.
 
 In der Regel wird ein ***AEM Administrator*** ist für das Hinzufügen einer neuen Anwendung zum AEM Mobile-Katalog verantwortlich, entweder durch Erstellen einer neuen App mithilfe des Erstellungsassistenten oder durch Importieren einer bestehenden Anwendung.
 
-Von hier aus können Sie ***AEM-Autor*** (oder *Marketer*) können jetzt die nativen Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag-and-Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente).
+Von hier aus können Sie ***AEM*** (oder *Marketer*) können jetzt die nativen Vorlagen und Komponenten verwenden, um Seiten hinzuzufügen und zu bearbeiten, Komponenten per Drag-and-Drop zu verschieben und Medien aller Typen aus dem DAM hinzuzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente).
 
-Die wahre Macht AEM Mobile ist, dass ein *savvy* ***AEM Entwickler*** kann benutzerdefinierte Webvorlagen und -komponenten erweitern und erstellen, um die *AEM-Autor* um ein angenehmes und ansprechendes mobiles Erlebnis zu schaffen. Diese Vorlagen und Komponenten sind nicht nur für die App-Welt optimiert. kommunizieren jedoch sowohl mit dem Gerät als auch mit dem AEM-Server (einem beliebigen Remote-Server) mit kanalübergreifenden Service-Endpunkten.
+Die wahre Macht AEM Mobile ist, dass ein *savvy* ***AEM Entwickler*** kann benutzerdefinierte Webvorlagen und -komponenten erweitern und erstellen, um die *AEM* um ein angenehmes und ansprechendes mobiles Erlebnis zu schaffen. Diese Vorlagen und Komponenten sind nicht nur für die mobile App-Welt optimiert, sondern kommunizieren sowohl mit dem Gerät als auch mit dem AEM-Server (beliebiger Remote-Server) mit kanalübergreifenden Service-Endpunkten.
 
 >[!NOTE]
 >
->Wenn die *AEM-Autor* glaubt, dass die App bereit ist, können sie zunächst von ihren Stakeholdern herunterladen lassen, mit **[Überprüfung der Adobe](/help/mobile/phonegap-mobile-quickstart.md)** (sowohl im AppStore als auch im PlayStore verfügbar) zur Überprüfung und Genehmigung. Sobald der Benutzer die grüne Ampel erhalten hat, kann er diese neuen oder aktualisierten Inhalte direkt über das AEM Mobile ContentSync-Release-Management-Dashboard für Inhalte an seine Benutzer freigeben. Eine Person kann eine beliebige Anzahl von Rollen übernehmen, das liegt an Ihnen und Ihren Governance-Richtlinien.
+>Wenn die Variable *AEM* glaubt, dass die App bereit ist, können sie zunächst von ihren Stakeholdern herunterladen lassen, mit **[Adobe Verify](/help/mobile/phonegap-mobile-quickstart.md)** (sowohl im AppStore als auch im PlayStore verfügbar) zur Überprüfung und Genehmigung. Sobald der Benutzer die grüne Ampel erhalten hat, kann er diese neuen oder aktualisierten Inhalte direkt über das AEM Mobile ContentSync-Release-Management-Dashboard für Inhalte an seine Benutzer freigeben. Eine Person kann eine beliebige Anzahl von Rollen übernehmen, das liegt an Ihnen und Ihren Governance-Richtlinien.
 
 ## Voraussetzungen {#prerequisites}
 

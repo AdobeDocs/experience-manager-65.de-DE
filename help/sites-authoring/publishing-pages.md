@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1662'
-ht-degree: 97%
+source-wordcount: '1660'
+ht-degree: 96%
 
 ---
 
@@ -87,7 +87,7 @@ Wenn Sie eine Seite bearbeiten, kann sie direkt im Editor veröffentlicht werden
 
 >[!NOTE]
 >
->Seiten, auf die im Editor über [Aliasnamen](/help/sites-authoring/editing-page-properties.md#advanced) zugegriffen wird, können nicht veröffentlicht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
+>Seiten, auf die von [Aliase](/help/sites-authoring/editing-page-properties.md#advanced) im Editor kann nicht veröffentlicht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
 
 ### Veröffentlichungen über die Konsole {#publishing-from-the-console}
 
@@ -216,7 +216,7 @@ Wenn Sie die Veröffentlichung einer von Ihnen bearbeiteten Seite rückgängig m
 
 >[!NOTE]
 >
->Die Veröffentlichung von Seiten, auf die im Editor über [Aliasnamen](/help/sites-authoring/editing-page-properties.md#advanced) zugegriffen wird, kann nicht rückgängig gemacht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
+>Seiten, auf die von [Aliase](/help/sites-authoring/editing-page-properties.md#advanced) im Editor kann die Veröffentlichung nicht rückgängig gemacht werden. Veröffentlichungsoptionen im Editor sind nur für Seiten verfügbar, auf die über ihre tatsächlichen Pfade zugegriffen wird.
 
 ### Rückgängigmachen der Veröffentlichung in der Konsole {#unpublishing-from-the-console}
 

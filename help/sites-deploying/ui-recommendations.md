@@ -11,10 +11,10 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '785'
-ht-degree: 48%
+source-wordcount: '783'
+ht-degree: 45%
 
 ---
 
@@ -42,7 +42,7 @@ Interessensgebiete:
 
 In den vergangenen Jahren hat Adobe alle Adobe Experience Cloud-Lösungen um eine einheitlichen Benutzeroberfläche erweitert. Benutzer der Experience Cloud-Lösungen profitieren so von einem konsistenten Erlebnis mit einem einheitlichen Verwendungsmuster für die Anwendungen. Mit jeder Version hat Adobe seine Benutzeroberfläche auf der Grundlage des Feedbacks von Kunden optimiert, die in den verschiedenen Lösungen arbeiten.
 
-Die ursprüngliche Benutzeroberfläche für Adobe Experience Manager (früher als CQ5 bekannt), die 2008 eingeführt wurde und von Kunden mit den Versionen 5.0-5.6.1 verwendet wird, ist in AEM 6.5 enthalten. Dadurch wird sichergestellt, dass Kunden auf 6.5 aktualisieren und von einer aktualisierten Plattform mit neuen Funktionen profitieren können, während sie weiterhin dieselbe Benutzeroberfläche verwenden.
+Die ursprüngliche Benutzeroberfläche für Adobe Experience Manager (früher CQ5), die 2008 eingeführt wurde und von Kunden mit den Versionen 5.0-5.6.1 verwendet wird, ist in AEM 6.5 enthalten. Dadurch wird sichergestellt, dass Kunden auf Version 6.5 aktualisieren und von einer aktualisierten Plattform mit neuen Funktionen profitieren können, während sie weiterhin dieselbe Benutzeroberfläche verwenden.
 
 Adobe empfiehlt Kunden, den Umstieg auf die neue Benutzeroberfläche für 2018/19 zu planen. Dies kann entweder während der Aktualisierung auf 6.5 oder in separaten Projekten nach der Aktualisierung erfolgen, die die erforderlichen Anpassungen an den Dialogfeldern für Anpassungen und Komponenten enthalten.
 
@@ -71,7 +71,7 @@ Im Folgenden finden Sie eine Liste der Empfehlungen von Product Management für 
      <li>Konfigurieren Sie die Aktion "Seite bearbeiten", um den Seiten-Editor für die klassische Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Auswählen der Benutzeroberfläche</a>.</li>
     </ol> <p>In einer zweiten Phase:</p>
     <ol>
-     <li>Aktualisieren Sie Ihre Komponentendialogfelder, um das Coral 3-Dialogfeldformat zu verwenden. Adobe empfiehlt, die <a href="/help/sites-developing/modernization-tools.md">AEM-Modernisierungs-Tools</a> zu nutzen, um die Komponenten zu aktualisieren.</li>
+     <li>Aktualisieren Sie Ihre Komponentendialogfelder, um das Coral 3-Dialogfeldformat zu verwenden. Adobe empfiehlt die Verwendung der <a href="/help/sites-developing/modernization-tools.md">AEM Modernisierungs-Tools</a> , um die Komponenten zu aktualisieren.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -83,7 +83,7 @@ Im Folgenden finden Sie eine Liste der Empfehlungen von Product Management für 
      <li>Konfigurieren Sie die Aktion "Seite bearbeiten", um den Seiten-Editor für die klassische Benutzeroberfläche zu öffnen. Siehe <a href="#selecting-your-ui">Auswählen der Benutzeroberfläche</a>.</li>
     </ol> <p>In einer zweiten Phase:</p>
     <ol>
-     <li>Aktualisieren Sie Ihre Komponentendialogfelder, um das Coral 3-Dialogfeldformat zu verwenden. Adobe empfiehlt, die <a href="/help/sites-developing/modernization-tools.md">AEM-Modernisierungs-Tools</a> zu nutzen, um die Komponenten zu aktualisieren.</li>
+     <li>Aktualisieren Sie Ihre Komponentendialogfelder, um das Coral 3-Dialogfeldformat zu verwenden. Adobe empfiehlt die Verwendung der <a href="/help/sites-developing/modernization-tools.md">AEM Modernisierungs-Tools</a> , um die Komponenten zu aktualisieren.</li>
      <li>Konfigurieren Sie ContextHub (ersetzt ClientContext) und aktualisieren Sie die Seitenvorlagen für die Anwendung von ContextHub. Beachten Sie, dass der ContextHub über einen Kompatibilitätsmodus verfügt, der das Laden benutzerdefinierter ClientContext-Stores ermöglicht.</li>
     </ol> </td>
   </tr>
@@ -96,7 +96,7 @@ Im Folgenden finden Sie eine Liste der Empfehlungen von Product Management für 
 
 ### Häufig gestellte Fragen (FAQ) {#faq}
 
-Siehe den Knowledge Base-Artikel . [Häufig gestellte Fragen zur Bearbeitung der Touch-optimierten Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kb/index/touchui_faq.html)für Einzelheiten; einschließlich aller Informationen zum Zeitplan für die Einstellung der Verwendung der klassischen Benutzeroberfläche.
+Siehe den Knowledge Base-Artikel . [Häufig gestellte Fragen zur Bearbeitung der Touch-optimierten Benutzeroberfläche](https://helpx.adobe.com/de/experience-manager/kb/index/touchui_faq.html), um Details anzuzeigen, einschließlich Informationen zum Zeitplan für die Einstellung der Verwendung der klassischen Benutzeroberfläche.
 
 ### Auswählen der Benutzeroberfläche {#selecting-your-ui}
 
