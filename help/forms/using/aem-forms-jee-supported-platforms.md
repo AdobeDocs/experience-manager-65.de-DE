@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: d76fce58973bd011b53a5da41578b57a8e10912e
+source-git-commit: c7e30587a37b8bf20932b43549ab38c668bd75af
 workflow-type: tm+mt
 source-wordcount: '3695'
 ht-degree: 49%
@@ -707,8 +707,7 @@ Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.18.0 vom 31. Augu
 - Microsoft® Windows Server 2019 (64 Bit)
 - Microsoft® Active Directory 2016
 
-Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.17.0 vom 2. Juni 2022 als veraltet gekennzeichnet:
-
+Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.13.0 vom 2. Juni 2022 als veraltet gekennzeichnet:
 - Microsoft® SharePoint 2016
 
 Die folgenden Plattformen werden mit der AEM Forms-Version 6.5.12.0 vom 3. März 2022 als veraltet gekennzeichnet:
