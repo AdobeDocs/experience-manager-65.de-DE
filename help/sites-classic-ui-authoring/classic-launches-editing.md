@@ -9,10 +9,10 @@ topic-tags: site-features
 discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: 21776f42-cd81-459d-b4b9-1d92e0aec164
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
-workflow-type: ht
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+workflow-type: tm+mt
 source-wordcount: '291'
-ht-degree: 100%
+ht-degree: 93%
 
 ---
 
@@ -32,7 +32,7 @@ Wenn ein Launch für eine Seite (oder eine Reihe von Seiten) erstellt wurde, kö
 
    >[!NOTE]
    >
-   >Sie können die Registerkarte **Seite** des Sidekicks verwenden, um Aktionen wie **Untergeordnete Seite erstellen** durchzuführen.
+   >Sie können die **Seite** Registerkarte des Sidekicks zum Ausführen von Aktionen wie **Untergeordnete Seite erstellen**, unter anderem.
 
 ## Bearbeiten einer Launch-Konfiguration {#editing-a-launch-configuration}
 
@@ -48,10 +48,9 @@ Wenn Sie einen Launch erstellt haben, können Sie den Namen und das Datum des La
       * **Live-Datum**: dieses entspricht dem Launch-Datum 
       * **Produktionsbereit**
 
-      Weitere Informationen über den Zweck und das Zusammenspiel dieser Felder finden Sie unter [Launches und die Reihenfolge der Ereignisse](/help/sites-authoring/launches.md#launches-the-order-of-events).
+     Weitere Informationen über den Zweck und das Zusammenspiel dieser Felder finden Sie unter [Launches und die Reihenfolge der Ereignisse](/help/sites-authoring/launches.md#launches-the-order-of-events).
 
    * In der Registerkarte **Bild** können Sie eine Bilddatei hochladen.
-
 
 1. Klicken Sie auf **Speichern**.
 
