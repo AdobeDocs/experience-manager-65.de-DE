@@ -2,10 +2,10 @@
 title: Kurzanleitung zu WCAG 2.1
 description: Kurzanleitung zu WCAG 2.1
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1774'
-ht-degree: 98%
+ht-degree: 96%
 
 ---
 
@@ -23,7 +23,7 @@ Die [Web Content Accessibility Guidelines (WCAG), Version 2.1](https://www.w3.o
 >
 >Eine [aktualisierte Version der Richtlinien (WCAG 2.2)](https://www.w3.org/TR/WCAG22/) befindet sich derzeit in der Entwicklung, wird aber noch nicht berücksichtigt.
 
-WCAG 2.1 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind. Es werden Ratschläge für Autoren, Designer und Entwickler von Web-Inhalten geboten, wie sichergestellt werden kann, dass die von ihnen produzierten Ressourcen für möglichst viele Menschen so barrierefrei wie möglich sind, und zwar unabhängig von ihrer Behinderung, z. B. Sehbehinderung, Hörverlust, Lernschwächen, altersbedingte Einschränkungen u. Ä.
+WCAG 2.1 umfasst eine Reihe technologieunabhängiger Richtlinien und Erfolgskriterien, die Sie bei der Erstellung von Web-Inhalten unterstützen, die für Personen mit Behinderungen barrierefrei zugänglich sind. Sie bieten Autoren, Designern und Entwicklern von Web-Inhalten Ratschläge dazu, wie sie sicherstellen können, dass die von ihnen erzeugten Ressourcen so vielen Menschen wie möglich zugänglich sind, unabhängig von etwaigen Behinderungen, die sie haben; zum Beispiel Sehbehinderungen, Hörverlust, Lernschwierigkeiten, altersbedingte Einschränkungen.
 
 Die Beschreibung eines Bildes (oder anderer Nicht-Text-Inhalte) mithilfe des `alt`-Attributs in HTML ist zum Beispiel für Blinde und Sehbehinderte von großem Nutzen. Die textliche Beschreibung im `alt`-Attribut kann entweder in eine Sprachausgabe umgewandelt oder an elektronisch aktualisierbare Braillezeilen übertragen werden.
 
