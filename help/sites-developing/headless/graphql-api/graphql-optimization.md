@@ -2,9 +2,9 @@
 title: Optimieren von GraphQL-Abfragen
 description: Erfahren Sie, wie Sie Ihre GraphQL-Abfragen beim Filtern, Paging und Sortieren Ihrer Inhaltsfragmente in Adobe Experience Manager as a Cloud Service für die Bereitstellung Headless Content optimieren können.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 2ba17c43e84ad449ec858de57812f3ef82fca3e1
+source-git-commit: c0570d6c0d624d950ddbb5c0d2ce38ff7c3756a4
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1935'
 ht-degree: 60%
 
 ---
@@ -89,7 +89,10 @@ Siehe:
 
 Bei der Verwendung von persistenten GraphQL-Abfragen mit einem CDN wird empfohlen, geeignete HTTP-Cache-Steuerelement-Header festzulegen.
 
-Jede beibehaltene Abfrage kann über einen eigenen Satz von Cache-Steuerelement-Headern verfügen. Die Kopfzeilen können über die [GraphQL-API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) oder [AEM GraphiQL-IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
+Jede beibehaltene Abfrage kann über einen eigenen Satz von Cache-Steuerelement-Headern verfügen. Die Kopfzeilen können über die [GraphQL-API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+
+<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+-->
 
 **Weitere Informationen**
 
