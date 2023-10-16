@@ -1,14 +1,14 @@
 ---
 title: Verwenden von AEM mit SAP Commerce Cloud
-description: Erfahren Sie, wie Sie AEM mit SAP Commerce Cloud verwenden.
+description: Erfahren Sie, wie Sie Adobe Experience Manager mit SAP Commerce Cloud verwenden.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '1702'
-ht-degree: 80%
+source-wordcount: '1704'
+ht-degree: 79%
 
 ---
 
@@ -84,7 +84,7 @@ Nach der Installation können Sie Ihre Instanz konfigurieren:
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
 1. **Speichern** Sie die Änderungen.
-1. Passen Sie über **SOLR-Elementtypen** die Facette `price` entsprechend den folgenden Screenshots an. Als `category`, Doppelklick `price` , um **Indexierte Eigenschaft** tab:
+1. Passen Sie über **SOLR-Elementtypen** die Facette `price` entsprechend den folgenden Screenshots an. Wie bei `category`, Doppelklick `price` , um die **Indexierte Eigenschaft** tab:
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
 
