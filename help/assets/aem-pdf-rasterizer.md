@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer, Admin
 feature: Developer Tools,Renditions
 exl-id: 6f365d6b-3972-4885-8766-5889e24289f1
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
-workflow-type: ht
-source-wordcount: '721'
-ht-degree: 100%
+source-git-commit: e6e0ad29bc5b3a644f74427d8d60233c9e26aa03
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 82%
 
 ---
 
@@ -22,13 +22,13 @@ Adobe empfiehlt die Verwendung der PDF Rasterizer-Bibliothek für folgende Date
 * AI-Dateien und PDF-Dateien mit Miniaturansichten, die nicht standardmäßig generiert werden.
 * AI-Dateien mit PMS-Farben (Pantone Matching System)
 
-Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Vergleich mit der standardmäßigen Ausgabe eine bessere Qualität auf und bieten daher eine konsistente Darstellung auf allen Geräten. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Die Ausgabe erfolgt unabhängig vom Farbraum der Quelldatei immer in RGB.
+Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Vergleich mit der standardmäßigen Ausgabe eine bessere Qualität auf und bieten daher eine konsistente Darstellung auf allen Geräten. Die Adobe PDF Rasterizer-Bibliothek unterstützt keine Farbraumkonvertierung. Die Ausgabe erfolgt immer an RGB, unabhängig vom Farbraum der Quelldatei.
 
-1. Installieren Sie das PDF Rasterizer-Paket auf Ihrer [!DNL Adobe Experience Manager]-Bereitstellung von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.4.zip).
+1. Installieren Sie das PDF Rasterizer-Paket auf Ihrer [!DNL Adobe Experience Manager]-Bereitstellung von [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/de/aem.html?package=/content/software-distribution/de/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/aem-assets-pdf-rasterizer-pkg-4.6.zip).
 
    >[!NOTE]
    >
-   >Die PDF Rasterizer-Bibliothek ist nur für Windows und Linux verfügbar.
+   >Die PDF Rasterizer-Bibliothek ist nur für Windows und Linux® verfügbar.
 
 1. Greifen Sie auf die [!DNL Assets] Workflow-Konsole zu unter `https://[aem_server]:[port]/workflow`. Öffnen Sie den Workflow [!UICONTROL DAM-Update-Asset].
 
@@ -53,18 +53,17 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    * Befehle: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * Fügen Sie Größen für Miniaturansichten hinzu: 319:319, 140:100, 48:48. Fügen Sie ggf. eine benutzerdefinierte Konfiguration für Miniaturansichten hinzu.
 
-   Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
+   Die Befehlszeilenargumente für die `PDFRasterizer` -Befehl kann Folgendes umfassen:
 
-   * `-d`: Flag für eine reibungslose Darstellung von Text, Vektorgrafiken und Bildern. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
+   * `-d`: Flag für eine reibungslose Darstellung von Text, Vektorgrafiken und Bildern. Erstellt Bilder mit besserer Qualität. Wenn Sie diesen Parameter einbeziehen, wird der Befehl jedoch langsam ausgeführt und die Bildgröße erhöht.
 
-   * `-s`: Maximale Bildabmessung (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Bei Seiten mit unterschiedlichen Größen wird u. U. jede Seite mit einem anderen Wert skaliert. Der Standardwert ist die tatsächliche Seitengröße.
+   * `-s`: Maximale Bildabmessung (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Wenn Seiten eine andere Größe haben, kann jede Seite möglicherweise um einen anderen Wert skaliert werden. Der Standardwert ist die tatsächliche Seitengröße.
 
-   * `-t`: Typ des Ausgabebildes. Gültige Formate sind JPEG, PNG, GIF und BMP. Das Standardformat ist JPEG.
+   * `-t`: Typ des Ausgabebildes. Gültige Typen sind JPEG, PNG, GIF und BMP. Das Standardformat ist JPEG.
 
    * `-i`: Pfad für die Eingabe-PDF. Dieser Parameter ist erforderlich.
 
    * `-h`: Hilfe
-
 
 1. Um Zwischenausgabeformate zu löschen, wählen Sie **[!UICONTROL Erzeugte Ausgabe löschen]**.
 1. Um Web-Ausgabedarstellungen von PDF Rasterizer generieren zu lassen, wählen Sie **[!UICONTROL Webausgabe erstellen]** aus.
@@ -84,18 +83,17 @@ Mit PDF Rasterizer erstellte Miniaturansichten und Vorschauen weisen im Verglei
    * Befehle: `PDFRasterizer -d -s 1280 -t PNG -i ${file}`
    * Fügen Sie Größen für Miniaturansichten hinzu: `319:319`, `140:100`, `48:48`. Fügen Sie ggf. eine benutzerdefinierte Konfiguration für Miniaturansichten hinzu.
 
-   Die Befehlszeilenargumente für den `PDFRasterizer`-Befehl können Folgendes enthalten:
+   Die Befehlszeilenargumente für die `PDFRasterizer` -Befehl kann Folgendes umfassen:
 
-   * `-d`: Flag für eine reibungslose Darstellung von Text, Vektorgrafiken und Bildern. Erstellt Bilder mit besserer Qualität. Die Verwendung dieses Parameters führt allerdings zu einer langsamen Ausführung des Befehls und zu größeren Bildern.
+   * `-d`: Flag für eine reibungslose Darstellung von Text, Vektorgrafiken und Bildern. Erstellt Bilder mit besserer Qualität. Wenn Sie diesen Parameter einbeziehen, wird der Befehl jedoch langsam ausgeführt und die Bildgröße erhöht.
 
-   * `-s`: Maximale Bildabmessung (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Bei Seiten mit unterschiedlichen Größen wird u. U. jede Seite mit einem anderen Wert skaliert. Der Standardwert ist die tatsächliche Seitengröße.
+   * `-s`: Maximale Bildabmessung (Höhe oder Breite). Dieser Wert wird für jede Seite in DPI umgewandelt. Wenn Seiten eine andere Größe haben, kann jede Seite möglicherweise um einen anderen Wert skaliert werden. Der Standardwert ist die tatsächliche Seitengröße.
 
-   * `-t`: Typ des Ausgabebildes. Gültige Formate sind JPEG, PNG, GIF und BMP. Das Standardformat ist JPEG.
+   * `-t`: Typ des Ausgabebildes. Gültige Typen sind JPEG, PNG, GIF und BMP. Das Standardformat ist JPEG.
 
    * `-i`: Pfad für die Eingabe-PDF. Dieser Parameter ist erforderlich.
 
    * `-h`: Hilfe
-
 
 1. Um Zwischenausgabeformate zu löschen, wählen Sie **[!UICONTROL Erzeugte Ausgabe löschen]**.
 1. Um Web-Ausgabedarstellungen von PDF Rasterizer generieren zu lassen, wählen Sie **[!UICONTROL Webausgabe erstellen]** aus.
