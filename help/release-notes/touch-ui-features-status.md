@@ -3,21 +3,21 @@ title: Status der Funktionen der Touch-optimierten Benutzeroberfläche
 description: Spezifische Versionshinweise für die Touch-optimierte Benutzeroberfläche von  [!DNL Adobe Experience Manager] .
 exl-id: 7b71e8db-e8c6-4470-bc22-db3d4600b7fc
 source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
-workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+workflow-type: ht
+source-wordcount: '1067'
+ht-degree: 100%
 
 ---
 
 # Status der Funktionen der Touch-optimierten Benutzeroberfläche {#touch-ui-feature-status}
 
-Adobe Experience Manager (AEM) ab 6.4 [Die klassische Benutzeroberfläche ist veraltet](../release-notes/deprecated-removed-features.md). Adobe macht keine weiteren Verbesserungen an der klassischen Benutzeroberfläche, und es wird empfohlen, die leistungsstarken neuen Funktionen der Touch-optimierten Benutzeroberfläche zu verwenden.
+Ab Adobe Experience Manager (AEM) 6.4 aufwärts: [Die klassische Benutzeroberfläche ist veraltet](../release-notes/deprecated-removed-features.md). Adobe wird keine weiteren Verbesserungen an der klassischen Benutzeroberfläche vornehmen, und Benutzerinnen und Benutzer werden ermutigt, die leistungsstarken neuen Funktionen der Touch-optimierten Benutzeroberfläche zu nutzen.
 
-Ab Version 6.0 führte AEM eine neue Benutzeroberfläche ein, die als &quot;Touch-optimierte Benutzeroberfläche&quot;(auch &quot;Touch-optimierte Benutzeroberfläche&quot;genannt) bezeichnet wird und an der [!DNL Adobe Experience Cloud] und die allgemeinen Richtlinien für die Adobe-Benutzeroberfläche. Da sich die Funktionalitäten der beiden Benutzeroberflächen inzwischen nahezu entsprechen, ist dies nun die Standardbenutzeroberfläche von AEM. Die alte, Desktop-artige Benutzeroberfläche wird hingegen als „klassische Benutzeroberfläche“ bezeichnet.
+Seit Einführung von Version 6.0 verfügt AEM über eine neue, Touch-optimierte Benutzeroberfläche (kurz Touch-Oberfläche genannt), die auf [!DNL Adobe Experience Cloud] und die allgemeinen Richtlinien für Benutzeroberflächen von Adobe abgestimmt ist. Da sich die Funktionalitäten der beiden Benutzeroberflächen inzwischen nahezu entsprechen, ist dies nun die Standardbenutzeroberfläche von AEM. Die alte, Desktop-artige Benutzeroberfläche wird hingegen als „klassische Benutzeroberfläche“ bezeichnet.
 
 Die meisten Funktionen sind zwar in der Touch-optimierten Benutzeroberfläche vorhanden, allerdings ist die Entwicklung einiger Funktionen noch nicht abgeschlossen. Diese werden dann in künftigen Versionen hinzugefügt.
 
-Die folgende Liste zeigt den Status der in AEM 6.5 implementierten Funktionen.
+In der folgenden Liste ist der Status der in AEM 6.5 verfügbaren Funktionen aufgeführt.
 
 Empfehlungen für Kunden, die ein Upgrade auf AEM 6.5 durchführen, finden Sie unter [Benutzeroberflächenempfehlungen für Kunden](/help/sites-deploying/ui-recommendations.md).
 
@@ -31,7 +31,7 @@ Empfehlungen für Kunden, die ein Upgrade auf AEM 6.5 durchführen, finden Sie u
 
 ## Legende {#legend}
 
-* **Fertig**: Die Funktion ist in der Touch-optimierten Benutzeroberfläche vollständig verfügbar.
+* **Umfassend**: Die Funktion ist nahezu umfassend in der Touch-optimierten Benutzeroberfläche verfügbar.
 * **Nahezu umfassend**: Die Funktion ist nahezu umfassend in der Touch-optimierten Benutzeroberfläche verfügbar.
 * **Fehlt**: Die Funktion ist in der Touch-optimierten Benutzeroberfläche nicht vorhanden. Für diese Aktion muss die klassische Benutzeroberfläche verwendet werden.
 * **Ersetzt**: Die Funktion wurde durch eine neue Implementierung ersetzt, die anders funktioniert.
@@ -54,23 +54,23 @@ Dies ist eine Liste der Sites Admin-Funktionen der klassischen Benutzeroberfläc
 | Suchen | Umfassend |  |
 | Seite kopieren/einfügen (Duplikat) | Umfassend |  |
 | Verschieben von Seiten | Umfassend |  |
-| Veröffentlichen von Seiten | Umfassend |  |
-| Veröffentlichen von Seiten ohne Replikationsrechte | Umfassend |  |
+| Seiten veröffentlichen | Umfassend |  |
+| Seiten ohne Replikationsrechte veröffentlichen | Umfassend |  |
 | Später veröffentlichen | Umfassend |  |
-| Veröffentlichungsstruktur | Umfassend |  |
-| Rückgängigmachen der Veröffentlichung von Seiten | Umfassend |  |
-| Veröffentlichung von Seiten ohne Replikationsrechte rückgängig machen | Umfassend |  |
+| Struktur veröffentlichen | Umfassend |  |
+| Veröffentlichung von Seiten aufheben | Umfassend |  |
+| Veröffentlichung von Seiten ohne Replikationsrechte aufheben | Umfassend |  |
 | Veröffentlichung später rückgängig machen | Umfassend |  |
 | Löschen | Umfassend |  |
 | Sperren/Entsperren | Umfassend |  |
 | Eigenschaften anzeigen/bearbeiten | Umfassend |  |
-| Festlegen von Berechtigungen für Seiten | Umfassend |  |
+| Berechtigungen für Seiten festlegen | Umfassend |  |
 | Versionsverlauf | Umfassend |  |
 | Version wiederherstellen | Umfassend |  |
-| Baum wiederherstellen und gelöschte Seiten wiederherstellen | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
+| Struktur wiederherstellen und gelöschte Seiten wiederherstellen | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
 | Unterschied zwischen vorheriger und aktueller Version anzeigen | Umfassend |  |
-| Live Copy-Aktionen (Roll-out) | Umfassend |  |
-| Siehe Sprachkopien | Umfassend |  |
+| Live Copy-Aktionen (Rollout) | Umfassend |  |
+| Siehe „Sprachkopien“ | Umfassend |  |
 | Suchen und Ersetzen | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
 | Benachrichtigungs-Posteingang (JCR-Ereignisse) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. Wird in Zukunft durch eine andere Implementierung ersetzt. |
 | Verweise | Umfassend | Anzeige eingehender Seitenlinks, die zu AEM 6.5 hinzugefügt wurden. |
@@ -81,7 +81,7 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
 
 | Funktion | Status | Kommentar |
 |--- |--- |--- |
-| Webseiten bearbeiten | Umfassend |  |
+| Web-Seiten bearbeiten | Umfassend |  |
 | Mobile Webseiten bearbeiten | Umfassend |  |
 | Per Design-Import-Tool importierte Inhalte bearbeiten | Umfassend |  |
 | E-Mails bearbeiten | Umfassend |  |
@@ -94,11 +94,11 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
 | Modus: Design bearbeiten | Umfassend |  |
 | Modus: Strukturvorlage | Umfassend |  |
 | Modus: Live Copy-Status | Umfassend |  |
-| Hinzufügen von Anmerkungen | Umfassend |  |
+| Anmerkungen hinzufügen | Umfassend |  |
 | Bearbeiten von Eigenschaften | Umfassend |  |
 | Seiten-Rollout | Umfassend |  |
 | Workflow starten und anzeigen | Umfassend |  |
-| Workflow-Paket-Handling | Nahezu umfassend | Zugriff über die Touch-optimierte Benutzeroberfläche. Mehrere Workflow-Nutzdaten werden weiterhin in der klassischen Benutzeroberfläche angezeigt. |
+| Workflow-Paket-Handling | Nahezu umfassend | Verfügbar über die Touch-optimierte Benutzeroberfläche. In der klassischen Benutzeroberfläche werden weiterhin mehrere Workflow-Payloads angezeigt. |
 | Seite sperren/entsperren | Umfassend |  |
 | Seite veröffentlichen | Umfassend |  |
 | Veröffentlichen einer Seite aufheben | Umfassend |  |
@@ -108,12 +108,12 @@ Dies ist eine Liste der Seiten-Editor-Funktionen der klassischen Benutzeroberfl�
 | Verweise einblenden | Entfernt | Verwenden Sie Sites Admin, um die [detaillierte Verweisliste](/help/sites-authoring/author-environment-tools.md#references) anzuzeigen. |
 | Auditprotokoll | Entfernt | Verwenden Sie Sites Admin und [öffnen Sie die Aktivitätsschiene](/help/sites-authoring/author-environment-tools.md#events-timeline). |
 | Version erstellen | Entfernt | Verwenden Sie Sites Admin, um [neue Versionen zu erstellen](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version). |
-| Version wiederherstellen | Entfernt | Verwenden Sie Sites Admin, um [Versionen wiederherstellen](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
+| Version wiederherstellen | Entfernt | Verwenden Sie Sites Admin, um [Versionen wiederherzustellen](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version). |
 | Launches wechseln | Entfernt | Verwenden Sie Sites Admin, um [zwischen Launches zu wechseln](/help/sites-authoring/launches-promoting.md). |
 | Seite übersetzen | Entfernt | Verwenden Sie Sites Admin, um [Seiten zu Übersetzungsprojekten hinzufügen](/help/sites-administering/tc-manage.md). |
-| Timewarp (wählen Sie Datum/Uhrzeit aus und durchsuchen Sie die Site so, wie sie dann aussah) | Umfassend |  |
+| Timewarp (Datum/Uhrzeit auswählen und die Website so, wie sie damals aussah, durchsuchen) | Umfassend |  |
 | Berechtigungen festlegen | Umfassend |  |
-| ClientContext-Benutzeroberfläche | Ersetzt | Verwenden Sie die [ContextHub](/help/sites-authoring/ch-previewing.md) Benutzeroberfläche in Zukunft. |
+| ClientContext-Benutzeroberfläche | Ersetzt | Verwenden Sie künftig die [ContextHub](/help/sites-authoring/ch-previewing.md)-Benutzeroberfläche. |
 | Inhaltssuche für die unterschiedlichen Medientypen | Umfassend |  |
 | Komponentenliste | Umfassend |  |
 | Komponenten kopieren und einfügen | Umfassend |  |
@@ -129,7 +129,7 @@ Dies ist eine Liste der Funktionen der Text-, Tabellen- und Bild-Editoren der k
 | Funktion | Status | Kommentar |
 |--- |--- |--- |
 | Rich-Text-Editor | Umfassend | Verwendbar im Kontext, im Dialogfeld und im Vollbildmodus. |
-| RTE-Plug-ins aktivieren/deaktivieren | Umfassend | Dies kann mithilfe der [Vorlagen-Editor](/help/sites-authoring/templates.md). |
+| RTE-Plug-ins aktivieren/deaktivieren | Umfassend | Kann mithilfe des [Vorlageneditors](/help/sites-authoring/templates.md) erledigt werden. |
 | RTE für Nur-Text verwenden | Umfassend |  |
 | RTE-Plug-in: Links und Anker | Umfassend |  |
 | RTE-Plug-in: Zeichenzuordnung | Umfassend |  |
@@ -160,7 +160,7 @@ Dies ist eine Liste der Funktionen der Text-, Tabellen- und Bild-Editoren der k
 
 ## Funktionsstatus: Werkzeuge {#feature-status-tools}
 
-Dies ist eine Liste der verschiedenen Tools, die die klassische Benutzeroberfläche hat, und des Status in der Touch-optimierten Benutzeroberfläche.
+Dies ist eine Liste diverser Tools der klassischen Benutzeroberfläche sowie deren Status in der Touch-optimierten Benutzeroberfläche.
 
 | Funktion | Status | Kommentar |
 |--- |--- |--- |
@@ -171,7 +171,7 @@ Dies ist eine Liste der verschiedenen Tools, die die klassische Benutzeroberflä
 | MSM/Blueprint-Steuerungszentrale | Umfassend |  |
 | Blueprint-Manager-Benutzeroberfläche | Umfassend |  |
 | Benutzeroberfläche für Rollout-Konfiguration | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
-| Benutzeroberfläche für Benutzer, Gruppen und Berechtigungen | Nahezu umfassend | Verwenden Sie die klassische Benutzeroberfläche für die erweiterte Bearbeitung von Berechtigungen. |
+| Benutzeroberfläche für Benutzende, Gruppen und Berechtigungen | Nahezu umfassend | Verwenden Sie die klassische Benutzeroberfläche für die erweiterte Bearbeitung von Berechtigungen. |
 | Versionen bereinigen (`/etc/versioning/purge.html`) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
 | Prüfer für externe Links (`/etc/linkchecker.html`) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
 | Bulk Editor (`/etc/importers/bulkeditor.html`) | Fehlt | Verwenden Sie die klassische Benutzeroberfläche. |
