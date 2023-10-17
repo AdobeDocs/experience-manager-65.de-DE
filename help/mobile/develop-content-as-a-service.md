@@ -1,13 +1,13 @@
 ---
 title: Inhaltsbereitstellung
-description: Inhaltsbereitstellung
+description: Erfahren Sie, wie Sie alle Inhalte in Adobe Experience Manager verwenden können, um das Targeting-App-Erlebnis bereitzustellen.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '978'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Dazu gehören die Verwendung von Assets, Site-Inhalten, CAAs-Inhalten (Over-the-
 
 >[!NOTE]
 >
->**Over-the-Air-Inhalt** kann über ContentSync -Handler von einem der oben genannten stammen. Sie können sie verwenden, um ein Batch-Paket zu erstellen und mithilfe von ZIP-Dateien bereitzustellen und Aktualisierungen für diese Pakete zu verwalten.
+>**Over-the-Air-Inhalt** kann über ContentSync-Handler von einem der oben genannten stammen. Sie können sie verwenden, um ein Batch-Paket zu erstellen und mithilfe von ZIP-Dateien bereitzustellen und Aktualisierungen für diese Pakete zu verwalten.
 
 Es gibt drei Hauptmaterialtypen, die Content Services bereitstellt:
 
@@ -127,12 +127,12 @@ Diese Inhaltsentitäten werden mithilfe eines Inhaltsmodells generiert, um die A
 
 Inhalte können auf verschiedene Arten in die App gelangen.
 
-1. GET-ZIPS über AEM Over-the-Air
+1. GET-ZIPS über AEM Übersee
 
    * Content Sync-Handler können das ZIP-Paket direkt aktualisieren oder vorhandene Content-Renderer aufrufen
 
       * Platform-Handler
-      * AEM-Handler
+      * AEM Handler
       * Benutzerdefinierte Handler
 
 1. GET direkt über Content Renderer

@@ -1,14 +1,14 @@
 ---
 title: Content Services
-description: Content Services
+description: Erfahren Sie, wie Sie mit AEM Mobile Content Services Inhalte anfordern können, die von AEM verwaltet werden.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '297'
-ht-degree: 3%
+source-wordcount: '310'
+ht-degree: 2%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 3%
 >
 >Die Funktion Content Services wird nur zu Vorschauzwecken dokumentiert.
 >
->Es kann mit der Veröffentlichung von 6.3 GA Service Pack 1 geändert werden.
+>Es kann mit der Veröffentlichung von 6.3 Service Pack 1 geändert werden.
 
 AEM Mobile Content Services ist eine einfache Funktion zum Anfordern von Inhalten, die von AEM verwaltet werden. Dadurch erhalten alle App-Entwickler eine leistungsstarke Möglichkeit, Inhalte abzurufen, ohne über fundierte Kenntnisse im AEM Content Repository (JCR) und im Web-Framework (Sling) verfügen zu müssen. Dadurch können die anfragenden Anwendungen vom Inhalts-Repository entkoppelt werden.
 

@@ -1,14 +1,14 @@
 ---
 title: Authoring für Adobe PhoneGap Enterprise in Adobe Experience Manager
-description: PhoneGap
+description: Erfahren Sie mehr über das Authoring für Adobe PhoneGap Enterprise mithilfe von Vorlagen und Komponenten zum Hinzufügen und Bearbeiten von Seiten, zum Ziehen und Ablegen von Komponenten und zum Hinzufügen von Medien.
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '207'
-ht-degree: 4%
+source-wordcount: '228'
+ht-degree: 5%
 
 ---
 
@@ -28,9 +28,9 @@ Für den Start eines neuen AEM Mobile-App-Erlebnisses müssen mehrere Rollen kod
 
 ## Authoring von PhoneGap-Anwendungen {#authoring-phonegap-applications}
 
-Ein ***AEM-Autor* (oder *Marketer*)**ist in der Lage, die nativen Vorlagen und Komponenten zum Hinzufügen und Bearbeiten von Seiten, zum Ziehen und Ablegen von Komponenten und zum Hinzufügen von Medien aller Typen aus dem DAM, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente), zu verwenden.
+Ein ***AEM* (oder *Marketer*)**ist in der Lage, die nativen Vorlagen und Komponenten zum Hinzufügen und Bearbeiten von Seiten zu verwenden. Sie können Komponenten per Drag &amp; Drop verschieben und Medien aller Typen aus dem DAM hinzufügen, einschließlich Bildern, Videos und Textfragmenten (Inhaltsfragmente).
 
-Erste Schritte finden Sie in den folgenden Ressourcen:
+Sehen Sie sich die folgenden Ressourcen an:
 
 * [Erstellen von mobilen Anwendungen](/help/mobile/phonegap-authoring-apps.md)
 * [Erstellen und Verwalten von App-Inhalten](/help/mobile/phonegap-manage-app-content.md)

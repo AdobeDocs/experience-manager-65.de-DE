@@ -1,19 +1,15 @@
 ---
 title: Starten von Workflows
-seo-title: Starting Workflows
-description: Erfahren Sie, wie Sie Workflows in AEM starten.
-seo-description: Learn how to start Workflows in AEM.
-uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
+description: Erfahren Sie, wie Sie Workflows in Adobe Experience Manager verwalten, damit Sie sie mit verschiedenen Methoden starten können, entweder manuell oder automatisch.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '794'
-ht-degree: 63%
+source-wordcount: '799'
+ht-degree: 46%
 
 ---
 
@@ -87,16 +83,16 @@ Ein Workflow-Paket:
 ## Starten eines Workflows über die Modellkonsole {#starting-a-workflow-from-the-models-console}
 
 1. Gehen Sie zur **Modelle-Konsole** (**Tools** > **Workflow** > **Modelle**).
-1. Wählen Sie den Workflow aus (entsprechend der Konsolenansicht). Bei Bedarf können Sie auch die Suche (links oben) verwenden:
+1. Wählen Sie den Workflow aus (entsprechend der Konsolenansicht). Sie können bei Bedarf auch die Suche (oben links) verwenden:
 
    ![wf-103](assets/wf-103.png)
 
    >[!NOTE]
    >
-   >Die Anzeige **[Übergang](/help/sites-developing/workflows.md#transient-workflows)** zeigt Workflows an, deren Workflow-Verlauf nicht aufbewahrt wird.
+   >Die **[Übergangs](/help/sites-developing/workflows.md#transient-workflows)** zeigt Workflows an, für die der Workflow-Verlauf nicht beibehalten wird.
 
 1. Wählen Sie in der Symbolleiste **Workflow starten** aus.
-1. Das Dialogfeld „Workflow ausführen“ wird geöffnet. Darin können Sie Folgendes festlegen:
+1. Das Dialogfeld Workflow ausführen wird geöffnet. Hier können Sie Folgendes angeben:
 
    * **Payload**
 
@@ -115,7 +111,7 @@ Ein Workflow-Paket:
 ## Erstellen einer Starter-Konfiguration {#creating-a-launcher-configuration}
 
 1. Gehen Sie zur Konsole **Workflow-Starter** (**Tools** > **Workflow** > **Starter**).
-1. Wählen Sie **Erstellen** und anschließend **Starter hinzufügen**, um das Dialogfeld zu öffnen:
+1. Auswählen **Erstellen**, dann **Launcher hinzufügen** , um das Dialogfeld zu öffnen:
 
    ![wf-105](assets/wf-105.png)
 
@@ -147,11 +143,11 @@ Ein Workflow-Paket:
 
    * **Funktionen**
 
-     Eine Liste der Funktionen, die aktiviert werden können/sollen. Wählen Sie die benötigte(n) Funktion(en) über den Dropdown-Selektor aus.
+     Eine Liste der Funktionen, die aktiviert werden können/sollen. Wählen Sie die erforderlichen Funktionen mithilfe der Dropdown-Auswahl aus.
 
    * **Deaktivierte Funktionen**
 
-   Eine Liste der Funktionen, die deaktiviert werden können/sollen. Wählen Sie die benötigte(n) Funktion(en) über den Dropdown-Selektor aus.
+   Eine Liste der Funktionen, die deaktiviert werden können/sollen. Wählen Sie die erforderlichen Funktionen mithilfe der Dropdown-Auswahl aus.
 
    * **Workflow-Modell**
 
@@ -170,12 +166,12 @@ Ein Workflow-Paket:
 
    * **Liste ausschließen**
 
-     Hier können Sie JCR-Ereignisse festlegen, die ausgeschlossen (d. h. ignoriert) werden sollen, wenn bestimmt wird, ob ein Workflow ausgelöst wird oder nicht.
+     Gibt alle JCR-Ereignisse an, die ausgeschlossen werden sollen (d. h. ignorieren), wenn bestimmt wird, ob ein Workflow ausgelöst werden soll.
 
-     Bei dieser Startereigenschaft handelt es sich um eine Reihe von kommagetrennten Elementen: ``
+     Diese Starter-Eigenschaft ist eine kommagetrennte Liste von Elementen: &quot;
 
       * `property-name` ignoriert alle `jcr`-Ereignisse, die beim festgelegten Eigenschaftsnamen ausgelöst werden. ``
-      * `event-user-data:<*someValue*>` ignoriert jedes Ereignis, das die über die `*<someValue*` -API festgelegten `user-data`> [`ObservationManager` enthält](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `event-user-data:<*someValue*>` ignoriert alle Ereignisse, die die `*<someValue*`> `user-data` über die [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Beispiel:
 
@@ -187,7 +183,7 @@ Ein Workflow-Paket:
 
 1. Wählen Sie **Erstellen** aus, um den Starter zu erstellen, und kehren Sie zur Konsole zurück.
 
-   Sobald das entsprechende Ereignis auftritt, wird der Starter ausgelöst und der Workflow gestartet.
+   Wenn das entsprechende Ereignis eintritt, wird der Starter ausgelöst und der Workflow gestartet.
 
 ## Verwalten einer Starter-Konfiguration {#managing-a-launcher-configuration}
 

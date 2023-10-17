@@ -1,16 +1,14 @@
 ---
 title: Entwickeln von Apps mit PhoneGap CLI
-description: Erfahren Sie mehr über die Entwicklung von Apps mit PhoneGap CLI.
-uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
+description: Erfahren Sie, wie Sie mit PhoneGap CLI Apps für Mobilgeräte mithilfe einer bootfähigen Entwicklungsumgebung entwickeln.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '673'
 ht-degree: 2%
 
 ---
@@ -23,7 +21,7 @@ ht-degree: 2%
 
 Als Entwickler können Sie Ihre App jederzeit auf einem Gerät oder in einem Emulator ausführen, sofern Sie Ihre Entwicklungsumgebung konfiguriert haben.
 
-Um die folgenden Beispiele auszuführen, benötigen Sie ein System, das OS X (Mac) mit Xcode ausführt, oder ein Mac/Win/Linux-System mit installiertem Android™ SDK.
+Um die folgenden Beispiele auszuführen, benötigen Sie ein System, das macOS X mit Xcode ausführt, oder ein Mac/Win/Linux-System mit installiertem Android™ SDK.
 
 ## Bootstrap Ihrer Entwicklungsumgebung {#bootstrap-your-development-environment}
 
@@ -34,14 +32,14 @@ Für iOS: Für die Entwicklung für iPhones und iPads benötigen Sie die Xcode-I
 * kostenlos herunterladen [here](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
 * Handbuch zur PhoneGap iOS-Plattform (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
-Für Android™: Für die Entwicklung für iPhones und iPads benötigen Sie die Google Android™ Stuido IDE.
+Für Android™: Zur Entwicklung für iPhones und iPads benötigen Sie die Google Android™ Stuido IDE.
 
 * kostenlos herunterladen [here](https://developer.android.com/studio).
 * Handbuch zur PhoneGap Android™-Plattform (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
 ## Quelle herunterladen {#download-the-source}
 
-Nachdem Sie Ihre Entwicklungsumgebung erfolgreich per Bootstrapping implementiert haben, laden Sie die Quelle aus der AEM App Build-Kachel herunter:
+Wenn Sie Ihre Entwicklungsumgebung erfolgreich per Bootstrapping gestartet haben, laden Sie die Quelle aus der AEM App-Build-Kachel herunter:
 
 * Klicken Sie auf den Dropdown-Chevron für die PhoneGap Build-Kachel.
 
@@ -56,7 +54,7 @@ Nachdem Sie Ihre Entwicklungsumgebung erfolgreich per Bootstrapping implementier
 >
 >Die Entwicklungsquelle enthält den neuesten Status Ihrer App und gleichzeitig nicht gestaffelte Änderungen. Verwenden Sie die Staging-Quelle zum Erstellen von Release-Kandidaten für das Senden an Appstore-Anbieter.
 >
->Wenn Sie Ihre App nie testen, wird durch die Auswahl von Staging-Triggern der Staging-Workflow (Tipp: wird in der PhoneGap Enterprise Viewer App, die im AppStore und im Google Play Store verfügbar ist, als gestaffelte App angezeigt.
+>Wenn Sie Ihre App nie testen, wird durch die Auswahl von Staging-Triggern der Staging-Workflow (Tipp: wird in der im AppStore und im Google PlayStore verfügbaren PhoneGap Enterprise Viewer App als gestaffelte App angezeigt).
 
 * Klicken Sie auf Herunterladen und speichern Sie die ZIP-Datei auf Ihrem Computer.
 * Extrahieren Sie die heruntergeladene ZIP-Datei in Ihren Arbeitsbereich.
@@ -102,7 +100,7 @@ Sie können das JavaScript Ihrer App mit den Entwicklerwerkzeugen von Safari gen
 
 So aktivieren Sie die Entwicklertools:
 
-* Öffnen Sie die Voreinstellungen von Safari.
+* Öffnen Sie die Voreinstellungen von Safari
 
    * Klicken Sie in der Menüleiste auf Safari
    * Klicken Sie auf Voreinstellungen
@@ -131,7 +129,7 @@ phonegap run <platform> --emulator
 
 * Safari öffnen
 * Klicken Sie in der Menüleiste auf Entwickeln .
-* iOS Simulator-Untermenü auswählen
+* IOS Simulator-Untermenü auswählen
 * Klicken Sie auf home.html
 
 ![chlimage_1-48](assets/chlimage_1-48.png)
@@ -153,7 +151,7 @@ Sie können Haltepunkte an einer beliebigen Stelle in Ihrer Quelle festlegen. We
 
 >[!NOTE]
 >
-Um die Werte der Variablen anzuzeigen, bewegen Sie in der aktuellen Methode den Mauszeiger über.
+Bewegen Sie die Maus, um die Werte der Variablen in der aktuellen Methode anzuzeigen.
 
 ## Die nächsten Schritte {#the-next-steps}
 

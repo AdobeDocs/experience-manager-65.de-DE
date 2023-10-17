@@ -1,21 +1,21 @@
 ---
 title: Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ)
-description: Erfahren Sie mehr über die Bereitstellung von Inhalten per HTTP/2.
+description: Erfahren Sie mehr über die Bereitstellung von HTTP2-Inhalten und wie sie die Gesamtleistung Ihrer Webinhalte erhöhen können.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: 2428914c-5fb0-439e-a1ef-8ee30b890f58
-source-git-commit: 65af6e33ae3897519491952f4d3a6832700f77b2
-workflow-type: ht
-source-wordcount: '774'
-ht-degree: 100%
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+workflow-type: tm+mt
+source-wordcount: '782'
+ht-degree: 91%
 
 ---
 
 # Bereitstellung von Inhalten per HTTP/2 – Häufig gestellte Fragen (FAQ){#http-delivery-of-content-faq}
 
-Adobe freut sich, die Möglichkeit zur Bereitstellung von Inhalten per HTTP/2 bekanntgeben zu können. Wenn Sie HTTP/2 verwenden, wird die Gesamtleistung gesteigert.
+Adobe freut sich, die Möglichkeit zur Bereitstellung von Inhalten per HTTP/2 bekanntgeben zu können. Wenn Sie HTTP/2 verwenden, wird eine allgemeine Leistungssteigerung festgestellt.
 
 ## Was ist HTTP/2? {#what-is-http}
 
@@ -32,7 +32,7 @@ Die Verbesserung der Leistung ist von verschiedenen Faktoren abhängig, z. B. d
 Von Adobe durchgeführte Prüfungen führten zu folgenden Ergebnissen:
 
 * Bei Bildern wurde die Reaktionszeit je nach Gerät und Browser um 7–28 % verbessert. Die bedeutendste Leistungssteigerung war bei iOS-Geräten zu beobachten.
-* Die Ladezeitleistung für Viewer wurde um 15 % verbessert.
+* Für Viewer wurde die Ladezeitleistung um 15 % verbessert.
 
 Die folgende Demonstration zeigt den Unterschied zwischen Laden mit HTTP/1 und Laden mit HTTP/2:
 
@@ -43,26 +43,26 @@ Die folgende Demonstration zeigt den Unterschied zwischen Laden mit HTTP/1 und L
 Um HTTP/2 verwenden zu können, müssen Sie die folgenden Voraussetzungen erfüllen:
 
 * Sie verwenden sicheres HTTPS für Ihre Rich Media-Anforderungen.
-* Sie verwenden das von Adobe gebündelte CDN (Content Delivery Network) als Teil Ihrer Dynamic Media-Lizenz.
+* Verwenden Sie das Adobe-gebündelte CDN (Content Delivery Network) als Teil Ihrer Dynamic Media-Lizenz.
 * Verwenden Sie eine dedizierte Domain (d. h. `images.company.com` oder `mycompany.scene7.com`), keine generische Dynamic Media-Domain (d. h. `s7d1.scene7.com`, `s7d2.scene7.com` oder `s7d13.scene7.com`).
 
-   Öffnen Sie die [Dynamic Media Classic-Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an, um Ihre Domains zu finden. Wechseln Sie dann zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **Veröffentlichungs-Server-Name**. Wenn Sie derzeit eine generische Dynamic Media-Domain verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domain beantragen.
+  Öffnen Sie die [Dynamic Media Classic-Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an, um Ihre Domains zu finden. Wechseln Sie dann zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **Veröffentlichungs-Server-Name**. Wenn Sie derzeit eine generische Dynamic Media-Domain verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domain beantragen.
 
 ## Wie verläuft der Prozess für die Aktivierung von HTTP/2 für mein Dynamic Media-Konto? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-1. Erstellen Sie [über die Admin Console einen Support-Fall](https://helpx.adobe.com/de/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) und fordern Sie die Umstellung auf HTTP/2 an. Dies wird nicht automatisch für Sie erledigt.
+1. Erstellen Sie [über die Admin Console einen Support-Fall](https://helpx.adobe.com/de/enterprise/using/support-for-experience-cloud.html) und fordern Sie die Umstellung auf HTTP/2 an. Dies wird nicht automatisch für Sie erledigt.
 1. Geben Sie in Ihrem Support-Fall die folgenden Informationen an:
 
    * Name, E-Mail-Adresse und Telefonnummer des Primärkontakts
    * Alle Domains, die auf HTTP/2 umgestellt werden sollen. Das heißt, `images.company.com` oder `mycompany.scene7.com`.
 
-      Öffnen Sie die [Dynamic Media Classic-Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an, um Ihre Domains zu finden. Wechseln Sie dann zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**.
+     Öffnen Sie die [Dynamic Media Classic-Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an, um Ihre Domains zu finden. Wechseln Sie dann zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**.
 
    * Vergewissern Sie sich, dass Sie sicheres HTTPS für Rich Media-Anforderungen verwenden.
    * Stellen Sie sicher, dass Sie das CDN über Adobe und nicht über eine direkte Beziehung verwenden.
    * Stellen Sie sicher, dass Sie eine dedizierte Domain verwenden. Das heißt, `images.company.com` oder `mycompany.scene7.com`, nicht eine generische Dynamic Media-Domain wie `s7d1.scene7.com`, `s7d2.scene7.com`, `s7d13.scene7.com`.
 
-      Öffnen Sie die [Dynamic Media Classic-Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an, um Ihre Domains zu finden. Wechseln Sie dann zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Dynamic Media-Domain verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domain beantragen.
+     Öffnen Sie die [Dynamic Media Classic-Desktop-Anwendung](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html?lang=de#getting-started) und melden Sie sich bei Ihrem Unternehmenskonto an, um Ihre Domains zu finden. Wechseln Sie dann zu **[!UICONTROL Einstellungen]** > **[!UICONTROL Anwendungseinstellungen]** > **[!UICONTROL Allgemeine Einstellungen]**. Suchen Sie nach dem Feld **[!UICONTROL Veröffentlichungs-Server-Name]**. Wenn Sie derzeit eine generische Dynamic Media-Domain verwenden, können Sie im Zuge dieser Umstellung einen Wechsel zu Ihrer eigenen benutzerdefinierten Domain beantragen.
 
 1. Der Adobe-Support fügt Sie entsprechend der Reihenfolge der eingegangenen Anfragen der HTTP/2-Kundenwarteschlange hinzu.
 1. Wenn Adobe für die Bearbeitung Ihrer Anfrage bereit ist, setzt sich der Support mit Ihnen in Verbindung, um die Umstellung zu koordinieren und ein Zieldatum festzulegen.

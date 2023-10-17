@@ -1,16 +1,16 @@
 ---
 title: Der Bulk Editor
-description: Erfahren Sie, wie Sie den Bulk Editor verwenden.
+description: Erfahren Sie, wie Sie den Bulk Editor für eine effiziente Bearbeitung verwenden können, wenn der visuelle Seitenkontext nicht benötigt wird.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '1158'
-ht-degree: 27%
+source-wordcount: '1159'
+ht-degree: 21%
 
 ---
 
@@ -41,7 +41,7 @@ Wenn Sie beispielsweise alle Namen und E-Mail-Adressen von Benutzern benötigen,
 Ein Beispiel zur Veranschaulichung eines solchen Anwendungsfalls finden Sie auf der Geometrixx-Website:
 
 1. Navigieren Sie zum **Support** und dann zum **Zufriedenheit des Kundendienstes** Umfrage.
-1. **Bearbeiten** die **Formularstart** Absatz. Klicken Sie im Dialogfeld auf das **Erweitert** Registerkarte, erweitern Sie die **Aktionskonfiguration** Klicken Sie auf **Daten anzeigen...**.
+1. **Bearbeiten** die **Formularstart** Absatz. Klicken Sie im Dialogfeld auf die **Erweitert** Registerkarte, erweitern Sie die **Aktionskonfiguration** Klicken Sie auf **Daten anzeigen...**.
 
    ![Beispiel für eine Umfrage zur Kundenzufriedenheit](assets/custsatsurvey.png)
 
@@ -63,7 +63,7 @@ Mit dem Bulk Editor können Sie:
 So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
 
 1. Im **Instrumente** klicken Sie auf die **Importtools** Ordner, um ihn zu erweitern.
-1. Doppelklicken Sie auf die **Bulk Editor** , um es zu öffnen.
+1. Doppelklicken Sie auf die **Bulk Editor**.
 1. Geben Sie Ihre Auswahlanforderungen an:
 
 <table>
@@ -78,11 +78,11 @@ So bearbeiten Sie mit dem Bulk Editor mehrere Elemente gleichzeitig:
   </tr>
   <tr>
    <td>Abfrageparameter</td>
-   <td>Geben Sie mithilfe von GQL-Parametern die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll, z. B. <code>type:Page</code> sucht nach allen Seiten im Stammpfad, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td>
+   <td>Geben Sie mithilfe der GQL-Parameter die Suchzeichenfolge ein, nach der der Bulk Editor im Repository suchen soll. Beispiel: <code>type:Page</code> sucht nach allen Seiten im Stammpfad, <code>text:professional</code> sucht nach allen Seiten, die das Wort "professionell"enthalten, und <code>"jcr:title":English</code> sucht nach allen Seiten, die "Englisch"als Titel haben. Sie können nur nach Zeichenfolgen suchen.</td>
   </tr>
   <tr>
    <td>Kontrollkästchen „Inhaltsmodus“</td>
-   <td>Aktivieren Sie dieses Kontrollkästchen, um die Eigenschaften im Unterknoten <code>jcr:content</code> der Suchergebnisse zu lesen, sofern vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td>
+   <td>Aktivieren Sie dieses Kontrollkästchen, damit Sie Eigenschaften in der <code>jcr:content</code> Unterknoten der Suchergebnisse, falls vorhanden. Diese Option ist nur für Seiten nutzbar. Eigenschaftsnamen erhalten das Präfix <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Eigenschaften/Spalten</td>
@@ -104,11 +104,11 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 
    ![Ergebnisse des Bulk Editors](assets/chlimage_1-39.png)
 
-1. Nehmen Sie alle erforderlichen Änderungen vor, indem Sie auf eine Zelle doppelklicken.
+1. Doppelklicken Sie auf eine Zelle, damit Sie Änderungen vornehmen können.
 
    ![Massenbearbeitung](assets/srchresultedit.png)
 
-1. Klicken Sie auf **Speichern**, um die Änderungen zu speichern. (Die Schaltfläche **Speichern** wird aktiviert, sobald Sie eine Zelle bearbeitet haben.)
+1. Klicks **Speichern** um Ihre Änderungen zu speichern (die **Speichern** aktiviert ist, nachdem Sie eine Zelle bearbeitet haben).
 
    >[!CAUTION]
    >
@@ -117,18 +117,18 @@ Im Beispiel oben werden alle Seiten, die Ihren Suchkriterien entsprechen, zurüc
 #### Weitere GQL-Abfrageparameter {#additional-gql-query-parameters}
 
 * **path:** Durchsucht nur Knoten unter diesem Pfad. Wenn Sie mehr als einen Begriff mit einem Pfadpräfix angeben, wird nur der letzte Begriff berücksichtigt.
-* **type:** Gibt nur Knoten der angegebenen Knotentypen zurück. Dies umfasst die Typen &quot;primary&quot;und &quot;mixin&quot;. Sie können mehrere kommagetrennte Knotentypen angeben. GQL gibt Knoten zurück, die einen der angegebenen Typen aufweisen.
+* **Typ:** gibt nur Knoten des angegebenen Knotentyps zurück. Dies umfasst die Typen &quot;primary&quot;und &quot;mixin&quot;. Sie können mehrere kommagetrennte Knotentypen angeben. GQL gibt Knoten zurück, die einen der angegebenen Typen aufweisen.
 * **order:** Sortiert das Ergebnis nach den bestimmten Eigenschaften. Sie können mehrere kommagetrennte Eigenschaftsnamen angeben. Um das Ergebnis in absteigender Reihenfolge anzuordnen, setzen Sie einfach das Präfix des Eigenschaftsnamens auf ein Minuszeichen. Beispiel: order:-name. Durch die Verwendung eines Pluszeichens wird das Ergebnis in aufsteigender Reihenfolge zurückgegeben, was auch der Standardwert ist.
-* **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10.20 Das Intervall basiert auf null, der Beginn ist inklusiv und das Ende ist exklusiv. Sie können auch ein offenes Intervall festlegen: :limit:10.. oder limit:..20. Wenn Sie die Punkte weglassen und nur einen Wert angeben, gibt GQL höchstens diese Anzahl an Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten zehn Ergebnisse zurück).
+* **limit:** Begrenzt die Anzahl der Ergebnisse mithilfe eines Intervalls. Beispiel: limit:10.20 Das Intervall basiert auf null, der Beginn ist inklusiv und das Ende ist exklusiv. Sie können auch ein offenes Intervall festlegen: :limit:10.. oder limit:..20 Wenn die Punkte weggelassen und nur ein Wert angegeben wird, gibt GQL höchstens diese Anzahl von Ergebnissen zurück. Beispiel: limit:10 (gibt die ersten zehn Ergebnisse zurück).
 
 ### Inhalt exportieren {#exporting-content}
 
-Möglicherweise müssen Sie Inhalte exportieren und in einer Excel-Tabelle ändern. Sie können beispielsweise eine Mailingliste exportieren und den Bereichscode aller aufgelisteten Telefonnummern direkt in Excel ändern oder zusätzliche Zeilen hinzufügen usw.
+Exportieren Sie bei Bedarf Inhalte in eine Excel-Tabelle, um Änderungen vorzunehmen. Sie können beispielsweise eine Mailingliste exportieren und den Bereichscode aller aufgelisteten Telefonnummern direkt in Excel ändern oder zusätzliche Zeilen hinzufügen.
 
 So exportieren Sie Inhalte:
 
 1. Suchen Sie nach Inhalt, wie unter [Suchen und Bearbeiten von Inhalten](#searching-and-editing-content).
-1. Klicks **Export** um die Änderungen in eine tabulatorgetrennte Excel-Tabelle zu exportieren. AEM WCM fragt Sie, wo Sie die Datei herunterladen möchten.
+1. Klicks **Export** sodass Sie die Änderungen in eine tabulatorgetrennte Excel-Tabelle exportieren können. AEM WCM fragt Sie, wo Sie die Datei herunterladen möchten.
 
    >[!NOTE]
    >

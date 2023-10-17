@@ -1,13 +1,13 @@
 ---
 title: Rendering und Versand
-description: Rendering und Versand
+description: Erfahren Sie, wie Sie Adobe Experience Manager-Inhalte mithilfe von Sling Default Servlets rendern, um JSON und andere Formate zu rendern.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '596'
 ht-degree: 7%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 7%
 >
 >Adobe empfiehlt die Verwendung des SPA-Editors für Projekte, die ein Framework-basiertes clientseitiges Rendering von Einzelseiten-Apps erfordern (z. B. React). [Weitere Informationen](/help/sites-developing/spa-overview.md)
 
-Adobe Experience Manager (AEM)-Inhalte können einfach über [Sling-Standard-Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) zum Rendern [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und anderen Formaten.
+Adobe Experience Manager (AEM)-Inhalte können einfach über [Sling-Standardserver](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) zum Rendern [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) und anderen Formaten.
 
-Diese vordefinierten Renderer führen normalerweise das Repository durch und geben Inhalt unverändert zurück.
+Diese vordefinierten Renderings führen normalerweise das Repository aus und geben Inhalt unverändert zurück.
 
 AEM unterstützt über Sling auch die Entwicklung und Bereitstellung benutzerdefinierter Sling-Renderer, um die volle Kontrolle über das gerenderte Schema und den gerenderten Inhalt zu übernehmen.
 
@@ -46,7 +46,7 @@ Verwendung **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quo
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong>OPTIONAL</strong><br /> <br /> Tiefenwiedergabe für das Rendering von untergeordneten Elementen, wie beim Sling-Rendering verwendet</td>
+   <td><strong>OPTIONAL</strong><br /> <br /> Tiefenrekursion für die Wiedergabe von untergeordneten Elementen, wie sie beim Sling-Rendering verwendet wird</td>
   </tr>
  </tbody>
 </table>

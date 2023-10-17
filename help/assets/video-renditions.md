@@ -1,15 +1,15 @@
 ---
 title: Videoausgabeformate
-description: Videoausgabeformate
+description: Erfahren Sie, wie Sie mit Adobe Experience Manager Assets Videoausgabeformate für Video-Assets mit verschiedenen Formaten wie OGG, FLV usw. generieren können.
 uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
-workflow-type: ht
-source-wordcount: '221'
-ht-degree: 100%
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 85%
 
 ---
 
@@ -35,7 +35,7 @@ Die Liste mit Videoausgabeformate wird im Bereich **[!UICONTROL Wiedergaben]** a
 
 Konfigurieren Sie den Proxyserver für DM-kodierte Ausgabeformate, indem Sie [Cloud-Dienste für Dynamic Media konfigurieren](config-dynamic.md).
 
-Generieren Sie Videoausgabeformate mit gewünschten Parametern, [indem Sie ein entsprechendes Videoprofil erstellen](video-profiles.md).
+So generieren Sie Videoausgabeformate mit gewünschten Parametern: [Erstellen eines entsprechenden Videoprofils](video-profiles.md).
 
 Nachdem Sie den Proxyserver konfiguriert und Videoprofile erstellt haben, können Sie diese Videovorlage in ein Verarbeitungsprofil aufnehmen und dieses Verarbeitungsprofil auf einen Ordner anwenden.
 
@@ -43,4 +43,4 @@ Nachdem Sie den Proxyserver konfiguriert und Videoprofile erstellt haben, könne
 >
 >Die Audiowiedergabe funktioniert nicht für OGG- und WAV-Dateien in Microsoft® Internet Explorer 11. Auf der Seite mit den Asset-Details wird für Assets mit der Erweiterung OGG oder WAV der Fehler `Invalid Source` angezeigt.
 >
->In MS® Edge und auf dem iPad werden die OGG-Dateien nicht abgespielt und lösen den Fehler „Format nicht unterstützt“ aus.
+In MS® Edge und auf dem iPad werden die OGG-Dateien nicht abgespielt und lösen den Fehler „Format nicht unterstützt“ aus.

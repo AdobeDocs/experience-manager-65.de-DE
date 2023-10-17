@@ -1,6 +1,6 @@
 ---
 title: Arbeiten mit 3D-Assets in Dynamic Media
-description: Erfahren Sie, wie Sie in Dynamic Media mit 3D-Assets arbeiten.
+description: Erfahren Sie, wie Sie 3D-Assets in Dynamic Media hochladen, verwalten, anzeigen und bereitstellen können.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: introduction
@@ -8,10 +8,10 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '2348'
-ht-degree: 99%
+source-wordcount: '2354'
+ht-degree: 97%
 
 ---
 
@@ -129,7 +129,7 @@ Siehe auch [Vorschau von Assets über die Software-Schnittstelle](/help/assets/p
    | **Kamera zoomen** | Zoomen Sie mit der Kamera in Bereiche der 3D-Szene bzw. aus diesen Bereichen heraus. | Scrollen Sie mit dem Mausrad. | Ziehen Sie per Pinch mit zwei Fingern. |
    | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
    | **Zurücksetzen** | Wählen Sie in der unteren rechten Ecke der Seite das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |   |   |
-   | **Vollbildmodus** | Um in den Vollbildmodus zu gelangen, wählen Sie in der unteren rechten Ecke der Seite das Symbol „Vollbild“. |   |   |
+   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, wählen Sie unten rechts auf der Seite das Symbol &quot;Vollbild&quot;aus. |   |   |
 
 1. Wählen Sie in der oberen rechten Ecke der Seite **[!UICONTROL Schließen]**, um zur Seite „Assets“ zurückzukehren.
 
@@ -162,7 +162,7 @@ Ein vollständig interaktives 3D-Asset, wie im **[!UICONTROL Vorschaumodus]** an
    | **Kamera zoomen** | Zoomen Sie mit der Kamera in Bereiche der 3D-Szene bzw. aus diesen Bereichen heraus. | Scrollen Sie mit dem Mausrad. | Ziehen Sie per Pinch mit zwei Fingern. |
    | **Kamera neu zentrieren** | Zentrieren Sie die Kamera neu auf einen Punkt an einem Objekt in der 3D-Szene. | Doppelklicken. | Doppeltippen. |
    | **Zurücksetzen** | Wählen Sie in der unteren rechten Ecke der Seite das Symbol „Zurücksetzen“, um den Zielpunkt der Ansicht wieder in die Mitte des 3D-Assets zu setzen. Durch das Zurücksetzen wird die Kamera auch näher heran oder weiter weg bewegt, um das Asset in seiner Gesamtheit und in einer angemessenen Betrachtungsgröße zu zeigen. |   |   |
-   | **Vollbildmodus** | Um in den Vollbildmodus zu gelangen, wählen Sie in der unteren rechten Ecke der Seite das Symbol „Vollbild“. |   |   |
+   | **Vollbildmodus** | Um in den Vollbildmodus zu wechseln, wählen Sie unten rechts auf der Seite das Symbol &quot;Vollbild&quot;aus. |   |   |
 
 ## Wissenswertes über die Arbeit mit der 3D-Medien-Komponente {#working-with-three-d-media-component}
 

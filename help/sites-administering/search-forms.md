@@ -1,15 +1,15 @@
 ---
 title: Konfigurieren von Suchformularen
-description: Erfahren Sie, wie Sie Search Forms konfigurieren.
+description: Erfahren Sie, wie Sie mit Search Forms die Auswahl der Sucheigenschaften anpassen können, die in den Suchbereichen verwendet werden, die in AEM Konsolen und Bedienfeldern der Autorenumgebung verfügbar sind.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '2067'
-ht-degree: 80%
+source-wordcount: '2073'
+ht-degree: 64%
 
 ---
 
@@ -18,7 +18,7 @@ ht-degree: 80%
 
 Verwendung **Forms durchsuchen** um die Auswahl der Sucheigenschaften anzupassen, die in den Suchbereichen verwendet werden, die in verschiedenen AEM Konsolen und/oder Bedienfeldern der Autorenumgebung verfügbar sind. Durch das Anpassen dieser Bedienfelder ist die Suchfunktion entsprechend Ihren spezifischen Anforderungen vielseitiger.
 
-A [Bereich der Eigenschaft](#predicates-and-their-settings)s sind standardmäßig verfügbar. Sie können mehrere Eigenschaften hinzufügen, darunter (unter anderem) das Eigenschaftsprädikat für die Suche nach Assets, die mit einer von Ihnen angegebenen Eigenschaft übereinstimmen, oder das Options-Prädikat für die Suche nach Assets, die mit einem oder mehreren Werten übereinstimmen, die Sie für eine bestimmte Eigenschaft angeben.
+A [Bereich der Eigenschaft](#predicates-and-their-settings)s sind standardmäßig verfügbar. Sie können mehrere Eigenschaften hinzufügen, darunter (unter anderem) das Eigenschaftsprädikat, um nach Assets zu suchen, die mit einer von Ihnen angegebenen Eigenschaft übereinstimmen. Oder die Options-Eigenschaft zum Suchen von Assets, die mit einem oder mehreren Werten übereinstimmen, die Sie für eine bestimmte Eigenschaft angeben.
 
 Sie können [Suchformulare konfigurieren](#configuring-your-search-forms) wird in verschiedenen Konsolen und im Asset-Browser verwendet (beim Bearbeiten von Seiten). Die [Dialogfelder zum Konfigurieren dieser Formulare](#configuring-your-search-forms) Der Zugriff erfolgt über:
 
@@ -28,7 +28,7 @@ Sie können [Suchformulare konfigurieren](#configuring-your-search-forms) wird i
 
       * **Suchformulare**
 
-Wenn Sie zum ersten Mal auf diese Konsole zugreifen, sehen Sie, dass alle Konfigurationen über ein Vorhängeschlosssymbol verfügen. Dies bedeutet, dass die entsprechende Konfiguration die Standardkonfiguration (vorkonfiguriert) ist und nicht gelöscht werden kann. Nach der Anpassung der Konfiguration verschwindet die Sperre - es sei denn, Sie [Ihre benutzerdefinierte Konfiguration löschen](#deleting-a-configuration-to-reinstate-the-default), in diesem Fall werden die Standardeinstellung (und die Sperranzeige) erneut aktiviert.
+Wenn Sie zum ersten Mal auf diese Konsole zugreifen, sehen Sie, dass alle Konfigurationen über ein Vorhängeschlosssymbol verfügen. Dies bedeutet, dass die entsprechende Konfiguration die Standardkonfiguration (vorkonfiguriert) ist und nicht gelöscht werden kann. Nachdem Sie die Konfiguration angepasst haben, wird die Sperre ausgeblendet, es sei denn, Sie [Ihre benutzerdefinierte Konfiguration löschen](#deleting-a-configuration-to-reinstate-the-default). In diesem Fall wird die Standardeinstellung (und die Sperranzeige) wieder aktiviert.
 
 ![Fenster &quot;Suchformulare&quot;](assets/chlimage_1-374.png)
 
@@ -262,7 +262,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
   </tr>
   <tr>
    <td>Bereichsoptionen </td>
-   <td>Ein spezifisches Suchprädikat für Assets und identisch mit dem allgemeinen Reglerprädikat. Ist aufgrund von Problemen mit der Abwärtskompatibilität noch verfügbar.</td>
+   <td>Ein spezifisches Suchprädikat für Assets und identisch mit dem allgemeinen Reglerprädikat. ist aufgrund von Abwärtskompatibilitätsproblemen weiterhin verfügbar.</td>
    <td>
     <ul>
      <li>Feldbezeichnung</li>
@@ -336,7 +336,7 @@ Die folgenden Prädikate stehen je nach Konfiguration zur Verfügung:
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Sie sind veraltet und nur aus Gründen der Abwärtskompatibilität verfügbar.
 >
->Diese Angaben dienen nur als Referenz. Sie dürfen `/libs` nicht verändern.
+>Diese Informationen dienen nur als Referenz. Ändern Sie nicht `/libs`.
 
 ### Prädikateinstellungen {#predicate-settings}
 
@@ -344,7 +344,7 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
 * **Feldbezeichnung**
 
-  Die Bezeichnung, die als ausblendbare Kopfzeile oder als Feldbezeichnung des Prädikats angezeigt wird.
+  Die Beschriftung, die als ausblendbare Kopfzeile oder als Feldbezeichnung des Prädikats angezeigt wird.
 
 * **Beschreibung**
 
@@ -358,7 +358,7 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
   Die Eigenschaft, nach der gesucht werden soll. Sie nutzt einen relativen Pfad und die Platzhaltersymbole `*/*/*` geben die Tiefe der Eigenschaft in Relation zum `jcr:content`-Knoten an (jeder Asterisk steht für eine Knotenebene).
 
-  Wenn Sie nur nach dem untergeordneten Knoten der ersten Ebene der Ressource suchen möchten, die die Eigenschaft `x` auf dem Knoten `jcr:content` aufweist, nutzen Sie `*/jcr:content/x`.
+  Wenn Sie nur nach einem untergeordneten Knoten der ersten Ebene der Ressource suchen möchten, die über die `x` -Eigenschaft auf `jcr:content` Knotenverwendung `*/jcr:content/x`
 
 * **Eigenschaftstiefe**
 
@@ -376,7 +376,7 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
 * **Optionspfad**
 
-  Die Benutzer können den Pfad mit dem Pfad-Browser auf der Registerkarte mit den Prädikatseinstellungen auswählen. Nach dem Auswählen können Sie mit dem Plussymbol (**+**) die Auswahl zur Liste der gültigen Optionen hinzufügen. (Entfernen lässt sich die Auswahl mit dem Minussymbol (**-**), falls erforderlich.)
+  Die Benutzer können den Pfad mit dem Pfad-Browser auf der Registerkarte mit den Prädikatseinstellungen auswählen. Nach Auswahl **+**, wird das Symbol verwendet, um die Auswahl zur Liste der gültigen Optionen hinzuzufügen (dann wird die **-** -Symbol, um es bei Bedarf zu entfernen.
 
   Die Optionen sind Inhaltsknoten, die von Benutzern erstellt werden, und weisen die folgende Struktur auf:
 
@@ -386,9 +386,10 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 
 * **Einzelauswahl** Wenn diese Option aktiviert ist, werden die Optionen als Kontrollkästchen gerendert, die nur eine Einzelauswahl zulassen. Wenn die Option versehentlich ausgewählt wurde, kann sie per Kontrollkästchen deaktiviert werden.
 
-* **Veröffentlichungs- und Live Copy-Eigenschaftsname(n)** Die Bezeichnungen für die Veröffentlichungs- und Live Copy-Kontrollkästchen für das Sites-spezifische Prädikat.
+* **Veröffentlichungs- und Live Copy-Eigenschaftsnamen**
+Die Beschriftungen für die Kontrollkästchen &quot;Veröffentlichen&quot;und &quot;Live Copy&quot;für die Sites-spezifische Eigenschaft.
 
-* Der Asterisk (&amp;ast;) bei den Feldbezeichnungen auf der Registerkarte **Einstellungen** kennzeichnet Pflichtfelder. Werden diese nicht ausgefüllt, wird eine Fehlermeldung angezeigt
+* Der &amp;ast; auf den Feldbeschriftungen im **Einstellungen** -Tab bedeutet, dass die Felder erforderlich sind. Wenn Sie das Feld leer lassen, wird eine Fehlermeldung angezeigt.
 
 ## Konfigurieren Ihrer Suchformulare {#configuring-your-search-forms}
 
@@ -413,15 +414,15 @@ Je nach Prädikat stehen mehrere Einstellungen für die Konfiguration zur Verfü
 Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definieren/aktualisieren:
 
 1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
-1. Wenn Sie ein neues Feld hinzufügen möchten, öffnen Sie die **Eigenschaft auswählen** und ziehen Sie das gewünschte Prädikat an die gewünschte Position. Beispiel: die **Datumsbereich-Eigenschaft**:
+1. Wenn Sie ein Feld hinzufügen möchten, öffnen Sie die **Eigenschaft auswählen** und ziehen Sie das gewünschte Prädikat an die gewünschte Position. Beispiel: die **Datumsbereich-Eigenschaft**:
 
    ![Suchformular bearbeiten](assets/chlimage_1-375.png)
 
 1. Der nächste Schritt hängt davon ab, was Sie tun möchten:
 
-   * Sie fügen ein neues Feld hinzu:
+   * Sie fügen ein Feld hinzu:
 
-     Nach dem Hinzufügen des Prädikats öffnet sich die Registerkarte **Einstellungen**. Dort werden die Eigenschaften angezeigt, die definiert werden können.
+     Nach dem Hinzufügen des Prädikats wird die **Einstellungen** wird geöffnet und zeigt die Eigenschaften an, die definiert werden können.
 
    * Sie aktualisieren ein vorhandenes Prädikat:
 
@@ -439,11 +440,11 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
    ![Vorschau von Suchformularen anzeigen](do-not-localize/chlimage_1-31.png)
 
-1. Daraufhin werden die Suchformulare so angezeigt, wie sie in der Suchspalte der jeweiligen Konsole (vollständig eingeblendet) zu sehen sein werden.
+1. Dadurch werden die Suchformulare so angezeigt, wie sie in der Suchspalte der entsprechenden Konsole angezeigt (vollständig erweitert) werden.
 
    ![Suchformular-Vorschau anzeigen](assets/chlimage_1-377.png)
 
-1. **Schließen** Sie die Vorschau, um zur Konfiguration zurückzukehren und sie fertigzustellen.
+1. **Schließen** die Vorschau anzeigen, damit Sie die Konfiguration wiederherstellen und abschließen können.
 
 ### Löschen eines Prädikatfelds {#deleting-a-predicate-field}
 
@@ -452,13 +453,13 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
    ![Löschsymbol](do-not-localize/chlimage_1-32.png)
 
-1. In einem Dialogfeld werden Sie dazu aufgefordert, die Löschaktion zu bestätigen.
+1. Ein Dialogfeld fordert eine Bestätigung der Löschaktion an.
 
 1. Bestätigen Sie diese und andere Änderungen mit **Fertig**.
 
 ### Löschen einer Konfiguration (zur erneuten Aktivierung des Standards) {#deleting-a-configuration-to-reinstate-the-default}
 
-Wenn Sie eine Konfiguration angepasst haben, werden die Standardwerte überschrieben. Sie können die Standardkonfiguration erneut aktivieren, indem Sie die angepasste Konfiguration löschen.
+Nachdem Sie eine Konfiguration angepasst haben, werden die Standardwerte überschrieben. Sie können die Standardkonfiguration erneut aktivieren, indem Sie Ihre angepasste Konfiguration löschen.
 
 >[!NOTE]
 >
@@ -470,17 +471,17 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
    ![Formular löschen](assets/chlimage_1-378.png)
 
-1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wird erneut aktiviert. (Sie erkennen dies am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird.)
+1. Die angepasste Konfiguration wird gelöscht und die Standardeinstellung wird wieder aktiviert (dies wird durch das Wiedersehen des Vorhängeschloss-Symbols in der Konsole angezeigt).
 
 ### Hinzufügen von Optionsprädikaten {#adding-options-predicates}
 
-Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein zu suchendes Element konfigurieren. Sie werden normalerweise genutzt, um etwas direkt unter der Seite zu suchen, z. B. eine Eigenschaft auf dem Seitenknoten.
+Mit Optionsprädikaten (Optionen, Optionseigenschaft) können Sie ein zu suchendes Element konfigurieren. Sie werden verwendet, um direkt unter der Seite nach etwas zu suchen, z. B. nach einer Eigenschaft auf dem Seitenknoten.
 
 Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstellt wird) verdeutlicht die einzelnen Schritte:
 
 1. Erstellen Sie den Knoten, der die zu suchende Eigenschaft enthält.
 
-   Sie benötigen einen Stammknoten, der die Definitionen der einzelnen Optionen umfasst, die für Benutzer verfügbar sein sollen.
+   Sie benötigen einen Stammknoten, der Definitionen der einzelnen Optionen enthält, die dem Benutzer zur Verfügung stehen sollen.
 
    Die Knoten für die einzelnen Optionen müssen die folgenden Eigenschaften aufweisen:
 
@@ -491,7 +492,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
 
    >[!NOTE]
    >
-   >Sie dürfen ***keinerlei*** Änderungen im Pfad `/libs` vornehmen,
+   >Do ***not*** Alles in der `/libs` Pfad.
    >
    >da der Inhalt von `/libs` überschrieben wird, wenn Sie die Instanz das nächste Mal aktualisieren. (Außerdem kann der Inhalt auch durch Anwenden von Hotfixes oder Feature Packs überschrieben werden.)
    >
@@ -523,7 +524,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    ![Eigenschaftspfad hinzufügen](assets/chlimage_1-380.png)
 
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
-1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die **Suche** Leiste. Die neu definierten Suchformulare werden zusammen mit den verschiedenen Optionen angezeigt. Wählen Sie die benötigte Option aus, um die Suchergebnisse anzuzeigen:
+1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die **Suche** Leiste. Die neu definierten Suchformulare sowie die verschiedenen Optionen werden angezeigt. Wählen Sie die gewünschte Option aus, damit Sie die Suchergebnisse sehen können:
 
    ![Die Endergebnisse](assets/chlimage_1-381.png)
 
