@@ -3,10 +3,9 @@ title: Erste Schritte mit der AEM-Erweiterung für PWA Studio
 description: Erfahren Sie, wie Sie mit PWA Studio ein AEM Headless Content and Commerce-Projekt bereitstellen.
 topics: Commerce
 feature: Commerce Integration Framework
-thumbnail: 37843.jpg
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
-workflow-type: ht
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 100%
 
@@ -94,15 +93,15 @@ Folgen Sie der Dokumentation zu AEM-Inhaltsfragmenten, um einen GraphQL-Endpunkt
 
 * Adobe Granite Cross-Origin Resource Sharing Policy (com.adobe.granite.cors.impl.CORSPolicyImpl)
 
-   Legen Sie die Eigenschaft `allowedorigin` auf den vollständigen Host-Namen Ihrer PWA-Anwendung fest.
+  Legen Sie die Eigenschaft `allowedorigin` auf den vollständigen Host-Namen Ihrer PWA-Anwendung fest.
 
-   Beispiel: `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Beispiel: `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling Referrer Filter (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   Setzen Sie die Eigenschaft „allow.hosts“ auf den Hostnamen Ihrer PWA-Anwendung.
+  Setzen Sie die Eigenschaft „allow.hosts“ auf den Hostnamen Ihrer PWA-Anwendung.
 
-   Beispiel: pwa-studio-test-vflyn.local.pwadev
+  Beispiel: pwa-studio-test-vflyn.local.pwadev
 
 Die vollständigen Beispiele für beide Konfigurationen finden Sie hier: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 

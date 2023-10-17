@@ -1,15 +1,10 @@
 ---
 title: Authoring
-description: Konzepte des Authoring in Adobe Experience Manager
-contentOwner: Janice Kendall
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-docset: aem65
+description: Konzepte zum Erstellen und Veröffentlichen in Adobe Experience Manager 6.5.
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '553'
 ht-degree: 31%
 
 ---
@@ -27,7 +22,7 @@ Diese interagieren und ermöglichen es Ihnen, Inhalte auf Ihrer Website verfügb
 
 Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Überprüfen dieses Inhalts, bevor er tatsächlich veröffentlicht wird.
 
-* Ein Autor erstellt und überprüft den Inhalt (dies kann mehrere Arten von Inhalten sein). z. B. Seiten, Assets, Veröffentlichungen usw.)
+* Ein Autor erstellt und überprüft den Inhalt (dies kann verschiedene Arten von Inhalten sein, z. B. Seiten, Assets, Veröffentlichungen usw.)
 * der zu einem späteren Zeitpunkt auf Ihrer Website veröffentlicht wird.
 
 ![Übersicht über Umgebungen](assets/chlimage_1-132.png)
@@ -51,11 +46,11 @@ Je nachdem, wie Ihre Instanz und Ihre persönlichen Zugriffsrechte konfiguriert 
 * Entwickeln von Kampagnen und damit zusammenhängenden Ressourcen
 * Entwickeln und Verwalten von Community-Sites
 * Verschieben, Kopieren oder Löschen von Inhaltsseiten, Assets usw.
-* Veröffentlichen (oder Rückgängigmachen der Veröffentlichung) von Seiten, Assets usw.
+* Veröffentlichen (oder Aufheben der Veröffentlichung) von Seiten, Assets usw.
 
 Außerdem gibt es administrative Aufgaben, die Ihnen bei der Verwaltung Ihrer Inhalte helfen:
 
-* Workflows, die steuern, wie Änderungen verwaltet werden; z. B. Erzwingen einer Überprüfung vor der Veröffentlichung
+* Workflows, die steuern, wie Änderungen verwaltet werden, z. B. das Erzwingen einer Überprüfung vor der Veröffentlichung
 * Projekte zur Koordinierung einzelner Aufgaben
 
 >[!NOTE]
@@ -66,7 +61,7 @@ Außerdem gibt es administrative Aufgaben, die Ihnen bei der Verwaltung Ihrer In
 
 Wenn die Inhalte der AEM-Site fertig sind, werden sie in der **Veröffentlichungsumgebung** veröffentlicht. Hier werden die Seiten der Website in Übereinstimmung mit dem Aussehen der entworfenen Oberfläche der vorgesehenen Zielgruppe bereitgestellt.
 
-Normalerweise befindet sich die Veröffentlichungsumgebung in der demilitarisierten Zone. mit anderen Worten, für das Internet verfügbar, aber nicht mehr unter dem vollen Schutz des internen Netzes.
+Normalerweise befindet sich die Veröffentlichungsumgebung innerhalb der demilitarisierten Zone, d. h. sie steht dem Internet zur Verfügung, aber nicht mehr unter dem vollen Schutz des internen Netzwerks.
 
 Wenn die AEM Site ein [Community-Site](/help/communities/overview.md)oder enthält [Communities-Komponenten](/help/communities/author-communities.md), können angemeldete Site-Besucher (Mitglieder) mit Communities-Funktionen interagieren. Sie können beispielsweise in einem Forum posten, Kommentare abgeben oder anderen Mitgliedern folgen. Mitglieder können die Erlaubnis erhalten, Aktivitäten durchzuführen, die normalerweise auf die Autorenumgebung beschränkt sind, z. B. das Erstellen neuer Seiten (Community-Gruppen), Blogartikel und das Moderieren von Beiträgen anderer Mitglieder.
 
@@ -81,7 +76,7 @@ Wenn die AEM Site ein [Community-Site](/help/communities/overview.md)oder enthä
 >  Diese Begriffe sind Synonyme für das Veröffentlichen/Rückgängigmachen der Veröffentlichung.
 >
 >* **Replizieren/Replikation**
->  Hierbei handelt es sich um technische Begriffe, die die Verschiebung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere anzeigen. d. h. beim Veröffentlichen oder beim Rückreplizieren von Benutzerkommentaren.
+>  Dies sind die technischen Begriffe, die dazu dienen, die Verschiebung von Daten (z. B. Seiteninhalt, Dateien, Code, Benutzerkommentare) von einer Umgebung in eine andere anzuzeigen, d. h. bei der Veröffentlichung oder umgekehrten Replizierung von Benutzerkommentaren.
 >
 
 #### Dispatcher {#dispatcher}

@@ -1,11 +1,11 @@
 ---
 title: Versionshinweise zu Adobe Experience Manager Content and Commerce 2021
-description: Versionshinweise zu Adobe Experience Manager Content and Commerce 2021
+description: Versionshinweise zu Adobe Experience Manager Content and Commerce 2021.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '1318'
-ht-degree: 86%
+ht-degree: 89%
 
 ---
 
@@ -13,11 +13,11 @@ ht-degree: 86%
 
 ## Übersicht über die Systemanforderungen
 
-Überprüfen Sie die Mindestanforderungen in der folgenden Tabelle für die CIF-Version, die Sie derzeit verwenden oder in Zukunft verwenden möchten.
+Überprüfen Sie die Mindestsystemanforderungen in der folgenden Tabelle für die CIF-Version, die Sie derzeit verwenden oder in Zukunft verwenden möchten.
 
 | Komponente | Systemanforderungen |
 |:-------|:-----:|
-| CIF-Add-on | Minimum: Adobe Experience Manager (AEM) 6.5.7, Adobe Commerce 2.3.5 GraphQL-Schemas |
+| CIF-Add-on | Minimum: Adobe Experience Manager (AEM) 6.5.7, Adobe Commerce 2.3.5 GraphQL-Schemata |
 | CIF-Kernkomponenten | [Systemanforderungen](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | AEM-Projektarchetyp | [Systemanforderungen](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -39,7 +39,7 @@ ht-degree: 86%
 
 * Unterstützung für Geschenkgutscheine in der AEM-Storefront
 
-## Releasedatum: Oktober 2021
+## Veröffentlichungsdatum: Oktober 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -59,7 +59,7 @@ ht-degree: 86%
 
 * AEM Storefront Venia gibt den HTTP 404-Fehler zurück, wenn keine Kategorie- oder Produktseite gefunden wird
 
-## Releasedatum: September 2021
+## Veröffentlichungsdatum: September 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -113,7 +113,7 @@ ht-degree: 86%
 
 * Fehlerbehebung für den Rohproduktzugriff für zugeordnete Produktlistenelemente
 
-## Releasedatum: Juli 2021
+## Veröffentlichungsdatum: Juli 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -130,7 +130,7 @@ ht-degree: 86%
 
 * Unterstützung für [Adobe Commerce Sensei Product Recommendation, powered by Adobe Sensei](https://business.adobe.com/de/products/magento/product-recommendations.html) in der AEM-Storefront mit vordefinierten oder direkt erstellten Empfehlungen
 
-## Releasedatum: Juni 2021
+## Veröffentlichungsdatum: Juni 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -147,7 +147,7 @@ ht-degree: 86%
 * Verbesserte SEO-freundliche URLs für Kategorieseiten
 * Unterstützung benutzerdefinierter HTTP-Header pro Website/Konfiguration
 
-## Releasedatum: Mai 2021
+## Veröffentlichungsdatum: Mai 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -165,7 +165,7 @@ ht-degree: 86%
 
 * Breadcrumb setzt Vorschaudaten in der Produktkonsole zurück.
 
-## Releasedatum: April 2021
+## Veröffentlichungsdatum: April 2021
 
 | Komponente | Version | Details |
 |:-------|:-----:|---------------------:|
@@ -185,7 +185,7 @@ ht-degree: 86%
 
 * Das Feld „Stammkategorie“ wurde auf der Registerkarte „Commerce“ in den Seiteneigenschaften von Kategorieseiten nicht angezeigt
 
-## Releasedatum: März 2021 {#what-is-new-march}
+## Veröffentlichungsdatum: März 2021 {#what-is-new-march}
 
 | GitHub | Version | Detaillierte Versionshinweise |
 |:-------|:-----:|---------------------:|
@@ -205,7 +205,7 @@ ht-degree: 86%
 
 * Mehrere Fehlerbehebungen.
 
-## Releasedatum: Februar 2021
+## Veröffentlichungsdatum: Februar 2021
 
 | GitHub | Version | Detaillierte Versionshinweise |
 |:-------|:-----:|---------------------:|
@@ -225,7 +225,7 @@ ht-degree: 86%
 
 * Mehrere Fehlerbehebungen.
 
-## Releasedatum: Januar 2021
+## Veröffentlichungsdatum: Januar 2021
 
 | GitHub | Version | Detaillierte Versionshinweise |
 |:-------|:-----:|---------------------:|

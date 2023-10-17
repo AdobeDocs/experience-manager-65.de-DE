@@ -1,15 +1,10 @@
 ---
 title: Arbeiten mit Inhaltsseitenversionen
-description: Erstellen, Vergleichen und Wiederherstellen von Versionen einer Seite
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-docset: aem65
+description: Erstellen, Vergleichen und Wiederherstellen von Versionen einer Seite in Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1501'
 ht-degree: 58%
 
 ---
@@ -19,7 +14,7 @@ ht-degree: 58%
 Durch die Versionierung wird die „Momentaufnahme“ einer Seite zu einem bestimmten Zeitpunkt festgehalten. Bei der Versionierung können Sie die folgenden Aktionen durchführen:
 
 * Erstellen Sie eine Version einer Seite.
-* Wiederherstellen einer früheren Version einer Seite; Beispiel:
+* Wiederherstellen einer früheren Version einer Seite, z. B.:
    * , um eine Änderung rückgängig zu machen, die Sie an der Seite vorgenommen haben.
 * Vergleichen der aktuellen Version einer Seite mit einer früheren Version:
    * , um Unterschiede in Text und Bildern hervorzuheben.
@@ -88,7 +83,7 @@ Nachdem Sie eine Version Ihrer Seite erstellt haben, gibt es verschiedene Method
 >
 >1. Erstellen Sie Versionen einer beliebigen Seite.
 >1. Die anfänglichen Beschriftungen und Versionsknotennamen lauten 1.0, 1.1, 1.2 usw.
->1. Reaktivieren Sie die erste Version. in diesem Fall 1.0.
+>1. Reaktivieren Sie die erste Version, in diesem Fall 1.0.
 >1. Erstellen Sie erneut Versionen.
 >1. Die generierten Bezeichnungen und Knotennamen lauten jetzt 1.0.0, 1.0.1, 1.0.2 usw.
 
@@ -126,7 +121,7 @@ Mit dieser Methode können Versionen bestimmter Seiten im aktuellen Ordner wiede
 
    ![Version wiederherstellen – Liste aller Seiten im Ordner](/help/sites-authoring/assets/versions-restore-version-01.png)
 
-1. Verwenden Sie für eine bestimmte Seite die Dropdown-Auswahl unter **WIEDERHERSTELLEN ZUR VERSION** , um die erforderliche Version für diese Seite auszuwählen.
+1. Verwenden Sie für eine bestimmte Seite die Dropdownauswahl unter **WIEDERHERSTELLEN ZUR VERSION** , um die erforderliche Version für diese Seite auszuwählen.
 
    ![Version wiederherstellen – Version auswählen](/help/sites-authoring/assets/versions-restore-version-02.png)
 
@@ -213,7 +208,7 @@ Timewarp ist ein [Modus](/help/sites-authoring/author-environment-tools.md#page-
 
 1. Starten Sie den Editor für die Seite, auf der Timewarp ausgeführt werden soll, und wählen Sie in der Modusauswahl **Timewarp** aus.
 
-   ![Wählen Sie Timewarp in der Modusauswahl aus.](assets/wwpv-01.png)
+   ![Wählen Sie Timewarp in der Modusauswahl](assets/wwpv-01.png)
 
 1. Legen Sie im Dialogfeld ein Zieldatum und eine Zielzeit fest und klicken oder tippen Sie auf **Datum festlegen**. Wenn Sie keine Zeit auswählen, wird die aktuelle Zeit als Standardzeit verwendet.
 

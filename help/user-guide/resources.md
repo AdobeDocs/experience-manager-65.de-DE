@@ -1,13 +1,11 @@
 ---
 title: AEM 6.5 – Zusätzliche Ressourcen
-seo-title: AEM 6.5 Additional Resources
-description: AEM 6.5 – Versionshinweise, Zertifizierungen und zusätzliche Ressourcen
-seo-description: AEM 6.5 release notes, certifications, and additional resources
+description: Adobe Experience Manager 6.5 - Versionshinweise, Zertifizierungen und zusätzliche Ressourcen.
 exl-id: d254d976-f547-4074-b8ad-fe4814184f30
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '91'
-ht-degree: 100%
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
+source-wordcount: '93'
+ht-degree: 90%
 
 ---
 

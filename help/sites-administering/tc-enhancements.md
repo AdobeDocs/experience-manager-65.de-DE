@@ -1,25 +1,20 @@
 ---
 title: Verbesserungen an der Übersetzung
-seo-title: Translation Enhancements
-description: Verbesserungen an der Übersetzung in AEM.
-seo-description: Translation enhancements in AEM.
-uuid: 0563603f-327b-48f1-ac14-6777c06734b9
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+description: Inkrementelle Verbesserungen und Verbesserungen bei AEM Übersetzungsmanagement-Funktionen.
 topic-tags: site-features
 content-type: reference
-discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 1be3d394283493f7c282ea4c3d794458d88e1ac3
-workflow-type: ht
-source-wordcount: '681'
-ht-degree: 100%
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
+source-wordcount: '686'
+ht-degree: 83%
 
 ---
 
 # Verbesserungen an der Übersetzung{#translation-enhancements}
 
-Diese Seite enthält inkrementelle Verbesserungen und Anpassungen für die Funktionen der AEM-Übersetzungsverwaltung.
+Auf dieser Seite werden schrittweise Verbesserungen und Verbesserungen AEM Übersetzungsmanagementfunktionen vorgestellt.
 
 ## Automatisierung von Übersetzungsprojekten {#translation-project-automation}
 
@@ -96,7 +91,7 @@ Sie können Sprach-Stämme jetzt unter Knoten gruppieren, z. B. nach Region. Di
 
 >[!CAUTION]
 >
->Hierbei ist nur eine Ebene zulässig. Im folgenden Beispiel ist es nicht zulässig, dass die „es“-Seite in eine Sprachkopie aufgelöst wird:
+>Hierbei ist nur eine Ebene zulässig. Beispielsweise lässt Folgendes nicht zu, dass die Seite &quot;es&quot;in eine Sprachkopie aufgelöst wird:
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
@@ -105,11 +100,11 @@ Sie können Sprach-Stämme jetzt unter Knoten gruppieren, z. B. nach Region. Di
 
 >[!NOTE]
 >
->Sprach-Stämme können einen beliebigen Seitennamen haben. Es muss nicht immer nur der ISO-Code der Sprache sein. AEM prüft stets zuerst den Pfad und den Namen, aber wenn der Seitenname keinen Hinweis auf eine Sprache enthält, überprüft AEM die Eigenschaft cq:language der Seite, um die Sprache zu identifizieren.
+>Sprachstämme können einen beliebigen Seitennamen haben, nicht nur den ISO-Code der Sprache. AEM prüft immer zuerst den Pfad und den Namen, aber wenn der Seitenname keine Sprache identifiziert, überprüft AEM die Eigenschaft cq:language der Seite auf die Sprachkennung.
 
-## Meldung zum Übersetzungsstatus {#translation-status-reporting}
+## Berichte zum Übersetzungsstatus {#translation-status-reporting}
 
-In der Sites-Listenansicht können Sie jetzt eine Eigenschaft auswählen, mit der angegeben wird, ob für eine Seite der Status „Übersetzt“ oder „In Übersetzung“ gilt oder ob sie noch nicht übersetzt wurde. Sie können dies wie folgt anzeigen:
+Eine Eigenschaft kann jetzt in der Sites-Listenansicht ausgewählt werden, die anzeigt, ob eine Seite übersetzt wurde, sich in der Übersetzung befindet oder noch nicht übersetzt wurde. Sie können dies wie folgt anzeigen:
 
 1. Wechseln Sie in Sites zur **Listenansicht**.
 

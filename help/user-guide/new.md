@@ -1,10 +1,10 @@
 ---
 title: Ressourcen für neue Adobe Experience Manager-Benutzende
-description: Fragen, Antworten und Ressourcen für neue Adobe Experience Manager-Benutzende
+description: Fragen, Antworten und Ressourcen für neue Adobe Experience Manager-Benutzende 6.5.
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
-workflow-type: ht
-source-wordcount: '300'
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
+source-wordcount: '301'
 ht-degree: 100%
 
 ---

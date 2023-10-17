@@ -1,19 +1,12 @@
 ---
 title: Konfigurieren des Frameworks für die Übersetzungsintegration
-seo-title: Configuring the Translation Integration Framework
-description: Erfahren Sie, wie Sie das Framework für die Übersetzungsintegration konfigurieren.
-seo-description: Learn how to configure the Translation Integration Framework.
-uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
+description: Erfahren Sie, wie Sie das Übersetzungsintegrations-Framework in Adobe Experience Manager konfigurieren.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 3d1959a1a81293b51257d99d32c9576866c8a308
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1573'
 ht-degree: 80%
 
 ---
@@ -54,7 +47,6 @@ Die folgenden Übersetzungsdienstleister bieten eine Implementierung der neuen A
 >* [AEM – Übersetzung durch Menschen](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [AEM maschinelle Übersetzung](https://www.adobe.com/go/aem-machine-translation-connectors)
 >
-
 
 Wenn Sie ein Connector-Paket installiert haben, können Sie eine Cloud-Konfiguration für den Connector erstellen. In der Regel müssen Sie Ihre Anmeldedaten für die Authentifizierung beim Übersetzungs-Service angeben. Weitere Informationen zum Hinzufügen einer Cloud-Konfiguration für den Microsoft Translator-Connector finden Sie unter [Integrieren mit Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
@@ -188,7 +180,7 @@ Asset-Eigenschaften steuern, wie Assets konfiguriert werden. Weitere Information
  </tbody>
 </table>
 
-1. Klicken oder tippen Sie in der Seitenleiste auf Tools > Vorgänge > Cloud > Cloud Services .
+1. Klicken oder tippen Sie in der Seitenleiste auf Tools > Vorgänge > Cloud > Cloud Service .
 1. Ob im Bereich &quot;Übersetzungsintegration&quot;Konfigurationen erstellt wurden, bestimmt, welcher Link angezeigt wird:
 
    * Wenn keine Konfigurationen erstellt wurden, klicken oder tippen Sie auf Jetzt konfigurieren .
@@ -217,7 +209,7 @@ Darüber hinaus steht bei allen [SCF-Komponenten](/help/communities/scf.md) von 
 Verknüpfen Sie eine Seite mit Ihrem Übersetzungsdienstleister, um die Seite und ihre untergeordneten Seiten zu übersetzen.
 
 1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und klicken oder tippen Sie auf Eigenschaften anzeigen .
-1. Klicken oder tippen Sie auf Bearbeiten und dann auf die Registerkarte Cloud Services .
+1. Klicken oder tippen Sie auf Bearbeiten und dann auf die Registerkarte Cloud Service .
 1. Klicken oder tippen Sie auf Konfiguration hinzufügen > Übersetzungsintegration .
 1. Wählen Sie den zu verwendenden Übersetzungsanbieter aus und klicken oder tippen Sie auf Fertig .
 
@@ -226,6 +218,6 @@ Verknüpfen Sie eine Seite mit Ihrem Übersetzungsdienstleister, um die Seite un
 Verknüpfen Sie eine Seite mit dem Framework für die Übersetzungsintegration, das festlegt, wie die Übersetzung der Seite und der untergeordneten Seiten durchgeführt werden soll.
 
 1. Wählen Sie in der Sites-Konsole die zu konfigurierende Seite aus und klicken oder tippen Sie auf Eigenschaften anzeigen .
-1. Klicken oder tippen Sie auf Bearbeiten und dann auf die Registerkarte Cloud Services .
+1. Klicken oder tippen Sie auf Bearbeiten und dann auf die Registerkarte Cloud Service .
 1. Klicken oder tippen Sie auf Konfiguration hinzufügen > Übersetzungsintegration .
 1. Wählen Sie das zu verwendende Framework für die Übersetzungsintegration aus und klicken oder tippen Sie auf Fertig .

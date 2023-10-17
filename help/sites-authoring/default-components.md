@@ -1,12 +1,8 @@
 ---
 title: Standardkomponenten
 description: Adobe Experience Manager verfügt über verschiedene vordefinierte Komponenten, die Website-Autoren umfangreiche Funktionen bieten.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 75%
@@ -43,7 +39,7 @@ Die Komponenten sind nach verschiedenen Kategorien (Komponentengruppen) sortiert
 
 * **We.Retail Commerce**: Enthält Commerce-Komponenten wie Einkaufswagen und Produktraster
 
-* **Allgemein**: Umfasst Layout-Container und Experience Fragment
+* **Allgemein**: Umfasst den Layout-Container und das Experience Fragment
 
 ## Übersicht über alle Komponenten {#overview-of-all-components}
 

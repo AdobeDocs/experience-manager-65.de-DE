@@ -1,17 +1,11 @@
 ---
 title: Ihr Posteingang zum Verwalten von Aufgaben
-description: Verwalten Sie Ihre Aufgaben im Posteingang.
-uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
+description: Verwalten Ihrer Aufgaben mit dem Posteingang in Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1144'
-ht-degree: 99%
+source-wordcount: '1148'
+ht-degree: 98%
 
 ---
 
@@ -203,7 +197,7 @@ Die Option „Admin-Kontrolle“ ist nur für die Mitglieder der Gruppen `admini
 
    Je nachdem, ob ein Dialogfeld, ein Assistent oder eine Dokumentationsseite geöffnet wurde, können Sie Folgendes durchführen:
 
-   * die geeigneten Maßnahmen zu bestätigen; z. B. Neu zuweisen.
+   * Bestätigen Sie die entsprechende Aktion, z. B. Neu zuweisen.
    * Die Aktion abbrechen.
    * Den Rückwärtspfeil verwenden: Wenn beispielsweise ein Aktionsassistent oder eine Dokumentationsseite geöffnet wurde, können Sie zum Posteingang zurückkehren.
 

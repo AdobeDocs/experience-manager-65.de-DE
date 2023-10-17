@@ -1,11 +1,11 @@
 ---
 title: Anwenderdefinierte HTTP-Kopfzeilen
-description: Konfigurieren anwenderdefinierter HTTP-Kopfzeilen
+description: Erfahren Sie, wie Sie benutzerdefinierte HTTP-Header in Adobe Experience Manager Commerce konfigurieren.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
-workflow-type: ht
-source-wordcount: '270'
-ht-degree: 100%
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 95%
 
 ---
 
@@ -18,6 +18,7 @@ Um mehr Kontrolle über ihr Backend zu erhalten, können Autoren anwenderdefinie
 >[!NOTE]
 >
 >Entwickler können anwenderdefinierte HTTP-Kopfzeilen jederzeit mithilfe der GraphQL-Client-Konfiguration konfigurieren.
+>
 
 ## Konfiguration {#configuration}
 

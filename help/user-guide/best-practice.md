@@ -1,11 +1,9 @@
 ---
 title: Best Practices für AEM 6.5
-seo-title: AEM 6.5 Best Practices
-description: Ressourcen für Best Practices, Problembehandlung und Schulungen für AEM 6.5
-seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
+description: Ressourcen für Best Practices, Problembehandlung und Schulungen für AEM 6.5.
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
-workflow-type: ht
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 100%
 
@@ -52,7 +50,7 @@ Microkernel dienen als Persistenz-Manager. Sie zu verstehen, ist der Schlüssel 
 
 ## Checkliste für die AEM-Sicherheit {#security-checklist}
 
-Sicherheit ist ein wichtiger Faktor bei der Installation von AEM. [Lernen Sie die verschiedenen Schritte und Maßnahmen kennen, mit denen Sie die Sicherheit Ihrer AEM-Installation gewährleisten können.](/help/sites-administering/security-checklist.md) Wenden Sie die Checkliste von oben nach unten an.
+Sicherheit ist ein wichtiger Faktor bei der Installation von AEM. [Lernen Sie die verschiedenen Schritte und Maßnahmen kennen, mit denen Sie die Sicherheit Ihrer AEM-Installation bei der Bereitstellung gewährleisten können.](/help/sites-administering/security-checklist.md) Wenden Sie die Checkliste von oben nach unten an.
 
 ## Häufig gestellte Fragen zu AEM {#faq}
 

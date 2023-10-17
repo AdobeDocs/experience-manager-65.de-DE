@@ -1,15 +1,9 @@
 ---
 title: E-Commerce-Übersicht
-seo-title: eCommerce Overview
 description: AEM generische eCommerce ist als Teil der Standardinstallation verfügbar und bietet Ihnen die volle Funktionalität des eCommerce-Frameworks.
-seo-description: AEM generic eCommerce is available as part of the standard installation and provides you with the full functionality of the eCommerce framework.
-contentOwner: Guillaume Carlino
-topic-tags: e-commerce
-content-type: reference
-docset: aem65
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 85%
@@ -25,7 +19,7 @@ Adobe bietet zwei Versionen des Commerce-Integrations-Frameworks:
 |                         | CIF On-Premise | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Unterstützte AEM-Versionen | AEM On-Premise oder AMS 6.x | AEM AMS 6.4 und 6.5 |
-| Back-End | - AEM, Java <br>- Monolithische Integration, voreingestellte Zuordnung (Vorlage)<br>- JCR-Repository | - Adobe Commerce <br>- Java und JavaScript <br>- Keine Commerce-Daten im JCR-Repository gespeichert |
+| Back-End | - AEM, Java <br>- Monolithische Integration, voreingestellte Zuordnung (Vorlage)<br>- JCR-Repository | - ADOBE COMMERCE <br>- Java und JavaScript <br>- Keine Commerce-Daten im JCR-Repository gespeichert |
 | Frontend | In AEM Server-seitig gerenderte Seiten | Gemischte Seitenanwendung (Hybrid-Rendering) |
 | Produktkatalog | - Produktimport-Tool, Editor, Zwischenspeicherung in AEM <br>- Standardkataloge mit AEM- oder Proxy-Seiten | - Kein Produktimport <br>- Generische Vorlagen <br>- On-Demand-Daten über Connector |
 | Skalierbarkeit | - Unterstützt bis zu mehrere Millionen Produkte (je nach Anwendungsfall) <br>- Zwischenspeicherung im Dispatcher | - Keine Volumenbegrenzung <br>- Zwischenspeicherung im Dispatcher oder im CDN |
