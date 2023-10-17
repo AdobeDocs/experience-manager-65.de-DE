@@ -1,19 +1,15 @@
 ---
 title: Kontextbezogene Moderation
-seo-title: In-Context Moderation
-description: So führen Sie Moderatoraktionen durch
-seo-description: How to perform moderator actions
-uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
+description: Erfahren Sie, wie Administratoren und vertrauenswürdige Community-Mitglieder Moderatoraktionen in Adobe Experience Manager Communities durchführen können.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '795'
 ht-degree: 1%
 
 ---
@@ -40,11 +36,11 @@ Die Benutzeroberfläche, die dem Moderator auf der Veröffentlichungsinstanz ang
 
 ## Beispiel {#example}
 
-Verwenden der [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) Site erstellt, wenn [Erste Schritte mit AEM Communities](getting-started.md)können Sie schnell einen Thread in einem Forum einrichten, in dem Sie verschiedene Moderationsaktivitäten in der Veröffentlichungsumgebung erleben können, wie unten dargestellt.
+Verwenden der [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) Site erstellt, wenn [Erste Schritte mit AEM Communities](getting-started.md)kann in einem Forum ein Thread eingerichtet werden, in dem verschiedene Moderationsaktivitäten in der Veröffentlichungsumgebung stattfinden. Siehe unten.
 
-Aaron McDonald (aaron.mcdonald@mailinator.com) wurde als vertrauenswürdiges Community-Mitglied identifiziert, indem er ihn bei der Erstellung der Website zur Gruppe Community-Interaktion-Moderatoren hinzufügte.
+Aaron McDonald (`aaron.mcdonald@mailinator.com`) als vertrauenswürdiges Community-Mitglied identifiziert wurde, indem er ihn bei der Erstellung der Site der Gruppe community-engage-moderators hinzugefügt hat.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) kann als Mitglied der Community-Engagement-Mitgliedergruppe hinzugefügt werden, indem die [Mitgliederkonsole](members.md).
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) kann als Mitglied der Community-engage-members-Gruppe hinzugefügt werden, indem die [Mitgliederkonsole](members.md).
 
 Weitere Informationen zu Community-Benutzergruppen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 
@@ -124,11 +120,11 @@ Hinweis:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Wählen Sie das Menüelement Administration aus, um auf [Moderationskonsole](moderation.md) aus der Veröffentlichungsumgebung.
+Wählen Sie das Menüelement Administration aus, damit Sie auf [Moderationskonsole](moderation.md) aus der Veröffentlichungsumgebung aus.
 
 Beachten Sie, dass für einen Administrator alle moderierbaren Inhalte sichtbar sind, nicht nur Inhalte von der Community-Site &quot;Geometrixx Engage&quot;.
 
-Der Suchfilter ist ein Seitenelement, das geöffnet oder geschlossen wird.
+Der Suchfilter ist ein seitliches Bedienfeld, das geöffnet oder geschlossen wird.
 
 Abmelden.
 
@@ -136,7 +132,7 @@ Abmelden.
 
 ### Community-Moderator (#2) {#community-moderator}
 
-Melden Sie sich als Aaron McDonald (aaron.mcdonal@mailinator.com) an, ein Community-Moderator, und greifen Sie auf den Thread zu, indem Sie Forum auswählen, und lesen Sie dann mehr für den Komingbird-Post.
+Melden Sie sich als Aaron McDonald (`aaron.mcdonal@mailinator.com`), einem Community-Moderator, und greifen Sie auf den Thread zu, indem Sie Forum auswählen und dann mehr über den Hummingbird-Beitrag lesen.
 
 Hinweis:
 
@@ -147,11 +143,11 @@ Hinweis:
 
 ![community-forum-moderator](assets/community-forum-moderator.png)
 
-Wählen Sie das Menüelement Administration aus, um auf [Moderationskonsole](moderation.md) aus der Veröffentlichungsumgebung.
+Wählen Sie das Menüelement Administration aus, damit Sie auf [Moderationskonsole](moderation.md) aus der Veröffentlichungsumgebung aus.
 
 Beachten Sie, dass für einen Community-Moderator nur moderierbare Inhalte von der Geometrixx Engage Community-Site angezeigt werden.
 
-Beachten Sie, dass der Community-Moderator dieselben Optionen wie der Administrator hat (Bild ist mit geschlossener Suchseitenleiste), aber keinen Zugriff auf andere AEM Konsolen hat.
+Beachten Sie, dass der Community-Moderator über dieselben Optionen wie der Administrator verfügt (Bild mit geschlossener Suchseitenleiste), aber keinen Zugriff auf andere AEM Konsolen hat.
 
 Abmelden.
 
@@ -159,7 +155,7 @@ Abmelden.
 
 ### Inhaltsautor (#1) {#content-author}
 
-Melden Sie sich als Rebekah Larsen (rebekah.larsen@mailinator.com) an, ein Community-Mitglied, das den Thread gestartet hat, und greifen Sie durch die Auswahl von Forum auf den Thread zu, und lesen Sie dann mehr für den Hummingbird-Post.
+Anmelden als Rebekah Larsen (`rebekah.larsen@mailinator.com`), ein Community-Mitglied, das den Thread gestartet hat, und auf den Thread zugreifen, indem es Forum auswählt und dann mehr über den Posting von Kolibris lesen.
 
 Hinweis:
 

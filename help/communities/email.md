@@ -1,6 +1,6 @@
 ---
 title: E-Mail konfigurieren
-description: E-Mail-Konfiguration für Communities
+description: Erfahren Sie, wie Sie E-Mail-Benachrichtigungen und -Abonnements für Adobe Experience Manager Communities konfigurieren.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '824'
 ht-degree: 6%
 
 ---
@@ -180,7 +180,7 @@ Damit die E-Mail in das Repository geladen werden kann, muss ein Abruf-Importtoo
 
 * **[!UICONTROL URL]**
 
-  *(Erforderlich)* Der ausgehende Mail-Server. Zum Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
+  *(Erforderlich)* Der ausgehende Mail-Server. Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
 * **[!UICONTROL Import in Pfad]**&amp;ast;
 
