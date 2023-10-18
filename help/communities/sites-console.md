@@ -1,6 +1,6 @@
 ---
 title: Communities Sites-Konsole
-description: Zugriff auf die Konsole "Communities-Sites"
+description: Erfahren Sie, wie Sie auf die Communities Sites-Konsole für die Erstellung, Bearbeitung und Verwaltung von Sites zugreifen können.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3089'
 ht-degree: 4%
 
 ---
@@ -22,7 +22,7 @@ Die Communities Sites-Konsole bietet Zugriff auf:
 * Site-Erstellung
 * Site-Bearbeitung
 * Site-Management
-* [Erstellen und Bearbeiten verschachtelter Gruppen](/help/communities/groups.md) (Unter-Communities)
+* [Erstellen und Bearbeiten verschachtelter Gruppen](/help/communities/groups.md) (Untergemeinschaften)
 
 Siehe [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) wo Sie erfahren können, wie schnell eine Community-Site in der Autorenumgebung erstellt werden kann und wie Sie Community-Gruppen aus der Autoren- und Veröffentlichungsumgebung erstellen.
 
@@ -49,7 +49,7 @@ Um sicherzustellen, dass die Site viele Funktionen unterstützt, empfiehlt es si
 
 ## Zugreifen auf die Communities Sites-Konsole {#accessing-communities-sites-console}
 
-Gehen Sie in der Autorenumgebung in die Konsole Communities Sites :
+Gehen Sie in der Autorenumgebung wie folgt vor, um zur Konsole Communities Sites zu gelangen:
 
 * Über die globale Navigation: **[!UICONTROL Communities]** > **[!UICONTROL Sites]**
 
@@ -106,7 +106,7 @@ Im Bereich &quot;Site-Vorlage&quot;werden der Titel, die Beschreibung, der Site-
 
    * Hängen Sie für eine gültige URL einen Basissprachcode an + &quot;.html&quot;.
 
-     *Zum Beispiel*, `https://localhost:4502/content/sites/mysight/en.html`
+     *Beispiel*, `https://localhost:4502/content/sites/mysight/en.html`
 
 * **Community-Site-Vorlage** Menü
 
@@ -116,7 +116,7 @@ Im Bereich &quot;Site-Vorlage&quot;werden der Titel, die Beschreibung, der Site-
 
 ### Schritt 2: Design {#step-design}
 
-Das Bedienfeld &quot;Design&quot;enthält zwei Unterbedienfelder zur Auswahl des Designs und des Branding-Banners:
+Das Bedienfeld &quot;Design&quot;enthält zwei Unterbereiche zur Auswahl des Designs und des Branding-Banners:
 
 #### SITE-THEMA DER GEMEINSCHAFT {#community-site-theme}
 
@@ -162,7 +162,7 @@ Das Einstellungsbedienfeld enthält mehrere Unterbedienfelder mit Funktionen, di
 >
 >**Aktivieren des Tunneldienstes**
 >
->Einige der Unterbereiche Einstellungen ermöglichen es einem vertrauenswürdigen Mitglied, UGC zu moderieren, Gruppen zu verwalten oder Kontakte für Aktivierungsressourcen in der Veröffentlichungsumgebung zu sein.
+>In mehreren Unterbereichen der Einstellungen kann ein vertrauenswürdiges Mitglied UGC moderieren, Gruppen verwalten oder Kontakte für Aktivierungsressourcen in der Veröffentlichungsumgebung sein.
 >
 >Die Konvention ist für die Veröffentlichungsseite vorgesehen. [Benutzer und Benutzergruppen](/help/communities/users.md) (Mitglieder und Mitgliedergruppen) nicht in der Autorenumgebung dupliziert werden.
 >
@@ -332,7 +332,7 @@ Wenn diese Option aktiviert ist, wird der Inhalt erst übersetzt, nachdem eine A
 
   Wählen Sie eine der folgenden Optionen aus:
 
-   * `Always show contributions in the original language` (default)
+   * `Always show contributions in the original language` (Standard)
    * `Always show contributions in user preferred language`
    * `Show contributions in user preferred language for only logged-in users`
 
@@ -475,7 +475,7 @@ Es gibt einen Hinweis, nachdem die Site erfolgreich veröffentlicht wurde.
 
 ### Veröffentlichen mit verschachtelten Gruppen {#publishing-with-nested-groups}
 
-Nach dem Veröffentlichen einer Community-Site muss jede Unter-Community (verschachtelte Gruppe) einzeln veröffentlicht werden, die mit der [Gruppenkonsole](/help/communities/groups.md).
+Nach der Veröffentlichung einer Community-Site muss jede mit der [Gruppenkonsole](/help/communities/groups.md).
 
 ## Exportieren der Site {#exporting-the-site}
 
@@ -529,7 +529,7 @@ Führen Sie zur korrekten Umleitung die folgenden Schritte aus, um sicherzustell
 
   `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
 
-  Zum Beispiel:
+  Beispiel:
   `/content/sites/engage/en/signin:/content/sites/engage/en`
 
 * Wählen Sie **Speichern** aus.

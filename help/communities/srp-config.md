@@ -1,28 +1,24 @@
 ---
 title: Speicherkonfiguration
-seo-title: Storage Configuration
-description: Zugriff auf die Speicherkonfigurationskonsole
-seo-description: How to access the Storage Configuration Console
-uuid: 6a5a71d5-6aaa-4635-8852-4dae33c497a9
+description: Erfahren Sie mehr über die Speicherkonfigurationskonsole als Möglichkeit, den für Community-Inhalte ausgewählten Speicher zu identifizieren, der auch als benutzergenerierte Inhalte bezeichnet wird.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 role: Admin
 exl-id: 67de7e26-3f93-4034-9e3a-5c127f7447bc
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '210'
 ht-degree: 4%
 
 ---
 
 # Speicherkonfiguration {#storage-configuration}
 
-Mit der Speicherkonfiguration wird der für Community-Inhalte ausgewählte Speicher identifiziert, der auch als benutzergenerierte Inhalte (UGC) bezeichnet wird.
+Die Speicherkonfiguration dient der Identifizierung des für Community-Inhalte ausgewählten Speichers, auch als benutzergenerierte Inhalte (UGC) bezeichnet.
 
-Diese Einstellung informiert den AEM Communities-Code darüber, welche Implementierung des Speicherressourcenanbieters (SRP) beim Zugriff auf UGC verwendet werden soll, und muss die bei der Bereitstellung von AEM festgelegte Topologie widerspiegeln.
+Diese Einstellung informiert den AEM Communities-Code darüber, welche Implementierung des SRP (Storage Resource Provider) beim Zugriff auf UGC verwendet wird. Sie muss die bei der Bereitstellung von Adobe Experience Manager (AEM) festgelegte Topologie widerspiegeln.
 
 Eine Diskussion der Speicheroptionen und Bereitstellungstopologien finden Sie unter:
 
@@ -50,9 +46,9 @@ So wählen Sie eine andere Speicheroption als das standardmäßige JCR aus:
 
 ### Über JCR-Speicher {#about-jcr-storage}
 
-Beachten Sie, dass bei fehlender Auswahl das AEM-Repository JCR standardmäßig verwendet wird.
+Wenn keine Auswahl getroffen wurde, ist der Standardwert das AEM-Repository, JCR.
 
-JCR ist *not* ein gemeinsamer Speicher, der von der Autoren- und Veröffentlichungsumgebung gemeinsam genutzt wird. Community-Inhalte sind nur in der Autoren- oder Veröffentlichungsumgebung sichtbar, in der sie erstellt wurden.
+JCR ist *not* ein gemeinsamer Speicher, der von der Autoren- und Veröffentlichungsumgebung freigegeben wird. Community-Inhalte sind nur in der Autoren- oder Veröffentlichungsumgebung sichtbar, in der sie erstellt wurden.
 
 Besuch [JCR-Store](jsrp.md) für weitere Informationen.
 

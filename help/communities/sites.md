@@ -1,15 +1,15 @@
 ---
 title: Site-Vorlagen
-description: Zugriff auf die Konsole "Sitevorlagen"
+description: Erfahren Sie, wie Sie auf die Konsole "Site-Vorlagen"zugreifen können, um eine Community-Site zu erstellen.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 05a944a3-adb1-47b4-b4a5-15bac91c995e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '450'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ Die Site-Vorlagenkonsole ähnelt der [Gruppenvorlagen](tools-groups.md) -Konsole
 
 ## Site-Vorlagenkonsole {#site-templates-console}
 
-Gehen Sie in der Autorenumgebung wie folgt vor, um die Konsole der Community-Sites zu erreichen:
+In der Autorenumgebung, um die Community-Sites-Konsole zu erreichen:
 
 * Über die globale Navigation: **[!UICONTROL Tools > Communities > Site-Vorlagen]**
 
@@ -72,7 +72,7 @@ Wenn Sie beispielsweise eine Homepage wünschen, ziehen Sie die Funktion Seite a
 
 Ziehen Sie weiterhin alle anderen Community-Funktionen, die für eine auf dieser Vorlage basierende Community-Site gewünscht werden, per Drag-and-Drop.
 
-Die Seitenfunktion stellt eine leere Seite bereit. Mit der Funktion Gruppen können Sie innerhalb der Community-Site eine Gruppensite (Unter-Community) erstellen.
+Die Seitenfunktion stellt eine leere Seite bereit. Mit der Funktion Gruppen können Sie innerhalb der Community-Site eine Gruppensite (Subcommunity) erstellen.
 
 >[!CAUTION]
 >

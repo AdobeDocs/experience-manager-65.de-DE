@@ -1,20 +1,16 @@
 ---
 title: Moderieren von Community-Inhalten
-seo-title: Moderating Community Content
-description: Moderationskonzepte und -aktionen
-seo-description: Moderation concepts and actions
-uuid: 5c991d3a-0037-4d78-8f91-bb62e44441fa
+description: Erfahren Sie, wie Sie benutzergenerierte Inhalte moderieren können, damit Sie positive Beiträge erkennen und negative wie Spam und missbräuchliche Sprache einschränken können.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '1515'
+source-wordcount: '1516'
 ht-degree: 3%
 
 ---
@@ -34,13 +30,13 @@ Community-Inhalte, auch als benutzergenerierte Inhalte (UGC) bezeichnet, werden 
 * [Fragen und Antworten](/help/communities/working-with-qna.md): Mitglieder erstellen eine Frage oder beantworten eine Frage.
 * [Überprüfungen](/help/communities/reviews.md): Mitglieder posten bei der Bewertung eines Elements einen Kommentar.
 
-Die Moderation der benutzergenerierten Inhalte ist nützlich, um positive Beiträge zu erkennen und negative zu begrenzen (z. B. Spam und missbräuchliche Sprache). UGC kann in verschiedenen Umgebungen moderiert werden:
+Die Moderation der benutzergenerierten Inhalte ist nützlich, um positive Beiträge zu erkennen und negative zu begrenzen (wie Spam und missbräuchliche Sprache). UGC kann in verschiedenen Umgebungen moderiert werden:
 
 * [Community-Inhaltsspeicherung](working-with-srp.md)
 
 * [Massenmoderationskonsole](moderation.md)
 
-  Auf die Moderationskonsole können Administratoren zugreifen und [Community-Moderatoren](/help/communities/users.md) in der öffentlichen Umgebung sowie von Administratoren in der Autorenumgebung. Dies ist möglich, wenn Community-Inhalte in einer [gemeinsamer Speicher](/help/communities/working-with-srp.md).
+  Auf die Moderationskonsole können Administratoren zugreifen und [Community-Moderatoren](/help/communities/users.md) in der öffentlichen Umgebung und von Administratoren in der Autorenumgebung. Dies ist möglich, wenn Community-Inhalte in einer [gemeinsamer Speicher](/help/communities/working-with-srp.md).
 
 * [Kontextbezogene Moderation](in-context.md)
 
@@ -185,19 +181,19 @@ Die Aktion Schließen/Neu öffnen kann von Administratoren oder Community-Modera
 
 Die Kennzeichnung ist eine Möglichkeit für jedes angemeldete Mitglied, mit Ausnahme des Erstellers des Inhalts, anzugeben, dass ein Problem mit dem Inhalt eines Beitrags besteht. Nach der Kennzeichnung wird ein Symbol zum Aufheben der Markierung angezeigt, wodurch dasselbe Mitglied die Kennzeichnung des Inhalts aufheben kann.
 
-Die kontextbezogene Moderation kann so konfiguriert werden, dass Mitglieder beim Kennzeichnen eines Beitrags einen Grund auswählen können. Die Liste der auswählbaren Flag-Gründe ist konfigurierbar, einschließlich der Angabe, ob ein benutzerdefinierter Grund angegeben werden kann. Der Flag-Grund wird mit der UGC gespeichert, der Grund Trigger jedoch keine bestimmte Aktion. Nur die Anzahl der Flags Trigger eine Benachrichtigung. Gekennzeichnete Inhalte werden als solche kommentiert, sodass Moderatoren darauf reagieren können.
+Die kontextbezogene Moderation kann so konfiguriert werden, dass Mitglieder beim Kennzeichnen eines Beitrags einen Grund auswählen können. Die Liste der auswählbaren Flag-Gründe ist konfigurierbar, einschließlich der Angabe, ob ein benutzerdefinierter Grund eingegeben werden kann. Der Flag-Grund wird mit der UGC gespeichert, der Grund Trigger jedoch keine bestimmte Aktion. Nur die Anzahl der Flags Trigger eine Benachrichtigung. Gekennzeichnete Inhalte werden als solche kommentiert, sodass Moderatoren darauf reagieren können.
 
-Das System verfolgt alle Kennzeichnungen, die markiert sind, und den Grund der Kennzeichnung und sendet ein Ereignis, wenn der Schwellenwert erreicht ist. Wenn die UGC von einem Community-Moderator zugelassen wird, werden diese Flags archiviert. Nach der Erlaubnis und Archivierung würden bei nachfolgenden Flaggschiffen sie so archiviert, als gäbe es keine vorherigen Flaggings.
+Das System verfolgt alle Kennzeichnungen, die markiert wurden, und den Grund für die Kennzeichnung und sendet ein Ereignis, sobald der Schwellenwert erreicht wurde. Wenn die UGC von einem Community-Moderator zugelassen wird, werden diese Flags archiviert. Nach der Erlaubnis und Archivierung würden bei nachfolgenden Flaggschiffen sie so archiviert, als gäbe es keine vorherigen Flaggings.
 
 ### Zulassen {#allow}
 
-Die Aktion Zulassen ist eine Option für benutzergenerierte Inhalte, die in einem vormoderierten System gekennzeichnet, abgelehnt oder nicht genehmigt wurde. Mit der Aktion Zulassen werden alle gekennzeichneten oder abgelehnten/Spam-Status gelöscht und alle gekennzeichneten Daten werden archiviert.
+Die Aktion &quot;Zulassen&quot;ist eine Option für benutzergenerierte Inhalte, die in einem vormoderierten System gekennzeichnet, abgelehnt oder nicht genehmigt wurde. Mit der Aktion Zulassen werden alle gekennzeichneten oder abgelehnten/Spam-Status gelöscht und alle gekennzeichneten Daten werden archiviert.
 
 ## Allgemeine Moderationskonzepte {#common-moderation-concepts}
 
 ### Vormoderation {#premoderation}
 
-Wenn UGC vormoderiert ist, wird der Beitrag erst dann auf der veröffentlichten Site angezeigt, wenn er durch eine Moderationsaktion genehmigt wurde. Während der Erstellung einer [Community-Site](/help/communities/sites-console.md), das Kontrollkästchen [Inhalt ist vormoderiert](sites-console.md#moderation) aktiviert die Vormoderation für die gesamte Site. Sobald Komponenten auf einer Seite platziert sind, können Komponenten, die Moderation unterstützen, mit einer Einstellung im Bearbeitungsdialogfeld für die Vormoderation konfiguriert werden:
+Wenn UGC vormoderiert ist, wird der Beitrag erst dann auf der veröffentlichten Site angezeigt, wenn er durch eine Moderationsaktion genehmigt wurde. Während der Erstellung einer [Community-Site](/help/communities/sites-console.md), das Kontrollkästchen [Inhalt ist vormoderiert](sites-console.md#moderation) ermöglicht die Vormoderation für die gesamte Site. Wenn Komponenten auf einer Seite platziert werden, können Komponenten, die Moderation unterstützen, mithilfe einer Einstellung im Bearbeitungsdialogfeld für die Vormoderation konfiguriert werden:
 
 * [Kommentare](comments.md) und [Bewertungen](reviews.md)
 in **[!UICONTROL Benutzermoderation]** > **[!UICONTROL Vormoderation]**.
@@ -207,11 +203,11 @@ in **[!UICONTROL Einstellungen]** > **[!UICONTROL Moderiert]**.
 
 ### Spam-Erkennung {#spam-detection}
 
-Die Spam-Erkennung ist eine Funktion der automatischen Moderation, die unerwünschte Teile gesendeter benutzergenerierter Inhalte herausfiltert, indem diese als Spam gekennzeichnet werden. Nach der Aktivierung wird anhand einer vorkonfigurierten Sammlung von Spam-Wörtern ermittelt, ob der vom Benutzer erstellte Inhalt Spam ist oder nicht. Die standardmäßigen Spam-Wörter finden Sie unter
+Die Spam-Erkennung ist eine automatische Moderationsfunktion, die unerwünschte Teile gesendeter benutzergenerierter Inhalte herausfiltert, indem sie sie als Spam markiert. Nach der Aktivierung wird anhand einer vorkonfigurierten Sammlung von Spam-Wörtern ermittelt, ob ein benutzergenerierter Inhalt Spam ist. Die standardmäßigen Spam-Wörter finden Sie unter
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Um jedoch die standardmäßigen Spam-Wörter anzupassen oder zu erweitern, erstellen Sie eine Reihe von Wörtern im Verzeichnis /apps, die der Struktur der standardmäßigen Spam-Wörter folgen, indem Sie [Overlay](/help/communities/overlay-comments.md).
+Um jedoch die standardmäßigen Spam-Wörter anzupassen oder zu erweitern, erstellen Sie einen Satz von Wörtern im Verzeichnis /apps entsprechend der Struktur der standardmäßigen Spam-Wörter mit [Overlay](/help/communities/overlay-comments.md).
 
 Ein benutzergenerierter Beitrag (über alle Inhaltstypen hinweg, z. B. Blogs, Foren und Kommentare), der Spam-Wörter enthält, wird mit dem Text &quot;Dieser Beitrag wurde als Spam klassifiziert&quot;über dem Beitrag markiert.
 
@@ -230,13 +226,13 @@ Gehen Sie wie folgt vor, um die Spamerkennungs-Engine zu aktivieren:
 
 >[!NOTE]
 >
->Die Spam-Erkennung wird nur für das englische Gebietsschema implementiert.
+>Die Spam-Erkennung wird nur für englische Gebietsschemata implementiert.
 
 ### Empfindung {#sentiment}
 
 Das Sentiment wird anhand der Anzahl positiver und negativer Suchbegriffe ([Schlagwörter](#configuringwatchwords)) in einem Beitrag vorhanden ist (UGC).
 
-Die Sentimentanalyse verwendet einen Satz vorkonfigurierter Regeln und berechnet das Sentiment der UGC. Die Standardregeln befinden sich unter: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+Die Sentimentanalyse verwendet einen Satz vorkonfigurierter Regeln und berechnet das Sentiment der UGC. Die Standardregeln befinden sich unter `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
 
 Der Wert, den die Regeln generieren, reicht von 1 (alle negativen, keine positiven Wörter) bis 10 (alle positiven, keine negativen Wörter). Der Sentimentwert 5 ist ein neutrales Sentiment und der Standardwert.
 
@@ -247,7 +243,7 @@ Die in der Komponente /libs definierten Regeln sind:
 * Regel 3: Setzen Sie den Wert auf 3, wenn es mehr negative Wörter als positive Wörter gibt.
 * Regel 4: Setzen Sie den Wert auf 8, wenn es mehr positive Wörter als negative Wörter gibt.
 
-Um Regeln zu überschreiben oder hinzuzufügen, erstellen Sie einen Regelsatz im Verzeichnis /apps entsprechend der Struktur der Standardregeln. Bearbeiten Sie die Sentimentkonfiguration, um den Speicherort der Regeln anzugeben.
+Um Regeln zu überschreiben oder hinzuzufügen, erstellen Sie einen Regelsatz im Verzeichnis /apps entsprechend der Struktur der Standardregeln. Bearbeiten Sie die Sentimentkonfiguration, damit Sie den Speicherort der Regeln identifizieren können.
 
 Nach der Analyse wird das Sentiment mit dem UGC gespeichert.
 
@@ -255,13 +251,13 @@ Aus dem [Massenmoderationskonsole](/help/communities/moderation.md)kann UGC basi
 
 #### Schlagwörter {#watchwords}
 
-AEM Communities bietet eine *Watchword-Analyse* als einen Schritt im Prozess zur Bewertung [sentiment](#sentiment). Der Beitrag zum Sentimentwert, der von Schlagwörtern bereitgestellt wird, ist auf einen Vergleich von negativen und positiven Schlagwörtern, die im veröffentlichten Inhalt verwendet werden, sowie verbotenen Wörtern zurückzuführen.
+AEM Communities bietet eine *Watchword-Analyse* als einen Schritt im Prozess zur Evaluierung [sentiment](#sentiment). Der Beitrag zum Sentimentwert, der von Schlagwörtern bereitgestellt wird, ist auf einen Vergleich von negativen und positiven Schlagwörtern, die im veröffentlichten Inhalt verwendet werden, und verbotenen Wörtern zurückzuführen.
 
 #### Konfigurieren von Sentimenten und Schlagwörtern {#configure-sentiment-and-watchwords}
 
 Die Liste positiver und negativer Schlagwörter kann wie die Sentimentregeln angepasst werden.
 
-Die Standardliste der Schlagwörter kann als Eigenschaften eines Knotens im Repository eingegeben werden, ähnlich der Standardliste oder durch Überschreiben des Standardwerts durch Konfiguration des OSGi-Dienstes `sentimentprocess.name` mit der Wortliste.
+Die Standardliste der Suchbegriffe kann als Eigenschaften eines Knotens im Repository eingegeben werden, ähnlich wie die Standardliste oder indem der Standard durch Konfiguration des OSGi-Dienstes überschrieben wird. `sentimentprocess.name` mit der Wortliste.
 
 Die **sentimentprocess.name** kann auch geändert werden, um auf den Speicherort eines benutzerdefinierten Satzes von Sentimentregeln zu verweisen.
 
@@ -270,7 +266,7 @@ So konfigurieren Sie Sentiment und Schlagwörter:
 * Melden Sie sich bei Ihrer Authoring-Instanz als Admin an.
 * Öffnen [Web-Konsole](https://localhost:4502/system/console/configMgr).
 * Suchen `sentimentprocess.name`.
-* Wählen Sie die Konfiguration aus, die im Bearbeitungsmodus geöffnet werden soll.
+* Wählen Sie die Konfiguration aus, damit Sie sie im Bearbeitungsmodus öffnen können.
 
 ![sentimentprocess](assets/sentimentprocess.png)
 
