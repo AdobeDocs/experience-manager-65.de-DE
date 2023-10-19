@@ -2,10 +2,10 @@
 title: Verwalten von Übersetzungsprojekten
 description: Erfahren Sie, wie Sie Übersetzungsprojekte in Adobe Experience Manager verwalten.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 9438868191961404e9e18cb0dd2e844985ac9db0
 workflow-type: tm+mt
 source-wordcount: '3588'
-ht-degree: 53%
+ht-degree: 68%
 
 ---
 
@@ -15,15 +15,15 @@ Nach der Vorbereitung der Inhalte für die Übersetzung müssen Sie die Sprachst
 
 Mithilfe von Übersetzungsprojekten können Sie die Übersetzung von AEM-Inhalten verwalten. Ein Übersetzungsprojekt ist ein Typ eines AEM-[Projekts](/help/sites-authoring/projects.md), das Ressourcen beinhaltet, die in andere Sprachen übersetzt werden sollen. Bei diesen Ressourcen handelt es sich um Seiten und Assets der [Sprachkopien](/help/sites-administering/tc-prep.md), die vom Sprachstamm erstellt werden.
 
-Wenn Ressourcen zu einem Übersetzungsprojekt hinzugefügt werden, wird ein Übersetzungsauftrag für sie erstellt. Aufträge beinhalten Befehle und Statusinformationen, mit denen Sie die Workflows für menschliche und maschinelle Übersetzungen, die für die Ressourcen ausgeführt werden, verwalten.
+Wenn einem Übersetzungsprojekt Ressourcen hinzugefügt werden, wird ein Übersetzungsauftrag für sie erstellt. Aufträge beinhalten Befehle und Statusinformationen, mit denen Sie die Workflows für menschliche und maschinelle Übersetzungen, die für die Ressourcen ausgeführt werden, verwalten.
 
 >[!NOTE]
 >
 >Ein Übersetzungsprojekt kann mehrere Übersetzungsaufträge enthalten.
 
-Übersetzungsprojekte sind langwierige Elemente, die durch die Sprache und Übersetzungsmethode/-anbieter definiert werden, um sie an die organisatorische Steuerung der Globalisierung anzupassen. Sie sollten einmal initiiert werden, entweder während der Erstübersetzung oder manuell, und sie sollten während der gesamten Aktivitäten zur Aktualisierung von Inhalten und Übersetzungen in Kraft bleiben.
+Übersetzungsprojekte sind langfristige Elemente, die durch Sprache und Übersetzungsmethode/-anbieter definiert werden, um sie für die Globalisierung an die organisatorische Steuerung anzupassen. Sie sollten einmal initiiert werden, entweder während der Erstübersetzung oder manuell, und dann während der gesamten Aktivitäten zur Aktualisierung von Inhalten und Übersetzungen in Kraft bleiben.
 
-Übersetzungsprojekte und Aufträge werden mit Workflows für die Übersetzungsvorbereitung erstellt. Diese Workflows umfassen drei Optionen für die Erstübersetzung (Erstellen und übersetzen) und für Aktualisierungen (Übersetzung aktualisieren):
+Übersetzungsprojekte und -aufträge werden mit Übersetzungsvorbereitungs-Workflows erstellt. Diese Workflows umfassen drei Optionen für die Erstübersetzung (Erstellen und übersetzen) und für Aktualisierungen (Übersetzung aktualisieren):
 
 1. [Neues Projekt erstellen](#creating-translation-projects-using-the-references-panel)
 1. [Zu vorhandenem Projekt hinzufügen](#adding-pages-to-a-translation-project)
@@ -35,7 +35,7 @@ Wenn Ressourcen zu einem Übersetzungsprojekt hinzugefügt werden, wird ein Übe
 
 ## Durchführen von Erstübersetzungen und Aktualisieren vorhandener Übersetzungen {#performing-initial-translations-and-updating-existing-translations}
 
-AEM erkennt, ob ein Übersetzungsprojekt für die Erstübersetzung von Inhalten oder für die Aktualisierung bereits übersetzter Sprachkopien erstellt wird. Wenn Sie ein Übersetzungsprojekt für eine Seite erstellen und die Sprachkopien angeben, für die Sie übersetzen möchten, AEM feststellen, ob die Quellseite bereits in den Zielsprachkopien vorhanden ist:
+AEM erkennt, ob ein Übersetzungsprojekt für die Erstübersetzung von Inhalten oder für die Aktualisierung bereits übersetzter Sprachkopien erstellt wird. Wenn Sie ein Übersetzungsprojekt für eine Seite erstellen und die Sprachkopien angeben, für die Sie übersetzen möchten, erkennt AEM, ob die Quellseite bereits in den Zielsprachkopien vorhanden ist:
 
 * **Die Sprachkopie enthält die Seite nicht:** AEM geht in diesem Fall von einer Erstübersetzung aus. Die Seite wird sofort in die Sprachkopie kopiert und in das Projekt aufgenommen. Wenn die übersetzte Seite in AEM importiert wird, kopiert AEM sie direkt in die Sprachkopie.
 * **Die Sprachkopie enthält bereits die Seite:** AEM geht in diesem Fall davon aus, dass die Übersetzung aktualisiert wird. Ein Launch wird erstellt und eine Kopie der Seite zum Launch hinzugefügt und in das Projekt aufgenommen. Mit Launches können Sie aktualisierte Übersetzungen überprüfen, bevor Sie sie der Sprachkopie zuweisen:
@@ -52,11 +52,11 @@ Beispielsweise wird der Sprachstamm /content/geometrixx/fr für die französisch
 
 Erstellen Sie Übersetzungsprojekte so, dass Sie den Workflow zur Übersetzung der Ressourcen Ihres Sprachstamms ausführen und verwalten können. Wenn Sie Projekte erstellen, legen Sie die Seite im Sprachstamm, die Sie übersetzen wollen, und die Sprachkopien, für die Sie die Übersetzung durchführen wollen, fest:
 
-* Die Cloud-Konfiguration des Übersetzungsintegrations-Frameworks, das mit der ausgewählten Seite verknüpft ist, bestimmt viele Eigenschaften der Übersetzungsprojekte, z. B. den zu verwendenden Übersetzungs-Workflow.
+* Die Cloud-Konfiguration des Übersetzungsintegrations-Frameworks, das mit der ausgewählten Seite verknüpft ist, bestimmt viele Eigenschaften der Übersetzungsprojekte, z. B. den zu verwendenden Übersetzungs-Workflow.
 * Für jede ausgewählte Sprachkopie wird ein Projekt erstellt.
-* Eine Kopie der ausgewählten Seite und der zugehörigen Assets werden erstellt und zu jedem Projekt hinzugefügt. Diese Kopien werden später zur Übersetzung an den Übersetzungsanbieter gesendet.
+* Es wird eine Kopie der ausgewählten Seite und der zugehörigen Assets erstellt und jedem Projekt hinzugefügt. Diese Kopien werden später zur Übersetzung an den Übersetzungsanbieter gesendet.
 
-Sie können festlegen, dass auch die untergeordneten Seiten der ausgewählten Seite ausgewählt werden. In diesem Fall werden jedem Projekt auch die Kopien der untergeordneten Seiten hinzugefügt, sodass sie übersetzt werden. Wenn alle untergeordneten Seiten mit unterschiedlichen Übersetzungsintegrations-Framework-Konfigurationen verknüpft sind, erstellt AEM weitere Projekte.
+Sie können festlegen, dass auch die untergeordneten Seiten der ausgewählten Seite ausgewählt werden sollen. In diesem Fall werden jedem Projekt auch die Kopien der untergeordneten Seiten hinzugefügt, sodass sie übersetzt werden. Wenn alle untergeordneten Seiten mit unterschiedlichen Übersetzungsintegrations-Framework-Konfigurationen verknüpft sind, erstellt AEM weitere Projekte.
 
 Sie können [Übersetzungsprojekte auch manuell erstellen](#creating-a-translation-project-using-the-projects-console).
 
@@ -66,11 +66,11 @@ Sie können [Übersetzungsprojekte auch manuell erstellen](#creating-a-translati
 
 **Erstübersetzungen und Aktualisieren von Übersetzungen**
 
-Im Bereich Verweise wird angezeigt, ob Sie vorhandene Sprachkopien aktualisieren oder die erste Version der Sprachkopien erstellen. Wenn für die ausgewählte Seite eine Sprachkopie vorhanden ist, wird die Registerkarte Sprachkopien aktualisieren angezeigt, um Zugriff auf projektbezogene Befehle zu gewähren.
+Im Bedienfeld „Verweise“ wird angezeigt, ob Sie vorhandene Sprachkopien aktualisieren oder die erste Version der Sprachkopien erstellen. Wenn für die ausgewählte Seite eine Sprachkopie vorhanden ist, wird die Registerkarte „Sprachkopien aktualisieren“ angezeigt, um Zugriff auf projektbezogene Befehle zu gewähren.
 
 ![chlimage_1-239](assets/chlimage_1-239.png)
 
-Nach dem Übersetzen können Sie [Überprüfen der Übersetzung](#reviewing-and-promoting-updated-content) bevor Sie die Sprachkopie damit überschreiben. Wenn für die ausgewählte Seite keine Sprachkopie vorhanden ist, wird die Registerkarte &quot;Erstellen und übersetzen&quot;angezeigt, um Zugriff auf projektbezogene Befehle zu gewähren.
+Nach dem Übersetzen können Sie [die Übersetzung überprüfen](#reviewing-and-promoting-updated-content), bevor Sie die Sprachkopie damit überschreiben. Wenn für die ausgewählte Seite keine Sprachkopie vorhanden ist, wird die Registerkarte „Erstellen und übersetzen“ angezeigt, um Zugriff auf projektbezogene Befehle zu gewähren.
 
 ![chlimage_1-240](assets/chlimage_1-240.png)
 
@@ -87,7 +87,7 @@ Nach dem Übersetzen können Sie [Überprüfen der Übersetzung](#reviewing-and-
 1. Wählen Sie die Option Sprachkopien und dann die Sprachkopien aus, für die Sie die Quellseiten übersetzen.
 1. Klicken oder tippen Sie auf Erstellen und übersetzen und konfigurieren Sie dann den Übersetzungsauftrag:
 
-   * Wählen Sie mithilfe des Dropdown-Menüs Sprache eine Sprachkopie aus, für die Sie eine Übersetzung durchführen möchten. Wählen Sie bei Bedarf weitere Sprachen aus. Die in der Liste angezeigten Sprachen entsprechen dem [Von Ihnen erstellte Sprachstämme](/help/sites-administering/tc-prep.md#creating-a-language-root).
+   * Wählen Sie mithilfe des Dropdown-Menüs Sprache eine Sprachkopie aus, für die Sie eine Übersetzung durchführen möchten. Wählen Sie bei Bedarf weitere Sprachen aus. Die in der Liste angezeigten Sprachen entsprechen den [von Ihnen erstellten Sprachstämmen](/help/sites-administering/tc-prep.md#creating-a-language-root).
    * Wählen Sie zur Übersetzung der von Ihnen ausgewählten Seite und allen untergeordneten Seiten die Option „Alle Unterseiten auswählen“ aus. Um nur die von Ihnen ausgewählten Seiten zu übersetzen, wählen Sie diese Option ab.
    * Wählen Sie für Projekt die Option Neues Übersetzungsprojekt erstellen aus.
    * Geben Sie einen Namen für das Projekt ein.
@@ -121,11 +121,11 @@ Nach dem Übersetzen können Sie [Überprüfen der Übersetzung](#reviewing-and-
 
 Nachdem Sie ein Übersetzungsprojekt erstellt haben, können Sie im Bereich Ressourcen Seiten zum Projekt hinzufügen. Das Hinzufügen von Seiten ist dann hilfreich, wenn Sie Seiten von verschiedenen Verzweigungen in dasselbe Projekt einfügen.
 
-Wenn Sie einem Übersetzungsprojekt Seiten hinzufügen, werden die Seiten in einen neuen Übersetzungsauftrag einbezogen. Sie können auch [Hinzufügen von Seiten zu einem vorhandenen Auftrag](#adding-pages-assets-to-a-translation-job).
+Wenn Sie einem Übersetzungsprojekt Seiten hinzufügen, werden die Seiten in einen neuen Übersetzungsauftrag einbezogen. Sie können auch [Seiten zu einem vorhandenen Auftrag hinzufügen](#adding-pages-assets-to-a-translation-job).
 
-Wie beim Erstellen eines neuen Projekts werden beim Hinzufügen von Seiten bei Bedarf Kopien der Seiten zu einem Launch hinzugefügt, um das Überschreiben vorhandener Sprachkopien zu vermeiden. (Siehe [Erstellen von Übersetzungsprojekten für bestehende Sprachkopien](#performing-initial-translations-and-updating-existing-translations).
+Wie beim Erstellen eines neuen Projekts werden beim Hinzufügen von Seiten bei Bedarf Kopien der Seiten zu einem Launch hinzugefügt, um das Überschreiben vorhandener Sprachkopien zu vermeiden. (Siehe [Erstellen von Übersetzungsprojekten für bestehende Sprachkopien](#performing-initial-translations-and-updating-existing-translations).)
 
-1. Verwenden Sie die Sites-Konsole, um die Seite auszuwählen, die Sie zum Übersetzungsprojekt hinzufügen.
+1. Verwenden Sie die Sites-Konsole, um die Seite auszuwählen, die Sie den Übersetzungsprojekten hinzufügen.
 
    Um beispielsweise die englischen Seiten der Demo-Site zu übersetzen, wählen Sie &quot;Geometrixx Demo Site&quot;> &quot;Englisch&quot;.
 
@@ -290,13 +290,13 @@ Im folgenden Verfahren wird das Fälligkeitsdatum für einen Übersetzungsauftra
 
 ## Berechnen des Umfangs eines Übersetzungsauftrags {#scoping-a-translation-job}
 
-Berechnen Sie den Umfang eines Übersetzungsauftrags, um eine Kostenschätzung für die Übersetzung von Ihrem Übersetzungsdienstleister zu erhalten. Beim Umfang eines Auftrags werden Quelldateien an den Übersetzungsanbieter gesendet, der den Text mit dem Pool gespeicherter Übersetzungen (Translation Memory) vergleicht. In der Regel handelt es sich um die Anzahl der Wörter, die übersetzt werden müssen.
+Berechnen Sie den Umfang eines Übersetzungsauftrags, um eine Kostenschätzung für die Übersetzung von Ihrem Übersetzungsdienstleister zu erhalten. Bei der Umfangsberechnung eines Auftrags werden Quelldateien an den Übersetzungsanbieter gesendet, der den Text mit seinem Pool an gespeicherten Übersetzungen (Translation Memory) vergleicht. In der Regel handelt es sich beim Umfang um die Anzahl der zu übersetzenden Wörter.
 
 Wenden Sie sich an Ihren Übersetzungsanbieter, um weitere Informationen zu den Scoping-Ergebnissen zu erhalten.
 
 >[!NOTE]
 >
->Das Scoping ist optional. Sie können einen Übersetzungsauftrag ohne Scoping starten.
+>Das Scoping ist optional. Sie können einen Übersetzungsauftrag ohne Umfangsberechnung starten.
 
 Wenn Sie den Umfang eines Übersetzungsauftrags berechnen, lautet der Status des Auftrags `Scope Requested`. Wenn der Übersetzungsanbieter die Berechnung des Umfangs übermittelt, wechselt der Status zu `Scope Completed`. Ist die Berechnung des Umfangs abgeschlossen, können Sie den Befehl Berechnung anzeigen zur Überprüfung der Ergebnisse der Umfangsberechnung verwenden.
 
@@ -433,7 +433,7 @@ Sie können ein Übersetzungsprojekt manuell erstellen, wenn Sie lieber die Proj
 
 >[!NOTE]
 >
->Um ein Projekt zu erstellen, muss Ihr Konto Mitglied der Gruppe `project-administrators` sein.
+>Um ein Projekt zu erstellen, muss Ihr Konto Mitglied der Gruppe `projects-administrators` sein.
 
 Wenn Sie ein Übersetzungsprojekt manuell erstellen, müssen Sie neben den [grundlegenden Eigenschaften](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) Werte für die folgenden übersetzungsspezifischen Eigenschaften angeben:
 

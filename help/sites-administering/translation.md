@@ -1,28 +1,19 @@
 ---
 title: Übersetzen von Inhalten für mehrsprachige Sites
-seo-title: Translating Content for Multilingual Sites
-description: Erfahren Sie mehr zur Übersetzung von Inhalten für mehrsprachige Sites.
-seo-description: Learn how to translate content for multilingual sites.
-uuid: 69b3e3a9-6773-4759-8178-aaa612e4c170
+description: Erfahren Sie, wie Sie Inhalte für mehrsprachige Sites übersetzen.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 1e0a68c5-1583-4103-9dbb-7a53faa03c06
-docset: aem65
-legacypath: /content/docs/en/aem/6-0/administer/integration/third-party-services/machine-translation
 feature: Language Copy
 exl-id: 6ccfe612-8cfd-4ca2-ad01-8e4af36d44fa
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: 3f5173c0c2b17e8cf560753088451f78c6529f5c
+workflow-type: tm+mt
 source-wordcount: '254'
-ht-degree: 100%
+ht-degree: 83%
 
 ---
 
 # Übersetzen von Inhalten für mehrsprachige Sites {#translating-content-for-multilingual-sites}
 
-Automatisieren Sie die Übersetzung von Seiteninhalten, Assets und benutzergenerierten Inhalten, um mehrsprachige Websites zu erstellen und zu pflegen. Zur Automatisierung von Übersetzungs-Workflows integrieren Sie die Übersetzungsdienstleister in AEM und erstellen Sie Projekte zur Übersetzung von Inhalten in mehrere Sprachen. AEM unterstützt Workflows für menschliche und maschinelle Übersetzungen.
+Automatisieren Sie die Übersetzung von Seiteninhalten, Assets und benutzergenerierten Inhalten, um mehrsprachige Websites zu erstellen und zu verwalten. Um Übersetzungs-Workflows zu automatisieren, integrieren Sie Übersetzungsdienstleister in AEM und erstellen Sie Projekte für die Übersetzung von Inhalten in mehrere Sprachen. AEM unterstützt Workflows für menschliche und maschinelle Übersetzungen.
 
 * Menschliche Übersetzung: Inhalte werden an Ihren Übersetzungsdienstleister gesendet und von professionellen Übersetzern übersetzt. Wenn die Inhalte übersetzt wurden, werden sie zurückgesendet und in AEM importiert. Ist Ihr Übersetzungsdienstleister in AEM integriert, werden die Inhalte automatisch von AEM an den Übersetzungsdienstleister gesendet.
 * Maschinelle Übersetzung: Der maschinelle Übersetzungs-Service übersetzt sofort Ihre Inhalte.
@@ -36,11 +27,11 @@ Die Übersetzung der Inhalte umfasst die folgenden Schritte:
 1. [Erstellen Sie Übersetzungsprojekte](/help/sites-administering/tc-manage.md), um die zu übersetzenden Inhalte zusammenzustellen und den Übersetzungsprozess vorzubereiten.
 1. Verwenden Sie die Übersetzungsprojekte, um [den Prozess zur Übersetzung der Inhalte zu verwalten](/help/sites-administering/tc-manage.md).
 
-Wenn Ihr Übersetzungsdienstleister keinen Connector für die Integration in AEM bereitstellt, unterstützt AEM auch die manuelle Extrahierung und das erneute Einfügen von Übersetzungsinhalten im XML-Format.
+Wenn Ihr Übersetzungsanbieter keinen Connector zur Integration mit AEM bereitstellt, unterstützt AEM auch die manuelle Extraktion und das erneute Einfügen von Übersetzungsinhalten im XML-Format.
 
 >[!NOTE]
 >
->Ihr Benutzer muss Mitglied der Gruppe „project-administrators“ sein, um die Sprachkopie-Funktionen zu verwenden.
+>Ihr Benutzer muss Mitglied der Gruppe projects-administrators sein, um die Sprachkopie-Funktionen verwenden zu können.
 
 ## Best Practices {#best-practices}
 

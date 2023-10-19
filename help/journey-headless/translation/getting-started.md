@@ -2,7 +2,7 @@
 title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 947b17a82f704a244e7fdc710cfa9df50c64f46b
 workflow-type: tm+mt
 source-wordcount: '1495'
 ht-degree: 99%
@@ -50,7 +50,7 @@ Bevor Sie mit der Übersetzung Ihrer Headless-AEM-Inhalte beginnen, müssen Sie 
 
 * Sandbox-Zugriff zum Testen der Übersetzung Ihrer Inhalte
 * Anmeldedaten für die Verbindung mit Ihrem bevorzugten Übersetzungs-Service
-* Mitglied der Gruppe `project-administrators` in AEM
+* Mitglied der Gruppe `projects-administrators` in AEM
 
 ## Struktur ist entscheidend {#content-structure}
 

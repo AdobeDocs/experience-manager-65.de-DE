@@ -1,16 +1,8 @@
 ---
 title: Projekte
-seo-title: Projects
 description: Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit gruppieren, deren gemeinsame Umgebung die Projektverwaltung erleichtert..
-seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
-uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: projects
-content-type: reference
-discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
-docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 98%
@@ -223,7 +215,7 @@ Alle Projekte unterstützen die folgenden Standardrollen, mit denen Sie Sicherhe
 |---|---|---|---|
 | Beobachter | Ein Benutzer mit dieser Rolle kann Projektdetails, einschließlich des Projektstatus, anzeigen. | Nur-Lese-Zugriff auf ein Projekt | `workflow-users`-Gruppe |
 | Bearbeiter | Ein Benutzer mit dieser Rolle kann Inhalt in ein Projekt hochladen und Projektinhalte bearbeiten. | Lese- und Schreibzugriff auf ein Projekt, zugehörige Metadaten und zugehörige Assets<br>Berechtigungen zum Hochladen einer Einstellungsliste, zum Fotografieren sowie zum Überprüfen und Genehmigen von Assets<br>Schreibberechtigung für `/etc/commerce`<br>Ändern der Berechtigung für ein bestimmtes Projekt | `workflow-users`-Gruppe |
-| Inhaber | Ein Benutzer mit dieser Rolle kann ein Projekt erstellen, die Arbeit an einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Verantwortlichen angezeigt und ausgeführt werden. | Schreibberechtigung für `/etc/commerce` | Die Gruppe `dam-users` soll ein Projekt erstellen können, die Gruppe <br>`project-administrators` soll ein Projekt erstellen und Assets verschieben können. |
+| Inhaber | Ein Benutzer mit dieser Rolle kann ein Projekt erstellen, die Arbeit an einem Projekt initiieren und genehmigte Assets in den Produktionsordner verschieben. Aber auch alle anderen Aufgaben im Projekt können vom Verantwortlichen angezeigt und ausgeführt werden. | Schreibberechtigung für `/etc/commerce` | Die Gruppe `dam-users` soll ein Projekt erstellen können, die Gruppe <br>`projects-administrators` soll ein Projekt erstellen und Assets verschieben können. |
 
 Für kreative Projekte stehen zusätzliche Rollen, z. B. Fotografen, zur Verfügung. Sie können diese Rollen verwenden, um auf deren Grundlage benutzerdefinierte Rollen für ein bestimmtes Projekt zu erstellen.
 
