@@ -1,29 +1,25 @@
 ---
 title: Entwickeln von Sandbox-Anwendungen
-seo-title: Develop Sandbox Application
-description: Entwickeln von Anwendungen mithilfe von Foundation-Skripten
-seo-description: Develop application using foundation scripts
-uuid: 572f68cd-9ecb-4b43-a7f8-4aa8feb6c64e
+description: Erfahren Sie, wie Sie eine Sandbox-Anwendung entwickeln, die Foundation-Skripte verwendet und die Möglichkeit bietet, das Authoring mit Communities-Komponenten zu aktivieren.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '572'
+source-wordcount: '593'
 ht-degree: 7%
 
 ---
 
 # Entwickeln von Sandbox-Anwendungen  {#develop-sandbox-application}
 
-In diesem Abschnitt wurde die Vorlage jetzt im [Erstanwendung](initial-app.md) und den in der [anfänglicher Inhalt](initial-content.md) kann die Anwendung mithilfe von Foundation-Skripten entwickelt werden, einschließlich der Möglichkeit, das Authoring mit Communities-Komponenten zu aktivieren. Am Ende dieses Abschnitts wird die Website funktionieren.
+In diesem Abschnitt wird die Vorlage jetzt im [Erstanwendung](initial-app.md) und den in der [anfänglicher Inhalt](initial-content.md) können Sie die Anwendung entwickeln. Dies geschieht mithilfe von Foundation-Skripten, die die Möglichkeit bieten, das Authoring mit Communities-Komponenten zu aktivieren. Am Ende dieses Abschnitts befindet sich eine voll funktionsfähige Website.
 
 ## Verwenden von Foundation-Seitenskripten {#using-foundation-page-scripts}
 
-Das Standardskript, das erstellt wird, wenn die Komponente, die die PayPage-Vorlage rendert, hinzugefügt wurde, wird geändert, um die head.jsp der Foundation-Seite und eine lokale body.jsp einzuschließen.
+Das Standardskript, das erstellt wird, wenn die Komponente, die die PayPage-Vorlage rendert, hinzugefügt wurde, umfasst die head.jsp der Foundation-Seite und eine lokale body.jsp.
 
 ### Superressourcentyp {#super-resource-type}
 
@@ -66,9 +62,9 @@ Verwenden von CRXDE Lite:
    %>
    ```
 
-1. Ersetzen Sie &quot; // TODO ...&quot;durch Skripte für den Kopf- und Hauptteil von &lt;html>.
+1. Da Sie Skript-Tags zum Öffnen/Schließen kennen, ersetzen Sie &quot; // TODO ...&quot;durch . `includes` von Skripten für die Kopf- und Körperteile von &lt;html>.
 
-   Mit einem Supertyp von `foundation/components/page`, wird jedes Skript, das nicht in diesem Ordner definiert ist, in ein Skript in `/apps/foundation/components/page` Ordner (sofern vorhanden), andernfalls ein Skript in `/libs/foundation/components/page` Ordner.
+   Mit einem Supertyp von `foundation/components/page`, wird jedes Skript, das nicht in diesem Ordner definiert ist, in ein Skript in aufgelöst. `/apps/foundation/components/page` Ordner (sofern vorhanden) oder ein Skript in `/libs/foundation/components/page` Ordner.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -88,7 +84,7 @@ Verwenden von CRXDE Lite:
    </html>
    ```
 
-1. Das Foundation-Skript `head.jsp` muss nicht überlagert werden, aber das Foundation-Skript `body.jsp` leer ist.
+1. Überlagern des Foundation-Skripts `head.jsp` ist nicht erforderlich, aber das Foundation-Skript `body.jsp` leer ist.
 
    So richten Sie für das Authoring eine Überlagerung ein `body.jsp` mit einem lokalen Skript und ein Absatzsystem (parsys) im Text einschließen:
 
@@ -162,13 +158,13 @@ Wählen Sie außerdem **[!UICONTROL Allgemein]** Komponenten wie
 >
 >Die für die Seitenpar aktivierten Komponenten werden im Repository als Wert der Variablen `components` -Eigenschaft der
 >
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` Knoten.
+>Knoten `/etc/designs/an-scf-sandbox/jcr:content/playpage/par`.
 
 ## Landingpage {#landing-page}
 
 In einer mehrsprachigen Umgebung würde die Stammseite ein Skript enthalten, das die Anfrage vom Client analysiert, um die bevorzugte Sprache zu bestimmen.
 
-In diesem einfachen Beispiel wird die Stammseite statisch so eingestellt, dass sie zur englischen Seite weitergeleitet wird, die in Zukunft als Haupt-Landingpage mit einem Link zur Wiedergabeseite entwickelt werden kann.
+In diesem Beispiel wird die Stammseite statisch so eingestellt, dass sie zur englischen Seite weitergeleitet wird, die in Zukunft als Haupt-Landingpage mit einem Link zur Wiedergabeseite entwickelt werden kann.
 
 Ändern Sie die Browser-URL in die Stammseite: `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
@@ -181,6 +177,6 @@ In diesem einfachen Beispiel wird die Stammseite statisch so eingestellt, dass s
 
 * Klicken Sie auf **[!UICONTROL OK]**
 
-Sobald die Site veröffentlicht wurde, wird das Browsen zur Stammseite in einer Veröffentlichungsinstanz zur englischen Seite weitergeleitet.
+Nachdem die Site veröffentlicht wurde, wird beim Navigieren zur Stammseite in einer Veröffentlichungsinstanz die englische Seite umgeleitet.
 
-Der letzte Schritt vor dem Abspielen mit den SCF-Communities-Komponenten besteht darin, einen Client Library Folder (clientlibs) hinzuzufügen ... [Hinzufügen von ClientLibs](add-clientlibs.md)
+Der letzte Schritt vor dem Abspielen mit den Communities-SCF-Komponenten besteht darin, einen Client-Bibliotheksordner (clientlibs) hinzuzufügen ... [Clientlibs hinzufügen](add-clientlibs.md)

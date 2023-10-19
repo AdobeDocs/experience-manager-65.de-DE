@@ -1,15 +1,15 @@
 ---
 title: Clientlibs für Communities-Komponenten
-description: Client-seitige Bibliotheken für Communities
+description: Erfahren Sie, wie Sie einer Seite Client-seitige Bibliotheken (clientlibs) hinzufügen, damit Sie Nutzungsdetails erfassen und Debugging-Tools für Communities-Komponenten verwenden können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '396'
 ht-degree: 2%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 2%
 
 In diesem Abschnitt der Dokumentation wird beschrieben, wie Sie clientseitige Bibliotheken (clientlibs) zu einer Seite für Communities-Komponenten hinzufügen.
 
-Grundlegende Informationen finden Sie unter :
+Grundlegende Informationen finden Sie unter folgenden Themen:
 
 * [Verwenden Client-seitiger Bibliotheken](/help/sites-developing/clientlibs.md) , das Nutzungsdetails und Debugging-Tools bereitstellt
 * [Clientlibs für SCF](/help/communities/client-customize.md#clientlibs) , die nützliche Informationen beim Anpassen von SCF-Komponenten bietet
@@ -34,11 +34,11 @@ Wenn eine [Community-Funktion](/help/communities/functions.md) für eine Funktio
 
 Wenn die erforderlichen clientlibs fehlen, [Hinzufügen einer Communities-Komponente zu einer Seite](/help/communities/author-communities.md) kann zu JavaScript-Fehlern und einem unerwarteten Erscheinungsbild führen.
 
-### Beispiel : Platzierte Prüfungen ohne Clientlibs {#example-placed-reviews-without-clientlibs}
+### Beispiel : platzierte Prüfungen ohne Clientlibs {#example-placed-reviews-without-clientlibs}
 
-![platzierte Rezensionen](assets/placed-reviews.png)
+![platzierten Reviews](assets/placed-reviews.png)
 
-### Beispiel : Platzierte Prüfungen mit Clientlibs {#example-placed-reviews-with-clientlibs}
+### Beispiel : Placed Reviews with clientlibs {#example-placed-reviews-with-clientlibs}
 
 ![review-clientlibs](assets/reviews-clientlibs.png)
 
@@ -61,7 +61,7 @@ Wenn Sie eine Communities-Komponente zu einer Seite hinzufügen möchten, müsse
 
 Verwendung [CRXDE|Lite](#using-crxde-lite) , um eine vorhandene Clientlibsliste für eine Community-Site-Seite zu ändern.
 
-So fügen Sie eine Clientlib für eine Community-Site hinzu: [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
+So fügen Sie eine clientlib für eine Community-Site hinzu mithilfe von [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md):
 
 * Navigieren Sie zu [https://&lt;server>:&lt;port>/crx/de](https://localhost:4502/crx/de).
 * Suchen Sie die `clientlibslist` -Knoten für die Seite, auf der Sie die Komponente hinzufügen möchten:
@@ -71,7 +71,7 @@ So fügen Sie eine Clientlib für eine Community-Site hinzu: [CRXDE Lite](/help/
 * Mit `clientlibslist` ausgewählter Knoten:
 
    * Suchen Sie den String .[] property `scg:requiredClientLibs`.
-   * Auswahl der `Value` , um auf das Dialogfeld String-Array zuzugreifen.
+   * Auswahl der `Value` , damit Sie auf das Dialogfeld String-Array zugreifen können.
 
       * Scrollen Sie bei Bedarf nach unten.
       * Wählen Sie + aus, um eine neue Client-Bibliothek einzugeben.

@@ -1,23 +1,23 @@
 ---
-title: Grundlagen zu Kommentaren
-description: Komponentenübersicht Kommentare
+title: Kommentare Grundlagen
+description: Erfahren Sie mehr über die Arbeit mit dem Kommentarsystem (Komponente Kommentare) und die Verwaltung des benutzergenerierten Inhalts (UGC) in Community-Mitgliedern-Beiträgen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '335'
-ht-degree: 5%
+source-wordcount: '351'
+ht-degree: 4%
 
 ---
 
-# Grundlagen zu Kommentaren {#comments-essentials}
+# Kommentare Grundlagen {#comments-essentials}
 
 Auf dieser Seite finden Sie die Grundlagen zum Arbeiten mit dem Kommentarsystem (Kommentarkomponente) und Optionen zum Verwalten des benutzergenerierten Inhalts (UGC), der erstellt wird, wenn Mitglieder Kommentare oder Antworten posten.
 
-Die Kommentarkomponente erstellt ein Kommentarsystem, bei dem jeder einzelne Beitrag durch eine Kommentarkomponente (Singular) dargestellt wird. Es ist das Kommentarsystem, das auf der Seite enthalten ist. Das Kommentarsystem erstellt die einzelnen Kommentare beim Aufrufen.
+Die Kommentarkomponente erstellt ein Kommentarsystem, bei dem jeder einzelne Beitrag durch eine Kommentarkomponente (Singular) dargestellt wird. Es ist das Kommentar-System, das auf der Seite enthalten ist. Das Kommentarsystem erstellt die einzelnen Kommentare beim Aufrufen.
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
@@ -45,7 +45,7 @@ Die Kommentarkomponente erstellt ein Kommentarsystem, bei dem jeder einzelne Bei
   </tr>
   <tr>
    <td><strong> properties</strong></td>
-   <td> Siehe <a href="comments.md">Verwenden von Kommentaren</a></td>
+   <td> Siehe <a href="comments.md">Kommentare verwenden</a></td>
   </tr>
  </tbody>
 </table>
@@ -86,13 +86,13 @@ Dies gilt für alle Komponenten, die ein Kommentarsystem erweitern.
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
+Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
 **Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
 
 Siehe:
 
 * [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
 * [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Kodierungsrichtlinien.
 * [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.

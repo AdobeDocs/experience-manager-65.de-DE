@@ -1,20 +1,16 @@
 ---
 title: Grundlagen zu Messaging
-seo-title: Messaging Essentials
-description: Übersicht über Messaging-Komponenten
-seo-description: Messaging component overview
-uuid: e0dad45e-d84d-4b28-b357-aded1c5d2605
+description: Erfahren Sie mehr über die Funktionsweise und Verwendung der Messaging-Komponente, um eine Messaging-Funktion auf einer Website hinzuzufügen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 98f70093-e786-4555-8aaa-d0df4c977dc0
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '389'
-ht-degree: 5%
+source-wordcount: '397'
+ht-degree: 3%
 
 ---
 
@@ -49,7 +45,7 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente be
    <td>Siehe <a href="/help/communities/configure-messaging.md" target="_blank">Messaging konfigurieren</a></td>
   </tr>
   <tr>
-   <td><strong>Admin-Konfiguration</strong></td>
+   <td><strong>Administratorkonfiguration</strong></td>
    <td><a href="/help/communities/messaging.md">Messaging konfigurieren</a></td>
   </tr>
  </tbody>
@@ -57,7 +53,7 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente be
 
 **Nachrichtenliste**
 
-(für Posteingang, Gesendet und Papierkorb)
+(Für Posteingang, Gesendet und Papierkorb)
 
 <table>
  <tbody>
@@ -82,7 +78,7 @@ Auf dieser Seite werden die Details zum Arbeiten mit der Messaging-Komponente be
    <td>Siehe <a href="/help/communities/configure-messaging.md" target="_blank">Messaging konfigurieren</a></td>
   </tr>
   <tr>
-   <td><strong>Admin-Konfiguration</strong></td>
+   <td><strong>Administratorkonfiguration</strong></td>
    <td><a href="/help/communities/messaging.md" target="_blank">Messaging konfigurieren</a></td>
   </tr>
  </tbody>
@@ -93,9 +89,9 @@ Siehe auch [Clientseitige Anpassungen](/help/communities/client-customize.md)
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
 * [Messaging konfigurieren](/help/communities/configure-messaging.md)
-* [Messaging-Client-APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) für SCF-Komponenten
-* [Messaging-APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) für den Dienst
-* [Messaging-Endpunkte](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
+* [Messaging-Client-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/api/package-summary.html) für SCF-Komponenten
+* [Messaging-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/api/package-summary.html) für den Dienst
+* [Messaging-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/messaging/client/endpoints/package-summary.html)
 * [Serverseitige Anpassungen](/help/communities/server-customize.md)
 
 >[!CAUTION]
@@ -107,8 +103,7 @@ Siehe auch [Clientseitige Anpassungen](/help/communities/client-customize.md)
 >
 >Beispiel:
 >
->
-```
+>```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
 >```
@@ -117,7 +112,7 @@ Siehe auch [Clientseitige Anpassungen](/help/communities/client-customize.md)
 
 Eine Community-Site-Struktur, die mithilfe des Assistenten erstellt wurde, enthält die Messaging-Funktion, falls ausgewählt. Siehe `User Management` Einstellungen von [Community-Sites-Konsole](/help/communities/sites-console.md#user-management).
 
-### Beispielcode: Benachrichtigung erhalten {#sample-code-message-received-notification}
+### Beispielcode: Nachricht erhalten Benachrichtigung {#sample-code-message-received-notification}
 
 Die Funktion Social Messaging gibt Ereignisse für Vorgänge aus, z. B. `send`, `marking read`, `marking delete`. Diese Ereignisse können erfasst und Aktionen für die im Ereignis enthaltenen Daten durchgeführt werden.
 
@@ -125,7 +120,7 @@ Das folgende Beispiel zeigt einen Ereignis-Handler, der auf die `message sent` -
 
 Zum Testen des serverseitigen Beispielskripts benötigen Sie eine Entwicklungsumgebung und die Möglichkeit, ein OSGi-Bundle zu erstellen:
 
-1. Melden Sie sich als Administrator bei ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
+1. Melden Sie sich bei ` [CRXDE|Lite](https://localhost:4502/crx/de)`.
 1. Erstellen Sie eine `bundle node`in `/apps/engage/install` mit beliebigen Namen wie:
 
    * Symbolischer Name: `com.engage.media.social.messaging.MessagingNotification`

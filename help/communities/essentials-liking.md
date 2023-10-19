@@ -1,30 +1,26 @@
 ---
 title: Gefällt mir-Grundlagen
-seo-title: Liking Essentials
-description: Übersicht über Verknüpfungskomponenten
-seo-description: Liking component overview
-uuid: 89f16859-c901-4090-8e16-363b95c508de
+description: Erfahren Sie, wie Sie die Komponente "Liking"verwenden, ein nützliches Werkzeug, mit dem Mitglieder durch Auswahl des Herzenssymbols eine positive Meinung zu bestimmten Inhalten äußern können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 exl-id: ef314385-cd5c-411c-91df-83691a81c1bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '290'
-ht-degree: 2%
+source-wordcount: '306'
+ht-degree: 1%
 
 ---
 
 # Gefällt mir-Grundlagen {#liking-essentials}
 
-Die Komponente &quot;Gefällt mir&quot;, eine [tally](tally.md) subclass ist ein nützliches Tool, mit dem Mitglieder durch die Auswahl des Herzensymbols eine positive Meinung zu einem bestimmten Inhalt äußern können.
+Die Komponente &quot;Gefällt mir&quot;, eine [tally](tally.md) subclass ist ein nützliches Tool, mit dem Mitglieder durch die Auswahl des Herzenssymbols eine positive Meinung zu einem bestimmten Inhalt äußern können.
 
-Es ist zulässig, mehrere Instanzen einer liken Komponente auf derselben Seite zu platzieren. Jede Instanz muss mit einer eindeutigen `tally name` -Eigenschaft.
+Das Platzieren mehrerer Instanzen einer liken Komponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name` -Eigenschaft.
 
-Das anonyme Posten eines &quot;Gefällt mir&quot;-Klicks wird nicht unterstützt. Besucher der Site müssen sich registrieren und sich anmelden, um an &quot;Gefällt mir&quot;-Klicks teilnehmen zu können. Der angemeldete Besucher (Mitglied) kann sich jederzeit ein- und ausschalten.
+Das anonyme Posten eines &quot;Gefällt mir&quot;-Klicks wird nicht unterstützt. Besucher der Site müssen sich registrieren und sich anmelden, um an &quot;Gefällt mir&quot;teilzunehmen. Der angemeldete Besucher (Mitglied) kann sich jederzeit ein- und ausschalten.
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
@@ -61,9 +57,9 @@ Das anonyme Posten eines &quot;Gefällt mir&quot;-Klicks wird nicht unterstützt
 
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
-* [Tally-APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
@@ -79,6 +75,6 @@ Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp
 Siehe:
 
 * [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
 * [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
 * [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Methoden für Dienstprogramme zu aktuellen SRP-Dienstprogrammmethoden.

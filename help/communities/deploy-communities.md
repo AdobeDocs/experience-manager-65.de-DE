@@ -1,15 +1,15 @@
 ---
 title: Bereitstellen von Communities
-description: Bereitstellen von AEM Communities
+description: Erfahren Sie, wie Sie Communities- und Community-Funktionen in Adobe Experience Manager bereitstellen.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1712'
 ht-degree: 4%
 
 ---
@@ -84,7 +84,7 @@ AEM 6.5 Communities GA umfasst Communities-Pakete. Weitere Informationen zu Upda
 
 Ab AEM 6.4 werden Aktualisierungen an Communities als Teil von AEM Cumulative Fix Packs und Service Packs bereitgestellt.
 
-Die neuesten Updates für AEM 6.5 finden Sie unter [Adobe Experience Manager 6.4 Cumulative Fix Packs und Service Packs](https://helpx.adobe.com/de/experience-manager/aem-releases-updates.html).
+Die neuesten Updates für AEM 6.5 finden Sie unter [Adobe Experience Manager 6.4 Cumulative Fix Packs und Service Packs](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=de).
 
 ### Versionsverlauf {#version-history}
 
@@ -132,7 +132,7 @@ Weitere Informationen zur Installation von Bundles finden Sie auf der [Web-Konso
 
 Damit die SRP-Sammlung (MSRP oder DSRP) erweiterte mehrsprachige Suche (MLS) unterstützen kann, sind zusätzlich zu einem benutzerdefinierten Schema und einer Solr-Konfiguration neue Solr-Plug-ins erforderlich. Alle erforderlichen Elemente werden in einer herunterladbaren ZIP-Datei zusammengefasst.
 
-Der erweiterte MLS-Download (auch als &quot;Phasetwo&quot;bezeichnet) ist im Adobe-Repository verfügbar:
+Der erweiterte MLS-Download (auch bekannt als `phasetwo`) ist über das Adobe-Repository verfügbar:
 
 * AEM-SOLR-MLS-phasetwo
 
@@ -298,13 +298,11 @@ Um das Schlüsselmaterial aus der Autoreninstanz in alle anderen Instanzen zu ko
 
 #### Repository-Replikation {#repository-replication}
 
-Das Schlüsselmaterial, das im Repository gespeichert ist (wie bei AEM 6.2 und früher), kann beibehalten werden. Geben Sie die folgende Systemeigenschaft beim ersten Start jeder AEM-Instanz an (wodurch das anfängliche Repository erstellt wird):
-
-* `-Dcom.adobe.granite.crypto.file.disable=true`
+Das Schlüsselmaterial, das im Repository gespeichert ist (wie bei AEM 6.2 und früher), kann beibehalten werden. Angeben der Systemeigenschaft `-Dcom.adobe.granite.crypto.file.disable=true` beim ersten Start jeder AEM Instanz (die das anfängliche Repository erstellt).
 
 >[!NOTE]
 >
->Es ist wichtig zu überprüfen, dass die Variable [Replikationsagent auf Autoreninstanz](#replication-agents-on-author) korrekt konfiguriert ist.
+>Stellen Sie sicher, dass [Replikationsagent auf Autoreninstanz](#replication-agents-on-author) korrekt konfiguriert ist.
 
 Mit dem im Repository gespeicherten Schlüsselmaterial wird der Crypto-Schlüssel vom Autor auf andere Instanzen wie folgt repliziert:
 

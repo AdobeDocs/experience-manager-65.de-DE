@@ -1,25 +1,21 @@
 ---
 title: Grundlagen zur Dateibibliothek
-seo-title: File Library Essentials
-description: Arbeiten mit der Dateibibliotheksfunktion
-seo-description: Working with the file library feature
-uuid: 0630f13e-97b4-4f93-9dce-07f559287c29
+description: Erfahren Sie mehr über die Grundlagen der Arbeit mit der Dateibibliothek-Funktion in Adobe Experience Manager Communities.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 9019b967-fff8-4dda-bc5a-fd4a3e14a4ef
 exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '256'
-ht-degree: 3%
+source-wordcount: '260'
+ht-degree: 2%
 
 ---
 
 # Grundlagen zur Dateibibliothek {#file-library-essentials}
 
-Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit der Dateibibliotheksfunktion.
+Diese Seite enthält die grundlegenden Informationen für die Arbeit mit der Dateibibliotheksfunktion.
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
@@ -56,9 +52,9 @@ Auf dieser Seite finden Sie die wichtigsten Informationen zum Arbeiten mit der D
 
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
-* [Dateibibliothek-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
+* [Dateibibliothek-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/api/package-summary.html)
 
-* [Dateibibliothek-Endpunkte](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
+* [Dateibibliothek-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/filelibrary/client/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
@@ -78,6 +74,6 @@ Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp
 Siehe:
 
 * [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
 * [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
 * [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Methoden für Dienstprogramme zu aktuellen SRP-Dienstprogrammmethoden.

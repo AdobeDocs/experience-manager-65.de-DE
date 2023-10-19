@@ -1,18 +1,14 @@
 ---
 title: Verwenden der Bewertungszusammenfassung (Anzeige)
-seo-title: Using Reviews and Reviews Summary (Display)
-description: Hinzufügen der Komponenten "Bewertungszusammenfassung"und "Bewertungszusammenfassung"zu einer Seite
-seo-description: Adding the Reviews and Reviews Summary components to a page
-uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
+description: Erfahren Sie, wie Sie die Komponenten "Bewertungszusammenfassung"und "Bewertungszusammenfassung"zu einer Seite hinzufügen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1293'
+source-wordcount: '1285'
 ht-degree: 4%
 
 ---
@@ -39,7 +35,7 @@ Wenn die Variable [erforderliche clientseitige Bibliotheken](reviews-basics.md#e
 
 ## Konfigurieren von Überprüfungen {#configuring-reviews}
 
-Auswählen der platzierten `Reviews` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Auswählen der platzierten `Reviews` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
@@ -55,9 +51,9 @@ Unter dem **[!UICONTROL Zulässige Bewertungen]** -Tab die vollständige Liste d
 
   Klicks **[!UICONTROL Element hinzufügen]** , um eine weitere Bewertungsoption hinzuzufügen.
 
-Unter dem **[!UICONTROL Erforderliche Bewertungen]** Registerkarte erneut Elemente aus der Liste der **[!UICONTROL Zulässige Bewertungen]** die bewertet werden müssen. Wenn ein Element nur auf der Registerkarte Zulässige Bewertungen angegeben wird, kann es beim Senden durch das Mitglied nicht markiert bleiben.
+Unter dem **[!UICONTROL Erforderliche Bewertungen]** Registerkarte Elemente aus der Liste **[!UICONTROL Zulässige Bewertungen]** die für die Bewertung erforderlich sind. Wenn ein Element nur auf der Registerkarte Zulässige Bewertungen angegeben wird, kann es beim Senden durch das Mitglied nicht markiert bleiben.
 
-Auf der Website sind erforderliche Bewertungen mit einem Sternchen gekennzeichnet. Wenn ein Element erforderlich ist und nicht markiert bleibt, wird dem Mitglied eine Nachricht angezeigt und die Übermittlung verweigert, bis alle erforderlichen Bewertungen markiert sind.
+Auf der Website sind erforderliche Bewertungen mit einem Sternchen gekennzeichnet. Wenn ein Element erforderlich ist und nicht markiert bleibt, wird dem Mitglied eine Nachricht angezeigt und die Übermittlung wird verweigert, bis alle erforderlichen Bewertungen markiert sind.
 
 ![required-rating](assets/configure-review2.png)
 
@@ -99,7 +95,7 @@ Unter dem **[!UICONTROL Überprüfungen]** -Registerkarte angeben, wie Überprü
 
 * **[!UICONTROL Zulässige Dateitypen]**
 
-  Nur relevant, wenn **[!UICONTROL Datei-Uploads zulassen]** aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben werden, sind nicht angegebene Dateitypen nicht zulässig. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
+  Nur relevant, wenn **[!UICONTROL Datei-Uploads zulassen]** aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, sind die nicht angegebenen nicht zulässig. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
 * **[!UICONTROL Rich-Text-Editor]**
 
@@ -155,7 +151,7 @@ So fügen Sie eine `Reviews Summary (Display)` Komponente auf einer Seite im Aut
 
 * `Communities / Reviews Summary (Display)`
 
-und ziehen Sie sie an eine Stelle auf einer Seite, auf der eine Zusammenfassung einer aktiven oder geschlossenen Überprüfung angezeigt werden soll.
+Ziehen Sie sie an eine Stelle auf einer Seite, auf der eine Zusammenfassung einer aktiven oder geschlossenen Überprüfung angezeigt werden soll.
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
@@ -169,7 +165,7 @@ Wenn die Variable [erforderliche clientseitige Bibliotheken](reviews-basics.md#e
 
 ### Konfigurieren der Bewertungszusammenfassung (Anzeige) {#configuring-reviews-summary-display}
 
-Auswählen der platzierten `Reviews Summary (Display)` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Auswählen der platzierten `Reviews Summary (Display)` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -179,21 +175,21 @@ Unter dem **[!UICONTROL Bewertungszusammenfassung]** tab
 
 * `Review Path`
 
-  die platzierte Instanz der `reviews`-Komponente zusammenfassen, z. B. wenn sie der Webseite der [Geometrixx Engage-Site,](getting-started.md) der Pfad lautet:
+  Rufen Sie die platzierte Instanz der `reviews` -Komponente, sodass Sie beispielsweise eine Zusammenfassung erstellen können, wenn Sie sie der Webseite der [Geometrixx Engage-Site,](getting-started.md) der Pfad lautet:
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-  Wenn diese Option aktiviert ist, zeigen Sie ein Balkendiagramm an, das angibt, wie viele Sternbewertungen es in den zusammengefassten Reviews gibt. Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, zeigen Sie ein Balkendiagramm an, das angibt, wie viele Sternbewertungen es in den zusammengefassten Rezensionen gibt. Die Option Standard ist deaktiviert.
 
 ### Ändern zu einem benutzerdefinierten Überprüfungstyp {#changing-to-a-custom-review-type}
 
 Die Komponente &quot;Bewertungen&quot;verwendet das Kommentarsystem.
 
-Durch Änderung des Kommentar-Ressourcentyps generiert das Kommentarsystem nicht mehr eine Instanz eines Kommentars, die standardmäßig verwendet wird, sondern eine, die von Entwicklern angepasst (erweitert) wurde.
+Durch Änderung des Kommentarressourcentyps generiert das Kommentarsystem nicht mehr eine Instanz eines Kommentars, der den Standard verwendet, sondern eine, die von Entwicklern angepasst (erweitert) wurde.
 
-Sobald die benutzerdefinierten Ressourcentypen bekannt sind, geben Sie [Designmodus](../../help/sites-authoring/default-components-designmode.md) und doppelklicken Sie auf die platzierte `Comments` -Komponente, um ein Dialogfeld mit einer zusätzlichen Registerkarte zu öffnen.
+Wenn die benutzerdefinierten Ressourcentypen bekannt sind, geben Sie [Designmodus](../../help/sites-authoring/default-components-designmode.md) und doppelklicken Sie auf die platzierte `Comments` -Komponente, um ein Dialogfeld mit einer zusätzlichen Registerkarte zu öffnen.
 
 Unter dem **[!UICONTROL Ressourcentypen]** Registerkarte den benutzerdefinierten resourceType für neue Instanzen der `Comments or Voting` Komponenten:
 
@@ -201,13 +197,13 @@ Unter dem **[!UICONTROL Ressourcentypen]** Registerkarte den benutzerdefinierten
 
 * **[!UICONTROL Kommentarressourcentyp]**
 
-  Navigieren Sie zum resourceType eines erweiterten `comment`Komponente (einzelner Kommentar) in /apps. Zum Beispiel: `/apps/social/commons/components/hbs/comments/comment`.
+  Navigieren Sie zum resourceType eines erweiterten `comment`Komponente (einzelner Kommentar) in /apps. Beispiel: `/apps/social/commons/components/hbs/comments/comment`.
 
   Diese Ressource identifiziert den resourceType des UGC, der erstellt wurde, wenn ein Besucher einen Kommentar veröffentlicht.
 
 * **[!UICONTROL Abstimmungs-Ressourcentyp]**
 
-  Navigieren Sie zum resourceType eines erweiterten `voting`-Komponente in /apps. Zum Beispiel: `/apps/social/components/hbs/voting`.
+  Navigieren Sie zum resourceType eines erweiterten `voting`-Komponente in /apps. Beispiel: `/apps/social/components/hbs/voting`.
 
   Diese Ressource identifiziert den Ressourcentyp des UGC, der erstellt wurde, wenn ein Besucher eine Stimme sendet.
 

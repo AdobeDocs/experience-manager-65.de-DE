@@ -1,18 +1,14 @@
 ---
 title: ConvertPDF-Service
-seo-title: ConvertPDF Service
-description: Mithilfe des ConvertPDF-Dienstes von AEM Forms werden PDF-Dokumente in PostScript- oder Bilddateien konvertiert.
-seo-description: Use AEM Forms ConvertPDF service to convert PDF documents to PostScript or image files.
-uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
+description: Verwenden Sie den Adobe Experience Manager Forms ConvertPDF-Dienst, um PDF-Dokumente in PostScript- oder Bilddateien zu konvertieren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 exl-id: 575bab27-d973-47fa-a0da-fa889cec6f27
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '398'
-ht-degree: 100%
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 28%
 
 ---
 
@@ -20,26 +16,26 @@ ht-degree: 100%
 
 ## Übersicht {#overview}
 
-Der Convert PDF-Dienst konvertiert PDF-Dokumente in PostScript oder Bilddateien (JPEG, JPEG 2000, PNG und TIFF). Das Konvertieren eines PDF-Dokuments in PostScript ist nützlich für die unbeaufsichtigte serverbasierte Druckausgabe auf PostScript-Druckern. Das Konvertieren eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist beim Archivieren von Dokumenten in Content Management-Systemen praktisch, die PDF-Dokumente nicht unterstützen.
+Der Convert PDF-Dienst konvertiert PDF-Dokumente in PostScript- oder Bilddateien (JPEG, JPEG 2000, PNG und TIFF). Die Konvertierung eines PDF-Dokuments in PostScript ist für den unbeaufsichtigten serverbasierten Druck auf einem beliebigen PostScript-Drucker nützlich. Das Konvertieren eines PDF-Dokuments in eine mehrseitige TIFF-Datei ist bei der Archivierung von Dokumenten in Content-Management-Systemen praktisch, die keine PDF-Dokumente unterstützen.
 
 Mit dem Convert PDF-Dienst können Sie Folgendes ausführen:
 
-* Konvertieren von PDF-Dokumenten in PostScript – Beim Konvertieren in PostScript können Sie für den Konvertierungsvorgang das Quelldokument und die PostScript-Ebene (2 oder 3) angeben. Das PDF-Dokument, das in eine PostScript-Datei konvertiert wird, muss nicht interaktiv sein.
-* Konvertieren von PDF-Dokumenten in die Bildformate JPEG, JPEG 2000, PNG und TIFF – Beim Konvertieren in diese Bildformate können Sie für den Konvertierungsvorgang das Quelldokument und eine Grafikoptionsspezifizierung angeben. Die Spezifizierung enthält verschiedene Voreinstellungen, z. B. das Bildkonvertierungsformat, die Bildauflösung und Farbumwandlung.
+* Konvertieren von PDF-Dokumenten in PostScript – Beim Konvertieren in PostScript können Sie den Konvertierungsvorgang verwenden, um das Quelldokument anzugeben und festzulegen, ob es in PostScript-Ebene 2 oder 3 konvertiert werden soll. Das PDF-Dokument, das Sie in eine PostScript-Datei konvertieren, muss nicht interaktiv sein.
+* Konvertieren Sie PDF-Dokumente in die Bildformate JPEG, JPEG 2000, PNG und TIFF. Beim Konvertieren in eines dieser Bildformate können Sie den Konvertierungsvorgang verwenden, um das Quelldokument und eine Spezifikation für Bildoptionen anzugeben. Die Spezifikation enthält verschiedene Voreinstellungen, z. B. das Bildkonvertierungsformat, die Bildauflösung und die Farbkonvertierung.
 
-## Konfigurieren der Eigenschaften des Dienstes   {#properties}
+## Eigenschaften des Dienstes konfigurieren   {#properties}
 
-Sie können den Dienst **AEMFD ConvertPDF** in AEM-Konsole verwenden, um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL der AEM-Konsole lautet `https://[host]:'port'/system/console/configMgr`.
+Sie können die **AEMFD ConvertPDF-Dienst** in AEM Console , um Eigenschaften für diesen Dienst zu konfigurieren. Die Standard-URL der AEM-Konsole lautet `https://[host]:'port'/system/console/configMgr`.
 
-## Verwendung des Dienstes {#using-the-service}
+## Verwenden des Dienstes {#using-the-service}
 
-Der ConvertPDF-Dienst stellt die folgenden APIs bereit:
+Der ConvertPDF-Dienst stellt die beiden folgenden APIs bereit:
 
 * **[toPS](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: Konvertiert ein PDF-Dokument in eine PostScript-Datei.
 
 * **[toImage](https://helpx.adobe.com/de/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Konvertiert ein PDF-Dokument in eine Bilddatei. Unterstützte Bildformate sind JPEG, JPEG2000, PNG und TIFF.
 
-### Verwenden der toPS-API mit JSP oder Servlets {#using-tops-api-with-a-jsp-or-servlets}
+### Verwenden der toPS-API mit einer JSP oder Servlets {#using-tops-api-with-a-jsp-or-servlets}
 
 ```jsp
 <%@ page import="java.util.List, java.io.File,
@@ -71,7 +67,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
  // options object to pass to toPS API
  ToPSOptionsSpec toPSOptions = new ToPSOptionsSpec();
 
- // mandatory option to pass, sets PostScript langauge
+ // mandatory option to pass, sets PostScript language
  toPSOptions.setPsLevel(PSLevel.LEVEL_3);
 
  // invoke toPS method to convert inputPDF to PostScript
@@ -83,7 +79,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### Verwenden der toImage-API mit JSPs oder Servlets {#using-toimage-api-with-a-jsp-or-servlets}
+### Verwenden der toImage-API mit einer JSP oder Servlets {#using-toimage-api-with-a-jsp-or-servlets}
 
 ```jsp
 <%@ page import="java.util.List, java.io.File,
@@ -130,13 +126,13 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### Verwenden des ConvertPDF-Dienstes mit AEM-Workflows {#using-convertpdf-service-with-aem-workflows}
+### Verwenden des ConvertPDF-Dienstes mit AEM Workflows {#using-convertpdf-service-with-aem-workflows}
 
-Die Ausführung des ConvertPDF-Dienstes über einen Workflow ist ähnlich wie die Ausführung über JSP/Servlet.
+Das Ausführen des ConvertPDF-Dienstes über einen Workflow ähnelt dem Ausführen über JSP/Servlet.
 
-Der einzige Unterschied beim Ausführen des Dienstes über JSP/Servlet liegt darin, dass das Dokumentobjekt automatisch eine Instanz des ResourceResolver-Objekts vom ResourceResolverHelper-Objekt abruft. Dieser automatische Mechanismus funktioniert nicht, wenn der Code in einem Workflow aufgerufen wird. Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Dann benutzt das Document-Objekt das bereitgestellte ResourceResolver-Objekt, um Inhalt aus dem Repository zu lesen.
+Der einzige Unterschied besteht darin, dass der Dienst von JSP/Servlet ausgeführt wird. Das Dokumentobjekt ruft automatisch eine Instanz des ResourceResolver-Objekts aus dem ResourceResolverHelper-Objekt ab. Dieser automatische Mechanismus funktioniert nicht, wenn der Code in einem Workflow aufgerufen wird. Bei einem Workflow müssen Sie ausdrücklich eine Instanz des ResourceResolver-Objekts an die Dokument-Klassen-Constructor übermitteln. Dann benutzt das Document-Objekt das bereitgestellte ResourceResolver-Objekt, um Inhalt aus dem Repository zu lesen.
 
-Der folgende Beispielworkflow-Prozess konvertiert das Eingabedokument in ein PostScript-Dokument. Der Code ist in ECMAScript geschrieben und das Dokument wird als Workflow-Nutzlast übergeben:
+Der folgende Beispiel-Workflow-Prozess konvertiert das Eingabedokument in ein PostScript-Dokument. Der Code wird in ECMAScript geschrieben und das Dokument wird als Workflow-Payload übergeben:
 
 ```javascript
 /*

@@ -1,15 +1,15 @@
 ---
 title: Forumsgrundlagen
-description: Forumsübersicht
+description: Erfahren Sie mehr über die Grundlagen der Arbeit mit der Funktion Forum in Adobe Experience Manager Communities.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '246'
-ht-degree: 2%
+source-wordcount: '259'
+ht-degree: 1%
 
 ---
 
@@ -60,20 +60,20 @@ Diese Seite enthält die wichtigsten Informationen für die Arbeit mit der Forum
 
 ### Forumsfunktion {#forum-function}
 
-Eine Community-Site-Struktur mit [Forumsfunktion](functions.md#forum-function)enthält eine konfigurierte `forum` -Komponente und Einstellungen, die sich auf Moderation, Tagging und Übersetzung auswirken.
+Eine Community-Site-Struktur mit [Forumsfunktion](functions.md#forum-function)enthält eine konfigurierte `forum` -Komponente und Einstellungen mit Auswirkungen auf Moderation, Tagging und Übersetzung.
 
 ### Zugriff auf Forumbeiträge (UGC) {#accessing-forum-posts-ugc}
 
 UGC sollte mit einer der Standardmethoden für die Moderation moderiert werden.
 Siehe [Moderieren benutzergenerierter Inhalte](moderate-ugc.md).
 
-Ab Adobe Experience Manager 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (z. B. ASRP, MSRP oder JSRP).
+Ab Adobe Experience Manager 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp.md) für UGC umfasst den programmatischen Zugriff auf UGC, unabhängig von der ausgewählten Speicheroption (wie ASRP, MSRP oder JSRP).
 
 **Speicherort und Format der UGC im Repository können ohne Warnung geändert werden**.
 
 Siehe:
 
 * [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
 * [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Kodierungsrichtlinien.
 * [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.

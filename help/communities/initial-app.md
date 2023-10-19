@@ -1,19 +1,15 @@
 ---
 title: Erste Sandbox-Anwendung
-seo-title: Initial Sandbox Application
-description: Erstellen von Vorlagen, Komponenten und Skripten
-seo-description: Create template, component, and script
-uuid: b0d03376-d8bc-4e98-aea2-a01744c64ccd
+description: Erfahren Sie, wie Sie die Inhaltsvorlage verwenden, die zum Erstellen von Inhaltsseiten verwendet wird, sowie eine Komponente und ein Skript, die zum Rendern von Website-Seiten verwendet werden.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 exl-id: cbf9ce36-53a2-4f4b-a96f-3b05743f6217
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '610'
-ht-degree: 12%
+source-wordcount: '626'
+ht-degree: 14%
 
 ---
 
@@ -26,16 +22,16 @@ In diesem Abschnitt erstellen Sie Folgendes:
 
 ## Erstellen der Inhaltsvorlage {#create-the-content-template}
 
-Eine Vorlage definiert den Standardinhalt einer neuen Seite. Bei komplexen Websites werden ggf. auch mehrere Vorlagen für die Erstellung der verschiedenen Seitentypen der Website verwendet. Darüber hinaus kann der Vorlagensatz zu einem Blueprint werden, der zum Rollout von Änderungen an einem Servercluster verwendet wird.
+Eine Vorlage definiert den Standardinhalt einer neuen Seite. Komplexe Websites können mehrere Vorlagen verwenden, um die verschiedenen Seitentypen auf der Site zu erstellen. Darüber hinaus kann der Vorlagensatz zu einem Blueprint werden, der verwendet wird, um Änderungen auf einem Servercluster durchzuführen.
 
-Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
+In dieser Übung basieren alle Seiten auf einer einfachen Vorlage.
 
-1. Im Explorer-Bereich der CRXDE Lite:
+1. Im Explorer-Bereich von CRXDE Lite:
 
-   * Wählen Sie nun eine der folgenden Optionen aus `/apps/an-scf-sandbox/templates`
+   * Klicken Sie auf `/apps/an-scf-sandbox/templates`
    * **[!UICONTROL Erstellen]** > **[!UICONTROL Vorlage erstellen]**
 
-1. Geben Sie im Dialogfeld „Vorlage erstellen“ die folgenden Werte ein und klicken Sie anschließend auf **[!UICONTROL Weiter]**:
+1. Geben Sie im Dialogfeld „Komponente erstellen“ die folgenden Eigenschaftswerte ein und klicken Sie dann auf **[!UICONTROL Weiter]**:
 
    * Bezeichnung: `playpage`
    * Titel: `An SCF Sandbox Play Template`
@@ -45,7 +41,7 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
    Der Titel wird für den Knotennamen verwendet.
 
-   Der Ressourcentyp wird auf der Seite `playpage`Der Knoten jcr:content der Eigenschaft `sling:resourceType`. Er identifiziert die Komponente (Ressource), die den Inhalt rendert, wenn sie von einem Browser angefordert wird.
+   Der Ressourcentyp wird auf der Seite `playpage`s `jcr:content` Knoten als Eigenschaft `sling:resourceType`. Er identifiziert die Komponente (Ressource), die den Inhalt rendert, wenn sie von einem Browser angefordert wird.
 
    In diesem Fall werden alle Seiten mit der Variablen `playpage` Vorlage wird von der `an-scf-sandbox/components/playpage` -Komponente. Standardmäßig ist der Pfad zur Komponente relativ, sodass Sling zuerst in der `/apps` und, falls nicht gefunden, im `/libs` Ordner.
 
@@ -57,13 +53,13 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
 1. &quot;Zulässige Pfade&quot;bezieht sich auf die Pfade von Seiten, die diese Vorlage verwenden, sodass die Vorlage für die **[!UICONTROL Neue Seite]** angezeigt.
 
-   Um einen Pfad hinzuzufügen, klicken Sie auf die Schaltfläche mit dem Pluszeichen `+` und Typ `/content(/.&ast;)?` in das angezeigte Textfeld ein. Wenn Sie Kopieren/Einfügen verwenden, stellen Sie sicher, dass keine führenden oder nachfolgenden Leerzeichen vorhanden sind.
+   Um einen Pfad hinzuzufügen, klicken Sie auf die Plusschaltfläche `+` und Typ `/content(/.&ast;)?` in das angezeigte Textfeld ein. Stellen Sie bei Verwendung von Kopieren/Einfügen sicher, dass keine führenden oder nachfolgenden Leerzeichen vorhanden sind.
 
    Hinweis: Der Wert der zulässigen Pfadeigenschaft ist ein *regulärer Ausdruck*. Inhaltsseiten mit einem Pfad, der dem Ausdruck entspricht, können die Vorlage verwenden. In diesem Fall stimmt der reguläre Ausdruck mit dem Pfad der **/content** Ordner und alle zugehörigen Unterseiten.
 
    Wenn ein Autor eine Seite unten erstellt `/content`, die `playpage` Vorlage mit dem Titel &quot;Eine SCF-Sandbox-Seitenvorlage&quot;wird in einer Liste der zu verwendenden Vorlagen angezeigt.
 
-   Nachdem die Stammseite aus der Vorlage erstellt wurde, kann der Zugriff auf die Vorlage auf diese Website beschränkt werden, indem die Eigenschaft so geändert wird, dass der Stammpfad in den regulären Ausdruck eingefügt wird, d. h.
+   Nachdem die Stammseite aus der Vorlage erstellt wurde, kann der Zugriff auf die Vorlage auf diese Website beschränkt werden, indem die Eigenschaft bearbeitet wird, um den Stammpfad in den regulären Ausdruck einzuschließen.
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
@@ -71,15 +67,15 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
 1. Klicken Sie auf **[!UICONTROL Weiter]**.
 
-   Klicken **[!UICONTROL Nächste]** im **[!UICONTROL Zugelassene übergeordnete Elemente]** Bereich.
+   Klicks **[!UICONTROL Nächste]** im **[!UICONTROL Zugelassene übergeordnete Elemente]** Bedienfeld.
 
-   Klicken **[!UICONTROL Nächste]** im **[!UICONTROL Zugelassene Kinder]** Bedienfelder.
+   Klicks **[!UICONTROL Nächste]** im **[!UICONTROL Zugelassene Kinder]** Bedienfeld.
 
    Klicken Sie auf **[!UICONTROL OK]**.
 
-1. Wenn Sie auf OK klicken und die Erstellung der Vorlage abgeschlossen haben, werden rote Dreiecke in den Ecken der Registerkarte Eigenschaften für die neue `playpage` Vorlage. Diese roten Dreiecke zeigen Bearbeitungen an, die nicht gespeichert wurden.
+1. Nachdem Sie auf OK geklickt und die Erstellung der Vorlage abgeschlossen haben, beachten Sie die roten Dreiecke, die in den Ecken der Eigenschaften -Registerkarte für die neue `playpage` Vorlage. Diese roten Dreiecke zeigen Bearbeitungen an, die nicht gespeichert wurden.
 
-   Klicken **[!UICONTROL Alle speichern]** , um die neue Vorlage im Repository zu speichern.
+   Klicks **[!UICONTROL Alle speichern]** , um die neue Vorlage im Repository zu speichern.
 
    ![verify-content-template](assets/verify-content-template.png)
 
@@ -87,7 +83,7 @@ Bei dieser Übung basieren jedoch alle Seiten auf einer einfachen Vorlage.
 
 Erstellen Sie die *component* definiert den Inhalt und rendert alle Seiten, die basierend auf der [Paketvorlage](#createthepagetemplate).
 
-1. Klicken Sie in der CRXDE Lite mit der rechten Maustaste **`/apps/an-scf-sandbox/components`** und klicken Sie auf **[!UICONTROL Erstellen > Komponente]**.
+1. Klicken Sie in CRXDE Lite mit der rechten Maustaste auf **`/apps/an-scf-sandbox/components`** und klicken Sie auf **[!UICONTROL Erstellen > Komponente]**.
 1. Durch Festlegen des Knotennamens (Beschriftung) auf *playpage*, lautet der Pfad zur Komponente
 
    `/apps/an-scf-sandbox/components/playpage`
@@ -104,7 +100,7 @@ Erstellen Sie die *component* definiert den Inhalt und rendert alle Seiten, die 
 
    ![create-template-component](assets/create-template-component.png)
 
-1. Klicken **[!UICONTROL Nächste]** bis zum **[!UICONTROL Zugelassene Kinder]** wird angezeigt:
+1. Klicks **[!UICONTROL Nächste]** bis zum **[!UICONTROL Zugelassene Kinder]** -Bereich des Dialogfelds angezeigt:
 
    * Klicken Sie auf **[!UICONTROL OK]**.
    * Klicken Sie auf **[!UICONTROL Alle speichern]**.
@@ -113,6 +109,6 @@ Erstellen Sie die *component* definiert den Inhalt und rendert alle Seiten, die 
 
    >[!CAUTION]
    >
-   >Die Korrespondenz zwischen dem Pfad zur PayPage-Komponente und der sling:resourceType-Eigenschaft der PayPal-Vorlage ist für die korrekte Funktionsweise der Website von entscheidender Bedeutung.
+   >Die Korrespondenz zwischen dem Pfad zur Paketkomponente und der `sling:resourceType` -Eigenschaft der PayPage-Vorlage ist für die korrekte Funktionsweise der Website von entscheidender Bedeutung.
 
    ![verify-template-component](assets/verify-template-component.png)

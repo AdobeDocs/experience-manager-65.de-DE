@@ -1,14 +1,14 @@
 ---
 title: Konfigurieren des Dispatchers für Communities
-description: Konfigurieren des Dispatchers für AEM Communities
+description: Erfahren Sie, wie Sie den Dispatcher für AEM Communities konfigurieren, um das ordnungsgemäße Funktionieren von Community-Sites sicherzustellen.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '653'
 ht-degree: 12%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 12%
 
 ## AEM Communities {#aem-communities}
 
-Für AEM Communities ist es erforderlich, den Dispatcher zu konfigurieren, um das ordnungsgemäße Funktionieren von [Community-Sites](overview.md#community-sites). Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie die Anmeldung über soziale Netzwerke einbezogen werden.
+Für AEM Communities ist es erforderlich, den Dispatcher zu konfigurieren, um das ordnungsgemäße Funktionieren von [Community-Sites](overview.md#community-sites). Zusätzliche Konfigurationen sind erforderlich, wenn Funktionen wie die Anmeldung über soziale Netzwerke eingeschlossen werden.
 
 So erfahren Sie, was für Ihre spezifische Implementierung und Ihr Site-Design erforderlich ist
 
@@ -89,7 +89,7 @@ Siehe auch:
 >In der [Dispatcher-Sicherheits-Checkliste](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) finden Sie weitere Aspekte, wenn der Zugriff unter Verwendung des Dispatchers eingeschränkt ist. Lesen Sie auch den Abschnitt [AEM Sicherheitscheckliste](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de) für zusätzliche Sicherheitsdetails bezüglich Ihrer AEM Installation.
 >
 
-Die folgenden Einträge sollten am Ende des /filter -Abschnitts hinzugefügt werden, insbesondere nach allen Einträgen, die verweigert werden.
+Die folgenden Einträge sollten am Ende des Abschnitts /filter hinzugefügt werden, insbesondere nach allen verweigerten Einträgen.
 
 <!-- New code wrt CQDOC-16081, changed by Vishabh on 10 Dec 2020.
 -->
@@ -271,7 +271,7 @@ Der Regelabschnitt von `dispatcher.any` definiert, welche Antworten basierend au
 
 Eine Hauptquelle für Probleme ist das Einfügen von Filterregeln, ohne die Auswirkungen auf frühere Regeln zu beachten, insbesondere wenn eine Regel hinzugefügt wird, um den Zugriff zu verweigern.
 
-Das erste Filtermuster wird häufig verwendet, um alles zu verweigern, sodass die folgenden Filter den Zugriff kontrolliert wiederherstellen. Wenn mehrere Filter auf eine Anforderung angewendet werden, ist der letzte angewendete Filter derjenige, der tatsächlich angewendet wird.
+Das erste Filtermuster wird häufig verwendet, um alles zu verweigern, sodass die folgenden Filter den Zugriff kontrolliert wiederherstellen. Wenn mehrere Filter auf eine Anforderung angewendet werden, ist der letzte angewendete Filter derselbe.
 
 ## Beispiel für dispatcher.any {#sample-dispatcher-any}
 

@@ -1,19 +1,15 @@
 ---
 title: Verwenden der Social Tag Cloud
-seo-title: Using Social Tag Cloud
-description: Hinzufügen einer Social-Tag-Cloud-Komponente zu einer Seite
-seo-description: Adding a Social Tag Cloud component to a page
-uuid: 8c400030-976c-457a-bb5f-e473909647a9
+description: Erfahren Sie, wie Sie einer Seite eine Social-Tag-Cloud-Komponente hinzufügen, mit der angemeldete Community-Mitglieder schnell Trendthemen identifizieren und getaggte Inhalte finden können.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '557'
-ht-degree: 9%
+source-wordcount: '569'
+ht-degree: 5%
 
 ---
 
@@ -21,15 +17,15 @@ ht-degree: 9%
 
 ## Einführung {#introduction}
 
-Die `Social Tag Cloud` -Komponente hebt Tags hervor, die von Community-Mitgliedern beim Posten von Inhalten angewendet werden. Es ermöglicht die Identifizierung von Trendthemen und die schnelle Suche nach getaggten Inhalten durch Site-Besucher.
+Die `Social Tag Cloud` -Komponente hebt Tags hervor, die von Community-Mitgliedern beim Posten von Inhalten angewendet werden. Es ermöglicht die Identifizierung von Trendthemen und die schnelle Auffindung von getaggten Inhalten durch Site-Besucher.
 
-Weitere Möglichkeiten zur Identifizierung aktueller Trends finden Sie unter [Aktivitätstrends](trends.md).
+Eine weitere Möglichkeit zur Identifizierung aktueller Trends finden Sie unter [Aktivitätstrends](trends.md).
 
 Diese Seite dokumentiert die `Social Tag Cloud` Einstellungen des Komponentendialogfelds und beschreibt das Benutzererlebnis.
 
 Detaillierte Informationen für Entwickler finden Sie unter [Tag-Grundlagen](tag.md).
 
-Informationen zur Erstellung und Verwaltung von Tags sowie dazu, auf welche Inhalte Tags angewendet wurden, finden Sie unter [Verwalten von Tags](../../help/sites-administering/tags.md).
+Siehe [Verwalten von Tags](../../help/sites-administering/tags.md) für Informationen zum Erstellen und Verwalten von Tags und darüber, auf welche Inhalts-Tags angewendet wurden.
 
 ## Hinzufügen einer Social Tag Cloud {#adding-a-social-tag-cloud}
 
@@ -37,13 +33,13 @@ So fügen Sie eine `Social Tag Cloud` -Komponente auf einer Seite im Autorenmodu
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](basics.md).
 
-Wenn die [erforderliche clientseitige Bibliotheken](tag.md#essentials-for-client-side) eingeschlossen sind, wird die `Social Tag Cloud` wird angezeigt:
+Wenn die Variable [erforderliche clientseitige Bibliotheken](tag.md#essentials-for-client-side) eingeschlossen sind, wird die `Social Tag Cloud` -Komponente angezeigt:
 
 ![social-tag](assets/social-tag.png)
 
 ## Konfigurieren der Social Tag Cloud {#configuring-social-tag-cloud}
 
-Wählen Sie die platzierte `Social Tag Cloud` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Auswählen der platzierten `Social Tag Cloud` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
@@ -100,12 +96,12 @@ Verwenden der **[!UICONTROL Social Tag Cloud (Design)]** Registerkarte angeben, 
 
   `Geometrixx Media: Gadgets / Cars`
 
-  Es gibt 3 Tags, die angewendet werden können:
+  Es gibt drei Tags, die angewendet werden können:
 
   `Geometrixx Media (the namespace)`, `Gadgets`, und `Cars`
 
-   * Aktiviert: Nur `Cars` wird angezeigt, falls angewendet.
-   * deaktiviert: `Geometrixx Media` und `Gadgets`sowie `Cars` wird angezeigt, falls angewendet.
+   * Aktiviert: nur `Cars` angezeigt werden, falls angewendet.
+   * deaktiviert: `Geometrixx Media`, `Gadgets`, und `Cars` angezeigt werden, falls angewendet.
 
   Ein einfaches Tag ist ein Leaf-Tag.
 
@@ -121,6 +117,6 @@ Verwenden der **[!UICONTROL Social Tag Cloud (Design)]** Registerkarte angeben, 
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Tag-Grundlagen](tag.md) für Entwickler.
+Weitere Informationen finden Sie unter [Tag-Grundlagen](tag.md) -Seite für Entwickler.
 
 Siehe [Tagging benutzergenerierter Inhalte](tag-ugc.md) (UGC) für Informationen zum Erstellen und Verwalten von Tags.

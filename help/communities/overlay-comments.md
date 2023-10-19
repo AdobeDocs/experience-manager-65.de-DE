@@ -1,19 +1,15 @@
 ---
 title: Überlagern von Communities-Komponenten
-seo-title: Overlay communities components
-description: Überlagern von Communities-Komponenten
-seo-description: Overlay communities components
-uuid: 872f7006-959a-49d2-b025-3a5abb7c6dca
+description: Erfahren Sie, wie Sie eine Standardkomponente überlagern, damit Sie das Erscheinungsbild oder Verhalten einer Komponente global ändern können, und zwar für alle relativen Verweise auf die Komponente.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 exl-id: 18376805-c2ed-439a-abc7-e9657afe8baf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -30,15 +26,15 @@ Angenommen, Sie möchten die Kommentarfunktion so ändern, dass sie mit dem Desi
 
 Um Kommentare zu überlagern, müssen Sie:
 
-1. [Kommentarseite](/help/communities/overlay-create-comments-page.md)
+1. [Seite &quot;Kommentare erstellen&quot;](/help/communities/overlay-create-comments-page.md)
 1. [Erstellen von Knoten](/help/communities/overlay-create-nodes.md)
 1. [Erscheinungsbild ändern](/help/communities/overlay-alter-appearance.md)
 
 **Überlagerungsbenachrichtigungen - E-Mails**
 
-Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen, können Sie dies tun durch [Überlagerung](/help/communities/client-customize.md#overlays) die Vorlagen unter **/libs/settings/community/templates/email/html**.
+Angenommen, Sie möchten die Nachricht von E-Mail-Benachrichtigungen anpassen, können Sie dies tun durch [Überlagerung](/help/communities/client-customize.md#overlays) die Vorlagen unter `/libs/settings/community/templates/email/html`.
 
-Um beispielsweise die Erwähnungen der E-Mail-Benachrichtigungen zu ändern (für eine bestimmte Communities-Komponente, in der ugc erstellt wird), fügen Sie eine **if** Bedingung für Verb **mention** in den Vorlagen der Komponenten, für die Sie die **@mentions** unterstützen.
+Angenommen, Sie möchten die Benachrichtigungsinhalte zu Erwähnungen bearbeiten (für eine bestimmte Communities-Komponente, in der UGC erstellt wird). Fügen Sie in diesem Fall eine **if** Bedingung für Verb **mention** in den Vorlagen der Komponenten, für die Sie die **@mentions** unterstützen.
 
 ```java
 {{#equals this.verb "mention"}}\

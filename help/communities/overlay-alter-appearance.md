@@ -1,17 +1,15 @@
 ---
 title: Erscheinungsbild ändern
-description: Skript ändern
-uuid: 30555b9f-da29-4115-9ed5-25f80a247bd6
+description: Erfahren Sie, wie Sie das Skript comment.hbs bearbeiten, das für die Erstellung der gesamten HTML für jeden Kommentar in Adobe Experience Manager Communities verantwortlich ist.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: c9d31ed8-c105-453b-bd3c-4660dfd81272
 docset: aem65
 exl-id: cb8f6967-216c-46d3-a7ba-068b0f5e3b94
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '236'
 ht-degree: 1%
 
 ---
@@ -20,7 +18,7 @@ ht-degree: 1%
 
 ## Skript ändern {#modify-the-script}
 
-Das Skript comment.hbs ist für die Erstellung der gesamten HTML für jeden Kommentar verantwortlich.
+Die `comment.hbs` -Skript ist für die Erstellung der gesamten HTML für jeden Kommentar verantwortlich.
 
 So zeigen Sie den Avatar nicht neben jedem veröffentlichten Kommentar an:
 
@@ -59,9 +57,9 @@ Pushen Sie die überlagerte Kommentar-Komponente mithilfe des Replikations-Tools
 >
 >Eine robustere Form der Replikation wäre, ein Paket in Package Manager zu erstellen und [Aktivieren](/help/sites-administering/package-manager.md#replicating-packages) es. Ein Package kann exportiert und archiviert werden.
 
-Wählen Sie in der globalen Navigation die Option **[!UICONTROL Instrumente]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Replikation]** und klicken Sie auf **[!UICONTROL Baum aktivieren]**.
+Wählen Sie in der globalen Navigation die Option **[!UICONTROL Instrumente]** > **[!UICONTROL Implementierung]** > **[!UICONTROL Replikation]** und klicken **[!UICONTROL Baum aktivieren]**.
 
-Geben Sie für den Startpfad ein. `/apps/social/commons` und wählen Sie **[!UICONTROL Aktivieren]**.
+Geben Sie für den Startpfad ein. `/apps/social/commons` und wählen **[!UICONTROL Aktivieren]**.
 
 ![verify-content-template](assets/verify-content-template.png)
 

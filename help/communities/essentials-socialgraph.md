@@ -1,14 +1,14 @@
 ---
 title: Grundlagen zu Social-Diagrammen
-description: Erfahren Sie mehr über die folgende Komponente und die Komponente Folgen .
+description: Erfahren Sie mehr über die Grundlagen des Social-Diagramms mit den Komponenten "Folgende"und "Folgen"auf einer Community-Site.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '249'
 ht-degree: 5%
 
 ---
@@ -62,7 +62,7 @@ Die `following` -Komponente listet die Mitglieder auf, die dem aktuellen Mitglie
        <li><i>True </i>- die <code>following</code> -Komponente listet die Mitglieder auf, die das angemeldete Mitglied sind <code>follows</code></li>
        <li><i>False </i>- die <code>following</code> -Komponente listet die Mitglieder auf, die <code>follow </code>das angemeldete Mitglied</li>
       </ul> </li>
-    </ul> <p>Standardwert ist <i>true</i> , wenn die -Eigenschaft fehlt. Es ist nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss einer Instanz der <code>following</code> Knoten verwenden, <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>Standardwert ist <i>true</i> , wenn die -Eigenschaft fehlt. Es ist nicht möglich, diese Eigenschaft im Bearbeitungsdialogfeld im Autorenmodus festzulegen. Die Eigenschaft muss einer Instanz der <code>following</code> Knoten mithilfe von <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>

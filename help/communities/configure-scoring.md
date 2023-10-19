@@ -1,19 +1,15 @@
 ---
 title: Grundlagen zu Scoring und Abzeichen
-seo-title: Scoring and Badges Essentials
-description: Übersicht über die Funktionen Scoring und Badges
-seo-description: Scoring and Badges feature overview
-uuid: 6e3af071-04e8-4dc1-977a-0da711b72961
+description: Erfahren Sie, wie mit der Funktion für die Bewertung und Abzeichen in Adobe Experience Manager Communities Community-Mitglieder identifiziert und belohnt werden.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 628b6dcd-8b1c-4166-8fc2-843baa86ac1c
 docset: aem65
 exl-id: 470a382a-2aa7-449e-bf48-b5a804c5b114
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '946'
 ht-degree: 2%
 
 ---
@@ -68,9 +64,9 @@ Suchen Sie beispielsweise nach `this.isAssigned` in `/libs/social/forum/componen
 {{/each}}
 ```
 
-Wenn &quot;true&quot;, zeigt isAssigned an, dass das Zeichen für eine Rolle zugewiesen wurde und das Zeichen als Text angezeigt werden soll.
+Wenn true, `isAssigned` gibt an, dass das Zeichen einer Rolle zugewiesen wurde und das Zeichen als Text angezeigt werden sollte.
 
-Ist der Wert &quot;false&quot;, bedeutet &quot;isAssigned&quot;, dass das Abzeichen für einen Ergebniswert vergeben wurde und das Abzeichen als Bild angezeigt werden soll.
+Wenn false, `isAssigned` gibt an, dass der Badge für einen Gewinn vergeben wurde und der Badge als Bild angezeigt werden sollte.
 
 Alle Änderungen an diesem Verhalten sollten in einem benutzerdefinierten Skript vorgenommen werden (entweder Überschreiben oder Überlagerung). Siehe [Clientseitige Anpassung](/help/communities/client-customize.md).
 
@@ -80,9 +76,9 @@ Um Scoring und Badging zu debuggen, kann eine benutzerdefinierte Protokolldatei 
 
 Detaillierte Anweisungen finden Sie unter [Benutzerdefinierte Protokolldatei erstellen](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file).
 
-So richten Sie eine Slinglog-Datei schnell ein:
+So richten Sie schnell eine Slinglog-Datei ein:
 
-1. Zugriff auf **Adobe Experience Manager Web Console-Protokollunterstützung** beispielsweise
+1. Zugriff auf **Adobe Experience Manager Web Console-Protokollunterstützung**, beispielsweise
 
    * https://localhost:4502/system/console/slinglog
 
@@ -90,16 +86,16 @@ So richten Sie eine Slinglog-Datei schnell ein:
 
    1. Auswählen `DEBUG` für **Protokollebene**
 
-   1. Geben Sie einen Namen für **Protokolldatei** beispielsweise
+   1. Geben Sie einen Namen für **Protokolldatei**, beispielsweise
 
       * logs/scoring-debug.log
+
    1. Zwei eingeben **Logger** (class) -Einträge (mithilfe von `+` Symbol)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
+
    1. Wählen Sie **Speichern** aus
-
-
 
 ![debug-scoring-log](assets/debug-scoring-log.png)
 
@@ -125,15 +121,15 @@ Es ist möglich, die UGC im Zusammenhang mit Scoring und Badging anzuzeigen, wen
 
 Die Beschreibungen für den Zugriff auf Scoring- und Badging-Daten verwenden JSRP, da der Zugriff auf die UGC über [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-**JSRP für Autor**: Das Experimentieren in der Autorenumgebung führt zu benutzergenerierten Inhalten, die nur in der Autorenumgebung sichtbar sind.
+**JSRP für Autor**: Beim Experimentieren in der Autorenumgebung wird UGC angezeigt, das nur in der Autorenumgebung sichtbar ist.
 
-**JSRP bei Veröffentlichung**: Ebenso ist es bei Tests in der Veröffentlichungsumgebung erforderlich, auf die CRXDE Lite mit Administratorrechten in einer Veröffentlichungsinstanz zuzugreifen. Wenn die Veröffentlichungsinstanz in ausgeführt wird [Produktionsmodus](/help/sites-administering/production-ready.md) (Ausführungsmodus nosamplecontent ), ist es erforderlich, [CRXDE Lite aktivieren](/help/sites-administering/enabling-crxde-lite.md).
+**JSRP bei Veröffentlichung**: Ebenso ist bei Tests in der Veröffentlichungsumgebung der Zugriff auf CRXDE Lite mit Administratorrechten für eine Veröffentlichungsinstanz erforderlich. Wenn die Veröffentlichungsinstanz in [Produktionsmodus](/help/sites-administering/production-ready.md) (Ausführungsmodus nosamplecontent ), ist es erforderlich, [CRXDE Lite aktivieren](/help/sites-administering/enabling-crxde-lite.md).
 
 Der Basisspeicherort von UGC auf JSRP lautet `/content/usergenerated/asi/jcr/`.
 
 ### Scoring- und Badging-APIs {#scoring-and-badging-apis}
 
-Die folgenden APIs stehen zur Verwendung zur Verfügung:
+Die folgenden APIs stehen zur Verwendung bereit:
 
 * [com.adobe.cq.social.scoring.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)
 * [com.adobe.cq.social.badging.api in 6.3](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=de)
@@ -146,12 +142,12 @@ Die neuesten Javadocs für das installierte Feature Pack stehen Entwicklern aus 
 
 Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und Badging für ein Forum auf zwei verschiedenen AEM Sites :
 
-1. AEM *mit* eine eindeutige ID (Community-Site, die mithilfe des Assistenten erstellt wurde) :
+1. AEM Site *mit* eine eindeutige ID (Community-Site, die mithilfe des Assistenten erstellt wurde) :
 
    * Verwenden der Site &quot;Erste Schritte - Tutorial&quot;(Interaktion), die während der [Tutorial zu den ersten Schritten](/help/communities/getting-started.md)
    * Suchen Sie den Knoten der Forumsseite .
 
-      `/content/sites/engage/en/forum/jcr:content`
+     `/content/sites/engage/en/forum/jcr:content`
 
    * Hinzufügen von Scoring- und Badging-Eigenschaften
 
@@ -167,22 +163,21 @@ Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und
 
    * Suchen Sie den Knoten der Forumkomponente .
 
-      `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
+     `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * Um Badges anzuzeigen, fügen Sie eine Eigenschaft hinzu
 
-      `allowBadges = true`
+     `allowBadges = true`
 
    * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält ein Bronze-Zeichen
 
-
-1. AEM *without* eine eindeutige ID :
+1. AEM Site *without* eine eindeutige ID :
 
    * Verwenden der [Handbuch zu Community-Komponenten](/help/communities/components-guide.md)
    * Suchen Sie den Knoten der Forumsseite .
 
-      `/content/community-components/en/forum/jcr:content`
+     `/content/community-components/en/forum/jcr:content`
 
    * Hinzufügen von Scoring- und Badging-Eigenschaften
 
@@ -198,15 +193,14 @@ Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und
 
    * Suchen Sie den Knoten der Forumkomponente .
 
-      `/content/community-components/en/forum/jcr:content/content/forum`
+     `/content/community-components/en/forum/jcr:content/content/forum`
 ( `sling:resourceType = social/forum/components/hbs/forum`)
 
    * Um Badges anzuzeigen, fügen Sie eine Eigenschaft hinzu
 
-      `allowBadges = true`
+     `allowBadges = true`
 
    * Ein Benutzer meldet sich an, erstellt ein Forenthema und erhält ein Bronze-Zeichen
-
 
 1. Benutzern wird über cURL ein Moderatorzeichen zugewiesen:
 
@@ -222,7 +216,7 @@ Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und
 >
 >Dieses Beispiel folgt nicht den folgenden Best Practices:
 >
->* Die Namen von Scoring-Regeln sollten global eindeutig sein. sollten sie nicht mit demselben Namen enden.
+>* Scoring-Regelnamen sollten global eindeutig sein. Sie sollten nicht mit demselben Namen enden.
 >
 >  Ein Beispiel für *not* zu tun:
 >
@@ -230,7 +224,6 @@ Die Screenshots von Repository-Daten stammen aus der Einrichtung von Scoring und
 >  /libs/settings/community/scoring/rules/site2/forums-scoring
 >
 >* Erstellen von Unique Badge-Bildern für verschiedene AEM Sites
-
 
 ### Auf Scoring-UGC zugreifen {#access-scoring-ugc}
 

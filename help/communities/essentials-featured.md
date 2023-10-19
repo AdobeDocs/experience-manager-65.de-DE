@@ -1,23 +1,19 @@
 ---
-title: Grundlegende Inhalte
-seo-title: Featured Content Essentials
-description: Arbeiten mit Funktionsinhalten
-seo-description: Working with feature content
-uuid: b376828a-1431-4d16-ad6b-b23a3ea62a75
+title: Essentials zu präsentierten Inhalten
+description: Erfahren Sie mehr über die Grundlagen der Arbeit mit speziellen Inhalten, die Sie überall auf der Community-Site hervorheben möchten.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
 exl-id: 70b0ad6a-c891-4588-8515-449aed206805
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '106'
-ht-degree: 8%
+source-wordcount: '120'
+ht-degree: 5%
 
 ---
 
-# Grundlegende Inhalte  {#featured-content-essentials}
+# Essentials zu präsentierten Inhalten  {#featured-content-essentials}
 
 Diese Seite enthält die wichtigsten Informationen für die Arbeit mit speziellen Inhalten.
 

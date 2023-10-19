@@ -1,20 +1,16 @@
 ---
 title: Blog-Grundlagen
-seo-title: Blog Essentials
-description: Blog-Übersicht
-seo-description: Blog overview
-uuid: 714cf70c-76a0-4be6-9163-a31ac6bd1643
+description: Erfahren Sie, wie Sie die Blog-Funktion zu einer Seite hinzufügen, damit angemeldete Community-Mitglieder Blog-Artikel posten können.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: eece7b8f-6ccd-4037-8713-0cd36cfd9e73
 docset: aem65
 exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '442'
-ht-degree: 4%
+source-wordcount: '451'
+ht-degree: 2%
 
 ---
 
@@ -79,15 +75,15 @@ Die Blog-Funktion besteht aus zwei Hauptkomponenten, die durch Hinzufügen der [
 
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
-* [Blog-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
+* [Blog-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/api/package-summary.html)
 
-* [Blog-Endpunkte](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
+* [Blog-Endpunkte](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/journal/client/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](/help/communities/server-customize.md)
 
 ### Blogfunktion {#blog-function}
 
-Eine Community-Site-Struktur mit [Blog-Funktion](/help/communities/functions.md#blog-function) wird konfiguriert `Blog` und `Blog Sidebar` Komponenten. Die Blog-Funktion unterstützt die Identifizierung einer [Berechtigte Mitgliederbenutzergruppe](/help/communities/users.md#privileged-members-group).
+Eine Community-Site-Struktur mit [Blog-Funktion](/help/communities/functions.md#blog-function) has `Blog` und `Blog Sidebar` konfigurierte Komponenten. Die Blog-Funktion unterstützt die Identifizierung einer [Berechtigte Mitgliederbenutzergruppe](/help/communities/users.md#privileged-members-group).
 
 ### Zugreifen auf Blogeinträge (UGC) {#accessing-blog-entries-ugc}
 
@@ -101,13 +97,13 @@ Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](/help/communitie
 Siehe :
 
 * [Übersicht über den Speicheranbieter](/help/communities/srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](/help/communities/srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Grundlagen zu SRP und UGC](/help/communities/srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
 * [Zugreifen auf UGC mit SRP](/help/communities/accessing-ugc-with-srp.md) - Codierungsrichtlinien.
 * [SocialUtils-Refaktorierung](/help/communities/socialutils.md) - Zuordnung veralteter Methoden für Dienstprogramme zu aktuellen SRP-Dienstprogrammmethoden.
 
 ## Primärer Herausgeber {#primary-publisher}
 
-Wenn es sich bei der Bereitstellung um eine Veröffentlichungsfarm handelt, müssen Sie einen primären Herausgeber identifizieren, der nach Artikeln fragt, deren Veröffentlichung geplant ist.
+Wenn es sich bei der Bereitstellung um eine Veröffentlichungsfarm handelt, müssen Sie einen primären Herausgeber identifizieren, der die Abfrage für Artikel durchführt, deren Veröffentlichung geplant ist.
 
 Siehe [Primärer Herausgeber](/help/communities/deploy-communities.md#primary-publisher) für weitere Details.
 
@@ -115,10 +111,10 @@ Siehe [Primärer Herausgeber](/help/communities/deploy-communities.md#primary-pu
 
 Die AEM Plattform blockiert Links von anderen Websites, um XSS-Angriffe zu verhindern, wie unter
 
-* [Schutz vor Cross-Site Scripting (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Protect gegen Cross-Site Scripting (XSS)](/help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
 Ab AEM 6.2 sind die zuvor manuell vorzunehmenden Änderungen in der standardmäßigen AntiSamy-Konfigurationsdatei enthalten.
 
-Rich-Media wird in einen Blogartikel eingebettet, indem Sie die `Embed Media from External Sites` icon :
+Rich-Media wird in einen Blog-Artikel eingebettet, indem Sie `Embed Media from External Sites` icon :
 
 ![media](assets/media-icon.png)

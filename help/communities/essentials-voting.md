@@ -1,19 +1,15 @@
 ---
 title: Abstimmungsgrundlagen
-seo-title: Voting Essentials
-description: Übersicht über Abstimmungskomponenten
-seo-description: Voting component overview
-uuid: ed0a771d-1c14-4fbf-ab6a-a028e5ee2e2a
+description: Erfahren Sie, wie Sie die Komponente Abstimmung verwenden, mit der Mitglieder einen bestimmten Inhalt bewerten können, indem Sie Pfeile nach oben oder unten auswählen, um ihre Meinung anzugeben.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '284'
-ht-degree: 2%
+source-wordcount: '301'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +19,7 @@ Die Abstimmungskomponente [tally](tally.md) -Unterklasse ist ein nützliches Too
 
 Das Platzieren mehrerer Instanzen einer Abstimmungskomponente auf derselben Seite ist zulässig. Jede Instanz muss mit einer eindeutigen `tally name` -Eigenschaft.
 
-Anonyme Abstimmungen werden nicht unterstützt. Besucher der Website müssen sich registrieren und anmelden, um nur einmal an der Abstimmung teilzunehmen, der angemeldete Besucher (Mitglied) kann seine Stimme jederzeit ändern.
+Die anonyme Veröffentlichung einer Abstimmung wird nicht unterstützt. Besucher der Website müssen sich registrieren und sich anmelden, um nur einmal an der Abstimmung teilnehmen zu können. Der angemeldete Besucher (Mitglied) kann seine Stimme jederzeit ändern.
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
@@ -60,9 +56,9 @@ Anonyme Abstimmungen werden nicht unterstützt. Besucher der Website müssen sic
 
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
-* [Tally-APIs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally-APIs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Tally Endpoints](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Tally Endpoints](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
@@ -78,6 +74,6 @@ Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp
 Siehe:
 
 * [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
 * [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Codierungsrichtlinien.
 * [SocialUtils-Refaktorierung](socialutils.md) - Zuordnung veralteter Methoden für Dienstprogramme zu aktuellen SRP-Dienstprogrammmethoden.
