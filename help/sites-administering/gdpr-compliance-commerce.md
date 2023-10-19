@@ -1,20 +1,20 @@
 ---
-title: AEM Commerce – Einhaltung der Datenschutz-Grundverordnung
+title: AEM Commerce – Einhaltung der DSGVO
 seo-title: AEM Commerce - GDPR Readiness
-description: Erfahren Sie mehr über die Verfahren zur Verarbeitung von DSGVO-Anfragen in AEM Commerce und deren Verwendung.
+description: Erfahren Sie mehr über die Verarbeitungsprozeduren für DSGVO-Anfragen in AEM Commerce und wie sie verwendet werden.
 seo-description: null
 uuid: 7ca26587-8cce-4c75-8629-e0e5cfb8166c
 contentOwner: carlino
 discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
 exl-id: 3a483b9d-627a-41d3-8ac1-66f9c5e89ad5
 source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '314'
-ht-degree: 94%
+ht-degree: 100%
 
 ---
 
-# AEM Commerce – Einhaltung der Datenschutz-Grundverordnung{#aem-commerce-gdpr-readiness}
+# AEM Commerce – Einhaltung der DSGVO{#aem-commerce-gdpr-readiness}
 
 >[!IMPORTANT]
 >

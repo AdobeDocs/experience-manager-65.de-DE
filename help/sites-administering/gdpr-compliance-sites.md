@@ -1,7 +1,7 @@
 ---
 title: AEM Sites – Einhaltung der DSGVO
 seo-title: AEM Sites - GDPR Readiness
-description: Erfahren Sie mehr über die Verfahren zur Verarbeitung von DSGVO-Anfragen in AEM Sites und deren Verwendung.
+description: Erfahren Sie mehr über die Verarbeitungsprozeduren für DSGVO-Anfragen in AEM Sites und wie sie verwendet werden.
 seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: AEM Docs
@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
 source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '837'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 

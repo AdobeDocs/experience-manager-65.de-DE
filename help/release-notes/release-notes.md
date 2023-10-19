@@ -4,9 +4,9 @@ description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsan
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
 source-git-commit: 59d5c2574bf4298469152a3d55e7c1508eb2f1be
-workflow-type: tm+mt
+workflow-type: ht
 source-wordcount: '4633'
-ht-degree: 98%
+ht-degree: 100%
 
 ---
 
@@ -463,7 +463,7 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
 #### Installation
 
 * Auf der Plattform JBoss® 7.1.4 schlägt die Bereitstellung fehl, wenn Experience Manager 6.5.16.0 oder ein höheres Service Pack installiert wird. `adobe-livecycle-jboss.ear` (CQ-4351522, CQDOC-20159)
-* Nach der Aktualisierung auf AEM Forms 6.5.18.0 JBoss Turnkey-Vollinstallationsumgebung unter Windows Server 2022 kann beim Kompilieren des Code der Ausgabe-Client-Anwendung mit Java 11 der folgende Kompilierungsfehler auftreten:
+* Nach der Aktualisierung auf AEM Forms 6.5.18.0 JBoss Turnkey-Vollinstallationsumgebung unter Windows Server 2022 kann beim Kompilieren des Codes der Ausgabe-Client-Anwendung mit Java 11 der folgende Kompilierungsfehler auftreten:
 
   ```
   error: error reading [AEM_Forms_Installation_dir]\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
@@ -471,17 +471,17 @@ Um einen korrekten Betrieb zu gewährleisten, müssen Sie die folgenden Eigensch
   ```
 
   Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
-   1. Navigieren Sie zu `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` und entpacken `adobe-output-client.jar` , um die `Manifest.mf` -Datei.
-   1. Aktualisieren Sie die `Manifest.mf` Datei durch Entfernen des Eintrags `${clover.jar.name}` aus dem Attribut class-path .
+   1. Navigieren Sie zu `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` und entpacken Sie `adobe-output-client.jar`, um die Datei `Manifest.mf` zu extrahieren.
+   1. Aktualisieren Sie die Datei `Manifest.mf`, indem Sie den Eintrag `${clover.jar.name}` aus dem Attribut „class-path“ entfernen.
 
       >[!NOTE]
       >
-      > Sie können auch ein Werkzeug für die Bearbeitung im Kontext verwenden, z. B. 7-zip, um die `Manifest.mf` -Datei.
+      > Sie können auch ein Werkzeug für die Bearbeitung im Kontext verwenden, z. B. 7-zip, um die Datei `Manifest.mf` zu aktualisieren.
 
-   1. Speichern Sie die aktualisierte `Manifest.mf` im `adobe-output-client.jar` Archiv.
-   1. Speichern Sie die geänderte `adobe-output-client.jar` und führen Sie das Setup erneut aus.  (CQDOC-20878)
+   1. Speichern Sie die aktualisierte `Manifest.mf` im Archiv `adobe-output-client.jar`.
+   1. Speichern Sie die geänderte Datei `adobe-output-client.jar` und führen Sie das Setup erneut aus.  (CQDOC-20878)
 * Nach der Installation des Vollinstallationsprogramms für AEM Service Pack 6.5.18.0 schlägt die EAR-Bereitstellung auf JEE mit der JBoss®-Turnkey-Methode fehl.
-Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` und aktualisieren Sie `Adobe_Adobe_JAVA_HOME` für alle Vorkommen auf `Adobe_JAVA_HOME`, bevor Sie den Konfigurations-Manager ausführen. (CQDOC-20803)
+Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` und aktualisieren Sie alle Vorkommen von `Adobe_Adobe_JAVA_HOME` auf `Adobe_JAVA_HOME`, bevor Sie den Konfigurations-Manager ausführen. (CQDOC-20803)
 
 #### Adaptive Formulare
 
