@@ -1,20 +1,16 @@
 ---
 title: Communities-Komponenten
-seo-title: Communities Components
-description: Hinzufügen von Community-Funktionen zu AEM Website
-seo-description: Adding community features to any AEM site
-uuid: 76824820-81e9-4192-8df3-dff55eaf144e
+description: Erfahren Sie mehr darüber, wann AEM Communities lizenziert ist. Es ist möglich, Communities-Funktionen mithilfe standardmäßiger AEM Authoring-Tools zu jeder AEM Website hinzuzufügen.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '273'
-ht-degree: 30%
+source-wordcount: '293'
+ht-degree: 28%
 
 ---
 
@@ -61,7 +57,7 @@ Siehe auch interaktive [Handbuch zu Community-Komponenten](/help/communities/com
 | Ideen | [Ideen](/help/communities/ideation-feature.md) |
 | Leaderboard | [Scoring und Abzeichen](/help/communities/enabling-leaderboard.md) |
 | Likes | [Likes](/help/communities/liking.md) |
-| Nachricht | [Messaging](/help/communities/configure-messaging.md) |
+| Meldung | [Messaging](/help/communities/configure-messaging.md) |
 | Nachrichtenliste | [Messaging](/help/communities/configure-messaging.md) |
 | Fragen und Antworten | [Fragen und Antworten](/help/communities/working-with-qna.md) |
 | Schnellsuche | [Suchen](/help/communities/search.md) |
@@ -80,8 +76,8 @@ Siehe auch interaktive [Handbuch zu Community-Komponenten](/help/communities/com
 
 ## Verwandte Communities - Dokumentation {#related-communities-documentation}
 
-* Besuch [Bereitstellen von Communities](/help/communities/deploy-communities.md) , um mehr über empfohlene Bereitstellungen zu erfahren.
+* Besuch [Bereitstellen von Communities](/help/communities/deploy-communities.md) wo Sie mehr über empfohlene Bereitstellungen erfahren können.
 
 * Besuch [Verwalten von Communities-Sites](/help/communities/administer-landing.md) , um mehr über die Erstellung einer Community-Site, die Konfiguration von Community-Site-Vorlagen, die Moderation von Community-Inhalten, die Verwaltung von Mitgliedern und die Konfiguration von Messaging zu erfahren.
 
-* Besuch [Entwickeln von Communities](/help/communities/communities.md) , um mehr über das Social-Komponenten-Framework (SCF) zu erfahren und Communities-Komponenten und -Funktionen anzupassen.
+* Besuch [Entwickeln von Communities](/help/communities/communities.md) Hier erfahren Sie mehr über das Social Component Framework (SCF) und das Anpassen von Communities-Komponenten und -Funktionen.

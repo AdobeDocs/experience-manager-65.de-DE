@@ -1,28 +1,24 @@
 ---
 title: Leaderboard-Funktion
-seo-title: Leaderboard Feature
-description: Hinzufügen einer Leaderboard-Komponente zu einer Seite
-seo-description: Adding a Leaderboard component to a page
-uuid: c4633919-75d3-4bc7-830c-ef9c28cc1cba
+description: Erfahren Sie, wie Sie mit der Leaderboard-Komponente sehen können, wie Mitglieder innerhalb der Community interagieren, indem Sie Mitglieder anhand von Punkten, die Sie gesammelt haben, und Fachwissen einordnen.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '400'
-ht-degree: 18%
+source-wordcount: '417'
+ht-degree: 10%
 
 ---
 
 # Leaderboard-Funktion {#leaderboard-feature}
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
-Die `Leaderboard` -Komponente bietet die Möglichkeit, ein Gefühl dafür zu erhalten, wie Mitglieder innerhalb der Community interagieren, indem sie Mitglieder nach erworbenen Punkten (Basis-Scoring) oder ihrem Fachwissen (fortgeschrittenes Scoring) einstuft.
+Die `Leaderboard` -Komponente hilft Ihnen dabei, einen Eindruck davon zu erhalten, wie Mitglieder innerhalb der Community interagieren, indem sie Mitglieder nach Punkten (Grundbewertung) oder ihrer Expertise (fortgeschrittenes Scoring) einstufen.
 
 Bevor Sie die Leaderboard-Komponente auf einer Seite einfügen, müssen Sie [Communities-Scoring und -Abzeichen](/help/communities/implementing-scoring.md).
 
@@ -37,65 +33,65 @@ So fügen Sie eine `Leaderboard` Komponente auf einer Seite im Autorenmodus zu f
 
 * `Communities / Leaderboard`
 
-und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite.
+Und ziehen Sie es an die gewünschte Stelle auf einer Seite.
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Bei der ursprünglichen Platzierung auf einer Community-Site wird die Komponente wie folgt angezeigt:
+Wenn die Komponente zum ersten Mal auf einer Seite einer Community-Site platziert wird, wird sie wie folgt angezeigt:
 
 ![Lederboard](assets/leaderboard.png)
 
 ### Leaderboard konfigurieren {#configuring-leaderboard}
 
-Wählen Sie die platzierte `Leaderboard` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Auswählen der platzierten `Leaderboard` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
 ![configure-lederboard](assets/configure-leaderboard.png)
 
-#### Registerkarte „Settings“ {#settings-tab}
+#### Registerkarte &quot;Einstellungen&quot; {#settings-tab}
 
 Unter dem **[!UICONTROL Einstellungen]** angeben, welche Informationen zum Mitglied angezeigt werden sollen:
 
 * **Anzeigename**
 
-   Ein beschreibender Name, der für die Pinnwand angezeigt wird und die für die Anzeige von Abzeichen und Bewertungen ausgewählten Regeln widerspiegelt.
-Der Standardwert ist `Leaderboard`, wenn nichts eingegeben wurde.
+  Ein beschreibender Name, der für die Pinnwand angezeigt wird und die für die Anzeige von Abzeichen und Bewertungen ausgewählten Regeln widerspiegelt.
+Der Standardwert ist `Leaderboard` wenn nichts eingegeben wird.
 
 * **Abzeichen**
 
-   Wenn diese Option aktiviert ist, wird eine Spalte für Badge-Symbole in die Leaderboard eingefügt.
-Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, wird eine Spalte für Badge-Symbole in die Leaderboard eingefügt.
+Die Option Standard ist deaktiviert.
 
 * **Abzeichenname**
 
-   Wenn diese Option aktiviert ist, wird eine Spalte für den Badge-Namen in die Leaderboard aufgenommen.
-Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, wird eine Spalte für den Badge-Namen in die Leaderboard aufgenommen.
+Die Option Standard ist deaktiviert.
 
 * **Avatar verwenden**
 
-   Wenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds in das Leaderboard eingefügt, neben dem Namen, der mit seinem Mitgliederprofil verknüpft ist.
-Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, wird das Avatarbild des Mitglieds in das Leaderboard eingefügt, neben dem Namen, der mit seinem Mitgliederprofil verknüpft ist.
+Die Option Standard ist deaktiviert.
 
-#### Registerkarte Regeln {#rules-tab}
+#### Registerkarte &quot;Regeln&quot; {#rules-tab}
 
 Unter dem **Regeln** Registerkarte, der Community-Site und den zugehörigen Scoring- und Badging-Regeln
 
 * **Speicherort für Regel**
 
-   (Erforderlich) Der Speicherort, an dem die Regel Scoring/Badging konfiguriert ist.
+  (Erforderlich) Der Speicherort, an dem die Regel Scoring/Badging konfiguriert ist.
 
 * **Bewertungsregel**
 
-   (Erforderlich) Bestimmte Regel, die die anzuzeigenden Werte generiert.
+  (Erforderlich) Bestimmte Regel, die die anzuzeigenden Werte generiert.
 
 * **Abzeichenregel**
 
-   (Erforderlich) Bestimmte Regel, die das anzuzeigende Badge generiert.
+  (Erforderlich) Bestimmte Regel, die das anzuzeigende Badge generiert.
 
 * **Anzeigelimit**
 
-   Anzahl der Mitglieder, die pro Seite angezeigt werden sollen. Der Standardwert ist 10.
+  Anzahl der Mitglieder, die pro Seite angezeigt werden sollen Der Standardwert ist 10.
 
 ### Beispiel: Teilnehmer-Leaderboard {#example-participants-leaderboard}
 
@@ -121,7 +117,7 @@ Leaderboard-Komponentenkonfiguration:
 
 ![Participant Lederboard](assets/participants-leaderboard.png)
 
-### Beispiel: Expertenvorstand {#example-experts-leaderboard}
+### Beispiel: Leaderboard für Experten {#example-experts-leaderboard}
 
 Diese Leaderboard-Berichte resultieren aus der Anwendung erweiterter Scoring-Regeln.
 
@@ -146,6 +142,6 @@ Leaderboard-Komponentenkonfiguration:
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Leaderboard-Grundlagen](/help/communities/leaderboard.md) für Entwickler.
+Weitere Informationen finden Sie unter [Leaderboard-Grundlagen](/help/communities/leaderboard.md) -Seite für Entwickler.
 
-Anweisungen zum Erstellen von Regeln finden Sie im Abschnitt [Communities-Scoring und -Abzeichen](/help/communities/implementing-scoring.md) für Administratoren.
+Anweisungen zum Erstellen von Regeln finden Sie im Abschnitt [Communities-Scoring und -Abzeichen](/help/communities/implementing-scoring.md) -Seite für Administratoren.

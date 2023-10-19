@@ -1,15 +1,13 @@
 ---
 title: Dateibibliothek-Funktion
-description: Mit der Funktion "Dateibibliothek"können angemeldete Site-Besucher Dateien hochladen, verwalten und herunterladen
-uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
+description: Mit der Funktion "Dateibibliothek"können angemeldete Site-Besucher Dateien hochladen, verwalten und herunterladen.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
 source-wordcount: '733'
 ht-degree: 10%
@@ -37,13 +35,13 @@ Und ziehen Sie es an die gewünschte Stelle auf einer Seite.
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) eingeschlossen sind, wird die `File Library` -Komponente angezeigt:
+Wenn die Variable [erforderliche clientseitige Bibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) eingeschlossen sind, wird die `File Library` -Komponente angezeigt:
 
 ![file-library1](assets/file-library1.png)
 
-### Dateibibliothek konfigurieren {#configuring-file-library}
+### Konfigurieren der Dateibibliothek {#configuring-file-library}
 
-Wählen Sie die platzierte `File Library` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Auswählen der platzierten `File Library` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
@@ -119,7 +117,7 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Unter dem **Benutzermoderation** -Tab konfigurieren Sie die Moderation der Kommentare, falls Kommentare zulässig sind:
+Unter dem **Benutzermoderation** -Tab konfigurieren Sie die Moderation von Kommentaren, falls Kommentare zulässig sind:
 
 * **Vor der Moderation**
 
@@ -155,7 +153,7 @@ Unter dem **Benutzermoderation** -Tab konfigurieren Sie die Moderation der Komme
 
 * **Kennzeichnungslimit**
 
-  Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich der **Schwellenwert für Moderation**. Der Standardwert ist 5.
+  Geben Sie an, wie oft ein Kommentar gekennzeichnet werden muss, bevor er aus der öffentlichen Ansicht ausgeblendet wird. Diese Zahl muss größer oder gleich der Zahl **Schwellenwert für Moderation**. Der Standardwert ist 5.
 
 ### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
@@ -165,7 +163,7 @@ Als Standard festlegen
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Grundlagen zur Dateibibliothek](/help/communities/essentials-file-library.md) für Entwickler.
+Weitere Informationen finden Sie unter [Grundlagen zur Dateibibliothek](/help/communities/essentials-file-library.md) -Seite für Entwickler.
 
 Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

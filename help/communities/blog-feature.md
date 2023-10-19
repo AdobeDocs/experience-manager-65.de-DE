@@ -1,17 +1,15 @@
 ---
 title: Blog-Funktion
-description: Community-Informationen im Journalformat
-uuid: 7323063f-81e8-45c3-9035-bf7df6124830
+description: Erfahren Sie, wie die Blog-Funktion die Bereitstellung von Community-Informationen in einem Journaling-Format unterstützt. Die Einträge werden von autorisierten Benutzern in der Veröffentlichungsumgebung vorgenommen.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1670'
 ht-degree: 8%
 
 ---
@@ -22,14 +20,14 @@ ht-degree: 8%
 
 Die Blog-Funktion für AEM Communities wurde von einer Authoring-Aktivität zu einer echten Community-Aktivität, die in der Veröffentlichungsumgebung stattfindet, geändert.
 
-Die Blog-Funktion unterstützt die Bereitstellung von Community-Informationen in einem Journaling-Format. Blogeinträge werden in der Veröffentlichungsumgebung von autorisierten Mitgliedern (registrierten, angemeldeten Benutzern) vorgenommen.
+Die Blog-Funktion unterstützt die Bereitstellung von Community-Informationen in einem Journaling-Format. Blogeinträge werden in der Veröffentlichungsumgebung von autorisierten Mitgliedern (registrierte, angemeldete Benutzer) vorgenommen.
 
 Die Blogfunktion bietet :
 
 * Publishing-seitige Erstellung von Blogartikeln und Kommentaren
 * Rich-Text-Bearbeitung
 * Inline-Bilder (mit Drag &amp; Drop-Unterstützung)
-* Eingebetteter Inhalt in sozialen Netzwerken ([Einbettungsunterstützung](/help/communities/blog-developer-basics.md#allowing-rich-media))
+* Eingebetteter Inhalt in sozialen Netzwerken ([Unterstützung für Einbettung](/help/communities/blog-developer-basics.md#allowing-rich-media))
 * Entwurfsmodus
 * Geplante Veröffentlichung
 * Erstellen Sie im Namen (a [privilegiertes Mitglied](/help/communities/users.md#privileged-members-group) kann Inhalte im Namen eines anderen Community-Mitglieds erstellen)
@@ -57,19 +55,19 @@ Ziehen Sie sie an die gewünschte Stelle auf einer Seite, auf der der Blog ersch
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) enthalten sind, wird die `Blog` -Komponente wird wie folgt angezeigt:
+Wenn die Variable [erforderliche clientseitige Bibliotheken](/help/communities/blog-developer-basics.md#essentials-for-client-side) enthalten sind, wird die `Blog` -Komponente wird wie folgt angezeigt:
 
 ![add-blog-component](assets/add-blog-component.png)
 
 ### Blog konfigurieren {#configuring-blog}
 
-Wählen Sie die platzierte `Blog` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Auswählen der platzierten `Blog` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![konfigurieren](assets/configure-new.png)
 
 ![Blog-Einstellungen](assets/blog-configure.png)
 
-#### Registerkarte Einstellungen {#settings-tab}
+#### Registerkarte &quot;Einstellungen&quot; {#settings-tab}
 
 Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blogs festlegen:
 
@@ -133,7 +131,7 @@ Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blog
 
 * **Tagging zulassen**
 
-  Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe **Tag-Feld** Registerkarte). Die Option Standard ist deaktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder ihren Beiträgen Tag-Beschriftungen hinzufügen (siehe **Tag-Feld** Registerkarte). Die Option Standard ist deaktiviert.
 
 * **Datei-Uploads zulassen**
 
@@ -145,7 +143,7 @@ Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen des Blog
 
 * **Zulässige Dateitypen**
 
-  Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, können die nicht angegebenen Dateitypen nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
+  Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, können nicht angegebene Dateitypen nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
 * **Maximale Dateigröße für Bildanhang**
 
@@ -227,7 +225,7 @@ Unter dem **Benutzermoderation** -Registerkarte die Moderationseinstellungen ang
 
 #### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
-Unter dem **Tag-Feld** Registerkarte angeben, welche Tags angewendet werden können, wenn **Tagging zulassen** wird auf der Seite **Einstellungen** tab :
+Unter dem **Tag-Feld** Registerkarte angeben, welche Tags angewendet werden können, wenn **Tagging zulassen** auf der **Einstellungen** tab :
 
 * **Zugelassene Namespaces**
 
@@ -247,19 +245,19 @@ Unter dem **Journal-Seitenleisten-Einstellungen** -Registerkarte das Datumsforma
 
 * **Datumsformat**
 
-  Das Format, das für die Anzeige von Archiven von Blogeinträgen verwendet wird. Das Format verwendet Platzhalter gemäß der Java™-Konvention.
+  Das Format, das zur Anzeige für Archive von Blogeinträgen verwendet wird. Das Format verwendet Platzhalter, die der Java™-Konvention folgen.
 
    * jjjj : vollständiges Jahr, z. B. &quot;2015&quot;
-   * yy : kurze Jahreszahl, z. B. &quot;15&quot;
+   * yy : kurze Jahreszahl, z. B. &#39;15&#39;
    * MMMMM : Vollmonat, z. B. Juni
-   * MMM : kurzen Monat, wie Jun
+   * MMM : kurzer Monat, wie Juni
    * MM : Monatsnummer, z. B. 06
 
   Der Standardwert ist &quot;jjjj MMMMM&quot;, der beispielsweise &quot;Juni 2015&quot;anzeigen würde.
 
 * **Ansichtstyp**
 
-  Der Titel und der Typ der Blogeinträge, die in der Seitenleiste angezeigt werden sollen. Die Wahl liegt zwischen
+  Der Titel und der Typ der in der Seitenleiste anzuzeigenden Blogeinträge. Die Wahl liegt zwischen
 
    * Autoren
    * Kategorien
@@ -312,7 +310,7 @@ Insbesondere können sie:
 * Posten eines Kommentars zu einem Blogartikel
 * Bearbeiten eigener Blogartikel oder Kommentare
 * Löschen eigener Blogartikel oder Kommentare
-* Kennzeichnen von Blogartikeln oder -kommentaren anderer Benutzer
+* Kennzeichnen von Blogartikeln oder Kommentaren anderer Benutzer
 
 ![member-homepage](assets/member-homepage.png)
 
@@ -326,7 +324,7 @@ Besucher der Website, die nicht angemeldet sind, dürfen nur veröffentlichte Bl
 
 ## Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie unter [Blog-Grundlagen](/help/communities/blog-developer-basics.md) für Entwickler.
+Weitere Informationen finden Sie unter [Blog-Grundlagen](/help/communities/blog-developer-basics.md) -Seite für Entwickler.
 
 Informationen zur Moderation von Blogeinträgen und Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 

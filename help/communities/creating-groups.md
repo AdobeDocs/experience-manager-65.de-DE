@@ -1,22 +1,22 @@
 ---
 title: Community-Gruppen
-description: Erstellen von Community-Gruppen
+description: Erfahren Sie, wie Sie mit der Funktion "Community-Gruppen"von autorisierten Benutzern in der Veröffentlichungs- und Autoreninstanz dynamisch eine Subcommunity auf einer Community-Site erstellen können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '555'
 ht-degree: 3%
 
 ---
 
 # Community-Gruppen {#community-groups}
 
-Mit der Funktion &quot;Community-Gruppen&quot;kann eine Unter-Community von autorisierten Benutzern (Community-Mitgliedern und Autoren) aus der Veröffentlichungs- und Autorenumgebung dynamisch auf einer Community-Site erstellt werden.
+Die Funktion &quot;Community-Gruppen&quot;ermöglicht die dynamische Erstellung einer Subcommunity auf einer Community-Site durch autorisierte Benutzer (Community-Mitglieder und Autoren) aus der Veröffentlichungs- und Autorenumgebung.
 
 Diese Fähigkeit ist vorhanden, wenn die [Gruppenfunktion](/help/communities/functions.md#groups-function) ist im [Community-Site](/help/communities/sites-console.md) Struktur.
 
@@ -34,7 +34,7 @@ Dies ist die Seite, die beim Veröffentlichen geladen wird, wenn die **Gruppen**
 
 ![new-group](assets/new-group.png)
 
-Wenn Sie die **Neue Gruppe** angezeigt, öffnet sich ein Dialogfeld &quot;Bearbeiten&quot;.
+Wenn Sie die **Neue Gruppe** -Symbol angezeigt, wird ein Dialogfeld &quot;Bearbeiten&quot;geöffnet.
 
 Unter dem **Einstellungen** -Registerkarte die grundlegenden Funktionen der Gruppe bereitstellen:
 
@@ -72,9 +72,9 @@ Unter dem **Bild** -Registerkarte ein Bild hochladen, das auf der Seite Gruppen 
 
 ![group-image](assets/group-image.png)
 
-Durch Auswahl **Gruppe erstellen**, werden die Seiten für die Gruppe auf der Grundlage der ausgewählten Vorlage erstellt und eine Benutzergruppe für die Mitgliedschaft erstellt. Die Seite Gruppen wird aktualisiert, um die neue Unter-Community anzuzeigen.
+Durch Auswahl **Gruppe erstellen**, werden die Seiten für die Gruppe auf der Grundlage der ausgewählten Vorlage erstellt und eine Benutzergruppe für die Mitgliedschaft erstellt. Die Seite Gruppen wird aktualisiert, um die neue Subcommunity anzuzeigen.
 
-Beispielsweise wird die Seite &quot;Gruppen&quot;mit einer neuen Unter-Community mit dem Namen &quot;Fokusgruppe&quot;mit der hochgeladenen Miniaturansicht wie folgt angezeigt (noch als Community-Gruppenadministrator angemeldet):
+Beispielsweise wird die Seite &quot;Gruppen&quot;mit einer neuen Untergemeinschaft mit dem Namen &quot;Fokusgruppe&quot;, für die eine Miniaturansicht hochgeladen wurde, wie folgt angezeigt (noch als Community-Gruppenadministrator angemeldet):
 
 ![group-page](assets/group-page.png)
 

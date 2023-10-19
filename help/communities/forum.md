@@ -1,30 +1,26 @@
 ---
-title: Funktion „Forum“
-seo-title: Forum Feature
-description: Hinzufügen und Konfigurieren der Forumsfunktion
-seo-description: How to add and configure the forum feature
-uuid: e69be4e1-c9d5-4d51-8e7e-609e5460e378
+title: Forumsfunktion
+description: Erfahren Sie, wie Sie die Forumsfunktion hinzufügen und konfigurieren, die angemeldeten Community-Mitgliedern einen Bereich bietet, in dem sie Themen erstellen, anzeigen, folgen, suchen oder beantworten können.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: d936cef5-ad76-482d-97bf-c40137185812
 docset: aem65
 exl-id: 2b1a4917-9db6-436a-a5fd-c102fe41fb9d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '1216'
-ht-degree: 38%
+source-wordcount: '1219'
+ht-degree: 10%
 
 ---
 
-# Funktion „Forum“{#forum-feature}
+# Forumsfunktion{#forum-feature}
 
-## Einführung    {#introduction}
+## Einführung {#introduction}
 
-Die Forumsfunktion bietet einen Bereich, in dem angemeldete Besucher (Community-Mitglieder) in der Veröffentlichungsumgebung Folgendes tun können:
+Die Forumsfunktion bietet einen Bereich für angemeldete Site-Besucher (Community-Mitglieder) in der Veröffentlichungsumgebung, in dem Folgendes möglich ist:
 
-* Erstellen neuer Themen
+* Erstellen von Themen
 * Themen anzeigen und beantworten
 * Thema folgen
 * Forum durchsuchen
@@ -42,133 +38,133 @@ So fügen Sie eine `Forum` -Komponente auf einer Seite im Autorenmodus verwenden
 
 * `Communities / Forum`
 
-und ziehen Sie die Komponente an die gewünschte Stelle auf der Seite, auf der das Forum angezeigt werden soll.
+Ziehen Sie es an die gewünschte Stelle auf einer Seite, auf der das Forum erscheinen soll.
 
 Die erforderlichen Informationen finden Sie unter [Grundlagen zu Communities-Komponenten](/help/communities/basics.md).
 
-Wenn die [erforderliche clientseitige Bibliotheken](/help/communities/essentials-forum.md#essentials-for-client-side) eingeschlossen sind, wird die `Forum` wird angezeigt:
+Wenn die Variable [erforderliche clientseitige Bibliotheken](/help/communities/essentials-forum.md#essentials-for-client-side) eingeschlossen sind, wird die `Forum` -Komponente angezeigt:
 
 ![forum-component](assets/forum-component.png)
 
 ### Konfigurieren eines Forums {#configuring-a-forum}
 
-Wählen Sie die platzierte `Forum` -Komponente, die aufgerufen und ausgewählt werden soll `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
+Auswählen der platzierten `Forum` -Komponente, damit Sie auf die `Configure` -Symbol, über das das Dialogfeld &quot;Bearbeiten&quot;geöffnet wird.
 
 ![configure-new](assets/configure-new.png)
 
 ![forum-config](assets/forum-config.png)
 
-#### Registerkarte „Settings“ {#settings-tab}
+#### Registerkarte &quot;Einstellungen&quot; {#settings-tab}
 
-Legen Sie auf der Registerkarte **Einstellungen** die Einstellungen für Themen und Antworten fest:
+Unter dem **Einstellungen** Registerkarte Einstellungen für Themen und Antworten festlegen:
 
 * **Anhangminiatur zulassen**
 
-   Wenn diese Option aktiviert ist, wird eine Miniaturansicht des angehängten Bildes erstellt.
+  Wenn diese Option aktiviert ist, wird eine Miniaturansicht des angehängten Bildes erstellt.
 
 * **Max. Anhangminiaturgröße**
 
-   Maximale Größe (in Pixel) des Miniaturbilds des Anhangs. Der Standardwert ist 800 x 800.
+  Maximale Größe (in Pixel) des Miniaturbilds des Anhangs. Der Standardwert ist 800 x 800.
 
 * **Mindestbildgröße für Miniaturansichten**
 * **Max. Miniaturgröße**
 
-   Maximale Größe (in Pixel) des Miniaturbilds für Inline-Bilder. Der Standardwert ist 800 x 800.
+  Maximale Größe (in Pixel) des Miniaturbilds für Inline-Bilder. Der Standardwert ist 800 x 800.
 
 * **Themen pro Seite**
 
-   Legt fest, wie viele Themen/Posts pro Seite angezeigt werden. Der Standardwert ist 10.
+  Legt fest, wie viele Themen/Posts pro Seite angezeigt werden. Der Standardwert ist 10.
 
 * **Moderiert**
 
-   Wenn diese Option aktiviert ist, muss das Posten von Themen und Kommentaren genehmigt werden, bevor sie auf einer Veröffentlichungs-Site erscheinen. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, muss das Posten von Themen und Kommentaren genehmigt werden, bevor sie auf einer Veröffentlichungs-Site erscheinen können. Die Option Standard ist deaktiviert.
 
 * **Geschlossen**
 
-   Wenn diese Option aktiviert ist, können im Forum keine neuen Themen und Kommentare erstellt werden. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können im Forum keine neuen Themen und Kommentare erstellt werden. Die Option Standard ist deaktiviert.
 
 * **Rich-Text-Editor**
 
-   Wenn diese Option aktiviert ist, können Themen und Kommentare mit Markup eingegeben werden. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Themen und Kommentare mit Markup eingegeben werden. Die Option Standard ist deaktiviert.
 
 * **Tagging zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder ihrem Beitrag Tag-Beschriftungen hinzufügen (siehe **Tag-Feld** Registerkarte). Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder ihren Beiträgen Tag-Beschriftungen hinzufügen (siehe **Tag-Feld** Registerkarte). Die Option Standard ist deaktiviert.
 
 * **Datei-Uploads zulassen**
 
-   Wenn diese Option aktiviert ist, können dem Thema oder Kommentar Dateianlagen hinzugefügt werden. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können dem Thema oder Kommentar Dateianlagen hinzugefügt werden. Die Option Standard ist deaktiviert.
 
 * **Folgende zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumsbeiträge hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, fügen Sie die folgende Funktion für Forumsbeiträge hinzu, mit der Mitglieder [benachrichtigt](/help/communities/notifications.md) von neuen Stellen. Die Option Standard ist deaktiviert.
 
 * **Fixierung zulassen**
 
-   Wenn diese Option aktiviert ist, können Forumsthemen an den Anfang der Themenliste gesetzt werden. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Forumsthemen an den Anfang der Themenliste gesetzt werden. Die Option Standard ist deaktiviert.
 
 * **Feature-Inhalt zulassen**
 
-   Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, kann die Idee als [präsentierte Inhalte](/help/communities/featured.md). Die Option Standard ist deaktiviert.
 
 * **E-Mail-Abonnements zulassen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert `Allow Following` zu überprüfen und [E-Mail konfiguriert](/help/communities/email.md). Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder per E-Mail über neue Beiträge informiert werden ([Abonnement](/help/communities/subscriptions.md)). Erfordert `Allow Following` zu überprüfen und [E-Mail konfiguriert](/help/communities/email.md). Die Option Standard ist deaktiviert.
 
 * **Max. Dateigröße**
 
-   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Mit diesem Feld lässt sich die Größe (in Byte) der hochgeladenen Dateien beschränken. Der Standardwert ist 104857600 (10 MB).
+  Nur relevant, wenn `Allow File Uploads` aktiviert ist. Dieses Feld begrenzt die Größe (in Byte) einer hochgeladenen Datei. Der Standardwert ist 104857600 (10 MB).
 
 * **Zulässige Dateitypen**
 
-   Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste der zulässigen Dateierweiterungen inklusive Punkt. Beispiel: .jpg, .jpeg., png, .doc, .docx, .pdf. Wurden Dateitypen festgelegt, können Dateien nicht angegebenen Typs nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
+  Nur relevant, wenn `Allow File Uploads` aktiviert ist. Eine kommagetrennte Liste von Dateierweiterungen mit dem Trennzeichen &quot;Punkt&quot;. Beispiel: .jpg, .jpeg, .png, .doc, .docx, .pdf. Wenn Dateitypen angegeben sind, können nicht angegebene nicht hochgeladen werden. Die Standardeinstellung ist nicht so festgelegt, dass alle Dateitypen zulässig sind.
 
 * **Maximale Dateigröße für Bildanhang**
-Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Die maximal zulässige Anzahl von Bytes einer Bilddatei. Der Standardwert ist 2097152 (2 MB).
+Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anzahl der Bytes, die eine hochgeladene Bilddatei aufweisen kann. Der Standardwert ist 2097152 (2 MB).
 
 * **Antworten mit Diskussionsfaden zulassen**
 
-   Wenn diese Option aktiviert ist, erlauben Sie Antworten auf Kommentare, die zum Thema gepostet wurden. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, erlauben Sie Antworten auf Kommentare, die zum Thema gepostet wurden. Die Option Standard ist deaktiviert.
 
 * **Abstimmung zulassen**
 
-   Wenn diese Option aktiviert ist, fügen Sie die Abstimmungsfunktion in ein Thema ein. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, fügen Sie die Abstimmungsfunktion in ein Thema ein. Die Option Standard ist deaktiviert.
 
 * **Benutzern das Löschen von Anmerkungen und Themen ermöglichen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder die von ihnen veröffentlichten Kommentare und Themen löschen. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder die von ihnen veröffentlichten Kommentare und Themen löschen. Die Option Standard ist deaktiviert.
 
 * **Breadcrumbs anzeigen**
 
-   Wenn diese Option aktiviert ist, zeigen Sie Navigations-Breadcrumbs auf Themenseiten an. Diese Option ist standardmäßig aktiviert.
+  Wenn diese Option aktiviert ist, zeigen Sie Navigations-Breadcrumbs auf Themenseiten an. Die Option Standard ist aktiviert.
 
 * **Abzeichen anzeigen**
 
-   Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, zeigen Sie Earned und Assored [Badges](/help/communities/implementing-scoring.md) mit dem Blogeintrag eines Mitglieds. Die Option Standard ist deaktiviert.
 
 * **Privilegierte Mitglieder zulassen**
 
-   Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Inhalte erstellen.
+  Wenn diese Option aktiviert ist, dürfen nur privilegierte Mitglieder Inhalte erstellen.
 
 * **Zugelassene privilegierte Mitglieder**
 
-   Fügen Sie die berechtigten Mitglieder hinzu, die Inhalte erstellen dürfen.
+  Fügen Sie die berechtigten Mitglieder hinzu, die Inhalte erstellen dürfen.
 
-* **Benutzergenerierte Inhalte im Autoren-Bearbeitungsmodus blockieren**
+* **Blockieren benutzergenerierter Inhalte im Bearbeitungsmodus des Autors**
 
-   Wenn diese Option aktiviert ist, wird benutzergenerierter Inhalt bei der Bearbeitung im Autorenmodus blockiert.
+  Wenn diese Option aktiviert ist, wird benutzergenerierter Inhalt bei der Bearbeitung im Autorenmodus blockiert.
 
 * **Erwähnung aktivieren**
 
-   Wenn diese Option aktiviert ist, können registrierte Community-Benutzer andere registrierte Mitglieder (unter Verwendung von Vorname, Nachname, Benutzername) identifizieren und sie mit der gemeinsamen Syntax @user-name versehen. Die getaggten Benutzer erhalten Benachrichtigungen über ihre Erwähnungen.
+  Wenn diese Option aktiviert ist, können registrierte Community-Benutzer andere registrierte Mitglieder (unter Verwendung von Vorname, Nachname, Benutzername) identifizieren und sie mit der gemeinsamen Syntax @user-name versehen. Die getaggten Benutzer erhalten Benachrichtigungen über ihre Erwähnungen.
 
 * **Max. Erwähnungen**
 
-   Schränken Sie die maximale Anzahl der Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
+  Schränken Sie die maximale Anzahl der Erwähnungen ein, die in einem Beitrag zulässig sind. Der Standardwert ist 10.
 
 * **UI-Erwähnungsmuster**
 
-   Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel `~{{familyName}}{{givenName}}`.
+  Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel: `~{{familyName}}{{givenName}}`.
 
 >[!NOTE]
 >
@@ -176,84 +172,84 @@ Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Die maximal 
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 
-Unter dem **Benutzermoderation** -Registerkarte angeben, wie die veröffentlichten Themen und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Unter dem **Benutzermoderation** auf, geben Sie an, wie die veröffentlichten Themen und Antworten (benutzergenerierte Inhalte) verwaltet werden. Weitere Informationen finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 * **Posts ablehnen**
 
-   Wenn diese Option aktiviert ist, können Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, dürfen Moderatoren vertrauenswürdiger Mitglieder Beiträge ablehnen und verhindern, dass der Beitrag im öffentlichen Forum erscheint. Die Option Standard ist deaktiviert.
 
 * **Themen schließen/erneut öffnen**
 
-   Wenn diese Option aktiviert ist, können Moderatoren von vertrauenswürdigen Mitgliedern ein Thema schließen, um weitere Bearbeitungen und Kommentare vorzunehmen, und ein Thema möglicherweise erneut öffnen. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Moderatoren von vertrauenswürdigen Mitgliedern ein Thema schließen, um weitere Bearbeitungen und Kommentare vorzunehmen, und ein Thema möglicherweise erneut öffnen. Die Option Standard ist deaktiviert.
 
 * **Themen verschieben**
 
-   Wenn diese Option aktiviert ist, lassen Sie zu, dass Moderatoren auf Veröffentlichungsseite Themen verschieben. Diese Option ist standardmäßig aktiviert.
+  Wenn diese Option aktiviert ist, können Moderatoren auf der Veröffentlichungsseite Themen verschieben. Die Option Standard ist aktiviert.
 
 * **Posts kennzeichnen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder Themen oder Kommentare anderer Mitglieder als unangemessen kennzeichnen. Die Option Standard ist deaktiviert.
 
 * **Liste mit Kenn-zeichnungsgründen**
 
-   Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Themen oder Kommentare als unangemessen gekennzeichnet werden. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder aus einer Dropdown-Liste den Grund auswählen, aus dem Themen oder Kommentare als unangemessen gekennzeichnet werden. Die Option Standard ist deaktiviert.
 
 * **Grund für benutzerdefinierte Kennzeichnung**
 
-   Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung eines Themas oder Kommentars als unangemessen eingeben. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, können Mitglieder einen eigenen Grund für die Kennzeichnung eines Themas oder Kommentars als unangemessen eingeben. Die Option Standard ist deaktiviert.
 
 * **Schwellenwert für Moderation**
 
-   Geben Sie an, wie oft ein Thema oder Kommentar von Mitgliedern gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist 1 (einmal).
+  Geben Sie an, wie oft ein Thema oder Kommentar von Mitgliedern gekennzeichnet werden muss, bevor Moderatoren benachrichtigt werden. Der Standardwert ist 1 (einmal).
 
 * **Kennzeichnungslimit**
 
-   Geben Sie an, wie oft ein Thema oder Kommentar gekennzeichnet werden muss, bevor er in der öffentlichen Ansicht ausgeblendet wird. Bei einem Wert von -1 wird das gekennzeichnete Thema oder der gekennzeichnete Kommentar nie ausgeblendet. In allen anderen Fällen muss der Wert größer als der oder gleich dem „Schwellenwert für Moderation“ sein. Der Standardwert ist 5.
+  Geben Sie an, wie oft ein Thema oder Kommentar gekennzeichnet werden muss, bevor er in der öffentlichen Ansicht ausgeblendet wird. Wenn der Wert auf -1 festgelegt ist, wird das gekennzeichnete Thema oder der Kommentar nie aus der öffentlichen Ansicht ausgeblendet. Andernfalls muss diese Zahl größer oder gleich dem Schwellenwert für Moderation sein. Der Standardwert ist 5.
 
 #### Registerkarte &quot;Tag-Feld&quot; {#tag-field-tab}
 
-Auf der Registerkarte **Tag-Feld** wird eingeschränkt, welche Tags je nach ausgewähltem Namespace (falls auf der Registerkarte **Einstellungen** aktiviert) verwendet werden können.
+Unter dem **Tag-Feld** Registerkarte die Tags, die angewendet werden können, sofern dies unter der Variablen **Einstellungen** Registerkarte, sind entsprechend den ausgewählten Namespaces begrenzt.
 
-* **Zulässige Namespaces**
+* **Zugelassene Namespaces**
 
-   Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die verwendbaren Tags sind auf die ausgewählten Namespace-Kategorien beschränkt. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) sowie &quot;Alle Tags einschließen&quot;. Standardmäßig ist die Option nicht aktiviert, es sind also alle Namespaces zulässig.
+  Relevant, wenn `Allow Tagging` wird unter dem **Einstellungen** Registerkarte. Die Tags, die angewendet werden können, beschränken sich auf die Tags innerhalb der aktivierten Namespace-Kategorien. Die Liste der Namespaces umfasst &quot;Standard-Tags&quot;(den Standard-Namespace) und &quot;Alle Tags einschließen&quot;. Der Standardwert ist &quot;none&quot;, was bedeutet, dass alle Namespaces zulässig sind.
 
 * **Empfehlungsgrenze**
 
-   Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Standardwert ist **-**1 (keine Beschränkungen).
+  Geben Sie die Anzahl der Tags ein, die als Vorschlag für das Mitglied angezeigt werden sollen, das im Forum veröffentlicht wird. Der Standardwert ist **-**1 (keine Beschränkungen).
 
 #### Tab &quot;Übersetzung&quot; {#translation-tab}
 
-Auf der Registerkarte **Übersetzung** können Sie festlegen, ob bei für die Community-Site aktivierter Übersetzungsoption der gesamte Thread oder nur bestimmte Posts übersetzt werden sollen.
+Unter dem **Übersetzung** -Registerkarte, wenn die Übersetzung für die Community-Site aktiviert ist, kann die Übersetzung so eingestellt sein, dass das gesamte Thema oder ausgewählte Beiträge übersetzt werden.
 
 * **Alles übersetzen**
 
-   Wenn diese Option aktiviert ist, wird der Forum-Thread in die bevorzugte Sprache des Benutzers übersetzt. Diese Option ist standardmäßig deaktiviert.
+  Wenn diese Option aktiviert ist, wird der Forum-Thread in die bevorzugte Sprache des Benutzers übersetzt. Die Option Standard ist deaktiviert.
 
 #### Registerkarte &quot;Sortiereinstellungen&quot; {#sort-settings-tab}
 
 Unter dem **Sortiereinstellungen** festlegen, wie die veröffentlichten Kommentare sortiert werden, wenn sie angezeigt werden.
 
-* **Sortierfolge**
+* **Sortieren nach**
 
-   Aktivieren Sie alle zulässigen Sortierauswahlen : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Der Standardwert ist `Newest, Oldest, Last Updated`.
+  Aktivieren Sie alle zulässigen Sortierauswahlen : `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Der Standardwert ist `Newest, Oldest, Last Updated`.
 
 * **Als Standard festlegen**
 
-   Ziehen Sie den Mauszeiger nach unten, um eine der aktivierten Sortieroptionen auszuwählen, die als Standard angezeigt werden sollen. Der Standardwert ist `Newest`.
+  Ziehen Sie den Mauszeiger nach unten, um eine der aktivierten Sortieroptionen auszuwählen, die als Standard angezeigt werden sollen. Der Standardwert ist `Newest`.
 
 * **Zeitoptionen für Analytics-Sortierung auswählen**
 
-   Ziehen Sie den Mauszeiger nach unten, um eine der folgenden Optionen auszuwählen: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
+  Ziehen Sie den Mauszeiger nach unten, um eine der folgenden Optionen auszuwählen: `All, Last 24 Hours, Last 7 Days, Last 30 Days`.
 
-   Der Standardwert ist `All`.
+  Der Standardwert ist `All`.
 
 ### Zusätzliche Informationen {#additional-information}
 
-Weitere Informationen finden Sie auf der Entwickler-Seite [Forumsgrundlagen](/help/communities/essentials-forum.md).
+Weitere Informationen finden Sie unter [Forumsgrundlagen](/help/communities/essentials-forum.md) -Seite für Entwickler.
 
-Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderation benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
+Informationen zur Moderation von veröffentlichten Themen und Kommentaren finden Sie unter [Moderieren benutzergenerierter Inhalte](/help/communities/moderate-ugc.md).
 
 Informationen zum Tagging von veröffentlichten Themen und Kommentaren finden Sie unter [Tagging benutzergenerierter Inhalte](/help/communities/tag-ugc.md).
 
-Informationen zur Übersetzung von veröffentlichten Themen und Kommentaren finden Sie unter [Übersetzung benutzergenerierter Inhalte](/help/communities/translate-ugc.md).
+Informationen zur Übersetzung von veröffentlichten Themen und Kommentaren finden Sie unter [Übersetzen benutzergenerierter Inhalte](/help/communities/translate-ugc.md).
