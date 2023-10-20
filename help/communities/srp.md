@@ -1,14 +1,14 @@
 ---
 title: Übersicht über den Speicheranbieter
-description: Gemeinsame Speicherung für Communities
+description: Erfahren Sie, wie Community-Inhalte, auch als benutzergenerierte Inhalte (UGC) bezeichnet, in einem einfachen, gemeinsamen Speicher gespeichert werden, der von einem Speicherressourcenanbieter (SRP) bereitgestellt wird.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Alle SCF-Komponenten werden mithilfe der SRP-API implementiert, sodass Code ohne
 
 >[!NOTE]
 >
->**Benutzerdefinierte Komponenten**: Für lizenzierte Kunden von AEM Communities steht die SRP-API Entwicklern von benutzerdefinierten Komponenten für den Zugriff auf UGC zur Verfügung, unabhängig von der zugrunde liegenden Topologie. Siehe [Grundlagen zu SRP und UGC](srp-and-ugc.md).
+>**Benutzerdefinierte Komponenten**: Für lizenzierte Kunden von AEM Communities steht die SRP-API Entwicklern benutzerdefinierter Komponenten für den Zugriff auf UGC zur Verfügung, unabhängig von der zugrunde liegenden Topologie. Siehe [Grundlagen zu SRP und UGC](srp-and-ugc.md).
 
 Siehe auch:
 
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
 * [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Kodierungsrichtlinien.
 * [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.
 
@@ -53,7 +53,7 @@ Nachdem Sie Site-Inhalte in der privaten Autorenumgebung entwickelt haben, müss
 
 Für UGC wird der Inhalt von registrierten Site-Besuchern (Community-Mitgliedern) in der öffentlichen Veröffentlichungsumgebung eingegeben. Dies geschieht zufällig.
 
-Für die Verwaltung und Berichterstellung ist es nützlich, von der privaten Autorenumgebung aus Zugriff auf UGC zu haben. Mit SRP ist der Zugriff auf UGC vom Autor konsistenter und leistungsfähiger, da die Rückwärtsreplikation von der Veröffentlichung zum Autor nicht erforderlich ist.
+Für die Verwaltung und Berichterstellung ist es nützlich, von der privaten Autorenumgebung aus Zugriff auf UGC zu haben. Mit SRP ist der Zugriff auf UGC aus der Autoreninstanz konsistenter und leistungsfähiger, da die Rückwärtsreplikation von der Veröffentlichungs- zur Autoreninstanz nicht erforderlich ist.
 
 ## Über SRP {#about-srp}
 
@@ -67,17 +67,17 @@ Wenn UGC im freigegebenen Speicher gespeichert wird, gibt es eine einzelne Insta
 
 ### ASRP {#asrp}
 
-Wenn ASRP vorhanden ist, wird UGC nicht in JCR gespeichert, sondern in einem Cloud-Service gespeichert, der von Adobe gehostet und verwaltet wird. In ASRP gespeicherte benutzergenerierte Inhalte können nicht mit CRXDE Lite angezeigt oder mit der JCR-API aufgerufen werden.
+Wenn ASRP vorhanden ist, wird UGC nicht in JCR gespeichert, sondern in einem Cloud-Service gespeichert, der von Adobe gehostet und verwaltet wird. In ASRP gespeicherte benutzergenerierte Inhalte können unter Umständen nicht mit CRXDE Lite angezeigt oder mit der JCR-API aufgerufen werden.
 
 Siehe [ASRP - Adobe Storage Resource Provider](asrp.md).
 
 Entwickler können nicht direkt auf die UGC zugreifen.
 
-ASRP verwendet Adobe Cloud für Abfragen.
+ASRP verwendet Adobe-Cloud für Abfragen.
 
 ### MSRP {#msrp}
 
-Wenn dies der Fall ist, wird MSRP, UGC nicht in JCR gespeichert, sondern in MongoDB gespeichert. In MSRP gespeicherte benutzergenerierte Inhalte können nicht mit CRXDE Lite angezeigt oder mit der JCR-API aufgerufen werden.
+Wenn dies der Fall ist, wird MSRP, UGC nicht in JCR gespeichert, sondern in MongoDB gespeichert. In MSRP gespeicherte benutzergenerierte Inhalte können unter Umständen nicht mit CRXDE Lite angezeigt oder mit der JCR-API aufgerufen werden.
 
 Siehe [MSRP - MongoDB Storage Resource Provider](msrp.md).
 
@@ -91,9 +91,9 @@ JSRP ist der Standardanbieter für den Zugriff auf alle benutzergenerierten Inha
 
 Siehe [JSRP - JCR Storage Resource Provider](jsrp.md).
 
-Wenn es JSRP gibt, während UGC in JCR gespeichert ist und sowohl über die CRXDE Lite als auch die JCR-API zugänglich ist, wird empfohlen, dazu niemals die JCR-API zu verwenden. Andernfalls können sich zukünftige Änderungen auf benutzerdefinierten Code auswirken.
+Wenn JSRP vorhanden ist, während UGC in JCR gespeichert ist und er in der CRXDE Lite- und JCR-API verfügbar ist, empfiehlt Adobe, dazu niemals die JCR-API zu verwenden. Wenn Sie dies tun, können sich zukünftige Änderungen auf benutzerdefinierten Code auswirken.
 
-Außerdem wird das Repository für die Autoren- und Veröffentlichungsumgebungen nicht freigegeben. Während ein Cluster von Veröffentlichungsinstanzen zu einem freigegebenen Veröffentlichungs-Repository führt, ist in der Veröffentlichungsinstanz eingegebener UGC nicht in der Autoreninstanz sichtbar, sodass keine Möglichkeit besteht, benutzergenerierte Inhalte von der Autoreninstanz aus zu verwalten. UGC wird nur im AEM Repository (JCR) der Instanz beibehalten, in der es eingegeben wurde.
+Außerdem wird das Repository für die Autoren- und Veröffentlichungsumgebung nicht freigegeben. Während ein Cluster von Veröffentlichungsinstanzen zu einem freigegebenen Veröffentlichungs-Repository führt, ist in der Veröffentlichungsinstanz eingegebener benutzergenerierter Inhalt in der Autoreninstanz nicht sichtbar, sodass keine Möglichkeit besteht, benutzergenerierte Inhalte von der Autoreninstanz aus zu verwalten. UGC wird nur im AEM-Repository (JCR) der Instanz beibehalten, in der es eingegeben wurde.
 
 JSRP verwendet die Oak-Indizes für Abfragen.
 
@@ -104,19 +104,19 @@ Shadow-Knoten, die den Pfad zu UGC imitieren, sind im lokalen Repository vorhand
 1. [Zugriffskontrolle (ACLs)](#for-access-control-acls)
 1. [Nicht vorhandene Ressourcen (NERs)](#for-non-existing-resources-ners)
 
-Unabhängig von der SRP-Implementierung ist der tatsächliche UGC *nicht *am selben Speicherort wie der Shadow-Knoten sichtbar.
+Unabhängig von der SRP-Implementierung lautet die tatsächliche UGC *not* an derselben Stelle wie der Shadow-Knoten angezeigt.
 
 ### Für Zugriffskontrolle (ACLs) {#for-access-control-acls}
 
 Einige SRP-Implementierungen wie ASRP und MSRP speichern Community-Inhalte in Datenbanken, die keine ACL-Verifizierung bieten. Shadow-Knoten bieten einen Speicherort im lokalen Repository, auf den ACLs angewendet werden können.
 
-Mithilfe der SRP-API führen alle SRP-Optionen vor allen CRUD-Vorgängen dieselbe Prüfung der Shadow-Position durch.
+Mithilfe der SRP-API führen alle SRP-Optionen dieselbe Prüfung der Shadow-Position vor allen CRUD-Vorgängen durch.
 
 Die ACL-Prüfung verwendet eine Dienstprogrammmethode, die einen Pfad zurückgibt, der zum Überprüfen der auf die UGC der Ressource angewendeten Berechtigungen geeignet ist.
 
 Siehe [Grundlagen zu SRP und UGC](srp-and-ugc.md) für Beispielcode.
 
-### Für nicht vorhandene Ressourcen (NERs) {#for-non-existing-resources-ners}
+### Für nicht vorhandene Ressourcen (NER) {#for-non-existing-resources-ners}
 
 Einige Communities-Komponenten sind in einem Skript enthalten und erfordern daher einen adressierbaren Sling-Knoten, um Communities-Funktionen zu unterstützen. [Enthaltene Komponenten](scf.md#add-or-include-a-communities-component) werden als nicht vorhandene Ressourcen (NER) bezeichnet.
 

@@ -1,22 +1,22 @@
 ---
 title: Übersicht über AEM Communities
-description: Überblick über AEM Communities-Funktionen und -Einrichtung
+description: Erfahren Sie mehr über die Grundlagen der Funktionen und Einrichtung von Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1267'
 ht-degree: 2%
 
 ---
 
 # Übersicht über AEM Communities {#aem-communities-overview}
 
-Adobe Experience Manager (AEM) Communities bieten die Möglichkeit, schnell eine On-Premise-Community-Site zu erstellen, die die Leistung verbessert, das Site-Management verbessert und die Konversion von Site-Besuchern in wertvolle Community-Mitglieder fördert.
+Mit Adobe Experience Manager (AEM) Communities können Sie schnell eine On-Premise-Community-Site erstellen, die die Leistung verbessert, das Site-Management verbessert und die Konversion von Site-Besuchern in wertvolle Community-Mitglieder fördert.
 
 ## Communities-Funktionen {#communities-features}
 
@@ -25,15 +25,15 @@ AEM Communities ermöglicht die Entwicklung einer Beziehung zu Site-Besuchern, d
 * **Informationen** durch Blogs, Fragen und Antworten und Ereigniskalender,
 * while **Gewinnen von Einblicken** durch Foren, Kommentare und andere Community-Inhalte, häufig als benutzergenerierte Inhalte (UGC) bezeichnet.
 * Sie ermöglicht **Moderation** von vertrauenswürdigen Mitgliedern in der Veröffentlichungsumgebung,
-* **Social-Anmeldung** mit Twitter und Facebook,
+* **Social-Anmeldung** mit Twitter und Facebook
 * **Inline-Übersetzung** von Community-Inhalten,
 * **Community-Gruppen erstellen** von der veröffentlichten Community-Site aus,
-* **Scoring** Vergabe von Abzeichen,
+* **Bewertung** Vergabe von Abzeichen,
 * **Dateifreigabe**,
 * **Benachrichtigungen** und **Aktivitätsströme**,
 * Ermöglicht **Tagging** (@mention) anderen registrierten Mitgliedern in benutzergenerierten Inhalten, um deren Aufmerksamkeit zu erregen.
 
-Communities-Funktionen können mithilfe der [AEM Demomaschine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) öffentlich auf GitHub.com oder mit der neuen We.Retail-Referenzimplementierung verfügbar.
+Communities-Funktionen können mithilfe der [AEM Demomaschine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) öffentlich unter GitHub.com oder mit dem neuen `We.Retail` Referenzimplementierung.
 
 ## Community-Sites {#community-sites}
 
@@ -54,26 +54,26 @@ Die [Assistent zur Site-Erstellung](/help/communities/sites-console.md):
 
 * Bietet wichtige Funktionen:
 
-   * Responsives Design: uses [Twitter Bootstrap-Designs](https://getbootstrap.com)
+   * Responsives Design: verwendet [Twitter Bootstrap themes](https://getbootstrap.com)
 
    * Anmelden : Selbstregistrierung, [Social-Anmeldung](/help/communities/social-login.md), Benutzerprofile
 
-      * Benachrichtigungen: -Mitglieder sehen Ereignisse, die für sie relevant sind, und benutzergenerierte Inhalte, in denen sie [@mention](/help/communities/overview.md#mentionssupport).
+      * Benachrichtigungen: Mitglieder sehen Ereignisse, die für sie relevant sind, und benutzergenerierte Inhalte, wo sie sind [@mention](/help/communities/overview.md#mentionssupport).
 
-      * Messaging: -Mitglieder können Nachrichten innerhalb der Community-Site senden oder empfangen.
-      * Suchen: Möglichkeit, innerhalb der Community-Site zu suchen.
+      * Messaging: Mitglieder können Nachrichten auf der Community-Site senden oder empfangen.
+      * Suche: Möglichkeit, innerhalb der Community-Site zu suchen.
       * Sprachwechsel: Möglichkeit, eine Sprache für eine [mehrsprachige Site](/help/sites-administering/translation.md).
 
-      * Administration: Zugriff für autorisierte Mitglieder, um Benutzer innerhalb der Community-Site zu moderieren und zu verwalten.
+      * Administration: Zugriff für autorisierte Mitglieder, um Benutzer auf der Community-Site zu moderieren und zu verwalten.
 
 * Beseitigt viele Bearbeitungsschritte auf Seitenebene:
 
    * Branding: optionaler Upload eines Bannerbilds für die Anzeige auf allen Seiten der Community-Site
-   * Navigationsmenü: Navigations-Links werden für die Funktionen bereitgestellt, die in der Community-Site-Vorlage enthalten sind.
+   * Navigationsmenü: Navigationslinks werden für die Funktionen bereitgestellt, die in der Community-Site-Vorlage enthalten sind.
 
 Um die einfache Erstellung einer Community-Site zu erleben, besuchen Sie [Erste Schritte mit AEM Communities](/help/communities/getting-started.md).
 
-## Persistenz von Community-Inhalten {#community-content-persistence}
+## Community-Inhaltspersistenz {#community-content-persistence}
 
 Um die Leistung und Synchronisierung von Community-Inhalten zu verbessern, erfordert AEM Communities einen gemeinsamen Speicher, der speziell für benutzergenerierte Inhalte (UGC) verwendet wird, die von allen AEM (Autoren- und Veröffentlichungsinstanzen) gemeinsam verwendet werden.
 
@@ -89,7 +89,7 @@ Weitere Informationen zur Persistenz von Community-Inhalten und zu empfohlenen B
 
 In der Autorenumgebung bietet die globale Navigationskonsole Zugriff auf die [Communities-Konsole](/help/communities/consoles.md), der Folgendes enthält:
 
-* die [Sites](/help/communities/sites-console.md)-Konsole
+* [Sites](/help/communities/sites-console.md)-Konsole
 
    * Site-Erstellung
    * Site-Bearbeitung
@@ -103,9 +103,9 @@ In der Autorenumgebung bietet die globale Navigationskonsole Zugriff auf die [Co
 
 * [Mitglieder und Gruppen](/help/communities/members.md) Verwaltungskonsolen
 
-   * Bietet die Möglichkeit, in der Autorenumgebung veröffentlichungsseitige Benutzer (Mitglieder) zu erstellen und zu verwalten.
-   * Bietet die Möglichkeit, Mitglieder zu verbieten.
-   * Bietet die Möglichkeit, in der Autorenumgebung veröffentlichungsseitige Benutzergruppen (Mitgliedergruppen) zu erstellen und zu verwalten.
+   * Ermöglicht das Erstellen und Verwalten von Benutzern (Mitgliedern) auf der Veröffentlichungsseite über die Autorenumgebung.
+   * Ermöglicht es Ihnen, Mitglieder zu verbieten.
+   * Ermöglicht die Erstellung und Verwaltung von auf der Veröffentlichungsseite befindlichen Benutzergruppen (Mitgliedergruppen) in der Autorenumgebung.
 
 * [Berichte](/help/communities/reports.md) console
 
@@ -137,7 +137,7 @@ Die globale Tools-Konsole bietet Zugriff auf die folgenden Communities-Tools:
 
 Die Erstellung von Community-Sites basiert auf der Auswahl einer Community-Site-Vorlage, um schnell eine Community-Site einzurichten, die unabhängig von einer Beispiel-Site ist.
 
-Eine Community-Site-Vorlage bestehend aus Community-Funktionen und Community-Gruppenvorlagen bietet die Struktur für eine Community-Site, einschließlich Anmelde-, Benutzer-, Messaging-, Site-Menü-, Such-, Themen- und Branding-Funktionen.
+Eine Community-Site-Vorlage, die aus Community-Funktionen und Community-Gruppenvorlagen besteht, bietet die Struktur für eine Community-Site. Es umfasst Anmelde-, Benutzerprofile-, Messaging-, Site-Menü-, Such-, Themen- und Branding-Funktionen.
 
 Siehe [Site-Vorlagen-Konsole](/help/communities/sites.md).
 
@@ -160,7 +160,7 @@ Das Erstellen einer Community-Gruppe erfordert die Auswahl einer Community-Grupp
 Siehe auch:
 
 * [Site-Gruppenkonsole](/help/communities/groups.md) zum Erstellen von Untergruppen in der Autorenumgebung.
-* [Gruppenvorlagen-Konsole](/help/communities/tools-groups.md) zum Erstellen der Site-Struktur für Gruppen.
+* [Gruppenvorlagen-Konsole](/help/communities/tools-groups.md) zum Erstellen von Site-Strukturen für Gruppen.
 * [Erste Schritte mit AEM Communities](/help/communities/getting-started.md) für ein Tutorial zum schnellen Erstellen einer Community-Site mit verschachtelten Gruppen.
 
 ## Community-Komponenten {#community-components}
@@ -204,7 +204,7 @@ Die AEM Demomaschine umfasst:
 
 * Zu installierende Pakete.
 
-Die AEM Demo Machine wurde erfolgreich mit CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 und AEM 6.4 unter Windows, MacOS und Linux® getestet.
+Die AEM Demo Machine wurde erfolgreich mit CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 und AEM 6.4 unter Windows, macOS und Linux® getestet.
 
 Für AEM Demo Machine ist eine gültige AEM Lizenz erforderlich.
 
@@ -214,7 +214,7 @@ Für AEM Demo Machine ist eine gültige AEM Lizenz erforderlich.
 
 ## Dokumentation zu AEM Communities {#aem-communities-documentation}
 
-* Besuch [Bereitstellen von Communities](deploy-communities.md) , um mehr über empfohlene Bereitstellungen zu erfahren.
-* Besuch [Verwalten von Communities-Sites](administer-landing.md) , um mehr über das Erstellen einer Community-Site, das Hinzufügen von Community-Gruppen, das Konfigurieren von Community-Site-Vorlagen, das Moderieren von Community-Inhalten, das Verwalten von Mitgliedern, Tagging, Benachrichtigungen, Scoring und Abzeichen zu erfahren.
-* Besuch [Entwickeln von Communities](communities.md) , um mehr über das Social-Komponenten-Framework (SCF) zu erfahren und Communities-Komponenten und -Funktionen anzupassen.
-* Besuch [Erstellen von Communities-Komponenten](author-communities.md) , um zu erfahren, wie Sie Communities-Komponenten erstellen und konfigurieren.
+* Besuch [Bereitstellen von Communities](deploy-communities.md) wo Sie mehr über empfohlene Bereitstellungen erfahren können.
+* Besuch [Verwalten von Communities-Sites](administer-landing.md) Hier erfahren Sie mehr über das Erstellen einer Community-Site, das Hinzufügen von Community-Gruppen, das Konfigurieren von Community-Site-Vorlagen, das Moderieren von Community-Inhalten, das Verwalten von Mitgliedern, Tagging, Benachrichtigungen, Scoring und Abzeichen.
+* Besuch [Entwickeln von Communities](communities.md) Hier erfahren Sie mehr über das Social Component Framework (SCF) und das Anpassen von Communities-Komponenten und -Funktionen.
+* Besuch [Erstellen von Communities-Komponenten](author-communities.md) Hier erfahren Sie, wie Sie Communities-Komponenten erstellen und konfigurieren.

@@ -1,35 +1,31 @@
 ---
-title: Erstellen einer neuen Community-Site
-seo-title: Author a New Community Site
-description: Erstellen einer neuen AEM Communities-Site
-seo-description: How to author a new AEM Communities site
-uuid: 4f609f5f-ef07-44fc-aeb3-1c616e120d46
+title: Verfassen einer Community-Site
+description: Erfahren Sie, wie Sie eine Adobe Experience Manager Communities-Site erstellen.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1601'
+source-wordcount: '1578'
 ht-degree: 3%
 
 ---
 
-# Erstellen einer neuen Community-Site{#author-a-new-community-site}
+# Verfassen einer Community-Site{#author-a-new-community-site}
 
 ## Community-Site erstellen {#create-a-community-site}
 
-Verwenden Sie die Autoreninstanz, um eine Community-Site zu erstellen. In der AEM-Autoreninstanz:
+Verwenden Sie die Autoreninstanz, um eine Community-Site zu erstellen. In AEM Autoreninstanz:
 
 1. Melden Sie sich mit Administratorrechten an.
 1. Navigieren Sie von der globalen Navigation zu **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 
 Die Communities Sites-Konsole bietet einen Assistenten, der Sie durch die Schritte zum Erstellen einer Community-Site führt. Es ist möglich, `Next` Schritt oder `Back` in den vorherigen Schritt, bevor die Site im letzten Schritt übergeben wird.
 
-So erstellen Sie eine neue Community-Site:
+So erstellen Sie eine Community-Site:
 
 * Wählen Sie die `Create` Schaltfläche.
 
@@ -44,17 +40,17 @@ Im [Schritt &quot;Site-Vorlage&quot;](/help/communities/sites-console.md#step201
 * **Community-Site-Titel**: `Getting Started Tutorial`
 * **Community-Site-Beschreibung**: `A site for engaging with the community.`
 * **Community-Site-Stammordner**: (Leer lassen für Standardstamm `/content/sites`)
-* **Cloud-Konfigurationen**: (Lassen Sie das Feld leer, wenn keine Cloud-Konfigurationen angegeben sind) geben Sie den Pfad zu den angegebenen Cloud-Konfigurationen an.
-* **Community-Site-Basissprache**: (lassen Sie für eine einzelne Sprache unberührt: Englisch) verwenden Sie die Dropdownliste, um eine Auswahl zu treffen. *oder mehr* Basissprachen aus den verfügbaren Sprachen: Deutsch, Italienisch, Französisch, Japanisch, Spanisch, Portugiesisch (Brasilien), Chinesisch (Traditionell) und Chinesisch (vereinfacht). Für jede hinzugefügte Sprache wird eine Community-Site erstellt, die gemäß den Best Practices unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md). Die Stammseite jeder Site enthält eine untergeordnete Seite mit dem Namen des Sprachcodes einer der ausgewählten Sprachen, z. B. &quot;en&quot;für Englisch oder &quot;fr&quot;für Französisch.
+* **Cloud-Konfigurationen**: (Lassen Sie das Feld leer, wenn keine Cloud-Konfigurationen angegeben sind) Geben Sie den Pfad zu den angegebenen Cloud-Konfigurationen an.
+* **Community-Site-Basissprache**: (Für eine Sprache unberührt lassen: Englisch) Wählen Sie in der Dropdown-Liste eine Sprache aus. *oder mehr* Basissprachen aus den verfügbaren Sprachen: Deutsch, Italienisch, Französisch, Japanisch, Spanisch, Portugiesisch (Brasilien), Chinesisch (Traditionell) und Chinesisch (vereinfacht). Eine Community-Site wird für jede hinzugefügte Sprache erstellt und befindet sich im selben Site-Ordner gemäß den Best Practices, die unter [Übersetzen von Inhalten für mehrsprachige Sites](/help/sites-administering/translation.md). Die Stammseite jeder Site enthält eine untergeordnete Seite mit dem Namen des Sprachcodes einer der ausgewählten Sprachen, z. B. &quot;en&quot;für Englisch oder &quot;fr&quot;für Französisch.
 
-* **Community-Site-Name**: interagieren
+* **Community-Site-Name**: engage
 
    * Überprüfen Sie den Namen, da er nach der Erstellung der Site nicht einfach geändert werden kann.
    * Die ursprüngliche URL wird unter dem Community-Site-Namen angezeigt
    * Hängen Sie für eine gültige URL einen Basissprachcode an + &quot;.html&quot;.
    * *Beispiel*, https://localhost:4502/content/sites/ `engage/en.html`
 
-* **Vorlage**: nach unten ziehen, um `Reference Site`
+* **Vorlage**: Pulldown zur Auswahl `Reference Site`
 
 * Wählen Sie **Weiter** aus.
 
@@ -64,7 +60,7 @@ Der Schritt &quot;Design&quot;wird in zwei Abschnitten zur Auswahl des Designs u
 
 #### SITE-THEMA DER GEMEINSCHAFT {#community-site-theme}
 
-Wählen Sie den gewünschten Stil aus, der auf die Vorlage angewendet werden soll. Wenn diese Option aktiviert ist, wird das Design mit einem Häkchen überlagert.
+Wählen Sie den gewünschten Stil aus, den Sie auf die Vorlage anwenden möchten. Wenn diese Option aktiviert ist, wird das Design mit einem Häkchen überlagert.
 
 #### GEMEINSCHAFTLICHE SITE-BRANCHE {#community-site-branding}
 
@@ -78,17 +74,17 @@ Wählen Sie **Weiter** aus.
 
 ### Schritt 3: Einstellungen {#step-settings}
 
-Im Schritt Einstellungen vor Auswahl von `Next`Beachten Sie, dass es sieben Abschnitte gibt, die Zugriff auf Konfigurationen bieten, die die Benutzerverwaltung, Tagging, Moderation, Gruppenverwaltung, Analyse und Übersetzung betreffen.
+Im Schritt Einstellungen vor Auswahl von `Next`Es gibt sieben Abschnitte, die Zugriff auf Konfigurationen bieten, die die Benutzerverwaltung, Tagging, Moderation, Gruppenverwaltung, Analyse und Übersetzung umfassen.
 
 #### User Management {#user-management}
 
 Aktivieren Sie alle Kontrollkästchen für [Benutzerverwaltung](/help/communities/sites-console.md#user-management)
 
-* So lassen Sie die Selbstregistrierung von Site-Besuchern zu
-* So ermöglichen Sie es Site-Besuchern, die Site anzuzeigen, ohne sich anzumelden
+* So können sich Site-Besucher selbstregistrieren
+* So können Besucher der Site die Site anzeigen, ohne sich anzumelden
 * So können Mitglieder Nachrichten von anderen Community-Mitgliedern senden und empfangen
-* So lassen Sie die Anmeldung mit Facebook zu, anstatt ein Profil zu registrieren und zu erstellen
-* So lassen Sie die Anmeldung mit Twitter zu, anstatt ein Profil zu registrieren und zu erstellen
+* So lassen Sie die Anmeldung mit Facebook statt der Registrierung und Erstellung eines Profils zu
+* So lassen Sie die Anmeldung mit Twitter statt der Registrierung und Erstellung eines Profils zu
 
 >[!NOTE]
 >
@@ -98,7 +94,7 @@ Aktivieren Sie alle Kontrollkästchen für [Benutzerverwaltung](/help/communitie
 
 #### TAGGING {#tagging}
 
-Die Tags, die auf Community-Inhalte angewendet werden können, werden durch die Auswahl AEM Namespaces gesteuert, die zuvor durch die [Tagging-Konsole](/help/sites-administering/tags.md#tagging-console) (z. B. [Tutorial-Namespace](/help/communities/setup.md#create-tutorial-tags)).
+Die Tags, die auf Community-Inhalte angewendet werden, werden durch die Auswahl AEM Namespaces gesteuert, die zuvor durch die [Tagging-Konsole](/help/sites-administering/tags.md#tagging-console) (z. B. [Tutorial-Namespace](/help/communities/setup.md#create-tutorial-tags)).
 
 Die Suche nach Namespaces ist mit der Typvorsuche einfach. Beispiel:
 
@@ -132,7 +128,7 @@ Globale Standardeinstellungen akzeptieren für [moderieren](/help/communities/si
 
 #### ANALYTICS {#analytics}
 
-Wenn Adobe Analytics lizenziert ist und ein Analytics-Cloud-Service und -Framework konfiguriert wurden, können Sie Analytics aktivieren und das Framework auswählen.
+Wenn Adobe Analytics lizenziert ist und ein Analytics Cloud-Dienst und -Framework konfiguriert wurden, können Sie Analytics aktivieren und das Framework auswählen.
 
 Siehe [Analytics-Konfiguration für Communities-Funktionen](/help/communities/analytics.md).
 
@@ -140,18 +136,18 @@ Siehe [Analytics-Konfiguration für Communities-Funktionen](/help/communities/an
 
 #### ÜBERSETZUNG {#translation}
 
-Die [Übersetzungsparameter](/help/communities/sites-console.md#translation) Geben Sie die Basissprache für die Site an, ob UGC übersetzt werden darf oder nicht und in welche Sprache, falls dies der Fall ist.
+Die [Übersetzungsparameter](/help/communities/sites-console.md#translation) Geben Sie die Basissprache für die Site an, ob UGC übersetzt werden kann und in welche Sprache, falls ja.
 
 * Überprüfen **Maschinelle Übersetzung zulassen**
 * Behalten Sie die für die Übersetzung ausgewählten Standardsprachen beim standardmäßigen Dienst für maschinelle Übersetzung bei.
-* Behalten Sie den Standard-Übersetzungsanbieter bei und konfigurieren Sie ihn.
+* Behalten Sie den standardmäßigen Übersetzungsanbieter und die Konfiguration bei
 * Ein globaler Store ist nicht erforderlich, da es keine Sprachkopien gibt
 * Auswählen **Gesamte Seite übersetzen**
 * Behalten Sie die Standardpersistenzoption bei
 
 ![translation-settings](assets/translation-settings.png)
 
-### Schritt 4: Community-Site erstellen {#step-create-communities-site}
+### Schritt 4: Erstellen der Communities-Site {#step-create-communities-site}
 
 Wählen Sie **Erstellen.**
 
@@ -177,24 +173,23 @@ Von links nach rechts sind sie:
 
 * **Site öffnen**
 
-   Wählen Sie das Stiftsymbol aus, um die Community-Site im Bearbeitungsmodus für Autoren zu öffnen, um Seitenkomponenten hinzuzufügen und/oder zu konfigurieren
+  Wenn Sie das Stiftsymbol auswählen, wird die Community-Site im Bearbeitungsmodus &quot;Autor&quot;geöffnet, in dem Sie Seitenkomponenten hinzufügen oder konfigurieren können.
 
 * **Site bearbeiten**
 
-   Wählen Sie das Eigenschaftensymbol aus, um die Community-Site zur Änderung von Eigenschaften wie dem Titel oder zum Ändern des Designs zu öffnen.
+  Wenn Sie das Eigenschaftensymbol auswählen, wird die Community-Site zum Ändern von Eigenschaften wie dem Titel oder zum Ändern des Designs geöffnet.
 
 * **Site veröffentlichen**
 
-   Wählen Sie das Weltsymbol aus, um die Community-Site zu veröffentlichen (z. B. wenn Ihr Veröffentlichungsserver auf Ihrem lokalen Computer ausgeführt wird, und klicken Sie dann standardmäßig auf localhost:4503 ).
+  Durch Auswahl des Weltsymbols wird die Community-Site veröffentlicht (z. B. wenn Ihr Veröffentlichungsserver auf Ihrem lokalen Computer ausgeführt wird, ist standardmäßig localhost:4503 eingestellt).
 
 * **Site exportieren**
 
-   Wählen Sie das Exportsymbol aus, um ein Paket der Community-Site zu erstellen, das beide in gespeichert ist. [Package Manager](/help/sites-administering/package-manager.md) und heruntergeladen.
-Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
+  Durch Auswahl des Exportsymbols wird ein Paket der Community-Site erstellt, das beide in gespeichert ist. [Package Manager](/help/sites-administering/package-manager.md) und heruntergeladen. UGC ist nicht im Site-Paket enthalten.
 
 * **Site löschen**
 
-   Wählen Sie das Löschsymbol aus, um die Community-Site aus **[!UICONTROL Communities > Sites-Konsole]**. Mit dieser Aktion werden alle mit der Site verknüpften Elemente entfernt, z. B. benutzergenerierte Inhalte, Benutzergruppen, Assets und Datenbankdatensätze.
+  Durch Auswahl des Löschsymbols wird die Community-Site aus dem **[!UICONTROL Communities > Sites-Konsole]**. Durch diese Aktion werden alle mit der Site verknüpften Elemente entfernt, z. B. benutzergenerierte Inhalte, Benutzergruppen, Assets und Datenbankdatensätze.
 
 ![siteactions](assets/siteactions.png)
 
@@ -209,10 +204,9 @@ Beachten Sie, dass UGC nicht im Site-Paket enthalten ist.
 >1. Auswählen **[!UICONTROL Standardagent (publish)]**.
 >1. Weiter zu **[!UICONTROL Einstellungen]** auswählen **[!UICONTROL Bearbeiten]**.
 >1. Wählen Sie im Popup-Dialogfeld für Agenteneinstellungen **[!UICONTROL Verkehr]** Registerkarte.
->1. Ändern Sie in URI die Portnummer 4503 in die gewünschte Portnummer. So verwenden Sie beispielsweise Port 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
+>1. Ändern Sie in URI die Portnummer 4503 in die gewünschte Portnummer. Beispiel für die Verwendung von Port 6103: https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >1. Wählen Sie **[!UICONTROL OK]** aus.
 >1. (Optional) Wählen Sie **[!UICONTROL Löschen]** oder **[!UICONTROL Wiederholen erzwingen]** , um die Replikationswarteschlange zurückzusetzen.
-
 
 ### Veröffentlichung auswählen {#select-publish}
 
@@ -235,7 +229,7 @@ Für diese neue Community-Site können die vier neuen Benutzergruppen unter Ber�
 * Community-Interaktion mit privilegierten Mitgliedern
 * Community Engage Site Content Manager
 
-Beachten Sie Folgendes: [Aaron McDonald](/help/communities/tutorials.md#demo-users) ist Mitglied von
+[Aaron McDonald](/help/communities/tutorials.md#demo-users) ist Mitglied von
 
 * Community-Manager einbinden
 * Community-Moderatoren einbinden
@@ -249,7 +243,7 @@ Beachten Sie Folgendes: [Aaron McDonald](/help/communities/tutorials.md#demo-use
 
 ## Authentifizierungsfehler konfigurieren {#configure-for-authentication-error}
 
-Sobald eine Site konfiguriert und zur Veröffentlichung gepusht wurde, [Anmeldezuordnung konfigurieren](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) in der Veröffentlichungsinstanz. Der Vorteil besteht darin, dass bei nicht korrekter Eingabe der Anmeldedaten der Authentifizierungsfehler die Anmeldeseite der Community-Site mit einer Fehlermeldung erneut anzeigt.
+Sobald eine Site konfiguriert und zur Veröffentlichung gepusht wurde, [Anmelde-Mapping konfigurieren](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) in der Veröffentlichungsinstanz. Der Vorteil besteht darin, dass bei nicht korrekter Eingabe der Anmeldedaten der Authentifizierungsfehler die Anmeldeseite der Community-Site mit einer Fehlermeldung erneut anzeigt.
 
 Hinzufügen einer `Login Page Mapping` as
 
@@ -272,7 +266,7 @@ Erste Schritte:
 
    * Auswählen **Knoten erstellen:**
 
-      * **Name** localhost.4503 (do *not* use &#39;:&#39;)
+      * **Name** localhost.4503 (do *not* Verwenden Sie &#39;:&#39;)
 
       * **Typ** [sling:Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html)
 
@@ -283,12 +277,12 @@ Erste Schritte:
    * **Name** sling:match
       * **Typ** Zeichenfolge
       * **Wert** localhost.4503/$ (muss mit &#39;$&#39; char enden)
+
    * Eigenschaft hinzufügen:
 
       * **Name** sling:internalRedirect
       * **Typ** Zeichenfolge
       * **Wert** /content/sites/engage/en.html
-
 
 1. Klicken Sie auf **Alle speichern.**
 1. (Optional) Löschen Sie den Browser-Verlauf.
@@ -302,7 +296,7 @@ Erste Schritte:
 
 ![optionale Schritte](assets/optional-steps.png)
 
-#### Fehlerbehebung: Fehler beim Speichern der Karte {#troubleshooting-error-saving-map}
+#### Fehlerbehebung: Fehler beim Speichern der Zuordnung {#troubleshooting-error-saving-map}
 
 Wenn Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der Knotenname `localhost.4503`, mit einem &quot;Punkt&quot;-Trennzeichen und nicht `localhost:4503` mit einem &quot;Doppelpunkt&quot;-Trennzeichen `localhost`ist kein gültiges Namespace-Präfix.
 
@@ -310,13 +304,13 @@ Wenn Änderungen nicht gespeichert werden können, stellen Sie sicher, dass der 
 
 #### Fehlerbehebung: Fehler bei Umleitung {#troubleshooting-fail-to-redirect}
 
-Der **$**&quot; am Ende des regulären Ausdrucks `sling:match`Zeichenfolge ist von entscheidender Bedeutung, sodass nur genau `https://localhost:4503/` zugeordnet ist, wird der Umleitungswert ansonsten jedem Pfad vorangestellt, der nach der Datei server:port in der URL vorhanden sein könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt dies fehl.
+Der **$**&quot; am Ende des regulären Ausdrucks `sling:match`Zeichenfolge ist von entscheidender Bedeutung, sodass nur `https://localhost:4503/` zugeordnet ist, wird der Umleitungswert ansonsten jedem Pfad vorangestellt, der nach der URL server:port vorhanden sein könnte. Wenn AEM also versucht, zur Anmeldeseite umzuleiten, schlägt dies fehl.
 
 ### Ändern der Site {#modify-the-site}
 
 Nachdem die Site ursprünglich erstellt wurde, können Autoren die [Symbol &quot;Site öffnen&quot;](/help/communities/sites-console.md#authoring-site-content) , um standardmäßige AEM zu erstellen.
 
-Administratoren können außerdem die [Symbol &quot;Site bearbeiten&quot;](/help/communities/sites-console.md#modifying-site-properties) , um Eigenschaften der Site zu ändern, z. B. den Titel.
+Darüber hinaus können Administratoren die [Symbol &quot;Site bearbeiten&quot;](/help/communities/sites-console.md#modifying-site-properties) , um Eigenschaften der Site zu ändern, z. B. den Titel.
 
 Denken Sie nach jeder Änderung daran, **Speichern** und erneute **Veröffentlichen** die Site.
 

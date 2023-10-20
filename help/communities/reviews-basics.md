@@ -1,19 +1,15 @@
 ---
 title: Grundlagen zu Bewertungen
-seo-title: Reviews Essentials
-description: Komponenten für Bewertungen und Bewertungszusammenfassungen
-seo-description: Reviews and Review Summary components
-uuid: 540c106e-ee3b-4261-82b2-a909d254dbf7
+description: Erfahren Sie, wie Reviews in AEM Communities eine zusammengesetzte Komponente ist, die auf einem Kommentarsystem basiert, das eine oder mehrere Bewertungskomponenten (Tally) enthält.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 exl-id: 91e0e245-a2f1-4bd7-b38f-7641fd94a547
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 6%
+source-wordcount: '332'
+ht-degree: 2%
 
 ---
 
@@ -23,11 +19,11 @@ Diese Funktion besteht aus zwei Komponenten, die zusammenarbeiten: Rezensionen u
 
 Prüfungen sind eine zusammengesetzte Komponente, die auf einer [Kommentarsystem](essentials-comments.md) , das eine oder mehrere [Bewertung](rating-basics.md) (Tally) Komponenten.
 
-Das anonyme Posten von Bewertungen wird nicht unterstützt. Besucher der Site müssen sich registrieren und sich anmelden, um einen Review hinzuzufügen. Der angemeldete Besucher (Mitglied) kann seine Überprüfung jederzeit aktualisieren.
+Das anonyme Posten eines Reviews wird nicht unterstützt. Besucher der Site müssen sich registrieren und sich anmelden, um einen Review hinzuzufügen. Der angemeldete Besucher (Mitglied) kann seine Überprüfung jederzeit aktualisieren.
 
 ## Grundlagen für Client-seitige Unterstützung {#essentials-for-client-side}
 
-### Reviews {#reviews}
+### Bewertungen {#reviews}
 
 <table>
  <tbody>
@@ -72,9 +68,9 @@ Das anonyme Posten von Bewertungen wird nicht unterstützt. Besucher der Site m�
 
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
-* [Überprüfungs-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
+* [Überprüfungs-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
-* [Endpunkte überprüfen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
+* [Endpunkte überprüfen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
@@ -90,6 +86,6 @@ Ab AEM 6.1 Communities: Verwendung einer [gemeinsamer Speicher](working-with-srp
 Siehe:
 
 * [Übersicht über den Speicheranbieter](srp.md) - Einführung und Übersicht über die Repository-Nutzung.
-* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und -beispiele.
+* [Grundlagen zu SRP und UGC](srp-and-ugc.md) - SRP-Dienstprogrammmethoden und Beispiele.
 * [Zugreifen auf UGC mit SRP](accessing-ugc-with-srp.md) - Kodierungsrichtlinien.
 * [SocialUtils-Refaktorierung](socialutils.md) - Zuordnen veralteter Dienstprogrammmethoden zu aktuellen SRP-Dienstprogrammmethoden.

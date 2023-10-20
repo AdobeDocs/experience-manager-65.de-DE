@@ -1,19 +1,15 @@
 ---
 title: Erlebnis der veröffentlichten Site
-seo-title: Experience the Published Site
-description: Navigieren zu einer veröffentlichten Site
-seo-description: Browse to a published site
-uuid: 44594e9e-27ad-475d-953d-3611b04f0df8
+description: Erfahren Sie, wie Sie zu der URL navigieren, die beim Erstellen einer Site, aber auf dem Veröffentlichungsserver angezeigt wird.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1205'
 ht-degree: 1%
 
 ---
@@ -29,7 +25,7 @@ Nachdem die neu erstellte Communities-Site veröffentlicht wurde, navigieren Sie
 
 Um Verwirrungen zu vermeiden, welches Mitglied bei der Autoren- und Veröffentlichungsinstanz angemeldet ist, wird empfohlen, für jede Instanz unterschiedliche Browser zu verwenden.
 
-Bei der ersten Ankunft auf der veröffentlichten Site wäre der Site-Besucher in der Regel nicht bereits angemeldet und anonym.
+Wenn der Besucher zum ersten Mal auf die veröffentlichte Site gelangt, wird er normalerweise nicht bereits angemeldet und anonym.
 
 `https://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}`
 
@@ -89,7 +85,7 @@ Nachdem Sie sich als registriertes Community-Mitglied angemeldet haben, beachten
 * [Nachrichten](/help/communities/configure-messaging.md) -Option führt Sie zum Abschnitt für Direktnachrichten, in dem Sie Folgendes tun können:
 
    1. Zeigen Sie die Direktnachrichten an, die Sie empfangen haben (Posteingang), gesendet (Gesendete Elemente) und gelöscht (Papierkorb).
-   1. Erstellen Sie neue Direktnachrichten, die an Einzelpersonen und Gruppen gesendet werden.
+   1. Erstellen Sie neue Direktnachrichten, damit Sie sie an Einzelpersonen und Gruppen senden können.
 
 * [Benachrichtigungen](/help/communities/notifications.md) Diese Option leitet Sie zum Benachrichtigungsabschnitt weiter, in dem Sie Ihre interessanten Ereignisse anzeigen und die Benachrichtigungseinstellungen bearbeiten können.
 * [Administration](/help/communities/published-site.md#moderationlink) leitet Sie zur AEM Communities-Moderationsseite weiter, wenn Sie über Moderationsberechtigungen verfügen.
@@ -119,7 +115,7 @@ Besucher der Site können Beiträge auf verschiedene Weise anzeigen und sortiere
 
 ### Gruppenlink {#groups-link}
 
-Da Aaron ein Gruppenadministrator ist, kann Aaron durch Auswahl des Links Gruppen eine neue Community-Gruppe erstellen, indem es eine Gruppenvorlage und ein Bild auswählt, ob die Gruppe offen oder geheim ist, und Mitglieder einlädt.
+Da Aaron ein Gruppenadministrator ist, kann Aaron durch Auswahl des Gruppenlinks eine Community-Gruppe erstellen, indem es eine Gruppenvorlage und ein Bild auswählt, ob die Gruppe offen oder geheim ist, und Mitglieder einlädt.
 
 Dies ist ein Beispiel, bei dem eine Gruppe in der Veröffentlichungsumgebung erstellt wird.
 
@@ -166,7 +162,7 @@ Fügen Sie als Beispiel zwei hinzu `new groups`.
 **Hinweis**:
 
 * Eine Aktualisierung der Seite kann erforderlich sein, bevor beide Gruppen angezeigt werden.
-* Diese Vorlage *not* die Gruppenfunktion einschließen, sodass keine weitere Verschachtelung von Gruppen möglich ist.
+* Diese Vorlage *not* die Funktion &quot;Gruppen&quot;einschließen, sodass keine weitere Verschachtelung von Gruppen möglich ist.
 * Wenn der Autor [Gruppenkonsole](/help/communities/groups.md) bietet eine dritte Wahl - eine `Public Group` (optionale Mitgliedschaft).
 
 Nachdem beide Gruppen erstellt wurden, wählen Sie die Baseball-Gruppe, eine offene Gruppe, und beachten Sie die Links:
@@ -186,7 +182,7 @@ Melden Sie sich weiterhin als Aaron McDonald an und sehen Sie sich die Gruppen i
 * Auswählen `Sports` link
 * Wählen Sie den Sport aus. `Groups` link
 
-Nur die Baseballgruppe wird sichtbar sein.
+Nur die Baseballgruppe ist sichtbar.
 
 Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und navigieren Sie zum selben Speicherort. Beachten Sie, dass Weston `Join` die Öffnung `Baseball` -Gruppe und entweder `enter or Leave` private `Gymnastics` hinzugefügt.
 
@@ -196,13 +192,13 @@ Melden Sie sich als Weston McCall (weston.mccall@dodgit.com / Kennwort) an und n
 
 Zeigen Sie die grundlegende Webseite der Site an, indem Sie den Link Webseite auswählen. Die standardmäßigen AEM-Authoring-Tools können verwendet werden, um Inhalte zu dieser Seite in der Autorenumgebung hinzuzufügen.
 
-Gehen Sie beispielsweise zu **author** -Instanz, öffnen Sie die `engage` im Ordner [Communities Sites-Konsole](/help/communities/sites-console.md), wählen Sie die **Seite öffnen** -Symbol, um in den Bearbeitungsmodus für Autoren zu wechseln. Wählen Sie dann den Vorschaumodus aus, um `Web Page` und wählen Sie dann den Bearbeitungsmodus aus, um die Komponenten Titel und Text hinzuzufügen. Veröffentlichen Sie zuletzt entweder nur die Seite oder die gesamte Site neu.
+Gehen Sie beispielsweise zu **author** -Instanz, öffnen Sie die `engage` im Ordner [Communities Sites-Konsole](/help/communities/sites-console.md), wählen Sie die **Seite öffnen** -Symbol, um in den Bearbeitungsmodus für Autoren zu wechseln. Wählen Sie dann den Vorschaumodus aus, damit Sie die `Web Page` und wählen Sie dann den Bearbeitungsmodus aus, um die Komponenten Titel und Text hinzuzufügen. Veröffentlichen Sie zuletzt entweder nur die Seite oder die gesamte Site neu.
 
 ![webpagelink](assets/webpagelink.png)
 
 ### Moderationslink {#moderationlink}
 
-Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, wird der Moderations-Link angezeigt und durch seine Auswahl wird der veröffentlichte Community-Inhalt angezeigt und kann [moderiert](/help/communities/moderate-ugc.md) in ähnlicher Weise wie die [Moderationskonsole](/help/communities/moderation.md) in der Autorenumgebung.
+Wenn das Community-Mitglied über Moderationsberechtigungen verfügt, ist der Moderations-Link sichtbar. Wenn Sie den Link auswählen, wird der gepostete Community-Inhalt angezeigt und lässt ihn [moderiert](/help/communities/moderate-ugc.md) in ähnlicher Weise wie die [Moderationskonsole](/help/communities/moderation.md) in der Autorenumgebung.
 
 Verwenden Sie die Zurück-Schaltfläche des Browsers, um zur veröffentlichten Site zurückzukehren. Die meisten Konsolen können nicht über die globale Navigation in der Veröffentlichungsumgebung aufgerufen werden.
 
@@ -210,7 +206,7 @@ Verwenden Sie die Zurück-Schaltfläche des Browsers, um zur veröffentlichten S
 
 ## Selbstregistrierung {#self-registration}
 
-Nach dem Abmelden ist es möglich, eine neue Benutzerregistrierung zu erstellen.
+Nach dem Abmelden kann eine Benutzerregistrierung erstellt werden.
 
 * Klicken Sie auf `Log In`
 * Klicken Sie auf `Sign up for a new account`
@@ -223,7 +219,7 @@ Standardmäßig ist die E-Mail-Adresse die Anmelde-ID. Wenn diese Option deaktiv
 
 Nachdem Sie den Namen, die E-Mail-Adresse und das Kennwort des Benutzers angegeben haben, wählen Sie `Sign Up` erstellt den Benutzer und aktiviert ihn zum Signieren.
 
-Nach der Anmeldung ist die erste angezeigte Seite ihre `Profile` -Seite, die sie personalisieren können.
+Nach der Anmeldung wird als erste Seite ihre `Profile` -Seite, die sie personalisieren können.
 
 ![Profil](assets/profile.png)
 

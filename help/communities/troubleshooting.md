@@ -1,14 +1,14 @@
 ---
 title: Problembehebung in der Community
-description: Fehlerbehebung in der Community einschließlich bekannter Probleme
+description: Erfahren Sie mehr über die Fehlerbehebung in der Community, einschließlich bekannter Probleme und Probleme.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '354'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Dieser Abschnitt enthält häufige Probleme und bekannte Probleme bei der Fehler
 
 Bei Verwendung von Dispatcher 4.1.5 mit einer neueren Version von Jetty kann eine Refektion dazu führen, dass &quot;Antwort vom Remote-Server kann nicht empfangen&quot;angezeigt wird, nachdem auf die Zeitüberschreitung bei der Anfrage gewartet wurde.
 
-Durch die Verwendung von Dispatcher 4.1.6 oder höher wird dieses Problem behoben.
+Dieses Problem wird durch die Verwendung von Dispatcher 4.1.6 oder höher behoben.
 
 ### Nach der Aktualisierung von CQ 5.4 kann nicht auf Forumsbeiträge zugegriffen werden {#cannot-access-forum-post-after-upgrading-from-cq}
 
@@ -45,13 +45,13 @@ Daher muss jeder Code, der die RelativeTimeFormat()-API verwendet, Folgendes än
 * Von: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * An: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-Der Fehler unterscheidet sich bei der Autoren- und Veröffentlichungsinstanz. Auf der Autoreninstanz schlägt es still fehl und zeigt die Forenthemen einfach nicht an. Beim Veröffentlichen wird der Fehler auf der Seite ausgegeben.
+Der Fehler unterscheidet sich bei der Autoren- und Veröffentlichungsinstanz. In der Autoreninstanz schlägt es still fehl und zeigt die Forenthemen einfach nicht an. Bei der Veröffentlichung wird der Fehler auf der Seite ausgegeben.
 
 Siehe [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API für weitere Informationen.
 
 ## Häufige Bedenken {#common-concerns}
 
-### Warnung in Protokollen: Handlebars - veraltet {#warning-in-logs-handlebars-deprecated}
+### Warnung in Protokollen: Handlebars Deprecated {#warning-in-logs-handlebars-deprecated}
 
 Während des Starts (nicht beim ersten, sondern bei jedem weiteren Start) kann die folgende Warnung in den Protokollen angezeigt werden:
 
@@ -76,7 +76,7 @@ Diese Warnungen können ignoriert werden.
 
 ### Fehler in Protokollen: NoClassDefFoundError für IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-Die Aktualisierung von AEM 5.6.1 GA auf die neueste Version von cq-socialcommunities-pkg-1.4.x oder auf AEM 6.0 führt zu Fehlern in der Protokolldatei während des Starts für eine Bedingung, die sich löst, wie der Fehler zeigt, der beim Neustart nicht erkannt wird.
+Die Aktualisierung von AEM 5.6.1 auf die neueste Version von cq-socialcommunities-pkg-1.4.x oder auf AEM 6.0 führt zu Fehlern in der Protokolldatei. Dies tritt beim Start für eine Bedingung auf, die sich löst, wie der Fehler zeigt, der beim Neustart nicht angezeigt wird.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException

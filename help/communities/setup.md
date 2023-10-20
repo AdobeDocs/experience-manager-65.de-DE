@@ -1,19 +1,15 @@
 ---
 title: Ersteinrichtung
-seo-title: Initial Setup
-description: Einrichten von Communities
-seo-description: Setting up Communities
-uuid: c53d280c-c5ae-47cf-8038-f0dea68e15ff
+description: Erfahren Sie, wie Sie Adobe Experience Manager Communities zum ersten Mal einrichten.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '673'
-ht-degree: 3%
+source-wordcount: '684'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +19,7 @@ ht-degree: 3%
 
 Für Entwicklungs- und Demonstrationszwecke ist es erforderlich, eine Autoren- und eine Veröffentlichungsinstanz auszuführen.
 
-Gehen Sie dazu wie folgt AEM vor [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started) Anweisungen, die zu Folgendem führen:
+Befolgen Sie dazu die grundlegende Adobe Experience Manager (AEM) [Erste Schritte](../../help/sites-deploying/deploy.md#getting-started) Anweisungen, die zu Folgendem führen:
 
 * Autorenumgebung in [localhost:4502](http://localhost:4502/)
 * Veröffentlichungsumgebung in [localhost:4503](http://localhost:4503/)
@@ -54,7 +50,7 @@ Um sicherzustellen, dass das neueste Feature Pack installiert ist, gehen Sie zu:
 
 ## Konfigurieren Sie Analytics {#configure-analytics}
 
-Wann [Adobe Analytics ist für die Community-Site konfiguriert.](analytics.md), stehen Informationen zur Community-Aktivität zur Verfügung, die die Erlebnisse der Community-Mitglieder verbessern und den Administratoren der Site Feedback geben.
+Wann [Adobe Analytics ist für die Community-Site konfiguriert.](analytics.md), stehen Informationen zur Community-Aktivität zur Verfügung, die das Erlebnis der Community-Mitglieder verbessern und den Administratoren der Site Feedback geben.
 
 Die Integration mit Adobe Analytics ist optional.
 
@@ -72,7 +68,7 @@ Beim Erstellen einer Community-Site in der Autorenumgebung ermöglicht der Tunne
 
 Die Konvention richtet sich an Mitglieder und Mitgliedergruppen, die in der Veröffentlichungsumgebung in erstellt wurden. *not* in der Autorenumgebung neu erstellt werden. Weitere Informationen finden Sie unter [Verwalten von Benutzern und Benutzergruppen](users.md).
 
-Für einfache Anweisungen zum Aktivieren des Tunneldienstes auf einem **author** -Instanz, siehe [Tunneldienst](deploy-communities.md#tunnel-service-on-author).
+Für einfache Anweisungen zum Aktivieren des Tunneldienstes auf einem **Autor** -Instanz, siehe [Tunneldienst](deploy-communities.md#tunnel-service-on-author).
 
 ## Community-Administratorrolle {#community-administrator-role}
 
@@ -96,7 +92,7 @@ Benutzer erstellen in *author*, dem die Rolle &quot;Community-Administrator&quot
 * Im `Create New User` dialog enter:
 
    * **[!UICONTROL ID]**: sirius
-   * **[!UICONTROL E-Mail-Adresse]**: sirius.nilson@mailinator.com
+   * **[!UICONTROL Email-Adresse]**: sirius.nilson@mailinator.com
    * **[!UICONTROL Kennwort:]** password
    * **[!UICONTROL Password&amp;ast bestätigen;]**: password
    * **[!UICONTROL Vorname]**: Sirius
@@ -104,7 +100,7 @@ Benutzer erstellen in *author*, dem die Rolle &quot;Community-Administrator&quot
 
 ### Zuweisen von Sirius zur Community-Administratorengruppe {#assign-sirius-to-community-administrators-group}
 
-Scrollen Sie nach unten zu `Add User to Groups`:
+Nach unten scrollen zu `Add User to Groups`:
 
 * Geben Sie &quot;C&quot;zur Suche ein.
 
@@ -117,7 +113,7 @@ Scrollen Sie nach unten zu `Add User to Groups`:
 
 ## Social-Anmeldung aktivieren {#enable-social-login}
 
-Bevor die Demonstrationsversionen für die Anmeldung in sozialen Netzwerken mit Facebook und Twitter verwendet werden können, müssen Sie
+Bevor die Demonstrationsversionen für die Anmeldung in sozialen Netzwerken mit Facebook und Twitter verwendet werden können, ist es erforderlich,
 
 1. Installieren Sie ein Fixpack oder [neueste Feature Pack](deploy-communities.md#latestfeaturepack) (für März 2017 Facebook-API-Änderungen).
 1. [OAuth-Provider aktivieren](social-login.md#adobe-granite-oauth-authentication-handler) in der Veröffentlichungsumgebung.
@@ -128,9 +124,9 @@ Siehe [Anmeldung über Social Media mit Facebook und Twitter](social-login.md).
 
 ## Erstellen von Tutorial-Tags {#create-tutorial-tags}
 
-Erstellen Sie Tags, die für die Tutorials zu Interaktionen verwendet werden sollen, mithilfe des Tag-Namespace von `Tutorial`.
+Erstellen Sie Tags, damit Sie sie für die Tutorials zu Interaktionen verwenden können, indem Sie den Tag-Namespace von `Tutorial`.
 
-Verwenden Sie die [Tagging-Konsole](../../help/sites-administering/tags.md#tagging-console) um die folgenden Tags zu erstellen:
+Verwenden Sie die [Tagging-Konsole](../../help/sites-administering/tags.md#tagging-console) , um die folgenden Tags zu erstellen:
 
 * `Tutorial: Sports / Baseball`
 * `Tutorial: Sports / Gymnastics`

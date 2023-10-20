@@ -1,18 +1,14 @@
 ---
 title: Tag-Grundlagen
-seo-title: Tag Essentials
-description: Tag-Übersicht
-seo-description: Tag overview
-uuid: a5d52319-f821-4608-b0ab-abc8a1374343
+description: Erfahren Sie, wann Communities-Komponenten mit aktiviertem Tagging konfiguriert sind. Community-Mitglieder können Inhalte taggen, die sie in der Veröffentlichungsumgebung posten.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '262'
 ht-degree: 3%
 
 ---
@@ -25,7 +21,7 @@ Die zugrunde liegende Infrastruktur für Tags, die in der Veröffentlichungsumge
 
 * Siehe [Verwalten von Tags](../../help/sites-administering/tags.md) und [Tagging benutzergenerierter Inhalte](tag-ugc.md) (UGC) für Informationen zum Erstellen und Verwalten von Tags.
 
-* Siehe [Tagging für Entwickler](../../help/sites-developing/tags.md) für Informationen über [Tagging-Framework](../../help/sites-developing/framework.md) sowie die Aufnahme und Erweiterung von Tags in [benutzerdefinierte Anwendungen](../../help/sites-developing/building.md).
+* Siehe [Tagging für Entwickler](../../help/sites-developing/tags.md) für Informationen über [Tagging-Framework](../../help/sites-developing/framework.md) und die Erweiterung von Tags in [benutzerdefinierte Anwendungen](../../help/sites-developing/building.md).
 
 * Siehe [Verwenden der Social Tag Cloud](tagcloud.md) für Informationen für Autoren zum Hinzufügen einer `social tag cloud` -Komponente auf eine Seite klicken, um die auf UGC angewandten Tags in der Veröffentlichungsumgebung hervorzuheben.
 
@@ -74,9 +70,9 @@ Das Tagging von benutzergenerierten Inhalten kann beim Konfigurieren eines [Comm
 
 ## Grundlagen für Server-seitige Unterstützung {#essentials-for-server-side}
 
-* [Social Tag Cloud-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [Social Tag Cloud-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Social Tag Manager](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Social Tag Manager](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Serverseitige Anpassungen](server-customize.md)
 
@@ -84,4 +80,4 @@ Das Tagging von benutzergenerierten Inhalten kann beim Konfigurieren eines [Comm
 
 Als [Feature Pack 1](deploy-communities.md#latestfeaturepack) (FP1) wird die Tag-Suche mithilfe von [Tag-Titel](../../help/sites-developing/framework.md#tag-characteristics).
 
-Vor FP1 wurde die Suche mithilfe von [Tag-IDs](../../help/sites-developing/framework.md#tagid).
+Vor FP1 wurde die Suche mithilfe von [Tag-ID](../../help/sites-developing/framework.md#tagid).

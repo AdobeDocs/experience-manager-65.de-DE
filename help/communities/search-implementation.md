@@ -1,14 +1,14 @@
 ---
 title: Suchgrundlagen
-description: Suchen in Communities
+description: Erfahren Sie mehr über die Suchfunktion, die eine wichtige Funktion von AEM Communities ist. Communities stellen auch die Such-API für benutzergenerierte Inhalte bereit.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1189'
 ht-degree: 5%
 
 ---
@@ -72,7 +72,7 @@ Für [JSRP](jsrp.md), wird UGC in gespeichert [Oak](../../help/sites-deploying/p
 
 Da UGC in der Regel in die Veröffentlichungsumgebung eingegeben wird, muss für Produktionssysteme mit mehreren Herausgebern ein [Veröffentlichungscluster](topologies.md), nicht eine Veröffentlichungsfarm, sodass der eingegebene Inhalt für alle Herausgeber sichtbar ist.
 
-Bei JSRP sind in der Veröffentlichungsumgebung eingegebene benutzergenerierte Inhalte nie in der Autorenumgebung sichtbar. Daher [Moderation](moderate-ugc.md) Aufgaben finden in der Veröffentlichungsumgebung statt.
+Bei JSRP ist in der Veröffentlichungsumgebung eingegebener benutzergenerierter Inhalt in der Autorenumgebung nie sichtbar. Daher [Moderation](moderate-ugc.md) Aufgaben finden in der Veröffentlichungsumgebung statt.
 
 Benutzerdefinierte Suchfunktionen sollten [UGC-Such-API](#ugc-search-api).
 
@@ -146,7 +146,7 @@ Solr ist ein Beispiel für eine Abfragesprache, die ein Schema verwendet.
 |---|---|
 | _b | *Boolesch* |
 | _dt | *Kalender* |
-| _d | *Zweistellig* |
+| _d | *Double* |
 | _tl | *Long* |
 | _s | *Zeichenfolge* |
 | _t | *Text* |
