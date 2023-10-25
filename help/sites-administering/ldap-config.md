@@ -1,6 +1,6 @@
 ---
 title: Konfigurieren von LDAP mit AEM 6
-description: Erfahren Sie, wie Sie LDAP mit AEM konfigurieren.
+description: Erfahren Sie, wie Sie LDAP-Dienste mit AEM verwenden und konfigurieren.
 uuid: 0007def4-86f0-401d-aa37-c8d49d5acea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,10 +8,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
-workflow-type: ht
-source-wordcount: '1625'
-ht-degree: 100%
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+workflow-type: tm+mt
+source-wordcount: '1628'
+ht-degree: 99%
 
 ---
 
@@ -222,7 +222,8 @@ Folgende Konfigurationsoptionen sind verfügbar:
 | **Sync Handler Name** | Name des Synchronisierungs-Handlers. |
 
 >[!NOTE]
->Wenn für Ihre AEM-Instanz mehr als eine LDAP-Konfiguration vorgesehen ist, müssen Sie für jede Konfiguration separate Identitäts-Provider und Synchronisierungs-Handler erstellen. 
+>
+Wenn für Ihre AEM-Instanz mehr als eine LDAP-Konfiguration vorgesehen ist, müssen Sie für jede Konfiguration separate Identitäts-Provider und Synchronisierungs-Handler erstellen. 
 
 ## Konfigurieren von LDAP über SSL {#configure-ldap-over-ssl}
 

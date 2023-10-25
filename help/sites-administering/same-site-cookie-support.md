@@ -1,12 +1,12 @@
 ---
 title: Same-Site-Cookie-Unterstützung für AEM 6.5
-description: Same-Site-Cookie-Unterstützung für AEM 6.5
+description: Erfahren Sie mehr über die Unterstützung von Same Site-Cookies für AEM 6.5.
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
-source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
-workflow-type: ht
-source-wordcount: '219'
-ht-degree: 100%
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+workflow-type: tm+mt
+source-wordcount: '222'
+ht-degree: 95%
 
 ---
 

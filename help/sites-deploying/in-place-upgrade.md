@@ -1,13 +1,13 @@
 ---
 title: Durchführen einer ersetzenden Aktualisierung
-description: Erfahren Sie, wie Sie eine ersetzende Aktualisierung durchführen.
+description: Erfahren Sie, wie Sie eine ersetzende Aktualisierung für AEM 6.5 durchführen.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '1244'
-ht-degree: 54%
+source-wordcount: '1246'
+ht-degree: 53%
 
 ---
 

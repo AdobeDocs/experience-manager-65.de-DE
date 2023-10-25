@@ -1,7 +1,7 @@
 ---
 title: Wartungsaufgaben vor einem Upgrade
 seo-title: Pre-Upgrade Maintenance Tasks
-description: Erfahren Sie mehr über die Aufgaben im Vorfeld des AEM-Upgrades
+description: Erfahren Sie mehr über die für AEM empfohlenen Aufgaben vor der Aktualisierung.
 seo-description: Learn about the pre-upgrade tasks in AEM.
 uuid: 5da1cfc7-8a10-47b1-aafb-2cd112e3f818
 contentOwner: sarchiz
@@ -12,10 +12,10 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
-workflow-type: ht
-source-wordcount: '2030'
-ht-degree: 100%
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+workflow-type: tm+mt
+source-wordcount: '2031'
+ht-degree: 99%
 
 ---
 
@@ -245,7 +245,6 @@ Nachfolgend finden Sie eine Liste aller verfügbaren Methoden, die von `PreUpgra
 >* cURL
 >
 
-
 ## Deaktivieren von benutzerdefinierten Anmeldemodulen {#disable-custom-login-modules}
 
 >[!NOTE]
@@ -339,7 +338,6 @@ Um zu verhindern, dass ein solches Szenario eintritt, aktualisieren Sie das Sche
 >* Sie führen ein Upgrade von AEM-Versionen durch, die älter als AEM 6.3 sind
 >* Während des Upgrades werden alle unten aufgeführten Fehler angezeigt.
 >
-
 
 In Ausnahmefällen kann es vorkommen, dass Dienstbenutzer in einer älteren AEM-Version fälschlicherweise als reguläre Benutzer gekennzeichnet werden.
 

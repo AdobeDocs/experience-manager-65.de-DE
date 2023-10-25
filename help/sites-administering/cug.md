@@ -2,7 +2,7 @@
 title: Erstellen von geschlossenen Benutzergruppen
 seo-title: Creating a Closed User Group
 description: Erfahren Sie, wie Sie eine geschlossene Benutzergruppe erstellen.
-seo-description: Learn how to create a Closed User Group.
+seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
 uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 64d174cc824c8bf200cece4e29f60f946ee5560e
-workflow-type: ht
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+workflow-type: tm+mt
 source-wordcount: '753'
-ht-degree: 100%
+ht-degree: 72%
 
 ---
 
 # Erstellen von geschlossenen Benutzergruppen{#creating-a-closed-user-group}
 
-Geschlossene Benutzergruppen (CUGs, Closed User Groups) werden zum Beschränken des Zugriffs auf bestimmte Seiten verwendet, die sich innerhalb einer veröffentlichten Website befinden. Bei diesen Seiten ist es erforderlich, dass sich die zugewiesenen Mitglieder anmelden und sie sicherheitsspezifische Anmeldedaten bereitstellen.
+Geschlossene Benutzergruppen (CUGs) werden verwendet, um den Zugriff auf bestimmte Seiten zu beschränken, die sich auf einer veröffentlichten Website befinden. Für solche Seiten müssen sich die zugewiesenen Mitglieder anmelden und Sicherheitsberechtigungen bereitstellen.
 
 So konfigurieren Sie einen solchen Bereich innerhalb Ihrer Website:
 
@@ -28,17 +28,17 @@ So konfigurieren Sie einen solchen Bereich innerhalb Ihrer Website:
 
 * [Wenden Sie diese Gruppe auf die erforderlichen Seiten an](#applying-your-closed-user-group-to-content-pages) und wählen (oder erstellen) Sie die Anmeldeseite, die von den Mitgliedern der CUG verwendet werden soll. Dies wird auch festgelegt, wenn eine CUG auf eine Inhalts-Seite angewendet wird.
 
-* [Erstellen Sie irgendeine Form von Link zu mindestens einer Seite innerhalb des geschützten Bereichs.](#linking-to-the-cug-pages) Andernfalls wird dieser nicht angezeigt.
+* [einen Link in beliebigem Formular zu mindestens einer Seite innerhalb des geschützten Bereichs erstellen](#linking-to-the-cug-pages), andernfalls wird sie nicht angezeigt.
 
-* [Konfigurieren Sie den Dispatcher,](#configure-dispatcher-for-cugs) wenn er verwendet wird.
+* [Konfigurieren des Dispatchers](#configure-dispatcher-for-cugs) falls in Verwendung.
 
 >[!CAUTION]
 >
->Geschlossene Benutzergruppen (CUGs) sollten immer unter Berücksichtigung des Leistungsverhaltens erstellt werden.
+>Geschlossene Benutzergruppen (CUGs) sollten immer unter Berücksichtigung der Leistung erstellt werden.
 >
->Obwohl die Anzahl der Benutzer und Gruppen in einer CUG nicht beschränkt ist, kann eine hohe Anzahl an CUGs auf einer Seite die Rendering-Leistung beeinträchtigen.
+>Obwohl die Anzahl der Benutzer und Gruppen in einer CUG nicht begrenzt ist, kann eine hohe Anzahl von CUGs auf einer Seite die Rendering-Leistung verlangsamen.
 >
->Die Auswirkungen der CUGs sollten bei Leistungstests immer berücksichtigt werden.
+>Die Auswirkungen von CUGs sollten bei Leistungstests immer berücksichtigt werden.
 
 ## Erstellen der zu verwendenden Benutzergruppe {#creating-the-user-group-to-be-used}
 
@@ -48,9 +48,9 @@ So erstellen Sie eine geschlossene Benutzergruppe:
 
    >[!NOTE]
    >
-   >Umfassende Informationen zum Erstellen und Konfigurieren von Benutzern und Gruppen finden Sie in [Verwalten von Benutzern und Gruppen](/help/sites-administering/security.md#managing-users-and-groups).
+   >Siehe [Verwalten von Benutzern und Gruppen](/help/sites-administering/security.md#managing-users-and-groups) für ausführliche Informationen zur Erstellung und Konfiguration von Benutzern und Gruppen.
 
-1. Wählen Sie im nächsten Bildschirm die Karte **Gruppen** aus.
+1. Wählen Sie die **Gruppen** vom nächsten Bildschirm aus.
 
    ![screen_shot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
@@ -116,13 +116,13 @@ Um dies zu vermeiden, empfiehlt es sich, nicht-geschützte Umleitungsseiten zu e
 
 ## Konfigurieren des Dispatchers für CUGs {#configure-dispatcher-for-cugs}
 
-Falls Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den folgenden Eigenschaften definieren:
+Wenn Sie den Dispatcher verwenden, müssen Sie eine Dispatcher-Farm mit den folgenden Eigenschaften definieren:
 
-* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#identifying-virtual-hosts-virtualhosts): Entspricht dem Pfad zu den Seiten, auf die die CUG angewendet wird
-* \sessionmanagement: siehe unten
-* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-the-dispatcher-cache-cache): Ein Zwischenspeicher-Verzeichnis, das für die Dateien vorgesehen ist, auf die die CUG angewendet wird
+* [virtualhosts](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#identifying-virtual-hosts-virtualhosts): Entspricht dem Pfad zu den Seiten, für die die CUG gilt.
+* \sessionmanagement: siehe unten.
+* [cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#configuring-the-dispatcher-cache-cache): Ein Cache-Verzeichnis, das den Dateien gewidmet ist, für die die CUG gilt.
 
-### Konfigurieren des Dispatcher-Sitzungsmanagements für CUGs {#configuring-dispatcher-session-management-for-cugs}
+### Konfigurieren der Dispatcher-Sitzungsverwaltung für CUGs {#configuring-dispatcher-session-management-for-cugs}
 
 Konfigurieren Sie das [Sitzungsmanagement in der Datei dispatcher.any](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=de#enabling-secure-sessions-sessionmanagement) für die CUG. Der Authentifizierungs-Handler, der verwendet wird, wenn der Zugriff auf CUG-Seiten angefordert wird, bestimmt, wie Sie das Sitzungsmanagement konfigurieren.
 

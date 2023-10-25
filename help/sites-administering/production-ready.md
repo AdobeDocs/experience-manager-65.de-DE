@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '378'
+source-wordcount: '379'
 ht-degree: 45%
 
 ---
@@ -23,11 +23,11 @@ Der neue Ausführungsmodus konfiguriert die Instanz nicht nur automatisch, um di
 >
 >Da aus praktischen Gründen der AEM produktionsbereite Modus nur die meisten Aufgaben abdeckt, die zum Schützen einer Instanz erforderlich sind, empfehlen wir dringend, die [Sicherheitscheckliste](/help/sites-administering/security-checklist.md) bevor Sie mit Ihrer Produktionsumgebung live gehen.
 >
->Beachten Sie außerdem, dass die Ausführung von AEM im produktionsbereiten Modus den Zugriff auf die CRXDE Lite effektiv deaktiviert. Wenn Sie es zum Debuggen benötigen, finden Sie unter [Aktivieren von CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md) weitere Informationen.
+>Beachten Sie außerdem, dass die Ausführung von AEM im produktionsbereiten Modus den Zugriff auf CRXDE Lite effektiv deaktiviert. Wenn Sie es zum Debuggen benötigen, finden Sie unter [Aktivieren von CRXDE Lite in AEM](/help/sites-administering/enabling-crxde-lite.md) weitere Informationen.
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-Um AEM im produktionsbereiten Modus auszuführen, müssen Sie lediglich `nosamplecontent` über die `-r` Wechseln Sie zum Ausführungsmodus zu den vorhandenen Startargumenten:
+Um AEM im produktionsbereiten Modus auszuführen, müssen Sie nur Folgendes hinzufügen: `nosamplecontent` über die `-r` Wechseln Sie zum Ausführungsmodus zu den vorhandenen Startargumenten:
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -43,7 +43,7 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 Genauer gesagt werden die folgenden Konfigurationsänderungen ausgeführt, wenn AEM im produktionsbereiten Modus ausgeführt wird:
 
-1. Das **CRXDE-Support-Bundle** (`com.adobe.granite.crxde-support`) ist im produktionsbereiten Modus standardmäßig deaktiviert. Es kann jederzeit über das öffentliche Maven-Repository von Adobe installiert werden. Version 3.0.0 ist für AEM 6.1 erforderlich.
+1. Das **CRXDE-Support-Bundle** (`com.adobe.granite.crxde-support`) ist im produktionsbereiten Modus standardmäßig deaktiviert. Es kann jederzeit über das öffentliche Adobe-Maven-Repository installiert werden. Version 3.0.0 ist für AEM 6.1 erforderlich.
 
 1. Das Bundle **Apache Sling Simple WebDAV Access to repositories** (`org.apache.sling.jcr.webdav`) ist nur für **Autoreninstanzen** verfügbar.
 
