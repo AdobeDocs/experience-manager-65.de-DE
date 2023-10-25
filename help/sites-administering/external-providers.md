@@ -1,16 +1,16 @@
 ---
 title: Analyse mit externen Anbietern
-description: Erfahren Sie mehr über Analytics mit externen Anbietern.
+description: Erfahren Sie, wie Sie Ihre eigene Instanz von generischen Analytics-Snippets konfigurieren, um eine neue Dienstkonfiguration zu definieren.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '435'
-ht-degree: 35%
+source-wordcount: '446'
+ht-degree: 34%
 
 ---
 
@@ -53,7 +53,7 @@ Diese Snippets ermöglichen die Erfassung von Daten und die Erstellung von Beric
 
 >[!CAUTION]
 >
->Die Demosite &quot;Geometrixx-Outdoors&quot;ist so konfiguriert, dass die in den Seiteneigenschaften angegebenen Attribute an den HTML-Quellcode angehängt werden (direkt über dem `</html>` -Tag) im entsprechenden `js` Skript.
+>Die Demosite &quot;Geometrixx-Outdoors&quot;ist so konfiguriert, dass die in den Seiteneigenschaften angegebenen Attribute an den HTML-Quellcode angehängt werden (direkt über dem `</html>` end -Tag) in der entsprechenden `js` Skript.
 >
 >Wenn der eigene Ordner `/apps` nicht von der Standardseitenkomponente (`/libs/foundation/components/page`) übernommen wird, müssen Sie (oder Ihre Entwickler) sicherstellen, dass die entsprechenden `js`-Skripte enthalten sind, z. B. indem Sie `cq/cloudserviceconfigs/components/servicescomponents` einschließen oder einen ähnlichen Mechanismus verwenden.
 >
@@ -64,7 +64,7 @@ Diese Snippets ermöglichen die Erfassung von Daten und die Erstellung von Beric
 Für die Grundkonfiguration:
 
 1. Öffnen Sie die **Tools-Konsole**.
-1. Erweitern Sie im linken Bereich die **Cloud Services-Konfigurationen**.
+1. Erweitern Sie im linken Bereich die **Cloud Service-Konfigurationen**.
 1. Doppelklicken **Generisches Analytics-Snippet** , um die Seite zu öffnen:
 
    ![Generisches Analyse-Snippet](assets/analytics_genericoverview.png)
@@ -73,7 +73,7 @@ Für die Grundkonfiguration:
 
    ![Erstellen einer Konfiguration](assets/analytics_addconfig.png)
 
-1. Klicken **Erstellen**, wird das Dialogfeld &quot;Snippet&quot;sofort geöffnet. Fügen Sie das entsprechende JavaScript-Snippet in das Feld ein:
+1. Klicks **Erstellen**, wird das Dialogfeld &quot;Snippet&quot;sofort geöffnet. Fügen Sie das entsprechende JavaScript-Snippet in das Feld ein:
 
    ![Bearbeiten der Komponente](assets/analytics_snippet.png)
 
@@ -85,12 +85,12 @@ Nachdem Sie die Dienstkonfiguration erstellt haben, müssen Sie jetzt die erford
 
 1. Navigieren Sie zu der Seite.
 1. Öffnen Sie die **Seiteneigenschaften** im Sidekick und wählen Sie dann die Registerkarte **Cloud-Services** aus.
-1. Klicken **Dienst hinzufügen** und wählen Sie dann den gewünschten Dienst aus. Beispiel: die **Generisches Analytics-Snippet**:
+1. Klicks **Dienst hinzufügen** und wählen Sie dann den gewünschten Dienst aus. Beispiel: die **Generisches Analytics-Snippet**:
 
    ![Hinzufügen eines Cloud-Service](assets/analytics_selectservice.png)
 
 1. Klicken Sie zum Speichern auf **OK**.
-1. Sie kehren zum **Cloud Services** Registerkarte. Der Dienst **Generisches Analyse-Snippet** wird nun mit der Meldung `Configuration reference missing` angezeigt. Wählen Sie über die Dropdown-Liste Ihre spezifische Dienstinstanz aus. Beispiel: google-analytics:
+1. Sie kehren zum **Cloud Service** Registerkarte. Der Dienst **Generisches Analyse-Snippet** wird nun mit der Meldung `Configuration reference missing` angezeigt. Verwenden Sie die Dropdown-Liste, um Ihre spezifische Dienstinstanz auszuwählen. Beispiel: Google-analytics:
 
    ![Hinzufügen der Cloud Service-Konfiguration](assets/analytics_selectspecificservice.png)
 

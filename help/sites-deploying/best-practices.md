@@ -1,15 +1,15 @@
 ---
 title: Best Practices für die Bereitstellung
-description: Bereitstellen und Verwalten von Best Practices.
+description: Erfahren Sie, wie Sie Adobe Experience Manager (AEM) so effizient und effizient wie möglich bereitstellen und verwalten.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '434'
-ht-degree: 77%
+source-wordcount: '447'
+ht-degree: 75%
 
 ---
 
@@ -91,7 +91,7 @@ Best Practices zur Leistung sind hier aufgeführt:
   <tr>
    <td>Best Practices zur Qualitätssicherung</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Best Practices zur Qualitätssicherung</a></td>
-   <td>Ein einheitlicher Überblick über die Probleme bei der Definition eines Testkonzepts speziell für Leistungstests in der <em>Veröffentlichungsumgebung</em>. Dies ist vor allem für QA-Techniker, Projektmanager und Systemadministratoren von Interesse.</td>
+   <td>Ein einheitlicher Überblick über die Probleme bei der Definition eines Testkonzepts speziell für Leistungstests in der <em>Veröffentlichungsumgebung</em>. Dies ist in erster Linie für QA-Techniker, Projektmanager und Systemadministratoren von Interesse.</td>
   </tr>
   <tr>
    <td>Verwenden des Dispatchers mit einem CDN </td>

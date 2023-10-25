@@ -1,16 +1,16 @@
 ---
 title: Exportieren von Experience Fragments nach Adobe Target
-description: Exportieren von Experience Fragments nach Adobe Target
+description: Erfahren Sie, wie Sie Adobe Experience Manager-Experience Fragments (AEM) nach Adobe Target exportieren.
 contentOwner: carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: c6eee2e647a0c5e6f5a8dd7a1a13d18218fdf10b
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '1533'
-ht-degree: 67%
+source-wordcount: '1540'
+ht-degree: 66%
 
 ---
 
@@ -233,7 +233,7 @@ Auf hoher Ebene werden beim AEM eines Experience Fragment nach Adobe Target mehr
 
 * http://www.your-aem-instance.com/content/experience-fragments/my-offers/my-xf-offer.nocloudconfigs.atoffer.html
 
-Die `nocloudconfigs` Der Selektor wird mithilfe von HTL definiert und kann überlagert werden, indem er aus folgenden Quellen kopiert wird:
+Die `nocloudconfigs` Der Selektor wird mithilfe von HTL definiert und kann durch Kopieren aus folgenden Quellen überlagert werden:
 
 * /libs/cq/experience-fragments/components/xfpage/nocloudconfigs.html
 

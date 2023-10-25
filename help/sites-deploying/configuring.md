@@ -1,16 +1,16 @@
 ---
 title: Grundlegende Konfigurationskonzepte
-description: Erfahren Sie, wie Sie Adobe Experience Manager konfigurieren.
+description: Erfahren Sie, wie Sie Adobe Experience Manager für Ihre spezifischen Anforderungen konfigurieren.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '2111'
-ht-degree: 29%
+source-wordcount: '2116'
+ht-degree: 30%
 
 ---
 
