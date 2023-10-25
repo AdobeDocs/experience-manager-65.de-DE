@@ -1,7 +1,7 @@
 ---
 title: Entwickeln von Formularen (klassische Benutzeroberfläche)
 seo-title: Developing Forms (Classic UI)
-description: Erfahren Sie, wie Sie Formulare entwickeln
+description: Erfahren Sie, wie Sie Formulare für die klassische Benutzeroberfläche von Adobe Experience Manager entwickeln.
 seo-description: Learn how to develop forms
 uuid: 33859f29-edc5-4bd5-a634-35549f3b5ccf
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1953'
 ht-degree: 58%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 58%
 
 Die grundlegende Struktur eines Formulars ist:
 
-* Beginn des Formulars
+* Formularstart
 * Formularelemente
 * Formular-Ende
 
@@ -246,7 +246,7 @@ Anschließend können Sie Folgendes definieren:
 
 Sie können Ihr Formular so konfigurieren, dass Formularkomponenten entsprechend dem Wert anderer Felder im Formular ein- oder ausgeblendet werden.
 
-Das Ändern der Sichtbarkeit eines Formularfelds ist nützlich, wenn das Feld nur unter besonderen Bedingungen erforderlich ist. Auf einem Feedback-Formular werden Kunden beispielsweise gefragt, ob ihnen Produktinformationen per E-Mail zugesendet werden sollen. Bei Auswahl von Ja erscheint ein Textfeld, in das der Kunde seine E-Mail-Adresse eingeben kann.
+Das Ändern der Sichtbarkeit eines Formularfelds ist nützlich, wenn das Feld nur unter besonderen Bedingungen erforderlich ist. Auf einem Feedback-Formular werden Kunden beispielsweise gefragt, ob ihnen Produktinformationen per E-Mail zugesendet werden sollen. Bei Auswahl von &quot;Ja&quot;erscheint ein Textfeld, in das der Kunde seine E-Mail-Adresse eingeben kann.
 
 Legen Sie mit dem Dialogfeld **Einblenden-/Ausblenden-Regeln bearbeiten** die Bedingungen fest, unter denen eine Formularkomponente ein- oder ausgeblendet wird.
 
@@ -260,7 +260,7 @@ Verwenden Sie die Felder oben im Dialogfeld, um die folgenden Informationen anzu
 Eine oder mehrere Bedingungen werden unter diesen Feldern eingeblendet. Eine Bedingung vergleicht den Wert einer anderen Formularkomponente (im selben Formular) mit einem Wert. Wenn der tatsächliche Wert im Feld die Bedingung erfüllt, wird die Bedingung als wahr ausgewertet. Bedingungen enthalten die folgenden Informationen:
 
 * Der Titel des Formularfelds, das getestet wird.
-* Operator.
+* Ein Operator.
 * Ein Wert mit dem Feldwert wird verglichen.
 
 Beispiel: eine Optionsfeldgruppen-Komponente mit dem Titel `Receive email notifications?`* * enthält die Optionsfelder `Yes` und `No`. Eine Textfeld-Komponente mit dem Titel `Email Address` verwendet die folgende Bedingung, damit sie sichtbar wird, wenn `Yes` ausgewählt wird:
@@ -275,11 +275,11 @@ In JavaScript verwenden Bedingungen den Wert der Eigenschaft &quot;Elementname&q
 
 1. Bearbeiten Sie die entsprechende Formular-Komponente.
 
-1. Auswählen **Einblenden/Ausblenden** , um **Einblenden-/Ausblenden-Regeln bearbeiten** dialog:
+1. Auswählen **Einblenden/Ausblenden** , um die **Einblenden-/Ausblenden-Regeln bearbeiten** dialog:
 
-   * Wählen Sie in der ersten Dropdown-Liste entweder **Anzeigen** oder **Ausblenden** um anzugeben, ob Ihre Bedingungen bestimmen, ob die Komponente ein- oder ausgeblendet werden soll.
+   * Wählen Sie in der ersten Dropdownliste entweder **Anzeigen** oder **Ausblenden** um anzugeben, ob Ihre Bedingungen bestimmen, ob die Komponente ein- oder ausgeblendet werden soll.
 
-   * Wählen Sie in der Dropdown-Liste am Ende der obersten Zeile Folgendes aus:
+   * Wählen Sie in der Dropdownliste am Ende der obersten Zeile Folgendes aus:
 
       * **all** - wenn alle Bedingungen wahr sein müssen, um die Komponente ein- oder auszublenden
       * **any** - wenn nur eine oder mehrere Bedingungen wahr sein müssen, um die Komponente ein- oder auszublenden
@@ -295,7 +295,7 @@ In JavaScript verwenden Bedingungen den Wert der Eigenschaft &quot;Elementname&q
 
 1. Nachdem Sie Ihre Definition gespeichert haben, wird ein **Regeln bearbeiten** neben dem **Einblenden/Ausblenden** in den Eigenschaften der Formularkomponente. Klicken Sie auf diesen Link, um **Einblenden-/Ausblenden-Regeln bearbeiten** Dialogfeld, um Änderungen vorzunehmen.
 
-   Klicken **OK** , um alle Änderungen zu speichern.
+   Klicks **OK** , um alle Änderungen zu speichern.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 

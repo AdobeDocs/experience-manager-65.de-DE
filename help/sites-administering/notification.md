@@ -1,7 +1,7 @@
 ---
 title: Konfigurieren von E-Mail-Benachrichtigungen
 seo-title: Configuring Email Notification
-description: Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in AEM konfigurieren können.
+description: Erfahren Sie, wie Sie E-Mail-Benachrichtigungen in Adobe Experience Manager konfigurieren.
 seo-description: Learn how to configure Email Notification in AEM.
 uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
@@ -10,10 +10,10 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '2069'
-ht-degree: 96%
+source-wordcount: '2071'
+ht-degree: 95%
 
 ---
 

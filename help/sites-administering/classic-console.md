@@ -1,7 +1,7 @@
 ---
 title: Tagging-Konsole der klassischen Benutzeroberfläche
 seo-title: Classic UI Tagging Console
-description: Erfahren Sie mehr über die Tagging-Konsole der klassischen Benutzeroberfläche.
+description: Erfahren Sie mehr über die Tagging-Konsole der Adobe Experience Manager Classic-Benutzeroberfläche.
 seo-description: Learn about the Classic UI Tagging Console.
 uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: 21330d460d1080ab1dee3e82bc3c3877677c1420
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '892'
 ht-degree: 57%
 
 ---
@@ -35,15 +35,15 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
 ## Erstellen von Tags und Namespaces {#creating-tags-and-namespaces}
 
-1. Je nachdem, auf welcher Ebene Sie beginnen, können Sie entweder ein Tag oder einen Namespace mit **Neu**:
+1. Je nach der Ebene, von der Sie beginnen, können Sie entweder ein Tag oder einen Namespace mit **Neu**:
 
    Wenn Sie **Tags** Sie können einen Namespace erstellen:
 
    ![Dialogfeld &quot;Namensraum erstellen&quot;](assets/creating_tags_andnamespaces.png)
 
-   Wenn Sie einen Namespace auswählen (z. B. **Demo**) können Sie ein Tag in diesem Namespace erstellen:
+   Wenn Sie einen Namespace auswählen (beispielsweise **Demo**) können Sie ein Tag in diesem Namespace erstellen:
 
-   ![Erstellen eines Tag-Dialogfelds](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![Tag-Dialogfeld erstellen](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. In beiden Fällen
 
@@ -67,23 +67,23 @@ So greifen Sie auf die Tagging-Konsole der klassischen Benutzeroberfläche zu:
 
 1. Wählen Sie im rechten Bereich das Tag aus, das Sie bearbeiten möchten.
 1. Klicken Sie auf **Bearbeiten**.
-1. Sie können die **Titel** und **Beschreibung**.
-1. Klicken **Speichern** , um das Dialogfeld zu schließen.
+1. Sie können **Titel** und **Beschreibung**.
+1. Klicks **Speichern** , um das Dialogfeld zu schließen.
 
 ## Löschen von Tags {#deleting-tags}
 
 1. Wählen Sie im rechten Bereich das Tag aus, das Sie löschen möchten.
 1. Klicken Sie auf **Löschen**.
-1. Klicken **Ja** , um das Dialogfeld zu schließen.
+1. Klicks **Ja** , um das Dialogfeld zu schließen.
 
    Das Tag sollte nicht mehr aufgeführt werden.
 
 ## Aktivieren und Deaktivieren von Tags {#activating-and-deactivating-tags}
 
 1. Wählen Sie im rechten Bereich den Namespace oder das Tag aus, den/das Sie aktivieren (veröffentlichen) oder deaktivieren (Veröffentlichung rückgängig machen) möchten.
-1. Klicken **Aktivieren** oder **Deaktivieren** nach Bedarf.
+1. Klicks **Aktivieren** oder **Deaktivieren** nach Bedarf.
 
-## Liste - zeigt, wo Tags referenziert werden {#list-showing-where-tags-are-referenced}
+## Liste - zeigt an, wo Tags referenziert werden {#list-showing-where-tags-are-referenced}
 
 **Liste** öffnet ein neues Fenster, das die Pfade aller Seiten anzeigt, die das markierte Tag verwenden:
 
@@ -122,7 +122,7 @@ So führen Sie ein Tag zu einem anderen zusammen:
 
    * **in**, den Zielknoten.
 
-1. Klicken **Zusammenführen**.
+1. Klicks **Zusammenführen**.
 
 Das Dialogfeld **Tag zusammenführen** hat folgende Gestalt:
 
@@ -133,7 +133,7 @@ Das Dialogfeld **Tag zusammenführen** hat folgende Gestalt:
 So sehen Sie, wie oft ein Tag verwendet wird:
 
 1. Öffnen Sie die **Tagging** Konsole.
-1. Klicken **Count Usage** in der oberen Symbolleiste: In der Spalte Zählung wird das Ergebnis angezeigt.
+1. Klicks **Count Usage** in der oberen Symbolleiste: Die Spalte Zählung zeigt das Ergebnis an.
 
 ## Verwalten von Tags in verschiedenen Sprachen {#managing-tags-in-different-languages}
 

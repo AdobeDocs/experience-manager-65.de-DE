@@ -1,15 +1,15 @@
 ---
 title: OSGi-Bundles
-description: Tipps zum Verwalten von OSGi-Bundles
+description: Erfahren Sie mehr über die Verwaltung Ihrer OSGi-Bundles in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e18065c7-75b9-4b37-8294-cf94122a4dcf
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '340'
-ht-degree: 33%
+source-wordcount: '346'
+ht-degree: 32%
 
 ---
 
@@ -21,7 +21,7 @@ Die vereinbarten Best Practices für die semantische Versionsnummeriierung finde
 
 ## Betten Sie nicht mehr Klassen und JARs ein, als in OSGi-Bundles unbedingt erforderlich sind {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Gemeinsame Bibliotheken sollten in separate Bundles zusammengefasst werden. Dadurch können sie in allen Bundles wiederverwendet werden. Beim Umbrechen einer *JAR* in einem OSGi-Bundle überprüfen Sie die Online-Quellen, um festzustellen, ob dies bereits geschehen ist. Einige gängige Stellen, an denen vorhandene Bundle-Wrapper gefunden werden, sind: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes und das SpringSource Enterprise Bundle Repository.
+Gemeinsame Bibliotheken sollten in separate Bundles zusammengefasst werden. Dadurch können sie in allen Bundles wiederverwendet werden. Beim Umbrechen einer *JAR* in einem OSGi-Bundle überprüfen Sie die Online-Quellen, um festzustellen, ob dies bereits geschehen ist. Einige gängige Orte, an denen Sie vorhandene Bundle-Wrapper finden, sind: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes und das SpringSource Enterprise Bundle Repository.
 
 ## Abhängig von den am wenigsten benötigten Bundle-Versionen {#depend-on-the-lowest-needed-bundle-versions}
 
@@ -31,7 +31,7 @@ Bei Kompilierungszeitabhängigkeiten in POM-Dateien hängen Sie immer von der ni
 
 Wenn ein Package exportiert wurde, wurde eine API erstellt, von der andere abhängig sind. Exportieren Sie so wenig wie möglich und stellen Sie sicher, dass Sie tatsächlich APIs exportieren. Es ist einfacher, eine private Methode oder Klasse öffentlich zu machen, als eine zuvor exportierte Komponente privat zu machen.
 
-Implementierungen immer in einer separaten *impl* Paket. Standardmäßig wird die *maven-bundle-plugin* exportiert alles im Projekt, das keine *impl* im Namen.
+Implementierungen immer in einer separaten *impl* Paket. Standardmäßig wird die Variable *maven-bundle-plugin* exportiert alles im Projekt, das keine *impl* im Namen.
 
 ## Definieren Sie immer explizit eine semantische Version für jedes exportierte Paket {#always-explicitly-define-a-semantic-version-for-each-package-exported}
 

@@ -1,11 +1,11 @@
 ---
 title: Erstellen und Synchronisieren von Live Copies
-description: Erfahren Sie, wie Sie Live Copies erstellen und synchronisieren können.
+description: Erfahren Sie, wie Sie Live Copies in Adobe Experience Manager erstellen und synchronisieren.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '4229'
+source-wordcount: '4233'
 ht-degree: 66%
 
 ---
@@ -120,10 +120,10 @@ So erstellen Sie eine Live Copy:
 
 1. Verwenden Sie das Kontrollkästchen **Unterseiten ausschließen**:
 
-   * Ausgewählt: eine Live Copy nur der ausgewählten Seite erstellen (flache Live Copy)
+   * Ausgewählt: Erstellen Sie nur eine Live Copy der ausgewählten Seite (flache Live Copy)
    * Bei Deaktivierung wird eine Live Copy mit allen Nachfolgeelementen der ausgewählten Seite erstellt (tiefe Live Copy).
 
-1. (Optional) Um eine oder mehrere Rollout-Konfigurationen für die Live Copy anzugeben, verwenden Sie die **Rollout-Konfigurationen** Dropdown-Liste zur Auswahl; ausgewählte Konfigurationen werden unter der Dropdown-Auswahl angezeigt.
+1. (Optional) Um eine oder mehrere Rollout-Konfigurationen für die Live Copy anzugeben, verwenden Sie die **Rollout-Konfigurationen** Dropdown-Liste, um sie auszuwählen. Ausgewählte Konfigurationen werden unter der Dropdown-Auswahl angezeigt.
 1. Klicken oder tippen Sie auf **Erstellen**. Eine Bestätigungsmeldung wird angezeigt. Hierüber können Sie entweder **Öffnen** oder **Fertig** auswählen.
 
 ### Erstellen von Live Copies einer Site über eine Blueprint-Konfiguration {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
@@ -145,12 +145,12 @@ Geben Sie beim Erstellen der Site Werte für die folgenden Eigenschaften an:
 * **Name**: (Optional) Der Name des JCR-Knotens, der die Stammseite der Live Copy speichert. Der Standardwert basiert auf dem Titel.
 * **Site-Inhaber**: (Optional)
 * **Live Copy**: Wählen Sie diese Option, um eine Live-Beziehung zur Quell-Site herzustellen. Wenn Sie diese Option nicht auswählen, wird eine Kopie des Blueprints erstellt, aber sie wird anschließend nicht mit der Quelle synchronisiert.
-* **Rollout-Konfigurationen**: (Optional) Wählen Sie eine oder mehrere Rollout-Konfigurationen aus, die zum Synchronisieren der Live Copy verwendet werden sollen. Standardmäßig werden die Rollout-Konfigurationen von der Blueprint-Konfiguration vererbt. Weitere Informationen finden Sie unter [Angeben der zu verwendenden Rollout-Konfigurationen](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
+* **Rollout-Konfigurationen**: (Optional) Wählen Sie eine oder mehrere Rollout-Konfigurationen für die Synchronisierung der Live Copy aus. Standardmäßig werden die Rollout-Konfigurationen von der Blueprint-Konfiguration vererbt. Weitere Informationen finden Sie unter [Angeben der zu verwendenden Rollout-Konfigurationen](/help/sites-administering/msm-sync.md#specifying-the-rollout-configurations-to-use).
 
 So erstellen Sie eine Live Copy einer Site aus einer Blueprint-Konfiguration:
 
 1. Wählen Sie in der **Sites-Konsole** die Option **Erstellen** und dann aus der Dropdown-Auswahl die Option **Website** aus.
-1. Wählen Sie die Blueprint-Konfiguration aus, die als Quelle der Live Copy verwendet werden soll, und fahren Sie mit dem **Nächste**:
+1. Wählen Sie die als Quelle der Live Copy zu verwendende Blueprint-Konfiguration aus und fahren Sie mit **Nächste**:
 
    ![Auswählen der Blueprint-Konfiguration als Quelle der Live Copy](assets/blueprint-configuration-select.png)
 
@@ -181,7 +181,7 @@ Die Eigenschaften einer Live Copy-Seite zeigen die folgenden Informationen zur L
 
    * Gibt an, ob die Seite noch einer Live Copy-Vererbung unterliegt.
    * Angabe, ob die Konfiguration von der übergeordneten Seite vererbt wurde.
-   * Alle Rollout-Konfigurationen, die von der Live Copy verwendet werden.
+   * Alle Rollout-Konfigurationen, die die Live Copy verwendet.
 
 So zeigen Sie die Eigenschaften an:
 
@@ -404,7 +404,7 @@ Wenn Sie die Vererbung erneut aktivieren, wird die Seite nicht automatisch mit d
 
 >[!CAUTION]
 >
->Wenn Sie die Vererbung erneut aktivieren, wird die Seite nicht automatisch mit der Quelle synchronisiert. Sie können bei Bedarf eine Synchronisierung manuell anfordern. entweder zum Zeitpunkt der Wiederaufnahme oder später.
+>Wenn Sie die Vererbung erneut aktivieren, wird die Seite nicht automatisch mit der Quelle synchronisiert. Sie können bei Bedarf eine Synchronisierung manuell anfordern, entweder zum Zeitpunkt der Wiederaufnahme oder zu einem späteren Zeitpunkt.
 
 #### Fortsetzen der Vererbung über Seiteneigenschaften {#resuming-inheritance-from-page-properties}
 
@@ -418,7 +418,7 @@ Bei Auswahl wird das entsprechende Dialogfeld angezeigt. Sie können ggf. eine S
 
 Die [Fortsetzungsaktion ist auch über die Live Copy-Übersicht verfügbar](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wenn eine Live Copy-Seite ausgewählt wird.
 
-1. Öffnen Sie die [Live Copy-Übersicht](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) und wählen Sie eine ausgesetzte Live Copy-Seite aus. wird angezeigt als **VERERBUNG ABGEBROCHEN**.
+1. Öffnen Sie die [Live Copy-Übersicht](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) und wählen Sie eine Live Copy-Seite aus, die ausgesetzt wurde. Sie wird als **VERERBUNG ABGEBROCHEN**.
 1. Wählen Sie in der Symbolleiste die Option **Fortsetzen** aus.
 1. Geben Sie an, ob die Seite nach Wiederherstellung der Vererbung synchronisiert werden soll. Bestätigen Sie dann die Aktion **Fortsetzen** im Dialogfeld **Live Copy fortsetzen**.
 
@@ -575,14 +575,14 @@ Die [Rücksetzungsaktion ist auch über die Live Copy-Übersicht verfügbar](/h
 Zum Nachverfolgen der von Ihnen durchgeführten Änderungen können Sie die Blueprint-Seite unter **Verweise** anzeigen und mit der zugehörigen Live Copy-Seite vergleichen:
 
 1. Im **Sites** Konsole, [Navigieren zu einer Blueprint- oder Live Copy-Seite und wählen Sie sie aus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Öffnen Sie die **[Verweise](/help/sites-authoring/basic-handling.md#references)** und wählen Sie Folgendes aus:
+1. Öffnen Sie die **[Verweise](/help/sites-authoring/basic-handling.md#references)** und wählen Sie:
 
    * **Blueprint** (bei Auswahl einer Live Copy-Seite)
    * **Live Copies** (bei Auswahl einer Blueprint-Seite)
 
 1. Wählen Sie dann Ihre spezifische Live Copy aus:
 
-   * **Mit Blueprint vergleichen** (bei Auswahl einer Live Copy-Seite)
+   * **Mit Blueprint vergleichen** (wenn eine Live Copy-Seite ausgewählt ist)
    * **Mit Live Copy vergleichen** (bei Auswahl einer Blueprint-Seite)
 
    Beispiel:

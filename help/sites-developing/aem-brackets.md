@@ -1,7 +1,7 @@
 ---
 title: AEM Brackets-Erweiterung
 seo-title: AEM Brackets Extension
-description: AEM Brackets-Erweiterung
+description: Erfahren Sie, wie Sie die Adobe Experience Manager-Erweiterung für Brackets verwenden.
 seo-description: null
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '938'
 ht-degree: 67%
 
 ---
@@ -34,9 +34,9 @@ Die wichtigsten Funktionen der AEM Brackets-Erweiterung sind:
 * Vollständige Content-Package-Synchronisierung des Projekts
 * HTL-Code-Vervollständigung für Ausdrücke und `data-sly-*`-Blockanweisungen.
 
-Zusätzlich bietet Brackets viele nützliche Funktionen für AEM Schriftartentwickler:
+Darüber hinaus bietet Brackets viele nützliche Funktionen für AEM Schriftartentwickler:
 
-* Photoshop-Dateiunterstützung zum Extrahieren von Informationen aus einer PSD-Datei wie Ebenen, Messungen, Farben, Schriftarten, Texten usw.
+* Photoshop-Dateiunterstützung zum Extrahieren von Informationen aus einer PSD-Datei wie Ebenen, Messungen, Farben, Schriftarten, Texte usw.
 * Codehinweise von der PSD, um diese extrahierten Informationen im Code einfach wiederzuverwenden.
 * CSS-Präprozessor-Unterstützung wie LESS und SCSS.
 * Hunderte von zusätzlichen Erweiterungen, die spezifischere Anforderungen abdecken.
@@ -71,7 +71,7 @@ Das Projekt muss mindestens Folgendes enthalten:
 
 1. a `jcr_root` Ordner (z. B. `myproject/jcr_root`)
 
-1. a `filter.xml` -Datei (z. B. `myproject/META-INF/vault/filter.xml`); Weitere Informationen zur Struktur der `filter.xml` Datei finden Sie unter [Definition von Workspace-Filtern](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` -Datei (z. B. `myproject/META-INF/vault/filter.xml`); für weitere Details zur Struktur der `filter.xml` Datei finden Sie unter [Definition von Workspace-Filtern](https://jackrabbit.apache.org/filevault/filter.html).
 
 Im Menü **Datei** von Brackets wählen Sie **Ordner öffnen...** und wählen Sie entweder den Ordner `jcr_root` oder den übergeordneten Projektordner.
 
@@ -123,7 +123,7 @@ Im Menü **AEM** können Sie mit den Optionen **Content-Package exportieren** od
 Die AEM Brackets-Erweiterung verfügt über ein Benachrichtigungssymbol in der Symbolleiste rechts neben dem Brackets-Fenster, das den Status der letzten Synchronisation angibt:
 
 * grün - alle Dateien wurden erfolgreich synchronisiert
-* blau - Synchronisierungsvorgang wird ausgeführt
+* blau - ein Synchronisierungsvorgang wird ausgeführt
 * gelb - einige der Dateien wurden nicht synchronisiert
 * rot - keine der Dateien wurde synchronisiert
 

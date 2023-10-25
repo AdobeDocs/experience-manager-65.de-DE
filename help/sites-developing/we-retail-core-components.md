@@ -1,15 +1,15 @@
 ---
 title: Testen von Kernkomponenten in We.Retail
-description: Testen von Kernkomponenten in We.Retail
+description: Erfahren Sie, wie Sie mit We.Retail Kernkomponenten in Adobe Experience Manager ausprobieren.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '533'
-ht-degree: 29%
+source-wordcount: '540'
+ht-degree: 28%
 
 ---
 
@@ -33,7 +33,7 @@ Die Kernkomponenten sind moderne, flexible Komponenten mit einfacher Erweiterbar
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
 1. Alle Kernkomponenten haben den Namen **v1**, was zeigt, dass dies die erste Version dieser Kernkomponente ist. Es werden in Zukunft reguläre Versionen veröffentlicht, die versionskompatibel mit AEM sind und ein einfaches Upgrade ermöglichen, sodass Sie die neuesten Funktionen nutzen können.
-1. Klicken **Text (v1)**.
+1. Klicks **Text (v1)**.
 
    Hier können Sie sehen, dass der **Ressourcentyp** der Komponente `/apps/core/wcm/components/text/v1/text` lautet. Kernkomponenten befinden sich unter `/apps/core/wcm/components` und werden pro Komponente versioniert.
 

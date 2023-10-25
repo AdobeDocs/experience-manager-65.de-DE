@@ -1,21 +1,21 @@
 ---
 title: Tipps zum Programmieren
-description: Tipps zum Programmieren für AEM
+description: Hier finden Sie Tipps zum Kodieren von Best Practices in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '861'
 ht-degree: 55%
 
 ---
 
 # Tipps zum Programmieren{#coding-tips}
 
-## Verwenden Sie so weit wie möglich Taglibs oder HTL {#use-taglibs-or-htl-as-much-as-possible}
+## Verwenden Sie möglichst viele Taglibs oder HTL {#use-taglibs-or-htl-as-much-as-possible}
 
 Das Einschließen von Scriptlets in JSPs erschwert das Debugging von Fehlern im Code. Außerdem ist es schwierig, durch die Einbeziehung von Skripten in JSPs die Geschäftslogik von der Ansichtsebene zu trennen, was einen Verstoß gegen den Grundsatz der Einzelverantwortung und das MVC-Designmuster darstellt.
 
@@ -48,7 +48,7 @@ Idealerweise sollten Namen den Zweck beschreiben. Ein guter Hinweis darauf, dass
    <td><p><strong>Klar</strong></p> </td>
   </tr>
   <tr>
-   <td><p>int d; //Verstrichene Zeit in Tagen</p> </td>
+   <td><p>int d; //vergangene Zeit in Tagen</p> </td>
    <td><p>int elapsedTimeInDays;</p> </td>
   </tr>
   <tr>
@@ -64,7 +64,7 @@ Dieses Prinzip sieht vor, dass derselbe Codesatz niemals dupliziert werden sollt
 
 ### Blanke CSS-Regeln vermeiden {#avoid-naked-css-rules}
 
-CSS-Regeln sollten speziell auf das Zielelement im Kontext Ihrer Anwendung ausgerichtet sein. Eine CSS-Regel, die auf *.content .center* angewendet wird, wäre beispielsweise zu breit angelegt und könnte sich auf viele Inhalte in Ihrem System auswirken, weshalb andere diesen Stil zukünftig überschreiben müssten. in Erwägung nachstehender Gründe: *.myapp-centertext* wäre eine spezifischere Regel, da sie die Zentrierung angibt. *text* im Kontext Ihrer Anwendung.
+CSS-Regeln sollten speziell auf das Zielelement im Kontext Ihrer Anwendung ausgerichtet sein. Eine CSS-Regel, die auf *.content .center* angewendet wird, wäre beispielsweise zu breit angelegt und könnte sich auf viele Inhalte in Ihrem System auswirken, weshalb andere diesen Stil zukünftig überschreiben müssten. in Erwägung nachstehender Gründe *.myapp-centertext* wäre eine spezifischere Regel, da sie die Zentrierung angibt. *text* im Kontext Ihrer Anwendung.
 
 ### Verwendung veralteter APIs vermeiden {#eliminate-usage-of-deprecated-apis}
 
@@ -90,7 +90,7 @@ Für Java™-Code unterstützt AEM slf4j als Standard-API für die Protokollieru
 * WARN: Wenn etwas nicht richtig funktioniert hat, aber die Verarbeitung fortgesetzt werden kann. Dies geschieht oft in Folge eines Ausnahmefehlers, mit dem gerechnet wurde, z. B. *PathNotFoundException*.
 * INFO: Informationen, die bei der Überwachung eines Systems hilfreich sein dürften. Denken Sie daran, dass dies der Standard ist und die meisten Kunden ihn in ihren Umgebungen beibehalten. Verwenden Sie sie daher nicht übermäßig.
 * DEBUG: Informationen der unteren Ebene zur Verarbeitung. Nützlich beim Debugging eines Problems mit Unterstützung.
-* TRACE: Die Informationen der niedrigsten Ebene, Dinge wie Einstieg/Ausstieg-Methoden. Dies wird normalerweise nur von Entwicklern verwendet.
+* TRACE: Die Informationen auf der niedrigsten Ebene, Dinge wie Einstieg/Ausstieg-Methoden. Dies wird normalerweise nur von Entwicklern verwendet.
 
 Im Falle von JavaScript *console.log* sollten nur während der Entwicklung verwendet werden und alle Protokollanweisungen sollten vor der Veröffentlichung entfernt werden.
 

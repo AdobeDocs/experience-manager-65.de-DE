@@ -1,15 +1,15 @@
 ---
 title: Rendering von adaptiven Vorlagen
-description: Rendering von adaptiven Vorlagen
+description: Erfahren Sie mehr über das Rendering adaptiver Vorlagen in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '480'
-ht-degree: 12%
+source-wordcount: '486'
+ht-degree: 11%
 
 ---
 
@@ -46,11 +46,11 @@ In diesem Beispiel werden Sie die vorhandene Gerätegruppe konfigurieren **Smart
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. Der Selektor steht für die **BlackBerry®** und **iPhone 4** hat die Gerätegruppe **Smartphone** wird in den folgenden Schritten zu den Vorlagen und Seitenstrukturen hinzugefügt.
+1. Der Selektor steht für die **BlackBerry®** und **IPHONE 4** hat die Gerätegruppe **Smartphone** wird in den folgenden Schritten zu den Vorlagen und Seitenstrukturen hinzugefügt.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
-1. Lassen Sie mithilfe von CRXDE Lite zu, dass die Gerätegruppe in Ihrer Vorlage verwendet wird, indem Sie sie zur String-Eigenschaft mit mehreren Werten hinzufügen `cq:deviceGroups` in der Struktur Ihrer Vorlage.
+1. Lassen Sie mithilfe von CRXDE Lite zu, dass die Gerätegruppe in Ihrer Vorlage verwendet wird, indem Sie sie zur String-Eigenschaft mit mehreren Werten hinzufügen. `cq:deviceGroups` in der Struktur Ihrer Vorlage.
 
    `/conf/<your-site>/settings/wcm/templates/<your-template>/structure/jcr:content`
 
@@ -60,7 +60,7 @@ In diesem Beispiel werden Sie die vorhandene Gerätegruppe konfigurieren **Smart
 
    ![chlimage_1-159](assets/chlimage_1-159.png)
 
-1. Lassen Sie mithilfe von CRXDE Lite zu, dass die Gerätegruppe auf Ihrer Site verwendet wird, indem Sie sie zur String-Eigenschaft mit mehreren Werten hinzufügen `cq:deviceGroups` auf der Struktur Ihrer Site.
+1. Lassen Sie mithilfe von CRXDE Lite zu, dass die Gerätegruppe auf Ihrer Site verwendet wird, indem Sie sie zur String-Eigenschaft mit mehreren Werten hinzufügen. `cq:deviceGroups` auf der Struktur Ihrer Site.
 
    `/content/<your-site>/jcr:content`
 

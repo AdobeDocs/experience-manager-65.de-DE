@@ -1,22 +1,22 @@
 ---
 title: Migration zur Touch-optimierten Benutzeroberfläche
-description: Migration zur Touch-optimierten Benutzeroberfläche
+description: Erfahren Sie mehr über die Migration von Adobe Experience Manager auf die Touch-Benutzeroberfläche und darüber, wie sie sich auf Sie auswirkt.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '669'
 ht-degree: 76%
 
 ---
 
 # Migration zur Touch-optimierten Benutzeroberfläche{#migration-to-the-touch-ui}
 
-Mit der Version 6.0 führte Adobe Experience Manager (AEM) eine neue Benutzeroberfläche ein, die als *Touch-optimierte Benutzeroberfläche* (auch einfach *Touch-Benutzeroberfläche* genannt) bezeichnet wird. Sie ist an die Adobe Experience Cloud und die allgemeinen Richtlinien für die Benutzeroberfläche der Adobe angepasst. Dies ist inzwischen die Standard-Benutzeroberfläche in AEM. Die veraltete, Desktop-orientierte Benutzeroberfläche wird *klassische Benutzeroberfläche* genannt.
+Mit der Version 6.0 führte Adobe Experience Manager (AEM) eine neue Benutzeroberfläche ein, die als *Touch-optimierte Benutzeroberfläche* (auch einfach *Touch-Benutzeroberfläche* genannt) bezeichnet wird. Sie ist an die Adobe Experience Cloud und die allgemeinen Richtlinien für die Adobe-Benutzeroberfläche angepasst. Dies ist inzwischen die Standard-Benutzeroberfläche in AEM. Die veraltete, Desktop-orientierte Benutzeroberfläche wird *klassische Benutzeroberfläche* genannt.
 
 Wenn Sie AEM mit der klassischen Benutzeroberfläche verwendet haben, sollten Sie Maßnahmen ergreifen, um Ihre Instanz zu migrieren. Diese Seite soll als Sprungbrett dienen, indem Links zu einzelnen Ressourcen bereitgestellt werden.
 
@@ -148,9 +148,9 @@ Umfassende Informationen zur Entwicklung von AEM finden Sie in der Sammlung von 
 * [Dokumentation zur Granite-Benutzeroberfläche](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [Tutorials und Videos zu AEM 6.5 Sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html?lang=de)
 * [Erste Schritte bei der Entwicklung von AEM Sites – WKND-Tutorial ](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=de)
 * [AEM-Modernisierungs-Tools](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
 >
->AEM Modernisierungs-Tools sind Community-Maßnahmen und werden von der Adobe nicht unterstützt oder gerechtfertigt.
+>AEM Modernisierungs-Tools sind ein Community-Projekt und werden vom Adobe nicht unterstützt oder garantiert.

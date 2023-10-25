@@ -1,15 +1,15 @@
 ---
 title: Prozessreferenz für Workflows
-description: Prozessreferenz für Workflows
+description: Weitere Informationen zu Workflows in Adobe Experience Manager finden Sie in dieser Prozessreferenz .
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1068'
-ht-degree: 47%
+source-wordcount: '1076'
+ht-degree: 46%
 
 ---
 
@@ -40,7 +40,7 @@ Im häufigsten Fall ist die Payload ein JCR-Knoten im Repository (z. B. eine AEM
 
 Einige Workflow-Prozesse akzeptieren Argumente, die der Administrator beim Einrichten des Workflow-Schritts angibt.
 
-Argumente werden als einzelne Zeichenfolge in der **Prozess-Argumente** -Eigenschaft in **Eigenschaften** -Bereich des Workflow-Editors. Für jeden unten beschriebenen Prozess wird das Format der Argumentzeichenfolge in einer einfachen EBNF-Grammatik beschrieben. Das folgende Beispiel zeigt, dass die Argumentzeichenfolge aus einem oder mehreren durch Komma getrennten Paaren besteht, wobei jedes Paar aus einem Namen (der eine Zeichenfolge ist) und einem Wert besteht, getrennt durch einen Doppelpunkt:
+Argumente werden als einzelne Zeichenfolge in der **Prozess-Argumente** -Eigenschaft in der **Eigenschaften** -Bereich des Workflow-Editors. Für jeden unten beschriebenen Prozess wird das Format der Argumentzeichenfolge in einer einfachen EBNF-Grammatik beschrieben. Das folgende Beispiel zeigt, dass die Argumentzeichenfolge aus einem oder mehreren durch Komma getrennten Paaren besteht, wobei jedes Paar aus einem Namen (der eine Zeichenfolge ist) und einem Wert besteht, getrennt durch einen Doppelpunkt:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -112,7 +112,7 @@ Die `ProcessAssembler` -Prozess führt mehrere Teilprozesse nacheinander in eine
 
 * **Java™-Klasse**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* **Nutzlast**: DAM-Asset, AEM oder keine Payload (abhängig von den Anforderungen von Teilprozessen).
+* **Nutzlast**: Ein DAM-Asset, eine AEM oder keine Payload (abhängig von den Anforderungen der Teilprozesse).
 * **Argumente**:
 
 ```
@@ -202,7 +202,7 @@ Sperrt die Payload des Workflows.
 * **Argumente:** Keines
 * **Zeitüberschreitung:** Ignoriert
 
-Der Schritt hat unter folgenden Umständen keine Auswirkungen:
+Der Schritt hat unter den folgenden Umständen keine Auswirkungen:
 
 * Die Payload wurde bereits gesperrt
 * Der Payload-Knoten enthält keinen untergeordneten jcr:content-Knoten
@@ -217,7 +217,7 @@ Entsperrt die Payload des Workflows.
 * **Argumente:** Keines
 * **Zeitüberschreitung:** Ignoriert
 
-Der Schritt hat unter folgenden Umständen keine Auswirkungen:
+Der Schritt hat unter den folgenden Umständen keine Auswirkungen:
 
 * Die Payload wurde bereits entsperrt
 * Der Payload-Knoten enthält keinen untergeordneten jcr:content-Knoten

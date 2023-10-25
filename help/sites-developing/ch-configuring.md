@@ -1,14 +1,14 @@
 ---
 title: Konfigurieren von ContextHub
-description: Erfahren Sie, wie man ContextHub konfiguriert.
+description: Erfahren Sie, wie Sie Adobe Experience Manager ContextHub konfigurieren, um Ihre Erlebnisse zu personalisieren.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1786'
+source-wordcount: '1793'
 ht-degree: 98%
 
 ---
@@ -62,7 +62,7 @@ Wenn die ContextHub-Benutzeroberfläche angezeigt wird, erscheint sie nur auf de
 Konfigurieren Sie die UI-Modi und -Module, die in der ContextHub-Symbolleiste im Vorschaumodus angezeigt werden:
 
 * UI-Modi: Gruppen verwandter Module
-* Module: Widgets, die Kontextdaten aus einem Store bereitstellen und Autorinnen und Autoren die Bearbeitung des Kontexts ermöglichen
+* Module: Widgets, die Kontextdaten aus einem Speicher bereitstellen und Autorinnen und Autoren die Bearbeitung des Kontexts ermöglichen
 
 UI-Modi werden als eine Reihe von Symbolen auf der linken Seite der Symbolleiste angezeigt. Wenn diese Option aktiviert ist, werden die Module eines UI-Modus rechts angezeigt.
 
@@ -110,7 +110,7 @@ Die Eigenschaften des UI-Moduls enthalten eine Detailkonfiguration, in der Sie W
 
 1. Klicken oder tippen Sie in der Experience Manager-Leiste auf „Tools“ > „Sites“ > „ContextHub“.
 1. Klicken oder tippen Sie auf den Konfigurations-Container, dem Sie ein UI-Modul hinzufügen möchten.
-1. Klicken Sie oder geben Sie die ContextHub-Konfiguration ein, der Sie das UI-Modul hinzufügen möchten.
+1. Klicken oder tippen Sie auf die ContextHub-Konfiguration, der Sie das UI-Modul hinzufügen möchten.
 1. Klicken oder tippen Sie auf den UI-Modus, dem Sie das UI-Modul hinzufügen.
 1. Klicken oder tippen Sie auf die Schaltfläche „Erstellen“ und dann auf „ContextHub-UI-Modul (generisch)“.
 
@@ -185,7 +185,7 @@ Der Store „contexthub.generic-jsonp“ wird so konfiguriert, dass Daten für d
 
 Mit dem Store-Beispielkandidaten „contexthub.generic-jsonp“ können Sie Daten aus einem JSONP-Service oder einem Webservice abrufen, der JSON-Daten zurückgibt. Verwenden Sie für diesen Store-Kandidaten die Store-Konfiguration, um Details zu dem JSONP-Service anzugeben, der genutzt werden soll.
 
-Die [init](/help/sites-developing/contexthub-api.md#init-name-config) Funktion der `ContextHub.Store.JSONPStore` Die JavaScript-Klasse definiert eine `config` -Objekt, das diesen Store-Kandidaten initialisiert. Das `config`-Objekt enthält ein `service`-Objekt mit Details zum JSONP-Service. Zum Konfigurieren des Stores geben Sie das `service`-Objekt im JSON-Format als Wert für die Eigenschaft „Detailkonfiguration“ an.
+Mit der Funktion [init](/help/sites-developing/contexthub-api.md#init-name-config) der JavaScript-Klasse `ContextHub.Store.JSONPStore` wird ein `config`-Objekt definiert, das diesen Store-Kandidaten initialisiert. Das `config`-Objekt enthält ein `service`-Objekt mit Details zum JSONP-Service. Zum Konfigurieren des Stores geben Sie das `service`-Objekt im JSON-Format als Wert für die Eigenschaft „Detailkonfiguration“ an.
 
 Verwenden Sie zum Speichern von Daten aus dem MD5-Service der Website „jsontest.com“ das Verfahren unter [Erstellen eines ContextHub-Store](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store) mit den folgenden Eigenschaften:
 
@@ -242,7 +242,7 @@ Ein Debugging-Modus für ContextHub kann aktiviert werden, um die Fehlerbehebung
 Bearbeiten Sie die Konfiguration von ContextHub und aktivieren Sie die Option **Debuggen**.
 
 1. Klicken oder tippen Sie in der Leiste auf **„Tools“ > „Sites“ > „ContextHub“**
-1. Klicken oder tippen Sie auf den standardmäßigen **Konfigurations-Container**.
+1. Klicken oder tippen Sie auf den standardmäßigen **Konfigurations-Container**
 1. Wählen Sie die **ContextHub-Konfiguration** aus und klicken oder tippen Sie auf **Ausgewähltes Element bearbeiten**.
 1. Klicken oder tippen Sie auf **Debuggen** und dann auf **Speichern**.
 

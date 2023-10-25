@@ -1,16 +1,16 @@
 ---
 title: Single Page Applications (SPAs) und Server-seitiges Rendering
-description: Single Page Applications (SPAs) und Server-seitiges Rendering
+description: Erfahren Sie mehr über SPA und Server-seitiges Rendering in Adobe Experience Manager.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: a80bc883-e0f6-4714-bd28-108262f96d77
-source-git-commit: a66814fa065b7545ec39fe9109b4c5815fa199da
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1718'
-ht-degree: 69%
+source-wordcount: '1724'
+ht-degree: 86%
 
 ---
 
@@ -28,26 +28,26 @@ ht-degree: 69%
 
 Single Page Applications (SPAs) können dem Benutzer ein intensives, dynamisches Erlebnis bieten, das häufig genau wie eine native Anwendung reagiert. [Dies wird erreicht, indem man sich darauf verlässt, dass der Client den Inhalt im Voraus lädt und dann die Benutzerinteraktion erheblich erleichtert](/help/sites-developing/spa-walkthrough.md#how-does-a-spa-work) und so den Kommunikationsaufwand zwischen Client und Server minimiert, wodurch die App reaktionsfähiger wird.
 
-Dies kann jedoch zu längeren anfänglichen Ladezeiten führen, insbesondere wenn die SPA groß und inhaltsreich ist. Um die Ladezeiten zu optimieren, können einige Inhalte serverseitig gerendert werden. Die Verwendung von Server-seitigem Rendering (SSR) kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering an den Client weitergeben.
+Dies kann jedoch zu längeren anfänglichen Ladezeiten führen, insbesondere wenn die SPA groß und inhaltsreich ist. Um die Ladezeit zu optimieren, können einige Inhalte Server-seitig gerendert werden. Die Verwendung von Server-seitigem Rendering (SSR) kann das anfängliche Laden der Seite beschleunigen und dann das weitere Rendering dem Client überlassen.
 
 ## Verwendung von SSR {#when-to-use-ssr}
 
 SSR ist nicht bei allen Projekten erforderlich. Obwohl JS SSR für SPAs von AEM voll unterstützt wird, empfiehlt Adobe nicht, sie systematisch für jedes Projekt zu implementieren.
 
-Bei der Entscheidung über die Implementierung von SSR müssen Sie zunächst abschätzen, welche zusätzliche Komplexität, welchen Aufwand und welche Kosten das Hinzufügen von SSR für das Projekt realistisch darstellt, einschließlich der langfristigen Wartung. Eine SSR-Architektur sollte nur dann gewählt werden, wenn der Mehrwert die geschätzten Kosten deutlich übersteigt.
+Wenn Sie sich für die Implementierung von SSR entscheiden, müssen Sie zunächst abschätzen, welche zusätzliche Komplexität, welchen Aufwand und welche Kosten das Hinzufügen von SSR für das Projekt realistisch darstellt, einschließlich der langfristigen Wartung. Eine SSR-Architektur sollte nur dann gewählt werden, wenn der Mehrwert die geschätzten Kosten deutlich übersteigt.
 
 SSR bietet in der Regel einen gewissen Mehrwert, wenn eine der folgenden Fragen klar mit Ja beantwortet werden kann:
 
-* **SEO:** Ist SSR weiterhin erforderlich, damit Ihre Site von den Suchmaschinen, die Traffic bringen, richtig indiziert wird? Denken Sie daran, dass die wichtigsten Suchmaschinen-Crawler jetzt JS auswerten.
+* **SEO:** Ist SSR tatsächlich noch erforderlich, damit Ihre Website von den Suchmaschinen, die Traffic bringen, richtig indiziert wird? Denken Sie daran, dass die wichtigsten Suchmaschinen-Crawler jetzt JS auswerten.
 * **Seitengeschwindigkeit:** Bietet SSR eine messbare Geschwindigkeitsverbesserung in Echtzeit-Umgebungen? Steigert SSR das Kundenerlebnis insgesamt?
 
-Nur wenn mindestens eine dieser beiden Fragen mit einem klaren Ja für Ihr Projekt beantwortet wird, empfiehlt Adobe die Implementierung von SSR. In den folgenden Abschnitten wird beschrieben, wie Sie dies mit Adobe I/O Runtime erreichen.
+Nur wenn mindestens eine dieser beiden Fragen für Ihr Projekt mit einem klaren „Ja“ beantwortet werden kann, wird die Implementierung von SSR empfohlen. In den folgenden Abschnitten wird beschrieben, wie Sie dies mit Adobe I/O Runtime erreichen.
 
 ## Adobe I/O Runtime {#adobe-i-o-runtime}
 
 Wenn Sie [davon überzeugt sind, dass Ihr Projekt die Implementierung von SSR erfordert](/help/sites-developing/spa-ssr.md#when-to-use-ssr), empfiehlt Adobe die Verwendung von Adobe I/O Runtime.
 
-Weitere Informationen zu Adobe I/O Runtime finden Sie unter folgenden Themen:
+Weitere Informationen zu Adobe I/O Runtime finden Sie im Folgenden:
 
 * [https://developer.adobe.com/runtime/](https://developer.adobe.com/runtime/) - für einen Überblick über den Dienst
 * [https://developer.adobe.com/runtime/docs/](https://developer.adobe.com/runtime/docs/) - für detaillierte Dokumentation zur Plattform
@@ -59,7 +59,7 @@ In den folgenden Abschnitten wird erläutert, wie Sie mit Adobe I/O Runtime für
 
 >[!NOTE]
 >
->Adobe empfiehlt für jede Umgebung einen separaten Adobe I/O Runtime-Arbeitsbereich (Staging, Produktion, Tests usw.). Dies ermöglicht typische SDLC-Muster (System Development Life Cycle) mit verschiedenen Versionen einer einzelnen Anwendung, die in verschiedenen Umgebungen bereitgestellt werden. Weitere Informationen finden Sie im Dokument [CI/CD für Project App Builder-Anwendungen](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/).
+>Es wird für jede Umgebung ein separater Adobe I/O Runtime-Arbeitsbereich (Staging, Produktion, Tests usw.) empfohlen. Dies ermöglicht typische SDLC-Muster (System Development Life Cycle) mit verschiedenen Versionen einer einzelnen Anwendung, die in verschiedenen Umgebungen bereitgestellt werden. Weitere Informationen finden Sie im Dokument [CI/CD für Project App Builder-Anwendungen](https://developer.adobe.com/app-builder/docs/guides/deployment/ci_cd_for_firefly_apps/).
 >
 >Pro Instanz (Autor, Veröffentlichung) ist kein separater Arbeitsbereich erforderlich, es sei denn, es gibt Unterschiede in der Laufzeitimplementierung pro Instanztyp.
 
@@ -73,7 +73,7 @@ Dies geschieht über den **RemoteContentRenderer – Configuration Factory OSGi-
 
 Folgende Felder stehen für die Konfiguration zur Verfügung:
 
-* **Inhaltspfadmuster** - Regulärer Ausdruck, um bei Bedarf einen Teil des Inhalts abzugleichen
+* **Inhaltspfadmuster** – Regulärer Ausdruck, um bei Bedarf einen Teil einem Inhaltsbereich zuzuordnen
 * **Remote-Endpunkt-URL**: URL des Endpunkts, der für die Erstellung des Inhalts verantwortlich ist
    * Verwenden Sie das gesicherte HTTPS-Protokoll, wenn Sie sich nicht im lokalen Netzwerk befinden.
 * **Zusätzliche Anfrage-Header**: Zusätzliche Header, die der an den Remote-Endpunkt gesendeten Anfrage hinzugefügt werden.
@@ -88,7 +88,7 @@ Folgende Felder stehen für die Konfiguration zur Verfügung:
 
 >[!NOTE]
 >
->Diese Konfiguration verwendet die [Remote Content Renderer,](#remote-content-renderer) bietet zusätzliche Erweiterungs- und Anpassungsoptionen.
+>Diese Konfiguration nutzt den [Remote-Inhalts-Renderer](#remote-content-renderer), der über zusätzliche Erweiterungs- und Anpassungsoptionen verfügt.
 
 ## AEM-gesteuerter Kommunikationsfluss {#aem-driven-communication-flow}
 
@@ -106,7 +106,7 @@ Bei Verwendung von SSR umfasst der [Workflow für](/help/sites-developing/spa-ov
 
 ## Adobe I/O Runtime-gesteuerter Kommunikationsfluss {#adobe-i-o-runtime-driven-communication-flow}
 
-Im vorherigen Abschnitt wird die standardmäßige und empfohlene Implementierung des Server-seitigen Renderings bezüglich SPA in AEM beschrieben, in der AEM das Bootstrapping und die Bereitstellung von Inhalten durchführt.
+Im vorherigen Abschnitt wurde die standardmäßige und empfohlene Implementierung des Server-seitigen Renderings in Bezug auf SPAs in AEM beschrieben, bei der AEM das Bootstrapping und die Bereitstellung von Inhalten durchführt.
 
 Alternativ kann SSR so implementiert werden, dass Adobe I/O Runtime für das Bootstrapping verantwortlich ist, wodurch der Kommunikationsfluss effektiv umgekehrt wird.
 
@@ -149,9 +149,9 @@ Beide Modelle sind gültig und werden von AEM unterstützt. Vor der Einführung 
 
 ## Planen für SSR {#planning-for-ssr}
 
-Nur ein Teil einer Anwendung muss serverseitig gerendert werden. Das häufigste Beispiel ist, dass der Inhalt, der beim ersten Laden der Seite über der Kante angezeigt wird, serverseitig gerendert wird. Das spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit der SPA interagiert, wird der zusätzliche Inhalt vom Client gerendert.
+Nur ein Teil einer Anwendung muss serverseitig gerendert werden. Das häufigste Beispiel ist, dass der Inhalt, der beim anfänglichen Laden der Seite über der Kante angezeigt wird, Server-seitig gerendert wird. Das spart Zeit, indem bereits gerenderte Inhalte an den Client gesendet werden. Wenn der Benutzer mit der SPA interagiert, wird der zusätzliche Inhalt vom Client gerendert.
 
-Wenn Sie erwägen, das serverseitige Rendering für Ihre SPA zu implementieren, überprüfen Sie, welche Teile der App erforderlich sind.
+Wenn Sie erwägen, das Server-seitige Rendern für Ihre SPA zu implementieren, überprüfen Sie, für welche Teile der Anwendung es erforderlich ist.
 
 ## Entwickeln einer SPA mit SSR {#developing-an-spa-using-ssr}
 
@@ -161,9 +161,9 @@ Um SSR zu verwenden, stellen Sie Ihren Code in AEM und in Adobe I/O Runtime bere
 
 ## SSR für SPAs in AEM {#ssr-for-spas-in-aem}
 
-SSR für SPAs in AEM erfordert Adobe I/O Runtime, das für das Rendering des App-Inhalts auf der Server-Seite aufgerufen wird. Innerhalb der HTL der App wird eine Ressource in Adobe I/O Runtime aufgerufen, um den Inhalt zu rendern.
+SSR für SPAs in AEM erfordert Adobe I/O Runtime, das für das Rendering des App-Inhalts auf der Server-Seite aufgerufen wird. Innerhalb der HTL der Anwendung wird eine Ressource in Adobe I/O Runtime aufgerufen, um den Inhalt zu rendern.
 
-So wie AEM die Angular- und React-SPA-Frameworks standardmäßig unterstützt, wird auch das serverseitige Rendering für Angular- und React-Apps unterstützt. Weitere Informationen finden Sie in der NPM-Dokumentation für beide Frameworks.
+So wie AEM die Angular- und React-SPA-Frameworks standardmäßig unterstützt, wird auch das Server-seitige Rendering für Angular- und React-Anwendungen unterstützt. Weitere Informationen finden Sie in der NPM-Dokumentation für beide Frameworks.
 
 * React: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Angular: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/angular-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
@@ -176,7 +176,7 @@ Ein einfaches Beispiel finden Sie unter [We.Retail Journal-App](https://github.c
 
 >[!NOTE]
 >
->Jedes AEM Projekt sollte [AEM Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de), SPA Projekte mit React oder Angular unterstützt und das SPA SDK verwendet.
+>Für jedes AEM-Projekt sollte der [AEM-Projektarchetyp](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?lang=de) genutzt werden, der SPA-Projekte mithilfe von React oder Angular unterstützt und das SPA-SDK verwendet.
 
 ## Verwenden von Node.js {#using-node-js}
 
@@ -190,7 +190,7 @@ Bei lokalen AEM-Instanzen ist es auch möglich, SSR mit einer benutzerdefinierte
 
 >[!NOTE]
 >
->Wenn SSR über Node.js implementiert werden muss, empfiehlt Adobe für jede AEM Umgebung (Authoring, Veröffentlichung, Staging usw.) eine separate Node.js-Instanz.
+>Wenn SSR über Node.js implementiert werden muss, empfiehlt Adobe eine separate Node.js-Instanz für jede AEM Umgebung (Autor, Veröffentlichung, Staging usw.).
 
 ## Remote Content Renderer {#remote-content-renderer}
 
@@ -202,7 +202,7 @@ Die [Remote Content Renderer-Konfiguration](#remote-content-renderer-configurati
 
 `RemoteContentRenderingService` kann durch Umkehrung der Abhängigkeit entweder in ein benutzerdefiniertes Sling-Modell oder Servlet eingefügt werden, wenn zusätzliche Inhaltsmanipulationen erforderlich sind.
 
-Dieser Service wird intern vom [RemoteContentRendererRequestHandlerServlet](#remotecontentrendererrequesthandlerservlet) verwendet.
+Dieser Dienst wird intern vom [RemoteContentRendererRequestHandlerServlet](#remotecontentrendererrequesthandlerservlet) verwendet.
 
 ### RemoteContentRendererRequestHandlerServlet {#remotecontentrendererrequesthandlerservlet}
 
@@ -227,7 +227,7 @@ Die Konfiguration des Standard-Handlers muss wie im Abschnitt [Remote Content Re
 
 So lassen Sie ein Servlet Inhalte abrufen und zurückgeben, die in die Seite eingefügt werden können:
 
-1. Stellen Sie sicher, dass der Remote-Server zugänglich ist.
+1. Stellen Sie sicher, dass auf den Remote-Server zugegriffen werden kann.
 1. Fügen Sie der HTL-Vorlage einer AEM-Komponente eines der folgenden Snippets hinzu.
 1. Optional können Sie die OSGi-Konfigurationen erstellen oder ändern.
 1. Durchsuchen Sie den Inhalt Ihrer Site.
@@ -240,4 +240,4 @@ In der Regel ist die HTL-Vorlage einer Seitenkomponente der wichtigste Empfänge
 
 ### Voraussetzungen {#requirements}
 
-Die Servlets verwenden den Sling Model Exporter, um die Komponentendaten zu serialisieren. Standardmäßig werden sowohl `com.adobe.cq.export.json.ContainerExporter` als auch `com.adobe.cq.export.json.ComponentExporter` als Sling-Modell-Adapter unterstützt. Bei Bedarf können Sie Klassen hinzufügen, an die die Anfrage angepasst werden soll, um das `RemoteContentRendererServlet` zu verwenden und das `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses` zu implementieren. Die zusätzlichen Klassen müssen den `ComponentExporter` erweitern.
+Die Servlets verwenden den Sling-Modell-Exporter, um die Komponentendaten zu serialisieren. Standardmäßig werden sowohl `com.adobe.cq.export.json.ContainerExporter` als auch `com.adobe.cq.export.json.ComponentExporter` als Sling-Modell-Adapter unterstützt. Bei Bedarf können Sie Klassen hinzufügen, an die die Anfrage angepasst werden soll, um das `RemoteContentRendererServlet` zu verwenden und das `RemoteContentRendererRequestHandler#getSlingModelAdapterClasses` zu implementieren. Die zusätzlichen Klassen müssen den `ComponentExporter` erweitern.

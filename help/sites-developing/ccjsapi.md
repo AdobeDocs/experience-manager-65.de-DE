@@ -1,7 +1,7 @@
 ---
 title: ClientContext-JavaScript-API
 seo-title: Client Context JavaScript API
-description: Die JavaScript-API für ClientContext
+description: Erfahren Sie mehr über die JavaScript-API für ClientContext in Adobe Experience Manager.
 seo-description: The JavaScript API for Client Context
 uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '3153'
+source-wordcount: '3159'
 ht-degree: 27%
 
 ---
@@ -76,7 +76,7 @@ Wenn die Verzögerung auf `true` oder eine Anzahl an Millisekunden festgelegt is
 
 **Parameter**
 
-* storeName: Zeichenfolge. Der Name des Sitzungsspeichers, dem der Listener hinzugefügt werden soll.
+* storeName: String. Der Name des Sitzungsspeichers, dem der Listener hinzugefügt werden soll.
 * callback: Funktion. Die Funktion, die bei der Speicherinitialisierung aufgerufen werden soll.
 * delay: Boolesch oder Zahl. Die Zeitdauer, die den Aufruf der Callback-Funktion verzögert, in Millisekunden. Der boolesche Wert `true` nutzt den Standardwert `200 ms`. Beim booleschen Wert `false` oder einer negativen Zahl wird keine Verzögerung eingesetzt.
 
@@ -90,7 +90,7 @@ Registriert eine Callback-Funktion, wenn ein Sitzungsspeicher registriert wird. 
 
 **Parameter**
 
-* storeName: Zeichenfolge. Der Name des Sitzungsspeichers, dem der Listener hinzugefügt werden soll.
+* storeName: String. Der Name des Sitzungsspeichers, dem der Listener hinzugefügt werden soll.
 * callback: Funktion. Die Funktion, die bei der Speicherinitialisierung aufgerufen werden soll.
 
 **Rückgabe**
@@ -117,11 +117,11 @@ Erstellt ein CQ_Analytics.JSONPStore-Objekt.
 
 **Parameter**
 
-* storeName: Zeichenfolge. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt. Wenn kein storeName angegeben ist, gibt die Methode null zurück.
-* serviceURL: Zeichenfolge. Die URL des JSONP-Dienstes
-* dynamicData: (Optional) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
+* storeName: String. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt. Wenn kein storeName angegeben ist, gibt die Methode null zurück.
+* serviceURL: String. Die URL des JSONP-Dienstes
+* dynamicData: (Optionales) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
 * deferLoading: (Optional) Boolesch. Der Wert true verhindert, dass der JSONP-Dienst bei der Objekterstellung aufgerufen wird. Der Wert false bewirkt, dass der JSONP-Dienst aufgerufen wird.
-* loadingCallback: (optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des JSONP-Objekts aufgerufen werden soll, das der JSONP-Dienst zurückgibt. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
+* loadingCallback: (optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des vom JSONP-Dienst zurückgegebenen JSONP-Objekts aufgerufen werden soll. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
 
 **Rückgabe**
 
@@ -146,8 +146,8 @@ Ruft den JSONP-Dienst auf. Die JSONP-URL ist die Dienst-URL, der ein Callback-Fu
 **Parameter**
 
 * serviceURL: (Optional) Zeichenfolge. Der JSONP-Dienst, der aufgerufen werden soll. Der Wert null bewirkt, dass die bereits konfigurierte Dienst-URL verwendet wird. Ein Wert ungleich null legt den JSONP-Dienst fest, der für dieses Objekt verwendet werden soll. (Siehe setServiceURL.)
-* dynamicData: (Optional) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
-* callback: (Optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des JSONP-Objekts aufgerufen werden soll, das der JSONP-Dienst zurückgibt. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
+* dynamicData: (Optionales) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
+* callback: (Optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des vom JSONP-Dienst zurückgegebenen JSONP-Objekts aufgerufen werden soll. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
 
 **Rückgabe**
 
@@ -159,10 +159,10 @@ Erstellt ein CQ_Analytics.JSONPStore-Objekt und registriert den Speicher bei Cli
 
 **Parameter**
 
-* storeName: Zeichenfolge. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt. Wenn kein storeName angegeben ist, gibt die Methode null zurück.
+* storeName: String. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt. Wenn kein storeName angegeben ist, gibt die Methode null zurück.
 * serviceURL: (Optional) Zeichenfolge. Die URL des JSONP-Dienstes.
-* dynamicData: (Optional) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
-* callback: (Optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des JSONP-Objekts aufgerufen werden soll, das der JSONP-Dienst zurückgibt. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
+* dynamicData: (Optionales) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
+* callback: (Optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des vom JSONP-Dienst zurückgegebenen JSONP-Objekts aufgerufen werden soll. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
 
 **Rückgabe**
 
@@ -174,7 +174,7 @@ Legt die URL des JSONP-Dienstes fest, der zum Abrufen von JSON-Daten verwendet w
 
 **Parameter**
 
-* serviceURL: Zeichenfolge. Die URL des JSONP-Dienstes, der JSON-Daten bereitstellt
+* serviceURL: String. Die URL des JSONP-Dienstes, der JSON-Daten bereitstellt
 
 **Rückgabe**
 
@@ -222,7 +222,7 @@ Erstellt ein CQ_Analytics.JSONStore-Objekt mit einem angegebenen Namen, das mit 
 
 **Parameter**
 
-* storeName: Zeichenfolge. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt.
+* storeName: String. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt.
 * jsonData: Objekt. Ein Objekt, das JSON-Daten enthält.
 
 **Rückgabe**
@@ -290,7 +290,7 @@ Erstellt ein CQ_Analytics.JSONStore-Objekt mit einem angegebenen Namen, das mit 
 
 **Parameter**
 
-* storeName: Zeichenfolge. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt.
+* storeName: String. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt.
 * jsonData: Objekt. Ein Objekt, das JSON-Daten enthält.
 
 **Rückgabe**
@@ -309,7 +309,7 @@ Registriert einen Listener für ein Ereignis. Siehe auch [Erstellen eines Listen
 
 **Parameter**
 
-* event: Zeichenfolge. Der Name des Ereignisses, das überwacht werden soll.
+* event: String. Der Name des Ereignisses, das überwacht werden soll.
 * fct: Funktion. Die Funktion, die aufgerufen wird, wenn das Ereignis auftritt.
 * scope: (optional) Objekt. Der Bereich, in dem die Handler-Funktion ausgeführt werden soll. Der &quot;this&quot;-Kontext der Handler-Funktion.
 
@@ -323,7 +323,7 @@ Entfernt den angegebenen Ereignis-Handler für ein Ereignis.
 
 **Parameter**
 
-* event: Zeichenfolge. Der Name des Ereignisses.
+* event: String. Der Name des Ereignisses.
 * fct: Funktion. Der Ereignishandler.
 
 **Rückgabe**
@@ -346,11 +346,11 @@ Erstellt ein CQ_Analytics.PersistedJSONPStore-Objekt.
 
 **Parameter**
 
-* storeName: Zeichenfolge. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt. Wenn kein storeName angegeben ist, gibt die Methode null zurück.
-* serviceURL: Zeichenfolge. Die URL des JSONP-Dienstes
-* dynamicData: (Optional) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
+* storeName: String. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt. Wenn kein storeName angegeben ist, gibt die Methode null zurück.
+* serviceURL: String. Die URL des JSONP-Dienstes
+* dynamicData: (Optionales) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
 * deferLoading: (Optional) Boolesch. Der Wert true verhindert, dass der JSONP-Dienst bei der Objekterstellung aufgerufen wird. Der Wert false bewirkt, dass der JSONP-Dienst aufgerufen wird.
-* loadingCallback: (optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des JSONP-Objekts aufgerufen werden soll, das der JSONP-Dienst zurückgibt. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
+* loadingCallback: (optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des vom JSONP-Dienst zurückgegebenen JSONP-Objekts aufgerufen werden soll. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
 
 **Rückgabe**
 
@@ -375,8 +375,8 @@ Ruft den JSONP-Dienst auf. Die JSONP-URL ist die Dienst-URL, der ein Callback-Fu
 **Parameter**
 
 * serviceURL: (Optional) Zeichenfolge. Der JSONP-Dienst, der aufgerufen werden soll. Der Wert null bewirkt, dass die bereits konfigurierte Dienst-URL verwendet wird. Ein Wert ungleich null legt den JSONP-Dienst fest, der für dieses Objekt verwendet werden soll. (Siehe setServiceURL.)
-* dynamicData: (Optional) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
-* callback: (Optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des JSONP-Objekts aufgerufen werden soll, das der JSONP-Dienst zurückgibt. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
+* dynamicData: (Optionales) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
+* callback: (Optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des vom JSONP-Dienst zurückgegebenen JSONP-Objekts aufgerufen werden soll. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
 
 **Rückgabe**
 
@@ -388,10 +388,10 @@ Erstellt ein CQ_Analytics.PersistedJSONPStore-Objekt und registriert den Speiche
 
 **Parameter**
 
-* storeName: Zeichenfolge. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt. Wenn kein storeName angegeben ist, gibt die Methode null zurück.
+* storeName: String. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt. Wenn kein storeName angegeben ist, gibt die Methode null zurück.
 * serviceURL: (Optional) Zeichenfolge. Die URL des JSONP-Dienstes.
-* dynamicData: (Optional) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
-* callback: (Optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des JSONP-Objekts aufgerufen werden soll, das der JSONP-Dienst zurückgibt. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
+* dynamicData: (Optionales) Objekt. JSON-Daten, die an die Initialisierungsdaten des Stores angehängt werden sollen, bevor die Callback-Funktion aufgerufen wird.
+* callback: (Optional) Zeichenfolge. Der Name der Funktion, die für die Verarbeitung des vom JSONP-Dienst zurückgegebenen JSONP-Objekts aufgerufen werden soll. Die Rückruffunktion muss einen einzelnen Parameter definieren, der ein CQ_Analytics.JSONPStore-Objekt ist.
 
 **Rückgabe**
 
@@ -403,7 +403,7 @@ Legt die URL des JSONP-Dienstes fest, der zum Abrufen von JSON-Daten verwendet w
 
 **Parameter**
 
-* serviceURL: Zeichenfolge. Die URL des JSONP-Dienstes, der JSON-Daten bereitstellt
+* serviceURL: String. Die URL des JSONP-Dienstes, der JSON-Daten bereitstellt
 
 **Rückgabe**
 
@@ -435,7 +435,7 @@ Erstellt ein CQ_Analytics.PersistedJSONStore-Objekt mit einem angegebenen Namen,
 
 **Parameter**
 
-* storeName: Zeichenfolge. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt.
+* storeName: String. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt.
 * jsonData: Objekt. Ein Objekt, das JSON-Daten enthält.
 
 **Rückgabe**
@@ -491,7 +491,7 @@ Erstellt ein CQ_Analytics.PersistedJSONStore-Objekt mit einem angegebenen Namen,
 
 **Parameter**
 
-* storeName: Zeichenfolge. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt.
+* storeName: String. Der Name, der als STORENAME-Eigenschaft verwendet werden soll. Der Wert der STOREKEY-Eigenschaft ist auf storeName mit allen Großbuchstaben eingestellt.
 * jsonData: Objekt. Ein Objekt, das JSON-Daten enthält.
 
 **Rückgabe**
@@ -606,8 +606,8 @@ Verwenden Sie loadInitProperties , um die Sitzungsspeicherdaten mit den Initiali
 
 **Parameter**
 
-* name: Zeichenfolge. Der Name der Eigenschaft, die hinzugefügt werden soll.
-* Wert: Zeichenfolge. Der -Wert der hinzuzufügenden Eigenschaft.
+* name: Zeichenfolge. Der Name der hinzuzufügenden Eigenschaft.
+* value: String. Der -Wert der hinzuzufügenden Eigenschaft.
 
 **Rückgabe**
 
@@ -631,7 +631,7 @@ Gibt die Speicherdaten zurück. Schließt optional Namenseigenschaften aus den D
 
 **Parameter**
 
-ausgeschlossen: (Optional) Ein Array von Eigenschaftsnamen, die aus den zurückgegebenen Daten ausgeschlossen werden sollen.
+excluded: (Optional) Ein Array von Eigenschaftsnamen, die aus den zurückgegebenen Daten ausgeschlossen werden sollen.
 
 **Rückgabe**
 
@@ -680,7 +680,7 @@ Gibt die Namen der Eigenschaften zurück, die der Sitzungsspeicher enthält. Ruf
 
 **Parameter**
 
-ausgeschlossen: (Optional) Ein Array von Eigenschaftsnamen, die aus den Ergebnissen weggelassen werden sollen.
+excluded: (Optional) Ein Array von Eigenschaftsnamen, die aus den Ergebnissen weggelassen werden sollen.
 
 **Rückgabe**
 
@@ -724,12 +724,12 @@ Der Wert `true`, wenn der Speicher initialisiert wurde, und der Wert `false`, we
 
 #### loadInitProperties(obj, setValues) {#loadinitproperties-obj-setvalues}
 
-Fügt die Eigenschaften eines bestimmten Objekts zu den Initialisierungsdaten des Sitzungsspeichers hinzu. Optional werden die Objektdaten auch den Speicherdaten hinzugefügt.
+Fügt die Eigenschaften eines bestimmten Objekts zu den Initialisierungsdaten des Sitzungsspeichers hinzu. Optional werden die Objektdaten auch zu den Store-Daten hinzugefügt.
 
 **Parameter**
 
-* obj: Ein Objekt, das Aufzählungseigenschaften enthält.
-* setValues: Wenn &quot;true&quot;, werden die obj-Eigenschaften den Sitzungsspeicherdaten hinzugefügt, wenn die Speicherdaten nicht bereits eine Eigenschaft mit demselben Namen enthalten. Bei &quot;false&quot;werden den Sitzungsspeicherdaten keine Daten hinzugefügt.
+* obj: Ein Objekt, das Auflistungseigenschaften enthält.
+* setValues: Wenn &quot;true&quot;, werden die obj-Eigenschaften den Sitzungsspeicherdaten hinzugefügt, wenn die Speicherdaten nicht bereits eine Eigenschaft desselben Namens enthalten. Bei &quot;false&quot;werden den Sitzungsspeicherdaten keine Daten hinzugefügt.
 
 **Rückgabe**
 
@@ -778,7 +778,7 @@ Legt den Wert einer Eigenschaft fest. Löst nach Abschluss das Ereignis `update`
 **Parameter**
 
 * name: Zeichenfolge. Der Name der Eigenschaft.
-* Wert: Zeichenfolge. Eigenschaftenwert.
+* value: String. Eigenschaftswert.
 
 **Rückgabe**
 

@@ -1,16 +1,16 @@
 ---
-title: Anpassen des Adobe Analytics Framework
-description: Anpassen des Adobe Analytics Framework
+title: Anpassen des Adobe Analytics-Frameworks
+description: Erfahren Sie, wie Sie das Adobe Analytics-Framework für Adobe Experience Manager anpassen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1613'
-ht-degree: 47%
+source-wordcount: '1620'
+ht-degree: 46%
 
 ---
 
@@ -124,7 +124,7 @@ Der Code in der Datei [analytics.sitecatalyst.js](/help/sites-developing/extendi
 
 `if (s.usePlugins) s.doPlugins(s)`
 
-Das folgende Verfahren zeigt die Verwendung des JavaScript-Felds zur Anpassung des Adobe Analytics-Trackings. Wenn Ihr JavaScript Adobe Analytics-Plug-ins verwenden muss, [integrieren](/help/sites-administering/adobeanalytics.md) AEM.
+Das folgende Verfahren zeigt die Verwendung des JavaScript-Felds zur Anpassung des Adobe Analytics-Trackings. Wenn Ihr JavaScript Adobe Analytics-Plug-ins verwenden muss, [integrieren](/help/sites-administering/adobeanalytics.md) in AEM.
 
 1. Fügen Sie dem Feld den folgenden JavaScript-Code hinzu, damit `s.doPlugins` ausgeführt wird:
 
@@ -170,7 +170,7 @@ Beispielsweise werden die folgenden Werte in Adobe Analytics erzeugt:
 
 ### Hinzufügen von globalem benutzerdefinierten Code für alle Adobe Analytics-Frameworks {#adding-global-custom-code-for-all-adobe-analytics-frameworks}
 
-Bereitstellen von benutzerdefiniertem JavaScript-Code, der in alle Adobe Analytics-Frameworks integriert ist. Wenn das Adobe Analytics-Framework einer Seite keine benutzerdefinierten [Freiform-JavaScript](/help/sites-administering/adobeanalytics.md), wird das vom Skript /libs/cq/analytics/components/sitecatalyst/config.js.jsp generierte JavaScript an die [analytics.sitecatalyst.js](/help/sites-administering/adobeanalytics.md) -Datei. Standardmäßig hat das Skript keine Wirkung, da es auskommentiert ist. Zusätzlich legt der Code `s.usePlugins` auf `false` fest:
+Bereitstellen von benutzerdefiniertem JavaScript-Code, der in alle Adobe Analytics-Frameworks integriert ist. Wenn das Adobe Analytics-Framework einer Seite keine benutzerdefinierten [Freiform-JavaScript](/help/sites-administering/adobeanalytics.md), wird das JavaScript, das das Skript /libs/cq/analytics/components/sitecatalyst/config.js.jsp generiert, an die [analytics.sitecatalyst.js](/help/sites-administering/adobeanalytics.md) -Datei. Standardmäßig hat das Skript keine Wirkung, da es auskommentiert ist. Zusätzlich legt der Code `s.usePlugins` auf `false` fest:
 
 ```
 /* Plugin Config */
@@ -187,13 +187,13 @@ Der Code in der Datei analytics.sitecatalyst.js (die auch den Inhalt der Adobe A
 
 if (s.usePlugins) s.doPlugins(s)
 
-Daher sollte Ihr JavaScript `s.usePlugins` nach `true` sodass jeder Code im `s_doPlugins` -Funktion ausgeführt wird. Um den Code anzupassen, überlagern Sie die Datei config.js.jsp mit einer Datei, die Ihr eigenes JavaScript verwendet. Wenn Ihr JavaScript Adobe Analytics-Plug-ins verwenden muss, [integrieren](/help/sites-administering/adobeanalytics.md) AEM.
+Daher sollte Ihr JavaScript `s.usePlugins` nach `true` sodass jeder Code im `s_doPlugins` ausgeführt wird. Um den Code anzupassen, überlagern Sie die Datei config.js.jsp mit einer Datei, die Ihr eigenes JavaScript verwendet. Wenn Ihr JavaScript Adobe Analytics-Plug-ins verwenden muss, [integrieren](/help/sites-administering/adobeanalytics.md) in AEM.
 
 >[!NOTE]
 >
 >Bearbeiten Sie die Datei /libs/cq/analytics/components/sitecatalyst/config.js.jsp nicht. Bestimmte AEM Upgrade- oder Wartungsaufgaben können die Originaldatei neu installieren und Ihre Änderungen entfernen.
 
-1. Erstellen Sie in CRXDE Lite die Ordnerstruktur /apps/cq/analytics/components :
+1. Erstellen Sie unter CRXDE Lite die Ordnerstruktur /apps/cq/analytics/components :
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner /apps und klicken Sie auf Erstellen > Ordner erstellen .
    1. Legen Sie als Ordnernamen `cq` fest und klicken Sie auf „OK“.
@@ -278,7 +278,7 @@ Führen Sie die folgenden Schritte aus, um den Client-Bibliotheksordner für Ihr
    * Name: categories
    * Typ: String
    * Wert: sitecatalyst.plugins
-   * Multi: selected
+   * Multi: ausgewählt
 
    Klicken Sie im Eigenschaftsfenster auf „OK“, um den Eigenschaftswert zu bestätigen.
 

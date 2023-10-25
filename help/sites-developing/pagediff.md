@@ -1,16 +1,16 @@
 ---
 title: Entwicklung und Seitenvergleich
-description: Entwicklung und Seitenvergleich
+description: Erfahren Sie, wie Sie die Seitenvergleichsfunktion in Adobe Experience Manager entwickeln und nutzen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '370'
-ht-degree: 51%
+source-wordcount: '380'
+ht-degree: 70%
 
 ---
 
@@ -20,13 +20,13 @@ ht-degree: 51%
 
 Die Inhaltserstellung ist ein iterativer Prozess. Damit ein Autor effizient arbeiten kann, muss er sehen können, was sich von Iteration zu Iteration verändert hat. Es ist ineffizient und bringt Fehler mit sich, wenn eine Seitenversion und danach die andere geprüft wird. Ein Autor möchte die aktuelle Seite mit einer vorherigen Version nebeneinander vergleichen können, wobei die Unterschiede hervorgehoben werden.
 
-Der Seitenvergleich ermöglicht es einem Benutzer, die aktuelle Seite mit Starts, früheren Versionen usw. zu vergleichen. Weitere Informationen zu dieser Benutzerfunktion finden Sie unter [Seitenvergleich](/help/sites-authoring/page-diff.md).
+Der Seitenvergleich ermöglicht es Benutzenden, die aktuelle Seite mit Launches, früheren Versionen usw. zu vergleichen. Weitere Informationen zu dieser Benutzerfunktion finden Sie unter [Seitenvergleich](/help/sites-authoring/page-diff.md).
 
 ## Details zum Vorgang {#operation-details}
 
 Beim Vergleich von Seitenversionen wird die vorherige Version, die der Benutzer vergleichen möchte, durch AEM im Hintergrund neu erstellt, um den Vergleich zu erleichtern. Dies ist erforderlich, um den Inhalt für einen [direkten parallelen Vergleich](/help/sites-developing/pagediff.md#operation-details) rendern zu können.
 
-Dieser Wiederherstellungsvorgang wird intern von AEM durchgeführt und ist für den Benutzer transparent und erfordert keinen Eingriff. Administratoren, die beispielsweise das Repository in CRXDE Lite anzeigen, sehen diese neu erstellten Versionen jedoch in der Inhaltsstruktur.
+Dieser Wiederherstellungsvorgang wird intern von AEM durchgeführt und ist für den Benutzer transparent und erfordert keinen Eingriff. Administratoren, die das Repository beispielsweise im CRXDE Lite anzeigen, sehen diese neu erstellten Versionen jedoch innerhalb der Inhaltsstruktur.
 
 Beim Vergleich von Inhalten wird die gesamte Baumstruktur bis zur zu vergleichenden Seite an der folgenden Stelle neu erstellt:
 
@@ -40,7 +40,7 @@ Früher in der klassischen Benutzeroberfläche musste bei der Entwicklung besond
 
 Es gibt jedoch einige Einschränkungen, die vom Entwickler berücksichtigt werden müssen.
 
-* Diese Funktion verwendet CSS-Klassen, die nicht dem AEM Produkt zugewiesen sind. Wenn andere benutzerdefinierte CSS-Klassen oder CSS-Klassen von Drittanbietern mit denselben Namen auf der Seite enthalten sind, kann sich dies auf die Anzeige des Vergleichs auswirken.
+* Diese Funktion verwendet CSS-Klassen ohne Namespace im AEM-Produkt. Wenn andere benutzerdefinierte oder externe CSS-Klassen mit denselben Namen auf der Seite verwendet werden, kann dies die Anzeige des Vergleichs beeinflussen.
 
    * `html-added`
    * `html-removed`
@@ -49,7 +49,7 @@ Es gibt jedoch einige Einschränkungen, die vom Entwickler berücksichtigt werde
    * `cq-component-moved`
    * `cq-component-changed`
 
-* Da der Vergleich Client-seitig ist und beim Laden der Seite ausgeführt wird, werden keine Änderungen am DOM berücksichtigt, die vorgenommen wurden, nachdem der Cient-seitige Vergleichs-Service ausgeführt wurde. Dies kann
+* Da der Vergleich Client-seitig ist und beim Laden der Seite ausgeführt wird, werden keine Änderungen am DOM berücksichtigt, die vorgenommen wurden, nachdem der Cient-seitige Vergleichs-Service ausgeführt wurde. Dies kann sich auf
 
    * Komponenten, die AJAX verwenden, um Inhalte einzubeziehen
    * Single Page Applications

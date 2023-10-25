@@ -1,14 +1,14 @@
 ---
 title: Hinzufügen von Adobe Analytics-Tracking zu Komponenten
-description: Hinzufügen von Adobe Analytics-Tracking zu Komponenten
+description: Erfahren Sie, wie Sie Adobe Analytics-Tracking zu Komponenten in Adobe Experience Manager hinzufügen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1273'
 ht-degree: 90%
 
 ---
@@ -36,7 +36,7 @@ Der ContextHub-Eintrag sollte direkt unter dem `<head>`-Tag erfolgen, während C
 
 Mit dem `contexthub`-Skript, das Sie nach dem `<head>`-Element einfügen, werden die ContextHub-Funktionen zur Seite hinzugefügt.
 
-Die `cloudservices`-Skripte, die Sie in den Abschnitten `<head>` und `<body>` hinzufügen, gelten für die Cloud Services-Konfigurationen, die der Seite hinzugefügt werden. (Wenn die Seite mehr als eine Cloud Services-Konfiguration verwendet, müssen Sie die ContextHub-JSP und die Cloud Services-JSP nur einmal einschließen.)
+Die `cloudservices`-Skripte, die Sie in den Abschnitten `<head>` und `<body>` hinzufügen, gelten für die Cloud Services-Konfigurationen, die der Seite hinzugefügt werden. (Wenn die Seite mehr als eine Cloud Service-Konfiguration verwendet, müssen Sie die ContextHub-JSP und die Cloud Service-JSP nur einmal einschließen.)
 
 Wenn der Seite ein Adobe Analytics-Framework hinzugefügt wird, generieren die `cloudservices`-Skripte Adobe Analytics-bezogenes JavaScript und Verweise auf Client-seitige Bibliotheken, ähnlich wie im folgenden Beispiel:
 

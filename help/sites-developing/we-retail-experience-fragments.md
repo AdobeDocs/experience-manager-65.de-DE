@@ -1,7 +1,7 @@
 ---
 title: Testen von Experience Fragments in We.Retail
 seo-title: Trying out Experience Fragments in We.Retail
-description: Testen von Experience Fragments in We.Retail
+description: Erfahren Sie, wie Sie mithilfe von We.Retail Experience Fragments in Adobe Experience Manager ausprobieren.
 seo-description: Trying out Experience Fragments in We.Retail
 uuid: 43a6df77-9dd3-4316-b749-0ef059370f7d
 contentOwner: AEM Docs
@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 exl-id: e17ff611-122a-4d17-97af-071d0234dd16
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
-workflow-type: ht
-source-wordcount: '235'
-ht-degree: 100%
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+workflow-type: tm+mt
+source-wordcount: '242'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ Sie unterstützen das Nutzungsszenario mit Headless-Content-Management-Systemen,
 >
 >**[Inhaltsfragmente](/help/sites-developing/we-retail-content-fragments.md)** und **Experience Fragments** sind unterschiedliche Funktionen in AEM:
 >
->* **Inhaltsfragmente** sind redaktionelle Inhalte, vor allem Text und zugehörige Bilder. Dabei handelt es sich um reinen Inhalt ohne Design und Layout.
+>* **Inhaltsfragmente** sind redaktionelle Inhalte, in erster Linie Text und zugehörige Bilder. Sie sind reine Inhalte ohne Design und Layout.
 >* **Experience Fragments** sind vollständig gestaltete Inhalte und stellen Teile von Web-Seiten dar.
 >
 >Experience Fragments können Inhalte in Form von Inhaltsfragmenten enthalten, aber nicht umgekehrt.
