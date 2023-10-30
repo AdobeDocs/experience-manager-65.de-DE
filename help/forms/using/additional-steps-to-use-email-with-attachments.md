@@ -1,11 +1,11 @@
 ---
 title: Zusätzliche Schritte zum Abrufen von E-Mails mit Anhängen
-description: Zusätzliche Schritte zum Abrufen von E-Mails mit Anhängen
+description: Beheben Sie den Fehler, wenn Sie keine E-Mail mit Anhängen für AEM Forms on JEE-Plattformen abrufen können.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '224'
-ht-degree: 74%
+source-wordcount: '235'
+ht-degree: 67%
 
 ---
 
@@ -22,7 +22,7 @@ Benutzenden sind nicht in der Lage, Vorgänge wie „PDF per E-Mail versenden“
 
 1. Laden Sie JAR als [java.mail-1.0.jar](/help/forms/using/java.mail-1.0.jar) herunter und entpacken Sie die heruntergeladene JAR-Datei, um die Manifestdatei zu erhalten.
 
-1. Verwenden Sie die Manifestdatei von `java.mail-1.0.jar` wird aus Schritt 1 abgerufen, um eine benutzerdefinierte JAR-Datei zu erstellen, z. B. `java.mail-1.5.jar`.
+1. Die Manifestdatei von `java.mail-1.0.jar` wird aus Schritt 1 abgerufen, um eine benutzerdefinierte JAR-Datei zu erstellen, beispielsweise `java.mail-1.5.jar`.
 
 1. Öffnen Sie die Manifestdatei und ersetzen Sie alle Vorkommen von `1.5.0` durch `1.5.6` und `Bundle-Version: 1.0` durch `Bundle-Version:1.5`
 
@@ -37,12 +37,12 @@ Benutzenden sind nicht in der Lage, Vorgänge wie „PDF per E-Mail versenden“
 
 1. Installieren Sie `java.mail-1.5.jar` aus Schritt 3. Dieser Schritt startet die Sling-Eigenschaften der JEE-Bereitstellung neu. Warten Sie, bis die installierten Bundles unter `http://<server name>:<port>/lc/system/console/bundles` den Status **Aktiv** anzeigen.
 
-   >Hinweis: Wenn der Status weiterhin **InActive**, Neustart   **JBoss®** von **Dienstkonsole**.
+   >Hinweis: Wenn der Status weiterhin **InActive**, Neustart   **JBoss®** aus dem **Dienstkonsole**.
 
 
 1. Installieren Sie die Datei `javax.mail-1.5.6.redhat-1.jar`, die Sie in Schritt 5 heruntergeladen haben.
 
-1. Anhalten **JBoss®** von **Dienstkonsole** und hängen Sie die folgenden Eigenschaften an **Sling.properties** Datei:
+1. Anhalten **JBoss®** aus dem **Dienstkonsole** und hängen Sie die folgenden Eigenschaften an **Sling.properties** Datei:
    * `org.osgi.framework.system.packages.extra=javax.activation; version\=1.2.0`
    * `sling.bootdelegation.activation=javax.activation.*`
 

@@ -1,7 +1,6 @@
 ---
 title: Grundlagen zu AEM Forms-Prozessen
-seo-title: Understanding AEM Forms Processes
-description: Grundlagen zu AEM Forms-Prozessen
+description: AEM Forms-Prozesse umfassen Formularerstellung, Übermittlung, Datenverarbeitung, Validierung, Integration, Workflow-Automatisierung und Ausgabeverwaltung.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,10 +9,10 @@ topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '803'
-ht-degree: 100%
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 98%
 
 ---
 
@@ -33,7 +32,7 @@ Es gibt jedoch Situationen, in denen ein Prozess aufgrund von Faktoren wie den f
 * Ein Prozess kann organisatorische Grenzen überschreiten.
 * Zur Beendigung eines Prozesses ist eine externe Eingabe erforderlich. Angenommen, ein Formular wird an einen Manager gesendet, der nicht im Büro ist. In diesem Fall ist der Prozess erst abgeschlossen, wenn der Manager das Formular zurückgibt und ausfüllt.
 
-   Diese Arten von Prozessen werden als langlebige Prozesse bezeichnet. Ein langlebiger Prozess wird asynchron ausgeführt, sodass Systeme so interagieren können, wie es die Ressourcen zulassen, und das Tracking und die Überwachung des Vorgangs ermöglicht wird. Wenn ein langlebiger Prozess aufgerufen wird, erstellt AEM Forms einen Aufrufkennungswert als Teil eines Datensatzes, der den langlebigen Prozessstatus verfolgt. Der Datensatz wird in der AEM Forms-Datenbank gespeichert. Sie können langlebige Prozesseinträge löschen, wenn sie nicht mehr benötigt werden.
+  Diese Arten von Prozessen werden als langlebige Prozesse bezeichnet. Ein langlebiger Prozess wird asynchron ausgeführt, sodass Systeme so interagieren können, wie es die Ressourcen zulassen, und das Tracking und die Überwachung des Vorgangs ermöglicht wird. Wenn ein langlebiger Prozess aufgerufen wird, erstellt AEM Forms einen Aufrufkennungswert als Teil eines Datensatzes, der den langlebigen Prozessstatus verfolgt. Der Datensatz wird in der AEM Forms-Datenbank gespeichert. Sie können langlebige Prozesseinträge löschen, wenn sie nicht mehr benötigt werden.
 
 >[!NOTE]
 >

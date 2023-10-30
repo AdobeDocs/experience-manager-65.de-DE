@@ -1,8 +1,6 @@
 ---
 title: Schnellstart mit der Forms Service-API
-seo-title: Forms Service API Quick Starts
-description: Verwenden Sie die Kurzanleitungen für die Forms-Service-API.
-seo-description: Use the Quick Starts for the Forms Service API.
+description: Rendern Sie interaktive PDF, HTML Forms, Fragmente mithilfe der JAVA-API.
 uuid: dfce259a-e392-4929-ad7e-6d902faceaeb
 contentOwner: admin
 content-type: reference
@@ -11,10 +9,10 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
-workflow-type: ht
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+workflow-type: tm+mt
 source-wordcount: '1549'
-ht-degree: 100%
+ht-degree: 99%
 
 ---
 

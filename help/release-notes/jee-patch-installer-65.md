@@ -1,14 +1,14 @@
 ---
 title: AEM Forms JEE-Patch-Installationsprogramm
-description: AEM Forms JEE-Patch-Installationsprogramm
+description: AEM Forms JEE-Patch-Installationsprogramm , um Probleme in AEM 6.5 Forms-Komponenten zu beheben.
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: e3caa3e3067cf5e29cfcdf4286047eb346aefa23
-workflow-type: ht
-source-wordcount: '522'
-ht-degree: 100%
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 98%
 
 ---
 
@@ -28,7 +28,7 @@ Das AEM 6.5 Forms JEE Patch-Installationsprogramm enthält alle behobenen Proble
 
 ## Installieren und Konfigurieren des Patches {#installing-and-configuring-the-patch}
 
-1. Erstellen Sie eine Sicherungskopie des Ordners *aem-forms_root*. Das ist erforderlich, wenn Sie die Schnellkorrektur deinstallieren.
+1. Erstellen Sie eine Sicherungskopie des Ordners &lt;*aem-forms_root*>/deploy. Das ist erforderlich, wenn Sie die Schnellkorrektur deinstallieren möchten.
 1. Stoppen Sie den Programm-Server.
 1. Extrahieren Sie die Archivdatei des Patch-Installationsprogramms auf Ihrer Festplatte.
 1. Im Ordner mit dem Namen entsprechend des von Ihnen verwendeten Betriebssystems:
@@ -40,32 +40,36 @@ Wechseln Sie zu dem Ordner auf dem Installationsdatenträger oder auf der Festpl
 
       * (Windows 32-Bit) `Windows\Disk1\InstData\VM`
       * (Windows 64-Bit) `Windows_64Bit`\ `Disk1\InstData\VM`
+
    * **Linux**:
-Wechseln Sie in den entsprechenden Ordner und geben Sie an einer Eingabeaufforderung Folgendes ein: 
-`./aem65_cfp_install.bin`.
+Wechseln Sie in den entsprechenden Ordner und geben Sie an einer Eingabeaufforderung Folgendes ein: `./aem65_cfp_install.bin`.
 
       * (Linux) `Linux/Disk1/InstData/NoVM`
 
-   Hierdurch wird das Installieren des Assistenten gestartet, der Sie durch die Installation führt.
+   Dadurch wird ein Installationsassistent gestartet, der Sie durch die Installation führt.
 
 1. Klicken Sie im Begrüßungsbildschirm auf **[!UICONTROL Weiter]**.
 1. Stellen Sie auf dem Bildschirm **Installationsordner auswählen** sicher, dass der Standardspeicherort, der angezeigt wird, für Ihre bestehende Installation korrekt ist, oder klicken Sie auf **[!UICONTROL Durchsuchen]**, um den alternativen Ordner auszuwählen, auf dem AEM Forms installiert ist, und klicken Sie auf **[!UICONTROL Weiter]**.
-1. Lesen Sie die Schnellkorrekturzusammenfassung und klicken Sie auf **[!UICONTROL Weiter]**.
-1. Lesen Sie die Informationen zur „Zusammenfassung vor der Installation“ und klicken Sie auf **[!UICONTROL Installieren]**.
+1. Lesen Sie die Zusammenfassung der Schnellkorrektur und klicken Sie auf **[!UICONTROL Weiter]**.
+1. Lesen Sie die Informationen in der Zusammenfassung vor der Installation und klicken Sie auf **[!UICONTROL Installieren]**.
 1. Wenn die Installation abgeschlossen ist, klicken Sie auf **[!UICONTROL Weiter]**, um die Schnellkorrektur-Updates auf Ihre installierten Dateien anzuwenden.
 
 1. **[Nur für Windows]:** Führen Sie einen der folgenden Schritte aus:
    * Sie können entweder die Option **Configuration Manager starten** deaktivieren, bevor Sie auf **[!UICONTROL Fertig]** klicken. Führen Sie **Configuration Manager** durch Verwendung der Datei **ConfigurationManager.bat** in `[aem-forms root]\configurationManager\bin` aus.
 
    * Oder deaktivieren Sie die Option **Configuration Manager starten**, bevor Sie auf **[!UICONTROL Fertig]** klicken. Navigieren Sie vor der Ausführung von **Configuration Manager** mit **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe** zum Verzeichnis *`<AEMForms_Install_Dir>\configurationManager\bin`* und ersetzen Sie die Dateien [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) und [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax).
-   >[!NOTE]
-   >Indem Sie die Datei **ConfigurationManager.bat** verwenden, müssen Sie die Namen der .lax-Dateien nicht manuell aktualisieren.
+
+   >>
+   [!NOTE]
+   >>
+   Indem Sie die Datei **ConfigurationManager.bat** verwenden, müssen Sie die Namen der .lax-Dateien nicht manuell aktualisieren.
+   >
 
 1. **[Nur auf Unix-Basis]:**
 
    * Das Kontrollkästchen **Configuration Manager starten** ist standardmäßig aktiviert. Klicken Sie auf **[!UICONTROL Fertig]**, um Configuration Manager sofort zu starten. Um **Configuration Manager** erst später zu starten, deaktivieren Sie die Option **Configuration Manager starten**, bevor Sie auf **[!UICONTROL Fertig]** klicken. Sie können **Configuration Manager** später mit dem entsprechenden Skript im Verzeichnis `[AEM_forms_root]/configurationManager/bin` starten.
 
-1. Wählen Sie je nach Anwendungsserver eines der folgenden Dokumente aus und befolgen Sie die Anweisungen im Bereich *Konfigurieren und Bereitstellen von AEM Forms*.
+1. Wählen Sie je nach Anwendungs-Server eines der folgenden Dokumente aus und befolgen Sie die Anweisungen im Bereich *Konfigurieren und Bereitstellen von AEM Forms*.
 
    * [Installieren und Bereitstellen von AEM Forms für JBoss](https://www.adobe.com/go/learn_aemforms_installJBoss_65_de) 
    * [Installieren und Bereitstellen von AEM Forms für WebSphere](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_de)

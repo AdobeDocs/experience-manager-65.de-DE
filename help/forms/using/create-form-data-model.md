@@ -1,18 +1,16 @@
 ---
 title: "Schulung: Formulardatenmodell erstellen "
-seo-title: Create Form Data Model Tutorial
-description: Erstellen des Formulardatenmodells
-seo-description: Create form data model
+description: Konfigurieren Sie MySQL als Datenquelle, erstellen Sie ein Formulardatenmodell (FDM), konfigurieren Sie es und testen Sie es für AEM Forms.
 uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '1511'
-ht-degree: 97%
+source-wordcount: '1524'
+ht-degree: 96%
 
 ---
 

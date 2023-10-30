@@ -1,40 +1,39 @@
 ---
 title: Schützen von Dokumenten im Auftrag eines anderen Benutzers
-seo-title: Protect a document on behalf of another user
-description: Schützen von Dokumenten im Auftrag eines anderen Benutzers
+description: Das AEM Forms Document Security Java SDK bietet APIs für ein Benutzerkonto, um ein Dokument im Namen eines anderen Benutzers zu schützen, ohne dass Bearbeitungsberechtigungen erforderlich sind.
 uuid: 76f4b30b-6d0c-4cae-98b3-334efdbf27bb
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 7cb8140d-dd62-4659-8cc7-21361bd5d3f6
 feature: Document Security
 exl-id: e5c80569-d3c0-4358-9b91-b98a64d1c004
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '368'
-ht-degree: 100%
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 22%
 
 ---
 
 # Schützen von Dokumenten im Auftrag eines anderen Benutzers {#protect-a-document-on-behalf-of-another-user}
 
-AEM Forms Document Security Java SDK stellt APIs bereit, mit denen ein Benutzerkonto ein Dokument im Auftrag eines anderen Benutzers schützen kann, ohne die Berechtigungen zum Bearbeiten des Dokuments zu erhalten. Sie können die APIs in einem Arbeitsablauf-Prozess oder programmgesteuert als Dokumentdienst verwenden. Die folgenden neuen APIs wurden eingeführt:
+Das AEM Forms Document Security Java SDK bietet APIs, mit denen ein Benutzerkonto ein Dokument im Namen eines anderen Benutzers schützen kann, ohne die Berechtigungen zum Bearbeiten des Dokuments zu erhalten. Sie können die APIs in einem Workflow-Prozess oder programmgesteuert als Dokumentdienst verwenden. Die neuen APIs sind:
 
 * **protectDocumentUse** die ProtectDocument-API, um eine Richtlinie im Namen eines
 
-   anderen Benutzerkontos auf ein Dokument anzuwenden. Die Berechtigungen des Benutzerkontos, das zum Anwenden der Richtlinie verwendet wird, bleiben auf den Schutz des Dokuments beschränkt. Es erhält keine Rechte zum Öffnen und Anzeigen des Dokuments. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
+  anderen Benutzerkontos auf ein Dokument anzuwenden. Die Berechtigungen des Benutzerkontos, das zur Anwendung der Richtlinie verwendet wird, bleiben auf den Schutz des Dokuments beschränkt. Es werden keine Rechte zum Öffnen und Anzeigen des Dokuments zugewiesen. RMSecureDocumentResult protectDocument(Document inDoc, String documentName, String policySetName, String policyName, RMLocale locale, boolean bExactMatchForNames)
 
-* **createLicenseUse** Mit der createLicense-API können Sie im Namen eines anderen Benutzerkontos eine Lizenz für eine Richtlinie erstellen. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
-* **protectDocumentWithCoverPageUse** Mit der ProtectDocumentWithCoverPage-API können Sie im Namen eines anderen Benutzers eine Richtlinie auf ein Dokument anwenden und ihm ein Deckblatt hinzufügen. Die Berechtigungen des Benutzerkontos, das zum Anwenden der Richtlinie verwendet wird, bleiben auf den Schutz des Dokuments beschränkt. Es erhält keine Rechte zum Öffnen und Anzeigen des Dokuments. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
+* **createLicenseUse** die CreateLicense-API zum Erstellen einer Lizenz für eine Richtlinie im Namen eines anderen Benutzerkontos. PublishLicenseDTO createLicense(String policyId, String documentName, boolean logSecureDocEvent)
+* **protectDocumentWithCoverPageUse** die ProtectDocumentWithCoverPage -API verwenden, um eine Richtlinie anzuwenden und im Namen eines anderen Benutzers einem Dokument eine Titelseite hinzuzufügen. Die Berechtigungen des Benutzerkontos, das zur Anwendung der Richtlinie verwendet wird, bleiben auf den Schutz des Dokuments beschränkt. Es erhält keine Rechte zum Öffnen und Anzeigen des Dokuments. RMSecureDocumentResult protectDocumentWithCoverPage(Document inDoc, String documentName, String policySetName, String policyName, Document coverDoc, boolean bExactMatchForNames)
 
-## Schützen von Dokumenten im Auftrag eines anderen Benutzers mithilfe der APIs {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
+## Verwenden der APIs zum Schützen eines Dokuments im Namen eines anderen Benutzers {#using-the-apis-to-protect-a-document-on-behalf-of-another-user}
 
-Führen Sie die folgenden Schritte aus, um ein Dokument im Auftrag eines anderen Benutzers zu schützen, ohne die Berechtigungen zum Bearbeiten des Dokuments zu erhalten.
+Führen Sie die folgenden Schritte aus, um ein Dokument im Namen eines anderen Benutzers zu schützen, ohne die Berechtigungen zum Bearbeiten des Dokuments zu erhalten:
 
 1. Erstellen Sie einen Richtliniensatz. Beispiel: PolicySet1.
 1. Erstellen Sie eine Richtlinie im neu erstellten Richtliniensatz. Beispiel: Policy1 in PolicySet1.
-1. Erstellen Sie einen Benutzer mit der Rolle „Rights Management-Endbenutzer“. Beispiel: User1. Legen Sie die Berechtigungen zum Anzeigen von Dokumenten, die mit Policy1 geschützt wurden, für den neu erstellten Benutzer fest.
-1. Erstellen Sie eine neue Rolle. Beispiel: Role1. Geben Sie die Serviceaufrufberechtigung für die neu erstellte Rolle an. Erstellen Sie einen Benutzer mit der neu erstellten Rolle. Beispiel: Benutzer2. Sie können User2 oder einen Administrator zum Erstellen einer SDK-Verbindung und zum Aufrufen des protectDocument-Dienstes verwenden.
+1. Erstellen Sie einen Benutzer mit Rolle Rights Management-Endbenutzer . Beispiel: User1. Legen Sie die Berechtigungen zum Anzeigen von Dokumenten, die mit Policy1 geschützt wurden, für den neu erstellten Benutzer fest.
+1. Erstellen Sie eine neue Rolle. Beispiel: Role1. Stellen Sie der neu erstellten Rolle die Berechtigung Dienstaufruf bereit. Erstellen Sie einen Benutzer mit der neu erstellten Rolle. Beispielsweise können Sie User2.Sie können Benutzer2 oder einen Administrator verwenden, um eine SDK-Verbindung zu erstellen und den protectDocument -Dienst aufzurufen.
 
-   Jetzt können Sie den folgenden Beispielcode ausführen, um ein Dokument zu schützen, ohne Berechtigungen zum Bearbeiten des Dokuments für den Benutzer bereitzustellen, der das Dokument schützt:
+   Jetzt können Sie den folgenden Beispielcode ausführen, um ein Dokument zu schützen, ohne dem Benutzer, der das Dokument schützt, Berechtigungen zum Bearbeiten des Dokuments zu erteilen:
 
    ```java
    import java.io.File;

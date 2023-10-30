@@ -1,8 +1,6 @@
 ---
 title: Anpassen von Vorlagen für Forms Portal-Komponenten
-seo-title: Customizing templates for forms portal components
-description: Anzeigen benutzerdefinierter Metadaten in Formularlisten
-seo-description: Display custom metadata in form listing
+description: Die Benutzeroberfläche von AEM Forms ermöglicht es Benutzern, Formularen Metadaten hinzuzufügen. Benutzerdefinierte Metadaten verbessern das Benutzererlebnis bei der Formularauflistung und der Suche nach Ihrer Organisation.
 uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,10 +9,10 @@ discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '1225'
-ht-degree: 100%
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+workflow-type: tm+mt
+source-wordcount: '1243'
+ht-degree: 66%
 
 ---
 
@@ -24,30 +22,31 @@ ht-degree: 100%
 
 [Formularmetadaten verwalten](../../forms/using/manage-form-metadata.md)
 
-Kenntnisse im Umgang mit HTML und CSS
+Kenntnisse im Bereich HTML und CSS
 
 ## Übersicht {#overview}
 
-In der Benutzeroberfläche von AEM Forms können Sie jedem beliebigen Formular Metadaten hinzufügen. Mit benutzerdefinierten Metadaten können Sie die Benutzererfahrung bei der Auflistung und beim Durchsuchen von Formularen in Ihrem Unternehmen verbessern.
+In der Benutzeroberfläche von AEM Forms können Sie jedem beliebigen Formular Metadaten hinzufügen. Benutzerdefinierte Metadaten können das Benutzererlebnis beim Auflisten und Suchen von Formularen in Ihrer Organisation verbessern.
 
-In Forms Portal können Sie benutzerdefinierte Metadaten in den Formularlisten verwenden. Beim Erstellen von benutzerdefinierten Vorlagen für Assets können Sie das Layout bearbeiten und benutzerdefinierte Metadaten mit Ihrem CSS-Vorlagensatz verwenden.
+Mit Forms Portal können Sie benutzerdefinierte Metadaten in Formularlisten verwenden. Beim Erstellen benutzerdefinierter Vorlagen für Assets können Sie das Layout ändern und benutzerdefinierte Metadaten mit Ihrem CSS-Stilsatz verwenden.
 
 Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage für verschiedene Forms Portal-Komponenten zu erstellen.
 
-## Erstellen einer benutzerdefinierten Vorlage {#creating-a-nbsp-custom-template}
+## Benutzerdefinierte Vorlage erstellen {#creating-a-nbsp-custom-template}
 
 1. Erstellen eines sling:Folder-Knotens unter /apps
 
-   Fügen Sie eine fpContentType-Eigenschaft hinzu. Geben Sie entsprechende Werte für die Eigenschaft abhängig von der Komponente an, für die Sie die benutzerdefinierte Vorlage definieren.
+   Fügen Sie eine fpContentType-Eigenschaft hinzu. Geben Sie die entsprechenden Werte für die Eigenschaft an, abhängig von der Komponente, für die Sie die benutzerdefinierte Vorlage definieren.
 
    * Komponente „Search &amp; Lister“: „/libs/fd/fp/formTemplate“
    * Komponente „Drafts &amp; Submissions“:
 
-      * Bereich „Drafts“: /libs/fd/fp/draftsTemplate
-      * Bereich „Submissions“: /libs/fd/fp/submissionsTemplate
-   * Komponente „Link“: /libs/fd/fp/linkTemplate
+      * Bereich &quot;Drafts&quot;: /libs/fd/fp/draftsTemplate
+      * Bereich &quot;Submissions&quot;: /libs/fd/fp/submissionsTemplate
 
-   Fügen Sie einen Titel hinzu, der während der Auswahl der Layoutvorlagen angezeigt werden soll.
+   * Link-Komponente: /libs/fd/fp/linkTemplate
+
+   Fügen Sie einen Titel hinzu, der bei der Auswahl der Layoutvorlagen angezeigt werden soll.
 
    >[!NOTE]
    >
@@ -56,12 +55,12 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage für 
    Die folgende Abbildung zeigt die Konfiguration der Komponente „Search &amp; Lister“.
    ![Erstellen eines sling:Folder](assets/1.png)
 
-1. Erstellen Sie in diesem Ordner eine Datei „Template.html“, die als benutzerdefinierte Vorlage dienen soll.
-1. Schreiben Sie die benutzerdefinierte Vorlage und verwenden Sie dafür benutzerdefinierte Metadaten wie unten beschrieben.
+1. Erstellen Sie eine Datei template.html in diesem Ordner, die als benutzerdefinierte Vorlage dienen soll.
+1. Schreiben Sie die benutzerdefinierte Vorlage und verwenden Sie benutzerdefinierte Metadaten wie unten beschrieben.
 
 ## Arbeitsbeispiel {#working-example}
 
-Beim Folgenden Beispiel handelt es sich um eine Implementierung einer benutzerdefinierten Vorlage, bei der Forms Portal ein benutzerdefiniertes Geometrixx Gov Card-Layout von der Komponente „Search &amp; Lister“ abruft.
+Im Folgenden finden Sie eine Beispielimplementierung einer benutzerdefinierten Vorlage, bei der Forms Portal ein benutzerdefiniertes Geometrixx Gov Card-Layout für die Komponente &quot;Search &amp; Lister&quot;abruft.
 
 ```html
 <div class="__FP_boxes-container __FP_single-color">
@@ -83,9 +82,9 @@ Beim Folgenden Beispiel handelt es sich um eine Implementierung einer benutzerde
 
 ## Technische Spezifikationen für benutzerdefinierte Vorlagen {#technical-specifications-for-custom-templates}
 
-Eine benutzerdefinierte Vorlage für eine beliebige Formularportal-Komponente enthält wiederholbare und nicht wiederholbare Einträge. Wiederholbare Einträge sind die grundlegenden Einheiten für die Auflistung. Beispiele für wiederholbare Einträge sind Komponenten des Typs „Search &amp; Lister“, „Drafts &amp; Submissions“ sowie „Link“.
+Eine benutzerdefinierte Vorlage für eine beliebige Formularportal-Komponente enthält wiederholbare und nicht wiederholbare Einträge. Wiederholbare Einträge sind grundlegende Entitäten für die Auflistung. Beispiele für wiederholbare Einträge sind die Komponenten &quot;Search &amp; Lister&quot;, &quot;Drafts &amp; Submissions&quot;und &quot;Link&quot;.
 
-Forms Portal bietet eine Syntax für Platzhalter zur Anzeige von benutzerdefinierten bzw. OOTB-Metadaten. Die Platzhalter werden nach der Anzeige der Ergebnisse aus Formularen, Entwürfen oder Übermittlungen angezeigt.
+Forms Portal bietet eine Syntax für Platzhalter zur Anzeige von benutzerdefinierten bzw. OOTB-Metadaten. Die Platzhalter werden nach der Anzeige der Ergebnisse von Formularen, Entwürfen oder Übermittlungen ausgefüllt.
 
 Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des Attributs **data-repeatable** als **true**.
 
@@ -95,9 +94,9 @@ Jeder Platzhalter verfügt über einen exklusiven OOTB-Metadatensatz. Um die ben
 
 *Im Beispiel wird die Metadaten-Eigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **path**in der genannten Weise verwendet.*
 
-## Vorkonfigurierte Metadaten {#out-of-the-box-metadata}
+## Vordefinierte Metadaten {#out-of-the-box-metadata}
 
-Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die Sie für Auflistungen verwenden können.
+Verschiedene Forms Portal-Komponenten bieten exklusive OOTB-Metadatensätze, die Sie für die Auflistung verwenden können.
 
 ### Komponente „Suche und Auflister“ {#search-amp-lister-component}
 
@@ -131,20 +130,20 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 * **Title**: Titel des Formulars
 * **formUrl**: URL zur Ausgabe des Formulars als HTML
 * **target**: Zielattribut des Links. Gültige Werte sind „_blank“ und „_self“.
-* **linkText**: Beschriftung des Links
+* **linkText**: Linkbeschriftung
 
-### Komponente „Drafts &amp; Submissions“ {#drafts-amp-submissions-component}
+### Komponente &quot;Drafts &amp; Submissions&quot; {#drafts-amp-submissions-component}
 
 * **Path**: Pfad des Entwurfs-/Übermittlungs-Metadatenknotens. Verwenden Sie ihn mit der Erweiterung .HTML als URL, um einen Entwurf oder eine Übermittlung zu öffnen.
-* **contextPath**: Kontextpfad der AEM-Instanz.
-* **firstLetter**: Erster Buchstabe (groß) des Titels des adaptiven Formulars, das als Entwurf gespeichert oder übermittelt wurde.
+* **contextPath**: Kontextpfad der AEM Instanz
+* **firstLetter**: Erster Buchstabe (in Großbuchstaben) des Titels des adaptiven Formulars, der als Entwurf gespeichert oder übermittelt wurde.
 * **formName**: Der Titel des adaptiven Formulars, das als Entwurf gespeichert oder übermittelt wurde.
-* **draftID**: ID für den aufgelisteten Entwurf. (Nur in der Vorlage für den Bereich „Draft“ verwenden).
-* **submitID**: ID für die aufgelistete Übermittlung. (Nur in der Vorlage für den Bereich „Submission“ verwenden).
-* **Status**: Status des übermittelten Formulars. (Nur in der Vorlage für den Bereich „Submission“ verwenden).
-* **description**: Beschreibung des adaptiven Formulars, das dem Entwurf/der Übermittlung zugewiesen ist.
-* **diffTime**: Differenz zwischen der aktuellen Zeit und der letzten Speicheraktion für den Entwurf. Alternativ: Differenz zwischen der aktuellen Zeit und der letzten Übermittlungsaktion für die Übermittlung.
-* **iconClass**: CSS-Klasse zur Anzeige des ersten Buchstabens des Entwurfs/der Übermittlung. Forms Portal umfasst die folgenden Klassen, die Hintergründe in verschiedenen Farben bereitstellen.
+* **draftID**: ID für den aufgelisteten Entwurf (Nur in der Vorlage für den Bereich Entwurf verwenden).
+* **submitID**: ID für die aufgelistete Übermittlung (Nur in der Vorlage für den Abschnitt Übermittlung verwenden).
+* **status**: Status des gesendeten Formulars. (Nur in der Vorlage für den Abschnitt Übermittlung verwenden).
+* **description**: Beschreibung des adaptiven Formulars, das mit dem Entwurf oder der Übermittlung verknüpft ist.
+* **diffTime**: Differenz zwischen der aktuellen Zeit und der letzten Speicheraktion für den Entwurf. Alternativ können Sie zwischen der aktuellen Zeit und der letzten Übermittlungsaktion für die Übermittlung unterscheiden.
+* **iconClass**: CSS-Klasse zur Anzeige des ersten Buchstabens des Entwurfs/der Übermittlung. Forms Portal umfasst die folgenden Klassen, die verschiedene farbige Hintergründe bieten.
 * **owner**: Benutzer, der den Entwurf/die Übermittlung erstellt hat.
 * **Today**: Erstellungsdatum des Entwurfs/der Übermittlung im Format TT:MM:JJJJ.
 * **TimeNow**: Erstellungszeitpunkt des Entwurfs/der Übermittlung im 24-Stunden-Format HH:MM:SS.
