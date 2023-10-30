@@ -160,7 +160,7 @@ Unter dem **Einstellungen** Registerkarte Einstellungen für Themen (Fragen) und
 
 * **UI-Erwähnungsmuster**
 
-  Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel: `~{{familyName}}{{givenName}}`.
+  Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Zum Beispiel: `~{{familyName}}{{givenName}}`.
 
 #### Registerkarte &quot;Benutzermoderation&quot; {#user-moderation-tab}
 

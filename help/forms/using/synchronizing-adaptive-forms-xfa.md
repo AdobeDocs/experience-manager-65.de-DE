@@ -1,8 +1,6 @@
 ---
 title: Synchronisieren von adaptiven Formularen mit XFA-Formularvorlagen
-seo-title: Synchronizing Adaptive Forms with XFA Form Templates
-description: Synchronisieren von adaptiven Formularen mit XFA-/XDP-Dateien.
-seo-description: Synchronizing Adaptive forms with XFA/XDP files.
+description: Erfahren Sie, wie Sie Formulare mit XFA-/XDP-Dateien synchronisieren. Es verwendet erneut Felder von Formularen, die mit Änderungen synchronisiert werden, die an den entsprechenden Feldern in den XFA-/XDP-Dateien vorgenommen wurden.
 uuid: 92818132-1ae0-4576-84f2-ece485a34457
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
@@ -10,10 +8,10 @@ discoiquuid: dac4539b-804d-4420-9170-68000ebb2638
 docset: aem65
 feature: Adaptive Forms
 exl-id: fed67c23-a9b7-403e-9199-dfd527d5f209
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '1211'
-ht-degree: 62%
+source-wordcount: '1231'
+ht-degree: 67%
 
 ---
 
@@ -25,7 +23,7 @@ ht-degree: 62%
 
 Sie können adaptive Formulare basierend auf einer XFA-Formularvorlage (`*.XDP`-Datei) erstellen. Durch diese Wiederverwendung können Sie Ihre Investition in vorhandene XFA-Formulare beibehalten. Informationen dazu, wie Sie eine XFA-Formularvorlage zum Erstellen eines adaptiven Formulars verwenden, finden Sie unter [Erstellen eines adaptiven Formulars basierend auf einer Vorlage](../../forms/using/creating-adaptive-form.md#p-create-an-adaptive-form-based-on-an-xfa-form-template-p).
 
-Sie können Felder aus der XDP-Datei in Ihrem adaptiven Formular wiederverwenden. Diese Felder werden als gebundene Felder bezeichnet. Die Eigenschaften der gebundenen Felder (wie Skripte, Beschriftungen und Anzeigeformat) werden aus der XDP-Datei kopiert. Sie können sich auch dafür entscheiden, die Werte einiger dieser Eigenschaften zu überschreiben.
+Sie können Felder aus der XDP-Datei in Ihrem adaptiven Formular wiederverwenden. Diese Felder werden als gebundene Felder bezeichnet. Die Eigenschaften der gebundenen Felder (z. B. Skripte, Beschriftungen und Anzeigeformat) werden aus der XDP-Datei kopiert. Sie können sich auch dafür entscheiden, die Werte einiger dieser Eigenschaften zu überschreiben.
 
 AEM Forms bietet eine Möglichkeit, die Felder der adaptiven Formulare mit allen Änderungen zu synchronisieren, die später an den entsprechenden Feldern in der XDP-Datei vorgenommen werden. In diesem Artikel wird beschrieben, wie Sie diese Synchronisierung aktivieren können.
 
@@ -59,9 +57,9 @@ Das Paket enthält die folgenden Assets:
 
 ### Hinzufügen von Inhalt zu einem adaptiven Formular {#add-content-to-adaptive-form-br}
 
-1. Navigieren Sie zu https://&lt;server>:&lt;port>/aem/forms.html. Geben Sie auf Anfrage Ihre Anmeldedaten ein.
+1. Navigieren Sie zu https://&lt;server>:&lt;port>/aem/forms.html. Geben Sie auf Anfrage Ihre Anmeldeinformationen ein.
 1. Öffnen Sie sample-af-xfa zur Bearbeitung im Autorenmodus.
-1. Wählen Sie im Inhaltsbrowser in der Seitenleiste die Registerkarte Datenmodellobjekte . Ziehen Sie NumericField1 und TextField1 auf das adaptive Formular.
+1. Wählen Sie im Inhalt-Browser in der Seitenleiste die Registerkarte „Datenmodellobjekte“. Ziehen Sie „NumericField1“ und „TextField1“ auf das adaptive Formular.
 1. Ändern Sie den Titel von „NumericField1“ von **Numerisches Feld** zu **Numerisches AF-Feld**.
 
 >[!NOTE]

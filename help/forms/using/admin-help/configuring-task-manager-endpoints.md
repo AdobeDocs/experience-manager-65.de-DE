@@ -1,8 +1,6 @@
 ---
 title: Konfigurieren der Task Manager-Endpunkte
-seo-title: Configuring Task Manager endpoints
-description: Erfahren Sie, wie Sie Task Manager-Endpunkte konfigurieren.
-seo-description: Learn how to configure Task Manager endpoints.
+description: Erfahren Sie, wie Sie Task Manager-Endpunkte konfigurieren, um den Dienst aufzurufen. Zum Konfigurieren von Task Manager-Endpunkten sind verschiedene Einstellungen erforderlich.
 uuid: 07604b10-0bd7-4bce-9624-7ebac4754f56
 contentOwner: admin
 content-type: reference
@@ -10,20 +8,20 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9c55feb9-23d8-4798-a3c5-70ec736df3ad
 exl-id: 8495a3d7-6ac9-41f5-b1f9-31decaba118a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '232'
-ht-degree: 100%
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 82%
 
 ---
 
 # Konfigurieren der Task Manager-Endpunkte {#configuring-task-manager-endpoints}
 
-Task Manager-Endpunkte ermöglichen es einem Workspace-Benutzer, den Dienst aufzurufen.
+Über Task Manager-Endpunkte können Workspace-Benutzer den Dienst aufrufen.
 
-**TaskManager-Endpunkteinstellungen**
+**Task Manager-Endpunkteinstellungen**
 
-Mithilfe der folgenden Einstellungen können Sie einen TaskManager-Endpunkt konfigurieren.
+Verwenden Sie die folgenden Einstellungen, um einen Task Manager-Endpunkt zu konfigurieren.
 
 **Name:** (Obligatorisch) Identifiziert den Endpunkt. Der Name wird in Workspace in der Kartenansicht angezeigt. Der Name darf kein &lt;-Zeichen enthalten, weil dadurch die Anzeige des Namens in Workspace abgeschnitten wird. Wenn Sie eine URL als Name des Endpunktes angeben, vergewissern Sie sich, dass sie den in RFC1738 angegebenen Syntaxregeln entspricht.
 

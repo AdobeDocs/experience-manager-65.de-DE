@@ -1,15 +1,15 @@
 ---
 title: Angeben der XCI-Konfigurationsoptionen
-description: Erfahren Sie, wie Sie XCI-Konfigurationsoptionen festlegen.
+description: Erfahren Sie, wie Sie die XCI-Konfigurationsoptionen angeben. Sie können benutzerdefinierte XCI-Dateiwerte für das adaptive Formular angeben, damit sie beim Formular-Rendering verwendet werden können.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 7cd10389-63e6-41f2-a132-92fd9e40a9b7
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '128'
-ht-degree: 21%
+source-wordcount: '149'
+ht-degree: 14%
 
 ---
 

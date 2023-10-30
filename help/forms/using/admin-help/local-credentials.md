@@ -1,14 +1,14 @@
 ---
 title: Verwalten lokaler Anmeldeinformationen
-description: Erfahren Sie, wie Sie lokale Anmeldeinformationen verwalten.
+description: Erfahren Sie, wie Sie lokale Berechtigungen mithilfe der Trust Store-Verwaltung verwalten. AEM Formulare unterstützen RSA- und DSA-Anmeldeinformationen im PKCS12-Standardformular.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: c5905272-7d09-47e4-8b35-4cc25a148477
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '508'
+source-wordcount: '524'
 ht-degree: 3%
 
 ---

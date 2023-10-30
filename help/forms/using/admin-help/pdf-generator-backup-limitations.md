@@ -1,8 +1,6 @@
 ---
 title: Einschränkungen bei der Sicherung von PDF Generator
-seo-title: PDF Generator backup limitations
-description: Erfahren Sie mehr über die Backup-Beschränkungen für PDF Generator.
-seo-description: Learn about PDF Generator backup limitations.
+description: Erfahren Sie mehr über die Backup-Einschränkungen von PDF Generatoren. Das von PDF Generator verwendete temporäre Verzeichnis kann nicht gesichert werden, da es den Inhalt in festgelegten Zeitabständen löscht.
 uuid: 9537ffde-4396-46d1-81ea-edcd25923ffb
 contentOwner: admin
 content-type: reference
@@ -11,13 +9,13 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 23386353-b2bf-49f1-947a-dd7587bba175
 noindex: true
 exl-id: a23db58d-1236-4689-93fc-dea508f8eb81
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '55'
-ht-degree: 100%
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+workflow-type: tm+mt
+source-wordcount: '73'
+ht-degree: 10%
 
 ---
 
 # Einschränkungen bei der Sicherung von PDF Generator {#pdf-generator-backup-limitations}
 
-Der temporäre Ordner, der von PDF Generator zum Konvertieren von Dateien verwendet wird, kann nicht gesichert werden. Auch wenn der Dienst ordnungsgemäß wiederhergestellt wird, können dennoch Daten verloren gehen, weil PDF Generator den Inhalt des temporären Ordners in festgelegten Zeitabständen prüft und löscht.
+Der temporäre Ordner, den PDF Generator zum Konvertieren von Dateien verwendet, kann nicht gesichert werden. Obwohl der Dienst ordnungsgemäß wiederhergestellt wird, können Daten verloren gehen, da der PDF Generator den Inhalt des temporären Ordners in festgelegten Zeitabständen überprüft und löscht.

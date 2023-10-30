@@ -38,7 +38,7 @@ Es gibt drei Hauptmaterialtypen, die Content Services bereitstellt:
 
 Asset-Sammlungen sind AEM Konstrukte, die Verweise auf andere Sammlungen enthalten.
 
-Eine Asset-Sammlung kann über Content Services verfügbar gemacht werden. Der Aufruf einer Asset-Sammlung in einer Anfrage gibt ein Objekt zurück, das eine Liste der Assets einschließlich ihrer URLs ist. Der Zugriff auf Assets erfolgt über eine URL. Die URL wird in einem Objekt bereitgestellt. Zum Beispiel:
+Eine Asset-Sammlung kann über Content Services verfügbar gemacht werden. Der Aufruf einer Asset-Sammlung in einer Anfrage gibt ein Objekt zurück, das eine Liste der Assets einschließlich ihrer URLs ist. Der Zugriff auf Assets erfolgt über eine URL. Die URL wird in einem Objekt bereitgestellt. Beispiel:
 
 * Eine Seitenentität gibt die JSON (Seitenobjekt) zurück, die eine Bildreferenz enthält. Die Bildreferenz ist eine URL, mit der die Asset-Binärdatei für das Bild abgerufen wird.
 * Bei einer Anforderung einer Liste von Assets in einem Ordner wird die JSON-Datei mit Details zu allen Entitäten in diesem Ordner zurückgegeben. Diese Liste ist ein Objekt. Die JSON-Datei enthält URL-Verweise, mit denen die Asset-Binärdatei für jedes Asset in diesem Ordner abgerufen wird.

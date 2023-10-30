@@ -147,11 +147,11 @@ Nachdem die Vererbung abgebrochen wurde, können Sie das Konfigurationssymbol au
 
 * **Umleitungs-URL**
 
-  Geben Sie die URL der Seite ein, die nach dem Versand der Nachricht angezeigt wird. Beispiel: `../messaging.html`.
+  Geben Sie die URL der Seite ein, die nach dem Versand der Nachricht angezeigt wird. Zum Beispiel: `../messaging.html`.
 
 * **URL abbrechen**
 
-  Geben Sie die URL der Seite ein, die angezeigt wird, wenn der Absender die Nachricht abbricht. Beispiel: `../messaging.html`.
+  Geben Sie die URL der Seite ein, die angezeigt wird, wenn der Absender die Nachricht abbricht. Zum Beispiel: `../messaging.html`.
 
 * **Maximale Länge des Nachrichtenbetreffs**
 

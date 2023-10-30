@@ -9,7 +9,7 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
 source-wordcount: '2073'
-ht-degree: 64%
+ht-degree: 70%
 
 ---
 
@@ -20,7 +20,7 @@ Verwendung **Forms durchsuchen** um die Auswahl der Sucheigenschaften anzupassen
 
 A [Bereich der Eigenschaft](#predicates-and-their-settings)s sind standardmäßig verfügbar. Sie können mehrere Eigenschaften hinzufügen, darunter (unter anderem) das Eigenschaftsprädikat, um nach Assets zu suchen, die mit einer von Ihnen angegebenen Eigenschaft übereinstimmen. Oder die Options-Eigenschaft zum Suchen von Assets, die mit einem oder mehreren Werten übereinstimmen, die Sie für eine bestimmte Eigenschaft angeben.
 
-Sie können [Suchformulare konfigurieren](#configuring-your-search-forms) wird in verschiedenen Konsolen und im Asset-Browser verwendet (beim Bearbeiten von Seiten). Die [Dialogfelder zum Konfigurieren dieser Formulare](#configuring-your-search-forms) Der Zugriff erfolgt über:
+Sie können [Suchformulare konfigurieren](#configuring-your-search-forms) wird in verschiedenen Konsolen und im Asset-Browser verwendet (beim Bearbeiten von Seiten). Die [Dialogfelder für die Konfiguration dieser Formulare](#configuring-your-search-forms) finden Sie unter:
 
 * **Tools**
 
@@ -398,7 +398,7 @@ Die Beschriftungen für die Kontrollkästchen &quot;Veröffentlichen&quot;und &q
 1. Navigieren Sie zu **Instrumente** >>  **Allgemein** >> **Forms durchsuchen**.
 
 1. Wählen Sie die Konfiguration aus, die Sie anpassen möchten.
-1. Verwenden Sie die **Bearbeiten** -Symbol, um die Konfiguration für die Aktualisierung zu öffnen.
+1. Verwenden Sie das Symbol **Bearbeiten**, um die Konfiguration für das Aktualisieren zu öffnen.
 1. Bei einer neuen Anpassung möchten Sie wahrscheinlich [neue Prädikatsfelder hinzufügen und Einstellungen definieren](#add-edit-a-predicate-field-and-define-field-settings) nach Bedarf. Bei einer vorhandenen Anpassung können Sie ein vorhandenes Feld auswählen und [Einstellungen aktualisieren](#add-edit-a-predicate-field-and-define-field-settings).
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
 
@@ -413,7 +413,7 @@ Die Beschriftungen für die Kontrollkästchen &quot;Veröffentlichen&quot;und &q
 
 Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definieren/aktualisieren:
 
-1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
+1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für das Aktualisieren.
 1. Wenn Sie ein Feld hinzufügen möchten, öffnen Sie die **Eigenschaft auswählen** und ziehen Sie das gewünschte Prädikat an die gewünschte Position. Beispiel: die **Datumsbereich-Eigenschaft**:
 
    ![Suchformular bearbeiten](assets/chlimage_1-375.png)
@@ -448,8 +448,8 @@ Sie können Felder hinzufügen oder bearbeiten und deren Einstellungen definiere
 
 ### Löschen eines Prädikatfelds {#deleting-a-predicate-field}
 
-1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für die Aktualisierung.
-1. Wählen Sie das Prädikatsfeld aus (rechts) und öffnen Sie das **Einstellungen** und wählen Sie dann die **Löschen** Symbol (unten links).
+1. [Öffnen Sie die benutzerdefinierte Konfiguration](#creating-opening-a-customized-configuration) für das Aktualisieren.
+1. Wählen Sie das Prädikatsfeld (rechts) aus, öffnen Sie die Registerkarte **Einstellungen** und wählen Sie dann das Symbol **Löschen** (unten links) aus.
 
    ![Löschsymbol](do-not-localize/chlimage_1-32.png)
 
@@ -471,7 +471,7 @@ Das Löschen einer angepassten Konfiguration erfolgt über die Konsole:
 
    ![Formular löschen](assets/chlimage_1-378.png)
 
-1. Die angepasste Konfiguration wird gelöscht und die Standardeinstellung wird wieder aktiviert (dies wird durch das Wiedersehen des Vorhängeschloss-Symbols in der Konsole angezeigt).
+1. Die angepasste Konfiguration wird gelöscht und die Standardkonfiguration wiederhergestellt (erkennbar am Vorhängeschlosssymbol, das wieder in der Konsole angezeigt wird).
 
 ### Hinzufügen von Optionsprädikaten {#adding-options-predicates}
 
@@ -524,7 +524,7 @@ Das folgende Beispiel (Suche entsprechend der Vorlage, mit der eine Seite erstel
    ![Eigenschaftspfad hinzufügen](assets/chlimage_1-380.png)
 
 1. Wählen Sie **Fertig** aus, um die Konfiguration zu speichern.
-1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die **Suche** Leiste. Die neu definierten Suchformulare sowie die verschiedenen Optionen werden angezeigt. Wählen Sie die gewünschte Option aus, damit Sie die Suchergebnisse sehen können:
+1. Navigieren Sie zur entsprechenden Konsole (in diesem Beispiel: **Sites**) und öffnen Sie die **Suche** Leiste. Die neu definierten Suchformulare werden zusammen mit den verschiedenen Optionen angezeigt. Wählen Sie die gewünschte Option aus, damit Sie die Suchergebnisse sehen können:
 
    ![Die Endergebnisse](assets/chlimage_1-381.png)
 

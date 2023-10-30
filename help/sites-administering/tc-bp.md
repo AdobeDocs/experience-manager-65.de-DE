@@ -6,7 +6,7 @@ exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '837'
-ht-degree: 96%
+ht-degree: 97%
 
 ---
 
@@ -29,7 +29,7 @@ Das Erstellen bzw. Erweitern einer globalen Web-Präsenz kann ein komplexer Proz
 
 * Beginnen Sie den Entwurf der Site-Struktur mit der Untersuchung Ihrer Inhalte und stellen Sie fest, wo und in welcher Sprache Inhalte verfasst werden. Dieser Ort muss die höchste Ebene Ihrer Website darstellen.
 * Bewährt und empfohlen ist eine **sprachbasierte Struktur** mit höchstens drei Ebenen zwischen den Autorenaktivitäten auf höchster Ebene und den landesspezifischen Websites.
-* Verwenden Sie eine Sprache/Land-Site-Namenskonvention, die folgt **W3C-Standards**.
+* Verwenden Sie für sprachen- bzw. länderspezifische Websites eine Namenskonvention, die den **W3C-Standards** entspricht.
 * Legen Sie fest, wie Inhalte nach Regionen und Ländern verteilt werden. Berücksichtigen Sie Länder, in denen dieselbe Sprache gesprochen wird. Es wird empfohlen, Sprachstämme zu erstellen, eine Ebene nicht aktivierter Seiten, auf denen übersetzte Inhalte überprüft und geändert und dann an eine länderspezifische Website mit der jeweiligen Sprache verteilt oder von ihr abgerufen werden können.
 * Zum Erstellen von Sprachstämmen gibt es zwei Ansätze, einen mit Sprachkopien und einen mit MSM-/Live Copies.
 

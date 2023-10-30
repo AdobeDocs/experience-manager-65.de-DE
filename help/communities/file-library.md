@@ -109,7 +109,7 @@ Unter dem **Kommentare** -Registerkarte angeben, ob und wie Kommentare für hoch
 
 * **UI-Erwähnungsmuster**
 
-  Geben Sie die zulässige Musterzeichenfolge an, damit Sie den registrierten Benutzer in einem Beitrag mit Tags versehen (@mention). Beispiel: `~{{familyName}}{{givenName}}`.
+  Geben Sie die zulässige Musterzeichenfolge an, damit Sie den registrierten Benutzer in einem Beitrag mit Tags versehen (@mention). Zum Beispiel: `~{{familyName}}{{givenName}}`.
 
 * **Antworten mit Diskussionsfaden zulassen**
 

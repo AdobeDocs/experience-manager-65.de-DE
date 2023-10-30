@@ -5,7 +5,7 @@ exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '553'
-ht-degree: 31%
+ht-degree: 45%
 
 ---
 
@@ -27,9 +27,9 @@ Die Autorenumgebung bietet die Mechanismen zum Erstellen, Aktualisieren und Übe
 
 ![Übersicht über Umgebungen](assets/chlimage_1-132.png)
 
-In der Autorenumgebung wird die Funktionalität von AEM über zwei Benutzeroberflächen bereitgestellt. In der Veröffentlichungsumgebung entwerfen Sie das gesamte Erscheinungsbild der Benutzeroberfläche, die Ihren Benutzern zur Verfügung gestellt wird.
+In der Autorenumgebung wird die Funktionalität von AEM über zwei Benutzeroberflächen bereitgestellt. In der Publishing-Umgebung entwerfen Sie das Aussehen der Oberfläche, die Sie Ihren Benutzenden zur Verfügung stellen.
 
-### Autorenumgebung {#author-environment}
+### Authoring-Umgebung {#author-environment}
 
 Der Autor arbeitet in der sogenannten **Autorenumgebung**. Diese bietet eine einfach zu verwendende Oberfläche (grafische Benutzeroberfläche (GUI oder UI)) zum Erstellen von Inhalt. Es befindet sich hinter der Firewall eines Unternehmens, die vollen Schutz bietet und die Anmeldung des Autors erfordert, wobei ein Konto verwendet wird, dem die entsprechenden Zugriffsrechte zugewiesen wurden.
 
@@ -37,7 +37,7 @@ Der Autor arbeitet in der sogenannten **Autorenumgebung**. Diese bietet eine ein
 >
 >Ihr Konto muss über die entsprechenden Zugriffsrechte verfügen, um Inhalte zu erstellen, zu bearbeiten oder zu veröffentlichen.
 
-Je nachdem, wie Ihre Instanz und Ihre persönlichen Zugriffsrechte konfiguriert sind, können Sie viele Aufgaben an Ihrem Inhalt ausführen, darunter (unter anderem):
+Je nachdem, wie Ihre Instanz und Ihre persönlichen Zugriffsrechte konfiguriert sind, können Sie viele Aufgaben in Bezug auf Ihre Inhalte durchführen, unter anderem:
 
 * Erstellen neuer Inhalte oder Bearbeiten vorhandener Inhalte auf einer Seite
 * Verwenden vordefinierter Vorlagen zum Erstellen neuer Inhaltsseiten
@@ -48,7 +48,7 @@ Je nachdem, wie Ihre Instanz und Ihre persönlichen Zugriffsrechte konfiguriert 
 * Verschieben, Kopieren oder Löschen von Inhaltsseiten, Assets usw.
 * Veröffentlichen (oder Aufheben der Veröffentlichung) von Seiten, Assets usw.
 
-Außerdem gibt es administrative Aufgaben, die Ihnen bei der Verwaltung Ihrer Inhalte helfen:
+Außerdem gibt es administrative Aufgaben, die Sie beim Verwalten des Inhalts unterstützen:
 
 * Workflows, die steuern, wie Änderungen verwaltet werden, z. B. das Erzwingen einer Überprüfung vor der Veröffentlichung
 * Projekte zur Koordinierung einzelner Aufgaben
@@ -81,4 +81,4 @@ Wenn die AEM Site ein [Community-Site](/help/communities/overview.md)oder enthä
 
 #### Dispatcher {#dispatcher}
 
-Um die Leistung für Besucher Ihrer Website zu optimieren, muss die Variable **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de)** implementiert Lastenausgleich und Caching.
+Um eine optimale Nutzung der Website durch Ihre Besucherinnen und Besucher zu gewährleisten, führt der **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=de) Lastverteilung und Caching durch.**

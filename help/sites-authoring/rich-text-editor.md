@@ -11,7 +11,7 @@ ht-degree: 95%
 
 # Verwenden des Rich-Text-Editors zum Erstellen von Inhalten {#use-rich-text-editor-to-author-content}
 
-Der Rich-Text-Editor (RTE) ist ein grundlegendes Mittel für die Eingabe von Textinhalten in AEM. Sie können verschiedene Komponenten erstellen, einschließlich:
+Der Rich-Text-Editor (RTE) ist ein grundlegender Baustein für die Eingabe von Textinhalten in AEM. Sie können verschiedene Komponenten erstellen, einschließlich:
 
 * Text
 * Textbild

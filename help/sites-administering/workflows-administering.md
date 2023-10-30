@@ -9,7 +9,7 @@ exl-id: 90923d39-3ac5-4028-976c-d011f0404476
 source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
 source-wordcount: '1003'
-ht-degree: 70%
+ht-degree: 75%
 
 ---
 
@@ -179,13 +179,13 @@ Sie können die maximale Größe des Posteingangs durch die Konfiguration des **
 
 ## Verwenden von Workflow-Variablen für kundeneigene Datenspeicher {#using-workflow-variables-customer-datastore}
 
-Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (JCR) gespeichert. Diese Daten können von sensibler Natur sein. Sie können alle benutzerdefinierten Metadaten/Daten in Ihrem eigenen verwalteten Speicher speichern, anstatt sie im Adobe-Speicher abzulegen. In diesen Abschnitten wird beschrieben, wie Sie diese Variablen für die externe Speicherung einrichten.
+Von Workflows verarbeitete Daten werden im von Adobe bereitgestellten Speicher (JCR) gespeichert. Diese Daten können von sensibler Natur sein. Sie können alle benutzerdefinierten Metadaten/Daten in Ihrem eigenen verwalteten Speicher speichern, anstatt die von Adobe bereitgestellte Datenspeicherung zu verwenden. In diesen Abschnitten wird beschrieben, wie Sie diese Variablen für die externe Speicherung einrichten.
 
 ### Festlegen des Modells für die Verwendung der externen Datenspeicherung von Metadaten {#set-model-for-external-storage}
 
 Auf der Ebene des Workflow-Modells wird ein Flag bereitgestellt, das angibt, dass das Modell (und seine Laufzeitinstanzen) über eine externe Datenspeicherung von Metadaten verfügt. Workflow-Variablen werden nicht in JCR für die Workflow-Instanzen der Modelle persistiert, die für den externen Speicher markiert sind.
 
-Die Eigenschaft *userMetadataPersistenceEnabled* wird auf der *jcr:content-Knoten* des Workflow-Modells. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled*.
+Die Eigenschaft *userMetadataPersistenceEnabled* wird im *jcr:content-Knoten* des Workflow-Modells gespeichert. Dieses Flag wird in Workflow-Metadaten als *cq:userMetaDataCustomPersistenceEnabled* beibehalten.
 
 Die folgende Illustration zeigt, wie Sie die Hervorhebung in einem Workflow festlegen.
 

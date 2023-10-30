@@ -164,7 +164,7 @@ Nur relevant, wenn die Option Datei-Uploads zulassen aktiviert ist. Maximale Anz
 
 * **UI-Erwähnungsmuster**
 
-  Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Beispiel: `~{{familyName}}{{givenName}}`.
+  Geben Sie die zulässige Musterzeichenfolge an, um den registrierten Benutzer in einem Beitrag mit Tags zu versehen (@mention). Zum Beispiel: `~{{familyName}}{{givenName}}`.
 
 >[!NOTE]
 >

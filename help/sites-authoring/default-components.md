@@ -5,7 +5,7 @@ exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '425'
-ht-degree: 75%
+ht-degree: 78%
 
 ---
 
@@ -23,7 +23,7 @@ Die Komponenten sind beim [Bearbeiten einer Seite](/help/sites-authoring/editing
 
 ## Allgemeine Verwendung {#general-usage}
 
-Die Komponenten sind im Seiteneditor auf dem seitlichen Bedienfeld der Registerkarte **Komponenten** verfügbar, wenn Sie eine [Seite bearbeiten](/help/sites-authoring/editing-content.md).
+Die Komponenten sind im Seiteneditor auf dem seitlichen Bedienfeld der Registerkarte **Komponenten** verfügbar, wenn Sie eine [Seite bearbeiten](/help/sites-authoring/editing-content.md)
 
 Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer Seite ziehen. Sie können sie dann bearbeiten, indem Sie Folgendes verwenden:
 
@@ -32,7 +32,7 @@ Sie können eine Komponente auswählen und an die gewünschte Stelle auf Ihrer S
 
 * [Inhalt bearbeiten – Vollbildmodus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten des Seiteninhalts](/help/sites-authoring/editing-content.md).
+Weitere Informationen zum Hinzufügen von Komponenten zu einer Seite finden Sie unter [Bearbeiten von Seiteninhalten](/help/sites-authoring/editing-content.md).
 Die Komponenten sind nach verschiedenen Kategorien (Komponentengruppen) sortiert. Beispiele für solche Gruppen sind:
 
 * **We.Retail**: Enthält die Kernkomponenten, die für die Verwendung mit der [We.Retail-Referenzimplementierung](/help/sites-developing/we-retail.md) zugänglich sind.

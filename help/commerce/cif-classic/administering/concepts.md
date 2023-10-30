@@ -418,7 +418,7 @@ Bei allen Implementierungen können die folgenden Punkte beachtet werden:
 * Vermeiden Sie Duplizierungen so oft wie möglich (siehe Lokalisierung) oder überlegen Sie, zu wie vielen Knoten Ihre Duplizierung führt.
 * Versuchen Sie, Ihren Inhalt so oft wie möglich mit Tags zu versehen, um die Abfrageoptimierung vorzubereiten.
 
-  Zum Beispiel:
+  Beispiel:
 
   `/content/products/france/fr/shoe/reebok/pump/46 SKU`
 

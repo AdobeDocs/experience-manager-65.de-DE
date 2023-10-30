@@ -180,7 +180,7 @@ Damit die E-Mail in das Repository geladen werden kann, muss ein Abruf-Importtoo
 
 * **[!UICONTROL URL]**
 
-  *(Erforderlich)* Der ausgehende Mail-Server. Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
+  *(Erforderlich)* Der ausgehende Mail-Server. Zum Beispiel: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
 * **[!UICONTROL Import in Pfad]**&amp;ast;
 

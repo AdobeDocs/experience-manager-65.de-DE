@@ -133,7 +133,7 @@ Dies ist die empfohlene Methode zur Angabe der **zulässigen Vorlagen**, da die 
 
 >[!CAUTION]
 >
-Es wird nicht empfohlen, die **zulässigen Vorlagen** mit dieser Methode zu ändern, da die angegebenen Vorlagen bei der Aktualisierung überschrieben werden können.
+Es wird nicht empfohlen, die **zulässigen Vorlagen** mit dieser Methode zu ändern, da die angegebenen Vorlagen bei einer Aktualisierung überschrieben werden können.
 >
 Verwenden Sie diesen Dialog nur zu Informationszwecken.
 

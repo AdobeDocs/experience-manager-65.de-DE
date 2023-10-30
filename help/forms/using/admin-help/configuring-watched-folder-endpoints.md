@@ -1,15 +1,15 @@
 ---
 title: Konfigurieren von Endpunkten für überwachte Ordner
-description: Erfahren Sie, wie Sie Endpunkte für überwachte Ordner konfigurieren.
+description: Erfahren Sie, wie Sie Endpunkte für überwachte Ordner konfigurieren. Wenn ein Dokument in einem überwachten Ordner abgelegt wird, wird ein konfigurierter Dienstvorgang aufgerufen und die Datei bearbeitet.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
 workflow-type: tm+mt
-source-wordcount: '7163'
-ht-degree: 25%
+source-wordcount: '7181'
+ht-degree: 24%
 
 ---
 

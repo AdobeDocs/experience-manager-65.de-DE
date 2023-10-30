@@ -5,7 +5,7 @@ exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '428'
-ht-degree: 70%
+ht-degree: 93%
 
 ---
 
@@ -29,7 +29,7 @@ Das Aktivieren von gestaffelten Katalogfunktionen erfordert eine Authentifizieru
 
 >[!NOTE]
 >
->Staging-Katalogfunktionen sind nur bei Adobe Commerce- und Drittanbieter-Connectoren verfügbar, die Token-basierte Authentifizierung unterstützen.
+>Gestaffelte Katalogfunktionen sind nur mit Adobe Commerce und Connectoren von Drittanbietern verfügbar, die eine Token-basierte Authentifizierung unterstützen.
 
 ## Öffnen des Produkt-Cockpits {#opening-product-cockpit}
 
@@ -63,13 +63,13 @@ Eine Volltextsuche über den gesamten Produktkatalog wird auf der linken Filter-
 
 ## Durchsuchen des gestaffelten Produktkatalogs {#staged-product-catalogs}
 
-Standardmäßig zeigt das Produkt-Cockpit Live-Produktkatalogdaten an. Mithilfe des &quot;STAGED CATALOG&quot;auf der Registerkarte mit dem linken Filter wird der Produktkatalog für ein beliebiges Datum geladen.
+Standardmäßig zeigt das Produkt-Cockpit Live-Produktkatalogdaten an. Mithilfe von „STAGED CATALOG“ auf der linken Filterseite wird der Produktkatalog für jedes ausgewählte Datum geladen.
 
 ![gestaffelter Katalog](/help/commerce/cif/assets/staged-cockpit.png)
 
 ## Eigenschaften des Produktkatalogs {#catalog-properties}
 
-Durch Klicken auf das Eigenschaftensymbol eines Produkts oder einer Kategorie wird die Eigenschaftenansicht des ausgewählten Objekts geöffnet. Offene Eigenschaften einer Produktvariante sind gleich dem Öffnen der Hauptprodukteigenschaften.
+Durch Klicken auf das Eigenschaftensymbol eines Produkts oder einer Kategorie wird die Eigenschaftenansicht des ausgewählten Objekts geöffnet. Das Öffnen der Eigenschaften einer Produktvariante ist gleichbedeutend mit dem Öffnen der Haupteigenschaften des Produkts.
 
 ### Registerkarten „Commerce“ {#tabs}
 

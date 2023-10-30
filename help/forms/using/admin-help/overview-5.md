@@ -1,8 +1,6 @@
 ---
 title: Einführung in das Arbeiten mit PDF Generator
-seo-title: Introduction to working with PDF Generator
-description: Erfahren Sie, wie Sie verschiedene Dateiformate in PDF konvertieren.
-seo-description: Learn how to convert various file formats to PDF.
+description: Erfahren Sie, wie Sie verschiedene Dateiformate in PDF konvertieren können. Er kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren.
 uuid: 1942bf9f-99cc-48b6-89f4-e78c1957a300
 contentOwner: admin
 content-type: reference
@@ -12,20 +10,20 @@ discoiquuid: 9e25ea72-e7ba-400b-9cab-de256fe64888
 docset: aem65
 feature: PDF Generator
 exl-id: 08e2381e-c7e8-4690-9cbf-6934064a04f8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '134'
-ht-degree: 100%
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+workflow-type: tm+mt
+source-wordcount: '149'
+ht-degree: 61%
 
 ---
 
 # Einführung in das Arbeiten mit PDF Generator {#introduction-to-working-with-pdf-generator}
 
-PDF Generator konvertiert Dateien mit unterschiedlichen Formaten in PDF-Dateien. Er kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren. Eine Liste der unterstützten Dateiformate finden Sie unter [Software-Unterstützung für PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
+PDF Generator konvertiert verschiedene Dateiformate in PDF. Er kann außerdem PDF-Dokumente in andere Dateiformate konvertieren und die Größe von PDF-Dokumenten optimieren. Eine Liste der unterstützten Dateiformate finden Sie unter [Softwareunterstützung für PDF Generator](/help/forms/using/aem-forms-jee-supported-platforms.md)
 
-**Dateien zur Verarbeitung in PDF Generator senden**
+**Senden von Dateien zur Verarbeitung an PDF Generator**
 
-Es gibt drei Möglichkeiten zum Senden von Dateien zur Verarbeitung an PDF Generator.
+Es gibt drei Möglichkeiten, Dateien zur Verarbeitung an PDF Generator zu senden:
 
 * Administratoren können auf die PDFG-Seiten in Administration Console zugreifen. (Siehe [Dateien mithilfe von PDF Generator konvertieren](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
 * Benutzer können auf die PDFG-Endbenutzerseiten zugreifen, indem sie sich bei `http(s)://'[server]:[port]'/pdfgui.` anmelden. Von dort aus können sie auf die Seiten für PDFG-Netzwerkdrucker, PDF erstellen, HTML zu PDF, PDF erstellen und PDF optimieren zugreifen.

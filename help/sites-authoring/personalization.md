@@ -5,7 +5,7 @@ exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '521'
-ht-degree: 65%
+ht-degree: 67%
 
 ---
 
@@ -60,6 +60,6 @@ AEM bietet eine integrierte Targeting-Engine, die Seitenanfragen verarbeitet und
 Mit der Targeting-Engine von Adobe Target werden von Seitenbesuchen gesammelte Informationen in Adobe Target verfolgt.
 
 * Bei der Verwendung dieser Targeting-Engine setzen Sie Segmente ein, die Sie aus Adobe Target importieren, um die Zielgruppen Ihrer Erlebnisse zu bestimmen.
-* Aktivitäten, die die Adobe Target-Engine verwenden, sind [mit Target synchronisiert](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
+* Aktivitäten, die die Adobe Target-Engine verwenden, werden [mit Target synchronisiert](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
 Sie können diese Engine verwenden, wenn Sie über eine [Integration mit Adobe Target](/help/sites-administering/opt-in.md) verfügen.

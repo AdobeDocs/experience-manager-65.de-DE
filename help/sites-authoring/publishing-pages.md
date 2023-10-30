@@ -13,7 +13,7 @@ ht-degree: 95%
 
 Nachdem Sie Ihren Inhalt in der Authoring-Umgebung erstellt und geprüft haben, muss dieser [auf der öffentlichen Website](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) (der Publishing-Umgebung) verfügbar gemacht werden.
 
-Dies wird als Publishing einer Seite bezeichnet. Wenn Sie eine Seite aus der Publishing-Umgebung entfernen möchten, wird dies als „Veröffentlichung aufheben“ bezeichnet. Beim „Publishing“ und „Veröffentlichung aufheben“ bleibt die Seite in der Authoring-Umgebung für weitere Änderungen verfügbar, bis Sie diese löschen.
+Dies wird als Publishing einer Seite bezeichnet. Wenn Sie eine Seite aus der Publishing-Umgebung entfernen möchten, wird dies als Aufheben der Veröffentlichung bezeichnet. Beim „Publishing“ und „Veröffentlichung aufheben“ bleibt die Seite in der Authoring-Umgebung für weitere Änderungen verfügbar, bis Sie diese löschen.
 
 Sie können eine Seite auch sofort oder zu einem vordefinierten Datum/Zeitpunkt in der Zukunft veröffentlichen oder die Veröffentlichungen aufheben.
 
@@ -228,11 +228,11 @@ Ebenso wie Sie [die Option „Veröffentlichung verwalten“ zur Veröffentlichu
 
 ## Veröffentlichen und Rückgängigmachen der Veröffentlichung eines Baums {#publishing-and-unpublishing-a-tree}
 
-Wenn Sie eine beträchtliche Anzahl von Inhaltsseiten eingegeben oder aktualisiert haben, die sich alle unter derselben Stammseite befinden, kann es praktischer sein, mit einer einzigen Aktion den gesamten Baum zu veröffentlichen.
+Wenn Sie eine beträchtliche Anzahl von Inhaltsseiten eingegeben oder aktualisiert haben, die sich alle unter derselben Stammseite befinden, kann es praktischer sein, mit einer einzigen Aktion die gesamte Baumstruktur zu veröffentlichen.
 
 Sie können dazu die Option [Veröffentlichung verwalten](/help/sites-authoring/publishing-pages.md#manage-publication) auf der Sites-Konsole verwenden.
 
-1. Wählen Sie in der Sites-Konsole die Stammseite des Baums aus, den Sie veröffentlichen bzw. dessen Veröffentlichung Sie rückgängig machen möchten, und wählen Sie **Veröffentlichung verwalten** aus.
+1. Wählen Sie in der Sites-Konsole die Stammseite des Baums aus, den Sie veröffentlichen bzw. dessen Veröffentlichung Sie aufheben möchten, und wählen Sie **Veröffentlichung verwalten** aus.
 1. Der Assistent **Veröffentlichung verwalten** wird geöffnet. Wählen Sie „Veröffentlichen“ oder „Veröffentlichung aufheben“ sowie den Zeitpunkt aus und danach **Weiter**, um fortzufahren.
 1. Wählen Sie im Schritt **Umfang** die Stammseite aus und wählen Sie **Untergeordnete Elemente einschließen** aus.
 

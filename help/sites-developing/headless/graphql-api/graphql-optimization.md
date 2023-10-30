@@ -5,7 +5,7 @@ exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
 source-git-commit: 3ec34efc14cc49d0f45cb4b175573c33c1cc232e
 workflow-type: tm+mt
 source-wordcount: '1966'
-ht-degree: 60%
+ht-degree: 63%
 
 ---
 
@@ -35,7 +35,7 @@ Beständige GraphQL-Abfragen helfen durch die Verwendung des Content Delivery Ne
 
 Siehe:
 
-* [Persistierte GraphQL-Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md).
+* [Persistente GraphQL-Abfragen](/help/sites-developing/headless/graphql-api/persisted-queries.md).
 * [Verwenden von GraphQL mit AEM – Beispielinhalt und Abfragen](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 
 #### Installieren des GraphQL Index-Pakets {#install-graphql-index-package}
@@ -156,7 +156,7 @@ Dabei wird ein JCR-Filter (in Form einer Abfragebegrenzung) angewendet, bevor de
 
 >[!NOTE]
 >
->Aus technischen Gründen (z. B. Flexibilität, Verschachtelung von Fragmenten) kann AEM die gesamte Filterung nicht an JCR delegieren.
+>Aus technischen Gründen (z. B. Flexibilität oder Verschachtelung von Fragmenten) kann AEM nicht die gesamte Filterung an JCR delegieren.
 
 Bei dieser Methode wird die Flexibilität bewahrt, die GraphQL-Filter bieten, während gleichzeitig ein möglichst großer Teil der Filterung an JCR delegiert wird.
 
@@ -276,7 +276,7 @@ Wenn Sie in erster Linie daran interessiert sind, nur die ersten Seiten abzurufe
 
 ### Logische Vorgänge in Filterausdrücken {#logical-operations-in-filter-expressions}
 
-Wenn Sie nach verschachtelten Fragmenten filtern, können Sie dennoch die JCR-Filterung anwenden, indem Sie einen begleitenden Filter für ein Feld der obersten Ebene bereitstellen, das mithilfe der `AND` Operator.
+Wenn Sie verschachtelte Fragmente filtern, können Sie weiterhin die JCR-Filterung nutzen, indem Sie einen begleitenden Filter für ein Feld der obersten Ebene bereitstellen, das mithilfe des `AND`-Operators kombiniert wird.
 
 Ein typischer Anwendungsfall bestünde darin, den Umfang der Abfrage mithilfe eines Filters auf das Feld `_path` des Fragments der obersten Ebene einzugrenzen und dann zusätzliche Felder zu filtern, die sich möglicherweise auf der obersten Ebene oder in einem verschachtelten Fragment befinden.
 

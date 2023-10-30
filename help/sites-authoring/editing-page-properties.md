@@ -5,7 +5,7 @@ exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '1872'
-ht-degree: 59%
+ht-degree: 63%
 
 ---
 
@@ -48,17 +48,17 @@ Die Eigenschaften sind auf verschiedene Registerkarten verteilt.
 
   Wenden Sie eine konsistente Markenidentität auf allen Seiten an, indem Sie einen Marken-Slug an jeden Seitentitel anhängen. Diese Funktion erfordert die Verwendung der Seitenkomponente ab Version 2.14.0 der [Kernkomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html?lang=de)
 
-   * **Überschreiben** – Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
-      * Der Wert wird von allen untergeordneten Seiten übernommen, es sei denn, sie verfügen auch über ihre **Überschreibung** festgelegten Werte.
+   * **Überschreiben**: Aktivieren Sie diese Option, um den Marken-Slug auf dieser Seite zu definieren.
+      * Der Wert wird von allen untergeordneten Seiten geerbt, es sei denn, deren Werte für **Überschreiben** sind auch eingestellt.
    * **Überschreibungswert** – Der Text des Marken-Slugs, der an den Seitentitel angehängt werden soll.
       * Der Wert wird nach einem Pipe-Zeichen an den Seitentitel angehängt, z. B. „Cycling Tuscany | Always ready for the WKND“.
 * **Seitentitel**
 
-  Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn leer, wird die **Titel** verwendet.
+  Ein Titel zur Verwendung auf der Seite. Wird normalerweise von Titelkomponenten verwendet. Wenn dies leer gelassen wird, wird der **Titel** verwendet.
 
 * **Navigationstitel**
 
-  Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten). Wenn leer, wird die **Titel** verwendet.
+  Sie können einen separaten Titel für die Verwendung in der Navigation angeben (z. B. wenn Sie eine kürzere Alternative wählen möchten). Wenn dies leer gelassen wird, wird der **Titel** verwendet.
 
 * **Untertitel**
 
@@ -279,7 +279,7 @@ durch Klicken oder Tippen auf **Eigenschaften**, um die Seiteneigenschaften fest
    * [Schnellaktionen](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Auswahlmodus](/help/sites-authoring/basic-handling.md#selectionmode)
 
-   Die Seiteneigenschaften werden auf den entsprechenden Registerkarten angezeigt.
+   Die Seiteneigenschaften werden in den entsprechenden Registerkarten angezeigt.
 
 1. Sie können die Eigenschaften nach Bedarf anzeigen oder bearbeiten.
 
@@ -319,7 +319,7 @@ Sie können mehrere Seiten für die Massenbearbeitung mit verschiedenen Methoden
 
 ![epp-01](assets/epp-01.png)
 
-Nach Auswahl der Seiten und anschließendes Klicken oder Tippen auf **Eigenschaften-Option**, werden die Masseneigenschaften angezeigt:
+Nach Auswahl der Seiten und anschließendem Klicken oder Tippen auf die Option **Eigenschaften** werden die Masseneigenschaften angezeigt:
 
 ![epp-02](assets/epp-02.png)
 
@@ -328,7 +328,7 @@ Sie können nur Massenbearbeitungen von Seiten durchführen, die:
 * den gleichen Ressourcentyp haben
 * nicht Teil einer Live Copy sind
 
-   * Wenn sich eine der Seiten in einer Live Copy befindet, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
+   * Ist eine der Seiten Teil einer Live Copy, wird beim Öffnen der Eigenschaften eine Meldung angezeigt.
 
 Nachdem Sie die Massenbearbeitung eingegeben haben, haben Sie folgende Möglichkeiten:
 
@@ -362,8 +362,8 @@ Nachdem Sie die Massenbearbeitung eingegeben haben, haben Sie folgende Möglichk
 
    * Sie können die Werte in den verfügbaren Feldern aktualisieren.
 
-      * Die neuen Werte werden bei Auswahl auf alle ausgewählten Seiten angewendet **Fertig**.
-      * Wenn das Feld mehrwertig ist (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
+      * Die neuen Werte werden auf alle gewählten Seiten angewendet, wenn Sie **Fertig** wählen.
+      * Wenn es sich um ein mehrwertiges Feld handelt (z. B. Tags), können Sie entweder einen neuen Wert anhängen oder einen gemeinsamen Wert entfernen.
 
    * Gemeinsame Felder, die unterschiedliche Werte auf den verschiedenen Seiten aufweisen, werden durch einen speziellen Wert wie den Text gekennzeichnet `<Mixed Entries>`.
 

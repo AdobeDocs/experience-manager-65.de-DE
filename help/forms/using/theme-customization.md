@@ -1,29 +1,26 @@
 ---
 title: Design-Anpassung
-seo-title: Theme Customization
-description: Anpassen des Themas an Ihre AEM Forms-App.
-seo-description: How to customize the theme of your AEM Forms app.
-uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
+description: Erfahren Sie, wie Sie das Design der AEM Forms-Anwendung anpassen. Sie können den HTML-Code und die CSS-Datei anpassen, um ein unternehmensspezifisches Erscheinungsbild zu erhalten.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
-source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
-workflow-type: ht
-source-wordcount: '223'
-ht-degree: 100%
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 73%
 
 ---
 
 # Design-Anpassung {#theme-customization}
 
-Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein unverwechselbares, organisationsspezifisches Erscheinungsbild zu geben. Sie können beispielsweise die Hintergrundfarbe und die Höhe von Aufgaben bzw. Startpunkten ändern. Folgendes Beispiel enthält hierzu Anweisungen:
+Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein unverwechselbares, organisationsspezifisches Erscheinungsbild zu geben. Sie können beispielsweise die Hintergrundfarbe und die Höhe von Aufgaben oder Startpunkten ändern. Das folgende Beispiel enthält Anweisungen zum Ändern:
 
 * Anweisungen statt Beschreibungen anzeigen
 * Anzahl der Anzeigewege
-* Farbverlauf Hintergrundfarbe
+* Farbverlauf mit Hintergrundfarbe
 
 ## Schritte {#steps}
 
@@ -83,4 +80,4 @@ Sie können den HTML-Code und die CSS-Datei anpassen, um der AEM Forms-App ein u
 1. Speichern Sie die Änderungen und schließen Sie die Datei `_style.css`.
 1. Öffnen Sie die AEM Forms-App.
 
-   Die AEM Forms-App zeigt jetzt Anweisungen anstelle einer Beschreibung an.
+   Das AEM Forms-Programm zeigt jetzt Anweisungen anstelle von Beschreibungen an.

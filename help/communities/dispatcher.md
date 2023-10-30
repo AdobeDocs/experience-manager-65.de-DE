@@ -59,7 +59,7 @@ Die OSGi-Konfiguration **ACS AEM Commons - Dispatcher Cache Control Header - Max
   ![dispatcher](assets/dispatcher.png)
 
 * **Filtermuster**
-  *(erforderlich)* Ein oder mehrere Pfade zu Community-Seiten. Beispiel: `/content/sites/engage/(.*)`.
+  *(erforderlich)* Ein oder mehrere Pfade zu Community-Seiten. Zum Beispiel: `/content/sites/engage/(.*)`.
 
 * **Max. Alter der Cache-Steuerung**
   *(erforderlich)* Das maximale Alter (in Sekunden), das zum Cache Control-Header hinzugefügt werden soll. Der Wert muss größer als null (0) sein.

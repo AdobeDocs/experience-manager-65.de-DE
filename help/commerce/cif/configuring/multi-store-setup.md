@@ -10,7 +10,7 @@ exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
 source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '384'
-ht-degree: 66%
+ht-degree: 69%
 
 ---
 
@@ -40,7 +40,7 @@ Gehen Sie wie folgt vor, um eine AEM-Site und die AEM-CIF-Kernkomponenten zu ein
    * Wählen Sie die von Ihnen erstellte Basiskonfiguration aus
    * Erstellen Sie eine Konfiguration anhand der unter Nummer 2 beschriebenen Schritte.
 
-   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können nun die Konfigurationseinstellungen unter „Tools“ -> „Allgemein“ -> „Konfigurationsbrowser“ erstellen.
+   Diese neue Konfiguration wird als untergeordnete Konfiguration der Basiskonfiguration erstellt. Sie können nun die Konfigurationseinstellungen unter „Tools“ > „Allgemein“ > „Konfigurationsbrowser“ erstellen.
 
    >[!TIP]
    >
