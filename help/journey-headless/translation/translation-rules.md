@@ -2,10 +2,10 @@
 title: Konfigurieren von Übersetzungsregeln
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '871'
-ht-degree: 98%
+ht-degree: 89%
 
 ---
 
@@ -15,12 +15,12 @@ Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalt
 
 ## Die bisherige Entwicklung {#story-so-far}
 
-Im vorherigen Dokument der AEM Headless-Übersetzungs-Tour, [Konfigurieren des Übersetzungs-Connectors](configure-connector.md), haben Sie gelernt, wie Sie Ihren Übersetzungs-Connector installieren und konfigurieren. Sie sollten jetzt:
+Im vorherigen Dokument der Journey für die AEM Headless-Übersetzung [Übersetzungsintegration konfigurieren](configure-connector.md) Sie haben gelernt, wie Sie Ihre Übersetzungsintegration installieren und konfigurieren und sollten jetzt:
 
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
-* in der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungs-Service einzurichten.
+* In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.
 
-Nachdem Sie Ihren Connector eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt, um herauszufinden, welche Inhalte übersetzt werden müssen.
+Nachdem Sie Ihre Integration eingerichtet haben, führt Sie dieser Artikel durch den nächsten Schritt, um zu ermitteln, welche Inhalte übersetzt werden müssen.
 
 ## Ziel {#objective}
 
@@ -92,7 +92,7 @@ Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben,
 * Verstehen, was die Übersetzungsregeln bewirken.
 * Eigene Übersetzungsregeln definieren können.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie die AEM Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Inhalte übersetzen](translate-content.md) lesen, in dem Sie erfahren, wie Ihr Connector und Ihre Regeln zusammenarbeiten, um Headless-Inhalte zu übersetzen.
+Auf diesen Erkenntnissen aufbauen und Ihre Journey-zur Headless-AEM-Übersetzung fortsetzen, indem Sie das Dokument erneut überprüfen. [Inhalt übersetzen](translate-content.md) Hier erfahren Sie, wie Ihre Integration und Regeln zusammenarbeiten, um Headless-Inhalte zu übersetzen.
 
 ## Zusätzliche Ressourcen {#additional-resources}
 

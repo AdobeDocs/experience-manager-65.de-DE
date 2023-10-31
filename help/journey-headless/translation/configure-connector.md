@@ -1,15 +1,15 @@
 ---
-title: Konfigurieren des Übersetzungs-Connectors
-description: Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
+title: Konfigurieren der Übersetzungsintegration
+description: Erfahren Sie, wie Sie AEM mit einem Übersetzungs-Service verbinden.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
-workflow-type: ht
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
+workflow-type: tm+mt
 source-wordcount: '1164'
-ht-degree: 100%
+ht-degree: 97%
 
 ---
 
-# Konfigurieren des Übersetzungs-Connectors {#configure-connector}
+# Konfigurieren der Übersetzungsintegration {#configure-integration}
 
 Erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.
 
@@ -25,7 +25,7 @@ Dieser Artikel baut auf diesen Grundlagen auf, damit Sie den ersten Konfiguratio
 
 ## Ziel {#objective}
 
-In diesem Dokument erfahren Sie, wie Sie einen AEM-Connector für Ihren ausgewählten Übersetzungsdienst einrichten. Nach dem Lesen sollten Sie:
+In diesem Dokument erfahren Sie, wie Sie eine AEM Integration mit Ihrem ausgewählten Übersetzungsdienst einrichten. Nach dem Lesen sollten Sie:
 
 * die wichtigen Parameter des Translation Integration Framework in AEM verstehen.
 * In der Lage sein, Ihre eigene Verbindung zu Ihrem Übersetzungsdienst einzurichten.

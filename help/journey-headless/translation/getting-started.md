@@ -2,10 +2,10 @@
 title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 947b17a82f704a244e7fdc710cfa9df50c64f46b
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '1495'
-ht-degree: 99%
+ht-degree: 97%
 
 ---
 
@@ -180,7 +180,7 @@ Nachdem Sie nun diesen Teil der Headless-Übersetzungs-Tour abgeschlossen haben,
 * verstehen, wie AEM Headless-Inhalte speichert.
 * mit den Übersetzungs-Tools von AEM vertraut sein.
 
-Bauen Sie auf diesem Wissen auf und setzen Sie Ihre AEM Headless-Übersetzungs-Tour fort, indem Sie als Nächstes das Dokument [Konfigurieren des Übersetzungs-Connectors](configure-connector.md) lesen, in dem Sie lernen, wie Sie AEM mit einem Übersetzungs-Service verbinden.
+Auf diesen Erkenntnissen aufbauen und Ihre Journey-zur Headless-AEM-Übersetzung fortsetzen, indem Sie das Dokument erneut überprüfen. [Übersetzungsintegration konfigurieren](configure-connector.md) Hier erfahren Sie, wie Sie AEM mit einem Übersetzungsdienst verbinden.|
 
 ## Zusätzliche Ressourcen {#additional-resources}
 
