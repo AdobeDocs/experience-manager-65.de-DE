@@ -2,10 +2,10 @@
 title: Erstellen und Organisieren von Seiten mit AEM
 description: Erfahren Sie, wie Sie mit Adobe Experience Manager Seiten erstellen und verwalten.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 99%
+source-wordcount: '2436'
+ht-degree: 98%
 
 ---
 
@@ -378,18 +378,13 @@ AEM bietet die Möglichkeit, interne Links zu aktualisieren, die zu einer Seite 
 
 #### Asynchrone Aktionen {#asynchronous-actions}
 
-Normalerweise wird eine Aktion zum Verschieben oder Umbenennen von Seiten sofort ausgeführt. Dies gilt als synchrone Verarbeitung und weitere Aktionen in der Benutzeroberfläche werden blockiert, bis die Aktion abgeschlossen ist.
+Seitenverschiebungsaktionen werden immer asynchron verarbeitet, sodass der Benutzer die Bearbeitung in der Benutzeroberfläche ungehindert fortsetzen kann.
 
-Liegt die Anzahl der betroffenen Seiten jedoch über einer definierten Grenze, wird die Aktion asynchron verarbeitet, sodass der Benutzer die Inhaltserstellung in der Benutzeroberfläche fortsetzen kann, ohne von der Aktion zum Verschieben oder Umbenennen der Seite aufgehalten zu werden.
+* Der Benutzer muss definieren, wann der asynchrone Vorgang ausgeführt werden soll.
+   * **Jetzt** startet die Ausführung des asynchronen Auftrags sofort.
+   * **Später** erlaubt es dem Benutzer zu definieren, wann der asynchrone Auftrag starten wird.
 
-* Wenn Sie im letzten Schritt oben auf **Verschieben** klicken, prüft AEM die konfigurierte Beschränkung.
-* Wenn die Anzahl der betroffenen Seiten unter der Grenze liegt, wird ein synchroner Vorgang ausgeführt.
-* Wenn die Anzahl der betroffenen Seiten über der Grenze liegt, wird ein asynchroner Vorgang ausgeführt.
-   * Der Benutzer muss definieren, wann der asynchrone Vorgang ausgeführt werden soll.
-      * **Jetzt** startet die Ausführung des asynchronen Auftrags sofort.
-      * **Später** erlaubt es dem Benutzer zu definieren, wann der asynchrone Auftrag starten wird.
-
-        ![Asynchrone Seitenverschiebung](assets/asynchronous-page-move.png)
+  ![Asynchrone Seitenverschiebung](assets/asynchronous-page-move.png)
 
 Der Status asynchroner Aufträge kann im Dashboard [**Status asynchroner Aufträge**](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** überprüft werden.
 

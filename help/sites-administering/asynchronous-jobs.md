@@ -2,9 +2,9 @@
 title: Asynchrone Aufträge
 description: Adobe Experience Manager optimiert die Leistung durch asynchrone Ausführung einiger ressourcenintensiver Aufgaben.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
 workflow-type: tm+mt
-source-wordcount: '895'
+source-wordcount: '800'
 ht-degree: 100%
 
 ---
@@ -19,7 +19,6 @@ Zu diesen Vorgängen gehören:
 * Verschieben vieler Assets oder Assets mit vielen Verweisen
 * Exportieren/Importieren von Asset-Metadaten in großen Mengen
 * Abrufen von Assets, die über dem festgelegten Schwellenwert liegen, aus einer Remote-AEM-Bereitstellung
-* Verschieben von Seiten
 * Ausrollen von Live Copies
 
 Sie können den Status asynchroner Aufträge über das Dashboard **[!UICONTROL Status asynchroner Aufträge]** unter **Globale Navigation** > **Tools** > **Vorgänge** > **Aufträge** anzeigen.
@@ -113,19 +112,6 @@ Wenn die Anzahl der zu verschiebenden Anlagen/Ordner oder Referenzen den Schwell
 1. Legen Sie im Feld **[!UICONTROL Schwellenwert für Assets/Verweise]** den Schwellenwert für Assets/Ordner oder Verweise für die asynchrone Verarbeitung von Verschiebevorgängen fest.
 
    ![Schwellenwert für das Verschieben von Assets](assets/async-move-threshold.png)
-
-1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
-1. Speichern Sie die Änderungen.
-
-### Konfigurieren von asynchronen Seitenverschiebungsvorgängen {#configuring-asynchronous-page-move-operations}
-
-Wenn die Anzahl der Verweise auf die zu verschiebende(n) Seite(n) den Schwellenwert überschreitet, wird der Verschiebungsvorgang asynchron durchgeführt.
-
-1. Klicken Sie in der globalen Navigation auf **[!UICONTROL Tools]** > **[!UICONTROL Vorgänge]** > **[!UICONTROL Web-Konsole]**.
-1. Öffnen Sie in der Web-Konsole die **[!UICONTROL Konfiguration der Verarbeitung asynchroner Seitenverschiebeaufträge]**.
-1. Legen Sie im Feld **[!UICONTROL Schwellenwert für Verweise]** den Schwellenwert für Verweise für asynchrone Verarbeitungen von Seitenverschiebevorgängen fest.
-
-   ![Schwellenwert für Seitenverschiebungen](assets/async-page-move.png)
 
 1. Aktivieren Sie die Option **E-Mail-Benachrichtigung aktivieren**, um E-Mail-Benachrichtigungen für diesen Auftragsstatus zu erhalten. Beispiel: Erfolg, fehlgeschlagen.
 1. Speichern Sie die Änderungen.
