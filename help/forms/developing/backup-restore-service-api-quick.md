@@ -1,18 +1,16 @@
 ---
 title: Sicherungs- und Wiederherstellungs-Service API-Schnellstarts
-description: Schnellstarts zur AEM Forms-Sicherung und -Wiederherstellung ermöglichen effiziente Sicherungs- und Wiederherstellungsprozesse.
-uuid: c3992be2-ceb4-480d-9c8f-71eb0ea66dde
+description: Erfahren Sie, wie AEM Forms-Schnellstarts zur Sicherung und Wiederherstellung der API effiziente Prozesse zur Erstellung und Wiederherstellung von Backups ermöglichen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 813162be-dbf5-4dc1-80ff-e37dbc25ef60
 role: Developer
 exl-id: ae17fd3a-0ba4-4a00-907b-811e500b0e14
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '254'
-ht-degree: 94%
+source-wordcount: '256'
+ht-degree: 93%
 
 ---
 
@@ -26,7 +24,7 @@ Für die API des Sicherungs- und Wiederherstellungs-Service ist Java™ API Quic
 
 [Quick Start: Verlassen des Sicherungsmodus mit Java](backup-restore-service-api-quick.md#quick-start-soap-mode-leaving-backup-mode-using-the-java-api)
 
-AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API ausgeführt werden, und der Verbindungsmodus sollte auf SOAP festgelegt werden.
+AEM Forms-Vorgänge können mit der stark typisierten AEM Forms-API durchgeführt werden und der Verbindungsmodus sollte auf SOAP eingestellt werden.
 
 >[!NOTE]
 >

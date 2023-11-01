@@ -1,32 +1,32 @@
 ---
 title: Formularportal | Umgang mit Benutzerdaten
-description: Verwalten von Benutzerdaten wie Zugriff, Löschen und Datenspeicher im AEM Forms-Portal.
+description: Erfahren Sie mehr über die Verwaltung von Benutzerdaten wie Zugriff, Löschen und Datenspeicher in AEM Forms Portal.
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
-source-git-commit: bb1e1790b8b9e6d6224c62b1f51d8af50a82e975
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 47%
+source-wordcount: '867'
+ht-degree: 42%
 
 ---
 
 # Formularportal | Umgang mit Benutzerdaten {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms] Das Portal bietet Komponenten, mit denen Sie adaptive Formulare, HTML5-Formulare und andere Forms-Assets auf der [!DNL AEM Sites] Seite. Darüber hinaus können Sie es so konfigurieren, dass Entwürfe und übermittelte adaptive Formulare und HTML5-Formulare für einen angemeldeten Benutzer angezeigt werden. Weitere Informationen zum Formularportal finden Sie unter [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md).
+[!DNL AEM Forms] Portal stellt Komponenten bereit, mit denen Sie adaptive Formulare, HTML5-Formulare und andere Forms-Assets auf der [!DNL AEM Sites] Seite. Darüber hinaus können Sie es so konfigurieren, dass Entwürfe und übermittelte adaptive Formulare und HTML5-Formulare für einen angemeldeten Benutzer angezeigt werden. Weitere Informationen zu Forms Portal finden Sie unter [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md).
 
-Wenn ein angemeldeter Benutzer ein adaptives Formular als Entwurf speichert oder sendet, wird es auf den Registerkarten &quot;Entwürfe und Übermittlungen&quot;im Formularportal angezeigt. Die Daten für entworfene oder gesendete Formulare werden im Datenspeicher gespeichert, der für AEM Bereitstellung konfiguriert ist. Die Entwürfe und Übermittlungen anonymer Benutzer werden nicht auf der Forms Portal-Seite angezeigt. Die Daten werden jedoch im konfigurierten Datenspeicher gespeichert. Siehe [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
+Wenn ein angemeldeter Benutzer ein adaptives Formular als Entwurf speichert oder sendet, wird es auf den Registerkarten Entwürfe und Übermittlungen im Forms Portal angezeigt. Die Daten für entworfene oder gesendete Formulare werden im Datenspeicher gespeichert, der für AEM Bereitstellung konfiguriert ist. Die Entwürfe und Übermittlungen anonymer Benutzer werden nicht auf der Forms Portal-Seite angezeigt. Die Daten werden jedoch im konfigurierten Datenspeicher gespeichert. Siehe [Konfigurieren von Speicherdiensten für Entwürfe und Übermittlungen](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Benutzerdaten und Datenspeicher {#user-data-and-data-stores}
 
-Das Forms-Portal speichert Daten für Entwurfs- und gesendete Formulare in den folgenden Szenarien:
+Forms Portal speichert Daten für Entwurfs- und gesendete Formulare in den folgenden Szenarien:
 
 * Die Sendeaktion, die im adaptiven Formular konfiguriert wird, lautet **Formularportal-Sendeaktion**.
-* Für andere Sendeaktionen als die **Formularportal-Sendeaktion** ist die Option **[!UICONTROL Daten im Formularportal speichern]** in den **[!UICONTROL Übermitteln]**-Eigenschaften des adaptiven Formular-Containers aktiviert.
+* Für Sendeaktionen, die nicht **Übermittlungsaktion für Forms Portal**, die **[!UICONTROL Speichern von Daten in Forms Portal]** ist in der **[!UICONTROL Einsendung]** Eigenschaften des Containers für adaptive Formulare.
 
-Für jeden Entwurf und jedes gesendete Formular für angemeldete und anonyme Benutzer speichert das Forms Portal die folgenden Daten:
+Für jeden Entwurf und jedes gesendete Formular für angemeldete und anonyme Benutzer speichert das Forms-Portal die folgenden Daten:
 
 * Formularmetadaten wie Name des Formulars, Formularpfad, Entwurfs- oder Sende-ID, Anlagenpfad und Benutzerdaten-ID
 * Formularanhang als Datenbytes
@@ -97,7 +97,7 @@ Entwurfs- und Sendedaten für alle anonymen Benutzer werden in den allgemeinen K
 
 ### Datenbank {#database}
 
-Wenn AEM zum Speichern von Daten in einer Datenbank konfiguriert ist, werden die Entwurfs- und Sendedaten des Forms Portal in den folgenden Datenbanktabellen sowohl für angemeldete als auch für anonyme Benutzer gespeichert:
+Wenn AEM zum Speichern von Daten in einer Datenbank konfiguriert ist, werden die Entwurfs- und Sendedaten von Forms Portal in den folgenden Datenbanktabellen sowohl für angemeldete als auch für anonyme Benutzer gespeichert:
 
 * Daten
 * Metadaten

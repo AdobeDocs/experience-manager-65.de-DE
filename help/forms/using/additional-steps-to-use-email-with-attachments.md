@@ -1,17 +1,18 @@
 ---
 title: Zusätzliche Schritte zum Abrufen von E-Mails mit Anhängen
-description: Beheben Sie den Fehler, wenn Sie keine E-Mail mit Anhängen für AEM Forms on JEE-Plattformen abrufen können.
+description: Erfahren Sie, wie Sie den Fehler beheben können, wenn Sie keine E-Mail mit Anhängen für AEM Forms on JEE-Plattformen abrufen können.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '235'
-ht-degree: 67%
+source-wordcount: '237'
+ht-degree: 64%
 
 ---
 
 # E-Mail mit Anhängen für AEM Forms kann auf JEE-Plattformen nicht abgerufen werden{#unable-to-get-email-with-attachments}
 
 Das Problem betrifft die folgende Version:
+
 * Experience Manager 6.5 Forms
 
 ## Problem {#issue}
@@ -37,7 +38,7 @@ Benutzenden sind nicht in der Lage, Vorgänge wie „PDF per E-Mail versenden“
 
 1. Installieren Sie `java.mail-1.5.jar` aus Schritt 3. Dieser Schritt startet die Sling-Eigenschaften der JEE-Bereitstellung neu. Warten Sie, bis die installierten Bundles unter `http://<server name>:<port>/lc/system/console/bundles` den Status **Aktiv** anzeigen.
 
-   >Hinweis: Wenn der Status weiterhin **InActive**, Neustart   **JBoss®** aus dem **Dienstkonsole**.
+   >Falls der Status weiterhin **InActive**, Neustart   **JBoss®** aus dem **Dienstkonsole**.
 
 
 1. Installieren Sie die Datei `javax.mail-1.5.6.redhat-1.jar`, die Sie in Schritt 5 heruntergeladen haben.

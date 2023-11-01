@@ -1,16 +1,14 @@
 ---
 title: Forms JEE-Workflows   Verarbeiten von Benutzerdaten
-description: AEM Forms JEE-Workflows zum Entwerfen, Erstellen und Verwalten von Geschäftsprozessen.
-uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
+description: Erfahren Sie, wie Sie mit AEM Forms JEE-Workflows Geschäftsprozesse entwerfen, erstellen und verwalten können.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1370'
-ht-degree: 53%
+source-wordcount: '1388'
+ht-degree: 41%
 
 ---
 
@@ -32,7 +30,7 @@ Wenn ein Prozess ausgelöst wird und im weiteren Verlauf erfasst er Daten zu den
 
 ## Zugreifen auf und Löschen von Benutzerdaten {#access-and-delete-user-data}
 
-Wenn ein Prozess ausgelöst wird, werden eine eindeutige Prozessinstanz-ID und eine Aufruf-ID mit langer Lebensdauer generiert und der Prozessinstanz zugeordnet. Sie können auf Daten für eine Prozessinstanz basierend auf der Aufruf-ID mit langer Lebensdauer zugreifen und diese löschen. Sie können die Aufruf-ID mit langer Lebensdauer einer Prozessinstanz vom Benutzernamen des Prozessinitiators oder der Prozessteilnehmer, die ihre Aufgaben eingereicht haben, ableiten.
+Wenn ein Prozess ausgelöst wird, werden eine eindeutige Prozessinstanz-ID und eine langlebige Aufruf-ID generiert und der Prozessinstanz zugeordnet. Sie können auf Daten für eine Prozessinstanz basierend auf der Aufruf-ID mit langer Lebensdauer zugreifen und diese löschen. Sie können die Aufruf-ID mit langer Lebensdauer einer Prozessinstanz vom Benutzernamen des Prozessinitiators oder der Prozessteilnehmer, die ihre Aufgaben eingereicht haben, ableiten.
 
 Sie können die Prozessinstanz-ID für einen Initiator jedoch in den folgenden Szenarien nicht identifizieren:
 
@@ -42,9 +40,9 @@ Sie können die Prozessinstanz-ID für einen Initiator jedoch in den folgenden S
 
 ### Identifizieren von Prozessinstanz-IDs, wenn der Workflow-Initiator oder -Teilnehmer bekannt ist {#initiator-participant}
 
-Führen Sie die folgenden Schritte aus, um Prozessinstanz-IDs für einen Workflow-Initiator oder einen Teilnehmer zu identifizieren:
+Führen Sie die folgenden Schritte aus, damit Sie Prozessinstanz-IDs für einen Workflow-Initiator oder einen Teilnehmer identifizieren können:
 
-1. Führen Sie den folgenden Befehl in der AEM Forms-Server-Datenbank aus, um die Prinzipal-ID für den Workflow-Initiator oder -Teilnehmer aus der Datenbanktabelle `edcprincipalentity` abzurufen.
+1. Führen Sie den folgenden Befehl in der AEM Forms Server-Datenbank aus, um die Prinzipal-ID für den Workflow-Initiator oder -Teilnehmer aus dem `edcprincipalentity` Datenbanktabelle.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -75,7 +73,7 @@ Führen Sie die folgenden Schritte aus, um Prozessinstanz-IDs für einen Workflo
 
    Für verwaiste Aufgaben oder Aufgaben, bei denen `process_instance_id` 0 (Null) ist, notieren Sie sich die entsprechenden Aufgaben-IDs und lesen Sie [Arbeiten mit verwaisten Aufgaben](#orphan).
 
-1. Befolgen Sie die Anweisungen im Abschnitt [Bereinigen von Benutzerdaten aus Workflow-Instanzen basierend auf Prozessinstanz-IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge), um Benutzerdaten für identifizierte Prozessinstanz-IDs zu löschen.
+1. Befolgen Sie die Anweisungen unter [Bereinigen von Benutzerdaten aus Workflow-Instanzen basierend auf Prozessinstanz-IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) -Abschnitt, damit Sie Benutzerdaten für identifizierte Prozessinstanz-IDs löschen können.
 
 ### Identifizieren Sie Prozessinstanz-IDs, wenn Benutzerdaten in primitiven Variablen gespeichert werden {#primitive}
 
@@ -97,7 +95,7 @@ Führen Sie die folgenden Schritte aus, um zu ermitteln, ob ein Workflow, der Da
 
    >[!NOTE]
    >
-   >Der Wert der Eigenschaft `name`kann komplex sein, wenn der Workflow in Unterordnern innerhalb der Anwendung verschachtelt ist. Stellen Sie sicher, dass Sie den genauen vollständigen Pfad zum Workflow angeben, den Sie aus der Datenbanktabelle `omd_object_type` abrufen können.
+   >Der Wert der `name` -Eigenschaft kann komplex sein, wenn der Workflow in Unterordnern innerhalb der Anwendung verschachtelt ist. Stellen Sie sicher, dass Sie den genauen vollständigen Pfad zum Workflow angeben, den Sie aus der Datenbanktabelle `omd_object_type` abrufen können.
 
 1. Überprüfen Sie das Tabellenschema `tb_<number>`. Die Tabelle enthält Variablen, die Benutzerdaten für den angegebenen Workflow speichern. Die Variablen in der Tabelle entsprechen den Variablen im Workflow.
 
@@ -111,13 +109,13 @@ Führen Sie die folgenden Schritte aus, um zu ermitteln, ob ein Workflow, der Da
 
    Die Abfrage gibt alle Prozessinstanz-IDs zurück, die der angegebenen `user_ID` zugeordnet sind.
 
-1. Folgen Sie den Anweisungen im Abschnitt [Purge user data from workflow instances based on process instance IDs (Bereinigen von Benutzerdaten von Workflow-Instanzen, basierend auf Prozessinstanz-IDs)](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge), um Benutzerdaten für identifizierte Prozessinstanz-IDs zu löschen.
+1. Befolgen Sie die Anweisungen unter [Bereinigen von Benutzerdaten aus Workflow-Instanzen basierend auf Prozessinstanz-IDs](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) -Abschnitt, damit Sie Benutzerdaten für identifizierte Prozessinstanz-IDs löschen können.
 
 ### Bereinigen von Benutzerdaten aus Workflow-Instanzen basierend auf Prozessinstanz-IDs {#purge}
 
 Nachdem Sie die mit einem Benutzer verknüpften Prozessinstanz-IDs identifiziert haben, führen Sie die folgenden Schritte aus, um Benutzerdaten aus den entsprechenden Prozessinstanzen zu löschen.
 
-1. Führen Sie den folgenden Befehl aus, um die langlebige Aufruf-ID und den Status für eine Prozessinstanz aus der Tabelle `tb_process_instance` abzurufen.
+1. Führen Sie den folgenden Befehl aus, damit Sie die langlebige Aufruf-ID und den Status für eine Prozessinstanz aus dem `tb_process_instance` Tabelle.
 
    ```sql
    select long_lived_invocation_id, status from tb_process_instance where id='process_instance_id'
@@ -127,7 +125,7 @@ Nachdem Sie die mit einem Benutzer verknüpften Prozessinstanz-IDs identifiziert
 
 1. Erstellen Sie eine Instanz des öffentlichen `ProcessManager`-Clients (`com.adobe.idp.workflow.client.ProcessManager`) unter Verwendung einer `ServiceClientFactory`-Instanz mit den richtigen Verbindungseinstellungen.
 
-   Weitere Informationen finden Sie in der Java-API-Referenz für [Class ProcessManager](https://helpx.adobe.com/de/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Weitere Informationen finden Sie in der Java™ API-Referenz für [Class ProcessManager](https://helpx.adobe.com/de/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Überprüfen Sie den Status der Workflow-Instanz. Wenn der Status nicht 2 (COMPLETE) oder 4 (TERMINATED) ist, beenden Sie die Instanz zuerst, indem Sie die folgende Methode aufrufen:
 
@@ -137,15 +135,15 @@ Nachdem Sie die mit einem Benutzer verknüpften Prozessinstanz-IDs identifiziert
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   Die Methode `purgeProcessInstance` löscht alle Daten für die angegebene Aufruf-ID vollständig aus der AEM Forms-Serverdatenbank und dem GDS, sofern konfiguriert.
+   Die `purgeProcessInstance` -Methode löscht alle Daten für die angegebene Aufruf-ID vollständig aus der AEM Forms Server-Datenbank und dem globalen Dokumentenspeicher (GDS), sofern konfiguriert.
 
 ### Arbeiten mit verwaisten Aufgaben {#orphan}
 
-Verwaiste Aufgaben sind die Aufgaben, deren Prozess initiiert, aber noch nicht eingereicht wurde. In diesem Fall ist die `process_instance_id` **0** (Null). Daher können Sie Benutzerdaten, die für verwaiste Aufgaben gespeichert wurden, nicht mithilfe von Prozessinstanz-IDs nachverfolgen. Sie können sie jedoch mithilfe der Aufgaben-ID für eine verwaiste Aufgabe nachverfolgen. Sie können die Aufgaben-IDs für einen Benutzer aus der `tb_task` ermitteln, wie in [Prozessinstanz-IDs identifizieren, wenn der Workflow-Initiator oder -Teilnehmer bekannt ist](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Verwaiste Aufgaben sind die Aufgaben, deren Prozess initiiert, aber noch nicht eingereicht wurde. In diesem Fall wird die `process_instance_id` is **0** (Null). Daher können Sie Benutzerdaten, die für verwaiste Aufgaben gespeichert wurden, nicht mithilfe von Prozessinstanz-IDs nachverfolgen. Sie können sie jedoch mithilfe der Aufgaben-ID für eine verwaiste Aufgabe nachverfolgen. Sie können die Aufgaben-IDs für einen Benutzer aus der `tb_task` ermitteln, wie in [Prozessinstanz-IDs identifizieren, wenn der Workflow-Initiator oder -Teilnehmer bekannt ist](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
 Nachdem Sie über die Aufgaben-IDs verfügen, führen Sie die folgenden Schritte aus, um die zugehörigen Dateien und Daten mit einer verwaisten Aufgabe aus dem GDS und der Datenbank zu bereinigen.
 
-1. Führen Sie den folgenden Befehl in der AEM Forms-Serverdatenbank aus, um IDs für die identifizierten Aufgaben-IDs abzurufen.
+1. Führen Sie den folgenden Befehl in der AEM Forms Server-Datenbank aus, damit Sie IDs für die identifizierten Aufgaben-IDs abrufen können.
 
    ```sql
    select id from tb_form_data where task_id=<task_id>
@@ -185,7 +183,7 @@ Nachdem Sie über die Aufgaben-IDs verfügen, führen Sie die folgenden Schritte
       delete from tb_dm_deletion where sessionid=<session_id>
       ```
 
-1. Führen Sie die folgenden Befehle aus, um Daten für Aufgaben-IDs aus der AEM Forms-Serverdatenbank zu löschen:
+1. Führen Sie die folgenden Befehle aus, damit Sie Daten für Aufgaben-IDs aus der AEM Forms Server-Datenbank löschen können:
 
    ```sql
    delete from tb_task_acl where task_id=<task_id>

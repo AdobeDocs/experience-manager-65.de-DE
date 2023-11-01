@@ -1,15 +1,13 @@
 ---
 title: Correspondence Management | Umgang mit Benutzerdaten
-description: Correspondence Management und Umgang mit Benutzerdaten in der AEM Forms-Umgebung.
-uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
+description: Erfahren Sie mehr über Correspondence Management und die Verarbeitung von Benutzerdaten in einer Adobe Experience Manager Forms-Umgebung.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '550'
 ht-degree: 45%
 
 ---
@@ -73,7 +71,7 @@ Sie können in den konfigurierten Datenspeichern auf Entwürfe und übermittelte
 
 Correspondence Management bietet APIs, mit denen Sie Entwurfs- und gesendete Briefinstanzen finden und darauf zugreifen können. Mithilfe der APIs können Sie Briefinstanzen mithilfe der Briefinstanz-ID oder des Benutzers, der die Korrespondenz gespeichert oder gesendet hat, suchen und öffnen. Weitere Informationen finden Sie unter [APIs zum Zugreifen auf Briefinstanzen](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-Alternativ können Sie mit CRX DELite zur Briefinstanz im AEM Repository navigieren. Siehe [Benutzerdaten und Datenspeicher](/help/forms/using/correspondence-management-handling-user-data.md#data) für Informationen zu gespeicherten Daten und zum Repository-Speicherort.
+Alternativ können Sie über CRXDE Lite zur Briefinstanz im AEM Repository navigieren. Siehe [Benutzerdaten und Datenspeicher](/help/forms/using/correspondence-management-handling-user-data.md#data) für Informationen zu gespeicherten Daten und zum Repository-Speicherort.
 
 ### Benutzerdaten löschen {#delete-user-data}
 

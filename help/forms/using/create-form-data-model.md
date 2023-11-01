@@ -1,16 +1,14 @@
 ---
 title: "Schulung: Formulardatenmodell erstellen "
-description: Konfigurieren Sie MySQL als Datenquelle, erstellen Sie ein Formulardatenmodell (FDM), konfigurieren Sie es und testen Sie es für AEM Forms.
-uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
+description: Erfahren Sie, wie Sie MySQL als Datenquelle konfigurieren, ein Formulardatenmodell (FDM) erstellen, konfigurieren und für AEM Forms Test.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1524'
-ht-degree: 96%
+source-wordcount: '1528'
+ht-degree: 84%
 
 ---
 
@@ -18,11 +16,11 @@ ht-degree: 96%
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-Dieses Tutorial ist ein Teil der Serie [Erstellen Ihres ersten adaptives Formulars](../../forms/using/create-your-first-adaptive-form.md). Es wird empfohlen, die Serie in chronologischer Reihenfolge zu durchlaufen, um den vollständigen Anwendungsfall des Tutorials zu verstehen, durchzuführen und zu demonstrieren.
+Dieses Tutorial ist ein Teil der Serie [Erstellen Ihres ersten adaptives Formulars](../../forms/using/create-your-first-adaptive-form.md). Adobe Systems empfiehlt, dass Sie die Reihe in chronologischer Sequenz folgen, um den vollständigen Anleitung Anwendungsfall zu verstehen, durchzuführen und zu demonstrieren.
 
 ## Über das Tutorial {#about-the-tutorial}
 
-AEM [!DNL Forms] Mit dem Datenintegrationsmodul können Sie ein Formulardatenmodell aus unterschiedlichen Backend-Datenquellen erstellen, z. B. AEM Benutzerprofil, RESTful-Webdienste, SOAP-basierte Webdienste, OData-Dienste und relationale Datenbanken. Sie können Datenmodellobjekte und -dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekt-Eigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
+[!DNL Forms] AEM Datenintegrations-Modul können Sie ein Formulardatenmodell aus unterschiedlichen Back-End-Datenquellen erstellen, z. B. AEM User Profil, RESTful-Webdiensten, SOAP-basierten Webdiensten, OData-Diensten und relationalen Datenbanken. Sie können Datenmodellobjekte und -dienste in einem Formulardatenmodell konfigurieren und einem adaptiven Formular zuordnen. Adaptive Formularfelder sind an Datenmodellobjekt-Eigenschaften gebunden. Mit den Diensten können Sie das adaptive Formular vorab befüllen und gesendete Formulardaten zurück an das Datenmodellobjekt schreiben.
 
 Weitere Informationen zum Formulardatenmodell und zur Formulardatenintegration finden Sie unter [Datenintegration für AEM Forms](../../forms/using/data-integration.md).
 
@@ -49,7 +47,7 @@ Bevor Sie beginnen, stellen Sie Folgendes sicher:
 
 ## Schritt 1: Konfigurieren der MySQL-Datenbank als Datenquelle {#config-database}
 
-Sie können verschiedene Arten von Datenquellen konfigurieren, um ein Formulardatenmodell zu erstellen. Für dieses Tutorial konfigurieren wir die MySQL-Datenbank, die Sie konfiguriert und mit Beispieldaten befüllt haben. Informationen zu anderen unterstützten Datenquellen und deren Konfiguration finden Sie unter [AEM Forms-Datenintegration](../../forms/using/data-integration.md).
+Sie können verschiedene Arten von Datenquellen konfigurieren, um ein Formulardatenmodell zu erstellen. Zu diesem Anleitung konfigurieren Sie die MySQL-Datenbank, die Sie konfiguriert und mit Beispieldaten aufgefüllt haben. Informationen zu anderen unterstützten Datenquellen und deren Konfiguration finden Sie unter [AEM Forms-Datenintegration](../../forms/using/data-integration.md).
 
 Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
@@ -70,19 +68,19 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
       * **Datenquellenname:** Sie können einen beliebigen Namen angeben. beispielsweise **WeRetailMySQL**.
       * **Name der DataSource-Diensteigenschaft**: Geben Sie den Namen der Diensteigenschaft an, die den DataSource-Namen enthält. Er wird beim Registrieren der Datenquelleninstanz als OSGi-Dienst angegeben. Zum Beispiel: **datasource.name**.
-      * **JDBC-Treiberklasse**: Geben Sie den Java-Klassennamen des JDBC-Treibers an. Geben Sie für die [!DNL MySQL]-Datenbank **com.mysql.jdbc.Driver** an.
-      * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. Für eine [!DNL MySQL]-Datenbank, die auf Port 3306 und nach dem Schema WeRetail ausgeführt wird, lautet die URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **JDBC-Treiberklasse**: Geben Sie den Java-Klassennamen™ des JDBC-Treibers an. Geben Sie für die [!DNL MySQL]-Datenbank **com.mysql.jdbc.Driver** an.
+      * **JDBC-Verbindungs-URI**: Geben Sie die Verbindungs-URL der Datenbank an. Für [!DNL MySQL] Datenbanken, die auf portieren 3306 und Schema `weretail`ausgeführt werden, lautet die URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Wenn sich die [!DNL MySQL]-Datenbank hinter einer Firewall befindet, ist der Datenbank-Host-Name kein öffentliches DNS. Die IP-Adresse der Datenbank muss der */etc/hosts*-Datei des AEM-Host-Computers hinzugefügt werden.
+      > Wenn sich die [!DNL MySQL]-Datenbank hinter einer Firewall befindet, ist der Datenbank-Host-Name kein öffentliches DNS. Die IP-Adresse der Datenbank muss in der *Datei /etc/hosts* des AEM Host Computers hinzugefügt werden.
 
       * **Benutzername:** Benutzername der Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
       * **Kennwort:** Kennwort für die Datenbank. Es ist erforderlich, den JDBC-Treiber zu aktivieren, um eine Verbindung mit der Datenbank herzustellen.
 
       >[!NOTE]
       >
-      >AEM Forms unterstützt keine NT-Authentifizierung für [!DNL MySQL]. Wechseln Sie zur AEM-Web-Konsole unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen Sie nach „Apache Sling Connection Pooled Datasource“. Legen Sie für die Eigenschaft „JDBC connection URI“ den Wert „integratedSecurity“ auf „False“ fest und verwenden Sie den erstellten Benutzernamen und das Kennwort, um eine Verbindung mit der [!DNL MySQL]-Datenbank herzustellen.
+      >AEM Forms unterstützt keine NT-Authentifizierung für [!DNL MySQL]. OK auf AEM Webkonsole unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) und suchen &quot;Apache Sling Verbindung Pooled Datasource&quot;. Legen Sie für Eigenschaft &quot;JDBC connection URI&quot; den Wert von &quot;integratedSecurity&quot; auf &quot;False&quot; fest, und verwenden Sie den erstellten Benutzernamen und Kennwort zum Herstellen einer Verbindung mit [!DNL MySQL] der Datenbank.
 
       * **Test on Borrow**: Aktivieren Sie die Option **[!UICONTROL Test on Borrow]**.
       * **Test on Return:** Aktivieren Sie die Option **[!UICONTROL Test on Return.]**
@@ -97,7 +95,7 @@ Gehen Sie folgendermaßen vor, um Ihre [!DNL MySQL]-Datenbank zu konfigurieren:
 
 ## Schritt 2: Erstellen eines Formulardatenmodells {#create-fdm}
 
-AEM [!DNL Forms] bietet eine intuitive Benutzeroberfläche zum [Erstellen eines Formulardatenmodells](data-integration.md) aus konfigurierten Datenquellen. Sie können mehrere Datenquellen in einem Formulardatenmodell verwenden. Für unseren Anwendungsfall verwenden wir die konfigurierte [!DNL MySQL]-Datenquelle.
+AEM [!DNL Forms] bietet eine intuitive Benutzeroberfläche zum [Erstellen eines Formulardatenmodells](data-integration.md) aus konfigurierten Datenquellen. Sie können mehrere Datenquellen in einem Formulardatenmodell verwenden. Für diesen Anwendungsfall können Sie die konfigurierte [!DNL MySQL] Datenquelle verwenden.
 
 Gehen Sie folgendermaßen vor, um ein Formulardatenmodell zu erstellen:
 
@@ -126,7 +124,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Erweitern Sie den WeRailMySQL-Datenquellenbaum. Wählen Sie die folgenden Datenmodellobjekte und -services aus dem Schema **weretail** > **customerdetails** aus, um das Datenmodell zu bilden:
+1. Erweitern Sie den WeRailMySQL-Datenquellenbaum. Wählen Sie die folgenden Datenmodellobjekte und -dienste aus der Schema von weretail **>** customerdetails **aus**, damit Sie ein Datenmodell erstellen können:
 
    * **Datenmodellobjekte**:
 
@@ -179,7 +177,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
       * **Titel**: Geben Sie den Titel des Dienstes an. Zum Beispiel: Versandadresse abrufen.
       * **Beschreibung**: Geben Sie eine Beschreibung an, die eine detaillierte Funktionsweise des Dienstes enthält. Beispiel:
 
-        Dieser Service ruft die Lieferadresse und andere Kundendaten aus der [!DNL MySQL]-Datenbank ab.
+        Dieser Dienst ruft die Lieferadresse und andere Kundendaten aus der [!DNL MySQL] Datenbank ab
 
       * **Ausgabemodellobjekt**: Wählen Sie ein Schema mit Kundendaten. Beispiel:
 
@@ -207,7 +205,7 @@ Gehen Sie wie folgt vor, um das Formulardatenmodell zu konfigurieren:
 
       * **Ausgabetyp**: Wählen Sie **BOOLEAN**.
 
-      * **Argumente**: Wählen Sie das Argument mit dem Namen **ID** und **customerdetails**.
+      * **Argumente**: Wählen Sie den Argumentnamen **, die ID und** die **Kundendetails** aus.
 
       Tippen Sie auf **[!UICONTROL Fertig]**. Der Service **[!UICONTROL update]** zur Aktualisierung der Kundendaten in der [!DNL MySQL]-Datenbank ist konfiguriert.
 
@@ -235,6 +233,6 @@ Führen Sie folgende Schritte aus, um den Test durchzuführen:
 
    ![test-write-model](assets/test-write-model.png)
 
-   Wenn Sie nun den Lesemodelldienst für die ID 7107215 erneut testen, werden die aktualisierten Kundendetails abgerufen und angezeigt (siehe unten).
+   Wenn Sie nun den Lesemodelldienst für die ID 7107215 erneut Test, werden die aktualisierten Kundendetails wie unten dargestellt abgerufen und angezeigt.
 
    ![read-updated](assets/read-updated.png)

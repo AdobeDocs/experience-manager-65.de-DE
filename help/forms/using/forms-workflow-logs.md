@@ -1,23 +1,21 @@
 ---
 title: Protokollierung in AEM Forms-Workflows
-description: Debuggen Sie AEM Forms-Workflow-Probleme und aktivieren Sie die Debug-Protokollierung für AEM Forms-Workflows, um die Protokolle anzuzeigen.
-uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
+description: Erfahren Sie, wie Sie AEM Forms-Workflow-Probleme beheben und die Debug-Protokollierung für AEM Forms-Workflows aktivieren, um die Protokolle anzuzeigen.
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '288'
-ht-degree: 94%
+source-wordcount: '292'
+ht-degree: 82%
 
 ---
 
 # Protokollierung in AEM Forms-Workflows{#logging-in-aem-forms-workflows}
 
-Die Workflow-Schritte von Forms enthalten detaillierte Protokolle, mit denen Sie Probleme im Zusammenhang mit Workflows bequem beheben können. Aktivieren Sie die Debug-Protokollierung für AEM Forms-Workflows, um die Protokolle anzuzeigen.
+Forms Workflow-Schritte bieten detaillierte Protokolle, um Probleme mit Workflows bequem zu beheben. Aktivieren Sie die Debug-Protokollierung für AEM Forms-Workflows, um die Protokolle anzuzeigen.
 
 Standardmäßig sind alle Protokollierungsinformationen in der Datei **error.log** im Verzeichnis */crx-repository/logs/* verfügbar.
 
@@ -76,7 +74,7 @@ Wenn eine Ausnahme vorliegt, können Sie die vollständige Stapelablaufverfolgun
 
 ## Aktivieren der Debug-Protokollierung für AEM Forms-Workflows {#enable-debug-logging-for-aem-forms-workflows}
 
-Führen Sie die folgenden Schritte aus, um die Debug-Protokollierung für AEM Forms-Workflows zu aktivieren:
+Führen Sie die folgenden Schritte aus, damit Sie die Debug-Protokollierung für AEM Forms-Workflows aktivieren können:
 
 1. Wechseln Sie zum Konfigurations-Manager der AEM-Web-Konsole unter:
 

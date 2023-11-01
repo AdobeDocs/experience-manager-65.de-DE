@@ -1,19 +1,17 @@
 ---
 title: Funktionsunterschiede zwischen HTML5- und PDF-Formularen
-description: Erfahren Sie mehr über die Unterschiede zwischen HTML5-Formularen und PDF forms.
-uuid: 6ddee197-d108-4897-9976-77d115a06504
+description: Erfahren Sie mehr über die Funktionsunterschiede zwischen HTML5-Formularen und PDF forms.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '446'
-ht-degree: 41%
+source-wordcount: '447'
+ht-degree: 38%
 
 ---
 
@@ -50,7 +48,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5-Formulare und 
   </tr>
   <tr>
    <td>Seitenumbruch<br /> </td>
-   <td><p>Ein HTML5-Formular ist in Bereiche und Felder unterteilt, damit es ähnlich wie PDF forms aussieht. Die Seitengröße wird dynamisch berechnet. Wenn der gesamte Seiteninhalt in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, wird die leere Seite ausgeblendet und zwischen den5-Seiten wird kein leerer Leerraum (Leerraum) angezeigt.</p> <p>Wenn Datenzusammenführung oder Skripte Inhalte zu einer Seite hinzufügen, wird die Länge der Seite erweitert, um den neu hinzugefügten Inhalt aufzunehmen. Dem Formular werden keine neuen Seiten hinzugefügt, um den neu hinzugefügten Inhalt aufzunehmen. </p> <p><strong>Hinweis:</strong> Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, bleibt die leere Seite zwischen der ersten und zweiten, nicht jedoch zwischen den weiteren Seiten sichtbar.</p> </td>
+   <td><p>Ein HTML5-Formular ist in Bereiche und Felder unterteilt, damit es ähnlich wie PDF forms aussieht. Die Seitengröße wird dynamisch berechnet. Wenn der gesamte Seiteninhalt in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, wird die leere Seite ausgeblendet. Zwischen den Seiten über und unter der leeren Seite wird kein leeres Leerzeichen (Leerzeichen) angezeigt.</p> <p>Wenn Datenzusammenführung oder Skripte Inhalte zu einer Seite hinzufügen, wird die Länge der Seite erweitert, um den neu hinzugefügten Inhalt aufzunehmen. Dem Formular werden keine neuen Seiten hinzugefügt, um den neu hinzugefügten Inhalt aufzunehmen. </p> <p><strong>Hinweis:</strong> Wenn der gesamte Inhalt einer Seite in einem HTML5-Formular gelöscht oder als ausgeblendet markiert wird, bleibt die leere Seite zwischen der ersten und zweiten, nicht jedoch zwischen den weiteren Seiten sichtbar.</p> </td>
    <td>Paginierung in PDF hängt vom zusammengeführten Dateninhalt oder dem Benutzerinhalt ab. Abhängig davon wird die Seitenanzahl erhöht bzw. verringert.</td>
   </tr>
   <tr>
@@ -65,7 +63,7 @@ Die folgende Tabelle zeigt die Funktionsunterstützung für HTML5-Formulare und 
   </tr>
   <tr>
    <td>XFA-Skript-API</td>
-   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. Eine detaillierte Liste der unterstützten Konstrukte finden Sie unter <a href="/help/forms/using/scripting-support.md">Unterstützung der Skripterstellung</a>.</td>
+   <td>Unterstützt die am häufigsten verwendeten XFA-Skriptkonstrukte. Eine detaillierte Liste der unterstützten Konstrukte finden Sie unter <a href="/help/forms/using/scripting-support.md">Skriptunterstützung</a>.</td>
    <td>Unterstützt alle XFA-Skriptkonstrukte.</td>
   </tr>
   <tr>

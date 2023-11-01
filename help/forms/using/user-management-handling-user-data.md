@@ -1,22 +1,20 @@
 ---
 title: Forms-Benutzerverwaltung | Umgang mit Benutzerdaten
-description: Die AEM Forms JEE-Benutzerverwaltungskomponente ermöglicht die Erstellung, Autorisierung und Verwaltung von Benutzern für den Zugriff auf AEM Forms.
-uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
+description: Erfahren Sie, wie Sie mit der AEM Forms JEE User Management-Komponente Benutzer erstellen, autorisieren und verwalten können, die Zugriff auf AEM Forms benötigen.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '895'
-ht-degree: 56%
+source-wordcount: '904'
+ht-degree: 46%
 
 ---
 
 # Forms-Benutzerverwaltung | Umgang mit Benutzerdaten {#forms-user-management-handling-user-data}
 
-Die Benutzerverwaltung ist eine AEM Forms JEE-Komponente, mit der AEM Forms-Benutzer für den Zugriff auf AEM Forms erstellt, verwaltet und autorisiert werden können. Benutzerverwaltung verwendet Domains als Ordner zum Abrufen von Benutzerinformationen. Die folgenden Domänentypen werden unterstützt:
+Die Benutzerverwaltung ist eine AEM Forms JEE-Komponente, mit der AEM Forms-Benutzer für den Zugriff auf AEM Forms erstellt, verwaltet und autorisiert werden können. Die Benutzerverwaltung verwendet Domänen als Ordner zum Abrufen von Benutzerinformationen. Die folgenden Domänentypen werden unterstützt:
 
 **Lokale Domains**: Eine lokale Domain ist nicht mit einem Speichersystem eines Drittanbieters verbunden. Benutzer und Gruppen werden stattdessen lokal erstellt und befinden sich bei diesem Domain-Typ in der User Management-Datenbank. Kennwörter werden lokal gespeichert und die Authentifizierung erfolgt über eine lokale Datenbank.
 
@@ -28,7 +26,7 @@ Die Benutzerverwaltung ist eine AEM Forms JEE-Komponente, mit der AEM Forms-Benu
 
 ## Benutzerdaten und Datenspeicher {#user-data-and-data-stores}
 
-User Management speichert Benutzerdaten in einer Datenbank, z. B. My Sql, Oracle, MS SQL Server und IBM DB2. Darüber hinaus wird jeder Benutzer, der sich mindestens einmal in Forms-Programmen als AEM-Autor auf `https://'[server]:[port]'lc` angemeldet hat, im AEM-Repository erstellt. Daher wird die Benutzerverwaltung in den folgenden Datenspeichern gespeichert:
+Benutzerverwaltung speichert Benutzerdaten in einer Datenbank, z. B. My Sql, Oracle, MS® SQL Server und IBM® DB2®. Darüber hinaus wird jeder Benutzer, der sich mindestens einmal in Forms-Programmen als AEM-Autor auf `https://'[server]:[port]'lc` angemeldet hat, im AEM-Repository erstellt. Daher wird die Benutzerverwaltung in den folgenden Datenspeichern gespeichert:
 
 * Datenbank
 * AEM Repository
@@ -58,28 +56,28 @@ Benutzerverwaltung speichert Benutzerdaten in den folgenden Datenbanktabellen:
   </tr>
   <tr>
    <td><p><code>EdcPrincipalLocalAccountEntity</code></p> <p><code class="code">EdcPrincipalLocalAccount
-       </code>(Oracle- und MS SQL-Datenbanken)</p> </td>
+       </code>(Oracle und MS® SQL-Datenbanken)</p> </td>
    <td>Speichert Daten nur für lokale Benutzer.</td>
   </tr>
   <tr>
    <td><p><code>EdcPrincipalEmailAliasEntity</code></p> <p><code class="code">EdcPrincipalEmailAliasEn
-       </code>(Oracle- und MS SQL-Datenbanken)</p> </td>
+       </code>(Oracle und MS® SQL-Datenbanken)</p> </td>
    <td>Enthält Einträge aller Benutzer aus lokalen, Unternehmens- und Hybrid-Domains. Es enthält Benutzer-E-Mail-IDs.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (Oracle- und MS SQL-Datenbanken)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (Oracle und MS® SQL-Datenbanken)</p> </td>
    <td>Speichert die Zuordnung zwischen Benutzern und Gruppen.</td>
   </tr>
   <tr>
    <td><code>EdcPrincipalRoleEntity</code></td>
-   <td>Speichert die Zuordnung zwischen Rollen und Prinzipal für Benutzer und Gruppen.</td>
+   <td>Speichert die Zuordnung zwischen Rollen und Prinzipalen für Benutzer und Gruppen.</td>
   </tr>
   <tr>
    <td><code>EdcPriResPrmEntity</code></td>
    <td>Speichert die Zuordnung zwischen Prinzipal und Berechtigungen für Benutzer und Gruppen.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (Oracle- und MS SQL-Datenbanken)</p> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (Oracle und MS® SQL-Datenbanken)</p> </td>
    <td>Speichert alte und neue Attributwerte, die einem Prinzipal entsprechen.<br /> </td>
   </tr>
  </tbody>
@@ -107,19 +105,19 @@ Sobald Sie die Prinzipal-ID kennen, können Sie die Benutzerdaten exportieren od
 
 #### Benutzerdaten exportieren {#export-user-data}
 
-Führen Sie die folgenden Datenbankbefehle aus, um Benutzerverwaltungsdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren. Ersetzen Sie im Befehl `select` die `<principal_id>` durch die Prinzipal-ID des Benutzers, dessen Daten Sie exportieren möchten.
+Führen Sie die folgenden Datenbankbefehle aus, damit Sie Benutzerverwaltungsdaten für eine Prinzipal-ID aus Datenbanktabellen exportieren können. Ersetzen Sie `<principal_id>` im Befehl `select` durch die Haupt-ID des Benutzers, dessen Daten Sie exportieren möchten.
 
 >[!NOTE]
 >
->Die folgenden Befehle verwenden Datenbanktabellennamen in My SQL- und IBM DB2-Datenbanken. Ersetzen Sie beim Ausführen dieser Befehle auf Oracle- und MS SQL-Datenbanken die folgenden Tabellennamen in den Befehlen:
+>Die folgenden Befehle verwenden Datenbanktabellennamen in My SQL- und IBM® DB2®-Datenbanken. Ersetzen Sie beim Ausführen dieser Befehle auf Oracle- und MS® SQL-Datenbanken die folgenden Tabellennamen in den Befehlen:
 >
->* Ersetzen Sie `EdcPrincipalLocalAccountEntity` durch `EdcPrincipalLocalAccount`.
+* Ersetzen Sie `EdcPrincipalLocalAccountEntity` durch `EdcPrincipalLocalAccount`.
 >
->* Ersetzen Sie `EdcPrincipalEmailAliasEntity` durch `EdcPrincipalEmailAliasEn`.
+* Ersetzen Sie `EdcPrincipalEmailAliasEntity` durch `EdcPrincipalEmailAliasEn`.
 >
->* Ersetzen Sie `EdcPrincipalMappingEntity` durch `EdcPrincipalMappingEntit`.
+* Ersetzen Sie `EdcPrincipalMappingEntity` durch `EdcPrincipalMappingEntit`.
 >
->* Ersetzen Sie `EdcPrincipalGrpCtmntEntity` durch `EdcPrincipalGrpCtmntEnti`
+* Ersetzen Sie `EdcPrincipalGrpCtmntEntity` durch `EdcPrincipalGrpCtmntEnti`
 >
 
 ```sql
@@ -146,7 +144,7 @@ Gehen Sie wie folgt vor, um Benutzerverwaltungsdaten für eine Prinzipal-ID aus 
 
 1. Löschen Sie gegebenenfalls Benutzerdaten aus AEM Repository, wie unter [Benutzerdaten löschen](/help/forms/using/user-management-handling-user-data.md#delete-aem).
 1. Fahren Sie den AEM Forms-Server herunter.
-1. Führen Sie die folgenden Datenbankbefehle aus, um Benutzerverwaltungsdaten für eine Prinzipal-ID aus Datenbanktabellen zu exportieren. Ersetzen Sie im Befehl `Delete` die `<principal_id>` durch die Prinzipal-ID des Benutzers, dessen Daten Sie löschen wollen.
+1. Führen Sie die folgenden Datenbankbefehle aus, damit Sie Benutzerverwaltungsdaten für eine Prinzipal-ID aus Datenbanktabellen löschen können. Ersetzen Sie im Befehl `Delete` den Wert `<principal_id>` durch die Haupt-ID des Benutzers, dessen Daten Sie löschen möchten.
 
    ```sql
    Delete from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (select id from EdcPrincipalEntity where id='<principal_id>'));
@@ -174,7 +172,7 @@ Forms JEE-Benutzer haben ihre Daten im AEM Repository, wenn sie mindestens eine 
 
 #### Zugreifen auf Benutzerdaten {#access-user-data}
 
-Um die im AEM-Repository erstellten Benutzer anzuzeigen, melden Sie sich bei `https://'[server]:[port]'/lc/useradmin` mit AEM-Administratorrechten an. Beachten Sie, dass `server` und `port` in der URL die der AEM-Author-Instanz sind. Hier können Sie nach Benutzern mit ihrem Benutzernamen suchen. Doppelklicken Sie auf einen Benutzer, um Informationen wie Eigenschaften, Berechtigungen und Gruppen für den Benutzer anzuzeigen. Die Eigenschaft `Path`für einen Benutzer gibt den Pfad zum Benutzerknoten an, der im AEM-Repository erstellt wurde.
+Um die im AEM-Repository erstellten Benutzer anzuzeigen, melden Sie sich bei `https://'[server]:[port]'/lc/useradmin` mit AEM-Administratorrechten an. Beachten Sie, dass `server` und `port` in der URL die der AEM-Author-Instanz sind. Hier können Sie nach Benutzern mit ihrem Benutzernamen suchen. Doppelklicken Sie auf einen Benutzer, damit Sie Informationen wie Eigenschaften, Berechtigungen und Gruppen für den Benutzer anzeigen können. Die Eigenschaft `Path`für einen Benutzer gibt den Pfad zum Benutzerknoten an, der im AEM-Repository erstellt wurde.
 
 #### Benutzerdaten löschen {#delete-aem}
 
@@ -182,5 +180,5 @@ So löschen Sie einen Benutzer:
 
 1. Navigieren Sie zu `https://'[server]:[port]'/lc/useradmin` mit AEM Administratorberechtigungen.
 1. Suchen Sie nach einem Benutzer und doppelklicken Sie auf den Benutzernamen, um die Benutzereigenschaften zu öffnen. Kopieren Sie die `Path`-Eigenschaft.
-1. Wechseln Sie zu AEM CRX DELite unter `https://'[server]:[port]'/lc/crx/de/index.jsp` und navigieren Sie zum Benutzerpfad oder suchen Sie ihn.
+1. Gehen Sie zu AEM CRXDE Lite unter `https://'[server]:[port]'/lc/crx/de/index.jsp` und navigieren oder suchen Sie den Benutzerpfad.
 1. Löschen Sie den Pfad und klicken Sie auf **[!UICONTROL Alle speichern]**, um dauerhaft den Benutzer vom AEM-Repository zu löschen.

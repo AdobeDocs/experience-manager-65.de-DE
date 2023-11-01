@@ -1,18 +1,16 @@
 ---
 title: Anpassen von Vorlagen für Forms Portal-Komponenten
-description: Die Benutzeroberfläche von AEM Forms ermöglicht es Benutzern, Formularen Metadaten hinzuzufügen. Benutzerdefinierte Metadaten verbessern das Benutzererlebnis bei der Formularauflistung und der Suche nach Ihrer Organisation.
-uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
+description: Erfahren Sie, wie Benutzer über die AEM Forms-Benutzeroberfläche Metadaten zu Formularen hinzufügen können. Benutzerdefinierte Metadaten verbessern das Benutzererlebnis bei der Formularauflistung und -suche.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1243'
-ht-degree: 66%
+source-wordcount: '1250'
+ht-degree: 58%
 
 ---
 
@@ -30,7 +28,7 @@ In der Benutzeroberfläche von AEM Forms können Sie jedem beliebigen Formular M
 
 Mit Forms Portal können Sie benutzerdefinierte Metadaten in Formularlisten verwenden. Beim Erstellen benutzerdefinierter Vorlagen für Assets können Sie das Layout ändern und benutzerdefinierte Metadaten mit Ihrem CSS-Stilsatz verwenden.
 
-Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage für verschiedene Forms Portal-Komponenten zu erstellen.
+Führen Sie die folgenden Schritte aus, damit Sie eine benutzerdefinierte Vorlage für verschiedene Forms Portal-Komponenten erstellen können.
 
 ## Benutzerdefinierte Vorlage erstellen {#creating-a-nbsp-custom-template}
 
@@ -55,7 +53,7 @@ Führen Sie die folgenden Schritte aus, um eine benutzerdefinierte Vorlage für 
    Die folgende Abbildung zeigt die Konfiguration der Komponente „Search &amp; Lister“.
    ![Erstellen eines sling:Folder](assets/1.png)
 
-1. Erstellen Sie eine Datei template.html in diesem Ordner, die als benutzerdefinierte Vorlage dienen soll.
+1. Erstellen Sie eine Datei template.html in diesem Ordner, damit sie als benutzerdefinierte Vorlage dienen kann.
 1. Schreiben Sie die benutzerdefinierte Vorlage und verwenden Sie benutzerdefinierte Metadaten wie unten beschrieben.
 
 ## Arbeitsbeispiel {#working-example}
@@ -92,7 +90,7 @@ Um einen wiederholbaren Eintrag einzuschließen, konfigurieren Sie den Wert des 
 
 Jeder Platzhalter verfügt über einen exklusiven OOTB-Metadatensatz. Um die benutzerdefinierten Metadaten an einer bestimmten Position im Formular anzuzeigen, fügen Sie die **${metadata_prop}-Eigenschaft** an der entsprechenden Position hinzu.
 
-*Im Beispiel wird die Metadaten-Eigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **path**in der genannten Weise verwendet.*
+*In diesem Beispiel wird die Metadateneigenschaft in mehreren Instanzen verwendet. Sie wird z. B. bei **description**,**name**,**formUrl**,**htmlStyle**,**pdfUrl**,**pdfStyle**und **path**in der genannten Weise verwendet.*
 
 ## Vordefinierte Metadaten {#out-of-the-box-metadata}
 
@@ -120,8 +118,8 @@ Unterstützung für Lokalisierung, Sortierung und Verwendung von Konfigurationse
 1. **Lokalisierungsunterstützung**: Zur Lokalisierung von beliebigem statischem Text verwenden Sie das Attribut `${localize-YOUR_TEXT}` und stellen Sie den lokalisierten Wert bereit, sofern er nicht bereits vorhanden ist.
    *Im genannten Beispiel werden die Attribute `${localize-Apply}` und `${localize-Download}` verwendet, um den Text „Apply“ und „Download“ zu lokalisieren.*
 
-1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um Sortierung in ein Tabellenlayout einzufügen, fügen Sie dem jeweiligen Tabellen-Header das Attribut „data-sortKey“ hinzu. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
-So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header „data-sortKey“ „title“. Klicken Sie auf die Überschrift, um die Werte in einer bestimmten Spalte zu sortieren.
+1. **Unterstützung für die Sortierung**: Klicken Sie auf das HTML-Element, um die Suchergebnisse zu sortieren. Um die Sortierung in ein Tabellenlayout zu implementieren, fügen Sie das Attribut &quot;data-sortKey&quot; in die jeweilige Tabellenüberschrift ein. Fügen Sie außerdem seinen Wert als die Metadaten hinzu, nach denen Sie sortieren möchten.
+So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header „data-sortKey“ „title“. Klicken Sie auf die Überschrift, damit Sie die Werte in einer bestimmten Spalte sortieren können.
 
 1. **Verwenden von Konfigurationseigenschaften**: Die Komponente „Search &amp; Lister“ verfügt über mehrere Konfigurationen, die Sie in der Benutzeroberfläche verwenden können. Verwenden Sie z. B. das Attribut `${config-htmlLinkText}`, um im Bearbeitungsdialogfeld gespeicherten HTML-QuickInfo-Text anzuzeigen.  **Verwenden Sie analog dazu für PDF-QuickInfo-Text das Attribut** `${config-pdfLinkText}`.
 
@@ -134,7 +132,7 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 
 ### Komponente &quot;Drafts &amp; Submissions&quot; {#drafts-amp-submissions-component}
 
-* **Path**: Pfad des Entwurfs-/Übermittlungs-Metadatenknotens. Verwenden Sie ihn mit der Erweiterung .HTML als URL, um einen Entwurf oder eine Übermittlung zu öffnen.
+* **Path**: Pfad des Entwurfs-/Übermittlungs-Metadatenknotens. Verwenden Sie ihn mit der Erweiterung .HTML als URL, damit Sie einen Entwurf oder eine Übermittlung öffnen können.
 * **contextPath**: Kontextpfad der AEM Instanz
 * **firstLetter**: Erster Buchstabe (in Großbuchstaben) des Titels des adaptiven Formulars, der als Entwurf gespeichert oder übermittelt wurde.
 * **formName**: Der Titel des adaptiven Formulars, das als Entwurf gespeichert oder übermittelt wurde.
@@ -142,7 +140,7 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 * **submitID**: ID für die aufgelistete Übermittlung (Nur in der Vorlage für den Abschnitt Übermittlung verwenden).
 * **status**: Status des gesendeten Formulars. (Nur in der Vorlage für den Abschnitt Übermittlung verwenden).
 * **description**: Beschreibung des adaptiven Formulars, das mit dem Entwurf oder der Übermittlung verknüpft ist.
-* **diffTime**: Differenz zwischen der aktuellen Zeit und der letzten Speicheraktion für den Entwurf. Alternativ können Sie zwischen der aktuellen Zeit und der letzten Übermittlungsaktion für die Übermittlung unterscheiden.
+* **diffTime**: Differenz zwischen der aktuellen Zeit und der letzten Speicheraktion für den Entwurf. Alternativ dazu die Differenz zwischen der aktuellen und der zuletzt gesendeten Aktion für die Übermittlung.
 * **iconClass**: CSS-Klasse zur Anzeige des ersten Buchstabens des Entwurfs/der Übermittlung. Forms Portal umfasst die folgenden Klassen, die verschiedene farbige Hintergründe bieten.
 * **owner**: Benutzer, der den Entwurf/die Übermittlung erstellt hat.
 * **Today**: Erstellungsdatum des Entwurfs/der Übermittlung im Format TT:MM:JJJJ.
@@ -162,7 +160,7 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 
 **C.** Datenwiederholbares Attribut für den Vorlagenbereich jedes Formulars
 
-**D.** Zu lokalisierender String „Apply“ 
+**D.** Zeichenfolge &quot;Anwenden&quot;lokalisieren
 
 **E.** Verwenden der Konfigurationseigenschaft „pdfLinkText“ 
 
@@ -177,11 +175,11 @@ So ist z. B. im Header „Title“ in der Rasteransicht der Wert für den Header
 
 ## Ähnliche Artikel
 
-* [Aktivieren von Formularportalkomponenten](/help/forms/using/enabling-forms-portal-components.md)
-* [Erstellen einer Formularportalseite](/help/forms/using/creating-form-portal-page.md)
+* [Aktivieren von Formularportal-Komponenten](/help/forms/using/enabling-forms-portal-components.md)
+* [Forms Portal-Seite erstellen](/help/forms/using/creating-form-portal-page.md)
 * [Auflisten von Formularen auf einer Webseite mithilfe von APIs](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Verwenden der Komponente „Entwurf und Übermittlung“](/help/forms/using/draft-submission-component.md)
 * [Anpassen der Speicherung von Entwürfen und gesendeten Formularen](/help/forms/using/draft-submission-component.md)
-* [Beispiel zur Integrierung der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
+* [Beispiel für die Integration der Komponente für Entwurf und Übermittlung in die Datenbank](/help/forms/using/integrate-draft-submission-database.md)
 * [Anpassen von Vorlagen für Forms Portal-Komponenten](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Einführung in das Veröffentlichen von Formularen in einem Portal](/help/forms/using/introduction-publishing-forms.md)

@@ -1,14 +1,14 @@
 ---
 title: APIs zum Zugriff auf Briefinstanzen
-description: Entdecken Sie APIs und verwenden Sie sie, um programmatisch auf Briefinstanzen in der AEM Forms-Umgebung zuzugreifen.
+description: Entdecken Sie APIs und verwenden Sie sie, um programmgesteuert auf Briefinstanzen in der AEM Forms-Umgebung zuzugreifen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '597'
 ht-degree: 41%
 
 ---
@@ -134,8 +134,8 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 Die Briefinstanz kann vom Typ &quot;Gesendet&quot;oder &quot;Entwurf&quot;sein. Das Öffnen beider Briefinstanztypen zeigt unterschiedliche Verhaltensweisen:
 
-* Im Falle einer Briefinstanz &quot;Gesendet&quot; wird eine PDF geöffnet, die die Briefinstanz darstellt. Die gesendete Briefinstanz, die auf dem Server persistiert wird, enthält auch die dataXML und verarbeitete XDP, die verwendet werden können, um einen Anwendungsfall wie das Erstellen einer PDF/A auszuführen und weiter anzupassen.
-* Im Falle einer Briefinstanz &quot;Entwurf&quot;wird die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;in den exakten vorherigen Status wie zum Zeitpunkt der Erstellung des Entwurfs neu geladen
+* Wenn eine Instanz für gesendete Briefe vorhanden ist, wird eine PDF geöffnet, die die Briefinstanz darstellt. Die gesendete Briefinstanz, die auf dem Server persistiert wird, enthält auch die dataXML und verarbeitete XDP, die verwendet werden können, um einen Anwendungsfall wie das Erstellen einer PDF/A auszuführen und weiter anzupassen.
+* Wenn eine Briefinstanz vom Typ Entwurf vorhanden ist, wird die Benutzeroberfläche &quot;Korrespondenz erstellen&quot;in den exakten vorherigen Status wie zum Zeitpunkt der Erstellung des Entwurfs neu geladen
 
 ### Öffnen der Briefinstanz „Entwurf“  {#opening-draft-letter-instance-nbsp}
 

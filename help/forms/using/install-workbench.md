@@ -1,14 +1,14 @@
 ---
 title: Installieren von Workbench
-description: Installieren, Deinstallieren, Konfigurieren, Verwalten oder Bereitstellen von AEM Forms Workbench.
+description: Erfahren Sie, wie Sie AEM Forms Workbench installieren, deinstallieren, konfigurieren, verwalten oder bereitstellen.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: ad5d98c5519cda29cecde54a880958bae81c4764
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '2238'
-ht-degree: 99%
+source-wordcount: '2242'
+ht-degree: 89%
 
 ---
 
@@ -85,7 +85,7 @@ Speicherplatz für die Installation:
 >
 >Wenn sich diese Speicherorte alle auf einem einzigen Laufwerk befinden, müssen während der Installation 1,5 GB Speicherplatz zur Verfügung stehen. Die Dateien, die in den temporären Ordner kopiert werden, werden nach Abschluss der Installation gelöscht.
 
-* Hardware-Anforderung: Intel® Pentium® 4 oder gleichwertiger AMD®-Prozessor, 1 GHz.
+* Hardwareanforderungen: Intel® Pentium® 4 oder gleichwertiger AMD® 1-GHz-Prozessor.
 * Java™ Runtime Environment (JRE) 7.0 Update 51 oder höhere Updates zu 7.0.
 * Minimale Bildschirmauflösung 1024 x 768 Pixel oder höher mit 16-Bit-Farbtiefe oder höher.
 * TCP/IPv4- oder TCP/IPv6-Netzwerkverbindung zum AEM Forms-Server.
@@ -120,7 +120,7 @@ Verschiedene Versionen von Designer können parallel auf demselben System vorhan
   </tr>
   <tr>
    <td><p>Designer (eigenständig)</p> </td>
-   <td><p>Ohne. <br />Die Version von Designer in Workbench ist nur in englischer Sprache verfügbar. <br />Das Workbench-Installationsprogramm installiert keine neue Version von Designer. Stattdessen wird eine aktualisierte Version, die mit dem Workbench-Installationsprogramm geliefert wird, gepatcht. Auf diese Weise können Sie auch Ihre lokalisierte Version von Designer in Workbench verwenden.<br /> </p> </td>
+   <td><p>Ohne. <br />Die Version von Designer in Workbench ist nur in englischer Sprache verfügbar. <br />Das Workbench-Installationsprogramm installiert keine neue Version von Designer. Stattdessen wird eine aktualisierte Version, die im Paket mit dem Workbench-Installationsprogramm enthalten ist, gepatcht. Auf diese Weise können Sie auch Ihre lokalisierte Version von Designer in Workbench verwenden.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -168,7 +168,7 @@ Stellen Sie vor der Installation von Workbench sicher, dass die Umgebung über d
    Der Installationsordnerpfad darf keine #- (Raute-) und $- (Dollar-)Zeichen enthalten.
 
 1. Lesen Sie die Vorinstallationsübersicht und klicken Sie auf Installieren. Das Installationsprogramm zeigt den Fortschritt der Installation an.
-1. Überprüfen Sie die Installationsübersicht. Wählen Sie „AEM Forms Workbench starten“, um Workbench zu starten, und klicken Sie dann auf „Weiter“.
+1. Überprüfen Sie die Installationsübersicht. Wählen Sie AEM Forms Workbench starten aus, damit Sie Workbench starten können, und klicken Sie dann auf Weiter.
 1. Lesen Sie die Versionshinweise und klicken Sie auf Fertig.
 1. Jetzt sind die folgenden Elemente auf Ihrem Computer installiert:
    * **Workbench**: Um Workbench im Menü „Start“ auszuführen, wählen Sie „Alle Programme“ > „AEM Forms“ > „Workbench“, falls Sie den Verknüpfungsordner dort gespeichert haben. Weitere Informationen finden Sie in der Dokumentation <a href="https://helpx.adobe.com/content/dam/help/de/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Verwenden von Workbench</a>.
@@ -185,7 +185,7 @@ Um Workbench zu verwenden, muss eine Instanz von AEM Forms laufen, normalerweise
 
 >[!NOTE]
 >
-Wenn Sie AEM Forms für die Verwendung des Repository-Anbieters EMC Documentum® oder IBM® FileNet konfiguriert haben und Sie sich bei einem anderen Repository als dem Repository anmelden möchten, das in Administration-Console von AEM Forms als Standard konfiguriert ist, geben Sie den Benutzernamen in der Form „Benutzername@Repository“ an.
+Wenn Sie AEM Forms für die Verwendung von EMC Documentum® oder IBM® FileNet Repository Provider konfiguriert haben und sich bei einem anderen Repository als dem Repository anmelden möchten, das in AEM Forms Administration Console als Standard konfiguriert ist, geben Sie den Benutzernamen als username@Repository an.
 
 ### Konfigurieren von Zeitlimiteinstellungen {#configuring-timeout-settings}
 
@@ -206,7 +206,7 @@ Stellen Sie sicher, dass Sie eine Verbindung mit HTTPS herstellen, indem Sie den
 
    >[!NOTE]
    >
-   Um das Zertifikat zu exportieren, öffnen Sie einen Webbrowser und melden Sie sich bei der Administration-Console an, installieren Sie dann das Zertifikat im Browser und exportieren Sie das Zertifikat vom Browser in einen temporären Speicherort (oder direkt in den Ordner [Workbench_HOME]/workbench/jre/lib/security).
+   Um das Zertifikat zu exportieren, öffnen Sie einen Webbrowser und melden Sie sich bei Administration Console an. Installieren Sie das Zertifikat im Browser und exportieren Sie dann das Zertifikat aus dem Browser an einen temporären Speicherort (oder direkt an den [Workbench_HOME]/workbench/jre/lib/security directory).
 
 1. Kopieren Sie das Zertifikat in den Ordner [Workbench_HOME]/workbench/jre/lib/security.
 
@@ -225,7 +225,7 @@ Dabei gilt:
 
 Die folgenden Aspekte des Cache-Vorgangs sollten berücksichtigt werden, wenn Ihre Anwendung einzigartige Vorlagen spontan generiert, indem XFA-Inhalte automatisch aktualisiert werden. In der Tat verwendet jede Transaktion eine neue, eindeutige Vorlage.
 
-Wenn der Formulargenerator oder die Ausgabe nach Einträgen im Cache für eine bestimmte Formularvorlage sucht oder diese aktualisiert, werden mehrere Schlüsselwerte verwendet, um den spezifischen Cache-Eintrag zu finden, auf den zugegriffen werden soll.
+Wenn der Formularersteller oder die Formularausgabe nach Einträgen im Cache für eine bestimmte Formularvorlage sucht oder diese aktualisiert, verwendet er mehrere Schlüsselwerte, um den spezifischen Cache-Eintrag zu finden, auf den zugegriffen wird.
 
 * **Name der Vorlagendatei**: Der Speicherort und der Dateiname der Vorlage, die als primäre eindeutige Kennung des zwischengespeicherten Formulars verwendet wird.
 * **Zeitstempel**: Die Vorlagendatei enthält einen Zeitstempel, mit dem die letzte Aktualisierungszeit des Formulars ermittelt wird.
@@ -238,18 +238,21 @@ Wenn der Formulargenerator oder die Ausgabe nach Einträgen im Cache für eine b
 
 
 Der Forms-Dienst empfängt Vorlagen anhand des Dateinamens oder des Repository-Speicherorts oder anhand des Wertes als XML-Objekt im Speicher.
+
 * **Nach Referenz übergebene Vorlagen**: Verwendet den Inhaltsstamm und den Formularnamen. Wenn bei jeder Anfrage mit dieser Methode eindeutige Vorlagen mit unterschiedlichen Dateinamen übergeben werden, wächst der Datenträger-Cache endlos und wird nie wiederverwendet. Um dies zu verhindern, sollten eindeutige Vorlagen mit demselben Dateinamen übergeben werden, um sicherzustellen, dass derselbe Cache für alle Anfragen aktualisiert wird.
-* **Nach Wert übergebene Vorlagen**: Verwendet Vorlagen-Bytes, die zusammen mit den Daten mit dem Parameter „theinDataDoc“ übergeben werden. Wenn eindeutige Vorlagen mit unterschiedlicher UID mithilfe dieser Methode übergeben werden, wächst der Datenträger-Cache endlos und wird nie wiederverwendet. Um dies zu verhindern, sollte das UUID-Attribut aus allen Vorlagen entfernt werden, um sicherzustellen, dass kein Cache für die Vorlage erstellt wird. Alternativ dazu können die Cache-Objekte erstellt werden, wenn dieselbe UUID ungleich „null“ übergeben wird. Es wird jedoch sichergestellt, dass bei jeder Anfrage derselbe Cache aktualisiert wird.
+* **Nach Wert übergebene Vorlagen**: Verwendet Vorlagen-Bytes, die zusammen mit den Daten mit dem Parameter „theinDataDoc“ übergeben werden. Wenn eindeutige Vorlagen mit unterschiedlicher UID mithilfe dieser Methode übergeben werden, wächst der Datenträgercache endlos und wird nie wiederverwendet. Um dies zu verhindern, sollte das UUID-Attribut aus allen Vorlagen entfernt werden, um sicherzustellen, dass kein Cache für die Vorlage erstellt wird. Alternativ dazu können die Cache-Objekte erstellt werden, wenn dieselbe UUID ungleich „null“ übergeben wird. Es wird jedoch sichergestellt, dass bei jeder Anfrage derselbe Cache aktualisiert wird.
 
 Um zu verhindern, dass der Cache endlos anwächst, sollten Sie die folgenden Faktoren für das Rendern von dynamisch generierten Vorlagen mithilfe der neuen AEM Forms-APIs, nämlich „renderHTMLForm2“ und „renderPDFForm2“ berücksichtigen.
 
 Wenn Sie neue APIs verwenden, wird die Vorlage als ein Dokumentobjekt übergeben, das im Forms-Dienst bearbeitet wird, je nachdem, ob es passiviert ist oder nicht.
 
 Beachten Sie bei passivierten Dokumenten, bei denen die UUID und der Inhaltsstamm als Cache-Schlüssel dienen, die folgenden Aspekte:
+
 * Der Cache wird nicht für passivierte Eingabevorlagen ohne UUID erstellt.
 * Wenn mehr als eine passivierte Eingabevorlage mit derselben UUID und demselben Inhaltsstamm übergeben wird, wird derselbe Cache überschrieben.
 
 Bei nicht passivierten Dokumenten, bei denen der Dateiname und der Stamm des Inhalts als Cache-Schlüssel dienen, sollten Sie den folgenden Aspekt berücksichtigen:
+
 * Bei nicht-passivierten Eingabevorlagen hängt das Zwischenspeichern vom Inhaltsstamm und vom Dateinamen ab, von wo aus das Dokument erstellt wurde.
 Derselbe Cache wird nur für Anfragen mit demselben Inhaltsstamm und demselben Dateinamen der Vorlage verwendet.
 Die folgenden Best Practices stellen sicher, dass der Cache nicht endlos wächst, wenn dynamisch generierte Vorlagen an den Forms-Dienst übergeben werden:
@@ -258,7 +261,7 @@ Die folgenden Best Practices stellen sicher, dass der Cache nicht endlos wächst
 
 ### Deinstallieren von Workbench {#uninstalling-workbench}
 
-Verwenden Sie die Funktion „Software“ in der Systemsteuerung, um das Deinstallationsprogramm zu starten. Die Workbench- und Designer-Anwendungen haben unterschiedliche Deinstallationsprogramme.
+Verwenden Sie die Funktion &quot;Software&quot;im Control Panel, damit Sie das Deinstallationsprogramm starten können. Die Workbench- und Designer-Anwendungen haben unterschiedliche Deinstallationsprogramme.
 
 ## Konfigurieren von AEM Forms XDC Editor {#configuring-aem-forms-xdc-editor}
 
@@ -267,9 +270,11 @@ Mithilfe des XDC-Editors können Admins von Netzwerkdruckern XML Forms Architect
 Bevor der Administrator des Netzwerkdruckers den XDC-Editor verwendet, verschieben Sie die XDC-Beispiel-Dateien und lesen Sie die Datei Geräteprofile mit XDC-Editor erstellen.
 
 **Abrufen der Beispiel-XDC-Dateien**:
+
 1. Suchen Sie auf dem AEM Forms-Server den XDC-Ordner in [AEM Forms-Stammverzeichnis]\sdk\samples\Output\IVS.
 1. Kopieren Sie den Inhalt dieses Ordners in ein Verzeichnis, auf das vom Workbench- oder Eclipse-System aus zugegriffen werden kann.
 
 **Abrufen der XDC Editor-Hilfe**:
+
 1. Gehen Sie zur Dokumentations-Website von AEM Forms.
 1. Klicken Sie auf die Schaltfläche **Entwickeln** und navigieren Sie zu Erstellen von Geräteprofilen mit XDC Editor. Laden Sie die Datei xdc_editor_help_web.zip herunter und installieren Sie die Hilfedateien, indem Sie die Anweisungen befolgen, die in der Readme-Datei angeführt sind.

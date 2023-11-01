@@ -1,17 +1,15 @@
 ---
 title: "Correspondence Management: Fehlerbehebung"
-description: Beseitigen Sie Fehler, die beim Speichern eines Briefs in einer AEM Forms-Umgebung auftreten können.
-uuid: 25828cdd-110e-4a84-8f31-d82cd610a54f
+description: Erfahren Sie, wie Sie Fehler beheben können, die beim Speichern eines Briefs in einer AEM Forms-Umgebung auftreten.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 feature: Correspondence Management
 exl-id: cf06796b-bb8c-4a65-8f42-02fb0cfa3ebd
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '213'
-ht-degree: 25%
+source-wordcount: '215'
+ht-degree: 17%
 
 ---
 
@@ -24,7 +22,7 @@ ht-degree: 25%
 Einer der folgenden Fehler wird beim Speichern eines Briefs angezeigt:
 
 * Datenbindung für das Textmodul nicht vorhanden
-* Geben Sie die Eigenschaftsangaben an, die für Folgendes benötigt werden
+* Geben Sie die für Folgendes erforderlichen Eigenschaftsinformationen an
 
 ### Grund {#reason}
 
@@ -50,5 +48,5 @@ Setzen Sie den Brief-Cache auf der Veröffentlichungsinstanz mit den folgenden S
 1. Navigieren Sie zu **`https://'[server]:[port]'/[contextPath]/system/console/configMgr`** und melden Sie sich als Administrator an.
 1. Wählen Sie **Correspondence Management-Konfigurationens**.
 1. Deaktivieren Sie in **Correspondence Management-Konfigurationen** die Option **Briefcache aktivieren** und klicken Sie auf **Speichern.**
-1. Aktivieren Sie **Brief-Cache aktivieren** und klicken Sie dann auf **Speichern**.
+1. Überprüfen **Briefcache aktivieren** und klicken Sie anschließend auf **Speichern**.
 1. Versuchen sie noch einmal, den Brief anzuzeigen.

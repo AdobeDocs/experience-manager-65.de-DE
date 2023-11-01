@@ -7,7 +7,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 37%
@@ -71,7 +71,7 @@ Führen Sie die folgenden Schritte aus, um die erforderliche Ordnerstruktur im `
 
       >[!NOTE]
       >
-      >Ändern Sie nicht die `/libs` -Verzweigung. Alle Änderungen, die Sie vornehmen, können verloren gehen, da sich diese Verzweigung ändern kann, wenn Sie:
+      >Ändern Sie nicht die `/libs` -Verzweigung. Alle Änderungen, die Sie vornehmen, können verloren gehen, da diese Verzweigung jederzeit geändert werden kann:
       >
       >    
       >    
@@ -83,7 +83,7 @@ Führen Sie die folgenden Schritte aus, um die erforderliche Ordnerstruktur im `
 
    1. Klicken Sie auf **OK**. Der Ordner css wird im angegebenen Pfad erstellt.
 
-1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen `imgs` mit einem ähnlichen Pfad/einer ähnlichen Struktur zum imgs-Ordner (im ccrui-Ordner).
+1. Erstellen Sie im Ordner &quot;apps&quot;einen Ordner mit dem Namen `imgs` mit Pfad/Struktur, die dem `imgs` Ordner (im Ordner ccrui ).
 
    1. Klicken Sie mit der rechten Maustaste auf den Ordner **imgs** im folgenden Pfad und wählen Sie **Überlagerungsknoten**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Stellen Sie sicher, dass das Dialogfeld „Überlagerungsknoten“ die folgenden Werte enthält:
