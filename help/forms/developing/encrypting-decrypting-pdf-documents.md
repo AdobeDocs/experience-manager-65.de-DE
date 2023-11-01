@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '8189'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '8187'
+ht-degree: 98%
 
 ---
 
@@ -24,7 +24,7 @@ ht-degree: 100%
 
 **Über den Verschlüsselungsdienst**
 
-Mit dem Verschlüsselungsdienst können Sie Dokumente verschlüsseln und entschlüsseln. Wird ein Dokument verschlüsselt, ist sein Inhalt nicht mehr lesbar. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. Ähnlich muss der Benutzer, wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, das PDF-Dokument mithilfe des öffentlichen Schlüssels entschlüsseln, der dem Zertifikat (privater Schlüssel) entspricht, das zum Verschlüsseln des PDF-Dokuments verwendet wurde.
+Mit dem Verschlüsselungsdienst können Sie Dokumente verschlüsseln und entschlüsseln. Wenn ein Dokument verschlüsselt wird, ist sein Inhalt unlesbar. Ein autorisierter Benutzer kann das Dokument entschlüsseln, um Zugriff auf den Inhalt zu erhalten. Wenn ein PDF-Dokument mit einem Kennwort verschlüsselt wird, muss der Benutzer das Kennwort zum Öffnen angeben, damit das Dokument in Adobe Reader oder Adobe Acrobat angezeigt werden kann. Wenn ein PDF-Dokument mit einem Zertifikat verschlüsselt ist, muss der Benutzer das PDF-Dokument mit dem öffentlichen Schlüssel entschlüsseln, der dem Zertifikat (privater Schlüssel) entspricht, das zum Verschlüsseln des PDF-Dokuments verwendet wurde.
 
 Sie können diese Aufgaben mithilfe des Verschlüsselungsdienstes erledigen:
 
@@ -245,7 +245,7 @@ Mit der zertifikatsbasierten Verschlüsselung können Sie ein Dokument für best
 
 Einer der Schlüssel agiert als der private Schlüssel eines Benutzers. Wichtig ist, dass nur der Benutzer Zugriff auf diesen Schlüssel hat. Der andere Schlüssel ist der öffentliche Schlüssel des Benutzers, der mit Dritten geteilt werden kann.
 
-Ein öffentliches Schlüsselzertifikat enthält den öffentlichen Schlüssel eines Benutzers sowie Identifizierungsinformationen. Das X.509-Format dient zum Speichern von Zertifikaten. Zertifikate werden meist von einer Zertifizierungsstelle ausgestellt und digital signiert, bei der es sich um eine anerkannte Instanz handelt, die ein Maß an Vertrauen in die Gültigkeit des Zertifikats ermöglicht. Zertifikate haben ein Ablaufdatum, nach dem sie nicht mehr gültig sind. Darüber hinaus liefern Zertifikatsperrlisten Informationen zu Zertifikaten, die vor ihrem Ablaufdatum gesperrt wurden. Zertifikatsperrlisten werden regelmäßig von Zertifizierungsstellen veröffentlicht. Der Sperrstatus eines Zertifikats kann auch mittels des Online-Zertifikatstatusprotokolls (Online Certificate Status Protocol, OCSP) über das Netzwerk abgerufen werden.
+Ein öffentliches Schlüsselzertifikat enthält den öffentlichen Schlüssel eines Benutzers sowie Identifizierungsinformationen. Das X.509-Format wird zum Speichern von Zertifikaten verwendet. Zertifikate werden in der Regel von einer Zertifizierungsstelle ausgestellt und digital signiert, bei der es sich um eine anerkannte Stelle handelt, die ein Maß an Vertrauen in die Gültigkeit des Zertifikats bietet. Zertifikate haben ein Ablaufdatum, nach dem sie nicht mehr gültig sind. Darüber hinaus enthalten Zertifikatsperrlisten Informationen zu Zertifikaten, die vor ihrem Ablaufdatum widerrufen wurden. Zertifikatsperrlisten werden regelmäßig von Zertifizierungsstellen veröffentlicht. Der Sperrstatus eines Zertifikats kann auch über das Online Certificate Status Protocol (OCSP) über das Netzwerk abgerufen werden.
 
 >[!NOTE]
 >
@@ -807,7 +807,7 @@ Um einen Vorgang des Verschlüsselungs-Services programmgesteuert durchführen z
 
 **Abrufen des verschlüsselten PDF-Dokuments**
 
-Sie müssen ein verschlüsseltes PDF-Dokument abrufen, um es entsperren zu können. Wenn Sie versuchen, ein nicht verschlüsseltes PDF-Dokument zu entsperren, wird eine Ausnahme ausgelöst.
+Sie müssen ein verschlüsseltes PDF-Dokument abrufen, um es zu entsperren. Wenn Sie versuchen, ein nicht verschlüsseltes PDF-Dokument zu entsperren, wird eine Ausnahme ausgelöst.
 
 **Entsperren des Dokuments**
 

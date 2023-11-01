@@ -7,10 +7,10 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
-workflow-type: ht
-source-wordcount: '1341'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1339'
+ht-degree: 99%
 
 ---
 
@@ -101,7 +101,7 @@ Weitere Einzelheiten über den Textextraktionsprozess finden Sie in der [Dokumen
 
 Erstellen Sie den Lucene-Index vor dem Upgrade offline. Bei der Verwendung von MongoMK wird empfohlen, es direkt auf einem der MongoMk-Knoten laufen zu lassen, da dies einen zu großen Netzwerk-Overhead vermeidet.
 
-Um den Index offline zu erstellen, führen Sie die folgenden Schritte aus:
+Gehen Sie wie folgt vor, um den Index offline zu erstellen:
 
 **1. Generieren von Oak Lucene-Indexdefinitionen für die AEM-Zielversion**
 

@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1980'
-ht-degree: 48%
+source-wordcount: '1978'
+ht-degree: 46%
 
 ---
 
@@ -92,7 +92,7 @@ Bei der Anzeige in der Context Cloud verwendet die Komponente eine Google-API, u
 
 **JSONP-Store**: Eine Komponente, die Inhalt anzeigt, der abhängig von Ihrer Installation ist.
 
-Der JSON-Standard ist eine JSON-Ergänzung, mit der dieselbe ursprüngliche Richtlinie umgangen werden kann (sodass eine Web-Anwendung mit Servern in einer anderen Domain kommunizieren kann). Er besteht in der Verpackung des JSON-Objekts in einem Funktionsaufruf, sodass dieses als `<script>` aus der anderen Domain geladen werden kann (bei der es sich um eine erlaubte Ausnahme von derselben ursprünglichen Richtlinie handelt).
+Der JSON-Standard ist eine JSON-Ergänzung, mit der dieselbe ursprüngliche Richtlinie umgangen werden kann (sodass eine Web-Anwendung mit Servern in einer anderen Domain kommunizieren kann). Er besteht darin, das JSON-Objekt in einen Funktionsaufruf zu verpacken, damit es als `<script>` von der anderen Domäne aus (was eine zulässige Ausnahme von derselben Ursprungsrichtlinie ist).
 
 Der JSONP-Store ist zwar wie jeder andere Store, er lädt allerdings Informationen aus einer anderen Domain, ohne dass für diese Informationen ein Proxy in der aktuellen Domain benötigt wird. Siehe hierzu das Beispiel unter [Speichern von Daten in ClientContext über JSON](/help/sites-administering/client-context.md#storing-data-in-client-context-via-jsonp).
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1916'
 ht-degree: 1%
 
 ---
@@ -34,7 +34,7 @@ In der Veröffentlichungsumgebung registrierte Benutzer werden im Allgemeinen al
 
 Berechtigungen werden gewährt, indem Mitglieder einem der [Mitglieds- (Benutzer-)Gruppen](#publish-group-roles) dynamisch erstellt, wenn die Community-Site [created](sites-console.md) oder [modifiziert](sites-console.md#modifying-site-properties) aus der Autorenumgebung. Bei der Arbeit in der Autorenumgebung sind Mitglieder in der Veröffentlichungsumgebung über die [Tunneldienst](#tunnel-service).
 
-Standardmäßig sollten Mitglieder und Mitgliedergruppen, die in der Veröffentlichungsumgebung erstellt wurden, nicht in der Autorenumgebung angezeigt werden. Benutzer und Benutzergruppen, die in der Autorenumgebung erstellt wurden, sind auf ähnliche Weise dazu bestimmt, in der Autorenumgebung zu bleiben.
+Standardmäßig sollten in der Veröffentlichungsumgebung erstellte Mitglieder und Mitgliedergruppen nicht in der Autorenumgebung angezeigt werden. Benutzer und Benutzergruppen, die in der Autorenumgebung erstellt wurden, sind auf ähnliche Weise dazu bestimmt, in der Autorenumgebung zu bleiben.
 
 Wenn Benutzer in der Autoren- und Veröffentlichungsumgebung aus derselben Benutzerliste stammen, z. B. aus demselben LDAP-Ordner synchronisiert, werden sie nicht als derselbe Benutzer mit denselben Berechtigungen und Gruppenmitgliedschaften in der Autoren- und Veröffentlichungsumgebung betrachtet. Die Rolle(en) der Mitglieder und Benutzer muss (müssen) je nach Bedarf separat in der Veröffentlichungs- und Autoreninstanz festgelegt werden.
 
@@ -56,7 +56,7 @@ Wenn der Site-Name beispielsweise &quot;*interagieren*&quot;für eine Site mit d
 
 * Community *Engage* Mitglieder
 
-## Autorenumgebung {#author-environment}
+## Authoring-Umgebung {#author-environment}
 
 ### Tunneldienst {#tunnel-service}
 
@@ -74,7 +74,7 @@ Um in der Autorenumgebung registrierte Benutzer und Benutzergruppen zu verwalten
 
 | Wenn Gruppenmitglied... | Primäre Rolle |
 |---|---|
-| Administratoren | Die Gruppe Administratoren besteht aus Systemadministratoren, die über alle Fähigkeiten eines Community-Administrators sowie über die Fähigkeit verfügen, die Gruppe Community-Administratoren zu verwalten. |
+| Administrierende | Die Gruppe Administratoren besteht aus Systemadministratoren, die über alle Fähigkeiten eines Community-Administrators sowie über die Fähigkeit verfügen, die Gruppe Community-Administratoren zu verwalten. |
 | Community-Administratoren | Die Gruppe Community-Administratoren wird automatisch Mitglied aller Community-Sites und aller auf der Site erstellten Community-Gruppen. Die Administratorgruppe ist ein erstmaliges Mitglied der Gruppe Community-Administratoren . In der Autorenumgebung können Community-Administratoren Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder aus der Community verbieten) und Inhalte moderieren. |
 | Community &lt;*Site-Name*> Sitecontentmanager | Der Community-Site-Inhaltsmanager kann herkömmliche AEM erstellen, Seiten für eine Community-Site erstellen und ändern. |
 | Ohne | Ein anonymer Site-Besucher kann nicht auf die Autorenumgebung zugreifen. |
@@ -83,13 +83,13 @@ Um in der Autorenumgebung registrierte Benutzer und Benutzergruppen zu verwalten
 
 Mitglieder der Administratorgruppe sind Systemadministratoren, die die Ersteinrichtung einer AEM für die Autoren- und Veröffentlichungsumgebung durchführen können.
 
-Zu Demonstrations- und Entwicklungszwecken verfügt die Administratorgruppe über ein Mitglied, dessen Benutzer *admin* und das Kennwort lautet *admin*.
+Zu Demonstrations- und Entwicklungszwecken verfügt die Administratorgruppe über ein Mitglied, dessen Benutzer *admin* und das Kennwort *admin*.
 
 In Produktionsumgebungen sollte die standardmäßige Administratorgruppe geändert werden.
 
 Befolgen Sie unbedingt die [Sicherheitscheckliste](../../help/sites-administering/security-checklist.md).
 
-## Veröffentlichungsumgebung {#publish-environment}
+## Publishing-Umgebung {#publish-environment}
 
 ### Mitgliedschaft {#becoming-a-member}
 
@@ -97,11 +97,11 @@ In der Veröffentlichungsumgebung, je nach [settings](sites-console.md#user-mana
 
 * Wenn die Community-Site privat ist (geschlossen):
    * Nach Einladung
-   * Durch Maßnahmen eines Administrators
+   * Von einem Administrator
 
 * Wenn die Community-Site öffentlich ist (geöffnet):
    * Durch Selbstregistrierung
-   * Nach Anmeldung über soziale Netzwerke mit Facebook und Twitter
+   * Durch Anmeldung in sozialen Netzwerken mit Facebook und Twitter
 
 >[!NOTE]
 >
@@ -116,7 +116,7 @@ In der Veröffentlichungsumgebung, je nach [settings](sites-console.md#user-mana
 | Community &lt;*Site-Name*> &lt;*Gruppenname*> Mitglieder | Ein Community-Gruppenmitglied ist ein Community-Mitglied, das entweder einer offenen Community-Gruppe beigetreten ist oder zu einer geschlossenen Community-Gruppe eingeladen wurde. Sie verfügen über die Fähigkeiten eines Mitglieds für diese Community-Gruppe innerhalb der Site. |
 | Community &lt;*Site-Name*> Gruppenadministratoren | Ein Community-Site-Gruppenadministrator ist ein vertrauenswürdiges Community-Mitglied, das zum Erstellen und Verwalten von Untergruppen (Gruppen) innerhalb einer Community-Site zugewiesen ist. Dazu gehört die Möglichkeit, kontextbezogene Moderation bereitzustellen. |
 | *Sicherheitsgruppe für berechtigte Mitglieder* | Eine manuell erstellte und gepflegte Benutzergruppe zur Einschränkung der Inhaltserstellung. Siehe [Gruppe privilegierter Mitglieder](#privileged-members-group). |
-| Ohne | Ein anonymer Site-Besucher, der die Site entdeckt, kann Community-Sites anzeigen und durchsuchen, die einen anonymen Zugriff zulassen. Um an Inhalten teilnehmen und diese veröffentlichen zu können, muss sich der Benutzer selbst registrieren (falls erlaubt) und Mitglied der Community werden. |
+| Ohne | Ein anonymer Site-Besucher, der die Site entdeckt, kann Community-Sites anzeigen und durchsuchen, die einen anonymen Zugriff zulassen. Um Inhalte zu veröffentlichen und zu beteiligen, muss sich der Benutzer selbst registrieren (falls erlaubt) und Mitglied der Community werden. |
 
 ### Zuweisen von Mitgliedern zu Veröffentlichungsgruppenrollen {#assigning-members-to-publish-group-roles}
 
@@ -138,7 +138,7 @@ Die Community-Funktionen, die die Spezifikation einer oder mehrerer privilegiert
 
 * [Blog-Funktion](functions.md#blog-function) - Beschränkung der Erstellung neuer Artikel.
 * [Kalenderfunktion](functions.md#calendar-function) - Beschränkung der Erstellung neuer Ereignisse.
-* [Forumsfunktion](functions.md#forum-function) - Schränken Sie die Erstellung neuer Themen ein.
+* [Forumsfunktion](functions.md#forum-function) - Die Erstellung neuer Themen wird eingeschränkt.
 * [QnA-Funktion](functions.md#qna-function) - Beschränkung der Erstellung neuer Fragen.
 
 Wenn eine Community-Funktion nicht gesichert ist (keine privilegierte Mitgliedergruppe zugewiesen ist), dürfen alle Community-Site-Mitglieder Funktionsinhalte (Artikel, Ereignisse, Themen, Fragen) erstellen.
@@ -194,7 +194,7 @@ Es gibt vier separate Konsolen, die nur in der Autorenumgebung verfügbar sind:
 
 ### Community-Administratorrolle {#community-administrators-role}
 
-Wie im Abschnitt [Autorengruppen-Rollen](#author-group-roles) -Diagramm, können Mitglieder der Community-Administratoren-Gruppe Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder der Community verbieten) und Inhalte moderieren.
+Wie im Abschnitt [Autorengruppen-Rollen](#author-group-roles) -Diagramm verwenden, können Mitglieder der Community-Administratoren-Gruppe Community-Sites erstellen, Sites verwalten, Mitglieder verwalten (sie können Mitglieder der Community verbieten) und Inhalte moderieren.
 
 Führen Sie dieselben Schritte aus wie beim Erstellen und Zuweisen eines Benutzers zur Rolle des Aktivierungsmanagers, fügen Sie jedoch c hinzu. `ommunity-administrators` auf der Registerkarte Gruppen des Benutzers.
 
@@ -214,20 +214,20 @@ Im Folgenden finden Sie einige Konfigurationsdetails für Community-Mitglieder u
    * Legen Sie die folgenden Eigenschaften fest:
 
       * **[!UICONTROL User auto membership]**: `community-<site name>-<uid>-members`
-      * **[!UICONTROL User Path Prefix]**: `/community`
+      * **[!UICONTROL Benutzerpfadpräfix]**: `/community`
       * **[!UICONTROL Group Path Prefix]**: `/community`
 
 4. [Das externe Anmeldemodul](../../help/sites-administering/ldap-config.md#the-external-login-module)
 
    * keine besonderen Hinweise
 
-Dies führt dazu, dass Benutzer automatisch der Mitgliedergruppe der Community-Site und dem Repository-Speicherort zugewiesen werden `/home/users/community` und `/home/groups/community`, damit sie die entsprechenden Berechtigungen erben, um das Profil der anderen Person zu sehen.
+Dadurch werden Benutzer automatisch der Mitgliedergruppe der Community-Site und dem Repository-Speicherort zugewiesen `/home/users/community` und `/home/groups/community`, damit sie die entsprechenden Berechtigungen erben, um das Profil der anderen Person zu sehen.
 
 * Die `User auto membership` Wert: `rep:authorizableId` -Eigenschaft, nicht die `givenName` (Anzeigename) aus dem Profil.
 
 ## Synchronisieren von Benutzern zwischen AEM Instanzen {#synchronizing-users-among-aem-instances}
 
-Bei Verwendung von [Veröffentlichungsfarm](topologies.md)stellen Sie sicher, dass die Benutzer in jeder Veröffentlichungsinstanz denselben Pfad haben, indem Sie die Benutzer zuerst in eine Instanz importieren und [Aktivieren der Benutzersynchronisierung](sync.md) , um die Benutzer an die anderen Veröffentlichungsinstanzen zu verteilen.
+Bei der Verwendung von [Veröffentlichungsfarm](topologies.md)stellen Sie sicher, dass die Benutzer in jeder Veröffentlichungsinstanz denselben Pfad haben, indem Sie die Benutzer zuerst in eine Instanz importieren und [Aktivieren der Benutzersynchronisierung](sync.md) , um die Benutzer an die anderen Veröffentlichungsinstanzen zu verteilen.
 
 Wenn Sie Benutzergruppen importieren, um sicherzustellen, dass die Benutzergruppen in jeder Veröffentlichungsinstanz denselben Pfad haben, importieren Sie in eine Instanz, und dann [Package erstellen](../../help/sites-administering/package-manager.md#creating-a-new-package) für den Export und installieren Sie dieses Paket auf allen anderen Veröffentlichungsinstanzen.
 
@@ -239,8 +239,8 @@ Bei der Erörterung von Gruppen gibt es zwei unterschiedliche Themen:
 
 * **[Community-Gruppen](overview.md#communitygroups)**
 
-   Community-Gruppen sind die Untergruppen, die in der Veröffentlichungsumgebung für eine Community-Site erstellt werden können, die die Erstellung von Community-Gruppen unterstützt. Die Erstellung einer Community-Gruppe führt zu mehr Seiten, die der Website hinzugefügt werden, und wird ähnlich wie die ihrer übergeordneten Community-Site verwaltet. Weitere Informationen finden Sie unter [Community-Gruppengrundlagen](essentials-groups.md) für Entwickler und [Community-Gruppe](creating-groups.md) für Autoren.
+  Community-Gruppen sind die Untergruppen, die in der Veröffentlichungsumgebung für eine Community-Site erstellt werden können, die die Erstellung von Community-Gruppen unterstützt. Die Erstellung einer Community-Gruppe führt zu mehr Seiten, die der Website hinzugefügt werden, und wird ähnlich wie die ihrer übergeordneten Community-Site verwaltet. Weitere Informationen unter [Community-Gruppengrundlagen](essentials-groups.md) für Entwickler und [Community-Gruppe](creating-groups.md) für Autoren.
 
 * **[Mitgliedergruppen](../../help/sites-administering/security.md)**
 
-   Mitgliedergruppen sind die Gruppen, denen Mitglieder angehören können, und werden über die Gruppenkonsole verwaltet. Ein Großteil der Diskussionen auf dieser Seite wurde den Mitgliedsgruppen gewidmet. Die Mitgliedergruppen, die automatisch für eine Community-Site erstellt werden und mit dem Präfix *`Community`* als Gemeinschaftsgruppe bezeichnet werden, muss daher der Kontext der Diskussion berücksichtigt werden.
+  Mitgliedergruppen sind die Gruppen, denen Mitglieder angehören können, und werden über die Gruppenkonsole verwaltet. Ein Großteil der Diskussionen auf dieser Seite wurde den Mitgliedsgruppen gewidmet. Die Mitgliedergruppen, die automatisch für eine Community-Site erstellt werden und mit dem Präfix *`Community`* als Gemeinschaftsgruppe bezeichnet werden, muss daher der Kontext der Diskussion berücksichtigt werden.

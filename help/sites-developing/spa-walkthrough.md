@@ -4,17 +4,17 @@ description: In diesem Artikel werden die Konzepte einer SPA vorgestellt und die
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1967'
-ht-degree: 94%
+source-wordcount: '1965'
+ht-degree: 95%
 
 ---
 
 
 # Einführung in SPAs und exemplarische Anleitung {#spa-introduction-and-walkthrough}
 
-Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA Frameworks erstellen können und Autoren möchten Inhalte in AEM für eine Site, die mit solchen Frameworks erstellt wurde, nahtlos bearbeiten.
+Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwicklungspersonen möchten Sites mit SPA-Frameworks erstellen und Autorinnen bzw. Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die mit diesen Frameworks erstellt wurde.
 
 Der SPA-Editor bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. In diesem Artikel wird die Verwendung einer einfachen SPA zur Inhaltserstellung erläutert und gezeigt, wie sie mit dem zugrunde liegenden AEM-SPA-Editor in Beziehung steht.
 
@@ -50,11 +50,11 @@ Die exemplarische Anleitung basiert auf AEM-Standardfunktionen und der beispielh
 
 ### Was ist eine SPA? {#what-is-a-spa}
 
-Eine Einzelseitenanwendung (SPA) unterscheidet sich von einer herkömmlichen Seite insofern, als sie Client-seitig gerendert wird und primär JavaScript-gesteuert ist. Dabei wird auf Ajax-Aufrufe zurückgegriffen, um Daten zu laden und die Seite dynamisch zu aktualisieren. Der Großteil der Inhalte oder alle Inhalte werden einmal in einem einzelnen Seiten-Load abgerufen, wobei je nach Benutzerinteraktion mit der Seite asynchron zusätzliche Ressourcen geladen werden.
+Eine Single Page Application (SPA) unterscheidet sich von einer herkömmlichen Seite insofern, als sie Client-seitig gerendert wird und primär JavaScript-gesteuert ist. Dabei wird auf Ajax-Aufrufe zurückgegriffen, um Daten zu laden und die Seite dynamisch zu aktualisieren. Der Großteil der Inhalte oder alle Inhalte werden einmal in einem einzelnen Seiten-Load abgerufen, wobei je nach Benutzerinteraktion mit der Seite asynchron zusätzliche Ressourcen geladen werden.
 
 So wird der Bedarf nach Seitenaktualisierungen reduziert und dem Benutzer ein Erlebnis präsentiert, das nahtlos und schnell ist und eher wie eine native App funktioniert.
 
-Der AEM-SPA-Editor ermöglicht es Frontend-Entwicklern, SPAs zu erstellen, die sich in eine AEM-Site integrieren lassen, damit Inhaltsautoren SPA-Inhalte so einfach bearbeiten können wie andere AEM-Inhalte.
+Der AEM-SPA-Editor ermöglicht es Frontend-Entwicklungspersonen, SPAs zu erstellen, die sich in eine AEM-Site integrieren lassen, damit Inhaltsautorinnen und -autoren SPA-Inhalte so einfach bearbeiten können wie alle anderen AEM-Inhalte.
 
 ### Warum eine SPA? {#why-a-spa}
 
@@ -79,7 +79,7 @@ Da SPAs schneller, nahtloser und eher wie ein natives Programm sind, sind sie ni
 
 ### Wie funktioniert eine SPA? {#how-does-a-spa-work}
 
-Die Grundidee hinter einer SPA besteht darin, dass Aufrufe an und Abhängigkeiten von einem Server verringert werden, um Verzögerungen zu minimieren, die durch Server-Aufrufe verursacht werden. So kommen SPAs der Reaktionsgeschwindigkeit einer nativen Anwendung nahe.
+Die Grundidee hinter einem SPA besteht darin, dass Aufrufe und Abhängigkeiten von einem Server reduziert werden, um Verzögerungen zu minimieren, die durch Server-Aufrufe verursacht werden, sodass die SPA der Reaktionsfähigkeit einer nativen Anwendung nahekommt.
 
 Bei einer herkömmlichen, sequenziellen Web-Seite werden nur die für die aktuelle Seite benötigten Daten geladen. Das bedeutet, dass beim Wechseln des Besuchers zu einer anderen Seite der Server für die zusätzlichen Ressourcen aufgerufen werden muss. Weitere Aufrufe können erforderlich sein, wenn der Besucher mit Elementen auf der Seite interagiert. Diese Mehrfachaufrufe können zu einer Wahrnehmung von Verzögerungen führen, da die Seite die Anfragen des Besuchers erfüllen muss.
 

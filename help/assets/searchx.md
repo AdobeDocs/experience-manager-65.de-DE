@@ -5,10 +5,10 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
-workflow-type: ht
-source-wordcount: '825'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '823'
+ht-degree: 98%
 
 ---
 
@@ -43,7 +43,7 @@ Sie können zusätzliche Suchregisterkarten hinzufügen, indem Sie sie in der Ad
 
    >[!NOTE]
    >
-   >Achten Sie bei Erstellung eines zweiten `siteadminsearchpanel` auf die Festlegung einer `id`-Eigenschaft, um Formularkonflikte zu vermeiden.
+   >Wenn Sie eine Sekunde erstellen `siteadminsearchpanel`müssen Sie eine `id` -Eigenschaft, um Formularkonflikte zu vermeiden.
 
 ## Erstellen benutzerdefinierter Eigenschaften {#creating-custom-predicates}
 

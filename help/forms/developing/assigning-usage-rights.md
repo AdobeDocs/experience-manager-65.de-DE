@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '3926'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '3918'
+ht-degree: 97%
 
 ---
 
@@ -38,7 +38,7 @@ Sie können diese Aufgaben mithilfe des Services „Acrobat Reader DC-Erweiterun
 
 ## Anwenden von Verwendungsrechten auf PDF-Dokumente {#applying-usage-rights-to-pdf-documents}
 
-Mit der Java-Client-API der Acrobat Reader DC-Erweiterungen und dem entsprechenden Webservice können Sie Verwendungsrechte auf PDF-Dokumente anwenden. Verwendungsrechte gelten für Funktionen, die standardmäßig in Acrobat, nicht jedoch in Adobe Reader zur Verfügung stehen, wie etwa die Möglichkeit, Kommentare zu einem Formular hinzuzufügen oder Formularfelder auszufüllen und das Formular zu speichern. PDF-Dokumente, auf die Verwendungsrechte angewandt wurden, werden als Dokumente mit aktivierten Verwendungsrechten bezeichnet. Benutzer, die ein Dokument mit aktivierten Verwendungsrechten in Adobe Reader öffnen, können Vorgänge durchführen, die für dieses spezifische Dokument aktiviert sind.
+Mit der Java-Client-API der Acrobat Reader DC-Erweiterungen und dem entsprechenden Webservice können Sie Verwendungsrechte auf PDF-Dokumente anwenden. Verwendungsrechte gelten für Funktionen, die standardmäßig in Acrobat, nicht jedoch in Adobe Reader zur Verfügung stehen, wie etwa die Möglichkeit, Kommentare zu einem Formular hinzuzufügen oder Formularfelder auszufüllen und das Formular zu speichern. PDF-Dokumente, auf die Verwendungsrechte angewendet wurden, werden als Dokumente mit aktivierten Benutzerrechten bezeichnet. Ein Benutzer, der ein Dokument mit aktivierten Benutzerrechten in Adobe Reader öffnet, kann Vorgänge durchführen, die für dieses spezifische Dokument aktiviert sind.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Um einen Vorgang für den Service „Acrobat Reader DC-Erweiterungen“ programm
 
 **Abrufen eines PDF-Dokuments**
 
-Sie müssen ein PDF-Dokument abrufen, um Verwendungsrechte anwenden zu können. Berechtigungsaktivierte PDF-Dokumente enthalten ein Wörterbuch zu Verwendungsrechten. Wenn Adobe Reader ein Dokument öffnet, das ein solches Wörterbuch enthält, werden nur diejenigen Verwendungsrechte aktiviert, die im Wörterbuch für dieses Dokument angegeben sind. Wenn das Dokument kein Wörterbuch für Verwendungsrechte enthält, erstellt der Service „Acrobat Reader DC-Erweiterungen“ eines. Wenn es bereits ein Wörterbuch enthält, überschreibt der Service „Acrobat Reader DC-Erweiterungen“ vorhandene Verwendungsrechte mit den von Ihnen angegebenen. Das Wörterbuch gibt an, welche Verwendungsrechte aktiviert sind. Wenn ein Benutzer das Dokument in Adobe Reader öffnet, sind nur die im Wörterbuch angegebenen Verwendungsrechte zulässig.
+Sie müssen ein PDF-Dokument abrufen, um Verwendungsrechte anzuwenden. Berechtigungsaktivierte PDF-Dokumente enthalten ein Wörterbuch zu Verwendungsrechten. Wenn Adobe Reader ein Dokument öffnet, das ein solches Wörterbuch enthält, werden nur diejenigen Verwendungsrechte aktiviert, die im Wörterbuch für dieses Dokument angegeben sind. Wenn das Dokument kein Wörterbuch für Verwendungsrechte enthält, erstellt der Service „Acrobat Reader DC-Erweiterungen“ eines. Wenn es bereits ein Wörterbuch enthält, überschreibt der Service „Acrobat Reader DC-Erweiterungen“ vorhandene Verwendungsrechte mit den von Ihnen angegebenen. Das Wörterbuch gibt an, welche Verwendungsrechte aktiviert sind. Wenn ein Benutzer das Dokument in Adobe Reader öffnet, sind nur die im Wörterbuch angegebenen Verwendungsrechte zulässig.
 
 **Angeben der anzuwendenden Verwendungsrechte**
 
@@ -128,11 +128,13 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Java) Verwe
 
       * Das `UsageRights`-Objekt, das die Verwendungsrechte enthält, die auf das Dokument angewendet werden sollen.
       * Ein Zeichenfolgenwert, der eine Meldung angibt, die ein Benutzer zu sehen bekommt, wenn das berechtigungsaktivierte PDF-Dokument in Adobe Reader 7.x geöffnet wird. Diese Meldung wird in Adobe Reader 8.0 nicht angezeigt.
+
    * Wenden Sie Verwendungsrechte auf das PDF-Dokument an, indem Sie die Methode `applyUsageRights` des `ReaderExtensionsServiceClient`-Objekts aufrufen und die folgenden Werte übergeben:
 
       * Das `com.adobe.idp.Document`-Objekt, das das PDF-Dokument enthält, auf das die Verwendungsrechte angewendet werden.
       * Ein Zeichenfolgenwert, der den Alias der Berechtigung angibt, dank derer Sie Verwendungsrechte anwenden können.
       * Ein Zeichenfolgenwert, der den entsprechenden Kennwortwert angibt. (Derzeit wird dieser Parameter ignoriert. Sie können `null` übergeben.)
+
    * Das `ReaderExtensionsOptionSpec`-Objekt, das Laufzeitoptionen enthält.
 
    Die Methode `applyUsageRights` gibt ein `com.adobe.idp.Document`-Objekt zurück, das das berechtigungsaktivierte PDF-Dokument enthält.
@@ -200,6 +202,7 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Webservice)
       * Das `BLOB`-Objekt, das das PDF-Dokument enthält, auf das die Verwendungsrechte angewendet werden.
       * Ein Zeichenfolgenwert, der den Alias der Berechtigung angibt, dank derer Sie Verwendungsrechte anwenden können.
       * Ein Zeichenfolgenwert, der den entsprechenden Kennwortwert angibt. (Derzeit wird dieser Parameter ignoriert. Sie können `null` übergeben.)
+
    * Das `ReaderExtensionsOptionSpec`-Objekt, das Laufzeitoptionen enthält.
 
    Die Methode `applyUsageRights` gibt ein `BLOB`-Objekt zurück, das das berechtigungsaktivierte PDF-Dokument enthält.
@@ -221,7 +224,7 @@ So wenden Sie mithilfe der API für Acrobat Reader DC-Erweiterungen (Webservice)
 
 ## Entfernen von Verwendungsrechten aus PDF-Dokumenten {#removing-usage-rights-from-pdf-documents}
 
-Sie können Verwendungsrechte aus einem berechtigungsaktivierten Dokument entfernen. Das Entfernen von Verwendungsrechten aus einem berechtigungsaktivierten PDF-Dokument ist auch erforderlich, um andere AEM Forms-Vorgänge damit durchführen zu können. Sie müssen beispielsweise ein PDF-Dokument digital signieren (bzw. zertifizieren), bevor Sie Verwendungsrechte festlegen. Wenn Sie demnach Vorgänge auf ein berechtigungsaktiviertes Dokument anwenden möchten, müssen Sie die Verwendungsrechte vom PDF-Dokument entfernen, die anderen Vorgänge anwenden (z. B. das Dokument digital signieren) und anschließend die Verwendungsrechte für das Dokument wieder aktivieren.
+Sie können Verwendungsrechte aus einem berechtigungsaktivierten Dokument entfernen. Das Entfernen von Verwendungsrechten aus einem PDF-Dokument mit aktivierten Benutzerrechten ist auch erforderlich, um andere AEM Forms-Vorgänge darauf auszuführen. Sie müssen beispielsweise ein PDF-Dokument digital signieren (bzw. zertifizieren), bevor Sie Verwendungsrechte festlegen. Wenn Sie demnach Vorgänge auf ein berechtigungsaktiviertes Dokument anwenden möchten, müssen Sie die Verwendungsrechte vom PDF-Dokument entfernen, die anderen Vorgänge anwenden (z. B. das Dokument digital signieren) und anschließend die Verwendungsrechte für das Dokument wieder aktivieren.
 
 >[!NOTE]
 >
@@ -245,9 +248,9 @@ Schließen Sie die erforderlichen Dateien in Ihr Entwicklungsprojekt ein. Wenn S
 
 Bevor Sie einen Service-Vorgang für Acrobat Reader DC-Erweiterungen programmgesteuert ausführen können, müssen Sie ein Service-Client-Objekt für Acrobat Reader DC-Erweiterungen erstellen. Wenn Sie die Java-API verwenden, erstellen Sie ein `ReaderExtensionsServiceClient`-Objekt. Wenn Sie die Web-Service-API für Acrobat Reader DC-Erweiterungen verwenden, erstellen Sie ein `ReaderExtensionsServiceService`-Objekt.
 
-**Abrufen eines berechtigungsaktivierten PDF-Dokuments**
+**Abrufen eines PDF-Dokuments mit aktivierten Verwendungsrechten**
 
-Rufen Sie ein berechtigungsaktiviertes PDF-Dokument ab, um Verwendungsrechte zu entfernen.
+Rufen Sie ein PDF-Dokument mit aktivierten Benutzerrechten ab, um Verwendungsrechte zu entfernen.
 
 **Entfernen von Verwendungsrechten aus dem PDF-Dokument**
 
@@ -385,7 +388,7 @@ Bevor Sie einen Service-Vorgang für Acrobat Reader DC-Erweiterungen programmges
 
 **Abrufen eines PDF-Dokuments mit aktivierten Verwendungsrechten**
 
-Sie müssen ein PDF-Dokument mit aktivierten Verwendungsrechten abrufen, um Informationen über die Berechtigung zu erhalten. Sie können auch Informationen zu einer Berechtigung abrufen, indem Sie deren Alias angeben. Wenn Sie jedoch Informationen zu einer Berechtigung abrufen möchten, die zum Anwenden von Verwendungsrechten auf ein bestimmtes PDF-Dokument mit aktivierten Rechten verwendet wurde, müssen Sie das Dokument abrufen.
+Sie müssen ein PDF-Dokument mit aktivierten Berechtigungen abrufen, um Informationen über die Berechtigung abzurufen. Sie können auch Informationen zu einer Berechtigung abrufen, indem Sie deren Alias angeben. Wenn Sie jedoch Informationen zu einer Berechtigung abrufen möchten, die zum Anwenden von Verwendungsrechten auf ein bestimmtes PDF-Dokument mit aktivierten Rechten verwendet wurde, müssen Sie das Dokument abrufen.
 
 **Abrufen von Informationen zur Berechtigung**
 

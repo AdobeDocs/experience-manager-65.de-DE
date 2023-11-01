@@ -10,10 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '801'
-ht-degree: 36%
+source-wordcount: '795'
+ht-degree: 35%
 
 ---
 
@@ -68,7 +68,7 @@ Beim Konfigurieren des Encapsulated Tokens müssen einige Aspekte beachtet werde
 
 ### Replizieren des HMAC-Schlüssels {#replicating-the-hmac-key}
 
-Um den Schlüssel auf weitere Instanzen zu replizieren, führen Sie die folgenden Schritte durch:
+Um den Schlüssel über mehrere Instanzen hinweg zu replizieren, müssen Sie:
 
 1. Greifen Sie auf die AEM-Instanz zu, auf der sich die zu kopierenden Schlüsseldaten befinden. In der Regel handelt es sich dabei um eine Autoreninstanz.
 1. Suchen Sie im lokalen Dateisystem das Bundle `com.adobe.granite.crypto.file`. Es kann sich z. B. unter diesem Pfad befinden:

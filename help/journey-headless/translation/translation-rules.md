@@ -2,10 +2,10 @@
 title: Konfigurieren von Übersetzungsregeln
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '871'
-ht-degree: 89%
+source-wordcount: '869'
+ht-degree: 87%
 
 ---
 
@@ -68,7 +68,7 @@ In der Benutzeroberfläche der **Übersetzungskonfiguration** gibt es eine Reihe
 1. AEM speichert die Konfiguration.
 1. Sie müssen den soeben erstellten Kontext auswählen und dann auf **Bearbeiten** tippen oder klicken. Dadurch wird der **Editor für Übersetzungsregeln** geöffnet, in dem die Eigenschaften konfiguriert werden können.
    ![Editor für Übersetzungsregeln](assets/translation-rules-editor.png)
-1. Standardmäßig werden alle Konfigurationen vom übergeordneten Pfad übernommen, in diesem Fall `/content/dam`. Deaktivieren Sie die Option **Übernehmen von`/content/dam`**, um der Konfiguration zusätzliche Felder hinzuzufügen.
+1. Standardmäßig werden alle Konfigurationen vom übergeordneten Pfad übernommen, in diesem Fall `/content/dam`. Deaktivieren Sie die Option **Vererben von`/content/dam`** , um der Konfiguration zusätzliche Felder hinzuzufügen.
 1. Ist diese Option deaktiviert, fügen Sie im Abschnitt **Allgemein** der Liste die Eigenschaftsnamen der Inhaltsfragmentmodelle hinzu, die Sie [zuvor als zu übersetzende Felder identifiziert haben.](getting-started.md#content-models)
    1. Geben Sie den Eigenschaftsnamen im Feld **Neue Eigenschaft** ein.
    1. Die Optionen **Übersetzen** und **Übernehmen** werden automatisch aktiviert.

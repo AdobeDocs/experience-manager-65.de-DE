@@ -3,16 +3,16 @@ title: Schritte zur Aktualisierung von Installationen auf Anwendungs-Servern
 description: Erfahren Sie, wie Sie Instanzen von AEM aktualisieren, die über Anwendungsserver bereitgestellt werden.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
-workflow-type: ht
-source-wordcount: '452'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 75%
 
 ---
 
 # Schritte zur Aktualisierung von Installationen auf Anwendungs-Servern{#upgrade-steps-for-application-server-installations}
 
-In diesem Abschnitt wird die Vorgehensweise zum Aktualisieren von AEM für Anwendungsserverinstallationen beschrieben.
+In diesem Abschnitt wird das Verfahren beschrieben, das zum Aktualisieren von AEM für Anwendungsserverinstallationen befolgt werden muss.
 
 In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwendet. Zudem wird vorausgesetzt, dass Sie bereits eine funktionierende AEM-Version installiert haben. In dieser Anleitung wird die Aktualisierung von **AEM 6.4 auf 6.5** beschrieben.
 
@@ -30,7 +30,7 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwen
 
 1. Heben Sie als Nächstes über TomCat App Manager (`http://serveraddress:serverport/manager/html`) die Bereitstellung von AEM 6.4 auf.
 
-1. Migrieren Sie das Repository nun mithilfe des crx2oak-Migrations-Tools. Laden Sie dazu die neueste Version von crx2oak von [diesem Speicherort](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/) herunter.
+1. Migrieren Sie das Repository nun mithilfe des crx2oak-Migrations-Tools. Laden Sie dazu die neueste Version von crx2oak herunter von [dieser Speicherort](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/).
 
    ```shell
    SLING_HOME= $AEM-HOME/crx-quickstart java -Xmx4096m -jar crx2oak.jar --load-profile segment-fds
@@ -57,9 +57,9 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwen
 
       1. `sling.run.mode.install.options`
 
-1. Entfernen Sie die nicht mehr benötigten Dateien und Ordner. Insbesondere müssen Sie diese Elemente entfernen:
+1. Entfernen Sie nicht mehr benötigte Dateien und Ordner. Die Elemente, die Sie speziell entfernen müssen, sind:
 
-   * Den Ordner **launchpad/startup**. Sie können ihn löschen, indem Sie am Terminal den folgenden Befehl ausführen: `rm -rf crx-quickstart/launchpad/startup`
+   * Die **launchpad/startup-Ordner**. Sie können ihn löschen, indem Sie am Terminal den folgenden Befehl ausführen: `rm -rf crx-quickstart/launchpad/startup`
 
    * Die Datei **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
 
@@ -72,22 +72,22 @@ In allen Beispielen in diesem Verfahren wird Tomcat als Anwendungs-Server verwen
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
 
-   Diese zwei Dateien legen fest, dass AEM einen „TarMK“-Knotenspeicher und einen „File“-Datenspeicher verwendet.
+   Diese beiden Dateien konfigurieren AEM so, dass ein TarMK-Knotenspeicher und ein Dateidatenspeicher verwendet werden.
 
-1. Bearbeiten Sie die Konfigurationsdateien, damit sie einsatzbereit sind. Gehen Sie dazu folgendermaßen vor:
+1. Bearbeiten Sie die Konfigurationsdateien, um sie einsatzbereit zu machen. Im Einzelnen:
 
    * Fügen Sie die folgende Zeile zu `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` hinzu:
 
-      `customBlobStore=true`
+     `customBlobStore=true`
 
    * Fügen Sie dann die folgenden Zeilen zu `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.config` hinzu:
 
-      ```
-      path=./crx-quickstart/repository/datastore
-      minRecordLength=4096
-      ```
+     ```
+     path=./crx-quickstart/repository/datastore
+     minRecordLength=4096
+     ```
 
-1. Ändern Sie nun die Ausführungsmodi in der WAR-Datei für AEM 6.5. Erstellen Sie dafür zunächst einen temporären Ordner, in dem die WAR-Datei für AEM 6.5 gespeichert wird. Der Name des Ordners in diesem Beispiel lautet `temp`. Extrahieren Sie nach dem Kopieren der WAR-Datei deren Inhalte im temporären Ordner:
+1. Ändern Sie nun die Ausführungsmodi in der WAR-Datei für AEM 6.5. Erstellen Sie dazu zunächst einen temporären Ordner, der den AEM 6.5-Krieg beherbergt. Der Name des Ordners in diesem Beispiel lautet `temp`. Extrahieren Sie nach dem Kopieren der WAR-Datei deren Inhalte im temporären Ordner:
 
    ```
    jar xvf aem-quickstart-6.5.0.war

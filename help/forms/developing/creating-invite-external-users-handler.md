@@ -3,10 +3,10 @@ title: Erstellen eines Handlers zum Einladen externer Benutzer
 description: Erfahren Sie, wie Sie einen Handler für eingeladene externe Benutzer erstellen. Dadurch kann der Rights Management-Dienst externe Benutzer einladen, Rights Management-Benutzer zu werden.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1135'
-ht-degree: 96%
+source-wordcount: '1133'
+ht-degree: 94%
 
 ---
 
@@ -170,7 +170,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## Definieren der XML-Komponentendatei für den Autorisierungs-Handler {#define-component-xml-authorization-handler}
 
-Sie müssen eine XML-Komponentendatei definieren, um die Handler-Komponente zum Einladen externer Benutzer bereitzustellen. Für jede Komponente ist eine XML-Komponentendatei vorhanden, die Metadaten zur Komponente bereitstellt.
+Sie müssen eine Komponenten-XML-Datei definieren, um die Handler-Komponente für eingeladene externe Benutzer bereitzustellen. Für jede Komponente ist eine XML-Komponentendatei vorhanden, die Metadaten zur Komponente bereitstellt.
 
 Die folgende `component.xml`-Datei wird für den Handler zum Einladen externer Benutzer verwendet. Beachten Sie, dass der Service-Name `InviteExternalUsersSample` lautet und der Vorgang, den dieser Service bereitstellt, heißt `invitedUser`. Der Eingabeparameter ist eine `java.util.List`-Instanz und der Ausgabewert ist ein Array von `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult`-Instanzen.
 

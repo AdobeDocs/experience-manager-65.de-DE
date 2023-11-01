@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5396'
 ht-degree: 48%
 
 ---
@@ -1004,7 +1004,7 @@ Sie können den Repository-Dienst mithilfe einer Java-Client-Bibliothek aufrufen
 
 ## Aufrufen eines kurzlebigen Prozesses mithilfe der Aufruf-API {#invoking-a-short-lived-process-using-the-invocation-api}
 
-Sie können einen kurzlebigen Prozess mithilfe der Java-Aufruf-API aufrufen. Wenn Sie einen kurzlebigen Prozess mit der Aufruf-API aufrufen, übergeben Sie die erforderlichen Parameterwerte mithilfe eines `java.util.HashMap`-Objekts. Rufen Sie für jeden Parameter, der an einen Dienst übergeben werden soll, die `java.util.HashMap` -Objekt `put` -Methode und geben Sie das Name-Wert-Paar an, das für den Dienst erforderlich ist, um den angegebenen Vorgang auszuführen. Geben Sie den genauen Namen der Parameter an, die zum kurzlebigen Prozess gehören.
+Sie können einen kurzlebigen Prozess mithilfe der Java-Aufruf-API aufrufen. Wenn Sie einen kurzlebigen Prozess mit der Aufruf-API aufrufen, übergeben Sie die erforderlichen Parameterwerte mithilfe eines `java.util.HashMap`-Objekts. Rufen Sie für jeden Parameter, der an einen Dienst übergeben werden soll, die `java.util.HashMap` -Objekt `put` -Methode und geben Sie das Name-Wert-Paar an, das vom Dienst für die Ausführung des angegebenen Vorgangs benötigt wird. Geben Sie den genauen Namen der Parameter an, die zum kurzlebigen Prozess gehören.
 
 >[!NOTE]
 >

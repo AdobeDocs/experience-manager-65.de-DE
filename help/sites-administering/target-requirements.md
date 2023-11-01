@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '558'
-ht-degree: 65%
+source-wordcount: '556'
+ht-degree: 63%
 
 ---
 
@@ -30,7 +30,7 @@ Der Clientcode identifiziert das Adobe Target-Kundenkonto beim Aufrufen des Adob
 
 >[!NOTE]
 >
->Ihr Konto muss auch vom Target-Team aktiviert werden, damit die Integration genutzt werden kann.
+>Ihr Konto muss auch vom Target-Team aktiviert werden, um die Integration verwenden zu können.
 >
 >Falls dies nicht der Fall ist, wenden Sie sich an die [Kundenunterstützung von Adobe](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html?lang=de).
 
@@ -39,7 +39,7 @@ Der Clientcode identifiziert das Adobe Target-Kundenkonto beim Aufrufen des Adob
 Auf der Autoreninstanz muss der Test-and-Target-[Replikationsagent](/help/sites-deploying/replication.md) aktiviert werden. Dieser Replikationsagent ist standardmäßig deaktiviert, wenn Sie bei der Installation von AEM den Ausführungsmodus [nosamplecontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) verwendet haben. Weitere Informationen zum Schützen der Produktionsumgebung finden Sie im Abschnitt [Sicherheitscheckliste](/help/sites-administering/security-checklist.md).
 
 1. Klicken oder tippen Sie auf der AEM Homepage auf **Instrumente** > **Implementierung** > **Replikation**.
-1. Klicken oder tippen Sie auf **Agenten für Autor**.
+1. Klicken oder tippen Sie **Agenten für Autor**.
 1. Klicken oder tippen Sie auf **Test und Target (Test und Ziel)** Replikationsagent und klicken oder tippen Sie dann auf **Bearbeiten**.
 1. Wählen Sie die Option Aktiviert aus und klicken oder tippen Sie auf **OK**.
 

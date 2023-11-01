@@ -10,10 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '938'
-ht-degree: 67%
+source-wordcount: '936'
+ht-degree: 65%
 
 ---
 
@@ -83,7 +83,7 @@ Im Menü **Datei** von Brackets wählen Sie **Ordner öffnen...** und wählen Si
 
 ### Projekteinstellungen {#project-settings}
 
-Um Ihren Inhalt mit einer AEM-Entwicklungsinstanz zu synchronisieren, müssen Sie Ihre Projekteinstellungen definieren. Dies erreichen Sie, indem Sie das Menü **AEM** aufrufen und **Projekteinstellungen** wählen.
+Um Ihre Inhalte von und zu einer AEM Entwicklungsinstanz zu synchronisieren, müssen Sie Ihre Projekteinstellungen definieren. Dies erreichen Sie, indem Sie das Menü **AEM** aufrufen und **Projekteinstellungen** wählen.
 
 ![chlimage_1-55](assets/chlimage_1-55a.png)
 

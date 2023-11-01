@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4613'
-ht-degree: 61%
+source-wordcount: '4609'
+ht-degree: 60%
 
 ---
 
@@ -41,9 +41,9 @@ Wenn das Repository so konzipiert ist, dass eine vorherige Kenntnis des Speicher
 
 Ein Beispiel hierfür wäre das Rendern von Inhalten, die zu einer bestimmten Kategorie passen. Ein Ansatz wäre, den Inhalt mit einer Kategorieeigenschaft zu organisieren, die abgefragt werden kann, um eine Komponente mit Elementen einer Kategorie aufzufüllen.
 
-Besser wäre es allerdings, diesen Inhalt in einer Taxonomie nach Kategorie zu strukturieren, damit er manuell abgerufen werden kann.
+Ein besserer Ansatz wäre, diesen Inhalt in einer Taxonomie nach Kategorie zu strukturieren, damit er manuell abgerufen werden kann.
 
-Angenommen, der Inhalt wird in einer Taxonomie wie der folgenden gespeichert:
+Nahmen wir beispielsweise an, der Inhalt wird in einer Taxonomie gespeichert ist, die Folgendem ähnelt:
 
 ```xml
 /content/myUnstructuredContent/parentCategory/childCategory/contentPiece
@@ -51,7 +51,7 @@ Angenommen, der Inhalt wird in einer Taxonomie wie der folgenden gespeichert:
 
 Die `/content/myUnstructuredContent/parentCategory/childCategory` -Knoten können einfach abgerufen werden, seine untergeordneten Elemente können analysiert und zum Rendern der Komponente verwendet werden.
 
-Wenn Sie es mit einem kleinen oder homogenen Ergebnissatz zu tun haben, kann es auch schneller sein, das Repository zu durchlaufen und die erforderlichen Knoten zu sammeln, anstatt eine Abfrage zu erstellen, um denselben Ergebnissatz zurückzugeben. Generell sollten Abfragen vermieden werden, soweit dies möglich ist.
+Wenn Sie es mit einem kleinen oder homogenen Ergebnissatz zu tun haben, kann es auch schneller sein, das Repository zu durchlaufen und die erforderlichen Knoten zu sammeln, anstatt eine Abfrage zu erstellen, um denselben Ergebnissatz zurückzugeben. Generell gilt, dass Abfragen nach Möglichkeit vermieden werden sollten.
 
 #### Vorabruf der Ergebnisse {#prefetching-results}
 
@@ -59,7 +59,7 @@ Mitunter lassen die Inhalte oder Anforderungen im Zusammenhang mit der Komponent
 
 Sofern die für die Komponente erforderlichen Ergebnisse zum Zeitpunkt der Erstellung ermittelt werden können und nicht von einer Änderung des Inhalts auszugehen ist, kann die Abfrage ausgeführt werden, wenn der Autor oder die Autorin Einstellungen im Dialogfeld anwendet.
 
-Wenn sich die Daten oder Inhalte regelmäßig ändern, kann die Abfrage planmäßig oder über einen Listener für Aktualisierungen der zugrunde liegenden Daten ausgeführt werden. Anschließend können die Ergebnisse in einen freigegebenen Speicherort im Repository geschrieben werden. Alle Komponenten, die diese Daten benötigen, können dann die Werte aus diesem einzelnen Knoten beziehen, ohne eine Abfrage zur Laufzeit auszuführen.
+Wenn sich die Daten oder Inhalte regelmäßig ändern, kann die Abfrage planmäßig oder über einen Listener für Aktualisierungen der zugrunde liegenden Daten ausgeführt werden. Anschließend können die Ergebnisse an einen freigegebenen Speicherort im Repository geschrieben werden. Alle Komponenten, die diese Daten benötigen, können dann die Werte aus diesem einzelnen Knoten beziehen, ohne eine Abfrage zur Laufzeit auszuführen.
 
 ## Abfrageoptimierung {#query-optimization}
 
@@ -105,13 +105,13 @@ Lucene registriert ein JMX-Bean, das Details zum indizierten Inhalt enthält, ei
 
 Ein Zugriff ist über die JMX-Konsole unter `https://server:port/system/console/jmx` möglich.
 
-Wenn Sie bei der JMX-Konsole angemeldet sind, suchen Sie nach **Lucene-Indexstatistiken**, um es zu finden. Weitere Indexstatistiken finden Sie im MBean **IndexStats**.
+Nachdem Sie in der JMX-Konsole angemeldet sind, suchen Sie nach **Lucene-Indexstatistiken** um sie zu finden. Weitere Indexstatistiken finden Sie im MBean **IndexStats**.
 
 Sehen Sie sich die MBean mit dem Namen **Oak Query Statistics**.
 
 Um Ihre Indizes mit einem Tool wie [Luke](https://code.google.com/archive/p/luke/) durchzugehen, müssen Sie die Oak-Konsole aufrufen und den Index vom `NodeStore` in einem Dateisystemverzeichnis sichern. Anweisungen hierzu finden Sie in der [Lucene-Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-Sie können die Indizes in Ihrem System auch im JSON-Format extrahieren. Hierzu müssen Sie auf Folgendes zugreifen: `https://server:port/oak:index.tidy.-1.json`
+Sie können die Indizes in Ihrem System auch im JSON-Format extrahieren. Dazu müssen Sie `https://server:port/oak:index.tidy.-1.json`
 
 ### Abfragelimits {#query-limits}
 

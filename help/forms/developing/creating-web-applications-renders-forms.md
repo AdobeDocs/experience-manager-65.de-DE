@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1874'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1872'
+ht-degree: 99%
 
 ---
 
@@ -151,8 +151,8 @@ Führen Sie die folgenden Aufgaben aus, um ein auf Fragmenten basierendes Formul
 1. Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte mithilfe seines Konstruktors speichert.
 1. Rufen Sie die Methode `setApplicationWebRoot` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Web-Stamm des Programms darstellt.
 1. Rufen Sie die `setContentRootURI`-Methode des `URLSpec`-Objekts auf und übergeben Sie ihr einen Zeichenfolgenwert, der den Inhaltsstamm-URI angibt. Stellen Sie sicher, dass sich der Formularentwurf und die Fragmente im URI des Inhaltsstamms befinden. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das AEM Forms-Repository zu verweisen, geben Sie `repository://` an.
-1. Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Wert der Ziel-URL angibt, an die die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
-1. Rufen Sie die Methode `renderPDFForm` des `FormsServiceClient`-Objekts auf und übergeben Sie die folgenden Werte:
+1. Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Wert der Ziel-URL angibt, an die die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular zur Durchführung von Berechnungen gesendet wird.
+1. Rufen Sie die Methode `renderPDFForm` des `FormsServiceClient`-Objekts auf und übergeben Sie ihr folgende Werte:
 
    * Ein Zeichenfolgenwert, der den Namen des Formularentwurfs angibt, einschließlich der Dateinamenerweiterung.
    * Ein `com.adobe.idp.Document`-Objekt, das Daten enthält, die mit dem Formular zusammengeführt werden sollen (erstellt in Schritt 2).
@@ -397,4 +397,4 @@ Nach der Bereitstellung der Webanwendung können Sie sie mithilfe eines Webbrows
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
-   Wählen Sie ein Optionsfeld aus und klicken Sie auf die Schaltfläche „Submit“. Ein Formular, das auf Fragmenten basiert, wird im Webbrowser angezeigt. Wenn Probleme auftreten, lesen Sie die Protokolldatei des J2EE-Anwendungsservers.
+  Wählen Sie ein Optionsfeld aus und klicken Sie auf die Schaltfläche „Submit“. Ein Formular, das auf Fragmenten basiert, wird im Webbrowser angezeigt. Wenn Probleme auftreten, lesen Sie die Protokolldatei des J2EE-Anwendungsservers.

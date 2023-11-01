@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1431'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1429'
+ht-degree: 96%
 
 ---
 
@@ -53,8 +53,8 @@ Bevor Sie einen Client-API-Vorgang für den Forms-Service programmgesteuert durc
 
 Sie können die folgenden leistungsbezogenen Laufzeitoptionen festlegen, um die Leistung des Forms-Service zu verbessern:
 
-* **Formular-Caching**: Sie können ein Formular zwischenspeichern, das im Servercache als PDF gerendert wird. Jedes Formular wird zwischengespeichert, nachdem es zum ersten Mal generiert wurde. Wenn bei einem nachfolgenden Render-Vorgang das zwischengespeicherte Formular neuer ist als der Zeitstempel des Formularentwurfs, wird das Formular aus dem Cache abgerufen. Durch das Caching von Formularen verbessern Sie die Leistung des Forms-Service, da das Formular-Design nicht aus einem Repository abgerufen werden muss.
-* Das Rendering von Formularleitfäden (veraltet) kann länger dauern als die Wiedergabe anderer Umwandlungstypen. Es wird empfohlen, Formularleitfäden (veraltet) zwischenzuspeichern, um die Leistung zu verbessern.
+* **Formular-Caching**: Sie können ein Formular zwischenspeichern, das im Servercache als PDF gerendert wird. Jedes Formular wird zwischengespeichert, nachdem es zum ersten Mal generiert wurde. Wenn bei einer nachfolgenden Wiedergabe das zwischengespeicherte Formular neuer ist als der Zeitstempel des Formularentwurfs, wird das Formular aus dem Cache abgerufen. Durch das Caching von Formularen verbessern Sie die Leistung des Forms-Service, da das Formular-Design nicht aus einem Repository abgerufen werden muss.
+* Das Rendering von Formularleitfäden (veraltet) kann länger dauern als die Wiedergabe anderer Umwandlungstypen. Es wird empfohlen, Formular-Guides (nicht mehr unterstützt) zwischenzuspeichern, um die Leistung zu verbessern.
 * **Option für eigenständige Formulare**: Wenn der Forms-Service keine serverseitigen Berechnungen durchführen muss, können Sie diese Option auf `true` setzen, wodurch Formulare ohne Statusinformationen wiedergegeben werden. Statusinformationen sind erforderlich, wenn Sie ein interaktives Formular an einen Endbenutzer rendern möchten, der dann Informationen in das Formular eingibt und das Formular an den Forms-Service zurücksendet. Der Forms-Dienst führt anschließend eine Berechnung durch und gibt das Formular mit im Formular angezeigten Ergebnissen an den Benutzer zurück. Wenn ein Formular ohne Statusinformationen an den Forms-Service zurückgesendet wird, sind nur die XML-Daten verfügbar und serverseitige Berechnungen werden nicht durchgeführt.
 * **Linearisierte PDFs**: Ein linearisiertes PDF-Dokument ist so organisiert, dass es inkrementellen Zugriff in einer Netzwerkumgebung ermöglicht. Die PDF-Datei ist in jeder Hinsicht gültig und mit allen vorhandenen Viewern und anderen PDF-Anwendungen kompatibel. Das heißt, dass eine linearisierte PDF angezeigt werden kann, während sie noch heruntergeladen wird.
 * Diese Option verbessert nicht die Leistung, wenn ein PDF-Formular auf dem Client wiedergegeben wird.

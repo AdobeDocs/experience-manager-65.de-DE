@@ -2,10 +2,10 @@
 title: Übergeben von Anmeldeinformationen mithilfe von WS-Security-Kopfzeilen
 description: Erfahren Sie, wie Sie Berechtigungen mithilfe von WS-Security-Headern übergeben.
 exl-id: 519d57ad-81ab-4caf-ae25-4390ae2eee13
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
-workflow-type: ht
-source-wordcount: '217'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 90%
 
 ---
 
@@ -34,9 +34,8 @@ In diesem Dokument werden folgende Themen behandelt:
 
 ## Voraussetzungen {#requirements}
 
-Um dieses Dokument optimal nutzen zu können, benötigen Sie ein fundiertes Verständnis der AEM Forms on JEE-Software.
+Um dieses Dokument optimal nutzen zu können, benötigen Sie ein solides Verständnis der AEM Forms on JEE-Software.
 
 >[!MORELIKETHIS]
 >
 >* [Übergeben von Anmeldeinformationen mithilfe von WS-Security-Kopfzeilen](assets/passing-credentials-using-ws-security-headers.pdf)
-

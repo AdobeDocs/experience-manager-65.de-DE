@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '574'
 ht-degree: 96%
 
 ---
@@ -90,9 +90,9 @@ Sie können den Seitenvergleich jederzeit beenden, indem Sie in der Kopfzeile au
 
 Es gibt Situationen, in denen der Seitenvergleich möglicherweise Unterschiede nicht wie erwartet erkennt.
 
-* Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihres Inhalts nutzen).
+* Beim Vergleich von Versionen und Launches berücksichtigt der Seitenvergleich keine dynamischen Komponenten wie Breadcrumbs, Menüs, Produktlisten oder Logos (Komponenten, die die Site-Struktur zur Darstellung ihrer Inhalte nutzen).
 * Bei Versionen erstellt der Vergleich die Richtlinien zur Zugriffssteuerung und die Live Copy-Beziehungen nicht neu.
-* Wenn eine Seite verschoben wird, können Sie keinen Vergleich mehr mit Versionen durchführen, die vor dem Verschieben erstellt wurden. 
+* Wenn eine Seite verschoben wird, können Sie keinen Vergleich mehr mit Versionen durchführen, die vor dem Verschieben erstellt wurden.
 
    * Wenn Probleme beim Vergleich auftreten, überprüfen Sie in der [Zeitleiste](/help/sites-authoring/basic-handling.md#timeline) der Seite, ob die Seite verschoben wurde.
 

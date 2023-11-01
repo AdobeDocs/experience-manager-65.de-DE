@@ -1,19 +1,15 @@
 ---
 title: Repository-Neustrukturierung in AEM 6.5
-seo-title: Sites Repository Restructuring in AEM 6.5
-description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um die neue Repository-Struktur in AEM 6.5 für Sites zu migrieren.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Sites.
-uuid: 6dc5f8bd-1680-40af-9b8f-26c1f4bc3304
+description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um in AEM 6.5 für Sites zur neuen Repository-Struktur zu migrieren.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
-workflow-type: ht
-source-wordcount: '1462'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1460'
+ht-degree: 72%
 
 ---
 
@@ -36,7 +32,6 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
 * [Seiten-Strukturvorlage](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-scaffolding)
 * [Responsives Raster (LESS)](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#responsive-grid-less)
 * [Designs für statische Vorlagen](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#static-template-designs)
-
 <!-- Search&Promote is end-of-life September 1, 2022 * [Adobe Search and Promote Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-search-and-promote-integration-client-libraries) -->
 * [Client-Bibliotheken für die Integration mit Adobe Target](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-target-integration-client-libraries)
 * [WCM Foundation-Client-Bibliotheken](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#wcm-foundation-client-libraries)
@@ -53,7 +48,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Neuer Speicherort</strong></td>
-   <td><p><code>/apps/settings/wcm/segments</code> </p> <p><code>/conf/settings/settings/wcm/segments</code> </p> <p><code>/conf/&lt;tenant&gt;/settings/wcm/segments</code></p> </td>
+   <td><p><code>/apps/settings/wcm/segments</code><br /> </p> <p><code>/conf/settings/settings/wcm/segments</code><br /> </p> <p><code>/conf/&lt;tenant&gt;/settings/wcm/segments</code></p> </td>
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
@@ -68,7 +63,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td><p>ContextHub-Segmente, die am vorherigen Speicherort erhalten bleiben, werden unter <strong>AEM &gt; Personalisierung &gt; Zielgruppen</strong> als schreibgeschützt angezeigt.</p> <p>Wenn ContextHub-Segmente in AEM bearbeitbar sein sollen, müssen sie an den neuen Speicherort (<code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>) migriert werden. Alle neuen ContentHub-Segmente, die in AEM erstellt werden, bleiben am neuen Speicherort (<code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>) erhalten.</p> <p>Die Seiteneigenschaften von AEM Sites erlauben lediglich die Auswahl des vorherigen Speicherorts (<code>/etc</code>) oder eines einzelnen neuen Speicherorts (<code>/apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>), daher müssen ContextHub-Segmente entsprechend migriert werden.</p> <p>Alle ungenutzten ContextHub-Segmente von AEM-Referenz-Sites können entfernt werden und müssen und nicht an den neuen Speicherort migriert werden:</p>
+   <td><p>ContextHub-Segmente, die am vorherigen Speicherort erhalten bleiben, werden unter <strong>AEM &gt; Personalisierung &gt; Zielgruppen</strong> als schreibgeschützt angezeigt.</p> <p>Wenn ContextHub-Segmente in AEM bearbeitbar sein sollen, müssen sie an den neuen Speicherort (<code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>) migriert werden. Alle neuen ContentHub-Segmente, die in AEM erstellt werden, bleiben am neuen Speicherort (<code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>) erhalten.</p> <p>Die Seiteneigenschaften von AEM Sites erlauben lediglich die Auswahl des vorherigen Speicherorts (<code>/etc</code>) oder eines einzelnen neuen Speicherorts (<code>/apps</code>, <code>/conf/global</code> oder <code>/conf/&lt;tenant&gt;</code>), daher müssen ContextHub-Segmente entsprechend migriert werden.</p> <p>Nicht verwendete ContextHub-Segmente aus AEM Referenz-Sites können entfernt und nicht an den neuen Speicherort migriert werden:</p>
     <ul>
      <li>/etc/segmentation/geometrixx/</li>
      <li>/etc/segmentation/geometrixx-outdoors</li>
@@ -93,10 +88,10 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Jede benutzerdefinierte Nutzung dieser Client-Bibliotheken sollte nach Kategorie und nicht nach Pfad auf die Client-Bibliothek verweisen:</p>
+   <td><p>Jede benutzerdefinierte Verwendung dieser Client-Bibliotheken sollte nach Kategorie und nicht nach Pfad auf die Client-Bibliothek verweisen:</p>
     <ol>
-     <li>Alle Verweise auf die Client-Bibliothek anhand des Pfads im vorherigen Speicherort sollten entsprechend dem <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzierungssystem für Client-Bibliotheken von AEM</a> aktualisiert werden.</li>
-     <li>Wenn das Referenzierungssystem für Client-Bibliotheken von AEM nicht verwendet werden kann, kann der absolute Pfad der Client-Bibliotheken über das Proxy-Servlet für Client-Bibliotheken von AEM referenziert werden.
+     <li>Alle Verweise auf die Client-Bibliothek nach Pfad am vorherigen Speicherort sollten aktualisiert werden, um <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzrahmen für AEM Client-Bibliothek</a>.</li>
+     <li>Wenn AEM Referenzierungsframework für Client-Bibliotheken nicht verwendet werden kann, kann über AEM Client Library Proxy-Servlet auf den absoluten Pfad der Client-Bibliotheken verwiesen werden.
       <ul>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/appmeasurement.js</code></li>
        <li><code>/etc.clientlibs/cq/analytics/clientlibs/sitecatalyst/plugins.js</code></li>
@@ -138,7 +133,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
     <ol>
      <li>Kopieren Sie die Designs vom bisherigen Speicherort an den neuen Speicherort (<code>/apps</code>).</li>
      <li>Wandeln Sie die gesamten CSS-, JavaScript- und statischen Ressourcen im Design in eine <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Client-Bibliothek</a> mit <code>allowProxy = true</code> um.</li>
-     <li>Aktualisieren Sie Verweise auf den vorherigen Speicherort in der Eigenschaft cq:designPath.</li>
+     <li>Aktualisieren Sie die Verweise auf den vorherigen Speicherort in der Eigenschaft cq:designPath .</li>
      <li>Aktualisieren Sie alle Seiten, die auf den vorherigen Speicherort verweisen, sodass sie die neue Kategorie der Client-Bibliothek verwenden (dies erfordert auf der Seite eine Aktualisierung des Implementierungs-Codes).</li>
      <li>Aktualisieren Sie AEM Dispatcher-Regeln, um die Unterstützung für Client-Bibliotheken über das Proxy-Servlet <code>/etc.clientlibs/</code> zuzulassen.</li>
     </ol> <p>Für alle Designs, die NICHT in SCM verwaltet werden und die über Design-Dialogfelder zur Laufzeit angepasst werden:</p>
@@ -225,7 +220,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td><p>Alle von AEM bereitgestellten Blueprint-Konfigurationen für den Multi-Site-Manager sind am neuen Speicherort unter <code>/libs</code> verfügbar.</p> <p>Inhalt verweist nicht auf die Blueprint-Konfigurationen für den Multi-Site-Manager, daher müssen keine Inhaltsverweise angepasst werden.</p> </td>
+   <td><p>Alle von AEM bereitgestellten Blueprint-Konfigurationen für den Multi-Site-Manager sind am neuen Speicherort unter <code>/libs</code> verfügbar.</p> <p>Der Inhalt verweist nicht auf die blauen Konfigurationen für den Multi-Site-Manager. Daher gibt es keine Inhaltsverweise, die angepasst werden müssen.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -252,7 +247,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td>Wenn migrierte Rollout-Konfigurationen für den Multi-Site-Manager nicht aus dem vorherigen Speicherort entfernt werden, werden den AEM-Autoren doppelte Rollout-Optionen angezeigt.</td>
+   <td>Wenn migrierte Rollout-Konfigurationen für den Multi-Site-Manager nicht vom vorherigen Speicherort entfernt werden, werden AEM Autoren doppelte Rollout-Optionen angezeigt.</td>
   </tr>
  </tbody>
 </table>
@@ -271,7 +266,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Die einzigen neuen unterstützten E-Mail-Vorlagen für die Seitenereignis-Benachrichtigung sind solche, die neue Lokalisationen unterstützen.</p> <p>Die Auflösung für die E-Mail-Vorlage für die Seitenereignis-Benachrichtigung geschieht in der folgenden Reihenfolge:</p>
+   <td><p>Die einzigen unterstützten neuen E-Mail-Vorlagen für Seitenereignis-Benachrichtigungen sind die Unterstützung neuer Gebietsschemata.</p> <p>Die Auflösung der E-Mail-Vorlage für Seitenereignisse erfolgt in der folgenden Reihenfolge:</p>
     <ol>
      <li><code>/etc/notification/email/default/com.day.cq.wcm.core.page</code></li>
      <li><code>/apps/settings/notification-templates/com.day.cq.wcm.core.page</code></li>
@@ -283,7 +278,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
    <td><p>Alle neuen oder geänderten E-Mail-Vorlagen für die Seitenereignis-Benachrichtigung müssen an den neuen Speicherort unter <code>/apps</code> migriert werden:</p>
     <ol>
      <li>Kopieren Sie alle neuen oder modifizierten E-Mail-Vorlagen für die Seitenereignis-Benachrichtigung vom vorherigen Speicherort an den neuen Speicherort (<code>/apps</code>).</li>
-     <li>Entfernen Sie alle migrierten E-Mail-Vorlagen für die Seitenereignis-Benachrichtigung vom vorherigen Speicherort.</li>
+     <li>Entfernen Sie alle migrierten E-Mail-Vorlagen für Seitenereignisbenachrichtigungen vom vorherigen Speicherort.</li>
     </ol> </td>
   </tr>
  </tbody>
@@ -309,7 +304,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td>Strukturvorlagen, die im vorherigen Speicherort erstellt wurden, verwenden das alte Strukturvorlagen-Framework und können nicht in den neuen Speicherort migriert werden. Zur Anpassung an den neuen Speicherort muss jede alte Strukturvorlage mithilfe des unterstützen Strukturvorlagen-Frameworks neu entwickelt werden.</td>
+   <td>Strukturvorlagen, die im vorherigen Speicherort erstellt wurden, verwenden das alte Strukturvorlagen-Framework und können nicht in den neuen Speicherort migriert werden. Um eine Anpassung an den neuen Speicherort zu ermöglichen, muss jede ältere Strukturvorlage mithilfe des unterstützten Strukturvorlagen-Frameworks neu entwickelt werden.</td>
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
@@ -332,9 +327,9 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Alle Verweise auf den vorherigen Speicherort in benutzerdefinierten LESS-Dateien müssen aktualisiert werden, damit ein Import vom neuen Speicherort erfolgt.</p>
+   <td><p>Alle Verweise auf den vorherigen Speicherort in benutzerdefinierten LESS-Dateien müssen aktualisiert werden, um sie vom neuen Speicherort zu importieren.</p>
     <ul>
-     <li>Aktualisieren Sie alle referenzierenden benutzerdefinierten LESS-Dateien, die auf grid_base.less im vorherigen Speicherort verweisen, sodass sie auf den neuen Speicherort zu verweisen.</li>
+     <li>Aktualisieren Sie alle referenzierenden benutzerdefinierten LESS-Dateien, die grid_base.less im vorherigen Speicherort referenzieren, um auf den neuen Speicherort zu verweisen.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -424,10 +419,10 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Jede benutzerdefinierte Nutzung dieser Client-Bibliotheken sollte nach Kategorie und nicht nach Pfad auf die Client-Bibliothek verweisen:</p>
+   <td><p>Jede benutzerdefinierte Verwendung dieser Client-Bibliotheken sollte nach Kategorie und nicht nach Pfad auf die Client-Bibliothek verweisen.</p>
     <ol>
-     <li>Alle Verweise auf die Client-Bibliothek anhand des Pfads im vorherigen Speicherort sollten entsprechend dem <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzierungssystem für Client-Bibliotheken von AEM</a> aktualisiert werden.</li>
-     <li>Wenn das Referenzierungssystem für Client-Bibliotheken von AEM nicht verwendet werden kann, kann der absolute Pfad der Client-Bibliotheken über das Proxy-Servlet für Client-Bibliotheken von AEM referenziert werden.</li>
+     <li>Alle Verweise auf die Client-Bibliothek nach Pfad am vorherigen Speicherort sollten aktualisiert werden, um <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzrahmen für AEM Client-Bibliothek</a>.</li>
+     <li>Wenn AEM Referenzierungsframework für Client-Bibliotheken nicht verwendet werden kann, kann der absolute Pfad der Client-Bibliotheken über AEM Client Library Proxy-Servlet referenziert werden:</li>
     </ol>
     <ul>
      <li><code>/etc.clientlibs/cq/testandtarget/clientlibs/testandtarget/testandtarget.js</code></li>
@@ -441,7 +436,7 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Anmerkungen</strong></td>
-   <td><p>Die Bearbeitung dieser Client-Bibliotheken wurde zu keinem Zeitpunkt unterstützt.</p> <p>Um die Kategorien der Client-Bibliothek zu erhalten, rufen Sie jeden Knoten cq:ClientLIbraryFolder über CRXDELite auf und prüfen Sie die Kategorie-Eigenschaft.</p>
+   <td><p>Die Bearbeitung dieser Client-Bibliotheken wurde zu keinem Zeitpunkt unterstützt.</p> <p>Um die Kategorien der Client-Bibliothek abzurufen, rufen Sie jeden Knoten cq:ClientLIbraryFolder über CRXDELite auf und überprüfen Sie die Eigenschaft "categories":</p>
     <ul>
      <li><code>/libs/cq/testandtarget/clientlibs/testandtarget/testandtarget</code></li>
      <li><code>/libs/cq/testandtarget/clientlibs/testandtarget/atjs</code></li>
@@ -469,10 +464,10 @@ Wie auf der übergeordneten Seite [Repository-Neustrukturierung in AEM 6.5](/he
   </tr>
   <tr>
    <td><strong>Leitfaden für die Neustrukturierung</strong></td>
-   <td><p>Jede benutzerdefinierte Nutzung dieser Client-Bibliotheken sollte nach Kategorie und nicht nach Pfad auf die Client-Bibliothek verweisen:</p>
+   <td><p>Jede benutzerdefinierte Verwendung dieser Client-Bibliotheken sollte nach Kategorie und nicht nach Pfad auf die Client-Bibliothek verweisen.</p>
     <ol>
-     <li>Alle Verweise auf die Client-Bibliothek anhand des Pfads im vorherigen Speicherort sollten entsprechend dem <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzierungssystem für Client-Bibliotheken von AEM</a> aktualisiert werden.</li>
-     <li>Wenn das Referenzierungssystem für Client-Bibliotheken von AEM nicht verwendet werden kann, kann der absolute Pfad der Client-Bibliotheken über das Proxy-Servlet für Client-Bibliotheken von AEM referenziert werden.</li>
+     <li>Alle Verweise auf die Client-Bibliothek nach Pfad am vorherigen Speicherort sollten aktualisiert werden, um <a href="/help/sites-developing/clientlibs.md#referencing-client-side-libraries" target="_blank">Referenzrahmen für AEM Client-Bibliothek</a>.</li>
+     <li>Wenn AEM Referenzierungsframework für Client-Bibliotheken nicht verwendet werden kann, kann über AEM Client Library Proxy-Servlet auf den absoluten Pfad der Client-Bibliotheken verwiesen werden.</li>
     </ol>
     <ul>
      <li><code>/etc.clientlibs/wcm/foundation/clientlibs/accessibility.css</code></li>

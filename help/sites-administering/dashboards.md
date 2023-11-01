@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '837'
 ht-degree: 43%
 
 ---
@@ -31,13 +31,13 @@ Bei Verwendung von AEM können Sie viele Inhalte verschiedener Typen verwalten (
 
 ## Verwalten von Dashboards {#administering-dashboards}
 
-### Erstellen eines Dashboards {#creating-a-dashboard}
+### Dashboard erstellen {#creating-a-dashboard}
 
 Gehen Sie wie folgt vor, um ein neues Dashboard zu erstellen:
 
 1. Im **Instrumente** Abschnitt, klicken Sie auf **Konfigurationskonsole**.
 1. Doppelklicken Sie in der Struktur auf **Dashboard**.
-1. Klicken **Neues Dashboard**.
+1. Klicks **Neues Dashboard**.
 1. Geben Sie die **Titel** (z. B. Mein Dashboard) und die **Name**.
 1. Klicken Sie auf **Erstellen**.
 
@@ -50,9 +50,9 @@ Möglicherweise möchten Sie mehrere Dashboards verwenden, um schnell Informatio
 1. Klicken Sie in der Baumstruktur auf **Dashboard**.
 1. Klicken Sie auf das Dashboard, das Sie klonen möchten.
 
-1. Klicken **Klonen**.
+1. Klicks **Klonen**.
 
-1. Geben Sie die **Name** Ihres neuen Dashboards.
+1. Geben Sie die **Name** Ihres neuen Dashboards aus.
 
 ### Entfernen eines Dashboards {#removing-a-dashboard}
 
@@ -114,7 +114,7 @@ Jede Komponente definiert auch bestimmte Einstellungen.
 
 ![chlimage_1-26](assets/chlimage_1-26a.png)
 
-**Datumsgranularität** Zeiteinheit der X-Achse (z. B. Tag, Stunde).
+**Datumsgranularität** Zeiteinheit der X-Achse (z. B. Tag, Stunde)
 
 **Metriken**: Die Liste der Ereignisse, die angezeigt werden sollen.
 
@@ -150,13 +150,13 @@ Diese Komponente zeigt ein Diagramm an, das den besuchten Abschnitt einer Websit
 
 ![chlimage_1-30](assets/chlimage_1-30a.png)
 
-**Datumsgranularität** Zeiteinheit der X-Achse (z. B. Tag, Stunde).
+**Datumsgranularität** Zeiteinheit der X-Achse (z. B. Tag, Stunde)
 
 **Metriken** Das Ereignis, das Sie anzeigen möchten.
 
 **Elemente**: Das Element, in dem die Daten zu den Metriken im Diagramm aufgeschlüsselt sind.
 
-## Erweitern des Dashboards {#extending-dashboard}
+## Dashboard erweitern {#extending-dashboard}
 
 ### Übersicht {#overview-1}
 

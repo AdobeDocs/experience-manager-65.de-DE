@@ -2,13 +2,13 @@
 sub-product: AEM Documentation Journeys
 user-guide-title: AEM-Dokumentations-Touren
 breadcrumb-title: AEM-Dokumentations-Touren
-user-guide-description: Dokumentation-Touren bieten eine erzählerische Struktur innerhalb der AEM-Dokumentation, indem sie komplexe und ungleiche Funktionen miteinander verbinden, um ein Geschäftsziel auf eine bewährte Weise zu lösen. Die Touren sind für AEM-Anfänger entwickelt worden und stellen die Konzepte und Features von A bis Z vor, die geeignet sind, um ein Ziel zu erreichen.
+user-guide-description: Die Journey der Dokumentation bieten eine Erzählstruktur in AEM Dokumentation, indem sie komplexe und unterschiedliche Funktionen miteinander verknüpfen, um ein Geschäftsziel auf die beste Art und Weise zu lösen. Die Touren sind für AEM-Anfänger entwickelt worden und stellen die Konzepte und Features von A bis Z vor, die geeignet sind, um ein Ziel zu erreichen.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 0b8b517607f305ad82caf6ba766cad5a46021439
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '529'
-ht-degree: 100%
+source-wordcount: '527'
+ht-degree: 95%
 
 ---
 

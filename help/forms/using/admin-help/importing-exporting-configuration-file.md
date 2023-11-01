@@ -1,38 +1,34 @@
 ---
 title: Importieren und Exportieren der Konfigurationsdatei
-seo-title: Importing and exporting the configuration file
-description: Erfahren Sie, wie Sie die Konfigurationsdatei importieren und exportieren, damit Sie Serverpräferenzen bearbeiten oder eine andere AEM Forms-Produktinstanz konfigurieren können.
-seo-description: Learn how to import and export the configuration file in order to edit server preferences or configure another AEM forms product instance.
-uuid: 32e8a709-2d7c-4740-9533-d53aa751bc58
+description: Erfahren Sie, wie Sie die Konfigurationsdatei importieren und exportieren, um Servervoreinstellungen zu bearbeiten oder eine andere AEM Forms-Produktinstanz zu konfigurieren.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c1636537-f7dc-48d8-a3f0-9052bcd28b62
 exl-id: 225dbeb5-a21c-4338-98c7-e10c32973721
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '254'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '252'
+ht-degree: 4%
 
 ---
 
 # Importieren und Exportieren der Konfigurationsdatei {#importing-and-exporting-the-configuration-file}
 
-Auf der Seite „Manuelle Konfiguration“ können Sie eine Kopie der Konfigurationseinstellungen im XML-Format herunterladen. Die Einstellungen in dieser Datei steuern sämtliche Servervoreinstellungen. Sie können die Datei dann bearbeiten und wieder auf den Server hochladen. Sie können die Datei auch zum Konfigurieren einer weiteren AEM Forms-Produktinstanz verwenden.
+Verwenden Sie die Seite Manuelle Konfiguration , um eine Kopie der Konfigurationseinstellungen im XML-Format herunterzuladen. Die Einstellungen in dieser Datei steuern alle Servervoreinstellungen. Sie können die Datei dann bearbeiten und wieder auf den Server hochladen. Sie können die Datei auch verwenden, um eine andere AEM Forms-Produktinstanz zu konfigurieren.
 
-Um Sicherheitsrisiken zu vermeiden, ist der Wert für das Bindungskennwort des Ordnerservers nicht in einer exportierten Konfigurationsdatei enthalten. Aktualisieren Sie das Kennwort in der XML-Datei vor dem Import der Datei in ein neues System.
+Um Sicherheitsrisiken zu vermeiden, ist der Wert des Bindungskennworts für den Ordnerserver nicht in einer exportierten Konfigurationsdatei enthalten. Aktualisieren Sie das Kennwort in der XML-Datei, bevor Sie die Datei in ein neues System importieren.
 
 >[!NOTE]
 >
->Beim Importieren der Konfigurationsdatei wird AEM Forms basierend auf den Informationen in der Datei neu konfiguriert. Nur ein Systemadministrator oder ein versierter IT-Berater, der mit dem AEM Forms-Produkt und XML vertraut ist, sollte die Konfigurationsdatei ändern. Die Bearbeitung der Konfigurationsdatei kann beispielsweise erforderlich sein, um eine fehlerhafte Einstellung neu zu konfigurieren.
+>Beim Import der Konfigurationsdatei werden AEM Formulare anhand der Informationen in der Datei neu konfiguriert. Nur ein Systemadministrator oder ein Professional Services-Berater, der mit dem AEM Forms-Produkt und XML vertraut ist, sollte eine Änderung der Konfigurationsdatei in Erwägung ziehen. Möglicherweise müssen sie die Konfigurationsdatei bearbeiten, um beispielsweise eine beschädigte Einstellung neu zu konfigurieren.
 
 **Konfigurationsinformationen exportieren**
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Konfigurationsdateien importieren und exportieren“.
-1. Klicken Sie auf „Exportieren“. Wenn Sie Microsoft Internet Explorer verwenden, werden Sie aufgefordert, einen Speicherort für die Datei anzugeben. Bei Verwendung von Firefox wird die Datei auf dem Desktop gespeichert.
+1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Konfiguration&quot;> &quot;Konfigurationsdateien importieren und exportieren&quot;.
+1. Klicken Sie auf Exportieren. Wenn Sie Microsoft Internet Explorer verwenden, werden Sie aufgefordert, einen Speicherort für die Datei anzugeben. Wenn Sie Firefox verwenden, wird die Datei auf Ihrem Desktop gespeichert.
 
 **Konfigurationsinformationen importieren**
 
-1. Klicken Sie in Administration Console auf „Einstellungen“ > „User Management“ > „Konfiguration“ > „Konfigurationsdateien importieren und exportieren“.
-1. Klicken Sie auf „Durchsuchen“, um die Konfigurationsdatei zu suchen, dann auf „Importieren“ und schließlich auf „OK“.
+1. Klicken Sie in Administration Console auf &quot;Einstellungen&quot;> &quot;User Management&quot;> &quot;Konfiguration&quot;> &quot;Konfigurationsdateien importieren und exportieren&quot;.
+1. Klicken Sie auf Durchsuchen , um die Konfigurationsdatei zu suchen, klicken Sie auf Importieren und dann auf OK.

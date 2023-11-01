@@ -11,10 +11,10 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '857'
-ht-degree: 95%
+source-wordcount: '853'
+ht-degree: 90%
 
 ---
 
@@ -202,7 +202,7 @@ Sie können die SSL-/TLS-Konfiguration auch mithilfe des cURL-Tools automatisier
 
 *https://&lt;Server-Adresse>:&lt;Serverport>/libs/granite/security/post/sslSetup.html*
 
-Nachfolgend sind die Parameter aufgeführt, mit denen Sie die zahlreichen Einstellungen im Konfigurationsassistenten ändern können:
+Im Folgenden finden Sie die Parameter, mit denen Sie die verschiedenen Einstellungen im Konfigurationsassistenten ändern können:
 
 * `-F "keystorePassword=password"` – KeyStore-Kennwort
 
@@ -223,7 +223,7 @@ Nachfolgend sind die Parameter aufgeführt, mit denen Sie die zahlreichen Einste
 >
 >Die schnellste Art, cURL auszuführen, um die SSL-/TLS-Konfiguration zu automatisieren, ist über den Ordner, in dem sich die DER- und CRT-Dateien befinden. Alternativ dazu können Sie den vollständigen Pfad in den Argumenten `privatekeyFile` und „certificateFile“ festlegen.
 >
->Sie müssen außerdem authentifiziert werden, damit die Aktualisierung durchgeführt werden kann. Stellen Sie daher sicher, dass Sie den cURL-Befehl mit dem Parameter `-u user:passeword` anhängen.
+>Sie müssen auch authentifiziert sein, um die Aktualisierung durchzuführen. Stellen Sie daher sicher, dass Sie den cURL-Befehl mit dem `-u user:passeword` -Parameter.
 >
 >Ein korrekter cURL-Post-Befehl sollte wie folgt aussehen:
 

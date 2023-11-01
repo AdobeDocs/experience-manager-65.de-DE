@@ -11,18 +11,18 @@ docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 5192a284c38eb10c214c67a8727de0f7dd4d1ee2
-workflow-type: ht
-source-wordcount: '4730'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '4726'
+ht-degree: 93%
 
 ---
 
 # Karussellbanner{#carousel-banners}
 
-Mit Karussellbannern können Marketingexperten die Konversionsrate steigern, indem sie auf einfache Art Drehbanner mit Promo-Inhalten erstellen, die auf beliebigen Bildschirmen bereitgestellt werden können.
+Karussellbanner ermöglichen es Marketingexperten, die Konversion zu fördern, indem sie einfach interaktive drehbare Werbeinhalte erstellen und auf jedem Bildschirm bereitstellen.
 
-Das Erstellen und Ändern von Inhalten auf Werbebannern kann zeitaufwendig sein und Ihre Fähigkeit beeinträchtigen, neue Inhalte schnell zu veröffentlichen oder zielgerichteter zu gestalten. Mit Karussellbannern können Sie sich schnell drehende Banner erstellen oder ändern. Sie können Interaktivität hinzufügen, z. B. Hotspots, die mit Produktdetails oder zugehörigen Ressourcen verknüpft sind, und diese auf jedem Bildschirm bereitstellen, sodass Sie neue Werbeinhalte schneller auf den Markt bringen können.
+Das Erstellen und Ändern von Inhalten in Werbebannern kann zeitaufwendig sein und Ihre Fähigkeit einschränken, neue Inhalte schnell zu veröffentlichen oder zielgerichteter zu gestalten. Mit Karussellbannern können Sie sich schnell drehende Banner erstellen oder ändern. Sie können Interaktivität hinzufügen, z. B. Hotspots, die mit Produktdetails oder zugehörigen Ressourcen verknüpft sind, und diese auf jedem Bildschirm bereitstellen, sodass Sie neue Werbeinhalte schneller auf den Markt bringen können.
 
 Karussellbanner sind Banner, die durch die Bezeichnung **[!UICONTROL CAROUSELSET]** gekennzeichnet sind.
 
@@ -44,7 +44,7 @@ Sehen Sie sich eine exemplarische Vorgehensweise dazu an, [wie Karussellbanner e
 
 >[!NOTE]
 >
->Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users]** hinzufügen kann.
+>Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an Ihren Systemadministrator, der Sie zum **[!UICONTROL dam-users]** hinzugefügt.
 
 ## Schnellstart: Karussellbanner {#quick-start-carousel-banners}
 
@@ -90,8 +90,8 @@ So können Sie Karussellbanner schnell einsetzen:
    * [Hinzufügen eines Karussellbanner zu einer Website-Seite](#adding-a-carousel-banner-to-your-website-page) Sie können die Karussellbanner-URL oder den Einbettungs-Code hinzufügen, die oder den Sie auf die Website-Seite kopiert haben.
 
       * [Integrieren Sie das Karussellbanner in eine Schnellansicht.](#integrating-the-carousel-banner-with-an-existing-quickview) Wenn Sie ein Drittanbietersystem für Web Content Management verwenden, müssen Sie das neue Karussellbanner mit der vorhandenen Schnellansichtsimplementierung auf Ihrer Website integrieren.
-   * [Fügen Sie Ihrer Website in Experience Manager ein Karussellbanner hinzu.](/help/assets/adding-dynamic-media-assets-to-pages.md) Wenn Sie Experience Manager Sites-Kunde sind, können Sie das Karussellset der Seite in Experience Manager direkt hinzufügen, indem Sie die interaktive Medienkomponente verwenden.
 
+   * [Fügen Sie Ihrer Website in Experience Manager ein Karussellbanner hinzu.](/help/assets/adding-dynamic-media-assets-to-pages.md) Wenn Sie Experience Manager Sites-Kunde sind, können Sie das Karussellset der Seite in Experience Manager direkt hinzufügen, indem Sie die interaktive Medienkomponente verwenden.
 
 Informationen zum Bearbeiten von Karussellsets finden Sie unter [Bearbeiten von Karussellsets](#editing-carousel-sets). Darüber hinaus können Sie [Eigenschaften von Karussellsets](manage-assets.md#editing-properties) anzeigen und bearbeiten.
 
@@ -103,13 +103,13 @@ Beim Hinzufügen von Hotspots oder Imagemaps zu einem Bannerbild in Experience M
 
 >[!NOTE]
 >
->Wenn Sie Experience Manager Sites- und/oder Experience Manager-E-Commerce-Kunde sind, können Sie diesen Schritt überspringen. Sie müssen keine Hotspot- oder Imagemap-Variablen manuell ermitteln. Sie können die Integration mit E-Commerce für die Produktintegration verwenden. Siehe Informationen über das [Einrichten von E-Commerce](/help/commerce/cif-classic/administering/generic.md). Darüber hinaus können Sie die interaktive Komponente verwenden und in Ihre Webseite einfügen.
+>Wenn Sie Experience Manager Sites- und/oder Experience Manager-E-Commerce-Kunde sind, können Sie diesen Schritt überspringen. Sie müssen keine Hotspot- oder Imagemap-Variablen manuell ermitteln. Sie können die Integration mit E-Commerce für die Produktintegration verwenden. Siehe Informationen über das [Einrichten von E-Commerce](/help/commerce/cif-classic/administering/generic.md). Darüber hinaus können Sie die interaktive Komponente verwenden und sie zu Ihrer Web-Seite hinzufügen.
 >
 >Wenn Sie Experience Manager Assets- oder Dynamic Media-Kunde sind, veröffentlichen Sie den URL- oder Einbettungs-Code. Integrieren Sie ihn dann in Ihrem Drittanbietersystem für Content-Management und ermitteln Sie Hotspots und Imagemaps manuell.
 
-Es ist wichtig, die Anzahl und den Typ der Variablen, denen Hotspot- oder Imagemap-Daten zugewiesen werden sollen, korrekt zu ermitteln. Jeder Hotspot bzw. jede Imagemap, der/die einem Bannerbild hinzugefügt wird, muss genügend Informationen enthalten, um das Produkt im vorhandenen Backend-System eindeutig zu identifizieren. Gleichzeitig dürfen Hotspots oder Imagemaps nicht mehr Daten enthalten als unbedingt notwendig. Dies würde die Dateneingabe unnötig erschweren und bei der Verwaltung von Hotspots und Imagemaps könnten leichter Fehler auftreten.
+Es ist wichtig, die Anzahl und den Typ der Variablen, denen Hotspot- oder Imagemap-Daten zugewiesen werden sollen, korrekt zu ermitteln. Jeder Hotspot bzw. jede Imagemap, der/die einem Bannerbild hinzugefügt wird, muss genügend Informationen enthalten, um das Produkt im vorhandenen Backend-System eindeutig zu identifizieren. Gleichzeitig dürfen Hotspots oder Imagemaps nicht mehr Daten enthalten als unbedingt notwendig. Der Grund dafür ist, dass der Dateneingabeprozess dadurch zu komplex und die laufende Hotspot- oder Imagemap-Verwaltung fehleranfälliger würde.
 
-Es gibt verschiedene Möglichkeiten, den für Hotspot- oder Imagemap-Daten zu verwendenden Variablensatz zu ermitteln,
+Es gibt verschiedene Möglichkeiten, einen Variablensatz für Hotspot- oder Imagemap-Daten zu identifizieren.
 
 Manchmal ist es ausreichend, die IT-Experten zu konsultieren, die für die vorhandene Schnellansichtsimplementierung verantwortlich sind. Sie wissen wahrscheinlich, welche Daten mindestens erforderlich sind, um eine Schnellansicht im System zu identifizieren. Es jedoch normalerweise auch möglich, einfach das vorhandene Verhalten des Frontend-Codes zu analysieren.
 
@@ -122,7 +122,7 @@ Bei den meisten Schnellansichtsimplementierungen wird das folgende Muster verwen
 
 Dann werden unterschiedliche Bereiche der vorhandenen Website besucht, auf denen die Schnellansichtsfunktion implementiert ist. Die Schnellansicht wird ausgelöst und die Ajax-URL, die durch die Web-Seite zum Laden der Schnellansichtsdaten oder -inhalte gesendet wurde, wird erfasst.
 
-Normalerweise müssen Sie keine speziellen Debugging-Tools verwenden. Moderne Webbrowser verfügen über Web-Inspektoren, die dafür ausreichend sind. Die folgenden Webbrowser beispielsweise umfassen Web-Inspektoren:
+Normalerweise müssen Sie keine speziellen Debugging-Tools verwenden. Moderne Webbrowser verfügen über Web-Inspektoren, die dafür ausreichend sind. Im Folgenden finden Sie einige Beispiele für Webbrowser, die Web-Inspektoren beinhalten:
 
 * Drücken Sie zum Anzeigen aller ausgehenden HTTP-Anforderungen in Google Chrome die Taste F12 (Windows) oder Befehlstaste + Wahltaste + I (Mac), um das Bedienfeld für Entwickler-Tools anzuzeigen, und wählen Sie dann die Registerkarte „Netzwerk“ aus.
 * In Firefox können Sie das Firebug-Plug-in aktivieren, indem Sie F12 (Windows) bzw. Befehlstaste + Wahltaste + I (Mac) drücken und die Registerkarte „Netz“ öffnen, oder Sie öffnen die Registerkarte „Netzwerk“ im integrierten Inspektor-Tool.
@@ -187,7 +187,7 @@ Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Asse
 
 >[!NOTE]
 >
->Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users]** hinzufügen kann.
+>Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an Ihren Systemadministrator, der Sie zum **[!UICONTROL dam-users]** hinzugefügt.
 
 **So erstellen Sie Karussellsets:**
 
@@ -223,10 +223,10 @@ Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Asse
    >
    >Für Karussellbanner können Sie die folgenden Elemente anpassen:
    >
-   >    * Dauer der Anzeige eines Bildes Standardmäßig wird jedes Bild für 9 Sekunden angezeigt.
-   >    * Animation. Standardmäßig sind alle Folienübergänge Überblendungen. Sie können einen anderen Übergang auswählen.
-   >    * Stil der Schaltflächen Benutzer können die Banner durchlaufen, indem sie auf die jeweiligen Punkte oder Zahlen tippen. Sie können ändern, wo die Set-Indikatoren angezeigt werden (und ob es sich um einen numerischen oder Punktstil handelt). Sie können auch ihre Größe bestimmen.
-   >    * Ändern des Markierungsstils einer Imagemap oder des Symbols für Hotspots.
+   >    * Dauer der Anzeige eines Bildes. Standardmäßig wird jedes Bild 9 Sekunden lang angezeigt.
+   >    * Animation. Standardmäßig ist jede Folienübergänge eine Überblendung. Sie können dies in eine Folienübergang ändern.
+   >    * Stil der Schaltflächen. Benutzer können die Banner durch Tippen auf jeden Punkt oder jede Zahl drehen. Sie können ändern, wo die Anzeigenschaltflächen angezeigt werden (und ob es sich um numerische Schaltflächen oder gepunktete Schaltflächen handelt) und wie groß sie sind.
+   >    * Ändern Sie den Hervorhebungsstil einer Imagemap oder des Symbols für Hotspots.
    >    * Bevor Sie eine Viewer-Vorgabe bearbeiten, wählen Sie den Stil aus, auf dem die Vorgabe basieren soll. Wenn Sie keinen Stil auswählen, bevor Sie mit dem Bearbeiten der Viewer-Vorgabe beginnen, werden alle Ihre Änderungen verworfen, wenn Sie zu einer anderen Vorgabe wechseln.
    >
    >Ausführliche Anweisungen und weitere Informationen zum Viewer-Editor finden Sie unter [Besondere Überlegungen für Karussellbanner](/help/assets/managing-viewer-presets.md#special-considerations-for-creating-a-carousel-banner-viewer-preset).
@@ -239,7 +239,7 @@ Informationen zum Hochladen von Bildbannern finden Sie unter [Hochladen von Asse
 
 Sie können einem Banner mithilfe des Karussellset-Editors Hotspots oder Imagemaps hinzufügen.
 
-Beim Hinzufügen von Hotspots oder Imagemaps können Sie sie als eine Schnellansichts-Popup-Anzeige, als einen Hyperlink oder als Experience Fragment definieren.
+Wenn Sie Hotspots oder Imagemaps hinzufügen, können Sie sie als Popup-Anzeige für Schnellansichten, als Hyperlink oder als Experience Fragment definieren.
 
 Siehe [Experience Fragment](/help/sites-authoring/experience-fragments.md).
 
@@ -258,10 +258,12 @@ Siehe [(Optional) Anzeigen einer Vorschau für Karussellbanner](#optional-previe
 >[!NOTE]
 >
 >Wenn Sie einem Bild in einem [interaktiven Bild](/help/assets/interactive-images.md) oder einem Karussellbanner Hotspots hinzufügen, werden die Hotspot-Informationen im gleichen Metadaten-Speicherort gespeichert. Dieser Speicherort ist relativ zum Speicherort des Bildes, unabhängig davon, ob es sich um ein interaktives Bild oder ein Karussellbanner handelt. Das bedeutet, dass Sie dasselbe Bild zusammen mit den definierten Hotspot-Daten in beiden Viewern einfach wiederverwenden können.
->Beachten Sie jedoch, dass Karussellbanner Imagemaps auf Bildern unterstützen, die auch Hotspots enthalten können. Bei interaktiven Bildern wird dies dagegen nicht unterstützt. Diese Regel sollten Sie beachten, wenn Sie ein interaktives Bild oder ein Karussellbanner mit demselben Bild erstellen möchten. Stattdessen sollten Sie separate Kopien desselben Bildes verwenden, um interaktive Bilder und Karussellbilder zu erstellen.
+>
+Beachten Sie jedoch, dass Karussellbanner Imagemaps auf Bildern unterstützen, die auch Hotspots enthalten können. Bei interaktiven Bildern wird dies dagegen nicht unterstützt. Diese Regel sollten Sie beachten, wenn Sie ein interaktives Bild oder ein Karussellbanner mit demselben Bild erstellen möchten. Stattdessen sollten Sie separate Kopien desselben Bildes verwenden, um interaktive Bilder und Karussellbilder zu erstellen.
 
 >[!NOTE]
->Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
+>
+Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
 
 Siehe auch [Hinzufügen von Imagemaps](/help/assets/image-maps.md).
 
@@ -274,13 +276,13 @@ Siehe auch [Hinzufügen von Imagemaps](/help/assets/image-maps.md).
 1. Führen Sie einen der folgenden Schritte aus:
 
    * Hotspots: Klicken Sie auf dem Bild auf eine Stelle, an der der Hotspot angezeigt werden soll.
-   * Imagemaps: Wählen Sie das Bild aus und ziehen Sie dann von oben links nach unten rechts, um den Bereich für die Imagemap zu erstellen. Sie können die Größe der Imagemap anpassen, indem Sie an den Ecken ziehen.
+   * Imagemaps: Wählen Sie das Bild aus und ziehen Sie dann von oben links nach unten rechts, um den Bereich für die Imagemap zu erstellen. Sie können die Größe der Imagemap anpassen, indem Sie die Ecken ziehen.
 
    Ziehen Sie den Hotspot oder die Imagemap ggf. an eine neue Position. Fügen Sie weitere Hotspots oder Imagemaps nach Bedarf hinzu.
 
    Um einen Hotspot oder eine Imagemap zu löschen, klicken Sie auf die Registerkarte **[!UICONTROL Aktionen]**. Wählen Sie unter der Überschrift **[!UICONTROL Karten und Hotspots]** im Dropdown-Menü **[!UICONTROL Ausgewählter Typ]** den Namen des Hotspots oder der Imagemap aus, den oder die Sie entfernen möchten. Klicken Sie auf das **[!UICONTROL Papierkorb]**-Symbol neben dem Menü und dann auf **[!UICONTROL Löschen]**.
 
-1. Geben Sie im Textfeld „Name“ den Namen des Hotspots oder der Imagemap ein. Dieser Name wird auch in der Dropdown-Liste **[!UICONTROL Karten und Hotspots]** angezeigt. Wenn Sie einen Namen angeben, können Sie den Hotspot oder die Imagemap einfach erkennen, sollten Sie später Änderungen vornehmen.
+1. Geben Sie im Textfeld Name den Namen des Hotspots oder der Imagemap ein. Dieser Name wird auch in der Dropdown-Liste **[!UICONTROL Karten und Hotspots]** angezeigt. Wenn Sie einen Namen angeben, können Sie den Hotspot oder die Imagemap einfach erkennen, sollten Sie später Änderungen vornehmen.
 1. Führen Sie einen der folgenden Schritte auf der Registerkarte **[!UICONTROL Aktion]** aus:
 
    * Wählen Sie **[!UICONTROL Schnellansicht]** aus.
@@ -293,12 +295,13 @@ Siehe auch [Hinzufügen von Imagemaps](/help/assets/image-maps.md).
          * (Optional) Wenn andere Variablen in der Schnellansicht vorhanden sind, die Sie verwenden müssen, um ein Produkt weitergehend zu identifizieren, wählen Sie **[!UICONTROL Generische Variable hinzufügen]**. Geben Sie im Textfeld eine zusätzliche Variable an. Beispielsweise ist „category=Men“ eine hinzugefügte Variable.
 
          * Weitere Informationen finden Sie unter [Arbeiten mit Selektoren](/help/assets/working-with-selectors.md).
+
    * Wählen Sie **[!UICONTROL Hyperlink]** aus.
 
       * Wenn Sie Experience Manager Sites-Kunde sind, klicken Sie auf das Symbol zur Website-Auswahl (Ordner), um zu einer URL zu gehen.
-
-         >[!NOTE]
-         >Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
+        >[!NOTE]
+        >
+        Die URL-basierte Verknüpfungsmethode ist nicht möglich, wenn Ihr interaktiver Inhalt über Links mit relativen URLs verfügt, insbesondere über Links zu Seiten in Adobe Experience Manager Sites.
 
       * Wenn Sie Einzelkunde sind, geben Sie im Textfeld „HREF“ den vollständigen URL-Pfad zu einer verknüpften Web-Seite an.
 
@@ -313,9 +316,11 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
 
       * Legen Sie die Breite und Höhe des Experience Fragment fest, so wie es im Banner angezeigt werden soll.
 
-         >[!NOTE]
-         >Die Tools zur Freigabe in Social Media werden im Karussellbanner nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten.
-         >Um dieses Problem zu vermeiden, erstellen Sie Viewer-Vorgaben, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
+        >[!NOTE]
+        >
+        Die Tools zur Freigabe in Social Media werden im Karussellbanner nicht unterstützt, wenn Sie den Viewer in ein Experience Fragment einbetten.
+        >
+        Um dieses Problem zu vermeiden, erstellen Sie Viewer-Vorgaben, die keine Tools zur Freigabe in Social Media aufweisen. Mit diesen Viewer-Vorgaben können Sie sie erfolgreich in Experience Fragments einbetten.
 
    ![experience_fragment-carouselbanner](assets/experience_fragment-carouselbanner.png)
 
@@ -331,7 +336,8 @@ Weitere Informationen finden Sie unter [Experience Fragments](/help/sites-author
 ## Bearbeiten von Karussellsets {#editing-carousel-sets}
 
 >[!NOTE]
->Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an den Systemadministrator, der Sie der Gruppe **[!UICONTROL dam-users]** hinzufügen kann.
+>
+Benutzer, die keine Administratoren sind, müssen der Gruppe **[!UICONTROL dam-users]** hinzugefügt werden, damit sie Karussellbanner erstellen oder bearbeiten können. Sollten Sie Schwierigkeiten beim Erstellen oder Bearbeiten haben, wenden Sie sich an Ihren Systemadministrator, der Sie zum **[!UICONTROL dam-users]** hinzugefügt.
 
 Sie können mehrere Bearbeitungsaufgaben für Karussellsets ausführen, z. B. die folgenden:
 
@@ -363,7 +369,10 @@ Sie können mehrere Bearbeitungsaufgaben für Karussellsets ausführen, z. B. d
    * Um ein ganzes Karussellset zu löschen, gehen Sie zum Karussellset, wählen Sie es aus und klicken Sie auf **[!UICONTROL Löschen]**.
 
    >[!NOTE]
-   >Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
+   >
+   Wenn Sie interaktive Bilder mit Hotspots bearbeiten, um das Bild zu beschneiden, werden die Hotspots entfernt.
+   >
+   >
 
 ## (Optional) Anzeigen einer Vorschau für Karussellbanner {#optional-previewing-carousel-banners}
 
@@ -399,8 +408,10 @@ Um eine Vorschau für ein Karussellbanner anzuzeigen, verwenden Sie entweder den
 Veröffentlichen Sie das Karussell, damit Sie es verwenden können. Durch Veröffentlichen eines Karussellsets werden die URL und der Einbettungs-Code aktiviert. Außerdem wird das Karussell in der Dynamic Media-Cloud veröffentlicht, die für skalierbare und leistungsfähige Bereitstellung in ein CDN integriert ist.
 
 >[!NOTE]
->Wenn Sie ein vorhandenes interaktives Bild mit Hotspots für Ihr Karussellbanner verwenden, müssen Sie das interaktive Bild separat veröffentlichen, nachdem Sie das Karussellbanner veröffentlicht haben.
->Wenn Sie ein bereits vorhandenes und veröffentlichtes interaktives Bild ändern, das Sie in einem Karussellbanner verwenden, müssen Sie das interaktive Bild veröffentlichen, bevor die Änderungen im Karussellbanner sichtbar werden.
+>
+Wenn Sie ein vorhandenes interaktives Bild mit Hotspots für Ihr Karussellbanner verwenden, müssen Sie das interaktive Bild separat veröffentlichen, nachdem Sie das Karussellbanner veröffentlicht haben.
+>
+Wenn Sie ein bereits vorhandenes und veröffentlichtes interaktives Bild ändern, das Sie in einem Karussellbanner verwenden, müssen Sie das interaktive Bild veröffentlichen, bevor die Änderungen im Karussellbanner sichtbar werden.
 
 Unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/publishing-dynamicmedia-assets.md) finden Sie Informationen zum Veröffentlichen von Karussellbannern.
 
@@ -409,7 +420,8 @@ Unter [Veröffentlichen von Dynamic Media-Assets](/help/assets/publishing-dynami
 Nachdem Sie Bannerbilder hochgeladen haben, um ein Karussell zu erstellen, dem Banner Hotspots und/oder Imagemaps hinzugefügt und das Karussellset veröffentlicht haben, können Sie es jetzt einer vorhandenen Website-Seite hinzufügen.
 
 >[!NOTE]
->Wenn Sie Experience Manager Sites-Kunde sind, können Sie das Karussellbanner direkt Ihrer Seite hinzufügen, indem Sie die interaktive Medienkomponente auf die Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
+>
+Wenn Sie Experience Manager Sites-Kunde sind, können Sie das Karussellbanner direkt Ihrer Seite hinzufügen, indem Sie die interaktive Medienkomponente auf die Seite ziehen. Siehe [Hinzufügen von Dynamic Media-Assets zu Seiten](/help/assets/adding-dynamic-media-assets-to-pages.md).
 
 Wenn Sie jedoch nur ein Experience Manager Assets-Kunde sind, können Sie das Karussellbanner manuell der Landingpage Ihrer Website hinzufügen, wie im folgenden Abschnitt beschrieben.
 
@@ -422,7 +434,8 @@ Der kopierte Einbettungs-Code ist responsiv und passt sich daher automatisch an 
 ## Integrieren des Karussellbanners in eine Schnellansicht {#integrating-the-carousel-banner-with-an-existing-quickview}
 
 >[!NOTE]
->Dieser Schritt ist nur relevant, wenn Sie ausschließlich Experience Manager Assets-Kunde sind.
+>
+Dieser Schritt ist nur relevant, wenn Sie ausschließlich Experience Manager Assets-Kunde sind.
 
 Der letzte Schritt in diesem Prozess ist die Integration des Karussellbanners in eine vorhandene Schnellansichtsimplementierung auf Ihrer Website. Jede Schnellansichtsimplementierung ist einzigartig. Daher ist ein spezifischer Ansatz erforderlich, wofür die Unterstützung eines Frontend-IT-Mitarbeiters nötig ist.
 
@@ -442,7 +455,7 @@ Sobald das interaktive Karussellbanner Schritt 1 und teilweise Schritt 2 erset
 
 In einem solchen Ereignis-Handler nimmt der Frontend-Code Folgendes vor:
 
-* Er lauscht am Ereignis, das durch das Karussellbanner ausgegeben wird.
+* Listet ein Ereignis auf, das vom Karussellbanner ausgegeben wird.
 * Er erstellt eine Schnellansichts-URL anhand der Hotspot- oder Imagemap-Daten.
 * Er löst den Schnellansichts-Ladevorgang vom Backend aus und rendert die Schnellansicht auf dem Bildschirm, um sie anzuzeigen.
 

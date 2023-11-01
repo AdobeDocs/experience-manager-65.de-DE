@@ -8,20 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '473'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '471'
+ht-degree: 88%
 
 ---
 
 # Beispiele für ContextHub-Store-Kandidaten{#sample-contexthub-store-candidates}
 
-ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können. Die folgenden Informationen werden für jedes Beispiel bereitgestellt:
+ContextHub bietet mehrere Beispiele für Store-Kandidaten, die Sie in Ihren Lösungen verwenden können. Für jedes Beispiel werden die folgenden Informationen bereitgestellt:
 
 * Gibt an, wo der Quell-Code zu finden ist, damit Sie ihn zum Lernen öffnen können.
-* Wie werden die Stores konfiguriert, die Sie aus den Store-Kandidaten erstellen.
-* Wie sind die Store-Daten strukturiert, dasmit Sie darauf zugreifen können.
+* So konfigurieren Sie die Speicher, die Sie aus den Speicher-Kandidaten erstellen.
+* Wie die Speicherdaten strukturiert sind, damit Sie auf sie zugreifen können.
 
 >[!WARNING]
 >
@@ -41,7 +41,7 @@ Store für gelöste und ungelöste ContextHub-Segmente. Ruft automatisch Segment
 
 ### Konfiguration {#configuration-segmentation}
 
-Wenn Sie einen aem.segmentation-Store erstellen, ist es nicht erforderlich, eine detaillierte Konfiguration zur Verfügung zu stellen. Die Standardkonfiguration gibt den Speicherort der ContextHub-Segmentdefinitionen an.
+Wenn Sie einen aem.segmentation -Store erstellen, müssen Sie keine detaillierte Konfiguration angeben. Die Standardkonfiguration gibt den Speicherort der ContextHub-Segmentdefinitionen an.
 
 ```xml
 {
@@ -55,7 +55,7 @@ Wenn Sie einen aem.segmentation-Store erstellen, ist es nicht erforderlich, eine
 
 ## Beispiel-Store-Kandidat „contexthub.geolocations“ {#contexthub-geolocation-sample-store-candidate}
 
-Der Beispiel-Store-Kandidat „contexthub.geolocation“ verwendet Google Maps zum Abrufen und Speichern von Informationen zum Clientstandort.
+Der Beispiel-Store-Kandidat &quot;contexthub.geolocation&quot;verwendet Google Maps zum Abrufen und Speichern von Informationen zum Client-Standort.
 
 ### Quellpfad {#source-location-geolocation}
 
@@ -109,7 +109,7 @@ Der Store verwendet einen Datenbaum, der dem folgenden Beispiel ähnelt:
 
 >[!NOTE]
 >
->Eine in Chrome 50.x eingeführte Sicherheitsrichtlinie erfordert, dass alle Geolocation-bezogenen Anrufe über eine gesicherte Verbindung erfolgen. Daher erzwingt AEM die Verwendung von https für Geolocation-API-Aufrufe, wenn AEM auch über https ausgeführt wird. Andernfalls wird http verwendet, um der Richtlinie gleichen Ursprungs zu entsprechen. In [diesem Google-Blogpost](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) erhalten Sie weitere Informationen zu den Änderungen in Chrome.
+>Eine in Chrome 50.x eingeführte Sicherheitsrichtlinie erfordert, dass alle Geolocation-bezogenen Anrufe über eine gesicherte Verbindung erfolgen. Daher erzwingt AEM die Verwendung von https für Geolocation-API-Aufrufe, wenn AEM auch über https ausgeführt wird. Andernfalls wird http verwendet, um die Richtlinie des gleichen Ursprungs zu befolgen. In [diesem Google-Blogpost](https://developers.google.com/web/updates/2016/04/geolocation-on-secure-contexts-only) erhalten Sie weitere Informationen zu den Änderungen in Chrome.
 
 ## Beispiel-Store-Kandidat „contexthub.surferinfo“ {#contexthub-surferinfo-sample-store-candidate}
 
@@ -180,7 +180,7 @@ Stores, die diesen Store-Kandidaten verwenden, haben eine Datenstruktur, die dem
 
 ## Beispiel-Store-Kandidat „granite.emulators“  {#granite-emulators-sample-store-candidate}
 
-Der Beispiel-Store-Kandidat „granite.emulators“ speichert Informationen über Kundengeräte.
+Der Beispiel-Store-Kandidat &quot;granite.emulators&quot;speichert Informationen über Clientgeräte.
 
 ### Quellpfad {#source-location-emulators}
 

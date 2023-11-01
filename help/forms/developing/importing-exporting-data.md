@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
-workflow-type: ht
-source-wordcount: '2778'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '2774'
+ht-degree: 97%
 
 ---
 
@@ -31,8 +31,8 @@ Der Form Data Integration-Service erlaubt sowohl das Importieren von Daten in ei
 
 Je nach PDF-Formulartyp können Formulardaten in einem der folgenden Formate vorliegen:
 
-* Als XFDF-Datei, die eine XML-Version des Acrobat-Formulardatenformats darstellt.
-* Als XDP-Datei, die eine XML-Datei mit Formularfelddefinitionen darstellt. Diese kann auch Formularfelddaten und eine eingebettete PDF-Datei enthalten. Eine von Designer generierte XDP-Datei kann nur verwendet werden, wenn in ihr ein Base-64-kodiertes PDF-Dokument eingebettet ist.
+* Eine XFDF-Datei, die eine XML-Version des Acrobat-Formulardatenformats ist.
+* Eine XDP-Datei, die eine XML-Datei mit Formularfelddefinitionen ist. Sie kann auch Formularfelddaten und eine eingebettete PDF-Datei enthalten. Eine von Designer generierte XDP-Datei kann nur verwendet werden, wenn in ihr ein Base-64-kodiertes PDF-Dokument eingebettet ist.
 
 Sie können diese Aufgaben mit dem Form Data Integration-Service erledigen:
 
@@ -51,7 +51,7 @@ Um Daten in ein Formular zu importieren, das in Designer erstellt wurde, müssen
 
 ![ie_ie_loanformdata](assets/ie_ie_loanformdata.png)
 
-Um Daten in dieses Formular zu importieren, müssen Sie über eine gültige XDP-XML-Datenquelle verfügen, die dem Formular entspricht. Sie können keine beliebige XML-Datenquelle verwenden, um Daten mithilfe des Form Data Integration-Services in ein Formular zu importieren. Der Unterschied zwischen einer beliebigen XML-Datenquelle und einer XDP-XML-Datenquelle besteht darin, dass eine XDP-Datenquelle der XML Forms Architecture (XFA) entspricht. Die folgende XML-Datei stellt eine XDP-XML-Datenquelle dar, die dem Beispielformular für einen Hypothekenantrag entspricht.
+Um Datenwerte in dieses Formular zu importieren, müssen Sie über eine gültige XDP XML-Datenquelle verfügen, die dem Formular entspricht. Sie können keine beliebige XML-Datenquelle verwenden, um Daten mithilfe des Form Data Integration-Services in ein Formular zu importieren. Der Unterschied zwischen einer beliebigen XML-Datenquelle und einer XDP-XML-Datenquelle besteht darin, dass eine XDP-Datenquelle der XML Forms Architecture (XFA) entspricht. Die folgende XML-Datei stellt eine XDP-XML-Datenquelle dar, die dem Beispielformular für einen Hypothekenantrag entspricht.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8" ?>

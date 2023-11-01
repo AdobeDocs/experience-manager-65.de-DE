@@ -11,18 +11,18 @@ content-type: reference
 discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1166'
-ht-degree: 89%
+source-wordcount: '1164'
+ht-degree: 91%
 
 ---
 
 # Erste Schritte mit SPAs in AEM – React{#getting-started-with-spas-in-aem-react}
 
-Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA Frameworks erstellen können und Autoren möchten Inhalte in AEM für eine Site, die mit SPA Frameworks erstellt wurde, nahtlos bearbeiten.
+Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickelnde möchten Sites mit SPA-Frameworks erstellen und Autorinnen sowie Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die durch SPA-Frankeworks erstellt wurde.
 
-Die SPA Authoring-Funktion bietet eine umfassende Lösung zur Unterstützung von SPA in AEM. Dieser Artikel beschreibt eine vereinfachte SPA-Anwendung im React-Framework, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, rasch mit Ihrer eigenen SPA zu arbeiten.
+Die SPA-Autorenfunktion bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. Dieser Artikel beschreibt eine vereinfachte SPA-Anwendung im React-Framework, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, rasch mit Ihrer eigenen SPA zu arbeiten.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Weitere Details zur Funktionsweise von SPAs in AEM finden Sie in den folgenden D
 
 >[!NOTE]
 >
->Um Inhalt in einer SPA zu erstellen, muss der Inhalt in AEM gespeichert und durch das Inhaltsmodell verfügbar gemacht werden.
+>Um Inhalte in einem SPA erstellen zu können, muss der Inhalt in AEM gespeichert und durch das Inhaltsmodell verfügbar gemacht werden.
 >
 >Eine SPA, die außerhalb von AEM entwickelt wurde, wird nicht autorisiert, wenn der Content-Modell-Vertrag nicht eingehalten wird.
 
@@ -114,7 +114,7 @@ module.exports = {
 
 ### Erstellung {#building}
 
-Bei der Erstellung der App wird neben dem aem-clientlib-generator zur automatischen Client-Bibliothekserstellung auch [Webpack](https://webpack.js.org/) für die Übertragung verwendet. Daher ähnelt der Build-Befehl:
+Bei der Erstellung der App wird neben dem aem-clientlib-generator zur automatischen Client-Bibliothekserstellung auch [Webpack](https://webpack.js.org/) für die Übertragung verwendet. Daher sieht der Build-Befehl ungefähr so aus:
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -134,7 +134,7 @@ Eine vereinfachte Bildkomponente wird als Beispiel verwendet, aber alle Komponen
 
 ### index.js {#index-js}
 
-Der Einstiegspunkt in die SPA ist natürlich die hier gezeigte Datei `index.js`, die sich auf den wichtigen Inhalt konzentriert.
+Der Einstiegspunkt in die SPA ist natürlich die hier gezeigte Datei `index.js`, die sich auf die zentralen Inhalte konzentriert.
 
 ```
 import ReactDOM from 'react-dom';

@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '15513'
-ht-degree: 84%
+source-wordcount: '15485'
+ht-degree: 83%
 
 ---
 
@@ -353,7 +353,7 @@ Bevor Sie einen Document Security-Service-Vorgang programmgesteuert durchführen
 
 **Abrufen einer bestehenden Richtlinie**
 
-Sie müssen eine bestehende Richtlinie abrufen, um sie zu ändern. Um eine Richtlinie abzurufen, geben Sie den Richtliniennamen und den Richtliniensatz an, zu dem die Richtlinie gehört. Wenn Sie für den Richtliniensatznamen einen Wert `null` angeben, wird die Richtlinie aus dem Richtliniensatz *Meine Richtlinien* abgerufen.
+Sie müssen eine vorhandene Richtlinie abrufen, um sie zu ändern. Um eine Richtlinie abzurufen, geben Sie den Richtliniennamen und den Richtliniensatz an, zu dem die Richtlinie gehört. Wenn Sie für den Richtliniensatznamen einen Wert `null` angeben, wird die Richtlinie aus dem Richtliniensatz *Meine Richtlinien* abgerufen.
 
 **Festlegen der Richtlinienattribute**
 
@@ -744,7 +744,7 @@ Sie können ein richtliniengeschütztes PDF-Dokument abrufen, um eine Richtlinie
 
 **Entfernen der Richtlinie aus dem PDF-Dokument**
 
-Sie können eine Richtlinie aus einem richtliniengeschützten PDF-Dokument entfernen, sofern in den Verbindungseinstellungen ein Administrator angegeben ist. Ist dies nicht der Fall, muss die zum Schützen eines Dokuments verwendete Richtlinie die `SWITCH_POLICY`-Berechtigung enthalten, um eine Richtlinie aus einem PDF-Dokument entfernen zu können. Außerdem muss der in den AEM Forms-Verbindungseinstellungen angegebene Benutzer über diese Berechtigung verfügen. Andernfalls wird eine Ausnahme ausgelöst.
+Sie können eine Richtlinie aus einem richtliniengeschützten PDF-Dokument entfernen, sofern in den Verbindungseinstellungen ein Administrator angegeben ist. Andernfalls muss die zum Schützen eines Dokuments verwendete Richtlinie die `SWITCH_POLICY` Berechtigung zum Entfernen einer Richtlinie aus einem PDF-Dokument. Außerdem muss der in den AEM Forms-Verbindungseinstellungen angegebene Benutzer über diese Berechtigung verfügen. Andernfalls wird eine Ausnahme ausgelöst.
 
 **Ungesichertes PDF-Dokument speichern**
 
@@ -878,9 +878,9 @@ Bevor Sie einen Document Security-Service-Vorgang programmatisch ausführen kön
 
 **Abrufen eines richtliniengeschützten PDF-Dokuments**
 
-Sie müssen ein richtliniengeschütztes PDF-Dokument abrufen, um es widerrufen zu können. Sie können ein Dokument, das bereits widerrufen wurde oder nicht richtliniengeschützt ist, nicht widerrufen.
+Sie müssen ein richtliniengeschütztes PDF-Dokument abrufen, um es zu widerrufen. Sie können ein Dokument, das bereits widerrufen wurde oder nicht richtliniengeschützt ist, nicht widerrufen.
 
-Wenn Sie den Wert der Lizenzkennung des richtliniengeschützten Dokuments kennen, ist es nicht erforderlich, das richtliniengeschützte PDF-Dokument abzurufen. In den meisten Fällen müssen Sie jedoch das PDF-Dokument abrufen, um den Wert der Lizenzkennung zu erhalten.
+Wenn Sie den Wert der Lizenzkennung des richtliniengeschützten Dokuments kennen, ist es nicht erforderlich, das richtliniengeschützte PDF-Dokument abzurufen. In den meisten Fällen müssen Sie jedoch das PDF-Dokument abrufen, um den Lizenzkennungswert zu erhalten.
 
 **Widerrufen des richtliniengeschützten Dokuments**
 
@@ -1020,7 +1020,7 @@ Bevor Sie einen Document Security-Service-Vorgang programmatisch ausführen kön
 
 **Abrufen der Lizenzkennung des widerrufenen PDF-Dokuments**
 
-Sie müssen die Lizenzkennung des widerrufenen PDF-Dokuments abrufen, um ein widerrufenes PDF-Dokument erneut zugänglich machen zu können. Nachdem Sie den Wert der Lizenzkennung erhalten haben, können Sie ein widerrufenes Dokument erneut zugänglich machen. Wenn Sie versuchen, ein Dokument erneut zugänglich zu machen, das nicht widerrufen wurde, wird eine Ausnahme ausgelöst.
+Sie müssen die Lizenzkennung des gesperrten PDF-Dokuments abrufen, um ein gesperrtes PDF-Dokument erneut zu aktivieren. Nachdem Sie den Wert der Lizenzkennung erhalten haben, können Sie ein widerrufenes Dokument erneut zugänglich machen. Wenn Sie versuchen, ein Dokument erneut zugänglich zu machen, das nicht widerrufen wurde, wird eine Ausnahme ausgelöst.
 
 **Wiederherstellen des Zugriffs auf das widerrufene PDF-Dokument**
 
@@ -1977,7 +1977,7 @@ Bevor Sie einen Document Security-Service-Vorgang programmatisch ausführen kön
 
 **Abrufen eines Word-Dokuments**
 
-Sie müssen ein Word-Dokument abrufen, um eine Richtlinie anwenden zu können. Nachdem Sie eine Richtlinie auf das Word-Dokument angewendet haben, sind Benutzer bei der Verwendung des Dokuments eingeschränkt. Wenn die Richtlinie beispielsweise nicht das Öffnen des Dokuments im Offline-Modus ermöglicht, müssen die Benutzer online sein, um das Dokument zu öffnen.
+Sie müssen ein Word-Dokument abrufen, um eine Richtlinie anzuwenden. Nachdem Sie eine Richtlinie auf das Word-Dokument angewendet haben, sind Benutzer bei der Verwendung des Dokuments eingeschränkt. Wenn die Richtlinie beispielsweise nicht das Öffnen des Dokuments im Offline-Modus ermöglicht, müssen die Benutzer online sein, um das Dokument zu öffnen.
 
 **Vorhandene Richtlinie auf das Word-Dokument anwenden**
 
@@ -2132,11 +2132,11 @@ Bevor Sie einen Document Security Service-Vorgang programmgesteuert durchführen
 
 **Abrufen eines richtliniengeschützten Word-Dokuments**
 
-Sie müssen ein richtliniengeschütztes Word-Dokument abrufen, um eine Richtlinie entfernen zu können. Wenn Sie versuchen, eine Richtlinie aus einem Word-Dokument zu entfernen, das gar nicht durch eine Richtlinie geschützt ist, wird eine Ausnahme verursacht.
+Sie müssen ein richtliniengeschütztes Word-Dokument abrufen, um eine Richtlinie zu entfernen. Wenn Sie versuchen, eine Richtlinie aus einem Word-Dokument zu entfernen, das gar nicht durch eine Richtlinie geschützt ist, wird eine Ausnahme verursacht.
 
 **Entfernen der Richtlinie aus dem Word-Dokument**
 
-Sie können eine Richtlinie aus einem richtliniengeschützten Word-Dokument entfernen, sofern in den Verbindungseinstellungen ein Administrator angegeben ist. Wenn dies nicht der Fall ist, muss die zum Sichern eines Dokuments verwendete Richtlinie die Berechtigung `SWITCH_POLICY` enthalten, um eine Richtlinie aus einem Word-Dokument entfernen zu können. Außerdem muss der in den AEM Forms-Verbindungseinstellungen angegebene Benutzer über diese Berechtigung verfügen. Andernfalls wird eine Ausnahme ausgelöst.
+Sie können eine Richtlinie aus einem richtliniengeschützten Word-Dokument entfernen, sofern in den Verbindungseinstellungen ein Administrator angegeben ist. Andernfalls muss die zum Schützen eines Dokuments verwendete Richtlinie die `SWITCH_POLICY` Berechtigung zum Entfernen einer Richtlinie aus einem Word-Dokument. Außerdem muss der in den AEM Forms-Verbindungseinstellungen angegebene Benutzer über diese Berechtigung verfügen. Andernfalls wird eine Ausnahme ausgelöst.
 
 **Speichern des ungesicherten Word-Dokuments**
 

@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2071'
+source-wordcount: '2069'
 ht-degree: 95%
 
 ---
@@ -262,7 +262,7 @@ Wenn Sammlungen in AEM Assets freigegeben oder nicht freigegeben werden, können
 
 ## Einrichten von OAuth {#setting-up-oauth}
 
-AEM bietet OAuth2-Unterstützung für seinen integrierten E-Mail-Service, um Unternehmen die Einhaltung von E-Mail-Sicherheitsanforderungen zu ermöglichen.
+AEM bietet OAuth2-Unterstützung für seinen integrierten Mailer-Service, damit Unternehmen die sicheren E-Mail-Anforderungen erfüllen können.
 
 Sie können OAuth für mehrere E-Mail-Anbieter konfigurieren, wie unten beschrieben.
 

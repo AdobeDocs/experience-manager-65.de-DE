@@ -7,10 +7,10 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1787'
-ht-degree: 87%
+source-wordcount: '1785'
+ht-degree: 88%
 
 ---
 
@@ -214,7 +214,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Um die Schnittstelle zu verwenden, müssen Sie zunächst ein Bundle erstellen, das eine neue Dienstkomponente enthält, die die Link Rewriter Provider-Schnittstelle implementiert.
 
-Dieser Dienst wird verwendet, um das Umschreiben des Experience Fragment-Exports in Target zu ermöglichen, um Zugriff auf die verschiedenen Links zu erhalten.
+Dieser Dienst wird verwendet, um das Neuschreiben des Experience Fragment-Exports in Target zu aktivieren, um Zugriff auf die verschiedenen Links zu erhalten.
 
 Beispiel: `ComponentService`:
 

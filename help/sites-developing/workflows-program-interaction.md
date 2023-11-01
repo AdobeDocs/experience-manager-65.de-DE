@@ -10,10 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2011'
-ht-degree: 71%
+source-wordcount: '2009'
+ht-degree: 70%
 
 ---
 
@@ -248,7 +248,7 @@ Wo `*{uri}*` der Pfad zum Modellknoten im Repository ist.
   </tr>
   <tr>
    <td><code>DELETE</code></td>
-   <td>Löscht das Modell. Um Firewall-/Proxy-Probleme zu lösen, wird ein <code>POST</code>, der einen <code>X-HTTP-Method-Override</code>-Header-Eintrag mit dem Wert <code>DELETE</code> enthält, auch als <code>DELETE</code>-Anfrage akzeptiert.</td>
+   <td>Löscht das Modell. So lösen Sie Firewall-/Proxy-Probleme <code>POST</code> , die eine <code>X-HTTP-Method-Override</code> Header-Eintrag mit Wert <code>DELETE</code> wird auch als <code>DELETE</code> -Anfrage.</td>
   </tr>
  </tbody>
 </table>

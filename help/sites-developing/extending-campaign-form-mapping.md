@@ -1,7 +1,7 @@
 ---
 title: Erstellen benutzerdefinierter Formularzuordnungen
 seo-title: Creating Custom Form Mappings
-description: Bei der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign ist es u. U. ratsam, in AEM ein Formular zu erstellen, das dieser benutzerdefinierten Tabelle zugeordnet wird.
+description: Wenn Sie eine benutzerdefinierte Tabelle in Adobe Campaign erstellen, möchten Sie möglicherweise ein Formular in erstellen, das AEM dieser benutzerdefinierten Tabelle zugeordnet ist
 seo-description: When you create a custom table in Adobe Campaign, you may want to build a form in AEM that maps to that custom table
 uuid: f3bde513-6edb-4eb6-9048-40045ee08c4a
 contentOwner: User
@@ -10,18 +10,18 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '530'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '528'
+ht-degree: 15%
 
 ---
 
 # Erstellen benutzerdefinierter Formularzuordnungen{#creating-custom-form-mappings}
 
-Bei der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign ist es u. U. ratsam, in AEM ein Formular zu erstellen, das dieser benutzerdefinierten Tabelle zugeordnet wird.
+Wenn Sie eine benutzerdefinierte Tabelle in Adobe Campaign erstellen, möchten Sie möglicherweise ein Formular in erstellen, das AEM dieser benutzerdefinierten Tabelle zugeordnet ist.
 
-In diesem Dokument wird beschrieben, wie Sie benutzerdefinierte Formularzuordnungen erstellen. Indem Sie die Schritte in diesem Dokument abschließen, stellen Sie Ihren Benutzern eine Ereignisseite zur Verfügung, auf der sie sich selbst für anstehende Ereignisse registrieren können. Diese Benutzer kontaktieren Sie dann nachfolgend via Adobe Campaign.
+In diesem Dokument wird beschrieben, wie Sie benutzerdefinierte Formularzuordnungen erstellen. Wenn Sie die Schritte in diesem Dokument ausführen, stellen Sie Ihren Benutzern eine Ereignisseite zur Verfügung, auf der sie sich für ein bevorstehendes Ereignis registrieren können. Anschließend können Sie diese Benutzer über Adobe Campaign nachverfolgen.
 
 ## Voraussetzungen {#prerequisites}
 
@@ -34,18 +34,18 @@ Weitere Informationen finden Sie unter [Integrieren von AEM mit Adobe Campaign�
 
 ## Erstellen benutzerdefinierter Formularzuordnungen {#creating-custom-form-mappings-2}
 
-Zur Erstellung benutzerdefinierter Formularzuordnungen führen Sie die folgenden Schritte aus, die in den folgenden Abschnitten genauer beschrieben werden:
+Um benutzerdefinierte Formularzuordnungen zu erstellen, müssen Sie die folgenden allgemeinen Schritte ausführen, die in den folgenden Abschnitten ausführlich beschrieben werden:
 
-1. Benutzerdefinierte Tabelle erstellen
-1. **Seed**-Tabelle erweitern
-1. Benutzerdefinierte Zuordnung erstellen
-1. Auf der benutzerdefinierten Zuordnung basierende Bereitstellung erstellen
-1. Das Formular, das die erstellte Bereitstellung verwendet, in AEM erstellen
-1. Das Formular zum Testen übermitteln
+1. Erstellen Sie eine benutzerdefinierte Tabelle.
+1. Erweitern Sie die **Saatgut** Tabelle.
+1. Erstellen Sie eine benutzerdefinierte Zuordnung.
+1. Erstellen Sie einen Versand basierend auf dem benutzerdefinierten Mapping.
+1. Erstellen Sie das Formular in AEM, das den erstellten Versand verwendet.
+1. Senden Sie das Formular, um es zu testen.
 
-### Erstellen der benutzerdefinierten Tabelle in Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
+### Erstellen einer benutzerdefinierten Tabelle in Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
-Beginner Sie mit der Erstellung einer benutzerdefinierten Tabelle in Adobe Campaign. In diesem Beispiel verwenden wir die folgende Definition zur Erstellung einer Ereignistabelle:
+Erstellen Sie zunächst eine benutzerdefinierte Tabelle in Adobe Campaign. In diesem Beispiel verwenden wir die folgende Definition zur Erstellung einer Ereignistabelle:
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
@@ -56,11 +56,11 @@ Beginner Sie mit der Erstellung einer benutzerdefinierten Tabelle in Adobe Camp
 </element>
 ```
 
-Führen Sie nach der Erstellung der Ereignistabelle den **Assistenten zur Aktualisierung der Datenbankstruktur** aus, um die Tabelle zu erstellen.
+Nachdem Sie die Ereignistabelle erstellt haben, führen Sie die **Assistent zur Aktualisierung der Datenbankstruktur** , um die Tabelle zu erstellen.
 
-### Erweitern der Seed-Tabelle {#extending-the-seed-table}
+### Erweitern der Testtabelle {#extending-the-seed-table}
 
-Klicken/tippen Sie in Adobe Campaign auf **Hinzufügen**, um eine neue Erweiterung für die Tabelle **Seed-Adressen (nms)** hinzuzufügen.
+Tippen/klicken Sie in Adobe Campaign auf **Hinzufügen** , um eine neue Erweiterung der **Testadressen (nms)** Tabelle.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
@@ -75,39 +75,39 @@ Verwenden Sie nun die Felder der **Ereignistabelle** zur Erweiterung der **Seed*
  </element>
 ```
 
-Führen Sie danach den **Assistenten zur Aktualisierung der Datenbank** aus, um die Änderungen zu übernehmen.
+Führen Sie danach **Datenbankassistent aktualisieren** , um die Änderungen anzuwenden.
 
 ### Erstellen einer benutzerdefinierten Zielzuordnung {#creating-custom-target-mapping}
 
-Wechseln Sie unter **Administration/Kampagnenverwaltung** zu **Zielzuordnungen** und fügen Sie eine neue **Zielzuordnung** hinzu.
+In **Administration/Kampagnenverwaltung** t, gehen Sie zu **Zielzuordnungen** und fügen Sie einen neuen T hinzu **Zielzuordnung.**
 
 >[!NOTE]
 >
->Verwenden Sie einen aussagekräftigen **internen Namen**.
+>Stellen Sie sicher, dass Sie einen aussagekräftigen Namen für **Interner Name**.
 
 ![chlimage_1-195](assets/chlimage_1-195.png)
 
-### Erstellen einer benutzerdefinierten Bereitstellungsvorlage {#creating-a-custom-delivery-template}
+### Erstellen einer benutzerdefinierten Versandvorlage {#creating-a-custom-delivery-template}
 
-In diesem Schritt fügen Sie eine Bereitstellungsvorlage hinzu, die die erstellte **Zielzuordnung** verwendet.
+In diesem Schritt fügen Sie eine Versandvorlage hinzu, die die **Zielgruppen-Mapping**.
 
-Wechseln Sie unter **Ressourcen/Vorlagen** zur Bereitstellungsvorlage und duplizieren Sie die bestehende AEM-Bereitstellung. Wenn Sie auf **Bis** klicken, wählen Sie die **Zielzuordnung** für „Ereignis erstellen“ aus.
+In **Ressourcen/Vorlagen**, navigieren Sie zur Versandvorlage und duplizieren Sie den bestehenden AEM. Wenn Sie auf **nach**, wählen Sie das Erstellungsereignis aus **Zielgruppen-Mapping**.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
 ### Erstellen des Formulars in AEM {#building-the-form-in-aem}
 
-Vergewissern Sie sich, dass Sie in AEM unter **Seiteneigenschaften** einen Cloud-Service konfiguriert haben.
+Stellen Sie AEM sicher, dass Sie einen Cloud Service in **Seiteneigenschaften**.
 
-Wählen Sie dann auf der Registerkarte **Adobe Campaign** die Bereitstellung aus, die im Schritt [Erstellen einer benutzerdefinierten Bereitstellungsvorlage](#creating-a-custom-delivery-template) erstellt wurde.
+Dann in der **Adobe Campaign** Wählen Sie im Tab den in erstellten Versand aus. [Erstellen einer benutzerdefinierten Versandvorlage](#creating-a-custom-delivery-template).
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-Geben Sie bei der Konfiguration der Felder eindeutige Elementnamen für die Formularfelder an.
+Stellen Sie beim Konfigurieren der Felder sicher, dass Sie eindeutige Elementnamen für die Formularfelder angeben.
 
-Nach der Konfiguration der Felder müssen Sie die Zuordnung manuell ändern.
+Nachdem die Felder konfiguriert wurden, müssen Sie die Zuordnung manuell ändern.
 
-Wechseln Sie in CRXDE Lite zum Knoten **jcr:content** der Seite und legen Sie als Wert von **acMapping** den internen Namen der **Zielzuordnung** fest.
+Wechseln Sie in CRXDE-lite zum **jcr:content** (der Seite) und ändern Sie die **acMapping** zum internen Namen der **Zielgruppen-Mapping**.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
@@ -115,16 +115,16 @@ Aktivieren Sie bei der Konfiguration des Formulars das Kontrollkästchen „Erst
 
 ![chlimage_1-199](assets/chlimage_1-199.png)
 
-### Übermitteln des Formulars {#submitting-the-form}
+### Formular übermitteln {#submitting-the-form}
 
-Sie können das Formular nun übermitteln, um in Adobe Campaign zu überprüfen, ob die Werte gespeichert wurden.
+Jetzt können Sie das Formular senden und auf der Adobe Campaign-Seite überprüfen, ob die Werte gespeichert werden.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 ## Fehlerbehebung {#troubleshooting}
 
-**&quot;Invalid type for value &#39;02/02/2015&#39; from element &#39;@eventdate&#39; (document of type &#39;Event ([adb:event])&#39;)&quot;**
+**&quot;Ungültiger Typ für den Wert &#39;02/02/2015&#39; aus Element &#39;@eventdate&#39; (Dokument des Typs &#39;Ereignis ([adb:event])&#39;)&quot;**
 
-Beim Übermitteln des Formulars wird dieser Fehler in der Datei **error.log** von AEM protokolliert.
+Beim Senden des Formulars wird dieser Fehler im **error.log** in AEM.
 
-Dies ist auf ein ungültiges Format für das Datumsfeld zurückzuführen. Die Lösung besteht darin, einen Wert im Format **JJJJ-MM-TT** anzugeben.
+Dies liegt an einem ungültigen Format für das Datumsfeld. Die Lösung besteht darin, **yyyy-mm-dd** als Wert.

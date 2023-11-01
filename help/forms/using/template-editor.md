@@ -11,10 +11,10 @@ discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2044'
-ht-degree: 53%
+source-wordcount: '2042'
+ht-degree: 77%
 
 ---
 
@@ -24,16 +24,16 @@ ht-degree: 53%
 
 | Version | Artikel-Link |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html) |
+| AEM as a Cloud Service | [Hier klicken](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/template-editor.html?lang=de) |
 | AEM 6.5 | Dieser Artikel |
 
 
 
-Wenn Sie ein Formular erstellen, fügen Sie Felder und Komponenten hinzu, um Formularstruktur, Inhalt und Aktionen im Editor zu definieren. Sie können Felder und Komponenten im`guideRootPanel` des Formularcontainers hinzufügen. Mit dem Vorlagen-Editor können Sie eine Vorlage erstellen, die eine grundlegende Struktur und anfänglichen Inhalt enthält, die Autoren zum Erstellen von Formularen verwenden können.
+Wenn Sie ein Formular erstellen, fügen Sie Felder und Komponenten hinzu, um Formularstruktur, Inhalt und Aktionen im Editor zu definieren. Sie können Felder und Komponenten im`guideRootPanel` des Formularcontainers hinzufügen. Mit dem Vorlageneditor können Sie eine Vorlage erstellen, die eine grundlegende Struktur und anfänglichen Inhalt enthält, die Autorinnen und Autoren zum Erstellen von Formularen verwenden können.
 
-Beispiel: Sie möchten, dass alle Autoren in einem Registrierungsformular bestimmte Textfelder, Navigationsschaltflächen und eine Schaltfläche zum Senden verwenden. Sie können eine Vorlage mit den Komponenten erstellen, die Autoren verwenden können, damit ihr Formular konsistent mit anderen Registrierungsformularen ist. Wenn Autoren die Vorlage zum Erstellen eines adaptiven Formulars verwenden, übernimmt das neue Formular die Struktur und die Komponenten, die Sie in der Vorlage angegeben haben. Mit dem Vorlagen-Editor können Sie:
+Beispiel: Sie möchten, dass alle Autoren in einem Registrierungsformular bestimmte Textfelder, Navigationsschaltflächen und eine Schaltfläche zum Senden verwenden. Sie können eine Vorlage mit den Komponenten erstellen, die Autoren verwenden können, damit ihr Formular konsistent mit anderen Registrierungsformularen ist. Wenn Autoren die Vorlage zum Erstellen eines adaptiven Formulars verwenden, übernimmt das neue Formular die Struktur und die Komponenten, die Sie in der Vorlage angegeben haben. Mit dem Vorlageneditor können Sie:
 
-* Fügen Sie Kopf- und Fußzeilenkomponenten eines Formulars in der Strukturebene hinzu.
+* Kopf- und Fußzeilenkomponenten eines Formulars in der Strukturebene hinzufügen.
 * Den anfänglichen Inhalt für das Formular angeben.
 * Geben Sie ein Design und Übermittlungsaktionen an.
 
@@ -82,11 +82,11 @@ Eine adaptive Formularvorlage wird mit zwei Ebenen erstellt:
 * Struktur
 * Anfänglicher Inhalt
 
-Der Ebenenselektor ist neben der Option Vorschau in der oberen rechten Ecke des Bildschirms verfügbar.
+Der Ebenenselektor ist neben der Option „Vorschau“ in der rechten oberen Ecke des Bildschirms verfügbar.
 
 ### Struktur {#structure}
 
-Wenn Sie die Strukturebene im Vorlageneditor auswählen, werden die Layout-Container über und unter dem Container für adaptive Formulare angezeigt. Autoren können diese Layout-Container für Kopf- und Fußzeilen verwenden. Sie können die Kopf- und Fußzeile hinzufügen, bearbeiten oder anpassen. Ziehen Sie die Kopfzeilenkomponente des adaptiven Formulars in den Layout-Container über dem Container des adaptiven Formulars, um die Vorlagenkopfzeile anzupassen. Ziehen Sie die Fußzeilenkomponente des adaptiven Formulars in den Layout-Container unter den Container des adaptiven Formulars, um die Vorlagenfußzeile anzupassen.
+Wenn Sie die Strukturebene im Vorlageneditor auswählen, werden die Layout-Container über und unter dem Container für adaptive Formulare angezeigt. Autorinnen und Autoren können diese Layout-Container für Kopf- und Fußzeilen verwenden. Sie können die Kopf- und Fußzeile hinzufügen, bearbeiten oder anpassen. Ziehen Sie die Kopfzeilenkomponente des adaptiven Formulars in den Layout-Container über dem Container des adaptiven Formulars, um die Vorlagenkopfzeile anzupassen. Ziehen Sie die Fußzeilenkomponente des adaptiven Formulars in den Layout-Container unter dem Container des adaptiven Formulars, um die Vorlagenfußzeile anzupassen.
 
 ![Layout-Container in der Strukturebene](assets/header-layer-selector.png)
 
@@ -110,13 +110,13 @@ Beispielsweise können Sie die Kopfzeilenkomponente zur Vorlage hinzufügen. Wen
 
 >[!NOTE]
 >
->Das einzelne Sperren oder Entsperren von Bildern oder Logos in der Kopfzeilenkomponente wird nicht empfohlen. Sie können die Kopfzeilenkomponente entsperren.
+>Es wird davon abgeraten, ein Bild oder Logo in der Kopfzeilenkomponente einzeln zu sperren oder zu entsperren. Sie können die Kopfzeilenkomponente entsperren.
 
 ### Anfänglicher Inhalt {#initial-content}
 
 Wenn die Option Anfänglicher Inhalt ausgewählt ist, wird der Container des adaptiven Formulars der Vorlage wie ein adaptives Formular zur Bearbeitung geöffnet. Wie beim Authoring eines adaptiven Formulars können Sie anfängliche Einstellungen festlegen, z. B. ein Design und Übermittlungsaktionen.
 
-Formularverfasser verwenden es als Grundlage zum Erstellen eines Formulars. Die Struktur des Inhaltsflusses wird in der Ebene Anfänglicher Inhalt der Vorlage angegeben. Um zum Bearbeiten des anfänglichen Inhalts der Formularvorlage zu wechseln, bevor Sie die Vorschau in der Seitensymbolleiste anzeigen, tippen Sie auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Anfänglicher Inhalt**.
+Formularautorinnen und -autoren verwenden sie als Grundlage zum Erstellen eines Formulars. Die Struktur des Inhaltsflusses wird in der Ebene „Anfänglicher Inhalt“ der Vorlage angegeben. Um zum Bearbeiten des anfänglichen Inhalts der Formularvorlage zu wechseln, bevor Sie die Vorschau in der Seitensymbolleiste anzeigen, tippen Sie auf ![canvas-drop-down](assets/canvas-drop-down.png) > **Anfänglicher Inhalt**.
 ![Ebene „Anfänglicher Inhalt“ im Vorlageneditor](assets/initial-content-layer.png)
 
 In der Ebene „Anfänglicher Inhalt“ im Vorlageneditor ist der Container des adaptiven Formulars zum Festlegen von Eigenschaften ausgewählt.
@@ -129,18 +129,18 @@ Weitere Informationen finden Sie unter [Randleiste](../../forms/using/introducti
 
 >[!NOTE]
 >
->Wenn Sie als Übermittlungsaktion „Inhalt speichern“ oder „PDF speichern“ auswählen, wird die Option zum Angeben des Speicherpfads angezeigt. Wenn Sie den Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den richtigen Speicherpfad angeben oder sicherstellen, dass Formularautoren ihn aktualisieren, um zu verhindern, dass Daten aus jedem Formular an demselben Speicherort gespeichert werden.
+>Wenn Sie als Übermittlungsaktion „Inhalt speichern“ oder „PDF speichern“ auswählen, wird die Option zum Angeben des Speicherpfads angezeigt. Wenn Sie den Pfad in der Vorlage angeben, haben alle daraus erstellten Formulare denselben Pfad. Sie können den richtigen Speicherpfad angeben oder sicherstellen, dass Formularautorinnen und -autoren ihn aktualisieren, um zu verhindern, dass Daten aus jedem Formular an demselben Speicherort gespeichert werden.
 
-#### Erstellen einer Vorlage für ein adaptives Formular mit Registerkarten und Bedienfeldern  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
+#### Erstellen einer adaptiven Formularvorlage mit Registerkarten und Bedienfeldern  {#creating-an-adaptive-form-template-with-tabs-and-panels-nbsp}
 
-Sie möchten beispielsweise eine Vorlage mit den folgenden Registerkarten erstellen:
+Nehmen wir an, Sie möchten eine Vorlage mit den folgenden Registerkarten erstellen:
 
 * Allgemeine Informationen
 * Berufliche Informationen
 
 Sie haben ein Logo hinzugefügt, einen Titel angegeben und eine Fußzeile in der Strukturebene hinzugefügt. Sperren Sie die Kopf- und Fußzeile, damit Autoren sie nicht bearbeiten, wenn sie die Vorlage zum Erstellen von Formularen verwenden.
 
-Ändern Sie die Ebene von Struktur in Anfänglicher Inhalt und beginnen Sie mit dem Hinzufügen von Inhalt zum Formular. Um eine Struktur mit Registerkarten zu erstellen, fügen Sie ein untergeordnetes Bedienfeld im guideRootPanel des Containers für adaptive Formulare hinzu. So fügen Sie einen Bereich hinzu:
+Ändern Sie die Ebene von „Struktur“ in „Anfänglicher Inhalt“ und beginnen Sie mit dem Hinzufügen von Inhalten zum Formular. Um eine Struktur mit Registerkarten zu erstellen, fügen Sie ein untergeordnetes Bedienfeld im guideRootPanel des Containers für adaptive Formulare hinzu. So fügen Sie ein Bedienfeld hinzu:
 
 * Sie können ein Bedienfeld hinzufügen, indem Sie auf die Schaltfläche **+** tippen, wenn Sie die Option **Komponenten hierher ziehen** auswählen.
 
@@ -153,11 +153,11 @@ Um die Registerkarten „Allgemeine Informationen“ und „Berufliche Informati
 
 ![Hinzufügen von Feldern in Vorlagen für adaptive Formulare](assets/template-edit-initial-content.png)
 
-Nachdem Sie Bedienfelder hinzugefügt und als Registerkarten strukturiert haben, können Sie Felder in den Registerkarten hinzufügen. Wenn Sie eine Registerkarte im Editor auswählen, wird die **Komponenten hierher ziehen** -Option. Sie können Komponenten wie Textboxen, Listenelemente und Schaltflächen per Drag-and-Drop verschieben. Sie können Komponenten aus dem Komponenten-Browser in die Seitenleiste ziehen und dort ablegen.
+Nachdem Sie Bedienfelder hinzugefügt und als Registerkarten strukturiert haben, können Sie Felder in den Registerkarten hinzufügen. Wenn Sie eine Registerkarte im Editor auswählen, wird die Option **Komponenten hierhin ziehen** sichtbar. Sie können Komponenten wie Textboxen, Listenelemente und Schaltflächen per Drag-and-Drop verschieben. Sie können Komponenten aus dem Komponenten-Browser in der Seitenleiste ziehen.
 
-Jede Komponente verfügt über Eigenschaften, die die Datenerfassung und -bearbeitung verbessern. Beispielsweise können Sie die Eigenschaft **Erforderliches Feld** einer Komponente aktivieren. Ihre Autoren können eine Nachricht angeben, die Ihre Kunden sehen, wenn sie das Ausfüllen eines erforderlichen Felds überspringen. Geben Sie die Meldung in der Eigenschaft **Erforderliches Feld** an.
+Jede Komponente verfügt über Eigenschaften, die die Datenerfassung und -bearbeitung verbessern. Beispielsweise können Sie die Eigenschaft **Erforderliches Feld** einer Komponente aktivieren. Ihre Autorinnen und Autoren können eine Nachricht angeben, die Ihre Kundinnen und Kunden sehen sollen, wenn sie beim Ausfüllen ein erforderliches Feld überspringen. Geben Sie die Meldung in der Eigenschaft **Erforderliches Feld** an.
 
-In der Beispielvorlage werden die Felder Name, Telefonnummer und Geburtsdatum im Tab Allgemeine Informationen hinzugefügt. Im Tab Berufliche Informationen werden die Felder Aktuell beschäftigt, Beschäftigungstyp und Bildungsabschluss hinzugefügt.
+In der Beispielvorlage werden die Felder „Name“, „Telefonnummer“ und „Geburtsdatum“ auf der Registerkarte „Allgemeine Informationen“ hinzugefügt. Auf der Registerkarte „Berufliche Informationen“ werden die Felder „Derzeit beschäftigt“, „Beschäftigungstyp“ und „Bildungsabschluss“ hinzugefügt.
 
 Nachdem Sie Felder hinzugefügt haben, können Sie Schaltflächen wie „Senden“ und „Zurücksetzen“ hinzufügen.
 

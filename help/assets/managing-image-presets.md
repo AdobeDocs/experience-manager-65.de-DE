@@ -13,22 +13,22 @@ legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-
 feature: Image Presets
 role: User, Admin
 exl-id: 556b99fe-91c3-441f-ba81-22cb8c10ef7f
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
-workflow-type: ht
-source-wordcount: '3839'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '3837'
+ht-degree: 86%
 
 ---
 
 # Verwalten von Bildvorgaben für Dynamic Media{#managing-image-presets}
 
-Anhand von Bildvorgaben kann Adobe Experience Manager Assets Bilder mit unterschiedlichen Größen, Formaten oder Bildeigenschaften dynamisch bereitstellen. Jede Bildvorgabe stellt eine vordefinierte Sammlung aus Größen- und Formatierungsbefehlen für die Anzeige von Bildern dar. Beim Erstellen einer Bildvorgabe wählen Sie eine Größe für die Bildbereitstellung aus. Außerdem wählen Sie Formatierungsbefehle, damit die Darstellung des Bildes bei der Bereitstellung zur Anzeige optimiert wird.
+Anhand von Bildvorgaben kann Adobe Experience Manager Assets Bilder mit unterschiedlichen Größen, Formaten oder Bildeigenschaften dynamisch bereitstellen. Jede Bildvorgabe stellt eine vordefinierte Sammlung von Größenangaben und Formatierungsbefehlen für die Anzeige von Bildern dar. Wenn Sie eine Bildvorgabe erstellen, wählen Sie eine Größe für die Bildbereitstellung aus. Sie wählen auch Formatierungsbefehle, damit das Erscheinungsbild des Bildes optimiert wird, wenn das Bild zur Anzeige bereitgestellt wird.
 
-Administratoren können Vorgaben für den Export von Assets erstellen. Benutzer können eine Vorgabe auswählen, wenn sie Bilder exportieren, sodass die Bilder entsprechend den Spezifikationen des Administrators umformatiert werden.
+Administratoren können Vorgaben für den Asset-Export erstellen. Benutzer können eine Vorgabe auswählen, wenn sie Bilder exportieren, sodass die Bilder entsprechend den Spezifikationen des Administrators umformatiert werden.
 
 Sie können auch responsive Bildvorgaben erstellen. Wenn Sie eine responsive Bildvorgabe auf Assets anwenden, werden diese je nach Gerät oder Bildschirmgröße bei der Anzeige geändert. Sie können Bildvorgaben konfigurieren, um im Farbraum zusätzlich zu RGB oder Graustufen auch CMYK zu verwenden.
 
-In diesem Abschnitt wird beschrieben, wie Bildvorgaben erstellt, geändert und allgemein verwaltet werden. Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwenden. Siehe [Anwenden von Bildvorgaben](/help/assets/image-presets.md).
+In diesem Abschnitt wird beschrieben, wie Sie Bildvorgaben erstellen, ändern und allgemein verwalten. Sie können jederzeit bei der Vorschau eines Bildes eine Bildvorgabe darauf anwenden. Siehe [Anwenden von Bildvorgaben](/help/assets/image-presets.md).
 
 >[!NOTE]
 >
@@ -44,9 +44,9 @@ Wie ein Makro ist eine Bildvorgabe eine vordefinierte Sammlung aus Größenangab
 
 Sie können zwei Bildvorgaben erstellen: eine mit 500 x 500 Pixel für die Desktopcomputerversion und die andere mit 150 x 150 Pixel für die Mobilgeräteversion. Sie können zwei Bildvorgaben erstellen: `Enlarge` (Vergrößern) dient der Anzeige von Bildern mit einer Auflösung von 500 x 500 Pixel, `Thumbnail` (Miniatur) der Anzeige von Bildern mit einer Auflösung von 150 x 150 Pixel. Zum Übermitteln von Bildern mit der Größe `Enlarge` und `Thumbnail` sucht Experience Manager nach der Definition der Bildvorgabe „Vergrößern“ und nach der Bildvorgabe „Miniaturansicht“. Experience Manager generiert anschließend dynamisch ein Bild anhand der Größen- und Formatierungsspezifikationen der jeweiligen Bildvorgabe.
 
-Bilder, die bei der dynamischen Bereitstellung verkleinert werden, können an Schärfe und Detailgenauigkeit verlieren. Aus diesem Grund umfasst jede Bildvorgabe Formatierungssteuerelemente für die Optimierung eines Bildes, wenn es mit einer bestimmten Größe bereitgestellt wird. Dadurch wird sichergestellt, dass die Bilder scharf und deutlich auf der Website oder im Programm angezeigt werden.
+Bilder, deren Größe bei der dynamischen Bereitstellung reduziert wird, können Schärfe und Details verlieren. Aus diesem Grund enthält jede Bildvorgabe Formatierungssteuerelemente zum Optimieren eines Bildes, wenn es in einer bestimmten Größe bereitgestellt wird. Dadurch wird sichergestellt, dass die Bilder scharf und deutlich auf der Website oder im Programm angezeigt werden.
 
-Administratoren können Bildvorgaben erstellen. Sie können völlig neue Bildvorgaben erstellen oder eine vorhandene Vorgabe bearbeiten und unter einem neuen Namen speichern.
+Administratoren können Bildvorgaben erstellen. Um eine Bildvorgabe zu erstellen, können Sie von Grund auf neu beginnen oder eine vorhandene Vorgabe unter einem neuen Namen speichern.
 
 ## Verwalten von Bildvorgaben für Dynamic Media {#managing-image-presets-1}
 
@@ -58,7 +58,7 @@ Bildvorgaben verwalten Sie in Experience Manager, indem Sie auf das Experience M
 >
 >Alle erstellten Bildvorgaben sind auch als dynamische Ausgabedarstellungen verfügbar, wenn Sie eine Vorschau von Assets anzeigen oder Assets bereitstellen.
 >
->Im *Modus „Dynamic Media – Scene7“* müssen Sie Bildvorgaben *nicht* veröffentlichen, da die Veröffentlichung von Bildvorgaben automatisch erfolgt.
+>In *Dynamic Media - Scene7-Modus*, tun Sie dies *not* müssen Bildvorgaben veröffentlichen, da Bildvorgaben automatisch veröffentlicht werden.
 >
 >Im *Modus „Dynamic Media – Hybrid“* müssen Sie Bildvorgaben manuell veröffentlichen.
 >
@@ -144,9 +144,9 @@ Argumente zum Rastern von PDF- oder AI-Workflows
  </tbody>
 </table>
 
-Bei Verwendung der standardmäßigen Prozessargumente wird die erste Seite eines PDF/AI-Dokuments mit 72 ppi gerastert und das generierte Vorschaubild hat eine Größe von 2048 x 2048 Pixel. Für eine typische Implementierung können Sie die Auflösung auf einen Mindestwert von 150 ppi oder mehr erhöhen. Für ein US Letter-Dokument ist z. B. für 300 ppi eine maximale Breite und Höhe von 2550 x 3300 Pixel erforderlich.
+Bei Verwendung der standardmäßigen Prozessargumente wird die erste Seite eines PDF/AI-Dokuments mit 72 ppi gerastert und das generierte Vorschaubild hat eine Größe von 2048 x 2048 Pixel. Für eine typische Bereitstellung können Sie die Auflösung auf einen Mindestwert von 150 ppi oder mehr erhöhen. Für ein US Letter-Dokument ist z. B. für 300 ppi eine maximale Breite und Höhe von 2550 x 3300 Pixel erforderlich.
 
-Die max. Breite und die max. Höhe beschränken die Auflösung, in der die Rasterung erfolgt. Wenn z. B. die Maximalwerte unverändert bleiben und die Auflösung auf 300 ppi festgelegt wird, wird ein US Letter-Dokument mit 186 ppi gerastert. Das Dokument ist demnach 1581 x 2046 Pixel groß.
+Die max. Breite und die max. Höhe beschränken die Auflösung, in der die Rasterung erfolgt. Wenn beispielsweise die Maximalwerte unverändert bleiben und die Auflösung auf 300 ppi eingestellt ist, wird ein US-Briefdokument mit 186 ppi gerastert. Das heißt, das Dokument ist 1581 x 2046 Pixel.
 
 Für die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` ist ein Maximalwert definiert, um sicherzustellen, dass im Arbeitsspeicher keine zu großen Bilder erstellt werden. Zu große Bilder können zu einem Überlauf des für die JVM (Java™ Virtual Machine) bereitgestellten Speichers führen. Achten Sie darauf, der JVM ausreichend Arbeitsspeicher zur Verwaltung der konfigurierten Anzahl paralleler Workflows zur Verfügung zu stellen, da jeder Workflow potenziell ein Bild in der konfigurierten Maximalgröße erstellen kann.
 
@@ -154,7 +154,7 @@ Für die Prozesskomponente `Rasterize PDF/AI Image Preview Rendition` ist ein Ma
 
 Wenn Sie die Aufnahme von INDD-Dateien unterstützen möchten, um aus diesem Dateiformat dynamische Ausgabedarstellungen zu generieren, sollten Sie die folgenden Informationen lesen, bevor Sie Bildvorgaben erstellen.
 
-Für InDesign-Dateien werden nur dann Teil-Assets extrahiert, wenn der Adobe InDesign Server in Experience Manager integriert ist. Referenzierte Assets werden auf der Grundlage ihrer Metadaten verknüpft. Für die Verknüpfung ist InDesign Server nicht erforderlich. Die referenzierten Assets müssen jedoch in Experience Manager vorhanden sein, bevor die InDesign-Dateien verarbeitet werden, damit die Verknüpfungen zwischen den InDesign-Dateien und den referenzierten Assets erstellt werden können.
+Für InDesign-Dateien werden nur dann Teil-Assets extrahiert, wenn der Adobe InDesign Server in Experience Manager integriert ist. Referenzierte Assets werden basierend auf ihren Metadaten verknüpft. Für die Verknüpfung ist keine InDesign Server erforderlich. Die referenzierten Assets müssen jedoch in Experience Manager vorhanden sein, bevor die InDesign-Dateien verarbeitet werden, damit die Verknüpfungen zwischen den InDesign-Dateien und den referenzierten Assets erstellt werden können.
 
 Siehe [Integrieren von Experience Manager Assets mit InDesign Server](/help/assets/indesign.md).
 
@@ -206,11 +206,10 @@ Die Größe der Miniaturen wird im folgenden Format definiert: **[!UICONTROL wid
 >* Die Größe der Miniaturen für Videos wird im Schritt **[!UICONTROL FFmpeg-Miniaturen]** auf der Registerkarte **[!UICONTROL Prozess]** unter **[!UICONTROL Argumente]** konfiguriert.
 >
 
-
 **So konfigurieren Sie die Größe von Miniaturen:**
 
 1. Tippen Sie auf **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modelle]** > **[!UICONTROL DAM-Update-Asset]** > **[!UICONTROL Bearbeiten]**.
-1. Tippen Sie auf den Schritt **[!UICONTROL Dynamic Media Process Image-Assets]** und dann auf die Registerkarte **[!UICONTROL Miniaturansichten]**. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK]**.
+1. Tippen Sie auf **[!UICONTROL Dynamic Media Process Image Assets]** und tippen oder klicken Sie auf **[!UICONTROL Miniaturen]** Registerkarte. Ändern Sie bei Bedarf die Größe der Miniaturansichten und tippen Sie auf **[!UICONTROL OK]**.
 
    ![6_5_dynamicmediaprocessimageassets-thumbnailstab](assets/6_5_dynamicmediaprocessimageassets-thumbnailstab.png)
 
@@ -220,7 +219,7 @@ Die Größe der Miniaturen wird im folgenden Format definiert: **[!UICONTROL wid
    >
    >Die Werte im Argument „Miniaturansichten“ im Schritt **[!UICONTROL Miniaturansichten verarbeiten]** müssen mit dem Argument „Miniaturansichten“ im Schritt **[!UICONTROL Bild-Assets-Verarbeitung für Dynamic Media]** übereinstimmen.
 
-1. Tippen Sie auf **[!UICONTROL Speichern]**, um die Änderungen am Workflow zu speichern.
+1. Tippen **[!UICONTROL Speichern]** , um die Änderungen am Workflow zu speichern.
 
 ### Erhöhen oder Verringern der Anzahl der angezeigten Dynamic Media-Bildvorgaben {#increasing-or-decreasing-the-number-of-image-presets-that-display}
 
@@ -247,7 +246,7 @@ Indem Sie eine Bildvorgabe erstellen, können Sie die entsprechenden Einstellung
 
 >[!NOTE]
 >
->Wenn Sie Internet Explorer 9 verwenden und eine Vorgabe erstellen, wird diese nicht sofort nach dem Speichern in der Vorgabenliste angezeigt. Um dieses Problem zu umgehen, deaktivieren Sie den Cache für IE9.
+>Bei Verwendung von Internet Explorer 9 wird die Erstellung einer Vorgabe nicht sofort nach dem Speichern in der Vorgabenliste angezeigt. Um dieses Problem zu umgehen, deaktivieren Sie den Cache für IE9.
 
 Wenn Sie die Aufnahme von AI-, PDF- und EPS-Dateien unterstützen möchten, um aus diesen Dateiformaten dynamische Ausgabedarstellungen zu generieren, lesen Sie die folgenden Informationen, bevor Sie Bildvorgaben erstellen.
 Siehe [Dateiformate Adobe Illustrator (AI), Postscript (EPS) und PDF](#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats).
@@ -290,9 +289,9 @@ Dadurch wird diese Vorgabe in Experience Manager als responsiv erkannt. Sie kön
 >
 >![chlimage_1-79](assets/chlimage_1-498.png)
 >
->Im Modus „Dynamic Media – Scene7“ werden Bildvorgaben und Bildelemente automatisch veröffentlicht.
+>Im Modus Dynamic Media - Scene7 werden Bildvorgaben und Bild-Assets automatisch veröffentlicht.
 >
->Im Modus „Dynamic Media – Hybrid“ müssen Sie Bildvorgaben und Bildelemente manuell veröffentlichen.
+>Im Hybridmodus von Dynamic Media müssen Sie Bildvorgaben und Bild-Assets manuell veröffentlichen.
 
 ### Optionen für Bildvorgaben {#image-preset-options}
 
@@ -371,9 +370,9 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
   </tr>
   <tr>
    <td><strong>Rendering-Intent</strong></td>
-   <td>Sie können den Standardwert für Rendering-Intent überschreiben. Rendering-Intent legt fest, was mit Farben passiert, die im Farbprofil des Ziels nicht wiedergegeben werden können (außerhalb der Farbskala). Rendering-Intent wird ignoriert, wenn das ICC-Profil nicht kompatibel ist.
+   <td>Sie können den standardmäßigen Rendering-Intent überschreiben. Die Rendering-Absicht bestimmt, was mit Farben passiert, die im Zielfarbprofil nicht reproduziert werden können (außerhalb der Farbskala). Der Render-Intent wird ignoriert, wenn er nicht mit dem ICC-Profil kompatibel ist.
     <ul>
-     <li>Wählen Sie <strong>Wahrnehmungsoptimiert</strong> aus, damit die gesamte Farbskala von einem Farbraum in einen anderen Farbraum komprimiert wird, wenn eine oder mehrere Farben im Originalbild außerhalb der Farbskala des Zielfarbraums liegen.</li>
+     <li>Auswählen <strong>Perzeptiv</strong> , um die Gesamtbreite von einem Farbraum in einen anderen Farbraum zu komprimieren, wenn eine oder mehrere Farben im Originalbild außerhalb der Farbskala des Zielfarbraums liegen.</li>
      <li>Wählen Sie <strong>Relativ farbmetrisch</strong> aus, wenn eine Farbe des aktuellen Farbraums im Zielfarbraum außerhalb der Farbskala liegt und auf die nächstmögliche Farbe der Farbskala des Zielfarbraums abgebildet werden soll, ohne dass andere Farben betroffen sind. </li>
      <li>Wählen Sie <strong>Sättigung</strong> aus, um die Sättigung des Originalbilds beim Konvertieren in den Zielfarbraum zu übernehmen. </li>
      <li>Wählen Sie <strong>Absolut farbmetrisch</strong> aus, um Farben exakt und ohne Weißpunkt- oder Schwarzpunktanpassung abzubilden, wodurch die Helligkeit verändert würde.</li>
@@ -381,7 +380,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
   </tr>
   <tr>
    <td><strong>Tiefenkompensierung</strong></td>
-   <td>Wählen Sie diese Option aus, wenn das Ausgabeprofil diese Funktion unterstützt. Die Tiefenkompensierung wird ignoriert, wenn sie nicht mit dem angegebenen ICC-Profil kompatibel ist.</td>
+   <td>Wählen Sie diese Option aus, wenn das Ausgabeprofil diese Funktion unterstützt. Blackpoint-Kompensation wird ignoriert, wenn sie nicht mit dem angegebenen ICC-Profil kompatibel ist.</td>
   </tr>
   <tr>
    <td><strong>Dithering</strong></td>
@@ -397,7 +396,7 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
     </ul> <p>In <strong>Unschärfemaske</strong> sind die folgenden Optionen verfügbar:</p>
     <ul>
      <li><strong>Betrag</strong>: Steuert den auf die Kantenpixel angewendeten Kontrastwert. Der Standardwert für die reelle Zahl ist 1,0. Bei hochauflösenden Bildern können Sie ihn auf bis zu 5,0 erhöhen. Der Wert dient hierbei als ein Maß für die Filterintensität.</li>
-     <li><strong>Radius</strong>: Bestimmt die Anzahl der Pixel um die Kantenpixel, die sich auf die Scharfzeichnung auswirken. Geben Sie für Bilder mit hoher Auflösung eine reelle Zahl zwischen 1 und 2 ein. Mit einem niedrigeren Wert werden nur die Kantenpixel scharfgezeichnet, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden. Der korrekte Wert hängt von der Bildgröße ab.</li>
+     <li><strong>Radius</strong>: Bestimmt die Anzahl der Pixel um die Kantenpixel, die sich auf die Scharfzeichnung auswirken. Geben Sie bei hochauflösenden Bildern eine reale Zahl zwischen 1 und 2 ein. Mit einem niedrigeren Wert werden nur die Kantenpixel scharfgezeichnet, während mit einem höheren Wert mehr Pixel scharfgezeichnet werden. Der richtige Wert hängt von der Bildgröße ab.</li>
      <li><strong>Schwellenwert</strong>: Bestimmt den Kontrastbereich, der bei der Anwendung des Filters „Unschärfemaske“ ignoriert werden soll. In anderen Worten: Die Option bestimmt, wie stark sich die scharfgezeichneten Pixel vom Umgebungsbereich unterscheiden müssen, damit sie als Kantenpixel eingestuft und scharfgezeichnet werden. Um Rauschen zu vermeiden, experimentieren Sie mit Ganzzahlwerten von 2 bis 20. </li>
      <li><strong>Anwenden auf</strong>: Bestimmt, ob die Unscharfzeichnung für jede Farbe oder Helligkeit gilt.</li>
     </ul>
@@ -408,13 +407,13 @@ Die in diesem Abschnitt beschriebenen Optionen sind beim Erstellen oder Bearbeit
   </tr>
   <tr>
    <td><strong>Resampling-Modus</strong></td>
-   <td>Wählen Sie eine Option für den <strong>Resampling-Modus</strong>. Diese Optionen sorgen dafür, dass das Bild beim Downsampling scharf bleibt:
+   <td>Wählen Sie eine Option für den <strong>Resampling-Modus</strong>. Mit diesen Optionen wird das Bild beim Downsampling scharfgezeichnet:
     <ul>
      <li><strong>Bilinear</strong>: Die schnellste Resampling-Methode. Einige Aliasing-Artefakte sind sichtbar.</li>
      <li><strong>Bikubisch</strong>: Erhöht die CPU-Auslastung, bietet jedoch schärfere Bilder mit weniger deutlichen Aliasing-Artefakten.</li>
      <li><strong>Scharf2</strong>: Kann im Vergleich zu „Bikubisch“ etwas schärfere Ergebnisse erzeugen, ist jedoch CPU-intensiver.</li>
      <li><strong>Bi-Sharp</strong>: Wählt den Standard-Resampler in Photoshop zum Reduzieren der Bildgröße aus, was in Adobe Photoshop als <strong>bikubisch schärfer</strong> bezeichnet wird.</li>
-     <li><strong>Jede Farbe</strong> und <strong>Helligkeit</strong>: Jede Methode kann auf Farbe oder Helligkeit basieren. Standardmäßig ist <strong>Jede Farbe</strong> ausgewählt.</li>
+     <li><strong>Jede Farbe</strong> und <strong>Helligkeit</strong> - jede Methode kann auf Farbe oder Helligkeit basieren. Standardmäßig <strong>Jede Farbe</strong> ausgewählt ist.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -450,43 +449,43 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
 * [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html?lang=de#image-serving-api): Invertiert jede Farbkomponente für einen negativen Bildeffekt.
 
-   ```xml
-   &op_invert=1
-   ```
+  ```xml
+  &op_invert=1
+  ```
 
-   ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
+  ![6_5_imagepreset-edit-invert](assets/6_5_imagepreset-edit-invert.png)
 
 * [op_blur](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html?lang=de#image-serving-api): Wendet einen Weichzeichenfilter auf das Bild an.
 
-   ```xml
-   &op_blur=7
-   ```
+  ```xml
+  &op_blur=7
+  ```
 
-   ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
+  ![6_5_imagepreset-edit-blur](assets/6_5_imagepreset-edit-blur.png)
 
 * Kombinierte Befehle - op_blur und op-invert
 
-   ```xml
-   &op_invert=1&op_blur=7
-   ```
+  ```xml
+  &op_invert=1&op_blur=7
+  ```
 
-   ![chlimage_1-80](assets/chlimage_1-501.png)
+  ![chlimage_1-80](assets/chlimage_1-501.png)
 
 * [Op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html?lang=de#image-serving-api): Verringert oder erhöht die Helligkeit.
 
-   ```xml
-   &op_brightness=58
-   ```
+  ```xml
+  &op_brightness=58
+  ```
 
-   ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
+  ![6_5_imagepreset-edit-brightness](assets/6_5_imagepreset-edit-brightness.png)
 
-* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=de#image-serving-api): Passt die Bilddeckkraft an. Ermöglicht es Ihnen, die Vordergrunddeckkraft zu verringern.
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html?lang=de#image-serving-api): Passt die Bilddeckkraft an. Ermöglicht das Reduzieren der Vordergrunddeckkraft.
 
-   ```xml
-   opac=29
-   ```
+  ```xml
+  opac=29
+  ```
 
-   ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
+  ![6_5_imagepreset-edit-opacity](assets/6_5_imagepreset-edit-opacity.png)
 
 ## Bearbeiten von Bildvorgaben {#modifying-image-presets}
 
@@ -499,15 +498,15 @@ Im Folgenden finden Sie einige einfache Beispiele für die Nutzung von Bild-Modi
 
 ## Veröffentlichen von Dynamic Media-Bildvorgaben {#publishing-image-presets}
 
-Wenn Sie den Modus „Dynamic Media –Hybrid“ ausführen, müssen Sie Bildvorgaben manuell veröffentlichen.
+Wenn Sie den Hybridmodus von Dynamic Media ausführen, müssen Sie Bildvorgaben manuell veröffentlichen.
 
-(Wenn Sie den Modus „Dynamic Media – Scene7“ ausführen, werden Bildvorgaben automatisch veröffentlicht und Sie müssen diese Schritte nicht ausführen.)
+(Wenn Sie den Modus Dynamic Media - Scene7 ausführen, werden Bildvorgaben automatisch veröffentlicht. Sie müssen diese Schritte nicht ausführen.)
 
 **So veröffentlichen Sie Bildvorgaben im Modus „Dynamic Media –Hybrid“:**
 
 1. Tippen oder klicken Sie in Adobe Experience Manager auf das Adobe Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen. Klicken oder tippen Sie dann auf das Werkzeugsymbol und navigieren Sie zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
 1. Wählen Sie in der Liste der Bildvorgaben eine oder mehrere Bildvorgaben aus und klicken oder tippen Sie auf **[!UICONTROL Veröffentlichen]**.
-1. Nachdem die Bildvorgabe veröffentlicht wurde, ändert sich der Status von „Nicht veröffentlicht“ in „Veröffentlicht“.
+1. Nachdem die Bildvorgabe veröffentlicht wurde, ändert sich der Status von &quot;unveröffentlicht&quot;in &quot;veröffentlicht&quot;.
 
    ![chlimage_1-81](assets/chlimage_1-505.png)
 
@@ -515,4 +514,4 @@ Wenn Sie den Modus „Dynamic Media –Hybrid“ ausführen, müssen Sie Bildvo
 
 1. Tippen oder klicken Sie in Experience Manager auf das Experience Manager-Logo, um auf die globale Navigationskonsole zuzugreifen.
 1. Tippen Sie auf das Symbol **[!UICONTROL Tools]** und navigieren Sie dann zu **[!UICONTROL Assets]** > **[!UICONTROL Bildvorgaben]**.
-1. Wählen Sie eine Vorgabe aus und klicken Sie dann auf **[!UICONTROL Löschen]**. Dynamic Media bestätigt Ihre Löschabsicht. Tippen Sie auf **[!UICONTROL Löschen]**, um den Löschvorgang vorzunehmen, oder auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.
+1. Wählen Sie eine Vorgabe aus und klicken Sie auf **[!UICONTROL Löschen]**. Dynamic Media bestätigt Ihre Löschabsicht. Tippen Sie auf **[!UICONTROL Löschen]**, um den Löschvorgang vorzunehmen, oder auf **[!UICONTROL Abbrechen]**, um den Vorgang abzubrechen.

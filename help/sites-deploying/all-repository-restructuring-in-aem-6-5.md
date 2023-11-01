@@ -1,19 +1,15 @@
 ---
 title: Repository-Neustrukturierung für alle Lösungen in AEM 6.5
-seo-title: Common Repository Restructuring in AEM 6.5
-description: Erfahren Sie, wie Sie die erforderlichen Änderungen zur Migration zur neuen Repository-Struktur in AEM 6.5 vornehmen, die für alle Bereiche von AEM gelten.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 that are common for all areas of AEM.
-uuid: a4bb64e5-387b-4084-9258-54e68db12f3b
+description: Erfahren Sie, wie Sie die erforderlichen Änderungen vornehmen können, um in AEM 6.5 zur neuen Repository-Struktur zu migrieren, die für alle Bereiche von AEM gelten.
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2691'
-ht-degree: 64%
+source-wordcount: '2689'
+ht-degree: 63%
 
 ---
 
@@ -611,14 +607,14 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
     <ol>
      <li>Migrieren Sie vorhandene Konfigurationen am vorherigen Speicherort zum neuen Speicherort.
       <ul>
-       <li>Erstellen Sie manuell neue Konfigurationen für Übersetzungs-Cloud Services über die AEM Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud Services &gt; Übersetzungs-Cloud Services</strong>.<br /> ODER </li>
+       <li>Erstellen Sie manuell neue Konfigurationen für Übersetzungs-Cloud Service über die AEM Authoring-Benutzeroberfläche unter <strong>Tools &gt; Cloud Service &gt; Übersetzungs-Cloud Service</strong>.<br /> ODER </li>
        <li>Kopieren Sie alle neuen Konfigurationen für Cloud-basierte Übersetzungsdienste vom vorherigen Speicherort an den neuen Speicherort (<code>/conf/global</code>,<code>/apps</code> oder <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>Verknüpfen Sie die entsprechenden AEM-Konfigurationen mit den AEM Inhaltshierarchien.
       <ol>
        <li>AEM Sites-Seitenhierarchien über <strong>AEM Sites &gt; Seite &gt; Seiteneigenschaften &gt; Registerkarte "Erweitert"&gt; Cloud-Konfiguration</strong>.</li>
-       <li>AEM von Experience Fragment-Hierarchien über <strong>AEM Experience Fragments &gt; Experience Fragment &gt; Eigenschaften &gt; Registerkarte Cloud Services &gt; Cloud-Konfiguration</strong>.</li>
-       <li>AEM Ordnerhierarchien von Experience Fragment über <strong>AEM Experience Fragments &gt; Ordner &gt; Eigenschaften &gt; Registerkarte "Cloud Services"&gt; Cloud-Konfiguration</strong>.<br /> </li>
+       <li>AEM von Experience Fragment-Hierarchien über <strong>AEM Experience Fragments &gt; Experience Fragment &gt; Eigenschaften &gt; Registerkarte Cloud Service &gt; Cloud-Konfiguration</strong>.</li>
+       <li>AEM Ordnerhierarchien von Experience Fragment über <strong>AEM Experience Fragments &gt; Ordner &gt; Eigenschaften &gt; Registerkarte "Cloud Service"&gt; Cloud-Konfiguration</strong>.<br /> </li>
        <li>Ordnerhierarchien von AEM Assets über <strong>AEM Assets &gt; Ordner &gt; Ordnereigenschaften &gt; Cloud-Services &gt; Konfiguration</strong>.</li>
        <li>AEM-Projekte über <strong>AEM-Projekte &gt; Projekt &gt; Projekteigenschaften &gt; Erweitert &gt; Cloud-Konfiguration</strong>.</li>
       </ol> </li>
@@ -633,7 +629,7 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
      <li><code>/conf/global/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/apps/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/libs/settings/cloudconfigs/translations/translationcfg</code></li>
-    </ol> <p>Migrierte Übersetzungs-Cloud Services müssen mit AEM 6.4 kompatibel sein.</p> </td>
+    </ol> <p>Migrierte Übersetzungs-Cloud Service müssen mit AEM 6.4 kompatibel sein.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -769,14 +765,14 @@ Der `sling:resourceType`-Pfad der ContextHub-Konfiguration muss relativ sein.
     <ol>
      <li>Migrieren Sie vorhandene Konfigurationen im vorherigen Speicherort zum neuen Speicherort.
       <ul>
-       <li>Erstellen Sie manuell die neuen Konfigurationen des Connector-Cloud Services für Übersetzungsanbieter über die <strong>AEM Authoring-Benutzeroberfläche unter Tools &gt; Cloud Services &gt; Übersetzungs-Cloud Services</strong>.<br /> ODER </li>
+       <li>Erstellen Sie manuell die neuen Konfigurationen des Connector-Cloud Service für Übersetzungsanbieter über die <strong>AEM Authoring-Benutzeroberfläche unter Tools &gt; Cloud Service &gt; Übersetzungs-Cloud Service</strong>.<br /> ODER </li>
        <li>Kopieren Sie alle neuen Konfigurationen für Connector-Cloud-Services für Übersetzungsanbieter vom vorherigen Speicherort an den neuen Speicherort (<code>/conf/global </code>, <code>/apps</code> oder <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>Verknüpfen Sie die entsprechenden AEM-Konfigurationen mit den AEM Inhaltshierarchien.
       <ol>
        <li>AEM Sites-Seitenhierarchien über <strong>AEM Sites &gt; Seite &gt; Seiteneigenschaften &gt; Registerkarte "Erweitert"&gt; Cloud-Konfiguration</strong>.</li>
-       <li>AEM von Experience Fragment-Hierarchien über <strong>AEM Experience Fragments &gt; Experience Fragment &gt; Eigenschaften &gt; Registerkarte Cloud Services &gt; Cloud-Konfiguration</strong>.</li>
-       <li>AEM Ordnerhierarchien von Experience Fragment über <strong>AEM Experience Fragments &gt; Ordner &gt; Eigenschaften &gt; Registerkarte "Cloud Services"&gt; Cloud-Konfiguration</strong>.</li>
+       <li>AEM von Experience Fragment-Hierarchien über <strong>AEM Experience Fragments &gt; Experience Fragment &gt; Eigenschaften &gt; Registerkarte Cloud Service &gt; Cloud-Konfiguration</strong>.</li>
+       <li>AEM Ordnerhierarchien von Experience Fragment über <strong>AEM Experience Fragments &gt; Ordner &gt; Eigenschaften &gt; Registerkarte "Cloud Service"&gt; Cloud-Konfiguration</strong>.</li>
        <li>Ordnerhierarchien von AEM Assets über <strong>AEM Assets &gt; Ordner &gt; Ordnereigenschaften &gt; Cloud-Services &gt; Konfiguration</strong>.</li>
        <li>AEM-Projekte über <strong>AEM-Projekte &gt; Projekt &gt; Projekteigenschaften &gt; Erweitert &gt; Cloud-Konfiguration</strong>.</li>
       </ol> </li>

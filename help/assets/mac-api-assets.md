@@ -6,9 +6,9 @@ role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1746'
+source-wordcount: '1744'
 ht-degree: 100%
 
 ---
@@ -122,7 +122,7 @@ Ruft eine Siren-Darstellung eines vorhandenen Ordners und seiner untergeordneten
 * 404 – NICHT GEFUNDEN – Ordner existiert nicht oder ist nicht zugänglich.
 * 500 – INTERNER SERVER-FEHLER – wenn etwas anderes schief geht.
 
-**Antwort**: Die Klasse der zurückgegebenen Entität ist ein Asset oder ein Ordner. Die Eigenschaften der enthaltenen Entitäten bilden eine Teilmenge der vollständigen Eigenschaften jeder Entität. Um eine vollständige Darstellung der Entität zu erreichen, sollten Kunden den Inhalt der URL abrufen, auf die der Link mit einem `rel` von `self` verweist.
+**Antwort**: Die Klasse der zurückgegebenen Entität ist ein Asset oder ein Ordner. Die Eigenschaften der enthaltenen Entitäten bilden eine Teilmenge der vollständigen Eigenschaften jeder Entität. Um eine vollständige Darstellung der Entität zu erreichen, sollten Kundinnen und Kunden den Inhalt der URL abrufen, auf die der Link mit einem `rel` von `self` verweist.
 
 ## Erstellen von Ordnern {#create-a-folder}
 

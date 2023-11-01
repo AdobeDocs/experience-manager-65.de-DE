@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2358'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '2356'
+ht-degree: 99%
 
 ---
 
@@ -238,7 +238,7 @@ Bevor Sie einen DocConverter-Vorgang programmgesteuert ausführen können, müss
 
 **Referenzieren eines PDF-Dokuments zur Bestimmung der PDF/A-Konformität**
 
-Ein PDF-Dokument muss referenziert und an den DocConverter-Service übergeben werden, um festzustellen, ob das PDF-Dokument PDF/A-konform ist.
+Ein PDF-Dokument muss referenziert und an den DocConverter-Dienst übergeben werden, um festzustellen, ob das PDF-Dokument PDF/A-kompatibel ist.
 
 **Festlegen von Laufzeitoptionen**
 

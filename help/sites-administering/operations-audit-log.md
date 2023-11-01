@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '606'
-ht-degree: 54%
+source-wordcount: '602'
+ht-degree: 51%
 
 ---
 
@@ -38,7 +38,7 @@ Jede der Optionen kann durch Erstellen von Regeln in der Web-Konsole von AEM kon
 
 ## Konfigurieren der Seiten-Auditprotokolllöschung {#configure-page-audit-log-purging}
 
-Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte aus:
+Führen Sie die folgenden Schritte aus, um die Auditprotokolllöschung zu konfigurieren:
 
 1. Gehen Sie zum Admin der Web-Konsole, indem Sie über den Browser `http://localhost:4502/system/console/configMgr/` aufrufen.
 
@@ -58,7 +58,7 @@ Führen Sie zum Konfigurieren der Auditprotokolllöschung die folgenden Schritte
    >Der Inhalts-Pfad gilt nur für untergeordnete Elemente des Knotens `/var/audit/com.day.cq.wcm.core.page` im Repository.
 
 1. Speichern Sie die Regel.
-1. Die soeben erstellte Regel muss im Vorgangs-Dashboard verfügbar gemacht werden, damit sie ausgeführt werden kann. Gehen Sie hierzu über den AEM-Begrüßungsbildschirm zu **Tools > Vorgänge > Wartung**.
+1. Die soeben erstellte Regel muss im Vorgangs-Dashboard verfügbar gemacht werden, damit sie ausgeführt werden kann. Gehen Sie dazu **Tools - Betrieb - Wartung** über den AEM Willkommensbildschirm aus.
 
 1. Klicken Sie auf die Karte **Wöchentliches Wartungsfenster**.
 

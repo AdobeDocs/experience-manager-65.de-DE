@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d9f32939-c2c0-4531-b15e-f63941c289e3
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2487'
-ht-degree: 80%
+source-wordcount: '2483'
+ht-degree: 79%
 
 ---
 
@@ -194,7 +194,7 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Java):
    * Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte speichert, indem Sie seinen Konstruktor verwenden.
    * Rufen Sie die `URLSpec` -Objekt `setApplicationWebRoot` -Methode verwenden und einen string -Wert übergeben, der den Webstamm der Anwendung darstellt.
    * Rufen Sie die `URLSpec` -Objekt `setContentRootURI` -Methode verwenden und einen string -Wert übergeben, der den Inhaltsstamm-URI-Wert angibt. Stellen Sie sicher, dass sich der Formularentwurf im Inhaltsstamm-URI befindet. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository:///` an.
-   * Rufen Sie die `URLSpec` -Objekt `setTargetURL` -Methode verwenden und einen Zeichenfolgenwert übergeben, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
+   * Rufen Sie die `URLSpec` -Objekt `setTargetURL` -Methode verwenden und einen Zeichenfolgenwert übergeben, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular zur Durchführung von Berechnungen gesendet wird.
 
 1. Anhängen von Dateien an das Formular
 
@@ -249,7 +249,7 @@ So rendern Sie ein interaktives PDF-Formular mithilfe der Forms-API (Webservice)
    * Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte speichert, indem Sie seinen Konstruktor verwenden.
    * Rufen Sie die `URLSpec` -Objekt `setApplicationWebRoot` -Methode verwenden und einen string -Wert übergeben, der den Webstamm der Anwendung darstellt.
    * Rufen Sie die `URLSpec` -Objekt `setContentRootURI` -Methode verwenden und einen string -Wert übergeben, der den Inhaltsstamm-URI-Wert angibt. Stellen Sie sicher, dass sich der Formularentwurf im Inhaltsstamm-URI befindet. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository:///` an.
-   * Rufen Sie die `URLSpec` -Objekt `setTargetURL` -Methode verwenden und einen Zeichenfolgenwert übergeben, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
+   * Rufen Sie die `URLSpec` -Objekt `setTargetURL` -Methode verwenden und einen Zeichenfolgenwert übergeben, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular zur Durchführung von Berechnungen gesendet wird.
 
 1. Anhängen von Dateien an das Formular
 

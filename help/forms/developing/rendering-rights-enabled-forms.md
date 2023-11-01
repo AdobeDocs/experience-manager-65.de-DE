@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 95%
+source-wordcount: '1457'
+ht-degree: 93%
 
 ---
 
@@ -23,7 +23,7 @@ ht-degree: 95%
 
 Der Forms-Service kann Formulare rendern, auf die Nutzungsrechte angewendet wurden. Verwendungsrechte gelten für Funktionen, die standardmäßig in Acrobat, nicht jedoch in Adobe Reader zur Verfügung stehen, wie etwa die Möglichkeit, Kommentare zu einem Formular hinzuzufügen oder Formularfelder auszufüllen und das Formular zu speichern. Formulare, auf die Nutzungsrechte angewandt wurden, werden als Formulare mit aktivierten Nutzungsrechten bezeichnet. Benutzer, die ein Formular mit aktivierten Nutzungsrechten in Adobe Reader öffnen, können Vorgänge durchführen, die für dieses spezifische Formular aktiviert sind.
 
-Um Nutzungsrechte auf ein Formular anzuwenden, muss der Acrobat Reader DC-Erweiterungs-Service Teil der AEM Forms-Installation sein. Außerdem müssen Sie über gültige Anmeldeinformationen verfügen, mit denen Sie Nutzungsrechte auf PDF-Dokumente anwenden können. Das heißt, Sie müssen den Acrobat Reader DC-Erweiterungs-Service ordnungsgemäß konfigurieren, bevor Sie ein Formular mit aktivierten Nutzungsrechten rendern können. (Siehe [Informationen zum Acrobat Reader DC-Erweiterungs-Service](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
+Um Verwendungsrechte auf ein Formular anzuwenden, muss der Acrobat Reader DC Extensions-Dienst Teil Ihrer AEM Forms-Installation sein. Außerdem müssen Sie über gültige Anmeldeinformationen verfügen, mit denen Sie Nutzungsrechte auf PDF-Dokumente anwenden können. Das heißt, Sie müssen den Acrobat Reader DC-Erweiterungs-Service ordnungsgemäß konfigurieren, bevor Sie ein Formular mit aktivierten Nutzungsrechten rendern können. (Siehe [Informationen zum Acrobat Reader DC-Erweiterungs-Service](/help/forms/developing/assigning-usage-rights.md#about-the-acrobat-reader-dc-extensions-service).)
 
 >[!NOTE]
 >

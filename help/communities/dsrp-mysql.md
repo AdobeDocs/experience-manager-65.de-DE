@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '730'
-ht-degree: 4%
+source-wordcount: '726'
+ht-degree: 3%
 
 ---
 
@@ -33,8 +33,8 @@ In diesen Anweisungen wird beschrieben, wie Sie eine Verbindung zum MySQL-Server
    * [MySQL-Server](https://dev.mysql.com/downloads/mysql/) Community-Server, Version 5.6 oder neuer
 
       * Kann auf demselben Host wie AEM ausgeführt oder remote ausgeführt werden
-   * [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
+   * [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
 ## MySQL installieren {#installing-mysql}
 
@@ -49,7 +49,7 @@ So geben Sie beispielsweise alle Tabellennamen mit Kleinbuchstaben unter Linux a
 * Datei bearbeiten `/etc/my.cnf`
 * Im `[mysqld]` -Abschnitt, fügen Sie die folgende Zeile hinzu:
 
-   `lower_case_table_names = 1`
+  `lower_case_table_names = 1`
 
 ### UTF8-Zeichensatz {#utf-character-set}
 
@@ -64,11 +64,11 @@ Um eine bessere mehrsprachige Unterstützung zu bieten, ist es erforderlich, den
 * Datei bearbeiten `/etc/my.cnf`
 * Im `[client]` -Abschnitt, fügen Sie die folgende Zeile hinzu:
 
-   `default-character-set=utf8`
+  `default-character-set=utf8`
 
 * Im `[mysqld]` -Abschnitt, fügen Sie die folgende Zeile hinzu:
 
-   `character-set-server=utf8`
+  `character-set-server=utf8`
 
 ## Installieren von MySQL Workbench {#installing-mysql-workbench}
 
@@ -93,7 +93,7 @@ Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits
    * Verbindungsmethode: `Standard (TCP/IP)`
    * Hostname: `127.0.0.1`
    * Benutzername: `root`
-   * Kennwort: `no password by default`
+   * Passwort: `no password by default`
    * Standardschema: `leave blank`
 
 1. Auswählen `Test Connection` Überprüfen der Verbindung zum ausgeführten MySQL-Dienst
@@ -117,7 +117,7 @@ Wenn die MySQL Workbench zum ersten Mal gestartet wird, sofern sie nicht bereits
 
 Das SQL-Skript wird aus dem AEM Repository abgerufen:
 
-1. Zur CRXDE Lite navigieren
+1. Zu CRXDE Lite navigieren
 
    * Beispiel: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -148,7 +148,7 @@ In der MySQL Workbench
 
 ![select-sql-script](assets/select-sql-script.png)
 
-#### Schritt 2: SQL-Skript ausführen {#step-execute-sql-script}
+#### Schritt 2: SQL-Script ausführen {#step-execute-sql-script}
 
 Wählen Sie im Workbench-Fenster für die in Schritt 1 geöffnete Datei die `lightening (flash) icon` , um das Skript auszuführen.
 
@@ -158,7 +158,7 @@ In der folgenden Abbildung wird die `init_schema.sql` -Datei zur Ausführung ber
 
 #### Aktualisieren {#refresh}
 
-Nach Ausführung des Skripts muss die `SCHEMAS` Abschnitt `Navigator` um die neue Datenbank zu sehen. Verwenden Sie das Aktualisierungssymbol rechts neben &quot;SCHEMAS&quot;:
+Nachdem das Skript ausgeführt wurde, muss die `SCHEMAS` Abschnitt `Navigator` um die neue Datenbank anzuzeigen. Verwenden Sie das Aktualisierungssymbol rechts neben &quot;SCHEMAS&quot;:
 
 ![refresh-schema](assets/refresh-schema.png)
 
@@ -172,32 +172,32 @@ Wenn MySQL auf einem Server ausgeführt wird, der sich von AEM unterscheidet, mu
 
 * Auf jeder Autoren- und Veröffentlichungsinstanz AEM.
 * Mit Administratorrechten angemeldet.
-* Zugriff auf [Webkonsole](../../help/sites-deploying/configuring-osgi.md).
+* Zugriff auf [Web-Konsole](../../help/sites-deploying/configuring-osgi.md).
 
    * Beispiel: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * Suchen Sie die `Day Commons JDBC Connections Pool`
 * Wählen Sie die `+` -Symbol, um eine neue Verbindungskonfiguration zu erstellen.
 
-   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
+  ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 
 * Geben Sie die folgenden Werte ein:
 
    * **[!UICONTROL JDBC-Treiberklasse]**: `com.mysql.jdbc.Driver`
    * **[!UICONTROL JDBC-Verbindungs-URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Geben Sie den Server anstelle von localhost an, wenn der MySQL-Server nicht mit dem &quot;this&quot;-AEM identisch ist *communities* ist der Standardname der Datenbank (Schema).
+     Geben Sie den Server anstelle von localhost an, wenn der MySQL-Server nicht mit dem &quot;this&quot;-AEM identisch ist *communities* ist der Standardname der Datenbank (Schema).
 
    * **[!UICONTROL Benutzername]**: `root`
 
-      Oder geben Sie den konfigurierten Benutzernamen für den MySQL-Server ein, falls nicht &quot;root&quot;.
+     Oder geben Sie den konfigurierten Benutzernamen für den MySQL-Server ein, falls nicht &quot;root&quot;.
 
    * **[!UICONTROL Kennwort]**:
 
-      Löschen Sie dieses Feld, wenn kein Kennwort für MySQL festgelegt wurde.
+     Löschen Sie dieses Feld, wenn kein Kennwort für MySQL festgelegt wurde.
 
-      Geben Sie andernfalls das konfigurierte Kennwort für den MySQL-Benutzernamen ein.
+     Geben Sie andernfalls das konfigurierte Kennwort für den MySQL-Benutzernamen ein.
 
-   * **[!UICONTROL Datenquellenname]**: für den [MySQL-Verbindung](#new-connection-settings), beispielsweise &quot;communities&quot;.
+   * **[!UICONTROL Datenquellenname]**: Name, der für die [MySQL-Verbindung](#new-connection-settings), beispielsweise &quot;communities&quot;.
 
 * Wählen Sie **[!UICONTROL Speichern]** aus

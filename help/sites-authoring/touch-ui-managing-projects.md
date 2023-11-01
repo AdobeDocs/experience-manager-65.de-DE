@@ -10,10 +10,10 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
-workflow-type: ht
-source-wordcount: '987'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 98%
 
 ---
 
@@ -53,7 +53,7 @@ Die Vorgehensweise zum Erstellen eines Projekts ist für alle Projektvorlagen id
 
 ### Zuordnen von Ressourcen zum Projekt {#associating-resources-with-your-project}
 
-„Projekte“ ermöglicht es Ihnen, Ressourcen zu einer Einheit zu gruppieren, um sie insgesamt zu verwalten. Daher müssen Sie Ressourcen mit dem Projekt verknüpfen. Diese Ressourcen werden innerhalb des Projekts als **Kacheln** gruppiert. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden unter [Projektkacheln](/help/sites-authoring/projects.md#project-tiles) beschrieben.
+Projekte ermöglichen es Ihnen, Ressourcen zu einer Einheit zu gruppieren, um sie insgesamt zu verwalten. Daher müssen Sie Ressourcen mit dem Projekt verknüpfen. Diese Ressourcen werden innerhalb des Projekts als **Kacheln** gruppiert. Die Ressourcentypen, die Sie mit einem Projekt verknüpfen können, werden unter [Projektkacheln](/help/sites-authoring/projects.md#project-tiles) beschrieben.
 
 So ordnen Sie Ihrem Projekt Ressourcen zu:
 

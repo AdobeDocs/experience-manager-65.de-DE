@@ -10,10 +10,10 @@ discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
-workflow-type: ht
-source-wordcount: '3855'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '3853'
+ht-degree: 99%
 
 ---
 
@@ -179,8 +179,6 @@ Verwalten Sie auf der Registerkarte „Inhalt“ den Inhalt wie Dokumentfragment
 
    * Ein numerisches Variablenfeld ist standardmäßig auf *0 (null)* gesetzt. Die Variable wird jedoch als nicht ausgefüllt erfasst. Dies bedeutet, dass die Variablenanzahl alle numerischen Variablenfelder mit dem Wert *0 (Null)* umfasst.
 
-
-
 #### Auf der Registerkarte „Korrespondenzinhalt erstellen“ verfügbare Aktionen und Informationen {#actions-and-info-available-in-the-create-correspondence-content-tab}
 
 **Zielbereich**
@@ -293,7 +291,7 @@ Solche Instanzen können nur gespeichert werden, wenn der Brief in der Publish-I
 
 Bevor Sie Briefe veröffentlichen oder Entwürfe in der Veröffentlichungsinstanz speichern, führen Sie die folgenden Schritte in der Autoren- und Veröffentlichungsinstanz durch, um die Funktion „Als Entwurf speichern“ zu aktivieren:
 
-Die Eigenschaften *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* werden standardmäßig nicht in die Veröffentlichungsinstanz übernommen. Um die Eigenschaften *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* in die Veröffentlichungsinstanz zu übernehmen, deaktivieren Sie die Komponente [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory]. So deaktivieren Sie die Komponente:
+Die Eigenschaften *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* werden standardmäßig nicht in die Veröffentlichungsinstanz übernommen. Übertragung *cq:lastReplicationAction*, *cq:lastreplicated* und *cq:lastReplicatedBy* Eigenschaften für die Veröffentlichungsinstanz, deaktivieren Sie die [!UICONTROL com.day.cq.replication.impl.ReplicationPropertiesFilterFactory] -Komponente. So deaktivieren Sie die Komponente:
 
 1. Öffnen Sie in der Autoreninstanz die Konsole „Adobe Experience Manager Web Console Components“. Die Standardeinstellung ist `http://author-server:port/system/console/components`
 

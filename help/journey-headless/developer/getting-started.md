@@ -2,10 +2,10 @@
 title: Erste Schritte mit AEM Headless
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Voraussetzungen für AEM Headless.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3042'
-ht-degree: 95%
+source-wordcount: '3038'
+ht-degree: 94%
 
 ---
 
@@ -78,7 +78,7 @@ Inhaltsfragmente enthalten strukturierten Inhalt und können im JSON-Format bere
 
 Um Inhalte „headless“ zu ändern, bietet AEM zwei robuste APIs.
 
-* Mit der GraphQL-API können Sie Anforderungen für den Zugriff auf Inhaltsfragmente und deren Bereitstellung erstellen.
+* Mit der GraphQL-API können Sie Anfragen für den Zugriff auf und die Bereitstellung von Inhaltsfragmenten erstellen.
 * Mit der Assets-REST-API können Sie Inhaltsfragmente (und andere Assets) erstellen und ändern.
 
 In einem späteren Teil der AEM Headless-Tour erfahren Sie mehr über diese APIs und deren Verwendung. Weitere Informationen finden Sie im Abschnitt [Zusätzliche Ressourcen](#additional-resources) weiter unten.
@@ -87,7 +87,7 @@ In einem späteren Teil der AEM Headless-Tour erfahren Sie mehr über diese APIs
 
 AEM unterstützt sowohl den vollständigen Headless- als auch den herkömmlichen Full-Stack oder Headful-Modelle eines CMS. AEM bietet jedoch nicht nur diese beiden exklusiven Optionen, sondern auch die Möglichkeit, Hybridmodelle zu unterstützen, die die Vorteile beider Modelle kombinieren und Ihnen eine einzigartige Flexibilität für Ihr Headless-Projekt bieten.
 
-Um Ihr Verständnis von Headless-Konzepten sicherzustellen, konzentriert sich diese AEM Headless-Entwickler-Tour auf das reine Headless-Modell, um Sie so schnell wie möglich ohne Programmierung in AEM zum Laufen zu bringen.
+Um sicherzustellen, dass Sie die Headless-Konzepte verstehen, konzentriert sich diese AEM Headless-Entwickler-Tour auf das reine Headless-Modell, damit Sie so schnell wie möglich ohne Codieren in AEM starten können.
 
 Sie sollten sich jedoch der zusätzlichen zur Verfügung stehenden Hybridmöglichkeiten bewusst sein, sobald Sie AEM Headless-Funktionen verstehen. Diese Fälle werden nachstehend zu Ihrer Information aufgeführt. Am Ende der Tour werden Sie mit diesen Konzepten näher vertraut gemacht, falls eine solche Flexibilität für Ihr Projekt erforderlich ist.
 
@@ -195,7 +195,7 @@ Ordner können auch darauf beschränkt werden, nur bestimmte Inhaltstypen zuzula
 * verhindert, dass Inhaltsautoren Inhalte erstellen, die nicht zum Ordner gehören,
 * optimiert den Inhaltserstellungsprozess, indem die Inhaltstypen gefiltert werden, die im Ordner während der Erstellung zulässig sind, sodass nur gültige Inhaltstypen angezeigt werden.
 
-Durch die Erstellung einer geeigneten Inhaltsstruktur wird es einfacher, das Authoring von Headless-Inhalten kanalübergreifend zu koordinieren, um die Wiederverwendung von Inhalten zu maximieren. Durch die Nutzung von Inhalten über mehrere Kanäle wird die Effizienz der Inhaltserstellung und das Änderungs-Management erheblich verbessert.
+Durch die Erstellung einer geeigneten Inhaltsstruktur wird es einfacher, das Headless-Content-Authoring kanalübergreifend zu koordinieren, um die Wiederverwendung von Inhalten zu maximieren. Durch die Nutzung von Inhalten über mehrere Kanäle wird die Effizienz der Inhaltserstellung und das Änderungs-Management erheblich verbessert.
 
 ##### Einrichten guter Benennungskonventionen {#naming-conventions}
 

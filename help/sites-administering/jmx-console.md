@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4956'
+source-wordcount: '4950'
 ht-degree: 52%
 
 ---
@@ -41,17 +41,17 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 **listRunningWorkflowsPerModel**: Führt die Anzahl an Workflow-Instanzen auf, die für jedes Workflow-Modell ausgeführt werden.
 
-* Argumente: Keine
-* Zurückgegebener Wert: Tabellendaten, die die Spalten Count und ModelId enthalten.
+* Argumente: keine
+* Zurückgegebener Wert: Tabellendaten mit den Spalten Count und ModelId .
 
 **listCompletedWorkflowsPerModel**: Führt die Anzahl an abgeschlossenen Workflow-Instanzen für jedes Workflow-Modell auf.
 
-* Argumente: Keine
-* Zurückgegebener Wert: Tabellendaten, die die Spalten Count und ModelId enthalten.
+* Argumente: keine
+* Zurückgegebener Wert: Tabellendaten mit den Spalten Count und ModelId .
 
 **returnWorkflowQueueInfo**: Zeigt Informationen zu Workflow-Elementen an, die bearbeitet wurden und sich in der Warteschlange für die Verarbeitung befinden.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit den folgenden Spalten:
 
    * Aufträge
@@ -67,7 +67,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 **returnWorkflowJobTopicInfo**: Zeigt Verarbeitungsinformationen für Workflow-Aufträge nach Themen geordnet an.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: Tabellendaten mit den folgenden Spalten:
 
    * Themenname
@@ -91,7 +91,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 **returnFailedWorkflowCountPerModel**: Führt die Anzahl an Workflow-Instanzen auf, die für jedes Workflow-Modell fehlgeschlagen sind.
 
 * Argumente: keine.
-* Zurückgegebener Wert: Tabellendaten, die die Spalten Zählung und Modell-ID enthalten.
+* Zurückgegebener Wert: Tabellendaten mit den Spalten Zählung und Modell-ID .
 
 **terminateFailedInstances**: Beendet Workflows, die fehlgeschlagen sind. Sie können alle fehlgeschlagenen Instanzen oder nur die fehlgeschlagenen Instanzen für ein bestimmtes Modell beenden. Optional können Sie die Instanzen nach Beendigung neu starten. Sie können den Vorgang auch testen, um die Ergebnisse anzuzeigen, ohne den Vorgang tatsächlich durchzuführen.
 
@@ -121,7 +121,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Zurückgegebener Wert: Tabellendaten zu den fehlgeschlagenen Arbeitselementen, die erneut versucht werden, einschließlich der folgenden Spalten:
+* Zurückgegebener Wert: Tabellendaten zu den fehlgeschlagenen Arbeitselementen, die wiederholt werden, einschließlich der folgenden Spalten:
 
    * Initiator
    * InstanceId
@@ -140,7 +140,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
    * Number of days since workflow started: das Alter der zu bereinigenden Workflow-Instanzen in Tagen.
    * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
 
-* Zurückgegebener Wert: Tabellarische Daten zu den aktiven Workflow-Instanzen, die bereinigt werden, einschließlich der folgenden Spalten:
+* Zurückgegebener Wert: Tabellendaten zu den aktiven Workflow-Instanzen, die bereinigt werden, einschließlich der folgenden Spalten:
 
    * Initiator
    * InstanceId
@@ -172,8 +172,8 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
 
 **fetchModelList**: Führt alle Workflow-Modelle auf.
 
-* Argumente: Keine
-* Zurückgegebener Wert: Tabellendaten, die die Workflow-Modelle identifizieren, einschließlich der Spalten ModelId und ModelName .
+* Argumente: keine
+* Zurückgegebener Wert: Tabellendaten, die die Workflow-Modelle einschließlich der Spalten ModelId und ModelName identifizieren.
 
 **countRunningWorkflows**: Gibt die Anzahl an laufenden Workflow-Instanzen zurück. Sie können die Anzahl der laufenden Instanzen für alle Workflow-Modelle oder für ein bestimmtes Modell abrufen.
 
@@ -205,7 +205,7 @@ Vorgänge für die Verwaltung von laufenden, abgeschlossenen, veralteten und feh
    * Number of days since workflow has been completed: die Anzahl an Tagen, seit denen sich die Workflow-Instanzen im abgeschlossenen Status befinden.
    * Dry Run: (optional) Legen Sie den Wert `true` fest, um die Ergebnisse des Vorgangs zu sehen, ohne den Vorgang tatsächlich durchzuführen. Beim Standardwert `false` wird der Vorgang durchgeführt.
 
-* Zurückgegebener Wert: Tabellarische Daten zu den abgeschlossenen Workflow-Instanzen, die bereinigt werden, einschließlich der folgenden Spalten:
+* Zurückgegebener Wert: Tabellendaten zu den abgeschlossenen Workflow-Instanzen, die gelöscht werden, einschließlich der folgenden Spalten:
 
    * Initiator
    * InstanceId
@@ -255,9 +255,9 @@ Informationen zum CRX-Repository
    <td>identifier.stability</td>
    <td>Gibt die Stabilität von nicht referenzierbaren Knoten-IDs an. Die folgenden Werte sind möglich:
     <ul>
-     <li>identifier.stability.indefinite.duration: Die Kennungen ändern sich nicht.</li>
-     <li>identifier.stability.method.duration: Kennungen können sich zwischen Methodenaufrufen ändern.</li>
-     <li>identifier.stability.save.duration: Die Kennungen ändern sich innerhalb eines Speicherungs-/Aktualisierungszyklus nicht.</li>
+     <li>identifier.stability.indefinite.duration: Die IDs ändern sich nicht.</li>
+     <li>identifier.stability.method.duration: Die IDs können sich zwischen Methodenaufrufen ändern.</li>
+     <li>identifier.stability.save.duration: Die IDs ändern sich innerhalb eines Speicherzyklus/Aktualisierungszyklus nicht.</li>
      <li>identifier.stability.session.duration: Die IDs ändern sich während einer Sitzung nicht.</li>
     </ul> </td>
   </tr>
@@ -319,7 +319,7 @@ Informationen zum CRX-Repository
   </tr>
   <tr>
    <td>write.supported</td>
-   <td>Der Wert "true"bedeutet, dass das Repository über die API Schreibzugriff bietet. false bedeutet schreibgeschützten Zugriff.</td>
+   <td>Der Wert "true"bedeutet, dass das Repository Schreibzugriff über die API bereitstellt. false bedeutet schreibgeschützten Zugriff.</td>
   </tr>
   <tr>
    <td>node.type.management.update.in.use.supported</td>
@@ -335,7 +335,7 @@ Informationen zum CRX-Repository
   </tr>
   <tr>
    <td>query.languages</td>
-   <td>Die Abfragesprachen, die vom Repository unterstützt werden. Kein Wert bedeutet, dass keine Abfrage unterstützt wird.</td>
+   <td>Die vom Repository unterstützten Abfragesprachen. Kein Wert bedeutet, dass keine Abfrage unterstützt wird.</td>
   </tr>
   <tr>
    <td>option.xml.export.supported</td>
@@ -371,11 +371,11 @@ Informationen zum CRX-Repository
   </tr>
   <tr>
    <td>node.type.management.inheritance</td>
-   <td><p>Gibt den Grad der Repository-Unterstützung für die Vererbung des Knotentyps an. Die folgenden Werte sind möglich:</p> <p>node.type.management.inheritance.minimal: Die Registrierung der primären Knotentypen ist auf diejenigen beschränkt, die nur nt:base als Supertyp haben. Die Registrierung von Mixin-Knotentypen ist auf Typen ohne Supertyp beschränkt.</p> <p>node.type.management.inheritance.single: Es können nur die primären Knotentypen mit einem Supertyp registriert werden. Die Registrierung von Mixin-Knotentypen ist auf die mit höchstens einem Supertyp beschränkt.</p> <p><br /> node.type.management.inheritance.multiple: Es können primäre Knotentypen mit einem Supertyp oder mehreren Supertypen registriert werden. Mixin-Knotentypen können mit null oder mehr Supertypen registriert werden.</p> </td>
+   <td><p>Gibt den Grad der Repository-Unterstützung für die Vererbung vom Knotentyp an. Die folgenden Werte sind möglich:</p> <p>node.type.management.inheritance.minimal: Die Registrierung der primären Knotentypen ist auf diejenigen beschränkt, die nur nt:base als Supertyp haben. Die Registrierung von Mixin-Knotentypen ist auf Typen ohne Supertyp beschränkt.</p> <p>node.type.management.inheritance.single: Es können nur die primären Knotentypen mit einem Supertyp registriert werden. Die Registrierung von Mixin-Knotentypen ist auf die mit höchstens einem Supertyp beschränkt.</p> <p><br /> node.type.management.inheritance.multiple: Es können primäre Knotentypen mit einem Supertyp oder mehreren Supertypen registriert werden. Mixin-Knotentypen können mit null oder mehr Supertypen registriert werden.</p> </td>
   </tr>
   <tr>
    <td>crx.cluster.preferredMaster</td>
-   <td>Der Wert "true"bedeutet, dass dieser Clusterknoten der bevorzugte Übergeordnete des Clusters ist.</td>
+   <td>Der Wert "true"bedeutet, dass dieser Clusterknoten der bevorzugte Master des Clusters ist.</td>
   </tr>
   <tr>
    <td>option.transactions.supported</td>
@@ -440,7 +440,7 @@ Informationen zum CRX-Repository
   </tr>
   <tr>
    <td>crx.cluster.master</td>
-   <td>Der Wert "true"bedeutet, dass dieser Repository-Knoten der Übergeordnete Knoten des Clusters ist.</td>
+   <td>Der Wert "true"bedeutet, dass dieser Repository-Knoten der Master-Knoten des Clusters ist.</td>
   </tr>
   <tr>
    <td>level.1.supported</td>
@@ -448,7 +448,7 @@ Informationen zum CRX-Repository
   </tr>
   <tr>
    <td>option.unfiled.content.supported</td>
-   <td>Der Wert "true"bedeutet, dass das Repository nicht abgelegten Inhalt unterstützt. Nicht abgelegte Knoten sind nicht Teil der Repository-Hierarchie.</td>
+   <td>Der Wert "true"bedeutet, dass das Repository nicht abgelegte Inhalte unterstützt. Nicht abgelegte Knoten sind nicht Teil der Repository-Hierarchie.</td>
   </tr>
   <tr>
    <td>jcr.specification.name</td>
@@ -460,7 +460,7 @@ Informationen zum CRX-Repository
   </tr>
   <tr>
    <td>jcr.repository.name</td>
-   <td>Der Name des Repositorys.</td>
+   <td>Der Name des Repository.</td>
   </tr>
   <tr>
    <td>option.locking.supported</td>
@@ -505,11 +505,11 @@ Informationen zum CRX-Repository
 
 **BackupResult**: Der Status des aktuellen Backups. Die folgenden Werte sind möglich:
 
-* Backup in progress: Ein Backup wird derzeit ausgeführt.
+* Backup in progress: Derzeit wird eine Sicherung ausgeführt.
 * Backup abgebrochen: Die Sicherung wurde abgebrochen.
-* Backup abgeschlossen mit Fehler: Während der Sicherung ist ein Fehler aufgetreten. Die Fehlermeldung enthält Informationen zur Ursache.
+* Backup beendet mit Fehler: Während der Sicherung ist ein Fehler aufgetreten. Die Fehlermeldung enthält Informationen zur Ursache.
 * Backup completed: Die Sicherung war erfolgreich.
-* Bisher wurde kein Backup ausgeführt: Es wird kein Backup durchgeführt.
+* Bisher kein Backup ausgeführt: Es wird kein Backup durchgeführt.
 
 Schreibgeschützt.
 
@@ -547,7 +547,7 @@ Schreibgeschützt.
 
 **stopDataStoreGarbageCollection**: Hält eine gerade ausgeführte Datenspeicherbereinigung an.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: Zeichenfolgendarstellung des aktuellen Status
 
 **startBackup**: Sichert Repository-Daten in einer ZIP-Datei.
@@ -566,27 +566,27 @@ Schreibgeschützt.
 
 **cancelBackup**: Hält den aktuellen Backup-Vorgang an und löscht das temporäre Archiv, das der Vorgang für die Archivierung der Daten erstellt hatte.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 **blockRepositoryWrites**: Blockiert Änderungen an den Repository-Daten. Alle Backup-Listener des Repositorys werden über den Block benachrichtigt.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 **unblockRepositoryWrites**: Hebt die Blockierung des Repositorys auf. Alle Backup-Listener des Repositorys werden über die Entfernung des Blocks informiert.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 **startTarOptimization**: Startet den Vorgang zur Optimierung der TAR-Datei mit dem Standardwert für tarOptimizationDelay.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 **stopTarOptimization**: Hält die Optimierung der TAR-Datei an.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 **tarIndexMerge**: Führt die höchsten Indexdateien aller TAR-Sets zusammen. Die höchsten Indexdateien sind Dateien mit unterschiedlichen Hauptversionen. Beispielsweise werden die folgenden Dateien in der Datei index_3_1.tar zusammengeführt: index_1_1.tar, index_2_0.tar, index_3_0.tar. Die zusammengeführten Dateien werden gelöscht (im vorherigen Beispiel sind das die Dateien index_1_1.tar, index_2_0.tar und index_3_0.tar).
@@ -599,7 +599,7 @@ Schreibgeschützt.
 
 **becomeClusterMaster**: Legt diesen Repository-Knoten als Master-Knoten des Clusters fest. Wenn er nicht bereits Master ist, hält dieser Befehl den Listener der aktuellen Master-Instanz an und startet einen Master-Listener auf dem aktuellen Knoten. Dieser Knoten wird dann als Master-Knoten festgelegt und neu gestartet, wodurch alle anderen Knoten im Cluster (d. h. die vom Master-Knoten gesteuerten Knoten) eine Verbindung zu dieser Instanz herstellen.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 **joinCluster** Fügt dieses Repository einem Cluster als Knoten hinzu, der vom Cluster-Master gesteuert wird. Sie müssen einen Benutzernamen und ein Kennwort für Authentifizierungszwecke angeben. Die Verbindung verwendet eine einfache Authentifizierung. Die Sicherheitsberechtigungen sind Base-64-kodiert, bevor sie an den Server gesendet werden.
@@ -677,12 +677,12 @@ Statistische Informationen zu Repository-Abfragen.
 
 **clearSlowQueriesQueue**: Entfernt alle Abfragen aus der SlowQueries-Liste.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 **clearPopularQueriesQueue**: Entfernt alle Abfragen aus der PopularQueries-Liste.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 ## Replikations-Agenten {#replication-agents}
@@ -738,12 +738,12 @@ Lese- und Schreibzugriff.
 
 **queueForceRetry**: Gibt bei blockierten Warteschlangen den Befehl zum erneuten Versuch an die Warteschlange aus.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 **queueClear**: Entfernt alle Aufträge aus der Warteschlange.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 ## Sling-Engine {#sling-engine}
@@ -751,7 +751,7 @@ Lese- und Schreibzugriff.
 Stellt Statistiken zu HTTP-Anforderungen bereit, damit Sie die Leistung des SlingRequestProcessor-Dienstes überwachen können.
 
 * Domain: org.apache.sling
-* Typ: Engine
+* Typ: Motor
 * Eigenschaften: {service=RequestProcessor}
 
 ### Attribute {#attributes-4}
@@ -770,7 +770,7 @@ Stellt Statistiken zu HTTP-Anforderungen bereit, damit Sie die Leistung des Slin
 
 **resetStatistics**: Setzt alle Statistiken auf null zurück. Setzen Sie die Statistiken zurück, wenn Sie die Leistung der Anforderungsverarbeitung während eines bestimmten Zeitraums analysieren müssen.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 **id**: Die Zeichenfolgendarstellung der Paket-ID.
@@ -809,7 +809,7 @@ Argumente:
 
 Ruft die Methode startupFinished des Server-Starters auf. Die -Methode versucht, die Begrüßungsseite in einem Webbrowser zu öffnen.
 
-* Argumente: Keine
+* Argumente: keine
 * Zurückgegebener Wert: keiner
 
 **startupProgress**
@@ -817,7 +817,7 @@ Ruft die Methode startupFinished des Server-Starters auf. Die -Methode versucht,
 Legt den Abschlusswert des Serverstartprozesses fest. Die Fortschrittsleiste im QuickStart-Fenster stellt den Abschlusswert dar.
 
 * Argumente:
-   * p1: Ein Float -Wert, der angibt, wie viel des Startvorgangs als Bruchteil abgeschlossen ist. Der Wert muss zwischen null und eins liegen. 0,3 beispielsweise bedeutet, dass 30 % abgeschlossen sind.
+   * p1: Ein Gleitkommawert, der angibt, wie viel des Startvorgangs als Bruchteil abgeschlossen ist. Der Wert muss zwischen null und eins liegen. 0,3 beispielsweise bedeutet, dass 30 % abgeschlossen sind.
 * Zurückgegebener Wert: keiner.
 
 ## Drittanbieterdienste {#third-party-services}
@@ -889,7 +889,7 @@ Die Hauptseite der JMX-Konsole enthält eine Tabelle der Dienste. Jede Zeile in 
 
 1. Öffnen Sie die Web-Konsole und klicken Sie auf die Registerkarte JMX . ([http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
 2. Klicken Sie auf einen Zellenwert für einen Dienst, um die Attribute und Vorgänge für den Dienst anzuzeigen.
-3. Um einen Attributwert zu ändern, klicken Sie auf den Wert, geben Sie den Wert im angezeigten Dialogfeld an und klicken Sie auf &quot;Speichern&quot;.
+3. Um einen Attributwert zu ändern, klicken Sie auf den Wert, geben Sie den Wert im angezeigten Dialogfeld an und klicken Sie auf Speichern.
 4. Um einen Dienstvorgang aufzurufen, klicken Sie auf den Vorgangsnamen, geben Sie im angezeigten Dialogfeld Argumentwerte an und klicken Sie auf &quot;Aufrufen&quot;.
 
 ## Verwenden externer JMX-Anwendungen zur Überwachung {#using-external-jmx-applications-for-monitoring}
@@ -940,11 +940,11 @@ $ java
 
 ### Verwenden der von CRX bereitgestellten MBeans {#using-the-mbeans-provided-by-crx}
 
-Nach der Verbindung zum Schnellstartprozess stellt JConsole eine Reihe allgemeiner Überwachungstools für die JVM bereit, in der CRX ausgeführt wird.
+Nach dem Herstellen einer Verbindung zum Schnellstartprozess stellt JConsole eine Reihe allgemeiner Überwachungstools für die JVM bereit, in der CRX ausgeführt wird.
 
 ![screen_shot_2012-03-26at115056am](assets/screen_shot_2012-03-26at115056am.png)
 
-Um auf die internen Überwachungs- und Konfigurationsoptionen von CRX zuzugreifen, gehen Sie zur Registerkarte MBeans und wählen Sie links in der hierarchischen Inhaltsstruktur den Bereich Attribute oder Vorgänge aus, den Sie interessieren. Beispiel: Abschnitt com.adobe.granite/Repository/Operations .
+Um auf die internen Überwachungs- und Konfigurationsoptionen von CRX zuzugreifen, gehen Sie zur Registerkarte MBeans und wählen Sie in der hierarchischen Inhaltsstruktur auf der linken Seite den Bereich Attribute oder Vorgänge aus, den Sie interessieren. Beispiel: Abschnitt com.adobe.granite/Repository/Operations .
 
 Wählen Sie in diesem Abschnitt das gewünschte Attribut oder den gewünschten Vorgang im linken Bereich aus.
 

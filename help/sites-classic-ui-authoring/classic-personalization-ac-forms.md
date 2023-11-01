@@ -8,10 +8,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1224'
-ht-degree: 95%
+source-wordcount: '1222'
+ht-degree: 93%
 
 ---
 
@@ -107,7 +107,7 @@ In diesem Abschnitt werden nur für Adobe Campaign spezifische Verknüpfungen b
    >
    >Der **Elementname** muss für jedes Formularfeld unterschiedlich sein. Ändern Sie ihn bei Bedarf.
    >
-   >Jedes Formular muss eine Komponente des Typs **Verschlüsselter Primärschlüssel** aufweisen, damit die Empfänger in der Adobe Campaign-Datenbank ordnungsgemäß verwaltet werden können.
+   >Jedes Formular muss **Verschlüsselter Primärer Schlüssel** zur korrekten Verwaltung der Empfänger in der Adobe Campaign-Datenbank.
 
 1. Aktivieren Sie die Seite, indem Sie in der Toolbox **Seite** > **Seite aktivieren** auswählen. Die Seite wird auf Ihrer Site aktiviert. Sie können sie anzeigen, indem Sie zu Ihrer AEM-Publishing-Instanz wechseln. Die Daten in der Adobe Campaign-Datenbank werden aktualisiert, sobald ein Formular validiert wurde.
 

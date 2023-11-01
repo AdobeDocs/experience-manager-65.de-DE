@@ -8,10 +8,10 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '6854'
-ht-degree: 48%
+source-wordcount: '6836'
+ht-degree: 47%
 
 ---
 
@@ -96,7 +96,7 @@ Der Effekt einer einzelnen CUG-Richtlinie auf die Berechtigungsprüfung kann wie
 Die folgenden Best Practices sollten bei der Definition des eingeschränkten Lesezugriffs über CUGs berücksichtigt werden:
 
 * Entscheiden Sie bewusst, ob Sie die CUG benötigen, um Lesezugriff einzuschränken oder die Authentifizierung zu erzwingen. Wenn letzteres der Fall ist oder beides erforderlich ist, finden Sie im Abschnitt Best Practices weitere Informationen zur Authentifizierungspflicht.
-* Erstellen Sie ein Bedrohungsmodell für die Daten oder Inhalte, die geschützt werden müssen, um Bedrohungsgrenzen zu identifizieren und ein klares Bild der Vertraulichkeit der Daten und der Rollen im Zusammenhang mit dem autorisierten Zugriff zu erhalten.
+* Erstellen Sie ein Bedrohungsmodell für die Daten oder Inhalte, die geschützt werden müssen, um Bedrohungsgrenzen zu identifizieren und ein klares Bild der Vertraulichkeit der Daten und der Rollen zu erhalten, die mit dem autorisierten Zugriff verbunden sind.
 * Modellieren des Repository-Inhalts und der CUGs unter Berücksichtigung allgemeiner autorisierungsbezogener Aspekte und Best Practices:
 
    * Beachten Sie, dass die Leseberechtigung nur erteilt wird, wenn eine bestimmte CUG und die Auswertung anderer im Setup bereitgestellter Module es einem bestimmten Subjekt erlauben, ein bestimmtes Repository-Element zu lesen
@@ -129,7 +129,7 @@ Da diese Art der Authentifizierungspflicht nur auf bestimmte Ausführungsmodi un
 
 Die standardmäßige Einrichtung von AEM nutzt nun diese Konfiguration, indem sie ermöglicht, für den Mixin-Typ den Autorenausführungsmodus festzulegen, ihn aber erst wirksam werden zu lassen, wenn er auf die Veröffentlichungsinstanz repliziert wurde. Auf [dieser Seite](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) finden Sie Einzelheiten dazu, wie Sling die Authentifizierungspflicht durchsetzt.
 
-Hinzufügen der `granite:AuthenticationRequired` Der Mixin-Typ innerhalb der konfigurierten unterstützten Pfade führt dazu, dass die OSGi-Registrierung des verantwortlichen Handlers mit einem neuen, zusätzlichen Eintrag mit dem `sling.auth.requirements` -Eigenschaft. Wenn eine gegebene Authentifizierungspflicht die optionale Eigenschaft `granite:loginPath` angibt, wird der Wert zusätzlich beim Authenticator mit dem Präfix „-“ registriert, um von der Authentifizierungspflicht ausgeschlossen zu werden.
+Hinzufügen der `granite:AuthenticationRequired` Der Mixin-Typ innerhalb der konfigurierten unterstützten Pfade führt dazu, dass die OSGi-Registrierung des verantwortlichen Handlers mit einem neuen, zusätzlichen Eintrag mit dem `sling.auth.requirements` -Eigenschaft. Wenn eine bestimmte Authentifizierungspflicht das optionale `granite:loginPath` -Eigenschaft, wird der Wert zusätzlich beim Authenticator mit dem Präfix &quot;-&quot;registriert, um von der Authentifizierungspflicht ausgeschlossen zu werden.
 
 #### Prüfung und Vererbung der Authentifizierungspflicht {#evaluation-and-inheritance-of-the-authentication-requirement}
 
@@ -718,7 +718,7 @@ Lesen Sie die [CUG-Pluggabelbarkeit](https://jackrabbit.apache.org/oak/docs/secu
 
 ### Authentifizierungspflicht deaktivieren {#disable-the-authentication-requirement}
 
-Zum Deaktivieren der Unterstützung der Authentifizierungspflicht, die vom Modul `granite.auth.authhandler` bereitgestellt wird, muss nur die Konfiguration entfernt werden, die mit **Adobe Granite Authentication Requirement and Login Path Handler** verknüpft ist.
+So deaktivieren Sie die Unterstützung für die Authentifizierungspflicht, die von der `granite.auth.authhandler` -Modul ist es ausreichend, die Konfiguration zu entfernen, die mit **Adobe Granite Authentication Requirement and Login Path Handler**.
 
 >[!NOTE]
 >
@@ -753,7 +753,7 @@ Es gibt eine Einschränkung hinsichtlich der Replikation von CUG-Richtlinien. We
 
 Der Authentifizierungs-Handler **Adobe Granite HTTP Header Authentication Handler** im Bundle `com.adobe.granite.auth.authhandler` verweist auf die Schnittstelle `CugSupport`, die vom selben Modul definiert wird. Sie wird unter bestimmten Bedingungen zur Berechnung des Bereichs verwendet, wobei auf den mit dem Handler konfigurierten Bereich ausgewichen wird.
 
-Dies wurde angepasst, um den Verweis auf `CugSupport` optional zu machen, um die größtmögliche Abwärtskompatibilität zu erreichen, wenn eine Einrichtung entscheidet, die veraltete Implementierung erneut zu aktivieren. Für Installationen, welche die Implementierung verwenden, wird der Bereich nicht mehr aus der CUG-Implementierung extrahiert, stattdessen wird der Bereich immer als mit **Adobe Granite HTTP Header Authentication Handler** definiert angezeigt.
+Dies wurde angepasst, um den Verweis auf `CugSupport` optional, um eine maximale Abwärtskompatibilität zu gewährleisten, wenn ein bestimmtes Setup beschließt, die veraltete Implementierung erneut zu aktivieren. Für Installationen, welche die Implementierung verwenden, wird der Bereich nicht mehr aus der CUG-Implementierung extrahiert, stattdessen wird der Bereich immer als mit **Adobe Granite HTTP Header Authentication Handler** definiert angezeigt.
 
 >[!NOTE]
 >
@@ -794,7 +794,7 @@ Mit der neuen Implementierung ist die Einrichtung der Zugriffskontrolle des Stan
 
 **Bearbeiten von CUG-Richtlinien in der Zugriffssteuerungsverwaltung**
 
-Dieser Wechsel von den restlichen JCR-Eigenschaften zu einer dedizierten Zugriffskontrollrichtlinie hat Auswirkungen auf die Berechtigung, die zum Erstellen oder Ändern des Autorisierungsteils der CUG-Funktion erforderlich ist. Da dies eine Modifikation am Zugriffssteuerungsinhalt darstellt, sind die Berechtigungen `jcr:readAccessControl` und `jcr:modifyAccessControl` für das Schreiben in das Repository erforderlich. Daher können nur Inhaltsautoren, die berechtigt sind, den Inhalt der Zugriffskontrolle einer Seite zu ändern, diesen Inhalt einrichten oder ändern. Dies steht im Gegensatz zur alten Implementierung, bei der die Möglichkeit zum Schreiben regulärer JCR-Eigenschaften ausreichend war, was zu einer Berechtigungseskalation führte.
+Dieser Wechsel von den restlichen JCR-Eigenschaften zu einer dedizierten Zugriffskontrollrichtlinie hat Auswirkungen auf die Berechtigung, die zum Erstellen oder Ändern des Autorisierungsteils der CUG-Funktion erforderlich ist. Da dies als Änderung beim Inhalt der Zugriffskontrolle betrachtet wird, ist dies erforderlich `jcr:readAccessControl` und `jcr:modifyAccessControl` Berechtigungen, die in das Repository geschrieben werden sollen. Daher können nur Inhaltsautoren, die berechtigt sind, den Inhalt der Zugriffskontrolle einer Seite zu ändern, diesen Inhalt einrichten oder ändern. Dies steht im Gegensatz zur alten Implementierung, bei der die Möglichkeit zum Schreiben regulärer JCR-Eigenschaften ausreichend war, was zu einer Berechtigungseskalation führte.
 
 **Von Richtlinie definierter Zielknoten**
 

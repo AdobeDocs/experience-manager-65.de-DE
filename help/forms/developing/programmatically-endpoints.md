@@ -11,10 +11,10 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
-workflow-type: ht
-source-wordcount: '10805'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '10801'
+ht-degree: 99%
 
 ---
 
@@ -326,9 +326,9 @@ Die folgende Liste gibt Konfigurationswerte an, die festgelegt werden, wenn eine
 * **url**: Gibt den Speicherort des überwachten Ordners an. In einer Cluster-Umgebung muss dieser Wert auf einen freigegebenen Netzwerkordner verweisen, auf den alle Computer im Cluster zugreifen können.
 * **asynchron**: Gibt den Aufruftyp als „asynchron“ oder „synchron“ an. Transiente und synchrone Prozesse können nur synchron aufgerufen werden. Der Standardwert lautet true. Asynchron wird empfohlen.
 * **cronExpression**: Wird von Quarz zur zeitlichen Planung des Abrufs des Eingabeordners verwendet.
-* **purgeDuration**: Dies ist ein obligatorisches Attribut. Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Dieses Attribut ist nützlich, um sicherzustellen, dass der Ergebnisordner nicht voll wird. Ein Wert von „-1“ Tage bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
+* **purgeDuration**: Dies ist ein obligatorisches Attribut. Dateien und Ordner im Ergebnisordner werden bereinigt, wenn sie älter als dieser Wert sind. Dieser Wert wird in Tagen gemessen. Dieses Attribut ist nützlich, um sicherzustellen, dass der Ergebnisordner nicht voll wird. Ein Wert von -1 Tagen bedeutet, dass der Ergebnisordner nie gelöscht wird. Der Standardwert ist -1.
 * **repeatInterval**: Das Intervall in Sekunden, in dem der überwachte Ordner auf Eingaben überprüft wird. Sofern die Drosselung nicht aktiviert ist, sollte dieser Wert größer sein als die Verarbeitungsdauer für einen durchschnittlichen Auftrag. Andernfalls kann es zu einer Überlastung des Systems kommen. Der Standardwert ist 5.
-* **repeatCount**: Die Häufigkeit, mit der ein überwachter Ordner den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
+* **repeatCount**: Die Häufigkeit, mit der ein überwachter Ordner den Ordner oder das Verzeichnis überprüft. Der Wert &quot;-1&quot;bedeutet uneingeschränktes Überprüfen. Der Standardwert ist -1.
 * **throttleOn**: Begrenzt die Anzahl der Aufträge für überwachte Ordner, die zu einem bestimmten Zeitpunkt verarbeitet werden können. Die maximale Anzahl von Aufträgen wird durch den Wert von „batchSize“ bestimmt.
 * **userName**: Der Benutzername, mit dem ein Ziel-Service aus dem überwachten Ordner aufgerufen wird. Dieser Wert ist erforderlich. Der Standardwert ist „SuperAdmin“.
 * **domainName**: Die Domain des Benutzers. Dieser Wert ist erforderlich. Der Standardwert ist „DefaultDom“.
@@ -465,7 +465,7 @@ So fügen Sie mithilfe der AEM Forms-Java-API einen Endpunkt des Typs „Überwa
 
 ### Datei mit Konstanten für die Konfigurationswerte des überwachten Ordners {#watched-folder-configuration-values-constant-file}
 
-Die [Kurzanleitung: Hinzufügen eines Endpunkts vom Typ „Überwachter Ordner“ mithilfe der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) verwendet eine Datei mit Konstanten, die Teil des Java-Projekts sein muss, um die Kurzanleitung zu kompilieren. Diese Konstantendatei enthält Konfigurationswerte, die beim Hinzufügen eines Endpunkts vom Typ „Überwachter Ordner“ festgelegt werden müssen. Der folgende Java-Code bildet die Konstantendatei.
+Die [QuickStart: Hinzufügen eines Endpunkts für überwachte Ordner mithilfe der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api) verwendet eine konstante Datei, die Teil Ihres Java-Projekts sein muss, um den Schnellstart zu kompilieren. Diese Konstantendatei enthält Konfigurationswerte, die beim Hinzufügen eines Endpunkts vom Typ „Überwachter Ordner“ festgelegt werden müssen. Der folgende Java-Code bildet die Konstantendatei.
 
 ```java
  /**
@@ -561,10 +561,10 @@ Beim programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Service mü
 Beim programmgesteuerten Hinzufügen eines E-Mail-Endpunkts zu einem Service werden die folgenden Konfigurationswerte festgelegt:
 
 * **cronExpression**: Ein Cron-Ausdruck, wenn die E-Mail mithilfe eines Cron-Ausdrucks geplant werden muss.
-* **repeatCount**: Die Häufigkeit, mit welcher der E-Mail-Endpunkt den Ordner oder das Verzeichnis überprüft. Der Wert „-1“ bedeutet uneingeschränktes Überprüfen („unendlich“). Der Standardwert ist -1.
+* **repeatCount**: Die Häufigkeit, mit welcher der E-Mail-Endpunkt den Ordner oder das Verzeichnis überprüft. Der Wert &quot;-1&quot;bedeutet uneingeschränktes Überprüfen. Der Standardwert ist -1.
 * **repeatInterval**: Die Überprüfungsrate in Sekunden, mit welcher der Empfänger auf eingehende E-Mails prüft. Der Standardwert ist 10.
 * **startDelay**: Der Zeitraum, der nach dem Starten des Zeitplaners verstreichen muss, damit die Überprüfung ausgeführt wird. Der Standardzeitraum ist 0.
-* **batchSize**: Die Anzahl von E-Mail-Nachrichten, die der Empfänger pro Überprüfung zur Optimierung der Leistung verarbeitet. Der Wert „-1“ bedeutet alle E-Mails. Der Standardwert ist 2.
+* **batchSize**: Die Anzahl von E-Mail-Nachrichten, die der Empfänger pro Überprüfung zur Optimierung der Leistung verarbeitet. Der Wert -1 zeigt alle E-Mails an. Der Standardwert ist 2.
 * **userName**: Der Benutzername, der beim Aufrufen eines Ziel-Service aus einer E-Mail verwendet wird. Der Standardwert ist `SuperAdmin`.
 * **domainName**: Ein obligatorischer Konfigurationswert. Der Standardwert ist `DefaultDom`.
 * **domainPattern**: Gibt die Domain-Muster für eingehende E-Mails an, die vom Anbieter akzeptiert werden. Wenn beispielsweise „`adobe.com`“ verwendet wird, werden nur E-Mails aus der Domain „adobe.com“ verarbeitet, während E-Mails aus anderen Domains ignoriert werden.
@@ -710,7 +710,7 @@ Fügen Sie mithilfe der Java-API einen E-Mail-Endpunkt hinzu:
 
 ### Konfigurationswerte für E-Mails - Konstante Datei {#email-configuration-values-constant-file}
 
-Unter [Schnellstart: Hinzufügen eines E-Mail-Endpunkts mit der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) wird eine konstante Datei verwendet, die Teil Ihres Java-Projekts sein muss, um den Schnellstart zu kompilieren. Diese konstante Datei stellt Konfigurationswerte dar, die beim Hinzufügen eines E-Mail-Endpunkts festgelegt werden müssen. Der folgende Java-Code bildet die Konstantendatei.
+Die [QuickStart: Hinzufügen eines E-Mail-Endpunkts mithilfe der Java-API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api) verwendet eine konstante Datei, die Teil Ihres Java-Projekts sein muss, um den Schnellstart zu kompilieren. Diese konstante Datei stellt Konfigurationswerte dar, die beim Hinzufügen eines E-Mail-Endpunkts festgelegt werden müssen. Der folgende Java-Code bildet die Konstantendatei.
 
 ```java
  /**
@@ -951,8 +951,8 @@ So fügen Sie mithilfe der Java-API einen TaskManager-Endpunkt hinzu:
 
       * Einen Zeichenfolgenwert, der den ID-Wert der Kategorie angibt
       * Einen Zeichenfolgenwert, der die Beschreibung der Kategorie angibt
-   * Erstellen Sie die Kategorie, indem Sie die Methode `createEndpointCategory` des `EndpointRegistryClient`-Objekts aufrufen und das `CreateEndpointCategoryInfo`-Objekt übergeben. Diese Methode gibt ein `EndpointCategory`-Objekt zurück, das die neue Kategorie darstellt.
 
+   * Erstellen Sie die Kategorie, indem Sie die Methode `createEndpointCategory` des `EndpointRegistryClient`-Objekts aufrufen und das `CreateEndpointCategoryInfo`-Objekt übergeben. Diese Methode gibt ein `EndpointCategory`-Objekt zurück, das die neue Kategorie darstellt.
 
 1. Legen Sie die Attribute des TaskManager-Endpunkts fest.
 
@@ -1071,8 +1071,8 @@ So ändern Sie einen Endpunkt mithilfe der Java-API:
 
       * Ein Zeichenfolgenwert, der den Namen des Konfigurationswerts angibt. Um beispielsweise den `url`-Konfigurationswert festzulegen, geben Sie `url` an.
       * Ein Zeichenfolgenwert, der den Wert des Konfigurationswerts angibt. Um einen Wert für den `url`-Konfigurationswert zu definieren, geben Sie den Speicherort des überwachten Ordners an.
-   * Rufen Sie die Methode `modifyEndpoint` des `EndpointRegistryClient`-Objekts auf und übergeben Sie das `ModifyEndpointInfo`-Objekt.
 
+   * Rufen Sie die Methode `modifyEndpoint` des `EndpointRegistryClient`-Objekts auf und übergeben Sie das `ModifyEndpointInfo`-Objekt.
 
 **Siehe auch**
 

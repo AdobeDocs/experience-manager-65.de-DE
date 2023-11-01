@@ -4,10 +4,10 @@ description: Erfahren Sie, wie Sie eine ersetzende Aktualisierung für AEM 6.5 d
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1246'
-ht-degree: 53%
+source-wordcount: '1242'
+ht-degree: 49%
 
 ---
 
@@ -45,7 +45,7 @@ Vor der Durchführung des Upgrades müssen einige Schritte ausgeführt werden. S
 
 Diese Migration ist nicht erforderlich, wenn Sie ein Upgrade von AEM 6.3 durchführen. Für Versionen, die älter als 6.3 sind, bietet Adobe ein Tool, mit dem das Repository zur neuen Version des Oak Segment Tar in AEM 6.3 migriert werden kann. Sie wird als Teil des Schnellstartpakets bereitgestellt und ist für alle Upgrades, die TarMK verwenden, obligatorisch. Upgrades für Umgebungen, die MongoMK verwenden, erfordern keine Repository-Migration. Weitere Informationen zu den Vorteilen des neuen Segment-TAR-Formats finden Sie unter [Häufig gestellte Fragen zur Migration zu Oak Segment Tar](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
-Die tatsächliche Migration wird mithilfe der standardmäßigen quickstart-JAR-Datei für AEM durchgeführt, und zwar mit der neuen Option `-x crx2oak`, mit der das crx2oak-Tool ausgeführt wird, um die Aktualisierung einfacher und zuverlässiger zu machen.
+Die tatsächliche Migration wird mithilfe der standardmäßigen AEM Schnellstart-JAR-Datei durchgeführt, die mit einer neuen `-x crx2oak` -Option, die das CRX2OAK-Tool ausführt, um die Aktualisierung zu vereinfachen und sie stabiler zu machen.
 
 >[!NOTE]
 >
@@ -131,7 +131,7 @@ Bitte überspringen Sie diesen Abschnitt, wenn Sie ein Upgrade von 6.3 durchfüh
 
 **Checkpoints werden nicht kopiert, da kein externer Datenspeicher angegeben wurde. Dadurch wird das gesamte Repository beim ersten Start neu indiziert. Verwenden Sie —skip-checkpoints , um die Migration zu erzwingen, oder finden Sie weitere Informationen unter https://jackrabbit.apache.org/oak/docs/migration.html#Checkpoints_migration .**
 
-Aus irgendeinem Grund benötigt der Migrationsprozess Zugriff auf Binärdateien im Datenspeicher und kann ihn nicht finden. Um Ihre Datenspeicher-Konfiguration zu spezifizieren, fügen Sie die folgenden Flags in den Abschnitt `<<ADDITIONAL_FLAGS>>` Ihres Migrationsbefehls ein:
+Aus irgendeinem Grund benötigt der Migrationsprozess Zugriff auf Binärdateien im Datenspeicher und kann ihn nicht finden. Um Ihre Datenspeicherkonfiguration festzulegen, fügen Sie die folgenden Flags in die `<<ADDITIONAL_FLAGS>>` Abschnitt Ihres Migrationsbefehls:
 
 **Für S3-Datenspeicher:**
 

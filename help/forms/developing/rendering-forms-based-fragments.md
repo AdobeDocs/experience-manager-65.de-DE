@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: a65c5303-0ebd-43a9-a777-401042d8fcad
 role: Developer
 exl-id: febf5350-3fc5-48c0-8bc5-198daff15936
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2209'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '2205'
+ht-degree: 94%
 
 ---
 
@@ -31,7 +31,7 @@ Die Verwendung von Fragmenten vereinfacht und beschleunigt die Erstellung und Pf
 
 Ein Fragment kann mehrere Teilformulare enthalten, die in einen Auswahl-Teilformularsatz eingeschlossen sind. Auswahl-Teilformularsätze steuern die Anzeige von Teilformularen basierend auf dem Datenfluss einer Datenverbindung. Verwenden Sie bedingte Anweisungen, um festzulegen, welches Teilformular aus dem Satz im bereitgestellten Formular angezeigt wird. Beispielsweise kann jedes Teilformular in einem Satz Informationen für einen bestimmten geografischen Standort enthalten, und auf der Grundlage des Standorts des Benutzers kann bestimmt werden, welches Teilformular angezeigt wird.
 
-Ein *Skriptfragment* enthält wiederverwendbare JavaScript-Funktionen oder -Werte, die getrennt von einem bestimmten Objekt gespeichert werden, z. B. einen Datums-Parser oder einen Aufruf eines Webservices. Diese Fragmente beinhalten ein Skriptobjekt, das in der Palette „Hierarchie“ als untergeordnetes Element von „Variablen“ aufgeführt wird. Fragmente können nicht aus Skripten erstellt werden, die Eigenschaften anderer Objekte sind, wie etwa Ereignisskripte zum Validieren, Berechnen oder Initialisieren.
+Ein *Skriptfragment* enthält wiederverwendbare JavaScript-Funktionen oder -Werte, die getrennt von einem bestimmten Objekt gespeichert werden, z. B. einen Datums-Parser oder einen Aufruf eines Webservices. Diese Fragmente enthalten ein einzelnes Skriptobjekt, das in der Palette &quot;Hierarchie&quot;als untergeordnetes Element von Variablen angezeigt wird. Fragmente können nicht aus Skripten erstellt werden, die Eigenschaften anderer Objekte sind, z. B. Ereignisskripte wie &quot;validate&quot;, &quot;calculate&quot;oder &quot;initialize&quot;.
 
 Die Verwendung von Fragmenten hat folgende Vorteile:
 
@@ -39,7 +39,7 @@ Die Verwendung von Fragmenten hat folgende Vorteile:
 * **Globale Aktualisierungen**: Sie können Fragmente verwenden, um globale Änderungen an mehreren Formularen nur einmal in einer Datei vorzunehmen. Sie können Inhalt, Skriptobjekte, Datenbindungen, Layout und Stile eines Fragments ändern. Alle XDP-Formulare, die auf dieses Fragment verweisen, spiegeln diese Änderungen wider.
 * Ein gemeinsames Element vieler Formulare kann beispielsweise ein Block von Adressen sein, der ein Dropdown-Listenobjekt für das Land beinhaltet. Wenn Sie die Werte für das Dropdown-Listenobjekt aktualisieren müssen, müssen Sie viele Formulare öffnen, um die Änderungen vorzunehmen. Wenn sich aber der Adressenblock in einem Fragment befindet, müssen Sie lediglich eine einzige Fragmentdatei öffnen und dort die Änderungen vornehmen.
 * Um ein Fragment in einem PDF-Formular zu aktualisieren, müssen Sie das Formular in Designer neu speichern.
-* **Gemeinsame Entwicklung von Formularen**: Sie können die Formularentwicklung auf mehrere Ressourcen aufteilen. Formularentwickler mit Kenntnissen in der Skripterstellung und im Umgang mit den komplexeren Funktionen von Designer können Fragmente erstellen und freigeben, die Skripten und dynamische Eigenschaften nutzen. Formularverfasser können diese Fragmente dann für die Gestaltung von Formularentwürfen verwenden. Auf diese Weise wird sichergestellt, dass alle Bestandteile eines Formulars auch dann konsistente Inhalte und eine einheitliche Funktionalität aufweisen, wenn die Formularerstellung durch mehrere Mitarbeiter erfolgt.
+* **Gemeinsame Entwicklung von Formularen**: Sie können die Formularentwicklung auf mehrere Ressourcen aufteilen. Formularentwickler mit Erfahrung in der Skripterstellung oder anderen erweiterten Funktionen von Designer können Fragmente entwickeln und freigeben, die Skripterstellung und dynamische Eigenschaften nutzen. Formularentwickler können diese Fragmente verwenden, um Formularentwürfe zu entwerfen und sicherzustellen, dass alle Teile eines Formulars ein einheitliches Erscheinungsbild und eine einheitliche Funktionalität für mehrere von mehreren Benutzern entworfene Formulare haben.
 
 ### Zusammenstellen eines Formularentwurfs, der mithilfe von Fragmenten zusammengestellt wurde {#assembling-a-form-design-assembled-using-fragments}
 
@@ -123,7 +123,7 @@ Rendern eines auf Fragmenten basierenden Formulars mithilfe der Forms API (Java)
    * Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte speichert, indem Sie seinen Konstruktor verwenden.
    * Rufen Sie die Methode `setApplicationWebRoot` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Web-Stamm des Programms darstellt.
    * Rufen Sie die `setContentRootURI`-Methode des `URLSpec`-Objekts auf und übergeben Sie ihr einen Zeichenfolgenwert, der den Inhaltsstamm-URI angibt. Stellen Sie sicher, dass sich der Formularentwurf und die Fragmente im URI des Inhaltsstamms befinden. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository://` an.
-   * Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
+   * Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular zur Durchführung von Berechnungen gesendet wird.
 
 1. Wiedergeben des Formulars
 
@@ -175,7 +175,7 @@ Wiedergabe eines Formulars, das auf Fragmenten basiert, mithilfe der Forms-API (
    * Erstellen Sie ein `URLSpec`-Objekt, das URI-Werte mithilfe seines Konstruktors speichert.
    * Rufen Sie die Methode `setApplicationWebRoot` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Web-Stamm des Programms darstellt.
    * Rufen Sie die Methode `setContentRootURI` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den URI-Wert des Inhaltsstamms angibt. Stellen Sie sicher, dass sich der Formularentwurf im Inhaltsstamm-URI befindet. Andernfalls löst der Forms-Service eine Ausnahme aus. Um auf das Repository zu verweisen, geben Sie `repository://` an.
-   * Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular gesendet wird, um Berechnungen durchzuführen.
+   * Rufen Sie die Methode `setTargetURL` des `URLSpec`-Objekts auf und übergeben Sie einen Zeichenfolgenwert, der den Ziel-URL-Wert angibt, an den die Formulardaten gesendet werden. Wenn Sie die Ziel-URL im Formularentwurf definieren, können Sie auch eine leere Zeichenfolge übergeben. Sie können auch die URL angeben, an die ein Formular zur Durchführung von Berechnungen gesendet wird.
 
 1. Wiedergeben des Formulars
 

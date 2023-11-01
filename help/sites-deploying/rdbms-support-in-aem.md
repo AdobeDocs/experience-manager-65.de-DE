@@ -1,7 +1,7 @@
 ---
 title: RDBMS-Unterstützung in AEM 6.4
 seo-title: RDBMS Support in AEM 6.4
-description: Erfahren Sie mehr über die Unterstützung der RDBMS-Persistenz in AEM 6.4 sowie die verfügbaren Konfigurationsoptionen.
+description: Erfahren Sie mehr über die Unterstützung der Persistenz von relationalen Datenbanken in AEM 6.4 und die verfügbaren Konfigurationsoptionen.
 seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
 uuid: c8422b0d-c6df-488d-bb6a-af92c9afda50
 contentOwner: User
@@ -12,10 +12,10 @@ discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
 feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '621'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 74%
 
 ---
 
@@ -23,11 +23,11 @@ ht-degree: 100%
 
 ## Überblick {#overview}
 
-Die Unterstützung für RDBMS-Persistenz in AEM wird mithilfe des Document-Mikrokernels implementiert. Der Document-Mikrokernel bildet die Grundlage, die auch für die Implementierung der MongoDB-Persistenz verwendet wird.
+Die Unterstützung der relativen Datenbankpersistenz in AEM wird mithilfe des Document Microkernel implementiert. Der Document Microkernel ist die Grundlage, die auch für die Implementierung der MongoDB-Persistenz verwendet wird.
 
-Er umfasst eine Java-API, die auf der Mongo-Java-API basiert. Eine BlobStore-API wird ebenfalls implementiert. BLOB-Objekte werden standardmäßig in der Datenbank gespeichert.
+Er umfasst eine Java-API, die auf der Mongo-Java-API basiert. Eine BlobStore-API wird ebenfalls implementiert. Standardmäßig werden Blobs in der Datenbank gespeichert.
 
-Weitere Informationen zu den Implementierungsdetails finden Sie in der Dokumentation zu [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) und [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html).
+Weitere Informationen zu den Implementierungsdetails finden Sie im [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) und [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) Dokumentation.
 
 >[!NOTE]
 >
@@ -39,13 +39,13 @@ Weitere Informationen zur Unterstützung relationaler Datenbanken in AEM finden 
 
 ## Konfigurationsschritte {#configuration-steps}
 
-Das Repository wird durch Konfigurieren des OSGi-Dienstes `DocumentNodeStoreService` erstellt. Es muss erweitert werden, um neben der MongoDB-Persistenz auch die RDBMS-Persistenz zu unterstützen.
+Das Repository wird durch Konfigurieren des OSGi-Dienstes `DocumentNodeStoreService` erstellt. Es wurde erweitert, um neben MongoDB auch die Persistenz der relationalen Datenbank zu unterstützen.
 
 Um diese nutzen zu können, muss eine Datenquelle mithilfe von AEM konfiguriert werden. Dies geschieht über die Datei `org.apache.sling.datasource.DataSourceFactory.config`. Die JDBC-Treiber für die jeweilige Datenbank müssen separat als OSGi-Bundles in der lokalen Konfiguration bereitgestellt werden.
 
-Weitere Informationen über die Schritte zum Erstellen von OSGi-Bundles für JDBC-Treiber finden Sie in dieser [Dokumentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) auf der Apache Sling-Website.
+Anweisungen zum Erstellen von OSGi-Bundles für JDBC-Treiber finden Sie in diesem [Dokumentation](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) auf der Apache Sling-Website.
 
-Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Konfigurieren der RDB-Persistenz in AEM:
+Sobald die Bundles eingerichtet sind, führen Sie die folgenden Schritte aus, um AEM mit RDB-Persistenz zu konfigurieren:
 
 1. Stellen Sie sicher, dass der Datenbank-Daemon gestartet ist und eine aktive Datenbank für die Verwendung mit AEM vorhanden ist.
 1. Kopieren Sie die AEM 6.3-JAR-Datei in das Installationsverzeichnis.
@@ -57,6 +57,7 @@ Wenn die Bundles erstellt wurden, befolgen Sie die nachfolgenden Schritte zum Ko
 1. Erstellen Sie eine weitere Konfigurationsdatei mit dem folgenden Namen im Ordner `crx-quickstart\install`, um die Datenquelle und die JDBC-Parameter zu konfigurieren:
 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
+
    >[!NOTE]
    >
    >Detaillierte Informationen zur Datenquellenkonfiguration für die einzelnen unterstützten Datenbanken finden Sie unter [Konfigurationsoptionen für die Datenquelle](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
@@ -97,7 +98,7 @@ Folgende Konfigurationsoptionen sind verfügbar:
 
 ### URL-Zeichenfolgenformate {#url-string-formats}
 
-Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenfolgenformat in der Datenquellenkonfiguration verwendet. Nachfolgend finden Sie eine Liste der Formate für die derzeit von AEM unterstützten Datenbanken:
+Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenfolgenformat in der Datenquellenkonfiguration verwendet. Nachstehend finden Sie eine Liste der Formate für die Datenbanken, die derzeit AEM unterstützt:
 
 * `jdbc:postgresql:databasename` für PostgreSQL;
 * `jdbc:db2://localhost:port/databasename` für DB2;
@@ -107,6 +108,6 @@ Je nach dem zu verwendenden Datenbanktyp wird ein unterschiedliches URL-Zeichenf
 
 ## Bekannte Einschränkungen {#known-limitations}
 
-Obwohl die RDBMS-Persistenz die gleichzeitige Verwendung mehrerer AEM-Instanzen mit einer einzigen Datenbank unterstützt, trifft dies nicht auf gleichzeitige Installationen zu.
+Die gleichzeitige Verwendung mehrerer AEM Instanzen mit einer einzigen Datenbank wird zwar durch die RDBMS-Persistenz unterstützt, gleichzeitige Installationen jedoch nicht.
 
 Um dieses Problem zu umgehen, führen Sie zuerst die Installation mit nur einer Instanz aus und fügen Sie dann nach Abschluss derselben weitere hinzu.

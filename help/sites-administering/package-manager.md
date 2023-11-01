@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3572'
-ht-degree: 91%
+source-wordcount: '3570'
+ht-degree: 97%
 
 ---
 
@@ -32,7 +32,7 @@ Ein Paket enthält auch Vault-Metadaten, einschließlich der Filterdefinitionen 
 
 >[!NOTE]
 >
->Pakete stellen die aktuelle Version des Inhalts zum Zeitpunkt der Erstellung des Pakets dar. Sie enthalten keine früheren Versionen des Inhalts, die AEM im Repository speichert.
+>Pakete repräsentieren die aktuelle Version der Inhalte zum Zeitpunkt der Erstellung des Pakets. Sie umfassen keine früheren Versionen der Inhalte, die AEM im Repository speichert.
 
 ## Package Manager {#package-manager}
 
@@ -354,7 +354,7 @@ Da Pakete vorhandene Inhalte ändern können, ist es oft nützlich, diese Änder
 
 Package Manager kann die folgenden Validierungen durchführen:
 
-* [OSGi-Paketimporte](#osgi-package-imports)
+* [OSGi-Paket-Importe](#osgi-package-imports)
 * [Überlagerungen](#overlays)
 * [ACLs](#acls)
 
@@ -370,7 +370,7 @@ Eventuelle versionierte Abhängigkeiten, die von der AEM-Instanz nicht erfüllt 
 
 **Fehlerstatus**
 
-Wenn Abhängigkeiten nicht erfüllt sind, starten die OSGi-Bundles im Paket mit diesen Abhängigkeiten nicht. Dies führt zu einer fehlerhaften Bereitstellung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
+Wenn die Abhängigkeiten nicht erfüllt sind, werden die OSGi-Bundles in dem Paket mit diesen Abhängigkeiten nicht gestartet. Dies führt zu einer fehlerhaften Bereitstellung des Programms, da alle auf dem nicht gestarteten OSGi-Bundle basierenden Prozesse nicht ordnungsgemäß funktionieren.
 
 **Fehlerbehebung**
 
@@ -380,7 +380,7 @@ Um Fehler aufgrund nicht erfüllter OSGi-Bundles zu beheben, muss die Abhängigk
 
 **Prüfumfang**
 
-Diese Validierung ermittelt, ob das installierte Paket eine Datei enthält, die bereits in der Ziel-AEM-Instanz überlagert ist.
+Diese Validierung ermittelt, ob das zu installierende Paket eine Datei enthält, die bereits in der Ziel-AEM-Instanz überlagert ist.
 
 Beispiel: Bei einer bestehenden Überlagerung unter `/apps/sling/servlet/errorhandler/404.jsp` ändert ein Paket, das `/libs/sling/servlet/errorhandler/404.jsp` enthält, die vorhandene Datei unter `/libs/sling/servlet/errorhandler/404.jsp`.
 
@@ -390,7 +390,7 @@ Solche Überlagerungen werden im Aktivitätsprotokoll von Package Manager beschr
 
 **Fehlerstatus**
 
-Ein Fehlerstatus bedeutet, dass das Paket versucht, eine bereits überlagerte Datei bereitzustellen. Daher werden die Änderungen im Paket durch die Überlagerung überschrieben (und daher &quot;ausgeblendet&quot;) und nicht übernommen.
+Ein Fehlerstatus bedeutet, dass das Paket versucht, eine bereits überlagerte Datei bereitzustellen. Daher werden die Änderungen im Paket von der Überlagerung überschrieben (und somit „ausgeblendet“) und nicht übernommen.
 
 **Fehlerbehebung**
 
@@ -485,7 +485,7 @@ Beim Hochladen eines Pakets wird nur der Paketinhalt zum Repository hinzugefügt
 
 >[!CAUTION]
 >
->Durch die Installation eines Pakets können vorhandene Inhalte überschrieben oder gelöscht werden. Laden Sie ein Paket nur hoch, wenn Sie sicher sind, dass es keine benötigten Inhalte löscht oder überschreibt.
+>Beim Installieren eines Pakets können vorhandene Inhalte überschrieben oder gelöscht werden. Laden Sie ein Paket nur hoch, wenn Sie sich sicher sind, dass dadurch keine benötigten Inhalte gelöscht oder überschrieben werden.
 
 Vor der Installation Ihres Pakets erstellt Package Manager automatisch ein Snapshot-Paket, das den Inhalt enthält, der überschrieben wird. Dieser Snapshot wird wieder installiert, wenn Sie das Paket deinstallieren.
 

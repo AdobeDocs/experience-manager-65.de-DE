@@ -4,10 +4,10 @@ description: Installieren und konfigurieren Sie ein AEM Forms-Demopaket und pass
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4626'
-ht-degree: 68%
+source-wordcount: '4622'
+ht-degree: 67%
 
 ---
 
@@ -462,7 +462,7 @@ AEM Forms Analytics-Daten sind verfügbar, wenn sie offline sind, oder ohne Adob
 
 ### Aktivierung der automatisierten Konfiguration von Adobe-Formularen {#automated-forms-enablement}
 
-Um AEM Forms mit der Adobe Forms zu installieren und zu konfigurieren, müssen die Benutzer des Konvertierungs-Tools über Folgendes verfügen.
+Um AEM Forms mit dem Adobe Forms zu installieren und zu konfigurieren, müssen Benutzer des Konvertierungs-Tools Folgendes verwenden.
 
 1. Zugriff auf Adobe Developer.
 
@@ -476,7 +476,7 @@ Lesen Sie Folgendes, bevor Sie weitere Anweisungen lesen:
 
 #### Erstellen einer IMS-Konfiguration, Teil 1 {#creating-ims-config}
 
-Damit der Service ordnungsgemäß mit dem Konvertierungs-Tool für Formulare kommunizieren kann, müssen die Benutzer den Identity Management-System-Service (IMS) konfigurieren, damit sie sich bei Adobe I/O registrieren können.
+Damit der Dienst ordnungsgemäß mit dem Konvertierungs-Tool für Formulare kommunizieren kann, müssen die Benutzer den Identity Management System (IMS)-Dienst konfigurieren, damit sie sich bei Adobe I/O registrieren können.
 
 1. Navigieren Sie zu https://&lt;aemserver>:&lt;port> und klicken Sie links oben auf „Adobe Experience Manager“ > „Tools“ > „Sicherheit“ > „Adobe IMS-Konfiguration“.
 
@@ -496,7 +496,7 @@ Das in diesem Abschnitt erstellte Zertifikat wird verwendet, um den Integrations
 
 #### Erstellen der Integration in Adobe I/O {#create-integration-adobeio}
 
-Vergewissern Sie sich, dass Sie die Möglichkeit haben, eine Integration in Ihrer Adobe-Domain zu erstellen. Wenn nicht, wenden Sie sich an Ihren Systemadministrator, damit er dies tun kann.
+Stellen Sie sicher, dass Sie die Möglichkeit haben, eine Integration in Ihrer Adobe-Domäne zu erstellen, wenn Sie sich nicht an Ihren Systemadministrator wenden, um dies zu tun.
 
 1. Navigieren Sie zur [Adobe I/O-Konsole](https://developer.adobe.com/console/).
 
@@ -522,7 +522,7 @@ Vergewissern Sie sich, dass Sie die Möglichkeit haben, eine Integration in Ihre
 
 Nachdem Sie eine Integration erstellt haben, können Sie die Installation der IMS-Konfiguration abschließen.
 
-1. Klicken Sie in Adobe I/O auf Ihre Integration, um die Verbindungsdetails anzuzeigen.
+1. Klicken Sie auf Ihre Integration innerhalb von Adobe I/O, um die Verbindungsdetails anzuzeigen.
 
 1. Navigieren Sie in AEM zu Ihrer IMS-Konfiguration („Tools“ > „Sicherheit“ > „IMS“)
 
@@ -534,7 +534,7 @@ Nachdem Sie eine Integration erstellt haben, können Sie die Installation der IM
 
 1. Geben Sie das Client-Geheimnis ein (Sie müssen in der Integration in Adobe I/O auf die Option zum Offenlegen klicken, damit es angezeigt wird).
 
-1. Klicken Sie in Adobe I/O auf die Registerkarte JWT , um die JWT-Payload abzurufen und sie in die Payload der IMS-Konfiguration einzufügen.
+1. Klicken Sie auf die Registerkarte JWT im Adobe I/O, um die JWT-Payload abzurufen und sie in die Payload der IMS-Konfiguration einzufügen.
 
    ![Payload-IMS-Konfiguration](assets/aftia-payload-ims-config.jpg)
 
@@ -548,7 +548,7 @@ Sobald die IMS-Konfiguration abgeschlossen ist, können Sie mit der Überprüfun
 
 1. Öffnen Sie den Browser und navigieren Sie zur System-URL https://&lt;domain_name>:&lt;system_port>
 
-1. Klicken Sie links oben im Bildschirm auf Adobe Experience Manager > Tools > Cloud Services > Konfiguration der automatisierten Forms-Konversation .
+1. Klicken Sie links oben im Bildschirm auf Adobe Experience Manager > Tools > Cloud Service > Konfiguration der automatisierten Forms-Konversation .
 
 1. Wählen Sie den Konfigurationsordner aus, in dem Sie die Konfiguration platzieren möchten.
 
@@ -578,7 +578,7 @@ Sobald die IMS-Konfiguration abgeschlossen ist, können wir mit der Erstellung d
 
 1. Öffnen Sie den Browser und navigieren Sie zur System-URL https://&lt;domain_name>:&lt;system_port>
 
-1. Klicken Sie links oben im Bildschirm auf Adobe Experience Manager > Tools > Cloud Services > Konfiguration der automatisierten Forms-Konversation .
+1. Klicken Sie links oben im Bildschirm auf Adobe Experience Manager > Tools > Cloud Service > Konfiguration der automatisierten Forms-Konversation .
 
 1. Wählen Sie den Konfigurationsordner aus, in dem Sie die Konfiguration platzieren möchten.
 
@@ -666,7 +666,7 @@ Auf dieser Site finden Sie auch Client-Bibliotheken, von denen eine Bootstrap 4 
 
 *https://&lt;aemserver>:&lt;port>/crx/de/index.jsp#/apps/we-gov/clientlibs/clientlib-base/css/bootstrap*
 
-Die bearbeitbaren Vorlagen, die in diesem Package enthalten sind, sind auch mit Vorlagen-/Seitenrichtlinien vorkonfiguriert, die die CSS-Klassen von Bootstrap 4 für Paginierung, Stil usw. verwenden. Nicht alle Klassen wurden zu den Vorlagenrichtlinien hinzugefügt, aber jede Klasse, die von Bootstrap 4 unterstützt wird, kann zu den Richtlinien hinzugefügt werden. Eine Liste der verfügbaren Klassen finden Sie auf der Einführungsseite:
+Die bearbeitbaren Vorlagen, die in diesem Package enthalten sind, sind auch mit Vorlagen-/Seitenrichtlinien vorkonfiguriert, die die Bootstrap 4 CSS-Klassen für Paginierung, Stil usw. verwenden. Nicht alle Klassen wurden zu den Vorlagenrichtlinien hinzugefügt, aber jede Klasse, die von Bootstrap 4 unterstützt wird, kann zu den Richtlinien hinzugefügt werden. Eine Liste der verfügbaren Klassen finden Sie auf der Einführungsseite:
 
 [https://getbootstrap.com/docs/4.1/getting-started/introduction/](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
 

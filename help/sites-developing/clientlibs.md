@@ -7,10 +7,10 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2860'
-ht-degree: 81%
+source-wordcount: '2856'
+ht-degree: 87%
 
 ---
 
@@ -134,7 +134,7 @@ In früheren Versionen befanden sich Client-Bibliotheksordner unter `/etc/client
 
 >[!NOTE]
 >
->Um Code besser von Inhalt und Konfiguration zu isolieren, empfiehlt es sich, Client-Bibliotheken unter `/apps` zu platzieren und über `/etc.clientlibs` mithilfe der `allowProxy`-Eigenschaft freizugeben.
+>Um Code besser von Inhalt und Konfiguration zu isolieren, wird empfohlen, Client-Bibliotheken unter `/apps` und stellen sie über `/etc.clientlibs` durch Nutzung der `allowProxy` -Eigenschaft.
 
 Damit die Client-Bibliotheken unter `/apps` zugänglich sind, wird ein Proxy-Servlet verwendet. Die ACLs werden weiterhin im Client-Bibliotheksordner erzwungen, aber das Servlet ermöglicht, dass der Content über `/etc.clientlibs/` gelesen wird, wenn die `allowProxy`-Eigenschaft auf `true` gesetzt ist.
 
@@ -214,9 +214,9 @@ Beispielsweise weist /`etc/clientlibs/myclientlibs/publicmain` eine Abhängigkei
 
 ### Einbetten von Code aus anderen Bibliotheken {#embedding-code-from-other-libraries}
 
-Sie können Code aus einer Client-Bibliothek in eine andere Client-Bibliothek einbetten. Zur Laufzeit enthalten die generierten JS- und CSS-Dateien der eingebetteten Bibliothek den Code der eingebetteten Bibliothek.
+Sie können Code aus einer Client-Bibliothek in eine andere Client-Bibliothek einbetten. Zur Laufzeit wird der Code der eingebetteten Bibliothek in die generierten JS- und CSS-Dateien der einbettenden Bibliothek eingefügt.
 
-Das Einbetten von Code ist nützlich für den Zugriff auf Bibliotheken, die in gesicherten Bereichen des Repositorys gespeichert sind.
+Das Einbetten von Code ist nützlich, um Zugriff auf Bibliotheken zu ermöglichen, die in sicheren Bereichen des Repositorys gespeichert sind.
 
 #### Anwendungsspezifische Client-Bibliotheksordner {#app-specific-client-library-folders}
 
@@ -321,20 +321,20 @@ Beispiel: Die folgende Tabelle listet den Wert der Eigenschaft `channels` für j
 
 AEM ist mit austauschbaren Präprozessoren kompatibel und bietet Unterstützung für [YUI Compressor](https://github.com/yui/yuicompressor#yui-compressor---the-yahoo-javascript-and-css-compressor) für CSS und JavaScript sowie für [Google Closure Compiler (GCC)](https://developers.google.com/closure/compiler/) für JavaScript. YUI ist der Standard-Präprozessor in AEM.
 
-Die Plug-in-fähigen Präprozessoren ermöglichen eine flexible Verwendung, einschließlich:
+Die austauschbaren Präprozessoren bieten flexible Einsatzmöglichkeiten, z. B.:
 
-* Definieren von ScriptProcessors, die Skriptquellen verarbeiten können
-* Prozessoren können mit Optionen konfiguriert werden
-* Prozessoren können für die Minimierung, aber auch für nicht minimierte Fälle verwendet werden
-* Die clientlib kann definieren, welcher Prozessor verwendet werden soll
+* Definition von ScriptProcessors, die Skriptquellen verarbeiten können
+* Prozessoren sind mit Optionen konfigurierbar
+* Prozessoren können zur Minimierung, aber auch für nicht minimierte Fälle verwendet werden
+* Die Client-Bibliothek kann den zu verwendenden Prozessor festlegen
 
 >[!NOTE]
 >
->Standardmäßig verwendet AEM den YUI Compressor. Siehe [GitHub-Dokumentation zu YUI Compressor](https://github.com/yui/yuicompressor/issues) für eine Liste bekannter Probleme. Beim Wechseln zum GCC-Kompressor für bestimmte Clientlibs können einige Probleme behoben werden, die bei der Verwendung von YUI beobachtet wurden.
+>Standardmäßig verwendet AEM den YUI Compressor. In der [GitHub-Dokumentation zum YUI Compressor](https://github.com/yui/yuicompressor/issues) finden Sie eine Liste bekannter Probleme. Ein Wechsel zum GCC Compressor für bestimmte Client-Bibliotheken kann einige Probleme beheben, die mit YUI auftreten.
 
 >[!CAUTION]
 >
->Platzieren Sie keine minimierte Bibliothek in einer Client-Bibliothek. Geben Sie stattdessen die Rohbibliothek an und verwenden Sie, falls eine Minimierung erforderlich ist, die Optionen der Präprozessoren.
+>Platzieren Sie eine minimierte Bibliothek nicht in einer Client-Bibliothek. Stellen Sie stattdessen die Rohbibliothek bereit. Wenn eine Minimierung erforderlich ist, können Sie die Möglichkeiten der Präprozessoren verwenden.
 
 ### Nutzung {#usage}
 
@@ -388,7 +388,7 @@ Weitere Informationen zu GCC-Optionen finden Sie in der [GCC-Dokumentation](http
 
 ### Festlegen des Systemstandard-Minimierers {#set-system-default-minifier}
 
-YUI ist in AEM als Standard-Miniaturansicht festgelegt. Gehen Sie wie folgt vor, um dies in GCC zu ändern.
+YUI ist in AEM der Standardminimierer. Um stattdessen GCC festzulegen, führen Sie die folgenden Schritte aus.
 
 1. Rufen Sie Apache Felix Config Manager unter [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) auf.
 1. Suchen und bearbeiten Sie den **Adobe Granite HTML Library Manager**.
@@ -431,7 +431,7 @@ Die Komponente `/libs/cq/granite/components/dumplibs/dumplibs` generiert eine Se
 
 `https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
-Die Informationen enthalten den Bibliothekspfad und -typ (CSS oder JS) sowie die Werte der Bibliotheksattribute, wie Kategorien und Abhängigkeiten. Nachfolgende Tabellen auf der Seite zeigen die Bibliotheken in jeder Kategorie und jedem Kanal an.
+Zu den Informationen gehören der Bibliothekspfad und -typ (CSS oder JS) sowie die Werte der Bibliotheksattribute, wie z. B. Kategorien und Abhängigkeiten. Nachfolgende Tabellen auf der Seite zeigen die Bibliotheken in jeder Kategorie und jedem Kanal.
 
 ### Anzeigen der generierten Ausgabe {#see-generated-output}
 

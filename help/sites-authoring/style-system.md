@@ -9,10 +9,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1312'
-ht-degree: 67%
+source-wordcount: '1306'
+ht-degree: 89%
 
 ---
 
@@ -24,13 +24,13 @@ Dadurch entfällt die Notwendigkeit, eine benutzerdefinierte Komponente für jed
 
 ## Nutzungsszenario {#use-case}
 
-Vorlagenautoren benötigen nicht nur die Möglichkeit, die Funktionsweise von Komponenten für Inhaltsautoren zu konfigurieren, sondern auch eine Reihe alternativer visueller Varianten einer Komponente zu konfigurieren.
+Vorlagenautorinnen und -autoren benötigen nicht nur die Möglichkeit, die Funktionsweise von Komponenten für Inhaltsautorinnen und -autoren zu konfigurieren, sondern auch die Möglichkeit, eine Reihe alternativer visueller Varianten einer Komponente zu konfigurieren.
 
-Ebenso müssen Inhaltsautoren nicht nur die Möglichkeit haben, ihren Inhalt zu strukturieren und anzuordnen, sondern auch auswählen können, wie er visuell dargestellt wird.
+Ebenso müssen Inhaltsautorinnen und -autoren nicht nur die Möglichkeit haben, ihren Inhalt zu strukturieren und anzuordnen, sondern sie müssen auch auswählen können, wie er visuell dargestellt wird.
 
 Das Stilsystem bietet eine einheitliche Lösung für die Anforderungen des Vorlagenautors und des Inhaltsautors:
 
-* Vorlagenautoren können in der Inhaltsrichtlinie von Komponenten Stilklassen definieren.
+* Vorlagenautorinnen und -autoren können in der Inhaltsrichtlinie von Komponenten Stilklassen definieren.
 * Inhaltsautoren können diese Klassen dann in einer Dropdown-Liste auswählen, wenn sie die Komponente auf einer Seite bearbeiten, um die entsprechenden Stile anzuwenden.
 
 Die Stilklasse wird dann in das Decoration-Wrapper-Element der Komponente eingefügt, damit der Komponentenentwickler nicht über die Bereitstellung seiner CSS-Regeln hinaus mit der Verarbeitung der Stile befasst sein muss.
@@ -69,9 +69,9 @@ In den folgenden Abschnitten [Als Inhaltsautor](#as-a-content-author) und [Als V
 
 Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen Sie wie folgt vor:
 
-1. Installieren Sie die CSS als Client-Bibliotheken, wie im Abschnitt beschrieben [Übersicht](#overview).
-1. Konfigurieren Sie die CSS-Klassen, die Sie Ihren Inhaltsautoren zur Verfügung stellen möchten, wie im Abschnitt beschrieben. [Als Vorlagenautor](#as-a-template-author).
-1. Inhaltsautoren können dann die Stile wie im Abschnitt beschrieben verwenden [Als Inhaltsautor](#as-a-content-author).
+1. Installieren Sie den CSS-Code als Client-Bibliotheken, wie im Abschnitt [Überblick](#overview) erklärt.
+1. Konfigurieren Sie die CSS-Klassen, die Sie Ihren Inhaltsautorinnen bzw. -autoren zur Verfügung stellen möchten, wie im Abschnitt [Als Vorlagenautorin bzw. -autor](#as-a-template-author) beschrieben.
+1. Inhaltsautorinnen bzw. -autoren können die Stile daraufhin wie im Abschnitt [Als Inhaltsautorin bzw. -autor](#as-a-content-author) beschrieben verwenden.
 
 ### Als Inhaltsautor {#as-a-content-author}
 
@@ -104,14 +104,14 @@ Wenn Sie das Stilsystem für Ihre eigenen Komponenten verwenden möchten, gehen 
 
    * **Gruppenname:** Stile können im Stilmenü gruppiert werden, das dem Inhaltsautor angezeigt wird, während er den Stil einer Komponente konfiguriert.
    * **Stile können kombiniert werden:** Ermöglicht die gleichzeitige Auswahl mehrerer Stile innerhalb dieser Gruppe.
-   * **Stilname:** Die Beschreibung des Stils, der dem Inhaltsautor beim Konfigurieren des Komponentenstils angezeigt wird.
-   * **CSS-Klassen:** Der tatsächliche Name der CSS-Klasse, die mit dem Stil verknüpft ist.
+   * **Stilname:** Die Beschreibung des Stils, der den Inhaltsautorinnen bzw. -autoren beim Konfigurieren des Komponentenstils angezeigt wird.
+   * **CSS-Klassen:** Der tatsächliche Name der CSS-Klasse, die dem Stil zugeordnet ist.
 
-   Verwenden Sie die Ziehpunkte, um die Reihenfolge der Gruppen und Stile innerhalb der Gruppen anzuordnen. Verwenden Sie die Symbole zum Hinzufügen oder Löschen, um Gruppen oder Stile innerhalb der Gruppen hinzuzufügen oder zu entfernen.
+   Ordnen Sie die Gruppen und die Stile innerhalb der Gruppen mithilfe der Ziehpunkte. Nutzen Sie die Symbole „Hinzufügen“ oder „Löschen“, um Gruppen bzw. Stile innerhalb der Gruppen hinzuzufügen oder zu entfernen.
 
 >[!CAUTION]
 >
->Die als Stil-Eigenschaften einer Komponentenrichtlinie konfigurierten CSS-Klassen (sowie das erforderliche JavaScript) müssen als [Client-Bibliotheken](/help/sites-developing/clientlibs.md) um zu arbeiten.
+>Die als Stil-Eigenschaften einer Komponentenrichtlinie konfigurierten CSS-Klassen (sowie das erforderliche JavaScript) müssen als [Client-Bibliotheken](/help/sites-developing/clientlibs.md) zu arbeiten.
 
 ## Einrichtung {#setup}
 
@@ -143,7 +143,7 @@ Die Registerkarte für das Bearbeitungsdialogfeld kann auf ähnliche Weise wie d
 
 ### Stile mit Elementnamen {#styles-with-element-names}
 
-Mit der String-Array-Eigenschaft `cq:styleElements` können Entwickler auch eine Liste der zulässigen Elementnamen für Stile in der Komponente konfigurieren. Anschließend kann der Vorlagenautor auf der Registerkarte &quot;Stile&quot;der Richtlinie im Dialogfeld &quot;Design&quot;auch einen Elementnamen auswählen, der für jeden Stil festgelegt werden soll. Dadurch wird der Elementname des Wrapper-Elements festgelegt.
+Mit der String-Array-Eigenschaft `cq:styleElements` können Entwickler auch eine Liste der zulässigen Elementnamen für Stile in der Komponente konfigurieren. In der Registerkarte „Stile“ für die Richtlinie im Dialogfeld „Design“ können Vorlagenautorinnen und -autoren außerdem Elementnamen auswählen, die für die einzelnen Stile festgelegt werden sollen. Dadurch wird der Elementname des Wrapper-Elements definiert.
 
 Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 
@@ -151,13 +151,13 @@ Diese Eigenschaft wird auf dem Knoten `cq:Component` festgelegt. Beispiel:
 
 >[!CAUTION]
 >
->Vermeiden Sie das Definieren von Elementnamen für Stile, die kombiniert werden können. Wenn mehrere Elementnamen definiert sind, lautet die Priorität:
+>Definieren Sie keine Elementnamen für Stile, die kombiniert werden können. Wenn mehrere Elementnamen definiert werden, gilt die folgende Prioritätsreihenfolge:
 >
 >1. HTL hat stets den Vorrang: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Danach wird unter mehreren aktiven Stilen der erste Stil in der Liste der in der Komponentenrichtlinie konfigurierten Stile ausgewählt.
 >1. Die Werte `cq:htmlTag`/ `cq:tagName` der Komponente werden schließlich als Ausweichwert verwendet.
 >
 
-Die Fähigkeit, Stilnamen zu definieren, ist bei sehr generischen Komponenten wie dem Layout-Container oder der Inhaltsfragmentkomponente hilfreich, um diesen eine zusätzliche Bedeutung zu verleihen.
+Diese Möglichkeit, Stilnamen zu definieren, ist für sehr allgemeine Komponenten wie den Layout-Container oder die Inhaltsfragment-Komponente nützlich, um ihnen eine zusätzliche Bedeutung zu verleihen.
 
-Zum Beispiel können einem Layout-Container so Semantik-Elemente wie `<main>`, `<aside>`, `<nav>` usw. zugewiesen werden.
+Zum Beispiel können einem Layout-Container dadurch semantishce Elemente wie `<main>`, `<aside>`, `<nav>` usw. zugewiesen werden.

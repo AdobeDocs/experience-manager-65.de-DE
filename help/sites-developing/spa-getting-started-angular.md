@@ -10,18 +10,18 @@ content-type: reference
 discoiquuid: 9cdd7648-d67e-414d-aedf-a5687da39326
 docset: aem65
 exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1015'
-ht-degree: 87%
+source-wordcount: '1013'
+ht-degree: 90%
 
 ---
 
 # Erste Schritte mit SPAs in AEM – Angular{#getting-started-with-spas-in-aem-angular}
 
-Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickler möchten Sites mit SPA Frameworks erstellen können und Autoren möchten Inhalte in AEM für eine Site, die mit SPA Frameworks erstellt wurde, nahtlos bearbeiten.
+Single Page Applications (SPAs) können ansprechende Erlebnisse für Website-Benutzer bieten. Entwickelnde möchten Sites mit SPA-Frameworks erstellen und Autorinnen sowie Autoren möchten Inhalte in AEM nahtlos für eine Site bearbeiten, die durch SPA-Frankeworks erstellt wurde.
 
-Die SPA Authoring-Funktion bietet eine umfassende Lösung zur Unterstützung von SPA in AEM. Dieser Artikel beschreibt eine vereinfachte SPA-Anwendung im Angular-Framework, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, rasch mit Ihrer eigenen SPA zu arbeiten.
+Die SPA-Autorenfunktion bietet eine umfassende Lösung zur Unterstützung von SPAs in AEM. Dieser Artikel beschreibt eine vereinfachte SPA-Anwendung im Angular-Framework, erläutert, wie sie zusammengestellt wird, und ermöglicht es Ihnen, rasch mit Ihrer eigenen SPA zu arbeiten.
 
 >[!NOTE]
 >
@@ -43,7 +43,7 @@ Weitere Details zur Funktionsweise von SPAs in AEM finden Sie in den folgenden D
 
 >[!NOTE]
 >
->Um Inhalt in einer SPA zu erstellen, muss der Inhalt in AEM gespeichert und durch das Inhaltsmodell verfügbar gemacht werden.
+>Um Inhalte in einem SPA erstellen zu können, muss der Inhalt in AEM gespeichert und durch das Inhaltsmodell verfügbar gemacht werden.
 >
 >Eine SPA, die außerhalb von AEM entwickelt wurde, wird nicht autorisiert, wenn der Content-Modell-Vertrag nicht eingehalten wird.
 
@@ -106,7 +106,7 @@ module.exports = {
 
 ### Erstellung {#building}
 
-Bei der Erstellung der App wird neben dem aem-clientlib-generator zur automatischen Client-Bibliothekserstellung auch [Webpack](https://webpack.js.org/) für die Übertragung verwendet. Daher ähnelt der Build-Befehl:
+Bei der Erstellung der App wird neben dem aem-clientlib-generator zur automatischen Client-Bibliothekserstellung auch [Webpack](https://webpack.js.org/) für die Übertragung verwendet. Daher sieht der Build-Befehl ungefähr so aus:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 

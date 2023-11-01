@@ -10,10 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '7669'
-ht-degree: 99%
+source-wordcount: '7667'
+ht-degree: 98%
 
 ---
 
@@ -728,7 +728,7 @@ AEM Forms on JEE stellt APIs zum Verwalten der Listen „Zulässige Referrer –
 
 Weitere Informationen zu den APIs finden Sie in der AEM Forms on JEE API-Referenz.
 
-Verwenden Sie die Liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** für „Zulässige Referrer – Ausnahmen“ auf globaler Ebene, d. h. um Ausnahmen zu definieren, die für alle Anwendungen gelten. Diese Liste enthält nur URIs mit einem absoluten Pfad (z. B. `/index.html`) oder einen relativen Pfad (z. B. `/sample/`). Sie können auch einen regulären Ausdruck an das Ende eines relativen URI anhängen, z. B. `/sample/(.)*`.
+Verwenden Sie die Liste ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** für „Zulässige Referrer – Ausnahmen“ auf globaler Ebene, d. h. um Ausnahmen zu definieren, die für alle Anwendungen gelten. Diese Liste enthält nur URIs mit einem absoluten Pfad (zum Beispiel `/index.html`) oder einen relativen Pfad (z. B. `/sample/`). Sie können auch einen regulären Ausdruck an das Ende eines relativen URI anhängen, beispielsweise: `/sample/(.)*`.
 
 Die Listen-ID ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** wird als Konstante in der Klasse `UMConstants` des Namespace `com.adobe.idp.um.api` definiert, der in `adobe-usermanager-client.jar` zu finden ist. Sie können die AEM Forms-APIs zum Erstellen, Ändern oder Bearbeiten dieser Liste verwenden. Um beispielsweise die Liste für globale zulässigen Referrer - Ausnahmen zu verwenden, gehen Sie folgendermaßen vor:
 
@@ -746,7 +746,7 @@ Fügen Sie das JAVA-Argument `-Dlc.um.csrffilter.disabled=true` in das Startskri
 
 **Referrer-Filterung bei benutzerdefinierten WAR-Dateien**
 
-Möglicherweise haben Sie benutzerdefinierte WAR-Dateien für die Verwendung mit AEM Forms on JEE speziell für Ihre Geschäftsanforderungen erstellt. Um die Referrer-Filterung bei benutzerdefinierten WAR-Dateien zu aktivieren, fügen Sie ***adobe-usermanager-client.jar*** in den Klassenpfad für die WAR-Datei ein und nehmen Sie in die Datei web.xml einen Filtereintrag mit den folgenden Parametern vor:
+Möglicherweise haben Sie benutzerdefinierte WAR-Dateien erstellt, um mit AEM Forms on JEE zusammenzuarbeiten und Ihre Geschäftsanforderungen zu erfüllen. Um die Referrer-Filterung bei benutzerdefinierten WAR-Dateien zu aktivieren, fügen Sie ***adobe-usermanager-client.jar*** in den Klassenpfad für die WAR-Datei ein und nehmen Sie in die Datei web.xml einen Filtereintrag mit den folgenden Parametern vor:
 
 **CSRF_CHECK_GETS** – steuert die Referrer-Prüfung bei GET-Anforderungen. Wenn dieser Parameter nicht definiert ist, wird für den Standardwert „false“ festgelegt. Schließen Sie diesen Parameter nur ein, wenn Sie Ihre GET-Anfragen filtern möchten.
 

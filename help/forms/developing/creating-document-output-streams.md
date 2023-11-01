@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '19016'
+source-wordcount: '19006'
 ht-degree: 83%
 
 ---
@@ -162,7 +162,7 @@ Legen Sie die Datei-URI-Option beim Erstellen eines PDF-Dokuments fest. Diese Op
 
 **Festlegen von Rendering-Laufzeitoptionen**
 
-Beim Erstellen eines PDF-Dokuments können Sie Rendering-Laufzeitoptionen festlegen. Obwohl diese Optionen nicht erforderlich sind (im Gegensatz zu PDF-Laufzeitoptionen, die erforderlich sind), können Sie Aufgaben wie die Leistungsverbesserung des Output-Service ausführen. Beispielsweise können Sie den Formularentwurf zwischenspeichern, den der Output-Service verwendet, um dessen Leistung zu verbessern.
+Beim Erstellen eines PDF-Dokuments können Sie Rendering-Laufzeitoptionen festlegen. Obwohl diese Optionen nicht erforderlich sind (im Gegensatz zu PDF-Laufzeitoptionen, die erforderlich sind), können Sie Aufgaben wie die Leistungsverbesserung des Output-Service ausführen. Sie können beispielsweise den Formularentwurf zwischenspeichern, den der Output-Dienst zur Leistungsverbesserung verwendet.
 
 Wenn Sie ein getaggtes Acrobat-Formular als Eingabe verwenden, können Sie die Java- oder die Webservice-API des Output-Service nicht verwenden, um die getaggte Einstellung zu deaktivieren. Wenn Sie versuchen, diese Option programmgesteuert auf `false` festzulegen, ist das PDF-Ergebnisdokument weiterhin getaggt.
 
@@ -1749,7 +1749,7 @@ Sie müssen die folgenden Laufzeitoptionen festlegen, damit der Ausgabe-Service 
 
 **Festlegen von Laufzeitoptionen für das Rendern**
 
-Sie können beim Erstellen mehrerer Dateien Laufzeitoptionen für das Rendern festlegen. Obwohl diese Optionen nicht erforderlich sind (im Gegensatz zu erforderlichen Laufzeitoptionen für die Ausgabe), können Sie damit Aufgaben wie die Verbesserung der Leistung des Ausgabe-Services ausführen. Beispielsweise können Sie die Leistung verbessern, indem Sie den Formularentwurf zwischenspeichern, den der Ausgabe-Service verwendet.
+Sie können beim Erstellen mehrerer Dateien Laufzeitoptionen für das Rendern festlegen. Obwohl diese Optionen nicht erforderlich sind (im Gegensatz zu erforderlichen Laufzeitoptionen für die Ausgabe), können Sie damit Aufgaben wie die Verbesserung der Leistung des Ausgabe-Services ausführen. Sie können beispielsweise den Formularentwurf zwischenspeichern, den der Output-Dienst zur Leistungsverbesserung verwendet.
 
 Wenn der Ausgabe-Service Batch-Datensätze verarbeitet, liest er inkrementell Daten, die mehrere Datensätze enthalten. Das heißt, der Ausgabe-Service liest die Daten in den Speicher ein und gibt sie im Laufe der Verarbeitung des Datensatz-Batches wieder frei. Der Ausgabe-Service lädt Daten inkrementell, wenn eine der zwei Laufzeitoptionen festgelegt ist. Wenn Sie für die Laufzeitoption den Datensatznamen festlegen, liest der Ausgabe-Service die Daten inkrementell. Wenn Sie für die Laufzeitoption die Datensatzebene auf 2 oder höher setzen, liest der Ausgabe-Service die Daten ebenfalls auf inkrementelle Weise.
 
@@ -1998,7 +1998,7 @@ Legen Sie die folgenden PDF-Laufzeitoptionen fest, damit der Ausgabe-Service erf
 
 **Festlegen von Laufzeitoptionen für das Rendern**
 
-Sie können beim Erstellen von PDF-Dateien Laufzeitoptionen für das Rendern festlegen. Obwohl diese Optionen nicht erforderlich sind (im Gegensatz zu PDF-Laufzeitoptionen), können Sie damit Aufgaben wie die Verbesserung der Leistung des Ausgabe-Services ausführen. Beispielsweise können Sie die Leistung verbessern, indem Sie den Formularentwurf zwischenspeichern, den der Ausgabe-Service verwendet.
+Sie können beim Erstellen von PDF-Dateien Laufzeitoptionen für das Rendern festlegen. Obwohl diese Optionen nicht erforderlich sind (im Gegensatz zu PDF-Laufzeitoptionen), können Sie damit Aufgaben wie die Verbesserung der Leistung des Ausgabe-Services ausführen. Sie können beispielsweise den Formularentwurf zwischenspeichern, den der Output-Dienst zur Leistungsverbesserung verwendet.
 
 **Erzeugen eines PDF-Dokuments**
 
@@ -2147,7 +2147,7 @@ Erstellen Sie Suchregeln mithilfe der Ausgabe-API (Web-Service):
 1. Einstellen der Laufzeitoptionen für das Rendern
 
    * Erstellen Sie ein Objekt `RenderOptionsSpec`, indem Sie den Konstruktor verwenden.
-   * Zwischenspeichern des Formularentwurfs, um die Leistung des Output-Dienstes durch Zuweisen des Werts zu verbessern `true` der `RenderOptionsSpec` -Objekt `cacheEnabled` Datenelement.
+   * Zwischenspeichern Sie den Formularentwurf, um die Leistung des Output-Dienstes zu verbessern, indem Sie den Wert zuweisen `true` der `RenderOptionsSpec` -Objekt `cacheEnabled` Datenelement.
 
    >[!NOTE]
    >

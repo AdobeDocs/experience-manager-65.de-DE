@@ -11,10 +11,10 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
 exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '534'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '532'
+ht-degree: 93%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 100%
 
 ## Einführung {#introduction}
 
-In Versionen vor AEM 6.4 wurde Kunden-Code teilweise in JCR-Bereichen bereitgestellt, die bei Aktualisierungen geändert werden konnten. Aus diesem Grund war es üblich, dass formale AEM-Versionen benutzerdefinierten Code, Konfigurationen oder Inhalte überschrieben haben. Darüber hinaus kam es vor, dass durch Kunden vorgenommene Änderungen den AEM-Produktcode oder AEM-Inhalte überschrieben und dadurch die Produktfunktionen beeinträchtigten.
+In Versionen vor AEM 6.4 wurde Kunden-Code teilweise in JCR-Bereichen bereitgestellt, die bei Aktualisierungen geändert werden konnten. Aus diesem Grund war es üblich, dass formale AEM-Versionen benutzerdefinierten Code, Konfigurationen oder Inhalte überschrieben haben. Darüber hinaus wurden durch Kundenänderungen manchmal AEM Produktcode oder -inhalt überschrieben, was die Produktfunktionalität beeinträchtigte.
 
 Durch klare Abgrenzungshierarchien für AEM-Produkt-Code und Kunden-Code können diese Konflikte vermieden werden.
 
@@ -40,7 +40,7 @@ Beim Aktualisieren auf AEM 6.5 wird eine große Teilmenge des Inhalts unter „
 
 ### Leitfaden für die Neustrukturierung {#restructuring-guidance}
 
-Bei der Planung einer Aktualisierung auf AEM 6.5 sollten die folgenden Seiten zur Abschätzung des Arbeitsaufwands herangezogen werden:
+Bei der Planung einer Aktualisierung auf AEM 6.5 sollten die folgenden Seiten pro Lösung referenziert werden, um den Arbeitsaufwand zu bewerten:
 
 * [Repository-Neustrukturierung für alle AEM-Lösungen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
 * [Repository-Neustrukturierung für AEM Sites](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)

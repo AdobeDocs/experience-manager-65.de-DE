@@ -12,10 +12,10 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '2904'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '2902'
+ht-degree: 99%
 
 ---
 
@@ -175,7 +175,7 @@ Nachdem Sie festgestellt haben, ob ein Formular Dateianhänge enthält, können 
 
 >[!NOTE]
 >
->Das Formular muss als PDF-Daten übermittelt werden, um Dateianlagen abzurufen. Wenn das Formular als XML-Daten übermittelt wird, werden keine Dateianlagen übermittelt.
+>Das Formular muss als PDF-Daten gesendet werden, um Dateianlagen abzurufen. Wenn das Formular als XML-Daten übermittelt wird, werden keine Dateianlagen übermittelt.
 
 **Verarbeiten der übermittelten Daten**
 
@@ -222,11 +222,9 @@ Verarbeiten eines übermittelten Formulars mithilfe der Forms-API (Java):
       * Ein Zeichenfolgenwert, der den Wert der `HTTP_USER_AGENT`-Kopfzeile angibt, z. B. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Dieser Parameterwert ist optional.
       * Ein `RenderOptionsSpec`-Objekt, das Laufzeitoptionen speichert.
 
-      Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt aus, das die Ergebnisse der Formularübermittlung enthält.
+     Die `processFormSubmission`-Methode gibt ein `FormsResult`-Objekt aus, das die Ergebnisse der Formularübermittlung enthält.
 
    * Stellen Sie fest, ob der Forms-Dienst die Verarbeitung der Formulardaten abgeschlossen hat, indem Sie die `getAction`-Methode des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `0` zurückgibt, können die Daten verarbeitet werden.
-
-
 
 1. Stellen Sie fest, ob die Formularübermittlung Dateianhänge enthält
 
@@ -247,12 +245,12 @@ Verarbeiten eines übermittelten Formulars mithilfe der Forms-API (Java):
       * Erstellen Sie ein `org.w3c.dom.DocumentBuilder`-Objekt, indem Sie die `newDocumentBuilder`-Methode des `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
       * Erstellen Sie ein `org.w3c.dom.Document`-Objekt, indem Sie die `parse`-Methode des `org.w3c.dom.DocumentBuilder`-Objekts aufrufen und das `java.io.InputStream`-Objekt übergeben.
       * Rufen Sie den Wert jedes Knotens im XML-Dokument ab. Eine Möglichkeit, diese Aufgabe durchzuführen, besteht darin, eine benutzerdefinierte Methode zu erstellen, die zwei Parameter akzeptiert: das `org.w3c.dom.Document`-Objekt und den Namen des Knotens, dessen Wert Sie abrufen möchten. Diese Methode gibt einen Zeichenfolgewert aus, der den Wert des Knotens darstellt. Im folgenden Code-Beispiel wird diese benutzerdefinierte Methode `getNodeText` genannt. Der Hauptteil dieser Methode wird angezeigt.
+
    * Wenn der Dateninhalt vom Typ `application/pdf` ist, erstellen Sie eine Anwendungslogik, um die übermittelten PDF-Daten als PDF-Datei zu speichern.
 
       * Erstellen Sie ein `com.adobe.idp.Document`-Objekt, indem Sie die `getOutputContent`-Methode des `FormsResult`-Objekts aufrufen.
       * Erstellen Sie ein `java.io.File`-Objekt mithilfe seines öffentlichen Konstruktors. Stellen Sie sicher, dass Sie PDF als Dateinamenerweiterung angeben.
       * Füllen Sie die PDF-Datei, indem Sie die `copyToFile`-Methode des `com.adobe.idp.Document`-Objekts aufrufen und das `java.io.File`-Objekt übergeben.
-
 
 **Siehe auch**
 
@@ -302,10 +300,9 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms-API (Web-Dienst):
       * Ein leeres `MyArrayOf_xsd_anyTypeHolder`-Objekt, das von der Methode gefüllt wird. Dieser Parameter wird zum Speichern von Dateianhängen verwendet, die zusammen mit dem Formular gesendet werden.
       * Ein leeres `FormsResultHolder`-Objekt, das von der Methode mit dem gesendeten Formular gefüllt wird.
 
-      Die `processFormSubmission`-Methode füllt den `FormsResultHolder`-Parameter mit den Ergebnissen der Formularübermittlung.
+     Die `processFormSubmission`-Methode füllt den `FormsResultHolder`-Parameter mit den Ergebnissen der Formularübermittlung.
 
    * Stellen Sie fest, ob der Forms-Service die Verarbeitung der Formulardaten abgeschlossen hat, indem Sie die `getAction`-Methode des `FormsResult`-Objekts aufrufen. Wenn diese Methode den Wert `0` zurückgibt, sind die Formulardaten zur Verarbeitung bereit. Sie können ein `FormsResult`-Objekt erhalten, indem Sie den Wert des `value`-Datenelements des `FormsResultHolder`-Objekts abrufen.
-
 
 1. Stellen Sie fest, ob die Formularübermittlung Dateianhänge enthält
 
@@ -322,6 +319,7 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms-API (Web-Dienst):
       * Erstellen Sie ein `org.w3c.dom.DocumentBuilder`-Objekt, indem Sie die `newDocumentBuilder`-Methode des `org.w3c.dom.DocumentBuilderFactory`-Objekts aufrufen.
       * Erstellen Sie ein `org.w3c.dom.Document`-Objekt, indem Sie die `parse`-Methode des `org.w3c.dom.DocumentBuilder`-Objekts aufrufen und das `java.io.InputStream`-Objekt übergeben.
       * Rufen Sie den Wert jedes Knotens im XML-Dokument ab. Eine Möglichkeit, diese Aufgabe durchzuführen, besteht darin, eine benutzerdefinierte Methode zu erstellen, die zwei Parameter akzeptiert: das `org.w3c.dom.Document`-Objekt und den Namen des Knotens, dessen Wert Sie abrufen möchten. Diese Methode gibt einen Zeichenfolgewert aus, der den Wert des Knotens darstellt. Im folgenden Code-Beispiel wird diese benutzerdefinierte Methode `getNodeText` genannt. Der Hauptteil dieser Methode wird angezeigt.
+
    * Wenn der Dateninhalt vom Typ `application/pdf` ist, erstellen Sie eine Anwendungslogik, um die übermittelten PDF-Daten als PDF-Datei zu speichern.
 
       * Erstellen Sie ein `BLOB`-Objekt, indem Sie die `getOutputContent`-Methode des `FormsResult`-Objekts aufrufen.
@@ -329,7 +327,6 @@ Verarbeiten Sie ein gesendetes Formular mit der Forms-API (Web-Dienst):
       * Erstellen Sie ein `java.io.File`-Objekt, indem Sie seinen öffentlichen Konstruktor verwenden. Stellen Sie sicher, dass Sie PDF als Dateinamenerweiterung angeben.
       * Erstellen Sie ein `java.io.FileOutputStream`-Objekt, indem Sie seinen Konstruktor verwenden und das `java.io.File`-Objekt übergeben.
       * Füllen Sie die PDF-Datei, indem Sie die `write`-Methode des `java.io.FileOutputStream`-Objekts aufrufen und das Byte-Array übergeben.
-
 
 **Siehe auch**
 

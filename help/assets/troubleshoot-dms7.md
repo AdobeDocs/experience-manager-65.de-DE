@@ -12,10 +12,10 @@ role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
-source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1397'
-ht-degree: 74%
+source-wordcount: '1395'
+ht-degree: 75%
 
 ---
 
@@ -50,7 +50,7 @@ Anhand der folgenden Asset-Eigenschaften können Sie in CRXDE Lite prüfen, ob A
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | **`a\|364266`** | Allgemeiner Indikator dafür, dass der Knoten mit Dynamic Media verknüpft ist. |
 | `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **PublishComplete** oder Fehlertext | Status des Hochladens der Assets in Dynamic Media. |
-| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Muss ausgefüllt werden, um URLs für Remote-Assets von Dynamic Media zu generieren. |
+| `<object_node>/jcr:content/metadata/dam:scene7File` | **myCompany/myAssetID** | Muss ausgefüllt werden, um URLs zu Remote-Assets von Dynamic Media zu generieren. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | **Erfolg** oder **fehlgeschlagen:`<error text>`** | Synchronisierungsstatus für Sets (Rotationssets, Bildsets usw.), Bildvorgaben, Viewer-Vorgaben oder Imagemap-Updates für ein Asset oder Bilder, die bearbeitet wurden. |
 
 ### Protokollierung der Synchronisierung {#synchronization-logging}

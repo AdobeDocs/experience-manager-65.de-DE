@@ -6,10 +6,10 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1620'
-ht-degree: 61%
+source-wordcount: '1616'
+ht-degree: 59%
 
 ---
 
@@ -47,13 +47,13 @@ Beachten Sie beim Umbenennen der Quickstart-JAR-Datei die folgenden Regeln:
 
 Wenn Sie Oracle Java 11 (oder generell neuere Java-Versionen als 8) verwenden, müssen beim Starten von AEM zusätzliche Schalter zur Befehlszeile hinzugefügt werden.
 
-* Die folgenden `-add-opens`-Schalter müssen hinzugefügt werden, um entsprechende Reflexions-Warnmeldungen beim Zugriff auf `stdout.log` zu verhindern
+* Folgendes - `-add-opens` -Switches müssen hinzugefügt werden, um entsprechende Reflektionszugriffswarnungen in der `stdout.log`
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* Darüber hinaus müssen Sie den Schalter `-XX:+UseParallelGC` verwenden, um potenzielle Leistungsprobleme zu minimieren.
+* Darüber hinaus müssen Sie die `-XX:+UseParallelGC` umschalten, um potenzielle Leistungsprobleme zu vermeiden.
 
 Nachfolgend finden Sie ein Beispiel dafür, wie die zusätzlichen JVM-Parameter aussehen sollten, wenn Sie AEM auf Java 11 starten:
 

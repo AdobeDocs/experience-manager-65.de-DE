@@ -11,10 +11,10 @@ role: User, Admin
 mini-toc-levels: 3
 exl-id: 56009925-1a36-48b5-b96c-ec2e468da106
 feature: Video
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
-workflow-type: ht
-source-wordcount: '1563'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1559'
+ht-degree: 89%
 
 ---
 
@@ -30,10 +30,10 @@ Die Dynamic Media Classic-Videointegration erweitert die Reichweite optimierter 
 
 ## Informationen zu FFMPEG und Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-Die Grundlage des standardmäßigen Videokodierungsprozesses ist die Verwendung der FFMPEG-basierten Integration mit Videoprofilen. Aus diesem Grund enthält der Standard-Aufnahme-Workflow von DAM die folgenden ffmpeg-basierten Workflow-Schritte:
+Die Grundlage des standardmäßigen Videokodierungsprozesses ist die Verwendung der FFMPEG-basierten Integration mit Videoprofilen. Daher enthält der vordefinierte DAM-Aufnahme-Workflow die folgenden beiden ffmpeg-basierten Workflow-Schritte:
 
 * FFMPEG-Miniaturen
-* FFMPEG-Kodierung
+* FFMPEG-Codierung
 
 Durch Aktivierung und Konfiguration der Dynamic Media Classic-Integration werden diese beiden Workflow-Schritte im standardmäßigen Aufnahme-Workflow von DAM nicht automatisch entfernt oder deaktiviert. Wenn Sie die FFMPEG-basierte Videokodierung in Adobe Experience Manager bereits nutzen, ist es wahrscheinlich, dass FFMPEG in Ihren Authoring-Umgebungen bereits installiert ist. In diesem Fall würde ein Video, das über DAM aufgenommen wurde, zweimal kodiert werden: einmal durch den FFMPEG-Kodierer und einmal durch die Dynamic Media Classic-Integration.
 
@@ -44,18 +44,18 @@ Wenn Sie die FFMPEG-basierte Videokodierung in Experience Manager konfiguriert u
 Die folgenden Formate werden für die Scene7-Videokomponente unterstützt:
 
 * F4V H.264
-* H.264 (.mp4)
+* MP4 H.264
 
 ## Festlegen eines Speicherorts für hochgeladene Videos {#deciding-where-to-upload-your-video}
 
-Der Speicherort für hochgeladene Videos hängt von folgenden Faktoren ab:
+Die Entscheidung, wo Sie Ihre Video-Assets hochladen können, hängt von Folgendem ab:
 
-* Benötigen Sie für das Video-Asset einen Workflow?
-* Benötigen Sie für das Video-Asset eine Versionskontrolle?
+* Benötigen Sie einen Workflow für das Video-Asset?
+* Benötigen Sie eine Versionskontrolle für das Video-Asset?
 
-Falls Sie eine der Fragen mit „ja“ beantworten können, laden Sie Ihr Video direkt in Adobe DAM hoch. Lautet die Antwort auf beide Fragen „nein“, sollten Sie Ihr Video direkt in Dynamic Media Classic hochladen. Der Workflow für die einzelnen Szenarien wird im folgenden Abschnitt beschrieben.
+Wenn Sie eine oder beide Fragen mit „Ja“ beantworten können, laden Sie Ihr Video direkt in Adobe DAM hoch. Lautet die Antwort auf beide Fragen „nein“, sollten Sie Ihr Video direkt in Dynamic Media Classic hochladen. Der Workflow für die einzelnen Szenarien wird im folgenden Abschnitt beschrieben.
 
-### Wenn Sie Ihr Video direkt in Adobe DAM hochladen {#if-you-are-uploading-your-video-directly-to-adobe-dam}
+### Wenn Sie Ihr Video direkt auf Adobe DAM hochladen {#if-you-are-uploading-your-video-directly-to-adobe-dam}
 
 Wenn Sie einen Workflow oder eine Versionierung für Ihre Assets benötigen, laden Sie sie zuerst in Adobe DAM hoch. Der folgende Workflow wird empfohlen:
 
@@ -90,7 +90,7 @@ Wenn Sie keinen Workflow und keine Versionierung für Ihre Assets benötigen, la
    >
    >Adobe empfiehlt, entweder beide adaptive Videosets bei der Konfiguration der universellen Vorgaben oder die Option **[!UICONTROL Adaptive Videokodierung]** auszuwählen.
 
-1. Die ausgewählten Kodierungsprofile werden automatisch auf alle Videos angewendet, die in den CQ DAM-Zielordner, den Sie für diese Scene7-Cloud-Konfiguration einrichten, hochgeladen werden. Sie können mehrere Scene7-Cloud-Konfigurationen mit verschiedenen Zielordnern einrichten, um nach Bedarf verschiedene Kodierungsprofile anzuwenden.
+1. Die ausgewählten Kodierungsprofile werden automatisch auf alle Videos angewendet, die in den für diese Scene7-Cloud-Konfiguration eingerichteten CQ DAM-Zielordner hochgeladen wurden. Sie können mehrere Scene7-Cloud-Konfigurationen mit verschiedenen Zielordnern einrichten, um bei Bedarf unterschiedliche Kodierungsprofile anzuwenden.
 
 ## Aktualisieren von Viewer- und Kodierungsvorgaben {#updating-viewer-and-encoding-presets}
 
@@ -131,13 +131,13 @@ Es wird zwar empfohlen, zum Abspielen von Scene7-Videos die Scene7-Videokomponen
 
 In der folgenden Tabelle finden Sie einen Vergleich der unterstützen Funktionen der Experience Manager-Foundation-Videokomponente und der Scene7-Videokomponente:
 
-|  | Experience Manager-Foundation-Video | Scene7 Video |
+|   | Experience Manager-Foundation-Video | Scene7-Video |
 |---|---|---|
-| Ansatz | HTML5 hat Priorität. Flash dient nur zum Ausweichen bei Nicht-HTML5-Inhalten. | Flash auf den meisten Desktopgeräten HTML5 kommt auf Mobilgeräten und Tablets zum Einsatz. |
+| Ansatz | HTML5 als erster Ansatz. Flash dient nur als Ausweichlösung bei Nicht-HTML5-Inhalten. | Flash auf den meisten Desktopgeräten HTML5 wird für Mobilgeräte und Tablets verwendet. |
 | Bereitstellung | Progressiv | Adaptives Streaming |
-| Nachverfolgung | Ja | Ja |
+| Tracking | Ja | Ja |
 | Erweiterbarkeit | Ja | Nein |
-| Mobile Videos | Ja | Ja |
+| Mobile-Video | Ja | Ja |
 
 ### Setup {#setting-up}
 
@@ -155,21 +155,21 @@ Die verschiedenen Videokodierungsmethoden werden anhand der S7-Kodierungsvorgabe
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
-1. Bearbeiten Sie das neue Videoprofil. Wählen Sie zuerst die Cloud-Konfiguration aus. Wählen Sie anschließend dieselbe Kodierungsvorlage aus, die Sie bereits in der Cloud-Konfiguration ausgewählt haben.
+1. Bearbeiten Sie das neue Videoprofil. Wählen Sie zuerst die Cloud-Konfiguration aus. Wählen Sie dann dieselbe Codierungsvorgabe aus wie in der Cloud-Konfiguration.
 
    ![chlimage_1-367](assets/chlimage_1-367.png)
 
    | Eigenschaft | Beschreibung |
    |---|---|
    | Scene7-Cloud-Konfiguration | Die Cloud-Konfiguration, die für die Codierungsvorlagen verwendet werden soll |
-   | Scene7-Kodierungsvorlage | Die Kodierungsvorlage, die diesem Videoprofil zugeordnet werden soll |
-   | HTML5-Videotyp | Mit dieser Eigenschaft können Sie den Wert der Typeigenschaft des HTML5-Videoquellelements festlegen. Diese Information wird nicht von den S7-Kodierungsvorlagen bereitgestellt, sie ist jedoch erforderlich, um die Videos anhand des HTML5-Videoelements richtig zu rendern. Eine Liste für gängige Formate wird bereitgestellt, kann jedoch für andere Formate überschrieben werden. |
+   | Scene7-Kodierungsvorgabe | Die Codierungsvorgabe, mit der dieses Videoprofil verknüpft werden soll. |
+   | HTML5-Videotyp | Mit dieser Eigenschaft können Sie den Wert der Typeigenschaft des HTML5-Videoquellelements festlegen. Diese Informationen werden nicht von den S7-Kodierungsvorgaben bereitgestellt, sind aber für die korrekte Wiedergabe der Videos mithilfe des HTML5-Videoelements erforderlich. Eine Liste für gängige Formate wird bereitgestellt, kann jedoch für andere Formate überschrieben werden. |
 
    Wiederholen Sie diesen Schritt für alle in der Cloud-Konfiguration ausgewählten Kodierungsvorgaben, die Sie in der Videokomponente verwenden möchten.
 
 #### Konfigurieren des Designs {#configuring-design}
 
-Die **[!UICONTROL Foundation]**-Videokomponente muss darüber informiert sein, welche Videoprofile verwendet werden sollen, damit sie die Videoquellenliste erstellen kann. Öffnen Sie das Dialogfeld für das Design von Videokomponenten und konfigurieren Sie das Design der Komponenten für die Nutzung der neuen Videoprofile.
+Die **[!UICONTROL Foundation-Video]** muss wissen, welche Videoprofile zum Erstellen der Videoquellenliste verwendet werden sollen. Öffnen Sie das Dialogfeld für das Design von Videokomponenten und konfigurieren Sie das Design der Komponenten für die Nutzung der neuen Videoprofile.
 
 >[!NOTE]
 >
@@ -177,7 +177,7 @@ Die **[!UICONTROL Foundation]**-Videokomponente muss darüber informiert sein, w
 
 >[!NOTE]
 >
->Bei Änderungen am Design ist eine Aktivierung des Designs erforderlich, damit es für die Veröffentlichung übernommen wird.
+>Änderungen am Entwurf erfordern die Aktivierung des Designs, damit er bei der Veröffentlichung wirksam wird.
 
 1. Öffnen Sie das Dialogfeld für das Design der **[!UICONTROL Foundation]**-Videokomponente und wechseln Sie auf die Registerkarte **[!UICONTROL Profile]**. Löschen Sie anschließend die vordefinierten Profile und fügen Sie die neuen S7-Videoprofile hinzu. Die Reihenfolge der Profilliste im Design-Dialogfeld definiert die Reihenfolge des Videoquellenelements beim Rendern.
 1. Bei Browsern, die kein HTML5 unterstützen, ermöglicht die Videokomponente ein Ausweichen auf Flash. Öffnen Sie das Dialogfeld für das Design der Videokomponenten und wechseln Sie auf die Registerkarte **[!UICONTROL Flash]**. Konfigurieren Sie die Einstellungen des Flash-Players und weisen Sie ein Ersatzprofil für den Flash-Player zu.
@@ -185,7 +185,7 @@ Die **[!UICONTROL Foundation]**-Videokomponente muss darüber informiert sein, w
 #### Checkliste {#checklist}
 
 1. Erstellen Sie eine S7-Cloud-Konfiguration. Vergewissern Sie sich, dass die Videokodierungsvorgaben festgelegt sind und das Importprogramm ausgeführt wird.
-1. Erstellen Sie ein S7-Videoprofil für jede in der Cloud-Konfiguration ausgewählte Videokodierungsvorlage.
+1. Erstellen Sie für jede in der Cloud-Konfiguration ausgewählte Videokodierungsvorgabe ein S7-Videoprofil.
 1. Die Videoprofile müssen aktiviert sein.
 1. Konfigurieren Sie das Design der **[!UICONTROL Foundation]**-Videokomponente auf Ihrer Seite.
 1. Aktivieren Sie das Design, sobald Sie mit Ihren Design-Änderungen fertig sind.

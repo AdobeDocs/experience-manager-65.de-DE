@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1248'
 ht-degree: 2%
 
 ---
@@ -25,7 +25,7 @@ Die **App verwalten** Die Kachel im App-Dashboard bietet die Möglichkeit, Detai
 
 ## Grundlegendes zur Kachel &quot;App verwalten&quot; {#understanding-the-manage-app-tile}
 
-Sie können einen Drilldown für jede Kachel im **App verwalten** Kachel zum Anzeigen oder Bearbeiten von Details durch Klicken auf das Symbol &quot;...&quot; unten rechts.
+Sie können einen Drilldown für jede Kachel im **App verwalten** -Kachel zum Anzeigen oder Bearbeiten von Details durch Klicken auf das Symbol &quot;...&quot;in der rechten unteren Ecke.
 
 ### Registerkarte &quot;Standard&quot; {#the-basic-tab}
 
@@ -52,7 +52,7 @@ Jeder Appstore von Anbietern - z. B. Apple App Store oder Google Play Store - be
 >
 >Die AEM Verify-App bietet die Möglichkeit, Screenshots in AEM direkt an Ihre App-Details zu senden.
 >
->Siehe [Mobil-Schnellstart für AEM Verifizierung](/help/mobile/phonegap-mobile-quickstart.md) für weitere Details.
+>Siehe [Mobile Schnellstart für AEM Verifizierung](/help/mobile/phonegap-mobile-quickstart.md) für weitere Details.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -98,7 +98,7 @@ Bei Plattformen, die von AEM nicht verstanden werden, ist es für einen AEM-Entw
 
 #### iOS-Metadaten {#ios-metadata}
 
-Für den Apple AppStore sind zusätzliche Metadaten erforderlich, um Ihre App zur Verteilung übermitteln zu können. Der Abschnitt &quot;iOS-Metadaten&quot;versucht, die erforderlichen Informationen zu erfassen, die vom iTMSTransporter-Tool von Apple zum Veröffentlichen der Metadaten in dem zugehörigen Apple-Entwicklerkonto verwendet werden können.
+Der Apple AppStore erfordert zusätzliche Metadaten, um Ihre Anwendung zur Verteilung übermitteln zu können. Der Abschnitt &quot;iOS-Metadaten&quot;versucht, die erforderlichen Informationen zu erfassen, die vom iTMSTransporter-Tool von Apple zum Veröffentlichen der Metadaten in dem zugehörigen Apple-Entwicklerkonto verwendet werden können.
 
 Um die Apple-spezifischen Metadaten abzurufen, müssen Sie zunächst Ihre Anwendung in [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Beim Erstellen Ihrer Anwendung generiert Apple Metadaten, die für den iOS-Metadatenabschnitt erforderlich sind, wenn Sie das Apple iTMSTransporter-Tool zum Überprüfen und Hochladen der Metadaten auf itunesconnect.apple.com verwenden möchten. Wenn Sie nur die zu erfassenden Metadaten abrufen möchten, müssen Sie nicht unbedingt die iOS-spezifischen Metadaten ausfüllen. Sie können weiterhin die Metadaten exportieren, die die iOS und die gängigen Metadaten zusammenführen, und alle Screenshots in eine ZIP-Datei erfassen, die jederzeit heruntergeladen werden kann.
 
@@ -120,7 +120,7 @@ Die Exportfunktion bietet eine praktische Möglichkeit, die Screenshots und Meta
 
 Eine der wichtigsten Funktionen von AEM Apps ist die Möglichkeit, mit ContentSync neue Inhalte von einer Mobile App anzufordern, bei denen es sich bei Inhalten um HTML-Ressourcen, Seiten, Video, Bilder, Text usw. handeln kann. Sobald ein Inhaltsautor Inhalte aktualisiert und dann veröffentlicht hat, stellt der Server die Inhaltsaktualisierung für die Mobile App zum Herunterladen bereit.
 
-Die Eigenschaft &quot;Content Update Server URL&quot;ist die URL, die auf eine Veröffentlichungsinstanz verweisen muss. entweder direkt oder über den Dispatcher oder das CDN. Das Format der URL lautet einfach:
+Die Eigenschaft &quot;Content Update Server URL&quot;ist die URL, die auf eine Veröffentlichungsinstanz verweisen muss, entweder direkt oder über den Dispatcher oder CDN. Das Format der URL lautet einfach:
 
 `https://[hostname]:[port]`
 

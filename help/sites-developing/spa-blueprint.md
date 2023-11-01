@@ -1,19 +1,15 @@
 ---
 title: SPA-Blueprint
-seo-title: SPA Blueprint
-description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA-Framework erfüllen sollte, um in AEM bearbeitbare SPA-Komponenten zu implementieren.
-seo-description: This document describes the general, framework-independent contract that any SPA framework should fulfill in order to implement editable SPA components within AEM.
-uuid: 48f2d415-ec34-49dc-a8e1-6feb5a8a5bbe
+description: In diesem Dokument wird der allgemeine, Framework-unabhängige Vertrag beschrieben, den jedes SPA Framework erfüllen sollte, um bearbeitbare SPA in AEM zu implementieren.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2080'
-ht-degree: 94%
+source-wordcount: '2074'
+ht-degree: 96%
 
 ---
 
@@ -27,11 +23,11 @@ Damit die Autorin oder der Autor mit dem AEM-SPA-Editor den Inhalt einer SPA bea
 
 ## Einführung {#introduction}
 
-In diesem Dokument wird der Generalvertrag beschrieben, den jedes SPA-Framework erfüllen sollte (d. h. die Art der AEM-Support-Ebene), damit sich in AEM bearbeitbare SPA-Komponenten implementieren lassen.
+In diesem Dokument wird der allgemeine Vertrag beschrieben, den jedes SPA Framework erfüllen sollte (d. h. die Art AEM Unterstützungsschicht), um bearbeitbare SPA in AEM zu implementieren.
 
 >[!NOTE]
 >
->Die folgenden Anforderungen sind Framework-unabhängig. Wenn diese Anforderungen erfüllt sind, kann eine Framework-spezifische Schicht aus Modulen, Komponenten und Diensten bereitgestellt werden.
+>Die folgenden Anforderungen sind Framework-unabhängig. Wenn diese Anforderungen erfüllt sind, kann eine Framework-spezifische Ebene aus Modulen, Komponenten und Diensten bereitgestellt werden.
 >
 >**Für die React- und Angular-Frameworks werden diese Anforderungen in AEM bereits erfüllt.** Die Anforderungen im vorliegenden Blueprint sind nur relevant, wenn Sie ein anderes Framework zur Verwendung mit AEM implementieren möchten.
 
@@ -61,7 +57,7 @@ Alle im Modell vorhandenen Elemente enthalten ein Feld `:type`, das einen AEM-Re
 
 #### Dynamisches Modell für die Komponentenzuordnung {#dynamic-model-to-component-mapping}
 
-Weitere Informationen dazu, wie die Zuordnung des dynamischen Modells zu Komponenten im JavaScript SPA SDK erfolgt, finden Sie AEM Artikel . [Dynamisches Modell für die Komponentenzuordnung für SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Weitere Informationen dazu, wie das dynamische Modell für die Komponentenzuordnung im JavaScript SPA SDK für AEM funktioniert, finden Sie im Artikel [Dynamisches Modell für die Komponentenzuordnung bei SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Framework-spezifische Schicht {#framework-specific-layer}
 
@@ -73,7 +69,7 @@ Das restliche Dokument beschreibt die Anforderungen dieser zwischengelagerten Fr
 
 ### Seitenmodell {#page-model}
 
-Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird verwendet, um SPA Komponenten zuzuordnen und zu instanziieren. Die SPA-Entwickler erstellen SPA-Komponenten, die sie den AEM-Komponenten zuordnen. Dazu verwenden sie den Ressourcentyp (oder Pfad zur AEM-Komponente) als eindeutigen Schlüssel.
+Die Inhaltsstruktur der Seite wird in AEM gespeichert. Das Modell der Seite wird verwendet, um SPA-Komponenten zuzuordnen und zu instanziieren. Die SPA-Entwickler erstellen SPA-Komponenten, die sie den AEM-Komponenten zuordnen. Dazu verwenden sie den Ressourcentyp (oder Pfad zur AEM-Komponente) als eindeutigen Schlüssel.
 
 Die SPA-Komponenten müssen mit dem Seitenmodell synchron sein und bei Änderungen des Inhalts entsprechend aktualisiert werden. Sie müssen ein Muster verwenden, das dynamische Komponenten nutzt, um Komponenten entsprechend der vorgegebenen Seitenmodellstruktur spontan zu instanziieren.
 
@@ -236,7 +232,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 Die Projektkomponenten müssen mindestens die folgenden Datenattribute generieren, damit der Editor mit ihnen interagieren kann.
 
-* `data-cq-data-path`: Relativer Pfad der Komponente, wie er von der `PageModel` (z. B. `"root/responsivegrid/image"`). Dieses Attribut sollte nicht zu Seiten hinzugefügt werden.
+* `data-cq-data-path`: Relativer Pfad der Komponente, wie er von der `PageModel` (beispielsweise `"root/responsivegrid/image"`). Dieses Attribut sollte nicht zu Seiten hinzugefügt werden.
 
 Zusammenfassend muss eine Projektkomponente den folgenden Vertrag respektieren, damit sie vom Seiteneditor als bearbeitbar erkannt wird:
 

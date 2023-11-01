@@ -5,10 +5,10 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: a07765f95f01f05a30dce14138f75e7edbe94ae2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1740'
-ht-degree: 97%
+source-wordcount: '1727'
+ht-degree: 93%
 
 ---
 
@@ -62,9 +62,9 @@ Gehen Sie wie folgt vor, um die Ereignisse zu abonnieren:
 1. Verknüpfte Ordnerstruktur: Geben Sie durch Kommas getrennte Werte ein. Jeder Wert sollte `DE:<some-project-custom-form-field>`, Portfolio, Programm, Jahr, Name oder ein „literaler Zeichenfolgenwert“ sein (letzteres in Anführungszeichen). Er ist derzeit auf Portfolio,Programm,Jahr,DE:Projekttyp,Name festgelegt.
 1. Das Kontrollkästchen „Verknüpfte Ordnertitel in Workfront unter Verwendung der Namen der Ordnerstruktur erstellen“ sollte aktiviert werden, wenn der Titel des Ordners in Workfront alle Ordner in der Struktur enthalten soll. Andernfalls wird der Titel des letzten Ordners verwendet.
 1. Im Mehrfachfeld „Unterordner“ können Sie eine Liste von Ordnern angeben, die als Unterordner des verknüpften Ordners erstellt werden sollen.
-1. Projektstatus: Wählen Sie den Status aus, auf den das Projekt gesetzt werden muss, um den verknüpften Ordner zu erstellen.
-1. Verknüpften Ordner in Projekten mit Portfolio erstellen: Liste der Portfolios, denen das Projekt angehören muss, damit der verknüpfte Ordner erstellt werden kann. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
-1. Verknüpften Ordner in Projekten mit benutzerdefiniertem Formularfeld erstellen: Benutzerdefiniertes Formularfeld und sein entsprechender Wert, den das Projekt haben muss, damit der verknüpfte Ordner erstellt werden kann. Diese Konfiguration wird ignoriert, wenn sie leer gelassen wird. Wählen Sie `CUSTOM FORMS: Create DAM Linked Folder` als Feld und geben Sie `Yes` als Wert ein.
+1. Projektstatus: Wählen Sie den Status des Projekts aus, um den verknüpften Ordner zu erstellen.
+1. Erstellen Sie einen verknüpften Ordner in Projekten mit Portfolio: Liste der Portfolios, zu denen das Projekt gehören muss, um den verknüpften Ordner zu erstellen. Lassen Sie diese Liste leer, wenn der verknüpfte Ordner für alle Projektportfolios erstellt werden soll.
+1. Erstellen Sie einen verknüpften Ordner in Projekten mit benutzerdefinierten Formularfeldern: Benutzerdefiniertes Formularfeld und der entsprechende Wert, den das Projekt zum Erstellen des verknüpften Ordners benötigen muss. Diese Konfiguration wird ignoriert, wenn sie leer gelassen wird. Wählen Sie `CUSTOM FORMS: Create DAM Linked Folder` als Feld und geben Sie `Yes` als Wert ein.
 1. Klicken Sie auf „Automatische Erstellung verknüpfter Ordner aktivieren“. Wenn Sie zur Registerkarte „Ereignisabonnements“ zurückkehren, sehen Sie, dass es jetzt ein Erstellungsereignis gibt.
 
 ![Konfiguration verknüpfter Ordner](/help/assets/assets/wf-linked-folder-config.png)

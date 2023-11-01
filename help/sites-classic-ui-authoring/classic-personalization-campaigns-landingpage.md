@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3333'
-ht-degree: 60%
+source-wordcount: '3329'
+ht-degree: 59%
 
 ---
 
@@ -355,7 +355,7 @@ Damit Sie Ihr Einstiegsseitendesign importieren können, müssen Sie eine Import
 
 >[!NOTE]
 >
->Standardmäßig kann eine Import-Tool-Seite nur unter Kampagnen erstellt werden. Sie können diese Vorlage jedoch auch überlagern, um eine Einstiegsseite unter `/content/mysite` zu erstellen.
+>Standardmäßig kann eine Importtool-Seite nur unter Kampagnen erstellt werden. Sie können diese Vorlage jedoch auch überlagern, um eine Landingpage unter `/content/mysite`.
 
 So erstellen Sie eine neue Landingpage:
 
@@ -389,7 +389,7 @@ Wenn Sie das Designpaket fertig haben, beschreiben die folgenden Schritte, wie S
 
 >[!NOTE]
 >
->Nach dem Importieren wird das Markup aus Sicherheitsgründen bereinigt, um den Import und die Veröffentlichung von ungültigem Markup zu verhindern. Dabei wird davon ausgegangen, dass das reine HTML-Markup und alle anderen Elementformen wie Inline-SVG oder Webkomponenten herausgefiltert werden.
+>Beim Import wird das Markup aus Sicherheitsgründen bereinigt, um den Import und die Veröffentlichung von ungültigem Markup zu vermeiden. Dabei wird davon ausgegangen, dass das reine HTML-Markup und alle anderen Elementformen wie Inline-SVG oder Webkomponenten herausgefiltert werden.
 
 >[!NOTE]
 >

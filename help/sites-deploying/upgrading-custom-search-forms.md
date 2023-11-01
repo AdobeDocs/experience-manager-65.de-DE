@@ -11,41 +11,41 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
-source-wordcount: '1685'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1683'
+ht-degree: 81%
 
 ---
 
 # Upgrades von benutzerdefinierten Suchformularen{#upgrading-custom-search-forms}
 
-Der in AEM 6.2 verwendete Speicherort von benutzerdefinierten Suchformularen im Repository wurde geändert. Nach dem Upgrade werden diese von ihrem Speicherort in 6.1 unter:
+In AEM 6.2 hat sich der Speicherort, an dem die benutzerdefinierte Search Forms im Repository gespeichert ist, geändert. Nach dem Upgrade werden diese von ihrem Speicherort in 6.1 unter:
 
 * /apps/cq/gui/content/facets
 
-an diesen neuen Speicherort verschoben:
+an einen neuen Speicherort unter:
 
 * /conf/global/settings/cq/search/facets
 
 Daher müssen nach einem Upgrade manuelle Anpassungen vorgenommen werden, damit die Formulare weiterhin funktionieren.
 
-Dies gilt für neue Suchformulare und Standardformulare, die benutzerdefiniert wurden.
+Dies gilt sowohl für neue Search Forms als auch für standardmäßige Forms, die angepasst wurden.
 
-Weitere Informationen finden Sie in der Dokumentation zu [Suchfacetten](/help/assets/search-facets.md).
+Weitere Informationen finden Sie in der Dokumentation unter [Suchfacetten](/help/assets/search-facets.md).
 
 ## Ändern der Eigenschaft „resourceType“ {#changing-the-resourcetype-property}
 
-Sofern nicht anders angegeben, muss für die meisten Anpassungen nach einem Upgrade die Eigenschaft `sling:resourceType` für die konfigurierten benutzerdefinierten Suchformulare geändert werden. Dieser Schritt ist notwendig, damit die Eigenschaft auf den richtigen Speicherort des Rendering-Skripts verweist.
+Sofern nicht anders angegeben, muss für die meisten Anpassungen nach einem Upgrade die Eigenschaft `sling:resourceType` für die konfigurierten benutzerdefinierten Suchformulare geändert werden. Dies ist erforderlich, damit die Eigenschaft auf den richtigen Speicherort des Rendering-Skripts verweist.
 
-Sie können die Eigenschaft ändern, indem Sie folgende Schritte ausführen:
+Sie können die Eigenschaft wie folgt ändern:
 
 1. Öffnen von CRXDE Lite über `https://server:port/crx/de/index.jsp`
-1. Navigieren Sie zum Speicherort des Knotens, der angepasst werden muss, wie in der Liste mit [benutzerdefinierten Suchformularen](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) unten angegeben.
-1. Klicken Sie auf den Knoten. Klicken Sie im rechten Eigenschaftenfenster auf die Eigenschaft **sling:resourceType** und ändern Sie diese.
-1. Speichern Sie dann die Änderungen und klicken Sie auf die Schaltfläche **Alle speichern**.
+1. Navigieren Sie zum Speicherort des Knotens, der angepasst werden muss, wie in der Liste der [Forms für benutzerdefinierte Suche](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) unten.
+1. Klicken Sie auf den Knoten. Klicken Sie im rechten Eigenschaftenbereich auf und ändern Sie die **sling:resourceType** -Eigenschaft.
+1. Speichern Sie abschließend die Änderungen, indem Sie die **Alle speichern** Schaltfläche.
 
-## Liste der benutzerdefinierten Suchformulare {#list-of-custom-search-forms}
+## Liste der Forms für benutzerdefinierte Suche {#list-of-custom-search-forms}
 
 Nachstehend finden Sie eine Liste aller benutzerdefinierten Suchformulare und der Änderungen, die nach dem Upgrade erforderlich sind. Sie beziehen sich auf die Namen unter `/conf/global/settings/cq/search/facets/sites/items`.
 
@@ -68,7 +68,7 @@ Nachstehend finden Sie eine Liste aller benutzerdefinierten Suchformulare und de
  </tbody>
 </table>
 
-In AEM 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. In Version 6.2 wurde das Volltext-Feld durch OmniSearch ersetzt. Diese Eigenschaft wird programmgesteuert übersprungen und kann entfernt werden.
+In AEM 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. In 6.2 wurde das Volltextfeld durch OmniSearch ersetzt. Diese Eigenschaft wird programmgesteuert übersprungen und kann entfernt werden.
 
 **Aktion:** Entfernen Sie den Knoten vollständig.
 
@@ -77,7 +77,7 @@ In AEM 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. 
 <table>
  <tbody>
   <tr>
-   <td>Knoten im Standard-Suchformular in 6.1</td>
+   <td>Knoten in Standard-Suche von in 6.1</td>
    <td>Nicht zutreffend</td>
   </tr>
   <tr>
@@ -171,7 +171,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
 
 * Stellen Sie sicher, dass Sie die Eigenschaft `listOrder` für den Knoten `analyticspredicate` auf „**8**“ setzen. Dies ist erforderlich, um Konflikte zu vermeiden.
 
-### Datumsbereich-Eigenschaften {#date-range-predicates}
+### Datumsbereichseigenschaften {#date-range-predicates}
 
 <table>
  <tbody>
@@ -211,7 +211,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
  </tbody>
 </table>
 
-**Aktion:** Keine Anpassungen erforderlich.
+**Aktion:** Keine Anpassung.
 
 ### Analytics-Eigenschaft {#analytics-predicate}
 
@@ -257,7 +257,7 @@ Der Seitenstatus wurde durch zwei Options-Eigenschaftsprädikate ersetzt, jeweil
 
 >[!NOTE]
 >
->Hinweis: Anders als in 6.1 wird mit der Eigenschaft „Bereich“ kein Tag mehr in der Suchleiste angezeigt.
+>Hinweis: Im Gegensatz zu 6.1 rendert das Bereichsprädikat kein Tag mehr in der Suchleiste.
 
 ### Options-Eigenschaftsprädikat {#options-property-predicate}
 
@@ -399,7 +399,7 @@ In 6.1 war die standardmäßige Volltexteigenschaft Teil des Suchformulars. In V
 
 ### Dateigrößen-Eigenschaften {#file-size-predicates}
 
-| Knoten im Standard-Suchformular in 6.1 | Dateigröße |
+| Knoten im Standard-Suchformular in 6.1 | filesize |
 |---|---|
 | Ressourcentyp in 6.1 | dam/gui/components/admin/customsearch/searchpredicates/filesizepredicate |
 | Ressourcentyp in 6.2 | dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicate |

@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '9113'
+source-wordcount: '9109'
 ht-degree: 99%
 
 ---
@@ -842,7 +842,7 @@ Suchen Sie mithilfe der Repository-Service-API (Java) nach einer Ressource:
 
 1. Abrufen der Ressourcen aus dem Suchergebnis
 
-   Um die im Suchergebnis enthaltenen Ressourcen abzurufen, iterieren Sie durch die `List` und wandeln jedes Objekt in ein `Resource` um, um seine Informationen zu extrahieren. In diesem Beispiel wird der Name jeder Ressource angezeigt.
+   Um die im Suchergebnis enthaltenen Ressourcen abzurufen, navigieren Sie durch die `List` und jedes Objekt in eine `Resource` , um seine Informationen zu extrahieren. In diesem Beispiel wird der Name jeder Ressource angezeigt.
 
 **Siehe auch**
 

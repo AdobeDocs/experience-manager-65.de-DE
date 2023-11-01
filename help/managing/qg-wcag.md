@@ -2,10 +2,10 @@
 title: Kurzanleitung zu WCAG 2.1
 description: Kurzanleitung zu Web Content Accessibility Guidelines (WCAG) Version 2.1.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 95%
+source-wordcount: '1777'
+ht-degree: 93%
 
 ---
 
@@ -40,7 +40,7 @@ Absicht von WCAG 2.1 ist es, Richtlinien mit folgenden Merkmalen bereitzustellen
 * **Testfähig:** Jede Richtlinie ist so formuliert, dass sie objektiv getestet werden kann, um sicherzustellen, dass eine Gruppe von Fachleuten für Barrierefreiheit generell zustimmt, dass die Richtlinie eingehalten wird. Eine der Herausforderungen bei Richtlinien zur Barrierefreiheit besteht darin, dass einige zwar technisch prüfbar sind, andere jedoch menschliches Urteilsvermögen erfordern, um festzustellen, ob die Richtlinie erfolgreich umgesetzt wurde oder nicht.
 
 * Unterstützung einer **priorisierten und kontextbezogenen Implementierung:**
-Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Darüber hinaus wird das Konzept der *unterstützten Barrierefreiheit* eingeführt. Dadurch können Autoren Entscheidungen dazu treffen, wie sie Web-Technologien am besten nutzen können, die möglicherweise nicht vollständig barrierefrei sind, oder ggf. von Anwendern verlangen, dass sie über spezielle unterstützende Technologien und/oder Browser verfügen, um von Barrierefreiheitsfunktionen zu profitieren.
+Den WCAG 2.1-Richtlinien werden Prioritäten zugewiesen, die sich auf die wahrscheinlichen Auswirkungen der Nichtbeachtung einer Richtlinie auf eine bestimmte Gruppe von Anwendern mit Behinderungen beziehen. Dies ermöglicht es Autoren, eine fundierte Entscheidung zu den wichtigsten Richtlinien für ihre jeweilige Situation zu treffen. Darüber hinaus wird das Konzept der *unterstützten Barrierefreiheit* eingeführt. Auf diese Weise können Autoren Entscheidungen darüber treffen, wie Webtechnologien am besten verwendet werden können, die möglicherweise nicht vollständig barrierefrei sind, oder Benutzer müssen möglicherweise über bestimmte Hilfstechnologien und/oder Browser verfügen, um von den Funktionen für Barrierefreiheit zu profitieren.
 
 Diese Ziele haben die Struktur von WCAG 2.1 wesentlich beeinflusst.
 

@@ -10,18 +10,18 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: f841e3886771fb00eee6e476d7111d4a335a9d51
-workflow-type: ht
-source-wordcount: '260'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '254'
+ht-degree: 54%
 
 ---
 
 # Das CSRF Protection Framework {#the-csrf-protection-framework}
 
-Neben dem Apache Sling Referrer Filter bietet Adobe zudem ein neues CSRF Protection Framework zum Schutz vor dieser Art von Angriffen.
+Zusätzlich zum Apache Sling Referrer Filter bietet Adobe auch ein neues CSRF Protection Framework zum Schutz vor Angriffen dieser Art.
 
-Das Framework verwendet Tokens, um sicherzustellen, dass die Client-Anfrage legitim ist. Die Tokens werden erzeugt, wenn das Formular an den Client gesendet wird, und validiert, wenn das Formular an den Server zurückgesendet wird.
+Das Framework verwendet Tokens, um sicherzustellen, dass die Client-Anfrage legitim ist. Die Token werden generiert, wenn das Formular an den Client gesendet und validiert wird, wenn das Formular an den Server zurückgesendet wird.
 
 >[!NOTE]
 >
@@ -35,14 +35,14 @@ Jede Komponente, die sich auf die Abhängigkeit `granite.jquery` stützt, profit
 
 ### Replizieren des Crypto-Schlüssels {#replicating-crypto-keys}
 
-Um die Token nutzen zu können, müssen Sie die HMAC-Binärdatei auf alle Instanzen in Ihrer Implementierung replizieren. Siehe [Replizieren des HMAC-Schlüssels](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) für weitere Details.
+Um die Token zu nutzen, müssen Sie die HMAC-Binärdatei für alle Instanzen in Ihrer Implementierung replizieren. Siehe [Replizieren des HMAC-Schlüssels](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) für weitere Details.
 
 >[!NOTE]
 >
->Achten Sie darauf, auch die notwendigen [Dispatcher-Konfigurationsänderungen](https://helpx.adobe.com/de/experience-manager/dispatcher/user-guide.html) vorzunehmen, um das CSRF Protection Framework zu verwenden.
+>Stellen Sie sicher, dass Sie auch die erforderlichen [Dispatcher-Konfigurationsänderungen](https://helpx.adobe.com/de/experience-manager/dispatcher/user-guide.html) , um das CSRF Protection Framework zu verwenden.
 
 >[!NOTE]
 >
->Wenn Sie den Manifest-Cache mit Ihrer Web-Anwendung verwenden, stellen Sie sicher, dass Sie „**&amp;ast;**“ zum Manifest hinzufügen, damit das Token die CSRF-Token-Erzeugungsanforderung nicht offline nimmt. Weitere Informationen finden Sie unter diesem [Link](https://www.w3.org/TR/offline-webapps/).
+>Wenn Sie den Manifestcache mit Ihrer Webanwendung verwenden, stellen Sie sicher, dass Sie &quot;**&amp;ast;**&quot;, um sicherzustellen, dass das Token den CSRF-Token-Generierungsaufruf nicht offline nimmt. Weitere Informationen finden Sie unter diesem [Link](https://www.w3.org/TR/offline-webapps/).
 >
 >Weitere Informationen zu CSRF-Angriffen und Möglichkeiten, sie abzuschwächen, finden Sie auf der Seite [Cross-Site Request Forgery OWASP](https://owasp.org/www-community/attacks/csrf).

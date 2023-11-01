@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '753'
-ht-degree: 72%
+source-wordcount: '751'
+ht-degree: 70%
 
 ---
 
@@ -54,7 +54,7 @@ So erstellen Sie eine geschlossene Benutzergruppe:
 
    ![screen_shot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Klicken Sie auf die Schaltfläche **Erstellen** oben rechts, um eine neue Gruppe zu erstellen.
+1. Drücken Sie die **Erstellen** oben rechts, um eine neue Gruppe zu erstellen.
 1. Benennen Sie Ihre neue Gruppe, z. B. `cug_access`.
 
    ![screen_shot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)

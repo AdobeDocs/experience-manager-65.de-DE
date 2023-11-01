@@ -7,10 +7,10 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
-workflow-type: ht
-source-wordcount: '1682'
-ht-degree: 100%
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+workflow-type: tm+mt
+source-wordcount: '1678'
+ht-degree: 98%
 
 ---
 
@@ -117,6 +117,7 @@ Die folgende Matrix verdeutlicht, wann Sie welche Komponente nutzen sollten:
 >[!NOTE]
 >
 >Die Dynamic Media Classic-Videokomponente verwendet standardmäßig das universelle Videoprofil. Sie können jedoch den HTML5-basierten Videoplayer für die Verwendung durch Experience Manager abrufen. Kopieren Sie in Dynamic Media Classic den Einbettungs-Code des vorkonfigurierten HTML5-Videoplayers und fügen Sie ihn in Ihre Experience Manager-Seite ein.
+>
 
 ## Experience Manager-Videokomponente {#aem-video-component}
 
@@ -126,7 +127,7 @@ Auch wenn die Verwendung der Dynamic Media Classic-Videokomponente für die Anze
 
 Die folgende Tabelle bietet einen allgemeinen Vergleich der unterstützten Funktionen zwischen der Experience Manager Foundation-Videokomponente und der Dynamic Media Classic-Videokomponente:
 
-|  | Experience Manager Foundation-Video | Dynamic Media Classic­Video |
+|   | Experience Manager Foundation-Video | Dynamic Media Classic­Video |
 |---|---|---|
 | Ansatz | HTML5 als erster Ansatz. Flash dient nur als Ausweichlösung bei Nicht-HTML5-Inhalten. | Flash auf den meisten Desktopgeräten HTML5 wird für Mobilgeräte und Tablets verwendet. |
 | Bereitstellung | Progressiv | Adaptives Streaming |
@@ -165,7 +166,7 @@ Die verschiedenen Videokodierungen werden entsprechend den in der Dynamic Media 
 
 #### Konfigurieren des Designs {#configuring-design}
 
-Die Foundation-Videokomponente muss darüber informiert sein, welche Videoprofile verwendet werden sollen, damit sie die Videoquellenliste erstellen kann. Öffnen Sie das Design-Dialogfeld der Videokomponenten und konfigurieren Sie das Design der Komponenten für die Nutzung der neuen Videoprofile.
+Die Foundation-Videokomponente muss wissen, welche Videoprofile zum Erstellen der Videoquellenliste verwendet werden sollen. Öffnen Sie das Design-Dialogfeld der Videokomponenten und konfigurieren Sie das Design der Komponenten für die Nutzung der neuen Videoprofile.
 
 >[!NOTE]
 >
@@ -173,7 +174,7 @@ Die Foundation-Videokomponente muss darüber informiert sein, welche Videoprofil
 
 >[!NOTE]
 >
->Bei Änderungen am Design ist eine Aktivierung des Designs erforderlich, damit es für die Veröffentlichung übernommen wird.
+>Änderungen am Entwurf erfordern die Aktivierung des Designs, damit er bei der Veröffentlichung wirksam wird.
 
 1. Öffnen Sie den Designdialog der Foundation-Videokomponente und wechseln Sie auf die Registerkarte **[!UICONTROL Profile]**. Löschen Sie dann die nativen Profile und fügen Sie die neuen Dynamic Media Classic-Videoprofile hinzu. Die Reihenfolge der Profilliste im Design-Dialogfeld definiert die Reihenfolge des Videoquellenelements beim Rendern.
 1. Bei Browsern, die kein HTML5 unterstützen, ermöglicht die Videokomponente ein Ausweichen auf Flash. Öffnen Sie den Designdialog der Videokomponenten und wechseln Sie auf die Registerkarte **[!UICONTROL Flash]**. Konfigurieren Sie die Einstellungen des Flash-Players und weisen Sie ein Ersatzprofil für den Flash-Player zu.
