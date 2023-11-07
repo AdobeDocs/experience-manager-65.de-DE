@@ -1,6 +1,6 @@
 ---
 title: AEM Forms JEE-Patch-Installationsprogramm
-description: Erfahren Sie, wie Sie mit dem AEM Forms JEE Patch Installer Probleme in AEM 6.5 Forms-Komponenten beheben können.
+description: Erfahren Sie, wie Sie mit dem AEM Forms JEE Patch-Installationsprogramm Probleme in AEM 6.5 Forms-Komponenten beheben können.
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
@@ -8,7 +8,7 @@ exl-id: 6b17472b-9226-4319-b305-4dba862d21af
 source-git-commit: f0b59ff25f49f5ca12bc6966882f68b5231a9511
 workflow-type: tm+mt
 source-wordcount: '535'
-ht-degree: 84%
+ht-degree: 100%
 
 ---
 
@@ -16,7 +16,7 @@ ht-degree: 84%
 
 >[!NOTE]
 >
->[Kontaktieren Sie den Support](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support), um weitere Informationen oder den Patch zu erhalten.
+>[Kontaktieren Sie den Support](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=de#support), um weitere Informationen oder den Patch zu erhalten.
 
 ## Über das Patch-Installationsprogramm {#about-the-patch-installer}
 
@@ -33,16 +33,13 @@ Das AEM 6.5 Forms JEE Patch-Installationsprogramm enthält alle behobenen Proble
 1. Extrahieren Sie die Archivdatei des Patch-Installationsprogramms auf Ihrer Festplatte.
 1. Im Ordner mit dem Namen entsprechend des von Ihnen verwendeten Betriebssystems:
 
-   * **Windows**
-
-
-Wechseln Sie zu dem Ordner auf dem Installationsdatenträger oder auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und doppelklicken Sie auf die Datei aemforms65_cfp_install.exe.
+   * **Windows** Wechseln Sie zu dem Ordner auf dem Installationsdatenträger oder auf der Festplatte, in den Sie das Installationsprogramm kopiert haben, und doppelklicken Sie auf die Datei aemforms65_cfp_install.exe.
 
       * (Windows 32-Bit) `Windows\Disk1\InstData\VM`
       * (Windows 64-Bit) `Windows_64Bit`\ `Disk1\InstData\VM`
 
-   * **Linux®**
-Navigieren Sie zum entsprechenden Ordner und geben Sie an einer Eingabeaufforderung Folgendes ein: `./aem65_cfp_install.bin`.
+   * **Linux**:
+Wechseln Sie in den entsprechenden Ordner und geben Sie an einer Eingabeaufforderung Folgendes ein:`./aem65_cfp_install.bin`
 
       * (Linux®) `Linux/Disk1/InstData/NoVM`
 
@@ -55,7 +52,7 @@ Navigieren Sie zum entsprechenden Ordner und geben Sie an einer Eingabeaufforder
 1. Wenn die Installation abgeschlossen ist, klicken Sie auf **[!UICONTROL Weiter]**, um die Schnellkorrektur-Updates auf Ihre installierten Dateien anzuwenden.
 
 1. **[Nur für Windows]:** Gehen Sie wie folgt vor:
-   * Sie können entweder die Option **Configuration Manager starten** deaktivieren, bevor Sie auf **[!UICONTROL Fertig]** klicken. Ausführen **Configuration Manager** durch Verwendung von **ConfigurationManager.bat** Datei in `[aem-forms root]\configurationManager\bin`.
+   * Sie können entweder die Option **Configuration Manager starten** deaktivieren, bevor Sie auf **[!UICONTROL Fertig]** klicken. Führen Sie **Configuration Manager** durch Verwendung der Datei **ConfigurationManager.bat** in `[aem-forms root]\configurationManager\bin` aus.
 
    * Oder deaktivieren Sie die Option **Configuration Manager starten**, bevor Sie auf **[!UICONTROL Fertig]** klicken. Navigieren Sie vor der Ausführung von **Configuration Manager** mit **ConfigurationManager.exe** oder **ConfigurationManager_IPv6.exe** zum Verzeichnis *`<AEMForms_Install_Dir>\configurationManager\bin`* und ersetzen Sie die Dateien [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) und [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax).
 
@@ -73,13 +70,13 @@ Navigieren Sie zum entsprechenden Ordner und geben Sie an einer Eingabeaufforder
    * [Installieren und Bereitstellen von AEM Forms for JBoss®](https://www.adobe.com/go/learn_aemforms_installJBoss_65_de)
    * [Installieren und Bereitstellen von AEM Forms für WebSphere®](https://www.adobe.com/go/learn_aemforms_installWebSphere_65_de)
 
-1. (Nur JBoss®) Löschen Sie nach der Installation des Patches und der Konfiguration des Servers die Ordner tmp und work des JBoss®-Anwendungsservers.
+1. (Nur JBoss®) Löschen Sie nach der Installation des Patches und der Konfiguration des Servers die Ordner „tmp“ und „work“ des JBoss®-Anwendungs-Servers.
 
 ## Konfigurationen nach der Bereitstellung {#post-deployment-configurations}
 
 ### SAML-Konfigurationen {#saml-configurations}
 
-Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen IDP-Metadaten auftreten, führen Sie nach der Installation des Patches die folgenden Schritte aus:
+Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen IDP-Metadaten haben, führen Sie nach der Installation des Patches die folgenden Schritte aus:
 
 1. Legen Sie die folgende Systemeigenschaft auf Ihrem Anwendungsserver fest:\
    `um.saml.enable.large.xml=true`
@@ -92,4 +89,4 @@ Wenn Sie die SAML-Authentifizierung konfiguriert haben und Probleme mit großen 
 * Document Security
 * Foundation JEE
 
-[Support kontaktieren](https://experienceleague.adobe.com/?lang=de&amp;support-solution=General&amp;support-tab=home#support)
+[Support kontaktieren](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home?lang=de#support)
