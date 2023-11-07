@@ -3,10 +3,10 @@ title: Versionshinweise für  [!DNL Adobe Experience Manager]  6.5
 description: Hier finden Sie Versionsinformationen, Neuigkeiten, Installationsanleitungen und eine detaillierte Änderungsliste für  [!DNL Adobe Experience Manager]  6.5.
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 61f3079a88e39c02b29bfafc7b2b9d4d098cef6b
 workflow-type: tm+mt
-source-wordcount: '4632'
-ht-degree: 99%
+source-wordcount: '4640'
+ht-degree: 98%
 
 ---
 
@@ -492,7 +492,7 @@ Um das Problem zu beheben, suchen Sie die Datei `<AEM_Forms_Installation_dir>\jb
 
 #### Interaktive Kommunikationen
 
-* Nach der Aktualisierung auf AEM Service Pack 18 ist es nicht möglich, interaktive Kommunikationsbriefe zu bearbeiten. (FORMS-10578)
+* Nach dem Upgrade auf AEM Service Pack 18 ist es nicht möglich, die interaktive Kommunikation mit großen Inline-Bildern im Bearbeitungsmodus zu öffnen. (FORMS-10578)
 Um das Problem zu beheben, führen Sie die folgenden Schritte aus:
 
    1. Laden Sie [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=de) vom SD-Link herunter.
