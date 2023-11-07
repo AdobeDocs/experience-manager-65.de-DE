@@ -2,10 +2,10 @@
 title: Grundlegendes zur CMS-Headless-Entwicklung
 description: In diesem Teil der AEM Headless-Entwickler-Tour erfahren Sie mehr über die Headless-Technologie und darüber, warum Sie sie verwenden sollten.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1612'
-ht-degree: 93%
+source-wordcount: '1611'
+ht-degree: 92%
 
 ---
 
@@ -27,7 +27,7 @@ Seit der Einführung benutzerfreundlicher, umfangreicher Content-Management-Syst
 
 ![Das klassische Full-Stack-CMS](assets/full-stack.png)
 
-In einem Full-Stack-CMS befindet sich die gesamte Funktionalität zum Bearbeiten Ihrer Inhalte im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
+In einem Full-Stack-CMS befindet sich die gesamte Funktionalität zum Bearbeiten Ihres Inhalts im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
 
 * Sie haben nur ein System zu verwalten.
 * Inhalte werden zentral verwaltet.

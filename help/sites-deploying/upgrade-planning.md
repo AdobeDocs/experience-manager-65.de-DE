@@ -8,10 +8,10 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2397'
-ht-degree: 45%
+source-wordcount: '2395'
+ht-degree: 44%
 
 ---
 
@@ -101,7 +101,7 @@ Neue Funktionen in AEM 6.5 finden Sie im [Bereich zu AEM auf adobe.com](/help/r
 
 ### Erstellen eines Testplans {#creating-a-test-plan}
 
-Jede Kundenimplementierung von AEM ist einzigartig und auf die Geschäftsanforderungen des Unternehmens zugeschnitten. Deshalb ist es wichtig, alle am System vorgenommenen Anpassungen zu bestimmen, damit sie in einen Testplan einbezogen werden können. Dieser Testplan ermöglicht die Qualitätssicherung, die Adobe auf der aktualisierten Instanz durchführt.
+Jede Kundenimplementierung von AEM ist einzigartig und auf die Geschäftsanforderungen des Unternehmens zugeschnitten. Daher ist es wichtig, alle am System vorgenommenen Anpassungen zu bestimmen, damit sie in einen Testplan aufgenommen werden können. Dieser Testplan ermöglicht die Qualitätssicherung, die Adobe auf der aktualisierten Instanz durchführt.
 
 ![test-plan](assets/test-plan.png)
 

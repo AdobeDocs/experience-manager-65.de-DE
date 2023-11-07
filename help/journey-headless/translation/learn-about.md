@@ -2,10 +2,10 @@
 title: Erfahren Sie mehr über Headless-Inhalte und wie Sie sie in AEM übersetzen können.
 description: Lernen Sie die Headless-Konzepte, ihre Zuordnung zu AEM und die Theorie der Übersetzung in AEM kennen.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '758'
-ht-degree: 94%
+source-wordcount: '757'
+ht-degree: 92%
 
 ---
 
@@ -26,7 +26,7 @@ Seit der Einführung benutzerfreundlicher, umfangreicher Content-Management-Syst
 
 ![Das klassische Full-Stack-CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In einem Full-Stack-CMS befindet sich die gesamte Funktionalität zum Bearbeiten Ihrer Inhalte im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
+In einem Full-Stack-CMS befindet sich die gesamte Funktionalität zum Bearbeiten von Inhalten im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
 
 * Es gibt ein System, das gepflegt werden muss.
 * Inhalte werden zentral verwaltet.

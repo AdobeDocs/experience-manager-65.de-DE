@@ -10,10 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1253'
-ht-degree: 96%
+source-wordcount: '1252'
+ht-degree: 94%
 
 ---
 
@@ -205,7 +205,7 @@ Diese ermöglichen Ihnen zusammen mit den Standardfunktionen Folgendes:
 
 * **Untergeordnete Elemente eines Knotens ausblenden (wobei die Eigenschaften des Knotens beibehalten werden)**
 
-  Der Knoten, seine Eigenschaften und seine untergeordneten Elemente sind in `/libs` definiert. Der Knoten und seine Eigenschaften sind in der `/apps`-Überlagerung/-Überschreibung erforderlich, aber einige oder alle der untergeordneten Knoten sind in der `/apps`-Überlagerung/-Überschreibung nicht erforderlich.
+  Der Knoten, seine Eigenschaften und seine untergeordneten Elemente sind in `/libs` definiert. Der Knoten und seine Eigenschaften sind in der `/apps` -Überlagerung/-Überschreibung, aber einige oder alle untergeordneten Knoten sind im `/apps` Überlagerung/Überschreibung.
 
    1. Erstellen Sie den entsprechenden Knoten unter `/apps`
    1. Erstellen Sie die Eigenschaft `sling:hideChildren`:

@@ -1,17 +1,15 @@
 ---
 title: Konfigurieren von Diensteinstellungen
 description: Erfahren Sie, wie Sie Diensteinstellungen konfigurieren. Auf der Seite "Dienstverwaltung"können Sie die Einstellungen für die einzelnen Dienste konfigurieren, die zu AEM Formularen gehören.
-uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '10694'
-ht-degree: 56%
+source-wordcount: '10692'
+ht-degree: 55%
 
 ---
 
@@ -223,7 +221,7 @@ Die folgenden Einstellungen sind für den Encryption-Dienst verfügbar.
 
 >[!NOTE]
 >
->Verwenden Sie einfache Authentifizierung (Benutzername und Kennwort) nur, wenn die Verbindung mit SSL (unter Verwendung von LDAPS) geschützt ist.
+Verwenden Sie einfache Authentifizierung (Benutzername und Kennwort) nur, wenn die Verbindung mit SSL (unter Verwendung von LDAPS) geschützt ist.
 
 **Kompatibilitätsmodus:**
 
@@ -259,7 +257,7 @@ Folgende Einstellungen sind für den Generate PDF-Dienst verfügbar:
 
 **Acrobat-basierte AutoCAD-Konvertierungen aktivieren (nur Windows)**: Wenn diese Einstellung aktiviert ist, verwendet der Generate PDF-Service für alle Konvertierungen von DWG in PDF Acrobat X Pro. Diese Einstellung ist nur sinnvoll, wenn AutoCAD nicht auf dem Server installiert ist bzw. wenn der AutoCAD-Konvertierungsmechanismus nicht in der Lage ist, Dateien erfolgreich zu konvertieren.
 
-**Reguläre Ausdrücke zum Auffinden nicht zulässiger Sonderzeichen in Benutzernamen (nur Windows)**: Gibt Zeichen an, die den PDF erstellen- und PDF optimieren-Vorgang beeinträchtigen, wenn die Zeichen im Benutzernamen enthalten sind.
+**Reguläre Ausdrücke zum Auffinden unzulässiger Sonderzeichen im Benutzernamen (nur Windows):** Gibt Zeichen an, die den Export PDF- und Optimize PDF-Vorgang beeinträchtigen, wenn die Zeichen im Benutzernamen angezeigt werden.
 
 **ImageToPDF-Pool-Größe**: Die Pool-Größe des standardmäßigen (reinen Java) Bild-zu-PDF-Konverters im Generate PDF-Service. Mit dieser Einstellung steuern Sie die maximale Anzahl gleichzeitiger „Bild in PDF“-Konvertierungen, die der Generate PDF-Dienst ausführen kann. Der Standardwert dieser Einstellung (empfohlen für Einzelprozessorsysteme) ist 3, wobei der Wert für Multiprozessorsysteme erhöht werden kann.
 
@@ -425,13 +423,13 @@ Die folgenden Einstellungen sind für den Microsoft SharePoint-Konfigurationsdie
 
 **Aufgabenanwendung:** Aktiviert die Aufgabenfunktion in den mobilen Client-Anwendungen. Wenn diese Option ausgewählt ist, können die Benutzer von ihren mobilen Geräten aus auf ihre Aufgabenlisten zugreifen und Aufgaben erledigen.
 
-**Content Services-Anwendung:** Aktiviert die Content Services-Funktion in der mobilen Client-Anwendung. Diese Funktion ist nur für iOS verfügbar. Wenn diese Option ausgewählt ist, können iPhone- und iPad-Benutzer auf Dateien zugreifen, die auf dem WebDAV-Server Ihrer Organisation gespeichert sind.
+**Content Services-Anwendung:** Aktiviert die Content Services-Funktion in der mobilen Client-Anwendung. Diese Funktion ist nur für iOS verfügbar. Wenn diese Option aktiviert ist, können Benutzer von iPhone und iPad auf Dateien zugreifen, die auf dem WebDAV-Server Ihres Unternehmens gespeichert sind.
 
 **Offline-Unterstützung:** Ermöglicht es den Benutzern, die mobilen Client-Anwendungen auch dann zu nutzen, wenn sie keine Verbindung zum Server haben ( beispielsweise, wenn sie sich außerhalb des Mobilfunkbereichs oder im Flugzeugmodus befinden). Benutzer müssen außerdem die Einstellung Offline-Support auf ihren Mobilgeräten aktivieren. Diese Funktion ist für Android- und iOS-Geräte verfügbar. Standardmäßig ist diese Funktion deaktiviert.
 
 >[!NOTE]
 >
->Wenn die Offline-Unterstützung aktiviert ist und Sie sie dann deaktivieren, werden die Bereitstellungsprofile der Benutzer sofort aktualisiert, oder sobald sie online sind. Wenn ein Benutzer offline gearbeitet hat, werden alle ausstehenden Aufgaben in ihre Aufgabenliste zurückgestellt und alle Elemente in ihrer Warteschlange, einschließlich ausstehender Formulare, Aufgaben und Formulare mit Überprüfungsfehlern, werden aus der Warteschlange gelöscht.
+Wenn die Offline-Unterstützung aktiviert wurde und Sie sie deaktivieren, werden die Bereitstellungsprofile der Benutzer sofort aktualisiert oder sobald sie online sind. Wenn ein Benutzer offline gearbeitet hat, werden alle ausstehenden Aufgaben in ihre Aufgabenliste zurückgestellt und alle Elemente in ihrer Warteschlange, einschließlich ausstehender Formulare, Aufgaben und Formulare mit Überprüfungsfehlern, werden aus der Warteschlange gelöscht.
 
 **Android:** Ermöglicht Android-Geräten eine Verbindung zum Server herzustellen.
 
@@ -664,7 +662,7 @@ Die folgenden Einstellungen sind für den Signature-Dienst verfügbar.
 
 **Online gehen**: Gibt an, ob für die Sperrprüfung online gegangen werden soll. Der Standardwert lautet true.
 
-**Update-Zeiten der Antwort ignorieren**: Gibt an, ob die Uhrzeiten „thisUpdate“ und „nextUpdate“ der Antwort ignoriert werden sollen, um so jegliche negative Auswirkung dieser Uhrzeiten auf die Gültigkeit der Antwort zu verhindern. Der Standardwert lautet false.
+**Ignorieren Sie die Zeiten thisUpdate und nextUpdate der Antwort:** Gibt an, ob die Zeiten &quot;thisUpdate&quot;und &quot;nextUpdate&quot;der Antwort ignoriert werden sollen, wodurch verhindert wird, dass sich diese Zeiten negativ auf die Gültigkeit der Antwort auswirken. Der Standardwert lautet false.
 
 **OCSPNoCheck-Erweiterung zulassen**: Gibt an, ob die Erweiterung „OCSPNoCheck“ im Signierzertifikat der Antwort zulässig ist. Der Standardwert lautet true.
 
@@ -733,7 +731,7 @@ Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner im überwachte
 
 >[!NOTE]
 >
->Je kleiner die Größe der Ergebnisordner ist, desto besser ist die Watched Folder-Leistung. Wenn beispielsweise die geschätzte Belastung für den überwachten Ordner bei 1000 Dateien pro Stunde liegt, sollten Sie ein Muster wie `result/%Y%M%D%H` verwenden, sodass jede Stunde ein neuer Unterordner erstellt wird. Wenn die Belastung geringer ist (z. B. 1000 Dateien pro Tag), können Sie ein Muster wie das folgende verwenden: `result/%Y%M%D`.
+Je kleiner die Größe der Ergebnisordner ist, desto besser ist die Watched Folder-Leistung. Wenn beispielsweise die geschätzte Belastung für den überwachten Ordner bei 1000 Dateien pro Stunde liegt, sollten Sie ein Muster wie `result/%Y%M%D%H` verwenden, sodass jede Stunde ein neuer Unterordner erstellt wird. Wenn die Belastung geringer ist (z. B. 1000 Dateien pro Tag), können Sie ein Muster wie das folgende verwenden: `result/%Y%M%D`.
 
 **Bereitstellungsordner**: Der Standardname für den Bereitstellungsordner im überwachten Ordner.
 
@@ -747,7 +745,7 @@ Wenn der Pfad nicht absolut, sondern relativ ist, wird der Ordner im überwachte
 
 Der Web Service-Dienst (`WebService`) ermöglicht Prozessen das Aufrufen von Webdienstvorgängen.
 
-Der Web Service-Dienst ermöglicht Prozessen das Aufrufen von Webdienstvorgängen. Beispielsweise kann ein Unternehmen einen Prozess integrieren, um Informationen wie Kontakt- und Kontodetails zu speichern und abzurufen, indem die offen gelegten Webdienste eines Dienstleisters aufgerufen werden. Der Webdienst-Dienst ruft einen angegebenen Webdienst auf und übergibt Werte für jeden seiner Parameter. Anschließend werden die Rückgabewerte aus dem Vorgang in einer angegebenen Variablen innerhalb eines Prozesses gespeichert.
+Der Web Service-Dienst ermöglicht Prozessen das Aufrufen von Webdienstvorgängen. Beispielsweise kann ein Unternehmen einen Prozess integrieren, um Informationen wie Kontakt- und Kontodetails zu speichern und abzurufen, indem die angezeigten Webdienste eines Dienstleisters aufgerufen werden. Der Webdienst-Dienst ruft einen angegebenen Webdienst auf und übergibt Werte für jeden seiner Parameter. Anschließend werden die Rückgabewerte aus dem Vorgang in einer angegebenen Variablen innerhalb eines Prozesses gespeichert.
 
 Der Webdienst interagiert mit Webdiensten, indem er SOAP-Nachrichten sendet und empfängt. Der Dienst unterstützt auch das Senden von MIME-, MTOM- und SwaRef-Anhängen mit SOAP-Nachrichten mithilfe des WS-Attachment-Protokolls. Die Interaktionen des Webdiensts sind mit SAP-Systemen und .NET-Webdiensten kompatibel.
 
@@ -815,7 +813,7 @@ Es werden Standard-Sicherheitsprofile installiert, die dann entsprechend Ihren S
 
    >[!NOTE]
    >
-   >Wiedergabe- und Sendedienste, die mit xfaForm-, Document Form- und Form-Variablen verwendet werden, werden immer mit dem System-Benutzerkonto ausgeführt.
+   Wiedergabe- und Sendedienste, die mit xfaForm-, Document Form- und Form-Variablen verwendet werden, werden immer mit dem System-Benutzerkonto ausgeführt.
 
 1. Klicken Sie auf Prinzipal hinzufügen , um die Berechtigungen anzugeben, die Benutzer und Gruppen für diesen Dienst haben.
 1. Im Bildschirm &quot;Prinzipal auswählen&quot;werden die Benutzer und Gruppen angezeigt, die in User Management konfiguriert sind. Wenn der gewünschte Benutzer oder die gewünschte Gruppe nicht angezeigt wird, suchen Sie ihn mithilfe der Suchfunktion. Klicken Sie auf einen Benutzer- oder Gruppennamen.

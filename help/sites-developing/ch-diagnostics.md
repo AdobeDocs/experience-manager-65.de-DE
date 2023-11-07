@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: b833c28b-76c6-42a2-b690-3e81ddf91bc2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '473'
-ht-degree: 89%
+source-wordcount: '472'
+ht-degree: 86%
 
 ---
 
@@ -49,7 +49,7 @@ Der Abschnitt „Modules“ listet alle ContextHub Benutzeroberflächenmodule au
 
 ## Clientlibs {#clientlibs}
 
-Der Abschnitt „Clientlibs“ listet alle Ordner der Client-Bibliothek auf, die ContextHub geladen hat. Die Client-Bibliotheken werden kategorisiert:
+Im Abschnitt &quot;Clientlibs&quot;werden alle Ordner der Client-Bibliothek aufgelistet, die ContextHub geladen hat. Die Client-Bibliotheken werden kategorisiert:
 
 * **kernel.js:** Client-Bibliotheken, die das ContextHub-Framework, die Segment-Engine und Storetypen implementieren.
 * **ui.js:** Client-Bibliotheken, die die ContextHub-Benutzeroberfläche und Benutzeroberflächenmodultypen implementieren.

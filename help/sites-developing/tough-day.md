@@ -4,10 +4,10 @@ description: Der Tough Day-Test simuliert die tägliche Belastung von etwa 1000 
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1823'
-ht-degree: 54%
+source-wordcount: '1822'
+ht-degree: 53%
 
 ---
 
@@ -86,7 +86,7 @@ In der folgenden Tabelle finden Sie die relevanten Hilfsparameter.
   </tr>
   <tr>
    <td>--help_full</td>
-   <td>Druckt alle oben genannten Funktionen sowie Tests, Publisher und Suite-Komponenten.</td>
+   <td>Druckt alle oben genannten Elemente sowie Tests, Herausgeber und Suite-Komponenten.</td>
    <td> </td>
   </tr>
   <tr>

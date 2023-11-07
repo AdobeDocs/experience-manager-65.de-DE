@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '18965'
 ht-degree: 79%
@@ -1638,7 +1638,7 @@ So senden Sie einen Druck-Stream an einen Netzwerkdrucker, indem Sie die Ausgabe
 
 Der Ausgabe-Service kann für jeden Datensatz in einer XML-Datenquelle oder in einer Datei, die alle Datensätze enthält, separate Dokumente erstellen (diese Funktion ist die Standardfunktion). Angenommen, zehn Datensätze befinden sich in einer XML-Datenquelle und Sie weisen den Ausgabe-Service an, mithilfe der Ausgabe-Service-API für jeden Datensatz separate PDF-Dokumente (oder andere Ausgabetypen) zu erstellen. Dann erzeugt der Ausgabe-Service zehn PDF-Dokumente. (Anstatt Dokumente zu erstellen, können Sie auch mehrere Druck-Streams an einen Drucker senden.)
 
-Die folgende Abbildung zeigt auch, wie der Ausgabe-Service eine XML-Datendatei verarbeitet, die mehrere Datensätze enthält. Nehmen wir jedoch an, dass Sie den Ausgabe-Service anweisen, ein einziges PDF-Dokument zu erstellen, das alle Datensätze enthält. In diesem Fall erzeugt der Ausgabe-Service ein Dokument, das alle Datensätze enthält.
+Die folgende Abbildung zeigt auch, wie der Ausgabe-Service eine XML-Datendatei verarbeitet, die mehrere Datensätze enthält. Nehmen Sie jedoch an, dass Sie den Output-Dienst anweisen, ein einzelnes PDF-Dokument zu erstellen, das alle Datensätze enthält. In diesem Fall generiert der Output-Dienst ein Dokument, das alle Datensätze enthält.
 
 Die folgende Abbildung zeigt, wie der Ausgabe-Service eine XML-Datendatei verarbeitet, die mehrere Datensätze enthält. Angenommen, Sie weisen den Ausgabe-Service an, für jeden Datensatz ein eigenes PDF-Dokument zu erstellen. In diesem Fall erzeugt der Ausgabe-Service für jeden Datensatz ein separates PDF-Dokument.
 

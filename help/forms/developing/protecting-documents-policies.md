@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '15469'
+source-wordcount: '15468'
 ht-degree: 82%
 
 ---
@@ -1513,7 +1513,7 @@ Um ein Wasserzeichen zu ändern, müssen Sie ein vorhandenes Wasserzeichen abruf
 
 **Wasserzeichenattribute festlegen**
 
-Um ein vorhandenes Wasserzeichen zu ändern, ändern Sie den Wert eines oder mehrerer Wasserzeichenattribute. Wenn Sie ein Wasserzeichen mithilfe eines Web-Service programmgesteuert aktualisieren, müssen Sie auch dann alle ursprünglich definierten Attribute festlegen, wenn sich der Wert nicht ändert. Angenommen, die folgenden Wasserzeichenattribute sind festgelegt: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY` und `WaterBackCmd:SRCTEXT`. Selbst wenn Sie nur das Attribut `WaterBackCmd:OPACITY` ändern möchten, müssen Sie auch die anderen Werte festlegen.
+Um ein vorhandenes Wasserzeichen zu ändern, ändern Sie den Wert eines oder mehrerer Wasserzeichenattribute. Beim programmatischen Aktualisieren eines Wasserzeichens mithilfe eines Webdiensts müssen Sie alle ursprünglich festgelegten Attribute festlegen, auch wenn sich der Wert nicht ändert. Angenommen, die folgenden Wasserzeichenattribute sind festgelegt: `WaterBackCmd:IS_USERID_ENABLED`, `WaterBackCmd:IS_CUSTOMTEXT_ENABLED`, `WaterBackCmd:OPACITY` und `WaterBackCmd:SRCTEXT`. Selbst wenn Sie nur das Attribut `WaterBackCmd:OPACITY` ändern möchten, müssen Sie auch die anderen Werte festlegen.
 
 >[!NOTE]
 >

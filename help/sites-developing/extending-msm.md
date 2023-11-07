@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2578'
+source-wordcount: '2577'
 ht-degree: 96%
 
 ---
@@ -149,7 +149,7 @@ Die folgenden Objekte sind als Parameter der `execute`-Methode vom `LiveAction`-
 
 * Der Wert für das Zurücksetzen legt den Rollout-Modus für das Zurücksetzen fest.
 
-Über diese Objekte können Sie alle Daten zur `LiveCopy` abrufen. Mit den `Resource`-Objekten können Sie auch die `ResourceResolver`-, `Session`- und `Node`-Objekte abrufen. Diese Objekte sind bei der Bearbeitung der Repository-Inhalte hilfreich:
+Von diesen Objekten können Sie alle Informationen über die `LiveCopy`. Mit den `Resource`-Objekten können Sie auch die `ResourceResolver`-, `Session`- und `Node`-Objekte abrufen. Diese Objekte sind bei der Bearbeitung der Repository-Inhalte hilfreich:
 
 In der ersten Zeile des folgenden Codes ist das `Resource`-Objekt der Quellseite die Quelle:
 

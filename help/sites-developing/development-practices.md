@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '616'
-ht-degree: 49%
+source-wordcount: '615'
+ht-degree: 44%
 
 ---
 
 # Entwicklungspraktiken{#development-practices}
 
-## Arbeiten nach einer Definition von &quot;Fertig&quot;(DoD) {#work-according-to-a-definition-of-done}
+## Arbeiten nach einer Definition von Fertig (DoD) {#work-according-to-a-definition-of-done}
 
 Jedes Team hat sein eigenes Verständnis davon, was „fertig“ bedeutet, aber es ist wichtig, eines zu haben und sicherzustellen, dass eine Story die definierten Kriterien erfüllt, bevor sie akzeptiert wird.
 
@@ -60,7 +60,7 @@ Code-Analysewerkzeuge haben nur dann einen Wert, wenn ihre Berichte vom Entwickl
 
 ### Der Pfadfinderregel folgen {#follow-the-boy-scout-rule}
 
-Pfadfinder haben eine Regel: „Hinterlass es besser, als du es vorgefunden hast.“ Sofern sich alle Mitglieder des Entwickler-Teams an diese Regel halten und eine Verbesserung vornehmen, wenn sie einen Fehler sehen, wird der Code konstant verbessert.
+Pfadfinder haben eine Regel: „Hinterlass es besser, als du es vorgefunden hast.“ Solange alle Mitglieder des Entwicklungsteams diese Regel befolgen und etwas bereinigen, wenn sie auf ein Chaos stoßen, wird sich der Code ständig verbessern.
 
 ### Implementierung von YAGNI-Funktionen vermeiden {#avoid-implementing-yagni-features}
 

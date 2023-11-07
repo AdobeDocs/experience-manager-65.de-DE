@@ -2,10 +2,10 @@
 title: Erste Schritte mit der AEM Headless-Übersetzung
 description: Erfahren Sie, wie Sie Ihre Headless-Inhalte organisieren und wie AEM Übersetzungs-Tools funktionieren.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1490'
-ht-degree: 93%
+source-wordcount: '1489'
+ht-degree: 92%
 
 ---
 
@@ -93,7 +93,7 @@ Notieren Sie sich den **Eigenschaftsnamen** des Feldes für alle Felder, die üb
 
 >[!TIP]
 >
->Im Allgemeinen stellt der Inhaltsarchitekt dem Übersetzungsspezialisten die **Eigenschaftsnamen** für alle für die Übersetzung erforderlichen Felder zur Verfügung. Diese Feldnamen werden für einen späteren Zeitpunkt in der Tour benötigt. Die vorangegangenen Schritte sind für das Verständnis des Übersetzungsspezialisten vorgesehen.
+>Im Allgemeinen stellt der Inhaltsarchitekte dem Übersetzungsanbieter die **Eigenschaftsname** von allen für die Übersetzung erforderlichen Feldern. Diese Feldnamen werden für einen späteren Zeitpunkt in der Tour benötigt. Die vorangegangenen Schritte sind für das Verständnis des Übersetzungsspezialisten vorgesehen.
 
 ### Inhaltsfragmente {#content-fragments}
 

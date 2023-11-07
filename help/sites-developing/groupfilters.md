@@ -12,10 +12,10 @@ discoiquuid: 9fef1f91-a222-424a-8e20-3599bedb8b41
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '798'
-ht-degree: 71%
+source-wordcount: '797'
+ht-degree: 70%
 
 ---
 
@@ -91,7 +91,7 @@ Feste Programmierung des Namens und des Beschreibungtextes ist ausreichend für 
 
 ### Auswerten anhand von Filterkriterien {#evaluating-against-filter-criteria}
 
-Die `matches`-Funktion gibt `true` zurück, wenn die Gerätefunktionen alle Filterkriterien erfüllen. Werten Sie die in den Methodenargumenten bereitgestellten Informationen aus, um festzustellen, ob das Gerät zur Gruppe gehört. Die folgenden Werte werden als Argumente bereitgestellt:
+Die `matches` function return `true` , wenn die Gerätefunktionen alle Filterkriterien erfüllen. Werten Sie die in den Methodenargumenten bereitgestellten Informationen aus, um festzustellen, ob das Gerät zur Gruppe gehört. Die folgenden Werte werden als Argumente bereitgestellt:
 
 * Ein DeviceGroup-Objekt
 * Der Name des Benutzeragenten

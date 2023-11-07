@@ -2,10 +2,10 @@
 title: Adobe Experience Manager Headless-Inhaltsarchitekten-Tour
 description: Eine Einführung in die leistungsstarken und flexiblen Headless-Funktionen von Adobe Experience Manager und die Modellierung von Inhalten für Ihr Projekt.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '731'
-ht-degree: 91%
+source-wordcount: '730'
+ht-degree: 89%
 
 ---
 
@@ -29,7 +29,7 @@ Seit der Einführung benutzerfreundlicher, umfangreicher Content-Management-Syst
 
 ![Das klassische Full-Stack-CMS](/help/journey-headless/developer/assets/full-stack.png)
 
-In einem Full-Stack-CMS befindet sich die gesamte Funktionalität zum Bearbeiten Ihrer Inhalte im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
+In einem Full-Stack-CMS befindet sich die gesamte Funktionalität zum Bearbeiten von Inhalten im CMS. Die Funktionen des Systems bilden die verschiedenen Komponenten des CMS-Stacks. Die Full-Stack-Lösung hat viele Vorteile.
 
 * Es gibt ein System, das gepflegt werden muss.
 * Inhalte werden zentral verwaltet.

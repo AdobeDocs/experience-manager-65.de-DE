@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1439'
 ht-degree: 53%
 
 ---
@@ -53,7 +53,7 @@ Mit der folgenden Vorgehensweise können Sie Variablen von CQ-Komponenten den Ei
 
    >[!NOTE]
    >
-   >Sie können mehrere Analytics-Variablen zuordnen (z. B. `props`, `eVars`, `events`) auf dieselbe CQ-Variable (z. B. `pagedata.title`)
+   >Sie können mehrere Analytics-Variablen zuordnen (zum Beispiel `props`, `eVars`, `events`) auf dieselbe CQ-Variable (z. B. `pagedata.title`)
 
    >[!CAUTION]
    >
@@ -89,7 +89,7 @@ Mehrere AEM Commerce-Komponenten nutzen diese Variablennamen.
 1. Stellen Sie sicher, dass Sie dieselbe RSID nutzen wie im vorherigen Schritt.
 1. Wählen Sie unter **Berichte** (auf der linken Seite der Seite) die Option **Benutzerspezifische Konversion** und dann **Benutzerspezifische Konversion 1–10** aus. Wählen Sie die Variable aus, die `eVar7` entspricht.
 
-1. Abhängig von der verwendeten Adobe Analytics-Version müssen Sie durchschnittlich 45 Minuten warten, bis der Bericht mit dem verwendeten Suchbegriff aktualisiert wird. Beispiel: Aubergine im Beispiel
+1. Abhängig von der Version von Adobe Analytics, die Sie verwenden, müssen Sie durchschnittlich 45 Minuten warten, bis der Bericht mit dem verwendeten Suchbegriff aktualisiert wird, wie beispielsweise Aubergine im Beispiel
 
 ## Verwenden des Content Finder (cf#) mit Adobe Analytics-Frameworks {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
@@ -156,7 +156,7 @@ Wenn Sie das obige Bild als Beispiel verwenden, wird das **AEM** weist die folge
 
       1. Vererbte Komponenten sind gesperrt.
       1. Doppelklicken Sie zum Entsperren einer geerbten Komponente auf das Vorhängeschloss neben dem Namen der Komponente
-      1. Um die Vererbung wiederherzustellen, löschen Sie die entsperrte Komponente. danach wird er wieder gesperrt.
+      1. Um die Vererbung wiederherzustellen, löschen Sie die entsperrte Komponente. Danach erhält sie ihren Sperrstatus.
 
    1. **Komponenten hierher ziehen, um sie in das Analytics-Framework einzuschließen**: Komponenten können aus dem Sidekick gezogen und hier abgelegt werden.
    1. Sie finden alle Komponenten, die derzeit im Analytics-Framework enthalten sind:
@@ -170,7 +170,7 @@ Wenn Sie das obige Bild als Beispiel verwenden, wird das **AEM** weist die folge
 ![aa-24](assets/aa-24.png)
 
 1. Um auf diese Ansicht zuzugreifen, wechseln Sie im Framework zur Registerkarte **Analytics-Ansicht**.
-1. Linke Seite: Content Finder (cf#) wird von CQ-Variablen basierend auf den Komponenten, die in der CQ-Ansicht auf das Framework gezogen wurden, gefüllt.
+1. Linke Seite: Content Finder (cf#) wird von CQ-Variablen basierend auf den Komponenten gefüllt, die in der CQ-Ansicht auf das Framework gezogen wurden.
 1. Registerkartenkopfzeilen (**AEM-Ansicht** und **Analytics-Ansicht**): Verwenden Sie diese, um zwischen den beiden Ansichten zu wechseln.
 
 1. In den drei Tabellen („Traffic“, „Konversion“, „Ereignis“) sind alle verfügbaren Adobe Analytics-Variablen aufgeführt, die zu den ausgewählten RSIDs gehören. Die hier gezeigten Zuordnungen sollten mit denen in der AEM übereinstimmen:
@@ -185,7 +185,7 @@ Wenn Sie das obige Bild als Beispiel verwenden, wird das **AEM** weist die folge
 
       * Konversionsvariable (`eVar1`), die einer CQ-Variablen (`pagedata.title`) zugeordnet ist
 
-      * Konversionsvariable ( `eVar3`), die einem inline hinzugefügten JavaScript-Ausdruck zugeordnet sind, indem Sie auf das CQ-Variablenfeld doppelklicken und den Code manuell eingeben
+      * Konversionsvariable ( `eVar3`), die einem inline hinzugefügten JavaScript-Ausdruck zugeordnet sind, indem Sie auf das Feld CQ-Variable doppelklicken und den Code manuell eingeben
 
    * **Ereignis**:
 
@@ -193,7 +193,7 @@ Wenn Sie das obige Bild als Beispiel verwenden, wird das **AEM** weist die folge
 
 >[!NOTE]
 >
->Die Spalte &quot;CQ-Variable&quot;einer beliebigen Tabelle kann auch inline ausgefüllt werden, indem Sie auf das Feld doppelklicken und Text hinzufügen. Diese Felder akzeptieren JavaScript als Eingabe.
+>Die Spalte &quot;CQ-Variable&quot;einer beliebigen Tabelle kann auch inline ausgefüllt werden, indem auf das Feld doppelgeklickt und Text hinzugefügt wird. Diese Felder akzeptieren JavaScript als Eingabe.
 >
 >Beispiel: Neben `prop3` können Sie Folgendes hinzufügen:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\

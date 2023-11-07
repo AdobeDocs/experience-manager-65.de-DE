@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3545'
+source-wordcount: '3544'
 ht-degree: 75%
 
 ---
@@ -308,7 +308,7 @@ Für die Lokalisierung der Branding-Informationen, die Sie auf der Registerkarte
 
    Wenn Sie eine benutzerdefinierte Vorlage auswählen, durchsuchen Sie eine XDP auf Ihrem AEM Forms-Server. Wenn Sie eine Vorlage verwenden möchten, die sich noch nicht auf Ihrem AEM Forms-Server befindet, müssen Sie zunächst die XDP auf Ihren AEM Forms-Server hochladen.
 
-1. Je nachdem, ob Sie eine Standard- oder eine benutzerdefinierte Vorlage auswählen, werden einige oder alle der folgenden Eigenschaften auf der Registerkarte Datensatzdokument angezeigt. Legen Sie die folgenden entsprechend fest:
+1. Je nachdem, ob Sie eine Standard- oder eine benutzerdefinierte Vorlage auswählen, werden auf der Registerkarte &quot;Datensatzdokument&quot;einige oder alle der folgenden Eigenschaften angezeigt. Legen Sie die folgenden entsprechend fest:
 
    * **Logo-Bild:** Sie können entweder das Logo-Bild des adaptiven Formulars verwenden, eines in DAM auswählen oder eines von Ihrem Computer hochladen.
    * **Formulartitel**

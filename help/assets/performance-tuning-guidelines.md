@@ -6,10 +6,10 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2740'
-ht-degree: 95%
+source-wordcount: '2739'
+ht-degree: 94%
 
 ---
 
@@ -153,7 +153,7 @@ Wenn Sie zahlreiche Nicht-Übergangs-Workflows ausgeführt haben, die Workflow-I
 
 ### Maximal parallel ausführbare Aufträge   {#maximum-parallel-jobs}
 
-Standardmäßig kann [!DNL Experience Manager] maximal so viele Aufträge parallel ausführen wie Prozessoren auf dem Server vorhanden sind. In Zeiten hoher Auslastung ist diese Einstellung jedoch problematisch, da alle Prozessoren von den [!UICONTROL DAM-Update-Asset]-Workflows beansprucht werden und dadurch die Reaktionsfähigkeit der Benutzeroberfläche verlangsamt wird und [!DNL Experience Manager] andere Prozesse zum Schutz von Serverleistung und -stabilität nicht ausführen kann. Es hat sich bewährt, diese Einstellung so zu wählen, dass nur die Hälfte der auf dem Server verfügbaren Prozessoren verwendet wird:
+Standardmäßig kann [!DNL Experience Manager] maximal so viele Aufträge parallel ausführen wie Prozessoren auf dem Server vorhanden sind. Das Problem bei dieser Einstellung besteht darin, dass in Zeiten hoher Auslastung alle Prozessoren von [!UICONTROL DAM-Update-Asset] Workflows, die Reaktionsfähigkeit der Benutzeroberfläche verlangsamen und verhindern [!DNL Experience Manager] andere Prozesse ausführen, die die Serverleistung und -stabilität schützen. Es hat sich bewährt, diese Einstellung so zu wählen, dass nur die Hälfte der auf dem Server verfügbaren Prozessoren verwendet wird:
 
 1. Greifen Sie in der [!DNL Experience Manager]-Autoreninstanz auf `https://[aem_server]:[port]/system/console/slingevent` zu.
 

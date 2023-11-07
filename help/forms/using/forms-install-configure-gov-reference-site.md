@@ -4,9 +4,9 @@ description: Installieren und konfigurieren Sie ein AEM Forms-Demopaket und pass
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '4619'
+source-wordcount: '4613'
 ht-degree: 67%
 
 ---
@@ -57,7 +57,7 @@ Das [AEM Forms-We.Gov-Demopaket](https://experience.adobe.com/#/downloads/conten
 
    * **we-gov-forms.ui.analytics-&lt;version>.zip** – *Enthält alle Forms-Analysedaten zu We.Gov, die im Repository gespeichert werden sollen.*
 
-   * **we-gov-forms.config.public-&lt;version>.zip** – *Enthält alle standardmäßigen Konfigurationsknoten, einschließlich Platzhalter-Cloud-Konfigurationen, um Probleme mit Formulardatenmodellen und Service-Bindung zu vermeiden.*
+   * **we-gov-forms.config.public-&lt;version>.zip** - *Enthält alle standardmäßigen Konfigurationsknoten, einschließlich Platzhalter-Cloud-Konfigurationen, um Formulardatenmodelle und Service-Bindungsprobleme zu vermeiden.*
 
 Zu den in diesem Paket enthaltenen Assets gehören:
 

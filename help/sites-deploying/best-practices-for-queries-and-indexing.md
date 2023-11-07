@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '4602'
+source-wordcount: '4600'
 ht-degree: 59%
 
 ---
@@ -158,7 +158,7 @@ Außerdem sind Indizes nur nützlich, wenn die im Index enthaltenen Daten eindeu
 
 Lucene-Indizes wurden in Oak 1.0.9 eingeführt und bieten einige Optimierungsvarianten, die gegenüber den bei der Ersteinführung von AEM 6 enthaltenen Eigenschaftenindizes leistungsstärker sind. Bei der Entscheidung zwischen Lucene-Indizes oder Eigenschaftenindizes sollten die folgenden Aspekte berücksichtigt werden:
 
-* Lucene-Indizes bieten deutlich mehr Funktionen als Eigenschaftenindizes. Beispielsweise kann ein Eigenschaftenindex nur eine einzelne Eigenschaft indizieren, während ein Lucene-Index eine Vielzahl von Eigenschaften umfassen kann. Weitere Informationen zu den in Lucene-Indizes verfügbaren Funktionen finden Sie in der [Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+* Lucene-Indizes bieten deutlich mehr Funktionen als Eigenschaftenindizes. Beispielsweise kann ein Eigenschaftenindex nur eine einzelne Eigenschaft indizieren, während ein Lucene-Index eine Vielzahl von Eigenschaften umfassen kann. Weitere Informationen zu allen in Lucene-Indizes verfügbaren Funktionen finden Sie im [Dokumentation](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 * Lucene-Indizes sind asynchron. Dies ist zwar mit einer erheblichen Leistungssteigerung verbunden, kann aber auch zu einer Verzögerung zwischen dem Schreiben von Daten in das Repository und dem Aktualisieren des Index führen. Wenn Abfragen zu 100 % genaue Ergebnisse zurückgeben müssen, ist ein Eigenschaftenindex erforderlich.
 * Da Lucene-Indizes asynchron sind, können sie keine Eindeutigkeitseinschränkungen erzwingen. Wenn dies erforderlich ist, muss ein Eigenschaftenindex eingerichtet werden.
 
@@ -189,7 +189,7 @@ In der Oak-Dokumentation für Lucene-Indizes sind verschiedene Überlegungen auf
 * In einem Eigenschaftenindex trägt ein eindeutiger Eigenschaftsname dazu bei, die Indexgröße zu reduzieren, aber für Lucene-Indizes sollten `nodeTypes` und `mixins` zum Erstellen kohäsiver Indizes verwendet werden. Die Abfrage nach einem bestimmten `nodeType` oder `mixin` ist leistungsstärker als eine `nt:base`-Abfrage. Definieren Sie bei diesem Ansatz `indexRules` für die fraglichen `nodeTypes`.
 
 * Wenn Ihre Abfragen nur unter bestimmten Pfaden ausgeführt werden, erstellen Sie diese Indizes unter diesen Pfaden. Indizes müssen nicht im Stammverzeichnis des Repositorys gespeichert werden.
-* Verwenden Sie einen einzigen Index, wenn alle zu indizierenden Eigenschaften miteinander verbunden sind, damit Lucene so viele Eigenschaftsbeschränkungen wie möglich nativ bewerten kann. Außerdem verwendet eine Abfrage nur einen Index, auch wenn ein Join ausgeführt wird.
+* Verwenden Sie einen einzigen Index, wenn alle zu indizierenden Eigenschaften miteinander verknüpft sind, damit Lucene so viele Eigenschaftsbeschränkungen wie möglich nativ bewerten kann. Außerdem verwendet eine Abfrage nur einen Index, auch wenn ein Join ausgeführt wird.
 
 ### CopyOnRead {#copyonread}
 

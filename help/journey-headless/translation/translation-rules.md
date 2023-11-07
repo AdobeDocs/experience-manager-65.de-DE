@@ -2,10 +2,10 @@
 title: Konfigurieren von Übersetzungsregeln
 description: Erfahren Sie, wie Sie Übersetzungsregeln definieren, um zu übersetzende Inhalte zu identifizieren.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '864'
-ht-degree: 82%
+source-wordcount: '861'
+ht-degree: 76%
 
 ---
 
@@ -46,7 +46,7 @@ Da Inhaltsfragmentmodelle, die die Struktur Ihrer Inhaltsfragmente definieren, f
 
 >[!TIP]
 >
->Im Allgemeinen stellt der Inhaltsarchitekt dem Übersetzungsanbieter die **Eigenschaftsnamen** aller Felder zur Verfügung, die für die Übersetzung benötigt werden. Diese Namen sind erforderlich, um Übersetzungsregeln zu konfigurieren. Als Übersetzungsspezialist [können Sie diese **Eigenschaftsnamen** selbst finden](getting-started.md#content-models), wie zuvor in dieser Tour beschrieben.
+>Im Allgemeinen stellt der Inhaltsarchitekte dem Übersetzungsanbieter die **Eigenschaftsname** ist von allen Feldern, die für die Übersetzung benötigt werden. Diese Namen sind erforderlich, um Übersetzungsregeln zu konfigurieren. Als Übersetzungsspezialist [können Sie diese **Eigenschaftsnamen** selbst finden](getting-started.md#content-models), wie zuvor in dieser Tour beschrieben.
 
 ## Erstellen von Übersetzungsregeln {#creating-rules}
 

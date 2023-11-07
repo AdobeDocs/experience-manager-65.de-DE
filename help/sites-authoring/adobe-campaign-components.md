@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2835'
-ht-degree: 96%
+source-wordcount: '2834'
+ht-degree: 95%
 
 ---
 
@@ -328,7 +328,7 @@ In der folgenden Tabelle werden die Komponenten beschrieben, die zum Anzeigen un
 
 ### Für die meisten Komponenten übliche Einstellungen {#settings-common-to-most-components}
 
-Adobe Campaign-Komponenten verfügen über Einstellungen, die in allen Komponenten verwendet werden (mit Ausnahme der Komponenten „Verschlüsselter Primärschlüssel“ und „Ausgeblendeter Abstimmschlüssel“).
+Die Adobe Campaign-Komponenten verfügen über Einstellungen, die in allen Komponenten verwendet werden (mit Ausnahme der Komponenten &quot;Verschlüsselter Primärer Schlüssel&quot;und &quot;Ausgeblendeter Abstimmschlüssel&quot;).
 
 In den meisten Komponenten können Sie Folgendes konfigurieren:
 

@@ -1,51 +1,47 @@
 ---
 title: Arbeiten mit Aufgaben
-seo-title: Working with tasks
-description: Verwenden Sie die Seite „Aufgabensuche“ für die Suche nach Aufgaben anhand von Benutzername oder Aufgaben-ID. Erfahren Sie mehr über die Arbeit mit Aufgaben.
-seo-description: Use the Task Search page to search for tasks by user name or task ID. Learn more about working with tasks.
-uuid: 630372d5-255f-4ea8-974d-d4f923108673
+description: Verwenden Sie die Seite "Aufgabensuche", um nach Aufgaben nach Benutzername oder Aufgaben-ID zu suchen. Erfahren Sie mehr über das Arbeiten mit Aufgaben.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
 exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
-workflow-type: ht
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+workflow-type: tm+mt
 source-wordcount: '840'
-ht-degree: 100%
+ht-degree: 41%
 
 ---
 
 # Arbeiten mit Aufgaben {#working-with-tasks}
 
-Verwenden Sie die Seite „Aufgabensuche“ für die Suche nach Aufgaben anhand von Benutzername oder Aufgaben-ID. Die Suchergebnisse werden auf der Seite „Aufgabenliste“ angezeigt. Hier können Sie den Verlauf von Aufgaben aufrufen. Sie können Aufgaben auch neu zuweisen, z. B., wenn einem Benutzer zu viele Aufgaben zugewiesen wurden oder wenn ein Benutzer eine Aufgabenzuweisung fälschlicherweise erhalten hat.
+Verwenden Sie die Seite &quot;Aufgabensuche&quot;, um nach Aufgaben nach Benutzername oder Aufgaben-ID zu suchen. Die Suchergebnisse werden auf der Seite Aufgabenliste angezeigt, auf der Sie auf den Verlauf einer Aufgabe zugreifen können. Sie können eine Aufgabe auch neu zuweisen, wenn ein Benutzer zu viele Aufgaben hat oder wenn ein Benutzer eine Aufgabenzuweisung fälschlicherweise erhalten hat.
 
 >[!NOTE]
 >
->Beim Durchführen von Aufgabensuchen werden für Benutzernamen, die mit einem Nummernzeichen beginnen, keine Ergebnisse zurückgegeben (#). Vermeiden Sie möglichst das Erstellen von Benutzernamen, die mit einem Nummernzeichen beginnen.
+>Bei der Aufgabensuche werden keine Ergebnisse für Benutzernamen zurückgegeben, die mit einem Nummernzeichen (#) beginnen. Vermeiden Sie, möglichst Benutzernamen zu erstellen, die mit einem Nummernzeichen beginnen.
 
-## Nach den zu einem Benutzer gehörigen Aufgaben suchen {#search-for-tasks-associated-with-a-user}
+## Suchen nach Aufgaben, die mit einem Benutzer verknüpft sind {#search-for-tasks-associated-with-a-user}
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Aufgabensuche“.
-1. Wählen Sie für „Suchen nach“ die Option „Benutzername“. Wenn Sie einen Teil des gesuchten Benutzernamens kennen, geben Sie ihn in das Feld ein. Klicken Sie auf „Benutzer suchen“.
-1. Die Seite „Benutzer suchen“ wird angezeigt. Sie können die Suche weiter optimieren, indem Sie nach Benutzernamen oder E-Mail suchen. Wenn Sie den gesuchten Benutzer gefunden haben, aktivieren Sie das Optionsfeld neben seinem Namen und klicken Sie auf „OK“.
-1. Die Aufgabensuche sucht standardmäßig nach Aufgaben, die dem Benutzer aktuell zugewiesen sind. Wenn Sie auch nach Aufgaben suchen möchten, die dem Benutzer zuvor zugewiesen waren, wählen Sie „Nicht zugewiesene Aufgabe anzeigen“. Um auch nach Aufgaben zu suchen, die der Benutzer abgeschlossen hat, wählen Sie „Abgeschlossene Aufgabe anzeigen“.
-1. Klicken Sie auf Suchen. Die Seite „Aufgabenliste“ wird mit einer Liste der Suchergebnisse angezeigt.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Arbeitsablauf für Formulare&quot;> &quot;Aufgabensuche&quot;.
+1. Wählen Sie unter &quot;Suchen nach&quot;die Option &quot;Benutzername&quot;. Wenn Sie einen Teil des gesuchten Benutzernamens kennen, geben Sie ihn in das Feld ein. Klicken Sie auf Benutzer suchen .
+1. Die Seite &quot;Benutzer suchen&quot;wird angezeigt. Sie können Ihre Suche weiter verfeinern, indem Sie nach Benutzername oder E-Mail suchen. Wenn Sie den gesuchten Benutzer gefunden haben, wählen Sie das Optionsfeld neben dem Namen aus und klicken Sie auf &quot;OK&quot;.
+1. Standardmäßig sucht die Aufgabensuche nach Aufgaben, die dem Benutzer derzeit zugewiesen sind. Um auch nach Aufgaben zu suchen, die dem Benutzer zuvor zugewiesen waren, wählen Sie &quot;Nicht zugewiesene Aufgabe anzeigen&quot;. Um auch nach Aufgaben zu suchen, die der Benutzer abgeschlossen hat, wählen Sie &quot;Abgeschlossene Aufgabe anzeigen&quot;.
+1. Klicken Sie auf Suchen. Die Seite &quot;Aufgabenliste&quot;wird mit einer Liste der Suchergebnisse angezeigt.
 
-## Nach einer Aufgabe suchen, wenn Sie die Aufgaben-ID kennen {#search-for-a-task-when-you-know-its-task-id}
+## Suchen nach einer Aufgabe, wenn Sie ihre Aufgaben-ID kennen {#search-for-a-task-when-you-know-its-task-id}
 
-1. Klicken Sie in Administration Console auf „Dienste“ > „Arbeitsablauf für Formulare“ > „Aufgabensuche“.
-1. Wählen Sie in „Suchen nach“ den Eintrag „Aufgaben-ID“ aus und geben Sie die ID der Aufgabe in das Feld ein.
-1. Klicken Sie auf Suchen. Die Seite „Aufgabenliste“ wird mit einer Liste der Suchergebnisse angezeigt.
+1. Klicken Sie in Administration Console auf &quot;Dienste&quot;> &quot;Arbeitsablauf für Formulare&quot;> &quot;Aufgabensuche&quot;.
+1. Wählen Sie unter &quot;Suchen nach&quot;die Option &quot;Task ID&quot;aus und geben Sie die Aufgaben-ID in das Feld ein.
+1. Klicken Sie auf Suchen. Die Seite &quot;Aufgabenliste&quot;wird mit einer Liste der Suchergebnisse angezeigt.
 
-## Mit der Aufgabenliste arbeiten {#working-with-the-task-list}
+## Arbeiten mit der Aufgabenliste {#working-with-the-task-list}
 
-Die Ergebnisse der Suche nach Aufgaben werden auf der Seite „Aufgabenliste“ angezeigt. Sie können eine Aufgabe auswählen, um die Seite „Aufgabenverlauf“ zu öffnen. Von hier aus können Sie die Aufgabe einem anderen Benutzer zuweisen.
+Die Ergebnisse einer Aufgabensuche werden auf der Seite Aufgabenliste angezeigt. Sie können eine Aufgabe auswählen, um die Seite &quot;Aufgabenverlauf&quot;zu öffnen. Von dort aus können Sie die Aufgabe einem anderen Benutzer zuweisen.
 
-Die Aufgaben werden mit folgenden Informationen angezeigt:
+Die Aufgaben werden mit den folgenden Informationen angezeigt:
 
-**Aufgaben-ID**: Die positive Ganzzahl, die vom Arbeitsablauf für Formulare zugewiesen wird, wenn die Aufgabe instanziiert (von einem Benutzer initiiert) wird. Anhand dieser ID können Sie die Aufgabe während ihres gesamten Lebenszyklus verfolgen. Klicken Sie auf eine Aufgaben-ID, um Informationen zum Aufgabenverlauf anzuzeigen oder die Aufgabe einem anderen Benutzer zuweisen.
+**Aufgaben-ID**: Die positive Ganzzahl, die vom Arbeitsablauf für Formulare zugewiesen wird, wenn die Aufgabe instanziiert (von einem Benutzer initiiert) wird. Sie können diese Kennung verwenden, um die Aufgabe während ihres gesamten Lebenszyklus zu verfolgen. Klicken Sie auf eine Aufgaben-ID, um Details zum Aufgabenverlauf anzuzeigen oder die Aufgabe einem anderen Benutzer neu zuzuweisen.
 
 **Status**: Zugewiesen bedeutet, dass die Aufgabe derzeit dem Benutzer zugewiesen ist. Nicht zugewiesen bedeutet, dass die Aufgabe dem Benutzer zuvor zugewiesen war. Möglich ist auch der Status Abgeschlossen.
 
@@ -61,7 +57,7 @@ Die Aufgaben werden mit folgenden Informationen angezeigt:
 
 ## Aufgabenverlauf anzeigen und Aufgaben neu zuweisen {#viewing-task-history-and-reassigning-tasks}
 
-Auf der Seite „Aufgabenverlauf“ wird eine Liste der Benutzer und Gruppen angezeigt, die einer bestimmten Aufgabe zugewiesen sind.
+Auf der Seite &quot;Aufgabenverlauf&quot;wird eine Liste der Benutzer und Gruppen angezeigt, die einer bestimmten Aufgabe zugewiesen wurden.
 
 Für jede Aufgabenzuweisung werden in der Liste die folgenden Informationen angezeigt:
 
@@ -89,10 +85,10 @@ Für jede Aufgabenzuweisung werden in der Liste die folgenden Informationen ange
 
 **Zuweisungsdatum**: Das Datum und die Uhrzeit, zu der die Aufgabe dem Benutzer zugewiesen wurde.
 
-### Einer Aufgabe einen neuen Benutzer zuweisen {#assigning-a-new-user-to-a-task}
+### Zuweisen eines neuen Benutzers zu einer Aufgabe {#assigning-a-new-user-to-a-task}
 
-Auf der Seite „Benutzer zuweisen“ werden die Benutzer aufgeführt, die einer Aufgabe zugewiesen werden können. Zugriff auf die Seite „Benutzer zuweisen“ erhalten Sie, indem Sie auf der Seite „Aufgabenverlauf“ auf „Neuen Benutzer zuweisen“ klicken.
+Auf der Seite &quot;Benutzer zuweisen&quot;werden die Benutzer aufgelistet, die einer Aufgabe zugewiesen werden können. Sie greifen auf die Seite &quot;Benutzer zuweisen&quot;zu, indem Sie auf der Seite &quot;Aufgabenverlauf&quot;auf &quot;Neuen Benutzer zuweisen&quot;klicken.
 
-1. Geben Sie auf der Seite „Benutzer zuweisen“ in das Feld „Suche nach“ den gewünschten Benutzernamen oder die E-Mail-Adresse vollständig oder zum Teil ein.
-1. Wählen Sie unter „mit“ den Eintrag „Name“ oder „E-Mail-Adresse“ aus und klicken Sie auf „Suchen“. Die Benutzer, die der Suche entsprechen, werden angezeigt.
-1. Wählen Sie den Benutzer in der Liste aus und klicken Sie auf „OK“. Die Seite „Aufgabenverlauf“ wird mit der neuen Benutzerzuweisung angezeigt.
+1. Geben Sie im Feld &quot;Suchen nach&quot;auf der Seite &quot;Benutzer zuweisen&quot;einen Teil oder alle erforderlichen Benutzernamen oder E-Mail-Adresse ein.
+1. Wählen Sie unter &quot;Verwenden&quot;den Eintrag &quot;Name&quot;oder &quot;E-Mail-Adresse&quot;und klicken Sie auf &quot;Suchen&quot;. Die Benutzer, die mit der Suche übereinstimmen, werden angezeigt.
+1. Wählen Sie den Benutzer aus der Liste aus und klicken Sie auf OK. Die Seite &quot;Aufgabenverlauf&quot;wird mit der neuen Benutzerzuweisung angezeigt.

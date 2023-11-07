@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '378'
 ht-degree: 36%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 36%
 
 Um Ihre JCR-, Apache Sling- oder Adobe Experience Manager-Anwendungen (AEM) zu entwickeln, sind die folgenden Toolsets verfügbar:
 
-* Ein Set mit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) und WebDAV. CRXDE Lite ist in CRX/AEM integriert und ermöglicht es Ihnen, gängige Entwicklungstätigkeiten im Browser vorzunehmen. Mit CRXDE Lite können Sie Dateien (wie .jsp und .java), Ordner, Vorlagen, Komponenten, Dialogfelder, Knoten, Eigenschaften und Bundles erstellen und bearbeiten, während Sie eine Protokollierung und Integration mit SVN durchführen.
+* Ein Set mit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) und WebDAV. CRXDE Lite ist in CRX/AEM integriert und ermöglicht es Ihnen, gängige Entwicklungstätigkeiten im Browser vorzunehmen. Mit CRXDE Lite können Sie Dateien (wie .jsp und .java), Ordner, Vorlagen, Komponenten, Dialogfelder, Knoten, Eigenschaften und Bundles erstellen und bearbeiten, während Sie die Protokollierung und Integration mit SVN durchführen.
 
   CRXDE Lite wird empfohlen, wenn Sie keinen direkten Zugriff auf den CRX-/AEM-Server haben, wenn Sie eine Anwendung entwickeln, indem Sie die vordefinierten Komponenten und Java™-Bundles erweitern oder ändern oder wenn Sie keinen dedizierten Debugger, keine Codevervollständigung und keine Syntaxhervorhebung benötigen.
 
@@ -25,11 +25,11 @@ Um Ihre JCR-, Apache Sling- oder Adobe Experience Manager-Anwendungen (AEM) zu e
    * Eine integrierte Entwicklungsumgebung. Beispiel: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) oder [IntelliJ](/help/sites-developing/ht-intellij.md).
    * Ein Build-Tool. Beispiel: [Apache Maven](/help/sites-developing/ht-projects-maven.md).
    * FileVault, das von Adobe entwickelt wurde, um ein Repository einem Dateisystem zuzuordnen, einem Versionskontrollsystem. Beispiel: Subversion.
-   * Ein Fehlertracker-System. Beispiel: Jira.
+   * Ein Fehlerverfolgungssystem. Beispiel: Jira.
    * Ein zentrales Abhängigkeitsmanagementsystem. Beispiel: Apache Archiva.
    * Und ein System zur Automatisierung von Builds. Beispiel: Apache Continuum.
 
-  Mit diesem Setup können Sie Ihre Anwendung (Inhalt, Code, Konfiguration) vollständig in jede Entwicklungsumgebung und jeden Entwicklungsprozess integrieren. Die Verknüpfung zwischen den verschiedenen Elementen ist die Dateisystemdarstellung des Repositorys über FileVault, da alle oben genannten Entwicklungstools mit Dateien arbeiten können.
+  Mit diesem Setup können Sie Ihre Anwendung (Inhalt, Code, Konfiguration) vollständig in jede Entwicklungsumgebung und jeden Entwicklungsprozess integrieren. Die Verknüpfung zwischen den verschiedenen Elementen ist die Dateisystemdarstellung des Repositorys über FileVault, da alle zuvor erwähnten Entwicklungstools mit Dateien funktionieren können.
 
 ## Erweiterungen für integrierte Entwicklungsumgebungen {#extensions-for-integrated-development-environments}
 

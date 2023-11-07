@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2206'
-ht-degree: 55%
+source-wordcount: '2205'
+ht-degree: 54%
 
 ---
 
@@ -260,7 +260,7 @@ Gehen Sie wie folgt vor, um eine Seite und die untergeordneten Elemente mit eine
 
 1. Wählen Sie Ihre Konfiguration mithilfe des Dropdown-Menüs Dynamische Tag Management aus und klicken Sie auf OK.
 
-Gehen Sie wie folgt vor, um die geerbte Konfigurationsverknüpfung für eine Seite zu überschreiben. Das Außerkraftsetzen betrifft die Seite und alle untergeordneten Elemente der Seite.
+Gehen Sie wie folgt vor, um die geerbte Konfigurationsverknüpfung für eine Seite zu überschreiben. Die Überschreibung wirkt sich auf die Seite und alle untergeordneten Seiten aus.
 
 1. Öffnen Sie die Seite in der klassischen Benutzeroberfläche.
 1. Öffnen Sie die Seiteneigenschaften mithilfe von Sidekick.

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1885'
+source-wordcount: '1884'
 ht-degree: 39%
 
 ---
@@ -45,7 +45,7 @@ Wenn das Repository mit einem externen Datenspeicher konfiguriert wurde, [Die Sp
 
 Der Garbage Collector für den Datenspeicher notiert zunächst den aktuellen Zeitstempel, wenn der Prozess beginnt. Die Sammlung wird dann mit einem Multi-Pass-Mark-/Sweep-Musteralgorithmus durchgeführt.
 
-In der ersten Phase führt der Datenspeicher-Garbage Collector einen umfassenden Durchlauf des gesamten Repository-Inhalts durch. Für jedes Inhaltsobjekt, das einen Verweis auf einen Datenspeicherdatensatz hat, hat es die Datei im Dateisystem gefunden, indem es eine Metadatenaktualisierung durchführt und das Attribut &quot;Zuletzt geändert&quot;oder &quot;MTIME&quot;ändert. An diesem Punkt werden Dateien, auf die in dieser Phase zugegriffen wird, neuer als der ursprüngliche Baseline-Zeitstempel.
+In der ersten Phase führt der Datenspeicher-Garbage Collector einen umfassenden Durchlauf aller Repository-Inhalte durch. Für jedes Inhaltsobjekt, das einen Verweis auf einen Datenspeicherdatensatz hat, hat es die Datei im Dateisystem gefunden, indem es eine Metadatenaktualisierung durchführt und das Attribut &quot;Zuletzt geändert&quot;oder &quot;MTIME&quot;ändert. An diesem Punkt werden Dateien, auf die in dieser Phase zugegriffen wird, neuer als der ursprüngliche Baseline-Zeitstempel.
 
 In der zweiten Phase durchläuft der Datenspeicherbereiniger die physische Verzeichnisstruktur des Datenspeichers ähnlich wie ein &quot;Suchen&quot;. Sie hat das Attribut &quot;Zuletzt geändert&quot;oder &quot;MTIME&quot;der Datei geprüft und die folgende Feststellung getroffen:
 

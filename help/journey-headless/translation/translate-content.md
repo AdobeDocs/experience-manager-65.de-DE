@@ -2,10 +2,10 @@
 title: Übersetzen von Inhalten
 description: Verwenden Sie den Übersetzungs-Connector und die Regeln, um Ihre Headless-Inhalte zu übersetzen.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2163'
-ht-degree: 86%
+source-wordcount: '2162'
+ht-degree: 85%
 
 ---
 
@@ -105,7 +105,7 @@ Das Projekt wurde erstellt, enthält jedoch keine zu übersetzenden Inhalte. Im 
 
 ## Verwenden eines Übersetzungsprojekts {#using-translation-project}
 
-Übersetzungsprojekte dienen dazu, alle Inhalte und Aufgaben im Zusammenhang mit einem Übersetzungsangebot an einem Ort zu erfassen, damit die Übersetzung einfach verwaltet werden kann.
+Übersetzungsprojekte dienen dazu, alle Inhalte und Aufgaben im Zusammenhang mit einem Übersetzungsprozess an einem Ort zusammenzustellen, um Ihre Übersetzung einfach und einfach zu verwalten.
 
 So zeigen Sie das Übersetzungsprojekt an:
 

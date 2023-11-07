@@ -9,10 +9,10 @@ topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 feature: Correspondence Management
 exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '3983'
-ht-degree: 47%
+source-wordcount: '3979'
+ht-degree: 46%
 
 ---
 
@@ -138,7 +138,7 @@ Dieses Dokument einer Kündigungsmitteilung ist ein Beispiel für eine typische 
   </tr> 
   <tr> 
    <td>Gespeichert<br /> Bilder aus dem zentralen Repository</td> 
-   <td>Bilder wie Logos und Signaturbilder. Bilder wie Unternehmenslogos würden in den meisten oder in allen Schriftstücken angezeigt. Unterschriftsbilder sind spezifisch für den Brief und für die Person, in deren Namen der Brief gesendet wird.</td> 
+   <td>Bilder wie Logos und Signaturbilder. Bilder wie Unternehmenslogos würden in den meisten Schriftstücken oder in allen Schriftstücken angezeigt. Unterschriftsbilder sind spezifisch für den Brief und für die Person, in deren Namen der Brief gesendet wird.</td> 
    <td><p>In AEM Assets (DAM) gespeicherte Bilder<br /> </p> <p> </p> </td> 
   </tr> 
  </tbody> 
@@ -170,7 +170,7 @@ Analysieren Sie jeden Brief, um die verschiedenen Teile freizulegen, die den Bri
 
 **Aufbau des Datenwörterbuchs**: Es gibt Datenwerte wie „Kundennummer“ und „Kundenname“, die in vielen Briefen verwendet werden. Sie können eine konsolidierte Liste aller dieser Datenwerte erstellen. Normalerweise wird bei der Strukturplanung jemand vom Middleware-Team des Unternehmens konsultiert. Dies bildet die Grundlage für die Erstellung des Datenwörterbuchs.
 
-**Bezug von Daten aus Back-End-Unternehmenssystemen**: Sie werden auch über alle erforderlichen Datenwerte und deren jeweilige Bezugsquelle im Unternehmenssystem Bescheid wissen. Sie können dann die Architektur so einrichten, dass die Daten aus dem Unternehmenssystem extrahiert und an die Brieflösung übermittelt werden.
+**Datenquellen aus Back-End-Unternehmenssystemen** Sie werden auch alle erforderlichen Datenwerte kennen und erfahren, von wo aus die Daten des Unternehmenssystems abgerufen werden. Sie können dann die Architektur so einrichten, dass die Daten aus dem Unternehmenssystem extrahiert und an die Brieflösung übermittelt werden.
 
 **Schätzung der Komplexität von Briefen**: Es ist wichtig zu ermitteln, wie komplex die Erstellung einer bestimmten Korrespondenz sein wird. Diese Analyse hilft bei der Bestimmung der Zeit und der Fertigkeiten, die zum Erstellen der Briefvorlagen erforderlich sind. Dies wiederum hilft bei der Schätzung der Ressourcen und Kosten für die Implementierung der Brieflösung.
 

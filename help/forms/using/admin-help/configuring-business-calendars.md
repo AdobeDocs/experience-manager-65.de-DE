@@ -1,19 +1,15 @@
 ---
 title: Konfigurieren von Geschäftskalendern
-seo-title: Configuring Business Calendars
 description: Geschäftskalender definieren Geschäftstage und geschäftsfreie Tage für Ihre Organisation. Erfahren Sie, wie Sie die Geschäftskalender konfigurieren.
-seo-description: Business calendars define business and non-business days for your organization. Learn how to configure the business calendars.
-uuid: 0ba610b8-72a8-480c-8783-70d98cbe890a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1901'
-ht-degree: 16%
+source-wordcount: '1898'
+ht-degree: 14%
 
 ---
 
@@ -39,7 +35,7 @@ Wenn einige Benutzer in Ihrer Organisation unterschiedliche geschäftsfreie Tage
 
 1. Entscheiden Sie, wie Sie den entsprechenden Geschäftskalender mit einem Benutzer verknüpfen. Es gibt zwei Möglichkeiten, einen Geschäftskalender mit einem Benutzer zu verknüpfen:
 
-   **Gruppenmitgliedschaft**: Einem Benutzer kann ein Geschäftskalender auf Basis seiner Gruppenmitgliedschaft zugewiesen werden. In diesem Fall verwendet jeder Benutzer der Gruppe denselben Geschäftskalender.
+   **Gruppenmitgliedschaft:** Sie können einem Benutzer einen Geschäftskalender auf Grundlage der Gruppenmitgliedschaft des Benutzers zuweisen. In diesem Fall verwendet jeder Benutzer der Gruppe denselben Geschäftskalender.
 
    Wenn ein Benutzer Mitglied zweier verschiedener Gruppen ist und diese Gruppen zwei verschiedenen Geschäftskalendern zugeordnet sind, verwenden AEM Formulare den ersten Kalender, den er in den Suchergebnissen findet. In diesem Fall sollten Sie die Verwendung von Geschäftskalenderschlüsseln erwägen, um Benutzer mit Geschäftskalendern zu verknüpfen.
 
@@ -128,7 +124,7 @@ Mit AEM Formularen können Sie Ihre Geschäftskalender als XML-Dateien exportier
 
 >[!NOTE]
 >
->Diese Funktion exportiert und importiert alle definierten Geschäftskalender, einschließlich des von AEM Forms bereitgestellten Standardgeschäftskalenders. Ein importierter Geschäftskalender mit demselben Namen wie ein vorhandener Kalender überschreibt den vorhandenen Kalender.
+>Diese Funktion exportiert und importiert alle definierten Geschäftskalender, einschließlich des von AEM Formularen bereitgestellten Standardgeschäftskalenders. Ein importierter Geschäftskalender mit demselben Namen wie ein vorhandener Kalender überschreibt den vorhandenen Kalender.
 
 ### Geschäftskalender exportieren {#export-business-calendars}
 

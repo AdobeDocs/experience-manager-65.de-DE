@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1795'
-ht-degree: 53%
+source-wordcount: '1791'
+ht-degree: 54%
 
 ---
 
@@ -47,7 +47,7 @@ Die Migration von Assets nach [!DNL Experience Manager] erfolgt in mehreren Schr
 
 ### Deaktivieren von Workflows {#disabling-workflows}
 
-Deaktivieren Sie vor der Migration die Starter für den Workflow [!UICONTROL DAM-Update-Asset]. Am besten nehmen Sie alle Assets in das System auf und führen Sie dann die Workflows in Batches aus. Wenn Sie bereits aktiv sind, während die Migration stattfindet, können Sie diese Aktivitäten so planen, dass sie außerhalb der Arbeitszeiten ausgeführt werden.
+Deaktivieren Sie vor der Migration die Starter für den Workflow [!UICONTROL DAM-Update-Asset]. Am besten nehmen Sie alle Assets in das System auf und führen dann die Workflows in Batches aus. Wenn Sie bereits aktiv sind, während die Migration stattfindet, können Sie diese Aktivitäten so planen, dass sie außerhalb der Arbeitszeiten ausgeführt werden.
 
 ### Laden von Tags {#loading-tags}
 
@@ -55,7 +55,7 @@ Womöglich verfügen Sie bereits über eine Tag-Taxonomie für Ihre Bilder. Zwar
 
 ### Aufnehmen von Assets {#ingesting-assets}
 
-Leistung und Stabilität sind bei der Aufnahme von Assets in das System von großer Bedeutung. Da Sie eine große Menge an Daten in das System laden, möchten Sie sicherstellen, dass das System funktioniert und dass es die erforderliche Zeit minimieren kann, um eine Überlastung des Systems zu vermeiden, was zu einem Systemabsturz führen kann, insbesondere bei Systemen, die bereits in Produktion sind.
+Leistung und Stabilität sind bei der Aufnahme von Assets in das System von großer Bedeutung. Da Sie eine große Datenmenge in das System laden, sollten Sie sicherstellen, dass das System gut funktioniert, um die erforderliche Zeit zu minimieren und eine Überlastung des Systems zu vermeiden, was zu einem Systemabsturz führen kann, insbesondere bei Systemen, die bereits in Produktion sind.
 
 Es gibt zwei Ansätze zum Laden der Assets in das System: einen Push-basierten Ansatz mit HTTP oder einen Pull-basierten Ansatz mit den JCR-APIs.
 
